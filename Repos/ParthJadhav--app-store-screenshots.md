@@ -7,16 +7,20 @@ language: N/A
 license: N/A
 description: "end to end app store screenshot creation using AI"
 homepage: "https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots"
-stars: 653
-stars_per_day: 218
-forks: 42
+stars: 688
+stars_per_day: 229
+forks: 45
 open_issues: 1
 created: 2026-03-07
+pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
 category: "開發工具"
 release_tag: ""
+install_complexity: "easy"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
   - 開發工具
@@ -29,58 +33,69 @@ tags:
 
 # app-store-screenshots
 
-**653** stars · **218** stars/天 · 建立 3 天前 · N/A · 未標註授權
+**688** stars · **229** stars/天 · 建立 3 天前 · N/A · 未標註授權
+
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 使用 AI 自動生成 iOS 應用的 App Store 截圖。
+> 自動生成 iOS 應用的 App Store 截圖，省去手動設計的麻煩。
+
+> [!abstract] 核心創新
+> 專注於生成廣告風格的 App Store 截圖，而非單純的 UI 展示。
 
 ## 專案簡介
 
-這個工具能夠自動生成符合 Apple 要求的 App Store 截圖，並且設計成廣告風格。它透過詢問應用的品牌、功能和風格偏好來生成截圖，並支援多種解析度的輸出。與其他截圖工具不同的是，它不僅僅是 UI 展示，而是專注於廣告效果。這是一個值得一試的工具，特別適合需要快速生成截圖的開發者。
+它通過詢問應用的品牌和風格偏好，自動生成廣告風格的 App Store 截圖。技術上使用 Next.js 框架，並整合了多種 AI 編碼代理來完成設計。與傳統的截圖工具相比，它專注於廣告效果而非單純的 UI 展示，這使得生成的截圖更具吸引力。這個專案非常適合需要快速生成高質量截圖的開發者，值得一試。
+
+**技術棧**：`Next.js`
 
 ## 重點功能
 
-- 自動生成符合 Apple 要求的截圖。
-- 設計成廣告風格，提升視覺吸引力。
-- 支持多種解析度的輸出。
+- 自動生成符合 Apple 規範的截圖。
+- 提供多種截圖尺寸選擇。
+- 設計截圖時考慮到廣告效果。
 
 ## 快速開始
 
-使用 npx 安裝：npx skills add ParthJadhav/app-store-screenshots。,根據提示輸入應用的品牌和功能。
+1. 使用 npx 安裝 App Store Screenshots
+```bash
+npx skills add ParthJadhav/app-store-screenshots
+```
+2. 回答應用的品牌和風格問題
+3. 生成截圖
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著 App Store 競爭加劇，開發者對於高質量截圖的需求上升，這個工具正好滿足了這一需求。作者的背景和對 AI 的應用也吸引了不少關注。
+> 作者專注於應用開發，切合市場對於快速生成行銷素材的需求，特別是在 App Store 競爭激烈的情況下。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成 App Store 截圖的應用開發者和行銷人員。
+**目標受眾**：需要快速生成 App Store 截圖的 iOS 應用開發者和行銷團隊。
 
 > [!example] 使用場景
-> - [應用開發者] 用它來 自動生成 App Store 截圖，因為這樣可以節省大量設計時間。
-> - [行銷人員] 用它來 創建吸引人的應用廣告截圖，因為它能夠自動生成高品質的圖片。
-> - [新手開發者] 用它來 簡化截圖製作流程，因為不需要專業的設計技能。
+> - [開發者] 用它來 自動生成應用截圖，因為可以節省大量設計時間。
+> - [行銷人員] 用它來 創建吸引人的廣告素材，因為生成的截圖更具市場吸引力。
+> - [產品經理] 用它來 快速更新應用商店資訊，因為能夠隨時生成最新的截圖。
 
 > [!warning] 注意事項
-> 需要在 6.1 吋模擬器上捕捉截圖以避免後續調整。
+> 需要在 6.1 吋模擬器中運行以獲得最佳效果。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | N/A |
-| 授權 | N/A |
-| Stars | 653 |
-| Forks | 42 |
-| Issues | 1 |
+| Forks | 45 |
+| Open Issues | 1 |
+| 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-07 |
 | 官方網站 | [Link](https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots) |
+| Repo 大小 | 4.5 MB |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@ParthJadhav](https://github.com/ParthJadhav) | 4 |
+> | [@ParthJadhav](https://github.com/ParthJadhav) | 5 |
 
 ## README 摘錄
 
@@ -134,10 +149,10 @@ tags:
 
 ## 延伸閱讀
 
-相關概念：#App_Store_優化 · #視覺設計 · #自動化工具
+相關概念：[[應用開發]] · [[行銷素材設計]] · [[自動化工具]]
 
-[GitHub](https://github.com/ParthJadhav/app-store-screenshots)
- · [官方網站](https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots)
+[GitHub](https://github.com/ParthJadhav/app-store-screenshots) · [官方網站](https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots)
+
 
 ---
 

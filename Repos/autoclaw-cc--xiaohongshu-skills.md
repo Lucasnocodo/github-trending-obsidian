@@ -7,45 +7,93 @@ language: Python
 license: MIT
 description: "xiaohongshu-skills"
 homepage: ""
-stars: 401
-stars_per_day: 57
+stars: 404
+stars_per_day: 58
 forks: 51
 open_issues: 13
 created: 2026-03-03
+pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "Other"
+category: "其他"
 release_tag: "v0.1.0-c26fa98"
+install_complexity: "medium"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
-  - other
+  - 其他
   - python
 ---
 
 # xiaohongshu-skills
 
-**401** stars · **57** stars/天 · 建立 7 天前 · Python · MIT
+**404** stars · **58** stars/天 · 建立 7 天前 · Python · MIT
+
+`ORG` `v0.1.0-c26fa98`
 
 > [!summary] 一句話摘要
-> xiaohongshu-skills
+> 自動化小紅書操作，讓 AI agent 透過自然語言執行多步驟任務。
+
+> [!abstract] 核心創新
+> 支持用自然語言下達複合指令，實現連貫操作。
 
 ## 專案簡介
 
-xiaohongshu-skills
+這個專案讓 AI agent 能夠自動化小紅書的各種操作，比如搜尋、發佈和互動。它基於 Python 的 CDP 瀏覽器自動化引擎實作，並支持 OpenClaw 及其他兼容的 AI Agent 平台。與其他工具相比，它的連貫操作能力允許用戶用自然語言下達複雜指令，讓多個技能串聯執行。這個專案在小紅書自動化領域具有很高的實用性，值得一試。
+
+**技術棧**：`Python` · `CDP`
+
+## 重點功能
+
+- 支持多帳號切換和登錄檢查。
+- 提供內容發佈的定時和分步預覽功能。
+- 具備關鍵字搜索和筆記詳情查看的能力。
+- 支持社交互動，包括評論、回覆和收藏。
+- 能夠進行競品分析和內容創作的複合操作。
+
+## 快速開始
+
+1. 下載 ZIP 安裝
+```bash
+無
+```
+2. 解壓到 Agent 的 skills 目錄下
+```bash
+無
+```
+3. 安裝 Python 依賴
+```bash
+cd xiaohongshu-skills && uv sync
+```
 
 ## 為什麼值得關注
+
+> [!tip] 爆紅原因
+> 開發者背景強大，專注於小紅書這個特定平台的需求，提供了實用的自動化解決方案。
+
+## 適合誰使用
+
+**目標受眾**：小紅書內容創作者和數據分析師。
+
+> [!example] 使用場景
+> - 社交媒體經營者 用它來 自動發佈內容，因為可以節省時間並提高效率。
+> - 數據分析師 用它來 追蹤熱門話題，因為可以快速獲取市場趨勢。
+> - 行銷專員 用它來 進行競品分析，因為能夠自動化收集和整理數據。
+
+> [!warning] 注意事項
+> 需要 Python 3.11 及以上版本。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | Python |
-| 授權 | MIT |
-| Stars | 401 |
 | Forks | 51 |
-| Issues | 13 |
+| Open Issues | 13 |
+| 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-03 |
+| Repo 大小 | 269 KB |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
@@ -149,7 +197,10 @@ xiaohongshu-skills
 
 ## 延伸閱讀
 
+相關概念：[[自動化]] · [[社交媒體營運]] · [[AI Agent]]
+
 [GitHub](https://github.com/autoclaw-cc/xiaohongshu-skills)
+
 
 ---
 

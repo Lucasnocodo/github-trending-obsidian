@@ -7,19 +7,23 @@ language: C++
 license: GPL-3.0
 description: "Vulnerability detection framework by Binarly's REsearch team"
 homepage: "https://vulhunt.re"
-stars: 537
-stars_per_day: 134
+stars: 538
+stars_per_day: 135
 forks: 53
 open_issues: 0
 created: 2026-03-05
+pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "安全"
+category: "Other"
 release_tag: "v1.0.0"
+install_complexity: "unknown"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
-  - 安全
+  - other
   - c++
   - binary_analysis
   - reverse_engineering
@@ -28,53 +32,27 @@ tags:
 
 # vulhunt
 
-**537** stars · **134** stars/天 · 建立 4 天前 · C++ · GPL-3.0
+**538** stars · **135** stars/天 · 建立 4 天前 · C++ · GPL-3.0
+
+`ORG` `v1.0.0`
 
 > [!summary] 一句話摘要
-> 提供一個漏洞檢測框架，幫助安全研究人員識別軟體中的漏洞。
+> Vulnerability detection framework by Binarly's REsearch team
 
 ## 專案簡介
 
-VulHunt 是一個漏洞檢測框架，旨在幫助安全研究人員和從業者識別軟體二進位檔和 UEFI 韌體中的漏洞。它基於 Binarly 的二進位分析系統，提供強大的分析環境，並支持社群開發的規則包和整合。與其他漏洞檢測工具相比，VulHunt 提供了更靈活的擴展性和社群支持，適合需要進行大規模漏洞管理的團隊。這是一個成熟的工具，對於安全領域的專業人士來說非常有價值。
-
-## 重點功能
-
-- 集成 Binarly 的二進位分析系統。
-- 支持社群開發的規則包和整合。
-- 提供靈活的漏洞管理和追蹤能力。
-
-## 快速開始
-
-安裝 cargo-make：cargo install cargo-make。,使用 cargo-make 構建：cargo make --profile build。
-
-## 為什麼值得關注
-
-> [!tip] 爆紅原因
-> 隨著網路安全威脅的增加，對於漏洞檢測工具的需求也在上升，這個工具正好滿足了這一需求。Binarly 的專業背景和技術實力也讓這個專案受到關注。
-
-## 適合誰使用
-
-**目標受眾**：對於需要進行漏洞檢測和管理的安全研究人員和企業安全團隊。
-
-> [!example] 使用場景
-> - [安全研究人員] 用它來 檢測軟體中的漏洞，因為它提供了強大的分析工具。
-> - [企業安全團隊] 用它來 管理和修補漏洞，因為能夠進行大規模的漏洞追蹤。
-> - [開發者] 用它來 測試自己開發的軟體，因為能夠提前發現潛在的安全問題。
-
-> [!warning] 注意事項
-> 需要一定的技術背景來有效使用。
+Vulnerability detection framework by Binarly's REsearch team
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | C++ |
-| 授權 | GPL-3.0 |
-| Stars | 537 |
 | Forks | 53 |
-| Issues | 0 |
+| Open Issues | 0 |
+| 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-05 |
 | 官方網站 | [Link](https://vulhunt.re) |
+| Repo 大小 | 2.5 MB |
 
 > [!info]- 語言組成
 > ```mermaid
@@ -167,10 +145,8 @@ VulHunt 是一個漏洞檢測框架，旨在幫助安全研究人員和從業者
 
 ## 延伸閱讀
 
-相關概念：#漏洞檢測 · #二進位分析 · #安全研究
+[GitHub](https://github.com/vulhunt-re/vulhunt) · [官方網站](https://vulhunt.re)
 
-[GitHub](https://github.com/vulhunt-re/vulhunt)
- · [官方網站](https://vulhunt.re)
 
 ---
 

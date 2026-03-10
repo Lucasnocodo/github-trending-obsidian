@@ -12,14 +12,18 @@ stars_per_day: 101
 forks: 18
 open_issues: 3
 created: 2026-03-05
+pushed_at: 2026-03-06
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "基礎設施"
+category: "Other"
 release_tag: "v0.2.0"
+install_complexity: "unknown"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
-  - 基礎設施
+  - other
   - rust
 ---
 
@@ -27,55 +31,24 @@ tags:
 
 **505** stars · **101** stars/天 · 建立 5 天前 · Rust · MIT
 
+`個人專案` `v0.2.0`
+
 > [!summary] 一句話摘要
-> 提供高效的 SSH 同步工具，支持斷點續傳和並行傳輸。
+> Parallel rsync-like pull sync over SSH with resume
 
 ## 專案簡介
 
-這個工具能夠在 SSH 遠端之間進行高效的文件同步，支持斷點續傳和並行傳輸，提升傳輸效率。它使用 Rust 實作，並且支持多種平台。與傳統的 rsync 工具相比，parsync 更加注重性能和用戶體驗，特別適合需要頻繁同步大文件的場景。非常值得一試，尤其是對於系統管理員和開發者。
-
-## 重點功能
-
-- 支持 SSH 遠端的高效文件同步，提升傳輸速度。
-- 具備斷點續傳功能，避免重複傳輸。
-- 支持並行文件傳輸，進一步提高效率。
-- 可在多平台上運行，包括 Linux、macOS 和 Windows。
-
-## 快速開始
-
-使用 curl 安裝：`curl -fsSL https://alpindale.net/install.sh | bash`,使用命令進行文件同步：`parsync -vrPlu user@example.com:/remote/path /local/destination`
-
-## 為什麼值得關注
-
-> [!tip] 爆紅原因
-> 這個工具的高效性能和易用性吸引了許多需要文件同步的開發者，尤其是在大文件傳輸的需求上。
-
-## 適合誰使用
-
-**目標受眾**：需要高效文件同步的系統管理員和開發者。
-
-> [!example] 使用場景
-> - [系統管理員] 用它來備份伺服器數據，因為可以快速且可靠地同步大量文件。
-> - [開發者] 用它來部署應用程式，因為支持斷點續傳，減少重複傳輸的時間。
-> - [資料科學家] 用它來同步大型數據集，因為能夠高效處理大文件的傳輸。
-
-> [!warning] 注意事項
-> 在 Windows 平台上可能存在最佳化不足的情況。
-
-## 類似工具比較
-
-相關替代方案：rsync
+Parallel rsync-like pull sync over SSH with resume
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | Rust |
-| 授權 | MIT |
-| Stars | 505 |
 | Forks | 18 |
-| Issues | 3 |
+| Open Issues | 3 |
+| 最後推送 | 2026-03-06 |
 | 建立日期 | 2026-03-05 |
+| Repo 大小 | 7.5 MB |
 
 > [!info]- 語言組成
 > ```mermaid
@@ -167,9 +140,8 @@ tags:
 
 ## 延伸閱讀
 
-相關概念：#文件同步 · #SSH · #高效傳輸
-
 [GitHub](https://github.com/AlpinDale/parsync)
+
 
 ---
 

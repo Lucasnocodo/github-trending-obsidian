@@ -12,11 +12,15 @@ stars_per_day: 68
 forks: 61
 open_issues: 0
 created: 2026-03-03
+pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
 category: "Other"
 release_tag: ""
+install_complexity: "unknown"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
   - other
@@ -34,18 +38,15 @@ tags:
 
 Servizio API per l'estrazione automatizzata di dati catastali dal portale SISTER
 
-## 為什麼值得關注
-
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | Python |
-| 授權 | GPL-3.0 |
-| Stars | 475 |
 | Forks | 61 |
-| Issues | 0 |
+| Open Issues | 0 |
+| 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-03 |
+| Repo 大小 | 36 KB |
 
 > [!info]- 語言組成
 > ```mermaid
@@ -105,6 +106,7 @@ Servizio API per l'estrazione automatizzata di dati catastali dal portale SISTER
 ## 延伸閱讀
 
 [GitHub](https://github.com/zornade/visura-api)
+
 
 ---
 

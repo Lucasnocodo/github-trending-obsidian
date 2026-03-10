@@ -7,70 +7,48 @@ language: Python
 license: MIT
 description: "Local SOCKS5 proxy server for partial bypassing of Telegram loading"
 homepage: ""
-stars: 768
-stars_per_day: 128
+stars: 772
+stars_per_day: 129
 forks: 14
-open_issues: 5
+open_issues: 4
 created: 2026-03-04
+pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "基礎設施"
+category: "Other"
 release_tag: "v1.0.4"
+install_complexity: "unknown"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
-  - 基礎設施
+  - other
   - python
 ---
 
 # tg-ws-proxy
 
-**768** stars · **128** stars/天 · 建立 6 天前 · Python · MIT
+**772** stars · **129** stars/天 · 建立 6 天前 · Python · MIT
+
+`v1.0.4`
 
 > [!summary] 一句話摘要
-> 透過本地 SOCKS5 代理伺服器加速 Telegram 的加載速度。
+> Local SOCKS5 proxy server for partial bypassing of Telegram loading
 
 ## 專案簡介
 
-這個專案提供了一個本地 SOCKS5 代理，能夠透過 WebSocket 連接來加速 Telegram 的加載和下載。它使用 Python 實作，能夠有效地重定向 Telegram 的流量，改善使用者體驗。與其他加速工具相比，這個代理專注於 Telegram 的特定需求，提供更針對性的解決方案。值得一試，特別是對於經常使用 Telegram 的用戶。
-
-## 重點功能
-
-- 本地 SOCKS5 代理，能夠加速 Telegram 的加載和下載。
-- 自動切換到直接 TCP 連接，確保連接穩定性。
-- 簡單的安裝和配置過程，讓用戶快速上手。
-
-## 快速開始
-
-下載並安裝 TgWsProxy.exe。,啟動代理並配置 Telegram Desktop 連接。
-
-## 為什麼值得關注
-
-> [!tip] 爆紅原因
-> Telegram 用戶對於加載速度的需求不斷增加，這個工具正好滿足了這一需求。作者的技術背景使得這個工具在性能上有了保障。
-
-## 適合誰使用
-
-**目標受眾**：Telegram 用戶，特別是需要提高使用體驗的使用者。
-
-> [!example] 使用場景
-> - 用戶用它來加速 Telegram 的文件下載，因為能夠更快地接收大檔案。
-> - 學生用它來提高 Telegram 上的訊息加載速度，因為能更快地參與討論。
-> - 團隊用它來改善 Telegram 群組的使用體驗，因為能減少延遲和卡頓。
-
-> [!warning] 注意事項
-> 僅支援 Telegram Desktop，移動端可能無法使用。
+Local SOCKS5 proxy server for partial bypassing of Telegram loading
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | Python |
-| 授權 | MIT |
-| Stars | 768 |
 | Forks | 14 |
-| Issues | 5 |
+| Open Issues | 4 |
+| 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-04 |
+| Repo 大小 | 78 KB |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
@@ -117,9 +95,8 @@ tags:
 
 ## 延伸閱讀
 
-相關概念：#代理伺服器 · #WebSocket · #即時通訊
-
 [GitHub](https://github.com/Flowseal/tg-ws-proxy)
+
 
 ---
 

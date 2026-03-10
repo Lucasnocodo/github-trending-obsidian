@@ -12,11 +12,15 @@ stars_per_day: 322
 forks: 83
 open_issues: 2
 created: 2026-03-09
+pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
 category: "開發工具"
 release_tag: ""
+install_complexity: "easy"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
   - 開發工具
@@ -32,52 +36,65 @@ tags:
 
 **322** stars · **322** stars/天 · 建立 1 天前 · TypeScript · 未標註授權
 
+`easy-install`
+
 > [!summary] 一句話摘要
-> 透過微信掃碼登入並獲取 token，實現與 AGP WebSocket 的雙向通訊。
+> 透過微信掃碼登入，輕鬆獲取 token 並連接 AGP WebSocket。
 
 ## 專案簡介
 
-這個插件讓使用者可以透過微信掃碼登入，並自動獲取 token 以便與 AGP WebSocket 進行消息收發。它使用 TypeScript 開發，並整合了 OpenClaw 框架的功能。與其他類似的微信登入方案相比，它提供了更簡單的配置和自動化的 token 管理，讓使用者無需每次重啟都重新登入。這是一個值得嘗試的工具，特別是對於需要與 AGP 進行即時通訊的開發者。
+它讓使用者可以透過微信掃碼登入，並自動獲取 token 以連接 WebSocket。這個專案使用 OpenClaw 作為基礎，並提供了簡單的配置和登入流程。相比其他微信登入方案，它的設計更為簡潔，並且支持 token 的自動持久化。這是一個值得試的工具，特別是對於需要與微信整合的開發者。
+
+**技術棧**：`TypeScript` · `OpenClaw`
 
 ## 重點功能
 
-- 支持微信掃碼登入，提供終端和瀏覽器的二維碼選項。
+- 支持微信掃碼登入，提供終端和瀏覽器的二合一方案。
 - 自動持久化 token，重啟後無需再次登入。
-- 實現 AGP 協議的 WebSocket 雙向通信，支持流式文本和工具調用。
-- 可配置的邀請碼驗證選項，靈活性高。
-- 支持生產和測試環境的切換，便於開發和測試。
+- 支持 AGP 協議的 WebSocket 雙向通信。
+- 可配置的邀請碼驗證選項。
 
 ## 快速開始
 
-安裝插件: `openclaw plugins install @henryxiaoyang/wechat-access-unqclawed`,啟用渠道: `openclaw config set channels.wechat-access-unqclawed.enabled true`
+1. 安裝插件
+```bash
+openclaw plugins install @henryxiaoyang/wechat-access-unqclawed
+```
+2. 啟用渠道
+```bash
+openclaw config set channels.wechat-access-unqclawed.enabled true
+```
+3. 首次登入
+```bash
+openclaw channels login --channel wechat-access-unqclawed
+```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者在開源社群中有一定的影響力，並且這個工具滿足了開發者對於簡化微信登入流程的需求。近期對於即時通訊的需求增加，促使這個專案受到關注。
+> 作者在開源社群中活躍，並且這個專案解決了微信登入的實用需求，特別是在 AGP 環境中。
 
 ## 適合誰使用
 
-**目標受眾**：需要與 AGP WebSocket 進行即時通訊的開發者和測試人員。
+**目標受眾**：需要在應用中整合微信登入的開發者和團隊。
 
 > [!example] 使用場景
-> - 開發者 用它來 透過微信登入 AGP 系統，因為這樣可以快速獲取 token 並進行消息收發。
-> - 測試人員 用它來 測試微信通道的功能，因為它提供了簡單的配置和自動化流程。
-> - 系統管理員 用它來 管理 AGP 的 WebSocket 通訊，因為它能夠自動持久化 token，減少重複登入的麻煩。
+> - [開發者] 用它來 [整合微信登入功能]，因為這樣可以簡化用戶認證流程。
+> - [系統管理員] 用它來 [快速配置 WebSocket 服務]，因為它提供了自動化的 token 管理。
+> - [產品經理] 用它來 [評估微信整合的可行性]，因為它提供了簡單的使用流程和配置選項。
 
 > [!warning] 注意事項
-> 目前僅支持 AGP WebSocket，對於其他通訊協議的支持有限。
+> 僅支援 OpenClaw 環境。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | TypeScript |
-| 授權 | N/A |
-| Stars | 322 |
 | Forks | 83 |
-| Issues | 2 |
+| Open Issues | 2 |
+| 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-09 |
+| Repo 大小 | 501 KB |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
@@ -171,9 +188,10 @@ tags:
 
 ## 延伸閱讀
 
-相關概念：#WebSocket · #OAuth · #即時通訊
+相關概念：[[OAuth 認證]] · [[WebSocket 通信]] · [[開源插件架構]]
 
 [GitHub](https://github.com/HenryXiaoYang/wechat-access-unqclawed)
+
 
 ---
 

@@ -7,16 +7,20 @@ language: TypeScript
 license: N/A
 description: "CLI that turns plain numbers into terminal charts. ascii, spark, bars, columns, heatmap, unicode, braille, svg. "
 homepage: "https://x.com/MrAhmadAwais"
-stars: 532
-stars_per_day: 133
-forks: 28
+stars: 533
+stars_per_day: 107
+forks: 29
 open_issues: 0
 created: 2026-03-05
+pushed_at: 2026-03-06
 first_seen: 2026-03-10
 week: "2026-W11"
 category: "CLI 工具"
 release_tag: "0.0.5"
+install_complexity: "easy"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
   - cli_工具
@@ -25,54 +29,70 @@ tags:
 
 # chartli
 
-**532** stars · **133** stars/天 · 建立 4 天前 · TypeScript · 未標註授權
+**533** stars · **107** stars/天 · 建立 5 天前 · TypeScript · 未標註授權
+
+`個人專案` `0.0.5` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓數字資料在終端機中以圖表形式呈現，讓數據視覺化變得簡單。
+> 將數字數據轉換為終端圖表，讓數據可視化更簡單。
+
+> [!abstract] 核心創新
+> 提供了一個專注於終端的數據可視化解決方案。
 
 ## 專案簡介
 
-這個 CLI 工具可以將純數字轉換為各種終端圖表格式，例如 ASCII、條形圖和熱圖。它使用 TypeScript 和 Rust 實作，支持多種圖表類型和自定義選項。與其他圖表工具相比，chartli 專注於終端環境，提供輕量級且即時的視覺化選擇，非常適合需要快速檢視數據的開發者。值得一試，特別是對於喜歡在命令行工作的人。
+它通過將純數字數據轉換為各種終端圖表，幫助用戶快速可視化數據。技術上使用 TypeScript 和 Rust，並支持多種圖表類型。與其他數據可視化工具相比，它專注於終端環境，適合喜歡命令行操作的開發者。這個專案簡單易用，特別適合需要快速生成圖表的用戶。
+
+**技術棧**：`TypeScript` · `Rust`
 
 ## 重點功能
 
-- 支持多種圖表類型，包括 ASCII、條形圖和熱圖。
-- 可以從文件或標準輸入讀取數據，靈活性高。
-- 提供自定義選項，如圖表寬度和高度，滿足不同需求。
-- 輕量級，無需安裝即可使用 npx 命令運行。
+- 支持多種圖表類型，包括 ASCII 和 SVG。
+- 可從數字文本數據生成圖表。
+- 命令行操作簡單直觀。
 
 ## 快速開始
 
-使用 npx 直接運行：`npx chartli`,查看幫助文檔：`npx chartli --help`
+1. 使用 npx 安裝 Chartli
+```bash
+npx chartli --help
+```
+2. 運行 Chartli 生成圖表
+```bash
+npx chartli [file] [options]
+```
+3. 查看可用的圖表類型和選項
+```bash
+npx chartli --help
+```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者是知名的開發者，對開發者社群有一定影響力，這個工具切中許多需要快速數據視覺化的需求，尤其是在命令行環境中。
+> 作者在開發工具領域有豐富經驗，這個工具能夠滿足開發者對於快速數據可視化的需求。
 
 ## 適合誰使用
 
-**目標受眾**：對命令行工具有需求的開發者和數據分析師。
+**目標受眾**：需要在終端中可視化數據的開發者和數據分析師。
 
 > [!example] 使用場景
-> - [數據分析師] 用它來快速生成數據圖表，因為可以即時在終端中視覺化數據，提升工作效率。
-> - [開發者] 用它來檢視應用程式的性能數據，因為能夠快速轉換數字為圖表，便於分析。
-> - [系統管理員] 用它來監控伺服器性能，因為可以直接在終端中顯示重要指標的視覺化結果。
+> - [數據分析師] 用它來 快速生成數據圖表，因為可以在終端中直接查看結果。
+> - [開發者] 用它來 可視化性能數據，因為能夠快速理解數據趨勢。
+> - [系統管理員] 用它來 監控系統指標，因為可以即時生成可視化報告。
 
 > [!warning] 注意事項
-> 目前僅支持終端環境，無法在 GUI 環境中使用。
+> 不支持圖形界面，僅限於終端使用。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | TypeScript |
-| 授權 | N/A |
-| Stars | 532 |
-| Forks | 28 |
-| Issues | 0 |
+| Forks | 29 |
+| Open Issues | 0 |
+| 最後推送 | 2026-03-06 |
 | 建立日期 | 2026-03-05 |
 | 官方網站 | [Link](https://x.com/MrAhmadAwais) |
+| Repo 大小 | 60.7 MB |
 
 > [!info]- 語言組成
 > ```mermaid
@@ -176,10 +196,10 @@ tags:
 
 ## 延伸閱讀
 
-相關概念：#數據視覺化 · #命令行工具 · #性能監控
+相關概念：[[數據可視化]] · [[命令行工具]] · [[數據分析]]
 
-[GitHub](https://github.com/ahmadawais/chartli)
- · [官方網站](https://x.com/MrAhmadAwais)
+[GitHub](https://github.com/ahmadawais/chartli) · [官方網站](https://x.com/MrAhmadAwais)
+
 
 ---
 

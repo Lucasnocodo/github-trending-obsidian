@@ -12,14 +12,18 @@ stars_per_day: 165
 forks: 105
 open_issues: 35
 created: 2026-03-05
+pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "開發工具"
+category: "Other"
 release_tag: ""
+install_complexity: "unknown"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
-  - 開發工具
+  - other
   - typescript
   - chatbot
   - claude
@@ -33,49 +37,21 @@ tags:
 **823** stars · **165** stars/天 · 建立 5 天前 · TypeScript · MIT
 
 > [!summary] 一句話摘要
-> 讓你在即時通訊平台上與 AI 編程代理互動，提升編程效率。
+> Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark.
 
 ## 專案簡介
 
-這個專案提供了一個後台守護進程，能將即時通訊平台的訊息轉發給 Claude 編程代理，並接收回應。它使用 Node.js 實作，並支援 Telegram、Discord、Feishu/Lark 和 QQ 等多個平台。與其他類似工具相比，它的輕量級設計和 CLI 介面使得使用者能夠快速上手，適合喜歡簡潔操作的開發者。值得一試，特別是對於需要在多平台上進行編程的使用者。
-
-## 重點功能
-
-- 支援多個即時通訊平台，包括 Telegram、Discord、Feishu/Lark 和 QQ。
-- 提供互動式設置向導，簡化配置過程。
-- 具備權限控制功能，確保安全性。
-
-## 快速開始
-
-安裝 Node.js。,運行守護進程並配置 IM 機器人。
-
-## 為什麼值得關注
-
-> [!tip] 爆紅原因
-> 開發者對於即時通訊工具的需求日益增加，這個專案正好滿足了這一需求。作者的背景和對於即時通訊的深入理解使得這個工具更具吸引力。
-
-## 適合誰使用
-
-**目標受眾**：開發者和學生，特別是需要即時編程幫助的使用者。
-
-> [!example] 使用場景
-> - 開發者用它在 Discord 上詢問編程問題，因為能即時獲得 AI 的解答。
-> - 學生用它在 Telegram 上進行編程練習，因為可以隨時得到即時的反饋。
-> - 團隊成員用它在 Feishu 上協作編程，因為能夠快速分享和解決代碼問題。
-
-> [!warning] 注意事項
-> 目前僅支援特定的即時通訊平台，未來可能需要擴展。
+Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark.
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | TypeScript |
-| 授權 | MIT |
-| Stars | 823 |
 | Forks | 105 |
-| Issues | 35 |
+| Open Issues | 35 |
+| 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-05 |
+| Repo 大小 | 151 KB |
 
 > [!info]- 語言組成
 > ```mermaid
@@ -128,9 +104,8 @@ tags:
 
 ## 延伸閱讀
 
-相關概念：#即時通訊 · #人工智慧 · #編程助手
-
 [GitHub](https://github.com/op7418/Claude-to-IM-skill)
+
 
 ---
 

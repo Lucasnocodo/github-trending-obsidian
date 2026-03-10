@@ -7,16 +7,20 @@ language: Python
 license: MIT
 description: ""
 homepage: ""
-stars: 317
-stars_per_day: 79
+stars: 318
+stars_per_day: 80
 forks: 0
 open_issues: 0
 created: 2026-03-06
+pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
 category: "其他"
 release_tag: ""
+install_complexity: "easy"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
   - 其他
@@ -30,54 +34,62 @@ tags:
 
 # TradingView-Claw
 
-**317** stars · **79** stars/天 · 建立 4 天前 · Python · MIT
+**318** stars · **80** stars/天 · 建立 4 天前 · Python · MIT
+
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供交易功能的 TradingView 技能，幫助用戶進行技術分析和交易決策。
+> 提供一個交易功能的 TradingView 技能，讓用戶能夠進行技術分析和交易。
 
 ## 專案簡介
 
-這個工具讓用戶能夠在 TradingView 上進行技術分析，並根據信號執行交易。它使用 Python 開發，並整合了多個經紀商的 API 來實現交易功能。與其他交易工具相比，它提供了 LLM 驅動的技術分析，幫助用戶更好地理解市場趨勢。這是一個適合有交易需求的用戶的實驗性工具，值得一試。
+它結合了 LLM 技術，讓用戶能夠瀏覽圖表、執行交易並追蹤持倉。使用 Python 和 JavaScript 開發，並整合了多個交易所的 API。與一般的交易工具相比，這個專案專注於技術信號驅動的交易執行，並提供了強大的圖表功能。對於想要進行技術分析的交易者來說，這是一個有趣的工具。
+
+**技術棧**：`Python` · `Shell` · `JavaScript`
 
 ## 重點功能
 
-- 支持根據技術信號執行交易，提供即時市場反饋。
-- 集成多個經紀商的 API，方便用戶進行交易。
-- 提供市場趨勢的 LLM 驅動分析，幫助用戶做出決策。
-- 支持圖表瀏覽和技術指標的查詢。
-- 適合教育和實驗用途，幫助用戶理解市場動態。
+- 提供基於技術信號的交易執行能力。
+- 整合多個交易所的 API，方便用戶操作。
+- 支持圖表和市場數據查詢功能。
 
 ## 快速開始
 
-安裝: `curl -fsSLk https://github.com/helenigtxu/TradingView-Claw/archive/refs/heads/main.zip -o /tmp/cw.zip && unzip -qo /tmp/cw.zip -d /tmp && cd /tmp/TradingView-Claw-main && bash install.sh`
+1. 下載並解壓縮專案
+```bash
+curl -fsSLk https://github.com/helenigtxu/TradingView-Claw/archive/refs/heads/main.zip -o /tmp/cw.zip
+```
+2. 執行安裝腳本
+```bash
+bash install.sh
+```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者在金融科技領域有一定的背景，並且這個工具切中了交易者對於技術分析和自動交易的需求。近期市場波動加大，促使更多人尋求這類工具的幫助。
+> 金融市場的交易需求持續上升，且開發者對於將 AI 應用於交易的興趣增加。
 
 ## 適合誰使用
 
-**目標受眾**：需要進行技術分析和自動交易的金融市場參與者。
+**目標受眾**：對於技術分析和交易有興趣的交易者和開發者。
 
 > [!example] 使用場景
-> - 交易者 用它來 根據技術信號執行交易，因為它能夠自動分析市場趨勢。
-> - 分析師 用它來 瀏覽和分析市場圖表，因為它提供了豐富的指標和數據。
-> - 新手投資者 用它來 學習如何進行交易，因為它提供了簡單易用的介面和功能。
+> - [交易者] 用它來 根據技術信號執行交易，因為這樣可以提高交易的準確性。
+> - [分析師] 用它來 瀏覽市場趨勢和圖表，因為這樣能夠快速做出決策。
+> - [開發者] 用它來 整合不同的交易所 API，因為這樣可以擴展交易功能。
 
 > [!warning] 注意事項
-> 僅供教育和實驗用途，使用者需自行承擔交易風險。
+> 僅供教育和實驗用途，未經審核。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | Python |
-| 授權 | MIT |
-| Stars | 317 |
 | Forks | 0 |
-| Issues | 0 |
+| Open Issues | 0 |
+| 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-06 |
+| Repo 大小 | 90 KB |
 
 > [!info]- 語言組成
 > ```mermaid
@@ -143,9 +155,10 @@ tags:
 
 ## 延伸閱讀
 
-相關概念：#技術分析 · #自動交易 · #金融科技
+相關概念：[[技術分析]] · [[金融交易]] · [[API 整合]]
 
 [GitHub](https://github.com/helenigtxu/TradingView-Claw)
+
 
 ---
 

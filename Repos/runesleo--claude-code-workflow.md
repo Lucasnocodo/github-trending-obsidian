@@ -12,61 +12,42 @@ stars_per_day: 40
 forks: 39
 open_issues: 0
 created: 2026-03-03
+pushed_at: 2026-03-04
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "開發工具"
+category: "Other"
 release_tag: ""
+install_complexity: "unknown"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
-  - 開發工具
+  - other
 ---
 
 # claude-code-workflow
 
 **277** stars · **40** stars/天 · 建立 7 天前 · N/A · 未標註授權
 
+`個人專案`
+
 > [!summary] 一句話摘要
-> 提供一個經過實戰驗證的 Claude Code 工作流模板，幫助開發者更有效地管理上下文和任務。
+> Battle-tested Claude Code workflow template — memory management, context engineering, and task routing from 3 months of daily usage
 
 ## 專案簡介
 
-這個工作流模板專為 Claude Code 設計，能夠有效管理記憶和上下文，讓開發者在多個項目中保持一致性。它通過自動化任務路由和驗證過程，減少了開發過程中的錯誤。與其他簡單的配置相比，這個模板提供了更高的穩定性和可擴展性，適合需要長期使用的開發者。這是一個成熟的工具，值得開發者試用。
-
-## 重點功能
-
-- 管理上下文，防止信息丟失。
-- 自動化任務路由，提升工作效率。
-- 驗證任務完成情況，確保質量。
-- 支持長期使用的穩定工作流設計。
-
-## 為什麼值得關注
-
-> [!tip] 爆紅原因
-> 隨著 Claude Code 的流行，開發者對於如何更好地利用其功能的需求增加，這個模板正好滿足了這一需求。作者的實戰經驗使得這個模板具備了實用性和可靠性。
-
-## 適合誰使用
-
-**目標受眾**：需要在 Claude Code 中進行高效開發的軟體工程師。
-
-> [!example] 使用場景
-> - 軟體工程師 用它來 管理開發過程中的上下文，因為這樣可以減少錯誤並提高效率。
-> - 產品經理 用它來 跟蹤項目進度，因為這樣可以更好地掌握團隊的工作狀態。
-> - 測試人員 用它來 確保任務完成的準確性，因為這樣可以提高產品質量。
-
-> [!warning] 注意事項
-> 需要對 Claude Code 有一定的了解，才能充分發揮其功能。
+Battle-tested Claude Code workflow template — memory management, context engineering, and task routing from 3 months of daily usage
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | N/A |
-| 授權 | N/A |
-| Stars | 277 |
 | Forks | 39 |
-| Issues | 0 |
+| Open Issues | 0 |
+| 最後推送 | 2026-03-04 |
 | 建立日期 | 2026-03-03 |
+| Repo 大小 | 54 KB |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
@@ -109,9 +90,8 @@ tags:
 
 ## 延伸閱讀
 
-相關概念：#工作流管理 · #上下文管理 · #任務自動化
-
 [GitHub](https://github.com/runesleo/claude-code-workflow)
+
 
 ---
 

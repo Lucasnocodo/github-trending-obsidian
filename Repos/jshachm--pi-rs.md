@@ -7,70 +7,48 @@ language: Rust
 license: MIT
 description: "基于pi-mono，rust轻量化版本"
 homepage: ""
-stars: 616
+stars: 617
 stars_per_day: 103
 forks: 69
 open_issues: 0
 created: 2026-03-04
+pushed_at: 2026-03-05
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "開發工具"
+category: "Other"
 release_tag: ""
+install_complexity: "unknown"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
-  - 開發工具
+  - other
   - rust
 ---
 
 # pi-rs
 
-**616** stars · **103** stars/天 · 建立 6 天前 · Rust · MIT
+**617** stars · **103** stars/天 · 建立 6 天前 · Rust · MIT
+
+`個人專案`
 
 > [!summary] 一句話摘要
-> 提供一個輕量化的 Rust 編程助手，幫助開發者進行代碼編寫和管理。
+> 基于pi-mono，rust轻量化版本
 
 ## 專案簡介
 
-這個工具是一個基於 Rust 的終端 AI 編程助手，提供互動式界面來協助開發者進行編程。它支持多種 LLM 提供商，並且內建多種文件操作工具，讓開發者能夠更高效地管理代碼。與其他編程助手相比，它的輕量化設計和多提供商支持使其更具彈性和擴展性。這是一個值得探索的工具，特別適合喜歡使用終端的開發者。
-
-## 重點功能
-
-- 支持多種 LLM 提供商。
-- 內建文件操作工具，提升開發效率。
-- 可擴展架構，支持自定義功能。
-
-## 快速開始
-
-克隆專案並構建：git clone https://github.com/yourusername/pi-rs.git，cd pi-rs，cargo build --release。,設置 API 鍵並運行：export MOONSHOT_API_KEY='your-api-key'，./target/release/pi --model moonshot-v1-8k '你好，你會做什麼？'。
-
-## 為什麼值得關注
-
-> [!tip] 爆紅原因
-> Rust 語言的流行和對輕量化工具的需求使這個專案受到關注，尤其是在開發者社群中。作者的背景和對於編程助手的創新思維也吸引了不少使用者。
-
-## 適合誰使用
-
-**目標受眾**：對於喜歡使用終端的開發者和希望提高編程效率的學生。
-
-> [!example] 使用場景
-> - [開發者] 用它來 進行代碼編寫，因為它提供了多種 LLM 支持和工具。
-> - [學生] 用它來 學習編程，因為它的互動式界面能夠提供即時反饋。
-> - [技術愛好者] 用它來 嘗試不同的編程助手功能，因為它的擴展性允許自定義技能。
-
-> [!warning] 注意事項
-> 需要設置 API 鍵以使用某些功能。
+基于pi-mono，rust轻量化版本
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | Rust |
-| 授權 | MIT |
-| Stars | 616 |
 | Forks | 69 |
-| Issues | 0 |
+| Open Issues | 0 |
+| 最後推送 | 2026-03-05 |
 | 建立日期 | 2026-03-04 |
+| Repo 大小 | 148 KB |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
@@ -152,9 +130,8 @@ tags:
 
 ## 延伸閱讀
 
-相關概念：#AI_編程助手 · #Rust_語言 · #終端應用
-
 [GitHub](https://github.com/jshachm/pi-rs)
+
 
 ---
 

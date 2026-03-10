@@ -7,16 +7,20 @@ language: Shell
 license: MIT
 description: "Minimal Claude Code statusline setup I personally use"
 homepage: ""
-stars: 383
+stars: 384
 stars_per_day: 192
 forks: 15
 open_issues: 3
 created: 2026-03-08
+pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
 category: "Other"
 release_tag: ""
+install_complexity: "unknown"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
   - other
@@ -25,7 +29,7 @@ tags:
 
 # claude-statusline
 
-**383** stars · **192** stars/天 · 建立 2 天前 · Shell · MIT
+**384** stars · **192** stars/天 · 建立 2 天前 · Shell · MIT
 
 > [!summary] 一句話摘要
 > Minimal Claude Code statusline setup I personally use
@@ -34,18 +38,15 @@ tags:
 
 Minimal Claude Code statusline setup I personally use
 
-## 為什麼值得關注
-
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | Shell |
-| 授權 | MIT |
-| Stars | 383 |
 | Forks | 15 |
-| Issues | 3 |
+| Open Issues | 3 |
+| 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-08 |
+| Repo 大小 | 54 KB |
 
 > [!info]- 語言組成
 > ```mermaid
@@ -105,6 +106,7 @@ Minimal Claude Code statusline setup I personally use
 ## 延伸閱讀
 
 [GitHub](https://github.com/kamranahmedse/claude-statusline)
+
 
 ---
 

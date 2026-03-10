@@ -12,14 +12,18 @@ stars_per_day: 39
 forks: 37
 open_issues: 7
 created: 2026-03-03
+pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "資料科學"
+category: "Other"
 release_tag: ""
+install_complexity: "unknown"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
-  - 資料科學
+  - other
   - python
 ---
 
@@ -27,51 +31,29 @@ tags:
 
 **274** stars · **39** stars/天 · 建立 7 天前 · Python · 未標註授權
 
+`個人專案`
+
 > [!summary] 一句話摘要
-> 自動化研究論文的搜索和分析，讓讀者更快獲得有價值的資訊。
+> Claude Code+Obsidian，邪修读论文就是快
 
 ## 專案簡介
 
-這個工具通過調用 arXiv 和 Semantic Scholar API，自動為用戶推薦高質量的研究論文，並生成詳細的分析筆記。它使用 Python 實現，並整合了多個功能以提升研究效率。與傳統的手動搜尋和筆記方式相比，這個工具能夠節省大量時間，並提供更系統化的資料整理。對於研究人員來說，這是一個非常實用的工具，值得一試。
-
-## 重點功能
-
-- 自動化每日論文推薦，節省搜尋時間。
-- 生成結構化的筆記，提升資料整理效率。
-- 支持從多個來源提取高質量圖片，豐富筆記內容。
-- 提供關鍵字搜索功能，方便查找已有筆記。
-
-## 快速開始
-
-安裝依賴：`pip install -r requirements.txt`,將技能複製到 Claude Code 的技能目錄中。
-
-## 為什麼值得關注
-
-> [!tip] 爆紅原因
-> 隨著學術研究的增長，研究人員對於快速獲取和整理資料的需求越來越強烈，這個工具正好滿足了這一需求。作者的背景和對於研究流程的理解使得這個專案具備了實用性。
-
-## 適合誰使用
-
-**目標受眾**：需要高效獲取和整理研究資料的學術研究人員和學生。
-
-> [!example] 使用場景
-> - 研究人員 用它來 自動獲取最新的研究論文，因為這樣可以節省搜尋時間。
-> - 學生 用它來 整理和分析論文，因為這樣可以提高學習效率。
-> - 學術寫作人員 用它來 生成結構化的筆記，因為這樣可以幫助撰寫高質量的論文。
-
-> [!warning] 注意事項
-> 需要安裝 Claude Code CLI，並且依賴於外部 API 的穩定性。
+Claude Code+Obsidian，邪修读论文就是快
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | Python |
-| 授權 | N/A |
-| Stars | 274 |
 | Forks | 37 |
-| Issues | 7 |
+| Open Issues | 7 |
+| 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-03 |
+| Repo 大小 | 67 KB |
+
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@juliye2025](https://github.com/juliye2025) | 6 |
 
 ## README 摘錄
 
@@ -147,9 +129,8 @@ tags:
 
 ## 延伸閱讀
 
-相關概念：#自動化文獻管理 · #研究資料整理 · #論文分析
-
 [GitHub](https://github.com/juliye2025/evil-read-arxiv)
+
 
 ---
 

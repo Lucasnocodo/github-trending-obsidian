@@ -7,16 +7,20 @@ language: Python
 license: MIT
 description: "Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen"
 homepage: "https://pypi.org/project/mcp2cli/"
-stars: 460
-stars_per_day: 460
-forks: 19
+stars: 469
+stars_per_day: 469
+forks: 20
 open_issues: 0
 created: 2026-03-09
+pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
 category: "Other"
 release_tag: ""
+install_complexity: "unknown"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
   - other
@@ -25,7 +29,7 @@ tags:
 
 # mcp2cli
 
-**460** stars · **460** stars/天 · 建立 1 天前 · Python · MIT
+**469** stars · **469** stars/天 · 建立 1 天前 · Python · MIT
 
 > [!summary] 一句話摘要
 > Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen
@@ -34,19 +38,16 @@ tags:
 
 Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen
 
-## 為什麼值得關注
-
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | Python |
-| 授權 | MIT |
-| Stars | 460 |
-| Forks | 19 |
-| Issues | 0 |
+| Forks | 20 |
+| Open Issues | 0 |
+| 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-09 |
 | 官方網站 | [Link](https://pypi.org/project/mcp2cli/) |
+| Repo 大小 | 34.3 MB |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
@@ -112,8 +113,8 @@ Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen
 
 ## 延伸閱讀
 
-[GitHub](https://github.com/knowsuchagency/mcp2cli)
- · [官方網站](https://pypi.org/project/mcp2cli/)
+[GitHub](https://github.com/knowsuchagency/mcp2cli) · [官方網站](https://pypi.org/project/mcp2cli/)
+
 
 ---
 

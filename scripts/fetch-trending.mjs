@@ -1159,7 +1159,155 @@ async function main() {
   console.log(`Tracking ${Object.keys(seen).length} repos total.`);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+// ── Refresh：重新產生舊格式筆記 ────────────────────────────
+
+function extractUserSection(content) {
+  // 保留「個人筆記」和「出現記錄」
+  const boundary = content.indexOf('\n---\n\n## 個人筆記');
+  if (boundary === -1) return { userNotes: '', appearances: '' };
+
+  const userPart = content.slice(boundary + '\n---\n\n'.length);
+
+  // 提取出現記錄
+  const appMatch = userPart.match(/## 出現記錄\n\n([\s\S]*?)$/);
+  const appearances = appMatch ? appMatch[1].trim() : '';
+
+  // 提取個人筆記（出現記錄之前的部分）
+  const appIdx = userPart.indexOf('## 出現記錄');
+  const userNotes = appIdx > 0 ? userPart.slice(0, appIdx).trim() : userPart.trim();
+
+  return { userNotes, appearances };
+}
+
+function needsRefresh(content) {
+  return !content.includes('install_complexity:') ||
+         !content.includes('my_rating:') ||
+         !content.includes('pushed_at:');
+}
+
+function mergeNote(newNote, userNotes, appearances) {
+  // 替換新筆記的個人筆記區和出現記錄
+  const boundary = newNote.indexOf('\n---\n\n## 個人筆記');
+  if (boundary === -1) return newNote;
+
+  const autoGenPart = newNote.slice(0, boundary);
+
+  // 重建尾部
+  const lines = [autoGenPart, '', '---', '', userNotes, ''];
+  if (appearances) {
+    // 確保出現記錄在最後
+    if (!userNotes.includes('## 出現記錄')) {
+      lines.push('## 出現記錄', '', appearances, '');
+    }
+  }
+  return lines.join('\n');
+}
+
+async function refreshRepos(token) {
+  const { readdir } = await import('fs/promises');
+  const files = await readdir(REPOS_DIR);
+  const mdFiles = files.filter(f => f.endsWith('.md'));
+
+  console.log(`Found ${mdFiles.length} repo notes to check...`);
+
+  // 找出需要更新的筆記
+  const toRefresh = [];
+  for (const file of mdFiles) {
+    const content = await readFile(join(REPOS_DIR, file), 'utf-8');
+    if (needsRefresh(content)) {
+      const repoMatch = content.match(/^repo: (.+)$/m);
+      if (repoMatch) {
+        toRefresh.push({ file, repoName: repoMatch[1], content });
+      }
+    }
+  }
+
+  if (toRefresh.length === 0) {
+    console.log('All notes are up to date!');
+    return;
+  }
+  console.log(`${toRefresh.length} notes need refresh`);
+
+  // 批次處理（每 5 個一批，避免 rate limit）
+  const BATCH = 5;
+  for (let i = 0; i < toRefresh.length; i += BATCH) {
+    const batch = toRefresh.slice(i, i + BATCH);
+    console.log(`\nBatch ${Math.floor(i / BATCH) + 1}/${Math.ceil(toRefresh.length / BATCH)} (${batch.length} repos)...`);
+
+    // 抓取 GitHub 詳細資料
+    const repos = [];
+    for (const item of batch) {
+      try {
+        const res = await fetch(`${GITHUB_API}/repos/${item.repoName}`, { headers: gh(token) });
+        if (!res.ok) { console.log(`  Skip ${item.repoName}: API ${res.status}`); continue; }
+        const repo = await res.json();
+        const detailed = await fetchRepoDetails(repo, token);
+        repos.push({ ...item, repo: detailed });
+      } catch (err) {
+        console.log(`  Skip ${item.repoName}: ${err.message}`);
+      }
+    }
+
+    if (repos.length === 0) continue;
+
+    // LLM 翻譯
+    console.log(`  Running LLM for ${repos.length} repos...`);
+    let llmResult = null;
+    try {
+      llmResult = await callLLMBatch(repos.map(r => r.repo), token);
+    } catch (err) {
+      console.log(`  LLM failed: ${err.message}, retrying...`);
+      await new Promise(r => setTimeout(r, 2000));
+      try { llmResult = await callLLMBatch(repos.map(r => r.repo), token); } catch { llmResult = null; }
+    }
+
+    const llmMap = {};
+    if (llmResult) {
+      for (const item of llmResult) {
+        if (item.repo) { llmMap[item.repo] = item; llmMap[item.repo.toLowerCase()] = item; }
+      }
+      // index-based fallback
+      if (llmResult.length === repos.length) {
+        for (let j = 0; j < repos.length; j++) {
+          const key = repos[j].repo.full_name;
+          if (!llmMap[key] && !llmMap[key.toLowerCase()]) llmMap[key] = llmResult[j];
+        }
+      }
+    }
+
+    const today = new Date().toISOString().split('T')[0];
+
+    // 重新產生筆記
+    for (const item of repos) {
+      const llmInfo = llmMap[item.repo.full_name] || llmMap[item.repo.full_name.toLowerCase()] || null;
+      const { userNotes, appearances } = extractUserSection(item.content);
+
+      // 從舊 frontmatter 提取 first_seen
+      const firstSeenMatch = item.content.match(/^first_seen: (.+)$/m);
+      const firstSeen = firstSeenMatch ? firstSeenMatch[1] : today;
+
+      const newNote = generateRepoNote(item.repo, llmInfo, firstSeen);
+      const merged = mergeNote(newNote, userNotes, appearances);
+      await writeFile(join(REPOS_DIR, item.file), merged, 'utf-8');
+      console.log(`  Refreshed: ${item.file}`);
+    }
+
+    // 批次間等 2 秒
+    if (i + BATCH < toRefresh.length) {
+      await new Promise(r => setTimeout(r, 2000));
+    }
+  }
+
+  console.log('\nRefresh complete!');
+}
+
+// ── Entry point ──────────────────────────────────────────────
+
+const isRefresh = process.argv.includes('--refresh');
+
+if (isRefresh) {
+  const token = process.env.GITHUB_TOKEN;
+  refreshRepos(token).catch((err) => { console.error(err); process.exit(1); });
+} else {
+  main().catch((err) => { console.error(err); process.exit(1); });
+}

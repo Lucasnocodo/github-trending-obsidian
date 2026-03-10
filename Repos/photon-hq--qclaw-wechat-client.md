@@ -7,19 +7,23 @@ language: TypeScript
 license: N/A
 description: "Reverse-engineered TypeScript client for QClaw's WeChat Access API."
 homepage: "https://photon.codes"
-stars: 282
-stars_per_day: 282
-forks: 91
+stars: 288
+stars_per_day: 288
+forks: 93
 open_issues: 4
 created: 2026-03-10
+pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "開發工具"
+category: "Other"
 release_tag: ""
+install_complexity: "unknown"
 status: to-review
+my_rating: 0
+last_reviewed: 2026-03-10
 tags:
   - github
-  - 開發工具
+  - other
   - typescript
   - agent
   - openclaw
@@ -29,54 +33,27 @@ tags:
 
 # qclaw-wechat-client
 
-**282** stars · **282** stars/天 · 建立 1 天前 · TypeScript · 未標註授權
+**288** stars · **288** stars/天 · 建立 1 天前 · TypeScript · 未標註授權
+
+`ORG`
 
 > [!summary] 一句話摘要
-> 提供一個 TypeScript 客戶端，讓開發者輕鬆接入 QClaw 的 WeChat API。
+> Reverse-engineered TypeScript client for QClaw's WeChat Access API.
 
 ## 專案簡介
 
-這個 TypeScript 客戶端讓開發者能夠方便地與 QClaw 的 WeChat Access API 進行交互，簡化了身份驗證和資料請求的流程。它是從 QClaw 的 Electron 應用中反向工程而來，實現了與 Tencent 後端的通訊協議。相比於其他 API 客戶端，這個專案專注於 WeChat 的 OAuth2 認證，並且提供了更簡單的使用方式。對於需要整合 WeChat 功能的開發者來說，這是一個值得一試的工具。
-
-## 重點功能
-
-- 簡化 WeChat API 的接入流程。
-- 支持 OAuth2 QR 碼登錄，方便用戶身份驗證。
-- 提供完整的 TypeScript 類型定義，提升開發效率。
-- 反向工程而來，保證了與 Tencent 後端的兼容性。
-
-## 快速開始
-
-安裝客戶端：`npm install qclaw-wechat-client`,導入並使用客戶端：`import { QClawClient } from 'qclaw-wechat-client';`
-
-## 為什麼值得關注
-
-> [!tip] 爆紅原因
-> 隨著 WeChat 在中國的廣泛使用，開發者對於接入 WeChat API 的需求日益增加。這個專案的反向工程背景讓它在技術上具備了獨特性，吸引了開發者的注意。
-
-## 適合誰使用
-
-**目標受眾**：需要接入 WeChat API 的前端和後端開發者。
-
-> [!example] 使用場景
-> - 前端開發者 用它來 整合 WeChat 登錄功能，因為這樣可以提升用戶體驗。
-> - 後端開發者 用它來 請求 WeChat API 數據，因為這樣可以簡化數據獲取流程。
-> - 產品經理 用它來 監控 WeChat 整合的效果，因為這樣可以更好地評估產品需求。
-
-> [!warning] 注意事項
-> 僅支持 WeChat API，對於其他平台的整合能力有限。
+Reverse-engineered TypeScript client for QClaw's WeChat Access API.
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| 語言 | TypeScript |
-| 授權 | N/A |
-| Stars | 282 |
-| Forks | 91 |
-| Issues | 4 |
+| Forks | 93 |
+| Open Issues | 4 |
+| 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-10 |
 | 官方網站 | [Link](https://photon.codes) |
+| Repo 大小 | 42 KB |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
@@ -135,10 +112,8 @@ tags:
 
 ## 延伸閱讀
 
-相關概念：#API_整合 · #OAuth2_認證 · #TypeScript_開發
+[GitHub](https://github.com/photon-hq/qclaw-wechat-client) · [官方網站](https://photon.codes)
 
-[GitHub](https://github.com/photon-hq/qclaw-wechat-client)
- · [官方網站](https://photon.codes)
 
 ---
 
