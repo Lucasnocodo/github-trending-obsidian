@@ -45,7 +45,7 @@ async function fetchReadme(fullName, token) {
     const data = await res.json();
     return Buffer.from(data.content, 'base64')
       .toString('utf-8')
-      .slice(0, 4000)
+      .slice(0, 8000)
       .replace(/!\[[^\]]*\]\([^)]+\)/g, '') // remove images
       .replace(/<img[^>]*>/g, '')
       .replace(/<\/?[^>]+>/g, '')
@@ -170,7 +170,8 @@ function buildRepoPrompt(repos) {
         parts.push(`主要貢獻者: ${r._contributors.map((c) => c.login).join(', ')}`);
       if (r._release) parts.push(`最新版本: ${r._release.tag}`);
       if (r.homepage) parts.push(`官方網站: ${r.homepage}`);
-      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 2500)}`);
+      if (r.topics?.length) parts.push(`Topics: ${r.topics.join(', ')}`);
+      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 5000)}`);
       return parts.join('\n');
     })
     .join('\n\n---\n\n');
@@ -191,13 +192,28 @@ async function callLLMBatch(repos, token) {
         { role: 'user', content: prompt },
       ],
       temperature: 0.3,
-      max_tokens: 12000,
+      max_tokens: 14000,
     }),
   });
-  if (!res.ok) throw new Error(`LLM HTTP ${res.status}`);
+  if (!res.ok) throw new Error(`LLM HTTP ${res.status}: ${await res.text().catch(() => '')}`);
   const data = await res.json();
   const text = data.choices[0].message.content.trim();
-  return JSON.parse(text.replace(/^```json?\n?/m, '').replace(/\n?```$/m, ''));
+  // 清理 LLM 回傳的常見格式問題
+  let cleaned = text
+    .replace(/^```json?\n?/m, '')
+    .replace(/\n?```$/m, '')
+    .replace(/[\x00-\x1F\x7F]/g, (c) => c === '\n' || c === '\t' ? c : ' '); // 移除控制字元
+  try {
+    return JSON.parse(cleaned);
+  } catch (parseErr) {
+    // 嘗試修復常見的 JSON 問題（尾隨逗號、不匹配的括號）
+    cleaned = cleaned.replace(/,\s*([}\]])/g, '$1');
+    try {
+      return JSON.parse(cleaned);
+    } catch {
+      throw new Error(`JSON parse failed: ${parseErr.message} — first 200 chars: ${cleaned.slice(0, 200)}`);
+    }
+  }
 }
 
 async function callLLM(repos, token) {
@@ -362,6 +378,7 @@ function generateRepoNote(repo, llmInfo, today) {
     `pushed_at: ${repo.pushed_at?.split('T')[0] || 'N/A'}`,
     `first_seen: ${today}`,
     `week: "${getWeekString(today)}"`,
+    `month: "${today.slice(0, 7)}"`,
     `category: "${cat}"`,
     `release_tag: "${repo._release?.tag || ''}"`,
     `install_complexity: "${installLabel}"`,
@@ -424,17 +441,26 @@ function generateRepoNote(repo, llmInfo, today) {
   lines.push(`> ${descZh}`);
   lines.push('');
 
+  // ── 速覽卡片（一眼看出值不值得深入）──
+  if (!llmFailed) {
+    const installIcon = installLabel === 'easy' ? 'Easy' : installLabel === 'medium' ? 'Medium' : 'Hard';
+    const ageLabel = days <= 7 ? 'Brand New' : days <= 30 ? 'Recent' : days <= 90 ? 'Growing' : 'Established';
+    const momentumLabel = rate >= 1000 ? 'Viral' : rate >= 100 ? 'Hot' : rate >= 10 ? 'Growing' : 'Steady';
+    lines.push('> [!info] 速覽');
+    lines.push(`> **安裝難度** ${installIcon} · **專案狀態** ${ageLabel} · **熱度** ${momentumLabel} (${fmt(rate)} stars/day)`);
+    if (llmInfo?.target_audience) {
+      lines.push(`> **適合** ${llmInfo.target_audience}`);
+    }
+    if (llmInfo?.key_insight) {
+      lines.push(`> **一句話重點** ${llmInfo.key_insight}`);
+    }
+    lines.push('');
+  }
+
   // ── 核心創新 ──
   if (llmInfo?.novelty_claim) {
     lines.push('> [!abstract] 核心創新');
     lines.push(`> ${llmInfo.novelty_claim}`);
-    lines.push('');
-  }
-
-  // ── 關鍵洞察 ──
-  if (llmInfo?.key_insight) {
-    lines.push('> [!tip] 關鍵洞察');
-    lines.push(`> ${llmInfo.key_insight}`);
     lines.push('');
   }
 
@@ -642,7 +668,7 @@ function generateRepoNote(repo, llmInfo, today) {
     lines.push('## README 摘錄');
     lines.push('');
     lines.push('> [!info]- 展開查看原文 README');
-    const readmeLines = repo._readme.slice(0, 2500).split('\n');
+    const readmeLines = repo._readme.slice(0, 4000).split('\n');
     for (const rl of readmeLines) {
       lines.push(`> ${rl}`);
     }
@@ -1089,6 +1115,30 @@ SORT stars DESC
 LIMIT 10
 \`\`\`
 
+## 速覽清單
+
+> [!tip] 快速掃描
+> 一眼看完每個專案的重點
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"')
+  .sort(p => p.stars_per_day || 0, "desc");
+
+const rows = [];
+for (const p of pages) {
+  const desc = p.aliases?.[2] || p.description || "";
+  const install = p.install_complexity === "easy" ? "Easy" : p.install_complexity === "medium" ? "Mid" : "Hard";
+  rows.push([
+    p.file.link,
+    (p.stars_per_day || 0) + "/d",
+    install,
+    p.category || "",
+    desc.slice(0, 50) + (desc.length > 50 ? "..." : "")
+  ]);
+}
+dv.table(["專案", "速度", "安裝", "分類", "一句話"], rows);
+\`\`\`
+
 ## 所有專案
 
 \`\`\`dataview
@@ -1207,6 +1257,21 @@ TABLE WITHOUT ID
 FROM "Repos"
 WHERE week = "${weekStr}"
 GROUP BY install_complexity
+\`\`\`
+
+## Easy Install 推薦
+
+> [!tip] 一行就能跑
+> 本週安裝最簡單的專案，適合快速試用
+
+\`\`\`dataview
+TABLE
+  stars AS "Stars",
+  stars_per_day AS "Stars/天",
+  category AS "分類"
+FROM "Repos"
+WHERE week = "${weekStr}" AND install_complexity = "easy"
+SORT stars DESC
 \`\`\`
 
 ## 每日記錄
@@ -1892,7 +1957,8 @@ function needsRefresh(content) {
          !content.includes('## 優缺點分析') ||
          !content.includes('## 相關收錄') ||
          !content.includes('快速評估') ||
-         !content.includes('關鍵洞察');  // v2: 新增 key_insight 區塊
+         !content.includes('關鍵洞察') ||
+         !content.includes('速覽');  // v3: 新增速覽卡片 + 更多 README 內容
 }
 
 function hasLLMContent(content) {
@@ -2025,25 +2091,33 @@ async function refreshRepos(token, failedOnly = false) {
       }
     }
 
-    // 第二步：對於批次失敗的 repo，逐個重試
+    // 第二步：對於批次失敗的 repo，逐個重試（漸進截斷 README）
     if (!batchSuccess) {
       console.log(`  Falling back to individual LLM calls...`);
       for (const item of repos) {
         const key = item.repo.full_name;
-        if (llmMap[key] || llmMap[key.toLowerCase()]) continue; // 已有結果
-        for (let attempt = 0; attempt < 2; attempt++) {
+        if (llmMap[key] || llmMap[key.toLowerCase()]) continue;
+        let succeeded = false;
+        for (let attempt = 0; attempt < 3 && !succeeded; attempt++) {
           if (attempt > 0) await new Promise(r => setTimeout(r, 3000));
           try {
-            const result = await callLLMBatch([item.repo], token);
+            // 每次重試都截斷更多 README（可能是超長 README 導致失敗）
+            const repoClone = { ...item.repo };
+            if (attempt >= 1 && repoClone._readme) {
+              const truncLen = attempt === 1 ? 3000 : 1500;
+              repoClone._readme = repoClone._readme.slice(0, truncLen);
+              console.log(`  Truncating README to ${truncLen} chars for retry...`);
+            }
+            const result = await callLLMBatch([repoClone], token);
             if (result?.[0]) {
               llmMap[result[0].repo] = result[0];
               llmMap[result[0].repo?.toLowerCase()] = result[0];
               if (!llmMap[key] && !llmMap[key.toLowerCase()]) llmMap[key] = result[0];
               console.log(`  Individual LLM OK: ${key}`);
+              succeeded = true;
             }
-            break;
           } catch (err) {
-            console.log(`  Individual LLM failed for ${key}: ${err.message}`);
+            console.log(`  Individual attempt ${attempt + 1} failed for ${key}: ${err.message}`);
           }
         }
         await new Promise(r => setTimeout(r, 1500));
@@ -2075,6 +2149,8 @@ async function refreshRepos(token, failedOnly = false) {
       const savedReviewed = reviewedMatch ? reviewedMatch[1] : today;
       const weekMatch = item.content.match(/^week: "(.+)"$/m);
       const savedWeek = weekMatch ? weekMatch[1] : null;
+      const monthMatch = item.content.match(/^month: "(.+)"$/m);
+      const savedMonth = monthMatch ? monthMatch[1] : null;
 
       const newNote = generateRepoNote(item.repo, llmInfo, firstSeen);
       // 還原使用者編輯過的欄位（避免 refresh 覆蓋手動更改）
@@ -2085,6 +2161,9 @@ async function refreshRepos(token, failedOnly = false) {
         .replace(/^last_reviewed: .+$/m, `last_reviewed: ${savedReviewed}`);
       if (savedWeek) {
         merged = merged.replace(/^week: ".+"$/m, `week: "${savedWeek}"`);
+      }
+      if (savedMonth) {
+        merged = merged.replace(/^month: ".+"$/m, `month: "${savedMonth}"`);
       }
       await writeFile(join(REPOS_DIR, item.file), merged, 'utf-8');
       console.log(`  Refreshed: ${item.file}`);
