@@ -734,9 +734,24 @@ function generateRepoNote(repo, llmInfo, today) {
   lines.push('> 實際效果 :: _達到預期 / 不如預期（原因）_');
   lines.push('> 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_');
   lines.push('');
+  lines.push('> [!question]- 待研究的問題');
+  lines.push('> _記下看完後還沒有答案的問題，未來回來補充_');
+  lines.push('> ');
+  lines.push('> - [ ] ');
+  lines.push('');
+  lines.push('### 採用判斷');
+  lines.push('');
+  lines.push('> [!tip]- 什麼時候該用 / 不該用');
+  lines.push('> **該用的情況**：');
+  lines.push('> - ');
+  lines.push('> ');
+  lines.push('> **不該用的情況**：');
+  lines.push('> - ');
+  lines.push('');
   lines.push('### 想法與筆記');
   lines.push('');
   lines.push('_隨時記錄想法、發現、跟其他工具的比較..._');
+  lines.push('_重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_');
   lines.push('');
   lines.push('**狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`');
   lines.push('');
@@ -1977,6 +1992,8 @@ function isDefaultUserNotes(userNotes) {
   const trimmed = userNotes.replace(/## 出現記錄[\s\S]*$/, '').trim();
   return trimmed.includes('_在此寫下你的想法') ||
          trimmed.includes('_一句話_') ||
+         trimmed.includes('_隨時記錄想法') ||
+         (!trimmed.includes('待研究的問題') && trimmed.includes('快速評估')) || // 舊版快速評估模板（沒有待研究區）
          trimmed.length < 200; // 很短的內容通常也是預設
 }
 
@@ -2038,6 +2055,8 @@ async function refreshRepos(token, failedOnly = false) {
     return;
   }
   console.log(`${toRefresh.length} notes need refresh`);
+  let refreshedCount = 0;
+  let skippedCount = 0;
 
   // 批次處理（每 5 個一批，避免 rate limit）
   const BATCH = 3;
@@ -2050,6 +2069,16 @@ async function refreshRepos(token, failedOnly = false) {
     for (const item of batch) {
       try {
         const res = await fetch(`${GITHUB_API}/repos/${item.repoName}`, { headers: gh(token) });
+        if (res.status === 404) {
+          // Repo 已刪除或改名，標記到筆記中
+          console.log(`  Repo deleted/renamed: ${item.repoName} (404)`);
+          const updated = item.content.replace(/^status: .+$/m, 'status: archived');
+          if (updated !== item.content) {
+            await writeFile(join(REPOS_DIR, item.file), updated, 'utf-8');
+            console.log(`  Marked as archived: ${item.file}`);
+          }
+          continue;
+        }
         if (!res.ok) { console.log(`  Skip ${item.repoName}: API ${res.status}`); continue; }
         const repo = await res.json();
         const detailed = await fetchRepoDetails(repo, token);
@@ -2069,7 +2098,7 @@ async function refreshRepos(token, failedOnly = false) {
     let batchSuccess = false;
     for (let attempt = 0; attempt < 3 && !batchSuccess; attempt++) {
       if (attempt > 0) {
-        const delay = 2000 * Math.pow(2, attempt - 1);
+        const delay = 5000 * Math.pow(2, attempt - 1); // 5s, 10s（429 需要更長等待）
         console.log(`  Retry ${attempt}/2, waiting ${delay / 1000}s...`);
         await new Promise(r => setTimeout(r, delay));
       }
@@ -2099,7 +2128,11 @@ async function refreshRepos(token, failedOnly = false) {
         if (llmMap[key] || llmMap[key.toLowerCase()]) continue;
         let succeeded = false;
         for (let attempt = 0; attempt < 3 && !succeeded; attempt++) {
-          if (attempt > 0) await new Promise(r => setTimeout(r, 3000));
+          if (attempt > 0) {
+            const retryDelay = 5000 * Math.pow(2, attempt - 1); // 5s, 10s
+            console.log(`  Waiting ${retryDelay / 1000}s before retry...`);
+            await new Promise(r => setTimeout(r, retryDelay));
+          }
           try {
             // 每次重試都截斷更多 README（可能是超長 README 導致失敗）
             const repoClone = { ...item.repo };
@@ -2120,7 +2153,7 @@ async function refreshRepos(token, failedOnly = false) {
             console.log(`  Individual attempt ${attempt + 1} failed for ${key}: ${err.message}`);
           }
         }
-        await new Promise(r => setTimeout(r, 1500));
+        await new Promise(r => setTimeout(r, 3000)); // 個別重試間等 3s
       }
     }
 
@@ -2166,18 +2199,45 @@ async function refreshRepos(token, failedOnly = false) {
         merged = merged.replace(/^month: ".+"$/m, `month: "${savedMonth}"`);
       }
       await writeFile(join(REPOS_DIR, item.file), merged, 'utf-8');
-      console.log(`  Refreshed: ${item.file}`);
+      refreshedCount++;
+      console.log(`  Refreshed [${refreshedCount}/${toRefresh.length}]: ${item.file}`);
     }
 
-    // 批次間等待（遞增避免 rate limit）
+    // 批次間等待（遞增避免 429 rate limit，根據日誌顯示後期批次頻繁 429）
     if (i + BATCH < toRefresh.length) {
       const batchIdx = Math.floor(i / BATCH);
-      const wait = 2000 + (batchIdx * 500);
+      // 前 5 批等 3s，之後每批多加 1.5s（最多 15s）
+      const wait = Math.min(3000 + Math.max(0, batchIdx - 5) * 1500, 15000);
+      console.log(`  Waiting ${wait / 1000}s before next batch...`);
       await new Promise(r => setTimeout(r, wait));
     }
   }
 
-  console.log('\nRefresh complete!');
+  console.log(`\nRefresh complete! ${refreshedCount}/${toRefresh.length} notes updated, ${toRefresh.length - refreshedCount} skipped`);
+
+  // refresh 後也更新 Dashboard/Home/MOC/Weekly/Monthly（因為筆記內容變了）
+  const today = new Date().toISOString().split('T')[0];
+  const dashPath = join(ROOT, 'Dashboard.md');
+  await writeFile(dashPath, generateDashboard(), 'utf-8');
+  console.log('Updated: Dashboard.md');
+
+  const homePath = join(ROOT, 'Home.md');
+  await writeFile(homePath, generateHome(), 'utf-8');
+  console.log('Updated: Home.md');
+
+  await generateMOCs();
+
+  await mkdir(WEEKLY_DIR, { recursive: true });
+  const weekStr = getWeekString(today);
+  await writeFile(join(WEEKLY_DIR, `${weekStr}.md`), generateWeeklyReview(weekStr), 'utf-8');
+  console.log(`Updated: Weekly/${weekStr}.md`);
+
+  await mkdir(MONTHLY_DIR, { recursive: true });
+  const monthStr = getMonthString(today);
+  await writeFile(join(MONTHLY_DIR, `${monthStr}.md`), generateMonthlyReview(monthStr), 'utf-8');
+  console.log(`Updated: Monthly/${monthStr}.md`);
+
+  await generateConceptNotes();
 }
 
 // ── Entry point ──────────────────────────────────────────────

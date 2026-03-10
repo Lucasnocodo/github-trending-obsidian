@@ -81,3 +81,37 @@ code:is(
   border-bottom: 2px solid var(--interactive-accent);
   padding-bottom: 0.3em;
 }
+
+/* Quick overview card (速覽 callout) styling */
+.callout[data-callout="info"] {
+  --callout-color: 66, 133, 244;
+}
+
+/* Code example section styling */
+.markdown-rendered h2 + .copy-code-button {
+  margin-top: -0.5em;
+}
+
+/* Better table styling for comparison tables */
+.markdown-rendered table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.markdown-rendered table th {
+  background-color: var(--background-secondary);
+  font-weight: 600;
+}
+
+/* Status badge inline codes */
+code {
+  font-size: 0.85em;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+/* Speed scan list in dashboard - compact rows */
+.dashboard .dataview .table-view-table tr td:first-child {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
