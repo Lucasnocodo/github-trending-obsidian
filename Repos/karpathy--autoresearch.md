@@ -7,10 +7,10 @@ language: Python
 license: N/A
 description: "AI agents running research on single-GPU nanochat training automatically"
 homepage: ""
-stars: 22213
-stars_per_day: 7404
-forks: 2821
-open_issues: 82
+stars: 22395
+stars_per_day: 5599
+forks: 2843
+open_issues: 73
 created: 2026-03-06
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
@@ -18,7 +18,7 @@ week: "2026-W11"
 month: "2026-03"
 category: "AI/ML"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
@@ -26,40 +26,43 @@ tags:
   - github
   - "category/ai_ml"
   - "lang/python"
+  - easy_install
 aliases:
   - "autoresearch"
   - "karpathy/autoresearch"
-  - "讓 AI 自動進行單 GPU nanochat 訓練實驗，早上起來就能看到結果。"
+  - "讓 AI 自動進行單 GPU 的 nanochat 訓練實驗，早上起來查看結果。"
 ---
 
 # autoresearch
 
-**22.2k** stars · **7.4k** stars/天 · 建立 3 天前 · Python · 未標註授權
+**22.4k** stars · **5.6k** stars/天 · 建立 4 天前 · Python · 未標註授權
+
+`easy-install`
 
 > [!summary] 一句話摘要
-> 讓 AI 自動進行單 GPU nanochat 訓練實驗，早上起來就能看到結果。
+> 讓 AI 自動進行單 GPU 的 nanochat 訓練實驗，早上起來查看結果。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (7.4k stars/day)
-> **適合** 希望自動化 LLM 訓練流程的研究者，並擁有單 GPU 環境的開發者。
-> **一句話重點** 這個專案展示了 AI 如何能夠自動化研究過程，讓研究者能專注於更高層次的思考。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (5.6k stars/day)
+> **適合** 希望在單 GPU 環境下進行自動化 AI 研究的開發者或研究人員。
+> **一句話重點** 這個專案展示了如何利用 AI agent 自動化研究過程，讓研究者能專注於結果而非繁瑣的實驗設置。
 
 > [!abstract] 核心創新
-> 這個專案提供了一種全新的方式，讓 AI agent 自動進行 LLM 訓練實驗，並根據結果自我調整。
+> 這個專案的核心創新在於讓 AI agent 自動進行 LLM 訓練實驗，並通過簡化的代碼結構提升研究效率。
 
 ## 專案簡介
 
-這個專案的核心在於讓 AI agent 自動進行 LLM 訓練實驗，使用者只需設定一個 Markdown 文件，AI 會根據這些指示進行實驗。它的運作流程是：AI agent 每 5 分鐘修改一次訓練代碼，進行訓練，然後根據結果決定是否保留變更。技術上，專案使用了 Python 和 Jupyter Notebook，並依賴於 NVIDIA GPU 和 PyTorch。與其他自動化訓練工具相比，這個專案的特點在於它的單一檔案修改設計，讓 AI agent 只需關注 `train.py`，而不必處理其他複雜的配置。這樣的設計使得實驗的可比性更高，並且能夠在固定的時間預算內找到最佳模型。使用者可以在一個晚上進行約 100 次實驗，這對於希望快速迭代的研究者來說非常有幫助。專案目前處於 alpha 階段，但其創新性和潛在的研究效率提升使其值得一試。建議在需要快速迭代模型的情況下使用，但如果不具備單 GPU 環境，則不適合。
+這個專案讓 AI agent 在單一 GPU 環境下自動進行 LLM 訓練實驗。它的運作流程是：AI agent 每 5 分鐘修改一次訓練代碼，進行訓練，檢查結果，若有改善則保留，否則回退，直到你早上醒來時看到一份實驗日誌和可能更好的模型。技術上，它使用 Python 和 Jupyter Notebook，並依賴於 PyTorch 進行訓練，使用 Muon 和 AdamW 作為優化器，評估指標為 val_bpb，數值越低越好。與其他類似工具相比，這個專案的獨特之處在於它的自動化程度和固定的訓練時間限制，這使得不同實驗之間的結果可以直接比較。使用者可以在一個簡化的環境中進行大量實驗，約 12 次實驗每小時，整晚可以進行約 100 次實驗。這個專案目前處於 beta 階段，適合對 AI 研究有興趣的中小型團隊。若你希望快速迭代模型並獲得實驗結果，這是一個值得考慮的選擇，但若你需要更複雜的訓練配置或多 GPU 支援，則可能不太適合。
 
-**技術棧**：`Python 3.10` · `Jupyter Notebook` · `PyTorch`
+**技術棧**：`Python 3.10` · `PyTorch`
 
 ## 重點功能
 
-- 自動化訓練 — 讓 AI agent 每 5 分鐘修改訓練代碼並進行訓練。
-- 簡化設計 — 只需修改 `train.py`，其他檔案不需變動。
-- 固定時間預算 — 每次訓練固定 5 分鐘，便於比較實驗結果。
-- 使用 Markdown 指令 — 使用者可通過 `program.md` 設定 AI agent 的行為。
-- 單 GPU 支援 — 專為單 NVIDIA GPU 環境設計，簡化了配置。
+- 自動化訓練 — AI agent 每 5 分鐘修改訓練代碼並進行訓練，直到達到最佳結果。
+- 簡化的代碼結構 — 只需修改 train.py，讓使用者專注於實驗而非繁瑣的配置。
+- 固定的時間預算 — 每次訓練固定 5 分鐘，便於比較不同實驗結果。
+- 使用 val_bpb 指標 — 評估模型性能的標準化指標，便於比較不同架構。
+- 無需複雜配置 — 僅需一個 NVIDIA GPU 和基本的 Python 環境即可運行。
 
 ## 快速開始
 
@@ -80,43 +83,53 @@ uv run prepare.py
 uv run train.py
 ```
 
+## 程式碼範例
+
+```bash
+uv run train.py
+```
+
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 Andrej Karpathy 是知名的 AI 研究者，這個專案切中對於自動化研究的需求。隨著 AI 研究的快速發展，對於高效實驗的需求日益增加，這使得這個專案在社群中受到關注。
+> Karpathy 是 AI 領域的知名人物，他的專案切中自動化研究的需求，尤其是在單 GPU 環境下的實驗管理。隨著 AI 研究的快速發展，這種自動化的方式讓研究者能夠更有效率地進行實驗，這使得專案在短時間內受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：希望自動化 LLM 訓練流程的研究者，並擁有單 GPU 環境的開發者。
+**目標受眾**：希望在單 GPU 環境下進行自動化 AI 研究的開發者或研究人員。
 
 > [!example] 使用場景
-> - AI 研究者用它來自動化 LLM 訓練實驗，因為這樣可以在一夜之間進行約 100 次實驗，顯著提高研究效率。
-> - 數據科學家用它來探索不同模型架構，因為 AI agent 可以自動調整超參數，節省大量手動調整的時間。
-> - 學生用它來學習 LLM 訓練流程，因為簡化的設計使得他們能專注於核心概念，而不必處理複雜的配置。
+> - AI 研究員用它來自動化 LLM 訓練實驗，因為這樣可以在不干預的情況下進行大量實驗，提升研究效率。
+> - 學生用它來學習如何調整模型參數，因為 AI agent 的自動調整能讓他們更快掌握模型訓練的要領。
+> - 獨立開發者用它來探索不同的模型架構，因為固定的訓練時間讓他們能夠快速比較不同設置的效果。
+
+## 架構分析
+
+這是一個單體架構的專案，核心資料流為：用戶輸入 → AI agent 修改訓練代碼 → 輸出實驗結果。關鍵技術決策是使用固定的訓練時間和簡化的代碼結構，專案目錄結構包含 prepare.py、train.py 和 program.md 三個主要檔案。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化實驗流程，顯著提高研究效率。
-> - 簡化的設計讓使用者能專注於核心研究問題。
-> - 固定時間預算使得實驗結果可比性高。
+> - 自動化程度高，能夠快速進行大量實驗。
+> - 簡化的代碼結構，易於使用和維護。
+> - 固定的訓練時間使得實驗結果可比較性強。
 
 > [!danger] 缺點
-> - 僅限於單 GPU 環境，對於資源有限的使用者不友好。
-> - 需要一定的技術背景來設置和運行。
-> - 目前處於 alpha 階段，可能存在不穩定性。
+> - 僅支援單一 GPU，對於需要多 GPU 的用戶不友好。
+> - 訓練時間固定，可能不適合某些模型的需求。
+> - 需要一定的 AI 和機器學習背景才能有效使用。
 
 > [!warning] 注意事項
-> - 僅支援單 NVIDIA GPU，無法在 CPU 或其他平台運行。
-> - 需要 Python 3.10+ 和特定的依賴，安裝過程可能較為繁瑣。
-> - 目前處於 alpha 階段，API 可能不穩定。
+> - 僅支援單一 NVIDIA GPU，未來可能支援多 GPU。
+> - 訓練時間固定為 5 分鐘，可能不適合需要長時間訓練的模型。
+> - 需要 Python 3.10 以上版本，對於舊版用戶需升級。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 2.8k |
-| Open Issues | 82 |
+| Open Issues | 73 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-06 |
 | Repo 大小 | 255 KB |
@@ -135,6 +148,11 @@ uv run train.py
 > | [@dipeshbabu](https://github.com/dipeshbabu) | 1 |
 > | [@marcinbogdanski](https://github.com/marcinbogdanski) | 1 |
 > | [@dumko2001](https://github.com/dumko2001) | 1 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度高，持續有更新和討論。
+**連結**：[文件](https://github.com/karpathy/autoresearch)
 
 ## README 摘錄
 
@@ -203,7 +221,7 @@ uv run train.py
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[機器學習]] · [[深度學習]]
+相關概念：[[機器學習]] · [[自動化測試]]
 
 [GitHub](https://github.com/karpathy/autoresearch)
 
@@ -251,9 +269,24 @@ uv run train.py
 > 實際效果 :: _達到預期 / 不如預期（原因）_
 > 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
 
+> [!question]- 待研究的問題
+> _記下看完後還沒有答案的問題，未來回來補充_
+> 
+> - [ ] 
+
+### 採用判斷
+
+> [!tip]- 什麼時候該用 / 不該用
+> **該用的情況**：
+> - 
+> 
+> **不該用的情況**：
+> - 
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
+_重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 
