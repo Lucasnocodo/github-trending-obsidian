@@ -33,7 +33,7 @@ tags:
 aliases:
   - "LegacyLauncher"
   - "gradenGnostic/LegacyLauncher"
-  - "提供一個自訂的啟動器來玩 Minecraft Legacy Console Edition。"
+  - "為 Minecraft Legacy Console Edition 提供自定義啟動器，簡化遊戲啟動流程。"
 ---
 
 # LegacyLauncher
@@ -43,28 +43,25 @@ aliases:
 `v3.0.1`
 
 > [!summary] 一句話摘要
-> 提供一個自訂的啟動器來玩 Minecraft Legacy Console Edition。
-
-> [!abstract] 核心創新
-> 提供 Minecraft 風格的 GUI 和自動更新功能，提升玩家體驗。
+> 為 Minecraft Legacy Console Edition 提供自定義啟動器，簡化遊戲啟動流程。
 
 ## 專案簡介
 
-LegacyLauncher 是一個專為 Minecraft Legacy Console Edition 設計的自訂啟動器，提供了一個像素化的 GUI 界面，讓玩家能夠輕鬆啟動遊戲。它支援自動更新，能夠從 GitHub 獲取最新版本，並且兼容 Windows 和 Linux 系統。使用者可以保存個人資料，追蹤遊玩時間，並自定義啟動選項，如 IP 和埠號。與其他啟動器相比，LegacyLauncher 的界面更符合 Minecraft 的風格，並且提供了多種兼容層選擇，特別是對於 Linux 使用者來說，能夠選擇直接執行或使用 Wine 和 Proton。整體來看，這是一個適合 Minecraft 玩家使用的啟動器，特別是對於喜歡自訂的玩家。
+LegacyLauncher 是一個專為 Minecraft Legacy Console Edition 設計的自定義啟動器，提供了友好的 GUI 和自動更新功能。它使用 Electron 框架構建，支持 Windows 和 Linux 平台，並能夠根據用戶需求配置啟動選項。與其他啟動器相比，LegacyLauncher 提供了更具 Minecraft 風格的界面，並支持多種兼容性層，讓 Linux 用戶能夠輕鬆運行 Windows 執行檔。這個啟動器能夠自動跟蹤遊戲時間，並保存用戶配置，讓玩家能夠更方便地管理遊戲。總體來看，LegacyLauncher 是一個穩定且易於使用的工具，適合各類 Minecraft 玩家。
 
-**技術棧**：`JavaScript` · `Electron` · `Node.js`
+**技術棧**：`JavaScript` · `Electron` · `HTML` · `CSS`
 
 ## 重點功能
 
-- Minecraft 風格的 GUI，符合遊戲主題。
-- 自動更新功能，隨時獲取最新版本。
-- 跨平台支援，兼容 Windows 和 Linux。
-- 保存用戶名和追蹤遊玩時間的功能。
-- 自訂啟動選項，如 IP 和埠號。
+- 提供 Minecraft 風格的 GUI，增強用戶體驗。
+- 自動更新功能，確保用戶使用最新版本。
+- 支持 Windows 和 Linux 平台，擴大使用範圍。
+- 保存用戶配置，跟蹤遊戲時間。
+- 支持自定義啟動選項，滿足不同需求。
 
 ## 快速開始
 
-1. 克隆或下載此倉庫
+1. 克隆或下載這個倉庫
 ```bash
 git clone https://github.com/gradenGnostic/LegacyLauncher.git
 ```
@@ -72,7 +69,7 @@ git clone https://github.com/gradenGnostic/LegacyLauncher.git
 ```bash
 npm install
 ```
-3. 啟動啟動器
+3. 運行啟動器
 ```bash
 npm start
 ```
@@ -80,37 +77,37 @@ npm start
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者團隊在 Minecraft 社群中有一定的影響力，這個專案滿足了玩家對於自訂啟動器的需求。隨著 Minecraft 的持續流行，對於更好的遊戲啟動體驗的需求也在上升，這使得 LegacyLauncher 在當前時期受到關注。特別是它的跨平台支援和自訂選項，吸引了許多玩家。
+> 作者對 Minecraft 社群有深入了解，LegacyLauncher 直接解決了玩家在啟動遊戲過程中的繁瑣問題。隨著 Minecraft 的持續流行，對於更好的啟動器需求也隨之增加，這使得該工具在玩家中受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：喜愛 Minecraft 的玩家和希望自訂啟動器的開發者。
+**目標受眾**：喜愛 Minecraft 的玩家，特別是使用 Legacy Console Edition 的用戶。
 
 > [!example] 使用場景
-> - Minecraft 玩家 用它來 啟動遊戲，因為它提供了更符合遊戲風格的界面。
-> - 開發者 用它來 測試遊戲更新，因為它能自動獲取最新版本。
-> - Linux 使用者 用它來 遊玩 Minecraft，因為它支援多種兼容層選擇。
+> - Minecraft 玩家用它來快速啟動遊戲，因為它提供了自動更新和配置選項。
+> - Linux 用戶用它來運行 Minecraft，因為它支持多種兼容性層。
+> - 開發者用它來測試 Minecraft 版本，因為它能夠輕鬆管理不同的啟動配置。
 
 ## 架構分析
 
-LegacyLauncher 採用 Electron 框架構建，前端使用 HTML 和 CSS，後端使用 Node.js。資料流是 使用者輸入 → 啟動器介面 → 遊戲啟動 → 更新檢查 → 遊戲執行。
+LegacyLauncher 採用 Electron 框架構建，前端使用 HTML 和 CSS 提供用戶界面，後端使用 Node.js 處理啟動邏輯。用戶的配置和遊戲資料會被保存，方便未來使用。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 界面風格符合 Minecraft，提升遊戲氛圍。
-> - 自動更新功能，確保使用者使用最新版本。
-> - 跨平台支援，讓更多玩家能夠使用。
+> - 界面友好，符合 Minecraft 的風格。
+> - 自動更新功能，減少手動操作。
+> - 支持多平台，擴大了使用者基礎。
 
 > [!danger] 缺點
-> - 僅限於 Minecraft Legacy Console Edition，範圍有限。
-> - Linux 使用者需要額外配置兼容層。
-> - 可能存在兼容性問題，影響使用體驗。
+> - 僅限於 Legacy Console Edition，無法支持其他版本。
+> - Linux 用戶需額外配置，增加使用複雜度。
+> - 可能需要手動調整某些啟動選項。
 
 > [!warning] 注意事項
-> - 僅支援 Minecraft Legacy Console Edition。
-> - Linux 使用者需要安裝 Wine 或 Proton。
-> - 可能會遇到兼容性問題，具體取決於系統環境。
+> - 僅支持 Legacy Console Edition。
+> - Linux 用戶需要安裝額外的兼容性層。
+> - 對於某些功能可能需要手動配置。
 
 ## 技術細節
 
@@ -142,7 +139,7 @@ LegacyLauncher 採用 Electron 框架構建，前端使用 HTML 和 CSS，後端
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新，並有使用者反饋。
+**社群活躍度**：社群活躍，定期更新和修復問題。
 
 ## README 摘錄
 
@@ -240,7 +237,7 @@ LegacyLauncher 採用 Electron 框架構建，前端使用 HTML 和 CSS，後端
 
 ## 延伸閱讀
 
-相關概念：[[自訂啟動器]] · [[遊戲開發]] · [[跨平台應用]]
+相關概念：[[跨平台應用]] · [[遊戲啟動器]] · [[用戶界面設計]]
 
 [GitHub](https://github.com/gradenGnostic/LegacyLauncher) · [官方網站](https://gradengnostic.github.io/legacylauncherweb/)
 
@@ -255,13 +252,42 @@ LegacyLauncher 採用 Electron 框架構建，前端使用 HTML 和 CSS，後端
 > LIMIT 8
 > ```
 
-
 ---
 
 ## 個人筆記
 
-> [!question]+ 我的想法
-> _在此寫下你的想法、使用心得、跟其他工具的比較..._
+> [!question]+ 快速評估（第一次看時填寫）
+> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> 
+> **跟我的工作相關嗎？** 是 / 否 / 間接相關
+> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
+> **第一印象**：_一句話_
+
+> [!success]- 深度評估（試用後填寫）
+> 
+> | 項目 | 分數 (1-5) | 備註 |
+> | --- | :---: | --- |
+> | 實用性 | /5 | |
+> | 技術新穎性 | /5 | |
+> | 文件品質 | /5 | |
+> | 社群活躍度 | /5 | |
+> | 上手難度 | /5 | 1=很難 5=很簡單 |
+> 
+> **成熟度**：早期 / 可用 / 穩定
+> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+
+### 試用記錄
+
+> [!example]- 試用 #1
+> 試用日期 :: 
+> 試用版本 :: 
+> 安裝過程 :: _順利 / 遇到問題（描述）_
+> 實際效果 :: _達到預期 / 不如預期（原因）_
+> 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
+
+### 想法與筆記
+
+_隨時記錄想法、發現、跟其他工具的比較..._
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 
