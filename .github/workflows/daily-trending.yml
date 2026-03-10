@@ -28,6 +28,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add trending/ data/
+          git add Daily/ Repos/ Dashboard.md data/
           git diff --staged --quiet || git commit -m "daily trending $(date +%Y-%m-%d)"
           git push
