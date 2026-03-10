@@ -155,6 +155,12 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 18. "pros_cons": 物件，包含 "pros"（陣列，3-4 個優點，每個要具體）和 "cons"（陣列，3-4 個缺點，每個要具體，不要跟 limitations 重複）
 19. "community": 物件，可選欄位。"docs_url"（文件網站）、"discord"（Discord 連結）、"activity"（一句話描述社群活躍度）。都沒有就回傳 null
 20. "key_insight": 一句話，你讀完這個專案後最想告訴朋友的一件事。例如：「這個專案最厲害的不是功能，而是它證明了用 Markdown 就能『編程』AI agent 的研究行為」
+21. "deep_dive": 5-8 句話的技術深入分析。這是給想深入了解的讀者看的，要有技術含量。結構：
+   - 核心演算法或資料結構的工作原理（如果 README 有提到）
+   - 效能特性（benchmark 數據、支援規模、記憶體用量等具體數字）
+   - 關鍵設計取捨（為什麼選 A 而不是 B？有什麼 trade-off？）
+   - 跟競品在實作層面的差異（不是功能差異，是技術決策的差異）
+   如果 README 沒有提供足夠的技術細節就回傳 null，不要編造
 
 回傳 JSON 陣列，只回傳 JSON，不要加 markdown 標記。`;
 
@@ -410,6 +416,8 @@ function generateRepoNote(repo, llmInfo, today) {
     `status: to-review`,
     `my_rating: 0`,
     `last_reviewed: ${today}`,
+    `use_case: "${(llmInfo?.description_zh || '').replace(/"/g, '\\"').slice(0, 80)}"`,
+    `priority: medium`,
     'tags:',
     '  - github',
     `  - "category/${catTag}"`,
@@ -577,6 +585,15 @@ function generateRepoNote(repo, llmInfo, today) {
     lines.push('## 架構分析');
     lines.push('');
     lines.push(llmInfo.architecture);
+    lines.push('');
+  }
+
+  // ── 技術深入分析 ──
+  if (llmInfo?.deep_dive) {
+    lines.push('## 技術深入分析');
+    lines.push('');
+    lines.push('> [!note]- 展開深入分析');
+    lines.push(`> ${llmInfo.deep_dive.split('\n').join('\n> ')}`);
     lines.push('');
   }
 
@@ -1960,18 +1977,18 @@ async function main() {
   // 8. 產生 MOC 分類索引頁
   await generateMOCs();
 
-  // 8.5 產生/更新週報
+  // 8.5 產生/更新週報（保留使用者手寫的趨勢觀察）
   await mkdir(WEEKLY_DIR, { recursive: true });
   const weekStr = getWeekString(today);
   const weeklyPath = join(WEEKLY_DIR, `${weekStr}.md`);
-  await writeFile(weeklyPath, generateWeeklyReview(weekStr), 'utf-8');
+  await writePeriodicNote(weeklyPath, generateWeeklyReview(weekStr), '\n---\n\n## 本週趨勢觀察', WEEKLY_USER_MARKERS);
   console.log(`Updated: Weekly/${weekStr}.md`);
 
-  // 8.6 產生/更新月報
+  // 8.6 產生/更新月報（保留使用者手寫的月度回顧）
   await mkdir(MONTHLY_DIR, { recursive: true });
   const monthStr = getMonthString(today);
   const monthlyPath = join(MONTHLY_DIR, `${monthStr}.md`);
-  await writeFile(monthlyPath, generateMonthlyReview(monthStr), 'utf-8');
+  await writePeriodicNote(monthlyPath, generateMonthlyReview(monthStr), '\n---\n\n## 月度回顧', MONTHLY_USER_MARKERS);
   console.log(`Updated: Monthly/${monthStr}.md`);
 
   // 8.7 產生/更新概念筆記
@@ -1992,6 +2009,53 @@ async function main() {
 
   console.log(`\nDone! ${newNoteCount} new, ${updatedNoteCount} updated repo notes, 1 daily digest.`);
   console.log(`Tracking ${Object.keys(seen).length} repos total.`);
+}
+
+// ── Weekly/Monthly 筆記合併（保留使用者手寫的趨勢觀察）───────
+
+const WEEKLY_USER_MARKERS = ['_本週最明顯的技術趨勢是什麼？', '_哪個專案改變了你對某件事的看法？', '_趨勢有延續還是轉向？'];
+const MONTHLY_USER_MARKERS = ['_回顧本月的技術趨勢', '_本月的主要技術趨勢是什麼？', '從本月收錄中選出 3 個深入研究'];
+
+function isDefaultPeriodicContent(userPart, markers) {
+  // 如果包含所有預設 placeholder 文字，就視為未編輯
+  return markers.every(m => userPart.includes(m));
+}
+
+async function writePeriodicNote(filePath, newContent, userSectionBoundary, defaultMarkers) {
+  let existing = null;
+  try {
+    existing = await readFile(filePath, 'utf-8');
+  } catch {
+    // 檔案不存在，直接寫入
+    await writeFile(filePath, newContent, 'utf-8');
+    return;
+  }
+
+  // 從現有檔案提取使用者手寫的部分
+  const existingBoundary = existing.indexOf(userSectionBoundary);
+  if (existingBoundary === -1) {
+    // 舊版格式沒有使用者區域，直接覆寫
+    await writeFile(filePath, newContent, 'utf-8');
+    return;
+  }
+
+  const existingUserPart = existing.slice(existingBoundary);
+
+  // 如果使用者沒有編輯過（全是預設 placeholder），直接覆寫
+  if (isDefaultPeriodicContent(existingUserPart, defaultMarkers)) {
+    await writeFile(filePath, newContent, 'utf-8');
+    return;
+  }
+
+  // 使用者有手寫內容，保留它
+  const newBoundary = newContent.indexOf(userSectionBoundary);
+  if (newBoundary === -1) {
+    await writeFile(filePath, newContent, 'utf-8');
+    return;
+  }
+
+  const merged = newContent.slice(0, newBoundary) + existingUserPart;
+  await writeFile(filePath, merged, 'utf-8');
 }
 
 // ── Refresh：重新產生舊格式筆記 ────────────────────────────
@@ -2025,7 +2089,9 @@ function needsRefresh(content) {
          !content.includes('## 相關收錄') ||
          !content.includes('速覽') ||
          !content.includes('30 秒填完') ||  // v4: 簡化快速評估
-         !content.includes('同週收錄');      // v4: 同週收錄 Dataview
+         !content.includes('同週收錄') ||    // v4: 同週收錄 Dataview
+         !content.includes('use_case:') ||   // v5: triage 欄位
+         !content.includes('priority:');     // v5: 優先級
 }
 
 function hasLLMContent(content) {
@@ -2204,6 +2270,8 @@ async function refreshRepos(token, failedOnly = false) {
       const savedWeek = weekMatch ? weekMatch[1] : null;
       const monthMatch = item.content.match(/^month: "(.+)"$/m);
       const savedMonth = monthMatch ? monthMatch[1] : null;
+      const priorityMatch = item.content.match(/^priority: (.+)$/m);
+      const savedPriority = priorityMatch ? priorityMatch[1] : 'medium';
 
       const newNote = generateRepoNote(item.repo, llmInfo, firstSeen);
       // 還原使用者編輯過的欄位（避免 refresh 覆蓋手動更改）
@@ -2211,7 +2279,8 @@ async function refreshRepos(token, failedOnly = false) {
       merged = merged
         .replace(/^status: to-review$/m, `status: ${savedStatus}`)
         .replace(/^my_rating: 0$/m, `my_rating: ${savedRating}`)
-        .replace(/^last_reviewed: .+$/m, `last_reviewed: ${savedReviewed}`);
+        .replace(/^last_reviewed: .+$/m, `last_reviewed: ${savedReviewed}`)
+        .replace(/^priority: medium$/m, `priority: ${savedPriority}`);
       if (savedWeek) {
         merged = merged.replace(/^week: ".+"$/m, `week: "${savedWeek}"`);
       }
@@ -2245,12 +2314,12 @@ async function refreshRepos(token, failedOnly = false) {
 
   await mkdir(WEEKLY_DIR, { recursive: true });
   const weekStr = getWeekString(today);
-  await writeFile(join(WEEKLY_DIR, `${weekStr}.md`), generateWeeklyReview(weekStr), 'utf-8');
+  await writePeriodicNote(join(WEEKLY_DIR, `${weekStr}.md`), generateWeeklyReview(weekStr), '\n---\n\n## 本週趨勢觀察', WEEKLY_USER_MARKERS);
   console.log(`Updated: Weekly/${weekStr}.md`);
 
   await mkdir(MONTHLY_DIR, { recursive: true });
   const monthStr = getMonthString(today);
-  await writeFile(join(MONTHLY_DIR, `${monthStr}.md`), generateMonthlyReview(monthStr), 'utf-8');
+  await writePeriodicNote(join(MONTHLY_DIR, `${monthStr}.md`), generateMonthlyReview(monthStr), '\n---\n\n## 月度回顧', MONTHLY_USER_MARKERS);
   console.log(`Updated: Monthly/${monthStr}.md`);
 
   await generateConceptNotes();
