@@ -114,7 +114,7 @@ async function fetchRepoDetails(repo, token) {
 
 // ── LLM ─────────────────────────────────────────────────────
 
-const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好者。你的文字風格像是在跟工程師朋友分享一個有趣的發現——直接、有觀點、不廢話。
+const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好者。你的文字風格像是在跟工程師朋友分享一個有趣的發現——直接、有觀點、不廢話。你寫的內容要讓讀者覺得「這篇比我自己去讀 README 還有價值」。
 
 重要規則：
 - 仔細讀 README 內容，不要只看名稱猜測
@@ -123,33 +123,38 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 - 使用場景要想像一個真實的人在做什麼
 - 說出跟替代方案的具體差異
 - summary 要夠詳細，讓讀者不看 README 也能理解這個專案在幹嘛
+- 功能描述要具體到參數、數據、指令，不要只寫「支持 XXX 功能」
+- 從 README 中提取真實的指令和範例，不要自己編造
 
 請為每個 GitHub 專案提供以下欄位（JSON 物件）：
 
 1. "repo": 完全等於 owner/name（區分大小寫）
 2. "description_zh": 一句話說明「解決什麼問題」。好的例子：「讓 AI 自動跑實驗，你只要早上起來看結果」。壞的例子：「自動化 AI 研究平台」
-3. "summary": 6-8 句話的深度分析。結構：
-   - 第 1 句：白話說核心機制（例如「它讓 AI agent 每 5 分鐘改一次程式碼、訓練、比對結果」）
-   - 第 2-3 句：技術實作方式（用了什麼框架/演算法/架構，怎麼串起來的）
-   - 第 4 句：跟同類工具的具體差異（要具體到功能層面）
-   - 第 5-6 句：實際使用的效果和限制（例如效能數據、支援範圍）
-   - 第 7-8 句：你的觀點（成熟度、值不值得試、適合什麼階段的專案使用）
+3. "summary": 10-12 句話的深度分析。結構：
+   - 第 1-2 句：白話說核心機制，要具體到流程（例如「它讓 AI agent 每 5 分鐘改一次 train.py、跑訓練、比對 loss，如果變好就 commit，變差就 revert，整晚自動跑」）
+   - 第 3-4 句：技術實作方式，具體到用了什麼框架、演算法、通訊協議。如果 README 有提到效能數據或 benchmark，一定要提
+   - 第 5-6 句：跟同類工具的具體差異（要具體到功能和架構層面）
+   - 第 7-8 句：實際使用的效果和限制（效能數據、支援範圍、需要什麼硬體）
+   - 第 9-10 句：你的觀點——成熟度（alpha/beta/stable）、值不值得現在就用、適合什麼規模的團隊
+   - 第 11-12 句：給讀者的建議——什麼情況下該用、什麼情況下不該用
 4. "why_trending": 3-4 句具體分析。包含：作者背景、切中什麼需求、觸發事件、為什麼現在爆紅而不是更早
-5. "use_cases": 陣列，3 個場景。格式：「[角色] 用它來 [動作]，因為 [好處]」
-6. "target_audience": 一句話，越具體越好
+5. "use_cases": 陣列，3 個場景。格式：「[具體角色] 用它來 [具體動作+預期結果]，因為 [具體好處，要有數據或對比]」。例子：「後端工程師用它來在 CI 中自動檢測 API breaking changes，因為手動 diff OpenAPI spec 容易漏掉 nested field 的變動」
+6. "target_audience": 一句話，越具體越好。不要寫「開發者」，要寫「需要在 M1 Mac 上跑 LLM 推論但不想裝 Docker 的獨立開發者」
 7. "category": AI/ML、開發工具、Web 應用、CLI 工具、資料科學、安全、教學資源、基礎設施、其他（選一個）
-8. "key_features": 陣列，5-8 個功能特色（中文，每個一句話，從 README 提取具體功能，不要籠統的描述）
-9. "quickstart_steps": 陣列，2-5 個安裝/使用步驟。每步是物件：{"step": "說明", "cmd": "指令"}。沒有安裝指令就回傳 []
-10. "limitations": 陣列，2-3 個注意事項（例如 ["僅支援 Linux", "需要 GPU", "早期 alpha，API 可能變動"]）
-11. "similar_tools": 陣列，2-4 項。每項是物件：{"name": "工具名", "diff": "跟本專案的具體差異（一句話）"}。想不到就回 []
-12. "related_concepts": 陣列，3-5 個相關技術概念。優先從以下預定義概念中選擇（繁體中文，如果沒有符合的可以自創）：
+8. "key_features": 陣列，5-8 個功能特色。每個要具體到可操作的層面，格式：「功能名 — 具體描述（含數據、指令、參數）」。壞的：「支持多種圖表類型」。好的：「8 種圖表格式（ascii/spark/bars/columns/heatmap/unicode/braille/svg），用 -t 參數切換」
+9. "quickstart_steps": 陣列，3-5 個安裝/使用步驟。每步是物件：{"step": "簡潔說明", "cmd": "完整可複製貼上的指令"}。從 README 提取真實指令。沒有就回傳 []
+10. "code_example": 一段展示核心用法的程式碼或指令（含語言標記如 bash/python/js）。從 README 提取最有代表性的範例，展示輸入輸出。不超過 15 行。沒有就回傳 null
+11. "limitations": 陣列，3-4 個注意事項。要具體（例如 ["僅支援 Python 3.10+", "需要 NVIDIA GPU (CUDA 12+)", "不支援 Windows", "alpha 階段，API 每週都在變"]）
+12. "similar_tools": 陣列，2-4 項。每項是物件：{"name": "工具名（GitHub owner/repo 格式優先）", "diff": "跟本專案的具體差異，要提到功能差異和適用場景差異（2 句話）"}。想不到就回 []
+13. "related_concepts": 陣列，3-5 個相關技術概念。優先從以下預定義概念中選擇（繁體中文，如果沒有符合的可以自創）：
    RAG, MCP Protocol, WebAssembly, LoRA, RLHF, 向量資料庫, 邊緣推論, CLI/TUI, 語音合成, 多模態, Agent 框架, 安全漏洞, 程式碼生成, LLM 推論, Prompt Engineering, 微服務, 容器化, CI/CD, 資料視覺化, API 設計, 機器學習, 深度學習, 自然語言處理, 電腦視覺, 自動化測試, 爬蟲, 即時通訊, 區塊鏈, 隱私保護, 效能優化
-13. "tech_stack": 陣列，列出核心技術棧（例如 ["Next.js", "FastAPI", "PostgreSQL"]），從 README 提取
-14. "novelty_claim": 一句話：這個專案最核心的創新點是什麼？（從 README 提取具體 claim，不要自己編）。沒有明顯創新就回傳 null
-15. "install_complexity": "easy"（一行 npm/pip install）、"medium"（需要 clone + config）、"hard"（需要 GPU/Docker/複雜環境）
-16. "architecture": 2-3 句話描述專案的整體架構。例如：「前後端分離架構，前端用 React + Vite，後端用 FastAPI。資料流是 用戶輸入 → API Server → LLM 推理 → 結果緩存到 Redis → 回傳前端渲染。」沒有明顯架構就回傳 null
-17. "pros_cons": 物件，包含 "pros"（陣列，2-3 個優點）和 "cons"（陣列，2-3 個缺點），每個都是一句話
-18. "community": 物件，可選欄位。"docs_url"（文件網站）、"discord"（Discord 連結）、"activity"（一句話描述社群活躍度，例如「每週 20+ commits，issue 回應快」或「3 天前建立，社群尚在建立中」）。都沒有就回傳 null
+14. "tech_stack": 陣列，列出核心技術棧（含版本號，例如 ["Next.js 14", "FastAPI", "PostgreSQL 16"]），從 README 提取
+15. "novelty_claim": 一句話：這個專案最核心的創新點是什麼？（從 README 提取具體 claim，不要自己編）。沒有明顯創新就回傳 null
+16. "install_complexity": "easy"（一行 npm/pip install 或 npx）、"medium"（需要 clone + config）、"hard"（需要 GPU/Docker/複雜環境）
+17. "architecture": 4-6 句話描述專案的整體架構。要包含：(1) 架構模式（單體/前後端分離/CLI/微服務）；(2) 核心資料流（用箭頭：用戶輸入 → 處理 → 輸出）；(3) 關鍵技術決策；(4) 專案目錄結構的關鍵檔案（如 README 有提到）。沒有明顯架構就回傳 null
+18. "pros_cons": 物件，包含 "pros"（陣列，3-4 個優點，每個要具體）和 "cons"（陣列，3-4 個缺點，每個要具體，不要跟 limitations 重複）
+19. "community": 物件，可選欄位。"docs_url"（文件網站）、"discord"（Discord 連結）、"activity"（一句話描述社群活躍度）。都沒有就回傳 null
+20. "key_insight": 一句話，你讀完這個專案後最想告訴朋友的一件事。例如：「這個專案最厲害的不是功能，而是它證明了用 Markdown 就能『編程』AI agent 的研究行為」
 
 回傳 JSON 陣列，只回傳 JSON，不要加 markdown 標記。`;
 
@@ -186,7 +191,7 @@ async function callLLMBatch(repos, token) {
         { role: 'user', content: prompt },
       ],
       temperature: 0.3,
-      max_tokens: 10000,
+      max_tokens: 12000,
     }),
   });
   if (!res.ok) throw new Error(`LLM HTTP ${res.status}`);
@@ -196,7 +201,7 @@ async function callLLMBatch(repos, token) {
 }
 
 async function callLLM(repos, token) {
-  const BATCH_SIZE = 3;
+  const BATCH_SIZE = 2;  // 每個 repo 產生更多內容，減小批次以避免 token 上限
   const results = [];
   let consecutiveFailures = 0;
 
@@ -426,6 +431,13 @@ function generateRepoNote(repo, llmInfo, today) {
     lines.push('');
   }
 
+  // ── 關鍵洞察 ──
+  if (llmInfo?.key_insight) {
+    lines.push('> [!tip] 關鍵洞察');
+    lines.push(`> ${llmInfo.key_insight}`);
+    lines.push('');
+  }
+
   // ── 專案簡介 ──
   lines.push('## 專案簡介');
   lines.push('');
@@ -472,6 +484,14 @@ function generateRepoNote(repo, llmInfo, today) {
     lines.push('## 快速開始');
     lines.push('');
     lines.push(llmInfo.quickstart);
+    lines.push('');
+  }
+
+  // ── 程式碼範例 ──
+  if (llmInfo?.code_example) {
+    lines.push('## 程式碼範例');
+    lines.push('');
+    lines.push(llmInfo.code_example);
     lines.push('');
   }
 
@@ -1004,31 +1024,24 @@ if (pages.length > 0) {
 }
 \`\`\`
 
-## 分類趨勢圖
+## 分類趨勢
 
 \`\`\`dataviewjs
 const pages = dv.pages('"Repos"');
-const weeks = [...new Set(pages.map(p => p.week).filter(Boolean))].sort();
-const topCats = ["AI/ML", "開發工具", "CLI 工具", "Web 應用"];
-
-if (weeks.length > 1) {
-  const lines = topCats.map(cat =>
-    weeks.map(w => pages.where(p => p.week === w && p.category === cat).length).join(",")
-  );
-
-  const chart = [
-    "\`\`\`mermaid",
-    "xychart-beta",
-    "  title \\"每週分類收錄趨勢\\"",
-    \`  x-axis [\${weeks.map(w => \`"\${w}"\`).join(",")}]\`,
-    "  y-axis \\"收錄數\\"",
-    ...topCats.map((cat, i) => \`  line "\${cat}" [\${lines[i]}]\`),
-    "\`\`\`"
-  ].join("\\n");
-  dv.paragraph(chart);
-} else {
-  dv.paragraph("需要至少 2 週的數據才能顯示趨勢圖");
+const topCats = ["AI/ML", "開發工具", "CLI 工具", "Web 應用", "安全", "資料科學"];
+const catData = {};
+for (const cat of topCats) {
+  catData[cat] = pages.where(p => p.category === cat).length;
 }
+const sorted = Object.entries(catData).sort((a,b) => b[1] - a[1]);
+dv.table(
+  ["分類", "數量", "佔比", "視覺化"],
+  sorted.map(([cat, count]) => {
+    const pct = Math.round((count / pages.length) * 100);
+    const bar = "█".repeat(Math.round(pct / 5)) + "░".repeat(20 - Math.round(pct / 5));
+    return [cat, count, pct + "%", bar];
+  })
+);
 \`\`\`
 
 ## 月度趨勢
@@ -1870,13 +1883,16 @@ function extractUserSection(content) {
 }
 
 function needsRefresh(content) {
+  // 檢查是否缺少任何必要的格式元素
+  // 注意：每次加入新欄位時，加入新條件可觸發全面刷新
   return !content.includes('install_complexity:') ||
          !content.includes('my_rating:') ||
          !content.includes('pushed_at:') ||
          !content.includes('aliases:') ||
          !content.includes('## 優缺點分析') ||
          !content.includes('## 相關收錄') ||
-         !content.includes('快速評估');
+         !content.includes('快速評估') ||
+         !content.includes('關鍵洞察');  // v2: 新增 key_insight 區塊
 }
 
 function hasLLMContent(content) {
