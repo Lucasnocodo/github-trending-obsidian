@@ -349,12 +349,14 @@ function generateRepoNote(repo, llmInfo, today) {
     `last_reviewed: ${today}`,
     'tags:',
     '  - github',
-    `  - ${catTag}`,
+    `  - "category/${catTag}"`,
+    `  - "lang/${(repo.language || 'other').toLowerCase()}"`,
   ];
-  if (repo.language) fm.push(`  - ${repo.language.toLowerCase()}`);
+  if (repo.owner.type === 'Organization') fm.push('  - org');
+  if (installLabel === 'easy') fm.push('  - easy_install');
   if (repo.topics?.length) {
     for (const t of repo.topics.slice(0, 5)) {
-      fm.push(`  - ${t.replace(/-/g, '_')}`);
+      fm.push(`  - "topic/${t.replace(/-/g, '_')}"`);
     }
   }
   // Aliases for Obsidian search
@@ -764,6 +766,8 @@ function generateDashboard() {
   return `---
 tags:
   - dashboard
+cssclasses:
+  - dashboard
 ---
 
 # GitHub Trending Dashboard
@@ -778,10 +782,13 @@ const pages = dv.pages('"Repos"');
 const total = pages.length;
 const reviewed = pages.where(p => p.status && p.status !== "to-review").length;
 const rated = pages.where(p => p.my_rating > 0).length;
+const tried = pages.where(p => p.status === "tried").length;
+const integrated = pages.where(p => p.status === "integrated").length;
+const archived = pages.where(p => p.status === "archived").length;
 const pct = total > 0 ? Math.round((reviewed / total) * 100) : 0;
 
-dv.paragraph(\`回顧進度：\${reviewed}/\${total} (\${pct}%) · 已評分：\${rated}\`);
-dv.paragraph(\`<progress value="\${reviewed}" max="\${total}"></progress>\`);
+dv.paragraph(\`**\${total}** 個專案 · 已回顧 **\${reviewed}** (\${pct}%) · 已評分 **\${rated}** · 已試用 **\${tried}** · 已整合 **\${integrated}** · 已封存 **\${archived}\`);
+dv.paragraph(\`<progress value="\${reviewed}" max="\${total}" style="width:100%"></progress>\`);
 \`\`\`
 
 ## 收錄時間軸
@@ -791,7 +798,19 @@ CALENDAR first_seen
 FROM "Repos"
 \`\`\`
 
-## 爆紅專案（依 Stars/天 排序）
+## 依狀態分群
+
+\`\`\`dataview
+TABLE WITHOUT ID
+  status AS "狀態",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+GROUP BY status
+SORT length(rows) DESC
+\`\`\`
+
+## 爆紅專案 Top 15
 
 \`\`\`dataview
 TABLE
@@ -799,7 +818,8 @@ TABLE
   stars AS "Stars",
   language AS "語言",
   category AS "分類",
-  install_complexity AS "安裝難度"
+  install_complexity AS "安裝難度",
+  ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分"
 FROM "Repos"
 SORT stars_per_day DESC
 LIMIT 15
@@ -812,19 +832,24 @@ TABLE
   ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分",
   stars AS "Stars",
   category AS "分類",
-  status AS "狀態"
+  status AS "狀態",
+  install_complexity AS "安裝"
 FROM "Repos"
 WHERE my_rating > 0
 SORT my_rating DESC
 \`\`\`
 
-## 待回顧的專案
+## 待回顧（優先順序）
+
+> [!tip] 回顧建議
+> Stars/天 最高的專案最值得優先回顧
 
 \`\`\`dataview
 TABLE
   stars AS "Stars",
   stars_per_day AS "Stars/天",
   category AS "分類",
+  install_complexity AS "安裝",
   first_seen AS "收錄日期"
 FROM "Repos"
 WHERE status = "to-review"
@@ -857,6 +882,31 @@ GROUP BY category
 SORT length(rows) DESC
 \`\`\`
 
+## 依語言瀏覽
+
+\`\`\`dataview
+TABLE WITHOUT ID
+  language AS "語言",
+  length(rows) AS "數量",
+  sum(rows.stars) AS "總 Stars",
+  rows.file.link AS "專案"
+FROM "Repos"
+GROUP BY language
+SORT length(rows) DESC
+\`\`\`
+
+## 安裝難度分佈
+
+\`\`\`dataview
+TABLE WITHOUT ID
+  install_complexity AS "難度",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+GROUP BY install_complexity
+SORT choice(install_complexity, "easy", 1, choice(install_complexity, "medium", 2, 3)) ASC
+\`\`\`
+
 ## 本週新增
 
 \`\`\`dataview
@@ -864,25 +914,27 @@ TABLE
   stars AS "Stars",
   stars_per_day AS "Stars/天",
   language AS "語言",
-  category AS "分類"
+  category AS "分類",
+  install_complexity AS "安裝"
 FROM "Repos"
 WHERE date(first_seen) >= date(today) - dur(7 days)
 SORT stars DESC
 \`\`\`
 
-## 語言統計
+## 每週收錄量
 
 \`\`\`dataview
 TABLE WITHOUT ID
-  language AS "語言",
-  length(rows) AS "數量",
-  sum(rows.stars) AS "總 Stars"
+  week AS "週次",
+  length(rows) AS "收錄數",
+  sum(rows.stars) AS "總 Stars",
+  max(rows.stars_per_day) AS "最快 Stars/天"
 FROM "Repos"
-GROUP BY language
-SORT length(rows) DESC
+GROUP BY week
+SORT week DESC
 \`\`\`
 
-## 所有專案（依 Stars 排序）
+## 所有專案
 
 \`\`\`dataview
 TABLE
@@ -890,6 +942,7 @@ TABLE
   language AS "語言",
   category AS "分類",
   status AS "狀態",
+  ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分",
   first_seen AS "收錄日期"
 FROM "Repos"
 SORT stars DESC
@@ -901,6 +954,11 @@ SORT stars DESC
 > 此頁面需要安裝 [Dataview](https://github.com/blacksmithgu/obsidian-dataview) 插件才能正常顯示。
 > 安裝方式：設定 → 社群插件 → 搜尋 Dataview → 安裝並啟用
 > DataviewJS 需在 Dataview 設定中啟用（設定 → Dataview → Enable JavaScript Queries）
+>
+> **推薦插件**：
+> - [Contribution Graph](https://github.com/vran-dev/obsidian-contribution-graph) — 收錄熱力圖
+> - [Charts View](https://github.com/caronchen/obsidian-chartsview-plugin) — 語言分佈圖表
+> - [Periodic Notes](https://github.com/liamcain/obsidian-periodic-notes) — 每週回顧自動化
 `;
 }
 
@@ -917,8 +975,18 @@ week: "${weekStr}"
 
 # 週報 - ${weekStr}
 
-> [!summary] 本週摘要
-> 本週收錄的 GitHub Trending 專案總覽
+## 本週總覽
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.week === "${weekStr}");
+const total = pages.length;
+const totalStars = pages.array().reduce((s, p) => s + (p.stars || 0), 0);
+const topRepo = pages.sort(p => p.stars, 'desc').first();
+const topName = topRepo ? topRepo.file.link : "N/A";
+const topStars = topRepo ? topRepo.stars : 0;
+dv.paragraph(\`本週收錄 **\${total}** 個專案 · 合計 **\${totalStars.toLocaleString()}** stars\`);
+if (topRepo) dv.paragraph(\`本週之星：\${topName}（\${topStars.toLocaleString()} stars）\`);
+\`\`\`
 
 ## 本週新增專案
 
@@ -928,19 +996,21 @@ TABLE
   stars_per_day AS "Stars/天",
   language AS "語言",
   category AS "分類",
+  install_complexity AS "安裝",
   description AS "描述"
 FROM "Repos"
 WHERE week = "${weekStr}"
 SORT stars DESC
 \`\`\`
 
-## 本週亮點
+## 本週亮點（Stars/天 >= 500）
 
 \`\`\`dataview
 TABLE
   stars_per_day AS "Stars/天",
   stars AS "Stars",
-  category AS "分類"
+  category AS "分類",
+  language AS "語言"
 FROM "Repos"
 WHERE week = "${weekStr}" AND stars_per_day >= 500
 SORT stars_per_day DESC
@@ -964,11 +1034,24 @@ SORT length(rows) DESC
 \`\`\`dataview
 TABLE WITHOUT ID
   language AS "語言",
-  length(rows) AS "數量"
+  length(rows) AS "數量",
+  sum(rows.stars) AS "總 Stars"
 FROM "Repos"
 WHERE week = "${weekStr}"
 GROUP BY language
 SORT length(rows) DESC
+\`\`\`
+
+## 安裝難度分佈
+
+\`\`\`dataview
+TABLE WITHOUT ID
+  install_complexity AS "難度",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE week = "${weekStr}"
+GROUP BY install_complexity
 \`\`\`
 
 ## 每日記錄
@@ -976,7 +1059,6 @@ SORT length(rows) DESC
 \`\`\`dataview
 LIST
 FROM "Daily"
-WHERE date >= date("${weekStr}-1") AND date <= date("${weekStr}-7")
 SORT date ASC
 \`\`\`
 
@@ -986,6 +1068,11 @@ SORT date ASC
 
 > [!question]+ 週回顧
 > _本週有什麼值得注意的趨勢？哪些專案讓你印象深刻？_
+
+> [!todo]+ 行動項目
+> - [ ] 選出本週最值得試用的 3 個專案
+> - [ ] 更新已試用專案的狀態和評分
+> - [ ] 記錄發現的新趨勢
 
 `;
 }
@@ -1005,20 +1092,30 @@ tags:
 
 > 所有分類為「${category}」的 GitHub Trending 專案
 
+## 總覽
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.category === "${category}");
+const total = pages.length;
+const reviewed = pages.where(p => p.status && p.status !== "to-review").length;
+const avgStars = total > 0 ? Math.round(pages.array().reduce((s, p) => s + (p.stars || 0), 0) / total) : 0;
+dv.paragraph(\`**\${total}** 個專案 · 已回顧 \${reviewed}/\${total} · 平均 Stars: \${avgStars.toLocaleString()}\`);
+\`\`\`
+
 ## 依狀態分群
 
 \`\`\`dataview
 TABLE WITHOUT ID
-  file.link AS "專案",
-  ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分",
-  stars AS "Stars",
-  language AS "語言"
+  status AS "狀態",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
 FROM "Repos"
 WHERE category = "${category}"
 GROUP BY status
+SORT length(rows) DESC
 \`\`\`
 
-## 專案列表
+## 專案列表（依 Stars 排序）
 
 \`\`\`dataview
 TABLE
@@ -1026,6 +1123,7 @@ TABLE
   stars_per_day AS "Stars/天",
   language AS "語言",
   install_complexity AS "安裝",
+  ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分",
   status AS "狀態",
   first_seen AS "收錄日期"
 FROM "Repos"
@@ -1033,13 +1131,42 @@ WHERE category = "${category}"
 SORT stars DESC
 \`\`\`
 
-## 待回顧
+## 依語言分群
 
 \`\`\`dataview
-LIST
+TABLE WITHOUT ID
+  language AS "語言",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE category = "${category}"
+GROUP BY language
+SORT length(rows) DESC
+\`\`\`
+
+## 待回顧（優先）
+
+\`\`\`dataview
+TABLE
+  stars_per_day AS "Stars/天",
+  stars AS "Stars",
+  install_complexity AS "安裝"
 FROM "Repos"
 WHERE category = "${category}" AND status = "to-review"
 SORT stars_per_day DESC
+\`\`\`
+
+## 每週趨勢
+
+\`\`\`dataview
+TABLE WITHOUT ID
+  week AS "週次",
+  length(rows) AS "新增數",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE category = "${category}"
+GROUP BY week
+SORT week DESC
 \`\`\`
 `;
 }
