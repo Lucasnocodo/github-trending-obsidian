@@ -999,7 +999,7 @@ SORT my_rating DESC
 ## 待回顧（優先順序）
 
 > [!tip] 回顧建議
-> Stars/天 最高的專案最值得優先回顧
+> Stars/天 最高的專案最值得優先回顧。use_case 欄位幫你快速判斷是否相關。
 
 \`\`\`dataview
 TABLE
@@ -1007,10 +1007,24 @@ TABLE
   stars_per_day AS "Stars/天",
   category AS "分類",
   install_complexity AS "安裝",
-  first_seen AS "收錄日期"
+  use_case AS "解決什麼問題",
+  priority AS "優先級"
 FROM "Repos"
 WHERE status = "to-review"
 SORT stars_per_day DESC
+\`\`\`
+
+## 依優先級分群
+
+\`\`\`dataview
+TABLE WITHOUT ID
+  priority AS "優先級",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE status != "archived"
+GROUP BY priority
+SORT choice(priority, "high", 1, choice(priority, "medium", 2, 3)) ASC
 \`\`\`
 
 ## 需要重新檢視（超過 30 天未回顧）
@@ -1202,6 +1216,33 @@ for (const p of pages) {
   ]);
 }
 dv.table(["專案", "速度", "安裝", "分類", "一句話"], rows);
+\`\`\`
+
+## 孤立筆記（缺少連結）
+
+> [!warning] 這些筆記沒有跟其他筆記建立連結，Graph View 中會是孤島
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"');
+const orphans = pages.where(p => {
+  const outlinks = p.file.outlinks?.length || 0;
+  const inlinks = p.file.inlinks?.length || 0;
+  return (outlinks + inlinks) < 3;
+});
+if (orphans.length > 0) {
+  dv.table(
+    ["專案", "Stars", "分類", "外連結", "內連結"],
+    orphans.sort(p => p.stars, "desc").limit(10).map(p => [
+      p.file.link,
+      p.stars,
+      p.category,
+      p.file.outlinks?.length || 0,
+      p.file.inlinks?.length || 0
+    ])
+  );
+} else {
+  dv.paragraph("所有筆記都有足夠的連結！");
+}
 \`\`\`
 
 ## 所有專案
@@ -1778,6 +1819,28 @@ aliases:
 
 _用 2-3 句話解釋這個概念。想像對象是一個聰明但不熟悉這個領域的工程師朋友。_
 
+## 快速統計
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.file.outlinks?.some(l => l.path === dv.current().file.path);
+});
+const total = pages.length;
+const cats = {};
+const langs = {};
+for (const p of pages) {
+  const c = p.category || "其他";
+  cats[c] = (cats[c] || 0) + 1;
+  const l = p.language || "Other";
+  langs[l] = (langs[l] || 0) + 1;
+}
+const topCat = Object.entries(cats).sort((a,b) => b[1]-a[1])[0];
+const topLang = Object.entries(langs).sort((a,b) => b[1]-a[1])[0];
+const avgStars = total > 0 ? Math.round(pages.array().reduce((s,p) => s + (p.stars||0), 0) / total) : 0;
+dv.paragraph(\`**\${total}** 個相關專案 · 平均 \${avgStars.toLocaleString()} stars\`);
+if (topCat) dv.paragraph(\`主要分類：**\${topCat[0]}**（\${topCat[1]} 個）· 主要語言：**\${topLang?.[0] || 'N/A'}**（\${topLang?.[1] || 0} 個）\`);
+\`\`\`
+
 ## 核心問題
 
 - [ ] 這個技術解決的根本問題是什麼？
@@ -1791,10 +1854,33 @@ TABLE
   stars AS "Stars",
   stars_per_day AS "Stars/天",
   install_complexity AS "難度",
-  status AS "狀態"
+  status AS "狀態",
+  use_case AS "用途"
 FROM "Repos"
 WHERE contains(file.outlinks, this.file.link)
 SORT stars DESC
+\`\`\`
+
+## 相關概念
+
+\`\`\`dataviewjs
+const thisLinks = dv.current().file.inlinks;
+const related = new Set();
+for (const link of thisLinks) {
+  const page = dv.page(link.path);
+  if (!page || !page.file?.outlinks) continue;
+  for (const out of page.file.outlinks) {
+    const target = dv.page(out.path);
+    if (target?.tags?.includes("concept") && target.file.path !== dv.current().file.path) {
+      related.add(target.file.link);
+    }
+  }
+}
+if (related.size > 0) {
+  dv.list([...related]);
+} else {
+  dv.paragraph("_暫無相關概念_");
+}
 \`\`\`
 
 ## 學習資源
