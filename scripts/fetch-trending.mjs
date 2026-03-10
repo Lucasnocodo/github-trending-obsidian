@@ -116,27 +116,36 @@ async function fetchRepoDetails(repo, token) {
 
 const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好者。你的文字風格像是在跟工程師朋友分享一個有趣的發現——直接、有觀點、不廢話。
 
-重要：
-- 請仔細閱讀每個專案的 README 內容來寫摘要，不要只看專案名稱就猜測
-- 每個專案的內容要有差異化，避免用「隨著...的流行」「這個專案因此受到關注」這種空洞句型
-- 使用場景要非常具體，可以想像一個真實的使用者在做什麼
-- 說出這個工具跟現有替代方案的差異
+重要規則：
+- 仔細讀 README 內容，不要只看名稱猜測
+- 每個專案的內容要有差異化
+- 禁止使用：「隨著...的流行」「這個專案因此受到關注」「在...的背景下」等空洞句型
+- 使用場景要想像一個真實的人在做什麼
+- 說出跟替代方案的具體差異
 
-請為每個 GitHub 專案提供：
-1. "description_zh": 一句話說明它「解決什麼問題」（不是「它是什麼」）。例如「讓 AI 自動跑實驗，你只要早上起來看結果」比「自動化 AI 研究平台」好
-2. "summary": 4-5 句話。第一句用白話說清楚核心機制（例如「它讓 AI agent 每 5 分鐘改一次程式碼、訓練、比對結果」），第二句說技術實作，第三句說跟同類工具的具體差異，最後給出你的觀點（值不值得試、成熟度如何）
-3. "why_trending": 2 句具體分析爆紅原因（作者背景？切中什麼需求？有什麼事件觸發？）不要用「隨著...」開頭
-4. "use_cases": 陣列，3 個場景。格式：「[角色] 用它來 [具體動作]，因為 [具體好處]」
-5. "target_audience": 一句話，越具體越好
-6. "category": 從 AI/ML、開發工具、Web 應用、CLI 工具、資料科學、安全、教學資源、基礎設施、其他 選一個（仔細看 README 內容再決定）
-7. "key_features": 陣列，從 README 提取 3-5 個最重要的功能特色（中文，每個一句話）
-8. "quickstart": 如果 README 有安裝或使用指令，提取最簡潔的 2-3 步快速開始步驟（中文）。沒有就回傳 null
-9. "limitations": 一句話提到可能的限制或注意事項（例如「僅支援 Linux」「需要 GPU」「早期階段，API 可能變動」）
-10. "similar_tools": 陣列，1-2 個類似的知名工具名稱（如果想得到的話）。想不到就回空陣列
-11. "related_concepts": 陣列，3 個相關技術概念（繁體中文）
+請為每個 GitHub 專案提供以下欄位（JSON 物件）：
 
-重要：每個物件的 "repo" 欄位必須完全等於我給你的 owner/name（區分大小寫），例如 "karpathy/autoresearch"。
-回傳 JSON 陣列，只回傳 JSON。`;
+1. "repo": 完全等於 owner/name（區分大小寫）
+2. "description_zh": 一句話說明「解決什麼問題」。好的例子：「讓 AI 自動跑實驗，你只要早上起來看結果」。壞的例子：「自動化 AI 研究平台」
+3. "summary": 4-5 句話。結構：
+   - 第 1 句：白話說核心機制（例如「它讓 AI agent 每 5 分鐘改一次程式碼、訓練、比對結果」）
+   - 第 2 句：技術實作方式（用了什麼框架/演算法/架構）
+   - 第 3 句：跟同類工具的具體差異
+   - 第 4-5 句：你的觀點（成熟度、值不值得試）
+4. "why_trending": 2 句具體分析（作者背景？切中什麼需求？觸發事件？）
+5. "use_cases": 陣列，3 個場景。格式：「[角色] 用它來 [動作]，因為 [好處]」
+6. "target_audience": 一句話，越具體越好
+7. "category": AI/ML、開發工具、Web 應用、CLI 工具、資料科學、安全、教學資源、基礎設施、其他（選一個）
+8. "key_features": 陣列，3-5 個功能特色（中文，每個一句話，從 README 提取）
+9. "quickstart_steps": 陣列，2-4 個安裝/使用步驟。每步是物件：{"step": "說明", "cmd": "指令"}。沒有安裝指令就回傳 []
+10. "limitations": 一句話（例如「僅支援 Linux」「需要 GPU」「早期 alpha，API 不穩定」）
+11. "similar_tools": 陣列，每項是物件：{"name": "工具名", "diff": "跟本專案的差異（一句話）"}。想不到就回 []
+12. "related_concepts": 陣列，3 個相關技術概念（繁體中文）
+13. "tech_stack": 陣列，列出核心技術棧（例如 ["Next.js", "FastAPI", "PostgreSQL"]），從 README 提取
+14. "novelty_claim": 一句話：這個專案最核心的創新點是什麼？（從 README 提取具體 claim，不要自己編）。沒有明顯創新就回傳 null
+15. "install_complexity": "easy"（一行 npm/pip install）、"medium"（需要 clone + config）、"hard"（需要 GPU/Docker/複雜環境）
+
+回傳 JSON 陣列，只回傳 JSON，不要加 markdown 標記。`;
 
 function buildRepoPrompt(repos) {
   return repos
@@ -144,7 +153,8 @@ function buildRepoPrompt(repos) {
       const parts = [`## ${r.full_name}`];
       parts.push(`描述: ${r.description || 'No description'}`);
       parts.push(`語言: ${Object.keys(r._languages || {}).join(', ') || r.language || 'N/A'}`);
-      parts.push(`Stars: ${r.stargazers_count}`);
+      parts.push(`Stars: ${r.stargazers_count}, Forks: ${r.forks_count}`);
+      parts.push(`建立: ${r.created_at.split('T')[0]}, 最後推送: ${r.pushed_at?.split('T')[0] || 'N/A'}`);
       if (r._contributors?.length)
         parts.push(`主要貢獻者: ${r._contributors.map((c) => c.login).join(', ')}`);
       if (r._release) parts.push(`最新版本: ${r._release.tag}`);
@@ -170,7 +180,7 @@ async function callLLMBatch(repos, token) {
         { role: 'user', content: prompt },
       ],
       temperature: 0.3,
-      max_tokens: 4000,
+      max_tokens: 6000,
     }),
   });
   if (!res.ok) throw new Error(`LLM HTTP ${res.status}`);
@@ -193,8 +203,19 @@ async function callLLM(repos, token) {
       const batchResult = await callLLMBatch(batch, token);
       results.push(...batchResult);
     } catch (err) {
-      console.warn(`  Batch ${batchNum} failed: ${err.message}`);
-      // 失敗的 batch 跳過，繼續下一批
+      console.warn(`  Batch ${batchNum} failed: ${err.message}, retrying...`);
+      await new Promise((r) => setTimeout(r, 2000));
+      try {
+        const retry = await callLLMBatch(batch, token);
+        results.push(...retry);
+        console.log(`  Batch ${batchNum} retry succeeded`);
+      } catch (err2) {
+        console.warn(`  Batch ${batchNum} retry also failed: ${err2.message}`);
+        // 標記失敗的 repo，讓筆記顯示警告
+        for (const r of batch) {
+          results.push({ repo: r.full_name, _llm_failed: true });
+        }
+      }
     }
 
     // 批次間等 1 秒避免 rate limit
@@ -293,8 +314,10 @@ function generateRepoNote(repo, llmInfo, today) {
   const langPct = langPercents(repo._languages || {});
   const cat = llmInfo?.category || 'Other';
   const catTag = cat.toLowerCase().replace(/[/\s]/g, '_');
+  const llmFailed = llmInfo?._llm_failed === true;
 
   // ── Frontmatter ──
+  const installLabel = llmInfo?.install_complexity || 'unknown';
   const fm = [
     '---',
     `repo: ${repo.full_name}`,
@@ -310,10 +333,12 @@ function generateRepoNote(repo, llmInfo, today) {
     `forks: ${repo.forks_count}`,
     `open_issues: ${repo.open_issues_count || 0}`,
     `created: ${repo.created_at.split('T')[0]}`,
+    `pushed_at: ${repo.pushed_at?.split('T')[0] || 'N/A'}`,
     `first_seen: ${today}`,
     `week: "${getWeekString(today)}"`,
     `category: "${cat}"`,
     `release_tag: "${repo._release?.tag || ''}"`,
+    `install_complexity: "${installLabel}"`,
     `status: to-review`,
     'tags:',
     '  - github',
@@ -337,11 +362,38 @@ function generateRepoNote(repo, llmInfo, today) {
   );
   lines.push('');
 
+  // ── LLM 失敗警告 ──
+  if (llmFailed) {
+    lines.push('> [!warning] AI 摘要產生失敗');
+    lines.push('> 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。');
+    lines.push('');
+  }
+
+  // ── 快速信號 ──
+  const signals = [];
+  if (repo.owner.type === 'Organization') signals.push('`ORG`');
+  else if (repo._contributors?.length === 1) signals.push('`個人專案`');
+  if (repo._release) signals.push(`\`${repo._release.tag}\``);
+  if (installLabel === 'easy') signals.push('`easy-install`');
+  else if (installLabel === 'hard') signals.push('`need-GPU/Docker`');
+  if (repo.archived) signals.push('`ARCHIVED`');
+  if (signals.length) {
+    lines.push(signals.join(' '));
+    lines.push('');
+  }
+
   // ── 一句話摘要 ──
   const descZh = llmInfo?.description_zh || repo.description || 'No description';
   lines.push('> [!summary] 一句話摘要');
   lines.push(`> ${descZh}`);
   lines.push('');
+
+  // ── 核心創新 ──
+  if (llmInfo?.novelty_claim) {
+    lines.push('> [!abstract] 核心創新');
+    lines.push(`> ${llmInfo.novelty_claim}`);
+    lines.push('');
+  }
 
   // ── 專案簡介 ──
   lines.push('## 專案簡介');
@@ -353,6 +405,12 @@ function generateRepoNote(repo, llmInfo, today) {
   }
   lines.push('');
 
+  // ── 技術棧 ──
+  if (llmInfo?.tech_stack?.length) {
+    lines.push(`**技術棧**：${llmInfo.tech_stack.map(t => `\`${t}\``).join(' · ')}`);
+    lines.push('');
+  }
+
   // ── 重點功能 ──
   if (llmInfo?.key_features?.length) {
     lines.push('## 重點功能');
@@ -363,8 +421,23 @@ function generateRepoNote(repo, llmInfo, today) {
     lines.push('');
   }
 
-  // ── 快速開始 ──
-  if (llmInfo?.quickstart) {
+  // ── 快速開始（結構化步驟）──
+  const steps = llmInfo?.quickstart_steps;
+  if (steps?.length) {
+    lines.push('## 快速開始');
+    lines.push('');
+    for (let i = 0; i < steps.length; i++) {
+      const s = typeof steps[i] === 'string' ? { step: steps[i], cmd: null } : steps[i];
+      lines.push(`${i + 1}. ${s.step}`);
+      if (s.cmd) {
+        lines.push('```bash');
+        lines.push(s.cmd);
+        lines.push('```');
+      }
+    }
+    lines.push('');
+  } else if (llmInfo?.quickstart) {
+    // 向下相容舊格式
     lines.push('## 快速開始');
     lines.push('');
     lines.push(llmInfo.quickstart);
@@ -372,9 +445,9 @@ function generateRepoNote(repo, llmInfo, today) {
   }
 
   // ── 為什麼值得關注 ──
-  lines.push('## 為什麼值得關注');
-  lines.push('');
   if (llmInfo?.why_trending) {
+    lines.push('## 為什麼值得關注');
+    lines.push('');
     lines.push('> [!tip] 爆紅原因');
     lines.push(`> ${llmInfo.why_trending}`);
     lines.push('');
@@ -404,26 +477,35 @@ function generateRepoNote(repo, llmInfo, today) {
     lines.push('');
   }
 
-  // ── 類似工具 ──
+  // ── 類似工具比較（結構化表格）──
   if (llmInfo?.similar_tools?.length) {
     lines.push('## 類似工具比較');
     lines.push('');
-    lines.push(`相關替代方案：${llmInfo.similar_tools.join('、')}`);
+    const first = llmInfo.similar_tools[0];
+    if (typeof first === 'object' && first.name) {
+      lines.push('| 工具 | 差異 |');
+      lines.push('| --- | --- |');
+      for (const t of llmInfo.similar_tools) {
+        lines.push(`| ${t.name} | ${t.diff || ''} |`);
+      }
+    } else {
+      // 向下相容字串陣列
+      lines.push(`相關替代方案：${llmInfo.similar_tools.map(t => typeof t === 'string' ? t : t.name).join('、')}`);
+    }
     lines.push('');
   }
 
-  // ── 技術細節（可收合）──
+  // ── 技術細節（不重複 stats bar 已有資訊）──
   lines.push('## 技術細節');
   lines.push('');
   lines.push('| 欄位 | 值 |');
   lines.push('| --- | --- |');
-  lines.push(`| 語言 | ${repo.language || 'N/A'} |`);
-  lines.push(`| 授權 | ${repo.license?.spdx_id || 'N/A'} |`);
-  lines.push(`| Stars | ${fmt(repo.stargazers_count)} |`);
   lines.push(`| Forks | ${fmt(repo.forks_count)} |`);
-  lines.push(`| Issues | ${repo.open_issues_count} |`);
+  lines.push(`| Open Issues | ${repo.open_issues_count} |`);
+  lines.push(`| 最後推送 | ${repo.pushed_at?.split('T')[0] || 'N/A'} |`);
   lines.push(`| 建立日期 | ${repo.created_at.split('T')[0]} |`);
   if (repo.homepage) lines.push(`| 官方網站 | [Link](${repo.homepage}) |`);
+  if (repo.size) lines.push(`| Repo 大小 | ${repo.size > 1024 ? `${(repo.size / 1024).toFixed(1)} MB` : `${repo.size} KB`} |`);
   lines.push('');
 
   // 語言組成 pie chart
@@ -470,15 +552,16 @@ function generateRepoNote(repo, llmInfo, today) {
     lines.push('');
   }
 
-  // ── 相關概念 + 連結 ──
+  // ── 延伸閱讀 ──
   lines.push('## 延伸閱讀');
   lines.push('');
   if (llmInfo?.related_concepts?.length) {
-    lines.push(`相關概念：${llmInfo.related_concepts.map((c) => `#${c.replace(/[\s/]/g, '_')}`).join(' · ')}`);
+    lines.push(`相關概念：${llmInfo.related_concepts.map((c) => `[[${c}]]`).join(' · ')}`);
     lines.push('');
   }
-  lines.push(`[GitHub](${repo.html_url})`);
-  if (repo.homepage) lines.push(` · [官方網站](${repo.homepage})`);
+  const extLinks = [`[GitHub](${repo.html_url})`];
+  if (repo.homepage) extLinks.push(`[官方網站](${repo.homepage})`);
+  lines.push(extLinks.join(' · '));
   lines.push('');
 
   // ── 個人筆記區 ──
@@ -486,7 +569,11 @@ function generateRepoNote(repo, llmInfo, today) {
   lines.push('');
   lines.push('## 個人筆記');
   lines.push('');
-  lines.push('> [!question]+ 我的想法');
+  lines.push('> [!question]+ 我的評估');
+  lines.push('> **實用性**：/5');
+  lines.push('> **技術新穎性**：/5');
+  lines.push('> **成熟度**：早期 / 可用 / 穩定');
+  lines.push('> ');
   lines.push('> _在此寫下你的想法、使用心得、跟其他工具的比較..._');
   lines.push('');
   lines.push('**狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`');
@@ -926,14 +1013,37 @@ async function main() {
   // 5. 產生個別 Repo Notes
   await mkdir(REPOS_DIR, { recursive: true });
   let newNoteCount = 0;
+  let updatedNoteCount = 0;
 
   for (const repo of detailedRepos) {
     const fileName = repoFileName(repo.full_name);
     const filePath = join(REPOS_DIR, fileName);
 
-    // 如果筆記已存在，不覆蓋（保護使用者的手動編輯）
     if (await fileExists(filePath)) {
-      console.log(`  Skip (exists): ${fileName}`);
+      // 已存在的筆記：追加出現記錄 + 更新 frontmatter stars
+      try {
+        const existing = await readFile(filePath, 'utf-8');
+        const newEntry = `- [[${today}|${today}]] — 再次上榜，${fmt(repo.stargazers_count)} stars`;
+        if (!existing.includes(`[[${today}|${today}]]`)) {
+          // 追加出現記錄
+          const updated = existing.replace(
+            /^(## 出現記錄\n\n)/m,
+            `$1${newEntry}\n`
+          );
+          // 更新 frontmatter 中的 stars 和 pushed_at
+          const final = updated
+            .replace(/^stars: \d+$/m, `stars: ${repo.stargazers_count}`)
+            .replace(/^stars_per_day: \d+$/m, `stars_per_day: ${starsPerDay(repo.stargazers_count, repo.created_at)}`)
+            .replace(/^pushed_at: .+$/m, `pushed_at: ${repo.pushed_at?.split('T')[0] || 'N/A'}`);
+          await writeFile(filePath, final, 'utf-8');
+          console.log(`  Updated: ${fileName} (再次上榜)`);
+          updatedNoteCount++;
+        } else {
+          console.log(`  Skip (today exists): ${fileName}`);
+        }
+      } catch {
+        console.log(`  Skip (read error): ${fileName}`);
+      }
       continue;
     }
 
@@ -978,7 +1088,7 @@ async function main() {
   }
   await saveSeen(seen);
 
-  console.log(`\nDone! ${newNoteCount} new repo notes, 1 daily digest.`);
+  console.log(`\nDone! ${newNoteCount} new, ${updatedNoteCount} updated repo notes, 1 daily digest.`);
   console.log(`Tracking ${Object.keys(seen).length} repos total.`);
 }
 
