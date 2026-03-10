@@ -195,7 +195,7 @@ async function callLLMBatch(repos, token) {
 }
 
 async function callLLM(repos, token) {
-  const BATCH_SIZE = 5;
+  const BATCH_SIZE = 3;
   const results = [];
 
   for (let i = 0; i < repos.length; i += BATCH_SIZE) {
@@ -625,26 +625,56 @@ function generateRepoNote(repo, llmInfo, today) {
   lines.push(extLinks.join(' · '));
   lines.push('');
 
+  // ── 相關收錄（同分類 Dataview）──
+  lines.push('## 相關收錄');
+  lines.push('');
+  lines.push(`> [!note]- 同分類的其他專案`);
+  lines.push('> ```dataview');
+  lines.push('> LIST');
+  lines.push('> FROM "Repos"');
+  lines.push(`> WHERE category = "${cat}" AND file.name != "${repoFileName(repo.full_name).replace('.md', '')}"`);
+  lines.push('> SORT stars DESC');
+  lines.push('> LIMIT 8');
+  lines.push('> ```');
+  lines.push('');
+
   // ── 個人筆記區 ──
   lines.push('---');
   lines.push('');
   lines.push('## 個人筆記');
   lines.push('');
-  lines.push('> [!question]+ 我的評估');
+  lines.push('> [!question]+ 快速評估（第一次看時填寫）');
   lines.push('> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_');
   lines.push('> ');
-  lines.push('> **實用性**：/5');
-  lines.push('> **技術新穎性**：/5');
-  lines.push('> **成熟度**：早期 / 可用 / 穩定');
+  lines.push('> **跟我的工作相關嗎？** 是 / 否 / 間接相關');
+  lines.push('> **值得花時間試用嗎？** 是 / 以後再說 / 不需要');
+  lines.push('> **第一印象**：_一句話_');
+  lines.push('');
+  lines.push('> [!success]- 深度評估（試用後填寫）');
   lines.push('> ');
-  lines.push('> _想法、使用心得、跟其他工具的比較..._');
+  lines.push('> | 項目 | 分數 (1-5) | 備註 |');
+  lines.push('> | --- | :---: | --- |');
+  lines.push('> | 實用性 | /5 | |');
+  lines.push('> | 技術新穎性 | /5 | |');
+  lines.push('> | 文件品質 | /5 | |');
+  lines.push('> | 社群活躍度 | /5 | |');
+  lines.push('> | 上手難度 | /5 | 1=很難 5=很簡單 |');
+  lines.push('> ');
+  lines.push('> **成熟度**：早期 / 可用 / 穩定');
+  lines.push('> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._');
   lines.push('');
   lines.push('### 試用記錄');
   lines.push('');
-  lines.push('試用日期 :: ');
-  lines.push('試用版本 :: ');
-  lines.push('安裝難度 :: ');
-  lines.push('試用結果 :: ');
+  lines.push('> [!example]- 試用 #1');
+  lines.push('> 試用日期 :: ');
+  lines.push('> 試用版本 :: ');
+  lines.push('> 安裝過程 :: _順利 / 遇到問題（描述）_');
+  lines.push('> 實際效果 :: _達到預期 / 不如預期（原因）_');
+  lines.push('> 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_');
+  lines.push('');
+  lines.push('### 想法與筆記');
+  lines.push('');
+  lines.push('_隨時記錄想法、發現、跟其他工具的比較..._');
   lines.push('');
   lines.push('**狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`');
   lines.push('');
@@ -1171,6 +1201,88 @@ SORT week DESC
 `;
 }
 
+function generateHome() {
+  return `---
+tags:
+  - home
+cssclasses:
+  - home
+---
+
+# GitHub Trending Vault
+
+> 自動追蹤 GitHub 上最熱門的新專案，每日更新，用 Obsidian 整理和回顧。
+
+## 快速導覽
+
+| 頁面 | 說明 |
+| --- | --- |
+| [[Dashboard]] | 完整數據儀表板 — 統計、排行、分類 |
+| [[MOC - AI-ML]] | AI/ML 相關專案 |
+| [[MOC - 開發工具]] | 開發者工具 |
+| [[MOC - Web 應用]] | Web 應用程式 |
+| [[MOC - CLI 工具]] | 命令列工具 |
+| [[MOC - 安全]] | 安全相關 |
+| [[MOC - 資料科學]] | 資料科學 |
+
+## 最新收錄
+
+\`\`\`dataview
+TABLE
+  stars AS "Stars",
+  stars_per_day AS "Stars/天",
+  category AS "分類",
+  language AS "語言"
+FROM "Repos"
+SORT first_seen DESC
+LIMIT 10
+\`\`\`
+
+## 待回顧（優先）
+
+\`\`\`dataview
+TABLE
+  stars_per_day AS "Stars/天",
+  category AS "分類",
+  install_complexity AS "安裝"
+FROM "Repos"
+WHERE status = "to-review"
+SORT stars_per_day DESC
+LIMIT 5
+\`\`\`
+
+## 已評分的精選
+
+\`\`\`dataview
+TABLE
+  ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分",
+  category AS "分類",
+  status AS "狀態"
+FROM "Repos"
+WHERE my_rating > 0
+SORT my_rating DESC
+LIMIT 10
+\`\`\`
+
+## 回顧進度
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"');
+const total = pages.length;
+const reviewed = pages.where(p => p.status && p.status !== "to-review").length;
+const pct = total > 0 ? Math.round((reviewed / total) * 100) : 0;
+dv.paragraph(\`\${reviewed}/\${total} 已回顧 (\${pct}%)\`);
+dv.paragraph(\`<progress value="\${reviewed}" max="\${total}" style="width:100%"></progress>\`);
+\`\`\`
+
+---
+
+> [!info] 關於這個 Vault
+> 由 [GitHub Actions](https://github.com/Lucasnocodo/github-trending-obsidian) 每日自動更新。
+> 使用 GitHub Models API (gpt-4o-mini) 產生中文摘要和分析。
+`;
+}
+
 async function generateMOCs() {
   await mkdir(MOC_DIR, { recursive: true });
   const categories = [
@@ -1311,10 +1423,14 @@ async function main() {
   await writeFile(dailyPath, digest, 'utf-8');
   console.log(`Created: Daily/${today}.md`);
 
-  // 7. 產生/更新 Dashboard
+  // 7. 產生/更新 Dashboard + Home
   const dashboardPath = join(ROOT, 'Dashboard.md');
   await writeFile(dashboardPath, generateDashboard(), 'utf-8');
   console.log('Updated: Dashboard.md');
+
+  const homePath = join(ROOT, 'Home.md');
+  await writeFile(homePath, generateHome(), 'utf-8');
+  console.log('Updated: Home.md');
 
   // 8. 產生 MOC 分類索引頁
   await generateMOCs();
@@ -1426,7 +1542,7 @@ async function refreshRepos(token, failedOnly = false) {
   console.log(`${toRefresh.length} notes need refresh`);
 
   // 批次處理（每 5 個一批，避免 rate limit）
-  const BATCH = 5;
+  const BATCH = 3;
   for (let i = 0; i < toRefresh.length; i += BATCH) {
     const batch = toRefresh.slice(i, i + BATCH);
     console.log(`\nBatch ${Math.floor(i / BATCH) + 1}/${Math.ceil(toRefresh.length / BATCH)} (${batch.length} repos)...`);
