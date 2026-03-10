@@ -495,9 +495,16 @@ function generateDailyDigest(repos, llmData, today) {
   const top = repos[0];
 
   const llm = {};
-  if (llmData) for (const item of llmData) llm[item.repo] = item;
+  if (llmData) {
+    for (const item of llmData) {
+      if (!item.repo) continue;
+      llm[item.repo] = item;
+      llm[item.repo.toLowerCase()] = item;
+    }
+  }
+  const _get = (name) => llm[name] || llm[name.toLowerCase()] || null;
 
-  const topInfo = llm[top.full_name];
+  const topInfo = _get(top.full_name);
   const topDesc = topInfo?.description_zh || top.description || '';
 
   const lines = [
@@ -536,7 +543,7 @@ function generateDailyDigest(repos, llmData, today) {
   // 表格
   for (let i = 0; i < repos.length; i++) {
     const r = repos[i];
-    const info = llm[r.full_name];
+    const info = _get(r.full_name);
     const cat = info?.category || '';
     const link = `[[${repoFileName(r.full_name).replace('.md', '')}\\|${r.full_name}]]`;
     lines.push(
@@ -554,7 +561,7 @@ function generateDailyDigest(repos, llmData, today) {
 
   for (let i = 0; i < repos.length; i++) {
     const r = repos[i];
-    const info = llm[r.full_name];
+    const info = _get(r.full_name);
     const noteLink = `[[${repoFileName(r.full_name).replace('.md', '')}|${r.full_name}]]`;
 
     lines.push(`### ${i + 1}. ${noteLink}${info?.category ? ` \`${info.category}\`` : ''}`);
@@ -765,8 +772,35 @@ async function main() {
   const llmData = await callLLM(detailedRepos, token);
   console.log(llmData ? `LLM done (${llmData.length} items)` : 'LLM unavailable, using fallback');
 
+  // 建立 LLM 資料查詢表（支援模糊匹配：大小寫、多餘空格等）
   const llmMap = {};
-  if (llmData) for (const item of llmData) llmMap[item.repo] = item;
+  if (llmData) {
+    for (const item of llmData) {
+      if (!item.repo) continue;
+      llmMap[item.repo] = item;
+      llmMap[item.repo.toLowerCase()] = item;
+    }
+    // 如果數量不匹配，嘗試按順序配對
+    if (llmData.length === detailedRepos.length) {
+      for (let i = 0; i < detailedRepos.length; i++) {
+        const key = detailedRepos[i].full_name;
+        if (!llmMap[key] && !llmMap[key.toLowerCase()]) {
+          llmMap[key] = llmData[i];
+          console.log(`  LLM match by index: ${key} ← ${llmData[i].repo}`);
+        }
+      }
+    }
+    // 報告匹配結果
+    let matched = 0;
+    for (const repo of detailedRepos) {
+      if (getLLMInfo(repo.full_name) || llmMap[repo.full_name.toLowerCase()]) matched++;
+    }
+    console.log(`  LLM matched ${matched}/${detailedRepos.length} repos`);
+  }
+
+  function getLLMInfo(fullName) {
+    return llmMap[fullName] || llmMap[fullName.toLowerCase()] || null;
+  }
 
   // 5. 產生個別 Repo Notes
   await mkdir(REPOS_DIR, { recursive: true });
@@ -782,7 +816,7 @@ async function main() {
       continue;
     }
 
-    const note = generateRepoNote(repo, llmMap[repo.full_name], today);
+    const note = generateRepoNote(repo, getLLMInfo(repo.full_name), today);
     await writeFile(filePath, note, 'utf-8');
     console.log(`  Created: Repos/${fileName}`);
     newNoteCount++;
