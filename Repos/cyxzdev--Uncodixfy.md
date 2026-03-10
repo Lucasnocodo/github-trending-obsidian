@@ -5,41 +5,30 @@ owner: cyxzdev
 owner_type: User
 language: N/A
 license: N/A
-stars: 1315
+stars: 1318
+stars_per_day: 330
 forks: 103
 created: 2026-03-06
 first_seen: 2026-03-10
-category: "其他"
+category: "Other"
 status: to-review
 tags:
   - github
-  - 其他
+  - other
 ---
 
 # Uncodixfy
 
+**1.3k** stars · **330** stars/天 · 建立 4 天前 · N/A · 未標註授權
+
 > [!summary] 一句話摘要
-> Uncodixify 讓 GPT 創建不受限制的 UI 設計，克服常見的設計模式。
+> the holly uncodexify instructions - letting GPT create uncodexified UI
 
 ## 專案簡介
 
-Uncodixify 旨在改善 GPT 在 UI 設計上的表現，通過提供不受限制的設計指導，幫助用戶避免常見的設計缺陷。這個工具特別適合開發者和設計師，讓他們能夠創造出更具創意和多樣性的用戶介面。
+the holly uncodexify instructions - letting GPT create uncodexified UI
 
 ## 為什麼值得關注
-
-> [!tip] 爆紅原因
-> 隨著 AI 技術的進步，越來越多的人希望利用這些工具來提升他們的設計能力，並創造出更好的用戶體驗。
-
-**1.3k** stars · **329** stars/天 · 建立 4 天前
-
-## 適合誰使用
-
-**目標受眾**：適合希望提升 UI 設計能力的開發者和設計師。
-
-> [!example] 使用場景
-> - 使用 GPT 生成創新的 UI 設計概念。
-> - 避免常見的設計模式，提升介面的獨特性。
-> - 幫助開發者快速產出多樣化的 UI 原型。
 
 ## 技術細節
 
@@ -52,13 +41,12 @@ Uncodixify 旨在改善 GPT 在 UI 設計上的表現，通過提供不受限制
 | Issues | 0 |
 | 建立日期 | 2026-03-06 |
 
-### 主要貢獻者
-
-| 貢獻者 | Commits |
-| --- | --- |
-| [@cyxzdev](https://github.com/cyxzdev) | 12 |
-| [@cyxdev](https://github.com/cyxdev) | 4 |
-| [@ianjamesburke](https://github.com/ianjamesburke) | 1 |
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@cyxzdev](https://github.com/cyxzdev) | 12 |
+> | [@cyxdev](https://github.com/cyxdev) | 4 |
+> | [@ianjamesburke](https://github.com/ianjamesburke) | 1 |
 
 ## README 摘錄
 
@@ -117,16 +105,31 @@ Uncodixify 旨在改善 GPT 在 UI 設計上的表現，通過提供不受限制
 > #### All platforms.
 > 
 > ```
-> npx skills add cyxzdev/Uncodix
+> npx skills add cyxzdev/Uncodixfy
+> ```
+> Or bunx if you want.
+> 
+> Once installed, invoke it with:
+> 
+> ```text
+> /uncodixfy
+> ```
+> ## Star History
+> 
+> [](https://www.star-history.com/?repos=cyxzdev%2FUncodixfy&type=date&legend=top-left)
 
-## 相關概念
+## 延伸閱讀
 
-[[用戶介面設計]] · [[人工智慧]] · [[創意設計]]
+[GitHub](https://github.com/cyxzdev/Uncodixfy)
 
 ---
 
-> [!question] 個人筆記
-> _在此寫下你的想法、使用心得..._
+## 個人筆記
+
+> [!question]+ 我的想法
+> _在此寫下你的想法、使用心得、跟其他工具的比較..._
+
+**狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 
 ## 出現記錄
 

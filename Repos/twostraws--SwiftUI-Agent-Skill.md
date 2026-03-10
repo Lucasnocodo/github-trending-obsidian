@@ -6,40 +6,29 @@ owner_type: User
 language: N/A
 license: MIT
 stars: 1713
+stars_per_day: 428
 forks: 56
 created: 2026-03-05
 first_seen: 2026-03-10
-category: "開發工具"
+category: "Other"
 status: to-review
 tags:
   - github
-  - 開發工具
+  - other
 ---
 
 # SwiftUI-Agent-Skill
 
+**1.7k** stars · **428** stars/天 · 建立 4 天前 · N/A · MIT
+
 > [!summary] 一句話摘要
-> 為 Claude Code、Codex 和其他 AI 工具提供的 SwiftUI 代理技能。
+> SwiftUI agent skill for Claude Code, Codex, and other AI tools.
 
 ## 專案簡介
 
-SwiftUI-Agent-Skill 是一個專為 SwiftUI 開發的代理技能，幫助用戶更智能、更簡單地編寫現代化的 SwiftUI 代碼。它提供 API 使用、設計、性能和可及性的指導，讓開發者能夠更有效地利用 SwiftUI。這個專案的獨特之處在於它結合了多年的經驗和實踐，提供了全面的支持。
+SwiftUI agent skill for Claude Code, Codex, and other AI tools.
 
 ## 為什麼值得關注
-
-> [!tip] 爆紅原因
-> 隨著 SwiftUI 的普及，開發者對於如何高效使用這一框架的需求不斷增加，這使得相關工具和技能變得越來越受歡迎。
-
-**1.7k** stars · **428** stars/天 · 建立 4 天前
-
-## 適合誰使用
-
-**目標受眾**：適合希望提升 SwiftUI 開發技能的開發者。
-
-> [!example] 使用場景
-> - 幫助開發者快速上手 SwiftUI 開發。
-> - 提供設計和性能優化的建議。
-> - 指導用戶如何使用 API 進行開發。
 
 ## 技術細節
 
@@ -52,11 +41,10 @@ SwiftUI-Agent-Skill 是一個專為 SwiftUI 開發的代理技能，幫助用戶
 | Issues | 6 |
 | 建立日期 | 2026-03-05 |
 
-### 主要貢獻者
-
-| 貢獻者 | Commits |
-| --- | --- |
-| [@twostraws](https://github.com/twostraws) | 1 |
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@twostraws](https://github.com/twostraws) | 1 |
 
 ## README 摘錄
 
@@ -81,16 +69,30 @@ SwiftUI-Agent-Skill 是一個專為 SwiftUI 開發的代理技能，幫助用戶
 > 
 > And if *that* fails it usually means you need to [install Homebrew](https://brew.sh) first.
 > 
-> When using `npx`, you can select exactly which agents you want to use during the installation. You can also select whether the skill should be installed just for one project, or whether it sh
+> When using `npx`, you can select exactly which agents you want to use during the installation. You can also select whether the skill should be installed just for one project, or whether it should be made available for all your projects.
+> 
+> Alternatively, you can clone this whole repository and install it however you want.
+> 
+> ## Using this skill
+> 
+> The skill is called SwiftUI Pro, and can be triggered in various ways. For example, in Claude Code you would use this:
+> 
+> > /swiftui-pro
+> 
+> And in Cod
 
-## 相關概念
+## 延伸閱讀
 
-[[SwiftUI]] · [[代理技能]] · [[API 使用]]
+[GitHub](https://github.com/twostraws/SwiftUI-Agent-Skill)
 
 ---
 
-> [!question] 個人筆記
-> _在此寫下你的想法、使用心得..._
+## 個人筆記
+
+> [!question]+ 我的想法
+> _在此寫下你的想法、使用心得、跟其他工具的比較..._
+
+**狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 
 ## 出現記錄
 

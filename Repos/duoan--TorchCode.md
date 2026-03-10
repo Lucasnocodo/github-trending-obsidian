@@ -6,14 +6,15 @@ owner_type: User
 language: Jupyter Notebook
 license: N/A
 stars: 1506
+stars_per_day: 251
 forks: 110
 created: 2026-03-04
 first_seen: 2026-03-10
-category: "AI/ML"
+category: "Other"
 status: to-review
 tags:
   - github
-  - ai_ml
+  - other
   - jupyter notebook
   - interview
   - leetcode
@@ -22,28 +23,16 @@ tags:
 
 # TorchCode
 
+**1.5k** stars · **251** stars/天 · 建立 6 天前 · Jupyter Notebook · 未標註授權
+
 > [!summary] 一句話摘要
-> TorchCode 是一個針對 PyTorch 的練習平台，讓你從零開始實作各種深度學習技術。
+> 🔥 LeetCode for PyTorch — practice implementing softmax, attention, GPT-2 and more from scratch with instant auto-grading. Jupyter-based, self-hosted or try online.
 
 ## 專案簡介
 
-TorchCode 提供了一個類似 LeetCode 的環境，專注於 PyTorch 的操作和架構實作。用戶可以練習實作 softmax、注意力機制、GPT-2 等技術，並享有即時自動評分的功能。這個平台特別適合想要提升機器學習面試技能的開發者，並且支援 Jupyter 環境，方便自我訓練。
+🔥 LeetCode for PyTorch — practice implementing softmax, attention, GPT-2 and more from scratch with instant auto-grading. Jupyter-based, self-hosted or try online.
 
 ## 為什麼值得關注
-
-> [!tip] 爆紅原因
-> 隨著機器學習的需求增加，許多人希望提升自己的技能以應對面試，TorchCode 剛好滿足了這個需求。
-
-**1.5k** stars · **251** stars/天 · 建立 6 天前
-
-## 適合誰使用
-
-**目標受眾**：適合希望提升 PyTorch 技能的機器學習開發者。
-
-> [!example] 使用場景
-> - 準備機器學習面試，實作常見的 PyTorch 操作。
-> - 在 Jupyter 環境中進行深度學習技術的實驗和測試。
-> - 透過即時自動評分，快速了解自己的實作能力和進步空間。
 
 ## 技術細節
 
@@ -57,25 +46,23 @@ TorchCode 提供了一個類似 LeetCode 的環境，專注於 PyTorch 的操作
 | 建立日期 | 2026-03-04 |
 | 官方網站 | [Link](https://huggingface.co/spaces/duoan/TorchCode) |
 
-### 語言組成
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Jupyter Notebook" : 69
+>     "Python" : 24
+>     "TypeScript" : 3
+>     "CSS" : 2
+>     "Dockerfile" : 1
+> ```
 
-```mermaid
-pie title 語言組成
-    "Jupyter Notebook" : 69
-    "Python" : 24
-    "TypeScript" : 3
-    "CSS" : 2
-    "Dockerfile" : 1
-```
-
-### 主要貢獻者
-
-| 貢獻者 | Commits |
-| --- | --- |
-| [@duoan](https://github.com/duoan) | 28 |
-| [@Ando233](https://github.com/Ando233) | 2 |
-| [@ThierryHJ](https://github.com/ThierryHJ) | 1 |
-| [@github-actions[bot]](https://github.com/github-actions[bot]) | 1 |
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@duoan](https://github.com/duoan) | 28 |
+> | [@Ando233](https://github.com/Ando233) | 2 |
+> | [@ThierryHJ](https://github.com/ThierryHJ) | 1 |
+> | [@github-actions[bot]](https://github.com/github-actions[bot]) | 1 |
 
 ## README 摘錄
 
@@ -116,14 +103,19 @@ pie title 語言組成
 > 
 > Top companies (Meta, Google DeepMind, OpenAI, etc.) expect ML engineers to implement core operations **from memory on a whiteboard**. Reading papers isn't enough — you need to write `softmax`, `LayerNorm`, `MultiHeadAttention`, and full Transformer blocks cod
 
-## 相關概念
+## 延伸閱讀
 
-[[深度學習]] · [[神經網絡]] · [[自動評分系統]]
+[GitHub](https://github.com/duoan/TorchCode)
+ · [官方網站](https://huggingface.co/spaces/duoan/TorchCode)
 
 ---
 
-> [!question] 個人筆記
-> _在此寫下你的想法、使用心得..._
+## 個人筆記
+
+> [!question]+ 我的想法
+> _在此寫下你的想法、使用心得、跟其他工具的比較..._
+
+**狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 
 ## 出現記錄
 

@@ -114,28 +114,44 @@ async function fetchRepoDetails(repo, token) {
 
 // ── LLM ─────────────────────────────────────────────────────
 
-const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客，擅長用清晰易懂的中文介紹開源專案。
+const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好者。你的文字風格像是在跟工程師朋友分享一個有趣的發現——直接、有觀點、不廢話。
+
+重要：
+- 請仔細閱讀每個專案的 README 內容來寫摘要，不要只看專案名稱就猜測
+- 每個專案的內容要有差異化，避免用「隨著...的流行」「這個專案因此受到關注」這種空洞句型
+- 使用場景要非常具體，可以想像一個真實的使用者在做什麼
+- 說出這個工具跟現有替代方案的差異
 
 請為每個 GitHub 專案提供：
-1. "description_zh": 翻譯描述（一句話，口語自然）
-2. "summary": 3-4 句話說明：做什麼？什麼技術？解決什麼痛點？獨特之處？
-3. "why_trending": 1-2 句分析為什麼現在爆紅
-4. "use_cases": 陣列，3 個具體使用場景
-5. "target_audience": 一句話說明適合誰
-6. "category": 從 AI/ML、開發工具、Web 應用、CLI 工具、資料科學、安全、教學資源、其他 選一個
-7. "related_concepts": 陣列，3 個相關技術概念（中文）
+1. "description_zh": 一句話翻譯，口語自然
+2. "summary": 4-5 句話。先說清楚這工具做什麼（第一句就讓人懂），再說技術實作方式，再說跟同類工具的差異，最後給出你的觀點（值不值得試、適不適合 production 用）
+3. "why_trending": 2 句具體分析爆紅原因（作者背景？切中什麼需求？有什麼事件觸發？）不要用「隨著...」開頭
+4. "use_cases": 陣列，3 個場景。格式：「[角色] 用它來 [具體動作]，因為 [具體好處]」
+5. "target_audience": 一句話，越具體越好
+6. "category": 從 AI/ML、開發工具、Web 應用、CLI 工具、資料科學、安全、教學資源、基礎設施、其他 選一個（仔細看 README 內容再決定）
+7. "key_features": 陣列，從 README 提取 3-5 個最重要的功能特色（中文，每個一句話）
+8. "quickstart": 如果 README 有安裝或使用指令，提取最簡潔的 2-3 步快速開始步驟（中文）。沒有就回傳 null
+9. "limitations": 一句話提到可能的限制或注意事項（例如「僅支援 Linux」「需要 GPU」「早期階段，API 可能變動」）
+10. "similar_tools": 陣列，1-2 個類似的知名工具名稱（如果想得到的話）。想不到就回空陣列
+11. "related_concepts": 陣列，3 個相關技術概念（繁體中文）
 
-回傳 JSON 陣列：[{"repo":"owner/name","description_zh":"...","summary":"...","why_trending":"...","use_cases":["..."],"target_audience":"...","category":"...","related_concepts":["..."]}]
-只回傳 JSON。`;
+回傳 JSON 陣列，只回傳 JSON。`;
 
 function buildRepoPrompt(repos) {
   return repos
     .map((r) => {
-      const parts = [`${r.full_name}: ${r.description || 'No description'}`];
-      if (r._readme) parts.push(`README: ${r._readme.slice(0, 300)}`);
+      const parts = [`## ${r.full_name}`];
+      parts.push(`描述: ${r.description || 'No description'}`);
+      parts.push(`語言: ${Object.keys(r._languages || {}).join(', ') || r.language || 'N/A'}`);
+      parts.push(`Stars: ${r.stargazers_count}`);
+      if (r._contributors?.length)
+        parts.push(`主要貢獻者: ${r._contributors.map((c) => c.login).join(', ')}`);
+      if (r._release) parts.push(`最新版本: ${r._release.tag}`);
+      if (r.homepage) parts.push(`官方網站: ${r.homepage}`);
+      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 500)}`);
       return parts.join('\n');
     })
-    .join('\n---\n');
+    .join('\n\n---\n\n');
 }
 
 async function callLLMBatch(repos, token) {
@@ -279,6 +295,7 @@ function generateRepoNote(repo, llmInfo, today) {
     `language: ${repo.language || 'N/A'}`,
     `license: ${repo.license?.spdx_id || 'N/A'}`,
     `stars: ${repo.stargazers_count}`,
+    `stars_per_day: ${rate}`,
     `forks: ${repo.forks_count}`,
     `created: ${repo.created_at.split('T')[0]}`,
     `first_seen: ${today}`,
@@ -296,20 +313,23 @@ function generateRepoNote(repo, llmInfo, today) {
   }
   fm.push('---');
 
-  // ── Body ──
   const lines = [...fm, ''];
 
-  // Title
+  // ── Title + Stats Bar ──
   lines.push(`# ${repo.full_name.split('/')[1]}`);
   lines.push('');
+  lines.push(
+    `**${fmt(repo.stargazers_count)}** stars · **${fmt(rate)}** stars/天 · 建立 ${days} 天前 · ${repo.language || 'N/A'} · ${repo.license?.spdx_id || '未標註授權'}`
+  );
+  lines.push('');
 
-  // Summary callout
+  // ── 一句話摘要 ──
   const descZh = llmInfo?.description_zh || repo.description || 'No description';
   lines.push('> [!summary] 一句話摘要');
   lines.push(`> ${descZh}`);
   lines.push('');
 
-  // 專案簡介
+  // ── 專案簡介 ──
   lines.push('## 專案簡介');
   lines.push('');
   if (llmInfo?.summary) {
@@ -319,7 +339,25 @@ function generateRepoNote(repo, llmInfo, today) {
   }
   lines.push('');
 
-  // 為什麼值得關注
+  // ── 重點功能 ──
+  if (llmInfo?.key_features?.length) {
+    lines.push('## 重點功能');
+    lines.push('');
+    for (const feat of llmInfo.key_features) {
+      lines.push(`- ${feat}`);
+    }
+    lines.push('');
+  }
+
+  // ── 快速開始 ──
+  if (llmInfo?.quickstart) {
+    lines.push('## 快速開始');
+    lines.push('');
+    lines.push(llmInfo.quickstart);
+    lines.push('');
+  }
+
+  // ── 為什麼值得關注 ──
   lines.push('## 為什麼值得關注');
   lines.push('');
   if (llmInfo?.why_trending) {
@@ -327,27 +365,40 @@ function generateRepoNote(repo, llmInfo, today) {
     lines.push(`> ${llmInfo.why_trending}`);
     lines.push('');
   }
-  lines.push(
-    `**${fmt(repo.stargazers_count)}** stars · **${fmt(rate)}** stars/天 · 建立 ${days} 天前`
-  );
-  lines.push('');
 
-  // 使用場景
-  if (llmInfo?.use_cases?.length) {
+  // ── 適合誰 + 使用場景 ──
+  if (llmInfo?.use_cases?.length || llmInfo?.target_audience) {
     lines.push('## 適合誰使用');
     lines.push('');
     if (llmInfo.target_audience) {
       lines.push(`**目標受眾**：${llmInfo.target_audience}`);
       lines.push('');
     }
-    lines.push('> [!example] 使用場景');
-    for (const uc of llmInfo.use_cases) {
-      lines.push(`> - ${uc}`);
+    if (llmInfo.use_cases?.length) {
+      lines.push('> [!example] 使用場景');
+      for (const uc of llmInfo.use_cases) {
+        lines.push(`> - ${uc}`);
+      }
+      lines.push('');
     }
+  }
+
+  // ── 注意事項 ──
+  if (llmInfo?.limitations) {
+    lines.push('> [!warning] 注意事項');
+    lines.push(`> ${llmInfo.limitations}`);
     lines.push('');
   }
 
-  // 技術細節
+  // ── 類似工具 ──
+  if (llmInfo?.similar_tools?.length) {
+    lines.push('## 類似工具比較');
+    lines.push('');
+    lines.push(`相關替代方案：${llmInfo.similar_tools.join('、')}`);
+    lines.push('');
+  }
+
+  // ── 技術細節（可收合）──
   lines.push('## 技術細節');
   lines.push('');
   lines.push('| 欄位 | 值 |');
@@ -364,63 +415,67 @@ function generateRepoNote(repo, llmInfo, today) {
   // 語言組成 pie chart
   const langEntries = Object.entries(langPct);
   if (langEntries.length > 1) {
-    lines.push('### 語言組成');
-    lines.push('');
-    lines.push('```mermaid');
-    lines.push('pie title 語言組成');
+    lines.push('> [!info]- 語言組成');
+    lines.push('> ```mermaid');
+    lines.push('> pie title 語言組成');
     for (const [lang, pct] of langEntries) {
-      lines.push(`    "${lang}" : ${pct}`);
+      lines.push(`>     "${lang}" : ${pct}`);
     }
-    lines.push('```');
+    lines.push('> ```');
     lines.push('');
   }
 
   // 貢獻者
   if (repo._contributors?.length) {
-    lines.push('### 主要貢獻者');
-    lines.push('');
-    lines.push('| 貢獻者 | Commits |');
-    lines.push('| --- | --- |');
+    lines.push('> [!info]- 主要貢獻者');
+    lines.push('> | 貢獻者 | Commits |');
+    lines.push('> | --- | --- |');
     for (const c of repo._contributors) {
-      lines.push(`| [@${c.login}](https://github.com/${c.login}) | ${c.contributions} |`);
+      lines.push(`> | [@${c.login}](https://github.com/${c.login}) | ${c.contributions} |`);
     }
     lines.push('');
   }
 
   // 最新版本
   if (repo._release) {
-    lines.push('### 最新版本');
-    lines.push('');
-    lines.push(`**${repo._release.tag}**${repo._release.name !== repo._release.tag ? ` — ${repo._release.name}` : ''} (${repo._release.date})`);
+    lines.push(
+      `**最新版本**：${repo._release.tag}${repo._release.name !== repo._release.tag ? ` — ${repo._release.name}` : ''} (${repo._release.date})`
+    );
     lines.push('');
   }
 
-  // README 摘錄（可收合）
+  // ── README 摘錄（可收合）──
   if (repo._readme) {
     lines.push('## README 摘錄');
     lines.push('');
     lines.push('> [!info]- 展開查看原文 README');
-    // 分行處理，每行加 > 前綴
-    const readmeLines = repo._readme.slice(0, 1200).split('\n');
+    const readmeLines = repo._readme.slice(0, 1500).split('\n');
     for (const rl of readmeLines) {
       lines.push(`> ${rl}`);
     }
     lines.push('');
   }
 
-  // 相關概念
+  // ── 相關概念 + 連結 ──
+  lines.push('## 延伸閱讀');
+  lines.push('');
   if (llmInfo?.related_concepts?.length) {
-    lines.push('## 相關概念');
-    lines.push('');
-    lines.push(llmInfo.related_concepts.map((c) => `[[${c}]]`).join(' · '));
+    lines.push(`相關概念：${llmInfo.related_concepts.map((c) => `[[${c}]]`).join(' · ')}`);
     lines.push('');
   }
+  lines.push(`[GitHub](${repo.html_url})`);
+  if (repo.homepage) lines.push(` · [官方網站](${repo.homepage})`);
+  lines.push('');
 
-  // 個人筆記區
+  // ── 個人筆記區 ──
   lines.push('---');
   lines.push('');
-  lines.push('> [!question] 個人筆記');
-  lines.push('> _在此寫下你的想法、使用心得..._');
+  lines.push('## 個人筆記');
+  lines.push('');
+  lines.push('> [!question]+ 我的想法');
+  lines.push('> _在此寫下你的想法、使用心得、跟其他工具的比較..._');
+  lines.push('');
+  lines.push('**狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`');
   lines.push('');
 
   // 出現記錄
@@ -610,6 +665,67 @@ SORT length(rows) DESC
 `;
 }
 
+// ── MOC（Map of Content）分類索引頁 ─────────────────────────
+
+const MOC_DIR = join(ROOT, 'MOC');
+
+function generateMOCContent(category) {
+  return `---
+tags:
+  - moc
+  - ${category.toLowerCase().replace(/[/\s]/g, '_')}
+---
+
+# MOC - ${category}
+
+> 所有分類為「${category}」的 GitHub Trending 專案
+
+## 專案列表
+
+\`\`\`dataview
+TABLE
+  stars AS "Stars",
+  stars_per_day AS "Stars/天",
+  language AS "語言",
+  status AS "狀態",
+  first_seen AS "收錄日期"
+FROM "Repos"
+WHERE category = "${category}"
+SORT stars DESC
+\`\`\`
+
+## 待回顧
+
+\`\`\`dataview
+LIST
+FROM "Repos"
+WHERE category = "${category}" AND status = "to-review"
+SORT stars DESC
+\`\`\`
+`;
+}
+
+async function generateMOCs() {
+  await mkdir(MOC_DIR, { recursive: true });
+  const categories = [
+    'AI/ML',
+    '開發工具',
+    'Web 應用',
+    'CLI 工具',
+    '資料科學',
+    '安全',
+    '教學資源',
+    '基礎設施',
+    '其他',
+  ];
+  for (const cat of categories) {
+    const fileName = `MOC - ${cat.replace(/\//g, '-')}.md`;
+    const filePath = join(MOC_DIR, fileName);
+    await writeFile(filePath, generateMOCContent(cat), 'utf-8');
+  }
+  console.log(`Updated: ${categories.length} MOC pages`);
+}
+
 // ── Main ────────────────────────────────────────────────────
 
 async function main() {
@@ -681,12 +797,13 @@ async function main() {
 
   // 7. 產生/更新 Dashboard
   const dashboardPath = join(ROOT, 'Dashboard.md');
-  if (!(await fileExists(dashboardPath))) {
-    await writeFile(dashboardPath, generateDashboard(), 'utf-8');
-    console.log('Created: Dashboard.md');
-  }
+  await writeFile(dashboardPath, generateDashboard(), 'utf-8');
+  console.log('Updated: Dashboard.md');
 
-  // 8. 更新 seen repos
+  // 8. 產生 MOC 分類索引頁
+  await generateMOCs();
+
+  // 9. 更新 seen repos
   for (const repo of detailedRepos) {
     const existing = seen[repo.full_name];
     seen[repo.full_name] = {

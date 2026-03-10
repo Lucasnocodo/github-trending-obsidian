@@ -5,42 +5,31 @@ owner: karpathy
 owner_type: User
 language: Go
 license: N/A
-stars: 1585
+stars: 1608
+stars_per_day: 1608
 forks: 111
 created: 2026-03-09
 first_seen: 2026-03-10
-category: "其他"
+category: "Other"
 status: to-review
 tags:
   - github
-  - 其他
+  - other
   - go
 ---
 
 # agenthub
 
+**1.6k** stars · **1.6k** stars/天 · 建立 1 天前 · Go · 未標註授權
+
 > [!summary] 一句話摘要
-> 專為 AI 代理設計的協作平台。
+> GitHub is for humans. AgentHub is for agents. First use case is for autoresearch but it's a lot more general than that. Exploratory project.
 
 ## 專案簡介
 
-AgentHub 是一個為 AI 代理設計的協作平台，旨在促進多個 AI 代理在同一代碼庫上進行合作。這個專案的設計理念是簡化協作過程，去除傳統 Git 的複雜性，讓 AI 代理能夠更自由地進行實驗和貢獻。其獨特之處在於它的去中心化設計，能夠支持多方向的提交。
+GitHub is for humans. AgentHub is for agents. First use case is for autoresearch but it's a lot more general than that. Exploratory project.
 
 ## 為什麼值得關注
-
-> [!tip] 爆紅原因
-> 隨著 AI 代理的興起，開發者對於如何有效地協作和管理 AI 代理的需求越來越高，AgentHub 正好滿足了這一需求。
-
-**1.6k** stars · **1.6k** stars/天 · 建立 1 天前
-
-## 適合誰使用
-
-**目標受眾**：適合對 AI 代理協作和管理有興趣的開發者和研究者。
-
-> [!example] 使用場景
-> - 支持多個 AI 代理在同一專案上進行協作。
-> - 簡化 AI 代理的實驗和貢獻流程。
-> - 促進 AI 研究者之間的知識共享。
 
 ## 技術細節
 
@@ -53,11 +42,10 @@ AgentHub 是一個為 AI 代理設計的協作平台，旨在促進多個 AI 代
 | Issues | 16 |
 | 建立日期 | 2026-03-09 |
 
-### 主要貢獻者
-
-| 貢獻者 | Commits |
-| --- | --- |
-| [@karpathy](https://github.com/karpathy) | 6 |
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@karpathy](https://github.com/karpathy) | 6 |
 
 ## README 摘錄
 
@@ -74,16 +62,23 @@ AgentHub 是一個為 AI 代理設計的協作平台，旨在促進多個 AI 代
 > 
 > ## Architecture
 > 
-> One Go binary (`agenthub-server`), 
+> One Go binary (`agenthub-server`), one SQLite database, one bare git repo on disk.
+> 
+> - **Git layer**: Agents push code via [git bundles](https://git-scm.com/docs/git-bundle), the server validates and unbundles into a bare repo. Agents can fetch any commit, browse the DAG, find children/leaves/lineage, diff between commits.
+> - **Message
 
-## 相關概念
+## 延伸閱讀
 
-[[去中心化協作]] · [[AI 代理]] · [[實驗管理]]
+[GitHub](https://github.com/karpathy/agenthub)
 
 ---
 
-> [!question] 個人筆記
-> _在此寫下你的想法、使用心得..._
+## 個人筆記
+
+> [!question]+ 我的想法
+> _在此寫下你的想法、使用心得、跟其他工具的比較..._
+
+**狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 
 ## 出現記錄
 

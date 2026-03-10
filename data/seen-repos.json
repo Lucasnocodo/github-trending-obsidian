@@ -3,8 +3,8 @@
     "first_seen": "2026-03-10",
     "last_seen": "2026-03-10",
     "times_seen": 1,
-    "stars_first": 21260,
-    "stars_last": 21260
+    "stars_first": 21300,
+    "stars_last": 21300
   },
   "elder-plinius/OBLITERATUS": {
     "first_seen": "2026-03-10",
@@ -17,8 +17,8 @@
     "first_seen": "2026-03-10",
     "last_seen": "2026-03-10",
     "times_seen": 1,
-    "stars_first": 2183,
-    "stars_last": 2183
+    "stars_first": 2193,
+    "stars_last": 2193
   },
   "twostraws/SwiftUI-Agent-Skill": {
     "first_seen": "2026-03-10",
@@ -31,8 +31,8 @@
     "first_seen": "2026-03-10",
     "last_seen": "2026-03-10",
     "times_seen": 1,
-    "stars_first": 1594,
-    "stars_last": 1594
+    "stars_first": 1608,
+    "stars_last": 1608
   },
   "duoan/TorchCode": {
     "first_seen": "2026-03-10",
@@ -45,8 +45,8 @@
     "first_seen": "2026-03-10",
     "last_seen": "2026-03-10",
     "times_seen": 1,
-    "stars_first": 1368,
-    "stars_last": 1368
+    "stars_first": 1370,
+    "stars_last": 1370
   },
   "viperrcrypto/Siftly": {
     "first_seen": "2026-03-10",
@@ -59,84 +59,14 @@
     "first_seen": "2026-03-10",
     "last_seen": "2026-03-10",
     "times_seen": 1,
-    "stars_first": 1321,
-    "stars_last": 1321
+    "stars_first": 1322,
+    "stars_last": 1322
   },
   "cyxzdev/Uncodixfy": {
     "first_seen": "2026-03-10",
     "last_seen": "2026-03-10",
     "times_seen": 1,
-    "stars_first": 1316,
-    "stars_last": 1316
-  },
-  "FreedomIntelligence/OpenClaw-Medical-Skills": {
-    "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 1,
-    "stars_first": 879,
-    "stars_last": 879
-  },
-  "op7418/Claude-to-IM-skill": {
-    "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 1,
-    "stars_first": 821,
-    "stars_last": 821
-  },
-  "Flowseal/tg-ws-proxy": {
-    "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 1,
-    "stars_first": 766,
-    "stars_last": 766
-  },
-  "tanishqkumar/ssd": {
-    "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 1,
-    "stars_first": 748,
-    "stars_last": 748
-  },
-  "imbue-bit/OpenClaw-PwnKit": {
-    "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 1,
-    "stars_first": 691,
-    "stars_last": 691
-  },
-  "hicode002/qualcomm_gbl_exploit_poc": {
-    "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 1,
-    "stars_first": 675,
-    "stars_last": 675
-  },
-  "ParthJadhav/app-store-screenshots": {
-    "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 1,
-    "stars_first": 635,
-    "stars_last": 635
-  },
-  "jshachm/pi-rs": {
-    "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 1,
-    "stars_first": 615,
-    "stars_last": 615
-  },
-  "inspatio/worldfm": {
-    "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 1,
-    "stars_first": 553,
-    "stars_last": 553
-  },
-  "vulhunt-re/vulhunt": {
-    "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 1,
-    "stars_first": 536,
-    "stars_last": 536
+    "stars_first": 1318,
+    "stars_last": 1318
   }
 }

@@ -5,42 +5,31 @@ owner: jackwener
 owner_type: User
 language: Python
 license: Apache-2.0
-stars: 1368
-forks: 119
+stars: 1370
+stars_per_day: 274
+forks: 120
 created: 2026-03-05
 first_seen: 2026-03-10
-category: "CLI 工具"
+category: "Other"
 status: to-review
 tags:
   - github
-  - cli_工具
+  - other
   - python
 ---
 
 # twitter-cli
 
+**1.4k** stars · **274** stars/天 · 建立 5 天前 · Python · Apache-2.0
+
 > [!summary] 一句話摘要
-> twitter-cli 是一個命令列介面的 Twitter/X 客戶端，讓你在終端機中查看時間線和書籤。
+> A CLI for Twitter/X — feed, bookmarks, and user timeline in terminal
 
 ## 專案簡介
 
-twitter-cli 提供了一個終端優先的介面，使用者可以在不需要 API 金鑰的情況下，輕鬆地閱讀 Twitter/X 的時間線、書籤和用戶資料。這個工具特別適合喜歡使用命令列的用戶，讓他們可以快速獲取社交媒體資訊，提升效率。
+A CLI for Twitter/X — feed, bookmarks, and user timeline in terminal
 
 ## 為什麼值得關注
-
-> [!tip] 爆紅原因
-> 隨著社交媒體使用的普及，越來越多的人尋求更高效的方式來管理和查看他們的社交媒體內容。
-
-**1.4k** stars · **274** stars/天 · 建立 5 天前
-
-## 適合誰使用
-
-**目標受眾**：適合喜歡使用命令列工具的社交媒體用戶。
-
-> [!example] 使用場景
-> - 在終端機中快速查看 Twitter/X 的最新消息。
-> - 管理和查看書籤，而不需要進入瀏覽器。
-> - 快速檢索特定用戶的推文和資料。
 
 ## 技術細節
 
@@ -49,16 +38,15 @@ twitter-cli 提供了一個終端優先的介面，使用者可以在不需要 A
 | 語言 | Python |
 | 授權 | Apache-2.0 |
 | Stars | 1.4k |
-| Forks | 119 |
-| Issues | 4 |
+| Forks | 120 |
+| Issues | 5 |
 | 建立日期 | 2026-03-05 |
 
-### 主要貢獻者
-
-| 貢獻者 | Commits |
-| --- | --- |
-| [@jackwener](https://github.com/jackwener) | 67 |
-| [@y0u-0](https://github.com/y0u-0) | 1 |
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@jackwener](https://github.com/jackwener) | 68 |
+> | [@y0u-0](https://github.com/y0u-0) | 1 |
 
 ## README 摘錄
 
@@ -91,16 +79,24 @@ twitter-cli 提供了一個終端優先的介面，使用者可以在不需要 A
 > - Tweet detail: view a tweet and its replies
 > - List timeline: fetch tweets from a Twitter List
 > - User lookup: fetch user profile, tweets, likes, followers, and following
-> - Structured output: export any data as YAML or JSON for 
+> - Structured output: export any data as YAML or JSON for scripting and AI agent integration
+> - Optional scoring filter: rank tweets by engagement weights
+> - Structured output contract: [SCHEMA.md](./SCHEMA.md)
+> 
+> > **AI Agent Tip:** Prefer `--yaml` for structured output unless a strict JSON parser is required. Non-TTY stdout defaults to YAML automatically. Us
 
-## 相關概念
+## 延伸閱讀
 
-[[命令列介面]] · [[社交媒體管理]] · [[API 整合]]
+[GitHub](https://github.com/jackwener/twitter-cli)
 
 ---
 
-> [!question] 個人筆記
-> _在此寫下你的想法、使用心得..._
+## 個人筆記
+
+> [!question]+ 我的想法
+> _在此寫下你的想法、使用心得、跟其他工具的比較..._
+
+**狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 
 ## 出現記錄
 
