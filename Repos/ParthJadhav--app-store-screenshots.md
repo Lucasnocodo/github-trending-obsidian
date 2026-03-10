@@ -7,9 +7,9 @@ language: N/A
 license: N/A
 description: "end to end app store screenshot creation using AI"
 homepage: "https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots"
-stars: 723
-stars_per_day: 241
-forks: 50
+stars: 756
+stars_per_day: 252
+forks: 55
 open_issues: 1
 created: 2026-03-07
 pushed_at: 2026-03-10
@@ -23,98 +23,104 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - 開發工具
-  - agentic_ai
-  - apple
-  - appstore
-  - automate
-  - claude
+  - "category/開發工具"
+  - "lang/other"
+  - easy_install
+  - "topic/agentic_ai"
+  - "topic/apple"
+  - "topic/appstore"
+  - "topic/automate"
+  - "topic/claude"
 aliases:
   - "app-store-screenshots"
   - "ParthJadhav/app-store-screenshots"
-  - "使用 AI 自動生成 iOS 應用的 App Store 截圖，簡化開發流程。"
+  - "利用 AI 自動生成 iOS 應用的 App Store 截圖，簡化設計流程。"
 ---
 
 # app-store-screenshots
 
-**723** stars · **241** stars/天 · 建立 3 天前 · N/A · 未標註授權
+**756** stars · **252** stars/天 · 建立 3 天前 · N/A · 未標註授權
 
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 使用 AI 自動生成 iOS 應用的 App Store 截圖，簡化開發流程。
+> 利用 AI 自動生成 iOS 應用的 App Store 截圖，簡化設計流程。
 
 > [!abstract] 核心創新
-> 這個專案能夠自動生成符合 Apple 要求的高品質 App Store 截圖。
+> 自動生成廣告風格的 App Store 截圖，簡化設計流程。
 
 ## 專案簡介
 
-這個專案提供了一個 AI 驅動的工具，能夠自動生成 iOS 應用的 App Store 截圖。它通過詢問用戶的品牌和風格偏好，然後生成符合 Apple 要求的多種尺寸的截圖。與傳統的截圖生成工具相比，這個專案特別強調設計的廣告風格，而非僅僅是 UI 展示。實際使用中，這個工具能夠節省開發者大量的時間和精力，但需要用戶提供必要的品牌信息和風格指導。對於需要快速生成高品質截圖的開發者來說，這是一個非常實用的工具。
+這個專案是一個 AI 驅動的工具，專門用於生成 iOS 應用的 App Store 截圖。它會根據用戶提供的品牌和功能信息，自動生成符合 Apple 要求的截圖，並且設計風格更像廣告而非單純的 UI 展示。與其他截圖生成工具相比，這個專案的獨特之處在於它強調廣告風格的設計，並且自動化了整個過程，從項目搭建到最終輸出。實際使用中，用戶只需提供基本信息，工具會自動生成所需的截圖，這大大減少了設計時間。整體來看，這是一個非常適合需要快速生成 App Store 截圖的開發者和設計師的工具。
 
 **技術棧**：`Next.js`
 
 ## 重點功能
 
-- 自動生成符合 Apple 要求的多種尺寸截圖。
-- 設計截圖為廣告風格，提升市場吸引力。
-- 支持用戶自定義品牌和風格偏好。
-- 集成 Next.js 項目，便於使用。
-- 提供完整的截圖生成流程，簡化設計工作。
+- 自動生成符合 Apple 要求的 App Store 截圖。
+- 根據用戶提供的品牌和功能信息設計截圖。
+- 生成廣告風格的截圖，提升市場吸引力。
+- 支持多種解析度的截圖輸出。
+- 簡化設計流程，節省時間和精力。
 
 ## 快速開始
 
-1. 使用 npx 安裝工具
+1. 安裝 app-store-screenshots
 ```bash
 npx skills add ParthJadhav/app-store-screenshots
 ```
 2. 啟動截圖生成
 ```bash
-告訴 Claude Code 生成 App Store 截圖。
+告訴 AI 生成 App Store 截圖
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著移動應用開發的增長，開發者對於高品質截圖的需求也在增加。這個工具正好滿足了這一需求，並且其 AI 驅動的特性讓生成過程更加高效和簡單。
+> 隨著 iOS 應用開發的普及，開發者對於快速生成高品質截圖的需求增加。這個專案利用 AI 技術簡化了設計流程，吸引了許多開發者的注意。最近的更新和活躍的社群貢獻也讓這個專案受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成高品質 App Store 截圖的 iOS 應用開發者和市場行銷人員。
+**目標受眾**：需要快速生成 iOS 應用 App Store 截圖的開發者和設計師。
 
 > [!example] 使用場景
-> - 開發者用它來快速生成 App Store 截圖，因為可以節省大量的設計時間。
-> - 市場行銷人員用它來創建高品質的廣告風格截圖，因為能夠吸引更多用戶。
-> - 初創公司用它來為新應用生成必要的市場材料，因為簡化了整個過程。
+> - 開發者 用它來 自動生成 App Store 截圖，因為這樣可以節省設計時間。
+> - 設計師 用它來 創建廣告風格的截圖，因為這樣能提升應用的市場吸引力。
+> - 產品經理 用它來 管理截圖生成流程，因為這樣能確保符合 Apple 的要求。
+
+## 架構分析
+
+專案基於 Next.js 架構，通過用戶輸入生成截圖。資料流是 用戶輸入 → AI 設計 → 截圖生成 → 輸出 PNG 檔案。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠快速生成高品質截圖，節省設計時間。
-> - 設計風格吸引人，提升市場競爭力。
-> - 簡化整個截圖生成流程，易於使用。
+> - 自動化截圖生成，節省時間。
+> - 廣告風格設計，提升市場吸引力。
+> - 支持多種解析度，符合 Apple 要求。
 
 > [!danger] 缺點
-> - 需要用戶提供品牌信息，否則生成效果可能不佳。
-> - 僅限於 iOS 應用，無法擴展到其他平台。
-> - 生成的質量可能受限於用戶的指導。
+> - 需要使用特定模擬器來捕捉截圖。
+> - 可能需要手動調整設計元素。
+> - 依賴於 AI 的設計能力，可能不符合所有需求。
 
 > [!warning] 注意事項
-> - 需要用戶提供品牌和風格信息。
-> - 僅支持 iOS 應用，無法用於其他平台。
-> - 生成的截圖質量依賴於用戶提供的信息。
+> - 需要使用 6.1 吋模擬器來捕捉截圖。
+> - 可能需要手動調整某些設計元素。
+> - 依賴於 AI 的設計能力，可能不符合所有需求。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| AppLaunchpad | AppLaunchpad 更專注於截圖的設計，而本專案強調自動化生成。 |
-| Mockup Builder | Mockup Builder 提供更多自定義選項，而本專案則依賴於 AI 的自動生成。 |
+| Screenshot Generator | 功能較為單一，無法生成廣告風格的截圖。 |
+| Mockup Generator | 專注於 UI 展示，無法自動生成 App Store 截圖。 |
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 50 |
+| Forks | 55 |
 | Open Issues | 1 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-07 |
@@ -214,9 +220,20 @@ npx skills add ParthJadhav/app-store-screenshots
 
 ## 延伸閱讀
 
-相關概念：[[移動應用開發]] · [[市場行銷]] · [[AI 設計工具]]
+相關概念：[[AI 設計工具]] · [[App Store 優化]] · [[截圖生成]]
 
 [GitHub](https://github.com/ParthJadhav/app-store-screenshots) · [官方網站](https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots)
+
+## 相關收錄
+
+> [!note]- 同分類的其他專案
+> ```dataview
+> LIST
+> FROM "Repos"
+> WHERE category = "開發工具" AND file.name != "ParthJadhav--app-store-screenshots"
+> SORT stars DESC
+> LIMIT 8
+> ```
 
 
 ---
