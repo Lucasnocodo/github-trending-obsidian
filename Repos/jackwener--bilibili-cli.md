@@ -23,12 +23,13 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - cli_工具
-  - python
+  - "category/cli_工具"
+  - "lang/python"
+  - easy_install
 aliases:
   - "bilibili-cli"
   - "jackwener/bilibili-cli"
-  - "讓你在終端上輕鬆瀏覽 Bilibili 的影片、用戶和動態。"
+  - "從終端瀏覽 Bilibili 的視頻、用戶和動態。"
 ---
 
 # bilibili-cli
@@ -38,77 +39,70 @@ aliases:
 `v0.5.0` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓你在終端上輕鬆瀏覽 Bilibili 的影片、用戶和動態。
+> 從終端瀏覽 Bilibili 的視頻、用戶和動態。
 
 > [!abstract] 核心創新
-> 自動提取瀏覽器 Cookie 進行登錄，簡化了身份驗證過程。
+> bilibili-cli 提供了從終端高效訪問 Bilibili 的能力，支持多種互動功能。
 
 ## 專案簡介
 
-這個 CLI 工具讓用戶能夠在終端中直接瀏覽 Bilibili 的影片、用戶資料和動態更新。它使用 Python 開發，並整合了多種功能，如影片詳情、字幕提取、用戶資料查詢等，並支援通過關鍵字進行搜索。與其他類似工具相比，bilibili-cli 提供了更豐富的互動功能，如喜歡、投幣等操作，並且支援通過瀏覽器自動提取登錄 Cookie，簡化了身份驗證過程。實際使用中，這個工具能夠快速獲取熱門影片和用戶動態，但對於某些高頻操作可能會受到 Bilibili API 的限制。整體來看，這是一個適合喜愛 Bilibili 的開發者和終端使用者的工具，尤其是對於喜歡命令行操作的用戶來說，值得一試。
+bilibili-cli 是一個命令行工具，讓用戶可以在終端中瀏覽 Bilibili 的視頻、用戶資料和動態。它使用 Python 開發，並支持從終端直接進行視頻搜索和播放，還能提取音頻和管理用戶的收藏。與其他類似的工具相比，bilibili-cli 提供了更豐富的功能，如自動提取瀏覽器 cookies 進行登錄，並且支持結構化輸出，方便進行數據處理。實際使用中，這個工具能提升用戶的操作效率，尤其適合喜歡在終端環境中工作的開發者和技術愛好者。整體來說，這是一個值得一試的工具，特別是對於 Bilibili 的重度使用者。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 支持影片詳情、字幕和 AI 摘要查詢。
-- 用戶資料查詢，包括關注列表和影片列表。
-- 關鍵字搜索功能，快速找到相關影片或用戶。
-- 動態時間線，顯示用戶的最新動態。
-- 支持喜歡、投幣等互動操作。
-- 自動提取瀏覽器 Cookie 進行登錄。
-- 支持 YAML 和 JSON 結構化輸出，方便腳本化操作。
-- 提供穩定的 API 輸出格式，便於開發者使用。
+- 支持視頻詳細信息、字幕和 AI 摘要。
+- 可提取音頻並分割成 ASR 準備的 WAV 片段。
+- 用戶資料查詢，包括視頻列表和關注名單。
+- 支持關鍵字搜索視頻或用戶。
+- 提供動態時間線和熱門視頻排名。
 
 ## 快速開始
 
-1. 使用 uv tool 安裝 bilibili-cli
+1. 安裝 bilibili-cli
 ```bash
 uv tool install bilibili-cli
 ```
-2. 使用 pipx 安裝 bilibili-cli
+2. 檢查登錄狀態
 ```bash
-pipx install bilibili-cli
+bili status
 ```
-3. 從源碼安裝
+3. 搜索視頻
 ```bash
-git clone git@github.com:jackwener/bilibili-cli.git && cd bilibili-cli && uv sync
+bili search <關鍵字>
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 開發者 jackwener 擁有多個成功的 CLI 工具專案，這次推出的 bilibili-cli 切中了許多用戶希望在終端中高效使用 Bilibili 的需求。隨著遠端工作和命令行工具的普及，這個專案正好滿足了這一趨勢，並且在短時間內獲得了不少關注。
+> 作者 jackwener 在開發 CLI 工具方面有豐富經驗，這個專案滿足了許多用戶希望在終端環境中高效使用 Bilibili 的需求。隨著命令行工具的流行，這個專案的實用性和便利性使其在近期受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：對於喜歡使用命令行工具的 Bilibili 用戶和開發者。
+**目標受眾**：對於喜歡在終端環境中操作 Bilibili 的用戶和開發者。
 
 > [!example] 使用場景
-> - 開發者 用它來 瀏覽 Bilibili 影片，因為 可以快速查找和播放影片而不需要打開瀏覽器。
-> - 學生 用它來 查詢用戶資料，因為 可以在終端中快速獲取所需的資訊。
-> - 內容創作者 用它來 獲取熱門影片，因為 可以輕鬆追蹤流行趨勢和靈感來源。
-
-## 架構分析
-
-這是一個基於命令行的工具，使用 Python 開發，通過 API 與 Bilibili 進行交互，並提供用戶友好的命令行介面。用戶輸入命令後，工具會調用相應的 API 獲取數據並顯示結果。
+> - 視頻愛好者 用它來 瀏覽和搜索 Bilibili 上的熱門視頻，因為可以快速找到感興趣的內容。
+> - 開發者 用它來 提取音頻並進行後續處理，因為可以直接從終端操作，提升效率。
+> - 用戶 用它來 管理自己的收藏和觀看歷史，因為可以方便地進行喜好管理。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡化了 Bilibili 的使用流程，適合命令行愛好者。
-> - 提供了豐富的功能，滿足多樣化需求。
-> - 自動化登錄流程，提升使用體驗。
+> - 操作簡單，適合終端用戶。
+> - 功能豐富，支持多種用戶交互。
+> - 自動提取登錄信息，使用方便。
 
 > [!danger] 缺點
+> - 依賴於 Bilibili 的 API，可能會受到限制。
+> - 某些功能需要額外安裝依賴。
 > - 對於不熟悉命令行的用戶來說，學習曲線較陡。
-> - 某些功能可能會受到 Bilibili API 的限制。
-> - 缺乏圖形界面，無法提供直觀的使用體驗。
 
 > [!warning] 注意事項
-> - 某些高頻操作可能會受到 Bilibili API 的限制。
-> - 需要安裝 Python 環境和相應的依賴庫。
-> - 不支持圖形界面，完全依賴命令行操作。
+> - 需要有效的 Bilibili 帳號進行登錄。
+> - 某些功能可能受限於 Bilibili 的 API 政策。
+> - 需要安裝額外的依賴以支持音頻提取功能。
 
 ## 技術細節
 
@@ -127,6 +121,11 @@ git clone git@github.com:jackwener/bilibili-cli.git && cd bilibili-cli && uv syn
 > | [@fkysly](https://github.com/fkysly) | 1 |
 
 **最新版本**：v0.5.0 (2026-03-10)
+
+## 社群與生態
+
+**社群活躍度**：專案活躍，定期更新，社群反饋良好。
+**連結**：[文件](https://pypi.org/project/bilibili-cli/)
 
 ## README 摘錄
 
@@ -213,9 +212,20 @@ git clone git@github.com:jackwener/bilibili-cli.git && cd bilibili-cli && uv syn
 
 ## 延伸閱讀
 
-相關概念：[[命令行介面]] · [[API 整合]] · [[自動化工具]]
+相關概念：[[命令行界面]] · [[視頻平台]] · [[數據提取]] · [[用戶交互]] · [[Python 開發]]
 
 [GitHub](https://github.com/jackwener/bilibili-cli)
+
+## 相關收錄
+
+> [!note]- 同分類的其他專案
+> ```dataview
+> LIST
+> FROM "Repos"
+> WHERE category = "CLI 工具" AND file.name != "jackwener--bilibili-cli"
+> SORT stars DESC
+> LIMIT 8
+> ```
 
 
 ---

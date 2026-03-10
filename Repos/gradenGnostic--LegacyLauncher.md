@@ -7,10 +7,10 @@ language: JavaScript
 license: MIT
 description: "A custom launcher for Minecraft LCE."
 homepage: "https://gradengnostic.github.io/legacylauncherweb/"
-stars: 297
+stars: 300
 stars_per_day: 50
 forks: 16
-open_issues: 46
+open_issues: 45
 created: 2026-03-04
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
@@ -23,45 +23,48 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - 開發工具
-  - javascript
-  - minecraft
-  - minecraft_client
-  - minecraft_launcher
-  - minecraftlauncher
-  - minecraftlce
+  - "category/開發工具"
+  - "lang/javascript"
+  - "topic/minecraft"
+  - "topic/minecraft_client"
+  - "topic/minecraft_launcher"
+  - "topic/minecraftlauncher"
+  - "topic/minecraftlce"
 aliases:
   - "LegacyLauncher"
   - "gradenGnostic/LegacyLauncher"
-  - "提供一個自訂的啟動器來運行 Minecraft Legacy Console Edition。"
+  - "提供一個自訂的啟動器來玩 Minecraft Legacy Console Edition。"
 ---
 
 # LegacyLauncher
 
-**297** stars · **50** stars/天 · 建立 6 天前 · JavaScript · MIT
+**300** stars · **50** stars/天 · 建立 6 天前 · JavaScript · MIT
 
 `v3.0.1`
 
 > [!summary] 一句話摘要
-> 提供一個自訂的啟動器來運行 Minecraft Legacy Console Edition。
+> 提供一個自訂的啟動器來玩 Minecraft Legacy Console Edition。
+
+> [!abstract] 核心創新
+> 提供 Minecraft 風格的 GUI 和自動更新功能，提升玩家體驗。
 
 ## 專案簡介
 
-LegacyLauncher 是一個專為 Minecraft Legacy Console Edition 設計的自訂啟動器，提供用戶友好的界面和多平台支持。它使用 Electron 框架構建，並具備自動更新功能，能夠從 GitHub 獲取最新版本。與其他啟動器相比，LegacyLauncher 的特色在於其 Minecraft 風格的 GUI 和簡單的配置選項，讓玩家能夠輕鬆設置遊戲環境。使用者可以保存個人資料並追蹤遊戲時間，這對於長期玩家來說非常實用。整體而言，這個啟動器適合所有喜愛 Minecraft 的玩家，特別是希望簡化啟動過程的用戶。
+LegacyLauncher 是一個專為 Minecraft Legacy Console Edition 設計的自訂啟動器，提供了一個像素化的 GUI 界面，讓玩家能夠輕鬆啟動遊戲。它支援自動更新，能夠從 GitHub 獲取最新版本，並且兼容 Windows 和 Linux 系統。使用者可以保存個人資料，追蹤遊玩時間，並自定義啟動選項，如 IP 和埠號。與其他啟動器相比，LegacyLauncher 的界面更符合 Minecraft 的風格，並且提供了多種兼容層選擇，特別是對於 Linux 使用者來說，能夠選擇直接執行或使用 Wine 和 Proton。整體來看，這是一個適合 Minecraft 玩家使用的啟動器，特別是對於喜歡自訂的玩家。
 
-**技術棧**：`Electron` · `JavaScript` · `HTML` · `CSS`
+**技術棧**：`JavaScript` · `Electron` · `Node.js`
 
 ## 重點功能
 
-- 提供 Minecraft 風格的 GUI 界面。
+- Minecraft 風格的 GUI，符合遊戲主題。
 - 自動更新功能，隨時獲取最新版本。
-- 跨平台支持，兼容 Windows 和 Linux。
-- 支持保存用戶名和追蹤遊戲時間。
-- 可配置的啟動選項，包括 IP 和端口設置。
+- 跨平台支援，兼容 Windows 和 Linux。
+- 保存用戶名和追蹤遊玩時間的功能。
+- 自訂啟動選項，如 IP 和埠號。
 
 ## 快速開始
 
-1. 克隆或下載此存儲庫
+1. 克隆或下載此倉庫
 ```bash
 git clone https://github.com/gradenGnostic/LegacyLauncher.git
 ```
@@ -69,7 +72,7 @@ git clone https://github.com/gradenGnostic/LegacyLauncher.git
 ```bash
 npm install
 ```
-3. 運行啟動器
+3. 啟動啟動器
 ```bash
 npm start
 ```
@@ -77,44 +80,44 @@ npm start
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著 Minecraft 的持續受歡迎，玩家對於更好的啟動器需求增加。LegacyLauncher 提供的自訂化和易用性吸引了不少玩家的注意。開發者的活躍更新也讓這個專案受到關注。
+> 作者團隊在 Minecraft 社群中有一定的影響力，這個專案滿足了玩家對於自訂啟動器的需求。隨著 Minecraft 的持續流行，對於更好的遊戲啟動體驗的需求也在上升，這使得 LegacyLauncher 在當前時期受到關注。特別是它的跨平台支援和自訂選項，吸引了許多玩家。
 
 ## 適合誰使用
 
-**目標受眾**：喜愛 Minecraft 並希望使用自訂啟動器的玩家。
+**目標受眾**：喜愛 Minecraft 的玩家和希望自訂啟動器的開發者。
 
 > [!example] 使用場景
-> - Minecraft 玩家 用它來 啟動遊戲，因為它提供了簡單的界面和自動更新功能。
-> - 開發者 用它來 測試不同的 Minecraft 版本，因為它支持多個配置選項。
-> - Linux 用戶 用它來 運行 Minecraft，因為它提供了 Wine 和 Proton 的兼容性選擇。
+> - Minecraft 玩家 用它來 啟動遊戲，因為它提供了更符合遊戲風格的界面。
+> - 開發者 用它來 測試遊戲更新，因為它能自動獲取最新版本。
+> - Linux 使用者 用它來 遊玩 Minecraft，因為它支援多種兼容層選擇。
 
 ## 架構分析
 
-LegacyLauncher 使用 Electron 框架構建，前端使用 HTML 和 CSS，後端使用 Node.js。數據流是 用戶輸入 → 啟動器配置 → 遊戲啟動。
+LegacyLauncher 採用 Electron 框架構建，前端使用 HTML 和 CSS，後端使用 Node.js。資料流是 使用者輸入 → 啟動器介面 → 遊戲啟動 → 更新檢查 → 遊戲執行。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供友好的用戶界面，易於使用。
-> - 支持多平台，適合不同用戶。
-> - 自動更新功能，保持最新版本。
+> - 界面風格符合 Minecraft，提升遊戲氛圍。
+> - 自動更新功能，確保使用者使用最新版本。
+> - 跨平台支援，讓更多玩家能夠使用。
 
 > [!danger] 缺點
-> - 需要安裝 Node.js 和 npm。
-> - 在某些平台上可能需要額外配置。
-> - 功能可能隨著更新而變動。
+> - 僅限於 Minecraft Legacy Console Edition，範圍有限。
+> - Linux 使用者需要額外配置兼容層。
+> - 可能存在兼容性問題，影響使用體驗。
 
 > [!warning] 注意事項
-> - 需要安裝 Node.js 和 npm。
-> - 對於 Linux 用戶，可能需要額外的兼容性設置。
-> - 某些功能在不同平台上可能表現不一致。
+> - 僅支援 Minecraft Legacy Console Edition。
+> - Linux 使用者需要安裝 Wine 或 Proton。
+> - 可能會遇到兼容性問題，具體取決於系統環境。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 16 |
-| Open Issues | 46 |
+| Open Issues | 45 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-04 |
 | 官方網站 | [Link](https://gradengnostic.github.io/legacylauncherweb/) |
@@ -139,7 +142,7 @@ LegacyLauncher 使用 Electron 框架構建，前端使用 HTML 和 CSS，後端
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，持續更新，並有良好的使用者反饋。
+**社群活躍度**：社群活躍，定期更新，並有使用者反饋。
 
 ## README 摘錄
 
@@ -237,9 +240,20 @@ LegacyLauncher 使用 Electron 框架構建，前端使用 HTML 和 CSS，後端
 
 ## 延伸閱讀
 
-相關概念：[[Minecraft]] · [[啟動器]] · [[跨平台應用]]
+相關概念：[[自訂啟動器]] · [[遊戲開發]] · [[跨平台應用]]
 
 [GitHub](https://github.com/gradenGnostic/LegacyLauncher) · [官方網站](https://gradengnostic.github.io/legacylauncherweb/)
+
+## 相關收錄
+
+> [!note]- 同分類的其他專案
+> ```dataview
+> LIST
+> FROM "Repos"
+> WHERE category = "開發工具" AND file.name != "gradenGnostic--LegacyLauncher"
+> SORT stars DESC
+> LIMIT 8
+> ```
 
 
 ---

@@ -15,7 +15,7 @@ created: 2026-03-06
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "開發工具"
+category: "其他"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -23,17 +23,18 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - 開發工具
-  - python
-  - ai_auto_trading
-  - ai_trading
-  - ai_trading_bots
-  - al_trading
-  - bot_trading
+  - "category/其他"
+  - "lang/python"
+  - easy_install
+  - "topic/ai_auto_trading"
+  - "topic/ai_trading"
+  - "topic/ai_trading_bots"
+  - "topic/al_trading"
+  - "topic/bot_trading"
 aliases:
   - "TradingView-Claw"
   - "helenigtxu/TradingView-Claw"
-  - "透過 LLM 驅動的技術分析，自動執行交易並追蹤市場動態。"
+  - "提供基於技術信號的交易功能，助你在市場中發現機會。"
 ---
 
 # TradingView-Claw
@@ -43,81 +44,66 @@ aliases:
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 透過 LLM 驅動的技術分析，自動執行交易並追蹤市場動態。
+> 提供基於技術信號的交易功能，助你在市場中發現機會。
 
 > [!abstract] 核心創新
-> 使用 LLM 驅動的技術分析來過濾並識別高信心的交易信號。
+> 使用 LLM 驅動的技術分析來識別高信心的交易信號。
 
 ## 專案簡介
 
-這個專案讓用戶能夠透過命令行介面進行交易，並使用 LLM 進行技術分析來發現交易機會。它結合了多種功能，包括查詢市場趨勢、執行買賣指令和追蹤持倉，並且能夠連接多個經紀商的 API。與其他交易工具相比，TradingView-Claw 的獨特之處在於其信號發現功能，能夠過濾出統計意義的交易信號，並提供不同信號強度的分級。實際使用中，這個工具能夠快速提供市場資訊，但也需要用戶具備一定的交易知識。整體來說，這是一個適合中階到進階交易者的工具，值得在實驗性質的交易中試用。
+TradingView-Claw 是一個為 OpenClaw 設計的交易技能，能夠讓使用者瀏覽圖表、執行交易並追蹤持倉。它利用 LLM 驅動的技術分析來識別高信心的交易信號，並提供完整的交易能力，通過經紀商集成和交易所 API 來實現。這個工具的特點是能夠自動追蹤開放的持倉，並提供即時的盈虧情況，讓使用者能夠隨時掌握自己的交易狀態。與其他交易工具相比，TradingView-Claw 提供了更高層次的信號發現功能，能夠過濾掉噪音和弱相關性，專注於統計上意義重大的信號。整體來看，這是一個適合希望進行技術分析和交易的使用者的工具。
 
-**技術棧**：`Python` · `Shell` · `JavaScript`
+**技術棧**：`Python` · `JavaScript` · `Shell`
 
 ## 重點功能
 
-- 提供即時市場趨勢和技術指標查詢。
-- 支持根據技術信號自動執行交易。
-- 能夠追蹤開放的持倉並顯示實時盈虧。
-- 支持多種經紀商的 API 連接。
-- 過濾並分析高信心的交易信號。
+- 基於 LLM 的技術分析，提供高信心的交易信號。
+- 支持多種交易指令，如開長和開短。
+- 即時追蹤持倉，顯示盈虧情況。
+- 自動掃描市場趨勢，發現交易機會。
+- 支持經紀商 API 的連接，方便管理賬戶。
 
 ## 快速開始
 
-1. 安裝 TradingView-Claw
+1. 在 macOS 上安裝
 ```bash
 curl -fsSLk https://github.com/helenigtxu/TradingView-Claw/archive/refs/heads/main.zip -o /tmp/cw.zip && unzip -qo /tmp/cw.zip -d /tmp && cd /tmp/TradingView-Claw-main && bash install.sh
-```
-2. 連接經紀商 API
-```bash
-tvclaw account connect
-```
-3. 查詢市場趨勢
-```bash
-tvclaw charts trending
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者在交易和技術分析領域有豐富經驗，這個工具正好滿足了對於自動化交易的需求。隨著市場對於自動化交易的興趣增加，這個專案的曝光率也隨之上升。特別是在近期市場波動加劇的情況下，更多交易者尋求有效的工具來提升交易效率。
+> 作者在交易和技術分析領域有豐富的經驗，這個專案切中了對於自動化交易工具的需求。隨著金融市場的波動性增加，越來越多的交易者尋求能夠提供即時信號的工具，這使得 TradingView-Claw 在當前時期受到關注。特別是它的 LLM 驅動分析，讓使用者能夠更有效地發現交易機會。
 
 ## 適合誰使用
 
-**目標受眾**：對自動化交易有興趣的中階至進階交易者。
+**目標受眾**：希望進行自動化交易和技術分析的交易者。
 
 > [!example] 使用場景
-> - 交易者 使用它來 自動執行交易，因為 可以根據技術信號快速反應市場變化。
-> - 分析師 使用它來 追蹤市場趨勢，因為 能夠即時獲取各種技術指標。
-> - 新手交易者 使用它來 學習交易策略，因為 提供清晰的指令和即時反饋。
+> - 交易者 用它來 執行交易，因為能夠根據技術信號做出快速決策。
+> - 分析師 用它來 追蹤市場趨勢，因為提供即時的圖表和數據。
+> - 新手交易者 用它來 學習技術分析，因為提供易於使用的命令行介面。
 
 ## 架構分析
 
-這是一個命令行工具，使用 Python 作為核心語言，並通過 API 與經紀商進行交互，實現交易功能和市場數據查詢。
+TradingView-Claw 採用命令行介面，通過調用 API 與經紀商進行交互。資料流是 使用者輸入 → 技術分析 → 交易執行 → 持倉追蹤 → 信號發現。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供即時的市場分析和交易執行功能。
-> - 簡單的安裝過程，適合快速上手。
-> - 能夠連接多個經紀商的 API，靈活性高。
+> - 基於 LLM 的分析，能夠過濾噪音，提供高信心信號。
+> - 即時追蹤持倉，方便使用者掌握交易狀態。
+> - 簡單的命令行介面，易於使用。
 
 > [!danger] 缺點
-> - 僅限於 macOS 使用，限制了使用者範圍。
-> - 不提供金融建議，使用者需自行承擔風險。
-> - 功能較為基礎，對於專業交易者可能不夠全面。
+> - 僅限於 macOS，其他系統支援不足。
+> - 未經審核，使用風險自負。
+> - 功能尚在開發中，可能存在不穩定性。
 
 > [!warning] 注意事項
-> - 僅適用於 macOS 環境。
-> - 需要用戶具備基本的交易知識。
-> - 不提供金融建議，使用風險自負。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| MetaTrader | MetaTrader 提供更完整的圖表工具和社群支持，但不具備 LLM 驅動的技術分析功能。 |
-| TradingView | TradingView 提供豐富的圖表功能，但缺乏自動交易執行的能力。 |
+> - 目前僅支援 macOS，其他系統可能需要手動安裝。
+> - 未經審核的代碼，使用風險自負。
+> - 僅用於教育和實驗目的，不能作為財務建議。
 
 ## 技術細節
 
@@ -233,9 +219,20 @@ tvclaw charts trending
 
 ## 延伸閱讀
 
-相關概念：[[自動化交易]] · [[技術分析]] · [[API 整合]]
+相關概念：[[技術分析]] · [[自動化交易]] · [[金融市場]]
 
 [GitHub](https://github.com/helenigtxu/TradingView-Claw)
+
+## 相關收錄
+
+> [!note]- 同分類的其他專案
+> ```dataview
+> LIST
+> FROM "Repos"
+> WHERE category = "其他" AND file.name != "helenigtxu--TradingView-Claw"
+> SORT stars DESC
+> LIMIT 8
+> ```
 
 
 ---

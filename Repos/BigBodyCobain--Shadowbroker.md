@@ -7,15 +7,15 @@ language: TypeScript
 license: N/A
 description: "Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. The knowledge is available to all but rarely aggregated in the open, until now."
 homepage: ""
-stars: 1351
-stars_per_day: 270
+stars: 1354
+stars_per_day: 271
 forks: 145
 open_issues: 1
 created: 2026-03-05
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "其他"
+category: "資料科學"
 release_tag: "v0.5.0"
 install_complexity: "medium"
 status: to-review
@@ -23,39 +23,39 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - "category/其他"
+  - "category/資料科學"
   - "lang/typescript"
 aliases:
   - "Shadowbroker"
   - "BigBodyCobain/Shadowbroker"
-  - "提供即時的全球開源情報，追蹤航空、海洋及地震等事件。"
+  - "提供即時的全球開源情報，整合多種資料來源於單一介面。"
 ---
 
 # Shadowbroker
 
-**1.4k** stars · **270** stars/天 · 建立 5 天前 · TypeScript · 未標註授權
+**1.4k** stars · **271** stars/天 · 建立 5 天前 · TypeScript · 未標註授權
 
 `v0.5.0`
 
 > [!summary] 一句話摘要
-> 提供即時的全球開源情報，追蹤航空、海洋及地震等事件。
+> 提供即時的全球開源情報，整合多種資料來源於單一介面。
 
 > [!abstract] 核心創新
-> 提供即時的多領域開源情報，並在統一介面上顯示全球活動。
+> 提供統一的即時開源情報儀表板，整合多種資料來源於單一介面。
 
 ## 專案簡介
 
-這是一個即時的多領域開源情報儀表板，能夠聚合來自多個開源情報來源的數據，並在統一的介面上顯示。它使用 Next.js 和 FastAPI 建構，能夠追蹤飛機、船隻、衛星、地震等事件，並即時更新。與其他情報工具相比，Shadowbroker 提供了更為直觀的地圖介面，讓使用者可以輕鬆地查看各種全球活動。雖然功能強大，但需要 Docker 或 Podman 環境來運行，這對於某些使用者來說可能是一個門檻。整體而言，這是一個非常適合情報分析師和研究者的工具，能夠提供豐富的即時數據。
+這個專案是一個即時的多領域開源情報儀表板，能夠從多個開源情報來源聚合資料，並在統一的介面上呈現。它追蹤飛機、船隻、衛星、地震、衝突區域等，所有資料都即時更新，適合分析師和研究人員使用。使用 Next.js 和 FastAPI 架構，這個平台能夠提供高效的資料視覺化和即時更新功能。與其他情報平台相比，Shadowbroker 提供了更全面的資料來源整合，並且在使用者介面上更為友好。這個工具的效能在即時資料更新上表現優異，但需要 Docker 環境來運行。總體來說，Shadowbroker 是一個非常有潛力的工具，適合需要即時情報的專業人士和愛好者。
 
 **技術棧**：`Next.js` · `MapLibre GL` · `FastAPI` · `Python`
 
 ## 重點功能
 
-- 即時追蹤商業和私人飛機，提供詳細的航班資訊。
-- 海洋交通監控，顯示超過 25,000 艘船隻的即時位置。
-- 地震和災害事件的即時更新，提供重要的地理資訊。
-- 統一的黑色操作地圖介面，方便使用者查看各種數據。
-- 支援多種開源情報來源，提供豐富的數據聚合。
+- 即時追蹤飛機、船隻和衛星。
+- 整合多種開源情報資料來源。
+- 提供高解析度的衛星影像。
+- 支援地震和災難的即時追蹤。
+- 友好的使用者介面，易於操作。
 
 ## 快速開始
 
@@ -67,52 +67,52 @@ git clone https://github.com/BigBodyCobain/Shadowbroker.git
 ```bash
 ./compose.sh up -d
 ```
-3. 訪問儀表板
+3. 打開儀表板
 ```bash
-Open http://localhost:3000
+在瀏覽器中訪問 http://localhost:3000
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 BigBodyCobain 在開源情報領域有一定的影響力，這個專案切合了對即時全球事件追蹤的需求，特別是在地緣政治日益複雜的當下。最近的更新也顯示出活躍的開發進度，吸引了更多使用者的注意。
+> 這個專案的開發者背景強大，結合了多種開源資料來源，滿足了對即時情報的需求。隨著地緣政治事件的頻繁發生，對於即時追蹤和分析的需求上升，使得 Shadowbroker 在短時間內受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：對全球即時事件追蹤有需求的情報分析師和研究者。
+**目標受眾**：需要即時開源情報的分析師和研究人員。
 
 > [!example] 使用場景
-> - 情報分析師用它來追蹤全球的飛機動態，因為它能提供即時的航空數據。
-> - 研究者用它來監控海洋交通，因為它能夠顯示船隻的即時位置和類別。
-> - 災害管理者用它來追蹤地震事件，因為它能即時更新並提供相關資訊。
+> - 情報分析師 用它來 追蹤全球飛機動態，因為它提供即時的飛行資料。
+> - 研究人員 用它來 監控地震活動，因為它整合了多個資料來源於單一介面。
+> - 安全專家 用它來 追蹤海上交通，因為它能夠提供即時的船隻位置資訊。
 
 ## 架構分析
 
-這個專案採用前後端分離架構，前端使用 Next.js 進行開發，後端則使用 FastAPI 提供 API 支援。資料流是使用者請求 → API Server → 數據聚合 → 前端渲染即時資訊。
+前後端分離架構，前端使用 Next.js 進行資料視覺化，後端使用 FastAPI 提供即時資料更新。資料流是 開源資料來源 → FastAPI 服務 → 前端渲染。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 即時更新的全球情報，提供豐富的數據視覺化。
-> - 多領域的數據聚合，方便使用者進行全面分析。
-> - 直觀的地圖介面，易於使用和理解。
+> - 即時更新的多領域情報資料。
+> - 友好的使用者介面，易於操作。
+> - 整合多種資料來源，提供全面的視角。
 
 > [!danger] 缺點
-> - 需要 Docker 或 Podman 環境，對某些使用者來說可能是一個障礙。
-> - 即時數據的準確性依賴於外部數據來源。
-> - 功能雖然強大，但可能需要一定的學習曲線來熟悉。
+> - 需要 Docker 環境來運行，增加了安裝複雜度。
+> - 即時資料更新可能受到網路延遲影響。
+> - 對於某些資料來源的支援可能有限。
 
 > [!warning] 注意事項
-> - 需要 Docker 或 Podman 環境來運行。
-> - 對於不熟悉容器技術的使用者來說，可能有一定的學習曲線。
-> - 即時數據的準確性依賴於外部數據來源的穩定性。
+> - 需要 Docker 環境來運行。
+> - 即時資料更新可能會受到網路延遲影響。
+> - 對於某些資料來源的支援可能有限。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| FlightAware | FlightAware 專注於商業航班，而 Shadowbroker 也支援私人和軍事航班的追蹤。 |
-| MarineTraffic | MarineTraffic 專注於海洋交通，而 Shadowbroker 提供更廣泛的情報來源和即時更新。 |
+| FlightAware | FlightAware 主要專注於商業航班，無法提供如此多元的資料來源整合。 |
+| MarineTraffic | MarineTraffic 主要針對海上交通，缺乏對其他領域的即時追蹤。 |
 
 ## 技術細節
 
@@ -140,6 +140,11 @@ Open http://localhost:3000
 > | [@ttulttul](https://github.com/ttulttul) | 1 |
 
 **最新版本**：v0.5.0 — ShadowBroker v0.5.0 (2026-03-10)
+
+## 社群與生態
+
+**社群活躍度**：專案活躍，持續更新中。
+**連結**：[文件](https://github.com/BigBodyCobain/Shadowbroker)
 
 ## README 摘錄
 
@@ -206,7 +211,7 @@ Open http://localhost:3000
 
 ## 延伸閱讀
 
-相關概念：[[開源情報]] · [[即時數據]] · [[地理資訊系統]] · [[航空監控]] · [[災害管理]]
+相關概念：[[開源情報]] · [[即時資料更新]] · [[地理資訊系統]] · [[資料視覺化]]
 
 [GitHub](https://github.com/BigBodyCobain/Shadowbroker)
 
@@ -216,7 +221,7 @@ Open http://localhost:3000
 > ```dataview
 > LIST
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "BigBodyCobain--Shadowbroker"
+> WHERE category = "資料科學" AND file.name != "BigBodyCobain--Shadowbroker"
 > SORT stars DESC
 > LIMIT 8
 > ```

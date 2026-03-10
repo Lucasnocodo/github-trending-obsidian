@@ -7,7 +7,7 @@ language: TypeScript
 license: MIT
 description: "Open-source AI agent command center for Claude Code agent teams. Built on OpenClaw."
 homepage: "https://clawport.dev"
-stars: 344
+stars: 345
 stars_per_day: 49
 forks: 53
 open_issues: 1
@@ -28,32 +28,35 @@ tags:
 aliases:
   - "clawport-ui"
   - "JohnRiceML/clawport-ui"
-  - "提供一個視覺化的指揮中心來管理和監控 AI agent 團隊。"
+  - "提供一個可視化的指揮中心來管理和監控你的 AI agent 團隊。"
 ---
 
 # clawport-ui
 
-**344** stars · **49** stars/天 · 建立 7 天前 · TypeScript · MIT
+**345** stars · **49** stars/天 · 建立 7 天前 · TypeScript · MIT
 
 > [!summary] 一句話摘要
-> 提供一個視覺化的指揮中心來管理和監控 AI agent 團隊。
+> 提供一個可視化的指揮中心來管理和監控你的 AI agent 團隊。
 
 > [!abstract] 核心創新
-> ClawPort 提供了一個無需額外 API 金鑰的集中管理平台，專為 OpenClaw AI agents 設計。
+> ClawPort 提供了一個集成的可視化平台，讓用戶能夠直接與 AI agent 進行互動和管理。
 
 ## 專案簡介
 
-ClawPort 是一個用於管理和監控 OpenClaw AI agents 的視覺化儀表板。它透過連接本地的 OpenClaw 閘道，提供組織圖、即時聊天、看板、排程監控、成本追蹤等多種功能。這個專案使用 TypeScript 和 JavaScript 開發，並整合了多種即時數據流和視覺化工具，讓用戶能夠輕鬆管理 AI agents 的運行狀態。與其他工具相比，ClawPort 不需要額外的 API 金鑰，所有操作都通過 OpenClaw 閘道進行，這降低了使用門檻。使用者可以即時查看活動日誌和成本分析，這對於需要精確控制和監控的 AI 團隊特別有用。整體來說，ClawPort 是一個成熟且功能強大的工具，適合需要集中管理多個 AI agents 的專案使用。
+ClawPort 是一個集中式的儀表板，讓用戶可以管理、監控並與 OpenClaw 的 AI agent 進行互動。它整合了組織圖、即時聊天、任務看板、排程監控、成本追蹤等功能，所有操作都透過 OpenClaw 網關進行，無需額外的 API 金鑰。這個專案的獨特之處在於其即時日誌流和團隊記憶瀏覽功能，讓用戶能夠快速獲取和分析 AI agent 的行為和狀態。使用 ClawPort 可以有效提升團隊的協作效率，特別是在多個 agent 同時運作的情況下。雖然它依賴於 OpenClaw 的運行，但設置過程相對簡單，適合中小型團隊使用。整體而言，這是一個值得嘗試的工具，尤其是對於希望優化 AI agent 管理的開發者。
 
 **技術棧**：`TypeScript` · `JavaScript` · `CSS`
 
 ## 重點功能
 
-- 組織圖顯示 AI agents 的結構和狀態。
-- 即時聊天功能支援文字、視覺和語音交流。
-- 看板功能提供任務管理和進度追蹤。
-- 排程監控功能顯示任務的週期和健康狀態。
-- 成本追蹤功能分析 token 使用情況和異常。
+- 組織圖顯示 AI agent 的結構和關係。
+- 即時聊天功能支持文本、視覺和語音互動。
+- 任務看板支持拖放式任務管理。
+- 排程功能提供每週熱圖和作業管理。
+- 活動控制台顯示歷史日誌並支持 JSON 擴展。
+- 實時日誌流功能讓用戶能夠即時查看 agent 的運作狀態。
+- 成本追蹤功能提供 token 使用情況和優化建議。
+- 團隊記憶瀏覽器支持 Markdown 渲染，方便記錄和查詢。
 
 ## 快速開始
 
@@ -61,7 +64,7 @@ ClawPort 是一個用於管理和監控 OpenClaw AI agents 的視覺化儀表板
 ```bash
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
-2. 運行 onboarding 向導
+2. 運行 OpenClaw 的 onboarding wizard
 ```bash
 openclaw onboard --install-daemon
 ```
@@ -69,11 +72,11 @@ openclaw onboard --install-daemon
 ```bash
 npm install -g clawport-ui
 ```
-4. 設置 ClawPort
+4. 設置 ClawPort 連接 OpenClaw
 ```bash
 clawport setup
 ```
-5. 啟動儀表板
+5. 啟動 ClawPort 儀表板
 ```bash
 clawport dev
 ```
@@ -81,37 +84,37 @@ clawport dev
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> JohnRiceML 是一位活躍的開源貢獻者，ClawPort 的開發正好切合了對於 AI agent 管理工具的需求。隨著 AI 技術的普及，許多團隊需要一個集中的平台來管理其 AI agents，這促使 ClawPort 的興起。這個專案的推出時間正好在許多團隊尋求更高效的管理工具之際，因此受到廣泛關注。
+> JohnRiceML 是一位活躍的開源貢獻者，專注於 AI 和自動化領域。ClawPort 切合了對於 AI agent 管理的需求，特別是在團隊合作日益增加的情況下。隨著 OpenClaw 的推出，這個工具的需求也隨之上升，讓使用者能夠更有效地管理其 AI agent。這樣的功能在當前的開發環境中顯得尤為重要，尤其是在多任務處理的情境下。
 
 ## 適合誰使用
 
-**目標受眾**：需要集中管理多個 AI agents 的開發團隊和企業。
+**目標受眾**：對於需要管理多個 AI agent 的開發者和團隊。
 
 > [!example] 使用場景
-> - AI 團隊經理用它來監控團隊的 AI agents，因為可以即時查看運行狀態和成本分析。
-> - 開發者用它來管理任務和排程，因為看板功能讓任務分配變得更直觀。
-> - 數據分析師用它來檢視活動日誌，因為可以快速找到問題並進行調整。
+> - [AI 開發者] 用它來 管理多個 AI agent，因為它提供了即時的監控和溝通功能。
+> - [團隊領導] 用它來 追蹤項目進度，因為看板和排程功能能夠清晰顯示任務狀態。
+> - [數據分析師] 用它來 分析 agent 的行為，因為實時日誌和成本追蹤能夠提供深入的見解。
 
 ## 架構分析
 
-ClawPort 採用前後端分離架構，前端使用 TypeScript 和 JavaScript，後端透過 OpenClaw 閘道進行數據交互。用戶操作透過儀表板發送請求至 OpenClaw，並即時更新顯示。
+ClawPort 採用前後端分離架構，前端使用 TypeScript 和 CSS，後端依賴於 OpenClaw 的 API。資料流是用戶輸入 → ClawPort 儀表板 → OpenClaw 網關 → AI agent 互動。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 無需額外 API 金鑰，降低使用門檻。
-> - 提供多種即時監控和管理功能，提升效率。
-> - 開源專案，社群支持活躍。
+> - 集成多種功能於一個平台，提升管理效率。
+> - 即時監控和溝通功能，適合團隊合作。
+> - 無需額外的 API 金鑰，簡化使用流程。
 
 > [!danger] 缺點
-> - 需要依賴 OpenClaw 的運行環境。
-> - 功能仍在開發中，穩定性可能不如成熟工具。
-> - 對於新手來說，初始設置可能有些複雜。
+> - 依賴於 OpenClaw 的運行，限制了使用範圍。
+> - 需要一定的設置時間，對新手來說可能有點挑戰。
+> - 功能仍在持續開發中，可能會有不穩定的情況。
 
 > [!warning] 注意事項
-> - 僅支援與 OpenClaw 兼容的環境。
-> - 需要本地運行 OpenClaw 才能使用。
-> - 目前功能仍在持續開發中，可能會有變動。
+> - 需要運行 OpenClaw 實例。
+> - 功能依賴於 OpenClaw 的穩定性和性能。
+> - 目前僅支持本地運行，未提供雲端解決方案。
 
 ## 技術細節
 
@@ -141,8 +144,8 @@ ClawPort 採用前後端分離架構，前端使用 TypeScript 和 JavaScript，
 
 ## 社群與生態
 
-**社群活躍度**：每週有穩定的更新和社群互動。
-**連結**：[文件](https://clawport.dev)
+**社群活躍度**：社群活躍，定期更新和維護。
+**連結**：[文件](https://clawport.dev/docs)
 
 ## README 摘錄
 
@@ -228,7 +231,7 @@ ClawPort 採用前後端分離架構，前端使用 TypeScript 和 JavaScript，
 
 ## 延伸閱讀
 
-相關概念：[[AI agent 管理]] · [[實時數據流]] · [[任務管理系統]]
+相關概念：[[AI agent 管理]] · [[即時通訊系統]] · [[任務管理工具]] · [[數據可視化]] · [[成本追蹤]]
 
 [GitHub](https://github.com/JohnRiceML/clawport-ui) · [官方網站](https://clawport.dev)
 

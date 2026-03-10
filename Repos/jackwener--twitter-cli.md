@@ -7,7 +7,7 @@ language: Python
 license: Apache-2.0
 description: "A CLI for Twitter/X — feed, bookmarks, and user timeline in terminal"
 homepage: ""
-stars: 1389
+stars: 1392
 stars_per_day: 278
 forks: 123
 open_issues: 5
@@ -23,12 +23,13 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - cli_工具
-  - python
+  - "category/cli_工具"
+  - "lang/python"
+  - easy_install
 aliases:
   - "twitter-cli"
   - "jackwener/twitter-cli"
-  - "在終端機中使用 Twitter/X，無需 API 金鑰即可讀取時間線和書籤。"
+  - "從終端訪問 Twitter/X 的動態、書籤和用戶資料。"
 ---
 
 # twitter-cli
@@ -38,24 +39,24 @@ aliases:
 `easy-install`
 
 > [!summary] 一句話摘要
-> 在終端機中使用 Twitter/X，無需 API 金鑰即可讀取時間線和書籤。
+> 從終端訪問 Twitter/X 的動態、書籤和用戶資料。
 
 > [!abstract] 核心創新
-> twitter-cli 提供無需 API 金鑰的 Twitter 使用方式，讓使用者能在終端機中高效操作。
+> twitter-cli 提供了從終端高效訪問 Twitter 的能力，支持多種互動功能。
 
 ## 專案簡介
 
-twitter-cli 是一個針對 Twitter/X 的命令列介面工具，讓使用者能在終端機中查看時間線、書籤和用戶資料。它使用 Python 開發，並支援 cookie 認證，無需 API 金鑰即可使用。與其他 Twitter 客戶端相比，twitter-cli 提供了更靈活的數據輸出格式，支持 YAML 和 JSON，適合用於腳本和自動化工作。使用者可以輕鬆地管理推文，包括發佈、刪除和標記喜歡，並且具備抗偵測的功能來避免被 Twitter 限制。這個工具的設計適合需要快速訪問 Twitter 資訊的開發者和重度使用者。
+twitter-cli 是一個命令行工具，讓用戶可以在終端中訪問 Twitter/X 的動態、書籤和用戶資料。它支持用戶查詢時間線、書籤和推文詳細信息，並且能夠進行推文的發佈和管理。這個工具與其他 Twitter 客戶端相比，最大的優勢在於不需要 API 金鑰，使用者可以直接使用瀏覽器的 cookies 登錄，這大大降低了使用門檻。實際使用中，這個工具能夠幫助用戶高效地管理 Twitter 賬號，特別適合喜歡在終端操作的開發者。整體來說，這是一個值得一試的工具，尤其是對於 Twitter 的重度使用者。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 無需 API 金鑰即可使用，簡化認證流程。
-- 支持時間線、書籤和用戶資料的查看。
-- 可選擇 YAML 或 JSON 格式輸出數據，便於自動化。
-- 支持推文的發佈、刪除和標記喜歡等操作。
-- 具備抗偵測功能，減少被限制的風險。
+- 支持查詢時間線和書籤。
+- 可以發佈、刪除推文，管理推文互動。
+- 用戶資料查詢，包括推文、喜好和關注者。
+- 支持結構化輸出，方便數據處理。
+- 無需 API 金鑰，使用瀏覽器 cookies 登錄。
 
 ## 快速開始
 
@@ -63,45 +64,45 @@ twitter-cli 是一個針對 Twitter/X 的命令列介面工具，讓使用者能
 ```bash
 uv tool install twitter-cli
 ```
-2. 使用命令查看時間線
+2. 檢查登錄狀態
 ```bash
-twitter-cli timeline
+twitter status
 ```
-3. 發佈新推文
+3. 查詢推文
 ```bash
-twitter-cli post '你的推文內容'
+twitter search <關鍵字>
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 jackwener 具備多個成功的 CLI 工具背景，這個專案滿足了對於無需 API 金鑰的 Twitter 使用需求，並且提供了靈活的數據處理方式。隨著許多使用者尋求更簡便的方式來訪問 Twitter，這個工具的推出正好切合了這個需求。
+> 作者 jackwener 在開發 CLI 工具方面有豐富經驗，這個專案滿足了許多用戶希望在終端環境中高效使用 Twitter 的需求。隨著命令行工具的流行，這個專案的實用性和便利性使其在近期受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：對於需要在終端機中高效使用 Twitter 的開發者和社交媒體專業人士。
+**目標受眾**：對於喜歡在終端環境中操作 Twitter 的用戶和開發者。
 
 > [!example] 使用場景
-> - 開發者 用它來 自動化推文管理，因為可以輕鬆地發佈和刪除推文。
-> - 社交媒體經理 用它來 快速查看時間線，因為能在終端機中高效工作。
-> - 數據分析師 用它來 提取推文數據，因為支持 YAML 和 JSON 格式方便後續分析。
+> - 社交媒體經營者 用它來 管理 Twitter 賬號，因為可以快速發佈和管理推文。
+> - 開發者 用它來 查詢推文和用戶資料，因為可以直接在終端中操作，提升效率。
+> - 用戶 用它來 瀏覽時間線和書籤，因為可以方便地查看感興趣的內容。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡化了 Twitter 使用流程，無需 API 金鑰。
-> - 支持多種數據輸出格式，方便自動化。
-> - 具備抗偵測功能，降低被限制的風險。
+> - 操作簡單，適合終端用戶。
+> - 功能豐富，支持多種用戶交互。
+> - 無需 API 金鑰，使用方便。
 
 > [!danger] 缺點
-> - 仍需依賴 Twitter 的 API 限制。
-> - 某些功能可能不如官方應用完整。
-> - 需要定期更新以適應 Twitter 的變更。
+> - 依賴於 Twitter 的 API，可能會受到限制。
+> - 某些功能需要額外安裝依賴。
+> - 對於不熟悉命令行的用戶來說，學習曲線較陡。
 
 > [!warning] 注意事項
-> - 需要安裝 Python 環境。
-> - 對於高頻使用可能仍會受到 Twitter 限制。
-> - 某些功能可能在未來版本中改變。
+> - 需要有效的 Twitter 帳號進行登錄。
+> - 某些功能可能受限於 Twitter 的 API 政策。
+> - 對於不熟悉命令行的用戶來說，學習曲線較陡。
 
 ## 技術細節
 
@@ -121,7 +122,7 @@ twitter-cli post '你的推文內容'
 
 ## 社群與生態
 
-**社群活躍度**：專案活躍，持續更新中。
+**社群活躍度**：專案活躍，定期更新，社群反饋良好。
 **連結**：[文件](https://pypi.org/project/twitter-cli/)
 
 ## README 摘錄
@@ -195,9 +196,20 @@ twitter-cli post '你的推文內容'
 
 ## 延伸閱讀
 
-相關概念：[[命令列介面]] · [[社交媒體自動化]] · [[數據分析]]
+相關概念：[[命令行界面]] · [[社交媒體]] · [[數據提取]] · [[用戶交互]] · [[Python 開發]]
 
 [GitHub](https://github.com/jackwener/twitter-cli)
+
+## 相關收錄
+
+> [!note]- 同分類的其他專案
+> ```dataview
+> LIST
+> FROM "Repos"
+> WHERE category = "CLI 工具" AND file.name != "jackwener--twitter-cli"
+> SORT stars DESC
+> LIMIT 8
+> ```
 
 
 ---
