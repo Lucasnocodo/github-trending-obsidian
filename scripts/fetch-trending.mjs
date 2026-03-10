@@ -979,6 +979,51 @@ GROUP BY week
 SORT week DESC
 \`\`\`
 
+## 月度趨勢
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"');
+const months = {};
+for (const p of pages) {
+  const fs = p.first_seen?.toString();
+  if (!fs) continue;
+  const m = fs.slice(0, 7);
+  if (!months[m]) months[m] = { count: 0, stars: 0, rated: 0 };
+  months[m].count++;
+  months[m].stars += (p.stars || 0);
+  if (p.my_rating > 0) months[m].rated++;
+}
+const sorted = Object.entries(months).sort((a, b) => b[0].localeCompare(a[0]));
+dv.table(
+  ["月份", "收錄數", "總 Stars", "已評分", "平均 Stars"],
+  sorted.map(([m, d]) => [
+    dv.fileLink(m, false, m),
+    d.count,
+    d.stars.toLocaleString(),
+    d.rated,
+    Math.round(d.stars / d.count).toLocaleString()
+  ])
+);
+\`\`\`
+
+## Easy Install 專案
+
+> [!tip] 立即可試
+> 安裝複雜度為 easy 的專案，一行指令就能開始使用
+
+\`\`\`dataview
+TABLE
+  stars AS "Stars",
+  stars_per_day AS "Stars/天",
+  category AS "分類",
+  language AS "語言",
+  status AS "狀態"
+FROM "Repos"
+WHERE install_complexity = "easy"
+SORT stars DESC
+LIMIT 10
+\`\`\`
+
 ## 所有專案
 
 \`\`\`dataview
@@ -1122,6 +1167,171 @@ SORT date ASC
 `;
 }
 
+// ── 月報 ─────────────────────────────────────────────────────
+
+const MONTHLY_DIR = join(ROOT, 'Monthly');
+
+function getMonthString(dateStr) {
+  const d = new Date(dateStr);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+}
+
+function generateMonthlyReview(monthStr) {
+  // monthStr 格式：2026-03
+  const [year, month] = monthStr.split('-');
+  const monthName = `${year} 年 ${parseInt(month)} 月`;
+  return `---
+tags:
+  - monthly
+month: "${monthStr}"
+---
+
+# 月報 - ${monthName}
+
+## 本月總覽
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  const fs = p.first_seen?.toString();
+  return fs && fs.startsWith("${monthStr}");
+});
+const total = pages.length;
+const totalStars = pages.array().reduce((s, p) => s + (p.stars || 0), 0);
+const reviewed = pages.where(p => p.status && p.status !== "to-review").length;
+const rated = pages.where(p => p.my_rating > 0).length;
+const avgRating = rated > 0 ? (pages.where(p => p.my_rating > 0).array().reduce((s, p) => s + p.my_rating, 0) / rated).toFixed(1) : "N/A";
+
+dv.paragraph(\`本月收錄 **\${total}** 個專案 · 合計 **\${totalStars.toLocaleString()}** stars · 已回顧 **\${reviewed}** · 已評分 **\${rated}**\`);
+if (rated > 0) dv.paragraph(\`平均評分：**\${avgRating}**/5\`);
+\`\`\`
+
+## 本月之星 Top 10
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  const fs = p.first_seen?.toString();
+  return fs && fs.startsWith("${monthStr}");
+}).sort(p => p.stars, 'desc').limit(10);
+
+dv.table(
+  ["專案", "Stars", "Stars/天", "分類", "語言", "評分"],
+  pages.map(p => [
+    p.file.link,
+    p.stars,
+    p.stars_per_day,
+    p.category,
+    p.language,
+    p.my_rating > 0 ? "★".repeat(p.my_rating) + "☆".repeat(5 - p.my_rating) : "-"
+  ])
+);
+\`\`\`
+
+## 分類趨勢
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  const fs = p.first_seen?.toString();
+  return fs && fs.startsWith("${monthStr}");
+});
+
+const cats = {};
+for (const p of pages) {
+  const c = p.category || "其他";
+  if (!cats[c]) cats[c] = { count: 0, stars: 0 };
+  cats[c].count++;
+  cats[c].stars += (p.stars || 0);
+}
+
+const sorted = Object.entries(cats).sort((a, b) => b[1].count - a[1].count);
+dv.table(
+  ["分類", "數量", "總 Stars", "佔比"],
+  sorted.map(([cat, data]) => [
+    cat,
+    data.count,
+    data.stars.toLocaleString(),
+    Math.round((data.count / pages.length) * 100) + "%"
+  ])
+);
+\`\`\`
+
+## 語言分佈
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  const fs = p.first_seen?.toString();
+  return fs && fs.startsWith("${monthStr}");
+});
+
+const langs = {};
+for (const p of pages) {
+  const l = p.language || "Other";
+  langs[l] = (langs[l] || 0) + 1;
+}
+
+const sorted = Object.entries(langs).sort((a, b) => b[1] - a[1]);
+dv.table(
+  ["語言", "數量", "佔比"],
+  sorted.map(([lang, count]) => [
+    lang,
+    count,
+    Math.round((count / pages.length) * 100) + "%"
+  ])
+);
+\`\`\`
+
+## 安裝難度分佈
+
+\`\`\`dataview
+TABLE WITHOUT ID
+  install_complexity AS "難度",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE first_seen AND dateformat(first_seen, "yyyy-MM") = "${monthStr}"
+GROUP BY install_complexity
+\`\`\`
+
+## 本月週報
+
+\`\`\`dataview
+LIST
+FROM "Weekly"
+WHERE contains(file.name, "${year}")
+SORT file.name ASC
+\`\`\`
+
+## 值得關注的發現
+
+\`\`\`dataview
+TABLE
+  stars_per_day AS "Stars/天",
+  stars AS "Stars",
+  category AS "分類",
+  install_complexity AS "安裝"
+FROM "Repos"
+WHERE first_seen AND dateformat(first_seen, "yyyy-MM") = "${monthStr}"
+  AND stars_per_day >= 200
+SORT stars_per_day DESC
+\`\`\`
+
+---
+
+## 月度回顧
+
+> [!question]+ 本月回顧
+> _回顧本月的技術趨勢、值得注意的專案、以及個人收穫_
+
+> [!abstract]+ 趨勢觀察
+> _本月的主要技術趨勢是什麼？哪些領域最活躍？_
+
+> [!todo]+ 下月計劃
+> - [ ] 從本月收錄中選出 3 個深入研究的專案
+> - [ ] 更新所有已試用專案的狀態
+> - [ ] 整理本月發現的新工具和新技術
+
+`;
+}
+
 // ── MOC（Map of Content）分類索引頁 ─────────────────────────
 
 const MOC_DIR = join(ROOT, 'MOC');
@@ -1239,6 +1449,30 @@ cssclasses:
 | [[MOC - CLI 工具]] | 命令列工具 |
 | [[MOC - 安全]] | 安全相關 |
 | [[MOC - 資料科學]] | 資料科學 |
+| [[MOC - 教學資源]] | 教學資源 |
+| [[MOC - 基礎設施]] | 基礎設施 |
+
+## 統計快照
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"');
+const total = pages.length;
+const reviewed = pages.where(p => p.status && p.status !== "to-review").length;
+const tried = pages.where(p => p.status === "tried" || p.status === "integrated").length;
+const rated = pages.where(p => p.my_rating > 0).length;
+const pct = total > 0 ? Math.round((reviewed / total) * 100) : 0;
+
+const cats = {};
+for (const p of pages) {
+  const c = p.category || "其他";
+  cats[c] = (cats[c] || 0) + 1;
+}
+const topCat = Object.entries(cats).sort((a,b) => b[1] - a[1])[0];
+
+dv.paragraph(\`**\${total}** 個專案 · 回顧 **\${reviewed}** (\${pct}%) · 試用 **\${tried}** · 評分 **\${rated}**\`);
+dv.paragraph(\`<progress value="\${reviewed}" max="\${total}" style="width:100%"></progress>\`);
+if (topCat) dv.paragraph(\`最多分類：**\${topCat[0]}** (\${topCat[1]} 個)\`);
+\`\`\`
 
 ## 最新收錄
 
@@ -1279,15 +1513,22 @@ SORT my_rating DESC
 LIMIT 10
 \`\`\`
 
-## 回顧進度
+## 最近的週報
 
-\`\`\`dataviewjs
-const pages = dv.pages('"Repos"');
-const total = pages.length;
-const reviewed = pages.where(p => p.status && p.status !== "to-review").length;
-const pct = total > 0 ? Math.round((reviewed / total) * 100) : 0;
-dv.paragraph(\`\${reviewed}/\${total} 已回顧 (\${pct}%)\`);
-dv.paragraph(\`<progress value="\${reviewed}" max="\${total}" style="width:100%"></progress>\`);
+\`\`\`dataview
+LIST
+FROM "Weekly"
+SORT file.name DESC
+LIMIT 4
+\`\`\`
+
+## 月報
+
+\`\`\`dataview
+LIST
+FROM "Monthly"
+SORT file.name DESC
+LIMIT 3
 \`\`\`
 
 ---
@@ -1457,6 +1698,13 @@ async function main() {
   await writeFile(weeklyPath, generateWeeklyReview(weekStr), 'utf-8');
   console.log(`Updated: Weekly/${weekStr}.md`);
 
+  // 8.6 產生/更新月報
+  await mkdir(MONTHLY_DIR, { recursive: true });
+  const monthStr = getMonthString(today);
+  const monthlyPath = join(MONTHLY_DIR, `${monthStr}.md`);
+  await writeFile(monthlyPath, generateMonthlyReview(monthStr), 'utf-8');
+  console.log(`Updated: Monthly/${monthStr}.md`);
+
   // 9. 更新 seen repos
   for (const repo of detailedRepos) {
     const existing = seen[repo.full_name];
@@ -1513,6 +1761,16 @@ function hasLLMContent(content) {
   return /[\u4e00-\u9fff]/.test(summary);
 }
 
+function isDefaultUserNotes(userNotes) {
+  // 檢查個人筆記區是否還是預設模板（使用者沒有編輯過）
+  // 舊格式的預設是包含「我的想法」和「_在此寫下」
+  // 新格式的預設是包含「快速評估」和「第一印象」
+  const trimmed = userNotes.replace(/## 出現記錄[\s\S]*$/, '').trim();
+  return trimmed.includes('_在此寫下你的想法') ||
+         trimmed.includes('_一句話_') ||
+         trimmed.length < 200; // 很短的內容通常也是預設
+}
+
 function mergeNote(newNote, userNotes, appearances) {
   // 替換新筆記的個人筆記區和出現記錄
   const boundary = newNote.indexOf('\n---\n\n## 個人筆記');
@@ -1520,10 +1778,24 @@ function mergeNote(newNote, userNotes, appearances) {
 
   const autoGenPart = newNote.slice(0, boundary);
 
-  // 重建尾部
+  // 如果使用者沒有編輯過個人筆記區，使用新模板
+  if (isDefaultUserNotes(userNotes)) {
+    // 從新筆記提取個人筆記區模板
+    const newUserPart = newNote.slice(boundary);
+    // 但保留出現記錄
+    if (appearances) {
+      const newAppIdx = newUserPart.indexOf('## 出現記錄');
+      if (newAppIdx > 0) {
+        const templatePart = newUserPart.slice(0, newAppIdx);
+        return autoGenPart + templatePart + '## 出現記錄\n\n' + appearances + '\n';
+      }
+    }
+    return autoGenPart + newUserPart;
+  }
+
+  // 使用者有自訂內容，保留它們
   const lines = [autoGenPart, '', '---', '', userNotes, ''];
   if (appearances) {
-    // 確保出現記錄在最後
     if (!userNotes.includes('## 出現記錄')) {
       lines.push('## 出現記錄', '', appearances, '');
     }
@@ -1580,34 +1852,58 @@ async function refreshRepos(token, failedOnly = false) {
 
     if (repos.length === 0) continue;
 
-    // LLM 翻譯（最多 3 次嘗試，指數退避）
+    // LLM 翻譯：先嘗試整批，失敗則逐個處理
     console.log(`  Running LLM for ${repos.length} repos...`);
-    let llmResult = null;
-    for (let attempt = 0; attempt < 3; attempt++) {
+    const llmMap = {};
+
+    // 第一步：嘗試整批處理
+    let batchSuccess = false;
+    for (let attempt = 0; attempt < 3 && !batchSuccess; attempt++) {
       if (attempt > 0) {
         const delay = 2000 * Math.pow(2, attempt - 1);
         console.log(`  Retry ${attempt}/2, waiting ${delay / 1000}s...`);
         await new Promise(r => setTimeout(r, delay));
       }
       try {
-        llmResult = await callLLMBatch(repos.map(r => r.repo), token);
-        break;
+        const llmResult = await callLLMBatch(repos.map(r => r.repo), token);
+        for (const item of llmResult) {
+          if (item.repo) { llmMap[item.repo] = item; llmMap[item.repo.toLowerCase()] = item; }
+        }
+        // index-based fallback
+        if (llmResult.length === repos.length) {
+          for (let j = 0; j < repos.length; j++) {
+            const key = repos[j].repo.full_name;
+            if (!llmMap[key] && !llmMap[key.toLowerCase()]) llmMap[key] = llmResult[j];
+          }
+        }
+        batchSuccess = true;
       } catch (err) {
-        console.log(`  LLM attempt ${attempt + 1} failed: ${err.message}`);
+        console.log(`  Batch attempt ${attempt + 1} failed: ${err.message}`);
       }
     }
 
-    const llmMap = {};
-    if (llmResult) {
-      for (const item of llmResult) {
-        if (item.repo) { llmMap[item.repo] = item; llmMap[item.repo.toLowerCase()] = item; }
-      }
-      // index-based fallback
-      if (llmResult.length === repos.length) {
-        for (let j = 0; j < repos.length; j++) {
-          const key = repos[j].repo.full_name;
-          if (!llmMap[key] && !llmMap[key.toLowerCase()]) llmMap[key] = llmResult[j];
+    // 第二步：對於批次失敗的 repo，逐個重試
+    if (!batchSuccess) {
+      console.log(`  Falling back to individual LLM calls...`);
+      for (const item of repos) {
+        const key = item.repo.full_name;
+        if (llmMap[key] || llmMap[key.toLowerCase()]) continue; // 已有結果
+        for (let attempt = 0; attempt < 2; attempt++) {
+          if (attempt > 0) await new Promise(r => setTimeout(r, 3000));
+          try {
+            const result = await callLLMBatch([item.repo], token);
+            if (result?.[0]) {
+              llmMap[result[0].repo] = result[0];
+              llmMap[result[0].repo?.toLowerCase()] = result[0];
+              if (!llmMap[key] && !llmMap[key.toLowerCase()]) llmMap[key] = result[0];
+              console.log(`  Individual LLM OK: ${key}`);
+            }
+            break;
+          } catch (err) {
+            console.log(`  Individual LLM failed for ${key}: ${err.message}`);
+          }
         }
+        await new Promise(r => setTimeout(r, 1500));
       }
     }
 
@@ -1625,12 +1921,28 @@ async function refreshRepos(token, failedOnly = false) {
 
       const { userNotes, appearances } = extractUserSection(item.content);
 
-      // 從舊 frontmatter 提取 first_seen
+      // 從舊 frontmatter 提取需要保留的使用者編輯欄位
       const firstSeenMatch = item.content.match(/^first_seen: (.+)$/m);
       const firstSeen = firstSeenMatch ? firstSeenMatch[1] : today;
+      const statusMatch = item.content.match(/^status: (.+)$/m);
+      const savedStatus = statusMatch ? statusMatch[1] : 'to-review';
+      const ratingMatch = item.content.match(/^my_rating: (.+)$/m);
+      const savedRating = ratingMatch ? ratingMatch[1] : '0';
+      const reviewedMatch = item.content.match(/^last_reviewed: (.+)$/m);
+      const savedReviewed = reviewedMatch ? reviewedMatch[1] : today;
+      const weekMatch = item.content.match(/^week: "(.+)"$/m);
+      const savedWeek = weekMatch ? weekMatch[1] : null;
 
       const newNote = generateRepoNote(item.repo, llmInfo, firstSeen);
-      const merged = mergeNote(newNote, userNotes, appearances);
+      // 還原使用者編輯過的欄位（避免 refresh 覆蓋手動更改）
+      let merged = mergeNote(newNote, userNotes, appearances);
+      merged = merged
+        .replace(/^status: to-review$/m, `status: ${savedStatus}`)
+        .replace(/^my_rating: 0$/m, `my_rating: ${savedRating}`)
+        .replace(/^last_reviewed: .+$/m, `last_reviewed: ${savedReviewed}`);
+      if (savedWeek) {
+        merged = merged.replace(/^week: ".+"$/m, `week: "${savedWeek}"`);
+      }
       await writeFile(join(REPOS_DIR, item.file), merged, 'utf-8');
       console.log(`  Refreshed: ${item.file}`);
     }
