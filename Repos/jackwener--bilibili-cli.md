@@ -9,7 +9,7 @@ description: "A CLI for Bilibili — browse videos, users, search, and feeds fro
 homepage: ""
 stars: 321
 stars_per_day: 54
-forks: 25
+forks: 26
 open_issues: 1
 created: 2026-03-04
 pushed_at: 2026-03-10
@@ -25,6 +25,10 @@ tags:
   - github
   - cli_工具
   - python
+aliases:
+  - "bilibili-cli"
+  - "jackwener/bilibili-cli"
+  - "讓你在終端上輕鬆瀏覽 Bilibili 的影片、用戶和動態。"
 ---
 
 # bilibili-cli
@@ -34,42 +38,83 @@ tags:
 `v0.5.0` `easy-install`
 
 > [!summary] 一句話摘要
-> 從終端瀏覽 Bilibili 的視頻和用戶，方便快捷。
+> 讓你在終端上輕鬆瀏覽 Bilibili 的影片、用戶和動態。
+
+> [!abstract] 核心創新
+> 自動提取瀏覽器 Cookie 進行登錄，簡化了身份驗證過程。
 
 ## 專案簡介
 
-bilibili-cli 讓用戶可以在終端中瀏覽 Bilibili 的視頻、用戶和動態。它使用 Python 實現，並且不需要 API 金鑰即可訪問。與其他視頻平台 CLI 工具相比，bilibili-cli 專注於 Bilibili 的特定功能，提供更符合用戶需求的操作體驗。這是一個實用的工具，特別適合喜歡在終端操作的 Bilibili 用戶。
+這個 CLI 工具讓用戶能夠在終端中直接瀏覽 Bilibili 的影片、用戶資料和動態更新。它使用 Python 開發，並整合了多種功能，如影片詳情、字幕提取、用戶資料查詢等，並支援通過關鍵字進行搜索。與其他類似工具相比，bilibili-cli 提供了更豐富的互動功能，如喜歡、投幣等操作，並且支援通過瀏覽器自動提取登錄 Cookie，簡化了身份驗證過程。實際使用中，這個工具能夠快速獲取熱門影片和用戶動態，但對於某些高頻操作可能會受到 Bilibili API 的限制。整體來看，這是一個適合喜愛 Bilibili 的開發者和終端使用者的工具，尤其是對於喜歡命令行操作的用戶來說，值得一試。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 支持視頻詳情、字幕和 AI 摘要。
-- 提供用戶資料和視頻列表查詢功能。
-- 支持關鍵字搜索和動態時間線。
+- 支持影片詳情、字幕和 AI 摘要查詢。
+- 用戶資料查詢，包括關注列表和影片列表。
+- 關鍵字搜索功能，快速找到相關影片或用戶。
+- 動態時間線，顯示用戶的最新動態。
+- 支持喜歡、投幣等互動操作。
+- 自動提取瀏覽器 Cookie 進行登錄。
+- 支持 YAML 和 JSON 結構化輸出，方便腳本化操作。
+- 提供穩定的 API 輸出格式，便於開發者使用。
+
+## 快速開始
+
+1. 使用 uv tool 安裝 bilibili-cli
+```bash
+uv tool install bilibili-cli
+```
+2. 使用 pipx 安裝 bilibili-cli
+```bash
+pipx install bilibili-cli
+```
+3. 從源碼安裝
+```bash
+git clone git@github.com:jackwener/bilibili-cli.git && cd bilibili-cli && uv sync
+```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 開發者對多個社交平台有深入了解，這個專案滿足了對 Bilibili 內容的需求，特別是在開發者社群中。
+> 開發者 jackwener 擁有多個成功的 CLI 工具專案，這次推出的 bilibili-cli 切中了許多用戶希望在終端中高效使用 Bilibili 的需求。隨著遠端工作和命令行工具的普及，這個專案正好滿足了這一趨勢，並且在短時間內獲得了不少關注。
 
 ## 適合誰使用
 
-**目標受眾**：喜歡在終端操作的 Bilibili 用戶。
+**目標受眾**：對於喜歡使用命令行工具的 Bilibili 用戶和開發者。
 
 > [!example] 使用場景
-> - Bilibili 用戶 用它來 瀏覽最新視頻，因為可以快速獲取信息。
-> - 開發者 用它來 自動化視頻下載，因為能夠方便地從終端操作。
-> - 內容創作者 用它來 追蹤熱門視頻，因為能快速了解趨勢。
+> - 開發者 用它來 瀏覽 Bilibili 影片，因為 可以快速查找和播放影片而不需要打開瀏覽器。
+> - 學生 用它來 查詢用戶資料，因為 可以在終端中快速獲取所需的資訊。
+> - 內容創作者 用它來 獲取熱門影片，因為 可以輕鬆追蹤流行趨勢和靈感來源。
+
+## 架構分析
+
+這是一個基於命令行的工具，使用 Python 開發，通過 API 與 Bilibili 進行交互，並提供用戶友好的命令行介面。用戶輸入命令後，工具會調用相應的 API 獲取數據並顯示結果。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 簡化了 Bilibili 的使用流程，適合命令行愛好者。
+> - 提供了豐富的功能，滿足多樣化需求。
+> - 自動化登錄流程，提升使用體驗。
+
+> [!danger] 缺點
+> - 對於不熟悉命令行的用戶來說，學習曲線較陡。
+> - 某些功能可能會受到 Bilibili API 的限制。
+> - 缺乏圖形界面，無法提供直觀的使用體驗。
 
 > [!warning] 注意事項
-> 僅支持 Bilibili 平台。
+> - 某些高頻操作可能會受到 Bilibili API 的限制。
+> - 需要安裝 Python 環境和相應的依賴庫。
+> - 不支持圖形界面，完全依賴命令行操作。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 25 |
+| Forks | 26 |
 | Open Issues | 1 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-04 |
@@ -117,11 +162,58 @@ bilibili-cli 讓用戶可以在終端中瀏覽 Bilibili 的視頻、用戶和動
 > - 🔐 **Smart auth** — auto-extracts cookies from Chrome/Firefox, or QR code login
 > - 📊 **Structured output** — major query commands support `--yaml` and `--json`
 > - 🤖 **Agent-friendly defaults** — non-TTY stdout defaults to YAML; override with `OUTPUT=yaml|json|rich|auto`
-> -
+> - 📦 **Stable envelope** — see [SCHEMA.md](./SCHEMA.md) for `ok/schema_version/data/error`
+> - 🧱 **Normalized payloads** — command-layer output is normalized instead of leaking raw upstream SDK responses
+> 
+> ## Installation
+> 
+> ```bash
+> # Recommended: uv tool (fast, isolated)
+> uv tool install bilibili-cli
+> 
+> # Or: pipx
+> pipx install bilibili-cli
+> 
+> # If you need audio extraction support
+> uv tool install "bilibili-cli[audio]"
+> # or
+> pipx install "bilibili-cli[audio]"
+> ```
+> 
+> Or from source:
+> 
+> ```bash
+> git clone git@github.com:jackwener/bilibili-cli.git
+> cd bilibili-cli
+> uv sync
+> ```
+> 
+> Run tests in the project environment:
+> 
+> ```bash
+> uv sync --extra dev
+> uv run pytest -q
+> uv run ruff check .
+> uv run python -m mypy bili_cli
+> ```
+> 
+> If the project directory was moved and stale virtualenv wrappers remain, rerun:
+> 
+> ```bash
+> uv sync --extra dev --reinstall
+> ```
+> 
+> ## Usage
+> 
+> ```bash
+> # Login & account
+> bili status                    # Check login status
+> bili status --yaml             # Structured auth status
+> bili login                
 
 ## 延伸閱讀
 
-相關概念：[[命令列介面]] · [[視頻下載]] · [[社交媒體]]
+相關概念：[[命令行介面]] · [[API 整合]] · [[自動化工具]]
 
 [GitHub](https://github.com/jackwener/bilibili-cli)
 

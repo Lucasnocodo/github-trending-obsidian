@@ -7,7 +7,7 @@ language: TypeScript
 license: N/A
 description: "Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. The knowledge is available to all but rarely aggregated in the open, until now."
 homepage: ""
-stars: 1336
+stars: 1337
 stars_per_day: 267
 forks: 144
 open_issues: 1
@@ -15,7 +15,7 @@ created: 2026-03-05
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "其他"
+category: "資料科學"
 release_tag: "v0.5.0"
 install_complexity: "medium"
 status: to-review
@@ -23,8 +23,12 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - 其他
+  - 資料科學
   - typescript
+aliases:
+  - "Shadowbroker"
+  - "BigBodyCobain/Shadowbroker"
+  - "提供一個整合多種開源情報的即時地理情報平台，讓使用者能夠追蹤全球活動。"
 ---
 
 # Shadowbroker
@@ -34,32 +38,34 @@ tags:
 `v0.5.0`
 
 > [!summary] 一句話摘要
-> 提供即時的全球開源情報，讓你追蹤飛機、衛星和地震等事件。
+> 提供一個整合多種開源情報的即時地理情報平台，讓使用者能夠追蹤全球活動。
 
 > [!abstract] 核心創新
-> 提供即時的多域開源情報儀表板，將各種數據來源整合於一個介面。
+> 提供即時更新的多領域開源情報儀表板，整合航空、海運、衛星等數據於一體。
 
 ## 專案簡介
 
-它讓使用者在一個統一的介面上即時追蹤全球的多種情報來源，包括飛機、船隻和地震等。使用了 Next.js 和 FastAPI 等技術來構建這個多域的情報儀表板。與其他情報工具相比，ShadowBroker 聚合了更多元的數據來源，並且提供即時更新的功能。這個專案的成熟度高，值得對開源情報有興趣的人試試。
+這個專案透過即時數據聚合，將航空、海運、衛星、地震等資訊呈現在統一的地圖介面上。它使用了 Next.js 和 FastAPI，並透過多個開源情報來源實時更新數據，讓分析師和研究人員能夠快速獲取全球動態。與其他類似工具相比，ShadowBroker 提供了更全面的追蹤功能，包括私人飛機和軍事航班的詳細資訊。使用者可以即時監控各種事件，並獲得高解析度的衛星影像，這在其他工具中較為罕見。雖然這個平台在功能上非常強大，但對於某些特定的數據來源，可能會受到限制。整體來說，這是一個值得嘗試的成熟工具，特別適合需要即時情報的專業人士。
 
-**技術棧**：`Next.js` · `MapLibre GL` · `FastAPI` · `Python`
+**技術棧**：`Next.js` · `FastAPI` · `Python`
 
 ## 重點功能
 
-- 即時追蹤飛機、船隻和衛星等多種數據來源。
-- 提供地震和衝突區域的即時更新。
-- 整合多個開源情報源於一個介面，方便使用者查詢。
+- 即時航空追蹤，包括商業和私人飛機。
+- 海運追蹤，提供超過25,000艘船隻的實時數據。
+- 衛星和地震事件的即時監控。
+- 多種數據來源的整合，提供全面的全球活動視圖。
+- 用戶友好的地圖介面，方便使用者操作和查詢。
 
 ## 快速開始
 
-1. 克隆專案並啟動 Docker 容器
+1. 克隆專案並進入目錄
 ```bash
-git clone https://github.com/BigBodyCobain/Shadowbroker.git
+git clone https://github.com/BigBodyCobain/Shadowbroker.git && cd Shadowbroker
 ```
-2. 進入專案目錄並啟動服務
+2. 啟動 Docker 容器
 ```bash
-cd Shadowbroker && ./compose.sh up -d
+./compose.sh up -d
 ```
 3. 在瀏覽器中打開儀表板
 ```bash
@@ -69,19 +75,37 @@ http://localhost:3000
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 開發者背景強大，專注於即時情報的需求，特別是在當前全球事件頻繁的情況下。其獨特的整合能力吸引了不少使用者。
+> 專案的作者具備強大的技術背景，並且這個平台切中現代社會對於即時情報的需求。隨著全球政治與經濟形勢的變化，對於開源情報的需求日益增加，這使得 ShadowBroker 在當前時期特別受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：對全球情報分析有興趣的研究人員和分析師。
+**目標受眾**：需要即時開源情報的分析師、研究人員和安全專家。
 
 > [!example] 使用場景
-> - [分析師] 用它來 追蹤億萬富翁的私人飛機，因為這能幫助他們了解高端商業活動。
-> - [研究人員] 用它來 監控衛星過境，因為這能提供高解析度的衛星影像。
-> - [安全專家] 用它來 偵測 GPS 干擾區域，因為這對於保護關鍵基礎設施至關重要。
+> - 分析師用它來追蹤富豪的私人飛機，因為可以即時獲得航班資訊。
+> - 研究人員用它來監控衛星運行，因為能夠獲得高解析度影像。
+> - 安全專家用它來檢測GPS干擾區域，因為可以即時獲取相關數據。
+
+## 架構分析
+
+前端使用 Next.js 進行即時數據展示，後端則利用 FastAPI 處理數據聚合和API請求。數據流從多個開源情報來源進入後端，經過處理後呈現在前端介面上。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 提供全面的即時情報追蹤功能。
+> - 用戶介面友好，易於操作。
+> - 多種數據來源整合，信息量大。
+
+> [!danger] 缺點
+> - 需要 Docker 環境，對新手有一定門檻。
+> - 某些數據來源可能不穩定。
+> - 在特定情況下，數據更新速度可能受限。
 
 > [!warning] 注意事項
-> 需要 Docker 或 Podman 環境。
+> - 需要 Docker 或 Podman 環境。
+> - 某些數據來源可能會受到限制。
+> - 對於新手使用者，可能需要時間熟悉介面。
 
 ## 技術細節
 
@@ -101,7 +125,19 @@ http://localhost:3000
 >     "Shell" : 1
 > ```
 
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@anoracleofra-code](https://github.com/anoracleofra-code) | 44 |
+> | [@BigBodyCobain](https://github.com/BigBodyCobain) | 21 |
+> | [@ttulttul](https://github.com/ttulttul) | 1 |
+
 **最新版本**：v0.5.0 — ShadowBroker v0.5.0 (2026-03-10)
+
+## 社群與生態
+
+**社群活躍度**：社群活躍，持續更新和維護。
+**連結**：[文件](https://github.com/BigBodyCobain/Shadowbroker)
 
 ## README 摘錄
 
@@ -151,10 +187,24 @@ http://localhost:3000
 > 
 > ### 🛩️ Aviation Tracking
 > 
+> * **Commercial Flights** — Real-time positions via OpenSky Network (~5,000+ aircraft)
+> * **Private Aircraft** — Light GA, turboprops, bizjets tracked separately
+> * **Private Jets** — High-net-worth individual aircraft with owner identification
+> * **Military Flights** — Tankers, ISR, fighters, transports via adsb.lol military endpoint
+> * **Flight Trail Accumulation** — Persistent breadcrumb trails for all tracked aircraft
+> * **Holding Pattern Detection** — Automatically flags aircraft circling (>300° total turn)
+> * **Aircraft Classification** — Shape-accurate SVG icons: airliners, turboprops, bizjets, helicopters
+> * **Grounded Detection** — Aircraft below 100ft AGL rendered with grey icons
+> 
+> ### 🚢 Maritime Tracking
+> 
+> * **AIS Vessel Stream** — 25,000+ vessels via aisstream.io WebSocket (real-time)
+> * **Ship Classification** — Cargo, tanker, passenger, yacht, military vessel types with color-coded icons
+> * **Carrier Strike Group Tracker** — All 11 active US Navy aircraft carriers with OSINT-estima
 
 ## 延伸閱讀
 
-相關概念：[[開源情報]] · [[即時數據分析]] · [[地理資訊系統]]
+相關概念：[[開源情報 (OSINT)]] · [[即時數據聚合]] · [[地理信息系統 (GIS)]]
 
 [GitHub](https://github.com/BigBodyCobain/Shadowbroker)
 

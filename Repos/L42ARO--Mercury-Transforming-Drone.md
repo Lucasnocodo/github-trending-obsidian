@@ -7,8 +7,8 @@ language: Python
 license: CERN-OHL-S-2.0
 description: "Mercury is a transforming drone anyone can build that can be adapted for many use cases thanks to it's versatile mobility, wide range of sensors, and cargo bay area"
 homepage: ""
-stars: 353
-stars_per_day: 88
+stars: 356
+stars_per_day: 89
 forks: 44
 open_issues: 0
 created: 2026-03-06
@@ -17,7 +17,7 @@ first_seen: 2026-03-10
 week: "2026-W11"
 category: "其他"
 release_tag: ""
-install_complexity: "hard"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
@@ -25,46 +25,85 @@ tags:
   - github
   - 其他
   - python
+aliases:
+  - "Mercury-Transforming-Drone"
+  - "L42ARO/Mercury-Transforming-Drone"
+  - "讓任何人都能組裝一台具多功能的變形無人機，適用於各種用途。"
 ---
 
 # Mercury-Transforming-Drone
 
-**353** stars · **88** stars/天 · 建立 4 天前 · Python · CERN-OHL-S-2.0
-
-`need-GPU/Docker`
+**356** stars · **89** stars/天 · 建立 4 天前 · Python · CERN-OHL-S-2.0
 
 > [!summary] 一句話摘要
-> 一款可變形的無人機，適用於多種用途。
+> 讓任何人都能組裝一台具多功能的變形無人機，適用於各種用途。
+
+> [!abstract] 核心創新
+> 這個專案的創新點在於其可變形設計和多功能感測器的整合，讓無人機能夠適應不同的使用場景。
 
 ## 專案簡介
 
-它讓使用者能夠建造一款可根據需求變形的無人機，並具備多種傳感器和貨艙。這個專案使用 Python 和 C++ 開發，並提供了簡單的變形機制和內部貨艙設計。相比其他無人機專案，Mercury 的設計更具靈活性，適合各種應用場景，如運輸、監控等。這是一個值得探索的專案，特別是對於 DIY 無人機愛好者。
+這個專案提供了一個可組裝的變形無人機，具備多種感測器和載貨空間，適合不同的應用場景。它的核心機制是透過簡單的變形機構和內部載貨艙，讓無人機能夠在不同環境中靈活運行。技術上使用了 Raspberry Pi 和 Ardupilot，搭配 RGB、深度和熱成像攝影機，實現高效的自動駕駛功能。與其他無人機相比，Mercury 的獨特之處在於其可變形設計和廣泛的感測器選擇，讓使用者能夠根據需求進行調整。實際使用中，這款無人機的載重能力為 1 公斤，適合多種應用，但在戶外風速過大時可能會影響穩定性。整體來說，這個專案非常適合對無人機有興趣的開發者和愛好者，值得一試。
 
-**技術棧**：`Python` · `TypeScript` · `JavaScript` · `C++`
+**技術棧**：`Raspberry Pi` · `Ardupilot` · `Python`
 
 ## 重點功能
 
-- 可變形設計，適應不同的任務需求。
-- 內部貨艙可容納 1 公斤的有效載荷。
-- 簡單的變形機制，易於操作。
-- 支持多種傳感器的擴展。
+- 具備 1 公斤的內部載貨艙。
+- 簡單的變形機構，快速轉換模式。
+- 搭載 RGB、深度和熱成像攝影機。
+- 支援 Ardupilot 和 GPS 自動駕駛。
+- 提供完整的組裝 STL 檔案和電路板檔案。
+
+## 快速開始
+
+1. 下載所需的 STL 檔案和電路板檔案
+```bash
+git clone https://github.com/L42ARO/Mercury-Transforming-Drone
+```
+2. 組裝無人機，根據說明書安裝各部件
+```bash
+參考 README 中的組裝指南
+```
+3. 安裝 Raspberry Pi 和相關軟體
+```bash
+依照 README 中的軟體設置步驟進行
+```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者對無人機技術有深入研究，並且這個專案針對多種應用需求提供了解決方案。
+> 專案的創作者 L42ARO 和 Agonat0r 具備豐富的無人機開發經驗，這使得這個專案能夠切中 DIY 無人機愛好者的需求。隨著無人機技術的普及，越來越多的人希望能夠自己組裝和改裝無人機，而 Mercury 提供了這樣的可能性。近年來，無人機在各行各業的應用越來越廣泛，這也促使了該專案的興起。
 
 ## 適合誰使用
 
-**目標受眾**：對無人機設計和建造有興趣的開發者和愛好者。
+**目標受眾**：對無人機組裝和自動化感興趣的開發者和愛好者。
 
 > [!example] 使用場景
-> - [無人機愛好者] 用它來 [建造自定義無人機]，因為它提供了靈活的設計選項。
-> - [工程師] 用它來 [測試不同的傳感器配置]，因為它支持多種傳感器的安裝。
-> - [學生] 用它來 [學習無人機技術]，因為它提供了開源的設計和代碼。
+> - 工程師用它來開發自動化監測系統，因為它的多種感測器可以適應不同環境。
+> - 學生用它來學習無人機組裝和編程，因為這是一個實用的實驗平台。
+> - 業餘愛好者用它來拍攝空中攝影，因為它的變形設計使得拍攝角度更加靈活。
+
+## 架構分析
+
+專案採用前後端分離架構，硬體部分由 Raspberry Pi 控制，並搭配各種感測器進行數據收集和處理。無人機的運行邏輯由 Ardupilot 提供，實現自動駕駛功能。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 可組裝性高，適合 DIY 愛好者。
+> - 多種感測器選擇，適應性強。
+> - 變形設計提升了使用靈活性。
+
+> [!danger] 缺點
+> - 組裝過程需要一定的技術知識。
+> - 在特定環境下可能影響穩定性。
+> - 文件和資源主要以英文提供。
 
 > [!warning] 注意事項
-> 需要一定的硬體知識來組裝和配置。
+> - 在強風環境中穩定性可能受影響。
+> - 需要一定的電子和機械知識來組裝。
+> - 目前僅提供英文文件，對於非英語使用者可能不太友好。
 
 ## 技術細節
 
@@ -125,11 +164,53 @@ tags:
 >   
 >   
 >     
->     <img src="Media/Linea
+>     
+>   
+> 
+>   
+>     RGB + Depth + Thermal Cameras
+>     Ardupilot + GPS
+>   
+>   
+>     
+>     
+>   
+> 
+>   
+>     Wheel + Prop Guard
+>     Mobile App
+>   
+>   
+>     
+>     
+>   
+> 
+> ## Folder Structure
+> - **STL Files:** all the required stl files for the drone assembly
+> - **Autonomy Software:** all the required software for the drone autonomy
+> - **PCB Files:** all the gerber files for the drone PCBs
+> 
+> ## Bill of Materials
+> 
+> | Hardware | Units | Link |
+> |----------|-------|------|
+> | 120N Linear Actuator 1.2" | 2 | [Buy](https://a.co/d/f1gvmVA) |
+> | 8 inch propellers | 4 | [Buy](https://a.co/d/bCJhVNM) |
+> | BLDC Motor (A2812 2812 900KV) | 4 | [Buy](https://a.co/d/0YZLBnR) |
+> | Raspberry Pi 5 | 1 | [Buy](https://a.co/d/0e89eMiw) |
+> | Mobile Data Dongle | 1 | [Buy](https://a.co/d/clkxkL8) |
+> | Lipo Battery (3S 2200mah) | 2 | [Buy](https://a.co/d/04b29lgE) |
+> | Screws (3mm x 10mm) | 10 | ACE Hardware |
+> | Screws (3mm x 30mm) | 20 | ACE Hardware |
+> | Screws (3mm x 50mm) | 10 | ACE Hardware |
+> | CF 30 cm x 30 cm (for frame) | 2 | [Buy](https://a.co/d/0dzbtn5p) |
+> | 8 awg cable | 1 | [Buy](https://www.amazon.com/dp/B07B8N6751) |
+> | T Plug Pairs | 2 | [Buy](https://www.amazon.com/dp/B01C8NWJ78) |
+> | XT60 Male & Female | 1 | [Buy](https://www.amazon.com/dp/B0CMM1BBDQ
 
 ## 延伸閱讀
 
-相關概念：[[無人機技術]] · [[開源硬體]] · [[傳感器應用]]
+相關概念：[[無人機技術]] · [[自動駕駛系統]] · [[感測器整合]]
 
 [GitHub](https://github.com/L42ARO/Mercury-Transforming-Drone)
 

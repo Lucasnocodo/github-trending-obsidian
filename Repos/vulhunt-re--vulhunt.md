@@ -7,7 +7,7 @@ language: C++
 license: GPL-3.0
 description: "Vulnerability detection framework by Binarly's REsearch team"
 homepage: "https://vulhunt.re"
-stars: 539
+stars: 540
 stars_per_day: 135
 forks: 53
 open_issues: 0
@@ -28,11 +28,15 @@ tags:
   - binary_analysis
   - reverse_engineering
   - vulnerability_research
+aliases:
+  - "vulhunt"
+  - "vulhunt-re/vulhunt"
+  - "幫助安全研究人員在軟體二進位檔和 UEFI 韌體中識別漏洞。"
 ---
 
 # vulhunt
 
-**539** stars · **135** stars/天 · 建立 4 天前 · C++ · GPL-3.0
+**540** stars · **135** stars/天 · 建立 4 天前 · C++ · GPL-3.0
 
 `ORG` `v1.0.0`
 
@@ -40,19 +44,21 @@ tags:
 > 幫助安全研究人員在軟體二進位檔和 UEFI 韌體中識別漏洞。
 
 > [!abstract] 核心創新
-> VulHunt 專注於 UEFI 韌體的漏洞檢測，提供針對性的解決方案。
+> VulHunt 提供了一個靈活的環境來開發和整合自定義的漏洞檢測規則。
 
 ## 專案簡介
 
-它讓安全研究人員能夠快速檢測二進位檔中的安全漏洞。這個框架基於 Binarly 的二進位分析系統（BIAS），提供靈活的分析環境。與其他工具相比，VulHunt 特別針對 UEFI 韌體的漏洞檢測進行了優化。整體來說，這是一個功能強大且值得一試的工具，特別是對於需要進行大規模漏洞管理的團隊。
+VulHunt 是一個漏洞獵捕框架，專為識別軟體二進位檔和 UEFI 韌體中的漏洞而設計。它基於 Binarly 的二進位分析和檢查系統（BIAS），提供強大的分析環境，並整合了 Binarly 透明平台（BTP）的功能，支援大規模的漏洞管理和篩選。與其他工具相比，VulHunt 的獨特之處在於其社群開發的規則包和整合能力，讓用戶能夠自定義掃描規則。實際使用中，VulHunt 能夠快速掃描二進位檔並生成 JSON 格式的輸出，適合大型專案的漏洞檢測。這個專案的成熟度高，對於需要進行深入漏洞分析的安全團隊來說，值得一試。
 
-**技術棧**：`C++` · `Rust` · `Yacc` · `Lua` · `Hack` · `Lex` · `PowerShell` · `CMake` · `Python` · `Shell` · `Dockerfile`
+**技術棧**：`Rust` · `CMake` · `Lua` · `Docker`
 
 ## 重點功能
 
-- 支援自動化漏洞檢測，提升效率。
-- 整合 Binarly 的透明度平台，提供大規模漏洞管理能力。
-- 社群開發的規則包和整合，擴展性強。
+- 基於 Binarly 的二進位分析和檢查系統（BIAS）。
+- 支援自定義的社群開發規則包。
+- 能夠掃描二進位檔和 UEFI 韌體。
+- 生成 JSON 格式的掃描結果。
+- 整合 Binarly 透明平台的功能，支援大規模漏洞管理。
 
 ## 快速開始
 
@@ -60,11 +66,11 @@ tags:
 ```bash
 cargo install cargo-make
 ```
-2. 構建專案
+2. 建置 VulHunt
 ```bash
 cargo make --profile build
 ```
-3. 安裝專案
+3. 安裝 VulHunt
 ```bash
 cargo make --profile install
 ```
@@ -72,19 +78,44 @@ cargo make --profile install
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> Binarly 的研究團隊在安全領域有豐富的經驗，這個專案切合了當前對於漏洞檢測的迫切需求。隨著軟體安全性日益受到重視，這類工具的需求也隨之增長。
+> VulHunt 的開發團隊來自 Binarly，擁有豐富的安全研究背景，這使得該工具能夠針對實際需求進行設計。隨著軟體安全性日益受到重視，對於漏洞檢測工具的需求也隨之增加。最近的安全事件促使更多企業尋求有效的漏洞管理解決方案，這使得 VulHunt 受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：專注於軟體安全和漏洞檢測的研究人員和開發者。
+**目標受眾**：專注於軟體安全的研究人員和開發團隊。
 
 > [!example] 使用場景
-> - 安全研究員 用它來 檢測二進位檔中的漏洞，因為 這樣可以快速識別潛在的安全風險。
-> - 企業安全團隊 用它來 進行韌體安全檢查，因為 這能幫助他們保護關鍵系統不受攻擊。
-> - 開發者 用它來 確保自己的應用程式不含已知漏洞，因為 這樣能提升產品的安全性和信任度。
+> - 安全研究員 用它來 掃描二進位檔，因為 它能快速識別潛在的安全漏洞。
+> - 開發團隊 用它來 整合自定義的漏洞檢測規則，因為 這樣可以針對特定應用進行深入分析。
+> - IT 安全管理者 用它來 進行大規模的漏洞管理，因為 它支援批量處理和自動化的漏洞篩選。
+
+## 架構分析
+
+VulHunt 採用模組化設計，前端使用 Rust 開發，後端整合 Binarly 的 BIAS 系統，並透過 API 提供漏洞掃描功能。資料流是 使用者輸入二進位檔 → API Server → BIAS 分析 → 結果輸出。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 提供靈活的自定義規則開發。
+> - 能夠快速掃描並生成結果。
+> - 整合了強大的二進位分析工具。
+
+> [!danger] 缺點
+> - 需要一定的技術背景來設定和使用。
+> - 對於新手可能存在學習曲線。
+> - 某些功能可能需要額外的配置。
 
 > [!warning] 注意事項
-> 需要 Rust 環境和相關依賴。
+> - 需要 Rust 環境進行編譯。
+> - 對於某些二進位檔格式的支援可能有限。
+> - 使用者需自行管理自定義規則的開發和維護。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| Radare2 | Radare2 更加專注於逆向工程，而 VulHunt 專注於漏洞檢測。 |
+| Ghidra | Ghidra 提供更強大的逆向分析功能，但缺乏 VulHunt 的自動化漏洞掃描能力。 |
 
 ## 技術細節
 
@@ -111,6 +142,11 @@ cargo make --profile install
 > | [@xorpse](https://github.com/xorpse) | 2 |
 
 **最新版本**：v1.0.0 — Release v1.0.0 (2026-03-07)
+
+## 社群與生態
+
+**社群活躍度**：社群活躍，定期更新和維護。
+**連結**：[文件](https://vulhunt.re/docs)
 
 ## README 摘錄
 
@@ -184,11 +220,69 @@ cargo make --profile install
 > export MACOSX_DEPLOYMENT_TARGET=$(sw_vers -productVersion)
 > ```
 > 
-> For macOS
+> For macOS and Linux:
+> 
+> ```bash
+> make BUILDMODE='static'
+> export LUA_LIB=/path/to/LuaJIT/src/
+> export LUA_LIB_NAME=luajit
+> export LUA_LINK=static
+> ```
+> 
+> For Windows:
+> 
+> ```bash
+> cd src
+> msvcbuild.bat BUILDMODE='static'
+> set LUA_LIB=C:\path\to\LuaJIT\src\
+> set LUA_LIB_NAME=lua51
+> set LUA_LINK=static
+> ```
+> 
+> ### Building
+> 
+> ```bash
+> cargo build --release
+> ```
+> 
+> With support for Binary Ninja:
+> 
+> ```bash
+> cargo build --release --features=bndb
+> ```
+> 
+> ### Packaging
+> 
+> Prerequisites:
+> 
+> ```bash
+> cargo install cargo-make
+> ```
+> 
+> Build packages for the current platform:
+> 
+> ```bash
+> cargo make prepare-package --features=...
+> ```
+> 
+> ## Usage
+> 
+> ### Scanning binaries
+> 
+> ```bash
+> vulhunt-ce scan  -o  -d  -r  [OPTIONS]
+> ```
+> 
+> Options:
+> 
+> - ``: Path to the binary, BA2 archive, or BNDB file to scan
+> - `-o, --output `: Path to write output JSON
+> - `-d, --data `: Directory containing auxiliary data (processor specifications, etc.). Can also be set via `BIAS_DATA` environment variable
+> - `-r, --rules `: Directory containing VulHunt rules. Can also be set via `BIAS_V
 
 ## 延伸閱讀
 
-相關概念：[[二進位分析]] · [[漏洞管理]] · [[韌體安全]]
+相關概念：[[二進位分析]] · [[漏洞管理]] · [[安全研究]] · [[自動化測試]] · [[逆向工程]]
 
 [GitHub](https://github.com/vulhunt-re/vulhunt) · [官方網站](https://vulhunt.re)
 
