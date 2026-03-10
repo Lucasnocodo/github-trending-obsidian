@@ -15,7 +15,7 @@ created: 2026-03-03
 pushed_at: 2026-03-06
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "資料科學"
+category: "其他"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -23,8 +23,12 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - 資料科學
+  - 其他
   - python
+aliases:
+  - "worldfm"
+  - "inspatio/worldfm"
+  - "生成多視角影像，讓使用者能在不同相機角度下查看同一場景。"
 ---
 
 # worldfm
@@ -34,50 +38,74 @@ tags:
 `ORG`
 
 > [!summary] 一句話摘要
-> 即時生成多視角圖像，讓你輕鬆創建新視點的圖片。
+> 生成多視角影像，讓使用者能在不同相機角度下查看同一場景。
 
 > [!abstract] 核心創新
-> 這個專案專注於即時生成多視角圖像，提供新的視覺效果體驗。
+> WorldFM 提供即時多視角影像生成，能夠在不同相機姿勢下保持場景一致性。
 
 ## 專案簡介
 
-WorldFM 透過多視角擴散模型，根據參考圖像和目標相機姿勢生成新視點的圖像。它使用 PyTorch 和 CUDA 技術來實現高效的圖像生成。與其他圖像生成工具相比，WorldFM 特別針對多視角生成進行優化，提供更真實的視覺效果。這是一個值得一試的工具，特別適合需要多視角圖像的設計師和開發者。
+WorldFM 是一個即時多視角擴散模型，能夠根據參考影像和目標相機姿勢生成新視角的影像。它使用了 PyTorch 和 CUDA 進行深度學習訓練，並整合了多個開源子模組以增強生成效果。與其他影像生成工具相比，WorldFM 特別針對多視角生成進行了優化，能夠在不同相機位置下保持場景的一致性。實際使用中，生成的影像質量依賴於選擇的模型步驟，使用者可以選擇速度或質量之間的平衡。這個專案的成熟度還在發展中，但對於需要即時多視角影像生成的應用場景來說，值得一試。
 
-**技術棧**：`Python` · `Shell`
+**技術棧**：`Python` · `PyTorch` · `CUDA`
 
 ## 重點功能
 
-- 即時生成多視角圖像。
-- 支持根據參考圖像和相機姿勢生成新視點。
-- 使用 PyTorch 和 CUDA 技術進行高效運算。
+- 即時生成多視角影像，提升視覺體驗。
+- 支援不同相機姿勢，保持場景一致性。
+- 整合多個開源子模組以增強生成效果。
+- 提供預訓練模型以便快速開始。
+- 可選擇生成速度與影像質量之間的平衡。
 
 ## 快速開始
 
-1. 創建 Conda 環境
+1. 建立 Conda 環境
 ```bash
 bash setup.sh
 ```
-2. 安裝依賴
+2. 下載預訓練模型
 ```bash
-pip install -r requirements.txt
+python download_ckpts.py
+```
+3. 運行示範場景生成影片
+```bash
+python run_pipeline.py --meta demo/meta.json --output_dir outputs
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 開發者在圖像處理領域有豐富經驗，這個專案滿足了對多視角生成的需求，特別是在虛擬現實和遊戲開發中。
+> 作者 WeihongPan 在計算機視覺領域有深厚背景，這個專案滿足了對於即時影像生成的需求，尤其是在虛擬實境和遊戲開發中。隨著多視角影像需求的增加，這個專案的推出正好切中市場需求，並且提供了開源的解決方案。
 
 ## 適合誰使用
 
-**目標受眾**：需要多視角圖像生成的設計師和開發者。
+**目標受眾**：對於需要即時影像生成的開發者和設計師。
 
 > [!example] 使用場景
-> - 遊戲開發者 用它來 創建多視角的遊戲場景，因為能提供更真實的視覺效果。
-> - 設計師 用它來 生成產品展示圖，因為可以快速獲得不同視角的圖像。
-> - 研究者 用它來 進行視覺效果的實驗，因為能夠生成高質量的多視角圖像。
+> - 遊戲開發者 用它來 生成多視角場景，因為這樣可以提升遊戲的沉浸感。
+> - 虛擬實境設計師 用它來 創建即時視覺效果，因為這能讓使用者在不同角度下體驗同一場景。
+> - 電影製作人 用它來 生成不同鏡頭的視覺效果，因為這樣可以節省拍攝成本和時間。
+
+## 架構分析
+
+專案採用前後端分離架構，前端使用用戶輸入的參考影像和相機姿勢，後端使用 PyTorch 進行影像生成。資料流是 用戶輸入 → API Server → 影像生成模型 → 返回生成影像。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 能夠生成高品質的多視角影像。
+> - 整合多個開源模組，功能強大。
+> - 提供靈活的模型選擇，適應不同需求。
+
+> [!danger] 缺點
+> - 需要較高的計算資源，對硬體要求高。
+> - 安裝和配置過程相對複雜。
+> - 目前使用者社群尚在建立中，資源有限。
 
 > [!warning] 注意事項
-> 需要較高的計算資源。
+> - 需要較高的運算資源，建議使用 GPU。
+> - 不包含內部生成模型，需自行整合開源模型。
+> - 目前僅支援特定格式的輸入資料。
 
 ## 技術細節
 
@@ -93,6 +121,11 @@ pip install -r requirements.txt
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@WeihongPan](https://github.com/WeihongPan) | 5 |
+
+## 社群與生態
+
+**社群活躍度**：專案剛建立不久，社群尚在成長中。
+**連結**：[文件](https://inspatio.github.io/worldfm)
 
 ## README 摘錄
 
@@ -142,11 +175,62 @@ pip install -r requirements.txt
 > 
 > ### Download Pretrained Model
 > 
-> Download model
+> Download model checkpoints from [huggingface](https://huggingface.co/inspatio/worldfm) by running:
+> 
+> ```sh
+> python download_ckpts.py
+> ```
+> 
+> You will get:
+> 
+> ```
+> weights/
+>   ├── vae/
+>   ├── worldfm_1-step.pth  # DMD step=1, faster
+>   └── worldfm_2-step.pth  # DMD step=2, better quality
+> ```
+> 
+> Use `--step 1` or `--step 2` in `run_pipeline.py` to select the corresponding model.
+> 
+> ## Usage
+> 
+> ### Demo
+> 
+> We provide a sample scene with a pre-defined camera trajectory in `demo/`. Run the following command to generate an MP4 video along the trajectory:
+> 
+> ```bash
+> python run_pipeline.py --meta demo/meta.json --output_dir outputs
+> ```
+> 
+> The output video will be saved to `outputs//output.mp4`.
+> 
+> ### Input Format
+> 
+> Prepare a `meta.json` file:
+> 
+> Single pose:
+> 
+> ```json
+> {
+>   "name": "scene_001",
+>   "image": "input.jpg",
+>   "K": [[fx, 0, cx], [0, fy, cy], [0, 0, 1]],
+>   "c2w": [
+>     [r00, r01, r02, tx],
+>     [r10, r11, r12, ty],
+>     [r20, r21, r22, tz],
+>     [  0,   0,   0,  1]
+>   ]
+> }
+> ```
+> 
+> Multiple poses (generates one output per pose):
+> 
+> ```jso
 
 ## 延伸閱讀
 
-相關概念：[[擴散模型]] · [[計算機視覺]] · [[圖像生成]]
+相關概念：[[多視角影像生成]] · [[擴散模型]] · [[深度學習影像處理]]
 
 [GitHub](https://github.com/inspatio/worldfm)
 

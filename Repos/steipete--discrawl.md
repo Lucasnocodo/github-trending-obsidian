@@ -7,7 +7,7 @@ language: Go
 license: MIT
 description: "cli for discord with sqlite backend"
 homepage: ""
-stars: 483
+stars: 484
 stars_per_day: 161
 forks: 40
 open_issues: 10
@@ -25,63 +25,83 @@ tags:
   - github
   - 開發工具
   - go
+aliases:
+  - "discrawl"
+  - "steipete/discrawl"
+  - "將 Discord 數據鏡像到 SQLite，方便本地搜索和查詢。"
 ---
 
 # discrawl
 
-**483** stars · **161** stars/天 · 建立 3 天前 · Go · MIT
+**484** stars · **161** stars/天 · 建立 3 天前 · Go · MIT
 
 `個人專案` `v0.1.0`
 
 > [!summary] 一句話摘要
-> 讓 Discord 伺服器的歷史記錄在本地 SQLite 中可搜尋，無需依賴 Discord 的搜尋功能。
+> 將 Discord 數據鏡像到 SQLite，方便本地搜索和查詢。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於將 Discord 數據本地化，並提供快速的搜索功能。
+> 這個專案提供了一個安全的方式將 Discord 數據鏡像到本地，並支持快速查詢。
 
 ## 專案簡介
 
-它將 Discord 伺服器的數據鏡像到本地 SQLite，讓你可以快速搜尋和查詢伺服器歷史。使用 Go 語言實作，並且支援 FTS5 搜索索引以加速本地文本搜索。與其他 Discord 數據管理工具相比，這個專案專注於本地存儲和查詢，避免了對 Discord API 的依賴。這個專案的功能相當成熟，值得對 Discord 數據有需求的開發者試用。
+這個專案提供了一個 CLI 工具，可以將 Discord 的伺服器數據鏡像到本地的 SQLite 數據庫中，使用者可以在不依賴 Discord 搜索的情況下進行查詢和檢索。它能夠發現所有可訪問的伺服器，並同步頻道、成員和消息歷史，並且支持快速的本地文本搜索。與其他類似工具相比，這個專案強調了數據的本地存儲和查詢能力，避免了用戶令牌的使用，確保數據的安全性。實際使用中，這個工具能夠快速同步和查詢數據，但需要適當的權限設置。對於需要本地數據分析的 Discord 用戶來說，這是一個非常實用的工具。
 
 **技術棧**：`Go`
 
 ## 重點功能
 
-- 將 Discord 伺服器數據鏡像到本地 SQLite。
-- 支援快速的本地文本搜尋，使用 FTS5 索引。
-- 實時更新和定期同步功能，確保數據的即時性。
+- 將 Discord 數據鏡像到本地 SQLite 數據庫。
+- 支持快速的全文搜索，提升查詢效率。
+- 能夠同步頻道、成員和消息歷史。
+- 無需用戶令牌，確保數據安全。
+- 支持多伺服器的數據管理。
 
 ## 快速開始
 
-1. 安裝 Go 語言環境
+1. 設置 Discord bot 令牌
 ```bash
-brew install go
+export DISCORD_BOT_TOKEN='your-bot-token'
 ```
-2. 克隆專案並進入目錄
+2. 初始化 discrawl
 ```bash
-git clone https://github.com/steipete/discrawl.git && cd discrawl
+bin/discrawl init
 ```
-3. 運行專案
+3. 開始數據同步
 ```bash
-go run main.go
+bin/discrawl sync
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者在 Discord 開發社群中活躍，切中開發者對於數據存取的需求，特別是在 Discord API 限制下的使用情境。
+> 隨著 Discord 使用者對數據隱私和本地存儲的關注增加，這個專案提供了一個解決方案，滿足了用戶的需求。作者的背景和對於數據管理的專業知識使得這個工具在社群中受到廣泛關注。
 
 ## 適合誰使用
 
-**目標受眾**：Discord 伺服器的管理者和開發者，特別是需要本地數據存取的使用者。
+**目標受眾**：需要本地存儲和查詢 Discord 數據的開發者和社群管理員。
 
 > [!example] 使用場景
-> - [社群管理員] 用它來 本地儲存和搜尋 Discord 伺服器的歷史記錄，因為這樣可以更快地找到重要訊息。
-> - [開發者] 用它來 分析 Discord 伺服器的互動數據，因為這樣可以獲得更深入的見解而不受 API 限制。
-> - [數據分析師] 用它來 進行本地 SQL 查詢，因為這樣可以靈活地處理和分析數據。
+> - 社群管理員 用它來 本地存儲 Discord 數據，因為這樣可以方便地進行數據分析。
+> - 開發者 用它來 查詢伺服器歷史，因為本地搜索比 Discord 的搜索更快速。
+> - 數據分析師 用它來 分析 Discord 伺服器的互動數據，因為它提供了結構化的數據存儲。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 數據存儲在本地，確保隱私。
+> - 快速的全文搜索功能。
+> - 支持多伺服器的數據管理。
+
+> [!danger] 缺點
+> - 需要適當的 bot 權限設置。
+> - 數據同步可能會受到 API 限制。
+> - 僅支持 Discord 的官方 bot 令牌。
 
 > [!warning] 注意事項
-> 需要有效的 Discord 機器人令牌。
+> - 需要 Discord bot 的適當權限。
+> - 數據同步可能會受到 API 限制。
+> - 僅支持 Discord 的官方 bot 令牌。
 
 ## 技術細節
 
@@ -140,11 +160,53 @@ go run main.go
 > 4. Enable these intents for the bot:
 >    - `Server Members Intent`
 >    - `Message Content Intent`
-> 5. Ensure the bot can at leas
+> 5. Ensure the bot can at least:
+>    - view channels
+>    - read message history
+> 
+> Without those intents/permissions, `sync`, `tail`, member snapshots, or message content archiving will be partial or fail.
+> 
+> ### Bot Token Sources
+> 
+> Token resolution:
+> 
+> 1. OpenClaw config, if `discord.token_source` is not `env`
+> 2. `DISCORD_BOT_TOKEN` or the configured `discord.token_env`
+> 
+> `discrawl` accepts either raw token text or a value prefixed with `Bot `. It normalizes that automatically.
+> 
+> Fastest env-only path:
+> 
+> ```bash
+> export DISCORD_BOT_TOKEN="your-bot-token"
+> bin/discrawl doctor
+> bin/discrawl init
+> ```
+> 
+> If you keep shell secrets in `~/.profile`, add:
+> 
+> ```bash
+> export DISCORD_BOT_TOKEN="your-bot-token"
+> ```
+> 
+> Then reload your shell before running `discrawl`.
+> 
+> If you already use OpenClaw, `discrawl` can reuse the Discord token from `~/.openclaw/openclaw.json` by default.
+> 
+> Default runtime paths:
+> 
+> - config: `~/.discrawl/config.toml`
+> - database: `~/.discrawl/discrawl.db`
+> - cache: `~/.discrawl/cache/`
+> - logs: `~/.discrawl/logs/`
+> 
+> ## Install
+> 
+> 
 
 ## 延伸閱讀
 
-相關概念：[[Discord API]] · [[SQLite]] · [[本地數據存儲]]
+相關概念：[[數據鏡像]] · [[SQLite]] · [[Discord bot]]
 
 [GitHub](https://github.com/steipete/discrawl)
 

@@ -7,7 +7,7 @@ language: TypeScript
 license: MIT
 description: "Fractals is a recursive task orchestrator for agent swarm"
 homepage: "https://tinyagicompany.com"
-stars: 511
+stars: 512
 stars_per_day: 128
 forks: 35
 open_issues: 3
@@ -25,60 +25,72 @@ tags:
   - github
   - 開發工具
   - typescript
+aliases:
+  - "fractals"
+  - "TinyAGI/fractals"
+  - "一個遞歸任務協調器，能夠自動生成和執行子任務。"
 ---
 
 # fractals
 
-**511** stars · **128** stars/天 · 建立 4 天前 · TypeScript · MIT
+**512** stars · **128** stars/天 · 建立 4 天前 · TypeScript · MIT
 
 `ORG`
 
 > [!summary] 一句話摘要
-> 自動將高階任務分解為可執行的子任務，提升任務管理效率。
+> 一個遞歸任務協調器，能夠自動生成和執行子任務。
 
 > [!abstract] 核心創新
-> 提供了一個自動化的任務分解和執行解決方案。
+> 這個專案能夠自動生成和執行子任務，提供遞歸任務協調的能力。
 
 ## 專案簡介
 
-它通過將高階任務轉化為自相似的可執行子任務樹，並在獨立的 git 工作樹中運行每個子任務，實現任務的自動化管理。技術上使用 TypeScript 和 Next.js，並整合了多個代理進行任務執行。與其他任務管理工具相比，它提供了更高的自動化和靈活性，特別適合需要處理複雜任務的開發者。這個專案在功能上非常創新，值得深入探索。
+這個專案是一個遞歸任務協調器，能夠將高層次的任務分解為可執行的子任務，並使用代理群體來執行每個子任務。它的架構包括 Next.js 前端和 Hono 伺服器，通過 HTTP 通信來管理任務和執行。與其他任務管理工具相比，Fractals 特別強調任務的遞歸性和自動化執行，能夠有效處理複雜的任務流。實際使用中，這個工具能夠幫助用戶更好地組織和執行任務，但需要用戶具備一定的技術背景來設置和使用。對於需要處理複雜任務的開發團隊來說，這是一個非常有價值的工具。
 
-**技術棧**：`TypeScript` · `Next.js`
+**技術棧**：`TypeScript` · `JavaScript` · `CSS`
 
 ## 重點功能
 
-- 將高階任務轉化為可執行的子任務樹。
-- 在獨立的 git 工作樹中運行每個子任務。
-- 提供任務執行狀態的即時監控。
-
-## 快速開始
-
-1. 安裝 Fractals
-```bash
-npm install -g fractals
-```
-2. 啟動任務管理界面
-```bash
-fractals start
-```
-3. 輸入高階任務
+- 將高層次任務自動分解為可執行的子任務。
+- 使用代理群體來執行每個子任務，提升效率。
+- 提供任務的視覺化和狀態更新。
+- 支持遞歸性任務管理，適合複雜任務流。
+- 集成 Next.js 前端，便於使用。
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者在自動化和任務管理領域有豐富經驗，這個工具能夠有效解決複雜任務的管理問題。
+> 隨著對於自動化和智能化任務管理的需求增加，這類工具變得越來越重要。這個專案提供了一種創新的方式來處理複雜任務，吸引了對效率有需求的開發者。
 
 ## 適合誰使用
 
-**目標受眾**：需要自動化任務管理的開發團隊和產品經理。
+**目標受眾**：需要高效管理和執行複雜任務的開發團隊。
 
 > [!example] 使用場景
-> - [開發者] 用它來 自動化任務分解，因為可以更有效地管理複雜專案。
-> - [團隊領導] 用它來 監控任務進度，因為能夠清楚了解每個子任務的狀態。
-> - [產品經理] 用它來 確保任務按時完成，因為能夠動態調整任務優先級。
+> - 開發者用它來自動化複雜的任務流，因為能夠有效管理多個子任務。
+> - 項目經理用它來監控任務進度，因為提供了清晰的任務視覺化。
+> - 團隊成員用它來協作執行任務，因為可以在同一環境中運行和測試代碼。
+
+## 架構分析
+
+前端使用 Next.js，後端是 Hono 伺服器，通過 HTTP 通信來管理任務和執行代理。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 能夠有效管理和執行複雜任務流。
+> - 提供清晰的任務視覺化和狀態更新。
+> - 支持遞歸性任務管理，靈活性高。
+
+> [!danger] 缺點
+> - 需要用戶具備一定的技術背景來設置。
+> - 對於簡單任務可能過於複雜。
+> - 依賴於外部代理的性能和穩定性。
 
 > [!warning] 注意事項
-> 需要 Node.js 環境和特定的配置。
+> - 需要用戶具備一定的技術背景來設置。
+> - 對於簡單任務可能過於複雜。
+> - 依賴於外部代理的性能和穩定性。
 
 ## 技術細節
 
@@ -143,11 +155,38 @@ fractals start
 > │  └─────────┘   └──────────┘   └──────────────────────┘  │
 > │                                                         │
 > │  OpenAI (gpt-5.2)            Claude / Codex CLI (spawn) │
-> └────
+> └─────────────────────────────────────────────────────────┘
+> ```
+> 
+> ## Two-Phase Flow
+> 
+> ```
+> Phase 1: PLAN                          Phase 2: EXECUTE
+> ─────────────────                      ──────────────────
+> User enters task                       User confirms plan
+>         │                              User provides workspace path
+>         v                                      │
+>   classify(task)                               v
+>   ┌──atomic──> mark "ready"            git init workspace
+>   │                                    create worktrees
+>   └──composite──> decompose(task)      batch leaf tasks
+>                       │                        │
+>                  [children]                    v
+>                       │                 claude --dangerously-skip-permissions
+>                  plan(child) `)
+> 5. **Execute** -- leaf tasks run via Claude CLI in batches, status updates poll in real-time
+> 
+> ## Batch Strategies
+> 
+> Due to rate limits, leaf tasks execute in batches rather than all at once.
+> 
+> | Strategy | Description | Status |
+> |----------|-------------|--------|
+> | **depth-first** | Complete all leaves under branch 1.x, then 2.x, etc. Tasks within each branch run 
 
 ## 延伸閱讀
 
-相關概念：[[任務分解]] · [[自動化管理]] · [[代理系統]]
+相關概念：[[任務管理]] · [[自動化工具]] · [[代理系統]]
 
 [GitHub](https://github.com/TinyAGI/fractals) · [官方網站](https://tinyagicompany.com)
 

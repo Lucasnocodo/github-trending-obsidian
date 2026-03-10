@@ -25,6 +25,10 @@ tags:
   - github
   - 開發工具
   - python
+aliases:
+  - "nanoAgent"
+  - "sanbuphy/nanoAgent"
+  - "提供一個簡單的 AI agent 實作，能夠執行系統命令和文件操作。"
 ---
 
 # nanoAgent
@@ -34,26 +38,28 @@ tags:
 `easy-install`
 
 > [!summary] 一句話摘要
-> 提供一個簡單的 Python 實作來建立能與系統互動的 AI agent。
+> 提供一個簡單的 AI agent 實作，能夠執行系統命令和文件操作。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個最簡單的 AI agent 實作，能與系統互動。
+> 這個專案提供了一個簡單的 AI agent 實作，能夠執行 bash 命令和文件操作。
 
 ## 專案簡介
 
-這個專案提供了一個簡單的 AI agent 實作，能夠執行 bash 命令、讀取和寫入文件。它利用 OpenAI 的功能調用來實現這些操作，並且安裝和配置相對簡單。與其他複雜的 AI agent 框架相比，這個專案更輕量，適合快速開發和測試。這是一個值得嘗試的工具，特別是對於需要快速實現 AI agent 功能的開發者。
+這個專案是一個簡化的 AI agent 實作，能夠透過 OpenAI 的功能調用來執行 bash 命令和文件操作。它的核心是一個循環，接收用戶的任務，決定使用哪些工具，然後執行這些工具並返回結果。與其他類似工具相比，這個專案的代碼量非常小，約 100 行，並且強調了簡單性和可讀性。實際使用中，這個 agent 能夠快速響應用戶的請求，並且支持多種操作，但對於複雜的任務可能需要額外的擴展。對於需要快速集成簡單任務的開發者來說，這是一個值得一試的工具。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 能夠執行 bash 命令，讀取和寫入文件。
-- 使用 OpenAI 的功能調用來實現操作。
-- 簡單的安裝和配置過程。
+- 執行 bash 命令，支持多種系統操作。
+- 讀取文件內容，方便進行文件操作。
+- 寫入文件，能夠快速生成和修改文件內容。
+- 簡單的代碼結構，易於理解和擴展。
+- 支持多輪交互，能夠持續執行任務。
 
 ## 快速開始
 
-1. 安裝所需的 Python 套件
+1. 安裝依賴
 ```bash
 pip install -r requirements.txt
 ```
@@ -63,25 +69,39 @@ export OPENAI_API_KEY='your-key-here'
 ```
 3. 執行 agent
 ```bash
-python agent.py 'list all python files in current directory'
+python agent.py 'your command here'
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 開發者對於簡化 AI agent 的需求增加，這個專案正好提供了簡單的解決方案；作者的背景使其能夠快速實現功能。
+> 隨著 AI 技術的普及，開發者對於簡單易用的工具需求增加，這個專案正好滿足了這一需求。作者的背景和對簡化 AI agent 的思考使得這個專案在社群中受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速實現 AI agent 功能的開發者和學生。
+**目標受眾**：需要簡單且快速集成的 AI agent 的開發者。
 
 > [!example] 使用場景
-> - [系統管理員] 用它來 [自動化日常任務]，因為 [能夠輕鬆執行命令和操作文件]。
-> - [開發者] 用它來 [快速測試 AI agent 功能]，因為 [安裝和使用都非常簡單]。
-> - [學生] 用它來 [學習 AI agent 的基本概念]，因為 [代碼簡單易懂，適合入門]。
+> - 系統管理員 用它來 自動化日常的系統命令，因為它能夠快速執行 bash 命令。
+> - 開發者 用它來 讀取和寫入文件，因為它簡化了文件操作的流程。
+> - 測試工程師 用它來 測試系統響應，因為它能夠快速執行多個命令並返回結果。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 代碼簡潔，易於理解和擴展。
+> - 能夠快速執行系統命令。
+> - 支持文件操作，方便開發者使用。
+
+> [!danger] 缺點
+> - 功能有限，僅支持基本操作。
+> - 需要依賴 OpenAI 的 API。
+> - 對於複雜任務不夠靈活。
 
 > [!warning] 注意事項
-> 需要 OpenAI API 金鑰才能運行。
+> - 僅支持基本的 bash 命令。
+> - 對於複雜任務可能需要額外擴展。
+> - 依賴於 OpenAI 的 API，可能會有調用限制。
 
 ## 技術細節
 
@@ -166,10 +186,39 @@ python agent.py 'list all python files in current directory'
 > tools = [{"type": "function", "function": {...}}]
 > 
 > # Agent loop
+> for _ in range(max_iterations):
+>     response = client.chat.completions.create(model=model, messages=messages, tools=tools)
+>     if not response.choices[0].message.tool_calls:
+>         return response.choices[0].message.content
+> 
+>     # Execute tool calls
+>     for tool_call in response.choices[0].message.tool_calls:
+>         result = available_functions[tool_call.function.name](**args)
+>         messages.append({"role": "tool", "content": result})
+> ```
+> 
+> The core is just a loop: call model → execute tools → repeat.
+> 
+> Recent hardening keeps the loop running even when a tool call contains malformed JSON arguments or references an unknown tool; those cases are returned to the model as explicit tool errors instead of crashing the agent.
+> 
+> ## capabilities
+> 
+> - `execute_bash`: Run any bash command
+> - `read_file`: Read file contents
+> - `write_file`: Write content to files
+> 
+> ## examples
+> 
+> ```bash
+> # System operations
+> python agent.py "what's my current directory and what files are in it?"
+> 
+> # File operations
+> pytho
 
 ## 延伸閱讀
 
-相關概念：[[AI agent]] · [[功能調用]] · [[自動化]]
+相關概念：[[AI agent]] · [[功能調用]] · [[系統自動化]]
 
 [GitHub](https://github.com/sanbuphy/nanoAgent)
 

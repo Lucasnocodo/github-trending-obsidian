@@ -30,6 +30,10 @@ tags:
   - api
   - china
   - claude
+aliases:
+  - "holysheep-cli"
+  - "holysheep123/holysheep-cli"
+  - "一條命令配置所有 AI 編程工具，簡化設置過程。"
 ---
 
 # holysheep-cli
@@ -42,47 +46,67 @@ tags:
 > 一條命令配置所有 AI 編程工具，簡化設置過程。
 
 > [!abstract] 核心創新
-> 自動配置多個 AI 編程助手，無需手動編輯配置文件。
+> HolySheep CLI 提供了一條命令來自動配置多個 AI 編程工具，顯著簡化了設置過程。
 
 ## 專案簡介
 
-它提供了一個命令行工具，能夠自動配置多個 AI 編程助手，讓用戶無需手動編輯配置文件。使用 JavaScript 開發，並支援多種流行的 AI 工具。與手動配置相比，這個工具大幅簡化了設置過程，對於需要使用多個 AI 工具的開發者來說，這是一個非常實用的選擇。
+HolySheep CLI 是一個命令行工具，能夠自動配置多個流行的 AI 編程助手，讓用戶無需手動編輯配置文件。它支持的工具包括 Claude Code 和 Codex CLI 等，使用者只需執行一條命令即可完成設置。與其他配置工具相比，HolySheep CLI 的優勢在於其簡化的流程和對多種工具的支持，特別適合需要同時使用多個 AI 工具的開發者。這個工具的使用效果顯著提升了配置效率，但需要注意的是，某些工具的設置可能仍需手動處理。整體來看，HolySheep CLI 是一個值得嘗試的工具，特別適合希望簡化設置過程的開發者。
 
 **技術棧**：`JavaScript`
 
 ## 重點功能
 
 - 一條命令自動配置多個 AI 編程助手。
-- 支持 Claude、Codex、Gemini 等流行工具。
-- 簡化配置過程，降低使用門檻。
+- 支持多種流行工具的自動設置。
+- 提供互動式設置流程，簡化用戶操作。
+- 支持保存 API 金鑰以便後續使用。
+- 檢查配置和連接的命令，方便排錯。
 
 ## 快速開始
 
-1. 安裝 HolySheep CLI
+1. 全局安裝 HolySheep CLI
 ```bash
 npm install -g @simonyea/holysheep-cli
 ```
-2. 運行配置命令
+2. 運行設置命令
 ```bash
-hs configure
+hs setup
+```
+3. 輸入 API 金鑰並選擇工具
+```bash
+無需指令
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著 AI 工具的普及，開發者對於簡化配置的需求日益增加。
+> 隨著 AI 工具的普及，開發者對於簡化配置的需求增加。HolySheep CLI 提供的便捷性和多工具支持正好滿足了這一需求，吸引了不少開發者的注意。
 
 ## 適合誰使用
 
-**目標受眾**：需要使用多個 AI 編程工具的開發者和團隊。
+**目標受眾**：希望簡化 AI 工具配置過程的開發者和技術人員。
 
 > [!example] 使用場景
-> - [開發者] 用它來 快速配置多個 AI 編程工具，因為這樣可以節省時間和精力。
-> - [團隊] 用它來 統一配置標準，因為這樣能夠提高團隊的工作效率。
-> - [新手] 用它來 簡化 AI 工具的使用流程，因為這樣可以降低入門門檻。
+> - 開發者 用它來 快速配置 AI 編程工具，因為它簡化了繁瑣的手動設置過程。
+> - 新手 用它來 了解如何使用多個 AI 工具，因為它提供了一個統一的配置方式。
+> - 技術支持人員 用它來 幫助客戶設置 AI 工具，因為它的自動化功能提高了效率。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 簡化了多工具的配置過程。
+> - 提供互動式設置，易於使用。
+> - 支持多種流行的 AI 工具。
+
+> [!danger] 缺點
+> - 某些工具的設置可能仍需手動處理。
+> - 需要安裝 Node.js 和 npm。
+> - 對於不熟悉命令行的用戶，可能需要學習成本。
 
 > [!warning] 注意事項
-> 需要 Node.js 環境。
+> - 某些工具的設置可能仍需手動處理。
+> - 需要安裝 Node.js 和 npm。
+> - 對於不熟悉命令行的用戶，可能需要學習成本。
 
 ## 技術細節
 
@@ -132,11 +156,50 @@ hs configure
 > | [OpenCode](https://github.com/anomalyco/opencode) | `~/.config/opencode/opencode.json` | ✅ Auto |
 > | [OpenClaw](https://openclaw.ai) | `~/.openclaw/openclaw.json` | ✅ Auto |
 > | [Cursor](https://cursor.sh) | GUI (encrypted storage) | ⚠️ Manual |
-> | [Gemini CLI](https://github.com/google-gemini
+> | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | Google protocol only | ❌ Not supported |
+> 
+> ### Quick Start
+> 
+> ```bash
+> npx @simonyea/holysheep-cli@latest setup
+> ```
+> 
+> Or install globally:
+> 
+> ```bash
+> npm install -g @simonyea/holysheep-cli
+> hs setup
+> ```
+> 
+> You'll be prompted for your API Key (`cr_xxx`), then select the tools to configure. Done!
+> 
+> ### OpenClaw Setup
+> 
+> [OpenClaw](https://openclaw.ai) is a powerful AI agent gateway with a web dashboard. After running `hs setup`:
+> 
+> 1. A new terminal window opens running the OpenClaw Gateway
+> 2. Open your browser: **http://127.0.0.1:18789/**
+> 3. Start chatting — no token required
+> 
+> > **Keep the gateway window open** while using OpenClaw. The gateway must be running for the browser UI to work.
+> 
+> To restart the gateway later:
+> ```bash
+> npx openclaw gateway --port 18789
+> ```
+> 
+> ### Commands
+> 
+> | Command | Description |
+> |---------|-------------|
+> | `hs setup` | Configure AI tools interactively |
+> | `hs login` | Save your API Key locally |
+> | `hs doctor` | Check configuration & connectivity |
+> | `hs balance`
 
 ## 延伸閱讀
 
-相關概念：[[命令行工具]] · [[AI 編程助手]] · [[配置管理]]
+相關概念：[[命令行工具]] · [[AI 編程助手]] · [[自動化配置]]
 
 [GitHub](https://github.com/holysheep123/holysheep-cli) · [官方網站](https://shop.holysheep.ai)
 

@@ -7,8 +7,8 @@ language: TypeScript
 license: Apache-2.0
 description: "Typecript version of https://github.com/openai/symphony"
 homepage: ""
-stars: 397
-stars_per_day: 99
+stars: 400
+stars_per_day: 100
 forks: 21
 open_issues: 3
 created: 2026-03-06
@@ -25,39 +25,48 @@ tags:
   - github
   - 開發工具
   - typescript
+aliases:
+  - "symphony-ts"
+  - "OasAIStudio/symphony-ts"
+  - "將項目工作轉化為自動化的 TypeScript 實作，讓開發者能夠高效管理任務。"
 ---
 
 # symphony-ts
 
-**397** stars · **99** stars/天 · 建立 4 天前 · TypeScript · Apache-2.0
+**400** stars · **100** stars/天 · 建立 4 天前 · TypeScript · Apache-2.0
 
 `ORG` `v0.1.7` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓專案工作變成自動化的獨立執行環境，提升開發效率。
+> 將項目工作轉化為自動化的 TypeScript 實作，讓開發者能夠高效管理任務。
 
 > [!abstract] 核心創新
-> 提供了高信任環境下的自動化專案管理解決方案。
+> Symphony-ts 讓項目工作轉化為獨立的、自動化的實作運行。
 
 ## 專案簡介
 
-它透過讀取任務追蹤器的內容，為每個問題創建專屬的工作空間，並在這個邊界內運行編碼代理。技術上使用 Node.js 和 TypeScript，並依賴於有效的工作流程文件。與其他自動化工具相比，它提供了更高的可視性和控制，特別適合需要高信任環境的團隊。這個專案在功能上相當成熟，值得開發者試用。
+這個專案是 OpenAI Symphony 的 TypeScript 實作，旨在將項目任務自動化處理。它通過讀取任務追蹤器中的工作，為每個問題創建專用工作區，並在此範圍內運行代碼代理。與其他類似工具相比，Symphony-ts 特別強調在受信環境中的運行，並需要用戶提供有效的工作流文件和 API 金鑰。實際使用中，這個工具能夠顯著提高開發效率，但需要用戶具備一定的技術背景來設置和使用。對於需要高效任務管理的開發團隊來說，這是一個非常值得嘗試的工具。
 
-**技術棧**：`Node.js` · `TypeScript`
+**技術棧**：`TypeScript` · `JavaScript` · `Node.js`
 
 ## 重點功能
 
-- 自動為每個問題創建獨立的工作空間。
-- 提供運行時的可視性和控制。
-- 支持與任務追蹤器的整合。
+- 自動創建專用工作區以處理每個任務。
+- 支持與任務追蹤器的集成，如 Linear。
+- 運行代碼代理以執行任務。
+- 提供清晰的運行時可視性和控制。
+- 需要用戶提供有效的 WORKFLOW.md 文件。
 
 ## 快速開始
 
-1. 安裝 Symphony-ts
+1. 安裝 symphony-ts
 ```bash
 npm install -g symphony-ts
 ```
-2. 在專案根目錄創建 WORKFLOW.md
+2. 創建 WORKFLOW.md 文件
+```bash
+在你的倉庫中創建 WORKFLOW.md
+```
 3. 設置 LINEAR_API_KEY 環境變數
 ```bash
 export LINEAR_API_KEY=your-linear-token
@@ -70,19 +79,44 @@ symphony ./WORKFLOW.md --acknowledge-high-trust-preview --port 4321
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 開發者背景強大，專案針對開發流程中的自動化需求，切中多數團隊的痛點。
+> 專案的開發者對於自動化和任務管理有深入的理解，並且這個工具正好滿足了許多開發團隊對於提高效率的需求。隨著遠端工作的普及，這樣的工具變得越來越重要。
 
 ## 適合誰使用
 
-**目標受眾**：需要自動化專案管理的開發團隊和產品經理。
+**目標受眾**：需要高效任務管理和自動化開發流程的軟體開發團隊。
 
 > [!example] 使用場景
-> - [開發者] 用它來 自動化專案管理，因為可以專注於編碼而非手動追蹤進度。
-> - [團隊領導] 用它來 提升團隊效率，因為能夠清楚掌握每個任務的進度和狀態。
-> - [產品經理] 用它來 確保任務按時完成，因為能夠即時調整優先級和資源分配。
+> - 開發者用它來自動化任務管理，因為可以提高工作效率。
+> - 項目經理用它來監控任務進度，因為提供了清晰的工作區和可視化管理。
+> - 團隊成員用它來協作開發，因為可以在同一環境中運行和測試代碼。
+
+## 架構分析
+
+前端使用 Next.js，後端則是 Hono 伺服器，通過 HTTP 通信來處理任務和執行代碼代理。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 自動化任務管理，顯著提高開發效率。
+> - 支持與多種任務追蹤器集成，靈活性高。
+> - 提供清晰的工作區和可視化管理。
+
+> [!danger] 缺點
+> - 需要用戶具備一定的技術背景來設置。
+> - 僅在受信環境中運行，安全性需考量。
+> - 依賴於外部 API，可能會受到限制。
 
 > [!warning] 注意事項
-> 僅支援 Node.js 22 以上版本。
+> - 需要用戶提供有效的 WORKFLOW.md 文件。
+> - 僅在受信環境中運行，安全性需考量。
+> - 依賴於外部任務追蹤器的 API 金鑰。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| OpenAI Symphony | 這是原始的實作，功能相似但不支持 TypeScript。 |
+| Jira Automation | Jira 更加專注於項目管理，而 Symphony-ts 專注於任務自動化。 |
 
 ## 技術細節
 
@@ -108,6 +142,11 @@ symphony ./WORKFLOW.md --acknowledge-high-trust-preview --port 4321
 > | [@Aubrey-M-ops](https://github.com/Aubrey-M-ops) | 8 |
 
 **最新版本**：v0.1.7 (2026-03-10)
+
+## 社群與生態
+
+**社群活躍度**：每週有穩定的更新和貢獻，社群活躍。
+**連結**：[文件](https://github.com/OasAIStudio/symphony-ts/blob/main/README.md)
 
 ## README 摘錄
 
@@ -169,11 +208,47 @@ symphony ./WORKFLOW.md --acknowledge-high-trust-preview --port 4321
 > npx symphony-ts ./WORKFLOW.md --acknowledge-high-trust-preview --port 4321
 > ```
 > 
-> Symphony does not generate `WORKFLOW.md` for you. It expects a repository-owned wo
+> Symphony does not generate `WORKFLOW.md` for you. It expects a repository-owned workflow file and,
+> by default, reads `./WORKFLOW.md` from the current working directory.
+> 
+> Agent setup prompt
+> 
+> ```text
+> Set up and start Symphony in this repository.
+> 
+> Requirements:
+> - create or update WORKFLOW.md for Linear
+> - use LINEAR_API_KEY from the environment or tell me exactly which variable is missing
+> - install symphony-ts and start Symphony with the required --acknowledge-high-trust-preview flag
+> - if startup fails, stop and report the exact failing step and command
+> ```
+> 
+> ### `WORKFLOW.md` template
+> 
+> ```md
+> ---
+> tracker:
+>   kind: linear
+>   api_key: $LINEAR_API_KEY
+>   project_slug: your-linear-project-slug
+> workspace:
+>   root: ~/code/symphony-workspaces
+> codex:
+>   command: codex app-server
+> server:
+>   port: 4321
+> ---
+> 
+> You are working on Linear issue {{ issue.identifier }}.
+> Implement the task, validate the result, and stop at the required handoff state.
+> ```
+> 
+> This is the only example `WORKFLOW.md` you need to get started. Copy it into your repository root
+> as `WORKFLOW.md`, then change these fields b
 
 ## 延伸閱讀
 
-相關概念：[[自動化工作流程]] · [[任務管理]] · [[編碼代理]]
+相關概念：[[自動化開發流程]] · [[任務管理工具]] · [[API 集成]]
 
 [GitHub](https://github.com/OasAIStudio/symphony-ts)
 

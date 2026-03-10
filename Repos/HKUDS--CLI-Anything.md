@@ -7,8 +7,8 @@ language: Python
 license: N/A
 description: "CLI-Anything: Making ALL Software Agent-Native"
 homepage: ""
-stars: 2265
-stars_per_day: 1133
+stars: 2277
+stars_per_day: 1139
 forks: 215
 open_issues: 10
 created: 2026-03-08
@@ -25,6 +25,10 @@ tags:
   - github
   - 開發工具
   - python
+aliases:
+  - "CLI-Anything"
+  - "HKUDS/CLI-Anything"
+  - "將所有軟體轉換為可由 AI 代理使用的命令行介面。"
 ---
 
 # CLI-Anything
@@ -34,54 +38,74 @@ tags:
 `ORG`
 
 > [!summary] 一句話摘要
-> 將所有軟體轉換為可由 AI 代理操作的形式。
+> 將所有軟體轉換為可由 AI 代理使用的命令行介面。
 
 > [!abstract] 核心創新
-> 將所有軟體轉換為可由 AI 代理操作的形式，實現高效自動化。
+> 提供了一個統一的命令行介面，讓所有軟體都能被 AI 代理操作。
 
 ## 專案簡介
 
-它讓任何軟體都能透過一個命令行介面與 AI 代理互動，實現更高效的自動化。使用 Python 和 Shell 技術來實現這一功能，並支援多種 AI 代理。與傳統的軟體操作方式相比，這個工具能讓使用者更輕鬆地整合 AI 進入日常工作流程。對於希望提升工作效率的開發者和技術愛好者來說，這是一個非常有潛力的工具。
+CLI-Anything 專注於將各種軟體轉換為 AI 代理可操作的命令行介面，讓人類和 AI 代理都能輕鬆使用。它通過分析軟體的源碼，將 GUI 操作映射到 API，並生成結構化的命令行介面，這樣 AI 代理就能夠以一致的方式執行任務。與其他工具相比，CLI-Anything 提供了更高的可組合性和可擴展性，並且不需要額外的依賴。使用者可以快速生成 CLI，並且支持多種軟體，這對於開發者來說是一個強大的工具。雖然目前仍在開發中，但其潛力巨大，適合希望將現有應用轉換為 AI 友好的工具的開發者。
 
 **技術棧**：`Python` · `Shell`
 
 ## 重點功能
 
-- 將所有軟體轉換為可由 AI 代理操作的形式。
-- 支援多種 AI 代理，如 OpenClaw 和 Claude Code。
-- 提供簡單的命令行介面，方便用戶使用。
+- 將任何軟體轉換為 AI 代理可操作的命令行介面。
+- 支持多種軟體，無需額外依賴。
+- 提供結構化的 JSON 輸出，簡化解析過程。
+- 自動生成文檔，方便使用者查閱。
+- 支持多種複雜工作流的組合。
 
 ## 快速開始
 
-1. 克隆專案並安裝依賴
+1. 添加 CLI-Anything 市場
 ```bash
-git clone https://github.com/HKUDS/CLI-Anything.git
+/plugin marketplace add HKUDS/CLI-Anything
 ```
-2. 進入專案目錄
+2. 安裝 CLI-Anything 插件
 ```bash
-cd CLI-Anything
+/plugin install cli-anything
 ```
-3. 運行主程式
+3. 生成 GIMP 的 CLI
 ```bash
-python main.py
+/cli-anything ./gimp
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 開發者團隊在 AI 和自動化領域有豐富經驗，切中當前對 AI 整合的需求。其簡單的命令行介面吸引了大量開發者的注意。
+> 這個專案的創始團隊在 AI 和開發工具領域有豐富的經驗，並且隨著 AI 技術的迅速發展，對於將傳統軟體轉換為 AI 友好的需求日益增加，這使得 CLI-Anything 成為一個熱門選擇。
 
 ## 適合誰使用
 
-**目標受眾**：希望將 AI 整合到工作流程中的開發者和企業。
+**目標受眾**：希望將傳統軟體轉換為 AI 友好的開發者和研究人員。
 
 > [!example] 使用場景
-> - [開發者] 用它來 將現有軟體轉換為 AI 代理可操作的形式，因為這樣能提升開發效率。
-> - [技術愛好者] 用它來 測試不同的 AI 代理，因為能快速整合各種工具。
-> - [企業] 用它來 自動化日常任務，因為能減少人力成本和錯誤。
+> - 開發者用它來將現有應用轉換為 AI 代理可操作的命令行介面，因為這樣可以提升工作效率。
+> - AI 研究人員用它來快速生成 CLI，因為這樣可以簡化測試和實驗流程。
+> - 系統管理員用它來管理多個應用，因為統一的命令行介面可以減少學習成本。
+
+## 架構分析
+
+CLI-Anything 的架構是基於命令行的插件市場，通過分析目標軟體的源碼來生成可操作的 CLI，並提供結構化的輸出格式。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 支持多種軟體，靈活性高。
+> - 降低了 AI 代理與軟體之間的操作複雜性。
+> - 自動生成文檔，方便使用者查閱。
+
+> [!danger] 缺點
+> - 需要安裝目標軟體，使用前需進行配置。
+> - 目前功能仍在擴展中，可能不夠完善。
+> - 對於某些軟體的支持可能有限。
 
 > [!warning] 注意事項
-> 仍在開發中，可能存在不穩定的功能。
+> - 需要安裝目標軟體才能使用。
+> - 目前仍在開發中，可能存在不穩定的情況。
+> - 對於某些複雜的 GUI 操作，映射可能不完全。
 
 ## 技術細節
 
@@ -126,11 +150,78 @@ python main.py
 > 
 >   
 > 
->   <img
+>   
+> 
+> ---
+> 
+> ## 🤔 Why CLI?
+> 
+> CLI is the universal interface for both humans and AI agents:
+> 
+> • **Structured & Composable** - Text commands match LLM format and chain for complex workflows
+> 
+> • **Lightweight & Universal** - Minimal overhead, works across all systems without dependencies
+> 
+> • **Self-Describing** - --help flags provide automatic documentation agents can discover
+> 
+> • **Proven Success** - Claude Code runs thousands of real workflows through CLI daily
+> 
+> • **Agent-First Design** - Structured JSON output eliminates parsing complexity
+> 
+> • **Deterministic & Reliable** - Consistent results enable predictable agent behavior
+> 
+> ## 🚀 Quick Start
+> 
+> ### Prerequisites
+> 
+> - **Claude Code** (with plugin support)
+> - **Python 3.10+**
+> - Target software installed (e.g., GIMP, Blender, LibreOffice, or your own application)
+> 
+> ### Step 1: Add the Marketplace
+> 
+> CLI-Anything is distributed as a Claude Code plugin marketplace hosted on GitHub.
+> 
+> ```bash
+> # Add the CLI-Anything marketplace
+> /plugin marketplace add HKUDS/CLI-Anything
+> ```
+> 
+> ### Step 2: Install the Plugin
+> 
+> ```bash
+> # Install the cli-anything plugin from the marketplace
+> /plugin install cli-anything
+> ```
+> 
+> That's it. The plugin is now available in your Claude Code session.
+> 
+> ### Step 3: Build a CLI in One Command
+> 
+> ```bash
+> # /cli-anything 
+> # Generate a complete CLI for GIMP (all 7 phases)
+> /cli-anything ./gimp
+> ```
+> 
+> This runs the full pipeline:
+> 1. 🔍 **Analyze** — Scans source code, maps GUI actions to APIs
+> 2. 📐 **Design** — Architects command groups, state model, output formats
+> 3. 🔨 **Implement** — Builds Click CLI with REPL, JSON output, undo/redo
+> 4. 📋 **Plan Tests** — Creates TEST.md with unit + E2E test plans
+> 5. 🧪 **Write Tests** — Implements comprehensive test suite
+> 6. 📝 **Document** — Updates TEST.md with results
+> 7. 📦 **Publish** — Creates `setup.py`, installs to PATH
+> 
+> ### Step 4: Use the CLI
+> 
+> ```bash
+> # Install to PATH
+> cd gimp/agent-harness && pip
 
 ## 延伸閱讀
 
-相關概念：[[AI 代理]] · [[自動化]] · [[命令行介面]]
+相關概念：[[命令行介面]] · [[AI 代理]] · [[自動化工具]]
 
 [GitHub](https://github.com/HKUDS/CLI-Anything)
 

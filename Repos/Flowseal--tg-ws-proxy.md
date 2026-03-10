@@ -7,7 +7,7 @@ language: Python
 license: MIT
 description: "Local SOCKS5 proxy server for partial bypassing of Telegram loading"
 homepage: ""
-stars: 774
+stars: 775
 stars_per_day: 129
 forks: 14
 open_issues: 4
@@ -25,59 +25,87 @@ tags:
   - github
   - 開發工具
   - python
+aliases:
+  - "tg-ws-proxy"
+  - "Flowseal/tg-ws-proxy"
+  - "透過 SOCKS5 代理伺服器部分繞過 Telegram 的加載問題，提升使用體驗。"
 ---
 
 # tg-ws-proxy
 
-**774** stars · **129** stars/天 · 建立 6 天前 · Python · MIT
+**775** stars · **129** stars/天 · 建立 6 天前 · Python · MIT
 
 `v1.0.4` `easy-install`
 
 > [!summary] 一句話摘要
-> 透過 SOCKS5 代理加速 Telegram 的加載速度。
+> 透過 SOCKS5 代理伺服器部分繞過 Telegram 的加載問題，提升使用體驗。
 
 > [!abstract] 核心創新
-> 透過 SOCKS5 代理加速 Telegram 的加載速度，改善用戶體驗。
+> 透過 WebSocket 連接優化 Telegram 的加載速度，提供更流暢的使用體驗。
 
 ## 專案簡介
 
-它讓 Telegram Desktop 用戶能透過本地 SOCKS5 代理來加速連接，改善消息和媒體的加載速度。使用 Python 實現，並透過 WebSocket 連接 Telegram 的伺服器。與直接連接 Telegram 相比，這個工具能有效減少延遲，特別是在網路不穩定的情況下。對於經常使用 Telegram 的人來說，這是一個值得一試的工具。
+這個專案建立了一個本地的 SOCKS5 代理伺服器，將 Telegram 的流量通過 WebSocket 連接轉發，從而加速 Telegram 的加載和下載速度。它利用 MTProto 協議的初始化包來提取數據中心 ID，並根據需要自動切換到 TCP 連接，確保連接的穩定性。與其他代理工具相比，它專注於 Telegram 的特定需求，提供了更針對性的性能優化。使用者反映，這個工具能顯著減少消息加載時間，但仍需注意其在某些網絡環境下的兼容性。整體來說，這是一個值得嘗試的工具，特別是對於經常使用 Telegram 的用戶來說，能夠在一定程度上提升使用體驗。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 建立本地 SOCKS5 代理以加速 Telegram 連接。
-- 自動切換至直接 TCP 連接以應對 WebSocket 不可用的情況。
-- 簡單易用的設置流程，適合各類用戶。
+- 本地 SOCKS5 代理伺服器，簡單易用。
+- 自動提取 Telegram 數據中心 ID，確保連接的準確性。
+- 支持 WebSocket 和 TCP 連接的自動切換。
+- 提供詳細的日誌記錄功能，方便排查問題。
+- GUI 設定界面，簡化配置流程。
 
 ## 快速開始
 
-1. 下載最新版本的 TgWsProxy.exe
+1. 下載最新的可執行檔
 ```bash
-訪問 https://github.com/Flowseal/tg-ws-proxy/releases
+從 GitHub Releases 下載 TgWsProxy.exe
 ```
-2. 啟動 TgWsProxy.exe 並按照指示進行設置
+2. 啟動代理伺服器
 ```bash
 運行 TgWsProxy.exe
+```
+3. 在 Telegram 中設置 SOCKS5 代理
+```bash
+使用 tg://socks 連結
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 開發者專注於 Telegram 的使用者需求，特別是在網路環境不佳的情況下。其簡單的設置和明顯的效益吸引了不少用戶。
+> Flowseal 是一位活躍的開發者，專注於 Telegram 相關的工具，這個專案正好切中了 Telegram 用戶對於加載速度的需求。隨著 Telegram 用戶數量的增加，對於提升使用體驗的需求也隨之上升，這使得這個專案在短時間內獲得了關注。
 
 ## 適合誰使用
 
-**目標受眾**：Telegram Desktop 用戶和開發者。
+**目標受眾**：Telegram 用戶和開發者，特別是需要提升應用性能的人。
 
 > [!example] 使用場景
-> - [Telegram 用戶] 用它來 加速訊息加載，因為這樣可以更快接收重要信息。
-> - [開發者] 用它來 測試 Telegram 應用的性能，因為能模擬不同的網路環境。
-> - [技術愛好者] 用它來 研究 Telegram 的網路架構，因為能深入了解其流量模式。
+> - 用戶用它來加速 Telegram 的消息加載，因為這樣可以更快地查看最新消息。
+> - 開發者用它來測試 Telegram 應用的性能，因為它能提供更穩定的網絡環境。
+> - 系統管理員用它來優化公司內部 Telegram 溝通，因為它能減少延遲，提高工作效率。
+
+## 架構分析
+
+本地 SOCKS5 代理伺服器架構，通過 WebSocket 連接 Telegram 的數據中心，實現流量的轉發和加速。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 簡單易用，快速上手。
+> - 針對 Telegram 的特定需求進行優化。
+> - 提供詳細的日誌功能，方便問題排查。
+
+> [!danger] 缺點
+> - 僅限於 Telegram Desktop 使用。
+> - 在某些網絡環境下可能不穩定。
+> - 需要手動設置代理，對新手不太友好。
 
 > [!warning] 注意事項
-> 僅支援 Telegram Desktop。
+> - 可能在某些網絡環境下無法正常工作。
+> - 僅支持 Telegram Desktop 客戶端。
+> - 需要手動配置 Telegram 的代理設置。
 
 ## 技術細節
 
@@ -130,11 +158,60 @@ tags:
 > - **Перезапустить прокси** — перезапуск без выхода из приложения
 > - **Настройки...** — GUI-редактор конфигурации
 > - **Открыть логи** — открыть файл логов
-> - **Выход*
+> - **Выход** — остановить прокси и закрыть приложение
+> 
+> ## Установка из исходников
+> 
+> ```bash
+> pip install -r requirements.txt
+> ```
+> 
+> ### Windows (Tray-приложение)
+> 
+> ```bash
+> python windows.py
+> ```
+> 
+> ### Консольный режим
+> 
+> ```bash
+> python proxy/tg_ws_proxy.py [--port PORT] [--dc-ip DC:IP ...] [-v]
+> ```
+> 
+> **Аргументы:**
+> 
+> | Аргумент | По умолчанию | Описание |
+> |---|---|---|
+> | `--port` | `1080` | Порт SOCKS5-прокси |
+> | `--dc-ip` | `2:149.154.167.220`, `4:149.154.167.220` | Целевой IP для DC (можно указать несколько раз) |
+> | `-v`, `--verbose` | выкл. | Подробное логирование (DEBUG) |
+> 
+> **Примеры:**
+> 
+> ```bash
+> # Стандартный запуск
+> python proxy/tg_ws_proxy.py
+> 
+> # Другой порт и дополнительные DC
+> python proxy/tg_ws_proxy.py --port 9050 --dc-ip 1:149.154.175.205 --dc-ip 2:149.154.167.220
+> 
+> # С подробным логированием
+> python proxy/tg_ws_proxy.py -v
+> ```
+> 
+> ## Настройка Telegram Desktop
+> 
+> ### Автоматически
+> 
+> ПКМ по иконке в трее → **«Открыть в Telegram»**
+> 
+> ### Вручную
+> 
+> 1. Telegram → **Настройки** → **Продвинутые настройки** → **Тип
 
 ## 延伸閱讀
 
-相關概念：[[SOCKS5 代理]] · [[WebSocket]] · [[MTProto]]
+相關概念：[[SOCKS5 代理]] · [[WebSocket]] · [[MTProto 協議]]
 
 [GitHub](https://github.com/Flowseal/tg-ws-proxy)
 

@@ -7,9 +7,9 @@ language: TypeScript
 license: Apache-2.0
 description: "An open-source desktop app for generating videos with LTX models"
 homepage: "https://www.ltx.video"
-stars: 388
+stars: 389
 stars_per_day: 65
-forks: 77
+forks: 78
 open_issues: 38
 created: 2026-03-04
 pushed_at: 2026-03-09
@@ -17,7 +17,7 @@ first_seen: 2026-03-10
 week: "2026-W11"
 category: "其他"
 release_tag: "v1.0.1"
-install_complexity: "hard"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
@@ -29,52 +29,93 @@ tags:
   - ltx
   - ltx_2
   - non_linear_editing
+aliases:
+  - "LTX-Desktop"
+  - "Lightricks/LTX-Desktop"
+  - "開源桌面應用程式，用於生成 LTX 模型的視頻。"
 ---
 
 # LTX-Desktop
 
-**388** stars · **65** stars/天 · 建立 6 天前 · TypeScript · Apache-2.0
+**389** stars · **65** stars/天 · 建立 6 天前 · TypeScript · Apache-2.0
 
-`ORG` `v1.0.1` `need-GPU/Docker`
+`ORG` `v1.0.1`
 
 > [!summary] 一句話摘要
-> 一款開源桌面應用，用於生成視頻。
+> 開源桌面應用程式，用於生成 LTX 模型的視頻。
+
+> [!abstract] 核心創新
+> 提供了一個本地生成視頻的解決方案，支持多種生成模式。
 
 ## 專案簡介
 
-它讓使用者能夠使用 LTX 模型在本地生成視頻，支持多種生成模式。這個專案使用 TypeScript 和 Python 開發，並提供了本地生成和 API 模式兩種運行方式。相比其他視頻生成工具，LTX-Desktop 提供了本地運行的選項，特別適合擁有高效能 GPU 的用戶。這是一個有潛力的工具，尤其對於視頻創作者來說。
+LTX Desktop 是一個開源的桌面應用程式，專為生成 LTX 模型的視頻而設計，支持在具備 NVIDIA GPU 的 Windows 系統上本地運行。它提供了文本、圖像和音頻轉視頻的功能，並且還具備視頻編輯的能力。與其他視頻生成工具相比，LTX Desktop 提供了更靈活的生成模式，並且能夠在本地運行，這對於需要大量計算資源的用戶來說非常重要。使用者需要注意的是，對於不支持的硬體，則需要使用 API 模式，這可能會限制生成的解析度和時長。整體來說，這是一個非常有潛力的工具，特別適合需要生成高質量視頻的創作者。
 
-**技術棧**：`TypeScript` · `Python` · `PowerShell` · `Shell` · `CSS` · `JavaScript`
+**技術棧**：`TypeScript` · `Python` · `PowerShell` · `Shell` · `CSS` · `JavaScript` · `NSIS` · `Batchfile` · `HTML`
 
 ## 重點功能
 
-- 支持文本、圖像和音頻生成視頻。
-- 提供視頻編輯和生成項目的功能。
-- 本地生成模式支持高效能 GPU。
-- API 模式適用於不支持的硬體。
+- 支持文本、圖像和音頻轉視頻的功能。
+- 提供視頻編輯介面，方便用戶進行創作。
+- 支持本地生成，減少對網絡的依賴。
+- 提供 API 模式，支持不兼容硬體的用戶。
+- 具備視頻編輯項目管理功能，提升創作效率。
+
+## 快速開始
+
+1. 下載最新的安裝包
+```bash
+從 GitHub Releases 下載 LTX Desktop
+```
+2. 安裝並啟動應用程式
+```bash
+運行安裝程式
+```
+3. 完成首次設置
+```bash
+按照提示進行設置
+```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 開發者背景強大，並且這個專案滿足了對高效視頻生成的需求。
+> Lightricks 是一個專注於視頻生成技術的公司，這個專案正好滿足了市場對於高效視頻生成工具的需求。隨著視頻內容的需求不斷增加，這個專案在短時間內獲得了關注。
 
 ## 適合誰使用
 
 **目標受眾**：需要生成視頻內容的創作者和開發者。
 
 > [!example] 使用場景
-> - [視頻創作者] 用它來 [生成高品質的視頻內容]，因為它支持多種生成模式。
-> - [開發者] 用它來 [測試不同的視頻生成參數]，因為它提供了靈活的 API 接口。
-> - [學生] 用它來 [學習視頻生成技術]，因為它是開源的，易於修改和擴展。
+> - 內容創作者用它來生成高質量的視頻，因為它支持多種生成模式。
+> - 教育工作者用它來製作教學視頻，因為可以輕鬆編輯和生成內容。
+> - 開發者用它來測試 LTX 模型的性能，因為可以在本地環境中運行。
+
+## 架構分析
+
+LTX Desktop 的架構是基於本地生成和 API 模式，支持文本、圖像和音頻轉視頻，並提供視頻編輯功能，適合各種創作需求。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 支持多種視頻生成模式，靈活性高。
+> - 本地運行減少了對網絡的依賴。
+> - 提供了友好的視頻編輯介面，提升創作效率。
+
+> [!danger] 缺點
+> - 僅支持特定硬體，限制了使用範圍。
+> - 對於不支持的硬體，功能受限。
+> - 目前處於測試階段，可能存在不穩定的情況。
 
 > [!warning] 注意事項
-> 需要高效能的 NVIDIA GPU 才能進行本地生成。
+> - 僅支持具備 NVIDIA GPU 的 Windows 系統進行本地生成。
+> - 對於不支持的硬體，僅能使用 API 模式，功能受限。
+> - 目前處於測試階段，可能存在不穩定的情況。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 77 |
+| Forks | 78 |
 | Open Issues | 38 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-04 |
@@ -153,11 +194,28 @@ tags:
 > ## Install
 > 
 > 1. Download the latest installer from GitHub Releases: [Releases](../../releases)
-> 2. Inst
+> 2. Install and launch **LTX Desktop**
+> 3. Complete first-run setup
+> 
+> ## First run & data locations
+> 
+> LTX Desktop stores app data (settings, models, logs) in:
+> 
+> - **Windows:** `%LOCALAPPDATA%\LTXDesktop\`
+> - **macOS:** `~/Library/Application Support/LTXDesktop/`
+> 
+> Model weights are downloaded into the `models/` subfolder (this can be large and may take time).
+> 
+> On first launch you may be prompted to review/accept model license terms (license text is fetched from Hugging Face; requires internet).
+> 
+> Text encoding: to generate videos you must configure text encoding:
+> 
+> - **LTX API key** (cloud text encoding) — **text encoding via the API is completely FREE** and highly recommended to speed up inference and save memory. Generate a free API key at the [LTX Console](https://console.ltx.video/). [Read more](https://ltx.io/model/model-blog/ltx-2-better-control-for-real-workflows).
+> - **Local Text Encoder** (extra download; enables fully-local operation on supported Windows hardware) — if you don't wish to gener
 
 ## 延伸閱讀
 
-相關概念：[[視頻生成技術]] · [[深度學習模型]] · [[開源桌面應用]]
+相關概念：[[視頻生成]] · [[LTX 模型]] · [[內容創作]]
 
 [GitHub](https://github.com/Lightricks/LTX-Desktop) · [官方網站](https://www.ltx.video)
 
