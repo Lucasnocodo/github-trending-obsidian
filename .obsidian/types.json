@@ -1,0 +1,32 @@
+{
+  "types": {
+    "repo": "text",
+    "url": "text",
+    "owner": "text",
+    "owner_type": "text",
+    "language": "text",
+    "license": "text",
+    "description": "text",
+    "homepage": "text",
+    "stars": "number",
+    "stars_per_day": "number",
+    "forks": "number",
+    "open_issues": "number",
+    "created": "date",
+    "pushed_at": "date",
+    "first_seen": "date",
+    "week": "text",
+    "category": "text",
+    "release_tag": "text",
+    "install_complexity": "text",
+    "status": "text",
+    "my_rating": "number",
+    "last_reviewed": "date",
+    "tags": "multitext",
+    "aliases": "aliases",
+    "month": "text",
+    "date": "date",
+    "total_stars": "number",
+    "repo_count": "number"
+  }
+}

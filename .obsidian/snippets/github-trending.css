@@ -38,3 +38,46 @@ progress::-webkit-progress-value {
   text-align: center;
   margin-bottom: 1.5em;
 }
+
+/* Rating stars in Dataview tables */
+.dataview .table-view-table td {
+  white-space: nowrap;
+}
+
+/* Category badges - compact display */
+.tag[href*="category/"] {
+  font-size: 0.85em;
+  padding: 1px 6px;
+  border-radius: 8px;
+}
+
+/* Install complexity color coding */
+.tag[href*="easy_install"] {
+  background-color: rgba(76, 175, 80, 0.15);
+  color: rgb(76, 175, 80);
+}
+
+/* Status indicator colors in inline fields */
+code:is(
+  [style*="to-review"],
+  :has(+ :contains("to-review"))
+) {
+  color: var(--text-accent);
+}
+
+/* Mermaid chart sizing */
+.mermaid {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Canvas card styling */
+.canvas-node-content .dataview {
+  font-size: 0.85em;
+}
+
+/* Concept notes - subtle background */
+.concept h1 {
+  border-bottom: 2px solid var(--interactive-accent);
+  padding-bottom: 0.3em;
+}
