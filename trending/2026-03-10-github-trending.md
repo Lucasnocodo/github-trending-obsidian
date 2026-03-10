@@ -10,156 +10,160 @@ tags:
 
 > 本週新建立且星數最高的熱門專案（已排除過去收錄過的）
 
-## 1. [[autoresearch|karpathy/autoresearch]]
+## 1. [[OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]]
 
 | 欄位 | 值 |
 | --- | --- |
-| Stars | 21.1k |
-| Language | Python |
-| 建立日期 | 2026-03-06 |
-| License | N/A |
-
-**Description**: AI agents running research on single-GPU nanochat training automatically
-
-[GitHub](https://github.com/karpathy/autoresearch)
-
----
-
-## 2. [[OBLITERATUS|elder-plinius/OBLITERATUS]]
-
-| 欄位 | 值 |
-| --- | --- |
-| Stars | 2.7k |
-| Language | Python |
-| 建立日期 | 2026-03-03 |
-| License | AGPL-3.0 |
-
-**Description**: OBLITERATE THE CHAINS THAT BIND YOU
-
-[GitHub](https://github.com/elder-plinius/OBLITERATUS)
-
----
-
-## 3. [[CLI-Anything|HKUDS/CLI-Anything]]
-
-| 欄位 | 值 |
-| --- | --- |
-| Stars | 2.1k |
+| Stars | 874 |
 | Language | Python |
 | 建立日期 | 2026-03-08 |
 | License | N/A |
 
-**Description**: CLI-Anything: Making ALL Software Agent-Native
+**Description**: The largest open-source medical AI skills library for OpenClaw🦞.
 
-[GitHub](https://github.com/HKUDS/CLI-Anything)
+**Topics**: `awesome` `claude-code` `clawhub` `medical` `nanoclaw` `openclaw` `openclaw-skills` `skills`
+
+[GitHub](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills)
 
 ---
 
-## 4. [[SwiftUI-Agent-Skill|twostraws/SwiftUI-Agent-Skill]]
+## 2. [[Claude-to-IM-skill|op7418/Claude-to-IM-skill]]
 
 | 欄位 | 值 |
 | --- | --- |
-| Stars | 1.7k |
-| Language | N/A |
+| Stars | 820 |
+| Language | TypeScript |
 | 建立日期 | 2026-03-05 |
 | License | MIT |
 
-**Description**: SwiftUI agent skill for Claude Code, Codex, and other AI tools.
+**Description**: Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark.
 
-[GitHub](https://github.com/twostraws/SwiftUI-Agent-Skill)
+**Topics**: `chatbot` `claude` `claude-code` `discord` `feishu` `lark` `skill` `telegram`
 
----
-
-## 5. [[agenthub|karpathy/agenthub]]
-
-| 欄位 | 值 |
-| --- | --- |
-| Stars | 1.5k |
-| Language | Go |
-| 建立日期 | 2026-03-09 |
-| License | N/A |
-
-**Description**: GitHub is for humans. AgentHub is for agents. First use case is for autoresearch but it's a lot more general than that. Exploratory project.
-
-[GitHub](https://github.com/karpathy/agenthub)
+[GitHub](https://github.com/op7418/Claude-to-IM-skill)
 
 ---
 
-## 6. [[TorchCode|duoan/TorchCode]]
+## 3. [[tg-ws-proxy|Flowseal/tg-ws-proxy]]
 
 | 欄位 | 值 |
 | --- | --- |
-| Stars | 1.5k |
-| Language | Jupyter Notebook |
-| 建立日期 | 2026-03-04 |
-| License | N/A |
-
-**Description**: 🔥 LeetCode for PyTorch — practice implementing softmax, attention, GPT-2 and more from scratch with instant auto-grading. Jupyter-based, self-hosted or try online.
-
-**Topics**: `interview` `leetcode` `pytorch`
-
-[GitHub](https://github.com/duoan/TorchCode)
-
----
-
-## 7. [[twitter-cli|jackwener/twitter-cli]]
-
-| 欄位 | 值 |
-| --- | --- |
-| Stars | 1.4k |
+| Stars | 765 |
 | Language | Python |
-| 建立日期 | 2026-03-05 |
+| 建立日期 | 2026-03-04 |
+| License | MIT |
+
+**Description**: Local SOCKS5 proxy server for partial bypassing of Telegram loading
+
+[GitHub](https://github.com/Flowseal/tg-ws-proxy)
+
+---
+
+## 4. [[ssd|tanishqkumar/ssd]]
+
+| 欄位 | 值 |
+| --- | --- |
+| Stars | 748 |
+| Language | Python |
+| 建立日期 | 2026-03-04 |
+| License | MIT |
+
+**Description**: A lightweight inference engine supporting speculative speculative decoding (SSD). 
+
+[GitHub](https://github.com/tanishqkumar/ssd)
+
+---
+
+## 5. [[OpenClaw-PwnKit|imbue-bit/OpenClaw-PwnKit]]
+
+| 欄位 | 值 |
+| --- | --- |
+| Stars | 689 |
+| Language | Python |
+| 建立日期 | 2026-03-08 |
+| License | GPL-3.0 |
+
+**Description**: Get shell to almost any OpenClaw host machine.
+
+[GitHub](https://github.com/imbue-bit/OpenClaw-PwnKit)
+
+---
+
+## 6. [[qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]]
+
+| 欄位 | 值 |
+| --- | --- |
+| Stars | 674 |
+| Language | C |
+| 建立日期 | 2026-03-04 |
+| License | MIT |
+
+**Description**: Unlocking qualcomm bootloader via gbl exploit.
+
+[GitHub](https://github.com/hicode002/qualcomm_gbl_exploit_poc)
+
+---
+
+## 7. [[app-store-screenshots|ParthJadhav/app-store-screenshots]]
+
+| 欄位 | 值 |
+| --- | --- |
+| Stars | 618 |
+| Language | N/A |
+| 建立日期 | 2026-03-07 |
+| License | N/A |
+
+**Description**: end to end app store screenshot creation using AI
+
+**Topics**: `agentic-ai` `apple` `appstore` `automate` `claude` `cursor` `design` `generate` `ios` `ios-app` `marketing` `screenshot` `skills` `skills-sh` `swift` `swiftui` `ui`
+
+[GitHub](https://github.com/ParthJadhav/app-store-screenshots)
+
+---
+
+## 8. [[pi-rs|jshachm/pi-rs]]
+
+| 欄位 | 值 |
+| --- | --- |
+| Stars | 615 |
+| Language | Rust |
+| 建立日期 | 2026-03-04 |
+| License | MIT |
+
+**Description**: 基于pi-mono，rust轻量化版本
+
+[GitHub](https://github.com/jshachm/pi-rs)
+
+---
+
+## 9. [[worldfm|inspatio/worldfm]]
+
+| 欄位 | 值 |
+| --- | --- |
+| Stars | 552 |
+| Language | Python |
+| 建立日期 | 2026-03-03 |
 | License | Apache-2.0 |
 
-**Description**: A CLI for Twitter/X — feed, bookmarks, and user timeline in terminal
+**Description**: N/A
 
-[GitHub](https://github.com/jackwener/twitter-cli)
-
----
-
-## 8. [[Siftly|viperrcrypto/Siftly]]
-
-| 欄位 | 值 |
-| --- | --- |
-| Stars | 1.4k |
-| Language | TypeScript |
-| 建立日期 | 2026-03-04 |
-| License | MIT |
-
-**Description**: Local Twitter/X bookmark organizer with AI categorization and mindmap visualization
-
-**Topics**: `ai` `bookmarks` `categorization` `local-first` `mindmap` `nextjs` `open-source` `productivity` `twitter` `typescript`
-
-[GitHub](https://github.com/viperrcrypto/Siftly)
+[GitHub](https://github.com/inspatio/worldfm)
 
 ---
 
-## 9. [[Uncodixfy|cyxzdev/Uncodixfy]]
+## 10. [[vulhunt|vulhunt-re/vulhunt]]
 
 | 欄位 | 值 |
 | --- | --- |
-| Stars | 1.3k |
-| Language | N/A |
-| 建立日期 | 2026-03-06 |
-| License | N/A |
-
-**Description**: the holly uncodexify instructions - letting GPT create uncodexified UI
-
-[GitHub](https://github.com/cyxzdev/Uncodixfy)
-
----
-
-## 10. [[Shadowbroker|BigBodyCobain/Shadowbroker]]
-
-| 欄位 | 值 |
-| --- | --- |
-| Stars | 1.3k |
-| Language | TypeScript |
+| Stars | 536 |
+| Language | C++ |
 | 建立日期 | 2026-03-05 |
-| License | N/A |
+| License | GPL-3.0 |
 
-**Description**: Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. The knowledge is available to all but rarely aggregated in the open, until now.
+**Description**: Vulnerability detection framework by Binarly's REsearch team
 
-[GitHub](https://github.com/BigBodyCobain/Shadowbroker)
+**Topics**: `binary-analysis` `reverse-engineering` `vulnerability-research`
+
+[GitHub](https://github.com/vulhunt-re/vulhunt)
 
 ---
