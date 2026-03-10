@@ -15,7 +15,7 @@ created: 2026-03-07
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "開發工具"
+category: "CLI 工具"
 release_tag: "v0.1.0"
 install_complexity: "medium"
 status: to-review
@@ -23,12 +23,12 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - 開發工具
-  - go
+  - "category/cli_工具"
+  - "lang/go"
 aliases:
   - "discrawl"
   - "steipete/discrawl"
-  - "將 Discord 數據鏡像到 SQLite，方便本地搜索和查詢。"
+  - "將 Discord 伺服器歷史鏡像到 SQLite，方便本地搜尋和查詢。"
 ---
 
 # discrawl
@@ -38,28 +38,28 @@ aliases:
 `個人專案` `v0.1.0`
 
 > [!summary] 一句話摘要
-> 將 Discord 數據鏡像到 SQLite，方便本地搜索和查詢。
+> 將 Discord 伺服器歷史鏡像到 SQLite，方便本地搜尋和查詢。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個安全的方式將 Discord 數據鏡像到本地，並支持快速查詢。
+> 這個專案提供了一個本地化的 Discord 數據查詢解決方案，無需依賴 Discord 的搜尋功能。
 
 ## 專案簡介
 
-這個專案提供了一個 CLI 工具，可以將 Discord 的伺服器數據鏡像到本地的 SQLite 數據庫中，使用者可以在不依賴 Discord 搜索的情況下進行查詢和檢索。它能夠發現所有可訪問的伺服器，並同步頻道、成員和消息歷史，並且支持快速的本地文本搜索。與其他類似工具相比，這個專案強調了數據的本地存儲和查詢能力，避免了用戶令牌的使用，確保數據的安全性。實際使用中，這個工具能夠快速同步和查詢數據，但需要適當的權限設置。對於需要本地數據分析的 Discord 用戶來說，這是一個非常實用的工具。
+這個專案提供了一個 CLI 工具，能夠將 Discord 伺服器的數據鏡像到本地 SQLite 數據庫，讓用戶可以在不依賴 Discord 搜尋的情況下進行查詢和檢查。它能夠發現所有可訪問的伺服器，並同步頻道、成員和消息歷史。與其他類似工具相比，這個專案強調了數據的本地存儲和快速搜尋功能，並且不需要使用者令牌，提升了安全性。實際使用中，這個工具能夠快速查詢伺服器歷史，但需要正確的 bot 設置和權限。整體來看，這是一個功能強大的工具，適合需要深入分析 Discord 伺服器數據的用戶。
 
 **技術棧**：`Go`
 
 ## 重點功能
 
-- 將 Discord 數據鏡像到本地 SQLite 數據庫。
-- 支持快速的全文搜索，提升查詢效率。
+- 將 Discord 伺服器數據鏡像到本地 SQLite 數據庫。
+- 支持快速全文搜索，提升查詢效率。
 - 能夠同步頻道、成員和消息歷史。
-- 無需用戶令牌，確保數據安全。
-- 支持多伺服器的數據管理。
+- 支持多伺服器數據管理，方便使用。
+- 不需要用戶令牌，提升安全性。
 
 ## 快速開始
 
-1. 設置 Discord bot 令牌
+1. 設置 Discord bot token 環境變數
 ```bash
 export DISCORD_BOT_TOKEN='your-bot-token'
 ```
@@ -67,7 +67,7 @@ export DISCORD_BOT_TOKEN='your-bot-token'
 ```bash
 bin/discrawl init
 ```
-3. 開始數據同步
+3. 執行 discrawl 同步
 ```bash
 bin/discrawl sync
 ```
@@ -75,33 +75,35 @@ bin/discrawl sync
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著 Discord 使用者對數據隱私和本地存儲的關注增加，這個專案提供了一個解決方案，滿足了用戶的需求。作者的背景和對於數據管理的專業知識使得這個工具在社群中受到廣泛關注。
+> 作者在 Discord 生態系統中的經驗使得這個專案能夠針對用戶需求進行優化，並且其本地數據存儲的特性吸引了許多對隱私和數據安全有關注的用戶。隨著 Discord 使用者的增加，對於數據分析工具的需求也隨之上升，這使得該專案在近期受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要本地存儲和查詢 Discord 數據的開發者和社群管理員。
+**目標受眾**：需要本地查詢和分析 Discord 伺服器數據的用戶。
 
 > [!example] 使用場景
-> - 社群管理員 用它來 本地存儲 Discord 數據，因為這樣可以方便地進行數據分析。
-> - 開發者 用它來 查詢伺服器歷史，因為本地搜索比 Discord 的搜索更快速。
-> - 數據分析師 用它來 分析 Discord 伺服器的互動數據，因為它提供了結構化的數據存儲。
+> - 社群管理員 用它來 分析伺服器歷史數據，因為它能夠快速查詢和檢索信息。
+> - 開發者 用它來 進行 Discord 機器人數據的本地分析，因為它提供了 SQL 查詢功能。
+> - 研究人員 用它來 研究 Discord 使用模式，因為它能夠保存大量的伺服器數據。
+
+## 架構分析
+
+專案的架構基於 CLI 工具，通過 Discord bot 獲取數據並將其存儲到 SQLite 數據庫中，支持快速查詢和同步功能。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 數據存儲在本地，確保隱私。
-> - 快速的全文搜索功能。
-> - 支持多伺服器的數據管理。
+> - 能夠快速查詢和檢索 Discord 伺服器數據。
+> - 支持多伺服器數據管理，方便使用。
+> - 不需要用戶令牌，提升安全性。
 
 > [!danger] 缺點
-> - 需要適當的 bot 權限設置。
-> - 數據同步可能會受到 API 限制。
-> - 僅支持 Discord 的官方 bot 令牌。
+> - 需要正確的 bot 設置和權限，否則無法使用。
+> - 對於大型伺服器，數據同步可能需要較長時間。
 
 > [!warning] 注意事項
-> - 需要 Discord bot 的適當權限。
-> - 數據同步可能會受到 API 限制。
-> - 僅支持 Discord 的官方 bot 令牌。
+> - 需要正確的 bot 設置和權限，否則無法同步數據。
+> - 對於大型伺服器，數據同步可能需要較長時間。
 
 ## 技術細節
 
@@ -206,9 +208,20 @@ bin/discrawl sync
 
 ## 延伸閱讀
 
-相關概念：[[數據鏡像]] · [[SQLite]] · [[Discord bot]]
+相關概念：[[Discord API]] · [[SQLite]] · [[數據分析]]
 
 [GitHub](https://github.com/steipete/discrawl)
+
+## 相關收錄
+
+> [!note]- 同分類的其他專案
+> ```dataview
+> LIST
+> FROM "Repos"
+> WHERE category = "CLI 工具" AND file.name != "steipete--discrawl"
+> SORT stars DESC
+> LIMIT 8
+> ```
 
 
 ---

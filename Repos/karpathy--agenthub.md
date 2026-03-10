@@ -7,15 +7,15 @@ language: Go
 license: N/A
 description: "GitHub is for humans. AgentHub is for agents. First use case is for autoresearch but it's a lot more general than that. Exploratory project."
 homepage: ""
-stars: 1858
-stars_per_day: 1858
-forks: 126
-open_issues: 16
+stars: 2041
+stars_per_day: 2041
+forks: 133
+open_issues: 23
 created: 2026-03-09
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "其他"
+category: "AI/ML"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -23,43 +23,43 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - 其他
-  - go
+  - "category/ai_ml"
+  - "lang/go"
 aliases:
   - "agenthub"
   - "karpathy/agenthub"
-  - "為 AI agents 提供一個協作平台，無需主分支和合併。"
+  - "為 AI agent 提供的協作平台，專注於無主分支的開發模式。"
 ---
 
 # agenthub
 
-**1.9k** stars · **1.9k** stars/天 · 建立 1 天前 · Go · 未標註授權
+**2.0k** stars · **2.0k** stars/天 · 建立 1 天前 · Go · 未標註授權
 
 `個人專案`
 
 > [!summary] 一句話摘要
-> 為 AI agents 提供一個協作平台，無需主分支和合併。
+> 為 AI agent 提供的協作平台，專注於無主分支的開發模式。
 
 > [!abstract] 核心創新
-> 提供一個無主分支的 Git 結構，讓 AI agents 自由協作。
+> 這個平台的設計允許 AI agent 在無主分支的環境中自由協作。
 
 ## 專案簡介
 
-AgentHub 是一個專為 AI agents 設計的協作平台，允許多個 agents 在同一代碼庫上進行無主分支的協作。它的核心機制是使用 Git 的無主分支結構，並結合消息板功能，讓 agents 可以自由地發表結果、假設和協調。這個專案使用 Go 語言實現，並搭配 SQLite 數據庫，提供了一個簡單的 API 來管理 agents 的操作。與傳統的 GitHub 不同，AgentHub 不需要合併請求或主分支，這使得 AI agents 能夠更靈活地進行實驗和協作。使用者可以輕鬆地推送和獲取代碼，並在消息板上進行討論。這個平台的挑戰在於如何管理多個 agents 的協作，並確保實驗的有效性。整體而言，這是一個前景廣闊的實驗性專案，適合對 AI 協作有興趣的開發者。
+AgentHub 是一個專為 AI agent 設計的協作平台，允許多個 agent 在同一代碼庫中進行無主分支的開發。它的架構包含一個 Go 伺服器和 SQLite 數據庫，使用 git bundles 來管理代碼提交。與傳統的 GitHub 不同，AgentHub 沒有主分支、PR 或合併的概念，這使得 agent 可以自由地在一個無限的 DAG 中進行實驗。這個平台的設計使得 agent 可以在沒有明確指導的情況下進行協作，並且能夠發表結果和假設。雖然目前仍在開發中，但這個工具對於希望探索 AI agent 協作的研究者來說，提供了一個有趣的實驗平台。
 
 **技術棧**：`Go` · `SQLite`
 
 ## 重點功能
 
-- 無主分支的 Git 結構，支持多方向的提交。
-- 消息板功能，方便 agents 進行協調和討論。
-- 簡單的 CLI 工具，方便 agents 使用。
-- 支持 API 鍵認證和速率限制。
-- 可擴展的架構，適合未來的功能增強。
+- 無主分支的開發模式，支持自由的實驗。
+- 集成的消息板，方便 agent 之間的協作。
+- 使用 git bundles 管理代碼提交，簡化版本控制。
+- 提供 API 鑑權和速率限制，確保安全性。
+- CLI 工具支持簡化操作，方便 agent 使用。
 
 ## 快速開始
 
-1. 構建伺服器
+1. 編譯伺服器
 ```bash
 go build ./cmd/agenthub-server
 ```
@@ -75,41 +75,44 @@ curl -X POST -H "Authorization: Bearer YOUR_SECRET" -H "Content-Type: applicatio
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 Karpathy 是知名的 AI 研究者，這個專案切合了對 AI agents 協作需求的興趣，特別是在自動化研究領域。隨著 AI 技術的進步，對於這種協作平台的需求也在增加，這使得 AgentHub 在短時間內受到關注。
+> 作者 Karpathy 是 AI 領域的知名人物，這個專案切合了對於 AI agent 協作的需求。隨著 AI 研究的快速發展，對於這樣的平台需求也隨之上升，尤其是在自動化研究的背景下。
 
 ## 適合誰使用
 
-**目標受眾**：對 AI agents 協作有興趣的開發者和研究者。
+**目標受眾**：對於 AI 研究和開發有興趣的開發者和研究人員。
 
 > [!example] 使用場景
-> - AI 研究者 用它來 組織多個 AI agents 進行協作研究，因為這樣可以提高研究效率。
-> - 開發者 用它來 測試不同的 AI 模型，因為可以快速迭代和協作。
-> - 團隊成員 用它來 共享實驗結果和假設，因為這樣可以促進知識交流。
+> - 研究人員 用它來 組織 AI agent 的協作，因為這樣可以提升研究效率和創新。
+> - 開發者 用它來 測試不同的 AI 模型，因為這個平台支持自由的實驗和迭代。
+> - 學生 用它來 學習 AI agent 的協作方式，因為這個平台提供了實際的操作經驗。
 
 ## 架構分析
 
-整體架構由一個 Go 二進制檔案和一個 SQLite 數據庫組成，使用 Git 進行版本控制，並提供消息板功能供 agents 協調。
+整體架構包含一個 Go 伺服器和一個 SQLite 數據庫，代碼管理使用 git bundles。消息板功能支持 agent 之間的協作和交流。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多個 AI agents 的靈活協作。
-> - 無需合併請求，簡化了工作流程。
+> - 支持無主分支的自由實驗，促進創新。
+> - 集成消息板功能，方便 agent 之間的溝通。
+> - 使用 git bundles 簡化版本控制，降低使用門檻。
 
 > [!danger] 缺點
-> - 仍在開發中，功能尚不完善。
-> - 需要使用者具備一定的 Git 和 Go 知識。
+> - 目前功能尚不完整，可能存在不穩定性。
+> - 需要較高的技術背景來設置和使用。
+> - 對於小型項目來說，可能顯得過於複雜。
 
 > [!warning] 注意事項
-> - 仍在開發中，功能可能不穩定。
-> - 需要基本的 Go 環境來運行。
+> - 目前仍在開發中，功能不夠完善。
+> - 需要一定的技術背景來設置和使用。
+> - 對於小型項目可能過於複雜。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 126 |
-| Open Issues | 16 |
+| Forks | 133 |
+| Open Issues | 23 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-09 |
 | Repo 大小 | 25 KB |
@@ -174,9 +177,20 @@ curl -X POST -H "Authorization: Bearer YOUR_SECRET" -H "Content-Type: applicatio
 
 ## 延伸閱讀
 
-相關概念：[[AI agents]] · [[協作平台]] · [[無主分支 Git]]
+相關概念：[[AI agent]] · [[協作平台]] · [[去中心化開發]]
 
 [GitHub](https://github.com/karpathy/agenthub)
+
+## 相關收錄
+
+> [!note]- 同分類的其他專案
+> ```dataview
+> LIST
+> FROM "Repos"
+> WHERE category = "AI/ML" AND file.name != "karpathy--agenthub"
+> SORT stars DESC
+> LIMIT 8
+> ```
 
 
 ---
