@@ -17,47 +17,51 @@ first_seen: 2026-03-10
 week: "2026-W11"
 category: "開發工具"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - 開發工具
-  - python
+  - "category/開發工具"
+  - "lang/python"
+aliases:
+  - "visura-api"
+  - "zornade/visura-api"
+  - "自動從 SISTER 端口提取地籍數據的 API 服務。"
 ---
 
 # visura-api
 
 **475** stars · **68** stars/天 · 建立 7 天前 · Python · GPL-3.0
 
-`easy-install`
-
 > [!summary] 一句話摘要
-> 自動化從 SISTER 入口網站提取地籍數據的 API 服務。
+> 自動從 SISTER 端口提取地籍數據的 API 服務。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個專門針對地籍數據提取的自動化解決方案。
+> 能夠自動化提取地籍數據並支持 SPID 認證。
 
 ## 專案簡介
 
-它讓使用者能夠自動從 SISTER 入口網站提取地籍資料，省去手動查詢的麻煩。這個服務使用 FastAPI 提供 RESTful API，並利用 Playwright 進行無頭瀏覽器操作。與其他資料提取工具相比，Visura API 專注於地籍數據的自動化提取，並且提供即時的 API 查詢功能。這是一個實用的工具，特別適合需要頻繁查詢地籍資料的使用者。
+這個專案提供了一個 REST API，可以自動從意大利的 SISTER 端口提取地籍數據。它使用 Playwright 來控制無頭瀏覽器，並通過 FastAPI 提供 API 端點。與其他地籍數據提取工具不同，Visura API 支持自動化的 SPID 認證和請求排隊，避免了對服務的過載。使用者可以通過簡單的 HTTP 請求來獲取所需的地籍數據，並且支持結果的輪詢檢索。雖然這個工具在功能上非常強大，但使用者需要注意法律責任，因為它不是官方授權的工具。整體而言，這是一個適合需要自動化地籍數據提取的開發者的工具。
 
-**技術棧**：`Python` · `Dockerfile`
+**技術棧**：`Python` · `FastAPI` · `Playwright`
 
 ## 重點功能
 
-- 提供 RESTful API 方便整合。
-- 使用 Playwright 實現無頭瀏覽器操作，穩定性高。
-- 支持多種查詢功能，滿足不同需求。
+- 提供 REST API 以提取地籍數據。
+- 支持自動化 SPID 認證，簡化登錄過程。
+- 請求排隊處理，避免過載 SISTER 端口。
+- 支持結果的輪詢檢索，方便用戶獲取數據。
+- 提供詳細的 API 文檔，方便開發者使用。
 
 ## 快速開始
 
 1. 安裝依賴
 ```bash
-pip install fastapi playwright
+pip install -r requirements.txt
 ```
-2. 啟動服務
+2. 啟動 API 服務
 ```bash
 uvicorn main:app --reload
 ```
@@ -65,19 +69,35 @@ uvicorn main:app --reload
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 專案作者在 Python 和自動化領域有豐富經驗，這個工具滿足了對於地籍數據自動化提取的需求。隨著數據驅動決策的普及，這類工具的需求也在增加。
+> 該專案的作者在開發社群中有一定的知名度，並且隨著對地籍數據需求的增加，這個工具正好滿足了開發者自動化提取數據的需求。近年來，政府數據開放的趨勢也促進了這類工具的興起。
 
 ## 適合誰使用
 
-**目標受眾**：需要自動化地籍數據提取的開發者和專業人士。
+**目標受眾**：需要自動化提取意大利地籍數據的開發者和專業人士。
 
 > [!example] 使用場景
-> - 地產開發商 用它來 自動提取地籍資料，因為 這樣能節省大量時間和人力成本。
-> - 法律顧問 用它來 獲取土地所有權資訊，因為 這能幫助他們更快地完成案件調查。
-> - 政府機構 用它來 監控地籍數據變化，因為 這有助於提升公共服務的效率。
+> - 地產開發商 用它來 自動提取地籍數據，因為這樣可以快速獲取所需信息。
+> - 法律顧問 用它來 獲取不動產的所有權信息，因為這能提高工作效率。
+> - 開發者 用它來 測試地籍數據提取功能，因為它提供了簡單的 API 接口。
+
+## 架構分析
+
+使用 FastAPI 提供 REST API，並通過 Playwright 控制無頭瀏覽器進行數據提取。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 自動化數據提取，節省人力成本。
+> - 支持 SPID 認證，簡化用戶體驗。
+> - 提供詳細的 API 文檔，易於集成。
+
+> [!danger] 缺點
+> - 需遵守 SISTER 端口的使用條款，存在法律風險。
+> - 可能會受到訪問限制，影響數據提取的穩定性。
 
 > [!warning] 注意事項
-> 使用自動化可能違反 SISTER 的服務條款。
+> - 使用者需自行遵守 SISTER 端口的使用條款。
+> - 可能會受到 SISTER 端口的訪問限制影響。
 
 ## 技術細節
 
@@ -142,11 +162,25 @@ uvicorn main:app --reload
 > 
 > ## Panoramica
 > 
-> Visura API permette di interrogare i dati catastali italian
+> Visura API permette di interrogare i dati catastali italiani tramite una semplice interfaccia HTTP. Il flusso operativo è diviso in due fasi:
+> 
+> | Fase | Endpoint | Descrizione |
+> |------|----------|-------------|
+> | **1 — Immobili** | `POST /visura` | Cerca gli immobili associati a foglio + particella |
+> | **2 — Intestati** | `POST /visura/intestati` | Recupera i titolari di uno specifico subalterno |
+> 
+> Entrambe le richieste vengono accodate ed eseguite sequenzialmente su un singolo browser autenticato al portale SISTER. I risultati si recuperano in polling con `GET /visura/{request_id}`.
+> 
+> ### Funzionalità principali
+> 
+> - **Autenticazione SPID automatizzata** via provider Sielte ID (CIE Sign) con push notification
+> - **Coda sequenziale** — le richieste vengono processate una alla volta per non sovraccaricare il portale
+> - **Ri-autenticazione automatica** — alla scadenza della sessione, il servizio tenta prima un recovery diretto e, solo se necessario, un nuovo login SPID
+> - **Keep-alive** — la sessione viene mantenuta attiva con un light keep-alive ogni
 
 ## 延伸閱讀
 
-相關概念：[[自動化數據提取]] · [[RESTful API]] · [[無頭瀏覽器]]
+相關概念：[[自動化數據提取]] · [[REST API]] · [[無頭瀏覽器]]
 
 [GitHub](https://github.com/zornade/visura-api)
 
