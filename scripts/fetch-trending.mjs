@@ -1789,7 +1789,6 @@ _關鍵文章、教學、論文..._
 _自己的話重新解釋，寫下使用心得和判斷_
 `;
 }
-}
 
 async function generateConceptNotes() {
   const { readdir } = await import('fs/promises');
