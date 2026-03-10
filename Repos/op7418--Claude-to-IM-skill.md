@@ -7,7 +7,7 @@ language: TypeScript
 license: MIT
 description: "Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark."
 homepage: ""
-stars: 825
+stars: 827
 stars_per_day: 165
 forks: 105
 open_issues: 35
@@ -15,7 +15,8 @@ created: 2026-03-05
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "其他"
+month: "2026-03"
+category: "開發工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -23,44 +24,51 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - 其他
-  - typescript
-  - chatbot
-  - claude
-  - claude_code
-  - discord
-  - feishu
+  - "category/開發工具"
+  - "lang/typescript"
+  - easy_install
+  - "topic/chatbot"
+  - "topic/claude"
+  - "topic/claude_code"
+  - "topic/discord"
+  - "topic/feishu"
 aliases:
   - "Claude-to-IM-skill"
   - "op7418/Claude-to-IM-skill"
-  - "將 Claude Code / Codex 連接到即時通訊平台，實現與 AI 編碼代理的對話。"
+  - "讓你在 Telegram、Discord、Feishu/Lark 等即時通訊平台上與 AI 編碼代理對話。"
 ---
 
 # Claude-to-IM-skill
 
-**825** stars · **165** stars/天 · 建立 5 天前 · TypeScript · MIT
+**827** stars · **165** stars/天 · 建立 5 天前 · TypeScript · MIT
 
 `easy-install`
 
 > [!summary] 一句話摘要
-> 將 Claude Code / Codex 連接到即時通訊平台，實現與 AI 編碼代理的對話。
+> 讓你在 Telegram、Discord、Feishu/Lark 等即時通訊平台上與 AI 編碼代理對話。
+
+> [!info] 速覽
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (165 stars/day)
+> **適合** 需要在多個即時通訊平台上與 AI 編碼助手互動的開發團隊。
+> **一句話重點** 這個專案展示了如何將 AI 編碼助手的強大功能直接整合到開發者日常使用的即時通訊工具中，極大地提升了工作效率。
 
 > [!abstract] 核心創新
-> 即時將 AI 編碼代理連接到多個即時通訊平台。
+> 這個專案的創新在於將 AI 編碼助手無縫集成到多個即時通訊平台中，實現即時互動。
 
 ## 專案簡介
 
-Claude-to-IM Skill 讓使用者可以在即時通訊平台（如 Telegram 和 Discord）上與 AI 編碼代理進行對話。這個專案的核心機制是運行一個後台守護進程，將 IM 機器人與 Claude Code 或 Codex 會話連接起來。使用者的消息會被轉發給 AI 編碼代理，並且 AI 的回應會通過 IM 平台返回。這個專案使用 TypeScript 和 Node.js 實現，並提供了互動式設置向導，簡化了配置過程。與其他 IM 機器人相比，這個專案的獨特之處在於它的即時性和多平台支持，使用者可以在多個即時通訊平台上進行交互。這個工具的效果是讓開發者能夠在熟悉的環境中與 AI 進行互動，但需要注意的是，對於不同平台的支持可能會有差異。總體來說，這是一個非常實用的工具，特別適合希望在即時通訊中集成 AI 功能的開發者。
+這個專案透過一個背景守護進程，將 IM 平台的訊息轉發到 Claude Code 或 Codex，並將 AI 的回應發送回聊天中。用戶只需執行 `/claude-to-im setup`，即可透過互動式向導完成設置，無需撰寫任何程式碼。它支持 Telegram、Discord、Feishu/Lark 和 QQ 四個平台，並提供即時回應流式顯示功能，讓用戶能夠即時看到 AI 的輸出。與其他類似工具相比，它的權限控制更為嚴格，要求用戶對工具調用進行明確批准，這在 Telegram 和 Discord 中以按鈕形式呈現，而在 Feishu 和 QQ 中則使用文本命令。這個工具的會話持久性意味著即使守護進程重啟，對話也不會丟失。它需要 Node.js 20 以上版本和已認證的 Claude Code 或 Codex CLI。整體來看，這是一個相對成熟的專案，適合中小型團隊使用，特別是那些需要在多個 IM 平台上進行 AI 編程互動的團隊。建議在需要快速集成 AI 編碼助手時使用，但如果團隊需要更複雜的 GUI 介面，則可以考慮 CodePilot。
 
-**技術棧**：`TypeScript` · `Node.js`
+**技術棧**：`Node.js 20` · `TypeScript` · `Shell` · `PowerShell` · `JavaScript`
 
 ## 重點功能
 
-- 支持多個即時通訊平台（Telegram、Discord 等）。
-- 互動式設置向導，簡化配置過程。
-- 支持權限控制，確保安全性。
-- 即時回應，提升使用體驗。
-- 會話持久性，保留對話歷史。
+- 四個即時通訊平台支持 — 同時支持 Telegram、Discord、Feishu/Lark 和 QQ。
+- 互動式設置 — 使用向導收集 API 令牌，提供逐步指導。
+- 權限控制 — 工具調用需要用戶通過按鈕或文本命令明確批准。
+- 流式預覽 — 在 Telegram 和 Discord 中即時顯示 Claude 的回應。
+- 會話持久性 — 即使守護進程重啟，對話也不會丟失。
+- 秘密保護 — 令牌以 `chmod 600` 存儲，並在所有日誌中自動隱藏。
 
 ## 快速開始
 
@@ -68,7 +76,17 @@ Claude-to-IM Skill 讓使用者可以在即時通訊平台（如 Telegram 和 Di
 ```bash
 npx skills add op7418/Claude-to-IM-skill
 ```
-2. 運行設置命令
+2. 設置技能
+```bash
+/claude-to-im setup
+```
+3. 啟動守護進程
+```bash
+/claude-to-im start
+```
+
+## 程式碼範例
+
 ```bash
 /claude-to-im setup
 ```
@@ -76,34 +94,46 @@ npx skills add op7418/Claude-to-IM-skill
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著即時通訊工具的普及，開發者希望能在這些平台上與 AI 進行互動，這使得 Claude-to-IM Skill 這樣的工具變得越來越重要。作者的背景也使得這個專案在技術社群中引起了關注。
+> 專案的作者擁有開發多個相關工具的背景，並且這個專案切中了開發者在即時通訊平台上進行 AI 編碼互動的需求。隨著 AI 技術的普及，許多開發者希望能在熟悉的環境中進行編碼，而不必切換到其他工具。這個專案的推出恰好滿足了這一需求。
 
 ## 適合誰使用
 
-**目標受眾**：希望在即時通訊平台上集成 AI 功能的開發者和使用者。
+**目標受眾**：需要在多個即時通訊平台上與 AI 編碼助手互動的開發團隊。
 
 > [!example] 使用場景
-> - 開發者 用它來 在即時通訊中獲取 AI 的編碼建議，因為這樣可以提高工作效率。
-> - 團隊成員 用它來 與 AI 進行協作，因為可以隨時隨地獲取幫助。
-> - 學生 用它來 在學習過程中獲取即時的編碼指導，因為這樣可以加速學習。
+> - 後端工程師用它來在 Discord 上與 AI 進行即時編碼對話，因為這樣可以快速獲得代碼建議，節省了查找資料的時間。
+> - 全端開發者用它來在 Telegram 中請求代碼片段，因為即時回應能提高開發效率，特別是在進行快速原型開發時。
+> - 產品經理用它來在 Feishu 中詢問技術問題，因為能夠直接與 AI 互動，讓他們更快理解技術限制和可能性。
 
 ## 架構分析
 
-這個專案運行一個後台守護進程，將 IM 機器人與 Claude Code 或 Codex 會話連接，實現即時的交互。
+這是一個基於 CLI 的單體應用，架構模式為單體。用戶輸入 → 背景守護進程處理 → AI 編碼代理回應。關鍵技術決策包括使用 Node.js 作為後端技術，並通過 IM 平台的 API 進行通訊。專案目錄結構中，重要檔案包括 `README.md` 和安裝腳本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 多平台支持，方便使用者在不同環境中使用。
-> - 即時性強，提升交互體驗。
+> - 支持多個即時通訊平台，靈活性高。
+> - 設置過程簡單，無需編碼知識。
+> - 即時回應流式顯示，提升互動體驗。
+> - 強大的權限控制，保障安全性。
 
 > [!danger] 缺點
-> - 不同平台的支持可能會有差異。
-> - 需要 Node.js 環境支持。
+> - 缺乏 GUI 支持，對於不熟悉 CLI 的用戶不友好。
+> - 僅支持特定版本的 Node.js，限制使用範圍。
+> - 對於大型團隊可能需要更多的管理工具。
+> - 功能相對簡單，無法滿足高級用戶的需求。
 
 > [!warning] 注意事項
-> - 不同平台的支持可能會有差異。
-> - 需要 Node.js 環境支持。
+> - 僅支援 Node.js 20 以上版本。
+> - 需要已認證的 Claude Code CLI 或 Codex CLI。
+> - 不支援自定義 IM 平台，僅限於列舉的四個平台。
+> - 目前僅提供 CLI 介面，缺乏 GUI 支持。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [[op7418--CodePilot\|op7418/CodePilot]] | CodePilot 提供完整的桌面應用程式和可視化聊天介面，適合需要圖形化操作的用戶，而 Claude-to-IM-skill 則專注於輕量級的 CLI 解決方案。 |
 
 ## 技術細節
 
@@ -129,6 +159,11 @@ npx skills add op7418/Claude-to-IM-skill
 > | --- | --- |
 > | [@op7418](https://github.com/op7418) | 3 |
 > | [@yoka1234](https://github.com/yoka1234) | 1 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，有定期更新和回應。
+**連結**：[文件](https://github.com/op7418/Claude-to-IM-skill/blob/main/README_CN.md)
 
 ## README 摘錄
 
@@ -194,15 +229,66 @@ npx skills add op7418/Claude-to-IM-skill
 > ```bash
 > git clone https://github.com/op7418/Claude-to-IM-skill.git ~/code/Claude-to-IM-skill
 > mkdir -p ~/.claude/skills
-> ln -s ~/code/Claude-to-IM-skill ~/.claude/skil
+> ln -s ~/code/Claude-to-IM-skill ~/.claude/skills/claude-to-im
+> ```
+> 
+> ### Codex
+> 
+> If you use [Codex](https://github.com/openai/codex), clone directly into the Codex skills directory:
+> 
+> ```bash
+> git clone https://github.com/op7418/Claude-to-IM-skill.git ~/.codex/skills/claude-to-im
+> ```
+> 
+> Or use the provided install script for automatic dependency installation and build:
+> 
+> ```bash
+> # Clone and install (copy mode)
+> git clone https://github.com/op7418/Claude-to-IM-skill.git ~/code/Claude-to-IM-skill
+> bash ~/code/Claude-to-IM-skill/scripts/install-codex.sh
+> 
+> # Or use symlink mode for development
+> bash ~/code/Claude-to-IM-skill/scripts/install-codex.sh --link
+> ```
+> 
+> ### Verify installation
+> 
+> **Claude Code:** Start a new session and type `/` — you should see `claude-to-im` in the skill list. Or ask Claude: "What skills are available?"
+> 
+> **Codex:** Start a new session and say "claude-to-im setup" or "start bridge" — Codex will recognize the skill and run the setup wizard.
+> 
+> ## Quick Start
+> 
+> ### 1. Setup
+> 
+> ```
+> /claude-to-im setup
+> ```
+> 
+> The wizard will guide you through:
+> 
+> 1. **Choose channels** — pick Telegram, Discord, Feishu, QQ, or any combination
+> 2. **Enter credentials** — the wizard explains exactly where to get each token, which settings to enable, and what permissions to grant
+> 3. **Set defaults** — working directory, model, and mode
+> 4. **Validate** — tokens are verified against platform APIs immediately
+> 
+> ### 2. Start
+> 
+> ```
+> /claude-to-im start
+> ```
+> 
+> The daemon starts in the background. You can close the terminal — it keeps running.
+> 
+> ### 3. Chat
+> 
+> O
 
 ## 延伸閱讀
 
-相關概念：[[即時通訊]] · [[AI 編碼代理]] · [[多平台支持]]
+相關概念：[[CLI/TUI]] · [[自動化測試]] · [[機器學習]]
 
 [GitHub](https://github.com/op7418/Claude-to-IM-skill)
-
-
 
 ## 相關收錄
 
@@ -210,7 +296,7 @@ npx skills add op7418/Claude-to-IM-skill
 > ```dataview
 > LIST
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "op7418--Claude-to-IM-skill"
+> WHERE category = "開發工具" AND file.name != "op7418--Claude-to-IM-skill"
 > SORT stars DESC
 > LIMIT 8
 > ```

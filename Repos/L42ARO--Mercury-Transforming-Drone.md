@@ -7,7 +7,7 @@ language: Python
 license: CERN-OHL-S-2.0
 description: "Mercury is a transforming drone anyone can build that can be adapted for many use cases thanks to it's versatile mobility, wide range of sensors, and cargo bay area"
 homepage: ""
-stars: 356
+stars: 357
 stars_per_day: 89
 forks: 44
 open_issues: 0
@@ -15,6 +15,7 @@ created: 2026-03-06
 pushed_at: 2026-03-07
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "其他"
 release_tag: ""
 install_complexity: "medium"
@@ -23,87 +24,89 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - 其他
-  - python
+  - "category/其他"
+  - "lang/python"
 aliases:
   - "Mercury-Transforming-Drone"
   - "L42ARO/Mercury-Transforming-Drone"
-  - "讓任何人都能組裝一台具多功能的變形無人機，適用於各種用途。"
+  - "讓任何人都能打造一款可變形的多用途無人機，具備多種感測器和貨艙空間。"
 ---
 
 # Mercury-Transforming-Drone
 
-**356** stars · **89** stars/天 · 建立 4 天前 · Python · CERN-OHL-S-2.0
+**357** stars · **89** stars/天 · 建立 4 天前 · Python · CERN-OHL-S-2.0
 
 > [!summary] 一句話摘要
-> 讓任何人都能組裝一台具多功能的變形無人機，適用於各種用途。
+> 讓任何人都能打造一款可變形的多用途無人機，具備多種感測器和貨艙空間。
 
-> [!abstract] 核心創新
-> 這個專案的創新點在於其可變形設計和多功能感測器的整合，讓無人機能夠適應不同的使用場景。
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (89 stars/day)
+> **適合** 對無人機有興趣且希望自己動手組裝的開發者和愛好者。
+> **一句話重點** 這款無人機的設計不僅展示了開源硬體的潛力，也讓 DIY 愛好者能夠實現自己的無人機夢想。
 
 ## 專案簡介
 
-這個專案提供了一個可組裝的變形無人機，具備多種感測器和載貨空間，適合不同的應用場景。它的核心機制是透過簡單的變形機構和內部載貨艙，讓無人機能夠在不同環境中靈活運行。技術上使用了 Raspberry Pi 和 Ardupilot，搭配 RGB、深度和熱成像攝影機，實現高效的自動駕駛功能。與其他無人機相比，Mercury 的獨特之處在於其可變形設計和廣泛的感測器選擇，讓使用者能夠根據需求進行調整。實際使用中，這款無人機的載重能力為 1 公斤，適合多種應用，但在戶外風速過大時可能會影響穩定性。整體來說，這個專案非常適合對無人機有興趣的開發者和愛好者，值得一試。
+這個專案提供了一個可變形的無人機設計，使用者可以根據需求進行組裝和改造。它的核心機制是透過簡單的變形機構，結合 RGB、深度和熱成像攝影機，實現多種功能。專案使用了 Raspberry Pi 5 和 Ardupilot 作為控制系統，並支持 GPS 定位，讓無人機能夠自動導航。與傳統無人機相比，Mercury 的獨特之處在於其內部貨艙可容納 1 公斤的有效載荷，並且有多種感測器選擇，適合不同的應用場景。使用者可以透過提供的 STL 檔案進行 3D 打印，並且有詳細的材料清單以便於組裝。這款無人機的設計適合 DIY 愛好者和小型團隊，能夠在多種環境下運行。專案目前處於 beta 階段，對於喜歡實驗的開發者來說非常值得一試。建議在有一定硬體基礎的情況下使用，對於初學者可能需要額外的學習成本。
 
-**技術棧**：`Raspberry Pi` · `Ardupilot` · `Python`
+**技術棧**：`Python` · `TypeScript` · `C++` · `Shell`
 
 ## 重點功能
 
-- 具備 1 公斤的內部載貨艙。
-- 簡單的變形機構，快速轉換模式。
-- 搭載 RGB、深度和熱成像攝影機。
-- 支援 Ardupilot 和 GPS 自動駕駛。
-- 提供完整的組裝 STL 檔案和電路板檔案。
+- 內部貨艙 — 可容納 1 公斤的有效載荷，適合搭載各種感測器。
+- 簡單變形機構 — 使無人機能夠在不同模式間快速切換。
+- 多種感測器選擇 — 包括 RGB、深度和熱成像攝影機，滿足不同應用需求。
+- 使用 Raspberry Pi 5 和 Ardupilot — 提供穩定的控制系統和自動導航功能。
+- 詳細材料清單 — 包含所有組裝所需的硬體連結，方便使用者購買。
 
 ## 快速開始
 
-1. 下載所需的 STL 檔案和電路板檔案
+1. 下載 STL 檔案
 ```bash
-git clone https://github.com/L42ARO/Mercury-Transforming-Drone
+git clone https://github.com/L42ARO/Mercury-Transforming-Drone.git
 ```
-2. 組裝無人機，根據說明書安裝各部件
+2. 組裝無人機
 ```bash
-參考 README 中的組裝指南
+使用提供的材料清單購買所需硬體並組裝。
 ```
-3. 安裝 Raspberry Pi 和相關軟體
+3. 安裝軟體
 ```bash
-依照 README 中的軟體設置步驟進行
+參考 Software Setup 部分進行軟體安裝。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 專案的創作者 L42ARO 和 Agonat0r 具備豐富的無人機開發經驗，這使得這個專案能夠切中 DIY 無人機愛好者的需求。隨著無人機技術的普及，越來越多的人希望能夠自己組裝和改裝無人機，而 Mercury 提供了這樣的可能性。近年來，無人機在各行各業的應用越來越廣泛，這也促使了該專案的興起。
+> 作者 L42ARO 和 Agonat0r 具備豐富的無人機開發經驗，這款無人機切中了 DIY 和開源硬體的需求。隨著無人機技術的普及，越來越多的人希望能夠自己動手組裝和改造無人機，這使得 Mercury 的市場需求上升。最近的無人機技術進步也讓這個專案的實現變得更加可行。
 
 ## 適合誰使用
 
-**目標受眾**：對無人機組裝和自動化感興趣的開發者和愛好者。
+**目標受眾**：對無人機有興趣且希望自己動手組裝的開發者和愛好者。
 
 > [!example] 使用場景
-> - 工程師用它來開發自動化監測系統，因為它的多種感測器可以適應不同環境。
-> - 學生用它來學習無人機組裝和編程，因為這是一個實用的實驗平台。
-> - 業餘愛好者用它來拍攝空中攝影，因為它的變形設計使得拍攝角度更加靈活。
+> - 機器人愛好者用它來組裝一款可變形的無人機，因為這樣可以根據不同需求進行改造，提升使用的靈活性。
+> - 環境監測專家用它來搭載各種感測器進行數據收集，因為其內部貨艙設計可容納多種設備，方便進行實地測試。
+> - 教育工作者用它來進行無人機相關的實驗教學，因為提供了詳細的組裝指南和開源設計，適合學生學習和實踐。
 
 ## 架構分析
 
-專案採用前後端分離架構，硬體部分由 Raspberry Pi 控制，並搭配各種感測器進行數據收集和處理。無人機的運行邏輯由 Ardupilot 提供，實現自動駕駛功能。
+這是一個開源的單體專案，使用者可以下載 STL 檔案和軟體進行組裝和操作。用戶輸入 → 組裝無人機 → 控制無人機飛行。關鍵技術決策包括使用 Raspberry Pi 5 作為控制器，並結合 Ardupilot 進行自動導航。專案目錄結構包含 STL Files、Autonomy Software 和 PCB Files 等資料夾，方便使用者查找所需資源。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 可組裝性高，適合 DIY 愛好者。
-> - 多種感測器選擇，適應性強。
-> - 變形設計提升了使用靈活性。
+> - 開源設計，使用者可以自由修改和擴展功能。
+> - 多用途設計，適合不同的應用場景。
+> - 提供詳細的組裝指南和材料清單，降低進入門檻。
 
 > [!danger] 缺點
-> - 組裝過程需要一定的技術知識。
-> - 在特定環境下可能影響穩定性。
-> - 文件和資源主要以英文提供。
+> - 需要一定的技術背景，對初學者不太友好。
+> - 目前的文檔和支援有限，可能需要自行摸索。
+> - 組裝過程可能較為繁瑣，需花費時間和精力。
 
 > [!warning] 注意事項
-> - 在強風環境中穩定性可能受影響。
-> - 需要一定的電子和機械知識來組裝。
-> - 目前僅提供英文文件，對於非英語使用者可能不太友好。
+> - 需要一定的硬體組裝經驗，對初學者可能有挑戰。
+> - 目前僅提供英文文檔，對非英語使用者不太友好。
+> - 不支援即時技術支援，使用者需自行解決問題。
 
 ## 技術細節
 
@@ -132,6 +135,11 @@ git clone https://github.com/L42ARO/Mercury-Transforming-Drone
 > | --- | --- |
 > | [@L42ARO](https://github.com/L42ARO) | 12 |
 > | [@Agonat0r](https://github.com/Agonat0r) | 1 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍，提供 Discord 支援和交流平台。
+**連結**：[Discord](https://discord.gg/ZudrWv6E)
 
 ## README 摘錄
 
@@ -206,15 +214,45 @@ git clone https://github.com/L42ARO/Mercury-Transforming-Drone
 > | CF 30 cm x 30 cm (for frame) | 2 | [Buy](https://a.co/d/0dzbtn5p) |
 > | 8 awg cable | 1 | [Buy](https://www.amazon.com/dp/B07B8N6751) |
 > | T Plug Pairs | 2 | [Buy](https://www.amazon.com/dp/B01C8NWJ78) |
-> | XT60 Male & Female | 1 | [Buy](https://www.amazon.com/dp/B0CMM1BBDQ
+> | XT60 Male & Female | 1 | [Buy](https://www.amazon.com/dp/B0CMM1BBDQ) |
+> | IMU (MPU 9250) | 2 | [Buy](https://www.amazon.com/dp/B01I1J0Z7Y) |
+> | TOF Camera | 1 | [Buy](https://www.amazon.com/dp/B0BRB12W7Y) |
+> | ESP32S3 | 1 | [Buy](https://a.co/d/0fMawJYb) |
+> | USB Webcam | 1 | [Buy](https://a.co/d/dZ3TK0W) |
+> | Buck Converter | 3 | [Buy](https://a.co/d/iBVBORv) |
+> | Radiolink R8XM | 1 | [Buy](https://www.amazon.com/dp/B0BCPDLWXZ) |
+> | DRV8871 H Bridge | 2 | [Buy](https://a.co/d/iBVBORv) |
+> | Cube + Flight Controller | 1 | [Buy](https://a.co/d/19FUWXO) |
+> | SEQURE 4in1 ESC 70A | 1 | [Buy](https://a.co/d/5X12oWn) |
+> | Custom PCBs | 3 | EasyEDA |
+> | BLDC Motor 140KV (for driving) | 2 | [Buy](https://a.co/d/iKZayiN) |
+> | Optical Flow MTF-01 | 1 | [Buy](https://www.ewingaerospace.com/products/ewing-aerospace-h7-flight-controller-ndaa-compliant-and-blueuas) |
+> | Thermal Camera | 1 | [Buy](https://a.co/d/dZ3TK0W) |
+> | Bidirectional ESC 50A (for driving) | 2 | [Buy](https://a.co/d/00C138fG) |
+> 
+> ## CAD Files
+> 
+> The STL files are available to download in the [STL Files](STL%20Files) folder. If STL files aren't good enough feel free to [JOIN OUR PATERON](https://www.patreon.com/c/MercuriusTech) for access to the full CAD project as well as SLDPRT and STEP files.
+> 
+> | Name | Qty | Material | Density |
+> |------|-----|----------|---------|
+> | [Arm - Left](STL%20Files/Arm%20-%20Left.stl) | 1 | Black PLA-CF | 10% |
+> | [Arm - Right](STL%20Files/Arm%20-%20Right.stl) | 1 | Black PLA-CF | 10% |
+> | [BLDC Holder - Left](STL%20Files/BLDC%20Holder%20-%20Left.stl) | 1 | Black PLA-CF | 10% |
+> | [BLDC Holder - Right](STL%20Files/BLDC%20Holder%20-%20Right.stl) | 1 | Black PLA-CF | 10% |
+> | [CargoBay - Base](STL%20Files/CargoBay%20-%20Base.stl) | 1 | Black PLA-CF | 10% |
+> | [CargoBay - Battery Holder 1](STL%20Files/CargoBay%20-%20Battery%20Holder%201.stl) | 1 | Black PLA-CF | 10% |
+> | [CargoBay - Battery Holder 2](STL%20Files/CargoBay%20-%20Battery%20Holder%202.stl) | 1 | Black PLA-CF | 10% |
+> | [CargoBay - Battery Holder 3](STL%20Files/CargoBay%20-%20Battery%20Holder%203.stl) | 1 | Black PLA-CF | 10% |
+> | [CargoBay - Battery Holder 4](STL%20Files/CargoBay%20-%20Battery%20Holder%204.stl) | 1 | Black PLA-CF | 10% |
+> | [CargoBay - Cover](STL%20Files/CargoBay%20-%20Cover.stl) | 1 | White Aero PLA | 0–5% |
+> | [Cover - Base](STL%20Files/Cover%20-%20Base.
 
 ## 延伸閱讀
 
-相關概念：[[無人機技術]] · [[自動駕駛系統]] · [[感測器整合]]
+相關概念：[[機器學習]] · [[自動化測試]] · [[開源硬體]]
 
 [GitHub](https://github.com/L42ARO/Mercury-Transforming-Drone)
-
-
 
 ## 相關收錄
 

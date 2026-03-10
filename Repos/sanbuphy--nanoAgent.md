@@ -15,6 +15,7 @@ created: 2026-03-03
 pushed_at: 2026-03-06
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "開發工具"
 release_tag: ""
 install_complexity: "easy"
@@ -29,7 +30,7 @@ tags:
 aliases:
   - "nanoAgent"
   - "sanbuphy/nanoAgent"
-  - "簡單的 AI agent 實作，能夠執行系統命令和文件操作。"
+  - "提供一個簡單的方式來建立能與系統互動的 AI agent。"
 ---
 
 # nanoAgent
@@ -39,24 +40,29 @@ aliases:
 `easy-install`
 
 > [!summary] 一句話摘要
-> 簡單的 AI agent 實作，能夠執行系統命令和文件操作。
+> 提供一個簡單的方式來建立能與系統互動的 AI agent。
+
+> [!info] 速覽
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (49 stars/day)
+> **適合** 希望快速建立能與系統互動的 AI agent 的獨立開發者。
+> **一句話重點** nanoAgent 的設計理念在於簡化 AI agent 的開發流程，使得開發者能夠更專注於任務本身，而不是底層實作細節。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個簡單的 AI agent 實作，能夠輕鬆執行系統命令和文件操作。
+> 這個專案提供了一個簡單而有效的方式來構建能與系統互動的 AI agent。
 
 ## 專案簡介
 
-這是一個簡化的 AI agent 實作，能夠透過 OpenAI 的功能調用來執行 bash 命令、讀取和寫入文件。核心邏輯是透過一個循環來接收用戶任務，決定使用哪些工具來執行，並返回結果。與其他複雜的 agent 框架相比，這個專案的代碼量非常少，約 100 行，適合快速上手和學習。使用者可以輕鬆地在本地環境中執行各種系統操作，並且不需要繁瑣的設置。這個專案的限制在於功能較為基礎，適合於簡單的任務自動化，但不適合處理複雜的工作流。整體來說，這是一個值得嘗試的工具，特別是對於初學者或需要快速解決簡單任務的開發者。
+nanoAgent 是一個輕量級的 AI agent 實作，利用 OpenAI 的功能調用來執行任務。用戶可以透過簡單的指令，讓 agent 執行 bash 命令、讀取和寫入文件，整個過程僅需約 100 行 Python 代碼。它的運作流程是：接收用戶任務 → 決定使用的工具 → 執行工具 → 返回結果，並重複直到任務完成。這個專案的技術基礎是 OpenAI 的 API，並且有針對工具調用的錯誤處理機制，能夠在遇到無效的 JSON 參數時不會崩潰。與其他 AI agent 相比，nanoAgent 的優勢在於其簡單性和可擴展性，適合快速開發和測試。實際使用中，這個 agent 能夠有效執行多種系統操作，但仍然依賴於 OpenAI 的 API，這可能會影響其性能和可用性。這個專案目前處於 alpha 階段，適合小型團隊或個人開發者使用。若需要快速原型或自動化簡單任務，這個工具非常合適；但若要處理更複雜的業務邏輯，則可能需要更強大的框架。
 
-**技術棧**：`Python`
+**技術棧**：`Python 3.8+` · `OpenAI API`
 
 ## 重點功能
 
-- 執行任意 bash 命令。
-- 讀取文件內容。
-- 寫入文件內容。
-- 簡單的功能調用架構，易於理解。
-- 支持多平台環境。
+- 執行 bash 命令 — 使用 `execute_bash` 功能執行任意 bash 指令。
+- 讀取文件內容 — 使用 `read_file` 功能讀取指定文件的內容。
+- 寫入文件 — 使用 `write_file` 功能將內容寫入指定文件。
+- 簡單的 API 調用 — 透過 `python agent.py '指令'` 來執行任務，無需複雜配置。
+- 錯誤處理機制 — 能夠處理無效的工具調用，避免 agent 崩潰。
 
 ## 快速開始
 
@@ -73,38 +79,58 @@ export OPENAI_API_KEY='your-key-here'
 python agent.py 'list all python files in current directory'
 ```
 
+## 程式碼範例
+
+python
+# 定義工具
+
+tools = [{"type": "function", "function": {...}}]
+
+# Agent 循環
+for _ in range(max_iterations):
+    response = client.chat.completions.create(model=model, messages=messages, tools=tools)
+    if not response.choices[0].message.tool_calls:
+        return response.choices[0].message.content
+
+    # 執行工具調用
+    for tool_call in response.choices[0].message.tool_calls:
+        result = available_functions[tool_call.function.name](**args)
+        messages.append({"role": "tool", "content": result})
+
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者提供了一個簡單明瞭的實作，讓開發者能夠快速理解 AI agent 的運作方式。隨著 AI 技術的普及，對於簡單易用的工具需求上升，這個專案正好滿足了這一需求。
+> 作者 sanbuphy 和其他貢獻者在開源社群中有一定的知名度，這個專案直接滿足了開發者對簡單 AI agent 的需求。隨著 OpenAI API 的普及，越來越多的開發者希望能快速構建與系統互動的工具，這使得 nanoAgent 在這個時候特別受歡迎。
 
 ## 適合誰使用
 
-**目標受眾**：對 AI agent 有興趣的開發者和系統管理員。
+**目標受眾**：希望快速建立能與系統互動的 AI agent 的獨立開發者。
 
 > [!example] 使用場景
-> - 系統管理員 用它來 自動化執行系統命令，因為這樣可以節省時間和精力。
-> - 開發者 用它來 讀取和寫入文件，因為這樣可以簡化日常的開發任務。
-> - 測試工程師 用它來 快速檢查文件內容，因為這樣可以提高測試效率。
+> - 系統管理員用它來自動化日常系統檢查，因為可以透過簡單指令快速獲取系統狀態。
+> - 資料科學家用它來讀取和處理數據文件，因為能夠直接在命令行中執行文件操作，省去繁瑣的步驟。
+> - 開發者用它來快速生成和測試腳本，因為只需簡單的自然語言指令即可完成多步驟任務。
 
 ## 架構分析
 
-該專案的架構非常簡單，主要透過一個循環來接收用戶任務並執行相應的工具，直到任務完成。
+這是一個單體架構的 CLI 工具，核心資料流為：用戶輸入 → agent 處理 → 執行工具 → 返回結果。關鍵技術決策是使用 OpenAI 的功能調用來簡化 agent 的設計。專案目錄結構中，主要的執行檔為 `agent.py`，並且有一個 `requirements.txt` 文件來管理依賴。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 代碼簡潔，易於理解和修改。
-> - 能夠快速執行簡單的系統任務。
-> - 支持多種操作系統。
+> - 簡單易用，適合快速原型開發。
+> - 具備基本的錯誤處理機制，增強穩定性。
+> - 能夠執行多種系統操作，靈活性高。
 
 > [!danger] 缺點
-> - 功能較為基礎，無法處理複雜的工作流。
-> - 依賴 OpenAI API，可能會有使用限制。
+> - 功能較為基礎，無法處理複雜任務。
+> - 依賴外部 API，可能會受到調用限制。
+> - 目前僅支援 Python，對其他語言的開發者不友好。
 
 > [!warning] 注意事項
-> - 功能相對基礎，無法處理複雜任務。
-> - 需要 OpenAI API 金鑰才能運行。
+> - 依賴 OpenAI API，可能會受到調用限制。
+> - 不支持複雜的業務邏輯處理，適合簡單任務。
+> - 目前僅支援 Python，無法直接在其他語言環境中使用。
 
 ## 技術細節
 
@@ -217,11 +243,25 @@ python agent.py 'list all python files in current directory'
 > python agent.py "what's my current directory and what files are in it?"
 > 
 > # File operations
-> pytho
+> python agent.py "create a python script that prints hello world"
+> 
+> # Combined tasks
+> python agent.py "find all .py files and count total lines of code"
+> ```
+> 
+> ---
+> 
+> ## license
+> 
+> MIT
+> 
+> ────────────────────────────────────────
+> 
+> ⏺ *Like a single seed that grows into a forest, one file becomes infinite possibilities.*
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化測試]] · [[機器學習]]
+相關概念：[[Agent 框架]] · [[自動化測試]] · [[CLI/TUI]]
 
 [GitHub](https://github.com/sanbuphy/nanoAgent)
 

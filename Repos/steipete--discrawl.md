@@ -15,7 +15,8 @@ created: 2026-03-07
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "CLI 工具"
+month: "2026-03"
+category: "開發工具"
 release_tag: "v0.1.0"
 install_complexity: "medium"
 status: to-review
@@ -23,12 +24,12 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - "category/cli_工具"
+  - "category/開發工具"
   - "lang/go"
 aliases:
   - "discrawl"
   - "steipete/discrawl"
-  - "將 Discord 伺服器歷史數據鏡像到 SQLite，便於本地搜索和查詢。"
+  - "將 Discord 伺服器資料鏡像到本地 SQLite，方便快速搜尋歷史紀錄。"
 ---
 
 # discrawl
@@ -38,72 +39,85 @@ aliases:
 `個人專案` `v0.1.0`
 
 > [!summary] 一句話摘要
-> 將 Discord 伺服器歷史數據鏡像到 SQLite，便於本地搜索和查詢。
+> 將 Discord 伺服器資料鏡像到本地 SQLite，方便快速搜尋歷史紀錄。
+
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (161 stars/day)
+> **適合** 需要在 Discord 上進行本地資料分析的社群管理員和開發者。
+> **一句話重點** 這個專案展示了如何安全地將 Discord 資料本地化，並提供強大的搜尋功能，讓使用者不再依賴 Discord 的搜尋系統。
 
 > [!abstract] 核心創新
-> 這個工具能夠將 Discord 數據鏡像到本地 SQLite，實現快速查詢和分析。
+> 這個專案的創新在於它提供了一個安全且高效的方式來本地化 Discord 伺服器的資料，並且不依賴使用者 token。
 
 ## 專案簡介
 
-這個 CLI 工具能夠將 Discord 伺服器的數據鏡像到本地的 SQLite 數據庫，讓用戶可以不依賴 Discord 的搜索功能來查詢伺服器歷史。它能夠發現所有可訪問的公會，並同步頻道、成員和消息歷史，並維護全文搜索索引以便快速查詢。與其他 Discord 數據存儲工具相比，這個專案不需要用戶令牌，數據完全保存在本地，並且支持多公會的架構設計。使用者可以透過 SQL 查詢進行即時分析，這對於需要深入了解伺服器活動的開發者和管理員來說非常有用。這個工具的限制在於需要正確配置 Discord 機器人權限，否則可能無法完整同步數據。整體來看，這是一個功能強大且實用的工具，特別適合需要本地數據分析的 Discord 管理員。
+這個工具 `discrawl` 透過 Discord bot token 將伺服器的頻道、成員及訊息歷史同步到本地 SQLite 資料庫，讓使用者可以不依賴 Discord 的搜尋功能進行快速查詢。它會發現可訪問的所有公會，並維護 FTS5 搜尋索引以加速本地文本搜尋，並且支持即時更新。技術上，`discrawl` 是用 Go 語言實作，並且支援並行處理以提升同步效能，預設的並行數量可根據 `GOMAXPROCS` 自動調整，範圍在 8 到 32 之間。與其他 Discord 資料抓取工具相比，`discrawl` 的獨特之處在於它不需要使用者 token，所有資料都保持在本地，這降低了安全風險。使用者可以透過 SQL 查詢進行即時分析，並且支援多公會的架構設計。對於需要長期保存 Discord 訊息的團隊來說，這是一個非常實用的工具，但需要注意的是，使用者必須確保 bot 擁有足夠的權限來讀取訊息歷史。這個專案目前處於 beta 階段，適合中小型團隊使用，尤其是需要本地化資料分析的情境。
 
-**技術棧**：`Go`
+**技術棧**：`Go 1.26+` · `SQLite`
 
 ## 重點功能
 
-- 將 Discord 伺服器數據鏡像到本地 SQLite。
-- 支持多公會的數據同步。
-- 維護全文搜索索引以便快速查詢。
-- 提供即時 SQL 查詢功能。
-- 不需要用戶令牌，數據完全保存在本地。
+- 全自動同步 — 使用 `sync` 指令將 Discord 伺服器的頻道、成員及訊息歷史同步到 SQLite。
+- 快速搜尋 — 支援 FTS5 索引，使用 `search` 指令可快速查詢歷史訊息。
+- 即時更新 — 使用 `tail` 指令可實時監控 Discord Gateway 事件，並進行定期修復同步。
+- 多公會支援 — 自動發現可訪問的所有公會，並可針對特定公會進行操作。
+- 簡單的配置 — 透過 `init` 指令快速建立本地配置，並自動發現可訪問的公會。
 
 ## 快速開始
 
-1. 設置 Discord 機器人權限
-```bash
-確保機器人可以讀取消息歷史。
-```
-2. 初始化 discrawl
+1. 建立本地配置並發現公會
 ```bash
 bin/discrawl init
 ```
-3. 開始同步數據
+2. 檢查配置是否正確
 ```bash
-bin/discrawl sync
+bin/discrawl doctor
+```
+3. 全量同步 Discord 資料
+```bash
+bin/discrawl sync --full
+```
+
+## 程式碼範例
+
+```bash
+bin/discrawl search "panic: nil pointer"
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著 Discord 使用者的增加，對於數據存取和分析的需求也隨之上升，這個專案正好滿足了這一需求。作者的背景和經驗使得這個工具在功能上更加完善，吸引了許多用戶的關注。
+> 作者 steipete 在 Discord 開發社群中活躍，這個工具切中許多使用者對於資料本地化的需求，特別是在 Discord 的搜尋功能不夠強大的情況下。隨著 Discord 使用者數量的增加，對於資料存取和分析的需求也隨之上升，因此這個專案在近期獲得了更多關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要本地分析 Discord 伺服器數據的管理員和開發者。
+**目標受眾**：需要在 Discord 上進行本地資料分析的社群管理員和開發者。
 
 > [!example] 使用場景
-> - Discord 管理員 用它來 本地查詢伺服器歷史，因為這樣可以更方便地分析伺服器活動。
-> - 開發者 用它來 進行伺服器數據分析，因為這樣可以獲得更深入的洞察。
-> - 數據科學家 用它來 對 Discord 數據進行即時查詢，因為這樣可以快速獲取所需信息。
+> - 社群管理員用它來備份 Discord 伺服器的歷史訊息，因為這樣可以避免依賴 Discord 的搜尋功能，並且能夠快速查詢過去的對話紀錄。
+> - 開發者用它來分析 Discord 伺服器的使用情況，因為它提供了 SQL 查詢的能力，能夠針對特定的訊息進行深入分析。
+> - 數據分析師用它來生成 Discord 伺服器的互動報告，因為它能夠將訊息和成員互動數據整合到 SQLite 中，方便後續的資料視覺化。
 
 ## 架構分析
 
-該工具的架構基於 Go 語言，能夠發現 Discord 公會並同步數據到本地 SQLite，並維護搜索索引以便快速查詢。
+這是一個 CLI 工具，使用單體架構。用戶輸入 → `discrawl` 進行資料同步 → 輸出到 SQLite 資料庫。關鍵技術決策包括使用 FTS5 進行快速搜尋和支持多公會的設計。專案的目錄結構包含 `cmd/discrawl` 作為主要執行檔。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 數據完全保存在本地，無需依賴 Discord。
-> - 支持多公會的數據同步，靈活性高。
-> - 提供即時 SQL 查詢功能，便於分析。
+> - 資料完全本地化，安全性高。
+> - 支援快速搜尋和即時更新，提升使用效率。
+> - 簡單的配置流程，易於上手。
 
 > [!danger] 缺點
-> - 需要正確配置機器人權限，否則無法完整同步數據。
-> - 對於大型伺服器，數據同步可能需要較長時間。
+> - 需要 Discord bot 的權限設定，初期配置較繁瑣。
+> - 不支援使用者 token，限制了某些使用情境。
+> - 目前仍在 beta 階段，可能存在不穩定性。
 
 > [!warning] 注意事項
-> - 需要正確配置 Discord 機器人權限。
-> - 僅支持 Discord 公會的數據同步。
+> - 需要 Discord bot token，無法使用使用者 token。
+> - 需要 bot 擁有足夠的權限來讀取訊息歷史。
+> - 僅支援 Go 1.26 以上版本。
 
 ## 技術細節
 
@@ -121,6 +135,10 @@ bin/discrawl sync
 > | [@steipete](https://github.com/steipete) | 37 |
 
 **最新版本**：v0.1.0 (2026-03-08)
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，持續有更新。
 
 ## README 摘錄
 
@@ -204,11 +222,82 @@ bin/discrawl sync
 > 
 > ## Install
 > 
+> Build from source:
 > 
+> ```bash
+> git clone https://github.com/steipete/discrawl.git
+> cd discrawl
+> go build -o bin/discrawl ./cmd/discrawl
+> ./bin/discrawl --version
+> ```
+> 
+> Homebrew tap:
+> 
+> ```bash
+> brew tap steipete/tap
+> brew install steipete/tap/discrawl
+> ```
+> 
+> ## Quick Start
+> 
+> Reuse an existing OpenClaw Discord bot config:
+> 
+> ```bash
+> bin/discrawl init --from-openclaw ~/.openclaw/openclaw.json
+> bin/discrawl doctor
+> bin/discrawl sync --full
+> bin/discrawl search "panic: nil pointer"
+> bin/discrawl tail
+> ```
+> 
+> Env-only setup:
+> 
+> ```bash
+> export DISCORD_BOT_TOKEN="..."
+> bin/discrawl doctor
+> bin/discrawl init
+> bin/discrawl sync --full
+> ```
+> 
+> `init` discovers accessible guilds and writes `~/.discrawl/config.toml`. If exactly one guild is available, that guild becomes the default automatically.
+> 
+> `doctor` is the fastest sanity check:
+> 
+> - confirms config can be loaded
+> - shows where the token was resolved from
+> - verifies bot auth
+> - shows how many guilds the bot can access
+> - verifies DB + FTS wiring
+> 
+> ## Commands
+> 
+> ### `init`
+> 
+> Creates the local config and discovers accessible guilds.
+> 
+> ```bash
+> bin/discrawl init
+> bin/discrawl init --from-openclaw ~/.openclaw/openclaw.json
+> bin/discrawl init --guild 123456789012345678
+> bin/discrawl init --db ~/data/discrawl.db
+> ```
+> 
+> ### `sync`
+> 
+> Backfills guild state into SQLite.
+> 
+> ```bash
+> bin/discrawl sync --full
+> bin/discrawl sync --guild 123456789012345678
+> bin/discrawl sync --guilds 123,456 --concurrency 8
+> bin/discrawl sync --channels 111,222 --since 2026-03-01T00:00:00Z
+> ```
+> 
+> `sync` already uses 
 
 ## 延伸閱讀
 
-相關概念：[[資料視覺化]] · [[資料庫]] · [[即時通訊]]
+相關概念：[[CLI/TUI]] · [[資料視覺化]] · [[API 設計]]
 
 [GitHub](https://github.com/steipete/discrawl)
 
@@ -218,7 +307,7 @@ bin/discrawl sync
 > ```dataview
 > LIST
 > FROM "Repos"
-> WHERE category = "CLI 工具" AND file.name != "steipete--discrawl"
+> WHERE category = "開發工具" AND file.name != "steipete--discrawl"
 > SORT stars DESC
 > LIMIT 8
 > ```
