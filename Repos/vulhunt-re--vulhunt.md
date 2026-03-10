@@ -102,7 +102,7 @@ vulhunt-ce scan lib.so -o results.json -d /path/to/bias-data -r /path/to/rules -
 
 ## 架構分析
 
-VulHunt 採用微服務架構，主要由 FastAPI 提供 RESTful API，並使用 Playwright 進行瀏覽器自動化。用戶輸入 → API 請求 → 瀏覽器操作 → 輸出結果。關鍵技術決策包括使用 Rust 進行性能優化和 Lua 進行擴展性。專案目錄結構包含 src、tests 和 docs 等關鍵文件。
+VulHunt 是以 C++ 為核心的二進位漏洞分析框架。用戶輸入目標二進位檔 → 靜態/動態分析引擎掃描 → 輸出漏洞報告。核心分析邏輯以 C++ 實作以獲得效能優勢，部分模組使用 Rust 和 Lua 進行擴展。
 
 ## 優缺點分析
 

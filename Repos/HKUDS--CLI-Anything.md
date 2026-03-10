@@ -104,7 +104,7 @@ cli-anything-gimp --json layer add -n "Background" --type solid --color "#1a1a2e
 
 ## 架構分析
 
-CLI-Anything 採用微服務架構，使用者輸入 → 系統分析 → 生成 CLI。核心資料流簡單明瞭，關鍵技術決策在於無需依賴的輕量設計。專案目錄結構清晰，包含插件和測試計畫等關鍵檔案。
+CLI-Anything 是 Claude Code 的 plugin，採用 7 階段 pipeline 架構：使用者指定目標軟體 → 分析源碼 → 設計 CLI 命令結構 → 實作 Click CLI → 規劃測試 → 撰寫測試 → 打包安裝。核心技術決策在於使用 Python + Click 生成結構化 JSON 輸出的 CLI，讓 AI Agent 能程式化控制各種應用。
 
 ## 優缺點分析
 
