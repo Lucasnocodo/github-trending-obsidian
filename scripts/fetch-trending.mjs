@@ -707,6 +707,92 @@ SORT length(rows) DESC
 `;
 }
 
+// ── 週報 ─────────────────────────────────────────────────────
+
+const WEEKLY_DIR = join(ROOT, 'Weekly');
+
+function generateWeeklyReview(weekStr) {
+  return `---
+tags:
+  - weekly
+week: "${weekStr}"
+---
+
+# 週報 - ${weekStr}
+
+> [!summary] 本週摘要
+> 本週收錄的 GitHub Trending 專案總覽
+
+## 本週新增專案
+
+\`\`\`dataview
+TABLE
+  stars AS "Stars",
+  stars_per_day AS "Stars/天",
+  language AS "語言",
+  category AS "分類",
+  description AS "描述"
+FROM "Repos"
+WHERE week = "${weekStr}"
+SORT stars DESC
+\`\`\`
+
+## 本週亮點
+
+\`\`\`dataview
+TABLE
+  stars_per_day AS "Stars/天",
+  stars AS "Stars",
+  category AS "分類"
+FROM "Repos"
+WHERE week = "${weekStr}" AND stars_per_day >= 500
+SORT stars_per_day DESC
+\`\`\`
+
+## 分類分佈
+
+\`\`\`dataview
+TABLE WITHOUT ID
+  category AS "分類",
+  length(rows) AS "數量",
+  sum(rows.stars) AS "總 Stars"
+FROM "Repos"
+WHERE week = "${weekStr}"
+GROUP BY category
+SORT length(rows) DESC
+\`\`\`
+
+## 語言分佈
+
+\`\`\`dataview
+TABLE WITHOUT ID
+  language AS "語言",
+  length(rows) AS "數量"
+FROM "Repos"
+WHERE week = "${weekStr}"
+GROUP BY language
+SORT length(rows) DESC
+\`\`\`
+
+## 每日記錄
+
+\`\`\`dataview
+LIST
+FROM "Daily"
+WHERE date >= date("${weekStr}-1") AND date <= date("${weekStr}-7")
+SORT date ASC
+\`\`\`
+
+---
+
+## 本週心得
+
+> [!question]+ 週回顧
+> _本週有什麼值得注意的趨勢？哪些專案讓你印象深刻？_
+
+`;
+}
+
 // ── MOC（Map of Content）分類索引頁 ─────────────────────────
 
 const MOC_DIR = join(ROOT, 'MOC');
@@ -871,6 +957,13 @@ async function main() {
 
   // 8. 產生 MOC 分類索引頁
   await generateMOCs();
+
+  // 8.5 產生/更新週報
+  await mkdir(WEEKLY_DIR, { recursive: true });
+  const weekStr = getWeekString(today);
+  const weeklyPath = join(WEEKLY_DIR, `${weekStr}.md`);
+  await writeFile(weeklyPath, generateWeeklyReview(weekStr), 'utf-8');
+  console.log(`Updated: Weekly/${weekStr}.md`);
 
   // 9. 更新 seen repos
   for (const repo of detailedRepos) {
