@@ -135,6 +135,7 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 10. "similar_tools": 陣列，1-2 個類似的知名工具名稱（如果想得到的話）。想不到就回空陣列
 11. "related_concepts": 陣列，3 個相關技術概念（繁體中文）
 
+重要：每個物件的 "repo" 欄位必須完全等於我給你的 owner/name（區分大小寫），例如 "karpathy/autoresearch"。
 回傳 JSON 陣列，只回傳 JSON。`;
 
 function buildRepoPrompt(repos) {
