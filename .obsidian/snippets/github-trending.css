@@ -1,0 +1,40 @@
+/* GitHub Trending Vault - Custom Styles */
+
+/* Progress bars in Dashboard */
+progress {
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+progress::-webkit-progress-bar {
+  background-color: var(--background-modifier-border);
+  border-radius: 6px;
+}
+progress::-webkit-progress-value {
+  background-color: var(--interactive-accent);
+  border-radius: 6px;
+}
+
+/* Callout customization for repo notes */
+.callout[data-callout="success"] {
+  --callout-color: 76, 175, 80;
+}
+.callout[data-callout="danger"] {
+  --callout-color: 244, 67, 54;
+}
+
+/* Dashboard layout */
+.dashboard .dataview.table-view-table {
+  font-size: 0.9em;
+}
+
+/* Stars display in tables */
+.dataview .table-view-table td:nth-child(2) {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Home page styling */
+.home h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}

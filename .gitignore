@@ -1,3 +1,8 @@
 node_modules/
-.obsidian/
 .DS_Store
+
+# Obsidian - track shared settings, ignore personal workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/
+.obsidian/hotkeys.json
