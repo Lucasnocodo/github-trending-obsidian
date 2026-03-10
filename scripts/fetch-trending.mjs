@@ -177,7 +177,26 @@ function buildRepoPrompt(repos) {
     .join('\n\n---\n\n');
 }
 
+// 從 429 錯誤訊息中解析等待秒數
+function parseRateLimitWait(errorText) {
+  const match = errorText.match(/wait (\d+) seconds/i);
+  return match ? parseInt(match[1], 10) : 60; // 預設等 60 秒
+}
+
+// 全局冷卻追蹤：避免在冷卻期內發送請求
+let rateLimitCooldownUntil = 0;
+
+async function waitForCooldown(context = '') {
+  const now = Date.now();
+  if (rateLimitCooldownUntil > now) {
+    const waitMs = rateLimitCooldownUntil - now;
+    console.log(`  ${context}Rate limit cooldown: waiting ${Math.ceil(waitMs / 1000)}s...`);
+    await new Promise(r => setTimeout(r, waitMs));
+  }
+}
+
 async function callLLMBatch(repos, token) {
+  await waitForCooldown();
   const prompt = buildRepoPrompt(repos);
   const res = await fetch(LLM_API, {
     method: 'POST',
@@ -195,7 +214,15 @@ async function callLLMBatch(repos, token) {
       max_tokens: 14000,
     }),
   });
-  if (!res.ok) throw new Error(`LLM HTTP ${res.status}: ${await res.text().catch(() => '')}`);
+  if (!res.ok) {
+    const errText = await res.text().catch(() => '');
+    if (res.status === 429) {
+      const waitSec = parseRateLimitWait(errText);
+      rateLimitCooldownUntil = Date.now() + (waitSec + 2) * 1000; // 多等 2 秒緩衝
+      throw new Error(`LLM HTTP 429: wait ${waitSec}s — ${errText.slice(0, 200)}`);
+    }
+    throw new Error(`LLM HTTP ${res.status}: ${errText}`);
+  }
   const data = await res.json();
   const text = data.choices[0].message.content.trim();
   // 清理 LLM 回傳的常見格式問題
@@ -230,9 +257,7 @@ async function callLLM(repos, token) {
     let success = false;
     for (let attempt = 0; attempt < 3 && !success; attempt++) {
       if (attempt > 0) {
-        const delay = 2000 * Math.pow(2, attempt - 1); // 2s, 4s
-        console.log(`  Retry ${attempt}/2, waiting ${delay / 1000}s...`);
-        await new Promise((r) => setTimeout(r, delay));
+        await waitForCooldown('LLM retry: ');
       }
       try {
         const batchResult = await callLLMBatch(batch, token);
@@ -2100,9 +2125,7 @@ async function refreshRepos(token, failedOnly = false) {
     let batchSuccess = false;
     for (let attempt = 0; attempt < 3 && !batchSuccess; attempt++) {
       if (attempt > 0) {
-        const delay = 5000 * Math.pow(2, attempt - 1); // 5s, 10s（429 需要更長等待）
-        console.log(`  Retry ${attempt}/2, waiting ${delay / 1000}s...`);
-        await new Promise(r => setTimeout(r, delay));
+        await waitForCooldown('Batch retry: ');
       }
       try {
         const llmResult = await callLLMBatch(repos.map(r => r.repo), token);
@@ -2131,12 +2154,9 @@ async function refreshRepos(token, failedOnly = false) {
         let succeeded = false;
         for (let attempt = 0; attempt < 3 && !succeeded; attempt++) {
           if (attempt > 0) {
-            const retryDelay = 5000 * Math.pow(2, attempt - 1); // 5s, 10s
-            console.log(`  Waiting ${retryDelay / 1000}s before retry...`);
-            await new Promise(r => setTimeout(r, retryDelay));
+            await waitForCooldown(`Individual retry ${key}: `);
           }
           try {
-            // 每次重試都截斷更多 README（可能是超長 README 導致失敗）
             const repoClone = { ...item.repo };
             if (attempt >= 1 && repoClone._readme) {
               const truncLen = attempt === 1 ? 3000 : 1500;
@@ -2155,7 +2175,6 @@ async function refreshRepos(token, failedOnly = false) {
             console.log(`  Individual attempt ${attempt + 1} failed for ${key}: ${err.message}`);
           }
         }
-        await new Promise(r => setTimeout(r, 3000)); // 個別重試間等 3s
       }
     }
 
