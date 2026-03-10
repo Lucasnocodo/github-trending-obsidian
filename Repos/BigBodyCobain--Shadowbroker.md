@@ -7,7 +7,7 @@ language: TypeScript
 license: N/A
 description: "Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. The knowledge is available to all but rarely aggregated in the open, until now."
 homepage: ""
-stars: 1333
+stars: 1336
 stars_per_day: 267
 forks: 144
 open_issues: 1
@@ -15,15 +15,15 @@ created: 2026-03-05
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "Other"
+category: "其他"
 release_tag: "v0.5.0"
-install_complexity: "unknown"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - other
+  - 其他
   - typescript
 ---
 
@@ -34,11 +34,54 @@ tags:
 `v0.5.0`
 
 > [!summary] 一句話摘要
-> Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. The knowledge is available to all but rarely aggregated in the open, until now.
+> 提供即時的全球開源情報，讓你追蹤飛機、衛星和地震等事件。
+
+> [!abstract] 核心創新
+> 提供即時的多域開源情報儀表板，將各種數據來源整合於一個介面。
 
 ## 專案簡介
 
-Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. The knowledge is available to all but rarely aggregated in the open, until now.
+它讓使用者在一個統一的介面上即時追蹤全球的多種情報來源，包括飛機、船隻和地震等。使用了 Next.js 和 FastAPI 等技術來構建這個多域的情報儀表板。與其他情報工具相比，ShadowBroker 聚合了更多元的數據來源，並且提供即時更新的功能。這個專案的成熟度高，值得對開源情報有興趣的人試試。
+
+**技術棧**：`Next.js` · `MapLibre GL` · `FastAPI` · `Python`
+
+## 重點功能
+
+- 即時追蹤飛機、船隻和衛星等多種數據來源。
+- 提供地震和衝突區域的即時更新。
+- 整合多個開源情報源於一個介面，方便使用者查詢。
+
+## 快速開始
+
+1. 克隆專案並啟動 Docker 容器
+```bash
+git clone https://github.com/BigBodyCobain/Shadowbroker.git
+```
+2. 進入專案目錄並啟動服務
+```bash
+cd Shadowbroker && ./compose.sh up -d
+```
+3. 在瀏覽器中打開儀表板
+```bash
+http://localhost:3000
+```
+
+## 為什麼值得關注
+
+> [!tip] 爆紅原因
+> 開發者背景強大，專注於即時情報的需求，特別是在當前全球事件頻繁的情況下。其獨特的整合能力吸引了不少使用者。
+
+## 適合誰使用
+
+**目標受眾**：對全球情報分析有興趣的研究人員和分析師。
+
+> [!example] 使用場景
+> - [分析師] 用它來 追蹤億萬富翁的私人飛機，因為這能幫助他們了解高端商業活動。
+> - [研究人員] 用它來 監控衛星過境，因為這能提供高解析度的衛星影像。
+> - [安全專家] 用它來 偵測 GPS 干擾區域，因為這對於保護關鍵基礎設施至關重要。
+
+> [!warning] 注意事項
+> 需要 Docker 或 Podman 環境。
 
 ## 技術細節
 
@@ -57,13 +100,6 @@ Open-source intelligence for the global theater. Track everything from the corpo
 >     "Python" : 25
 >     "Shell" : 1
 > ```
-
-> [!info]- 主要貢獻者
-> | 貢獻者 | Commits |
-> | --- | --- |
-> | [@anoracleofra-code](https://github.com/anoracleofra-code) | 44 |
-> | [@BigBodyCobain](https://github.com/BigBodyCobain) | 21 |
-> | [@ttulttul](https://github.com/ttulttul) | 1 |
 
 **最新版本**：v0.5.0 — ShadowBroker v0.5.0 (2026-03-10)
 
@@ -117,6 +153,8 @@ Open-source intelligence for the global theater. Track everything from the corpo
 > 
 
 ## 延伸閱讀
+
+相關概念：[[開源情報]] · [[即時數據分析]] · [[地理資訊系統]]
 
 [GitHub](https://github.com/BigBodyCobain/Shadowbroker)
 
