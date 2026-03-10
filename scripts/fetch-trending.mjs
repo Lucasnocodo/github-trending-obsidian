@@ -45,7 +45,7 @@ async function fetchReadme(fullName, token) {
     const data = await res.json();
     return Buffer.from(data.content, 'base64')
       .toString('utf-8')
-      .slice(0, 2000)
+      .slice(0, 4000)
       .replace(/!\[[^\]]*\]\([^)]+\)/g, '') // remove images
       .replace(/<img[^>]*>/g, '')
       .replace(/<\/?[^>]+>/g, '')
@@ -118,32 +118,37 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 
 重要規則：
 - 仔細讀 README 內容，不要只看名稱猜測
-- 每個專案的內容要有差異化
+- 每個專案的內容要有差異化，寫出只屬於這個專案的獨特分析
 - 禁止使用：「隨著...的流行」「這個專案因此受到關注」「在...的背景下」等空洞句型
 - 使用場景要想像一個真實的人在做什麼
 - 說出跟替代方案的具體差異
+- summary 要夠詳細，讓讀者不看 README 也能理解這個專案在幹嘛
 
 請為每個 GitHub 專案提供以下欄位（JSON 物件）：
 
 1. "repo": 完全等於 owner/name（區分大小寫）
 2. "description_zh": 一句話說明「解決什麼問題」。好的例子：「讓 AI 自動跑實驗，你只要早上起來看結果」。壞的例子：「自動化 AI 研究平台」
-3. "summary": 4-5 句話。結構：
+3. "summary": 6-8 句話的深度分析。結構：
    - 第 1 句：白話說核心機制（例如「它讓 AI agent 每 5 分鐘改一次程式碼、訓練、比對結果」）
-   - 第 2 句：技術實作方式（用了什麼框架/演算法/架構）
-   - 第 3 句：跟同類工具的具體差異
-   - 第 4-5 句：你的觀點（成熟度、值不值得試）
-4. "why_trending": 2 句具體分析（作者背景？切中什麼需求？觸發事件？）
+   - 第 2-3 句：技術實作方式（用了什麼框架/演算法/架構，怎麼串起來的）
+   - 第 4 句：跟同類工具的具體差異（要具體到功能層面）
+   - 第 5-6 句：實際使用的效果和限制（例如效能數據、支援範圍）
+   - 第 7-8 句：你的觀點（成熟度、值不值得試、適合什麼階段的專案使用）
+4. "why_trending": 3-4 句具體分析。包含：作者背景、切中什麼需求、觸發事件、為什麼現在爆紅而不是更早
 5. "use_cases": 陣列，3 個場景。格式：「[角色] 用它來 [動作]，因為 [好處]」
 6. "target_audience": 一句話，越具體越好
 7. "category": AI/ML、開發工具、Web 應用、CLI 工具、資料科學、安全、教學資源、基礎設施、其他（選一個）
-8. "key_features": 陣列，3-5 個功能特色（中文，每個一句話，從 README 提取）
-9. "quickstart_steps": 陣列，2-4 個安裝/使用步驟。每步是物件：{"step": "說明", "cmd": "指令"}。沒有安裝指令就回傳 []
-10. "limitations": 一句話（例如「僅支援 Linux」「需要 GPU」「早期 alpha，API 不穩定」）
-11. "similar_tools": 陣列，每項是物件：{"name": "工具名", "diff": "跟本專案的差異（一句話）"}。想不到就回 []
-12. "related_concepts": 陣列，3 個相關技術概念（繁體中文）
+8. "key_features": 陣列，5-8 個功能特色（中文，每個一句話，從 README 提取具體功能，不要籠統的描述）
+9. "quickstart_steps": 陣列，2-5 個安裝/使用步驟。每步是物件：{"step": "說明", "cmd": "指令"}。沒有安裝指令就回傳 []
+10. "limitations": 陣列，2-3 個注意事項（例如 ["僅支援 Linux", "需要 GPU", "早期 alpha，API 可能變動"]）
+11. "similar_tools": 陣列，2-4 項。每項是物件：{"name": "工具名", "diff": "跟本專案的具體差異（一句話）"}。想不到就回 []
+12. "related_concepts": 陣列，3-5 個相關技術概念（繁體中文）
 13. "tech_stack": 陣列，列出核心技術棧（例如 ["Next.js", "FastAPI", "PostgreSQL"]），從 README 提取
 14. "novelty_claim": 一句話：這個專案最核心的創新點是什麼？（從 README 提取具體 claim，不要自己編）。沒有明顯創新就回傳 null
 15. "install_complexity": "easy"（一行 npm/pip install）、"medium"（需要 clone + config）、"hard"（需要 GPU/Docker/複雜環境）
+16. "architecture": 2-3 句話描述專案的整體架構。例如：「前後端分離架構，前端用 React + Vite，後端用 FastAPI。資料流是 用戶輸入 → API Server → LLM 推理 → 結果緩存到 Redis → 回傳前端渲染。」沒有明顯架構就回傳 null
+17. "pros_cons": 物件，包含 "pros"（陣列，2-3 個優點）和 "cons"（陣列，2-3 個缺點），每個都是一句話
+18. "community": 物件，可選欄位。"docs_url"（文件網站）、"discord"（Discord 連結）、"activity"（一句話描述社群活躍度，例如「每週 20+ commits，issue 回應快」或「3 天前建立，社群尚在建立中」）。都沒有就回傳 null
 
 回傳 JSON 陣列，只回傳 JSON，不要加 markdown 標記。`;
 
@@ -159,7 +164,7 @@ function buildRepoPrompt(repos) {
         parts.push(`主要貢獻者: ${r._contributors.map((c) => c.login).join(', ')}`);
       if (r._release) parts.push(`最新版本: ${r._release.tag}`);
       if (r.homepage) parts.push(`官方網站: ${r.homepage}`);
-      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 1200)}`);
+      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 2500)}`);
       return parts.join('\n');
     })
     .join('\n\n---\n\n');
@@ -180,7 +185,7 @@ async function callLLMBatch(repos, token) {
         { role: 'user', content: prompt },
       ],
       temperature: 0.3,
-      max_tokens: 6000,
+      max_tokens: 10000,
     }),
   });
   if (!res.ok) throw new Error(`LLM HTTP ${res.status}`);
@@ -352,6 +357,12 @@ function generateRepoNote(repo, llmInfo, today) {
       fm.push(`  - ${t.replace(/-/g, '_')}`);
     }
   }
+  // Aliases for Obsidian search
+  const repoName = repo.full_name.split('/')[1];
+  fm.push('aliases:');
+  fm.push(`  - "${repoName}"`);
+  fm.push(`  - "${repo.full_name}"`);
+  if (llmInfo?.description_zh) fm.push(`  - "${llmInfo.description_zh.slice(0, 60)}"`);
   fm.push('---');
 
   const lines = [...fm, ''];
@@ -472,14 +483,45 @@ function generateRepoNote(repo, llmInfo, today) {
     }
   }
 
-  // ── 注意事項 ──
-  if (llmInfo?.limitations) {
-    lines.push('> [!warning] 注意事項');
-    lines.push(`> ${llmInfo.limitations}`);
+  // ── 架構分析 ──
+  if (llmInfo?.architecture) {
+    lines.push('## 架構分析');
+    lines.push('');
+    lines.push(llmInfo.architecture);
     lines.push('');
   }
 
-  // ── 類似工具比較（結構化表格）──
+  // ── 優缺點 ──
+  if (llmInfo?.pros_cons) {
+    lines.push('## 優缺點分析');
+    lines.push('');
+    if (llmInfo.pros_cons.pros?.length) {
+      lines.push('> [!success] 優點');
+      for (const p of llmInfo.pros_cons.pros) {
+        lines.push(`> - ${p}`);
+      }
+      lines.push('');
+    }
+    if (llmInfo.pros_cons.cons?.length) {
+      lines.push('> [!danger] 缺點');
+      for (const c of llmInfo.pros_cons.cons) {
+        lines.push(`> - ${c}`);
+      }
+      lines.push('');
+    }
+  }
+
+  // ── 注意事項 ──
+  if (llmInfo?.limitations) {
+    const lims = Array.isArray(llmInfo.limitations) ? llmInfo.limitations : [llmInfo.limitations];
+    lines.push('> [!warning] 注意事項');
+    for (const lim of lims) {
+      lines.push(`> - ${lim}`);
+    }
+    lines.push('');
+  }
+
+  // ── 類似工具比較（結構化表格 + 跨筆記連結）──
   if (llmInfo?.similar_tools?.length) {
     lines.push('## 類似工具比較');
     lines.push('');
@@ -488,10 +530,12 @@ function generateRepoNote(repo, llmInfo, today) {
       lines.push('| 工具 | 差異 |');
       lines.push('| --- | --- |');
       for (const t of llmInfo.similar_tools) {
-        lines.push(`| ${t.name} | ${t.diff || ''} |`);
+        // 嘗試將工具名轉為 wikilink（如果可能是 GitHub repo）
+        const toolName = t.name || '';
+        const display = toolName.includes('/') ? `[[${repoFileName(toolName).replace('.md', '')}\\|${toolName}]]` : toolName;
+        lines.push(`| ${display} | ${t.diff || ''} |`);
       }
     } else {
-      // 向下相容字串陣列
       lines.push(`相關替代方案：${llmInfo.similar_tools.map(t => typeof t === 'string' ? t : t.name).join('、')}`);
     }
     lines.push('');
@@ -542,12 +586,25 @@ function generateRepoNote(repo, llmInfo, today) {
     lines.push('');
   }
 
+  // ── 社群與生態 ──
+  if (llmInfo?.community) {
+    lines.push('## 社群與生態');
+    lines.push('');
+    const comm = llmInfo.community;
+    if (comm.activity) lines.push(`**社群活躍度**：${comm.activity}`);
+    const commLinks = [];
+    if (comm.docs_url) commLinks.push(`[文件](${comm.docs_url})`);
+    if (comm.discord) commLinks.push(`[Discord](${comm.discord})`);
+    if (commLinks.length) lines.push(`**連結**：${commLinks.join(' · ')}`);
+    lines.push('');
+  }
+
   // ── README 摘錄（可收合）──
   if (repo._readme) {
     lines.push('## README 摘錄');
     lines.push('');
     lines.push('> [!info]- 展開查看原文 README');
-    const readmeLines = repo._readme.slice(0, 1500).split('\n');
+    const readmeLines = repo._readme.slice(0, 2500).split('\n');
     for (const rl of readmeLines) {
       lines.push(`> ${rl}`);
     }
@@ -1182,7 +1239,9 @@ function extractUserSection(content) {
 function needsRefresh(content) {
   return !content.includes('install_complexity:') ||
          !content.includes('my_rating:') ||
-         !content.includes('pushed_at:');
+         !content.includes('pushed_at:') ||
+         !content.includes('aliases:') ||
+         !content.includes('## 優缺點分析');
 }
 
 function hasLLMContent(content) {
