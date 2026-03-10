@@ -197,6 +197,7 @@ async function callLLMBatch(repos, token) {
 async function callLLM(repos, token) {
   const BATCH_SIZE = 3;
   const results = [];
+  let consecutiveFailures = 0;
 
   for (let i = 0; i < repos.length; i += BATCH_SIZE) {
     const batch = repos.slice(i, i + BATCH_SIZE);
@@ -204,28 +205,42 @@ async function callLLM(repos, token) {
     const totalBatches = Math.ceil(repos.length / BATCH_SIZE);
     console.log(`  LLM batch ${batchNum}/${totalBatches} (${batch.length} repos)...`);
 
-    try {
-      const batchResult = await callLLMBatch(batch, token);
-      results.push(...batchResult);
-    } catch (err) {
-      console.warn(`  Batch ${batchNum} failed: ${err.message}, retrying...`);
-      await new Promise((r) => setTimeout(r, 2000));
+    let success = false;
+    for (let attempt = 0; attempt < 3 && !success; attempt++) {
+      if (attempt > 0) {
+        const delay = 2000 * Math.pow(2, attempt - 1); // 2s, 4s
+        console.log(`  Retry ${attempt}/2, waiting ${delay / 1000}s...`);
+        await new Promise((r) => setTimeout(r, delay));
+      }
       try {
-        const retry = await callLLMBatch(batch, token);
-        results.push(...retry);
-        console.log(`  Batch ${batchNum} retry succeeded`);
-      } catch (err2) {
-        console.warn(`  Batch ${batchNum} retry also failed: ${err2.message}`);
-        // 標記失敗的 repo，讓筆記顯示警告
-        for (const r of batch) {
-          results.push({ repo: r.full_name, _llm_failed: true });
-        }
+        const batchResult = await callLLMBatch(batch, token);
+        results.push(...batchResult);
+        success = true;
+        consecutiveFailures = 0;
+      } catch (err) {
+        console.warn(`  Attempt ${attempt + 1} failed: ${err.message}`);
       }
     }
 
-    // 批次間等 1 秒避免 rate limit
+    if (!success) {
+      consecutiveFailures++;
+      for (const r of batch) {
+        results.push({ repo: r.full_name, _llm_failed: true });
+      }
+      // 連續失敗 3 次就停止（可能是 API 完全不可用）
+      if (consecutiveFailures >= 3) {
+        console.warn(`  Stopping LLM: ${consecutiveFailures} consecutive failures`);
+        for (let j = i + BATCH_SIZE; j < repos.length; j++) {
+          results.push({ repo: repos[j].full_name, _llm_failed: true });
+        }
+        break;
+      }
+    }
+
+    // 批次間等待（指數增加避免 rate limit）
     if (i + BATCH_SIZE < repos.length) {
-      await new Promise((r) => setTimeout(r, 1000));
+      const waitTime = 1500 + (batchNum * 500); // 2s, 2.5s, 3s, ...
+      await new Promise((r) => setTimeout(r, waitTime));
     }
   }
 
@@ -1565,15 +1580,21 @@ async function refreshRepos(token, failedOnly = false) {
 
     if (repos.length === 0) continue;
 
-    // LLM 翻譯
+    // LLM 翻譯（最多 3 次嘗試，指數退避）
     console.log(`  Running LLM for ${repos.length} repos...`);
     let llmResult = null;
-    try {
-      llmResult = await callLLMBatch(repos.map(r => r.repo), token);
-    } catch (err) {
-      console.log(`  LLM failed: ${err.message}, retrying...`);
-      await new Promise(r => setTimeout(r, 2000));
-      try { llmResult = await callLLMBatch(repos.map(r => r.repo), token); } catch { llmResult = null; }
+    for (let attempt = 0; attempt < 3; attempt++) {
+      if (attempt > 0) {
+        const delay = 2000 * Math.pow(2, attempt - 1);
+        console.log(`  Retry ${attempt}/2, waiting ${delay / 1000}s...`);
+        await new Promise(r => setTimeout(r, delay));
+      }
+      try {
+        llmResult = await callLLMBatch(repos.map(r => r.repo), token);
+        break;
+      } catch (err) {
+        console.log(`  LLM attempt ${attempt + 1} failed: ${err.message}`);
+      }
     }
 
     const llmMap = {};
@@ -1614,9 +1635,11 @@ async function refreshRepos(token, failedOnly = false) {
       console.log(`  Refreshed: ${item.file}`);
     }
 
-    // 批次間等 2 秒
+    // 批次間等待（遞增避免 rate limit）
     if (i + BATCH < toRefresh.length) {
-      await new Promise(r => setTimeout(r, 2000));
+      const batchIdx = Math.floor(i / BATCH);
+      const wait = 2000 + (batchIdx * 500);
+      await new Promise(r => setTimeout(r, wait));
     }
   }
 
