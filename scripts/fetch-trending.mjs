@@ -1972,8 +1972,8 @@ function needsRefresh(content) {
          !content.includes('## 優缺點分析') ||
          !content.includes('## 相關收錄') ||
          !content.includes('快速評估') ||
-         !content.includes('關鍵洞察') ||
-         !content.includes('速覽');  // v3: 新增速覽卡片 + 更多 README 內容
+         !content.includes('速覽') ||  // v3: 速覽卡片包含 key_insight
+         !content.includes('待研究的問題');  // v3: 新版個人筆記模板
 }
 
 function hasLLMContent(content) {
