@@ -123,8 +123,8 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 - 說出這個工具跟現有替代方案的差異
 
 請為每個 GitHub 專案提供：
-1. "description_zh": 一句話翻譯，口語自然
-2. "summary": 4-5 句話。先說清楚這工具做什麼（第一句就讓人懂），再說技術實作方式，再說跟同類工具的差異，最後給出你的觀點（值不值得試、適不適合 production 用）
+1. "description_zh": 一句話說明它「解決什麼問題」（不是「它是什麼」）。例如「讓 AI 自動跑實驗，你只要早上起來看結果」比「自動化 AI 研究平台」好
+2. "summary": 4-5 句話。第一句用白話說清楚核心機制（例如「它讓 AI agent 每 5 分鐘改一次程式碼、訓練、比對結果」），第二句說技術實作，第三句說跟同類工具的具體差異，最後給出你的觀點（值不值得試、成熟度如何）
 3. "why_trending": 2 句具體分析爆紅原因（作者背景？切中什麼需求？有什麼事件觸發？）不要用「隨著...」開頭
 4. "use_cases": 陣列，3 個場景。格式：「[角色] 用它來 [具體動作]，因為 [具體好處]」
 5. "target_audience": 一句話，越具體越好
@@ -149,7 +149,7 @@ function buildRepoPrompt(repos) {
         parts.push(`主要貢獻者: ${r._contributors.map((c) => c.login).join(', ')}`);
       if (r._release) parts.push(`最新版本: ${r._release.tag}`);
       if (r.homepage) parts.push(`官方網站: ${r.homepage}`);
-      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 500)}`);
+      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 1200)}`);
       return parts.join('\n');
     })
     .join('\n\n---\n\n');
@@ -268,6 +268,14 @@ function langStats(repos) {
   return Object.entries(counts).sort((a, b) => b[1] - a[1]);
 }
 
+function getWeekString(dateStr) {
+  const d = new Date(dateStr);
+  const jan1 = new Date(d.getFullYear(), 0, 1);
+  const days = Math.floor((d - jan1) / 86400000);
+  const week = Math.ceil((days + jan1.getDay() + 1) / 7);
+  return `${d.getFullYear()}-W${String(week).padStart(2, '0')}`;
+}
+
 async function fileExists(path) {
   try {
     await access(path);
@@ -295,12 +303,17 @@ function generateRepoNote(repo, llmInfo, today) {
     `owner_type: ${repo.owner.type}`,
     `language: ${repo.language || 'N/A'}`,
     `license: ${repo.license?.spdx_id || 'N/A'}`,
+    `description: "${(repo.description || '').replace(/"/g, '\\"')}"`,
+    `homepage: "${repo.homepage || ''}"`,
     `stars: ${repo.stargazers_count}`,
     `stars_per_day: ${rate}`,
     `forks: ${repo.forks_count}`,
+    `open_issues: ${repo.open_issues_count || 0}`,
     `created: ${repo.created_at.split('T')[0]}`,
     `first_seen: ${today}`,
+    `week: "${getWeekString(today)}"`,
     `category: "${cat}"`,
+    `release_tag: "${repo._release?.tag || ''}"`,
     `status: to-review`,
     'tags:',
     '  - github',
@@ -461,7 +474,7 @@ function generateRepoNote(repo, llmInfo, today) {
   lines.push('## 延伸閱讀');
   lines.push('');
   if (llmInfo?.related_concepts?.length) {
-    lines.push(`相關概念：${llmInfo.related_concepts.map((c) => `[[${c}]]`).join(' · ')}`);
+    lines.push(`相關概念：${llmInfo.related_concepts.map((c) => `#${c.replace(/[\s/]/g, '_')}`).join(' · ')}`);
     lines.push('');
   }
   lines.push(`[GitHub](${repo.html_url})`);
@@ -603,6 +616,26 @@ tags:
 > [!summary] 總覽
 > 使用 Dataview 插件自動彙總所有收錄的 GitHub 專案
 
+## 收錄時間軸
+
+\`\`\`dataview
+CALENDAR first_seen
+FROM "Repos"
+\`\`\`
+
+## 爆紅專案（依 Stars/天 排序）
+
+\`\`\`dataview
+TABLE
+  stars_per_day AS "Stars/天",
+  stars AS "Stars",
+  language AS "語言",
+  category AS "分類",
+  created AS "建立日期"
+FROM "Repos"
+SORT stars_per_day DESC
+\`\`\`
+
 ## 所有專案（依 Stars 排序）
 
 \`\`\`dataview
@@ -646,6 +679,7 @@ SORT stars DESC
 \`\`\`dataview
 TABLE
   stars AS "Stars",
+  stars_per_day AS "Stars/天",
   language AS "語言",
   category AS "分類"
 FROM "Repos"

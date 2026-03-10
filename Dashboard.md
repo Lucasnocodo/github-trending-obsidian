@@ -8,6 +8,26 @@ tags:
 > [!summary] 總覽
 > 使用 Dataview 插件自動彙總所有收錄的 GitHub 專案
 
+## 收錄時間軸
+
+```dataview
+CALENDAR first_seen
+FROM "Repos"
+```
+
+## 爆紅專案（依 Stars/天 排序）
+
+```dataview
+TABLE
+  stars_per_day AS "Stars/天",
+  stars AS "Stars",
+  language AS "語言",
+  category AS "分類",
+  created AS "建立日期"
+FROM "Repos"
+SORT stars_per_day DESC
+```
+
 ## 所有專案（依 Stars 排序）
 
 ```dataview
@@ -51,6 +71,7 @@ SORT stars DESC
 ```dataview
 TABLE
   stars AS "Stars",
+  stars_per_day AS "Stars/天",
   language AS "語言",
   category AS "分類"
 FROM "Repos"
