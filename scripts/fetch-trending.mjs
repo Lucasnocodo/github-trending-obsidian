@@ -1767,7 +1767,9 @@ async function generateConceptNotes() {
   let created = 0;
   for (const [concept, count] of Object.entries(conceptCounts)) {
     if (count < 2) continue;
-    const fileName = `${concept}.md`;
+    // 清理概念名稱中的特殊字元（如 CI/CD 的斜線）
+    const safeName = concept.replace(/[/\\:*?"<>|]/g, '-');
+    const fileName = `${safeName}.md`;
     const filePath = join(CONCEPTS_DIR, fileName);
     if (!(await fileExists(filePath))) {
       await writeFile(filePath, generateConceptNote(concept), 'utf-8');
