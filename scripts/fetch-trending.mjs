@@ -2117,64 +2117,39 @@ async function refreshRepos(token, failedOnly = false) {
 
     if (repos.length === 0) continue;
 
-    // LLM 翻譯：先嘗試整批，失敗則逐個處理
-    console.log(`  Running LLM for ${repos.length} repos...`);
+    // LLM 翻譯：逐個處理（refresh 需要完整 20 欄位，批次容易被 token 截斷）
+    console.log(`  Running LLM for ${repos.length} repos (one by one)...`);
     const llmMap = {};
 
-    // 第一步：嘗試整批處理
-    let batchSuccess = false;
-    for (let attempt = 0; attempt < 3 && !batchSuccess; attempt++) {
-      if (attempt > 0) {
-        await waitForCooldown('Batch retry: ');
+    for (const item of repos) {
+      const key = item.repo.full_name;
+      let succeeded = false;
+      for (let attempt = 0; attempt < 3 && !succeeded; attempt++) {
+        if (attempt > 0) {
+          await waitForCooldown(`Retry ${key}: `);
+        }
+        try {
+          const repoClone = { ...item.repo };
+          if (attempt >= 1 && repoClone._readme) {
+            const truncLen = attempt === 1 ? 3000 : 1500;
+            repoClone._readme = repoClone._readme.slice(0, truncLen);
+            console.log(`  Truncating README to ${truncLen} chars for retry...`);
+          }
+          const result = await callLLMBatch([repoClone], token);
+          if (result?.[0]) {
+            const r = result[0];
+            llmMap[r.repo] = r;
+            llmMap[r.repo?.toLowerCase()] = r;
+            if (!llmMap[key] && !llmMap[key.toLowerCase()]) llmMap[key] = r;
+            console.log(`  LLM OK: ${key}`);
+            succeeded = true;
+          }
+        } catch (err) {
+          console.log(`  LLM attempt ${attempt + 1} failed for ${key}: ${err.message}`);
+        }
       }
-      try {
-        const llmResult = await callLLMBatch(repos.map(r => r.repo), token);
-        for (const item of llmResult) {
-          if (item.repo) { llmMap[item.repo] = item; llmMap[item.repo.toLowerCase()] = item; }
-        }
-        // index-based fallback
-        if (llmResult.length === repos.length) {
-          for (let j = 0; j < repos.length; j++) {
-            const key = repos[j].repo.full_name;
-            if (!llmMap[key] && !llmMap[key.toLowerCase()]) llmMap[key] = llmResult[j];
-          }
-        }
-        batchSuccess = true;
-      } catch (err) {
-        console.log(`  Batch attempt ${attempt + 1} failed: ${err.message}`);
-      }
-    }
-
-    // 第二步：對於批次失敗的 repo，逐個重試（漸進截斷 README）
-    if (!batchSuccess) {
-      console.log(`  Falling back to individual LLM calls...`);
-      for (const item of repos) {
-        const key = item.repo.full_name;
-        if (llmMap[key] || llmMap[key.toLowerCase()]) continue;
-        let succeeded = false;
-        for (let attempt = 0; attempt < 3 && !succeeded; attempt++) {
-          if (attempt > 0) {
-            await waitForCooldown(`Individual retry ${key}: `);
-          }
-          try {
-            const repoClone = { ...item.repo };
-            if (attempt >= 1 && repoClone._readme) {
-              const truncLen = attempt === 1 ? 3000 : 1500;
-              repoClone._readme = repoClone._readme.slice(0, truncLen);
-              console.log(`  Truncating README to ${truncLen} chars for retry...`);
-            }
-            const result = await callLLMBatch([repoClone], token);
-            if (result?.[0]) {
-              llmMap[result[0].repo] = result[0];
-              llmMap[result[0].repo?.toLowerCase()] = result[0];
-              if (!llmMap[key] && !llmMap[key.toLowerCase()]) llmMap[key] = result[0];
-              console.log(`  Individual LLM OK: ${key}`);
-              succeeded = true;
-            }
-          } catch (err) {
-            console.log(`  Individual attempt ${attempt + 1} failed for ${key}: ${err.message}`);
-          }
-        }
+      if (!succeeded) {
+        console.log(`  LLM failed after 3 attempts: ${key}`);
       }
     }
 
@@ -2224,13 +2199,9 @@ async function refreshRepos(token, failedOnly = false) {
       console.log(`  Refreshed [${refreshedCount}/${toRefresh.length}]: ${item.file}`);
     }
 
-    // 批次間等待（遞增避免 429 rate limit，根據日誌顯示後期批次頻繁 429）
+    // 批次間等待（GitHub API 用；LLM rate limit 由全局 cooldown 處理）
     if (i + BATCH < toRefresh.length) {
-      const batchIdx = Math.floor(i / BATCH);
-      // 前 5 批等 3s，之後每批多加 1.5s（最多 15s）
-      const wait = Math.min(3000 + Math.max(0, batchIdx - 5) * 1500, 15000);
-      console.log(`  Waiting ${wait / 1000}s before next batch...`);
-      await new Promise(r => setTimeout(r, wait));
+      await new Promise(r => setTimeout(r, 2000));
     }
   }
 

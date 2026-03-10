@@ -251,6 +251,18 @@ print(response.json())
 > LIMIT 8
 > ```
 
+
+## 相關收錄
+
+> [!note]- 同分類的其他專案
+> ```dataview
+> LIST
+> FROM "Repos"
+> WHERE category = "開發工具" AND file.name != "zornade--visura-api"
+> SORT stars DESC
+> LIMIT 8
+> ```
+
 ---
 
 ## 個人筆記

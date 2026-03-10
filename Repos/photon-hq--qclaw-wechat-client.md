@@ -274,6 +274,18 @@ const loginRes = await client.wxLogin({ guid: 'machine-id', code: authCode, stat
 > LIMIT 8
 > ```
 
+
+## 相關收錄
+
+> [!note]- 同分類的其他專案
+> ```dataview
+> LIST
+> FROM "Repos"
+> WHERE category = "開發工具" AND file.name != "photon-hq--qclaw-wechat-client"
+> SORT stars DESC
+> LIMIT 8
+> ```
+
 ---
 
 ## 個人筆記
