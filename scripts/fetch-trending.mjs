@@ -145,13 +145,13 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 9. "quickstart_steps": 陣列，3-5 個安裝/使用步驟。每步是物件：{"step": "簡潔說明", "cmd": "完整可複製貼上的指令"}。從 README 提取真實指令。沒有就回傳 []
 10. "code_example": 一段展示核心用法的程式碼或指令（含語言標記如 bash/python/js）。從 README 提取最有代表性的範例，展示輸入輸出。不超過 15 行。沒有就回傳 null
 11. "limitations": 陣列，3-4 個注意事項。要具體（例如 ["僅支援 Python 3.10+", "需要 NVIDIA GPU (CUDA 12+)", "不支援 Windows", "alpha 階段，API 每週都在變"]）
-12. "similar_tools": 陣列，2-4 項。每項是物件：{"name": "工具名（GitHub owner/repo 格式優先）", "diff": "跟本專案的具體差異，要提到功能差異和適用場景差異（2 句話）"}。想不到就回 []
+12. "similar_tools": 陣列，2-4 項。每項是物件：{"name": "工具名（優先用 GitHub owner/repo 格式，如 crewai/crewai）", "diff": "跟本專案的具體差異，要提到功能差異和適用場景差異（2 句話）"}。這是筆記中最有決策價值的段落，一定要認真寫。想不到就回 []
 13. "related_concepts": 陣列，3-5 個相關技術概念。優先從以下預定義概念中選擇（繁體中文，如果沒有符合的可以自創）：
    RAG, MCP Protocol, WebAssembly, LoRA, RLHF, 向量資料庫, 邊緣推論, CLI/TUI, 語音合成, 多模態, Agent 框架, 安全漏洞, 程式碼生成, LLM 推論, Prompt Engineering, 微服務, 容器化, CI/CD, 資料視覺化, API 設計, 機器學習, 深度學習, 自然語言處理, 電腦視覺, 自動化測試, 爬蟲, 即時通訊, 區塊鏈, 隱私保護, 效能優化
 14. "tech_stack": 陣列，列出核心技術棧（含版本號，例如 ["Next.js 14", "FastAPI", "PostgreSQL 16"]），從 README 提取
 15. "novelty_claim": 一句話：這個專案最核心的創新點是什麼？（從 README 提取具體 claim，不要自己編）。沒有明顯創新就回傳 null
 16. "install_complexity": "easy"（一行 npm/pip install 或 npx）、"medium"（需要 clone + config）、"hard"（需要 GPU/Docker/複雜環境）
-17. "architecture": 4-6 句話描述專案的整體架構。要包含：(1) 架構模式（單體/前後端分離/CLI/微服務）；(2) 核心資料流（用箭頭：用戶輸入 → 處理 → 輸出）；(3) 關鍵技術決策；(4) 專案目錄結構的關鍵檔案（如 README 有提到）。沒有明顯架構就回傳 null
+17. "architecture": 4-6 句話描述專案的整體架構。嚴格根據 README 和 repo 資訊描述，不要猜測或編造未提到的技術。要包含：(1) 架構模式（單體/前後端分離/CLI/微服務/plugin）；(2) 核心資料流（用箭頭：用戶輸入 → 處理 → 輸出）；(3) 關鍵技術決策；(4) 專案目錄結構的關鍵檔案（如 README 有提到）。如果 README 沒有提供足夠的架構資訊就回傳 null，不要編造
 18. "pros_cons": 物件，包含 "pros"（陣列，3-4 個優點，每個要具體）和 "cons"（陣列，3-4 個缺點，每個要具體，不要跟 limitations 重複）
 19. "community": 物件，可選欄位。"docs_url"（文件網站）、"discord"（Discord 連結）、"activity"（一句話描述社群活躍度）。都沒有就回傳 null
 20. "key_insight": 一句話，你讀完這個專案後最想告訴朋友的一件事。例如：「這個專案最厲害的不是功能，而是它證明了用 Markdown 就能『編程』AI agent 的研究行為」
@@ -707,21 +707,40 @@ function generateRepoNote(repo, llmInfo, today) {
     lines.push(`相關概念：${llmInfo.related_concepts.map((c) => `[[${c}]]`).join(' · ')}`);
     lines.push('');
   }
+  // 跨 repo wikilinks：連結到 similar_tools 中存在於 vault 的 repo
+  if (llmInfo?.similar_tools?.length) {
+    const repoLinks = llmInfo.similar_tools
+      .filter(t => typeof t === 'object' && t.name?.includes('/'))
+      .map(t => `[[${t.name.replace(/\//g, '--')}|${t.name}]]`);
+    if (repoLinks.length) {
+      lines.push(`相關專案：${repoLinks.join(' · ')}`);
+      lines.push('');
+    }
+  }
   const extLinks = [`[GitHub](${repo.html_url})`];
   if (repo.homepage) extLinks.push(`[官方網站](${repo.homepage})`);
   lines.push(extLinks.join(' · '));
   lines.push('');
 
-  // ── 相關收錄（同分類 Dataview）──
+  // ── 相關收錄（同分類 + 同週）──
   lines.push('## 相關收錄');
   lines.push('');
+  const safeFn = repoFileName(repo.full_name).replace('.md', '');
   lines.push(`> [!note]- 同分類的其他專案`);
   lines.push('> ```dataview');
-  lines.push('> LIST');
+  lines.push('> TABLE stars, install_complexity AS "難度", status');
   lines.push('> FROM "Repos"');
-  lines.push(`> WHERE category = "${cat}" AND file.name != "${repoFileName(repo.full_name).replace('.md', '')}"`);
+  lines.push(`> WHERE category = "${cat}" AND file.name != "${safeFn}"`);
   lines.push('> SORT stars DESC');
   lines.push('> LIMIT 8');
+  lines.push('> ```');
+  lines.push('');
+  lines.push(`> [!note]- 同週收錄`);
+  lines.push('> ```dataview');
+  lines.push('> TABLE category AS "分類", stars, stars_per_day AS "stars/天"');
+  lines.push('> FROM "Repos"');
+  lines.push(`> WHERE week = "${getWeekString(today)}" AND file.name != "${safeFn}"`);
+  lines.push('> SORT stars DESC');
   lines.push('> ```');
   lines.push('');
 
@@ -730,25 +749,14 @@ function generateRepoNote(repo, llmInfo, today) {
   lines.push('');
   lines.push('## 個人筆記');
   lines.push('');
-  lines.push('> [!question]+ 快速評估（第一次看時填寫）');
-  lines.push('> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_');
+  lines.push('> [!question]+ 快速評估（30 秒填完）');
   lines.push('> ');
-  lines.push('> **跟我的工作相關嗎？** 是 / 否 / 間接相關');
-  lines.push('> **值得花時間試用嗎？** 是 / 以後再說 / 不需要');
-  lines.push('> **第一印象**：_一句話_');
-  lines.push('');
-  lines.push('> [!success]- 深度評估（試用後填寫）');
+  lines.push('> 相關性:: 未評估');
+  lines.push('> 印象:: _一句話_');
+  lines.push('> 行動:: 不需要');
   lines.push('> ');
-  lines.push('> | 項目 | 分數 (1-5) | 備註 |');
-  lines.push('> | --- | :---: | --- |');
-  lines.push('> | 實用性 | /5 | |');
-  lines.push('> | 技術新穎性 | /5 | |');
-  lines.push('> | 文件品質 | /5 | |');
-  lines.push('> | 社群活躍度 | /5 | |');
-  lines.push('> | 上手難度 | /5 | 1=很難 5=很簡單 |');
-  lines.push('> ');
-  lines.push('> **成熟度**：早期 / 可用 / 穩定');
-  lines.push('> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._');
+  lines.push('> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_');
+  lines.push('> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_');
   lines.push('');
   lines.push('### 試用記錄');
   lines.push('');
@@ -1094,12 +1102,12 @@ if (pages.length > 0) {
 
 \`\`\`dataviewjs
 const pages = dv.pages('"Repos"');
-const topCats = ["AI/ML", "開發工具", "CLI 工具", "Web 應用", "安全", "資料科學"];
 const catData = {};
-for (const cat of topCats) {
-  catData[cat] = pages.where(p => p.category === cat).length;
+for (const p of pages) {
+  const cat = p.category || "其他";
+  catData[cat] = (catData[cat] || 0) + 1;
 }
-const sorted = Object.entries(catData).sort((a,b) => b[1] - a[1]);
+const sorted = Object.entries(catData).sort((a,b) => b[1] - a[1]).slice(0, 10);
 dv.table(
   ["分類", "數量", "佔比", "視覺化"],
   sorted.map(([cat, count]) => {
@@ -1324,15 +1332,20 @@ SORT date ASC
 
 ---
 
-## 本週心得
+## 本週趨勢觀察
 
-> [!question]+ 週回顧
-> _本週有什麼值得注意的趨勢？哪些專案讓你印象深刻？_
+> [!question]+ 趨勢分析（每週花 5 分鐘寫）
+>
+> **主要趨勢**：_本週最明顯的技術趨勢是什麼？（例如：某個框架生態爆發、某類工具集中出現）_
+>
+> **印象最深的專案**：_哪個專案改變了你對某件事的看法？_
+>
+> **跟上週比**：_趨勢有延續還是轉向？_
 
 > [!todo]+ 行動項目
-> - [ ] 選出本週最值得試用的 3 個專案
-> - [ ] 更新已試用專案的狀態和評分
-> - [ ] 記錄發現的新趨勢
+> - [ ] 選出本週最值得試用的 1-2 個專案
+> - [ ] 更新已試用專案的 status（to-review → reading/tried）
+> - [ ] 在印象最深的專案筆記中寫下想法
 
 `;
 }
@@ -1744,25 +1757,38 @@ aliases:
 
 # ${concept}
 
-> 這個概念與以下 GitHub Trending 專案相關
+## 是什麼
+
+_用 2-3 句話解釋這個概念。想像對象是一個聰明但不熟悉這個領域的工程師朋友。_
+
+## 核心問題
+
+- [ ] 這個技術解決的根本問題是什麼？
+- [ ] 目前最成熟的實作方案是？
+- [ ] 什麼情況下不該用這個技術？
 
 ## 相關專案
 
 \`\`\`dataview
 TABLE
   stars AS "Stars",
-  category AS "分類",
-  language AS "語言",
+  stars_per_day AS "Stars/天",
+  install_complexity AS "難度",
   status AS "狀態"
 FROM "Repos"
-WHERE contains(file.outlinks, this.file.link) OR contains(meta(file.frontmatter), "${concept}")
+WHERE contains(file.outlinks, this.file.link)
 SORT stars DESC
 \`\`\`
 
-## 筆記
+## 學習資源
 
-_在此記錄關於「${concept}」的理解、學習心得、相關資源..._
+_關鍵文章、教學、論文..._
+
+## 我的理解
+
+_自己的話重新解釋，寫下使用心得和判斷_
 `;
+}
 }
 
 async function generateConceptNotes() {
@@ -1998,9 +2024,9 @@ function needsRefresh(content) {
          !content.includes('aliases:') ||
          !content.includes('## 優缺點分析') ||
          !content.includes('## 相關收錄') ||
-         !content.includes('快速評估') ||
-         !content.includes('速覽') ||  // v3: 速覽卡片包含 key_insight
-         !content.includes('待研究的問題');  // v3: 新版個人筆記模板
+         !content.includes('速覽') ||
+         !content.includes('30 秒填完') ||  // v4: 簡化快速評估
+         !content.includes('同週收錄');      // v4: 同週收錄 Dataview
 }
 
 function hasLLMContent(content) {
@@ -2014,14 +2040,13 @@ function hasLLMContent(content) {
 
 function isDefaultUserNotes(userNotes) {
   // 檢查個人筆記區是否還是預設模板（使用者沒有編輯過）
-  // 舊格式的預設是包含「我的想法」和「_在此寫下」
-  // 新格式的預設是包含「快速評估」和「第一印象」
   const trimmed = userNotes.replace(/## 出現記錄[\s\S]*$/, '').trim();
   return trimmed.includes('_在此寫下你的想法') ||
          trimmed.includes('_一句話_') ||
          trimmed.includes('_隨時記錄想法') ||
-         (!trimmed.includes('待研究的問題') && trimmed.includes('快速評估')) || // 舊版快速評估模板（沒有待研究區）
-         trimmed.length < 200; // 很短的內容通常也是預設
+         trimmed.includes('相關性:: 未評估') || // v4 新模板的預設值
+         (!trimmed.includes('30 秒填完') && trimmed.includes('快速評估')) || // 舊版快速評估模板
+         trimmed.length < 200;
 }
 
 function mergeNote(newNote, userNotes, appearances) {
