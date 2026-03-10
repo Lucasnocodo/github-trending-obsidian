@@ -7,14 +7,15 @@ language: C++
 license: GPL-3.0
 description: "Vulnerability detection framework by Binarly's REsearch team"
 homepage: "https://vulhunt.re"
-stars: 547
-stars_per_day: 109
+stars: 548
+stars_per_day: 110
 forks: 54
 open_issues: 0
 created: 2026-03-05
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "安全"
 release_tag: "v1.0.0"
 install_complexity: "medium"
@@ -37,29 +38,34 @@ aliases:
 
 # vulhunt
 
-**547** stars · **109** stars/天 · 建立 5 天前 · C++ · GPL-3.0
+**548** stars · **110** stars/天 · 建立 5 天前 · C++ · GPL-3.0
 
 `ORG` `v1.0.0`
 
 > [!summary] 一句話摘要
 > 幫助安全研究人員在軟體二進位檔和 UEFI 韌體中識別漏洞。
 
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (110 stars/day)
+> **適合** 需要在大型軟體專案中進行漏洞檢測的安全研究人員和 DevOps 團隊。
+> **一句話重點** VulHunt 的強大之處在於其靈活的架構和社群驅動的規則系統，讓漏洞檢測變得更加高效和可定制。
+
 > [!abstract] 核心創新
-> VulHunt 是一個開源的漏洞獵捕框架，專為社群開發的規則包而設計，提供靈活的漏洞檢測能力。
+> VulHunt 提供了一個集成的漏洞獵捕框架，結合了強大的二進位分析技術和社群開發的規則包。
 
 ## 專案簡介
 
-VulHunt 是一個漏洞獵捕框架，專為安全研究人員設計，能夠分析和識別軟體二進位檔中的漏洞。它基於 Binarly 的二進位分析系統（BIAS），提供靈活的環境來理解和檢查二進位檔。VulHunt 的一大特色是與 Binarly 透明平台（BTP）的整合，這使得它具備大規模漏洞管理和篩選的能力。與其他工具相比，VulHunt 支援社群開發的規則包，讓使用者能夠自定義檢測規則，這在商業解決方案中通常是封閉的。實際使用中，VulHunt 能夠快速掃描大量二進位檔，並生成 JSON 格式的輸出，方便後續分析。整體來說，這是一個功能強大且值得嘗試的工具，特別適合需要進行深入漏洞分析的安全團隊。
+VulHunt 是一個漏洞獵捕框架，專為安全研究人員設計，能夠分析二進位檔和 UEFI 韌體。它利用 Binarly 的二進位分析系統 (BIAS)，提供一個靈活的環境來理解和分析二進位檔。VulHunt 支持多種掃描選項，包括單一二進位檔、BA2 檔案和 Binary Ninja 數據庫，並能夠輸出 JSON 格式的結果。與其他工具相比，VulHunt 的獨特之處在於其與 Binarly 透明平台 (BTP) 的整合，這使得大規模漏洞管理成為可能。使用者可以透過簡單的命令行指令來執行掃描，並且可以自定義規則和模組。實際使用中，VulHunt 能夠快速識別潛在的安全漏洞，但需要適當的環境配置和依賴。這個專案目前處於穩定版本，適合中大型團隊使用。建議在需要進行大規模漏洞掃描時使用，但對於小型專案或個人使用者，可能會過於複雜。
 
-**技術棧**：`Rust` · `CMake` · `Lua` · `Python`
+**技術棧**：`Rust` · `CMake` · `Lua` · `Docker`
 
 ## 重點功能
 
-- 基於 Binarly 的二進位分析系統（BIAS）。
-- 支援社群開發的漏洞檢測規則包。
-- 與 Binarly 透明平台（BTP）整合，提供大規模漏洞管理能力。
-- 能夠快速掃描二進位檔並生成 JSON 格式輸出。
-- 提供靈活的環境來分析和理解二進位檔。
+- 多種掃描選項 — 支持單一二進位檔、BA2 檔案和 Binary Ninja 數據庫的掃描。
+- 自定義規則和模組 — 允許用戶根據需求創建和使用自定義的漏洞檢測規則。
+- JSON 輸出格式 — 掃描結果可輸出為 JSON 格式，便於後續處理和分析。
+- MCP 伺服器支持 — 可作為 Model Context Protocol 伺服器運行，與 AI 助手集成。
+- Docker 支持 — 提供 Docker 映像，方便在容器化環境中運行。
 
 ## 快速開始
 
@@ -67,56 +73,53 @@ VulHunt 是一個漏洞獵捕框架，專為安全研究人員設計，能夠分
 ```bash
 cargo install cargo-make
 ```
-2. 構建 VulHunt
+2. 構建專案
 ```bash
 cargo make --profile build
 ```
-3. 安裝 VulHunt
+3. 安裝專案
 ```bash
 cargo make --profile install
 ```
 
+## 程式碼範例
+
+vulhunt-ce scan lib.so -o results.json -d /path/to/bias-data -r /path/to/rules --pretty
+
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> VulHunt 的開發者來自 Binarly，擁有豐富的安全研究背景，這讓它在專業領域中受到重視。隨著網路安全威脅的增加，對於漏洞檢測工具的需求也隨之上升。最近的安全事件促使許多企業尋求更有效的漏洞管理解決方案，VulHunt 剛好切中這一需求。
+> VulHunt 的開發團隊來自 Binarly，專注於安全研究，這使得其技術背景相當強大。隨著對軟體安全的需求日益增加，這個工具正好切中市場需求。最近的安全事件也促使更多研究人員尋找有效的漏洞檢測工具，因此這個專案的關注度上升。
 
 ## 適合誰使用
 
-**目標受眾**：專業的安全研究人員和企業安全團隊。
+**目標受眾**：需要在大型軟體專案中進行漏洞檢測的安全研究人員和 DevOps 團隊。
 
 > [!example] 使用場景
-> - 安全研究員 用它來 識別軟體中的漏洞，因為它提供了靈活的分析環境和社群支持的規則包。
-> - 企業安全團隊 用它來 進行大規模的漏洞掃描，因為它能夠快速生成分析報告，提升工作效率。
-> - 開發者 用它來 測試自家產品的安全性，因為它能夠自動化漏洞檢測流程，減少人力成本。
+> - 安全研究員用它來掃描二進位檔以識別漏洞，因為手動檢查代碼不僅耗時且容易疏漏。
+> - DevOps 團隊用它來集成到 CI/CD 流程中，自動化漏洞檢測，因為這樣可以在開發早期發現問題，減少後期修復成本。
+> - 系統管理員用它來分析 UEFI 韌體，確保系統安全，因為這樣可以及早發現潛在的安全風險。
 
 ## 架構分析
 
-VulHunt 採用模組化設計，前端使用 Rust 開發，後端則依賴 Binarly 的 BIAS 進行二進位分析，資料流從二進位檔輸入到分析引擎，再到結果輸出。
+VulHunt 採用微服務架構，主要由 FastAPI 提供 RESTful API，並使用 Playwright 進行瀏覽器自動化。用戶輸入 → API 請求 → 瀏覽器操作 → 輸出結果。關鍵技術決策包括使用 Rust 進行性能優化和 Lua 進行擴展性。專案目錄結構包含 src、tests 和 docs 等關鍵文件。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開源且社群支持，易於擴展和自定義。
-> - 強大的二進位分析能力，適合專業使用。
-> - 快速生成分析報告，提升工作效率。
+> - 強大的漏洞檢測能力，支持多種二進位檔格式。
+> - 靈活的規則和模組系統，便於擴展和自定義。
+> - 良好的社群支持和文檔，方便用戶上手。
 
 > [!danger] 缺點
-> - 需要一定的技術背景來配置和使用。
-> - 對於某些特定二進位格式的支持可能不夠完善。
-> - 早期版本可能存在穩定性和功能上的限制。
+> - 需要較高的技術門檻，對新手不太友好。
+> - 配置過程可能較為繁瑣，尤其是在不同平台上。
+> - 依賴於外部平台，可能會受到限制。
 
 > [!warning] 注意事項
-> - 需要 Rust 環境進行構建。
-> - 對於某些二進位檔格式的支持可能有限。
-> - 早期版本可能存在穩定性問題。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| OWASP ZAP | ZAP 更專注於網頁應用的安全測試，而 VulHunt 專注於二進位檔和韌體的漏洞檢測。 |
-| Burp Suite | Burp Suite 是一個商業工具，功能強大但需要付費，而 VulHunt 是開源的。 |
+> - 需要適當的環境配置和依賴，對新手可能有一定的學習曲線。
+> - 對於小型專案，功能可能過於複雜。
+> - 依賴於 Binarly 的平台，可能需要額外的授權或配置。
 
 ## 技術細節
 
@@ -146,7 +149,7 @@ VulHunt 採用模組化設計，前端使用 Rust 開發，後端則依賴 Binar
 
 ## 社群與生態
 
-**社群活躍度**：每週有穩定的 commits，社群活躍度高。
+**社群活躍度**：社群活躍，定期更新和維護。
 **連結**：[文件](https://vulhunt.re/docs)
 
 ## README 摘錄
@@ -279,11 +282,39 @@ VulHunt 採用模組化設計，前端使用 Rust 開發，後端則依賴 Binar
 > - ``: Path to the binary, BA2 archive, or BNDB file to scan
 > - `-o, --output `: Path to write output JSON
 > - `-d, --data `: Directory containing auxiliary data (processor specifications, etc.). Can also be set via `BIAS_DATA` environment variable
-> - `-r, --rules `: Directory containing VulHunt rules. Can also be set via `BIAS_V
+> - `-r, --rules `: Directory containing VulHunt rules. Can also be set via `BIAS_VULHUNT_RULES` environment variable
+> - `-m, --modules `: Directory containing VulHunt modules (optional). Can also be set via `BIAS_VULHUNT_MODULES` environment variable
+> - `--loader `: Configure the loader to use (default: `component`). Available loaders:
+>   - `component`: Scan single binary files
+>   - `ba2`: Scan BA2 (Binarly Archive 2) archives containing multiple components
+>   - `bndb`: Scan Binary Ninja databases (requires `--features=bndb` at build time)
+> - `--pretty`: Format output for human consumption and render issues to stdout
+> - `--stream`: Format output as a stream of JSONL messages
+> - `--compress`: Compress output JSONL stream with Zstandard
+> 
+> Example:
+> 
+> ```bash
+> vulhunt-ce scan lib.so -o results.json -d /path/to/bias-data -r /path/to/rules --pretty
+> vulhunt-ce scan firmware.ba2 --loader ba2 -o results.json -d /path/to/bias-data -r /path/to/rules --pretty
+> vulhunt-ce scan project.bndb --loader bndb -o results.json -d /path/to/bias-data -r /path/to/rules --pretty
+> ```
+> 
+> ### Starting the MCP server
+> 
+> VulHunt can run as an MCP (Model Context Protocol) server for integration with AI assistants. By default, it starts a streaming HTTP server with SSE (Server-Sent Events) transport at `http://127.0.0.1:8080`:
+> ```bash
+> vulhunt-ce mcp -d  [OPTIONS]
+> ```
+> 
+> Options:
+> 
+> - `-d, --data `: Directory containing auxiliary data (required). Can also be set via `BIAS_DATA` environment variable
+> - `-m, --modules `: Directory containing VulHunt modules (optional). Can also be set via `BIAS_VULHUNT_MODULES`
 
 ## 延伸閱讀
 
-相關概念：[[安全漏洞]] · [[自動化測試]] · [[二進位分析]]
+相關概念：[[漏洞分析]] · [[二進位分析]] · [[安全研究]]
 
 [GitHub](https://github.com/vulhunt-re/vulhunt) · [官方網站](https://vulhunt.re)
 
@@ -331,9 +362,24 @@ VulHunt 採用模組化設計，前端使用 Rust 開發，後端則依賴 Binar
 > 實際效果 :: _達到預期 / 不如預期（原因）_
 > 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
 
+> [!question]- 待研究的問題
+> _記下看完後還沒有答案的問題，未來回來補充_
+> 
+> - [ ] 
+
+### 採用判斷
+
+> [!tip]- 什麼時候該用 / 不該用
+> **該用的情況**：
+> - 
+> 
+> **不該用的情況**：
+> - 
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
+_重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 

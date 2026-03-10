@@ -20,6 +20,30 @@ cssclasses:
 | [[MOC - CLI 工具]] | 命令列工具 |
 | [[MOC - 安全]] | 安全相關 |
 | [[MOC - 資料科學]] | 資料科學 |
+| [[MOC - 教學資源]] | 教學資源 |
+| [[MOC - 基礎設施]] | 基礎設施 |
+
+## 統計快照
+
+```dataviewjs
+const pages = dv.pages('"Repos"');
+const total = pages.length;
+const reviewed = pages.where(p => p.status && p.status !== "to-review").length;
+const tried = pages.where(p => p.status === "tried" || p.status === "integrated").length;
+const rated = pages.where(p => p.my_rating > 0).length;
+const pct = total > 0 ? Math.round((reviewed / total) * 100) : 0;
+
+const cats = {};
+for (const p of pages) {
+  const c = p.category || "其他";
+  cats[c] = (cats[c] || 0) + 1;
+}
+const topCat = Object.entries(cats).sort((a,b) => b[1] - a[1])[0];
+
+dv.paragraph(`**${total}** 個專案 · 回顧 **${reviewed}** (${pct}%) · 試用 **${tried}** · 評分 **${rated}**`);
+dv.paragraph(`<progress value="${reviewed}" max="${total}" style="width:100%"></progress>`);
+if (topCat) dv.paragraph(`最多分類：**${topCat[0]}** (${topCat[1]} 個)`);
+```
 
 ## 最新收錄
 
@@ -60,15 +84,22 @@ SORT my_rating DESC
 LIMIT 10
 ```
 
-## 回顧進度
+## 最近的週報
 
-```dataviewjs
-const pages = dv.pages('"Repos"');
-const total = pages.length;
-const reviewed = pages.where(p => p.status && p.status !== "to-review").length;
-const pct = total > 0 ? Math.round((reviewed / total) * 100) : 0;
-dv.paragraph(`${reviewed}/${total} 已回顧 (${pct}%)`);
-dv.paragraph(`<progress value="${reviewed}" max="${total}" style="width:100%"></progress>`);
+```dataview
+LIST
+FROM "Weekly"
+SORT file.name DESC
+LIMIT 4
+```
+
+## 月報
+
+```dataview
+LIST
+FROM "Monthly"
+SORT file.name DESC
+LIMIT 3
 ```
 
 ---

@@ -7,10 +7,10 @@ language: TypeScript
 license: N/A
 description: "Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. The knowledge is available to all but rarely aggregated in the open, until now."
 homepage: ""
-stars: 1370
-stars_per_day: 274
+stars: 1376
+stars_per_day: 275
 forks: 148
-open_issues: 3
+open_issues: 1
 created: 2026-03-05
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
@@ -29,39 +29,39 @@ tags:
 aliases:
   - "Shadowbroker"
   - "BigBodyCobain/Shadowbroker"
-  - "提供即時的全球開源情報，追蹤各類事件與物體。"
+  - "提供即時的多領域開源情報平台，整合全球活動數據。"
 ---
 
 # Shadowbroker
 
-**1.4k** stars · **274** stars/天 · 建立 5 天前 · TypeScript · 未標註授權
+**1.4k** stars · **275** stars/天 · 建立 5 天前 · TypeScript · 未標註授權
 
 `v0.6.0`
 
 > [!summary] 一句話摘要
-> 提供即時的全球開源情報，追蹤各類事件與物體。
+> 提供即時的多領域開源情報平台，整合全球活動數據。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (274 stars/day)
-> **適合** 需要即時全球情報的分析師、研究人員和安全專家。
-> **一句話重點** ShadowBroker 將多領域的開源情報整合到一個平台，讓即時追蹤全球事件變得更簡單。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (275 stars/day)
+> **適合** 需要即時全球情報數據的分析師和研究人員。
+> **一句話重點** Shadowbroker 的即時情報整合能力讓使用者能夠快速掌握全球動態，特別適合需要即時數據的專業團隊。
 
 > [!abstract] 核心創新
-> ShadowBroker 提供了一個統一的即時情報平台，能夠聚合多領域的開源數據，並以直觀的方式展示。
+> Shadowbroker 提供一個統一的即時情報平台，整合多個開源數據來源，讓使用者能夠即時追蹤全球活動。
 
 ## 專案簡介
 
-ShadowBroker 是一個即時的多域開源情報平台，能夠聚合來自多個開源情報來源的數據，並在統一的介面上顯示。使用者可以透過 `git clone` 下載專案，並使用 `./compose.sh up -d` 指令啟動 Docker 環境，快速查看即時的全球活動。該平台使用 Next.js 和 FastAPI 開發，支援航空、海洋、衛星、地緣政治等多種追蹤功能，並能夠即時更新。與其他情報平台相比，ShadowBroker 提供了更為直觀的視覺化介面和多樣化的數據來源，適合分析師和研究人員使用。該工具的效能在處理大量即時數據上表現良好，但對於某些特定數據的準確性可能有所限制。這個專案目前處於穩定階段，適合需要即時情報的團隊和個人使用。建議在需要全面追蹤全球事件時使用，但若對數據準確性有高要求，則需謹慎考量。
+Shadowbroker 是一個即時的多領域開源情報平台，能夠整合來自多個開源情報來源的數據，並在統一的介面上呈現。使用者可以透過 `git clone` 和 `./compose.sh up -d` 快速啟動服務，並在 `http://localhost:3000` 查看即時的全球活動數據。該平台使用 Next.js 和 FastAPI，專為分析師和研究人員設計，提供航空、海事、衛星、地緣政治等多種追蹤功能。與其他情報平台相比，Shadowbroker 的即時更新和多樣化的數據來源使其在市場上脫穎而出。使用者可以追蹤私人飛機、海上交通、衛星運行等，並獲得即時的地緣政治事件更新。該專案目前處於穩定版本，適合需要即時情報的專業團隊使用。對於只需要單一領域數據的使用者，可能會覺得功能過於繁雜。
 
-**技術棧**：`Next.js` · `FastAPI` · `Python`
+**技術棧**：`Next.js` · `FastAPI` · `MapLibre GL` · `Python`
 
 ## 重點功能
 
-- 即時航空追蹤 — 追蹤超過 5,000 架商業航班和私人飛機。
-- 海洋交通監控 — 提供 25,000 多艘船隻的即時 AIS 數據。
-- 衛星運行追蹤 — 追蹤 2,000 多顆衛星的即時位置，無需 API 金鑰。
-- 地緣政治事件聚合 — 提供即時的全球衝突事件數據，並可自定義信息源。
-- 高解析度衛星影像 — 提供 NASA 和 Esri 的衛星影像，支持即時查看。
+- 即時航空追蹤 — 追蹤超過 5,000 架商業飛機的即時位置。
+- 海事追蹤 — 提供超過 25,000 艘船隻的即時 AIS 數據。
+- 衛星追蹤 — 追蹤超過 2,000 顆衛星的即時位置，無需 API 金鑰。
+- 地緣政治事件聚合 — 整合 GDELT 提供的全球衝突事件數據。
+- 即時衛星影像 — 提供 NASA 和 Esri 的高解析度衛星影像。
 
 ## 快速開始
 
@@ -73,7 +73,7 @@ git clone https://github.com/BigBodyCobain/Shadowbroker.git
 ```bash
 cd Shadowbroker
 ```
-3. 啟動 Docker 環境
+3. 啟動服務
 ```bash
 ./compose.sh up -d
 ```
@@ -81,57 +81,59 @@ cd Shadowbroker
 ## 程式碼範例
 
 ```bash
+git clone https://github.com/BigBodyCobain/Shadowbroker.git
+cd Shadowbroker
 ./compose.sh up -d
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 BigBodyCobain 具備豐富的開源開發經驗，並專注於信息聚合和可視化。隨著全球事件的增多，對於即時情報的需求也在上升，這個專案正好切中這一需求，並且在 GitHub 上獲得了廣泛的關注。
+> 作者 BigBodyCobain 具備開源情報的背景，針對即時數據整合的需求開發了這個平台。隨著地緣政治事件的頻繁發生，對於即時情報的需求日益增加，使得 Shadowbroker 受到廣泛關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要即時全球情報的分析師、研究人員和安全專家。
+**目標受眾**：需要即時全球情報數據的分析師和研究人員。
 
 > [!example] 使用場景
-> - 情報分析師用它來追蹤全球航班動態，因為能夠即時獲取高達 5,000 架飛機的位置信息。
-> - 研究人員用它來監控衛星運行，因為提供了 2,000 多顆衛星的即時位置數據，無需 API 金鑰。
-> - 安全專家用它來分析地緣政治事件，因為能夠聚合來自 GDELT 的衝突事件數據，並提供即時更新。
+> - 情報分析師用它來即時追蹤全球衝突事件，因為它能整合多個數據來源，提供即時更新。
+> - 研究人員用它來分析航空交通模式，因為它提供了高解析度的飛行數據和航跡追蹤功能。
+> - 安全專家用它來監控海上交通，因為它能即時顯示船隻位置和類型，幫助識別潛在威脅。
 
 ## 架構分析
 
-該專案採用前後端分離的架構，前端使用 Next.js，後端使用 FastAPI。用戶輸入 → 前端請求後端數據 → 後端聚合數據並返回給前端。關鍵技術決策包括使用 MapLibre GL 進行地圖可視化，並整合多個開源數據來源。目錄結構中，`compose.sh` 是啟動服務的關鍵檔案。
+Shadowbroker 採用前後端分離架構，前端使用 Next.js，後端使用 FastAPI。用戶輸入 → 數據整合 → 即時顯示。核心技術決策是使用 MapLibre GL 進行地圖顯示，專案目錄結構包含 `compose.sh` 用於啟動服務。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 即時更新的全球情報，提供多領域的數據聚合。
-> - 直觀的可視化介面，方便用戶快速獲取信息。
-> - 支援多種數據來源，靈活性高。
+> - 即時更新的多領域數據，適合專業分析需求。
+> - 用戶友好的界面，易於導航和使用。
+> - 整合多個數據來源，提供全面的情報視圖。
 
 > [!danger] 缺點
-> - 需要 Docker 環境，對於不熟悉的用戶可能有學習曲線。
-> - 對於某些數據的準確性需進一步驗證，可能存在延遲。
-> - 在低帶寬環境下，數據更新速度可能受到影響。
+> - 需要 Docker 環境，對於某些使用者來說可能增加複雜度。
+> - 即時數據的準確性依賴於外部來源。
+> - 對於不熟悉開源情報的使用者，可能需要學習曲線。
 
 > [!warning] 注意事項
-> - 需要 Docker 或 Podman 環境才能運行。
-> - 對於某些數據的準確性可能存在限制，需進一步驗證。
-> - 在低帶寬環境下可能影響即時數據更新的速度。
+> - 需要 Docker 或 Podman 環境來運行。
+> - 即時數據更新可能會受到來源的影響。
+> - 對於不熟悉開源情報的使用者，可能需要時間上手。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [[OpenSkyNetwork--OpenSky-API\|OpenSkyNetwork/OpenSky-API]] | OpenSky API 專注於航空數據，但不提供其他領域的即時情報聚合。 |
-| [[GDELT--GDELT\|GDELT/GDELT]] | GDELT 提供全球事件數據，但缺乏可視化和即時更新的功能。 |
+| FlightRadar24 | FlightRadar24 專注於航空交通追蹤，而 Shadowbroker 提供多領域的即時情報整合。 |
+| MarineTraffic | MarineTraffic 專注於海事追蹤，而 Shadowbroker 提供更廣泛的全球活動數據。 |
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 148 |
-| Open Issues | 3 |
+| Open Issues | 1 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-05 |
 | Repo 大小 | 103.1 MB |
@@ -290,9 +292,24 @@ cd Shadowbroker
 > 實際效果 :: _達到預期 / 不如預期（原因）_
 > 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
 
+> [!question]- 待研究的問題
+> _記下看完後還沒有答案的問題，未來回來補充_
+> 
+> - [ ] 
+
+### 採用判斷
+
+> [!tip]- 什麼時候該用 / 不該用
+> **該用的情況**：
+> - 
+> 
+> **不該用的情況**：
+> - 
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
+_重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 

@@ -7,9 +7,9 @@ language: TypeScript
 license: N/A
 description: "CLI that turns plain numbers into terminal charts. ascii, spark, bars, columns, heatmap, unicode, braille, svg. "
 homepage: "https://x.com/MrAhmadAwais"
-stars: 537
-stars_per_day: 107
-forks: 28
+stars: 538
+stars_per_day: 108
+forks: 29
 open_issues: 0
 created: 2026-03-05
 pushed_at: 2026-03-10
@@ -30,39 +30,36 @@ tags:
 aliases:
   - "chartli"
   - "ahmadawais/chartli"
-  - "將純數字轉換為終端圖表，讓數據可視化變得簡單直觀。"
+  - "將純數字轉換為終端圖表，方便快速視覺化數據。"
 ---
 
 # chartli
 
-**537** stars · **107** stars/天 · 建立 5 天前 · TypeScript · 未標註授權
+**538** stars · **108** stars/天 · 建立 5 天前 · TypeScript · 未標註授權
 
 `個人專案` `1.0.0` `easy-install`
 
 > [!summary] 一句話摘要
-> 將純數字轉換為終端圖表，讓數據可視化變得簡單直觀。
+> 將純數字轉換為終端圖表，方便快速視覺化數據。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (107 stars/day)
-> **適合** 需要在終端環境中快速生成數據圖表的開發者和數據分析師。
-> **一句話重點** 這個專案讓數據可視化變得簡單，特別是在終端環境中，開發者可以輕鬆生成各種圖表。
-
-> [!abstract] 核心創新
-> 提供多種終端圖表格式的 CLI 工具，讓數據可視化變得簡單直觀。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (108 stars/day)
+> **適合** 需要在終端中快速視覺化數據的開發者和數據分析師。
+> **一句話重點** 這個專案讓終端用戶能夠輕鬆地將數字數據轉換為可視化圖表，極大地提高了數據分析的效率。
 
 ## 專案簡介
 
-這個 CLI 工具 `chartli` 讓用戶能夠將純數字數據轉換為各種終端圖表，支持 ASCII、SVG、熱圖等格式。用戶可以透過簡單的命令行參數來指定圖表類型、寬度、高度及標籤，並且可以從檔案或標準輸入讀取數據。它使用 TypeScript 和 Rust 實現，提供了高效的數據處理能力。與其他圖表工具相比，`chartli` 的獨特之處在於其多樣的輸出格式和簡單的 CLI 使用方式，適合快速生成圖表而不需繁瑣的設置。使用者可以輕鬆生成如 ASCII 繪圖或 SVG 圖形，並且支持自定義標籤和數據顯示。這個工具的性能在處理小型數據集時表現良好，但對於大型數據集可能會遇到性能瓶頸。整體來說，這是一個穩定的工具，適合需要快速可視化數據的小型團隊或個人使用。建議在需要快速生成終端圖表時使用，但對於複雜的數據視覺化需求，可能需要考慮其他更強大的工具。
+這個 CLI 工具 `chartli` 可以將純數字數據轉換為多種終端圖表格式，包括 ASCII、SVG 和熱圖等，讓用戶能夠快速視覺化數據。用戶只需提供數據文件或通過標準輸入，並使用各種選項來定義圖表類型、寬度和高度等參數。它使用 TypeScript 和 Rust 開發，並支持多種圖表格式，具體包括 ascii、spark、bars、columns、heatmap、unicode、braille 和 svg。與其他圖表工具相比，`chartli` 的優勢在於其簡單的命令行介面和即時渲染功能，特別適合需要快速生成圖表的開發者。實際使用中，`chartli` 能夠在終端中快速生成圖表，並且支持自定義標籤和數據顯示，這對於數據分析和報告生成非常有幫助。這個專案目前處於穩定版本，適合各種規模的團隊使用，特別是需要快速視覺化數據的開發者。建議在需要快速生成終端圖表時使用，但對於需要高級視覺化功能的用戶，可能需要考慮其他工具。
 
 **技術棧**：`TypeScript` · `Rust` · `JavaScript`
 
 ## 重點功能
 
-- 多種圖表格式 — 支持 ascii、svg、unicode、braille、spark、bars、columns、heatmap。
-- 自定義標籤 — 使用 --x-axis-label 和 --y-axis-label 參數添加坐標軸標題。
-- 數據顯示 — 使用 --data-labels 參數在圖表上顯示原始數值。
-- 靈活的輸入 — 支持從檔案或標準輸入讀取數據。
-- 尺寸調整 — 使用 -w 和 -h 參數自定義圖表的寬度和高度。
+- 多種圖表格式 — 支持 ascii、spark、bars、columns、heatmap、unicode、braille 和 svg，使用 -t 參數切換。
+- 自定義圖表尺寸 — 使用 -w 和 -h 參數設置圖表的寬度和高度。
+- 數據標籤顯示 — 使用 --data-labels 參數在圖表中顯示原始數值。
+- 自定義軸標題 — 使用 --x-axis-label 和 --y-axis-label 參數添加自定義的軸標題。
+- 支持從文件或標準輸入讀取數據 — 使用 [file] 參數指定數據文件，未提供時從 stdin 讀取。
 
 ## 快速開始
 
@@ -70,57 +67,57 @@ aliases:
 ```bash
 npx chartli --help
 ```
-2. 全局安裝
+2. 全局安裝 chartli
 ```bash
 npm i -g chartli
 ```
-3. 生成圖表
+3. 生成 ASCII 圖表
 ```bash
-npx chartli examples/assets/weekly-signups.txt -t ascii -w 28 -h 8 --first-column-x --data-labels
+pnpm chartli examples/assets/weekly-signups.txt -t ascii -w 28 -h 8 --first-column-x --data-labels
 ```
 
 ## 程式碼範例
 
 ```bash
-npx chartli examples/assets/weekly-signups.txt -t ascii -w 28 -h 8 --first-column-x --data-labels
+pnpm chartli examples/assets/weekly-signups.txt -t ascii -w 28 -h 8 --first-column-x --data-labels
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 Ahmad Awais 是一位知名的開源貢獻者，這個專案切中了開發者對於簡單、快速數據可視化的需求。隨著 CLI 工具的流行，這個專案的推出恰逢其時，尤其是在開發者社群中對於終端工具的需求日益增加。
+> 作者 Ahmad Awais 是一位知名的開源貢獻者，他的專案通常針對開發者的實際需求。`chartli` 針對終端用戶的需求，提供了簡單易用的圖表生成工具，這在開發者社群中引起了廣泛關注。隨著 CLI 工具的流行，這個專案的推出正好切合了開發者對於快速數據視覺化的需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要在終端環境中快速生成數據圖表的開發者和數據分析師。
+**目標受眾**：需要在終端中快速視覺化數據的開發者和數據分析師。
 
 > [!example] 使用場景
-> - 數據分析師用它來快速生成終端圖表，因為這樣可以在沒有 GUI 的環境下輕鬆查看數據趨勢。
-> - DevOps 工程師用它來在 CI/CD 流程中自動生成數據報告，因為其 CLI 特性使得集成變得簡單。
-> - 教育工作者用它來展示學生的成績分佈，因為可以快速生成可視化圖表，幫助學生理解數據。
+> - 數據科學家用它來快速生成數據分析報告中的圖表，因為它能在終端中即時渲染，節省了使用 GUI 工具的時間。
+> - 後端工程師用它來在 CI/CD 流程中自動生成數據圖表，因為可以直接將數據輸出到終端，方便監控和調試。
+> - 系統管理員用它來監控伺服器性能數據，因為它支持多種圖表格式，能夠快速視覺化關鍵指標。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多種圖表格式，滿足不同需求。
-> - 簡單易用的 CLI 接口，快速上手。
-> - 靈活的數據輸入方式，適合各種使用場景。
+> - 簡單易用的命令行介面，快速生成圖表。
+> - 支持多種圖表格式，靈活性高。
+> - 即時渲染，適合快速數據視覺化需求。
 
 > [!danger] 缺點
-> - 不支持交互式圖表，僅限靜態輸出。
-> - 對於大型數據集，性能可能會下降。
-> - 需要 Node.js 環境來運行。
+> - 功能相對簡單，缺乏高級視覺化功能。
+> - 不支持交互式圖表，僅能生成靜態圖表。
+> - 對於大型數據集，性能可能會受到影響。
 
 > [!warning] 注意事項
-> - 對於大型數據集，性能可能會下降。
-> - 不支持交互式圖表，僅限靜態輸出。
-> - 需要 Node.js 環境來運行。
+> - 僅支持數字數據，對於非數字格式的數據無法處理。
+> - 在某些終端中，圖表渲染效果可能會受到字體和顯示設置的影響。
+> - 不支持交互式圖表，僅能生成靜態圖表。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 28 |
+| Forks | 29 |
 | Open Issues | 0 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-05 |
@@ -308,8 +305,6 @@ npx chartli examples/assets/weekly-signups.txt -t ascii -w 28 -h 8 --first-colum
 
 ## 延伸閱讀
 
-相關概念：[[資料視覺化]] · [[CLI/TUI]]
-
 [GitHub](https://github.com/ahmadawais/chartli) · [官方網站](https://x.com/MrAhmadAwais)
 
 ## 相關收錄
@@ -356,9 +351,24 @@ npx chartli examples/assets/weekly-signups.txt -t ascii -w 28 -h 8 --first-colum
 > 實際效果 :: _達到預期 / 不如預期（原因）_
 > 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
 
+> [!question]- 待研究的問題
+> _記下看完後還沒有答案的問題，未來回來補充_
+> 
+> - [ ] 
+
+### 採用判斷
+
+> [!tip]- 什麼時候該用 / 不該用
+> **該用的情況**：
+> - 
+> 
+> **不該用的情況**：
+> - 
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
+_重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 

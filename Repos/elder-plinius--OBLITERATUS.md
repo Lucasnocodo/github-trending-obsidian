@@ -7,17 +7,18 @@ language: Python
 license: AGPL-3.0
 description: "OBLITERATE THE CHAINS THAT BIND YOU"
 homepage: "https://huggingface.co/spaces/pliny-the-prompter/"
-stars: 2673
+stars: 2676
 stars_per_day: 382
 forks: 446
-open_issues: 16
+open_issues: 17
 created: 2026-03-03
 pushed_at: 2026-03-08
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "AI/ML"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
@@ -25,91 +26,105 @@ tags:
   - github
   - "category/ai_ml"
   - "lang/python"
-  - easy_install
 aliases:
   - "OBLITERATUS"
   - "elder-plinius/OBLITERATUS"
-  - "讓大型語言模型擺脫拒絕行為的束縛，實現自由回應。"
+  - "讓大型語言模型無需拒絕地回應所有提示，解放其內部表現。"
 ---
 
 # OBLITERATUS
 
 **2.7k** stars · **382** stars/天 · 建立 7 天前 · Python · AGPL-3.0
 
-`個人專案` `easy-install`
+`個人專案`
 
 > [!summary] 一句話摘要
-> 讓大型語言模型擺脫拒絕行為的束縛，實現自由回應。
+> 讓大型語言模型無需拒絕地回應所有提示，解放其內部表現。
+
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (382 stars/day)
+> **適合** 希望深入了解大型語言模型內部運作並參與研究的 AI 研究人員。
+> **一句話重點** OBLITERATUS 不僅是一個工具，更是一個促進大型語言模型研究的社群實驗平台。
 
 > [!abstract] 核心創新
-> OBLITERATUS 是首個能夠在不重訓的情況下，精確移除大型語言模型拒絕行為的開源工具。
+> OBLITERATUS 是首個提供透明解放大型語言模型拒絕行為的開源工具。
 
 ## 專案簡介
 
-OBLITERATUS 透過一系列技術，精確識別並移除大型語言模型中的拒絕行為，讓模型能夠對所有提示做出回應。它使用了多種提取策略，如 PCA 和稀疏自動編碼器分解，並在推理時進行干預。與其他工具相比，OBLITERATUS 不僅提供了簡單的使用介面，還能讓用戶參與到數據收集和研究中，形成一個分散式的研究實驗。使用者可以視覺化拒絕行為在模型中的分佈，並量化合規性與一致性之間的權衡。這個工具在無需重訓的情況下，能夠持續提升模型的性能。總體來看，OBLITERATUS 是一個成熟且值得嘗試的工具，特別適合對大型語言模型進行深入研究的開發者和研究人員。
+OBLITERATUS 提供了一個開源工具包，專注於理解和移除大型語言模型的拒絕行為。它透過一系列的技術（稱為 abliteration），能夠定位並移除模型內部的拒絕表現，而不需要重新訓練或微調模型。這個過程包括從模型的隱藏狀態探測、提取拒絕方向、到在推理時進行干預，所有步驟都可視化，並可量化合規性與一致性之間的權衡。與其他工具相比，OBLITERATUS 不僅是一個工具，還是一個分散式的研究實驗，使用者的每次操作都能貢獻到一個匿名的基準數據集，推動未來的研究。實際使用中，這個工具可以在無需 GPU 的情況下運行，並且提供了完整的 Gradio 界面，讓使用者可以輕鬆進行模型的解放和基準測試。這個專案目前處於 alpha 階段，但其潛力巨大，適合對大型語言模型行為有深入研究需求的團隊。
 
-**技術棧**：`Python` · `Gradio`
+**技術棧**：`Gradio 5.29.0` · `Python`
 
 ## 重點功能
 
-- 一鍵解放模型，無需安裝或設置。
-- 提供完整的管道，從探測模型隱藏狀態到實際干預。
-- 支持多種提取策略，如 PCA 和稀疏自動編碼器分解。
-- 可視化拒絕行為在模型中的分佈。
-- 收集匿名基準數據，促進集體研究。
+- 一鍵解放模型 — 使用指令 `obliteratus obliterate meta-llama/Llama-3.1-8B-Instruct --method advanced` 進行模型解放。
+- 可視化拒絕行為 — 提供圖形界面來觀察模型的內部狀態和拒絕方向。
+- 社群驅動的數據貢獻 — 每次操作都能匿名貢獻數據，推動未來的研究。
+- 完整的管道支持 — 從探測到干預的每一步都可觀察和量化。
+- Python API — 讓開發者能夠進一步控制和擴展功能。
 
 ## 快速開始
 
-1. 在 HuggingFace Spaces 上運行 OBLITERATUS
+1. 安裝依賴
 ```bash
-無需指令
+pip install -r requirements.txt
 ```
-2. 啟用遙測以貢獻數據
+2. 運行模型解放
 ```bash
-無需指令
+obliteratus obliterate meta-llama/Llama-3.1-8B-Instruct --method advanced
+```
+3. 訪問 Gradio 界面
+```bash
+open http://localhost:7860
+```
+
+## 程式碼範例
+
+```bash
+obliteratus obliterate meta-llama/Llama-3.1-8B-Instruct --method advanced
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者在機械解釋性和大型語言模型的研究領域有深厚背景，OBLITERATUS 直接切中對於模型透明度和可控性的需求。隨著大型語言模型的廣泛應用，對於理解其內部運作的需求日益增加，這使得該工具在當前時期受到關注。
+> OBLITERATUS 的作者在大型語言模型的研究領域有深厚的背景，並且切中當前對於模型行為透明化的需求。隨著對模型拒絕行為的關注增加，這個專案提供了一個具體的解決方案，讓使用者能夠直接參與到研究中。這種社群驅動的研究模式在當前的 AI 研究中相對少見，因此引起了廣泛的關注。
 
 ## 適合誰使用
 
-**目標受眾**：對大型語言模型有研究興趣的開發者和學術研究者。
+**目標受眾**：希望深入了解大型語言模型內部運作並參與研究的 AI 研究人員。
 
 > [!example] 使用場景
-> - 研究人員用它來分析大型語言模型的拒絕行為，因為它提供了可視化和數據收集的功能。
-> - 開發者用它來優化模型的回應能力，因為它能夠在不重訓的情況下直接調整模型行為。
-> - 學生用它來學習機械解釋性技術，因為它的界面友好且易於上手。
+> - AI 研究者用它來分析大型語言模型的拒絕行為，因為它提供了精確的可視化工具和數據，幫助理解模型的內部運作。
+> - 開發者用它來解放模型以應對特定的應用場景，因為它能夠在不改變模型核心能力的情況下，移除不必要的拒絕行為。
+> - 教育工作者用它來展示大型語言模型的工作原理，因為其透明的操作流程和社群貢獻的數據能夠促進學習和討論。
 
 ## 架構分析
 
-OBLITERATUS 採用前後端分離架構，前端使用 Gradio 提供用戶介面，後端使用 Python 處理模型的探測和干預。用戶的操作直接影響模型的行為，並能夠即時看到結果。
+OBLITERATUS 採用前後端分離的架構，使用者透過 Gradio 界面與後端進行互動。用戶輸入 → 模型處理 → 輸出結果。關鍵技術決策包括使用 SVD 進行拒絕方向的提取，並在推理時進行干預。專案的目錄結構包括 app.py 作為主要入口。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 使用簡單，無需複雜的安裝步驟。
-> - 支持實時數據收集，促進社群研究。
-> - 提供可視化工具，幫助理解模型行為。
+> - 提供透明的模型解放過程，增進理解。
+> - 社群驅動的數據貢獻，推動研究進展。
+> - 無需 GPU 即可運行，降低使用門檻。
 
 > [!danger] 缺點
-> - 僅限於特定的模型架構。
-> - 對於大型模型，處理時間可能較長。
-> - 需要穩定的網路連接。
+> - 目前功能仍在開發中，穩定性有待提升。
+> - 需要一定的技術背景來操作。
+> - 不支持在離線環境中使用。
 
 > [!warning] 注意事項
-> - 需要穩定的網路連接以使用 HuggingFace Spaces。
-> - 對於某些大型模型可能需要較長的處理時間。
-> - 目前僅支持特定的模型架構。
+> - 目前處於 alpha 階段，API 可能會變動。
+> - 需要一定的技術背景來理解和操作。
+> - 不支持在沒有網絡的環境中運行。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 446 |
-| Open Issues | 16 |
+| Open Issues | 17 |
 | 最後推送 | 2026-03-08 |
 | 建立日期 | 2026-03-03 |
 | 官方網站 | [Link](https://huggingface.co/spaces/pliny-the-prompter/) |
@@ -130,7 +145,7 @@ OBLITERATUS 採用前後端分離架構，前端使用 Gradio 提供用戶介面
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，持續更新和改進中。
+**社群活躍度**：社群活躍，持續有新功能和改進。
 **連結**：[文件](https://huggingface.co/spaces/pliny-the-prompter/)
 
 ## README 摘錄
@@ -175,11 +190,27 @@ OBLITERATUS 採用前後端分離架構，前端使用 Gradio 提供用戶介面
 > 
 > The toolkit provides a complete pipeline: from probing a model's hidden states to locate refusal directions, through multiple extraction strategies (PCA, mean-difference, sparse autoencoder decomposition, and whitened SVD), to the actual intervention — zeroing out or steering away from those directions at inference time. Every step is observable. You can visualize where refusal lives across layers, measure how entangled it is with general capabilities, and quantify the tradeoff between compliance and coherence before committing to any modification.
 > 
-> OBLITERATUS ships with a full Gradio-based interface on HuggingFace Spaces, so you don't need to write a single line of code to obliterate a model, benchmark it against baselines, or chat with the result side-by-side with the original. For researchers who want deeper control, the Python API exposes every intermediate artifact — activation tensors, direction vectors, cross-layer alignment matrices — so you can build on top of
+> OBLITERATUS ships with a full Gradio-based interface on HuggingFace Spaces, so you don't need to write a single line of code to obliterate a model, benchmark it against baselines, or chat with the result side-by-side with the original. For researchers who want deeper control, the Python API exposes every intermediate artifact — activation tensors, direction vectors, cross-layer alignment matrices — so you can build on top of it or integrate it into your own evaluation harness.
+> 
+> We built this because we believe model behavior should be decided by the people who deploy them, not locked in at training time. Refusal mechanisms are blunt instruments — they block legitimate research, creative writing, and red-teaming alongside genuinely harmful content. By making these interventions transparent and reproducible, we hope to advance the community's understanding of how alignment actually works inside transformer architectures, and to give practitioners the tools to make informed decisions about their own models.
+> 
+> Built on published research from [Arditi et al. (2024)](https://arxiv.org/abs/2406.11717), [Gabliteration (arXiv:2512.18901)](https://arxiv.org/abs/2512.18901), [grimjim's norm-preserving biprojection (2025)](https://huggingface.co/grimjim), [Turner et al. (2023)](https://arxiv.org/abs/2308.10248), and [Rimsky et al. (2024)](https://arxiv.org/abs/2312.06681), OBLITERATUS implements precision liberation in a single command:
+> 
+> ```bash
+> obliteratus obliterate meta-llama/Llama-3.1-8B-Instruct --method advanced
+> ```
+> 
+> Or zero commands — just [open the Colab notebook](https://colab.research.google.com/github/elder-plinius/OBLITERATUS/blob/main/notebooks/abliterate.ipynb) and hit Run All.
+> 
+> ## What it does
+> 
+> OBLITERATUS does four things — and the community does the fifth (see [Community-powered research](#community-powered-research--every-run-advances-the-science) below):
+> 
+> **1. Map the chains** — Ablation s
 
 ## 延伸閱讀
 
-相關概念：[[機械解釋性]] · [[大型語言模型]] · [[數據收集]]
+相關概念：[[機器學習]] · [[深度學習]] · [[自然語言處理]]
 
 [GitHub](https://github.com/elder-plinius/OBLITERATUS) · [官方網站](https://huggingface.co/spaces/pliny-the-prompter/)
 
@@ -227,9 +258,24 @@ OBLITERATUS 採用前後端分離架構，前端使用 Gradio 提供用戶介面
 > 實際效果 :: _達到預期 / 不如預期（原因）_
 > 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
 
+> [!question]- 待研究的問題
+> _記下看完後還沒有答案的問題，未來回來補充_
+> 
+> - [ ] 
+
+### 採用判斷
+
+> [!tip]- 什麼時候該用 / 不該用
+> **該用的情況**：
+> - 
+> 
+> **不該用的情況**：
+> - 
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
+_重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 

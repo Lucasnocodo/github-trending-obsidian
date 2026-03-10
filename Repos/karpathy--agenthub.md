@@ -18,7 +18,7 @@ week: "2026-W11"
 category: "開發工具"
 release_tag: ""
 install_complexity: "medium"
-status: to-review
+status: archived
 my_rating: 0
 last_reviewed: 2026-03-10
 tags:

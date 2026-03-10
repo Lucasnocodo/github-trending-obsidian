@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen"
 homepage: "https://pypi.org/project/mcp2cli/"
-stars: 497
-stars_per_day: 497
-forks: 25
+stars: 503
+stars_per_day: 503
+forks: 27
 open_issues: 0
 created: 2026-03-09
 pushed_at: 2026-03-10
@@ -35,7 +35,7 @@ aliases:
 
 # mcp2cli
 
-**497** stars · **497** stars/天 · 建立 1 天前 · Python · MIT
+**503** stars · **503** stars/天 · 建立 1 天前 · Python · MIT
 
 `easy-install`
 
@@ -43,26 +43,26 @@ aliases:
 > 讓任何 MCP 伺服器或 OpenAPI 規格即時轉換為 CLI，無需代碼生成。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (497 stars/day)
-> **適合** 需要快速測試和互動 API 的後端開發者或 DevOps 工程師。
-> **一句話重點** mcp2cli 讓開發者能夠以最小的努力，快速與各種 API 互動，顯著提高開發效率。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (503 stars/day)
+> **適合** 需要快速測試和整合 API 的開發者和工程師。
+> **一句話重點** mcp2cli 讓開發者能夠在運行時快速與 API 互動，顯著提高開發效率。
 
 > [!abstract] 核心創新
 > mcp2cli 允許開發者在運行時將任何 MCP 伺服器或 OpenAPI 規格轉換為 CLI，無需代碼生成。
 
 ## 專案簡介
 
-mcp2cli 透過 CLI 工具，讓開發者能夠即時與 MCP 伺服器或 OpenAPI 規格互動，無需編寫任何代碼。使用者只需透過簡單的命令，例如 `mcp2cli --mcp https://mcp.example.com/sse --list`，即可列出可用工具或執行查詢。技術上，它使用 Python 實現，並支援 OAuth 認證及多種傳輸模式（如 HTTP/SSE），自動處理令牌的獲取和刷新。與其他 CLI 工具相比，mcp2cli 的獨特之處在於其即時生成 CLI 的能力，無需預先生成代碼，並且能夠節省 96-99% 的代碼令牌。實際使用中，mcp2cli 表現穩定，支援多種認證方式，適合需要快速與 API 互動的開發者。這個專案目前處於 beta 階段，對於小型團隊或個人開發者來說，值得一試。建議在需要快速測試 API 或與現有服務互動時使用，但對於大型專案或需要複雜邏輯的情境，可能需要更多的自定義解決方案。
+mcp2cli 透過將 MCP 伺服器或 OpenAPI 規格轉換為命令行介面，使得開發者能夠在運行時直接與 API 互動。使用者只需透過簡單的 CLI 指令，如 `mcp2cli --mcp https://mcp.example.com/sse`，即可連接到指定的 MCP 伺服器並執行查詢。此專案使用 Python 開發，並支援 OAuth 認證，能自動處理令牌的獲取與刷新，提升使用便利性。與其他工具相比，mcp2cli 的獨特之處在於其即時轉換能力，無需預先生成代碼，並且能夠節省大量的 token 使用。實際使用中，mcp2cli 能夠有效處理大量的 API 請求，並在一小時內自動緩存規格和工具列表。這個專案目前處於 beta 階段，適合中小型團隊使用，尤其是需要快速集成 API 的開發者。建議在需要快速測試 API 或進行原型開發時使用，但在大型生產環境中可能需要更多的穩定性測試。
 
-**技術棧**：`Python 3.10`
+**技術棧**：`Python 3.9`
 
 ## 重點功能
 
-- 即時 CLI 生成 — 使用 `mcp2cli --mcp <URL>` 命令即時與 MCP 伺服器互動。
-- 支援 OAuth 認證 — 自動處理令牌獲取和刷新，簡化認證流程。
-- 多種傳輸模式 — 支援 HTTP 和 SSE，使用 `--transport` 參數選擇。
-- 環境變數支持 — 使用 `env:` 和 `file:` 前綴安全地管理敏感資訊。
-- 自動快取 — 規格和工具列表快取，預設 TTL 為 1 小時，使用 `--refresh` 可強制刷新。
+- 即時 CLI 生成 — 透過 MCP 伺服器或 OpenAPI 規格生成 CLI 指令，無需代碼生成。
+- OAuth 認證支持 — 自動處理令牌的獲取、緩存和刷新，簡化認證流程。
+- 多種傳輸模式 — 支持 HTTP/SSE 和 stdio 模式，靈活應對不同需求。
+- 輸出控制 — 提供多種輸出格式選擇，包括漂亮的 JSON 和壓縮格式。
+- 緩存機制 — 自動緩存 API 規格和工具列表，提升性能。
 
 ## 快速開始
 
@@ -70,7 +70,7 @@ mcp2cli 透過 CLI 工具，讓開發者能夠即時與 MCP 伺服器或 OpenAPI
 ```bash
 pip install mcp2cli
 ```
-2. 與 MCP 伺服器互動
+2. 連接到 MCP 伺服器
 ```bash
 mcp2cli --mcp https://mcp.example.com/sse --list
 ```
@@ -88,44 +88,43 @@ mcp2cli --mcp https://mcp.example.com/sse search --query "test"
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 knowsuchagency 具備豐富的開源經驗，專案切中開發者在使用 API 時的即時需求。隨著 API 數量的增加，開發者對於快速測試和互動的需求也隨之上升，這使得 mcp2cli 的推出時機恰到好處。
+> 專案的作者具備深厚的開發背景，專注於提高 API 互動的效率。隨著 API 數量的增加，開發者對於即時 CLI 工具的需求也隨之上升，特別是在快速迭代的開發環境中。這個工具的推出正好滿足了這一需求，並且其簡單的使用方式使得它在開發者中迅速流行。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速測試和互動 API 的後端開發者或 DevOps 工程師。
+**目標受眾**：需要快速測試和整合 API 的開發者和工程師。
 
 > [!example] 使用場景
-> - 後端工程師用它來快速測試 MCP 伺服器的 API，因為能即時列出可用工具，節省了手動查找的時間。
-> - AI 開發者用它來生成針對 OpenAPI 規格的 CLI，因為無需代碼生成，能快速開始實驗。
-> - DevOps 工程師用它來自動化與 API 的互動，因為支援 OAuth 認證，能安全地管理憑證。
+> - 後端工程師用它來快速測試 MCP 伺服器的 API，因為可以即時執行查詢而無需編寫代碼。
+> - DevOps 工程師用它來自動化 API 測試流程，因為它支持 OAuth 認證並能自動處理令牌。
+> - 產品經理用它來檢查 API 文檔的正確性，因為可以直接從 OpenAPI 規格生成 CLI 指令，快速驗證功能。
 
 ## 架構分析
 
-這是一個 CLI 工具，採用單體架構。用戶輸入 → mcp2cli 處理 → 輸出結果。核心技術決策是使用 Python 實現並支援多種傳輸模式。專案目錄結構包含主要的 CLI 實現和相關的配置檔案。
+該專案採用 CLI 工具架構，核心資料流為：用戶輸入 → 解析 MCP 伺服器或 OpenAPI 規格 → 輸出 CLI 指令。關鍵技術決策包括使用 Python 進行快速開發，並支持多種認證方式。目錄結構中，主要檔案包括 `mcp2cli.py` 和 `cli.py`。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 即時生成 CLI，無需代碼生成，快速上手。
-> - 支援多種認證方式，方便開發者使用。
-> - 快取機制減少 API 請求次數，提高效率。
+> - 即時生成 CLI，無需預先編寫代碼。
+> - 自動處理 OAuth 認證，提升安全性。
+> - 支持多種輸出格式，靈活應用。
 
 > [!danger] 缺點
-> - 對於複雜的 API 可能無法完全支援。
-> - 目前功能相對簡單，未來擴展性有待觀察。
-> - 對於新手使用者可能需要一些學習曲線。
+> - 在高流量情況下性能可能下降。
+> - 對於大型 API 可能需要更多的配置。
+> - 需要穩定的網路連接以進行 API 請求。
 
 > [!warning] 注意事項
-> - 目前僅支援 Python 3.7+。
-> - 對於大型 API 規格的處理可能會有性能瓶頸。
-> - 不支援 Windows 環境。
-> - 在某些情況下，OAuth 認證流程可能需要手動介入。
+> - 僅支援 Python 3.7+
+> - 需要有效的 MCP 伺服器或 OpenAPI 規格
+> - 在高流量情況下可能需要調整緩存策略
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 25 |
+| Forks | 27 |
 | Open Issues | 0 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-09 |
@@ -137,6 +136,11 @@ mcp2cli --mcp https://mcp.example.com/sse search --query "test"
 > | --- | --- |
 > | [@knowsuchagency](https://github.com/knowsuchagency) | 38 |
 > | [@Gujiassh](https://github.com/Gujiassh) | 1 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，定期更新和維護。
+**連結**：[文件](https://pypi.org/project/mcp2cli/)
 
 ## README 摘錄
 
@@ -280,7 +284,7 @@ mcp2cli --mcp https://mcp.example.com/sse search --query "test"
 
 ## 延伸閱讀
 
-相關概念：[[API 設計]] · [[OAuth]] · [[CLI/TUI]]
+相關概念：[[API 設計]] · [[CLI/TUI]] · [[效能優化]]
 
 [GitHub](https://github.com/knowsuchagency/mcp2cli) · [官方網站](https://pypi.org/project/mcp2cli/)
 
@@ -328,9 +332,24 @@ mcp2cli --mcp https://mcp.example.com/sse search --query "test"
 > 實際效果 :: _達到預期 / 不如預期（原因）_
 > 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
 
+> [!question]- 待研究的問題
+> _記下看完後還沒有答案的問題，未來回來補充_
+> 
+> - [ ] 
+
+### 採用判斷
+
+> [!tip]- 什麼時候該用 / 不該用
+> **該用的情況**：
+> - 
+> 
+> **不該用的情況**：
+> - 
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
+_重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 

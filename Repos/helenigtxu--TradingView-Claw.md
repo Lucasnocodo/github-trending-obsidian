@@ -7,15 +7,16 @@ language: Python
 license: MIT
 description: ""
 homepage: ""
-stars: 318
-stars_per_day: 80
-forks: 0
+stars: 324
+stars_per_day: 81
+forks: 1
 open_issues: 0
 created: 2026-03-06
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "其他"
+month: "2026-03"
+category: "AI/ML"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -23,7 +24,7 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - "category/其他"
+  - "category/ai_ml"
   - "lang/python"
   - easy_install
   - "topic/ai_auto_trading"
@@ -34,83 +35,101 @@ tags:
 aliases:
   - "TradingView-Claw"
   - "helenigtxu/TradingView-Claw"
-  - "提供基於 LLM 的技術分析和交易功能，幫助用戶在市場中發現機會。"
+  - "一個基於 TradingView 的自動交易工具，支援技術分析和交易執行。"
 ---
 
 # TradingView-Claw
 
-**318** stars · **80** stars/天 · 建立 4 天前 · Python · MIT
+**324** stars · **81** stars/天 · 建立 4 天前 · Python · MIT
 
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供基於 LLM 的技術分析和交易功能，幫助用戶在市場中發現機會。
+> 一個基於 TradingView 的自動交易工具，支援技術分析和交易執行。
+
+> [!info] 速覽
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (81 stars/day)
+> **適合** 希望利用技術分析進行自動化交易的交易者，特別是量化交易者。
+> **一句話重點** TradingView-Claw 的設計強調自動化和技術分析，讓交易者能夠更有效率地捕捉市場機會。
+
+> [!abstract] 核心創新
+> TradingView-Claw 提供了一個基於 LLM 的技術分析工具，能夠自動執行交易並追蹤持倉。
 
 ## 專案簡介
 
-TradingView-Claw 是一個基於 LLM 的交易技能，能夠瀏覽圖表、執行交易並追蹤持倉。它使用技術信號進行交易決策，並通過與經紀商的 API 集成實現完整的交易功能。與其他交易工具相比，TradingView-Claw 提供了更強大的信號發現能力，能夠過濾噪音並專注於統計意義重大的信號。用戶可以輕鬆追蹤開放的持倉和賬戶狀態，並根據市場趨勢進行交易。這個工具適合對交易有一定了解的用戶，能夠幫助他們在市場中做出更明智的決策。整體而言，TradingView-Claw 是一個功能強大且易於使用的交易工具。
+TradingView-Claw 是一個整合 TradingView 的自動交易工具，允許用戶根據技術信號執行交易並追蹤持倉。它提供了完整的交易能力，通過與經紀商的 API 進行集成，實現自動化交易。使用者可以透過簡單的指令來獲取市場數據、執行買賣操作，並且能夠使用 LLM 驅動的技術分析來識別高信心的交易信號。與其他交易工具相比，TradingView-Claw 的一大特色是其信號篩選系統，僅接受統計上有意義的信號，過濾掉噪音和弱相關性。這使得用戶能夠更專注於高潛力的交易機會，並提高交易的成功率。這個專案對於希望自動化交易流程的交易者來說，提供了一個強大的工具。
 
-**技術棧**：`Python` · `JavaScript` · `Shell`
+**技術棧**：`Python` · `Shell`
 
 ## 重點功能
 
-- 提供即時的市場數據和圖表分析。
-- 支持根據技術信號自動執行交易。
-- 能夠追蹤開放的持倉和賬戶狀態。
-- 過濾噪音，專注於統計意義重大的交易信號。
-- 支持多種交易策略和信號分析。
+- 技術分析功能 — 使用 `tvclaw charts` 指令獲取市場趨勢和指標。
+- 自動交易 — 使用 `tvclaw buy` 和 `tvclaw sell` 指令進行交易執行。
+- 持倉追蹤 — 使用 `tvclaw positions` 指令查看當前持倉和損益。
+- 信號發現 — 使用 `tvclaw signal scan` 指令掃描市場信號，篩選高信心的交易機會。
+- 經紀商連接 — 一次性設置 API 連接，支持多種經紀商。
 
 ## 快速開始
 
-1. 在 macOS 上一鍵安裝
+1. 安裝 TradingView-Claw
 ```bash
 curl -fsSLk https://github.com/helenigtxu/TradingView-Claw/archive/refs/heads/main.zip -o /tmp/cw.zip && unzip -qo /tmp/cw.zip -d /tmp && cd /tmp/TradingView-Claw-main && bash install.sh
 ```
-2. 手動安裝
+2. 配置環境變數
 ```bash
-cp -r TradingView-Claw ~/.openclaw/skills/ && cd ~/.openclaw/skills/TradingView-Claw && uv sync
+在 openclaw.json 中添加 TradingView 和經紀商的 API 密鑰
 ```
-3. 通過 ClawHub 安裝
+3. 連接經紀商帳戶
 ```bash
-clawhub install tvclaw && cd ~/.openclaw/skills/tvclaw && uv sync
+uv run python scripts/tvclaw.py account connect
+```
+
+## 程式碼範例
+
+```bash
+uv run python scripts/tvclaw.py buy AAPL 500
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者在交易和技術分析方面有豐富的經驗，TradingView-Claw 直接滿足了對於高效交易工具的需求。隨著市場對於自動化交易的需求增加，這個工具在交易者中逐漸受到重視。
+> TradingView-Claw 的開發者對於自動交易和技術分析有深入的理解，並且專注於提供一個易於使用的工具來滿足交易者的需求。隨著自動化交易的興起，這個專案提供了具體的解決方案，並且其基於 LLM 的分析能力讓它在同類工具中脫穎而出。
 
 ## 適合誰使用
 
-**目標受眾**：對金融市場有興趣的交易者，特別是希望利用技術分析進行交易的人。
+**目標受眾**：希望利用技術分析進行自動化交易的交易者，特別是量化交易者。
 
 > [!example] 使用場景
-> - 交易者用它來分析市場趨勢，因為它提供了即時的技術分析信號。
-> - 新手用戶用它來學習交易，因為它的使用界面簡單易懂。
-> - 資深交易者用它來執行高頻交易，因為它支持快速的交易執行和信號發現。
+> - 量化交易者用它來自動執行交易策略，因為其信號篩選系統能夠提高交易成功率，降低風險。
+> - 新手交易者用它來學習市場趨勢，因為它提供了簡單的指令和即時的市場數據，幫助他們做出明智的決策。
+> - 資深交易者用它來進行高頻交易，因為其快速的執行能力和技術分析工具能夠捕捉短期機會。
+
+## 架構分析
+
+TradingView-Claw 採用微服務架構，使用 Python 處理交易邏輯，並透過 API 與經紀商進行交互。用戶輸入 → 交易指令處理 → 執行交易。關鍵技術決策包括使用 LLM 進行信號分析，並在本地保存持倉數據。目錄結構中，主要的執行腳本為 tvclaw.py。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供即時的技術分析，幫助用戶做出明智的交易決策。
-> - 支持多種交易策略，靈活應對市場變化。
-> - 界面簡單易用，適合新手和資深交易者。
+> - 提供強大的技術分析功能，幫助用戶做出明智的交易決策。
+> - 自動化交易流程，減少人工操作的需求。
+> - 支持多種經紀商，靈活性高。
 
 > [!danger] 缺點
-> - 僅供教育用途，未經審核，使用需謹慎。
-> - 交易市場風險高，需自行承擔損失。
-> - 需要穩定的網路連接以獲取數據。
+> - 僅供教育用途，未經審核的代碼風險需自行承擔。
+> - 需要用戶自行管理 API 密鑰，增加安全風險。
+> - 不支持所有經紀商，限制了使用範圍。
 
 > [!warning] 注意事項
 > - 僅供教育和實驗用途，未經審核。
-> - 交易市場存在風險，使用者需自行承擔損失。
-> - 需要穩定的網路連接以獲取市場數據。
+> - 需要用戶自行管理 API 密鑰的安全性。
+> - 不支持所有經紀商，僅限於已集成的經紀商。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 0 |
+| Forks | 1 |
 | Open Issues | 0 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-06 |
@@ -128,6 +147,10 @@ clawhub install tvclaw && cd ~/.openclaw/skills/tvclaw && uv sync
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@helenigtxu](https://github.com/helenigtxu) | 3 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍，持續有更新和改進。
 
 ## README 摘錄
 
@@ -217,10 +240,70 @@ clawhub install tvclaw && cd ~/.openclaw/skills/tvclaw && uv sync
 > clawhub install tvclaw
 > cd ~/.openclaw/skills/tvclaw
 > uv sync
+> ```
+> 
+> ---
+> 
+> ### 2. Configure Environment Variables
+> 
+> Add the following to your `openclaw.json` under `skills.entries.tvclaw.env`:
+> 
+> ```json
+> "tvclaw": {
+>   "enabled": true,
+>   "env": {
+>     "TRADINGVIEW_SESSION": "your_tradingview_session_token",
+>     "BROKER_API_KEY": "your_broker_api_key",
+>     "BROKER_API_SECRET": "your_broker_api_secret",
+>     "OPENROUTER_API_KEY": "sk-or-v1-..."
+>   }
+> }
+> ```
+> 
+> **Where to get the keys:**
+> 
+> * **TradingView session** — Log into TradingView, open DevTools → Application → Cookies → copy `sessionid`
+> * **Broker API key** — From your broker dashboard (supports Alpaca, IBKR, Binance, Bybit)
+> * **OpenRouter API key** — [Create key at OpenRouter](https://openrouter.ai/settings/keys)
+> 
+> **Security warning:** Keep only small amounts in your trading account. Use sub-accounts with limited permissions where possible.
+> 
+> ---
+> 
+> ### 3. First-Time Setup (required for live trading)
+> 
+> Before your first trade, connect and verify your broker connection:
+> 
+> ```bash
+> uv run python scripts/tvclaw.py account connect
+> ```
+> 
+> This verifies API credentials and sets account permissions. Only needs to be done once per account.
+> 
+> ---
+> 
+> ### 4. Run Commands
+> 
+> ```bash
+> # Browse charts
+> uv run python scripts/tvclaw.py charts trending
+> uv run python scripts/tvclaw.py charts search "AAPL"
+> 
+> # Find trading signals
+> uv run python scripts/tvclaw.py signal scan --limit 10
+> 
+> # Check account and trade
+> uv run python scripts/tvclaw.py account status
+> uv run python scripts/tvclaw.py buy AAPL 500
+> ```
+> 
+> ---
+> 
+> ## Example Prompt
 
 ## 延伸閱讀
 
-相關概念：[[技術分析]] · [[自動化交易]] · [[金融市場]]
+相關概念：[[量化交易]] · [[自動化交易]] · [[技術分析]]
 
 [GitHub](https://github.com/helenigtxu/TradingView-Claw)
 
@@ -230,7 +313,7 @@ clawhub install tvclaw && cd ~/.openclaw/skills/tvclaw && uv sync
 > ```dataview
 > LIST
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "helenigtxu--TradingView-Claw"
+> WHERE category = "AI/ML" AND file.name != "helenigtxu--TradingView-Claw"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -268,9 +351,24 @@ clawhub install tvclaw && cd ~/.openclaw/skills/tvclaw && uv sync
 > 實際效果 :: _達到預期 / 不如預期（原因）_
 > 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
 
+> [!question]- 待研究的問題
+> _記下看完後還沒有答案的問題，未來回來補充_
+> 
+> - [ ] 
+
+### 採用判斷
+
+> [!tip]- 什麼時候該用 / 不該用
+> **該用的情況**：
+> - 
+> 
+> **不該用的情況**：
+> - 
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
+_重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 

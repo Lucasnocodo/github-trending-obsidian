@@ -8,13 +8,14 @@ license: N/A
 description: "🐑 One command to configure all AI coding tools — Claude Code, Codex, Gemini CLI, Cursor, Aider & more"
 homepage: "https://shop.holysheep.ai"
 stars: 306
-stars_per_day: 153
+stars_per_day: 102
 forks: 0
 open_issues: 1
 created: 2026-03-07
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "開發工具"
 release_tag: ""
 install_complexity: "easy"
@@ -39,72 +40,85 @@ aliases:
 
 # holysheep-cli
 
-**306** stars · **153** stars/天 · 建立 2 天前 · JavaScript · 未標註授權
+**306** stars · **102** stars/天 · 建立 3 天前 · JavaScript · 未標註授權
 
 `easy-install`
 
 > [!summary] 一句話摘要
 > 一條命令配置所有 AI 編程工具，簡化設置流程。
 
+> [!info] 速覽
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (102 stars/day)
+> **適合** 需要在中國快速配置多個 AI 編程工具的開發者。
+> **一句話重點** HolySheep CLI 讓配置 AI 工具變得前所未有的簡單，特別適合需要快速上手的開發者。
+
 > [!abstract] 核心創新
-> 通過一條命令自動配置多個 AI 編程工具，簡化設置過程。
+> 提供一條命令來配置所有 AI 編程工具，簡化設置流程。
 
 ## 專案簡介
 
-HolySheep CLI 是一個命令行工具，能夠自動配置多個 AI 編程助手，讓使用者只需執行一條命令即可完成設置。它支持的工具包括 Claude Code、Codex CLI 等，並透過 HolySheep API 進行連接。使用者只需輸入 API 金鑰，然後選擇要配置的工具，整個過程簡單明瞭。與手動編輯每個工具的配置文件相比，這個工具大幅減少了設置時間和錯誤機率。這個 CLI 工具適合需要快速配置多個 AI 工具的開發者，尤其是在中國的使用者，因為它提供了一個無需 VPN 的解決方案。
+HolySheep CLI 是一個命令行工具，通過一條命令自動配置多個 AI 編程助手以使用 HolySheep API，這樣用戶無需手動編輯每個工具的配置文件。使用者只需運行 `hs setup`，然後輸入 API 金鑰，選擇要配置的工具即可完成設置。支援的工具包括 Claude Code、Codex CLI、Aider 等，並且能夠在中國無需 VPN 訪問這些 API。與其他工具相比，HolySheep CLI 的優勢在於其一鍵配置的便利性，特別適合需要快速設置多個 AI 工具的開發者。使用此工具的效果顯著，能夠節省大量手動配置的時間，並且支持多種主流 AI 編程助手。這個專案目前已經穩定，適合各種規模的團隊使用，尤其是需要快速上手的開發者。
 
 **技術棧**：`JavaScript`
 
 ## 重點功能
 
-- 一條命令自動配置多個 AI 編程助手。
-- 支持 Claude Code、Codex CLI 等多種工具。
-- 無需手動編輯配置文件，簡化流程。
-- 提供互動式設置選項。
-- 支持在中國無需 VPN 使用 HolySheep API。
+- 一鍵配置 — 只需運行 `hs setup` 即可完成所有工具的配置。
+- 支持多種 AI 工具 — 包括 Claude Code、Codex CLI、Aider 等，無需手動修改配置文件。
+- API 金鑰管理 — 提供 `hs login` 命令來保存 API 金鑰，簡化後續使用。
+- 檢查配置狀態 — 使用 `hs doctor` 命令來檢查配置是否正確。
+- 支持多平台 — 可在 Windows 和 Linux 系統上運行。
 
 ## 快速開始
 
-1. 全局安裝 HolySheep CLI
+1. 安裝 HolySheep CLI
 ```bash
 npm install -g @simonyea/holysheep-cli
 ```
-2. 執行設置命令
+2. 運行設置命令
 ```bash
 hs setup
 ```
-3. 輸入 API 金鑰，選擇要配置的工具
+3. 輸入 API 金鑰並選擇工具
+```bash
+輸入 cr_xxx
+```
+
+## 程式碼範例
+
+hs setup
+# 輸入 API 金鑰並選擇要配置的工具
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> HolySheep CLI 的作者在 AI 工具整合方面有豐富的經驗，這個工具切合了開發者對於簡化配置流程的需求。隨著 AI 編程助手的普及，越來越多的開發者希望能夠快速上手，這個工具的出現正好滿足了這個需求，並且提供了便捷的使用體驗。
+> 作者背景強大，專注於簡化 AI 工具的配置流程，這正好符合許多開發者的需求。隨著 AI 工具的普及，越來越多的開發者希望能夠快速且無縫地接入這些工具，因此這個專案受到了廣泛關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速配置多個 AI 編程工具的開發者和學生。
+**目標受眾**：需要在中國快速配置多個 AI 編程工具的開發者。
 
 > [!example] 使用場景
-> - 開發者 用它來 快速配置多個 AI 編程工具，因為可以節省大量的時間和精力。
-> - 學生 用它來 設定學習環境，因為只需一條命令即可完成所有工具的配置。
-> - 團隊 用它來 統一配置開發環境，因為能夠確保所有成員使用相同的設置。
+> - AI 開發者用它來快速配置多個 AI 編程工具，因為這樣可以節省手動設置的時間，提升工作效率。
+> - 初學者用它來簡化 AI 工具的配置流程，因為只需一條命令即可完成設置，降低了入門門檻。
+> - 團隊負責人用它來統一配置團隊成員的 AI 工具，因為這樣可以確保所有人使用相同的設置，避免配置不一致的問題。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡化了多工具的配置流程。
-> - 節省了大量的時間和精力。
-> - 提供互動式設置，友好易用。
+> - 極大簡化了多個 AI 工具的配置流程。
+> - 支持多種主流 AI 工具，方便開發者使用。
+> - 提供了檢查配置狀態的功能，減少錯誤。
 
 > [!danger] 缺點
-> - 不支持所有工具，部分仍需手動配置。
-> - 依賴於 HolySheep API 的穩定性。
-> - 對於新手用戶可能有學習曲線。
+> - 僅支持 Node.js 環境，對於其他環境的使用者不友好。
+> - 某些工具仍需手動配置，無法完全自動化。
+> - 不支持所有 AI 工具，可能限制使用者的選擇。
 
 > [!warning] 注意事項
-> - 不支持所有 AI 工具，部分工具需要手動配置。
-> - 依賴於 HolySheep API 的可用性。
-> - 對於新手用戶可能需要額外的學習曲線。
+> - 僅支持 Node.js 16+ 環境。
+> - 某些工具需要手動配置，如 Cursor。
+> - 不支持所有 AI 工具，Gemini CLI 目前不受支持。
 
 ## 技術細節
 
@@ -116,6 +130,11 @@ hs setup
 | 建立日期 | 2026-03-07 |
 | 官方網站 | [Link](https://shop.holysheep.ai) |
 | Repo 大小 | 2.4 MB |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍，持續更新和維護。
+**連結**：[文件](https://holysheep.ai/docs)
 
 ## README 摘錄
 
@@ -193,11 +212,68 @@ hs setup
 > | `hs setup` | Configure AI tools interactively |
 > | `hs login` | Save your API Key locally |
 > | `hs doctor` | Check configuration & connectivity |
-> | `hs balance`
+> | `hs balance` | View account balance |
+> | `hs tools` | List all supported tools |
+> | `hs reset` | Remove all HolySheep configuration |
+> 
+> ### API Endpoints
+> 
+> | Usage | URL |
+> |-------|-----|
+> | Anthropic SDK / Claude Code | `https://api.holysheep.ai` (no `/v1`) |
+> | OpenAI-compatible / Codex / Aider | `https://api.holysheep.ai/v1` (with `/v1`) |
+> 
+> ---
+> 
+> ## 🇨🇳 中文
+> 
+> ### 什么是 HolySheep CLI？
+> 
+> **HolySheep CLI**（命令 `hs`）是一个命令行工具，帮你一键配置所有主流 AI 编程助手接入 [HolySheep API](https://holysheep.ai)。
+> 
+> 无需 VPN，无需手动改配置文件，运行一条命令即可接入 Claude、GPT、Gemini。
+> 
+> ### 支持的工具
+> 
+> | 工具 | 状态 | 说明 |
+> |------|------|------|
+> | [Claude Code](https://docs.anthropic.com/claude-code) | ✅ 自动 | Anthropic 官方 CLI |
+> | [Codex CLI](https://github.com/openai/codex) | ✅ 自动 | OpenAI 官方 CLI |
+> | [Aider](https://aider.chat) | ✅ 自动 | AI 结对编程 |
+> | [Continue.dev](https://continue.dev) | ✅ 自动 | VS Code/JetBrains 插件 |
+> | [OpenCode](https://github.com/anomalyco/opencode) | ✅ 自动 | 终端 AI 编程助手 |
+> | [OpenClaw](https://openclaw.ai) | ✅ 自动 | AI 智能体网关 + Web 界面 |
+> | [Cursor](https://cursor.sh) | ⚠️ 手动 | 需在 GUI 中手动配置 |
+> | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | ❌ 不支持 | 仅支持 Google 官方协议 |
+> 
+> ### 快速开始
+> 
+> ```bash
+> npx @simonyea/holysheep-cli@latest setup
+> ```
+> 
+> 或全局安装：
+> 
+> ```bash
+> npm install -g @simonyea/holysheep-cli
+> hs setup
+> ```
+> 
+> 按提示输入 API Key（`cr_xxx`），选择要配置的工具，完成！
+> 
+> ### OpenClaw 使用说明
+> 
+> [OpenClaw](https://openclaw.ai) 是一个 AI 智能体网关，提供浏览器 Web 界面，支持聊天、任务、工具调用等功能。
+> 
+> **`hs setup` 配置完成后：**
+> 
+> 1. 自动弹出一个新终端窗口，运行 OpenClaw Gateway
+> 2. 打开浏览器访问：**http://127.0.0.1:18789/**
+> 3. 直接开始聊天，无需填写 t
 
 ## 延伸閱讀
 
-相關概念：[[API 設計]] · [[命令行工具]] · [[自動化]]
+相關概念：[[API 設計]] · [[微服務]]
 
 [GitHub](https://github.com/holysheep123/holysheep-cli) · [官方網站](https://shop.holysheep.ai)
 
@@ -245,9 +321,24 @@ hs setup
 > 實際效果 :: _達到預期 / 不如預期（原因）_
 > 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
 
+> [!question]- 待研究的問題
+> _記下看完後還沒有答案的問題，未來回來補充_
+> 
+> - [ ] 
+
+### 採用判斷
+
+> [!tip]- 什麼時候該用 / 不該用
+> **該用的情況**：
+> - 
+> 
+> **不該用的情況**：
+> - 
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
+_重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 

@@ -7,7 +7,7 @@ language: Jupyter Notebook
 license: N/A
 description: "🔥 LeetCode for PyTorch — practice implementing softmax, attention, GPT-2 and more from scratch with instant auto-grading. Jupyter-based, self-hosted or try online."
 homepage: "https://huggingface.co/spaces/duoan/TorchCode"
-stars: 1516
+stars: 1517
 stars_per_day: 253
 forks: 110
 open_issues: 3
@@ -18,7 +18,7 @@ week: "2026-W11"
 month: "2026-03"
 category: "資料科學"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
@@ -26,91 +26,90 @@ tags:
   - github
   - "category/資料科學"
   - "lang/jupyter notebook"
+  - easy_install
   - "topic/interview"
   - "topic/leetcode"
   - "topic/pytorch"
 aliases:
   - "TorchCode"
   - "duoan/TorchCode"
-  - "提供 PyTorch 面試練習的平台，讓用戶從零開始實作各種 ML 操作。"
+  - "提供 PyTorch 相關的編程練習，幫助面試準備，並即時自動評分。"
 ---
 
 # TorchCode
 
 **1.5k** stars · **253** stars/天 · 建立 6 天前 · Jupyter Notebook · 未標註授權
 
+`easy-install`
+
 > [!summary] 一句話摘要
-> 提供 PyTorch 面試練習的平台，讓用戶從零開始實作各種 ML 操作。
+> 提供 PyTorch 相關的編程練習，幫助面試準備，並即時自動評分。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (253 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (253 stars/day)
 > **適合** 希望提升 PyTorch 技能並準備面試的機器學習工程師。
-> **一句話重點** TorchCode 的核心在於提供一個結構化的練習環境，讓用戶能夠針對性地提升 PyTorch 技能。
+> **一句話重點** TorchCode 是一個專注於 PyTorch 的編程練習平台，能夠幫助用戶快速提升面試技能。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個針對 PyTorch 面試的結構化練習環境，讓用戶能夠從零開始實作核心操作。
+> TorchCode 提供即時自動評分的 PyTorch 編程練習，幫助用戶快速提升技能。
 
 ## 專案簡介
 
-TorchCode 是一個專為 PyTorch 面試準備而設計的練習平台，讓用戶能夠從零開始實作各種機器學習操作，如 softmax、注意力機制和 GPT-2 等。這個平台提供 40 道精心挑選的題目，並具備自動評分功能，能夠檢查正確性、梯度驗證和執行時間。用戶在解題過程中會獲得即時反饋，並能查看參考解答，這樣的設計不僅能提高學習效率，還能幫助用戶針對面試常見問題進行針對性練習。與傳統的 LeetCode 不同，TorchCode 專注於深度學習領域的核心操作，並且無需雲端或註冊，使用者只需執行簡單的命令即可啟動。這個專案目前處於穩定階段，適合所有希望提升 PyTorch 技能的開發者。在需要針對性練習 PyTorch 面試題時，這是一個非常有用的工具，但對於初學者可能會有一定的挑戰。
+TorchCode 是一個針對 PyTorch 的編程練習平台，專為準備機器學習面試的工程師設計。用戶可以在 Jupyter 環境中實現各種 PyTorch 操作，並獲得即時的自動評分和反饋。這個平台提供了 40 個精心策劃的問題，涵蓋了面試中最常見的主題，如 softmax、注意力機制和 Transformer 等。用戶可以在本地運行，也可以直接在 Hugging Face Spaces 或 Google Colab 中試用，無需安裝任何軟體。這個專案的核心優勢在於其即時反饋系統，能夠幫助用戶快速識別和修正錯誤，並且提供參考解決方案以便學習。與其他編程練習平台相比，TorchCode 專注於 PyTorch 的核心概念，並且提供了結構化的練習環境。這個專案目前處於穩定階段，適合各種規模的團隊和個人使用，特別是那些希望提升 PyTorch 技能的開發者。建議在準備機器學習面試時使用，而不適合對於其他框架的練習。
 
 ## 重點功能
 
-- 40 道精心挑選的題目 — 涵蓋 PyTorch 面試常見主題，針對性強。
-- 自動評分系統 — 檢查正確性、梯度驗證和執行時間，提供全面反饋。
-- 即時反饋 — 每道題目都有顏色標示的通過/失敗，便於快速了解狀態。
-- 參考解答 — 解題後可查看最佳實作，幫助學習。
-- 無需雲端 — 可在本地運行，無需註冊或雲端支持。
+- 40 個策劃問題 — 涵蓋 PyTorch 面試中最常見的主題。
+- 自動評分系統 — 提供正確性檢查和時間驗證。
+- 即時反饋 — 每個測試用例的通過/失敗顯示，類似競賽編程。
+- 提示功能 — 當用戶卡住時提供提示，幫助其繼續。
+- 參考解決方案 — 用戶在嘗試後可以查看最佳實現。
 
 ## 快速開始
 
-1. 在線試用
+1. 在線試用 TorchCode
 ```bash
-訪問 Hugging Face Spaces 進行練習
+Launch on Hugging Face Spaces
 ```
-2. 在 Colab 中使用評分工具
+2. 在 Google Colab 中使用評分系統
 ```bash
 !pip install torch-judge
 ```
-3. 拉取預建映像
+3. 運行測試
 ```bash
-docker run -p 8888:8888 -e PORT=8888 ghcr.io/duoan/torchcode:latest
-```
-4. 本地構建
-```bash
-make run
+check('relu')
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著機器學習面試的競爭加劇，對於能夠針對性練習的工具需求上升。TorchCode 提供了一個結構化的練習環境，滿足了這一需求，並且作者在開發過程中考慮到了用戶的實際需求。
+> 作者在機器學習領域有豐富的經驗，並且針對面試需求設計了這個專案。隨著對於 PyTorch 技能的需求上升，這個平台正好滿足了市場需求，並且其即時反饋的特性吸引了許多學習者。
 
 ## 適合誰使用
 
 **目標受眾**：希望提升 PyTorch 技能並準備面試的機器學習工程師。
 
 > [!example] 使用場景
-> - 求職者用它來練習 PyTorch 面試題，因為能夠針對性地提升實作能力，增加面試通過率。
-> - 學生用它來鞏固機器學習知識，因為提供即時反饋和參考解答，方便自我檢測。
-> - 教學者用它來設計課程，因為能夠提供實作練習，幫助學生理解深度學習的核心概念。
+> - 機器學習工程師用它來練習 PyTorch 的核心操作，因為能夠即時獲得反饋，提升學習效率。
+> - 面試準備者用它來模擬面試問題，因為提供了結構化的練習環境，幫助他們熟悉面試題型。
+> - 學生用它來學習 PyTorch，因為可以在 Jupyter 環境中進行實踐，並獲得即時的評分。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 針對性強，能有效提升 PyTorch 實作能力。
-> - 即時反饋和參考解答，方便學習和自我檢測。
-> - 無需雲端支持，易於使用。
+> - 結構化的練習環境，適合面試準備。
+> - 即時反饋系統，幫助用戶快速學習。
+> - 無需安裝，方便使用。
 
 > [!danger] 缺點
-> - 對於初學者可能會有挑戰，需要一定的基礎知識。
-> - 題目數量有限，可能無法滿足所有練習需求。
-> - 不支持 GPU 加速，性能可能受到限制。
+> - 僅限於 PyTorch，對其他框架無法使用。
+> - 需要一定的編程基礎，對新手不友好。
+> - 不支持即時多用戶協作。
 
 > [!warning] 注意事項
-> - 對於初學者可能會有一定的挑戰，需具備基本的 PyTorch 知識。
-> - 題目數量有限，可能無法滿足所有需求。
-> - 不支持 GPU 加速，對於大型模型的實作可能會有性能限制。
+> - 僅針對 PyTorch，對其他框架不適用。
+> - 需要用戶具備一定的編程基礎，以便理解問題。
+> - 不支持即時多用戶協作，僅限個人使用。
 
 ## 技術細節
 
@@ -304,9 +303,24 @@ make run
 > 實際效果 :: _達到預期 / 不如預期（原因）_
 > 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
 
+> [!question]- 待研究的問題
+> _記下看完後還沒有答案的問題，未來回來補充_
+> 
+> - [ ] 
+
+### 採用判斷
+
+> [!tip]- 什麼時候該用 / 不該用
+> **該用的情況**：
+> - 
+> 
+> **不該用的情況**：
+> - 
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
+_重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 
