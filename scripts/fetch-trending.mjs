@@ -142,7 +142,8 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 9. "quickstart_steps": 陣列，2-5 個安裝/使用步驟。每步是物件：{"step": "說明", "cmd": "指令"}。沒有安裝指令就回傳 []
 10. "limitations": 陣列，2-3 個注意事項（例如 ["僅支援 Linux", "需要 GPU", "早期 alpha，API 可能變動"]）
 11. "similar_tools": 陣列，2-4 項。每項是物件：{"name": "工具名", "diff": "跟本專案的具體差異（一句話）"}。想不到就回 []
-12. "related_concepts": 陣列，3-5 個相關技術概念（繁體中文）
+12. "related_concepts": 陣列，3-5 個相關技術概念。優先從以下預定義概念中選擇（繁體中文，如果沒有符合的可以自創）：
+   RAG, MCP Protocol, WebAssembly, LoRA, RLHF, 向量資料庫, 邊緣推論, CLI/TUI, 語音合成, 多模態, Agent 框架, 安全漏洞, 程式碼生成, LLM 推論, Prompt Engineering, 微服務, 容器化, CI/CD, 資料視覺化, API 設計, 機器學習, 深度學習, 自然語言處理, 電腦視覺, 自動化測試, 爬蟲, 即時通訊, 區塊鏈, 隱私保護, 效能優化
 13. "tech_stack": 陣列，列出核心技術棧（例如 ["Next.js", "FastAPI", "PostgreSQL"]），從 README 提取
 14. "novelty_claim": 一句話：這個專案最核心的創新點是什麼？（從 README 提取具體 claim，不要自己編）。沒有明顯創新就回傳 null
 15. "install_complexity": "easy"（一行 npm/pip install）、"medium"（需要 clone + config）、"hard"（需要 GPU/Docker/複雜環境）
@@ -979,6 +980,57 @@ GROUP BY week
 SORT week DESC
 \`\`\`
 
+## 持續熱門
+
+> [!tip] 收錄超過 7 天仍在活躍開發的專案
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"')
+  .where(p => {
+    if (!p.first_seen || !p.pushed_at) return false;
+    const daysSinceSeen = (new Date() - new Date(p.first_seen?.toString())) / 86400000;
+    const daysSincePush = (new Date() - new Date(p.pushed_at?.toString())) / 86400000;
+    return daysSinceSeen > 7 && daysSincePush < 7 && (p.stars_per_day || 0) > 100;
+  })
+  .sort(p => p.stars, "desc");
+
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "Stars/天", "收錄日期", "最後推送", "分類"],
+    pages.map(p => [p.file.link, p.stars_per_day, p.first_seen, p.pushed_at, p.category])
+  );
+} else {
+  dv.paragraph("目前沒有符合條件的持續熱門專案（需追蹤超過 7 天）");
+}
+\`\`\`
+
+## 分類趨勢圖
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"');
+const weeks = [...new Set(pages.map(p => p.week).filter(Boolean))].sort();
+const topCats = ["AI/ML", "開發工具", "CLI 工具", "Web 應用"];
+
+if (weeks.length > 1) {
+  const lines = topCats.map(cat =>
+    weeks.map(w => pages.where(p => p.week === w && p.category === cat).length).join(",")
+  );
+
+  const chart = [
+    "\`\`\`mermaid",
+    "xychart-beta",
+    "  title \\"每週分類收錄趨勢\\"",
+    \`  x-axis [\${weeks.map(w => \`"\${w}"\`).join(",")}]\`,
+    "  y-axis \\"收錄數\\"",
+    ...topCats.map((cat, i) => \`  line "\${cat}" [\${lines[i]}]\`),
+    "\`\`\`"
+  ].join("\\n");
+  dv.paragraph(chart);
+} else {
+  dv.paragraph("需要至少 2 週的數據才能顯示趨勢圖");
+}
+\`\`\`
+
 ## 月度趨勢
 
 \`\`\`dataviewjs
@@ -1560,6 +1612,78 @@ async function generateMOCs() {
   console.log(`Updated: ${categories.length} MOC pages`);
 }
 
+// ── 概念筆記（Zettelkasten 概念層）───────────────────────────
+
+const CONCEPTS_DIR = join(ROOT, 'Concepts');
+
+function generateConceptNote(concept) {
+  return `---
+tags:
+  - concept
+aliases:
+  - "${concept}"
+---
+
+# ${concept}
+
+> 這個概念與以下 GitHub Trending 專案相關
+
+## 相關專案
+
+\`\`\`dataview
+TABLE
+  stars AS "Stars",
+  category AS "分類",
+  language AS "語言",
+  status AS "狀態"
+FROM "Repos"
+WHERE contains(file.outlinks, this.file.link) OR contains(meta(file.frontmatter), "${concept}")
+SORT stars DESC
+\`\`\`
+
+## 筆記
+
+_在此記錄關於「${concept}」的理解、學習心得、相關資源..._
+`;
+}
+
+async function generateConceptNotes() {
+  const { readdir } = await import('fs/promises');
+  const files = await readdir(REPOS_DIR);
+  const conceptCounts = {};
+
+  // 掃描所有 repo 筆記中的 [[概念]] 連結
+  for (const file of files) {
+    if (!file.endsWith('.md')) continue;
+    const content = await readFile(join(REPOS_DIR, file), 'utf-8');
+    // 從「延伸閱讀」區塊提取 wikilinks
+    const extMatch = content.match(/相關概念：(.*)/);
+    if (extMatch) {
+      const links = extMatch[1].match(/\[\[([^\]]+)\]\]/g);
+      if (links) {
+        for (const link of links) {
+          const concept = link.replace(/\[\[|\]\]/g, '');
+          conceptCounts[concept] = (conceptCounts[concept] || 0) + 1;
+        }
+      }
+    }
+  }
+
+  // 只為出現 2 次以上的概念建立筆記
+  await mkdir(CONCEPTS_DIR, { recursive: true });
+  let created = 0;
+  for (const [concept, count] of Object.entries(conceptCounts)) {
+    if (count < 2) continue;
+    const fileName = `${concept}.md`;
+    const filePath = join(CONCEPTS_DIR, fileName);
+    if (!(await fileExists(filePath))) {
+      await writeFile(filePath, generateConceptNote(concept), 'utf-8');
+      created++;
+    }
+  }
+  console.log(`Concepts: ${Object.keys(conceptCounts).length} found, ${created} new notes created`);
+}
+
 // ── Main ────────────────────────────────────────────────────
 
 async function main() {
@@ -1704,6 +1828,9 @@ async function main() {
   const monthlyPath = join(MONTHLY_DIR, `${monthStr}.md`);
   await writeFile(monthlyPath, generateMonthlyReview(monthStr), 'utf-8');
   console.log(`Updated: Monthly/${monthStr}.md`);
+
+  // 8.7 產生/更新概念筆記
+  await generateConceptNotes();
 
   // 9. 更新 seen repos
   for (const repo of detailedRepos) {
