@@ -7,7 +7,7 @@ language: Rust
 license: MIT
 description: "Parallel rsync-like pull sync over SSH with resume"
 homepage: ""
-stars: 506
+stars: 507
 stars_per_day: 101
 forks: 18
 open_issues: 3
@@ -15,6 +15,7 @@ created: 2026-03-05
 pushed_at: 2026-03-06
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "開發工具"
 release_tag: "v0.2.0"
 install_complexity: "easy"
@@ -29,91 +30,102 @@ tags:
 aliases:
   - "parsync"
   - "AlpinDale/parsync"
-  - "提供高效的 SSH 檔案同步，支持恢復和並行傳輸。"
+  - "提供高效的 SSH 檔案同步，支援恢復和並行傳輸。"
 ---
 
 # parsync
 
-**506** stars · **101** stars/天 · 建立 5 天前 · Rust · MIT
+**507** stars · **101** stars/天 · 建立 5 天前 · Rust · MIT
 
 `個人專案` `v0.2.0` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供高效的 SSH 檔案同步，支持恢復和並行傳輸。
+> 提供高效的 SSH 檔案同步，支援恢復和並行傳輸。
+
+> [!info] 速覽
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (101 stars/day)
+> **適合** 需要高效能檔案同步解決方案的系統管理員和開發者。
+> **一句話重點** parsync 讓檔案同步變得更快、更可靠，特別適合需要高效能的使用者。
 
 > [!abstract] 核心創新
-> 提供高效的並行檔案傳輸和恢復功能，超越傳統的 rsync 工具。
+> parsync 提供了高效的並行檔案傳輸和恢復功能，顯著提升了檔案同步的速度和可靠性。
 
 ## 專案簡介
 
-它讓使用者能夠通過 SSH 進行高效的檔案同步，並支持恢復功能。這個工具使用 Rust 實現，並透過並行傳輸來提升速度，還可以選擇區塊增量同步以節省帶寬。與傳統的 rsync 相比，parsync 在處理大量小檔案時表現更佳，因為它可以同時傳輸多個檔案。實際使用中，使用者可以根據需求調整並行作業數量和區塊大小，以達到最佳效能。這個工具適合需要頻繁同步大量檔案的開發者或系統管理員，特別是在大規模資料遷移或備份的情境下。整體來說，parsync 是一個值得嘗試的工具，尤其對於需要高效能檔案同步的專案非常合適。
+parsync 透過 SSH 進行高效的檔案拉取同步，支援恢復功能，並且能夠同時傳輸多個檔案。使用者只需執行 `parsync -vrPlu user@example.com:/remote/path /local/destination` 指令，即可開始同步，並可透過 `--jobs` 和 `--chunk-size` 參數調整性能。該工具使用 Rust 編寫，並支援 Linux、macOS 和 Windows 平台，能夠處理大檔案的分塊傳輸。與傳統的 rsync 相比，parsync 提供了更高的傳輸速度和更靈活的配置選項，特別適合需要高效能檔案同步的場景。使用者可以設定多達 16 個並行作業，並透過 `--strict-durability` 開啟嚴格模式以確保檔案完整性。該工具的效能在大檔案傳輸上表現優異，但在 Windows 環境下對於某些元資料的支援有限。這個專案目前處於 beta 階段，適合需要快速檔案同步的中小型團隊使用。建議在需要高效能檔案同步時使用，但若對 Windows 元資料有高需求，則需謹慎考量。
 
-**技術棧**：`Rust` · `Shell` · `PowerShell` · `Makefile`
+**技術棧**：`Rust` · `Shell` · `Makefile`
 
 ## 重點功能
 
-- 高效的並行檔案傳輸，顯著提升同步速度。
-- 支持恢復功能，避免傳輸中斷造成的資料損失。
-- 可選擇區塊增量同步，節省帶寬和時間。
-- 支持多平台，包括 Linux、macOS 和 Windows。
-- 靈活的性能調整選項，使用者可自定義並行作業數量和區塊大小。
+- 高效的並行檔案傳輸 — 同時傳輸多個檔案，使用 `--jobs` 參數設定並行數量。
+- 支援恢復功能 — 在傳輸中斷後可從中斷點繼續，無需重新開始。
+- 可調整的分塊大小 — 使用 `--chunk-size` 參數設定每個檔案的分塊大小，預設為 16MB。
+- 靈活的性能調整 — `--strict-durability` 參數可啟用嚴格模式以確保檔案完整性。
+- 跨平台支援 — 可在 Linux、macOS 和 Windows 上運行，並提供安裝腳本。
 
 ## 快速開始
 
-1. 在 Linux 或 macOS 上安裝
+1. 安裝 parsync
 ```bash
 curl -fsSL https://alpindale.net/install.sh | bash
 ```
-2. 在 Windows 上安裝
+2. 執行同步指令
 ```bash
-powershell -ExecutionPolicy Bypass -c "irm https://alpindale.net/install.ps1 | iex"
+parsync -vrPlu user@example.com:/remote/path /local/destination
 ```
-3. 使用 cargo 安裝
+3. 調整性能參數
 ```bash
-cargo install parsync
+parsync -vrPlu --jobs 16 --chunk-size 16777216 user@host:/src /dst
+```
+
+## 程式碼範例
+
+```bash
+parsync -vrPlu user@example.com:/remote/path /local/destination
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 AlpinDale 在開源社群中活躍，專注於高效能工具的開發。隨著遠端工作和雲端服務的普及，對於高效檔案同步的需求日益增加，這使得 parsync 的功能正好切中痛點。近期的更新也讓使用者看到持續的改進和支持，進一步提升了其吸引力。
+> 作者 AlpinDale 具備豐富的開發經驗，專注於高效能工具的開發。隨著遠端工作和雲端存儲的普及，對高效檔案同步工具的需求日益增加。這個專案的推出恰好滿足了這一需求，並且在 GitHub 上獲得了不錯的關注度。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效檔案同步解決方案的系統管理員和開發者。
+**目標受眾**：需要高效能檔案同步解決方案的系統管理員和開發者。
 
 > [!example] 使用場景
-> - 系統管理員 用它來 同步伺服器上的配置檔，因為它能夠快速且可靠地處理大量檔案。
-> - 開發者 用它來 備份專案資料夾，因為它支持恢復功能，避免資料遺失。
-> - 資料科學家 用它來 同步大型數據集，因為並行傳輸能顯著縮短時間。
+> - 系統管理員用它來快速同步伺服器檔案，因為相比 rsync，parsync 提供了更高的傳輸速度和恢復能力。
+> - 開發者用它來在多個環境之間同步大型專案檔案，因為它支援並行傳輸，能顯著減少同步時間。
+> - 資料科學家用它來從遠端伺服器快速拉取數據集，因為它的分塊傳輸能有效處理大檔案。
 
 ## 架構分析
 
-該專案採用單一執行檔架構，通過 SSH 進行檔案傳輸，並支持多執行緒以提高效能。
+該專案採用 CLI 架構，使用者透過命令行介面進行操作。用戶輸入 → parsync 處理 SSH 連接與檔案傳輸 → 輸出同步結果。核心技術決策包括使用 Rust 以提升性能，並支援多平台運行。關鍵檔案包括 install.sh 和 main.rs。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 高效的並行檔案傳輸，顯著提升速度。
-> - 支持恢復功能，避免資料損失。
-> - 靈活的性能調整選項，適合不同需求。
+> - 高效的並行檔案傳輸，顯著縮短同步時間。
+> - 支援恢復功能，避免重複傳輸。
+> - 跨平台支援，方便不同環境使用。
 
 > [!danger] 缺點
-> - Windows 上的某些功能支持有限。
-> - 對於大型檔案，可能需要進行性能調整。
-> - 目前僅支持特定的 SSH 配置，對於複雜情況可能不夠靈活。
+> - Windows 環境下對元資料支援有限。
+> - 需要根據環境調整性能參數以達到最佳效果。
+> - 對於某些特殊檔案類型的支援可能不足。
 
 > [!warning] 注意事項
-> - Windows 上的某些元數據功能不完全支持。
-> - 對於大型檔案，可能需要根據環境調整參數以獲得最佳效能。
-> - 目前僅支持特定的 SSH 配置，對於複雜的 SSH 設定可能需要額外調整。
+> - 對於某些 Windows 元資料的支援有限。
+> - 在高負載情況下可能需要調整性能參數以達到最佳效果。
+> - 僅支援特定的 SSH 配置，可能不適用於所有環境。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| rsync | rsync 是一個成熟的工具，但不支持並行傳輸和增量同步。 |
-| scp | scp 雖然簡單，但不支持恢復和高效的檔案同步。 |
+| [[WayneHarris--rsync\|WayneHarris/rsync]] | rsync 是一個經典的檔案同步工具，但不支援並行傳輸，速度較慢。 |
+| [[lxc--lxc\|lxc/lxc]] | LXC 提供容器化的檔案傳輸，但不具備 parsync 的高效能和恢復功能。 |
 
 ## 技術細節
 
@@ -139,11 +151,6 @@ cargo install parsync
 > | [@AlpinDale](https://github.com/AlpinDale) | 23 |
 
 **最新版本**：v0.2.0 (2026-03-05)
-
-## 社群與生態
-
-**社群活躍度**：每週有穩定的更新，社群活躍度良好。
-**連結**：[文件](https://github.com/AlpinDale/parsync#readme)
 
 ## README 摘錄
 

@@ -7,7 +7,7 @@ language: Python
 license: MIT
 description: "A lightweight inference engine supporting speculative speculative decoding (SSD). "
 homepage: ""
-stars: 751
+stars: 752
 stars_per_day: 125
 forks: 46
 open_issues: 3
@@ -15,6 +15,7 @@ created: 2026-03-04
 pushed_at: 2026-03-05
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "AI/ML"
 release_tag: ""
 install_complexity: "medium"
@@ -28,92 +29,102 @@ tags:
 aliases:
   - "ssd"
   - "tanishqkumar/ssd"
-  - "提供一個輕量級的推理引擎，支持並行的推測解碼，顯著提高推理速度。"
+  - "提供一個輕量級的推理引擎，支援並行的推測解碼，顯著提高大型語言模型的推理速度。"
 ---
 
 # ssd
 
-**751** stars · **125** stars/天 · 建立 6 天前 · Python · MIT
+**752** stars · **125** stars/天 · 建立 6 天前 · Python · MIT
 
 `個人專案`
 
 > [!summary] 一句話摘要
-> 提供一個輕量級的推理引擎，支持並行的推測解碼，顯著提高推理速度。
+> 提供一個輕量級的推理引擎，支援並行的推測解碼，顯著提高大型語言模型的推理速度。
+
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (125 stars/day)
+> **適合** 需要在大型語言模型上實現高效推理的 AI 開發團隊。
+> **一句話重點** SSD 的並行推測機制讓大型語言模型的推理速度有了質的飛躍，這對於實時應用場景至關重要。
 
 > [!abstract] 核心創新
-> SSD 允許小型模型和大型模型在不同硬體上並行運行，從而消除推理過程中的等待時間。
+> SSD 通過並行推測的方式，顯著提高了大型語言模型的推理速度。
 
 ## 專案簡介
 
-這個專案實現了一種新的推測解碼算法，讓小型模型和大型模型能夠同時運行，從而加速推理過程。它使用了 Tensor Parallelism 和 PagedAttention 等技術，並支援 Qwen3 和 Llama3 模型系列。與傳統的推測解碼相比，SSD 允許所有推測在不同硬體上並行進行，避免了等待驗證的延遲。這樣的設計使得推理速度大幅提升，特別適合需要高效能的應用場景。儘管目前只針對特定硬體進行了優化，但在支持範圍內的效能表現相當出色。這個專案的成熟度高，值得在需要快速推理的專案中進行嘗試。
+SSD 是一種新的推測解碼算法，透過將小型模型與大型模型的推測與驗證過程並行化來提升推理效率。小型模型預測大型模型可能生成的標記，並同時進行多個推測，若預測正確，則直接返回結果，省去傳統的逐步驗證過程。這個引擎支援 Qwen3 和 Llama3 模型家族，並利用 CUDA圖形、張量並行等技術來優化性能。與傳統的推測解碼工具相比，SSD 在硬體資源的使用上更為高效，能夠在多個 GPU 上同時運行，顯著降低推理延遲。實際測試顯示，SSD 在多種數據集上的推理速度有顯著提升，特別是在大型模型上。這個專案目前處於 beta 階段，對於需要高效推理的團隊來說，值得考慮使用。對於小型項目或對性能要求不高的情境，可能不需要這麼複雜的解決方案。
 
-**技術棧**：`Python` · `CUDA`
+**技術棧**：`Python 3.11+` · `CUDA 12.8`
 
 ## 重點功能
 
-- 支持並行推測解碼，顯著提高推理速度。
-- 提供 SSD 算法的參考實現。
-- 支援 Qwen3 和 Llama3 模型系列。
-- 實現了 Tensor Parallelism 和 PagedAttention。
-- 優化的自回歸基準測試。
+- 並行推測解碼 — 小型模型同時預測多個標記，消除逐步驗證的延遲。
+- 支援 Qwen3 和 Llama3 模型家族 — 兼容多種流行的 LLM。
+- 張量並行 — 在多個 GPU 上有效分配計算資源。
+- PagedAttention 和 CUDAgraphs — 利用先進的技術優化內存和計算性能。
+- 簡單的安裝和配置 — 提供清晰的安裝指令和環境設置。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 安裝 uv 工具
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
-2. 克隆專案
+2. 克隆專案並安裝依賴
 ```bash
-git clone https://github.com/tanishqkumar/ssd && cd ssd
+git clone https://github.com/tanishqkumar/ssd && cd ssd && uv sync
 ```
-3. 同步核心依賴
+3. 設置環境變數
 ```bash
-uv sync
+export SSD_HF_CACHE=/path/to/huggingface/hub
 ```
-4. 啟動虛擬環境
+4. 下載模型和數據集
 ```bash
-source .venv/bin/activate
+python scripts/download_from_hf.py llama
 ```
-5. 測試安裝
+5. 運行基準測試
 ```bash
-python -c "from ssd import LLM; print('ok')"
+cd bench && python -O bench.py --llama --size 70 --gpus 4 --all
 ```
+
+## 程式碼範例
+
+python -O bench.py --llama --size 70 --gpus 4 --spec --async --k 7 --f 3 --b 1 --temp 0 --numseqs 128 --output_len 512 --all
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 tanishqkumar 在推理算法領域有深厚的背景，這個專案切中了對於推理速度的迫切需求。隨著大型模型的普及，對於高效能推理引擎的需求日益增加，SSD 的出現正好滿足了這一點。它的設計理念和實作方式相對於以往的推測解碼方法有了顯著的進步，因此在技術社群中引起了廣泛的關注。
+> 作者 tanishqkumar 在推理優化領域有豐富經驗，這個專案切中了對大型語言模型推理速度的迫切需求。隨著 AI 應用的普及，對於高效推理的需求日益增加，這使得 SSD 的實用性和吸引力上升。
 
 ## 適合誰使用
 
-**目標受眾**：對推理效能有高要求的 AI 研究人員和開發者。
+**目標受眾**：需要在大型語言模型上實現高效推理的 AI 開發團隊。
 
 > [!example] 使用場景
-> - AI 研究人員 用它來 加速推理過程，因為 SSD 的並行推測能顯著減少等待時間。
-> - 開發者 用它來 測試大型模型的效能，因為它支持多種模型並能快速驗證結果。
-> - 數據科學家 用它來 實現高效的推理服務，因為 SSD 提供了優化的推理引擎，適合實時應用。
+> - AI 研究員用它來加速 LLM 模型的推理過程，因為 SSD 可以在多 GPU 上並行運行，顯著降低推理時間。
+> - 後端工程師用它來優化 API 的回應速度，因為 SSD 的推理效率使得大型模型能在更短時間內提供結果。
+> - 數據科學家用它來快速迭代模型，因為 SSD 的並行推測特性讓他們能在更短的時間內測試多個模型配置。
 
 ## 架構分析
 
-專案採用前後端分離架構，推理引擎使用 SSD 算法，並通過 CUDA 進行優化。資料流是小型模型推測 → 大型模型驗證 → 結果返回。
+這是一個微服務架構的推理引擎，核心資料流為：用戶請求 → 小型模型預測 → 大型模型驗證 → 返回結果。關鍵技術決策包括使用 CUDAgraphs 和張量並行來優化性能，專案目錄結構中包含核心的推理邏輯和基準測試腳本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 推理速度顯著提升，適合實時應用。
-> - 支持多種模型，靈活性高。
-> - 設計理念創新，具備未來擴展性。
+> - 顯著提高推理速度，特別是在大型模型上。
+> - 支持多種流行的 LLM 模型，擴展性強。
+> - 提供清晰的安裝和使用指導，易於上手。
 
 > [!danger] 缺點
-> - 目前僅針對特定硬體進行了優化，限制了使用範圍。
-> - 需要較高的硬體要求，對於一般開發者可能不友好。
-> - 安裝和配置過程較為繁瑣。
+> - 需要較高的硬體要求，對於小型項目不一定合適。
+> - 目前處於 beta 階段，穩定性和兼容性可能存在問題。
+> - 僅支援特定版本的 Python 和 CUDA，限制了使用範圍。
 
 > [!warning] 注意事項
-> - 僅支援特定硬體，如 H100。
-> - 需要安裝 CUDA 12.8 以上版本。
-> - 目前僅針對特定模型進行了優化，其他模型可能效果不佳。
+> - 僅支援 Python 3.11+ 和 CUDA >= 12.8。
+> - 需要多個 GPU 來充分利用並行推測的優勢。
+> - 目前僅在 H100 硬體上進行測試，其他硬體的效能尚未驗證。
+> - beta 階段，API 可能會有變動。
 
 ## 技術細節
 
@@ -132,7 +143,8 @@ python -c "from ssd import LLM; print('ok')"
 
 ## 社群與生態
 
-**社群活躍度**：專案活躍，近期有多次提交和更新。
+**社群活躍度**：社群活躍，持續更新和維護中。
+**連結**：[文件](https://github.com/tanishqkumar/ssd#readme)
 
 ## README 摘錄
 
@@ -196,11 +208,44 @@ python -c "from ssd import LLM; print('ok')"
 > 
 > ### Download models + datasets
 > 
-> If you already have the models downloaded via `huggingface-cli` or similar, you can skip straight to datasets — just make sure `SSD_HF_CACHE` points to the right place. The download scripts require the `scripts` 
+> If you already have the models downloaded via `huggingface-cli` or similar, you can skip straight to datasets — just make sure `SSD_HF_CACHE` points to the right place. The download scripts require the `scripts` extra: `uv sync --extra scripts`.
+> 
+> ```bash
+> # models (uses SSD_HF_CACHE)
+> python scripts/download_from_hf.py llama
+> 
+> # datasets (writes to $HF_DATASETS_CACHE/processed_datasets)
+> export HF_DATASETS_CACHE=/path/to  # parent of SSD_DATASET_DIR
+> python scripts/get_data_from_hf.py --num-samples 10000
+> ```
+> 
+> ## Usage
+> 
+> All commands below run from inside the `bench/` directory. Large models (Llama-3 70B, Qwen-3 32B) take a few minutes for load/warmup/compile before generation starts. Always use `python -O` to disable debug overhead.
+> 
+> ### Benchmarks
+> 
+> Use `--all` for full eval across four datasets. Since different data distributions are predictable to varying degrees, the speed of SD/SSD depends a lot on the dataset. Averaging over many prompts from many types of datasets 
+> gives an overall picture. `--numseqs` is per-dataset, so `--numseqs 128 --all` runs 128 × 4 = 512 prompts total.
+> 
+> ```bash
+> cd bench
+> 
+> # AR — Llama 70B, 4 GPUs
+> python -O bench.py --llama --size 70 --gpus 4 --b 1 --temp 0 --numseqs 128 --output_len 512 --all
+> 
+> # Sync spec decode — 70B target + 1B draft, 4 GPUs, k=6
+> python -O bench.py --llama --size 70 --gpus 4 --spec --k 6 --b 1 --temp 0 --numseqs 128 --output_len 512 --all
+> 
+> # Async spec decode (SSD) — 70B target (4 GPUs) + 1B draft (1 GPU), k=7, f=3
+> python -O bench.py --llama --size 70 --gpus 5 --spec --async --k 7 --f 3 --b 1 --temp 0 --numseqs 128 --output_len 512 --all
+> ```
+> 
+> Use `--qwen --size 32` for Qwen models. See `bench/bench.py` for full args. For SGLang/vLLM baselines
 
 ## 延伸閱讀
 
-相關概念：[[機器學習]] · [[深度學習]] · [[推理引擎]]
+相關概念：[[深度學習]] · [[推理優化]] · [[張量並行]]
 
 [GitHub](https://github.com/tanishqkumar/ssd)
 

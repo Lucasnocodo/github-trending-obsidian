@@ -15,6 +15,7 @@ created: 2026-03-09
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "開發工具"
 release_tag: ""
 install_complexity: "easy"
@@ -29,7 +30,7 @@ tags:
 aliases:
   - "mcp2cli"
   - "knowsuchagency/mcp2cli"
-  - "將任何 MCP 伺服器或 OpenAPI 規範即時轉換為 CLI，無需代碼生成。"
+  - "讓任何 MCP 伺服器或 OpenAPI 規格即時轉換為 CLI，無需代碼生成。"
 ---
 
 # mcp2cli
@@ -39,24 +40,29 @@ aliases:
 `easy-install`
 
 > [!summary] 一句話摘要
-> 將任何 MCP 伺服器或 OpenAPI 規範即時轉換為 CLI，無需代碼生成。
+> 讓任何 MCP 伺服器或 OpenAPI 規格即時轉換為 CLI，無需代碼生成。
+
+> [!info] 速覽
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (497 stars/day)
+> **適合** 需要快速測試和互動 API 的後端開發者或 DevOps 工程師。
+> **一句話重點** mcp2cli 讓開發者能夠以最小的努力，快速與各種 API 互動，顯著提高開發效率。
 
 > [!abstract] 核心創新
-> 能夠在運行時將 MCP 伺服器或 OpenAPI 規範轉換為 CLI，無需代碼生成。
+> mcp2cli 允許開發者在運行時將任何 MCP 伺服器或 OpenAPI 規格轉換為 CLI，無需代碼生成。
 
 ## 專案簡介
 
-這個工具能夠在運行時將 MCP 伺服器或 OpenAPI 規範轉換為命令列介面（CLI）。它使用 Python 實現，並支援 OAuth 認證，能自動處理令牌的獲取和更新。與其他 CLI 工具相比，mcp2cli 省去了大量的工具架構開銷，節省了 96-99% 的令牌使用。實際使用中，這個工具能夠輕鬆連接到 MCP 伺服器，並執行查詢或創建技能，對於需要頻繁與 API 互動的開發者來說非常方便。這個專案相對成熟，適合需要快速開發和測試的開發階段。
+mcp2cli 透過 CLI 工具，讓開發者能夠即時與 MCP 伺服器或 OpenAPI 規格互動，無需編寫任何代碼。使用者只需透過簡單的命令，例如 `mcp2cli --mcp https://mcp.example.com/sse --list`，即可列出可用工具或執行查詢。技術上，它使用 Python 實現，並支援 OAuth 認證及多種傳輸模式（如 HTTP/SSE），自動處理令牌的獲取和刷新。與其他 CLI 工具相比，mcp2cli 的獨特之處在於其即時生成 CLI 的能力，無需預先生成代碼，並且能夠節省 96-99% 的代碼令牌。實際使用中，mcp2cli 表現穩定，支援多種認證方式，適合需要快速與 API 互動的開發者。這個專案目前處於 beta 階段，對於小型團隊或個人開發者來說，值得一試。建議在需要快速測試 API 或與現有服務互動時使用，但對於大型專案或需要複雜邏輯的情境，可能需要更多的自定義解決方案。
 
-**技術棧**：`Python`
+**技術棧**：`Python 3.10`
 
 ## 重點功能
 
-- 即時將 MCP 伺服器或 OpenAPI 規範轉換為 CLI。
-- 支援 OAuth 認證，自動處理令牌獲取和更新。
-- 能夠使用環境變數和文件來管理敏感信息。
-- 支援多種傳輸方式，包括 HTTP 和 SSE。
-- 提供詳細的命令行參數選項，方便用戶自定義請求。
+- 即時 CLI 生成 — 使用 `mcp2cli --mcp <URL>` 命令即時與 MCP 伺服器互動。
+- 支援 OAuth 認證 — 自動處理令牌獲取和刷新，簡化認證流程。
+- 多種傳輸模式 — 支援 HTTP 和 SSE，使用 `--transport` 參數選擇。
+- 環境變數支持 — 使用 `env:` 和 `file:` 前綴安全地管理敏感資訊。
+- 自動快取 — 規格和工具列表快取，預設 TTL 為 1 小時，使用 `--refresh` 可強制刷新。
 
 ## 快速開始
 
@@ -64,45 +70,56 @@ aliases:
 ```bash
 pip install mcp2cli
 ```
-2. 直接運行 mcp2cli
+2. 與 MCP 伺服器互動
 ```bash
-uvx mcp2cli --help
+mcp2cli --mcp https://mcp.example.com/sse --list
+```
+3. 使用 OAuth 認證
+```bash
+mcp2cli --mcp https://mcp.example.com/sse --oauth --list
+```
+
+## 程式碼範例
+
+```bash
+mcp2cli --mcp https://mcp.example.com/sse search --query "test"
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者背景強大，專注於開發者工具，滿足了開發者對於簡化 API 互動的需求。隨著 API 數量的增加，開發者需要更高效的工具來管理這些接口，這使得 mcp2cli 的需求上升。近年來，對於無代碼解決方案的興趣也促進了此工具的流行。
+> 作者 knowsuchagency 具備豐富的開源經驗，專案切中開發者在使用 API 時的即時需求。隨著 API 數量的增加，開發者對於快速測試和互動的需求也隨之上升，這使得 mcp2cli 的推出時機恰到好處。
 
 ## 適合誰使用
 
-**目標受眾**：需要與 MCP 伺服器或 OpenAPI 進行互動的開發者和測試人員。
+**目標受眾**：需要快速測試和互動 API 的後端開發者或 DevOps 工程師。
 
 > [!example] 使用場景
-> - 開發者 用它來 連接 MCP 伺服器，因為 可以快速執行查詢而不需撰寫複雜代碼。
-> - API 測試人員 用它來 測試 OpenAPI 規範，因為 可以即時生成 CLI 命令進行測試。
-> - 系統整合工程師 用它來 整合不同的 API，因為 可以輕鬆創建技能來調用各種服務。
+> - 後端工程師用它來快速測試 MCP 伺服器的 API，因為能即時列出可用工具，節省了手動查找的時間。
+> - AI 開發者用它來生成針對 OpenAPI 規格的 CLI，因為無需代碼生成，能快速開始實驗。
+> - DevOps 工程師用它來自動化與 API 的互動，因為支援 OAuth 認證，能安全地管理憑證。
 
 ## 架構分析
 
-專案使用 Python 實現，通過命令行介面與用戶互動，並連接到 MCP 伺服器或 OpenAPI。資料流是 用戶輸入命令 → mcp2cli 解析請求 → 連接到 API → 返回結果給用戶。
+這是一個 CLI 工具，採用單體架構。用戶輸入 → mcp2cli 處理 → 輸出結果。核心技術決策是使用 Python 實現並支援多種傳輸模式。專案目錄結構包含主要的 CLI 實現和相關的配置檔案。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡化了與 API 的互動過程。
-> - 自動處理 OAuth 認證，減少了手動配置的麻煩。
-> - 即時生成 CLI 命令，提高了開發效率。
+> - 即時生成 CLI，無需代碼生成，快速上手。
+> - 支援多種認證方式，方便開發者使用。
+> - 快取機制減少 API 請求次數，提高效率。
 
 > [!danger] 缺點
-> - 對於新手來說，命令行操作可能不夠友好。
-> - 需要一定的技術背景來理解和使用。
-> - 依賴於正確的 API 配置，否則可能會出現錯誤。
+> - 對於複雜的 API 可能無法完全支援。
+> - 目前功能相對簡單，未來擴展性有待觀察。
+> - 對於新手使用者可能需要一些學習曲線。
 
 > [!warning] 注意事項
-> - 僅支援 Python 環境。
-> - 對於不熟悉命令列的用戶可能有學習曲線。
-> - 需要正確配置 OAuth 以便正常運行。
+> - 目前僅支援 Python 3.7+。
+> - 對於大型 API 規格的處理可能會有性能瓶頸。
+> - 不支援 Windows 環境。
+> - 在某些情況下，OAuth 認證流程可能需要手動介入。
 
 ## 技術細節
 
@@ -205,7 +222,61 @@ uvx mcp2cli --help
 > 
 > # Read from file
 > mcp2cli --mcp https://mcp.example.com/sse \
->   --oauth-client-secret "fi
+>   --oauth-client-secret "file:/run/secrets/client_secret" \
+>   --oauth-client-id "my-client-id" \
+>   --list
+> 
+> # Works with secret managers that inject env vars
+> fnox exec -- mcp2cli --mcp https://mcp.example.com/sse \
+>   --oauth-client-id "env:OAUTH_CLIENT_ID" \
+>   --oauth-client-secret "env:OAUTH_CLIENT_SECRET" \
+>   --list
+> ```
+> 
+> ### MCP stdio mode
+> 
+> ```bash
+> # List tools from an MCP server
+> mcp2cli --mcp-stdio "npx @modelcontextprotocol/server-filesystem /tmp" --list
+> 
+> # Call a tool
+> mcp2cli --mcp-stdio "npx @modelcontextprotocol/server-filesystem /tmp" \
+>   read-file --path /tmp/hello.txt
+> 
+> # Pass environment variables to the server process
+> mcp2cli --mcp-stdio "node server.js" --env API_KEY=sk-... --env DEBUG=1 \
+>   search --query "test"
+> ```
+> 
+> ### OpenAPI mode
+> 
+> ```bash
+> # List all commands from a remote spec
+> mcp2cli --spec https://petstore3.swagger.io/api/v3/openapi.json --list
+> 
+> # Call an endpoint
+> mcp2cli --spec ./openapi.json --base-url https://api.example.com list-pets --status available
+> 
+> # With auth
+> mcp2cli --spec ./spec.json --auth-header "Authorization:Bearer tok_..." create-item --name "Test"
+> 
+> # POST with JSON body from stdin
+> echo '{"name": "Fido", "tag": "dog"}' | mcp2cli --spec ./spec.json create-pet --stdin
+> 
+> # Local YAML spec
+> mcp2cli --spec ./api.yaml --base-url http://localhost:8000 --list
+> ```
+> 
+> ### Output control
+> 
+> ```bash
+> # Pretty-print JSON (also auto-enabled for TTY)
+> mcp2cli --spec ./spec.json --pretty list-pets
+> 
+> # Raw response body (no JSON parsing)
+> mcp2cli --spec ./spec.json --raw get-data
+> 
+> # Pipe-friend
 
 ## 延伸閱讀
 

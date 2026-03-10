@@ -7,15 +7,16 @@ language: N/A
 license: N/A
 description: "end to end app store screenshot creation using AI"
 homepage: "https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots"
-stars: 797
-stars_per_day: 266
+stars: 806
+stars_per_day: 269
 forks: 56
 open_issues: 2
 created: 2026-03-07
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "開發工具"
+month: "2026-03"
+category: "其他"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -23,7 +24,7 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - "category/開發工具"
+  - "category/其他"
   - "lang/other"
   - easy_install
   - "topic/agentic_ai"
@@ -34,87 +35,86 @@ tags:
 aliases:
   - "app-store-screenshots"
   - "ParthJadhav/app-store-screenshots"
-  - "利用 AI 自動生成 iOS 應用的 App Store 截圖，節省時間和精力。"
+  - "利用 AI 自動生成 iOS 應用的 App Store 截圖，簡化設計流程。"
 ---
 
 # app-store-screenshots
 
-**797** stars · **266** stars/天 · 建立 3 天前 · N/A · 未標註授權
+**806** stars · **269** stars/天 · 建立 3 天前 · N/A · 未標註授權
 
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 利用 AI 自動生成 iOS 應用的 App Store 截圖，節省時間和精力。
+> 利用 AI 自動生成 iOS 應用的 App Store 截圖，簡化設計流程。
+
+> [!info] 速覽
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (269 stars/day)
+> **適合** 需要快速生成高質量 App Store 截圖的 iOS 開發者和市場營銷人員。
+> **一句話重點** 這個專案展示了 AI 在應用開發中的潛力，特別是在市場推廣素材的自動生成上。
 
 > [!abstract] 核心創新
-> 提供一個 AI 驅動的截圖生成工具，結合設計和文案建議。
+> 這個專案將 AI 技術應用於 App Store 截圖生成，提升了設計效率。
 
 ## 專案簡介
 
-這個專案是一個 AI 驅動的工具，能夠自動生成 iOS 應用的 App Store 截圖。它會詢問用戶關於應用的品牌、功能和風格偏好，然後自動搭建一個 Next.js 專案，設計出廣告風格的截圖並導出到所有 Apple 要求的解析度。與其他截圖生成工具相比，這個專案的獨特之處在於它不僅生成截圖，還能提供完整的設計和文案建議。實際使用中，這個工具能夠節省大量時間，但需要用戶提供品牌和功能的詳細資訊。對於開發者來說，這是一個非常實用的工具，特別是在準備上架應用時。
+這個專案是一個 AI 驅動的工具，用於自動生成 iOS 應用的 App Store 截圖。它的核心流程是根據用戶提供的應用品牌、特性和風格偏好，自動搭建一個 Next.js 專案，設計廣告風格的截圖並導出為 Apple 所需的各種解析度。專案使用 Next.js、TypeScript 和 Tailwind CSS，並利用 html-to-image 進行 PNG 輸出。與其他截圖生成工具相比，這個專案的獨特之處在於其專注於廣告設計，而非單純的 UI 展示，這使得生成的截圖更具吸引力。對於開發者和市場營銷人員來說，這是一個能夠顯著提高工作效率的工具，特別是在需要快速生成多個截圖的情況下。建議在需要大量截圖的情況下使用，對於小型應用或不需要專業截圖的情況則可考慮其他簡單工具。
 
-**技術棧**：`Next.js`
+**技術棧**：`Next.js` · `TypeScript` · `Tailwind CSS`
 
 ## 重點功能
 
-- 自動生成 iOS 應用的 App Store 截圖。
-- 提供廣告風格的設計，而非單純的 UI 展示。
-- 能夠導出所有 Apple 要求的解析度。
-- 詢問用戶品牌、功能和風格偏好以生成截圖。
-- 整合 Next.js 專案，便於使用和擴展。
+- 自動生成截圖 — 根據用戶提供的品牌和特性自動設計截圖。
+- 廣告風格設計 — 每個截圖都以廣告為導向，提升吸引力。
+- 支持多種解析度 — 自動導出 Apple 所需的 4 種解析度圖片。
+- 簡單的安裝流程 — 使用 npx 進行安裝，快速上手。
+- 靈活的配置選項 — 用戶可根據需求自定義截圖內容和樣式。
 
 ## 快速開始
 
-1. 使用 npx 安裝技能
+1. 安裝 App Store 截圖生成工具
 ```bash
 npx skills add ParthJadhav/app-store-screenshots
 ```
-2. 啟動生成截圖的指令
+2. 啟動生成過程
 ```bash
 > Build App Store screenshots for my app
+```
+3. 導出截圖
+```bash
+在生成後點擊截圖以導出為 PNG。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著應用開發的需求增加，開發者對於快速生成高品質截圖的需求也隨之上升。這個專案的作者利用 AI 技術來解決這個痛點，吸引了許多開發者的注意。
+> 專案的作者在 AI 和應用開發領域有豐富經驗，這個工具切中了開發者對於快速生成市場推廣素材的需求。隨著 iOS 應用市場的競爭加劇，開發者需要更高效的方式來創建吸引人的截圖，這使得該工具在當前時期受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成 App Store 截圖的 iOS 應用開發者和市場行銷人員。
+**目標受眾**：需要快速生成高質量 App Store 截圖的 iOS 開發者和市場營銷人員。
 
 > [!example] 使用場景
-> - 開發者 用它來 自動生成 App Store 截圖，因為這樣可以節省大量時間和精力。
-> - 市場行銷人員 用它來 設計應用的廣告截圖，因為它提供了專業的文案建議。
-> - 產品經理 用它來 確保截圖符合 Apple 的要求，因為它自動導出所有必要的解析度。
-
-## 架構分析
-
-專案基於 Next.js 架構，前端用於生成截圖，後端處理用戶輸入和截圖設計。資料流是 用戶輸入 → AI 設計 → 截圖生成 → 導出到指定格式。
+> - iOS 開發者用它來快速生成 App Store 截圖，因為能夠節省設計時間並提升市場競爭力。
+> - 市場營銷人員用它來創建吸引人的廣告素材，因為自動化的設計流程能夠提高效率。
+> - 新創公司用它來為應用上架準備截圖，因為能夠快速生成符合 Apple 規範的高質量圖片。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠自動生成高品質的 App Store 截圖。
-> - 提供專業的文案建議，提升應用的市場競爭力。
-> - 整合 Next.js，便於使用和擴展。
+> - 能夠快速生成高質量的截圖，節省設計時間。
+> - 廣告風格設計提升了截圖的吸引力。
+> - 簡單的安裝和使用流程，適合各類開發者。
 
 > [!danger] 缺點
-> - 需要用戶提供詳細的品牌和功能資訊。
-> - 僅適用於 iOS 應用，無法生成 Android 截圖。
-> - 生成的截圖可能需要用戶進一步的調整和確認。
+> - 需要較新版本的 Node.js，對環境有要求。
+> - 依賴於外部 AI 代理，可能會影響穩定性。
+> - 對於不需要專業截圖的應用可能過於複雜。
 
 > [!warning] 注意事項
-> - 需要用戶提供詳細的品牌和功能資訊。
-> - 僅適用於 iOS 應用，無法生成 Android 截圖。
-> - 生成的截圖需要用戶進一步的調整和確認。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| Screenshot Generator | 其他工具可能不提供品牌和文案建議，僅專注於截圖生成。 |
-| AppLaunchpad | AppLaunchpad 提供更全面的應用上架服務，而本專案專注於截圖生成。 |
+> - 需要 Node.js 18+ 環境才能運行。
+> - 依賴於外部 AI 代理，可能會受到限制。
+> - 對於不需要專業截圖的應用可能過於複雜。
+> - 需要用戶提供品牌和特性信息，增加了配置步驟。
 
 ## 技術細節
 
@@ -216,11 +216,46 @@ npx skills add ParthJadhav/app-store-screenshots
 > └── ...
 > ```
 > 
-> The entire generator is a **single `page.tsx` file**. Run the dev s
+> The entire generator is a **single `page.tsx` file**. Run the dev server, open the browser, click any screenshot to export it as a PNG.
+> 
+> ## Export sizes
+> 
+> | Display | Resolution |
+> |---------|-----------|
+> | 6.9" | 1320 x 2868 |
+> | 6.5" | 1284 x 2778 |
+> | 6.3" | 1206 x 2622 |
+> | 6.1" | 1125 x 2436 |
+> 
+> Screenshots are designed at 1320x2868 (largest) and scaled down for smaller sizes.
+> 
+> ## Tech stack
+> 
+> | Dependency | Purpose |
+> |-----------|---------|
+> | Next.js | Dev server + static image serving |
+> | TypeScript | Type safety |
+> | Tailwind CSS | Styling |
+> | html-to-image | PNG export at exact resolutions |
+> | React | Component composition |
+> 
+> ## Key design principles
+> 
+> - **Screenshots are ads, not docs** — each slide sells one idea
+> - **Copy follows the "one second" rule** — readable at thumbnail size in the App Store
+> - **Layouts vary** — no two adjacent slides share the same phone placement
+> - **Style is user-driven** — no hardcoded colors, gradients, or fonts
+> 
+> ## Requirements
+> 
+> - Node.js 18+
+> - One of: bun, pnpm, yarn, or npm (detected automatically, bun preferred)
+> 
+> ## License
+> 
+> MIT
 
 ## 延伸閱讀
-
-相關概念：[[資料視覺化]] · [[自動化測試]] · [[API 設計]]
 
 [GitHub](https://github.com/ParthJadhav/app-store-screenshots) · [官方網站](https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots)
 
@@ -230,7 +265,7 @@ npx skills add ParthJadhav/app-store-screenshots
 > ```dataview
 > LIST
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "ParthJadhav--app-store-screenshots"
+> WHERE category = "其他" AND file.name != "ParthJadhav--app-store-screenshots"
 > SORT stars DESC
 > LIMIT 8
 > ```

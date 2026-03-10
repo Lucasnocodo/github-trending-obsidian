@@ -15,6 +15,7 @@ created: 2026-03-08
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "開發工具"
 release_tag: ""
 install_complexity: "easy"
@@ -29,7 +30,7 @@ tags:
 aliases:
   - "claude-statusline"
   - "kamranahmedse/claude-statusline"
-  - "讓 Claude Code 的狀態列顯示限制、目錄和 Git 資訊，提升開發效率。"
+  - "讓你的 Claude Code 狀態列顯示限制、目錄和 Git 資訊，提升開發效率。"
 ---
 
 # claude-statusline
@@ -39,33 +40,36 @@ aliases:
 `easy-install`
 
 > [!summary] 一句話摘要
-> 讓 Claude Code 的狀態列顯示限制、目錄和 Git 資訊，提升開發效率。
+> 讓你的 Claude Code 狀態列顯示限制、目錄和 Git 資訊，提升開發效率。
+
+> [!info] 速覽
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (195 stars/day)
+> **適合** 需要在 Claude Code 環境中快速獲取狀態資訊的開發者。
+> **一句話重點** 這個專案讓開發者能夠在 Claude Code 環境中快速獲取狀態資訊，提升開發效率。
 
 ## 專案簡介
 
-這個專案提供了一個簡單的工具，讓使用者能夠快速配置 Claude Code 的狀態列，顯示當前的使用限制、目錄和 Git 分支資訊。它透過一個簡單的命令安裝，並會自動備份舊的狀態列，確保使用者不會失去原有的配置。與其他類似工具相比，這個專案的獨特之處在於它專注於整合 Claude Code 的特定需求，並且使用 jq 和 curl 來獲取即時的使用限制數據。使用者可以輕鬆地安裝和卸載，並且不需要深入的技術背景。這個工具非常適合需要即時查看開發環境狀態的開發者，尤其是在使用 Claude Code 進行開發時。整體來說，這是一個成熟且值得嘗試的工具，特別適合日常開發工作。
-
-**技術棧**：`Shell` · `JavaScript`
+這個專案提供了一個簡單的工具來配置 Claude Code 的狀態列，顯示使用者的 API 限制、當前目錄和 Git 分支資訊。安裝後，它會備份舊的狀態列並將新狀態列腳本複製到 `~/.claude/statusline.sh`，並自動配置相關設置。技術上，它依賴於 `jq` 來解析 JSON、`curl` 獲取速率限制數據，以及 `git` 來顯示當前分支資訊。與其他狀態列工具相比，這個專案的特點在於其專注於 Claude Code 的特定需求，並且安裝過程非常簡單。使用者可以通過簡單的命令來卸載，並恢復之前的狀態列。對於需要在 Claude Code 環境中獲取即時狀態的開發者來說，這是一個非常實用的工具。這個專案目前處於穩定階段，值得立即使用，特別是對於需要快速獲取開發環境狀態的團隊。建議在需要即時狀態更新的情況下使用，但如果不使用 Claude Code，則不適合。
 
 ## 重點功能
 
-- 顯示當前的使用限制和目錄資訊。
-- 自動備份舊的狀態列配置。
-- 簡單的命令行安裝和卸載。
-- 整合 Git 分支資訊，方便查看當前開發狀態。
-- 使用 jq 和 curl 獲取即時數據。
+- 狀態列顯示 — 顯示 API 限制、當前目錄和 Git 分支資訊。
+- 簡單安裝 — 使用 `npx @kamranahmedse/claude-statusline` 一行命令安裝。
+- 自動備份 — 安裝過程中自動備份舊的狀態列。
+- 輕鬆卸載 — 使用 `npx @kamranahmedse/claude-statusline --uninstall` 恢復舊狀態列。
+- 依賴管理 — 需要 `jq`、`curl` 和 `git` 作為依賴。
 
 ## 快速開始
 
-1. 安裝狀態列工具
+1. 安裝狀態列
 ```bash
 npx @kamranahmedse/claude-statusline
 ```
-2. 查看狀態列配置
+2. 檢查狀態列配置
 ```bash
 cat ~/.claude/statusline.sh
 ```
-3. 卸載狀態列工具
+3. 卸載狀態列
 ```bash
 npx @kamranahmedse/claude-statusline --uninstall
 ```
@@ -73,33 +77,30 @@ npx @kamranahmedse/claude-statusline --uninstall
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 專案作者 Kamran Ahmed 是知名的開發者，對開發工具有深入的理解，這使得他的工具能夠切中使用者的需求。隨著 Claude Code 的使用者逐漸增加，對於狀態列的需求也隨之上升，這使得這個工具在短時間內受到關注。這個專案的推出時機正好符合開發者對於提升工作效率的迫切需求。
+> 專案作者 Kamran Ahmed 是知名的開發者，專注於提升開發者工具的效率。隨著 Claude Code 的使用增加，對於狀態列的需求也隨之上升。這個專案提供了一個簡單而有效的解決方案，正好切中開發者的需求。
 
 ## 適合誰使用
 
-**目標受眾**：使用 Claude Code 進行開發的工程師和開發團隊。
+**目標受眾**：需要在 Claude Code 環境中快速獲取狀態資訊的開發者。
 
 > [!example] 使用場景
-> - 開發者 用它來 配置 Claude Code 的狀態列，因為這樣可以即時查看使用限制和 Git 資訊。
-> - 團隊領導 用它來 監控開發進度，因為能夠快速獲取當前的 Git 分支狀態和目錄資訊。
-> - 新手開發者 用它來 簡化環境設置，因為安裝過程簡單且不需要複雜的配置。
+> - 前端工程師用它來即時查看 API 限制和當前 Git 分支，因為這樣可以快速調整開發策略，避免超出限制。
+> - 後端工程師用它來監控當前工作目錄的狀態，因為這樣可以減少切換上下文的時間，提高工作效率。
+> - DevOps 工程師用它來檢查 Git 分支資訊，因為這樣可以在部署前確認當前狀態，降低錯誤風險。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 安裝和使用過程簡單，適合各種技術水平的開發者。
-> - 能夠即時顯示重要的開發資訊，提高工作效率。
-> - 自動備份功能，避免配置丟失。
+> - 簡單易用的安裝流程，適合快速上手。
+> - 提供即時的開發環境狀態，提升工作效率。
+> - 自動備份功能，避免資料遺失。
 
 > [!danger] 缺點
-> - 僅限於 Claude Code 環境，無法跨平台使用。
-> - 需要額外安裝依賴工具 jq 和 curl。
-> - 功能相對簡單，對於高級用戶可能不夠靈活。
+> - 僅限於 Claude Code 環境，對其他 IDE 不適用。
+> - 依賴於外部工具，如 `jq` 和 `git`，需要額外安裝。
+> - 功能較為簡單，無法滿足複雜需求。
 
 > [!warning] 注意事項
-> - 需要安裝 jq 和 curl。
-> - 僅適用於 Claude Code 環境。
-> - 不支援其他編輯器或 IDE。
 
 ## 技術細節
 
@@ -167,8 +168,6 @@ npx @kamranahmedse/claude-statusline --uninstall
 > MIT
 
 ## 延伸閱讀
-
-相關概念：[[CLI/TUI]] · [[開發工具]] · [[Git]]
 
 [GitHub](https://github.com/kamranahmedse/claude-statusline)
 

@@ -15,6 +15,7 @@ created: 2026-03-08
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "基礎設施"
 release_tag: ""
 install_complexity: "medium"
@@ -28,7 +29,7 @@ tags:
 aliases:
   - "OpenMOSS"
   - "uluckyXH/OpenMOSS"
-  - "一個自組織的多代理協作平台，讓 AI 自動管理任務，無需人類介入。"
+  - "一個自我組織的多代理協作平台，讓 AI 自動管理任務。"
 ---
 
 # OpenMOSS
@@ -38,74 +39,86 @@ aliases:
 `個人專案`
 
 > [!summary] 一句話摘要
-> 一個自組織的多代理協作平台，讓 AI 自動管理任務，無需人類介入。
+> 一個自我組織的多代理協作平台，讓 AI 自動管理任務。
+
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (144 stars/day)
+> **適合** 需要自動化多任務管理的企業或團隊，特別是大型項目管理者。
+> **一句話重點** OpenMOSS 的價值在於它能夠讓 AI 自動管理 AI，實現真正的無人值守任務管理。
 
 > [!abstract] 核心創新
-> 這個平台實現了多代理的自組織協作，無需人類介入，提升了任務執行的效率和質量。
+> 這個專案的創新在於其自我組織的多代理系統，能夠完全自動化任務管理。
 
 ## 專案簡介
 
-OpenMOSS 是一個多代理協作平台，能夠讓多個 AI 代理自動協作，進行任務規劃、執行、審查和巡邏。這個系統基於 OpenClaw 構建，通過 cron 定時喚醒代理，實現無人干預的任務管理。與傳統的單代理系統相比，OpenMOSS 允許代理之間分工合作，提升任務的完成率和質量。每個代理都有明確的角色，如規劃者、執行者和審查者，確保任務的高效執行。這個平台的性能依賴於底層的 LLM，能夠根據不同的需求進行擴展和調整。對於需要自動化和高效協作的專案，OpenMOSS 是一個值得探索的解決方案，特別是在需要大規模任務管理的情境下。
+OpenMOSS 是一個自我組織的多代理協作平台，能夠讓多個 AI 代理自動協作，計劃、執行、審查和巡邏任務，完全不需要人類介入。這個系統使用 cron 來定期喚醒代理，並自動分配任務，確保每個交付物都符合質量標準。與傳統的單一代理系統相比，OpenMOSS 的多代理架構能夠分擔責任，並在遇到問題時相互支持，從而提高整體效率。實際使用中，這個平台能夠在短時間內完成大量任務，例如在兩天內自動發布超過 20 篇文章，但需要注意的是，性能依賴於底層的 LLM，建議使用更大的模型來獲得最佳效果。這個專案目前處於穩定階段，適合需要自動化任務的團隊使用，特別是大型項目或需要持續運行的任務。建議在需要高效協作和任務管理時使用，而不適合小型或單一任務的場景。
 
 **技術棧**：`Python` · `Vue` · `TypeScript`
 
 ## 重點功能
 
-- 自動化的多代理協作系統。
-- 無需人類介入的任務管理。
-- 內建質量控制循環，確保交付物符合標準。
-- 具備自動巡邏和恢復功能，提升系統穩定性。
-- 可擴展的技能插件系統，支持多種應用場景。
+- 自我組織協作 — 代理自動喚醒並聲明任務，無需人類干預。
+- 閉環質量控制 — 審查、評分和重做循環確保交付物符合質量標準。
+- 自動巡邏與恢復 — 監控系統，檢測異常並觸發恢復，確保任務不會被卡住。
+- 評分與激勵系統 — 代理有分數和排行榜，直接影響輸出質量。
+- 可插拔技能 — 代理的實際能力由其攜帶的技能決定，具有領域無關性。
 
 ## 快速開始
 
-1. 克隆專案
+1. 克隆庫並進入目錄
 ```bash
-git clone https://github.com/uluckyXH/OpenMOSS.git
+git clone https://github.com/uluckyXH/OpenMOSS.git && cd OpenMOSS
 ```
-2. 進入專案目錄
+2. 安裝依賴
 ```bash
-cd OpenMOSS
+npm install
 ```
 3. 啟動系統
 ```bash
 npm start
 ```
 
+## 程式碼範例
+
+```bash
+# 啟動 OpenMOSS
+npm start
+```
+
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著 AI 技術的進步，對於自動化和協作的需求越來越高，OpenMOSS 正好滿足了這一需求。作者 uluckyXH 在多代理系統方面有豐富的經驗，這個專案的推出吸引了許多對自動化感興趣的開發者。隨著開源社群對於 AI 協作的探索加深，這個專案的關注度也隨之上升。
+> 作者 uluckyXH 專注於 AI 多代理系統的研究，這個專案滿足了對於自動化和高效協作的需求。隨著 AI 技術的進步，越來越多的團隊希望利用多代理系統來提升工作效率，這使得 OpenMOSS 在市場上受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：尋求自動化和高效協作解決方案的開發者和企業。
+**目標受眾**：需要自動化多任務管理的企業或團隊，特別是大型項目管理者。
 
 > [!example] 使用場景
-> - 企業管理者 用它來 自動化任務分配，因為它能夠減少人力成本並提升效率。
-> - 開發團隊 用它來 協調多個 AI 代理的工作，因為它能確保任務的高效執行和質量控制。
-> - 研究人員 用它來 測試多代理系統的協作能力，因為它提供了一個實驗平台來驗證理論。
+> - 內容創作者用它來自動收集和發布新聞，因為這能夠節省大量時間，並保持內容更新。
+> - 開發團隊用它來自動化代碼審查流程，因為這樣可以提高代碼質量，並減少人力成本。
+> - 企業用它來監控和管理多個業務任務，因為這樣可以確保任務按時完成，並提高整體效率。
 
 ## 架構分析
 
-這個專案由多個 AI 代理組成，通過 cron 定時喚醒，實現任務的自動分配和執行。每個代理根據其角色進行協作，形成一個完整的任務管理系統。
+OpenMOSS 採用微服務架構，代理之間通過 API 進行通訊。用戶輸入 → 代理協作 → 輸出結果。關鍵技術決策包括使用 cron 進行任務調度和自動化管理。目錄結構中包含核心的 API 文檔和配置文件。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 實現了無人干預的自動化任務管理。
-> - 多代理系統能夠提升任務的完成率和質量。
-> - 具備自動巡邏和恢復功能，增強系統穩定性。
+> - 能夠完全自動化任務管理，減少人力成本。
+> - 多代理協作提高了任務的靈活性和效率。
+> - 閉環質量控制確保交付物的高質量。
 
 > [!danger] 缺點
-> - 性能依賴於底層的 LLM，可能存在瓶頸。
-> - 需要一定的配置和調整，對新手不太友好。
-> - 目前社群支持和文檔尚在建立中。
+> - 需要較強的硬體支持，無法在低配環境中運行。
+> - 性能依賴於底層 LLM，可能需要高成本的模型。
+> - 系統設置和維護可能較為複雜。
 
 > [!warning] 注意事項
-> - 對於大型任務的性能可能受限於底層 LLM。
-> - 需要一定的配置和調整才能達到最佳效果。
-> - 目前文檔和社群支持仍在建立中。
+> - 需要強大的硬體支持以運行多個代理。
+> - 性能高度依賴於底層的 LLM，較小的模型可能無法達到最佳效果。
+> - 運行多個代理會增加模型的 token 消耗，需要適當設置速率限制。
 
 ## 技術細節
 
@@ -130,10 +143,6 @@ npm start
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@uluckyXH](https://github.com/uluckyXH) | 13 |
-
-## 社群與生態
-
-**社群活躍度**：社群活躍，持續更新中，並提供實時的技術支持。
 
 ## README 摘錄
 
@@ -181,11 +190,47 @@ npm start
 > The entire process requires **zero human intervention**. Agents run autonomously through cron-based wake-ups.
 > 
 > > [!IMPORTANT]
-> > OpenMOSS performance is highly dependent on the underlying LLM. Larger cont
+> > OpenMOSS performance is highly dependent on the underlying LLM. Larger context windows yield better results. We recommend GPT-5.3-Codex or GPT-5.4.
+> 
+> > [!WARNING]
+> > Running multiple agents multiplies model token consumption. Set appropriate rate limits to prevent unexpected costs.
+> 
+> > [!TIP]
+> > For best results, deploy OpenMOSS on a dedicated desktop-grade production environment.
+> 
+> ---
+> 
+> ## 🎬 Live Demo: 1M Reviews
+> 
+> [1M Reviews](https://1m-reviews.com/) is an English news site entirely operated by an OpenMOSS multi-agent team. The only human instruction was:
+> 
+> > **Collect AI / tech / digital / automotive news from the Chinese internet, translate to English, and publish to WordPress.**
+> 
+> **Results:**
+> 
+> - 🚀 **20+ articles published in 2 days**, fully autonomous
+> - 🔄 Agent team **self-resolved issues** through collaboration, maintaining stable progress
+> - 🖼️ When asked to add images, agents autonomously tested the feature in round 10 and applied it to all subsequent tasks
+> - 💬 You can @any agent in the group chat anytime to check on progress
+> 
+> 🔗 **Try it live:**
+> 
+> - [1M Reviews Website](https://1m-reviews.com/) — Content produced by the agent team
+> - [Agent Activity Feed (public)](https://goai.love/feed) — Watch agents work in real-time
+> 
+> ---
+> 
+> ## 🧩 Use Cases
+> 
+> OpenMOSS is a **general-purpose multi-agent orchestration middleware** — it doesn't limit what agents can do. Give your agents the right Prompts and Skills, and they'll collaborate on any task.
+> 
+> ### ✅ Proven
+> 
+> | Scenario                        | How It Works                                                  
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[自動化測試]] · [[機器學習]]
+相關概念：[[多模態]] · [[自動化測試]]
 
 [GitHub](https://github.com/uluckyXH/OpenMOSS)
 

@@ -15,6 +15,7 @@ created: 2026-03-08
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "安全"
 release_tag: ""
 install_complexity: "medium"
@@ -28,7 +29,7 @@ tags:
 aliases:
   - "OpenClaw-PwnKit"
   - "imbue-bit/OpenClaw-PwnKit"
-  - "透過對 LLM 工具調用的黑箱攻擊獲取幾乎任何 OpenClaw 主機的 shell。"
+  - "透過對 LLM 的對抗性工具調用，實現幾乎任何 OpenClaw 主機的遠端代碼執行。"
 ---
 
 # OpenClaw-PwnKit
@@ -36,70 +37,95 @@ aliases:
 **674** stars · **337** stars/天 · 建立 2 天前 · Python · GPL-3.0
 
 > [!summary] 一句話摘要
-> 透過對 LLM 工具調用的黑箱攻擊獲取幾乎任何 OpenClaw 主機的 shell。
+> 透過對 LLM 的對抗性工具調用，實現幾乎任何 OpenClaw 主機的遠端代碼執行。
+
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (337 stars/day)
+> **適合** 專注於 AI 安全測試的安全研究人員和企業安全團隊。
+> **一句話重點** 這個專案展示了如何利用對抗性觸發器在不接觸模型內部的情況下，實現對 LLM 的安全測試，為安全研究提供了新的思路。
 
 > [!abstract] 核心創新
-> 提供了一個黑箱攻擊框架，能夠繞過 LLM 的安全對齊，實現遠程代碼執行。
+> 本專案提出了一種基於 CMA-ES 的黑箱攻擊框架，能夠在無需訪問模型內部的情況下，成功實現對抗性工具調用。
 
 ## 專案簡介
 
-OpenClaw-PwnKit 是一個研究框架，展示如何利用對 LLM 工具調用的黑箱攻擊來實現遠程代碼執行。它的核心機制是通過優化嵌入空間中的對抗觸發器，來繞過 LLM 的安全對齊，迫使代理調用系統級工具。這個專案使用 CMA-ES 算法進行優化，並且不需要對閉源模型的梯度訪問。與其他安全測試工具相比，這個框架專注於對 LLM 的具體攻擊，並提供了詳細的威脅模型和方法概述。這個工具適合安全研究員和開發者，特別是那些對 LLM 安全性有興趣的人，因為它揭示了當前模型的潛在弱點。
+OpenClaw-PwnKit 是一個研究框架，旨在展示如何利用對抗性觸發器繞過大型語言模型（LLM）的安全對齊，並實現遠端代碼執行（RCE）。它的核心機制是通過 CMA-ES（協方差矩陣適應進化策略）在令牌嵌入空間進行無導數優化，生成看似無意義的對抗性觸發器，迫使 LLM 執行系統級工具。這個框架針對封閉源代碼模型（如 GPT-4 和 Claude 3），利用公共可用的分詞器將離散令牌映射到連續潛在空間，進行高效搜尋。與其他安全測試工具相比，OpenClaw-PwnKit 不需要對模型權重或內部激活的訪問，僅需 API 級查詢訪問，這使其在攻擊性測試中更具靈活性。實際使用中，這個工具能夠在不需要深層模型知識的情況下，成功觸發 RCE，但也存在對抗性觸發器的生成需要計算資源的限制。這個專案目前仍在 alpha 階段，適合安全研究人員和專業團隊進行測試和研究。建議在需要測試 LLM 安全性時使用，但不適合用於生產環境或未經授權的測試。
 
-**技術棧**：`Python`
+**技術棧**：`Python 3.8` · `CMA-ES`
 
 ## 重點功能
 
-- 展示對 LLM 工具調用的黑箱攻擊。
-- 利用 CMA-ES 進行對抗觸發器的優化。
-- 支持遠程代碼執行的攻擊模型。
-- 提供詳細的威脅模型和方法概述。
-- 不需要對閉源模型的梯度訪問。
+- 對抗性觸發器生成 — 使用 CMA-ES 在令牌嵌入空間中進行無導數優化，生成有效的對抗性觸發器。
+- 黑箱攻擊框架 — 僅需 API 級查詢訪問，無需對模型內部結構的了解。
+- 支持多種 LLM — 可針對多個封閉源代碼模型進行測試，如 GPT-4 和 Claude 3。
+- 靈活的測試方法 — 能夠在不同的環境中進行安全測試，無需修改原有模型。
+- 詳細的威脅模型 — 提供清晰的攻擊流程和對抗者能力描述，幫助使用者理解潛在風險。
 
 ## 快速開始
 
-1. 克隆專案到本地
+1. 克隆專案
 ```bash
 git clone https://github.com/imbue-bit/OpenClaw-PwnKit.git
 ```
-2. 安裝所需的 Python 套件
+2. 安裝依賴
 ```bash
 pip install -r requirements.txt
 ```
-3. 執行攻擊框架
+3. 運行測試
 ```bash
-python main.py
+python test_attack.py
+```
+
+## 程式碼範例
+
+```python
+# 生成對抗性觸發器
+adversarial_trigger = generate_trigger(model, input_data)
+# 執行攻擊
+execute_attack(adversarial_trigger)
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案的作者在 LLM 安全研究方面有深厚的背景，並且隨著 LLM 技術的普及，對其安全性的關注也在增加。這個工具的出現正好響應了市場對於 LLM 安全測試工具的需求，並且提供了一個具體的攻擊框架，讓研究者能夠深入探索這個領域。
+> 這個專案由於其針對 LLM 的安全性挑戰而受到關注，特別是在 AI 技術快速發展的背景下。作者團隊具備深厚的安全研究背景，切中許多企業對 AI 安全性的迫切需求。隨著 LLM 的廣泛應用，對其安全性測試的需求日益增加，這使得此專案在當前時期特別受到重視。
 
 ## 適合誰使用
 
-**目標受眾**：對 LLM 安全性有興趣的安全研究員和開發者。
+**目標受眾**：專注於 AI 安全測試的安全研究人員和企業安全團隊。
 
 > [!example] 使用場景
-> - 安全研究員 用它來 測試 LLM 工具的安全性，因為可以模擬對抗攻擊來評估風險。
-> - 開發者 用它來 分析 LLM 的弱點，因為能夠深入了解模型的行為。
-> - 學術界 用它來 進行 LLM 安全性研究，因為提供了一個實用的框架來探索新攻擊技術。
+> - 安全研究員用它來測試 LLM 的安全性，因為它能有效模擬對抗性攻擊，並檢測潛在的 RCE 漏洞。
+> - 企業安全團隊用它來評估自家 AI 系統的防護能力，因為這能幫助他們識別和修補安全漏洞，降低風險。
+> - 開發者用它來驗證新開發的 LLM 工具的安全性，因為這樣可以在產品上線前發現潛在的安全問題。
+
+## 架構分析
+
+這是一個基於黑箱攻擊的框架，採用單體架構。用戶輸入 → 生成對抗性觸發器 → 執行攻擊。核心技術決策是使用 CMA-ES 進行優化，專案目錄結構中包含 test_attack.py 和 requirements.txt 等關鍵檔案。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供了一個具體的攻擊框架，易於使用。
-> - 揭示了 LLM 的潛在弱點，對研究有幫助。
-> - 不需要對閉源模型的梯度訪問，降低了使用門檻。
+> - 不需要對模型內部結構的訪問，降低了使用門檻。
+> - 能夠針對多種 LLM 進行測試，靈活性高。
+> - 提供詳細的威脅模型，幫助使用者理解攻擊流程。
 
 > [!danger] 缺點
-> - 需要一定的技術背景來理解和使用。
-> - 存在道德和法律風險，需謹慎使用。
-> - 可能不適用於所有 LLM 模型。
+> - 需要較高的計算資源，對於普通開發者可能不友好。
+> - 目前仍在 alpha 階段，穩定性不足。
+> - 對於某些 LLM 可能無法成功觸發 RCE。
 
 > [!warning] 注意事項
-> - 需要對 LLM 和安全研究有一定的了解。
-> - 可能不適用於所有 LLM 模型。
-> - 存在道德和法律風險，需謹慎使用。
+> - 僅支援特定版本的 LLM，可能不適用於所有模型。
+> - 需要較高的計算資源來生成對抗性觸發器，可能不適合低端設備。
+> - 目前仍在 alpha 階段，API 和功能可能不穩定。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [[microsoft--Counterfit\|microsoft/Counterfit]] | Counterfit 提供了更全面的安全測試框架，支持多種攻擊類型，但需要對模型有更深入的了解。 |
+| [[OpenAI--Adversarial-Toolbox\|OpenAI/Adversarial-Toolbox]] | Adversarial-Toolbox 專注於對抗樣本生成，功能上較為廣泛，但不專注於 LLM 的工具調用安全。 |
 
 ## 技術細節
 
@@ -118,6 +144,11 @@ python main.py
 > | [@koriyoshi2041](https://github.com/koriyoshi2041) | 23 |
 > | [@Fldicoahkiin](https://github.com/Fldicoahkiin) | 2 |
 > | [@Sakayori-Iroha-168](https://github.com/Sakayori-Iroha-168) | 2 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，定期更新和維護。
+**連結**：[文件](https://github.com/imbue-bit/OpenClaw-PwnKit/wiki)
 
 ## README 摘錄
 
@@ -166,11 +197,39 @@ python main.py
 >                                       ▼
 > ┌──────────┐    web/file/API    ┌─────────────┐    tool call    ┌──────────────┐
 > │ Attacker │ ──────────────────▶│  LLM Agent  │ ──────────────▶│  Host System │
-> └──────────┘   injection via    │ (GPT-4 
+> └──────────┘   injection via    │ (GPT-4 etc) │   bash/exec    │  (RCE target)│
+>                honeypot/skill   └─────────────┘                └──────────────┘
+>                                       │
+>                                       ▼
+>                               C2 callback with
+>                              credentials & shell
+> ```
+> 
+> **Adversary capabilities:**
+> 
+> - **No access** to model weights, gradients, or internal activations
+> - **API-level query access** only (chat completions with logprobs)
+> - **Knowledge of the tokenizer** vocabulary (publicly available for most frontier models)
+> 
+> **Assumed target environment:**
+> 
+> - The target is an LLM Agent with tool-calling capabilities (bash execution, web browsing, etc.)
+> - The agent processes external data (web pages, files, user-uploaded content) that may contain adversarial triggers
+> - The agent exposes a webhook or tool-invocation interface, as is common in agent frameworks (e.g., LangChain, AutoGPT). This toolkit specifically targets **OpenClaw**-based agents as the reference implementation
+> 
+> ## Method Overview
+> 
+> ### CMA-ES in Token Embedding Space
+> 
+> The core optimization pipeline operates as follows:
+> 
+> 1. **Surrogate Embedding Extraction** — Extract the token embedding matrix from an open-source surrogate model (Phi-2) to define a continuous search space
+> 2. **PCA Dimensionality Reduction** — Reduce the embedding dimensionality (2560d → 128d per token) via PCA to make CMA-ES tractable at scale
+> 3. **sep-CMA-ES Optimization** — Search over the PCA-reduced space using separ
 
 ## 延伸閱讀
 
-相關概念：[[安全漏洞]] · [[對抗攻擊]] · [[機器學習]]
+相關概念：[[對抗性攻擊]] · [[大型語言模型]] · [[安全漏洞]]
 
 [GitHub](https://github.com/imbue-bit/OpenClaw-PwnKit)
 

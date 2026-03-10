@@ -15,6 +15,7 @@ created: 2026-03-03
 pushed_at: 2026-03-04
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "開發工具"
 release_tag: ""
 install_complexity: "medium"
@@ -40,53 +41,81 @@ aliases:
 > [!summary] 一句話摘要
 > 讓 Claude Code 成為持久的開發夥伴，記住過去的錯誤並自動應用教訓。
 
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (40 stars/day)
+> **適合** 需要在多個專案中使用 Claude Code 並希望提高記憶管理和上下文控制的開發團隊。
+> **一句話重點** 這個專案的價值在於提供了一個結構化的工作流程，使得 Claude Code 能夠成為真正的開發夥伴，而不僅僅是一個智能助手。
+
 > [!abstract] 核心創新
-> 這個專案提供了一個經過實戰考驗的工作流程模板，專注於持久性和上下文管理。
+> 這個專案的創新在於其三層架構設計，有效管理上下文並保持記憶持久性。
 
 ## 專案簡介
 
-這個專案提供了一個針對 Claude Code 的工作流程模板，能夠進行記憶管理、上下文工程和任務路由。其架構分為三層，第一層是自動加載的規則，第二層是按需加載的文檔，第三層是熱數據，確保上下文的有效管理。與其他工具相比，它不僅僅是簡單的配置，而是針對生產環境的實用解決方案，能夠自動保存進度並強制驗證任務完成情況。使用這個模板的開發者可以在長時間的會話中保持上下文不偏離，並能夠有效地路由任務至適當的模型層級。這個專案適合需要高效能和穩定性的開發環境，值得嘗試。
+這個專案提供了一個經過實戰驗證的 Claude Code 工作流程模板，專注於記憶管理、上下文工程和任務路由。它的核心機制是透過三層架構來管理上下文，確保 Claude 在長時間的會話中不會失去焦點，並能夠自動保存進度。技術上，它使用了 Markdown 文件來定義行為、觸發器和記憶清除規則，並透過自動加載和按需加載的方式來優化上下文窗口的使用。與其他 AI 助手相比，這個模板不僅能夠記住過去的錯誤，還能夠在任務完成前進行驗證，避免錯誤的完成聲明。使用者可以在多個專案中輕鬆管理任務和目標，並且支持自定義代理和命令。這個專案非常適合需要長期開發支持的團隊，並且在多個專案中都能保持一致性。對於小型團隊或個人開發者來說，這個工作流程的成熟度和穩定性使其成為值得信賴的選擇。建議在需要長期記憶和上下文管理的情況下使用，但如果只需要簡單的任務執行，則可能顯得過於複雜。
 
 ## 重點功能
 
-- 自動記憶管理，記住過去的錯誤並應用教訓。
-- 上下文工程，確保在長會話中不偏離主題。
-- 任務路由至適當的模型層級，提升處理效率。
-- 強制驗證任務完成情況，避免錯誤的提交。
-- 自動保存進度，防止資料丟失。
+- 三層架構 — 包含自動加載規則、按需文檔和熱數據，優化上下文管理。
+- 自動保存進度 — 在關閉窗口時不會丟失工作，確保持續性。
+- 任務路由 — 根據模型層級自動分配任務，提升效率。
+- 驗證完成 — 在聲明任務完成前進行驗證，避免錯誤。
+- 可自定義代理 — 支持定義多種代理以滿足不同需求。
+
+## 快速開始
+
+1. 克隆模板到本地
+```bash
+git clone https://github.com/runesleo/claude-code-workflow.git
+```
+2. 將模板複製到 Claude Code 配置目錄
+```bash
+cp -r claude-code-workflow/* ~/.claude/
+```
+3. 自定義 CLAUDE.md
+```bash
+打開 ~/.claude/CLAUDE.md 並填寫用戶信息和項目路徑。
+```
+
+## 程式碼範例
+
+```bash
+python agent.py "list all python files in current directory"
+```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者在多個專案中累積了三個月的實際使用經驗，這使得這個工作流程模板經過實戰考驗。隨著開發者對於持久性和上下文管理的需求增加，這個專案正好切中痛點。近來的開發趨勢也讓這類工具受到更多重視。
+> 這個專案由經驗豐富的開發者 runesleo 提供，切中開發者在使用 Claude Code 時面臨的記憶和上下文管理問題。隨著 AI 助手在開發中的普及，這種結構化的工作流程變得越來越重要。它的實用性和生產力提升的潛力使得這個專案在開發者社群中引起了廣泛的關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效能開發流程的軟體工程師和團隊。
+**目標受眾**：需要在多個專案中使用 Claude Code 並希望提高記憶管理和上下文控制的開發團隊。
 
 > [!example] 使用場景
-> - 開發者 用它來 管理長期專案的上下文，因為這樣可以避免重複性錯誤並提高工作效率。
-> - 團隊領導 用它來 路由任務至合適的模型層級，因為這樣可以確保每個任務都能得到最佳處理。
-> - 測試工程師 用它來 自動保存測試進度，因為這樣可以避免因意外關閉而丟失重要數據。
+> - 軟體工程師用它來管理多個專案的開發進度，因為它能自動記錄錯誤並應用學習，避免重複犯錯。
+> - 產品經理用它來追蹤團隊的目標和任務進度，因為它提供了清晰的任務路由和驗證機制，確保每個任務都能正確完成。
+> - DevOps 工程師用它來優化 CI/CD 流程，因為它能夠自動保存進度並在需要時快速恢復，減少了人為錯誤的風險。
 
 ## 架構分析
 
-該專案採用三層架構，第一層為自動加載的規則，第二層為按需加載的文檔，第三層為熱數據，確保上下文的有效管理。
+這是一個前後端分離的架構，核心資料流為：用戶輸入 → Claude Code 處理 → 輸出結果。關鍵技術決策包括使用 Markdown 文件來定義行為和記憶管理，並透過三層架構來優化上下文使用。專案目錄結構清晰，包含 rules、docs 和 memory 等資料夾，分別對應不同的功能層級。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供持久的上下文管理，適合長期專案。
-> - 能夠自動路由任務，提高工作效率。
-> - 強制驗證任務完成，減少錯誤。
+> - 提供持久的記憶管理，避免重複錯誤。
+> - 支持多專案的上下文管理，提升開發效率。
+> - 自動保存進度，減少人為錯誤的風險。
 
 > [!danger] 缺點
-> - 需要一定的學習曲線來熟悉使用。
-> - 可能需要根據具體需求進行調整。
+> - 配置過程較為複雜，對新手不友好。
+> - 不適合簡單任務的快速執行。
+> - 需要對 Claude Code 有深入了解才能發揮最大效益。
 
 > [!warning] 注意事項
-> - 需要對 Claude Code 有基本的了解。
-> - 可能需要根據專案需求進行自定義調整。
+> - 需要對 Claude Code 有一定的了解才能有效使用。
+> - 配置過程可能對新手來說較為繁瑣。
+> - 不支持簡單任務的快速執行，適合長期開發支持。
 
 ## 技術細節
 
@@ -102,6 +131,10 @@ aliases:
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@runesleo](https://github.com/runesleo) | 8 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，主要依賴使用者的實際反饋。
 
 ## README 摘錄
 
@@ -156,11 +189,34 @@ aliases:
 > │   └── memory-flush.md           # Auto-save triggers (never lose progress)
 > │
 > ├── docs/                         # Layer 1: On-demand reference
-> │   ├── agents.md  
+> │   ├── agents.md                 # Multi-model collaboration framework
+> │   ├── behaviors-extended.md     # Extended rules (knowledge base, associations)
+> │   ├── behaviors-reference.md    # Detailed operation guides
+> │   ├── content-safety.md         # AI hallucination prevention system
+> │   ├── scaffolding-checkpoint.md # "Do you really need to self-host?" checklist
+> │   └── task-routing.md           # Model tier routing + cost comparison
+> │
+> ├── memory/                       # Layer 2: Your working state (templates)
+> │   ├── today.md                  # Daily session log
+> │   ├── projects.md               # Cross-project status overview
+> │   ├── goals.md                  # Week/month/quarter goals
+> │   └── active-tasks.json         # Cross-session task registry
+> │
+> ├── skills/                       # Reusable skill definitions
+> │   ├── session-end/SKILL.md              # Auto wrap-up: save progress + commit + record
+> │   ├── verification-before-completion/SKILL.md  # "Run the test. Read the output. THEN claim."
+> │   ├── systematic-debugging/SKILL.md     # 5-phase debugging (recall → root cause → fix)
+> │   ├── planning-with-files/SKILL.md      # File-based planning for complex tasks
+> │   └── experience-evolution/SKILL.md     # Auto-accumulate project knowledge
+> │
+> ├── agents/                       # Custom agent definitions
+> │   ├── pr-reviewer.md            # Code review agent
+> │   ├── security-reviewer.md      # OWASP security scanning agent
+> │   └── performance-analyzer.md   # Performance bottleneck analysis age
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[機器學習]] · [[多模態]]
+相關概念：[[Agent 框架]] · [[CI/CD]] · [[自動化測試]]
 
 [GitHub](https://github.com/runesleo/claude-code-workflow)
 

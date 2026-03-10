@@ -7,14 +7,15 @@ language: Python
 license: N/A
 description: "The largest open-source medical AI skills library for OpenClaw🦞."
 homepage: ""
-stars: 901
-stars_per_day: 451
+stars: 903
+stars_per_day: 452
 forks: 105
 open_issues: 2
 created: 2026-03-08
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "AI/ML"
 release_tag: ""
 install_complexity: "medium"
@@ -34,84 +35,96 @@ tags:
 aliases:
   - "OpenClaw-Medical-Skills"
   - "FreedomIntelligence/OpenClaw-Medical-Skills"
-  - "提供869種醫療AI技能，讓OpenClaw變成強大的醫學研究助手。"
+  - "提供869種醫療AI技能，讓OpenClaw成為強大的醫學研究助手。"
 ---
 
 # OpenClaw-Medical-Skills
 
-**901** stars · **451** stars/天 · 建立 2 天前 · Python · 未標註授權
+**903** stars · **452** stars/天 · 建立 2 天前 · Python · 未標註授權
 
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供869種醫療AI技能，讓OpenClaw變成強大的醫學研究助手。
+> 提供869種醫療AI技能，讓OpenClaw成為強大的醫學研究助手。
+
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (452 stars/day)
+> **適合** 需要在醫療和生物研究中使用AI助手的研究團隊。
+> **一句話重點** 這個專案展示了如何通過開源協作，將醫療AI技能整合成一個強大的工具，提升研究效率。
 
 > [!abstract] 核心創新
-> 這個專案是最大的開源醫療AI技能庫，涵蓋廣泛的生物醫學和臨床研究技能。
+> 這個專案提供了最全面的醫療AI技能庫，整合了多個開源資源。
 
 ## 專案簡介
 
-這個專案透過869個精心策劃的AI技能，讓OpenClaw能夠處理各種生物醫學和臨床研究的需求。每個技能都是自包含的模組，能連接到真實的數據庫和API，並生成結構化的臨床或科學相關輸出。與其他通用AI工具相比，OpenClaw Medical Skills提供了針對醫學的專業知識和工作流程，能夠進行PubMed查詢、基因組學分析等。使用者可以期待更高的準確性和針對性，尤其在醫療文檔和藥物智能方面。這個專案適合需要醫學研究支持的團隊，並且由於其開源性質，能夠持續擴展和更新。整體來看，這是一個值得嘗試的成熟工具，特別適合醫療和生物技術領域的專案。
+OpenClaw Medical Skills 是一個包含869個AI技能的開源庫，專為OpenClaw和NanoClaw框架設計，這些技能涵蓋了生物醫學和臨床研究的各個方面。每個技能都是一個自包含的模組，包含專業知識、連接真實數據庫和API，並能生成結構化的臨床或科學相關輸出。這個庫的獨特之處在於它整合了來自12個以上開源技能庫的技能，讓AI代理具備類似專業研究團隊的能力。與其他醫療AI工具相比，OpenClaw Medical Skills提供了更全面的功能，包括臨床文檔生成、基因組學支持和藥物智能等。使用者可以輕鬆安裝所需的技能，並透過OpenClaw的接口進行查詢和操作。這個專案適合需要進行醫學研究的團隊，並且目前處於穩定階段，值得立即使用。對於不需要全面醫療功能的小型項目，則可能不需要這麼龐大的技能集合。
 
-**技術棧**：`Python` · `Jupyter Notebook` · `TeX` · `Shell` · `R` · `HTML` · `JavaScript` · `CSS` · `TypeScript` · `Docker`
+**技術棧**：`Python` · `Jupyter Notebook` · `Docker`
 
 ## 重點功能
 
-- 提供869種專業醫療AI技能。
-- 支持PubMed和ClinicalTrials.gov的查詢。
-- 具備藥物智能功能，如藥物相互作用預測。
-- 能生成結構化的臨床文檔，如SOAP筆記。
-- 涵蓋基因組學和生物信息學的分析能力。
+- 869個醫療技能 — 涵蓋臨床、基因組學、藥物發現等多個領域。
+- 自包含模組 — 每個技能都包含專業知識和工作流程，便於使用。
+- 連接真實數據庫 — 能夠查詢PubMed、ClinicalTrials.gov等資料庫。
+- 結構化輸出 — 生成臨床文檔和科學報告，符合醫療標準。
+- 支持多種安裝方式 — 提供多種方法安裝技能，靈活性高。
 
 ## 快速開始
 
-1. 安裝OpenClaw
+1. 克隆這個庫
 ```bash
-git clone https://github.com/openclaw/openclaw
+git clone https://github.com/MedClaw-Org/OpenClaw-Medical-Skills.git
 ```
-2. 下載OpenClaw Medical Skills
+2. 安裝到工作區的技能目錄
 ```bash
-git clone https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills
+cp -r OpenClaw-Medical-Skills/skills/* /skills/
 ```
-3. 啟動OpenClaw
+3. 驗證安裝
 ```bash
-openclaw start
+ask your agent 'What medical and clinical skills do you have available?'
+```
+
+## 程式碼範例
+
+```bash
+# 安裝臨床報告技能
+cp -r OpenClaw-Medical-Skills/skills/clinical-reports ~/.openclaw/skills/
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案由多位貢獻者共同開發，背景涵蓋醫學和AI領域，切中醫療AI技能的需求。隨著AI在醫療領域的應用逐漸增加，這個專案提供的專業技能庫正好滿足了市場的需求。近年來，醫療數據的開放和共享也促進了這類工具的發展，讓其在當前的環境中變得更加重要。
+> 這個專案由多位貢獻者共同開發，背景涵蓋醫療和AI領域，切中醫療AI技能整合的需求。隨著AI在醫療領域的應用日益增長，這個專案的推出正好滿足了開發者對於高效能醫療AI工具的渴望。
 
 ## 適合誰使用
 
-**目標受眾**：醫療和生物技術領域的研究人員和開發者。
+**目標受眾**：需要在醫療和生物研究中使用AI助手的研究團隊。
 
 > [!example] 使用場景
-> - 醫生用它來查詢最新的臨床試驗資料，因為這樣能快速獲得準確的醫學資訊。
-> - 研究人員用它來進行基因組學分析，因為它提供了現成的RNA-seq和GWAS管道。
-> - 藥物開發團隊用它來獲取藥物相互作用預測，因為這能提高藥物研發的效率。
+> - 醫療研究人員用它來查詢PubMed和ClinicalTrials.gov的資料，因為這樣能快速獲取最新的臨床研究資訊，節省了手動查詢的時間。
+> - 生物資訊學家用它來執行RNA-seq分析，因為這個技能提供了現成的數據處理管道，能夠提高工作效率。
+> - 藥物開發團隊用它來進行藥物相互作用預測，因為這樣可以利用內建的藥物智能技能，減少錯誤和提高準確性。
 
 ## 架構分析
 
-專案基於OpenClaw架構，將各種醫療技能模組化，並能夠通過API和數據庫進行交互。用戶透過OpenClaw平台訪問這些技能，實現醫療數據的查詢和分析。
+該專案採用前後端分離的架構，使用者透過OpenClaw框架與技能庫進行互動。用戶輸入 → OpenClaw處理 → 返回結構化的醫療或科學輸出。核心技術決策在於使用自包含的技能模組，並支持多種安裝方式。專案目錄結構包含skills資料夾，存放各種技能模組。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供專業的醫療AI技能，適合多種研究需求。
-> - 開源社群支持，持續更新和擴展。
-> - 能夠連接到多個數據庫，提供即時的醫學資訊。
+> - 提供全面的醫療AI技能，適合多種研究需求。
+> - 開源社群支持，持續更新和擴展技能庫。
+> - 靈活的安裝選項，便於用戶根據需求選擇。
 
 > [!danger] 缺點
 > - 需要一定的技術背景來安裝和配置。
-> - 對於某些技能，可能需要額外的數據庫訪問權限。
-> - 目前技能數量雖多，但仍有擴展空間。
+> - 對於小型項目來說，技能數量可能過於龐大。
+> - 部分技能可能需要額外的數據源或API授權。
 
 > [!warning] 注意事項
-> - 需要OpenClaw或NanoClaw環境運行。
-> - 對於某些技能，可能需要特定的數據庫訪問權限。
-> - 尚未涵蓋所有醫療領域的技能，持續更新中。
+> - 需要安裝OpenClaw或NanoClaw。
+> - 技能數量龐大，可能對小型項目造成負擔。
+> - 部分技能可能需要特定的數據源或API授權。
 
 ## 技術細節
 
@@ -144,8 +157,8 @@ openclaw start
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，持續有新技能和功能的開發。
-**連結**：[文件](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills/wiki)
+**社群活躍度**：社群活躍，持續有貢獻者更新技能庫。
+**連結**：[文件](https://github.com/MedClaw-Org/OpenClaw-Medical-Skills)
 
 ## README 摘錄
 
@@ -197,7 +210,67 @@ openclaw start
 > 
 > ### Requirements
 > 
-> - [OpenClaw](https://github.com/openclaw/openclaw) installed and running, **or** [NanoClaw](https://git
+> - [OpenClaw](https://github.com/openclaw/openclaw) installed and running, **or** [NanoClaw](https://github.com/MedClaw-Org) as an alternative
+> - Git (for cloning this repo)
+> 
+> ---
+> 
+> ### For OpenClaw Users
+> 
+> OpenClaw loads skills from two locations:
+> 
+> | Priority | Path | Scope |
+> |---|---|---|
+> | High | `/skills/` | Per-workspace (recommended) |
+> | Low | `~/.openclaw/skills/` | Global, shared across all agents |
+> 
+> #### Method 1 — Clone and Copy (Recommended)
+> 
+> ```bash
+> # Clone this repository
+> git clone https://github.com/MedClaw-Org/OpenClaw-Medical-Skills.git
+> 
+> # Install to your workspace skills directory
+> cp -r OpenClaw-Medical-Skills/skills/* /skills/
+> 
+> # Or install globally (available to all agents)
+> cp -r OpenClaw-Medical-Skills/skills/* ~/.openclaw/skills/
+> ```
+> 
+> Skills are picked up automatically on the next session. No restart needed.
+> 
+> #### Method 2 — ClawHub CLI
+> 
+> If you use the [ClawHub registry](https://clawhub.com), you can search and install individual skills from there. For bulk install from this collection, Method 1 is faster.
+> 
+> ```bash
+> npm install -g clawhub
+> clawhub install     # install a single skill
+> clawhub update --all            # update all installed skills
+> ```
+> 
+> #### Method 3 — Configure Extra Directories
+> 
+> To point OpenClaw at a cloned copy of this repo permanently, add it to `~/.openclaw/openclaw.json`:
+> 
+> ```json
+> {
+>   "skills": {
+>     "load": {
+>       "extraDirs": ["/path/to/OpenClaw-Medical-Skills/skills"]
+>     }
+>   }
+> }
+> ```
+> 
+> This mounts the entire collection without copying files.
+> 
+> #### Method 4 — Install Selected Skills Only
+> 
+> Pick skills relevant to your domain:
+> 
+> ```bash
+> # Examp
 
 ## 延伸閱讀
 

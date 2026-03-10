@@ -7,16 +7,17 @@ language: TypeScript
 license: N/A
 description: "Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. The knowledge is available to all but rarely aggregated in the open, until now."
 homepage: ""
-stars: 1368
+stars: 1370
 stars_per_day: 274
 forks: 148
-open_issues: 2
+open_issues: 3
 created: 2026-03-05
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "其他"
-release_tag: "v0.5.0"
+release_tag: "v0.6.0"
 install_complexity: "medium"
 status: to-review
 my_rating: 0
@@ -28,98 +29,109 @@ tags:
 aliases:
   - "Shadowbroker"
   - "BigBodyCobain/Shadowbroker"
-  - "提供即時的全球開源情報，整合多種數據來源於一個介面。"
+  - "提供即時的全球開源情報，追蹤各類事件與物體。"
 ---
 
 # Shadowbroker
 
 **1.4k** stars · **274** stars/天 · 建立 5 天前 · TypeScript · 未標註授權
 
-`v0.5.0`
+`v0.6.0`
 
 > [!summary] 一句話摘要
-> 提供即時的全球開源情報，整合多種數據來源於一個介面。
+> 提供即時的全球開源情報，追蹤各類事件與物體。
+
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (274 stars/day)
+> **適合** 需要即時全球情報的分析師、研究人員和安全專家。
+> **一句話重點** ShadowBroker 將多領域的開源情報整合到一個平台，讓即時追蹤全球事件變得更簡單。
 
 > [!abstract] 核心創新
-> 提供即時的多領域開源情報，並以地圖形式呈現，讓使用者能夠快速掌握全球動態。
+> ShadowBroker 提供了一個統一的即時情報平台，能夠聚合多領域的開源數據，並以直觀的方式展示。
 
 ## 專案簡介
 
-它讓使用者能夠在一個統一的界面上即時追蹤全球的開源情報。這個平台使用 Next.js 和 FastAPI，整合了航空、海洋、地震等多個領域的數據，並以地圖形式呈現。與其他情報工具相比，Shadowbroker 提供了更為直觀的視覺化介面，並且能夠即時更新，讓使用者隨時掌握最新動態。使用者可以追蹤私人飛機、軍事航班及海上交通，並且能夠即時獲取地震和災害的資訊。這個工具非常適合分析師和研究人員，特別是在需要快速反應的情境下。整體來說，Shadowbroker 是一個功能強大且易於使用的情報平台，值得各類使用者嘗試。
+ShadowBroker 是一個即時的多域開源情報平台，能夠聚合來自多個開源情報來源的數據，並在統一的介面上顯示。使用者可以透過 `git clone` 下載專案，並使用 `./compose.sh up -d` 指令啟動 Docker 環境，快速查看即時的全球活動。該平台使用 Next.js 和 FastAPI 開發，支援航空、海洋、衛星、地緣政治等多種追蹤功能，並能夠即時更新。與其他情報平台相比，ShadowBroker 提供了更為直觀的視覺化介面和多樣化的數據來源，適合分析師和研究人員使用。該工具的效能在處理大量即時數據上表現良好，但對於某些特定數據的準確性可能有所限制。這個專案目前處於穩定階段，適合需要即時情報的團隊和個人使用。建議在需要全面追蹤全球事件時使用，但若對數據準確性有高要求，則需謹慎考量。
 
-**技術棧**：`Next.js` · `MapLibre GL` · `FastAPI` · `Python`
+**技術棧**：`Next.js` · `FastAPI` · `Python`
 
 ## 重點功能
 
-- 即時航空追蹤，涵蓋商業和私人飛機。
-- 海洋交通監控，提供船隻的即時位置。
-- 地震和災害即時更新，幫助用戶快速反應。
-- 多種數據來源整合，提供全面的情報視圖。
-- 友好的用戶界面，易於操作和理解。
+- 即時航空追蹤 — 追蹤超過 5,000 架商業航班和私人飛機。
+- 海洋交通監控 — 提供 25,000 多艘船隻的即時 AIS 數據。
+- 衛星運行追蹤 — 追蹤 2,000 多顆衛星的即時位置，無需 API 金鑰。
+- 地緣政治事件聚合 — 提供即時的全球衝突事件數據，並可自定義信息源。
+- 高解析度衛星影像 — 提供 NASA 和 Esri 的衛星影像，支持即時查看。
 
 ## 快速開始
 
-1. 克隆專案並進入目錄
+1. 克隆專案
 ```bash
 git clone https://github.com/BigBodyCobain/Shadowbroker.git
 ```
-2. 啟動 Docker 容器
+2. 進入專案目錄
+```bash
+cd Shadowbroker
+```
+3. 啟動 Docker 環境
 ```bash
 ./compose.sh up -d
 ```
-3. 在瀏覽器中打開儀表板
+
+## 程式碼範例
+
 ```bash
-http://localhost:3000
+./compose.sh up -d
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 開發者 BigBodyCobain 專注於開源情報的整合，這正好符合當前對即時資訊的需求。隨著全球事件的頻繁發生，對於即時追蹤和分析的需求越來越高，Shadowbroker 提供了一個集中化的解決方案。近期的更新也讓使用者看到持續的改進，進一步提升了其吸引力。
+> 作者 BigBodyCobain 具備豐富的開源開發經驗，並專注於信息聚合和可視化。隨著全球事件的增多，對於即時情報的需求也在上升，這個專案正好切中這一需求，並且在 GitHub 上獲得了廣泛的關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要即時開源情報的分析師和研究人員。
+**目標受眾**：需要即時全球情報的分析師、研究人員和安全專家。
 
 > [!example] 使用場景
-> - 安全分析師 用它來 追蹤全球的軍事活動，因為它提供即時的航班和船隻資訊。
-> - 研究人員 用它來 監控地震和災害，因為即時更新能幫助他們快速反應。
-> - 愛好者 用它來 追蹤私人飛機，因為它能顯示高淨值個人的航班動態。
+> - 情報分析師用它來追蹤全球航班動態，因為能夠即時獲取高達 5,000 架飛機的位置信息。
+> - 研究人員用它來監控衛星運行，因為提供了 2,000 多顆衛星的即時位置數據，無需 API 金鑰。
+> - 安全專家用它來分析地緣政治事件，因為能夠聚合來自 GDELT 的衝突事件數據，並提供即時更新。
 
 ## 架構分析
 
-該專案採用前後端分離架構，前端使用 Next.js 進行視覺化，後端使用 FastAPI 提供數據支持，並整合多個開源情報來源。
+該專案採用前後端分離的架構，前端使用 Next.js，後端使用 FastAPI。用戶輸入 → 前端請求後端數據 → 後端聚合數據並返回給前端。關鍵技術決策包括使用 MapLibre GL 進行地圖可視化，並整合多個開源數據來源。目錄結構中，`compose.sh` 是啟動服務的關鍵檔案。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 即時更新，讓使用者隨時掌握全球動態。
-> - 多領域數據整合，提供全面的情報視圖。
-> - 友好的用戶界面，易於操作。
+> - 即時更新的全球情報，提供多領域的數據聚合。
+> - 直觀的可視化介面，方便用戶快速獲取信息。
+> - 支援多種數據來源，靈活性高。
 
 > [!danger] 缺點
-> - 需要 Docker 環境，對於某些用戶來說可能不方便。
-> - 某些數據來源的即時性可能受到影響。
-> - 初次設置可能需要一些技術知識。
+> - 需要 Docker 環境，對於不熟悉的用戶可能有學習曲線。
+> - 對於某些數據的準確性需進一步驗證，可能存在延遲。
+> - 在低帶寬環境下，數據更新速度可能受到影響。
 
 > [!warning] 注意事項
 > - 需要 Docker 或 Podman 環境才能運行。
-> - 某些數據來源可能會受到限制，影響即時性。
-> - 對於非技術用戶，初次設置可能需要一些學習曲線。
+> - 對於某些數據的準確性可能存在限制，需進一步驗證。
+> - 在低帶寬環境下可能影響即時數據更新的速度。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| FlightAware | FlightAware 主要專注於商業航班，而 Shadowbroker 提供更全面的情報視圖。 |
-| MarineTraffic | MarineTraffic 專注於海洋交通，Shadowbroker 則整合多個領域的數據。 |
+| [[OpenSkyNetwork--OpenSky-API\|OpenSkyNetwork/OpenSky-API]] | OpenSky API 專注於航空數據，但不提供其他領域的即時情報聚合。 |
+| [[GDELT--GDELT\|GDELT/GDELT]] | GDELT 提供全球事件數據，但缺乏可視化和即時更新的功能。 |
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 148 |
-| Open Issues | 2 |
+| Open Issues | 3 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-05 |
 | Repo 大小 | 103.1 MB |
@@ -135,16 +147,11 @@ http://localhost:3000
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@anoracleofra-code](https://github.com/anoracleofra-code) | 44 |
+> | [@anoracleofra-code](https://github.com/anoracleofra-code) | 45 |
 > | [@BigBodyCobain](https://github.com/BigBodyCobain) | 21 |
 > | [@ttulttul](https://github.com/ttulttul) | 1 |
 
-**最新版本**：v0.5.0 — ShadowBroker v0.5.0 (2026-03-10)
-
-## 社群與生態
-
-**社群活躍度**：每週有穩定的更新，社群活躍度良好。
-**連結**：[文件](https://github.com/BigBodyCobain/Shadowbroker#readme)
+**最新版本**：v0.6.0 — ShadowBroker v0.6.0 (2026-03-10)
 
 ## README 摘錄
 
@@ -207,7 +214,31 @@ http://localhost:3000
 > 
 > * **AIS Vessel Stream** — 25,000+ vessels via aisstream.io WebSocket (real-time)
 > * **Ship Classification** — Cargo, tanker, passenger, yacht, military vessel types with color-coded icons
-> * **Carrier Strike Group Tracker** — All 11 active US Navy aircraft carriers with OSINT-estima
+> * **Carrier Strike Group Tracker** — All 11 active US Navy aircraft carriers with OSINT-estimated positions
+>   * Automated GDELT news scraping for carrier movement intelligence
+>   * 50+ geographic region-to-coordinate mappings
+>   * Disk-cached positions, auto-updates at 00:00 & 12:00 UTC
+> * **Cruise & Passenger Ships** — Dedicated layer for cruise liners and ferries
+> * **Clustered Display** — Ships cluster at low zoom with count labels, decluster on zoom-in
+> 
+> ### 🛰️ Space & Satellites
+> 
+> * **Orbital Tracking** — Real-time satellite positions via CelesTrak TLE data + SGP4 propagation (2,000+ active satellites, no API key required)
+> * **Mission-Type Classification** — Color-coded by mission: military recon (red), SAR (cyan), SIGINT (white), navigation (blue), early warning (magenta), commercial imaging (green), space station (gold)
+> 
+> ### 🌍 Geopolitics & Conflict
+> 
+> * **Global Incidents** — GDELT-powered conflict event aggregation (last 8 hours, ~1,000 events)
+> * **Ukraine Frontline** — Live warfront GeoJSON from DeepState Map
+> * **SIGINT/RISINT News Feed** — Real-time RSS aggregation from multiple intelligence-focused sources with user-customizable feeds (up to 20 sources, configurable priority weights 1-5)
+> * **Region Dossier** — Right-click anywhere on the map for:
+>   * Country profile (population, capital, languages, currencies, area)
+>   * Head of state & government type (Wikidata SPARQL)
+>   * Local Wikipedia summary with thumbnail
+> 
+> ### 🛰️ Satellite Imagery
+> 
+> * **NASA GIBS (MODIS Terra)** — Daily true-color satellite imagery overlay with 30-day time slider, play/pause animation, and
 
 ## 延伸閱讀
 

@@ -7,14 +7,15 @@ language: Rust
 license: MIT
 description: "基于pi-mono，rust轻量化版本"
 homepage: ""
-stars: 617
-stars_per_day: 103
+stars: 589
+stars_per_day: 98
 forks: 69
 open_issues: 0
 created: 2026-03-04
 pushed_at: 2026-03-05
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "開發工具"
 release_tag: ""
 install_complexity: "medium"
@@ -23,39 +24,44 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - 開發工具
-  - rust
+  - "category/開發工具"
+  - "lang/rust"
 aliases:
   - "pi-rs"
   - "jshachm/pi-rs"
-  - "輕量化的 Rust 版本 AI 編程助手，支援多種 LLM 提供商。"
+  - "提供一個輕量級的終端 AI 編程助手，支持多種 LLM 提供商。"
 ---
 
 # pi-rs
 
-**617** stars · **103** stars/天 · 建立 6 天前 · Rust · MIT
+**589** stars · **98** stars/天 · 建立 6 天前 · Rust · MIT
 
 `個人專案`
 
 > [!summary] 一句話摘要
-> 輕量化的 Rust 版本 AI 編程助手，支援多種 LLM 提供商。
+> 提供一個輕量級的終端 AI 編程助手，支持多種 LLM 提供商。
+
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (98 stars/day)
+> **適合** 需要一個輕量級且高效的終端 AI 編程助手的開發者。
+> **一句話重點** 這個專案讓終端編程助手變得輕量且高效，適合需要快速編寫代碼的開發者。
 
 > [!abstract] 核心創新
-> Pi-rs 提供輕量化的 AI 編程助手，支援多種 LLM 提供商，並具備可擴展性。
+> 提供一個輕量級的終端 AI 編程助手，支持多種 LLM 提供商。
 
 ## 專案簡介
 
-Pi-rs 是一個用 Rust 開發的終端 AI 編程助手，提供交互式的 TUI 界面，支援多種大型語言模型（LLM）供應商。它的設計強調輕量化和可擴展性，內建多種工具來協助編程任務，包括文件操作和會話管理。與其他編程助手相比，Pi-rs 提供了更靈活的技能系統，使用者可以自定義 AI 的行為，並且具備上下文壓縮的功能以提升對話效率。這個工具特別適合需要高效編程輔助的開發者，尤其是在使用 Rust 語言的環境中。
+這個專案是一個用 Rust 編寫的終端 AI 編程助手，旨在提供交互式的編程體驗。用戶可以透過簡單的命令行指令與 AI 進行對話，並且支持多種 LLM 提供商如 OpenAI 和 Anthropic。它的功能包括會話管理、工具系統和技能系統，讓用戶能夠自定義 AI 的行為。與其他編程助手相比，這個工具的輕量化設計使其在資源使用上更為高效，並且支持在沙箱環境中運行，保護主機系統的安全。這個專案目前處於穩定階段，適合需要高效編程助手的開發者使用。建議在需要快速編寫代碼或進行代碼分析時使用，而在需要更複雜的編程環境時可能不夠靈活。
 
 **技術棧**：`Rust`
 
 ## 重點功能
 
-- 支持多種 LLM 提供商，靈活性高。
-- 內建多種文件操作工具，提升編程效率。
-- 交互式 TUI 界面，使用體驗佳。
-- 支持自定義技能，調整 AI 行為。
-- 具備上下文壓縮功能，提升對話效率。
+- 多提供商支持 — 支持 OpenAI、Anthropic 等多種 LLM 提供商。
+- 交互式 TUI — 使用 ratatui 构建的终端用户界面，提供良好的用户体验。
+- 工具系統 — 內建文件操作工具，如 read、write、edit 等，方便用戶操作。
+- 會話管理 — 基於 JSONL 的樹形結構，支持分支會話。
+- 技能系統 — 允許用戶加載自定義技能以定制 AI 行為。
 
 ## 快速開始
 
@@ -65,51 +71,49 @@ git clone https://github.com/yourusername/pi-rs.git
 ```
 2. 構建專案
 ```bash
-cargo build --release
+cd pi-rs && cargo build --release
 ```
-3. 設置 API 金鑰
+3. 運行助手
 ```bash
-export MOONSHOT_API_KEY='your-api-key'
+./target/release/pi --model moonshot-v1-8k "你好，你会做什么？"
 ```
-4. 運行助手
+
+## 程式碼範例
+
 ```bash
-./target/release/pi --model moonshot-v1-8k '你好，你會做什麼？'
+./target/release/pi --model moonshot-v1-8k "列出当前目录的文件"
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 jshachm 專注於 Rust 生態系統的發展，這個專案切合了對於輕量化 AI 工具的需求，尤其是在高效能和可擴展性方面。隨著 Rust 語言的流行，這個工具的推出正好滿足了開發者對於編程助手的期待。
+> 作者背景是 Rust 開發者，專注於終端工具的開發，滿足了開發者對輕量級編程助手的需求。隨著 Rust 語言的流行，這個工具的受歡迎程度也在上升。
 
 ## 適合誰使用
 
-**目標受眾**：對於需要高效編程輔助的開發者和學生。
+**目標受眾**：需要一個輕量級且高效的終端 AI 編程助手的開發者。
 
 > [!example] 使用場景
-> - Rust 開發者 用它來 提高編程效率，因為可以快速獲得代碼建議和操作。
-> - 學生 用它來 學習編程，因為提供即時的反饋和指導。
-> - 專案經理 用它來 管理開發進度，因為能夠輕鬆記錄和回顧會話。
-
-## 架構分析
-
-專案採用終端用戶界面架構，使用 Rust 語言開發，並整合多種 LLM 提供商。資料流是 用戶輸入 → AI 模型推理 → 返回建議和操作。
+> - 後端開發者用它來快速生成代碼片段，因為可以直接在終端中與 AI 互動，節省時間。
+> - 系統管理員用它來執行命令行操作，因為內建的工具系統可以簡化日常任務。
+> - 學生用它來學習編程，因為可以在對話中獲得即時的幫助和反饋。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 輕量化設計，適合高效能需求。
-> - 支持多種 LLM，靈活性高。
-> - 具備自定義技能系統，滿足個性化需求。
+> - 輕量級設計，資源占用低。
+> - 支持多種 LLM 提供商，靈活性高。
+> - 內建工具系統，方便用戶操作。
 
 > [!danger] 缺點
-> - 需要一定的 Rust 環境知識。
-> - 對於新手使用者可能有學習曲線。
-> - 功能仍在開發中，可能不夠穩定。
+> - 需要一定的技術背景才能充分利用。
+> - 命令行界面對於不熟悉的用戶可能不友好。
+> - 功能可能不如大型 IDE 完整。
 
 > [!warning] 注意事項
-> - 需要安裝 Rust 環境。
-> - 對於新手使用者可能有一定學習曲線。
-> - 某些功能可能在未來版本中變動。
+> - 需要安裝 Rust 環境進行構建。
+> - 對於新手用戶，命令行操作可能有一定學習曲線。
+> - 目前僅支持特定的 LLM 提供商，對於其他提供商的支持可能有限。
 
 ## 技術細節
 
@@ -125,10 +129,6 @@ export MOONSHOT_API_KEY='your-api-key'
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@jshachm](https://github.com/jshachm) | 1 |
-
-## 社群與生態
-
-**社群活躍度**：社群活躍，持續更新中，期待更多用戶反饋。
 
 ## README 摘錄
 
@@ -240,21 +240,142 @@ export MOONSHOT_API_KEY='your-api-key'
 > | `ANTHROPIC_API_KEY` | Anthropic API 密钥 |
 > | `GOOGLE_API_KEY` | Google AI API 密钥 |
 > | `MOONSHOT_API_KEY` | Moonshot（月之暗面）API 密钥 |
-> | `OLLAMA_BASE_URL` | Ollama 基础 URL（默
+> | `OLLAMA_BASE_URL` | Ollama 基础 URL（默认：http://localhost:11434） |
+> | `AZURE_OPENAI_API_KEY` | Azure OpenAI API 密钥 |
+> | `AZURE_OPENAI_ENDPOINT` | Azure OpenAI 端点 |
+> | `MISTRAL_API_KEY` | Mistral API 密钥 |
+> | `GROQ_API_KEY` | Groq API 密钥 |
+> 
+> ## 工具
+> 
+> | 工具 | 说明 |
+> |------|------|
+> | `read` | 从文件系统读取文件 |
+> | `write` | 向文件系统写入文件 |
+> | `edit` | 使用查找/替换编辑文件 |
+> | `bash` | 执行 shell 命令 |
+> | `grep` | 在文件中搜索模式 |
+> | `find` | 按名称查找文件 |
+> | `ls` | 列出目录内容 |
+> | `epkg` | 多源软件包管理器 |
+> 
+> ### epkg 工具
+> 
+> 集成 [epkg](https://atomgits.com/openeuler/epkg) 多源软件包管理器，支持从多个 Linux 发行版安装软件包（RPM、DEB、Alpine、Arch、Conda）。
+> 
+> ```bash
+> # 使用 epkg 搜索包
+> ./target/release/pi --tools epkg "搜索 vim 包"
+> 
+> # 使用 epkg 安装包
+> ./target/release/pi --tools epkg "在 openeuler 环境安装 nginx"
+> ```
+> 
+> 支持的子命令：`install`, `remove`, `update`, `upgrade`, `search`, `info`, `list`, `env`, `run`, `history`, `restore`, `gc`, `repo`, `self`, `build`
+> 
+> ## 技能系统
+> 
+> 技能允许你为特定任务定制 AI 的行为。详见 [skills](docs/skills.md)。
+> 
+> ### 创建技能
+> 
+> ```
+> my-skill/
+> ├── skill.json    # 技能清单
+> └── content.md   # 技能内容（系统提示词）
+> ```
+> 
+> ### skill.json 格式
+> 
+> ```json
+> {
+>   "name": "my-skill",
+>   "version": "1.0.0",
+>   "description": "技能描述",
+>   "triggers": ["触发词1", "触发词2"],
+>   "variables": []
+> }
+> ```
+> 
+> ### content.md
+> 
+> 包含系统提示词，当技能被触发时会预先添加到对话中。
+> 
+> ## 工具
+> 
+> | 工具 | 说明 |
+> |------|------|
+> | `read` | 从文件系统读取文件 |
+> | `write` | 向文件系统写入文件 |
+> | `edit` | 使用查找/替换编辑文件 |
+> | `bash` | 执行 shell 命令 |
+> | `grep` | 在文件中搜索模式 |
+> | `find` | 按名称查找文件 |
+> | `ls` | 列出目录内容 |
+> 
+> ### epkg 工具
+> 
+> 集成 [epkg](https://atomgits.com/openeuler/epkg) 多源软件包管理器。
+> 
+> ### 沙箱模式
+> 
+> 支持在隔离的沙箱环境中运行，保护主机系统。
+> 
+> ```bash
+> # 启用沙箱（必需指定项目路径）
+> pi-rs --sandbox /m
 
 ## 延伸閱讀
 
-相關概念：[[AI 編程助手]] · [[Rust 語言]] · [[終端用戶界面]]
-
 [GitHub](https://github.com/jshachm/pi-rs)
 
+## 相關收錄
+
+> [!note]- 同分類的其他專案
+> ```dataview
+> LIST
+> FROM "Repos"
+> WHERE category = "開發工具" AND file.name != "jshachm--pi-rs"
+> SORT stars DESC
+> LIMIT 8
+> ```
 
 ---
 
 ## 個人筆記
 
-> [!question]+ 我的想法
-> _在此寫下你的想法、使用心得、跟其他工具的比較..._
+> [!question]+ 快速評估（第一次看時填寫）
+> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> 
+> **跟我的工作相關嗎？** 是 / 否 / 間接相關
+> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
+> **第一印象**：_一句話_
+
+> [!success]- 深度評估（試用後填寫）
+> 
+> | 項目 | 分數 (1-5) | 備註 |
+> | --- | :---: | --- |
+> | 實用性 | /5 | |
+> | 技術新穎性 | /5 | |
+> | 文件品質 | /5 | |
+> | 社群活躍度 | /5 | |
+> | 上手難度 | /5 | 1=很難 5=很簡單 |
+> 
+> **成熟度**：早期 / 可用 / 穩定
+> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+
+### 試用記錄
+
+> [!example]- 試用 #1
+> 試用日期 :: 
+> 試用版本 :: 
+> 安裝過程 :: _順利 / 遇到問題（描述）_
+> 實際效果 :: _達到預期 / 不如預期（原因）_
+> 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
+
+### 想法與筆記
+
+_隨時記錄想法、發現、跟其他工具的比較..._
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 

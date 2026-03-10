@@ -9,13 +9,14 @@ description: "Local Twitter/X bookmark organizer with AI categorization and mind
 homepage: ""
 stars: 1370
 stars_per_day: 228
-forks: 115
-open_issues: 8
+forks: 116
+open_issues: 9
 created: 2026-03-04
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "資料科學"
+month: "2026-03"
+category: "生產力"
 release_tag: "v1.0.1"
 install_complexity: "easy"
 status: to-review
@@ -23,7 +24,7 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - "category/資料科學"
+  - "category/生產力"
   - "lang/typescript"
   - easy_install
   - "topic/ai"
@@ -34,7 +35,7 @@ tags:
 aliases:
   - "Siftly"
   - "viperrcrypto/Siftly"
-  - "本地化的 Twitter/X 書籤管理工具，具備 AI 分類和思維導圖視覺化功能。"
+  - "本地化的 Twitter/X 書籤管理器，具備 AI 分類和思維導圖可視化功能。"
 ---
 
 # Siftly
@@ -44,81 +45,89 @@ aliases:
 `v1.0.1` `easy-install`
 
 > [!summary] 一句話摘要
-> 本地化的 Twitter/X 書籤管理工具，具備 AI 分類和思維導圖視覺化功能。
+> 本地化的 Twitter/X 書籤管理器，具備 AI 分類和思維導圖可視化功能。
+
+> [!info] 速覽
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (228 stars/day)
+> **適合** 需要本地化書籤管理的使用者，特別是對隱私有高要求的社交媒體管理者。
+> **一句話重點** Siftly 的價值在於它提供了一個高效且隱私友好的書籤管理解決方案，讓使用者能夠更好地組織和搜尋資訊。
 
 > [!abstract] 核心創新
-> 這個工具提供了一個本地化的解決方案，將 Twitter/X 書籤轉換為可搜索的知識庫，並具備 AI 分類功能。
+> 這個專案的創新在於其本地化的書籤管理，並結合 AI 技術進行智能分類。
 
 ## 專案簡介
 
-Siftly 是一個本地化的 Twitter/X 書籤管理工具，能夠將書籤轉換為可搜索的知識庫，並提供 AI 驅動的分類和視覺化功能。它運行在用戶的本地機器上，確保數據隱私，並且不需要雲端服務或訂閱。這個工具通過四個階段的 AI 流程來處理書籤，包括實體提取、視覺分析、語義標記和分類。與其他書籤管理工具相比，Siftly 提供了更深層次的搜索功能，能夠根據意義而非關鍵字來查找書籤。用戶還可以透過互動式思維導圖來探索書籤，並支持多種過濾和導出功能。對於需要管理大量 Twitter/X 書籤的用戶來說，這是一個非常實用的工具，尤其適合研究和內容創作的場景。
+Siftly 是一個自我托管的 Twitter/X 書籤管理器，能夠將書籤轉換為可搜尋、分類的視覺知識庫。它運行在本地，無需雲端或訂閱，並使用 4 階段 AI 流程來分析和分類書籤。使用者可以透過內建的書籤導入工具，將 Twitter/X 書籤導入系統，並自動生成 25-35 個可搜尋的標籤。這個工具的特點是提供 AI 搜尋功能，讓使用者能夠根據意義而非關鍵字來查找書籤，並提供互動式思維導圖來可視化整個書籤圖譜。與其他書籤管理工具相比，Siftly 的本地化特性和無需擔心隱私的優勢使其更具吸引力。實際使用中，這個工具能夠幫助使用者有效管理大量書籤，並提供更高效的搜尋體驗。這個專案目前處於穩定階段，適合需要本地化書籤管理的使用者，特別是對隱私有高要求的個人或團隊。建議在需要高效管理 Twitter/X 書籤時使用，而不適合對雲端服務有依賴的使用者。
 
-**技術棧**：`TypeScript` · `Docker` · `JavaScript`
+**技術棧**：`TypeScript` · `Node.js`
 
 ## 重點功能
 
-- 本地運行，確保數據隱私。
-- AI 驅動的書籤分類和標記功能。
-- 互動式思維導圖視覺化書籤結構。
-- 支持多種過濾和導出功能。
-- 無需雲端服務或訂閱。
+- 本地化運行 — 完全在本地運行，無需雲端或訂閱服務。
+- AI 標籤生成 — 自動生成 25-35 個可搜尋的標籤，提升搜尋效率。
+- 互動式思維導圖 — 可視化書籤結構，幫助使用者更好地理解和組織內容。
+- 多種導入方式 — 提供內建的書籤導入工具，無需瀏覽器擴展。
+- 高效搜尋 — 支持基於意義的搜尋，讓使用者能夠快速找到所需內容。
 
 ## 快速開始
 
-1. 克隆專案
+1. 克隆庫並進入目錄
 ```bash
-git clone https://github.com/viperrcrypto/Siftly.git
+git clone https://github.com/viperrcrypto/Siftly.git && cd Siftly
 ```
-2. 進入專案目錄
+2. 啟動系統
 ```bash
-cd Siftly
+./start.sh
 ```
-3. 啟動系統
+3. 在瀏覽器中打開應用
 ```bash
+http://localhost:3000
+```
+
+## 程式碼範例
+
+```bash
+# 啟動 Siftly
 ./start.sh
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著社交媒體的普及，許多人面臨書籤管理的困擾，Siftly 剛好提供了一個解決方案。作者 viperrcrypto 針對用戶隱私的考量，設計了這個本地化的工具，吸引了對數據安全有需求的用戶。隨著 AI 技術的進步，對於智能分類和搜索的需求也在增長，這使得 Siftly 的功能更加受到重視。
+> 作者 viperrcrypto 專注於提升書籤管理的效率，這個專案滿足了使用者對於隱私和本地化管理的需求。隨著人們對數據隱私的重視，這個工具的本地化特性使其在市場上受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要管理 Twitter/X 書籤的用戶，特別是內容創作者和研究人員。
+**目標受眾**：需要本地化書籤管理的使用者，特別是對隱私有高要求的社交媒體管理者。
 
 > [!example] 使用場景
-> - 內容創作者 用它來 組織和管理 Twitter/X 書籤，因為它能夠快速找到相關資料。
-> - 研究人員 用它來 分析和分類社交媒體上的資訊，因為它提供了強大的搜索和視覺化功能。
-> - 普通用戶 用它來 簡化書籤管理，因為它能夠自動分類和標記書籤。
-
-## 架構分析
-
-這個專案由前端和後端組成，前端使用 TypeScript 和 Vue，後端則使用 Node.js，整體架構確保數據在本地處理，並提供用戶友好的界面。
+> - 社交媒體管理者用它來整理和搜尋 Twitter/X 書籤，因為這樣可以快速找到相關內容，提升工作效率。
+> - 研究人員用它來管理和分類研究資料，因為這樣可以更方便地檢索和使用資料，節省時間。
+> - 內容創作者用它來收集靈感和資料，因為這樣可以將書籤視覺化，幫助組織思路。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 本地運行，保護用戶隱私。
-> - 提供強大的 AI 驅動分類和搜索功能。
-> - 互動式視覺化提升了用戶體驗。
+> - 完全本地化運行，保障使用者隱私。
+> - 提供高效的 AI 標籤生成和搜尋功能。
+> - 互動式思維導圖幫助視覺化書籤結構。
 
 > [!danger] 缺點
-> - 需要 Node.js 環境配置。
-> - 對於大量書籤的處理性能可能不佳。
-> - 目前僅支持 Twitter/X 書籤，其他平台尚未涵蓋。
+> - 需要 Node.js 環境，對於不熟悉的使用者有一定的上手難度。
+> - 本地運行需要一定的硬體資源，對於低配設備可能不友好。
+> - AI 功能依賴於外部 API，可能會增加額外費用。
 
 > [!warning] 注意事項
-> - 需要 Node.js 環境。
-> - 對於大量書籤的處理性能可能受限。
-> - 目前僅支持 Twitter/X 書籤，其他平台尚未涵蓋。
+> - 需要 Node.js 環境，對於不熟悉的使用者可能有一定的學習曲線。
+> - 本地運行需要一定的硬體資源，對於低配設備可能不太友好。
+> - AI 功能依賴於外部 API，可能會有額外的費用。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 115 |
-| Open Issues | 8 |
+| Forks | 116 |
+| Open Issues | 9 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-04 |
 | Repo 大小 | 236 KB |
@@ -141,10 +150,6 @@ cd Siftly
 > | [@robinlyu](https://github.com/robinlyu) | 1 |
 
 **最新版本**：v1.0.1 — Siftly v1.0.1 (2026-03-10)
-
-## 社群與生態
-
-**社群活躍度**：社群活躍，持續更新中，並提供即時的技術支持。
 
 ## README 摘錄
 
@@ -228,11 +233,52 @@ cd Siftly
 > cd Siftly
 > npm install
 > npx prisma generate
-> npx prisma migrate dev --nam
+> npx prisma migrate dev --name init
+> npx next dev
+> ```
+> 
+> Open [http://localhost:3000](http://localhost:3000)
+> 
+> ---
+> 
+> ## AI Authentication
+> 
+> Siftly automatically detects the best available auth method — no configuration needed in the most common case.
+> 
+> ### Priority order
+> 
+> | # | Method | How |
+> |---|--------|-----|
+> | 1 | **Claude Code CLI** *(zero config)* | Already signed in? Siftly reads your session from the macOS keychain automatically |
+> | 2 | **API key in Settings** | Open Settings in the app and paste your key |
+> | 3 | **`ANTHROPIC_API_KEY` env var** | Set in `.env.local` or your shell environment |
+> | 4 | **Local proxy** | Set `ANTHROPIC_BASE_URL` to any Anthropic-compatible endpoint |
+> 
+> ### Claude Code CLI (no API key needed)
+> 
+> If you use [Claude Code](https://claude.ai/code), you're already signed in. Siftly detects your session from the macOS keychain and uses your Claude subscription (Free/Pro/Max) automatically.
+> 
+> The Settings page shows a green **"Claude CLI detected — no API key needed"** badge with your subscription tier when this is active.
+> 
+> > **Note:** This works on macOS. On Linux/Windows, add an API key in Settings instead.
+> 
+> ### Getting an API key (if needed)
+> 
+> 1. Go to [console.anthropic.com](https://console.anthropic.com)
+> 2. Create a new API key
+> 3. Open Siftly → Settings → paste it in
+> 
+> New accounts include $5 free credit — enough for thousands of bookmarks at Haiku pricing (~$0.00025/bookmark).
+> 
+> ---
+> 
+> ## Importing Your Bookmarks
+> 
+> Siftly has **built-in import tools** — no browser extensions required.
 
 ## 延伸閱讀
 
-相關概念：[[資料視覺化]] · [[自動化測試]] · [[機器學習]]
+相關概念：[[資料視覺化]] · [[隱私保護]]
 
 [GitHub](https://github.com/viperrcrypto/Siftly)
 
@@ -242,7 +288,7 @@ cd Siftly
 > ```dataview
 > LIST
 > FROM "Repos"
-> WHERE category = "資料科學" AND file.name != "viperrcrypto--Siftly"
+> WHERE category = "生產力" AND file.name != "viperrcrypto--Siftly"
 > SORT stars DESC
 > LIMIT 8
 > ```

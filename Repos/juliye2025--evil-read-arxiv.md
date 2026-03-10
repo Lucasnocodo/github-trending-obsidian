@@ -7,14 +7,15 @@ language: Python
 license: N/A
 description: "Claude Code+Obsidian，邪修读论文就是快"
 homepage: ""
-stars: 275
-stars_per_day: 39
+stars: 277
+stars_per_day: 40
 forks: 37
 open_issues: 7
 created: 2026-03-03
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "資料科學"
 release_tag: ""
 install_complexity: "medium"
@@ -23,85 +24,96 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - 資料科學
-  - python
+  - "category/資料科學"
+  - "lang/python"
 aliases:
   - "evil-read-arxiv"
   - "juliye2025/evil-read-arxiv"
-  - "自動化研究論文的搜索、推薦和分析，提升閱讀效率。"
+  - "自動化研究論文的搜索、推薦、分析和整理工作流。"
 ---
 
 # evil-read-arxiv
 
-**275** stars · **39** stars/天 · 建立 7 天前 · Python · 未標註授權
+**277** stars · **40** stars/天 · 建立 7 天前 · Python · 未標註授權
 
 `個人專案`
 
 > [!summary] 一句話摘要
-> 自動化研究論文的搜索、推薦和分析，提升閱讀效率。
+> 自動化研究論文的搜索、推薦、分析和整理工作流。
+
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (40 stars/day)
+> **適合** 需要高效管理研究資料的學者和學生。
+> **一句話重點** 這個專案讓研究論文的管理變得高效且自動化，適合需要快速獲取資訊的學者。
 
 > [!abstract] 核心創新
-> 這個專案能夠自動化論文的搜索、推薦和分析，顯著提升閱讀效率。
+> 自動化研究論文的搜索、推薦、分析和整理工作流。
 
 ## 專案簡介
 
-evil-read-arxiv 是一套自動化的研究論文閱讀工作流，透過調用 arXiv 和 Semantic Scholar API，為用戶推薦高質量的論文並生成詳細的筆記和關係圖譜。它的功能包括每日論文推薦、深度分析單篇論文、提取論文圖片和筆記搜索。與傳統的手動查找和整理論文方式相比，這個工具能顯著提高研究效率，特別適合需要大量閱讀和整理文獻的研究人員。使用者可以根據自己的研究領域和興趣自定義關鍵詞，從而獲得更精準的推薦和分析。
+這個專案是一套基於 Claude Code 的技能集合，旨在自動化研究論文的搜索和分析。它通過調用 arXiv 和 Semantic Scholar API，每天為用戶推薦高質量的論文，並自動生成詳細的筆記和關係圖譜。用戶可以輕鬆獲得最新的研究動態，並且能夠深入分析單篇論文，生成結構化的筆記。這個工具的特點在於其自動化程度高，能夠節省研究者大量的時間和精力。與傳統的手動搜索和筆記方式相比，這個工具能夠提供更快的反饋和更全面的資訊。這個專案目前處於穩定階段，適合需要高效管理研究資料的學者和學生。建議在需要快速獲取和分析論文時使用，而在需要深入理解特定論文時可能需要輔助其他資源。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 每日論文推薦，基於相關性和熱門度。
-- 深度分析單篇論文，生成結構化筆記。
-- 自動提取論文圖片並生成索引。
-- 支持已有筆記的搜索，提升查找效率。
-- 可自定義研究領域和關鍵詞，獲得精準推薦。
+- 每日論文推薦 — 自動從 arXiv 和 Semantic Scholar 獲取最新論文。
+- 深度分析功能 — 生成結構化的論文筆記，包含摘要、背景、方法等。
+- 圖片提取 — 自動提取論文中的高質量圖片並保存。
+- 筆記搜索 — 支持按標題、作者等關鍵詞搜索已有筆記。
+- 關鍵詞鏈接 — 自動鏈接筆記中的關鍵詞，方便查找。
 
 ## 快速開始
 
-1. 安裝依賴庫
+1. 安裝依賴
 ```bash
 pip install -r requirements.txt
 ```
-2. 配置環境變量
+2. 克隆專案
 ```bash
-export OBSIDIAN_VAULT_PATH='/path/to/your/obsidian/vault'
+git clone https://github.com/juliye2025/evil-read-arxiv.git
 ```
-3. 重啟 Claude Code CLI
+3. 開始每日推薦
 ```bash
-重啟命令行介面以應用配置
+start my day
+```
+
+## 程式碼範例
+
+```bash
+paper-analyze 2602.12345
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 juliye2025 專注於提升研究效率的工具開發，這個專案滿足了對於自動化文獻管理的需求，尤其是在學術界。隨著研究人員對於文獻整理的需求增加，這個工具的推出正好切合了市場需求。
+> 作者背景是研究者，專注於提高論文閱讀效率，滿足了學術界對自動化工具的需求。隨著研究論文數量的增加，這種自動化工具的需求也隨之上升。
 
 ## 適合誰使用
 
-**目標受眾**：對於需要高效閱讀和整理文獻的研究人員和學生。
+**目標受眾**：需要高效管理研究資料的學者和學生。
 
 > [!example] 使用場景
-> - 研究人員 用它來 自動獲取最新論文，因為能夠節省查找時間。
-> - 學生 用它來 深入分析特定論文，因為提供結構化的筆記和分析。
-> - 學術寫作人 用它來 整理文獻資料，因為能夠快速生成關係圖譜。
+> - 研究生用它來每日獲取最新的研究論文，因為能夠自動生成推薦列表，節省搜尋時間。
+> - 學者用它來分析特定的論文，因為能夠生成結構化的筆記，方便後續引用。
+> - 科研團隊用它來整理和管理文獻資料，因為能夠自動提取和鏈接關鍵詞。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化文獻管理，節省時間。
-> - 提供結構化的分析和筆記，易於理解。
-> - 支持自定義關鍵詞，獲得精準推薦。
+> - 自動化程度高，節省時間。
+> - 能夠快速獲取最新研究動態。
+> - 生成結構化筆記，方便後續使用。
 
 > [!danger] 缺點
-> - 需要安裝額外的 CLI 工具。
-> - 對於某些領域的推薦可能不夠全面。
-> - 功能仍在開發中，可能不夠穩定。
+> - 需要依賴外部 API，穩定性可能受限。
+> - 自動生成的內容可能不夠深入，需用戶補充。
+> - 對於特定研究領域的支持可能有限。
 
 > [!warning] 注意事項
-> - 需要安裝 Claude Code CLI。
-> - 對於特定領域的推薦可能不夠全面。
-> - 某些功能仍在開發中，可能不夠穩定。
+> - 需要安裝 Claude Code CLI，對於新手用戶可能有一定門檻。
+> - 自動生成的筆記可能不夠全面，仍需用戶進行補充。
+> - 依賴於外部 API，若 API 不穩定可能影響功能。
 
 ## 技術細節
 
@@ -117,10 +129,6 @@ export OBSIDIAN_VAULT_PATH='/path/to/your/obsidian/vault'
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@juliye2025](https://github.com/juliye2025) | 6 |
-
-## 社群與生態
-
-**社群活躍度**：社群活躍，持續更新中，期待更多用戶反饋。
 
 ## README 摘錄
 
@@ -243,21 +251,127 @@ export OBSIDIAN_VAULT_PATH='/path/to/your/obsidian/vault'
 >       - "cs.LG"
 > ```
 > 
-> 然后将修改后的 `config.yaml` 复制到 Va
+> 然后将修改后的 `config.yaml` 复制到 Vault 中：
+> ```bash
+> cp config.yaml "$OBSIDIAN_VAULT_PATH/99_System/Config/research_interests.yaml"
+> ```
+> 
+> ### 步骤3（可选）：通过 CLI 参数覆盖路径
+> 
+> 如果不想设置环境变量，也可以在每次调用脚本时通过参数指定路径：
+> 
+> ```bash
+> python scripts/search_arxiv.py --config "/your/path/research_interests.yaml"
+> python scripts/scan_existing_notes.py --vault "/your/obsidian/vault"
+> python scripts/generate_note.py --vault "/your/obsidian/vault" --paper-id "2402.12345" --title "Paper Title" --authors "Author" --domain "大模型"
+> python scripts/update_graph.py --vault "/your/obsidian/vault" --paper-id "2402.12345" --title "Paper Title" --domain "大模型"
+> ```
+> 
+> ### 路径格式说明
+> 
+> - **Windows**：可以使用正斜杠 `/` 或双反斜杠 `\\`
+>   - 正确：`C:/Users/Name/Documents/Vault`
+>   - 正确：`C:\\Users\\Name\\Documents\\Vault`
+>   - 错误：`C:\Users\Name\Documents\Vault`（单反斜杠在 Python 字符串中需要转义）
+> 
+> - **macOS/Linux**：使用正斜杠 `/`
+>   - 正确：`/Users/name/Documents/Vault`
+> 
+> ### Obsidian 目录结构要求
+> 
+> 你的 Obsidian Vault 需要包含以下目录结构：
+> 
+> ```
+> 你的Vault/
+> ├── 10_Daily/                    # 每日推荐笔记（自动创建）
+> │   └── YYYY-MM-DD论文推荐.md
+> ├── 20_Research/
+> │   └── Papers/                  # 论文详细笔记目录
+> │       ├── 大模型/
+> │       │   └── 论文标题.md
+> │       │       └── images/      # 论文图片
+> │       ├── 多模态技术/
+> │       └── 智能体/
+> └── 99_System/
+>     └── Config/
+>         └── research_interests.yaml  # 研究兴趣配置（复制 config.yaml 到这里）
+> ```
+> 
+> ## 使用方法
+> 
+> ### 开始每天的论文推荐
+> 
+> 在你的 Obsidian Vault 目录下打开终端，输入：
+> 
+> ```bash
+> start my day
+> ```
+> 
+> 这会：
+> 1. 搜索最近一个月和过去一年的高质量论文
+> 2. 根据你的研究兴趣筛选和评分
+> 3. 生成今日推荐笔记（保存到 `10_Daily/` 目录）
+> 4. 对前三篇论文自动生成详细分析
+> 5. 提取论文图片并插入笔记
+> 6. 自动链接关键词到已有笔记
+> 
+> ### 分析单篇论文
+> 
+> 如果你想深入阅读某篇论文：
+> 
+> ```
 
 ## 延伸閱讀
 
-相關概念：[[自動化文獻管理]] · [[論文分析]] · [[學術寫作]]
-
 [GitHub](https://github.com/juliye2025/evil-read-arxiv)
 
+## 相關收錄
+
+> [!note]- 同分類的其他專案
+> ```dataview
+> LIST
+> FROM "Repos"
+> WHERE category = "資料科學" AND file.name != "juliye2025--evil-read-arxiv"
+> SORT stars DESC
+> LIMIT 8
+> ```
 
 ---
 
 ## 個人筆記
 
-> [!question]+ 我的想法
-> _在此寫下你的想法、使用心得、跟其他工具的比較..._
+> [!question]+ 快速評估（第一次看時填寫）
+> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> 
+> **跟我的工作相關嗎？** 是 / 否 / 間接相關
+> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
+> **第一印象**：_一句話_
+
+> [!success]- 深度評估（試用後填寫）
+> 
+> | 項目 | 分數 (1-5) | 備註 |
+> | --- | :---: | --- |
+> | 實用性 | /5 | |
+> | 技術新穎性 | /5 | |
+> | 文件品質 | /5 | |
+> | 社群活躍度 | /5 | |
+> | 上手難度 | /5 | 1=很難 5=很簡單 |
+> 
+> **成熟度**：早期 / 可用 / 穩定
+> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+
+### 試用記錄
+
+> [!example]- 試用 #1
+> 試用日期 :: 
+> 試用版本 :: 
+> 安裝過程 :: _順利 / 遇到問題（描述）_
+> 實際效果 :: _達到預期 / 不如預期（原因）_
+> 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
+
+### 想法與筆記
+
+_隨時記錄想法、發現、跟其他工具的比較..._
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 

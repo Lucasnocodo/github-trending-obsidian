@@ -7,14 +7,15 @@ language: Python
 license: Apache-2.0
 description: ""
 homepage: ""
-stars: 553
-stars_per_day: 79
+stars: 543
+stars_per_day: 78
 forks: 53
 open_issues: 4
 created: 2026-03-03
 pushed_at: 2026-03-06
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "AI/ML"
 release_tag: ""
 install_complexity: "medium"
@@ -29,38 +30,43 @@ tags:
 aliases:
   - "worldfm"
   - "inspatio/worldfm"
-  - "生成多視角的圖像，讓使用者可以從不同的相機角度查看同一場景。"
+  - "生成多視角的即時影像，讓使用者可以從不同視點觀看同一場景。"
 ---
 
 # worldfm
 
-**553** stars · **79** stars/天 · 建立 7 天前 · Python · Apache-2.0
+**543** stars · **78** stars/天 · 建立 7 天前 · Python · Apache-2.0
 
 `ORG`
 
 > [!summary] 一句話摘要
-> 生成多視角的圖像，讓使用者可以從不同的相機角度查看同一場景。
+> 生成多視角的即時影像，讓使用者可以從不同視點觀看同一場景。
+
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (78 stars/day)
+> **適合** 需要生成多視角影像的計算機視覺研究者或開發者。
+> **一句話重點** WorldFM 的即時多視角生成能力，為影像創作帶來全新的可能性。
 
 > [!abstract] 核心創新
-> WorldFM 提供即時生成多視角圖像的能力，並支持用戶自定義相機姿勢。
+> WorldFM 是一個即時多視角擴散模型，專為生成新視點影像而設計。
 
 ## 專案簡介
 
-WorldFM 是一個即時的多視角擴散模型，能根據參考圖像和目標相機姿勢生成新視角的圖像。它使用 PyTorch 和 CUDA 進行高效的圖像生成，並整合了多個開源模型以增強生成效果。與其他圖像生成工具相比，WorldFM 專注於多視角生成，能夠在不同的相機位置提供一致的場景視覺效果。實際使用中，使用者可以選擇不同的生成步驟來平衡速度和質量，並且支持使用者自定義的相機姿勢。這個專案適合需要高質量視覺效果的應用，如虛擬實境和遊戲開發，值得一試。
+WorldFM 是一個即時多視角擴散模型，能根據參考影像和目標相機姿勢生成新視點的影像。使用者只需提供一張圖片和相機參數，系統會自動生成不同角度的影像。技術上，它基於 PyTorch 2.5 和 CUDA 12.4，並整合了多個子模組如 HunyuanWorld-1.0 和 Real-ESRGAN。與其他影像生成工具相比，WorldFM 特別針對空間推理進行了優化，能夠在保持高質量的同時快速生成影像。實際使用中，使用者可以選擇不同的生成步驟（如 1 步或 2 步），以平衡速度與質量。這個專案目前處於 alpha 階段，適合對即時影像生成有需求的研究團隊或開發者。建議在需要生成多視角影像時使用，但對於單一視角影像生成，可能不如專門的工具來得高效。
 
-**技術棧**：`Python` · `PyTorch` · `CUDA`
+**技術棧**：`Python 3.10` · `PyTorch 2.5` · `CUDA 12.4`
 
 ## 重點功能
 
-- 即時生成多視角圖像，支持不同相機姿勢。
-- 使用 PyTorch 和 CUDA 進行高效運算。
-- 支持用戶自定義相機姿勢以生成不同視角。
-- 提供多種生成步驟選擇，平衡速度和質量。
-- 整合多個開源模型以增強生成效果。
+- 多視角影像生成 — 根據參考影像和相機姿勢生成新視點影像。
+- 支持不同生成步驟 — 使用 --step 1 或 --step 2 來選擇生成速度與質量的平衡。
+- 自動化場景生成 — 提供 demo 目錄，使用者可快速生成 MP4 影片。
+- 靈活的輸入格式 — 支持單一或多個相機姿勢的 JSON 格式輸入。
+- 可擴展性 — 用戶可整合其他開源全景生成模型以提升生成效果。
 
 ## 快速開始
 
-1. 建立 Conda 環境
+1. 創建 Conda 環境
 ```bash
 bash setup.sh
 ```
@@ -68,45 +74,50 @@ bash setup.sh
 ```bash
 python download_ckpts.py
 ```
-3. 運行範例生成視頻
+3. 運行 demo 生成影片
 ```bash
 python run_pipeline.py --meta demo/meta.json --output_dir outputs
 ```
 
+## 程式碼範例
+
+python run_pipeline.py --meta demo/meta.json --output_dir outputs
+
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 WeihongPan 在計算機視覺領域有豐富的經驗，這個專案切中對於多視角圖像生成的需求，尤其在虛擬實境和遊戲開發中有廣泛的應用潛力。隨著對高質量視覺效果需求的增加，這個專案的實用性和創新性使其在近期受到關注。
+> 作者 WeihongPan 具有深厚的計算機視覺背景，切中即時影像生成的需求。隨著虛擬實境和增強實境技術的興起，對多視角影像的需求日益增加。這個專案的推出正好滿足了這一需求，並且其開源性使得更多開發者能夠參與進來。
 
 ## 適合誰使用
 
-**目標受眾**：對於需要高質量多視角圖像生成的開發者和研究者。
+**目標受眾**：需要生成多視角影像的計算機視覺研究者或開發者。
 
 > [!example] 使用場景
-> - 遊戲開發者 用它來 生成多視角場景，因為這能提升遊戲的沉浸感和視覺效果。
-> - 虛擬實境設計師 用它來 創建互動式環境，因為可以從不同角度查看同一場景。
-> - 學術研究者 用它來 進行視覺計算實驗，因為能夠快速生成多樣化的圖像數據集。
+> - 遊戲開發者用它來生成多視角的遊戲場景，因為這樣可以快速創建不同視點的遊戲畫面，提升玩家的沉浸感。
+> - 電影製作人用它來預覽場景的不同角度，因為這樣可以在拍攝前更好地規劃鏡頭。
+> - 虛擬實境開發者用它來創建多視角的虛擬環境，因為這樣可以讓使用者在虛擬空間中自由探索。
 
 ## 架構分析
 
-專案採用前後端分離架構，前端用於展示生成的圖像，後端使用 PyTorch 進行圖像生成和處理。資料流是 用戶輸入參數 → 生成模型推理 → 輸出圖像。
+這是一個前後端分離的架構，使用者透過命令行介面輸入參數，系統則透過內部模型生成影像並輸出。關鍵技術決策包括使用 PyTorch 進行深度學習模型的訓練與推理，並整合多個子模組以提升功能。專案目錄結構中，setup.sh 和 run_pipeline.py 是主要的執行檔案。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠生成高質量的多視角圖像。
-> - 支持用戶自定義相機姿勢，靈活性高。
-> - 整合多個開源模型，增強生成效果。
+> - 能快速生成多視角影像，提升創作效率。
+> - 支持不同生成步驟，使用者可根據需求調整速度與質量。
+> - 開源且可擴展，便於整合其他模型。
 
 > [!danger] 缺點
-> - 安裝和配置過程較為複雜。
-> - 需要較高的硬體要求。
-> - 部分功能依賴於未開源的內部模型。
+> - 需要較高的硬體需求，對於一般使用者來說可能不易部署。
+> - 目前功能尚在開發中，穩定性可能不足。
+> - 缺乏完善的文檔，對新手不太友好。
 
 > [!warning] 注意事項
-> - 需要特定的硬體支持，如 CUDA。
-> - 部分內部生成模型未開源，需使用替代方案。
-> - 使用者需具備一定的技術背景以進行配置。
+> - 僅支援 Python 3.10 和 PyTorch 2.5。
+> - 需要 NVIDIA GPU (CUDA 12.4) 以達到最佳效能。
+> - 不支援 Windows 系統。
+> - 目前處於 alpha 階段，API 可能會變動。
 
 ## 技術細節
 
@@ -125,7 +136,7 @@ python run_pipeline.py --meta demo/meta.json --output_dir outputs
 
 ## 社群與生態
 
-**社群活躍度**：專案剛建立不久，社群尚在建立中。
+**社群活躍度**：社群活躍度中等，持續有更新和貢獻。
 **連結**：[文件](https://inspatio.github.io/worldfm)
 
 ## README 摘錄
@@ -227,11 +238,69 @@ python run_pipeline.py --meta demo/meta.json --output_dir outputs
 > 
 > Multiple poses (generates one output per pose):
 > 
-> ```jso
+> ```json
+> {
+>   "name": "scene_001",
+>   "image": "input.jpg",
+>   "K": [[fx, 0, cx], [0, fy, cy], [0, 0, 1]],
+>   "c2w": [
+>     [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]],
+>     [[...], [...], [...], [...]],
+>     ...
+>   ]
+> }
+> ```
+> 
+> - **name**: scene identifier, used as the output subdirectory name
+> - **image**: relative path (from `meta.json` location) to the input perspective image
+> - **K**: 3×3 camera intrinsic matrix
+> - **c2w**: a single 4×4 or a list of N×4×4 camera-to-world matrices (target viewpoints)
+> 
+> ### Run Inference with Your Own Data
+> 
+> ```bash
+> # Default: output as MP4 video
+> python run_pipeline.py --meta  --output_dir 
+> 
+> # Save per-frame PNG images instead
+> python run_pipeline.py --meta  --output_dir  --save_mode image
+> ```
+> 
+> ### Configuration
+> 
+> Default parameters are defined in `default.yaml`. Override them via:
+> 
+> 1. **CLI arguments** (highest priority)
+> 2. **Custom config file**: `--config my_config.yaml`
+> 3. `**default.yaml`** (lowest priority)
+> 
+> ### Output
+> 
+> With `--save_mode video` (default):
+> 
+> ```
+> //
+>   └── output.mp4          # Video composed of all generated frames
+> ```
+> 
+> With `--save_mode image`:
+> 
+> ```
+> //
+>   ├── output.png           # Single pose
+>   # or
+>   ├── output_0000.png      # Multiple poses
+>   ├── output_0001.png
+>   └── ...
+> ```
+> 
+> # License
+> 
+> The license of our codebase is [Apache-2.0](https://github.com/inspatio/worldfm/blob/main/LICENSE). Note that this license only applies to code in our library, the dependencies and submodules of which ([HunyuanWorld-1.0](https://github.com/Tencent-Hunyuan/Hunyu
 
 ## 延伸閱讀
 
-相關概念：[[多視角圖像生成]] · [[擴散模型]] · [[計算機視覺]] · [[虛擬實境]] · [[深度學習]]
+相關概念：[[深度學習]] · [[電腦視覺]] · [[自動化測試]]
 
 [GitHub](https://github.com/inspatio/worldfm)
 
@@ -246,13 +315,42 @@ python run_pipeline.py --meta demo/meta.json --output_dir outputs
 > LIMIT 8
 > ```
 
-
 ---
 
 ## 個人筆記
 
-> [!question]+ 我的想法
-> _在此寫下你的想法、使用心得、跟其他工具的比較..._
+> [!question]+ 快速評估（第一次看時填寫）
+> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> 
+> **跟我的工作相關嗎？** 是 / 否 / 間接相關
+> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
+> **第一印象**：_一句話_
+
+> [!success]- 深度評估（試用後填寫）
+> 
+> | 項目 | 分數 (1-5) | 備註 |
+> | --- | :---: | --- |
+> | 實用性 | /5 | |
+> | 技術新穎性 | /5 | |
+> | 文件品質 | /5 | |
+> | 社群活躍度 | /5 | |
+> | 上手難度 | /5 | 1=很難 5=很簡單 |
+> 
+> **成熟度**：早期 / 可用 / 穩定
+> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+
+### 試用記錄
+
+> [!example]- 試用 #1
+> 試用日期 :: 
+> 試用版本 :: 
+> 安裝過程 :: _順利 / 遇到問題（描述）_
+> 實際效果 :: _達到預期 / 不如預期（原因）_
+> 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
+
+### 想法與筆記
+
+_隨時記錄想法、發現、跟其他工具的比較..._
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 

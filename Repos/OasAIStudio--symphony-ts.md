@@ -7,7 +7,7 @@ language: TypeScript
 license: Apache-2.0
 description: "Typecript version of https://github.com/openai/symphony"
 homepage: ""
-stars: 404
+stars: 405
 stars_per_day: 101
 forks: 22
 open_issues: 3
@@ -15,9 +15,10 @@ created: 2026-03-06
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
+month: "2026-03"
 category: "開發工具"
 release_tag: "v0.1.7"
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
@@ -26,99 +27,96 @@ tags:
   - "category/開發工具"
   - "lang/typescript"
   - org
-  - easy_install
 aliases:
   - "symphony-ts"
   - "OasAIStudio/symphony-ts"
-  - "將專案工作轉化為獨立的自動化實作，提升開發效率。"
+  - "將專案工作轉化為獨立的自動化實作運行，提升開發效率。"
 ---
 
 # symphony-ts
 
-**404** stars · **101** stars/天 · 建立 4 天前 · TypeScript · Apache-2.0
+**405** stars · **101** stars/天 · 建立 4 天前 · TypeScript · Apache-2.0
 
-`ORG` `v0.1.7` `easy-install`
+`ORG` `v0.1.7`
 
 > [!summary] 一句話摘要
-> 將專案工作轉化為獨立的自動化實作，提升開發效率。
+> 將專案工作轉化為獨立的自動化實作運行，提升開發效率。
+
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (101 stars/day)
+> **適合** 需要高效管理任務和自動化開發流程的中大型開發團隊。
+> **一句話重點** 這個專案的強大之處在於它能夠將任務管理和自動化開發流程無縫結合，提升團隊效率。
 
 > [!abstract] 核心創新
-> 提供了一個獨立的自動化實作環境，專注於專案管理和運行時可見性。
+> Symphony 是一個將專案工作轉化為獨立、自動化實作運行的工具。
 
 ## 專案簡介
 
-這個專案是 OpenAI Symphony 的 TypeScript 實作，能夠將專案工作轉化為獨立的自動化實作。它透過讀取工作追蹤器的資料，為每個問題創建專屬的工作空間，並在該範圍內運行編碼代理，提供運行時的可見性和控制。與其他自動化工具相比，Symphony-ts 的獨特之處在於它的高信任環境設計，並且需要用戶提供有效的工作流程文件。實際使用中，這個工具能夠顯著提高開發效率，但需要用戶具備一定的配置能力和信任環境。對於需要高效管理專案的開發團隊來說，這是一個值得嘗試的工具。
+Symphony-ts 是 OpenAI Symphony 的 TypeScript 實作，旨在將專案管理與自動化開發結合。它的核心機制是從任務追蹤器讀取工作，為每個問題創建獨立的工作區，並在該範圍內運行編碼代理，提供清晰的運行時可見性和控制。專案依賴 Node.js 和 Codex app-server，並要求用戶提供有效的 WORKFLOW.md 文件和 LINEAR_API_KEY。與其他 CI/CD 工具相比，Symphony-ts 的獨特之處在於它的高信任度和自動化能力，能夠在獨立的工作區中進行多次重試和狀態清理。使用者可以在本地啟動一個儀表板，實時監控進度。對於需要高效管理任務的開發團隊，這是一個值得考慮的工具。建議在有一定開發經驗的團隊中使用，對於小型專案或初學者則可能過於複雜。
 
-**技術棧**：`TypeScript` · `JavaScript`
+**技術棧**：`Node.js >= 22` · `TypeScript` · `Codex app-server`
 
 ## 重點功能
 
-- 將專案工作轉化為獨立的自動化實作。
-- 支持從工作追蹤器讀取資料，創建專屬工作空間。
-- 提供運行時的可見性和控制。
-- 需要有效的工作流程文件以進行操作。
-- 設計為高信任環境，適合團隊使用。
+- 自動化工作區創建 — 根據任務自動生成獨立工作區。
+- 實時監控儀表板 — 提供運行狀態和進度的即時更新。
+- 支持多種編碼代理 — 能夠與 Codex 等多種代理集成。
+- 高信任度運行 — 需要用戶確認高信任預覽，確保安全性。
+- 自定義工作流程 — 用戶可根據需求編寫 WORKFLOW.md 文件，靈活配置。
 
 ## 快速開始
 
-1. 安裝 symphony-ts
+1. 安裝 Symphony-ts
 ```bash
 npm install -g symphony-ts
 ```
-2. 創建 WORKFLOW.md 文件
+2. 設置 WORKFLOW.md 文件
 ```bash
-在專案根目錄創建 WORKFLOW.md
+在你的專案根目錄創建 WORKFLOW.md
 ```
-3. 設置 LINEAR_API_KEY 環境變數
+3. 啟動 Symphony
+```bash
+symphony ./WORKFLOW.md --acknowledge-high-trust-preview --port 4321
+```
+
+## 程式碼範例
+
 ```bash
 export LINEAR_API_KEY=your-linear-token
-```
-4. 啟動 Symphony
-```bash
 symphony ./WORKFLOW.md --acknowledge-high-trust-preview --port 4321
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 專案的作者來自於對自動化開發有深厚理解的背景，並且切中了開發者對於提高工作效率的需求。隨著越來越多的團隊尋求自動化解決方案，這個專案在市場上逐漸受到關注。
+> 專案的作者來自於開源社群，專注於提升開發效率的需求。隨著遠端工作和自動化的普及，這樣的工具在開發者中引起了廣泛的關注。特別是在開發流程中需要高效管理的團隊，這個工具的需求日益增加。
 
 ## 適合誰使用
 
-**目標受眾**：需要自動化專案管理的開發團隊和產品經理。
+**目標受眾**：需要高效管理任務和自動化開發流程的中大型開發團隊。
 
 > [!example] 使用場景
-> - 開發者 用它來 自動化專案工作流程，因為他們希望提高開發效率。
-> - 團隊領導 用它來 管理多個專案任務，因為它能夠提供清晰的運行時可見性。
-> - 產品經理 用它來 追蹤專案進度，因為它能夠整合工作追蹤器的資料。
-
-## 架構分析
-
-專案採用 Node.js 架構，前端使用 TypeScript，後端透過 API 與工作追蹤器整合。資料流是 用戶輸入 → WORKFLOW.md → 自動化代理運行 → 結果回饋。
+> - 軟體開發團隊用它來自動化任務管理，因為能夠減少手動操作，提高效率。
+> - 項目經理用它來監控開發進度，因為提供了即時的儀表板和狀態更新。
+> - 開發者用它來快速創建工作區，因為能夠自動化配置和環境設置，節省時間。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠顯著提高開發效率。
-> - 提供清晰的運行時可見性和控制。
-> - 設計為高信任環境，適合團隊使用。
+> - 能夠自動化工作流程，減少手動操作。
+> - 提供實時監控儀表板，方便進度跟蹤。
+> - 支持多種編碼代理，靈活性高。
 
 > [!danger] 缺點
-> - 需要用戶提供有效的工作流程文件。
-> - 僅適用於高信任環境，需謹慎使用。
-> - 對於不熟悉自動化的開發者可能有學習曲線。
+> - 需要較高的配置和設置，對初學者不友好。
+> - 依賴於外部 API，增加了使用的複雜度。
+> - 不適合小型專案，可能過於繁瑣。
 
 > [!warning] 注意事項
-> - 僅適用於高信任環境，需謹慎使用。
-> - 需要用戶提供有效的 WORKFLOW.md 文件。
-> - 對於不熟悉自動化的開發者可能有學習曲線。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| OpenAI Symphony | 這是 Symphony-ts 的官方版本，主要是 Python 實作。 |
-| GitHub Actions | GitHub Actions 更加廣泛應用於 CI/CD，而 Symphony-ts 專注於專案管理。 |
+> - 需要有效的 LINEAR_API_KEY 進行操作。
+> - 僅支持 Node.js 22 以上版本。
+> - 需要 Codex app-server 的支持，增加了配置複雜度。
+> - 不適合小型專案，因為需要較多的設置和配置。
 
 ## 技術細節
 
@@ -241,11 +239,51 @@ symphony ./WORKFLOW.md --acknowledge-high-trust-preview --port 4321
 > ```
 > 
 > This is the only example `WORKFLOW.md` you need to get started. Copy it into your repository root
-> as `WORKFLOW.md`, then change these fields b
+> as `WORKFLOW.md`, then change these fields before starting Symphony:
+> 
+> - `tracker.project_slug`
+> - `workspace.root`
+> - `codex.command`
+> 
+> If you want the dashboard, keep `server.port` in the workflow or pass `--port` on the CLI.
+> The web dashboard now opens with a server-rendered snapshot and continues updating live in the
+> browser over server-sent events.
+> 
+> If your agent workflow needs access to environment variables from the launching shell, configure
+> Codex to inherit them in `codex.command`, for example:
+> 
+> ```yaml
+> codex:
+>   command: codex --config shell_environment_policy.inherit=all app-server
+> ```
+> 
+> If your agent must push branches, open PRs, or call external APIs during a turn, also configure a
+> turn sandbox policy that explicitly allows network access instead of relying on a minimal
+> `workspaceWrite` sandbox object.
+> 
+> If a specific external CLI still does not see the credentials it needs in your environment, provide
+> that tool's credential via environment variables before launching Symphony.
+> 
+> For a complete reference covering every supported field with defaults and inline documentation, see
+> [docs/WORKFLOW.template.md](docs/WORKFLOW.template.md).
+> 
+> ### What You Get
+> 
+> Once Symphony is running, it will:
+> 
+> - poll your tracker for eligible work
+> - create a dedicated workspace per issue
+> - run your coding agent inside that workspace
+> - expose a local dashboard and JSON API when `--port` or `server.port` is set
+> - keep retry, reconciliation, and cleanup state visible to operators
+> 
+> ### Develop
+> 
+> To develop Symphony itself you will need:
+> 
+> - Nod
 
 ## 延伸閱讀
-
-相關概念：[[CI/CD]] · [[自動化測試]] · [[API 設計]]
 
 [GitHub](https://github.com/OasAIStudio/symphony-ts)
 
