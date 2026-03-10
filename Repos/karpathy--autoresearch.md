@@ -219,6 +219,8 @@ Hi have a look at program.md and let's kick off a new experiment! let's do the s
 
 相關概念：[[自動化測試]] · [[機器學習]] · [[深度學習]]
 
+相關專案：[[trevin-creator--autoresearch-mlx|autoresearch-mlx (Apple Silicon 移植版)]] · [[TinyAGI--fractals|TinyAGI/fractals (Agent 任務框架)]] · [[sanbuphy--nanoAgent|nanoAgent]]
+
 [GitHub](https://github.com/karpathy/autoresearch)
 
 ## 相關收錄

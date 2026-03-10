@@ -213,9 +213,9 @@ agent.invoke('paper-write', '帮我审核一下这个论文大纲')
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[機器學習]] · [[自然語言處理]]
+相關概念：[[Prompt Engineering]] · [[Agent 框架]] · [[程式碼生成]]
 
-相關專案：[[xstongxue--best-prompts|xstongxue/best-prompts]]
+相關專案：[[xstongxue--best-prompts|xstongxue/best-prompts]] · [[HKUDS--CLI-Anything|CLI-Anything (軟體 → CLI)]] · [[autoclaw-cc--xiaohongshu-skills|小紅書 Skills]] · [[binance--binance-skills-hub|Binance Skills Hub]]
 
 [GitHub](https://github.com/xstongxue/best-skills)
 

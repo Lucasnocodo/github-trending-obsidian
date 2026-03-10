@@ -225,6 +225,8 @@ uv run train.py
 
 相關概念：[[自動化測試]] · [[機器學習]] · [[深度學習]]
 
+相關專案：[[karpathy--autoresearch|karpathy/autoresearch (原版，CUDA)]] · [[sanbuphy--nanoAgent|nanoAgent]]
+
 [GitHub](https://github.com/trevin-creator/autoresearch-mlx)
 
 ## 相關收錄
