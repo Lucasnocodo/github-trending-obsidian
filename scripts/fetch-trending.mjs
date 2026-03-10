@@ -1484,7 +1484,9 @@ function needsRefresh(content) {
          !content.includes('my_rating:') ||
          !content.includes('pushed_at:') ||
          !content.includes('aliases:') ||
-         !content.includes('## 優缺點分析');
+         !content.includes('## 優缺點分析') ||
+         !content.includes('## 相關收錄') ||
+         !content.includes('快速評估');
 }
 
 function hasLLMContent(content) {
