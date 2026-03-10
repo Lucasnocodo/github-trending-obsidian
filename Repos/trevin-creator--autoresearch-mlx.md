@@ -7,8 +7,8 @@ language: Python
 license: MIT
 description: "Apple Silicon (MLX) port of Karpathy's autoresearch — autonomous AI research loops on Mac, no PyTorch required."
 homepage: ""
-stars: 468
-stars_per_day: 234
+stars: 472
+stars_per_day: 236
 forks: 64
 open_issues: 3
 created: 2026-03-08
@@ -17,7 +17,7 @@ first_seen: 2026-03-10
 week: "2026-W11"
 category: "AI/ML"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
@@ -25,50 +25,49 @@ tags:
   - github
   - "category/ai_ml"
   - "lang/python"
-  - easy_install
 aliases:
   - "autoresearch-mlx"
   - "trevin-creator/autoresearch-mlx"
-  - "在 Apple Silicon 上運行的 Karpathy 的自動研究，無需 PyTorch。"
+  - "在 Apple Silicon 上執行 Karpathy 的自動研究，無需 PyTorch。"
 ---
 
 # autoresearch-mlx
 
-**468** stars · **234** stars/天 · 建立 2 天前 · Python · MIT
+**472** stars · **236** stars/天 · 建立 2 天前 · Python · MIT
 
-`個人專案` `easy-install`
+`個人專案`
 
 > [!summary] 一句話摘要
-> 在 Apple Silicon 上運行的 Karpathy 的自動研究，無需 PyTorch。
+> 在 Apple Silicon 上執行 Karpathy 的自動研究，無需 PyTorch。
 
 > [!abstract] 核心創新
-> 這個專案保留了 Karpathy 的設計規則，並在 Apple Silicon 上實現無需 PyTorch 的自動研究。
+> 這個移植版讓 Karpathy 的自動研究工具能在 Apple Silicon 上無縫運行。
 
 ## 專案簡介
 
-autoresearch-mlx 是 Karpathy 的自動研究算法的 Apple Silicon 移植版，專為 M1/M2/M3/M4 設計。它通過固定時間的自動研究循環，讓 AI 自動調整模型參數，並在每次實驗後進行評估。這個專案不需要 PyTorch 或 CUDA，使用 MLX 進行原生運行，並保留了原始設計規則，如 5 分鐘的實驗時間和單一可變的訓練腳本。與原版相比，這個移植版在 Apple Silicon 上的運行效率更高，特別是對於小型模型的訓練。這個專案適合希望在 Apple 硬體上進行自動化研究的開發者，值得一試。
+autoresearch-mlx 是 Karpathy 的自動研究工具的 Apple Silicon 移植版，專注於自動化的 AI 研究迴圈。這個專案使用 Python 開發，並完全依賴 MLX 而非 PyTorch，讓 Apple Silicon 的使用者能夠輕鬆運行。它保留了原始設計規則，並且在每次迭代中自動修改訓練程式，進行 5 分鐘的實驗，並根據結果進行版本控制。與原版相比，這個移植版在 Apple 硬體上運行更為流暢，並能夠在固定的時間內進行更多的實驗。對於 Apple Silicon 使用者來說，這是一個理想的選擇，特別是對於自動化研究的開發者。
 
 **技術棧**：`Python` · `MLX`
 
 ## 重點功能
 
-- 無需 PyTorch 或 CUDA，原生支持 Apple Silicon。
-- 固定時間的自動研究循環，提升實驗效率。
-- 支持單一可變的訓練腳本，簡化實驗流程。
-- 自動評估模型性能，快速迭代。
-- 適合小型模型的訓練，充分利用 Apple 硬體的優勢。
+- 無需 PyTorch，完全依賴 MLX。
+- 支持固定時間的自動研究迴圈。
+- 能夠自動修改訓練程式並進行版本控制。
+- 在 Apple Silicon 上運行流暢，無需額外配置。
+- 提供簡單的實驗設置和執行流程。
 
 ## 快速開始
 
-1. 安裝 uv 依賴
+1. 安裝 uv
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
-2. 安裝核心依賴
+2. 同步依賴
 ```bash
 uv sync
 ```
-3. 下載資料並訓練分詞器
+3. 下載數據並訓練分詞器
 ```bash
 uv run prepare.py
 ```
@@ -76,48 +75,52 @@ uv run prepare.py
 ```bash
 uv run train.py
 ```
+5. 開始自動化研究
+```bash
+指向 program.md 讓 AI 開始運行
+```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著 Apple Silicon 的普及，對於在這些設備上運行高效能 AI 應用的需求上升，autoresearch-mlx 正好滿足了這一需求。Karpathy 的名氣也吸引了許多開發者的注意，促使這個專案受到關注。
+> 隨著 Apple Silicon 的普及，開發者對於能夠在這些硬體上運行的工具需求增加。作者 trevin-creator 將 Karpathy 的創新理念帶入 Apple 硬體，這使得專案在開發者社群中受到關注。自動化研究的需求也隨著 AI 的發展而上升，這使得這個工具更具吸引力。
 
 ## 適合誰使用
 
-**目標受眾**：希望在 Apple Silicon 上進行自動化 AI 研究的開發者和研究者。
+**目標受眾**：對於使用 Apple Silicon 並需要自動化研究工具的開發者和研究人員。
 
 > [!example] 使用場景
-> - AI 研究員 用它來 自動化模型調整，因為它能在固定時間內進行多次實驗。
-> - 開發者 用它來 測試不同的模型參數，因為它不需要 PyTorch，運行更輕便。
-> - 學生 用它來 學習自動化研究的過程，因為它提供了簡單的實驗框架。
+> - AI 研究人員 用它來 自動化模型訓練過程，因為它能在 Apple Silicon 上高效運行。
+> - 開發者 用它來 測試不同的模型配置，因為它支持快速迭代和版本控制。
+> - 學生 用它來 學習自動化研究的流程，因為它簡化了實驗設置和執行。
 
 ## 架構分析
 
-專案採用簡單的三個核心檔案架構，分別負責資料準備、模型訓練和指令設定，讓 AI 自動進行實驗和評估。
+專案架構簡單，使用 MLX 進行模型訓練，資料流是數據準備 → 訓練模型 → 自動化研究迴圈。使用者只需編輯 program.md 來控制整個流程。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 無需 PyTorch，簡化安裝過程。
-> - 原生支持 Apple Silicon，運行效率高。
-> - 固定時間的實驗設計，提升研究效率。
+> - 無需 PyTorch，簡化了安裝過程。
+> - 在 Apple Silicon 上運行流暢，性能優越。
+> - 自動化研究流程簡單，易於使用。
 
 > [!danger] 缺點
 > - 僅限於 Apple Silicon 硬體，無法跨平台使用。
-> - 目前僅實現 AdamW 優化器，功能有限。
-> - 實驗週期較短，可能無法滿足大型模型的需求。
+> - 目前功能較為基礎，未來可能需要擴展。
+> - 實驗週期較短，對於深度學習模型的訓練可能不夠充分。
 
 > [!warning] 注意事項
-> - 僅支援 Apple Silicon 硬體。
-> - 目前僅實現 AdamW 優化器，未來可能擴展。
-> - 實驗週期較短，可能不適合大型模型。
+> - 僅支援 Apple Silicon 硬體，對於其他平台無法運行。
+> - 目前僅實現了 AdamW 優化器，未來可能擴展。
+> - 實驗週期較短，可能無法進行深度的模型訓練。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| Karpathy's autoresearch | 原版需要 PyTorch，而這個版本無需 PyTorch，專為 Apple Silicon 優化。 |
-| Ray Tune | Ray Tune 提供更全面的超參數調整，而 autoresearch-mlx 專注於固定時間的自動研究。 |
+| Karpathy's autoresearch | 原版依賴 PyTorch，無法在 Apple Silicon 上原生運行。 |
+| Ray Tune | 雖然也支援自動化調整，但不專注於固定時間的迴圈。 |
 
 ## 技術細節
 
@@ -136,8 +139,7 @@ uv run train.py
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，近期有更新和回應。
-**連結**：[文件](https://github.com/trevin-creator/autoresearch-mlx#readme)
+**社群活躍度**：社群活躍度中等，持續有更新。
 
 ## README 摘錄
 
@@ -202,7 +204,7 @@ uv run train.py
 
 ## 延伸閱讀
 
-相關概念：[[自動化研究]] · [[模型調整]] · [[Apple Silicon]] · [[無監督學習]] · [[實驗設計]]
+相關概念：[[自動化研究]] · [[機器學習]] · [[模型訓練]] · [[版本控制]] · [[Apple Silicon]]
 
 [GitHub](https://github.com/trevin-creator/autoresearch-mlx)
 

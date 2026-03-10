@@ -7,10 +7,10 @@ language: Python
 license: N/A
 description: "AI agents running research on single-GPU nanochat training automatically"
 homepage: ""
-stars: 21959
-stars_per_day: 7320
-forks: 2782
-open_issues: 82
+stars: 22033
+stars_per_day: 7344
+forks: 2796
+open_issues: 83
 created: 2026-03-06
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
@@ -28,7 +28,7 @@ tags:
 aliases:
   - "autoresearch"
   - "karpathy/autoresearch"
-  - "讓 AI agent 自動進行單 GPU 的 LLM 訓練研究。"
+  - "讓 AI agents 自動進行單 GPU nanochat 訓練的研究。"
 ---
 
 # autoresearch
@@ -36,81 +36,77 @@ aliases:
 **22.0k** stars · **7.3k** stars/天 · 建立 3 天前 · Python · 未標註授權
 
 > [!summary] 一句話摘要
-> 讓 AI agent 自動進行單 GPU 的 LLM 訓練研究。
+> 讓 AI agents 自動進行單 GPU nanochat 訓練的研究。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於讓 AI agent 自動修改訓練代碼並進行實驗。
+> 這個專案讓 AI agents 自動進行 LLM 訓練，並能夠自我修改代碼以優化結果。
 
 ## 專案簡介
 
-Autoresearch 是一個讓 AI agent 自動進行 LLM 訓練的專案，設計上讓 agent 在固定的時間內進行實驗，修改代碼並評估結果。它的核心是透過一個簡化的單 GPU 訓練流程，讓 agent 在不需要人為干預的情況下進行迭代。與其他自動化研究工具不同，這個專案專注於使用 Markdown 文件來指導 agent 的行為，並且允許 agent 自由修改訓練代碼。這種設計使得研究者可以在早上查看 agent 的實驗結果，並且能夠快速迭代模型。雖然目前的實作相對簡單，但對於希望探索自動化研究的開發者來說，這是一個值得嘗試的工具。
+Autoresearch 專案讓 AI agents 在單 GPU 環境下自動進行 LLM 訓練，透過自我修改代碼來優化模型。這個專案的核心在於一個簡化的訓練流程，AI agents 會在固定的 5 分鐘內進行訓練，並根據結果決定是否保留或丟棄修改。與傳統的研究流程相比，這個方法減少了人類干預，讓 AI agents 自主探索最佳的訓練策略。這個專案的設計非常簡潔，僅包含幾個關鍵文件，並且使用 Markdown 文件來指導 AI agents 的行為。這樣的設計使得使用者能夠輕鬆地設定和調整實驗，但也需要注意其對計算資源的需求。總體來說，這是一個前瞻性的專案，適合對自動化研究有興趣的開發者和研究者。
 
 **技術棧**：`Python` · `Jupyter Notebook`
 
 ## 重點功能
 
-- 自動進行 LLM 訓練實驗，無需人為干預。
-- 使用 Markdown 文件指導 agent 的行為。
-- 固定的訓練時間限制，促進快速迭代。
-- 簡化的單 GPU 訓練流程，降低使用門檻。
-- 提供實驗結果的日誌，方便檢視進展。
+- 自動化的 LLM 訓練流程
+- AI agents 自我修改代碼
+- 固定的訓練時間限制
+- 簡化的代碼結構
+- 使用 Markdown 文件指導 AI agents
 
 ## 快速開始
 
-1. 準備訓練數據和模型
+1. 準備數據和環境
 ```bash
-python prepare.py
+執行 prepare.py 以準備訓練數據
 ```
 2. 開始訓練
 ```bash
-python train.py
-```
-3. 查看實驗結果
-```bash
-cat results.log
+執行 train.py 以開始訓練
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> Karpathy 是 AI 領域的知名人物，這個專案響應了對於自動化研究的需求。隨著 AI 技術的快速發展，對於這樣的工具需求也在上升，尤其是在研究效率的背景下。
+> Karpathy 的名氣和對 AI 研究的貢獻使得這個專案受到廣泛關注。隨著 AI 技術的進步，自動化研究的需求日益增加，這個專案正好切中這一點。其獨特的設計理念和實驗方法吸引了許多開發者的興趣。
 
 ## 適合誰使用
 
-**目標受眾**：對於自動化研究和 AI 訓練有興趣的開發者和研究人員。
+**目標受眾**：對自動化 AI 研究有興趣的開發者和研究者。
 
 > [!example] 使用場景
-> - 研究人員 用它來 自動化 LLM 訓練，因為這樣可以節省時間並提高效率。
-> - 開發者 用它來 測試不同的模型配置，因為 agent 可以自動進行實驗。
-> - 學生 用它來 理解 AI 訓練的過程，因為這個工具提供了實際的操作經驗。
+> - 研究者 用它來 自動化 LLM 訓練過程，因為這樣可以節省時間並提高效率。
+> - 學生 用它來 學習如何設計 AI agents，因為這樣可以獲得實際操作經驗。
+> - 開發者 用它來 測試不同的模型參數，因為這樣可以快速迭代和優化。
 
 ## 架構分析
 
-專案包含三個主要文件，分別負責數據準備、訓練和指導 agent 的行為，整體設計簡潔明瞭，易於理解。
+專案架構簡單，主要由 prepare.py 和 train.py 組成，數據流是 準備數據 → AI agent 執行訓練 → 訓練結果回報。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化訓練過程，節省時間。
-> - 使用 Markdown 文件簡化 agent 指導。
-> - 固定的訓練時間促進快速迭代。
+> - 自動化訓練過程，節省人力
+> - AI agents 能夠自主探索最佳參數
+> - 簡單的代碼結構，易於理解
 
 > [!danger] 缺點
-> - 僅支援單 GPU，無法擴展。
-> - 功能相對簡單，無法滿足複雜需求。
-> - 需要一定的技術背景來設置和使用。
+> - 僅適用於單 GPU 環境
+> - 需要大量計算資源
+> - 對新手可能有一定的學習曲線
 
 > [!warning] 注意事項
-> - 僅支援單 GPU 環境，無法擴展到多 GPU。
-> - 需要一定的技術背景來設置和使用。
-> - 目前的實作較為簡單，功能有限。
+> - 僅支援單 GPU 環境
+> - 需要對 Python 有一定了解
+> - 訓練過程可能需要大量計算資源
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 2.8k |
-| Open Issues | 82 |
+| Open Issues | 83 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-06 |
 | Repo 大小 | 255 KB |
@@ -151,7 +147,7 @@ cat results.log
 
 ## 延伸閱讀
 
-相關概念：[[自動化研究]] · [[AI 訓練]] · [[強化學習]]
+相關概念：[[自動化研究]] · [[AI agents]] · [[深度學習]]
 
 [GitHub](https://github.com/karpathy/autoresearch)
 

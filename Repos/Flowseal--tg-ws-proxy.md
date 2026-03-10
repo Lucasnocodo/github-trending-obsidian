@@ -7,7 +7,7 @@ language: Python
 license: MIT
 description: "Local SOCKS5 proxy server for partial bypassing of Telegram loading"
 homepage: ""
-stars: 777
+stars: 778
 stars_per_day: 130
 forks: 14
 open_issues: 4
@@ -29,46 +29,46 @@ tags:
 aliases:
   - "tg-ws-proxy"
   - "Flowseal/tg-ws-proxy"
-  - "提供 Telegram 的 SOCKS5 代理，幫助加速連線。"
+  - "提供本地 SOCKS5 代理伺服器，幫助 Telegram 加速載入。"
 ---
 
 # tg-ws-proxy
 
-**777** stars · **130** stars/天 · 建立 6 天前 · Python · MIT
+**778** stars · **130** stars/天 · 建立 6 天前 · Python · MIT
 
 `v1.0.4` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供 Telegram 的 SOCKS5 代理，幫助加速連線。
+> 提供本地 SOCKS5 代理伺服器，幫助 Telegram 加速載入。
 
 > [!abstract] 核心創新
-> 專為 Telegram 設計的 SOCKS5 代理，能夠提升連線速度。
+> 專為 Telegram 設計的本地 SOCKS5 代理解決方案。
 
 ## 專案簡介
 
-這個專案提供一個本地的 SOCKS5 代理伺服器，專門用於 Telegram Desktop，能夠透過 WebSocket 連接來加速 Telegram 的加載速度。它使用 Python 開發，並能夠自動切換連接方式以確保穩定性。與其他代理工具相比，tg-ws-proxy 專注於 Telegram 的優化，能夠有效提升檔案下載和訊息加載的速度。實際使用中，這個工具能夠顯著改善 Telegram 的使用體驗，但仍需注意其對於不同網路環境的適應性。這個專案適合需要提升 Telegram 使用效率的用戶。
+它讓 Telegram 使用者能夠透過本地 SOCKS5 代理加速訊息和媒體的載入。這個工具使用 Python 實作，透過 WebSocket 連接來轉發流量，從而改善 Telegram 的使用體驗。與其他代理工具相比，tg-ws-proxy 專注於 Telegram 的特定需求，提供了簡單的設置和使用介面。實際使用中，使用者可以顯著減少載入時間，特別是在網路不穩定的情況下。這個專案適合希望提升 Telegram 使用效率的用戶。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 提供本地 SOCKS5 代理，方便 Telegram 使用。
-- 自動切換連接方式以確保穩定性。
-- 支援 Windows 和 Linux 平台。
-- 簡單的 GUI 設定，方便用戶操作。
-- 詳細的日誌記錄功能，便於故障排除。
+- 本地 SOCKS5 代理伺服器，簡單易用。
+- 透過 WebSocket 轉發 Telegram 流量，提升速度。
+- 支援多種配置選項，靈活應對不同需求。
+- 提供 GUI 設定介面，方便用戶操作。
+- 詳細的日誌功能，便於故障排除。
 
 ## 快速開始
 
-1. 下載 Windows 執行檔
+1. 下載最新版本的執行檔
 ```bash
-前往 https://github.com/Flowseal/tg-ws-proxy/releases
+從 releases 頁面下載 TgWsProxy.exe
 ```
 2. 啟動代理伺服器
 ```bash
 python windows.py
 ```
-3. 在 Telegram 中設定 SOCKS5 代理
+3. 設定 Telegram 使用 SOCKS5 代理
 ```bash
 右鍵點擊系統托盤圖示，選擇「打開 Telegram」
 ```
@@ -76,44 +76,44 @@ python windows.py
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著 Telegram 使用者的增加，對於加速其連線的需求也隨之上升，作者 Flowseal 的背景使得這個專案能夠迅速獲得關注。特別是在某些地區，Telegram 的連線速度較慢，這個工具提供了一個有效的解決方案。
+> 在 Telegram 使用者中，對於加速載入的需求日益增加，特別是面對網路延遲的挑戰。作者 Flowseal 的開源背景也促進了這個專案的關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要提升 Telegram 使用效率的普通用戶和開發者。
+**目標受眾**：希望提升 Telegram 使用效率的普通用戶和開發者。
 
 > [!example] 使用場景
-> - 普通用戶用它來加速 Telegram 的檔案下載，因為它能改善連線速度。
-> - 開發者用它來測試 Telegram 應用的性能，因為它提供了 SOCKS5 代理功能。
-> - 網路管理員用它來分析 Telegram 的流量，因為它能夠捕捉和轉發數據。
+> - 普通用戶用它來加速 Telegram 的載入，因為可以減少等待時間。
+> - 開發者用它來測試 Telegram 應用，因為能夠輕鬆設置代理。
+> - 技術愛好者用它來探索 Telegram 的網路行為，因為提供了詳細的日誌功能。
 
 ## 架構分析
 
-專案架構簡單，使用 Python 建立本地 SOCKS5 代理，並透過 WebSocket 轉發流量。資料流為：Telegram Desktop → SOCKS5 代理 → WebSocket 伺服器 → Telegram 伺服器。
+專案架構簡單，透過 Python 實作本地 SOCKS5 代理，並將流量轉發至 Telegram 的 WebSocket 伺服器。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用，快速提升 Telegram 使用效率。
-> - 提供詳細的日誌記錄，便於故障排除。
-> - 支援多平台，方便不同用戶使用。
+> - 簡單易用，快速設置。
+> - 專為 Telegram 優化，提升使用體驗。
+> - 提供詳細的日誌，方便故障排除。
 
 > [!danger] 缺點
-> - 僅限於 Telegram Desktop，無法應用於手機版。
-> - 需要適當的網路設定，對某些用戶來說可能較為複雜。
-> - 在特定網路環境下可能無法達到預期效果。
+> - 僅支援 Telegram Desktop，無法擴展至其他應用。
+> - 需要手動設定，對新手不友好。
+> - 某些功能在 Windows 上可能不穩定。
 
 > [!warning] 注意事項
-> - 僅支援 Telegram Desktop，對於手機版無法使用。
-> - 需要適當的網路設定以確保代理正常運行。
-> - 在某些網路環境下可能無法達到預期效果。
+> - 僅支援 Telegram Desktop，對於行動版無法使用。
+> - 需要手動設定 Telegram 以使用代理。
+> - 某些功能可能在 Windows 上表現不佳。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| Shadowsocks | Shadowsocks 是通用的代理工具，並不專注於 Telegram 的優化。 |
-| ProxyCap | ProxyCap 是一個更為複雜的代理管理工具，使用上較為繁瑣。 |
+| Shadowsocks | Shadowsocks 是通用的代理工具，無法針對 Telegram 進行優化。 |
+| ProxyCap | ProxyCap 是商業工具，使用上較為複雜且需付費。 |
 
 ## 技術細節
 
@@ -219,7 +219,7 @@ python windows.py
 
 ## 延伸閱讀
 
-相關概念：[[SOCKS5 代理]] · [[WebSocket]] · [[網路加速]] · [[Telegram]]
+相關概念：[[SOCKS5]] · [[WebSocket]] · [[網路代理]] · [[即時通訊]]
 
 [GitHub](https://github.com/Flowseal/tg-ws-proxy)
 

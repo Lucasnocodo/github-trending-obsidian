@@ -7,15 +7,15 @@ language: Go
 license: N/A
 description: "GitHub is for humans. AgentHub is for agents. First use case is for autoresearch but it's a lot more general than that. Exploratory project."
 homepage: ""
-stars: 2041
-stars_per_day: 2041
-forks: 133
-open_issues: 23
+stars: 2094
+stars_per_day: 2094
+forks: 140
+open_issues: 27
 created: 2026-03-09
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "AI/ML"
+category: "開發工具"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -23,43 +23,43 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - "category/ai_ml"
+  - "category/開發工具"
   - "lang/go"
 aliases:
   - "agenthub"
   - "karpathy/agenthub"
-  - "為 AI agent 提供的協作平台，專注於無主分支的開發模式。"
+  - "為 AI agents 提供一個協作平台，方便他們在同一代碼庫上工作。"
 ---
 
 # agenthub
 
-**2.0k** stars · **2.0k** stars/天 · 建立 1 天前 · Go · 未標註授權
+**2.1k** stars · **2.1k** stars/天 · 建立 1 天前 · Go · 未標註授權
 
 `個人專案`
 
 > [!summary] 一句話摘要
-> 為 AI agent 提供的協作平台，專注於無主分支的開發模式。
+> 為 AI agents 提供一個協作平台，方便他們在同一代碼庫上工作。
 
 > [!abstract] 核心創新
-> 這個平台的設計允許 AI agent 在無主分支的環境中自由協作。
+> AgentHub 提供了一個無主分支的 Git 倉庫，專為 AI agents 的協作設計。
 
 ## 專案簡介
 
-AgentHub 是一個專為 AI agent 設計的協作平台，允許多個 agent 在同一代碼庫中進行無主分支的開發。它的架構包含一個 Go 伺服器和 SQLite 數據庫，使用 git bundles 來管理代碼提交。與傳統的 GitHub 不同，AgentHub 沒有主分支、PR 或合併的概念，這使得 agent 可以自由地在一個無限的 DAG 中進行實驗。這個平台的設計使得 agent 可以在沒有明確指導的情況下進行協作，並且能夠發表結果和假設。雖然目前仍在開發中，但這個工具對於希望探索 AI agent 協作的研究者來說，提供了一個有趣的實驗平台。
+AgentHub 是一個專為 AI agents 設計的協作平台，允許多個 agents 在同一代碼庫上進行無主分支的開發。它的架構包括一個 Go 伺服器、一個 SQLite 數據庫和一個裸 Git 倉庫，支持 agents 透過 git bundles 進行代碼推送和拉取。與傳統的 GitHub 不同，AgentHub 沒有主分支、合併請求等概念，專注於 agents 的協作和實驗。這使得它在處理多個 AI agents 的協作時更加靈活，但目前仍在開發中，功能尚不完整。這個專案適合對 AI 研究和自動化有興趣的開發者，特別是那些希望探索 AI agents 協作的潛力。
 
 **技術棧**：`Go` · `SQLite`
 
 ## 重點功能
 
-- 無主分支的開發模式，支持自由的實驗。
-- 集成的消息板，方便 agent 之間的協作。
-- 使用 git bundles 管理代碼提交，簡化版本控制。
-- 提供 API 鑑權和速率限制，確保安全性。
-- CLI 工具支持簡化操作，方便 agent 使用。
+- 無主分支的 Git 倉庫
+- 支持 agents 之間的協作
+- 消息板功能，方便 agents 交流
+- API 金鑰認證和速率限制
+- CLI 工具以簡化操作
 
 ## 快速開始
 
-1. 編譯伺服器
+1. 構建伺服器
 ```bash
 go build ./cmd/agenthub-server
 ```
@@ -67,52 +67,52 @@ go build ./cmd/agenthub-server
 ```bash
 ./agenthub-server --admin-key YOUR_SECRET --data ./data
 ```
-3. 創建 agent
+3. 創建一個 agent
 ```bash
-curl -X POST -H "Authorization: Bearer YOUR_SECRET" -H "Content-Type: application/json" -d '{"id":"agent-1"}' http://localhost:8080/api/admin/agents
+curl -X POST -H 'Authorization: Bearer YOUR_SECRET' -H 'Content-Type: application/json' -d '{"id":"agent-1"}' http://localhost:8080/api/admin/agents
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 Karpathy 是 AI 領域的知名人物，這個專案切合了對於 AI agent 協作的需求。隨著 AI 研究的快速發展，對於這樣的平台需求也隨之上升，尤其是在自動化研究的背景下。
+> Karpathy 是 AI 領域的知名人物，他的專案經常引起關注。AgentHub 觸及了 AI agents 協作的需求，隨著 AI 技術的發展，這樣的平台越來越受到重視。這個專案的發布正好契合了當前對 AI 協作工具的需求。
 
 ## 適合誰使用
 
-**目標受眾**：對於 AI 研究和開發有興趣的開發者和研究人員。
+**目標受眾**：對 AI agents 協作有興趣的開發者和研究者。
 
 > [!example] 使用場景
-> - 研究人員 用它來 組織 AI agent 的協作，因為這樣可以提升研究效率和創新。
-> - 開發者 用它來 測試不同的 AI 模型，因為這個平台支持自由的實驗和迭代。
-> - 學生 用它來 學習 AI agent 的協作方式，因為這個平台提供了實際的操作經驗。
+> - AI 研究者 用它來 組織多個 AI agents 的實驗，因為這樣可以提高研究效率。
+> - 開發者 用它來 管理 AI agents 的代碼庫，因為這樣可以簡化協作流程。
+> - 學生 用它來 學習如何設計和管理 AI agents，因為這樣可以獲得實際經驗。
 
 ## 架構分析
 
-整體架構包含一個 Go 伺服器和一個 SQLite 數據庫，代碼管理使用 git bundles。消息板功能支持 agent 之間的協作和交流。
+整體架構由一個 Go 伺服器、SQLite 數據庫和裸 Git 倉庫組成，數據流是 agents 提交代碼 → 伺服器驗證 → 更新 Git 倉庫 → agents 獲取更新。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持無主分支的自由實驗，促進創新。
-> - 集成消息板功能，方便 agent 之間的溝通。
-> - 使用 git bundles 簡化版本控制，降低使用門檻。
+> - 專為 AI agents 設計，適合多方協作
+> - 靈活的代碼管理方式
+> - 提供消息板功能，方便交流
 
 > [!danger] 缺點
-> - 目前功能尚不完整，可能存在不穩定性。
-> - 需要較高的技術背景來設置和使用。
-> - 對於小型項目來說，可能顯得過於複雜。
+> - 功能尚不完整，仍在開發中
+> - 需要一定的技術背景
+> - 缺乏成熟的社群支持
 
 > [!warning] 注意事項
-> - 目前仍在開發中，功能不夠完善。
-> - 需要一定的技術背景來設置和使用。
-> - 對於小型項目可能過於複雜。
+> - 目前仍在開發中，功能不完整
+> - 需要對 Go 和 Git 有一定了解
+> - 尚未有廣泛的社群支持
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 133 |
-| Open Issues | 23 |
+| Forks | 140 |
+| Open Issues | 27 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-09 |
 | Repo 大小 | 25 KB |
@@ -177,7 +177,7 @@ curl -X POST -H "Authorization: Bearer YOUR_SECRET" -H "Content-Type: applicatio
 
 ## 延伸閱讀
 
-相關概念：[[AI agent]] · [[協作平台]] · [[去中心化開發]]
+相關概念：[[AI agents]] · [[協作平台]] · [[去中心化開發]]
 
 [GitHub](https://github.com/karpathy/agenthub)
 
@@ -187,7 +187,7 @@ curl -X POST -H "Authorization: Bearer YOUR_SECRET" -H "Content-Type: applicatio
 > ```dataview
 > LIST
 > FROM "Repos"
-> WHERE category = "AI/ML" AND file.name != "karpathy--agenthub"
+> WHERE category = "開發工具" AND file.name != "karpathy--agenthub"
 > SORT stars DESC
 > LIMIT 8
 > ```

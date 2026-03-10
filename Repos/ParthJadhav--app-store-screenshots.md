@@ -7,8 +7,8 @@ language: N/A
 license: N/A
 description: "end to end app store screenshot creation using AI"
 homepage: "https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots"
-stars: 775
-stars_per_day: 258
+stars: 783
+stars_per_day: 261
 forks: 55
 open_issues: 1
 created: 2026-03-07
@@ -34,87 +34,83 @@ tags:
 aliases:
   - "app-store-screenshots"
   - "ParthJadhav/app-store-screenshots"
-  - "使用 AI 自動生成 iOS 應用的 App Store 截圖，簡化開發流程。"
+  - "利用 AI 自動生成符合 Apple 規範的 App Store 截圖，簡化開發流程。"
 ---
 
 # app-store-screenshots
 
-**775** stars · **258** stars/天 · 建立 3 天前 · N/A · 未標註授權
+**783** stars · **261** stars/天 · 建立 3 天前 · N/A · 未標註授權
 
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 使用 AI 自動生成 iOS 應用的 App Store 截圖，簡化開發流程。
+> 利用 AI 自動生成符合 Apple 規範的 App Store 截圖，簡化開發流程。
 
 > [!abstract] 核心創新
-> 這個專案能夠自動生成廣告風格的 App Store 截圖，簡化開發流程。
+> 這個專案利用 AI 自動生成符合 Apple 規範的 App Store 截圖，簡化了開發者的工作流程。
 
 ## 專案簡介
 
-這個專案提供了一個 AI 驅動的工具，能夠自動生成 iOS 應用的 App Store 截圖，並且設計成廣告風格。它使用 Next.js 框架來搭建專案，並在用戶提供應用的品牌和風格偏好後，自動生成所需的截圖。與其他截圖生成工具相比，這個專案特別強調廣告風格的設計，而不僅僅是 UI 展示。使用者需要在 6.1 吋模擬器上進行截圖，這樣可以避免後續的調整。實際使用中，這個工具能夠快速生成符合 Apple 要求的多種尺寸的截圖，並且提供了簡單的安裝和使用方式。總體來說，這是一個適合開發者和設計師使用的工具，特別是對於需要快速生成市場推廣素材的團隊。
+這個專案是一個 AI 驅動的工具，專門用於生成符合 Apple 規範的 App Store 截圖。它通過詢問用戶關於應用的品牌、功能和風格偏好，然後自動搭建一個 Next.js 專案來設計和生成截圖。與其他截圖工具相比，這個專案的獨特之處在於它不僅生成截圖，還提供了廣告風格的設計，並自動導出符合 Apple 要求的多種解析度。使用者只需回答幾個問題，便能獲得高質量的截圖，這大大簡化了開發者的工作流程。這個工具特別適合需要快速生成 App Store 截圖的開發者，並且能夠顯著提高效率。
 
 **技術棧**：`Next.js`
 
 ## 重點功能
 
-- 自動生成符合 Apple 要求的多種尺寸截圖。
-- 設計截圖為廣告風格，而非單純的 UI 展示。
-- 使用 Next.js 框架搭建，易於整合。
-- 支持用戶自定義品牌和風格偏好。
-- 提供簡單的安裝和使用方式。
+- 自動生成符合 Apple 規範的 App Store 截圖。
+- 詢問用戶品牌和功能偏好，提供個性化設計。
+- 搭建 Next.js 專案，簡化開發流程。
+- 生成廣告風格的截圖，提升市場吸引力。
+- 支持多種解析度的截圖導出，滿足 Apple 要求。
 
 ## 快速開始
 
-1. 安裝 app-store-screenshots
+1. 使用 npx 安裝技能
 ```bash
 npx skills add ParthJadhav/app-store-screenshots
 ```
 2. 啟動截圖生成
 ```bash
-告訴 AI 生成 App Store 截圖
-```
-3. 提供應用的品牌和風格偏好
-```bash
-根據 AI 的提示輸入相關信息
+告訴 Claude Code 生成 App Store 截圖。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著 iOS 應用開發的普及，開發者對於快速生成市場推廣素材的需求越來越高。這個專案的作者在 AI 和開發工具方面有豐富經驗，能夠切中開發者的痛點。特別是在 AI 技術逐漸成熟的背景下，這類工具的需求也隨之增加。
+> 隨著移動應用市場的競爭加劇，開發者對於高質量截圖的需求增加，這個專案正好滿足了這一需求。作者的背景和對於 AI 技術的應用，使得這個工具在開發者中引起了廣泛關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成 iOS 應用市場推廣素材的開發者和設計師。
+**目標受眾**：需要快速生成 App Store 截圖的移動應用開發者和市場行銷人員。
 
 > [!example] 使用場景
-> - 開發者 用它來 自動生成 App Store 截圖，因為它能夠快速提供符合 Apple 標準的素材。
-> - 設計師 用它來 創建市場推廣圖片，因為它強調廣告風格的設計。
-> - 產品經理 用它來 簡化截圖生成流程，因為它能夠自動化處理多種尺寸的截圖。
+> - 開發者 用它來 自動生成 App Store 截圖，因為 可以節省時間和精力。
+> - 市場行銷人員 用它來 創建吸引人的廣告截圖，因為 提升應用的下載率。
+> - 產品經理 用它來 確保截圖符合 Apple 規範，因為 減少上架過程中的問題。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速生成符合 Apple 標準的截圖。
-> - 強調廣告風格設計，提升市場吸引力。
-> - 易於安裝和使用，適合各種開發者。
+> - 自動生成高質量的 App Store 截圖，節省時間。
+> - 提供個性化設計，提升市場吸引力。
+> - 支持多種解析度，符合 Apple 要求。
 
 > [!danger] 缺點
-> - 僅限於 iOS 應用，無法擴展到其他平台。
-> - 需要特定的模擬器來生成截圖。
-> - 對於品牌風格的支持可能有限。
+> - 需要特定的模擬器來捕捉截圖。
+> - 僅支持 iOS 應用，限制使用範圍。
+> - 對於複雜應用，可能需要額外調整。
 
 > [!warning] 注意事項
-> - 需要在 6.1 吋模擬器上進行截圖。
-> - 僅支持 iOS 應用，無法用於其他平台。
-> - 對於特定品牌風格的支持可能有限。
+> - 需要使用 6.1 吋模擬器來捕捉截圖。
+> - 僅支持 iOS 應用，無法用於 Android。
+> - 對於複雜應用，可能需要手動調整。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| Screenshot Generator | 這個工具可能不支持廣告風格的設計。 |
-| App Launchpad | 這個工具可能缺乏自動化生成的功能。 |
+| Screenshot Generator | 其他工具可能不支持 AI 驅動的個性化設計。 |
+| AppLaunchpad | AppLaunchpad 提供更多的市場行銷功能，而這個專案專注於截圖生成。 |
 
 ## 技術細節
 
@@ -220,7 +216,7 @@ npx skills add ParthJadhav/app-store-screenshots
 
 ## 延伸閱讀
 
-相關概念：[[AI 驅動的設計工具]] · [[市場推廣素材生成]] · [[iOS 應用開發]]
+相關概念：[[移動應用開發]] · [[市場行銷]] · [[AI 驅動工具]]
 
 [GitHub](https://github.com/ParthJadhav/app-store-screenshots) · [官方網站](https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots)
 

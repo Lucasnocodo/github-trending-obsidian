@@ -7,8 +7,8 @@ language: Python
 license: MIT
 description: "Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen"
 homepage: "https://pypi.org/project/mcp2cli/"
-stars: 490
-stars_per_day: 490
+stars: 491
+stars_per_day: 491
 forks: 21
 open_issues: 0
 created: 2026-03-09
@@ -29,34 +29,34 @@ tags:
 aliases:
   - "mcp2cli"
   - "knowsuchagency/mcp2cli"
-  - "讓任何 MCP 伺服器或 OpenAPI 規格即時轉換為 CLI，無需代碼生成。"
+  - "將任何 MCP 伺服器或 OpenAPI 規範即時轉換為 CLI，無需代碼生成。"
 ---
 
 # mcp2cli
 
-**490** stars · **490** stars/天 · 建立 1 天前 · Python · MIT
+**491** stars · **491** stars/天 · 建立 1 天前 · Python · MIT
 
 `easy-install`
 
 > [!summary] 一句話摘要
-> 讓任何 MCP 伺服器或 OpenAPI 規格即時轉換為 CLI，無需代碼生成。
+> 將任何 MCP 伺服器或 OpenAPI 規範即時轉換為 CLI，無需代碼生成。
 
 > [!abstract] 核心創新
-> 無需代碼生成即可即時將任何 MCP 伺服器或 OpenAPI 規格轉換為 CLI。
+> 無需代碼生成，能即時將 MCP 伺服器或 OpenAPI 規範轉換為 CLI。
 
 ## 專案簡介
 
-這個工具能夠將 MCP 伺服器或 OpenAPI 規格轉換為 CLI，讓用戶可以直接在命令行中與 API 互動。它使用 Python 實現，並支援 OAuth 認證，能夠自動處理令牌的獲取和刷新。與其他 CLI 工具相比，它不需要預先生成代碼，這意味著開發者可以更快地進行 API 測試和調用。使用者可以透過簡單的命令與 API 進行交互，並且可以在命令行中直接使用 OAuth 認證，這在許多 CLI 工具中並不常見。整體來看，這個工具對於需要頻繁與 API 互動的開發者來說是非常實用的，尤其是在快速迭代的開發環境中。值得一試，特別是對於那些希望減少代碼生成過程的開發者。
+這個工具讓你能夠在運行時將 MCP 伺服器或 OpenAPI 規範轉換為命令列介面。它使用 Python 開發，並透過簡單的命令行指令與 API 進行互動，支援 OAuth 認證和環境變數的安全管理。與其他 CLI 工具相比，mcp2cli 的獨特之處在於它的即時生成能力，無需預先生成代碼，節省了大量的開發時間和資源。實際使用中，它能有效減少 API 調用中的 token 浪費，並且支援多種認證方式。這個專案的成熟度高，適合需要快速集成 API 的開發者使用。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 即時將 MCP 伺服器或 OpenAPI 規格轉換為 CLI。
-- 支援 OAuth 認證，自動處理令牌獲取和刷新。
-- 可透過命令行直接與 API 互動，無需代碼生成。
-- 支援多種傳輸方式，包括 HTTP 和 SSE。
-- 敏感信息可從環境變量或文件中讀取，增強安全性。
+- 即時將 MCP 伺服器或 OpenAPI 規範轉換為 CLI。
+- 支援 OAuth 認證，簡化安全管理。
+- 支持從環境變數或文件讀取敏感信息。
+- 自動處理 token 的獲取和刷新。
+- 提供多種 API 調用方式，包括 HTTP 和 SSE。
 
 ## 快速開始
 
@@ -72,35 +72,37 @@ uvx mcp2cli --help
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者背景顯示他們在開源社群中活躍，這個工具切中了開發者對於快速、靈活 API 交互的需求。隨著微服務架構的普及，對於能夠即時與 API 互動的工具需求上升，這使得 mcp2cli 在當前的開發環境中變得特別受歡迎。
+> 這個專案由 knowsuchagency 團隊開發，專注於簡化 API 的使用流程，切合開發者對於快速開發和簡化流程的需求。隨著 API 整合的需求上升，這個工具提供了一個即時且靈活的解決方案，讓開發者能夠快速上手。近期的開源趨勢也促使了這類工具的流行。
 
 ## 適合誰使用
 
-**目標受眾**：需要與多個 API 互動的開發者和工程師。
+**目標受眾**：需要快速集成和測試 API 的開發者和工程師。
 
 > [!example] 使用場景
-> - 後端工程師 用它來 測試 API，因為可以快速生成 CLI 來與不同的服務進行互動。
-> - DevOps 工程師 用它來 自動化 API 認證流程，因為它支援 OAuth 認證並自動管理令牌。
-> - 前端開發者 用它來 直接調用後端服務，因為無需生成代碼即可快速測試 API 功能。
+> - 後端工程師 用它來 連接 MCP 伺服器，因為 他們需要快速測試 API 功能。
+> - DevOps 工程師 用它來 自動化 API 調用，因為 他們希望減少手動操作的錯誤。
+> - AI 開發者 用它來 整合 OpenAPI 規範，因為 他們需要快速構建和測試 AI 代理的能力。
 
 ## 架構分析
 
-這個工具主要是以命令行介面為核心，通過 Python 實現與 API 的互動，並支援 OAuth 認證來增強安全性。用戶可以直接在命令行中輸入指令，工具會即時處理 API 請求並返回結果。
+專案採用簡單的命令列工具架構，使用 Python 進行 API 調用，並透過命令行參數管理認證和請求。用戶輸入的命令直接轉換為對應的 API 調用，實現即時互動。
 
 ## 優缺點分析
 
 > [!success] 優點
 > - 無需代碼生成，快速上手。
-> - 支援 OAuth 認證，增強安全性。
-> - 靈活的 API 互動方式，適合快速開發。
+> - 支援多種認證方式，靈活性高。
+> - 減少 API 調用中的 token 浪費。
 
 > [!danger] 缺點
-> - 僅支援特定類型的 API。
-> - 需要一定的 Python 環境配置。
+> - 僅限於 Python 環境使用。
+> - 對於複雜的 API 可能需要額外配置。
+> - 早期版本可能存在不穩定性。
 
 > [!warning] 注意事項
-> - 目前僅支援 MCP 伺服器和 OpenAPI 規格。
-> - 需要 Python 環境來運行。
+> - 僅支援 Python 環境。
+> - 對於大型 API 可能需要額外的性能調整。
+> - 早期版本可能存在不穩定的情況。
 
 ## 技術細節
 
@@ -207,7 +209,7 @@ uvx mcp2cli --help
 
 ## 延伸閱讀
 
-相關概念：[[API 測試]] · [[命令行介面]] · [[OAuth 認證]] · [[微服務架構]]
+相關概念：[[API 整合]] · [[命令列介面]] · [[OAuth 認證]]
 
 [GitHub](https://github.com/knowsuchagency/mcp2cli) · [官方網站](https://pypi.org/project/mcp2cli/)
 

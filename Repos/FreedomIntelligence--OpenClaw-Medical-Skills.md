@@ -7,9 +7,9 @@ language: Python
 license: N/A
 description: "The largest open-source medical AI skills library for OpenClaw🦞."
 homepage: ""
-stars: 899
-stars_per_day: 450
-forks: 104
+stars: 901
+stars_per_day: 451
+forks: 105
 open_issues: 2
 created: 2026-03-08
 pushed_at: 2026-03-10
@@ -39,7 +39,7 @@ aliases:
 
 # OpenClaw-Medical-Skills
 
-**899** stars · **450** stars/天 · 建立 2 天前 · Python · 未標註授權
+**901** stars · **451** stars/天 · 建立 2 天前 · Python · 未標註授權
 
 `ORG`
 
@@ -47,84 +47,77 @@ aliases:
 > 提供869種醫療AI技能，讓OpenClaw成為強大的醫學研究助手。
 
 > [!abstract] 核心創新
-> 這個專案是最大的開源醫療AI技能庫，提供專業的醫學查詢和數據分析能力。
+> 這個專案是最大的開源醫療AI技能庫，專為OpenClaw設計，提供多樣化的醫療研究能力。
 
 ## 專案簡介
 
-這個專案提供了一個涵蓋生物醫學和臨床研究的869種AI技能庫，讓OpenClaw或NanoClaw能夠執行專業的醫學查詢和數據分析。每個技能都是自包含的模組，能連接到真實的數據庫和API，並產生結構化的臨床或科學相關輸出。與一般的AI工具相比，這些技能專注於醫學領域，提供如PubMed查詢、RNA-seq分析等功能。使用者可以通過這些技能，讓AI代理具備相當於專業研究團隊的能力。這個專案的成熟度高，適合醫療研究機構和學術單位使用，能顯著提升研究效率和準確性。
+這個專案透過869個精心策劃的AI技能，讓OpenClaw能夠執行各種醫學和生物醫學研究任務。每個技能都是獨立模組，包含專業知識和工作流程，並能連接到實際的數據庫和API。與一般AI工具相比，這些技能提供了具體的臨床查詢、藥物智能和基因組學支持，使AI能夠生成結構化的醫學相關輸出。實際使用中，這些技能能顯著提升AI在醫療領域的應用能力，但仍需依賴OpenClaw的運行環境。這是一個成熟的開源專案，適合需要醫療AI應用的研究團隊使用。
 
-**技術棧**：`Python` · `Jupyter Notebook` · `Docker`
+**技術棧**：`Python` · `Jupyter Notebook` · `TeX` · `Shell` · `R` · `HTML` · `JavaScript` · `CSS` · `Gherkin` · `TypeScript` · `Makefile` · `Common Workflow Language` · `WDL` · `Nextflow` · `Dockerfile`
 
 ## 重點功能
 
-- 提供869種專業的醫療AI技能。
-- 連接真實的數據庫和API，支持臨床查詢。
-- 具備生物資訊和藥物開發的專業技能。
-- 產生結構化的臨床或科學相關輸出。
-- 支持多種醫療和科學研究工作流程。
+- 提供869種醫療AI技能，涵蓋臨床、基因組學和藥物發現等領域。
+- 每個技能都能連接到實際的數據庫和API，提供即時查詢功能。
+- 生成結構化的臨床或科學相關輸出，提升研究效率。
+- 支持多種生物醫學工作流程，如RNA-seq和GWAS。
+- 聚合來自12個以上開源技能庫的資源，擴展AI的應用範圍。
 
 ## 快速開始
 
-1. 安裝OpenClaw或NanoClaw
+1. 安裝OpenClaw
 ```bash
-git clone https://github.com/MedClaw-Org/OpenClaw.git
+git clone https://github.com/openclaw/openclaw.git
 ```
-2. 下載醫療技能庫
+2. 下載OpenClaw Medical Skills
 ```bash
 git clone https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills.git
 ```
-3. 啟動OpenClaw
+3. 啟動OpenClaw服務
 ```bash
-openclaw start
+cd openclaw && ./start.sh
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案由開源社群貢獻，作者背景強大，專注於醫療AI技能的需求日益增加，尤其是在疫情後，醫療數據分析的需求爆炸性增長。這樣的專案能夠快速整合多個開源資源，提供即時且專業的醫療解決方案，讓使用者能夠更快地獲得所需的資訊。
+> 這個專案由多位開源貢獻者共同維護，背景強大且專業，切中醫療AI需求的痛點。隨著醫療數據的增長和AI技術的進步，對於專業醫療技能的需求越來越迫切，這使得專案在近期受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：醫療研究機構、學術單位及生物科技公司。
+**目標受眾**：需要在醫療和生物醫學領域進行AI應用的研究人員和開發者。
 
 > [!example] 使用場景
-> - 醫生用它來查詢最新的臨床試驗資料，因為能快速獲得準確的醫學資訊。
-> - 研究人員用它來分析基因組數據，因為能夠使用專業的生物資訊技能來進行複雜的數據處理。
-> - 藥物開發者用它來獲取藥物相關的數據和預測，因為能夠接入多個藥物數據庫進行分析。
+> - 醫學研究人員用它來查詢臨床試驗數據，因為它能提供即時的PubMed查詢結果。
+> - 生物資訊學家用它來執行RNA-seq分析，因為它內建了多種基因組學工具和流程。
+> - 藥物開發者用它來獲取藥物相互作用信息，因為它能連接到ChEMBL和DrugBank等數據庫。
 
 ## 架構分析
 
-專案採用模組化設計，技能以自包含的模組形式存在，能夠獨立運行並與OpenClaw框架整合。資料流是用戶請求 → AI代理 → 數據庫/API查詢 → 結果生成。
+專案基於OpenClaw架構，前端用戶界面與後端AI技能模組分離，數據流從用戶查詢經過API調用到技能執行，再返回結構化結果。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供大量專業醫療技能，能快速提升AI代理的能力。
+> - 提供廣泛的醫療AI技能，能滿足多種研究需求。
 > - 開源社群支持，持續更新和擴展功能。
-> - 能夠連接多個數據源，提供實時的醫療資訊。
+> - 結合多種數據源，提升AI的實用性。
 
 > [!danger] 缺點
-> - 需要一定的技術背景來安裝和配置。
-> - 依賴於外部數據庫的可用性，可能會影響查詢結果。
-> - 目前技能的範圍仍有待擴展，某些領域可能不夠完善。
+> - 需要特定的運行環境，對新手有一定門檻。
+> - 部分技能可能需要額外的API訪問權限。
+> - 功能依賴於社群貢獻，更新速度不一。
 
 > [!warning] 注意事項
-> - 需要安裝OpenClaw或NanoClaw。
-> - 技能的效果依賴於數據庫的可用性和準確性。
-> - 目前僅支持特定的醫療領域，其他領域的技能尚在開發中。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| MedPaLM | 專注於醫療問答，但不具備如此多的專業技能模組。 |
-| BioBERT | 專注於生物醫學文本的理解，但缺乏實用的API連接功能。 |
+> - 需要OpenClaw或NanoClaw環境運行。
+> - 部分技能可能依賴特定的數據庫或API訪問權限。
+> - 尚未完全涵蓋所有醫療領域的需求，仍需持續擴展。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 104 |
+| Forks | 105 |
 | Open Issues | 2 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-08 |
@@ -151,8 +144,8 @@ openclaw start
 
 ## 社群與生態
 
-**社群活躍度**：每週有穩定的提交，社群活躍度高。
-**連結**：[文件](https://github.com/MedClaw-Org/OpenClaw-Medical-Skills/wiki)
+**社群活躍度**：每週有穩定的更新和社群互動，貢獻者活躍。
+**連結**：[文件](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills/wiki)
 
 ## README 摘錄
 
@@ -208,7 +201,7 @@ openclaw start
 
 ## 延伸閱讀
 
-相關概念：[[生物醫學研究]] · [[臨床試驗]] · [[藥物發現]] · [[生物資訊學]] · [[人工智慧在醫療中的應用]]
+相關概念：[[醫療AI]] · [[生物資訊學]] · [[臨床試驗數據分析]] · [[藥物發現]] · [[基因組學]]
 
 [GitHub](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills)
 

@@ -7,7 +7,7 @@ language: N/A
 license: MIT
 description: "SwiftUI agent skill for Claude Code, Codex, and other AI tools."
 homepage: ""
-stars: 1734
+stars: 1735
 stars_per_day: 347
 forks: 56
 open_issues: 6
@@ -17,7 +17,7 @@ first_seen: 2026-03-10
 week: "2026-W11"
 category: "開發工具"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
@@ -25,53 +25,50 @@ tags:
   - github
   - "category/開發工具"
   - "lang/other"
+  - easy_install
 aliases:
   - "SwiftUI-Agent-Skill"
   - "twostraws/SwiftUI-Agent-Skill"
-  - "幫助開發者撰寫更智能、簡單且現代化的 SwiftUI 代碼。"
+  - "幫助開發者寫出更智慧、簡單且現代的 SwiftUI 代碼，提供 API 使用、設計、效能和可及性的指導。"
 ---
 
 # SwiftUI-Agent-Skill
 
 **1.7k** stars · **347** stars/天 · 建立 5 天前 · N/A · MIT
 
-`個人專案`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 幫助開發者撰寫更智能、簡單且現代化的 SwiftUI 代碼。
+> 幫助開發者寫出更智慧、簡單且現代的 SwiftUI 代碼，提供 API 使用、設計、效能和可及性的指導。
 
 > [!abstract] 核心創新
-> 這個專案專注於 SwiftUI 的最佳實踐，針對 LLM 常見錯誤進行優化，提升代碼質量。
+> 這個專案提供了針對 SwiftUI 的專屬 AI 代碼建議，能夠即時檢查過時的 API 和效能問題。
 
 ## 專案簡介
 
-這個專案提供了一個 SwiftUI 的 agent skill，能夠協助開發者在使用 Claude Code、Codex 等 AI 工具時撰寫代碼。它基於多年的 SwiftUI 實踐經驗，並使用 Agent Skills 格式，讓開發者能快速整合進自己的開發環境。與其他 AI 代碼助手不同，這個技能專注於 SwiftUI 的 API 使用、設計、效能和可及性，特別針對 LLM 常見的錯誤進行優化。使用者可以透過簡單的指令來檢查代碼的各種問題，如過時的 API 或效能問題。這個技能的成熟度高，適合各種階段的 SwiftUI 專案使用，能顯著提升代碼質量和開發效率。
+這個專案透過 AI agent 技能來提升 SwiftUI 的開發效率，讓開發者能夠更快速地撰寫代碼。它基於 Agent Skills 格式，能夠與 Claude Code、Codex 等 AI 工具無縫整合，並提供針對常見錯誤的修正建議。與其他代碼助手相比，這個專案特別針對 SwiftUI 的特性進行優化，能夠檢查過時的 API 和效能問題。實際使用中，開發者可以透過簡單的指令來獲得即時的代碼建議，提升開發效率。這個專案已經經過多次實驗和實際應用，對於 SwiftUI 開發者來說，值得一試，特別是對於新手或希望提升代碼品質的開發者。
 
-**技術棧**：`Node.js` · `SwiftUI`
+**技術棧**：`Node.js` · `Swift`
 
 ## 重點功能
 
-- 提供 SwiftUI API 使用的即時指導。
-- 檢查代碼中的過時 API 使用情況。
-- 分析代碼的效能問題並提供建議。
-- 針對可及性問題提供自動檢查。
-- 支持多種 AI 工具的整合，靈活使用。
+- 提供即時的 API 使用建議。
+- 檢查代碼中的過時 API。
+- 針對設計和可及性提供指導。
+- 支持多種 AI 工具的整合。
+- 簡單的指令觸發功能。
 
 ## 快速開始
 
-1. 安裝 Node.js
-```bash
-brew install node
-```
-2. 使用 npx 安裝技能
+1. 使用 npx 安裝技能
 ```bash
 npx skills add https://github.com/twostraws/swiftui-agent-skill --skill swiftui-pro
 ```
-3. 在 Claude Code 中觸發技能
+2. 在 Claude Code 中觸發技能
 ```bash
 /swiftui-pro
 ```
-4. 在 Codex 中觸發技能
+3. 在 Codex 中觸發技能
 ```bash
 $swiftui-pro
 ```
@@ -79,37 +76,44 @@ $swiftui-pro
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 twostraws 在 Swift 社群中有豐富的經驗，這個技能正好滿足了開發者對於高效撰寫 SwiftUI 代碼的需求。隨著 SwiftUI 的普及，越來越多的開發者尋求工具來提升代碼質量，這使得此專案在短時間內受到廣泛關注。
+> 作者擁有豐富的 Swift 開發經驗，並且針對 SwiftUI 的需求設計了這個工具。隨著 SwiftUI 的普及，開發者對於提高開發效率的需求也隨之增加，這使得這個專案在開發者社群中引起關注。
 
 ## 適合誰使用
 
-**目標受眾**：SwiftUI 開發者，尤其是希望提升代碼質量的團隊。
+**目標受眾**：專注於 SwiftUI 開發的工程師，特別是希望提升代碼品質的開發者。
 
 > [!example] 使用場景
-> - iOS 開發者 用它來 檢查代碼效能，因為 可以快速找到潛在的性能問題。
-> - 新手開發者 用它來 瞭解 SwiftUI API，因為 它提供了即時的指導和建議。
-> - 團隊負責人 用它來 確保代碼符合可及性標準，因為 可以自動檢查並提供改進建議。
+> - Swift 開發者 用它來 獲得代碼建議，因為它能即時檢查過時的 API 和效能問題。
+> - 新手開發者 用它來 學習 SwiftUI 的最佳實踐，因為它提供了針對設計和可及性的指導。
+> - 團隊領導 用它來 提升團隊的代碼品質，因為它能幫助成員避免常見的錯誤。
 
 ## 架構分析
 
-這個專案的架構是基於 Node.js 的 agent skill 系統，通過 npx 安裝後，能夠與多個 AI 工具無縫整合，提供即時的代碼檢查和建議。
+該專案基於 Agent Skills 格式，能夠與多種 AI 工具整合，並提供即時的代碼建議和檢查功能。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠快速提升 SwiftUI 代碼質量。
-> - 針對 LLM 的常見錯誤進行優化，提供具體建議。
-> - 支持多種 AI 工具，靈活性高。
+> - 能夠即時檢查代碼中的問題。
+> - 針對 SwiftUI 提供專屬的建議。
+> - 簡單易用，適合新手和經驗豐富的開發者。
 
 > [!danger] 缺點
-> - 需要一定的 Node.js 環境配置。
-> - 僅限於 SwiftUI，對其他框架不適用。
-> - 依賴於 AI 工具的準確性，可能會有誤判。
+> - 需要 Node.js 環境，對於某些開發者來說可能不方便。
+> - 目前僅針對 SwiftUI，無法應用於其他框架。
+> - 對於複雜的代碼結構建議可能有限。
 
 > [!warning] 注意事項
 > - 需要 Node.js 環境。
-> - 僅限於 SwiftUI 開發，對其他框架不適用。
-> - 依賴於 AI 工具的準確性，可能會有誤判。
+> - 目前僅支援 SwiftUI 相關的開發。
+> - 對於複雜的代碼結構可能無法提供全面的建議。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| SwiftLint | 主要針對代碼風格進行靜態分析，而非提供即時的代碼建議。 |
+| Codex | 雖然也能生成代碼，但不專注於 SwiftUI 的最佳實踐和設計指導。 |
 
 ## 技術細節
 
@@ -125,6 +129,11 @@ $swiftui-pro
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@twostraws](https://github.com/twostraws) | 1 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍，定期更新和維護。
+**連結**：[文件](https://github.com/twostraws/SwiftUI-Agent-Skill#readme)
 
 ## README 摘錄
 
@@ -181,7 +190,7 @@ $swiftui-pro
 
 ## 延伸閱讀
 
-相關概念：[[SwiftUI]] · [[人工智慧]] · [[代碼質量]] · [[可及性]] · [[API 使用最佳實踐]]
+相關概念：[[SwiftUI]] · [[AI 編程助手]] · [[代碼品質管理]]
 
 [GitHub](https://github.com/twostraws/SwiftUI-Agent-Skill)
 

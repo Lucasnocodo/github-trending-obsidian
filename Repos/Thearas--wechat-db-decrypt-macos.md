@@ -15,7 +15,7 @@ created: 2026-03-05
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "資料科學"
+category: "其他"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -23,12 +23,12 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - "category/資料科學"
+  - "category/其他"
   - "lang/python"
 aliases:
   - "wechat-db-decrypt-macos"
   - "Thearas/wechat-db-decrypt-macos"
-  - "解密微信資料庫，導出聊天記錄，無需雲端。"
+  - "解密微信 4.1 的本地數據庫，導出聊天記錄。"
 ---
 
 # wechat-db-decrypt-macos
@@ -36,24 +36,24 @@ aliases:
 **384** stars · **77** stars/天 · 建立 5 天前 · Python · WTFPL
 
 > [!summary] 一句話摘要
-> 解密微信資料庫，導出聊天記錄，無需雲端。
+> 解密微信 4.1 的本地數據庫，導出聊天記錄。
 
 > [!abstract] 核心創新
-> 提供了一個有效的解決方案來解密和導出微信數據，支持 AI 直接查詢。
+> 能夠提取和解密微信 4.1 的本地數據庫，並導出聊天記錄。
 
 ## 專案簡介
 
-這個專案提供了一個工具，能夠在 macOS 上解密微信的 SQLCipher 加密資料庫，並導出聊天記錄。使用者需在 macOS arm64 上運行，並禁用 SIP，然後通過 Python 腳本提取密鑰和解密資料庫。與其他解密工具相比，這個專案的特點在於它專注於微信的資料庫結構，並且支持直接查詢功能，讓 AI 能夠快速訪問聊天數據。實際使用中，該工具能夠有效提取和導出聊天記錄，但需要注意的是僅支援特定版本的微信。整體而言，這是一個對於需要訪問微信數據的開發者和研究者非常有用的工具。
+這個專案提供了一個工具來解密微信 4.1 的本地數據庫，並導出聊天記錄。它使用 Python 腳本提取 SQLCipher 加密的數據庫密鑰，並能夠導出特定會話或關鍵字的聊天記錄。與其他解密工具相比，這個工具專注於最新的微信版本，並支持使用 MCP Server 讓 AI 直接查詢微信數據。使用者需要在 macOS arm64 環境下運行，並禁用 SIP 以進行操作。這個工具的效果取決於微信版本和系統環境，對於需要提取聊天記錄的用戶來說非常實用。整體而言，這是一個針對特定需求的解決方案，適合需要直接訪問微信數據的開發者。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 支持解密微信 SQLCipher 加密的本地資料庫。
-- 能夠導出聊天記錄，支持模糊匹配。
-- 提供 MCP Server 功能，讓 AI 直接查詢數據。
-- 支持多種導出選項，包括按會話和關鍵字搜索。
-- 簡單的安裝和使用流程。
+- 支持提取 SQLCipher 加密的微信數據庫密鑰。
+- 能夠導出特定會話或關鍵字的聊天記錄。
+- 支持 MCP Server 讓 AI 直接查詢微信數據。
+- 提供簡單的命令行介面進行操作。
+- 兼容最新的微信 4.1 版本。
 
 ## 快速開始
 
@@ -62,7 +62,7 @@ aliases:
 ```bash
 PYTHONPATH=$(lldb -P) python3 find_key_memscan.py
 ```
-3. 解密資料庫
+3. 解密數據庫
 ```bash
 python3 decrypt_db.py
 ```
@@ -70,41 +70,37 @@ python3 decrypt_db.py
 ```bash
 python3 export_messages.py --all
 ```
-5. 設置 MCP Server
-```bash
-pip3 install fastmcp
-```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 隨著對數據隱私和數據訪問需求的增加，這個專案提供了一個有效的解決方案來解密和導出微信數據。作者的開發背景和對微信資料庫的深入了解使得這個工具在特定社群中受到重視。近期的更新和功能增強也提升了其吸引力。
+> 作者針對微信數據的需求開發此工具，隨著用戶對數據隱私的關注，越來越多的人希望能夠自主訪問自己的聊天記錄。近期微信版本的更新也促使了這個工具的需求上升，特別是在開發者社群中。
 
 ## 適合誰使用
 
-**目標受眾**：需要解密和訪問微信數據的開發者和研究者。
+**目標受眾**：需要解密和導出微信聊天記錄的 macOS 用戶。
 
 > [!example] 使用場景
-> - 數據分析師 用它來 提取微信聊天記錄，因為可以分析用戶行為和趨勢。
-> - 開發者 用它來 測試微信資料庫，因為能夠直接訪問和操作數據。
-> - 研究者 用它來 收集聊天數據，因為可以進行社會學或心理學的研究。
+> - 開發者 用它來 解密和分析微信數據，因為可以直接提取重要信息。
+> - 數據分析師 用它來 導出聊天記錄，因為能夠進行關鍵字搜索和會話分析。
+> - 普通用戶 用它來 保存重要的聊天記錄，因為可以方便地導出和備份。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠有效解密和導出微信聊天記錄。
-> - 支持多種導出選項，靈活性高。
-> - 簡單的安裝流程，易於上手。
+> - 專注於最新的微信版本，功能針對性強。
+> - 提供簡單的命令行工具，易於使用。
+> - 支持 AI 查詢功能，擴展了應用場景。
 
 > [!danger] 缺點
 > - 僅限於特定版本的微信，使用範圍有限。
-> - 需要禁用 SIP，可能影響系統安全性。
-> - 對於非 macOS 平台不支援。
+> - 需要禁用 SIP，可能對某些用戶造成困擾。
+> - 依賴於 Python 環境配置，對新手不友好。
 
 > [!warning] 注意事項
-> - 僅支援 macOS arm64 和微信 4.x 版本。
-> - 需要禁用 SIP，可能影響系統安全性。
-> - 對於 4.0 以下版本的微信不支援。
+> - 僅支持微信 4.1 版本，4.0 以下不支援。
+> - 需要禁用 SIP 以進行操作。
+> - 依賴於特定的 Python 環境和依賴安裝。
 
 ## 技術細節
 
@@ -122,6 +118,10 @@ pip3 install fastmcp
 > | [@jackwener](https://github.com/jackwener) | 11 |
 > | [@jalen0x](https://github.com/jalen0x) | 3 |
 > | [@Thearas](https://github.com/Thearas) | 2 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，定期更新和修復問題。
 
 ## README 摘錄
 
@@ -199,7 +199,7 @@ pip3 install fastmcp
 
 ## 延伸閱讀
 
-相關概念：[[數據解密]] · [[SQLCipher]] · [[聊天記錄分析]]
+相關概念：[[數據解密]] · [[聊天記錄分析]] · [[SQLCipher]]
 
 [GitHub](https://github.com/Thearas/wechat-db-decrypt-macos)
 
@@ -209,7 +209,7 @@ pip3 install fastmcp
 > ```dataview
 > LIST
 > FROM "Repos"
-> WHERE category = "資料科學" AND file.name != "Thearas--wechat-db-decrypt-macos"
+> WHERE category = "其他" AND file.name != "Thearas--wechat-db-decrypt-macos"
 > SORT stars DESC
 > LIMIT 8
 > ```
