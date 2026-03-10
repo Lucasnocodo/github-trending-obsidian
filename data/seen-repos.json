@@ -68,5 +68,75 @@
     "times_seen": 1,
     "stars_first": 1318,
     "stars_last": 1318
+  },
+  "FreedomIntelligence/OpenClaw-Medical-Skills": {
+    "first_seen": "2026-03-10",
+    "last_seen": "2026-03-10",
+    "times_seen": 1,
+    "stars_first": 882,
+    "stars_last": 882
+  },
+  "op7418/Claude-to-IM-skill": {
+    "first_seen": "2026-03-10",
+    "last_seen": "2026-03-10",
+    "times_seen": 1,
+    "stars_first": 822,
+    "stars_last": 822
+  },
+  "Flowseal/tg-ws-proxy": {
+    "first_seen": "2026-03-10",
+    "last_seen": "2026-03-10",
+    "times_seen": 1,
+    "stars_first": 767,
+    "stars_last": 767
+  },
+  "tanishqkumar/ssd": {
+    "first_seen": "2026-03-10",
+    "last_seen": "2026-03-10",
+    "times_seen": 1,
+    "stars_first": 748,
+    "stars_last": 748
+  },
+  "imbue-bit/OpenClaw-PwnKit": {
+    "first_seen": "2026-03-10",
+    "last_seen": "2026-03-10",
+    "times_seen": 1,
+    "stars_first": 692,
+    "stars_last": 692
+  },
+  "hicode002/qualcomm_gbl_exploit_poc": {
+    "first_seen": "2026-03-10",
+    "last_seen": "2026-03-10",
+    "times_seen": 1,
+    "stars_first": 675,
+    "stars_last": 675
+  },
+  "ParthJadhav/app-store-screenshots": {
+    "first_seen": "2026-03-10",
+    "last_seen": "2026-03-10",
+    "times_seen": 1,
+    "stars_first": 643,
+    "stars_last": 643
+  },
+  "jshachm/pi-rs": {
+    "first_seen": "2026-03-10",
+    "last_seen": "2026-03-10",
+    "times_seen": 1,
+    "stars_first": 615,
+    "stars_last": 615
+  },
+  "inspatio/worldfm": {
+    "first_seen": "2026-03-10",
+    "last_seen": "2026-03-10",
+    "times_seen": 1,
+    "stars_first": 553,
+    "stars_last": 553
+  },
+  "vulhunt-re/vulhunt": {
+    "first_seen": "2026-03-10",
+    "last_seen": "2026-03-10",
+    "times_seen": 1,
+    "stars_first": 536,
+    "stars_last": 536
   }
 }
