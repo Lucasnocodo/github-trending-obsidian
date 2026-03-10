@@ -1185,6 +1185,15 @@ function needsRefresh(content) {
          !content.includes('pushed_at:');
 }
 
+function hasLLMContent(content) {
+  // 檢查是否有中文 LLM 產生的內容（一句話摘要不是純英文）
+  const summaryMatch = content.match(/> \[!summary\] 一句話摘要\n> (.+)/);
+  if (!summaryMatch) return false;
+  const summary = summaryMatch[1];
+  // 如果摘要全是 ASCII（英文），代表 LLM 沒有成功翻譯
+  return /[\u4e00-\u9fff]/.test(summary);
+}
+
 function mergeNote(newNote, userNotes, appearances) {
   // 替換新筆記的個人筆記區和出現記錄
   const boundary = newNote.indexOf('\n---\n\n## 個人筆記');
@@ -1203,18 +1212,20 @@ function mergeNote(newNote, userNotes, appearances) {
   return lines.join('\n');
 }
 
-async function refreshRepos(token) {
+async function refreshRepos(token, failedOnly = false) {
   const { readdir } = await import('fs/promises');
   const files = await readdir(REPOS_DIR);
   const mdFiles = files.filter(f => f.endsWith('.md'));
 
   console.log(`Found ${mdFiles.length} repo notes to check...`);
+  console.log(`Mode: ${failedOnly ? '--refresh-failed (only notes missing Chinese content)' : '--refresh (old format notes)'}`);
 
   // 找出需要更新的筆記
   const toRefresh = [];
   for (const file of mdFiles) {
     const content = await readFile(join(REPOS_DIR, file), 'utf-8');
-    if (needsRefresh(content)) {
+    const shouldRefresh = failedOnly ? !hasLLMContent(content) : needsRefresh(content);
+    if (shouldRefresh) {
       const repoMatch = content.match(/^repo: (.+)$/m);
       if (repoMatch) {
         toRefresh.push({ file, repoName: repoMatch[1], content });
@@ -1280,6 +1291,13 @@ async function refreshRepos(token) {
     // 重新產生筆記
     for (const item of repos) {
       const llmInfo = llmMap[item.repo.full_name] || llmMap[item.repo.full_name.toLowerCase()] || null;
+
+      // LLM 失敗時跳過，保留現有內容（避免覆蓋好的中文翻譯）
+      if (!llmInfo || llmInfo._llm_failed) {
+        console.log(`  Skip (LLM failed): ${item.file}`);
+        continue;
+      }
+
       const { userNotes, appearances } = extractUserSection(item.content);
 
       // 從舊 frontmatter 提取 first_seen
@@ -1304,10 +1322,11 @@ async function refreshRepos(token) {
 // ── Entry point ──────────────────────────────────────────────
 
 const isRefresh = process.argv.includes('--refresh');
+const isRefreshFailed = process.argv.includes('--refresh-failed');
 
-if (isRefresh) {
+if (isRefresh || isRefreshFailed) {
   const token = process.env.GITHUB_TOKEN;
-  refreshRepos(token).catch((err) => { console.error(err); process.exit(1); });
+  refreshRepos(token, isRefreshFailed).catch((err) => { console.error(err); process.exit(1); });
 } else {
   main().catch((err) => { console.error(err); process.exit(1); });
 }

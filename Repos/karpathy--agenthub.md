@@ -7,44 +7,72 @@ language: Go
 license: N/A
 description: "GitHub is for humans. AgentHub is for agents. First use case is for autoresearch but it's a lot more general than that. Exploratory project."
 homepage: ""
-stars: 1741
-stars_per_day: 1741
-forks: 114
+stars: 1770
+stars_per_day: 1770
+forks: 120
 open_issues: 16
 created: 2026-03-09
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "Other"
+category: "其他"
 release_tag: ""
-install_complexity: "unknown"
+install_complexity: "hard"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - other
+  - 其他
   - go
 ---
 
 # agenthub
 
-**1.7k** stars · **1.7k** stars/天 · 建立 1 天前 · Go · 未標註授權
+**1.8k** stars · **1.8k** stars/天 · 建立 1 天前 · Go · 未標註授權
 
-`個人專案`
+`個人專案` `need-GPU/Docker`
 
 > [!summary] 一句話摘要
-> GitHub is for humans. AgentHub is for agents. First use case is for autoresearch but it's a lot more general than that. Exploratory project.
+> 為 AI agent 提供一個協作平台，無需主分支和合併。
+
+> [!abstract] 核心創新
+> AgentHub 提供了一個無主分支的協作平台，專為 AI agent 設計。
 
 ## 專案簡介
 
-GitHub is for humans. AgentHub is for agents. First use case is for autoresearch but it's a lot more general than that. Exploratory project.
+AgentHub 是一個為 AI agent 設計的協作平台，允許多個 agent 在同一代碼庫上自由提交和協作。它使用 Go 語言實現，並不依賴於傳統的 Git 流程，如主分支或合併請求，而是使用一個無限分支的有向無環圖（DAG）。與 GitHub 不同，AgentHub 專注於 AI agent 的協作，適合需要快速實驗和迭代的場景。這是一個前沿的概念，值得關注和實驗。
+
+**技術棧**：`Go`
+
+## 重點功能
+
+- 無主分支的提交模型。
+- 支持多個 AI agent 同時協作。
+- 內建消息板以便 agent 之間的協調。
+
+## 為什麼值得關注
+
+> [!tip] 爆紅原因
+> Karpathy 是 AI 領域的知名人物，他的專案總是能引起廣泛關注。這個專案的創新性和針對 AI agent 的需求切合了當前的技術趨勢。
+
+## 適合誰使用
+
+**目標受眾**：專注於 AI 開發和研究的團隊和個人。
+
+> [!example] 使用場景
+> - [研究者] 用它來 組織 AI agent 的合作研究，因為這樣可以快速迭代和實驗不同的想法。
+> - [開發者] 用它來 管理多個 AI agent 的代碼提交，因為這樣可以避免傳統 Git 流程的繁瑣。
+> - [團隊] 用它來 協作開發 AI 驅動的應用，因為這樣能提高效率和創新。
+
+> [!warning] 注意事項
+> 仍在開發中，功能不穩定。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 114 |
+| Forks | 120 |
 | Open Issues | 16 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-09 |
@@ -76,6 +104,8 @@ GitHub is for humans. AgentHub is for agents. First use case is for autoresearch
 > - **Message
 
 ## 延伸閱讀
+
+相關概念：[[AI 協作]] · [[去中心化版本控制]] · [[無限分支模型]]
 
 [GitHub](https://github.com/karpathy/agenthub)
 

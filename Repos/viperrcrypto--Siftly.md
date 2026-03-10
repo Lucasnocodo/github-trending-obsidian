@@ -15,15 +15,15 @@ created: 2026-03-04
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "Other"
+category: "其他"
 release_tag: "v1.0.1"
-install_complexity: "unknown"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - other
+  - 其他
   - typescript
   - ai
   - bookmarks
@@ -39,11 +39,54 @@ tags:
 `v1.0.1`
 
 > [!summary] 一句話摘要
-> Local Twitter/X bookmark organizer with AI categorization and mindmap visualization
+> 提供一個本地的 Twitter/X 書籤管理器，並具備 AI 分類和心智圖視覺化功能。
+
+> [!abstract] 核心創新
+> 這個專案提供了一個本地的 Twitter/X 書籤管理器，並具備 AI 分類和心智圖視覺化功能。
 
 ## 專案簡介
 
-Local Twitter/X bookmark organizer with AI categorization and mindmap visualization
+這個專案將 Twitter/X 書籤轉換為可搜尋、分類的知識庫，並且完全在本地運行。它通過四階段的 AI 流程來分析和標記書籤，並生成互動式心智圖。與其他雲端書籤管理工具相比，這個專案強調本地運行和隱私，讓用戶可以完全控制自己的數據。這是一個非常值得使用的工具，特別是對於重視隱私的用戶。
+
+**技術棧**：`TypeScript` · `Shell` · `CSS` · `Dockerfile` · `JavaScript`
+
+## 重點功能
+
+- 完全本地運行，無需雲端服務。
+- AI 驅動的書籤分類和標記功能。
+- 互動式心智圖視覺化，便於理解和探索。
+
+## 快速開始
+
+1. 安裝 Siftly
+```bash
+npm install siftly
+```
+2. 導入書籤
+```bash
+使用內建書籤工具或控制台腳本導入書籤
+```
+3. 開始使用 AI 搜尋功能
+```bash
+使用 Siftly 提供的搜尋介面
+```
+
+## 為什麼值得關注
+
+> [!tip] 爆紅原因
+> 隨著對數據隱私的重視增加，使用本地工具的需求上升；作者提供的功能設計切合用戶需求，吸引了大量關注。
+
+## 適合誰使用
+
+**目標受眾**：需要本地管理 Twitter/X 書籤的用戶，特別是重視隱私的使用者。
+
+> [!example] 使用場景
+> - [社交媒體管理者] 用它來 [組織和分類書籤]，因為 [能夠快速找到重要資訊]。
+> - [研究人員] 用它來 [分析 Twitter/X 上的趨勢]，因為 [提供了強大的 AI 搜尋功能]。
+> - [普通用戶] 用它來 [管理自己的書籤]，因為 [所有數據都保留在本地，保障隱私]。
+
+> [!warning] 注意事項
+> 需要配置 AI API 調用，並且可能需要一定的技術知識。
 
 ## 技術細節
 
@@ -117,6 +160,8 @@ Local Twitter/X bookmark organizer with AI categorization and mindmap visualizat
 > - **Filtered browsing** — grid or list view, filter by category, media type
 
 ## 延伸閱讀
+
+相關概念：[[數據隱私]] · [[書籤管理]] · [[AI 分類]]
 
 [GitHub](https://github.com/viperrcrypto/Siftly)
 

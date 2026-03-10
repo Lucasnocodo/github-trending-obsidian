@@ -4,6 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "fetch": "node scripts/fetch-trending.mjs"
+    "fetch": "node scripts/fetch-trending.mjs",
+    "refresh": "node scripts/fetch-trending.mjs --refresh",
+    "refresh-failed": "node scripts/fetch-trending.mjs --refresh-failed"
   }
 }

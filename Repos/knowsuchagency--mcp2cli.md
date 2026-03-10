@@ -7,42 +7,83 @@ language: Python
 license: MIT
 description: "Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen"
 homepage: "https://pypi.org/project/mcp2cli/"
-stars: 469
-stars_per_day: 469
-forks: 20
+stars: 472
+stars_per_day: 472
+forks: 21
 open_issues: 0
 created: 2026-03-09
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "Other"
+category: "CLI 工具"
 release_tag: ""
-install_complexity: "unknown"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - other
+  - cli_工具
   - python
 ---
 
 # mcp2cli
 
-**469** stars · **469** stars/天 · 建立 1 天前 · Python · MIT
+**472** stars · **472** stars/天 · 建立 1 天前 · Python · MIT
+
+`easy-install`
 
 > [!summary] 一句話摘要
-> Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen
+> 將任何 MCP 伺服器或 OpenAPI 規範即時轉換為 CLI。
+
+> [!abstract] 核心創新
+> 這個專案能在運行時將任何 MCP 伺服器轉換為 CLI，無需代碼生成。
 
 ## 專案簡介
 
-Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen
+mcp2cli 允許開發者將任何 MCP 伺服器或 OpenAPI 規範轉換為命令列介面，實現即時交互。它使用 Python 實現，並且支持與 AI 編程代理的集成，讓它們能夠輕鬆調用 API。與傳統的 API 客戶端工具不同，mcp2cli 不需要生成代碼，直接在運行時進行交互，這大大提高了開發效率。這是一個創新的工具，值得開發者試用。
+
+**技術棧**：`Python`
+
+## 重點功能
+
+- 即時將 MCP 伺服器轉換為 CLI。
+- 支持與 AI 編程代理的集成。
+- 無需代碼生成，簡化使用流程。
+
+## 快速開始
+
+1. 安裝 mcp2cli
+```bash
+pip install mcp2cli
+```
+2. 直接運行 mcp2cli
+```bash
+uvx mcp2cli --help
+```
+
+## 為什麼值得關注
+
+> [!tip] 爆紅原因
+> 這個專案的創始團隊專注於提高開發者的效率，並且其即時交互的特性切合了當前的需求。隨著 API 整合需求的增加，這個工具的實用性愈發凸顯。
+
+## 適合誰使用
+
+**目標受眾**：需要快速調用 API 的開發者和團隊。
+
+> [!example] 使用場景
+> - [開發者] 用它來 快速調用 API，因為這樣可以節省時間並提高效率。
+> - [團隊] 用它來 統一管理多個 API 調用，因為這樣可以減少重複工作。
+> - [AI 編程代理] 用它來 學習如何調用 API，因為這樣可以擴展其功能。
+
+> [!warning] 注意事項
+> 需要 Python 環境。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 20 |
+| Forks | 21 |
 | Open Issues | 0 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-09 |
@@ -112,6 +153,8 @@ Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen
 > # Authorization code + PKCE flow (opens browser fo
 
 ## 延伸閱讀
+
+相關概念：[[API 整合]] · [[命令列介面]] · [[即時交互]]
 
 [GitHub](https://github.com/knowsuchagency/mcp2cli) · [官方網站](https://pypi.org/project/mcp2cli/)
 

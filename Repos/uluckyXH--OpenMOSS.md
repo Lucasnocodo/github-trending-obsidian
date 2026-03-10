@@ -15,15 +15,15 @@ created: 2026-03-08
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "Other"
+category: "基礎設施"
 release_tag: ""
-install_complexity: "unknown"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - other
+  - 基礎設施
   - python
 ---
 
@@ -34,11 +34,39 @@ tags:
 `個人專案`
 
 > [!summary] 一句話摘要
-> A self-organizing multi-agent collaboration platform for OpenClaw. Multiple AI agents work as an autonomous team — planning, executing, reviewing, and patrolling tasks with zero human intervention.
+> 提供一個自組織的多代理協作平台，讓 AI 自動管理任務。
+
+> [!abstract] 核心創新
+> 這個專案提供了一個自組織的多代理協作平台，讓 AI 自動管理任務。
 
 ## 專案簡介
 
-A self-organizing multi-agent collaboration platform for OpenClaw. Multiple AI agents work as an autonomous team — planning, executing, reviewing, and patrolling tasks with zero human intervention.
+這個專案讓多個 AI 代理能夠自動協作，進行任務的規劃、執行、審查和巡檢，幾乎不需要人類干預。它基於 OpenClaw 平台，提供了一個完整的自組織系統。與其他 AI 協作工具相比，它強調完全的自動化和質量控制，讓使用者只需設定目標。這是一個創新的解決方案，適合需要高效能和自動化的團隊。
+
+**技術棧**：`Python` · `Vue` · `TypeScript` · `CSS` · `HTML` · `JavaScript`
+
+## 重點功能
+
+- 自組織的協作系統，無需人類干預。
+- 任務的自動規劃和執行。
+- 質量控制的閉環系統，確保每個交付物的質量。
+
+## 為什麼值得關注
+
+> [!tip] 爆紅原因
+> 作者具備多代理系統的專業背景，能夠實現高效的自動化；市場對於自動化協作的需求日益增加。
+
+## 適合誰使用
+
+**目標受眾**：需要自動化多代理協作的企業和團隊。
+
+> [!example] 使用場景
+> - [企業] 用它來 [自動化內部流程]，因為 [能夠減少人力成本並提高效率]。
+> - [開發團隊] 用它來 [管理多個 AI 代理]，因為 [能夠簡化任務分配和執行]。
+> - [研究人員] 用它來 [進行實驗和數據分析]，因為 [能夠自動生成報告和結果]。
+
+> [!warning] 注意事項
+> 需要對 OpenClaw 有一定的了解才能有效使用。
 
 ## 技術細節
 
@@ -92,6 +120,8 @@ A self-organizing multi-agent collaboration platform for OpenClaw. Multiple AI a
 > - 🔁 **Closed-Loop Quality Control** — Review + scoring + rework loop ensures every deliverable meets qual
 
 ## 延伸閱讀
+
+相關概念：[[多代理系統]] · [[自動化]] · [[質量控制]]
 
 [GitHub](https://github.com/uluckyXH/OpenMOSS)
 

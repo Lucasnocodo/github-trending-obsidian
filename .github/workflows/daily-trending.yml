@@ -21,11 +21,13 @@ jobs:
 
       - name: Fetch trending repos
         env:
-          # GITHUB_TOKEN: 用於 GitHub API（搜尋、README 等）
-          # GH_MODELS_TOKEN: 用於 GitHub Models LLM API（需要 PAT）
-          # 如果沒有設定 GH_MODELS_TOKEN，會 fallback 到英文
           GITHUB_TOKEN: ${{ secrets.GH_MODELS_TOKEN || secrets.GITHUB_TOKEN }}
         run: node scripts/fetch-trending.mjs
+
+      - name: Refresh notes missing Chinese content
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_MODELS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: node scripts/fetch-trending.mjs --refresh-failed
 
       - name: Commit and push
         run: |

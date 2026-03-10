@@ -15,15 +15,15 @@ created: 2026-03-03
 pushed_at: 2026-03-04
 first_seen: 2026-03-10
 week: "2026-W11"
-category: "Other"
+category: "開發工具"
 release_tag: ""
-install_complexity: "unknown"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - other
+  - 開發工具
 ---
 
 # claude-code-workflow
@@ -33,11 +33,37 @@ tags:
 `個人專案`
 
 > [!summary] 一句話摘要
-> Battle-tested Claude Code workflow template — memory management, context engineering, and task routing from 3 months of daily usage
+> 提供一個經過實戰驗證的 Claude Code 工作流程模板，提升開發效率。
+
+> [!abstract] 核心創新
+> 這個專案提供了一個經過實戰驗證的 Claude Code 工作流程模板，提升開發效率。
 
 ## 專案簡介
 
-Battle-tested Claude Code workflow template — memory management, context engineering, and task routing from 3 months of daily usage
+這個專案提供了一個結構化的工作流程，使 Claude Code 成為一個持久且自我改善的開發夥伴。它通過記憶過去的錯誤和自動應用教訓來增強開發過程，並能夠管理長時間會話的上下文。相比於其他 Claude Code 配置，這個模板更注重實際應用，並且經過多個項目的測試。這是一個值得開發者使用的成熟解決方案，特別是對於需要長期維護的項目。
+
+## 重點功能
+
+- 自動記憶過去的錯誤並應用教訓。
+- 管理長會話的上下文，避免上下文漂移。
+- 任務路由到正確的模型層級。
+
+## 為什麼值得關注
+
+> [!tip] 爆紅原因
+> 開發者對於提升 AI 助手的實用性需求增加，這個模板正好滿足了這個需求；作者在多個項目中實踐，提供了可靠的解決方案。
+
+## 適合誰使用
+
+**目標受眾**：需要提升 Claude Code 效率的開發者和團隊。
+
+> [!example] 使用場景
+> - [軟體工程師] 用它來 [提升開發效率]，因為 [能夠自動管理上下文和記憶]。
+> - [項目經理] 用它來 [確保任務的準確完成]，因為 [強制驗證功能能減少錯誤]。
+> - [AI 開發者] 用它來 [構建更智能的助手]，因為 [提供了持久的記憶管理]。
+
+> [!warning] 注意事項
+> 需要對 Claude Code 有一定的了解才能有效使用。
 
 ## 技術細節
 
@@ -89,6 +115,8 @@ Battle-tested Claude Code workflow template — memory management, context engin
 > ├──────────────────────────────
 
 ## 延伸閱讀
+
+相關概念：[[AI 助手]] · [[上下文管理]] · [[任務路由]]
 
 [GitHub](https://github.com/runesleo/claude-code-workflow)
 
