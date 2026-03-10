@@ -7,9 +7,9 @@ language: Python
 license: N/A
 description: "The largest open-source medical AI skills library for OpenClaw🦞."
 homepage: ""
-stars: 906
-stars_per_day: 453
-forks: 105
+stars: 910
+stars_per_day: 455
+forks: 106
 open_issues: 2
 created: 2026-03-08
 pushed_at: 2026-03-10
@@ -35,102 +35,108 @@ tags:
 aliases:
   - "OpenClaw-Medical-Skills"
   - "FreedomIntelligence/OpenClaw-Medical-Skills"
-  - "提供869種醫療AI技能，讓OpenClaw成為強大的醫學研究助手。"
+  - "提供869種醫療AI技能，讓OpenClaw變成強大的醫學研究助手。"
 ---
 
 # OpenClaw-Medical-Skills
 
-**906** stars · **453** stars/天 · 建立 2 天前 · Python · 未標註授權
+**910** stars · **455** stars/天 · 建立 2 天前 · Python · 未標註授權
 
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供869種醫療AI技能，讓OpenClaw成為強大的醫學研究助手。
+> 提供869種醫療AI技能，讓OpenClaw變成強大的醫學研究助手。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (453 stars/day)
-> **適合** 需要進行醫學研究或臨床應用的研究團隊和醫療專業人士。
-> **一句話重點** 這個專案展示了開源社群在醫療AI領域的潛力，能夠快速集成並提供專業知識支持。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (455 stars/day)
+> **適合** 需要在醫療研究中整合AI技能的研究團隊或開發者。
+> **一句話重點** 這個專案證明了開源社群能夠有效整合醫療AI技能，提升AI在醫療領域的應用潛力。
 
 > [!abstract] 核心創新
-> 這個專案是最大的開源醫療AI技能庫，提供全面的醫學研究支持。
+> 這個專案提供了最大的開源醫療AI技能庫，讓AI代理具備專業醫療研究的能力。
 
 ## 專案簡介
 
-OpenClaw Medical Skills 是一個包含869個醫療AI技能的開源庫，專為OpenClaw和NanoClaw設計，能將一般的AI代理轉變為專業的醫學和科學研究助手。每個技能都是獨立模組，包含專業知識、連接真實數據庫和API，並生成結構化的臨床或科學相關輸出。這些技能涵蓋臨床、基因組學、藥物發現等多個領域，並且能夠直接查詢PubMed、ClinicalTrials.gov等資料庫。與其他工具相比，OpenClaw Medical Skills的獨特之處在於其專業性和廣泛的應用範圍，能夠提供比一般AI更具深度的醫學知識。使用者只需安裝OpenClaw或NanoClaw，即可輕鬆加載這些技能，無需重啟系統。適合需要進行醫學研究或臨床應用的團隊，並且目前已經有穩定的使用者基礎。建議在需要專業醫療知識的情況下使用，若僅需基本AI功能則可考慮其他輕量級工具。
+OpenClaw Medical Skills 是一個包含869種醫療AI技能的開源庫，這些技能涵蓋了生物醫學和臨床研究的各個方面。每個技能都是一個獨立的模組，包含專業知識和工作流程，並能連接到實際的數據庫和API，生成結構化的臨床或科學輸出。這個庫的技能來自12個以上的開源技能庫，提供的功能包括RNA-seq分析、藥物智能、臨床文檔生成等，讓AI代理具備相當於專業研究團隊的能力。與一般的AI工具相比，OpenClaw Medical Skills 提供了針對醫療和科學研究的專業能力，而不僅僅是通用的AI回應。使用者需要安裝OpenClaw或NanoClaw，並能夠透過簡單的命令將技能安裝到代理中。這個專案目前處於穩定階段，適合醫療研究團隊或需要專業醫療知識的開發者使用。對於需要快速整合醫療技能的團隊，這是一個非常值得考慮的選擇。
 
 **技術棧**：`Python` · `Jupyter Notebook` · `Docker`
 
 ## 重點功能
 
-- 869種專業醫療技能 — 覆蓋臨床、基因組學、藥物發現等領域，提供即時的醫學知識支持。
-- 自動連接真實數據庫 — 能夠查詢PubMed、ClinicalTrials.gov等資料庫，獲取最新的研究成果。
-- 結構化輸出 — 生成臨床或科學相關的結構化報告，便於後續分析和使用。
-- 支持多種安裝方式 — 可選擇直接複製技能或使用ClawHub CLI進行安裝，靈活性高。
-- 與OpenClaw和NanoClaw無縫整合 — 安裝後無需重啟系統，立即可用。
+- 869種醫療AI技能 — 涵蓋臨床、基因組學、藥物發現等多個領域。
+- 自動連接到實際數據庫 — 包括PubMed、ClinicalTrials.gov、FDA等。
+- 生成結構化輸出 — 包括SOAP筆記、出院摘要等臨床文檔。
+- 支持多種安裝方式 — 包括全局安裝和選擇性安裝特定技能。
+- 開源社群支持 — 聚合來自12個以上的開源技能庫，持續更新和擴充。
 
 ## 快速開始
 
-1. 克隆此庫
+1. 克隆這個庫
 ```bash
 git clone https://github.com/MedClaw-Org/OpenClaw-Medical-Skills.git
 ```
-2. 將技能複製到工作區
+2. 將技能安裝到工作區域
 ```bash
 cp -r OpenClaw-Medical-Skills/skills/* /skills/
 ```
 3. 驗證安裝
 ```bash
-ask your agent 'What medical and clinical skills do you have available?'
+ask your agent: 'What medical and clinical skills do you have available?'
 ```
 
 ## 程式碼範例
 
 ```bash
-# 查詢可用的醫療技能
-ask your agent 'What medical and clinical skills do you have available?'
+# 安裝臨床報告和藥物研究技能
+SKILLS=(
+  "clinical-reports"
+  "tooluniverse-drug-research"
+)
+for skill in "${SKILLS[@]}"; do
+  cp -r OpenClaw-Medical-Skills/skills/$skill ~/.openclaw/skills/
+done
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案由多位貢獻者共同開發，背景涵蓋醫療和AI領域，正好切中醫療AI技能庫的需求。隨著醫療數據的增長和AI技術的進步，這樣的開源庫能夠提供即時的醫學支持，尤其在疫情後，醫療資源的需求急劇上升，促使此專案受到關注。
+> 這個專案的作者來自於醫療和AI領域，切中醫療AI技能整合的需求，特別是在臨床研究和藥物開發上。隨著醫療數據的增長和AI技術的進步，對於專業醫療技能的需求越來越高，這使得這個專案在當前時期受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要進行醫學研究或臨床應用的研究團隊和醫療專業人士。
+**目標受眾**：需要在醫療研究中整合AI技能的研究團隊或開發者。
 
 > [!example] 使用場景
-> - 醫療研究人員用它來查詢最新的臨床試驗資料，因為能直接從PubMed獲取資料，節省了大量手動查詢的時間。
-> - 生物資訊學家用它來執行RNA-seq分析，因為提供了現成的分析管道，避免了重複造輪子。
-> - 藥物開發團隊用它來進行藥物相互作用預測，因為能夠快速接入ChEMBL和DrugBank的數據，提升研究效率。
+> - 臨床研究員用它來快速查詢PubMed和ClinicalTrials.gov的資料，因為這樣可以節省大量的文獻搜尋時間，提升研究效率。
+> - 生物資訊學家用它來自動化RNA-seq數據分析流程，因為內建的技能能夠直接連接到分析工具，減少手動操作的錯誤。
+> - 藥物開發者用它來生成臨床文檔和藥物相互作用報告，因為這樣可以確保文檔的準確性和合規性，降低法律風險。
 
 ## 架構分析
 
-這是一個前後端分離的架構，使用者透過OpenClaw或NanoClaw與AI代理互動。用戶輸入 → AI代理處理 → 返回結構化的醫療資訊。關鍵技術決策包括使用模組化技能設計，並且每個技能都能獨立運作。專案目錄結構中，skills目錄包含所有技能模組。
+這是一個基於模組化的架構，使用者可以透過OpenClaw或NanoClaw來加載技能。用戶輸入 → AI代理處理 → 生成結構化輸出。關鍵技術決策包括使用開源數據庫和API來增強AI的專業能力。專案目錄結構中，技能以獨立的SKILL.md文件存在，便於管理和擴充。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供大量專業技能，適合醫療和生物研究。
-> - 能夠直接連接真實數據庫，提升查詢效率。
-> - 安裝簡單，無需重啟系統即可使用。
+> - 提供專業的醫療和科學研究技能，能夠滿足特定需求。
+> - 開源社群支持，持續更新和擴充技能庫。
+> - 模組化設計，使用者可以選擇安裝所需的技能。
 
 > [!danger] 缺點
-> - 需要依賴OpenClaw或NanoClaw運行環境。
-> - 技能的有效性和準確性依賴於社群的持續貢獻。
-> - 對於非專業用戶，使用門檻較高。
+> - 需要依賴OpenClaw或NanoClaw，增加了安裝的複雜性。
+> - 技能數量龐大，學習曲線可能較陡峭。
+> - 對於非醫療領域的使用者，技能可能過於專業化。
 
 > [!warning] 注意事項
-> - 僅支援OpenClaw或NanoClaw環境。
-> - 需要一定的醫學背景知識來有效使用這些技能。
-> - 技能更新頻率依賴於社群貢獻，可能會有延遲。
+> - 需要安裝OpenClaw或NanoClaw才能運行。
+> - 技能數量龐大，可能需要時間來熟悉每個技能的功能。
+> - 對於非醫療領域的使用者，可能會感到技能過於專業化。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 105 |
+| Forks | 106 |
 | Open Issues | 2 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-08 |
@@ -154,6 +160,11 @@ ask your agent 'What medical and clinical skills do you have available?'
 > | [@WangRongsheng](https://github.com/WangRongsheng) | 12 |
 > | [@donglihe-hub](https://github.com/donglihe-hub) | 8 |
 > | [@wabyking](https://github.com/wabyking) | 1 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍，持續有貢獻者更新技能庫。
+**連結**：[文件](https://github.com/MedClaw-Org/OpenClaw-Medical-Skills)
 
 ## README 摘錄
 
@@ -277,36 +288,33 @@ ask your agent 'What medical and clinical skills do you have available?'
 
 > [!note]- 同分類的其他專案
 > ```dataview
-> LIST
+> TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
 > WHERE category = "AI/ML" AND file.name != "FreedomIntelligence--OpenClaw-Medical-Skills"
 > SORT stars DESC
 > LIMIT 8
 > ```
 
+> [!note]- 同週收錄
+> ```dataview
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
+> FROM "Repos"
+> WHERE week = "2026-W11" AND file.name != "FreedomIntelligence--OpenClaw-Medical-Skills"
+> SORT stars DESC
+> ```
+
 ---
 
 ## 個人筆記
 
-> [!question]+ 快速評估（第一次看時填寫）
-> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> [!question]+ 快速評估（30 秒填完）
 > 
-> **跟我的工作相關嗎？** 是 / 否 / 間接相關
-> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
-> **第一印象**：_一句話_
-
-> [!success]- 深度評估（試用後填寫）
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
 > 
-> | 項目 | 分數 (1-5) | 備註 |
-> | --- | :---: | --- |
-> | 實用性 | /5 | |
-> | 技術新穎性 | /5 | |
-> | 文件品質 | /5 | |
-> | 社群活躍度 | /5 | |
-> | 上手難度 | /5 | 1=很難 5=很簡單 |
-> 
-> **成熟度**：早期 / 可用 / 穩定
-> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
 
 ### 試用記錄
 

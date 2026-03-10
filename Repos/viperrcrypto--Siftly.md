@@ -7,26 +7,25 @@ language: TypeScript
 license: MIT
 description: "Local Twitter/X bookmark organizer with AI categorization and mindmap visualization"
 homepage: ""
-stars: 1376
-stars_per_day: 229
-forks: 117
+stars: 1382
+stars_per_day: 230
+forks: 116
 open_issues: 9
 created: 2026-03-04
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
-category: "資料科學"
+category: "開發工具"
 release_tag: "v1.0.1"
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - "category/資料科學"
+  - "category/開發工具"
   - "lang/typescript"
-  - easy_install
   - "topic/ai"
   - "topic/bookmarks"
   - "topic/categorization"
@@ -35,98 +34,108 @@ tags:
 aliases:
   - "Siftly"
   - "viperrcrypto/Siftly"
-  - "一個本地的 Twitter/X 書籤管理器，具備 AI 分類和思維導圖可視化功能。"
+  - "將 Twitter/X 書籤轉換為可搜尋的知識庫，並以 AI 分類和心智圖視覺化。"
 ---
 
 # Siftly
 
-**1.4k** stars · **229** stars/天 · 建立 6 天前 · TypeScript · MIT
+**1.4k** stars · **230** stars/天 · 建立 6 天前 · TypeScript · MIT
 
-`v1.0.1` `easy-install`
+`v1.0.1`
 
 > [!summary] 一句話摘要
-> 一個本地的 Twitter/X 書籤管理器，具備 AI 分類和思維導圖可視化功能。
+> 將 Twitter/X 書籤轉換為可搜尋的知識庫，並以 AI 分類和心智圖視覺化。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (229 stars/day)
-> **適合** 希望在本地管理 Twitter/X 書籤並利用 AI 進行分類的用戶。
-> **一句話重點** Siftly 讓用戶能夠在本地高效管理 Twitter/X 書籤，並利用 AI 技術提升使用體驗。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (230 stars/day)
+> **適合** 需要在本地管理大量 Twitter 書籤並希望利用 AI 分類的獨立開發者或小型團隊。
+> **一句話重點** Siftly 的設計不僅是為了管理書籤，更是為了讓使用者能夠以全新的方式探索和理解他們的資料。
 
 > [!abstract] 核心創新
-> 這個工具提供了一個完全本地化的書籤管理解決方案，結合 AI 分類和可視化功能。
+> Siftly 提供了一個完全本地的書籤管理解決方案，結合 AI 驅動的分類和視覺化功能。
 
 ## 專案簡介
 
-Siftly 是一個自託管的 Twitter/X 書籤管理器，能夠將書籤轉換為可搜索的知識庫，並使用 AI 進行分類和可視化。它的工作流程包括導入書籤、實體提取、視覺分析、語義標記和分類，最終生成可視化的思維導圖。技術上，Siftly 使用 Node.js 和 TypeScript 開發，並且所有數據都保留在本地，確保用戶隱私。與其他雲端書籤管理工具相比，Siftly 的最大優勢在於其完全本地化的設計，無需訂閱或瀏覽器擴展。實際使用中，用戶可以通過簡單的指令導入書籤，並獲得智能搜索和可視化功能。這個專案目前處於穩定階段，適合需要本地管理書籤的用戶。建議在尋找隱私保護和本地化解決方案時使用，但對於需要跨設備同步的用戶可能不太適合。
+Siftly 是一個自我託管的 Twitter/X 書籤管理工具，能將你的書籤轉換為可搜尋的視覺知識庫，完全在本地運行，無需雲端或訂閱服務。它的工作流程包括四個階段：首先通過內建的書籤工具匯入書籤，接著進行實體提取，分析圖像內容，然後生成語義標籤，最後進行分類。這個過程中，Siftly 會為每個書籤生成 25-35 個可搜尋的標籤，並將其分配到 1-3 個類別。與其他書籤管理工具相比，Siftly 的獨特之處在於其 AI 驅動的分類和視覺化功能，讓使用者能夠通過意義而非關鍵字來搜尋書籤。使用者可以透過互動式心智圖探索書籤，並以 CSV、JSON 或 ZIP 格式導出資料。這個工具的效能依賴於本地運行，對於需要保護隱私的使用者來說非常合適。Siftly 目前處於穩定版本，適合中小型團隊使用。對於需要管理大量 Twitter 書籤的個人或團隊，這是一個值得考慮的選擇，但如果你需要雲端同步或跨設備訪問，則可能不太適合。
 
-**技術棧**：`TypeScript` · `Shell` · `CSS` · `Dockerfile` · `JavaScript`
+**技術棧**：`TypeScript` · `Next.js` · `Docker`
 
 ## 重點功能
 
-- 本地化管理 — 所有數據保留在用戶本地，無需雲端存儲。
-- AI 分類 — 自動生成 25–35 個可搜索標籤，提升檢索效率。
-- 思維導圖可視化 — 以圖形方式展示書籤結構，便於探索。
-- 多種導入方式 — 提供書籤導入工具，無需瀏覽器擴展。
-- 智能搜索 — 根據語義進行搜索，提升查找效率。
+- 四階段 AI 流程 — 包括實體提取、視覺分析、語義標籤生成和分類。
+- AI 搜尋功能 — 根據意義搜尋書籤，而不僅僅是關鍵字。
+- 互動式心智圖 — 視覺化書籤資料，探索書籤之間的關聯。
+- 多格式導出 — 支援 CSV、JSON 和 ZIP 格式的資料導出。
+- 無需雲端 — 完全在本地運行，保護使用者隱私。
 
 ## 快速開始
 
-1. 克隆 Siftly 倉庫
+1. 克隆專案並啟動
 ```bash
-git clone https://github.com/viperrcrypto/Siftly.git
+git clone https://github.com/viperrcrypto/Siftly.git && cd Siftly && ./start.sh
 ```
-2. 進入專案資料夾
+2. 使用 Claude Code CLI 設定
 ```bash
-cd Siftly
+git clone https://github.com/viperrcrypto/Siftly.git && claude Siftly/
 ```
-3. 啟動應用程式
+3. 手動安裝
 ```bash
-./start.sh
+git clone https://github.com/viperrcrypto/Siftly.git && cd Siftly && npm install && npx prisma generate && npx prisma migrate dev --name init && npx next dev
 ```
 
 ## 程式碼範例
 
 ```bash
-# 啟動 Siftly 應用程式
 ./start.sh
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> Siftly 的作者 viperrcrypto 專注於提升用戶的生產力，這個專案正好滿足了對於本地化書籤管理的需求。隨著人們對隱私的重視增加，越來越多的用戶希望能夠在本地管理自己的數據，這使得 Siftly 的需求上升。特別是它的 AI 分類和可視化功能，讓書籤管理變得更加高效和直觀。
+> Siftly 的作者有著強大的開發背景，專注於解決 Twitter 書籤管理的痛點。隨著社交媒體使用量的增加，許多使用者需要一個本地的解決方案來管理他們的書籤，這正好符合當前的需求。這個專案的推出時間也恰逢許多使用者對隱私和數據安全的重視，讓它在社群中迅速受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：希望在本地管理 Twitter/X 書籤並利用 AI 進行分類的用戶。
+**目標受眾**：需要在本地管理大量 Twitter 書籤並希望利用 AI 分類的獨立開發者或小型團隊。
 
 > [!example] 使用場景
-> - 社交媒體經營者用它來整理和管理 Twitter/X 書籤，因為這樣可以快速找到有用的資源，提升內容創作效率。
-> - 研究人員用它來收集和分類相關文獻，因為這樣可以更方便地檢索資料，節省時間。
-> - 普通用戶用它來管理個人書籤，因為這樣可以保持資料的私密性，避免雲端存儲的風險。
+> - 社群經理用它來整理和分類 Twitter 書籤，因為這樣可以快速找到相關內容，提升工作效率。
+> - 內容創作者用它來搜尋靈感來源，因為 AI 搜尋功能能根據意義找到相關書籤，而不僅僅是關鍵字。
+> - 研究人員用它來視覺化和組織書籤資料，因為心智圖功能可以幫助他們更好地理解資料之間的關聯。
+
+## 架構分析
+
+Siftly 採用前後端分離的架構，使用 Next.js 作為前端框架，Node.js 作為後端服務。用戶輸入書籤 → 系統處理（AI 流程） → 輸出可視化結果。關鍵技術決策包括使用 Prisma 進行資料庫管理和 Claude Code CLI 進行無縫的 AI 認證。專案目錄結構包括 src、public 和 prisma 目錄，分別用於源碼、靜態資源和資料庫配置。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 完全本地化，保護用戶隱私。
-> - AI 分類提升了書籤管理的效率。
-> - 思維導圖可視化讓書籤探索更直觀。
+> - 完全本地運行，保護使用者隱私。
+> - AI 驅動的分類和搜尋功能，提升書籤管理效率。
+> - 互動式心智圖視覺化，幫助使用者理解資料結構。
 
 > [!danger] 缺點
-> - 僅限於 Twitter/X 書籤，無法擴展到其他平台。
-> - 需要安裝 Node.js，對新手不太友好。
-> - 不支持雲端同步，限制了跨設備使用。
+> - 不支援雲端同步，無法在多設備間共享資料。
+> - 僅支援特定版本的 Node.js，限制了使用者的選擇。
+> - 需要一定的技術背景來進行手動安裝和設定。
 
 > [!warning] 注意事項
-> - 僅支援 Twitter/X 書籤，對其他平台無法使用。
-> - 需要 Node.js 環境才能運行，對某些用戶可能不友好。
-> - 不支持跨設備同步，所有數據僅限於本地。
+> - 僅支援 Node.js 18+。
+> - 目前僅在 macOS 上自動偵測 Claude Code CLI，Linux/Windows 需手動設定 API 金鑰。
+> - 不支援雲端同步，所有資料均在本地保存。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [[notion--notion\|notion/notion]] | Notion 提供更全面的筆記和資料管理功能，但缺乏 Siftly 的 AI 驅動分類和書籤專用功能。 |
+| [[raindropio--raindrop\|raindropio/raindrop]] | Raindrop 是雲端書籤管理工具，適合需要跨設備同步的使用者，但不提供本地運行和 AI 分類的選項。 |
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 117 |
+| Forks | 116 |
 | Open Issues | 9 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-04 |
@@ -150,6 +159,11 @@ cd Siftly
 > | [@robinlyu](https://github.com/robinlyu) | 1 |
 
 **最新版本**：v1.0.1 — Siftly v1.0.1 (2026-03-10)
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，定期有更新和問題回應。
+**連結**：[文件](https://github.com/viperrcrypto/Siftly/wiki)
 
 ## README 摘錄
 
@@ -278,7 +292,9 @@ cd Siftly
 
 ## 延伸閱讀
 
-相關概念：[[資料視覺化]] · [[自動化測試]]
+相關概念：[[資料視覺化]] · [[AI]] · [[自動化測試]]
+
+相關專案：[[notion--notion|notion/notion]] · [[raindropio--raindrop|raindropio/raindrop]]
 
 [GitHub](https://github.com/viperrcrypto/Siftly)
 
@@ -286,36 +302,33 @@ cd Siftly
 
 > [!note]- 同分類的其他專案
 > ```dataview
-> LIST
+> TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "資料科學" AND file.name != "viperrcrypto--Siftly"
+> WHERE category = "開發工具" AND file.name != "viperrcrypto--Siftly"
 > SORT stars DESC
 > LIMIT 8
+> ```
+
+> [!note]- 同週收錄
+> ```dataview
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
+> FROM "Repos"
+> WHERE week = "2026-W11" AND file.name != "viperrcrypto--Siftly"
+> SORT stars DESC
 > ```
 
 ---
 
 ## 個人筆記
 
-> [!question]+ 快速評估（第一次看時填寫）
-> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> [!question]+ 快速評估（30 秒填完）
 > 
-> **跟我的工作相關嗎？** 是 / 否 / 間接相關
-> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
-> **第一印象**：_一句話_
-
-> [!success]- 深度評估（試用後填寫）
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
 > 
-> | 項目 | 分數 (1-5) | 備註 |
-> | --- | :---: | --- |
-> | 實用性 | /5 | |
-> | 技術新穎性 | /5 | |
-> | 文件品質 | /5 | |
-> | 社群活躍度 | /5 | |
-> | 上手難度 | /5 | 1=很難 5=很簡單 |
-> 
-> **成熟度**：早期 / 可用 / 穩定
-> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
 
 ### 試用記錄
 

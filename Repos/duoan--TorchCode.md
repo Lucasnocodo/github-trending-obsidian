@@ -16,100 +16,119 @@ pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
-category: "資料科學"
+category: "教學資源"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - "category/資料科學"
+  - "category/教學資源"
   - "lang/jupyter notebook"
-  - easy_install
   - "topic/interview"
   - "topic/leetcode"
   - "topic/pytorch"
 aliases:
   - "TorchCode"
   - "duoan/TorchCode"
-  - "提供 PyTorch 相關的編程練習，幫助面試準備，並即時自動評分。"
+  - "提供一個結構化的練習環境，讓你從零開始實作 PyTorch 的核心運算，並即時獲得自動評分。"
 ---
 
 # TorchCode
 
 **1.5k** stars · **253** stars/天 · 建立 6 天前 · Jupyter Notebook · 未標註授權
 
-`easy-install`
-
 > [!summary] 一句話摘要
-> 提供 PyTorch 相關的編程練習，幫助面試準備，並即時自動評分。
+> 提供一個結構化的練習環境，讓你從零開始實作 PyTorch 的核心運算，並即時獲得自動評分。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (253 stars/day)
-> **適合** 希望提升 PyTorch 技能並準備面試的機器學習工程師。
-> **一句話重點** TorchCode 是一個專注於 PyTorch 的編程練習平台，能夠幫助用戶快速提升面試技能。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (253 stars/day)
+> **適合** 希望在面試中展示 PyTorch 實作能力的機器學習工程師。
+> **一句話重點** TorchCode 是一個針對 PyTorch 面試的專業練習平台，讓使用者能夠在無需雲端的情況下，快速提升實作能力。
 
 > [!abstract] 核心創新
-> TorchCode 提供即時自動評分的 PyTorch 編程練習，幫助用戶快速提升技能。
+> 提供即時反饋和自動評分的 PyTorch 實作練習平台。
 
 ## 專案簡介
 
-TorchCode 是一個針對 PyTorch 的編程練習平台，專為準備機器學習面試的工程師設計。用戶可以在 Jupyter 環境中實現各種 PyTorch 操作，並獲得即時的自動評分和反饋。這個平台提供了 40 個精心策劃的問題，涵蓋了面試中最常見的主題，如 softmax、注意力機制和 Transformer 等。用戶可以在本地運行，也可以直接在 Hugging Face Spaces 或 Google Colab 中試用，無需安裝任何軟體。這個專案的核心優勢在於其即時反饋系統，能夠幫助用戶快速識別和修正錯誤，並且提供參考解決方案以便學習。與其他編程練習平台相比，TorchCode 專注於 PyTorch 的核心概念，並且提供了結構化的練習環境。這個專案目前處於穩定階段，適合各種規模的團隊和個人使用，特別是那些希望提升 PyTorch 技能的開發者。建議在準備機器學習面試時使用，而不適合對於其他框架的練習。
+TorchCode 是一個針對 PyTorch 面試問題的練習平台，使用者可以在 Jupyter 環境中實作如 softmax、LayerNorm 和 MultiHeadAttention 等核心運算。這個工具提供 40 道精心挑選的問題，並具備自動評分系統，能檢查正確性、驗證梯度及計時。與其他類似工具相比，TorchCode 不需要雲端或註冊，並且可以在本地或 Hugging Face 上即時使用。使用者能夠追蹤進度，並在遇到困難時獲得提示，這些功能使得學習過程更具互動性和效率。雖然不需要 GPU，但對於想要深入理解 PyTorch 的開發者來說，這是一個非常有價值的資源。這個專案目前處於穩定階段，適合任何規模的團隊使用，特別是準備面試的 ML 工程師。建議在需要強化 PyTorch 基礎時使用，但如果你已經熟悉這些概念，可能會覺得重複性較高。
+
+**技術棧**：`Jupyter Notebook` · `Python` · `TypeScript` · `Docker`
 
 ## 重點功能
 
-- 40 個策劃問題 — 涵蓋 PyTorch 面試中最常見的主題。
-- 自動評分系統 — 提供正確性檢查和時間驗證。
-- 即時反饋 — 每個測試用例的通過/失敗顯示，類似競賽編程。
-- 提示功能 — 當用戶卡住時提供提示，幫助其繼續。
-- 參考解決方案 — 用戶在嘗試後可以查看最佳實現。
+- 40 道精選問題 — 涵蓋 PyTorch 面試中最常見的主題。
+- 自動評分系統 — 檢查正確性、驗證梯度及計時，提供即時反饋。
+- 提示功能 — 當遇到困難時提供提示，幫助使用者不至於卡住。
+- 進度追蹤 — 記錄解題進度、最佳時間及嘗試次數。
+- 一鍵重置 — 方便使用者多次練習同一題目，提升熟練度。
 
 ## 快速開始
 
-1. 在線試用 TorchCode
+1. 在 Hugging Face 上即時啟動
 ```bash
-Launch on Hugging Face Spaces
+訪問 https://huggingface.co/spaces/duoan/TorchCode
 ```
-2. 在 Google Colab 中使用評分系統
+2. 在 Google Colab 中安裝 judge
 ```bash
 !pip install torch-judge
 ```
-3. 運行測試
+3. 在本地使用 Docker 啟動
 ```bash
-check('relu')
+docker run -p 8888:8888 -e PORT=8888 ghcr.io/duoan/torchcode:latest
+```
+
+## 程式碼範例
+
+```python
+from torch_judge import check, status, hint
+status()           # 列出所有問題及進度
+check("relu")      # 測試 "relu" 任務
+hint("relu")       # 顯示提示
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者在機器學習領域有豐富的經驗，並且針對面試需求設計了這個專案。隨著對於 PyTorch 技能的需求上升，這個平台正好滿足了市場需求，並且其即時反饋的特性吸引了許多學習者。
+> TorchCode 的作者對於 ML 面試有深刻的理解，並且切中許多工程師在準備面試時的需求。隨著機器學習領域的快速發展，對於基礎運算的掌握變得越來越重要，這使得這個工具在當前時期特別受到青睞。
 
 ## 適合誰使用
 
-**目標受眾**：希望提升 PyTorch 技能並準備面試的機器學習工程師。
+**目標受眾**：希望在面試中展示 PyTorch 實作能力的機器學習工程師。
 
 > [!example] 使用場景
-> - 機器學習工程師用它來練習 PyTorch 的核心操作，因為能夠即時獲得反饋，提升學習效率。
-> - 面試準備者用它來模擬面試問題，因為提供了結構化的練習環境，幫助他們熟悉面試題型。
-> - 學生用它來學習 PyTorch，因為可以在 Jupyter 環境中進行實踐，並獲得即時的評分。
+> - 機器學習工程師用它來練習實作 softmax，因為這是面試中常見的問題，能幫助他們在面試中表現更好。
+> - 學生用它來學習 PyTorch 的基本運算，因為即時反饋能讓他們快速了解自己的錯誤並改進。
+> - 自學者用它來挑戰自己，實作多種神經網路層，因為這樣的實踐能加深他們對於深度學習的理解。
+
+## 架構分析
+
+TorchCode 採用前後端分離的架構，使用者透過 Jupyter Notebook 進行操作。用戶輸入 → 實作運算 → 自動評分。核心技術決策包括使用 Docker 來簡化安裝過程。專案目錄結構包含 templates 資料夾，存放各種練習題目的 Jupyter Notebook。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 結構化的練習環境，適合面試準備。
-> - 即時反饋系統，幫助用戶快速學習。
-> - 無需安裝，方便使用。
+> - 提供結構化的練習環境，適合面試準備。
+> - 即時反饋機制，能快速了解錯誤。
+> - 無需註冊或雲端服務，方便使用。
 
 > [!danger] 缺點
-> - 僅限於 PyTorch，對其他框架無法使用。
-> - 需要一定的編程基礎，對新手不友好。
-> - 不支持即時多用戶協作。
+> - 不支援 Windows 環境，限制使用者範圍。
+> - 需要 Docker 環境，對新手可能有門檻。
+> - 某些問題對初學者來說挑戰性過高。
 
 > [!warning] 注意事項
-> - 僅針對 PyTorch，對其他框架不適用。
-> - 需要用戶具備一定的編程基礎，以便理解問題。
-> - 不支持即時多用戶協作，僅限個人使用。
+> - 不支援 Windows 環境。
+> - 需要安裝 Docker 或 Podman 來本地運行。
+> - 某些問題可能對初學者來說過於挑戰。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [[yangshun--tech-interview-handbook\|yangshun/tech-interview-handbook]] | 這是一個更廣泛的技術面試準備資源，涵蓋多種技術，而 TorchCode 專注於 PyTorch 的實作練習。 |
+| [[exercism--python\|exercism/python]] | Exercism 提供多種語言的編程練習，但不專注於深度學習和 PyTorch 的核心運算。 |
 
 ## 技術細節
 
@@ -139,6 +158,11 @@ check('relu')
 > | [@Ando233](https://github.com/Ando233) | 2 |
 > | [@ThierryHJ](https://github.com/ThierryHJ) | 1 |
 > | [@github-actions[bot]](https://github.com/github-actions[bot]) | 1 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍，持續更新問題集和功能。
+**連結**：[文件](https://huggingface.co/spaces/duoan/TorchCode)
 
 ## README 摘錄
 
@@ -257,42 +281,43 @@ check('relu')
 
 ## 延伸閱讀
 
+相關概念：[[機器學習]] · [[深度學習]] · [[自然語言處理]]
+
+相關專案：[[yangshun--tech-interview-handbook|yangshun/tech-interview-handbook]] · [[exercism--python|exercism/python]]
+
 [GitHub](https://github.com/duoan/TorchCode) · [官方網站](https://huggingface.co/spaces/duoan/TorchCode)
 
 ## 相關收錄
 
 > [!note]- 同分類的其他專案
 > ```dataview
-> LIST
+> TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "資料科學" AND file.name != "duoan--TorchCode"
+> WHERE category = "教學資源" AND file.name != "duoan--TorchCode"
 > SORT stars DESC
 > LIMIT 8
+> ```
+
+> [!note]- 同週收錄
+> ```dataview
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
+> FROM "Repos"
+> WHERE week = "2026-W11" AND file.name != "duoan--TorchCode"
+> SORT stars DESC
 > ```
 
 ---
 
 ## 個人筆記
 
-> [!question]+ 快速評估（第一次看時填寫）
-> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> [!question]+ 快速評估（30 秒填完）
 > 
-> **跟我的工作相關嗎？** 是 / 否 / 間接相關
-> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
-> **第一印象**：_一句話_
-
-> [!success]- 深度評估（試用後填寫）
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
 > 
-> | 項目 | 分數 (1-5) | 備註 |
-> | --- | :---: | --- |
-> | 實用性 | /5 | |
-> | 技術新穎性 | /5 | |
-> | 文件品質 | /5 | |
-> | 社群活躍度 | /5 | |
-> | 上手難度 | /5 | 1=很難 5=很簡單 |
-> 
-> **成熟度**：早期 / 可用 / 穩定
-> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
 
 ### 試用記錄
 

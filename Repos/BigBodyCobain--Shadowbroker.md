@@ -7,10 +7,10 @@ language: TypeScript
 license: N/A
 description: "Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. The knowledge is available to all but rarely aggregated in the open, until now."
 homepage: ""
-stars: 1376
-stars_per_day: 275
-forks: 148
-open_issues: 1
+stars: 1389
+stars_per_day: 278
+forks: 151
+open_issues: 0
 created: 2026-03-05
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
@@ -29,114 +29,101 @@ tags:
 aliases:
   - "Shadowbroker"
   - "BigBodyCobain/Shadowbroker"
-  - "提供即時的多領域開源情報平台，整合全球活動數據。"
+  - "提供一個統一的介面來追蹤全球的開源情報，包括私人飛機、衛星、地震等。"
 ---
 
 # Shadowbroker
 
-**1.4k** stars · **275** stars/天 · 建立 5 天前 · TypeScript · 未標註授權
+**1.4k** stars · **278** stars/天 · 建立 5 天前 · TypeScript · 未標註授權
 
 `v0.6.0`
 
 > [!summary] 一句話摘要
-> 提供即時的多領域開源情報平台，整合全球活動數據。
+> 提供一個統一的介面來追蹤全球的開源情報，包括私人飛機、衛星、地震等。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (275 stars/day)
-> **適合** 需要即時全球情報數據的分析師和研究人員。
-> **一句話重點** Shadowbroker 的即時情報整合能力讓使用者能夠快速掌握全球動態，特別適合需要即時數據的專業團隊。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (278 stars/day)
+> **適合** 需要即時追蹤全球開源情報的安全分析師和研究人員。
+> **一句話重點** ShadowBroker 不僅是一個情報工具，更是一個開源社群的集體智慧結晶，讓全球的開源情報變得可視化和易於存取。
 
 > [!abstract] 核心創新
-> Shadowbroker 提供一個統一的即時情報平台，整合多個開源數據來源，讓使用者能夠即時追蹤全球活動。
+> 這個專案提供了一個統一的即時開源情報儀表板，整合了多個數據來源，並以視覺化方式呈現。
 
 ## 專案簡介
 
-Shadowbroker 是一個即時的多領域開源情報平台，能夠整合來自多個開源情報來源的數據，並在統一的介面上呈現。使用者可以透過 `git clone` 和 `./compose.sh up -d` 快速啟動服務，並在 `http://localhost:3000` 查看即時的全球活動數據。該平台使用 Next.js 和 FastAPI，專為分析師和研究人員設計，提供航空、海事、衛星、地緣政治等多種追蹤功能。與其他情報平台相比，Shadowbroker 的即時更新和多樣化的數據來源使其在市場上脫穎而出。使用者可以追蹤私人飛機、海上交通、衛星運行等，並獲得即時的地緣政治事件更新。該專案目前處於穩定版本，適合需要即時情報的專業團隊使用。對於只需要單一領域數據的使用者，可能會覺得功能過於繁雜。
+ShadowBroker 是一個即時的多領域開源情報儀表板，聚合來自數十個開源情報來源的數據，並在統一的黑色操作地圖介面上顯示。它實時追蹤飛機、船隻、衛星、地震、衝突區域、CCTV 網絡、GPS 干擾等，所有數據都在不斷更新。專案使用了 Next.js、MapLibre GL 和 FastAPI，適合分析師、研究人員和愛好者，讓他們可以在一個視窗中查看全球活動。與其他情報工具相比，ShadowBroker 提供了更全面的即時數據整合，並且支持多種數據來源的視覺化。實際使用中，該工具能夠即時顯示超過 5,000 架商業航班和 25,000 艘船隻的動態，並且不需要 API 金鑰。這個專案目前處於穩定版本，適合中小型團隊使用，特別是在需要即時情報的情況下。對於需要長期追蹤特定事件或對地緣政治感興趣的使用者，這是一個非常有價值的工具。
 
-**技術棧**：`Next.js` · `FastAPI` · `MapLibre GL` · `Python`
+**技術棧**：`Next.js` · `MapLibre GL` · `FastAPI` · `Python`
 
 ## 重點功能
 
-- 即時航空追蹤 — 追蹤超過 5,000 架商業飛機的即時位置。
-- 海事追蹤 — 提供超過 25,000 艘船隻的即時 AIS 數據。
-- 衛星追蹤 — 追蹤超過 2,000 顆衛星的即時位置，無需 API 金鑰。
-- 地緣政治事件聚合 — 整合 GDELT 提供的全球衝突事件數據。
-- 即時衛星影像 — 提供 NASA 和 Esri 的高解析度衛星影像。
+- 航空追蹤 — 實時顯示超過 5,000 架商業航班和私人飛機，並提供持續的飛行軌跡。
+- 海事追蹤 — 追蹤超過 25,000 艘船隻，並提供分類顯示和集群功能。
+- 衛星追蹤 — 實時衛星位置追蹤，支持超過 2,000 顆衛星，無需 API 金鑰。
+- 地緣政治事件 — 整合 GDELT 的全球事件數據，並提供即時更新。
+- CCTV 監控 — 提供超過 2,000 個實時交通攝像頭的視覺化顯示。
 
 ## 快速開始
 
-1. 克隆專案
+1. 克隆專案並啟動 Docker
 ```bash
-git clone https://github.com/BigBodyCobain/Shadowbroker.git
+git clone https://github.com/BigBodyCobain/Shadowbroker.git && cd Shadowbroker && ./compose.sh up -d
 ```
-2. 進入專案目錄
+2. 打開儀表板
 ```bash
-cd Shadowbroker
-```
-3. 啟動服務
-```bash
-./compose.sh up -d
+Open http://localhost:3000
 ```
 
 ## 程式碼範例
 
 ```bash
-git clone https://github.com/BigBodyCobain/Shadowbroker.git
-cd Shadowbroker
 ./compose.sh up -d
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 BigBodyCobain 具備開源情報的背景，針對即時數據整合的需求開發了這個平台。隨著地緣政治事件的頻繁發生，對於即時情報的需求日益增加，使得 Shadowbroker 受到廣泛關注。
+> 作者團隊擁有豐富的開源背景，並且針對市場上缺乏整合性情報工具的需求進行開發。隨著全球政治局勢的變化，對於即時情報的需求越來越高，這使得 ShadowBroker 特別受到關注。這個專案的推出正好切合了當前對開源情報整合的需求，並且在功能上提供了獨特的視覺化展示。
 
 ## 適合誰使用
 
-**目標受眾**：需要即時全球情報數據的分析師和研究人員。
+**目標受眾**：需要即時追蹤全球開源情報的安全分析師和研究人員。
 
 > [!example] 使用場景
-> - 情報分析師用它來即時追蹤全球衝突事件，因為它能整合多個數據來源，提供即時更新。
-> - 研究人員用它來分析航空交通模式，因為它提供了高解析度的飛行數據和航跡追蹤功能。
-> - 安全專家用它來監控海上交通，因為它能即時顯示船隻位置和類型，幫助識別潛在威脅。
+> - 情報分析師用它來即時追蹤全球衝突事件，因為它能夠整合來自 GDELT 的最新事件數據，並提供地圖視覺化。
+> - 研究人員用它來監控衛星動態，因為它提供超過 2,000 顆衛星的即時位置，並且不需要額外的 API 金鑰。
+> - 安全專家用它來檢測 GPS 干擾區域，因為它能夠即時顯示干擾位置，幫助他們評估潛在的安全風險。
 
 ## 架構分析
 
-Shadowbroker 採用前後端分離架構，前端使用 Next.js，後端使用 FastAPI。用戶輸入 → 數據整合 → 即時顯示。核心技術決策是使用 MapLibre GL 進行地圖顯示，專案目錄結構包含 `compose.sh` 用於啟動服務。
+ShadowBroker 採用微服務架構，核心資料流為用戶輸入 → 數據聚合 → 地圖顯示。使用 Next.js 提供前端介面，FastAPI 處理後端數據請求。專案目錄結構包含主要的 Docker 配置檔和前端資源，便於用戶快速啟動和使用。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 即時更新的多領域數據，適合專業分析需求。
-> - 用戶友好的界面，易於導航和使用。
-> - 整合多個數據來源，提供全面的情報視圖。
+> - 即時數據更新，提供全球事件的快速反應能力。
+> - 多領域數據整合，適合各類使用者需求。
+> - 開源專案，社群可持續貢獻和擴展功能。
 
 > [!danger] 缺點
-> - 需要 Docker 環境，對於某些使用者來說可能增加複雜度。
-> - 即時數據的準確性依賴於外部來源。
-> - 對於不熟悉開源情報的使用者，可能需要學習曲線。
+> - 需要一定的技術背景來設置和運行。
+> - 部分功能依賴外部數據源的穩定性。
+> - 可能面臨數據隱私和安全性問題。
 
 > [!warning] 注意事項
 > - 需要 Docker 或 Podman 環境來運行。
-> - 即時數據更新可能會受到來源的影響。
-> - 對於不熟悉開源情報的使用者，可能需要時間上手。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| FlightRadar24 | FlightRadar24 專注於航空交通追蹤，而 Shadowbroker 提供多領域的即時情報整合。 |
-| MarineTraffic | MarineTraffic 專注於海事追蹤，而 Shadowbroker 提供更廣泛的全球活動數據。 |
+> - 對於某些功能，可能需要穩定的網路連接以獲取即時數據。
+> - 不支持 Windows 環境的直接運行。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 148 |
-| Open Issues | 1 |
+| Forks | 151 |
+| Open Issues | 0 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-05 |
-| Repo 大小 | 103.1 MB |
+| Repo 大小 | 103.2 MB |
 
 > [!info]- 語言組成
 > ```mermaid
@@ -244,7 +231,7 @@ Shadowbroker 採用前後端分離架構，前端使用 Next.js，後端使用 F
 
 ## 延伸閱讀
 
-相關概念：[[即時通訊]] · [[資料視覺化]] · [[開源情報]]
+相關概念：[[開源情報]] · [[即時通訊]] · [[資料視覺化]]
 
 [GitHub](https://github.com/BigBodyCobain/Shadowbroker)
 
@@ -252,36 +239,33 @@ Shadowbroker 採用前後端分離架構，前端使用 Next.js，後端使用 F
 
 > [!note]- 同分類的其他專案
 > ```dataview
-> LIST
+> TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
 > WHERE category = "其他" AND file.name != "BigBodyCobain--Shadowbroker"
 > SORT stars DESC
 > LIMIT 8
 > ```
 
+> [!note]- 同週收錄
+> ```dataview
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
+> FROM "Repos"
+> WHERE week = "2026-W11" AND file.name != "BigBodyCobain--Shadowbroker"
+> SORT stars DESC
+> ```
+
 ---
 
 ## 個人筆記
 
-> [!question]+ 快速評估（第一次看時填寫）
-> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> [!question]+ 快速評估（30 秒填完）
 > 
-> **跟我的工作相關嗎？** 是 / 否 / 間接相關
-> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
-> **第一印象**：_一句話_
-
-> [!success]- 深度評估（試用後填寫）
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
 > 
-> | 項目 | 分數 (1-5) | 備註 |
-> | --- | :---: | --- |
-> | 實用性 | /5 | |
-> | 技術新穎性 | /5 | |
-> | 文件品質 | /5 | |
-> | 社群活躍度 | /5 | |
-> | 上手難度 | /5 | 1=很難 5=很簡單 |
-> 
-> **成熟度**：早期 / 可用 / 穩定
-> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
 
 ### 試用記錄
 

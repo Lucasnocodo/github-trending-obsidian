@@ -7,7 +7,7 @@ language: Python
 license: Apache-2.0
 description: "A CLI for Bilibili — browse videos, users, search, and feeds from the terminal"
 homepage: ""
-stars: 321
+stars: 323
 stars_per_day: 54
 forks: 26
 open_issues: 1
@@ -30,89 +30,101 @@ tags:
 aliases:
   - "bilibili-cli"
   - "jackwener/bilibili-cli"
-  - "讓使用者能夠在終端中瀏覽 Bilibili 的影片和用戶。"
+  - "讓你在終端機上輕鬆瀏覽 Bilibili 的影片、用戶和動態。"
 ---
 
 # bilibili-cli
 
-**321** stars · **54** stars/天 · 建立 6 天前 · Python · Apache-2.0
+**323** stars · **54** stars/天 · 建立 6 天前 · Python · Apache-2.0
 
 `v0.5.0` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓使用者能夠在終端中瀏覽 Bilibili 的影片和用戶。
+> 讓你在終端機上輕鬆瀏覽 Bilibili 的影片、用戶和動態。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (54 stars/day)
-> **適合** 需要在終端中操作 Bilibili 的開發者和重度用戶。
-> **一句話重點** 這個工具讓 Bilibili 的內容操作變得更加高效，特別適合開發者和重度用戶。
+> **適合** 希望在終端機上高效管理 Bilibili 內容的開發者和內容創作者。
+> **一句話重點** 這個專案展示了如何將社交媒體的互動轉化為命令行操作，讓開發者能夠更高效地管理內容。
 
 > [!abstract] 核心創新
-> bilibili-cli 提供了全面的命令列功能，讓用戶能夠在終端中高效操作 Bilibili。
+> 提供了從終端機直接與 Bilibili 互動的完整功能，包括音訊提取和用戶動態管理。
 
 ## 專案簡介
 
-bilibili-cli 是一個命令列工具，讓使用者能夠在終端中瀏覽 Bilibili 的影片、用戶及動態。使用者可以透過簡單的指令來查詢影片詳情、用戶資料、熱門影片及個人收藏等。這個工具使用 Python 開發，並支援從 Chrome 或 Firefox 自動提取登錄憑證，讓使用者無需手動輸入帳號密碼。與其他類似工具相比，bilibili-cli 提供了更全面的功能，包括影片的 AI 摘要、音訊提取和結構化輸出格式（如 YAML 和 JSON），這使得它更適合開發者和自動化腳本使用。實際使用中，該工具能夠快速獲取 Bilibili 上的熱門內容，但對於需要圖形介面的使用者來說可能不太友好。整體來看，這是一個穩定的工具，適合需要在終端中操作 Bilibili 的用戶。
+這個 CLI 工具讓使用者能夠在終端機中直接瀏覽 Bilibili 的內容，包括影片詳情、用戶資料和動態更新。使用者可以透過簡單的指令來查詢影片、用戶或熱門影片，並且支持從 Chrome 或 Firefox 自動提取登入所需的 cookies。技術上，這個專案使用 Python 實作，並提供了多種輸出格式（如 YAML 和 JSON），使其適合與其他工具進行整合。與其他 Bilibili 相關工具相比，bilibili-cli 提供了更完整的功能，包括音訊提取和影片互動（如點讚和送幣）。使用者可以下載影片音訊並分割成 WAV 檔案，這在其他工具中較少見。這個工具的效能良好，對於需要快速查詢和互動的使用者來說非常實用，特別是在命令行環境中。這個專案目前處於穩定版本，適合個人或小型團隊使用。對於需要大量自動化操作的使用者，這個工具非常合適，但如果只是偶爾使用 Bilibili，可能會覺得 CLI 操作不夠直觀。
 
-**技術棧**：`Python`
+**技術棧**：`Python 3.7+` · `uv tool`
 
 ## 重點功能
 
-- 影片查詢 — 使用 `bili video <video_id>` 獲取影片詳情、字幕和 AI 摘要。
-- 用戶資料 — 使用 `bili user <user_id>` 獲取用戶的詳細資料和影片列表。
-- 熱門影片 — 使用 `bili hot` 獲取當前熱門影片，支持分頁查詢。
-- 音訊提取 — 使用 `bili audio <video_id>` 將影片音訊提取為 WAV 格式。
-- 結構化輸出 — 支持 `--yaml` 和 `--json` 格式輸出，方便與其他工具整合。
+- 影片查詢 — 使用 `bili video <video_id>` 獲取影片詳情，支持附加參數如 `--subtitle` 來獲取字幕。
+- 音訊提取 — 使用 `bili audio <video_id>` 下載影片音訊並分割成 WAV 檔案，支持 `--segment <seconds>` 來設定分割長度。
+- 用戶資料查詢 — 使用 `bili user <user_id>` 獲取用戶資料，支持查詢用戶的影片列表。
+- 動態更新 — 使用 `bili feed` 獲取自己關注的用戶的動態，支持分頁查詢。
+- 互動功能 — 使用 `bili like <video_id>` 來點讚影片，或使用 `bili triple <video_id>` 來進行一鍵三連互動。
 
 ## 快速開始
 
 1. 安裝 bilibili-cli
 ```bash
-pipx install bilibili-cli
+uv tool install bilibili-cli
 ```
-2. 檢查登錄狀態
+2. 登入 Bilibili 帳號
 ```bash
-bili status
+bili login
 ```
-3. 查詢熱門影片
+3. 查詢影片詳情
 ```bash
-bili hot
+bili video BV1ABcsztEcY
 ```
 
 ## 程式碼範例
 
-bili video BV1ABcsztEcY --ai
+bili video BV1ABcsztEcY --ai --comments --json
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 jackwener 在命令列工具開發方面有豐富經驗，並且隨著 Bilibili 用戶基數的增長，對於 CLI 工具的需求也隨之增加。這個專案在社群中獲得了良好的反響，特別是在開發者圈子中。
+> 作者 Jack Wener 是一位活躍的開源貢獻者，專注於 CLI 工具的開發，這個專案切中了許多使用者希望在終端機中高效使用 Bilibili 的需求。隨著越來越多的開發者和內容創作者尋求更靈活的工具來管理他們的社交媒體，這個專案的需求逐漸上升。
 
 ## 適合誰使用
 
-**目標受眾**：需要在終端中操作 Bilibili 的開發者和重度用戶。
+**目標受眾**：希望在終端機上高效管理 Bilibili 內容的開發者和內容創作者。
 
 > [!example] 使用場景
-> - 學生用它來快速查找和下載 Bilibili 上的學習資源，因為這樣可以節省時間並提高效率。
-> - 內容創作者用它來分析熱門影片的趨勢，因為這樣可以幫助他們制定更好的內容策略。
-> - 開發者用它來自動化 Bilibili 內容的檢索和分析，因為這樣可以更方便地整合到其他應用中。
+> - 影片編輯者用它來快速查詢熱門影片和用戶資料，因為可以直接在終端機中獲取所需資訊，節省了在網頁上搜尋的時間。
+> - 音訊處理工程師用它來提取 Bilibili 影片的音訊並分割成 WAV 檔案，因為這樣可以方便地進行後續的音訊處理，而不需要額外的工具。
+> - 社群經營者用它來監控自己關注的用戶動態，因為可以即時獲取更新，並且能夠快速互動（如點讚或發佈動態）。
+
+## 架構分析
+
+這是一個 CLI 工具，採用單體架構。用戶輸入 → CLI 指令處理 → 輸出結果。關鍵技術決策包括使用 Python 和 uv tool 來管理安裝和依賴。專案目錄結構中，主要的執行檔位於 `bili_cli` 資料夾內，並且有清晰的功能模組劃分。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 功能全面，支持多種操作如查詢、下載和互動。
-> - 支援結構化輸出，方便與其他工具整合。
-> - 自動提取登錄憑證，使用方便。
+> - 提供多種輸出格式，方便與其他工具整合。
+> - 支持音訊提取功能，適合音訊處理需求。
+> - 簡單的安裝和使用流程，降低了上手門檻。
 
 > [!danger] 缺點
-> - 對於不熟悉 CLI 的用戶來說，使用門檻較高。
-> - 某些功能可能依賴於 Bilibili 的 API 穩定性。
-> - 需要定期更新以保持與 Bilibili 的兼容性。
+> - 目前僅支援部分 Bilibili 功能，未來可能需要擴展。
+> - 對於不熟悉 CLI 的使用者來說，學習曲線可能較陡。
+> - 在某些環境下可能會遇到依賴問題，需手動解決。
 
 > [!warning] 注意事項
-> - 需要安裝 Python 和相關依賴。
-> - 對於不熟悉 CLI 的用戶來說，學習曲線較陡。
-> - 某些功能可能受到 Bilibili API 限制。
+> - 僅支援 Python 3.7+
+> - 需要安裝額外的音訊處理庫以支持音訊提取功能
+> - 不支援 Windows 環境的完整功能
+> - 目前僅支持 Bilibili 的部分功能，未來可能會擴展
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [[jackwener--twitter-cli\|jackwener/twitter-cli]] | 這是一個針對 Twitter 的 CLI 工具，專注於社交媒體互動，而 bilibili-cli 更加專注於視頻內容的查詢和管理。 |
+| [[jackwener--xiaohongshu-cli\|jackwener/xiaohongshu-cli]] | 這個工具針對小紅書的內容管理，與 bilibili-cli 的視頻查詢功能不同，主要針對筆記和帳戶工作流。 |
 
 ## 技術細節
 
@@ -131,6 +143,11 @@ bili video BV1ABcsztEcY --ai
 > | [@fkysly](https://github.com/fkysly) | 1 |
 
 **最新版本**：v0.5.0 (2026-03-10)
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，定期更新和維護。
+**連結**：[文件](https://pypi.org/project/bilibili-cli/)
 
 ## README 摘錄
 
@@ -247,7 +264,9 @@ bili video BV1ABcsztEcY --ai
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化測試]]
+相關概念：[[CLI/TUI]] · [[API 設計]] · [[自動化測試]]
+
+相關專案：[[jackwener--twitter-cli|jackwener/twitter-cli]] · [[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]]
 
 [GitHub](https://github.com/jackwener/bilibili-cli)
 
@@ -255,36 +274,33 @@ bili video BV1ABcsztEcY --ai
 
 > [!note]- 同分類的其他專案
 > ```dataview
-> LIST
+> TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
 > WHERE category = "CLI 工具" AND file.name != "jackwener--bilibili-cli"
 > SORT stars DESC
 > LIMIT 8
 > ```
 
+> [!note]- 同週收錄
+> ```dataview
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
+> FROM "Repos"
+> WHERE week = "2026-W11" AND file.name != "jackwener--bilibili-cli"
+> SORT stars DESC
+> ```
+
 ---
 
 ## 個人筆記
 
-> [!question]+ 快速評估（第一次看時填寫）
-> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> [!question]+ 快速評估（30 秒填完）
 > 
-> **跟我的工作相關嗎？** 是 / 否 / 間接相關
-> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
-> **第一印象**：_一句話_
-
-> [!success]- 深度評估（試用後填寫）
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
 > 
-> | 項目 | 分數 (1-5) | 備註 |
-> | --- | :---: | --- |
-> | 實用性 | /5 | |
-> | 技術新穎性 | /5 | |
-> | 文件品質 | /5 | |
-> | 社群活躍度 | /5 | |
-> | 上手難度 | /5 | 1=很難 5=很簡單 |
-> 
-> **成熟度**：早期 / 可用 / 穩定
-> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
 
 ### 試用記錄
 

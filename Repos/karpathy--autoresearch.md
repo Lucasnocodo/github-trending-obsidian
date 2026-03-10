@@ -7,10 +7,10 @@ language: Python
 license: N/A
 description: "AI agents running research on single-GPU nanochat training automatically"
 homepage: ""
-stars: 22395
-stars_per_day: 5599
-forks: 2843
-open_issues: 73
+stars: 22525
+stars_per_day: 5631
+forks: 2859
+open_issues: 69
 created: 2026-03-06
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
@@ -30,39 +30,39 @@ tags:
 aliases:
   - "autoresearch"
   - "karpathy/autoresearch"
-  - "讓 AI 自動進行單 GPU 的 nanochat 訓練實驗，早上起來查看結果。"
+  - "讓 AI 自動進行單 GPU 的 nanochat 訓練實驗，早上醒來就能看到結果。"
 ---
 
 # autoresearch
 
-**22.4k** stars · **5.6k** stars/天 · 建立 4 天前 · Python · 未標註授權
+**22.5k** stars · **5.6k** stars/天 · 建立 4 天前 · Python · 未標註授權
 
 `easy-install`
 
 > [!summary] 一句話摘要
-> 讓 AI 自動進行單 GPU 的 nanochat 訓練實驗，早上起來查看結果。
+> 讓 AI 自動進行單 GPU 的 nanochat 訓練實驗，早上醒來就能看到結果。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (5.6k stars/day)
-> **適合** 希望在單 GPU 環境下進行自動化 AI 研究的開發者或研究人員。
-> **一句話重點** 這個專案展示了如何利用 AI agent 自動化研究過程，讓研究者能專注於結果而非繁瑣的實驗設置。
+> **適合** 希望在單 GPU 環境下進行自動化 LLM 訓練的 AI 研究者和開發者。
+> **一句話重點** 這個專案展示了如何利用 AI agent 自動化 LLM 訓練，為研究者提供了一個全新的實驗方式。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於讓 AI agent 自動進行 LLM 訓練實驗，並通過簡化的代碼結構提升研究效率。
+> 這個專案的核心創新在於讓 AI agent 自動進行 LLM 訓練實驗，並在固定時間內找到最佳模型配置。
 
 ## 專案簡介
 
-這個專案讓 AI agent 在單一 GPU 環境下自動進行 LLM 訓練實驗。它的運作流程是：AI agent 每 5 分鐘修改一次訓練代碼，進行訓練，檢查結果，若有改善則保留，否則回退，直到你早上醒來時看到一份實驗日誌和可能更好的模型。技術上，它使用 Python 和 Jupyter Notebook，並依賴於 PyTorch 進行訓練，使用 Muon 和 AdamW 作為優化器，評估指標為 val_bpb，數值越低越好。與其他類似工具相比，這個專案的獨特之處在於它的自動化程度和固定的訓練時間限制，這使得不同實驗之間的結果可以直接比較。使用者可以在一個簡化的環境中進行大量實驗，約 12 次實驗每小時，整晚可以進行約 100 次實驗。這個專案目前處於 beta 階段，適合對 AI 研究有興趣的中小型團隊。若你希望快速迭代模型並獲得實驗結果，這是一個值得考慮的選擇，但若你需要更複雜的訓練配置或多 GPU 支援，則可能不太適合。
+這個專案讓 AI agent 在單一 GPU 上自動進行 LLM 訓練實驗，過程中它會修改訓練代碼、訓練 5 分鐘、檢查結果並決定是否保留變更，最終生成實驗日誌。核心技術使用 Python 和 Jupyter Notebook，並依賴於 PyTorch 進行模型訓練，訓練時間固定為 5 分鐘，使用 val_bpb 作為評估指標。與傳統的手動調參方式相比，這種自動化方法能夠在短時間內進行大量實驗，並且每次實驗的結果可直接比較。雖然目前僅支援 NVIDIA GPU，但設計上簡化了依賴，適合快速迭代和實驗。這個專案目前仍在 alpha 階段，適合對 AI 研究有興趣的開發者和研究者使用。建議在需要快速實驗和迭代的情況下使用，但不適合需要高效能計算的場景。
 
-**技術棧**：`Python 3.10` · `PyTorch`
+**技術棧**：`Python 3.10+` · `PyTorch`
 
 ## 重點功能
 
-- 自動化訓練 — AI agent 每 5 分鐘修改訓練代碼並進行訓練，直到達到最佳結果。
-- 簡化的代碼結構 — 只需修改 train.py，讓使用者專注於實驗而非繁瑣的配置。
-- 固定的時間預算 — 每次訓練固定 5 分鐘，便於比較不同實驗結果。
-- 使用 val_bpb 指標 — 評估模型性能的標準化指標，便於比較不同架構。
-- 無需複雜配置 — 僅需一個 NVIDIA GPU 和基本的 Python 環境即可運行。
+- 自動化實驗 — AI agent 自動修改 train.py 進行訓練，無需手動介入。
+- 固定訓練時間 — 每次訓練固定 5 分鐘，便於實驗結果比較。
+- 簡化設置 — 只需一個 NVIDIA GPU 和簡單的 Python 環境即可運行。
+- 基於 Markdown 的指令 — 使用 program.md 文件來設定 AI agent 的行為。
+- 單一文件修改 — agent 僅修改 train.py，保持代碼範圍可控。
 
 ## 快速開始
 
@@ -78,58 +78,59 @@ uv sync
 ```bash
 uv run prepare.py
 ```
-4. 手動運行單次訓練實驗
+4. 手動運行一次訓練實驗
 ```bash
 uv run train.py
 ```
 
 ## 程式碼範例
 
-```bash
-uv run train.py
+```python
+# 在 program.md 中設定 AI agent 的行為
+Hi have a look at program.md and let's kick off a new experiment! let's do the setup first.
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> Karpathy 是 AI 領域的知名人物，他的專案切中自動化研究的需求，尤其是在單 GPU 環境下的實驗管理。隨著 AI 研究的快速發展，這種自動化的方式讓研究者能夠更有效率地進行實驗，這使得專案在短時間內受到關注。
+> Karpathy 是知名的 AI 研究者，他的專案切中自動化研究的需求，特別是在 LLM 訓練領域。這個專案的獨特性在於它的自動化實驗流程，並且在 AI 研究界引起了廣泛的討論和關注。
 
 ## 適合誰使用
 
-**目標受眾**：希望在單 GPU 環境下進行自動化 AI 研究的開發者或研究人員。
+**目標受眾**：希望在單 GPU 環境下進行自動化 LLM 訓練的 AI 研究者和開發者。
 
 > [!example] 使用場景
-> - AI 研究員用它來自動化 LLM 訓練實驗，因為這樣可以在不干預的情況下進行大量實驗，提升研究效率。
-> - 學生用它來學習如何調整模型參數，因為 AI agent 的自動調整能讓他們更快掌握模型訓練的要領。
-> - 獨立開發者用它來探索不同的模型架構，因為固定的訓練時間讓他們能夠快速比較不同設置的效果。
+> - AI 研究者用它來自動化 LLM 訓練實驗，因為這樣可以在一夜之間進行多達 100 次實驗，節省大量手動調參的時間。
+> - 資料科學家用它來快速迭代模型架構，因為 AI agent 可以在固定時間內自動調整超參數，找到最佳模型配置。
+> - 開發者用它來測試不同的訓練策略，因為只需修改 program.md，就能讓 AI agent 自動進行實驗，無需深入代碼。
 
 ## 架構分析
 
-這是一個單體架構的專案，核心資料流為：用戶輸入 → AI agent 修改訓練代碼 → 輸出實驗結果。關鍵技術決策是使用固定的訓練時間和簡化的代碼結構，專案目錄結構包含 prepare.py、train.py 和 program.md 三個主要檔案。
+這是一個單體架構的專案，主要由三個文件組成：prepare.py 負責數據準備，train.py 是 AI agent 修改的核心訓練代碼，而 program.md 則是提供給 agent 的指令。用戶輸入 → agent 修改 train.py → 執行訓練 → 輸出實驗結果。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化程度高，能夠快速進行大量實驗。
-> - 簡化的代碼結構，易於使用和維護。
-> - 固定的訓練時間使得實驗結果可比較性強。
+> - 自動化實驗流程，節省時間和精力。
+> - 固定訓練時間使得實驗結果易於比較。
+> - 簡化的設置過程，適合快速上手。
 
 > [!danger] 缺點
-> - 僅支援單一 GPU，對於需要多 GPU 的用戶不友好。
-> - 訓練時間固定，可能不適合某些模型的需求。
-> - 需要一定的 AI 和機器學習背景才能有效使用。
+> - 僅支援單一 GPU，限制了使用範圍。
+> - 固定的訓練時間可能不符合所有用戶需求。
+> - 仍在 alpha 階段，穩定性和功能可能不完善。
 
 > [!warning] 注意事項
-> - 僅支援單一 NVIDIA GPU，未來可能支援多 GPU。
-> - 訓練時間固定為 5 分鐘，可能不適合需要長時間訓練的模型。
-> - 需要 Python 3.10 以上版本，對於舊版用戶需升級。
+> - 僅支援單一 NVIDIA GPU，未來可能支援其他平台。
+> - 固定的訓練時間限制可能不適合所有情況，無法與其他平台的結果直接比較。
+> - 目前仍在 alpha 階段，API 可能會變動。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 2.8k |
-| Open Issues | 73 |
+| Forks | 2.9k |
+| Open Issues | 69 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-06 |
 | Repo 大小 | 255 KB |
@@ -148,11 +149,6 @@ uv run train.py
 > | [@dipeshbabu](https://github.com/dipeshbabu) | 1 |
 > | [@marcinbogdanski](https://github.com/marcinbogdanski) | 1 |
 > | [@dumko2001](https://github.com/dumko2001) | 1 |
-
-## 社群與生態
-
-**社群活躍度**：社群活躍度高，持續有更新和討論。
-**連結**：[文件](https://github.com/karpathy/autoresearch)
 
 ## README 摘錄
 
@@ -221,7 +217,7 @@ uv run train.py
 
 ## 延伸閱讀
 
-相關概念：[[機器學習]] · [[自動化測試]]
+相關概念：[[自動化測試]] · [[機器學習]] · [[深度學習]]
 
 [GitHub](https://github.com/karpathy/autoresearch)
 
@@ -229,36 +225,33 @@ uv run train.py
 
 > [!note]- 同分類的其他專案
 > ```dataview
-> LIST
+> TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
 > WHERE category = "AI/ML" AND file.name != "karpathy--autoresearch"
 > SORT stars DESC
 > LIMIT 8
 > ```
 
+> [!note]- 同週收錄
+> ```dataview
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
+> FROM "Repos"
+> WHERE week = "2026-W11" AND file.name != "karpathy--autoresearch"
+> SORT stars DESC
+> ```
+
 ---
 
 ## 個人筆記
 
-> [!question]+ 快速評估（第一次看時填寫）
-> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> [!question]+ 快速評估（30 秒填完）
 > 
-> **跟我的工作相關嗎？** 是 / 否 / 間接相關
-> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
-> **第一印象**：_一句話_
-
-> [!success]- 深度評估（試用後填寫）
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
 > 
-> | 項目 | 分數 (1-5) | 備註 |
-> | --- | :---: | --- |
-> | 實用性 | /5 | |
-> | 技術新穎性 | /5 | |
-> | 文件品質 | /5 | |
-> | 社群活躍度 | /5 | |
-> | 上手難度 | /5 | 1=很難 5=很簡單 |
-> 
-> **成熟度**：早期 / 可用 / 穩定
-> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
 
 ### 試用記錄
 

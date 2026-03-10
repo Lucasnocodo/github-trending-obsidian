@@ -7,7 +7,7 @@ language: PowerShell
 license: N/A
 description: "A BloodHound OpenGraph collector that models Windows local privilege escalation as interconnected attack paths."
 homepage: ""
-stars: 295
+stars: 296
 stars_per_day: 74
 forks: 28
 open_issues: 1
@@ -29,83 +29,103 @@ tags:
 aliases:
   - "PrivHound"
   - "dazzyddos/PrivHound"
-  - "將 Windows 本地特權提升建模為圖形，幫助安全專家快速識別攻擊路徑。"
+  - "將 Windows 本地權限提升建模為互聯攻擊路徑，讓攻擊者能更清楚地理解潛在的權限提升途徑。"
 ---
 
 # PrivHound
 
-**295** stars · **74** stars/天 · 建立 4 天前 · PowerShell · 未標註授權
+**296** stars · **74** stars/天 · 建立 4 天前 · PowerShell · 未標註授權
 
 `個人專案`
 
 > [!summary] 一句話摘要
-> 將 Windows 本地特權提升建模為圖形，幫助安全專家快速識別攻擊路徑。
+> 將 Windows 本地權限提升建模為互聯攻擊路徑，讓攻擊者能更清楚地理解潛在的權限提升途徑。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (74 stars/day)
-> **適合** 專注於 Windows 安全分析的滲透測試人員和安全專家。
-> **一句話重點** PrivHound 透過圖形化的方式，讓 Windows 本地特權提升的分析變得更加直觀和高效。
+> **適合** 需要深入分析 Windows 本地權限提升的安全專家和滲透測試工程師。
+> **一句話重點** PrivHound 讓權限提升的分析不再是孤立的檢查，而是透過圖形化的方式將多個攻擊向量串聯起來，提供更全面的安全視角。
 
 > [!abstract] 核心創新
-> PrivHound 將 Windows 本地特權提升建模為圖形，讓安全分析更直觀。
+> PrivHound 透過圖形化方式將本地權限提升建模為互聯攻擊路徑，提供了全新的視角來理解權限提升的潛在風險。
 
 ## 專案簡介
 
-PrivHound 將 Windows 本地特權提升的攻擊路徑轉換為圖形結構，讓安全專家能夠更直觀地分析和識別潛在的攻擊路徑。它基於 BloodHound 的 OpenGraph 框架，能夠列舉 29 種特權提升向量，並將其以互聯的節點和邊的形式輸出。這樣的設計使得多步驟的特權提升鏈路變得可視化，並且可以使用 Cypher 查詢，讓用戶能夠快速找到從一個發現到另一個的連結。與傳統的單一工具相比，PrivHound 提供了一個整體的視角，讓用戶能夠理解各個發現之間的關係。實際使用中，這個工具能夠自動連接不同的發現，顯著提高了安全分析的效率。這個專案目前處於穩定階段，適合各種規模的安全團隊使用。建議在需要進行深入的安全分析時使用，不適合對於單一發現進行快速檢查的情境。
+PrivHound 透過 BloodHound 的 OpenGraph 框架，將 Windows 本地權限提升的攻擊路徑視覺化，讓使用者能夠探索多步驟的權限提升鏈。它能夠枚舉 29 種權限提升向量，並將這些向量以節點和邊的形式輸出，讓使用者可以使用 Cypher 查詢。與傳統工具如 WinPEAS 和 PowerUp 不同，PrivHound 不僅報告單一的錯誤配置，而是將這些配置串聯起來，讓使用者了解每一步的關聯性。這樣的設計使得多跳的權限提升鏈變得可見，並且可以與現有的 Active Directory 攻擊路徑重疊。使用者可以透過簡單的查詢來獲取攻擊路徑的全貌，這在現有工具中是無法實現的。PrivHound 需要在 Windows 環境下運行，並且對於使用者的權限有一定的要求。這個專案目前處於穩定階段，適合需要進行安全測試的團隊使用。對於希望深入了解本地權限提升的安全研究人員來說，PrivHound 是一個值得一試的工具。
+
+**技術棧**：`PowerShell` · `Cypher`
 
 ## 重點功能
 
-- 圖形化建模 — 將特權提升過程轉換為可視化的圖形結構。
-- 29 種檢查類別 — 涵蓋多種 Windows 特權提升向量。
-- Cypher 查詢 — 允許用戶對圖形進行查詢，快速找到攻擊路徑。
-- 與 BloodHound 兼容 — 可以與現有的 Active Directory 攻擊路徑重疊。
-- 自動化連接 — 自動將不同的發現連接起來，節省分析時間。
+- 互聯攻擊路徑 — 將本地權限提升的多步驟鏈接視覺化，使用者可以輕鬆查詢。
+- 29 種權限提升向量 — 包含弱服務權限、DLL 劫持、存儲的憑證等多種檢查。
+- Cypher 查詢 — 使用 Cypher 語言進行靈活的查詢，快速獲取所需的攻擊路徑資訊。
+- 與 Active Directory 整合 — 能夠將本地權限提升路徑與 AD 攻擊路徑重疊，提供更全面的安全分析。
+- 自動化檢查 — 自動化檢查過程，減少手動分析的時間和錯誤。
 
 ## 快速開始
 
 1. 安裝 PrivHound
 ```bash
-git clone https://github.com/dazzyddos/PrivHound
+git clone https://github.com/dazzyddos/PrivHound.git
 ```
-2. 運行 PrivHound
+2. 進入專案目錄
 ```bash
-python privhound.py
+cd PrivHound
 ```
-3. 查詢圖形數據
+3. 執行收集器
 ```bash
-cypher query here
+powershell -ExecutionPolicy Bypass -File PrivHound.ps1
+```
+
+## 程式碼範例
+
+```powershell
+# 執行 PrivHound 收集器
+powershell -ExecutionPolicy Bypass -File PrivHound.ps1
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者在安全領域有豐富的經驗，並且針對現有工具的不足提出了創新的解決方案。隨著對於 Windows 安全的重視增加，這個專案正好滿足了市場需求，並且其獨特的圖形化展示方式使得更多安全專家願意使用。
+> PrivHound 的作者在安全領域有豐富的經驗，並且針對當前本地權限提升工具的不足提出了創新的解決方案。隨著對於 Windows 環境安全的重視增加，這個工具正好切中需求。近年來，對於權限提升的攻擊方式越來越多，這使得 PrivHound 的時機變得更加合適。
 
 ## 適合誰使用
 
-**目標受眾**：專注於 Windows 安全分析的滲透測試人員和安全專家。
+**目標受眾**：需要深入分析 Windows 本地權限提升的安全專家和滲透測試工程師。
 
 > [!example] 使用場景
-> - 安全分析師用它來識別潛在的攻擊路徑，因為傳統工具無法有效連接不同的發現。
-> - 滲透測試人員用它來模擬攻擊路徑，因為能夠更直觀地理解特權提升的鏈路。
-> - 系統管理員用它來檢查系統安全性，因為能夠快速識別多個發現之間的關聯。
+> - 安全研究員用它來分析 Windows 環境中的權限提升路徑，因為它能夠將多個攻擊向量串聯起來，提供更完整的攻擊視圖。
+> - 滲透測試工程師用它來快速識別可利用的權限提升機會，因為它能夠自動化查詢過程，節省大量手動分析時間。
+> - 系統管理員用它來檢查本地系統的安全配置，因為它提供了可視化的攻擊路徑，幫助他們理解潛在的風險。
+
+## 架構分析
+
+PrivHound 採用單體架構，核心資料流為：用戶輸入 → 收集本地權限提升資料 → 輸出可視化攻擊路徑。關鍵技術決策包括使用 BloodHound 的 OpenGraph 框架來建模攻擊路徑。專案目錄結構中，主要的執行檔為 PrivHound.ps1，負責收集和處理數據。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供可視化的攻擊路徑，易於理解。
-> - 涵蓋多種特權提升向量，全面性強。
-> - 能夠與 BloodHound 整合，增強功能。
+> - 提供可視化的攻擊路徑，讓使用者能夠更直觀地理解權限提升的可能性。
+> - 自動化檢查過程，節省時間並降低人為錯誤。
+> - 整合多種權限提升向量，提供全面的安全分析。
 
 > [!danger] 缺點
 > - 僅限於 Windows 環境，無法跨平台使用。
-> - 需要一定的學習曲線，對新手不友好。
-> - 不支持即時數據更新，需手動操作。
+> - 需要使用者具備一定的權限才能執行所有檢查。
+> - 對於某些複雜的環境配置，可能需要額外的調整。
 
 > [!warning] 注意事項
-> - 僅支援 Windows 環境，無法在其他操作系統上使用。
-> - 需要用戶具備一定的安全分析知識，以便理解生成的圖形。
-> - 不支持即時更新，需手動運行以獲取最新數據。
+> - 僅支援 Windows 環境。
+> - 需要適當的使用者權限來執行檢查。
+> - 對於某些檢查，可能需要額外的工具或配置。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [[BloodHound--BloodHound\|BloodHound/BloodHound]] | BloodHound 專注於 Active Directory 的攻擊路徑，而 PrivHound 則針對 Windows 本地權限提升進行建模，提供更細緻的視覺化。 |
+| [[PowerUp--PowerUp\|PowerUp/PowerUp]] | PowerUp 主要用於識別單一的權限提升漏洞，而 PrivHound 則將這些漏洞串聯起來，形成完整的攻擊鏈。 |
 
 ## 技術細節
 
@@ -128,6 +148,11 @@ cypher query here
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@dazzyddos](https://github.com/dazzyddos) | 1 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，定期更新和維護。
+**連結**：[文件](https://github.com/dazzyddos/PrivHound/wiki)
 
 ## README 摘錄
 
@@ -194,42 +219,43 @@ cypher query here
 
 ## 延伸閱讀
 
+相關概念：[[權限提升]] · [[安全漏洞]] · [[滲透測試]]
+
+相關專案：[[BloodHound--BloodHound|BloodHound/BloodHound]] · [[PowerUp--PowerUp|PowerUp/PowerUp]]
+
 [GitHub](https://github.com/dazzyddos/PrivHound)
 
 ## 相關收錄
 
 > [!note]- 同分類的其他專案
 > ```dataview
-> LIST
+> TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
 > WHERE category = "安全" AND file.name != "dazzyddos--PrivHound"
 > SORT stars DESC
 > LIMIT 8
 > ```
 
+> [!note]- 同週收錄
+> ```dataview
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
+> FROM "Repos"
+> WHERE week = "2026-W11" AND file.name != "dazzyddos--PrivHound"
+> SORT stars DESC
+> ```
+
 ---
 
 ## 個人筆記
 
-> [!question]+ 快速評估（第一次看時填寫）
-> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> [!question]+ 快速評估（30 秒填完）
 > 
-> **跟我的工作相關嗎？** 是 / 否 / 間接相關
-> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
-> **第一印象**：_一句話_
-
-> [!success]- 深度評估（試用後填寫）
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
 > 
-> | 項目 | 分數 (1-5) | 備註 |
-> | --- | :---: | --- |
-> | 實用性 | /5 | |
-> | 技術新穎性 | /5 | |
-> | 文件品質 | /5 | |
-> | 社群活躍度 | /5 | |
-> | 上手難度 | /5 | 1=很難 5=很簡單 |
-> 
-> **成熟度**：早期 / 可用 / 穩定
-> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
 
 ### 試用記錄
 

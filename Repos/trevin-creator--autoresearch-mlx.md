@@ -9,7 +9,7 @@ description: "Apple Silicon (MLX) port of Karpathy's autoresearch — autonomous
 homepage: ""
 stars: 479
 stars_per_day: 240
-forks: 67
+forks: 68
 open_issues: 3
 created: 2026-03-08
 pushed_at: 2026-03-10
@@ -30,7 +30,7 @@ tags:
 aliases:
   - "autoresearch-mlx"
   - "trevin-creator/autoresearch-mlx"
-  - "在 Apple Silicon 上實現無需 PyTorch 的自動化 AI 研究循環。"
+  - "讓 Apple Silicon 用戶能在不依賴 PyTorch 的情況下，進行自動化的 AI 研究實驗。"
 ---
 
 # autoresearch-mlx
@@ -40,29 +40,29 @@ aliases:
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 在 Apple Silicon 上實現無需 PyTorch 的自動化 AI 研究循環。
+> 讓 Apple Silicon 用戶能在不依賴 PyTorch 的情況下，進行自動化的 AI 研究實驗。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (240 stars/day)
-> **適合** 希望在 Apple Silicon 上進行 AI 研究但不想依賴 PyTorch 的開發者。
-> **一句話重點** 這個專案展示了如何在 Apple Silicon 上無需 PyTorch 進行高效的 AI 研究，為開發者提供了一個新的選擇。
+> **適合** 希望在 Apple Silicon 上進行 AI 研究但不想依賴 PyTorch 的獨立開發者。
+> **一句話重點** 這個專案讓 Apple Silicon 用戶能夠輕鬆進行自動化 AI 研究，無需繁瑣的依賴設置。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於無需 PyTorch 的自動化 AI 研究循環，專為 Apple Silicon 優化。
+> 這個專案的核心創新在於無需 PyTorch 即可在 Apple Silicon 上進行高效的自動化 AI 研究。
 
 ## 專案簡介
 
-這個專案讓使用者能在 Apple Silicon 上進行自動化的 AI 研究循環，透過 `program.md` 控制固定時間的實驗。使用者只需編輯 `train.py`，每次運行 5 分鐘的訓練，根據 `val_bpb` 指標決定是否保留變更，並透過 git 進行版本控制。專案基於 MLX 框架，避免了 PyTorch 和 CUDA 的依賴，確保了在 Apple 硬體上的原生運行。與 Karpathy 的原始版本相比，它簡化了訓練流程，並專注於 AdamW 優化器，並且調整了評估的 token 預算以適應 Apple Silicon 的特性。這使得小型模型能在固定的時間內進行更多的優化步驟，從而獲得更好的結果。實驗數據顯示，使用者可以在不同的 Apple 硬體上獲得不同的最佳結果，這對於硬體特定的行為探索非常有幫助。這個專案目前處於穩定階段，適合需要快速迭代的研究團隊。對於小型團隊或獨立開發者，這是一個值得一試的工具，特別是在 Apple 硬體上進行 AI 研究時。
+這個專案是 Karpathy 的 autoresearch 的 Apple Silicon 移植版本，透過 `program.md` 控制固定時間的自動研究迴圈。使用者只需編輯 `train.py`，每 5 分鐘進行一次訓練實驗，並根據 `val_bpb` 指標決定是否保留變更，這樣的迴圈可以持續進行。專案依賴於 MLX，實現了無需 PyTorch 或 CUDA 的原生訓練，並且支援 Python 3.10 以上版本。與傳統的 autoresearch 相比，它簡化了訓練過程，並且專注於 Apple Silicon 的性能優化。這個工具在小型硬體上表現出色，能夠在固定的時間內進行更多的優化步驟，從而提高訓練效率。根據公開的基準結果，最好的模型在 5 分鐘內達到了 `1.294526` 的 `val_bpb`，顯示出小型模型在時間限制下的優勢。這個專案目前處於穩定階段，適合需要在 Apple Silicon 環境中進行快速實驗的開發者。建議在需要快速迭代和不依賴重型框架的情況下使用，若需更複雜的模型或依賴於 CUDA 的功能則不適合。
 
 **技術棧**：`Python 3.10+` · `MLX`
 
 ## 重點功能
 
-- 無需 PyTorch — 使用 MLX 框架，實現原生 Apple Silicon 訓練。
-- 固定時間實驗 — 每次運行 5 分鐘，快速迭代模型。
-- 自動化版本控制 — 透過 git 保留或還原變更。
-- 簡化的訓練流程 — 只需編輯 `train.py`，其他部分固定。
-- 支持 AdamW 優化器 — 專注於簡化的優化流程。
+- 無需 PyTorch 或 CUDA — 透過 MLX 實現原生 Apple Silicon 訓練。
+- 固定時間的自動化實驗 — 每次實驗限制在 5 分鐘內，快速迭代。
+- 簡化的訓練流程 — 使用 `train.py` 和 `program.md` 控制實驗。
+- 公開基準結果 — 提供 `results.tsv` 以追蹤實驗歷史和性能。
+- 小型模型優化 — 在固定時間內能進行更多優化步驟，提升訓練效率。
 
 ## 快速開始
 
@@ -74,7 +74,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```bash
 uv sync
 ```
-3. 準備數據和 tokenizer
+3. 準備數據和分詞器
 ```bash
 uv run prepare.py
 ```
@@ -85,51 +85,55 @@ uv run train.py
 
 ## 程式碼範例
 
-```bash
+```python
+# 編輯 train.py 以進行模型訓練
+# 然後運行訓練實驗
 uv run train.py
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 專案由資深開發者 trevin-creator 提供，針對 Apple Silicon 的需求進行了優化，填補了無需 PyTorch 的空白。隨著 Apple Silicon 的普及，越來越多的開發者尋求高效的 AI 訓練解決方案，這使得該專案獲得了關注。
+> 作者 trevin-creator 是一位專注於 Apple Silicon 的開發者，這個專案切中 Apple 硬體用戶對於無需 PyTorch 的需求。隨著 Apple Silicon 的普及，越來越多的開發者尋求能在其平台上高效運行的工具，這使得 autoresearch-mlx 在社群中受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：希望在 Apple Silicon 上進行 AI 研究但不想依賴 PyTorch 的開發者。
+**目標受眾**：希望在 Apple Silicon 上進行 AI 研究但不想依賴 PyTorch 的獨立開發者。
 
 > [!example] 使用場景
-> - AI 研究員用它來快速迭代模型訓練，因為它能在 Apple Silicon 上無需 PyTorch 進行自動化實驗，節省了配置時間。
-> - 數據科學家用它來探索不同的模型架構，因為它可以在固定的時間內進行多次實驗，幫助找到最佳參數。
-> - 獨立開發者用它來在 Mac 上進行 AI 開發，因為它不需要複雜的環境設置，直接運行即可。
+> - AI 研究員用它來在 Apple Silicon 上自動化訓練模型，因為這樣可以在不安裝重型依賴的情況下快速迭代。
+> - 機器學習工程師用它來探索不同的模型架構和超參數，因為它的固定時間實驗設計能有效提升訓練效率。
+> - 獨立開發者用它來在 Mac 上進行 AI 研究，因為它簡化了環境設置，讓他們專注於實驗而非配置。
 
 ## 架構分析
 
-這是一個基於 CLI 的單體架構，使用者透過命令行輸入來控制實驗流程。用戶輸入 → 編輯 `train.py` → 運行實驗 → 根據 `val_bpb` 決定保留或還原變更。關鍵技術決策是使用 MLX 進行原生訓練，專案目錄結構中 `prepare.py` 負責數據準備，`train.py` 負責模型訓練，`program.md` 定義實驗協議。
+這是一個 CLI 工具，架構為單體應用。用戶輸入 → 編輯 `train.py` → 運行實驗 → 輸出結果到 `results.tsv`。關鍵技術決策是使用 MLX 進行原生訓練，專案目錄結構包含 `train.py`、`prepare.py` 和 `program.md` 等核心檔案。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速迭代模型訓練，適合需要頻繁調整的研究。
-> - 無需複雜的環境設置，降低了使用門檻。
-> - 專為 Apple Silicon 優化，充分利用硬體性能。
+> - 無需重型依賴，簡化環境設置。
+> - 固定時間的自動化實驗設計，提升效率。
+> - 專注於 Apple Silicon 硬體的性能優化，適合小型模型。
+> - 公開基準結果，便於用戶追蹤實驗歷史。
 
 > [!danger] 缺點
-> - 僅限於 Apple Silicon，無法在其他平台使用。
-> - 缺乏對 PyTorch 的支持，可能限制某些使用者的選擇。
-> - 目前的功能相對簡單，可能不適合需要複雜模型的研究。
+> - 僅支援 Apple Silicon 硬體，無法在其他平台上運行。
+> - 不支援 CUDA，限制了某些高效能需求。
+> - MFU 報告不完整，無法提供全面的性能指標。
+> - 需要 Python 3.10 以上版本，對於舊版用戶不友好。
 
 > [!warning] 注意事項
 > - 僅支援 Apple Silicon 硬體。
-> - 需要 Python 3.10+。
-> - 評估 token 預算較小，可能影響某些模型的表現。
-> - MFU 報告為佔位符，缺乏具體的性能參考。
+> - 需要 Python 3.10 以上版本。
+> - MFU 報告目前為佔位符，未提供完整的性能指標。
+> - 不支援 CUDA 或其他 GPU 加速方案。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 67 |
+| Forks | 68 |
 | Open Issues | 3 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-08 |
@@ -139,10 +143,6 @@ uv run train.py
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@trevin-creator](https://github.com/trevin-creator) | 4 |
-
-## 社群與生態
-
-**社群活躍度**：社群活躍度中等，主要依賴 GitHub 的問題和討論。
 
 ## README 摘錄
 
@@ -223,7 +223,7 @@ uv run train.py
 
 ## 延伸閱讀
 
-相關概念：[[機器學習]] · [[深度學習]] · [[自動化測試]]
+相關概念：[[自動化測試]] · [[機器學習]] · [[深度學習]]
 
 [GitHub](https://github.com/trevin-creator/autoresearch-mlx)
 
@@ -231,36 +231,33 @@ uv run train.py
 
 > [!note]- 同分類的其他專案
 > ```dataview
-> LIST
+> TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
 > WHERE category = "AI/ML" AND file.name != "trevin-creator--autoresearch-mlx"
 > SORT stars DESC
 > LIMIT 8
 > ```
 
+> [!note]- 同週收錄
+> ```dataview
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
+> FROM "Repos"
+> WHERE week = "2026-W11" AND file.name != "trevin-creator--autoresearch-mlx"
+> SORT stars DESC
+> ```
+
 ---
 
 ## 個人筆記
 
-> [!question]+ 快速評估（第一次看時填寫）
-> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> [!question]+ 快速評估（30 秒填完）
 > 
-> **跟我的工作相關嗎？** 是 / 否 / 間接相關
-> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
-> **第一印象**：_一句話_
-
-> [!success]- 深度評估（試用後填寫）
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
 > 
-> | 項目 | 分數 (1-5) | 備註 |
-> | --- | :---: | --- |
-> | 實用性 | /5 | |
-> | 技術新穎性 | /5 | |
-> | 文件品質 | /5 | |
-> | 社群活躍度 | /5 | |
-> | 上手難度 | /5 | 1=很難 5=很簡單 |
-> 
-> **成熟度**：早期 / 可用 / 穩定
-> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
 
 ### 試用記錄
 

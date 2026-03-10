@@ -7,9 +7,9 @@ language: TypeScript
 license: N/A
 description: "Reverse-engineered TypeScript client for QClaw's WeChat Access API."
 homepage: "https://photon.codes"
-stars: 296
-stars_per_day: 296
-forks: 95
+stars: 298
+stars_per_day: 298
+forks: 96
 open_issues: 5
 created: 2026-03-10
 pushed_at: 2026-03-10
@@ -35,47 +35,47 @@ tags:
 aliases:
   - "qclaw-wechat-client"
   - "photon-hq/qclaw-wechat-client"
-  - "提供一個 TypeScript 客戶端，讓開發者能夠透過 WeChat OAuth2 登入 QClaw 的 API。"
+  - "提供一個 TypeScript 客戶端，讓開發者能夠透過 WeChat OAuth2 登入 QClaw 的服務。"
 ---
 
 # qclaw-wechat-client
 
-**296** stars · **296** stars/天 · 建立 1 天前 · TypeScript · 未標註授權
+**298** stars · **298** stars/天 · 建立 1 天前 · TypeScript · 未標註授權
 
 `ORG` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供一個 TypeScript 客戶端，讓開發者能夠透過 WeChat OAuth2 登入 QClaw 的 API。
+> 提供一個 TypeScript 客戶端，讓開發者能夠透過 WeChat OAuth2 登入 QClaw 的服務。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (296 stars/day)
-> **適合** 需要整合 WeChat 登入功能的前端或後端開發者。
-> **一句話重點** 這個專案讓開發者能夠輕鬆地整合 WeChat 登入功能，並且提供了完整的 API 方法來簡化開發流程。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (298 stars/day)
+> **適合** 需要在應用中集成 WeChat 登入的 TypeScript 開發者。
+> **一句話重點** 這個專案展示了如何通過反向工程來實現與大型平台的 API 整合，並提供了易於使用的 TypeScript 客戶端。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個完整的 TypeScript 客戶端，專門針對 QClaw 的 WeChat Access API，簡化了與 Tencent 後端的交互流程。
+> 這個專案提供了一個完整的 TypeScript 客戶端來實現 WeChat OAuth2 登入流程，簡化了開發者的集成工作。
 
 ## 專案簡介
 
-這個專案是一個反向工程的 TypeScript 客戶端，專為 QClaw 的 WeChat Access API 設計。它的工作流程是：首先透過 QR 碼獲取 CSRF token，然後用這個 token 進行 WeChat 登入，接著獲取 session 並建立 OpenClaw 配置。技術上，它使用了 TypeScript 和 jprx 協議來與 Tencent 的後端進行通訊。與其他類似工具相比，這個專案專注於 WeChat 的 OAuth2 流程，並且提供了完整的 API 方法來處理用戶認證和設備管理。實際使用中，這個客戶端能夠快速處理登入流程，但需要注意的是，它依賴於 WeChat 的 OAuth2 機制，這可能會限制某些用戶的使用。這個專案目前處於 beta 階段，適合需要與 QClaw 進行整合的開發者使用。建議在需要快速接入 WeChat 認證的情況下使用，但如果需要更廣泛的 API 支持，則可能需要考慮其他選擇。
+這個專案是一個反向工程的 TypeScript 客戶端，專門用於 QClaw 的 WeChat Access API。它的工作流程是：首先透過 QR 碼獲取 CSRF 狀態，然後用 WeChat 的授權碼交換 JWT 和頻道令牌，最後構建 OpenClaw 的配置。技術上，它使用 TypeScript 實現了與 Tencent 的 jprx 協議的通訊，並提供了完整的 API 方法來進行用戶認證和設備管理。與其他類似工具相比，它專注於 WeChat 的 OAuth2 流程，並提供了簡單的 API 來處理用戶登入和配置。實際使用中，這個庫的效能表現良好，但需要注意的是，它依賴於 WeChat 的授權流程，因此無法離線使用。這個專案目前處於穩定階段，適合中小型團隊使用。對於需要集成 WeChat 登入的應用，這是一個不錯的選擇，但如果不需要 WeChat 支持，則可以考慮其他通用的 OAuth2 客戶端。
 
-**技術棧**：`TypeScript`
+**技術棧**：`TypeScript` · `Node.js`
 
 ## 重點功能
 
-- QR 碼登入 — 使用 `getWxLoginState` 獲取 CSRF token，並用 `buildWxLoginUrl` 生成 QR 碼網址。
-- 用戶認證 — 透過 `wxLogin` 方法交換 WeChat 認證碼以獲取 JWT 和 channel token。
-- 設備管理 — 提供 `queryDeviceByGuid` 和 `disconnectDevice` 方法來管理設備連接。
-- API 密鑰生成 — 使用 `createApiKey` 方法來生成 QClaw 模型提供者的 API 密鑰。
-- 即時更新 — 支持 `checkUpdate` 方法來檢查應用更新。
+- QR 碼登入 — 使用 `getWxLoginState` 獲取 CSRF 狀態，並用 `buildWxLoginUrl` 生成 QR 碼網址。
+- JWT 認證 — 透過 `wxLogin` 方法交換 WeChat 授權碼以獲取 JWT 和頻道令牌。
+- 用戶管理 — 使用 `getUserInfo` 獲取用戶資料，並可用 `wxLogout` 來登出。
+- 設備管理 — 提供 `queryDeviceByGuid` 和 `disconnectDevice` 方法來管理設備狀態。
+- 配置生成 — 使用 `buildPostLoginConfig` 來生成 OpenClaw 配置對象，簡化後續操作。
 
 ## 快速開始
 
-1. 安裝 qclaw-wechat-client
+1. 安裝套件
 ```bash
 npm install qclaw-wechat-client
 ```
-2. 初始化 QClawClient
+2. 初始化客戶端
 ```bash
 const client = new QClawClient({ env: 'production' });
 ```
@@ -83,12 +83,22 @@ const client = new QClawClient({ env: 'production' });
 ```bash
 const stateRes = await client.getWxLoginState({ guid: 'machine-id' });
 ```
+4. 生成 QR 碼網址
+```bash
+const qrUrl = client.buildWxLoginUrl(state!);
+```
+5. 用授權碼登入
+```bash
+const loginRes = await client.wxLogin({ guid: 'machine-id', code: authCode, state: state! });
+```
 
 ## 程式碼範例
 
 ```typescript
+import { QClawClient } from 'qclaw-wechat-client';
 const client = new QClawClient({ env: 'production' });
 const stateRes = await client.getWxLoginState({ guid: 'machine-id' });
+const state = QClawClient.unwrap(stateRes)?.state;
 const qrUrl = client.buildWxLoginUrl(state!);
 console.log('Scan this:', qrUrl);
 const loginRes = await client.wxLogin({ guid: 'machine-id', code: authCode, state: state! });
@@ -97,39 +107,51 @@ const loginRes = await client.wxLogin({ guid: 'machine-id', code: authCode, stat
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案的作者 qwerzl 對 QClaw 的 API 有深入的了解，並且反向工程的過程讓這個工具能夠直接解決開發者的需求。隨著 WeChat 在中國的普及，對於這類工具的需求也隨之上升。這個專案的推出正好切中這個需求，並且提供了一個簡單易用的解決方案。
+> 這個專案由於其獨特的功能和反向工程的背景，吸引了不少開發者的注意。作者 qwerzl 在開源社群中有一定的影響力，並且這個專案滿足了對於 WeChat 登入的需求，特別是在中國市場。隨著越來越多的應用需要集成 WeChat 登入，這個專案的實用性也隨之提升。
 
 ## 適合誰使用
 
-**目標受眾**：需要整合 WeChat 登入功能的前端或後端開發者。
+**目標受眾**：需要在應用中集成 WeChat 登入的 TypeScript 開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來整合 WeChat 登入功能到自己的應用中，因為這樣可以快速獲得用戶的授權和信息。
-> - 全端開發者用它來測試 QClaw 的 API，因為它提供了完整的 API 方法和範例，讓測試變得簡單。
-> - 產品經理用它來驗證 WeChat 登入流程的可行性，因為它能夠快速實現並測試整個流程。
+> - 前端工程師用它來實現 WeChat 登入功能，因為這樣可以快速集成用戶認證，減少開發時間。
+> - 後端工程師用它來管理用戶的會話和設備，因為它提供了簡單的 API 來處理 JWT 和頻道令牌。
+> - 產品經理用它來測試 WeChat 登入流程的穩定性，因為它包含了完整的示範和 API 文檔，方便快速上手。
+
+## 架構分析
+
+這是一個單體架構的 TypeScript 庫，主要用於與 QClaw 的 WeChat Access API 進行通訊。用戶輸入 → 獲取登入狀態 → 生成 QR 碼 → 用戶掃描 → 獲取 JWT → 輸出用戶資料。關鍵技術決策是使用 TypeScript 實現 API 的類型安全，並提供了簡單的 API 方法來進行用戶認證和設備管理。專案目錄結構中，`src` 目錄包含了所有的核心功能實現。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用，快速集成 WeChat 登入功能。
-> - 提供完整的 API 方法，方便開發者使用。
-> - 支持即時更新和設備管理功能。
+> - 簡單易用的 API，快速集成 WeChat 登入功能。
+> - 完整的示範和文檔，方便開發者上手。
+> - 支持 JWT 認證，安全性高。
 
 > [!danger] 缺點
-> - 需要 WeChat 帳號，對於某些用戶來說可能不方便。
-> - 僅支援 TypeScript，對於其他語言的開發者不友好。
-> - 依賴於 Tencent 的後端服務，若服務中斷將無法使用。
+> - 僅限於 WeChat 登入，無法用於其他平台。
+> - 需要依賴 WeChat 的授權流程，無法離線使用。
+> - 對於高流量應用，可能需要進一步的性能優化。
 
 > [!warning] 注意事項
-> - 需要 WeChat 帳號進行 OAuth2 認證。
-> - 僅支援 TypeScript，對於其他語言的支持有限。
-> - 依賴於 Tencent 的後端服務，若服務中斷，將無法使用。
+> - 僅支援 WeChat OAuth2 登入，無法用於其他認證方式。
+> - 需要有效的 WeChat 帳號進行測試，無法離線使用。
+> - 目前僅在 TypeScript 環境中測試，其他語言支持有限。
+> - 對於高流量應用，可能需要進一步的性能優化。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [[photon-hq--qclaw\|photon-hq/qclaw]] | 這是 QClaw 的核心庫，主要用於後端服務，而 qclaw-wechat-client 專注於 WeChat 登入的前端實現。 |
+| oauth2-client | 這是一個通用的 OAuth2 客戶端，適用於多種認證服務，而 qclaw-wechat-client 專門針對 WeChat 的 API。 |
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 95 |
+| Forks | 96 |
 | Open Issues | 5 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-10 |
@@ -140,6 +162,11 @@ const loginRes = await client.wxLogin({ guid: 'machine-id', code: authCode, stat
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@qwerzl](https://github.com/qwerzl) | 5 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，持續有更新和維護。
+**連結**：[文件](https://photon.codes)
 
 ## README 摘錄
 
@@ -259,7 +286,9 @@ const loginRes = await client.wxLogin({ guid: 'machine-id', code: authCode, stat
 
 ## 延伸閱讀
 
-相關概念：[[OAuth2]] · [[API 設計]] · [[微服務]]
+相關概念：[[OAuth2]] · [[API 設計]] · [[用戶認證]]
+
+相關專案：[[photon-hq--qclaw|photon-hq/qclaw]]
 
 [GitHub](https://github.com/photon-hq/qclaw-wechat-client) · [官方網站](https://photon.codes)
 
@@ -267,48 +296,33 @@ const loginRes = await client.wxLogin({ guid: 'machine-id', code: authCode, stat
 
 > [!note]- 同分類的其他專案
 > ```dataview
-> LIST
+> TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
 > WHERE category = "開發工具" AND file.name != "photon-hq--qclaw-wechat-client"
 > SORT stars DESC
 > LIMIT 8
 > ```
 
-
-## 相關收錄
-
-> [!note]- 同分類的其他專案
+> [!note]- 同週收錄
 > ```dataview
-> LIST
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "photon-hq--qclaw-wechat-client"
+> WHERE week = "2026-W11" AND file.name != "photon-hq--qclaw-wechat-client"
 > SORT stars DESC
-> LIMIT 8
 > ```
 
 ---
 
 ## 個人筆記
 
-> [!question]+ 快速評估（第一次看時填寫）
-> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> [!question]+ 快速評估（30 秒填完）
 > 
-> **跟我的工作相關嗎？** 是 / 否 / 間接相關
-> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
-> **第一印象**：_一句話_
-
-> [!success]- 深度評估（試用後填寫）
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
 > 
-> | 項目 | 分數 (1-5) | 備註 |
-> | --- | :---: | --- |
-> | 實用性 | /5 | |
-> | 技術新穎性 | /5 | |
-> | 文件品質 | /5 | |
-> | 社群活躍度 | /5 | |
-> | 上手難度 | /5 | 1=很難 5=很簡單 |
-> 
-> **成熟度**：早期 / 可用 / 穩定
-> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
 
 ### 試用記錄
 

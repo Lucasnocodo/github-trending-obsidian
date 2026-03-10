@@ -7,8 +7,8 @@ language: Python
 license: Apache-2.0
 description: "A CLI for Twitter/X — feed, bookmarks, and user timeline in terminal"
 homepage: ""
-stars: 1402
-stars_per_day: 280
+stars: 1410
+stars_per_day: 282
 forks: 125
 open_issues: 5
 created: 2026-03-05
@@ -30,89 +30,93 @@ tags:
 aliases:
   - "twitter-cli"
   - "jackwener/twitter-cli"
-  - "讓使用者在終端中瀏覽 Twitter 的動態和用戶資料。"
+  - "讓你在終端機中無需 API 金鑰即可瀏覽 Twitter/X 的動態、書籤和用戶資料。"
 ---
 
 # twitter-cli
 
-**1.4k** stars · **280** stars/天 · 建立 5 天前 · Python · Apache-2.0
+**1.4k** stars · **282** stars/天 · 建立 5 天前 · Python · Apache-2.0
 
 `easy-install`
 
 > [!summary] 一句話摘要
-> 讓使用者在終端中瀏覽 Twitter 的動態和用戶資料。
+> 讓你在終端機中無需 API 金鑰即可瀏覽 Twitter/X 的動態、書籤和用戶資料。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (280 stars/day)
-> **適合** 需要在終端中操作 Twitter 的開發者和重度用戶。
-> **一句話重點** 這個工具讓 Twitter 的內容操作變得更加高效，特別適合開發者和重度用戶。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (282 stars/day)
+> **適合** 需要在終端機中高效操作 Twitter 並希望避免 API 限制的開發者和社群媒體管理者。
+> **一句話重點** 這個專案讓使用者能夠在終端機中靈活操作 Twitter，突破了傳統 API 的限制。
 
 > [!abstract] 核心創新
-> twitter-cli 提供了全面的命令列功能，讓用戶能夠在終端中高效操作 Twitter。
+> 這個專案的創新在於無需 API 金鑰即可在終端機中操作 Twitter，提供了更靈活的使用方式。
 
 ## 專案簡介
 
-twitter-cli 是一個命令列工具，讓使用者能夠在終端中無需 API 金鑰即可瀏覽 Twitter 的動態、書籤和用戶資料。使用者可以透過簡單的指令來查詢動態、書籤和用戶資料，並且支援結構化輸出（如 YAML 和 JSON），方便開發者進行自動化操作。這個工具使用 Python 開發，並支援從瀏覽器自動提取登錄憑證，讓使用者無需手動輸入帳號密碼。與其他類似工具相比，twitter-cli 提供了更全面的功能，包括動態過濾、推文詳細資訊查詢和用戶資料檢索，這使得它更適合開發者和自動化腳本使用。實際使用中，該工具能夠快速獲取 Twitter 上的熱門內容，但對於需要圖形介面的使用者來說可能不太友好。整體來看，這是一個穩定的工具，適合需要在終端中操作 Twitter 的用戶。
+這個 CLI 工具讓用戶能夠在終端機中直接讀取 Twitter 的動態、書籤和用戶資料，無需 API 金鑰。使用者可以透過簡單的指令如 `twitter feed` 來獲取個人化的動態，並且支持多種輸出格式（如 YAML 和 JSON），方便進行後續的資料處理或整合。技術上，它利用了瀏覽器的 cookie 認證來避免 API 限制，並且提供了隨機延遲來降低被檢測的風險。與其他 Twitter CLI 工具相比，它的優勢在於無需 API 金鑰，並且支持更全面的用戶操作，如發文、刪除和管理喜歡的推文。使用效果上，這個工具能夠快速獲取和管理推文，但仍然依賴於用戶的瀏覽器環境來進行認證。這個專案目前處於穩定階段，適合需要在終端機中高效操作 Twitter 的開發者和重度用戶。建議在需要快速獲取 Twitter 資訊時使用，但如果需要更高的自動化程度或更複雜的功能，可能需要考慮其他 API 方案。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 動態查詢 — 使用 `twitter feed` 獲取動態，支持過濾和排序。
-- 書籤管理 — 使用 `twitter bookmarks` 查詢保存的推文。
-- 推文詳情 — 使用 `twitter tweet <tweet_id>` 獲取推文及其回覆。
-- 用戶資料 — 使用 `twitter user <username>` 獲取用戶的詳細資料和推文列表。
-- 結構化輸出 — 支持 `--yaml` 和 `--json` 格式輸出，方便與其他工具整合。
+- 無需 API 金鑰 — 使用瀏覽器 cookies 進行身份驗證，簡化認證流程。
+- 多種輸出格式 — 支持 YAML 和 JSON，便於資料整合和自動化。
+- 推文管理 — 可發佈、刪除、喜歡和轉推推文，全面管理 Twitter 帳號。
+- 書籤功能 — 快速列出保存的推文，方便查找和管理。
+- 用戶資料查詢 — 獲取用戶的推文、喜歡的推文和關注者列表，支持多種查詢參數。
 
 ## 快速開始
 
 1. 安裝 twitter-cli
 ```bash
-pipx install twitter-cli
+uv tool install twitter-cli
 ```
-2. 查詢動態
+2. 獲取首頁動態
 ```bash
 twitter feed
 ```
-3. 查詢用戶資料
+3. 搜尋特定推文
 ```bash
-twitter user elonmusk
+twitter search "AI agent" -t Latest --max 50
 ```
 
 ## 程式碼範例
 
-twitter search "AI agent" --max 50
+```bash
+twitter feed --max 50
+twitter search "Claude Code"
+twitter post "Hello from twitter-cli!"
+```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 jackwener 在命令列工具開發方面有豐富經驗，並且隨著 Twitter 用戶基數的增長，對於 CLI 工具的需求也隨之增加。這個專案在社群中獲得了良好的反響，特別是在開發者圈子中。
+> 作者 jackwener 是一位活躍的開發者，專注於 CLI 工具的開發，這個專案切中了用戶對於無需 API 金鑰的需求，讓更多人能夠便捷地使用 Twitter。隨著使用者對於隱私和安全的重視，這樣的工具在當前環境中顯得尤為重要。
 
 ## 適合誰使用
 
-**目標受眾**：需要在終端中操作 Twitter 的開發者和重度用戶。
+**目標受眾**：需要在終端機中高效操作 Twitter 並希望避免 API 限制的開發者和社群媒體管理者。
 
 > [!example] 使用場景
-> - 社交媒體經理用它來快速查找和分析熱門推文，因為這樣可以節省時間並提高效率。
-> - 內容創作者用它來分析熱門推文的趨勢，因為這樣可以幫助他們制定更好的內容策略。
-> - 開發者用它來自動化 Twitter 內容的檢索和分析，因為這樣可以更方便地整合到其他應用中。
+> - 社群媒體經理用它來快速檢視和管理多個 Twitter 帳號的動態，因為這樣可以節省大量時間，避免在瀏覽器中切換。
+> - 開發者用它來自動化推文的發佈和管理，因為它支持 YAML 和 JSON 輸出，便於與其他工具整合。
+> - 數據分析師用它來抓取特定主題的推文數據，因為它可以快速過濾和導出大量資料，提升工作效率。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 功能全面，支持多種操作如查詢、發文和互動。
-> - 支援結構化輸出，方便與其他工具整合。
-> - 自動提取登錄憑證，使用方便。
+> - 簡化的認證流程，無需 API 金鑰即可使用。
+> - 支持多種資料輸出格式，方便與其他工具整合。
+> - 全面的推文管理功能，適合社群媒體管理者使用。
 
 > [!danger] 缺點
-> - 對於不熟悉 CLI 的用戶來說，使用門檻較高。
-> - 某些功能可能依賴於 Twitter 的 API 穩定性。
-> - 需要定期更新以保持與 Twitter 的兼容性。
+> - 依賴瀏覽器環境，無法在無瀏覽器的環境中運行。
+> - 可能受到 Twitter 的速率限制影響，影響使用體驗。
+> - 某些功能在 Windows 系統上可能不完全支持。
 
 > [!warning] 注意事項
-> - 需要安裝 Python 和相關依賴。
-> - 對於不熟悉 CLI 的用戶來說，學習曲線較陡。
-> - 某些功能可能受到 Twitter API 限制。
+> - 需要瀏覽器環境來提取 cookies，無法在無瀏覽器的環境中運行。
+> - 對於大量請求仍可能受到 Twitter 的速率限制影響。
+> - 不支持 Windows 系統的某些功能，可能需要額外配置。
 
 ## 技術細節
 
@@ -266,7 +270,7 @@ twitter search "AI agent" --max 50
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化測試]]
+相關概念：[[CLI/TUI]] · [[自動化測試]] · [[API 設計]]
 
 [GitHub](https://github.com/jackwener/twitter-cli)
 
@@ -274,36 +278,33 @@ twitter search "AI agent" --max 50
 
 > [!note]- 同分類的其他專案
 > ```dataview
-> LIST
+> TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
 > WHERE category = "CLI 工具" AND file.name != "jackwener--twitter-cli"
 > SORT stars DESC
 > LIMIT 8
 > ```
 
+> [!note]- 同週收錄
+> ```dataview
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
+> FROM "Repos"
+> WHERE week = "2026-W11" AND file.name != "jackwener--twitter-cli"
+> SORT stars DESC
+> ```
+
 ---
 
 ## 個人筆記
 
-> [!question]+ 快速評估（第一次看時填寫）
-> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> [!question]+ 快速評估（30 秒填完）
 > 
-> **跟我的工作相關嗎？** 是 / 否 / 間接相關
-> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
-> **第一印象**：_一句話_
-
-> [!success]- 深度評估（試用後填寫）
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
 > 
-> | 項目 | 分數 (1-5) | 備註 |
-> | --- | :---: | --- |
-> | 實用性 | /5 | |
-> | 技術新穎性 | /5 | |
-> | 文件品質 | /5 | |
-> | 社群活躍度 | /5 | |
-> | 上手難度 | /5 | 1=很難 5=很簡單 |
-> 
-> **成熟度**：早期 / 可用 / 穩定
-> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
 
 ### 試用記錄
 

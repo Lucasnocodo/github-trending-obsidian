@@ -197,12 +197,12 @@ if (pages.length > 0) {
 
 ```dataviewjs
 const pages = dv.pages('"Repos"');
-const topCats = ["AI/ML", "開發工具", "CLI 工具", "Web 應用", "安全", "資料科學"];
 const catData = {};
-for (const cat of topCats) {
-  catData[cat] = pages.where(p => p.category === cat).length;
+for (const p of pages) {
+  const cat = p.category || "其他";
+  catData[cat] = (catData[cat] || 0) + 1;
 }
-const sorted = Object.entries(catData).sort((a,b) => b[1] - a[1]);
+const sorted = Object.entries(catData).sort((a,b) => b[1] - a[1]).slice(0, 10);
 dv.table(
   ["分類", "數量", "佔比", "視覺化"],
   sorted.map(([cat, count]) => {

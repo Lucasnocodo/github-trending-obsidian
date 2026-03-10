@@ -7,17 +7,17 @@ language: C++
 license: MIT
 description: "Talk to your Mac, query your docs, no cloud required. On-device voice AI + RAG"
 homepage: "https://runanywhereai.github.io/RCLI/"
-stars: 430
-stars_per_day: 72
-forks: 15
-open_issues: 8
+stars: 448
+stars_per_day: 75
+forks: 16
+open_issues: 10
 created: 2026-03-04
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "AI/ML"
-release_tag: "v0.3.2"
+release_tag: "v0.3.3"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
@@ -36,107 +36,112 @@ tags:
 aliases:
   - "RCLI"
   - "RunanywhereAI/RCLI"
-  - "在 Mac 上使用本地語音 AI 查詢文件，無需雲端支持。"
+  - "讓你的 Mac 透過語音指令執行操作，無需雲端支持。"
 ---
 
 # RCLI
 
-**430** stars · **72** stars/天 · 建立 6 天前 · C++ · MIT
+**448** stars · **75** stars/天 · 建立 6 天前 · C++ · MIT
 
-`ORG` `v0.3.2` `easy-install`
+`ORG` `v0.3.3` `easy-install`
 
 > [!summary] 一句話摘要
-> 在 Mac 上使用本地語音 AI 查詢文件，無需雲端支持。
+> 讓你的 Mac 透過語音指令執行操作，無需雲端支持。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (72 stars/day)
-> **適合** 需要在 Mac 上進行語音控制和文檔查詢的用戶，特別是重視隱私的使用者。
-> **一句話重點** RCLI 的本地運行特性讓它在隱私和性能上具備優勢，特別適合對數據安全有高要求的用戶。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (75 stars/day)
+> **適合** 需要在 Apple Silicon 上運行本地語音助手的開發者和使用者。
+> **一句話重點** RCLI 的創新在於它能在不依賴雲端的情況下，提供高效能的語音助手體驗，特別適合對隱私有高要求的用戶。
 
 > [!abstract] 核心創新
-> RCLI 提供了一個完全本地的語音 AI 解決方案，無需依賴雲端，確保用戶隱私和數據安全。
+> RCLI 是第一個在 Apple Silicon 上實現全本地語音 AI 的解決方案，無需雲端支持。
 
 ## 專案簡介
 
-RCLI 是一款在 macOS 上運行的本地語音 AI，提供語音識別、語音合成和文檔檢索功能，無需依賴雲端服務。它利用 MetalRT GPU 引擎實現高效的語音處理，支持 38 種 macOS 操作，並能夠通過語音控制應用程式。用戶可以通過簡單的語音命令來執行操作，例如開啟應用或播放音樂，並且能夠快速檢索本地文檔中的信息。與其他雲端語音助手相比，RCLI 的本地運行方式提供了更高的隱私性和更低的延遲。實際使用中，語音識別和合成的延遲低於 200 毫秒，並且支持多種語音模型。這個專案目前處於穩定階段，適合需要高效語音控制的 macOS 用戶。建議在需要高效語音操作時使用，但如果不需要本地處理，雲端解決方案可能更為方便。
+RCLI 是一個專為 macOS 設計的本地語音 AI，能夠實現語音控制和文件查詢。它的核心流程是用戶透過語音發出指令，RCLI 會即時處理並執行相應的 macOS 操作，並且支持本地文檔檢索。這個專案使用了 MetalRT，一個專為 Apple Silicon 開發的 GPU 推理引擎，實現了低於 200ms 的端到端延遲。與其他語音助手相比，RCLI 完全在本地運行，無需雲端或 API 金鑰，這對於隱私保護至關重要。實際使用中，RCLI 支持 38 種 macOS 操作，並且在 M3 Max 上的 STT 和 TTS 性能表現優異，STT 的實時因子達到 714 倍於實時。這個專案目前處於 beta 階段，適合對隱私有高要求的獨立開發者或小型團隊使用。建議在需要快速語音控制或文檔查詢的情況下使用，但對於不在 Apple Silicon 上的用戶則不太適合。
 
-**技術棧**：`C++` · `Shell` · `Objective-C++`
+**技術棧**：`C++` · `Shell` · `CMake` · `Objective-C++`
 
 ## 重點功能
 
-- 本地語音處理 — 完全在 Mac 上運行，無需雲端支持，提升隱私性。
-- 支持 38 種 macOS 操作 — 用戶可以通過語音執行多種操作，如開啟應用、調整音量等。
-- 文檔檢索功能 — 能夠快速查詢本地文檔，支持 PDF、DOCX 等格式。
-- 高效的語音識別 — 延遲低於 200 毫秒，提供流暢的用戶體驗。
-- MetalRT GPU 引擎 — 專為 Apple Silicon 優化，提供高效的推理性能。
+- 本地語音控制 — 支持 38 種 macOS 操作，無需雲端。
+- 高效能 STT/TTS — MetalRT 引擎實現 STT 714 倍於實時的性能。
+- 文檔智能檢索 — 透過語音詢問文檔，延遲僅約 4ms。
+- 多模型支持 — 可熱切換 LLM 模型，方便用戶根據需求調整。
+- 簡易安裝 — 只需一條命令即可安裝和設置。
 
 ## 快速開始
 
-1. 使用 curl 安裝
+1. 安裝 RCLI
 ```bash
 curl -fsSL https://raw.githubusercontent.com/RunanywhereAI/RCLI/main/install.sh | bash
 ```
-2. 使用 Homebrew 安裝
+2. 透過 Homebrew 安裝
 ```bash
-brew tap RunanywhereAI/rcli https://github.com/RunanywhereAI/RCLI.git
+brew tap RunanywhereAI/rcli https://github.com/RunanywhereAI/RCLI.git && brew install rcli
 ```
-3. 設置 RCLI
+3. 啟動 RCLI
 ```bash
-brew install rcli
-rcli setup
+rcli
 ```
 
 ## 程式碼範例
 
-```bash
-rcli ask "open Safari"
-```
+rcli ask "open Safari"  # 一次性命令打開 Safari
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者背景強調隱私和本地處理，這在當前對數據隱私日益重視的環境中引起了關注。RCLI 的本地運行特性符合用戶對於安全和效率的需求，特別是在 Apple Silicon 上的優化使其性能更為突出。
+> 這個專案的作者來自 RunAnywhere, Inc.，專注於本地 AI 解決方案，切中對隱私的需求。隨著 Apple Silicon 的普及，對於本地運行的高效能語音助手需求上升，讓 RCLI 在市場上獲得了關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Mac 上進行語音控制和文檔查詢的用戶，特別是重視隱私的使用者。
+**目標受眾**：需要在 Apple Silicon 上運行本地語音助手的開發者和使用者。
 
 > [!example] 使用場景
-> - Mac 用戶用它來通過語音控制 Spotify 播放音樂，因為這樣可以解放雙手，提升使用效率。
-> - 開發者用它來快速查詢本地文檔，因為能夠通過語音命令快速獲得所需信息，節省了查找時間。
-> - 普通用戶用它來設置提醒和筆記，因為語音輸入比手動輸入更方便，尤其在忙碌時。
+> - 獨立開發者用它來快速查詢文檔，因為可以即時獲得答案而不必手動搜尋。
+> - 設計師用它來控制音樂播放，因為可以在工作時不打斷流程，提升效率。
+> - 系統管理員用它來執行系統命令，因為語音指令能夠加快操作速度，讓工作更流暢。
 
 ## 架構分析
 
-這是一個單體應用，所有功能均在本地運行。用戶輸入 → 語音處理 → 執行 macOS 操作。關鍵技術決策包括使用 MetalRT 引擎進行高效的語音處理。專案結構簡單，主要文件為安裝腳本和核心執行檔。
+RCLI 採用單體架構，所有功能都在本地運行。用戶輸入 → RCLI 處理 → 執行 macOS 操作。關鍵技術決策是使用 MetalRT 引擎來提升性能。專案的目錄結構包括主要的安裝腳本和配置文件，方便用戶快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 完全本地運行，無需雲端，保障用戶隱私。
-> - 支持多種語音操作，提升使用效率。
-> - 高效的語音識別和合成，延遲低於 200 毫秒。
+> - 完全本地運行，保護用戶隱私。
+> - 高效能的語音識別和合成，提升使用體驗。
+> - 支持多種 macOS 操作，方便用戶日常使用。
 
 > [!danger] 缺點
-> - 僅限於 macOS，無法在其他操作系統上使用。
-> - 需要特定的硬體支持，對於舊款 Mac 可能不適用。
-> - 安裝過程中需要額外的工具依賴。
+> - 僅限於 Apple Silicon，無法在其他平台使用。
+> - 仍在 beta 階段，可能存在不穩定性。
+> - 需要一定的硬體要求，無法在舊款設備上運行。
 
 > [!warning] 注意事項
-> - 僅支持 macOS 13+ 的 Apple Silicon。
-> - 需要安裝 jq 和 curl 等工具。
-> - 對於 M1/M2 用戶，性能可能不如 M3 及以上版本。
+> - 僅支援 macOS 13+ 的 Apple Silicon。
+> - 需要 M3 或更高版本的硬體來充分利用 MetalRT 引擎。
+> - 不支援非 Apple Silicon 的設備。
+> - 目前仍在 beta 階段，可能存在不穩定性。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [[alexa--alexa-skills-kit\|alexa/alexa-skills-kit]] | Alexa 需要雲端支持，無法在本地運行，並且對於隱私的保護較弱。 |
+| [[google--assistant-sdk\|google/assistant-sdk]] | Google Assistant 也依賴雲端，無法提供本地文檔查詢的即時性。 |
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 15 |
-| Open Issues | 8 |
+| Forks | 16 |
+| Open Issues | 10 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-04 |
 | 官方網站 | [Link](https://runanywhereai.github.io/RCLI/) |
-| Repo 大小 | 9.4 MB |
+| Repo 大小 | 9.5 MB |
 
 > [!info]- 語言組成
 > ```mermaid
@@ -154,7 +159,12 @@ rcli ask "open Safari"
 > | [@AmanSwar](https://github.com/AmanSwar) | 13 |
 > | [@sanchitmonga22](https://github.com/sanchitmonga22) | 3 |
 
-**最新版本**：v0.3.2 (2026-03-10)
+**最新版本**：v0.3.3 (2026-03-10)
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，定期更新和維護。
+**連結**：[文件](https://runanywhereai.github.io/RCLI/)
 
 ## README 摘錄
 
@@ -210,8 +220,36 @@ rcli ask "open Safari"
 > ```bash
 > brew tap RunanywhereAI/rcli https://github.com/RunanywhereAI/RCLI.git
 > brew install rcli
+> rcli setup          # required — downloads AI models (~1GB, one-time)
+> ```
+> 
+> **Upgrade to latest:**
+> 
+> ```bash
+> brew update
+> brew upgrade rcli
+> ```
+> 
+> Troubleshooting: SHA256 mismatch or stale version
+> 
+> If `brew install` or `brew upgrade` fails with a checksum error:
+> 
+> ```bash
+> # Force-refresh the tap to pick up the latest formula
+> cd $(brew --repo RunanywhereAI/rcli) && git fetch origin && git reset --hard origin/main
+> brew reinstall rcli
+> ```
+> 
+> If that doesn't work, clean re-tap and clear the download cache:
+> 
+> ```bash
+> brew untap RunanywhereAI/rcli
+> rm -rf "$(brew --cache)/downloads/"*rcli*
+> brew tap RunanywhereAI/rcli https://github.com/RunanywhereAI/RCLI.git
+> brew install rcli
 > rcli setup
 > ```
+> 
 > ## Quick Start
 > 
 > ```bash
@@ -261,26 +299,13 @@ rcli ask "open Safari"
 > | **Communication** | `send_message`, `facetime_call` |
 > | **Media** | `play_on_spotify`, `play_apple_music`, `play_pause`, `next_track`, `set_music_volume` |
 > | **System** | `open_app`, `quit_app`, `set_volume`, `toggle_dark_mode`, `screenshot`, `lock_screen` |
-> | **Web** | `search_web`, `search_youtube`, `open_url`, `open_maps` |
-> 
-> Run `rcli actions` to see all 38, or toggle them on/off in the TUI Actions panel.
-> 
-> > **Tip:** If tool calling feels unreliable, press **X** in the TUI to clear the conversation and reset context. With small LLMs, accumulated context can degrade tool-calling accuracy — a fresh context often fixes it.
-> 
-> ### RAG (Local Document Q&A)
-> 
-> Index local documents, query them by voice. Hybrid vector + BM25 retrieval with ~4ms latency over 5K+ chunks. Supports PDF, DOCX, and plain text.
-> 
-> ```bash
-> rcli rag ingest ~/Documents/notes
-> rcli ask --rag ~/Library/RCLI/index "summarize the project plan"
-> ```
-> 
-> ### Interactive T
+> | **Web**
 
 ## 延伸閱讀
 
-相關概念：[[語音合成]] · [[語音識別]] · [[本地 AI]]
+相關概念：[[語音合成]] · [[本地 AI]] · [[隱私保護]] · [[自動化測試]]
+
+相關專案：[[alexa--alexa-skills-kit|alexa/alexa-skills-kit]] · [[google--assistant-sdk|google/assistant-sdk]]
 
 [GitHub](https://github.com/RunanywhereAI/RCLI) · [官方網站](https://runanywhereai.github.io/RCLI/)
 
@@ -288,60 +313,56 @@ rcli ask "open Safari"
 
 > [!note]- 同分類的其他專案
 > ```dataview
-> LIST
+> TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
 > WHERE category = "AI/ML" AND file.name != "RunanywhereAI--RCLI"
 > SORT stars DESC
 > LIMIT 8
 > ```
 
+> [!note]- 同週收錄
+> ```dataview
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
+> FROM "Repos"
+> WHERE week = "2026-W11" AND file.name != "RunanywhereAI--RCLI"
+> SORT stars DESC
+> ```
 
 ---
 
 ## 個人筆記
 
-> [!question]+ 快速評估（第一次看時填寫）
-> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
->
-> **跟我的工作相關嗎？** 是 / 否 / 間接相關
-> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
-> **第一印象**：_一句話_
-
-> [!success]- 深度評估（試用後填寫）
->
-> | 項目 | 分數 (1-5) | 備註 |
-> | --- | :---: | --- |
-> | 實用性 | /5 | |
-> | 技術新穎性 | /5 | |
-> | 文件品質 | /5 | |
-> | 社群活躍度 | /5 | |
-> | 上手難度 | /5 | 1=很難 5=很簡單 |
->
-> **成熟度**：早期 / 可用 / 穩定
-> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+> [!question]+ 快速評估（30 秒填完）
+> 
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
+> 
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
 
 ### 試用記錄
 
 > [!example]- 試用 #1
-> 試用日期 ::
-> 試用版本 ::
+> 試用日期 :: 
+> 試用版本 :: 
 > 安裝過程 :: _順利 / 遇到問題（描述）_
 > 實際效果 :: _達到預期 / 不如預期（原因）_
 > 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
 
 > [!question]- 待研究的問題
 > _記下看完後還沒有答案的問題，未來回來補充_
->
-> - [ ]
+> 
+> - [ ] 
 
 ### 採用判斷
 
 > [!tip]- 什麼時候該用 / 不該用
 > **該用的情況**：
-> -
->
+> - 
+> 
 > **不該用的情況**：
-> -
+> - 
 
 ### 想法與筆記
 

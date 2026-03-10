@@ -7,10 +7,10 @@ language: N/A
 license: MIT
 description: "SwiftUI agent skill for Claude Code, Codex, and other AI tools."
 homepage: ""
-stars: 1745
+stars: 1746
 stars_per_day: 349
-forks: 56
-open_issues: 6
+forks: 57
+open_issues: 7
 created: 2026-03-05
 pushed_at: 2026-03-05
 first_seen: 2026-03-10
@@ -18,7 +18,7 @@ week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
@@ -26,43 +26,42 @@ tags:
   - github
   - "category/開發工具"
   - "lang/other"
-  - easy_install
 aliases:
   - "SwiftUI-Agent-Skill"
   - "twostraws/SwiftUI-Agent-Skill"
-  - "幫助開發者寫出更聰明、簡單且現代的 SwiftUI 代碼，提供 API 使用、設計、效能和可及性的指導。"
+  - "幫助開發者寫出更聰明、更簡單的 SwiftUI 代碼，並提供 API 使用、設計、效能和可及性的指導。"
 ---
 
 # SwiftUI-Agent-Skill
 
 **1.7k** stars · **349** stars/天 · 建立 5 天前 · N/A · MIT
 
-`個人專案` `easy-install`
+`個人專案`
 
 > [!summary] 一句話摘要
-> 幫助開發者寫出更聰明、簡單且現代的 SwiftUI 代碼，提供 API 使用、設計、效能和可及性的指導。
+> 幫助開發者寫出更聰明、更簡單的 SwiftUI 代碼，並提供 API 使用、設計、效能和可及性的指導。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (349 stars/day)
-> **適合** 專注於 SwiftUI 開發的軟體工程師，希望利用 AI 工具提升代碼品質。
-> **一句話重點** 這個專案讓開發者能夠利用 AI 工具提升 SwiftUI 代碼的品質，解決了許多常見的開發挑戰。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (349 stars/day)
+> **適合** 專注於 SwiftUI 開發並希望提升代碼品質的 iOS 開發者。
+> **一句話重點** 這個專案不僅提供工具，還整合了多年實踐經驗，讓開發者能夠快速提升 SwiftUI 代碼品質。
 
 > [!abstract] 核心創新
-> 這個技能專注於 SwiftUI 的特定需求，針對 LLM 常見的錯誤進行優化。
+> 這個專案能夠針對 SwiftUI 代碼提供專業的檢查和建議，幫助開發者避免常見錯誤。
 
 ## 專案簡介
 
-這個專案提供了一個 SwiftUI 的 agent skill，能夠協助開發者在使用 Claude Code、Codex 等 AI 工具時，寫出更優質的 SwiftUI 代碼。它的工作流程是，開發者可以透過特定指令觸發這個技能，AI 會檢查代碼中的 API 使用、設計及效能問題，並提供建議。技術上，這個技能基於 Agent Skills 格式，能夠與多個 AI 平台無縫整合。與其他代碼檢查工具相比，這個技能專注於 SwiftUI 的特定需求，並針對 LLM 常見的錯誤進行優化，例如避免使用過時的 API 和提升可及性。實際使用中，開發者可以透過簡單的指令獲得即時的代碼評估，並且這個技能的設計使得它能夠快速適應不同的專案需求。這個專案目前處於穩定階段，適合各種規模的團隊使用，尤其是專注於 SwiftUI 的開發者。建議在需要快速檢查代碼品質或尋求最佳實踐時使用，但對於非常複雜的專案，可能需要額外的手動調整。
+這個專案提供了一個 SwiftUI agent skill，能夠協助開發者在使用 Claude Code、Codex 等 AI 工具時，寫出更優質的 SwiftUI 代碼。使用者可以透過簡單的指令來觸發技能，例如在 Claude Code 中使用 `/swiftui-pro`，或在 Codex 中使用 `$swiftui-pro`，並可以指定檢查的範疇，如 API 的過時性或可及性問題。這個技能基於多年的 SwiftUI 實踐經驗，並針對 LLMs 常見的錯誤進行了優化，例如避免使用過時的 API 和提高性能。與其他類似工具相比，這個技能專注於 SwiftUI 的特定需求，提供針對性的建議和檢查。實際使用中，這個技能能夠幫助開發者快速識別代碼中的潛在問題，提升開發效率。這個專案目前處於穩定狀態，適合各種規模的團隊使用，特別是那些專注於 SwiftUI 的團隊。建議在需要快速檢查代碼品質時使用，而在小型專案或不熟悉 SwiftUI 的情況下則可考慮其他工具。
 
-**技術棧**：`Node.js 18+`
+**技術棧**：`Node.js`
 
 ## 重點功能
 
-- API 使用檢查 — 提供即時建議，避免使用過時的 API。
-- 設計最佳實踐建議 — 協助開發者遵循 SwiftUI 的設計原則。
-- 效能優化建議 — 檢查代碼中的潛在效能問題，提供改進建議。
-- 可及性檢查 — 確保代碼符合可及性標準，提升用戶體驗。
-- 多平台支持 — 可與 Claude Code、Codex 等多個 AI 工具整合使用。
+- API 檢查 — 自動檢查代碼中使用的 API 是否過時，幫助開發者及時更新。
+- 性能分析 — 提供代碼性能問題的檢查，幫助優化應用效能。
+- 可及性檢查 — 確保應用符合可及性標準，避免使用會影響無障礙功能的設計。
+- 自然語言觸發 — 支援使用自然語言指令來觸發技能，提升使用便利性。
+- 多平台支援 — 可與多種 AI 工具（如 Claude Code、Codex）整合，擴大使用場景。
 
 ## 快速開始
 
@@ -78,6 +77,10 @@ npx skills add https://github.com/twostraws/swiftui-agent-skill --skill swiftui-
 ```bash
 /swiftui-pro
 ```
+4. 在 Codex 中使用技能
+```bash
+$swiftui-pro
+```
 
 ## 程式碼範例
 
@@ -88,40 +91,40 @@ npx skills add https://github.com/twostraws/swiftui-agent-skill --skill swiftui-
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案的作者 Paul Hudson 是知名的 Swift 教學作家，擁有豐富的 SwiftUI 開發經驗。隨著 SwiftUI 的普及，開發者對於提升代碼品質的需求日益增加，這個技能正好切中這個需求。由於 SwiftUI 的特性，開發者常常面臨可及性和效能的挑戰，因此這個工具的推出正好填補了這一空白。
+> 作者 Paul Hudson 是知名的 Swift 教學者，擁有豐富的實戰經驗，這使得這個專案能夠切中開發者對於 SwiftUI 代碼質量的需求。隨著 SwiftUI 的普及，開發者對於提升代碼品質的需求也隨之上升，這個技能正好提供了解決方案。最近的 SwiftUI 更新也促使開發者尋求更好的工具來適應變化。
 
 ## 適合誰使用
 
-**目標受眾**：專注於 SwiftUI 開發的軟體工程師，希望利用 AI 工具提升代碼品質。
+**目標受眾**：專注於 SwiftUI 開發並希望提升代碼品質的 iOS 開發者。
 
 > [!example] 使用場景
-> - Swift 開發者用它來檢查代碼中的過時 API，因為手動檢查容易遺漏，這個技能能快速提供建議，節省時間。
-> - UI 設計師用它來獲得可及性建議，因為這可以確保應用程式對所有用戶友好，提升整體使用體驗。
-> - 團隊領導用它來進行代碼審查，因為這樣可以確保團隊遵循最佳實踐，減少後期維護成本。
+> - iOS 開發者用它來檢查代碼中的性能問題，因為這能夠幫助他們在開發過程中及早發現潛在的效能瓶頸，提升應用的流暢度。
+> - UX 設計師用它來確保 SwiftUI 應用的可及性，因為這能夠讓更多用戶無障礙地使用應用，擴大用戶群。
+> - 團隊領導用它來進行代碼審查，因為這樣可以減少人為錯誤，提高團隊的整體代碼質量。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 專注於 SwiftUI，提供針對性的建議。
-> - 快速安裝和使用，無需複雜配置。
-> - 即時反饋，提升開發效率。
+> - 專注於 SwiftUI，提供針對性的檢查和建議。
+> - 整合多種 AI 工具，提升使用靈活性。
+> - 基於實戰經驗，能夠有效避免常見錯誤。
 
 > [!danger] 缺點
-> - 僅限於 SwiftUI，無法處理其他框架。
-> - 依賴 Node.js 環境，對某些用戶可能不友好。
-> - 對於複雜代碼可能無法提供全面的建議。
+> - 需要 Node.js 環境，對於不熟悉的開發者有學習曲線。
+> - 僅限於 SwiftUI，對於其他框架的開發者無法使用。
+> - 目前社群活躍度不高，可能缺乏即時支援。
 
 > [!warning] 注意事項
-> - 僅支援 SwiftUI 代碼，對於其他框架無法提供建議。
-> - 需要 Node.js 環境才能運行 npx 指令。
-> - 可能無法處理非常複雜的代碼結構，建議搭配人工審查。
+> - 需要安裝 Node.js 才能使用 npx 指令。
+> - 僅支援 SwiftUI 相關的檢查，對於其他框架無法提供幫助。
+> - 不支援 Windows 環境，僅適用於 macOS。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 56 |
-| Open Issues | 6 |
+| Forks | 57 |
+| Open Issues | 7 |
 | 最後推送 | 2026-03-05 |
 | 建立日期 | 2026-03-05 |
 | Repo 大小 | 24 KB |
@@ -204,7 +207,7 @@ npx skills add https://github.com/twostraws/swiftui-agent-skill --skill swiftui-
 
 ## 延伸閱讀
 
-相關概念：[[程式碼生成]] · [[自動化測試]]
+相關概念：[[程式碼生成]] · [[效能優化]] · [[可及性]]
 
 [GitHub](https://github.com/twostraws/SwiftUI-Agent-Skill)
 
@@ -212,36 +215,33 @@ npx skills add https://github.com/twostraws/swiftui-agent-skill --skill swiftui-
 
 > [!note]- 同分類的其他專案
 > ```dataview
-> LIST
+> TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
 > WHERE category = "開發工具" AND file.name != "twostraws--SwiftUI-Agent-Skill"
 > SORT stars DESC
 > LIMIT 8
 > ```
 
+> [!note]- 同週收錄
+> ```dataview
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
+> FROM "Repos"
+> WHERE week = "2026-W11" AND file.name != "twostraws--SwiftUI-Agent-Skill"
+> SORT stars DESC
+> ```
+
 ---
 
 ## 個人筆記
 
-> [!question]+ 快速評估（第一次看時填寫）
-> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> [!question]+ 快速評估（30 秒填完）
 > 
-> **跟我的工作相關嗎？** 是 / 否 / 間接相關
-> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
-> **第一印象**：_一句話_
-
-> [!success]- 深度評估（試用後填寫）
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
 > 
-> | 項目 | 分數 (1-5) | 備註 |
-> | --- | :---: | --- |
-> | 實用性 | /5 | |
-> | 技術新穎性 | /5 | |
-> | 文件品質 | /5 | |
-> | 社群活躍度 | /5 | |
-> | 上手難度 | /5 | 1=很難 5=很簡單 |
-> 
-> **成熟度**：早期 / 可用 / 穩定
-> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
 
 ### 試用記錄
 

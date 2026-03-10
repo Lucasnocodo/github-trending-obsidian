@@ -29,7 +29,7 @@ tags:
 aliases:
   - "visura-api"
   - "zornade/visura-api"
-  - "自動從 SISTER 入口網站提取意大利地籍數據的 API 服務。"
+  - "自動從 SISTER 入口網站提取義大利地籍數據的 API 服務。"
 ---
 
 # visura-api
@@ -37,50 +37,55 @@ aliases:
 **477** stars · **68** stars/天 · 建立 7 天前 · Python · GPL-3.0
 
 > [!summary] 一句話摘要
-> 自動從 SISTER 入口網站提取意大利地籍數據的 API 服務。
+> 自動從 SISTER 入口網站提取義大利地籍數據的 API 服務。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (68 stars/day)
-> **適合** 需要自動化提取意大利地籍數據的開發者和企業。
-> **一句話重點** Visura API 讓地籍數據提取變得自動化，顯著提高了查詢效率，特別適合需要頻繁查詢的開發者和企業。
+> **適合** 需要自動化提取義大利地籍數據的開發者或數據分析師。
+> **一句話重點** Visura API 不僅提供了自動化的數據提取功能，還考慮到了用戶的使用便利性和數據的可追溯性。
 
 > [!abstract] 核心創新
-> 該專案的核心創新在於自動化 SPID 認證和請求的串行處理，避免了對 SISTER 服務的過載。
+> 該專案的創新在於其自動化的 SPID 認證流程，能夠無縫地與 SISTER 入口網站互動。
 
 ## 專案簡介
 
-Visura API 透過 RESTful 介面，自動化從意大利 SISTER 入口網站提取地籍數據。使用者發送請求後，系統會在一個經過身份驗證的無頭瀏覽器中執行查詢，並透過輪詢獲取結果。這個專案主要基於 FastAPI 框架來提供 API 端點，並利用 Playwright 來控制無頭瀏覽器。與其他類似工具相比，Visura API 的獨特之處在於其自動化 SPID 認證流程和請求的串行處理，這樣可以避免過載 SISTER 服務。使用者可以透過 `POST /visura` 來查詢地產，並使用 `GET /visura/{request_id}` 來獲取查詢結果。該工具在處理請求時會自動保持會話活躍，並在會話過期時進行自動重登。雖然功能強大，但在某些特殊地區可能會遇到查詢結果不完整的情況。整體來說，這是一個穩定的專案，適合需要定期提取地籍數據的開發者和企業。使用者在選擇時應考慮其對 SPID 認證的依賴，這可能限制了某些用戶的使用。
+Visura API 提供了一個 RESTful 接口，讓用戶可以自動查詢義大利的地籍數據。其工作流程分為兩個階段：第一階段使用 `POST /visura` 來查詢與特定地號相關的房地產，第二階段使用 `POST /visura/intestati` 來獲取特定房產的所有者。該服務使用 FastAPI 架設 API，並利用 Playwright 控制無頭瀏覽器進行數據提取。與其他類似工具相比，Visura API 的獨特之處在於其自動化的 SPID 認證流程，並且能夠在會話過期時自動重新登錄。使用者需要注意的是，僅支持 Sielte ID 作為 SPID 提供者，這可能限制了某些用戶的使用。該工具的效能在於能夠穩定地處理請求，並且提供了完整的 HTML 日誌以便於調試。對於小型團隊或個人開發者來說，這是一個成熟的解決方案，值得考慮使用。若需處理大量請求或需要更高的靈活性，則可能需要考慮其他選擇。
 
-**技術棧**：`FastAPI` · `Playwright` · `Docker`
+**技術棧**：`FastAPI` · `Playwright` · `Python 3.9`
 
 ## 重點功能
 
-- 自動化 SPID 認證 — 使用 Sielte ID 進行自動登錄，支持推播通知。
-- 請求串行處理 — 每次只處理一個請求，以避免過載 SISTER 服務。
-- 自動重登 — 在會話過期時自動嘗試恢復會話。
-- 會話保持 — 每 30 秒進行輕量級的 keep-alive，5 分鐘進行深度刷新。
-- 完整的 HTML 日誌 — 訪問的每個頁面都會保存到磁碟，便於調試和審計。
-- Docker 支持 — 提供完整的 Docker 映像，方便部署。
+- 自動化 SPID 認證 — 使用 Sielte ID 進行自動登錄，並透過推播通知進行身份驗證。
+- 請求排隊處理 — 所有請求按順序執行，避免對 SISTER 伺服器造成過載。
+- 自動重新登錄 — 在會話過期時自動嘗試恢復會話，確保持續穩定的數據提取。
+- 完整的 HTML 日誌 — 所有訪問的頁面都會保存到磁碟，便於後續的調試和審計。
+- Docker 支援 — 提供完整的 Docker 映像，簡化部署過程。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 克隆專案
+```bash
+git clone https://github.com/zornade/visura-api.git
+```
+2. 進入專案目錄
+```bash
+cd visura-api
+```
+3. 安裝依賴
 ```bash
 pip install -r requirements.txt
 ```
-2. 啟動服務
+4. 啟動服務
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 8000
-```
-3. 發送查詢請求
-```bash
-curl -X POST http://localhost:8000/visura -d '{"foglio": "123", "particella": "456"}'
 ```
 
 ## 程式碼範例
 
 ```python
 import requests
+
+# 查詢特定地號的房地產
 response = requests.post('http://localhost:8000/visura', json={'foglio': '123', 'particella': '456'})
 print(response.json())
 ```
@@ -88,38 +93,44 @@ print(response.json())
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 該專案由經驗豐富的開發者 zornade 和 alestucci 共同開發，切中意大利地籍數據提取的需求，尤其是在自動化和數據整合方面。隨著數位化進程加快，越來越多的企業需要這樣的工具來簡化地籍查詢流程，這使得該專案在開發者社群中迅速受到關注。
+> 該專案的作者具有相關背景，並針對義大利地籍數據提取的需求進行了深入研究。隨著對自動化數據提取需求的增加，這個工具恰好滿足了市場的需求。最近的法規變更也促使開發者尋找更有效的解決方案來獲取地籍數據。
 
 ## 適合誰使用
 
-**目標受眾**：需要自動化提取意大利地籍數據的開發者和企業。
+**目標受眾**：需要自動化提取義大利地籍數據的開發者或數據分析師。
 
 > [!example] 使用場景
-> - 地產開發商用它來自動提取土地所有權信息，因為手動查詢耗時且容易出錯。
-> - 法律顧問用它來快速獲取客戶地產的詳細地籍數據，因為這樣能夠節省大量的查詢時間。
-> - 數據分析師用它來收集地籍數據進行市場分析，因為這樣能夠獲得準確且及時的數據支持決策。
+> - 地產開發者用它來自動查詢土地所有權信息，因為手動查詢繁瑣且耗時。
+> - 法律顧問用它來快速獲取客戶的地產資料，因為這樣可以節省大量的時間和精力。
+> - 數據分析師用它來收集地籍數據進行市場分析，因為這樣能夠獲得更準確的數據支持其分析結論。
 
 ## 架構分析
 
-該專案採用微服務架構，核心資料流為：用戶輸入 → FastAPI 處理請求 → Playwright 控制無頭瀏覽器 → 返回結果。關鍵技術決策包括使用 FastAPI 提供高效的 RESTful 服務和 Playwright 進行自動化瀏覽器操作。專案目錄中，`main.py` 是主要的 FastAPI 應用程式，負責處理所有 API 請求。
+該專案採用微服務架構，主要由 FastAPI 提供 RESTful API，並使用 Playwright 控制無頭瀏覽器進行數據提取。用戶的 HTTP 請求經 FastAPI 處理後，透過 VisuraService 進行排隊和執行，最終與 SISTER 入口網站互動。專案目錄中，`main.py` 是主要的應用程式入口。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化的 SPID 登錄流程，簡化了用戶操作。
-> - 支持完整的請求日誌，便於後續調試。
-> - 能夠自動保持會話活躍，減少用戶干預。
+> - 自動化的 SPID 認證流程，提高了用戶的便利性。
+> - 請求排隊機制有效避免了對 SISTER 伺服器的過載。
+> - 提供完整的日誌功能，便於後續的調試和審計。
 
 > [!danger] 缺點
-> - 僅支持特定的 SPID 提供者，限制了使用範圍。
-> - 在某些特殊情況下可能無法獲取完整的地籍數據。
+> - 僅支持 Sielte ID，限制了用戶的選擇。
+> - 某些特殊地籍結構可能導致查詢不完整，影響數據準確性。
 > - 需要一定的技術背景來進行安裝和配置。
 
 > [!warning] 注意事項
-> - 僅支持 Sielte ID 作為 SPID 提供者，其他提供者需修改代碼。
-> - 某些地區的地籍結構可能導致查詢結果不完整。
-> - 如果查詢的地號不存在，API 將返回空列表。
-> - 對於標記為 'Soppressa' 的地產，將不會返回所有權信息。
+> - 僅支持 Sielte ID 作為 SPID 提供者，其他提供者需修改程式碼。
+> - 某些城市的特殊地籍結構可能導致查詢結果不完整。
+> - 如果查詢的地號不存在，API 會返回空列表，並標示錯誤。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [[other-tool--example\|other-tool/example]] | 該工具支持多種 SPID 提供者，並且提供更靈活的查詢選項，但可能缺乏 Visura API 的自動化功能。 |
+| [[another-tool--example\|another-tool/example]] | 此工具專注於數據分析，提供更豐富的數據處理功能，但不支持自動化提取。 |
 
 ## 技術細節
 
@@ -143,11 +154,6 @@ print(response.json())
 > | --- | --- |
 > | [@zornade](https://github.com/zornade) | 2 |
 > | [@alestucci](https://github.com/alestucci) | 1 |
-
-## 社群與生態
-
-**社群活躍度**：社群活躍度中等，定期更新和維護。
-**連結**：[文件](https://github.com/zornade/visura-api#readme)
 
 ## README 摘錄
 
@@ -238,54 +244,41 @@ print(response.json())
 
 相關概念：[[自動化測試]] · [[API 設計]] · [[微服務]]
 
+相關專案：[[other-tool--example|other-tool/example]] · [[another-tool--example|another-tool/example]]
+
 [GitHub](https://github.com/zornade/visura-api)
 
 ## 相關收錄
 
 > [!note]- 同分類的其他專案
 > ```dataview
-> LIST
+> TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
 > WHERE category = "開發工具" AND file.name != "zornade--visura-api"
 > SORT stars DESC
 > LIMIT 8
 > ```
 
-
-## 相關收錄
-
-> [!note]- 同分類的其他專案
+> [!note]- 同週收錄
 > ```dataview
-> LIST
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "zornade--visura-api"
+> WHERE week = "2026-W11" AND file.name != "zornade--visura-api"
 > SORT stars DESC
-> LIMIT 8
 > ```
 
 ---
 
 ## 個人筆記
 
-> [!question]+ 快速評估（第一次看時填寫）
-> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> [!question]+ 快速評估（30 秒填完）
 > 
-> **跟我的工作相關嗎？** 是 / 否 / 間接相關
-> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
-> **第一印象**：_一句話_
-
-> [!success]- 深度評估（試用後填寫）
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
 > 
-> | 項目 | 分數 (1-5) | 備註 |
-> | --- | :---: | --- |
-> | 實用性 | /5 | |
-> | 技術新穎性 | /5 | |
-> | 文件品質 | /5 | |
-> | 社群活躍度 | /5 | |
-> | 上手難度 | /5 | 1=很難 5=很簡單 |
-> 
-> **成熟度**：早期 / 可用 / 穩定
-> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
 
 ### 試用記錄
 

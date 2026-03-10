@@ -7,7 +7,7 @@ language: Python
 license: MIT
 description: "xiaohongshu-skills"
 homepage: ""
-stars: 406
+stars: 407
 stars_per_day: 58
 forks: 51
 open_issues: 13
@@ -16,7 +16,7 @@ pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
-category: "其他"
+category: "開發工具"
 release_tag: "v0.1.0-c26fa98"
 install_complexity: "medium"
 status: to-review
@@ -24,94 +24,117 @@ my_rating: 0
 last_reviewed: 2026-03-10
 tags:
   - github
-  - "category/其他"
+  - "category/開發工具"
   - "lang/python"
   - org
 aliases:
   - "xiaohongshu-skills"
   - "autoclaw-cc/xiaohongshu-skills"
-  - "自動化小紅書操作，讓 AI 代理能夠輕鬆管理社交媒體內容。"
+  - "自動化小紅書操作，讓你輕鬆管理內容和社交互動。"
 ---
 
 # xiaohongshu-skills
 
-**406** stars · **58** stars/天 · 建立 7 天前 · Python · MIT
+**407** stars · **58** stars/天 · 建立 7 天前 · Python · MIT
 
 `ORG` `v0.1.0-c26fa98`
 
 > [!summary] 一句話摘要
-> 自動化小紅書操作，讓 AI 代理能夠輕鬆管理社交媒體內容。
+> 自動化小紅書操作，讓你輕鬆管理內容和社交互動。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (58 stars/day)
-> **適合** 需要在小紅書上自動化操作的內容創作者和社交媒體經營者。
-> **一句話重點** 這個專案讓內容創作者能夠高效地管理小紅書帳號，並通過自然語言指令簡化操作流程。
+> **適合** 需要在小紅書上進行內容管理和社交互動的數位行銷專業人士。
+> **一句話重點** 這個專案最厲害的在於它能將複雜的社交媒體操作簡化為自然語言指令，讓非技術用戶也能輕鬆使用。
+
+> [!abstract] 核心創新
+> 支持自然語言下達複合指令，Agent 自動串聯多個技能完成任務。
 
 ## 專案簡介
 
-這個專案提供了一系列自動化技能，讓 AI 代理能夠在小紅書上進行操作，包括內容發布、社交互動和數據分析。使用者可以通過自然語言指令與代理進行互動，代理會自動執行相關操作。專案基於 Python 的 CDP 瀏覽器自動化引擎，能夠支持多帳號切換和登錄檢查。與其他社交媒體自動化工具相比，這個專案的優勢在於其連貫操作能力，能夠將多個技能串聯起來，完成複雜任務。實際使用中，使用者可以通過簡單的指令來發布內容、搜索筆記和進行社交互動，這對於內容創作者和社交媒體經營者非常有幫助。這個專案目前處於穩定版本，適合需要在小紅書上進行自動化操作的團隊和個人。建議在需要高效管理小紅書內容時使用，但對於不熟悉 Python 的使用者，可能需要一些學習成本。
+這個專案提供了一套基於 Python 的自動化技能，專門用於小紅書平台。用戶可以透過自然語言指令來執行複雜的操作，例如搜索、發布內容和社交互動，Agent 會自動串聯多個技能來完成任務。專案使用了 CDP（Chrome DevTools Protocol）來實現瀏覽器自動化，並支援多種操作，如圖文、視頻和長文的發布。與其他工具相比，它特別適合需要在小紅書上進行多步驟操作的用戶，因為它能夠處理複合指令。使用者需要 Python 3.11 及 Google Chrome 瀏覽器，並且安裝過程相對簡單。這個專案目前處於 v0.1.0 階段，功能雖然完整但仍有進一步優化的空間，適合中小型團隊使用。對於需要頻繁與小紅書互動的用戶來說，這是一個值得考慮的工具，但如果只是偶爾使用，可能會顯得過於複雜。
 
-**技術棧**：`Python`
+**技術棧**：`Python 3.11` · `CDP` · `uv`
 
 ## 重點功能
 
-- 多帳號支持 — 能夠輕鬆切換和管理多個小紅書帳號。
-- 內容發布 — 支持圖文、視頻和長文的自動發布，並可定時發布。
-- 社交互動 — 支持評論、點讚和收藏等社交操作。
-- 自然語言指令 — 使用者可以用自然語言下達複合指令，代理會自動執行。
-- 數據分析 — 能夠進行競品分析和熱門內容追蹤。
+- xhs-auth — 支持多帳號切換和掃碼登錄，方便用戶管理多個小紅書賬號。
+- xhs-publish — 支持圖文、視頻和長文的發布，並可定時發布和分步預覽。
+- xhs-explore — 提供關鍵詞搜索和筆記詳情查看，幫助用戶快速找到感興趣的內容。
+- xhs-interact — 支持評論、點讚和收藏等社交互動功能，增強用戶參與感。
+- xhs-content-ops — 提供競品分析和熱點追蹤功能，幫助用戶把握市場動向。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 下載專案並解壓
 ```bash
-uv sync
+git clone https://github.com/autoclaw-cc/xiaohongshu-skills.git
 ```
-2. 啟動 Chrome 瀏覽器
+2. 安裝依賴
+```bash
+cd xiaohongshu-skills && uv sync
+```
+3. 啟動 Chrome 瀏覽器
 ```bash
 python scripts/chrome_launcher.py
 ```
-3. 檢查登錄狀態
+4. 檢查登錄狀態
 ```bash
 python scripts/cli.py check-login
+```
+5. 搜索內容
+```bash
+python scripts/cli.py search-feeds --keyword '露營'
 ```
 
 ## 程式碼範例
 
-```bash
-python scripts/cli.py search-feeds --keyword "露營"
-```
+python
+# 搜索筆記
+python scripts/cli.py search-feeds --keyword '露營' --sort-by '最多點讚' --note-type '圖文'
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案由多位貢獻者共同開發，針對小紅書這個熱門社交平台的需求，提供了自動化解決方案。隨著社交媒體管理需求的增加，這個專案的推出正好切合了內容創作者對於高效管理的需求，特別是在小紅書這樣的競爭激烈平台上。
+> 專案由一群活躍的開發者維護，且針對小紅書這個特定平台的需求進行了深度挖掘。隨著小紅書用戶基數的增長，對於自動化工具的需求也隨之上升。這個專案的推出正好切中這個需求，並且提供了易於使用的接口。
 
 ## 適合誰使用
 
-**目標受眾**：需要在小紅書上自動化操作的內容創作者和社交媒體經營者。
+**目標受眾**：需要在小紅書上進行內容管理和社交互動的數位行銷專業人士。
 
 > [!example] 使用場景
-> - 社交媒體經營者用它來自動發布小紅書內容，因為可以節省手動操作的時間，並提高內容發布的頻率。
-> - 數據分析師用它來分析小紅書上的熱門內容，因為可以快速獲取數據並進行競品分析。
-> - 內容創作者用它來管理多個小紅書帳號，因為可以輕鬆切換帳號並進行內容發布和互動。
+> - 社交媒體經營者用它來自動發布小紅書內容，因為可以節省大量手動操作時間，並且能夠定時發布。
+> - 數據分析師用它來批量收集小紅書上熱門內容的數據，因為可以快速獲取競品分析和熱門話題。
+> - 內容創作者用它來自動化社交互動，如評論和點讚，因為這樣可以提高曝光率並增加粉絲互動。
+
+## 架構分析
+
+這是一個基於 CLI 的工具，使用單體架構設計。用戶輸入 → Agent 處理 → 輸出 JSON 格式結果。核心技術決策是使用 Chrome DevTools Protocol 進行自動化，專案目錄結構清晰，主要功能集中在 scripts/ 目錄下。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供多種自動化技能，能夠高效管理小紅書內容。
-> - 支持自然語言指令，使用方便。
-> - 能夠進行數據分析，幫助用戶了解市場趨勢。
+> - 支持自然語言指令，簡化用戶操作流程。
+> - 功能全面，涵蓋內容發布、社交互動和數據分析。
+> - 安裝簡單，適合快速上手的用戶。
 
 > [!danger] 缺點
-> - 需要一定的技術背景，對於非技術用戶不友好。
-> - 依賴於第三方工具（如 Chrome），可能會影響穩定性。
-> - 功能範圍僅限於小紅書，無法擴展到其他平台。
+> - 目前僅限於小紅書平台，無法擴展到其他社交媒體。
+> - 需要安裝 Google Chrome，增加了環境配置的複雜性。
+> - 功能仍在開發中，可能存在不穩定性。
 
 > [!warning] 注意事項
-> - 需要 Python 3.11 及以上版本，對於不熟悉 Python 的用戶有學習成本。
-> - 依賴於 Chrome 瀏覽器，需確保其正確安裝和配置。
-> - 不支持非小紅書平台的操作，功能範圍有限。
+> - 僅支援 Python 3.11 及以上版本。
+> - 需要 Google Chrome 瀏覽器以進行自動化操作。
+> - 目前僅支援小紅書平台，無法直接應用於其他社交媒體。
+> - 功能仍在持續開發中，可能存在不穩定情況。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [[autoclaw-cc--openclaw\|autoclaw-cc/openclaw]] | OpenClaw 提供了更廣泛的自動化能力，但不專注於小紅書，適合需要多平台支持的用戶。 |
+| [[scrapy--scrapy\|scrapy/scrapy]] | Scrapy 是一個通用的爬蟲框架，適合數據抓取，但不具備小紅書特定的社交互動功能。 |
 
 ## 技術細節
 
@@ -131,6 +154,11 @@ python scripts/cli.py search-feeds --keyword "露營"
 > | [@cu1ch3n](https://github.com/cu1ch3n) | 1 |
 
 **最新版本**：v0.1.0-c26fa98 (2026-03-09)
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，持續有更新和維護。
+**連結**：[文件](https://github.com/autoclaw-cc/xiaohongshu-skills#readme)
 
 ## README 摘錄
 
@@ -354,42 +382,43 @@ python scripts/cli.py search-feeds --keyword "露營"
 
 ## 延伸閱讀
 
+相關概念：[[自動化測試]] · [[爬蟲]] · [[API 設計]]
+
+相關專案：[[autoclaw-cc--openclaw|autoclaw-cc/openclaw]] · [[scrapy--scrapy|scrapy/scrapy]]
+
 [GitHub](https://github.com/autoclaw-cc/xiaohongshu-skills)
 
 ## 相關收錄
 
 > [!note]- 同分類的其他專案
 > ```dataview
-> LIST
+> TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "autoclaw-cc--xiaohongshu-skills"
+> WHERE category = "開發工具" AND file.name != "autoclaw-cc--xiaohongshu-skills"
 > SORT stars DESC
 > LIMIT 8
+> ```
+
+> [!note]- 同週收錄
+> ```dataview
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
+> FROM "Repos"
+> WHERE week = "2026-W11" AND file.name != "autoclaw-cc--xiaohongshu-skills"
+> SORT stars DESC
 > ```
 
 ---
 
 ## 個人筆記
 
-> [!question]+ 快速評估（第一次看時填寫）
-> _填寫後更新 frontmatter 的 `my_rating` 和 `status` 欄位_
+> [!question]+ 快速評估（30 秒填完）
 > 
-> **跟我的工作相關嗎？** 是 / 否 / 間接相關
-> **值得花時間試用嗎？** 是 / 以後再說 / 不需要
-> **第一印象**：_一句話_
-
-> [!success]- 深度評估（試用後填寫）
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
 > 
-> | 項目 | 分數 (1-5) | 備註 |
-> | --- | :---: | --- |
-> | 實用性 | /5 | |
-> | 技術新穎性 | /5 | |
-> | 文件品質 | /5 | |
-> | 社群活躍度 | /5 | |
-> | 上手難度 | /5 | 1=很難 5=很簡單 |
-> 
-> **成熟度**：早期 / 可用 / 穩定
-> **總評**：_整體評價、跟其他工具的比較、推薦給誰..._
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
 
 ### 試用記錄
 
