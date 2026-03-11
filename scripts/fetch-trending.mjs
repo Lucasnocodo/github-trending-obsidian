@@ -196,13 +196,13 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 
 1. "repo": 完全等於 owner/name（區分大小寫）
 2. "description_zh": 一句話說明「解決什麼問題」。好的例子：「讓 AI 自動跑實驗，你只要早上起來看結果」。壞的例子：「自動化 AI 研究平台」
-3. "summary": 18-22 句話的深度分析（這是筆記最重要的段落。你的價值不是複述 README——讀者能自己讀 README。你的價值是解釋「為什麼這樣設計」「跟不用這個工具有什麼差別」「什麼情況下會後悔用了它」。每句話都要有資訊密度，禁止空洞句型）。結構：
-   - 第 1-4 句：白話說核心機制，要具體到「輸入什麼 → 中間怎麼處理 → 輸出什麼」的完整流程。但不要只複述 README 的第一段——要加上 README 沒說的「為什麼選這個方法」。如果有 CLI 指令，帶出最關鍵的 1-2 個指令
-   - 第 5-8 句：技術實作方式，具體到用了什麼框架、演算法、通訊協議、資料格式。如果 README 有提到效能數據或 benchmark，一定要帶數字。說明技術選型的理由（為什麼用 X 而不是 Y）
-   - 第 9-12 句：跟同類工具的具體差異（至少比較 2 個替代品）。不要只說「比 X 更好」，要說「X 用 polling 但這個用 WebSocket，所以延遲從 500ms 降到 50ms」這種具體對比。包含功能覆蓋範圍的差異
-   - 第 13-16 句：實際使用的效果和限制（效能數據、支援範圍、需要什麼硬體、多大規模的資料能處理）。帶出使用者可能遇到的常見問題和解法
-   - 第 17-19 句：你的觀點——成熟度（alpha/beta/stable）、值不值得現在就用、適合什麼規模的團隊。要有明確的判斷而非模棱兩可的描述
-   - 第 20-22 句：給讀者的具體建議——什麼情境該用（舉出 2 個場景）、什麼情境不該用（舉出 1 個場景）、有什麼替代方案
+3. "summary": 22-28 句話的深度分析（這是筆記最重要的段落。你的價值不是複述 README——讀者能自己讀 README。你的價值是解釋「為什麼這樣設計」「跟不用這個工具有什麼差別」「什麼情況下會後悔用了它」。每句話都要有資訊密度，禁止空洞句型）。結構：
+   - 第 1-5 句：白話說核心機制，要具體到「輸入什麼 → 中間怎麼處理 → 輸出什麼」的完整流程。但不要只複述 README 的第一段——要加上 README 沒說的「為什麼選這個方法」。如果有 CLI 指令，帶出最關鍵的 1-2 個指令。明確說出這個工具的「一句話賣點」是什麼
+   - 第 6-10 句：技術實作方式，具體到用了什麼框架、演算法、通訊協議、資料格式。如果 README 有提到效能數據或 benchmark，一定要帶數字。說明技術選型的理由（為什麼用 X 而不是 Y）。分析依賴樹的輕重程度（是輕量還是重依賴）
+   - 第 11-15 句：跟同類工具的具體差異（至少比較 2-3 個替代品）。不要只說「比 X 更好」，要說「X 用 polling 但這個用 WebSocket，所以延遲從 500ms 降到 50ms」這種具體對比。包含功能覆蓋範圍的差異。說明在什麼規模下哪個方案勝出
+   - 第 16-20 句：實際使用的效果和限制（效能數據、支援範圍、需要什麼硬體、多大規模的資料能處理）。帶出使用者可能遇到的常見問題和解法。分析維護者/社群的健康度（bus factor、回應速度、是否有企業支持）
+   - 第 21-24 句：你的觀點——成熟度（alpha/beta/stable）、值不值得現在就用、適合什麼規模的團隊。要有明確的判斷而非模棱兩可的描述。預測 6 個月後這個專案的發展方向
+   - 第 25-28 句：給讀者的具體建議——什麼情境該用（舉出 2-3 個場景）、什麼情境不該用（舉出 1-2 個場景）、什麼替代方案更適合、採用的總成本估計（學習時間 + 整合時間）
 4. "why_trending": 4-6 句具體分析。第一句必須引用我提供的數字（Stars, Forks, 建立天數），例如「建立 1 天就累積 2094 stars（2094/天），forks 140（6.7%），這是極端爆發式增長」。禁止寫「隨著 XX 的發展/流行」這種廢話。接下來回答：(a) 作者是誰、過去做過什麼？(b) 解決了什麼「之前沒有好方案」的痛點？之前怎麼做、為什麼不夠好？(c) 有沒有觸發事件（tweet、HN 討論）？(d) 技術生態的什麼變化讓這個工具可行？(e) forks/stars 比率高/低代表什麼（>20% 代表很多人在實際修改使用，<5% 代表純觀望）？如果真的無法判斷，就直說「爆紅原因不明確，數據顯示是自然擴散模式」
 5. "use_cases": 陣列，3 個場景。格式：「[具體角色] 用它來 [具體動作+預期結果]，因為 [具體好處，要有數據或對比]」。例子：「後端工程師用它來在 CI 中自動檢測 API breaking changes，因為手動 diff OpenAPI spec 容易漏掉 nested field 的變動」
 6. "target_audience": 一句話，越具體越好。不要寫「開發者」，要寫「需要在 M1 Mac 上跑 LLM 推論但不想裝 Docker 的獨立開發者」
@@ -222,11 +222,12 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 18. "pros_cons": 物件，包含 "pros"（陣列，3-4 個優點，每個要具體）和 "cons"（陣列，3-4 個缺點，每個要具體，不要跟 limitations 重複）
 19. "community": 物件，可選欄位。"docs_url"（文件網站）、"discord"（Discord 連結）、"activity"（一句話描述社群活躍度）。都沒有就回傳 null
 20. "key_insight": 一句話，你讀完這個專案後最想告訴朋友的一件事。例如：「這個專案最厲害的不是功能，而是它證明了用 Markdown 就能『編程』AI agent 的研究行為」
-21. "deep_dive": 8-12 句話的技術深入分析。這是筆記中最有技術含量的段落。即使 README 簡短，也要盡力從語言選擇、架構模式、依賴關係等角度分析。結構：
-   - 第 1-3 句：核心技術機制——用了什麼演算法、資料結構、通訊模式？（從 README 或語言/框架推斷）
-   - 第 4-6 句：效能和規模特性——能處理多大的資料？有什麼瓶頸？需要多少資源？（有數字就用數字，沒有就從架構推斷）
-   - 第 7-9 句：設計取捨分析——為什麼選這個語言/框架而不是另一個？這個選擇帶來什麼好處和代價？
-   - 第 10-12 句：技術風險評估——哪些設計決策可能在規模擴大時出問題？有什麼技術債？安全性考量？
+21. "deep_dive": 12-18 句話的技術深入分析。這是筆記中最有技術含量的段落。即使 README 簡短，也要盡力從語言選擇、架構模式、依賴關係等角度分析。結構：
+   - 第 1-4 句：核心技術機制——用了什麼演算法、資料結構、通訊模式？設計模式（pub-sub、actor model、pipeline）？（從 README 或語言/框架推斷）
+   - 第 5-8 句：效能和規模特性——能處理多大的資料？有什麼瓶頸？需要多少資源？冷啟動時間？記憶體佔用？（有數字就用數字，沒有就從架構推斷）
+   - 第 9-12 句：設計取捨分析——為什麼選這個語言/框架而不是另一個？這個選擇帶來什麼好處和代價？依賴樹複雜度如何？有沒有 vendor lock-in 風險？
+   - 第 13-15 句：技術風險評估——哪些設計決策可能在規模擴大時出問題？有什麼技術債？安全性考量？對外部 API 的依賴程度？
+   - 第 16-18 句：整合分析——跟主流框架（React/Vue/Express/FastAPI/Spring）的整合難度？CI/CD pipeline 友善度？團隊採用的學習成本？
    不要回傳 null，每個專案都值得從技術角度分析
    分類特定要求：
    - AI/ML 類：必須提到模型大小、推論速度、GPU 需求、跟 HuggingFace/OpenAI 生態的整合程度
@@ -239,6 +240,8 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 24. "maturity_assessment": 物件，評估專案成熟度。包含：{"stage": "alpha/beta/stable/production（從 README、版本號、issue 數量推斷）", "production_ready": true/false, "breaking_change_risk": "high/medium/low（API 穩定度）", "recommendation": "一句話，例如『適合個人 side project 試用，不建議用在生產環境的核心路徑上』"}
 25. "known_gotchas": 陣列，2-4 個「踩坑才知道」的隱性問題（這跟 limitations 不同——limitations 是設計上的限制，gotchas 是實際使用時才會發現的坑）。格式：每項是物件 {"issue": "問題描述（具體到什麼情境下會遇到）", "workaround": "解法或規避方式（如果有的話）", "severity": "high/medium/low"}。從 README 的 known issues、GitHub issues、或根據技術架構推斷可能的坑。例如：{"issue": "Windows 上路徑處理有 bug，空格和中文路徑會導致 crash", "workaround": "用 WSL 或加 --force-posix-paths flag", "severity": "high"}。如果 README 沒有明確提到，根據技術棧和架構推斷最可能的 3 個坑（標注「推斷」）
 26. "use_case_fit": 陣列，4-6 個使用情境的適合度評估。每項是物件：{"scenario": "具體使用情境（要夠具體，例如「10 人以下的新創公司後端 API」而不是「小型專案」）", "fit": "非常適合/適合/普通/不適合/未測試", "reason": "為什麼（1 句話，要提到具體的技術原因）"}。這是幫讀者快速判斷「我的情況適不適合用這個」的決策工具
+
+27. "adoption_cost": 物件，評估採用這個工具的總成本。包含：{"learning_hours": 預估學習時間（小時，整數）, "integration_hours": 預估整合到現有專案的時間（小時，整數）, "maintenance_burden": "low/medium/high（需要多少持續維護投入）", "lock_in_risk": "low/medium/high（被綁定在這個工具上的風險）", "verdict": "一句話總結：花 X 小時學、Y 小時整合，得到 Z 效果，值不值得"}。這幫助讀者做「投入 vs 回報」的決策
 
 回傳 JSON 陣列，只回傳 JSON，不要加 markdown 標記。`;
 
@@ -910,6 +913,51 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     }
     lines.push('');
   }
+
+  // ── 採用成本分析 ──
+  if (llmInfo?.adoption_cost) {
+    const ac = llmInfo.adoption_cost;
+    lines.push('## 採用成本分析');
+    lines.push('');
+    lines.push('| 項目 | 評估 |');
+    lines.push('| --- | --- |');
+    if (ac.learning_hours != null) lines.push(`| 學習時間 | ~${ac.learning_hours} 小時 |`);
+    if (ac.integration_hours != null) lines.push(`| 整合時間 | ~${ac.integration_hours} 小時 |`);
+    if (ac.maintenance_burden) lines.push(`| 維護負擔 | ${ac.maintenance_burden} |`);
+    if (ac.lock_in_risk) lines.push(`| 綁定風險 | ${ac.lock_in_risk} |`);
+    lines.push('');
+    if (ac.verdict) {
+      lines.push(`> [!tip] 投入 vs 回報`);
+      lines.push(`> ${ac.verdict}`);
+      lines.push('');
+    }
+  }
+
+  // ── 健康度儀表板 ──
+  lines.push('## 健康度儀表板');
+  lines.push('');
+  lines.push('> [!abstract]- 專案健康度綜合評估');
+  lines.push('> ```dataviewjs');
+  lines.push(`> const me = dv.page("Repos/${safeFn}");`);
+  lines.push('> if (me) {');
+  lines.push('>   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;');
+  lines.push('>   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;');
+  lines.push('>   const created = me.created ? new Date(me.created.toString()) : null;');
+  lines.push('>   const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : null;');
+  lines.push('>   const forkRatio = me.stars > 0 ? ((me.forks || 0) / me.stars * 100).toFixed(1) : 0;');
+  lines.push('>   const issueRatio = me.stars > 0 ? ((me.open_issues || 0) / me.stars * 100).toFixed(1) : 0;');
+  lines.push('>   const maint = daysSincePush === null ? "?" : daysSincePush <= 7 ? "Active" : daysSincePush <= 30 ? "Moderate" : "Stale";');
+  lines.push('>   const busFactor = (me.forks || 0) > 50 ? "Good" : (me.forks || 0) > 10 ? "OK" : "Risk";');
+  lines.push('>   dv.table(["指標", "值", "評估"], [');
+  lines.push('>     ["維護狀態", daysSincePush + " 天前推送", maint],');
+  lines.push('>     ["專案年齡", age + " 天", age > 180 ? "Established" : age > 30 ? "Growing" : "Brand New"],');
+  lines.push('>     ["Fork 比率", forkRatio + "%", parseFloat(forkRatio) > 20 ? "High adoption" : parseFloat(forkRatio) > 5 ? "Normal" : "Low"],');
+  lines.push('>     ["Issue 密度", issueRatio + "%", parseFloat(issueRatio) > 5 ? "High" : "Normal"],');
+  lines.push('>     ["Bus Factor", (me.forks || 0) + " forks", busFactor],');
+  lines.push('>   ]);');
+  lines.push('> }');
+  lines.push('> ```');
+  lines.push('');
 
   // ── 技術細節（不重複 stats bar 已有資訊）──
   lines.push('## 技術細節');
@@ -3919,7 +3967,8 @@ function needsRefresh(content) {
          !content.includes('## 開發動態') ||             // v15: 開發動態 + 熱門議題
          !content.includes('直接競品') ||                  // v16: 同子分類競品 + 共用概念
          !content.includes('## Vault 排名') ||             // v18: 相對排名 + 分類圓餅圖
-         !content.includes('同 Owner 專案');               // v19: 同 Owner + 同語言 + 強化排名
+         !content.includes('同 Owner 專案') ||              // v19: 同 Owner + 同語言 + 強化排名
+         !content.includes('健康度儀表板');                 // v19: 健康度 + 採用成本 + 擴大 summary
 }
 
 function hasLLMContent(content) {

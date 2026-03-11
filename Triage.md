@@ -180,6 +180,7 @@ const sections = [
   { name: "探索日誌", pattern: "### 探索日誌" },
   { name: "Vault 排名", pattern: "## Vault 排名" },
   { name: "同 Owner 專案", pattern: "同 Owner 專案" },
+  { name: "健康度儀表板", pattern: "健康度儀表板" },
 ];
 const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
 const incomplete = [];
