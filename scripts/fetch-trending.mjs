@@ -498,9 +498,18 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
       : copyleft.includes(licenseId) ? `${licenseId} (Copyleft，商用需注意)`
       : licenseId && licenseId !== 'N/A' ? licenseId
       : '未標註授權 (風險較高)';
+    // 維護健康指標
+    const pushedAt = repo.pushed_at ? new Date(repo.pushed_at) : null;
+    const daysSincePush = pushedAt ? Math.floor((Date.now() - pushedAt.getTime()) / 86400000) : null;
+    const maintLabel = daysSincePush === null ? '未知'
+      : daysSincePush <= 7 ? 'Active'
+      : daysSincePush <= 30 ? 'Moderate'
+      : daysSincePush <= 90 ? 'Slow'
+      : 'Stale';
+    const maintDetail = daysSincePush !== null ? `最後推送 ${daysSincePush} 天前` : '';
     lines.push('> [!info] 速覽');
     lines.push(`> **安裝難度** ${installIcon} · **專案狀態** ${ageLabel} · **熱度** ${momentumLabel} (${fmt(rate)} stars/day)`);
-    lines.push(`> **授權** ${licenseLabel}`);
+    lines.push(`> **授權** ${licenseLabel} · **維護** ${maintLabel}${maintDetail ? ` (${maintDetail})` : ''}`);
     if (llmInfo?.target_audience) {
       lines.push(`> **適合** ${llmInfo.target_audience}`);
     }
@@ -2425,7 +2434,8 @@ function needsRefresh(content) {
          !content.includes('**授權**') ||     // v7: 速覽授權顯示
          !content.includes('ring:') ||        // v8: Tech Radar ring
          !content.includes('verdict:') ||     // v8: 一句話結論
-         !content.includes('新手體驗');       // v9: 豐富內容（deep_dive+onboarding+alternatives）
+         !content.includes('新手體驗') ||      // v9: 豐富內容（deep_dive+onboarding+alternatives）
+         !content.includes('**維護**');         // v10: 維護健康指標
 }
 
 function hasLLMContent(content) {
