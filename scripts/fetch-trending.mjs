@@ -1016,6 +1016,20 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
       lines.push(`| ${name} | ${alt.approach || ''} | ${alt.when_to_choose || ''} | ${migration} |`);
     }
     lines.push('');
+
+    // 功能對比矩陣（如有多個替代方案）
+    if (llmInfo.alternatives_detail.length >= 2) {
+      lines.push('> [!abstract]- 功能對比矩陣');
+      lines.push('>');
+      const alts = llmInfo.alternatives_detail;
+      const thisName = repo.name || safeFn;
+      lines.push(`> | 維度 | **${thisName}** | ${alts.slice(0, 3).map(a => `**${(a.name || '').split('/').pop()}**`).join(' | ')} |`);
+      lines.push(`> | --- | --- | ${alts.slice(0, 3).map(() => '---').join(' | ')} |`);
+      lines.push(`> | 技術路線 | 本專案 | ${alts.slice(0, 3).map(a => a.approach || '-').join(' | ')} |`);
+      lines.push(`> | 遷移成本 | - | ${alts.slice(0, 3).map(a => a.migration_effort || '-').join(' | ')} |`);
+      lines.push(`> | 適用場景 | 主要場景 | ${alts.slice(0, 3).map(a => (a.when_to_choose || '-').slice(0, 30)).join(' | ')} |`);
+      lines.push('');
+    }
   }
 
   // ── 成熟度評估 ──
@@ -1544,6 +1558,26 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('');
   lines.push('## 個人筆記');
   lines.push('');
+  lines.push('> [!abstract]- 評估進度');
+  lines.push('> ```dataviewjs');
+  lines.push(`> const me = dv.page("Repos/${safeFn}");`);
+  lines.push('> if (me) {');
+  lines.push('>   const steps = [');
+  lines.push('>     { name: "已讀", done: me.status && me.status !== "to-review" },');
+  lines.push('>     { name: "已評分", done: (me.my_rating || 0) > 0 },');
+  lines.push('>     { name: "有結論", done: me.verdict && me.verdict !== "" },');
+  lines.push('>     { name: "Ring 決策", done: me.ring && me.ring !== "" && me.ring !== "assess" },');
+  lines.push('>     { name: "試用記錄", done: me.status === "tried" || me.status === "integrated" },');
+  lines.push('>   ];');
+  lines.push('>   const done = steps.filter(s => s.done).length;');
+  lines.push('>   const pct = Math.round((done / steps.length) * 100);');
+  lines.push('>   const bar = "\\u2588".repeat(Math.round(pct / 5)) + "\\u2591".repeat(20 - Math.round(pct / 5));');
+  lines.push('>   dv.paragraph(`${bar} **${done}/${steps.length}** (${pct}%)`);');
+  lines.push('>   const todo = steps.filter(s => !s.done).map(s => s.name);');
+  lines.push('>   if (todo.length > 0) dv.paragraph("待完成：" + todo.join(" / "));');
+  lines.push('> }');
+  lines.push('> ```');
+  lines.push('');
   lines.push('> [!question]+ 快速評估（30 秒填完）');
   lines.push('> ');
   lines.push('> 相關性:: 未評估');
@@ -1910,6 +1944,42 @@ TABLE
 FROM "Repos"
 WHERE verdict != "" AND verdict != null
 SORT my_rating DESC
+\`\`\`
+
+## 需要填空
+
+> [!warning] 高關注度專案尚未給出結論 — 值得優先評估
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  if (p.status === "archived") return false;
+  const hasVerdict = p.verdict && p.verdict !== "";
+  const hasRing = p.ring && p.ring !== "" && p.ring !== "assess";
+  const highValue = (p.stars_per_day || 0) >= 50 || (p.my_rating || 0) >= 4 || p.priority === "high";
+  return highValue && (!hasVerdict || !hasRing);
+});
+if (pages.length > 0) {
+  pages.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0));
+  dv.paragraph(\`**\${pages.length}** 個高價值專案等待你的決策\`);
+  dv.table(
+    ["專案", "Stars/天", "評分", "狀態", "缺少"],
+    pages.limit(10).map(p => {
+      const missing = [];
+      if (!p.verdict || p.verdict === "") missing.push("verdict");
+      if (!p.ring || p.ring === "" || p.ring === "assess") missing.push("ring");
+      if (!p.my_rating || p.my_rating === 0) missing.push("rating");
+      return [
+        p.file.link,
+        p.stars_per_day || 0,
+        p.my_rating > 0 ? ("\\u2605".repeat(p.my_rating) + "\\u2606".repeat(5 - p.my_rating)) : "未評",
+        p.status || "?",
+        missing.join(", ")
+      ];
+    })
+  );
+} else {
+  dv.paragraph("所有高價值專案都已完成評估！");
+}
 \`\`\`
 
 ## Ring 異動追蹤
@@ -2461,6 +2531,56 @@ if (incomplete.length > 0) {
 } else {
   dv.paragraph("所有筆記都有完整的區塊！");
 }
+\`\`\`
+
+## 評估完整度儀表板
+
+> [!abstract] 每個專案的評估進度 — 幫助你找出該優先填寫的筆記
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const results = [];
+for (const p of pages) {
+  const content = await dv.io.load(p.file.path);
+  let done = 0, total = 8;
+  // Step 1: 已讀（status != to-review）
+  if (p.status && p.status !== "to-review") done++;
+  // Step 2: 已評分
+  if (p.my_rating > 0) done++;
+  // Step 3: 有 verdict
+  if (p.verdict && p.verdict !== "") done++;
+  // Step 4: ring 不是 assess
+  if (p.ring && p.ring !== "" && p.ring !== "assess") done++;
+  // Step 5: 有成熟度評估
+  if (content.includes("## 成熟度評估")) done++;
+  // Step 6: 有替代方案決策
+  if (content.includes("## 替代方案決策")) done++;
+  // Step 7: 有生態系整合
+  if (content.includes("## 生態系整合")) done++;
+  // Step 8: 有團隊採用指南
+  if (content.includes("## 團隊採用指南")) done++;
+  const pct = Math.round((done / total) * 100);
+  results.push({ link: p.file.link, done, total, pct, spd: p.stars_per_day || 0, status: p.status });
+}
+results.sort((a, b) => {
+  // 高關注度但低完整度優先
+  const scoreA = (100 - a.pct) * Math.log2((a.spd || 1) + 1);
+  const scoreB = (100 - b.pct) * Math.log2((b.spd || 1) + 1);
+  return scoreB - scoreA;
+});
+const avgPct = results.length > 0 ? Math.round(results.reduce((s, r) => s + r.pct, 0) / results.length) : 0;
+const full = results.filter(r => r.pct === 100).length;
+dv.paragraph(\`**整體完整度** \${avgPct}% · **完全評估** \${full}/\${results.length}\`);
+const bar = pct => {
+  const filled = Math.round(pct / 5);
+  return "\\u2588".repeat(filled) + "\\u2591".repeat(20 - filled) + " " + pct + "%";
+};
+dv.table(
+  ["專案", "完整度", "Stars/天", "狀態", "進度"],
+  results.filter(r => r.pct < 100).slice(0, 15).map(r => [
+    r.link, r.done + "/" + r.total, r.spd, r.status, bar(r.pct)
+  ])
+);
 \`\`\`
 
 ## Owner 排行榜
@@ -3897,6 +4017,27 @@ if (scored.length > 0) {
     ["專案", "分數", "等級", "Stars/天", "安裝"],
     scored.slice(0, 5).map(s => [s.link, s.score + "/100", s.grade, s.spd, s.install])
   );
+}
+\`\`\`
+
+## 需要你的決策
+
+> [!warning] 高價值但尚未給出結論的專案
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  if (p.status === "archived") return false;
+  const highValue = (p.stars_per_day || 0) >= 50 || (p.my_rating || 0) >= 4 || p.priority === "high";
+  const noDecision = (!p.verdict || p.verdict === "") && (!p.ring || p.ring === "" || p.ring === "assess");
+  return highValue && noDecision;
+}).sort(p => p.stars_per_day || 0, "desc").limit(5);
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "Stars/天", "分類", "狀態"],
+    pages.map(p => [p.file.link, p.stars_per_day || 0, p.category || "", p.status || "?"])
+  );
+} else {
+  dv.paragraph("所有高價值專案都已評估完畢！");
 }
 \`\`\`
 
