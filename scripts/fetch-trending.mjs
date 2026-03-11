@@ -3385,6 +3385,40 @@ if (sorted.length > 0) {
 }
 \`\`\`
 
+## 成長速度分佈
+
+> [!abstract] 此分類的專案成長快慢
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.category === "${category}" && p.status !== "archived");
+const bands = [
+  { label: "Viral (1000+/天)", min: 1000, max: Infinity, repos: [] },
+  { label: "Hot (100-999/天)", min: 100, max: 999, repos: [] },
+  { label: "Growing (10-99/天)", min: 10, max: 99, repos: [] },
+  { label: "Steady (<10/天)", min: 0, max: 9, repos: [] },
+];
+for (const p of pages) {
+  const spd = p.stars_per_day || 0;
+  for (const b of bands) {
+    if (spd >= b.min && spd <= b.max) { b.repos.push(p); break; }
+  }
+}
+const total = pages.length;
+if (total > 0) {
+  dv.table(
+    ["速度區間", "數量", "代表專案"],
+    bands.filter(b => b.repos.length > 0).map(b => {
+      const top = b.repos.sort((a,b) => (b.stars_per_day||0) - (a.stars_per_day||0)).slice(0, 2).map(r => r.file.link).join(", ");
+      return [b.label, b.repos.length, top];
+    })
+  );
+  const avgSpd = Math.round(pages.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / total);
+  dv.paragraph(\`**分類平均** \${avgSpd} stars/天\`);
+} else {
+  dv.paragraph("_此分類無專案_");
+}
+\`\`\`
+
 ## 需要關注的專案
 
 > [!warning] 收錄 3+ 天仍未接觸
