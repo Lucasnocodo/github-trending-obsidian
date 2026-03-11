@@ -33,6 +33,19 @@ if (pages.length === 0) {
 }
 ```
 
+## High Priority（優先處理）
+
+```dataview
+TABLE
+  stars_per_day AS "Stars/天",
+  category AS "分類",
+  install_complexity AS "安裝",
+  use_case AS "用途"
+FROM "Repos"
+WHERE status = "to-review" AND priority = "high"
+SORT stars_per_day DESC
+```
+
 ## Reading（正在研究）
 
 ```dataview

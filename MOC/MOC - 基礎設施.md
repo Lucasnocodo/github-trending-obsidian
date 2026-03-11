@@ -47,6 +47,19 @@ WHERE category = "基礎設施"
 SORT stars DESC
 ```
 
+## 依子分類瀏覽
+
+```dataview
+TABLE WITHOUT ID
+  subcategory AS "子分類",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE category = "基礎設施" AND subcategory != ""
+GROUP BY subcategory
+SORT length(rows) DESC
+```
+
 ## 依語言分群
 
 ```dataview
