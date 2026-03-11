@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "xiaohongshu-skills"
 homepage: ""
-stars: 414
-stars_per_day: 59
-forks: 52
-open_issues: 13
+stars: 432
+stars_per_day: 62
+forks: 53
+open_issues: 14
 created: 2026-03-03
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
@@ -19,139 +19,236 @@ month: "2026-03"
 category: "開發工具"
 subcategory: "自動化"
 release_tag: "v0.1.0-c26fa98"
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "自動化管理小紅書帳號，讓你輕鬆發布、互動和分析內容。"
+use_case: "自動化小紅書操作，讓 AI 代理輕鬆執行社交互動與內容管理。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+appearances: 1
 next_review: "2026-03-17"
+contributor_count: 3
 engagement: "medium"
 verdict: ""
 ring_history: "assess@2026-03-10"
+star_history: "2026-03-10:432"
 tags:
   - github
   - "category/開發工具"
   - "lang/python"
   - org
+  - easy_install
 aliases:
   - "xiaohongshu-skills"
   - "autoclaw-cc/xiaohongshu-skills"
-  - "自動化管理小紅書帳號，讓你輕鬆發布、互動和分析內容。"
+  - "自動化小紅書操作，讓 AI 代理輕鬆執行社交互動與內容管理。"
 ---
 
 # xiaohongshu-skills
 
-**414** stars · **59** stars/天 · 建立 7 天前 · Python · MIT
+**432** stars · **62** stars/天 · 建立 7 天前 · Python · MIT
 
-`ORG` `v0.1.0-c26fa98`
+`ORG` `v0.1.0-c26fa98` `easy-install`
 
 > [!summary] 一句話摘要
-> 自動化管理小紅書帳號，讓你輕鬆發布、互動和分析內容。
+> 自動化小紅書操作，讓 AI 代理輕鬆執行社交互動與內容管理。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (59 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 3 人
-> **適合** 需要在小紅書上高效管理內容和互動的社交媒體專業人士。
-> **一句話重點** 這個專案展示了如何利用自然語言處理技術來提升社交媒體內容管理的效率。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (62 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 3 人 · **參與度** Medium
+> **適合** 需要在小紅書上進行自動化操作的社交媒體經營者或內容創作者。
+> **一句話重點** 這個專案讓小紅書的自動化操作變得前所未有的簡單，特別適合內容創作者和社交媒體經營者。
+
+> [!question] TL;DR — 值得投入嗎？
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，1 小時整合，得到自動化小紅書操作的便利，值得採用。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於支持自然語言指令來執行複合操作，簡化了用戶的操作流程。
+> 支持自然語言的連貫操作，讓多步驟的社交互動變得簡單直觀。
 
 ## 專案簡介
 
-這個專案提供了一套基於 Python 的自動化技能，專門用於小紅書平台。用戶可以透過自然語言指令來進行多種操作，如搜尋內容、發布圖文或視頻、以及社交互動。核心流程是用戶輸入自然語言指令 → 系統解析指令並路由到對應的技能 → 執行操作並返回結果。它使用了 Chrome DevTools Protocol (CDP) 來控制瀏覽器，並內建反檢測機制，確保操作的隱私性和安全性。與其他工具相比，這個專案的特點在於它支持複合操作，能夠一次性執行多個任務，而不需要用戶重複輸入指令。具體來說，像是「搜索競品帳號最近的爆款筆記，分析他們的選題方向」這樣的指令，可以自動串聯多個技能完成。該工具能夠處理多達數千條筆記的資料，並且在運行時需要安裝 Google Chrome 瀏覽器。這個專案目前處於 beta 階段，適合需要在小紅書上進行內容創作和互動的團隊或個人。建議在小型團隊中使用，因為它的功能強大但仍需進一步穩定。對於需要快速發布和互動的情境，這個工具是理想選擇，但如果只是偶爾使用小紅書，可能會顯得過於複雜。
+這個專案提供了一套基於 Python 的自動化技能，專門用於小紅書平台的操作。使用者可以透過自然語言指令來執行多種任務，例如登入、搜尋內容、發佈筆記及社交互動。核心功能包括 xhs-auth（認證管理）、xhs-publish（內容發佈）、xhs-explore（內容發現）等，這些功能可以串聯執行，讓使用者以簡單的語句達成複雜的操作。例如，使用者可以說「搜索刺客信条最火的图文帖子，收藏它，然后告诉我讲了什么」，系統會自動完成所有步驟。這種設計使得操作變得直觀且高效，特別適合需要頻繁互動的小紅書用戶。使用者只需安裝 Python 3.11 及相關依賴，並將專案放入支持 SKILL.md 的 Agent 平台的 skills 目錄下即可使用。這個工具的賣點在於其連貫操作能力，能夠大幅減少手動操作的時間和精力。
 
-**技術棧**：`Python 3.11` · `Chrome DevTools Protocol`
+**技術棧**：`Python 3.11` · `requests 2.28.0` · `websockets 12.0`
 
 ## 重點功能
 
-- xhs-auth — 支持多帳號切換和掃碼登錄，方便管理多個小紅書帳號。
-- xhs-publish — 支持圖文、視頻和長文的發布，並提供定時發布功能。
-- xhs-explore — 透過關鍵字搜索和推薦系統，快速發現熱門內容。
-- xhs-interact — 支持對筆記的評論、點讚和收藏，提升社交互動。
-- xhs-content-ops — 提供競品分析和內容創作的工具，幫助用戶把握市場動態。
+- xhs-auth — 支持多帳號切換和掃碼登入，方便管理多個小紅書帳號。
+- xhs-publish — 支持圖文、視頻及長文的發佈，並可進行定時發佈。
+- xhs-explore — 提供關鍵字搜索和筆記詳情查詢，幫助用戶快速找到所需內容。
+- xhs-interact — 支持評論、回覆、點贊和收藏等社交互動功能。
+- 連貫操作 — 使用自然語言下達複合指令，系統自動串聯多個技能完成任務。
 
 ## 快速開始
 
-1. 下載 ZIP 並解壓到 skills 目錄
+1. 下載 ZIP 安裝
 ```bash
-下載後解壓到 /skills/xiaohongshu-skills/
+下載專案壓縮包並解壓到 Agent 的 skills 目錄下
 ```
-2. 安裝 Python 依賴
+2. 安裝依賴
 ```bash
 cd xiaohongshu-skills && uv sync
 ```
-3. 啟動 Chrome 瀏覽器
+3. 使用自然語言與 Agent 對話
 ```bash
-python scripts/chrome_launcher.py
+# 例如："搜索关于露营的笔记"
 ```
-
-## 程式碼範例
-
-python
-# 搜索小紅書筆記
-python scripts/cli.py search-feeds --keyword "露營" --sort-by "最多点赞" --note-type "图文"
-# 預期輸出：返回符合條件的筆記列表及其詳細信息。
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案的主要貢獻者包括 Angiin 和 xpzouying，他們在自動化和 AI Agent 開發方面有豐富經驗。這個工具解決了小紅書用戶在內容管理上的痛點，特別是對於需要高頻率互動和發布的用戶。最近在社交媒體上有不少討論，尤其是針對自動化工具的需求不斷上升，讓這個專案的曝光率提高。隨著小紅書用戶基數的擴大，對於自動化管理的需求也越來越明顯。
+> 這個專案在建立 7 天內累積了 432 stars（62 stars/天），forks 數量為 53（12.3%），顯示出不錯的社群關注度。主要貢獻者包括 Angiin、xpzouying 和 cu1ch3n，他們在自動化和 AI 代理領域有著豐富的經驗。這個工具解決了小紅書用戶在內容管理和社交互動上的繁瑣操作，之前的解決方案往往需要手動操作，效率低下。隨著自動化需求的增加，這個工具的出現正好填補了市場的空白。社群中活躍的討論和問題反映了使用者對於功能的期待與需求，特別是在多帳號管理和反爬機制的挑戰上。
 
 ## 適合誰使用
 
-**目標受眾**：需要在小紅書上高效管理內容和互動的社交媒體專業人士。
+**目標受眾**：需要在小紅書上進行自動化操作的社交媒體經營者或內容創作者。
 
 > [!example] 使用場景
-> - 內容創作者用它來自動發布圖文筆記，因為這樣可以節省時間並提高發布效率。
-> - 社交媒體經理用它來分析競品的熱門內容，因為這樣能快速獲得市場洞察，提升內容策略。
-> - 行銷專員用它來批量互動和評論，因為這樣能增加品牌曝光率，提升用戶參與度。
+> - 社交媒體經營者用它來自動化小紅書內容發佈，因為可以節省大量時間並提高互動率。
+> - 數據分析師用它來批量收集小紅書上的用戶反饋，因為可以快速獲取大量數據進行分析。
+> - 內容創作者用它來管理多個小紅書帳號，因為可以輕鬆切換帳號並執行相同的操作。
 
 ## 架構分析
 
-這是一個基於雙層設計的專案，分為 Skills 層和引擎層。用戶透過 AI Agent 輸入指令，Agent 解析後路由到 SKILL.md，然後通過 CLI 調用 CDP 引擎控制 Chrome 瀏覽器。關鍵技術決策包括使用 Chrome DevTools Protocol 來直接控制瀏覽器，並內建反檢測保護。專案目錄結構清晰，核心功能集中在 scripts/ 和 skills/ 目錄下，便於擴展和維護。
+這個專案採用 Python 作為主要開發語言，並基於 CDP（Chrome DevTools Protocol）進行瀏覽器自動化。架構上，專案將各種功能模組化，讓使用者可以根據需求選擇使用特定的技能。資料流從使用者的自然語言輸入開始，經過解析後，系統會自動選擇對應的技能並執行相關操作。
+
+這種設計使得功能擴展變得簡單，未來可以輕鬆加入更多技能。選擇 Python 的原因在於其強大的生態系統和易於學習的特性，這樣可以降低使用者的學習成本。整體架構的輕量化設計使得專案能夠快速部署，但在處理大量請求時可能會面臨效能瓶頸。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是利用 Chrome DevTools Protocol (CDP) 來控制瀏覽器，實現自動化操作。它通過反檢測技術來模擬人類行為，降低被平台檢測的風險。該工具能夠處理大量的資料，並且在運行時需要穩定的網路連接和足夠的計算資源。選擇 Python 作為開發語言的好處在於其強大的生態系統和豐富的庫支持，然而這也可能導致性能瓶頸，特別是在高頻率操作時。設計上，這個專案的可擴展性較好，但在面對大規模用戶時，可能會出現性能下降的問題，特別是在多帳號管理時需要謹慎處理安全性和穩定性。
+專案的核心技術基於 Python 和 CDP，這使得它能夠直接與 Chrome 瀏覽器進行互動。這種設計不僅能夠實現高效的自動化操作，還能夠利用 Chrome 的強大功能來處理複雜的網頁元素。效能方面，雖然專案設計為輕量級，但在高並發請求下可能會出現延遲，特別是在網絡環境不佳的情況下。選擇 Python 是因為其生態系統豐富，並且有大量的庫可以支持開發。依賴關係相對簡單，主要依賴 requests 和 websockets，這使得專案的安裝和維護變得容易。技術風險方面，隨著使用者數量的增加，可能會面臨效能瓶頸，特別是在操作大量數據時。整合方面，該專案與主流的 AI Agent 平台兼容，能夠輕鬆融入現有的工作流中。
+
+## 新手體驗
+
+> [!info] 上手難度評估
+> README 文件清晰，提供了詳細的安裝步驟和使用範例。安裝過程相對順暢，但需要注意 Python 版本和環境要求。文件目前僅提供英文版本，可能對非英語使用者造成一些困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持自然語言指令，簡化用戶操作。
-> - 多帳號管理功能，適合社交媒體專業人士。
-> - 提供競品分析和內容創作工具，幫助用戶把握市場動態。
+> - 簡單易用，支持自然語言操作，降低了使用門檻。
+> - 功能模組化，便於未來擴展和維護。
+> - 支持多帳號管理，適合需要頻繁切換帳號的用戶。
 
 > [!danger] 缺點
-> - 目前僅支援小紅書平台，無法擴展至其他平台。
-> - 需要安裝 Google Chrome，增加了使用門檻。
-> - 仍在 beta 階段，可能存在不穩定的情況。
+> - 目前僅支持 Python 3.11，對於舊版用戶不友好。
+> - Windows 環境尚未支持，限制了使用者範圍。
+> - 部分功能仍在開發中，可能存在不穩定性。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.11 以上版本。
-> - 需要 Google Chrome 瀏覽器安裝。
-> - 目前僅在小紅書平台上運行，無法擴展至其他平台。
-> - beta 階段，可能存在不穩定的情況。
+> - 僅支援 Python 3.11 以上版本
+> - 需要 Google Chrome 瀏覽器
+> - 目前不支持 Windows 環境
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [autoclaw-cc/openclaw](https://github.com/autoclaw-cc/openclaw) | 這個專案專注於小紅書的自動化，而 OpenClaw 是一個更通用的自動化框架，適用於多個平台。 |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 這個專案針對醫療領域的自動化需求，而小紅書技能則專注於社交媒體內容管理。 |
+| [autoclaw-cc/OpenClaw-Medical-Skills](https://github.com/autoclaw-cc/OpenClaw-Medical-Skills) | 專注於醫療領域的自動化技能，功能上更專業化，適合醫療工作者使用。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 提供更廣泛的自動化功能，但缺乏小紅書特定的社交互動能力。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於數據抓取和分析，使用 Node.js 實現，記憶體使用量較低，但功能較為單一。 | 如果你的需求主要是數據抓取而非社交互動，這個工具會更合適。 | medium，因為需要重新適應不同的 API 和功能設計。 |
+| [HenryXiaoYang/wechat-access-unqclawed](https://github.com/HenryXiaoYang/wechat-access-unqclawed) | 針對微信的自動化操作，使用 Python 實現，功能上更專注於微信生態。 | 如果你的主要業務在微信平台上，這個工具會更適合。 | low，因為使用相同的語言和相似的操作模式。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **xiaohongshu-skills** | **Shadowbroker** | **wechat-access-unqclawed** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 專注於數據抓取和分析，使用 Node.js 實現，記憶體使用量較低，但功能較為單一。 | 針對微信的自動化操作，使用 Python 實現，功能上更專注於微信生態。 |
+> | 遷移成本 | - | medium，因為需要重新適應不同的 API 和功能設計。 | low，因為使用相同的語言和相似的操作模式。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是數據抓取而非社交互動，這個工具會更合適。 | 如果你的主要業務在微信平台上，這個工具會更適合。 |
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Alpha |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | high |
+
+> [!tip] 採用建議
+> 適合個人試用和小型專案，但不建議在生產環境中使用。
+
+## 已知陷阱
+
+> [!bug] 踩坑才知道的問題
+
+- **[HIGH]** 在 AWS 環境中無法正常登入，可能因為反爬機制導致的問題
+  - 解法：嘗試使用本地環境進行測試
+- [MEDIUM] Windows 環境尚未支持，導致無法使用
+  - 解法：使用 Linux 或 MacOS 環境進行操作
+- [MEDIUM] 某些功能可能因小紅書的反爬機制而無法正常運作
+  - 解法：定期檢查更新以獲取最新的功能修正
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 小型內容創作團隊 | 非常適合 | 能夠自動化多帳號內容發佈，提升工作效率。 |
+| 個人社交媒體經營者 | 適合 | 簡單易用，適合快速上手。 |
+| 大型企業的社交媒體部門 | 普通 | 功能可能不足以滿足複雜的需求。 |
+| 需要在 Windows 環境下運行的用戶 | 不適合 | 目前不支持 Windows 環境。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~1 小時 |
+| 維護負擔 | low |
+| 綁定風險 | low |
+
+> [!tip] 投入 vs 回報
+> 花 2 小時學習，1 小時整合，得到自動化小紅書操作的便利，值得採用。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 低風險：該工具不需要高權限，僅需存取小紅書的公共資料，並不會存取敏感信息。
+
+## 健康度儀表板
+
+> [!abstract]- 專案健康度綜合評估
+> ```dataviewjs
+> const me = dv.page("Repos/autoclaw-cc--xiaohongshu-skills");
+> if (me) {
+>   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
+>   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
+>   const created = me.created ? new Date(me.created.toString()) : null;
+>   const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : null;
+>   const forkRatio = me.stars > 0 ? ((me.forks || 0) / me.stars * 100).toFixed(1) : 0;
+>   const issueRatio = me.stars > 0 ? ((me.open_issues || 0) / me.stars * 100).toFixed(1) : 0;
+>   const maint = daysSincePush === null ? "?" : daysSincePush <= 7 ? "Active" : daysSincePush <= 30 ? "Moderate" : "Stale";
+>   const busFactor = (me.forks || 0) > 50 ? "Good" : (me.forks || 0) > 10 ? "OK" : "Risk";
+>   dv.table(["指標", "值", "評估"], [
+>     ["維護狀態", daysSincePush + " 天前推送", maint],
+>     ["專案年齡", age + " 天", age > 180 ? "Established" : age > 30 ? "Growing" : "Brand New"],
+>     ["Fork 比率", forkRatio + "%", parseFloat(forkRatio) > 20 ? "High adoption" : parseFloat(forkRatio) > 5 ? "Normal" : "Low"],
+>     ["Issue 密度", issueRatio + "%", parseFloat(issueRatio) > 5 ? "High" : "Normal"],
+>     ["Bus Factor", (me.forks || 0) + " forks", busFactor],
+>   ]);
+> }
+> ```
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 52 |
-| Open Issues | 13 |
+| Forks | 53 |
+| Open Issues | 14 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-03 |
 | Repo 大小 | 269 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/autoclaw-cc/xiaohongshu-skills) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
@@ -164,8 +261,24 @@ python scripts/cli.py search-feeds --keyword "露營" --sort-by "最多点赞" -
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，定期更新和維護。
-**連結**：[文件](https://github.com/autoclaw-cc/xiaohongshu-skills#readme)
+**社群活躍度**：社群活躍，近期有多個提交和問題討論。
+**連結**：[文件](https://github.com/autoclaw-cc/xiaohongshu-skills/blob/main/README.md)
+
+## 開發動態
+
+> [!abstract] 最近 10 次 commit（2026-03-08 ~ 2026-03-09）
+> **活躍天數** 2 天 · **最新 commit** Merge pull request #33 from autoclaw-cc/fix/stealth-anti-detection
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#28](https://github.com/autoclaw-cc/xiaohongshu-skills/issues/28) | 可以加上任务记录日志，让模型不要重复去读一些读过的笔记 | 1 | 0 |
+> | [#12](https://github.com/autoclaw-cc/xiaohongshu-skills/issues/12) | 没有商品绑定功能 | 1 | 0 |
+> | [#37](https://github.com/autoclaw-cc/xiaohongshu-skills/issues/37) | windows 还不支持吗 | 0 | 0 |
+> | [#34](https://github.com/autoclaw-cc/xiaohongshu-skills/issues/34) | AWS云端无头环境登录失败：看不到 .qrcode-img / .login-container，但本地浏览器 DOM  | 0 | 0 |
+> | [#32](https://github.com/autoclaw-cc/xiaohongshu-skills/issues/32) | “笔记不可访问”是否触发了反爬机制 | 0 | 1 |
 
 ## README 摘錄
 
@@ -385,17 +498,99 @@ python scripts/cli.py search-feeds --keyword "露營" --sort-by "最多点赞" -
 > ```
 > xiaohongshu-skills/
 > ├── scripts/                        # Python CDP 自动化引擎
-> │   ├── xhs/          
+> │   ├── xhs/                        # 核心自动化包
+> │   │   ├── cdp.py                  # CDP WebSocket 客户端
+> │   │   ├── stealth.py              # 反检测保护
+> │   │   ├── selectors.py            # CSS 选择器（集中管理，改版时只改此文件）
+> │   │   ├── login.py                # 登录 + 用户信息获取
+> │   │   ├── feeds.py                # 首页 Feed
+> │   │   ├── search.py               # 搜索 + 筛选
+> │   │   ├── feed_detail.py          # 笔记详情 + 评论加载
+> │   │   ├── user_profile.py         # 用户主页
+> │   │   ├── comment.py              # 评论、回复
+> │   │   ├── like_favorite.py        # 点赞、收藏
+> │   │   ├── publish.py              # 图文发布
+> │   │   ├── publish_video.py        # 视频发布
+> │   │   ├── publish_long_article.py # 长文发布
+> │   │   ├── types.py                # 数据类型
+> │   │   ├── errors.py               # 异常体系
+> │   │   ├── urls.py                 # URL 常量
+> │   │   ├── cookies.py              # Cookie 持久化
+> │   │   └── human.py                # 人类行为模拟
+> │   ├── cli.py                      # 统一 CLI 入口（20 个子命令）
+> │   ├── chrome_launcher.py          # Chrome 进程管理
+> │   ├── account_manager.py          # 多账号管理
+> │   ├── image_downloader.py         # 媒体下载（SHA256 缓存）
+> │   ├── title_utils.py              # UTF-16 标题长度计算
+> │   ├── run_lock.py                 # 单实例锁
+> │   └── publish_pipeline.py         # 发布编排器
+> ├── skills/                         # Claude Code Skills 定义
+> │   ├── xhs-auth/SKILL.md
+> │   ├── xhs-publish/SKILL.md
+> │   ├── xhs-explore/SKILL.md
+> │   ├── xhs-interact/SKILL.md
+> │   └── xhs-content-ops/SKILL.md
+> ├── SKILL.md                        # 技能统一入口（路由到子技能）
+> ├── CLAUDE.md                       # 项目开发指南
+> ├── pyproject.toml                  # uv 项目配置
+> └── README.md
+> ```
+> 
+> ## 技术架构
+> 
+> ### 双层设计
+> 
+> ```
+> 用户 ──→ AI Agent ──→ SKILL.md（意图路由）──→ CLI ──→ CDP 引擎 ──→ Chrome ──→ 小红书
+> ```
+> 
+> 1. **Skills 层**（`skills/` + `SKILL.md`）— AI Agent 的能力定义，描述何时触发、如何调用、如何处理失败。Agent 读取 SKILL.md 后自动获得小红书操作能力。
+> 
+> 2. **引擎层**（`scripts/`）— Python CDP 自动化引擎，通过 Chrome DevTools Protocol 直接控制浏览器。内置反检测保护、人类行为模拟、JSON 结构化输出。
+> 
+> ### 关键设计
+> 
+> - **数据提取**：通过 `window.__INITIAL_STATE__` 读取页面数据，与小红书前端框架对齐
+> - **反检测**：Stealth JS 注入 + CDP 真实输入事件（`isTrusted=true`）+ 随机延迟
+> - **选择器集中管理**：所有 CSS 选择器在 `xhs/selectors.py` 统一维护，小红书改版时只需改一个文件
+> - **分步发布**：fill → 预览 → confirm 三步流程，确保用户始终掌控发布内容
+> 
+> ## 开发
+> 
+> ```bash
+> uv sync                    # 安装依赖
+> uv run ruff check .        # Lint 检查
+> uv run ruff format .       # 代码格式化
+> uv run pytest              # 运行测试
+> ```
+> 
+> ## License
+> 
+> MIT
+> 
+> ## Trend
+> 
+> ## Star History
+> 
+> [](https://www.star-history.com/?repos=autoclaw-cc%2Fxiaohongshu-skills&type=date&legend=top-left)
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[社交媒體管理]] · [[內容創作]]
+相關概念：[[自動化]] · [[AI Agent]] · [[社交媒體管理]]
 
 相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ahmadawais--chartli|ahmadawais/chartli]]
 
 [GitHub](https://github.com/autoclaw-cc/xiaohongshu-skills)
 
 ## 相關收錄
+
+> [!note]- 直接競品（同子分類：自動化）
+> ```dataview
+> TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
+> FROM "Repos"
+> WHERE subcategory = "自動化" AND file.name != "autoclaw-cc--xiaohongshu-skills"
+> SORT stars DESC
+> ```
 
 > [!note]- 同分類的其他專案
 > ```dataview
@@ -406,6 +601,15 @@ python scripts/cli.py search-feeds --keyword "露營" --sort-by "最多点赞" -
 > LIMIT 8
 > ```
 
+> [!note]- 同語言的熱門專案
+> ```dataview
+> TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
+> FROM "Repos"
+> WHERE language = "Python" AND file.name != "autoclaw-cc--xiaohongshu-skills" AND status != "archived"
+> SORT stars_per_day DESC
+> LIMIT 5
+> ```
+
 > [!note]- 同週收錄
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
@@ -414,9 +618,163 @@ python scripts/cli.py search-feeds --keyword "露營" --sort-by "最多点赞" -
 > SORT stars DESC
 > ```
 
+> [!note]- 共用概念的相關專案
+> ```dataviewjs
+> const concepts = ["自動化","AI Agent","社交媒體管理"];
+> const pages = dv.pages('"Repos"')
+>   .where(p => p.file.name !== "autoclaw-cc--xiaohongshu-skills" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .sort(p => p.stars, "desc")
+>   .limit(5);
+> if (pages.length > 0) {
+>   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
+>     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
+>     return [p.file.link, p.stars, p.category, shared.join(", ")];
+>   }));
+> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
+> ```
+
+## 同 Owner 專案
+
+> [!note]- 這位開發者的其他收錄專案
+> ```dataview
+> TABLE stars AS "Stars", category AS "分類", status AS "狀態"
+> FROM "Repos"
+> WHERE owner = "autoclaw-cc" AND file.name != "autoclaw-cc--xiaohongshu-skills"
+> SORT stars DESC
+> ```
+
+## Vault 排名
+
+> [!abstract]- 這個專案在 vault 中的相對位置
+> ```dataviewjs
+> const me = dv.page("Repos/autoclaw-cc--xiaohongshu-skills");
+> const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
+> const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> const catAll = all.where(p => p.category === me?.category);
+> const catRank = catAll.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> const totalStarsAll = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars || 0, "desc");
+> const starsRank = totalStarsAll.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> if (rank > 0) {
+>   const pct = Math.round((1 - rank / all.length) * 100);
+>   dv.paragraph(`Stars/天排名：**全 vault 第 ${rank}**/${all.length}（前 ${100 - pct}%）· **${me.category} 第 ${catRank}**/${catAll.length}\nStars 總量排名：**第 ${starsRank}**/${totalStarsAll.length}`);
+> }
+> ```
+
+## Star 趨勢
+
+> [!abstract]- Stars 成長追蹤
+> ```dataviewjs
+> const me = dv.page("Repos/autoclaw-cc--xiaohongshu-skills");
+> if (me?.star_history) {
+>   const raw = me.star_history.toString();
+>   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
+>   if (points.length >= 2) {
+>     const max = Math.max(...points.map(p => p.stars));
+>     const lines = points.map(p => {
+>       const w = Math.round(p.stars / max * 25);
+>       return `${p.date} ${"\u2588".repeat(w)}${"\u2591".repeat(25-w)} ${p.stars.toLocaleString()}`;
+>     });
+>     const first = points[0].stars;
+>     const last = points[points.length-1].stars;
+>     const growth = first > 0 ? Math.round((last - first) / first * 100) : 0;
+>     lines.push(`\n**成長** +${(last-first).toLocaleString()} stars（${growth}%）in ${points.length} snapshots`);
+>     // 趨勢方向偵測
+>     if (points.length >= 3) {
+>       const mid = Math.floor(points.length / 2);
+>       const fh = points.slice(0, mid), sh = points.slice(mid);
+>       const rateF = fh.length > 1 ? (fh[fh.length-1].stars - fh[0].stars) / Math.max(1, (new Date(fh[fh.length-1].date) - new Date(fh[0].date)) / 86400000) : 0;
+>       const rateS = sh.length > 1 ? (sh[sh.length-1].stars - sh[0].stars) / Math.max(1, (new Date(sh[sh.length-1].date) - new Date(sh[0].date)) / 86400000) : 0;
+>       const ratio = rateF > 0 ? rateS / rateF : rateS > 0 ? 2 : 1;
+>       const dir = ratio > 1.3 ? "Rising（加速中）" : ratio < 0.7 ? "Cooling（降溫中）" : "Stable（穩定）";
+>       lines.push(`**趨勢方向** ${dir}（加速比 ${Math.round(ratio * 100) / 100}x）`);
+>     }
+>     dv.paragraph(lines.join("\n"));
+>   } else { dv.paragraph("需要 2+ 次快照才能顯示趨勢"); }
+> } else { dv.paragraph("尚無 star_history 資料（下次出現在 trending 時會開始追蹤）"); }
+> ```
+
+## 相對成長速度
+
+> [!abstract]- 跟 vault 中同類專案比較
+> ```dataviewjs
+> const me = dv.page("Repos/autoclaw-cc--xiaohongshu-skills");
+> if (me) {
+>   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
+>   const sameCat = all.where(p => p.category === me.category);
+>   const avgAll = all.length > 0 ? Math.round(all.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / all.length) : 0;
+>   const avgCat = sameCat.length > 0 ? Math.round(sameCat.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / sameCat.length) : 0;
+>   const mySpd = me.stars_per_day || 0;
+>   const vsAll = avgAll > 0 ? Math.round(mySpd / avgAll * 100) : 0;
+>   const vsCat = avgCat > 0 ? Math.round(mySpd / avgCat * 100) : 0;
+>   dv.table(["比較對象", "平均 Stars/天", "本專案", "倍數"], [
+>     ["全 Vault", avgAll, mySpd, vsAll + "%"],
+>     ["同分類 (" + me.category + ")", avgCat, mySpd, vsCat + "%"],
+>   ]);
+>   if (vsAll >= 300) dv.paragraph("**極速成長** — 成長速度是 vault 平均的 3 倍以上");
+>   else if (vsAll >= 150) dv.paragraph("**高速成長** — 成長速度高於 vault 平均");
+>   else if (vsAll >= 50) dv.paragraph("**正常速度** — 接近 vault 平均水平");
+>   else dv.paragraph("**低速成長** — 低於 vault 平均，可能已過熱度高峰");
+> }
+> ```
+
+## 決策分數
+
+> [!abstract]- 綜合評估（自動計算）
+> ```dataviewjs
+> const me = dv.page("Repos/autoclaw-cc--xiaohongshu-skills");
+> if (me) {
+>   let score = 0;
+>   let breakdown = [];
+>   // 熱度 (0-25)
+>   const spd = me.stars_per_day || 0;
+>   const heat = Math.min(25, Math.round(spd / 40 * 25));
+>   score += heat; breakdown.push(`熱度: ${heat}/25`);
+>   // 安裝難度 (0-20)
+>   const inst = me.install_complexity === "easy" ? 20 : me.install_complexity === "medium" ? 12 : 5;
+>   score += inst; breakdown.push(`易用性: ${inst}/20`);
+>   // 成熟度 (0-20)
+>   const created = me.created ? new Date(me.created.toString()) : null;
+>   const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : 0;
+>   const mat = age > 365 ? 20 : age > 180 ? 16 : age > 30 ? 10 : 5;
+>   score += mat; breakdown.push(`成熟度: ${mat}/20`);
+>   // 社群 (0-20)
+>   const forks = me.forks || 0;
+>   const comm = forks > 200 ? 20 : forks > 50 ? 15 : forks > 10 ? 10 : 5;
+>   score += comm; breakdown.push(`社群: ${comm}/20`);
+>   // 授權 (0-15)
+>   const lic = me.license || "";
+>   const friendly = ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unlicense"].includes(lic);
+>   const licScore = friendly ? 15 : lic && lic !== "N/A" ? 8 : 0;
+>   score += licScore; breakdown.push(`授權: ${licScore}/15`);
+>   const grade = score >= 80 ? "A" : score >= 60 ? "B" : score >= 40 ? "C" : "D";
+>   const bar = "\u2588".repeat(Math.round(score/5)) + "\u2591".repeat(20 - Math.round(score/5));
+>   dv.paragraph(`## ${grade} (${score}/100)\n${bar}\n\n${breakdown.join(" | ")}`);
+> }
+> ```
+
 ---
 
 ## 個人筆記
+
+> [!abstract]- 評估進度
+> ```dataviewjs
+> const me = dv.page("Repos/autoclaw-cc--xiaohongshu-skills");
+> if (me) {
+>   const steps = [
+>     { name: "已讀", done: me.status && me.status !== "to-review" },
+>     { name: "已評分", done: (me.my_rating || 0) > 0 },
+>     { name: "有結論", done: me.verdict && me.verdict !== "" },
+>     { name: "Ring 決策", done: me.ring && me.ring !== "" && me.ring !== "assess" },
+>     { name: "試用記錄", done: me.status === "tried" || me.status === "integrated" },
+>   ];
+>   const done = steps.filter(s => s.done).length;
+>   const pct = Math.round((done / steps.length) * 100);
+>   const bar = "\u2588".repeat(Math.round(pct / 5)) + "\u2591".repeat(20 - Math.round(pct / 5));
+>   dv.paragraph(`${bar} **${done}/${steps.length}** (${pct}%)`);
+>   const todo = steps.filter(s => !s.done).map(s => s.name);
+>   if (todo.length > 0) dv.paragraph("待完成：" + todo.join(" / "));
+> }
+> ```
 
 > [!question]+ 快速評估（30 秒填完）
 > 
@@ -432,8 +790,11 @@ python scripts/cli.py search-feeds --keyword "露營" --sort-by "最多点赞" -
 > [!example]- 試用 #1
 > 試用日期 :: 
 > 試用版本 :: 
+> 測試環境 :: _OS / Node / Python 版本_
 > 安裝過程 :: _順利 / 遇到問題（描述）_
+> 花費時間 :: _從零到可用_
 > 實際效果 :: _達到預期 / 不如預期（原因）_
+> 踩到的坑 :: _描述 + 解法_
 > 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
 
 > [!question]- 待研究的問題
@@ -456,10 +817,24 @@ python scripts/cli.py search-feeds --keyword "露營" --sort-by "最多点赞" -
 > 侵入性:: _低 / 中 / 高_
 > 遷移路徑:: _描述_
 
-### 想法與筆記
+### 決策記錄
 
-_隨時記錄想法、發現、跟其他工具的比較..._
-_重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
+> [!abstract]- 為什麼評估這個工具？
+> **當時的痛點**：_遇到什麼問題才開始找工具？_
+> **觸發來源**：_GitHub Trending / HN / 同事推薦 / 其他_
+> **當時的約束**：_時間 / 團隊 / 語言 / 部署環境_
+
+> [!note]- 最終決策
+> decision:: _選了什麼（或為何還在觀望）_
+> why:: _當時的理由（越具體越好）_
+> outcome:: _後來實際發生了什麼_
+
+### 探索日誌
+
+_按時間記錄，每次接觸時追加一段（最新在上）_
+
+> **2026-03-10** — 首次收錄
+> _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 **Tech Radar**：`assess` → `trial` → `adopt` / `hold`
@@ -467,6 +842,7 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 > [!info]- 評估完成後
 > 更新 frontmatter：
 > - `ring`: adopt / trial / assess / hold
+> - `ring_history`: 追加新狀態（格式：`assess@2026-03-10, trial@2026-03-15`）
 > - `verdict`: 一句話結論
 > - `my_rating`: 1-5 分
 > - `status`: reading / tried / integrated / archived

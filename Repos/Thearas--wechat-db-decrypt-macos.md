@@ -7,69 +7,76 @@ language: Python
 license: WTFPL
 description: "macOS arm64 微信 4.1 数据库解密，只在最新的微信 4.1.2.241 测试过，不支持4.0 以下版本"
 homepage: ""
-stars: 385
-stars_per_day: 77
-forks: 399
+stars: 388
+stars_per_day: 65
+forks: 400
 open_issues: 3
 created: 2026-03-05
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
-category: "其他"
-subcategory: "數據解密"
+category: "開發工具"
+subcategory: "數據提取"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "解密微信 4.1 数据库，讓你輕鬆導出聊天記錄。"
+use_case: "解密 macOS arm64 微信 4.1 数据库，提取聊天记录。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+appearances: 1
 next_review: "2026-03-17"
+contributor_count: 3
 engagement: "high"
 verdict: ""
 ring_history: "assess@2026-03-10"
+star_history: "2026-03-10:388"
 tags:
   - github
-  - "category/其他"
+  - "category/開發工具"
   - "lang/python"
 aliases:
   - "wechat-db-decrypt-macos"
   - "Thearas/wechat-db-decrypt-macos"
-  - "解密微信 4.1 数据库，讓你輕鬆導出聊天記錄。"
+  - "解密 macOS arm64 微信 4.1 数据库，提取聊天记录。"
 ---
 
 # wechat-db-decrypt-macos
 
-**385** stars · **77** stars/天 · 建立 5 天前 · Python · WTFPL
+**388** stars · **65** stars/天 · 建立 6 天前 · Python · WTFPL
 
 > [!summary] 一句話摘要
-> 解密微信 4.1 数据库，讓你輕鬆導出聊天記錄。
+> 解密 macOS arm64 微信 4.1 数据库，提取聊天记录。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (77 stars/day)
-> **授權** WTFPL · **維護** Active (最後推送 1 天前) · **貢獻者** 3 人
-> **適合** 需要在 macOS 上解密微信 4.1 數據庫並導出聊天記錄的開發者和研究者。
-> **一句話重點** 這個專案讓微信數據的解密和導出變得簡單，特別適合需要進行數據分析的開發者。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (65 stars/day)
+> **授權** WTFPL · **維護** Active (最後推送 1 天前) · **貢獻者** 3 人 · **參與度** High
+> **適合** 需要在 macOS 上提取微信 4.1 聊天數據的開發者和數據分析師。
+> **一句話重點** 這個工具不僅解決了微信數據提取的需求，還提供了便捷的命令行操作，讓用戶能夠輕鬆獲取和查詢數據。
+
+> [!question] TL;DR — 值得投入嗎？
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，1 小時整合，得到便捷的微信數據提取功能，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供了完整的微信數據解密和導出功能，支持 AI 查詢接口。
+> 提供一個簡單的命令行工具來解密和導出微信 4.1 的聊天記錄。
 
 ## 專案簡介
 
-這個專案提供了一個工具來解密微信 4.1 的 SQLCipher 加密本地數據庫，讓用戶能夠提取聊天記錄。使用者首先需要在 macOS arm64 環境下，禁用 SIP，並安裝必要的依賴。接著，透過 `find_key_memscan.py` 腳本提取密鑰，密鑰會儲存到 `wechat_keys.json`。然後，使用 `decrypt_db.py` 進行數據庫解密，最後可以透過 `export_messages.py` 導出聊天記錄，支持模糊匹配和關鍵字搜索等功能。這個工具還支持 MCP Server，讓 AI 能夠直接查詢微信數據，提供如獲取最近會話、查看聊天記錄等功能。與其他工具相比，這個專案專注於最新的微信版本，並且提供了完整的查詢接口，方便用戶進行數據操作。使用者需要在 macOS 環境下運行，並且需要禁用 SIP，這對於一般用戶來說可能是一個障礙。這個專案目前處於 beta 階段，適合對微信數據有需求的開發者和研究者使用。建議在需要提取微信聊天記錄時使用，但不建議用於生產環境，因為可能存在安全風險。
+這個工具專為 macOS arm64 設計，能解密微信 4.1 的本地 SQLCipher 加密數據庫，並導出聊天記錄。使用者需先禁用 SIP，然後透過 `find_key_memscan.py` 提取密鑰，接著使用 `decrypt_db.py` 解密數據庫，最後可透過 `export_messages.py` 導出聊天記錄，支持多種查詢方式，如模糊匹配和關鍵字搜索。這個工具的賣點在於其簡單的命令行介面，讓用戶能輕鬆提取和查詢微信數據。技術上，它依賴 Python 和 SQLCipher，並使用了 LLVM 來進行內存掃描，這樣的選擇使得密鑰提取過程相對快速且高效。相較於其他工具，如 ylytdeng/wechat-decrypt，這個專案專注於 macOS 環境，並且提供了更簡化的使用流程。使用者在導出過程中可能會遇到表情包和圖片內容的編碼問題，這是目前的熱門問題之一。這個專案的社群活躍度高，Forks 比率達到 103.1%，顯示出許多人在實際修改和使用它。整體來說，這是一個針對特定需求的工具，適合需要提取微信數據的 macOS 用戶，但在使用過程中可能會遇到一些限制和問題。
 
-**技術棧**：`Python 3`
+**技術棧**：`Python` · `SQLCipher` · `LLVM`
 
 ## 重點功能
 
-- 密鑰提取 — 使用 `find_key_memscan.py` 提取微信數據庫密鑰，並儲存至 `wechat_keys.json`。
-- 數據庫解密 — 使用 `decrypt_db.py` 解密 SQLCipher 加密的微信數據庫。
+- 密鑰提取 — 使用 `find_key_memscan.py` 提取密鑰，並保存至 `wechat_keys.json`。
+- 數據解密 — 使用 `decrypt_db.py` 解密 SQLCipher 加密的數據庫。
 - 聊天記錄導出 — 使用 `export_messages.py` 導出聊天記錄，支持模糊匹配和關鍵字搜索。
-- MCP Server 支持 — 讓 AI 直接查詢微信數據，提供如 `get_recent_sessions` 和 `search_messages` 等功能。
-- 多種導出選項 — 支持導出指定會話、最近 N 條消息或所有會話。
+- MCP Server 整合 — 讓 AI 直接查詢微信數據，支持多種查詢功能。
+- 簡單的命令行介面 — 提供直觀的指令，方便用戶操作。
 
 ## 快速開始
 
@@ -92,73 +99,165 @@ python3 export_messages.py --all
 
 ## 程式碼範例
 
-```bash
-# 提取密鑰
-PYTHONPATH=$(lldb -P) python3 find_key_memscan.py
-
-# 解密數據庫
-python3 decrypt_db.py
-
-# 導出指定會話
-python3 export_messages.py -c "卡比"
-```
+{
+  "前置條件": "確保微信已登錄並正在運行",
+  "指令": "python3 export_messages.py -c \"卡比\" -n 50",
+  "預期輸出": "導出最近 50 條與 \"卡比\" 的聊天記錄"
+}
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案的主要貢獻者包括 jackwener 和 jalen0x，他們在開源社群中有一定的知名度。該工具解決了用戶在微信中無法直接導出聊天記錄的痛點，特別是在需要進行數據分析或備份時。最近在社交媒體上有關於微信數據隱私的討論，讓這個工具引起了更多的關注。由於微信的更新頻繁，這個工具的針對性和實用性使其在當前環境下顯得尤為重要。
+> 建立 6 天內累積 388 stars（65/天），forks 400（103.1%），這顯示出極高的使用和修改需求。主要貢獻者包括 jackwener 和 jalen0x，他們在開源社群中有一定的影響力。這個工具解決了微信數據提取的需求，特別是在 macOS 環境下，之前的方案多數不支持最新版本的微信。最近的推廣和社群討論可能促進了這個專案的快速增長，尤其是在社交媒體上引起了關注。高 Forks 比率顯示出用戶對於修改和擴展功能的興趣。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 macOS 上解密微信 4.1 數據庫並導出聊天記錄的開發者和研究者。
+**目標受眾**：需要在 macOS 上提取微信 4.1 聊天數據的開發者和數據分析師。
 
 > [!example] 使用場景
-> - 數據分析師用它來導出微信聊天記錄，因為手動複製聊天內容效率低且容易出錯。
-> - 開發者用它來測試微信數據的安全性，因為能夠直接查詢和分析加密數據。
-> - 研究者用它來進行社交網絡分析，因為能夠快速獲取大量的聊天數據進行研究。
+> - 數據分析師用它來提取微信聊天記錄，因為可以快速獲取大量數據進行分析。
+> - 開發者用它來測試 AI 模型的聊天數據，因為能直接從微信中導出對話進行訓練。
+> - 個人用戶用它來備份重要的聊天記錄，因為可以方便地導出和存檔。
 
 ## 架構分析
 
-這是一個 CLI 工具，主要架構為單體應用。用戶輸入 → 提取密鑰 → 解密數據庫 → 導出聊天記錄。關鍵技術決策包括使用 Python 進行數據處理和 SQLCipher 解密。專案目錄結構包括 `find_key_memscan.py`、`decrypt_db.py` 和 `export_messages.py` 等核心檔案。
+這個專案採用 Python 作為主要開發語言，並依賴 SQLCipher 進行數據庫的加密解密。架構上，工具分為幾個模組：密鑰提取、數據解密和聊天記錄導出，每個模組都能獨立運行。選擇 Python 使得開發和使用都相對簡單，但可能在性能上不如 C/C++ 實作。整體架構設計上，選擇了命令行介面，這樣能夠快速集成到其他自動化流程中。對於擴展性，這個工具的模組化設計允許未來添加更多功能，如支持其他版本的微信或不同平台的支持。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是利用 Python 腳本提取和解密微信的 SQLCipher 加密數據庫。通過 `find_key_memscan.py` 提取密鑰，然後使用 `decrypt_db.py` 解密數據，最後利用 `export_messages.py` 導出數據。該工具能夠處理的數據量取決於微信的聊天記錄大小，理論上可以處理數千條消息。設計上選擇 Python 是因為其在數據處理和腳本編寫上的靈活性，但這也意味著性能可能不如編譯語言。隨著用戶數據量的增加，解密和導出過程可能會變得緩慢，特別是在大型數據集上。安全性方面，這個工具需要禁用 SIP，這可能會帶來風險，使用者需謹慎考量。整體而言，這個專案在解密和導出微信數據方面提供了一個有效的解決方案，但在使用時需注意安全性和平台限制。
+這個專案的核心技術機制是利用 Python 和 SQLCipher 進行數據庫的解密。密鑰提取使用內存掃描技術，這使得提取過程相對快速且高效。效能方面，這個工具能夠處理大量的聊天記錄，但在高負載的情況下可能會面臨性能瓶頸。設計上選擇 Python 使得開發和維護成本較低，但在性能上可能不如 C/C++ 的實作。
+
+依賴樹相對簡單，主要依賴 SQLCipher 和 LLVM，這降低了潛在的 vendor lock-in 風險。技術風險方面，密鑰提取的穩定性可能在不同版本的微信中有所不同，這需要持續的維護和更新。整合方面，這個工具能夠輕鬆與其他自動化流程結合，但對於大型項目可能需要進一步的適配。整體來說，這是一個針對特定需求的工具，適合需要提取微信數據的用戶。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和使用範例。安裝過程需要禁用 SIP，這對於新手來說可能有些挑戰。整體上，對於熟悉命令行的用戶來說，能在 30 分鐘內完成安裝並運行起來。
+> README 文件清晰，提供了詳細的使用步驟和範例。安裝過程相對順暢，但需要注意禁用 SIP 的步驟。文件中沒有多語言支持，僅提供英文內容。整體來說，花 30 分鐘能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持最新的微信版本，能夠解密和導出聊天記錄。
-> - 提供了多種導出選項，靈活性高。
-> - 支持 AI 查詢接口，方便進行數據分析。
-> - 安裝和使用過程相對簡單，適合開發者使用。
+> - 簡單易用的命令行介面，適合快速操作。
+> - 支持多種導出選項，靈活性高。
+> - 社群活躍，能夠快速獲得支持和更新。
 
 > [!danger] 缺點
-> - 僅支持 macOS arm64，無法在其他平台使用。
-> - 需要禁用 SIP，對於一般用戶來說不夠友好。
-> - 僅支持微信 4.1 及以上版本，限制了使用範圍。
-> - 存在潛在的安全風險，使用時需謹慎。
+> - 僅支持特定版本的微信，限制了使用範圍。
+> - 需要禁用 SIP，可能影響系統安全性。
+> - 在導出過程中可能遇到編碼問題，影響數據完整性。
 
 > [!warning] 注意事項
-> - 僅支持微信 4.1 及以上版本。
-> - 需要禁用 SIP，這對於一般用戶來說可能是一個障礙。
-> - 僅在 macOS arm64 環境下運行，無法在其他平台使用。
-> - 可能存在安全風險，使用時需謹慎。
+> - 僅支持微信 4.1 版本，不支持 4.0 以下版本。
+> - 需要禁用 SIP，這可能會影響系統安全性。
+> - 在導出過程中，表情包和圖片可能出現編碼問題。
+> - 僅支持 macOS arm64 環境，無法在其他平台使用。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [ylytdeng/wechat-decrypt](https://github.com/ylytdeng/wechat-decrypt) | 這個工具專注於內存搜索方案，而本專案提供了更簡化的命令行操作和特定於 macOS 的支持。 |
+| [jackwener/wechat-access-unqclawed](https://github.com/jackwener/wechat-access-unqclawed) | 這個專案針對微信數據的訪問，但不專注於數據導出和解密功能。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| [ylytdeng/wechat-decrypt](https://github.com/ylytdeng/wechat-decrypt) | 使用內存搜索方案來提取密鑰，而本專案則專注於簡化的命令行操作。 | 如果需要在多平台上使用，且不僅限於 macOS 環境，則可以選擇這個方案。 | medium，因為需要重新適應不同的操作流程。 |
+| [jackwener/wechat-access-unqclawed](https://github.com/jackwener/wechat-access-unqclawed) | 專注於數據訪問而非解密，提供不同的功能集。 | 如果需要更廣泛的數據訪問功能，而不僅限於解密和導出，則可以考慮這個工具。 | low，因為功能上有部分重疊。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **wechat-db-decrypt-macos** | **wechat-decrypt** | **wechat-access-unqclawed** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 使用內存搜索方案來提取密鑰，而本專案則專注於簡化的命令行操作。 | 專注於數據訪問而非解密，提供不同的功能集。 |
+> | 遷移成本 | - | medium，因為需要重新適應不同的操作流程。 | low，因為功能上有部分重疊。 |
+> | 適用場景 | 主要場景 | 如果需要在多平台上使用，且不僅限於 macOS 環境，則可以 | 如果需要更廣泛的數據訪問功能，而不僅限於解密和導出，則可以考 |
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Alpha |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | high |
+
+> [!tip] 採用建議
+> 適合個人試用和探索，但不建議用於生產環境。
+
+## 已知陷阱
+
+> [!bug] 踩坑才知道的問題
+
+- **[HIGH]** 導出的聊天數據中表情包、圖片等內容出現乱码
+  - 解法：目前無法解決，需手動處理。
+- [MEDIUM] 提取密钥时报错，可能與微信版本不兼容有關
+  - 解法：確保使用微信 4.1 版本，並重試。
+- **[HIGH]** Windows 平台不支持，僅限於 macOS
+  - 解法：無法解決，需在 macOS 環境下運行。
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 10 人以下的小型團隊需要提取聊天記錄 | 非常適合 | 簡單的命令行操作能快速滿足需求。 |
+| 大型企業需要穩定的數據提取方案 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
+| 個人用戶希望備份重要聊天記錄 | 適合 | 提供了便捷的導出功能，滿足個人需求。 |
+| 開發者需要在多平台上使用此工具 | 不適合 | 僅支持 macOS arm64 環境。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~1 小時 |
+| 維護負擔 | low |
+| 綁定風險 | medium |
+
+> [!tip] 投入 vs 回報
+> 花 2 小時學習，1 小時整合，得到便捷的微信數據提取功能，值得嘗試。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 低風險：這個工具不需要高權限運行，但需注意禁用 SIP 的安全性影響。它不會存取敏感資料，但依賴的庫可能存在供應鏈風險。
+
+## 健康度儀表板
+
+> [!abstract]- 專案健康度綜合評估
+> ```dataviewjs
+> const me = dv.page("Repos/Thearas--wechat-db-decrypt-macos");
+> if (me) {
+>   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
+>   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
+>   const created = me.created ? new Date(me.created.toString()) : null;
+>   const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : null;
+>   const forkRatio = me.stars > 0 ? ((me.forks || 0) / me.stars * 100).toFixed(1) : 0;
+>   const issueRatio = me.stars > 0 ? ((me.open_issues || 0) / me.stars * 100).toFixed(1) : 0;
+>   const maint = daysSincePush === null ? "?" : daysSincePush <= 7 ? "Active" : daysSincePush <= 30 ? "Moderate" : "Stale";
+>   const busFactor = (me.forks || 0) > 50 ? "Good" : (me.forks || 0) > 10 ? "OK" : "Risk";
+>   dv.table(["指標", "值", "評估"], [
+>     ["維護狀態", daysSincePush + " 天前推送", maint],
+>     ["專案年齡", age + " 天", age > 180 ? "Established" : age > 30 ? "Growing" : "Brand New"],
+>     ["Fork 比率", forkRatio + "%", parseFloat(forkRatio) > 20 ? "High adoption" : parseFloat(forkRatio) > 5 ? "Normal" : "Low"],
+>     ["Issue 密度", issueRatio + "%", parseFloat(issueRatio) > 5 ? "High" : "Normal"],
+>     ["Bus Factor", (me.forks || 0) + " forks", busFactor],
+>   ]);
+> }
+> ```
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 399 |
+| Forks | 400 |
 | Open Issues | 3 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-05 |
 | Repo 大小 | 2.3 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Thearas/wechat-db-decrypt-macos) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
@@ -166,6 +265,24 @@ python3 export_messages.py -c "卡比"
 > | [@jackwener](https://github.com/jackwener) | 11 |
 > | [@jalen0x](https://github.com/jalen0x) | 3 |
 > | [@Thearas](https://github.com/Thearas) | 2 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍，最近有多個合併請求和問題討論。
+
+## 開發動態
+
+> [!abstract] 最近 10 次 commit（2026-03-05 ~ 2026-03-09）
+> **活躍天數** 4 天 · **最新 commit** Merge pull request #4 from jalen0x/main
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#3](https://github.com/Thearas/wechat-db-decrypt-macos/issues/3) | 导出的聊天数据中表情包、图片等内容出现乱码，只有纯文字正常 | 0 | 0 |
+> | [#2](https://github.com/Thearas/wechat-db-decrypt-macos/issues/2) | 提取密钥时报错 | 0 | 4 |
+> | [#1](https://github.com/Thearas/wechat-db-decrypt-macos/issues/1) | windows的可以吗? | 0 | 2 |
 
 ## README 摘錄
 
@@ -243,7 +360,7 @@ python3 export_messages.py -c "卡比"
 
 ## 延伸閱讀
 
-相關概念：[[數據解密]] · [[社交媒體分析]] · [[隱私保護]]
+相關概念：[[CLI/TUI]] · [[數據提取]] · [[自動化]]
 
 相關專案：[[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[photon-hq--qclaw-wechat-client|photon-hq/qclaw-wechat-client]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]]
 
@@ -251,13 +368,30 @@ python3 export_messages.py -c "卡比"
 
 ## 相關收錄
 
+> [!note]- 直接競品（同子分類：數據提取）
+> ```dataview
+> TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
+> FROM "Repos"
+> WHERE subcategory = "數據提取" AND file.name != "Thearas--wechat-db-decrypt-macos"
+> SORT stars DESC
+> ```
+
 > [!note]- 同分類的其他專案
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "Thearas--wechat-db-decrypt-macos"
+> WHERE category = "開發工具" AND file.name != "Thearas--wechat-db-decrypt-macos"
 > SORT stars DESC
 > LIMIT 8
+> ```
+
+> [!note]- 同語言的熱門專案
+> ```dataview
+> TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
+> FROM "Repos"
+> WHERE language = "Python" AND file.name != "Thearas--wechat-db-decrypt-macos" AND status != "archived"
+> SORT stars_per_day DESC
+> LIMIT 5
 > ```
 
 > [!note]- 同週收錄
@@ -268,9 +402,163 @@ python3 export_messages.py -c "卡比"
 > SORT stars DESC
 > ```
 
+> [!note]- 共用概念的相關專案
+> ```dataviewjs
+> const concepts = ["CLI/TUI","數據提取","自動化"];
+> const pages = dv.pages('"Repos"')
+>   .where(p => p.file.name !== "Thearas--wechat-db-decrypt-macos" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .sort(p => p.stars, "desc")
+>   .limit(5);
+> if (pages.length > 0) {
+>   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
+>     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
+>     return [p.file.link, p.stars, p.category, shared.join(", ")];
+>   }));
+> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
+> ```
+
+## 同 Owner 專案
+
+> [!note]- 這位開發者的其他收錄專案
+> ```dataview
+> TABLE stars AS "Stars", category AS "分類", status AS "狀態"
+> FROM "Repos"
+> WHERE owner = "Thearas" AND file.name != "Thearas--wechat-db-decrypt-macos"
+> SORT stars DESC
+> ```
+
+## Vault 排名
+
+> [!abstract]- 這個專案在 vault 中的相對位置
+> ```dataviewjs
+> const me = dv.page("Repos/Thearas--wechat-db-decrypt-macos");
+> const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
+> const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> const catAll = all.where(p => p.category === me?.category);
+> const catRank = catAll.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> const totalStarsAll = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars || 0, "desc");
+> const starsRank = totalStarsAll.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> if (rank > 0) {
+>   const pct = Math.round((1 - rank / all.length) * 100);
+>   dv.paragraph(`Stars/天排名：**全 vault 第 ${rank}**/${all.length}（前 ${100 - pct}%）· **${me.category} 第 ${catRank}**/${catAll.length}\nStars 總量排名：**第 ${starsRank}**/${totalStarsAll.length}`);
+> }
+> ```
+
+## Star 趨勢
+
+> [!abstract]- Stars 成長追蹤
+> ```dataviewjs
+> const me = dv.page("Repos/Thearas--wechat-db-decrypt-macos");
+> if (me?.star_history) {
+>   const raw = me.star_history.toString();
+>   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
+>   if (points.length >= 2) {
+>     const max = Math.max(...points.map(p => p.stars));
+>     const lines = points.map(p => {
+>       const w = Math.round(p.stars / max * 25);
+>       return `${p.date} ${"\u2588".repeat(w)}${"\u2591".repeat(25-w)} ${p.stars.toLocaleString()}`;
+>     });
+>     const first = points[0].stars;
+>     const last = points[points.length-1].stars;
+>     const growth = first > 0 ? Math.round((last - first) / first * 100) : 0;
+>     lines.push(`\n**成長** +${(last-first).toLocaleString()} stars（${growth}%）in ${points.length} snapshots`);
+>     // 趨勢方向偵測
+>     if (points.length >= 3) {
+>       const mid = Math.floor(points.length / 2);
+>       const fh = points.slice(0, mid), sh = points.slice(mid);
+>       const rateF = fh.length > 1 ? (fh[fh.length-1].stars - fh[0].stars) / Math.max(1, (new Date(fh[fh.length-1].date) - new Date(fh[0].date)) / 86400000) : 0;
+>       const rateS = sh.length > 1 ? (sh[sh.length-1].stars - sh[0].stars) / Math.max(1, (new Date(sh[sh.length-1].date) - new Date(sh[0].date)) / 86400000) : 0;
+>       const ratio = rateF > 0 ? rateS / rateF : rateS > 0 ? 2 : 1;
+>       const dir = ratio > 1.3 ? "Rising（加速中）" : ratio < 0.7 ? "Cooling（降溫中）" : "Stable（穩定）";
+>       lines.push(`**趨勢方向** ${dir}（加速比 ${Math.round(ratio * 100) / 100}x）`);
+>     }
+>     dv.paragraph(lines.join("\n"));
+>   } else { dv.paragraph("需要 2+ 次快照才能顯示趨勢"); }
+> } else { dv.paragraph("尚無 star_history 資料（下次出現在 trending 時會開始追蹤）"); }
+> ```
+
+## 相對成長速度
+
+> [!abstract]- 跟 vault 中同類專案比較
+> ```dataviewjs
+> const me = dv.page("Repos/Thearas--wechat-db-decrypt-macos");
+> if (me) {
+>   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
+>   const sameCat = all.where(p => p.category === me.category);
+>   const avgAll = all.length > 0 ? Math.round(all.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / all.length) : 0;
+>   const avgCat = sameCat.length > 0 ? Math.round(sameCat.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / sameCat.length) : 0;
+>   const mySpd = me.stars_per_day || 0;
+>   const vsAll = avgAll > 0 ? Math.round(mySpd / avgAll * 100) : 0;
+>   const vsCat = avgCat > 0 ? Math.round(mySpd / avgCat * 100) : 0;
+>   dv.table(["比較對象", "平均 Stars/天", "本專案", "倍數"], [
+>     ["全 Vault", avgAll, mySpd, vsAll + "%"],
+>     ["同分類 (" + me.category + ")", avgCat, mySpd, vsCat + "%"],
+>   ]);
+>   if (vsAll >= 300) dv.paragraph("**極速成長** — 成長速度是 vault 平均的 3 倍以上");
+>   else if (vsAll >= 150) dv.paragraph("**高速成長** — 成長速度高於 vault 平均");
+>   else if (vsAll >= 50) dv.paragraph("**正常速度** — 接近 vault 平均水平");
+>   else dv.paragraph("**低速成長** — 低於 vault 平均，可能已過熱度高峰");
+> }
+> ```
+
+## 決策分數
+
+> [!abstract]- 綜合評估（自動計算）
+> ```dataviewjs
+> const me = dv.page("Repos/Thearas--wechat-db-decrypt-macos");
+> if (me) {
+>   let score = 0;
+>   let breakdown = [];
+>   // 熱度 (0-25)
+>   const spd = me.stars_per_day || 0;
+>   const heat = Math.min(25, Math.round(spd / 40 * 25));
+>   score += heat; breakdown.push(`熱度: ${heat}/25`);
+>   // 安裝難度 (0-20)
+>   const inst = me.install_complexity === "easy" ? 20 : me.install_complexity === "medium" ? 12 : 5;
+>   score += inst; breakdown.push(`易用性: ${inst}/20`);
+>   // 成熟度 (0-20)
+>   const created = me.created ? new Date(me.created.toString()) : null;
+>   const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : 0;
+>   const mat = age > 365 ? 20 : age > 180 ? 16 : age > 30 ? 10 : 5;
+>   score += mat; breakdown.push(`成熟度: ${mat}/20`);
+>   // 社群 (0-20)
+>   const forks = me.forks || 0;
+>   const comm = forks > 200 ? 20 : forks > 50 ? 15 : forks > 10 ? 10 : 5;
+>   score += comm; breakdown.push(`社群: ${comm}/20`);
+>   // 授權 (0-15)
+>   const lic = me.license || "";
+>   const friendly = ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unlicense"].includes(lic);
+>   const licScore = friendly ? 15 : lic && lic !== "N/A" ? 8 : 0;
+>   score += licScore; breakdown.push(`授權: ${licScore}/15`);
+>   const grade = score >= 80 ? "A" : score >= 60 ? "B" : score >= 40 ? "C" : "D";
+>   const bar = "\u2588".repeat(Math.round(score/5)) + "\u2591".repeat(20 - Math.round(score/5));
+>   dv.paragraph(`## ${grade} (${score}/100)\n${bar}\n\n${breakdown.join(" | ")}`);
+> }
+> ```
+
 ---
 
 ## 個人筆記
+
+> [!abstract]- 評估進度
+> ```dataviewjs
+> const me = dv.page("Repos/Thearas--wechat-db-decrypt-macos");
+> if (me) {
+>   const steps = [
+>     { name: "已讀", done: me.status && me.status !== "to-review" },
+>     { name: "已評分", done: (me.my_rating || 0) > 0 },
+>     { name: "有結論", done: me.verdict && me.verdict !== "" },
+>     { name: "Ring 決策", done: me.ring && me.ring !== "" && me.ring !== "assess" },
+>     { name: "試用記錄", done: me.status === "tried" || me.status === "integrated" },
+>   ];
+>   const done = steps.filter(s => s.done).length;
+>   const pct = Math.round((done / steps.length) * 100);
+>   const bar = "\u2588".repeat(Math.round(pct / 5)) + "\u2591".repeat(20 - Math.round(pct / 5));
+>   dv.paragraph(`${bar} **${done}/${steps.length}** (${pct}%)`);
+>   const todo = steps.filter(s => !s.done).map(s => s.name);
+>   if (todo.length > 0) dv.paragraph("待完成：" + todo.join(" / "));
+> }
+> ```
 
 > [!question]+ 快速評估（30 秒填完）
 > 
@@ -286,8 +574,11 @@ python3 export_messages.py -c "卡比"
 > [!example]- 試用 #1
 > 試用日期 :: 
 > 試用版本 :: 
+> 測試環境 :: _OS / Node / Python 版本_
 > 安裝過程 :: _順利 / 遇到問題（描述）_
+> 花費時間 :: _從零到可用_
 > 實際效果 :: _達到預期 / 不如預期（原因）_
+> 踩到的坑 :: _描述 + 解法_
 > 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
 
 > [!question]- 待研究的問題
@@ -310,10 +601,24 @@ python3 export_messages.py -c "卡比"
 > 侵入性:: _低 / 中 / 高_
 > 遷移路徑:: _描述_
 
-### 想法與筆記
+### 決策記錄
 
-_隨時記錄想法、發現、跟其他工具的比較..._
-_重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
+> [!abstract]- 為什麼評估這個工具？
+> **當時的痛點**：_遇到什麼問題才開始找工具？_
+> **觸發來源**：_GitHub Trending / HN / 同事推薦 / 其他_
+> **當時的約束**：_時間 / 團隊 / 語言 / 部署環境_
+
+> [!note]- 最終決策
+> decision:: _選了什麼（或為何還在觀望）_
+> why:: _當時的理由（越具體越好）_
+> outcome:: _後來實際發生了什麼_
+
+### 探索日誌
+
+_按時間記錄，每次接觸時追加一段（最新在上）_
+
+> **2026-03-10** — 首次收錄
+> _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
 **Tech Radar**：`assess` → `trial` → `adopt` / `hold`
@@ -321,6 +626,7 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 > [!info]- 評估完成後
 > 更新 frontmatter：
 > - `ring`: adopt / trial / assess / hold
+> - `ring_history`: 追加新狀態（格式：`assess@2026-03-10, trial@2026-03-15`）
 > - `verdict`: 一句話結論
 > - `my_rating`: 1-5 分
 > - `status`: reading / tried / integrated / archived
