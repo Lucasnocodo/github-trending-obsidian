@@ -966,8 +966,8 @@ function generateDailyDigest(repos, llmData, today) {
     '',
     '## 收錄列表',
     '',
-    '| # | 專案 | 分類 | Stars | 速度 | 語言 |',
-    '| :--: | --- | --- | ---: | ---: | --- |',
+    '| # | 專案 | 分類 | Stars | 速度 | 安裝 | 參與度 | 語言 |',
+    '| :--: | --- | --- | ---: | ---: | --- | --- | --- |',
   ];
 
   // 表格
@@ -975,9 +975,12 @@ function generateDailyDigest(repos, llmData, today) {
     const r = repos[i];
     const info = _get(r.full_name);
     const cat = info?.category || '';
+    const installBadge = info?.install_complexity ? `\`${info.install_complexity}\`` : '';
+    const forkRatio = r.stargazers_count > 0 ? (r.forks_count / r.stargazers_count) : 0;
+    const engBadge = forkRatio >= 0.3 ? 'High' : forkRatio >= 0.1 ? 'Mid' : 'Low';
     const link = `[[${repoFileName(r.full_name).replace('.md', '')}\\|${r.full_name}]]`;
     lines.push(
-      `| ${i + 1} | ${link} | ${cat} | ${fmt(r.stargazers_count)} | ${fmt(starsPerDay(r.stargazers_count, r.created_at))}/天 | ${r.language || 'N/A'} |`
+      `| ${i + 1} | ${link} | ${cat} | ${fmt(r.stargazers_count)} | ${fmt(starsPerDay(r.stargazers_count, r.created_at))}/天 | ${installBadge} | ${engBadge} | ${r.language || 'N/A'} |`
     );
   }
 
