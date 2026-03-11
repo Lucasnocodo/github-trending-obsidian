@@ -1639,6 +1639,54 @@ dv.table(
 );
 \`\`\`
 
+## 分類圓餅圖
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const cats = {};
+for (const p of pages) {
+  const c = p.category || "其他";
+  cats[c] = (cats[c] || 0) + 1;
+}
+const lines = ['pie title 分類分佈'];
+for (const [cat, count] of Object.entries(cats).sort((a,b) => b[1] - a[1])) {
+  lines.push('    "' + cat + '" : ' + count);
+}
+dv.paragraph('\`\`\`mermaid\\n' + lines.join('\\n') + '\\n\`\`\`');
+\`\`\`
+
+## 子分類聚集
+
+> [!abstract] 同一子分類的多個專案代表該方向正被密集探索
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived" && p.subcategory);
+const subs = {};
+for (const p of pages) {
+  const key = p.category + " > " + p.subcategory;
+  if (!subs[key]) subs[key] = [];
+  subs[key].push(p);
+}
+const hot = Object.entries(subs).filter(([_, r]) => r.length >= 2).sort((a, b) => b[1].length - a[1].length);
+if (hot.length > 0) {
+  dv.table(
+    ["子分類", "數量", "最熱門", "Stars/天", "專案"],
+    hot.map(([sub, repos]) => {
+      repos.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0));
+      return [
+        sub,
+        repos.length,
+        repos[0].file.link,
+        repos[0].stars_per_day || 0,
+        repos.slice(1).map(r => r.file.link).join(", ")
+      ];
+    })
+  );
+} else {
+  dv.paragraph("_需收錄更多專案才能看到子分類聚集_");
+}
+\`\`\`
+
 ## 月度趨勢
 
 \`\`\`dataviewjs
@@ -1929,6 +1977,24 @@ FROM "Repos"
 WHERE week = "${weekStr}"
 GROUP BY language
 SORT length(rows) DESC
+\`\`\`
+
+## 本週分佈圖
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.week === "${weekStr}");
+if (pages.length >= 3) {
+  const cats = {};
+  for (const p of pages) {
+    const c = p.category || "其他";
+    cats[c] = (cats[c] || 0) + 1;
+  }
+  const lines = ['pie title 本週分類分佈'];
+  for (const [cat, count] of Object.entries(cats).sort((a,b) => b[1] - a[1])) {
+    lines.push('    "' + cat + '" : ' + count);
+  }
+  dv.paragraph('\`\`\`mermaid\\n' + lines.join('\\n') + '\\n\`\`\`');
+}
 \`\`\`
 
 ## 安裝難度分佈
@@ -2468,6 +2534,52 @@ if (sorted.length > 0) {
   dv.table(["概念", "相關專案數"], sorted.map(([name, count]) => [dv.fileLink(name), count]));
 } else {
   dv.paragraph("_尚無相關概念連結_");
+}
+\`\`\`
+
+## Tech Radar 分佈
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.category === "${category}" && p.ring);
+const rings = { adopt: 0, trial: 0, assess: 0, hold: 0 };
+for (const p of pages) {
+  const ring = (p.ring || "assess").toLowerCase();
+  if (rings[ring] !== undefined) rings[ring]++;
+}
+const total = Object.values(rings).reduce((s, c) => s + c, 0);
+if (total > 0) {
+  const labels = { adopt: "Adopt", trial: "Trial", assess: "Assess", hold: "Hold" };
+  dv.table(
+    ["Ring", "數量", "佔比"],
+    Object.entries(rings)
+      .filter(([_, c]) => c > 0)
+      .map(([ring, count]) => {
+        const pct = Math.round((count / total) * 100);
+        return [labels[ring], count, pct + "%"];
+      })
+  );
+} else {
+  dv.paragraph("_此分類尚無 Tech Radar 評估_");
+}
+\`\`\`
+
+## 參與度分析
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.category === "${category}" && p.status !== "archived");
+const engagementMap = {};
+for (const p of pages) {
+  const e = p.engagement || "unknown";
+  engagementMap[e] = (engagementMap[e] || 0) + 1;
+}
+const total = pages.length;
+if (total > 0) {
+  dv.table(
+    ["參與度", "數量", "佔比"],
+    Object.entries(engagementMap)
+      .sort((a, b) => b[1] - a[1])
+      .map(([e, c]) => [e, c, Math.round((c / total) * 100) + "%"])
+  );
 }
 \`\`\`
 
@@ -3692,8 +3804,8 @@ async function refreshRepos(token, failedOnly = false) {
   }
 
   // 限制每次 refresh 的數量和時間，避免 Actions 超時
-  const MAX_REFRESH = parseInt(process.env.MAX_REFRESH || '15', 10);
-  const MAX_REFRESH_TIME = parseInt(process.env.MAX_REFRESH_TIME || '1200', 10) * 1000; // 預設 20 分鐘
+  const MAX_REFRESH = parseInt(process.env.MAX_REFRESH || '30', 10);
+  const MAX_REFRESH_TIME = parseInt(process.env.MAX_REFRESH_TIME || '1500', 10) * 1000; // 預設 25 分鐘
   const actualToRefresh = toRefresh.slice(0, MAX_REFRESH);
   console.log(`${toRefresh.length} notes need refresh (processing max ${MAX_REFRESH}, time limit ${MAX_REFRESH_TIME/1000}s)`);
   if (toRefresh.length > MAX_REFRESH) {
