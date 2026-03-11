@@ -673,6 +673,9 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     `install_complexity: "${installLabel}"`,
     `status: to-review`,
     `my_rating: 0`,
+    `score_confidence: 0`,
+    `score_interest: 0`,
+    `score_risk: 0`,
     `last_reviewed: ${today}`,
     `use_case: "${(llmInfo?.description_zh || '').replace(/"/g, '\\"').slice(0, 80)}"`,
     `priority: ${rate >= 200 ? 'high' : rate >= 30 ? 'medium' : 'low'}`,
@@ -1606,6 +1609,14 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('> 相關性:: 未評估');
   lines.push('> 印象:: _一句話_');
   lines.push('> 行動:: 不需要');
+  lines.push('> ');
+  lines.push('> | 維度 | 分數 (1-5) | 說明 |');
+  lines.push('> | --- | :---: | --- |');
+  lines.push('> | 信心 | /5 | _我對這工具的了解程度_ |');
+  lines.push('> | 興趣 | /5 | _想投入時間研究的程度_ |');
+  lines.push('> | 風險 | /5 | _導入風險，5=極低風險_ |');
+  lines.push('> ');
+  lines.push('> _填完後更新 frontmatter：`score_confidence` / `score_interest` / `score_risk`_');
   lines.push('> ');
   lines.push('> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_');
   lines.push('> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_');
@@ -2604,6 +2615,47 @@ dv.table(
     r.link, r.done + "/" + r.total, r.spd, r.status, bar(r.pct)
   ])
 );
+\`\`\`
+
+## 主觀三維評分總覽
+
+> [!abstract] 信心 / 興趣 / 風險 — 幫助你辨識高價值目標
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.status !== "archived" && ((p.score_confidence || 0) + (p.score_interest || 0) + (p.score_risk || 0)) > 0;
+});
+if (pages.length === 0) {
+  dv.paragraph("尚無專案填寫三維評分。在筆記的「快速評估」區填寫信心/興趣/風險 1-5 分，並更新 frontmatter 的 score_confidence / score_interest / score_risk。");
+} else {
+  // 綜合分數 = interest*2 + confidence + risk（興趣權重最高）
+  const scored = pages.map(p => ({
+    link: p.file.link,
+    c: p.score_confidence || 0,
+    i: p.score_interest || 0,
+    r: p.score_risk || 0,
+    composite: (p.score_interest || 0) * 2 + (p.score_confidence || 0) + (p.score_risk || 0),
+    status: p.status || "",
+    spd: p.stars_per_day || 0,
+  })).sort((a, b) => b.composite - a.composite);
+
+  // 高興趣但低信心 = 值得深入研究
+  const researchTargets = scored.filter(s => s.i >= 4 && s.c <= 2);
+  if (researchTargets.length > 0) {
+    dv.header(4, "值得深入研究（高興趣 + 低信心）");
+    dv.table(
+      ["專案", "興趣", "信心", "風險", "Stars/天"],
+      researchTargets.map(s => [s.link, s.i, s.c, s.r, s.spd])
+    );
+  }
+
+  // 全部評分排行
+  dv.header(4, "綜合評分排行");
+  dv.table(
+    ["專案", "信心", "興趣", "風險", "綜合", "狀態"],
+    scored.slice(0, 15).map(s => [s.link, s.c, s.i, s.r, s.composite, s.status])
+  );
+}
 \`\`\`
 
 ## Owner 排行榜
@@ -4153,6 +4205,24 @@ if (pages.length > 0) {
 }
 \`\`\`
 
+## 興趣雷達
+
+> [!tip] 你最感興趣的專案（依三維評分排序）
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.status !== "archived" && (p.score_interest || 0) > 0;
+}).sort(p => (p.score_interest || 0) * 2 + (p.score_confidence || 0) + (p.score_risk || 0), "desc").limit(5);
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "興趣", "信心", "風險", "Stars/天", "分類"],
+    pages.map(p => [p.file.link, p.score_interest, p.score_confidence, p.score_risk, p.stars_per_day || 0, p.category || ""])
+  );
+} else {
+  dv.paragraph("打開任一專案筆記，在「快速評估」區填寫信心/興趣/風險 1-5 分。");
+}
+\`\`\`
+
 ## 分類健康度
 
 > [!abstract]- 各分類的專案數量和回顧進度
@@ -5253,6 +5323,7 @@ function needsLightPatch(content) {
   if (!content.includes('同 Owner 專案')) patches.push('same_owner');
   if (!content.includes('相對成長速度')) patches.push('growth_velocity');
   if (!content.includes('評估進度')) patches.push('eval_progress');
+  if (!content.includes('score_confidence:')) patches.push('score_fields');
   return patches;
 }
 
@@ -5540,6 +5611,15 @@ function applyLightPatch(content, patches) {
     }
   }
 
+  // 10. 三維評分 frontmatter 欄位
+  if (patches.includes('score_fields') && !updated.includes('score_confidence:')) {
+    // 在 my_rating: 後面插入三個評分欄位
+    updated = updated.replace(
+      /^(my_rating: \d+)$/m,
+      '$1\nscore_confidence: 0\nscore_interest: 0\nscore_risk: 0'
+    );
+  }
+
   return updated;
 }
 
@@ -5820,6 +5900,9 @@ async function refreshRepos(token, failedOnly = false) {
       merged = merged
         .replace(/^status: to-review$/m, `status: ${savedStatus}`)
         .replace(/^my_rating: 0$/m, `my_rating: ${savedRating}`)
+        .replace(/^score_confidence: 0$/m, `score_confidence: ${item.content.match(/^score_confidence: (\d+)$/m)?.[1] || '0'}`)
+        .replace(/^score_interest: 0$/m, `score_interest: ${item.content.match(/^score_interest: (\d+)$/m)?.[1] || '0'}`)
+        .replace(/^score_risk: 0$/m, `score_risk: ${item.content.match(/^score_risk: (\d+)$/m)?.[1] || '0'}`)
         .replace(/^last_reviewed: .+$/m, `last_reviewed: ${savedReviewed}`)
         .replace(/^priority: (high|medium|low)$/m, `priority: ${savedPriority}`)
         .replace(/^ring: assess$/m, `ring: ${savedRing}`)
