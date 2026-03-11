@@ -2751,6 +2751,36 @@ if (pages.length > 0) {
 }
 \`\`\`
 
+## 決策分數排名
+
+> [!abstract] 綜合評分（熱度+易用+成熟+社群+授權 = 0-100）
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.category === "${category}" && p.status !== "archived");
+const scored = [];
+for (const p of pages) {
+  let score = 0;
+  const spd = p.stars_per_day || 0;
+  score += Math.min(25, Math.round(spd / 40 * 25));
+  score += p.install_complexity === "easy" ? 20 : p.install_complexity === "medium" ? 12 : 5;
+  const created = p.created ? new Date(p.created.toString()) : null;
+  const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : 0;
+  score += age > 365 ? 20 : age > 180 ? 16 : age > 30 ? 10 : 5;
+  const forks = p.forks || 0;
+  score += forks > 200 ? 20 : forks > 50 ? 15 : forks > 10 ? 10 : 5;
+  const lic = p.license || "";
+  score += ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unlicense"].includes(lic) ? 15 : lic && lic !== "N/A" ? 8 : 0;
+  const grade = score >= 80 ? "A" : score >= 60 ? "B" : score >= 40 ? "C" : "D";
+  scored.push([p.file.link, grade, score, p.stars_per_day || 0, p.install_complexity || "?", p.subcategory || ""]);
+}
+scored.sort((a, b) => b[2] - a[2]);
+if (scored.length > 0) {
+  dv.table(["專案", "等級", "分數", "Stars/天", "安裝", "子分類"], scored);
+} else {
+  dv.paragraph("_此分類無專案_");
+}
+\`\`\`
+
 ## 子分類推薦
 
 > [!abstract] 每個子分類中的最佳候選
