@@ -1419,6 +1419,16 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('>     const last = points[points.length-1].stars;');
   lines.push('>     const growth = first > 0 ? Math.round((last - first) / first * 100) : 0;');
   lines.push('>     lines.push(`\\n**成長** +${(last-first).toLocaleString()} stars（${growth}%）in ${points.length} snapshots`);');
+  lines.push('>     // 趨勢方向偵測');
+  lines.push('>     if (points.length >= 3) {');
+  lines.push('>       const mid = Math.floor(points.length / 2);');
+  lines.push('>       const fh = points.slice(0, mid), sh = points.slice(mid);');
+  lines.push('>       const rateF = fh.length > 1 ? (fh[fh.length-1].stars - fh[0].stars) / Math.max(1, (new Date(fh[fh.length-1].date) - new Date(fh[0].date)) / 86400000) : 0;');
+  lines.push('>       const rateS = sh.length > 1 ? (sh[sh.length-1].stars - sh[0].stars) / Math.max(1, (new Date(sh[sh.length-1].date) - new Date(sh[0].date)) / 86400000) : 0;');
+  lines.push('>       const ratio = rateF > 0 ? rateS / rateF : rateS > 0 ? 2 : 1;');
+  lines.push('>       const dir = ratio > 1.3 ? "Rising（加速中）" : ratio < 0.7 ? "Cooling（降溫中）" : "Stable（穩定）";');
+  lines.push('>       lines.push(`**趨勢方向** ${dir}（加速比 ${Math.round(ratio * 100) / 100}x）`);');
+  lines.push('>     }');
   lines.push('>     dv.paragraph(lines.join("\\n"));');
   lines.push('>   } else { dv.paragraph("需要 2+ 次快照才能顯示趨勢"); }');
   lines.push('> } else { dv.paragraph("尚無 star_history 資料（下次出現在 trending 時會開始追蹤）"); }');
@@ -1760,6 +1770,40 @@ WHERE next_review AND date(next_review) <= date(today) AND status != "archived"
 SORT date(next_review) ASC
 \`\`\`
 
+## 複習預報（未來 14 天）
+
+> [!abstract] 未來兩週的複習工作量預覽
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.next_review && p.status !== "archived");
+const today = new Date();
+today.setHours(0,0,0,0);
+const forecast = [];
+for (let i = 0; i < 14; i++) {
+  const d = new Date(today);
+  d.setDate(d.getDate() + i);
+  const key = d.toISOString().split("T")[0];
+  const due = pages.where(p => {
+    const nr = new Date(p.next_review.toString());
+    nr.setHours(0,0,0,0);
+    return nr.getTime() === d.getTime();
+  });
+  forecast.push({ date: key, count: due.length, repos: due });
+}
+const overdue = pages.where(p => new Date(p.next_review.toString()) < today).length;
+if (overdue > 0) dv.paragraph(\`**\${overdue}** 個已逾期\`);
+const rows = [];
+for (const f of forecast) {
+  const day = f.date.slice(5);
+  const bar = "\\u2588".repeat(Math.min(f.count, 10)) + "\\u2591".repeat(Math.max(0, 10 - f.count));
+  const names = f.repos.sort(p => p.stars_per_day, "desc").limit(3).map(p => p.file.link).join(", ");
+  rows.push([day, f.count, bar, names]);
+}
+dv.table(["日期", "數量", "負載", "代表專案"], rows);
+const totalDue = forecast.reduce((s, f) => s + f.count, 0);
+dv.paragraph(\`未來兩週共 **\${totalDue}** 個待複習（含逾期 \${overdue}）\`);
+\`\`\`
+
 ## 參與度分析
 
 > [!info] Fork/Star 比率反映社群實際使用程度
@@ -1825,6 +1869,88 @@ TABLE
 FROM "Repos"
 WHERE verdict != "" AND verdict != null
 SORT my_rating DESC
+\`\`\`
+
+## Ring 異動追蹤
+
+> [!abstract] 最近的 Tech Radar 狀態變更
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.ring_history && typeof p.ring_history === "string" && p.ring_history.includes(","));
+if (pages.length > 0) {
+  const changes = [];
+  for (const p of pages) {
+    const entries = p.ring_history.split(",").map(e => e.trim());
+    if (entries.length >= 2) {
+      const prev = entries[entries.length - 2].split("@");
+      const curr = entries[entries.length - 1].split("@");
+      const prevRing = prev[0] || "?";
+      const currRing = curr[0] || "?";
+      const date = curr[1] || "?";
+      const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
+      const direction = (ringOrder[currRing] || 0) > (ringOrder[prevRing] || 0) ? "UP" : (ringOrder[currRing] || 0) < (ringOrder[prevRing] || 0) ? "DOWN" : "SAME";
+      changes.push({ link: p.file.link, from: prevRing, to: currRing, date, direction, stars: p.stars_per_day || 0 });
+    }
+  }
+  changes.sort((a, b) => b.date.localeCompare(a.date));
+  if (changes.length > 0) {
+    dv.table(
+      ["專案", "異動", "方向", "日期", "Stars/天"],
+      changes.slice(0, 10).map(c => [
+        c.link,
+        c.from + " -> " + c.to,
+        c.direction === "UP" ? "Promoted" : c.direction === "DOWN" ? "Demoted" : "Lateral",
+        c.date,
+        c.stars
+      ])
+    );
+  }
+} else {
+  dv.paragraph("尚無 ring 異動紀錄。更新專案的 ring 時請追加 ring_history。");
+}
+\`\`\`
+
+## 趨勢方向
+
+> [!abstract] 基於 star_history 偵測哪些專案正在加速或降溫
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.star_history && typeof p.star_history === "string" && p.star_history.includes(","));
+if (pages.length > 0) {
+  const trends = [];
+  for (const p of pages) {
+    const entries = p.star_history.split(",").map(e => {
+      const [d, s] = e.trim().split(":");
+      return { date: d, stars: parseInt(s) || 0 };
+    }).filter(e => e.date && e.stars > 0);
+    if (entries.length < 2) continue;
+    const mid = Math.floor(entries.length / 2);
+    const firstHalf = entries.slice(0, mid);
+    const secondHalf = entries.slice(mid);
+    const avgFirst = firstHalf.length > 1 ? (firstHalf[firstHalf.length-1].stars - firstHalf[0].stars) / Math.max(1, (new Date(firstHalf[firstHalf.length-1].date) - new Date(firstHalf[0].date)) / 86400000) : 0;
+    const avgSecond = secondHalf.length > 1 ? (secondHalf[secondHalf.length-1].stars - secondHalf[0].stars) / Math.max(1, (new Date(secondHalf[secondHalf.length-1].date) - new Date(secondHalf[0].date)) / 86400000) : 0;
+    const ratio = avgFirst > 0 ? avgSecond / avgFirst : avgSecond > 0 ? 2 : 1;
+    const trend = ratio > 1.3 ? "Rising" : ratio < 0.7 ? "Cooling" : "Stable";
+    trends.push({ link: p.file.link, trend, ratio: Math.round(ratio * 100) / 100, recentRate: Math.round(avgSecond), cat: p.category, spd: p.stars_per_day });
+  }
+  trends.sort((a, b) => b.ratio - a.ratio);
+  const rising = trends.filter(t => t.trend === "Rising");
+  const cooling = trends.filter(t => t.trend === "Cooling");
+  const stable = trends.filter(t => t.trend === "Stable");
+  dv.paragraph(\`Rising **\${rising.length}** · Stable **\${stable.length}** · Cooling **\${cooling.length}**\`);
+  if (rising.length > 0) {
+    dv.header(4, "Rising（加速成長）");
+    dv.table(["專案", "加速比", "近期增速", "Stars/天", "分類"],
+      rising.slice(0, 5).map(t => [t.link, t.ratio + "x", t.recentRate + "/天", t.spd, t.cat]));
+  }
+  if (cooling.length > 0) {
+    dv.header(4, "Cooling（降溫中）");
+    dv.table(["專案", "減速比", "近期增速", "Stars/天", "分類"],
+      cooling.slice(0, 5).map(t => [t.link, t.ratio + "x", t.recentRate + "/天", t.spd, t.cat]));
+  }
+} else {
+  dv.paragraph("需要多次 refresh 才能累積 star_history 趨勢資料。");
+}
 \`\`\`
 
 ## 爆紅專案 Top 15
@@ -3557,6 +3683,38 @@ SORT priority DESC, date(next_review) ASC
 LIMIT 8
 \`\`\`
 
+## 複習預報（未來 14 天）
+
+> [!abstract] 未來兩週的複習工作量預覽
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.next_review && p.status !== "archived");
+const today = new Date();
+today.setHours(0,0,0,0);
+const forecast = [];
+for (let i = 0; i < 14; i++) {
+  const d = new Date(today);
+  d.setDate(d.getDate() + i);
+  const key = d.toISOString().split("T")[0];
+  const due = pages.where(p => {
+    const nr = new Date(p.next_review.toString());
+    nr.setHours(0,0,0,0);
+    return nr.getTime() === d.getTime();
+  });
+  forecast.push({ date: key, count: due.length, repos: due });
+}
+const overdue = pages.where(p => new Date(p.next_review.toString()) < today).length;
+if (overdue > 0) dv.paragraph(\`**\${overdue}** 個已逾期\`);
+const line = forecast.map(f => {
+  const day = f.date.slice(5);
+  const bar = f.count === 0 ? "." : f.count <= 2 ? "o" : f.count <= 5 ? "O" : "#";
+  return \`\${day}:\${bar}(\${f.count})\`;
+}).join(" ");
+dv.paragraph(line + "\\n\\n. = 0 | o = 1-2 | O = 3-5 | # = 6+");
+const busiest = forecast.reduce((a, b) => a.count > b.count ? a : b);
+if (busiest.count > 0) dv.paragraph(\`最忙碌：**\${busiest.date.slice(5)}** 有 \${busiest.count} 個待複習\`);
+\`\`\`
+
 ## 待回顧（優先）
 
 \`\`\`dataview
@@ -3602,6 +3760,35 @@ if (thisWeek.length > 0) {
   }
 } else {
   dv.paragraph("本週尚無新收錄。");
+}
+\`\`\`
+
+## 趨勢速報
+
+> [!abstract]- 加速/降溫中的專案（基於 star_history）
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.star_history && typeof p.star_history === "string" && p.star_history.includes(",") && p.status !== "archived");
+const trends = [];
+for (const p of pages) {
+  const entries = p.star_history.split(",").map(e => { const [d, s] = e.trim().split(":"); return { date: d, stars: parseInt(s) || 0 }; }).filter(e => e.date && e.stars > 0);
+  if (entries.length < 2) continue;
+  const mid = Math.floor(entries.length / 2);
+  const fh = entries.slice(0, mid), sh = entries.slice(mid);
+  const rF = fh.length > 1 ? (fh[fh.length-1].stars - fh[0].stars) / Math.max(1, (new Date(fh[fh.length-1].date) - new Date(fh[0].date)) / 86400000) : 0;
+  const rS = sh.length > 1 ? (sh[sh.length-1].stars - sh[0].stars) / Math.max(1, (new Date(sh[sh.length-1].date) - new Date(sh[0].date)) / 86400000) : 0;
+  const ratio = rF > 0 ? rS / rF : rS > 0 ? 2 : 1;
+  if (ratio > 1.3 || ratio < 0.7) {
+    trends.push({ link: p.file.link, trend: ratio > 1.3 ? "Rising" : "Cooling", ratio: Math.round(ratio * 100) / 100, cat: p.category });
+  }
+}
+if (trends.length > 0) {
+  const rising = trends.filter(t => t.trend === "Rising").sort((a,b) => b.ratio - a.ratio).slice(0, 3);
+  const cooling = trends.filter(t => t.trend === "Cooling").sort((a,b) => a.ratio - b.ratio).slice(0, 3);
+  if (rising.length > 0) dv.paragraph("Rising: " + rising.map(t => \`\${t.link} (\${t.ratio}x)\`).join(" · "));
+  if (cooling.length > 0) dv.paragraph("Cooling: " + cooling.map(t => \`\${t.link} (\${t.ratio}x)\`).join(" · "));
+} else {
+  dv.paragraph("需要更多 star_history 資料才能偵測趨勢。");
 }
 \`\`\`
 
@@ -4842,6 +5029,15 @@ function applyLightPatch(content, patches) {
 >     const last = points[points.length-1].stars;
 >     const growth = first > 0 ? Math.round((last - first) / first * 100) : 0;
 >     lines.push(\`\\n**成長** +\${(last-first).toLocaleString()} stars（\${growth}%）in \${points.length} snapshots\`);
+>     if (points.length >= 3) {
+>       const mid = Math.floor(points.length / 2);
+>       const fh = points.slice(0, mid), sh = points.slice(mid);
+>       const rF = fh.length > 1 ? (fh[fh.length-1].stars - fh[0].stars) / Math.max(1, (new Date(fh[fh.length-1].date) - new Date(fh[0].date)) / 86400000) : 0;
+>       const rS = sh.length > 1 ? (sh[sh.length-1].stars - sh[0].stars) / Math.max(1, (new Date(sh[sh.length-1].date) - new Date(sh[0].date)) / 86400000) : 0;
+>       const ratio = rF > 0 ? rS / rF : rS > 0 ? 2 : 1;
+>       const dir = ratio > 1.3 ? "Rising（加速中）" : ratio < 0.7 ? "Cooling（降溫中）" : "Stable（穩定）";
+>       lines.push(\`**趨勢方向** \${dir}（加速比 \${Math.round(ratio * 100) / 100}x）\`);
+>     }
 >     dv.paragraph(lines.join("\\n"));
 >   } else { dv.paragraph("需要 2+ 次快照才能顯示趨勢"); }
 > } else { dv.paragraph("尚無 star_history 資料（下次出現在 trending 時會開始追蹤）"); }
