@@ -41,107 +41,36 @@ dv.table(
 );
 ```
 
-## AI/ML 對比
+## 各分類對比
 
 ```dataviewjs
-const pages = dv.pages('"Repos"')
-  .where(p => p.category === "AI/ML" && p.status !== "archived")
-  .sort(p => p.stars_per_day, "desc");
-
-if (pages.length > 0) {
-  dv.table(
-    ["專案", "Stars/天", "語言", "子分類", "安裝", "授權", "評分", "用途"],
-    pages.map(p => [
-      p.file.link,
-      p.stars_per_day || 0,
-      p.language || "N/A",
-      p.subcategory || "",
-      p.install_complexity || "N/A",
-      p.license || "N/A",
-      p.my_rating > 0 ? ("★".repeat(p.my_rating) + "☆".repeat(5 - p.my_rating)) : "未評",
-      (p.use_case || "").slice(0, 60)
-    ])
-  );
-} else {
-  dv.paragraph("_此分類無專案_");
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const cats = {};
+for (const p of pages) {
+  const cat = p.category || "其他";
+  if (!cats[cat]) cats[cat] = [];
+  cats[cat].push(p);
 }
-```
 
-## 開發工具 對比
-
-```dataviewjs
-const pages = dv.pages('"Repos"')
-  .where(p => p.category === "開發工具" && p.status !== "archived")
-  .sort(p => p.stars_per_day, "desc");
-
-if (pages.length > 0) {
+// 依數量排序，自動為每個分類生成比較表
+for (const [cat, repos] of Object.entries(cats).sort((a, b) => b[1].length - a[1].length)) {
+  if (repos.length === 0) continue;
+  dv.header(3, `${cat} (${repos.length} 個)`);
   dv.table(
     ["專案", "Stars/天", "語言", "子分類", "安裝", "授權", "評分", "用途"],
-    pages.map(p => [
-      p.file.link,
-      p.stars_per_day || 0,
-      p.language || "N/A",
-      p.subcategory || "",
-      p.install_complexity || "N/A",
-      p.license || "N/A",
-      p.my_rating > 0 ? ("★".repeat(p.my_rating) + "☆".repeat(5 - p.my_rating)) : "未評",
-      (p.use_case || "").slice(0, 60)
-    ])
+    repos
+      .sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0))
+      .map(p => [
+        p.file.link,
+        p.stars_per_day || 0,
+        p.language || "N/A",
+        p.subcategory || "",
+        p.install_complexity || "N/A",
+        p.license || "N/A",
+        p.my_rating > 0 ? ("\u2605".repeat(p.my_rating) + "\u2606".repeat(5 - p.my_rating)) : "\u672a\u8a55",
+        (p.use_case || "").slice(0, 60)
+      ])
   );
-} else {
-  dv.paragraph("_此分類無專案_");
-}
-```
-
-## CLI 工具 對比
-
-```dataviewjs
-const pages = dv.pages('"Repos"')
-  .where(p => p.category === "CLI 工具" && p.status !== "archived")
-  .sort(p => p.stars_per_day, "desc");
-
-if (pages.length > 0) {
-  dv.table(
-    ["專案", "Stars/天", "語言", "子分類", "安裝", "授權", "評分", "用途"],
-    pages.map(p => [
-      p.file.link,
-      p.stars_per_day || 0,
-      p.language || "N/A",
-      p.subcategory || "",
-      p.install_complexity || "N/A",
-      p.license || "N/A",
-      p.my_rating > 0 ? ("★".repeat(p.my_rating) + "☆".repeat(5 - p.my_rating)) : "未評",
-      (p.use_case || "").slice(0, 60)
-    ])
-  );
-} else {
-  dv.paragraph("_此分類無專案_");
-}
-```
-
-## 安全 對比
-
-```dataviewjs
-const pages = dv.pages('"Repos"')
-  .where(p => p.category === "安全" && p.status !== "archived")
-  .sort(p => p.stars_per_day, "desc");
-
-if (pages.length > 0) {
-  dv.table(
-    ["專案", "Stars/天", "語言", "子分類", "安裝", "授權", "評分", "用途"],
-    pages.map(p => [
-      p.file.link,
-      p.stars_per_day || 0,
-      p.language || "N/A",
-      p.subcategory || "",
-      p.install_complexity || "N/A",
-      p.license || "N/A",
-      p.my_rating > 0 ? ("★".repeat(p.my_rating) + "☆".repeat(5 - p.my_rating)) : "未評",
-      (p.use_case || "").slice(0, 60)
-    ])
-  );
-} else {
-  dv.paragraph("_此分類無專案_");
 }
 ```
 
