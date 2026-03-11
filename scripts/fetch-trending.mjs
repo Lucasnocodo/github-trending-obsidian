@@ -3314,6 +3314,8 @@ cssclasses:
 | [[MOC - 生產力]] | 生產力 |
 | [[MOC - 遊戲]] | 遊戲 |
 | [[MOC - 其他]] | 其他分類 |
+| [[Comparison]] | 同分類橫向對比 + 決策矩陣 + 四象限分析 |
+| [[Tech-Radar.canvas\\|Tech Radar]] | 四環評估看板（Adopt/Trial/Assess/Hold）|
 
 ## 統計快照
 
