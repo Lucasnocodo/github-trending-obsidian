@@ -334,7 +334,7 @@ python scripts/search_arxiv.py --config "/your/path/research_interests.yaml"
 
 相關概念：[[自動化]] · [[資料視覺化]] · [[機器學習]]
 
-相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[arxiv-sanity-preserver--arxiv-sanity-preserver|arxiv-sanity-preserver/arxiv-sanity-preserver]] · [[paperpile--paperpile|paperpile/paperpile]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[duoan--TorchCode|duoan/TorchCode]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[tanweai--pua|tanweai/pua]] · [[trevin-creator--autoresearch-mlx|trevin-creator/autoresearch-mlx]]
+相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[arxiv-sanity-preserver--arxiv-sanity-preserver|arxiv-sanity-preserver/arxiv-sanity-preserver]] · [[paperpile--paperpile|paperpile/paperpile]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]]
 
 [GitHub](https://github.com/juliye2025/evil-read-arxiv)
 

@@ -290,7 +290,7 @@ twitter feed --max 50
 
 相關概念：[[CLI/TUI]] · [[自動化]] · [[API 設計]]
 
-相關專案：[[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[knowsuchagency--mcp2cli|knowsuchagency/mcp2cli]] · [[steipete--discrawl|steipete/discrawl]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[jshachm--pi-rs|jshachm/pi-rs]]
+相關專案：[[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[knowsuchagency--mcp2cli|knowsuchagency/mcp2cli]] · [[steipete--discrawl|steipete/discrawl]]
 
 [GitHub](https://github.com/jackwener/twitter-cli)
 

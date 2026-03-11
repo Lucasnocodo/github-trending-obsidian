@@ -115,3 +115,36 @@ code {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* Triage board - section spacing */
+.triage h2 {
+  margin-top: 2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* Priority indicators in Dataview tables */
+.dataview .table-view-table td:contains("high") {
+  color: rgb(244, 67, 54);
+  font-weight: 600;
+}
+
+/* Maintenance status color hints - applied via DataviewJS inline styles */
+.dataview .table-view-table td {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Compact callout for quick evaluation */
+.callout[data-callout="question"] .callout-content {
+  font-size: 0.9em;
+}
+
+/* Collapsible sections in repo notes */
+.callout[data-callout="info"].is-collapsed .callout-title {
+  border-bottom: none;
+}
+
+/* Weekly/Monthly report headers */
+.weekly h1, .monthly h1 {
+  color: var(--interactive-accent);
+}

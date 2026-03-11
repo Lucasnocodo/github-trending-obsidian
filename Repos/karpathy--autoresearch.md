@@ -226,7 +226,7 @@ uv run train.py
 
 相關概念：[[自動化]] · [[機器學習]] · [[深度學習]]
 
-相關專案：[[trevin-creator--autoresearch-mlx|trevin-creator/autoresearch-mlx]] · [[karpathy--agenthub|karpathy/agenthub]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[duoan--TorchCode|duoan/TorchCode]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[helenigtxu--TradingView-Claw|helenigtxu/TradingView-Claw]] · [[inspatio--worldfm|inspatio/worldfm]] · [[tanishqkumar--ssd|tanishqkumar/ssd]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[tanweai--pua|tanweai/pua]]
+相關專案：[[trevin-creator--autoresearch-mlx|trevin-creator/autoresearch-mlx]] · [[karpathy--agenthub|karpathy/agenthub]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[duoan--TorchCode|duoan/TorchCode]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]]
 
 [GitHub](https://github.com/karpathy/autoresearch)
 

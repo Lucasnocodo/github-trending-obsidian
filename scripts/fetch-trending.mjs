@@ -428,6 +428,7 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     `priority: ${rate >= 200 ? 'high' : rate >= 30 ? 'medium' : 'low'}`,
     `ring: assess`,
     `discovered_via: "GitHub Trending"`,
+    `appearances: 1`,
     `verdict: ""`,
     'tags:',
     '  - github',
@@ -978,8 +979,9 @@ function generateDailyDigest(repos, llmData, today) {
       lines.push('');
     }
 
+    const installBadge = info?.install_complexity ? ` · \`${info.install_complexity}\`` : '';
     lines.push(
-      `**${fmt(r.stargazers_count)}** stars · **${fmt(starsPerDay(r.stargazers_count, r.created_at))}** stars/天 · ${r.language || 'N/A'}`
+      `**${fmt(r.stargazers_count)}** stars · **${fmt(starsPerDay(r.stargazers_count, r.created_at))}** stars/天 · ${r.language || 'N/A'}${installBadge}`
     );
     lines.push('');
 
@@ -1079,6 +1081,32 @@ GROUP BY status
 SORT length(rows) DESC
 \`\`\`
 
+## Tech Radar 總覽
+
+\`\`\`dataview
+TABLE WITHOUT ID
+  ring AS "Ring",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE ring != null AND ring != ""
+GROUP BY ring
+SORT choice(ring, "adopt", 1, choice(ring, "trial", 2, choice(ring, "assess", 3, 4))) ASC
+\`\`\`
+
+## 有結論的專案
+
+\`\`\`dataview
+TABLE
+  verdict AS "結論",
+  ring AS "Ring",
+  ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分",
+  category AS "分類"
+FROM "Repos"
+WHERE verdict != "" AND verdict != null
+SORT my_rating DESC
+\`\`\`
+
 ## 爆紅專案 Top 15
 
 \`\`\`dataview
@@ -1165,6 +1193,22 @@ GROUP BY category
 SORT length(rows) DESC
 \`\`\`
 
+## 依子分類瀏覽
+
+> [!tip]- 展開查看細分類
+
+\`\`\`dataview
+TABLE WITHOUT ID
+  category AS "主分類",
+  subcategory AS "子分類",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE subcategory != ""
+GROUP BY category + " / " + subcategory
+SORT length(rows) DESC
+\`\`\`
+
 ## 依語言瀏覽
 
 \`\`\`dataview
@@ -1217,6 +1261,22 @@ GROUP BY week
 SORT week DESC
 \`\`\`
 
+## 多次上榜
+
+> [!tip] 這些專案反覆出現在 GitHub Trending，值得留意
+
+\`\`\`dataview
+TABLE
+  appearances AS "上榜次數",
+  stars AS "Stars",
+  stars_per_day AS "Stars/天",
+  category AS "分類",
+  priority AS "優先級"
+FROM "Repos"
+WHERE appearances > 1
+SORT appearances DESC
+\`\`\`
+
 ## 持續熱門
 
 > [!tip] 收錄超過 7 天仍在活躍開發的專案
@@ -1227,7 +1287,7 @@ const pages = dv.pages('"Repos"')
     if (!p.first_seen || !p.pushed_at) return false;
     const daysSinceSeen = (new Date() - new Date(p.first_seen?.toString())) / 86400000;
     const daysSincePush = (new Date() - new Date(p.pushed_at?.toString())) / 86400000;
-    return daysSinceSeen > 7 && daysSincePush < 7 && (p.stars_per_day || 0) > 100;
+    return daysSinceSeen > 7 && daysSincePush < 7 && (p.stars_per_day || 0) > 50;
   })
   .sort(p => p.stars, "desc");
 
@@ -1288,6 +1348,18 @@ dv.table(
 );
 \`\`\`
 
+## 授權分佈
+
+\`\`\`dataview
+TABLE WITHOUT ID
+  license AS "授權",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+GROUP BY license
+SORT length(rows) DESC
+\`\`\`
+
 ## Easy Install 專案
 
 > [!tip] 立即可試
@@ -1319,15 +1391,51 @@ const rows = [];
 for (const p of pages) {
   const desc = p.aliases?.[2] || p.description || "";
   const install = p.install_complexity === "easy" ? "Easy" : p.install_complexity === "medium" ? "Mid" : "Hard";
+  // 從 pushed_at 計算維護狀態
+  let maint = "-";
+  if (p.pushed_at) {
+    const days = Math.floor((Date.now() - new Date(p.pushed_at.toString()).getTime()) / 86400000);
+    maint = days <= 7 ? "Active" : days <= 30 ? "OK" : days <= 90 ? "Slow" : "Stale";
+  }
   rows.push([
     p.file.link,
     (p.stars_per_day || 0) + "/d",
     install,
+    maint,
     p.category || "",
-    desc.slice(0, 50) + (desc.length > 50 ? "..." : "")
+    desc.slice(0, 40) + (desc.length > 40 ? "..." : "")
   ]);
 }
-dv.table(["專案", "速度", "安裝", "分類", "一句話"], rows);
+dv.table(["專案", "速度", "安裝", "維護", "分類", "一句話"], rows);
+\`\`\`
+
+## 熱門概念（被最多專案引用）
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"');
+const conceptCounts = {};
+for (const p of pages) {
+  const extMatch = p.file.outlinks?.filter(l => {
+    const target = dv.page(l.path);
+    return target?.tags?.includes("concept");
+  }) || [];
+  for (const link of extMatch) {
+    const name = link.path.split("/").pop();
+    conceptCounts[name] = (conceptCounts[name] || 0) + 1;
+  }
+}
+const sorted = Object.entries(conceptCounts)
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 15);
+if (sorted.length > 0) {
+  dv.table(
+    ["概念", "引用次數", "視覺化"],
+    sorted.map(([name, count]) => {
+      const bar = "█".repeat(count) + "░".repeat(Math.max(0, 20 - count));
+      return [dv.fileLink("Concepts/" + name, false, name), count, bar];
+    })
+  );
+}
 \`\`\`
 
 ## 孤立筆記（缺少連結）
@@ -1420,7 +1528,7 @@ TABLE
   language AS "語言",
   category AS "分類",
   install_complexity AS "安裝",
-  description AS "描述"
+  use_case AS "用途"
 FROM "Repos"
 WHERE week = "${weekStr}"
 SORT stars DESC
@@ -2042,6 +2150,8 @@ const CONCEPT_DESCRIPTIONS = {
   '生物信息學': '用計算方法分析生物資料（基因序列、蛋白質結構等）的交叉學科。Python 和 R 是主流語言，BioPython 是常見工具。隨著定序成本下降，這個領域的資料量正在爆發。',
   '藥物發現': 'AI 輔助藥物發現正在加速新藥開發流程。從分子生成、靶點預測到臨床試驗設計，AI 可以將傳統需要數年的篩選過程縮短到數月。AlphaFold 在蛋白質結構預測的突破就是典型例子。',
   '記憶管理': 'AI 系統中讓模型記住和利用歷史對話或資料的機制。從簡單的 context window 到 RAG、向量資料庫，再到 MemGPT 式的分層記憶。是建構有狀態 AI 應用的核心挑戰。',
+  '自動化': '用程式或工具取代人工重複操作的做法。從 shell script 到 CI/CD、從 cron job 到 AI agent，自動化的層次越來越高。關鍵是辨識哪些任務值得自動化（重複頻率高、出錯代價大）、哪些不值得（一次性、需要人類判斷）。',
+  'LLM 推論': '讓大型語言模型接收輸入並產生回應的過程。推論比訓練便宜但仍有成本考量。優化方式包括量化（INT8/INT4）、KV cache、推測解碼、批次處理等。vLLM、TGI、llama.cpp 是常見的推論引擎。',
 };
 
 function generateConceptNote(concept) {
@@ -2220,9 +2330,26 @@ async function autoCrossLink() {
     const existingLinks = existingMatch
       ? (existingMatch[1].match(/\[\[[^\]]+\]\]/g) || [])
       : [];
+
+    // 如果現有連結超過上限，先修剪（修復早期無上限累積的問題）
+    const MAX_RELATED = 8;
+    if (existingLinks.length > MAX_RELATED && existingMatch) {
+      const trimmed = existingLinks.slice(0, MAX_RELATED);
+      const trimmedLine = `相關專案：${trimmed.join(' · ')}`;
+      content = content.replace(/^相關專案：.+$/m, trimmedLine);
+      await writeFile(filePath, content, 'utf-8');
+      linkCount++;
+      continue; // 修剪後跳過本輪新增
+    }
+
+    // 已達上限，跳過
+    if (existingLinks.length >= MAX_RELATED) continue;
+
     const existingKeys = new Set(
       existingLinks.map(l => l.replace(/\[\[/, '').replace(/\|.*/, '').replace(/\]\]/, ''))
     );
+
+    const slotsLeft = MAX_RELATED - existingLinks.length;
 
     // 找出同類別中存在於 vault 但尚未連結的 repo
     const newLinks = [];
@@ -2230,12 +2357,12 @@ async function autoCrossLink() {
       if (!existingKeys.has(peer.name)) {
         const display = peer.name.replace('--', '/');
         newLinks.push(`[[${peer.name}|${display}]]`);
-        if (newLinks.length >= 3) break;
+        if (newLinks.length >= Math.min(3, slotsLeft)) break;
       }
     }
 
     // 跨分類連結：共享 2+ 概念的 repo（最多再加 2 個）
-    if (newLinks.length < 5 && repoConcepts[name]?.size > 0) {
+    if (newLinks.length < slotsLeft && repoConcepts[name]?.size > 0) {
       const myConcepts = repoConcepts[name];
       for (const [otherName, otherConcepts] of Object.entries(repoConcepts)) {
         if (otherName === name || existingKeys.has(otherName)) continue;
@@ -2244,14 +2371,15 @@ async function autoCrossLink() {
         if (shared.length >= 2) {
           const display = otherName.replace('--', '/');
           newLinks.push(`[[${otherName}|${display}]]`);
-          if (newLinks.length >= 5) break;
+          if (newLinks.length >= slotsLeft) break;
         }
       }
     }
 
     if (newLinks.length === 0) continue;
 
-    const allLinks = [...existingLinks, ...newLinks];
+    // 限制最多 8 個連結，保留既有的優先（手動策展可能更精準）
+    const allLinks = [...existingLinks, ...newLinks].slice(0, 8);
     const mergedLine = `相關專案：${allLinks.join(' · ')}`;
 
     if (existingMatch) {
@@ -2383,13 +2511,20 @@ async function main() {
             .replace(/^forks: \d+$/m, `forks: ${repo.forks_count}`)
             .replace(/^open_issues: \d+$/m, `open_issues: ${repo.open_issues_count || 0}`)
             .replace(/^pushed_at: .+$/m, `pushed_at: ${repo.pushed_at?.split('T')[0] || 'N/A'}`);
-          // 多次上榜自動提升 priority（出現 3+ 次 → high）
-          const appearances = (final.match(/^- \[\[/gm) || []).length;
+          // 多次上榜自動提升 priority（出現 3+ 次 → high）+ 更新 appearances 計數
+          const appearanceCount = (final.match(/^- \[\[/gm) || []).length;
           const curPriority = final.match(/^priority: (.+)$/m)?.[1];
           let promoted = final;
-          if (appearances >= 3 && curPriority !== 'high') {
-            promoted = final.replace(/^priority: .+$/m, 'priority: high');
-            console.log(`  Priority promoted to high (appeared ${appearances} times)`);
+          // 更新 frontmatter appearances 計數
+          if (promoted.includes('appearances:')) {
+            promoted = promoted.replace(/^appearances: \d+$/m, `appearances: ${appearanceCount}`);
+          } else {
+            // 舊筆記沒有 appearances 欄位，加入
+            promoted = promoted.replace(/^discovered_via: .+$/m, `$&\nappearances: ${appearanceCount}`);
+          }
+          if (appearanceCount >= 3 && curPriority !== 'high') {
+            promoted = promoted.replace(/^priority: .+$/m, 'priority: high');
+            console.log(`  Priority promoted to high (appeared ${appearanceCount} times)`);
           }
           await writeFile(filePath, promoted, 'utf-8');
           console.log(`  Updated: ${fileName} (再次上榜)`);
@@ -2552,7 +2687,8 @@ function needsRefresh(content) {
          !content.includes('ring:') ||        // v8: Tech Radar ring
          !content.includes('verdict:') ||     // v8: 一句話結論
          !content.includes('新手體驗') ||      // v9: 豐富內容（deep_dive+onboarding+alternatives）
-         !content.includes('**維護**');         // v10: 維護健康指標
+         !content.includes('**維護**') ||       // v10: 維護健康指標
+         !content.includes('appearances:');     // v11: 出現次數追蹤
 }
 
 function hasLLMContent(content) {
@@ -2775,7 +2911,7 @@ async function refreshRepos(token, failedOnly = false) {
             allLinks.push(link);
           }
         }
-        const mergedLine = `相關專案：${allLinks.join(' · ')}`;
+        const mergedLine = `相關專案：${allLinks.slice(0, 8).join(' · ')}`;
         if (newRelatedMatch) {
           mergedNote = mergedNote.replace(/^相關專案：.+$/m, mergedLine);
         } else {
@@ -2797,6 +2933,11 @@ async function refreshRepos(token, failedOnly = false) {
         .replace(/^ring: assess$/m, `ring: ${savedRing}`)
         .replace(/^verdict: ""$/m, `verdict: "${savedVerdict}"`)
         .replace(/^discovered_via: "GitHub Trending"$/m, `discovered_via: "${savedDiscovered}"`);
+      // 保留 appearances 計數
+      const savedAppearances = item.content.match(/^appearances: (\d+)$/m)?.[1];
+      if (savedAppearances) {
+        merged = merged.replace(/^appearances: \d+$/m, `appearances: ${savedAppearances}`);
+      }
       if (savedWeek) {
         merged = merged.replace(/^week: ".+"$/m, `week: "${savedWeek}"`);
       }
