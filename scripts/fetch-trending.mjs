@@ -1971,9 +1971,10 @@ async function autoCrossLink() {
   const files = await readdir(REPOS_DIR);
   const mdFiles = files.filter(f => f.endsWith('.md'));
 
-  // 建立 category → repo 名稱映射
+  // 建立 category → repo 名稱映射 + 概念映射
   const catMap = {};   // { category: [{ file, name }] }
   const repoSet = new Set(); // vault 內所有 repo 檔名（不含 .md）
+  const repoConcepts = {}; // { repoName: Set<concept> }
 
   for (const file of mdFiles) {
     const content = await readFile(join(REPOS_DIR, file), 'utf-8');
@@ -1984,6 +1985,13 @@ async function autoCrossLink() {
     if (cat) {
       if (!catMap[cat]) catMap[cat] = [];
       catMap[cat].push({ file, name });
+    }
+    // 提取概念
+    const conceptMatch = content.match(/^相關概念：(.+)$/m);
+    if (conceptMatch) {
+      const concepts = (conceptMatch[1].match(/\[\[([^\]]+)\]\]/g) || [])
+        .map(c => c.replace(/\[\[|\]\]/g, ''));
+      repoConcepts[name] = new Set(concepts);
     }
   }
 
@@ -2013,10 +2021,24 @@ async function autoCrossLink() {
     const newLinks = [];
     for (const peer of peers) {
       if (!existingKeys.has(peer.name)) {
-        // 只為同類別 vault-internal repo 建立連結（最多 3 個新連結）
         const display = peer.name.replace('--', '/');
         newLinks.push(`[[${peer.name}|${display}]]`);
         if (newLinks.length >= 3) break;
+      }
+    }
+
+    // 跨分類連結：共享 2+ 概念的 repo（最多再加 2 個）
+    if (newLinks.length < 5 && repoConcepts[name]?.size > 0) {
+      const myConcepts = repoConcepts[name];
+      for (const [otherName, otherConcepts] of Object.entries(repoConcepts)) {
+        if (otherName === name || existingKeys.has(otherName)) continue;
+        if (newLinks.some(l => l.includes(otherName))) continue;
+        const shared = [...myConcepts].filter(c => otherConcepts.has(c));
+        if (shared.length >= 2) {
+          const display = otherName.replace('--', '/');
+          newLinks.push(`[[${otherName}|${display}]]`);
+          if (newLinks.length >= 5) break;
+        }
       }
     }
 
