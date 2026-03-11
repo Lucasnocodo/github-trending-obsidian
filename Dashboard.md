@@ -451,6 +451,36 @@ if (topLangs.length > 1 && topCats.length > 1) {
 }
 ```
 
+## 概念分佈
+
+> [!abstract] 被最多專案引用的技術概念
+
+```dataviewjs
+const repos = dv.pages('"Repos"').where(p => p.status !== "archived");
+const conceptCount = {};
+for (const p of repos) {
+  for (const link of (p.file.outlinks || [])) {
+    if (link.path?.startsWith("Concepts/")) {
+      const name = link.path.replace("Concepts/", "").replace(".md", "");
+      conceptCount[name] = (conceptCount[name] || 0) + 1;
+    }
+  }
+}
+const sorted = Object.entries(conceptCount).sort((a, b) => b[1] - a[1]).slice(0, 12);
+if (sorted.length > 0) {
+  dv.table(
+    ["概念", "引用數", "佔比"],
+    sorted.map(([name, count]) => {
+      const pct = Math.round((count / repos.length) * 100);
+      const bar = "\u2588".repeat(Math.round(pct / 5)) + "\u2591".repeat(20 - Math.round(pct / 5));
+      return [dv.fileLink("Concepts/" + name, false, name), count, bar + " " + pct + "%"];
+    })
+  );
+} else {
+  dv.paragraph("_專案尚未建立概念連結_");
+}
+```
+
 ## 圖譜健康分析
 
 ### 孤立筆記（缺少連結）
