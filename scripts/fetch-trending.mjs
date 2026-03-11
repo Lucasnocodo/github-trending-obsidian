@@ -265,7 +265,7 @@ function buildRepoPrompt(repos) {
       if (r._recentCommits) {
         parts.push(`最近 commit 活動: ${r._recentCommits.active_days} 天活躍 (${r._recentCommits.period}), 最新: ${r._recentCommits.latest_message}`);
       }
-      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 8000)}`);
+      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 10000)}`);
       return parts.join('\n');
     })
     .join('\n\n---\n\n');
@@ -661,7 +661,20 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('## 專案簡介');
   lines.push('');
   if (llmInfo?.summary) {
-    lines.push(llmInfo.summary);
+    // 嘗試將長 summary 分段（按句號計數，大約每 4-5 句分一段）
+    const sentences = llmInfo.summary.match(/[^。！？]+[。！？]+/g) || [llmInfo.summary];
+    if (sentences.length >= 12) {
+      // 足夠長，按 LLM prompt 結構分段
+      const chunks = [
+        sentences.slice(0, 4).join(''),
+        sentences.slice(4, 8).join(''),
+        sentences.slice(8, 12).join(''),
+        sentences.slice(12).join(''),
+      ].filter(c => c.trim());
+      lines.push(chunks.join('\n\n'));
+    } else {
+      lines.push(llmInfo.summary);
+    }
   } else {
     lines.push(repo.description || 'No description available.');
   }
