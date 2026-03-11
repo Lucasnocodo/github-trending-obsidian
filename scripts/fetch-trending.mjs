@@ -718,6 +718,19 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   );
   lines.push('');
 
+  // ── 結論速讀（使用者填寫後才顯示）──
+  lines.push('```dataviewjs');
+  lines.push(`const me = dv.page("Repos/${safeFn}");`);
+  lines.push('if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {');
+  lines.push('  const parts = [];');
+  lines.push('  if (me.my_rating > 0) parts.push("\\u2605".repeat(me.my_rating) + "\\u2606".repeat(5 - me.my_rating));');
+  lines.push('  if (me.ring && me.ring !== "assess") parts.push("Ring: **" + me.ring + "**");');
+  lines.push('  if (me.verdict) parts.push(me.verdict);');
+  lines.push('  dv.paragraph("> [!success] 你的結論\\n> " + parts.join(" / "));');
+  lines.push('}');
+  lines.push('```');
+  lines.push('');
+
   // ── README 資訊不足警告 ──
   const readmeLen = repo._readme?.length || 0;
   if (readmeLen < 200 && !llmFailed) {
@@ -5363,6 +5376,7 @@ function needsLightPatch(content) {
   if (!content.includes('相對成長速度')) patches.push('growth_velocity');
   if (!content.includes('評估進度')) patches.push('eval_progress');
   if (!content.includes('score_confidence:')) patches.push('score_fields');
+  if (!content.includes('你的結論')) patches.push('verdict_banner');
   return patches;
 }
 
@@ -5657,6 +5671,28 @@ function applyLightPatch(content, patches) {
       /^(my_rating: \d+)$/m,
       '$1\nscore_confidence: 0\nscore_interest: 0\nscore_risk: 0'
     );
+  }
+
+  // 11. 結論速讀 banner（在標題行後面）
+  if (patches.includes('verdict_banner') && !updated.includes('你的結論')) {
+    // 找到 stats bar 行（**xxx** stars · **xxx** stars/天）後面插入
+    const statsBarMatch = updated.match(/\*\*[\d,]+\*\* stars · \*\*[\d,]+\*\* stars\/天[^\n]*\n\n/);
+    if (statsBarMatch) {
+      const insertAt = updated.indexOf(statsBarMatch[0]) + statsBarMatch[0].length;
+      const verdictBanner = `\`\`\`dataviewjs
+const me = dv.page("Repos/${safeFn}");
+if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
+  const parts = [];
+  if (me.my_rating > 0) parts.push("\\u2605".repeat(me.my_rating) + "\\u2606".repeat(5 - me.my_rating));
+  if (me.ring && me.ring !== "assess") parts.push("Ring: **" + me.ring + "**");
+  if (me.verdict) parts.push(me.verdict);
+  dv.paragraph("> [!success] 你的結論\\n> " + parts.join(" / "));
+}
+\`\`\`
+
+`;
+      updated = updated.slice(0, insertAt) + verdictBanner + updated.slice(insertAt);
+    }
   }
 
   return updated;
