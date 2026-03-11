@@ -13,7 +13,7 @@ cssclasses:
 
 > [!abstract] 用相同技術棧的專案 — 如果你喜歡一個，可能也會喜歡另一個
 
-\`\`\`dataviewjs
+```dataviewjs
 const pages = dv.pages('"Repos"').where(p => p.status !== "archived" && p.language);
 const langGroups = {};
 for (const p of pages) {
@@ -33,13 +33,13 @@ for (const [lang, repos] of multiLang.slice(0, 5)) {
       .map(p => [p.file.link, p.stars_per_day || 0, p.category || "", p.status || "?"])
   );
 }
-\`\`\`
+```
 
 ## 多產作者
 
 > [!abstract] 有多個收錄專案的開發者/組織 — 值得追蹤他們的動態
 
-\`\`\`dataviewjs
+```dataviewjs
 const pages = dv.pages('"Repos"');
 const owners = {};
 for (const p of pages) {
@@ -60,13 +60,13 @@ if (multi.length > 0) {
 } else {
   dv.paragraph("目前沒有重複作者。隨著收錄量增加，這裡會出現值得追蹤的開發者。");
 }
-\`\`\`
+```
 
 ## 隱藏寶石
 
 > [!tip] Stars/天不算爆炸但品質可能很高的專案 — 安裝簡單且有明確授權
 
-\`\`\`dataviewjs
+```dataviewjs
 const pages = dv.pages('"Repos"').where(p => {
   if (p.status === "archived") return false;
   const spd = p.stars_per_day || 0;
@@ -82,13 +82,13 @@ if (pages.length > 0) {
 } else {
   dv.paragraph("目前沒有符合條件的隱藏寶石。");
 }
-\`\`\`
+```
 
 ## 風險警示
 
 > [!warning] 潛在風險較高的專案 — 沒授權、單人維護、或推送停滯
 
-\`\`\`dataviewjs
+```dataviewjs
 const pages = dv.pages('"Repos"').where(p => {
   if (p.status === "archived") return false;
   const lic = (p.license || "").toString();
@@ -114,13 +114,13 @@ if (pages.length > 0) {
 } else {
   dv.paragraph("所有收錄專案都通過基本風險檢查。");
 }
-\`\`\`
+```
 
 ## 你的盲點
 
 > [!question] 你還沒有探索的分類和語言 — 可能有你不知道的好工具
 
-\`\`\`dataviewjs
+```dataviewjs
 const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 const reviewed = all.where(p => p.status && p.status !== "to-review");
 
@@ -148,13 +148,13 @@ if (untouchedLangs.length > 0) {
 if (untouched.length === 0 && untouchedLangs.length === 0) {
   dv.paragraph("你已經探索了所有分類和語言！");
 }
-\`\`\`
+```
 
 ## 分類對決
 
 > [!abstract] 同分類內誰更值得投入？直接比較 Stars 和成長速度
 
-\`\`\`dataviewjs
+```dataviewjs
 const cats = {};
 const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
 for (const p of pages) {
@@ -179,13 +179,13 @@ for (const [cat, repos] of hotCats.slice(0, 3)) {
     ])
   );
 }
-\`\`\`
+```
 
 ## 快速採用路徑
 
 > [!tip] 從評估到採用最快的路線 — easy install + MIT + 高 stars + 低依賴風險
 
-\`\`\`dataviewjs
+```dataviewjs
 const pages = dv.pages('"Repos"').where(p => {
   if (p.status === "archived" || p.status === "integrated") return false;
   const lic = (p.license || "").toString();
@@ -196,18 +196,18 @@ const pages = dv.pages('"Repos"').where(p => {
 if (pages.length > 0) {
   for (const p of pages) {
     const use = (p.use_case || p.description || "").toString().slice(0, 80);
-    dv.paragraph("**" + p.file.link + "** — " + (p.stars_per_day || 0) + " stars/day / " + p.license + "\\n> " + use);
+    dv.paragraph("**" + p.file.link + "** — " + (p.stars_per_day || 0) + " stars/day / " + p.license + "\n> " + use);
   }
 } else {
   dv.paragraph("目前沒有完美符合快速採用條件的專案。");
 }
-\`\`\`
+```
 
 ## 概念地圖
 
 > [!abstract] 哪些技術概念連結了最多專案？點擊概念可以看到所有相關工具
 
-\`\`\`dataviewjs
+```dataviewjs
 const repos = dv.pages('"Repos"').where(p => p.status !== "archived");
 const conceptLinks = {};
 for (const p of repos) {
@@ -235,13 +235,13 @@ if (crossConcepts.length > 0) {
 } else {
   dv.paragraph("目前概念跨分類連結不足，隨著收錄量增加會更豐富。");
 }
-\`\`\`
+```
 
 ## 收錄時間軸
 
 > [!abstract] 你的 vault 成長歷程
 
-\`\`\`dataviewjs
+```dataviewjs
 const pages = dv.pages('"Repos"');
 const byWeek = {};
 for (const p of pages) {
@@ -272,13 +272,13 @@ if (weeks.length > 0) {
   const totalStars = pages.array().reduce((s, p) => s + (p.stars || 0), 0);
   dv.paragraph("**累計** " + totalRepos + " 個專案 / " + totalStars.toLocaleString() + " stars");
 }
-\`\`\`
+```
 
 ## 文件品質 vs 人氣
 
 > [!abstract] README 品質與 Stars 的關係 — 有些高 Stars 專案文件品質意外地差
 
-\`\`\`dataviewjs
+```dataviewjs
 const pages = dv.pages('"Repos"')
   .where(p => p.status !== "archived" && p.readme_length > 0 && p.stars > 0);
 if (pages.length > 0) {
@@ -305,13 +305,13 @@ if (pages.length > 0) {
 } else {
   dv.paragraph("_需要 readme_length 資料，新增的專案會自動記錄_");
 }
-\`\`\`
+```
 
 ## 社群回應力
 
 > [!abstract] Issue 解決率排行 — 維護者回應社群問題的速度反映專案長期可靠性
 
-\`\`\`dataviewjs
+```dataviewjs
 const pages = dv.pages('"Repos"')
   .where(p => p.status !== "archived" && p.issue_close_rate >= 0);
 if (pages.length > 0) {
@@ -330,13 +330,63 @@ if (pages.length > 0) {
 } else {
   dv.paragraph("_需要 issue_close_rate 資料，新增的專案會自動追蹤_");
 }
-\`\`\`
+```
+
+## Release 健康度分佈
+
+> [!abstract] 專案的發版節奏 — 積極發版的專案通常維護品質較好
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived" && p.release_cadence);
+if (pages.length > 0) {
+  const cadences = { weekly: [], monthly: [], quarterly: [], irregular: [], never: [], unknown: [] };
+  for (const p of pages) {
+    const c = (p.release_cadence || "unknown").toString();
+    if (cadences[c]) cadences[c].push(p);
+    else cadences.unknown.push(p);
+  }
+  const total = pages.length;
+  const rows = [
+    ["Weekly", cadences.weekly.length, cadences.weekly.slice(0, 2).map(p => p.file.link).join(", ")],
+    ["Monthly", cadences.monthly.length, cadences.monthly.slice(0, 2).map(p => p.file.link).join(", ")],
+    ["Quarterly", cadences.quarterly.length, cadences.quarterly.slice(0, 2).map(p => p.file.link).join(", ")],
+    ["Irregular", cadences.irregular.length, cadences.irregular.slice(0, 2).map(p => p.file.link).join(", ")],
+    ["Never", cadences.never.length, cadences.never.slice(0, 2).map(p => p.file.link).join(", ")],
+  ].filter(r => r[1] > 0);
+  dv.table(["發版節奏", "數量", "代表專案"], rows);
+  const activeRelease = cadences.weekly.length + cadences.monthly.length;
+  dv.paragraph("**積極發版** " + activeRelease + "/" + total + " (" + Math.round(activeRelease/total*100) + "%) · **從未發版** " + cadences.never.length);
+} else {
+  dv.paragraph("_需要 release_cadence 資料，下次 Actions 執行後會自動記錄_");
+}
+```
+
+## Bus Factor 分佈
+
+> [!abstract] 專案的核心開發者集中度 — 了解供應鏈風險
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived" && (p.bus_factor || 0) > 0);
+if (pages.length > 0) {
+  const solo = pages.where(p => p.bus_factor === 1);
+  const duo = pages.where(p => p.bus_factor === 2);
+  const team = pages.where(p => p.bus_factor >= 3);
+  dv.table(["Bus Factor", "數量", "風險", "代表專案"], [
+    ["1 (Solo)", solo.length, "HIGH — 單人專案", solo.sort(p => p.stars, "desc").limit(3).map(p => p.file.link).join(", ")],
+    ["2 (Duo)", duo.length, "Medium", duo.sort(p => p.stars, "desc").limit(3).map(p => p.file.link).join(", ")],
+    ["3+ (Team)", team.length, "Low", team.sort(p => p.stars, "desc").limit(3).map(p => p.file.link).join(", ")],
+  ].filter(r => r[1] > 0));
+  dv.paragraph("**Solo 專案佔比** " + Math.round(solo.length / pages.length * 100) + "% — " + (solo.length > pages.length * 0.6 ? "多數專案依賴單一維護者，長期穩定性需關注" : "開發者多樣性尚可"));
+} else {
+  dv.paragraph("_需要 bus_factor 資料，下次 Actions 執行後會自動計算_");
+}
+```
 
 ## 等待你的決策
 
 > [!warning] 高 Stars 但你還沒表態的專案 — 該 adopt 還是 hold？
 
-\`\`\`dataviewjs
+```dataviewjs
 const pages = dv.pages('"Repos"').where(p => {
   return p.status !== "archived" &&
     (!p.ring || p.ring === "assess") &&
@@ -350,11 +400,11 @@ if (pages.length > 0) {
 } else {
   dv.paragraph("所有高 Stars 專案都已有明確的 Ring 決策。");
 }
-\`\`\`
+```
 
 ---
 
 > [!info] 小提示
 > - 在 Obsidian 的 Graph View 中可以視覺化看到專案之間的連結
-> - 用 \`Ctrl/Cmd + O\` 快速跳轉到任何專案筆記
+> - 用 `Ctrl/Cmd + O` 快速跳轉到任何專案筆記
 > - 在任何 repo 筆記中用 Templater 快捷鍵觸發「快速分流」

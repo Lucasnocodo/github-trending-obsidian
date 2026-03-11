@@ -261,6 +261,35 @@ async function fetchRepoDetails(repo, token) {
   const totalIssues = (repo.open_issues_count || 0) + (closedIssues || 0);
   const issueCloseRate = totalIssues > 0 ? Math.round((closedIssues || 0) / totalIssues * 100) : null;
 
+  // v30: 計算 bus factor（前 N 人撐起 50% commits）
+  let busFactor = 0;
+  if (contributors?.length) {
+    const totalCommits = contributors.reduce((a, c) => a + c.contributions, 0);
+    const half = totalCommits / 2;
+    let acc = 0;
+    for (const c of contributors) {
+      acc += c.contributions;
+      busFactor++;
+      if (acc >= half) break;
+    }
+  }
+
+  // v30: 計算 release 指標
+  let lastReleaseDays = -1;
+  let releaseCadence = 'unknown';
+  if (release?.date) {
+    lastReleaseDays = Math.floor((Date.now() - new Date(release.date).getTime()) / 86400000);
+  }
+  // 從 recent commits 推斷活躍度作為 cadence 代理
+  if (release?.date && recentCommits?.active_days) {
+    if (lastReleaseDays <= 7) releaseCadence = 'weekly';
+    else if (lastReleaseDays <= 30) releaseCadence = 'monthly';
+    else if (lastReleaseDays <= 90) releaseCadence = 'quarterly';
+    else releaseCadence = 'irregular';
+  } else if (!release) {
+    releaseCadence = 'never';
+  }
+
   return {
     ...repo,
     _readme: readme,
@@ -272,6 +301,9 @@ async function fetchRepoDetails(repo, token) {
     _deps: deps,
     _closedIssues: closedIssues,
     _issueCloseRate: issueCloseRate,
+    _busFactor: busFactor,
+    _lastReleaseDays: lastReleaseDays,
+    _releaseCadence: releaseCadence,
   };
 }
 
@@ -724,6 +756,9 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     `issue_close_rate: ${repo._issueCloseRate !== null ? repo._issueCloseRate : -1}`,
     `repo_size_kb: ${repo.size || 0}`,
     `readme_length: ${repo._readme?.length || 0}`,
+    `bus_factor: ${repo._busFactor || 0}`,
+    `last_release_days: ${repo._lastReleaseDays}`,
+    `release_cadence: "${repo._releaseCadence || 'unknown'}"`,
     `verdict: ""`,
     `ring_history: "assess@${today}"`,
     `star_history: "${today}:${repo.stargazers_count}"`,
@@ -985,7 +1020,20 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   if (llmInfo?.code_example) {
     lines.push('## 程式碼範例');
     lines.push('');
-    lines.push(llmInfo.code_example);
+    // v30: 確保程式碼範例有正確的 fenced code block
+    const codeEx = llmInfo.code_example.trim();
+    if (codeEx.startsWith('```')) {
+      // 已有 fenced code block，直接使用
+      lines.push(codeEx);
+    } else {
+      // 推斷語言標記
+      const lang = (repo.language || '').toLowerCase();
+      const langMap = { javascript: 'js', typescript: 'ts', python: 'python', go: 'go', rust: 'rust', ruby: 'ruby', java: 'java', shell: 'bash', 'c++': 'cpp', c: 'c', 'c#': 'csharp', php: 'php', swift: 'swift', kotlin: 'kotlin' };
+      const fenceLang = langMap[lang] || lang || 'bash';
+      lines.push(`\`\`\`${fenceLang}`);
+      lines.push(codeEx);
+      lines.push('```');
+    }
     lines.push('');
   }
 
@@ -1331,10 +1379,36 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('>     ["Fork 比率", forkRatio + "%", parseFloat(forkRatio) > 20 ? "High adoption" : parseFloat(forkRatio) > 5 ? "Normal" : "Low"],');
   lines.push('>     ["Issue 密度", issueRatio + "%", parseFloat(issueRatio) > 5 ? "High" : "Normal"],');
   lines.push('>     ["Issue 解決率", icrLabel, icrEval],');
-  lines.push('>     ["Bus Factor", (me.forks || 0) + " forks", busFactor],');
+  lines.push('>     ["Bus Factor", (me.bus_factor || 0) + " 人", (me.bus_factor || 0) >= 3 ? "Good" : (me.bus_factor || 0) >= 2 ? "OK" : "Risk"],');
   lines.push('>     ["README 品質", readmeLen.toLocaleString() + " 字元", readmeQ],');
   lines.push('>     ["Repo 大小", sizeLabel, repoKB > 102400 ? "Large" : repoKB > 10240 ? "Medium" : "Small"],');
+  lines.push('>     ["發版節奏", me.release_cadence || "unknown", me.release_cadence === "weekly" || me.release_cadence === "monthly" ? "Active" : me.release_cadence === "never" ? "No releases" : "Check"],');
+  lines.push('>     ["距上次發版", (me.last_release_days || 0) >= 0 ? (me.last_release_days + " 天") : "N/A", (me.last_release_days || -1) < 0 ? "?" : (me.last_release_days || 0) <= 30 ? "Fresh" : (me.last_release_days || 0) <= 90 ? "OK" : "Stale"],');
   lines.push('>   ]);');
+  lines.push('> }');
+  lines.push('> ```');
+  lines.push('');
+
+  // ── v30: CHAOSS 社群健康度雷達 ──
+  lines.push('> [!abstract]- CHAOSS 社群健康度雷達');
+  lines.push('> ```dataviewjs');
+  lines.push(`> const me = dv.page("Repos/${safeFn}");`);
+  lines.push('> if (me) {');
+  lines.push('>   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;');
+  lines.push('>   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;');
+  lines.push('>   const dims = [');
+  lines.push('>     ["維護活躍度", Math.max(0, 5 - Math.floor(daysSincePush / 14))],');
+  lines.push('>     ["貢獻者多樣性", Math.min(5, Math.floor((me.bus_factor || 0) * 1.5 + (me.contributor_count || 0) / 3))],');
+  lines.push('>     ["Issue 回應力", (me.issue_close_rate || 0) >= 80 ? 5 : (me.issue_close_rate || 0) >= 50 ? 4 : (me.issue_close_rate || 0) >= 20 ? 2 : 1],');
+  lines.push('>     ["發版節奏", me.release_cadence === "weekly" ? 5 : me.release_cadence === "monthly" ? 4 : me.release_cadence === "quarterly" ? 3 : me.release_cadence === "irregular" ? 2 : 1],');
+  lines.push('>     ["社群規模", Math.min(5, Math.floor(Math.log10(Math.max(me.stars || 1, 1)) * 1.2))],');
+  lines.push('>     ["Fork 活躍度", (me.forks || 0) > 100 ? 5 : (me.forks || 0) > 30 ? 4 : (me.forks || 0) > 10 ? 3 : (me.forks || 0) > 3 ? 2 : 1],');
+  lines.push('>   ];');
+  lines.push('>   dv.table(["維度", "分數", "視覺化"], dims.map(([name, score]) => [');
+  lines.push('>     name, score + "/5", "\\u2588".repeat(score) + "\\u2591".repeat(5 - score)');
+  lines.push('>   ]));');
+  lines.push('>   const avg = (dims.reduce((a, b) => a + b[1], 0) / dims.length).toFixed(1);');
+  lines.push('>   dv.paragraph("**綜合健康度：" + avg + "/5**");');
   lines.push('> }');
   lines.push('> ```');
   lines.push('');
@@ -3096,6 +3170,91 @@ if (sorted.length > 0) {
 }
 \`\`\`
 
+## 動量衰退偵測
+
+> [!warning] 已採用/關注中的工具，是否仍在積極開發？
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.status !== "archived" && p.status !== "to-review";
+});
+const stale = pages.where(p => {
+  const lrd = p.last_release_days;
+  return lrd !== undefined && lrd > 90;
+}).sort(p => p.last_release_days || 0, "desc");
+if (stale.length > 0) {
+  dv.table(
+    ["專案", "距上次發版", "發版節奏", "Stars/天", "Ring", "狀態"],
+    stale.map(p => [
+      p.file.link,
+      (p.last_release_days || 0) + " 天",
+      p.release_cadence || "?",
+      p.stars_per_day || 0,
+      p.ring || "assess",
+      p.status
+    ])
+  );
+  dv.paragraph(\`**\${stale.length}** 個關注中的工具超過 90 天未發版 — 考慮是否需要尋找替代方案\`);
+} else {
+  dv.paragraph("所有關注中的工具都有近期發版記錄。");
+}
+\`\`\`
+
+## 授權合規掃描
+
+> [!abstract] 非寬鬆授權的專案 — 商業使用前需確認
+
+\`\`\`dataviewjs
+const permissive = ["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC", "Unlicense", "0BSD", "CC0-1.0"];
+const pages = dv.pages('"Repos"').where(p => {
+  const lic = (p.license || "").toString();
+  return p.status !== "archived" && lic && lic !== "N/A" && !permissive.includes(lic);
+});
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "授權", "Stars", "Ring", "風險"],
+    pages.sort(p => p.stars || 0, "desc").map(p => {
+      const lic = (p.license || "").toString();
+      const risk = lic.includes("GPL") ? "Copyleft — 衍生作品需開源" :
+                   lic.includes("AGPL") ? "Strong Copyleft — 網路服務也需開源" :
+                   lic.includes("SSPL") ? "SSPL — 商業使用受限" : "需確認";
+      return [p.file.link, lic, p.stars, p.ring || "assess", risk];
+    })
+  );
+} else {
+  dv.paragraph("所有非封存專案都使用寬鬆授權。");
+}
+\`\`\`
+
+## Bus Factor 風險地圖
+
+> [!warning] 專案的開發者集中度 — Bus Factor 越低風險越高
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived" && (p.bus_factor || 0) > 0);
+if (pages.length > 0) {
+  const risky = pages.where(p => (p.bus_factor || 0) <= 1 && (p.stars || 0) >= 100).sort(p => p.stars || 0, "desc");
+  if (risky.length > 0) {
+    dv.table(
+      ["專案", "Bus Factor", "貢獻者", "Stars", "分類", "Ring"],
+      risky.limit(15).map(p => [
+        p.file.link,
+        (p.bus_factor || 0) + " 人",
+        p.contributor_count || 0,
+        (p.stars || 0).toLocaleString(),
+        p.category || "",
+        p.ring || "assess"
+      ])
+    );
+    dv.paragraph(\`**\${risky.length}** 個專案 Bus Factor = 1（單人撐起 50%+ commits）\`);
+  } else {
+    dv.paragraph("目前沒有高風險的 Bus Factor 專案。");
+  }
+} else {
+  dv.paragraph("Bus Factor 資料尚未填入。下次 Actions 執行後會自動計算。");
+}
+\`\`\`
+
 ## 所有專案
 
 \`\`\`dataview
@@ -4525,6 +4684,12 @@ if (withReadme.length > 0) {
   const poorDoc = withReadme.where(p => p.readme_length < 500).length;
   parts.push(\`README 品質：**\${goodDoc}** 個優秀 / **\${poorDoc}** 個薄弱\`);
 }
+const withBF = pages.where(p => (p.bus_factor || 0) > 0);
+if (withBF.length > 0) {
+  const solo = withBF.where(p => p.bus_factor === 1).length;
+  const pct = Math.round(solo / withBF.length * 100);
+  parts.push(\`Bus Factor：**\${solo}** 個 Solo 專案（\${pct}%）\`);
+}
 if (parts.length > 0) {
   dv.paragraph(parts.join("\\n\\n"));
 } else {
@@ -5001,6 +5166,56 @@ if (pages.length > 0) {
   }
 } else {
   dv.paragraph("_需要 issue_close_rate 資料，新增的專案會自動追蹤_");
+}
+\`\`\`
+
+## Release 健康度分佈
+
+> [!abstract] 專案的發版節奏 — 積極發版的專案通常維護品質較好
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived" && p.release_cadence);
+if (pages.length > 0) {
+  const cadences = { weekly: [], monthly: [], quarterly: [], irregular: [], never: [], unknown: [] };
+  for (const p of pages) {
+    const c = (p.release_cadence || "unknown").toString();
+    if (cadences[c]) cadences[c].push(p);
+    else cadences.unknown.push(p);
+  }
+  const total = pages.length;
+  const rows = [
+    ["Weekly", cadences.weekly.length, cadences.weekly.slice(0, 2).map(p => p.file.link).join(", ")],
+    ["Monthly", cadences.monthly.length, cadences.monthly.slice(0, 2).map(p => p.file.link).join(", ")],
+    ["Quarterly", cadences.quarterly.length, cadences.quarterly.slice(0, 2).map(p => p.file.link).join(", ")],
+    ["Irregular", cadences.irregular.length, cadences.irregular.slice(0, 2).map(p => p.file.link).join(", ")],
+    ["Never", cadences.never.length, cadences.never.slice(0, 2).map(p => p.file.link).join(", ")],
+  ].filter(r => r[1] > 0);
+  dv.table(["發版節奏", "數量", "代表專案"], rows);
+  const activeRelease = cadences.weekly.length + cadences.monthly.length;
+  dv.paragraph("**積極發版** " + activeRelease + "/" + total + " (" + Math.round(activeRelease/total*100) + "%) · **從未發版** " + cadences.never.length);
+} else {
+  dv.paragraph("_需要 release_cadence 資料，下次 Actions 執行後會自動記錄_");
+}
+\`\`\`
+
+## Bus Factor 分佈
+
+> [!abstract] 專案的核心開發者集中度 — 了解供應鏈風險
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived" && (p.bus_factor || 0) > 0);
+if (pages.length > 0) {
+  const solo = pages.where(p => p.bus_factor === 1);
+  const duo = pages.where(p => p.bus_factor === 2);
+  const team = pages.where(p => p.bus_factor >= 3);
+  dv.table(["Bus Factor", "數量", "風險", "代表專案"], [
+    ["1 (Solo)", solo.length, "HIGH — 單人專案", solo.sort(p => p.stars, "desc").limit(3).map(p => p.file.link).join(", ")],
+    ["2 (Duo)", duo.length, "Medium", duo.sort(p => p.stars, "desc").limit(3).map(p => p.file.link).join(", ")],
+    ["3+ (Team)", team.length, "Low", team.sort(p => p.stars, "desc").limit(3).map(p => p.file.link).join(", ")],
+  ].filter(r => r[1] > 0));
+  dv.paragraph("**Solo 專案佔比** " + Math.round(solo.length / pages.length * 100) + "% — " + (solo.length > pages.length * 0.6 ? "多數專案依賴單一維護者，長期穩定性需關注" : "開發者多樣性尚可"));
+} else {
+  dv.paragraph("_需要 bus_factor 資料，下次 Actions 執行後會自動計算_");
 }
 \`\`\`
 
@@ -6027,6 +6242,11 @@ function needsLightPatch(content) {
   if (!content.includes('repo_size_kb:')) patches.push('repo_size_field');
   if (!content.includes('readme_length:')) patches.push('readme_length_field');
   if (!content.includes('同類競品快速對比')) patches.push('rival_comparison');
+  // v30 patches
+  if (!content.includes('bus_factor:')) patches.push('bus_factor_field');
+  if (!content.includes('last_release_days:')) patches.push('last_release_field');
+  if (!content.includes('release_cadence:')) patches.push('release_cadence_field');
+  if (!content.includes('CHAOSS 社群健康度雷達')) patches.push('chaoss_radar');
   return patches;
 }
 
@@ -6403,6 +6623,61 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
       if (insertPoint > 0) {
         updated = updated.slice(0, insertPoint) + rivalPanel + '\n' + updated.slice(insertPoint);
       }
+    }
+  }
+
+  // 16. v30: bus_factor frontmatter 欄位
+  if (patches.includes('bus_factor_field') && !updated.includes('bus_factor:')) {
+    updated = updated.replace(
+      /^(readme_length: .+)$/m,
+      '$1\nbus_factor: 0'
+    );
+  }
+
+  // 17. v30: last_release_days frontmatter 欄位
+  if (patches.includes('last_release_field') && !updated.includes('last_release_days:')) {
+    updated = updated.replace(
+      /^(bus_factor: .+)$/m,
+      '$1\nlast_release_days: -1'
+    );
+  }
+
+  // 18. v30: release_cadence frontmatter 欄位
+  if (patches.includes('release_cadence_field') && !updated.includes('release_cadence:')) {
+    updated = updated.replace(
+      /^(last_release_days: .+)$/m,
+      '$1\nrelease_cadence: "unknown"'
+    );
+  }
+
+  // 19. v30: CHAOSS 社群健康度雷達
+  if (patches.includes('chaoss_radar') && !updated.includes('CHAOSS 社群健康度雷達')) {
+    const healthDashEnd = updated.indexOf('## 技術細節');
+    if (healthDashEnd > 0) {
+      const chaossRadar = `> [!abstract]- CHAOSS 社群健康度雷達
+> \`\`\`dataviewjs
+> const me = dv.page("Repos/${safeFn}");
+> if (me) {
+>   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
+>   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
+>   const dims = [
+>     ["維護活躍度", Math.max(0, 5 - Math.floor(daysSincePush / 14))],
+>     ["貢獻者多樣性", Math.min(5, Math.floor((me.bus_factor || 0) * 1.5 + (me.contributor_count || 0) / 3))],
+>     ["Issue 回應力", (me.issue_close_rate || 0) >= 80 ? 5 : (me.issue_close_rate || 0) >= 50 ? 4 : (me.issue_close_rate || 0) >= 20 ? 2 : 1],
+>     ["發版節奏", me.release_cadence === "weekly" ? 5 : me.release_cadence === "monthly" ? 4 : me.release_cadence === "quarterly" ? 3 : me.release_cadence === "irregular" ? 2 : 1],
+>     ["社群規模", Math.min(5, Math.floor(Math.log10(Math.max(me.stars || 1, 1)) * 1.2))],
+>     ["Fork 活躍度", (me.forks || 0) > 100 ? 5 : (me.forks || 0) > 30 ? 4 : (me.forks || 0) > 10 ? 3 : (me.forks || 0) > 3 ? 2 : 1],
+>   ];
+>   dv.table(["維度", "分數", "視覺化"], dims.map(([name, score]) => [
+>     name, score + "/5", "\\u2588".repeat(score) + "\\u2591".repeat(5 - score)
+>   ]));
+>   const avg = (dims.reduce((a, b) => a + b[1], 0) / dims.length).toFixed(1);
+>   dv.paragraph("**綜合健康度：" + avg + "/5**");
+> }
+> \`\`\`
+
+`;
+      updated = updated.slice(0, healthDashEnd) + chaossRadar + updated.slice(healthDashEnd);
     }
   }
 

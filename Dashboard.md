@@ -606,6 +606,60 @@ dv.table(
 );
 ```
 
+## Issue 解決率排行
+
+> [!abstract] 社群健康度指標 — Issue 解決率越高通常代表維護者更活躍
+
+```dataviewjs
+const pages = dv.pages('"Repos"')
+  .where(p => p.issue_close_rate !== undefined && p.issue_close_rate >= 0 && p.status !== "archived")
+  .sort(p => p.issue_close_rate, "desc");
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "解決率", "Stars", "分類", "維護狀態"],
+    pages.limit(15).map(p => {
+      const icr = p.issue_close_rate;
+      const pushed = p.pushed_at ? new Date(p.pushed_at.toString()) : null;
+      const daysSince = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
+      const maint = daysSince === null ? "?" : daysSince <= 7 ? "Active" : daysSince <= 30 ? "OK" : "Stale";
+      const bar = "\u2588".repeat(Math.round(icr / 5)) + "\u2591".repeat(20 - Math.round(icr / 5));
+      return [p.file.link, icr + "% " + bar, p.stars, p.category, maint];
+    })
+  );
+} else {
+  dv.paragraph("尚無 Issue 解決率資料。新增的專案會自動追蹤。");
+}
+```
+
+## README 品質分析
+
+> [!info] README 長度與品質是評估新手友善度的重要指標
+
+```dataviewjs
+const pages = dv.pages('"Repos"')
+  .where(p => p.readme_length !== undefined && p.readme_length > 0 && p.status !== "archived");
+if (pages.length > 0) {
+  const excellent = pages.where(p => p.readme_length > 5000).length;
+  const good = pages.where(p => p.readme_length > 2000 && p.readme_length <= 5000).length;
+  const basic = pages.where(p => p.readme_length > 500 && p.readme_length <= 2000).length;
+  const minimal = pages.where(p => p.readme_length <= 500).length;
+  dv.paragraph(`**Excellent** (>5k): ${excellent} · **Good** (2-5k): ${good} · **Basic** (0.5-2k): ${basic} · **Minimal** (<0.5k): ${minimal}`);
+  dv.header(4, "README 最完整的專案");
+  dv.table(
+    ["專案", "README 長度", "Stars", "安裝", "分類"],
+    pages.sort(p => p.readme_length, "desc").limit(10).map(p => [
+      p.file.link,
+      (p.readme_length || 0).toLocaleString() + " 字元",
+      p.stars,
+      p.install_complexity || "?",
+      p.category
+    ])
+  );
+} else {
+  dv.paragraph("尚無 README 長度資料。新增的專案會自動記錄。");
+}
+```
+
 ## 授權分佈
 
 ```dataview
@@ -1071,6 +1125,91 @@ if (sorted.length > 0) {
   }).join(" "));
 } else {
   dv.paragraph("_下次 Actions 執行後會出現 topic 標籤_");
+}
+```
+
+## 動量衰退偵測
+
+> [!warning] 已採用/關注中的工具，是否仍在積極開發？
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.status !== "archived" && p.status !== "to-review";
+});
+const stale = pages.where(p => {
+  const lrd = p.last_release_days;
+  return lrd !== undefined && lrd > 90;
+}).sort(p => p.last_release_days || 0, "desc");
+if (stale.length > 0) {
+  dv.table(
+    ["專案", "距上次發版", "發版節奏", "Stars/天", "Ring", "狀態"],
+    stale.map(p => [
+      p.file.link,
+      (p.last_release_days || 0) + " 天",
+      p.release_cadence || "?",
+      p.stars_per_day || 0,
+      p.ring || "assess",
+      p.status
+    ])
+  );
+  dv.paragraph(`**${stale.length}** 個關注中的工具超過 90 天未發版 — 考慮是否需要尋找替代方案`);
+} else {
+  dv.paragraph("所有關注中的工具都有近期發版記錄。");
+}
+```
+
+## 授權合規掃描
+
+> [!abstract] 非寬鬆授權的專案 — 商業使用前需確認
+
+```dataviewjs
+const permissive = ["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC", "Unlicense", "0BSD", "CC0-1.0"];
+const pages = dv.pages('"Repos"').where(p => {
+  const lic = (p.license || "").toString();
+  return p.status !== "archived" && lic && lic !== "N/A" && !permissive.includes(lic);
+});
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "授權", "Stars", "Ring", "風險"],
+    pages.sort(p => p.stars || 0, "desc").map(p => {
+      const lic = (p.license || "").toString();
+      const risk = lic.includes("GPL") ? "Copyleft — 衍生作品需開源" :
+                   lic.includes("AGPL") ? "Strong Copyleft — 網路服務也需開源" :
+                   lic.includes("SSPL") ? "SSPL — 商業使用受限" : "需確認";
+      return [p.file.link, lic, p.stars, p.ring || "assess", risk];
+    })
+  );
+} else {
+  dv.paragraph("所有非封存專案都使用寬鬆授權。");
+}
+```
+
+## Bus Factor 風險地圖
+
+> [!warning] 專案的開發者集中度 — Bus Factor 越低風險越高
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived" && (p.bus_factor || 0) > 0);
+if (pages.length > 0) {
+  const risky = pages.where(p => (p.bus_factor || 0) <= 1 && (p.stars || 0) >= 100).sort(p => p.stars || 0, "desc");
+  if (risky.length > 0) {
+    dv.table(
+      ["專案", "Bus Factor", "貢獻者", "Stars", "分類", "Ring"],
+      risky.limit(15).map(p => [
+        p.file.link,
+        (p.bus_factor || 0) + " 人",
+        p.contributor_count || 0,
+        (p.stars || 0).toLocaleString(),
+        p.category || "",
+        p.ring || "assess"
+      ])
+    );
+    dv.paragraph(`**${risky.length}** 個專案 Bus Factor = 1（單人撐起 50%+ commits）`);
+  } else {
+    dv.paragraph("目前沒有高風險的 Bus Factor 專案。");
+  }
+} else {
+  dv.paragraph("Bus Factor 資料尚未填入。下次 Actions 執行後會自動計算。");
 }
 ```
 

@@ -236,3 +236,16 @@ strong:is(:contains("[HIGH]")) {
 .callout[data-callout="abstract"] .dataview .table-view-table td:nth-child(3) {
   font-weight: 500;
 }
+
+/* v30: CHAOSS radar visual bars - monospace for alignment */
+.callout[data-callout="abstract"] .dataview .table-view-table td:last-child {
+  font-family: var(--font-monospace);
+  font-size: 0.85em;
+  letter-spacing: 1px;
+}
+
+/* v30: Code example blocks in repo notes */
+.markdown-rendered h2 + pre > code {
+  font-size: 0.88em;
+  line-height: 1.5;
+}
