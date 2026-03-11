@@ -2952,12 +2952,15 @@ async function refreshRepos(token, failedOnly = false) {
   console.log(`${toRefresh.length} notes need refresh`);
   let refreshedCount = 0;
   let skippedCount = 0;
+  const refreshStart = Date.now();
 
-  // 批次處理（每 5 個一批，避免 rate limit）
+  // 批次處理（每 3 個一批，避免 rate limit）
   const BATCH = 3;
   for (let i = 0; i < toRefresh.length; i += BATCH) {
     const batch = toRefresh.slice(i, i + BATCH);
-    console.log(`\nBatch ${Math.floor(i / BATCH) + 1}/${Math.ceil(toRefresh.length / BATCH)} (${batch.length} repos)...`);
+    const elapsed = Math.round((Date.now() - refreshStart) / 1000);
+    const pct = Math.round(((i) / toRefresh.length) * 100);
+    console.log(`\nBatch ${Math.floor(i / BATCH) + 1}/${Math.ceil(toRefresh.length / BATCH)} (${batch.length} repos) — ${pct}% done, ${elapsed}s elapsed`);
 
     // 抓取 GitHub 詳細資料
     const repos = [];
@@ -3146,7 +3149,8 @@ async function refreshRepos(token, failedOnly = false) {
     }
   }
 
-  console.log(`\nRefresh complete! ${refreshedCount}/${toRefresh.length} notes updated, ${toRefresh.length - refreshedCount} skipped`);
+  const totalElapsed = Math.round((Date.now() - refreshStart) / 1000);
+  console.log(`\nRefresh complete! ${refreshedCount}/${toRefresh.length} notes updated, ${toRefresh.length - refreshedCount} skipped (${totalElapsed}s total)`);
 
   // refresh 後也更新 Dashboard/Home/MOC/Weekly/Monthly（因為筆記內容變了）
   const today = new Date().toISOString().split('T')[0];
