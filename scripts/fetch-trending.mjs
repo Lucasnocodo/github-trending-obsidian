@@ -2394,7 +2394,9 @@ function needsRefresh(content) {
          !content.includes('use_case:') ||   // v5: triage 欄位
          !content.includes('priority:') ||   // v5: 優先級
          !content.includes('subcategory:') || // v6: 子分類
-         !content.includes('**授權**');       // v7: 速覽授權顯示
+         !content.includes('**授權**') ||     // v7: 速覽授權顯示
+         !content.includes('ring:') ||        // v8: Tech Radar ring
+         !content.includes('verdict:');       // v8: 一句話結論
 }
 
 function hasLLMContent(content) {
@@ -2583,6 +2585,12 @@ async function refreshRepos(token, failedOnly = false) {
       const savedMonth = monthMatch ? monthMatch[1] : null;
       const priorityMatch = item.content.match(/^priority: (.+)$/m);
       const savedPriority = priorityMatch ? priorityMatch[1] : 'medium';
+      const ringMatch = item.content.match(/^ring: (.+)$/m);
+      const savedRing = ringMatch ? ringMatch[1] : 'assess';
+      const verdictMatch = item.content.match(/^verdict: "(.+)"$/m);
+      const savedVerdict = verdictMatch ? verdictMatch[1] : '';
+      const discoveredMatch = item.content.match(/^discovered_via: "(.+)"$/m);
+      const savedDiscovered = discoveredMatch ? discoveredMatch[1] : 'GitHub Trending';
 
       // 從舊筆記提取手動策展的 相關專案 wikilinks（延伸閱讀區塊）
       const oldRelatedMatch = item.content.match(/^相關專案：(.+)$/m);
@@ -2627,7 +2635,10 @@ async function refreshRepos(token, failedOnly = false) {
         .replace(/^status: to-review$/m, `status: ${savedStatus}`)
         .replace(/^my_rating: 0$/m, `my_rating: ${savedRating}`)
         .replace(/^last_reviewed: .+$/m, `last_reviewed: ${savedReviewed}`)
-        .replace(/^priority: medium$/m, `priority: ${savedPriority}`);
+        .replace(/^priority: medium$/m, `priority: ${savedPriority}`)
+        .replace(/^ring: assess$/m, `ring: ${savedRing}`)
+        .replace(/^verdict: ""$/m, `verdict: "${savedVerdict}"`)
+        .replace(/^discovered_via: "GitHub Trending"$/m, `discovered_via: "${savedDiscovered}"`);
       if (savedWeek) {
         merged = merged.replace(/^week: ".+"$/m, `week: "${savedWeek}"`);
       }
