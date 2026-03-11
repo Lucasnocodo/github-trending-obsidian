@@ -1560,6 +1560,39 @@ if (orphans.length > 0) {
 }
 \`\`\`
 
+## 筆記完整度
+
+> [!info] 檢查哪些筆記缺少重要區塊
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const checks = [
+  { name: "成熟度評估", pattern: "## 成熟度評估" },
+  { name: "替代方案決策", pattern: "## 替代方案決策" },
+  { name: "技術深入分析", pattern: "## 技術深入分析" },
+  { name: "新手體驗", pattern: "## 新手體驗" },
+  { name: "架構分析", pattern: "## 架構分析" },
+];
+const incomplete = [];
+for (const p of pages) {
+  const content = await dv.io.load(p.file.path);
+  const missing = checks.filter(c => !content.includes(c.pattern)).map(c => c.name);
+  if (missing.length > 0) {
+    incomplete.push({ link: p.file.link, stars: p.stars, missing: missing.join(", "), count: missing.length });
+  }
+}
+if (incomplete.length > 0) {
+  incomplete.sort((a, b) => b.count - a.count);
+  dv.paragraph(\`**\${incomplete.length}** 筆記有缺失區塊（共 \${pages.length} 非封存筆記）\`);
+  dv.table(
+    ["專案", "Stars", "缺失區塊", "缺失數"],
+    incomplete.slice(0, 15).map(i => [i.link, i.stars, i.missing, i.count])
+  );
+} else {
+  dv.paragraph("所有筆記都有完整的區塊！");
+}
+\`\`\`
+
 ## 所有專案
 
 \`\`\`dataview
