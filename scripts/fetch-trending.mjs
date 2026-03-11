@@ -322,6 +322,24 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 
 28. "security_note": 2-4 句話的安全性快速評估。評估面向：(1) 這個工具本身是否需要高權限（root/admin/sudo/API keys）？(2) 它會存取什麼敏感資料（檔案系統、網路、環境變數、credentials）？(3) 依賴鏈的信任程度（是否有已知的供應鏈風險、大量未審計的 transitive dependencies）？(4) 在 CI/CD 中使用是否安全？如果是安全工具本身，改為評估它的偵測能力和誤報率。不需要過度警告——如果這是個純前端 UI 庫，說「低風險：純前端套件，不存取後端資源」即可。重點是幫讀者快速判斷「把這個東西放進我的專案/pipeline 安全嗎」
 
+29. "ecosystem_integration": 6-10 句話描述這個工具如何融入現有技術生態。這是幫讀者判斷「我現在的工具鏈能不能直接用」的關鍵段落。結構：
+   - 第 1-3 句：這個工具最常跟什麼工具/框架搭配使用？在典型的工作流中，它處於哪個環節（開發/建置/部署/監控）？
+   - 第 4-6 句：實際整合範例——描述一個真實場景：「在一個用 Next.js + Vercel 部署的專案中，你可以用這個工具來 X，具體做法是 Y」。要有具體的設定檔名、指令、或 API call
+   - 第 7-8 句：跟主流工具鏈的相容性——支援哪些 CI（GitHub Actions/GitLab CI/Jenkins）？跟哪些 IDE 有整合（VS Code/JetBrains）？有沒有官方的 plugin/extension？
+   - 第 9-10 句：整合的摩擦點——最常見的整合問題是什麼？需要什麼 adapter 或 wrapper？有沒有 breaking change 的風險？
+
+30. "historical_context": 6-8 句話說明這個工具出現的歷史脈絡和技術演進。這幫讀者理解「為什麼現在需要這個工具」。結構：
+   - 第 1-3 句：在這個工具出現之前，人們怎麼解決同樣的問題？用什麼工具/方法？那些方案的痛點是什麼？
+   - 第 4-5 句：什麼技術變化讓這個新方案變得可行？（例如：WebAssembly 讓瀏覽器能跑原生碼、LLM 的進步讓 AI agent 變得實用）
+   - 第 6-8 句：這個工具代表了什麼技術趨勢？它在技術發展的時間軸上處於什麼位置？6 個月/1 年後這個領域可能會怎麼演變？
+
+31. "team_adoption_guide": 物件，提供團隊採用的實際指南。結構：
+   {"recommended_team_size": "最適合的團隊規模（例如：「1-3 人的小型團隊」或「10+ 人且有專職 DevOps 的團隊」）",
+    "prerequisite_skills": 陣列，2-4 個前置技能（例如：["熟悉 TypeScript", "了解 Docker 基本操作", "有 CI/CD pipeline 經驗"]），
+    "rollout_strategy": "建議的導入策略，3-4 句話。例如「第一週：在個人 side project 試用。第二週：在非關鍵的內部工具導入。第三週：寫出 best practices 文件。第四週：在主產品的一個非核心模組開始使用。」",
+    "success_metrics": "如何衡量導入是否成功，1-2 句話。例如「API 開發時間減少 30%」或「手動部署錯誤歸零」",
+    "exit_plan": "如果要退出這個工具，具體怎麼做，1-2 句話。例如「所有設定存在標準 JSON 格式，可以用官方 migration 工具轉換為 X」"}
+
 回傳 JSON 陣列，只回傳 JSON，不要加 markdown 標記。`;
 
 function buildRepoPrompt(repos) {
@@ -393,7 +411,7 @@ async function callLLMBatch(repos, token, vaultRepoNames = null) {
         { role: 'user', content: prompt },
       ],
       temperature: 0.3,
-      max_tokens: 16384,  // 28 JSON fields per repo at BATCH_SIZE=1
+      max_tokens: 16384,  // 31 JSON fields per repo at BATCH_SIZE=1
     }),
   });
   if (!res.ok) {
@@ -426,7 +444,7 @@ async function callLLMBatch(repos, token, vaultRepoNames = null) {
 }
 
 async function callLLM(repos, token, vaultRepoNames = null) {
-  const BATCH_SIZE = 1;  // v9: 每個 repo 產生 24 欄位豐富內容，必須逐個處理避免 token 截斷
+  const BATCH_SIZE = 1;  // v9+v23: 每個 repo 產生 31 欄位豐富內容，必須逐個處理避免 token 截斷
   const results = [];
   let consecutiveFailures = 0;
 
@@ -601,7 +619,8 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   // ── 品質驗證：修正 LLM 回傳類型問題 ──
   // LLM 有時回傳非字串（物件/陣列），先正規化所有期望為字串的欄位
   for (const key of ['code_example', 'summary', 'description_zh', 'architecture', 'novelty_claim',
-    'deep_dive', 'onboarding_evaluation', 'key_insight', 'use_case']) {
+    'deep_dive', 'onboarding_evaluation', 'key_insight', 'use_case',
+    'ecosystem_integration', 'historical_context']) {
     if (llmInfo?.[key] && typeof llmInfo[key] !== 'string') {
       llmInfo[key] = typeof llmInfo[key] === 'object' ? JSON.stringify(llmInfo[key], null, 2) : String(llmInfo[key]);
     }
@@ -1040,6 +1059,78 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     lines.push('');
   }
 
+  // ── v23: 生態系整合 ──
+  if (llmInfo?.ecosystem_integration) {
+    lines.push('## 生態系整合');
+    lines.push('');
+    lines.push('> [!abstract] 如何融入你的工具鏈');
+    lines.push('');
+    // 分段顯示，讓長文更易讀
+    const ecoSentences = llmInfo.ecosystem_integration.match(/[^。！？]+[。！？]+/g) || [llmInfo.ecosystem_integration];
+    if (ecoSentences.length >= 6) {
+      const chunks = [
+        ecoSentences.slice(0, 3).join(''),
+        ecoSentences.slice(3, 6).join(''),
+        ecoSentences.slice(6).join(''),
+      ].filter(c => c.trim());
+      lines.push(chunks.join('\n\n'));
+    } else {
+      lines.push(llmInfo.ecosystem_integration);
+    }
+    lines.push('');
+  }
+
+  // ── v23: 歷史脈絡 ──
+  if (llmInfo?.historical_context) {
+    lines.push('## 歷史脈絡');
+    lines.push('');
+    lines.push('> [!info] 這個工具為什麼現在出現？');
+    lines.push('');
+    const histSentences = llmInfo.historical_context.match(/[^。！？]+[。！？]+/g) || [llmInfo.historical_context];
+    if (histSentences.length >= 4) {
+      const chunks = [
+        histSentences.slice(0, 3).join(''),
+        histSentences.slice(3).join(''),
+      ].filter(c => c.trim());
+      lines.push(chunks.join('\n\n'));
+    } else {
+      lines.push(llmInfo.historical_context);
+    }
+    lines.push('');
+  }
+
+  // ── v23: 團隊採用指南 ──
+  if (llmInfo?.team_adoption_guide) {
+    const tag = llmInfo.team_adoption_guide;
+    lines.push('## 團隊採用指南');
+    lines.push('');
+    if (tag.recommended_team_size) {
+      lines.push(`**建議團隊規模**：${tag.recommended_team_size}`);
+      lines.push('');
+    }
+    if (tag.prerequisite_skills?.length) {
+      lines.push('**前置技能**：');
+      for (const skill of tag.prerequisite_skills) {
+        lines.push(`- ${skill}`);
+      }
+      lines.push('');
+    }
+    if (tag.rollout_strategy) {
+      lines.push('> [!tip] 導入策略');
+      lines.push(`> ${tag.rollout_strategy}`);
+      lines.push('');
+    }
+    if (tag.success_metrics) {
+      lines.push(`**成功指標**：${tag.success_metrics}`);
+      lines.push('');
+    }
+    if (tag.exit_plan) {
+      lines.push('> [!warning] 退出計畫');
+      lines.push(`> ${tag.exit_plan}`);
+      lines.push('');
+    }
+  }
+
   // ── 健康度儀表板 ──
   lines.push('## 健康度儀表板');
   lines.push('');
@@ -1331,6 +1422,32 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('>     dv.paragraph(lines.join("\\n"));');
   lines.push('>   } else { dv.paragraph("需要 2+ 次快照才能顯示趨勢"); }');
   lines.push('> } else { dv.paragraph("尚無 star_history 資料（下次出現在 trending 時會開始追蹤）"); }');
+  lines.push('> ```');
+  lines.push('');
+
+  // ── v23: 相對成長速度 ──
+  lines.push('## 相對成長速度');
+  lines.push('');
+  lines.push('> [!abstract]- 跟 vault 中同類專案比較');
+  lines.push('> ```dataviewjs');
+  lines.push(`> const me = dv.page("Repos/${safeFn}");`);
+  lines.push('> if (me) {');
+  lines.push('>   const all = dv.pages(\'"Repos"\').where(p => p.status !== "archived");');
+  lines.push('>   const sameCat = all.where(p => p.category === me.category);');
+  lines.push('>   const avgAll = all.length > 0 ? Math.round(all.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / all.length) : 0;');
+  lines.push('>   const avgCat = sameCat.length > 0 ? Math.round(sameCat.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / sameCat.length) : 0;');
+  lines.push('>   const mySpd = me.stars_per_day || 0;');
+  lines.push('>   const vsAll = avgAll > 0 ? Math.round(mySpd / avgAll * 100) : 0;');
+  lines.push('>   const vsCat = avgCat > 0 ? Math.round(mySpd / avgCat * 100) : 0;');
+  lines.push('>   dv.table(["比較對象", "平均 Stars/天", "本專案", "倍數"], [');
+  lines.push('>     ["全 Vault", avgAll, mySpd, vsAll + "%"],');
+  lines.push('>     ["同分類 (" + me.category + ")", avgCat, mySpd, vsCat + "%"],');
+  lines.push('>   ]);');
+  lines.push('>   if (vsAll >= 300) dv.paragraph("**極速成長** — 成長速度是 vault 平均的 3 倍以上");');
+  lines.push('>   else if (vsAll >= 150) dv.paragraph("**高速成長** — 成長速度高於 vault 平均");');
+  lines.push('>   else if (vsAll >= 50) dv.paragraph("**正常速度** — 接近 vault 平均水平");');
+  lines.push('>   else dv.paragraph("**低速成長** — 低於 vault 平均，可能已過熱度高峰");');
+  lines.push('> }');
   lines.push('> ```');
   lines.push('');
 
@@ -4564,6 +4681,7 @@ function needsLightPatch(content) {
   if (!content.includes('健康度儀表板')) patches.push('health_dashboard');
   if (!content.includes('## Vault 排名')) patches.push('vault_ranking');
   if (!content.includes('同 Owner 專案')) patches.push('same_owner');
+  if (!content.includes('相對成長速度')) patches.push('growth_velocity');
   return patches;
 }
 
@@ -4592,7 +4710,10 @@ function needsFullRefresh(content) {
          !content.includes('ring_history:') ||     // v13: 狀態變更歷程
          !content.includes('成熟度評估') ||            // v14: 成熟度評估 + 強化替代方案 + 預期輸出
          !content.includes('## 開發動態') ||             // v15: 開發動態 + 熱門議題
-         !content.includes('直接競品');                    // v16: 同子分類競品 + 共用概念
+         !content.includes('直接競品') ||                   // v16: 同子分類競品 + 共用概念
+         !content.includes('生態系整合') ||                    // v23: 生態系 + 歷史脈絡 + 團隊採用
+         !content.includes('歷史脈絡') ||
+         !content.includes('團隊採用指南');
 }
 
 // 向下相容：既需要 light patch 又需要 full refresh 的都算 needsRefresh
@@ -4773,6 +4894,39 @@ function applyLightPatch(content, patches) {
 
 `;
       updated = updated.slice(0, insertBefore) + '\n' + sameOwner + updated.slice(insertBefore);
+    }
+  }
+
+  // 8. 相對成長速度 section
+  if (patches.includes('growth_velocity') && !updated.includes('相對成長速度')) {
+    const insertBefore = updated.indexOf('\n---\n\n## 個人筆記');
+    if (insertBefore > 0) {
+      const growthVelocity = `## 相對成長速度
+
+> [!abstract]- 跟 vault 中同類專案比較
+> \`\`\`dataviewjs
+> const me = dv.page("Repos/${safeFn}");
+> if (me) {
+>   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
+>   const sameCat = all.where(p => p.category === me.category);
+>   const avgAll = all.length > 0 ? Math.round(all.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / all.length) : 0;
+>   const avgCat = sameCat.length > 0 ? Math.round(sameCat.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / sameCat.length) : 0;
+>   const mySpd = me.stars_per_day || 0;
+>   const vsAll = avgAll > 0 ? Math.round(mySpd / avgAll * 100) : 0;
+>   const vsCat = avgCat > 0 ? Math.round(mySpd / avgCat * 100) : 0;
+>   dv.table(["比較對象", "平均 Stars/天", "本專案", "倍數"], [
+>     ["全 Vault", avgAll, mySpd, vsAll + "%"],
+>     ["同分類 (" + me.category + ")", avgCat, mySpd, vsCat + "%"],
+>   ]);
+>   if (vsAll >= 300) dv.paragraph("**極速成長** — 成長速度是 vault 平均的 3 倍以上");
+>   else if (vsAll >= 150) dv.paragraph("**高速成長** — 成長速度高於 vault 平均");
+>   else if (vsAll >= 50) dv.paragraph("**正常速度** — 接近 vault 平均水平");
+>   else dv.paragraph("**低速成長** — 低於 vault 平均，可能已過熱度高峰");
+> }
+> \`\`\`
+
+`;
+      updated = updated.slice(0, insertBefore) + '\n' + growthVelocity + updated.slice(insertBefore);
     }
   }
 
