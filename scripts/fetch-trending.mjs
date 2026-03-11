@@ -554,6 +554,7 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     `engagement: ${engagementLevel(repo.stargazers_count, repo.forks_count)}`,
     `verdict: ""`,
     `ring_history: "assess@${today}"`,
+    `star_history: "${today}:${repo.stargazers_count}"`,
     'tags:',
     '  - github',
     `  - "category/${catTag}"`,
@@ -1661,6 +1662,26 @@ if (pages.length > 0) {
 }
 \`\`\`
 
+## Star 增長追蹤
+
+> [!abstract] 有歷史資料的專案 Star 變化
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.star_history && typeof p.star_history === "string" && p.star_history.includes(","));
+if (pages.length > 0) {
+  const rows = pages.sort(p => p.stars_per_day, "desc").limit(10).map(p => {
+    const entries = p.star_history.split(",").map(e => { const [d, s] = e.split(":"); return { date: d, stars: parseInt(s) || 0 }; });
+    const first = entries[0], last = entries[entries.length - 1];
+    const growth = last.stars - first.stars;
+    const days = Math.max(1, (new Date(last.date) - new Date(first.date)) / 86400000);
+    return [p.file.link, first.stars.toLocaleString(), last.stars.toLocaleString(), "+" + growth.toLocaleString(), Math.round(growth / days) + "/天", entries.length + " 筆"];
+  });
+  dv.table(["專案", "首次 Stars", "最新 Stars", "增長", "增速", "資料點"], rows);
+} else {
+  dv.paragraph("尚無歷史資料。多次出現或 refresh 的專案會累積 star_history。");
+}
+\`\`\`
+
 ## 分類趨勢
 
 \`\`\`dataviewjs
@@ -2205,6 +2226,14 @@ if (returning.length > 0) {
 \`\`\`
 
 ---
+
+## Editor's Pick（本週精選）
+
+> [!tip]+ 本週最值得深入的 2-3 個專案（手動精選，不能用 Dataview 替代）
+>
+> 1. **[[]]** — _為什麼選它：_
+> 2. **[[]]** — _為什麼選它：_
+> 3. **[[]]** — _為什麼選它：_
 
 ## 本週趨勢觀察
 
@@ -3702,6 +3731,13 @@ async function main() {
           } else {
             promoted = promoted.replace(/^next_review: .+$/m, `$&\nengagement: ${newEngagement}`);
           }
+          // v19: 追加 star_history 快照
+          const starSnapshot = `${today}:${repo.stargazers_count}`;
+          if (promoted.includes('star_history:')) {
+            promoted = promoted.replace(/^star_history: "(.+)"$/m, `star_history: "$1,${starSnapshot}"`);
+          } else {
+            promoted = promoted.replace(/^ring_history: .+$/m, `$&\nstar_history: "${starSnapshot}"`);
+          }
           // 如果被自動封存了，再次上榜時恢復
           if (promoted.match(/^status: archived$/m)) {
             promoted = promoted.replace(/^status: archived$/m, 'status: to-review');
@@ -4159,6 +4195,13 @@ async function refreshRepos(token, failedOnly = false) {
       const savedRingHistory = item.content.match(/^ring_history: "(.+)"$/m)?.[1];
       if (savedRingHistory) {
         merged = merged.replace(/^ring_history: ".+"$/m, `ring_history: "${savedRingHistory}"`);
+      }
+      // 保留 star_history 並追加最新快照
+      const savedStarHistory = item.content.match(/^star_history: "(.+)"$/m)?.[1];
+      if (savedStarHistory) {
+        const newStars = merged.match(/^stars: (\d+)$/m)?.[1];
+        const updatedHistory = `${savedStarHistory},${today}:${newStars || 0}`;
+        merged = merged.replace(/^star_history: ".+"$/m, `star_history: "${updatedHistory}"`);
       }
       if (savedWeek) {
         merged = merged.replace(/^week: ".+"$/m, `week: "${savedWeek}"`);
