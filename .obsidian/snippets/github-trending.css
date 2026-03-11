@@ -210,3 +210,14 @@ strong:is(:contains("[HIGH]")) {
   font-family: var(--font-monospace);
   letter-spacing: -1px;
 }
+
+/* v28: Discovery page section spacing */
+.discovery h2 {
+  margin-top: 2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.discovery h4 {
+  margin-top: 1em;
+  color: var(--text-accent);
+}

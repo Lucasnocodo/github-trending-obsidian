@@ -230,8 +230,24 @@ async function fetchRecentCommits(fullName, token) {
   }
 }
 
+async function fetchClosedIssuesCount(fullName, token) {
+  try {
+    // 用 search API 取得 closed issues 數量（不含 PR）
+    const q = encodeURIComponent(`repo:${fullName} is:issue is:closed`);
+    const res = await fetch(
+      `${GITHUB_API}/search/issues?q=${q}&per_page=1`,
+      { headers: gh(token) }
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.total_count || 0;
+  } catch {
+    return null;
+  }
+}
+
 async function fetchRepoDetails(repo, token) {
-  const [readme, contributors, release, languages, topIssues, recentCommits, deps] = await Promise.all([
+  const [readme, contributors, release, languages, topIssues, recentCommits, deps, closedIssues] = await Promise.all([
     fetchReadme(repo.full_name, token),
     fetchContributors(repo.full_name, token),
     fetchLatestRelease(repo.full_name, token),
@@ -239,7 +255,12 @@ async function fetchRepoDetails(repo, token) {
     fetchTopIssues(repo.full_name, token),
     fetchRecentCommits(repo.full_name, token),
     fetchDependencies(repo.full_name, token, repo.language),
+    fetchClosedIssuesCount(repo.full_name, token),
   ]);
+  // 計算 issue close rate
+  const totalIssues = (repo.open_issues_count || 0) + (closedIssues || 0);
+  const issueCloseRate = totalIssues > 0 ? Math.round((closedIssues || 0) / totalIssues * 100) : null;
+
   return {
     ...repo,
     _readme: readme,
@@ -249,6 +270,8 @@ async function fetchRepoDetails(repo, token) {
     _topIssues: topIssues,
     _recentCommits: recentCommits,
     _deps: deps,
+    _closedIssues: closedIssues,
+    _issueCloseRate: issueCloseRate,
   };
 }
 
@@ -374,6 +397,9 @@ function buildRepoPrompt(repos) {
       }
       if (r._recentCommits) {
         parts.push(`最近 commit 活動: ${r._recentCommits.active_days} 天活躍 (${r._recentCommits.period}), 最新: ${r._recentCommits.latest_message}`);
+      }
+      if (r._issueCloseRate !== null && r._issueCloseRate !== undefined) {
+        parts.push(`Issue 解決率: ${r._issueCloseRate}% (${r._closedIssues || 0} closed / ${(r.open_issues_count || 0) + (r._closedIssues || 0)} total)`);
       }
       if (r._deps) {
         parts.push(`依賴檔 (${r._deps.file}):\n${r._deps.content}`);
@@ -695,6 +721,7 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     `next_review: "${nextReviewDate(today, rate)}"`,
     `contributor_count: ${repo._contributors?.length || 0}`,
     `engagement: ${engagementLevel(repo.stargazers_count, repo.forks_count)}`,
+    `issue_close_rate: ${repo._issueCloseRate !== null ? repo._issueCloseRate : -1}`,
     `verdict: ""`,
     `ring_history: "assess@${today}"`,
     `star_history: "${today}:${repo.stargazers_count}"`,
@@ -1281,6 +1308,9 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('| --- | --- |');
   lines.push(`| Forks | ${fmt(repo.forks_count)} |`);
   lines.push(`| Open Issues | ${repo.open_issues_count} |`);
+  if (repo._issueCloseRate !== null && repo._issueCloseRate !== undefined && repo._issueCloseRate >= 0) {
+    lines.push(`| Issue 解決率 | ${repo._issueCloseRate}% (${repo._closedIssues || 0} closed) |`);
+  }
   lines.push(`| 最後推送 | ${repo.pushed_at?.split('T')[0] || 'N/A'} |`);
   lines.push(`| 建立日期 | ${repo.created_at.split('T')[0]} |`);
   if (repo.homepage) lines.push(`| 官方網站 | [Link](${repo.homepage}) |`);
@@ -4102,6 +4132,7 @@ cssclasses:
 | [[MOC - 生產力]] | 生產力 |
 | [[MOC - 遊戲]] | 遊戲 |
 | [[MOC - 其他]] | 其他分類 |
+| [[Discovery]] | 探索 — 隱藏寶石、風險警示、盲點分析 |
 | [[Comparison]] | 同分類橫向對比 + 決策矩陣 + 四象限分析 |
 | [[Tech-Radar.canvas\\|Tech Radar]] | 四環評估看板（Adopt/Trial/Assess/Hold）|
 
@@ -4496,6 +4527,314 @@ LIMIT 3
 > 4. 評估完更新 \`ring\`（adopt/trial/hold）、\`verdict\` 和 \`ring_history\`
 > 5. 低價值專案會在 14 天後自動封存
 > 6. 用 [[Tech-Radar]] Canvas 視覺化追蹤採用決策
+`;
+}
+
+// ── Discovery 探索頁 ───────────────────────────────────────
+
+function generateDiscovery() {
+  return `---
+tags:
+  - navigation
+cssclasses:
+  - discovery
+---
+
+# Discovery — 探索你的 Vault
+
+> 從不同角度發現有價值的專案。跟 Dashboard 看數據不同，這裡幫你找到 **你可能錯過的東西**。
+
+## 技術棧交叉點
+
+> [!abstract] 用相同技術棧的專案 — 如果你喜歡一個，可能也會喜歡另一個
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived" && p.language);
+const langGroups = {};
+for (const p of pages) {
+  const lang = p.language.toString();
+  if (!langGroups[lang]) langGroups[lang] = [];
+  langGroups[lang].push(p);
+}
+const multiLang = Object.entries(langGroups)
+  .filter(([_, repos]) => repos.length >= 2)
+  .sort((a, b) => b[1].length - a[1].length);
+for (const [lang, repos] of multiLang.slice(0, 5)) {
+  dv.header(4, lang + " (" + repos.length + " 個)");
+  dv.table(
+    ["專案", "Stars/天", "分類", "狀態"],
+    repos.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0))
+      .slice(0, 5)
+      .map(p => [p.file.link, p.stars_per_day || 0, p.category || "", p.status || "?"])
+  );
+}
+\`\`\`
+
+## 多產作者
+
+> [!abstract] 有多個收錄專案的開發者/組織 — 值得追蹤他們的動態
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"');
+const owners = {};
+for (const p of pages) {
+  const owner = p.owner?.toString() || "";
+  if (!owner) continue;
+  if (!owners[owner]) owners[owner] = [];
+  owners[owner].push(p);
+}
+const multi = Object.entries(owners)
+  .filter(([_, repos]) => repos.length >= 2)
+  .sort((a, b) => b[1].reduce((s, p) => s + (p.stars || 0), 0) - a[1].reduce((s, p) => s + (p.stars || 0), 0));
+if (multi.length > 0) {
+  for (const [owner, repos] of multi) {
+    const totalStars = repos.reduce((s, p) => s + (p.stars || 0), 0);
+    dv.paragraph("**" + owner + "** (" + totalStars.toLocaleString() + " total stars): " +
+      repos.map(p => p.file.link).join(" / "));
+  }
+} else {
+  dv.paragraph("目前沒有重複作者。隨著收錄量增加，這裡會出現值得追蹤的開發者。");
+}
+\`\`\`
+
+## 隱藏寶石
+
+> [!tip] Stars/天不算爆炸但品質可能很高的專案 — 安裝簡單且有明確授權
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  if (p.status === "archived") return false;
+  const spd = p.stars_per_day || 0;
+  const lic = (p.license || "").toString();
+  const friendly = ["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC"].includes(lic);
+  return spd >= 10 && spd < 200 && p.install_complexity === "easy" && friendly;
+}).sort(p => p.stars_per_day || 0, "desc").limit(8);
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "Stars/天", "分類", "授權", "用途"],
+    pages.map(p => [p.file.link, p.stars_per_day, p.category || "", p.license || "", (p.use_case || "").slice(0, 50)])
+  );
+} else {
+  dv.paragraph("目前沒有符合條件的隱藏寶石。");
+}
+\`\`\`
+
+## 風險警示
+
+> [!warning] 潛在風險較高的專案 — 沒授權、單人維護、或推送停滯
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  if (p.status === "archived") return false;
+  const lic = (p.license || "").toString();
+  const noLicense = !lic || lic === "N/A" || lic === "";
+  const contribs = p.contributor_count || 0;
+  const pushed = p.pushed_at ? new Date(p.pushed_at.toString()) : null;
+  const stale = pushed ? (Date.now() - pushed.getTime()) > 30 * 86400000 : false;
+  return noLicense || (contribs <= 1 && (p.stars || 0) > 500) || stale;
+});
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "風險", "Stars", "授權", "貢獻者", "最後推送"],
+    pages.sort((a, b) => (b.stars || 0) - (a.stars || 0)).limit(10).map(p => {
+      const risks = [];
+      const lic = (p.license || "").toString();
+      if (!lic || lic === "N/A") risks.push("No License");
+      if ((p.contributor_count || 0) <= 1 && (p.stars || 0) > 500) risks.push("Bus Factor");
+      const pushed = p.pushed_at ? new Date(p.pushed_at.toString()) : null;
+      if (pushed && (Date.now() - pushed.getTime()) > 30 * 86400000) risks.push("Stale");
+      return [p.file.link, risks.join(", "), p.stars || 0, lic || "N/A", p.contributor_count || "?", p.pushed_at || "?"];
+    })
+  );
+} else {
+  dv.paragraph("所有收錄專案都通過基本風險檢查。");
+}
+\`\`\`
+
+## 你的盲點
+
+> [!question] 你還沒有探索的分類和語言 — 可能有你不知道的好工具
+
+\`\`\`dataviewjs
+const all = dv.pages('"Repos"').where(p => p.status !== "archived");
+const reviewed = all.where(p => p.status && p.status !== "to-review");
+
+// 找出你完全沒碰過的分類
+const allCats = new Set(all.map(p => p.category).filter(Boolean).map(c => c.toString()));
+const touchedCats = new Set(reviewed.map(p => p.category).filter(Boolean).map(c => c.toString()));
+const untouched = [...allCats].filter(c => !touchedCats.has(c));
+if (untouched.length > 0) {
+  dv.paragraph("**未探索的分類**：" + untouched.join("、"));
+  const recs = all.where(p => untouched.includes(p.category?.toString()))
+    .sort(p => p.stars_per_day || 0, "desc").limit(3);
+  if (recs.length > 0) {
+    dv.paragraph("推薦先看：" + recs.map(p => p.file.link + " (" + p.category + ")").join(" / "));
+  }
+}
+
+// 找出你沒看過的語言
+const allLangs = new Set(all.map(p => p.language).filter(Boolean).map(l => l.toString()));
+const touchedLangs = new Set(reviewed.map(p => p.language).filter(Boolean).map(l => l.toString()));
+const untouchedLangs = [...allLangs].filter(l => !touchedLangs.has(l));
+if (untouchedLangs.length > 0) {
+  dv.paragraph("**未探索的語言**：" + untouchedLangs.join("、"));
+}
+
+if (untouched.length === 0 && untouchedLangs.length === 0) {
+  dv.paragraph("你已經探索了所有分類和語言！");
+}
+\`\`\`
+
+## 分類對決
+
+> [!abstract] 同分類內誰更值得投入？直接比較 Stars 和成長速度
+
+\`\`\`dataviewjs
+const cats = {};
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+for (const p of pages) {
+  const cat = (p.category || "其他").toString();
+  if (!cats[cat]) cats[cat] = [];
+  cats[cat].push(p);
+}
+const hotCats = Object.entries(cats)
+  .filter(([_, repos]) => repos.length >= 3)
+  .sort((a, b) => b[1].length - a[1].length);
+for (const [cat, repos] of hotCats.slice(0, 3)) {
+  dv.header(4, cat + " (" + repos.length + " 個)");
+  const sorted = repos.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0));
+  dv.table(
+    ["專案", "Stars/天", "Stars 總量", "安裝", "授權"],
+    sorted.slice(0, 5).map(p => [
+      p.file.link,
+      p.stars_per_day || 0,
+      p.stars || 0,
+      p.install_complexity || "?",
+      p.license || "N/A"
+    ])
+  );
+}
+\`\`\`
+
+## 快速採用路徑
+
+> [!tip] 從評估到採用最快的路線 — easy install + MIT + 高 stars + 低依賴風險
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  if (p.status === "archived" || p.status === "integrated") return false;
+  const lic = (p.license || "").toString();
+  return p.install_complexity === "easy" &&
+    ["MIT", "Apache-2.0", "ISC"].includes(lic) &&
+    (p.stars_per_day || 0) >= 30;
+}).sort(p => p.stars_per_day || 0, "desc").limit(5);
+if (pages.length > 0) {
+  for (const p of pages) {
+    const use = (p.use_case || p.description || "").toString().slice(0, 80);
+    dv.paragraph("**" + p.file.link + "** — " + (p.stars_per_day || 0) + " stars/day / " + p.license + "\\n> " + use);
+  }
+} else {
+  dv.paragraph("目前沒有完美符合快速採用條件的專案。");
+}
+\`\`\`
+
+## 概念地圖
+
+> [!abstract] 哪些技術概念連結了最多專案？點擊概念可以看到所有相關工具
+
+\`\`\`dataviewjs
+const repos = dv.pages('"Repos"').where(p => p.status !== "archived");
+const conceptLinks = {};
+for (const p of repos) {
+  for (const link of (p.file.outlinks || [])) {
+    if (link.path?.startsWith("Concepts/")) {
+      const name = link.path.replace("Concepts/", "").replace(".md", "");
+      if (!conceptLinks[name]) conceptLinks[name] = new Set();
+      conceptLinks[name].add(p.category?.toString() || "其他");
+    }
+  }
+}
+const crossConcepts = Object.entries(conceptLinks)
+  .filter(([_, cats]) => cats.size >= 2)
+  .sort((a, b) => b[1].size - a[1].size);
+if (crossConcepts.length > 0) {
+  dv.paragraph("**跨分類概念** — 這些技術概念連結了不同分類的專案：");
+  dv.table(
+    ["概念", "跨分類數", "涵蓋分類"],
+    crossConcepts.slice(0, 10).map(([name, cats]) => [
+      dv.fileLink("Concepts/" + name, false, name),
+      cats.size,
+      [...cats].join(", ")
+    ])
+  );
+} else {
+  dv.paragraph("目前概念跨分類連結不足，隨著收錄量增加會更豐富。");
+}
+\`\`\`
+
+## 收錄時間軸
+
+> [!abstract] 你的 vault 成長歷程
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"');
+const byWeek = {};
+for (const p of pages) {
+  const w = p.week?.toString() || "unknown";
+  if (!byWeek[w]) byWeek[w] = { count: 0, totalStars: 0, cats: {} };
+  byWeek[w].count++;
+  byWeek[w].totalStars += (p.stars || 0);
+  const cat = (p.category || "其他").toString();
+  byWeek[w].cats[cat] = (byWeek[w].cats[cat] || 0) + 1;
+}
+const weeks = Object.entries(byWeek)
+  .filter(([w]) => w !== "unknown")
+  .sort((a, b) => a[0].localeCompare(b[0]));
+if (weeks.length > 0) {
+  dv.table(
+    ["週", "收錄數", "總 Stars", "最熱分類"],
+    weeks.map(([w, d]) => {
+      const topCat = Object.entries(d.cats).sort((a, b) => b[1] - a[1])[0];
+      return [
+        dv.fileLink("Weekly/" + w, false, w),
+        d.count,
+        d.totalStars.toLocaleString(),
+        topCat ? topCat[0] + " (" + topCat[1] + ")" : "?"
+      ];
+    })
+  );
+  const totalRepos = pages.length;
+  const totalStars = pages.array().reduce((s, p) => s + (p.stars || 0), 0);
+  dv.paragraph("**累計** " + totalRepos + " 個專案 / " + totalStars.toLocaleString() + " stars");
+}
+\`\`\`
+
+## 等待你的決策
+
+> [!warning] 高 Stars 但你還沒表態的專案 — 該 adopt 還是 hold？
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.status !== "archived" &&
+    (!p.ring || p.ring === "assess") &&
+    (p.stars || 0) >= 200;
+}).sort(p => p.stars || 0, "desc").limit(8);
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "Stars", "Stars/天", "分類", "收錄於"],
+    pages.map(p => [p.file.link, p.stars || 0, p.stars_per_day || 0, p.category || "", p.first_seen || "?"])
+  );
+} else {
+  dv.paragraph("所有高 Stars 專案都已有明確的 Ring 決策。");
+}
+\`\`\`
+
+---
+
+> [!info] 小提示
+> - 在 Obsidian 的 Graph View 中可以視覺化看到專案之間的連結
+> - 用 \`Ctrl/Cmd + O\` 快速跳轉到任何專案筆記
+> - 在任何 repo 筆記中用 Templater 快捷鍵觸發「快速分流」
 `;
 }
 
@@ -5357,6 +5696,11 @@ async function main() {
   await writeFile(homePath, generateHome(), 'utf-8');
   console.log('Updated: Home.md');
 
+  // 7.5 產生/更新 Discovery
+  const discoveryPath = join(ROOT, 'Discovery.md');
+  await writeFile(discoveryPath, generateDiscovery(), 'utf-8');
+  console.log('Updated: Discovery.md');
+
   // 8. 產生 MOC 分類索引頁
   await generateMOCs();
 
@@ -5484,6 +5828,7 @@ function needsLightPatch(content) {
   if (!content.includes('評估進度')) patches.push('eval_progress');
   if (!content.includes('score_confidence:')) patches.push('score_fields');
   if (!content.includes('你的結論')) patches.push('verdict_banner');
+  if (!content.includes('issue_close_rate:')) patches.push('issue_close_rate_field');
   return patches;
 }
 
@@ -5800,6 +6145,15 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `;
       updated = updated.slice(0, insertAt) + verdictBanner + updated.slice(insertAt);
     }
+  }
+
+  // 12. issue_close_rate frontmatter 欄位
+  if (patches.includes('issue_close_rate_field') && !updated.includes('issue_close_rate:')) {
+    // 在 engagement: 後面插入
+    updated = updated.replace(
+      /^(engagement: .+)$/m,
+      '$1\nissue_close_rate: -1'
+    );
   }
 
   return updated;
@@ -6142,6 +6496,10 @@ async function refreshRepos(token, failedOnly = false) {
   const homePath = join(ROOT, 'Home.md');
   await writeFile(homePath, generateHome(), 'utf-8');
   console.log('Updated: Home.md');
+
+  const discoPath = join(ROOT, 'Discovery.md');
+  await writeFile(discoPath, generateDiscovery(), 'utf-8');
+  console.log('Updated: Discovery.md');
 
   await generateMOCs();
 
