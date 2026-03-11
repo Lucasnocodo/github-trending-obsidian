@@ -9,6 +9,36 @@ cssclasses:
 
 > 快速分流工作流：inbox -> watching -> evaluating -> using / archived
 
+## 今日焦點
+
+> [!tip] 今天最值得花時間看的 3 個專案
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status === "to-review");
+// 綜合排序：high priority first, then stars/day, then easy install
+const picks = pages.sort((a, b) => {
+  const priOrder = { high: 3, medium: 2, low: 1 };
+  const priA = priOrder[a.priority] || 0;
+  const priB = priOrder[b.priority] || 0;
+  if (priA !== priB) return priB - priA;
+  const instA = a.install_complexity === "easy" ? 2 : a.install_complexity === "medium" ? 1 : 0;
+  const instB = b.install_complexity === "easy" ? 2 : b.install_complexity === "medium" ? 1 : 0;
+  if (instA !== instB) return instB - instA;
+  return (b.stars_per_day || 0) - (a.stars_per_day || 0);
+}).limit(3);
+
+if (picks.length > 0) {
+  for (const p of picks) {
+    const use = p.use_case || p.description || "";
+    const lang = p.language || "";
+    const install = p.install_complexity === "easy" ? "Easy" : p.install_complexity === "medium" ? "Mid" : "Hard";
+    dv.paragraph(`### ${p.file.link}\n**${p.stars_per_day}** stars/天 · ${p.category || ""} · ${lang} · ${install}\n> ${use}`);
+  }
+} else {
+  dv.paragraph("Inbox 已清空！");
+}
+```
+
 ## Inbox（待分流）
 
 ```dataviewjs

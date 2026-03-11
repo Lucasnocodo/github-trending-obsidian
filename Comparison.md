@@ -511,6 +511,78 @@ if (scores.length > 10) {
 }
 ```
 
+## 維護健康警示
+
+> [!warning] 需要注意的專案健康問題
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const warnings = [];
+for (const p of pages) {
+  const issues = [];
+  const pushed = p.pushed_at ? new Date(p.pushed_at.toString()) : null;
+  const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
+  if (daysSincePush !== null && daysSincePush > 30 && (p.stars_per_day || 0) > 20) {
+    issues.push(`${daysSincePush} 天未推送`);
+  }
+  const openRatio = p.stars > 0 ? ((p.open_issues || 0) / p.stars * 100) : 0;
+  if (openRatio > 10 && (p.open_issues || 0) > 20) {
+    issues.push(`Issue 密度 ${openRatio.toFixed(1)}%`);
+  }
+  if ((p.contributor_count || 0) <= 1 && (p.stars || 0) > 500) {
+    issues.push("Solo 維護者");
+  }
+  const lic = (p.license || "").toString();
+  if (!lic || lic === "N/A") {
+    issues.push("無授權");
+  }
+  if (issues.length > 0) {
+    warnings.push({ link: p.file.link, stars: p.stars_per_day || 0, cat: p.category || "", issues: issues.join(" | ") });
+  }
+}
+if (warnings.length > 0) {
+  warnings.sort((a, b) => b.stars - a.stars);
+  dv.table(
+    ["專案", "Stars/天", "分類", "警示"],
+    warnings.slice(0, 15).map(w => [w.link, w.stars, w.cat, w.issues])
+  );
+} else {
+  dv.paragraph("所有專案健康狀態良好！");
+}
+```
+
+## 投入回報排行
+
+> [!abstract] 「低學習成本 + 高實用性」的最佳選擇
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const scored = [];
+for (const p of pages) {
+  let score = 0;
+  // Easy install = +30, Medium = +15, Hard = +5
+  score += p.install_complexity === "easy" ? 30 : p.install_complexity === "medium" ? 15 : 5;
+  // License friendly = +20
+  const friendly = ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unlicense"];
+  score += friendly.includes((p.license || "").toString()) ? 20 : 0;
+  // High stars = practical validation
+  const spd = p.stars_per_day || 0;
+  score += Math.min(30, Math.round(spd / 30 * 30));
+  // Maturity bonus
+  const created = p.created ? new Date(p.created.toString()) : null;
+  const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : 0;
+  score += age > 180 ? 20 : age > 30 ? 10 : 0;
+  scored.push({ link: p.file.link, score, install: p.install_complexity, license: p.license, spd, cat: p.category || "" });
+}
+scored.sort((a, b) => b.score - a.score);
+if (scored.length > 0) {
+  dv.table(
+    ["專案", "ROI 分數", "安裝", "授權", "Stars/天", "分類"],
+    scored.slice(0, 10).map(s => [s.link, s.score + "/100", s.install, s.license, s.spd, s.cat])
+  );
+}
+```
+
 ---
 
 > [!info] 使用方式
@@ -523,4 +595,6 @@ if (scores.length > 10) {
 > 7. 技術棧分佈了解語言生態
 > 8. 成長軌跡分析追蹤加速/減速趨勢
 > 9. 筆記豐富度排名找出需要充實的筆記
-> 10. 搭配 [[Triage]] 進行狀態管理
+> 10. 維護健康警示識別高風險專案
+> 11. 投入回報排行找出最佳 ROI 專案
+> 12. 搭配 [[Triage]] 進行狀態管理
