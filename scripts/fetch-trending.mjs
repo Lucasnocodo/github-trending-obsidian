@@ -514,6 +514,14 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   );
   lines.push('');
 
+  // ── README 資訊不足警告 ──
+  const readmeLen = repo._readme?.length || 0;
+  if (readmeLen < 200 && !llmFailed) {
+    lines.push('> [!caution] README 資訊不足');
+    lines.push(`> 此專案的 README 僅 ${readmeLen} 字元，以下分析可能含有推測內容。建議直接查看 [GitHub](${repo.html_url}) 原始碼。`);
+    lines.push('');
+  }
+
   // ── LLM 失敗警告 ──
   if (llmFailed) {
     lines.push('> [!warning] AI 摘要產生失敗');
