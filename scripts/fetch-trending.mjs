@@ -557,14 +557,23 @@ async function fileExists(path) {
 }
 
 // ── v12: 間隔複習日期計算 ──────────────────────────────────
-function nextReviewDate(today, starsPerDay, myRating = 0) {
+function nextReviewDate(today, starsPerDay, myRating = 0, reviewCount = 0) {
   const d = new Date(today);
+  // SM2-like 間隔：基礎間隔隨複習次數遞增
+  // 第 0 次（首次）→ 基礎天數
+  // 第 1 次 → 基礎 x 2
+  // 第 2 次 → 基礎 x 4
+  // 第 3+ 次 → 基礎 x 8 (cap)
+  const multiplier = reviewCount === 0 ? 1 : reviewCount === 1 ? 2 : reviewCount === 2 ? 4 : 8;
+
   // 基礎間隔：高 stars 3 天、中 7 天、低 14 天
-  let days = starsPerDay >= 200 ? 3 : starsPerDay >= 30 ? 7 : 14;
-  // 評分衰減：已評分過的 repo 延長複習間隔（避免重複回顧已看過的）
-  if (myRating >= 4) days = Math.max(days, 30);       // 高評分：至少 30 天後
-  else if (myRating >= 3) days = Math.max(days, 14);   // 中評分：至少 14 天後
-  else if (myRating >= 1) days = Math.max(days, 7);    // 低評分：至少 7 天後
+  let baseDays = starsPerDay >= 200 ? 3 : starsPerDay >= 30 ? 7 : 14;
+
+  // 評分衰減：已評分過的 repo 拉長基礎間隔
+  if (myRating >= 4) baseDays = Math.max(baseDays, 14);
+  else if (myRating >= 3) baseDays = Math.max(baseDays, 10);
+
+  let days = Math.min(baseDays * multiplier, 90); // 最長 90 天
   d.setDate(d.getDate() + days);
   return d.toISOString().split('T')[0];
 }
