@@ -7,7 +7,7 @@ language: Python
 license: MIT
 description: "Apple Silicon (MLX) port of Karpathy's autoresearch — autonomous AI research loops on Mac, no PyTorch required."
 homepage: ""
-stars: 479
+stars: 480
 stars_per_day: 240
 forks: 68
 open_issues: 3
@@ -22,6 +22,8 @@ install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
+use_case: "讓 Apple Silicon 用戶無需 PyTorch 就能自動化 AI 研究流程。"
+priority: medium
 tags:
   - github
   - "category/ai_ml"
@@ -30,39 +32,39 @@ tags:
 aliases:
   - "autoresearch-mlx"
   - "trevin-creator/autoresearch-mlx"
-  - "讓 Apple Silicon 用戶能在不依賴 PyTorch 的情況下，進行自動化的 AI 研究實驗。"
+  - "讓 Apple Silicon 用戶無需 PyTorch 就能自動化 AI 研究流程。"
 ---
 
 # autoresearch-mlx
 
-**479** stars · **240** stars/天 · 建立 2 天前 · Python · MIT
+**480** stars · **240** stars/天 · 建立 2 天前 · Python · MIT
 
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓 Apple Silicon 用戶能在不依賴 PyTorch 的情況下，進行自動化的 AI 研究實驗。
+> 讓 Apple Silicon 用戶無需 PyTorch 就能自動化 AI 研究流程。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (240 stars/day)
-> **適合** 希望在 Apple Silicon 上進行 AI 研究但不想依賴 PyTorch 的獨立開發者。
-> **一句話重點** 這個專案讓 Apple Silicon 用戶能夠輕鬆進行自動化 AI 研究，無需繁瑣的依賴設置。
+> **適合** 需要在 Apple Silicon 上進行 AI 研究但不想依賴 PyTorch 的開發者。
+> **一句話重點** 這個專案證明了 Apple Silicon 在 AI 研究中的潛力，並簡化了開發者的工作流程。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於無需 PyTorch 即可在 Apple Silicon 上進行高效的自動化 AI 研究。
+> 這個專案的核心創新在於無需 PyTorch 的 Apple Silicon 原生訓練。
 
 ## 專案簡介
 
-這個專案是 Karpathy 的 autoresearch 的 Apple Silicon 移植版本，透過 `program.md` 控制固定時間的自動研究迴圈。使用者只需編輯 `train.py`，每 5 分鐘進行一次訓練實驗，並根據 `val_bpb` 指標決定是否保留變更，這樣的迴圈可以持續進行。專案依賴於 MLX，實現了無需 PyTorch 或 CUDA 的原生訓練，並且支援 Python 3.10 以上版本。與傳統的 autoresearch 相比，它簡化了訓練過程，並且專注於 Apple Silicon 的性能優化。這個工具在小型硬體上表現出色，能夠在固定的時間內進行更多的優化步驟，從而提高訓練效率。根據公開的基準結果，最好的模型在 5 分鐘內達到了 `1.294526` 的 `val_bpb`，顯示出小型模型在時間限制下的優勢。這個專案目前處於穩定階段，適合需要在 Apple Silicon 環境中進行快速實驗的開發者。建議在需要快速迭代和不依賴重型框架的情況下使用，若需更複雜的模型或依賴於 CUDA 的功能則不適合。
+這個專案是 Karpathy 的 autoresearch 在 Apple Silicon 上的移植，透過 `program.md` 控制固定時間的自動研究迴圈。用戶只需編輯 `train.py`，在 5 分鐘的訓練預算內進行模型訓練，並根據 `val_bpb` 指標決定是否保留或回退更改。它使用 MLX 框架，無需 PyTorch 或 CUDA，並支援 Python 3.10+。與原版相比，這個移植專注於 Apple Silicon 的特性，提供更快的訓練速度和更高的效率。實際測試顯示，較小的模型在固定時間內能夠比大型模型獲得更好的結果，這是因為它們能在預算內進行更多的優化步驟。這個專案目前處於穩定階段，適合需要在 Apple Silicon 上進行 AI 研究的開發者。建議在需要快速迭代和實驗的情況下使用，但對於需要 PyTorch 生態系統的用戶則不太適合。
 
 **技術棧**：`Python 3.10+` · `MLX`
 
 ## 重點功能
 
-- 無需 PyTorch 或 CUDA — 透過 MLX 實現原生 Apple Silicon 訓練。
-- 固定時間的自動化實驗 — 每次實驗限制在 5 分鐘內，快速迭代。
-- 簡化的訓練流程 — 使用 `train.py` 和 `program.md` 控制實驗。
-- 公開基準結果 — 提供 `results.tsv` 以追蹤實驗歷史和性能。
-- 小型模型優化 — 在固定時間內能進行更多優化步驟，提升訓練效率。
+- 固定時間訓練迴圈 — 每次訓練預算為 5 分鐘，透過 git 進行版本控制。
+- 無需 PyTorch 或 CUDA — 完全在 Apple Silicon 上運行，使用 MLX 框架。
+- 自動化實驗協議 — 使用 `program.md` 定義實驗流程，簡化操作。
+- 數據準備和評估 — `prepare.py` 負責數據處理和評估，保持固定。
+- 簡化的訓練路徑 — `train.py` 只使用 AdamW 優化器，降低配置複雜度。
 
 ## 快速開始
 
@@ -70,7 +72,7 @@ aliases:
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
-2. 安裝依賴
+2. 安裝依賴項
 ```bash
 uv sync
 ```
@@ -85,49 +87,45 @@ uv run train.py
 
 ## 程式碼範例
 
-```python
-# 編輯 train.py 以進行模型訓練
-# 然後運行訓練實驗
+```bash
 uv run train.py
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 trevin-creator 是一位專注於 Apple Silicon 的開發者，這個專案切中 Apple 硬體用戶對於無需 PyTorch 的需求。隨著 Apple Silicon 的普及，越來越多的開發者尋求能在其平台上高效運行的工具，這使得 autoresearch-mlx 在社群中受到關注。
+> 作者 trevin-creator 專注於 Apple Silicon 的優化，滿足了對無需 PyTorch 的輕量化 AI 研究需求。隨著 Apple Silicon 的普及，這個專案能夠讓更多開發者利用其硬體優勢進行 AI 開發。這個移植的推出正好契合了使用者對於高效能和簡化環境的需求。
 
 ## 適合誰使用
 
-**目標受眾**：希望在 Apple Silicon 上進行 AI 研究但不想依賴 PyTorch 的獨立開發者。
+**目標受眾**：需要在 Apple Silicon 上進行 AI 研究但不想依賴 PyTorch 的開發者。
 
 > [!example] 使用場景
-> - AI 研究員用它來在 Apple Silicon 上自動化訓練模型，因為這樣可以在不安裝重型依賴的情況下快速迭代。
-> - 機器學習工程師用它來探索不同的模型架構和超參數，因為它的固定時間實驗設計能有效提升訓練效率。
-> - 獨立開發者用它來在 Mac 上進行 AI 研究，因為它簡化了環境設置，讓他們專注於實驗而非配置。
+> - 資料科學家用它來在 Apple Silicon 上快速測試不同的模型配置，因為它能在固定時間內自動化實驗流程，節省了手動調整的時間。
+> - 機器學習工程師用它來進行模型優化，因為它提供了簡單的版本控制和自動回退機制，避免了不必要的錯誤。
+> - 獨立開發者用它來在 Mac 上進行 AI 研究，因為無需安裝複雜的 PyTorch 環境，降低了入門門檻。
 
 ## 架構分析
 
-這是一個 CLI 工具，架構為單體應用。用戶輸入 → 編輯 `train.py` → 運行實驗 → 輸出結果到 `results.tsv`。關鍵技術決策是使用 MLX 進行原生訓練，專案目錄結構包含 `train.py`、`prepare.py` 和 `program.md` 等核心檔案。
+專案採用單體架構，使用者透過編輯 `train.py` 來調整模型，然後執行 `uv run train.py` 進行訓練。數據流從用戶輸入（修改 `train.py`）→ 處理（訓練模型）→ 輸出（評估結果）。關鍵技術決策是使用 MLX 取代 PyTorch/CUDA，專案目錄中包含 `prepare.py`、`train.py` 和 `program.md` 等重要檔案。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 無需重型依賴，簡化環境設置。
-> - 固定時間的自動化實驗設計，提升效率。
-> - 專注於 Apple Silicon 硬體的性能優化，適合小型模型。
-> - 公開基準結果，便於用戶追蹤實驗歷史。
+> - 無需安裝複雜的 PyTorch 環境，簡化了開發流程。
+> - 能夠充分利用 Apple Silicon 的硬體優勢，提供高效能訓練。
+> - 自動化的實驗迴圈減少了手動調整的時間，提升了工作效率。
 
 > [!danger] 缺點
-> - 僅支援 Apple Silicon 硬體，無法在其他平台上運行。
-> - 不支援 CUDA，限制了某些高效能需求。
-> - MFU 報告不完整，無法提供全面的性能指標。
-> - 需要 Python 3.10 以上版本，對於舊版用戶不友好。
+> - 目前僅支援 Apple Silicon，對其他平台無法使用。
+> - 缺乏對 PyTorch 生態系統的支持，限制了某些功能。
+> - MFU 報告不完整，無法提供詳細的性能指標。
 
 > [!warning] 注意事項
 > - 僅支援 Apple Silicon 硬體。
-> - 需要 Python 3.10 以上版本。
-> - MFU 報告目前為佔位符，未提供完整的性能指標。
-> - 不支援 CUDA 或其他 GPU 加速方案。
+> - 需要 Python 3.10+ 環境。
+> - 目前不支援 Windows 系統。
+> - MFU 報告為佔位符，缺乏詳細的性能指標。
 
 ## 技術細節
 
@@ -137,7 +135,7 @@ uv run train.py
 | Open Issues | 3 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-08 |
-| Repo 大小 | 58 KB |
+| Repo 大小 | 51 KB |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
@@ -224,8 +222,6 @@ uv run train.py
 ## 延伸閱讀
 
 相關概念：[[自動化測試]] · [[機器學習]] · [[深度學習]]
-
-相關專案：[[karpathy--autoresearch|karpathy/autoresearch (原版，CUDA)]] · [[sanbuphy--nanoAgent|nanoAgent]]
 
 [GitHub](https://github.com/trevin-creator/autoresearch-mlx)
 

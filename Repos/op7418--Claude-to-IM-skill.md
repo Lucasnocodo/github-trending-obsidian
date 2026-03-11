@@ -7,7 +7,7 @@ language: TypeScript
 license: MIT
 description: "Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark."
 homepage: ""
-stars: 829
+stars: 830
 stars_per_day: 166
 forks: 106
 open_issues: 35
@@ -22,6 +22,8 @@ install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
+use_case: "讓你可以從 Telegram、Discord 或 Feishu/Lark 與 AI 編程代理進行對話。"
+priority: medium
 tags:
   - github
   - "category/開發工具"
@@ -35,41 +37,39 @@ tags:
 aliases:
   - "Claude-to-IM-skill"
   - "op7418/Claude-to-IM-skill"
-  - "讓你在 Telegram、Discord、Feishu/Lark 等即時通訊平台上與 AI 編程代理對話。"
+  - "讓你可以從 Telegram、Discord 或 Feishu/Lark 與 AI 編程代理進行對話。"
 ---
 
 # Claude-to-IM-skill
 
-**829** stars · **166** stars/天 · 建立 5 天前 · TypeScript · MIT
+**830** stars · **166** stars/天 · 建立 5 天前 · TypeScript · MIT
 
 `easy-install`
 
 > [!summary] 一句話摘要
-> 讓你在 Telegram、Discord、Feishu/Lark 等即時通訊平台上與 AI 編程代理對話。
+> 讓你可以從 Telegram、Discord 或 Feishu/Lark 與 AI 編程代理進行對話。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (166 stars/day)
-> **適合** 需要在多個即時通訊平台上與 AI 進行互動的開發團隊。
-> **一句話重點** 這個專案的強大之處在於它能將 AI 編程助手無縫整合到即時通訊平台，讓開發者能在熟悉的環境中獲得幫助。
+> **適合** 希望在即時通訊平台上與 AI 編程助手互動的開發者。
+> **一句話重點** 這個專案讓開發者能夠在即時通訊平台上輕鬆使用 AI 編程助手，提升工作效率。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個簡單的方式，將 AI 編程代理整合到多個即時通訊平台中，無需編寫代碼。
+> 這個專案提供了一個簡單的方式，讓開發者可以在即時通訊平台上與 AI 編程助手進行互動，無需編寫任何代碼。
 
 ## 專案簡介
 
-這個專案透過一個背景守護進程，將即時通訊平台的訊息轉發給 Claude Code 或 Codex，並將回應發回聊天中。使用者只需執行 `/claude-to-im setup` 來進行互動式設置，並選擇所需的即時通訊平台。它支援 Telegram、Discord、Feishu/Lark 和 QQ 四種平台，並提供即時回應的串流預覽功能。與其他類似工具相比，這個專案的獨特之處在於它的權限控制，使用者可以透過聊天中的按鈕來批准工具的使用，這在 Telegram 和 Discord 中尤為方便。這個工具的會話持久性意味著即使守護進程重啟，對話也不會丟失。使用者需要 Node.js 20 以上版本，並需安裝 Claude Code 或 Codex CLI。這個專案目前處於穩定階段，適合中小型團隊使用，特別是那些需要在多個即時通訊平台上進行編程的團隊。建議在需要即時回應和權限控制的情況下使用，若不需要即時通訊功能則可考慮其他工具。
+這個專案透過一個背景守護進程，將 IM 平台的訊息轉發給 Claude Code 或 Codex，並將回應發送回聊天中。用戶只需安裝並執行 `/claude-to-im setup`，即可輕鬆設置與 AI 的互動。它支援 Telegram、Discord、Feishu/Lark 和 QQ 四種 IM 平台，並提供即時預覽功能，讓用戶能看到 Claude 的回應過程。與其他工具相比，這個專案的獨特之處在於它的互動設置向導和權限控制，確保用戶能夠安全地使用 AI 工具。使用者可以在對話中直接授權 Claude 使用工具，這在其他類似工具中並不常見。這個專案的使用效果良好，但需要 Node.js 20 以上的環境，並且需要安裝 Claude Code 或 Codex CLI。整體來說，這是一個穩定的專案，適合中小型團隊使用，特別是那些希望在 IM 平台上進行編程的開發者。建議在需要快速集成 AI 編程助手時使用，但如果團隊需要更複雜的 GUI 介面，則可能需要考慮其他解決方案。
 
 **技術棧**：`Node.js 20` · `TypeScript` · `Shell` · `PowerShell` · `JavaScript`
 
 ## 重點功能
 
-- 四個即時通訊平台支援 — 同時支援 Telegram、Discord、Feishu/Lark 和 QQ。
-- 互動式設置 — 向導式收集令牌，提供逐步指導。
-- 權限控制 — 工具調用需要明確批准，增強安全性。
-- 串流預覽 — 在 Telegram 和 Discord 中即時查看 Claude 的回應。
-- 會話持久性 — 即使守護進程重啟，對話仍然保存。
-- 秘密保護 — 令牌以 `chmod 600` 存儲，並在所有日誌中自動隱藏。
-- 零代碼要求 — 安裝技能後只需運行 `/claude-to-im setup`。
+- 四個 IM 平台支援 — 同時支援 Telegram、Discord、Feishu/Lark 和 QQ。
+- 互動式設置 — 提供逐步指導的向導收集 API 令牌。
+- 權限控制 — 工具調用需要用戶明確批准，增強安全性。
+- 即時預覽 — 在 Telegram 和 Discord 中可以看到 Claude 的回應過程。
+- 會話持久性 — 即使守護進程重啟，對話仍然可以保留。
 
 ## 快速開始
 
@@ -81,9 +81,9 @@ aliases:
 ```bash
 /claude-to-im start
 ```
-3. 在即時通訊應用中發送消息
+3. 開始聊天
 ```bash
-發送消息給你的 bot
+在 IM 應用中發送消息給機器人
 ```
 
 ## 程式碼範例
@@ -95,47 +95,38 @@ aliases:
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案的作者有著豐富的開發經驗，並且針對即時通訊平台的需求進行了精準的切入。隨著遠端工作的普及，開發者對於在即時通訊工具中集成 AI 助手的需求日益增加，這使得該專案在市場上獲得了更多的關注。
+> 這個專案由經驗豐富的開發者 op7418 和 yoka1234 提供，切中開發者在即時通訊平台上與 AI 互動的需求。隨著 AI 編程助手的普及，開發者對於如何在日常工作中更方便地使用這些工具的需求日益增加。這個專案的推出正好滿足了這一需求，並且提供了簡單的安裝和設置流程。
 
 ## 適合誰使用
 
-**目標受眾**：需要在多個即時通訊平台上與 AI 進行互動的開發團隊。
+**目標受眾**：希望在即時通訊平台上與 AI 編程助手互動的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來在 Discord 中與 AI 代理進行即時編程，因為這樣可以快速獲得代碼建議，提升工作效率。
-> - 產品經理用它來在 Telegram 中詢問 AI 代理關於功能實現的建議，因為這樣可以在會議中即時獲得技術支持。
-> - DevOps 工程師用它來在 Feishu 中管理 CI/CD 流程，因為可以即時獲得系統狀態和日誌，快速反應問題。
+> - 後端工程師用它來在 Discord 上與 AI 編程助手互動，因為這樣可以快速獲得代碼建議，提升開發效率。
+> - 前端開發者用它來在 Telegram 中請求即時的代碼片段，因為這樣可以在不打開 IDE 的情況下快速獲得幫助。
+> - DevOps 工程師用它來在 Feishu 中監控 AI 編程助手的狀態，因為這樣可以隨時掌握工具的運行情況，避免中斷工作流。
 
 ## 架構分析
 
-這是一個基於 CLI 的工具，通過 Node.js 背景守護進程來實現即時通訊平台與 AI 編程代理的連接。用戶輸入 → 背景守護進程處理 → AI 編程代理回應。關鍵技術決策包括使用 SDK 來與 Claude Code 或 Codex 進行交互。專案目錄結構中，`README.md` 提供了詳細的安裝和使用說明。
+這是一個基於 CLI 的應用，使用 Node.js 作為核心架構。用戶輸入通過 IM 平台的 API 進入背景守護進程，然後轉發給 Claude Agent SDK 或 Codex SDK，最後將回應發送回用戶。專案目錄結構中，關鍵檔案包括 `setup.js` 和 `daemon.js`，這些檔案負責設置和管理守護進程的運行。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支援多個即時通訊平台，靈活性高。
-> - 提供即時回應的串流預覽，提升使用體驗。
-> - 權限控制機制增強了安全性，適合團隊使用。
-> - 設置過程簡單，無需編寫代碼。
+> - 簡單的安裝和設置流程，適合新手使用。
+> - 支援多種即時通訊平台，靈活性高。
+> - 提供即時回應預覽，增強用戶體驗。
 
 > [!danger] 缺點
-> - 僅支援 Node.js 20 以上版本，限制了使用者範圍。
-> - 需要額外安裝 Claude Code 或 Codex CLI，增加了安裝複雜度。
-> - 不支援 Windows 環境，限制了使用者選擇。
-> - 對於大型團隊，可能需要更多的權限管理功能。
+> - 需要額外的 CLI 工具安裝，對於不熟悉的用戶可能有學習曲線。
+> - 不支援 Windows，限制了部分用戶的使用。
+> - 對於大型團隊，可能需要額外的管理和監控工具。
 
 > [!warning] 注意事項
-> - 僅支援 Node.js 20 以上版本。
+> - 需要 Node.js 20 以上的環境。
 > - 需要安裝 Claude Code CLI 或 Codex CLI。
-> - 不支援 Windows 環境。
-> - 可能需要額外的 API 權限設置。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [[op7418--CodePilot\|op7418/CodePilot]] | CodePilot 提供完整的桌面 GUI，適合需要可視化界面的使用者，而 Claude-to-IM Skill 則專注於 CLI 環境，適合喜歡輕量化的開發者。 |
-| [[openai--codex\|openai/codex]] | Codex 是一個強大的編程助手，但缺乏即時通訊集成，Claude-to-IM Skill 則專注於將 Codex 整合到即時通訊平台中。 |
+> - 不支援 Windows 平台的直接安裝。
+> - 對於大型團隊，可能需要額外的管理和監控工具。
 
 ## 技術細節
 
@@ -161,11 +152,6 @@ aliases:
 > | --- | --- |
 > | [@op7418](https://github.com/op7418) | 3 |
 > | [@yoka1234](https://github.com/yoka1234) | 1 |
-
-## 社群與生態
-
-**社群活躍度**：社群活躍度中等，有持續的更新和維護。
-**連結**：[文件](https://github.com/op7418/Claude-to-IM-skill/blob/main/README_CN.md)
 
 ## README 摘錄
 
@@ -289,8 +275,6 @@ aliases:
 ## 延伸閱讀
 
 相關概念：[[CLI/TUI]] · [[API 設計]] · [[自動化測試]]
-
-相關專案：[[op7418--CodePilot|op7418/CodePilot]] · [[openai--codex|openai/codex]]
 
 [GitHub](https://github.com/op7418/Claude-to-IM-skill)
 

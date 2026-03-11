@@ -7,9 +7,9 @@ language: Python
 license: N/A
 description: "AI agents running research on single-GPU nanochat training automatically"
 homepage: ""
-stars: 22525
-stars_per_day: 5631
-forks: 2859
+stars: 22604
+stars_per_day: 5651
+forks: 2870
 open_issues: 69
 created: 2026-03-06
 pushed_at: 2026-03-09
@@ -22,6 +22,8 @@ install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
+use_case: "讓 AI 自動進行 LLM 訓練實驗，你只需早上查看結果。"
+priority: medium
 tags:
   - github
   - "category/ai_ml"
@@ -30,47 +32,47 @@ tags:
 aliases:
   - "autoresearch"
   - "karpathy/autoresearch"
-  - "讓 AI 自動進行單 GPU 的 nanochat 訓練實驗，早上醒來就能看到結果。"
+  - "讓 AI 自動進行 LLM 訓練實驗，你只需早上查看結果。"
 ---
 
 # autoresearch
 
-**22.5k** stars · **5.6k** stars/天 · 建立 4 天前 · Python · 未標註授權
+**22.6k** stars · **5.7k** stars/天 · 建立 4 天前 · Python · 未標註授權
 
 `easy-install`
 
 > [!summary] 一句話摘要
-> 讓 AI 自動進行單 GPU 的 nanochat 訓練實驗，早上醒來就能看到結果。
+> 讓 AI 自動進行 LLM 訓練實驗，你只需早上查看結果。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (5.6k stars/day)
-> **適合** 希望在單 GPU 環境下進行自動化 LLM 訓練的 AI 研究者和開發者。
-> **一句話重點** 這個專案展示了如何利用 AI agent 自動化 LLM 訓練，為研究者提供了一個全新的實驗方式。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (5.7k stars/day)
+> **適合** 希望在單一 NVIDIA GPU 上自動化 LLM 訓練的研究者和開發者。
+> **一句話重點** 這個專案展示了如何利用 AI agent 自動化 LLM 訓練，讓研究者能夠專注於結果而非過程。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於讓 AI agent 自動進行 LLM 訓練實驗，並在固定時間內找到最佳模型配置。
+> 這個專案的創新在於讓 AI agent 自動修改訓練代碼並進行實驗，實現完全自動化的研究流程。
 
 ## 專案簡介
 
-這個專案讓 AI agent 在單一 GPU 上自動進行 LLM 訓練實驗，過程中它會修改訓練代碼、訓練 5 分鐘、檢查結果並決定是否保留變更，最終生成實驗日誌。核心技術使用 Python 和 Jupyter Notebook，並依賴於 PyTorch 進行模型訓練，訓練時間固定為 5 分鐘，使用 val_bpb 作為評估指標。與傳統的手動調參方式相比，這種自動化方法能夠在短時間內進行大量實驗，並且每次實驗的結果可直接比較。雖然目前僅支援 NVIDIA GPU，但設計上簡化了依賴，適合快速迭代和實驗。這個專案目前仍在 alpha 階段，適合對 AI 研究有興趣的開發者和研究者使用。建議在需要快速實驗和迭代的情況下使用，但不適合需要高效能計算的場景。
+這個專案讓 AI agent 在單一 GPU 上自動進行 LLM 訓練實驗，過程中會不斷修改訓練代碼，並在每次訓練後檢查結果。具體來說，AI agent 每 5 分鐘進行一次訓練，並根據驗證指標（val_bpb）來決定是否保留或丟棄當前模型。技術上，它使用了 PyTorch 和 Muon + AdamW 優化器，並且只需一個 Python 檔案（train.py）來進行所有修改，這使得範圍可控且容易追蹤變更。與其他自動化訓練工具相比，這個專案的獨特之處在於它的固定時間預算設計，讓不同的實驗結果可以直接比較。實際使用中，這種方法可以在一夜之間進行約 100 次實驗，但目前僅支援 NVIDIA GPU，對於其他硬體的支援尚未完善。這個專案仍在發展中，適合對 LLM 訓練有興趣的研究團隊，尤其是小型團隊或獨立開發者。建議在需要快速迭代和實驗的情況下使用，但如果需要更複雜的配置或多 GPU 支援則不適合。
 
-**技術棧**：`Python 3.10+` · `PyTorch`
+**技術棧**：`Python 3.10` · `PyTorch`
 
 ## 重點功能
 
-- 自動化實驗 — AI agent 自動修改 train.py 進行訓練，無需手動介入。
-- 固定訓練時間 — 每次訓練固定 5 分鐘，便於實驗結果比較。
-- 簡化設置 — 只需一個 NVIDIA GPU 和簡單的 Python 環境即可運行。
-- 基於 Markdown 的指令 — 使用 program.md 文件來設定 AI agent 的行為。
-- 單一文件修改 — agent 僅修改 train.py，保持代碼範圍可控。
+- 自動化訓練 — AI agent 每 5 分鐘自動修改訓練代碼並進行訓練。
+- 固定時間預算 — 每次訓練固定 5 分鐘，方便比較不同實驗結果。
+- 簡化設計 — 只需一個 Python 檔案（train.py）進行所有修改，降低複雜度。
+- 單一 GPU 支援 — 專為單一 NVIDIA GPU 設計，無需複雜的分散式訓練。
+- 驗證指標 — 使用 val_bpb 作為評估標準，確保不同架構的公平比較。
 
 ## 快速開始
 
-1. 安裝 uv 專案管理器
+1. 安裝 uv 專案管理工具
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
-2. 安裝依賴
+2. 安裝依賴項
 ```bash
 uv sync
 ```
@@ -78,7 +80,7 @@ uv sync
 ```bash
 uv run prepare.py
 ```
-4. 手動運行一次訓練實驗
+4. 手動運行單次訓練實驗
 ```bash
 uv run train.py
 ```
@@ -86,44 +88,45 @@ uv run train.py
 ## 程式碼範例
 
 ```python
-# 在 program.md 中設定 AI agent 的行為
+# 開始自動化實驗
 Hi have a look at program.md and let's kick off a new experiment! let's do the setup first.
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> Karpathy 是知名的 AI 研究者，他的專案切中自動化研究的需求，特別是在 LLM 訓練領域。這個專案的獨特性在於它的自動化實驗流程，並且在 AI 研究界引起了廣泛的討論和關注。
+> Karpathy 是知名的 AI 研究者，這個專案切中自動化研究的需求，尤其是在 LLM 領域。隨著 AI 研究的迅速發展，對於能夠自動化實驗的工具需求日益增加。這個專案的推出正好在這個時候，讓許多研究者和開發者感受到它的潛力。
 
 ## 適合誰使用
 
-**目標受眾**：希望在單 GPU 環境下進行自動化 LLM 訓練的 AI 研究者和開發者。
+**目標受眾**：希望在單一 NVIDIA GPU 上自動化 LLM 訓練的研究者和開發者。
 
 > [!example] 使用場景
-> - AI 研究者用它來自動化 LLM 訓練實驗，因為這樣可以在一夜之間進行多達 100 次實驗，節省大量手動調參的時間。
-> - 資料科學家用它來快速迭代模型架構，因為 AI agent 可以在固定時間內自動調整超參數，找到最佳模型配置。
-> - 開發者用它來測試不同的訓練策略，因為只需修改 program.md，就能讓 AI agent 自動進行實驗，無需深入代碼。
+> - AI 研究者用它來自動化 LLM 訓練實驗，因為這樣可以在一夜之間進行約 100 次實驗，節省大量時間。
+> - 獨立開發者用它來快速迭代模型架構，因為只需修改一個檔案，且訓練時間固定，易於比較。
+> - 小型團隊用它來探索最佳訓練參數，因為不需要複雜的配置和多 GPU 支援，降低了入門門檻。
 
 ## 架構分析
 
-這是一個單體架構的專案，主要由三個文件組成：prepare.py 負責數據準備，train.py 是 AI agent 修改的核心訓練代碼，而 program.md 則是提供給 agent 的指令。用戶輸入 → agent 修改 train.py → 執行訓練 → 輸出實驗結果。
+這是一個簡單的單體架構，主要由三個檔案組成：prepare.py（數據準備和工具）、train.py（模型和訓練邏輯，供 agent 修改）、program.md（agent 指令）。用戶輸入 → agent 修改 train.py → 執行訓練 → 輸出實驗結果。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化實驗流程，節省時間和精力。
-> - 固定訓練時間使得實驗結果易於比較。
-> - 簡化的設置過程，適合快速上手。
+> - 簡化的單一檔案修改設計，降低了使用門檻。
+> - 固定的訓練時間預算使得實驗結果可比較。
+> - 自動化的實驗流程節省了大量時間，特別適合夜間運行。
 
 > [!danger] 缺點
-> - 僅支援單一 GPU，限制了使用範圍。
-> - 固定的訓練時間可能不符合所有用戶需求。
-> - 仍在 alpha 階段，穩定性和功能可能不完善。
+> - 僅限於 NVIDIA GPU，對於其他硬體不友好。
+> - 缺乏對多 GPU 或分散式訓練的支援，限制了擴展性。
+> - 固定的訓練時間可能不適合所有使用場景，影響結果的可比性。
 
 > [!warning] 注意事項
-> - 僅支援單一 NVIDIA GPU，未來可能支援其他平台。
-> - 固定的訓練時間限制可能不適合所有情況，無法與其他平台的結果直接比較。
-> - 目前仍在 alpha 階段，API 可能會變動。
+> - 僅支援 NVIDIA GPU，尚未支援其他硬體平台。
+> - 訓練時間固定為 5 分鐘，無法調整以適應不同需求。
+> - 不支援分散式訓練，僅適合單一 GPU 環境。
+> - 目前仍在開發中，可能存在不穩定性和未來 API 變更。
 
 ## 技術細節
 
@@ -218,8 +221,6 @@ Hi have a look at program.md and let's kick off a new experiment! let's do the s
 ## 延伸閱讀
 
 相關概念：[[自動化測試]] · [[機器學習]] · [[深度學習]]
-
-相關專案：[[trevin-creator--autoresearch-mlx|autoresearch-mlx (Apple Silicon 移植版)]] · [[TinyAGI--fractals|TinyAGI/fractals (Agent 任務框架)]] · [[sanbuphy--nanoAgent|nanoAgent]]
 
 [GitHub](https://github.com/karpathy/autoresearch)
 

@@ -7,7 +7,7 @@ language: Python
 license: Apache-2.0
 description: "通用高质量 Skills 合集🔥"
 homepage: ""
-stars: 491
+stars: 492
 stars_per_day: 98
 forks: 39
 open_issues: 0
@@ -22,6 +22,8 @@ install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
+use_case: "提供一系列通用的高质量技能，讓 AI 代理自動選擇合適的技能來執行任務。"
+priority: medium
 tags:
   - github
   - "category/開發工具"
@@ -31,39 +33,39 @@ tags:
 aliases:
   - "best-skills"
   - "xstongxue/best-skills"
-  - "提供一套通用的高质量技能集合，讓 AI Agent 自動選擇適當的技能執行任務。"
+  - "提供一系列通用的高质量技能，讓 AI 代理自動選擇合適的技能來執行任務。"
 ---
 
 # best-skills
 
-**491** stars · **98** stars/天 · 建立 5 天前 · Python · Apache-2.0
+**492** stars · **98** stars/天 · 建立 5 天前 · Python · Apache-2.0
 
 `個人專案`
 
 > [!summary] 一句話摘要
-> 提供一套通用的高质量技能集合，讓 AI Agent 自動選擇適當的技能執行任務。
+> 提供一系列通用的高质量技能，讓 AI 代理自動選擇合適的技能來執行任務。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (98 stars/day)
-> **適合** 需要高效生成文檔和報告的學術研究者和自媒體創作者。
-> **一句話重點** 這個專案展示了如何通過自動化技能選擇來提升 AI Agent 的效率，讓用戶能夠更專注於創造性工作。
+> **適合** 需要自動化文書工作的研究生和專業人士。
+> **一句話重點** 這個專案展示了如何通過自動化技能選擇來提升 AI 代理的實用性，讓繁瑣的文書工作變得高效。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於它能夠根據用戶的需求自動選擇合適的技能，提升了使用的便捷性。
+> 這個專案的創新在於自動化技能選擇，讓 AI 代理能根據用戶描述自動判斷並調用相應技能。
 
 ## 專案簡介
 
-這個專案提供了一系列高質量的技能集合，旨在讓 AI Agent 根據用戶的需求自動選擇合適的技能進行操作。使用者只需在 Agent 的 skills 目錄中安裝這些技能，Agent 就能夠根據 `description` 中的關鍵字自動判斷是否調用相應的技能，無需手動選擇。技術上，這些技能是以 Markdown 格式編寫，並且可以與多種 Agent 工具（如 Cursor、Claude Code、Codex 等）兼容。與類似的工具如 best-prompts 相比，best-skills 的最大優勢在於它的自動化能力，能夠根據上下文自動選擇技能，而不是需要用戶手動複製粘貼。實際使用中，這些技能涵蓋了從學術寫作到自媒體創作的多個領域，支持多種任務，如論文撰寫、代碼審查和報告生成。這個專案目前處於穩定階段，適合各種規模的團隊使用，特別是需要高效生成文檔和報告的團隊。建議在需要快速生成內容或自動化重複性任務時使用，但如果你的需求非常特定，可能需要進一步定制技能。
+這個專案提供了一套通用的技能集合，讓 AI 代理能夠根據任務描述自動選擇合適的技能。用戶只需將這些技能安裝到支持的代理工具中，例如 Cursor 或 Claude Code，代理就能根據關鍵詞自動判斷是否調用相應的技能。技術上，這些技能以 Markdown 格式編寫，並包含多種功能，如論文撰寫、PPT 生成和自媒體創作，這些功能可以通過簡單的提示來觸發。與同類工具相比，這個專案的獨特之處在於它的自動化程度，無需手動選擇技能，從而提高了工作效率。實際使用中，這些技能能夠快速生成高質量的文檔和報告，適合需要大量文書工作的研究生或專業人士。這個專案目前處於穩定階段，值得在需要自動化文書工作的團隊中使用。對於不需要這麼高自動化的簡單任務，則可能顯得過於複雜。
 
-**技術棧**：`Python 3.8`
+**技術棧**：`Python 3.9`
 
 ## 重點功能
 
-- 自動技能選擇 — 根據用戶輸入的關鍵字自動選擇相應的技能，無需手動操作。
-- 支持多種任務 — 包括論文撰寫、代碼審查、報告生成等，滿足不同需求。
-- Markdown 格式 — 以 SKILL.md 格式編寫，易於理解和修改。
-- 多種 Agent 兼容 — 可安裝到 Cursor、Claude Code、Codex 等多種工具中。
-- 示例提示 — 每個技能都附帶示例提示，幫助用戶快速上手。
+- 自動技能選擇 — 根據用戶的描述自動選擇合適的技能，無需手動操作。
+- 多種文書技能 — 包括論文撰寫、PPT 生成、自媒體文章創作等，支持多種場景。
+- Markdown 格式 — 所有技能以 Markdown 格式編寫，便於使用和修改。
+- 支持多種代理工具 — 可安裝到 Cursor、Claude Code、Codex 等多種 AI 代理工具中。
+- 示例提示 — 提供多種示例提示，幫助用戶快速上手。
 
 ## 快速開始
 
@@ -75,58 +77,62 @@ git clone https://github.com/xstongxue/best-skills.git
 ```bash
 cd best-skills
 ```
-3. 將技能安裝到 Agent 的 skills 目錄
+3. 將技能安裝到代理工具中
 ```bash
-cp -r skills/* /path/to/your/agent/skills/
+cp skills/* /path/to/your/agent/skills
 ```
 
 ## 程式碼範例
 
 ```python
-# 使用示例
-agent.invoke('paper-write', '帮我审核一下这个论文大纲')
+# 使用示例提示生成論文大綱
+prompt = '帮我审核一下这个论文大纲'
+response = agent.call_skill('paper-write', prompt)
+print(response)
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 xstongxue 背景深厚，專注於開發高效的 AI 工具，這個專案切中了對於自動化和高效能的需求。隨著 AI 技術的普及，對於自動化技能的需求日益增加，這使得 best-skills 在市場上獲得了關注。
+> 作者 xstongxue 專注於提升 AI 代理的實用性，這個專案正好切中現代人對於高效工作的需求。隨著 AI 技術的普及，越來越多的用戶希望能夠自動化繁瑣的文書工作，這使得該專案在市場上受到關注。此外，隨著各種 AI 代理工具的興起，對於這類技能集的需求也隨之增加。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效生成文檔和報告的學術研究者和自媒體創作者。
+**目標受眾**：需要自動化文書工作的研究生和專業人士。
 
 > [!example] 使用場景
-> - 研究生用它來自動生成論文大綱，因為這樣可以節省大量的時間，並且確保結構合理。
-> - 自媒體創作者用它來快速生成文章封面和內容，因為這樣可以提升內容產出的效率，並且保持高質量。
-> - 軟體工程師用它來自動化代碼審查過程，因為這樣可以減少人為錯誤，並提高代碼質量。
+> - 研究生用它來自動生成論文大綱，因為手動撰寫大綱耗時且容易出錯。
+> - 內容創作者用它來快速生成自媒體文章，因為這樣可以節省大量的寫作時間。
+> - 開發者用它來生成項目文檔，因為這樣能夠確保文檔的完整性和一致性。
 
 ## 架構分析
 
-這是一個基於 CLI 的工具，使用者通過將技能安裝到 Agent 的 skills 目錄來使用。用戶輸入 → Agent 判斷關鍵字 → 自動選擇技能 → 執行任務。專案的目錄結構包括 skills 目錄，裡面存放各種技能的 SKILL.md 文件，這些文件定義了技能的行為和示例提示。
+該專案採用單體架構，所有技能以 Markdown 格式存放在 skills 目錄中。用戶通過將技能複製到代理工具的技能目錄來使用。用戶輸入 → 代理工具根據描述自動選擇技能 → 輸出結果。關鍵檔案包括各種 SKILL.md，定義了每個技能的功能和使用方法。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化程度高，減少了手動操作的需求。
-> - 支持多種任務，適用範圍廣泛。
-> - 易於擴展和修改，使用 Markdown 格式編寫。
+> - 自動化程度高，減少用戶手動操作。
+> - 技能集合多樣，適用於多種場景。
+> - Markdown 格式便於用戶修改和擴展。
 
 > [!danger] 缺點
-> - 對於特定需求的支持可能不夠靈活。
-> - 需要用戶具備一定的技能描述理解能力。
-> - 依賴於 Agent 的性能，若 Agent 表現不佳，則技能效果也會受到影響。
+> - 僅支援特定的代理工具，限制了使用範圍。
+> - 需要用戶具備一定的 Markdown 編輯能力。
+> - 技能的效果依賴於用戶提供的提示質量。
 
 > [!warning] 注意事項
-> - 僅支援特定的 Agent 工具，可能無法在所有環境中使用。
-> - 需要用戶對技能的描述有一定的理解，否則可能無法正確調用。
-> - 技能的效果依賴於 Agent 的性能，若 Agent 表現不佳，則技能效果也會受到影響。
+> - 僅支援特定的 AI 代理工具，如 Cursor 和 Claude Code。
+> - 需要用戶具備一定的 Markdown 編輯能力。
+> - 技能的效果依賴於用戶提供的提示質量。
+> - 不支持自定義技能的創建，需依賴預設的技能集。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [[xstongxue--best-prompts\|xstongxue/best-prompts]] | best-prompts 主要針對聊天框的提示，需要手動複製粘貼，而 best-skills 則是自動選擇技能，無需手動操作。 |
+| [[xstongxue--best-prompts\|xstongxue/best-prompts]] | best-prompts 提供的是手動複製的提示，而 best-skills 則是自動選擇技能，提升了使用的便捷性。 |
+| [[openai--gpt-3.5-turbo\|openai/gpt-3.5-turbo]] | GPT-3.5 是通用的語言模型，而 best-skills 提供的是針對特定任務的技能集合，更加專業化。 |
 
 ## 技術細節
 
@@ -213,9 +219,9 @@ agent.invoke('paper-write', '帮我审核一下这个论文大纲')
 
 ## 延伸閱讀
 
-相關概念：[[Prompt Engineering]] · [[Agent 框架]] · [[程式碼生成]]
+相關概念：[[自動化測試]] · [[API 設計]] · [[自然語言處理]]
 
-相關專案：[[xstongxue--best-prompts|xstongxue/best-prompts]] · [[HKUDS--CLI-Anything|CLI-Anything (軟體 → CLI)]] · [[autoclaw-cc--xiaohongshu-skills|小紅書 Skills]] · [[binance--binance-skills-hub|Binance Skills Hub]]
+相關專案：[[xstongxue--best-prompts|xstongxue/best-prompts]] · [[openai--gpt-3.5-turbo|openai/gpt-3.5-turbo]]
 
 [GitHub](https://github.com/xstongxue/best-skills)
 

@@ -7,7 +7,7 @@ language: Python
 license: MIT
 description: "Local SOCKS5 proxy server for partial bypassing of Telegram loading"
 homepage: ""
-stars: 783
+stars: 785
 stars_per_day: 131
 forks: 15
 open_issues: 4
@@ -18,50 +18,53 @@ week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
 release_tag: "v1.0.4"
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
+use_case: "透過 SOCKS5 代理伺服器加速 Telegram 的載入速度。"
+priority: medium
 tags:
   - github
   - "category/開發工具"
   - "lang/python"
+  - easy_install
 aliases:
   - "tg-ws-proxy"
   - "Flowseal/tg-ws-proxy"
-  - "透過 SOCKS5 代理加速 Telegram Desktop 的連接，改善載入速度。"
+  - "透過 SOCKS5 代理伺服器加速 Telegram 的載入速度。"
 ---
 
 # tg-ws-proxy
 
-**783** stars · **131** stars/天 · 建立 6 天前 · Python · MIT
+**785** stars · **131** stars/天 · 建立 6 天前 · Python · MIT
 
-`v1.0.4`
+`v1.0.4` `easy-install`
 
 > [!summary] 一句話摘要
-> 透過 SOCKS5 代理加速 Telegram Desktop 的連接，改善載入速度。
+> 透過 SOCKS5 代理伺服器加速 Telegram 的載入速度。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (131 stars/day)
-> **適合** 希望提升 Telegram Desktop 使用體驗的普通用戶和開發者。
-> **一句話重點** 這個專案的自動切換功能讓 Telegram 的使用體驗更為流暢，特別是在不穩定的網路環境中。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (131 stars/day)
+> **適合** 希望提升 Telegram 使用體驗的普通用戶和開發者。
+> **一句話重點** 這個專案專注於 Telegram 的特定需求，提供了一個簡單有效的加速方案。
 
 > [!abstract] 核心創新
-> 自動切換到直接 TCP 連接的功能，確保在 WebSocket 不可用時仍能保持連接。
+> 這個專案提供了一個專門針對 Telegram 的 SOCKS5 代理解決方案，能夠自動處理不同的連接方式。
 
 ## 專案簡介
 
-這個專案提供了一個本地 SOCKS5 代理伺服器，能夠將 Telegram Desktop 的流量透過 WebSocket 轉發到指定的伺服器，從而部分提升 Telegram 的使用體驗。具體流程是，Telegram Desktop 透過 SOCKS5 代理連接到本地伺服器，然後該伺服器再透過 WebSocket 連接到 Telegram 的數據中心。技術上，它使用 Python 實作，並依賴 WebSocket 和 MTProto 協議來進行數據傳輸。與其他 Telegram 代理工具相比，這個專案的特點在於它能夠自動切換到直接 TCP 連接，當 WebSocket 不可用時，這在連接不穩定的情況下特別有用。使用者可以輕鬆地透過系統托盤菜單來管理代理設定，並且支援詳細的日誌記錄。儘管這個專案在穩定性上已經達到 v1.0.4，但仍然需要注意其對於特定 Telegram 數據中心的依賴。對於需要穩定連接的使用者，這個工具非常適合，但在高流量環境下可能會遇到性能瓶頸。建議在低延遲的網路環境中使用，以獲得最佳效果。
+這個專案提供一個本地的 SOCKS5 代理伺服器，能夠將 Telegram Desktop 的流量透過 WebSocket 轉發到指定的伺服器，從而部分加速 Telegram 的使用體驗。具體流程是：Telegram Desktop 透過 SOCKS5 代理連接到本地伺服器，然後該伺服器會根據 MTProto 的初始化包提取 DC ID，並建立到 Telegram 數據中心的 WebSocket 連接。如果 WebSocket 連接失敗，則會自動切換到直接的 TCP 連接。這個工具使用 Python 實作，並且提供了簡單的安裝和使用方式，支持 Windows 系統的托盤應用和控制台模式。與其他類似的代理工具相比，這個專案專注於 Telegram 的特定需求，能夠自動處理不同的連接方式，並提供詳細的日誌功能。實際使用中，這個工具能顯著提高 Telegram 的消息和媒體載入速度，但需要注意的是，這個專案目前仍在開發中，穩定性可能會有所欠缺。對於小型團隊或個人使用者來說，這是一個值得一試的工具，尤其是在需要提升 Telegram 使用體驗的情況下。建議在需要加速 Telegram 使用時使用，但如果對穩定性有較高要求，則可能需要考慮其他解決方案。
 
-**技術棧**：`Python 3.8` · `WebSocket`
+**技術棧**：`Python`
 
 ## 重點功能
 
-- 本地 SOCKS5 代理 — 在 `127.0.0.1:1080` 上運行，支持 Telegram Desktop 的流量轉發。
-- WebSocket 連接 — 自動建立到 Telegram 數據中心的 WebSocket 連接，提升數據傳輸速度。
-- 自動切換 TCP 連接 — 當 WebSocket 不可用時，自動切換到直接 TCP 連接，確保連接穩定性。
-- 詳細日誌記錄 — 支持 `-v` 參數啟用詳細日誌，方便排查問題。
-- 系統托盤管理 — 提供 GUI 介面來管理代理設定，方便用戶操作。
+- 本地 SOCKS5 代理 — 在 `127.0.0.1:1080` 提供 SOCKS5 代理服務。
+- WebSocket 轉發 — 自動將流量轉發至 Telegram 的 WebSocket 伺服器以加速連接。
+- 自動切換連接 — 當 WebSocket 連接失敗時，自動切換到 TCP 連接。
+- 詳細日誌功能 — 支持 `-v` 參數啟用詳細日誌，便於故障排除。
+- 簡單的安裝和配置 — 透過 `pip install` 安裝，並提供 GUI 設定界面。
 
 ## 快速開始
 
@@ -69,62 +72,63 @@ aliases:
 ```bash
 pip install -r requirements.txt
 ```
-2. 啟動代理
+2. 啟動 Windows 托盤應用
 ```bash
-python proxy/tg_ws_proxy.py
+python windows.py
 ```
-3. 設定 Telegram 代理
+3. 啟動控制台模式
 ```bash
-在 Telegram 中添加 SOCKS5 代理，伺服器為 127.0.0.1，端口為 1080。
+python proxy/tg_ws_proxy.py --port 1080
 ```
 
 ## 程式碼範例
 
 ```bash
+# 標準啟動
+python proxy/tg_ws_proxy.py
+
+# 指定端口和數據中心
 python proxy/tg_ws_proxy.py --port 9050 --dc-ip 1:149.154.175.205 --dc-ip 2:149.154.167.220
+
+# 詳細日誌啟動
+python proxy/tg_ws_proxy.py -v
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 Flowseal 專注於 Telegram 相關的工具開發，這個專案正好切中需要加速 Telegram 使用體驗的需求。隨著 Telegram 用戶數量的增加，對於提升其性能的工具需求也隨之上升。這個專案的推出時間恰好在 Telegram 用戶面臨速度瓶頸的時期，因此引起了廣泛關注。
+> 作者 Flowseal 專注於 Telegram 的使用需求，這個工具正好解決了用戶在使用 Telegram 時遇到的速度問題。隨著 Telegram 用戶數量的增加，對於加速工具的需求也隨之上升。這個專案的推出正好切中了這個需求，因此受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：希望提升 Telegram Desktop 使用體驗的普通用戶和開發者。
+**目標受眾**：希望提升 Telegram 使用體驗的普通用戶和開發者。
 
 > [!example] 使用場景
-> - 普通用戶用它來加速 Telegram Desktop 的載入速度，因為透過 SOCKS5 代理能夠減少延遲，提升使用體驗。
-> - 開發者用它來測試 Telegram API 的性能，因為可以快速切換不同的數據中心，方便進行性能評估。
-> - 網路管理員用它來監控 Telegram 的流量，因為可以透過詳細的日誌記錄來分析使用情況。
+> - 普通用戶用它來加速 Telegram 的消息載入速度，因為使用 SOCKS5 代理能夠顯著減少延遲。
+> - 開發者用它來測試 Telegram 應用的性能，因為能夠快速切換不同的數據中心連接，方便進行性能調整。
+> - 系統管理員用它來優化公司內部使用 Telegram 的網路環境，因為能夠自動處理連接問題，減少手動配置的麻煩。
 
 ## 架構分析
 
-這是一個單體應用，架構上包含一個本地 SOCKS5 代理伺服器。用戶輸入 → SOCKS5 代理 → WebSocket 連接 → Telegram 數據中心。關鍵技術決策包括使用 WebSocket 來提升數據傳輸速度，並在不穩定的情況下自動切換到 TCP 連接。專案目錄結構中，`proxy/tg_ws_proxy.py` 是主要的執行檔案。
+這是一個單體應用，使用 Python 實作。用戶輸入 → SOCKS5 代理 → TG WS Proxy → WebSocket 伺服器 → Telegram DC。主要技術決策是使用 WebSocket 來加速連接，並在失敗時自動切換到 TCP。專案目錄中包含了主要的 Python 檔案和配置文件。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠顯著提升 Telegram 的載入速度，改善使用體驗。
-> - 自動切換到 TCP 連接的功能，增加了連接的穩定性。
-> - 提供詳細的日誌記錄，方便用戶排查問題。
+> - 能夠顯著提高 Telegram 的載入速度，特別是在網路不穩定的情況下。
+> - 提供了簡單的 GUI 設定界面，方便用戶配置。
+> - 支持多種數據中心的連接，靈活性高。
 
 > [!danger] 缺點
-> - 需要手動設定 Telegram 的代理選項，對於新手用戶不夠友好。
-> - 在高流量環境下可能會遇到性能瓶頸，影響使用體驗。
-> - 僅支援 Telegram Desktop，無法用於其他應用。
+> - 目前僅支持 Windows，對於其他操作系統的支持有限。
+> - 需要用戶手動配置 Telegram 的代理設定，對新手不太友好。
+> - 仍在開發中，可能會遇到穩定性問題。
 
 > [!warning] 注意事項
-> - 僅支援 Telegram Desktop，不適用於手機版 Telegram。
-> - 需要手動設定 Telegram 的代理選項，對於新手用戶可能不夠友好。
-> - 在高流量環境下可能會遇到性能瓶頸，影響使用體驗。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [[Telegram--Telegram\|Telegram/Telegram]] | Telegram 官方客戶端本身不提供 SOCKS5 代理功能，而 tg-ws-proxy 專注於提升連接速度。 |
-| [[LQX--Telegram-Proxy\|LQX/Telegram-Proxy]] | LQX 的 Telegram-Proxy 提供了類似的功能，但不支持自動切換到 TCP 連接，穩定性較差。 |
+> - 目前僅支持 Windows 系統。
+> - 需要手動配置 Telegram 的 SOCKS5 代理設定。
+> - 在某些網路環境下可能無法穩定連接。
+> - 仍在開發中，可能存在未解決的 bug。
 
 ## 技術細節
 
@@ -143,10 +147,6 @@ python proxy/tg_ws_proxy.py --port 9050 --dc-ip 1:149.154.175.205 --dc-ip 2:149.
 > | [@Copilot](https://github.com/Copilot) | 2 |
 
 **最新版本**：v1.0.4 — TG WS Proxy v1.0.4 (2026-03-10)
-
-## 社群與生態
-
-**社群活躍度**：社群活躍度中等，定期更新和維護。
 
 ## README 摘錄
 
@@ -266,10 +266,6 @@ python proxy/tg_ws_proxy.py --port 9050 --dc-ip 1:149.154.175.205 --dc-ip 2:149.
 > [MIT License](LICENSE)
 
 ## 延伸閱讀
-
-相關概念：[[API 設計]] · [[網路協議]] · [[效能優化]]
-
-相關專案：[[Telegram--Telegram|Telegram/Telegram]] · [[LQX--Telegram-Proxy|LQX/Telegram-Proxy]]
 
 [GitHub](https://github.com/Flowseal/tg-ws-proxy)
 

@@ -7,8 +7,8 @@ language: C++
 license: MIT
 description: "Talk to your Mac, query your docs, no cloud required. On-device voice AI + RAG"
 homepage: "https://runanywhereai.github.io/RCLI/"
-stars: 448
-stars_per_day: 75
+stars: 471
+stars_per_day: 79
 forks: 16
 open_issues: 10
 created: 2026-03-04
@@ -22,6 +22,8 @@ install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
+use_case: "讓你的 Mac 透過語音助手進行操作，無需雲端，完全在本地運行。"
+priority: medium
 tags:
   - github
   - "category/ai_ml"
@@ -36,39 +38,39 @@ tags:
 aliases:
   - "RCLI"
   - "RunanywhereAI/RCLI"
-  - "讓你的 Mac 透過語音指令執行操作，無需雲端支持。"
+  - "讓你的 Mac 透過語音助手進行操作，無需雲端，完全在本地運行。"
 ---
 
 # RCLI
 
-**448** stars · **75** stars/天 · 建立 6 天前 · C++ · MIT
+**471** stars · **79** stars/天 · 建立 6 天前 · C++ · MIT
 
 `ORG` `v0.3.3` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓你的 Mac 透過語音指令執行操作，無需雲端支持。
+> 讓你的 Mac 透過語音助手進行操作，無需雲端，完全在本地運行。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (75 stars/day)
-> **適合** 需要在 Apple Silicon 上運行本地語音助手的開發者和使用者。
-> **一句話重點** RCLI 的創新在於它能在不依賴雲端的情況下，提供高效能的語音助手體驗，特別適合對隱私有高要求的用戶。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (79 stars/day)
+> **適合** 需要在 Apple Silicon 上運行本地語音 AI 的獨立開發者和專業人士。
+> **一句話重點** RCLI 的最大優勢在於其完全本地化的設計，讓用戶在不依賴雲端的情況下享受高效的語音助手體驗。
 
 > [!abstract] 核心創新
-> RCLI 是第一個在 Apple Silicon 上實現全本地語音 AI 的解決方案，無需雲端支持。
+> RCLI 是首個在 Apple Silicon 上實現的完全本地語音 AI，無需雲端服務。
 
 ## 專案簡介
 
-RCLI 是一個專為 macOS 設計的本地語音 AI，能夠實現語音控制和文件查詢。它的核心流程是用戶透過語音發出指令，RCLI 會即時處理並執行相應的 macOS 操作，並且支持本地文檔檢索。這個專案使用了 MetalRT，一個專為 Apple Silicon 開發的 GPU 推理引擎，實現了低於 200ms 的端到端延遲。與其他語音助手相比，RCLI 完全在本地運行，無需雲端或 API 金鑰，這對於隱私保護至關重要。實際使用中，RCLI 支持 38 種 macOS 操作，並且在 M3 Max 上的 STT 和 TTS 性能表現優異，STT 的實時因子達到 714 倍於實時。這個專案目前處於 beta 階段，適合對隱私有高要求的獨立開發者或小型團隊使用。建議在需要快速語音控制或文檔查詢的情況下使用，但對於不在 Apple Silicon 上的用戶則不太適合。
+RCLI 是一個專為 macOS 設計的本地語音 AI，能夠實現語音控制和文檔查詢。它的核心流程是通過語音輸入來執行 38 種 macOS 操作，並且支持對本地文檔進行檢索和提問，整個過程延遲低於 200 毫秒。技術上，它使用了 MetalRT 作為 GPU 推理引擎，專為 Apple Silicon 優化，並結合了多種語音識別和合成技術，如 Zipformer 和 Whisper。與其他語音助手相比，RCLI 不依賴雲端服務，這使得它在隱私和速度上具有優勢。實際使用中，RCLI 能夠在 M3 Max 上實現 STT 和 TTS 的即時反應，並且支持多達 5K+ 文檔的快速檢索。這個專案目前處於 beta 階段，對於需要快速本地語音處理的開發者來說非常值得一試。建議在需要高效能語音控制的環境中使用，但如果你的硬體不支持 MetalRT，則可能會遇到性能瓶頸。
 
-**技術棧**：`C++` · `Shell` · `CMake` · `Objective-C++`
+**技術棧**：`C++` · `Shell` · `CMake` · `Ruby` · `Objective-C++`
 
 ## 重點功能
 
-- 本地語音控制 — 支持 38 種 macOS 操作，無需雲端。
-- 高效能 STT/TTS — MetalRT 引擎實現 STT 714 倍於實時的性能。
-- 文檔智能檢索 — 透過語音詢問文檔，延遲僅約 4ms。
-- 多模型支持 — 可熱切換 LLM 模型，方便用戶根據需求調整。
-- 簡易安裝 — 只需一條命令即可安裝和設置。
+- 本地語音處理 — 完整的 STT + LLM + TTS 管道，無需雲端，延遲低於 200 毫秒。
+- 38 種 macOS 操作 — 支持語音控制多種系統功能，如開啟應用、播放音樂、調整音量等。
+- 文檔智能檢索 — 支持 PDF、DOCX 和純文本的本地文檔檢索，查詢延遲約 4 毫秒。
+- 互動式 TUI — 提供推按說話、模型管理和操作瀏覽的終端界面。
+- MetalRT 引擎 — 專為 Apple Silicon 優化的 GPU 推理引擎，支持高效能的語音識別和合成。
 
 ## 快速開始
 
@@ -78,59 +80,66 @@ curl -fsSL https://raw.githubusercontent.com/RunanywhereAI/RCLI/main/install.sh 
 ```
 2. 透過 Homebrew 安裝
 ```bash
-brew tap RunanywhereAI/rcli https://github.com/RunanywhereAI/RCLI.git && brew install rcli
+brew tap RunanywhereAI/rcli https://github.com/RunanywhereAI/RCLI.git
 ```
-3. 啟動 RCLI
+3. 設置 AI 模型
 ```bash
-rcli
+rcli setup
 ```
 
 ## 程式碼範例
 
-rcli ask "open Safari"  # 一次性命令打開 Safari
+rcli ask "open Safari"
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案的作者來自 RunAnywhere, Inc.，專注於本地 AI 解決方案，切中對隱私的需求。隨著 Apple Silicon 的普及，對於本地運行的高效能語音助手需求上升，讓 RCLI 在市場上獲得了關注。
+> 作者背景來自 RunAnywhere, Inc.，專注於本地 AI 解決方案，切中了對隱私和速度的需求。隨著 Apple Silicon 的普及，這個專案的需求逐漸上升，特別是在不希望依賴雲端的用戶中。最近的版本更新進一步提升了性能和穩定性。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Apple Silicon 上運行本地語音助手的開發者和使用者。
+**目標受眾**：需要在 Apple Silicon 上運行本地語音 AI 的獨立開發者和專業人士。
 
 > [!example] 使用場景
-> - 獨立開發者用它來快速查詢文檔，因為可以即時獲得答案而不必手動搜尋。
-> - 設計師用它來控制音樂播放，因為可以在工作時不打斷流程，提升效率。
-> - 系統管理員用它來執行系統命令，因為語音指令能夠加快操作速度，讓工作更流暢。
+> - 產品經理用它來快速查詢本地文檔的關鍵資訊，因為它能在 ~4ms 內完成檢索，節省了大量手動搜索的時間。
+> - 開發者用它來通過語音控制 Mac 的應用程式，因為可以用簡單的語音指令來執行多達 38 種操作，提升了工作效率。
+> - 設計師用它來調整音樂播放和音量，因為可以用語音命令控制 Spotify 和 Apple Music，讓工作環境更流暢。
 
 ## 架構分析
 
-RCLI 採用單體架構，所有功能都在本地運行。用戶輸入 → RCLI 處理 → 執行 macOS 操作。關鍵技術決策是使用 MetalRT 引擎來提升性能。專案的目錄結構包括主要的安裝腳本和配置文件，方便用戶快速上手。
+RCLI 採用 CLI 工具架構，核心資料流為用戶語音輸入 → MetalRT 引擎處理 → 執行 macOS 操作或返回語音回應。關鍵技術決策在於使用 MetalRT 進行 GPU 加速，並整合多種語音處理技術。專案目錄結構中，主要的執行檔和配置檔位於 src 和 config 目錄下。
+
+## 技術深入分析
+
+> [!note]- 展開深入分析
+> RCLI 的核心演算法結合了多種語音處理技術，包括 Silero 的語音活動檢測和 Zipformer 的即時語音識別。MetalRT 引擎的設計使其在 Apple M3 Max 上的 STT 和 TTS 性能達到即時反應，並且在多任務處理時保持高效能。與其他語音助手相比，RCLI 的設計選擇專注於本地運行，這使得它在隱私和速度上具有顯著優勢。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 完全本地運行，保護用戶隱私。
-> - 高效能的語音識別和合成，提升使用體驗。
-> - 支持多種 macOS 操作，方便用戶日常使用。
+> - 完全本地運行，無需雲端，提升隱私性。
+> - 低延遲的語音處理，適合即時應用。
+> - 支持多種 macOS 操作，提升工作效率。
+> - 可擴展性強，支持多種文檔格式的檢索。
 
 > [!danger] 缺點
-> - 僅限於 Apple Silicon，無法在其他平台使用。
-> - 仍在 beta 階段，可能存在不穩定性。
-> - 需要一定的硬體要求，無法在舊款設備上運行。
+> - 僅限於 Apple Silicon，對於其他平台無法使用。
+> - 需要較新的硬體才能發揮最佳性能。
+> - 目前功能仍在持續開發中，可能存在不穩定性。
+> - 對於小型 LLM，累積的上下文可能影響準確性。
 
 > [!warning] 注意事項
 > - 僅支援 macOS 13+ 的 Apple Silicon。
-> - 需要 M3 或更高版本的硬體來充分利用 MetalRT 引擎。
-> - 不支援非 Apple Silicon 的設備。
-> - 目前仍在 beta 階段，可能存在不穩定性。
+> - MetalRT 引擎需要 M3 或更高版本的硬體。
+> - 對於 M1/M2 Mac，會自動回退到 llama.cpp，性能可能不如 M3。
+> - 目前處於 beta 階段，可能存在不穩定的情況。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [[alexa--alexa-skills-kit\|alexa/alexa-skills-kit]] | Alexa 需要雲端支持，無法在本地運行，並且對於隱私的保護較弱。 |
-| [[google--assistant-sdk\|google/assistant-sdk]] | Google Assistant 也依賴雲端，無法提供本地文檔查詢的即時性。 |
+| [[alexa--alexa\|alexa/alexa]] | Alexa 依賴雲端服務進行語音識別和控制，而 RCLI 完全在本地運行，提供更快的反應時間和更高的隱私性。 |
+| [[google--assistant\|google/assistant]] | Google Assistant 需要網路連接來執行大部分功能，而 RCLI 可以在無網路的情況下運行，適合對隱私有高要求的用戶。 |
 
 ## 技術細節
 
@@ -155,7 +164,7 @@ RCLI 採用單體架構，所有功能都在本地運行。用戶輸入 → RCLI
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@shubhammalhotra28](https://github.com/shubhammalhotra28) | 76 |
+> | [@shubhammalhotra28](https://github.com/shubhammalhotra28) | 79 |
 > | [@AmanSwar](https://github.com/AmanSwar) | 13 |
 > | [@sanchitmonga22](https://github.com/sanchitmonga22) | 3 |
 
@@ -163,7 +172,7 @@ RCLI 採用單體架構，所有功能都在本地運行。用戶輸入 → RCLI
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，定期更新和維護。
+**社群活躍度**：社群活躍度中等，持續更新中。
 **連結**：[文件](https://runanywhereai.github.io/RCLI/)
 
 ## README 摘錄
@@ -305,7 +314,7 @@ RCLI 採用單體架構，所有功能都在本地運行。用戶輸入 → RCLI
 
 相關概念：[[語音合成]] · [[本地 AI]] · [[隱私保護]] · [[自動化測試]]
 
-相關專案：[[alexa--alexa-skills-kit|alexa/alexa-skills-kit]] · [[google--assistant-sdk|google/assistant-sdk]]
+相關專案：[[alexa--alexa|alexa/alexa]] · [[google--assistant|google/assistant]]
 
 [GitHub](https://github.com/RunanywhereAI/RCLI) · [官方網站](https://runanywhereai.github.io/RCLI/)
 

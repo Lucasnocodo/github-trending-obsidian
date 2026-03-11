@@ -7,8 +7,8 @@ language: TypeScript
 license: N/A
 description: "你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。"
 homepage: "https://pua-skill.pages.dev/"
-stars: 525
-stars_per_day: 263
+stars: 530
+stars_per_day: 265
 forks: 17
 open_issues: 7
 created: 2026-03-08
@@ -16,50 +16,52 @@ pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
-category: "開發工具"
+category: "AI/ML"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
+use_case: "讓 AI 在面對問題時不輕言放棄，透過 PUA 方式提升調試能力。"
+priority: medium
 tags:
   - github
-  - "category/開發工具"
+  - "category/ai_ml"
   - "lang/typescript"
 aliases:
   - "pua"
   - "tanweai/pua"
-  - "讓 AI 積極面對問題，避免輕易放棄。"
+  - "讓 AI 在面對問題時不輕言放棄，透過 PUA 方式提升調試能力。"
 ---
 
 # pua
 
-**525** stars · **263** stars/天 · 建立 2 天前 · TypeScript · 未標註授權
+**530** stars · **265** stars/天 · 建立 2 天前 · TypeScript · 未標註授權
 
 > [!summary] 一句話摘要
-> 讓 AI 積極面對問題，避免輕易放棄。
+> 讓 AI 在面對問題時不輕言放棄，透過 PUA 方式提升調試能力。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (263 stars/day)
-> **適合** 需要提升 AI 調試能力的中大型開發團隊。
-> **一句話重點** 這個專案不僅是工具，更是一種提升 AI 調試能力的思維方式。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (265 stars/day)
+> **適合** 需要提升 AI 調試能力的中小型開發團隊。
+> **一句話重點** 這個專案透過 PUA 方式讓 AI 在調試過程中不輕言放棄，提升了整體效率。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於將 PUA 概念應用於 AI 調試過程中，強調主動性和持久性。
+> 這個專案最核心的創新點是透過 PUA 方式強化 AI 的調試能力，讓其在面對挑戰時不輕言放棄。
 
 ## 專案簡介
 
-這個專案是一個 Claude Code 插件，專為提升 AI 的調試能力而設計。它透過三重能力：PUA 話術、調試方法論和能動性鞭策，讓 AI 在面對問題時不輕言放棄。技術上，它利用了 Claude 的插件架構，並透過自動和手動觸發機制來激活技能。與傳統的調試工具相比，PUA 插件強調主動出擊，並在面對多次失敗時提供逐步的壓力升級和鞭策話術。實測數據顯示，使用此插件後，修復點數提升了 36%，驗證次數增加了 65%。這個工具適合需要高效調試的開發團隊，尤其是在面對複雜問題時。對於小型團隊或個人開發者來說，可能會感到過於繁瑣，因為它的設計是針對較大規模的開發環境。建議在需要持續調試和改進的情況下使用，但若只是偶爾的簡單調試，則可能不太適合。
+這個專案是一個 Claude Code 插件，旨在讓 AI 在面對問題時不輕言放棄。它透過三重能力：PUA 话术、调试方法论和能动性鞭策，來強化 AI 的調試過程。技術上，它使用 TypeScript 和 JavaScript，並且能夠在 Claude 和 OpenAI Codex 等平台上運行。與傳統的調試工具相比，它不僅提供了錯誤修復的建議，還強調了主動出擊和穷尽所有方案的重要性。實測數據顯示，使用此插件後，修復點數提升了 36%，工具調用率提升了 50%。這個專案的成熟度已經達到穩定階段，適合中小型團隊使用。若你的團隊經常面對調試困難，這個工具可以幫助提高效率，但對於已經有成熟調試流程的團隊，可能不會有太大幫助。
 
-**技術棧**：`TypeScript` · `HTML` · `CSS` · `JavaScript`
+**技術棧**：`TypeScript` · `JavaScript` · `HTML` · `CSS`
 
 ## 重點功能
 
-- PUA 話術 — 透過特定話術驅動 AI 不輕言放棄，提升調試持久力。
-- 調試方法論 — 提供五步調試流程，幫助系統化問題解決。
-- 能動性鞭策 — 根據失敗次數升級壓力，促使 AI 主動出擊。
-- 自動觸發 — 在特定失敗情況下自動激活技能，提升調試效率。
-- 手動觸發 — 用戶可透過指令手動激活，靈活應用於不同場景。
+- PUA 话术 — 透過激勵語言讓 AI 不輕言放棄，提升調試持久力。
+- 调试方法论 — 包含五步驟的調試流程，幫助 AI 系統性解決問題。
+- 能动性鞭策 — 促使 AI 主動出擊，減少被動等待的情況。
+- 自動觸發條件 — 根據 AI 的表現自動激活，提升調試效率。
+- 手動觸發命令 — 輸入 `/pua` 可隨時手動啟動該技能。
 
 ## 快速開始
 
@@ -67,7 +69,7 @@ aliases:
 ```bash
 claude plugin marketplace add tanweai/pua
 ```
-2. 手動安裝插件
+2. 手動安裝
 ```bash
 git clone https://github.com/tanweai/pua.git ~/.claude/plugins/pua
 ```
@@ -79,44 +81,39 @@ curl -o ~/.codex/skills/pua-debugging/SKILL.md https://raw.githubusercontent.com
 ## 程式碼範例
 
 ```bash
-# 手動激活 PUA 插件
-/pua
+claude plugin install pua@pua-skills
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案由探微安全實驗室開發，背景強大且專注於提升 AI 的調試能力。隨著 AI 在開發中的應用越來越普遍，對於提升其效能的需求也隨之增加。這個插件的推出正好切中這一需求，並且其獨特的 PUA 概念使其在眾多工具中脫穎而出。
+> 作者來自探微安全實驗室，專注於提升 AI 的調試能力，切中企業對於 AI 效率的需求。隨著 AI 應用的普及，對於調試能力的提升需求也越來越迫切，這使得此專案在市場上受到關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要提升 AI 調試能力的中大型開發團隊。
+**目標受眾**：需要提升 AI 調試能力的中小型開發團隊。
 
 > [!example] 使用場景
-> - 後端工程師用它來自動化調試過程，因為它能夠提升修復點數和驗證次數，讓問題解決更有效率。
-> - AI 開發者用它來強化 AI 的主動性，因為它能夠讓 AI 在面對問題時不輕言放棄，提升整體性能。
-> - DevOps 工程師用它來優化部署流程，因為它提供了系統化的調試方法論，幫助快速定位和解決問題。
-
-## 架構分析
-
-這是一個基於插件架構的系統，使用 Claude Code 的插件系統。用戶輸入 → 插件激活 → AI 調試過程。關鍵技術決策包括自動和手動觸發機制，並且專案目錄結構清晰，包含了技能定義文件和安裝指令。
+> - 後端工程師用它來自動化調試過程，因為它能提升修復效率，減少手動查錯時間。
+> - AI 開發者用它來強化 AI 的問題解決能力，因為它能讓 AI 在面對挑戰時不輕言放棄，提升成功率。
+> - 產品經理用它來監控 AI 的調試表現，因為它提供了詳細的性能數據，幫助優化 AI 的表現。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提升 AI 調試的持久力和主動性。
-> - 提供系統化的調試方法論，幫助開發者快速定位問題。
-> - 能夠自動觸發，減少手動干預，提高效率。
+> - 提升 AI 的調試能力，讓其在面對問題時不輕言放棄。
+> - 提供系統化的調試方法論，幫助用戶更有效地解決問題。
+> - 能自動觸發，減少用戶的操作負擔。
 
 > [!danger] 缺點
+> - 僅限於特定平台，無法在所有環境中使用。
+> - 需要用戶具備一定的調試基礎，否則可能難以上手。
 > - 對於簡單問題的調試可能顯得過於繁瑣。
-> - 需要較高的使用者參與度以發揮最佳效果。
-> - 僅支援特定的開發環境，限制了使用範圍。
 
 > [!warning] 注意事項
-> - 僅支援 Claude Code 和 OpenAI Codex CLI。
-> - 需要較高的使用者參與度以發揮最佳效果。
-> - 對於簡單問題的調試可能顯得過於繁瑣。
+> - 僅支援 Claude 和 OpenAI Codex 平台。
+> - 需要一定的調試基礎，對於完全不熟悉的用戶可能需要時間適應。
+> - 不適用於首次嘗試的問題，僅在多次失敗後有效。
 
 ## 技術細節
 
@@ -322,7 +319,7 @@ curl -o ~/.codex/skills/pua-debugging/SKILL.md https://raw.githubusercontent.com
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[CI/CD]] · [[機器學習]]
+相關概念：[[自動化測試]] · [[機器學習]] · [[API 設計]]
 
 [GitHub](https://github.com/tanweai/pua) · [官方網站](https://pua-skill.pages.dev/)
 
@@ -332,7 +329,7 @@ curl -o ~/.codex/skills/pua-debugging/SKILL.md https://raw.githubusercontent.com
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "tanweai--pua"
+> WHERE category = "AI/ML" AND file.name != "tanweai--pua"
 > SORT stars DESC
 > LIMIT 8
 > ```

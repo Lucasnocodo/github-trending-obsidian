@@ -7,8 +7,8 @@ language: Python
 license: N/A
 description: "The largest open-source medical AI skills library for OpenClaw🦞."
 homepage: ""
-stars: 910
-stars_per_day: 455
+stars: 912
+stars_per_day: 456
 forks: 106
 open_issues: 2
 created: 2026-03-08
@@ -22,6 +22,8 @@ install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
+use_case: "提供869種醫療AI技能，讓OpenClaw成為強大的醫療研究助手。"
+priority: medium
 tags:
   - github
   - "category/ai_ml"
@@ -35,59 +37,59 @@ tags:
 aliases:
   - "OpenClaw-Medical-Skills"
   - "FreedomIntelligence/OpenClaw-Medical-Skills"
-  - "提供869種醫療AI技能，讓OpenClaw變成強大的醫學研究助手。"
+  - "提供869種醫療AI技能，讓OpenClaw成為強大的醫療研究助手。"
 ---
 
 # OpenClaw-Medical-Skills
 
-**910** stars · **455** stars/天 · 建立 2 天前 · Python · 未標註授權
+**912** stars · **456** stars/天 · 建立 2 天前 · Python · 未標註授權
 
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供869種醫療AI技能，讓OpenClaw變成強大的醫學研究助手。
+> 提供869種醫療AI技能，讓OpenClaw成為強大的醫療研究助手。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (455 stars/day)
-> **適合** 需要在醫療研究中整合AI技能的研究團隊或開發者。
-> **一句話重點** 這個專案證明了開源社群能夠有效整合醫療AI技能，提升AI在醫療領域的應用潛力。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (456 stars/day)
+> **適合** 需要在OpenClaw上進行醫療AI開發的研究團隊和開發者。
+> **一句話重點** 這個專案讓AI代理具備了醫療領域的專業能力，顯著提升了AI在醫療研究中的應用潛力。
 
 > [!abstract] 核心創新
-> 這個專案提供了最大的開源醫療AI技能庫，讓AI代理具備專業醫療研究的能力。
+> 這個專案提供了869種專業的醫療AI技能，讓AI代理具備相當於專業研究團隊的能力。
 
 ## 專案簡介
 
-OpenClaw Medical Skills 是一個包含869種醫療AI技能的開源庫，這些技能涵蓋了生物醫學和臨床研究的各個方面。每個技能都是一個獨立的模組，包含專業知識和工作流程，並能連接到實際的數據庫和API，生成結構化的臨床或科學輸出。這個庫的技能來自12個以上的開源技能庫，提供的功能包括RNA-seq分析、藥物智能、臨床文檔生成等，讓AI代理具備相當於專業研究團隊的能力。與一般的AI工具相比，OpenClaw Medical Skills 提供了針對醫療和科學研究的專業能力，而不僅僅是通用的AI回應。使用者需要安裝OpenClaw或NanoClaw，並能夠透過簡單的命令將技能安裝到代理中。這個專案目前處於穩定階段，適合醫療研究團隊或需要專業醫療知識的開發者使用。對於需要快速整合醫療技能的團隊，這是一個非常值得考慮的選擇。
+OpenClaw Medical Skills 是一個包含869種醫療AI技能的開源庫，專為OpenClaw和NanoClaw框架設計。這些技能模組化，能夠教導AI代理專業的醫療知識和工作流程，並連接到實際的數據庫和API，生成結構化的臨床或科學相關輸出。技術上，這個庫整合了來自12個以上開源技能庫的資源，涵蓋臨床研究、基因組學、藥物發現等領域，讓AI代理的能力相當於一組專業研究科學家。相較於一般的AI工具，OpenClaw Medical Skills 提供了具體的生物信息學能力和藥物智能，能夠進行RNA-seq分析、藥物相互作用預測等。使用者可以輕鬆安裝和管理這些技能，並根據需求選擇特定的技能模組。這個專案目前處於穩定階段，適合需要醫療AI應用的研究團隊。對於需要快速獲取醫療資訊的開發者，這是一個值得考慮的選擇，但對於不涉及醫療領域的專案則不太適合。
 
 **技術棧**：`Python` · `Jupyter Notebook` · `Docker`
 
 ## 重點功能
 
-- 869種醫療AI技能 — 涵蓋臨床、基因組學、藥物發現等多個領域。
-- 自動連接到實際數據庫 — 包括PubMed、ClinicalTrials.gov、FDA等。
-- 生成結構化輸出 — 包括SOAP筆記、出院摘要等臨床文檔。
-- 支持多種安裝方式 — 包括全局安裝和選擇性安裝特定技能。
-- 開源社群支持 — 聚合來自12個以上的開源技能庫，持續更新和擴充。
+- 869種醫療AI技能 — 涵蓋臨床、基因組學、藥物發現等領域，提供全面的醫療研究支持。
+- 模組化設計 — 每個技能都是獨立的模組，便於安裝和管理。
+- 連接實際數據庫 — 能夠查詢PubMed、ClinicalTrials.gov等資料，提供真實的醫療資訊。
+- 支持生物信息學分析 — 包括RNA-seq、GWAS等，滿足專業需求。
+- 自動生成臨床文檔 — 如SOAP筆記和出院摘要，簡化文書工作。
 
 ## 快速開始
 
-1. 克隆這個庫
+1. 克隆此庫
 ```bash
 git clone https://github.com/MedClaw-Org/OpenClaw-Medical-Skills.git
 ```
-2. 將技能安裝到工作區域
+2. 安裝到工作區技能目錄
 ```bash
 cp -r OpenClaw-Medical-Skills/skills/* /skills/
 ```
 3. 驗證安裝
 ```bash
-ask your agent: 'What medical and clinical skills do you have available?'
+Ask your agent: 'What medical and clinical skills do you have available?'
 ```
 
 ## 程式碼範例
 
 ```bash
-# 安裝臨床報告和藥物研究技能
+# 安裝選定的技能
 SKILLS=(
   "clinical-reports"
   "tooluniverse-drug-research"
@@ -100,37 +102,42 @@ done
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案的作者來自於醫療和AI領域，切中醫療AI技能整合的需求，特別是在臨床研究和藥物開發上。隨著醫療數據的增長和AI技術的進步，對於專業醫療技能的需求越來越高，這使得這個專案在當前時期受到關注。
+> 這個專案由多位背景深厚的開發者共同維護，切中醫療AI需求的痛點，特別是在臨床和生物醫學研究領域。隨著AI在醫療領域的應用日益增多，這樣的開源資源正好填補了市場的空白，並且提供了實用的解決方案。
 
 ## 適合誰使用
 
-**目標受眾**：需要在醫療研究中整合AI技能的研究團隊或開發者。
+**目標受眾**：需要在OpenClaw上進行醫療AI開發的研究團隊和開發者。
 
 > [!example] 使用場景
-> - 臨床研究員用它來快速查詢PubMed和ClinicalTrials.gov的資料，因為這樣可以節省大量的文獻搜尋時間，提升研究效率。
-> - 生物資訊學家用它來自動化RNA-seq數據分析流程，因為內建的技能能夠直接連接到分析工具，減少手動操作的錯誤。
-> - 藥物開發者用它來生成臨床文檔和藥物相互作用報告，因為這樣可以確保文檔的準確性和合規性，降低法律風險。
+> - 臨床研究員用它來快速查詢PubMed和ClinicalTrials.gov的資料，因為這樣可以節省大量手動查詢的時間，並獲得準確的研究結果。
+> - 生物信息學家用它來執行RNA-seq分析和變異呼叫，因為這些技能能夠自動化繁瑣的流程，提升研究效率。
+> - 藥物研發團隊用它來預測藥物相互作用，因為這能夠提高藥物安全性評估的準確性，減少臨床試驗的風險。
 
 ## 架構分析
 
-這是一個基於模組化的架構，使用者可以透過OpenClaw或NanoClaw來加載技能。用戶輸入 → AI代理處理 → 生成結構化輸出。關鍵技術決策包括使用開源數據庫和API來增強AI的專業能力。專案目錄結構中，技能以獨立的SKILL.md文件存在，便於管理和擴充。
+OpenClaw Medical Skills 採用模組化架構，使用者可以根據需求安裝特定技能。用戶輸入 → AI代理處理 → 輸出結構化的醫療資訊。關鍵技術決策包括連接實際數據庫和API，並生成臨床文檔。專案目錄結構中，skills資料夾包含所有技能模組。
+
+## 技術深入分析
+
+> [!note]- 展開深入分析
+> OpenClaw Medical Skills 的核心在於其869種技能模組，這些模組不僅提供專業知識，還能連接到多個實際數據源。這些技能的設計考量了臨床和生物醫學研究的需求，並且能夠自動生成臨床文檔。效能上，這些技能能夠快速響應查詢並提供準確的資訊，對於需要即時數據的研究者尤為重要。與其他醫療AI工具相比，OpenClaw Medical Skills 的優勢在於其開源性和模組化設計，使用者可以根據需求靈活選擇和安裝技能。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供專業的醫療和科學研究技能，能夠滿足特定需求。
-> - 開源社群支持，持續更新和擴充技能庫。
-> - 模組化設計，使用者可以選擇安裝所需的技能。
+> - 提供全面的醫療AI技能，涵蓋多個專業領域。
+> - 模組化設計，便於用戶根據需求選擇安裝。
+> - 能夠連接實際數據庫，提供真實的醫療資訊。
 
 > [!danger] 缺點
-> - 需要依賴OpenClaw或NanoClaw，增加了安裝的複雜性。
-> - 技能數量龐大，學習曲線可能較陡峭。
-> - 對於非醫療領域的使用者，技能可能過於專業化。
+> - 需要使用者具備一定的醫療知識以充分利用技能。
+> - 安裝和配置過程可能對新手造成困難。
+> - 技能數量龐大，學習曲線較陡。
 
 > [!warning] 注意事項
-> - 需要安裝OpenClaw或NanoClaw才能運行。
+> - 需要安裝OpenClaw或NanoClaw。
 > - 技能數量龐大，可能需要時間來熟悉每個技能的功能。
-> - 對於非醫療領域的使用者，可能會感到技能過於專業化。
+> - 對於非醫療領域的應用，可能不太適合。
 
 ## 技術細節
 
@@ -163,7 +170,7 @@ done
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，持續有貢獻者更新技能庫。
+**社群活躍度**：社群活躍，持續更新和維護。
 **連結**：[文件](https://github.com/MedClaw-Org/OpenClaw-Medical-Skills)
 
 ## README 摘錄
@@ -280,7 +287,7 @@ done
 
 ## 延伸閱讀
 
-相關概念：[[機器學習]] · [[自然語言處理]] · [[資料視覺化]]
+相關概念：[[生物信息學]] · [[臨床研究]] · [[藥物發現]]
 
 [GitHub](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills)
 

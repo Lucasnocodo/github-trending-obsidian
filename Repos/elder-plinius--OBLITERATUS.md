@@ -7,7 +7,7 @@ language: Python
 license: AGPL-3.0
 description: "OBLITERATE THE CHAINS THAT BIND YOU"
 homepage: "https://huggingface.co/spaces/pliny-the-prompter/"
-stars: 2680
+stars: 2683
 stars_per_day: 383
 forks: 448
 open_issues: 17
@@ -22,6 +22,8 @@ install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
+use_case: "讓大型語言模型自由回應，消除拒絕行為的開源工具。"
+priority: medium
 tags:
   - github
   - "category/ai_ml"
@@ -29,7 +31,7 @@ tags:
 aliases:
   - "OBLITERATUS"
   - "elder-plinius/OBLITERATUS"
-  - "讓大型語言模型自由回應，消除拒絕行為的工具。"
+  - "讓大型語言模型自由回應，消除拒絕行為的開源工具。"
 ---
 
 # OBLITERATUS
@@ -39,29 +41,29 @@ aliases:
 `個人專案`
 
 > [!summary] 一句話摘要
-> 讓大型語言模型自由回應，消除拒絕行為的工具。
+> 讓大型語言模型自由回應，消除拒絕行為的開源工具。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (383 stars/day)
 > **適合** 希望深入理解和調整大型語言模型行為的研究人員和開發者。
-> **一句話重點** OBLITERATUS 不僅是一個工具，更是一個促進社群共同研究的實驗平台。
+> **一句話重點** OBLITERATUS 不僅是一個工具，而是一個促進社群合作的研究平台。
 
 > [!abstract] 核心創新
-> OBLITERATUS 是首個開源工具，能夠精確去除大型語言模型中的拒絕行為，並且每次運行都能貢獻到社群研究數據集中。
+> OBLITERATUS 提供了一種無需重新訓練即可精確移除大型語言模型拒絕行為的技術。
 
 ## 專案簡介
 
-OBLITERATUS 是一個開源工具包，專注於理解並去除大型語言模型中的拒絕行為。它透過一系列技術，能夠識別並精確移除內部表示，從而讓模型能夠對所有提示做出回應，而不會受到人工限制。這個工具的核心流程包括從模型的隱藏狀態中探測拒絕方向，使用 SVD 等方法提取拒絕子空間，並在推理時進行手術式的干預。與其他工具相比，OBLITERATUS 不僅提供了簡單的使用介面，還允許用戶深入控制每個步驟，並可視化拒絕行為的分佈。使用者可以在 HuggingFace Spaces 上無需寫代碼即可進行操作，並且每次運行都會貢獻到一個不斷增長的數據集，這使得它成為一個分散式的研究實驗。儘管它的使用效果顯著，但仍需注意其對硬體的要求和模型的兼容性。整體來看，這是一個穩定的工具，適合各種規模的研究團隊使用，尤其是那些希望深入理解模型行為的團隊。對於需要快速解決模型拒絕問題的情況，這是一個理想的選擇，但對於不需要進行深度研究的用戶，可能會顯得過於複雜。
+OBLITERATUS 是一個開源工具，專注於理解和移除大型語言模型中的拒絕行為。它透過一系列稱為 abliteration 的技術，識別並手術性地移除內部表示，讓模型能夠對所有提示作出回應，而不會受到人工限制。這個工具的核心流程包括從模型的隱藏狀態探測拒絕方向，使用主成分分析（PCA）、稀疏自編碼器分解等方法提取拒絕方向，並在推理時進行干預。與其他工具相比，OBLITERATUS 提供了完整的管道，並且每次運行都能貢獻匿名基準數據，推動社群的研究進展。使用者可以在 HuggingFace Spaces 上無需編寫代碼即可使用 Gradio 界面進行模型解放和基準測試。這個工具適合需要深入控制的研究者，因為它的 Python API 提供了所有中間產物的訪問權限。整體來說，這是一個穩定的工具，適合對大型語言模型行為有深入需求的團隊。
 
 **技術棧**：`Python` · `Gradio 5.29.0` · `Docker`
 
 ## 重點功能
 
-- 一鍵解放模型 — 使用命令 `obliteratus obliterate meta-llama/Llama-3.1-8B-Instruct --method advanced` 進行模型的拒絕行為去除。
-- 完整的管道 — 包含從探測模型隱藏狀態到拒絕方向提取的多種策略（如 PCA、稀疏自編碼器分解）。
-- 可視化拒絕行為 — 允許用戶觀察拒絕行為在不同層級的分佈情況。
-- 社群貢獻的研究 — 每次運行都會匿名貢獻數據，推動未來的研究進展。
-- Gradio 介面 — 在 HuggingFace Spaces 上提供無需編碼的使用體驗，便於快速上手。
+- 一鍵解放模型 — 使用指令 `obliteratus obliterate meta-llama/Llama-3.1-8B-Instruct --method advanced` 進行模型解放。
+- 完整的管道 — 包括探測、提取拒絕方向、手術性移除等六個階段，確保模型能力不受損。
+- 社群驅動的研究 — 每次運行都能貢獻數據，推動下一代研究進展。
+- Gradio 界面 — 無需編碼即可使用，適合不熟悉程式的使用者。
+- Python API — 提供對所有中間產物的訪問，適合需要更高控制的研究者。
 
 ## 快速開始
 
@@ -73,9 +75,9 @@ pip install obliteratus
 ```bash
 obliteratus obliterate meta-llama/Llama-3.1-8B-Instruct --method advanced
 ```
-3. 訪問 Colab 筆記本
+3. 訪問 Gradio 界面
 ```bash
-https://colab.research.google.com/github/elder-plinius/OBLITERATUS/blob/main/notebooks/abliterate.ipynb
+打開 HuggingFace Spaces 進行操作
 ```
 
 ## 程式碼範例
@@ -87,44 +89,49 @@ obliteratus obliterate meta-llama/Llama-3.1-8B-Instruct --method advanced
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> OBLITERATUS 的作者背景強大，專注於大型語言模型的行為理解，切中當前對模型透明度和可控性的需求。隨著大型語言模型的廣泛應用，對於拒絕行為的研究變得越來越重要，這使得此工具在社群中迅速受到重視。它的開源性和社群貢獻的特性，使得使用者不僅是消費者，也是研究的參與者，這在過去的工具中並不常見。
+> OBLITERATUS 的作者背景強調開放科學和社群合作，這正好切中當前對於大型語言模型透明度和可控性的需求。隨著對 AI 模型行為的關注增加，這個專案提供了一個實用的解決方案，讓使用者能夠直接參與研究。這樣的工具在近年來逐漸受到重視，尤其是在 AI 研究和開發的快速變化中。
 
 ## 適合誰使用
 
 **目標受眾**：希望深入理解和調整大型語言模型行為的研究人員和開發者。
 
 > [!example] 使用場景
-> - AI 研究員用它來分析大型語言模型的拒絕行為，因為它提供了可視化的拒絕方向和干預效果，幫助深入理解模型內部運作。
-> - 開發者用它來優化自家模型的回應能力，因為透過簡單的命令即可消除拒絕行為，提升用戶體驗。
-> - 教育工作者用它來展示大型語言模型的行為調整，因為這個工具的直觀介面使得學生能夠輕鬆理解模型的內部機制。
+> - AI 研究員用它來分析大型語言模型的拒絕行為，因為它能夠精確地定位和移除這些行為，從而提升模型的回應能力。
+> - 開發者用它來調整商業應用中的對話模型，因為這樣可以避免模型在合法請求上出現拒絕，提升用戶體驗。
+> - 教育工作者用它來探索語言模型的內部運作，因為它提供了可視化和數據分析的工具，幫助理解模型的決策過程。
 
 ## 架構分析
 
-OBLITERATUS 採用前後端分離的架構，使用 Gradio 作為前端介面，後端則是 Python 處理模型的解放過程。用戶輸入 → 處理模型的拒絕行為 → 輸出解放後的模型。關鍵技術決策包括使用 SVD 進行拒絕方向的提取和精確干預，專案目錄結構中包含 app.py 作為主要執行檔。
+OBLITERATUS 採用微服務架構，核心資料流為用戶輸入 → 模型探測 → 拒絕方向提取 → 手術性移除 → 輸出解放後模型。關鍵技術決策包括使用 SVD 進行拒絕方向的提取，並在 HuggingFace Spaces 上提供 Gradio 界面以簡化使用。專案目錄結構包含 app.py 和 notebooks 以支持不同的使用場景。
+
+## 技術深入分析
+
+> [!note]- 展開深入分析
+> OBLITERATUS 的核心算法基於 abliteration 技術，透過 SVD 提取拒絕方向並進行手術性移除。效能特性上，它能夠在無需重訓的情況下，保持模型的語言能力，並且每次運行都能提供新的數據以支持未來的研究。關鍵設計取捨在於如何平衡模型的合規性與一致性，並在不損害模型能力的前提下進行干預。與其他工具相比，OBLITERATUS 的技術決策更強調透明度和可重複性，這使得使用者能夠更深入地理解模型的內部運作。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供簡單的命令行介面，降低使用門檻。
-> - 能夠精確識別和去除模型中的拒絕行為，提升模型的回應能力。
-> - 每次運行都能貢獻到社群數據集，推動研究進展。
+> - 提供透明的模型行為調整工具，促進開放科學。
+> - 無需編碼即可使用，降低使用門檻。
+> - 社群貢獻數據，推動研究進展。
 
 > [!danger] 缺點
-> - 需要較高的計算資源，特別是在處理大型模型時。
-> - 目前僅支持特定的模型架構，可能不適用於所有大型語言模型。
-> - 使用過程中需注意模型的兼容性，某些模型可能無法完全解放。
+> - 對於某些模型的支援有限，無法廣泛應用。
+> - 運行大型模型時可能需要較高的計算資源。
+> - 使用過程中可能需要穩定的網路連接。
 
 > [!warning] 注意事項
-> - 需要較高的計算資源，特別是在處理大型模型時。
-> - 目前僅支持特定的模型架構，可能不適用於所有大型語言模型。
-> - 使用過程中需注意模型的兼容性，某些模型可能無法完全解放。
+> - 需要穩定的網路連接以訪問 HuggingFace Spaces。
+> - 不支援對所有模型的解放，僅限於特定架構。
+> - 對於大型模型，運行時間可能較長，需耐心等待。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [[huggingface--transformers\|huggingface/transformers]] | 提供了更廣泛的模型訓練和推理功能，但不專注於拒絕行為的去除和理解。 |
-| [[openai--whisper\|openai/whisper]] | 專注於語音識別和生成，與 OBLITERATUS 的文本模型解放功能有明顯不同。 |
+| [[huggingface--transformers\|huggingface/transformers]] | 提供更廣泛的模型訓練和推理功能，但不專注於拒絕行為的移除。 |
+| [[openai--gpt-3\|openai/gpt-3]] | 雖然提供強大的語言生成能力，但缺乏對模型內部行為的透明控制。 |
 
 ## 技術細節
 
@@ -152,7 +159,7 @@ OBLITERATUS 採用前後端分離的架構，使用 Gradio 作為前端介面，
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，持續更新和貢獻新的研究數據。
+**社群活躍度**：社群活躍，持續更新與討論。
 **連結**：[文件](https://huggingface.co/spaces/pliny-the-prompter/)
 
 ## README 摘錄
@@ -217,9 +224,9 @@ OBLITERATUS 採用前後端分離的架構，使用 Gradio 作為前端介面，
 
 ## 延伸閱讀
 
-相關概念：[[機器學習]] · [[自然語言處理]] · [[模型解釋性]] · [[自動化測試]]
+相關概念：[[機器學習]] · [[自然語言處理]] · [[模型解釋性]] · [[開放科學]]
 
-相關專案：[[huggingface--transformers|huggingface/transformers]] · [[openai--whisper|openai/whisper]]
+相關專案：[[huggingface--transformers|huggingface/transformers]] · [[openai--gpt-3|openai/gpt-3]]
 
 [GitHub](https://github.com/elder-plinius/OBLITERATUS) · [官方網站](https://huggingface.co/spaces/pliny-the-prompter/)
 
