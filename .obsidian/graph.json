@@ -41,6 +41,20 @@
         "a": 1,
         "rgb": 10066329
       }
+    },
+    {
+      "query": "tag:#concept",
+      "color": {
+        "a": 1,
+        "rgb": 16753920
+      }
+    },
+    {
+      "query": "path:Repos status:archived",
+      "color": {
+        "a": 0.5,
+        "rgb": 8421504
+      }
     }
   ],
   "collapse-display": false,
