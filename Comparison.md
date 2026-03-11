@@ -241,10 +241,58 @@ dv.table(
 );
 ```
 
+## Owner 影響力
+
+> [!abstract] 哪些開發者/組織的專案最常出現在 Trending
+
+```dataviewjs
+const pages = dv.pages('"Repos"');
+const owners = {};
+for (const p of pages) {
+  const o = p.owner || "unknown";
+  if (!owners[o]) owners[o] = { count: 0, totalStars: 0, cats: new Set(), repos: [] };
+  owners[o].count++;
+  owners[o].totalStars += (p.stars || 0);
+  if (p.category) owners[o].cats.add(p.category);
+  owners[o].repos.push(p);
+}
+const multi = Object.entries(owners)
+  .filter(([_, d]) => d.count >= 2)
+  .sort((a, b) => b[1].totalStars - a[1].totalStars);
+if (multi.length > 0) {
+  dv.table(
+    ["Owner", "專案數", "總 Stars", "涵蓋分類", "代表專案"],
+    multi.map(([name, d]) => [
+      name, d.count, d.totalStars.toLocaleString(),
+      [...d.cats].join(", "),
+      d.repos.sort((a, b) => (b.stars || 0) - (a.stars || 0)).slice(0, 2).map(r => r.file.link).join(", ")
+    ])
+  );
+} else {
+  dv.paragraph("目前沒有重複出現的 Owner。收錄更多 repo 後這裡會自動出現。");
+}
+```
+
+## 安裝難度 vs 評分
+
+> [!abstract] 已評分專案的安裝難度分佈
+
+```dataview
+TABLE
+  install_complexity AS "安裝",
+  ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分",
+  category AS "分類",
+  use_case AS "用途"
+FROM "Repos"
+WHERE my_rating > 0
+SORT my_rating DESC, install_complexity ASC
+```
+
 ---
 
 > [!info] 使用方式
 > 1. 從分類表格中找到感興趣的領域
 > 2. 橫向比較同分類的專案
 > 3. 子分類交叉分析幫你找到直接競品
-> 4. 搭配 [[Triage]] 進行狀態管理
+> 4. Owner 影響力找出高產出的開發者
+> 5. 搭配 [[Triage]] 進行狀態管理
