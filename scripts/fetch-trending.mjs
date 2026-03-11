@@ -102,14 +102,70 @@ async function fetchLanguages(fullName, token) {
   }
 }
 
+async function fetchTopIssues(fullName, token) {
+  try {
+    const res = await fetch(
+      `${GITHUB_API}/repos/${fullName}/issues?state=open&sort=reactions&per_page=5`,
+      { headers: gh(token) }
+    );
+    if (!res.ok) return [];
+    const data = await res.json();
+    return data
+      .filter(i => !i.pull_request) // 排除 PR
+      .slice(0, 5)
+      .map(i => ({
+        title: i.title,
+        number: i.number,
+        reactions: i.reactions?.total_count || 0,
+        comments: i.comments || 0,
+        labels: (i.labels || []).map(l => l.name).slice(0, 3),
+      }));
+  } catch {
+    return [];
+  }
+}
+
+async function fetchRecentCommits(fullName, token) {
+  try {
+    const res = await fetch(
+      `${GITHUB_API}/repos/${fullName}/commits?per_page=10`,
+      { headers: gh(token) }
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    if (!data.length) return null;
+    const dates = data.map(c => c.commit?.author?.date?.split('T')[0]).filter(Boolean);
+    const uniqueDates = [...new Set(dates)];
+    const latestMsg = data[0]?.commit?.message?.split('\n')[0] || '';
+    return {
+      total_recent: data.length,
+      active_days: uniqueDates.length,
+      latest_message: latestMsg.slice(0, 100),
+      period: dates.length >= 2 ? `${dates[dates.length - 1]} ~ ${dates[0]}` : dates[0] || '',
+    };
+  } catch {
+    return null;
+  }
+}
+
 async function fetchRepoDetails(repo, token) {
-  const [readme, contributors, release, languages] = await Promise.all([
+  const [readme, contributors, release, languages, topIssues, recentCommits] = await Promise.all([
     fetchReadme(repo.full_name, token),
     fetchContributors(repo.full_name, token),
     fetchLatestRelease(repo.full_name, token),
     fetchLanguages(repo.full_name, token),
+    fetchTopIssues(repo.full_name, token),
+    fetchRecentCommits(repo.full_name, token),
   ]);
-  return { ...repo, _readme: readme, _contributors: contributors, _release: release, _languages: languages };
+  return {
+    ...repo,
+    _readme: readme,
+    _contributors: contributors,
+    _release: release,
+    _languages: languages,
+    _topIssues: topIssues,
+    _recentCommits: recentCommits,
+  };
 }
 
 // ── LLM ─────────────────────────────────────────────────────
@@ -134,6 +190,7 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 - 禁止萬用結尾句：「適合對 XX 有興趣的開發者」對任何專案都成立。要說具體是什麼條件的人（已經在用什麼工具、遇到什麼問題、在什麼規模下工作）
 - summary 不是 README 改寫：README 說了什麼機制，你要解釋「為什麼這樣設計」和「跟不這樣做有什麼差別」
 - 如果 README 太短（< 200 字）或資訊不足，直接說「README 資訊不足，以下為根據 repo metadata 的推測」，不要假裝你知道細節
+- 如果提供了「熱門 Issues」，在 summary 和 known_gotchas 中引用它們——Issues 是社群真實的痛點訊號，比 README 更能反映實際使用體驗
 
 請為每個 GitHub 專案提供以下欄位（JSON 物件）：
 
@@ -202,6 +259,12 @@ function buildRepoPrompt(repos) {
       if (r._release) parts.push(`最新版本: ${r._release.tag}`);
       if (r.homepage) parts.push(`官方網站: ${r.homepage}`);
       if (r.topics?.length) parts.push(`Topics: ${r.topics.join(', ')}`);
+      if (r._topIssues?.length) {
+        parts.push(`熱門 Issues:\n${r._topIssues.map(i => `- #${i.number} ${i.title} (reactions: ${i.reactions}, comments: ${i.comments})`).join('\n')}`);
+      }
+      if (r._recentCommits) {
+        parts.push(`最近 commit 活動: ${r._recentCommits.active_days} 天活躍 (${r._recentCommits.period}), 最新: ${r._recentCommits.latest_message}`);
+      }
       if (r._readme) parts.push(`README:\n${r._readme.slice(0, 8000)}`);
       return parts.join('\n');
     })
@@ -882,6 +945,30 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     if (comm.docs_url) commLinks.push(`[文件](${comm.docs_url})`);
     if (comm.discord) commLinks.push(`[Discord](${comm.discord})`);
     if (commLinks.length) lines.push(`**連結**：${commLinks.join(' · ')}`);
+    lines.push('');
+  }
+
+  // ── 開發動態 ──
+  if (repo._recentCommits) {
+    const rc = repo._recentCommits;
+    lines.push('## 開發動態');
+    lines.push('');
+    lines.push(`> [!abstract] 最近 10 次 commit（${rc.period}）`);
+    lines.push(`> **活躍天數** ${rc.active_days} 天 · **最新 commit** ${rc.latest_message}`);
+    lines.push('');
+  }
+
+  // ── 熱門議題 ──
+  if (repo._topIssues?.length) {
+    lines.push('## 熱門議題');
+    lines.push('');
+    lines.push('> [!question]- 社群最關注的問題');
+    lines.push('> | # | Issue | Reactions | Comments |');
+    lines.push('> | --- | --- | --- | --- |');
+    for (const issue of repo._topIssues) {
+      const labels = issue.labels.length ? ` \`${issue.labels.join('` `')}\`` : '';
+      lines.push(`> | [#${issue.number}](${repo.html_url}/issues/${issue.number}) | ${issue.title.slice(0, 60)}${labels} | ${issue.reactions} | ${issue.comments} |`);
+    }
     lines.push('');
   }
 
@@ -1644,6 +1731,8 @@ const checks = [
   { name: "技術深入分析", pattern: "## 技術深入分析" },
   { name: "新手體驗", pattern: "## 新手體驗" },
   { name: "架構分析", pattern: "## 架構分析" },
+  { name: "開發動態", pattern: "## 開發動態" },
+  { name: "熱門議題", pattern: "## 熱門議題" },
 ];
 const incomplete = [];
 for (const p of pages) {
@@ -3119,7 +3208,8 @@ function needsRefresh(content) {
          !content.includes('next_review:') ||   // v12: 間隔複習日期
          !content.includes('engagement:') ||    // v12: 參與度指標
          !content.includes('ring_history:') ||     // v13: 狀態變更歷程
-         !content.includes('成熟度評估');             // v14: 成熟度評估 + 強化替代方案 + 預期輸出
+         !content.includes('成熟度評估') ||            // v14: 成熟度評估 + 強化替代方案 + 預期輸出
+         !content.includes('## 開發動態');              // v15: 開發動態 + 熱門議題
 }
 
 function hasLLMContent(content) {
