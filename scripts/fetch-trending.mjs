@@ -5140,6 +5140,7 @@ function needsLightPatch(content) {
   if (!content.includes('## Vault 排名')) patches.push('vault_ranking');
   if (!content.includes('同 Owner 專案')) patches.push('same_owner');
   if (!content.includes('相對成長速度')) patches.push('growth_velocity');
+  if (!content.includes('評估進度')) patches.push('eval_progress');
   return patches;
 }
 
@@ -5394,6 +5395,36 @@ function applyLightPatch(content, patches) {
 
 `;
       updated = updated.slice(0, insertBefore) + '\n' + growthVelocity + updated.slice(insertBefore);
+    }
+  }
+
+  // 9. 評估進度 section (in 個人筆記)
+  if (patches.includes('eval_progress') && !updated.includes('評估進度')) {
+    const personalNoteIdx = updated.indexOf('## 個人筆記');
+    const quickEvalIdx = updated.indexOf('> [!question]+ 快速評估');
+    if (personalNoteIdx > 0 && quickEvalIdx > personalNoteIdx) {
+      const evalProgress = `> [!abstract]- 評估進度
+> \`\`\`dataviewjs
+> const me = dv.page("Repos/${safeFn}");
+> if (me) {
+>   const steps = [
+>     { name: "已讀", done: me.status && me.status !== "to-review" },
+>     { name: "已評分", done: (me.my_rating || 0) > 0 },
+>     { name: "有結論", done: me.verdict && me.verdict !== "" },
+>     { name: "Ring 決策", done: me.ring && me.ring !== "" && me.ring !== "assess" },
+>     { name: "試用記錄", done: me.status === "tried" || me.status === "integrated" },
+>   ];
+>   const done = steps.filter(s => s.done).length;
+>   const pct = Math.round((done / steps.length) * 100);
+>   const bar = "\\u2588".repeat(Math.round(pct / 5)) + "\\u2591".repeat(20 - Math.round(pct / 5));
+>   dv.paragraph(\`\${bar} **\${done}/\${steps.length}** (\${pct}%)\`);
+>   const todo = steps.filter(s => !s.done).map(s => s.name);
+>   if (todo.length > 0) dv.paragraph("待完成：" + todo.join(" / "));
+> }
+> \`\`\`
+
+`;
+      updated = updated.slice(0, quickEvalIdx) + evalProgress + updated.slice(quickEvalIdx);
     }
   }
 
