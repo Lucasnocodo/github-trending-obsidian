@@ -166,7 +166,7 @@ SORT first_seen ASC
 
 ## 筆記完整度
 
-> [!info] 缺少重要區塊的筆記（v14 標準：成熟度評估、已知陷阱、使用情境適合度）
+> [!info] 缺少重要區塊的筆記（v17 標準）
 
 ```dataviewjs
 const sections = [
@@ -176,6 +176,8 @@ const sections = [
   { name: "替代方案決策", pattern: "## 替代方案決策" },
   { name: "技術深入分析", pattern: "## 技術深入分析" },
   { name: "直接競品", pattern: "直接競品" },
+  { name: "決策記錄", pattern: "### 決策記錄" },
+  { name: "探索日誌", pattern: "### 探索日誌" },
 ];
 const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
 const incomplete = [];
@@ -188,13 +190,13 @@ for (const p of pages) {
 }
 incomplete.sort((a, b) => b.stars - a.stars);
 if (incomplete.length > 0) {
-  dv.paragraph(`**${incomplete.length}** 個筆記缺少 3+ 個 v14 區塊`);
+  dv.paragraph(`**${incomplete.length}** 個筆記缺少 3+ 個 v17 區塊`);
   dv.table(
     ["專案", "Stars/天", "缺少區塊", "缺少數"],
     incomplete.slice(0, 10).map(i => [i.link, i.stars, i.missing, i.count])
   );
 } else {
-  dv.paragraph("所有非封存筆記都符合 v14 標準！");
+  dv.paragraph("所有非封存筆記都符合 v17 標準！");
 }
 ```
 
