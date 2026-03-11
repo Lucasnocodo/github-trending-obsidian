@@ -194,3 +194,19 @@ strong:is(:contains("[HIGH]")) {
 .callout[data-callout="warning"] {
   --callout-color: 255, 152, 0;
 }
+
+/* v27: GitHub topic tags - inline code styling */
+.markdown-rendered > p > code:not(:first-child) {
+  margin-left: 2px;
+}
+
+/* v27: Release notes collapsible section */
+.callout[data-callout="info"].is-collapsed {
+  margin-bottom: 0.5em;
+}
+
+/* v27: Maintenance health table - compact */
+.dashboard .dataview .table-view-table td:nth-child(4) {
+  font-family: var(--font-monospace);
+  letter-spacing: -1px;
+}
