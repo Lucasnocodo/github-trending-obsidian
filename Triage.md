@@ -243,6 +243,58 @@ if (incomplete.length > 0) {
 }
 ```
 
+## 筆記成熟度
+
+> [!abstract] 筆記的互動程度（依 Progressive Summarization 模式評估）
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const maturity = { seed: [], sprout: [], growing: [], evergreen: [] };
+
+for (const p of pages) {
+  let level = 0;
+  // Layer 1: 已讀（狀態不是 to-review）
+  if (p.status && p.status !== "to-review") level++;
+  // Layer 2: 已評分
+  if (p.my_rating > 0) level++;
+  // Layer 3: 有 verdict
+  if (p.verdict && p.verdict !== "") level++;
+  // Layer 4: ring 不是 assess
+  if (p.ring && p.ring !== "assess") level++;
+
+  const label = level === 0 ? "seed" : level === 1 ? "sprout" : level <= 2 ? "growing" : "evergreen";
+  maturity[label].push(p);
+}
+
+const total = pages.length;
+const labels = [
+  ["Seed (未接觸)", maturity.seed],
+  ["Sprout (已讀)", maturity.sprout],
+  ["Growing (已評分)", maturity.growing],
+  ["Evergreen (完整評估)", maturity.evergreen],
+];
+const lines = labels.map(([label, list]) => {
+  const pct = total > 0 ? Math.round((list.length / total) * 100) : 0;
+  const filled = Math.round(pct / 5);
+  return `${label}: ${"\\u2588".repeat(filled)}${"\\u2591".repeat(20 - filled)} ${list.length} (${pct}%)`;
+});
+dv.paragraph(lines.join("\n"));
+
+// 顯示 Evergreen 筆記
+if (maturity.evergreen.length > 0) {
+  dv.header(4, "Evergreen 筆記");
+  dv.table(
+    ["專案", "評分", "Ring", "結論"],
+    maturity.evergreen.map(p => [
+      p.file.link,
+      ("\\u2605".repeat(p.my_rating || 0) + "\\u2606".repeat(5 - (p.my_rating || 0))),
+      p.ring || "assess",
+      (p.verdict || "").slice(0, 40)
+    ])
+  );
+}
+```
+
 ## 快速統計
 
 ```dataviewjs
@@ -271,3 +323,4 @@ dv.paragraph(lines.join("\n"));
 > 2. 有興趣的改 `status: reading`，不相關的改 `status: archived`
 > 3. 試用後改 `status: tried`，給予 `my_rating` 1-5 分
 > 4. 決定長期使用的改 `status: integrated`
+> 5. 更新 `ring`（adopt/trial/hold）和 `verdict` 來提升筆記成熟度
