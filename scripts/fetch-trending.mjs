@@ -2551,21 +2551,36 @@ async function enrichConceptDescriptions(token) {
   const files = await readdir(CONCEPTS_DIR).catch(() => []);
   const placeholder = '用 2-3 句話解釋這個概念';
 
-  // 找出需要描述的概念
+  // 先用字典更新已知概念（不需要 LLM）
+  let dictUpdated = 0;
   const needsDesc = [];
   for (const file of files) {
     if (!file.endsWith('.md')) continue;
     const content = await readFile(join(CONCEPTS_DIR, file), 'utf-8');
-    if (content.includes(placeholder)) {
-      const name = file.replace('.md', '');
+    if (!content.includes(placeholder)) continue;
+    const name = file.replace('.md', '');
+    // 字典中有描述的直接更新
+    if (CONCEPT_DESCRIPTIONS[name]) {
+      const newContent = content.replace(
+        `_${placeholder}。想像對象是一個聰明但不熟悉這個領域的工程師朋友。_`,
+        CONCEPT_DESCRIPTIONS[name]
+      );
+      if (newContent !== content) {
+        await writeFile(join(CONCEPTS_DIR, file), newContent, 'utf-8');
+        dictUpdated++;
+      }
+    } else {
       needsDesc.push({ name, file, content });
     }
+  }
+  if (dictUpdated > 0) {
+    console.log(`Concepts: ${dictUpdated} updated from dictionary`);
   }
   if (needsDesc.length === 0) {
     console.log('Concepts: all have descriptions');
     return;
   }
-  console.log(`Concepts: ${needsDesc.length} need descriptions, generating...`);
+  console.log(`Concepts: ${needsDesc.length} need LLM descriptions, generating...`);
 
   // 批次 LLM 呼叫（每次最多 25 個概念）
   const BATCH = 25;
