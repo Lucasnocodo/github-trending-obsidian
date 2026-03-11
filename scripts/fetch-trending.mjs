@@ -2197,6 +2197,65 @@ WHERE first_seen AND dateformat(first_seen, "yyyy-MM") = "${monthStr}"
 SORT stars_per_day DESC
 \`\`\`
 
+## 本月回顧進度
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  const fs = p.first_seen?.toString();
+  return fs && fs.startsWith("${monthStr}");
+});
+const statusMap = {};
+for (const p of pages) {
+  const s = p.status || "unknown";
+  statusMap[s] = (statusMap[s] || 0) + 1;
+}
+const total = pages.length;
+if (total > 0) {
+  const lines = Object.entries(statusMap)
+    .sort((a, b) => b[1] - a[1])
+    .map(([s, c]) => {
+      const pct = Math.round((c / total) * 100);
+      const filled = Math.round(pct / 5);
+      return s + ": " + "█".repeat(filled) + "░".repeat(20 - filled) + " " + c + " (" + pct + "%)";
+    });
+  dv.paragraph(lines.join("\\n"));
+} else {
+  dv.paragraph("_本月尚無收錄_");
+}
+\`\`\`
+
+## 本月概念地圖
+
+> [!abstract] 哪些技術概念在本月最被關注？
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  const fs = p.first_seen?.toString();
+  return fs && fs.startsWith("${monthStr}");
+});
+const conceptCount = {};
+for (const p of pages) {
+  for (const link of (p.file.outlinks || [])) {
+    if (link.path?.startsWith("Concepts/")) {
+      const name = link.path.replace("Concepts/", "").replace(".md", "");
+      conceptCount[name] = (conceptCount[name] || 0) + 1;
+    }
+  }
+}
+const sorted = Object.entries(conceptCount).sort((a, b) => b[1] - a[1]).slice(0, 10);
+if (sorted.length > 0) {
+  dv.table(
+    ["概念", "引用數", "佔比"],
+    sorted.map(([name, count]) => {
+      const pct = Math.round((count / pages.length) * 100);
+      return [dv.fileLink("Concepts/" + name, false, name), count, pct + "%"];
+    })
+  );
+} else {
+  dv.paragraph("_本月專案尚未建立概念連結_");
+}
+\`\`\`
+
 ---
 
 ## 月度回顧
