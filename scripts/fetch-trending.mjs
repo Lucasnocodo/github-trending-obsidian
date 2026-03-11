@@ -155,10 +155,17 @@ async function fetchLatestRelease(fullName, token) {
     const data = await res.json();
     if (!data.length) return null;
     const r = data[0];
+    // 截取 release body 的重點（changelog 摘要）
+    let body = (r.body || '').trim();
+    if (body.length > 1500) {
+      // 按段落截取，保留前 1500 字
+      body = body.slice(0, 1500).replace(/\n[^\n]*$/, '') + '\n...（完整內容見 GitHub）';
+    }
     return {
       tag: r.tag_name,
       name: r.name || r.tag_name,
       date: r.published_at?.split('T')[0],
+      body: body || null,
     };
   } catch {
     return null;
@@ -356,7 +363,10 @@ function buildRepoPrompt(repos) {
       if (r.license?.spdx_id) parts.push(`授權: ${r.license.spdx_id}`);
       if (r._contributors?.length)
         parts.push(`主要貢獻者: ${r._contributors.map((c) => c.login).join(', ')}`);
-      if (r._release) parts.push(`最新版本: ${r._release.tag}`);
+      if (r._release) {
+        parts.push(`最新版本: ${r._release.tag} (${r._release.date || 'N/A'})`);
+        if (r._release.body) parts.push(`Release Notes:\n${r._release.body.slice(0, 800)}`);
+      }
       if (r.homepage) parts.push(`官方網站: ${r.homepage}`);
       if (r.topics?.length) parts.push(`Topics: ${r.topics.join(', ')}`);
       if (r._topIssues?.length) {
@@ -756,6 +766,12 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   if (repo.archived) signals.push('`ARCHIVED`');
   if (signals.length) {
     lines.push(signals.join(' '));
+    lines.push('');
+  }
+
+  // ── GitHub Topics ──
+  if (repo.topics?.length) {
+    lines.push(repo.topics.map(t => `\`${t}\``).join(' '));
     lines.push('');
   }
 
@@ -1327,6 +1343,16 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
       `**最新版本**：${repo._release.tag}${repo._release.name !== repo._release.tag ? ` — ${repo._release.name}` : ''} (${repo._release.date})`
     );
     lines.push('');
+    if (repo._release.body) {
+      lines.push('> [!info]- Release Notes');
+      const releaseBody = repo._release.body
+        .split('\n')
+        .slice(0, 30) // 最多 30 行
+        .map(l => `> ${l}`)
+        .join('\n');
+      lines.push(releaseBody);
+      lines.push('');
+    }
   }
 
   // ── 社群與生態 ──
@@ -2876,6 +2902,59 @@ const median = medianArr.length > 0 ? medianArr[Math.floor(medianArr.length / 2)
 dv.paragraph(\`**平均** \${avgSpd} stars/天 · **中位數** \${median} stars/天\`);
 \`\`\`
 
+## 維護健康快照
+
+> [!abstract] 你正在關注的專案是否仍在積極維護？
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.status && p.status !== "to-review" && p.status !== "archived";
+});
+if (pages.length > 0) {
+  const now = Date.now();
+  const rows = pages.sort(p => {
+    const pushed = p.pushed_at ? new Date(p.pushed_at.toString()).getTime() : 0;
+    return now - pushed;
+  }, "desc").map(p => {
+    const pushed = p.pushed_at ? new Date(p.pushed_at.toString()) : null;
+    const days = pushed ? Math.floor((now - pushed.getTime()) / 86400000) : null;
+    const health = days === null ? "?" : days <= 7 ? "Active" : days <= 30 ? "OK" : days <= 90 ? "Slow" : "Stale";
+    const bar = days === null ? "?" : days <= 7 ? "\\u2588\\u2588\\u2588\\u2588" : days <= 30 ? "\\u2588\\u2588\\u2588\\u2591" : days <= 90 ? "\\u2588\\u2588\\u2591\\u2591" : "\\u2588\\u2591\\u2591\\u2591";
+    return [p.file.link, p.status, health, bar, days !== null ? days + " 天前" : "?", p.category || ""];
+  });
+  dv.table(["專案", "狀態", "維護", "健康", "最後推送", "分類"], rows);
+} else {
+  dv.paragraph("先將感興趣的專案改為 reading/tried/integrated 狀態。");
+}
+\`\`\`
+
+## Topic 標籤雲
+
+> [!abstract] 收錄專案涵蓋的 GitHub Topics
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const topics = {};
+for (const p of pages) {
+  const tags = p.file.tags || [];
+  for (const t of tags) {
+    if (t.startsWith("#topic/")) {
+      const name = t.replace("#topic/", "").replace(/_/g, "-");
+      topics[name] = (topics[name] || 0) + 1;
+    }
+  }
+}
+const sorted = Object.entries(topics).sort((a, b) => b[1] - a[1]);
+if (sorted.length > 0) {
+  dv.paragraph(sorted.map(([t, c]) => {
+    const size = c >= 5 ? "**" : c >= 3 ? "" : "";
+    return size + t + "(" + c + ")" + size;
+  }).join(" "));
+} else {
+  dv.paragraph("_下次 Actions 執行後會出現 topic 標籤_");
+}
+\`\`\`
+
 ## 所有專案
 
 \`\`\`dataview
@@ -4046,6 +4125,34 @@ const topCat = Object.entries(cats).sort((a,b) => b[1] - a[1])[0];
 dv.paragraph(\`**\${total}** 個專案 · 回顧 **\${reviewed}** (\${pct}%) · 試用 **\${tried}** · 評分 **\${rated}**\`);
 dv.paragraph(\`<progress value="\${reviewed}" max="\${total}" style="width:100%"></progress>\`);
 if (topCat) dv.paragraph(\`最多分類：**\${topCat[0]}** (\${topCat[1]} 個)\`);
+\`\`\`
+
+## 你的工具箱
+
+> [!tip]- 你正在追蹤的專案（reading / tried / integrated）
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.status && p.status !== "to-review" && p.status !== "archived";
+});
+if (pages.length > 0) {
+  const byStatus = { integrated: [], tried: [], reading: [] };
+  for (const p of pages) {
+    const s = p.status || "";
+    if (byStatus[s]) byStatus[s].push(p);
+    else byStatus[s] = [p];
+  }
+  for (const [status, repos] of Object.entries(byStatus)) {
+    if (repos.length === 0) continue;
+    dv.header(4, status.charAt(0).toUpperCase() + status.slice(1));
+    dv.paragraph(repos.map(p => {
+      const rating = (p.my_rating || 0) > 0 ? " \\u2605" + p.my_rating : "";
+      return p.file.link + rating;
+    }).join(" / "));
+  }
+} else {
+  dv.paragraph("將專案改為 reading 狀態就會出現在這裡。");
+}
 \`\`\`
 
 ## 最新收錄
