@@ -926,7 +926,18 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   if (llmInfo?.architecture) {
     lines.push('## 架構分析');
     lines.push('');
-    lines.push(llmInfo.architecture);
+    // 將長段落分割為更易讀的段落（每 3 句一段）
+    const archSentences = llmInfo.architecture.match(/[^。！？]+[。！？]+/g) || [llmInfo.architecture];
+    if (archSentences.length >= 6) {
+      const chunks = [
+        archSentences.slice(0, 3).join(''),
+        archSentences.slice(3, 6).join(''),
+        archSentences.slice(6).join(''),
+      ].filter(c => c.trim());
+      lines.push(chunks.join('\n\n'));
+    } else {
+      lines.push(llmInfo.architecture);
+    }
     lines.push('');
   }
 
@@ -934,7 +945,19 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   if (llmInfo?.deep_dive) {
     lines.push('## 技術深入分析');
     lines.push('');
-    lines.push(llmInfo.deep_dive);
+    // 分段顯示（每 4-5 句一段，對應 prompt 中的結構：機制 / 效能 / 取捨 / 風險 / 整合）
+    const deepSentences = llmInfo.deep_dive.match(/[^。！？]+[。！？]+/g) || [llmInfo.deep_dive];
+    if (deepSentences.length >= 8) {
+      const chunks = [
+        deepSentences.slice(0, 4).join(''),
+        deepSentences.slice(4, 8).join(''),
+        deepSentences.slice(8, 12).join(''),
+        deepSentences.slice(12).join(''),
+      ].filter(c => c.trim());
+      lines.push(chunks.join('\n\n'));
+    } else {
+      lines.push(llmInfo.deep_dive);
+    }
     lines.push('');
   }
 
