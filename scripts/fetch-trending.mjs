@@ -3491,6 +3491,7 @@ function isDefaultUserNotes(userNotes) {
          trimmed.includes('_一句話_') ||
          trimmed.includes('_隨時記錄想法') ||
          trimmed.includes('相關性:: 未評估') || // v4 新模板的預設值
+         trimmed.includes('_第一印象：_') ||     // v16 探索日誌的預設值
          (!trimmed.includes('30 秒填完') && trimmed.includes('快速評估')) || // 舊版快速評估模板
          trimmed.length < 200;
 }
