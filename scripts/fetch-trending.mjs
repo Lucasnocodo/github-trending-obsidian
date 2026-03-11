@@ -43,14 +43,57 @@ async function fetchReadme(fullName, token) {
     });
     if (!res.ok) return '';
     const data = await res.json();
-    return Buffer.from(data.content, 'base64')
+    const raw = Buffer.from(data.content, 'base64')
       .toString('utf-8')
-      .slice(0, 10000)
       .replace(/!\[[^\]]*\]\([^)]+\)/g, '') // remove images
       .replace(/<img[^>]*>/g, '')
       .replace(/<\/?[^>]+>/g, '')
       .replace(/\n{3,}/g, '\n\n')
       .trim();
+
+    // 智能截取：優先保留重要區塊
+    if (raw.length <= 10000) return raw;
+
+    // 分段：按 ## 或 # 標題分割
+    const sections = raw.split(/(?=^#{1,3} )/m);
+    const priority = [
+      /install|setup|getting.?started|quick.?start|prerequisites/i,
+      /usage|how.?to|example|tutorial|demo/i,
+      /feature|highlight|what.?it|overview|about|introduction/i,
+      /api|config|option|parameter/i,
+      /why|motivation|comparison|vs\b|benchmark/i,
+    ];
+
+    // 第一段（通常是描述）一定保留
+    let result = sections[0] || '';
+    let remaining = 10000 - result.length;
+
+    // 按優先級加入區塊
+    const used = new Set([0]);
+    for (const pattern of priority) {
+      for (let i = 1; i < sections.length; i++) {
+        if (used.has(i)) continue;
+        const heading = sections[i].split('\n')[0] || '';
+        if (pattern.test(heading) && sections[i].length <= remaining) {
+          result += '\n' + sections[i];
+          remaining -= sections[i].length;
+          used.add(i);
+        }
+      }
+    }
+    // 填充剩餘空間（跳過 contributing/license/changelog 等低價值區塊）
+    const skip = /contribut|license|changelog|acknowledgement|sponsor|funding|citation/i;
+    for (let i = 1; i < sections.length; i++) {
+      if (used.has(i)) continue;
+      const heading = sections[i].split('\n')[0] || '';
+      if (skip.test(heading)) continue;
+      if (sections[i].length <= remaining) {
+        result += '\n' + sections[i];
+        remaining -= sections[i].length;
+        used.add(i);
+      }
+    }
+    return result.slice(0, 10000);
   } catch {
     return '';
   }
