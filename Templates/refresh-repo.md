@@ -23,12 +23,19 @@ try {
       fm.forks = data.forks_count;
       fm.open_issues = data.open_issues_count;
       fm.pushed_at = data.pushed_at?.split("T")[0];
-      fm.stars_per_day = Math.round(
+      const spd = Math.round(
         data.stargazers_count / Math.max(1, Math.floor(
           (Date.now() - new Date(data.created_at).getTime()) / 86400000
         ))
       );
+      fm.stars_per_day = spd;
       fm.last_reviewed = new Date().toISOString().split("T")[0];
+      // v12: 更新參與度和複習日期
+      const ratio = data.stargazers_count > 0 ? data.forks_count / data.stargazers_count : 0;
+      fm.engagement = ratio >= 0.3 ? "high" : ratio >= 0.1 ? "medium" : "low";
+      const d = new Date();
+      d.setDate(d.getDate() + (spd >= 200 ? 3 : spd >= 30 ? 7 : 14));
+      fm.next_review = d.toISOString().split("T")[0];
     }
   );
 
