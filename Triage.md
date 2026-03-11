@@ -202,7 +202,7 @@ SORT first_seen ASC
 
 ## 筆記完整度
 
-> [!info] 缺少重要區塊的筆記（v20 標準）
+> [!info] 缺少重要區塊的筆記（v21 標準）
 
 ```dataviewjs
 const sections = [
@@ -219,6 +219,8 @@ const sections = [
   { name: "健康度儀表板", pattern: "健康度儀表板" },
   { name: "Star 趨勢", pattern: "## Star 趨勢" },
   { name: "決策分數", pattern: "## 決策分數" },
+  { name: "OpenSSF Scorecard", pattern: "OpenSSF Scorecard" },
+  { name: "contributor_count", pattern: "contributor_count:" },
 ];
 const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
 const incomplete = [];
@@ -237,7 +239,7 @@ if (incomplete.length > 0) {
     incomplete.slice(0, 10).map(i => [i.link, i.stars, i.missing, i.count])
   );
 } else {
-  dv.paragraph("所有非封存筆記都符合 v20 標準！");
+  dv.paragraph("所有非封存筆記都符合 v21 標準！");
 }
 ```
 

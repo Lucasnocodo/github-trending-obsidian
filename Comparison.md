@@ -273,6 +273,27 @@ if (multi.length > 0) {
 }
 ```
 
+## 貢獻者風險總覽
+
+> [!warning] Solo 專案風險：只有 1 位貢獻者的熱門專案
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived" && (p.contributor_count || 0) <= 1 && (p.stars_per_day || 0) >= 10);
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "Stars/天", "分類", "安裝", "授權", "維護狀態"],
+    pages.sort(p => p.stars_per_day, "desc").map(p => {
+      const pushed = p.pushed_at ? new Date(p.pushed_at.toString()) : null;
+      const days = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
+      const maint = days === null ? "?" : days <= 7 ? "Active" : days <= 30 ? "Moderate" : "Stale";
+      return [p.file.link, p.stars_per_day || 0, p.category || "", p.install_complexity || "?", p.license || "N/A", maint];
+    })
+  );
+} else {
+  dv.paragraph("目前沒有高熱度的 solo 專案。");
+}
+```
+
 ## 安裝難度 vs 評分
 
 > [!abstract] 已評分專案的安裝難度分佈
@@ -323,6 +344,35 @@ dv.table(
 );
 ```
 
+## 新興技術偵測
+
+> [!abstract] 近 7 天新出現的技術棧組合
+
+```dataviewjs
+const recent = dv.pages('"Repos"').where(p => {
+  if (!p.first_seen) return false;
+  return (Date.now() - new Date(p.first_seen.toString()).getTime()) < 7 * 86400000;
+});
+const langCatPairs = {};
+for (const p of recent) {
+  const key = `${p.language || "?"} + ${p.category || "?"}`;
+  if (!langCatPairs[key]) langCatPairs[key] = [];
+  langCatPairs[key].push(p);
+}
+const sorted = Object.entries(langCatPairs).sort((a, b) => b[1].length - a[1].length);
+if (sorted.length > 0) {
+  dv.table(
+    ["組合", "專案數", "代表專案", "平均 Stars/天"],
+    sorted.slice(0, 10).map(([key, repos]) => {
+      const avgSpd = Math.round(repos.reduce((s, p) => s + (p.stars_per_day || 0), 0) / repos.length);
+      return [key, repos.length, repos.slice(0, 2).map(p => p.file.link).join(", "), avgSpd];
+    })
+  );
+} else {
+  dv.paragraph("本週尚無新收錄。");
+}
+```
+
 ---
 
 > [!info] 使用方式
@@ -331,4 +381,5 @@ dv.table(
 > 3. 子分類交叉分析幫你找到直接競品
 > 4. Owner 影響力找出高產出的開發者
 > 5. 決策矩陣幫你找出綜合評分最高的專案
-> 6. 搭配 [[Triage]] 進行狀態管理
+> 6. 貢獻者風險總覽識別 bus factor 風險
+> 7. 搭配 [[Triage]] 進行狀態管理

@@ -642,6 +642,7 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     `discovered_via: "GitHub Trending"`,
     `appearances: 1`,
     `next_review: "${nextReviewDate(today, rate)}"`,
+    `contributor_count: ${repo._contributors?.length || 0}`,
     `engagement: ${engagementLevel(repo.stargazers_count, repo.forks_count)}`,
     `verdict: ""`,
     `ring_history: "assess@${today}"`,
@@ -1067,6 +1068,8 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push(`| 建立日期 | ${repo.created_at.split('T')[0]} |`);
   if (repo.homepage) lines.push(`| 官方網站 | [Link](${repo.homepage}) |`);
   if (repo.size) lines.push(`| Repo 大小 | ${repo.size > 1024 ? `${(repo.size / 1024).toFixed(1)} MB` : `${repo.size} KB`} |`);
+  lines.push(`| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/${repo.full_name}) |`);
+  if (repo.topics?.length) lines.push(`| Topics | ${repo.topics.slice(0, 8).map(t => `\`${t}\``).join(' ')} |`);
   lines.push('');
 
   // 依賴摘要
@@ -3112,6 +3115,66 @@ if (total > 0) {
 }
 \`\`\`
 
+## 授權分佈
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.category === "${category}" && p.status !== "archived");
+const licMap = {};
+const commercial = new Set(["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC", "Unlicense"]);
+for (const p of pages) {
+  const lic = p.license || "N/A";
+  if (!licMap[lic]) licMap[lic] = { count: 0, commercial: commercial.has(lic) };
+  licMap[lic].count++;
+}
+const sorted = Object.entries(licMap).sort((a, b) => b[1].count - a[1].count);
+if (sorted.length > 0) {
+  dv.table(
+    ["授權", "數量", "商業友好"],
+    sorted.map(([lic, d]) => [lic, d.count, d.commercial ? "Yes" : "No"])
+  );
+}
+\`\`\`
+
+## 需要關注的專案
+
+> [!warning] 收錄 3+ 天仍未接觸
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  if (p.category !== "${category}" || p.status !== "to-review" || !p.first_seen) return false;
+  return (Date.now() - new Date(p.first_seen.toString()).getTime()) >= 3 * 86400000;
+}).sort(p => p.stars_per_day, "desc").limit(10);
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "Stars/天", "收錄日", "安裝"],
+    pages.map(p => [p.file.link, p.stars_per_day || 0, p.first_seen, p.install_complexity || "?"])
+  );
+} else {
+  dv.paragraph("所有專案都有被接觸。");
+}
+\`\`\`
+
+## 貢獻者風險
+
+> [!abstract] 低 bus factor 的專案可能有維護風險
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.category === "${category}" && p.status !== "archived" && (p.contributor_count || 0) <= 1);
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "Stars", "貢獻者", "維護狀態"],
+    pages.sort(p => p.stars, "desc").map(p => {
+      const pushed = p.pushed_at ? new Date(p.pushed_at.toString()) : null;
+      const days = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
+      const maint = days === null ? "?" : days <= 7 ? "Active" : days <= 30 ? "Moderate" : "Stale";
+      return [p.file.link, p.stars || 0, p.contributor_count || "?", maint];
+    })
+  );
+} else {
+  dv.paragraph("此分類所有專案都有多位貢獻者。");
+}
+\`\`\`
+
 ## 每週趨勢
 
 \`\`\`dataview
@@ -3275,6 +3338,32 @@ if (thisWeek.length > 0) {
 > SORT stars DESC
 > LIMIT 5
 > \`\`\`
+
+## 分類健康度
+
+> [!abstract]- 各分類的專案數量和回顧進度
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const cats = {};
+for (const p of pages) {
+  const cat = p.category || "其他";
+  if (!cats[cat]) cats[cat] = { total: 0, reviewed: 0, rated: 0, avgSpd: 0, totalSpd: 0 };
+  cats[cat].total++;
+  if (p.status !== "to-review") cats[cat].reviewed++;
+  if (p.my_rating > 0) cats[cat].rated++;
+  cats[cat].totalSpd += (p.stars_per_day || 0);
+}
+const rows = Object.entries(cats)
+  .sort((a, b) => b[1].total - a[1].total)
+  .map(([cat, d]) => {
+    const pct = Math.round((d.reviewed / d.total) * 100);
+    const avgSpd = Math.round(d.totalSpd / d.total);
+    const bar = "█".repeat(Math.round(pct / 5)) + "░".repeat(20 - Math.round(pct / 5));
+    return [cat, d.total, \`\${pct}% \${bar}\`, d.rated, avgSpd];
+  });
+dv.table(["分類", "專案數", "回顧進度", "已評分", "平均 Stars/天"], rows);
+\`\`\`
 
 ## 概念熱度 Top 10
 
@@ -4335,7 +4424,9 @@ function needsRefresh(content) {
          !content.includes('同 Owner 專案') ||              // v19: 同 Owner + 同語言 + 強化排名
          !content.includes('健康度儀表板') ||              // v19: 健康度 + 採用成本 + 擴大 summary
          !content.includes('## Star 趨勢') ||              // v20: star 趨勢圖 + 決策分數 + 安全評估
-         !content.includes('## 決策分數');                  // v20: 綜合決策分數
+         !content.includes('## 決策分數') ||                // v20: 綜合決策分數
+         !content.includes('contributor_count:') ||          // v21: 貢獻者數量 frontmatter
+         !content.includes('OpenSSF Scorecard');              // v21: OpenSSF Scorecard 連結
 }
 
 function hasLLMContent(content) {
