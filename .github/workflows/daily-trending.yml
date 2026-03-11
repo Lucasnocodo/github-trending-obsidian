@@ -12,7 +12,7 @@ permissions:
 jobs:
   fetch-trending:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -24,6 +24,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_MODELS_TOKEN || secrets.GITHUB_TOKEN }}
         run: node scripts/fetch-trending.mjs
+
+      - name: Intermediate commit (save fetch results)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add Daily/ Repos/ MOC/ Weekly/ Dashboard.md data/ 2>/dev/null || true
+          git add Monthly/ Concepts/ Home.md Tech-Radar.canvas Triage.md Comparison.md 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "daily fetch $(date +%Y-%m-%d)"
 
       - name: Refresh notes missing Chinese content
         env:
