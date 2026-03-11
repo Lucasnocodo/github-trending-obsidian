@@ -27,6 +27,16 @@
     "month": "text",
     "date": "date",
     "total_stars": "number",
-    "repo_count": "number"
+    "repo_count": "number",
+    "subcategory": "text",
+    "use_case": "text",
+    "priority": "text",
+    "ring": "text",
+    "verdict": "text",
+    "discovered_via": "text",
+    "next_review": "date",
+    "engagement": "text",
+    "ring_history": "text",
+    "appearances": "number"
   }
 }
