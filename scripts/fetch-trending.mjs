@@ -778,6 +778,37 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     lines.push('');
   }
 
+  // ── TL;DR 快速決策 ──
+  if (!llmFailed && llmInfo) {
+    lines.push('> [!question] TL;DR — 值得投入嗎？');
+    const tldrParts = [];
+    // 成熟度
+    if (llmInfo.maturity_assessment?.stage) {
+      const stageLabel = { alpha: 'Alpha (不穩定)', beta: 'Beta (可試用)', stable: 'Stable (可用)', production: 'Production (成熟)' };
+      tldrParts.push(`**成熟度** ${stageLabel[llmInfo.maturity_assessment.stage] || llmInfo.maturity_assessment.stage}`);
+    }
+    // 安裝難度
+    tldrParts.push(`**安裝** ${installLabel === 'easy' ? 'Easy (一行搞定)' : installLabel === 'medium' ? 'Medium (需設定)' : 'Hard (需環境)'}`);
+    // 學習時間
+    if (llmInfo.adoption_cost?.learning_hours != null) {
+      tldrParts.push(`**學習** ~${llmInfo.adoption_cost.learning_hours}h`);
+    }
+    // 鎖定風險
+    if (llmInfo.adoption_cost?.lock_in_risk) {
+      tldrParts.push(`**綁定風險** ${llmInfo.adoption_cost.lock_in_risk}`);
+    }
+    if (tldrParts.length > 0) {
+      lines.push(`> ${tldrParts.join(' · ')}`);
+    }
+    // 最終結論
+    if (llmInfo.adoption_cost?.verdict) {
+      lines.push(`> **結論** ${llmInfo.adoption_cost.verdict}`);
+    } else if (llmInfo.maturity_assessment?.recommendation) {
+      lines.push(`> **建議** ${llmInfo.maturity_assessment.recommendation}`);
+    }
+    lines.push('');
+  }
+
   // ── 核心創新 ──
   if (llmInfo?.novelty_claim) {
     lines.push('> [!abstract] 核心創新');
