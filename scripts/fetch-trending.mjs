@@ -2271,6 +2271,10 @@ const checks = [
   { name: "架構分析", pattern: "## 架構分析" },
   { name: "開發動態", pattern: "## 開發動態" },
   { name: "熱門議題", pattern: "## 熱門議題" },
+  { name: "生態系整合", pattern: "## 生態系整合" },
+  { name: "歷史脈絡", pattern: "## 歷史脈絡" },
+  { name: "團隊採用指南", pattern: "## 團隊採用指南" },
+  { name: "相對成長速度", pattern: "## 相對成長速度" },
 ];
 const incomplete = [];
 for (const p of pages) {
@@ -2422,6 +2426,40 @@ if (combos.length > 0) {
 } else {
   dv.paragraph("_需要更多專案才能看到技術棧熱度_");
 }
+\`\`\`
+
+## 成長速度分佈
+
+> [!abstract] 各速度區間的專案分佈
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const bands = [
+  { label: "Viral (1000+/天)", min: 1000, max: Infinity, repos: [] },
+  { label: "Hot (100-999/天)", min: 100, max: 999, repos: [] },
+  { label: "Growing (10-99/天)", min: 10, max: 99, repos: [] },
+  { label: "Steady (<10/天)", min: 0, max: 9, repos: [] },
+];
+for (const p of pages) {
+  const spd = p.stars_per_day || 0;
+  for (const b of bands) {
+    if (spd >= b.min && spd <= b.max) { b.repos.push(p); break; }
+  }
+}
+const total = pages.length;
+dv.table(
+  ["速度區間", "數量", "佔比", "視覺化", "代表專案"],
+  bands.map(b => {
+    const pct = total > 0 ? Math.round(b.repos.length / total * 100) : 0;
+    const bar = "\\u2588".repeat(Math.round(pct / 5)) + "\\u2591".repeat(20 - Math.round(pct / 5));
+    const top = b.repos.sort((a,b) => (b.stars_per_day||0) - (a.stars_per_day||0)).slice(0, 2).map(r => r.file.link).join(", ");
+    return [b.label, b.repos.length, pct + "%", bar, top];
+  })
+);
+const avgSpd = total > 0 ? Math.round(pages.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / total) : 0;
+const medianArr = pages.map(p => p.stars_per_day || 0).array().sort((a,b) => a-b);
+const median = medianArr.length > 0 ? medianArr[Math.floor(medianArr.length / 2)] : 0;
+dv.paragraph(\`**平均** \${avgSpd} stars/天 · **中位數** \${median} stars/天\`);
 \`\`\`
 
 ## 所有專案

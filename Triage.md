@@ -221,6 +221,10 @@ const sections = [
   { name: "決策分數", pattern: "## 決策分數" },
   { name: "OpenSSF Scorecard", pattern: "OpenSSF Scorecard" },
   { name: "contributor_count", pattern: "contributor_count:" },
+  { name: "生態系整合", pattern: "## 生態系整合" },
+  { name: "歷史脈絡", pattern: "## 歷史脈絡" },
+  { name: "團隊採用指南", pattern: "## 團隊採用指南" },
+  { name: "相對成長速度", pattern: "相對成長速度" },
 ];
 const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
 const incomplete = [];
@@ -233,13 +237,13 @@ for (const p of pages) {
 }
 incomplete.sort((a, b) => b.stars - a.stars);
 if (incomplete.length > 0) {
-  dv.paragraph(`**${incomplete.length}** 個筆記缺少 3+ 個 v20 區塊`);
+  dv.paragraph(`**${incomplete.length}** 個筆記缺少 3+ 個 v23 區塊`);
   dv.table(
     ["專案", "Stars/天", "缺少區塊", "缺少數"],
     incomplete.slice(0, 10).map(i => [i.link, i.stars, i.missing, i.count])
   );
 } else {
-  dv.paragraph("所有非封存筆記都符合 v21 標準！");
+  dv.paragraph("所有非封存筆記都符合 v23 標準！");
 }
 ```
 
