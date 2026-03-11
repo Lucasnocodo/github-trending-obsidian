@@ -1936,6 +1936,25 @@ const CONCEPT_DESCRIPTIONS = {
   '爬蟲': '自動從網站抓取資料的程式。Python 的 Scrapy、Playwright 是常見工具。需要處理反爬蟲機制、速率限制、動態渲染等挑戰。使用前要注意 robots.txt 和法律規範。',
   '區塊鏈': '去中心化的分散式帳本技術，資料一旦寫入就幾乎不可篡改。除了加密貨幣，也用於供應鏈追蹤、數位身份等場景。但不是所有「需要不可篡改」的問題都需要區塊鏈，大部分情況普通資料庫就夠了。',
   '隱私保護': '保護使用者資料不被未授權存取或濫用的技術和實踐。包括加密、匿名化、差分隱私、零知識證明等。GDPR 和各國隱私法規讓這個領域從「nice-to-have」變成「must-have」。',
+  '電腦視覺': '讓電腦從影像和影片中提取資訊的技術。從基礎的物件偵測到進階的場景理解，CNN 和 Vision Transformer 是目前主流架構。自駕車、醫療影像分析、人臉辨識都是典型應用。',
+  '靜態分析': '不實際執行程式就分析原始碼來找出 bug、安全漏洞和程式碼品質問題的技術。ESLint、SonarQube、Semgrep 是常見工具。比測試更早發現問題，是 CI/CD 流程中的重要防線。',
+  '生成式 AI': '能生成新內容（文字、圖片、音樂、程式碼）的 AI 技術。從 GPT 到 Stable Diffusion，生成式 AI 正在改變創作和開發的方式。核心技術包括 Transformer、Diffusion Model 和 GAN。',
+  '資訊安全': '保護資訊系統免於未授權存取、破壞和洩漏的整體實踐。涵蓋網路安全、應用安全、資料安全等面向。CIA 三角（機密性、完整性、可用性）是基本原則。',
+  '特權提升': '攻擊者取得比預期更高的系統權限的技術。從普通使用者提升到管理員或 root 權限。分為本地提權和遠端提權，是滲透測試中的核心環節。',
+  '攻擊鏈分析': '把多個獨立的安全漏洞串聯成完整的攻擊路徑來分析風險。Cyber Kill Chain 和 MITRE ATT&CK 是常見框架。幫助防禦者理解攻擊者的思維模式，找出防禦中的薄弱環節。',
+  '跨平台': '讓同一套程式碼在不同作業系統（Windows、macOS、Linux）或平台（Web、Mobile、Desktop）上運行的技術。Electron、Flutter、React Native 是常見方案。省開發成本但可能犧牲原生體驗。',
+  '設計模式': '軟體開發中反覆出現的問題的通用解決方案。GoF 的 23 種經典模式是基礎，但現代開發更常用的是 Repository、Observer、Strategy 等模式。重點是理解何時用、為什麼用，而不是機械式套用。',
+  '量化交易': '用數學模型和演算法自動執行金融交易策略。包含策略開發、回測、風控和即時執行。需要同時掌握金融知識和程式設計能力，Python 和 C++ 是主流語言。',
+  '本地 AI': '在個人裝置上直接運行 AI 模型，而不依賴雲端 API。llama.cpp、Ollama 讓普通電腦也能跑 LLM。好處是隱私、離線可用、零成本，代價是速度和模型大小受限。',
+  'OAuth': '開放授權標準，讓使用者不需分享密碼就能授權第三方應用存取自己的資料。你按「用 Google 登入」就是在用 OAuth。OAuth 2.0 是目前最廣泛使用的版本。',
+  'OAuth2': '開放授權標準 2.0 版，定義了四種授權流程（Authorization Code、Implicit、Resource Owner Password、Client Credentials）。是目前網路服務間安全授權的事實標準。',
+  'CUDA': 'NVIDIA 的平行運算平台和程式模型，讓開發者用 GPU 來加速通用計算。深度學習訓練和推論幾乎都依賴 CUDA。這也是為什麼 NVIDIA GPU 在 AI 領域佔主導地位。',
+  '開源情報': '從公開來源（社群媒體、新聞、公共資料庫）收集和分析情報的方法，英文叫 OSINT。用於安全研究、競爭分析、新聞調查等。工具包括 Maltego、theHarvester 等。',
+  'UI 設計': '使用者介面設計，決定使用者如何與產品互動。好的 UI 設計要兼顧美觀和易用，遵循一致性、回饋、容錯等原則。Figma 是目前最主流的 UI 設計工具。',
+  '視頻編輯': '用工具對影片進行剪輯、特效、調色等後製處理。從 FFmpeg 的命令列到 Premiere Pro 的專業軟體，AI 正在讓這個領域變得更自動化，像是自動字幕、場景偵測、風格轉換。',
+  '生物信息學': '用計算方法分析生物資料（基因序列、蛋白質結構等）的交叉學科。Python 和 R 是主流語言，BioPython 是常見工具。隨著定序成本下降，這個領域的資料量正在爆發。',
+  '藥物發現': 'AI 輔助藥物發現正在加速新藥開發流程。從分子生成、靶點預測到臨床試驗設計，AI 可以將傳統需要數年的篩選過程縮短到數月。AlphaFold 在蛋白質結構預測的突破就是典型例子。',
+  '記憶管理': 'AI 系統中讓模型記住和利用歷史對話或資料的機制。從簡單的 context window 到 RAG、向量資料庫，再到 MemGPT 式的分層記憶。是建構有狀態 AI 應用的核心挑戰。',
 };
 
 function generateConceptNote(concept) {
@@ -2049,11 +2068,10 @@ async function generateConceptNotes() {
     }
   }
 
-  // 只為出現 2 次以上的概念建立筆記
+  // 為所有被引用的概念建立筆記（消除 ghost links）
   await mkdir(CONCEPTS_DIR, { recursive: true });
   let created = 0;
   for (const [concept, count] of Object.entries(conceptCounts)) {
-    if (count < 2) continue;
     // 清理概念名稱中的特殊字元（如 CI/CD 的斜線）
     const safeName = concept.replace(/[/\\:*?"<>|]/g, '-');
     const fileName = `${safeName}.md`;
