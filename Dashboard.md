@@ -209,7 +209,7 @@ const pages = dv.pages('"Repos"')
     if (!p.first_seen || !p.pushed_at) return false;
     const daysSinceSeen = (new Date() - new Date(p.first_seen?.toString())) / 86400000;
     const daysSincePush = (new Date() - new Date(p.pushed_at?.toString())) / 86400000;
-    return daysSinceSeen > 7 && daysSincePush < 7 && (p.stars_per_day || 0) > 100;
+    return daysSinceSeen > 7 && daysSincePush < 7 && (p.stars_per_day || 0) > 50;
   })
   .sort(p => p.stars, "desc");
 
@@ -268,6 +268,18 @@ dv.table(
     Math.round(d.stars / d.count).toLocaleString()
   ])
 );
+```
+
+## 授權分佈
+
+```dataview
+TABLE WITHOUT ID
+  license AS "授權",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+GROUP BY license
+SORT length(rows) DESC
 ```
 
 ## Easy Install 專案
