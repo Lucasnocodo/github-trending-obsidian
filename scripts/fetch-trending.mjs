@@ -638,9 +638,12 @@ function generateRepoNote(repo, llmInfo, today) {
       lines.push('| 工具 | 差異 |');
       lines.push('| --- | --- |');
       for (const t of llmInfo.similar_tools) {
-        // 嘗試將工具名轉為 wikilink（如果可能是 GitHub repo）
+        // 使用外部 GitHub 連結，避免產生指向不存在 repo 的 ghost wikilinks
+        // vault-internal 交叉連結由 延伸閱讀 的 autoCrossLink 負責
         const toolName = t.name || '';
-        const display = toolName.includes('/') ? `[[${repoFileName(toolName).replace('.md', '')}\\|${toolName}]]` : toolName;
+        const display = toolName.includes('/')
+          ? `[${toolName}](https://github.com/${toolName})`
+          : toolName;
         lines.push(`| ${display} | ${t.diff || ''} |`);
       }
     } else {

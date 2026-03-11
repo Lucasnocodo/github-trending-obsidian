@@ -354,7 +354,7 @@ start my day
 
 相關概念：[[自動化測試]] · [[資料視覺化]] · [[機器學習]]
 
-相關專案：[[arxiv-sanity-preserver--arxiv-sanity-preserver|arxiv-sanity-preserver/arxiv-sanity-preserver]] · [[paperpile--paperpile|paperpile/paperpile]] · [[ahmadawais--chartli|ahmadawais/chartli]]
+相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[arxiv-sanity-preserver--arxiv-sanity-preserver|arxiv-sanity-preserver/arxiv-sanity-preserver]] · [[paperpile--paperpile|paperpile/paperpile]]
 
 [GitHub](https://github.com/juliye2025/evil-read-arxiv)
 

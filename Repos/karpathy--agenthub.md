@@ -179,7 +179,7 @@ curl -X POST -H 'Authorization: Bearer YOUR_SECRET' -H 'Content-Type: applicatio
 
 相關概念：[[AI agents]] · [[協作平台]] · [[去中心化開發]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/karpathy/agenthub)
 
