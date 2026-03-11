@@ -519,10 +519,14 @@ async function fileExists(path) {
 }
 
 // ── v12: 間隔複習日期計算 ──────────────────────────────────
-function nextReviewDate(today, starsPerDay) {
+function nextReviewDate(today, starsPerDay, myRating = 0) {
   const d = new Date(today);
-  // 高優先 3 天後、中 7 天、低 14 天
-  const days = starsPerDay >= 200 ? 3 : starsPerDay >= 30 ? 7 : 14;
+  // 基礎間隔：高 stars 3 天、中 7 天、低 14 天
+  let days = starsPerDay >= 200 ? 3 : starsPerDay >= 30 ? 7 : 14;
+  // 評分衰減：已評分過的 repo 延長複習間隔（避免重複回顧已看過的）
+  if (myRating >= 4) days = Math.max(days, 30);       // 高評分：至少 30 天後
+  else if (myRating >= 3) days = Math.max(days, 14);   // 中評分：至少 14 天後
+  else if (myRating >= 1) days = Math.max(days, 7);    // 低評分：至少 7 天後
   d.setDate(d.getDate() + days);
   return d.toISOString().split('T')[0];
 }
@@ -1712,6 +1716,8 @@ TABLE WITHOUT ID
   category AS "分類",
   length(rows) AS "數量",
   sum(rows.stars) AS "總 Stars",
+  round(average(rows.stars_per_day), 0) AS "平均 Stars/天",
+  max(rows.stars_per_day) AS "最快",
   round(sum(rows.my_rating) / length(rows.where(r => r.my_rating > 0)), 1) AS "平均評分"
 FROM "Repos"
 GROUP BY category
@@ -2692,10 +2698,26 @@ tags:
 
 \`\`\`dataviewjs
 const pages = dv.pages('"Repos"').where(p => p.category === "${category}");
+const active = pages.where(p => p.status !== "archived");
 const total = pages.length;
 const reviewed = pages.where(p => p.status && p.status !== "to-review").length;
+const rated = pages.where(p => p.my_rating > 0);
 const avgStars = total > 0 ? Math.round(pages.array().reduce((s, p) => s + (p.stars || 0), 0) / total) : 0;
-dv.paragraph(\`**\${total}** 個專案 · 已回顧 \${reviewed}/\${total} · 平均 Stars: \${avgStars.toLocaleString()}\`);
+const avgSpd = active.length > 0 ? Math.round(active.array().reduce((s, p) => s + (p.stars_per_day || 0), 0) / active.length) : 0;
+const maxSpd = active.length > 0 ? Math.max(...active.array().map(p => p.stars_per_day || 0)) : 0;
+const avgRating = rated.length > 0 ? (rated.array().reduce((s, p) => s + p.my_rating, 0) / rated.length).toFixed(1) : "N/A";
+
+dv.paragraph(\`**\${total}** 個專案 · 已回顧 \${reviewed}/\${total} · 已評分 \${rated.length}\`);
+dv.paragraph(\`平均 Stars: \${avgStars.toLocaleString()} · 平均 Stars/天: \${avgSpd} · 最快: \${maxSpd}/天\${rated.length > 0 ? " · 平均評分: " + avgRating + "/5" : ""}\`);
+
+// 本週新增（MOC 健康指標）
+const recent = pages.where(p => {
+  if (!p.first_seen) return false;
+  return (Date.now() - new Date(p.first_seen.toString()).getTime()) < 7 * 86400000;
+});
+if (recent.length > 0) {
+  dv.paragraph(\`**本週新增**: \${recent.map(p => p.file.link).join(", ")}\`);
+}
 \`\`\`
 
 ## 依狀態分群
