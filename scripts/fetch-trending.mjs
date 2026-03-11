@@ -141,6 +141,7 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 5. "use_cases": 陣列，3 個場景。格式：「[具體角色] 用它來 [具體動作+預期結果]，因為 [具體好處，要有數據或對比]」。例子：「後端工程師用它來在 CI 中自動檢測 API breaking changes，因為手動 diff OpenAPI spec 容易漏掉 nested field 的變動」
 6. "target_audience": 一句話，越具體越好。不要寫「開發者」，要寫「需要在 M1 Mac 上跑 LLM 推論但不想裝 Docker 的獨立開發者」
 7. "category": AI/ML、開發工具、Web 應用、CLI 工具、資料科學、安全、教學資源、基礎設施、其他（選一個）
+7b. "subcategory": 更精確的子分類（2-3 個字）。例如開發工具底下可以是：API 工具、WeChat 工具、Claude 工具、MCP 工具、程式碼工具、自動化、監控、測試、CI/CD 等。AI/ML 底下可以是：LLM 訓練、推論優化、影像生成、NLP、Agent 等。自行判斷合理的子分類名稱
 8. "key_features": 陣列，5-8 個功能特色。每個要具體到可操作的層面，格式：「功能名 — 具體描述（含數據、指令、參數）」。壞的：「支持多種圖表類型」。好的：「8 種圖表格式（ascii/spark/bars/columns/heatmap/unicode/braille/svg），用 -t 參數切換」
 9. "quickstart_steps": 陣列，3-5 個安裝/使用步驟。每步是物件：{"step": "簡潔說明", "cmd": "完整可複製貼上的指令"}。從 README 提取真實指令。沒有就回傳 []
 10. "code_example": 一段展示核心用法的程式碼或指令（含語言標記如 bash/python/js）。從 README 提取最有代表性的範例，展示輸入輸出。不超過 15 行。沒有就回傳 null
@@ -411,6 +412,7 @@ function generateRepoNote(repo, llmInfo, today) {
     `week: "${getWeekString(today)}"`,
     `month: "${today.slice(0, 7)}"`,
     `category: "${cat}"`,
+    `subcategory: "${llmInfo?.subcategory || ''}"`,
     `release_tag: "${repo._release?.tag || ''}"`,
     `install_complexity: "${installLabel}"`,
     `status: to-review`,
@@ -2293,7 +2295,8 @@ function needsRefresh(content) {
          !content.includes('30 秒填完') ||  // v4: 簡化快速評估
          !content.includes('同週收錄') ||    // v4: 同週收錄 Dataview
          !content.includes('use_case:') ||   // v5: triage 欄位
-         !content.includes('priority:');     // v5: 優先級
+         !content.includes('priority:') ||   // v5: 優先級
+         !content.includes('subcategory:');  // v6: 子分類
 }
 
 function hasLLMContent(content) {

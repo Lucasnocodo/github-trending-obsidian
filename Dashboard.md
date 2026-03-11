@@ -131,6 +131,22 @@ GROUP BY category
 SORT length(rows) DESC
 ```
 
+## 依子分類瀏覽
+
+> [!tip]- 展開查看細分類
+
+```dataview
+TABLE WITHOUT ID
+  category AS "主分類",
+  subcategory AS "子分類",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE subcategory != ""
+GROUP BY category + " / " + subcategory
+SORT length(rows) DESC
+```
+
 ## 依語言瀏覽
 
 ```dataview
