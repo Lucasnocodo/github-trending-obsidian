@@ -166,7 +166,7 @@ SORT first_seen ASC
 
 ## 筆記完整度
 
-> [!info] 缺少重要區塊的筆記（v18 標準）
+> [!info] 缺少重要區塊的筆記（v19 標準）
 
 ```dataviewjs
 const sections = [
@@ -179,6 +179,7 @@ const sections = [
   { name: "決策記錄", pattern: "### 決策記錄" },
   { name: "探索日誌", pattern: "### 探索日誌" },
   { name: "Vault 排名", pattern: "## Vault 排名" },
+  { name: "同 Owner 專案", pattern: "同 Owner 專案" },
 ];
 const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
 const incomplete = [];
@@ -197,7 +198,7 @@ if (incomplete.length > 0) {
     incomplete.slice(0, 10).map(i => [i.link, i.stars, i.missing, i.count])
   );
 } else {
-  dv.paragraph("所有非封存筆記都符合 v18 標準！");
+  dv.paragraph("所有非封存筆記都符合 v19 標準！");
 }
 ```
 

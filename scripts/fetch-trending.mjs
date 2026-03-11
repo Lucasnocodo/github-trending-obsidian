@@ -1058,6 +1058,16 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('> LIMIT 8');
   lines.push('> ```');
   lines.push('');
+  lines.push(`> [!note]- 同語言的熱門專案`);
+  lines.push('> ```dataview');
+  lines.push(`> TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"`);
+  lines.push('> FROM "Repos"');
+  lines.push(`> WHERE language = "${repo.language || 'N/A'}" AND file.name != "${safeFn}" AND status != "archived"`);
+  lines.push('> SORT stars_per_day DESC');
+  lines.push('> LIMIT 5');
+  lines.push('> ```');
+  lines.push('');
+
   lines.push(`> [!note]- 同週收錄`);
   lines.push('> ```dataview');
   lines.push('> TABLE category AS "分類", stars, stars_per_day AS "stars/天"');
@@ -1086,6 +1096,19 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     lines.push('');
   }
 
+  // ── 同 Owner 專案 ──
+  const ownerName = repo.full_name.split('/')[0];
+  lines.push('## 同 Owner 專案');
+  lines.push('');
+  lines.push('> [!note]- 這位開發者的其他收錄專案');
+  lines.push('> ```dataview');
+  lines.push('> TABLE stars AS "Stars", category AS "分類", status AS "狀態"');
+  lines.push('> FROM "Repos"');
+  lines.push(`> WHERE owner = "${ownerName}" AND file.name != "${safeFn}"`);
+  lines.push('> SORT stars DESC');
+  lines.push('> ```');
+  lines.push('');
+
   // ── Vault 排名 ──
   lines.push('## Vault 排名');
   lines.push('');
@@ -1096,8 +1119,11 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('> const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;');
   lines.push('> const catAll = all.where(p => p.category === me?.category);');
   lines.push('> const catRank = catAll.array().findIndex(p => p.file.name === me?.file?.name) + 1;');
+  lines.push('> const totalStarsAll = dv.pages(\'"Repos"\').where(p => p.status !== "archived").sort(p => p.stars || 0, "desc");');
+  lines.push('> const starsRank = totalStarsAll.array().findIndex(p => p.file.name === me?.file?.name) + 1;');
   lines.push('> if (rank > 0) {');
-  lines.push('>   dv.paragraph(`Stars/天排名：**全 vault 第 ${rank}**/${all.length} · **${me.category} 第 ${catRank}**/${catAll.length}`);');
+  lines.push('>   const pct = Math.round((1 - rank / all.length) * 100);');
+  lines.push('>   dv.paragraph(`Stars/天排名：**全 vault 第 ${rank}**/${all.length}（前 ${100 - pct}%）· **${me.category} 第 ${catRank}**/${catAll.length}\\nStars 總量排名：**第 ${starsRank}**/${totalStarsAll.length}`);');
   lines.push('> }');
   lines.push('> ```');
   lines.push('');
@@ -1882,6 +1908,52 @@ if (incomplete.length > 0) {
 } else {
   dv.paragraph("所有筆記都有完整的區塊！");
 }
+\`\`\`
+
+## Owner 排行榜
+
+> [!abstract] 哪些開發者/組織的專案最常登上 Trending
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"');
+const owners = {};
+for (const p of pages) {
+  const o = p.owner || "unknown";
+  if (!owners[o]) owners[o] = { count: 0, totalStars: 0, repos: [] };
+  owners[o].count++;
+  owners[o].totalStars += (p.stars || 0);
+  owners[o].repos.push(p.file.link);
+}
+const multi = Object.entries(owners)
+  .filter(([_, d]) => d.count >= 2)
+  .sort((a, b) => b[1].count - a[1].count);
+if (multi.length > 0) {
+  dv.table(
+    ["Owner", "專案數", "總 Stars", "代表專案"],
+    multi.map(([name, d]) => [
+      name, d.count, d.totalStars.toLocaleString(),
+      d.repos.slice(0, 3).join(", ")
+    ])
+  );
+} else {
+  dv.paragraph("目前沒有重複出現的 Owner。");
+}
+\`\`\`
+
+## Quick Wins（低門檻高價值）
+
+> [!tip] 安裝簡單且熱度高的待回顧專案
+
+\`\`\`dataview
+TABLE
+  stars_per_day AS "Stars/天",
+  category AS "分類",
+  language AS "語言",
+  use_case AS "用途"
+FROM "Repos"
+WHERE install_complexity = "easy" AND status = "to-review"
+SORT stars_per_day DESC
+LIMIT 10
 \`\`\`
 
 ## 所有專案
@@ -2762,6 +2834,29 @@ if (thisWeek.length > 0) {
 > SORT stars DESC
 > LIMIT 5
 > \`\`\`
+
+## 概念熱度 Top 10
+
+> [!abstract] 被最多專案引用的技術概念
+
+\`\`\`dataviewjs
+const concepts = dv.pages('"Concepts"').where(p => p.tags?.includes("concept") && !p.tags?.includes("redirect"));
+const ranked = [];
+for (const c of concepts) {
+  const refs = dv.pages('"Repos"').where(p => p.file.outlinks?.some(l => l.path === c.file.path)).length;
+  if (refs > 0) ranked.push({ link: c.file.link, refs });
+}
+ranked.sort((a, b) => b.refs - a.refs);
+if (ranked.length > 0) {
+  dv.table(
+    ["概念", "引用數", "熱度"],
+    ranked.slice(0, 10).map(r => [
+      r.link, r.refs,
+      "█".repeat(Math.min(r.refs, 15)) + "░".repeat(Math.max(0, 15 - r.refs))
+    ])
+  );
+}
+\`\`\`
 
 ## 最近的週報
 
@@ -3787,7 +3882,8 @@ function needsRefresh(content) {
          !content.includes('成熟度評估') ||            // v14: 成熟度評估 + 強化替代方案 + 預期輸出
          !content.includes('## 開發動態') ||             // v15: 開發動態 + 熱門議題
          !content.includes('直接競品') ||                  // v16: 同子分類競品 + 共用概念
-         !content.includes('## Vault 排名');               // v18: 相對排名 + 分類圓餅圖
+         !content.includes('## Vault 排名') ||             // v18: 相對排名 + 分類圓餅圖
+         !content.includes('同 Owner 專案');               // v19: 同 Owner + 同語言 + 強化排名
 }
 
 function hasLLMContent(content) {
