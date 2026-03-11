@@ -933,8 +933,11 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('> [!example]- 試用 #1');
   lines.push('> 試用日期 :: ');
   lines.push('> 試用版本 :: ');
+  lines.push('> 測試環境 :: _OS / Node / Python 版本_');
   lines.push('> 安裝過程 :: _順利 / 遇到問題（描述）_');
+  lines.push('> 花費時間 :: _從零到可用_');
   lines.push('> 實際效果 :: _達到預期 / 不如預期（原因）_');
+  lines.push('> 踩到的坑 :: _描述 + 解法_');
   lines.push('> 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_');
   lines.push('');
   lines.push('> [!question]- 待研究的問題');
