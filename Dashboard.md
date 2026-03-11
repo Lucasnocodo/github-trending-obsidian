@@ -375,6 +375,82 @@ for (const p of pages) {
 dv.table(["專案", "速度", "安裝", "分類", "一句話"], rows);
 ```
 
+## Tech Radar 概覽
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.ring && p.status !== "archived");
+const rings = { adopt: [], trial: [], assess: [], hold: [] };
+for (const p of pages) {
+  const ring = (p.ring || "assess").toLowerCase();
+  if (rings[ring]) rings[ring].push(p);
+}
+
+const ringLabels = {
+  adopt: "Adopt（採用）",
+  trial: "Trial（試用）",
+  assess: "Assess（評估）",
+  hold: "Hold（觀望）"
+};
+
+for (const [ring, label] of Object.entries(ringLabels)) {
+  const repos = rings[ring];
+  if (repos.length > 0) {
+    dv.header(4, `${label} — ${repos.length} 個`);
+    dv.table(
+      ["專案", "分類", "Stars/天", "評分"],
+      repos.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0)).slice(0, 5).map(p => [
+        p.file.link,
+        p.category || "",
+        p.stars_per_day || 0,
+        p.my_rating > 0 ? ("★".repeat(p.my_rating) + "☆".repeat(5 - p.my_rating)) : "未評"
+      ])
+    );
+  }
+}
+if (Object.values(rings).every(r => r.length === 0)) {
+  dv.paragraph("尚未有專案被分配到 Tech Radar 環。更新筆記的 `ring` 欄位來開始使用。");
+}
+```
+
+## 語言 × 分類 矩陣
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const matrix = {};
+const allCats = new Set();
+const allLangs = new Set();
+
+for (const p of pages) {
+  const lang = p.language || "Other";
+  const cat = p.category || "其他";
+  allLangs.add(lang);
+  allCats.add(cat);
+  const key = `${lang}|${cat}`;
+  matrix[key] = (matrix[key] || 0) + 1;
+}
+
+const topLangs = [...allLangs].sort((a, b) => {
+  const countA = pages.where(p => (p.language || "Other") === a).length;
+  const countB = pages.where(p => (p.language || "Other") === b).length;
+  return countB - countA;
+}).slice(0, 6);
+const topCats = [...allCats].sort((a, b) => {
+  const countA = pages.where(p => (p.category || "其他") === a).length;
+  const countB = pages.where(p => (p.category || "其他") === b).length;
+  return countB - countA;
+}).slice(0, 6);
+
+if (topLangs.length > 1 && topCats.length > 1) {
+  dv.table(
+    ["", ...topCats],
+    topLangs.map(lang => [
+      `**${lang}**`,
+      ...topCats.map(cat => matrix[`${lang}|${cat}`] || "")
+    ])
+  );
+}
+```
+
 ## 圖譜健康分析
 
 ### 孤立筆記（缺少連結）

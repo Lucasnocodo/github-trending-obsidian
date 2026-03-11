@@ -1954,12 +1954,17 @@ if (pages.length === 0) { dv.paragraph("_本週尚無收錄_"); }
 else {
   const cats = {};
   const langs = {};
+  const subs = {};
   let maxSpd = 0; let fastest = null;
   for (const p of pages) {
     const c = p.category || "其他";
     cats[c] = (cats[c] || 0) + 1;
     const l = p.language || "Other";
     langs[l] = (langs[l] || 0) + 1;
+    if (p.subcategory) {
+      const sub = p.category + " > " + p.subcategory;
+      subs[sub] = (subs[sub] || 0) + 1;
+    }
     if ((p.stars_per_day || 0) > maxSpd) { maxSpd = p.stars_per_day; fastest = p; }
   }
   const topCat = Object.entries(cats).sort((a,b) => b[1]-a[1])[0];
@@ -1969,6 +1974,59 @@ else {
   dv.paragraph(\`本週 \${pages.length} 個專案中，**\${topCat[0]}** 類最多（\${topCat[1]} 個），主要語言為 **\${topLang[0]}**。\`);
   if (fastest) dv.paragraph(\`成長最快：\${fastest.file.link}（\${maxSpd} stars/天）\`);
   if (easyCount > 0) dv.paragraph(\`有 **\${easyCount}** 個 easy-install 專案可以快速試用。\`);
+  // 子分類聚集分析
+  const hotSubs = Object.entries(subs).filter(([_, c]) => c >= 2).sort((a, b) => b[1] - a[1]);
+  if (hotSubs.length > 0) {
+    dv.paragraph("**子分類聚集**：" + hotSubs.map(([s, c]) => \`\${s}（\${c} 個）\`).join("、") + " — 同子分類多個專案上榜代表該方向正在被密集探索。");
+  }
+}
+\`\`\`
+
+## 概念熱度
+
+> [!abstract] 本週專案引用最多的技術概念
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.week === "${weekStr}");
+const conceptCount = {};
+for (const p of pages) {
+  for (const link of (p.file.outlinks || [])) {
+    if (link.path?.startsWith("Concepts/")) {
+      const name = link.path.replace("Concepts/", "").replace(".md", "");
+      conceptCount[name] = (conceptCount[name] || 0) + 1;
+    }
+  }
+}
+const sorted = Object.entries(conceptCount).sort((a, b) => b[1] - a[1]).slice(0, 8);
+if (sorted.length > 0) {
+  dv.table(
+    ["概念", "引用數", "佔比"],
+    sorted.map(([name, count]) => {
+      const pct = Math.round((count / pages.length) * 100);
+      return [dv.fileLink("Concepts/" + name, false, name), count, pct + "%"];
+    })
+  );
+} else {
+  dv.paragraph("_本週專案尚未建立概念連結_");
+}
+\`\`\`
+
+## 回歸專案
+
+> [!tip] 多次上榜的專案值得重點關注
+
+\`\`\`dataviewjs
+const thisWeek = dv.pages('"Repos"').where(p => p.week === "${weekStr}");
+const returning = thisWeek.where(p => (p.appearances || 1) > 1);
+if (returning.length > 0) {
+  dv.table(
+    ["專案", "上榜次數", "Stars", "Stars/天", "分類"],
+    returning.sort(p => p.appearances, "desc").map(p => [
+      p.file.link, p.appearances, p.stars, p.stars_per_day, p.category
+    ])
+  );
+} else {
+  dv.paragraph("_本週無回歸專案_");
 }
 \`\`\`
 
