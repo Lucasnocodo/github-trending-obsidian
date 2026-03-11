@@ -166,7 +166,7 @@ SORT first_seen ASC
 
 ## 筆記完整度
 
-> [!info] 缺少重要區塊的筆記（v17 標準）
+> [!info] 缺少重要區塊的筆記（v18 標準）
 
 ```dataviewjs
 const sections = [
@@ -178,6 +178,7 @@ const sections = [
   { name: "直接競品", pattern: "直接競品" },
   { name: "決策記錄", pattern: "### 決策記錄" },
   { name: "探索日誌", pattern: "### 探索日誌" },
+  { name: "Vault 排名", pattern: "## Vault 排名" },
 ];
 const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
 const incomplete = [];
@@ -190,13 +191,13 @@ for (const p of pages) {
 }
 incomplete.sort((a, b) => b.stars - a.stars);
 if (incomplete.length > 0) {
-  dv.paragraph(`**${incomplete.length}** 個筆記缺少 3+ 個 v17 區塊`);
+  dv.paragraph(`**${incomplete.length}** 個筆記缺少 3+ 個 v18 區塊`);
   dv.table(
     ["專案", "Stars/天", "缺少區塊", "缺少數"],
     incomplete.slice(0, 10).map(i => [i.link, i.stars, i.missing, i.count])
   );
 } else {
-  dv.paragraph("所有非封存筆記都符合 v17 標準！");
+  dv.paragraph("所有非封存筆記都符合 v18 標準！");
 }
 ```
 
