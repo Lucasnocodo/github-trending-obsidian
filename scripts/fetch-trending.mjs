@@ -3388,6 +3388,40 @@ if (ranked.length > 0) {
 }
 \`\`\`
 
+## 收錄活動圖
+
+> [!abstract]- 最近 30 天的收錄密度
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"');
+const today = new Date();
+const dayMap = {};
+for (let i = 29; i >= 0; i--) {
+  const d = new Date(today);
+  d.setDate(d.getDate() - i);
+  const key = d.toISOString().split("T")[0];
+  dayMap[key] = 0;
+}
+for (const p of pages) {
+  const fs = p.first_seen?.toString();
+  if (fs && dayMap[fs] !== undefined) dayMap[fs]++;
+}
+const dates = Object.keys(dayMap).sort();
+const max = Math.max(...Object.values(dayMap), 1);
+const rows = [];
+for (let week = 0; week < Math.ceil(dates.length / 7); week++) {
+  const weekDates = dates.slice(week * 7, (week + 1) * 7);
+  const cells = weekDates.map(d => {
+    const count = dayMap[d];
+    const level = count === 0 ? "." : count <= 2 ? "o" : count <= 5 ? "O" : "#";
+    return level;
+  });
+  const label = weekDates[0]?.slice(5) || "";
+  rows.push(label + " " + cells.join(" "));
+}
+dv.paragraph(rows.join("\\n") + "\\n\\n. = 0 | o = 1-2 | O = 3-5 | # = 6+");
+\`\`\`
+
 ## 最近的週報
 
 \`\`\`dataview
