@@ -2933,6 +2933,23 @@ if (scored.length > 0) {
 }
 \`\`\`
 
+## 本週快速試用推薦
+
+> [!abstract] 自動推薦：安裝簡單 + Stars 高 + 決策分數佳
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.week === "${weekStr}" && p.install_complexity === "easy");
+if (pages.length > 0) {
+  const scored = pages.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0)).limit(3);
+  for (const p of scored) {
+    const use = p.use_case || p.description || "";
+    dv.paragraph(\`**\${p.file.link}** — \${p.stars_per_day || 0} stars/天 · \${p.category || ""}\\n> \${use}\`);
+  }
+} else {
+  dv.paragraph("_本週無 easy-install 專案_");
+}
+\`\`\`
+
 ---
 
 ## Editor's Pick（本週精選）
