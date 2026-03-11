@@ -288,6 +288,41 @@ WHERE my_rating > 0
 SORT my_rating DESC, install_complexity ASC
 ```
 
+## 決策矩陣（自動評分）
+
+> [!abstract] 綜合熱度、易用性、成熟度、社群、授權自動計算 0-100 分
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const scored = [];
+for (const p of pages) {
+  let score = 0;
+  const spd = p.stars_per_day || 0;
+  const heat = Math.min(25, Math.round(spd / 40 * 25));
+  score += heat;
+  const inst = p.install_complexity === "easy" ? 20 : p.install_complexity === "medium" ? 12 : 5;
+  score += inst;
+  const created = p.created ? new Date(p.created.toString()) : null;
+  const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : 0;
+  const mat = age > 365 ? 20 : age > 180 ? 16 : age > 30 ? 10 : 5;
+  score += mat;
+  const forks = p.forks || 0;
+  const comm = forks > 200 ? 20 : forks > 50 ? 15 : forks > 10 ? 10 : 5;
+  score += comm;
+  const lic = p.license || "";
+  const friendly = ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unlicense"].includes(lic);
+  const licScore = friendly ? 15 : lic && lic !== "N/A" ? 8 : 0;
+  score += licScore;
+  const grade = score >= 80 ? "A" : score >= 60 ? "B" : score >= 40 ? "C" : "D";
+  scored.push([p.file.link, grade, score, heat, inst, mat, comm, licScore, p.category || ""]);
+}
+scored.sort((a, b) => b[2] - a[2]);
+dv.table(
+  ["專案", "等級", "總分", "熱度/25", "易用/20", "成熟/20", "社群/20", "授權/15", "分類"],
+  scored.slice(0, 20)
+);
+```
+
 ---
 
 > [!info] 使用方式
@@ -295,4 +330,5 @@ SORT my_rating DESC, install_complexity ASC
 > 2. 橫向比較同分類的專案
 > 3. 子分類交叉分析幫你找到直接競品
 > 4. Owner 影響力找出高產出的開發者
-> 5. 搭配 [[Triage]] 進行狀態管理
+> 5. 決策矩陣幫你找出綜合評分最高的專案
+> 6. 搭配 [[Triage]] 進行狀態管理
