@@ -130,13 +130,13 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 
 1. "repo": 完全等於 owner/name（區分大小寫）
 2. "description_zh": 一句話說明「解決什麼問題」。好的例子：「讓 AI 自動跑實驗，你只要早上起來看結果」。壞的例子：「自動化 AI 研究平台」
-3. "summary": 10-12 句話的深度分析。結構：
-   - 第 1-2 句：白話說核心機制，要具體到流程（例如「它讓 AI agent 每 5 分鐘改一次 train.py、跑訓練、比對 loss，如果變好就 commit，變差就 revert，整晚自動跑」）
-   - 第 3-4 句：技術實作方式，具體到用了什麼框架、演算法、通訊協議。如果 README 有提到效能數據或 benchmark，一定要提
-   - 第 5-6 句：跟同類工具的具體差異（要具體到功能和架構層面）
-   - 第 7-8 句：實際使用的效果和限制（效能數據、支援範圍、需要什麼硬體）
-   - 第 9-10 句：你的觀點——成熟度（alpha/beta/stable）、值不值得現在就用、適合什麼規模的團隊
-   - 第 11-12 句：給讀者的建議——什麼情況下該用、什麼情況下不該用
+3. "summary": 15-18 句話的深度分析（這是筆記最重要的段落，要讓讀者不看 README 就能完全理解）。結構：
+   - 第 1-3 句：白話說核心機制，要具體到「輸入什麼 → 中間怎麼處理 → 輸出什麼」的完整流程。例如「它讓 AI agent 每 5 分鐘改一次 train.py、跑訓練、比對 loss，如果變好就 commit，變差就 revert，整晚自動跑」
+   - 第 4-6 句：技術實作方式，具體到用了什麼框架、演算法、通訊協議、資料格式。如果 README 有提到效能數據或 benchmark，一定要帶數字
+   - 第 7-9 句：跟同類工具的具體差異。不要只說「比 X 更好」，要說「X 用 polling 但這個用 WebSocket，所以延遲從 500ms 降到 50ms」這種具體對比
+   - 第 10-12 句：實際使用的效果和限制（效能數據、支援範圍、需要什麼硬體、多大規模的資料能處理）
+   - 第 13-15 句：你的觀點——成熟度（alpha/beta/stable）、值不值得現在就用、適合什麼規模的團隊
+   - 第 16-18 句：給讀者的具體建議——什麼情境該用（舉例）、什麼情境不該用（舉例）、有什麼替代方案
 4. "why_trending": 3-4 句具體分析。禁止寫「隨著 XX 的發展/流行」這種廢話。要回答：(a) 作者是誰、過去做過什麼知名專案？(b) 這個工具解決了什麼「之前沒有好方案」的痛點？(c) 有沒有觸發事件（某篇 tweet、HN 討論、相關新聞）？如果 README 或 topics 有線索就提。(d) 為什麼是「現在」而不是半年前？技術生態有什麼變化讓這個工具變得可行？如果真的無法判斷，就直說「爆紅原因不明確，可能是自然擴散」
 5. "use_cases": 陣列，3 個場景。格式：「[具體角色] 用它來 [具體動作+預期結果]，因為 [具體好處，要有數據或對比]」。例子：「後端工程師用它來在 CI 中自動檢測 API breaking changes，因為手動 diff OpenAPI spec 容易漏掉 nested field 的變動」
 6. "target_audience": 一句話，越具體越好。不要寫「開發者」，要寫「需要在 M1 Mac 上跑 LLM 推論但不想裝 Docker 的獨立開發者」
@@ -144,7 +144,7 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 7b. "subcategory": 更精確的子分類（2-3 個字）。例如開發工具底下可以是：API 工具、WeChat 工具、Claude 工具、MCP 工具、程式碼工具、自動化、監控、測試、CI/CD 等。AI/ML 底下可以是：LLM 訓練、推論優化、影像生成、NLP、Agent 等。自行判斷合理的子分類名稱
 8. "key_features": 陣列，5-8 個功能特色。每個要具體到可操作的層面，格式：「功能名 — 具體描述（含數據、指令、參數）」。壞的：「支持多種圖表類型」。好的：「8 種圖表格式（ascii/spark/bars/columns/heatmap/unicode/braille/svg），用 -t 參數切換」
 9. "quickstart_steps": 陣列，3-5 個安裝/使用步驟。每步是物件：{"step": "簡潔說明", "cmd": "完整可複製貼上的指令"}。從 README 提取真實指令。沒有就回傳 []
-10. "code_example": 一段展示核心用法的程式碼或指令（含語言標記如 bash/python/js）。從 README 提取最有代表性的範例，展示輸入輸出。不超過 15 行。沒有就回傳 null
+10. "code_example": 一段展示核心用法的程式碼或指令（含語言標記如 bash/python/js）。優先從 README 提取最有代表性的範例。要展示「輸入 → 指令/程式碼 → 預期輸出」的完整流程。如果 README 沒有範例，就根據 quickstart 和功能描述組合一個最小可用範例（標注 # 基於文件推測的用法）。不超過 20 行。CLI 工具一定要有範例指令
 11. "limitations": 陣列，3-4 個注意事項。要具體（例如 ["僅支援 Python 3.10+", "需要 NVIDIA GPU (CUDA 12+)", "不支援 Windows", "alpha 階段，API 每週都在變"]）
 12. "similar_tools": 陣列，2-4 項。每項是物件：{"name": "工具名（優先用 GitHub owner/repo 格式，如 crewai/crewai）", "diff": "跟本專案的具體差異，要提到功能差異和適用場景差異（2 句話）"}。這是筆記中最有決策價值的段落，一定要認真寫。想不到就回 []
 13. "related_concepts": 陣列，3-5 個相關技術概念。優先從以下預定義概念中選擇（繁體中文，如果沒有符合的可以自創）：
@@ -156,12 +156,15 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 18. "pros_cons": 物件，包含 "pros"（陣列，3-4 個優點，每個要具體）和 "cons"（陣列，3-4 個缺點，每個要具體，不要跟 limitations 重複）
 19. "community": 物件，可選欄位。"docs_url"（文件網站）、"discord"（Discord 連結）、"activity"（一句話描述社群活躍度）。都沒有就回傳 null
 20. "key_insight": 一句話，你讀完這個專案後最想告訴朋友的一件事。例如：「這個專案最厲害的不是功能，而是它證明了用 Markdown 就能『編程』AI agent 的研究行為」
-21. "deep_dive": 5-8 句話的技術深入分析。這是給想深入了解的讀者看的，要有技術含量。結構：
-   - 核心演算法或資料結構的工作原理（如果 README 有提到）
-   - 效能特性（benchmark 數據、支援規模、記憶體用量等具體數字）
-   - 關鍵設計取捨（為什麼選 A 而不是 B？有什麼 trade-off？）
-   - 跟競品在實作層面的差異（不是功能差異，是技術決策的差異）
-   如果 README 沒有提供足夠的技術細節就回傳 null，不要編造
+21. "deep_dive": 8-12 句話的技術深入分析。這是筆記中最有技術含量的段落。即使 README 簡短，也要盡力從語言選擇、架構模式、依賴關係等角度分析。結構：
+   - 第 1-3 句：核心技術機制——用了什麼演算法、資料結構、通訊模式？（從 README 或語言/框架推斷）
+   - 第 4-6 句：效能和規模特性——能處理多大的資料？有什麼瓶頸？需要多少資源？（有數字就用數字，沒有就從架構推斷）
+   - 第 7-9 句：設計取捨分析——為什麼選這個語言/框架而不是另一個？這個選擇帶來什麼好處和代價？
+   - 第 10-12 句：技術風險評估——哪些設計決策可能在規模擴大時出問題？有什麼技術債？安全性考量？
+   不要回傳 null，每個專案都值得從技術角度分析
+
+22. "onboarding_evaluation": 3-5 句話評估「新手體驗」。包含：(1) README 文件品質（是否清楚、有沒有範例）；(2) 安裝過程是否順暢（有沒有坑）；(3) 是否有好的 getting started guide；(4) 文件有沒有中文/多語言。這段幫助讀者判斷「花 30 分鐘能不能跑起來」
+23. "alternatives_detail": 陣列，2-3 項結構化的替代方案對比。每項是物件：{"name": "工具名", "stars": 估計的 stars 數（整數，可以大概猜），"approach": "技術路線差異（1 句話）", "when_to_choose": "什麼情況下應該選它而不是本專案（1 句話）"}。這是幫讀者做決策用的，一定要認真寫。想不到就回 []
 
 回傳 JSON 陣列，只回傳 JSON，不要加 markdown 標記。`;
 
@@ -178,7 +181,7 @@ function buildRepoPrompt(repos) {
       if (r._release) parts.push(`最新版本: ${r._release.tag}`);
       if (r.homepage) parts.push(`官方網站: ${r.homepage}`);
       if (r.topics?.length) parts.push(`Topics: ${r.topics.join(', ')}`);
-      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 5000)}`);
+      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 6000)}`);
       return parts.join('\n');
     })
     .join('\n\n---\n\n');
@@ -221,7 +224,7 @@ async function callLLMBatch(repos, token, vaultRepoNames = null) {
         { role: 'user', content: prompt },
       ],
       temperature: 0.3,
-      max_tokens: 14000,
+      max_tokens: 16000,
     }),
   });
   if (!res.ok) {
@@ -254,7 +257,7 @@ async function callLLMBatch(repos, token, vaultRepoNames = null) {
 }
 
 async function callLLM(repos, token, vaultRepoNames = null) {
-  const BATCH_SIZE = 2;  // 每個 repo 產生更多內容，減小批次以避免 token 上限
+  const BATCH_SIZE = 1;  // v9: 每個 repo 產生 24 欄位豐富內容，必須逐個處理避免 token 截斷
   const results = [];
   let consecutiveFailures = 0;
 
@@ -609,8 +612,16 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   if (llmInfo?.deep_dive) {
     lines.push('## 技術深入分析');
     lines.push('');
-    lines.push('> [!note]- 展開深入分析');
-    lines.push(`> ${llmInfo.deep_dive.split('\n').join('\n> ')}`);
+    lines.push(llmInfo.deep_dive);
+    lines.push('');
+  }
+
+  // ── 新手體驗評估 ──
+  if (llmInfo?.onboarding_evaluation) {
+    lines.push('## 新手體驗');
+    lines.push('');
+    lines.push('> [!info] 上手難度評估');
+    lines.push(`> ${llmInfo.onboarding_evaluation}`);
     lines.push('');
   }
 
@@ -663,6 +674,23 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
       }
     } else {
       lines.push(`相關替代方案：${llmInfo.similar_tools.map(t => typeof t === 'string' ? t : t.name).join('、')}`);
+    }
+    lines.push('');
+  }
+
+  // ── 替代方案決策表 ──
+  if (llmInfo?.alternatives_detail?.length) {
+    lines.push('## 替代方案決策');
+    lines.push('');
+    lines.push('> [!question] 什麼時候該選別的工具？');
+    lines.push('');
+    lines.push('| 工具 | 技術路線 | 選它的時機 |');
+    lines.push('| --- | --- | --- |');
+    for (const alt of llmInfo.alternatives_detail) {
+      const name = (alt.name || '').includes('/')
+        ? `[${alt.name}](https://github.com/${alt.name})`
+        : alt.name || '';
+      lines.push(`| ${name} | ${alt.approach || ''} | ${alt.when_to_choose || ''} |`);
     }
     lines.push('');
   }
@@ -2396,7 +2424,8 @@ function needsRefresh(content) {
          !content.includes('subcategory:') || // v6: 子分類
          !content.includes('**授權**') ||     // v7: 速覽授權顯示
          !content.includes('ring:') ||        // v8: Tech Radar ring
-         !content.includes('verdict:');       // v8: 一句話結論
+         !content.includes('verdict:') ||     // v8: 一句話結論
+         !content.includes('新手體驗');       // v9: 豐富內容（deep_dive+onboarding+alternatives）
 }
 
 function hasLLMContent(content) {
