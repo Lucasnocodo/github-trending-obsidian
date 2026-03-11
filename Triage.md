@@ -163,6 +163,39 @@ WHERE status = "to-review"
 SORT first_seen ASC
 ```
 
+## 筆記完整度
+
+> [!info] 缺少重要區塊的筆記（v14 標準：成熟度評估、已知陷阱、使用情境適合度）
+
+```dataviewjs
+const sections = [
+  { name: "成熟度評估", pattern: "## 成熟度評估" },
+  { name: "已知陷阱", pattern: "## 已知陷阱" },
+  { name: "使用情境適合度", pattern: "## 使用情境適合度" },
+  { name: "替代方案決策", pattern: "## 替代方案決策" },
+  { name: "技術深入分析", pattern: "## 技術深入分析" },
+];
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const incomplete = [];
+for (const p of pages) {
+  const content = await dv.io.load(p.file.path);
+  const missing = sections.filter(s => !content.includes(s.pattern)).map(s => s.name);
+  if (missing.length >= 3) {
+    incomplete.push({ link: p.file.link, stars: p.stars_per_day || 0, missing: missing.join(", "), count: missing.length });
+  }
+}
+incomplete.sort((a, b) => b.stars - a.stars);
+if (incomplete.length > 0) {
+  dv.paragraph(`**${incomplete.length}** 個筆記缺少 3+ 個 v14 區塊`);
+  dv.table(
+    ["專案", "Stars/天", "缺少區塊", "缺少數"],
+    incomplete.slice(0, 10).map(i => [i.link, i.stars, i.missing, i.count])
+  );
+} else {
+  dv.paragraph("所有非封存筆記都符合 v14 標準！");
+}
+```
+
 ## 快速統計
 
 ```dataviewjs
