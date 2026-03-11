@@ -131,6 +131,23 @@ if (favCats.size === 0) {
 }
 ```
 
+## 歸檔候選
+
+> [!warning] 低優先度且長期未回顧，考慮歸檔
+
+```dataview
+TABLE
+  stars AS "Stars",
+  priority AS "優先級",
+  first_seen AS "收錄日期",
+  category AS "分類"
+FROM "Repos"
+WHERE status = "to-review"
+  AND priority = "low"
+  AND date(first_seen) < date(today) - dur(14 days)
+SORT first_seen ASC
+```
+
 ## 快速統計
 
 ```dataviewjs
