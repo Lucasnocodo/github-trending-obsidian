@@ -282,6 +282,46 @@ for (const p of pages) {
 dv.table(["專案", "速度", "安裝", "分類", "一句話"], rows);
 ```
 
+## 依優先級分群
+
+```dataview
+TABLE WITHOUT ID
+  priority AS "優先級",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE status != "archived"
+GROUP BY priority
+SORT choice(priority, "high", 1, choice(priority, "medium", 2, 3)) ASC
+```
+
+## 孤立筆記（缺少連結）
+
+> [!tip] 這些筆記的 wikilink 連結較少，考慮補充交叉連結
+
+```dataviewjs
+const pages = dv.pages('"Repos"');
+const orphans = pages.where(p => {
+  const outlinks = p.file.outlinks?.length || 0;
+  const inlinks = p.file.inlinks?.length || 0;
+  return (outlinks + inlinks) < 3;
+});
+if (orphans.length > 0) {
+  dv.table(
+    ["專案", "Stars", "分類", "出站連結", "入站連結"],
+    orphans.sort(p => p.stars, "desc").map(p => [
+      p.file.link,
+      p.stars,
+      p.category || "",
+      p.file.outlinks?.length || 0,
+      p.file.inlinks?.length || 0
+    ])
+  );
+} else {
+  dv.paragraph("所有筆記都有足夠的連結");
+}
+```
+
 ## 所有專案
 
 ```dataview

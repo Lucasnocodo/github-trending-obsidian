@@ -1959,6 +1959,92 @@ async function generateConceptNotes() {
   console.log(`Concepts: ${Object.keys(conceptCounts).length} found, ${created} new notes created`);
 }
 
+// ── 自動交叉連結 ────────────────────────────────────────────
+
+async function autoCrossLink() {
+  const { readdir } = await import('fs/promises');
+  const files = await readdir(REPOS_DIR);
+  const mdFiles = files.filter(f => f.endsWith('.md'));
+
+  // 建立 category → repo 名稱映射
+  const catMap = {};   // { category: [{ file, name }] }
+  const repoSet = new Set(); // vault 內所有 repo 檔名（不含 .md）
+
+  for (const file of mdFiles) {
+    const content = await readFile(join(REPOS_DIR, file), 'utf-8');
+    const catMatch = content.match(/^category: "?([^"\n]+)"?$/m);
+    const cat = catMatch ? catMatch[1] : null;
+    const name = file.replace('.md', '');
+    repoSet.add(name);
+    if (cat) {
+      if (!catMap[cat]) catMap[cat] = [];
+      catMap[cat].push({ file, name });
+    }
+  }
+
+  let linkCount = 0;
+
+  for (const file of mdFiles) {
+    const filePath = join(REPOS_DIR, file);
+    let content = await readFile(filePath, 'utf-8');
+    const name = file.replace('.md', '');
+    const catMatch = content.match(/^category: "?([^"\n]+)"?$/m);
+    const cat = catMatch ? catMatch[1] : null;
+    if (!cat) continue;
+
+    const peers = (catMap[cat] || []).filter(p => p.name !== name);
+    if (peers.length === 0) continue;
+
+    // 提取現有的相關專案 wikilinks
+    const existingMatch = content.match(/^相關專案：(.+)$/m);
+    const existingLinks = existingMatch
+      ? (existingMatch[1].match(/\[\[[^\]]+\]\]/g) || [])
+      : [];
+    const existingKeys = new Set(
+      existingLinks.map(l => l.replace(/\[\[/, '').replace(/\|.*/, '').replace(/\]\]/, ''))
+    );
+
+    // 找出同類別中存在於 vault 但尚未連結的 repo
+    const newLinks = [];
+    for (const peer of peers) {
+      if (!existingKeys.has(peer.name)) {
+        // 只為同類別 vault-internal repo 建立連結（最多 3 個新連結）
+        const display = peer.name.replace('--', '/');
+        newLinks.push(`[[${peer.name}|${display}]]`);
+        if (newLinks.length >= 3) break;
+      }
+    }
+
+    if (newLinks.length === 0) continue;
+
+    const allLinks = [...existingLinks, ...newLinks];
+    const mergedLine = `相關專案：${allLinks.join(' · ')}`;
+
+    if (existingMatch) {
+      content = content.replace(/^相關專案：.+$/m, mergedLine);
+    } else {
+      // 沒有現有的相關專案行，插入到延伸閱讀區塊
+      const insertResult = content.replace(
+        /^(## 延伸閱讀\n\n(?:相關概念：.+\n\n)?)/m,
+        `$1${mergedLine}\n\n`
+      );
+      if (insertResult !== content) {
+        content = insertResult;
+      } else {
+        // 找不到插入點，跳過
+        continue;
+      }
+    }
+
+    await writeFile(filePath, content, 'utf-8');
+    linkCount += newLinks.length;
+  }
+
+  if (linkCount > 0) {
+    console.log(`Auto cross-link: added ${linkCount} new vault-internal links`);
+  }
+}
+
 // ── Main ────────────────────────────────────────────────────
 
 async function main() {
@@ -2106,6 +2192,9 @@ async function main() {
 
   // 8.7 產生/更新概念筆記
   await generateConceptNotes();
+
+  // 8.8 自動交叉連結（為同類別的 vault-internal repo 建立 wikilinks）
+  await autoCrossLink();
 
   // 9. 更新 seen repos
   for (const repo of detailedRepos) {
