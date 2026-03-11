@@ -55,6 +55,41 @@ if (action === "tried" || action === "integrated") {
   if (rating) newRating = rating;
 }
 
+// v26: 三維評分（可選）
+let newInterest = fm.score_interest || 0;
+let newConfidence = fm.score_confidence || 0;
+let newRisk = fm.score_risk || 0;
+const doScore = await tp.system.suggester(
+  ["跳過", "快速評分（興趣/信心/風險）"],
+  [false, true],
+  false,
+  "要填三維評分嗎？"
+);
+if (doScore) {
+  const interest = await tp.system.suggester(
+    ["1 - 無興趣", "2 - 略有興趣", "3 - 中等", "4 - 很有興趣", "5 - 非常想研究"],
+    [1, 2, 3, 4, 5], false, "興趣程度"
+  );
+  if (interest) newInterest = interest;
+  const confidence = await tp.system.suggester(
+    ["1 - 完全不了解", "2 - 略知皮毛", "3 - 有基本認識", "4 - 了解細節", "5 - 非常熟悉"],
+    [1, 2, 3, 4, 5], false, "了解程度"
+  );
+  if (confidence) newConfidence = confidence;
+  const risk = await tp.system.suggester(
+    ["1 - 高風險", "2 - 有風險", "3 - 普通", "4 - 低風險", "5 - 極低風險"],
+    [1, 2, 3, 4, 5], false, "導入風險"
+  );
+  if (risk) newRisk = risk;
+}
+
+// v26: verdict（可選，簡短結論）
+let newVerdict = fm.verdict || "";
+if (action === "tried" || action === "integrated" || action === "hold" || action === "archived") {
+  const verdict = await tp.system.prompt("一句話結論（可留空）：", newVerdict);
+  if (verdict !== null) newVerdict = verdict;
+}
+
 const today = new Date().toISOString().split("T")[0];
 const oldHistory = fm.ring_history || "";
 const newHistory = oldHistory
@@ -67,6 +102,10 @@ await app.fileManager.processFrontMatter(file, fmObj => {
   fmObj.my_rating = newRating;
   fmObj.last_reviewed = today;
   fmObj.ring_history = newHistory;
+  fmObj.score_interest = newInterest;
+  fmObj.score_confidence = newConfidence;
+  fmObj.score_risk = newRisk;
+  if (newVerdict !== "") fmObj.verdict = newVerdict;
   // 重新計算 next_review
   const spd = fmObj.stars_per_day || 0;
   const d = new Date();
@@ -74,5 +113,6 @@ await app.fileManager.processFrontMatter(file, fmObj => {
   fmObj.next_review = d.toISOString().split("T")[0];
 });
 
-new Notice(`${fm.repo}: ${newStatus} / ${newRing} / rating ${newRating}`);
+const scoreSummary = doScore ? ` I:${newInterest} C:${newConfidence} R:${newRisk}` : "";
+new Notice(`${fm.repo}: ${newStatus} / ${newRing} / rating ${newRating}${scoreSummary}`);
 %>

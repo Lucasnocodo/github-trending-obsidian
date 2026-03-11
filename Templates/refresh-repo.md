@@ -29,13 +29,21 @@ try {
         ))
       );
       fm.stars_per_day = spd;
-      fm.last_reviewed = new Date().toISOString().split("T")[0];
+      const today = new Date().toISOString().split("T")[0];
+      fm.last_reviewed = today;
       // v12: 更新參與度和複習日期
       const ratio = data.stargazers_count > 0 ? data.forks_count / data.stargazers_count : 0;
       fm.engagement = ratio >= 0.3 ? "high" : ratio >= 0.1 ? "medium" : "low";
       const d = new Date();
       d.setDate(d.getDate() + (spd >= 200 ? 3 : spd >= 30 ? 7 : 14));
       fm.next_review = d.toISOString().split("T")[0];
+      // v27: 追加 star_history
+      const oldHistory = fm.star_history || "";
+      if (oldHistory && !oldHistory.endsWith(today)) {
+        fm.star_history = `${oldHistory},${today}:${data.stargazers_count}`;
+      } else if (!oldHistory) {
+        fm.star_history = `${today}:${data.stargazers_count}`;
+      }
     }
   );
 
