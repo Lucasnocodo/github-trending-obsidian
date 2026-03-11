@@ -91,7 +91,7 @@ docker-compose up
 
 import requests
 
-# 查詢特定地號的房產
+# 查詢房產
 response = requests.post('http://localhost:8000/visura', json={'foglio': '123', 'particella': '456'})
 
 # 獲取請求結果

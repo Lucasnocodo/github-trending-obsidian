@@ -74,7 +74,7 @@ CLI-Anything 透過一條命令將任何軟體轉變為 AI 代理可控制的工
 
 ## 快速開始
 
-1. 添加市場
+1. 添加 CLI-Anything 市場
 ```bash
 /plugin marketplace add HKUDS/CLI-Anything
 ```
@@ -96,7 +96,6 @@ CLI-Anything 透過一條命令將任何軟體轉變為 AI 代理可控制的工
 # 使用生成的 CLI
 cli-anything-gimp --help
 cli-anything-gimp project new --width 1920 --height 1080 -o poster.json
-cli-anything-gimp --json layer add -n "Background" --type solid --color "#1a1a2e"
 ```
 
 

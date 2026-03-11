@@ -114,7 +114,7 @@ app.whenReady().then(createWindow);
 
 ## 適合誰使用
 
-**目標受眾**：希望在 Windows 或 Linux 上運行 Minecraft Legacy Console Edition 的玩家和開發者。
+**目標受眾**：需要在 Windows 或 Linux 上運行 Minecraft Legacy Console Edition 的玩家，特別是喜愛懷舊遊戲的用戶。
 
 > [!example] 使用場景
 > - Minecraft 玩家用它來快速啟動 Legacy Console Edition，因為它提供了自定義的啟動選項和直觀的界面，讓啟動過程更簡單。

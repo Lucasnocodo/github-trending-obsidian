@@ -19,7 +19,7 @@ month: "2026-03"
 category: "AI/ML"
 subcategory: "模型調整"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
@@ -32,6 +32,7 @@ tags:
   - github
   - "category/ai_ml"
   - "lang/python"
+  - easy_install
 aliases:
   - "OBLITERATUS"
   - "elder-plinius/OBLITERATUS"
@@ -42,7 +43,7 @@ aliases:
 
 **2.7k** stars · **384** stars/天 · 建立 7 天前 · Python · AGPL-3.0
 
-`個人專案`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
 > 讓大型語言模型擺脫拒絕行為的束縛，實現自由對話。

@@ -96,6 +96,7 @@ aliases:
 ## 程式碼範例
 
 ```bash
+# 在 Telegram 中與 AI 編程助手互動
 /claude-to-im setup
 ```
 

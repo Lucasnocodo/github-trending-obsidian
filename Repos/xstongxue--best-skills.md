@@ -19,7 +19,7 @@ month: "2026-03"
 category: "開發工具"
 subcategory: "自動化"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
@@ -32,6 +32,7 @@ tags:
   - github
   - "category/開發工具"
   - "lang/python"
+  - easy_install
   - "topic/skills"
   - "topic/vibe_coding"
 aliases:
@@ -44,7 +45,7 @@ aliases:
 
 **495** stars · **99** stars/天 · 建立 5 天前 · Python · Apache-2.0
 
-`個人專案`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
 > 提供高品質的技能集合，讓各種 AI Agent 自動化處理任務，提升工作效率。
@@ -62,7 +63,7 @@ aliases:
 
 這個專案提供了一系列高品質的技能（Skills），可以安裝到各種 AI Agent 工具中，讓它們根據使用者的需求自動執行任務。使用者只需輸入描述，系統會自動判斷並調用相應的技能，從而省去手動選擇的麻煩。這些技能涵蓋了學術寫作、代碼生成、報告撰寫等多種場景，並支持多種格式的輸出，如 Markdown 和 PPT。專案中使用了 Python 編寫，並且設計了統一的技能接口，方便擴展和維護。與類似的工具相比，這個專案的獨特之處在於其自動化程度更高，能夠根據關鍵詞自動匹配技能，而不需要使用者手動干預。這使得使用者能夠更專注於內容創作，而不是操作流程。專案的效能在於能夠快速生成各類文檔，對於需要大量文書工作的團隊特別有幫助。該專案目前仍在活躍開發中，適合中小型團隊使用，尤其是需要快速文檔生成的環境。建議在需要自動化文書處理的情境下使用，但對於需要高度自定義的專案可能不太適合。
 
-**技術棧**：`Python 3.9`
+**技術棧**：`Python`
 
 ## 重點功能
 

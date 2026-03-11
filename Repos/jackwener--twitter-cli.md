@@ -23,7 +23,7 @@ install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "讓你在終端機中無需 API 金鑰即可瀏覽 Twitter/X 的時間線和書籤。"
+use_case: "讓你在終端機上無需 API 金鑰就能讀取 Twitter/X 的時間線、書籤和用戶資料。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -36,7 +36,7 @@ tags:
 aliases:
   - "twitter-cli"
   - "jackwener/twitter-cli"
-  - "讓你在終端機中無需 API 金鑰即可瀏覽 Twitter/X 的時間線和書籤。"
+  - "讓你在終端機上無需 API 金鑰就能讀取 Twitter/X 的時間線、書籤和用戶資料。"
 ---
 
 # twitter-cli
@@ -46,7 +46,7 @@ aliases:
 `easy-install`
 
 > [!summary] 一句話摘要
-> 讓你在終端機中無需 API 金鑰即可瀏覽 Twitter/X 的時間線和書籤。
+> 讓你在終端機上無需 API 金鑰就能讀取 Twitter/X 的時間線、書籤和用戶資料。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (293 stars/day)

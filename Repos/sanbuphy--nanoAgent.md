@@ -73,15 +73,15 @@ nanoAgent 是一個簡單的 AI agent 實作，能夠接收用戶指令並執行
 
 ## 快速開始
 
-1. 安裝依賴
+1. 安裝所需的 Python 套件
 ```bash
 pip install -r requirements.txt
 ```
-2. 設置環境變數
+2. 設定環境變數
 ```bash
 export OPENAI_API_KEY='your-key-here'
 ```
-3. 執行 agent
+3. 執行 agent 並給予指令
 ```bash
 python agent.py 'list all python files in current directory'
 ```

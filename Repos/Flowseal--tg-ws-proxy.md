@@ -19,7 +19,7 @@ month: "2026-03"
 category: "開發工具"
 subcategory: "網路工具"
 release_tag: "v1.0.4"
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
@@ -32,7 +32,6 @@ tags:
   - github
   - "category/開發工具"
   - "lang/python"
-  - easy_install
 aliases:
   - "tg-ws-proxy"
   - "Flowseal/tg-ws-proxy"
@@ -43,7 +42,7 @@ aliases:
 
 **787** stars · **131** stars/天 · 建立 6 天前 · Python · MIT
 
-`v1.0.4` `easy-install`
+`v1.0.4`
 
 > [!summary] 一句話摘要
 > 透過 SOCKS5 代理加速 Telegram 的加載速度，讓使用者享受更流暢的體驗。

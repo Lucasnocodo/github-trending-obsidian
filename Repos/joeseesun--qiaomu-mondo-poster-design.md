@@ -83,7 +83,7 @@ npx skills add joeseesun/qiaomu-mondo-poster-design
 ```
 3. 調整設計比例
 ```bash
-"为我的公众号文章《人类简史》设计一张 21:9 封面"
+--aspect-ratio 21:9
 ```
 
 ## 程式碼範例

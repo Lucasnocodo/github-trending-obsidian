@@ -77,7 +77,11 @@ aliases:
 ```bash
 npx @kamranahmedse/claude-statusline
 ```
-2. 卸載狀態列
+2. 檢查依賴工具
+```bash
+brew install jq
+```
+3. 卸載狀態列
 ```bash
 npx @kamranahmedse/claude-statusline --uninstall
 ```

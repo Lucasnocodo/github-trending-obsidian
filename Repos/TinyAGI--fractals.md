@@ -83,13 +83,13 @@ cd web && npm install && cd ..
 ```
 3. 設置 OpenAI 金鑰
 ```bash
-echo "OPENAI_API_KEY=sk-..." > .env
+echo 'OPENAI_API_KEY=sk-...' > .env
 ```
-4. 啟動伺服器
+4. 啟動伺服器 (port 1618)
 ```bash
 npm run server
 ```
-5. 啟動前端
+5. 啟動前端 (port 3000)
 ```bash
 cd web && npm run dev
 ```

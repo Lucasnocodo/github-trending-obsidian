@@ -80,13 +80,9 @@ brew install node
 ```bash
 npx skills add https://github.com/twostraws/swiftui-agent-skill --skill swiftui-pro
 ```
-3. 在 Claude Code 中使用技能
+3. 使用技能進行代碼檢查
 ```bash
-/swiftui-pro
-```
-4. 在 Codex 中使用技能
-```bash
-$swiftui-pro
+/swiftui-pro 檢查過時的 API
 ```
 
 ## 程式碼範例

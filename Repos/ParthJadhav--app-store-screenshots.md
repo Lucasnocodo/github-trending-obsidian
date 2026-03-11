@@ -66,7 +66,7 @@ aliases:
 
 這個專案透過 AI 助手生成 iOS 應用的 App Store 截圖，使用者只需提供應用的品牌、功能和風格偏好，然後它會自動設計並導出符合 Apple 要求的截圖。核心流程是：使用者輸入應用資訊 → 系統生成 Next.js 專案 → 自動設計並導出 PNG 格式的截圖。技術上，它依賴 Next.js 作為開發伺服器，使用 TypeScript 確保型別安全，並透過 Tailwind CSS 進行樣式設計，最終利用 html-to-image 導出精確解析度的圖片。與其他截圖工具相比，這個專案專注於將截圖設計為廣告而非單純的 UI 展示，這使得每個截圖都能更有效地吸引潛在用戶。它能生成的截圖尺寸包括 6.1 吋、6.3 吋、6.5 吋和 6.9 吋，並且所有截圖都在 1320x2868 的解析度下設計。這個工具適合需要快速生成高品質行銷素材的開發者，尤其是針對小型團隊或個人開發者。整體來說，這是一個穩定的專案，值得現在就使用，特別是在需要快速迭代行銷策略的情況下。若你正在開發 iOS 應用並需要專業的截圖，這個工具會是個不錯的選擇；但如果你需要更複雜的設計功能，可能需要考慮其他設計工具。
 
-**技術棧**：`Next.js` · `TypeScript` · `Tailwind CSS` · `html-to-image` · `React`
+**技術棧**：`Next.js` · `TypeScript` · `Tailwind CSS`
 
 ## 重點功能
 
@@ -82,13 +82,13 @@ aliases:
 ```bash
 npx skills add ParthJadhav/app-store-screenshots
 ```
-2. 啟動開發伺服器
+2. 啟動截圖生成
 ```bash
-npm run dev
+告訴 Claude Code 生成商店截圖
 ```
-3. 生成截圖
+3. 導出截圖
 ```bash
-> Build App Store screenshots for my app
+在瀏覽器中點擊截圖以導出為 PNG
 ```
 
 ## 程式碼範例

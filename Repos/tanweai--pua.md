@@ -81,7 +81,7 @@ claude plugin marketplace add tanweai/pua
 ```bash
 git clone https://github.com/tanweai/pua.git ~/.claude/plugins/pua
 ```
-3. 在 Codex CLI 中使用
+3. 使用 Codex CLI 安裝
 ```bash
 curl -o ~/.codex/skills/pua-debugging/SKILL.md https://raw.githubusercontent.com/tanweai/pua/main/skills/pua-debugging/SKILL.md
 ```

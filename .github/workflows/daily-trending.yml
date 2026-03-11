@@ -41,10 +41,11 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add Daily/ Repos/ MOC/ Weekly/ Dashboard.md data/
           git add Monthly/ Concepts/ Home.md Tech-Radar.canvas Triage.md 2>/dev/null || true
+          git add .obsidian/snippets/ .obsidian/appearance.json .obsidian/graph.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "daily trending $(date +%Y-%m-%d)"
-          # Rebase on remote; if conflict, abort and force-add ours
+          # Rebase on remote; if conflict, keep our LLM-generated content
           if ! git pull --rebase origin main; then
-            echo "Rebase conflict detected, aborting rebase and retrying..."
+            echo "Rebase conflict, falling back to merge..."
             git rebase --abort || true
             git pull --no-rebase origin main --strategy-option=ours || true
           fi

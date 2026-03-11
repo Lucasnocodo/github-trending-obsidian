@@ -89,7 +89,10 @@ clawport dev
 ## 程式碼範例
 
 ```bash
-# 啟動 ClawPort 儀表板
+# 安裝 OpenClaw
+curl -fsSL https://openclaw.ai/install.sh | bash
+
+# 啟動儀表板
 clawport dev
 # 預期輸出：啟動後可在 http://localhost:3000 訪問儀表板
 ```
@@ -174,8 +177,8 @@ ClawPort 的核心技術機制是基於 Next.js 的前端框架，並透過 Open
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和維護。
-**連結**：[文件](https://clawport.dev/docs)
+**社群活躍度**：社群活躍度中等，持續有更新和討論。
+**連結**：[文件](https://clawport.dev)
 
 ## README 摘錄
 

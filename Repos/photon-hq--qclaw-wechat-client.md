@@ -66,7 +66,7 @@ aliases:
 
 這個專案是一個反向工程的 TypeScript 客戶端，專為 QClaw 的 WeChat Access API 設計。使用者輸入 WeChat 登入資訊，透過 QR 碼進行身份驗證，然後獲得一個 JWT 和 channel token，最終能夠與 OpenClaw 服務進行互動。它使用 jprx 協議與 Tencent 後端伺服器通訊，並提供了一個完整的 API，包括獲取用戶資訊、登出、創建 API 金鑰等功能。這個庫還實現了 AGP（Agent Gateway Protocol），支持 WebSocket 實時消息交換，讓開發者能夠即時處理用戶消息。與其他類似工具相比，如 HenryXiaoYang/wechat-access-unqclawed，這個專案提供了更全面的 API 支持和更簡單的 TypeScript 整合。它能夠處理大量的即時消息，並且設計上考慮了高效能的實時通訊需求。這個專案目前處於穩定階段，適合中小型團隊使用，特別是需要整合 WeChat 登入的應用。建議在需要快速開發 WeChat 應用時使用，但如果只需要簡單的 API 調用，則可以考慮使用更輕量的替代方案。
 
-**技術棧**：`TypeScript` · `Node.js`
+**技術棧**：`TypeScript` · `pnpm`
 
 ## 重點功能
 
@@ -173,7 +173,7 @@ const loginRes = await client.wxLogin({ guid: 'machine-id', code: authCode, stat
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，有定期更新和維護。
+**社群活躍度**：社群活躍度中等，定期更新和維護。
 **連結**：[文件](https://photon.codes)
 
 ## README 摘錄

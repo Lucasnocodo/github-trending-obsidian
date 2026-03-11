@@ -23,7 +23,7 @@ install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "提供一個開源的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。"
+use_case: "提供一個開放的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -36,7 +36,7 @@ tags:
 aliases:
   - "client"
   - "Minecraft-Community-Edition/client"
-  - "提供一個開源的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。"
+  - "提供一個開放的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。"
 ---
 
 # client
@@ -46,7 +46,7 @@ aliases:
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供一個開源的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。
+> 提供一個開放的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (111 stars/day)

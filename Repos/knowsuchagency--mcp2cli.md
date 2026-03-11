@@ -23,20 +23,20 @@ install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "將任何 MCP 伺服器或 OpenAPI 規範即時轉換為 CLI，無需代碼生成。"
+use_case: "讓任何 MCP 伺服器或 OpenAPI 規範即時轉換為 CLI，無需代碼生成。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
 verdict: ""
 tags:
   - github
-  - "category/開發工具"
+  - "category/cli_工具"
   - "lang/python"
   - easy_install
 aliases:
   - "mcp2cli"
   - "knowsuchagency/mcp2cli"
-  - "將任何 MCP 伺服器或 OpenAPI 規範即時轉換為 CLI，無需代碼生成。"
+  - "讓任何 MCP 伺服器或 OpenAPI 規範即時轉換為 CLI，無需代碼生成。"
 ---
 
 # mcp2cli
@@ -46,7 +46,7 @@ aliases:
 `easy-install`
 
 > [!summary] 一句話摘要
-> 將任何 MCP 伺服器或 OpenAPI 規範即時轉換為 CLI，無需代碼生成。
+> 讓任何 MCP 伺服器或 OpenAPI 規範即時轉換為 CLI，無需代碼生成。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (530 stars/day)
@@ -61,7 +61,7 @@ aliases:
 
 mcp2cli 讓使用者能夠在運行時將任何 MCP 伺服器或 OpenAPI 規範轉換為命令行介面。使用者只需提供 MCP 伺服器的 URL 或 OpenAPI 規範的路徑，然後可以透過命令行直接與 API 互動，無需任何代碼生成。這個工具支援 OAuth 認證，能自動處理 token 的獲取和刷新，並且可以從環境變數或檔案中讀取敏感資訊，增強安全性。mcp2cli 的一大特色是能夠節省 96-99% 的 token 使用，這在大型專案中能顯著降低成本。與其他 CLI 工具相比，mcp2cli 直接與 API 互動，避免了傳統工具的繁瑣配置過程，並且支援多種傳輸協議，包括 HTTP 和 SSE。它的緩存機制也能有效提升性能，預設緩存時間為 1 小時。對於需要頻繁調用 API 的開發者來說，這個工具非常適合，尤其是在需要快速迭代和測試的情境下。這個專案目前仍在活躍開發中，值得關注，但對於小型專案或不需要複雜 API 交互的使用者來說，可能顯得過於複雜。建議在需要與多個 API 進行交互的情況下使用 mcp2cli，而對於簡單的 API 調用，可能其他工具會更直接。
 
-**技術棧**：`Python 3.7+`
+**技術棧**：`Python 3.10` · `Click` · `Requests`
 
 ## 重點功能
 
@@ -84,6 +84,10 @@ uvx mcp2cli --help
 3. 連接到 MCP 伺服器
 ```bash
 mcp2cli --mcp https://mcp.example.com/sse --list
+```
+3. 使用 OpenAPI 規範
+```bash
+mcp2cli --spec https://petstore3.swagger.io/api/v3/openapi.json --list
 ```
 
 ## 程式碼範例
@@ -329,7 +333,7 @@ mcp2cli 的核心技術機制在於其能夠即時將 API 轉換為 CLI，使用
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "knowsuchagency--mcp2cli"
+> WHERE category = "CLI 工具" AND file.name != "knowsuchagency--mcp2cli"
 > SORT stars DESC
 > LIMIT 8
 > ```

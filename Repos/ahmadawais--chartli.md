@@ -75,7 +75,7 @@ aliases:
 
 1. 安裝 Chartli
 ```bash
-npm i -g chartli
+npx chartli
 ```
 2. 生成圖表
 ```bash
@@ -110,7 +110,7 @@ npx chartli examples/assets/weekly-signups.txt -t ascii -w 28 -h 8 --first-colum
 
 ## 適合誰使用
 
-**目標受眾**：需要在終端中快速生成數據圖表的開發者和數據分析師。
+**目標受眾**：需要在終端中快速生成數據圖表的開發者或數據分析師。
 
 > [!example] 使用場景
 > - 數據分析師用它來快速生成終端圖表，因為能夠即時查看數據趨勢，提升工作效率。

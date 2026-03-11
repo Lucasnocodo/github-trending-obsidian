@@ -72,7 +72,11 @@ aliases:
 
 ## 快速開始
 
-1. 初始化配置
+1. 克隆專案並編譯
+```bash
+git clone https://github.com/steipete/discrawl.git && cd discrawl && go build -o bin/discrawl ./cmd/discrawl
+```
+2. 初始化配置
 ```bash
 bin/discrawl init --from-openclaw ~/.openclaw/openclaw.json
 ```
