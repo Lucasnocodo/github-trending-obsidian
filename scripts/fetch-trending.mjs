@@ -171,6 +171,8 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 22. "onboarding_evaluation": 3-5 句話評估「新手體驗」。包含：(1) README 文件品質（是否清楚、有沒有範例）；(2) 安裝過程是否順暢（有沒有坑）；(3) 是否有好的 getting started guide；(4) 文件有沒有中文/多語言。這段幫助讀者判斷「花 30 分鐘能不能跑起來」
 23. "alternatives_detail": 陣列，2-3 項結構化的替代方案對比（這是筆記中最有決策價值的段落，必須認真寫，禁止回空陣列）。每項是物件：{"name": "工具名", "stars": 估計的 stars 數（整數，可以大概猜），"approach": "技術路線差異（1-2 句話，具體到技術選型，例如「用 Rust 實作 vs 本專案用 Python，記憶體用量少 10 倍但 plugin 生態不如 Python」）", "when_to_choose": "什麼情況下應該選它而不是本專案（1-2 句話，要具體到場景，例如「如果你的團隊已經在用 Kubernetes 且需要橫向擴展到 100+ 節點」）", "migration_effort": "從本專案遷移到它的難度（low/medium/high + 一句話原因）"}。即使找不到直接替代品，也要列出「最接近的替代方案」或「沒有這個工具時的 workaround」
 24. "maturity_assessment": 物件，評估專案成熟度。包含：{"stage": "alpha/beta/stable/production（從 README、版本號、issue 數量推斷）", "production_ready": true/false, "breaking_change_risk": "high/medium/low（API 穩定度）", "recommendation": "一句話，例如『適合個人 side project 試用，不建議用在生產環境的核心路徑上』"}
+25. "known_gotchas": 陣列，2-4 個「踩坑才知道」的隱性問題（這跟 limitations 不同——limitations 是設計上的限制，gotchas 是實際使用時才會發現的坑）。格式：每項是物件 {"issue": "問題描述（具體到什麼情境下會遇到）", "workaround": "解法或規避方式（如果有的話）", "severity": "high/medium/low"}。從 README 的 known issues、GitHub issues、或根據技術架構推斷可能的坑。例如：{"issue": "Windows 上路徑處理有 bug，空格和中文路徑會導致 crash", "workaround": "用 WSL 或加 --force-posix-paths flag", "severity": "high"}。如果 README 沒有明確提到，根據技術棧和架構推斷最可能的 3 個坑（標注「推斷」）
+26. "use_case_fit": 陣列，4-6 個使用情境的適合度評估。每項是物件：{"scenario": "具體使用情境（要夠具體，例如「10 人以下的新創公司後端 API」而不是「小型專案」）", "fit": "非常適合/適合/普通/不適合/未測試", "reason": "為什麼（1 句話，要提到具體的技術原因）"}。這是幫讀者快速判斷「我的情況適不適合用這個」的決策工具
 
 回傳 JSON 陣列，只回傳 JSON，不要加 markdown 標記。`;
 
@@ -231,7 +233,7 @@ async function callLLMBatch(repos, token, vaultRepoNames = null) {
         { role: 'user', content: prompt },
       ],
       temperature: 0.3,
-      max_tokens: 16384,
+      max_tokens: 16384,  // 27 JSON fields per repo at BATCH_SIZE=1
     }),
   });
   if (!res.ok) {
@@ -758,6 +760,39 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
       lines.push(`> ${ma.recommendation}`);
       lines.push('');
     }
+  }
+
+  // ── 已知陷阱 ──
+  if (llmInfo?.known_gotchas?.length) {
+    lines.push('## 已知陷阱');
+    lines.push('');
+    lines.push('> [!bug] 踩坑才知道的問題');
+    lines.push('');
+    for (const g of llmInfo.known_gotchas) {
+      if (typeof g === 'string') {
+        lines.push(`- ${g}`);
+      } else {
+        const sev = g.severity === 'high' ? '**[HIGH]**' : g.severity === 'medium' ? '[MEDIUM]' : '[low]';
+        lines.push(`- ${sev} ${g.issue}`);
+        if (g.workaround) {
+          lines.push(`  - 解法：${g.workaround}`);
+        }
+      }
+    }
+    lines.push('');
+  }
+
+  // ── 使用情境適合度 ──
+  if (llmInfo?.use_case_fit?.length) {
+    lines.push('## 使用情境適合度');
+    lines.push('');
+    lines.push('| 情境 | 適合度 | 說明 |');
+    lines.push('| --- | --- | --- |');
+    for (const uc of llmInfo.use_case_fit) {
+      const fitLabel = uc.fit || '';
+      lines.push(`| ${uc.scenario || ''} | ${fitLabel} | ${uc.reason || ''} |`);
+    }
+    lines.push('');
   }
 
   // ── 技術細節（不重複 stats bar 已有資訊）──
@@ -1568,6 +1603,8 @@ if (orphans.length > 0) {
 const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
 const checks = [
   { name: "成熟度評估", pattern: "## 成熟度評估" },
+  { name: "已知陷阱", pattern: "## 已知陷阱" },
+  { name: "使用情境適合度", pattern: "## 使用情境適合度" },
   { name: "替代方案決策", pattern: "## 替代方案決策" },
   { name: "技術深入分析", pattern: "## 技術深入分析" },
   { name: "新手體驗", pattern: "## 新手體驗" },
