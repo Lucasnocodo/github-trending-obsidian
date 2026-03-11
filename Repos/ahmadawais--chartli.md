@@ -22,6 +22,9 @@ release_tag: "1.0.0"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
+score_confidence: 0
+score_interest: 0
+score_risk: 0
 last_reviewed: 2026-03-10
 use_case: "將數字轉換為終端圖表的 CLI 工具。"
 priority: medium
@@ -48,6 +51,17 @@ aliases:
 # chartli
 
 **543** stars · **109** stars/天 · 建立 5 天前 · TypeScript · 未標註授權
+
+```dataviewjs
+const me = dv.page("Repos/ahmadawais--chartli");
+if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
+  const parts = [];
+  if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
+  if (me.ring && me.ring !== "assess") parts.push("Ring: **" + me.ring + "**");
+  if (me.verdict) parts.push(me.verdict);
+  dv.paragraph("> [!success] 你的結論\n> " + parts.join(" / "));
+}
+```
 
 `個人專案` `1.0.0` `easy-install`
 

@@ -10,20 +10,23 @@ homepage: ""
 stars: 336
 stars_per_day: 112
 forks: 40
-open_issues: 8
+open_issues: 7
 created: 2026-03-07
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "其他"
-subcategory: "遊戲開發"
+subcategory: "遊戲客戶端"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
 my_rating: 0
+score_confidence: 0
+score_interest: 0
+score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "提供一個開源的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。"
+use_case: "提供一個開源的 Minecraft 客戶端，讓玩家能夠自定義和擴展遊戲體驗。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -33,7 +36,7 @@ contributor_count: 5
 engagement: "medium"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:336,2026-03-11:336"
+star_history: "2026-03-10:336,2026-03-11:336,2026-03-11:336"
 tags:
   - github
   - "category/其他"
@@ -42,44 +45,57 @@ tags:
 aliases:
   - "client"
   - "Minecraft-Community-Edition/client"
-  - "提供一個開源的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。"
+  - "提供一個開源的 Minecraft 客戶端，讓玩家能夠自定義和擴展遊戲體驗。"
 ---
 
 # client
 
 **336** stars · **112** stars/天 · 建立 3 天前 · C++ · 未標註授權
 
+```dataviewjs
+const me = dv.page("Repos/Minecraft-Community-Edition--client");
+if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
+  const parts = [];
+  if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
+  if (me.ring && me.ring !== "assess") parts.push("Ring: **" + me.ring + "**");
+  if (me.verdict) parts.push(me.verdict);
+  dv.paragraph("> [!success] 你的結論\n> " + parts.join(" / "));
+}
+```
+
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供一個開源的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。
+> 提供一個開源的 Minecraft 客戶端，讓玩家能夠自定義和擴展遊戲體驗。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (112 stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 希望自訂 Minecraft 客戶端的開發者和遊戲設計師。
-> **一句話重點** 這個專案展示了開源社群如何在 Minecraft 中實現創新和自訂功能的潛力。
+> **適合** 希望自定義 Minecraft 客戶端的開發者和玩家。
+> **一句話重點** 這個專案展示了開源社群如何能夠共同創造和擴展一個遊戲客戶端的潛力。
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習，5 小時整合，得到開源的 Minecraft 客戶端，值得嘗試。
+> **結論** 花 10 小時學習，5 小時整合，得到一個可自定義的 Minecraft 客戶端，值得探索。
 
 > [!abstract] 核心創新
-> 提供一個完全開源的 Minecraft 客戶端，讓開發者能夠自由修改和擴展。
+> 這個專案的創新在於其開放性和社群驅動的開發模式。
 
 ## 專案簡介
 
-這個專案旨在建立一個開源的 Minecraft 客戶端，讓玩家能夠自由地修改和擴展遊戲功能。用戶可以透過 C++ 和其他語言編寫自定義功能，並利用現有的代碼庫進行開發。核心功能包括對遊戲內部資源的訪問和修改，並支持多種擴展，包括音效和視覺效果的改進。這個專案的賣點在於其開放性和可擴展性，讓開發者能夠根據自己的需求進行調整。技術上，專案使用 CMake 進行構建，這使得跨平台的支持變得更加容易，並且能夠利用現有的 Minecraft 代碼庫進行開發。與其他 Minecraft 客戶端相比，如 Forge 或 Fabric，這個專案更注重於開源和社群貢獻，讓開發者能夠直接參與到代碼的改進中。雖然目前仍在早期階段，但已有一些功能實現，如對音效的改進建議。使用者在實際使用中可能會遇到一些編譯問題，這在 GitHub 的熱門 Issues 中有所反映。這個專案的成熟度目前為 alpha，適合對 Minecraft 有深入了解並希望進行自定義的開發者。未來幾個月，隨著社群的參與，預期會有更多功能和改進。建議對 Minecraft 有熱情的開發者參與，尤其是那些希望在遊戲中實現創新功能的人。
+這個專案的核心功能是提供一個可擴展的 Minecraft 客戶端，支持多種語言如 C++ 和 Python，讓開發者能夠輕鬆地進行自定義開發。使用者可以透過修改源碼來增強遊戲功能，並且該專案的設計初衷是為了讓玩家能夠更自由地享受 Minecraft 的世界。專案目前仍在早期階段，並未完全實現所有功能，但已經有基本的架構和部分實作。使用者可以透過 `make` 指令來編譯專案，並且可以參考其他開源專案如 LCEMP 和 smartcmd 的代碼來進行擴展。這個工具的賣點在於其開放性和可擴展性，讓玩家和開發者能夠根據自己的需求進行調整。
 
-**技術棧**：`C++` · `CMake`
+與其他 Minecraft 客戶端相比，如 Forge 和 Fabric，這個專案更注重於社群的參與和代碼的共享，而不是僅僅提供模組化的支持。這使得它適合那些希望深入了解 Minecraft 內部運作的開發者。使用者在使用過程中可能會遇到一些編譯問題，例如舊的預編譯標頭文件問題，這需要開發者有一定的技術背景來解決。這個專案的活躍度相對較高，最近有多個合併請求，顯示出社群的參與度。未來幾個月內，專案可能會逐步完善，並吸引更多的開發者參與進來，特別是在功能擴展和錯誤修復方面。
+
+**技術棧**：`C++` · `Python` · `CMake`
 
 ## 重點功能
 
-- 開源架構 — 允許開發者自由修改和擴展客戶端功能。
-- 多語言支持 — 使用 C++, Python, HTML 等多種語言進行開發。
-- CMake 構建系統 — 支持跨平台編譯，方便開發者在不同環境中使用。
-- 社群貢獻 — 鼓勵開發者提交 PR 和功能建議，促進合作。
-- 音效改進 — 提供對音效的自定義和改進建議。
+- 開源代碼 — 提供完整的源碼，讓開發者可以自由修改和擴展功能。
+- 多語言支持 — 使用 C++、Python 等多種語言開發，方便不同背景的開發者參與。
+- 社群驅動 — 鼓勵社群貢獻代碼，並提供明確的 PR 規則。
+- 基本功能實作 — 雖然仍在早期階段，但已經有基本的遊戲功能實作可供使用。
+- 編譯支持 — 使用 `make` 指令進行編譯，簡化了安裝過程。
 
 ## 快速開始
 
@@ -91,63 +107,62 @@ git clone https://github.com/Minecraft-Community-Edition/client.git
 ```bash
 cd client
 ```
-3. 使用 CMake 構建專案
+3. 編譯專案
 ```bash
-cmake . && make
+make
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 336 stars（112/天），forks 40（11.9%），顯示出開源社群的強烈興趣。主要貢獻者包括 LazyByteDev 和 coah80，他們在開源社群中有一定的影響力。這個專案解決了 Minecraft 客戶端自定義的痛點，提供了一個開放的平台讓開發者能夠自由創作。社群的反饋和建議也在不斷推動專案的進步。這個專案的開放性和可擴展性吸引了許多希望在 Minecraft 中實現創新的開發者。
+> 建立 3 天就累積 336 stars（112/天），forks 40（11.9%），顯示出相對較高的參與度。作者 LazyByteDev 和其他貢獻者在開源社群中有一定的知名度，過去參與過多個相關專案。這個專案解決了玩家對於 Minecraft 客戶端的自定義需求，之前的方案如 Forge 雖然功能強大，但對於新手來說學習曲線較陡。最近的社群討論和推廣活動也促進了這個專案的曝光度。技術上，隨著 C++ 和 Python 的普及，這個專案的可行性大大提高。forks/stars 比率為 11.9%，顯示出許多人對此專案有實際的修改需求。
 
 ## 適合誰使用
 
-**目標受眾**：希望自訂 Minecraft 客戶端的開發者和遊戲設計師。
+**目標受眾**：希望自定義 Minecraft 客戶端的開發者和玩家。
 
 > [!example] 使用場景
-> - Minecraft 開發者用它來自訂遊戲功能，因為開源的特性讓他們能夠自由修改代碼。
-> - 遊戲設計師用它來測試新音效和視覺效果，因為可以直接在客戶端中實現和調整。
-> - 社群貢獻者用它來提交功能建議和修復，因為專案鼓勵開放的貢獻和合作。
+> - 遊戲開發者用它來自定義 Minecraft 客戶端的功能，因為這樣可以快速實現新遊戲機制，並且不需要從零開始。
+> - 愛好者用它來修改遊戲內部設定，因為這樣可以提升遊戲的可玩性和個性化，並且能夠與朋友分享自定義的遊戲體驗。
+> - 學術研究者用它來分析 Minecraft 的遊戲機制，因為開源的代碼讓他們能夠深入理解遊戲的運作邏輯，並進行相關的研究。
 
 ## 架構分析
 
-這個專案採用模組化的架構，允許開發者根據需求添加或修改功能。使用 CMake 作為構建系統，這使得專案能夠在不同平台上進行編譯和運行。資料流方面，客戶端會通過 API 與 Minecraft 伺服器進行通訊，並能夠動態加載擴展模組。
-
-選擇 CMake 的原因在於其跨平台能力，代價是需要開發者熟悉這個構建系統。擴展性方面，專案設計允許開發者輕鬆添加新功能，但在功能穩定性上可能會面臨挑戰，特別是在多開發者環境中。整體來看，這個架構設計適合希望進行創新和實驗的開發者，但對於尋求穩定性的使用者來說，可能不夠成熟。
+這個專案採用模組化的架構，主要使用 C++ 作為核心開發語言，並結合 Python 進行腳本擴展。這樣的設計使得開發者能夠在不改動核心代碼的情況下進行功能擴展。資料流方面，遊戲邏輯和用戶界面分開處理，使用 CMake 進行編譯和依賴管理。選擇 C++ 而非其他語言如 Java，主要是為了獲得更高的性能和更好的控制權，但這也增加了學習曲線。擴展性方面，專案的模組化設計使得未來可以輕鬆添加新功能，但也可能導致依賴管理的複雜性增加。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於其開源架構和模組化設計，允許開發者根據需求進行自定義。使用 CMake 作為構建系統，這使得專案能夠在多平台上運行，並且能夠利用現有的 Minecraft 代碼庫進行開發。雖然目前尚未有具體的效能數據，但預期能夠處理中等規模的遊戲資源。設計上選擇 CMake 的原因在於其廣泛的支持和靈活性，但這也要求開發者具備一定的技術背景。技術風險方面，專案仍在早期階段，可能面臨穩定性問題，特別是在多開發者環境中。整合方面，與主流的遊戲開發框架的兼容性尚未完全測試，但預期能夠與現有的 Minecraft 生態系統進行整合。整體來看，這個專案在技術上具備潛力，但仍需進一步的測試和改進。
+這個專案的核心技術機制是使用 C++ 進行高效能的遊戲邏輯處理，並且利用 Python 進行腳本化的擴展。這樣的設計使得開發者可以快速地進行功能調整和擴展。效能方面，專案能夠處理基本的遊戲邏輯，但在大型模組或複雜功能的實作上可能會遇到瓶頸，特別是在資源管理上。選擇 C++ 而非 Java 是為了獲得更高的性能，但這也意味著開發者需要具備更高的技術能力。技術風險方面，隨著專案的擴展，可能會出現依賴管理的問題，特別是在多語言協作的情況下。整合方面，與主流的遊戲開發框架的兼容性尚待測試，特別是在 CI/CD 流程中可能需要額外的配置。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件簡短，缺乏詳細的使用範例。安裝過程中可能會遇到編譯問題，對新手不太友好。沒有提供明確的入門指南，且文件主要以英文撰寫，缺乏多語言支持。
+> README 文件簡短，缺乏詳細的使用範例和文檔。安裝過程相對順暢，但對於新手來說可能會有一定的挑戰。沒有提供專門的入門指南，且文件目前僅有英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開源，允許自由修改和擴展。
-> - 支持多種語言，增加了靈活性。
-> - 社群活躍，能夠快速獲得反饋和改進建議。
+> - 開源且社群驅動，鼓勵貢獻和擴展。
+> - 多語言支持，適合不同背景的開發者。
+> - 模組化架構，便於未來功能擴展。
 
 > [!danger] 缺點
-> - 仍在早期開發，功能不完整。
-> - 缺乏詳細文檔，對新手不友好。
-> - 編譯過程中可能遇到問題，特別是在不同平台上。
+> - 功能尚不完整，對新手不太友好。
+> - 可能會遇到編譯和依賴問題。
+> - 缺乏詳細的文檔和使用指導。
 
 > [!warning] 注意事項
-> - 目前仍在早期開發階段，功能不完整。
-> - 可能會遇到編譯問題，特別是在不同平台上。
-> - 缺乏詳細的文檔和使用範例，對新手不太友好。
+> - 目前功能尚不完整，仍在開發中。
+> - 可能會遇到編譯問題，特別是與舊版本的預編譯標頭有關。
+> - 缺乏詳細的使用文檔，對新手不太友好。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步，但不提供遊戲客戶端的擴展性。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 主要用於網路攻擊模擬，與 Minecraft 客戶端無直接關聯。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的開源功能，但專注於檔案同步，而非遊戲客戶端的擴展。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於網路安全和隱私保護，與 Minecraft 客戶端的功能無直接關聯。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 主要用於 Telegram 的 WebSocket 代理，與遊戲開發無關。 |
 
 ## 替代方案決策
 
@@ -155,16 +170,16 @@ cmake . && make
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Forge | 使用 Java 實作，專注於提供穩定的模組支持和豐富的生態系統。 | 如果你的團隊需要一個成熟且穩定的模組開發平台，Forge 是更好的選擇。 | medium，因為需要將現有的 Java 模組轉換為新的架構。 |
-| Fabric | 輕量級的模組化框架，專注於性能和快速更新。 | 如果你的專案需要快速的更新和輕量級的模組支持，Fabric 是更合適的選擇。 | low，因為許多模組可以直接轉換。 |
+| Forge | 提供一個成熟的模組化框架，支持大量現有模組，並且有活躍的社群。 | 如果你需要一個穩定的環境來運行多個模組，Forge 是更好的選擇。 | low，因為已有大量文檔和社群支持。 |
+| Fabric | 專注於輕量級和快速的模組開發，適合需要快速迭代的開發者。 | 如果你的團隊需要快速開發和測試新模組，Fabric 是更合適的選擇。 | medium，因為需要重新學習一些 API 和工具。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **client** | **Forge** | **Fabric** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Java 實作，專注於提供穩定的模組支持和豐富的生態系統。 | 輕量級的模組化框架，專注於性能和快速更新。 |
-> | 遷移成本 | - | medium，因為需要將現有的 Java 模組轉換為新的架構。 | low，因為許多模組可以直接轉換。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要一個成熟且穩定的模組開發平台，Forge 是 | 如果你的專案需要快速的更新和輕量級的模組支持，Fabric  |
+> | 技術路線 | 本專案 | 提供一個成熟的模組化框架，支持大量現有模組，並且有活躍的社群。 | 專注於輕量級和快速的模組開發，適合需要快速迭代的開發者。 |
+> | 遷移成本 | - | low，因為已有大量文檔和社群支持。 | medium，因為需要重新學習一些 API 和工具。 |
+> | 適用場景 | 主要場景 | 如果你需要一個穩定的環境來運行多個模組，Forge 是更好的 | 如果你的團隊需要快速開發和測試新模組，Fabric 是更合適 |
 
 ## 成熟度評估
 
@@ -175,24 +190,27 @@ cmake . && make
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合對 Minecraft 有深入了解的開發者進行實驗，不建議用在生產環境的核心路徑上。
+> 適合個人試用和探索，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 編譯過程中可能會遇到舊版本編譯器的問題
-  - 解法：確保使用最新版本的編譯器
-- [MEDIUM] 某些功能可能無法正常運作，特別是音效相關的功能
-  - 解法：查看社群提供的修復建議
+- **[HIGH]** 編譯過程中可能會遇到舊的預編譯標頭文件問題
+  - 解法：確保使用最新的編譯器版本
+- [MEDIUM] 某些功能可能尚未實裝，導致遊戲體驗不完整
+  - 解法：定期檢查更新以獲取最新功能
+- [MEDIUM] 缺乏詳細的文檔，可能導致使用困難
+  - 解法：參考社群討論和其他開源專案的文檔
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊進行 Minecraft 客戶端的自定義開發 | 非常適合 | 開源架構和社群支持使得自定義開發變得容易。 |
-| 大型遊戲公司需要穩定的客戶端解決方案 | 不適合 | 目前仍在 alpha 階段，功能不穩定。 |
-| 遊戲設計師希望快速測試新功能 | 適合 | 開放性和可擴展性使得快速實驗成為可能。 |
+| 小型開發團隊希望自定義 Minecraft 客戶端 | 非常適合 | 開源和社群驅動的特性使其易於擴展和修改。 |
+| 大型遊戲公司需要穩定的客戶端解決方案 | 不適合 | 專案仍在 alpha 階段，功能不穩定。 |
+| 獨立開發者希望快速實驗新的遊戲機制 | 適合 | 開源特性使得快速迭代和實驗成為可能。 |
+| 教育機構希望使用 Minecraft 進行教學 | 普通 | 雖然有潛力，但缺乏穩定的功能和文檔支持。 |
 
 ## 採用成本分析
 
@@ -204,12 +222,18 @@ cmake . && make
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習，5 小時整合，得到開源的 Minecraft 客戶端，值得嘗試。
+> 花 10 小時學習，5 小時整合，得到一個可自定義的 Minecraft 客戶端，值得探索。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：專案本身不需要高權限，且不存取敏感資料。但由於開源特性，需注意依賴的安全性。
+> 低風險：專案本身不需要高權限，且不存取敏感資料，但開發者需注意依賴的安全性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個專案最常與其他開源 Minecraft 工具搭配使用，如 Forge 和 Fabric。在一個使用 Forge 的專案中，你可以用這個工具來擴展現有的客戶端功能，具體做法是通過修改源碼來添加新模組。與主流 CI 工具如 GitHub Actions 的整合尚未測試，但由於專案使用 CMake，理論上應該能夠順利整合。最常見的整合問題是依賴管理，特別是在多語言環境中，可能需要額外的配置來解決。
 
 ## 健康度儀表板
 
@@ -240,7 +264,7 @@ cmake . && make
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 40 |
-| Open Issues | 8 |
+| Open Issues | 7 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-07 |
 | Repo 大小 | 1171.7 MB |
@@ -264,7 +288,7 @@ cmake . && make
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，主要依賴於 GitHub 的 PR 和 Issues 互動。
+**社群活躍度**：社群活躍度中等，近期有多個合併請求。
 
 ## 開發動態
 
@@ -297,17 +321,17 @@ cmake . && make
 
 相關概念：[[開源]] · [[遊戲開發]] · [[社群貢獻]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]]
 
 [GitHub](https://github.com/Minecraft-Community-Edition/client)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：遊戲開發）
+> [!note]- 直接競品（同子分類：遊戲客戶端）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "遊戲開發" AND file.name != "Minecraft-Community-Edition--client"
+> WHERE subcategory = "遊戲客戶端" AND file.name != "Minecraft-Community-Edition--client"
 > SORT stars DESC
 > ```
 
@@ -500,6 +524,14 @@ cmake . && make
 > 相關性:: 未評估
 > 印象:: _一句話_
 > 行動:: 不需要
+> 
+> | 維度 | 分數 (1-5) | 說明 |
+> | --- | :---: | --- |
+> | 信心 | /5 | _我對這工具的了解程度_ |
+> | 興趣 | /5 | _想投入時間研究的程度_ |
+> | 風險 | /5 | _導入風險，5=極低風險_ |
+> 
+> _填完後更新 frontmatter：`score_confidence` / `score_interest` / `score_risk`_
 > 
 > _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
 > _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_

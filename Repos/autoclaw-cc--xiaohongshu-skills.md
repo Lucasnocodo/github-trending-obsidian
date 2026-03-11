@@ -7,7 +7,7 @@ language: Python
 license: MIT
 description: "xiaohongshu-skills"
 homepage: ""
-stars: 432
+stars: 433
 stars_per_day: 62
 forks: 53
 open_issues: 14
@@ -22,8 +22,11 @@ release_tag: "v0.1.0-c26fa98"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
+score_confidence: 0
+score_interest: 0
+score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "自動化小紅書操作，讓 AI 代理輕鬆執行社交互動與內容管理。"
+use_case: "自動化小紅書操作，讓 AI Agent 能夠輕鬆執行多種任務。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -33,7 +36,7 @@ contributor_count: 3
 engagement: "medium"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:432"
+star_history: "2026-03-10:432,2026-03-11:433"
 tags:
   - github
   - "category/開發工具"
@@ -43,112 +46,131 @@ tags:
 aliases:
   - "xiaohongshu-skills"
   - "autoclaw-cc/xiaohongshu-skills"
-  - "自動化小紅書操作，讓 AI 代理輕鬆執行社交互動與內容管理。"
+  - "自動化小紅書操作，讓 AI Agent 能夠輕鬆執行多種任務。"
 ---
 
 # xiaohongshu-skills
 
-**432** stars · **62** stars/天 · 建立 7 天前 · Python · MIT
+**433** stars · **62** stars/天 · 建立 7 天前 · Python · MIT
+
+```dataviewjs
+const me = dv.page("Repos/autoclaw-cc--xiaohongshu-skills");
+if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
+  const parts = [];
+  if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
+  if (me.ring && me.ring !== "assess") parts.push("Ring: **" + me.ring + "**");
+  if (me.verdict) parts.push(me.verdict);
+  dv.paragraph("> [!success] 你的結論\n> " + parts.join(" / "));
+}
+```
 
 `ORG` `v0.1.0-c26fa98` `easy-install`
 
 > [!summary] 一句話摘要
-> 自動化小紅書操作，讓 AI 代理輕鬆執行社交互動與內容管理。
+> 自動化小紅書操作，讓 AI Agent 能夠輕鬆執行多種任務。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (62 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 3 人 · **參與度** Medium
-> **適合** 需要在小紅書上進行自動化操作的社交媒體經營者或內容創作者。
-> **一句話重點** 這個專案讓小紅書的自動化操作變得前所未有的簡單，特別適合內容創作者和社交媒體經營者。
+> **適合** 希望自動化小紅書操作的內容創作者和社交媒體經營者。
+> **一句話重點** 這個專案的最大優勢在於其自然語言操作能力，讓不熟悉技術的用戶也能輕鬆使用。
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到自動化小紅書操作的便利，值得採用。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，2 小時整合，能夠實現小紅書的自動化操作，值得一試。
 
 > [!abstract] 核心創新
-> 支持自然語言的連貫操作，讓多步驟的社交互動變得簡單直觀。
+> 支持連貫操作的 AI Agent 能力，通過自然語言指令自動執行多個任務。
 
 ## 專案簡介
 
-這個專案提供了一套基於 Python 的自動化技能，專門用於小紅書平台的操作。使用者可以透過自然語言指令來執行多種任務，例如登入、搜尋內容、發佈筆記及社交互動。核心功能包括 xhs-auth（認證管理）、xhs-publish（內容發佈）、xhs-explore（內容發現）等，這些功能可以串聯執行，讓使用者以簡單的語句達成複雜的操作。例如，使用者可以說「搜索刺客信条最火的图文帖子，收藏它，然后告诉我讲了什么」，系統會自動完成所有步驟。這種設計使得操作變得直觀且高效，特別適合需要頻繁互動的小紅書用戶。使用者只需安裝 Python 3.11 及相關依賴，並將專案放入支持 SKILL.md 的 Agent 平台的 skills 目錄下即可使用。這個工具的賣點在於其連貫操作能力，能夠大幅減少手動操作的時間和精力。
+這個專案提供了一個基於 Python 的自動化框架，專門用於小紅書的操作。用戶可以通過自然語言指令與 AI Agent 互動，執行如搜索、發佈內容、社交互動等任務。核心機制是利用 Chrome DevTools Protocol (CDP) 控制瀏覽器，並且內建反檢測技術，確保操作的隱蔽性。安裝過程簡單，只需將專案放入支持 SKILL.md 格式的 Agent 平台的 skills 目錄，並使用 `uv sync` 安裝依賴。這個工具的賣點在於其連貫操作能力，能夠自動串聯多個技能完成複雜任務。
 
-**技術棧**：`Python 3.11` · `requests 2.28.0` · `websockets 12.0`
+技術上，這個專案依賴於 requests 和 websockets，並且使用了人類行為模擬技術來降低被檢測的風險。與其他自動化工具相比，如 OpenClaw 和其他 CLI 工具，xiaohongshu-skills 提供了更高層次的抽象，讓用戶能夠使用自然語言進行操作，而不需要深入了解底層命令。這使得它在使用上更為友好，特別適合不熟悉命令行的用戶。使用時，可能會遇到 Windows 環境下的兼容性問題，社群也在積極討論這些問題。這個專案目前處於 beta 階段，適合小型團隊或個人項目使用，未來可能會進一步擴展功能和穩定性。
+
+**技術棧**：`Python 3.11` · `requests>=2.28.0` · `websockets>=12.0`
 
 ## 重點功能
 
-- xhs-auth — 支持多帳號切換和掃碼登入，方便管理多個小紅書帳號。
-- xhs-publish — 支持圖文、視頻及長文的發佈，並可進行定時發佈。
-- xhs-explore — 提供關鍵字搜索和筆記詳情查詢，幫助用戶快速找到所需內容。
-- xhs-interact — 支持評論、回覆、點贊和收藏等社交互動功能。
-- 連貫操作 — 使用自然語言下達複合指令，系統自動串聯多個技能完成任務。
+- xhs-auth — 支持多賬號登錄和檢查登錄狀態，方便用戶管理多個賬號。
+- xhs-publish — 支持圖文、視頻和長文的發布，並提供定時發布功能。
+- xhs-explore — 提供關鍵詞搜索和筆記詳情查看，幫助用戶快速找到感興趣的內容。
+- xhs-interact — 支持評論、點讚和收藏功能，增強社交互動。
+- 連貫操作 — 用戶可以用自然語言下達複合指令，Agent 會自動串聯多個技能完成任務。
 
 ## 快速開始
 
-1. 下載 ZIP 安裝
+1. 下載專案並解壓
 ```bash
-下載專案壓縮包並解壓到 Agent 的 skills 目錄下
+下載 ZIP 並解壓到 skills 目錄
 ```
 2. 安裝依賴
 ```bash
 cd xiaohongshu-skills && uv sync
 ```
-3. 使用自然語言與 Agent 對話
+3. 啟動 Chrome 瀏覽器
 ```bash
-# 例如："搜索关于露营的笔记"
+python scripts/chrome_launcher.py
 ```
+
+## 程式碼範例
+
+{
+  "前置條件": "安裝完成後，啟動 Chrome 瀏覽器",
+  "指令": "python scripts/cli.py search-feeds --keyword \"关键词\"",
+  "預期輸出": "返回符合關鍵詞的筆記列表"
+}
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案在建立 7 天內累積了 432 stars（62 stars/天），forks 數量為 53（12.3%），顯示出不錯的社群關注度。主要貢獻者包括 Angiin、xpzouying 和 cu1ch3n，他們在自動化和 AI 代理領域有著豐富的經驗。這個工具解決了小紅書用戶在內容管理和社交互動上的繁瑣操作，之前的解決方案往往需要手動操作，效率低下。隨著自動化需求的增加，這個工具的出現正好填補了市場的空白。社群中活躍的討論和問題反映了使用者對於功能的期待與需求，特別是在多帳號管理和反爬機制的挑戰上。
+> 建立 7 天內累積 433 stars（62/天），forks 53（12.2%），顯示出強烈的社群興趣。這個專案由 Angiin 和其他貢獻者共同開發，解決了小紅書自動化操作的痛點，特別是在反檢測和多任務處理上。之前的解決方案往往需要手動操作或缺乏靈活性，而這個工具提供了一個更高效的自動化方式。社群的活躍度和開發者的回應速度都顯示出這個專案的潛力，未來可能會吸引更多用戶。
 
 ## 適合誰使用
 
-**目標受眾**：需要在小紅書上進行自動化操作的社交媒體經營者或內容創作者。
+**目標受眾**：希望自動化小紅書操作的內容創作者和社交媒體經營者。
 
 > [!example] 使用場景
-> - 社交媒體經營者用它來自動化小紅書內容發佈，因為可以節省大量時間並提高互動率。
-> - 數據分析師用它來批量收集小紅書上的用戶反饋，因為可以快速獲取大量數據進行分析。
-> - 內容創作者用它來管理多個小紅書帳號，因為可以輕鬆切換帳號並執行相同的操作。
+> - 社交媒體經營者用它來自動發布小紅書內容，因為可以節省時間並提高互動率。
+> - 市場分析師用它來追蹤競爭對手的熱門筆記，因為可以快速獲取數據並進行分析。
+> - 內容創作者用它來批量互動和發布，因為能夠簡化操作流程並提高效率。
 
 ## 架構分析
 
-這個專案採用 Python 作為主要開發語言，並基於 CDP（Chrome DevTools Protocol）進行瀏覽器自動化。架構上，專案將各種功能模組化，讓使用者可以根據需求選擇使用特定的技能。資料流從使用者的自然語言輸入開始，經過解析後，系統會自動選擇對應的技能並執行相關操作。
-
-這種設計使得功能擴展變得簡單，未來可以輕鬆加入更多技能。選擇 Python 的原因在於其強大的生態系統和易於學習的特性，這樣可以降低使用者的學習成本。整體架構的輕量化設計使得專案能夠快速部署，但在處理大量請求時可能會面臨效能瓶頸。
+這個專案採用雙層設計，分為 Skills 層和引擎層。Skills 層定義了 AI Agent 的能力，通過 SKILL.md 文件進行意圖路由；引擎層則使用 Python CDP 自動化引擎控制瀏覽器。這樣的設計使得用戶能夠靈活地擴展功能，而不需要深入了解底層的實現細節。數據提取通過 `window.__INITIAL_STATE__` 獲取，並且內建反檢測技術以降低被檢測的風險。這種架構的代價在於需要用戶具備一定的 Python 知識來進行安裝和配置，但整體上能夠提供更高的靈活性和擴展性。
 
 ## 技術深入分析
 
-專案的核心技術基於 Python 和 CDP，這使得它能夠直接與 Chrome 瀏覽器進行互動。這種設計不僅能夠實現高效的自動化操作，還能夠利用 Chrome 的強大功能來處理複雜的網頁元素。效能方面，雖然專案設計為輕量級，但在高並發請求下可能會出現延遲，特別是在網絡環境不佳的情況下。選擇 Python 是因為其生態系統豐富，並且有大量的庫可以支持開發。依賴關係相對簡單，主要依賴 requests 和 websockets，這使得專案的安裝和維護變得容易。技術風險方面，隨著使用者數量的增加，可能會面臨效能瓶頸，特別是在操作大量數據時。整合方面，該專案與主流的 AI Agent 平台兼容，能夠輕鬆融入現有的工作流中。
+這個專案的核心技術機制是基於 Chrome DevTools Protocol (CDP) 的自動化引擎，能夠直接控制瀏覽器進行操作。使用了人類行為模擬技術來降低被檢測的風險，並且通過 `window.__INITIAL_STATE__` 來提取頁面數據，這樣能夠與小紅書的前端框架保持一致。效能方面，這個工具能夠快速響應用戶的自然語言指令，並且支持多賬號管理，適合需要頻繁切換賬號的用戶。設計上，選擇 Python 作為開發語言，這使得開發者能夠快速迭代和擴展功能，但也帶來了對 Python 環境的依賴。技術風險方面，未來可能會因為小紅書的反爬蟲機制變更而影響工具的穩定性，這需要開發者持續關注。整合方面，與主流的 Python 生態系統兼容良好，但對於不熟悉 Python 的用戶來說，學習曲線可能較陡。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和使用範例。安裝過程相對順暢，但需要注意 Python 版本和環境要求。文件目前僅提供英文版本，可能對非英語使用者造成一些困難。
+> README 文件清晰，提供了詳細的安裝步驟和使用範例。安裝過程順暢，但需要注意 Windows 環境的兼容性。文件目前僅提供英文版本，可能對非英語用戶造成一定障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用，支持自然語言操作，降低了使用門檻。
-> - 功能模組化，便於未來擴展和維護。
-> - 支持多帳號管理，適合需要頻繁切換帳號的用戶。
+> - 支持自然語言操作，降低使用門檻。
+> - 內建反檢測技術，確保操作隱蔽性。
+> - 功能全面，涵蓋內容發布、社交互動等多個方面。
 
 > [!danger] 缺點
-> - 目前僅支持 Python 3.11，對於舊版用戶不友好。
-> - Windows 環境尚未支持，限制了使用者範圍。
+> - 目前不支持 Windows 環境，限制了使用者範圍。
+> - 需要安裝 Google Chrome，增加了依賴性。
 > - 部分功能仍在開發中，可能存在不穩定性。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.11 以上版本
-> - 需要 Google Chrome 瀏覽器
+> - 僅支援 Python 3.11 及以上版本
 > - 目前不支持 Windows 環境
+> - 需要 Google Chrome 瀏覽器
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [autoclaw-cc/OpenClaw-Medical-Skills](https://github.com/autoclaw-cc/OpenClaw-Medical-Skills) | 專注於醫療領域的自動化技能，功能上更專業化，適合醫療工作者使用。 |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 提供更廣泛的自動化功能，但缺乏小紅書特定的社交互動能力。 |
+| [autoclaw-cc/openclaw](https://github.com/autoclaw-cc/openclaw) | OpenClaw 提供了一個更通用的自動化框架，但缺乏針對小紅書的專用技能和反檢測功能。 |
+| [henryxiaoyang/wechat-access-unqclawed](https://github.com/henryxiaoyang/wechat-access-unqclawed) | 這個工具專注於微信的自動化，但不支持小紅書的多賬號管理和複合操作。 |
 
 ## 替代方案決策
 
@@ -156,64 +178,63 @@ cd xiaohongshu-skills && uv sync
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於數據抓取和分析，使用 Node.js 實現，記憶體使用量較低，但功能較為單一。 | 如果你的需求主要是數據抓取而非社交互動，這個工具會更合適。 | medium，因為需要重新適應不同的 API 和功能設計。 |
-| [HenryXiaoYang/wechat-access-unqclawed](https://github.com/HenryXiaoYang/wechat-access-unqclawed) | 針對微信的自動化操作，使用 Python 實現，功能上更專注於微信生態。 | 如果你的主要業務在微信平台上，這個工具會更適合。 | low，因為使用相同的語言和相似的操作模式。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這個工具專注於文件同步，而不是社交媒體自動化，因此不具備小紅書的專用功能。 | 如果你的需求是文件同步而非社交媒體操作，這個工具會更合適。 | low，因為功能範圍不同，遷移不需要太多調整。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 提供了一個更全面的爬蟲框架，但缺乏專門針對小紅書的功能。 | 如果你需要一個通用的爬蟲框架，這個工具會更適合。 | medium，因為需要重新設計操作流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **xiaohongshu-skills** | **Shadowbroker** | **wechat-access-unqclawed** |
+> | 維度 | **xiaohongshu-skills** | **parsync** | **Shadowbroker** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於數據抓取和分析，使用 Node.js 實現，記憶體使用量較低，但功能較為單一。 | 針對微信的自動化操作，使用 Python 實現，功能上更專注於微信生態。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的 API 和功能設計。 | low，因為使用相同的語言和相似的操作模式。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是數據抓取而非社交互動，這個工具會更合適。 | 如果你的主要業務在微信平台上，這個工具會更適合。 |
+> | 技術路線 | 本專案 | 這個工具專注於文件同步，而不是社交媒體自動化，因此不具備小紅書的專用功能。 | Shadowbroker 提供了一個更全面的爬蟲框架，但缺乏專門針對小紅書的功能。 |
+> | 遷移成本 | - | low，因為功能範圍不同，遷移不需要太多調整。 | medium，因為需要重新設計操作流程。 |
+> | 適用場景 | 主要場景 | 如果你的需求是文件同步而非社交媒體操作，這個工具會更合適。 | 如果你需要一個通用的爬蟲框架，這個工具會更適合。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人試用和小型專案，但不建議在生產環境中使用。
+> 適合小型項目或個人使用，但不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 AWS 環境中無法正常登入，可能因為反爬機制導致的問題
-  - 解法：嘗試使用本地環境進行測試
-- [MEDIUM] Windows 環境尚未支持，導致無法使用
-  - 解法：使用 Linux 或 MacOS 環境進行操作
-- [MEDIUM] 某些功能可能因小紅書的反爬機制而無法正常運作
-  - 解法：定期檢查更新以獲取最新的功能修正
+- **[HIGH]** Windows 環境下可能無法正常運行，特別是反檢測功能
+  - 解法：使用 WSL 或在 Linux 環境下運行
+- [MEDIUM] 多賬號管理可能會導致登錄狀態不穩定
+  - 解法：定期檢查登錄狀態，並在需要時重新登錄
+- **[HIGH]** 反爬機制可能會導致部分功能失效
+  - 解法：定期更新工具以適應小紅書的變更
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型內容創作團隊 | 非常適合 | 能夠自動化多帳號內容發佈，提升工作效率。 |
-| 個人社交媒體經營者 | 適合 | 簡單易用，適合快速上手。 |
-| 大型企業的社交媒體部門 | 普通 | 功能可能不足以滿足複雜的需求。 |
-| 需要在 Windows 環境下運行的用戶 | 不適合 | 目前不支持 Windows 環境。 |
+| 小型創業團隊的社交媒體管理 | 非常適合 | 能夠自動化多個社交媒體操作，節省時間和人力成本。 |
+| 大型企業的內容發布需求 | 普通 | 雖然功能全面，但可能需要更多的穩定性和支持。 |
+| 個人內容創作者的日常操作 | 非常適合 | 自然語言操作降低了使用門檻，適合不熟悉技術的用戶。  |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
-| 綁定風險 | low |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~2 小時 |
+| 維護負擔 | medium |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到自動化小紅書操作的便利，值得採用。
+> 花 5 小時學習，2 小時整合，能夠實現小紅書的自動化操作，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，僅需存取小紅書的公共資料，並不會存取敏感信息。
+> 低風險：不需要高權限，僅存取用戶的社交媒體賬號資訊。依賴的庫在開源社群中有良好的信任度，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -259,10 +280,17 @@ cd xiaohongshu-skills && uv sync
 
 **最新版本**：v0.1.0-c26fa98 (2026-03-09)
 
+> [!info]- Release Notes
+> ## What's Changed
+> * perf: 浏览器反检测模块全面优化 - 动态平台适配与指纹一致性 by @xpzouying in https://github.com/autoclaw-cc/xiaohongshu-skills/pull/33
+> 
+> 
+> **Full Changelog**: https://github.com/autoclaw-cc/xiaohongshu-skills/compare/v0.1.0-41c2e11...v0.1.0-c26fa98
+
 ## 社群與生態
 
-**社群活躍度**：社群活躍，近期有多個提交和問題討論。
-**連結**：[文件](https://github.com/autoclaw-cc/xiaohongshu-skills/blob/main/README.md)
+**社群活躍度**：社群活躍，開發者對問題回應迅速。
+**連結**：[文件](https://github.com/autoclaw-cc/xiaohongshu-skills)
 
 ## 開發動態
 
@@ -576,7 +604,7 @@ cd xiaohongshu-skills && uv sync
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[AI Agent]] · [[社交媒體管理]]
+相關概念：[[自動化]] · [[CLI/TUI]] · [[反爬蟲]]
 
 相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ahmadawais--chartli|ahmadawais/chartli]]
 
@@ -620,7 +648,7 @@ cd xiaohongshu-skills && uv sync
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","AI Agent","社交媒體管理"];
+> const concepts = ["自動化","CLI/TUI","反爬蟲"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "autoclaw-cc--xiaohongshu-skills" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
@@ -781,6 +809,14 @@ cd xiaohongshu-skills && uv sync
 > 相關性:: 未評估
 > 印象:: _一句話_
 > 行動:: 不需要
+> 
+> | 維度 | 分數 (1-5) | 說明 |
+> | --- | :---: | --- |
+> | 信心 | /5 | _我對這工具的了解程度_ |
+> | 興趣 | /5 | _想投入時間研究的程度_ |
+> | 風險 | /5 | _導入風險，5=極低風險_ |
+> 
+> _填完後更新 frontmatter：`score_confidence` / `score_interest` / `score_risk`_
 > 
 > _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
 > _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_

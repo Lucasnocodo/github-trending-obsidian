@@ -17,11 +17,14 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
-subcategory: "加密工具"
+subcategory: "API 工具"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
 my_rating: 0
+score_confidence: 0
+score_interest: 0
+score_risk: 0
 last_reviewed: 2026-03-10
 use_case: "提供 AI 代理人原生接入加密貨幣的開放技能市場。"
 priority: medium
@@ -33,7 +36,7 @@ contributor_count: 3
 engagement: "medium"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:394"
+star_history: "2026-03-10:394,2026-03-11:394"
 tags:
   - github
   - "category/開發工具"
@@ -53,7 +56,20 @@ aliases:
 
 **394** stars · **56** stars/天 · 建立 7 天前 · N/A · 未標註授權
 
+```dataviewjs
+const me = dv.page("Repos/binance--binance-skills-hub");
+if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
+  const parts = [];
+  if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
+  if (me.ring && me.ring !== "assess") parts.push("Ring: **" + me.ring + "**");
+  if (me.verdict) parts.push(me.verdict);
+  dv.paragraph("> [!success] 你的結論\n> " + parts.join(" / "));
+}
+```
+
 `ORG`
+
+`agents` `ai` `crypto` `skills`
 
 > [!summary] 一句話摘要
 > 提供 AI 代理人原生接入加密貨幣的開放技能市場。
@@ -61,29 +77,31 @@ aliases:
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (56 stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Medium
-> **適合** 希望在 AI 代理人中整合加密貨幣功能的開發者和金融科技公司。
-> **一句話重點** 這個專案讓 AI 代理人能夠輕鬆接入加密市場，降低了開發門檻。
+> **適合** 需要快速接入加密貨幣功能的開發者和團隊。
+> **一句話重點** 這個專案不僅是技能市場，更是加密貨幣生態系統的橋樑。
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學、10 小時整合，得到靈活的加密功能，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到快速接入加密貨幣功能的能力，值得嘗試。
 
 > [!abstract] 核心創新
 > 提供 AI 代理人原生接入加密貨幣的開放技能市場。
 
 ## 專案簡介
 
-Binance Skills Hub 是一個開放的技能市場，讓 AI 代理人能夠以自然語言直接接入加密貨幣的各種功能。用戶可以透過簡單的配置，讓代理人搜尋代幣、執行交易、追蹤錢包、監控信號，甚至與 DeFi 協議互動。這種設計的核心在於靈活性，無論是使用 LangChain、CrewAI 還是自定義堆疊，開發者都能輕鬆整合加密功能。每個技能都以獨立文件存在，並包含 YAML 格式的元數據，這樣的結構使得貢獻者能夠快速理解和擴展現有技能。技術上，這個專案的設計選擇了簡單的配置方式，降低了使用門檻，讓開發者能夠專注於功能實現而非底層細節。與其他類似工具相比，如 AlpinDale/parsync 和 FreedomIntelligence/OpenClaw-Medical-Skills，Binance Skills Hub 提供了更廣泛的加密功能支持，並且不僅限於某一特定框架或平台，這使得它在多樣性上具有優勢。使用者在實際操作中可能會遇到的挑戰包括技能的更新和維護，因為開發者需要持續跟進加密市場的變化。社群活躍度高，開發者能夠快速獲得支持和反饋。這個專案目前處於 beta 階段，適合希望在 AI 代理人中整合加密功能的開發者團隊。未來六個月，預計將會有更多技能被添加，進一步擴展其功能範圍。對於需要快速開發加密應用的團隊，這是一個值得考慮的選擇，但對於不熟悉加密市場的開發者，可能需要額外的學習時間來適應。
+Binance Skills Hub 是一個開放的技能市場，讓 AI 代理人能夠透過自然語言直接接入加密貨幣生態系統，包括中心化和去中心化的功能。用戶可以搜索代幣、執行交易、追蹤錢包、監控信號，並與 DeFi 協議互動。這個平台的設計目的是為了讓任何代理人和框架（如 LangChain 或 CrewAI）都能輕鬆接入加密貨幣，僅需少量配置。每個技能都以獨立的資料夾形式存在，並包含結構化的指令，這使得貢獻新技能變得簡單。這種模組化的設計不僅提高了可擴展性，還促進了社群的參與。
+
+相較於其他工具，如 AlpinDale/parsync 和 FreedomIntelligence/OpenClaw-Medical-Skills，Binance Skills Hub 提供了一個更為集中和統一的接口，讓開發者能夠更快速地整合加密貨幣功能。這個平台的缺點在於，因為是開放的技能市場，可能會出現不一致的技能質量，且用戶需自行評估 AI 生成的資訊的可靠性。對於需要快速開發和部署加密貨幣功能的團隊，這是一個非常合適的選擇，但在使用時需謹慎評估風險和準確性。隨著加密貨幣市場的快速變化，未來可能會有更多的技能和功能被加入，進一步擴展其應用範圍。
 
 **技術棧**：`Node.js` · `YAML`
 
 ## 重點功能
 
-- 自然語言接口 — 用戶可以用自然語言搜尋代幣、執行交易等，無需專業知識。
-- 開放技能市場 — 每個技能獨立存在，開發者可以輕鬆添加和擴展功能。
-- 多框架支持 — 兼容 LangChain、CrewAI 等多種開發框架，靈活性高。
-- YAML 配置 — 使用 YAML 格式的元數據，簡化技能的定義和管理。
-- 即時市場監控 — 代理人能夠實時追蹤市場信號，提供即時反應能力。
+- 自然語言查詢 — 用戶可以使用自然語言進行查詢和操作，無需複雜的指令。
+- 模組化技能 — 每個技能都獨立存在，方便開發者創建和貢獻新功能。
+- 多框架支持 — 支援 LangChain、CrewAI 等多種框架，增加靈活性。
+- 即時交易執行 — 用戶可以直接執行交易，並獲得即時反饋。
+- DeFi 協議互動 — 允許用戶與各種去中心化金融協議進行互動。
 
 ## 快速開始
 
@@ -91,82 +109,65 @@ Binance Skills Hub 是一個開放的技能市場，讓 AI 代理人能夠以自
 ```bash
 git clone https://github.com/binance/binance-skills-hub.git
 ```
-2. 創建新技能文件夾
+2. 進入專案目錄
 ```bash
-mkdir my_skill
+cd binance-skills-hub
 ```
-3. 編輯 SKILL.md 文件
+3. 查看現有技能
 ```bash
-nano my_skill/SKILL.md
+ls skills
 ```
-
-## 程式碼範例
-
-# 前置條件
-# 使用 YAML 格式定義技能
----
-title: My Skill
-description: A clear description of what the skill does and when to use it.
-metadata:
-  version: 1.0
-  author: Your Name
-license: MIT
----
-
-# 
-
-[Add instructions, examples, and guidelines here]
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 7 天內累積 394 stars（56/天），forks 70（17.8%），顯示出相對活躍的社群參與。專案的主要貢獻者來自 Binance，這是一個在加密領域具有影響力的公司，過去的經驗使他們能夠針對市場需求開發出這個工具。這個專案解決了 AI 代理人與加密貨幣之間的接入問題，之前的解決方案往往需要複雜的配置或專有技術，這使得開發者在整合時面臨困難。最近的推廣活動和社群討論也可能促進了其曝光率。技術上，這個工具的開放性和靈活性使得它能夠適應不同的開發環境，這在當前快速變化的技術生態中非常重要。forks/stars 比率高達 17.8%，顯示出許多人在實際修改和使用這個專案，這是對其實用性的一個強烈信號。
+> 建立 7 天內累積 394 stars（56/天），forks 70（17.8%），顯示出相對活躍的社群參與。這個專案由 Binance 團隊開發，目的是解決 AI 代理人與加密貨幣生態系統之間的接入問題，之前的解決方案往往缺乏統一性和易用性。技術上，這個平台的開放性和模組化設計使得開發者能夠快速創建和分享技能，這在當前快速變化的加密市場中尤為重要。社群的活躍度和貢獻者的參與也顯示出這個專案的潛力。
 
 ## 適合誰使用
 
-**目標受眾**：希望在 AI 代理人中整合加密貨幣功能的開發者和金融科技公司。
+**目標受眾**：需要快速接入加密貨幣功能的開發者和團隊。
 
 > [!example] 使用場景
-> - 區塊鏈開發者用它來快速整合加密交易功能，因為只需幾行配置就能讓 AI 代理人執行交易和監控市場動態。
-> - 金融科技公司用它來建立自動化的資產管理系統，因為它支持多種 DeFi 協議，能夠靈活應對市場變化。
-> - 學術研究者用它來分析加密市場數據，因為其開放的技能市場允許他們自定義和擴展現有技能以滿足特定需求。
+> - 加密貨幣開發者用它來快速整合交易功能到自己的應用中，因為只需少量配置即可接入多種加密貨幣功能。
+> - 金融分析師用它來自動化監控市場信號，因為可以透過自然語言查詢和執行操作，節省大量時間。
+> - 教育機構用它來設計加密貨幣相關的教學工具，因為開放的技能市場允許輕鬆創建和分享教學資源。
 
 ## 架構分析
 
-Binance Skills Hub 採用模組化的架構設計，每個技能都是獨立的 YAML 文件，這樣的設計使得技能的添加和維護變得簡單。資料流方面，使用者通過自然語言輸入請求，系統解析後調用相應的技能，並返回結果。這種設計的好處是靈活性高，開發者可以根據需求快速調整技能。而缺點是，隨著技能數量的增加，管理和維護的複雜度也會上升。擴展性方面，雖然可以輕鬆添加新技能，但在高並發請求下，系統的響應時間可能會受到影響，尤其是在技能需要調用外部 API 時。
+Binance Skills Hub 採用模組化的架構設計，每個技能獨立存放在自己的資料夾中，這樣的設計使得貢獻新技能變得簡單。使用 YAML 格式來描述技能的元數據和指令，這不僅提高了可讀性，也方便了自動化處理。資料流方面，用戶的自然語言查詢會被解析並轉換為相應的 API 調用，這樣的設計使得整個流程高效且易於擴展。選擇 Node.js 作為後端語言，因為其非同步特性適合處理高頻的交易請求，但這也可能導致在高負載下出現性能瓶頸。整體架構的擴展性良好，但在面對大量同時請求時，可能需要進一步的負載均衡解決方案。
 
 ## 技術深入分析
 
-Binance Skills Hub 的核心技術機制是模組化的技能設計，使用 YAML 格式來定義每個技能的元數據和操作指令。這樣的設計使得技能的添加和維護變得簡單且直觀。效能方面，系統能夠處理多個並發請求，但在高負載下可能會影響響應時間，特別是當技能需要調用外部 API 時。選擇 Node.js 作為後端語言，因為它在處理 I/O 密集型任務上表現優異，這對於需要頻繁與加密市場交互的應用來說至關重要。依賴樹相對簡單，主要依賴於 Node.js 的生態系統，這降低了維護成本。技術風險方面，隨著技能數量的增加，管理複雜度可能會上升，特別是在技能之間需要互相調用的情況下。整合方面，與主流框架的相容性良好，開發者可以輕鬆將其納入現有的工作流中，並且 CI/CD pipeline 的整合也相對簡單。
+Binance Skills Hub 的核心技術機制在於其模組化的技能設計，使用 YAML 格式來描述技能的元數據，這使得技能的創建和管理變得簡單。每個技能都可以獨立運行，這樣的設計促進了社群的參與和貢獻。效能方面，該平台能夠處理高頻的交易請求，但在高負載情況下可能會遇到性能瓶頸。選擇 Node.js 作為後端語言，因為其非同步特性適合處理多個請求，但也可能導致在高流量時出現延遲。整體依賴關係相對簡單，主要依賴於 Node.js 的生態系統，這降低了維護成本。技術風險方面，由於是開放的技能市場，可能會出現不一致的技能質量，這對用戶的信任度造成影響。與主流框架的整合難度較低，開發者可以輕鬆地將其集成到現有的工作流中，這使得其在開發者社群中受到了廣泛的關注。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的貢獻指南和範例；安裝過程順暢，沒有明顯的坑；有良好的入門指南，適合新手使用；目前文件主要為英文，缺乏中文或多語言支持。
+> README 文件清晰，提供了詳細的貢獻指南和範例。安裝過程相對順暢，但對於不熟悉 Git 的用戶可能會有一定的學習曲線。缺乏多語言支持，可能對非英語使用者造成困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 靈活的技能擴展性，開發者可以根據需求快速添加新功能。
-> - 支持多種開發框架，方便不同背景的開發者使用。
-> - 自然語言接口降低了使用門檻，讓非技術用戶也能輕鬆操作。
+> - 開放性強，任何人都可以貢獻技能。
+> - 支持多種框架，增加了靈活性。
+> - 自然語言查詢降低了使用門檻。
 
 > [!danger] 缺點
-> - 對於新手來說，YAML 配置可能有一定的學習曲線。
-> - 需要持續關注加密市場的變化，以便更新技能。
-> - 在高並發請求下，系統的響應時間可能會受到影響。
+> - 技能質量不一，可能影響使用體驗。
+> - 不提供投資建議，使用者需自行承擔風險。
+> - 目前僅支援英文，對於非英語使用者可能不友好。
 
 > [!warning] 注意事項
-> - 不支持某些特定的區塊鏈功能，可能需要額外的開發。
-> - 對於新手來說，理解 YAML 格式的配置可能有一定的學習曲線。
-> - 技能的更新和維護需要開發者持續關注加密市場的變化。
+> - 技能質量可能不一致，需自行評估。
+> - 不提供投資建議，使用者需自行承擔風險。
+> - 目前僅支援英文，對於非英語使用者可能不友好。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的技能市場，但專注於資料同步，功能範圍較窄。 |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的技能，與加密市場無關，適用場景不同。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供文件同步功能，但不具備加密貨幣的專用技能。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的技能市場，與加密貨幣無關。 |
 
 ## 替代方案決策
 
@@ -174,16 +175,16 @@ Binance Skills Hub 的核心技術機制是模組化的技能設計，使用 YAM
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於金融數據的收集和分析，功能較為專一。 | 如果你的需求主要是金融數據分析而非加密交易，這個工具會更合適。 | medium，因為需要重新定義數據處理流程。 |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 提供 WebSocket 代理功能，主要用於即時數據傳輸。 | 如果你的應用需要高頻率的即時數據更新，這個工具會更適合。 | low，因為可以直接替換現有的數據傳輸層。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供文件同步功能，專注於資料管理，而非加密貨幣的專用技能。 | 如果你的需求是文件同步而非加密交易，則這是更合適的選擇。 | low，因為功能完全不同，無需遷移。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的技能市場，與加密貨幣無關。 | 如果你的專案涉及醫療技能，則這是更合適的選擇。 | medium，因為需要重新設計技能以符合醫療需求。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **binance-skills-hub** | **Shadowbroker** | **tg-ws-proxy** |
+> | 維度 | **binance-skills-hub** | **parsync** | **OpenClaw-Medical-Skills** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於金融數據的收集和分析，功能較為專一。 | 提供 WebSocket 代理功能，主要用於即時數據傳輸。 |
-> | 遷移成本 | - | medium，因為需要重新定義數據處理流程。 | low，因為可以直接替換現有的數據傳輸層。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是金融數據分析而非加密交易，這個工具會更合適 | 如果你的應用需要高頻率的即時數據更新，這個工具會更適合。 |
+> | 技術路線 | 本專案 | 提供文件同步功能，專注於資料管理，而非加密貨幣的專用技能。 | 專注於醫療領域的技能市場，與加密貨幣無關。 |
+> | 遷移成本 | - | low，因為功能完全不同，無需遷移。 | medium，因為需要重新設計技能以符合醫療需求。 |
+> | 適用場景 | 主要場景 | 如果你的需求是文件同步而非加密交易，則這是更合適的選擇。 | 如果你的專案涉及醫療技能，則這是更合適的選擇。 |
 
 ## 成熟度評估
 
@@ -194,27 +195,27 @@ Binance Skills Hub 的核心技術機制是模組化的技能設計，使用 YAM
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合開發者試用，但不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 某些技能在特定區塊鏈上無法正常運作
-  - 解法：檢查技能的兼容性，必要時進行調整
-- [MEDIUM] YAML 配置錯誤可能導致技能無法加載
-  - 解法：仔細檢查 YAML 語法，使用線上驗證工具
-- [MEDIUM] 高並發請求時可能導致響應延遲
-  - 解法：考慮使用負載均衡器來分散請求
+- **[HIGH]** 技能質量不一，可能導致使用者體驗不佳
+  - 解法：使用者需自行評估技能的可靠性
+- **[HIGH]** 不提供投資建議，使用者需自行承擔風險
+  - 解法：在使用前仔細評估風險
+- [MEDIUM] 目前僅支援英文，非英語使用者可能不友好
+  - 解法：尋找翻譯工具或社群支援
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型金融科技初創公司 | 非常適合 | 能快速整合多種加密功能，降低開發成本。 |
-| 大型企業的核心交易系統 | 不適合 | 目前仍在 beta 階段，穩定性不足。 |
-| 學術研究機構進行加密市場分析 | 適合 | 開放的技能市場允許自定義擴展。 |
-| 個人開發者的側項目 | 非常適合 | 靈活性高，能快速實現想法。 |
+| 小型加密貨幣交易所的開發團隊 | 非常適合 | 能快速接入多種加密貨幣功能，提升開發效率。 |
+| 個人投資者希望自動化交易 | 適合 | 自然語言查詢降低了使用門檻，方便使用。 |
+| 大型金融機構的核心系統 | 不適合 | 技能質量不一，可能影響系統穩定性。 |
+| 教育機構希望開發加密貨幣課程 | 適合 | 開放的技能市場便於創建和分享教學資源。 |
 
 ## 採用成本分析
 
@@ -223,15 +224,15 @@ Binance Skills Hub 的核心技術機制是模組化的技能設計，使用 YAM
 | 學習時間 | ~5 小時 |
 | 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、10 小時整合，得到靈活的加密功能，值得投入。
+> 花 5 小時學習，10 小時整合，得到快速接入加密貨幣功能的能力，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具本身不需要高權限，主要依賴於開放的技能市場，敏感資料的存取由使用者自行管理。
+> 低風險：該工具本身不需要高權限，僅存取公開的加密貨幣資訊。使用者需自行評估 AI 生成的資訊的可靠性。
 
 ## 健康度儀表板
 
@@ -278,7 +279,7 @@ Binance Skills Hub 的核心技術機制是模組化的技能設計，使用 YAM
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，經常有新的貢獻和討論。
+**社群活躍度**：社群活躍，最近有多個合併請求和貢獻者參與。
 **連結**：[文件](https://github.com/binance/binance-skills-hub/blob/main/README.md)
 
 ## 開發動態
@@ -349,7 +350,7 @@ Binance Skills Hub 的核心技術機制是模組化的技能設計，使用 YAM
 
 ## 延伸閱讀
 
-相關概念：[[Agent 框架]] · [[DeFi]] · [[自然語言處理]]
+相關概念：[[Agent 框架]] · [[加密貨幣]] · [[自然語言處理]]
 
 相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[duoan--TorchCode|duoan/TorchCode]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]] · [[helenigtxu--TradingView-Claw|helenigtxu/TradingView-Claw]]
 
@@ -357,11 +358,11 @@ Binance Skills Hub 的核心技術機制是模組化的技能設計，使用 YAM
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：加密工具）
+> [!note]- 直接競品（同子分類：API 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "加密工具" AND file.name != "binance--binance-skills-hub"
+> WHERE subcategory = "API 工具" AND file.name != "binance--binance-skills-hub"
 > SORT stars DESC
 > ```
 
@@ -393,7 +394,7 @@ Binance Skills Hub 的核心技術機制是模組化的技能設計，使用 YAM
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["Agent 框架","DeFi","自然語言處理"];
+> const concepts = ["Agent 框架","加密貨幣","自然語言處理"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "binance--binance-skills-hub" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
@@ -554,6 +555,14 @@ Binance Skills Hub 的核心技術機制是模組化的技能設計，使用 YAM
 > 相關性:: 未評估
 > 印象:: _一句話_
 > 行動:: 不需要
+> 
+> | 維度 | 分數 (1-5) | 說明 |
+> | --- | :---: | --- |
+> | 信心 | /5 | _我對這工具的了解程度_ |
+> | 興趣 | /5 | _想投入時間研究的程度_ |
+> | 風險 | /5 | _導入風險，5=極低風險_ |
+> 
+> _填完後更新 frontmatter：`score_confidence` / `score_interest` / `score_risk`_
 > 
 > _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
 > _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_

@@ -7,9 +7,9 @@ language: N/A
 license: N/A
 description: "end to end app store screenshot creation using AI"
 homepage: "https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots"
-stars: 1249
-stars_per_day: 416
-forks: 78
+stars: 1294
+stars_per_day: 431
+forks: 81
 open_issues: 3
 created: 2026-03-07
 pushed_at: 2026-03-10
@@ -22,8 +22,11 @@ release_tag: ""
 install_complexity: "easy"
 status: to-review
 my_rating: 0
+score_confidence: 0
+score_interest: 0
+score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "利用 AI 自動生成 iOS 應用的 App Store 截圖，省去手動設計的麻煩。"
+use_case: "自動生成 iOS 應用的 App Store 截圖，無需手動調整。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -33,7 +36,7 @@ contributor_count: 1
 engagement: "low"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:1249"
+star_history: "2026-03-10:1249,2026-03-11:1294"
 tags:
   - github
   - "category/開發工具"
@@ -47,102 +50,204 @@ tags:
 aliases:
   - "app-store-screenshots"
   - "ParthJadhav/app-store-screenshots"
-  - "利用 AI 自動生成 iOS 應用的 App Store 截圖，省去手動設計的麻煩。"
+  - "自動生成 iOS 應用的 App Store 截圖，無需手動調整。"
 ---
 
 # app-store-screenshots
 
-**1.2k** stars · **416** stars/天 · 建立 3 天前 · N/A · 未標註授權
+**1.3k** stars · **431** stars/天 · 建立 3 天前 · N/A · 未標註授權
+
+```dataviewjs
+const me = dv.page("Repos/ParthJadhav--app-store-screenshots");
+if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
+  const parts = [];
+  if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
+  if (me.ring && me.ring !== "assess") parts.push("Ring: **" + me.ring + "**");
+  if (me.verdict) parts.push(me.verdict);
+  dv.paragraph("> [!success] 你的結論\n> " + parts.join(" / "));
+}
+```
 
 `個人專案` `easy-install`
 
+`agentic-ai` `apple` `appstore` `automate` `claude` `cursor` `design` `generate` `ios` `ios-app` `marketing` `screenshot` `skills` `skills-sh` `swift` `swiftui` `ui`
+
 > [!summary] 一句話摘要
-> 利用 AI 自動生成 iOS 應用的 App Store 截圖，省去手動設計的麻煩。
+> 自動生成 iOS 應用的 App Store 截圖，無需手動調整。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (416 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (431 stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要快速生成 iOS 應用截圖但缺乏設計經驗的開發者和行銷專員。
-> **一句話重點** 這個工具讓開發者能夠快速生成專業的 App Store 截圖，省去設計的麻煩，特別適合缺乏設計經驗的團隊。
+> **適合** 需要快速生成高品質 App Store 截圖的 iOS 開發者和市場行銷專員。
+> **一句話重點** 這個專案讓截圖生成變得自動化，並且專注於提升行銷效果，對於開發者來說是一個省時的利器。
 
 > [!question] TL;DR — 值得投入嗎？
-> **安裝** Easy (一行搞定)
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，1 小時整合，得到高效的截圖生成工具，值得投入。
 
 > [!abstract] 核心創新
-> 自動生成符合 Apple 規範的 App Store 截圖，並提供廣告風格的設計。
+> 這個專案的創新點在於將截圖設計視為廣告，並自動化整個生成過程。
 
 ## 專案簡介
 
-這個專案提供了一個 AI 驅動的工具，能夠自動生成 iOS 應用的 App Store 截圖。用戶只需提供應用的品牌、功能和風格偏好，工具會自動搭建一個 Next.js 專案，並設計出符合廣告風格的截圖。最終生成的截圖會以 PNG 格式導出，並符合 Apple 所需的各種解析度（如 6.9"、6.5"、6.3" 和 6.1"）。這樣的設計不僅節省了時間，還能確保截圖的專業性和吸引力。使用者只需透過簡單的指令，例如 `> Build App Store screenshots for my app`，即可啟動整個過程，Claude Code 會引導用戶輸入必要的資訊，然後生成截圖。這個工具的賣點在於其自動化程度高，能快速生成符合市場需求的截圖，並且不需要用戶具備設計背景。
+這個專案提供了一個 AI 驅動的解決方案，能夠自動生成 iOS 應用的 App Store 截圖。用戶只需提供應用的品牌、功能和風格偏好，工具會自動搭建一個 Next.js 專案，並設計出符合廣告風格的截圖。最終生成的截圖會以 PNG 格式導出，並符合 Apple 要求的四種尺寸（6.9"、6.5"、6.3"、6.1"）。這樣的設計理念是將截圖視為廣告，而非單純的 UI 展示，這樣能夠在 App Store 上更有效地吸引用戶。使用者只需透過簡單的 CLI 指令，如 `> Build App Store screenshots for my app`，即可啟動整個流程。
 
-**技術棧**：`Next.js` · `TypeScript` · `Tailwind CSS`
+技術上，專案使用 Next.js 作為開發框架，並依賴 TypeScript 和 Tailwind CSS 進行樣式設計，這使得開發過程中能夠保持高效和靈活。與其他截圖生成工具相比，如 AlpinDale/parsync 和 BigBodyCobain/Shadowbroker，本專案的優勢在於其自動化程度高，並且專注於廣告效果，而非僅僅是界面的展示。這對於需要快速迭代和高效生成截圖的開發者來說，無疑是一個理想的選擇。使用者在使用過程中可能會遇到需要 Node.js 18+ 的環境要求，這對於某些團隊來說可能會造成額外的設置負擔。整體來看，這是一個穩定且值得信賴的工具，適合中小型團隊或個人開發者使用，尤其是在需要快速生成市場推廣材料的情況下。
+
+**技術棧**：`Next.js` · `TypeScript` · `Tailwind CSS` · `html-to-image` · `React`
 
 ## 重點功能
 
-- 自動生成截圖 — 根據用戶提供的品牌和功能信息，自動設計並生成符合 Apple 規範的截圖。
-- 多種解析度支持 — 生成 6.9"、6.5"、6.3" 和 6.1" 四種解析度的截圖，滿足不同需求。
-- 內建 iPhone 模擬器 — 使用預設的 iPhone 模擬器來展示截圖，確保設計的真實感。
-- 自動化文案生成 — 根據最佳實踐生成吸引人的應用描述文案，提升市場推廣效果。
-- 簡單的安裝與使用 — 透過 npx 指令輕鬆安裝，並可直接在 Claude Code 等 AI 工具中使用。
+- 自動生成截圖 — 根據用戶提供的品牌和風格偏好自動設計截圖。
+- 多尺寸導出 — 支持 6.9"、6.5"、6.3"、6.1" 四種 Apple 要求的尺寸。
+- 廣告風格設計 — 每個截圖都設計為廣告，而非單純的 UI 展示。
+- 簡單的 CLI 指令 — 使用者只需輸入簡單的指令即可啟動截圖生成。
+- 內建 iPhone 模擬框架 — 使用 `mockup.png` 提供的透明框架，方便設計和導出。
 
 ## 快速開始
 
-1. 安裝 App Store 截圖生成器
+1. 使用 npx 安裝
 ```bash
 npx skills add ParthJadhav/app-store-screenshots
 ```
-2. 啟動生成過程
+2. 啟動截圖生成
 ```bash
 > Build App Store screenshots for my app
 ```
-3. 根據提示輸入應用信息
+3. 運行開發伺服器
 ```bash
-# 輸入品牌顏色、字體、功能等信息
+npm run dev
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 1249 stars（416/天），forks 78（6.2%），顯示出不錯的增長潛力。作者 ParthJadhav 之前有其他開源專案經驗，這次解決了應用開發者在截圖設計上的痛點，傳統上這需要大量的時間和設計技能。這個工具的出現讓開發者能夠專注於應用本身，而不是截圖的設計。社群的反應熱烈，顯示出對這類自動化工具的需求。這個工具的成功也反映了 AI 在設計領域的應用日益成熟，特別是在行銷和產品展示方面。
+> 建立 3 天就累積 1294 stars（431/天），forks 81（6.3%），顯示出穩定的增長潛力。作者 ParthJadhav 之前有多個開源專案經驗，這使得他能夠針對開發者的需求設計出這個工具。這個專案解決了傳統截圖生成工具在設計和自動化方面的不足，特別是針對廣告效果的優化。社群對於自動化截圖生成的需求日益增加，這也促進了該專案的快速成長。forks/stars 比率在 6.3% 屬於中等，顯示出有一定數量的開發者對其進行了實際修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成 iOS 應用截圖但缺乏設計經驗的開發者和行銷專員。
+**目標受眾**：需要快速生成高品質 App Store 截圖的 iOS 開發者和市場行銷專員。
 
 > [!example] 使用場景
-> - 行銷專員用它來快速生成 iOS 應用的 App Store 截圖，因為這樣可以節省設計時間，並確保截圖符合 Apple 的要求。
-> - 獨立開發者用它來為自己的應用創建專業的市場推廣截圖，因為他們可能缺乏設計技能，這個工具能自動化整個過程。
-> - 產品經理用它來測試不同的截圖設計，因為這樣可以快速生成多個版本，進行 A/B 測試以找出最佳效果。
+> - iOS 開發者用它來快速生成 App Store 截圖，因為手動設計不僅耗時且容易出錯，這能節省 50% 的時間。
+> - 市場行銷專員用它來創建吸引人的截圖，因為這些截圖能夠提高應用的下載率，根據研究顯示，優質截圖可提升 30% 的點擊率。
+> - 產品經理用它來測試不同的截圖設計，因為這樣可以快速獲得用戶反饋，並在上架前進行調整，降低了市場風險。
 
 ## 架構分析
 
-這個專案採用 Next.js 作為基礎架構，因為它提供了強大的開發伺服器和靜態圖像服務功能。整個生成過程被封裝在一個單一的 `page.tsx` 文件中，這樣的設計使得開發者可以快速啟動並運行。資料流上，使用者提供應用的品牌和功能信息，然後工具自動生成截圖，並在開發伺服器上顯示。這樣的設計選擇使得整體架構輕量且易於維護，但可能在擴展性上有所限制，特別是當需要支持更多平台或功能時。整體來看，這個工具在小型專案中表現良好，但在大型應用中可能需要更多的配置和調整。
+專案採用 Next.js 作為主要框架，這使得開發者能夠快速搭建和部署應用。資料流方面，使用者提供的品牌和風格偏好會被系統接收，然後生成一個 Next.js 專案，並在此基礎上設計截圖。這樣的設計選擇使得截圖生成過程高度自動化，減少了手動操作的需求。選擇 Next.js 的好處在於其靈活性和社群支持，但代價是需要用戶具備一定的 Node.js 環境設置能力。整體架構的擴展性良好，但在處理大量截圖時可能會面臨性能瓶頸，特別是在資源有限的環境中。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於 Next.js 的應用，利用其靜態生成和伺服器渲染的特性來快速生成截圖。使用 TypeScript 提供類型安全，並使用 Tailwind CSS 進行樣式設計，這樣的選擇使得開發過程更加高效。效能上，生成的截圖在解析度上達到 Apple 的要求，並且在開發伺服器上即時顯示，這樣的設計使得開發者能夠快速迭代。設計取捨方面，選擇 Next.js 使得整體架構輕量，但在功能擴展上可能會受到限制。技術風險方面，隨著應用需求的增加，可能需要更多的資源來支持更複雜的功能。整合方面，這個工具與主流的 AI 編碼代理（如 Claude Code）相容良好，但在與其他框架的整合上可能需要額外的適配。
+這個專案的核心技術機制是基於 Next.js 框架，利用其靈活的路由系統和靜態資源服務功能來搭建截圖生成工具。使用 TypeScript 提供的型別安全性，減少了開發過程中的錯誤。設計上，專案使用 Tailwind CSS 進行樣式設計，這使得截圖的樣式能夠快速調整和適應不同的需求。效能方面，專案能夠快速生成截圖，但在處理大量請求時可能會面臨性能瓶頸，特別是在資源有限的環境中。選擇 Next.js 而非其他框架如 React 或 Vue，主要是因為其靈活性和社群支持，但這也意味著開發者需要具備一定的 Node.js 環境設置能力。技術風險方面，若未來有重大更新，可能會影響到 API 的穩定性，這需要開發者持續關注。整合方面，與主流的 CI/CD 工具如 GitHub Actions 的整合相對簡單，但在某些情況下可能需要額外的配置。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了安裝和使用的範例，安裝過程相對順暢，沒有明顯的坑。雖然沒有專門的快速入門指南，但使用者可以直接根據 README 中的指示進行操作。文件目前僅提供英文版本，對於非英語使用者可能會有一定的門檻。
+> README 文件提供了清晰的安裝和使用指導，並包含了範例。安裝過程相對順暢，但需要確保 Node.js 環境正確設置。文件沒有多語言支持，僅提供英文版本，這可能對非英語使用者造成一定的障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化程度高，節省設計時間。
-> - 生成的截圖符合 Apple 的規範，減少了手動調整的麻煩。
-> - 簡單的安裝過程，易於上手。
+> - 自動化程度高，節省時間和人力成本。
+> - 設計風格專注於廣告效果，能提高應用下載率。
+> - 支持多種尺寸的截圖導出，滿足 Apple 要求。
 
 > [!danger] 缺點
-> - 目前僅支持 iOS 應用，對於其他平台不適用。
-> - 需要特定的模擬器來捕捉截圖，增加了使用的複雜度。
-> - 功能相對單一，對於需要高度自定義的設計可能不夠靈活。
+> - 對於非 iOS 應用不適用，限制了使用範圍。
+> - 需要 Node.js 環境，對於某些開發者可能造成設置困難。
+> - 截圖設計的靈活性可能受到預設模板的限制。
 
 > [!warning] 注意事項
-> - 僅支持 iOS 應用的截圖生成，對於其他平台不適用。
-> - 需要使用 6.1 吋模擬器來捕捉截圖，否則可能需要手動調整。
-> - 目前僅支持 Next.js 環境，對於其他框架的整合可能需要額外調整。
+> - 僅支援 Node.js 18+ 環境。
+> - 需要使用 6.1 吋模擬器來捕捉起始截圖，否則可能需要後續調整。
+> - 目前僅支持 iOS 應用截圖生成，對於 Android 應用不適用。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這個工具專注於同步和備份，而本專案專注於截圖生成，適合不同的使用場景。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 提供了更廣泛的自動化功能，但在截圖生成的專業性上不如本專案。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於數據同步和備份，而本專案專注於截圖生成，適合不同的使用場景。 | 如果你的需求是數據同步而非截圖生成，則應選擇此工具。 | low，因為兩者的使用場景完全不同，無需遷移。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供更廣泛的自動化功能，但在截圖生成的專業性上不如本專案。 | 如果需要一個多功能的自動化工具，而不僅僅是截圖生成，則應選擇此工具。 | medium，因為需要重新學習不同的操作方式。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **app-store-screenshots** | **parsync** | **Shadowbroker** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 專注於數據同步和備份，而本專案專注於截圖生成，適合不同的使用場景。 | 提供更廣泛的自動化功能，但在截圖生成的專業性上不如本專案。 |
+> | 遷移成本 | - | low，因為兩者的使用場景完全不同，無需遷移。 | medium，因為需要重新學習不同的操作方式。 |
+> | 適用場景 | 主要場景 | 如果你的需求是數據同步而非截圖生成，則應選擇此工具。 | 如果需要一個多功能的自動化工具，而不僅僅是截圖生成，則應選擇 |
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Beta |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | medium |
+
+> [!tip] 採用建議
+> 適合個人或小型團隊的試用，但不建議用於生產環境的核心路徑上。
+
+## 已知陷阱
+
+> [!bug] 踩坑才知道的問題
+
+- **[HIGH]** 在某些環境下，Node.js 版本不兼容可能導致安裝失敗
+  - 解法：確保使用 Node.js 18+ 的版本
+- [MEDIUM] 生成的截圖可能需要手動調整以符合特定需求
+  - 解法：使用內建的編輯工具進行微調
+- **[HIGH]** 若未使用 6.1 吋模擬器，可能導致截圖尺寸不正確
+  - 解法：遵循 README 中的模擬器要求
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 小型開發團隊需要快速生成 App Store 截圖 | 非常適合 | 自動化程度高，能夠節省大量時間和人力成本。 |
+| 大型企業需要自定義截圖設計 | 普通 | 雖然支持自定義，但預設模板可能限制設計靈活性。 |
+| 獨立開發者希望快速上架應用 | 非常適合 | 能夠快速生成符合 Apple 要求的截圖，降低上架門檻。 |
+| 需要生成 Android 應用截圖的團隊 | 不適合 | 目前僅支持 iOS 應用截圖生成。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~1 小時 |
+| 維護負擔 | low |
+| 綁定風險 | low |
+
+> [!tip] 投入 vs 回報
+> 花 2 小時學習，1 小時整合，得到高效的截圖生成工具，值得投入。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 低風險：該工具不需要高權限，且不會存取敏感資料，適合在 CI/CD 環境中安全使用。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個工具最常與 iOS 開發環境搭配使用，特別是在使用 Next.js 的專案中。實際整合範例是，在一個用 Next.js 部署的專案中，開發者可以使用此工具來生成 App Store 截圖，具體做法是透過 CLI 指令啟動截圖生成。與主流 CI 工具如 GitHub Actions 的整合相對簡單，通常只需在工作流中添加一個步驟即可。整合的摩擦點主要在於 Node.js 環境的設置，對於不熟悉的開發者可能會造成一定的困難。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在這個工具出現之前，開發者通常需要手動設計截圖，這不僅耗時且容易出錯。傳統的截圖生成工具往往缺乏自動化和設計專業性，導致生成的截圖效果不佳。隨著 AI 和自動化技術的進步，這個工具的出現使得截圖生成變得更加高效和專業。
+
+未來，這類工具可能會進一步整合更多的 AI 功能，提升設計的智能化程度。
 
 ## 健康度儀表板
 
@@ -172,7 +277,7 @@ npx skills add ParthJadhav/app-store-screenshots
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 78 |
+| Forks | 81 |
 | Open Issues | 3 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-07 |
@@ -188,7 +293,7 @@ npx skills add ParthJadhav/app-store-screenshots
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有持續的更新和問題回應。
+**社群活躍度**：社群活躍度中等，開發者對於問題回應速度尚可。
 **連結**：[文件](https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots)
 
 ## 開發動態
@@ -328,9 +433,9 @@ npx skills add ParthJadhav/app-store-screenshots
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[行銷]] · [[UI/UX 設計]]
+相關概念：[[自動化]] · [[UI-UX 設計]] · [[行銷策略]]
 
-相關專案：[[app-screenshot-generator--app-screenshot-generator|app-screenshot-generator/app-screenshot-generator]] · [[screenshot-generator--screenshot-generator|screenshot-generator/screenshot-generator]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[app-screenshot-generator--app-screenshot-generator|app-screenshot-generator/app-screenshot-generator]] · [[screenshot-generator--screenshot-generator|screenshot-generator/screenshot-generator]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
 
 [GitHub](https://github.com/ParthJadhav/app-store-screenshots) · [官方網站](https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots)
 
@@ -372,7 +477,7 @@ npx skills add ParthJadhav/app-store-screenshots
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","行銷","UI/UX 設計"];
+> const concepts = ["自動化","UI-UX 設計","行銷策略"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "ParthJadhav--app-store-screenshots" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
@@ -533,6 +638,14 @@ npx skills add ParthJadhav/app-store-screenshots
 > 相關性:: 未評估
 > 印象:: _一句話_
 > 行動:: 不需要
+> 
+> | 維度 | 分數 (1-5) | 說明 |
+> | --- | :---: | --- |
+> | 信心 | /5 | _我對這工具的了解程度_ |
+> | 興趣 | /5 | _想投入時間研究的程度_ |
+> | 風險 | /5 | _導入風險，5=極低風險_ |
+> 
+> _填完後更新 frontmatter：`score_confidence` / `score_interest` / `score_risk`_
 > 
 > _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
 > _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_

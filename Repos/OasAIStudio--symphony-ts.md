@@ -22,6 +22,9 @@ release_tag: "v0.1.7"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
+score_confidence: 0
+score_interest: 0
+score_risk: 0
 last_reviewed: 2026-03-10
 use_case: "將專案工作轉化為獨立的自動化實作運行，讓開發者專注於結果而非監控過程。"
 priority: medium
@@ -49,6 +52,17 @@ aliases:
 # symphony-ts
 
 **420** stars · **105** stars/天 · 建立 4 天前 · TypeScript · Apache-2.0
+
+```dataviewjs
+const me = dv.page("Repos/OasAIStudio--symphony-ts");
+if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
+  const parts = [];
+  if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
+  if (me.ring && me.ring !== "assess") parts.push("Ring: **" + me.ring + "**");
+  if (me.verdict) parts.push(me.verdict);
+  dv.paragraph("> [!success] 你的結論\n> " + parts.join(" / "));
+}
+```
 
 `ORG` `v0.1.7` `easy-install`
 

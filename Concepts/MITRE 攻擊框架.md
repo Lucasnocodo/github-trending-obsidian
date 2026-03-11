@@ -1,0 +1,156 @@
+---
+tags:
+  - concept
+aliases:
+  - "MITRE 攻擊框架"
+---
+
+# MITRE 攻擊框架
+
+## 是什麼
+
+MITRE 攻擊框架是一個用來描述網路攻擊的模型，幫助安全專家了解攻擊者的行為。這對於提升企業的防禦能力和制定應對策略非常重要。
+
+## 快速統計
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.file.outlinks?.some(l => l.path === dv.current().file.path);
+});
+const total = pages.length;
+const cats = {};
+const langs = {};
+for (const p of pages) {
+  const c = p.category || "其他";
+  cats[c] = (cats[c] || 0) + 1;
+  const l = p.language || "Other";
+  langs[l] = (langs[l] || 0) + 1;
+}
+const topCat = Object.entries(cats).sort((a,b) => b[1]-a[1])[0];
+const topLang = Object.entries(langs).sort((a,b) => b[1]-a[1])[0];
+const avgStars = total > 0 ? Math.round(pages.array().reduce((s,p) => s + (p.stars||0), 0) / total) : 0;
+dv.paragraph(`**${total}** 個相關專案 · 平均 ${avgStars.toLocaleString()} stars`);
+if (topCat) dv.paragraph(`主要分類：**${topCat[0]}**（${topCat[1]} 個）· 主要語言：**${topLang?.[0] || 'N/A'}**（${topLang?.[1] || 0} 個）`);
+```
+
+## 核心問題
+
+- [ ] 這個技術解決的根本問題是什麼？
+- [ ] 目前最成熟的實作方案是？
+- [ ] 什麼情況下不該用這個技術？
+
+## 相關專案
+
+```dataview
+TABLE
+  stars AS "Stars",
+  stars_per_day AS "Stars/天",
+  install_complexity AS "難度",
+  status AS "狀態",
+  use_case AS "用途"
+FROM "Repos"
+WHERE contains(file.outlinks, this.file.link)
+SORT stars DESC
+```
+
+## 相關概念
+
+```dataviewjs
+const thisLinks = dv.current().file.inlinks;
+const related = new Set();
+for (const link of thisLinks) {
+  const page = dv.page(link.path);
+  if (!page || !page.file?.outlinks) continue;
+  for (const out of page.file.outlinks) {
+    const target = dv.page(out.path);
+    if (target?.tags?.includes("concept") && target.file.path !== dv.current().file.path) {
+      related.add(target.file.link);
+    }
+  }
+}
+if (related.size > 0) {
+  dv.list([...related]);
+} else {
+  dv.paragraph("_暫無相關概念_");
+}
+```
+
+## 週趨勢
+
+> [!abstract] 這個概念在不同週次的出現頻率
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.file.outlinks?.some(l => l.path === dv.current().file.path);
+});
+const weekCount = {};
+for (const p of pages) {
+  const w = p.week || "unknown";
+  weekCount[w] = (weekCount[w] || 0) + 1;
+}
+const sorted = Object.entries(weekCount).sort((a, b) => b[0].localeCompare(a[0]));
+if (sorted.length > 0) {
+  dv.table(["週次", "出現次數", "視覺化"], sorted.map(([w, c]) => {
+    return [w, c, "█".repeat(c) + "░".repeat(Math.max(0, 5 - c))];
+  }));
+} else {
+  dv.paragraph("_尚無時間趨勢資料_");
+}
+```
+
+## 分類交叉
+
+> [!abstract] 哪些分類引用了這個概念
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.file.outlinks?.some(l => l.path === dv.current().file.path);
+});
+const catMap = {};
+for (const p of pages) {
+  const c = p.category || "其他";
+  if (!catMap[c]) catMap[c] = [];
+  catMap[c].push(p);
+}
+const sorted = Object.entries(catMap).sort((a, b) => b[1].length - a[1].length);
+if (sorted.length > 0) {
+  dv.table(
+    ["分類", "數量", "代表專案"],
+    sorted.map(([cat, repos]) => {
+      repos.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0));
+      return [cat, repos.length, repos.slice(0, 2).map(r => r.file.link).join(", ")];
+    })
+  );
+}
+```
+
+## 精選推薦
+
+> [!tip] 引用此概念的最佳評分專案
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.my_rating > 0 && p.file.outlinks?.some(l => l.path === dv.current().file.path);
+}).sort(p => p.my_rating, "desc").limit(5);
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "評分", "Stars", "用途"],
+    pages.map(p => [
+      p.file.link,
+      "★".repeat(p.my_rating) + "☆".repeat(5 - p.my_rating),
+      p.stars,
+      (p.use_case || "").slice(0, 40)
+    ])
+  );
+} else {
+  dv.paragraph("_尚無已評分的相關專案。試用並評分後會出現在這裡。_");
+}
+```
+
+## 學習資源
+
+_關鍵文章、教學、論文..._
+
+## 我的理解
+
+_自己的話重新解釋，寫下使用心得和判斷_
