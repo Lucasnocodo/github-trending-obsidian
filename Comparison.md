@@ -164,6 +164,83 @@ dv.table(
 );
 ```
 
+## 語言 vs 分類 熱力圖
+
+> [!abstract] 哪些語言在哪些分類最常出現
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const matrix = {};
+const allCats = new Set();
+const allLangs = new Set();
+for (const p of pages) {
+  const lang = p.language || "Other";
+  const cat = p.category || "其他";
+  allLangs.add(lang);
+  allCats.add(cat);
+  const key = `${lang}|${cat}`;
+  matrix[key] = (matrix[key] || 0) + 1;
+}
+const topLangs = [...allLangs].sort((a, b) => {
+  const cA = pages.where(p => (p.language || "Other") === a).length;
+  const cB = pages.where(p => (p.language || "Other") === b).length;
+  return cB - cA;
+}).slice(0, 8);
+const topCats = [...allCats].sort((a, b) => {
+  const cA = pages.where(p => (p.category || "其他") === a).length;
+  const cB = pages.where(p => (p.category || "其他") === b).length;
+  return cB - cA;
+}).slice(0, 8);
+if (topLangs.length > 1 && topCats.length > 1) {
+  dv.table(
+    ["語言 \\ 分類", ...topCats],
+    topLangs.map(lang => [
+      `**${lang}**`,
+      ...topCats.map(cat => {
+        const c = matrix[`${lang}|${cat}`] || 0;
+        return c > 0 ? c : "";
+      })
+    ])
+  );
+}
+```
+
+## 成熟度分佈
+
+> [!abstract] 專案的開發階段分佈
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const stages = {};
+for (const p of pages) {
+  // 從 pushed_at 推斷活躍度
+  const pushedAt = p.pushed_at ? new Date(p.pushed_at.toString()) : null;
+  const daysSincePush = pushedAt ? Math.floor((Date.now() - pushedAt.getTime()) / 86400000) : null;
+  const created = p.created ? new Date(p.created.toString()) : null;
+  const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : null;
+
+  let stage;
+  if (age !== null && age <= 7) stage = "Brand New (<1w)";
+  else if (age !== null && age <= 30) stage = "Early (<1m)";
+  else if (age !== null && age <= 180) stage = "Growing (1-6m)";
+  else stage = "Established (6m+)";
+
+  if (!stages[stage]) stages[stage] = [];
+  stages[stage].push(p);
+}
+
+const order = ["Brand New (<1w)", "Early (<1m)", "Growing (1-6m)", "Established (6m+)"];
+dv.table(
+  ["階段", "數量", "代表專案"],
+  order
+    .filter(s => stages[s]?.length > 0)
+    .map(s => {
+      const repos = stages[s].sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0));
+      return [s, repos.length, repos.slice(0, 3).map(r => r.file.link).join(", ")];
+    })
+);
+```
+
 ---
 
 > [!info] 使用方式
