@@ -137,7 +137,7 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
    - 第 7-8 句：實際使用的效果和限制（效能數據、支援範圍、需要什麼硬體）
    - 第 9-10 句：你的觀點——成熟度（alpha/beta/stable）、值不值得現在就用、適合什麼規模的團隊
    - 第 11-12 句：給讀者的建議——什麼情況下該用、什麼情況下不該用
-4. "why_trending": 3-4 句具體分析。包含：作者背景、切中什麼需求、觸發事件、為什麼現在爆紅而不是更早
+4. "why_trending": 3-4 句具體分析。禁止寫「隨著 XX 的發展/流行」這種廢話。要回答：(a) 作者是誰、過去做過什麼知名專案？(b) 這個工具解決了什麼「之前沒有好方案」的痛點？(c) 有沒有觸發事件（某篇 tweet、HN 討論、相關新聞）？如果 README 或 topics 有線索就提。(d) 為什麼是「現在」而不是半年前？技術生態有什麼變化讓這個工具變得可行？如果真的無法判斷，就直說「爆紅原因不明確，可能是自然擴散」
 5. "use_cases": 陣列，3 個場景。格式：「[具體角色] 用它來 [具體動作+預期結果]，因為 [具體好處，要有數據或對比]」。例子：「後端工程師用它來在 CI 中自動檢測 API breaking changes，因為手動 diff OpenAPI spec 容易漏掉 nested field 的變動」
 6. "target_audience": 一句話，越具體越好。不要寫「開發者」，要寫「需要在 M1 Mac 上跑 LLM 推論但不想裝 Docker 的獨立開發者」
 7. "category": AI/ML、開發工具、Web 應用、CLI 工具、資料科學、安全、教學資源、基礎設施、其他（選一個）
@@ -202,9 +202,12 @@ async function waitForCooldown(context = '') {
   }
 }
 
-async function callLLMBatch(repos, token) {
+async function callLLMBatch(repos, token, vaultRepoNames = null) {
   await waitForCooldown();
-  const prompt = buildRepoPrompt(repos);
+  let prompt = buildRepoPrompt(repos);
+  if (vaultRepoNames?.length) {
+    prompt += `\n\n---\n\n[系統補充] 我們的 vault 中已收錄以下 repo（similar_tools 優先使用這些名稱）：${vaultRepoNames.slice(0, 60).join(', ')}`;
+  }
   const res = await fetch(LLM_API, {
     method: 'POST',
     headers: {
@@ -250,7 +253,7 @@ async function callLLMBatch(repos, token) {
   }
 }
 
-async function callLLM(repos, token) {
+async function callLLM(repos, token, vaultRepoNames = null) {
   const BATCH_SIZE = 2;  // 每個 repo 產生更多內容，減小批次以避免 token 上限
   const results = [];
   let consecutiveFailures = 0;
@@ -267,7 +270,7 @@ async function callLLM(repos, token) {
         await waitForCooldown('LLM retry: ');
       }
       try {
-        const batchResult = await callLLMBatch(batch, token);
+        const batchResult = await callLLMBatch(batch, token, vaultRepoNames);
         results.push(...batchResult);
         success = true;
         consecutiveFailures = 0;
@@ -382,7 +385,7 @@ async function fileExists(path) {
 
 // ── 個別 Repo Note 產生 ────────────────────────────────────
 
-function generateRepoNote(repo, llmInfo, today) {
+function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   const days = daysAgo(repo.created_at);
   const rate = starsPerDay(repo.stargazers_count, repo.created_at);
   const langPct = langPercents(repo._languages || {});
@@ -481,8 +484,17 @@ function generateRepoNote(repo, llmInfo, today) {
     const installIcon = installLabel === 'easy' ? 'Easy' : installLabel === 'medium' ? 'Medium' : 'Hard';
     const ageLabel = days <= 7 ? 'Brand New' : days <= 30 ? 'Recent' : days <= 90 ? 'Growing' : 'Established';
     const momentumLabel = rate >= 1000 ? 'Viral' : rate >= 100 ? 'Hot' : rate >= 10 ? 'Growing' : 'Steady';
+    // 授權解讀
+    const licenseId = repo.license?.spdx_id || '';
+    const permissive = ['MIT', 'Apache-2.0', 'BSD-2-Clause', 'BSD-3-Clause', 'ISC', 'Unlicense', '0BSD'];
+    const copyleft = ['GPL-2.0', 'GPL-3.0', 'AGPL-3.0', 'LGPL-2.1', 'LGPL-3.0', 'MPL-2.0'];
+    const licenseLabel = permissive.includes(licenseId) ? `${licenseId} (商業友好)`
+      : copyleft.includes(licenseId) ? `${licenseId} (Copyleft，商用需注意)`
+      : licenseId && licenseId !== 'N/A' ? licenseId
+      : '未標註授權 (風險較高)';
     lines.push('> [!info] 速覽');
     lines.push(`> **安裝難度** ${installIcon} · **專案狀態** ${ageLabel} · **熱度** ${momentumLabel} (${fmt(rate)} stars/day)`);
+    lines.push(`> **授權** ${licenseLabel}`);
     if (llmInfo?.target_audience) {
       lines.push(`> **適合** ${llmInfo.target_audience}`);
     }
@@ -729,10 +741,15 @@ function generateRepoNote(repo, llmInfo, today) {
     lines.push(`相關概念：${llmInfo.related_concepts.map((c) => `[[${c}]]`).join(' · ')}`);
     lines.push('');
   }
-  // 跨 repo wikilinks：連結到 similar_tools 中存在於 vault 的 repo
+  // 跨 repo wikilinks：只連結 vault 內已存在的 repo（避免 ghost links）
   if (llmInfo?.similar_tools?.length) {
     const repoLinks = llmInfo.similar_tools
       .filter(t => typeof t === 'object' && t.name?.includes('/'))
+      .filter(t => {
+        if (!existingRepos) return true; // 沒有清單時不過濾（向下相容）
+        const fileName = t.name.replace(/\//g, '--');
+        return existingRepos.has(fileName);
+      })
       .map(t => `[[${t.name.replace(/\//g, '--')}|${t.name}]]`);
     if (repoLinks.length) {
       lines.push(`相關專案：${repoLinks.join(' · ')}`);
@@ -2096,6 +2113,7 @@ async function main() {
 
   if (newRepos.length === 0) {
     console.log('No new trending repos today.');
+    await autoCrossLink();
     return;
   }
   console.log(`${newRepos.length} repos to process`);
@@ -2106,9 +2124,11 @@ async function main() {
     newRepos.map((r) => fetchRepoDetails(r, token))
   );
 
-  // 4. LLM 翻譯 + 摘要
+  // 4. LLM 翻譯 + 摘要（傳入 vault 已有 repo 清單讓 LLM 優先引用）
   console.log('Generating Chinese content with LLM...');
-  const llmData = await callLLM(detailedRepos, token);
+  const preExisting = await import('fs/promises').then(m => m.readdir(REPOS_DIR).catch(() => []));
+  const vaultRepoNames = preExisting.filter(f => f.endsWith('.md')).map(f => f.replace('.md', '').replace(/--/g, '/'));
+  const llmData = await callLLM(detailedRepos, token, vaultRepoNames);
   console.log(llmData ? `LLM done (${llmData.length} items)` : 'LLM unavailable, using fallback');
 
   // 建立 LLM 資料查詢表（支援模糊匹配：大小寫、多餘空格等）
@@ -2146,6 +2166,11 @@ async function main() {
   let newNoteCount = 0;
   let updatedNoteCount = 0;
 
+  // 建立 vault 內已存在的 repo 清單（用於過濾 ghost wikilinks）
+  const { readdir } = await import('fs/promises');
+  const existingFiles = await readdir(REPOS_DIR).catch(() => []);
+  const existingRepos = new Set(existingFiles.filter(f => f.endsWith('.md')).map(f => f.replace('.md', '')));
+
   for (const repo of detailedRepos) {
     const fileName = repoFileName(repo.full_name);
     const filePath = join(REPOS_DIR, fileName);
@@ -2178,10 +2203,11 @@ async function main() {
       continue;
     }
 
-    const note = generateRepoNote(repo, getLLMInfo(repo.full_name), today);
+    const note = generateRepoNote(repo, getLLMInfo(repo.full_name), today, existingRepos);
     await writeFile(filePath, note, 'utf-8');
     console.log(`  Created: Repos/${fileName}`);
     newNoteCount++;
+    existingRepos.add(fileName.replace('.md', '')); // 新建的 repo 也加入清單
   }
 
   // 6. 產生 Daily Digest
@@ -2321,7 +2347,8 @@ function needsRefresh(content) {
          !content.includes('同週收錄') ||    // v4: 同週收錄 Dataview
          !content.includes('use_case:') ||   // v5: triage 欄位
          !content.includes('priority:') ||   // v5: 優先級
-         !content.includes('subcategory:');  // v6: 子分類
+         !content.includes('subcategory:') || // v6: 子分類
+         !content.includes('**授權**');       // v7: 速覽授權顯示
 }
 
 function hasLLMContent(content) {
@@ -2440,6 +2467,9 @@ async function refreshRepos(token, failedOnly = false) {
     // LLM 翻譯：逐個處理（refresh 需要完整 20 欄位，批次容易被 token 截斷）
     console.log(`  Running LLM for ${repos.length} repos (one by one)...`);
     const llmMap = {};
+    // vault repo 清單供 LLM 參考
+    const refreshVaultNames = (await import('fs/promises').then(m => m.readdir(REPOS_DIR).catch(() => [])))
+      .filter(f => f.endsWith('.md')).map(f => f.replace('.md', '').replace(/--/g, '/'));
 
     for (const item of repos) {
       const key = item.repo.full_name;
@@ -2455,7 +2485,7 @@ async function refreshRepos(token, failedOnly = false) {
             repoClone._readme = repoClone._readme.slice(0, truncLen);
             console.log(`  Truncating README to ${truncLen} chars for retry...`);
           }
-          const result = await callLLMBatch([repoClone], token);
+          const result = await callLLMBatch([repoClone], token, refreshVaultNames);
           if (result?.[0]) {
             const r = result[0];
             llmMap[r.repo] = r;
@@ -2474,6 +2504,11 @@ async function refreshRepos(token, failedOnly = false) {
     }
 
     const today = new Date().toISOString().split('T')[0];
+
+    // 建立 vault 內已存在的 repo 清單（用於過濾 ghost wikilinks）
+    const { readdir: readdirRefresh } = await import('fs/promises');
+    const existingFilesRefresh = await readdirRefresh(REPOS_DIR).catch(() => []);
+    const existingReposRefresh = new Set(existingFilesRefresh.filter(f => f.endsWith('.md')).map(f => f.replace('.md', '')));
 
     // 重新產生筆記
     for (const item of repos) {
@@ -2509,7 +2544,7 @@ async function refreshRepos(token, failedOnly = false) {
         ? (oldRelatedMatch[1].match(/\[\[[^\]]+\]\]/g) || [])
         : [];
 
-      const newNote = generateRepoNote(item.repo, llmInfo, firstSeen);
+      const newNote = generateRepoNote(item.repo, llmInfo, firstSeen, existingReposRefresh);
 
       // 合併舊的手動 wikilinks 到新筆記的延伸閱讀（去重）
       let mergedNote = newNote;
