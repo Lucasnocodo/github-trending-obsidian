@@ -75,6 +75,30 @@ if (related.size > 0) {
 }
 ```
 
+
+## 週趨勢
+
+> [!abstract] 這個概念在不同週次的出現頻率
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.file.outlinks?.some(l => l.path === dv.current().file.path);
+});
+const weekCount = {};
+for (const p of pages) {
+  const w = p.week || "unknown";
+  weekCount[w] = (weekCount[w] || 0) + 1;
+}
+const sorted = Object.entries(weekCount).sort((a, b) => b[0].localeCompare(a[0]));
+if (sorted.length > 0) {
+  dv.table(["週次", "出現次數", "視覺化"], sorted.map(([w, c]) => {
+    return [w, c, "█".repeat(c) + "░".repeat(Math.max(0, 5 - c))];
+  }));
+} else {
+  dv.paragraph("_尚無時間趨勢資料_");
+}
+```
+
 ## 學習資源
 
 _關鍵文章、教學、論文..._
