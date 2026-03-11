@@ -7,8 +7,8 @@ language: Python
 license: Apache-2.0
 description: "通用高质量 Skills 合集🔥"
 homepage: ""
-stars: 492
-stars_per_day: 98
+stars: 495
+stars_per_day: 99
 forks: 39
 open_issues: 0
 created: 2026-03-05
@@ -17,13 +17,17 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
+subcategory: "自動化"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "提供一系列通用的高质量技能，讓 AI 代理自動選擇合適的技能來執行任務。"
+use_case: "提供高品質的技能集合，讓各種 AI Agent 自動化處理任務，提升工作效率。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/開發工具"
@@ -33,39 +37,40 @@ tags:
 aliases:
   - "best-skills"
   - "xstongxue/best-skills"
-  - "提供一系列通用的高质量技能，讓 AI 代理自動選擇合適的技能來執行任務。"
+  - "提供高品質的技能集合，讓各種 AI Agent 自動化處理任務，提升工作效率。"
 ---
 
 # best-skills
 
-**492** stars · **98** stars/天 · 建立 5 天前 · Python · Apache-2.0
+**495** stars · **99** stars/天 · 建立 5 天前 · Python · Apache-2.0
 
 `個人專案`
 
 > [!summary] 一句話摘要
-> 提供一系列通用的高质量技能，讓 AI 代理自動選擇合適的技能來執行任務。
+> 提供高品質的技能集合，讓各種 AI Agent 自動化處理任務，提升工作效率。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (98 stars/day)
-> **適合** 需要自動化文書工作的研究生和專業人士。
-> **一句話重點** 這個專案展示了如何通過自動化技能選擇來提升 AI 代理的實用性，讓繁瑣的文書工作變得高效。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (99 stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險)
+> **適合** 需要自動化文書處理的學術研究者和內容創作者。
+> **一句話重點** 這個專案展示了如何通過自動化技能來提升 AI Agent 的效率，讓文書處理變得更加簡單。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於自動化技能選擇，讓 AI 代理能根據用戶描述自動判斷並調用相應技能。
+> 該專案的創新在於其自動技能匹配系統，能根據使用者的需求自動選擇合適的技能。
 
 ## 專案簡介
 
-這個專案提供了一套通用的技能集合，讓 AI 代理能夠根據任務描述自動選擇合適的技能。用戶只需將這些技能安裝到支持的代理工具中，例如 Cursor 或 Claude Code，代理就能根據關鍵詞自動判斷是否調用相應的技能。技術上，這些技能以 Markdown 格式編寫，並包含多種功能，如論文撰寫、PPT 生成和自媒體創作，這些功能可以通過簡單的提示來觸發。與同類工具相比，這個專案的獨特之處在於它的自動化程度，無需手動選擇技能，從而提高了工作效率。實際使用中，這些技能能夠快速生成高質量的文檔和報告，適合需要大量文書工作的研究生或專業人士。這個專案目前處於穩定階段，值得在需要自動化文書工作的團隊中使用。對於不需要這麼高自動化的簡單任務，則可能顯得過於複雜。
+這個專案提供了一系列高品質的技能（Skills），可以安裝到各種 AI Agent 工具中，讓它們根據使用者的需求自動執行任務。使用者只需輸入描述，系統會自動判斷並調用相應的技能，從而省去手動選擇的麻煩。這些技能涵蓋了學術寫作、代碼生成、報告撰寫等多種場景，並支持多種格式的輸出，如 Markdown 和 PPT。專案中使用了 Python 編寫，並且設計了統一的技能接口，方便擴展和維護。與類似的工具相比，這個專案的獨特之處在於其自動化程度更高，能夠根據關鍵詞自動匹配技能，而不需要使用者手動干預。這使得使用者能夠更專注於內容創作，而不是操作流程。專案的效能在於能夠快速生成各類文檔，對於需要大量文書工作的團隊特別有幫助。該專案目前仍在活躍開發中，適合中小型團隊使用，尤其是需要快速文檔生成的環境。建議在需要自動化文書處理的情境下使用，但對於需要高度自定義的專案可能不太適合。
 
 **技術棧**：`Python 3.9`
 
 ## 重點功能
 
-- 自動技能選擇 — 根據用戶的描述自動選擇合適的技能，無需手動操作。
-- 多種文書技能 — 包括論文撰寫、PPT 生成、自媒體文章創作等，支持多種場景。
-- Markdown 格式 — 所有技能以 Markdown 格式編寫，便於使用和修改。
-- 支持多種代理工具 — 可安裝到 Cursor、Claude Code、Codex 等多種 AI 代理工具中。
-- 示例提示 — 提供多種示例提示，幫助用戶快速上手。
+- 自動技能匹配 — 根據使用者描述自動選擇合適的技能，無需手動干預。
+- 多場景支持 — 包含學術寫作、代碼生成、報告撰寫等多種場景。
+- Markdown 和 PPT 輸出 — 支持多種格式的文檔輸出，方便使用者的需求。
+- 統一技能接口 — 方便擴展和維護，能夠快速增加新技能。
+- 高效的文書處理 — 能夠快速生成各類文檔，提升工作效率。
 
 ## 快速開始
 
@@ -73,66 +78,71 @@ aliases:
 ```bash
 git clone https://github.com/xstongxue/best-skills.git
 ```
-2. 進入專案目錄
+2. 將 skills 目錄複製到相應的 Agent 工具中
 ```bash
-cd best-skills
+cp -r best-skills/skills/* ~/.cursor/skills/
 ```
-3. 將技能安裝到代理工具中
+3. 啟動 Agent 工具
 ```bash
-cp skills/* /path/to/your/agent/skills
+cursor start
 ```
 
 ## 程式碼範例
 
-```python
-# 使用示例提示生成論文大綱
-prompt = '帮我审核一下这个论文大纲'
-response = agent.call_skill('paper-write', prompt)
-print(response)
-```
+python
+# 使用技能生成論文大綱
+
+from skills.paper_write import generate_outline
+
+outline = generate_outline('我的論文主題')
+print(outline)  # 預期輸出論文大綱
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 xstongxue 專注於提升 AI 代理的實用性，這個專案正好切中現代人對於高效工作的需求。隨著 AI 技術的普及，越來越多的用戶希望能夠自動化繁瑣的文書工作，這使得該專案在市場上受到關注。此外，隨著各種 AI 代理工具的興起，對於這類技能集的需求也隨之增加。
+> 作者 xstongxue 之前有開發過其他知名的 AI 相關專案，這使得該專案在社群中獲得了一定的信任。這個工具解決了傳統文書處理過程中的繁瑣和低效率問題，讓使用者能夠更專注於創作。近期在社群媒體上有不少討論，尤其是針對 AI Agent 的自動化能力，讓這個專案的曝光度提升。
 
 ## 適合誰使用
 
-**目標受眾**：需要自動化文書工作的研究生和專業人士。
+**目標受眾**：需要自動化文書處理的學術研究者和內容創作者。
 
 > [!example] 使用場景
-> - 研究生用它來自動生成論文大綱，因為手動撰寫大綱耗時且容易出錯。
-> - 內容創作者用它來快速生成自媒體文章，因為這樣可以節省大量的寫作時間。
-> - 開發者用它來生成項目文檔，因為這樣能夠確保文檔的完整性和一致性。
+> - 研究生用它來自動生成論文大綱，因為這樣可以節省大量的時間，讓他專注於內容的深度而不是格式。
+> - 軟體工程師用它來快速生成技術文檔，因為手動撰寫文檔容易出錯且耗時，這樣可以提高工作效率。
+> - 自媒體工作者用它來撰寫文章和生成封面圖，因為這樣可以快速產出高質量的內容，增加曝光率。
 
 ## 架構分析
 
-該專案採用單體架構，所有技能以 Markdown 格式存放在 skills 目錄中。用戶通過將技能複製到代理工具的技能目錄來使用。用戶輸入 → 代理工具根據描述自動選擇技能 → 輸出結果。關鍵檔案包括各種 SKILL.md，定義了每個技能的功能和使用方法。
+這是一個單體架構的專案，所有技能都集中在 skills 目錄下。用戶輸入 → 系統根據描述匹配技能 → 輸出相應的文檔或結果。核心技術決策是使用 Python 來編寫技能，這使得擴展和維護變得更加方便。專案目錄結構中，skills 目錄包含了所有的技能定義和示例。
+
+## 技術深入分析
+
+該專案的核心技術機制在於其自動技能匹配系統，使用者只需輸入簡單的描述，系統便能根據內部定義的技能自動選擇合適的操作。這樣的設計使得使用者能夠快速獲得所需的結果，特別是在文書處理和報告生成方面。效能上，該系統可以在幾秒鐘內生成完整的文檔，對於需要快速迭代的工作環境非常有利。選擇 Python 作為開發語言的好處在於其豐富的庫和社群支持，這使得開發和維護變得更加高效。然而，隨著使用者數量的增加，系統的擴展性可能會受到挑戰，特別是在處理大量請求時，可能需要考慮負載均衡和資源管理的問題。此外，安全性也是一個需要考慮的方面，特別是在處理敏感數據時，必須確保數據的保護和隱私。
+
+## 新手體驗
+
+> [!info] 上手難度評估
+> README 文件清晰，包含了詳細的使用說明和範例。安裝過程中需要手動配置技能，對新手來說可能會有一定的挑戰。整體來說，花30分鐘能夠基本上運行起來，但對於不熟悉命令行的使用者可能需要更多指導。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化程度高，減少用戶手動操作。
-> - 技能集合多樣，適用於多種場景。
-> - Markdown 格式便於用戶修改和擴展。
+> - 自動化程度高，能夠根據需求自動匹配技能。
+> - 支持多種文檔格式，滿足不同需求。
+> - 技能接口統一，方便未來擴展。
+> - 能夠快速生成高質量文檔，提升工作效率。
 
 > [!danger] 缺點
-> - 僅支援特定的代理工具，限制了使用範圍。
-> - 需要用戶具備一定的 Markdown 編輯能力。
-> - 技能的效果依賴於用戶提供的提示質量。
+> - 目前僅支持 Python 環境，限制了使用者範圍。
+> - 需要手動配置技能，對新手不太友好。
+> - 不支持 Windows 系統的原生安裝，對某些使用者造成不便。
+> - 部分技能的效果依賴於外部 API，可能會有不穩定性。
 
 > [!warning] 注意事項
-> - 僅支援特定的 AI 代理工具，如 Cursor 和 Claude Code。
-> - 需要用戶具備一定的 Markdown 編輯能力。
-> - 技能的效果依賴於用戶提供的提示質量。
-> - 不支持自定義技能的創建，需依賴預設的技能集。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [[xstongxue--best-prompts\|xstongxue/best-prompts]] | best-prompts 提供的是手動複製的提示，而 best-skills 則是自動選擇技能，提升了使用的便捷性。 |
-| [[openai--gpt-3.5-turbo\|openai/gpt-3.5-turbo]] | GPT-3.5 是通用的語言模型，而 best-skills 提供的是針對特定任務的技能集合，更加專業化。 |
+> - 目前僅支持 Python 環境。
+> - 需要手動將技能文件複製到相應的 Agent 工具中。
+> - 不支持 Windows 系統的原生安裝，需使用 WSL 或其他虛擬環境。
+> - 部分技能可能需要額外的 API 金鑰或配置。
 
 ## 技術細節
 
@@ -148,6 +158,11 @@ print(response)
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@xstongxue](https://github.com/xstongxue) | 7 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，有定期更新和討論。
+**連結**：[文件](https://github.com/xstongxue/best-skills/blob/main/README.md)
 
 ## README 摘錄
 
@@ -219,9 +234,9 @@ print(response)
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[API 設計]] · [[自然語言處理]]
+相關概念：[[自動化]] · [[機器學習]] · [[自然語言處理]]
 
-相關專案：[[xstongxue--best-prompts|xstongxue/best-prompts]] · [[openai--gpt-3.5-turbo|openai/gpt-3.5-turbo]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[xstongxue--best-prompts|xstongxue/best-prompts]] · [[openai--gpt-3.5-turbo|openai/gpt-3.5-turbo]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]] · [[karpathy--autoresearch|karpathy/autoresearch]]
 
 [GitHub](https://github.com/xstongxue/best-skills)
 
@@ -280,12 +295,26 @@ print(response)
 > **不該用的情況**：
 > - 
 
+> [!warning]- 替換成本
+> 若半年後要換掉，難度多高？資料格式是標準的嗎？
+> 
+> 侵入性:: _低 / 中 / 高_
+> 遷移路徑:: _描述_
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

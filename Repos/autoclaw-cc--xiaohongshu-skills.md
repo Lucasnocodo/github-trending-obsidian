@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "xiaohongshu-skills"
 homepage: ""
-stars: 407
-stars_per_day: 58
-forks: 51
+stars: 414
+stars_per_day: 59
+forks: 52
 open_issues: 13
 created: 2026-03-03
 pushed_at: 2026-03-09
@@ -17,115 +17,134 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
+subcategory: "自動化"
 release_tag: "v0.1.0-c26fa98"
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "讓小紅書的操作自動化，你只需用自然語言下達指令。"
+use_case: "自動化管理小紅書帳號，讓你輕鬆發布、互動和分析內容。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/開發工具"
   - "lang/python"
   - org
-  - easy_install
 aliases:
   - "xiaohongshu-skills"
   - "autoclaw-cc/xiaohongshu-skills"
-  - "讓小紅書的操作自動化，你只需用自然語言下達指令。"
+  - "自動化管理小紅書帳號，讓你輕鬆發布、互動和分析內容。"
 ---
 
 # xiaohongshu-skills
 
-**407** stars · **58** stars/天 · 建立 7 天前 · Python · MIT
+**414** stars · **59** stars/天 · 建立 7 天前 · Python · MIT
 
-`ORG` `v0.1.0-c26fa98` `easy-install`
+`ORG` `v0.1.0-c26fa98`
 
 > [!summary] 一句話摘要
-> 讓小紅書的操作自動化，你只需用自然語言下達指令。
+> 自動化管理小紅書帳號，讓你輕鬆發布、互動和分析內容。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (58 stars/day)
-> **適合** 需要高效管理小紅書帳號的內容創作者和社交媒體經營者。
-> **一句話重點** 這個專案讓小紅書的操作變得無縫且自動化，特別適合需要高頻率互動的用戶。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (59 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 3 人
+> **適合** 需要在小紅書上高效管理內容和互動的社交媒體專業人士。
+> **一句話重點** 這個專案展示了如何利用自然語言處理技術來提升社交媒體內容管理的效率。
 
 > [!abstract] 核心創新
-> 支持用自然語言下達複合指令，實現小紅書操作的自動化。
+> 這個專案的創新在於支持自然語言指令來執行複合操作，簡化了用戶的操作流程。
 
 ## 專案簡介
 
-這個專案透過 Python CDP 自動化引擎，實現小紅書的多種操作自動化。用戶可以用自然語言指令來執行如搜索、發文、社交互動等任務，系統會自動串聯相關技能完成操作。專案支持 OpenClaw 和其他兼容 SKILL.md 格式的 AI Agent 平台，並且提供了 CLI 工具以便於腳本集成。與其他社交媒體自動化工具相比，它強調了連貫操作的能力，讓用戶能夠一次性下達複雜指令。使用者可以通過 CLI 或直接與 Agent 互動來執行任務，CLI 模式下的輸出為 JSON 格式，便於後續處理。這個專案目前處於 v0.1.0 階段，適合小型團隊或個人開發者使用，特別是那些需要頻繁操作小紅書的用戶。對於大型團隊或需要高穩定性的生產環境，可能需要進一步的測試和穩定性提升。
+這個專案提供了一套基於 Python 的自動化技能，專門用於小紅書平台。用戶可以透過自然語言指令來進行多種操作，如搜尋內容、發布圖文或視頻、以及社交互動。核心流程是用戶輸入自然語言指令 → 系統解析指令並路由到對應的技能 → 執行操作並返回結果。它使用了 Chrome DevTools Protocol (CDP) 來控制瀏覽器，並內建反檢測機制，確保操作的隱私性和安全性。與其他工具相比，這個專案的特點在於它支持複合操作，能夠一次性執行多個任務，而不需要用戶重複輸入指令。具體來說，像是「搜索競品帳號最近的爆款筆記，分析他們的選題方向」這樣的指令，可以自動串聯多個技能完成。該工具能夠處理多達數千條筆記的資料，並且在運行時需要安裝 Google Chrome 瀏覽器。這個專案目前處於 beta 階段，適合需要在小紅書上進行內容創作和互動的團隊或個人。建議在小型團隊中使用，因為它的功能強大但仍需進一步穩定。對於需要快速發布和互動的情境，這個工具是理想選擇，但如果只是偶爾使用小紅書，可能會顯得過於複雜。
 
-**技術棧**：`Python 3.11` · `OpenClaw`
+**技術棧**：`Python 3.11` · `Chrome DevTools Protocol`
 
 ## 重點功能
 
-- xhs-auth — 支持多帳號切換和掃碼登錄，確保用戶能快速進行身份驗證。
-- xhs-publish — 提供圖文、視頻和長文的發佈功能，並支持定時發佈。
-- xhs-explore — 允許用戶根據關鍵詞搜索和發現內容，並能查看詳細信息。
-- xhs-interact — 支持對帖子進行評論、回覆、點讚和收藏，增強社交互動。
-- 連貫操作 — 用戶可用自然語言下達複合指令，Agent 自動串聯多個技能完成任務。
+- xhs-auth — 支持多帳號切換和掃碼登錄，方便管理多個小紅書帳號。
+- xhs-publish — 支持圖文、視頻和長文的發布，並提供定時發布功能。
+- xhs-explore — 透過關鍵字搜索和推薦系統，快速發現熱門內容。
+- xhs-interact — 支持對筆記的評論、點讚和收藏，提升社交互動。
+- xhs-content-ops — 提供競品分析和內容創作的工具，幫助用戶把握市場動態。
 
 ## 快速開始
 
-1. 下載專案壓縮包
+1. 下載 ZIP 並解壓到 skills 目錄
 ```bash
-git clone https://github.com/autoclaw-cc/xiaohongshu-skills.git
+下載後解壓到 /skills/xiaohongshu-skills/
 ```
-2. 進入專案目錄
+2. 安裝 Python 依賴
 ```bash
-cd xiaohongshu-skills
+cd xiaohongshu-skills && uv sync
 ```
-3. 安裝依賴
+3. 啟動 Chrome 瀏覽器
 ```bash
-uv sync
+python scripts/chrome_launcher.py
 ```
 
 ## 程式碼範例
 
+python
+# 搜索小紅書筆記
 python scripts/cli.py search-feeds --keyword "露營" --sort-by "最多点赞" --note-type "图文"
+# 預期輸出：返回符合條件的筆記列表及其詳細信息。
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 專案由經驗豐富的開發者團隊維護，切中小紅書用戶對自動化操作的需求。隨著小紅書用戶數量的增加，對於高效內容管理和社交互動的需求也隨之上升，這使得該工具的實用性愈加凸顯。
+> 這個專案的主要貢獻者包括 Angiin 和 xpzouying，他們在自動化和 AI Agent 開發方面有豐富經驗。這個工具解決了小紅書用戶在內容管理上的痛點，特別是對於需要高頻率互動和發布的用戶。最近在社交媒體上有不少討論，尤其是針對自動化工具的需求不斷上升，讓這個專案的曝光率提高。隨著小紅書用戶基數的擴大，對於自動化管理的需求也越來越明顯。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效管理小紅書帳號的內容創作者和社交媒體經營者。
+**目標受眾**：需要在小紅書上高效管理內容和互動的社交媒體專業人士。
 
 > [!example] 使用場景
-> - 社交媒體經營者用它來自動發布小紅書內容，因為這樣可以節省時間並提高發文頻率，從而增加曝光率。
-> - 數據分析師用它來批量互動和分析競品內容，因為手動操作耗時且容易出錯，使用自動化可以提高效率。
-> - 內容創作者用它來快速搜索和收藏靈感來源，因為自然語言指令讓操作變得直觀，無需學習複雜的命令。
+> - 內容創作者用它來自動發布圖文筆記，因為這樣可以節省時間並提高發布效率。
+> - 社交媒體經理用它來分析競品的熱門內容，因為這樣能快速獲得市場洞察，提升內容策略。
+> - 行銷專員用它來批量互動和評論，因為這樣能增加品牌曝光率，提升用戶參與度。
 
 ## 架構分析
 
-該專案採用單體架構，核心資料流為用戶輸入 → Agent 處理 → 輸出結果。關鍵技術決策包括使用 Python CDP 進行瀏覽器自動化，並通過 CLI 提供多種操作接口。專案目錄結構清晰，主要功能集中在 scripts 目錄下，包含各種自動化操作的實現。
+這是一個基於雙層設計的專案，分為 Skills 層和引擎層。用戶透過 AI Agent 輸入指令，Agent 解析後路由到 SKILL.md，然後通過 CLI 調用 CDP 引擎控制 Chrome 瀏覽器。關鍵技術決策包括使用 Chrome DevTools Protocol 來直接控制瀏覽器，並內建反檢測保護。專案目錄結構清晰，核心功能集中在 scripts/ 和 skills/ 目錄下，便於擴展和維護。
+
+## 技術深入分析
+
+這個專案的核心技術機制是利用 Chrome DevTools Protocol (CDP) 來控制瀏覽器，實現自動化操作。它通過反檢測技術來模擬人類行為，降低被平台檢測的風險。該工具能夠處理大量的資料，並且在運行時需要穩定的網路連接和足夠的計算資源。選擇 Python 作為開發語言的好處在於其強大的生態系統和豐富的庫支持，然而這也可能導致性能瓶頸，特別是在高頻率操作時。設計上，這個專案的可擴展性較好，但在面對大規模用戶時，可能會出現性能下降的問題，特別是在多帳號管理時需要謹慎處理安全性和穩定性。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多種操作模式，適合不同用戶需求。
-> - 自然語言指令簡化了操作流程，降低使用門檻。
-> - CLI 輸出為 JSON 格式，便於後續數據處理。
+> - 支持自然語言指令，簡化用戶操作。
+> - 多帳號管理功能，適合社交媒體專業人士。
+> - 提供競品分析和內容創作工具，幫助用戶把握市場動態。
 
 > [!danger] 缺點
-> - 目前功能還在持續開發中，穩定性有待提升。
-> - 需要用戶手動處理登入，對於自動化要求高的場景不夠友好。
-> - 依賴於 Google Chrome 瀏覽器，限制了跨平台使用。
+> - 目前僅支援小紅書平台，無法擴展至其他平台。
+> - 需要安裝 Google Chrome，增加了使用門檻。
+> - 仍在 beta 階段，可能存在不穩定的情況。
 
 > [!warning] 注意事項
 > - 僅支援 Python 3.11 以上版本。
-> - 需要安裝 Google Chrome 瀏覽器。
-> - CLI 模式下的操作需要用戶手動處理登入過程。
+> - 需要 Google Chrome 瀏覽器安裝。
+> - 目前僅在小紅書平台上運行，無法擴展至其他平台。
+> - beta 階段，可能存在不穩定的情況。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [autoclaw-cc/openclaw](https://github.com/autoclaw-cc/openclaw) | 這個專案專注於小紅書的自動化，而 OpenClaw 是一個更通用的自動化框架，適用於多個平台。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 這個專案針對醫療領域的自動化需求，而小紅書技能則專注於社交媒體內容管理。 |
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 51 |
+| Forks | 52 |
 | Open Issues | 13 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-03 |
@@ -139,6 +158,11 @@ python scripts/cli.py search-feeds --keyword "露營" --sort-by "最多点赞" -
 > | [@cu1ch3n](https://github.com/cu1ch3n) | 1 |
 
 **最新版本**：v0.1.0-c26fa98 (2026-03-09)
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，定期更新和維護。
+**連結**：[文件](https://github.com/autoclaw-cc/xiaohongshu-skills#readme)
 
 ## README 摘錄
 
@@ -362,9 +386,9 @@ python scripts/cli.py search-feeds --keyword "露營" --sort-by "最多点赞" -
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[CLI/TUI]] · [[機器學習]]
+相關概念：[[自動化]] · [[社交媒體管理]] · [[內容創作]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[duoan--TorchCode|duoan/TorchCode]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]]
 
 [GitHub](https://github.com/autoclaw-cc/xiaohongshu-skills)
 
@@ -423,12 +447,26 @@ python scripts/cli.py search-feeds --keyword "露營" --sort-by "最多点赞" -
 > **不該用的情況**：
 > - 
 
+> [!warning]- 替換成本
+> 若半年後要換掉，難度多高？資料格式是標準的嗎？
+> 
+> 侵入性:: _低 / 中 / 高_
+> 遷移路徑:: _描述_
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

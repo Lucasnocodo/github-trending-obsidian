@@ -7,23 +7,27 @@ language: TypeScript
 license: MIT
 description: "Open-source AI agent command center for Claude Code agent teams. Built on OpenClaw."
 homepage: "https://clawport.dev"
-stars: 355
-stars_per_day: 51
+stars: 365
+stars_per_day: 52
 forks: 53
-open_issues: 0
+open_issues: 1
 created: 2026-03-03
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
+subcategory: "自動化"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "提供一個可視化的指揮中心來管理和監控你的 AI agent 團隊。"
+use_case: "提供一個視覺化的指揮中心來管理和監控 AI agent 團隊，讓團隊協作更順暢。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/開發工具"
@@ -31,37 +35,41 @@ tags:
 aliases:
   - "clawport-ui"
   - "JohnRiceML/clawport-ui"
-  - "提供一個可視化的指揮中心來管理和監控你的 AI agent 團隊。"
+  - "提供一個視覺化的指揮中心來管理和監控 AI agent 團隊，讓團隊協作更順暢。"
 ---
 
 # clawport-ui
 
-**355** stars · **51** stars/天 · 建立 7 天前 · TypeScript · MIT
+**365** stars · **52** stars/天 · 建立 7 天前 · TypeScript · MIT
 
 > [!summary] 一句話摘要
-> 提供一個可視化的指揮中心來管理和監控你的 AI agent 團隊。
+> 提供一個視覺化的指揮中心來管理和監控 AI agent 團隊，讓團隊協作更順暢。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (51 stars/day)
-> **適合** 需要集中管理多個 AI agent 的中小型團隊。
-> **一句話重點** ClawPort 的強大之處在於它的可視化管理，讓 AI agent 的操作變得直觀且高效。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (52 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人
+> **適合** 需要集中管理多個 AI agents 的中小型團隊成員。
+> **一句話重點** ClawPort 的設計讓多個 AI agents 的管理變得簡單而高效，特別適合需要即時協作的團隊。
 
 > [!abstract] 核心創新
-> ClawPort 提供了一個無需額外 API 金鑰的集中管理平台，專為 OpenClaw AI agents 設計。
+> ClawPort 提供了一個集中化的儀表板，讓用戶能夠在一個平台上管理和監控多個 AI agents。
 
 ## 專案簡介
 
-ClawPort 是一個開源的儀表板，專為管理和監控 OpenClaw AI agents 而設計。它透過 OpenClaw 網關連接，提供組織圖、即時聊天、看板管理、排程監控、成本追蹤和活動控制台等功能。用戶可以直接與 AI agent 進行對話，並透過視覺和語音進行互動，所有操作不需要額外的 API 金鑰。技術上，ClawPort 使用 Next.js 作為前端框架，並透過 SSE 進行即時數據流傳輸。與其他工具相比，ClawPort 的獨特之處在於它的無縫整合與 OpenClaw，並提供了豐富的可視化工具來管理多個 agent。實際使用中，ClawPort 能夠有效地追蹤 token 使用情況，並提供優化建議，但需要一個運行中的 OpenClaw 實例。這個專案目前處於 beta 階段，適合中小型團隊使用。對於需要集中管理多個 AI agent 的場景，ClawPort 是一個不錯的選擇，但如果你的需求較簡單，可能不需要這麼複雜的工具。
+ClawPort 是一個開源的儀表板，專為管理、監控和與 OpenClaw AI agents 進行直接對話而設計。用戶透過這個儀表板，可以輕鬆地查看組織結構圖、進行即時聊天、管理任務、監控排程和成本，並且可以實時查看活動日誌。它的核心架構是基於 Next.js，並透過 OpenClaw Gateway 進行所有 AI 操作，確保了安全性和高效性。這個工具的獨特之處在於它不需要額外的 API 金鑰，所有操作都經過 OpenClaw Gateway，簡化了用戶的配置過程。與其他類似工具相比，ClawPort 提供了更為豐富的功能，如即時聊天、任務管理和成本分析，這些功能集成在同一個平台上，避免了使用多個工具的繁瑣。它可以處理大量的 AI agents，並且支持實時數據流，確保用戶能夠隨時獲取最新資訊。這個專案目前處於 beta 階段，對於需要集中管理多個 AI agents 的團隊來說，ClawPort 是一個值得考慮的選擇。適合中小型團隊使用，但對於大型企業可能需要進一步的擴展和調整。使用者可以在需要快速協作和即時反饋的情境下選擇 ClawPort，而在對於單一 agent 的簡單管理情境下，可能會覺得功能過於繁瑣。
 
 **技術棧**：`TypeScript` · `JavaScript` · `CSS` · `Next.js`
 
 ## 重點功能
 
-- 組織圖 — 互動式組織圖顯示 agent 團隊的層級和狀態，使用 React Flow 自動佈局。
-- 即時聊天 — 支持文本、圖像和語音消息的即時聊天，並可進行文件附件和拖放操作。
-- 看板管理 — 提供可拖放的任務板，方便管理 agent 之間的工作流。
-- 排程監控 — 實時顯示所有排定任務的狀態，並每 60 秒自動刷新。
-- 成本儀表板 — 提供 token 使用情況和成本分析，並顯示每個任務的成本細分。
+- Org Map — 互動式組織結構圖，顯示所有 agent 的層級和狀態。
+- Chat — 支持即時文字聊天、語音消息和檔案附件，對話可持久保存。
+- Kanban — 拖放式任務管理板，方便管理多個 agent 的任務。
+- Cron Monitor — 實時監控所有排程任務的狀態，並可過濾和排序錯誤。
+- Cost Dashboard — 提供每日成本圖表和異常檢測，幫助優化資源使用。
+- Activity Console — 歷史日誌瀏覽器，支持實時日誌流和 JSON 擴展。
+- Memory Browser — 瀏覽團隊記憶和日誌，支持 Markdown 渲染和搜索。
+- Auto-Discovery — 自動發現 OpenClaw 工作區中的 agents，無需額外配置。
 
 ## 快速開始
 
@@ -69,15 +77,11 @@ ClawPort 是一個開源的儀表板，專為管理和監控 OpenClaw AI agents 
 ```bash
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
-2. 運行 OpenClaw 的 onboarding wizard
-```bash
-openclaw onboard --install-daemon
-```
-3. 安裝 ClawPort
+2. 安裝 ClawPort
 ```bash
 npm install -g clawport-ui
 ```
-4. 啟動 ClawPort 儀表板
+3. 啟動儀表板
 ```bash
 clawport dev
 ```
@@ -87,62 +91,67 @@ clawport dev
 ```bash
 # 啟動 ClawPort 儀表板
 clawport dev
+# 預期輸出：啟動後可在 http://localhost:3000 訪問儀表板
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> JohnRiceML 是開源社群的活躍成員，這個專案切中了對於 AI agent 管理的需求。隨著 OpenClaw 的普及，ClawPort 提供了一個直觀的界面來簡化管理流程，這使得它在開源社群中迅速受到關注。
+> 這個專案由 JohnRiceML 發起，他在開源社群中有一定的知名度，並且之前參與過多個 AI 相關的專案。ClawPort 解決了 AI agent 管理上的痛點，特別是在需要多方協作的情況下，提供了一個集中化的解決方案。最近在社群中有關於 AI agent 管理的討論增多，可能促進了這個工具的關注度。技術生態的變化使得這樣的工具變得更加可行，特別是 OpenClaw 的普及。
 
 ## 適合誰使用
 
-**目標受眾**：需要集中管理多個 AI agent 的中小型團隊。
+**目標受眾**：需要集中管理多個 AI agents 的中小型團隊成員。
 
 > [!example] 使用場景
-> - AI 團隊經理用它來監控所有 agent 的運行狀態，因為可以即時查看 cron 任務的狀態和錯誤，節省了手動檢查的時間。
-> - 開發者用它來與 AI agent 進行即時對話，因為它支持語音和視覺互動，提升了溝通的效率。
-> - 產品經理用它來追蹤 AI agent 的成本使用情況，因為可以透過成本儀表板快速分析 token 使用和異常，幫助預算控制。
+> - AI 團隊經理用它來監控所有 AI agents 的運作狀態，因為可以即時查看任務進度和排程，避免了手動檢查的繁瑣。
+> - 開發者用它來與 AI agents 進行實時對話，因為支持多種媒介（文字、語音、視覺），提升了溝通效率。
+> - 數據分析師用它來追蹤 AI agents 的成本和效能，因為提供了詳細的成本分析和歷史日誌，幫助優化資源配置。
 
 ## 架構分析
 
-ClawPort 採用前後端分離的架構，前端使用 Next.js，後端則依賴 OpenClaw 網關進行 AI 操作。用戶輸入通過 ClawPort 進行處理，然後轉發至 OpenClaw 網關，最終與 AI agent 進行互動。專案目錄結構包括主要的 src 目錄，包含所有前端邏輯和組件。
+ClawPort 採用前後端分離的架構模式，前端使用 Next.js，後端則透過 OpenClaw Gateway 處理所有 AI 操作。用戶輸入 → ClawPort → OpenClaw Gateway → Claude。關鍵技術決策是使用 OpenClaw 作為中介，確保安全性和簡化配置。專案目錄結構包括主要的源碼文件和配置文件，方便用戶進行自定義設置。
 
 ## 技術深入分析
 
-> [!note]- 展開深入分析
-> ClawPort 的核心在於其與 OpenClaw 的深度整合，所有 AI 操作都透過 OpenClaw 網關進行，這意味著用戶無需管理多個 API 金鑰。效能上，ClawPort 能夠實時更新 agent 狀態和活動日誌，確保用戶獲得最新資訊。設計上，ClawPort 使用 React Flow 進行組織圖的可視化，這使得管理複雜的 agent 團隊變得更加簡單。與其他競品相比，ClawPort 的即時聊天和任務管理功能更為強大，特別適合需要協作的 AI 團隊。
+ClawPort 的核心技術機制是基於 Next.js 的前端框架，並透過 OpenClaw Gateway 進行所有 AI 操作，這樣的設計確保了安全性和高效性。它能夠處理大量的 AI agents，並且支持實時數據流，這對於需要快速反應的團隊來說是個優勢。選擇 TypeScript 和 JavaScript 作為開發語言，讓開發者能夠利用現有的生態系統，並提高了代碼的可維護性。設計上，ClawPort 需要依賴 OpenClaw 的運行，這可能在某些情況下成為瓶頸，特別是在資源有限的環境中。未來擴展時，可能需要考慮性能優化和資源管理的問題，以確保在規模擴大時仍能保持良好的效能。
+
+## 新手體驗
+
+> [!info] 上手難度評估
+> README 文件清晰，提供了詳細的安裝步驟和功能說明。安裝過程相對順暢，但需要確保 OpenClaw 正確運行。缺乏中文或多語言支持，可能對非英語使用者造成障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供全面的 AI agent 管理工具，整合多種功能於一體。
-> - 即時監控和聊天功能提升了團隊協作效率。
-> - 無需額外的 API 金鑰，簡化了設置過程。
+> - 集成多種功能於一個平台，減少使用多個工具的需求。
+> - 即時監控和歷史日誌功能，提升管理效率。
+> - 無需額外 API 金鑰，簡化配置過程。
 
 > [!danger] 缺點
-> - 需要依賴 OpenClaw，對於不使用該平台的用戶無法使用。
+> - 需要運行 OpenClaw，增加了安裝複雜度。
 > - 目前處於 beta 階段，可能存在不穩定性。
-> - 安裝和配置過程相對複雜，需要一定的技術背景。
+> - 對於大型團隊的擴展性可能不足。
 
 > [!warning] 注意事項
-> - 需要運行中的 OpenClaw 實例。
+> - 需要運行 OpenClaw 實例。
 > - 目前僅支援 Node.js 環境。
-> - 需要額外的配置來連接自定義的 OpenClaw 網關。
-> - beta 階段，可能存在不穩定的功能。
+> - 對於大型團隊可能需要進一步的擴展。
+> - beta 階段，功能可能不穩定。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [[OpenAI--openai\|OpenAI/openai]] | OpenAI 的 API 提供了強大的 AI 功能，但缺乏 ClawPort 的可視化管理和即時監控功能。 |
-| [[Microsoft--PowerAutomate\|Microsoft/PowerAutomate]] | Power Automate 提供了自動化工作流，但不專注於 AI agent 的管理和監控。 |
+| [JohnRiceML/OpenClaw-Medical-Skills](https://github.com/JohnRiceML/OpenClaw-Medical-Skills) | 專注於醫療領域的 AI agent 管理，功能較為專一，適合特定行業使用。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供更為簡單的 agent 管理功能，適合不需要複雜監控的使用者。 |
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 53 |
-| Open Issues | 0 |
+| Open Issues | 1 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-03 |
 | 官方網站 | [Link](https://clawport.dev) |
@@ -271,9 +280,9 @@ ClawPort 採用前後端分離的架構，前端使用 Next.js，後端則依賴
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[自動化測試]] · [[機器學習]]
+相關概念：[[Agent 框架]] · [[自動化]] · [[即時通訊]]
 
-相關專案：[[OpenAI--openai|OpenAI/openai]] · [[Microsoft--PowerAutomate|Microsoft/PowerAutomate]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[OpenAI--openai|OpenAI/openai]] · [[Microsoft--PowerAutomate|Microsoft/PowerAutomate]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[duoan--TorchCode|duoan/TorchCode]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]]
 
 [GitHub](https://github.com/JohnRiceML/clawport-ui) · [官方網站](https://clawport.dev)
 
@@ -332,12 +341,26 @@ ClawPort 採用前後端分離的架構，前端使用 Next.js，後端則依賴
 > **不該用的情況**：
 > - 
 
+> [!warning]- 替換成本
+> 若半年後要換掉，難度多高？資料格式是標準的嗎？
+> 
+> 侵入性:: _低 / 中 / 高_
+> 遷移路徑:: _描述_
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

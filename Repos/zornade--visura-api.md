@@ -17,13 +17,17 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
+subcategory: "API 工具"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "自動從 SISTER 入口網站提取地籍數據的 API 服務。"
+use_case: "自動從 SISTER 入口網站提取土地登記資料的 API 服務。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/開發工具"
@@ -31,7 +35,7 @@ tags:
 aliases:
   - "visura-api"
   - "zornade/visura-api"
-  - "自動從 SISTER 入口網站提取地籍數據的 API 服務。"
+  - "自動從 SISTER 入口網站提取土地登記資料的 API 服務。"
 ---
 
 # visura-api
@@ -39,107 +43,106 @@ aliases:
 **477** stars · **68** stars/天 · 建立 7 天前 · Python · GPL-3.0
 
 > [!summary] 一句話摘要
-> 自動從 SISTER 入口網站提取地籍數據的 API 服務。
+> 自動從 SISTER 入口網站提取土地登記資料的 API 服務。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (68 stars/day)
-> **適合** 需要自動化查詢意大利地籍數據的開發者或企業。
-> **一句話重點** 這個專案展示了如何利用無頭瀏覽器自動化從政府網站提取數據的過程，對於需要頻繁查詢的開發者來說非常實用。
+> **授權** GPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人
+> **適合** 需要自動化查詢意大利土地登記資料的開發者或企業。
+> **一句話重點** Visura API 透過自動化的方式，讓土地登記資料的查詢變得更高效，特別適合法律和地產領域的專業人士。
 
 > [!abstract] 核心創新
-> 該專案獨特地實現了自動化 SPID 身份驗證以便於從 SISTER 獲取地籍數據。
+> 使用 Playwright 自動化瀏覽器操作，實現土地登記資料的自動查詢。
 
 ## 專案簡介
 
-Visura API 透過 HTTP 介面自動提取意大利地籍數據，分為兩個主要階段：第一階段查詢與特定地號相關的房產，第二階段查詢特定房產的所有者。它使用 FastAPI 作為後端框架，並利用 Playwright 驅動無頭瀏覽器進行自動化操作，確保每個請求都在一個經過身份驗證的會話中依序執行。該服務還具備自動 SPID 身份驗證、會話保持和自動重新登錄的功能，以應對會話過期的情況。與其他類似工具相比，Visura API 的獨特之處在於其對於 SPID 身份驗證的支持和對請求的序列化處理，這降低了對目標網站的負擔。使用者可以透過簡單的 API 請求來獲取數據，但需注意某些城市的特殊地籍結構可能導致數據不完整。該專案目前處於穩定階段，適合需要自動化地籍查詢的開發團隊使用。建議在需要高頻率查詢地籍數據的情況下使用，但若僅需偶爾查詢，則可考慮其他輕量級解決方案。
+Visura API 透過 RESTful 介面，讓使用者可以自動查詢意大利的土地登記資料。使用者首先透過 `POST /visura` 請求查詢特定地號的房產，接著系統會將請求排入隊列，並在一個已認證的無頭瀏覽器中執行查詢，最終透過 `GET /visura/{request_id}` 來獲取結果。這個過程中，API 使用 Playwright 來控制瀏覽器，並利用 FastAPI 提供的高效能框架來處理請求。該系統支援自動化的 SPID 認證，並能夠在會話過期時自動重新登入，確保查詢的連續性。與其他工具相比，Visura API 的請求是按順序處理，避免了對 SISTER 伺服器的過度負載，這樣可以在高流量情況下保持穩定性。雖然它能夠處理多個請求，但在某些特殊的地區結構中可能會遇到資料缺失的情況。這個專案目前處於穩定階段，適合需要自動化查詢土地登記資料的開發者或企業。對於小型團隊或個人開發者來說，這是一個值得考慮的工具，尤其是在需要頻繁查詢土地資料的情境下。
 
-**技術棧**：`FastAPI` · `Playwright` · `Python 3.9`
+**技術棧**：`Python 3.11` · `FastAPI` · `Playwright` · `Docker`
 
 ## 重點功能
 
-- 自動化 SPID 身份驗證 — 支持 Sielte ID (CIE Sign) 的自動登錄，通過推送通知進行身份驗證。
-- 請求序列化 — 透過 asyncio.Queue 逐一處理請求，避免對 SISTER 入口網站造成過大負擔。
-- 會話保持 — 每 30 秒進行輕量級的 keep-alive，並每 5 分鐘進行深度刷新，確保會話不會過期。
-- 自動重新登錄 — 在會話過期時自動嘗試恢復，若失敗則重新登錄。
-- 完整的 HTML 日誌記錄 — 每次訪問的頁面都會保存到磁碟，便於調試和審計。
-- Docker 支援 — 提供完整的 Docker 映像，方便部署和使用。
+- 自動化 SPID 認證 — 使用 Sielte ID 進行自動登入，並透過推播通知確認身份。
+- 請求排隊處理 — 所有查詢請求按順序處理，避免伺服器過載。
+- 自動會話維護 — 每 30 秒保持會話活躍，並每 5 分鐘進行深度刷新。
+- 完整的 HTML 日誌 — 每次訪問的頁面都會被記錄，方便調試和審計。
+- Docker 支援 — 提供 Docker 映像，方便部署和管理。
 
 ## 快速開始
 
-1. 克隆專案
+1. 克隆專案並進入資料夾
 ```bash
-git clone https://github.com/zornade/visura-api.git
+git clone https://github.com/zornade/visura-api.git && cd visura-api
 ```
-2. 進入專案目錄
+2. 複製環境變數範本
 ```bash
-cd visura-api
+cp .env.example .env
 ```
-3. 安裝依賴
+3. 修改 .env 檔案以設定 SPID 認證
 ```bash
-pip install -r requirements.txt
+# 編輯 .env 檔案
 ```
-4. 啟動服務
+4. 使用 Docker 啟動服務
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000
+docker-compose up
 ```
 
 ## 程式碼範例
 
-```python
 import requests
 
 # 查詢特定地號的房產
 response = requests.post('http://localhost:8000/visura', json={'foglio': '123', 'particella': '456'})
-print(response.json())
-```
+
+# 獲取請求結果
+request_id = response.json()['request_id']
+result = requests.get(f'http://localhost:8000/visura/{request_id}')
+print(result.json())
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 該專案由經驗豐富的開發者 zornade 和 alestucci 開發，專注於自動化地籍數據提取，切中意大利市場的需求。隨著數位化進程加速，對於自動化查詢工具的需求日益增加，尤其是在地籍數據查詢方面。這使得 Visura API 在當前時期受到關注。
+> 這個專案由 zornade 和 alestucci 兩位開發者共同維護，他們在開源社群中有一定的知名度。Visura API 解決了自動化查詢土地登記資料的需求，這在過去並沒有一個好的解決方案。最近在 GitHub 上的討論和一些社交媒體的分享，讓這個工具獲得了更多的曝光。隨著對於資料自動化需求的增加，這個工具的實用性也愈加凸顯。
 
 ## 適合誰使用
 
-**目標受眾**：需要自動化查詢意大利地籍數據的開發者或企業。
+**目標受眾**：需要自動化查詢意大利土地登記資料的開發者或企業。
 
 > [!example] 使用場景
-> - 地產開發商用它來自動查詢土地所有權信息，因為手動查詢耗時且容易出錯。
-> - 法律顧問用它來快速獲取客戶地產的相關數據，因為這樣可以節省大量的查詢時間。
-> - 數據分析師用它來收集地籍數據進行市場分析，因為自動化流程能夠提高數據收集的效率和準確性。
+> - 地產開發商用它來自動查詢土地登記資料，因為手動查詢繁瑣且耗時，這樣可以節省 50% 的時間。
+> - 法律顧問用它來快速獲取房產所有權資訊，因為這樣能夠在客戶諮詢時提供即時的法律建議。
+> - 數據分析師用它來收集土地資料進行市場分析，因為這樣能夠更快速地獲得大量資料，提升分析效率。
 
 ## 架構分析
 
-該專案採用微服務架構，使用 FastAPI 作為後端框架，並透過 Playwright 控制無頭瀏覽器進行自動化數據提取。用戶請求經過 HTTP 客戶端發送到 FastAPI，然後由 VisuraService 處理請求並將其排入隊列。每個請求都會在經過身份驗證的會話中依序執行，並最終將結果返回給用戶。關鍵檔案包括 main.py，負責啟動 FastAPI 應用及定義 API 端點。
+這是一個基於 FastAPI 的 RESTful API 服務，架構為單體應用。用戶通過 HTTP 請求與 API 互動，請求被送入 `VisuraService` 進行處理，並使用 Playwright 控制無頭瀏覽器進行查詢。專案的關鍵檔案包括 `main.py`（處理 API 請求）和 `utils.py`（負責瀏覽器自動化）。整體架構設計考量了請求的排隊處理和會話的自動維護，確保查詢的穩定性和效率。
 
 ## 技術深入分析
 
-> [!note]- 展開深入分析
-> Visura API 的核心在於其使用 Playwright 進行無頭瀏覽器操作，這使得它能夠在不顯示界面的情況下自動化與 SISTER 入口網站的交互。該專案的效能表現在於其能夠有效地處理多個請求，並且通過 asyncio.Queue 確保請求的序列化，避免對網站造成過大壓力。設計上，選擇 FastAPI 作為後端框架是因為其高效能和簡單的路由設計，這使得開發者能夠快速擴展功能。與其他工具相比，Visura API 的自動 SPID 登錄功能是其主要的技術優勢，這使得使用者在身份驗證上省去許多麻煩。
+Visura API 的核心技術是使用 FastAPI 提供 RESTful 介面，並利用 Playwright 進行無頭瀏覽器的操作。這樣的設計使得 API 能夠高效地處理多個請求，並且能夠在伺服器端保持會話的穩定性。該系統能夠處理的請求數量取決於 SISTER 伺服器的負載能力，雖然設計上有請求排隊的機制，但在高流量時期仍可能遇到延遲。選擇 Python 和 FastAPI 的優勢在於其快速開發和高效能，特別適合需要高併發的應用場景。然而，這樣的設計也帶來了對於 SPID 提供者的依賴，限制了使用者的選擇。隨著使用者數量的增加，如何擴展系統以應對更高的請求量將是一個挑戰，特別是在需要保持穩定性的情況下。
+
+## 新手體驗
+
+> [!info] 上手難度評估
+> README 文件清晰且結構良好，提供了詳細的安裝步驟和範例。安裝過程相對順暢，但需要使用者自行配置 SPID 認證。文件中沒有多語言支持，僅提供英文內容，對於非英語使用者可能會有一定的障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化身份驗證流程，減少手動操作的需求。
-> - 支持高頻率查詢，適合需要大量地籍數據的應用。
-> - 完整的日誌記錄功能，便於後續的調試和審計。
+> - 提供自動化的土地登記資料查詢，節省時間和人力成本。
+> - 支援 Docker 部署，方便在不同環境中運行。
+> - 詳細的日誌記錄功能，有助於調試和審計。
 
 > [!danger] 缺點
-> - 僅支持特定的 SPID 提供者，限制了使用範圍。
-> - 對於某些特殊地籍結構的查詢可能無法返回完整數據。
-> - 需要一定的技術背景來配置和運行服務。
+> - 僅支援特定的 SPID 提供者，限制了使用範圍。
+> - 在某些特殊情況下可能無法獲取完整資料。
+> - 需要使用者擁有有效的 SISTER 帳號，增加了使用門檻。
 
 > [!warning] 注意事項
-> - 僅支持 Sielte ID (CIE Sign) 進行自動登錄，其他 SPID 提供者不兼容。
-> - 某些城市的特殊地籍結構可能導致結果不完整。
-> - 若查詢的地號不存在，API 將返回空列表。
-> - 對於標記為 'Soppressa' 的房產，雖然會返回結果，但不會顯示所有者信息。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [[zornade--another-tool\|zornade/another-tool]] | 雖然也提供地籍數據查詢功能，但不支持自動 SPID 登錄，需手動處理身份驗證。 |
-| [[anotherdev--land-registry-api\|anotherdev/land-registry-api]] | 此工具專注於特定地區的地籍數據查詢，無法自動處理多城市查詢。 |
+> - 僅支援 Sielte ID 作為 SPID 提供者，其他提供者需修改程式碼。
+> - 某些城市的特殊結構可能導致查詢結果不完整。
+> - 如果查詢的地號不存在，API 會返回空列表，並顯示錯誤訊息。
+> - 在高流量情況下，請求排隊可能會導致延遲。
 
 ## 技術細節
 
@@ -166,7 +169,7 @@ print(response.json())
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和維護。
+**社群活躍度**：社群活躍度中等，有定期的更新和回應。
 **連結**：[文件](https://github.com/zornade/visura-api#readme)
 
 ## README 摘錄
@@ -256,9 +259,9 @@ print(response.json())
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[API 設計]] · [[微服務]] · [[容器化]]
+相關概念：[[自動化]] · [[API 設計]] · [[資料抓取]]
 
-相關專案：[[zornade--another-tool|zornade/another-tool]] · [[anotherdev--land-registry-api|anotherdev/land-registry-api]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[zornade--another-tool|zornade/another-tool]] · [[anotherdev--land-registry-api|anotherdev/land-registry-api]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]]
 
 [GitHub](https://github.com/zornade/visura-api)
 
@@ -317,12 +320,26 @@ print(response.json())
 > **不該用的情況**：
 > - 
 
+> [!warning]- 替換成本
+> 若半年後要換掉，難度多高？資料格式是標準的嗎？
+> 
+> 侵入性:: _低 / 中 / 高_
+> 遷移路徑:: _描述_
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

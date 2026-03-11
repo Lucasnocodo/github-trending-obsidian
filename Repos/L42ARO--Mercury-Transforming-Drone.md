@@ -7,7 +7,7 @@ language: Python
 license: CERN-OHL-S-2.0
 description: "Mercury is a transforming drone anyone can build that can be adapted for many use cases thanks to it's versatile mobility, wide range of sensors, and cargo bay area"
 homepage: ""
-stars: 358
+stars: 359
 stars_per_day: 90
 forks: 44
 open_issues: 0
@@ -17,13 +17,17 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "其他"
+subcategory: "無人機"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "讓任何人都能組裝一架可變形的無人機，適用於多種用途。"
+use_case: "讓任何人都能建造一架多用途的變形無人機，適應各種使用場景。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/其他"
@@ -31,87 +35,112 @@ tags:
 aliases:
   - "Mercury-Transforming-Drone"
   - "L42ARO/Mercury-Transforming-Drone"
-  - "讓任何人都能組裝一架可變形的無人機，適用於多種用途。"
+  - "讓任何人都能建造一架多用途的變形無人機，適應各種使用場景。"
 ---
 
 # Mercury-Transforming-Drone
 
-**358** stars · **90** stars/天 · 建立 4 天前 · Python · CERN-OHL-S-2.0
+**359** stars · **90** stars/天 · 建立 4 天前 · Python · CERN-OHL-S-2.0
 
 > [!summary] 一句話摘要
-> 讓任何人都能組裝一架可變形的無人機，適用於多種用途。
+> 讓任何人都能建造一架多用途的變形無人機，適應各種使用場景。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (90 stars/day)
-> **適合** 對無人機組裝和自定義有興趣的開發者和愛好者。
-> **一句話重點** 這個專案展示了如何通過開源設計讓無人機技術變得更為普及和可定制。
+> **授權** CERN-OHL-S-2.0 · **維護** Active (最後推送 3 天前) · **貢獻者** 2 人
+> **適合** 對無人機有興趣並希望自製和編程的開發者和愛好者。
+> **一句話重點** Mercury 不僅是一架無人機，更是一個開放的 DIY 平台，讓使用者能夠自由探索無人機技術。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於其可變形設計，讓無人機能夠根據不同任務靈活調整形態。
+> 這款無人機的變形機制和多功能感測器配置使其在多樣化任務中更具靈活性。
 
 ## 專案簡介
 
-Mercury 是一款可變形的無人機，具備內部有效載荷艙（可容納 1 公斤）和簡單的變形機構，讓使用者能夠根據需求調整其形態。它搭載 RGB、深度和熱成像攝影機，並使用 Ardupilot 和 GPS 進行自主飛行。這款無人機的設計特別適合 DIY 愛好者，提供了完整的材料清單和 CAD 檔案，讓使用者能夠輕鬆組裝。與其他無人機相比，Mercury 的獨特之處在於其變形能力和多樣的感測器配置，這使其在多種應用場景中更具靈活性。實際使用中，這款無人機的效能依賴於所選用的硬體，並且需要一定的組裝技巧。這個專案目前處於穩定階段，適合小型團隊或個人開發者使用。對於希望探索無人機技術的愛好者來說，這是一個值得嘗試的選擇，但對於需要高效能商業應用的團隊，可能需要考慮其他專業產品。
+Mercury 是一款變形無人機，能夠在不同模式下運行，使用者只需組裝所需的硬體和上傳軟體即可。它的核心流程為：使用者組裝無人機 → 上傳自動化軟體至 Raspberry Pi → 無人機透過 GPS 和各種傳感器進行自主飛行和任務執行。這款無人機配備 RGB、深度和熱成像攝影機，並使用 Ardupilot 進行自動導航，支持 1 公斤的內部貨物運載。專案使用 Python 和 TypeScript 開發，並提供完整的 STL 和 PCB 檔案，方便使用者自製和修改。與傳統無人機相比，Mercury 的變形機制和多種感測器配置使其在多樣化任務中更具靈活性。這款無人機的設計適合 DIY 愛好者和開發者，並且能夠處理多種環境下的任務。雖然目前仍在開發階段，但其功能已經相當完整，適合小型團隊或個人使用。對於需要快速原型或特定任務的使用者，Mercury 是一個值得考慮的選擇。相對於商業無人機，Mercury 提供了更高的自定義性和擴展性，但可能需要使用者具備一定的硬體組裝和編程能力。
 
-**技術棧**：`Python` · `TypeScript` · `JavaScript` · `C++` · `Shell`
+**技術棧**：`Python` · `TypeScript` · `C++`
 
 ## 重點功能
 
-- 內部有效載荷艙 — 可容納 1 公斤的貨物，適合多種應用。
-- 簡單變形機構 — 允許用戶根據需求調整無人機形態。
-- 多種感測器 — 配備 RGB、深度和熱成像攝影機，支持多樣化的數據收集。
-- 完整材料清單 — 提供詳細的硬體購買連結，方便使用者組裝。
-- CAD 檔案 — 提供 STL 檔案和其他格式，方便進行自定義設計。
+- 內部貨物艙 — 可容納 1 公斤的貨物，適合運送小型物品。
+- 變形機制 — 簡單的變形設計，能在不同模式下運行。
+- 多種攝影機 — 配備 RGB、深度和熱成像攝影機，支持多種視覺任務。
+- 自動導航 — 使用 Ardupilot 和 GPS 進行自主飛行。
+- 完整的組裝指南 — 提供 STL 和 PCB 檔案，方便 DIY 組裝。
 
 ## 快速開始
 
-1. 克隆專案
+1. 下載軟體
 ```bash
 git clone https://github.com/L42ARO/Mercury-Transforming-Drone.git
 ```
-2. 安裝依賴
+2. 上傳自動化軟體至 Raspberry Pi
+```bash
+scp -r Mercury-Transforming-Drone/Autonomy Software pi@<Raspberry_Pi_IP>:~/
+```
+3. 安裝必要的依賴
 ```bash
 pip install -r requirements.txt
 ```
-3. 組裝無人機
-```bash
-參考 Bill of Materials 和 CAD Files 進行組裝。
-```
+
+## 程式碼範例
+
+import dronekit
+
+# 連接到無人機
+vehicle = dronekit.connect('udp:127.0.0.1:14550', wait_ready=True)
+
+# 獲取無人機狀態
+print('Mode: %s' % vehicle.mode.name)
+
+# 開始自動導航
+vehicle.mode = dronekit.VehicleMode('AUTO')
+
+# 預期輸出: Mode: AUTO
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案的作者 L42ARO 和 Agonat0r 在無人機和開源硬體領域有豐富的經驗，能夠切中 DIY 無人機愛好者的需求。隨著無人機技術的普及，越來越多的人希望能夠自己組裝和定制無人機，這個專案正好滿足了這一需求。最近的無人機應用案例增多，讓這個專案在社群中獲得了更多關注。
+> L42ARO 是一位活躍的開源貢獻者，過去有多個相關專案，這讓他在無人機社群中有一定的知名度。Mercury 解決了無人機自定義和擴展性不足的問題，提供了完整的組裝和軟體配置指南。專案的推廣和社群互動（如 Discord）也促進了其受歡迎程度。隨著 DIY 和開源硬體的興起，這種可組裝的無人機專案在當前市場上越來越受到重視。
 
 ## 適合誰使用
 
-**目標受眾**：對無人機組裝和自定義有興趣的開發者和愛好者。
+**目標受眾**：對無人機有興趣並希望自製和編程的開發者和愛好者。
 
 > [!example] 使用場景
-> - 無人機愛好者用它來組裝一架可變形的無人機，因為這樣能夠根據不同的任務需求靈活調整機體形態。
-> - 工程師用它來進行環境監測，因為其搭載的多種感測器（RGB、深度、熱成像）能夠收集多樣化的數據。
-> - 學生用它來學習無人機技術，因為提供完整的材料清單和 CAD 檔案，讓組裝過程變得簡單明瞭。
+> - 工程師用它來設計和測試自動化任務，因為其靈活的感測器配置可以快速適應不同的環境需求。
+> - 學生用它來學習無人機技術和編程，因為提供了完整的硬體和軟體資源，能夠實現實際操作。
+> - 業餘愛好者用它來參加無人機競賽，因為其變形機制和輕量設計能夠提升競賽表現。
 
 ## 架構分析
 
-這是一個前後端分離的專案，使用者輸入 → 組裝無人機 → 輸出可變形無人機。核心技術決策包括使用 Ardupilot 進行自主飛行和多種感測器的搭載。專案目錄結構包括 STL 檔案、自治軟體和 PCB 檔案，方便使用者進行組裝和編程。
+這是一個前後端分離的專案，使用者需要組裝硬體並上傳軟體。用戶輸入 → 組裝無人機 → 上傳軟體 → 無人機自主執行任務。關鍵技術決策包括使用 Raspberry Pi 作為控制器，並利用 Ardupilot 進行導航。專案目錄結構清晰，包含 STL 檔案、PCB 檔案和自動化軟體。
+
+## 技術深入分析
+
+Mercury 的核心技術機制在於其變形設計和多種感測器的整合，這使得無人機能夠在不同的環境下靈活運行。使用 Ardupilot 進行自動導航，這是一個成熟的開源無人機控制平台，能夠處理複雜的飛行任務。這款無人機能夠承載多達 1 公斤的貨物，適合進行小型運輸或監測任務。由於使用 Raspberry Pi 作為控制器，這使得開發者能夠輕鬆地進行軟體擴展和功能調整。然而，這也意味著使用者需要具備一定的編程能力和硬體知識。設計上，選擇開源硬體的方式使得使用者能夠根據需求進行自定義，但也可能導致在大規模應用時出現兼容性問題。整體而言，Mercury 是一個充滿潛力的專案，適合對無人機技術有興趣的開發者和愛好者。
+
+## 新手體驗
+
+> [!info] 上手難度評估
+> README 文件提供了清晰的組裝和軟體配置指南，並附有必要的範例。安裝過程相對順暢，但需要使用者具備一定的技術背景。文件目前僅提供英文版本，對於非英語使用者可能會有一些挑戰。整體來說，花 30 分鐘能夠完成基本的組裝和配置。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 靈活的設計，能夠根據需求變形。
-> - 多樣的感測器配置，適合多種應用場景。
-> - 提供詳細的組裝指導和材料清單，降低入門門檻。
+> - 提供完整的組裝和軟體指南，適合 DIY 愛好者。
+> - 多種感測器配置，能夠應對不同的任務需求。
+> - 變形機制使其在多種環境下運行更靈活。
 
 > [!danger] 缺點
-> - 組裝過程需要一定的技術背景。
-> - 效能依賴於使用者選擇的硬體配置。
-> - 不適合需要高效能商業應用的團隊。
+> - 需要一定的技術背景才能順利組裝和配置。
+> - 目前的硬體需求可能較高，對於預算有限的使用者來說不太友好。
+> - 仍在開發階段，可能會有不穩定的功能或缺陷。
 
 > [!warning] 注意事項
-> - 組裝過程需要一定的技術背景。
-> - 效能依賴於所選用的硬體配置。
-> - 不適合需要高效能商業應用的團隊。
+> - 需要使用者具備一定的硬體組裝能力。
+> - 目前僅支援 Raspberry Pi 作為控制器。
+> - 對於初學者來說，可能需要額外的學習時間來理解軟體配置。
 
 ## 技術細節
 
@@ -143,8 +172,8 @@ pip install -r requirements.txt
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，提供即時支持和交流。
-**連結**：[Discord](https://discord.gg/ZudrWv6E)
+**社群活躍度**：社群活躍度中等，定期更新和互動。
+**連結**：[文件](https://github.com/L42ARO/Mercury-Transforming-Drone/wiki) · [Discord](https://discord.gg/ZudrWv6E)
 
 ## README 摘錄
 
@@ -255,9 +284,9 @@ pip install -r requirements.txt
 
 ## 延伸閱讀
 
-相關概念：[[無人機技術]] · [[開源硬體]] · [[DIY 電子產品]]
+相關概念：[[自動化]] · [[無人機]] · [[開源硬體]]
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]]
 
 [GitHub](https://github.com/L42ARO/Mercury-Transforming-Drone)
 
@@ -316,12 +345,26 @@ pip install -r requirements.txt
 > **不該用的情況**：
 > - 
 
+> [!warning]- 替換成本
+> 若半年後要換掉，難度多高？資料格式是標準的嗎？
+> 
+> 侵入性:: _低 / 中 / 高_
+> 遷移路徑:: _描述_
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

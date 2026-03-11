@@ -7,8 +7,8 @@ language: Go
 license: MIT
 description: "cli for discord with sqlite backend"
 homepage: ""
-stars: 484
-stars_per_day: 161
+stars: 486
+stars_per_day: 162
 forks: 41
 open_issues: 10
 created: 2026-03-07
@@ -16,62 +16,67 @@ pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
-category: "開發工具"
+category: "CLI 工具"
+subcategory: "資料管理"
 release_tag: "v0.1.0"
 install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "將 Discord 伺服器資料鏡像到 SQLite，讓你能在本地搜尋伺服器歷史記錄。"
+use_case: "將 Discord 伺服器資料鏡像到 SQLite，讓你可以在本地搜尋和查詢伺服器歷史紀錄。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
-  - "category/開發工具"
+  - "category/cli_工具"
   - "lang/go"
 aliases:
   - "discrawl"
   - "steipete/discrawl"
-  - "將 Discord 伺服器資料鏡像到 SQLite，讓你能在本地搜尋伺服器歷史記錄。"
+  - "將 Discord 伺服器資料鏡像到 SQLite，讓你可以在本地搜尋和查詢伺服器歷史紀錄。"
 ---
 
 # discrawl
 
-**484** stars · **161** stars/天 · 建立 3 天前 · Go · MIT
+**486** stars · **162** stars/天 · 建立 3 天前 · Go · MIT
 
 `個人專案` `v0.1.0`
 
 > [!summary] 一句話摘要
-> 將 Discord 伺服器資料鏡像到 SQLite，讓你能在本地搜尋伺服器歷史記錄。
+> 將 Discord 伺服器資料鏡像到 SQLite，讓你可以在本地搜尋和查詢伺服器歷史紀錄。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (161 stars/day)
-> **適合** 需要在 Discord 上進行資料分析但不想依賴雲端服務的獨立開發者或小型團隊。
-> **一句話重點** 這個專案讓 Discord 資料的本地化存取變得簡單，適合需要快速搜尋和分析的開發者。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (162 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險)
+> **適合** 需要將 Discord 伺服器資料本地化以便進行深入分析的開發者或社群管理者。
+> **一句話重點** 這個工具讓 Discord 資料的本地化管理變得簡單且安全，適合需要深入分析的用戶。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於提供一個本地化的 Discord 資料搜尋解決方案，避免了依賴 Discord 的搜尋功能。
+> 提供了一個安全的本地化 Discord 資料管理方案，無需用戶令牌。
 
 ## 專案簡介
 
-這個工具 `discrawl` 透過 Discord 機器人令牌，將伺服器的頻道、成員和訊息歷史同步到本地 SQLite 資料庫，讓用戶能快速搜尋和查詢伺服器歷史。它使用 FTS5 建立全文搜尋索引，確保搜尋速度快且高效。與其他工具相比，`discrawl` 不需要用戶令牌，並且所有資料都保留在本地，增強了隱私性。使用者可以透過簡單的指令如 `sync` 和 `search` 來進行資料同步和查詢，並支援多伺服器的架構設計。實際使用中，該工具能夠在多達 32 個並行工作者下進行資料同步，並且能夠即時更新資料庫。這個專案目前處於 beta 階段，適合需要在 Discord 上進行資料分析的小型團隊或個人開發者。建議在需要本地化資料存取和搜尋的情況下使用，但如果你需要更複雜的分析或報告功能，可能需要尋找其他工具。
+這個工具將 Discord 的伺服器資料鏡像到本地的 SQLite 資料庫，讓使用者可以在不依賴 Discord 搜尋的情況下，搜尋、檢查和查詢伺服器歷史紀錄。使用者需要提供一個 Discord 機器人令牌，然後 `discrawl` 會發現所有可存取的公會，並同步頻道、成員及消息歷史到 SQLite 中。它還會維護 FTS5 搜尋索引，以便快速進行本地文字搜尋，並能即時更新資料。與其他類似工具相比，`discrawl` 不需要用戶令牌，所有資料都保留在本地，增加了安全性。這個工具的設計考量了多公會的需求，並提供簡單的單公會使用體驗。使用者可以透過 SQL 查詢進行即時分析，並使用 `sync` 和 `tail` 指令來獲取最新的伺服器資料。整體來說，這是一個適合需要本地化 Discord 資料管理的開發者或社群管理者的工具。
 
-**技術棧**：`Go 1.26+`
+**技術棧**：`Go 1.26+` · `SQLite`
 
 ## 重點功能
 
-- 多伺服器支援 — 能夠同步多個 Discord 伺服器的資料，並保持簡單的單伺服器使用體驗。
-- 全文搜尋 — 使用 FTS5 建立索引，快速搜尋訊息內容，支援多種搜尋條件。
-- 即時更新 — 透過 Gateway 事件即時更新資料庫，保持資料的最新狀態。
-- 簡單的指令操作 — 透過 `sync`、`search` 和 `tail` 等指令輕鬆管理和查詢資料。
-- 本地資料存儲 — 所有資料都保存在本地 SQLite，增強隱私性和安全性。
+- 資料鏡像 — 將 Discord 公會的頻道、成員和消息歷史同步到本地 SQLite。
+- 快速搜尋 — 使用 FTS5 索引進行快速的本地文本搜尋。
+- 即時更新 — 透過 Gateway 事件即時更新資料，保持資料的最新狀態。
+- 多公會支援 — 設計上支援多個公會的資料管理，並提供簡單的單公會使用體驗。
+- SQL 查詢 — 提供讀取權限的 SQL 接口，方便用戶進行即時分析。
 
 ## 快速開始
 
 1. 初始化配置
 ```bash
-bin/discrawl init
+bin/discrawl init --from-openclaw ~/.openclaw/openclaw.json
 ```
-2. 執行健康檢查
+2. 檢查設定
 ```bash
 bin/discrawl doctor
 ```
@@ -79,47 +84,84 @@ bin/discrawl doctor
 ```bash
 bin/discrawl sync --full
 ```
+4. 搜尋特定消息
+```bash
+bin/discrawl search "panic: nil pointer"
+```
+5. 即時更新資料
+```bash
+bin/discrawl tail
+```
 
 ## 程式碼範例
 
 ```bash
+# 將 Discord 公會資料同步到本地
+bin/discrawl sync --full
+
+# 搜尋特定的消息
 bin/discrawl search "panic: nil pointer"
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 steipete 在 Discord 開發社群中活躍，這個工具切中許多用戶對於資料隱私和本地搜尋的需求。隨著 Discord 使用者數量的增加，對於伺服器歷史資料的需求也隨之上升，這使得 `discrawl` 在這個時機點受到關注。
+> 作者 steipete 之前有開發過其他 Discord 相關的工具，這次的 `discrawl` 專注於將 Discord 資料本地化，解決了用戶無法有效搜尋伺服器歷史的痛點。最近有關於 Discord 資料隱私的討論也讓這個工具受到關注。這個工具的推出正好符合了開發者對於資料安全和本地化管理的需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Discord 上進行資料分析但不想依賴雲端服務的獨立開發者或小型團隊。
+**目標受眾**：需要將 Discord 伺服器資料本地化以便進行深入分析的開發者或社群管理者。
 
 > [!example] 使用場景
-> - Discord 伺服器管理員用它來將伺服器歷史資料同步到本地 SQLite，因為這樣可以快速查詢過去的訊息，避免依賴 Discord 的搜尋功能。
-> - 資料分析師用它來分析伺服器的成員互動，因為可以透過 SQL 查詢輕鬆獲得所需的數據，提升工作效率。
-> - 開發者用它來在本地環境中測試 Discord 機器人，因為可以快速重現歷史訊息，便於調試和開發。
+> - 社群管理者用它來將 Discord 伺服器的歷史消息同步到本地資料庫，因為這樣可以快速搜尋過去的對話，而不必依賴 Discord 的搜尋功能。
+> - 開發者用它來分析 Discord 伺服器的成員互動，因為可以使用 SQL 查詢來獲取具體的數據，這比手動查詢更高效。
+> - 數據分析師用它來檢視 Discord 伺服器的活動趨勢，因為資料都保存在本地，能夠進行更深入的數據分析而不需要擔心資料隱私問題。
 
 ## 架構分析
 
-這是一個 CLI 工具，架構模式為單體應用。用戶輸入 → Discord API → SQLite 資料庫。核心技術決策包括使用 FTS5 進行快速搜尋和使用 Go 語言進行高效的資料處理。專案目錄結構中，關鍵檔案包括 `cmd/discrawl` 目錄下的主執行檔。
+這是一個 CLI 工具，主要架構為單體應用。用戶輸入 → `discrawl` 處理 Discord 資料 → 輸出到 SQLite 資料庫。關鍵技術決策包括使用 Go 語言來實現高效的資料處理和即時更新。專案目錄結構中包含主要的執行檔和配置檔案，方便用戶設定和使用。
+
+## 技術深入分析
+
+這個專案使用 Go 語言來實現高效的資料處理，並利用 SQLite 作為後端資料庫，這樣的選擇使得資料的存取速度相對較快。它能夠處理多達數十萬條消息的資料，並且透過 FTS5 索引來加速搜尋過程。設計上考量了多公會的需求，讓使用者能夠輕鬆管理多個伺服器的資料。選擇 Go 語言的好處在於其高效能和簡單的佈署流程，但可能會在某些複雜查詢上遇到性能瓶頸。隨著資料量的增加，如何維持搜尋效能將是未來需要解決的問題。
+
+## 新手體驗
+
+> [!info] 上手難度評估
+> README 文件提供了清晰的指導和範例，安裝過程相對順暢，但需要用戶具備一定的 Discord 機器人設定知識。整體上，花 30 分鐘內能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供本地化資料存取，增強隱私性。
-> - 支援多伺服器資料同步，方便管理。
-> - 使用簡單的 CLI 指令，適合快速上手。
+> - 本地化資料管理，提升資料安全性。
+> - 快速的本地搜尋功能，無需依賴 Discord 的搜尋。
+> - 支援即時更新，保持資料的最新狀態。
 
 > [!danger] 缺點
-> - 僅支援 SQLite，對於大型資料集可能不夠靈活。
-> - 需要正確的機器人權限設置，否則功能受限。
-> - 目前功能相對簡單，缺乏進階的分析工具。
+> - 需要正確的機器人權限，設定較為繁瑣。
+> - 僅支援 SQLite，對於大型資料可能不夠靈活。
+> - 對於不熟悉 SQL 的用戶，查詢可能有一定的學習曲線。
 
 > [!warning] 注意事項
-> - 需要 Discord 機器人令牌，無法使用用戶令牌。
-> - 需要適當的機器人權限，否則同步和查詢可能會失敗。
+> - 需要有效的 Discord 機器人令牌，無法使用用戶令牌。
+> - 需要適當的機器人權限，否則資料同步可能不完整。
 > - 目前僅支援 SQLite 作為後端資料庫，無法直接使用其他資料庫。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這個工具專注於 Discord 資料的同步，但不具備本地搜尋功能，適合需要簡單同步的用戶。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 這個工具主要用於特定領域的 Discord 資料管理，功能較為專一，不如 `discrawl` 通用。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 |
+| --- | --- | --- |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於 Discord 資料同步，不具備本地搜尋功能。 | 如果只需要簡單的資料同步而不需要本地化搜尋功能。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 針對特定領域的 Discord 資料管理，功能較為專一。 | 如果需要針對醫療領域的 Discord 資料進行管理和分析。 |
 
 ## 技術細節
 
@@ -137,6 +179,11 @@ bin/discrawl search "panic: nil pointer"
 > | [@steipete](https://github.com/steipete) | 37 |
 
 **最新版本**：v0.1.0 (2026-03-08)
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，有定期更新和維護。
+**連結**：[文件](https://github.com/steipete/discrawl#readme)
 
 ## README 摘錄
 
@@ -295,9 +342,9 @@ bin/discrawl search "panic: nil pointer"
 
 ## 延伸閱讀
 
-相關概念：[[API 設計]] · [[資料視覺化]] · [[機器學習]]
+相關概念：[[CLI/TUI]] · [[資料視覺化]] · [[自動化]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[jackwener--twitter-cli|jackwener/twitter-cli]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[sanbuphy--nanoAgent|sanbuphy/nanoAgent]]
 
 [GitHub](https://github.com/steipete/discrawl)
 
@@ -307,7 +354,7 @@ bin/discrawl search "panic: nil pointer"
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "steipete--discrawl"
+> WHERE category = "CLI 工具" AND file.name != "steipete--discrawl"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -356,12 +403,26 @@ bin/discrawl search "panic: nil pointer"
 > **不該用的情況**：
 > - 
 
+> [!warning]- 替換成本
+> 若半年後要換掉，難度多高？資料格式是標準的嗎？
+> 
+> 侵入性:: _低 / 中 / 高_
+> 遷移路徑:: _描述_
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

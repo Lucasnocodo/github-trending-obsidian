@@ -79,32 +79,6 @@ GROUP BY status
 SORT length(rows) DESC
 ```
 
-## Tech Radar 總覽
-
-```dataview
-TABLE WITHOUT ID
-  ring AS "Ring",
-  length(rows) AS "數量",
-  rows.file.link AS "專案"
-FROM "Repos"
-WHERE ring != null AND ring != ""
-GROUP BY ring
-SORT choice(ring, "adopt", 1, choice(ring, "trial", 2, choice(ring, "assess", 3, 4))) ASC
-```
-
-## 有結論的專案
-
-```dataview
-TABLE
-  verdict AS "結論",
-  ring AS "Ring",
-  ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分",
-  category AS "分類"
-FROM "Repos"
-WHERE verdict != "" AND verdict != null
-SORT my_rating DESC
-```
-
 ## 爆紅專案 Top 15
 
 ```dataview
@@ -191,22 +165,6 @@ GROUP BY category
 SORT length(rows) DESC
 ```
 
-## 依子分類瀏覽
-
-> [!tip]- 展開查看細分類
-
-```dataview
-TABLE WITHOUT ID
-  category AS "主分類",
-  subcategory AS "子分類",
-  length(rows) AS "數量",
-  rows.file.link AS "專案"
-FROM "Repos"
-WHERE subcategory != ""
-GROUP BY category + " / " + subcategory
-SORT length(rows) DESC
-```
-
 ## 依語言瀏覽
 
 ```dataview
@@ -269,7 +227,7 @@ const pages = dv.pages('"Repos"')
     if (!p.first_seen || !p.pushed_at) return false;
     const daysSinceSeen = (new Date() - new Date(p.first_seen?.toString())) / 86400000;
     const daysSincePush = (new Date() - new Date(p.pushed_at?.toString())) / 86400000;
-    return daysSinceSeen > 7 && daysSincePush < 7 && (p.stars_per_day || 0) > 50;
+    return daysSinceSeen > 7 && daysSincePush < 7 && (p.stars_per_day || 0) > 100;
   })
   .sort(p => p.stars, "desc");
 
@@ -328,18 +286,6 @@ dv.table(
     Math.round(d.stars / d.count).toLocaleString()
   ])
 );
-```
-
-## 授權分佈
-
-```dataview
-TABLE WITHOUT ID
-  license AS "授權",
-  length(rows) AS "數量",
-  rows.file.link AS "專案"
-FROM "Repos"
-GROUP BY license
-SORT length(rows) DESC
 ```
 
 ## Easy Install 專案
@@ -408,35 +354,6 @@ if (orphans.length > 0) {
   );
 } else {
   dv.paragraph("所有筆記都有足夠的連結！");
-}
-```
-
-## 熱門概念（被最多專案引用）
-
-```dataviewjs
-const pages = dv.pages('"Repos"');
-const conceptCounts = {};
-for (const p of pages) {
-  const extMatch = p.file.outlinks?.filter(l => {
-    const target = dv.page(l.path);
-    return target?.tags?.includes("concept");
-  }) || [];
-  for (const link of extMatch) {
-    const name = link.path.split("/").pop();
-    conceptCounts[name] = (conceptCounts[name] || 0) + 1;
-  }
-}
-const sorted = Object.entries(conceptCounts)
-  .sort((a, b) => b[1] - a[1])
-  .slice(0, 15);
-if (sorted.length > 0) {
-  dv.table(
-    ["概念", "引用次數", "視覺化"],
-    sorted.map(([name, count]) => {
-      const bar = "█".repeat(count) + "░".repeat(Math.max(0, 20 - count));
-      return [dv.fileLink("Concepts/" + name, false, name), count, bar];
-    })
-  );
 }
 ```
 

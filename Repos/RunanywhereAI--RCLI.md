@@ -7,9 +7,9 @@ language: C++
 license: MIT
 description: "Talk to your Mac, query your docs, no cloud required. On-device voice AI + RAG"
 homepage: "https://runanywhereai.github.io/RCLI/"
-stars: 471
-stars_per_day: 79
-forks: 16
+stars: 513
+stars_per_day: 86
+forks: 17
 open_issues: 10
 created: 2026-03-04
 pushed_at: 2026-03-10
@@ -17,13 +17,17 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "AI/ML"
+subcategory: "語音合成"
 release_tag: "v0.3.3"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "讓你的 Mac 透過語音助手進行操作，無需雲端，完全在本地運行。"
+use_case: "讓你在 Mac 上用語音控制應用程式，無需雲端，完全在本地運行。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/ai_ml"
@@ -38,39 +42,40 @@ tags:
 aliases:
   - "RCLI"
   - "RunanywhereAI/RCLI"
-  - "讓你的 Mac 透過語音助手進行操作，無需雲端，完全在本地運行。"
+  - "讓你在 Mac 上用語音控制應用程式，無需雲端，完全在本地運行。"
 ---
 
 # RCLI
 
-**471** stars · **79** stars/天 · 建立 6 天前 · C++ · MIT
+**513** stars · **86** stars/天 · 建立 6 天前 · C++ · MIT
 
 `ORG` `v0.3.3` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓你的 Mac 透過語音助手進行操作，無需雲端，完全在本地運行。
+> 讓你在 Mac 上用語音控制應用程式，無需雲端，完全在本地運行。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (79 stars/day)
-> **適合** 需要在 Apple Silicon 上運行本地語音 AI 的獨立開發者和專業人士。
-> **一句話重點** RCLI 的最大優勢在於其完全本地化的設計，讓用戶在不依賴雲端的情況下享受高效的語音助手體驗。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (86 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人
+> **適合** 需要在 M3 Mac 上運行本地語音助手的開發者和普通用戶。
+> **一句話重點** RCLI 的本地運行特性讓語音助手變得更快、更私密，適合需要快速查詢和操作的用戶。
 
 > [!abstract] 核心創新
-> RCLI 是首個在 Apple Silicon 上實現的完全本地語音 AI，無需雲端服務。
+> RCLI 是一個完全本地運行的語音 AI，無需雲端支持，提供即時語音控制和文檔查詢。
 
 ## 專案簡介
 
-RCLI 是一個專為 macOS 設計的本地語音 AI，能夠實現語音控制和文檔查詢。它的核心流程是通過語音輸入來執行 38 種 macOS 操作，並且支持對本地文檔進行檢索和提問，整個過程延遲低於 200 毫秒。技術上，它使用了 MetalRT 作為 GPU 推理引擎，專為 Apple Silicon 優化，並結合了多種語音識別和合成技術，如 Zipformer 和 Whisper。與其他語音助手相比，RCLI 不依賴雲端服務，這使得它在隱私和速度上具有優勢。實際使用中，RCLI 能夠在 M3 Max 上實現 STT 和 TTS 的即時反應，並且支持多達 5K+ 文檔的快速檢索。這個專案目前處於 beta 階段，對於需要快速本地語音處理的開發者來說非常值得一試。建議在需要高效能語音控制的環境中使用，但如果你的硬體不支持 MetalRT，則可能會遇到性能瓶頸。
+RCLI 是一個在 macOS 上運行的本地語音 AI，能夠進行語音識別、語言模型推理和語音合成。用戶可以透過語音指令控制 Mac，執行 38 種操作，並能夠對本地文件進行查詢，整個過程的延遲低於 200 毫秒。它使用 MetalRT，一個專為 Apple Silicon 設計的 GPU 推理引擎，提供高達 550 tok/s 的 LLM 吞吐量。與其他工具相比，RCLI 的本地處理能力使得用戶不需要依賴雲端服務，這在隱私和速度上都有明顯優勢。它的文檔智能功能支持快速檢索，對於 5K+ 的文檔片段，查詢延遲僅約 4 毫秒。這個專案目前處於 beta 階段，適合需要快速、私密的語音助手的開發者和用戶。對於小型團隊或個人開發者來說，RCLI 是一個值得考慮的選擇，但在 M1/M2 上的性能會有所下降，建議使用 M3 或更高版本的設備。使用場景包括需要快速查詢文檔的專業人士，或是希望用語音控制日常任務的普通用戶。
 
-**技術棧**：`C++` · `Shell` · `CMake` · `Ruby` · `Objective-C++`
+**技術棧**：`C++` · `Shell` · `CMake` · `Objective-C++`
 
 ## 重點功能
 
-- 本地語音處理 — 完整的 STT + LLM + TTS 管道，無需雲端，延遲低於 200 毫秒。
-- 38 種 macOS 操作 — 支持語音控制多種系統功能，如開啟應用、播放音樂、調整音量等。
-- 文檔智能檢索 — 支持 PDF、DOCX 和純文本的本地文檔檢索，查詢延遲約 4 毫秒。
-- 互動式 TUI — 提供推按說話、模型管理和操作瀏覽的終端界面。
-- MetalRT 引擎 — 專為 Apple Silicon 優化的 GPU 推理引擎，支持高效能的語音識別和合成。
+- 本地語音控制 — 支持 38 種 macOS 操作，如 `open_app`, `create_note`。
+- 即時語音識別 — 使用 Zipformer 和 Whisper，提供 sub-200ms 的延遲。
+- 文檔智能查詢 — 支持 PDF 和 DOCX 文件的快速檢索，查詢延遲約 4ms。
+- MetalRT GPU 引擎 — 提供高達 550 tok/s 的 LLM 吞吐量，專為 Apple Silicon 設計。
+- 互動式 TUI — 提供推按說話和模型管理的終端界面。
 
 ## 快速開始
 
@@ -82,70 +87,74 @@ curl -fsSL https://raw.githubusercontent.com/RunanywhereAI/RCLI/main/install.sh 
 ```bash
 brew tap RunanywhereAI/rcli https://github.com/RunanywhereAI/RCLI.git
 ```
-3. 設置 AI 模型
+3. 設置 RCLI
 ```bash
 rcli setup
 ```
 
 ## 程式碼範例
 
+bash
+# 啟動 RCLI 互動式界面
+rcli
+
+# 使用語音指令打開 Safari
 rcli ask "open Safari"
+
+# 查詢文檔中的項目
+rcli ask --rag ~/Library/RCLI/index "summarize the project plan"
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者背景來自 RunAnywhere, Inc.，專注於本地 AI 解決方案，切中了對隱私和速度的需求。隨著 Apple Silicon 的普及，這個專案的需求逐漸上升，特別是在不希望依賴雲端的用戶中。最近的版本更新進一步提升了性能和穩定性。
+> 作者 RunAnywhere, Inc. 專注於開發本地 AI 解決方案，這是他們的最新產品。RCLI 解決了語音助手需要依賴雲端的痛點，讓用戶可以在本地進行語音識別和操作。近期的技術進步，尤其是 Apple Silicon 的性能提升，使得這種本地處理成為可能。這些因素共同推動了 RCLI 的關注度。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Apple Silicon 上運行本地語音 AI 的獨立開發者和專業人士。
+**目標受眾**：需要在 M3 Mac 上運行本地語音助手的開發者和普通用戶。
 
 > [!example] 使用場景
-> - 產品經理用它來快速查詢本地文檔的關鍵資訊，因為它能在 ~4ms 內完成檢索，節省了大量手動搜索的時間。
-> - 開發者用它來通過語音控制 Mac 的應用程式，因為可以用簡單的語音指令來執行多達 38 種操作，提升了工作效率。
-> - 設計師用它來調整音樂播放和音量，因為可以用語音命令控制 Spotify 和 Apple Music，讓工作環境更流暢。
+> - 設計師用它來快速查詢設計文檔，因為可以用語音指令在 4 毫秒內檢索信息，節省了手動搜索的時間。
+> - 開發者用它來控制開發環境，例如用語音打開特定應用，因為這樣可以提高工作效率，讓雙手專注於鍵盤操作。
+> - 普通用戶用它來播放音樂或調整音量，因為可以用語音指令控制 Spotify，避免了手動操作的麻煩。
 
 ## 架構分析
 
-RCLI 採用 CLI 工具架構，核心資料流為用戶語音輸入 → MetalRT 引擎處理 → 執行 macOS 操作或返回語音回應。關鍵技術決策在於使用 MetalRT 進行 GPU 加速，並整合多種語音處理技術。專案目錄結構中，主要的執行檔和配置檔位於 src 和 config 目錄下。
+RCLI 採用單體架構，所有功能均在本地運行。用戶輸入 → 語音識別 → LLM 處理 → 語音合成。關鍵技術決策包括使用 MetalRT 作為 GPU 推理引擎，以提高性能。專案目錄結構中，主要的執行檔和配置文件集中在 `src` 和 `config` 資料夾中。
 
 ## 技術深入分析
 
-> [!note]- 展開深入分析
-> RCLI 的核心演算法結合了多種語音處理技術，包括 Silero 的語音活動檢測和 Zipformer 的即時語音識別。MetalRT 引擎的設計使其在 Apple M3 Max 上的 STT 和 TTS 性能達到即時反應，並且在多任務處理時保持高效能。與其他語音助手相比，RCLI 的設計選擇專注於本地運行，這使得它在隱私和速度上具有顯著優勢。
+RCLI 的核心技術機制包括使用 MetalRT 作為 GPU 推理引擎，這使得語音識別和合成的延遲大幅降低。它能夠處理多達 5K+ 的文檔片段，並在查詢時提供約 4 毫秒的延遲，這在同類工具中是相當優秀的。選擇 C++ 和 Objective-C++ 作為開發語言，能夠充分利用 Apple Silicon 的性能優勢，這樣的選擇使得 RCLI 可以在本地高效運行。隨著用戶量增加，可能會面臨性能瓶頸，特別是在 M1/M2 設備上，這需要進一步的優化和改進。安全性方面，由於所有數據處理都在本地進行，這大大降低了數據洩露的風險，這對於用戶來說是一個重要的考量。整體來看，RCLI 在本地語音助手領域提供了一個強有力的選擇，尤其是對於需要高效能和隱私保護的用戶。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 完全本地運行，無需雲端，提升隱私性。
-> - 低延遲的語音處理，適合即時應用。
-> - 支持多種 macOS 操作，提升工作效率。
-> - 可擴展性強，支持多種文檔格式的檢索。
+> - 無需雲端，保護用戶隱私。
+> - 低延遲的即時語音識別和合成，適合快速查詢。
+> - 支持多種 macOS 操作，方便用戶日常使用。
 
 > [!danger] 缺點
-> - 僅限於 Apple Silicon，對於其他平台無法使用。
-> - 需要較新的硬體才能發揮最佳性能。
-> - 目前功能仍在持續開發中，可能存在不穩定性。
-> - 對於小型 LLM，累積的上下文可能影響準確性。
+> - 僅支援最新的 Apple Silicon 設備。
+> - 在 M1/M2 上性能不如 M3，可能影響使用體驗。
+> - 目前仍在 beta 階段，可能存在不穩定性。
 
 > [!warning] 注意事項
-> - 僅支援 macOS 13+ 的 Apple Silicon。
-> - MetalRT 引擎需要 M3 或更高版本的硬體。
-> - 對於 M1/M2 Mac，會自動回退到 llama.cpp，性能可能不如 M3。
-> - 目前處於 beta 階段，可能存在不穩定的情況。
+> - 僅支援 macOS 13+ 和 Apple Silicon。
+> - 在 M1/M2 上性能不如 M3，會自動回退到 llama.cpp。
+> - 目前處於 beta 階段，可能會有不穩定的情況。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [[alexa--alexa\|alexa/alexa]] | Alexa 依賴雲端服務進行語音識別和控制，而 RCLI 完全在本地運行，提供更快的反應時間和更高的隱私性。 |
-| [[google--assistant\|google/assistant]] | Google Assistant 需要網路連接來執行大部分功能，而 RCLI 可以在無網路的情況下運行，適合對隱私有高要求的用戶。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 提供雲端語音助手的功能，但需要網路連接，而 RCLI 完全在本地運行，保護用戶隱私。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | OpenClaw 專注於醫療領域的語音助手，而 RCLI 是一個通用的本地語音助手，適用於各種日常任務。 |
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 16 |
+| Forks | 17 |
 | Open Issues | 10 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-04 |
@@ -172,7 +181,7 @@ RCLI 採用 CLI 工具架構，核心資料流為用戶語音輸入 → MetalRT 
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，持續更新中。
+**社群活躍度**：社群活躍度中等，有定期更新和維護。
 **連結**：[文件](https://runanywhereai.github.io/RCLI/)
 
 ## README 摘錄
@@ -312,9 +321,9 @@ RCLI 採用 CLI 工具架構，核心資料流為用戶語音輸入 → MetalRT 
 
 ## 延伸閱讀
 
-相關概念：[[語音合成]] · [[本地 AI]] · [[隱私保護]] · [[自動化測試]]
+相關概念：[[語音合成]] · [[本地 AI]] · [[隱私保護]]
 
-相關專案：[[alexa--alexa|alexa/alexa]] · [[google--assistant|google/assistant]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[binance--binance-skills-hub|binance/binance-skills-hub]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[alexa--alexa|alexa/alexa]] · [[google--assistant|google/assistant]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[duoan--TorchCode|duoan/TorchCode]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]] · [[helenigtxu--TradingView-Claw|helenigtxu/TradingView-Claw]] · [[inspatio--worldfm|inspatio/worldfm]] · [[karpathy--autoresearch|karpathy/autoresearch]] · [[tanishqkumar--ssd|tanishqkumar/ssd]]
 
 [GitHub](https://github.com/RunanywhereAI/RCLI) · [官方網站](https://runanywhereai.github.io/RCLI/)
 
@@ -373,12 +382,26 @@ RCLI 採用 CLI 工具架構，核心資料流為用戶語音輸入 → MetalRT 
 > **不該用的情況**：
 > - 
 
+> [!warning]- 替換成本
+> 若半年後要換掉，難度多高？資料格式是標準的嗎？
+> 
+> 侵入性:: _低 / 中 / 高_
+> 遷移路徑:: _描述_
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

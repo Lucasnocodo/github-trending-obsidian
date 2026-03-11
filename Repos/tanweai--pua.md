@@ -7,61 +7,69 @@ language: TypeScript
 license: N/A
 description: "你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。"
 homepage: "https://pua-skill.pages.dev/"
-stars: 530
-stars_per_day: 265
-forks: 17
-open_issues: 7
+stars: 581
+stars_per_day: 291
+forks: 20
+open_issues: 8
 created: 2026-03-08
 pushed_at: 2026-03-09
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
-category: "AI/ML"
+category: "開發工具"
+subcategory: "調試"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "讓 AI 在面對問題時不輕言放棄，透過 PUA 方式提升調試能力。"
+use_case: "讓 AI 積極面對問題，避免放棄，提升調試效率。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
-  - "category/ai_ml"
+  - "category/開發工具"
   - "lang/typescript"
+  - easy_install
 aliases:
   - "pua"
   - "tanweai/pua"
-  - "讓 AI 在面對問題時不輕言放棄，透過 PUA 方式提升調試能力。"
+  - "讓 AI 積極面對問題，避免放棄，提升調試效率。"
 ---
 
 # pua
 
-**530** stars · **265** stars/天 · 建立 2 天前 · TypeScript · 未標註授權
+**581** stars · **291** stars/天 · 建立 2 天前 · TypeScript · 未標註授權
+
+`easy-install`
 
 > [!summary] 一句話摘要
-> 讓 AI 在面對問題時不輕言放棄，透過 PUA 方式提升調試能力。
+> 讓 AI 積極面對問題，避免放棄，提升調試效率。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (265 stars/day)
-> **適合** 需要提升 AI 調試能力的中小型開發團隊。
-> **一句話重點** 這個專案透過 PUA 方式讓 AI 在調試過程中不輕言放棄，提升了整體效率。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (291 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** 3 人
+> **適合** 需要提升 AI 調試能力的開發團隊和工程師。
+> **一句話重點** 這個專案讓 AI 在調試過程中不再被動，而是主動尋找解決方案，顛覆了傳統的調試方式。
 
 > [!abstract] 核心創新
-> 這個專案最核心的創新點是透過 PUA 方式強化 AI 的調試能力，讓其在面對挑戰時不輕言放棄。
+> 這個專案通過 PUA 话术和調試方法論，讓 AI 在面對問題時不輕言放棄，提升調試效率。
 
 ## 專案簡介
 
-這個專案是一個 Claude Code 插件，旨在讓 AI 在面對問題時不輕言放棄。它透過三重能力：PUA 话术、调试方法论和能动性鞭策，來強化 AI 的調試過程。技術上，它使用 TypeScript 和 JavaScript，並且能夠在 Claude 和 OpenAI Codex 等平台上運行。與傳統的調試工具相比，它不僅提供了錯誤修復的建議，還強調了主動出擊和穷尽所有方案的重要性。實測數據顯示，使用此插件後，修復點數提升了 36%，工具調用率提升了 50%。這個專案的成熟度已經達到穩定階段，適合中小型團隊使用。若你的團隊經常面對調試困難，這個工具可以幫助提高效率，但對於已經有成熟調試流程的團隊，可能不會有太大幫助。
+這個專案提供了一個 Claude Code 插件，旨在讓 AI 在面對問題時不輕言放棄。當 AI 遇到連續失敗或即將放棄時，插件會自動激活，透過 PUA 话术激勵 AI 積極尋找解決方案。具體來說，當 AI 說出 '我無法解決' 或者推卸責任時，插件會強制其進行不同的調試方法，並要求其主動出擊，提供完整的解決方案。技術上，這個插件使用 TypeScript 和 JavaScript 開發，並利用 Claude 的插件架構進行擴展。與其他調試工具相比，PUA 插件強調主動性和全面性，避免了傳統工具的被動等待和重複無效嘗試。實測數據顯示，使用該插件後，修復點數提升了 36%，驗證次數提升了 65%。這意味著在調試過程中，AI 能夠更有效率地找到問題根源。該專案目前處於穩定階段，適合需要提升 AI 調試能力的團隊使用。建議在面對複雜問題或多層次錯誤時使用，但對於簡單問題或已知解決方案則不必啟用。
 
 **技術棧**：`TypeScript` · `JavaScript` · `HTML` · `CSS`
 
 ## 重點功能
 
-- PUA 话术 — 透過激勵語言讓 AI 不輕言放棄，提升調試持久力。
-- 调试方法论 — 包含五步驟的調試流程，幫助 AI 系統性解決問題。
-- 能动性鞭策 — 促使 AI 主動出擊，減少被動等待的情況。
-- 自動觸發條件 — 根據 AI 的表現自動激活，提升調試效率。
-- 手動觸發命令 — 輸入 `/pua` 可隨時手動啟動該技能。
+- PUA 话术 — 當 AI 遇到放棄情況時，自動激活激勵話術。
+- 調試方法論 — 提供系統化的調試步驟，幫助 AI 積極尋找解決方案。
+- 能動性鞭策 — 促使 AI 主動出擊，而不是被動等待。
+- 自動觸發 — 根據 AI 的表現自動激活，提升調試效率。
+- 手動觸發 — 用戶可在對話中輸入指令手動啟用該技能。
 
 ## 快速開始
 
@@ -69,7 +77,7 @@ aliases:
 ```bash
 claude plugin marketplace add tanweai/pua
 ```
-2. 手動安裝
+2. 手動安裝插件
 ```bash
 git clone https://github.com/tanweai/pua.git ~/.claude/plugins/pua
 ```
@@ -81,46 +89,60 @@ curl -o ~/.codex/skills/pua-debugging/SKILL.md https://raw.githubusercontent.com
 ## 程式碼範例
 
 ```bash
-claude plugin install pua@pua-skills
+# 手動激活 PUA 插件
+/pua
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者來自探微安全實驗室，專注於提升 AI 的調試能力，切中企業對於 AI 效率的需求。隨著 AI 應用的普及，對於調試能力的提升需求也越來越迫切，這使得此專案在市場上受到關注。
+> 作者 tanweai 來自探微安全實驗室，過去專注於 AI 和安全領域的研究。這個工具解決了 AI 在調試過程中常見的放棄和推卸責任的問題，提供了一種新的思路來提升 AI 的主動性。近期在社群中引發討論，尤其是在開發者圈子中，因為它挑戰了傳統的調試方式。隨著 AI 應用的擴展，對於提升 AI 效率的需求越來越迫切。
 
 ## 適合誰使用
 
-**目標受眾**：需要提升 AI 調試能力的中小型開發團隊。
+**目標受眾**：需要提升 AI 調試能力的開發團隊和工程師。
 
 > [!example] 使用場景
-> - 後端工程師用它來自動化調試過程，因為它能提升修復效率，減少手動查錯時間。
-> - AI 開發者用它來強化 AI 的問題解決能力，因為它能讓 AI 在面對挑戰時不輕言放棄，提升成功率。
-> - 產品經理用它來監控 AI 的調試表現，因為它提供了詳細的性能數據，幫助優化 AI 的表現。
+> - 軟體工程師用它來提升 AI 在調試過程中的主動性，因為傳統工具常常讓 AI 被動等待，導致效率低下。
+> - DevOps 工程師用它來確保 AI 在運維任務中不會因為環境問題而放棄，因為這樣能夠減少故障時間，提高系統穩定性。
+> - 產品經理用它來測試 AI 在面對複雜問題時的反應，因為能夠更好地評估 AI 的實際能力和潛在風險。
+
+## 架構分析
+
+這是一個基於插件架構的系統，主要由前端和後端組成。用戶輸入 → PUA 插件處理 → AI 主動出擊。關鍵技術決策包括使用 TypeScript 和 JavaScript 開發，並利用 Claude 的插件系統進行擴展。專案目錄結構包括主要的技能檔案和 README 文件。
+
+## 技術深入分析
+
+PUA 插件的核心技術機制在於其使用的 PUA 话术和調試方法論，這些方法論源自於中國大廠的實踐，強調穩定性和主動性。該插件能夠處理多種調試場景，並在實測中顯示出顯著的效率提升。設計上選擇 TypeScript 和 JavaScript，這使得開發過程中更易於維護和擴展。這個選擇也帶來了良好的性能和可讀性。隨著使用者的增多，可能會面臨擴展性和性能瓶頸的挑戰，特別是在高並發的情況下。安全性方面，插件需要確保不會因為過度激勵而導致錯誤的解決方案被執行。
+
+## 新手體驗
+
+> [!info] 上手難度評估
+> README 文件清晰且包含安裝步驟和使用範例，讓新手能夠快速上手。安裝過程相對順暢，沒有明顯的坑。文檔目前僅提供英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提升 AI 的調試能力，讓其在面對問題時不輕言放棄。
-> - 提供系統化的調試方法論，幫助用戶更有效地解決問題。
-> - 能自動觸發，減少用戶的操作負擔。
+> - 提升 AI 調試的主動性，減少放棄情況。
+> - 提供系統化的調試方法，幫助 AI 更有效率地找到問題。
+> - 自動和手動觸發功能，靈活應對不同場景。
 
 > [!danger] 缺點
-> - 僅限於特定平台，無法在所有環境中使用。
-> - 需要用戶具備一定的調試基礎，否則可能難以上手。
-> - 對於簡單問題的調試可能顯得過於繁瑣。
+> - 僅適用於特定的 AI 環境，限制了使用範圍。
+> - 在簡單問題上可能造成不必要的複雜性。
+> - 需要用戶主動輸入指令才能啟用。
 
 > [!warning] 注意事項
-> - 僅支援 Claude 和 OpenAI Codex 平台。
-> - 需要一定的調試基礎，對於完全不熟悉的用戶可能需要時間適應。
-> - 不適用於首次嘗試的問題，僅在多次失敗後有效。
+> - 僅適用於 Claude 和 Codex 環境。
+> - 對於已知修復方案的情況不會觸發。
+> - 可能在簡單問題上造成不必要的複雜性。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 17 |
-| Open Issues | 7 |
+| Forks | 20 |
+| Open Issues | 8 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-08 |
 | 官方網站 | [Link](https://pua-skill.pages.dev/) |
@@ -141,6 +163,11 @@ claude plugin install pua@pua-skills
 > | [@xsser](https://github.com/xsser) | 10 |
 > | [@tanweai](https://github.com/tanweai) | 1 |
 > | [@bllli](https://github.com/bllli) | 1 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，有持續更新和討論。
+**連結**：[文件](https://pua-skill.pages.dev/)
 
 ## README 摘錄
 
@@ -319,9 +346,9 @@ claude plugin install pua@pua-skills
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[機器學習]] · [[API 設計]]
+相關概念：[[自動化測試]] · [[機器學習]] · [[程式碼生成]]
 
-相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]]
+相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[duoan--TorchCode|duoan/TorchCode]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[jshachm--pi-rs|jshachm/pi-rs]] · [[twostraws--SwiftUI-Agent-Skill|twostraws/SwiftUI-Agent-Skill]]
 
 [GitHub](https://github.com/tanweai/pua) · [官方網站](https://pua-skill.pages.dev/)
 
@@ -331,7 +358,7 @@ claude plugin install pua@pua-skills
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "AI/ML" AND file.name != "tanweai--pua"
+> WHERE category = "開發工具" AND file.name != "tanweai--pua"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -380,13 +407,28 @@ claude plugin install pua@pua-skills
 > **不該用的情況**：
 > - 
 
+> [!warning]- 替換成本
+> 若半年後要換掉，難度多高？資料格式是標準的嗎？
+> 
+> 侵入性:: _低 / 中 / 高_
+> 遷移路徑:: _描述_
+
 ### 想法與筆記
 
 _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，556 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，517 stars
