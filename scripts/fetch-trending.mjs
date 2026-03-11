@@ -4543,9 +4543,21 @@ function extractUserSection(content) {
   return { userNotes, appearances };
 }
 
-function needsRefresh(content) {
-  // 檢查是否缺少任何必要的格式元素
-  // 注意：每次加入新欄位時，加入新條件可觸發全面刷新
+// 輕量修補：這些欄位可以不呼叫 LLM 直接修補
+function needsLightPatch(content) {
+  const patches = [];
+  if (!content.includes('contributor_count:')) patches.push('contributor_count');
+  if (!content.includes('OpenSSF Scorecard')) patches.push('openssf');
+  if (!content.includes('## Star 趨勢')) patches.push('star_trend');
+  if (!content.includes('## 決策分數')) patches.push('decision_score');
+  if (!content.includes('健康度儀表板')) patches.push('health_dashboard');
+  if (!content.includes('## Vault 排名')) patches.push('vault_ranking');
+  if (!content.includes('同 Owner 專案')) patches.push('same_owner');
+  return patches;
+}
+
+// 完整刷新：這些欄位需要 LLM 重新生成
+function needsFullRefresh(content) {
   return !content.includes('install_complexity:') ||
          !content.includes('my_rating:') ||
          !content.includes('pushed_at:') ||
@@ -4569,14 +4581,191 @@ function needsRefresh(content) {
          !content.includes('ring_history:') ||     // v13: 狀態變更歷程
          !content.includes('成熟度評估') ||            // v14: 成熟度評估 + 強化替代方案 + 預期輸出
          !content.includes('## 開發動態') ||             // v15: 開發動態 + 熱門議題
-         !content.includes('直接競品') ||                  // v16: 同子分類競品 + 共用概念
-         !content.includes('## Vault 排名') ||             // v18: 相對排名 + 分類圓餅圖
-         !content.includes('同 Owner 專案') ||              // v19: 同 Owner + 同語言 + 強化排名
-         !content.includes('健康度儀表板') ||              // v19: 健康度 + 採用成本 + 擴大 summary
-         !content.includes('## Star 趨勢') ||              // v20: star 趨勢圖 + 決策分數 + 安全評估
-         !content.includes('## 決策分數') ||                // v20: 綜合決策分數
-         !content.includes('contributor_count:') ||          // v21: 貢獻者數量 frontmatter
-         !content.includes('OpenSSF Scorecard');              // v21: OpenSSF Scorecard 連結
+         !content.includes('直接競品');                    // v16: 同子分類競品 + 共用概念
+}
+
+// 向下相容：既需要 light patch 又需要 full refresh 的都算 needsRefresh
+function needsRefresh(content) {
+  return needsFullRefresh(content) || needsLightPatch(content).length > 0;
+}
+
+// 對單一筆記套用輕量修補（不需要 LLM）
+function applyLightPatch(content, patches) {
+  let updated = content;
+  const repoMatch = content.match(/^repo: (.+)$/m);
+  const fullName = repoMatch?.[1] || '';
+  const safeFn = repoFileName(fullName).replace('.md', '');
+  const ownerName = fullName.split('/')[0];
+
+  // 1. contributor_count frontmatter
+  if (patches.includes('contributor_count') && !updated.includes('contributor_count:')) {
+    // 在 engagement: 後面插入
+    updated = updated.replace(
+      /^(engagement: .+)$/m,
+      `$1\ncontributor_count: 0`
+    );
+  }
+
+  // 2. OpenSSF Scorecard link in tech details
+  if (patches.includes('openssf') && !updated.includes('OpenSSF Scorecard') && fullName) {
+    // 在技術細節表格的最後一個 | 行後面插入
+    const techTableEnd = updated.match(/(\| (?:Repo 大小|建立日期|最後推送|官方網站|Open Issues|Forks) \| .+ \|)\n/g);
+    if (techTableEnd) {
+      const lastMatch = techTableEnd[techTableEnd.length - 1];
+      updated = updated.replace(lastMatch, lastMatch + `| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/${fullName}) |\n`);
+    }
+  }
+
+  // 3. Star 趨勢 section
+  if (patches.includes('star_trend') && !updated.includes('## Star 趨勢')) {
+    const insertBefore = updated.indexOf('\n---\n\n## 個人筆記');
+    if (insertBefore > 0) {
+      const starTrend = `## Star 趨勢
+
+> [!abstract]- Stars 成長追蹤
+> \`\`\`dataviewjs
+> const me = dv.page("Repos/${safeFn}");
+> if (me?.star_history) {
+>   const raw = me.star_history.toString();
+>   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
+>   if (points.length >= 2) {
+>     const max = Math.max(...points.map(p => p.stars));
+>     const lines = points.map(p => {
+>       const w = Math.round(p.stars / max * 25);
+>       return \`\${p.date} \${"\\u2588".repeat(w)}\${"\\u2591".repeat(25-w)} \${p.stars.toLocaleString()}\`;
+>     });
+>     const first = points[0].stars;
+>     const last = points[points.length-1].stars;
+>     const growth = first > 0 ? Math.round((last - first) / first * 100) : 0;
+>     lines.push(\`\\n**成長** +\${(last-first).toLocaleString()} stars（\${growth}%）in \${points.length} snapshots\`);
+>     dv.paragraph(lines.join("\\n"));
+>   } else { dv.paragraph("需要 2+ 次快照才能顯示趨勢"); }
+> } else { dv.paragraph("尚無 star_history 資料（下次出現在 trending 時會開始追蹤）"); }
+> \`\`\`
+
+`;
+      updated = updated.slice(0, insertBefore) + '\n' + starTrend + updated.slice(insertBefore);
+    }
+  }
+
+  // 4. 決策分數 section
+  if (patches.includes('decision_score') && !updated.includes('## 決策分數')) {
+    const insertBefore = updated.indexOf('\n---\n\n## 個人筆記');
+    if (insertBefore > 0) {
+      const decisionScore = `## 決策分數
+
+> [!abstract]- 綜合評估（自動計算）
+> \`\`\`dataviewjs
+> const me = dv.page("Repos/${safeFn}");
+> if (me) {
+>   let score = 0;
+>   let breakdown = [];
+>   const spd = me.stars_per_day || 0;
+>   const heat = Math.min(25, Math.round(spd / 40 * 25));
+>   score += heat; breakdown.push(\`熱度: \${heat}/25\`);
+>   const inst = me.install_complexity === "easy" ? 20 : me.install_complexity === "medium" ? 12 : 5;
+>   score += inst; breakdown.push(\`易用性: \${inst}/20\`);
+>   const created = me.created ? new Date(me.created.toString()) : null;
+>   const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : 0;
+>   const mat = age > 365 ? 20 : age > 180 ? 16 : age > 30 ? 10 : 5;
+>   score += mat; breakdown.push(\`成熟度: \${mat}/20\`);
+>   const forks = me.forks || 0;
+>   const comm = forks > 200 ? 20 : forks > 50 ? 15 : forks > 10 ? 10 : 5;
+>   score += comm; breakdown.push(\`社群: \${comm}/20\`);
+>   const lic = me.license || "";
+>   const friendly = ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unlicense"].includes(lic);
+>   const licScore = friendly ? 15 : lic && lic !== "N/A" ? 8 : 0;
+>   score += licScore; breakdown.push(\`授權: \${licScore}/15\`);
+>   const grade = score >= 80 ? "A" : score >= 60 ? "B" : score >= 40 ? "C" : "D";
+>   const bar = "\\u2588".repeat(Math.round(score/5)) + "\\u2591".repeat(20 - Math.round(score/5));
+>   dv.paragraph(\`## \${grade} (\${score}/100)\\n\${bar}\\n\\n\${breakdown.join(" | ")}\`);
+> }
+> \`\`\`
+
+`;
+      updated = updated.slice(0, insertBefore) + '\n' + decisionScore + updated.slice(insertBefore);
+    }
+  }
+
+  // 5. 健康度儀表板 section
+  if (patches.includes('health_dashboard') && !updated.includes('健康度儀表板')) {
+    const insertBefore = updated.indexOf('## 技術細節');
+    if (insertBefore > 0) {
+      const healthDashboard = `## 健康度儀表板
+
+> [!abstract]- 專案健康度綜合評估
+> \`\`\`dataviewjs
+> const me = dv.page("Repos/${safeFn}");
+> if (me) {
+>   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
+>   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
+>   const created = me.created ? new Date(me.created.toString()) : null;
+>   const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : null;
+>   const forkRatio = me.stars > 0 ? ((me.forks || 0) / me.stars * 100).toFixed(1) : 0;
+>   const issueRatio = me.stars > 0 ? ((me.open_issues || 0) / me.stars * 100).toFixed(1) : 0;
+>   const maint = daysSincePush === null ? "?" : daysSincePush <= 7 ? "Active" : daysSincePush <= 30 ? "Moderate" : "Stale";
+>   const busFactor = (me.forks || 0) > 50 ? "Good" : (me.forks || 0) > 10 ? "OK" : "Risk";
+>   dv.table(["指標", "值", "評估"], [
+>     ["維護狀態", daysSincePush + " 天前推送", maint],
+>     ["專案年齡", age + " 天", age > 180 ? "Established" : age > 30 ? "Growing" : "Brand New"],
+>     ["Fork 比率", forkRatio + "%", parseFloat(forkRatio) > 20 ? "High adoption" : parseFloat(forkRatio) > 5 ? "Normal" : "Low"],
+>     ["Issue 密度", issueRatio + "%", parseFloat(issueRatio) > 5 ? "High" : "Normal"],
+>     ["Bus Factor", (me.forks || 0) + " forks", busFactor],
+>   ]);
+> }
+> \`\`\`
+
+`;
+      updated = updated.slice(0, insertBefore) + healthDashboard + updated.slice(insertBefore);
+    }
+  }
+
+  // 6. Vault 排名 section
+  if (patches.includes('vault_ranking') && !updated.includes('## Vault 排名')) {
+    const insertBefore = updated.indexOf('\n---\n\n## 個人筆記');
+    if (insertBefore > 0) {
+      const vaultRanking = `## Vault 排名
+
+> [!abstract]- 這個專案在 vault 中的相對位置
+> \`\`\`dataviewjs
+> const me = dv.page("Repos/${safeFn}");
+> const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
+> const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> const catAll = all.where(p => p.category === me?.category);
+> const catRank = catAll.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> const totalStarsAll = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars || 0, "desc");
+> const starsRank = totalStarsAll.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> if (rank > 0) {
+>   const pct = Math.round((1 - rank / all.length) * 100);
+>   dv.paragraph(\`Stars/天排名：**全 vault 第 \${rank}**/\${all.length}（前 \${100 - pct}%）· **\${me.category} 第 \${catRank}**/\${catAll.length}\\nStars 總量排名：**第 \${starsRank}**/\${totalStarsAll.length}\`);
+> }
+> \`\`\`
+
+`;
+      updated = updated.slice(0, insertBefore) + '\n' + vaultRanking + updated.slice(insertBefore);
+    }
+  }
+
+  // 7. 同 Owner 專案 section
+  if (patches.includes('same_owner') && !updated.includes('同 Owner 專案') && ownerName) {
+    const insertBefore = updated.indexOf('\n---\n\n## 個人筆記');
+    if (insertBefore > 0) {
+      const sameOwner = `## 同 Owner 專案
+
+> [!note]- 這位開發者的其他收錄專案
+> \`\`\`dataview
+> TABLE stars AS "Stars", category AS "分類", status AS "狀態"
+> FROM "Repos"
+> WHERE owner = "${ownerName}" AND file.name != "${safeFn}"
+> SORT stars DESC
+> \`\`\`
+
+`;
+      updated = updated.slice(0, insertBefore) + '\n' + sameOwner + updated.slice(insertBefore);
+    }
+  }
+
+  return updated;
 }
 
 function hasLLMContent(content) {
@@ -4640,11 +4829,33 @@ async function refreshRepos(token, failedOnly = false) {
   console.log(`Found ${mdFiles.length} repo notes to check...`);
   console.log(`Mode: ${failedOnly ? '--refresh-failed (only notes missing Chinese content)' : '--refresh (old format notes)'}`);
 
-  // 找出需要更新的筆記
+  // Phase 1: 輕量修補（不需要 LLM，秒級完成）
+  if (!failedOnly) {
+    let lightPatchCount = 0;
+    for (const file of mdFiles) {
+      const filePath = join(REPOS_DIR, file);
+      const content = await readFile(filePath, 'utf-8');
+      const patches = needsLightPatch(content);
+      // 只做輕量修補的筆記（不需要完整刷新的）
+      if (patches.length > 0 && !needsFullRefresh(content)) {
+        const updated = applyLightPatch(content, patches);
+        if (updated !== content) {
+          await writeFile(filePath, updated, 'utf-8');
+          lightPatchCount++;
+          console.log(`  Light patch: ${file} (${patches.join(', ')})`);
+        }
+      }
+    }
+    if (lightPatchCount > 0) {
+      console.log(`Light patch complete: ${lightPatchCount} notes updated without LLM`);
+    }
+  }
+
+  // Phase 2: 完整刷新（需要 LLM）
   const toRefresh = [];
   for (const file of mdFiles) {
     const content = await readFile(join(REPOS_DIR, file), 'utf-8');
-    const shouldRefresh = failedOnly ? !hasLLMContent(content) : needsRefresh(content);
+    const shouldRefresh = failedOnly ? !hasLLMContent(content) : needsFullRefresh(content);
     if (shouldRefresh) {
       const repoMatch = content.match(/^repo: (.+)$/m);
       if (repoMatch) {
@@ -4662,7 +4873,7 @@ async function refreshRepos(token, failedOnly = false) {
   const MAX_REFRESH = parseInt(process.env.MAX_REFRESH || '30', 10);
   const MAX_REFRESH_TIME = parseInt(process.env.MAX_REFRESH_TIME || '1500', 10) * 1000; // 預設 25 分鐘
   const actualToRefresh = toRefresh.slice(0, MAX_REFRESH);
-  console.log(`${toRefresh.length} notes need refresh (processing max ${MAX_REFRESH}, time limit ${MAX_REFRESH_TIME/1000}s)`);
+  console.log(`${toRefresh.length} notes need full refresh (processing max ${MAX_REFRESH}, time limit ${MAX_REFRESH_TIME/1000}s)`);
   if (toRefresh.length > MAX_REFRESH) {
     console.log(`  Remaining ${toRefresh.length - MAX_REFRESH} will be refreshed in next run`);
   }
