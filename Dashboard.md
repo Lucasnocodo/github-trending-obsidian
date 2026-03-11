@@ -197,6 +197,34 @@ WHERE last_reviewed AND date(today) - date(last_reviewed) > dur(30 days)
 SORT last_reviewed ASC
 ```
 
+## 已有結論的專案
+
+```dataview
+TABLE
+  verdict AS "結論",
+  ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分",
+  category AS "分類",
+  status AS "狀態"
+FROM "Repos"
+WHERE verdict AND verdict != ""
+SORT my_rating DESC
+```
+
+## 依參與度分群
+
+> [!abstract] Forks/Stars 比值反映社群實際使用程度
+
+```dataview
+TABLE WITHOUT ID
+  engagement AS "參與度",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE status != "archived"
+GROUP BY engagement
+SORT choice(engagement, "high", 1, choice(engagement, "medium", 2, 3)) ASC
+```
+
 ## 依分類瀏覽
 
 ```dataview
@@ -478,6 +506,36 @@ if (sorted.length > 0) {
   );
 } else {
   dv.paragraph("_專案尚未建立概念連結_");
+}
+```
+
+## 概念分群索引
+
+> [!abstract] 依主要關聯分類分群所有概念
+
+```dataviewjs
+const repos = dv.pages('"Repos"').where(p => p.status !== "archived");
+const conceptCats = {};
+for (const p of repos) {
+  const cat = p.category || "其他";
+  for (const link of (p.file.outlinks || [])) {
+    if (link.path?.startsWith("Concepts/")) {
+      const n = link.path.replace("Concepts/", "").replace(".md", "");
+      if (!conceptCats[n]) conceptCats[n] = {};
+      conceptCats[n][cat] = (conceptCats[n][cat] || 0) + 1;
+    }
+  }
+}
+const catGroups = {};
+for (const [concept, cats] of Object.entries(conceptCats)) {
+  const mainCat = Object.entries(cats).sort((a, b) => b[1] - a[1])[0][0];
+  if (!catGroups[mainCat]) catGroups[mainCat] = [];
+  catGroups[mainCat].push({ name: concept, count: Object.values(cats).reduce((s, c) => s + c, 0) });
+}
+for (const [cat, concepts] of Object.entries(catGroups).sort((a, b) => b[1].length - a[1].length)) {
+  concepts.sort((a, b) => b.count - a.count);
+  dv.header(4, `${cat} (${concepts.length} 個概念)`);
+  dv.paragraph(concepts.map(c => `[[Concepts/${c.name}|${c.name}]] (${c.count})`).join(" · "));
 }
 ```
 

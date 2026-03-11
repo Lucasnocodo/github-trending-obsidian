@@ -24,7 +24,7 @@ cssclasses:
 | [[MOC - 教學資源]] | 教學資源 |
 | [[MOC - 基礎設施]] | 基礎設施 |
 | [[MOC - 其他]] | 其他分類 |
-| [[Comparison]] | 同分類橫向對比矩陣 |
+| [[Comparison]] | 同分類橫向對比 + 決策矩陣 + 授權分析 |
 | [[Tech-Radar.canvas\|Tech Radar]] | 四環評估看板 |
 
 ## 統計快照
@@ -129,6 +129,23 @@ if (thisWeek.length > 0) {
   }
 } else {
   dv.paragraph("本週尚無新收錄。");
+}
+```
+
+## Tech Radar 摘要
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.ring && p.status !== "archived");
+const rings = { adopt: 0, trial: 0, assess: 0, hold: 0 };
+for (const p of pages) {
+  const r = (p.ring || "assess").toLowerCase();
+  if (rings[r] !== undefined) rings[r]++;
+}
+const total = Object.values(rings).reduce((s, c) => s + c, 0);
+if (total > 0) {
+  dv.paragraph(`Adopt **${rings.adopt}** · Trial **${rings.trial}** · Assess **${rings.assess}** · Hold **${rings.hold}** · [[Tech-Radar.canvas|查看完整 Radar]]`);
+} else {
+  dv.paragraph("尚未有專案被分配到 Tech Radar 環。");
 }
 ```
 

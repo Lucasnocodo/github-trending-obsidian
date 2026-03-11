@@ -113,6 +113,42 @@ WHERE status = "archived"
 SORT stars DESC
 ```
 
+## 新收錄但被遺忘
+
+> [!warning] 收錄 3+ 天仍未接觸的專案
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  if (!p.first_seen || p.status !== "to-review") return false;
+  const daysSinceAdded = (Date.now() - new Date(p.first_seen.toString())) / 86400000;
+  const daysSinceModified = (Date.now() - (p.file.mtime?.ts || 0)) / 86400000;
+  return daysSinceAdded >= 3 && daysSinceModified >= 3;
+}).sort(p => p.stars_per_day, "desc").limit(10);
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "收錄日", "Stars/天", "分類"],
+    pages.map(p => [p.file.link, p.first_seen, p.stars_per_day || 0, p.category || ""])
+  );
+} else {
+  dv.paragraph("所有新收錄專案都有被接觸。");
+}
+```
+
+## Trial Ring（試用中）
+
+> [!tip] 正在試用的專案，可能需要升為 Adopt 或降為 Hold
+
+```dataview
+TABLE
+  ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分",
+  stars_per_day AS "Stars/天",
+  category AS "分類",
+  last_reviewed AS "上次回顧"
+FROM "Repos"
+WHERE ring = "trial"
+SORT last_reviewed ASC
+```
+
 ## 推薦回顧（基於偏好）
 
 > [!tip] 你評過高分的分類，還有這些專案沒看過
@@ -201,7 +237,7 @@ if (incomplete.length > 0) {
     incomplete.slice(0, 10).map(i => [i.link, i.stars, i.missing, i.count])
   );
 } else {
-  dv.paragraph("所有非封存筆記都符合 v19 標準！");
+  dv.paragraph("所有非封存筆記都符合 v20 標準！");
 }
 ```
 
