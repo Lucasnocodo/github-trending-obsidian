@@ -3080,6 +3080,62 @@ if (pages.length > 0) {
 }
 \`\`\`
 
+## 本週評估進度
+
+> [!abstract] 這週收錄的專案你已經處理了多少？
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.week === "${weekStr}");
+if (pages.length > 0) {
+  const read = pages.where(p => p.status && p.status !== "to-review").length;
+  const rated = pages.where(p => (p.my_rating || 0) > 0).length;
+  const decided = pages.where(p => p.verdict && p.verdict !== "").length;
+  const total = pages.length;
+  const pct = Math.round((read / total) * 100);
+  const bar = "\\u2588".repeat(Math.round(pct / 5)) + "\\u2591".repeat(20 - Math.round(pct / 5));
+  dv.paragraph(\`\${bar} **\${read}/\${total}** 已處理 (\${pct}%)\`);
+  dv.paragraph(\`已評分 \${rated} · 有結論 \${decided}\`);
+  const pending = pages.where(p => p.status === "to-review").sort(p => p.stars_per_day || 0, "desc").limit(3);
+  if (pending.length > 0) {
+    dv.paragraph("**優先處理**：" + pending.map(p => p.file.link).join(" · "));
+  }
+}
+\`\`\`
+
+## 技術主題浮現
+
+> [!abstract] 本週多個專案共享的技術概念 — 代表正在形成的趨勢
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.week === "${weekStr}");
+const conceptRepos = {};
+for (const p of pages) {
+  for (const link of (p.file.outlinks || [])) {
+    if (link.path?.startsWith("Concepts/")) {
+      const name = link.path.replace("Concepts/", "").replace(".md", "");
+      if (!conceptRepos[name]) conceptRepos[name] = [];
+      conceptRepos[name].push(p.file.link);
+    }
+  }
+}
+const shared = Object.entries(conceptRepos)
+  .filter(([_, repos]) => repos.length >= 2)
+  .sort((a, b) => b[1].length - a[1].length);
+if (shared.length > 0) {
+  dv.table(
+    ["技術主題", "相關專案數", "專案"],
+    shared.map(([name, repos]) => [
+      dv.fileLink("Concepts/" + name, false, name),
+      repos.length,
+      repos.join(", ")
+    ])
+  );
+  dv.paragraph("**洞察**：當一週內有 2+ 個專案共享同一技術概念，通常代表該領域正在快速演進。");
+} else {
+  dv.paragraph("_本週專案的技術主題較分散，尚未形成明顯聚集。_");
+}
+\`\`\`
+
 ---
 
 ## Editor's Pick（本週精選）
@@ -3371,6 +3427,39 @@ if (multi.length > 0) {
   dv.table(["Owner", "專案數", "專案"], multi.map(([name, d]) => [name, d.count, d.repos.join(", ")]));
 } else {
   dv.paragraph("本月沒有重複出現的 Owner。");
+}
+\`\`\`
+
+## 本月評估完整度
+
+> [!abstract] 本月收錄專案的評估進度
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  const fs = p.first_seen?.toString();
+  return fs && fs.startsWith("${monthStr}");
+});
+if (pages.length > 0) {
+  let totalDone = 0, totalSteps = 0;
+  const incomplete = [];
+  for (const p of pages) {
+    let done = 0;
+    if (p.status && p.status !== "to-review") done++;
+    if ((p.my_rating || 0) > 0) done++;
+    if (p.verdict && p.verdict !== "") done++;
+    if (p.ring && p.ring !== "" && p.ring !== "assess") done++;
+    if (p.status === "tried" || p.status === "integrated") done++;
+    totalDone += done;
+    totalSteps += 5;
+    if (done < 5) incomplete.push({ link: p.file.link, done, spd: p.stars_per_day || 0 });
+  }
+  const pct = Math.round((totalDone / totalSteps) * 100);
+  const bar = "\\u2588".repeat(Math.round(pct / 5)) + "\\u2591".repeat(20 - Math.round(pct / 5));
+  dv.paragraph(\`\${bar} **\${pct}%** 整體完整度\`);
+  if (incomplete.length > 0) {
+    incomplete.sort((a, b) => b.spd - a.spd);
+    dv.paragraph("**優先完成**：" + incomplete.slice(0, 5).map(i => \`\${i.link} (\${i.done}/5)\`).join(" · "));
+  }
 }
 \`\`\`
 
