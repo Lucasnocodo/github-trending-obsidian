@@ -3,7 +3,7 @@
     {
       "id": "title",
       "type": "text",
-      "text": "# Tech Radar\n\n根據已評分的專案，分為四個象限：\n- **Adopt** (4-5 星) — 已驗證、推薦使用\n- **Trial** (3 星) — 值得試用\n- **Assess** (2 星) — 值得關注但尚未試用\n- **Hold** (1 星或以下) — 暫時不推薦",
+      "text": "# Tech Radar\n\n使用 Thoughtworks 風格的四環模型：\n- **Adopt** — 已驗證並推薦使用（`ring: adopt`）\n- **Trial** — 值得投入時間試用（`ring: trial`）\n- **Assess** — 值得關注和研究（`ring: assess`）\n- **Hold** — 暫不推薦或已過時（`ring: hold`）\n\n修改方式：在筆記 frontmatter 中更新 `ring` 欄位",
       "x": -200,
       "y": -400,
       "width": 400,
@@ -12,7 +12,7 @@
     {
       "id": "adopt",
       "type": "text",
-      "text": "## Adopt\n\n```dataview\nLIST\nFROM \"Repos\"\nWHERE my_rating >= 4 AND (status = \"integrated\" OR status = \"tried\")\nSORT stars DESC\n```",
+      "text": "## Adopt\n\n```dataview\nLIST\nFROM \"Repos\"\nWHERE ring = \"adopt\" OR (my_rating >= 4 AND status = \"integrated\")\nSORT stars DESC\n```",
       "x": -600,
       "y": -100,
       "width": 350,
@@ -22,7 +22,7 @@
     {
       "id": "trial",
       "type": "text",
-      "text": "## Trial\n\n```dataview\nLIST\nFROM \"Repos\"\nWHERE my_rating = 3 OR status = \"tried\"\nSORT stars DESC\n```",
+      "text": "## Trial\n\n```dataview\nLIST\nFROM \"Repos\"\nWHERE ring = \"trial\" OR (my_rating = 3 AND status = \"tried\")\nSORT stars DESC\n```",
       "x": 250,
       "y": -100,
       "width": 350,
@@ -32,7 +32,7 @@
     {
       "id": "assess",
       "type": "text",
-      "text": "## Assess\n\n```dataview\nLIST\nFROM \"Repos\"\nWHERE (my_rating = 2 OR status = \"reading\") AND status != \"archived\"\nSORT stars_per_day DESC\nLIMIT 15\n```",
+      "text": "## Assess\n\n```dataview\nLIST\nFROM \"Repos\"\nWHERE ring = \"assess\" AND status != \"archived\"\nSORT stars_per_day DESC\nLIMIT 15\n```",
       "x": -600,
       "y": 300,
       "width": 350,
@@ -42,7 +42,7 @@
     {
       "id": "hold",
       "type": "text",
-      "text": "## Hold\n\n```dataview\nLIST\nFROM \"Repos\"\nWHERE my_rating = 1 OR status = \"archived\"\nSORT stars DESC\n```",
+      "text": "## Hold\n\n```dataview\nLIST\nFROM \"Repos\"\nWHERE ring = \"hold\" OR status = \"archived\"\nSORT stars DESC\n```",
       "x": 250,
       "y": 300,
       "width": 350,

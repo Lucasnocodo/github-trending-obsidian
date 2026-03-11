@@ -45,6 +45,32 @@ GROUP BY status
 SORT length(rows) DESC
 ```
 
+## Tech Radar 總覽
+
+```dataview
+TABLE WITHOUT ID
+  ring AS "Ring",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE ring != null AND ring != ""
+GROUP BY ring
+SORT choice(ring, "adopt", 1, choice(ring, "trial", 2, choice(ring, "assess", 3, 4))) ASC
+```
+
+## 有結論的專案
+
+```dataview
+TABLE
+  verdict AS "結論",
+  ring AS "Ring",
+  ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分",
+  category AS "分類"
+FROM "Repos"
+WHERE verdict != "" AND verdict != null
+SORT my_rating DESC
+```
+
 ## 爆紅專案 Top 15
 
 ```dataview

@@ -423,6 +423,9 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     `last_reviewed: ${today}`,
     `use_case: "${(llmInfo?.description_zh || '').replace(/"/g, '\\"').slice(0, 80)}"`,
     `priority: medium`,
+    `ring: assess`,
+    `discovered_via: "GitHub Trending"`,
+    `verdict: ""`,
     'tags:',
     '  - github',
     `  - "category/${catTag}"`,
@@ -826,6 +829,14 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('_重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_');
   lines.push('');
   lines.push('**狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`');
+  lines.push('**Tech Radar**：`assess` → `trial` → `adopt` / `hold`');
+  lines.push('');
+  lines.push('> [!info]- 評估完成後');
+  lines.push('> 更新 frontmatter：');
+  lines.push('> - `ring`: adopt / trial / assess / hold');
+  lines.push('> - `verdict`: 一句話結論');
+  lines.push('> - `my_rating`: 1-5 分');
+  lines.push('> - `status`: reading / tried / integrated / archived');
   lines.push('');
 
   // 出現記錄
