@@ -30,6 +30,7 @@ discovered_via: "GitHub Trending"
 next_review: "2026-03-13"
 engagement: "low"
 verdict: ""
+ring_history: "assess@2026-03-10"
 tags:
   - github
   - "category/開發工具"

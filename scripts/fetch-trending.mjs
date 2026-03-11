@@ -450,6 +450,7 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     `next_review: "${nextReviewDate(today, rate)}"`,
     `engagement: ${engagementLevel(repo.stargazers_count, repo.forks_count)}`,
     `verdict: ""`,
+    `ring_history: "assess@${today}"`,
     'tags:',
     '  - github',
     `  - "category/${catTag}"`,
@@ -903,6 +904,7 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('> [!info]- 評估完成後');
   lines.push('> 更新 frontmatter：');
   lines.push('> - `ring`: adopt / trial / assess / hold');
+  lines.push('> - `ring_history`: 追加新狀態（格式：`assess@2026-03-10, trial@2026-03-15`）');
   lines.push('> - `verdict`: 一句話結論');
   lines.push('> - `my_rating`: 1-5 分');
   lines.push('> - `status`: reading / tried / integrated / archived');
@@ -1163,6 +1165,7 @@ SORT choice(ring, "adopt", 1, choice(ring, "trial", 2, choice(ring, "assess", 3,
 TABLE
   verdict AS "結論",
   ring AS "Ring",
+  ring_history AS "歷程",
   ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分",
   category AS "分類"
 FROM "Repos"
@@ -1550,9 +1553,12 @@ SORT stars DESC
 > DataviewJS 需在 Dataview 設定中啟用（設定 → Dataview → Enable JavaScript Queries）
 >
 > **推薦插件**：
+> - [Dataview](https://github.com/blacksmithgu/obsidian-dataview) — Dashboard 和查詢（必裝）
 > - [Contribution Graph](https://github.com/vran-dev/obsidian-contribution-graph) — 收錄熱力圖
 > - [Charts View](https://github.com/caronchen/obsidian-chartsview-plugin) — 語言分佈圖表
 > - [Periodic Notes](https://github.com/liamcain/obsidian-periodic-notes) — 每週回顧自動化
+> - [Smart Connections](https://github.com/brianpetro/obsidian-smart-connections) — AI 語意關聯推薦
+> - [Advanced Canvas](https://github.com/Developer-Mike/obsidian-advanced-canvas) — Tech Radar 視覺決策板
 `;
 }
 
@@ -2153,8 +2159,9 @@ LIMIT 3
 > 1. 每日查看「今日待複習」，花 5 分鐘快速掃描
 > 2. 有興趣的專案修改 frontmatter: \`status: reading\`
 > 3. 試用後填寫「個人筆記 → 試用記錄」
-> 4. 評估完更新 \`ring\`（adopt/trial/hold）和 \`verdict\`
+> 4. 評估完更新 \`ring\`（adopt/trial/hold）、\`verdict\` 和 \`ring_history\`
 > 5. 低價值專案會在 14 天後自動封存
+> 6. 用 [[Tech-Radar]] Canvas 視覺化追蹤採用決策
 `;
 }
 
@@ -2831,7 +2838,8 @@ function needsRefresh(content) {
          !content.includes('**維護**') ||       // v10: 維護健康指標
          !content.includes('appearances:') ||   // v11: 出現次數追蹤
          !content.includes('next_review:') ||   // v12: 間隔複習日期
-         !content.includes('engagement:');      // v12: 參與度指標
+         !content.includes('engagement:') ||    // v12: 參與度指標
+         !content.includes('ring_history:');     // v13: 狀態變更歷程
 }
 
 function hasLLMContent(content) {
@@ -3085,6 +3093,11 @@ async function refreshRepos(token, failedOnly = false) {
       const savedNextReview = item.content.match(/^next_review: "(.+)"$/m)?.[1];
       if (savedNextReview) {
         merged = merged.replace(/^next_review: ".+"$/m, `next_review: "${savedNextReview}"`);
+      }
+      // 保留使用者累積的 ring_history
+      const savedRingHistory = item.content.match(/^ring_history: "(.+)"$/m)?.[1];
+      if (savedRingHistory) {
+        merged = merged.replace(/^ring_history: ".+"$/m, `ring_history: "${savedRingHistory}"`);
       }
       if (savedWeek) {
         merged = merged.replace(/^week: ".+"$/m, `week: "${savedWeek}"`);

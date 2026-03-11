@@ -30,6 +30,7 @@ discovered_via: "GitHub Trending"
 next_review: "2026-03-17"
 engagement: "low"
 verdict: ""
+ring_history: "assess@2026-03-10"
 tags:
   - github
   - "category/cli_工具"
