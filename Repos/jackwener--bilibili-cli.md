@@ -7,12 +7,12 @@ language: Python
 license: Apache-2.0
 description: "A CLI for Bilibili — browse videos, users, search, and feeds from the terminal"
 homepage: ""
-stars: 335
-stars_per_day: 56
-forks: 29
-open_issues: 1
+stars: 361
+stars_per_day: 60
+forks: 33
+open_issues: 0
 created: 2026-03-04
-pushed_at: 2026-03-10
+pushed_at: 2026-03-11
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
@@ -27,10 +27,12 @@ use_case: "讓你在終端機中輕鬆瀏覽 Bilibili 的影片、用戶和動�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-next_review: "2026-03-17"
+appearances: 2
+next_review: "2026-03-18"
 engagement: "low"
 verdict: ""
 ring_history: "assess@2026-03-10"
+star_history: "2026-03-11:361"
 tags:
   - github
   - "category/cli_工具"
@@ -354,4 +356,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，361 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，321 stars

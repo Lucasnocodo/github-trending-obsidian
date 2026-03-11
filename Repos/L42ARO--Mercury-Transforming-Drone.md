@@ -27,13 +27,13 @@ use_case: "一款可變形的無人機，適合多種用途，具備靈活的移
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-17"
+appearances: 2
+next_review: "2026-03-18"
 contributor_count: 2
 engagement: "medium"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:364"
+star_history: "2026-03-10:364,2026-03-11:364"
 tags:
   - github
   - "category/其他"
@@ -741,4 +741,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，364 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，353 stars

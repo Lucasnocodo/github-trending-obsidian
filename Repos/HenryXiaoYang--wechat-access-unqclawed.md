@@ -7,9 +7,9 @@ language: TypeScript
 license: N/A
 description: "微信包装了开源项目OpenClaw，所以我们把他的Channel抽出来了😄"
 homepage: ""
-stars: 368
-stars_per_day: 368
-forks: 98
+stars: 371
+stars_per_day: 371
+forks: 99
 open_issues: 3
 created: 2026-03-09
 pushed_at: 2026-03-10
@@ -27,13 +27,13 @@ use_case: "透過微信掃碼登入並實現雙向通信的 OpenClaw 插件。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-13"
+appearances: 2
+next_review: "2026-03-14"
 contributor_count: 4
 engagement: "medium"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:368"
+star_history: "2026-03-10:368,2026-03-11:371"
 tags:
   - github
   - "category/開發工具"
@@ -688,4 +688,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，371 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，322 stars

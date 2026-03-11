@@ -232,31 +232,31 @@
   },
   "kamranahmedse/claude-statusline": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 383,
-    "stars_last": 384
+    "stars_last": 399
   },
   "Thearas/wechat-db-decrypt-macos": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 383,
-    "stars_last": 383
+    "stars_last": 388
   },
   "L42ARO/Mercury-Transforming-Drone": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 353,
-    "stars_last": 353
+    "stars_last": 364
   },
   "joeseesun/qiaomu-mondo-poster-design": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 353,
-    "stars_last": 353
+    "stars_last": 382
   },
   "JohnRiceML/clawport-ui": {
     "first_seen": "2026-03-10",
@@ -274,31 +274,31 @@
   },
   "Minecraft-Community-Edition/client": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 331,
-    "stars_last": 331
+    "stars_last": 336
   },
   "HenryXiaoYang/wechat-access-unqclawed": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 322,
-    "stars_last": 322
+    "stars_last": 371
   },
   "jackwener/bilibili-cli": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 321,
-    "stars_last": 321
+    "stars_last": 361
   },
   "helenigtxu/TradingView-Claw": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 317,
-    "stars_last": 318
+    "stars_last": 332
   },
   "holysheep123/holysheep-cli": {
     "first_seen": "2026-03-10",
@@ -309,10 +309,10 @@
   },
   "gradenGnostic/LegacyLauncher": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 296,
-    "stars_last": 297
+    "stars_last": 318
   },
   "dazzyddos/PrivHound": {
     "first_seen": "2026-03-10",
@@ -362,5 +362,12 @@
     "times_seen": 1,
     "stars_first": 727,
     "stars_last": 727
+  },
+  "jackwener/xiaohongshu-cli": {
+    "first_seen": "2026-03-11",
+    "last_seen": "2026-03-11",
+    "times_seen": 1,
+    "stars_first": 389,
+    "stars_last": 389
   }
 }

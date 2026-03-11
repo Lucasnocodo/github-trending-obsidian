@@ -27,13 +27,13 @@ use_case: "解密 macOS arm64 微信 4.1 数据库，提取聊天记录。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-17"
+appearances: 2
+next_review: "2026-03-18"
 contributor_count: 3
 engagement: "high"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:388"
+star_history: "2026-03-10:388,2026-03-11:388"
 tags:
   - github
   - "category/開發工具"
@@ -633,4 +633,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，388 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，383 stars

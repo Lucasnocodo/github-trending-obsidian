@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "一句话生成大师级海报、书籍封面、专辑封面和各类设计作品。无需懂PS、配色或艺术史，AI自动选择最佳风格（基于20位传奇海报设计师）。支持电影海报、读书笔记、公众号封面、小红书配图等。默认9:16竖版，完美适配社交媒体。包含AI提示词优化、风格对比、图生图转换功能。触发词：\"Mondo风格\"、\"书籍封"
 homepage: ""
-stars: 366
-stars_per_day: 183
-forks: 30
-open_issues: 2
+stars: 382
+stars_per_day: 191
+forks: 32
+open_issues: 1
 created: 2026-03-08
 pushed_at: 2026-03-08
 first_seen: 2026-03-10
@@ -27,10 +27,12 @@ use_case: "讓你只需一句話就能生成專業級的海報和封面設計，
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-next_review: "2026-03-17"
+appearances: 2
+next_review: "2026-03-18"
 engagement: "low"
 verdict: ""
 ring_history: "assess@2026-03-10"
+star_history: "2026-03-11:382"
 tags:
   - github
   - "category/開發工具"
@@ -487,4 +489,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，382 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，353 stars

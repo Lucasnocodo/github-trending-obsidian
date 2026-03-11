@@ -51,6 +51,34 @@ dv.paragraph(`<progress value="${reviewed}" max="${total}" style="width:100%"></
 if (topCat) dv.paragraph(`最多分類：**${topCat[0]}** (${topCat[1]} 個)`);
 ```
 
+## 你的工具箱
+
+> [!tip]- 你正在追蹤的專案（reading / tried / integrated）
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.status && p.status !== "to-review" && p.status !== "archived";
+});
+if (pages.length > 0) {
+  const byStatus = { integrated: [], tried: [], reading: [] };
+  for (const p of pages) {
+    const s = p.status || "";
+    if (byStatus[s]) byStatus[s].push(p);
+    else byStatus[s] = [p];
+  }
+  for (const [status, repos] of Object.entries(byStatus)) {
+    if (repos.length === 0) continue;
+    dv.header(4, status.charAt(0).toUpperCase() + status.slice(1));
+    dv.paragraph(repos.map(p => {
+      const rating = (p.my_rating || 0) > 0 ? " \u2605" + p.my_rating : "";
+      return p.file.link + rating;
+    }).join(" / "));
+  }
+} else {
+  dv.paragraph("將專案改為 reading 狀態就會出現在這裡。");
+}
+```
+
 ## 最新收錄
 
 ```dataview
@@ -257,6 +285,24 @@ if (pages.length > 0) {
   );
 } else {
   dv.paragraph("所有高價值專案都已評估完畢！");
+}
+```
+
+## 興趣雷達
+
+> [!tip] 你最感興趣的專案（依三維評分排序）
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.status !== "archived" && (p.score_interest || 0) > 0;
+}).sort(p => (p.score_interest || 0) * 2 + (p.score_confidence || 0) + (p.score_risk || 0), "desc").limit(5);
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "興趣", "信心", "風險", "Stars/天", "分類"],
+    pages.map(p => [p.file.link, p.score_interest, p.score_confidence, p.score_risk, p.stars_per_day || 0, p.category || ""])
+  );
+} else {
+  dv.paragraph("打開任一專案筆記，在「快速評估」區填寫信心/興趣/風險 1-5 分。");
 }
 ```
 

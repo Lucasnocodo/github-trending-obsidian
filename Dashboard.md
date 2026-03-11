@@ -814,6 +814,47 @@ dv.table(
 );
 ```
 
+## 主觀三維評分總覽
+
+> [!abstract] 信心 / 興趣 / 風險 — 幫助你辨識高價值目標
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.status !== "archived" && ((p.score_confidence || 0) + (p.score_interest || 0) + (p.score_risk || 0)) > 0;
+});
+if (pages.length === 0) {
+  dv.paragraph("尚無專案填寫三維評分。在筆記的「快速評估」區填寫信心/興趣/風險 1-5 分，並更新 frontmatter 的 score_confidence / score_interest / score_risk。");
+} else {
+  // 綜合分數 = interest*2 + confidence + risk（興趣權重最高）
+  const scored = pages.map(p => ({
+    link: p.file.link,
+    c: p.score_confidence || 0,
+    i: p.score_interest || 0,
+    r: p.score_risk || 0,
+    composite: (p.score_interest || 0) * 2 + (p.score_confidence || 0) + (p.score_risk || 0),
+    status: p.status || "",
+    spd: p.stars_per_day || 0,
+  })).sort((a, b) => b.composite - a.composite);
+
+  // 高興趣但低信心 = 值得深入研究
+  const researchTargets = scored.filter(s => s.i >= 4 && s.c <= 2);
+  if (researchTargets.length > 0) {
+    dv.header(4, "值得深入研究（高興趣 + 低信心）");
+    dv.table(
+      ["專案", "興趣", "信心", "風險", "Stars/天"],
+      researchTargets.map(s => [s.link, s.i, s.c, s.r, s.spd])
+    );
+  }
+
+  // 全部評分排行
+  dv.header(4, "綜合評分排行");
+  dv.table(
+    ["專案", "信心", "興趣", "風險", "綜合", "狀態"],
+    scored.slice(0, 15).map(s => [s.link, s.c, s.i, s.r, s.composite, s.status])
+  );
+}
+```
+
 ## Owner 排行榜
 
 > [!abstract] 哪些開發者/組織的專案最常登上 Trending
@@ -978,6 +1019,59 @@ const avgSpd = total > 0 ? Math.round(pages.map(p => p.stars_per_day || 0).array
 const medianArr = pages.map(p => p.stars_per_day || 0).array().sort((a,b) => a-b);
 const median = medianArr.length > 0 ? medianArr[Math.floor(medianArr.length / 2)] : 0;
 dv.paragraph(`**平均** ${avgSpd} stars/天 · **中位數** ${median} stars/天`);
+```
+
+## 維護健康快照
+
+> [!abstract] 你正在關注的專案是否仍在積極維護？
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.status && p.status !== "to-review" && p.status !== "archived";
+});
+if (pages.length > 0) {
+  const now = Date.now();
+  const rows = pages.sort(p => {
+    const pushed = p.pushed_at ? new Date(p.pushed_at.toString()).getTime() : 0;
+    return now - pushed;
+  }, "desc").map(p => {
+    const pushed = p.pushed_at ? new Date(p.pushed_at.toString()) : null;
+    const days = pushed ? Math.floor((now - pushed.getTime()) / 86400000) : null;
+    const health = days === null ? "?" : days <= 7 ? "Active" : days <= 30 ? "OK" : days <= 90 ? "Slow" : "Stale";
+    const bar = days === null ? "?" : days <= 7 ? "\u2588\u2588\u2588\u2588" : days <= 30 ? "\u2588\u2588\u2588\u2591" : days <= 90 ? "\u2588\u2588\u2591\u2591" : "\u2588\u2591\u2591\u2591";
+    return [p.file.link, p.status, health, bar, days !== null ? days + " 天前" : "?", p.category || ""];
+  });
+  dv.table(["專案", "狀態", "維護", "健康", "最後推送", "分類"], rows);
+} else {
+  dv.paragraph("先將感興趣的專案改為 reading/tried/integrated 狀態。");
+}
+```
+
+## Topic 標籤雲
+
+> [!abstract] 收錄專案涵蓋的 GitHub Topics
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const topics = {};
+for (const p of pages) {
+  const tags = p.file.tags || [];
+  for (const t of tags) {
+    if (t.startsWith("#topic/")) {
+      const name = t.replace("#topic/", "").replace(/_/g, "-");
+      topics[name] = (topics[name] || 0) + 1;
+    }
+  }
+}
+const sorted = Object.entries(topics).sort((a, b) => b[1] - a[1]);
+if (sorted.length > 0) {
+  dv.paragraph(sorted.map(([t, c]) => {
+    const size = c >= 5 ? "**" : c >= 3 ? "" : "";
+    return size + t + "(" + c + ")" + size;
+  }).join(" "));
+} else {
+  dv.paragraph("_下次 Actions 執行後會出現 topic 標籤_");
+}
 ```
 
 ## 所有專案

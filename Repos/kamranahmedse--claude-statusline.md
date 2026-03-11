@@ -7,10 +7,10 @@ language: Shell
 license: MIT
 description: "Minimal Claude Code statusline setup I personally use"
 homepage: ""
-stars: 393
-stars_per_day: 197
-forks: 15
-open_issues: 3
+stars: 399
+stars_per_day: 200
+forks: 16
+open_issues: 4
 created: 2026-03-08
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
@@ -27,10 +27,12 @@ use_case: "讓你的 Claude Code 狀態列顯示限制、目錄和 Git 資訊，
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-next_review: "2026-03-17"
+appearances: 2
+next_review: "2026-03-14"
 engagement: "low"
 verdict: ""
 ring_history: "assess@2026-03-10"
+star_history: "2026-03-11:399"
 tags:
   - github
   - "category/開發工具"
@@ -289,4 +291,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，399 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，383 stars
