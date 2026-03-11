@@ -324,14 +324,32 @@ for (const p of pages) {
   catData[cat] = (catData[cat] || 0) + 1;
 }
 const sorted = Object.entries(catData).sort((a,b) => b[1] - a[1]).slice(0, 10);
-dv.table(
-  ["分類", "數量", "佔比", "視覺化"],
-  sorted.map(([cat, count]) => {
-    const pct = Math.round((count / pages.length) * 100);
-    const bar = "█".repeat(Math.round(pct / 5)) + "░".repeat(20 - Math.round(pct / 5));
-    return [cat, count, pct + "%", bar];
-  })
-);
+
+// 嘗試使用 Obsidian Charts 插件渲染長條圖
+if (typeof window.renderChart === "function") {
+  window.renderChart({
+    type: 'bar',
+    data: {
+      labels: sorted.map(([cat]) => cat),
+      datasets: [{
+        label: '專案數量',
+        data: sorted.map(([, count]) => count),
+        backgroundColor: 'rgba(99, 102, 241, 0.7)'
+      }]
+    },
+    options: { indexAxis: 'y', plugins: { legend: { display: false } } }
+  }, this.container);
+} else {
+  // 降級為文字表格
+  dv.table(
+    ["分類", "數量", "佔比", "視覺化"],
+    sorted.map(([cat, count]) => {
+      const pct = Math.round((count / pages.length) * 100);
+      const bar = "\u2588".repeat(Math.round(pct / 5)) + "\u2591".repeat(20 - Math.round(pct / 5));
+      return [cat, count, pct + "%", bar];
+    })
+  );
+}
 ```
 
 ## 月度趨勢
@@ -652,6 +670,8 @@ dv.table(
 
 ## 所有專案
 
+> [!info]- 展開查看全部（前 100 筆）
+
 ```dataview
 TABLE
   stars AS "Stars",
@@ -662,6 +682,7 @@ TABLE
   first_seen AS "收錄日期"
 FROM "Repos"
 SORT stars DESC
+LIMIT 100
 ```
 
 ---
@@ -673,6 +694,7 @@ SORT stars DESC
 >
 > **推薦插件**：
 > - [Dataview](https://github.com/blacksmithgu/obsidian-dataview) — 動態查詢引擎（必裝）
+> - [Charts](https://github.com/phibr0/obsidian-charts) — 互動式 Chart.js 圖表（分類趨勢會自動升級為長條圖）
 > - [Contribution Graph](https://github.com/vran-dev/obsidian-contribution-graph) — 收錄熱力圖
 > - [Heatmap Calendar](https://github.com/Richardsl/heatmap-calendar-obsidian) — GitHub 風格活動熱力圖
 > - [Periodic Notes](https://github.com/liamcain/obsidian-periodic-notes) — 每週回顧自動化
