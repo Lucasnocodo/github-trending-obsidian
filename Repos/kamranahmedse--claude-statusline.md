@@ -172,6 +172,8 @@ npx @kamranahmedse/claude-statusline --uninstall
 
 ## 延伸閱讀
 
+相關專案：[[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]] · [[runesleo--claude-code-workflow|runesleo/claude-code-workflow]]
+
 [GitHub](https://github.com/kamranahmedse/claude-statusline)
 
 ## 相關收錄

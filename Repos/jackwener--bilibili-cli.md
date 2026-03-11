@@ -253,6 +253,8 @@ bili video BV1ABcsztEcY --subtitle --ai
 
 相關概念：[[CLI/TUI]] · [[API 設計]]
 
+相關專案：[[jackwener--twitter-cli|jackwener/twitter-cli]]
+
 [GitHub](https://github.com/jackwener/bilibili-cli)
 
 ## 相關收錄

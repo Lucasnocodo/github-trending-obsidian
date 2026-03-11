@@ -2386,9 +2386,45 @@ async function refreshRepos(token, failedOnly = false) {
       const priorityMatch = item.content.match(/^priority: (.+)$/m);
       const savedPriority = priorityMatch ? priorityMatch[1] : 'medium';
 
+      // 從舊筆記提取手動策展的 相關專案 wikilinks（延伸閱讀區塊）
+      const oldRelatedMatch = item.content.match(/^相關專案：(.+)$/m);
+      const oldRelatedLinks = oldRelatedMatch
+        ? (oldRelatedMatch[1].match(/\[\[[^\]]+\]\]/g) || [])
+        : [];
+
       const newNote = generateRepoNote(item.repo, llmInfo, firstSeen);
+
+      // 合併舊的手動 wikilinks 到新筆記的延伸閱讀（去重）
+      let mergedNote = newNote;
+      if (oldRelatedLinks.length > 0) {
+        const newRelatedMatch = mergedNote.match(/^相關專案：(.+)$/m);
+        const newRelatedLinks = newRelatedMatch
+          ? (newRelatedMatch[1].match(/\[\[[^\]]+\]\]/g) || [])
+          : [];
+        // 合併：新的 + 舊的（去重，以 alias 前的 key 為準）
+        const seen = new Set();
+        const allLinks = [];
+        for (const link of [...newRelatedLinks, ...oldRelatedLinks]) {
+          const key = link.replace(/\[\[/, '').replace(/\|.*/, '').replace(/\]\]/, '');
+          if (!seen.has(key)) {
+            seen.add(key);
+            allLinks.push(link);
+          }
+        }
+        const mergedLine = `相關專案：${allLinks.join(' · ')}`;
+        if (newRelatedMatch) {
+          mergedNote = mergedNote.replace(/^相關專案：.+$/m, mergedLine);
+        } else {
+          // 新筆記沒有相關專案行，插入到延伸閱讀區塊
+          mergedNote = mergedNote.replace(
+            /^(## 延伸閱讀\n\n(?:相關概念：.+\n\n)?)/m,
+            `$1${mergedLine}\n\n`
+          );
+        }
+      }
+
       // 還原使用者編輯過的欄位（避免 refresh 覆蓋手動更改）
-      let merged = mergeNote(newNote, userNotes, appearances);
+      let merged = mergeNote(mergedNote, userNotes, appearances);
       merged = merged
         .replace(/^status: to-review$/m, `status: ${savedStatus}`)
         .replace(/^my_rating: 0$/m, `my_rating: ${savedRating}`)

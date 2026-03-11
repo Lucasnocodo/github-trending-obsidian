@@ -273,6 +273,8 @@ twitter search 'Claude Code'
 
 相關概念：[[CLI/TUI]] · [[API 設計]] · [[自動化測試]]
 
+相關專案：[[jackwener--bilibili-cli|jackwener/bilibili-cli]]
+
 [GitHub](https://github.com/jackwener/twitter-cli)
 
 ## 相關收錄

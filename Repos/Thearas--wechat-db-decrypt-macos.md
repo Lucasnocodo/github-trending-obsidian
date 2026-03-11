@@ -213,6 +213,8 @@ python3 export_messages.py -c "卡比" -n 50
 
 ## 延伸閱讀
 
+相關專案：[[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[photon-hq--qclaw-wechat-client|photon-hq/qclaw-wechat-client]]
+
 [GitHub](https://github.com/Thearas/wechat-db-decrypt-macos)
 
 ## 相關收錄

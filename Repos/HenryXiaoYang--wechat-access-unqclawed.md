@@ -270,6 +270,8 @@ openclaw channels login --channel wechat-access-unqclawed
 
 相關概念：[[AGP Protocol]] · [[OAuth]] · [[WebSocket]]
 
+相關專案：[[photon-hq--qclaw-wechat-client|photon-hq/qclaw-wechat-client]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]]
+
 [GitHub](https://github.com/HenryXiaoYang/wechat-access-unqclawed)
 
 ## 相關收錄

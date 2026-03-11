@@ -276,6 +276,8 @@ aliases:
 
 相關概念：[[CLI/TUI]] · [[API 設計]] · [[自動化測試]]
 
+相關專案：[[kamranahmedse--claude-statusline|kamranahmedse/claude-statusline]] · [[runesleo--claude-code-workflow|runesleo/claude-code-workflow]]
+
 [GitHub](https://github.com/op7418/Claude-to-IM-skill)
 
 ## 相關收錄

@@ -294,7 +294,7 @@ const loginRes = await client.wxLogin({ guid: 'machine-id', code: authCode, stat
 
 相關概念：[[API 設計]] · [[OAuth2]] · [[WebSocket]] · [[自動化測試]]
 
-相關專案：[[photon-hq--qclaw|photon-hq/qclaw]] · [[wechaty--wechaty|wechaty/wechaty]]
+相關專案：[[photon-hq--qclaw|photon-hq/qclaw]] · [[wechaty--wechaty|wechaty/wechaty]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]]
 
 [GitHub](https://github.com/photon-hq/qclaw-wechat-client) · [官方網站](https://photon.codes)
 
