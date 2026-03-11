@@ -7,10 +7,10 @@ language: TypeScript
 license: N/A
 description: "Reverse-engineered TypeScript client for QClaw's WeChat Access API."
 homepage: "https://photon.codes"
-stars: 326
-stars_per_day: 326
-forks: 110
-open_issues: 5
+stars: 470
+stars_per_day: 470
+forks: 182
+open_issues: 6
 created: 2026-03-10
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
@@ -27,10 +27,12 @@ use_case: "提供一個 TypeScript 客戶端，讓開發者能夠透過 WeChat O
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-next_review: "2026-03-13"
+appearances: 2
+next_review: "2026-03-14"
 engagement: "high"
 verdict: ""
 ring_history: "assess@2026-03-10"
+star_history: "2026-03-11:470"
 tags:
   - github
   - "category/開發工具"
@@ -299,7 +301,7 @@ const loginRes = await client.wxLogin({ guid: 'machine-id', code: authCode, stat
 
 相關概念：[[API 設計]] · [[即時通訊]] · [[OAuth2]]
 
-相關專案：[[photon-hq--qclaw|photon-hq/qclaw]] · [[wechaty--wechaty|wechaty/wechaty]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--twitter-cli|jackwener/twitter-cli]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]]
+相關專案：[[photon-hq--qclaw|photon-hq/qclaw]] · [[wechaty--wechaty|wechaty/wechaty]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
 
 [GitHub](https://github.com/photon-hq/qclaw-wechat-client) · [官方網站](https://photon.codes)
 
@@ -381,4 +383,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，470 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，282 stars

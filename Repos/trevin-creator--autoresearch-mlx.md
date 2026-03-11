@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "Apple Silicon (MLX) port of Karpathy's autoresearch — autonomous AI research loops on Mac, no PyTorch required."
 homepage: ""
-stars: 483
-stars_per_day: 242
-forks: 69
+stars: 495
+stars_per_day: 248
+forks: 77
 open_issues: 3
 created: 2026-03-08
 pushed_at: 2026-03-10
@@ -27,10 +27,12 @@ use_case: "在 Apple Silicon 上實現無需 PyTorch 的自動化 AI 研究循�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-next_review: "2026-03-13"
+appearances: 2
+next_review: "2026-03-14"
 engagement: "medium"
 verdict: ""
 ring_history: "assess@2026-03-10"
+star_history: "2026-03-11:495"
 tags:
   - github
   - "category/ai_ml"
@@ -243,7 +245,7 @@ uv run train.py
 
 相關概念：[[自動化]] · [[機器學習]] · [[深度學習]]
 
-相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[duoan--TorchCode|duoan/TorchCode]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[inspatio--worldfm|inspatio/worldfm]] · [[tanishqkumar--ssd|tanishqkumar/ssd]] · [[uluckyXH--OpenMOSS|uluckyXH/OpenMOSS]] · [[xstongxue--best-skills|xstongxue/best-skills]]
+相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[duoan--TorchCode|duoan/TorchCode]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/trevin-creator/autoresearch-mlx)
 
@@ -325,4 +327,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，495 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，459 stars

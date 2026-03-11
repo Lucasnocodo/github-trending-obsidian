@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "Fractals is a recursive task orchestrator for agent swarm"
 homepage: "https://tinyagicompany.com"
-stars: 515
+stars: 517
 stars_per_day: 103
-forks: 37
+forks: 38
 open_issues: 3
 created: 2026-03-05
 pushed_at: 2026-03-06
@@ -27,10 +27,12 @@ use_case: "讓高階任務自動分解成可執行的子任務，並用代理群
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-next_review: "2026-03-17"
+appearances: 2
+next_review: "2026-03-18"
 engagement: "low"
 verdict: ""
 ring_history: "assess@2026-03-10"
+star_history: "2026-03-11:517"
 tags:
   - github
   - "category/開發工具"
@@ -314,7 +316,7 @@ Fractals 的核心技術在於其遞歸任務分解能力，使用 LLM 進行任
 
 相關概念：[[自動化]] · [[任務管理]] · [[多工作樹]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[google--TaskOrchestrator|google/TaskOrchestrator]] · [[airflow--airflow|airflow/airflow]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[uluckyXH--OpenMOSS|uluckyXH/OpenMOSS]] · [[zornade--visura-api|zornade/visura-api]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[ahmadawais--chartli|ahmadawais/chartli]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[google--TaskOrchestrator|google/TaskOrchestrator]] · [[airflow--airflow|airflow/airflow]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]]
 
 [GitHub](https://github.com/TinyAGI/fractals) · [官方網站](https://tinyagicompany.com)
 
@@ -396,4 +398,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，517 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，511 stars

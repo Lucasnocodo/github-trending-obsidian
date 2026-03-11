@@ -53,15 +53,6 @@ const stale = pages.where(p => {
 if (stale.length > 0) {
   actions.push(`**重新檢視** ${stale.first().file.link}（高評分但超過 14 天未回顧）`);
 }
-// 到期複習提醒
-const dueReview = pages.where(p => {
-  if (!p.next_review || p.status === "archived") return false;
-  const nr = new Date(p.next_review.toString());
-  return nr.getTime() <= Date.now();
-});
-if (dueReview.length > 0) {
-  actions.push(`**到期複習** ${dueReview.length} 個專案已到複習日（最優先：${dueReview.sort(p => p.stars_per_day, "desc").first().file.link}）`);
-}
 if (actions.length > 0) {
   dv.list(actions);
 } else {
@@ -69,39 +60,74 @@ if (actions.length > 0) {
 }
 ```
 
-## 今日重訪
+## 今日待複習
 
-> [!abstract] 知識重現
-> 隨機挑選 30 天以上未接觸的筆記，避免知識被遺忘
+> [!tip] 根據間隔複習排程，以下專案該回顧了
+
+```dataview
+TABLE
+  next_review AS "預定複習日",
+  stars_per_day AS "Stars/天",
+  category AS "分類",
+  use_case AS "用途",
+  priority AS "優先級"
+FROM "Repos"
+WHERE next_review AND date(next_review) <= date(today) AND status != "archived"
+SORT date(next_review) ASC
+```
+
+## 複習預報（未來 14 天）
+
+> [!abstract] 未來兩週的複習工作量預覽
 
 ```dataviewjs
-const repos = dv.pages('"Repos"')
-  .where(p => {
-    if (p.status === "archived") return false;
-    const mtime = p.file.mtime?.ts || 0;
-    return (Date.now() - mtime) > 30 * 86400000;
-  }).array();
-const concepts = dv.pages('"Concepts"')
-  .where(p => {
-    const mtime = p.file.mtime?.ts || 0;
-    return (Date.now() - mtime) > 30 * 86400000;
-  }).array();
+const pages = dv.pages('"Repos"').where(p => p.next_review && p.status !== "archived");
+const today = new Date();
+today.setHours(0,0,0,0);
+const forecast = [];
+for (let i = 0; i < 14; i++) {
+  const d = new Date(today);
+  d.setDate(d.getDate() + i);
+  const key = d.toISOString().split("T")[0];
+  const due = pages.where(p => {
+    const nr = new Date(p.next_review.toString());
+    nr.setHours(0,0,0,0);
+    return nr.getTime() === d.getTime();
+  });
+  forecast.push({ date: key, count: due.length, repos: due });
+}
+const overdue = pages.where(p => new Date(p.next_review.toString()) < today).length;
+if (overdue > 0) dv.paragraph(`**${overdue}** 個已逾期`);
+const rows = [];
+for (const f of forecast) {
+  const day = f.date.slice(5);
+  const bar = "\u2588".repeat(Math.min(f.count, 10)) + "\u2591".repeat(Math.max(0, 10 - f.count));
+  const names = f.repos.sort(p => p.stars_per_day, "desc").limit(3).map(p => p.file.link).join(", ");
+  rows.push([day, f.count, bar, names]);
+}
+dv.table(["日期", "數量", "負載", "代表專案"], rows);
+const totalDue = forecast.reduce((s, f) => s + f.count, 0);
+dv.paragraph(`未來兩週共 **${totalDue}** 個待複習（含逾期 ${overdue}）`);
+```
 
-const pool = [...repos, ...concepts];
-const sample = pool.sort(() => Math.random() - 0.5).slice(0, 5);
+## 參與度分析
 
-if (sample.length > 0) {
+> [!info] Fork/Star 比率反映社群實際使用程度
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.engagement);
+const groups = { high: [], medium: [], low: [] };
+for (const p of pages) {
+  const e = p.engagement?.toString() || "low";
+  if (groups[e]) groups[e].push(p);
+}
+dv.paragraph(`**High** (fork 比 >=30%): ${groups.high.length} · **Medium** (10-30%): ${groups.medium.length} · **Low** (<10%): ${groups.low.length}`);
+if (groups.high.length > 0) {
+  dv.header(4, "高參與度專案");
   dv.table(
-    ["筆記", "類型", "最後修改", "距今天數"],
-    sample.map(p => {
-      const mtime = p.file.mtime?.ts || 0;
-      const days = Math.round((Date.now() - mtime) / 86400000);
-      const type = p.file.folder === "Repos" ? "Repo" : "Concept";
-      return [p.file.link, type, p.file.mtime?.toFormat?.("yyyy-MM-dd") || "N/A", days + " 天"];
-    })
+    ["專案", "Stars", "Forks", "分類"],
+    groups.high.sort((a,b) => (b.stars||0) - (a.stars||0)).map(p => [p.file.link, p.stars, p.forks, p.category])
   );
-} else {
-  dv.paragraph("所有筆記都在 30 天內有修改，做得好！");
 }
 ```
 
@@ -122,6 +148,151 @@ TABLE WITHOUT ID
 FROM "Repos"
 GROUP BY status
 SORT length(rows) DESC
+```
+
+## Tech Radar 總覽
+
+```dataview
+TABLE WITHOUT ID
+  ring AS "Ring",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE ring != null AND ring != ""
+GROUP BY ring
+SORT choice(ring, "adopt", 1, choice(ring, "trial", 2, choice(ring, "assess", 3, 4))) ASC
+```
+
+## 有結論的專案
+
+```dataview
+TABLE
+  verdict AS "結論",
+  ring AS "Ring",
+  ring_history AS "歷程",
+  ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分",
+  category AS "分類"
+FROM "Repos"
+WHERE verdict != "" AND verdict != null
+SORT my_rating DESC
+```
+
+## 需要填空
+
+> [!warning] 高關注度專案尚未給出結論 — 值得優先評估
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  if (p.status === "archived") return false;
+  const hasVerdict = p.verdict && p.verdict !== "";
+  const hasRing = p.ring && p.ring !== "" && p.ring !== "assess";
+  const highValue = (p.stars_per_day || 0) >= 50 || (p.my_rating || 0) >= 4 || p.priority === "high";
+  return highValue && (!hasVerdict || !hasRing);
+});
+if (pages.length > 0) {
+  pages.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0));
+  dv.paragraph(`**${pages.length}** 個高價值專案等待你的決策`);
+  dv.table(
+    ["專案", "Stars/天", "評分", "狀態", "缺少"],
+    pages.limit(10).map(p => {
+      const missing = [];
+      if (!p.verdict || p.verdict === "") missing.push("verdict");
+      if (!p.ring || p.ring === "" || p.ring === "assess") missing.push("ring");
+      if (!p.my_rating || p.my_rating === 0) missing.push("rating");
+      return [
+        p.file.link,
+        p.stars_per_day || 0,
+        p.my_rating > 0 ? ("\u2605".repeat(p.my_rating) + "\u2606".repeat(5 - p.my_rating)) : "未評",
+        p.status || "?",
+        missing.join(", ")
+      ];
+    })
+  );
+} else {
+  dv.paragraph("所有高價值專案都已完成評估！");
+}
+```
+
+## Ring 異動追蹤
+
+> [!abstract] 最近的 Tech Radar 狀態變更
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.ring_history && typeof p.ring_history === "string" && p.ring_history.includes(","));
+if (pages.length > 0) {
+  const changes = [];
+  for (const p of pages) {
+    const entries = p.ring_history.split(",").map(e => e.trim());
+    if (entries.length >= 2) {
+      const prev = entries[entries.length - 2].split("@");
+      const curr = entries[entries.length - 1].split("@");
+      const prevRing = prev[0] || "?";
+      const currRing = curr[0] || "?";
+      const date = curr[1] || "?";
+      const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
+      const direction = (ringOrder[currRing] || 0) > (ringOrder[prevRing] || 0) ? "UP" : (ringOrder[currRing] || 0) < (ringOrder[prevRing] || 0) ? "DOWN" : "SAME";
+      changes.push({ link: p.file.link, from: prevRing, to: currRing, date, direction, stars: p.stars_per_day || 0 });
+    }
+  }
+  changes.sort((a, b) => b.date.localeCompare(a.date));
+  if (changes.length > 0) {
+    dv.table(
+      ["專案", "異動", "方向", "日期", "Stars/天"],
+      changes.slice(0, 10).map(c => [
+        c.link,
+        c.from + " -> " + c.to,
+        c.direction === "UP" ? "Promoted" : c.direction === "DOWN" ? "Demoted" : "Lateral",
+        c.date,
+        c.stars
+      ])
+    );
+  }
+} else {
+  dv.paragraph("尚無 ring 異動紀錄。更新專案的 ring 時請追加 ring_history。");
+}
+```
+
+## 趨勢方向
+
+> [!abstract] 基於 star_history 偵測哪些專案正在加速或降溫
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.star_history && typeof p.star_history === "string" && p.star_history.includes(","));
+if (pages.length > 0) {
+  const trends = [];
+  for (const p of pages) {
+    const entries = p.star_history.split(",").map(e => {
+      const [d, s] = e.trim().split(":");
+      return { date: d, stars: parseInt(s) || 0 };
+    }).filter(e => e.date && e.stars > 0);
+    if (entries.length < 2) continue;
+    const mid = Math.floor(entries.length / 2);
+    const firstHalf = entries.slice(0, mid);
+    const secondHalf = entries.slice(mid);
+    const avgFirst = firstHalf.length > 1 ? (firstHalf[firstHalf.length-1].stars - firstHalf[0].stars) / Math.max(1, (new Date(firstHalf[firstHalf.length-1].date) - new Date(firstHalf[0].date)) / 86400000) : 0;
+    const avgSecond = secondHalf.length > 1 ? (secondHalf[secondHalf.length-1].stars - secondHalf[0].stars) / Math.max(1, (new Date(secondHalf[secondHalf.length-1].date) - new Date(secondHalf[0].date)) / 86400000) : 0;
+    const ratio = avgFirst > 0 ? avgSecond / avgFirst : avgSecond > 0 ? 2 : 1;
+    const trend = ratio > 1.3 ? "Rising" : ratio < 0.7 ? "Cooling" : "Stable";
+    trends.push({ link: p.file.link, trend, ratio: Math.round(ratio * 100) / 100, recentRate: Math.round(avgSecond), cat: p.category, spd: p.stars_per_day });
+  }
+  trends.sort((a, b) => b.ratio - a.ratio);
+  const rising = trends.filter(t => t.trend === "Rising");
+  const cooling = trends.filter(t => t.trend === "Cooling");
+  const stable = trends.filter(t => t.trend === "Stable");
+  dv.paragraph(`Rising **${rising.length}** · Stable **${stable.length}** · Cooling **${cooling.length}**`);
+  if (rising.length > 0) {
+    dv.header(4, "Rising（加速成長）");
+    dv.table(["專案", "加速比", "近期增速", "Stars/天", "分類"],
+      rising.slice(0, 5).map(t => [t.link, t.ratio + "x", t.recentRate + "/天", t.spd, t.cat]));
+  }
+  if (cooling.length > 0) {
+    dv.header(4, "Cooling（降溫中）");
+    dv.table(["專案", "減速比", "近期增速", "Stars/天", "分類"],
+      cooling.slice(0, 5).map(t => [t.link, t.ratio + "x", t.recentRate + "/天", t.spd, t.cat]));
+  }
+} else {
+  dv.paragraph("需要多次 refresh 才能累積 star_history 趨勢資料。");
+}
 ```
 
 ## 爆紅專案 Top 15
@@ -197,34 +368,6 @@ WHERE last_reviewed AND date(today) - date(last_reviewed) > dur(30 days)
 SORT last_reviewed ASC
 ```
 
-## 已有結論的專案
-
-```dataview
-TABLE
-  verdict AS "結論",
-  ("★" * my_rating + "☆" * (5 - my_rating)) AS "評分",
-  category AS "分類",
-  status AS "狀態"
-FROM "Repos"
-WHERE verdict AND verdict != ""
-SORT my_rating DESC
-```
-
-## 依參與度分群
-
-> [!abstract] Forks/Stars 比值反映社群實際使用程度
-
-```dataview
-TABLE WITHOUT ID
-  engagement AS "參與度",
-  length(rows) AS "數量",
-  rows.file.link AS "專案"
-FROM "Repos"
-WHERE status != "archived"
-GROUP BY engagement
-SORT choice(engagement, "high", 1, choice(engagement, "medium", 2, 3)) ASC
-```
-
 ## 依分類瀏覽
 
 ```dataview
@@ -232,9 +375,27 @@ TABLE WITHOUT ID
   category AS "分類",
   length(rows) AS "數量",
   sum(rows.stars) AS "總 Stars",
+  round(average(rows.stars_per_day), 0) AS "平均 Stars/天",
+  max(rows.stars_per_day) AS "最快",
   round(sum(rows.my_rating) / length(rows.where(r => r.my_rating > 0)), 1) AS "平均評分"
 FROM "Repos"
 GROUP BY category
+SORT length(rows) DESC
+```
+
+## 依子分類瀏覽
+
+> [!tip]- 展開查看細分類
+
+```dataview
+TABLE WITHOUT ID
+  category AS "主分類",
+  subcategory AS "子分類",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE subcategory != ""
+GROUP BY category + " / " + subcategory
 SORT length(rows) DESC
 ```
 
@@ -290,6 +451,22 @@ GROUP BY week
 SORT week DESC
 ```
 
+## 多次上榜
+
+> [!tip] 這些專案反覆出現在 GitHub Trending，值得留意
+
+```dataview
+TABLE
+  appearances AS "上榜次數",
+  stars AS "Stars",
+  stars_per_day AS "Stars/天",
+  category AS "分類",
+  priority AS "優先級"
+FROM "Repos"
+WHERE appearances > 1
+SORT appearances DESC
+```
+
 ## 持續熱門
 
 > [!tip] 收錄超過 7 天仍在活躍開發的專案
@@ -300,7 +477,7 @@ const pages = dv.pages('"Repos"')
     if (!p.first_seen || !p.pushed_at) return false;
     const daysSinceSeen = (new Date() - new Date(p.first_seen?.toString())) / 86400000;
     const daysSincePush = (new Date() - new Date(p.pushed_at?.toString())) / 86400000;
-    return daysSinceSeen > 7 && daysSincePush < 7 && (p.stars_per_day || 0) > 100;
+    return daysSinceSeen > 7 && daysSincePush < 7 && (p.stars_per_day || 0) > 50;
   })
   .sort(p => p.stars, "desc");
 
@@ -314,6 +491,26 @@ if (pages.length > 0) {
 }
 ```
 
+## Star 增長追蹤
+
+> [!abstract] 有歷史資料的專案 Star 變化
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.star_history && typeof p.star_history === "string" && p.star_history.includes(","));
+if (pages.length > 0) {
+  const rows = pages.sort(p => p.stars_per_day, "desc").limit(10).map(p => {
+    const entries = p.star_history.split(",").map(e => { const [d, s] = e.split(":"); return { date: d, stars: parseInt(s) || 0 }; });
+    const first = entries[0], last = entries[entries.length - 1];
+    const growth = last.stars - first.stars;
+    const days = Math.max(1, (new Date(last.date) - new Date(first.date)) / 86400000);
+    return [p.file.link, first.stars.toLocaleString(), last.stars.toLocaleString(), "+" + growth.toLocaleString(), Math.round(growth / days) + "/天", entries.length + " 筆"];
+  });
+  dv.table(["專案", "首次 Stars", "最新 Stars", "增長", "增速", "資料點"], rows);
+} else {
+  dv.paragraph("尚無歷史資料。多次出現或 refresh 的專案會累積 star_history。");
+}
+```
+
 ## 分類趨勢
 
 ```dataviewjs
@@ -324,31 +521,61 @@ for (const p of pages) {
   catData[cat] = (catData[cat] || 0) + 1;
 }
 const sorted = Object.entries(catData).sort((a,b) => b[1] - a[1]).slice(0, 10);
+dv.table(
+  ["分類", "數量", "佔比", "視覺化"],
+  sorted.map(([cat, count]) => {
+    const pct = Math.round((count / pages.length) * 100);
+    const bar = "█".repeat(Math.round(pct / 5)) + "░".repeat(20 - Math.round(pct / 5));
+    return [cat, count, pct + "%", bar];
+  })
+);
+```
 
-// 嘗試使用 Obsidian Charts 插件渲染長條圖
-if (typeof window.renderChart === "function") {
-  window.renderChart({
-    type: 'bar',
-    data: {
-      labels: sorted.map(([cat]) => cat),
-      datasets: [{
-        label: '專案數量',
-        data: sorted.map(([, count]) => count),
-        backgroundColor: 'rgba(99, 102, 241, 0.7)'
-      }]
-    },
-    options: { indexAxis: 'y', plugins: { legend: { display: false } } }
-  }, this.container);
-} else {
-  // 降級為文字表格
+## 分類圓餅圖
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const cats = {};
+for (const p of pages) {
+  const c = p.category || "其他";
+  cats[c] = (cats[c] || 0) + 1;
+}
+const lines = ['pie title 分類分佈'];
+for (const [cat, count] of Object.entries(cats).sort((a,b) => b[1] - a[1])) {
+  lines.push('    "' + cat + '" : ' + count);
+}
+dv.paragraph('```mermaid\n' + lines.join('\n') + '\n```');
+```
+
+## 子分類聚集
+
+> [!abstract] 同一子分類的多個專案代表該方向正被密集探索
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived" && p.subcategory);
+const subs = {};
+for (const p of pages) {
+  const key = p.category + " > " + p.subcategory;
+  if (!subs[key]) subs[key] = [];
+  subs[key].push(p);
+}
+const hot = Object.entries(subs).filter(([_, r]) => r.length >= 2).sort((a, b) => b[1].length - a[1].length);
+if (hot.length > 0) {
   dv.table(
-    ["分類", "數量", "佔比", "視覺化"],
-    sorted.map(([cat, count]) => {
-      const pct = Math.round((count / pages.length) * 100);
-      const bar = "\u2588".repeat(Math.round(pct / 5)) + "\u2591".repeat(20 - Math.round(pct / 5));
-      return [cat, count, pct + "%", bar];
+    ["子分類", "數量", "最熱門", "Stars/天", "專案"],
+    hot.map(([sub, repos]) => {
+      repos.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0));
+      return [
+        sub,
+        repos.length,
+        repos[0].file.link,
+        repos[0].stars_per_day || 0,
+        repos.slice(1).map(r => r.file.link).join(", ")
+      ];
     })
   );
+} else {
+  dv.paragraph("_需收錄更多專案才能看到子分類聚集_");
 }
 ```
 
@@ -377,6 +604,18 @@ dv.table(
     Math.round(d.stars / d.count).toLocaleString()
   ])
 );
+```
+
+## 授權分佈
+
+```dataview
+TABLE WITHOUT ID
+  license AS "授權",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+GROUP BY license
+SORT length(rows) DESC
 ```
 
 ## Easy Install 專案
@@ -410,156 +649,54 @@ const rows = [];
 for (const p of pages) {
   const desc = p.aliases?.[2] || p.description || "";
   const install = p.install_complexity === "easy" ? "Easy" : p.install_complexity === "medium" ? "Mid" : "Hard";
+  // 從 pushed_at 計算維護狀態
+  let maint = "-";
+  if (p.pushed_at) {
+    const days = Math.floor((Date.now() - new Date(p.pushed_at.toString()).getTime()) / 86400000);
+    maint = days <= 7 ? "Active" : days <= 30 ? "OK" : days <= 90 ? "Slow" : "Stale";
+  }
   rows.push([
     p.file.link,
     (p.stars_per_day || 0) + "/d",
     install,
+    maint,
     p.category || "",
-    desc.slice(0, 50) + (desc.length > 50 ? "..." : "")
+    desc.slice(0, 40) + (desc.length > 40 ? "..." : "")
   ]);
 }
-dv.table(["專案", "速度", "安裝", "分類", "一句話"], rows);
+dv.table(["專案", "速度", "安裝", "維護", "分類", "一句話"], rows);
 ```
 
-## Tech Radar 概覽
+## 熱門概念（被最多專案引用）
 
 ```dataviewjs
-const pages = dv.pages('"Repos"').where(p => p.ring && p.status !== "archived");
-const rings = { adopt: [], trial: [], assess: [], hold: [] };
+const pages = dv.pages('"Repos"');
+const conceptCounts = {};
 for (const p of pages) {
-  const ring = (p.ring || "assess").toLowerCase();
-  if (rings[ring]) rings[ring].push(p);
-}
-
-const ringLabels = {
-  adopt: "Adopt（採用）",
-  trial: "Trial（試用）",
-  assess: "Assess（評估）",
-  hold: "Hold（觀望）"
-};
-
-for (const [ring, label] of Object.entries(ringLabels)) {
-  const repos = rings[ring];
-  if (repos.length > 0) {
-    dv.header(4, `${label} — ${repos.length} 個`);
-    dv.table(
-      ["專案", "分類", "Stars/天", "評分"],
-      repos.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0)).slice(0, 5).map(p => [
-        p.file.link,
-        p.category || "",
-        p.stars_per_day || 0,
-        p.my_rating > 0 ? ("★".repeat(p.my_rating) + "☆".repeat(5 - p.my_rating)) : "未評"
-      ])
-    );
+  const extMatch = p.file.outlinks?.filter(l => {
+    const target = dv.page(l.path);
+    return target?.tags?.includes("concept");
+  }) || [];
+  for (const link of extMatch) {
+    const name = link.path.split("/").pop();
+    conceptCounts[name] = (conceptCounts[name] || 0) + 1;
   }
 }
-if (Object.values(rings).every(r => r.length === 0)) {
-  dv.paragraph("尚未有專案被分配到 Tech Radar 環。更新筆記的 `ring` 欄位來開始使用。");
-}
-```
-
-## 語言 × 分類 矩陣
-
-```dataviewjs
-const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
-const matrix = {};
-const allCats = new Set();
-const allLangs = new Set();
-
-for (const p of pages) {
-  const lang = p.language || "Other";
-  const cat = p.category || "其他";
-  allLangs.add(lang);
-  allCats.add(cat);
-  const key = `${lang}|${cat}`;
-  matrix[key] = (matrix[key] || 0) + 1;
-}
-
-const topLangs = [...allLangs].sort((a, b) => {
-  const countA = pages.where(p => (p.language || "Other") === a).length;
-  const countB = pages.where(p => (p.language || "Other") === b).length;
-  return countB - countA;
-}).slice(0, 6);
-const topCats = [...allCats].sort((a, b) => {
-  const countA = pages.where(p => (p.category || "其他") === a).length;
-  const countB = pages.where(p => (p.category || "其他") === b).length;
-  return countB - countA;
-}).slice(0, 6);
-
-if (topLangs.length > 1 && topCats.length > 1) {
-  dv.table(
-    ["", ...topCats],
-    topLangs.map(lang => [
-      `**${lang}**`,
-      ...topCats.map(cat => matrix[`${lang}|${cat}`] || "")
-    ])
-  );
-}
-```
-
-## 概念分佈
-
-> [!abstract] 被最多專案引用的技術概念
-
-```dataviewjs
-const repos = dv.pages('"Repos"').where(p => p.status !== "archived");
-const conceptCount = {};
-for (const p of repos) {
-  for (const link of (p.file.outlinks || [])) {
-    if (link.path?.startsWith("Concepts/")) {
-      const name = link.path.replace("Concepts/", "").replace(".md", "");
-      conceptCount[name] = (conceptCount[name] || 0) + 1;
-    }
-  }
-}
-const sorted = Object.entries(conceptCount).sort((a, b) => b[1] - a[1]).slice(0, 12);
+const sorted = Object.entries(conceptCounts)
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 15);
 if (sorted.length > 0) {
   dv.table(
-    ["概念", "引用數", "佔比"],
+    ["概念", "引用次數", "視覺化"],
     sorted.map(([name, count]) => {
-      const pct = Math.round((count / repos.length) * 100);
-      const bar = "\u2588".repeat(Math.round(pct / 5)) + "\u2591".repeat(20 - Math.round(pct / 5));
-      return [dv.fileLink("Concepts/" + name, false, name), count, bar + " " + pct + "%"];
+      const bar = "█".repeat(count) + "░".repeat(Math.max(0, 20 - count));
+      return [dv.fileLink("Concepts/" + name, false, name), count, bar];
     })
   );
-} else {
-  dv.paragraph("_專案尚未建立概念連結_");
 }
 ```
 
-## 概念分群索引
-
-> [!abstract] 依主要關聯分類分群所有概念
-
-```dataviewjs
-const repos = dv.pages('"Repos"').where(p => p.status !== "archived");
-const conceptCats = {};
-for (const p of repos) {
-  const cat = p.category || "其他";
-  for (const link of (p.file.outlinks || [])) {
-    if (link.path?.startsWith("Concepts/")) {
-      const n = link.path.replace("Concepts/", "").replace(".md", "");
-      if (!conceptCats[n]) conceptCats[n] = {};
-      conceptCats[n][cat] = (conceptCats[n][cat] || 0) + 1;
-    }
-  }
-}
-const catGroups = {};
-for (const [concept, cats] of Object.entries(conceptCats)) {
-  const mainCat = Object.entries(cats).sort((a, b) => b[1] - a[1])[0][0];
-  if (!catGroups[mainCat]) catGroups[mainCat] = [];
-  catGroups[mainCat].push({ name: concept, count: Object.values(cats).reduce((s, c) => s + c, 0) });
-}
-for (const [cat, concepts] of Object.entries(catGroups).sort((a, b) => b[1].length - a[1].length)) {
-  concepts.sort((a, b) => b.count - a.count);
-  dv.header(4, `${cat} (${concepts.length} 個概念)`);
-  dv.paragraph(concepts.map(c => `[[Concepts/${c.name}|${c.name}]] (${c.count})`).join(" · "));
-}
-```
-
-## 圖譜健康分析
-
-### 孤立筆記（缺少連結）
+## 孤立筆記（缺少連結）
 
 > [!warning] 這些筆記沒有跟其他筆記建立連結，Graph View 中會是孤島
 
@@ -586,62 +723,146 @@ if (orphans.length > 0) {
 }
 ```
 
-### Hub 集中度
+## 筆記完整度
 
-> [!info] 被最多筆記引用的節點 — 過度集中代表分類太粗或連結單一化
+> [!info] 檢查哪些筆記缺少重要區塊
 
 ```dataviewjs
-const allPages = dv.pages('"Repos" or "Concepts"');
-const hubMap = {};
-for (const p of allPages) {
-  const inCount = p.file.inlinks?.length || 0;
-  if (inCount >= 5) {
-    hubMap[p.file.name] = { link: p.file.link, inlinks: inCount, folder: p.file.folder };
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const checks = [
+  { name: "成熟度評估", pattern: "## 成熟度評估" },
+  { name: "已知陷阱", pattern: "## 已知陷阱" },
+  { name: "使用情境適合度", pattern: "## 使用情境適合度" },
+  { name: "替代方案決策", pattern: "## 替代方案決策" },
+  { name: "技術深入分析", pattern: "## 技術深入分析" },
+  { name: "新手體驗", pattern: "## 新手體驗" },
+  { name: "架構分析", pattern: "## 架構分析" },
+  { name: "開發動態", pattern: "## 開發動態" },
+  { name: "熱門議題", pattern: "## 熱門議題" },
+  { name: "生態系整合", pattern: "## 生態系整合" },
+  { name: "歷史脈絡", pattern: "## 歷史脈絡" },
+  { name: "團隊採用指南", pattern: "## 團隊採用指南" },
+  { name: "相對成長速度", pattern: "## 相對成長速度" },
+];
+const incomplete = [];
+for (const p of pages) {
+  const content = await dv.io.load(p.file.path);
+  const missing = checks.filter(c => !content.includes(c.pattern)).map(c => c.name);
+  if (missing.length > 0) {
+    incomplete.push({ link: p.file.link, stars: p.stars, missing: missing.join(", "), count: missing.length });
   }
 }
-const hubs = Object.values(hubMap).sort((a, b) => b.inlinks - a.inlinks).slice(0, 10);
-if (hubs.length > 0) {
-  const totalLinks = Object.values(hubMap).reduce((s, h) => s + h.inlinks, 0);
-  const topPct = hubs.length > 0 ? Math.round((hubs[0].inlinks / totalLinks) * 100) : 0;
-  if (topPct > 40) {
-    dv.paragraph(`> [!caution] 最大 hub (${hubs[0].link}) 佔所有入連結的 ${topPct}%，圖譜過度集中`);
-  }
+if (incomplete.length > 0) {
+  incomplete.sort((a, b) => b.count - a.count);
+  dv.paragraph(`**${incomplete.length}** 筆記有缺失區塊（共 ${pages.length} 非封存筆記）`);
   dv.table(
-    ["節點", "入連結數", "類型"],
-    hubs.map(h => [h.link, h.inlinks, h.folder])
+    ["專案", "Stars", "缺失區塊", "缺失數"],
+    incomplete.slice(0, 15).map(i => [i.link, i.stars, i.missing, i.count])
   );
 } else {
-  dv.paragraph("目前沒有 hub 節點（入連結 >= 5），圖譜較為分散。");
+  dv.paragraph("所有筆記都有完整的區塊！");
 }
 ```
 
-### 圖譜統計
+## 評估完整度儀表板
+
+> [!abstract] 每個專案的評估進度 — 幫助你找出該優先填寫的筆記
 
 ```dataviewjs
-const repos = dv.pages('"Repos"');
-const concepts = dv.pages('"Concepts"');
-const totalPages = repos.length + concepts.length;
-let totalLinks = 0;
-let orphanCount = 0;
-for (const p of [...repos, ...concepts]) {
-  const links = (p.file.outlinks?.length || 0) + (p.file.inlinks?.length || 0);
-  totalLinks += links;
-  if (links < 3) orphanCount++;
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const results = [];
+for (const p of pages) {
+  const content = await dv.io.load(p.file.path);
+  let done = 0, total = 8;
+  // Step 1: 已讀（status != to-review）
+  if (p.status && p.status !== "to-review") done++;
+  // Step 2: 已評分
+  if (p.my_rating > 0) done++;
+  // Step 3: 有 verdict
+  if (p.verdict && p.verdict !== "") done++;
+  // Step 4: ring 不是 assess
+  if (p.ring && p.ring !== "" && p.ring !== "assess") done++;
+  // Step 5: 有成熟度評估
+  if (content.includes("## 成熟度評估")) done++;
+  // Step 6: 有替代方案決策
+  if (content.includes("## 替代方案決策")) done++;
+  // Step 7: 有生態系整合
+  if (content.includes("## 生態系整合")) done++;
+  // Step 8: 有團隊採用指南
+  if (content.includes("## 團隊採用指南")) done++;
+  const pct = Math.round((done / total) * 100);
+  results.push({ link: p.file.link, done, total, pct, spd: p.stars_per_day || 0, status: p.status });
 }
-const avgLinks = totalPages > 0 ? (totalLinks / totalPages).toFixed(1) : 0;
-const orphanPct = totalPages > 0 ? Math.round((orphanCount / totalPages) * 100) : 0;
-const health = orphanPct > 50 ? "需改善" : orphanPct > 25 ? "普通" : "良好";
-dv.paragraph([
-  `**節點** ${totalPages} 個（${repos.length} repos + ${concepts.length} concepts）`,
-  `**平均連結數** ${avgLinks}`,
-  `**孤立比例** ${orphanCount}/${totalPages} (${orphanPct}%)`,
-  `**健康度** ${health}`
-].join(" · "));
+results.sort((a, b) => {
+  // 高關注度但低完整度優先
+  const scoreA = (100 - a.pct) * Math.log2((a.spd || 1) + 1);
+  const scoreB = (100 - b.pct) * Math.log2((b.spd || 1) + 1);
+  return scoreB - scoreA;
+});
+const avgPct = results.length > 0 ? Math.round(results.reduce((s, r) => s + r.pct, 0) / results.length) : 0;
+const full = results.filter(r => r.pct === 100).length;
+dv.paragraph(`**整體完整度** ${avgPct}% · **完全評估** ${full}/${results.length}`);
+const bar = pct => {
+  const filled = Math.round(pct / 5);
+  return "\u2588".repeat(filled) + "\u2591".repeat(20 - filled) + " " + pct + "%";
+};
+dv.table(
+  ["專案", "完整度", "Stars/天", "狀態", "進度"],
+  results.filter(r => r.pct < 100).slice(0, 15).map(r => [
+    r.link, r.done + "/" + r.total, r.spd, r.status, bar(r.pct)
+  ])
+);
 ```
 
-## 決策分數 Top 10
+## Owner 排行榜
 
-> [!abstract] 綜合熱度、易用性、成熟度、社群、授權計算 0-100 分
+> [!abstract] 哪些開發者/組織的專案最常登上 Trending
+
+```dataviewjs
+const pages = dv.pages('"Repos"');
+const owners = {};
+for (const p of pages) {
+  const o = p.owner || "unknown";
+  if (!owners[o]) owners[o] = { count: 0, totalStars: 0, repos: [] };
+  owners[o].count++;
+  owners[o].totalStars += (p.stars || 0);
+  owners[o].repos.push(p.file.link);
+}
+const multi = Object.entries(owners)
+  .filter(([_, d]) => d.count >= 2)
+  .sort((a, b) => b[1].count - a[1].count);
+if (multi.length > 0) {
+  dv.table(
+    ["Owner", "專案數", "總 Stars", "代表專案"],
+    multi.map(([name, d]) => [
+      name, d.count, d.totalStars.toLocaleString(),
+      d.repos.slice(0, 3).join(", ")
+    ])
+  );
+} else {
+  dv.paragraph("目前沒有重複出現的 Owner。");
+}
+```
+
+## Quick Wins（低門檻高價值）
+
+> [!tip] 安裝簡單且熱度高的待回顧專案
+
+```dataview
+TABLE
+  stars_per_day AS "Stars/天",
+  category AS "分類",
+  language AS "語言",
+  use_case AS "用途"
+FROM "Repos"
+WHERE install_complexity = "easy" AND status = "to-review"
+SORT stars_per_day DESC
+LIMIT 10
+```
+
+## 決策分數排行
+
+> [!abstract] 綜合評估分數 Top 10（自動計算：熱度 + 易用性 + 成熟度 + 社群 + 授權）
 
 ```dataviewjs
 const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
@@ -656,21 +877,110 @@ for (const p of pages) {
   score += age > 365 ? 20 : age > 180 ? 16 : age > 30 ? 10 : 5;
   const forks = p.forks || 0;
   score += forks > 200 ? 20 : forks > 50 ? 15 : forks > 10 ? 10 : 5;
-  const lic = p.license || "";
+  const lic = (p.license || "").toString();
   score += ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unlicense"].includes(lic) ? 15 : lic && lic !== "N/A" ? 8 : 0;
   const grade = score >= 80 ? "A" : score >= 60 ? "B" : score >= 40 ? "C" : "D";
-  scored.push([p.file.link, grade, score, p.category || "", p.install_complexity || ""]);
+  scored.push({ link: p.file.link, score, grade, spd, cat: p.category, install: p.install_complexity, status: p.status });
 }
-scored.sort((a, b) => b[2] - a[2]);
+scored.sort((a, b) => b.score - a.score);
+if (scored.length > 0) {
+  const bar = s => "\u2588".repeat(Math.round(s/5)) + "\u2591".repeat(20 - Math.round(s/5));
+  dv.table(
+    ["專案", "分數", "等級", "Stars/天", "分類", "安裝", "視覺化"],
+    scored.slice(0, 10).map(s => [s.link, s.score, s.grade, s.spd, s.cat, s.install, bar(s.score)])
+  );
+  const avg = Math.round(scored.reduce((a, b) => a + b.score, 0) / scored.length);
+  const grades = { A: 0, B: 0, C: 0, D: 0 };
+  scored.forEach(s => grades[s.grade]++);
+  dv.paragraph(`**平均分數** ${avg}/100 | A: ${grades.A} | B: ${grades.B} | C: ${grades.C} | D: ${grades.D}`);
+}
+```
+
+## Contributor 風險預警
+
+> [!warning] Solo 專案（僅 1 位貢獻者）且 Stars/天 >= 10 — Bus Factor 風險
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived" && (p.contributor_count || 0) <= 1 && (p.stars_per_day || 0) >= 10);
+if (pages.length > 0) {
+  const sorted = pages.sort(p => p.stars_per_day || 0, "desc");
+  dv.table(
+    ["專案", "Stars/天", "Stars", "語言", "分類", "維護狀態"],
+    sorted.map(p => {
+      const pushed = p.pushed_at ? new Date(p.pushed_at.toString()) : null;
+      const days = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
+      const maint = days === null ? "?" : days <= 7 ? "Active" : days <= 30 ? "Moderate" : "Stale";
+      return [p.file.link, p.stars_per_day, p.stars, p.language, p.category, maint];
+    })
+  );
+  dv.paragraph(`**${pages.length}** 個高關注度 solo 專案 — 考慮替代方案或社群活躍度再決定是否採用`);
+} else {
+  dv.paragraph("目前沒有高風險的 solo 專案。");
+}
+```
+
+## 技術棧熱度
+
+> [!abstract] 哪些技術被最多 trending 專案使用
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const langByCat = {};
+for (const p of pages) {
+  const lang = (p.language || "Other").toString();
+  const cat = (p.category || "Other").toString();
+  const key = lang + " x " + cat;
+  if (!langByCat[key]) langByCat[key] = { lang, cat, count: 0, totalSpd: 0, repos: [] };
+  langByCat[key].count++;
+  langByCat[key].totalSpd += (p.stars_per_day || 0);
+  langByCat[key].repos.push(p.file.link);
+}
+const combos = Object.values(langByCat).filter(c => c.count >= 2).sort((a, b) => b.totalSpd - a.totalSpd);
+if (combos.length > 0) {
+  dv.table(
+    ["語言", "分類", "專案數", "累計 Stars/天", "代表專案"],
+    combos.slice(0, 12).map(c => [c.lang, c.cat, c.count, c.totalSpd, c.repos.slice(0, 2).join(", ")])
+  );
+} else {
+  dv.paragraph("_需要更多專案才能看到技術棧熱度_");
+}
+```
+
+## 成長速度分佈
+
+> [!abstract] 各速度區間的專案分佈
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const bands = [
+  { label: "Viral (1000+/天)", min: 1000, max: Infinity, repos: [] },
+  { label: "Hot (100-999/天)", min: 100, max: 999, repos: [] },
+  { label: "Growing (10-99/天)", min: 10, max: 99, repos: [] },
+  { label: "Steady (<10/天)", min: 0, max: 9, repos: [] },
+];
+for (const p of pages) {
+  const spd = p.stars_per_day || 0;
+  for (const b of bands) {
+    if (spd >= b.min && spd <= b.max) { b.repos.push(p); break; }
+  }
+}
+const total = pages.length;
 dv.table(
-  ["專案", "等級", "總分", "分類", "安裝"],
-  scored.slice(0, 10)
+  ["速度區間", "數量", "佔比", "視覺化", "代表專案"],
+  bands.map(b => {
+    const pct = total > 0 ? Math.round(b.repos.length / total * 100) : 0;
+    const bar = "\u2588".repeat(Math.round(pct / 5)) + "\u2591".repeat(20 - Math.round(pct / 5));
+    const top = b.repos.sort((a,b) => (b.stars_per_day||0) - (a.stars_per_day||0)).slice(0, 2).map(r => r.file.link).join(", ");
+    return [b.label, b.repos.length, pct + "%", bar, top];
+  })
 );
+const avgSpd = total > 0 ? Math.round(pages.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / total) : 0;
+const medianArr = pages.map(p => p.stars_per_day || 0).array().sort((a,b) => a-b);
+const median = medianArr.length > 0 ? medianArr[Math.floor(medianArr.length / 2)] : 0;
+dv.paragraph(`**平均** ${avgSpd} stars/天 · **中位數** ${median} stars/天`);
 ```
 
 ## 所有專案
-
-> [!info]- 展開查看全部（前 100 筆）
 
 ```dataview
 TABLE
@@ -682,7 +992,6 @@ TABLE
   first_seen AS "收錄日期"
 FROM "Repos"
 SORT stars DESC
-LIMIT 100
 ```
 
 ---
@@ -693,10 +1002,9 @@ LIMIT 100
 > DataviewJS 需在 Dataview 設定中啟用（設定 → Dataview → Enable JavaScript Queries）
 >
 > **推薦插件**：
-> - [Dataview](https://github.com/blacksmithgu/obsidian-dataview) — 動態查詢引擎（必裝）
-> - [Charts](https://github.com/phibr0/obsidian-charts) — 互動式 Chart.js 圖表（分類趨勢會自動升級為長條圖）
+> - [Dataview](https://github.com/blacksmithgu/obsidian-dataview) — Dashboard 和查詢（必裝）
 > - [Contribution Graph](https://github.com/vran-dev/obsidian-contribution-graph) — 收錄熱力圖
-> - [Heatmap Calendar](https://github.com/Richardsl/heatmap-calendar-obsidian) — GitHub 風格活動熱力圖
+> - [Charts View](https://github.com/caronchen/obsidian-chartsview-plugin) — 語言分佈圖表
 > - [Periodic Notes](https://github.com/liamcain/obsidian-periodic-notes) — 每週回顧自動化
-> - [Metadata Menu](https://github.com/mdelobelle/metadatamenu) — 強型別 frontmatter 管理
-> - [Templater](https://github.com/SilentVoid13/Templater) — 進階模板引擎（搭配 quick-triage）
+> - [Smart Connections](https://github.com/brianpetro/obsidian-smart-connections) — AI 語意關聯推薦
+> - [Advanced Canvas](https://github.com/Developer-Mike/obsidian-advanced-canvas) — Tech Radar 視覺決策板

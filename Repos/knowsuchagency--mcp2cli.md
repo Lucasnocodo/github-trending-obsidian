@@ -326,7 +326,7 @@ mcp2cli 的核心技術機制在於其能夠即時將 API 轉換為 CLI，使用
 
 相關概念：[[CLI/TUI]] · [[API 設計]] · [[OAuth]] · [[自動化測試]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[openapi-cli--openapi-cli|openapi-cli/openapi-cli]] · [[postman--postman-cli|postman/postman-cli]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[jackwener--twitter-cli|jackwener/twitter-cli]] · [[jshachm--pi-rs|jshachm/pi-rs]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[openapi-cli--openapi-cli|openapi-cli/openapi-cli]] · [[postman--postman-cli|postman/postman-cli]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]]
 
 [GitHub](https://github.com/knowsuchagency/mcp2cli) · [官方網站](https://pypi.org/project/mcp2cli/)
 

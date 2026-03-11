@@ -7,8 +7,8 @@ language: Python
 license: Apache-2.0
 description: "通用高质量 Skills 合集🔥"
 homepage: ""
-stars: 495
-stars_per_day: 99
+stars: 500
+stars_per_day: 83
 forks: 39
 open_issues: 0
 created: 2026-03-05
@@ -27,10 +27,12 @@ use_case: "提供高品質的技能集合，讓各種 AI Agent 自動化處理�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-next_review: "2026-03-17"
+appearances: 2
+next_review: "2026-03-18"
 engagement: "low"
 verdict: ""
 ring_history: "assess@2026-03-10"
+star_history: "2026-03-11:500"
 tags:
   - github
   - "category/開發工具"
@@ -240,7 +242,7 @@ print(outline)  # 預期輸出論文大綱
 
 相關概念：[[自動化]] · [[機器學習]] · [[自然語言處理]]
 
-相關專案：[[xstongxue--best-prompts|xstongxue/best-prompts]] · [[openai--gpt-3.5-turbo|openai/gpt-3.5-turbo]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]] · [[karpathy--autoresearch|karpathy/autoresearch]]
+相關專案：[[xstongxue--best-prompts|xstongxue/best-prompts]] · [[openai--gpt-3.5-turbo|openai/gpt-3.5-turbo]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]]
 
 [GitHub](https://github.com/xstongxue/best-skills)
 
@@ -322,4 +324,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，500 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，491 stars

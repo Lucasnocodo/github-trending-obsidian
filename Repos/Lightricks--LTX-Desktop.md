@@ -7,9 +7,9 @@ language: TypeScript
 license: Apache-2.0
 description: "An open-source desktop app for generating videos with LTX models"
 homepage: "https://www.ltx.video"
-stars: 399
-stars_per_day: 67
-forks: 79
+stars: 411
+stars_per_day: 69
+forks: 83
 open_issues: 39
 created: 2026-03-04
 pushed_at: 2026-03-09
@@ -27,10 +27,12 @@ use_case: "讓使用者能在本地生成視頻，無需依賴雲端服務。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-next_review: "2026-03-17"
+appearances: 2
+next_review: "2026-03-18"
 engagement: "medium"
 verdict: ""
 ring_history: "assess@2026-03-10"
+star_history: "2026-03-11:411"
 tags:
   - github
   - "category/其他"
@@ -298,7 +300,7 @@ LTX Desktop 的核心技術機制在於其使用的 LTX 模型，這是一種基
 
 相關概念：[[視頻生成]] · [[機器學習]] · [[深度學習]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[duoan--TorchCode|duoan/TorchCode]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]] · [[helenigtxu--TradingView-Claw|helenigtxu/TradingView-Claw]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]] · [[karpathy--autoresearch|karpathy/autoresearch]] · [[trevin-creator--autoresearch-mlx|trevin-creator/autoresearch-mlx]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[duoan--TorchCode|duoan/TorchCode]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]] · [[helenigtxu--TradingView-Claw|helenigtxu/TradingView-Claw]]
 
 [GitHub](https://github.com/Lightricks/LTX-Desktop) · [官方網站](https://www.ltx.video)
 
@@ -380,4 +382,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，411 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，385 stars

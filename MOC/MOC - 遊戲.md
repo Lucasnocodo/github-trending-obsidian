@@ -1,17 +1,17 @@
 ---
 tags:
   - moc
-  - 安全
+  - 遊戲
 ---
 
-# MOC - 安全
+# MOC - 遊戲
 
-> 所有分類為「安全」的 GitHub Trending 專案
+> 所有分類為「遊戲」的 GitHub Trending 專案
 
 ## 總覽
 
 ```dataviewjs
-const pages = dv.pages('"Repos"').where(p => p.category === "安全");
+const pages = dv.pages('"Repos"').where(p => p.category === "遊戲");
 const active = pages.where(p => p.status !== "archived");
 const total = pages.length;
 const reviewed = pages.where(p => p.status && p.status !== "to-review").length;
@@ -42,7 +42,7 @@ TABLE WITHOUT ID
   length(rows) AS "數量",
   rows.file.link AS "專案"
 FROM "Repos"
-WHERE category = "安全"
+WHERE category = "遊戲"
 GROUP BY status
 SORT length(rows) DESC
 ```
@@ -59,7 +59,7 @@ TABLE
   status AS "狀態",
   first_seen AS "收錄日期"
 FROM "Repos"
-WHERE category = "安全"
+WHERE category = "遊戲"
 SORT stars DESC
 ```
 
@@ -71,7 +71,7 @@ TABLE WITHOUT ID
   length(rows) AS "數量",
   rows.file.link AS "專案"
 FROM "Repos"
-WHERE category = "安全"
+WHERE category = "遊戲"
 GROUP BY language
 SORT length(rows) DESC
 ```
@@ -84,7 +84,7 @@ TABLE
   stars AS "Stars",
   install_complexity AS "安裝"
 FROM "Repos"
-WHERE category = "安全" AND status = "to-review"
+WHERE category = "遊戲" AND status = "to-review"
 SORT stars_per_day DESC
 ```
 
@@ -96,7 +96,7 @@ TABLE WITHOUT ID
   length(rows) AS "數量",
   rows.file.link AS "專案"
 FROM "Repos"
-WHERE category = "安全"
+WHERE category = "遊戲"
 GROUP BY subcategory
 SORT length(rows) DESC
 ```
@@ -106,7 +106,7 @@ SORT length(rows) DESC
 > [!tip] 快速比較：哪個最適合你的情境？
 
 ```dataviewjs
-const pages = dv.pages('"Repos"').where(p => p.category === "安全" && p.status !== "archived");
+const pages = dv.pages('"Repos"').where(p => p.category === "遊戲" && p.status !== "archived");
 if (pages.length > 0) {
   dv.table(
     ["專案", "Stars/天", "安裝", "授權", "維護", "評分", "子分類"],
@@ -135,7 +135,7 @@ if (pages.length > 0) {
 > [!abstract] 綜合評分（熱度+易用+成熟+社群+授權 = 0-100）
 
 ```dataviewjs
-const pages = dv.pages('"Repos"').where(p => p.category === "安全" && p.status !== "archived");
+const pages = dv.pages('"Repos"').where(p => p.category === "遊戲" && p.status !== "archived");
 const scored = [];
 for (const p of pages) {
   let score = 0;
@@ -165,7 +165,7 @@ if (scored.length > 0) {
 > [!abstract] 每個子分類中的最佳候選
 
 ```dataviewjs
-const pages = dv.pages('"Repos"').where(p => p.category === "安全" && p.status !== "archived" && p.subcategory);
+const pages = dv.pages('"Repos"').where(p => p.category === "遊戲" && p.status !== "archived" && p.subcategory);
 const subs = {};
 for (const p of pages) {
   const sub = p.subcategory;
@@ -197,7 +197,7 @@ if (rows.length > 0) {
 ## 相關概念
 
 ```dataviewjs
-const repos = dv.pages('"Repos"').where(p => p.category === "安全");
+const repos = dv.pages('"Repos"').where(p => p.category === "遊戲");
 const concepts = new Map();
 for (const r of repos) {
   for (const link of (r.file.outlinks || [])) {
@@ -219,7 +219,7 @@ if (sorted.length > 0) {
 ## Tech Radar 分佈
 
 ```dataviewjs
-const pages = dv.pages('"Repos"').where(p => p.category === "安全" && p.ring);
+const pages = dv.pages('"Repos"').where(p => p.category === "遊戲" && p.ring);
 const rings = { adopt: 0, trial: 0, assess: 0, hold: 0 };
 for (const p of pages) {
   const ring = (p.ring || "assess").toLowerCase();
@@ -245,7 +245,7 @@ if (total > 0) {
 ## 參與度分析
 
 ```dataviewjs
-const pages = dv.pages('"Repos"').where(p => p.category === "安全" && p.status !== "archived");
+const pages = dv.pages('"Repos"').where(p => p.category === "遊戲" && p.status !== "archived");
 const engagementMap = {};
 for (const p of pages) {
   const e = p.engagement || "unknown";
@@ -265,7 +265,7 @@ if (total > 0) {
 ## 授權分佈
 
 ```dataviewjs
-const pages = dv.pages('"Repos"').where(p => p.category === "安全" && p.status !== "archived");
+const pages = dv.pages('"Repos"').where(p => p.category === "遊戲" && p.status !== "archived");
 const licMap = {};
 const commercial = new Set(["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC", "Unlicense"]);
 for (const p of pages) {
@@ -287,7 +287,7 @@ if (sorted.length > 0) {
 > [!abstract] 此分類的專案成長快慢
 
 ```dataviewjs
-const pages = dv.pages('"Repos"').where(p => p.category === "安全" && p.status !== "archived");
+const pages = dv.pages('"Repos"').where(p => p.category === "遊戲" && p.status !== "archived");
 const bands = [
   { label: "Viral (1000+/天)", min: 1000, max: Infinity, repos: [] },
   { label: "Hot (100-999/天)", min: 100, max: 999, repos: [] },
@@ -322,7 +322,7 @@ if (total > 0) {
 
 ```dataviewjs
 const pages = dv.pages('"Repos"').where(p => {
-  if (p.category !== "安全" || p.status !== "to-review" || !p.first_seen) return false;
+  if (p.category !== "遊戲" || p.status !== "to-review" || !p.first_seen) return false;
   return (Date.now() - new Date(p.first_seen.toString()).getTime()) >= 3 * 86400000;
 }).sort(p => p.stars_per_day, "desc").limit(10);
 if (pages.length > 0) {
@@ -340,7 +340,7 @@ if (pages.length > 0) {
 > [!abstract] 低 bus factor 的專案可能有維護風險
 
 ```dataviewjs
-const pages = dv.pages('"Repos"').where(p => p.category === "安全" && p.status !== "archived" && (p.contributor_count || 0) <= 1);
+const pages = dv.pages('"Repos"').where(p => p.category === "遊戲" && p.status !== "archived" && (p.contributor_count || 0) <= 1);
 if (pages.length > 0) {
   dv.table(
     ["專案", "Stars", "貢獻者", "維護狀態"],
@@ -364,7 +364,7 @@ TABLE WITHOUT ID
   length(rows) AS "新增數",
   rows.file.link AS "專案"
 FROM "Repos"
-WHERE category = "安全"
+WHERE category = "遊戲"
 GROUP BY week
 SORT week DESC
 ```

@@ -7,9 +7,9 @@ language: C++
 license: MIT
 description: "Talk to your Mac, query your docs, no cloud required. On-device voice AI + RAG"
 homepage: "https://runanywhereai.github.io/RCLI/"
-stars: 513
-stars_per_day: 86
-forks: 17
+stars: 619
+stars_per_day: 103
+forks: 18
 open_issues: 10
 created: 2026-03-04
 pushed_at: 2026-03-10
@@ -27,10 +27,12 @@ use_case: "讓你在 Mac 上用語音控制應用程式，無需雲端，完全�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-next_review: "2026-03-17"
+appearances: 2
+next_review: "2026-03-18"
 engagement: "low"
 verdict: ""
 ring_history: "assess@2026-03-10"
+star_history: "2026-03-11:619"
 tags:
   - github
   - "category/ai_ml"
@@ -326,7 +328,7 @@ RCLI 的核心技術機制包括使用 MetalRT 作為 GPU 推理引擎，這使�
 
 相關概念：[[語音合成]] · [[本地 AI]] · [[隱私保護]]
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[alexa--alexa|alexa/alexa]] · [[google--assistant|google/assistant]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[duoan--TorchCode|duoan/TorchCode]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]] · [[helenigtxu--TradingView-Claw|helenigtxu/TradingView-Claw]] · [[inspatio--worldfm|inspatio/worldfm]] · [[karpathy--autoresearch|karpathy/autoresearch]] · [[tanishqkumar--ssd|tanishqkumar/ssd]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[alexa--alexa|alexa/alexa]] · [[google--assistant|google/assistant]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[duoan--TorchCode|duoan/TorchCode]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]]
 
 [GitHub](https://github.com/RunanywhereAI/RCLI) · [官方網站](https://runanywhereai.github.io/RCLI/)
 
@@ -408,4 +410,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，619 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，294 stars

@@ -347,7 +347,7 @@ start my day
 
 相關概念：[[自動化]] · [[文獻管理]] · [[知識圖譜]]
 
-相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[arxiv-sanity-preserver--arxiv-sanity-preserver|arxiv-sanity-preserver/arxiv-sanity-preserver]] · [[paperpile--paperpile|paperpile/paperpile]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[duoan--TorchCode|duoan/TorchCode]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]]
+相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[arxiv-sanity-preserver--arxiv-sanity-preserver|arxiv-sanity-preserver/arxiv-sanity-preserver]] · [[paperpile--paperpile|paperpile/paperpile]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]]
 
 [GitHub](https://github.com/juliye2025/evil-read-arxiv)
 

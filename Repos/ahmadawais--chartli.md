@@ -344,7 +344,7 @@ chartli 使用 TypeScript 和 Rust 作為主要開發語言，這使得它在效
 
 相關概念：[[資料視覺化]] · [[CLI/TUI]]
 
-相關專案：[[vitaly--cli-chart|vitaly/cli-chart]] · [[gchq--CyberChef|gchq/CyberChef]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--twitter-cli|jackwener/twitter-cli]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[steipete--discrawl|steipete/discrawl]]
+相關專案：[[vitaly--cli-chart|vitaly/cli-chart]] · [[gchq--CyberChef|gchq/CyberChef]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--twitter-cli|jackwener/twitter-cli]]
 
 [GitHub](https://github.com/ahmadawais/chartli) · [官方網站](https://x.com/MrAhmadAwais)
 
