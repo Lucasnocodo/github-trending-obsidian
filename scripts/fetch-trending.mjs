@@ -626,13 +626,23 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     }
   }
   if (llmInfo?.code_example && typeof llmInfo.code_example === 'string') {
-    // 移除明顯的 placeholder 程式碼
-    const placeholderPatterns = ['// 這裡放置', '// TODO:', '// placeholder', '// 在此處'];
+    // 移除明顯的 placeholder 或捏造程式碼
+    const placeholderPatterns = [
+      '// 這裡放置', '// TODO:', '// placeholder', '// 在此處',
+      '// 在這裡', '// 此處放', '# placeholder', '# 這裡放',
+      'printf("Hello', 'print("Hello', 'console.log("Hello',
+      '// Example usage', '// 示例用法', '// 基本示例',
+    ];
     for (const pat of placeholderPatterns) {
       if (llmInfo.code_example.includes(pat)) {
         llmInfo.code_example = null;
         break;
       }
+    }
+    // 移除過短或只有空結構的程式碼
+    if (llmInfo.code_example) {
+      const codeLines = llmInfo.code_example.split('\n').filter(l => l.trim() && !l.startsWith('#') && !l.startsWith('//'));
+      if (codeLines.length < 3) llmInfo.code_example = null;
     }
   }
 
