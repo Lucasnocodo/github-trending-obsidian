@@ -179,6 +179,24 @@ WHERE ring = "trial"
 SORT last_reviewed ASC
 ```
 
+## 高興趣待行動
+
+> [!tip] 你標記了高興趣但還沒進入 trial 的專案
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return (p.score_interest || 0) >= 4 && p.status !== "archived" && p.ring !== "trial" && p.ring !== "adopt";
+}).sort(p => (p.score_interest || 0) * 2 + (p.score_confidence || 0) + (p.score_risk || 0), "desc");
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "興趣", "信心", "風險", "Stars/天", "狀態"],
+    pages.map(p => [p.file.link, p.score_interest, p.score_confidence, p.score_risk, p.stars_per_day || 0, p.status || "?"])
+  );
+} else {
+  dv.paragraph("在筆記的「快速評估」填寫興趣分數 4-5 分，這裡會自動列出。");
+}
+```
+
 ## 推薦回顧（基於偏好）
 
 > [!tip] 你評過高分的分類，還有這些專案沒看過

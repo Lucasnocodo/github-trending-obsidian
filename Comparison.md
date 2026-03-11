@@ -620,6 +620,45 @@ if (scored.length > 0) {
 }
 ```
 
+## 主觀評分比較
+
+> [!abstract] 已填寫三維評分的專案橫向對比
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return (p.score_confidence || 0) + (p.score_interest || 0) + (p.score_risk || 0) > 0;
+});
+if (pages.length === 0) {
+  dv.paragraph("尚無專案填寫三維評分。在各筆記的「快速評估」區填寫後，這裡會自動出現比較表。");
+} else {
+  const data = pages.map(p => ({
+    link: p.file.link,
+    c: p.score_confidence || 0,
+    i: p.score_interest || 0,
+    r: p.score_risk || 0,
+    composite: (p.score_interest || 0) * 2 + (p.score_confidence || 0) + (p.score_risk || 0),
+    cat: p.category || "",
+    spd: p.stars_per_day || 0,
+    status: p.status || "",
+  })).sort((a, b) => b.composite - a.composite);
+
+  dv.table(
+    ["專案", "信心", "興趣", "風險", "綜合", "分類", "Stars/天", "狀態"],
+    data.map(d => [d.link, d.c, d.i, d.r, d.composite, d.cat, d.spd, d.status])
+  );
+
+  // 風險提醒：高興趣但高風險的專案
+  const risky = data.filter(d => d.i >= 4 && d.r <= 2);
+  if (risky.length > 0) {
+    dv.header(4, "注意：高興趣但高風險");
+    dv.table(
+      ["專案", "興趣", "風險", "分類"],
+      risky.map(d => [d.link, d.i, d.r, d.cat])
+    );
+  }
+}
+```
+
 ---
 
 > [!info] 使用方式
@@ -635,4 +674,5 @@ if (scored.length > 0) {
 > 10. 維護健康警示識別高風險專案
 > 11. 投入回報排行找出最佳 ROI 專案
 > 12. 子分類功能對決比較同類型工具
-> 13. 搭配 [[Triage]] 進行狀態管理
+> 13. 主觀評分比較 — 三維評分橫向對比
+> 14. 搭配 [[Triage]] 進行狀態管理
