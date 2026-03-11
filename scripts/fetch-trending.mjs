@@ -130,13 +130,13 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 
 1. "repo": 完全等於 owner/name（區分大小寫）
 2. "description_zh": 一句話說明「解決什麼問題」。好的例子：「讓 AI 自動跑實驗，你只要早上起來看結果」。壞的例子：「自動化 AI 研究平台」
-3. "summary": 15-18 句話的深度分析（這是筆記最重要的段落，要讓讀者不看 README 就能完全理解）。結構：
-   - 第 1-3 句：白話說核心機制，要具體到「輸入什麼 → 中間怎麼處理 → 輸出什麼」的完整流程。例如「它讓 AI agent 每 5 分鐘改一次 train.py、跑訓練、比對 loss，如果變好就 commit，變差就 revert，整晚自動跑」
-   - 第 4-6 句：技術實作方式，具體到用了什麼框架、演算法、通訊協議、資料格式。如果 README 有提到效能數據或 benchmark，一定要帶數字
-   - 第 7-9 句：跟同類工具的具體差異。不要只說「比 X 更好」，要說「X 用 polling 但這個用 WebSocket，所以延遲從 500ms 降到 50ms」這種具體對比
-   - 第 10-12 句：實際使用的效果和限制（效能數據、支援範圍、需要什麼硬體、多大規模的資料能處理）
-   - 第 13-15 句：你的觀點——成熟度（alpha/beta/stable）、值不值得現在就用、適合什麼規模的團隊
-   - 第 16-18 句：給讀者的具體建議——什麼情境該用（舉例）、什麼情境不該用（舉例）、有什麼替代方案
+3. "summary": 18-22 句話的深度分析（這是筆記最重要的段落，要讓讀者不看 README 就能完全理解。每句話都要有資訊密度，禁止空洞句型）。結構：
+   - 第 1-4 句：白話說核心機制，要具體到「輸入什麼 → 中間怎麼處理 → 輸出什麼」的完整流程。例如「它讓 AI agent 每 5 分鐘改一次 train.py、跑訓練、比對 loss，如果變好就 commit，變差就 revert，整晚自動跑」。如果有 CLI 指令，帶出最關鍵的 1-2 個指令
+   - 第 5-8 句：技術實作方式，具體到用了什麼框架、演算法、通訊協議、資料格式。如果 README 有提到效能數據或 benchmark，一定要帶數字。說明技術選型的理由（為什麼用 X 而不是 Y）
+   - 第 9-12 句：跟同類工具的具體差異（至少比較 2 個替代品）。不要只說「比 X 更好」，要說「X 用 polling 但這個用 WebSocket，所以延遲從 500ms 降到 50ms」這種具體對比。包含功能覆蓋範圍的差異
+   - 第 13-16 句：實際使用的效果和限制（效能數據、支援範圍、需要什麼硬體、多大規模的資料能處理）。帶出使用者可能遇到的常見問題和解法
+   - 第 17-19 句：你的觀點——成熟度（alpha/beta/stable）、值不值得現在就用、適合什麼規模的團隊。要有明確的判斷而非模棱兩可的描述
+   - 第 20-22 句：給讀者的具體建議——什麼情境該用（舉出 2 個場景）、什麼情境不該用（舉出 1 個場景）、有什麼替代方案
 4. "why_trending": 3-4 句具體分析。禁止寫「隨著 XX 的發展/流行」這種廢話。要回答：(a) 作者是誰、過去做過什麼知名專案？(b) 這個工具解決了什麼「之前沒有好方案」的痛點？(c) 有沒有觸發事件（某篇 tweet、HN 討論、相關新聞）？如果 README 或 topics 有線索就提。(d) 為什麼是「現在」而不是半年前？技術生態有什麼變化讓這個工具變得可行？如果真的無法判斷，就直說「爆紅原因不明確，可能是自然擴散」
 5. "use_cases": 陣列，3 個場景。格式：「[具體角色] 用它來 [具體動作+預期結果]，因為 [具體好處，要有數據或對比]」。例子：「後端工程師用它來在 CI 中自動檢測 API breaking changes，因為手動 diff OpenAPI spec 容易漏掉 nested field 的變動」
 6. "target_audience": 一句話，越具體越好。不要寫「開發者」，要寫「需要在 M1 Mac 上跑 LLM 推論但不想裝 Docker 的獨立開發者」
@@ -144,7 +144,7 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 7b. "subcategory": 更精確的子分類（2-3 個字）。例如開發工具底下可以是：API 工具、WeChat 工具、Claude 工具、MCP 工具、程式碼工具、自動化、監控、測試、CI/CD 等。AI/ML 底下可以是：LLM 訓練、推論優化、影像生成、NLP、Agent 等。自行判斷合理的子分類名稱
 8. "key_features": 陣列，5-8 個功能特色。每個要具體到可操作的層面，格式：「功能名 — 具體描述（含數據、指令、參數）」。壞的：「支持多種圖表類型」。好的：「8 種圖表格式（ascii/spark/bars/columns/heatmap/unicode/braille/svg），用 -t 參數切換」
 9. "quickstart_steps": 陣列，3-5 個安裝/使用步驟。每步是物件：{"step": "簡潔說明", "cmd": "完整可複製貼上的指令"}。從 README 提取真實指令。沒有就回傳 []
-10. "code_example": 一段展示核心用法的程式碼或指令（含語言標記如 bash/python/js）。優先從 README 提取最有代表性的範例。要展示「輸入 → 指令/程式碼 → 預期輸出」的完整流程。如果 README 沒有範例，就根據 quickstart 和功能描述組合一個最小可用範例（標注 # 基於文件推測的用法）。不超過 20 行。CLI 工具一定要有範例指令
+10. "code_example": 一段展示核心用法的程式碼或指令（含語言標記如 bash/python/js）。優先從 README 提取最有代表性的範例。必須包含三部分：(a) 輸入或前置條件（用 # 註釋說明）；(b) 實際指令或程式碼；(c) 預期輸出（用 # 輸出: 或 # Expected: 標注，展示使用者執行後應該看到什麼）。如果 README 沒有範例，就根據 quickstart 和功能描述組合一個最小可用範例（標注 # 基於文件推測的用法）。不超過 25 行。CLI 工具一定要有範例指令和預期輸出
 11. "limitations": 陣列，3-4 個注意事項。要具體（例如 ["僅支援 Python 3.10+", "需要 NVIDIA GPU (CUDA 12+)", "不支援 Windows", "alpha 階段，API 每週都在變"]）
 12. "similar_tools": 陣列，2-4 項。每項是物件：{"name": "工具名（優先用 GitHub owner/repo 格式，如 crewai/crewai）", "diff": "跟本專案的具體差異，要提到功能差異和適用場景差異（2 句話）"}。這是筆記中最有決策價值的段落，一定要認真寫。想不到就回 []
 13. "related_concepts": 陣列，3-5 個相關技術概念。優先從以下預定義概念中選擇（繁體中文，如果沒有符合的可以自創）：
@@ -152,7 +152,7 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 14. "tech_stack": 陣列，列出核心技術棧（含版本號，例如 ["Next.js 14", "FastAPI", "PostgreSQL 16"]），從 README 提取
 15. "novelty_claim": 一句話：這個專案最核心的創新點是什麼？（從 README 提取具體 claim，不要自己編）。沒有明顯創新就回傳 null
 16. "install_complexity": "easy"（一行 npm/pip install 或 npx）、"medium"（需要 clone + config）、"hard"（需要 GPU/Docker/複雜環境）
-17. "architecture": 4-6 句話描述專案的整體架構。嚴格根據 README 和 repo 資訊描述，不要猜測或編造未提到的技術。要包含：(1) 架構模式（單體/前後端分離/CLI/微服務/plugin）；(2) 核心資料流（用箭頭：用戶輸入 → 處理 → 輸出）；(3) 關鍵技術決策；(4) 專案目錄結構的關鍵檔案（如 README 有提到）。如果 README 沒有提供足夠的架構資訊就回傳 null，不要編造
+17. "architecture": 6-10 句話描述專案的整體架構。嚴格根據 README 和 repo 資訊描述。要包含：(1) 架構模式（單體/前後端分離/CLI/微服務/plugin）及為什麼選這個模式；(2) 核心資料流（用箭頭：用戶輸入 → 處理 → 輸出），每個步驟要說明用了什麼技術；(3) 關鍵技術決策和 trade-off（例如「選 SQLite 而非 PostgreSQL 降低部署複雜度，但犧牲了並發寫入能力」）；(4) 專案目錄結構的關鍵檔案；(5) 擴展性分析——如果使用者量成長 10 倍，架構的哪個部分會先成為瓶頸？如果 README 資訊不足，根據語言和框架推斷合理的架構特性，但明確標注「推斷」。不要回傳 null
 18. "pros_cons": 物件，包含 "pros"（陣列，3-4 個優點，每個要具體）和 "cons"（陣列，3-4 個缺點，每個要具體，不要跟 limitations 重複）
 19. "community": 物件，可選欄位。"docs_url"（文件網站）、"discord"（Discord 連結）、"activity"（一句話描述社群活躍度）。都沒有就回傳 null
 20. "key_insight": 一句話，你讀完這個專案後最想告訴朋友的一件事。例如：「這個專案最厲害的不是功能，而是它證明了用 Markdown 就能『編程』AI agent 的研究行為」
@@ -169,7 +169,8 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
    - 開發工具：必須提到 IDE 整合、CI/CD 整合、團隊協作支援程度
 
 22. "onboarding_evaluation": 3-5 句話評估「新手體驗」。包含：(1) README 文件品質（是否清楚、有沒有範例）；(2) 安裝過程是否順暢（有沒有坑）；(3) 是否有好的 getting started guide；(4) 文件有沒有中文/多語言。這段幫助讀者判斷「花 30 分鐘能不能跑起來」
-23. "alternatives_detail": 陣列，2-3 項結構化的替代方案對比。每項是物件：{"name": "工具名", "stars": 估計的 stars 數（整數，可以大概猜），"approach": "技術路線差異（1 句話）", "when_to_choose": "什麼情況下應該選它而不是本專案（1 句話）"}。這是幫讀者做決策用的，一定要認真寫。想不到就回 []
+23. "alternatives_detail": 陣列，2-3 項結構化的替代方案對比（這是筆記中最有決策價值的段落，必須認真寫，禁止回空陣列）。每項是物件：{"name": "工具名", "stars": 估計的 stars 數（整數，可以大概猜），"approach": "技術路線差異（1-2 句話，具體到技術選型，例如「用 Rust 實作 vs 本專案用 Python，記憶體用量少 10 倍但 plugin 生態不如 Python」）", "when_to_choose": "什麼情況下應該選它而不是本專案（1-2 句話，要具體到場景，例如「如果你的團隊已經在用 Kubernetes 且需要橫向擴展到 100+ 節點」）", "migration_effort": "從本專案遷移到它的難度（low/medium/high + 一句話原因）"}。即使找不到直接替代品，也要列出「最接近的替代方案」或「沒有這個工具時的 workaround」
+24. "maturity_assessment": 物件，評估專案成熟度。包含：{"stage": "alpha/beta/stable/production（從 README、版本號、issue 數量推斷）", "production_ready": true/false, "breaking_change_risk": "high/medium/low（API 穩定度）", "recommendation": "一句話，例如『適合個人 side project 試用，不建議用在生產環境的核心路徑上』"}
 
 回傳 JSON 陣列，只回傳 JSON，不要加 markdown 標記。`;
 
@@ -229,7 +230,7 @@ async function callLLMBatch(repos, token, vaultRepoNames = null) {
         { role: 'user', content: prompt },
       ],
       temperature: 0.3,
-      max_tokens: 16000,
+      max_tokens: 16384,
     }),
   });
   if (!res.ok) {
@@ -725,15 +726,37 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     lines.push('');
     lines.push('> [!question] 什麼時候該選別的工具？');
     lines.push('');
-    lines.push('| 工具 | 技術路線 | 選它的時機 |');
-    lines.push('| --- | --- | --- |');
+    lines.push('| 工具 | 技術路線 | 選它的時機 | 遷移難度 |');
+    lines.push('| --- | --- | --- | --- |');
     for (const alt of llmInfo.alternatives_detail) {
       const name = (alt.name || '').includes('/')
         ? `[${alt.name}](https://github.com/${alt.name})`
         : alt.name || '';
-      lines.push(`| ${name} | ${alt.approach || ''} | ${alt.when_to_choose || ''} |`);
+      const migration = alt.migration_effort || '';
+      lines.push(`| ${name} | ${alt.approach || ''} | ${alt.when_to_choose || ''} | ${migration} |`);
     }
     lines.push('');
+  }
+
+  // ── 成熟度評估 ──
+  if (llmInfo?.maturity_assessment) {
+    const ma = llmInfo.maturity_assessment;
+    lines.push('## 成熟度評估');
+    lines.push('');
+    const stageEmoji = { alpha: 'Alpha', beta: 'Beta', stable: 'Stable', production: 'Production' };
+    const readyLabel = ma.production_ready ? 'Yes' : 'No';
+    const breakingLabel = ma.breaking_change_risk || 'unknown';
+    lines.push(`| 項目 | 評估 |`);
+    lines.push(`| --- | --- |`);
+    lines.push(`| 開發階段 | ${stageEmoji[ma.stage] || ma.stage || 'Unknown'} |`);
+    lines.push(`| 生產環境就緒 | ${readyLabel} |`);
+    lines.push(`| Breaking Change 風險 | ${breakingLabel} |`);
+    lines.push('');
+    if (ma.recommendation) {
+      lines.push(`> [!tip] 採用建議`);
+      lines.push(`> ${ma.recommendation}`);
+      lines.push('');
+    }
   }
 
   // ── 技術細節（不重複 stats bar 已有資訊）──
@@ -2844,7 +2867,8 @@ function needsRefresh(content) {
          !content.includes('appearances:') ||   // v11: 出現次數追蹤
          !content.includes('next_review:') ||   // v12: 間隔複習日期
          !content.includes('engagement:') ||    // v12: 參與度指標
-         !content.includes('ring_history:');     // v13: 狀態變更歷程
+         !content.includes('ring_history:') ||     // v13: 狀態變更歷程
+         !content.includes('成熟度評估');             // v14: 成熟度評估 + 強化替代方案 + 預期輸出
 }
 
 function hasLLMContent(content) {
