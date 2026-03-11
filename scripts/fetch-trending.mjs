@@ -3965,9 +3965,10 @@ async function main() {
             promoted = promoted.replace(/^priority: .+$/m, 'priority: high');
             console.log(`  Priority promoted to high (appeared ${appearanceCount} times)`);
           }
-          // v12: 再次上榜 → 重置複習日期（3 天後）+ 更新參與度
+          // v12: 再次上榜 → 重置複習日期 + 更新參與度
           const newRate = starsPerDay(repo.stargazers_count, repo.created_at);
-          const newReview = nextReviewDate(today, newRate);
+          const curRating = parseInt(promoted.match(/^my_rating: (\d+)$/m)?.[1] || '0', 10);
+          const newReview = nextReviewDate(today, newRate, curRating);
           if (promoted.includes('next_review:')) {
             promoted = promoted.replace(/^next_review: ".+"$/m, `next_review: "${newReview}"`);
           } else {
