@@ -2567,6 +2567,9 @@ async function refreshRepos(token, failedOnly = false) {
   console.log(`Updated: Monthly/${monthStr}.md`);
 
   await generateConceptNotes();
+
+  // refresh 後也自動交叉連結
+  await autoCrossLink();
 }
 
 // ── Entry point ──────────────────────────────────────────────
