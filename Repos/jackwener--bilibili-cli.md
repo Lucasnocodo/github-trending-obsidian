@@ -7,8 +7,8 @@ language: Python
 license: Apache-2.0
 description: "A CLI for Bilibili — browse videos, users, search, and feeds from the terminal"
 homepage: ""
-stars: 325
-stars_per_day: 54
+stars: 333
+stars_per_day: 56
 forks: 26
 open_issues: 1
 created: 2026-03-04
@@ -17,13 +17,17 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "CLI 工具"
+subcategory: "媒體工具"
 release_tag: "v0.5.0"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "讓你在終端機上瀏覽 Bilibili 的影片、用戶、搜尋和動態。"
+use_case: "讓你在終端機上輕鬆瀏覽 Bilibili 的影片、用戶和動態。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/cli_工具"
@@ -32,39 +36,40 @@ tags:
 aliases:
   - "bilibili-cli"
   - "jackwener/bilibili-cli"
-  - "讓你在終端機上瀏覽 Bilibili 的影片、用戶、搜尋和動態。"
+  - "讓你在終端機上輕鬆瀏覽 Bilibili 的影片、用戶和動態。"
 ---
 
 # bilibili-cli
 
-**325** stars · **54** stars/天 · 建立 6 天前 · Python · Apache-2.0
+**333** stars · **56** stars/天 · 建立 6 天前 · Python · Apache-2.0
 
 `v0.5.0` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓你在終端機上瀏覽 Bilibili 的影片、用戶、搜尋和動態。
+> 讓你在終端機上輕鬆瀏覽 Bilibili 的影片、用戶和動態。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (54 stars/day)
-> **適合** 希望在命令行中高效管理 Bilibili 內容的開發者和內容創作者。
-> **一句話重點** 這個 CLI 工具讓 Bilibili 的內容管理變得更加高效，特別是對於喜歡使用命令行的開發者。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (56 stars/day)
+> **授權** Apache-2.0 (商業友好)
+> **適合** 需要在終端機上高效操作 Bilibili 的開發者和內容創作者。
+> **一句話重點** 這個 CLI 工具讓 Bilibili 的操作變得前所未有的簡單，特別適合開發者和內容創作者。
 
 > [!abstract] 核心創新
-> 提供了豐富的終端機互動功能，讓用戶能夠在命令行中高效管理 Bilibili 內容。
+> 提供了完整的 Bilibili 互動功能，並支持多種輸出格式，適合開發者和自動化使用。
 
 ## 專案簡介
 
-這個 CLI 工具讓使用者可以在終端機上輕鬆瀏覽 Bilibili 的內容，包括影片詳情、用戶資料和熱門影片。用戶可以透過簡單的指令如 `bili video <video_id>` 獲取影片的詳細資訊，甚至可以提取字幕和 AI 摘要。它使用 Python 開發，並支持多種輸出格式（如 YAML 和 JSON），方便與其他工具整合。與其他 Bilibili 客戶端相比，它的互動功能更為豐富，支持一鍵三連等操作，並且提供了動態時間線功能。使用者可以透過 `bili feed` 獲取自己關注的動態，這在其他工具中較少見。對於音訊提取，使用者可以使用 `bili audio <video_id>` 指令來下載音訊並分段，這對於需要音訊資料的開發者來說非常實用。這個專案目前處於穩定版本，適合中小型團隊使用。對於需要快速獲取 Bilibili 內容的開發者來說，這個工具非常值得一試，但如果你需要更複雜的 UI，可能需要考慮其他解決方案。
+這個 CLI 工具讓用戶可以在終端機中直接訪問 Bilibili 的各種功能，包括影片詳細資訊、用戶資料和動態時間線。用戶可以透過簡單的指令，如 `bili video BV1ABcsztEcY` 來獲取影片的詳細資訊，並選擇附加選項如字幕或 AI 摘要。技術上，它使用 Python 實作，並支持多種輸出格式（YAML、JSON），適合自動化腳本和開發者使用。相比其他 Bilibili 客戶端，這個工具提供了更豐富的交互功能，如一鍵三連（like、coin、follow），並且能夠提取音訊並分割成 WAV 檔案。使用者可以透過 QR 碼或自動提取瀏覽器 cookies 進行登錄，這在其他工具中並不常見。整體而言，這個專案的穩定性良好，適合個人開發者或小型團隊使用，並且在功能上相當完整。對於需要在終端機上操作 Bilibili 的用戶來說，這是一個值得考慮的選擇。
 
-**技術棧**：`Python`
+**技術棧**：`Python 3.7+`
 
 ## 重點功能
 
-- 影片詳情 — 使用 `bili video <video_id>` 獲取影片詳細資訊，包括字幕和 AI 摘要。
-- 音訊提取 — 使用 `bili audio <video_id>` 下載音訊並分段，支持自定義輸出目錄。
-- 用戶資料 — 使用 `bili user <user_id>` 獲取用戶的詳細資料和視頻列表。
-- 熱門影片 — 使用 `bili hot` 獲取當前熱門影片，支持分頁查詢。
-- 動態時間線 — 使用 `bili feed` 獲取自己關注的動態，並支持發佈和刪除動態。
+- 影片詳情 — 使用 `bili video BV1ABcsztEcY` 獲取影片的詳細資訊，包括字幕和 AI 摘要。
+- 音訊提取 — 使用 `bili audio BV1ABcsztEcY` 下載影片音訊並分割成 25 秒的 WAV 檔案。
+- 用戶資料 — 使用 `bili user 946974` 獲取用戶的詳細資料和影片列表。
+- 搜尋功能 — 使用 `bili search '關鍵字'` 來搜尋用戶或影片，支持多種參數選擇。
+- 動態時間線 — 使用 `bili feed` 獲取你關注的用戶的最新動態。
 
 ## 快速開始
 
@@ -72,7 +77,7 @@ aliases:
 ```bash
 uv tool install bilibili-cli
 ```
-2. 登入 Bilibili 帳號
+2. 使用 QR 碼登錄
 ```bash
 bili login
 ```
@@ -83,40 +88,38 @@ bili video BV1ABcsztEcY
 
 ## 程式碼範例
 
-```bash
-bili video BV1ABcsztEcY --subtitle --ai
-```
+bili video BV1ABcsztEcY --subtitle --ai --comments --json
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 jackwener 是一位活躍的開源貢獻者，專注於 CLI 工具的開發，這個專案切中了對於 Bilibili 用戶在終端機上操作的需求。隨著 CLI 工具的流行，越來越多的開發者希望能在命令行中高效地管理和瀏覽內容，這使得這個專案在近期受到關注。
+> 作者 jackwener 過去開發了多個 CLI 工具，涵蓋了不同的平台，顯示出其在 CLI 工具開發上的專業能力。這個工具解決了在終端機中無法方便訪問 Bilibili 的問題，提供了一個簡單的命令行介面來進行各種操作。近期的推廣和使用者的需求增加可能促進了這個專案的流行，特別是在開發者社群中。技術生態的變化使得 CLI 工具越來越受到重視，尤其是在自動化和遠端工作的趨勢下。
 
 ## 適合誰使用
 
-**目標受眾**：希望在命令行中高效管理 Bilibili 內容的開發者和內容創作者。
+**目標受眾**：需要在終端機上高效操作 Bilibili 的開發者和內容創作者。
 
 > [!example] 使用場景
-> - 後端工程師用它來自動化下載 Bilibili 影片的音訊，因為可以快速提取並分段音訊，節省了手動處理的時間。
-> - 數據分析師用它來收集 Bilibili 上的熱門影片數據，因為可以透過 `bili hot` 指令快速獲取當前熱門影片，並進行分析。
-> - 內容創作者用它來管理自己的 Bilibili 動態，因為可以直接在終端機上發佈和刪除動態，提升了工作效率。
+> - 後端工程師用它來在 CI 流程中自動檢索 Bilibili 影片資訊，因為這樣可以快速獲得影片的詳細數據，並進行分析。
+> - 內容創作者用它來提取 Bilibili 影片的音訊，並將其分割成 WAV 檔案，因為這樣可以方便後續的音訊處理和編輯。
+> - 數據分析師用它來獲取 Bilibili 的熱門影片數據，因為這樣可以幫助他們分析趨勢並制定內容策略。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供多種功能，包括影片詳情、用戶資料和音訊提取，功能全面。
-> - 支持多種輸出格式，方便與其他工具整合。
-> - 簡單易用的命令行介面，適合快速操作。
+> - 提供多種功能，涵蓋影片、用戶和動態操作。
+> - 支持音訊提取和分割，適合音訊處理需求。
+> - 使用簡單的命令行介面，方便開發者集成到自動化流程中。
 
 > [!danger] 缺點
-> - 對於不熟悉命令行的用戶可能有一定的學習曲線。
-> - 部分功能依賴於 Bilibili 的 API，可能會受到限制。
-> - 音訊提取功能可能無法對所有影片正常運作。
+> - 功能依賴於 Python 環境，可能對某些用戶不友好。
+> - 音訊提取功能需要額外的依賴，增加了安裝複雜度。
+> - 目前尚未有廣泛的社群支持或文檔資源。
 
 > [!warning] 注意事項
-> - 僅支援 Bilibili 的部分功能，可能無法涵蓋所有用戶需求。
-> - 需要安裝 Python 環境，對於不熟悉命令行的用戶可能有一定的學習曲線。
-> - 音訊提取功能可能對於某些影片無法正常運作，依賴於 Bilibili 的 API 支持。
+> - 僅支援 Python 3.7+
+> - 需要安裝 uv tool 以便於管理依賴
+> - 音訊提取功能可能需要額外的音訊處理庫
 
 ## 技術細節
 
@@ -251,9 +254,9 @@ bili video BV1ABcsztEcY --subtitle --ai
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[API 設計]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[媒體處理]]
 
-相關專案：[[jackwener--twitter-cli|jackwener/twitter-cli]]
+相關專案：[[jackwener--twitter-cli|jackwener/twitter-cli]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[knowsuchagency--mcp2cli|knowsuchagency/mcp2cli]] · [[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]] · [[sanbuphy--nanoAgent|sanbuphy/nanoAgent]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[steipete--discrawl|steipete/discrawl]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[jshachm--pi-rs|jshachm/pi-rs]]
 
 [GitHub](https://github.com/jackwener/bilibili-cli)
 
@@ -318,6 +321,14 @@ _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

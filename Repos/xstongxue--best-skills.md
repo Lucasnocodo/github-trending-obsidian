@@ -7,8 +7,8 @@ language: Python
 license: Apache-2.0
 description: "通用高质量 Skills 合集🔥"
 homepage: ""
-stars: 492
-stars_per_day: 98
+stars: 494
+stars_per_day: 99
 forks: 39
 open_issues: 0
 created: 2026-03-05
@@ -17,55 +17,61 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
+subcategory: "自動化"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "提供一系列通用的高质量技能，讓 AI 代理自動選擇合適的技能來執行任務。"
+use_case: "提供高效能的技能集合，讓 Agent 自動選擇並執行任務，無需手動介入。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/開發工具"
   - "lang/python"
+  - easy_install
   - "topic/skills"
   - "topic/vibe_coding"
 aliases:
   - "best-skills"
   - "xstongxue/best-skills"
-  - "提供一系列通用的高质量技能，讓 AI 代理自動選擇合適的技能來執行任務。"
+  - "提供高效能的技能集合，讓 Agent 自動選擇並執行任務，無需手動介入。"
 ---
 
 # best-skills
 
-**492** stars · **98** stars/天 · 建立 5 天前 · Python · Apache-2.0
+**494** stars · **99** stars/天 · 建立 5 天前 · Python · Apache-2.0
 
-`個人專案`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供一系列通用的高质量技能，讓 AI 代理自動選擇合適的技能來執行任務。
+> 提供高效能的技能集合，讓 Agent 自動選擇並執行任務，無需手動介入。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (98 stars/day)
-> **適合** 需要自動化文書工作的研究生和專業人士。
-> **一句話重點** 這個專案展示了如何通過自動化技能選擇來提升 AI 代理的實用性，讓繁瑣的文書工作變得高效。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (99 stars/day)
+> **授權** Apache-2.0 (商業友好)
+> **適合** 需要自動化生成學術文檔和報告的研究團隊或開發者。
+> **一句話重點** 這個專案讓文檔生成變得更加自動化，顯著提升了工作效率。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於自動化技能選擇，讓 AI 代理能根據用戶描述自動判斷並調用相應技能。
+> 這個專案的創新在於將技能自動化選擇與執行，減少了用戶的手動操作需求。
 
 ## 專案簡介
 
-這個專案提供了一套通用的技能集合，讓 AI 代理能夠根據任務描述自動選擇合適的技能。用戶只需將這些技能安裝到支持的代理工具中，例如 Cursor 或 Claude Code，代理就能根據關鍵詞自動判斷是否調用相應的技能。技術上，這些技能以 Markdown 格式編寫，並包含多種功能，如論文撰寫、PPT 生成和自媒體創作，這些功能可以通過簡單的提示來觸發。與同類工具相比，這個專案的獨特之處在於它的自動化程度，無需手動選擇技能，從而提高了工作效率。實際使用中，這些技能能夠快速生成高質量的文檔和報告，適合需要大量文書工作的研究生或專業人士。這個專案目前處於穩定階段，值得在需要自動化文書工作的團隊中使用。對於不需要這麼高自動化的簡單任務，則可能顯得過於複雜。
+這個專案提供了一系列高質量的技能集合，專為各種 Agent 工具（如 Cursor、Claude Code 等）設計。用戶只需將技能放入指定的 skills 目錄，Agent 就能根據描述中的關鍵詞自動判斷何時調用這些技能，省去手動選擇的麻煩。技術上，這些技能以 SKILL.md 格式存儲，並且支持多種功能，如論文撰寫、PPT 生成和代碼審查等。與同類工具 best-prompts 相比，best-skills 更加自動化，無需每次手動複製粘貼。使用效果上，這些技能能夠快速生成高質量的學術和技術文檔，並且支持多種場景的自動化處理。該專案目前處於穩定階段，適合需要高效文檔生成的研究團隊或開發者。建議在需要自動化文檔生成的情況下使用，但如果需求較簡單，可能不需要這麼複雜的解決方案。
 
-**技術棧**：`Python 3.9`
+**技術棧**：`Python`
 
 ## 重點功能
 
-- 自動技能選擇 — 根據用戶的描述自動選擇合適的技能，無需手動操作。
-- 多種文書技能 — 包括論文撰寫、PPT 生成、自媒體文章創作等，支持多種場景。
-- Markdown 格式 — 所有技能以 Markdown 格式編寫，便於使用和修改。
-- 支持多種代理工具 — 可安裝到 Cursor、Claude Code、Codex 等多種 AI 代理工具中。
-- 示例提示 — 提供多種示例提示，幫助用戶快速上手。
+- 自動化技能選擇 — Agent 根據描述自動判斷何時調用技能，無需手動選擇。
+- 支持多種文檔生成 — 包括論文撰寫、PPT 生成、代碼審查等功能。
+- 結構化信息提取 — 能夠從論文中提取結構化信息，方便生成報告。
+- 多場景適用 — 適用於理工科和文科的各種需求，支持不同的寫作風格。
+- 簡單集成 — 只需將技能放入指定目錄即可使用，無需複雜配置。
 
 ## 快速開始
 
@@ -73,66 +79,59 @@ aliases:
 ```bash
 git clone https://github.com/xstongxue/best-skills.git
 ```
-2. 進入專案目錄
+2. 將技能放入 Agent 的 skills 目錄
 ```bash
-cd best-skills
+cp -r best-skills/skills/* /path/to/your/agent/skills/
 ```
-3. 將技能安裝到代理工具中
+3. 啟動 Agent
 ```bash
-cp skills/* /path/to/your/agent/skills
+your_agent_command start
 ```
 
 ## 程式碼範例
 
-```python
-# 使用示例提示生成論文大綱
-prompt = '帮我审核一下这个论文大纲'
-response = agent.call_skill('paper-write', prompt)
-print(response)
+```bash
+# 使用 Agent 生成論文大綱
+agent_command --skill paper-write --prompt '幫我生成一個論文大綱'
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 xstongxue 專注於提升 AI 代理的實用性，這個專案正好切中現代人對於高效工作的需求。隨著 AI 技術的普及，越來越多的用戶希望能夠自動化繁瑣的文書工作，這使得該專案在市場上受到關注。此外，隨著各種 AI 代理工具的興起，對於這類技能集的需求也隨之增加。
+> 作者 xstongxue 之前曾開發過多個受歡迎的開源專案，這次推出的 best-skills 解決了 Agent 工具中技能選擇的繁瑣問題。這個工具的推出正好符合了當前對於自動化和高效能工作的需求，並且在社群中引起了討論。最近的推廣活動和使用案例分享也提升了其知名度。
 
 ## 適合誰使用
 
-**目標受眾**：需要自動化文書工作的研究生和專業人士。
+**目標受眾**：需要自動化生成學術文檔和報告的研究團隊或開發者。
 
 > [!example] 使用場景
 > - 研究生用它來自動生成論文大綱，因為手動撰寫大綱耗時且容易出錯。
-> - 內容創作者用它來快速生成自媒體文章，因為這樣可以節省大量的寫作時間。
-> - 開發者用它來生成項目文檔，因為這樣能夠確保文檔的完整性和一致性。
-
-## 架構分析
-
-該專案採用單體架構，所有技能以 Markdown 格式存放在 skills 目錄中。用戶通過將技能複製到代理工具的技能目錄來使用。用戶輸入 → 代理工具根據描述自動選擇技能 → 輸出結果。關鍵檔案包括各種 SKILL.md，定義了每個技能的功能和使用方法。
+> - 開發者用它來快速生成系統架構圖，因為手動繪製圖表效率低且不易修改。
+> - 講師用它來製作答辯 PPT，因為自動化生成能夠節省大量準備時間。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化程度高，減少用戶手動操作。
-> - 技能集合多樣，適用於多種場景。
-> - Markdown 格式便於用戶修改和擴展。
+> - 高效能的自動化技能選擇，節省時間。
+> - 支持多種文檔生成需求，適用範圍廣。
+> - 簡單的集成方式，易於使用。
 
 > [!danger] 缺點
-> - 僅支援特定的代理工具，限制了使用範圍。
-> - 需要用戶具備一定的 Markdown 編輯能力。
-> - 技能的效果依賴於用戶提供的提示質量。
+> - 僅限於特定的 Agent 工具，兼容性有限。
+> - 需要用戶對技能有一定的了解。
+> - 部分技能可能需要進一步的調整以符合特定需求。
 
 > [!warning] 注意事項
-> - 僅支援特定的 AI 代理工具，如 Cursor 和 Claude Code。
-> - 需要用戶具備一定的 Markdown 編輯能力。
-> - 技能的效果依賴於用戶提供的提示質量。
-> - 不支持自定義技能的創建，需依賴預設的技能集。
+> - 僅支援特定的 Agent 工具，如 Cursor 和 Claude Code。
+> - 需要用戶對技能描述有一定的理解，才能有效使用。
+> - 部分技能可能需要進一步的調整以符合特定需求。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [[xstongxue--best-prompts\|xstongxue/best-prompts]] | best-prompts 提供的是手動複製的提示，而 best-skills 則是自動選擇技能，提升了使用的便捷性。 |
-| [[openai--gpt-3.5-turbo\|openai/gpt-3.5-turbo]] | GPT-3.5 是通用的語言模型，而 best-skills 提供的是針對特定任務的技能集合，更加專業化。 |
+| [xstongxue/best-prompts](https://github.com/xstongxue/best-prompts) | best-prompts 主要針對手動複製粘貼的 Prompt，而 best-skills 則是自動化的技能選擇，適合需要高效能的場景。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | OpenClaw-Medical-Skills 專注於醫療領域的技能，而 best-skills 提供通用的技能集合，適用於多種場景。 |
 
 ## 技術細節
 
@@ -219,9 +218,9 @@ print(response)
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[API 設計]] · [[自然語言處理]]
+相關概念：[[自動化]] · [[文檔生成]] · [[技能管理]]
 
-相關專案：[[xstongxue--best-prompts|xstongxue/best-prompts]] · [[openai--gpt-3.5-turbo|openai/gpt-3.5-turbo]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[xstongxue--best-prompts|xstongxue/best-prompts]] · [[openai--gpt-3.5-turbo|openai/gpt-3.5-turbo]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[binance--binance-skills-hub|binance/binance-skills-hub]]
 
 [GitHub](https://github.com/xstongxue/best-skills)
 
@@ -286,6 +285,14 @@ _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

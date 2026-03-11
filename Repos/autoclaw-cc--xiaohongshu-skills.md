@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "xiaohongshu-skills"
 homepage: ""
-stars: 407
-stars_per_day: 58
-forks: 51
+stars: 412
+stars_per_day: 59
+forks: 52
 open_issues: 13
 created: 2026-03-03
 pushed_at: 2026-03-09
@@ -17,59 +17,63 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
+subcategory: "自動化"
 release_tag: "v0.1.0-c26fa98"
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "讓小紅書的操作自動化，你只需用自然語言下達指令。"
+use_case: "讓你用自然語言自動化操作小紅書，從內容發布到社交互動，一應俱全。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/開發工具"
   - "lang/python"
   - org
-  - easy_install
 aliases:
   - "xiaohongshu-skills"
   - "autoclaw-cc/xiaohongshu-skills"
-  - "讓小紅書的操作自動化，你只需用自然語言下達指令。"
+  - "讓你用自然語言自動化操作小紅書，從內容發布到社交互動，一應俱全。"
 ---
 
 # xiaohongshu-skills
 
-**407** stars · **58** stars/天 · 建立 7 天前 · Python · MIT
+**412** stars · **59** stars/天 · 建立 7 天前 · Python · MIT
 
-`ORG` `v0.1.0-c26fa98` `easy-install`
+`ORG` `v0.1.0-c26fa98`
 
 > [!summary] 一句話摘要
-> 讓小紅書的操作自動化，你只需用自然語言下達指令。
+> 讓你用自然語言自動化操作小紅書，從內容發布到社交互動，一應俱全。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (58 stars/day)
-> **適合** 需要高效管理小紅書帳號的內容創作者和社交媒體經營者。
-> **一句話重點** 這個專案讓小紅書的操作變得無縫且自動化，特別適合需要高頻率互動的用戶。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (59 stars/day)
+> **授權** MIT (商業友好)
+> **適合** 需要在小紅書上自動化內容管理的社交媒體經理或內容創作者。
+> **一句話重點** 這個專案讓小紅書的操作變得像聊天一樣簡單，真正實現了自動化的便利性。
 
 > [!abstract] 核心創新
-> 支持用自然語言下達複合指令，實現小紅書操作的自動化。
+> 支持用自然語言進行複合操作，讓小紅書的自動化管理變得更加直觀。
 
 ## 專案簡介
 
-這個專案透過 Python CDP 自動化引擎，實現小紅書的多種操作自動化。用戶可以用自然語言指令來執行如搜索、發文、社交互動等任務，系統會自動串聯相關技能完成操作。專案支持 OpenClaw 和其他兼容 SKILL.md 格式的 AI Agent 平台，並且提供了 CLI 工具以便於腳本集成。與其他社交媒體自動化工具相比，它強調了連貫操作的能力，讓用戶能夠一次性下達複雜指令。使用者可以通過 CLI 或直接與 Agent 互動來執行任務，CLI 模式下的輸出為 JSON 格式，便於後續處理。這個專案目前處於 v0.1.0 階段，適合小型團隊或個人開發者使用，特別是那些需要頻繁操作小紅書的用戶。對於大型團隊或需要高穩定性的生產環境，可能需要進一步的測試和穩定性提升。
+這個專案利用 Python 的 CDP 瀏覽器自動化引擎，讓使用者能夠透過自然語言與 AI Agent 互動，執行小紅書的各種操作。用戶可以進行認證管理、內容發布、社交互動等，並且支持複合指令，像是「搜索刺客信條最火的圖文帖子，收藏它，然後告訴我講了什麼」，Agent 會自動串聯多個技能完成任務。技術上，它依賴於 Chrome 瀏覽器的自動化功能，並且能夠與 OpenClaw 及其他兼容 SKILL.md 的平台整合。與其他自動化工具相比，這個專案的獨特之處在於其自然語言處理能力，能夠讓用戶以更直觀的方式發出指令。實際使用中，這個工具能夠有效提升內容創作和社交互動的效率，但需要安裝 Google Chrome 和 Python 3.11 以上版本。這個專案目前在 alpha 階段，適合對小紅書有需求的開發者和內容創作者使用。對於不熟悉命令行的用戶，建議使用其自然語言交互功能，而對於需要批量處理的用戶則可以考慮 CLI 模式。
 
-**技術棧**：`Python 3.11` · `OpenClaw`
+**技術棧**：`Python 3.11` · `Chrome CDP`
 
 ## 重點功能
 
-- xhs-auth — 支持多帳號切換和掃碼登錄，確保用戶能快速進行身份驗證。
-- xhs-publish — 提供圖文、視頻和長文的發佈功能，並支持定時發佈。
-- xhs-explore — 允許用戶根據關鍵詞搜索和發現內容，並能查看詳細信息。
-- xhs-interact — 支持對帖子進行評論、回覆、點讚和收藏，增強社交互動。
-- 連貫操作 — 用戶可用自然語言下達複合指令，Agent 自動串聯多個技能完成任務。
+- xhs-auth — 支持多帳號切換和掃碼登錄，簡化用戶認證流程。
+- xhs-publish — 支持圖文、視頻和長文的發布，並提供定時發布和預覽功能。
+- xhs-explore — 透過關鍵字搜索和篩選功能，快速找到相關內容。
+- xhs-interact — 支持評論、點讚和收藏等社交互動，提升用戶參與度。
+- 連貫操作 — 允許用戶用自然語言發出複合指令，Agent 自動串聯多個技能完成任務。
 
 ## 快速開始
 
-1. 下載專案壓縮包
+1. 下載並解壓專案
 ```bash
 git clone https://github.com/autoclaw-cc/xiaohongshu-skills.git
 ```
@@ -89,43 +93,55 @@ python scripts/cli.py search-feeds --keyword "露營" --sort-by "最多点赞" -
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 專案由經驗豐富的開發者團隊維護，切中小紅書用戶對自動化操作的需求。隨著小紅書用戶數量的增加，對於高效內容管理和社交互動的需求也隨之上升，這使得該工具的實用性愈加凸顯。
+> (a) 專案的主要貢獻者包括 Angiin 和 xpzouying，他們在自動化和 AI 領域有過去的成功經驗。(b) 這個工具解決了小紅書操作繁瑣的問題，讓用戶能夠通過自然語言進行高效的內容管理。(c) 專案的曝光可能受到社交媒體的討論和推廣影響，特別是在內容創作社群中。(d) 隨著自動化技術的成熟，這種基於自然語言的操作方式變得越來越可行，吸引了開發者的注意。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效管理小紅書帳號的內容創作者和社交媒體經營者。
+**目標受眾**：需要在小紅書上自動化內容管理的社交媒體經理或內容創作者。
 
 > [!example] 使用場景
-> - 社交媒體經營者用它來自動發布小紅書內容，因為這樣可以節省時間並提高發文頻率，從而增加曝光率。
-> - 數據分析師用它來批量互動和分析競品內容，因為手動操作耗時且容易出錯，使用自動化可以提高效率。
-> - 內容創作者用它來快速搜索和收藏靈感來源，因為自然語言指令讓操作變得直觀，無需學習複雜的命令。
+> - 內容創作者用它來自動發布小紅書圖文，因為可以節省手動操作的時間，提升效率。
+> - 社交媒體經理用它來批量互動和分析競品內容，因為能夠快速獲取數據，幫助制定策略。
+> - 開發者用它來測試小紅書的 API 整合，因為 CLI 模式提供了靈活的自動化測試方案。
 
 ## 架構分析
 
-該專案採用單體架構，核心資料流為用戶輸入 → Agent 處理 → 輸出結果。關鍵技術決策包括使用 Python CDP 進行瀏覽器自動化，並通過 CLI 提供多種操作接口。專案目錄結構清晰，主要功能集中在 scripts 目錄下，包含各種自動化操作的實現。
+這是一個基於 CLI 的自動化工具，主要由 Python 腳本組成。用戶輸入 → Agent 處理 → 輸出 JSON 格式結果。核心技術決策使用了 Chrome 的 CDP 進行自動化操作，並且專案結構清晰，scripts 目錄下包含了所有自動化相關的功能模組。
+
+## 技術深入分析
+
+> [!note]- 展開深入分析
+> 核心的自動化邏輯基於 Chrome 的 CDP，這使得操作更加靈活和強大。效能方面，專案能夠快速響應用戶指令，並且支持多帳號管理，適合需要高頻操作的用戶。設計上，選擇了自然語言處理來提升用戶體驗，這在其他自動化工具中並不常見，讓這個專案在市場上獨樹一幟。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多種操作模式，適合不同用戶需求。
-> - 自然語言指令簡化了操作流程，降低使用門檻。
-> - CLI 輸出為 JSON 格式，便於後續數據處理。
+> - 自然語言操作，降低使用門檻。
+> - 支持多種內容類型的發布，靈活性高。
+> - CLI 模式便於集成到其他自動化流程中。
 
 > [!danger] 缺點
-> - 目前功能還在持續開發中，穩定性有待提升。
-> - 需要用戶手動處理登入，對於自動化要求高的場景不夠友好。
-> - 依賴於 Google Chrome 瀏覽器，限制了跨平台使用。
+> - 需要安裝特定版本的 Python 和 Chrome。
+> - 目前功能仍在開發中，穩定性有待提升。
+> - 對於不熟悉命令行的用戶可能不夠友好。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.11 以上版本。
-> - 需要安裝 Google Chrome 瀏覽器。
-> - CLI 模式下的操作需要用戶手動處理登入過程。
+> - 僅支援 Python 3.11 以上版本
+> - 需要安裝 Google Chrome 瀏覽器
+> - 目前在 alpha 階段，API 可能不穩定
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [autoclaw-cc/openclaw](https://github.com/autoclaw-cc/openclaw) | OpenClaw 提供了類似的自動化功能，但不支持自然語言操作，使用者需要手動輸入指令。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 這個專案專注於醫療領域的自動化，而小紅書技能則針對社交媒體內容管理。 |
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 51 |
+| Forks | 52 |
 | Open Issues | 13 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-03 |
@@ -362,9 +378,9 @@ python scripts/cli.py search-feeds --keyword "露營" --sort-by "最多点赞" -
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[CLI/TUI]] · [[機器學習]]
+相關概念：[[自動化]] · [[自然語言處理]] · [[CLI/TUI]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[duoan--TorchCode|duoan/TorchCode]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]]
 
 [GitHub](https://github.com/autoclaw-cc/xiaohongshu-skills)
 
@@ -429,6 +445,14 @@ _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

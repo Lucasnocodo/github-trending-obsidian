@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "Apple Silicon (MLX) port of Karpathy's autoresearch — autonomous AI research loops on Mac, no PyTorch required."
 homepage: ""
-stars: 480
-stars_per_day: 240
-forks: 68
+stars: 481
+stars_per_day: 241
+forks: 69
 open_issues: 3
 created: 2026-03-08
 pushed_at: 2026-03-10
@@ -17,13 +17,17 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "AI/ML"
+subcategory: "自主研究"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "讓 Apple Silicon 用戶無需 PyTorch 就能自動化 AI 研究流程。"
+use_case: "讓 Apple Silicon 用戶能在無需 PyTorch 的情況下進行自主 AI 研究迴圈。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/ai_ml"
@@ -32,47 +36,48 @@ tags:
 aliases:
   - "autoresearch-mlx"
   - "trevin-creator/autoresearch-mlx"
-  - "讓 Apple Silicon 用戶無需 PyTorch 就能自動化 AI 研究流程。"
+  - "讓 Apple Silicon 用戶能在無需 PyTorch 的情況下進行自主 AI 研究迴圈。"
 ---
 
 # autoresearch-mlx
 
-**480** stars · **240** stars/天 · 建立 2 天前 · Python · MIT
+**481** stars · **241** stars/天 · 建立 2 天前 · Python · MIT
 
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓 Apple Silicon 用戶無需 PyTorch 就能自動化 AI 研究流程。
+> 讓 Apple Silicon 用戶能在無需 PyTorch 的情況下進行自主 AI 研究迴圈。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (240 stars/day)
-> **適合** 需要在 Apple Silicon 上進行 AI 研究但不想依賴 PyTorch 的開發者。
-> **一句話重點** 這個專案證明了 Apple Silicon 在 AI 研究中的潛力，並簡化了開發者的工作流程。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (241 stars/day)
+> **授權** MIT (商業友好)
+> **適合** 希望在 Apple Silicon 上進行自主 AI 研究的機器學習工程師。
+> **一句話重點** 這個專案讓 Apple Silicon 用戶能夠輕鬆進行自主 AI 研究，無需繁瑣的環境設置。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於無需 PyTorch 的 Apple Silicon 原生訓練。
+> 這個專案的核心創新在於提供無需 PyTorch 的自主 AI 研究迴圈，專為 Apple Silicon 優化。
 
 ## 專案簡介
 
-這個專案是 Karpathy 的 autoresearch 在 Apple Silicon 上的移植，透過 `program.md` 控制固定時間的自動研究迴圈。用戶只需編輯 `train.py`，在 5 分鐘的訓練預算內進行模型訓練，並根據 `val_bpb` 指標決定是否保留或回退更改。它使用 MLX 框架，無需 PyTorch 或 CUDA，並支援 Python 3.10+。與原版相比，這個移植專注於 Apple Silicon 的特性，提供更快的訓練速度和更高的效率。實際測試顯示，較小的模型在固定時間內能夠比大型模型獲得更好的結果，這是因為它們能在預算內進行更多的優化步驟。這個專案目前處於穩定階段，適合需要在 Apple Silicon 上進行 AI 研究的開發者。建議在需要快速迭代和實驗的情況下使用，但對於需要 PyTorch 生態系統的用戶則不太適合。
+這個專案是 Karpathy 的 autoresearch 的 Apple Silicon 版本，透過 `program.md` 控制固定時間的自主研究迴圈。使用者只需編輯 `train.py`，在 5 分鐘的訓練預算內進行實驗，並根據 `val_bpb` 指標決定是否保留變更。此專案利用 MLX 實現原生 Apple Silicon 訓練，避免了 PyTorch 和 CUDA 的依賴，並且提供了簡化的 AdamW 公共路徑。與其他工具相比，這個專案專注於小型模型的快速訓練，並且在 Apple Silicon 硬體上表現出色，能夠在固定的時間內進行更多的優化步驟。實際測試顯示，使用 Mac Mini 的長期運行能夠找到不同的最佳模型配置，這顯示了硬體特定的行為。這個專案目前處於 beta 階段，適合需要在 Apple Silicon 上進行快速原型開發的團隊。建議對於需要高效訓練和快速迭代的使用者來說，這是一個不錯的選擇，但對於需要更複雜模型的使用者則可能不夠靈活。
 
 **技術棧**：`Python 3.10+` · `MLX`
 
 ## 重點功能
 
-- 固定時間訓練迴圈 — 每次訓練預算為 5 分鐘，透過 git 進行版本控制。
-- 無需 PyTorch 或 CUDA — 完全在 Apple Silicon 上運行，使用 MLX 框架。
-- 自動化實驗協議 — 使用 `program.md` 定義實驗流程，簡化操作。
-- 數據準備和評估 — `prepare.py` 負責數據處理和評估，保持固定。
-- 簡化的訓練路徑 — `train.py` 只使用 AdamW 優化器，降低配置複雜度。
+- 原生 Apple Silicon 支援 — 無需 PyTorch 或 CUDA，使用 MLX 進行訓練。
+- 固定時間的自主研究迴圈 — 每次實驗最多 5 分鐘，透過 `program.md` 控制。
+- 簡化的 AdamW 訓練路徑 — 只需編輯 `train.py` 來調整模型和優化器。
+- 實驗歷史記錄 — 使用 `results.tsv` 記錄每次實驗的結果，便於追蹤進展。
+- 快速數據準備 — 使用 `prepare.py` 進行數據預處理和評估。
 
 ## 快速開始
 
-1. 安裝 uv 工具
+1. 安裝 uv
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
-2. 安裝依賴項
+2. 安裝依賴
 ```bash
 uv sync
 ```
@@ -80,7 +85,7 @@ uv sync
 ```bash
 uv run prepare.py
 ```
-4. 運行一次 5 分鐘的訓練實驗
+4. 運行一次訓練實驗
 ```bash
 uv run train.py
 ```
@@ -88,50 +93,51 @@ uv run train.py
 ## 程式碼範例
 
 ```bash
+# 運行一次訓練實驗
 uv run train.py
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 trevin-creator 專注於 Apple Silicon 的優化，滿足了對無需 PyTorch 的輕量化 AI 研究需求。隨著 Apple Silicon 的普及，這個專案能夠讓更多開發者利用其硬體優勢進行 AI 開發。這個移植的推出正好契合了使用者對於高效能和簡化環境的需求。
+> (a) 作者 trevin-creator 是 Karpathy 的追隨者，專注於機器學習領域，這個專案是他對 Karpathy 原始構想的延伸。(b) 這個工具解決了 Apple Silicon 用戶在進行自主 AI 研究時的依賴問題，無需安裝繁瑣的 PyTorch 環境。(c) 最近的討論和推特上對於 Apple Silicon 的支持引起了開發者的注意。(d) 隨著 Apple Silicon 的普及，越來越多的開發者尋求在這個平台上進行高效的機器學習實驗。 
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Apple Silicon 上進行 AI 研究但不想依賴 PyTorch 的開發者。
+**目標受眾**：希望在 Apple Silicon 上進行自主 AI 研究的機器學習工程師。
 
 > [!example] 使用場景
-> - 資料科學家用它來在 Apple Silicon 上快速測試不同的模型配置，因為它能在固定時間內自動化實驗流程，節省了手動調整的時間。
-> - 機器學習工程師用它來進行模型優化，因為它提供了簡單的版本控制和自動回退機制，避免了不必要的錯誤。
-> - 獨立開發者用它來在 Mac 上進行 AI 研究，因為無需安裝複雜的 PyTorch 環境，降低了入門門檻。
+> - 機器學習工程師用它來在 Apple Silicon 上進行自主模型訓練，因為它不需要安裝 PyTorch，節省了環境配置時間。
+> - 研究人員用它來快速迭代模型配置，因為每次實驗只需 5 分鐘，能夠快速找到最佳參數。
+> - 獨立開發者用它來測試不同的訓練策略，因為它簡化了訓練流程，讓他們能專注於實驗而不是環境問題。
 
 ## 架構分析
 
-專案採用單體架構，使用者透過編輯 `train.py` 來調整模型，然後執行 `uv run train.py` 進行訓練。數據流從用戶輸入（修改 `train.py`）→ 處理（訓練模型）→ 輸出（評估結果）。關鍵技術決策是使用 MLX 取代 PyTorch/CUDA，專案目錄中包含 `prepare.py`、`train.py` 和 `program.md` 等重要檔案。
+這是一個 CLI 工具，核心資料流為：用戶輸入 `train.py` → 處理 → 輸出 `results.tsv`。專案使用 MLX 進行原生訓練，並且結構簡單，主要檔案包括 `prepare.py`、`train.py` 和 `program.md`，這些檔案共同構成了自主研究的基礎。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 無需安裝複雜的 PyTorch 環境，簡化了開發流程。
-> - 能夠充分利用 Apple Silicon 的硬體優勢，提供高效能訓練。
-> - 自動化的實驗迴圈減少了手動調整的時間，提升了工作效率。
+> - 無需 PyTorch，簡化環境配置。
+> - 快速迭代的實驗流程，能在短時間內找到最佳模型。
+> - 原生支援 Apple Silicon，充分利用硬體性能。
 
 > [!danger] 缺點
-> - 目前僅支援 Apple Silicon，對其他平台無法使用。
-> - 缺乏對 PyTorch 生態系統的支持，限制了某些功能。
-> - MFU 報告不完整，無法提供詳細的性能指標。
+> - 僅限於 Apple Silicon，無法在其他平台使用。
+> - 不支援複雜的模型配置，限制了靈活性。
+> - 目前處於 beta 階段，可能存在不穩定性。
 
 > [!warning] 注意事項
 > - 僅支援 Apple Silicon 硬體。
-> - 需要 Python 3.10+ 環境。
-> - 目前不支援 Windows 系統。
-> - MFU 報告為佔位符，缺乏詳細的性能指標。
+> - 需要 Python 3.10 以上版本。
+> - 不支援 PyTorch 或 CUDA，無法在其他平台運行。
+> - 實驗時間約 6-7 分鐘，包括編譯和評估開銷。
 
 ## 技術細節
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 68 |
+| Forks | 69 |
 | Open Issues | 3 |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-08 |
@@ -221,9 +227,9 @@ uv run train.py
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[機器學習]] · [[深度學習]]
+相關概念：[[自動化]] · [[機器學習]] · [[深度學習]]
 
-相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]]
+相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[duoan--TorchCode|duoan/TorchCode]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[helenigtxu--TradingView-Claw|helenigtxu/TradingView-Claw]] · [[inspatio--worldfm|inspatio/worldfm]] · [[tanishqkumar--ssd|tanishqkumar/ssd]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[tanweai--pua|tanweai/pua]]
 
 [GitHub](https://github.com/trevin-creator/autoresearch-mlx)
 
@@ -288,6 +294,14 @@ _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

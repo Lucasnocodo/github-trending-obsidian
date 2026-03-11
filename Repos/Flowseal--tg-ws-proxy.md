@@ -7,7 +7,7 @@ language: Python
 license: MIT
 description: "Local SOCKS5 proxy server for partial bypassing of Telegram loading"
 homepage: ""
-stars: 785
+stars: 786
 stars_per_day: 131
 forks: 15
 open_issues: 4
@@ -17,54 +17,58 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
+subcategory: "代理工具"
 release_tag: "v1.0.4"
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "透過 SOCKS5 代理伺服器加速 Telegram 的載入速度。"
+use_case: "透過 SOCKS5 代理加速 Telegram 的加載與下載。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/開發工具"
   - "lang/python"
-  - easy_install
 aliases:
   - "tg-ws-proxy"
   - "Flowseal/tg-ws-proxy"
-  - "透過 SOCKS5 代理伺服器加速 Telegram 的載入速度。"
+  - "透過 SOCKS5 代理加速 Telegram 的加載與下載。"
 ---
 
 # tg-ws-proxy
 
-**785** stars · **131** stars/天 · 建立 6 天前 · Python · MIT
+**786** stars · **131** stars/天 · 建立 6 天前 · Python · MIT
 
-`v1.0.4` `easy-install`
+`v1.0.4`
 
 > [!summary] 一句話摘要
-> 透過 SOCKS5 代理伺服器加速 Telegram 的載入速度。
+> 透過 SOCKS5 代理加速 Telegram 的加載與下載。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (131 stars/day)
-> **適合** 希望提升 Telegram 使用體驗的普通用戶和開發者。
-> **一句話重點** 這個專案專注於 Telegram 的特定需求，提供了一個簡單有效的加速方案。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (131 stars/day)
+> **授權** MIT (商業友好)
+> **適合** 希望在網路不佳的環境中加速 Telegram 使用的普通用戶。
+> **一句話重點** 這個專案的設計思路是針對 Telegram 的特性進行優化，而不是僅僅提供一個通用的代理工具。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個專門針對 Telegram 的 SOCKS5 代理解決方案，能夠自動處理不同的連接方式。
+> 透過 WebSocket 連接優化 Telegram 的加載速度，並提供自動切換功能。
 
 ## 專案簡介
 
-這個專案提供一個本地的 SOCKS5 代理伺服器，能夠將 Telegram Desktop 的流量透過 WebSocket 轉發到指定的伺服器，從而部分加速 Telegram 的使用體驗。具體流程是：Telegram Desktop 透過 SOCKS5 代理連接到本地伺服器，然後該伺服器會根據 MTProto 的初始化包提取 DC ID，並建立到 Telegram 數據中心的 WebSocket 連接。如果 WebSocket 連接失敗，則會自動切換到直接的 TCP 連接。這個工具使用 Python 實作，並且提供了簡單的安裝和使用方式，支持 Windows 系統的托盤應用和控制台模式。與其他類似的代理工具相比，這個專案專注於 Telegram 的特定需求，能夠自動處理不同的連接方式，並提供詳細的日誌功能。實際使用中，這個工具能顯著提高 Telegram 的消息和媒體載入速度，但需要注意的是，這個專案目前仍在開發中，穩定性可能會有所欠缺。對於小型團隊或個人使用者來說，這是一個值得一試的工具，尤其是在需要提升 Telegram 使用體驗的情況下。建議在需要加速 Telegram 使用時使用，但如果對穩定性有較高要求，則可能需要考慮其他解決方案。
+這個專案提供了一個本地的 SOCKS5 代理伺服器，將 Telegram 的流量透過 WebSocket 轉發，從而加速 Telegram 的使用體驗。具體流程是，Telegram Desktop 透過 SOCKS5 代理連接到指定的伺服器，然後建立 WebSocket 連接到 Telegram 的資料中心。它使用 Python 實作，並支援多個資料中心的 IP 地址配置，預設為 `2:149.154.167.220` 和 `4:149.154.167.220`。相較於其他代理工具，tg-ws-proxy 針對 Telegram 的特性進行了優化，能夠在 WebSocket 連接失敗時自動切換到 TCP 連接，這一點在其他一般的 SOCKS5 代理中並不常見。使用者可以透過 GUI 介面輕鬆設定代理，或是使用命令行模式進行更細緻的配置。該專案目前處於穩定階段，對於需要加速 Telegram 的使用者來說，值得考慮使用。建議在需要快速下載文件或加速消息加載時使用，但對於不需要此功能的用戶則可忽略。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
 - 本地 SOCKS5 代理 — 在 `127.0.0.1:1080` 提供 SOCKS5 代理服務。
-- WebSocket 轉發 — 自動將流量轉發至 Telegram 的 WebSocket 伺服器以加速連接。
-- 自動切換連接 — 當 WebSocket 連接失敗時，自動切換到 TCP 連接。
-- 詳細日誌功能 — 支持 `-v` 參數啟用詳細日誌，便於故障排除。
-- 簡單的安裝和配置 — 透過 `pip install` 安裝，並提供 GUI 設定界面。
+- 自動切換連接 — 當 WebSocket 連接失敗時自動切換到 TCP 連接。
+- 多資料中心支援 — 可配置多個 Telegram 資料中心的 IP 地址。
+- 詳細日誌功能 — 使用 `-v` 參數啟用詳細的 DEBUG 日誌。
+- GUI 設定介面 — 提供系統托盤的 GUI 介面來簡化配置過程。
 
 ## 快速開始
 
@@ -84,51 +88,43 @@ python proxy/tg_ws_proxy.py --port 1080
 ## 程式碼範例
 
 ```bash
-# 標準啟動
-python proxy/tg_ws_proxy.py
-
-# 指定端口和數據中心
 python proxy/tg_ws_proxy.py --port 9050 --dc-ip 1:149.154.175.205 --dc-ip 2:149.154.167.220
-
-# 詳細日誌啟動
-python proxy/tg_ws_proxy.py -v
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 Flowseal 專注於 Telegram 的使用需求，這個工具正好解決了用戶在使用 Telegram 時遇到的速度問題。隨著 Telegram 用戶數量的增加，對於加速工具的需求也隨之上升。這個專案的推出正好切中了這個需求，因此受到關注。
+> Flowseal 是一位活躍的開發者，過去也有其他 Telegram 相關的專案。這個工具解決了 Telegram 用戶在某些地區網路不穩定時的加載速度問題，之前的解決方案往往無法針對 Telegram 的特性進行優化。近期 Telegram 用戶對於加速需求的增加，可能促使這個工具受到更多關注。
 
 ## 適合誰使用
 
-**目標受眾**：希望提升 Telegram 使用體驗的普通用戶和開發者。
+**目標受眾**：希望在網路不佳的環境中加速 Telegram 使用的普通用戶。
 
 > [!example] 使用場景
-> - 普通用戶用它來加速 Telegram 的消息載入速度，因為使用 SOCKS5 代理能夠顯著減少延遲。
-> - 開發者用它來測試 Telegram 應用的性能，因為能夠快速切換不同的數據中心連接，方便進行性能調整。
-> - 系統管理員用它來優化公司內部使用 Telegram 的網路環境，因為能夠自動處理連接問題，減少手動配置的麻煩。
+> - 普通用戶用它來加速 Telegram 的文件下載，因為直接連接經常會因為網路不穩而失敗。
+> - 開發者用它來測試 Telegram 應用的性能，因為可以快速切換不同的資料中心以評估速度。
+> - 系統管理員用它來監控 Telegram 的流量，因為可以透過 SOCKS5 代理輕鬆獲取流量日誌。
 
 ## 架構分析
 
-這是一個單體應用，使用 Python 實作。用戶輸入 → SOCKS5 代理 → TG WS Proxy → WebSocket 伺服器 → Telegram DC。主要技術決策是使用 WebSocket 來加速連接，並在失敗時自動切換到 TCP。專案目錄中包含了主要的 Python 檔案和配置文件。
+這是一個單體應用，包含一個本地 SOCKS5 代理伺服器。用戶輸入 → SOCKS5 代理 → TG WS Proxy → WebSocket 連接 → Telegram DC。關鍵技術決策是使用 WebSocket 來加速連接，並在失敗時自動回退到 TCP 連接。專案目錄結構中，`proxy/tg_ws_proxy.py` 是主要的執行檔。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠顯著提高 Telegram 的載入速度，特別是在網路不穩定的情況下。
-> - 提供了簡單的 GUI 設定界面，方便用戶配置。
-> - 支持多種數據中心的連接，靈活性高。
+> - 針對 Telegram 進行了專門優化，能有效加速加載。
+> - 提供 GUI 設定介面，降低使用門檻。
+> - 支援多個資料中心的 IP 配置，靈活性高。
 
 > [!danger] 缺點
-> - 目前僅支持 Windows，對於其他操作系統的支持有限。
-> - 需要用戶手動配置 Telegram 的代理設定，對新手不太友好。
-> - 仍在開發中，可能會遇到穩定性問題。
+> - 僅限於 Windows 環境使用，跨平台支援不足。
+> - 需要用戶手動配置 Telegram 的代理設定，使用不夠直觀。
+> - 不支援其他即時通訊應用，功能範圍有限。
 
 > [!warning] 注意事項
-> - 目前僅支持 Windows 系統。
+> - 僅支援 Windows 環境的托盤應用。
 > - 需要手動配置 Telegram 的 SOCKS5 代理設定。
-> - 在某些網路環境下可能無法穩定連接。
-> - 仍在開發中，可能存在未解決的 bug。
+> - 不支援其他即時通訊應用的加速功能。
 
 ## 技術細節
 
@@ -267,7 +263,9 @@ python proxy/tg_ws_proxy.py -v
 
 ## 延伸閱讀
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]]
+相關概念：[[代理工具]] · [[自動化]] · [[網路優化]]
+
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[binance--binance-skills-hub|binance/binance-skills-hub]]
 
 [GitHub](https://github.com/Flowseal/tg-ws-proxy)
 
@@ -332,7 +330,16 @@ _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，786 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，768 stars

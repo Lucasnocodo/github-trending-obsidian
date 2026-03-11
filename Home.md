@@ -23,7 +23,6 @@ cssclasses:
 | [[MOC - 資料科學]] | 資料科學 |
 | [[MOC - 教學資源]] | 教學資源 |
 | [[MOC - 基礎設施]] | 基礎設施 |
-| [[MOC - 其他]] | 其他分類 |
 
 ## 統計快照
 
@@ -85,26 +84,6 @@ WHERE my_rating > 0
 SORT my_rating DESC
 LIMIT 10
 ```
-
-## 快速篩選
-
-> [!tip]- 立即可用的專案（easy install + 高 stars）
-> ```dataview
-> TABLE stars AS "Stars", category AS "分類", language AS "語言"
-> FROM "Repos"
-> WHERE install_complexity = "easy" AND status = "to-review"
-> SORT stars_per_day DESC
-> LIMIT 5
-> ```
-
-> [!tip]- 商業友好授權（MIT/Apache）
-> ```dataview
-> TABLE stars AS "Stars", license AS "授權", category AS "分類"
-> FROM "Repos"
-> WHERE license = "MIT" OR license = "Apache-2.0"
-> SORT stars DESC
-> LIMIT 5
-> ```
 
 ## 最近的週報
 

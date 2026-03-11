@@ -16,17 +16,21 @@ pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
-category: "AI/ML"
+category: "開發工具"
+subcategory: "自動化"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "提供 AI agent 原生接入加密貨幣的技能市場，讓用戶能夠透過自然語言進行交易和監控。"
+use_case: "提供 AI agent 原生接入加密貨幣的技能市場，讓交易和資產管理更簡單。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
-  - "category/ai_ml"
+  - "category/開發工具"
   - "lang/other"
   - org
   - "topic/agents"
@@ -36,7 +40,7 @@ tags:
 aliases:
   - "binance-skills-hub"
   - "binance/binance-skills-hub"
-  - "提供 AI agent 原生接入加密貨幣的技能市場，讓用戶能夠透過自然語言進行交易和監控。"
+  - "提供 AI agent 原生接入加密貨幣的技能市場，讓交易和資產管理更簡單。"
 ---
 
 # binance-skills-hub
@@ -46,84 +50,87 @@ aliases:
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供 AI agent 原生接入加密貨幣的技能市場，讓用戶能夠透過自然語言進行交易和監控。
+> 提供 AI agent 原生接入加密貨幣的技能市場，讓交易和資產管理更簡單。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (55 stars/day)
-> **適合** 希望利用 AI 自動化加密貨幣交易的開發者和投資者。
-> **一句話重點** 這個專案展示了如何利用 AI 技術簡化加密貨幣交易的操作流程。
+> **授權** 未標註授權 (風險較高)
+> **適合** 希望將 AI agent 整合到加密貨幣交易流程中的開發者和金融專業人士。
+> **一句話重點** 這個專案展示了如何將 AI agent 與加密貨幣交易無縫結合，為開發者提供了強大的工具。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個開放的技能市場，讓 AI agent 能夠原生接入加密貨幣。
+> 提供 AI agent 原生接入加密貨幣市場的能力，簡化交易和資產管理流程。
 
 ## 專案簡介
 
-Binance Skills Hub 是一個開放的技能市場，讓 AI agent 能夠以自然語言執行加密貨幣相關操作，包括搜索代幣、執行交易、追蹤錢包和監控信號。這個平台不僅限於 Binance 的產品，而是針對整個加密生態系統設計，任何 agent 和框架都可以輕鬆接入。技術上，它支持 LangChain、CrewAI 等框架，並且每個技能都以獨立的資料夾形式存在，包含結構化的指令和 YAML 前置資料。與其他工具相比，它的獨特之處在於其開放性和靈活性，允許開發者根據需求添加新技能。實際使用中，這個平台的效能取決於用戶的配置和所選的技能，並且適合各種規模的團隊使用。對於希望快速接入加密貨幣的開發者來說，這是一個值得考慮的選擇，但需要注意的是，它並不提供投資建議，使用者需自行評估風險。
+Binance Skills Hub 是一個開放的技能市場，讓 AI agent 能夠透過自然語言直接接入加密貨幣生態系統。用戶可以搜索代幣、執行交易、追蹤錢包、監控信號，並與 DeFi 協議互動。這個平台支援各種框架，無論是 LangChain、CrewAI 還是自家開發的堆疊，配置幾行代碼即可接入。每個技能都以獨立資料夾的形式存在，並包含結構化的指令和範例，方便開發者理解和貢獻。與其他加密工具相比，Skills Hub 的優勢在於其開放性和可擴展性，任何人都可以為其添加新的技能。使用者可以利用這些技能來簡化交易流程，提升效率，尤其是在高頻交易或資產管理的場景中。該專案目前仍在開發中，適合對加密貨幣和 AI 技術有興趣的開發者和團隊。對於小型團隊或個人開發者，這是一個值得探索的工具，但在使用時需謹慎評估風險。
+
+**技術棧**：`Node.js` · `Express` · `YAML`
 
 ## 重點功能
 
-- 自然語言交易 — 用戶可以用自然語言執行交易指令，提升操作便利性。
-- 開放技能市場 — 任何開發者都可以創建和分享技能，促進社群貢獻。
-- 多框架支持 — 兼容 LangChain、CrewAI 等多種開發框架，靈活性高。
-- 結構化技能管理 — 每個技能都有獨立的資料夾和結構化指令，便於管理和擴展。
-- 即時市場監控 — 用戶可以即時查詢市場信號和價格變動，快速做出決策。
+- 自然語言交互 — 用戶可以用自然語言指令進行交易和查詢。
+- 多框架支援 — 兼容 LangChain、CrewAI 等多種開發框架。
+- 技能貢獻機制 — 開發者可以輕鬆添加新技能，擴展功能。
+- 集中與去中心化交易 — 支援對各種加密貨幣的交易操作。
+- 即時市場監控 — 提供即時的市場信號和數據查詢功能。
 
 ## 快速開始
 
-1. Fork 這個倉庫並創建新分支
+1. 克隆專案
 ```bash
-git checkout -b feature/
+git clone https://github.com/binance/binance-skills-hub.git
 ```
-2. 創建新資料夾並添加 SKILL.md 檔案
+2. 進入專案資料夾
 ```bash
-mkdir new_skill && touch new_skill/SKILL.md
+cd binance-skills-hub
 ```
-3. 按照格式填寫 SKILL.md
+3. 安裝依賴項
 ```bash
-echo '---
-title: 
-description: 
-metadata:
-  version: 
-author: 
-license: MIT
----' > new_skill/SKILL.md
+npm install
 ```
-4. 開啟 Pull Request 進行審核
+
+## 程式碼範例
+
 ```bash
-git push origin feature/ && git request-pull origin/main
+# 使用技能查詢代幣價格
+/binance-skills-hub query price --token BTC
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> Binance 作為加密貨幣領域的領導者，推出這個開放平台正好滿足了市場對於 AI 和加密整合的需求。隨著 AI 技術的進步，許多開發者希望能夠利用自然語言進行加密操作，這使得 Skills Hub 的推出時機恰到好處。
+> Binance 作為知名的加密貨幣交易所，其開發團隊擁有豐富的經驗和資源。這個工具解決了過去 AI agent 無法直接接入加密貨幣生態系統的痛點，提供了一個統一的接口來進行各種操作。最近的社交媒體討論和開源社群的關注也推動了其知名度。隨著加密市場的發展，對於自動化交易和資產管理的需求越來越高，這使得 Skills Hub 的價值更加凸顯。
 
 ## 適合誰使用
 
-**目標受眾**：希望利用 AI 自動化加密貨幣交易的開發者和投資者。
+**目標受眾**：希望將 AI agent 整合到加密貨幣交易流程中的開發者和金融專業人士。
 
 > [!example] 使用場景
-> - 量化交易員用它來自動化交易策略，因為可以透過自然語言快速執行複雜的交易指令，提升交易效率。
-> - DeFi 開發者用它來整合各種 DeFi 協議，因為它支持多種框架，讓開發者能夠輕鬆接入不同的區塊鏈。
-> - 新手投資者用它來監控市場動態，因為可以用簡單的語言查詢價格和市場信號，降低學習門檻。
+> - 量化交易員用它來設置自動交易策略，因為可以快速執行多種交易指令，提升交易效率。
+> - 區塊鏈開發者用它來集成 DeFi 協議，因為只需幾行配置即可讓 AI agent 進行資產管理。
+> - 金融分析師用它來監控市場信號，因為可以透過自然語言查詢即時數據，快速做出決策。
+
+## 架構分析
+
+該專案採用前後端分離的架構，使用 Node.js 作為後端伺服器，處理用戶請求並與加密貨幣 API 交互。用戶輸入 → 處理 → 輸出，通過自然語言解析用戶指令並執行相應的操作。專案目錄結構清晰，每個技能都有獨立的資料夾，並包含 SKILL.md 文件，方便開發者理解和貢獻。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開放性高，任何開發者都可以貢獻技能。
-> - 支持多種框架，靈活性強。
-> - 自然語言操作降低了使用門檻。
+> - 開放性強，任何人都可以為其添加新技能。
+> - 支援多種加密貨幣和 DeFi 協議，靈活性高。
+> - 自然語言處理能力提升了用戶體驗，降低了使用門檻。
 
 > [!danger] 缺點
-> - 不提供直接的投資建議，使用者需自行判斷。
-> - 功能可能因地區而異，限制使用範圍。
-> - 需要一定的技術背景來創建和管理技能。
+> - 功能仍在開發中，穩定性和完整性有待提升。
+> - 需要一定的技術背景才能進行有效的配置和使用。
+> - 市場風險高，使用者需自行承擔交易風險。
 
 > [!warning] 注意事項
-> - 不提供投資建議，使用者需自行評估風險。
-> - 功能可能因地區或用戶配置而異。
-> - 需要一定的技術背景來創建和管理技能。
+> - 目前僅支援特定的加密貨幣和 DeFi 協議。
+> - 需要對加密市場有基本的了解才能有效使用。
+> - 仍在開發中，功能和 API 可能會變動。
 
 ## 技術細節
 
@@ -205,9 +212,9 @@ git push origin feature/ && git request-pull origin/main
 
 ## 延伸閱讀
 
-相關概念：[[Agent 框架]] · [[自然語言處理]] · [[DeFi]]
+相關概念：[[自動化]] · [[區塊鏈]] · [[AI agent]]
 
-相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]]
+相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[duoan--TorchCode|duoan/TorchCode]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]] · [[helenigtxu--TradingView-Claw|helenigtxu/TradingView-Claw]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]]
 
 [GitHub](https://github.com/binance/binance-skills-hub)
 
@@ -217,7 +224,7 @@ git push origin feature/ && git request-pull origin/main
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "AI/ML" AND file.name != "binance--binance-skills-hub"
+> WHERE category = "開發工具" AND file.name != "binance--binance-skills-hub"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -272,6 +279,14 @@ _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

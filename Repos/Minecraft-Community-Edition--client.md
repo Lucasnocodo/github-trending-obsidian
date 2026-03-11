@@ -17,13 +17,17 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "其他"
+subcategory: "遊戲開發"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "提供一個開源的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。"
+use_case: "提供一個開放的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/其他"
@@ -32,7 +36,7 @@ tags:
 aliases:
   - "client"
   - "Minecraft-Community-Edition/client"
-  - "提供一個開源的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。"
+  - "提供一個開放的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。"
 ---
 
 # client
@@ -42,57 +46,58 @@ aliases:
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供一個開源的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。
+> 提供一個開放的 Minecraft 客戶端，讓玩家能夠自訂和擴展遊戲體驗。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (111 stars/day)
-> **適合** 對 Minecraft 有熱情並希望參與開源開發的遊戲開發者。
-> **一句話重點** 這個專案的開源性和社群貢獻模式讓它在 Minecraft 的開發生態中有了獨特的定位。
+> **授權** 未標註授權 (風險較高)
+> **適合** 希望自訂 Minecraft 客戶端功能的開發者和玩家。
+> **一句話重點** 這個專案的開放性和社群驅動特性使其成為 Minecraft 開發者探索自訂功能的良好平台。
 
 ## 專案簡介
 
-這個專案的核心在於建立一個開源的 Minecraft 客戶端，讓使用者能夠自由修改和擴展遊戲功能。專案目前仍在早期階段，尚未完成整個產品，但已經從其他開源專案（如 LCEMP 和 smartcmd 的 fork）獲得了一些代碼支持。它使用多種語言開發，包括 C++ 和 Python，並且有著多樣的技術棧，這意味著開發者可以根據自己的需求選擇適合的語言進行擴展。與其他 Minecraft 客戶端相比，這個專案強調社群貢獻和開放性，鼓勵開發者提交自己的代碼，而不是依賴 AI 生成的實現。雖然目前功能尚不完整，但這個專案的潛力在於它的可擴展性和社群驅動的開發模式。適合對 Minecraft 有熱情的開發者，尤其是那些想要參與開源項目的使用者。考慮到其早期階段，建議對於尋求穩定性和完整功能的使用者暫時觀望。
+這個專案是一個早期階段的 Minecraft 客戶端，旨在讓玩家能夠自訂和擴展遊戲功能。它的核心機制是透過 C++ 和其他語言來實現遊戲的基本功能，並允許開發者在此基礎上進行修改和擴展。專案中使用了多種語言，如 C++、Python 和 HTML，並且有明確的貢獻規則以確保代碼的質量和一致性。與其他 Minecraft 客戶端相比，它強調了社群貢獻和開放性，並且不接受完全由 AI 生成的代碼。這個專案目前仍在開發中，尚未達到穩定版本，適合對 Minecraft 有開發需求的玩家和開發者。對於小型團隊或個人開發者來說，這是一個值得探索的選擇，但需要注意其不成熟的狀態。建議在需要高度自訂的情況下使用，而不適合尋求穩定和完整功能的用戶。
 
-**技術棧**：`C++` · `Python` · `HTML` · `CSS`
+**技術棧**：`C++` · `Python` · `HTML`
 
 ## 重點功能
 
-- 開源客戶端 — 提供自由修改和擴展的能力，讓玩家能夠自訂遊戲體驗。
-- 多語言支持 — 使用 C++, Python 等多種語言開發，方便不同背景的開發者參與。
-- 社群貢獻 — 鼓勵開發者提交自己的代碼，並對 AI 生成的實現有明確限制，強調人為創造性。
-- 早期開發 — 雖然尚未完成，但提供了基礎架構供開發者進行擴展。
-- 依賴其他開源專案 — 從 LCEMP 和 smartcmd 的 fork 獲得代碼支持，促進了社群合作。
+- 多語言支持 — 使用 C++、Python、HTML 等多種語言開發，方便不同背景的開發者參與。
+- 開放貢獻規則 — 明確規範貢獻者的代碼提交方式，確保代碼質量。
+- 社群驅動 — 鼓勵社群成員提交改進建議和代碼，增強專案的活力。
+- 早期開發版本 — 提供基礎功能，讓開發者可以在此基礎上進行擴展。
+- 自訂擴展性 — 允許玩家和開發者根據需求修改和擴展遊戲功能。
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者背景顯示出對開源社群的重視，並且專案切中玩家對自訂和擴展遊戲的需求。由於 Minecraft 的持續流行，這樣的開源替代方案在玩家中引起了興趣。專案的推出時間正好符合玩家對新內容的渴望，因此吸引了不少關注。
+> 專案的主要貢獻者 LazyByteDev 和其他人都在開源社群中有一定的影響力，過去參與過多個知名專案。這個工具解決了 Minecraft 玩家對於自訂客戶端的需求，特別是在現有客戶端無法滿足特定需求的情況下。最近的社群討論和推廣活動可能促進了其曝光度。隨著開源文化的興起，越來越多的玩家希望能夠自由修改和擴展遊戲內容，這使得此專案的需求增加。
 
 ## 適合誰使用
 
-**目標受眾**：對 Minecraft 有熱情並希望參與開源開發的遊戲開發者。
+**目標受眾**：希望自訂 Minecraft 客戶端功能的開發者和玩家。
 
 > [!example] 使用場景
-> - 遊戲開發者用它來創建自訂的 Minecraft 模組，因為開源的特性讓他們能夠自由修改和擴展功能。
-> - Minecraft 玩家用它來測試新的遊戲功能，因為這個客戶端允許他們在不影響原版遊戲的情況下進行實驗。
-> - 社群貢獻者用它來提交自己的代碼和功能，因為專案鼓勵開發者參與並分享自己的實現。
+> - 遊戲開發者用它來開發自訂的 Minecraft 插件，因為它提供了靈活的架構來擴展遊戲功能。
+> - 玩家用它來測試新的遊戲模式，因為這個客戶端允許他們快速修改遊戲設定。
+> - 社群貢獻者用它來提交代碼改進，因為專案鼓勵開放的貢獻規則，提升了參與感。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開源特性讓玩家和開發者能夠自由修改和擴展。
-> - 社群驅動的開發模式鼓勵更多的貢獻和創新。
-> - 多語言支持使得不同背景的開發者都能參與。
+> - 開放性強，鼓勵社群貢獻和參與。
+> - 多語言支持，吸引不同技術背景的開發者。
+> - 提供靈活的擴展性，適合自訂需求的玩家。
 
 > [!danger] 缺點
 > - 功能尚不完整，可能無法滿足所有玩家需求。
-> - 缺乏詳細的文檔和使用指導，對新手不友好。
-> - 早期開發可能導致不穩定的使用體驗。
+> - 不接受 AI 生成的代碼，限制了某些開發者的貢獻方式。
+> - 缺乏穩定版本，可能導致使用上的不便。
 
 > [!warning] 注意事項
-> - 專案仍在早期階段，功能不完整。
-> - 目前缺乏詳細的安裝和使用說明。
-> - 對於 AI 生成的代碼有明確限制，可能影響某些開發者的貢獻方式。
+> - 目前仍在早期開發階段，功能不完整。
+> - 不接受完全由 AI 生成的代碼，需遵循貢獻規則。
+> - 缺乏穩定版本，可能不適合尋求穩定性的用戶。
 
 ## 技術細節
 
@@ -135,7 +140,7 @@ aliases:
 
 ## 延伸閱讀
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[viperrcrypto--Siftly|viperrcrypto/Siftly]]
 
 [GitHub](https://github.com/Minecraft-Community-Edition/client)
 
@@ -200,6 +205,14 @@ _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

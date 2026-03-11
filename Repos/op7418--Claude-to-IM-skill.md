@@ -7,8 +7,8 @@ language: TypeScript
 license: MIT
 description: "Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark."
 homepage: ""
-stars: 830
-stars_per_day: 166
+stars: 834
+stars_per_day: 167
 forks: 106
 open_issues: 35
 created: 2026-03-05
@@ -17,13 +17,17 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
+subcategory: "即時通訊工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "讓你可以從 Telegram、Discord 或 Feishu/Lark 與 AI 編程代理進行對話。"
+use_case: "讓你在 Telegram、Discord、Feishu/Lark 等即時通訊平台上與 AI 編程代理對話。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/開發工具"
@@ -37,96 +41,102 @@ tags:
 aliases:
   - "Claude-to-IM-skill"
   - "op7418/Claude-to-IM-skill"
-  - "讓你可以從 Telegram、Discord 或 Feishu/Lark 與 AI 編程代理進行對話。"
+  - "讓你在 Telegram、Discord、Feishu/Lark 等即時通訊平台上與 AI 編程代理對話。"
 ---
 
 # Claude-to-IM-skill
 
-**830** stars · **166** stars/天 · 建立 5 天前 · TypeScript · MIT
+**834** stars · **167** stars/天 · 建立 5 天前 · TypeScript · MIT
 
 `easy-install`
 
 > [!summary] 一句話摘要
-> 讓你可以從 Telegram、Discord 或 Feishu/Lark 與 AI 編程代理進行對話。
+> 讓你在 Telegram、Discord、Feishu/Lark 等即時通訊平台上與 AI 編程代理對話。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (166 stars/day)
-> **適合** 希望在即時通訊平台上與 AI 編程助手互動的開發者。
-> **一句話重點** 這個專案讓開發者能夠在即時通訊平台上輕鬆使用 AI 編程助手，提升工作效率。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (167 stars/day)
+> **授權** MIT (商業友好)
+> **適合** 希望在即時通訊平台上與 AI 編程助手互動的開發者和技術人員。
+> **一句話重點** 這個專案讓即時通訊平台與 AI 編程助手的整合變得前所未有的簡單和高效。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個簡單的方式，讓開發者可以在即時通訊平台上與 AI 編程助手進行互動，無需編寫任何代碼。
+> 這個專案提供了一個無需編碼的即時通訊平台與 AI 編程助手的橋接解決方案。
 
 ## 專案簡介
 
-這個專案透過一個背景守護進程，將 IM 平台的訊息轉發給 Claude Code 或 Codex，並將回應發送回聊天中。用戶只需安裝並執行 `/claude-to-im setup`，即可輕鬆設置與 AI 的互動。它支援 Telegram、Discord、Feishu/Lark 和 QQ 四種 IM 平台，並提供即時預覽功能，讓用戶能看到 Claude 的回應過程。與其他工具相比，這個專案的獨特之處在於它的互動設置向導和權限控制，確保用戶能夠安全地使用 AI 工具。使用者可以在對話中直接授權 Claude 使用工具，這在其他類似工具中並不常見。這個專案的使用效果良好，但需要 Node.js 20 以上的環境，並且需要安裝 Claude Code 或 Codex CLI。整體來說，這是一個穩定的專案，適合中小型團隊使用，特別是那些希望在 IM 平台上進行編程的開發者。建議在需要快速集成 AI 編程助手時使用，但如果團隊需要更複雜的 GUI 介面，則可能需要考慮其他解決方案。
+這個專案透過一個背景守護進程，將即時通訊機器人與 Claude Code 或 Codex 會話連接起來，實現即時編程對話。用戶的訊息會被轉發給 AI 編程代理，並將回應（包括工具使用、權限請求、即時預覽）發回聊天界面。它使用 Node.js 作為後端，並支持 Telegram、Discord、Feishu/Lark 和 QQ 四個平台，提供互動式設置和權限控制功能。與其他類似工具相比，這個專案的特點在於其零代碼安裝和即時回應的流暢性，特別適合需要快速反饋的開發者。使用者可以在守護進程重啟後持續進行對話，並且所有的密鑰都會安全存儲。這個專案目前處於穩定階段，適合中小型團隊使用，特別是對於需要快速集成 AI 編程助手的開發環境。建議在需要即時互動的編程場景中使用，但不建議在大型專案中使用，因為可能會面臨性能瓶頸。
 
 **技術棧**：`Node.js 20` · `TypeScript` · `Shell` · `PowerShell` · `JavaScript`
 
 ## 重點功能
 
-- 四個 IM 平台支援 — 同時支援 Telegram、Discord、Feishu/Lark 和 QQ。
-- 互動式設置 — 提供逐步指導的向導收集 API 令牌。
-- 權限控制 — 工具調用需要用戶明確批准，增強安全性。
-- 即時預覽 — 在 Telegram 和 Discord 中可以看到 Claude 的回應過程。
-- 會話持久性 — 即使守護進程重啟，對話仍然可以保留。
+- 四個即時通訊平台支持 — 同時支持 Telegram、Discord、Feishu/Lark 和 QQ。
+- 互動式設置 — 提供引導式向導收集 API 令牌，簡化安裝過程。
+- 權限控制 — 透過內聯按鈕或文本命令要求明確的工具調用批准。
+- 即時預覽 — 在 Telegram 和 Discord 中，看到 Claude 的回應隨著輸入逐字顯示。
+- 會話持久性 — 守護進程重啟後，對話不會丟失。
+- 密鑰保護 — 令牌以 `chmod 600` 存儲，並在所有日誌中自動隱藏。
+- 零代碼要求 — 安裝後只需運行 `/claude-to-im setup` 即可。
 
 ## 快速開始
 
-1. 設置技能
+1. 使用 npx 安裝技能
+```bash
+npx skills add op7418/Claude-to-IM-skill
+```
+2. 克隆到個人技能目錄
+```bash
+git clone https://github.com/op7418/Claude-to-IM-skill.git ~/.claude/skills/claude-to-im
+```
+3. 運行設置命令
 ```bash
 /claude-to-im setup
-```
-2. 啟動守護進程
-```bash
-/claude-to-im start
-```
-3. 開始聊天
-```bash
-在 IM 應用中發送消息給機器人
 ```
 
 ## 程式碼範例
 
 ```bash
+# 在 Telegram 中與 AI 編程助手互動
 /claude-to-im setup
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案由經驗豐富的開發者 op7418 和 yoka1234 提供，切中開發者在即時通訊平台上與 AI 互動的需求。隨著 AI 編程助手的普及，開發者對於如何在日常工作中更方便地使用這些工具的需求日益增加。這個專案的推出正好滿足了這一需求，並且提供了簡單的安裝和設置流程。
+> 這個專案的作者 op7418 之前開發了 CodePilot，一個功能豐富的桌面應用，這次的專案是從中提取出來的輕量級 CLI 版本。它解決了即時通訊平台與 AI 編程助手之間的橋接問題，讓開發者可以在熟悉的環境中進行編程。最近的社群討論和需求增加，促使這個工具的推出，特別是在遠端工作和即時協作的背景下。
 
 ## 適合誰使用
 
-**目標受眾**：希望在即時通訊平台上與 AI 編程助手互動的開發者。
+**目標受眾**：希望在即時通訊平台上與 AI 編程助手互動的開發者和技術人員。
 
 > [!example] 使用場景
-> - 後端工程師用它來在 Discord 上與 AI 編程助手互動，因為這樣可以快速獲得代碼建議，提升開發效率。
-> - 前端開發者用它來在 Telegram 中請求即時的代碼片段，因為這樣可以在不打開 IDE 的情況下快速獲得幫助。
-> - DevOps 工程師用它來在 Feishu 中監控 AI 編程助手的狀態，因為這樣可以隨時掌握工具的運行情況，避免中斷工作流。
+> - 後端工程師用它來在 Discord 上與 AI 編程助手互動，因為這樣可以即時獲得代碼建議，提升開發效率。
+> - 產品經理用它來在 Telegram 中詢問技術問題，因為可以快速獲得準確的技術解答，無需等待開發人員回覆。
+> - 自由開發者用它來在 Feishu 中進行代碼審查，因為可以即時獲得 AI 的反饋，節省了手動檢查的時間。
 
 ## 架構分析
 
-這是一個基於 CLI 的應用，使用 Node.js 作為核心架構。用戶輸入通過 IM 平台的 API 進入背景守護進程，然後轉發給 Claude Agent SDK 或 Codex SDK，最後將回應發送回用戶。專案目錄結構中，關鍵檔案包括 `setup.js` 和 `daemon.js`，這些檔案負責設置和管理守護進程的運行。
+這是一個單體架構的 CLI 工具，核心資料流為用戶輸入 → 背景守護進程處理 → AI 編程代理回應。使用 Node.js 作為核心技術，並透過 IM 平台的 API 與用戶進行交互。專案目錄結構中，主要的執行檔案為守護進程和設置腳本，確保用戶能夠輕鬆安裝和配置。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單的安裝和設置流程，適合新手使用。
-> - 支援多種即時通訊平台，靈活性高。
-> - 提供即時回應預覽，增強用戶體驗。
+> - 支持多個即時通訊平台，靈活性高。
+> - 安裝過程簡單，無需編碼知識。
+> - 即時回應功能提升了開發效率。
+> - 會話持久性確保了用戶體驗的連貫性。
 
 > [!danger] 缺點
-> - 需要額外的 CLI 工具安裝，對於不熟悉的用戶可能有學習曲線。
-> - 不支援 Windows，限制了部分用戶的使用。
-> - 對於大型團隊，可能需要額外的管理和監控工具。
+> - 目前僅支持特定版本的 Node.js，限制了使用者範圍。
+> - 需要額外安裝 Claude Code 或 Codex CLI，增加了配置複雜度。
+> - 在高流量情況下可能導致性能問題。
+> - 不支持 Windows 環境，限制了使用者群體。
 
 > [!warning] 注意事項
-> - 需要 Node.js 20 以上的環境。
-> - 需要安裝 Claude Code CLI 或 Codex CLI。
-> - 不支援 Windows 平台的直接安裝。
-> - 對於大型團隊，可能需要額外的管理和監控工具。
+> - 僅支持 Node.js 20 以上版本。
+> - 需要安裝 Claude Code CLI 或 Codex CLI 進行身份驗證。
+> - 不支持 Windows 平台的原生安裝。
+> - 可能在高流量情況下面臨性能瓶頸。
 
 ## 技術細節
 
@@ -274,9 +284,9 @@ aliases:
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[API 設計]] · [[自動化測試]]
+相關概念：[[即時通訊]] · [[CLI/TUI]] · [[自動化]]
 
-相關專案：[[kamranahmedse--claude-statusline|kamranahmedse/claude-statusline]] · [[runesleo--claude-code-workflow|runesleo/claude-code-workflow]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[kamranahmedse--claude-statusline|kamranahmedse/claude-statusline]] · [[runesleo--claude-code-workflow|runesleo/claude-code-workflow]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]]
 
 [GitHub](https://github.com/op7418/Claude-to-IM-skill)
 
@@ -341,7 +351,16 @@ _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，833 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，823 stars

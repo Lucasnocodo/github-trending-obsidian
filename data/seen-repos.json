@@ -78,38 +78,38 @@
   },
   "op7418/Claude-to-IM-skill": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 823,
-    "stars_last": 823
+    "stars_last": 833
   },
   "Flowseal/tg-ws-proxy": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 768,
-    "stars_last": 772
+    "stars_last": 786
   },
   "tanishqkumar/ssd": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 748,
-    "stars_last": 748
+    "stars_last": 754
   },
   "imbue-bit/OpenClaw-PwnKit": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 692,
-    "stars_last": 693
+    "stars_last": 675
   },
   "hicode002/qualcomm_gbl_exploit_poc": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 675,
-    "stars_last": 675
+    "stars_last": 680
   },
   "ParthJadhav/app-store-screenshots": {
     "first_seen": "2026-03-10",
@@ -120,10 +120,10 @@
   },
   "jshachm/pi-rs": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 616,
-    "stars_last": 616
+    "stars_last": 592
   },
   "inspatio/worldfm": {
     "first_seen": "2026-03-10",
@@ -134,24 +134,24 @@
   },
   "vulhunt-re/vulhunt": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 537,
-    "stars_last": 537
+    "stars_last": 550
   },
   "ahmadawais/chartli": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 532,
-    "stars_last": 532
+    "stars_last": 540
   },
   "tanweai/pua": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 517,
-    "stars_last": 517
+    "stars_last": 542
   },
   "TinyAGI/fractals": {
     "first_seen": "2026-03-10",
@@ -190,10 +190,10 @@
   },
   "knowsuchagency/mcp2cli": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-10",
-    "times_seen": 2,
+    "last_seen": "2026-03-11",
+    "times_seen": 3,
     "stars_first": 460,
-    "stars_last": 463
+    "stars_last": 519
   },
   "trevin-creator/autoresearch-mlx": {
     "first_seen": "2026-03-10",

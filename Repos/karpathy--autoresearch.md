@@ -7,9 +7,9 @@ language: Python
 license: N/A
 description: "AI agents running research on single-GPU nanochat training automatically"
 homepage: ""
-stars: 22679
-stars_per_day: 5670
-forks: 2870
+stars: 22857
+stars_per_day: 5714
+forks: 2910
 open_issues: 69
 created: 2026-03-06
 pushed_at: 2026-03-09
@@ -17,13 +17,17 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "AI/ML"
+subcategory: "LLM 訓練"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "讓 AI 自動進行 LLM 訓練實驗，你只需早上查看結果。"
+use_case: "讓 AI 自動進行單 GPU 的 nanochat 訓練實驗，早上醒來就能看到結果。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/ai_ml"
@@ -32,43 +36,44 @@ tags:
 aliases:
   - "autoresearch"
   - "karpathy/autoresearch"
-  - "讓 AI 自動進行 LLM 訓練實驗，你只需早上查看結果。"
+  - "讓 AI 自動進行單 GPU 的 nanochat 訓練實驗，早上醒來就能看到結果。"
 ---
 
 # autoresearch
 
-**22.6k** stars · **5.7k** stars/天 · 建立 4 天前 · Python · 未標註授權
+**22.9k** stars · **5.7k** stars/天 · 建立 4 天前 · Python · 未標註授權
 
 `easy-install`
 
 > [!summary] 一句話摘要
-> 讓 AI 自動進行 LLM 訓練實驗，你只需早上查看結果。
+> 讓 AI 自動進行單 GPU 的 nanochat 訓練實驗，早上醒來就能看到結果。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (5.7k stars/day)
-> **適合** 希望在單一 NVIDIA GPU 上自動化 LLM 訓練的研究者和開發者。
-> **一句話重點** 這個專案展示了如何利用 AI agent 自動化 LLM 訓練，讓研究者能夠專注於結果而非過程。
+> **授權** 未標註授權 (風險較高)
+> **適合** 希望在單 GPU 環境下自動化 AI 訓練實驗的研究者和開發者。
+> **一句話重點** 這個專案展示了如何利用 AI agent 自動化研究過程，顯著提高實驗效率。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於讓 AI agent 自動修改訓練代碼並進行實驗，實現完全自動化的研究流程。
+> 這個專案的創新在於讓 AI agent 自動化調整訓練參數，實現無人值守的研究過程。
 
 ## 專案簡介
 
-這個專案讓 AI agent 在單一 GPU 上自動進行 LLM 訓練實驗，過程中會不斷修改訓練代碼，並在每次訓練後檢查結果。具體來說，AI agent 每 5 分鐘進行一次訓練，並根據驗證指標（val_bpb）來決定是否保留或丟棄當前模型。技術上，它使用了 PyTorch 和 Muon + AdamW 優化器，並且只需一個 Python 檔案（train.py）來進行所有修改，這使得範圍可控且容易追蹤變更。與其他自動化訓練工具相比，這個專案的獨特之處在於它的固定時間預算設計，讓不同的實驗結果可以直接比較。實際使用中，這種方法可以在一夜之間進行約 100 次實驗，但目前僅支援 NVIDIA GPU，對於其他硬體的支援尚未完善。這個專案仍在發展中，適合對 LLM 訓練有興趣的研究團隊，尤其是小型團隊或獨立開發者。建議在需要快速迭代和實驗的情況下使用，但如果需要更複雜的配置或多 GPU 支援則不適合。
+這個專案的核心在於讓 AI agent 自動化地進行 LLM 訓練，具體流程是：AI agent 在固定的 5 分鐘內修改訓練代碼，進行訓練，然後評估結果並決定是否保留改動。技術上，它使用了 PyTorch 框架，並且訓練過程中依賴於 val_bpb 作為評估指標，這是一個越低越好的指標。與其他工具相比，這個專案的獨特之處在於它的單一文件修改設計，讓 AI agent 只需專注於 train.py，避免了複雜的配置和多文件管理。使用者可以在一個 NVIDIA GPU 上運行，並且設計上支持快速迭代，理論上可以在一夜之間完成約 100 次實驗。這個專案目前處於 beta 階段，適合對 AI 研究感興趣的開發者和研究團隊。建議對於需要快速實驗和迭代的情境使用，但如果需要更高的可擴展性或多 GPU 支持，則不太適合。 
 
-**技術棧**：`Python 3.10` · `PyTorch`
+**技術棧**：`Python 3.10+` · `PyTorch`
 
 ## 重點功能
 
-- 自動化訓練 — AI agent 每 5 分鐘自動修改訓練代碼並進行訓練。
-- 固定時間預算 — 每次訓練固定 5 分鐘，方便比較不同實驗結果。
-- 簡化設計 — 只需一個 Python 檔案（train.py）進行所有修改，降低複雜度。
-- 單一 GPU 支援 — 專為單一 NVIDIA GPU 設計，無需複雜的分散式訓練。
-- 驗證指標 — 使用 val_bpb 作為評估標準，確保不同架構的公平比較。
+- 自動化實驗 — AI agent 在固定 5 分鐘內修改訓練代碼並進行訓練。
+- 單一文件修改 — agent 只需編輯 train.py，減少了複雜性。
+- 固定時間預算 — 每次訓練都在相同的時間內進行，便於比較結果。
+- 簡化的設置 — 只需一個 NVIDIA GPU 和基本的 Python 環境即可運行。
+- 基於 val_bpb 評估 — 使用低值作為模型性能的指標，便於比較不同模型。
 
 ## 快速開始
 
-1. 安裝 uv 專案管理工具
+1. 安裝 uv 專案管理器
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
@@ -76,57 +81,56 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```bash
 uv sync
 ```
-3. 下載數據並訓練分詞器
+3. 下載數據並訓練 tokenizer
 ```bash
 uv run prepare.py
 ```
-4. 手動運行單次訓練實驗
+4. 手動運行一次訓練實驗
 ```bash
 uv run train.py
 ```
 
 ## 程式碼範例
 
-```python
-# 開始自動化實驗
-Hi have a look at program.md and let's kick off a new experiment! let's do the setup first.
+```bash
+uv run train.py
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> Karpathy 是知名的 AI 研究者，這個專案切中自動化研究的需求，尤其是在 LLM 領域。隨著 AI 研究的迅速發展，對於能夠自動化實驗的工具需求日益增加。這個專案的推出正好在這個時候，讓許多研究者和開發者感受到它的潛力。
+> (a) 作者 Karpathy 是知名的 AI 研究者，曾參與多個重要專案，這使得他的專案受到高度關注。 (b) 這個工具解決了傳統 AI 研究中人力干預過多的問題，通過自動化實驗過程提高效率。 (c) 最近的推文引發了對這個專案的討論，讓更多人關注其潛力。 (d) 目前的技術生態使得單 GPU 訓練變得更加可行，並且對於小型實驗室來說，這是一個理想的選擇。
 
 ## 適合誰使用
 
-**目標受眾**：希望在單一 NVIDIA GPU 上自動化 LLM 訓練的研究者和開發者。
+**目標受眾**：希望在單 GPU 環境下自動化 AI 訓練實驗的研究者和開發者。
 
 > [!example] 使用場景
-> - AI 研究者用它來自動化 LLM 訓練實驗，因為這樣可以在一夜之間進行約 100 次實驗，節省大量時間。
-> - 獨立開發者用它來快速迭代模型架構，因為只需修改一個檔案，且訓練時間固定，易於比較。
-> - 小型團隊用它來探索最佳訓練參數，因為不需要複雜的配置和多 GPU 支援，降低了入門門檻。
+> - AI 研究者用它來自動化 LLM 訓練實驗，因為這樣可以在一夜之間完成約 100 次實驗，顯著提高研究效率。
+> - 開發者用它來快速迭代模型架構，因為只需修改一個文件 train.py，簡化了實驗流程。
+> - 學生用它來學習 AI 訓練過程，因為提供了簡單的環境設置和清晰的指令，降低了入門門檻。
 
 ## 架構分析
 
-這是一個簡單的單體架構，主要由三個檔案組成：prepare.py（數據準備和工具）、train.py（模型和訓練邏輯，供 agent 修改）、program.md（agent 指令）。用戶輸入 → agent 修改 train.py → 執行訓練 → 輸出實驗結果。
+這是一個單體架構專案，核心資料流為：用戶輸入 → AI agent 修改 train.py → 訓練模型 → 輸出結果。專案中關鍵的技術決策是將訓練過程簡化為單一文件的修改，這樣可以讓 AI agent 更專注於模型的優化。專案目錄結構簡單，主要包含 prepare.py、train.py 和 program.md 三個檔案。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡化的單一檔案修改設計，降低了使用門檻。
-> - 固定的訓練時間預算使得實驗結果可比較。
-> - 自動化的實驗流程節省了大量時間，特別適合夜間運行。
+> - 簡化的實驗流程，讓研究者能專注於模型優化。
+> - 高效的自動化實驗，可以在短時間內進行大量測試。
+> - 易於設置，適合小型團隊或個人研究者使用。
 
 > [!danger] 缺點
-> - 僅限於 NVIDIA GPU，對於其他硬體不友好。
-> - 缺乏對多 GPU 或分散式訓練的支援，限制了擴展性。
-> - 固定的訓練時間可能不適合所有使用場景，影響結果的可比性。
+> - 僅支援單一 GPU，限制了擴展性。
+> - 固定的訓練時間可能不適合所有的研究需求。
+> - 目前處於 beta 階段，穩定性和功能可能不夠成熟。
 
 > [!warning] 注意事項
-> - 僅支援 NVIDIA GPU，尚未支援其他硬體平台。
-> - 訓練時間固定為 5 分鐘，無法調整以適應不同需求。
-> - 不支援分散式訓練，僅適合單一 GPU 環境。
-> - 目前仍在開發中，可能存在不穩定性和未來 API 變更。
+> - 僅支援單一 NVIDIA GPU，無法進行分布式訓練。
+> - 訓練時間固定為 5 分鐘，可能不適合所有模型和設置。
+> - 不支援 CPU 或其他平台，限制了使用範圍。
+> - 目前處於 beta 階段，API 和功能可能會變動。
 
 ## 技術細節
 
@@ -220,9 +224,9 @@ Hi have a look at program.md and let's kick off a new experiment! let's do the s
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[機器學習]] · [[深度學習]]
+相關概念：[[自動化]] · [[機器學習]] · [[深度學習]]
 
-相關專案：[[trevin-creator--autoresearch-mlx|trevin-creator/autoresearch-mlx]] · [[karpathy--agenthub|karpathy/agenthub]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]]
+相關專案：[[trevin-creator--autoresearch-mlx|trevin-creator/autoresearch-mlx]] · [[karpathy--agenthub|karpathy/agenthub]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[duoan--TorchCode|duoan/TorchCode]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[helenigtxu--TradingView-Claw|helenigtxu/TradingView-Claw]] · [[inspatio--worldfm|inspatio/worldfm]] · [[tanishqkumar--ssd|tanishqkumar/ssd]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[tanweai--pua|tanweai/pua]]
 
 [GitHub](https://github.com/karpathy/autoresearch)
 
@@ -287,6 +291,14 @@ _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

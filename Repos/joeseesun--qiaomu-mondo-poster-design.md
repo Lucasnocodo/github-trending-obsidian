@@ -7,8 +7,8 @@ language: Python
 license: MIT
 description: "一句话生成大师级海报、书籍封面、专辑封面和各类设计作品。无需懂PS、配色或艺术史，AI自动选择最佳风格（基于20位传奇海报设计师）。支持电影海报、读书笔记、公众号封面、小红书配图等。默认9:16竖版，完美适配社交媒体。包含AI提示词优化、风格对比、图生图转换功能。触发词：\"Mondo风格\"、\"书籍封"
 homepage: ""
-stars: 360
-stars_per_day: 180
+stars: 363
+stars_per_day: 182
 forks: 30
 open_issues: 2
 created: 2026-03-08
@@ -17,13 +17,17 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "其他"
+subcategory: "設計工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "一句话生成大师级海报、书籍封面、专辑封面和各类设计作品。"
+use_case: "讓任何人都能用一句話生成專業級的海報和封面設計，無需設計背景。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/其他"
@@ -32,39 +36,40 @@ tags:
 aliases:
   - "qiaomu-mondo-poster-design"
   - "joeseesun/qiaomu-mondo-poster-design"
-  - "一句话生成大师级海报、书籍封面、专辑封面和各类设计作品。"
+  - "讓任何人都能用一句話生成專業級的海報和封面設計，無需設計背景。"
 ---
 
 # qiaomu-mondo-poster-design
 
-**360** stars · **180** stars/天 · 建立 2 天前 · Python · MIT
+**363** stars · **182** stars/天 · 建立 2 天前 · Python · MIT
 
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 一句话生成大师级海报、书籍封面、专辑封面和各类设计作品。
+> 讓任何人都能用一句話生成專業級的海報和封面設計，無需設計背景。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (180 stars/day)
-> **適合** 需要快速生成高質量設計但不懂設計的內容創作者和小型企業主。
-> **一句話重點** 這個工具讓任何人都能輕鬆生成專業設計，打破了設計的門檻。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (182 stars/day)
+> **授權** MIT (商業友好)
+> **適合** 需要快速生成設計但缺乏設計背景的內容創作者和小型企業。
+> **一句話重點** 這個專案讓設計變得如此簡單，任何人都能快速生成專業級的視覺作品。
 
 > [!abstract] 核心創新
-> AI自動選擇最佳藝術風格和配色方案，讓不懂設計的人也能生成專業級作品。
+> AI 自動選擇最佳藝術風格，讓設計變得無門檻。
 
 ## 專案簡介
 
-這個專案讓使用者只需用一句話描述想要的設計，AI便會自動選擇最佳藝術風格並生成專業級的海報或封面。使用者可以透過簡單的指令，例如 `npx skills add joeseesun/qiaomu-mondo-poster-design` 來安裝，並透過如 `为《三体》生成一张书籍封面` 的提示詞來生成設計。這個工具利用了多種藝術風格，從文藝風到幾何未來主義，並自動匹配適合的配色方案和構圖原則。與其他工具相比，這個專案不需要使用者有設計背景，且能夠生成獨特的設計，避免了模板化的千篇一律。使用者的設計需求可以快速滿足，並且支持多種社交媒體平台的比例設定。這個工具目前處於穩定階段，適合任何需要快速生成設計的個人或小型團隊。建議在需要快速創作獨特設計時使用，但如果需要更高的自定義程度，則可能需要考慮其他工具。
+這個專案透過 AI 自動生成海報和封面設計，使用者只需輸入一句話描述，AI 便會選擇最合適的藝術風格並生成設計。它支持多種設計需求，包括電影海報、書籍封面和社交媒體配圖，並自動適配不同平台的比例，如 21:9、3:4 和 1:1。技術上，它利用了深度學習和圖像生成技術，並且基於 20 位知名設計師的風格進行訓練。與其他工具相比，這個專案的最大優勢在於其零門檻的使用體驗，使用者不需要懂得任何設計原則或工具。實際使用中，AI 能夠生成高品質的設計，但對於特定風格的選擇仍然依賴於使用者的描述準確性。這個專案目前處於穩定階段，適合各種規模的團隊，尤其是需要快速生成設計的創作者。建議在需要快速產出設計時使用，但對於需要高度客製化的專案可能不太適合。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 一句話生成設計 — 使用簡單的描述生成專業級海報或封面。
-- 自動選擇藝術風格 — AI根據內容自動匹配最合適的藝術風格。
-- 自動配色方案 — 根據題材自動選擇大師級配色。
-- 多平台比例支持 — 自動適配不同社交媒體和用途的設計比例。
-- 簡單的命令行操作 — 只需幾個指令即可安裝和使用。
+- 一句話生成設計 — 使用者只需描述內容，AI 自動生成設計。
+- 多平台適配 — 支持 21:9、3:4、16:9、9:16 和 1:1 等多種比例。
+- 自動風格選擇 — AI 根據內容自動選擇最合適的藝術風格。
+- 自動配色方案 — AI 根據題材自動匹配大師級配色方案。
+- 自動構圖 — AI 理解設計原則，生成符合專業標準的構圖。
 
 ## 快速開始
 
@@ -74,49 +79,48 @@ npx skills add joeseesun/qiaomu-mondo-poster-design
 ```
 2. 生成設計
 ```bash
-"为《三体》生成一张书籍封面"
+"用 Mondo 风格为《三体》生成一张书籍封面"
 ```
-3. 生成社交媒體封面
+3. 選擇比例
 ```bash
-"为我的公众号文章《人类简史》设计一张 21:9 封面"
+--aspect-ratio 21:9
 ```
 
 ## 程式碼範例
 
-```python
-"用 Mondo 风格为《三体》生成一张书籍封面"
-```
+npx skills add joeseesun/qiaomu-mondo-poster-design
+"为《百年孤独》设计一张海报"
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者是一位熱愛設計的開發者，專注於簡化設計流程，這個工具正好切中那些不懂設計卻需要創作的人的需求。隨著社交媒體內容創作的增加，對於快速生成高質量視覺內容的需求也隨之上升，這使得這個工具在當前環境中受到關注。
+> 作者 joeseesun 在設計領域有豐富的經驗，這個工具解決了許多非專業人士在設計上的痛點，特別是對於不懂設計的使用者。最近在社交媒體上有許多使用者分享他們的生成作品，這引起了廣泛的關注。技術上，隨著 AI 圖像生成技術的成熟，這個工具的可行性大大提高，讓更多人能夠輕鬆創作。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成高質量設計但不懂設計的內容創作者和小型企業主。
+**目標受眾**：需要快速生成設計但缺乏設計背景的內容創作者和小型企業。
 
 > [!example] 使用場景
-> - 內容創作者用它來快速生成社交媒體封面，因為傳統設計工具需要時間學習和操作。
-> - 作家用它來設計書籍封面，因為不懂設計的他們可以透過簡單的描述獲得專業效果。
-> - 活動策劃者用它來創建活動海報，因為這樣可以節省設計時間並獲得獨特的視覺效果。
+> - 內容創作者用它來生成社交媒體封面，因為只需一句話描述就能快速獲得獨特設計，節省了設計時間。
+> - 學生用它來設計讀書筆記海報，因為不需要學習設計軟體，能夠直接生成專業外觀的海報。
+> - 小型企業用它來創建活動海報，因為能夠快速適配不同平台的比例，提升了宣傳效率。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速生成獨特的設計，節省時間。
-> - 不需要設計背景，降低使用門檻。
-> - 支持多種社交媒體平台的設計比例，方便使用。
+> - 使用簡單，只需一句話描述即可生成設計。
+> - 支持多種平台比例，適合不同用途。
+> - 自動選擇藝術風格和配色，提升設計質量。
 
 > [!danger] 缺點
-> - 對於需要高度自定義的設計需求不夠靈活。
-> - 生成的設計可能不符合所有使用者的審美標準。
-> - 依賴於網路連接，無法離線使用。
+> - 生成設計的品質依賴於使用者的描述準確性。
+> - 對於特定風格的需求，可能無法完全滿足。
+> - 不支持高度客製化的設計需求。
 
 > [!warning] 注意事項
-> - 不支援高度自定義的設計需求。
-> - 生成的設計可能不符合所有使用者的審美標準。
-> - 需要穩定的網路連接以使用 AI 功能。
+> - 生成的設計可能不符合所有使用者的期望，需要精確描述。
+> - 對於特定風格的需求，AI 的選擇可能不夠靈活。
+> - 不支持高度客製化的設計需求。
 
 ## 技術細節
 
@@ -384,7 +388,9 @@ npx skills add joeseesun/qiaomu-mondo-poster-design
 
 ## 延伸閱讀
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]]
+相關概念：[[自動化]] · [[設計工具]] · [[AI生成]]
+
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[viperrcrypto--Siftly|viperrcrypto/Siftly]]
 
 [GitHub](https://github.com/joeseesun/qiaomu-mondo-poster-design)
 
@@ -449,6 +455,14 @@ _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

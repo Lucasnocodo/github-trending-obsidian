@@ -7,7 +7,7 @@ language: Python
 license: N/A
 description: "Claude Code+Obsidian，邪修读论文就是快"
 homepage: ""
-stars: 277
+stars: 278
 stars_per_day: 40
 forks: 37
 open_issues: 7
@@ -16,128 +16,113 @@ pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
-category: "資料科學"
+category: "開發工具"
+subcategory: "自動化"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "自動化研究論文的搜索、推薦、分析和整理，讓你輕鬆掌握最新研究動態。"
+use_case: "自動化研究論文的搜尋、推薦和分析，讓你更高效地閱讀學術資料。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
-  - "category/資料科學"
+  - "category/開發工具"
   - "lang/python"
 aliases:
   - "evil-read-arxiv"
   - "juliye2025/evil-read-arxiv"
-  - "自動化研究論文的搜索、推薦、分析和整理，讓你輕鬆掌握最新研究動態。"
+  - "自動化研究論文的搜尋、推薦和分析，讓你更高效地閱讀學術資料。"
 ---
 
 # evil-read-arxiv
 
-**277** stars · **40** stars/天 · 建立 7 天前 · Python · 未標註授權
+**278** stars · **40** stars/天 · 建立 7 天前 · Python · 未標註授權
 
 `個人專案`
 
 > [!summary] 一句話摘要
-> 自動化研究論文的搜索、推薦、分析和整理，讓你輕鬆掌握最新研究動態。
+> 自動化研究論文的搜尋、推薦和分析，讓你更高效地閱讀學術資料。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (40 stars/day)
-> **適合** 需要自動化文獻管理和分析的學術研究人員和團隊。
-> **一句話重點** 這個專案的強大之處在於它將論文推薦和深度分析自動化，讓研究者能更高效地掌握最新的學術動態。
+> **授權** 未標註授權 (風險較高)
+> **適合** 需要自動化文獻管理的研究人員和學術寫作人員。
+> **一句話重點** 這個專案展示了如何利用自動化技術來提升學術研究的效率。
 
 > [!abstract] 核心創新
-> 這個專案通過自動化工具整合了論文推薦和深度分析，提升了學術研究的效率。
+> 這個專案通過自動化工作流，將文獻管理的效率提升到新的水平。
 
 ## 專案簡介
 
-這個專案提供了一套完整的工作流，幫助研究人員自動化論文的搜索和分析。它透過調用 arXiv 和 Semantic Scholar API，每天為用戶推薦高質量的論文，並生成詳細的筆記和關係圖譜。使用者可以透過 `start my day` 指令來獲取每日推薦，系統會根據相關性、新近性、熱門度和質量四個維度進行綜合評分。與其他工具相比，這個專案不僅提供推薦，還能深入分析單篇論文，並自動生成結構化的筆記，包括摘要翻譯、研究背景、方法概述等。使用者需要安裝 Claude Code CLI 和 Python 3.8+，並配置環境變數以便於使用。這個工具對於需要持續追蹤最新研究的學術團隊特別有用，能有效提高文獻回顧的效率。該專案目前處於 beta 階段，適合中小型研究團隊使用。對於不熟悉命令行的用戶，可能需要一些時間來適應配置流程。
+這個專案透過 Claude Code 技能，實現了研究論文的自動化工作流。用戶每天可以獲得來自 arXiv 和 Semantic Scholar 的論文推薦，並自動生成詳細的分析和筆記。它使用 Python 3.8+，並依賴於多個 API 來獲取論文資料，並生成結構化的筆記，包含摘要翻譯、研究背景、方法概述等。與傳統的手動搜索和筆記方式相比，這個工具能夠節省大量時間，並提高研究效率。使用者需要配置環境變數和 Obsidian Vault 路徑，這樣可以無縫整合到日常的研究工作中。該專案適合需要高頻率閱讀和分析文獻的研究人員，特別是在快速變化的領域。這個工具目前處於 beta 階段，功能尚在持續完善中，但對於需要自動化文獻管理的團隊來說，已經相當實用。若你的研究需要經常跟進最新的論文，這個工具會是個不錯的選擇。
 
 **技術棧**：`Python 3.8+` · `Claude Code`
 
 ## 重點功能
 
-- 每日論文推薦 — 自動從 arXiv 和 Semantic Scholar 獲取最新論文，並生成推薦列表。
-- 深度論文分析 — 生成包含摘要翻譯、研究背景、方法概述等的結構化筆記。
-- 圖片提取功能 — 自動從論文中提取高質量圖片，並保存到指定目錄。
-- 筆記搜索功能 — 支持按標題、作者、關鍵詞等進行搜索，並根據相關性排序。
-- 環境變數配置 — 透過環境變數簡化配置過程，提升使用便利性。
+- 每日論文推薦 — 自動從 arXiv 和 Semantic Scholar 獲取最新和熱門論文，並生成推薦列表。
+- 深度論文分析 — 生成結構化筆記，包含研究背景、方法概述、實驗結果等。
+- 圖片提取 — 從論文中提取高質量圖片，並自動保存到筆記目錄。
+- 筆記搜索 — 在已有筆記中按標題、作者、關鍵詞進行搜索，並根據相關性排序。
+- 環境配置簡單 — 只需設置環境變數和配置文件，即可快速上手。
 
 ## 快速開始
 
 1. 克隆專案到 Claude Code skills 目錄
 ```bash
-git clone https://github.com/juliye2025/evil-read-arxiv.git
+cp -r evil-read-arxiv/start-my-day ~/.claude/skills/
 ```
-2. 安裝依賴庫
+2. 設置環境變數
 ```bash
-pip install -r requirements.txt
+export OBSIDIAN_VAULT_PATH="/Users/yourname/Documents/Obsidian Vault"
 ```
-3. 設置環境變數
-```bash
-export OBSIDIAN_VAULT_PATH='/path/to/your/obsidian/vault'
-```
-4. 啟動每日推薦
+3. 啟動每日論文推薦
 ```bash
 start my day
 ```
 
 ## 程式碼範例
 
-start my day
-# 這會自動生成今日推薦筆記並分析前三篇論文。
+python scripts/search_arxiv.py --config "/your/path/research_interests.yaml"
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 專案作者擁有豐富的研究背景，針對學術界對於文獻管理的需求進行了深入分析。隨著研究人員對於自動化工具的需求增加，這個專案能有效解決繁瑣的文獻整理問題。近期學術界對於高效能文獻管理工具的需求上升，使得這個專案在短時間內迅速受到關注。
+> (a) 作者 juliye2025 之前參與過多個開源專案，顯示出其在技術上的專業性。(b) 這個工具解決了學術界在文獻管理上的痛點，特別是對於需要快速獲取和分析大量資料的研究者。(c) 近期在社群媒體上有關於自動化文獻管理的討論，讓這個專案受到關注。(d) 隨著學術研究的數位化進程加速，這類工具的需求變得更加迫切。
 
 ## 適合誰使用
 
-**目標受眾**：需要自動化文獻管理和分析的學術研究人員和團隊。
+**目標受眾**：需要自動化文獻管理的研究人員和學術寫作人員。
 
 > [!example] 使用場景
-> - 研究生用它來每天自動獲取最新的論文推薦，因為這樣可以節省大量手動搜索的時間，專注於研究。
-> - 學術作者用它來深入分析某篇論文，因為自動生成的結構化筆記能幫助他們快速理解研究背景和方法。
-> - 學術團隊用它來整理和管理已有的研究筆記，因為強大的搜索功能能快速找到相關文獻，提升團隊的協作效率。
+> - 研究人員用它來每天自動獲取最新的論文推薦，因為這樣可以節省手動搜索的時間，並確保不錯過重要的研究進展。
+> - 學術寫作人員用它來生成詳細的論文分析筆記，因為這樣可以快速整理思路，提升寫作效率。
+> - 學生用它來查找和分析特定領域的文獻，因為這樣可以更系統地掌握研究現狀，提升學習效果。
 
 ## 架構分析
 
-這是一個基於 CLI 的工具，核心架構為單體應用。用戶輸入 → 論文搜索和分析 → 輸出推薦和筆記。關鍵技術決策包括使用 API 進行論文檢索和分析，並自動生成結構化筆記。專案目錄結構清晰，包含多個技能模組，方便擴展和維護。
-
-## 技術深入分析
-
-> [!note]- 展開深入分析
-> 該專案的核心演算法依賴於 arXiv 和 Semantic Scholar 的 API，通過綜合評分機制來推薦論文。效能方面，系統能在幾秒內完成每日推薦，並生成結構化筆記。設計上，選擇使用 CLI 方式使得工具更靈活，但也增加了使用門檻。與其他文獻管理工具相比，evil-read-arxiv 更加專注於自動化和分析，能有效減少研究人員的手動工作量。
+該專案採用 CLI 工具架構，核心資料流為：用戶輸入 → 論文搜索與分析 → 輸出筆記和推薦列表。關鍵技術決策包括使用 API 獲取論文資料，並生成結構化的筆記。專案目錄結構清晰，包含多個技能模組，便於擴展和維護。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化程度高，能顯著提高文獻管理效率。
-> - 提供深入的論文分析，幫助用戶快速理解研究內容。
-> - 支持多種搜索方式，方便用戶查找相關文獻。
-> - 與 Obsidian 整合良好，適合使用該筆記工具的研究人員。
+> - 自動化文獻管理，節省時間和精力。
+> - 生成結構化的分析筆記，提升研究效率。
+> - 支持從多個來源獲取論文，增加資料的多樣性。
 
 > [!danger] 缺點
-> - 需要一定的技術背景來配置和使用。
-> - 目前僅支持特定的論文來源，限制了其應用範圍。
-> - 對於不熟悉命令行的用戶來說，使用上可能有一定的障礙。
-> - 尚處於 beta 階段，可能存在不穩定性。
+> - 需要一定的環境配置，對新手可能有些困難。
+> - 目前功能仍在持續完善中，可能存在不穩定性。
+> - 僅支持特定的論文來源，限制了使用範圍。
 
 > [!warning] 注意事項
 > - 僅支援 Python 3.8+。
-> - 需要安裝 Claude Code CLI，對新手可能有一定的學習曲線。
-> - 目前僅支持 arXiv 和 Semantic Scholar 的論文來源，無法擴展到其他資料庫。
-> - 需要手動配置環境變數，對於不熟悉命令行的用戶來說可能不太友好。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [[arxiv-sanity-preserver--arxiv-sanity-preserver\|arxiv-sanity-preserver/arxiv-sanity-preserver]] | 這個工具專注於提供個性化的 arXiv 論文推薦，而 evil-read-arxiv 則提供更全面的分析和筆記功能。 |
-| [[paperpile--paperpile\|paperpile/paperpile]] | Paperpile 是一個文獻管理工具，主要用於引用和管理文獻，而 evil-read-arxiv 更加專注於自動化的論文分析和推薦。 |
+> - 需要安裝 Claude Code CLI，並配置相關環境變數。
+> - 目前僅支持從 arXiv 和 Semantic Scholar 獲取論文，對於其他來源的支持尚未實現。
 
 ## 技術細節
 
@@ -153,11 +138,6 @@ start my day
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@juliye2025](https://github.com/juliye2025) | 6 |
-
-## 社群與生態
-
-**社群活躍度**：社群活躍度中等，定期更新和維護。
-**連結**：[文件](https://github.com/juliye2025/evil-read-arxiv#readme)
 
 ## README 摘錄
 
@@ -352,9 +332,9 @@ start my day
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[資料視覺化]] · [[機器學習]]
+相關概念：[[自動化]] · [[資料視覺化]] · [[機器學習]]
 
-相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[arxiv-sanity-preserver--arxiv-sanity-preserver|arxiv-sanity-preserver/arxiv-sanity-preserver]] · [[paperpile--paperpile|paperpile/paperpile]]
+相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[arxiv-sanity-preserver--arxiv-sanity-preserver|arxiv-sanity-preserver/arxiv-sanity-preserver]] · [[paperpile--paperpile|paperpile/paperpile]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[duoan--TorchCode|duoan/TorchCode]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[tanweai--pua|tanweai/pua]] · [[trevin-creator--autoresearch-mlx|trevin-creator/autoresearch-mlx]]
 
 [GitHub](https://github.com/juliye2025/evil-read-arxiv)
 
@@ -364,7 +344,7 @@ start my day
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "資料科學" AND file.name != "juliye2025--evil-read-arxiv"
+> WHERE category = "開發工具" AND file.name != "juliye2025--evil-read-arxiv"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -419,6 +399,14 @@ _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

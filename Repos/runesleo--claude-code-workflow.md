@@ -17,13 +17,17 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
+subcategory: "自動化"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "讓 Claude Code 成為持久且自我改善的開發夥伴，解決記憶管理和上下文工程問題。"
+use_case: "將 Claude Code 轉變為持久的自我改進開發夥伴，解決記憶管理和任務路由問題。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
   - "category/開發工具"
@@ -31,7 +35,7 @@ tags:
 aliases:
   - "claude-code-workflow"
   - "runesleo/claude-code-workflow"
-  - "讓 Claude Code 成為持久且自我改善的開發夥伴，解決記憶管理和上下文工程問題。"
+  - "將 Claude Code 轉變為持久的自我改進開發夥伴，解決記憶管理和任務路由問題。"
 ---
 
 # claude-code-workflow
@@ -41,27 +45,28 @@ aliases:
 `個人專案`
 
 > [!summary] 一句話摘要
-> 讓 Claude Code 成為持久且自我改善的開發夥伴，解決記憶管理和上下文工程問題。
+> 將 Claude Code 轉變為持久的自我改進開發夥伴，解決記憶管理和任務路由問題。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (40 stars/day)
-> **適合** 需要在多個專案中長期維持上下文的開發者和團隊。
-> **一句話重點** 這個專案展示了如何將 Claude Code 打造成一個持久的開發夥伴，解決了記憶和上下文管理的痛點。
+> **授權** 未標註授權 (風險較高)
+> **適合** 需要長期使用 Claude Code 並希望提升工作效率的開發團隊。
+> **一句話重點** 這個專案讓 Claude Code 成為一個真正的開發夥伴，而不僅僅是個智能助手。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個結構化的工作流程，使 Claude Code 能夠持續記住上下文和過去的學習。
+> 這個專案的創新在於其三層架構有效管理上下文，提升 Claude Code 的持久性和自我改進能力。
 
 ## 專案簡介
 
-這個專案提供了一個經過實戰驗證的 Claude Code 工作流程模板，專注於記憶管理、上下文工程和任務路由。它的核心機制是透過三層架構來管理上下文，確保 Claude Code 在多次會話中能夠持續記住過去的錯誤並自動應用學習。技術上，它使用了分層的資料結構，層0始終加載規則，層1按需加載文檔，層2保持當前工作狀態。與其他工具相比，這個模板強調自動保存進度和任務驗證，避免了「應該可以工作」的情況。使用者可以在日常開發中自動記錄進度，並且能夠在關閉窗口後不會丟失工作。這個專案目前處於穩定階段，適合中小型團隊使用。對於需要長時間維持上下文的開發者，這是一個值得考慮的選擇，但對於小型項目或短期任務則可能顯得過於複雜。
+這個專案提供了一個經過實戰驗證的 Claude Code 工作流程模板，能夠持續記錄過去的錯誤並自動應用學到的教訓。它透過三層架構來管理上下文，第一層始終加載行為規則，第二層按需加載文檔，第三層則保持當前工作狀態。這樣的設計不僅節省了 token，還能提高質量。與其他工具相比，它強調任務路由至正確的模型層級，並在聲稱完成之前強制驗證，避免了常見的錯誤聲明。實際使用中，這個模板能夠自動保存進度，確保不會因為關閉窗口而丟失工作。這個專案目前處於穩定階段，適合需要長期使用 Claude Code 的開發團隊。對於小型項目或偶爾使用者來說，可能會感覺過於複雜。
 
 ## 重點功能
 
-- 三層架構 — 層0自動加載規則，層1按需加載文檔，層2保持當前工作狀態。
-- 自動保存進度 — 關閉窗口不會丟失工作，確保開發者的努力不會白費。
-- 任務路由 — 根據任務類型自動選擇合適的模型層級，提升效率。
-- 驗證機制 — 在聲明任務完成前強制進行驗證，避免錯誤提交。
-- 可重用技能定義 — 提供多種技能模板以適應不同的開發需求。
+- 記憶管理 — 自動記錄過去的錯誤並應用學到的教訓。
+- 上下文管理 — 三層架構，始終加載行為規則，按需加載文檔，保持當前工作狀態。
+- 任務路由 — 根據任務自動路由至正確的模型層級，如 Opus/Sonnet/Haiku/Codex。
+- 驗證完成 — 在聲稱完成之前強制執行驗證，確保結果的可靠性。
+- 自動保存 — 關閉窗口不會丟失進度，確保工作不會中斷。
 
 ## 快速開始
 
@@ -73,54 +78,52 @@ git clone https://github.com/runesleo/claude-code-workflow.git
 ```bash
 cp -r claude-code-workflow/* ~/.claude/
 ```
-3. 自定義 CLAUDE.md
+3. 自訂 CLAUDE.md
 ```bash
-打開 ~/.claude/CLAUDE.md 並填寫用戶信息及項目路徑
+打開 ~/.claude/CLAUDE.md 並填寫用戶信息
 ```
 
 ## 程式碼範例
 
 ```bash
-# 開始系統調試
+# 啟動系統性調試
 /debug
-# 部署前檢查
-/deploy
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 runesleo 具備實戰經驗，這個專案是基於三個月的日常使用而開發的，切中開發者在使用 Claude Code 時遇到的記憶和上下文管理需求。隨著 Claude Code 的普及，越來越多的開發者需要一個結構化的工作流程來提升生產力，因此這個專案在社群中迅速受到關注。
+> (a) 作者 runesleo 之前有其他知名專案，這次專注於提升 Claude Code 的實用性。(b) 這個工具解決了 Claude Code 在長時間會話中記憶管理不足的痛點，讓開發者能夠更有效率地工作。(c) 近期在開發者社群中有關 Claude Code 的討論增加，讓這個工具受到更多注意。(d) 隨著開發者對 AI 助手需求的增加，這種持久性和自我改進的工作流程變得更加可行和必要。
 
 ## 適合誰使用
 
-**目標受眾**：需要在多個專案中長期維持上下文的開發者和團隊。
+**目標受眾**：需要長期使用 Claude Code 並希望提升工作效率的開發團隊。
 
 > [!example] 使用場景
-> - 後端工程師用它來管理長期專案的上下文，因為它能自動記錄進度，避免重複工作。
-> - 前端開發者用它來進行代碼審查，因為它的驗證機制確保了每次提交的代碼都經過測試。
-> - DevOps 工程師用它來進行部署前檢查，因為它提供了清晰的任務路由和自動化的檢查清單。
+> - 全端工程師用它來管理多個專案的開發進度，因為它能自動保存進度並記錄錯誤，避免重複工作。
+> - 測試工程師用它來進行系統性調試，因為它提供了驗證完成的功能，確保每次測試都有依據。
+> - 產品經理用它來追蹤團隊目標和任務，因為它能夠跨會話記錄任務狀態，讓管理更有效率。
 
 ## 架構分析
 
-這個專案採用單體架構，核心資料流是用戶輸入 → Claude Code 處理 → 輸出結果。關鍵技術決策包括三層架構設計，層0始終加載規則以保持上下文，層1根據需求加載文檔，層2保持當前工作狀態。專案目錄結構清晰，包含規則、文檔、記憶和技能等子目錄。
+這個專案採用單體架構，核心資料流為用戶輸入 → Claude Code 處理 → 輸出結果。關鍵技術決策是使用三層架構來有效管理上下文，減少 token 使用。專案目錄結構中，rules 目錄包含始終加載的行為規則，docs 目錄包含按需加載的文檔，memory 目錄則保存當前工作狀態。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠有效管理長期專案的上下文，提升開發效率。
-> - 自動保存進度，減少工作丟失的風險。
-> - 驗證機制確保代碼質量，降低錯誤提交的可能性。
+> - 能夠持續記錄和應用過去的錯誤，提升開發效率。
+> - 強制驗證功能確保結果的可靠性，減少錯誤。
+> - 自動保存進度，避免因意外關閉而丟失工作。
 
 > [!danger] 缺點
-> - 設置過程較為複雜，對新手不友好。
-> - 不適合短期專案，可能顯得過於繁瑣。
-> - 需要對 Claude Code 的運作有深入理解才能充分利用。
+> - 需要用戶手動配置，對新手不友好。
+> - 對於小型項目來說，可能過於複雜。
+> - 僅適用於 Claude Code 環境，限制了使用範圍。
 
 > [!warning] 注意事項
-> - 需要對 Claude Code 有基本了解才能有效使用。
-> - 不適合短期或小型專案，因為其設置過程較為複雜。
-> - 可能需要額外的配置以適應特定的開發環境。
+> - 僅支援 Claude Code 環境。
+> - 需要用戶手動配置記憶路徑。
+> - 對於小型項目來說，可能過於複雜。
 
 ## 技術細節
 
@@ -217,9 +220,9 @@ cp -r claude-code-workflow/* ~/.claude/
 
 ## 延伸閱讀
 
-相關概念：[[記憶管理]] · [[上下文工程]] · [[任務路由]]
+相關概念：[[自動化]] · [[記憶管理]] · [[任務路由]]
 
-相關專案：[[kamranahmedse--claude-statusline|kamranahmedse/claude-statusline]] · [[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[kamranahmedse--claude-statusline|kamranahmedse/claude-statusline]] · [[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]]
 
 [GitHub](https://github.com/runesleo/claude-code-workflow)
 
@@ -284,6 +287,14 @@ _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 

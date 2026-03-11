@@ -7,7 +7,7 @@ language: TypeScript
 license: N/A
 description: "CLI that turns plain numbers into terminal charts. ascii, spark, bars, columns, heatmap, unicode, braille, svg. "
 homepage: "https://x.com/MrAhmadAwais"
-stars: 538
+stars: 540
 stars_per_day: 108
 forks: 29
 open_issues: 0
@@ -16,118 +16,112 @@ pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
-category: "資料科學"
+category: "CLI 工具"
+subcategory: "數據可視化"
 release_tag: "1.0.0"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
-use_case: "將數字文本數據轉換為終端圖表的 CLI 工具。"
+use_case: "將純數字轉換為終端圖表，讓數據可視化變得簡單明瞭。"
 priority: medium
+ring: assess
+discovered_via: "GitHub Trending"
+verdict: ""
 tags:
   - github
-  - "category/資料科學"
+  - "category/cli_工具"
   - "lang/typescript"
   - easy_install
 aliases:
   - "chartli"
   - "ahmadawais/chartli"
-  - "將數字文本數據轉換為終端圖表的 CLI 工具。"
+  - "將純數字轉換為終端圖表，讓數據可視化變得簡單明瞭。"
 ---
 
 # chartli
 
-**538** stars · **108** stars/天 · 建立 5 天前 · TypeScript · 未標註授權
+**540** stars · **108** stars/天 · 建立 5 天前 · TypeScript · 未標註授權
 
 `個人專案` `1.0.0` `easy-install`
 
 > [!summary] 一句話摘要
-> 將數字文本數據轉換為終端圖表的 CLI 工具。
+> 將純數字轉換為終端圖表，讓數據可視化變得簡單明瞭。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (108 stars/day)
-> **適合** 需要在終端中快速生成數據圖表的開發者和數據分析師。
-> **一句話重點** 這個專案讓終端數據可視化變得簡單，適合快速查看和分析數據。
+> **授權** 未標註授權 (風險較高)
+> **適合** 需要在終端中快速生成數據圖表的開發者或數據分析師。
+> **一句話重點** 這個工具讓數據可視化變得輕鬆，不再需要繁瑣的圖形界面。
 
 > [!abstract] 核心創新
-> chartli 提供多種終端圖表格式，專為 CLI 環境設計，讓數據可視化變得簡單而高效。
+> 提供多種終端圖表格式的 CLI 工具，讓數據可視化變得簡單而快速。
 
 ## 專案簡介
 
-chartli 是一個命令行工具，能將純數字轉換為各種終端圖表，支持 ASCII、SVG、熱圖等格式。用戶可以通過簡單的命令行參數來指定圖表類型、寬度、高度以及標籤等，讓數據可視化變得簡單。它使用 TypeScript 和 Rust 實現，確保了性能和跨平台兼容性。與其他可視化工具相比，chartli 專注於終端環境，並提供多種圖表格式，適合快速查看數據趨勢。使用者可以輕鬆地將數據從文件或標準輸入中讀取，並通過選項自定義輸出。這個工具對於需要快速數據可視化的開發者和數據分析師特別有用，因為它不需要圖形介面，直接在終端中呈現結果。它的成熟度為 1.0.0，適合小型團隊或個人開發者使用。對於需要更複雜可視化的場景，可能需要考慮其他圖形化工具。
+這個 CLI 工具 `chartli` 讓用戶能夠從數字文本數據生成各種終端圖表，如 ASCII、SVG、條形圖等。用戶只需將數據輸入，並透過簡單的命令選項來指定圖表類型和尺寸，工具會自動渲染出可視化結果。它支援多種圖表格式，包括 ascii、spark、bars、columns、heatmap、unicode、braille 和 svg，並且可以透過 `-t` 參數選擇圖表類型。與其他可視化工具相比，`chartli` 的優勢在於其輕量級和即時性，無需繁瑣的設置或 GUI 界面。使用者可以快速生成圖表，並將其輸出到終端或文件中，這對於需要快速查看數據趨勢的開發者特別有用。該工具的效能表現良好，能夠處理中小型數據集，但對於超大數據集可能會有性能瓶頸。這是一個穩定的工具，適合個人或小型團隊使用，特別是在需要快速數據可視化的情境下。對於大型數據集或需要高級可視化功能的用戶，可能需要考慮其他專業工具。
 
 **技術棧**：`TypeScript` · `Rust` · `JavaScript`
 
 ## 重點功能
 
-- 多種圖表格式 — 支持 ASCII、SVG、熱圖、Unicode、Braille 等格式，使用 -t 參數切換。
-- 自定義圖表尺寸 — 使用 -w 和 -h 參數設置圖表的寬度和高度。
-- 標籤支持 — 使用 --x-axis-label 和 --y-axis-label 添加坐標軸標題，使用 --data-labels 顯示數據值。
-- 從文件或標準輸入讀取數據 — 可以指定文件作為輸入，若不提供則從 stdin 讀取。
-- 簡單的安裝與使用 — 只需一行命令即可安裝和運行，支持 npx 直接運行。
+- 多種圖表類型 — 支援 ascii、svg、bars、columns 等 8 種圖表格式，使用 -t 參數選擇。
+- 自動推斷標籤 — 使用 --first-column-x 讓第一列數據作為 x 軸標籤，簡化數據處理。
+- 自定義圖表尺寸 — 使用 -w 和 -h 參數設定圖表的寬度和高度。
+- 數據標籤顯示 — 使用 --data-labels 參數在圖表上顯示原始數值，增強可讀性。
+- 即時安裝和使用 — 透過 npx 直接運行，無需全局安裝，方便快速測試。
 
 ## 快速開始
 
-1. 安裝 chartli
+1. 直接運行 chartli
 ```bash
-npm i -g chartli
+npx chartli
 ```
-2. 運行幫助指令
+2. 查看幫助文檔
 ```bash
 npx chartli --help
 ```
-3. 生成圖表
+3. 全局安裝 chartli
 ```bash
-npx chartli [file] -t ascii -w 24 -h 8
+npm i -g chartli
 ```
 
 ## 程式碼範例
 
-```sh
+```bash
 pnpm chartli examples/assets/weekly-signups.txt -t ascii -w 28 -h 8 --first-column-x --data-labels
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 作者 Ahmad Awais 是一位知名的開源貢獻者，這個專案切中了開發者在終端環境中快速可視化數據的需求。隨著 CLI 工具的流行，這個專案在開發者社群中受到重視，特別是在數據分析和 DevOps 領域。
+> 作者 Ahmad Awais 以其在開源社群中的活躍而聞名，曾經開發過多個受歡迎的工具。`chartli` 解決了終端用戶在查看數據時缺乏簡單可視化工具的痛點，特別是在 CLI 環境中。最近在社交媒體上有多次提及，吸引了開發者的注意。隨著開發者對輕量級 CLI 工具需求的增加，這個工具的受歡迎程度自然上升。
 
 ## 適合誰使用
 
-**目標受眾**：需要在終端中快速生成數據圖表的開發者和數據分析師。
+**目標受眾**：需要在終端中快速生成數據圖表的開發者或數據分析師。
 
 > [!example] 使用場景
-> - 數據分析師用它來快速生成數據圖表，因為可以直接在終端中查看趨勢，節省了使用 GUI 工具的時間。
-> - 後端工程師用它來監控 API 數據，因為能夠即時生成圖表，便於快速定位問題。
-> - DevOps 工程師用它來展示系統性能數據，因為可以在 CI/CD 流程中自動生成報告，提升工作效率。
-
-## 架構分析
-
-chartli 採用 CLI 架構，使用者輸入數據 → 工具處理數據 → 輸出圖表。核心技術決策包括使用 TypeScript 和 Rust 以提高性能和兼容性。專案目錄結構簡單，主要檔案包括 README、主要程式碼和示例數據。
+> - 數據分析師用它來快速生成數據趨勢圖，因為可以即時在終端查看結果，節省了使用 GUI 工具的時間。
+> - 後端工程師用它來在 CI/CD 流程中自動生成測試結果的圖表，因為這樣可以快速識別問題而不需要手動檢查數據。
+> - 產品經理用它來展示用戶增長數據，因為可以簡單地從 CSV 文件生成視覺化圖表，便於團隊討論。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速安裝與使用，適合需要即時可視化的場景。
-> - 支持多種圖表格式，滿足不同需求。
-> - 可從標準輸入讀取數據，靈活性高。
+> - 快速生成圖表，適合 CLI 環境使用。
+> - 支援多種圖表類型，滿足不同需求。
+> - 無需安裝，直接使用 npx 減少了配置時間。
 
 > [!danger] 缺點
-> - 僅支持數字數據，無法處理其他類型的數據。
-> - 在某些終端中顯示效果可能不理想。
-> - 不支持 Windows 系統，限制了使用範圍。
+> - 對於大型數據集性能表現不佳。
+> - 僅限於文本數據，無法處理其他格式。
+> - 某些圖表類型可能在終端中顯示不佳。
 
 > [!warning] 注意事項
-> - 僅支持數字文本數據，對非數字數據無法生成圖表。
-> - 在某些終端環境中，圖表顯示可能會受到字體或顯示設置的影響。
-> - 不支持 Windows 環境，主要針對 Unix-like 系統設計。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [[vitaly--cli-chart\|vitaly/cli-chart]] | cli-chart 提供類似的終端圖表功能，但支持的圖表類型較少，且不支持 SVG 格式。 |
-| [[gchq--CyberChef\|gchq/CyberChef]] | CyberChef 是一個更全面的數據處理工具，雖然也有可視化功能，但主要聚焦於數據轉換和分析，而非專注於終端圖表。 |
+> - 不支援超大數據集，可能會影響性能。
+> - 僅支援文本格式的數據輸入，無法直接處理 Excel 或其他格式。
+> - 某些圖表類型在終端顯示效果有限，可能不適合所有用例。
 
 ## 技術細節
 
@@ -321,9 +315,9 @@ chartli 採用 CLI 架構，使用者輸入數據 → 工具處理數據 → 輸
 
 ## 延伸閱讀
 
-相關概念：[[資料視覺化]] · [[CLI/TUI]] · [[自動化測試]]
+相關概念：[[資料視覺化]] · [[CLI/TUI]]
 
-相關專案：[[vitaly--cli-chart|vitaly/cli-chart]] · [[gchq--CyberChef|gchq/CyberChef]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]]
+相關專案：[[vitaly--cli-chart|vitaly/cli-chart]] · [[gchq--CyberChef|gchq/CyberChef]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--twitter-cli|jackwener/twitter-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[knowsuchagency--mcp2cli|knowsuchagency/mcp2cli]] · [[steipete--discrawl|steipete/discrawl]]
 
 [GitHub](https://github.com/ahmadawais/chartli) · [官方網站](https://x.com/MrAhmadAwais)
 
@@ -333,7 +327,7 @@ chartli 採用 CLI 架構，使用者輸入數據 → 工具處理數據 → 輸
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "資料科學" AND file.name != "ahmadawais--chartli"
+> WHERE category = "CLI 工具" AND file.name != "ahmadawais--chartli"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -388,7 +382,16 @@ _隨時記錄想法、發現、跟其他工具的比較..._
 _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能列表_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，540 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，532 stars
