@@ -54,6 +54,55 @@ if (sorted.length > 0) {
 }
 ```
 
+## 分類交叉
+
+> [!abstract] 哪些分類引用了這個概念
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.file.outlinks?.some(l => l.path === dv.current().file.path);
+});
+const catMap = {};
+for (const p of pages) {
+  const c = p.category || "其他";
+  if (!catMap[c]) catMap[c] = [];
+  catMap[c].push(p);
+}
+const sorted = Object.entries(catMap).sort((a, b) => b[1].length - a[1].length);
+if (sorted.length > 0) {
+  dv.table(
+    ["分類", "數量", "代表專案"],
+    sorted.map(([cat, repos]) => {
+      repos.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0));
+      return [cat, repos.length, repos.slice(0, 2).map(r => r.file.link).join(", ")];
+    })
+  );
+}
+```
+
+## 精選推薦
+
+> [!tip] 引用此概念的最佳評分專案
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.my_rating > 0 && p.file.outlinks?.some(l => l.path === dv.current().file.path);
+}).sort(p => p.my_rating, "desc").limit(5);
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "評分", "Stars", "用途"],
+    pages.map(p => [
+      p.file.link,
+      "★".repeat(p.my_rating) + "☆".repeat(5 - p.my_rating),
+      p.stars,
+      (p.use_case || "").slice(0, 40)
+    ])
+  );
+} else {
+  dv.paragraph("_尚無已評分的相關專案。試用並評分後會出現在這裡。_");
+}
+```
+
 ## 學習資源
 
 _關鍵文章、教學、論文..._

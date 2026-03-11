@@ -1086,6 +1086,22 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     lines.push('');
   }
 
+  // ── Vault 排名 ──
+  lines.push('## Vault 排名');
+  lines.push('');
+  lines.push('> [!abstract]- 這個專案在 vault 中的相對位置');
+  lines.push('> ```dataviewjs');
+  lines.push(`> const me = dv.page("Repos/${safeFn}");`);
+  lines.push('> const all = dv.pages(\'"Repos"\').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");');
+  lines.push('> const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;');
+  lines.push('> const catAll = all.where(p => p.category === me?.category);');
+  lines.push('> const catRank = catAll.array().findIndex(p => p.file.name === me?.file?.name) + 1;');
+  lines.push('> if (rank > 0) {');
+  lines.push('>   dv.paragraph(`Stars/天排名：**全 vault 第 ${rank}**/${all.length} · **${me.category} 第 ${catRank}**/${catAll.length}`);');
+  lines.push('> }');
+  lines.push('> ```');
+  lines.push('');
+
   // ── 個人筆記區 ──
   lines.push('---');
   lines.push('');
@@ -3055,6 +3071,55 @@ if (sorted.length > 0) {
   }));
 } else {
   dv.paragraph("_尚無時間趨勢資料_");
+}
+\`\`\`
+
+## 分類交叉
+
+> [!abstract] 哪些分類引用了這個概念
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.file.outlinks?.some(l => l.path === dv.current().file.path);
+});
+const catMap = {};
+for (const p of pages) {
+  const c = p.category || "其他";
+  if (!catMap[c]) catMap[c] = [];
+  catMap[c].push(p);
+}
+const sorted = Object.entries(catMap).sort((a, b) => b[1].length - a[1].length);
+if (sorted.length > 0) {
+  dv.table(
+    ["分類", "數量", "代表專案"],
+    sorted.map(([cat, repos]) => {
+      repos.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0));
+      return [cat, repos.length, repos.slice(0, 2).map(r => r.file.link).join(", ")];
+    })
+  );
+}
+\`\`\`
+
+## 精選推薦
+
+> [!tip] 引用此概念的最佳評分專案
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  return p.my_rating > 0 && p.file.outlinks?.some(l => l.path === dv.current().file.path);
+}).sort(p => p.my_rating, "desc").limit(5);
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "評分", "Stars", "用途"],
+    pages.map(p => [
+      p.file.link,
+      "★".repeat(p.my_rating) + "☆".repeat(5 - p.my_rating),
+      p.stars,
+      (p.use_case || "").slice(0, 40)
+    ])
+  );
+} else {
+  dv.paragraph("_尚無已評分的相關專案。試用並評分後會出現在這裡。_");
 }
 \`\`\`
 
