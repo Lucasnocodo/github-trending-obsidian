@@ -2101,6 +2101,41 @@ WHERE category = "${category}" AND status = "to-review"
 SORT stars_per_day DESC
 \`\`\`
 
+## 依子分類
+
+\`\`\`dataview
+TABLE WITHOUT ID
+  subcategory AS "子分類",
+  length(rows) AS "數量",
+  rows.file.link AS "專案"
+FROM "Repos"
+WHERE category = "${category}"
+GROUP BY subcategory
+SORT length(rows) DESC
+\`\`\`
+
+## 相關概念
+
+\`\`\`dataviewjs
+const repos = dv.pages('"Repos"').where(p => p.category === "${category}");
+const concepts = new Map();
+for (const r of repos) {
+  for (const link of (r.file.outlinks || [])) {
+    const target = dv.page(link.path);
+    if (target?.tags?.includes("concept")) {
+      const name = target.file.name;
+      concepts.set(name, (concepts.get(name) || 0) + 1);
+    }
+  }
+}
+const sorted = [...concepts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 10);
+if (sorted.length > 0) {
+  dv.table(["概念", "相關專案數"], sorted.map(([name, count]) => [dv.fileLink(name), count]));
+} else {
+  dv.paragraph("_尚無相關概念連結_");
+}
+\`\`\`
+
 ## 每週趨勢
 
 \`\`\`dataview
