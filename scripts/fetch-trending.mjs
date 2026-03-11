@@ -722,6 +722,8 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     `contributor_count: ${repo._contributors?.length || 0}`,
     `engagement: ${engagementLevel(repo.stargazers_count, repo.forks_count)}`,
     `issue_close_rate: ${repo._issueCloseRate !== null ? repo._issueCloseRate : -1}`,
+    `repo_size_kb: ${repo.size || 0}`,
+    `readme_length: ${repo._readme?.length || 0}`,
     `verdict: ""`,
     `ring_history: "assess@${today}"`,
     `star_history: "${today}:${repo.stargazers_count}"`,
@@ -844,6 +846,31 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     if (llmInfo?.key_insight) {
       lines.push(`> **一句話重點** ${llmInfo.key_insight}`);
     }
+    lines.push('');
+  }
+
+  // ── v29: 競品快速對比面板 ──
+  if (!llmFailed && llmInfo?.subcategory) {
+    const subcat29 = llmInfo.subcategory;
+    lines.push('> [!abstract]- 同類競品快速對比');
+    lines.push('> ```dataviewjs');
+    lines.push(`> const me = dv.page("Repos/${safeFn}");`);
+    lines.push('> if (me) {');
+    lines.push('>   const rivals = dv.pages(\'"Repos"\')');
+    lines.push(`>     .where(p => p.subcategory === "${subcat29}" && p.file.name !== "${safeFn}" && p.status !== "archived")`);
+    lines.push('>     .sort(p => p.stars || 0, "desc").limit(5);');
+    lines.push('>   if (rivals.length > 0) {');
+    lines.push('>     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [');
+    lines.push('>       p.file.link,');
+    lines.push('>       (p.stars || 0).toLocaleString(),');
+    lines.push('>       p.stars_per_day || 0,');
+    lines.push('>       p.install_complexity || "?",');
+    lines.push('>       p.license || "?",');
+    lines.push('>       p.ring || "assess"');
+    lines.push('>     ]));');
+    lines.push(`>   } else { dv.paragraph("_目前 vault 中沒有其他 ${subcat29} 類工具_"); }`);
+    lines.push('> }');
+    lines.push('> ```');
     lines.push('');
   }
 
@@ -1290,12 +1317,23 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('>   const issueRatio = me.stars > 0 ? ((me.open_issues || 0) / me.stars * 100).toFixed(1) : 0;');
   lines.push('>   const maint = daysSincePush === null ? "?" : daysSincePush <= 7 ? "Active" : daysSincePush <= 30 ? "Moderate" : "Stale";');
   lines.push('>   const busFactor = (me.forks || 0) > 50 ? "Good" : (me.forks || 0) > 10 ? "OK" : "Risk";');
+  lines.push('>   // v29: README 品質和 Issue 解決率');
+  lines.push('>   const readmeLen = me.readme_length || 0;');
+  lines.push('>   const readmeQ = readmeLen > 5000 ? "Excellent" : readmeLen > 2000 ? "Good" : readmeLen > 500 ? "Basic" : readmeLen > 0 ? "Minimal" : "None";');
+  lines.push('>   const icr = me.issue_close_rate;');
+  lines.push('>   const icrLabel = icr === undefined || icr < 0 ? "N/A" : icr + "%";');
+  lines.push('>   const icrEval = icr === undefined || icr < 0 ? "?" : icr >= 80 ? "Excellent" : icr >= 50 ? "Good" : icr >= 20 ? "Fair" : "Poor";');
+  lines.push('>   const repoKB = me.repo_size_kb || 0;');
+  lines.push('>   const sizeLabel = repoKB > 102400 ? (repoKB/1024).toFixed(0) + " MB" : repoKB + " KB";');
   lines.push('>   dv.table(["指標", "值", "評估"], [');
   lines.push('>     ["維護狀態", daysSincePush + " 天前推送", maint],');
   lines.push('>     ["專案年齡", age + " 天", age > 180 ? "Established" : age > 30 ? "Growing" : "Brand New"],');
   lines.push('>     ["Fork 比率", forkRatio + "%", parseFloat(forkRatio) > 20 ? "High adoption" : parseFloat(forkRatio) > 5 ? "Normal" : "Low"],');
   lines.push('>     ["Issue 密度", issueRatio + "%", parseFloat(issueRatio) > 5 ? "High" : "Normal"],');
+  lines.push('>     ["Issue 解決率", icrLabel, icrEval],');
   lines.push('>     ["Bus Factor", (me.forks || 0) + " forks", busFactor],');
+  lines.push('>     ["README 品質", readmeLen.toLocaleString() + " 字元", readmeQ],');
+  lines.push('>     ["Repo 大小", sizeLabel, repoKB > 102400 ? "Large" : repoKB > 10240 ? "Medium" : "Small"],');
   lines.push('>   ]);');
   lines.push('> }');
   lines.push('> ```');
@@ -1524,6 +1562,25 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     lines.push('> ```');
     lines.push('');
   }
+
+  // v29: Ring 更高的同類競品（幫讀者找到更成熟的替代方案）
+  lines.push('> [!note]- Ring 更高的同類競品');
+  lines.push('> ```dataviewjs');
+  lines.push(`> const me = dv.page("Repos/${safeFn}");`);
+  lines.push('> if (me) {');
+  lines.push('>   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };');
+  lines.push('>   const myRing = ringOrder[me.ring] || 0;');
+  lines.push('>   const better = dv.pages(\'"Repos"\')');
+  lines.push(`>     .where(p => p.file.name !== "${safeFn}" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)`);
+  lines.push('>     .sort(p => p.stars_per_day || 0, "desc").limit(5);');
+  lines.push('>   if (better.length > 0) {');
+  lines.push('>     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [');
+  lines.push('>       p.file.link, p.ring, p.stars_per_day || 0, p.install_complexity || "?", (p.use_case || "").toString().slice(0, 40)');
+  lines.push('>     ]));');
+  lines.push('>   } else { dv.paragraph("_此分類中沒有 Ring 更高的專案（你可能已經在用最好的了）_"); }');
+  lines.push('> }');
+  lines.push('> ```');
+  lines.push('');
 
   // ── 同 Owner 專案 ──
   const ownerName = repo.full_name.split('/')[0];
@@ -2515,6 +2572,60 @@ dv.table(
     Math.round(d.stars / d.count).toLocaleString()
   ])
 );
+\`\`\`
+
+## Issue 解決率排行
+
+> [!abstract] 社群健康度指標 — Issue 解決率越高通常代表維護者更活躍
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"')
+  .where(p => p.issue_close_rate !== undefined && p.issue_close_rate >= 0 && p.status !== "archived")
+  .sort(p => p.issue_close_rate, "desc");
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "解決率", "Stars", "分類", "維護狀態"],
+    pages.limit(15).map(p => {
+      const icr = p.issue_close_rate;
+      const pushed = p.pushed_at ? new Date(p.pushed_at.toString()) : null;
+      const daysSince = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
+      const maint = daysSince === null ? "?" : daysSince <= 7 ? "Active" : daysSince <= 30 ? "OK" : "Stale";
+      const bar = "\\u2588".repeat(Math.round(icr / 5)) + "\\u2591".repeat(20 - Math.round(icr / 5));
+      return [p.file.link, icr + "% " + bar, p.stars, p.category, maint];
+    })
+  );
+} else {
+  dv.paragraph("尚無 Issue 解決率資料。新增的專案會自動追蹤。");
+}
+\`\`\`
+
+## README 品質分析
+
+> [!info] README 長度與品質是評估新手友善度的重要指標
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"')
+  .where(p => p.readme_length !== undefined && p.readme_length > 0 && p.status !== "archived");
+if (pages.length > 0) {
+  const excellent = pages.where(p => p.readme_length > 5000).length;
+  const good = pages.where(p => p.readme_length > 2000 && p.readme_length <= 5000).length;
+  const basic = pages.where(p => p.readme_length > 500 && p.readme_length <= 2000).length;
+  const minimal = pages.where(p => p.readme_length <= 500).length;
+  dv.paragraph(\`**Excellent** (>5k): \${excellent} · **Good** (2-5k): \${good} · **Basic** (0.5-2k): \${basic} · **Minimal** (<0.5k): \${minimal}\`);
+  dv.header(4, "README 最完整的專案");
+  dv.table(
+    ["專案", "README 長度", "Stars", "安裝", "分類"],
+    pages.sort(p => p.readme_length, "desc").limit(10).map(p => [
+      p.file.link,
+      (p.readme_length || 0).toLocaleString() + " 字元",
+      p.stars,
+      p.install_complexity || "?",
+      p.category
+    ])
+  );
+} else {
+  dv.paragraph("尚無 README 長度資料。新增的專案會自動記錄。");
+}
 \`\`\`
 
 ## 授權分佈
@@ -4395,6 +4506,32 @@ if (pages.length > 0) {
 }
 \`\`\`
 
+## 社群健康快報
+
+> [!abstract]- Issue 解決率和文件品質一覽
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const withICR = pages.where(p => p.issue_close_rate >= 0);
+const withReadme = pages.where(p => p.readme_length > 0);
+const parts = [];
+if (withICR.length > 0) {
+  const avgICR = Math.round(withICR.map(p => p.issue_close_rate).array().reduce((a,b) => a+b, 0) / withICR.length);
+  const top = withICR.sort(p => p.issue_close_rate, "desc").first();
+  parts.push(\`Issue 解決率平均 **\${avgICR}%**（最佳：\${top.file.link} \${top.issue_close_rate}%）\`);
+}
+if (withReadme.length > 0) {
+  const goodDoc = withReadme.where(p => p.readme_length > 5000).length;
+  const poorDoc = withReadme.where(p => p.readme_length < 500).length;
+  parts.push(\`README 品質：**\${goodDoc}** 個優秀 / **\${poorDoc}** 個薄弱\`);
+}
+if (parts.length > 0) {
+  dv.paragraph(parts.join("\\n\\n"));
+} else {
+  dv.paragraph("_需要更多 issue_close_rate 和 readme_length 資料_");
+}
+\`\`\`
+
 ## 興趣雷達
 
 > [!tip] 你最感興趣的專案（依三維評分排序）
@@ -4806,6 +4943,64 @@ if (weeks.length > 0) {
   const totalRepos = pages.length;
   const totalStars = pages.array().reduce((s, p) => s + (p.stars || 0), 0);
   dv.paragraph("**累計** " + totalRepos + " 個專案 / " + totalStars.toLocaleString() + " stars");
+}
+\`\`\`
+
+## 文件品質 vs 人氣
+
+> [!abstract] README 品質與 Stars 的關係 — 有些高 Stars 專案文件品質意外地差
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"')
+  .where(p => p.status !== "archived" && p.readme_length > 0 && p.stars > 0);
+if (pages.length > 0) {
+  // 高 Stars + 差 README
+  const highStarBadDoc = pages.where(p => p.stars > 500 && p.readme_length < 2000)
+    .sort(p => p.stars, "desc").limit(5);
+  if (highStarBadDoc.length > 0) {
+    dv.header(4, "高人氣但文件薄弱（可能有坑）");
+    dv.table(
+      ["專案", "Stars", "README 長度", "分類"],
+      highStarBadDoc.map(p => [p.file.link, p.stars, (p.readme_length || 0).toLocaleString() + " 字", p.category])
+    );
+  }
+  // 低 Stars + 好 README
+  const lowStarGoodDoc = pages.where(p => p.stars < 500 && p.readme_length > 5000)
+    .sort(p => p.readme_length, "desc").limit(5);
+  if (lowStarGoodDoc.length > 0) {
+    dv.header(4, "低調但文件完整（值得發掘）");
+    dv.table(
+      ["專案", "Stars", "README 長度", "分類"],
+      lowStarGoodDoc.map(p => [p.file.link, p.stars, (p.readme_length || 0).toLocaleString() + " 字", p.category])
+    );
+  }
+} else {
+  dv.paragraph("_需要 readme_length 資料，新增的專案會自動記錄_");
+}
+\`\`\`
+
+## 社群回應力
+
+> [!abstract] Issue 解決率排行 — 維護者回應社群問題的速度反映專案長期可靠性
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"')
+  .where(p => p.status !== "archived" && p.issue_close_rate >= 0);
+if (pages.length > 0) {
+  const excellent = pages.where(p => p.issue_close_rate >= 80).sort(p => p.issue_close_rate, "desc");
+  const poor = pages.where(p => p.issue_close_rate < 30 && p.issue_close_rate >= 0).sort(p => p.issue_close_rate, "asc");
+  if (excellent.length > 0) {
+    dv.header(4, "維護者積極回應（解決率 >= 80%）");
+    dv.table(["專案", "解決率", "Stars", "分類"],
+      excellent.limit(5).map(p => [p.file.link, p.issue_close_rate + "%", p.stars, p.category]));
+  }
+  if (poor.length > 0) {
+    dv.header(4, "Issue 堆積中（解決率 < 30%）");
+    dv.table(["專案", "解決率", "Stars", "分類"],
+      poor.limit(5).map(p => [p.file.link, p.issue_close_rate + "%", p.stars, p.category]));
+  }
+} else {
+  dv.paragraph("_需要 issue_close_rate 資料，新增的專案會自動追蹤_");
 }
 \`\`\`
 
@@ -5829,6 +6024,9 @@ function needsLightPatch(content) {
   if (!content.includes('score_confidence:')) patches.push('score_fields');
   if (!content.includes('你的結論')) patches.push('verdict_banner');
   if (!content.includes('issue_close_rate:')) patches.push('issue_close_rate_field');
+  if (!content.includes('repo_size_kb:')) patches.push('repo_size_field');
+  if (!content.includes('readme_length:')) patches.push('readme_length_field');
+  if (!content.includes('同類競品快速對比')) patches.push('rival_comparison');
   return patches;
 }
 
@@ -6149,11 +6347,63 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
   // 12. issue_close_rate frontmatter 欄位
   if (patches.includes('issue_close_rate_field') && !updated.includes('issue_close_rate:')) {
-    // 在 engagement: 後面插入
     updated = updated.replace(
       /^(engagement: .+)$/m,
       '$1\nissue_close_rate: -1'
     );
+  }
+
+  // 13. repo_size_kb frontmatter 欄位
+  if (patches.includes('repo_size_field') && !updated.includes('repo_size_kb:')) {
+    updated = updated.replace(
+      /^(issue_close_rate: .+)$/m,
+      '$1\nrepo_size_kb: 0'
+    );
+  }
+
+  // 14. readme_length frontmatter 欄位
+  if (patches.includes('readme_length_field') && !updated.includes('readme_length:')) {
+    updated = updated.replace(
+      /^(repo_size_kb: .+)$/m,
+      '$1\nreadme_length: 0'
+    );
+  }
+
+  // 15. v29: 競品快速對比面板（在速覽後面加入）
+  if (patches.includes('rival_comparison') && !updated.includes('同類競品快速對比')) {
+    // 讀取 subcategory
+    const subcatMatch = updated.match(/^subcategory: "(.+)"/m);
+    const fnMatch = updated.match(/^repo: (.+)$/m);
+    if (subcatMatch && fnMatch) {
+      const sc = subcatMatch[1];
+      const fn = fnMatch[1].replace('/', '--');
+      const rivalPanel = `\n> [!abstract]- 同類競品快速對比
+> \`\`\`dataviewjs
+> const me = dv.page("Repos/${fn}");
+> if (me) {
+>   const rivals = dv.pages('"Repos"')
+>     .where(p => p.subcategory === "${sc}" && p.file.name !== "${fn}" && p.status !== "archived")
+>     .sort(p => p.stars || 0, "desc").limit(5);
+>   if (rivals.length > 0) {
+>     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
+>       p.file.link,
+>       (p.stars || 0).toLocaleString(),
+>       p.stars_per_day || 0,
+>       p.install_complexity || "?",
+>       p.license || "?",
+>       p.ring || "assess"
+>     ]));
+>   } else { dv.paragraph("_目前 vault 中沒有其他 ${sc} 類工具_"); }
+> }
+> \`\`\`\n`;
+      // 插入在速覽之後（> [!info] 速覽 section 結束後的空行之後）
+      const quickLookEnd = updated.indexOf('> [!question] TL;DR');
+      const abstractEnd = updated.indexOf('> [!abstract] 核心創新');
+      const insertPoint = quickLookEnd > 0 ? quickLookEnd : abstractEnd > 0 ? abstractEnd : -1;
+      if (insertPoint > 0) {
+        updated = updated.slice(0, insertPoint) + rivalPanel + '\n' + updated.slice(insertPoint);
+      }
+    }
   }
 
   return updated;

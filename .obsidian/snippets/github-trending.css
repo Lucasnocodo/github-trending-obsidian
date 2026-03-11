@@ -221,3 +221,18 @@ strong:is(:contains("[HIGH]")) {
   margin-top: 1em;
   color: var(--text-accent);
 }
+
+/* v29: Rival comparison panel - compact table */
+.callout[data-callout="abstract"] .dataview .table-view-table {
+  font-size: 0.88em;
+}
+.callout[data-callout="abstract"] .dataview .table-view-table td:first-child {
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* v29: Health dashboard enhanced indicators */
+.callout[data-callout="abstract"] .dataview .table-view-table td:nth-child(3) {
+  font-weight: 500;
+}
