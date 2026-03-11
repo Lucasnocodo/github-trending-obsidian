@@ -997,7 +997,7 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     lines.push('## README 摘錄');
     lines.push('');
     lines.push('> [!info]- 展開查看原文 README');
-    const readmeLines = repo._readme.slice(0, 5000).split('\n');
+    const readmeLines = repo._readme.slice(0, 8000).split('\n');
     for (const rl of readmeLines) {
       lines.push(`> ${rl}`);
     }
