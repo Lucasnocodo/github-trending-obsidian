@@ -20,16 +20,17 @@ if (pages.length === 0) {
   dv.paragraph("Inbox 已清空！");
 } else {
   dv.paragraph(`**${pages.length}** 個專案等待分流`);
-  dv.table(
-    ["專案", "Stars/天", "分類", "安裝", "用途"],
-    pages.limit(15).map(p => [
-      p.file.link,
-      p.stars_per_day,
-      p.category,
-      p.install_complexity,
-      (p.use_case || "").slice(0, 40)
-    ])
-  );
+  // 卡片式展示前 10 個，提供更多上下文幫助快速決策
+  for (const p of pages.limit(10)) {
+    const use = p.use_case || p.description || "";
+    const lang = p.language || "";
+    const install = p.install_complexity === "easy" ? "Easy" : p.install_complexity === "medium" ? "Mid" : "Hard";
+    const engagement = p.engagement || "";
+    dv.paragraph(`### ${p.file.link}\n**${p.stars_per_day}** stars/天 · ${p.category || ""} · ${lang} · ${install} install · ${engagement} engagement\n> ${use}`);
+  }
+  if (pages.length > 10) {
+    dv.paragraph(`\n_...還有 ${pages.length - 10} 個專案_`);
+  }
 }
 ```
 
