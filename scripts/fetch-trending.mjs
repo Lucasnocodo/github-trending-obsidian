@@ -1795,6 +1795,38 @@ function generateDailyDigest(repos, llmData, today) {
     lines.push('');
   }
 
+  // 今日到期複習
+  lines.push('## 今日到期複習');
+  lines.push('');
+  lines.push('> [!tip] 根據間隔複習排程，今天該回顧的專案');
+  lines.push('');
+  lines.push('```dataview');
+  lines.push('TABLE');
+  lines.push('  stars_per_day AS "Stars/天",');
+  lines.push('  category AS "分類",');
+  lines.push('  engagement AS "參與度"');
+  lines.push('FROM "Repos"');
+  lines.push(`WHERE next_review AND date(next_review) <= date("${today}") AND status != "archived"`);
+  lines.push('SORT priority DESC');
+  lines.push('```');
+  lines.push('');
+
+  // 待處理提醒
+  lines.push('## 待處理');
+  lines.push('');
+  lines.push('```dataviewjs');
+  lines.push('const pending = dv.pages(\'"Repos"\').where(p => p.status === "to-review").length;');
+  lines.push('const unrated = dv.pages(\'"Repos"\').where(p => p.status !== "archived" && p.status !== "to-review" && (p.my_rating || 0) === 0).length;');
+  lines.push('const noVerdict = dv.pages(\'"Repos"\').where(p => p.status !== "archived" && (p.my_rating || 0) > 0 && (!p.verdict || p.verdict === "")).length;');
+  lines.push('const items = [];');
+  lines.push('if (pending > 0) items.push(`**${pending}** 個待分流`);');
+  lines.push('if (unrated > 0) items.push(`**${unrated}** 個已讀但未評分`);');
+  lines.push('if (noVerdict > 0) items.push(`**${noVerdict}** 個已評分但無結論`);');
+  lines.push('if (items.length > 0) dv.paragraph(items.join(" / "));');
+  lines.push('else dv.paragraph("所有專案都已處理完畢！");');
+  lines.push('```');
+  lines.push('');
+
   return lines.join('\n');
 }
 
