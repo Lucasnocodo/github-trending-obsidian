@@ -9,7 +9,7 @@ aliases:
 
 ## 是什麼
 
-_用 2-3 句話解釋這個概念。想像對象是一個聰明但不熟悉這個領域的工程師朋友。_
+跟「AGP Protocol」是同一概念。Agent Gateway Protocol，AI Agent 間的通訊標準。讓 LangChain、CrewAI 等不同框架建構的 Agent 能互相發送訊息和協作。
 
 ## 快速統計
 

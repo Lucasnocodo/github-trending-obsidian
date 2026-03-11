@@ -9,7 +9,7 @@ aliases:
 
 ## 是什麼
 
-_用 2-3 句話解釋這個概念。想像對象是一個聰明但不熟悉這個領域的工程師朋友。_
+統一可擴展韌體介面（Unified Extensible Firmware Interface），取代傳統 BIOS 的現代韌體標準。負責開機流程、硬體初始化和 OS 載入。UEFI Secure Boot 增加了開機安全性但也帶來相容性挑戰。
 
 ## 快速統計
 

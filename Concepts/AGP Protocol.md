@@ -9,7 +9,7 @@ aliases:
 
 ## 是什麼
 
-_用 2-3 句話解釋這個概念。想像對象是一個聰明但不熟悉這個領域的工程師朋友。_
+Agent-to-Agent Gateway Protocol，讓不同 AI Agent 之間能標準化溝通的協議。類似於 AI Agent 世界的 HTTP，讓來自不同框架的 Agent 可以互操作。
 
 ## 快速統計
 

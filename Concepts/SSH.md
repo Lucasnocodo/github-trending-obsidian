@@ -9,7 +9,7 @@ aliases:
 
 ## 是什麼
 
-_用 2-3 句話解釋這個概念。想像對象是一個聰明但不熟悉這個領域的工程師朋友。_
+Secure Shell，加密的遠端登入和檔案傳輸協議。是 Linux/macOS 伺服器管理的基本工具。除了遠端終端，還支援 port forwarding、SCP、SFTP 等功能。OpenSSH 是最廣泛使用的實作。
 
 ## 快速統計
 
