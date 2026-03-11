@@ -106,6 +106,28 @@ LIMIT 10
 > LIMIT 5
 > ```
 
+## 本週亮點
+
+```dataviewjs
+const thisWeek = dv.pages('"Repos"')
+  .where(p => {
+    if (!p.first_seen) return false;
+    const d = new Date(p.first_seen.toString());
+    return (Date.now() - d.getTime()) < 7 * 86400000;
+  })
+  .sort(p => p.stars_per_day, "desc")
+  .limit(3);
+
+if (thisWeek.length > 0) {
+  for (const p of thisWeek) {
+    const desc = p.use_case || p.description || "";
+    dv.paragraph(`**${p.file.link}** — ${p.stars_per_day} stars/day · ${p.category || ""}\n> ${desc.slice(0, 100)}`);
+  }
+} else {
+  dv.paragraph("本週尚無新收錄。");
+}
+```
+
 ## 最近的週報
 
 ```dataview
