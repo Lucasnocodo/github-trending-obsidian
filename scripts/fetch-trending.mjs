@@ -425,7 +425,7 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     `my_rating: 0`,
     `last_reviewed: ${today}`,
     `use_case: "${(llmInfo?.description_zh || '').replace(/"/g, '\\"').slice(0, 80)}"`,
-    `priority: medium`,
+    `priority: ${rate >= 200 ? 'high' : rate >= 30 ? 'medium' : 'low'}`,
     `ring: assess`,
     `discovered_via: "GitHub Trending"`,
     `verdict: ""`,
@@ -509,7 +509,9 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     const maintDetail = daysSincePush !== null ? `最後推送 ${daysSincePush} 天前` : '';
     lines.push('> [!info] 速覽');
     lines.push(`> **安裝難度** ${installIcon} · **專案狀態** ${ageLabel} · **熱度** ${momentumLabel} (${fmt(rate)} stars/day)`);
-    lines.push(`> **授權** ${licenseLabel} · **維護** ${maintLabel}${maintDetail ? ` (${maintDetail})` : ''}`);
+    const contribCount = repo._contributors?.length || 0;
+    const busFactor = contribCount <= 1 ? 'Solo (bus factor 風險)' : contribCount <= 3 ? `${contribCount} 人` : `${contribCount}+ 人`;
+    lines.push(`> **授權** ${licenseLabel} · **維護** ${maintLabel}${maintDetail ? ` (${maintDetail})` : ''} · **貢獻者** ${busFactor}`);
     if (llmInfo?.target_audience) {
       lines.push(`> **適合** ${llmInfo.target_audience}`);
     }
@@ -2674,7 +2676,7 @@ async function refreshRepos(token, failedOnly = false) {
         .replace(/^status: to-review$/m, `status: ${savedStatus}`)
         .replace(/^my_rating: 0$/m, `my_rating: ${savedRating}`)
         .replace(/^last_reviewed: .+$/m, `last_reviewed: ${savedReviewed}`)
-        .replace(/^priority: medium$/m, `priority: ${savedPriority}`)
+        .replace(/^priority: (high|medium|low)$/m, `priority: ${savedPriority}`)
         .replace(/^ring: assess$/m, `ring: ${savedRing}`)
         .replace(/^verdict: ""$/m, `verdict: "${savedVerdict}"`)
         .replace(/^discovered_via: "GitHub Trending"$/m, `discovered_via: "${savedDiscovered}"`);
