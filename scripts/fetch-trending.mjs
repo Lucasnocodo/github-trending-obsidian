@@ -3786,7 +3786,8 @@ function needsRefresh(content) {
          !content.includes('ring_history:') ||     // v13: 狀態變更歷程
          !content.includes('成熟度評估') ||            // v14: 成熟度評估 + 強化替代方案 + 預期輸出
          !content.includes('## 開發動態') ||             // v15: 開發動態 + 熱門議題
-         !content.includes('直接競品');                   // v16: 同子分類競品 + 共用概念
+         !content.includes('直接競品') ||                  // v16: 同子分類競品 + 共用概念
+         !content.includes('## Vault 排名');               // v18: 相對排名 + 分類圓餅圖
 }
 
 function hasLLMContent(content) {
