@@ -373,13 +373,75 @@ if (sorted.length > 0) {
 }
 ```
 
+## 速度 vs 成熟度四象限
+
+> [!abstract] 快速找到「既熱門又穩定」的專案（右上角最佳）
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const quadrants = {
+  "快速+成熟": { desc: "Stars/天 >= 50 且 > 30 天", repos: [] },
+  "快速+新生": { desc: "Stars/天 >= 50 且 <= 30 天", repos: [] },
+  "穩定+成熟": { desc: "Stars/天 < 50 且 > 30 天", repos: [] },
+  "穩定+新生": { desc: "Stars/天 < 50 且 <= 30 天", repos: [] },
+};
+for (const p of pages) {
+  const spd = p.stars_per_day || 0;
+  const created = p.created ? new Date(p.created.toString()) : null;
+  const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : 0;
+  const fast = spd >= 50;
+  const mature = age > 30;
+  const key = fast ? (mature ? "快速+成熟" : "快速+新生") : (mature ? "穩定+成熟" : "穩定+新生");
+  quadrants[key].repos.push(p);
+}
+for (const [name, q] of Object.entries(quadrants)) {
+  if (q.repos.length === 0) continue;
+  q.repos.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0));
+  dv.header(4, `${name} (${q.repos.length})`);
+  dv.table(
+    ["專案", "Stars/天", "年齡(天)", "分類", "安裝"],
+    q.repos.slice(0, 5).map(p => {
+      const age = p.created ? Math.floor((Date.now() - new Date(p.created.toString()).getTime()) / 86400000) : "?";
+      return [p.file.link, p.stars_per_day || 0, age, p.category || "", p.install_complexity || "?"];
+    })
+  );
+}
+```
+
+## 技術棧分佈
+
+> [!abstract] 各語言在不同安裝難度下的分佈
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const langInstall = {};
+for (const p of pages) {
+  const lang = (p.language || "Other").toString();
+  const inst = (p.install_complexity || "unknown").toString();
+  if (!langInstall[lang]) langInstall[lang] = { easy: 0, medium: 0, hard: 0, total: 0 };
+  langInstall[lang][inst] = (langInstall[lang][inst] || 0) + 1;
+  langInstall[lang].total++;
+}
+const sorted = Object.entries(langInstall).sort((a, b) => b[1].total - a[1].total).slice(0, 10);
+if (sorted.length > 0) {
+  dv.table(
+    ["語言", "總數", "Easy", "Medium", "Hard", "Easy 比例"],
+    sorted.map(([lang, d]) => [
+      lang, d.total, d.easy || 0, d.medium || 0, d.hard || 0,
+      d.total > 0 ? Math.round((d.easy || 0) / d.total * 100) + "%" : "0%"
+    ])
+  );
+}
+```
+
 ---
 
 > [!info] 使用方式
 > 1. 從分類表格中找到感興趣的領域
 > 2. 橫向比較同分類的專案
 > 3. 子分類交叉分析幫你找到直接競品
-> 4. Owner 影響力找出高產出的開發者
+> 4. 四象限圖找出「既熱門又穩定」的專案
 > 5. 決策矩陣幫你找出綜合評分最高的專案
 > 6. 貢獻者風險總覽識別 bus factor 風險
-> 7. 搭配 [[Triage]] 進行狀態管理
+> 7. 技術棧分佈了解語言生態
+> 8. 搭配 [[Triage]] 進行狀態管理

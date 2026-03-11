@@ -2212,6 +2212,92 @@ SORT stars_per_day DESC
 LIMIT 10
 \`\`\`
 
+## 決策分數排行
+
+> [!abstract] 綜合評估分數 Top 10（自動計算：熱度 + 易用性 + 成熟度 + 社群 + 授權）
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const scored = [];
+for (const p of pages) {
+  let score = 0;
+  const spd = p.stars_per_day || 0;
+  score += Math.min(25, Math.round(spd / 40 * 25));
+  score += p.install_complexity === "easy" ? 20 : p.install_complexity === "medium" ? 12 : 5;
+  const created = p.created ? new Date(p.created.toString()) : null;
+  const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : 0;
+  score += age > 365 ? 20 : age > 180 ? 16 : age > 30 ? 10 : 5;
+  const forks = p.forks || 0;
+  score += forks > 200 ? 20 : forks > 50 ? 15 : forks > 10 ? 10 : 5;
+  const lic = (p.license || "").toString();
+  score += ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unlicense"].includes(lic) ? 15 : lic && lic !== "N/A" ? 8 : 0;
+  const grade = score >= 80 ? "A" : score >= 60 ? "B" : score >= 40 ? "C" : "D";
+  scored.push({ link: p.file.link, score, grade, spd, cat: p.category, install: p.install_complexity, status: p.status });
+}
+scored.sort((a, b) => b.score - a.score);
+if (scored.length > 0) {
+  const bar = s => "\\u2588".repeat(Math.round(s/5)) + "\\u2591".repeat(20 - Math.round(s/5));
+  dv.table(
+    ["專案", "分數", "等級", "Stars/天", "分類", "安裝", "視覺化"],
+    scored.slice(0, 10).map(s => [s.link, s.score, s.grade, s.spd, s.cat, s.install, bar(s.score)])
+  );
+  const avg = Math.round(scored.reduce((a, b) => a + b.score, 0) / scored.length);
+  const grades = { A: 0, B: 0, C: 0, D: 0 };
+  scored.forEach(s => grades[s.grade]++);
+  dv.paragraph(\`**平均分數** \${avg}/100 | A: \${grades.A} | B: \${grades.B} | C: \${grades.C} | D: \${grades.D}\`);
+}
+\`\`\`
+
+## Contributor 風險預警
+
+> [!warning] Solo 專案（僅 1 位貢獻者）且 Stars/天 >= 10 — Bus Factor 風險
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived" && (p.contributor_count || 0) <= 1 && (p.stars_per_day || 0) >= 10);
+if (pages.length > 0) {
+  const sorted = pages.sort(p => p.stars_per_day || 0, "desc");
+  dv.table(
+    ["專案", "Stars/天", "Stars", "語言", "分類", "維護狀態"],
+    sorted.map(p => {
+      const pushed = p.pushed_at ? new Date(p.pushed_at.toString()) : null;
+      const days = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
+      const maint = days === null ? "?" : days <= 7 ? "Active" : days <= 30 ? "Moderate" : "Stale";
+      return [p.file.link, p.stars_per_day, p.stars, p.language, p.category, maint];
+    })
+  );
+  dv.paragraph(\`**\${pages.length}** 個高關注度 solo 專案 — 考慮替代方案或社群活躍度再決定是否採用\`);
+} else {
+  dv.paragraph("目前沒有高風險的 solo 專案。");
+}
+\`\`\`
+
+## 技術棧熱度
+
+> [!abstract] 哪些技術被最多 trending 專案使用
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const langByCat = {};
+for (const p of pages) {
+  const lang = (p.language || "Other").toString();
+  const cat = (p.category || "Other").toString();
+  const key = lang + " x " + cat;
+  if (!langByCat[key]) langByCat[key] = { lang, cat, count: 0, totalSpd: 0, repos: [] };
+  langByCat[key].count++;
+  langByCat[key].totalSpd += (p.stars_per_day || 0);
+  langByCat[key].repos.push(p.file.link);
+}
+const combos = Object.values(langByCat).filter(c => c.count >= 2).sort((a, b) => b.totalSpd - a.totalSpd);
+if (combos.length > 0) {
+  dv.table(
+    ["語言", "分類", "專案數", "累計 Stars/天", "代表專案"],
+    combos.slice(0, 12).map(c => [c.lang, c.cat, c.count, c.totalSpd, c.repos.slice(0, 2).join(", ")])
+  );
+} else {
+  dv.paragraph("_需要更多專案才能看到技術棧熱度_");
+}
+\`\`\`
+
 ## 所有專案
 
 \`\`\`dataview
@@ -3338,6 +3424,36 @@ if (thisWeek.length > 0) {
 > SORT stars DESC
 > LIMIT 5
 > \`\`\`
+
+## 決策分數 Top 5
+
+> [!abstract] 綜合評估最高的專案 — 值得優先投入時間
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const scored = [];
+for (const p of pages) {
+  let score = 0;
+  const spd = p.stars_per_day || 0;
+  score += Math.min(25, Math.round(spd / 40 * 25));
+  score += p.install_complexity === "easy" ? 20 : p.install_complexity === "medium" ? 12 : 5;
+  const created = p.created ? new Date(p.created.toString()) : null;
+  const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : 0;
+  score += age > 365 ? 20 : age > 180 ? 16 : age > 30 ? 10 : 5;
+  score += (p.forks || 0) > 200 ? 20 : (p.forks || 0) > 50 ? 15 : (p.forks || 0) > 10 ? 10 : 5;
+  const lic = (p.license || "").toString();
+  score += ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unlicense"].includes(lic) ? 15 : lic && lic !== "N/A" ? 8 : 0;
+  const grade = score >= 80 ? "A" : score >= 60 ? "B" : score >= 40 ? "C" : "D";
+  scored.push({ link: p.file.link, score, grade, cat: p.category, spd, install: p.install_complexity });
+}
+scored.sort((a, b) => b.score - a.score);
+if (scored.length > 0) {
+  dv.table(
+    ["專案", "分數", "等級", "Stars/天", "安裝"],
+    scored.slice(0, 5).map(s => [s.link, s.score + "/100", s.grade, s.spd, s.install])
+  );
+}
+\`\`\`
 
 ## 分類健康度
 
