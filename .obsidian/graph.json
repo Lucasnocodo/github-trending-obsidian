@@ -64,10 +64,24 @@
       }
     },
     {
+      "query": "path:Repos status:reading",
+      "color": {
+        "a": 1,
+        "rgb": 16776960
+      }
+    },
+    {
       "query": "path:Repos status:archived",
       "color": {
         "a": 0.5,
         "rgb": 8421504
+      }
+    },
+    {
+      "query": "tag:#navigation",
+      "color": {
+        "a": 1,
+        "rgb": 16711935
       }
     }
   ],

@@ -148,3 +148,30 @@ code {
 .weekly h1, .monthly h1 {
   color: var(--interactive-accent);
 }
+
+/* Comparison page - highlight subcategory sections */
+.comparison h3 {
+  margin-top: 1.5em;
+  padding: 0.3em 0.5em;
+  background-color: var(--background-secondary);
+  border-radius: 4px;
+}
+
+/* Navigation pages - consistent styling */
+.triage h2, .comparison h2 {
+  border-bottom: 2px solid var(--interactive-accent);
+  padding-bottom: 0.3em;
+}
+
+/* Severity indicators in known gotchas */
+strong:has(+ :contains("[HIGH]")),
+strong:is(:contains("[HIGH]")) {
+  color: rgb(244, 67, 54);
+}
+
+/* Tech Radar ring labels */
+.dashboard h4 {
+  margin-top: 1.2em;
+  padding: 0.2em 0;
+  color: var(--text-accent);
+}
