@@ -99,6 +99,38 @@ async function fetchReadme(fullName, token) {
   }
 }
 
+async function fetchDependencies(fullName, token, primaryLang) {
+  // 根據語言嘗試抓取依賴檔案，提供給 LLM 更精確的技術棧分析
+  const langFiles = {
+    JavaScript: ['package.json'],
+    TypeScript: ['package.json'],
+    Python: ['requirements.txt', 'pyproject.toml', 'setup.py'],
+    Go: ['go.mod'],
+    Rust: ['Cargo.toml'],
+    Java: ['pom.xml', 'build.gradle'],
+    Ruby: ['Gemfile'],
+    PHP: ['composer.json'],
+    C: ['CMakeLists.txt'],
+    'C++': ['CMakeLists.txt'],
+    'C#': [],
+    Swift: ['Package.swift'],
+  };
+  const files = langFiles[primaryLang] || ['package.json'];
+  for (const file of files) {
+    try {
+      const res = await fetch(
+        `https://raw.githubusercontent.com/${fullName}/HEAD/${file}`,
+        { headers: gh(token) }
+      );
+      if (!res.ok) continue;
+      const text = await res.text();
+      // 截斷大型 manifest
+      return { file, content: text.slice(0, 3000) };
+    } catch { /* ignore */ }
+  }
+  return null;
+}
+
 async function fetchContributors(fullName, token) {
   try {
     const res = await fetch(
@@ -192,13 +224,14 @@ async function fetchRecentCommits(fullName, token) {
 }
 
 async function fetchRepoDetails(repo, token) {
-  const [readme, contributors, release, languages, topIssues, recentCommits] = await Promise.all([
+  const [readme, contributors, release, languages, topIssues, recentCommits, deps] = await Promise.all([
     fetchReadme(repo.full_name, token),
     fetchContributors(repo.full_name, token),
     fetchLatestRelease(repo.full_name, token),
     fetchLanguages(repo.full_name, token),
     fetchTopIssues(repo.full_name, token),
     fetchRecentCommits(repo.full_name, token),
+    fetchDependencies(repo.full_name, token, repo.language),
   ]);
   return {
     ...repo,
@@ -208,6 +241,7 @@ async function fetchRepoDetails(repo, token) {
     _languages: languages,
     _topIssues: topIssues,
     _recentCommits: recentCommits,
+    _deps: deps,
   };
 }
 
@@ -312,6 +346,9 @@ function buildRepoPrompt(repos) {
       }
       if (r._recentCommits) {
         parts.push(`最近 commit 活動: ${r._recentCommits.active_days} 天活躍 (${r._recentCommits.period}), 最新: ${r._recentCommits.latest_message}`);
+      }
+      if (r._deps) {
+        parts.push(`依賴檔 (${r._deps.file}):\n${r._deps.content}`);
       }
       if (r._readme) parts.push(`README:\n${r._readme.slice(0, 10000)}`);
       return parts.join('\n');
@@ -1031,6 +1068,30 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   if (repo.homepage) lines.push(`| 官方網站 | [Link](${repo.homepage}) |`);
   if (repo.size) lines.push(`| Repo 大小 | ${repo.size > 1024 ? `${(repo.size / 1024).toFixed(1)} MB` : `${repo.size} KB`} |`);
   lines.push('');
+
+  // 依賴摘要
+  if (repo._deps?.content) {
+    const depFile = repo._deps.file;
+    let depNames = [];
+    try {
+      if (depFile === 'package.json') {
+        const pkg = JSON.parse(repo._deps.content);
+        depNames = Object.keys(pkg.dependencies || {}).concat(Object.keys(pkg.devDependencies || {})).slice(0, 15);
+      } else if (depFile === 'requirements.txt') {
+        depNames = repo._deps.content.split('\n').filter(l => l.trim() && !l.startsWith('#')).map(l => l.split(/[>=<\[]/)[0].trim()).filter(Boolean).slice(0, 15);
+      } else if (depFile === 'go.mod') {
+        depNames = repo._deps.content.split('\n').filter(l => l.includes('/')).map(l => l.trim().split(/\s/)[0]).filter(Boolean).slice(0, 15);
+      } else if (depFile === 'Cargo.toml') {
+        depNames = repo._deps.content.split('\n').filter(l => /^\w/.test(l) && l.includes('=')).map(l => l.split('=')[0].trim()).filter(Boolean).slice(0, 15);
+      }
+    } catch { /* ignore parse errors */ }
+    if (depNames.length > 0) {
+      lines.push('> [!info]- 主要依賴');
+      lines.push(`> \`${depFile}\` 中的核心套件：`);
+      lines.push(`> \`${depNames.join('` `')}\``);
+      lines.push('');
+    }
+  }
 
   // 語言組成 pie chart
   const langEntries = Object.entries(langPct);

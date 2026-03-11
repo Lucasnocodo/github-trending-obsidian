@@ -88,6 +88,28 @@ SORT my_rating DESC
 LIMIT 10
 ```
 
+## 到期複習
+
+```dataviewjs
+const due = dv.pages('"Repos"')
+  .where(p => {
+    if (!p.next_review || p.status === "archived") return false;
+    const nr = new Date(p.next_review.toString());
+    return nr.getTime() <= Date.now();
+  })
+  .sort(p => p.stars_per_day, "desc")
+  .limit(5);
+
+if (due.length > 0) {
+  dv.table(
+    ["專案", "Stars/天", "分類", "複習日期"],
+    due.map(p => [p.file.link, p.stars_per_day || 0, p.category || "", p.next_review])
+  );
+} else {
+  dv.paragraph("目前沒有到期需複習的專案。");
+}
+```
+
 ## 本週亮點
 
 ```dataviewjs
@@ -129,6 +151,27 @@ if (thisWeek.length > 0) {
 > SORT stars DESC
 > LIMIT 5
 > ```
+
+## 熱門概念
+
+```dataviewjs
+const repos = dv.pages('"Repos"').where(p => p.status !== "archived");
+const cc = {};
+for (const p of repos) {
+  for (const link of (p.file.outlinks || [])) {
+    if (link.path?.startsWith("Concepts/")) {
+      const n = link.path.replace("Concepts/", "").replace(".md", "");
+      cc[n] = (cc[n] || 0) + 1;
+    }
+  }
+}
+const top = Object.entries(cc).sort((a, b) => b[1] - a[1]).slice(0, 8);
+if (top.length > 0) {
+  dv.paragraph(top.map(([n, c]) => `[[Concepts/${n}|${n}]] (${c})`).join(" · "));
+} else {
+  dv.paragraph("_尚無概念連結_");
+}
+```
 
 ## 最近的週報
 

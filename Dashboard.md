@@ -563,6 +563,35 @@ dv.paragraph([
 ].join(" · "));
 ```
 
+## 決策分數 Top 10
+
+> [!abstract] 綜合熱度、易用性、成熟度、社群、授權計算 0-100 分
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const scored = [];
+for (const p of pages) {
+  let score = 0;
+  const spd = p.stars_per_day || 0;
+  score += Math.min(25, Math.round(spd / 40 * 25));
+  score += p.install_complexity === "easy" ? 20 : p.install_complexity === "medium" ? 12 : 5;
+  const created = p.created ? new Date(p.created.toString()) : null;
+  const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : 0;
+  score += age > 365 ? 20 : age > 180 ? 16 : age > 30 ? 10 : 5;
+  const forks = p.forks || 0;
+  score += forks > 200 ? 20 : forks > 50 ? 15 : forks > 10 ? 10 : 5;
+  const lic = p.license || "";
+  score += ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unlicense"].includes(lic) ? 15 : lic && lic !== "N/A" ? 8 : 0;
+  const grade = score >= 80 ? "A" : score >= 60 ? "B" : score >= 40 ? "C" : "D";
+  scored.push([p.file.link, grade, score, p.category || "", p.install_complexity || ""]);
+}
+scored.sort((a, b) => b[2] - a[2]);
+dv.table(
+  ["專案", "等級", "總分", "分類", "安裝"],
+  scored.slice(0, 10)
+);
+```
+
 ## 所有專案
 
 ```dataview
