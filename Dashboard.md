@@ -53,6 +53,15 @@ const stale = pages.where(p => {
 if (stale.length > 0) {
   actions.push(`**重新檢視** ${stale.first().file.link}（高評分但超過 14 天未回顧）`);
 }
+// 到期複習提醒
+const dueReview = pages.where(p => {
+  if (!p.next_review || p.status === "archived") return false;
+  const nr = new Date(p.next_review.toString());
+  return nr.getTime() <= Date.now();
+});
+if (dueReview.length > 0) {
+  actions.push(`**到期複習** ${dueReview.length} 個專案已到複習日（最優先：${dueReview.sort(p => p.stars_per_day, "desc").first().file.link}）`);
+}
 if (actions.length > 0) {
   dv.list(actions);
 } else {
