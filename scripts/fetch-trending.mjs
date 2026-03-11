@@ -405,7 +405,8 @@ async function callLLM(repos, token, vaultRepoNames = null) {
         await waitForCooldown('LLM retry: ');
       }
       try {
-        const batchResult = await callLLMBatch(batch, token, vaultRepoNames);
+        let batchResult = await callLLMBatch(batch, token, vaultRepoNames);
+        if (!Array.isArray(batchResult)) batchResult = [batchResult];
         results.push(...batchResult);
         success = true;
         consecutiveFailures = 0;
@@ -549,6 +550,7 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   const cat = llmInfo?.category || 'Other';
   const catTag = cat.toLowerCase().replace(/[/\s]/g, '_');
   const llmFailed = llmInfo?._llm_failed === true;
+  const safeFn = repoFileName(repo.full_name).replace('.md', '');
 
   // ── 品質驗證：修正 LLM 回傳類型問題 ──
   // LLM 有時回傳非字串（物件/陣列），先正規化所有期望為字串的欄位
@@ -1141,7 +1143,6 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   // ── 相關收錄（同子分類 + 同分類 + 同週 + 共用概念）──
   lines.push('## 相關收錄');
   lines.push('');
-  const safeFn = repoFileName(repo.full_name).replace('.md', '');
   const subcat = llmInfo?.subcategory || '';
 
   // v16: 同子分類直接競品（最有決策價值）
@@ -2568,6 +2569,42 @@ FROM "Repos"
 WHERE first_seen AND dateformat(first_seen, "yyyy-MM") = "${monthStr}"
   AND stars_per_day >= 200
 SORT stars_per_day DESC
+\`\`\`
+
+## 跨月比較
+
+> [!abstract] 本月 vs 上月的變化趨勢
+
+\`\`\`dataviewjs
+// 計算上個月的 monthStr
+const [y, m] = "${monthStr}".split("-").map(Number);
+const prevM = m === 1 ? 12 : m - 1;
+const prevY = m === 1 ? y - 1 : y;
+const prevStr = prevY + "-" + String(prevM).padStart(2, "0");
+
+const thisMonth = dv.pages('"Repos"').where(p => p.first_seen?.toString()?.startsWith("${monthStr}"));
+const lastMonth = dv.pages('"Repos"').where(p => p.first_seen?.toString()?.startsWith(prevStr));
+
+if (lastMonth.length > 0) {
+  const thisCats = {};
+  for (const p of thisMonth) { const c = p.category || "其他"; thisCats[c] = (thisCats[c] || 0) + 1; }
+  const lastCats = {};
+  for (const p of lastMonth) { const c = p.category || "其他"; lastCats[c] = (lastCats[c] || 0) + 1; }
+
+  const allCats = new Set([...Object.keys(thisCats), ...Object.keys(lastCats)]);
+  const rows = [...allCats].map(cat => {
+    const cur = thisCats[cat] || 0;
+    const prev = lastCats[cat] || 0;
+    const delta = cur - prev;
+    const arrow = delta > 0 ? "+" + delta : delta === 0 ? "=" : String(delta);
+    return [cat, prev, cur, arrow];
+  }).sort((a, b) => b[2] - a[2]);
+
+  dv.paragraph(\`**本月** \${thisMonth.length} 個 vs **上月** \${lastMonth.length} 個（\${thisMonth.length > lastMonth.length ? "+" : ""}\${thisMonth.length - lastMonth.length}）\`);
+  dv.table(["分類", prevStr, "${monthStr}", "變化"], rows);
+} else {
+  dv.paragraph("_無上月資料可供比較_");
+}
 \`\`\`
 
 ## 本月回顧進度
