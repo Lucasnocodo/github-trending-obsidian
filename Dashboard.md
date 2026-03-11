@@ -555,6 +555,9 @@ SORT stars DESC
 > DataviewJS 需在 Dataview 設定中啟用（設定 → Dataview → Enable JavaScript Queries）
 >
 > **推薦插件**：
+> - [Dataview](https://github.com/blacksmithgu/obsidian-dataview) — 動態查詢引擎（必裝）
 > - [Contribution Graph](https://github.com/vran-dev/obsidian-contribution-graph) — 收錄熱力圖
-> - [Charts View](https://github.com/caronchen/obsidian-chartsview-plugin) — 語言分佈圖表
+> - [Heatmap Calendar](https://github.com/Richardsl/heatmap-calendar-obsidian) — GitHub 風格活動熱力圖
 > - [Periodic Notes](https://github.com/liamcain/obsidian-periodic-notes) — 每週回顧自動化
+> - [Metadata Menu](https://github.com/mdelobelle/metadatamenu) — 強型別 frontmatter 管理
+> - [Templater](https://github.com/SilentVoid13/Templater) — 進階模板引擎（搭配 quick-triage）
