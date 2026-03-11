@@ -1020,6 +1020,40 @@ dv.paragraph(\`**\${total}** 個專案 · 已回顧 **\${reviewed}** (\${pct}%) 
 dv.paragraph(\`<progress value="\${reviewed}" max="\${total}" style="width:100%"></progress>\`);
 \`\`\`
 
+## 今日行動建議
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"');
+const toReview = pages.where(p => p.status === "to-review");
+const highPri = toReview.where(p => p.priority === "high");
+const easy = toReview.where(p => p.install_complexity === "easy");
+const actions = [];
+
+if (highPri.length > 0) {
+  const top = highPri.sort(p => p.stars_per_day, "desc").first();
+  actions.push(\`**優先回顧** \${top.file.link}（\${top.stars_per_day} stars/天，priority: high）\`);
+}
+if (easy.length > 0) {
+  const pick = easy.sort(p => p.stars_per_day, "desc").first();
+  if (!highPri.length || pick.file.name !== highPri.sort(p => p.stars_per_day, "desc").first()?.file.name) {
+    actions.push(\`**快速試用** \${pick.file.link}（easy install，\${pick.stars_per_day} stars/天）\`);
+  }
+}
+const stale = pages.where(p => {
+  if (!p.last_reviewed || p.status === "archived") return false;
+  const d = new Date(p.last_reviewed.toString());
+  return (Date.now() - d.getTime()) > 14 * 86400000 && p.my_rating > 3;
+});
+if (stale.length > 0) {
+  actions.push(\`**重新檢視** \${stale.first().file.link}（高評分但超過 14 天未回顧）\`);
+}
+if (actions.length > 0) {
+  dv.list(actions);
+} else {
+  dv.paragraph("所有專案都已處理完畢！");
+}
+\`\`\`
+
 ## 收錄時間軸
 
 \`\`\`dataview
@@ -1791,6 +1825,7 @@ cssclasses:
 | [[MOC - 資料科學]] | 資料科學 |
 | [[MOC - 教學資源]] | 教學資源 |
 | [[MOC - 基礎設施]] | 基礎設施 |
+| [[MOC - 其他]] | 其他分類 |
 
 ## 統計快照
 
@@ -1852,6 +1887,48 @@ WHERE my_rating > 0
 SORT my_rating DESC
 LIMIT 10
 \`\`\`
+
+## 本週亮點
+
+\`\`\`dataviewjs
+const thisWeek = dv.pages('"Repos"')
+  .where(p => {
+    if (!p.first_seen) return false;
+    const d = new Date(p.first_seen.toString());
+    return (Date.now() - d.getTime()) < 7 * 86400000;
+  })
+  .sort(p => p.stars_per_day, "desc")
+  .limit(3);
+
+if (thisWeek.length > 0) {
+  for (const p of thisWeek) {
+    const desc = p.use_case || p.description || "";
+    dv.paragraph(\`**\${p.file.link}** — \${p.stars_per_day} stars/day · \${p.category || ""}\\n> \${desc.slice(0, 100)}\`);
+  }
+} else {
+  dv.paragraph("本週尚無新收錄。");
+}
+\`\`\`
+
+## 快速篩選
+
+> [!tip]- 立即可用的專案（easy install + 高 stars）
+> \`\`\`dataview
+> TABLE stars AS "Stars", category AS "分類", language AS "語言"
+> FROM "Repos"
+> WHERE install_complexity = "easy" AND status = "to-review"
+> SORT stars_per_day DESC
+> LIMIT 5
+> \`\`\`
+
+> [!tip]- 商業友好授權（MIT/Apache）
+> \`\`\`dataview
+> TABLE stars AS "Stars", license AS "授權", category AS "分類"
+> FROM "Repos"
+> WHERE license = "MIT" OR license = "Apache-2.0"
+> SORT stars DESC
+> LIMIT 5
+> \`\`\`
 
 ## 最近的週報
 
