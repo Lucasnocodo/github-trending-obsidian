@@ -862,6 +862,12 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('> **不該用的情況**：');
   lines.push('> - ');
   lines.push('');
+  lines.push('> [!warning]- 替換成本');
+  lines.push('> 若半年後要換掉，難度多高？資料格式是標準的嗎？');
+  lines.push('> ');
+  lines.push('> 侵入性:: _低 / 中 / 高_');
+  lines.push('> 遷移路徑:: _描述_');
+  lines.push('');
   lines.push('### 想法與筆記');
   lines.push('');
   lines.push('_隨時記錄想法、發現、跟其他工具的比較..._');
