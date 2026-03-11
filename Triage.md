@@ -175,6 +175,7 @@ const sections = [
   { name: "使用情境適合度", pattern: "## 使用情境適合度" },
   { name: "替代方案決策", pattern: "## 替代方案決策" },
   { name: "技術深入分析", pattern: "## 技術深入分析" },
+  { name: "直接競品", pattern: "直接競品" },
 ];
 const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
 const incomplete = [];

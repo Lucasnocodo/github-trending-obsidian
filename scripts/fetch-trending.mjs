@@ -1024,10 +1024,24 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push(extLinks.join(' · '));
   lines.push('');
 
-  // ── 相關收錄（同分類 + 同週）──
+  // ── 相關收錄（同子分類 + 同分類 + 同週 + 共用概念）──
   lines.push('## 相關收錄');
   lines.push('');
   const safeFn = repoFileName(repo.full_name).replace('.md', '');
+  const subcat = llmInfo?.subcategory || '';
+
+  // v16: 同子分類直接競品（最有決策價值）
+  if (subcat) {
+    lines.push(`> [!note]- 直接競品（同子分類：${subcat}）`);
+    lines.push('> ```dataview');
+    lines.push('> TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"');
+    lines.push('> FROM "Repos"');
+    lines.push(`> WHERE subcategory = "${subcat}" AND file.name != "${safeFn}"`);
+    lines.push('> SORT stars DESC');
+    lines.push('> ```');
+    lines.push('');
+  }
+
   lines.push(`> [!note]- 同分類的其他專案`);
   lines.push('> ```dataview');
   lines.push('> TABLE stars, install_complexity AS "難度", status');
@@ -1045,6 +1059,25 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('> SORT stars DESC');
   lines.push('> ```');
   lines.push('');
+
+  // v16: 共用概念的專案（透過知識圖譜找到隱藏關聯）
+  if (llmInfo?.related_concepts?.length) {
+    lines.push('> [!note]- 共用概念的相關專案');
+    lines.push('> ```dataviewjs');
+    lines.push(`> const concepts = ${JSON.stringify(llmInfo.related_concepts)};`);
+    lines.push('> const pages = dv.pages(\'"Repos"\')')
+    lines.push(`>   .where(p => p.file.name !== "${safeFn}" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))`);
+    lines.push('>   .sort(p => p.stars, "desc")');
+    lines.push('>   .limit(5);');
+    lines.push('> if (pages.length > 0) {');
+    lines.push('>   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {');
+    lines.push('>     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));');
+    lines.push('>     return [p.file.link, p.stars, p.category, shared.join(", ")];');
+    lines.push('>   }));');
+    lines.push('> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }');
+    lines.push('> ```');
+    lines.push('');
+  }
 
   // ── 個人筆記區 ──
   lines.push('---');
@@ -3222,7 +3255,8 @@ function needsRefresh(content) {
          !content.includes('engagement:') ||    // v12: 參與度指標
          !content.includes('ring_history:') ||     // v13: 狀態變更歷程
          !content.includes('成熟度評估') ||            // v14: 成熟度評估 + 強化替代方案 + 預期輸出
-         !content.includes('## 開發動態');              // v15: 開發動態 + 熱門議題
+         !content.includes('## 開發動態') ||             // v15: 開發動態 + 熱門議題
+         !content.includes('直接競品');                   // v16: 同子分類競品 + 共用概念
 }
 
 function hasLLMContent(content) {
