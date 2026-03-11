@@ -4362,7 +4362,8 @@ async function refreshRepos(token, failedOnly = false) {
             repoClone._readme = repoClone._readme.slice(0, truncLen);
             console.log(`  Truncating README to ${truncLen} chars for retry...`);
           }
-          const result = await callLLMBatch([repoClone], token, refreshVaultNames);
+          let result = await callLLMBatch([repoClone], token, refreshVaultNames);
+          if (!Array.isArray(result)) result = [result];
           if (result?.[0]) {
             const r = result[0];
             llmMap[r.repo] = r;
