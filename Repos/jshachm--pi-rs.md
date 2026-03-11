@@ -27,6 +27,8 @@ use_case: "提供一個輕量化的 Rust 版 AI 編程助手，支持多種 LLM 
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "medium"
 verdict: ""
 tags:
   - github

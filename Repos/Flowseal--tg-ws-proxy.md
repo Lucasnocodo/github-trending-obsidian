@@ -27,6 +27,8 @@ use_case: "透過 SOCKS5 代理加速 Telegram 的加載速度，讓使用者享
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "low"
 verdict: ""
 tags:
   - github

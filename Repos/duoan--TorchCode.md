@@ -27,6 +27,8 @@ use_case: "提供一個結構化的環境，讓你練習從零實作 PyTorch 核
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-13"
+engagement: "low"
 verdict: ""
 tags:
   - github

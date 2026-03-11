@@ -27,6 +27,8 @@ use_case: "在 Apple Silicon 上實現無需 PyTorch 的自動化 AI 研究循�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-13"
+engagement: "medium"
 verdict: ""
 tags:
   - github

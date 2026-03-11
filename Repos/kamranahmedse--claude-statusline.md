@@ -27,6 +27,8 @@ use_case: "讓你的 Claude Code 狀態列顯示限制、目錄和 Git 資訊，
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "low"
 verdict: ""
 tags:
   - github

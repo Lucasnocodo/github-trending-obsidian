@@ -27,6 +27,8 @@ use_case: "提供一個輕量級的推論引擎，支持快速的推測性解碼
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "low"
 verdict: ""
 tags:
   - github

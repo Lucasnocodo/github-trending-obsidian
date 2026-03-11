@@ -27,6 +27,8 @@ use_case: "讓你只需一句話就能生成專業級的海報和封面設計，
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "low"
 verdict: ""
 tags:
   - github

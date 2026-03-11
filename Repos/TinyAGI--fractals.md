@@ -27,6 +27,8 @@ use_case: "讓高階任務自動分解成可執行的子任務，並用代理群
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "low"
 verdict: ""
 tags:
   - github

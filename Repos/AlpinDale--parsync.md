@@ -27,6 +27,8 @@ use_case: "提供高效的 SSH 檔案同步，支持斷點續傳與並行傳輸�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "low"
 verdict: ""
 tags:
   - github

@@ -27,6 +27,8 @@ use_case: "提供一個 TypeScript 客戶端，讓開發者能夠透過 WeChat O
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-13"
+engagement: "high"
 verdict: ""
 tags:
   - github

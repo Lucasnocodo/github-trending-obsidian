@@ -27,6 +27,8 @@ use_case: "將數字轉換為終端圖表，讓數據可視化變得簡單。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "low"
 verdict: ""
 tags:
   - github

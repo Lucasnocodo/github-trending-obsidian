@@ -27,6 +27,8 @@ use_case: "讓 AI 積極面對問題，避免放棄，提升調試效率。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-13"
+engagement: "low"
 verdict: ""
 tags:
   - github

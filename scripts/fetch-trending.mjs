@@ -386,6 +386,24 @@ async function fileExists(path) {
   }
 }
 
+// ── v12: 間隔複習日期計算 ──────────────────────────────────
+function nextReviewDate(today, starsPerDay) {
+  const d = new Date(today);
+  // 高優先 3 天後、中 7 天、低 14 天
+  const days = starsPerDay >= 200 ? 3 : starsPerDay >= 30 ? 7 : 14;
+  d.setDate(d.getDate() + days);
+  return d.toISOString().split('T')[0];
+}
+
+// ── v12: 參與度指標（forks/stars ratio）──────────────────────
+function engagementLevel(stars, forks) {
+  if (!stars || stars === 0) return '"unknown"';
+  const ratio = forks / stars;
+  if (ratio >= 0.3) return '"high"';
+  if (ratio >= 0.1) return '"medium"';
+  return '"low"';
+}
+
 // ── 個別 Repo Note 產生 ────────────────────────────────────
 
 function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
@@ -429,6 +447,8 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     `ring: assess`,
     `discovered_via: "GitHub Trending"`,
     `appearances: 1`,
+    `next_review: "${nextReviewDate(today, rate)}"`,
+    `engagement: ${engagementLevel(repo.stargazers_count, repo.forks_count)}`,
     `verdict: ""`,
     'tags:',
     '  - github',
@@ -512,7 +532,10 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     lines.push(`> **安裝難度** ${installIcon} · **專案狀態** ${ageLabel} · **熱度** ${momentumLabel} (${fmt(rate)} stars/day)`);
     const contribCount = repo._contributors?.length || 0;
     const busFactor = contribCount <= 1 ? 'Solo (bus factor 風險)' : contribCount <= 3 ? `${contribCount} 人` : `${contribCount}+ 人`;
-    lines.push(`> **授權** ${licenseLabel} · **維護** ${maintLabel}${maintDetail ? ` (${maintDetail})` : ''} · **貢獻者** ${busFactor}`);
+    // 參與度
+    const forkRatio = repo.stargazers_count > 0 ? (repo.forks_count / repo.stargazers_count) : 0;
+    const engageLabel = forkRatio >= 0.3 ? 'High' : forkRatio >= 0.1 ? 'Medium' : 'Low';
+    lines.push(`> **授權** ${licenseLabel} · **維護** ${maintLabel}${maintDetail ? ` (${maintDetail})` : ''} · **貢獻者** ${busFactor} · **參與度** ${engageLabel}`);
     if (llmInfo?.target_audience) {
       lines.push(`> **適合** ${llmInfo.target_audience}`);
     }
@@ -1059,6 +1082,43 @@ if (actions.length > 0) {
   dv.list(actions);
 } else {
   dv.paragraph("所有專案都已處理完畢！");
+}
+\`\`\`
+
+## 今日待複習
+
+> [!tip] 根據間隔複習排程，以下專案該回顧了
+
+\`\`\`dataview
+TABLE
+  next_review AS "預定複習日",
+  stars_per_day AS "Stars/天",
+  category AS "分類",
+  use_case AS "用途",
+  priority AS "優先級"
+FROM "Repos"
+WHERE next_review AND date(next_review) <= date(today) AND status != "archived"
+SORT date(next_review) ASC
+\`\`\`
+
+## 參與度分析
+
+> [!info] Fork/Star 比率反映社群實際使用程度
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.engagement);
+const groups = { high: [], medium: [], low: [] };
+for (const p of pages) {
+  const e = p.engagement?.toString() || "low";
+  if (groups[e]) groups[e].push(p);
+}
+dv.paragraph(\`**High** (fork 比 >=30%): \${groups.high.length} · **Medium** (10-30%): \${groups.medium.length} · **Low** (<10%): \${groups.low.length}\`);
+if (groups.high.length > 0) {
+  dv.header(4, "高參與度專案");
+  dv.table(
+    ["專案", "Stars", "Forks", "分類"],
+    groups.high.sort((a,b) => (b.stars||0) - (a.stars||0)).map(p => [p.file.link, p.stars, p.forks, p.category])
+  );
 }
 \`\`\`
 
@@ -1978,6 +2038,22 @@ SORT first_seen DESC
 LIMIT 10
 \`\`\`
 
+## 今日待複習
+
+> [!tip] 間隔複習排程：到期的專案會自動出現在這裡
+
+\`\`\`dataview
+TABLE
+  next_review AS "複習日",
+  stars_per_day AS "Stars/天",
+  category AS "分類",
+  priority AS "優先級"
+FROM "Repos"
+WHERE next_review AND date(next_review) <= date(today) AND status != "archived"
+SORT priority DESC, date(next_review) ASC
+LIMIT 8
+\`\`\`
+
 ## 待回顧（優先）
 
 \`\`\`dataview
@@ -2069,6 +2145,13 @@ LIMIT 3
 > [!info] 關於這個 Vault
 > 由 [GitHub Actions](https://github.com/Lucasnocodo/github-trending-obsidian) 每日自動更新。
 > 使用 GitHub Models API (gpt-4o-mini) 產生中文摘要和分析。
+>
+> **使用流程**：
+> 1. 每日查看「今日待複習」，花 5 分鐘快速掃描
+> 2. 有興趣的專案修改 frontmatter: \`status: reading\`
+> 3. 試用後填寫「個人筆記 → 試用記錄」
+> 4. 評估完更新 \`ring\`（adopt/trial/hold）和 \`verdict\`
+> 5. 低價值專案會在 14 天後自動封存
 `;
 }
 
@@ -2407,6 +2490,39 @@ async function autoCrossLink() {
   }
 }
 
+// ── v12: 自動封存過期的低優先 to-review 筆記 ─────────────────
+async function autoArchiveStale() {
+  const { readdir } = await import('fs/promises');
+  const files = await readdir(REPOS_DIR).catch(() => []);
+  const mdFiles = files.filter(f => f.endsWith('.md'));
+  let archivedCount = 0;
+
+  for (const file of mdFiles) {
+    const filePath = join(REPOS_DIR, file);
+    const content = await readFile(filePath, 'utf-8');
+
+    // 只處理 status: to-review + priority: low
+    const status = content.match(/^status: (.+)$/m)?.[1];
+    const priority = content.match(/^priority: (.+)$/m)?.[1];
+    if (status !== 'to-review' || priority !== 'low') continue;
+
+    // 檢查 first_seen 是否超過 14 天
+    const firstSeen = content.match(/^first_seen: (.+)$/m)?.[1];
+    if (!firstSeen) continue;
+    const daysSince = Math.floor((Date.now() - new Date(firstSeen).getTime()) / 86400000);
+    if (daysSince < 14) continue;
+
+    // 自動封存
+    const updated = content.replace(/^status: to-review$/m, 'status: archived');
+    await writeFile(filePath, updated, 'utf-8');
+    archivedCount++;
+  }
+
+  if (archivedCount > 0) {
+    console.log(`Auto-archive: ${archivedCount} stale low-priority repos archived`);
+  }
+}
+
 // ── Main ────────────────────────────────────────────────────
 
 async function main() {
@@ -2526,6 +2642,25 @@ async function main() {
             promoted = promoted.replace(/^priority: .+$/m, 'priority: high');
             console.log(`  Priority promoted to high (appeared ${appearanceCount} times)`);
           }
+          // v12: 再次上榜 → 重置複習日期（3 天後）+ 更新參與度
+          const newRate = starsPerDay(repo.stargazers_count, repo.created_at);
+          const newReview = nextReviewDate(today, newRate);
+          if (promoted.includes('next_review:')) {
+            promoted = promoted.replace(/^next_review: ".+"$/m, `next_review: "${newReview}"`);
+          } else {
+            promoted = promoted.replace(/^appearances: .+$/m, `$&\nnext_review: "${newReview}"`);
+          }
+          const newEngagement = engagementLevel(repo.stargazers_count, repo.forks_count);
+          if (promoted.includes('engagement:')) {
+            promoted = promoted.replace(/^engagement: .+$/m, `engagement: ${newEngagement}`);
+          } else {
+            promoted = promoted.replace(/^next_review: .+$/m, `$&\nengagement: ${newEngagement}`);
+          }
+          // 如果被自動封存了，再次上榜時恢復
+          if (promoted.match(/^status: archived$/m)) {
+            promoted = promoted.replace(/^status: archived$/m, 'status: to-review');
+            console.log(`  Unarchived: ${fileName} (re-appeared on trending)`);
+          }
           await writeFile(filePath, promoted, 'utf-8');
           console.log(`  Updated: ${fileName} (再次上榜)`);
           updatedNoteCount++;
@@ -2583,6 +2718,9 @@ async function main() {
 
   // 8.8 自動交叉連結（為同類別的 vault-internal repo 建立 wikilinks）
   await autoCrossLink();
+
+  // 8.9 自動封存：低優先、超過 14 天未動的 to-review 筆記
+  await autoArchiveStale();
 
   // 9. 更新 seen repos
   for (const repo of detailedRepos) {
@@ -2688,7 +2826,9 @@ function needsRefresh(content) {
          !content.includes('verdict:') ||     // v8: 一句話結論
          !content.includes('新手體驗') ||      // v9: 豐富內容（deep_dive+onboarding+alternatives）
          !content.includes('**維護**') ||       // v10: 維護健康指標
-         !content.includes('appearances:');     // v11: 出現次數追蹤
+         !content.includes('appearances:') ||   // v11: 出現次數追蹤
+         !content.includes('next_review:') ||   // v12: 間隔複習日期
+         !content.includes('engagement:');      // v12: 參與度指標
 }
 
 function hasLLMContent(content) {
@@ -2937,6 +3077,11 @@ async function refreshRepos(token, failedOnly = false) {
       const savedAppearances = item.content.match(/^appearances: (\d+)$/m)?.[1];
       if (savedAppearances) {
         merged = merged.replace(/^appearances: \d+$/m, `appearances: ${savedAppearances}`);
+      }
+      // 保留使用者可能修改過的 next_review
+      const savedNextReview = item.content.match(/^next_review: "(.+)"$/m)?.[1];
+      if (savedNextReview) {
+        merged = merged.replace(/^next_review: ".+"$/m, `next_review: "${savedNextReview}"`);
       }
       if (savedWeek) {
         merged = merged.replace(/^week: ".+"$/m, `week: "${savedWeek}"`);

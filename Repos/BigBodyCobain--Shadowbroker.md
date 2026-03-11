@@ -27,6 +27,8 @@ use_case: "提供一個整合的即時開源情報平台，追蹤全球的航空
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-13"
+engagement: "medium"
 verdict: ""
 tags:
   - github

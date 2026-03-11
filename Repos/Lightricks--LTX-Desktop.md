@@ -27,6 +27,8 @@ use_case: "讓使用者能在本地生成視頻，無需依賴雲端服務。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "medium"
 verdict: ""
 tags:
   - github

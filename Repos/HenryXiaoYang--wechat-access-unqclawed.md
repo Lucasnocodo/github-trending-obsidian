@@ -27,6 +27,8 @@ use_case: "透過微信掃碼登入獲取 token，實現與 AGP WebSocket 的雙
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-13"
+engagement: "medium"
 verdict: ""
 tags:
   - github

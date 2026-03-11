@@ -27,6 +27,8 @@ use_case: "提供一個簡單的方式來建立能與系統互動的 AI agent。
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "low"
 verdict: ""
 tags:
   - github

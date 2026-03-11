@@ -27,6 +27,8 @@ use_case: "讓使用者透過多視角擴散模型生成新視點的影像。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "low"
 verdict: ""
 tags:
   - github

@@ -27,6 +27,8 @@ use_case: "讓大型語言模型擺脫拒絕行為的束縛，實現自由對話
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-13"
+engagement: "medium"
 verdict: ""
 tags:
   - github

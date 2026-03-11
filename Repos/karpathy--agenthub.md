@@ -21,6 +21,8 @@ install_complexity: "medium"
 status: archived
 my_rating: 0
 last_reviewed: 2026-03-10
+next_review: "2026-03-13"
+engagement: "low"
 tags:
   - github
   - "category/開發工具"

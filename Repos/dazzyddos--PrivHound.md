@@ -27,6 +27,8 @@ use_case: "將 Windows 本地權限提升的攻擊路徑以圖形方式呈現，
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "low"
 verdict: ""
 tags:
   - github

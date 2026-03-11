@@ -27,6 +27,8 @@ use_case: "將專案工作轉化為獨立的自動化執行，讓開發者專注
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "low"
 verdict: ""
 tags:
   - github

@@ -27,6 +27,8 @@ use_case: "提供 AI agent 原生接入加密貨幣的技能市場。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "medium"
 verdict: ""
 tags:
   - github

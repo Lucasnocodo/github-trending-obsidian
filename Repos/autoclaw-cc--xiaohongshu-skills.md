@@ -27,6 +27,8 @@ use_case: "自動化管理小紅書帳號，讓你輕鬆發布、互動和分析
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "medium"
 verdict: ""
 tags:
   - github

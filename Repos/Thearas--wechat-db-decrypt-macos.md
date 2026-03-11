@@ -27,6 +27,8 @@ use_case: "解密微信 4.1 数据库，讓你輕鬆導出聊天記錄。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "high"
 verdict: ""
 tags:
   - github

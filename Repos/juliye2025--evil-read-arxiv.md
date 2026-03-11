@@ -27,6 +27,8 @@ use_case: "自動化研究論文的搜索、推薦、分析和整理，讓你輕
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "medium"
 verdict: ""
 tags:
   - github

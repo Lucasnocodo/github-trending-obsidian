@@ -27,6 +27,8 @@ use_case: "讓任何人都能建造一架多用途的變形無人機，適應各
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "medium"
 verdict: ""
 tags:
   - github

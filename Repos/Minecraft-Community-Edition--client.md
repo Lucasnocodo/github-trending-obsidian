@@ -27,6 +27,8 @@ use_case: "提供一個開放的 Minecraft 客戶端，讓玩家能夠自訂和�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "medium"
 verdict: ""
 tags:
   - github

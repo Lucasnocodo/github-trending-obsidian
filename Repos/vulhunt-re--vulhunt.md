@@ -27,6 +27,8 @@ use_case: "幫助安全研究人員在軟體二進位檔和 UEFI 韌體中發現
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-17"
+engagement: "low"
 verdict: ""
 tags:
   - github

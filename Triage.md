@@ -33,6 +33,21 @@ if (pages.length === 0) {
 }
 ```
 
+## 今日到期複習
+
+> [!tip] 根據間隔複習排程，以下專案到了該回顧的時間
+
+```dataview
+TABLE
+  next_review AS "複習日",
+  stars_per_day AS "Stars/天",
+  category AS "分類",
+  engagement AS "參與度"
+FROM "Repos"
+WHERE next_review AND date(next_review) <= date(today) AND status != "archived"
+SORT priority DESC, date(next_review) ASC
+```
+
 ## High Priority（優先處理）
 
 ```dataview
@@ -133,7 +148,7 @@ if (favCats.size === 0) {
 
 ## 歸檔候選
 
-> [!warning] 低優先度且長期未回顧，考慮歸檔
+> [!warning] 低優先度且長期未回顧（v12 起會自動封存）
 
 ```dataview
 TABLE

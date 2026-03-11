@@ -27,6 +27,8 @@ use_case: "讓任何 MCP 伺服器或 OpenAPI 規範即時轉換為 CLI，無需
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
+next_review: "2026-03-13"
+engagement: "low"
 verdict: ""
 tags:
   - github
