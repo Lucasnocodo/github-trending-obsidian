@@ -48,6 +48,16 @@
       "width": 350,
       "height": 300,
       "color": "5"
+    },
+    {
+      "id": "inbox",
+      "type": "text",
+      "text": "## Inbox (待評估)\n\n```dataview\nLIST\nFROM \"Repos\"\nWHERE my_rating = 0 AND status = \"to-review\" AND stars_per_day >= 100\nSORT stars_per_day DESC\nLIMIT 10\n```",
+      "x": -200,
+      "y": 700,
+      "width": 400,
+      "height": 300,
+      "color": "3"
     }
   ],
   "edges": [
@@ -77,6 +87,20 @@
       "fromNode": "trial",
       "fromSide": "bottom",
       "toNode": "hold",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "assess",
+      "fromSide": "bottom",
+      "toNode": "inbox",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "hold",
+      "fromSide": "bottom",
+      "toNode": "inbox",
       "toSide": "top"
     }
   ]
