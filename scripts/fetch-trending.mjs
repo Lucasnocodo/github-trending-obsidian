@@ -2457,6 +2457,72 @@ if (returning.length > 0) {
 }
 \`\`\`
 
+## 跨週比較
+
+> [!abstract] 本週 vs 上週的趨勢變化
+
+\`\`\`dataviewjs
+// 計算上一週的 weekStr
+const parts = "${weekStr}".split("-W");
+const y = parseInt(parts[0]);
+const w = parseInt(parts[1]);
+const prevW = w === 1 ? 52 : w - 1;
+const prevY = w === 1 ? y - 1 : y;
+const prevStr = prevY + "-W" + String(prevW).padStart(2, "0");
+
+const thisWeek = dv.pages('"Repos"').where(p => p.week === "${weekStr}");
+const lastWeek = dv.pages('"Repos"').where(p => p.week === prevStr);
+
+if (lastWeek.length > 0) {
+  const thisCats = {};
+  for (const p of thisWeek) { const c = p.category || "其他"; thisCats[c] = (thisCats[c] || 0) + 1; }
+  const lastCats = {};
+  for (const p of lastWeek) { const c = p.category || "其他"; lastCats[c] = (lastCats[c] || 0) + 1; }
+  const allCats = new Set([...Object.keys(thisCats), ...Object.keys(lastCats)]);
+  const rows = [...allCats].map(cat => {
+    const cur = thisCats[cat] || 0;
+    const prev = lastCats[cat] || 0;
+    const delta = cur - prev;
+    const arrow = delta > 0 ? "+" + delta : delta === 0 ? "=" : String(delta);
+    return [cat, prev, cur, arrow];
+  }).sort((a, b) => b[2] - a[2]);
+  dv.paragraph(\`**本週** \${thisWeek.length} 個 vs **上週** \${lastWeek.length} 個（\${thisWeek.length > lastWeek.length ? "+" : ""}\${thisWeek.length - lastWeek.length}）\`);
+  dv.table(["分類", prevStr, "${weekStr}", "變化"], rows);
+} else {
+  dv.paragraph("_無上週資料可供比較_");
+}
+\`\`\`
+
+## 本週決策分數 Top 5
+
+> [!abstract] 綜合熱度、易用性、成熟度、社群、授權計算
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.week === "${weekStr}");
+const scored = [];
+for (const p of pages) {
+  let score = 0;
+  const spd = p.stars_per_day || 0;
+  score += Math.min(25, Math.round(spd / 40 * 25));
+  score += p.install_complexity === "easy" ? 20 : p.install_complexity === "medium" ? 12 : 5;
+  const created = p.created ? new Date(p.created.toString()) : null;
+  const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : 0;
+  score += age > 365 ? 20 : age > 180 ? 16 : age > 30 ? 10 : 5;
+  const forks = p.forks || 0;
+  score += forks > 200 ? 20 : forks > 50 ? 15 : forks > 10 ? 10 : 5;
+  const lic = p.license || "";
+  score += ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unlicense"].includes(lic) ? 15 : lic && lic !== "N/A" ? 8 : 0;
+  const grade = score >= 80 ? "A" : score >= 60 ? "B" : score >= 40 ? "C" : "D";
+  scored.push([p.file.link, grade, score, p.category || "", p.install_complexity || ""]);
+}
+scored.sort((a, b) => b[2] - a[2]);
+if (scored.length > 0) {
+  dv.table(["專案", "等級", "總分", "分類", "安裝"], scored.slice(0, 5));
+} else {
+  dv.paragraph("_本週尚無收錄_");
+}
+\`\`\`
+
 ---
 
 ## Editor's Pick（本週精選）
