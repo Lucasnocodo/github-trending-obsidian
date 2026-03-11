@@ -243,6 +243,8 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 
 27. "adoption_cost": 物件，評估採用這個工具的總成本。包含：{"learning_hours": 預估學習時間（小時，整數）, "integration_hours": 預估整合到現有專案的時間（小時，整數）, "maintenance_burden": "low/medium/high（需要多少持續維護投入）", "lock_in_risk": "low/medium/high（被綁定在這個工具上的風險）", "verdict": "一句話總結：花 X 小時學、Y 小時整合，得到 Z 效果，值不值得"}。這幫助讀者做「投入 vs 回報」的決策
 
+28. "security_note": 2-4 句話的安全性快速評估。評估面向：(1) 這個工具本身是否需要高權限（root/admin/sudo/API keys）？(2) 它會存取什麼敏感資料（檔案系統、網路、環境變數、credentials）？(3) 依賴鏈的信任程度（是否有已知的供應鏈風險、大量未審計的 transitive dependencies）？(4) 在 CI/CD 中使用是否安全？如果是安全工具本身，改為評估它的偵測能力和誤報率。不需要過度警告——如果這是個純前端 UI 庫，說「低風險：純前端套件，不存取後端資源」即可。重點是幫讀者快速判斷「把這個東西放進我的專案/pipeline 安全嗎」
+
 回傳 JSON 陣列，只回傳 JSON，不要加 markdown 標記。`;
 
 function buildRepoPrompt(repos) {
@@ -311,7 +313,7 @@ async function callLLMBatch(repos, token, vaultRepoNames = null) {
         { role: 'user', content: prompt },
       ],
       temperature: 0.3,
-      max_tokens: 16384,  // 27 JSON fields per repo at BATCH_SIZE=1
+      max_tokens: 16384,  // 28 JSON fields per repo at BATCH_SIZE=1
     }),
   });
   if (!res.ok) {
@@ -933,6 +935,15 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     }
   }
 
+  // ── v20: 安全性快速評估 ──
+  if (llmInfo?.security_note) {
+    lines.push('## 安全性評估');
+    lines.push('');
+    lines.push('> [!warning] 安全性快速掃描');
+    lines.push(`> ${llmInfo.security_note}`);
+    lines.push('');
+  }
+
   // ── 健康度儀表板 ──
   lines.push('## 健康度儀表板');
   lines.push('');
@@ -1173,6 +1184,68 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('> if (rank > 0) {');
   lines.push('>   const pct = Math.round((1 - rank / all.length) * 100);');
   lines.push('>   dv.paragraph(`Stars/天排名：**全 vault 第 ${rank}**/${all.length}（前 ${100 - pct}%）· **${me.category} 第 ${catRank}**/${catAll.length}\\nStars 總量排名：**第 ${starsRank}**/${totalStarsAll.length}`);');
+  lines.push('> }');
+  lines.push('> ```');
+  lines.push('');
+
+  // ── v20: Star 趨勢圖 ──
+  lines.push('## Star 趨勢');
+  lines.push('');
+  lines.push('> [!abstract]- Stars 成長追蹤');
+  lines.push('> ```dataviewjs');
+  lines.push(`> const me = dv.page("Repos/${safeFn}");`);
+  lines.push('> if (me?.star_history) {');
+  lines.push('>   const raw = me.star_history.toString();');
+  lines.push('>   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));');
+  lines.push('>   if (points.length >= 2) {');
+  lines.push('>     const max = Math.max(...points.map(p => p.stars));');
+  lines.push('>     const lines = points.map(p => {');
+  lines.push('>       const w = Math.round(p.stars / max * 25);');
+  lines.push('>       return `${p.date} ${"\\u2588".repeat(w)}${"\\u2591".repeat(25-w)} ${p.stars.toLocaleString()}`;');
+  lines.push('>     });');
+  lines.push('>     const first = points[0].stars;');
+  lines.push('>     const last = points[points.length-1].stars;');
+  lines.push('>     const growth = first > 0 ? Math.round((last - first) / first * 100) : 0;');
+  lines.push('>     lines.push(`\\n**成長** +${(last-first).toLocaleString()} stars（${growth}%）in ${points.length} snapshots`);');
+  lines.push('>     dv.paragraph(lines.join("\\n"));');
+  lines.push('>   } else { dv.paragraph("需要 2+ 次快照才能顯示趨勢"); }');
+  lines.push('> } else { dv.paragraph("尚無 star_history 資料（下次出現在 trending 時會開始追蹤）"); }');
+  lines.push('> ```');
+  lines.push('');
+
+  // ── v20: 快速決策分數 ──
+  lines.push('## 決策分數');
+  lines.push('');
+  lines.push('> [!abstract]- 綜合評估（自動計算）');
+  lines.push('> ```dataviewjs');
+  lines.push(`> const me = dv.page("Repos/${safeFn}");`);
+  lines.push('> if (me) {');
+  lines.push('>   let score = 0;');
+  lines.push('>   let breakdown = [];');
+  lines.push('>   // 熱度 (0-25)');
+  lines.push('>   const spd = me.stars_per_day || 0;');
+  lines.push('>   const heat = Math.min(25, Math.round(spd / 40 * 25));');
+  lines.push('>   score += heat; breakdown.push(`熱度: ${heat}/25`);');
+  lines.push('>   // 安裝難度 (0-20)');
+  lines.push('>   const inst = me.install_complexity === "easy" ? 20 : me.install_complexity === "medium" ? 12 : 5;');
+  lines.push('>   score += inst; breakdown.push(`易用性: ${inst}/20`);');
+  lines.push('>   // 成熟度 (0-20)');
+  lines.push('>   const created = me.created ? new Date(me.created.toString()) : null;');
+  lines.push('>   const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : 0;');
+  lines.push('>   const mat = age > 365 ? 20 : age > 180 ? 16 : age > 30 ? 10 : 5;');
+  lines.push('>   score += mat; breakdown.push(`成熟度: ${mat}/20`);');
+  lines.push('>   // 社群 (0-20)');
+  lines.push('>   const forks = me.forks || 0;');
+  lines.push('>   const comm = forks > 200 ? 20 : forks > 50 ? 15 : forks > 10 ? 10 : 5;');
+  lines.push('>   score += comm; breakdown.push(`社群: ${comm}/20`);');
+  lines.push('>   // 授權 (0-15)');
+  lines.push('>   const lic = me.license || "";');
+  lines.push('>   const friendly = ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unlicense"].includes(lic);');
+  lines.push('>   const licScore = friendly ? 15 : lic && lic !== "N/A" ? 8 : 0;');
+  lines.push('>   score += licScore; breakdown.push(`授權: ${licScore}/15`);');
+  lines.push('>   const grade = score >= 80 ? "A" : score >= 60 ? "B" : score >= 40 ? "C" : "D";');
+  lines.push('>   const bar = "\\u2588".repeat(Math.round(score/5)) + "\\u2591".repeat(20 - Math.round(score/5));');
+  lines.push('>   dv.paragraph(`## ${grade} (${score}/100)\\n${bar}\\n\\n${breakdown.join(" | ")}`);');
   lines.push('> }');
   lines.push('> ```');
   lines.push('');
@@ -4000,7 +4073,9 @@ function needsRefresh(content) {
          !content.includes('直接競品') ||                  // v16: 同子分類競品 + 共用概念
          !content.includes('## Vault 排名') ||             // v18: 相對排名 + 分類圓餅圖
          !content.includes('同 Owner 專案') ||              // v19: 同 Owner + 同語言 + 強化排名
-         !content.includes('健康度儀表板');                 // v19: 健康度 + 採用成本 + 擴大 summary
+         !content.includes('健康度儀表板') ||              // v19: 健康度 + 採用成本 + 擴大 summary
+         !content.includes('## Star 趨勢') ||              // v20: star 趨勢圖 + 決策分數 + 安全評估
+         !content.includes('## 決策分數');                  // v20: 綜合決策分數
 }
 
 function hasLLMContent(content) {

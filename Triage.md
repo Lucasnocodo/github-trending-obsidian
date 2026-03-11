@@ -166,7 +166,7 @@ SORT first_seen ASC
 
 ## 筆記完整度
 
-> [!info] 缺少重要區塊的筆記（v19 標準）
+> [!info] 缺少重要區塊的筆記（v20 標準）
 
 ```dataviewjs
 const sections = [
@@ -181,6 +181,8 @@ const sections = [
   { name: "Vault 排名", pattern: "## Vault 排名" },
   { name: "同 Owner 專案", pattern: "同 Owner 專案" },
   { name: "健康度儀表板", pattern: "健康度儀表板" },
+  { name: "Star 趨勢", pattern: "## Star 趨勢" },
+  { name: "決策分數", pattern: "## 決策分數" },
 ];
 const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
 const incomplete = [];
@@ -193,7 +195,7 @@ for (const p of pages) {
 }
 incomplete.sort((a, b) => b.stars - a.stars);
 if (incomplete.length > 0) {
-  dv.paragraph(`**${incomplete.length}** 個筆記缺少 3+ 個 v18 區塊`);
+  dv.paragraph(`**${incomplete.length}** 個筆記缺少 3+ 個 v20 區塊`);
   dv.table(
     ["專案", "Stars/天", "缺少區塊", "缺少數"],
     incomplete.slice(0, 10).map(i => [i.link, i.stars, i.missing, i.count])
