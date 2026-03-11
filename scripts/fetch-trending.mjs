@@ -2289,12 +2289,22 @@ async function main() {
             /^(## 出現記錄\n\n)/m,
             `$1${newEntry}\n`
           );
-          // 更新 frontmatter 中的 stars 和 pushed_at
+          // 更新 frontmatter 中的動態數值
           const final = updated
             .replace(/^stars: \d+$/m, `stars: ${repo.stargazers_count}`)
             .replace(/^stars_per_day: \d+$/m, `stars_per_day: ${starsPerDay(repo.stargazers_count, repo.created_at)}`)
+            .replace(/^forks: \d+$/m, `forks: ${repo.forks_count}`)
+            .replace(/^open_issues: \d+$/m, `open_issues: ${repo.open_issues_count || 0}`)
             .replace(/^pushed_at: .+$/m, `pushed_at: ${repo.pushed_at?.split('T')[0] || 'N/A'}`);
-          await writeFile(filePath, final, 'utf-8');
+          // 多次上榜自動提升 priority（出現 3+ 次 → high）
+          const appearances = (final.match(/^- \[\[/gm) || []).length;
+          const curPriority = final.match(/^priority: (.+)$/m)?.[1];
+          let promoted = final;
+          if (appearances >= 3 && curPriority !== 'high') {
+            promoted = final.replace(/^priority: .+$/m, 'priority: high');
+            console.log(`  Priority promoted to high (appeared ${appearances} times)`);
+          }
+          await writeFile(filePath, promoted, 'utf-8');
           console.log(`  Updated: ${fileName} (再次上榜)`);
           updatedNoteCount++;
         } else {
