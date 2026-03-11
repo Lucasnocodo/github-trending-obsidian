@@ -60,6 +60,42 @@ if (actions.length > 0) {
 }
 ```
 
+## 今日重訪
+
+> [!abstract] 知識重現
+> 隨機挑選 30 天以上未接觸的筆記，避免知識被遺忘
+
+```dataviewjs
+const repos = dv.pages('"Repos"')
+  .where(p => {
+    if (p.status === "archived") return false;
+    const mtime = p.file.mtime?.ts || 0;
+    return (Date.now() - mtime) > 30 * 86400000;
+  }).array();
+const concepts = dv.pages('"Concepts"')
+  .where(p => {
+    const mtime = p.file.mtime?.ts || 0;
+    return (Date.now() - mtime) > 30 * 86400000;
+  }).array();
+
+const pool = [...repos, ...concepts];
+const sample = pool.sort(() => Math.random() - 0.5).slice(0, 5);
+
+if (sample.length > 0) {
+  dv.table(
+    ["筆記", "類型", "最後修改", "距今天數"],
+    sample.map(p => {
+      const mtime = p.file.mtime?.ts || 0;
+      const days = Math.round((Date.now() - mtime) / 86400000);
+      const type = p.file.folder === "Repos" ? "Repo" : "Concept";
+      return [p.file.link, type, p.file.mtime?.toFormat?.("yyyy-MM-dd") || "N/A", days + " 天"];
+    })
+  );
+} else {
+  dv.paragraph("所有筆記都在 30 天內有修改，做得好！");
+}
+```
+
 ## 收錄時間軸
 
 ```dataview
@@ -330,7 +366,9 @@ for (const p of pages) {
 dv.table(["專案", "速度", "安裝", "分類", "一句話"], rows);
 ```
 
-## 孤立筆記（缺少連結）
+## 圖譜健康分析
+
+### 孤立筆記（缺少連結）
 
 > [!warning] 這些筆記沒有跟其他筆記建立連結，Graph View 中會是孤島
 
@@ -355,6 +393,59 @@ if (orphans.length > 0) {
 } else {
   dv.paragraph("所有筆記都有足夠的連結！");
 }
+```
+
+### Hub 集中度
+
+> [!info] 被最多筆記引用的節點 — 過度集中代表分類太粗或連結單一化
+
+```dataviewjs
+const allPages = dv.pages('"Repos" or "Concepts"');
+const hubMap = {};
+for (const p of allPages) {
+  const inCount = p.file.inlinks?.length || 0;
+  if (inCount >= 5) {
+    hubMap[p.file.name] = { link: p.file.link, inlinks: inCount, folder: p.file.folder };
+  }
+}
+const hubs = Object.values(hubMap).sort((a, b) => b.inlinks - a.inlinks).slice(0, 10);
+if (hubs.length > 0) {
+  const totalLinks = Object.values(hubMap).reduce((s, h) => s + h.inlinks, 0);
+  const topPct = hubs.length > 0 ? Math.round((hubs[0].inlinks / totalLinks) * 100) : 0;
+  if (topPct > 40) {
+    dv.paragraph(`> [!caution] 最大 hub (${hubs[0].link}) 佔所有入連結的 ${topPct}%，圖譜過度集中`);
+  }
+  dv.table(
+    ["節點", "入連結數", "類型"],
+    hubs.map(h => [h.link, h.inlinks, h.folder])
+  );
+} else {
+  dv.paragraph("目前沒有 hub 節點（入連結 >= 5），圖譜較為分散。");
+}
+```
+
+### 圖譜統計
+
+```dataviewjs
+const repos = dv.pages('"Repos"');
+const concepts = dv.pages('"Concepts"');
+const totalPages = repos.length + concepts.length;
+let totalLinks = 0;
+let orphanCount = 0;
+for (const p of [...repos, ...concepts]) {
+  const links = (p.file.outlinks?.length || 0) + (p.file.inlinks?.length || 0);
+  totalLinks += links;
+  if (links < 3) orphanCount++;
+}
+const avgLinks = totalPages > 0 ? (totalLinks / totalPages).toFixed(1) : 0;
+const orphanPct = totalPages > 0 ? Math.round((orphanCount / totalPages) * 100) : 0;
+const health = orphanPct > 50 ? "需改善" : orphanPct > 25 ? "普通" : "良好";
+dv.paragraph([
+  `**節點** ${totalPages} 個（${repos.length} repos + ${concepts.length} concepts）`,
+  `**平均連結數** ${avgLinks}`,
+  `**孤立比例** ${orphanCount}/${totalPages} (${orphanPct}%)`,
+  `**健康度** ${health}`
+].join(" · "));
 ```
 
 ## 所有專案

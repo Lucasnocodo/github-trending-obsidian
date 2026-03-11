@@ -2508,6 +2508,98 @@ async function generateConceptNotes() {
   console.log(`Concepts: ${Object.keys(conceptCounts).length} found, ${created} new notes created`);
 }
 
+// ── 自動充實 Concept 描述 ────────────────────────────────────
+
+async function enrichConceptDescriptions(token) {
+  if (!token) return;
+  const { readdir } = await import('fs/promises');
+  const files = await readdir(CONCEPTS_DIR).catch(() => []);
+  const placeholder = '用 2-3 句話解釋這個概念';
+
+  // 找出需要描述的概念
+  const needsDesc = [];
+  for (const file of files) {
+    if (!file.endsWith('.md')) continue;
+    const content = await readFile(join(CONCEPTS_DIR, file), 'utf-8');
+    if (content.includes(placeholder)) {
+      const name = file.replace('.md', '');
+      needsDesc.push({ name, file, content });
+    }
+  }
+  if (needsDesc.length === 0) {
+    console.log('Concepts: all have descriptions');
+    return;
+  }
+  console.log(`Concepts: ${needsDesc.length} need descriptions, generating...`);
+
+  // 批次 LLM 呼叫（每次最多 25 個概念）
+  const BATCH = 25;
+  let updated = 0;
+  for (let i = 0; i < needsDesc.length; i += BATCH) {
+    const batch = needsDesc.slice(i, i + BATCH);
+    const names = batch.map(c => c.name);
+    const prompt = `請為以下技術概念各寫一段繁體中文描述（2-3 句話）。
+想像對象是一個聰明但不熟悉這個領域的工程師朋友。
+要求：
+- 用白話文解釋，不要學術腔
+- 第一句解釋「是什麼」，後面解釋「為什麼重要」或「典型應用」
+- 如果有知名工具/框架，舉 2-3 個例子
+- 每個描述獨立成段，不要超過 100 字
+
+回傳 JSON 格式：{"概念名": "描述", ...}
+
+概念列表：
+${names.map((n, idx) => `${idx + 1}. ${n}`).join('\n')}`;
+
+    try {
+      await waitForCooldown();
+      const res = await fetch(LLM_API, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          model: LLM_MODEL,
+          messages: [
+            { role: 'system', content: '你是技術概念解說專家，使用台灣繁體中文。' },
+            { role: 'user', content: prompt },
+          ],
+          temperature: 0.3,
+          max_tokens: 4096,
+        }),
+      });
+      if (!res.ok) {
+        console.warn(`Concept LLM batch ${Math.floor(i/BATCH)+1} failed: HTTP ${res.status}`);
+        continue;
+      }
+      const data = await res.json();
+      let text = data.choices[0].message.content.trim()
+        .replace(/^```json?\n?/m, '')
+        .replace(/\n?```$/m, '');
+      const descs = JSON.parse(text);
+
+      for (const item of batch) {
+        const desc = descs[item.name];
+        if (!desc || desc.length < 10) continue;
+        // 替換 placeholder 文字
+        const newContent = item.content.replace(
+          `_${placeholder}。想像對象是一個聰明但不熟悉這個領域的工程師朋友。_`,
+          desc
+        );
+        if (newContent !== item.content) {
+          await writeFile(join(CONCEPTS_DIR, item.file), newContent, 'utf-8');
+          updated++;
+        }
+      }
+      console.log(`  Batch ${Math.floor(i/BATCH)+1}: updated ${updated} concepts`);
+    } catch (err) {
+      console.warn(`Concept LLM batch error: ${err.message}`);
+    }
+  }
+  console.log(`Concepts: ${updated}/${needsDesc.length} descriptions generated`);
+}
+
 // ── 自動交叉連結 ────────────────────────────────────────────
 
 async function autoCrossLink() {
@@ -2859,6 +2951,9 @@ async function main() {
 
   // 8.7 產生/更新概念筆記
   await generateConceptNotes();
+
+  // 8.7.1 自動充實概念描述（用 LLM 為空白概念生成描述）
+  await enrichConceptDescriptions(token);
 
   // 8.8 自動交叉連結（為同類別的 vault-internal repo 建立 wikilinks）
   await autoCrossLink();
@@ -3280,6 +3375,7 @@ async function refreshRepos(token, failedOnly = false) {
   console.log(`Updated: Monthly/${monthStr}.md`);
 
   await generateConceptNotes();
+  await enrichConceptDescriptions(token);
 
   // refresh 後也自動交叉連結
   await autoCrossLink();
