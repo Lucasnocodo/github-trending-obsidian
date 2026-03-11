@@ -175,3 +175,22 @@ strong:is(:contains("[HIGH]")) {
   padding: 0.2em 0;
   color: var(--text-accent);
 }
+
+/* v20: Star trend bar chart - monospace for alignment */
+.callout[data-callout="abstract"] .dataview p {
+  font-family: var(--font-monospace);
+  font-size: 0.85em;
+  line-height: 1.4;
+  white-space: pre;
+}
+
+/* v20: Decision score grade colors */
+.callout[data-callout="abstract"] .dataview h2 {
+  margin: 0 0 0.3em 0;
+  padding: 0;
+}
+
+/* v20: Security assessment callout */
+.callout[data-callout="warning"] {
+  --callout-color: 255, 152, 0;
+}
