@@ -833,17 +833,24 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('## 專案簡介');
   lines.push('');
   if (llmInfo?.summary) {
-    // 嘗試將長 summary 分段（按句號計數，大約每 4-5 句分一段）
+    // 嘗試將長 summary 分段，按 LLM prompt 結構加上小標題
     const sentences = llmInfo.summary.match(/[^。！？]+[。！？]+/g) || [llmInfo.summary];
-    if (sentences.length >= 12) {
-      // 足夠長，按 LLM prompt 結構分段
-      const chunks = [
-        sentences.slice(0, 4).join(''),
-        sentences.slice(4, 8).join(''),
-        sentences.slice(8, 12).join(''),
-        sentences.slice(12).join(''),
-      ].filter(c => c.trim());
-      lines.push(chunks.join('\n\n'));
+    if (sentences.length >= 16) {
+      // 夠長，分成帶標題的段落（Progressive Summarization style）
+      const sections = [
+        { title: '核心機制', text: sentences.slice(0, 5).join('') },
+        { title: '技術實作', text: sentences.slice(5, 10).join('') },
+        { title: '競品比較', text: sentences.slice(10, 15).join('') },
+        { title: '效果與限制', text: sentences.slice(15, 20).join('') },
+        { title: '觀點與建議', text: sentences.slice(20).join('') },
+      ].filter(s => s.text.trim());
+      lines.push(sections.map(s => `**${s.title}**\n\n${s.text}`).join('\n\n'));
+    } else if (sentences.length >= 8) {
+      // 中等長度，分段但不加標題
+      const mid = Math.ceil(sentences.length / 2);
+      lines.push(sentences.slice(0, mid).join(''));
+      lines.push('');
+      lines.push(sentences.slice(mid).join(''));
     } else {
       lines.push(llmInfo.summary);
     }
