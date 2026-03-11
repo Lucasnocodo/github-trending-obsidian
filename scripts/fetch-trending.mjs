@@ -2366,6 +2366,69 @@ GROUP BY subcategory
 SORT length(rows) DESC
 \`\`\`
 
+## 決策矩陣
+
+> [!tip] 快速比較：哪個最適合你的情境？
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.category === "${category}" && p.status !== "archived");
+if (pages.length > 0) {
+  dv.table(
+    ["專案", "Stars/天", "安裝", "授權", "維護", "評分", "子分類"],
+    pages.sort(p => p.stars_per_day, "desc").map(p => {
+      const pushedAt = p.pushed_at ? new Date(p.pushed_at.toString()) : null;
+      const daysSincePush = pushedAt ? Math.floor((Date.now() - pushedAt.getTime()) / 86400000) : null;
+      const maint = daysSincePush === null ? "?" : daysSincePush <= 7 ? "Active" : daysSincePush <= 30 ? "Moderate" : "Stale";
+      return [
+        p.file.link,
+        p.stars_per_day || 0,
+        p.install_complexity || "?",
+        p.license || "N/A",
+        maint,
+        p.my_rating > 0 ? ("★".repeat(p.my_rating) + "☆".repeat(5 - p.my_rating)) : "未評",
+        p.subcategory || ""
+      ];
+    })
+  );
+} else {
+  dv.paragraph("_此分類無專案_");
+}
+\`\`\`
+
+## 子分類推薦
+
+> [!abstract] 每個子分類中的最佳候選
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.category === "${category}" && p.status !== "archived" && p.subcategory);
+const subs = {};
+for (const p of pages) {
+  const sub = p.subcategory;
+  if (!subs[sub]) subs[sub] = [];
+  subs[sub].push(p);
+}
+
+const rows = [];
+for (const [sub, repos] of Object.entries(subs)) {
+  // 以 stars_per_day 排序，取最高的
+  repos.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0));
+  const best = repos[0];
+  rows.push([
+    sub,
+    repos.length,
+    best.file.link,
+    best.stars_per_day || 0,
+    best.install_complexity || "?",
+    (best.use_case || "").slice(0, 50)
+  ]);
+}
+if (rows.length > 0) {
+  dv.table(["子分類", "專案數", "最熱門", "Stars/天", "安裝", "用途"], rows.sort((a, b) => b[1] - a[1]));
+} else {
+  dv.paragraph("_尚無子分類資料_");
+}
+\`\`\`
+
 ## 相關概念
 
 \`\`\`dataviewjs
