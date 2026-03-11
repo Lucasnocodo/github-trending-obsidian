@@ -180,8 +180,9 @@ function buildRepoPrompt(repos) {
       const parts = [`## ${r.full_name}`];
       parts.push(`描述: ${r.description || 'No description'}`);
       parts.push(`語言: ${Object.keys(r._languages || {}).join(', ') || r.language || 'N/A'}`);
-      parts.push(`Stars: ${r.stargazers_count}, Forks: ${r.forks_count}`);
+      parts.push(`Stars: ${r.stargazers_count}, Forks: ${r.forks_count}, Open Issues: ${r.open_issues_count || 0}`);
       parts.push(`建立: ${r.created_at.split('T')[0]}, 最後推送: ${r.pushed_at?.split('T')[0] || 'N/A'}`);
+      if (r.license?.spdx_id) parts.push(`授權: ${r.license.spdx_id}`);
       if (r._contributors?.length)
         parts.push(`主要貢獻者: ${r._contributors.map((c) => c.login).join(', ')}`);
       if (r._release) parts.push(`最新版本: ${r._release.tag}`);
@@ -822,7 +823,7 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     lines.push('## README 摘錄');
     lines.push('');
     lines.push('> [!info]- 展開查看原文 README');
-    const readmeLines = repo._readme.slice(0, 4000).split('\n');
+    const readmeLines = repo._readme.slice(0, 5000).split('\n');
     for (const rl of readmeLines) {
       lines.push(`> ${rl}`);
     }
