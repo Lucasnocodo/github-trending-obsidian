@@ -73,8 +73,22 @@
     {
       "query": "path:Repos status:archived",
       "color": {
-        "a": 0.5,
+        "a": 0.3,
         "rgb": 8421504
+      }
+    },
+    {
+      "query": "tag:#monthly",
+      "color": {
+        "a": 1,
+        "rgb": 10066329
+      }
+    },
+    {
+      "query": "tag:#triage OR tag:#comparison",
+      "color": {
+        "a": 1,
+        "rgb": 16711935
       }
     },
     {
