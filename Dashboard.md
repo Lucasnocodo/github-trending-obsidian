@@ -339,6 +339,35 @@ if (orphans.length > 0) {
 }
 ```
 
+## 熱門概念（被最多專案引用）
+
+```dataviewjs
+const pages = dv.pages('"Repos"');
+const conceptCounts = {};
+for (const p of pages) {
+  const extMatch = p.file.outlinks?.filter(l => {
+    const target = dv.page(l.path);
+    return target?.tags?.includes("concept");
+  }) || [];
+  for (const link of extMatch) {
+    const name = link.path.split("/").pop();
+    conceptCounts[name] = (conceptCounts[name] || 0) + 1;
+  }
+}
+const sorted = Object.entries(conceptCounts)
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 15);
+if (sorted.length > 0) {
+  dv.table(
+    ["概念", "引用次數", "視覺化"],
+    sorted.map(([name, count]) => {
+      const bar = "█".repeat(count) + "░".repeat(Math.max(0, 20 - count));
+      return [dv.fileLink("Concepts/" + name, false, name), count, bar];
+    })
+  );
+}
+```
+
 ## 所有專案
 
 ```dataview
