@@ -2705,7 +2705,9 @@ async function refreshRepos(token, failedOnly = false) {
     const existingReposRefresh = new Set(existingFilesRefresh.filter(f => f.endsWith('.md')).map(f => f.replace('.md', '')));
 
     // 重新產生筆記
-    for (const item of repos) {
+    for (let ri = 0; ri < repos.length; ri++) {
+      const item = repos[ri];
+      console.log(`  Merging ${ri + 1}/${repos.length}: ${item.file}`);
       const llmInfo = llmMap[item.repo.full_name] || llmMap[item.repo.full_name.toLowerCase()] || null;
 
       // LLM 失敗時跳過，保留現有內容（避免覆蓋好的中文翻譯）
