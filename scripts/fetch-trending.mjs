@@ -498,7 +498,14 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   const catTag = cat.toLowerCase().replace(/[/\s]/g, '_');
   const llmFailed = llmInfo?._llm_failed === true;
 
-  // ── 品質驗證：修正 LLM 幻覺 ──
+  // ── 品質驗證：修正 LLM 回傳類型問題 ──
+  // LLM 有時回傳非字串（物件/陣列），先正規化所有期望為字串的欄位
+  for (const key of ['code_example', 'summary', 'description_zh', 'architecture', 'novelty_claim',
+    'deep_dive', 'onboarding_evaluation', 'key_insight', 'use_case']) {
+    if (llmInfo?.[key] && typeof llmInfo[key] !== 'string') {
+      llmInfo[key] = typeof llmInfo[key] === 'object' ? JSON.stringify(llmInfo[key], null, 2) : String(llmInfo[key]);
+    }
+  }
   if (llmInfo?.code_example) {
     // 移除明顯的 placeholder 程式碼
     const placeholderPatterns = ['// 這裡放置', '// TODO:', '// placeholder', '// 在此處'];
@@ -1001,7 +1008,7 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('## 延伸閱讀');
   lines.push('');
   if (llmInfo?.related_concepts?.length) {
-    lines.push(`相關概念：${llmInfo.related_concepts.map((c) => `[[${c}]]`).join(' · ')}`);
+    lines.push(`相關概念：${llmInfo.related_concepts.map((c) => `[[${canonicalConcept(c)}]]`).join(' · ')}`);
     lines.push('');
   }
   // 跨 repo wikilinks：只連結 vault 內已存在的 repo（避免 ghost links）
@@ -1064,7 +1071,7 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   if (llmInfo?.related_concepts?.length) {
     lines.push('> [!note]- 共用概念的相關專案');
     lines.push('> ```dataviewjs');
-    lines.push(`> const concepts = ${JSON.stringify(llmInfo.related_concepts)};`);
+    lines.push(`> const concepts = ${JSON.stringify(llmInfo.related_concepts.map(canonicalConcept))};`);
     lines.push('> const pages = dv.pages(\'"Repos"\')')
     lines.push(`>   .where(p => p.file.name !== "${safeFn}" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))`);
     lines.push('>   .sort(p => p.stars, "desc")');
@@ -2742,7 +2749,100 @@ const CONCEPT_DESCRIPTIONS = {
   '記憶管理': 'AI 系統中讓模型記住和利用歷史對話或資料的機制。從簡單的 context window 到 RAG、向量資料庫，再到 MemGPT 式的分層記憶。是建構有狀態 AI 應用的核心挑戰。',
   '自動化': '用程式或工具取代人工重複操作的做法。從 shell script 到 CI/CD、從 cron job 到 AI agent，自動化的層次越來越高。關鍵是辨識哪些任務值得自動化（重複頻率高、出錯代價大）、哪些不值得（一次性、需要人類判斷）。',
   'LLM 推論': '讓大型語言模型接收輸入並產生回應的過程。推論比訓練便宜但仍有成本考量。優化方式包括量化（INT8/INT4）、KV cache、推測解碼、批次處理等。vLLM、TGI、llama.cpp 是常見的推論引擎。',
+  '可及性': '讓所有人（包括身障者）都能使用數位產品的設計原則，英文叫 Accessibility（a11y）。包括螢幕閱讀器支援、鍵盤操作、色彩對比等。WCAG 是國際標準，越來越多國家立法要求網站符合。',
+  '數據解密': '將加密後的資料還原為可讀形式的過程。合法用途包括密碼學研究和數位鑑識，需要正確的金鑰或破解加密演算法。AES、RSA 是常見加密標準。',
+  '二進位分析': '不依賴原始碼，直接分析編譯後的二進位檔案來理解程式行為。常用於逆向工程、惡意軟體分析和漏洞挖掘。IDA Pro、Ghidra、Binary Ninja 是主流工具。',
+  '張量並行': '把大型神經網路的張量（矩陣）切分到多張 GPU 上並行計算的技術。是訓練和推論超大模型（GPT-4 級別）的必要手段。跟資料並行不同，張量並行切的是模型本身而非資料。',
+  '社交媒體管理': '統一管理多個社群平台帳號的工具和策略。包括排程發文、數據分析、互動管理等。Buffer、Hootsuite 是商業工具，也有越來越多開源替代方案。',
+  '行銷': '推廣產品或服務以吸引用戶的活動。數位行銷包括 SEO、社群媒體、內容行銷、付費廣告等。開發者常用的行銷方式是 Developer Advocacy、技術部落格和開源社群經營。',
+  '知識圖譜': '以圖的形式（節點 + 邊）來組織和表示知識的資料結構。Google Knowledge Graph 是最知名的例子。在 AI 領域用於增強 LLM 的推理能力，在企業用於知識管理和搜尋。',
+  '無人機技術': '無人飛行器（UAV/Drone）相關的軟硬體技術。包括飛行控制、影像處理、路徑規劃等。PX4、ArduPilot 是常見的開源飛控系統。應用從航拍擴展到農業、物流、救災等。',
+  '模組化設計': '把系統拆分成可獨立開發、測試、替換的模組的設計方法。好處是降低耦合度、提高可維護性和重用性。從硬體的模組化（USB-C）到軟體的微服務，都是這個思想的體現。',
+  '開放科學': '讓科學研究過程（資料、方法、結果）公開透明的運動。包括開放取用論文、開放資料集、可重現研究等。arXiv、Zenodo 是代表性平台，開源碼在科研中越來越重要。',
+  '文獻管理': '組織和管理學術論文、研究資料的工具和方法。Zotero、Mendeley、EndNote 是常見工具。好的文獻管理讓你不再為「那篇論文在哪」而煩惱，並自動生成引用格式。',
+  '內容創作': '產出文字、影片、圖片等數位內容的活動。AI 工具（GPT、Midjourney、Runway）正在大幅降低創作門檻。關鍵不是取代人類創意，而是加速從想法到成品的流程。',
+  '開源': '公開原始碼、允許自由使用、修改和分發的軟體開發模式。MIT、Apache、GPL 是常見授權。開源不只是免費軟體，更是一種透過社群協作推動技術進步的哲學。',
+  '遊戲啟動器': '管理和啟動遊戲的桌面應用程式。Steam、Epic Games Launcher 是商業版，也有開源替代如 Heroic（支援 GOG 和 Epic）。通常提供遊戲庫管理、自動更新、社群功能。',
+  '生物醫學': '將生物學和醫學結合的交叉學科，涵蓋基因研究、醫學影像、藥物開發等。AI 和大數據正在加速這個領域的突破，從蛋白質結構預測到個人化醫療。',
+  '社交媒體分析': '從社群平台（Twitter/X、Reddit、Instagram）收集和分析數據的技術。用於輿情監控、趨勢分析、品牌追蹤等。需要處理大量非結構化資料和即時串流。',
+  '相容性層': '讓原本不能在特定系統上運行的軟體可以順利執行的中間層。Wine 讓 Windows 軟體跑在 Linux 上，Rosetta 2 讓 x86 軟體跑在 ARM Mac 上。是平台遷移的關鍵技術。',
+  '資料抓取': '從網站或 API 自動提取結構化資料的技術。跟爬蟲類似但更偏重資料解析和清洗。Beautiful Soup、Cheerio 用於 HTML 解析，Puppeteer/Playwright 處理動態頁面。',
+  '模型解釋性': '讓 AI 模型的決策過程可以被人類理解的技術。黑箱模型做出的決定「為什麼」很重要，尤其在醫療、金融、法律等高風險場景。SHAP、LIME 是常見的解釋方法。',
+  '無人機': '無人飛行器的簡稱，包括消費級空拍機和工業級應用。軟體面涵蓋飛控演算法、影像處理、自動導航。DJI 主導消費市場，ArduPilot 是開源飛控的標準。',
+  '臨床研究': '在人類受試者身上進行的醫學研究，用於驗證新藥物或治療方法的安全性和有效性。分為四期臨床試驗，需要嚴格的倫理審查和統計方法。數據管理和分析是核心挑戰。',
+  '影像生成': 'AI 從文字描述或其他輸入生成圖像的技術。Stable Diffusion、DALL-E、Midjourney 是代表。核心技術是擴散模型，通過逐步去噪的過程生成高品質圖像。',
+  '對抗樣本': '對 AI 模型輸入進行微小、人眼不可察覺的修改，讓模型產生錯誤判斷。例如在圖片上加一點擾動就能讓影像辨識模型把貓認成狗。是 AI 安全研究的重要課題。',
+  '生成對抗網絡': 'GAN（Generative Adversarial Network），由生成器和判別器兩個網路互相對抗來學習。生成器學著製造「以假亂真」的資料，判別器學著分辨真假。曾是影像生成的主流，現已被擴散模型超越。',
+  '上下文工程': '設計和管理 AI 模型輸入上下文的技術。包括如何在有限的 context window 中塞入最有價值的資訊、何時該用 RAG、何時該做摘要。是 AI 應用開發中常被低估但極其重要的環節。',
+  '推測解碼': 'Speculative Decoding，用小模型先快速產生候選 token，再用大模型驗證的推論加速技術。好處是保持大模型的品質但速度接近小模型。是目前 LLM 推論優化的熱門方向。',
+  '地理空間分析': '處理和分析地理位置相關資料的技術。GIS（地理資訊系統）、衛星影像分析、地圖視覺化都屬於這個範疇。PostGIS、QGIS、Mapbox 是常見工具。',
+  '權限提升': '取得超出預期的系統權限的安全問題或攻擊技術。跟「特權提升」是同一概念。防禦方式包括最小權限原則、定期稽核、及時更新補丁。',
+  '任務管理': '組織、追蹤和完成待辦事項的方法和工具。從 GTD 到看板方法，Jira、Linear、Todoist 是商用工具，Obsidian + Dataview 也能建構強大的個人任務系統。',
+  '多工作樹': 'Git 的 worktree 功能，讓你同時在不同目錄維護同一 repo 的多個分支。不用來回切換分支，適合同時處理 feature、hotfix、review 等場景。',
+  '自動更新': '軟體自動檢查和安裝新版本的機制。從 OS 更新到 npm 套件、從 Chrome 的背景更新到 Electron 的 autoUpdater。關鍵挑戰是確保更新不會破壞現有功能。',
+  '協作平台': '讓多人能夠同時編輯和共享工作成果的線上工具。Google Docs、Notion、Figma 是典型例子。核心技術是 CRDT 或 OT（Operational Transform）來解決同步衝突。',
+  '基因組學': '研究生物體完整基因組的學科。次世代定序（NGS）技術讓定序成本大幅下降。生物資訊工具如 BWA、GATK 用於序列比對和變異偵測。是精準醫療的基礎。',
+  '大規模語言模型': '跟「大型語言模型」（LLM）是同一概念。用海量文本訓練的超大神經網路，能理解和生成人類語言。GPT-4、Claude、Llama 3 是代表。參數規模從數十億到上兆。',
+  '攻擊路徑': '攻擊者從初始入侵到達成目標所經過的一系列步驟。分析攻擊路徑幫助防禦者找出最薄弱的環節並優先修補。MITRE ATT&CK 框架提供了標準化的攻擊路徑描述。',
+  '視頻生成': 'AI 從文字、圖像或其他輸入自動生成影片的技術。Sora、Runway Gen-2、Pika 是代表性工具。目前能生成幾秒到一分鐘的短片，品質正在快速提升。',
+  '張量並行性': '跟「張量並行」是同一概念。將大型模型的運算張量切分到多個計算裝置上並行執行，是訓練和部署超大模型的核心技術。Megatron-LM 是 NVIDIA 的參考實作。',
+  '網路代理': '在使用者和目標伺服器之間轉發網路流量的中間服務。正向代理隱藏客戶端身份，反向代理（如 Nginx）保護伺服器。也用於負載均衡、快取、存取控制和突破地域限制。',
+  '漏洞研究': '系統性地發現和分析軟體安全漏洞的研究活動。包括程式碼審計、模糊測試（fuzzing）、逆向工程等方法。發現的漏洞通常通過 CVE 編號公開，並遵循負責任的揭露流程。',
+  '開源硬體': '公開設計圖、BOM 和製造流程的硬體專案。Arduino、RISC-V、Open Source Ecology 是代表。讓任何人都能自行製造或改良，降低硬體創新的門檻。',
+  '模型調整': '在已訓練好的基礎模型上，用特定領域資料進一步訓練以提升特定任務表現。Fine-tuning、LoRA、Adapter 是常見方法。比從頭訓練便宜得多，是客製化 AI 模型的主要方式。',
+  '任務路由': '在 AI Agent 系統中，根據任務類型或複雜度把請求分配給最適合的模型或處理流程。簡單問題用小模型、複雜問題用大模型，可以在維持品質的同時大幅降低成本。',
+  '安全研究': '研究資訊系統安全性、發現漏洞並提出防禦方案的學術和實務活動。涵蓋密碼學、軟體安全、網路安全等子領域。Bug Bounty 計畫讓安全研究者可以合法地發現和報告漏洞。',
+  '計算機視覺': '跟「電腦視覺」是同一概念。讓機器從影像和影片中擷取和理解資訊的 AI 技術。YOLO、ResNet、Vision Transformer 是經典架構。應用涵蓋自駕車、醫療影像、工業檢測。',
+  '設備解鎖': '繞過裝置的安全鎖定機制以取得存取權限。包括手機越獄（jailbreak）、bootloader 解鎖等。在安全研究和數位鑑識中有合法用途，但也有被濫用的風險。',
+  '設計工具': '輔助 UI/UX 設計的軟體工具。Figma、Sketch、Adobe XD 是主流。近年趨勢是 AI 輔助設計（自動排版、圖像生成）和設計系統（Design System）的標準化。',
+  '上下文管理': '在 AI 對話或應用中管理和維護上下文資訊的策略。包括 context window 限制的處理、對話歷史摘要、重要資訊的保留與丟棄。跟「上下文工程」概念相近。',
+  '安全評估': '對系統、應用或基礎設施進行全面安全檢查的過程。包括漏洞掃描、滲透測試、程式碼審計、合規檢查等。NIST、ISO 27001 提供標準化的評估框架。',
+  '漏洞檢測': '自動化發現軟體安全漏洞的技術和工具。靜態分析（SAST）、動態分析（DAST）、互動式分析（IAST）是三大類型。Snyk、Trivy、SonarQube 是常見工具。',
+  '對抗性攻擊': '針對 AI 模型的攻擊方式，通過精心設計的輸入讓模型產生錯誤輸出。包括對抗樣本、後門攻擊、模型竊取等。是 AI 安全領域的核心研究方向。',
+  '推測性解碼': '跟「推測解碼」是同一概念。Speculative Decoding，用小型草稿模型快速產生候選序列，大模型平行驗證。在不損失品質的前提下可加速 2-3 倍推論速度。',
+  '檔案傳輸': '在裝置或系統之間傳送檔案的技術。從 FTP、SCP 到現代的 P2P 傳輸（Magic Wormhole、croc）。挑戰包括大檔案處理、斷點續傳、加密傳輸和 NAT 穿越。',
+  '遊戲開發': '開發電子遊戲的軟體工程。Unity 和 Unreal Engine 是主流引擎，Godot 是開源替代。涵蓋渲染、物理引擎、AI、網路同步等技術。獨立遊戲開發者的工具選擇越來越豐富。',
+  '去中心化開發': '不依賴單一中心化服務的軟體開發模式。包括去中心化版控（Git 本身就是）、去中心化通訊（Matrix）、去中心化應用（DApp）。強調抗審查性和使用者主權。',
+  '技術分析': '透過歷史價格和交易量等市場數據來預測未來走勢的分析方法。K 線圖、移動平均線、RSI 指標是基本工具。在量化交易中常與機器學習結合使用。',
+  'AGP Protocol': 'Agent-to-Agent Gateway Protocol，讓不同 AI Agent 之間能標準化溝通的協議。類似於 AI Agent 世界的 HTTP，讓來自不同框架的 Agent 可以互操作。',
+  'AGP': '跟「AGP Protocol」是同一概念。Agent Gateway Protocol，AI Agent 間的通訊標準。讓 LangChain、CrewAI 等不同框架建構的 Agent 能互相發送訊息和協作。',
+  'AI 生成': 'AI 自動產出內容的能力，涵蓋文字、圖像、程式碼、音樂、影片等。是生成式 AI 的核心應用，正在改變從設計到軟體開發的各行各業。',
+  'AI 設計': '用 AI 輔助或自動化設計流程的新興領域。包括 AI 生成 UI 版面、自動配色、設計元素生成等。Figma AI、v0.dev 是代表性工具。',
+  'AI 藝術生成': 'AI 自動生成藝術作品的技術。Stable Diffusion、Midjourney、DALL-E 讓任何人都能用文字描述生成圖像。引發了關於版權、原創性和藝術家生計的激烈討論。',
+  'AI 標籤化': '用 AI 自動為資料標記標籤的技術。取代人工標註，大幅降低監督式學習的資料準備成本。品質不如人工但速度快很多，適合需要大量標註資料的場景。',
+  'AI agents': 'AI 代理人，能自主規劃和執行多步驟任務的 AI 系統。跟「Agent 框架」概念相近。從 AutoGPT 到 Claude Code，Agent 正在從概念驗證走向生產應用。',
+  'CUDA圖': 'CUDA Graph，把一系列 GPU 操作預先錄製成圖，然後一次性提交執行。減少 CPU-GPU 之間的來回通訊開銷，對推論延遲敏感的場景特別有效。是 NVIDIA 推論優化的重要技術。',
+  'DeFi': '去中心化金融（Decentralized Finance），用智能合約取代傳統金融中介的應用。包括借貸（Aave）、交易所（Uniswap）、穩定幣（DAI）等。好處是透明、無需許可，風險是智能合約漏洞和監管不確定性。',
+  'DIY 電子產品': '自己動手設計和製作電子裝置的社群和文化。Arduino、Raspberry Pi 降低了入門門檻。從智慧家庭到自製鍵盤，Maker 運動讓硬體開發不再是大廠專利。',
+  'SOCKS5': '一種通用的網路代理協議，比 HTTP 代理更底層，支援任何 TCP/UDP 流量。常用於翻牆、匿名化、安全測試。Shadowsocks 就是基於 SOCKS5 的加密代理。',
+  'SSH': 'Secure Shell，加密的遠端登入和檔案傳輸協議。是 Linux/macOS 伺服器管理的基本工具。除了遠端終端，還支援 port forwarding、SCP、SFTP 等功能。OpenSSH 是最廣泛使用的實作。',
+  'UEFI': '統一可擴展韌體介面（Unified Extensible Firmware Interface），取代傳統 BIOS 的現代韌體標準。負責開機流程、硬體初始化和 OS 載入。UEFI Secure Boot 增加了開機安全性但也帶來相容性挑戰。',
+  'UI-UX 設計': '使用者介面和使用者體驗設計的結合。UI 管視覺呈現，UX 管整體體驗（流程、效率、滿意度）。好的 UI-UX 讓使用者不需要看說明書就能上手。',
+  'UI-UX': '跟「UI-UX 設計」是同一概念。UI 是使用者看到和互動的介面，UX 是使用者完成任務過程中的整體感受。兩者缺一不可，漂亮但難用的介面不是好設計。',
 };
+
+// ── 概念別名（去重複）──────────────────────────────────────
+// 把重複/相近的概念名稱映射到正式名稱
+const CONCEPT_ALIASES = {
+  '張量並行性': '張量並行',
+  '推測性解碼': '推測解碼',
+  '計算機視覺': '電腦視覺',
+  '大規模語言模型': '大型語言模型',
+  'AGP': 'AGP Protocol',
+  'OAuth2': 'OAuth',
+  'UI-UX': 'UI-UX 設計',
+  'UI 設計': 'UI-UX 設計',
+  '無人機': '無人機技術',
+  '上下文管理': '上下文工程',
+  '權限提升': '特權提升',
+  'AI agents': 'Agent 框架',
+  '生物信息學': '生物醫學',
+  'CUDA圖': 'CUDA',
+};
+
+function canonicalConcept(name) {
+  return CONCEPT_ALIASES[name] || name;
+}
 
 function generateConceptNote(concept) {
   const desc = CONCEPT_DESCRIPTIONS[concept] || '_用 2-3 句話解釋這個概念。想像對象是一個聰明但不熟悉這個領域的工程師朋友。_';
@@ -2871,7 +2971,8 @@ async function generateConceptNotes() {
       const links = extMatch[1].match(/\[\[([^\]]+)\]\]/g);
       if (links) {
         for (const link of links) {
-          const concept = link.replace(/\[\[|\]\]/g, '');
+          const raw = link.replace(/\[\[|\]\]/g, '');
+          const concept = canonicalConcept(raw);
           conceptCounts[concept] = (conceptCounts[concept] || 0) + 1;
         }
       }
@@ -2891,6 +2992,27 @@ async function generateConceptNotes() {
       created++;
     }
   }
+
+  // 為別名概念建立重定向筆記（讓 Obsidian 的 [[別名]] 連結不會變成 ghost link）
+  let redirects = 0;
+  for (const [alias, canonical] of Object.entries(CONCEPT_ALIASES)) {
+    const safeAlias = alias.replace(/[/\\:*?"<>|]/g, '-');
+    const aliasPath = join(CONCEPTS_DIR, `${safeAlias}.md`);
+    if (await fileExists(aliasPath)) {
+      // 已有筆記，檢查是否已經是重定向
+      const content = await readFile(aliasPath, 'utf-8');
+      if (!content.includes(`見 [[${canonical}]]`)) continue; // 有實際內容就不覆蓋
+    }
+    // 建立簡單的重定向筆記
+    const safeCanonical = canonical.replace(/[/\\:*?"<>|]/g, '-');
+    const canonicalPath = join(CONCEPTS_DIR, `${safeCanonical}.md`);
+    if (await fileExists(canonicalPath)) {
+      await writeFile(aliasPath, `---\ntags:\n  - concept\n  - redirect\naliases:\n  - "${alias}"\n---\n\n# ${alias}\n\n見 [[${canonical}]]\n`, 'utf-8');
+      redirects++;
+    }
+  }
+  if (redirects > 0) console.log(`Concepts: ${redirects} redirect notes created`);
+
   console.log(`Concepts: ${Object.keys(conceptCounts).length} found, ${created} new notes created`);
 }
 
@@ -3008,26 +3130,33 @@ async function autoCrossLink() {
   const files = await readdir(REPOS_DIR);
   const mdFiles = files.filter(f => f.endsWith('.md'));
 
-  // 建立 category → repo 名稱映射 + 概念映射
-  const catMap = {};   // { category: [{ file, name }] }
+  // 建立 category / subcategory → repo 名稱映射 + 概念映射
+  const catMap = {};      // { category: [{ file, name }] }
+  const subcatMap = {};   // { subcategory: [{ file, name }] }
   const repoSet = new Set(); // vault 內所有 repo 檔名（不含 .md）
   const repoConcepts = {}; // { repoName: Set<concept> }
 
   for (const file of mdFiles) {
     const content = await readFile(join(REPOS_DIR, file), 'utf-8');
     const catMatch = content.match(/^category: "?([^"\n]+)"?$/m);
+    const subcatMatch = content.match(/^subcategory: "?([^"\n]+)"?$/m);
     const cat = catMatch ? catMatch[1] : null;
+    const subcat = subcatMatch ? subcatMatch[1] : null;
     const name = file.replace('.md', '');
     repoSet.add(name);
     if (cat) {
       if (!catMap[cat]) catMap[cat] = [];
       catMap[cat].push({ file, name });
     }
+    if (subcat) {
+      if (!subcatMap[subcat]) subcatMap[subcat] = [];
+      subcatMap[subcat].push({ file, name });
+    }
     // 提取概念
     const conceptMatch = content.match(/^相關概念：(.+)$/m);
     if (conceptMatch) {
       const concepts = (conceptMatch[1].match(/\[\[([^\]]+)\]\]/g) || [])
-        .map(c => c.replace(/\[\[|\]\]/g, ''));
+        .map(c => canonicalConcept(c.replace(/\[\[|\]\]/g, '')));
       repoConcepts[name] = new Set(concepts);
     }
   }
@@ -3042,7 +3171,15 @@ async function autoCrossLink() {
     const cat = catMatch ? catMatch[1] : null;
     if (!cat) continue;
 
-    const peers = (catMap[cat] || []).filter(p => p.name !== name);
+    const subcatMatch2 = content.match(/^subcategory: "?([^"\n]+)"?$/m);
+    const subcat2 = subcatMatch2 ? subcatMatch2[1] : null;
+
+    // 優先同子分類（直接競品），再同分類
+    const subcatPeers = subcat2 ? (subcatMap[subcat2] || []).filter(p => p.name !== name) : [];
+    const catPeers = (catMap[cat] || []).filter(p => p.name !== name);
+    // 去重：同子分類的排在前面
+    const subcatNames = new Set(subcatPeers.map(p => p.name));
+    const peers = [...subcatPeers, ...catPeers.filter(p => !subcatNames.has(p.name))];
     if (peers.length === 0) continue;
 
     // 提取現有的相關專案 wikilinks
