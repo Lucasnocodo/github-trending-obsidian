@@ -7,7 +7,7 @@ language: Python
 license: Apache-2.0
 description: "A CLI for Twitter/X — feed, bookmarks, and user timeline in terminal"
 homepage: ""
-stars: 1419
+stars: 1422
 stars_per_day: 284
 forks: 124
 open_issues: 5
@@ -341,4 +341,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，1.4k stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，1.4k stars

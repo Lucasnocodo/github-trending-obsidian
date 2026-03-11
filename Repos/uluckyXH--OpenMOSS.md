@@ -255,7 +255,7 @@ OpenMOSS 採用微服務架構，代理之間透過 API 進行通信。用戶輸
 
 相關概念：[[多模態]] · [[自動化測試]] · [[微服務]]
 
-相關專案：[[openclaw--openclaw|openclaw/openclaw]] · [[autonomous-agents--agent-framework|autonomous-agents/agent-framework]]
+相關專案：[[openclaw--openclaw|openclaw/openclaw]] · [[autonomous-agents--agent-framework|autonomous-agents/agent-framework]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/uluckyXH/OpenMOSS)
 

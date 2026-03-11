@@ -310,6 +310,8 @@ WorldFM 採用微服務架構，核心資料流為：用戶輸入影像和相機
 
 相關概念：[[電腦視覺]] · [[深度學習]] · [[生成對抗網絡]]
 
+相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]]
+
 [GitHub](https://github.com/inspatio/worldfm)
 
 ## 相關收錄

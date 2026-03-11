@@ -7,8 +7,8 @@ language: N/A
 license: MIT
 description: "SwiftUI agent skill for Claude Code, Codex, and other AI tools."
 homepage: ""
-stars: 1746
-stars_per_day: 349
+stars: 1748
+stars_per_day: 350
 forks: 57
 open_issues: 7
 created: 2026-03-05
@@ -212,6 +212,8 @@ $swiftui-pro
 
 相關概念：[[API 設計]] · [[可及性]] · [[效能優化]]
 
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+
 [GitHub](https://github.com/twostraws/SwiftUI-Agent-Skill)
 
 ## 相關收錄
@@ -278,4 +280,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，1.7k stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，1.7k stars

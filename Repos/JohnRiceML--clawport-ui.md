@@ -273,7 +273,7 @@ ClawPort 採用前後端分離的架構，前端使用 Next.js，後端則依賴
 
 相關概念：[[多模態]] · [[自動化測試]] · [[機器學習]]
 
-相關專案：[[OpenAI--openai|OpenAI/openai]] · [[Microsoft--PowerAutomate|Microsoft/PowerAutomate]]
+相關專案：[[OpenAI--openai|OpenAI/openai]] · [[Microsoft--PowerAutomate|Microsoft/PowerAutomate]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/JohnRiceML/clawport-ui) · [官方網站](https://clawport.dev)
 

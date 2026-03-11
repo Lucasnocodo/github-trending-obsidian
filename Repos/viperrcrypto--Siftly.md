@@ -7,8 +7,8 @@ language: TypeScript
 license: MIT
 description: "Local Twitter/X bookmark organizer with AI categorization and mindmap visualization"
 homepage: ""
-stars: 1386
-stars_per_day: 231
+stars: 1391
+stars_per_day: 232
 forks: 116
 open_issues: 9
 created: 2026-03-04
@@ -356,4 +356,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，1.4k stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，1.4k stars

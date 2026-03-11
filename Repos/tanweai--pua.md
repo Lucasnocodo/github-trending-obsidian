@@ -321,6 +321,8 @@ claude plugin install pua@pua-skills
 
 相關概念：[[自動化測試]] · [[機器學習]] · [[API 設計]]
 
+相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]]
+
 [GitHub](https://github.com/tanweai/pua) · [官方網站](https://pua-skill.pages.dev/)
 
 ## 相關收錄

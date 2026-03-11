@@ -297,6 +297,8 @@ bin/discrawl search "panic: nil pointer"
 
 相關概念：[[API 設計]] · [[資料視覺化]] · [[機器學習]]
 
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+
 [GitHub](https://github.com/steipete/discrawl)
 
 ## 相關收錄

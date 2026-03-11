@@ -7,8 +7,8 @@ language: Python
 license: N/A
 description: "AI agents running research on single-GPU nanochat training automatically"
 homepage: ""
-stars: 22604
-stars_per_day: 5651
+stars: 22679
+stars_per_day: 5670
 forks: 2870
 open_issues: 69
 created: 2026-03-06
@@ -222,7 +222,7 @@ Hi have a look at program.md and let's kick off a new experiment! let's do the s
 
 相關概念：[[自動化測試]] · [[機器學習]] · [[深度學習]]
 
-相關專案：[[trevin-creator--autoresearch-mlx|trevin-creator/autoresearch-mlx]]
+相關專案：[[trevin-creator--autoresearch-mlx|trevin-creator/autoresearch-mlx]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]]
 
 [GitHub](https://github.com/karpathy/autoresearch)
 
@@ -290,4 +290,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，22.7k stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，21.3k stars

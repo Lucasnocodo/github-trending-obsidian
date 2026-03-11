@@ -207,6 +207,8 @@ git push origin feature/ && git request-pull origin/main
 
 相關概念：[[Agent 框架]] · [[自然語言處理]] · [[DeFi]]
 
+相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]]
+
 [GitHub](https://github.com/binance/binance-skills-hub)
 
 ## 相關收錄

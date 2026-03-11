@@ -221,7 +221,7 @@ print(response)
 
 相關概念：[[自動化測試]] · [[API 設計]] · [[自然語言處理]]
 
-相關專案：[[xstongxue--best-prompts|xstongxue/best-prompts]] · [[openai--gpt-3.5-turbo|openai/gpt-3.5-turbo]]
+相關專案：[[xstongxue--best-prompts|xstongxue/best-prompts]] · [[openai--gpt-3.5-turbo|openai/gpt-3.5-turbo]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/xstongxue/best-skills)
 

@@ -7,8 +7,8 @@ language: N/A
 license: N/A
 description: "end to end app store screenshot creation using AI"
 homepage: "https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots"
-stars: 893
-stars_per_day: 298
+stars: 922
+stars_per_day: 307
 forks: 59
 open_issues: 2
 created: 2026-03-07
@@ -290,7 +290,7 @@ npm run dev
 
 相關概念：[[自動化測試]] · [[API 設計]] · [[資料視覺化]]
 
-相關專案：[[app-screenshot-generator--app-screenshot-generator|app-screenshot-generator/app-screenshot-generator]] · [[screenshot-generator--screenshot-generator|screenshot-generator/screenshot-generator]]
+相關專案：[[app-screenshot-generator--app-screenshot-generator|app-screenshot-generator/app-screenshot-generator]] · [[screenshot-generator--screenshot-generator|screenshot-generator/screenshot-generator]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/ParthJadhav/app-store-screenshots) · [官方網站](https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots)
 
@@ -358,4 +358,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，922 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，653 stars

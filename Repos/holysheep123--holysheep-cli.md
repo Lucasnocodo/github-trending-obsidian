@@ -280,6 +280,8 @@ HolySheep CLI 採用單體架構，核心資料流為用戶輸入 API 金鑰 →
 
 相關概念：[[API 設計]] · [[CLI/TUI]] · [[自動化測試]]
 
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+
 [GitHub](https://github.com/holysheep123/holysheep-cli) · [官方網站](https://shop.holysheep.ai)
 
 ## 相關收錄

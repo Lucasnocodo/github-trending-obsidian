@@ -364,6 +364,8 @@ python scripts/cli.py search-feeds --keyword "露營" --sort-by "最多点赞" -
 
 相關概念：[[自動化測試]] · [[CLI/TUI]] · [[機器學習]]
 
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+
 [GitHub](https://github.com/autoclaw-cc/xiaohongshu-skills)
 
 ## 相關收錄

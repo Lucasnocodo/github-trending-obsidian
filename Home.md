@@ -14,7 +14,7 @@ cssclasses:
 | 頁面 | 說明 |
 | --- | --- |
 | [[Dashboard]] | 完整數據儀表板 — 統計、排行、分類 |
-| [[Triage]] | Kanban 風格分流看板 — 依狀態管理專案 |
+| [[Triage]] | 快速分流 — 看板式工作流 |
 | [[MOC - AI-ML]] | AI/ML 相關專案 |
 | [[MOC - 開發工具]] | 開發者工具 |
 | [[MOC - Web 應用]] | Web 應用程式 |
@@ -23,7 +23,6 @@ cssclasses:
 | [[MOC - 資料科學]] | 資料科學 |
 | [[MOC - 教學資源]] | 教學資源 |
 | [[MOC - 基礎設施]] | 基礎設施 |
-| [[MOC - 其他]] | 未分類專案 |
 
 ## 統計快照
 
@@ -84,21 +83,6 @@ FROM "Repos"
 WHERE my_rating > 0
 SORT my_rating DESC
 LIMIT 10
-```
-
-## 概念索引
-
-```dataviewjs
-const pages = dv.pages('"Concepts"');
-const withRefs = [];
-for (const p of pages) {
-  const refs = dv.pages('"Repos"').where(r => {
-    return r.file.outlinks?.some(l => l.path === p.file.path);
-  }).length;
-  if (refs > 0) withRefs.push({ link: p.file.link, refs });
-}
-withRefs.sort((a, b) => b.refs - a.refs);
-dv.paragraph(withRefs.map(w => `${w.link} (${w.refs})`).join(' · '));
 ```
 
 ## 最近的週報

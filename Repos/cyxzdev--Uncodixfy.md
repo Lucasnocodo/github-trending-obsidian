@@ -7,8 +7,8 @@ language: N/A
 license: N/A
 description: "the holly uncodexify instructions - letting GPT create uncodexified UI"
 homepage: ""
-stars: 1349
-stars_per_day: 337
+stars: 1350
+stars_per_day: 338
 forks: 106
 open_issues: 0
 created: 2026-03-06
@@ -207,6 +207,8 @@ Include uncodixify.md in your prompt.
 
 相關概念：[[UI 設計]] · [[AI 生成]] · [[設計模式]]
 
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+
 [GitHub](https://github.com/cyxzdev/Uncodixfy)
 
 ## 相關收錄
@@ -273,4 +275,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，1.4k stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，1.3k stars

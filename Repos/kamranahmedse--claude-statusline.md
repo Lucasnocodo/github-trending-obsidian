@@ -172,7 +172,7 @@ npx @kamranahmedse/claude-statusline --uninstall
 
 ## 延伸閱讀
 
-相關專案：[[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]] · [[runesleo--claude-code-workflow|runesleo/claude-code-workflow]]
+相關專案：[[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]] · [[runesleo--claude-code-workflow|runesleo/claude-code-workflow]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/kamranahmedse/claude-statusline)
 

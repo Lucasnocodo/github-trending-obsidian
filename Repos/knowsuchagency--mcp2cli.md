@@ -291,7 +291,7 @@ mcp2cli 採用 CLI 工具架構，核心資料流為：用戶輸入 → mcp2cli 
 
 相關概念：[[API 設計]] · [[微服務]] · [[CLI/TUI]]
 
-相關專案：[[openapi-cli--openapi-cli|openapi-cli/openapi-cli]] · [[postman--postman-cli|postman/postman-cli]]
+相關專案：[[openapi-cli--openapi-cli|openapi-cli/openapi-cli]] · [[postman--postman-cli|postman/postman-cli]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/knowsuchagency/mcp2cli) · [官方網站](https://pypi.org/project/mcp2cli/)
 

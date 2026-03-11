@@ -7,8 +7,8 @@ language: Python
 license: N/A
 description: "CLI-Anything: Making ALL Software Agent-Native"
 homepage: ""
-stars: 2435
-stars_per_day: 1218
+stars: 2479
+stars_per_day: 1240
 forks: 236
 open_issues: 10
 created: 2026-03-08
@@ -303,7 +303,7 @@ CLI-Anything 採用插件架構，使用者透過 Claude Code 插件市場安裝
 
 相關概念：[[CLI/TUI]] · [[自動化測試]] · [[機器學習]]
 
-相關專案：[[openai--cli-toolkit|openai/cli-toolkit]] · [[nasa--agent-cli|nasa/agent-cli]]
+相關專案：[[openai--cli-toolkit|openai/cli-toolkit]] · [[nasa--agent-cli|nasa/agent-cli]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]]
 
 [GitHub](https://github.com/HKUDS/CLI-Anything)
 
@@ -371,4 +371,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，2.5k stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，2.2k stars

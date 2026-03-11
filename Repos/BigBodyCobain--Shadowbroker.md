@@ -7,8 +7,8 @@ language: TypeScript
 license: N/A
 description: "Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. The knowledge is available to all but rarely aggregated in the open, until now."
 homepage: ""
-stars: 1394
-stars_per_day: 279
+stars: 1401
+stars_per_day: 280
 forks: 152
 open_issues: 0
 created: 2026-03-05
@@ -248,6 +248,8 @@ ShadowBroker 採用前後端分離的架構，前端使用 Next.js，後端則�
 
 相關概念：[[開源情報]] · [[地理空間分析]] · [[即時通訊]]
 
+相關專案：[[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]]
+
 [GitHub](https://github.com/BigBodyCobain/Shadowbroker)
 
 ## 相關收錄
@@ -314,4 +316,5 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-11|2026-03-11]] — 再次上榜，1.4k stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，1.3k stars

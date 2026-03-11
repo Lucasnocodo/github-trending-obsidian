@@ -219,7 +219,7 @@ cp -r claude-code-workflow/* ~/.claude/
 
 相關概念：[[記憶管理]] · [[上下文工程]] · [[任務路由]]
 
-相關專案：[[kamranahmedse--claude-statusline|kamranahmedse/claude-statusline]] · [[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]]
+相關專案：[[kamranahmedse--claude-statusline|kamranahmedse/claude-statusline]] · [[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/runesleo/claude-code-workflow)
 

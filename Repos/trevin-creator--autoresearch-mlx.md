@@ -223,7 +223,7 @@ uv run train.py
 
 相關概念：[[自動化測試]] · [[機器學習]] · [[深度學習]]
 
-相關專案：[[karpathy--autoresearch|karpathy/autoresearch]]
+相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]]
 
 [GitHub](https://github.com/trevin-creator/autoresearch-mlx)
 

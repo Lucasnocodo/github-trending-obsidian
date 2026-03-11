@@ -258,7 +258,7 @@ print(response.json())
 
 相關概念：[[自動化測試]] · [[API 設計]] · [[微服務]] · [[容器化]]
 
-相關專案：[[zornade--another-tool|zornade/another-tool]] · [[anotherdev--land-registry-api|anotherdev/land-registry-api]]
+相關專案：[[zornade--another-tool|zornade/another-tool]] · [[anotherdev--land-registry-api|anotherdev/land-registry-api]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/zornade/visura-api)
 

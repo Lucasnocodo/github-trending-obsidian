@@ -314,7 +314,7 @@ RCLI 採用 CLI 工具架構，核心資料流為用戶語音輸入 → MetalRT 
 
 相關概念：[[語音合成]] · [[本地 AI]] · [[隱私保護]] · [[自動化測試]]
 
-相關專案：[[alexa--alexa|alexa/alexa]] · [[google--assistant|google/assistant]]
+相關專案：[[alexa--alexa|alexa/alexa]] · [[google--assistant|google/assistant]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[binance--binance-skills-hub|binance/binance-skills-hub]]
 
 [GitHub](https://github.com/RunanywhereAI/RCLI) · [官方網站](https://runanywhereai.github.io/RCLI/)
 

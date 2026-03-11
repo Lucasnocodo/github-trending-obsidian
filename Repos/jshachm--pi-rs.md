@@ -343,6 +343,8 @@ export MOONSHOT_API_KEY='your-api-key'
 
 相關概念：[[CLI/TUI]] · [[機器學習]] · [[自動化測試]]
 
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+
 [GitHub](https://github.com/jshachm/pi-rs)
 
 ## 相關收錄

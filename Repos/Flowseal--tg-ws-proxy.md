@@ -267,6 +267,8 @@ python proxy/tg_ws_proxy.py -v
 
 ## 延伸閱讀
 
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]]
+
 [GitHub](https://github.com/Flowseal/tg-ws-proxy)
 
 ## 相關收錄

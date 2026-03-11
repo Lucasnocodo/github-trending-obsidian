@@ -273,7 +273,7 @@ for _ in range(max_iterations):
 
 相關概念：[[自動化測試]] · [[CLI/TUI]] · [[API 設計]]
 
-相關專案：[[openai--openai-python|openai/openai-python]] · [[microsoft--azure-sdk-for-python|microsoft/azure-sdk-for-python]]
+相關專案：[[openai--openai-python|openai/openai-python]] · [[microsoft--azure-sdk-for-python|microsoft/azure-sdk-for-python]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/sanbuphy/nanoAgent)
 

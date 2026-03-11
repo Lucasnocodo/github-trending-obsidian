@@ -323,7 +323,7 @@ chartli 採用 CLI 架構，使用者輸入數據 → 工具處理數據 → 輸
 
 相關概念：[[資料視覺化]] · [[CLI/TUI]] · [[自動化測試]]
 
-相關專案：[[vitaly--cli-chart|vitaly/cli-chart]] · [[gchq--CyberChef|gchq/CyberChef]]
+相關專案：[[vitaly--cli-chart|vitaly/cli-chart]] · [[gchq--CyberChef|gchq/CyberChef]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]]
 
 [GitHub](https://github.com/ahmadawais/chartli) · [官方網站](https://x.com/MrAhmadAwais)
 

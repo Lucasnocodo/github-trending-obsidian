@@ -226,7 +226,7 @@ OBLITERATUS 採用微服務架構，核心資料流為用戶輸入 → 模型探
 
 相關概念：[[機器學習]] · [[自然語言處理]] · [[模型解釋性]] · [[開放科學]]
 
-相關專案：[[huggingface--transformers|huggingface/transformers]] · [[openai--gpt-3|openai/gpt-3]]
+相關專案：[[huggingface--transformers|huggingface/transformers]] · [[openai--gpt-3|openai/gpt-3]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]]
 
 [GitHub](https://github.com/elder-plinius/OBLITERATUS) · [官方網站](https://huggingface.co/spaces/pliny-the-prompter/)
 

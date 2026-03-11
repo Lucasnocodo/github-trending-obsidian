@@ -257,6 +257,8 @@ pip install -r requirements.txt
 
 相關概念：[[無人機技術]] · [[開源硬體]] · [[DIY 電子產品]]
 
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]]
+
 [GitHub](https://github.com/L42ARO/Mercury-Transforming-Drone)
 
 ## 相關收錄

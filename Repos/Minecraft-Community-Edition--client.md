@@ -135,6 +135,8 @@ aliases:
 
 ## 延伸閱讀
 
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]]
+
 [GitHub](https://github.com/Minecraft-Community-Edition/client)
 
 ## 相關收錄

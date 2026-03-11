@@ -384,6 +384,8 @@ npx skills add joeseesun/qiaomu-mondo-poster-design
 
 ## 延伸閱讀
 
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]]
+
 [GitHub](https://github.com/joeseesun/qiaomu-mondo-poster-design)
 
 ## 相關收錄
