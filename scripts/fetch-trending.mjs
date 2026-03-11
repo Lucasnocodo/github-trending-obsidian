@@ -2507,7 +2507,39 @@ if (sorted.length > 0) {
 }
 \`\`\`
 
+## 本月 Owner 排行
+
+> [!abstract] 本月貢獻最多 trending 專案的開發者
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  const fs = p.first_seen?.toString();
+  return fs && fs.startsWith("${monthStr}");
+});
+const owners = {};
+for (const p of pages) {
+  const o = p.owner || "unknown";
+  if (!owners[o]) owners[o] = { count: 0, repos: [] };
+  owners[o].count++;
+  owners[o].repos.push(p.file.link);
+}
+const multi = Object.entries(owners).filter(([_, d]) => d.count >= 2).sort((a, b) => b[1].count - a[1].count);
+if (multi.length > 0) {
+  dv.table(["Owner", "專案數", "專案"], multi.map(([name, d]) => [name, d.count, d.repos.join(", ")]));
+} else {
+  dv.paragraph("本月沒有重複出現的 Owner。");
+}
+\`\`\`
+
 ---
+
+## Editor's Pick（本月精選）
+
+> [!tip]+ 本月最值得關注的 3 個專案（手動精選）
+>
+> 1. **[[]]** — _為什麼選它：_
+> 2. **[[]]** — _為什麼選它：_
+> 3. **[[]]** — _為什麼選它：_
 
 ## 月度回顧
 
