@@ -114,6 +114,43 @@ if (comparableSubs.length > 0) {
 }
 ```
 
+## 子分類功能對決
+
+> [!tip] 同子分類的專案怎麼選？看用途和技術路線的差異
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived" && p.subcategory);
+const subs = {};
+for (const p of pages) {
+  const key = `${p.category} > ${p.subcategory}`;
+  if (!subs[key]) subs[key] = [];
+  subs[key].push(p);
+}
+const matchups = Object.entries(subs)
+  .filter(([_, repos]) => repos.length >= 2)
+  .sort((a, b) => b[1].length - a[1].length);
+
+if (matchups.length > 0) {
+  for (const [sub, repos] of matchups.slice(0, 5)) {
+    repos.sort((a, b) => (b.stars_per_day || 0) - (a.stars_per_day || 0));
+    dv.header(4, sub);
+    dv.table(
+      ["專案", "Stars/天", "安裝", "用途差異", "語言", "授權"],
+      repos.map(p => [
+        p.file.link,
+        p.stars_per_day || 0,
+        p.install_complexity || "?",
+        (p.use_case || p.description || "").slice(0, 80),
+        p.language || "?",
+        p.license || "N/A"
+      ])
+    );
+  }
+} else {
+  dv.paragraph("需要更多同子分類專案才能進行功能對決。");
+}
+```
+
 ## 安裝難度 vs Stars/天 散點圖
 
 > [!info] 快速找到高價值低門檻的專案（左上角最佳）
@@ -597,4 +634,5 @@ if (scored.length > 0) {
 > 9. 筆記豐富度排名找出需要充實的筆記
 > 10. 維護健康警示識別高風險專案
 > 11. 投入回報排行找出最佳 ROI 專案
-> 12. 搭配 [[Triage]] 進行狀態管理
+> 12. 子分類功能對決比較同類型工具
+> 13. 搭配 [[Triage]] 進行狀態管理
