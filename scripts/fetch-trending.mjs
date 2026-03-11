@@ -506,7 +506,7 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
       llmInfo[key] = typeof llmInfo[key] === 'object' ? JSON.stringify(llmInfo[key], null, 2) : String(llmInfo[key]);
     }
   }
-  if (llmInfo?.code_example) {
+  if (llmInfo?.code_example && typeof llmInfo.code_example === 'string') {
     // 移除明顯的 placeholder 程式碼
     const placeholderPatterns = ['// 這裡放置', '// TODO:', '// placeholder', '// 在此處'];
     for (const pat of placeholderPatterns) {
