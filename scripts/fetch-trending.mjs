@@ -435,6 +435,18 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   const catTag = cat.toLowerCase().replace(/[/\s]/g, '_');
   const llmFailed = llmInfo?._llm_failed === true;
 
+  // ── 品質驗證：修正 LLM 幻覺 ──
+  if (llmInfo?.code_example) {
+    // 移除明顯的 placeholder 程式碼
+    const placeholderPatterns = ['// 這裡放置', '// TODO:', '// placeholder', '// 在此處'];
+    for (const pat of placeholderPatterns) {
+      if (llmInfo.code_example.includes(pat)) {
+        llmInfo.code_example = null;
+        break;
+      }
+    }
+  }
+
   // ── Frontmatter ──
   const installLabel = llmInfo?.install_complexity || 'unknown';
   const fm = [
