@@ -45,7 +45,7 @@ async function fetchReadme(fullName, token) {
     const data = await res.json();
     return Buffer.from(data.content, 'base64')
       .toString('utf-8')
-      .slice(0, 8000)
+      .slice(0, 10000)
       .replace(/!\[[^\]]*\]\([^)]+\)/g, '') // remove images
       .replace(/<img[^>]*>/g, '')
       .replace(/<\/?[^>]+>/g, '')
@@ -187,7 +187,7 @@ function buildRepoPrompt(repos) {
       if (r._release) parts.push(`最新版本: ${r._release.tag}`);
       if (r.homepage) parts.push(`官方網站: ${r.homepage}`);
       if (r.topics?.length) parts.push(`Topics: ${r.topics.join(', ')}`);
-      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 6000)}`);
+      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 8000)}`);
       return parts.join('\n');
     })
     .join('\n\n---\n\n');
