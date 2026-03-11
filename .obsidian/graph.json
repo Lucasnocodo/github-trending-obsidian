@@ -50,6 +50,20 @@
       }
     },
     {
+      "query": "path:Repos status:integrated",
+      "color": {
+        "a": 1,
+        "rgb": 65280
+      }
+    },
+    {
+      "query": "path:Repos status:tried",
+      "color": {
+        "a": 1,
+        "rgb": 52479
+      }
+    },
+    {
       "query": "path:Repos status:archived",
       "color": {
         "a": 0.5,
