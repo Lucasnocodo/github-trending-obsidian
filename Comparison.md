@@ -434,6 +434,83 @@ if (sorted.length > 0) {
 }
 ```
 
+## 成長軌跡分析
+
+> [!abstract] 專案的成長速度如何隨時間變化
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => {
+  if (!p.star_history || p.status === "archived") return false;
+  const raw = p.star_history.toString();
+  return raw.includes(",");
+});
+if (pages.length > 0) {
+  const rows = [];
+  for (const p of pages) {
+    const entries = p.star_history.toString().split(",").map(e => {
+      const [d, s] = e.split(":");
+      return { date: d, stars: parseInt(s) || 0 };
+    }).filter(e => e.stars > 0);
+    if (entries.length < 2) continue;
+    const first = entries[0], last = entries[entries.length - 1];
+    const growth = last.stars - first.stars;
+    const days = Math.max(1, (new Date(last.date) - new Date(first.date)) / 86400000);
+    const velocity = Math.round(growth / days);
+    const acceleration = entries.length >= 3 ? (() => {
+      const mid = entries[Math.floor(entries.length / 2)];
+      const earlyV = (mid.stars - first.stars) / Math.max(1, (new Date(mid.date) - new Date(first.date)) / 86400000);
+      const lateV = (last.stars - mid.stars) / Math.max(1, (new Date(last.date) - new Date(mid.date)) / 86400000);
+      return lateV > earlyV * 1.2 ? "加速" : lateV < earlyV * 0.8 ? "減速" : "平穩";
+    })() : "資料不足";
+    rows.push([p.file.link, first.stars.toLocaleString(), last.stars.toLocaleString(), "+" + growth.toLocaleString(), velocity + "/天", acceleration, p.category || ""]);
+  }
+  if (rows.length > 0) {
+    rows.sort((a, b) => parseInt(b[4]) - parseInt(a[4]));
+    dv.table(["專案", "首次 Stars", "最新 Stars", "增長", "日均增速", "趨勢", "分類"], rows.slice(0, 15));
+  } else {
+    dv.paragraph("需要更多快照資料。");
+  }
+} else {
+  dv.paragraph("尚無足夠的歷史資料。多次出現在 trending 的專案會累積追蹤資料。");
+}
+```
+
+## 筆記豐富度排名
+
+> [!abstract] 哪些筆記的分析最完整
+
+```dataviewjs
+const sections = [
+  "## 成熟度評估", "## 已知陷阱", "## 使用情境適合度",
+  "## 替代方案決策", "## 技術深入分析", "## 架構分析",
+  "## 生態系整合", "## 歷史脈絡", "## 團隊採用指南",
+  "## 安全性評估", "## 採用成本分析", "## 新手體驗",
+  "## 健康度儀表板", "## 決策分數", "## Vault 排名",
+];
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const scores = [];
+for (const p of pages) {
+  const content = await dv.io.load(p.file.path);
+  const present = sections.filter(s => content.includes(s)).length;
+  const pct = Math.round(present / sections.length * 100);
+  scores.push({ link: p.file.link, present, total: sections.length, pct, stars: p.stars_per_day || 0 });
+}
+scores.sort((a, b) => b.pct - a.pct);
+const avgPct = Math.round(scores.reduce((s, x) => s + x.pct, 0) / scores.length);
+dv.paragraph(`**平均完整度** ${avgPct}% · **最高** ${scores[0]?.pct || 0}% · **最低** ${scores[scores.length-1]?.pct || 0}%`);
+dv.table(
+  ["專案", "Stars/天", "完整度", "有/無"],
+  scores.slice(0, 10).map(s => [s.link, s.stars, s.pct + "%", s.present + "/" + s.total])
+);
+if (scores.length > 10) {
+  dv.header(4, "待充實（完整度最低）");
+  dv.table(
+    ["專案", "Stars/天", "完整度", "有/無"],
+    scores.slice(-5).reverse().map(s => [s.link, s.stars, s.pct + "%", s.present + "/" + s.total])
+  );
+}
+```
+
 ---
 
 > [!info] 使用方式
@@ -444,4 +521,6 @@ if (sorted.length > 0) {
 > 5. 決策矩陣幫你找出綜合評分最高的專案
 > 6. 貢獻者風險總覽識別 bus factor 風險
 > 7. 技術棧分佈了解語言生態
-> 8. 搭配 [[Triage]] 進行狀態管理
+> 8. 成長軌跡分析追蹤加速/減速趨勢
+> 9. 筆記豐富度排名找出需要充實的筆記
+> 10. 搭配 [[Triage]] 進行狀態管理
