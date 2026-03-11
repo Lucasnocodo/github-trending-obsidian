@@ -130,21 +130,21 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 
 1. "repo": 完全等於 owner/name（區分大小寫）
 2. "description_zh": 一句話說明「解決什麼問題」。好的例子：「讓 AI 自動跑實驗，你只要早上起來看結果」。壞的例子：「自動化 AI 研究平台」
-3. "summary": 10-12 句話的深度分析。結構：
-   - 第 1-2 句：白話說核心機制，要具體到流程（例如「它讓 AI agent 每 5 分鐘改一次 train.py、跑訓練、比對 loss，如果變好就 commit，變差就 revert，整晚自動跑」）
-   - 第 3-4 句：技術實作方式，具體到用了什麼框架、演算法、通訊協議。如果 README 有提到效能數據或 benchmark，一定要提
-   - 第 5-6 句：跟同類工具的具體差異（要具體到功能和架構層面）
-   - 第 7-8 句：實際使用的效果和限制（效能數據、支援範圍、需要什麼硬體）
-   - 第 9-10 句：你的觀點——成熟度（alpha/beta/stable）、值不值得現在就用、適合什麼規模的團隊
-   - 第 11-12 句：給讀者的建議——什麼情況下該用、什麼情況下不該用
+3. "summary": 15-18 句話的深度分析（這是筆記最重要的段落，要讓讀者不看 README 就能完全理解）。結構：
+   - 第 1-3 句：白話說核心機制，要具體到「輸入什麼 → 中間怎麼處理 → 輸出什麼」的完整流程。例如「它讓 AI agent 每 5 分鐘改一次 train.py、跑訓練、比對 loss，如果變好就 commit，變差就 revert，整晚自動跑」
+   - 第 4-6 句：技術實作方式，具體到用了什麼框架、演算法、通訊協議、資料格式。如果 README 有提到效能數據或 benchmark，一定要帶數字
+   - 第 7-9 句：跟同類工具的具體差異。不要只說「比 X 更好」，要說「X 用 polling 但這個用 WebSocket，所以延遲從 500ms 降到 50ms」這種具體對比
+   - 第 10-12 句：實際使用的效果和限制（效能數據、支援範圍、需要什麼硬體、多大規模的資料能處理）
+   - 第 13-15 句：你的觀點——成熟度（alpha/beta/stable）、值不值得現在就用、適合什麼規模的團隊
+   - 第 16-18 句：給讀者的具體建議——什麼情境該用（舉例）、什麼情境不該用（舉例）、有什麼替代方案
 4. "why_trending": 3-4 句具體分析。禁止寫「隨著 XX 的發展/流行」這種廢話。要回答：(a) 作者是誰、過去做過什麼知名專案？(b) 這個工具解決了什麼「之前沒有好方案」的痛點？(c) 有沒有觸發事件（某篇 tweet、HN 討論、相關新聞）？如果 README 或 topics 有線索就提。(d) 為什麼是「現在」而不是半年前？技術生態有什麼變化讓這個工具變得可行？如果真的無法判斷，就直說「爆紅原因不明確，可能是自然擴散」
 5. "use_cases": 陣列，3 個場景。格式：「[具體角色] 用它來 [具體動作+預期結果]，因為 [具體好處，要有數據或對比]」。例子：「後端工程師用它來在 CI 中自動檢測 API breaking changes，因為手動 diff OpenAPI spec 容易漏掉 nested field 的變動」
 6. "target_audience": 一句話，越具體越好。不要寫「開發者」，要寫「需要在 M1 Mac 上跑 LLM 推論但不想裝 Docker 的獨立開發者」
-7. "category": AI/ML、開發工具、Web 應用、CLI 工具、資料科學、安全、教學資源、基礎設施、其他（選一個）
+7. "category": AI/ML、開發工具、Web 應用、CLI 工具、資料科學、安全、教學資源、基礎設施、生產力、遊戲、其他（選一個）
 7b. "subcategory": 更精確的子分類（2-3 個字）。例如開發工具底下可以是：API 工具、WeChat 工具、Claude 工具、MCP 工具、程式碼工具、自動化、監控、測試、CI/CD 等。AI/ML 底下可以是：LLM 訓練、推論優化、影像生成、NLP、Agent 等。自行判斷合理的子分類名稱
 8. "key_features": 陣列，5-8 個功能特色。每個要具體到可操作的層面，格式：「功能名 — 具體描述（含數據、指令、參數）」。壞的：「支持多種圖表類型」。好的：「8 種圖表格式（ascii/spark/bars/columns/heatmap/unicode/braille/svg），用 -t 參數切換」
 9. "quickstart_steps": 陣列，3-5 個安裝/使用步驟。每步是物件：{"step": "簡潔說明", "cmd": "完整可複製貼上的指令"}。從 README 提取真實指令。沒有就回傳 []
-10. "code_example": 一段展示核心用法的程式碼或指令（含語言標記如 bash/python/js）。從 README 提取最有代表性的範例，展示輸入輸出。不超過 15 行。沒有就回傳 null
+10. "code_example": 一段展示核心用法的程式碼或指令（含語言標記如 bash/python/js）。優先從 README 提取最有代表性的範例。要展示「輸入 → 指令/程式碼 → 預期輸出」的完整流程。如果 README 沒有範例，就根據 quickstart 和功能描述組合一個最小可用範例（標注 # 基於文件推測的用法）。不超過 20 行。CLI 工具一定要有範例指令
 11. "limitations": 陣列，3-4 個注意事項。要具體（例如 ["僅支援 Python 3.10+", "需要 NVIDIA GPU (CUDA 12+)", "不支援 Windows", "alpha 階段，API 每週都在變"]）
 12. "similar_tools": 陣列，2-4 項。每項是物件：{"name": "工具名（優先用 GitHub owner/repo 格式，如 crewai/crewai）", "diff": "跟本專案的具體差異，要提到功能差異和適用場景差異（2 句話）"}。這是筆記中最有決策價值的段落，一定要認真寫。想不到就回 []
 13. "related_concepts": 陣列，3-5 個相關技術概念。優先從以下預定義概念中選擇（繁體中文，如果沒有符合的可以自創）：
@@ -156,12 +156,15 @@ const SYSTEM_PROMPT = `你是一位台灣的資深技術部落客和開源愛好
 18. "pros_cons": 物件，包含 "pros"（陣列，3-4 個優點，每個要具體）和 "cons"（陣列，3-4 個缺點，每個要具體，不要跟 limitations 重複）
 19. "community": 物件，可選欄位。"docs_url"（文件網站）、"discord"（Discord 連結）、"activity"（一句話描述社群活躍度）。都沒有就回傳 null
 20. "key_insight": 一句話，你讀完這個專案後最想告訴朋友的一件事。例如：「這個專案最厲害的不是功能，而是它證明了用 Markdown 就能『編程』AI agent 的研究行為」
-21. "deep_dive": 5-8 句話的技術深入分析。這是給想深入了解的讀者看的，要有技術含量。結構：
-   - 核心演算法或資料結構的工作原理（如果 README 有提到）
-   - 效能特性（benchmark 數據、支援規模、記憶體用量等具體數字）
-   - 關鍵設計取捨（為什麼選 A 而不是 B？有什麼 trade-off？）
-   - 跟競品在實作層面的差異（不是功能差異，是技術決策的差異）
-   如果 README 沒有提供足夠的技術細節就回傳 null，不要編造
+21. "deep_dive": 8-12 句話的技術深入分析。這是筆記中最有技術含量的段落。即使 README 簡短，也要盡力從語言選擇、架構模式、依賴關係等角度分析。結構：
+   - 第 1-3 句：核心技術機制——用了什麼演算法、資料結構、通訊模式？（從 README 或語言/框架推斷）
+   - 第 4-6 句：效能和規模特性——能處理多大的資料？有什麼瓶頸？需要多少資源？（有數字就用數字，沒有就從架構推斷）
+   - 第 7-9 句：設計取捨分析——為什麼選這個語言/框架而不是另一個？這個選擇帶來什麼好處和代價？
+   - 第 10-12 句：技術風險評估——哪些設計決策可能在規模擴大時出問題？有什麼技術債？安全性考量？
+   不要回傳 null，每個專案都值得從技術角度分析
+
+22. "onboarding_evaluation": 3-5 句話評估「新手體驗」。包含：(1) README 文件品質（是否清楚、有沒有範例）；(2) 安裝過程是否順暢（有沒有坑）；(3) 是否有好的 getting started guide；(4) 文件有沒有中文/多語言。這段幫助讀者判斷「花 30 分鐘能不能跑起來」
+23. "alternatives_detail": 陣列，2-3 項結構化的替代方案對比。每項是物件：{"name": "工具名", "stars": 估計的 stars 數（整數，可以大概猜），"approach": "技術路線差異（1 句話）", "when_to_choose": "什麼情況下應該選它而不是本專案（1 句話）"}。這是幫讀者做決策用的，一定要認真寫。想不到就回 []
 
 回傳 JSON 陣列，只回傳 JSON，不要加 markdown 標記。`;
 
@@ -178,7 +181,7 @@ function buildRepoPrompt(repos) {
       if (r._release) parts.push(`最新版本: ${r._release.tag}`);
       if (r.homepage) parts.push(`官方網站: ${r.homepage}`);
       if (r.topics?.length) parts.push(`Topics: ${r.topics.join(', ')}`);
-      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 5000)}`);
+      if (r._readme) parts.push(`README:\n${r._readme.slice(0, 6000)}`);
       return parts.join('\n');
     })
     .join('\n\n---\n\n');
@@ -221,7 +224,7 @@ async function callLLMBatch(repos, token, vaultRepoNames = null) {
         { role: 'user', content: prompt },
       ],
       temperature: 0.3,
-      max_tokens: 14000,
+      max_tokens: 16000,
     }),
   });
   if (!res.ok) {
@@ -254,7 +257,7 @@ async function callLLMBatch(repos, token, vaultRepoNames = null) {
 }
 
 async function callLLM(repos, token, vaultRepoNames = null) {
-  const BATCH_SIZE = 2;  // 每個 repo 產生更多內容，減小批次以避免 token 上限
+  const BATCH_SIZE = 1;  // v9: 每個 repo 產生 24 欄位豐富內容，必須逐個處理避免 token 截斷
   const results = [];
   let consecutiveFailures = 0;
 
@@ -422,7 +425,7 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
     `my_rating: 0`,
     `last_reviewed: ${today}`,
     `use_case: "${(llmInfo?.description_zh || '').replace(/"/g, '\\"').slice(0, 80)}"`,
-    `priority: medium`,
+    `priority: ${rate >= 200 ? 'high' : rate >= 30 ? 'medium' : 'low'}`,
     `ring: assess`,
     `discovered_via: "GitHub Trending"`,
     `verdict: ""`,
@@ -495,9 +498,20 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
       : copyleft.includes(licenseId) ? `${licenseId} (Copyleft，商用需注意)`
       : licenseId && licenseId !== 'N/A' ? licenseId
       : '未標註授權 (風險較高)';
+    // 維護健康指標
+    const pushedAt = repo.pushed_at ? new Date(repo.pushed_at) : null;
+    const daysSincePush = pushedAt ? Math.floor((Date.now() - pushedAt.getTime()) / 86400000) : null;
+    const maintLabel = daysSincePush === null ? '未知'
+      : daysSincePush <= 7 ? 'Active'
+      : daysSincePush <= 30 ? 'Moderate'
+      : daysSincePush <= 90 ? 'Slow'
+      : 'Stale';
+    const maintDetail = daysSincePush !== null ? `最後推送 ${daysSincePush} 天前` : '';
     lines.push('> [!info] 速覽');
     lines.push(`> **安裝難度** ${installIcon} · **專案狀態** ${ageLabel} · **熱度** ${momentumLabel} (${fmt(rate)} stars/day)`);
-    lines.push(`> **授權** ${licenseLabel}`);
+    const contribCount = repo._contributors?.length || 0;
+    const busFactor = contribCount <= 1 ? 'Solo (bus factor 風險)' : contribCount <= 3 ? `${contribCount} 人` : `${contribCount}+ 人`;
+    lines.push(`> **授權** ${licenseLabel} · **維護** ${maintLabel}${maintDetail ? ` (${maintDetail})` : ''} · **貢獻者** ${busFactor}`);
     if (llmInfo?.target_audience) {
       lines.push(`> **適合** ${llmInfo.target_audience}`);
     }
@@ -609,8 +623,16 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   if (llmInfo?.deep_dive) {
     lines.push('## 技術深入分析');
     lines.push('');
-    lines.push('> [!note]- 展開深入分析');
-    lines.push(`> ${llmInfo.deep_dive.split('\n').join('\n> ')}`);
+    lines.push(llmInfo.deep_dive);
+    lines.push('');
+  }
+
+  // ── 新手體驗評估 ──
+  if (llmInfo?.onboarding_evaluation) {
+    lines.push('## 新手體驗');
+    lines.push('');
+    lines.push('> [!info] 上手難度評估');
+    lines.push(`> ${llmInfo.onboarding_evaluation}`);
     lines.push('');
   }
 
@@ -663,6 +685,23 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
       }
     } else {
       lines.push(`相關替代方案：${llmInfo.similar_tools.map(t => typeof t === 'string' ? t : t.name).join('、')}`);
+    }
+    lines.push('');
+  }
+
+  // ── 替代方案決策表 ──
+  if (llmInfo?.alternatives_detail?.length) {
+    lines.push('## 替代方案決策');
+    lines.push('');
+    lines.push('> [!question] 什麼時候該選別的工具？');
+    lines.push('');
+    lines.push('| 工具 | 技術路線 | 選它的時機 |');
+    lines.push('| --- | --- | --- |');
+    for (const alt of llmInfo.alternatives_detail) {
+      const name = (alt.name || '').includes('/')
+        ? `[${alt.name}](https://github.com/${alt.name})`
+        : alt.name || '';
+      lines.push(`| ${name} | ${alt.approach || ''} | ${alt.when_to_choose || ''} |`);
     }
     lines.push('');
   }
@@ -823,6 +862,12 @@ function generateRepoNote(repo, llmInfo, today, existingRepos = null) {
   lines.push('> **不該用的情況**：');
   lines.push('> - ');
   lines.push('');
+  lines.push('> [!warning]- 替換成本');
+  lines.push('> 若半年後要換掉，難度多高？資料格式是標準的嗎？');
+  lines.push('> ');
+  lines.push('> 侵入性:: _低 / 中 / 高_');
+  lines.push('> 遷移路徑:: _描述_');
+  lines.push('');
   lines.push('### 想法與筆記');
   lines.push('');
   lines.push('_隨時記錄想法、發現、跟其他工具的比較..._');
@@ -979,6 +1024,40 @@ const pct = total > 0 ? Math.round((reviewed / total) * 100) : 0;
 
 dv.paragraph(\`**\${total}** 個專案 · 已回顧 **\${reviewed}** (\${pct}%) · 已評分 **\${rated}** · 已試用 **\${tried}** · 已整合 **\${integrated}** · 已封存 **\${archived}\`);
 dv.paragraph(\`<progress value="\${reviewed}" max="\${total}" style="width:100%"></progress>\`);
+\`\`\`
+
+## 今日行動建議
+
+\`\`\`dataviewjs
+const pages = dv.pages('"Repos"');
+const toReview = pages.where(p => p.status === "to-review");
+const highPri = toReview.where(p => p.priority === "high");
+const easy = toReview.where(p => p.install_complexity === "easy");
+const actions = [];
+
+if (highPri.length > 0) {
+  const top = highPri.sort(p => p.stars_per_day, "desc").first();
+  actions.push(\`**優先回顧** \${top.file.link}（\${top.stars_per_day} stars/天，priority: high）\`);
+}
+if (easy.length > 0) {
+  const pick = easy.sort(p => p.stars_per_day, "desc").first();
+  if (!highPri.length || pick.file.name !== highPri.sort(p => p.stars_per_day, "desc").first()?.file.name) {
+    actions.push(\`**快速試用** \${pick.file.link}（easy install，\${pick.stars_per_day} stars/天）\`);
+  }
+}
+const stale = pages.where(p => {
+  if (!p.last_reviewed || p.status === "archived") return false;
+  const d = new Date(p.last_reviewed.toString());
+  return (Date.now() - d.getTime()) > 14 * 86400000 && p.my_rating > 3;
+});
+if (stale.length > 0) {
+  actions.push(\`**重新檢視** \${stale.first().file.link}（高評分但超過 14 天未回顧）\`);
+}
+if (actions.length > 0) {
+  dv.list(actions);
+} else {
+  dv.paragraph("所有專案都已處理完畢！");
+}
 \`\`\`
 
 ## 收錄時間軸
@@ -1752,6 +1831,9 @@ cssclasses:
 | [[MOC - 資料科學]] | 資料科學 |
 | [[MOC - 教學資源]] | 教學資源 |
 | [[MOC - 基礎設施]] | 基礎設施 |
+| [[MOC - 生產力]] | 生產力 |
+| [[MOC - 遊戲]] | 遊戲 |
+| [[MOC - 其他]] | 其他分類 |
 
 ## 統計快照
 
@@ -1814,6 +1896,48 @@ SORT my_rating DESC
 LIMIT 10
 \`\`\`
 
+## 本週亮點
+
+\`\`\`dataviewjs
+const thisWeek = dv.pages('"Repos"')
+  .where(p => {
+    if (!p.first_seen) return false;
+    const d = new Date(p.first_seen.toString());
+    return (Date.now() - d.getTime()) < 7 * 86400000;
+  })
+  .sort(p => p.stars_per_day, "desc")
+  .limit(3);
+
+if (thisWeek.length > 0) {
+  for (const p of thisWeek) {
+    const desc = p.use_case || p.description || "";
+    dv.paragraph(\`**\${p.file.link}** — \${p.stars_per_day} stars/day · \${p.category || ""}\\n> \${desc.slice(0, 100)}\`);
+  }
+} else {
+  dv.paragraph("本週尚無新收錄。");
+}
+\`\`\`
+
+## 快速篩選
+
+> [!tip]- 立即可用的專案（easy install + 高 stars）
+> \`\`\`dataview
+> TABLE stars AS "Stars", category AS "分類", language AS "語言"
+> FROM "Repos"
+> WHERE install_complexity = "easy" AND status = "to-review"
+> SORT stars_per_day DESC
+> LIMIT 5
+> \`\`\`
+
+> [!tip]- 商業友好授權（MIT/Apache）
+> \`\`\`dataview
+> TABLE stars AS "Stars", license AS "授權", category AS "分類"
+> FROM "Repos"
+> WHERE license = "MIT" OR license = "Apache-2.0"
+> SORT stars DESC
+> LIMIT 5
+> \`\`\`
+
 ## 最近的週報
 
 \`\`\`dataview
@@ -1851,6 +1975,8 @@ async function generateMOCs() {
     '安全',
     '教學資源',
     '基礎設施',
+    '生產力',
+    '遊戲',
     '其他',
   ];
   for (const cat of categories) {
@@ -1897,6 +2023,25 @@ const CONCEPT_DESCRIPTIONS = {
   '爬蟲': '自動從網站抓取資料的程式。Python 的 Scrapy、Playwright 是常見工具。需要處理反爬蟲機制、速率限制、動態渲染等挑戰。使用前要注意 robots.txt 和法律規範。',
   '區塊鏈': '去中心化的分散式帳本技術，資料一旦寫入就幾乎不可篡改。除了加密貨幣，也用於供應鏈追蹤、數位身份等場景。但不是所有「需要不可篡改」的問題都需要區塊鏈，大部分情況普通資料庫就夠了。',
   '隱私保護': '保護使用者資料不被未授權存取或濫用的技術和實踐。包括加密、匿名化、差分隱私、零知識證明等。GDPR 和各國隱私法規讓這個領域從「nice-to-have」變成「must-have」。',
+  '電腦視覺': '讓電腦從影像和影片中提取資訊的技術。從基礎的物件偵測到進階的場景理解，CNN 和 Vision Transformer 是目前主流架構。自駕車、醫療影像分析、人臉辨識都是典型應用。',
+  '靜態分析': '不實際執行程式就分析原始碼來找出 bug、安全漏洞和程式碼品質問題的技術。ESLint、SonarQube、Semgrep 是常見工具。比測試更早發現問題，是 CI/CD 流程中的重要防線。',
+  '生成式 AI': '能生成新內容（文字、圖片、音樂、程式碼）的 AI 技術。從 GPT 到 Stable Diffusion，生成式 AI 正在改變創作和開發的方式。核心技術包括 Transformer、Diffusion Model 和 GAN。',
+  '資訊安全': '保護資訊系統免於未授權存取、破壞和洩漏的整體實踐。涵蓋網路安全、應用安全、資料安全等面向。CIA 三角（機密性、完整性、可用性）是基本原則。',
+  '特權提升': '攻擊者取得比預期更高的系統權限的技術。從普通使用者提升到管理員或 root 權限。分為本地提權和遠端提權，是滲透測試中的核心環節。',
+  '攻擊鏈分析': '把多個獨立的安全漏洞串聯成完整的攻擊路徑來分析風險。Cyber Kill Chain 和 MITRE ATT&CK 是常見框架。幫助防禦者理解攻擊者的思維模式，找出防禦中的薄弱環節。',
+  '跨平台': '讓同一套程式碼在不同作業系統（Windows、macOS、Linux）或平台（Web、Mobile、Desktop）上運行的技術。Electron、Flutter、React Native 是常見方案。省開發成本但可能犧牲原生體驗。',
+  '設計模式': '軟體開發中反覆出現的問題的通用解決方案。GoF 的 23 種經典模式是基礎，但現代開發更常用的是 Repository、Observer、Strategy 等模式。重點是理解何時用、為什麼用，而不是機械式套用。',
+  '量化交易': '用數學模型和演算法自動執行金融交易策略。包含策略開發、回測、風控和即時執行。需要同時掌握金融知識和程式設計能力，Python 和 C++ 是主流語言。',
+  '本地 AI': '在個人裝置上直接運行 AI 模型，而不依賴雲端 API。llama.cpp、Ollama 讓普通電腦也能跑 LLM。好處是隱私、離線可用、零成本，代價是速度和模型大小受限。',
+  'OAuth': '開放授權標準，讓使用者不需分享密碼就能授權第三方應用存取自己的資料。你按「用 Google 登入」就是在用 OAuth。OAuth 2.0 是目前最廣泛使用的版本。',
+  'OAuth2': '開放授權標準 2.0 版，定義了四種授權流程（Authorization Code、Implicit、Resource Owner Password、Client Credentials）。是目前網路服務間安全授權的事實標準。',
+  'CUDA': 'NVIDIA 的平行運算平台和程式模型，讓開發者用 GPU 來加速通用計算。深度學習訓練和推論幾乎都依賴 CUDA。這也是為什麼 NVIDIA GPU 在 AI 領域佔主導地位。',
+  '開源情報': '從公開來源（社群媒體、新聞、公共資料庫）收集和分析情報的方法，英文叫 OSINT。用於安全研究、競爭分析、新聞調查等。工具包括 Maltego、theHarvester 等。',
+  'UI 設計': '使用者介面設計，決定使用者如何與產品互動。好的 UI 設計要兼顧美觀和易用，遵循一致性、回饋、容錯等原則。Figma 是目前最主流的 UI 設計工具。',
+  '視頻編輯': '用工具對影片進行剪輯、特效、調色等後製處理。從 FFmpeg 的命令列到 Premiere Pro 的專業軟體，AI 正在讓這個領域變得更自動化，像是自動字幕、場景偵測、風格轉換。',
+  '生物信息學': '用計算方法分析生物資料（基因序列、蛋白質結構等）的交叉學科。Python 和 R 是主流語言，BioPython 是常見工具。隨著定序成本下降，這個領域的資料量正在爆發。',
+  '藥物發現': 'AI 輔助藥物發現正在加速新藥開發流程。從分子生成、靶點預測到臨床試驗設計，AI 可以將傳統需要數年的篩選過程縮短到數月。AlphaFold 在蛋白質結構預測的突破就是典型例子。',
+  '記憶管理': 'AI 系統中讓模型記住和利用歷史對話或資料的機制。從簡單的 context window 到 RAG、向量資料庫，再到 MemGPT 式的分層記憶。是建構有狀態 AI 應用的核心挑戰。',
 };
 
 function generateConceptNote(concept) {
@@ -2010,11 +2155,10 @@ async function generateConceptNotes() {
     }
   }
 
-  // 只為出現 2 次以上的概念建立筆記
+  // 為所有被引用的概念建立筆記（消除 ghost links）
   await mkdir(CONCEPTS_DIR, { recursive: true });
   let created = 0;
   for (const [concept, count] of Object.entries(conceptCounts)) {
-    if (count < 2) continue;
     // 清理概念名稱中的特殊字元（如 CI/CD 的斜線）
     const safeName = concept.replace(/[/\\:*?"<>|]/g, '-');
     const fileName = `${safeName}.md`;
@@ -2232,12 +2376,22 @@ async function main() {
             /^(## 出現記錄\n\n)/m,
             `$1${newEntry}\n`
           );
-          // 更新 frontmatter 中的 stars 和 pushed_at
+          // 更新 frontmatter 中的動態數值
           const final = updated
             .replace(/^stars: \d+$/m, `stars: ${repo.stargazers_count}`)
             .replace(/^stars_per_day: \d+$/m, `stars_per_day: ${starsPerDay(repo.stargazers_count, repo.created_at)}`)
+            .replace(/^forks: \d+$/m, `forks: ${repo.forks_count}`)
+            .replace(/^open_issues: \d+$/m, `open_issues: ${repo.open_issues_count || 0}`)
             .replace(/^pushed_at: .+$/m, `pushed_at: ${repo.pushed_at?.split('T')[0] || 'N/A'}`);
-          await writeFile(filePath, final, 'utf-8');
+          // 多次上榜自動提升 priority（出現 3+ 次 → high）
+          const appearances = (final.match(/^- \[\[/gm) || []).length;
+          const curPriority = final.match(/^priority: (.+)$/m)?.[1];
+          let promoted = final;
+          if (appearances >= 3 && curPriority !== 'high') {
+            promoted = final.replace(/^priority: .+$/m, 'priority: high');
+            console.log(`  Priority promoted to high (appeared ${appearances} times)`);
+          }
+          await writeFile(filePath, promoted, 'utf-8');
           console.log(`  Updated: ${fileName} (再次上榜)`);
           updatedNoteCount++;
         } else {
@@ -2396,7 +2550,9 @@ function needsRefresh(content) {
          !content.includes('subcategory:') || // v6: 子分類
          !content.includes('**授權**') ||     // v7: 速覽授權顯示
          !content.includes('ring:') ||        // v8: Tech Radar ring
-         !content.includes('verdict:');       // v8: 一句話結論
+         !content.includes('verdict:') ||     // v8: 一句話結論
+         !content.includes('新手體驗') ||      // v9: 豐富內容（deep_dive+onboarding+alternatives）
+         !content.includes('**維護**');         // v10: 維護健康指標
 }
 
 function hasLLMContent(content) {
@@ -2559,7 +2715,9 @@ async function refreshRepos(token, failedOnly = false) {
     const existingReposRefresh = new Set(existingFilesRefresh.filter(f => f.endsWith('.md')).map(f => f.replace('.md', '')));
 
     // 重新產生筆記
-    for (const item of repos) {
+    for (let ri = 0; ri < repos.length; ri++) {
+      const item = repos[ri];
+      console.log(`  Merging ${ri + 1}/${repos.length}: ${item.file}`);
       const llmInfo = llmMap[item.repo.full_name] || llmMap[item.repo.full_name.toLowerCase()] || null;
 
       // LLM 失敗時跳過，保留現有內容（避免覆蓋好的中文翻譯）
@@ -2635,7 +2793,7 @@ async function refreshRepos(token, failedOnly = false) {
         .replace(/^status: to-review$/m, `status: ${savedStatus}`)
         .replace(/^my_rating: 0$/m, `my_rating: ${savedRating}`)
         .replace(/^last_reviewed: .+$/m, `last_reviewed: ${savedReviewed}`)
-        .replace(/^priority: medium$/m, `priority: ${savedPriority}`)
+        .replace(/^priority: (high|medium|low)$/m, `priority: ${savedPriority}`)
         .replace(/^ring: assess$/m, `ring: ${savedRing}`)
         .replace(/^verdict: ""$/m, `verdict: "${savedVerdict}"`)
         .replace(/^discovered_via: "GitHub Trending"$/m, `discovered_via: "${savedDiscovered}"`);

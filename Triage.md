@@ -97,6 +97,78 @@ WHERE status = "archived"
 SORT stars DESC
 ```
 
+## 推薦回顧（基於偏好）
+
+> [!tip] 你評過高分的分類，還有這些專案沒看過
+
+```dataviewjs
+// 找出你給高評分的分類
+const rated = dv.pages('"Repos"').where(p => p.my_rating >= 4);
+const favCats = new Set(rated.map(p => p.category).filter(Boolean));
+
+if (favCats.size === 0) {
+  dv.paragraph("先給幾個專案評分，就能看到推薦。");
+} else {
+  const recs = dv.pages('"Repos"')
+    .where(p => p.status === "to-review" && favCats.has(p.category))
+    .sort(p => p.stars_per_day, "desc")
+    .limit(10);
+  if (recs.length > 0) {
+    dv.paragraph(`偏好分類：${[...favCats].join("、")}`);
+    dv.table(
+      ["專案", "Stars/天", "分類", "安裝", "用途"],
+      recs.map(p => [
+        p.file.link,
+        p.stars_per_day,
+        p.category,
+        p.install_complexity,
+        (p.use_case || "").slice(0, 40)
+      ])
+    );
+  } else {
+    dv.paragraph("偏好分類中已無待回顧的專案。");
+  }
+}
+```
+
+## 歸檔候選
+
+> [!warning] 低優先度且長期未回顧，考慮歸檔
+
+```dataview
+TABLE
+  stars AS "Stars",
+  priority AS "優先級",
+  first_seen AS "收錄日期",
+  category AS "分類"
+FROM "Repos"
+WHERE status = "to-review"
+  AND priority = "low"
+  AND date(first_seen) < date(today) - dur(14 days)
+SORT first_seen ASC
+```
+
+## 快速統計
+
+```dataviewjs
+const all = dv.pages('"Repos"');
+const byStatus = {};
+for (const p of all) {
+  const s = p.status || "unknown";
+  byStatus[s] = (byStatus[s] || 0) + 1;
+}
+const total = all.length;
+const bar = (label, count) => {
+  const pct = Math.round((count / total) * 100);
+  const filled = Math.round(pct / 5);
+  return `${label}: ${"█".repeat(filled)}${"░".repeat(20 - filled)} ${count} (${pct}%)`;
+};
+const lines = Object.entries(byStatus)
+  .sort((a, b) => b[1] - a[1])
+  .map(([s, c]) => bar(s, c));
+dv.paragraph(lines.join("\n"));
+```
+
 ---
 
 > [!tip] 如何使用
