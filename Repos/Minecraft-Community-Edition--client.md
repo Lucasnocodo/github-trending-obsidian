@@ -7,17 +7,17 @@ language: C++
 license: N/A
 description: "Minecraft CE Client"
 homepage: ""
-stars: 336
-stars_per_day: 112
+stars: 341
+stars_per_day: 68
 forks: 40
-open_issues: 7
+open_issues: 6
 created: 2026-03-07
-pushed_at: 2026-03-09
+pushed_at: 2026-03-11
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
-category: "其他"
-subcategory: "遊戲客戶端"
+category: "遊戲"
+subcategory: "Minecraft 客戶端"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "提供一個開源的 Minecraft 客戶端，讓玩家能夠自定義和擴展遊戲體驗。"
+use_case: "提供 Minecraft 的社群版本客戶端，支援多種設備。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,23 +34,29 @@ appearances: 2
 next_review: "2026-03-18"
 contributor_count: 5
 engagement: "medium"
+issue_close_rate: 25
+repo_size_kb: 1199785
+readme_length: 951
+bus_factor: 1
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:336,2026-03-11:336,2026-03-11:336"
+star_history: "2026-03-10:336,2026-03-11:336,2026-03-11:336,2026-03-13:341"
 tags:
   - github
-  - "category/其他"
+  - "category/遊戲"
   - "lang/c++"
   - org
 aliases:
   - "client"
   - "Minecraft-Community-Edition/client"
-  - "提供一個開源的 Minecraft 客戶端，讓玩家能夠自定義和擴展遊戲體驗。"
+  - "提供 Minecraft 的社群版本客戶端，支援多種設備。"
 ---
 
 # client
 
-**336** stars · **112** stars/天 · 建立 3 天前 · C++ · 未標註授權
+**341** stars · **68** stars/天 · 建立 5 天前 · C++ · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/Minecraft-Community-Edition--client");
@@ -66,40 +72,60 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供一個開源的 Minecraft 客戶端，讓玩家能夠自定義和擴展遊戲體驗。
+> 提供 Minecraft 的社群版本客戶端，支援多種設備。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (112 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (68 stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 希望自定義 Minecraft 客戶端的開發者和玩家。
-> **一句話重點** 這個專案展示了開源社群如何能夠共同創造和擴展一個遊戲客戶端的潛力。
+> **適合** 對 Minecraft 有興趣的開發者和玩家，特別是希望在舊設備上運行的使用者。
+> **一句話重點** 這個專案的核心在於其社群驅動的開發模式，未來的輕量化版本將是關鍵。
+
+> [!abstract]- 同類競品快速對比
+> ```dataviewjs
+> const me = dv.page("Repos/Minecraft-Community-Edition--client");
+> if (me) {
+>   const rivals = dv.pages('"Repos"')
+>     .where(p => p.subcategory === "Minecraft 客戶端" && p.file.name !== "Minecraft-Community-Edition--client" && p.status !== "archived")
+>     .sort(p => p.stars || 0, "desc").limit(5);
+>   if (rivals.length > 0) {
+>     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
+>       p.file.link,
+>       (p.stars || 0).toLocaleString(),
+>       p.stars_per_day || 0,
+>       p.install_complexity || "?",
+>       p.license || "?",
+>       p.ring || "assess"
+>     ]));
+>   } else { dv.paragraph("_目前 vault 中沒有其他 Minecraft 客戶端 類工具_"); }
+> }
+> ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習，5 小時整合，得到一個可自定義的 Minecraft 客戶端，值得探索。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到一個可運行的 Minecraft 客戶端，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於其開放性和社群驅動的開發模式。
+> 計劃中的 nano-lce 專案將顯著減少檔案大小，讓更多設備能夠運行 Minecraft。
 
 ## 專案簡介
 
-這個專案的核心功能是提供一個可擴展的 Minecraft 客戶端，支持多種語言如 C++ 和 Python，讓開發者能夠輕鬆地進行自定義開發。使用者可以透過修改源碼來增強遊戲功能，並且該專案的設計初衷是為了讓玩家能夠更自由地享受 Minecraft 的世界。專案目前仍在早期階段，並未完全實現所有功能，但已經有基本的架構和部分實作。使用者可以透過 `make` 指令來編譯專案，並且可以參考其他開源專案如 LCEMP 和 smartcmd 的代碼來進行擴展。這個工具的賣點在於其開放性和可擴展性，讓玩家和開發者能夠根據自己的需求進行調整。
+這個專案是一個 Minecraft 客戶端的社群版本，目的是讓更多設備能夠運行 Minecraft。專案目前處於過渡階段，開發者正在等待一個名為 nano-lce 的新分支完成，這個新分支將顯著減少檔案大小，讓更多設備能夠使用。當前版本的完整檔案大小約為 50-100MB，但尚未完成。核心機制是透過 C++ 和其他語言實現的，並且有計劃整合來自其他專案的代碼。這個專案的賣點在於其社群驅動的開發方式，並且希望能夠吸引更多的貢獻者來參與。由於專案仍在早期階段，並未提供完整的產品，因此對於使用者來說，這是一個探索性質的選擇。
 
-與其他 Minecraft 客戶端相比，如 Forge 和 Fabric，這個專案更注重於社群的參與和代碼的共享，而不是僅僅提供模組化的支持。這使得它適合那些希望深入了解 Minecraft 內部運作的開發者。使用者在使用過程中可能會遇到一些編譯問題，例如舊的預編譯標頭文件問題，這需要開發者有一定的技術背景來解決。這個專案的活躍度相對較高，最近有多個合併請求，顯示出社群的參與度。未來幾個月內，專案可能會逐步完善，並吸引更多的開發者參與進來，特別是在功能擴展和錯誤修復方面。
+技術上，專案依賴於多種語言，包括 C++、Python 和 Shell，這使得它在不同平台上有較好的兼容性。與其他 Minecraft 客戶端相比，這個專案的特色在於其社群貢獻和即將推出的輕量化版本，這使得它在資源有限的設備上也能運行。使用者可能會遇到一些問題，例如隱形的披風或編譯器版本不匹配的問題，這些問題在熱門 Issues 中都有提到。總體來看，這個專案的成熟度仍然偏低，適合對 Minecraft 有興趣的開發者和愛好者，但不建議用於生產環境。預計未來 6 個月內，隨著 nano-lce 的推出，專案將會有顯著的進展。
 
-**技術棧**：`C++` · `Python` · `CMake`
+**技術棧**：`C++` · `Python` · `Shell` · `CMake`
 
 ## 重點功能
 
-- 開源代碼 — 提供完整的源碼，讓開發者可以自由修改和擴展功能。
-- 多語言支持 — 使用 C++、Python 等多種語言開發，方便不同背景的開發者參與。
-- 社群驅動 — 鼓勵社群貢獻代碼，並提供明確的 PR 規則。
-- 基本功能實作 — 雖然仍在早期階段，但已經有基本的遊戲功能實作可供使用。
-- 編譯支持 — 使用 `make` 指令進行編譯，簡化了安裝過程。
+- 社群驅動的開發 — 鼓勵開發者貢獻代碼，並持續改進客戶端功能。
+- 輕量化設計 — nano-lce 專案將顯著減少檔案大小，適合資源有限的設備。
+- 多語言支持 — 使用 C++、Python、Shell 等多種語言，增強跨平台兼容性。
+- 活躍的社群互動 — 透過 GitHub Issues 和 PR 促進開發者之間的交流。
+- 未來擴展性 — 計劃整合其他專案的代碼，增強功能和穩定性。
 
 ## 快速開始
 
-1. 克隆專案
+1. 克隆專案到本地
 ```bash
 git clone https://github.com/Minecraft-Community-Edition/client.git
 ```
@@ -109,60 +135,70 @@ cd client
 ```
 3. 編譯專案
 ```bash
-make
+cmake . && make
+```
+
+## 程式碼範例
+
+```cpp
+{
+  "前置條件": "需要 CMake 和相應的編譯工具",
+  "指令": "cmake . && make",
+  "預期輸出": "生成可執行的 Minecraft 客戶端"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天就累積 336 stars（112/天），forks 40（11.9%），顯示出相對較高的參與度。作者 LazyByteDev 和其他貢獻者在開源社群中有一定的知名度，過去參與過多個相關專案。這個專案解決了玩家對於 Minecraft 客戶端的自定義需求，之前的方案如 Forge 雖然功能強大，但對於新手來說學習曲線較陡。最近的社群討論和推廣活動也促進了這個專案的曝光度。技術上，隨著 C++ 和 Python 的普及，這個專案的可行性大大提高。forks/stars 比率為 11.9%，顯示出許多人對此專案有實際的修改需求。
+> 建立 5 天內累積 341 stars（68/天），forks 40（11.7%），顯示出穩定的增長。作者 LazyByteDev 和其他貢獻者在 Minecraft 社群中有一定的知名度，之前參與過多個相關專案。這個專案解決了現有 Minecraft 客戶端在設備兼容性上的痛點，特別是對於資源有限的設備。近期的討論和社群互動也促進了專案的曝光度。技術上，社群對於輕量化和多平台支持的需求增加，使得這個專案的可行性提升。forks/stars 比率顯示出有相當比例的用戶對此專案進行實際修改和使用，這是活躍社群的指標。
 
 ## 適合誰使用
 
-**目標受眾**：希望自定義 Minecraft 客戶端的開發者和玩家。
+**目標受眾**：對 Minecraft 有興趣的開發者和玩家，特別是希望在舊設備上運行的使用者。
 
 > [!example] 使用場景
-> - 遊戲開發者用它來自定義 Minecraft 客戶端的功能，因為這樣可以快速實現新遊戲機制，並且不需要從零開始。
-> - 愛好者用它來修改遊戲內部設定，因為這樣可以提升遊戲的可玩性和個性化，並且能夠與朋友分享自定義的遊戲體驗。
-> - 學術研究者用它來分析 Minecraft 的遊戲機制，因為開源的代碼讓他們能夠深入理解遊戲的運作邏輯，並進行相關的研究。
+> - Minecraft 玩家用它來在舊電腦上運行 Minecraft，因為它的輕量化設計使得資源需求降低。
+> - 開發者用它來測試 Minecraft 的社群修改，因為它支援多種編程語言，方便進行二次開發。
+> - 教育工作者用它來教學 Minecraft 編程，因為它的開源特性讓學生能夠輕鬆修改和學習。
 
 ## 架構分析
 
-這個專案採用模組化的架構，主要使用 C++ 作為核心開發語言，並結合 Python 進行腳本擴展。這樣的設計使得開發者能夠在不改動核心代碼的情況下進行功能擴展。資料流方面，遊戲邏輯和用戶界面分開處理，使用 CMake 進行編譯和依賴管理。選擇 C++ 而非其他語言如 Java，主要是為了獲得更高的性能和更好的控制權，但這也增加了學習曲線。擴展性方面，專案的模組化設計使得未來可以輕鬆添加新功能，但也可能導致依賴管理的複雜性增加。
+專案採用模組化架構，主要使用 C++ 作為核心開發語言，並結合 Python 和 Shell 進行輔助功能的實現。這樣的設計使得專案能夠在多平台上運行，並且便於未來的擴展。資料流方面，C++ 負責核心遊戲邏輯，而 Python 用於腳本和自動化任務。選擇 C++ 的原因在於其高效能和對遊戲開發的廣泛應用，但這也帶來了較高的學習曲線。未來的擴展性瓶頸主要在於社群貢獻者的數量和活躍度，若無法持續吸引開發者參與，可能會影響專案的進展。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是使用 C++ 進行高效能的遊戲邏輯處理，並且利用 Python 進行腳本化的擴展。這樣的設計使得開發者可以快速地進行功能調整和擴展。效能方面，專案能夠處理基本的遊戲邏輯，但在大型模組或複雜功能的實作上可能會遇到瓶頸，特別是在資源管理上。選擇 C++ 而非 Java 是為了獲得更高的性能，但這也意味著開發者需要具備更高的技術能力。技術風險方面，隨著專案的擴展，可能會出現依賴管理的問題，特別是在多語言協作的情況下。整合方面，與主流的遊戲開發框架的兼容性尚待測試，特別是在 CI/CD 流程中可能需要額外的配置。
+專案核心機制是使用 C++ 開發 Minecraft 客戶端，並結合 Python 和 Shell 進行輔助功能的實現。這樣的架構設計使得專案在性能上有不錯的表現，但同時也帶來了較高的學習曲線。根據 README，未來的 nano-lce 專案將會顯著減少檔案大小，這對於資源有限的設備來說是個重要的優勢。設計取捨方面，選擇 C++ 使得性能優化變得可行，但也可能導致開發速度變慢，尤其是在社群貢獻者較少的情況下。技術風險方面，若未來無法持續吸引開發者參與，可能會影響專案的持續發展。整合方面，與主流開發工具的相容性尚需進一步測試，特別是在 CI/CD pipeline 中的使用。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件簡短，缺乏詳細的使用範例和文檔。安裝過程相對順暢，但對於新手來說可能會有一定的挑戰。沒有提供專門的入門指南，且文件目前僅有英文版本。
+> README 文件提供了基本的專案介紹，但缺乏詳細的使用範例。安裝過程相對順暢，但對於新手來說仍需一定的技術背景。沒有提供專門的入門指南，對於不熟悉 C++ 和 CMake 的使用者來說可能會有些困難。文件目前僅提供英文版本，缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開源且社群驅動，鼓勵貢獻和擴展。
-> - 多語言支持，適合不同背景的開發者。
-> - 模組化架構，便於未來功能擴展。
+> - 社群驅動的開發模式，能夠快速迭代和改進。
+> - 輕量化設計將使得更多設備能夠運行。
+> - 多語言支持，方便不同背景的開發者參與。
 
 > [!danger] 缺點
-> - 功能尚不完整，對新手不太友好。
-> - 可能會遇到編譯和依賴問題。
-> - 缺乏詳細的文檔和使用指導。
+> - 目前功能不完整，使用體驗可能不佳。
+> - 檔案大小仍然較大，對於舊設備不友好。
+> - 社群貢獻者較少，更新速度可能較慢。
 
 > [!warning] 注意事項
-> - 目前功能尚不完整，仍在開發中。
-> - 可能會遇到編譯問題，特別是與舊版本的預編譯標頭有關。
-> - 缺乏詳細的使用文檔，對新手不太友好。
+> - 目前仍在開發中，功能不完整。
+> - 檔案大小仍然較大，對於舊設備可能不友好。
+> - 社群貢獻者較少，可能導致更新緩慢。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的開源功能，但專注於檔案同步，而非遊戲客戶端的擴展。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於網路安全和隱私保護，與 Minecraft 客戶端的功能無直接關聯。 |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 主要用於 Telegram 的 WebSocket 代理，與遊戲開發無關。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步，功能上與 Minecraft 客戶端無關，適合需要文件管理的使用者。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於網路安全和資料保護，與 Minecraft 客戶端的遊戲功能無關。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 針對醫療技能的開發，與遊戲無關，適合醫療領域的開發者。 |
 
 ## 替代方案決策
 
@@ -170,16 +206,16 @@ make
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Forge | 提供一個成熟的模組化框架，支持大量現有模組，並且有活躍的社群。 | 如果你需要一個穩定的環境來運行多個模組，Forge 是更好的選擇。 | low，因為已有大量文檔和社群支持。 |
-| Fabric | 專注於輕量級和快速的模組開發，適合需要快速迭代的開發者。 | 如果你的團隊需要快速開發和測試新模組，Fabric 是更合適的選擇。 | medium，因為需要重新學習一些 API 和工具。 |
+| Minecraft-Forge | 專注於 Minecraft 的模組化開發，提供強大的 API 和社群支持，適合需要擴展遊戲功能的開發者。 | 如果你的目標是開發 Minecraft 模組，並需要強大的社群支持和文檔，Minecraft-Forge 是更好的選擇。 | medium，因為需要重新學習 Forge 的 API 和生態系統。 |
+| Fabric | 提供輕量化的模組開發框架，專注於性能和簡單性，適合需要快速開發的開發者。 | 如果你需要一個輕量化的框架來開發 Minecraft 模組，Fabric 是更合適的選擇。 | low，因為 Fabric 的 API 設計相對簡單，容易上手。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **client** | **Forge** | **Fabric** |
+> | 維度 | **client** | **Minecraft-Forge** | **Fabric** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供一個成熟的模組化框架，支持大量現有模組，並且有活躍的社群。 | 專注於輕量級和快速的模組開發，適合需要快速迭代的開發者。 |
-> | 遷移成本 | - | low，因為已有大量文檔和社群支持。 | medium，因為需要重新學習一些 API 和工具。 |
-> | 適用場景 | 主要場景 | 如果你需要一個穩定的環境來運行多個模組，Forge 是更好的 | 如果你的團隊需要快速開發和測試新模組，Fabric 是更合適 |
+> | 技術路線 | 本專案 | 專注於 Minecraft 的模組化開發，提供強大的 API 和社群支持，適合需要擴展遊戲功能的開發者。 | 提供輕量化的模組開發框架，專注於性能和簡單性，適合需要快速開發的開發者。 |
+> | 遷移成本 | - | medium，因為需要重新學習 Forge 的 API 和生態系統。 | low，因為 Fabric 的 API 設計相對簡單，容易上手。 |
+> | 適用場景 | 主要場景 | 如果你的目標是開發 Minecraft 模組，並需要強大的社 | 如果你需要一個輕量化的框架來開發 Minecraft 模組， |
 
 ## 成熟度評估
 
@@ -190,50 +226,72 @@ make
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和探索，但不建議在生產環境中使用。
+> 適合對 Minecraft 開發有興趣的開發者，但不建議用於生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 編譯過程中可能會遇到舊的預編譯標頭文件問題
-  - 解法：確保使用最新的編譯器版本
-- [MEDIUM] 某些功能可能尚未實裝，導致遊戲體驗不完整
-  - 解法：定期檢查更新以獲取最新功能
-- [MEDIUM] 缺乏詳細的文檔，可能導致使用困難
-  - 解法：參考社群討論和其他開源專案的文檔
+- **[HIGH]** 編譯器版本不匹配導致的錯誤，可能會影響編譯過程。
+  - 解法：確保使用與專案相容的編譯器版本。
+- [MEDIUM] 披風顯示為隱形，影響遊戲體驗。
+  - 解法：等待未來版本修復，或使用其他客戶端。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊希望自定義 Minecraft 客戶端 | 非常適合 | 開源和社群驅動的特性使其易於擴展和修改。 |
-| 大型遊戲公司需要穩定的客戶端解決方案 | 不適合 | 專案仍在 alpha 階段，功能不穩定。 |
-| 獨立開發者希望快速實驗新的遊戲機制 | 適合 | 開源特性使得快速迭代和實驗成為可能。 |
-| 教育機構希望使用 Minecraft 進行教學 | 普通 | 雖然有潛力，但缺乏穩定的功能和文檔支持。 |
+| 小型開發團隊開發 Minecraft 模組 | 普通 | 雖然有社群支持，但功能尚不完整，可能影響開發進度。 |
+| 個人玩家希望在舊設備上運行 Minecraft | 非常適合 | 輕量化設計使其能在資源有限的設備上運行。 |
+| 教育機構希望使用 Minecraft 進行編程教學 | 適合 | 開源特性使得學生能夠自由修改和學習。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~5 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習，5 小時整合，得到一個可自定義的 Minecraft 客戶端，值得探索。
+> 花 5 小時學習，10 小時整合，得到一個可運行的 Minecraft 客戶端，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：專案本身不需要高權限，且不存取敏感資料，但開發者需注意依賴的安全性。
+> 低風險：專案本身不需要高權限，且不存取敏感資料。依賴鏈的信任程度需進一步評估，建議在 CI/CD 中使用時進行安全性測試。
 
 ## 生態系整合
 
 > [!abstract] 如何融入你的工具鏈
 
-這個專案最常與其他開源 Minecraft 工具搭配使用，如 Forge 和 Fabric。在一個使用 Forge 的專案中，你可以用這個工具來擴展現有的客戶端功能，具體做法是通過修改源碼來添加新模組。與主流 CI 工具如 GitHub Actions 的整合尚未測試，但由於專案使用 CMake，理論上應該能夠順利整合。最常見的整合問題是依賴管理，特別是在多語言環境中，可能需要額外的配置來解決。
+這個專案最常與其他 Minecraft 模組開發工具搭配使用，例如 Minecraft-Forge 和 Fabric。在一個使用 Fabric 的專案中，你可以用這個客戶端來測試模組，具體做法是將客戶端與模組一同運行。與主流開發工具的相容性尚需進一步測試，特別是在 CI/CD pipeline 中的使用。整合時可能會遇到版本不匹配的問題，需注意編譯器和依賴的版本。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在這個專案出現之前，Minecraft 的客戶端主要由 Mojang 提供，對於資源有限的設備支持不佳。隨著開源文化的興起，社群開始探索如何創建輕量化的客戶端，以便讓更多玩家能夠享受遊戲。技術上，輕量化和多平台支持的需求增加，使得這個專案的可行性提升。
+
+這個工具代表了社群對於 Minecraft 開發的熱情，未來可能會隨著 nano-lce 的推出而有更大的發展潛力。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-5 人的小型團隊
+
+**前置技能**：
+- 熟悉 C++
+- 了解 CMake 基本操作
+- 有 Git 使用經驗
+
+> [!tip] 導入策略
+> 第一週：在個人專案中試用。第二週：在小型團隊內部工具中導入。第三週：撰寫使用文檔和最佳實踐。第四週：在主產品的非核心模組中開始使用。
+
+**成功指標**：測試成功率提高 30%，開發效率提升 20%。
+
+> [!warning] 退出計畫
+> 所有設定存在標準 JSON 格式，可以用官方工具轉換為其他客戶端。
 
 ## 健康度儀表板
 
@@ -249,13 +307,48 @@ make
 >   const issueRatio = me.stars > 0 ? ((me.open_issues || 0) / me.stars * 100).toFixed(1) : 0;
 >   const maint = daysSincePush === null ? "?" : daysSincePush <= 7 ? "Active" : daysSincePush <= 30 ? "Moderate" : "Stale";
 >   const busFactor = (me.forks || 0) > 50 ? "Good" : (me.forks || 0) > 10 ? "OK" : "Risk";
+>   // v29: README 品質和 Issue 解決率
+>   const readmeLen = me.readme_length || 0;
+>   const readmeQ = readmeLen > 5000 ? "Excellent" : readmeLen > 2000 ? "Good" : readmeLen > 500 ? "Basic" : readmeLen > 0 ? "Minimal" : "None";
+>   const icr = me.issue_close_rate;
+>   const icrLabel = icr === undefined || icr < 0 ? "N/A" : icr + "%";
+>   const icrEval = icr === undefined || icr < 0 ? "?" : icr >= 80 ? "Excellent" : icr >= 50 ? "Good" : icr >= 20 ? "Fair" : "Poor";
+>   const repoKB = me.repo_size_kb || 0;
+>   const sizeLabel = repoKB > 102400 ? (repoKB/1024).toFixed(0) + " MB" : repoKB + " KB";
 >   dv.table(["指標", "值", "評估"], [
 >     ["維護狀態", daysSincePush + " 天前推送", maint],
 >     ["專案年齡", age + " 天", age > 180 ? "Established" : age > 30 ? "Growing" : "Brand New"],
 >     ["Fork 比率", forkRatio + "%", parseFloat(forkRatio) > 20 ? "High adoption" : parseFloat(forkRatio) > 5 ? "Normal" : "Low"],
 >     ["Issue 密度", issueRatio + "%", parseFloat(issueRatio) > 5 ? "High" : "Normal"],
->     ["Bus Factor", (me.forks || 0) + " forks", busFactor],
+>     ["Issue 解決率", icrLabel, icrEval],
+>     ["Bus Factor", (me.bus_factor || 0) + " 人", (me.bus_factor || 0) >= 3 ? "Good" : (me.bus_factor || 0) >= 2 ? "OK" : "Risk"],
+>     ["README 品質", readmeLen.toLocaleString() + " 字元", readmeQ],
+>     ["Repo 大小", sizeLabel, repoKB > 102400 ? "Large" : repoKB > 10240 ? "Medium" : "Small"],
+>     ["發版節奏", me.release_cadence || "unknown", me.release_cadence === "weekly" || me.release_cadence === "monthly" ? "Active" : me.release_cadence === "never" ? "No releases" : "Check"],
+>     ["距上次發版", (me.last_release_days || 0) >= 0 ? (me.last_release_days + " 天") : "N/A", (me.last_release_days || -1) < 0 ? "?" : (me.last_release_days || 0) <= 30 ? "Fresh" : (me.last_release_days || 0) <= 90 ? "OK" : "Stale"],
 >   ]);
+> }
+> ```
+
+> [!abstract]- CHAOSS 社群健康度雷達
+> ```dataviewjs
+> const me = dv.page("Repos/Minecraft-Community-Edition--client");
+> if (me) {
+>   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
+>   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
+>   const dims = [
+>     ["維護活躍度", Math.max(0, 5 - Math.floor(daysSincePush / 14))],
+>     ["貢獻者多樣性", Math.min(5, Math.floor((me.bus_factor || 0) * 1.5 + (me.contributor_count || 0) / 3))],
+>     ["Issue 回應力", (me.issue_close_rate || 0) >= 80 ? 5 : (me.issue_close_rate || 0) >= 50 ? 4 : (me.issue_close_rate || 0) >= 20 ? 2 : 1],
+>     ["發版節奏", me.release_cadence === "weekly" ? 5 : me.release_cadence === "monthly" ? 4 : me.release_cadence === "quarterly" ? 3 : me.release_cadence === "irregular" ? 2 : 1],
+>     ["社群規模", Math.min(5, Math.floor(Math.log10(Math.max(me.stars || 1, 1)) * 1.2))],
+>     ["Fork 活躍度", (me.forks || 0) > 100 ? 5 : (me.forks || 0) > 30 ? 4 : (me.forks || 0) > 10 ? 3 : (me.forks || 0) > 3 ? 2 : 1],
+>   ];
+>   dv.table(["維度", "分數", "視覺化"], dims.map(([name, score]) => [
+>     name, score + "/5", "\u2588".repeat(score) + "\u2591".repeat(5 - score)
+>   ]));
+>   const avg = (dims.reduce((a, b) => a + b[1], 0) / dims.length).toFixed(1);
+>   dv.paragraph("**綜合健康度：" + avg + "/5**");
 > }
 > ```
 
@@ -264,8 +357,9 @@ make
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 40 |
-| Open Issues | 7 |
-| 最後推送 | 2026-03-09 |
+| Open Issues | 6 |
+| Issue 解決率 | 25% (2 closed) |
+| 最後推送 | 2026-03-11 |
 | 建立日期 | 2026-03-07 |
 | Repo 大小 | 1171.7 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Minecraft-Community-Edition/client) |
@@ -281,19 +375,19 @@ make
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@LazyByteDev](https://github.com/LazyByteDev) | 28 |
-> | [@coah80](https://github.com/coah80) | 18 |
+> | [@coah80](https://github.com/coah80) | 21 |
 > | [@Lucas6228](https://github.com/Lucas6228) | 2 |
+> | [@CPtheConqueror](https://github.com/CPtheConqueror) | 1 |
 > | [@doggybootsy](https://github.com/doggybootsy) | 1 |
-> | [@rodrigothe1st](https://github.com/rodrigothe1st) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，近期有多個合併請求。
+**社群活躍度**：社群活躍度中等，存在一些熱門 Issues 需要解決。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-07 ~ 2026-03-09）
-> **活躍天數** 3 天 · **最新 commit** Merge pull request #12 from Lucas6228/main
+> [!abstract] 最近 10 次 commit（2026-03-07 ~ 2026-03-11）
+> **活躍天數** 4 天 · **最新 commit** Merge pull request #13 from CPtheConqueror/main
 
 ## 熱門議題
 
@@ -303,35 +397,43 @@ make
 > | [#11](https://github.com/Minecraft-Community-Edition/client/issues/11) | Capes appear to be invisible `bug` | 0 | 1 |
 > | [#10](https://github.com/Minecraft-Community-Edition/client/issues/10) | precompiled header file is from a previous version of the co `bug` | 0 | 4 |
 > | [#7](https://github.com/Minecraft-Community-Edition/client/issues/7) | [Suggestion] Add smartcmd/MinecraftConsoles' implementation  `feature request` | 0 | 4 |
+> | [#5](https://github.com/Minecraft-Community-Edition/client/issues/5) | discord server | 0 | 4 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> ## this project is very early, and not the entire product
+> # this fork is in a transition stage!
+> ## We will not be using this current code, and are waiting for a new fork (nano-lce) to release/finish up, it may take awhile, but it will be worth it.
+> the new nano-lce fork will dramatically reduce file sizes, allowing even more devices to use the fork. 
+> for reference right now the full nano-lce project is about 50-100mb. but it is not finished. 
+> so again, it will take awhile before the new fork begins, so continue with another one of the amazing forks down below (credits section)
 > 
-> thank you [LCEMP](https://github.com/LCEMP/LCEMP) and [smartcmd's fork](https://github.com/smartcmd/MinecraftConsoles) for some code 
+> ## This project is very early, and not the entire product.
 > 
-> # pr rules
+> # credits
+> Thank you [LCEMP](https://github.com/LCEMP/LCEMP) and [smartcmd's fork](https://github.com/smartcmd/MinecraftConsoles) for some code.
 > 
-> 1. ai is somewhat fine, if you used it in fixing bugs, whatever dude. fully vibe coded implementations are not okay
+> # PR rules:
 > 
-> 2. prs must be yours unless asked to be added to the repo, hopefully with proof.
+> 1. AI is somewhat fine, if you used it in fixing bugs, whatever dude. Fully vibe coded implementations are not okay.
+> 
+> 2. PRs must be yours unless you were asked to be added to the repo, hopefully with proof.
 
 ## 延伸閱讀
 
-相關概念：[[開源]] · [[遊戲開發]] · [[社群貢獻]]
+相關概念：[[開源]] · [[社群開發]] · [[輕量化]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]]
 
 [GitHub](https://github.com/Minecraft-Community-Edition/client)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：遊戲客戶端）
+> [!note]- 直接競品（同子分類：Minecraft 客戶端）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "遊戲客戶端" AND file.name != "Minecraft-Community-Edition--client"
+> WHERE subcategory = "Minecraft 客戶端" AND file.name != "Minecraft-Community-Edition--client"
 > SORT stars DESC
 > ```
 
@@ -339,7 +441,7 @@ make
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "Minecraft-Community-Edition--client"
+> WHERE category = "遊戲" AND file.name != "Minecraft-Community-Edition--client"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -363,7 +465,7 @@ make
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["開源","遊戲開發","社群貢獻"];
+> const concepts = ["開源","社群開發","輕量化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Minecraft-Community-Edition--client" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
@@ -374,6 +476,23 @@ make
 >     return [p.file.link, p.stars, p.category, shared.join(", ")];
 >   }));
 > } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
+> ```
+
+> [!note]- Ring 更高的同類競品
+> ```dataviewjs
+> const me = dv.page("Repos/Minecraft-Community-Edition--client");
+> if (me) {
+>   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
+>   const myRing = ringOrder[me.ring] || 0;
+>   const better = dv.pages('"Repos"')
+>     .where(p => p.file.name !== "Minecraft-Community-Edition--client" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .sort(p => p.stars_per_day || 0, "desc").limit(5);
+>   if (better.length > 0) {
+>     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
+>       p.file.link, p.ring, p.stars_per_day || 0, p.install_complexity || "?", (p.use_case || "").toString().slice(0, 40)
+>     ]));
+>   } else { dv.paragraph("_此分類中沒有 Ring 更高的專案（你可能已經在用最好的了）_"); }
+> }
 > ```
 
 ## 同 Owner 專案

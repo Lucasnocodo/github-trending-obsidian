@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "Use Garry Tan's exact Claude Code setup: 6 opinionated tools that serve as CEO, Eng Manager, Release Manager and QA Engineer"
 homepage: ""
-stars: 2724
-stars_per_day: 2724
-forks: 337
+stars: 2775
+stars_per_day: 2775
+forks: 342
 open_issues: 15
 created: 2026-03-11
 pushed_at: 2026-03-13
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-13
-use_case: "將 Claude Code 轉變為一個可隨時召喚的專業團隊，提供六種意見明確的工作流程技能。"
+use_case: "將 Claude Code 轉變為一個可隨時召喚的專家團隊，提供多種工作流程技能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-13"
-star_history: "2026-03-13:2724"
+star_history: "2026-03-13:2724,2026-03-13:2775"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "gstack"
   - "garrytan/gstack"
-  - "將 Claude Code 轉變為一個可隨時召喚的專業團隊，提供六種意見明確的工作流程技能。"
+  - "將 Claude Code 轉變為一個可隨時召喚的專家團隊，提供多種工作流程技能。"
 ---
 
 # gstack
 
-**2.7k** stars · **2.7k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**2.8k** stars · **2.8k** stars/天 · 建立 1 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/garrytan--gstack");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `easy-install`
 
 > [!summary] 一句話摘要
-> 將 Claude Code 轉變為一個可隨時召喚的專業團隊，提供六種意見明確的工作流程技能。
+> 將 Claude Code 轉變為一個可隨時召喚的專家團隊，提供多種工作流程技能。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (2.7k stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (2.8k stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Medium
-> **適合** 已經在使用 Claude Code 並希望提升工作流程效率的開發團隊。
-> **一句話重點** gstack 不僅是一個工具，而是一個提升開發流程的操作系統。
+> **適合** 需要在 Claude Code 環境中快速部署多種功能的小型開發團隊。
+> **一句話重點** gstack 的設計使得開發者能夠在一個環境中完成多種任務，提升工作效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,27 +101,35 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，得到高效的開發流程，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，1 小時整合，得到多種專業技能支持，值得一試。
 
 > [!abstract] 核心創新
-> gstack 將 Claude Code 轉變為一個可隨時召喚的專業團隊，提供六種意見明確的工作流程技能。
+> gstack 將 Claude Code 轉變為一個可隨時召喚的專家團隊，提供多種專業技能。
 
 ## 專案簡介
 
-gstack 是一個設計用來強化 Claude Code 的工具集，讓用戶能夠在開發過程中使用多種專業技能。用戶可以透過簡單的指令，如 `/plan-ceo-review` 和 `/ship`，來進行計畫、代碼審查、發佈等操作。這些指令背後的設計理念是希望用戶不僅能夠快速執行任務，還能在過程中獲得深度的反思與改進建議。gstack 的核心在於它的六個技能，分別針對不同的開發階段，從規劃到測試，確保每一步都能達到高標準。技術上，gstack 使用 TypeScript 和 Shell，並依賴於 Playwright 進行瀏覽器自動化，這使得它能夠在 macOS 和 Linux 環境中運行。
+gstack 是一個針對 Claude Code 的擴展，提供六種專業技能，讓使用者能夠在開發過程中快速調用不同的專家角色。使用者只需在 Claude Code 中執行簡單的安裝指令，便可獲得計劃審查、代碼審查、單指令部署、瀏覽器自動化及工程回顧等功能。這些功能以斜線指令的形式提供，讓使用者能夠快速上手。gstack 的設計理念是將 Claude Code 從一個通用助手轉變為一個多元化的專家團隊，這樣的設計使得開發者能夠在不同的情境下獲得專業的支持，提升工作效率。
 
-與其他工具相比，如 AlpinDale/parsync 和 Flowseal/tg-ws-proxy，gstack 提供了更為專注的工作流程，特別適合需要高效能和高質量交付的開發團隊。使用者在實施 gstack 時，會發現它能夠有效減少重複性工作，並提高整體的開發效率。需要注意的是，gstack 目前仍在早期階段，可能會遇到一些未解決的問題，如敏感信息洩漏等。總體來說，gstack 是一個值得嘗試的工具，特別是對於那些已經在使用 Claude Code 的團隊。
+技術上，gstack 使用 TypeScript 和 Shell，並依賴 Playwright 進行瀏覽器自動化，這使得其在處理網頁操作時具有高效能。使用 Bun 作為執行環境，這意味著 gstack 可以在 macOS 和 Linux 上輕鬆運行，並且安裝過程不會影響系統的 PATH。相較於其他工具，gstack 的獨特之處在於它的專業技能設計，這使得開發者能夠根據需求隨時調用所需的功能，無需切換不同的工具。
 
-**技術棧**：`TypeScript` · `Shell` · `Playwright 1.58.2`
+
+
+在與其他類似工具比較時，例如 AlpinDale/parsync 和 Flowseal/tg-ws-proxy，gstack 提供了更為集成的解決方案，讓使用者可以在一個環境中完成多種任務，而不需要依賴多個獨立工具。這種設計在小型團隊或初創公司中尤其有效，因為它減少了工具之間的切換成本。
+
+然而，gstack 仍然存在一些限制，例如對於大型專案的支援可能不如專門的工具來得全面，並且目前的文檔和社群支持仍在發展中。整體而言，gstack 是一個值得探索的工具，特別適合需要快速迭代和多功能支持的小型團隊。
+
+使用者在實際使用中可能會遇到一些問題，例如敏感數據洩漏的風險，這需要在使用時謹慎處理。維護者的活躍度較高，這對於未來的更新和問題解決是個好兆頭。
+
+**技術棧**：`TypeScript` · `Shell` · `Playwright`
 
 ## 重點功能
 
-- 多種工作流程技能 — 包含 /plan-ceo-review, /plan-eng-review, /review, /ship, /browse, /retro，針對不同開發階段提供專業建議。
-- 瀏覽器自動化 — 使用 Playwright 進行網頁操作，支持多種瀏覽器環境。
-- Markdown 提示文件 — 在 ~/.claude/skills/gstack/ 中生成技能文件，方便用戶查閱。
-- 輕量安裝 — 所有文件都存放在 .claude/ 目錄下，不會影響系統環境。
-- 版本控制友好 — 實際文件會被提交到 Git 倉庫，方便團隊協作。
+- 多種專業技能 — 提供計劃審查、代碼審查、單指令部署等功能，使用斜線指令調用。
+- 瀏覽器自動化 — 使用 Playwright 實現高效的網頁操作，支持 headless 模式。
+- 簡單安裝 — 只需在 Claude Code 中執行一條指令即可完成安裝。
+- 輕量級設計 — 所有功能均在 ~/.claude/skills/ 目錄下運行，不影響系統環境。
+- 版本控制 — 支持將 JSON 快照保存到專案中，便於趨勢追蹤。
 
 ## 快速開始
 
@@ -144,60 +152,60 @@ cd ~/.claude/skills/gstack
 {
   "前置條件": "需要在 Claude Code 中執行以下指令",
   "指令": "Install gstack: run `git clone https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup`",
-  "預期輸出": "gstack 安裝完成，並可使用各種技能"
+  "預期輸出": "安裝完成後，gstack 的技能將可用於 Claude Code。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 2724 stars（2724/天），forks 337（12.4%），這顯示出強烈的需求和興趣。作者 Garry Tan 在 AI 和工程管理方面有豐富的經驗，這使得他能夠針對開發者的痛點提供解決方案。gstack 解決了在使用 Claude Code 時，缺乏專業化工作流程的問題，這在過去的工具中並不常見。社群的反應也表明，這個工具的實用性和創新性受到廣泛認可。gstack 的出現恰逢 AI 工具日益普及的時期，這使得它的需求進一步上升。
+> 建立 1 天就累積 2775 stars（2775/天），forks 342（12.3%），這顯示出極高的關注度。作者 Garry Tan 以其在 AI 和開發工具領域的專業知識而聞名，這個專案解決了開發者在使用 Claude Code 時的多功能需求，之前的工具往往無法提供這樣的整合性。社群對於這種一站式解決方案的需求促進了其快速增長。
 
 ## 適合誰使用
 
-**目標受眾**：已經在使用 Claude Code 並希望提升工作流程效率的開發團隊。
+**目標受眾**：需要在 Claude Code 環境中快速部署多種功能的小型開發團隊。
 
 > [!example] 使用場景
-> - 軟體工程師用它來進行代碼審查，因為 gstack 提供的 /review 指令能夠自動檢查潛在的問題，減少人為錯誤。
-> - 產品經理用它來規劃新功能，因為 /plan-ceo-review 能夠引導他們深入思考產品的真正需求，避免表面化的解決方案。
-> - QA 工程師用它來進行自動化測試，因為 /browse 指令能夠模擬用戶行為，快速驗證功能的正確性。
+> - 後端工程師用它來自動化瀏覽器操作，因為使用 Playwright 可以大幅減少手動測試的時間。
+> - 產品經理用它來進行計劃審查，因為可以快速調用專業技能，提升會議效率。
+> - QA 工程師用它來進行代碼審查，因為能夠快速生成回顧報告，減少手動整理的工作量。
 
 ## 架構分析
 
-gstack 的架構設計以簡化安裝和使用為核心，所有功能都集中在 ~/.claude/skills/gstack/ 目錄下，並透過 symlink 方式連結到 Claude Code 的技能系統。這樣的設計使得用戶能夠輕鬆地安裝和使用，而不需要改變系統環境或 PATH。資料流方面，使用者透過指令與 Claude Code 互動，Claude Code 再根據指令調用 gstack 的相應功能，實現從計畫到發佈的完整流程。選擇使用 Playwright 進行瀏覽器自動化，這樣可以提供更高的穩定性和兼容性，雖然這也意味著需要額外的依賴。整體而言，這種架構設計使得 gstack 在功能上具備了靈活性和擴展性，但在依賴管理上則需要用戶注意 Playwright 的版本更新。
+gstack 的架構設計以模組化為核心，所有功能均以技能的形式存在於 Claude Code 環境中。這樣的設計使得使用者可以根據需求隨時調用所需的功能，並且不會影響系統的其他部分。資料流方面，使用者透過斜線指令調用不同的技能，這些技能會執行相應的操作並返回結果。選擇使用 Playwright 進行瀏覽器自動化，這使得 gstack 在處理網頁操作時具有高效能，並且能夠支持 headless 模式，這對於自動化測試非常重要。整體而言，這種設計在小型團隊中尤其有效，因為它減少了工具之間的切換成本，並且提供了一個集成的工作流。
 
 ## 技術深入分析
 
-gstack 的核心技術機制是將 Claude Code 的功能模組化，並針對不同的開發需求提供專業化的工作流程。使用 TypeScript 作為主要開發語言，這使得代碼更具可讀性和可維護性。Playwright 作為瀏覽器自動化的工具，能夠支持多種瀏覽器環境，這在自動化測試中提供了靈活性。gstack 的設計考量了用戶的使用習慣，將所有功能集中在 ~/.claude/skills/gstack/ 目錄下，並透過 symlink 方式連結，這樣的設計使得安裝和使用變得簡單。儘管如此，這也意味著用戶需要定期更新 Playwright，以保持兼容性。技術風險方面，gstack 目前仍在早期階段，可能會遇到一些未解決的問題，如敏感信息洩漏等。整體而言，gstack 提供了一個高效的開發工具，但在使用時仍需謹慎考量其潛在風險。
+gstack 的核心技術機制是將 Claude Code 的功能模組化，使用者可以透過斜線指令調用不同的技能。這些技能包括計劃審查、代碼審查、瀏覽器自動化等，這樣的設計使得使用者能夠根據實際需求快速切換。效能方面，gstack 利用 Playwright 進行瀏覽器操作，這使得其在處理網頁自動化時具有高效能，並且支持 headless 模式，適合自動化測試。選擇 TypeScript 和 Shell 作為開發語言，這樣的選擇使得 gstack 在開發過程中能夠充分利用現有的 JavaScript 生態系統，並且保持輕量級的特性。技術風險方面，gstack 目前的文檔和社群支持仍在發展中，這可能會影響使用者的學習曲線和問題解決的效率。整合方面，gstack 可以輕鬆與現有的 Claude Code 環境整合，並且不會對系統環境造成干擾，這使得其在小型團隊中非常受歡迎。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了安裝步驟和範例，讓新手能夠快速上手。安裝過程相對順暢，但需確保滿足所有前置條件。文件目前僅提供英文版本，可能對非英語使用者造成一定障礙。
+> README 文件清晰，提供了詳細的安裝步驟和指令範例。安裝過程相對順暢，沒有明顯的坑。雖然文檔尚在發展中，但已經有基本的使用指南，對於新手來說，花 30 分鐘能夠順利運行。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供專業化的工作流程，提升開發效率。
-> - 安裝簡單，無需複雜的配置。
-> - 支持多種技能，滿足不同開發需求。
+> - 提供多種專業技能，能夠快速應對不同的開發需求。
+> - 安裝簡單，不會影響系統環境。
+> - 使用 Playwright 進行高效的瀏覽器自動化，支持 headless 模式。
 
 > [!danger] 缺點
-> - 目前僅支援特定平台，限制了使用範圍。
-> - 可能存在敏感信息洩漏的風險。
-> - 社群支持仍在發展中，問題解決率較低。
+> - 目前僅支援 macOS 和 Linux 環境。
+> - 對於大型專案的支持可能不如專門的工具全面。
+> - 文檔和社群支持仍在發展中。
 
 > [!warning] 注意事項
 > - 目前僅支援 macOS 和 Linux 環境。
-> - 需要安裝 Claude Code 和 Bun v1.0+。
-> - 可能會洩漏敏感信息至 stdout 和模型記錄中。
+> - 對於大型專案的支持可能不如專門的工具全面。
+> - 文檔和社群支持仍在發展中。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | gstack 提供專業化的工作流程，而 AlpinDale/parsync 更專注於文件同步和傳輸。 |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | gstack 是針對開發流程的工具，而 Flowseal/tg-ws-proxy 主要用於 Telegram 的 WebSocket 代理。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供文件同步功能，但缺乏 gstack 的多功能集成特性。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 專注於 WebSocket 代理，但不具備 gstack 的自動化和專業技能功能。 |
 
 ## 替代方案決策
 
@@ -205,16 +213,16 @@ gstack 的核心技術機制是將 Claude Code 的功能模組化，並針對不
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | gstack 專注於開發流程的專業化，而 AlpinDale/parsync 更偏向於文件同步和傳輸，功能範圍不同。 | 如果你的需求主要是文件同步而非開發流程管理，則 AlpinDale/parsync 更適合。 | low，因為兩者的使用場景不同，遷移不會影響現有工作流程。 |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | gstack 提供一整套開發流程工具，而 Flowseal/tg-ws-proxy 主要用於 Telegram 的 WebSocket 代理，功能定位不同。 | 如果你的主要需求是 Telegram 的 WebSocket 代理，則 Flowseal/tg-ws-proxy 是更好的選擇。 | medium，因為需要重新調整工作流程以適應不同的工具。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步，並不具備 gstack 的多功能集成特性。 | 如果你的需求主要是文件同步，且不需要多種專業技能的支持。 | low，因為兩者的功能範圍不同，遷移成本低。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 專注於 WebSocket 代理，缺乏 gstack 的自動化和專業技能功能。 | 如果你的專案需要專門的 WebSocket 代理功能，而不需要多種技能的支持。 | medium，因為需要重新設計工作流以適應不同的工具。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **gstack** | **parsync** | **tg-ws-proxy** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | gstack 專注於開發流程的專業化，而 AlpinDale/parsync 更偏向於文件同步和傳輸，功能範圍不同。 | gstack 提供一整套開發流程工具，而 Flowseal/tg-ws-proxy 主要用於 Telegram 的 WebSocket 代理，功能定位不同。 |
-> | 遷移成本 | - | low，因為兩者的使用場景不同，遷移不會影響現有工作流程。 | medium，因為需要重新調整工作流程以適應不同的工具。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是文件同步而非開發流程管理，則 AlpinD | 如果你的主要需求是 Telegram 的 WebSocket |
+> | 技術路線 | 本專案 | 專注於文件同步，並不具備 gstack 的多功能集成特性。 | 專注於 WebSocket 代理，缺乏 gstack 的自動化和專業技能功能。 |
+> | 遷移成本 | - | low，因為兩者的功能範圍不同，遷移成本低。 | medium，因為需要重新設計工作流以適應不同的工具。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是文件同步，且不需要多種專業技能的支持。 | 如果你的專案需要專門的 WebSocket 代理功能，而不需 |
 
 ## 成熟度評估
 
@@ -225,27 +233,25 @@ gstack 的核心技術機制是將 Claude Code 的功能模組化，並針對不
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用或小型專案，不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在特定情境下，敏感信息可能會洩漏至 stdout 和模型記錄中。
-  - 解法：避免在生產環境中使用 gstack，或使用環境變數隱藏敏感信息。
-- [MEDIUM] 安裝過程中可能會遇到依賴問題，特別是 Playwright 的版本不兼容。
-  - 解法：確保安裝最新版本的 Playwright，並定期檢查更新。
-- [MEDIUM] 使用過程中可能會出現性能瓶頸，特別是在高負載情況下。
-  - 解法：在低負載環境中進行測試，並根據需要調整配置。
+- **[HIGH]** 敏感數據可能洩漏到 stdout 和模型記錄中
+  - 解法：在使用時注意輸出內容，避免敏感信息出現。
+- [MEDIUM] 文檔中對於某些功能的描述不夠詳細
+  - 解法：參考 GitHub Issues 或社群討論以獲取更多資訊。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端開發團隊 | 非常適合 | gstack 提供的專業化工作流程能夠提升小團隊的開發效率。 |
-| 大型企業的多團隊協作 | 普通 | 雖然 gstack 功能強大，但可能需要額外的整合工作來適應大型團隊的需求。 |
-| 個人開發者的 side project | 非常適合 | 安裝簡單且能夠快速提升開發效率，適合個人使用。 |
-| 需要高安全性的金融應用開發 | 不適合 | 目前存在敏感信息洩漏的風險，不建議用於高安全性需求的應用。 |
+| 5 人以下的新創團隊 | 非常適合 | gstack 提供多種功能，能夠快速應對不同的開發需求，減少工具切換成本。 |
+| 大型企業的核心開發團隊 | 不適合 | 對於大型專案的支持可能不如專門的工具全面。 |
+| 需要快速迭代的開發環境 | 非常適合 | gstack 的設計使得開發者能夠迅速調用所需的功能，提升工作效率。 |
+| 對於瀏覽器自動化需求不高的專案 | 普通 | 雖然 gstack 提供瀏覽器自動化功能，但對於不需要此功能的專案來說，可能不具吸引力。 |
 
 ## 採用成本分析
 
@@ -254,15 +260,15 @@ gstack 的核心技術機制是將 Claude Code 的功能模組化，並針對不
 | 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到高效的開發流程，值得嘗試。
+> 花 2 小時學習，1 小時整合，得到多種專業技能支持，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：gstack 需要訪問敏感資料，並可能在某些情況下洩漏信息，使用時需謹慎。
+> 低風險：不需要高權限運行，並且不會存取敏感資料，但使用者需注意敏感數據的輸出問題。
 
 ## 健康度儀表板
 
@@ -327,7 +333,7 @@ gstack 的核心技術機制是將 Claude Code 的功能模組化，並針對不
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 337 |
+| Forks | 342 |
 | Open Issues | 15 |
 | Issue 解決率 | 12% (2 closed) |
 | 最後推送 | 2026-03-13 |
@@ -354,7 +360,7 @@ gstack 的核心技術機制是將 Claude Code 的功能模組化，並針對不
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，近期有持續的更新和問題回應。
+**社群活躍度**：社群活躍度中等，開發者對問題的回應速度尚可。
 **連結**：[文件](https://github.com/garrytan/gstack)
 
 ## 開發動態
@@ -559,7 +565,7 @@ gstack 的核心技術機制是將 Claude Code 的功能模組化，並針對不
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[CLI/TUI]] · [[程式碼生成]]
+相關概念：[[自動化]] · [[CLI/TUI]] · [[多模態]]
 
 相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[ahmadawais--chartli|ahmadawais/chartli]]
 
@@ -603,7 +609,7 @@ gstack 的核心技術機制是將 Claude Code 的功能模組化，並針對不
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","CLI/TUI","程式碼生成"];
+> const concepts = ["自動化","CLI/TUI","多模態"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "garrytan--gstack" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

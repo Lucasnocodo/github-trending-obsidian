@@ -2,14 +2,14 @@
 tags:
   - concept
 aliases:
-  - "規格驅動開發"
+  - "Telegram API"
 ---
 
-# 規格驅動開發
+# Telegram API
 
 ## 是什麼
 
-規格驅動開發是一種開發方法，強調在編碼前先定義需求和規格。這能提高開發效率和減少錯誤，常見工具有 Cucumber 和 SpecFlow。
+Telegram API 是一套用於開發 Telegram 機器人和應用的接口。它讓開發者能夠創建自動化的聊天機器人或整合其他服務，提升用戶互動體驗。
 
 ## 快速統計
 
