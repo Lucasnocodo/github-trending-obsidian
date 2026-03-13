@@ -7,12 +7,12 @@ language: N/A
 license: N/A
 description: "end to end app store screenshot creation using AI"
 homepage: "https://skills.sh/parthjadhav/app-store-screenshots/app-store-screenshots"
-stars: 1294
-stars_per_day: 431
-forks: 81
-open_issues: 3
+stars: 2190
+stars_per_day: 438
+forks: 146
+open_issues: 5
 created: 2026-03-07
-pushed_at: 2026-03-10
+pushed_at: 2026-03-12
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
@@ -27,16 +27,16 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
 use_case: "自動生成 iOS 應用的 App Store 截圖，無需手動調整。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-13"
+appearances: 3
+next_review: "2026-03-16"
 contributor_count: 1
 engagement: "low"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:1249,2026-03-11:1294"
+star_history: "2026-03-10:1249,2026-03-11:1294,2026-03-13:2190"
 tags:
   - github
   - "category/開發工具"
@@ -714,5 +714,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-13|2026-03-13]] — 再次上榜，2.2k stars
 - [[2026-03-11|2026-03-11]] — 再次上榜，922 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，653 stars

@@ -26,6 +26,7 @@ cssclasses:
 | [[MOC - 生產力]] | 生產力 |
 | [[MOC - 遊戲]] | 遊戲 |
 | [[MOC - 其他]] | 其他分類 |
+| [[Discovery]] | 探索 — 隱藏寶石、風險警示、盲點分析 |
 | [[Comparison]] | 同分類橫向對比 + 決策矩陣 + 四象限分析 |
 | [[Tech-Radar.canvas\|Tech Radar]] | 四環評估看板（Adopt/Trial/Assess/Hold）|
 
@@ -285,6 +286,38 @@ if (pages.length > 0) {
   );
 } else {
   dv.paragraph("所有高價值專案都已評估完畢！");
+}
+```
+
+## 社群健康快報
+
+> [!abstract]- Issue 解決率和文件品質一覽
+
+```dataviewjs
+const pages = dv.pages('"Repos"').where(p => p.status !== "archived");
+const withICR = pages.where(p => p.issue_close_rate >= 0);
+const withReadme = pages.where(p => p.readme_length > 0);
+const parts = [];
+if (withICR.length > 0) {
+  const avgICR = Math.round(withICR.map(p => p.issue_close_rate).array().reduce((a,b) => a+b, 0) / withICR.length);
+  const top = withICR.sort(p => p.issue_close_rate, "desc").first();
+  parts.push(`Issue 解決率平均 **${avgICR}%**（最佳：${top.file.link} ${top.issue_close_rate}%）`);
+}
+if (withReadme.length > 0) {
+  const goodDoc = withReadme.where(p => p.readme_length > 5000).length;
+  const poorDoc = withReadme.where(p => p.readme_length < 500).length;
+  parts.push(`README 品質：**${goodDoc}** 個優秀 / **${poorDoc}** 個薄弱`);
+}
+const withBF = pages.where(p => (p.bus_factor || 0) > 0);
+if (withBF.length > 0) {
+  const solo = withBF.where(p => p.bus_factor === 1).length;
+  const pct = Math.round(solo / withBF.length * 100);
+  parts.push(`Bus Factor：**${solo}** 個 Solo 專案（${pct}%）`);
+}
+if (parts.length > 0) {
+  dv.paragraph(parts.join("\n\n"));
+} else {
+  dv.paragraph("_需要更多 issue_close_rate 和 readme_length 資料_");
 }
 ```
 

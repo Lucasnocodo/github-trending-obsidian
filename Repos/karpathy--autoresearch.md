@@ -7,12 +7,12 @@ language: Python
 license: N/A
 description: "AI agents running research on single-GPU nanochat training automatically"
 homepage: ""
-stars: 22989
-stars_per_day: 5747
-forks: 2928
-open_issues: 68
+stars: 28887
+stars_per_day: 4815
+forks: 3816
+open_issues: 100
 created: 2026-03-06
-pushed_at: 2026-03-09
+pushed_at: 2026-03-11
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
@@ -24,13 +24,15 @@ status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
 use_case: "讓 AI 自動進行單 GPU 的 LLM 訓練實驗，早上醒來就能看到結果。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-next_review: "2026-03-13"
+appearances: 3
+next_review: "2026-03-16"
 engagement: "medium"
 verdict: ""
 ring_history: "assess@2026-03-10"
+star_history: "2026-03-13:28887"
 tags:
   - github
   - "category/ai_ml"
@@ -328,5 +330,6 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-13|2026-03-13]] — 再次上榜，28.9k stars
 - [[2026-03-11|2026-03-11]] — 再次上榜，22.7k stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，21.3k stars

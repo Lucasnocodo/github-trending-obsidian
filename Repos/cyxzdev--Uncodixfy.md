@@ -7,9 +7,9 @@ language: N/A
 license: N/A
 description: "the holly uncodexify instructions - letting GPT create uncodexified UI"
 homepage: ""
-stars: 1382
-stars_per_day: 276
-forks: 106
+stars: 1461
+stars_per_day: 244
+forks: 112
 open_issues: 0
 created: 2026-03-06
 pushed_at: 2026-03-10
@@ -27,16 +27,16 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
 use_case: "幫助 GPT 生成更符合設計規範的 UI，避免常見的設計缺陷。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-13"
+appearances: 3
+next_review: "2026-03-16"
 contributor_count: 3
 engagement: "low"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:1380,2026-03-11:1382"
+star_history: "2026-03-10:1380,2026-03-11:1382,2026-03-13:1461"
 tags:
   - github
   - "category/開發工具"
@@ -597,5 +597,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-13|2026-03-13]] — 再次上榜，1.5k stars
 - [[2026-03-11|2026-03-11]] — 再次上榜，1.4k stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，1.3k stars

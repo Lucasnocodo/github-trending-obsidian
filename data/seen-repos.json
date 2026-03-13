@@ -1,10 +1,10 @@
 {
   "karpathy/autoresearch": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-11",
-    "times_seen": 3,
+    "last_seen": "2026-03-13",
+    "times_seen": 4,
     "stars_first": 21345,
-    "stars_last": 22679
+    "stars_last": 28887
   },
   "elder-plinius/OBLITERATUS": {
     "first_seen": "2026-03-10",
@@ -15,10 +15,10 @@
   },
   "HKUDS/CLI-Anything": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-11",
-    "times_seen": 3,
+    "last_seen": "2026-03-13",
+    "times_seen": 4,
     "stars_first": 2197,
-    "stars_last": 2479
+    "stars_last": 8931
   },
   "twostraws/SwiftUI-Agent-Skill": {
     "first_seen": "2026-03-10",
@@ -64,17 +64,17 @@
   },
   "cyxzdev/Uncodixfy": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-11",
-    "times_seen": 3,
+    "last_seen": "2026-03-13",
+    "times_seen": 4,
     "stars_first": 1319,
-    "stars_last": 1350
+    "stars_last": 1461
   },
   "FreedomIntelligence/OpenClaw-Medical-Skills": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-11",
-    "times_seen": 3,
+    "last_seen": "2026-03-13",
+    "times_seen": 4,
     "stars_first": 885,
-    "stars_last": 914
+    "stars_last": 1077
   },
   "op7418/Claude-to-IM-skill": {
     "first_seen": "2026-03-10",
@@ -113,10 +113,10 @@
   },
   "ParthJadhav/app-store-screenshots": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-11",
-    "times_seen": 3,
+    "last_seen": "2026-03-13",
+    "times_seen": 4,
     "stars_first": 653,
-    "stars_last": 922
+    "stars_last": 2190
   },
   "jshachm/pi-rs": {
     "first_seen": "2026-03-10",
@@ -148,10 +148,10 @@
   },
   "tanweai/pua": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-11",
-    "times_seen": 3,
+    "last_seen": "2026-03-13",
+    "times_seen": 4,
     "stars_first": 517,
-    "stars_last": 556
+    "stars_last": 5233
   },
   "TinyAGI/fractals": {
     "first_seen": "2026-03-10",
@@ -365,9 +365,30 @@
   },
   "jackwener/xiaohongshu-cli": {
     "first_seen": "2026-03-11",
-    "last_seen": "2026-03-11",
-    "times_seen": 1,
+    "last_seen": "2026-03-13",
+    "times_seen": 2,
     "stars_first": 389,
-    "stars_last": 389
+    "stars_last": 786
+  },
+  "garrytan/gstack": {
+    "first_seen": "2026-03-13",
+    "last_seen": "2026-03-13",
+    "times_seen": 1,
+    "stars_first": 2724,
+    "stars_last": 2724
+  },
+  "gsd-build/gsd-2": {
+    "first_seen": "2026-03-13",
+    "last_seen": "2026-03-13",
+    "times_seen": 1,
+    "stars_first": 779,
+    "stars_last": 779
+  },
+  "larksuite/openclaw-lark": {
+    "first_seen": "2026-03-13",
+    "last_seen": "2026-03-13",
+    "times_seen": 1,
+    "stars_first": 746,
+    "stars_last": 746
   }
 }

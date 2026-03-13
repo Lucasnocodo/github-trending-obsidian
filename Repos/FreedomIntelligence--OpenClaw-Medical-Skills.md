@@ -7,9 +7,9 @@ language: Python
 license: N/A
 description: "The largest open-source medical AI skills library for OpenClaw🦞."
 homepage: ""
-stars: 953
-stars_per_day: 477
-forks: 116
+stars: 1077
+stars_per_day: 269
+forks: 127
 open_issues: 2
 created: 2026-03-08
 pushed_at: 2026-03-11
@@ -27,16 +27,16 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
 use_case: "提供最全面的開源醫療AI技能庫，讓AI助手具備專業醫療研究能力。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-13"
+appearances: 3
+next_review: "2026-03-16"
 contributor_count: 3
 engagement: "medium"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:950,2026-03-11:953"
+star_history: "2026-03-10:950,2026-03-11:953,2026-03-13:1077"
 tags:
   - github
   - "category/ai_ml"
@@ -821,5 +821,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-13|2026-03-13]] — 再次上榜，1.1k stars
 - [[2026-03-11|2026-03-11]] — 再次上榜，914 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，885 stars
