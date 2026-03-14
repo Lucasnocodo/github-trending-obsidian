@@ -7,17 +7,17 @@ language: TypeScript
 license: N/A
 description: "微信包装了开源项目OpenClaw，所以我们把他的Channel抽出来了😄"
 homepage: ""
-stars: 408
-stars_per_day: 136
-forks: 109
-open_issues: 4
+stars: 452
+stars_per_day: 113
+forks: 114
+open_issues: 5
 created: 2026-03-09
 pushed_at: 2026-03-10
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
-subcategory: "插件"
+subcategory: "API 工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "提供微信扫码登录和双向通信的 OpenClaw 插件。"
+use_case: "透過 WeChat OAuth 獲取 token 並連接 AGP WebSocket 進行雙向通信的插件。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 2
 next_review: "2026-03-14"
 contributor_count: 4
 engagement: "medium"
-issue_close_rate: 56
+issue_close_rate: 50
 repo_size_kb: 501
 readme_length: 2577
 bus_factor: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:368,2026-03-11:371,2026-03-11:372,2026-03-13:408"
+star_history: "2026-03-10:368,2026-03-11:371,2026-03-11:372,2026-03-13:408,2026-03-14:452"
 tags:
   - github
   - "category/開發工具"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "wechat-access-unqclawed"
   - "HenryXiaoYang/wechat-access-unqclawed"
-  - "提供微信扫码登录和双向通信的 OpenClaw 插件。"
+  - "透過 WeChat OAuth 獲取 token 並連接 AGP WebSocket 進行雙向通信的插件。"
 ---
 
 # wechat-access-unqclawed
 
-**408** stars · **136** stars/天 · 建立 3 天前 · TypeScript · 未標註授權
+**452** stars · **113** stars/天 · 建立 4 天前 · TypeScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/HenryXiaoYang--wechat-access-unqclawed");
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `openclaw` `openclaw-plugin` `qclaw` `wechat` `wechat-bot`
 
 > [!summary] 一句話摘要
-> 提供微信扫码登录和双向通信的 OpenClaw 插件。
+> 透過 WeChat OAuth 獲取 token 並連接 AGP WebSocket 進行雙向通信的插件。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (136 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 2 天前) · **貢獻者** 4+ 人 · **參與度** Medium
-> **適合** 需要在 OpenClaw 環境中集成微信機器人功能的開發者。
-> **一句話重點** 這個插件不僅提供了微信的登錄功能，還實現了即時的雙向通信，適合企業級應用。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (113 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 3 天前) · **貢獻者** 4+ 人 · **參與度** Medium
+> **適合** 需要快速整合微信機器人到現有系統的開發者。
+> **一句話重點** 這個專案讓微信機器人的接入變得簡單，特別是對於需要快速開發的團隊。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/HenryXiaoYang--wechat-access-unqclawed");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "插件" && p.file.name !== "HenryXiaoYang--wechat-access-unqclawed" && p.status !== "archived")
+>     .where(p => p.subcategory === "API 工具" && p.file.name !== "HenryXiaoYang--wechat-access-unqclawed" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,32 +103,30 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 插件 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 API 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學、3 小時整合，得到即時的微信機器人功能，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，3 小時整合，得到即時通信的能力，值得一試。
 
 > [!abstract] 核心創新
-> 提供微信掃碼登錄和 AGP WebSocket 雙向通信的集成解決方案。
+> 透過 WeChat OAuth 掃碼登錄獲取 token，並連接 AGP WebSocket 進行雙向通信。
 
 ## 專案簡介
 
-這個專案是 OpenClaw 的微信通路插件，主要功能是透過微信 OAuth 進行掃碼登錄，並利用 AGP WebSocket 協議進行雙向通信。用戶首先需要安裝插件，然後透過 `openclaw channels login --channel wechat-access-unqclawed` 指令獲取登錄所需的 token，並將其持久化。這樣設計的原因是為了簡化用戶的登錄流程，避免重複登錄的麻煩。插件支持生產和測試環境的切換，並提供了配置選項來控制是否跳過邀請碼驗證。技術上，這個插件使用 TypeScript 編寫，依賴於 WebSocket 進行即時消息傳遞，並使用 `fast-xml-parser` 和 `undici` 來處理 HTTP 請求和 XML 解析。
+這個專案是 OpenClaw 的一個插件，專注於透過 WeChat OAuth 進行掃碼登錄，並利用 AGP WebSocket 協議實現雙向通信。用戶首先需要安裝插件，然後透過 `openclaw plugins install @henryxiaoyang/wechat-access-unqclawed` 指令來啟用。登錄過程中，系統會生成一個二維碼，使用者掃描後會獲得一個 token，這個 token 會自動持久化，讓用戶在重啟後無需再次登錄。這樣的設計不僅提高了使用便利性，還減少了重複登錄的麻煩。該插件支持生產和測試環境的切換，並且可以配置跳過邀請碼驗證，這對於開發和測試都非常有幫助。整體而言，這個插件的賣點在於簡化了微信機器人的接入流程，並提供穩定的雙向通信能力。
 
-與其他類似工具相比，如 `OpenClaw-Medical-Skills` 和 `tg-ws-proxy`，這個插件專注於微信的生態系統，提供了更為專業的企業微信機器人功能。實際使用中，插件能夠有效地處理多個並發連接，並且在高負載下仍能保持穩定性。社群活躍度不錯，已經有 4 個開放的 Issues，其中一些問題的反饋也在不斷更新。這個專案目前處於 beta 階段，適合需要快速集成微信機器人功能的開發者，但對於不熟悉 OpenClaw 的用戶來說，學習曲線可能會稍微陡峭。未來幾個月，預期會持續更新以解決現有的問題和增強功能。
-
-**技術棧**：`TypeScript 5.9.3` · `fast-xml-parser 5.4.1` · `undici 7.20.0` · `ws 8.18.0`
+**技術棧**：`TypeScript` · `fast-xml-parser` · `undici` · `ws` · `zod`
 
 ## 重點功能
 
-- 微信掃碼登錄 — 提供終端顯示的二維碼，支持通過瀏覽器鏈接登錄。
+- 微信掃碼登錄 — 透過終端生成二維碼或瀏覽器鏈接進行登錄。
 - Token 自動持久化 — 登錄後 token 自動保存，重啟後無需再次登錄。
-- AGP WebSocket 雙向通信 — 支持流式文本和工具調用的即時消息傳遞。
-- 環境切換支持 — 可配置生產和測試環境，方便開發和測試。
-- 邀請碼驗證 — 可選擇跳過邀請碼驗證，增加靈活性。
+- AGP WebSocket 雙向通信 — 支持流式文本和工具調用的即時通信。
+- 邀請碼驗證 — 可配置選項，支持或跳過邀請碼驗證。
+- 生產/測試環境切換 — 方便開發和測試時的環境管理。
 
 ## 快速開始
 
@@ -148,66 +146,67 @@ openclaw channels login --channel wechat-access-unqclawed
 ## 程式碼範例
 
 ```ts
-{
-  "前置條件": "已安裝 OpenClaw 並配置好環境",
-  "指令": "openclaw channels login --channel wechat-access-unqclawed",
-  "預期輸出": "終端會顯示微信二維碼，掃碼後自動完成登錄。"
-}
+[
+  "# 首次登錄",
+  "openclaw channels login --channel wechat-access-unqclawed",
+  "# 預期輸出：終端會顯示微信二維碼或瀏覽器鏈接"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天就累積 408 stars（136/天），forks 109（26.7%），這顯示出強烈的社群興趣。作者 HenryXiaoYang 之前有過類似的開源經驗，這次專案解決了微信機器人集成的痛點，之前的解決方案往往需要繁瑣的手動配置。近期社群的討論和反饋也促進了這個專案的曝光，特別是在開發者社群中。技術上，隨著 WebSocket 和 OAuth 的普及，這個插件的實用性大幅提升。高 forks/stars 比率顯示出許多開發者對這個工具進行了實際修改和使用，反映出其潛在的實用價值。
+> 建立 4 天就累積 452 stars（113/天），forks 114（25.2%），這顯示出強烈的社群關注。作者 HenryXiaoYang 過去在開源社群中活躍，這個專案解決了微信機器人接入過程中的繁瑣步驟，特別是在 token 獲取和持久化方面。由於微信的生態系統龐大，這個插件的需求自然上升。社群中對於如何更方便地使用微信 API 的討論也促進了這個專案的曝光度。forks/stars 比率高達 25.2%，顯示出許多開發者對於這個工具的實際修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 OpenClaw 環境中集成微信機器人功能的開發者。
+**目標受眾**：需要快速整合微信機器人到現有系統的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來快速集成微信機器人功能，因為這樣可以省去繁瑣的手動配置和登錄流程。
-> - 企業開發者用它來實現企業微信的自動化客服系統，因為它支持雙向通信和即時消息處理。
-> - 開發者用它來測試和開發基於微信的應用，因為它提供了靈活的環境切換和配置選項。
+> - 後端工程師用它來快速整合微信機器人進入現有的應用程式，因為它簡化了登錄流程並自動持久化 token。
+> - 產品經理用它來測試微信機器人的功能，因為它支持生產和測試環境的切換，讓測試變得更靈活。
+> - 開發者用它來構建企業級的微信客服系統，因為它提供了 AGP WebSocket 的雙向通信能力，能夠即時處理用戶請求。
 
 ## 架構分析
 
-這個專案採用模組化架構，主要由插件和 WebSocket 客戶端組成。插件的設計使其能夠輕鬆集成到 OpenClaw 環境中，並通過 AGP 協議進行即時通信。資料流方面，使用 WebSocket 進行消息的雙向傳遞，並利用 OAuth 進行用戶身份驗證。
+這個專案採用 TypeScript 實作，並利用 OpenClaw 作為基礎架構。其核心是通過 WeChat OAuth 進行用戶身份驗證，並使用 AGP 協議進行消息的雙向傳輸。設計上，這樣的架構使得用戶能夠輕鬆地進行身份驗證，並且能夠即時接收和發送消息。
 
-選擇 TypeScript 使得代碼更具可讀性和可維護性，但也增加了學習成本。擴展性方面，插件可以輕鬆添加新功能，但在高並發下可能會遇到性能瓶頸，特別是在 WebSocket 連接數量增加時。整體來看，這種設計使得開發者能夠快速上手並進行功能擴展。
+選擇 WebSocket 作為通信協議，能夠實現低延遲的即時通信，但需要確保服務器的穩定性和連接的持久性。這個架構的擴展性良好，但在高並發情況下可能會面臨性能瓶頸，特別是在消息處理上。整體而言，這個設計使得微信機器人的接入變得更加簡單和高效。
 
 ## 技術深入分析
 
-這個插件的核心技術機制是基於 AGP 協議的 WebSocket 通信，這使得消息的傳遞變得即時且高效。使用 TypeScript 編寫的代碼結構清晰，便於維護和擴展。效能方面，插件能夠支持多個並發連接，但在高負載情況下可能會出現延遲。設計上選擇了 WebSocket 而非傳統的 HTTP 請求，這樣可以減少延遲並提高實時性，但也增加了對網絡穩定性的依賴。技術風險方面，若未來微信的 API 發生變更，可能會影響插件的穩定性。整合到現有的開發環境中相對簡單，但對於不熟悉 OpenClaw 的開發者來說，可能需要一些時間來適應。
+這個插件的核心機制是通過 WeChat OAuth 進行身份驗證，並使用 AGP 協議實現雙向通信。OAuth 流程中，使用者掃描二維碼後獲得 token，這個 token 會被持久化以便未來使用。AGP 協議基於 WebSocket，能夠實現低延遲的消息傳遞，這對於即時通訊應用至關重要。效能方面，這個插件能夠處理多個並發連接，但在高流量下可能會遇到瓶頸。
+
+選擇 TypeScript 作為開發語言不僅提高了代碼的可維護性，還能利用其靜態類型檢查來減少錯誤。這個插件的依賴樹相對簡單，主要依賴於 WebSocket 和 XML 解析庫，這使得整體架構輕量且易於部署。技術風險方面，WebSocket 的穩定性和服務器的性能是主要考量，特別是在高並發情況下。整合到現有的開發流程中相對容易，因為它遵循了常見的 API 設計模式，並且能夠與主流的 CI/CD 工具良好配合。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和使用說明。安裝過程相對順暢，但需要確保 OpenClaw 環境已正確配置。文件中有示例指令，對新手友好。整體來說，花 30 分鐘能夠順利運行。
+> README 文件清晰，提供了詳細的安裝和使用說明；安裝過程順暢，無明顯坑；有良好的入門指南，適合新手使用；文件目前僅提供英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡化的微信登錄流程，提升用戶體驗。
-> - 支持即時消息處理，適合需要快速反應的應用場景。
-> - 靈活的配置選項，方便開發者根據需求調整。
+> - 簡化的登錄流程，使用者體驗良好。
+> - 支持雙向通信，能夠即時處理用戶請求。
+> - 靈活的環境配置，方便開發和測試。
 
 > [!danger] 缺點
-> - 需要 OpenClaw 環境，對新手不友好。
-> - 目前功能主要針對微信，對其他平台支持不足。
-> - 在高負載情況下性能可能不穩定。
+> - 對於某些微信帳號，可能會遇到設備綁定失敗的問題。
+> - 需要確保 WebSocket 服務器的穩定性。
+> - 在高並發情況下的性能可能會受到影響。
 
 > [!warning] 注意事項
-> - 需要 OpenClaw 環境支持，無法獨立運行。
-> - 目前僅支持微信的 AGP 協議，對其他平台不兼容。
-> - 在高並發情況下可能會出現性能瓶頸，需要進一步優化。
+> - 僅支援 OpenClaw 版本 >= 2026.1.26。
+> - 需要在支持 WebSocket 的環境中運行。
+> - 對於某些微信帳號，可能會遇到設備綁定失敗的問題。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的 OpenClaw 插件，提供特定功能的支持，適合醫療行業使用。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供更廣泛的通訊協議支持，但缺乏微信專屬的功能和優化。 |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 專注於 Telegram 的 WebSocket 代理，與本專案相比，無法支持微信的功能需求。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供類似的微信機器人功能，但不支持 AGP WebSocket，延遲較高。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的微信機器人，功能較為專一，無法廣泛應用於其他場景。 |
 
 ## 替代方案決策
 
@@ -215,16 +214,16 @@ openclaw channels login --channel wechat-access-unqclawed
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 使用 Rust 實作，記憶體使用效率高，但學習曲線較陡。 | 如果你的團隊已經在使用 Rust 並需要高效能的解決方案。 | medium，因為需要重新編寫部分代碼以適應 Rust 的語法和生態。 |
-| [JohnRiceML/clawport-ui](https://github.com/JohnRiceML/clawport-ui) | 專注於 UI 的開發，提供更友好的用戶界面，但功能上不如本專案全面。 | 如果你的重點是用戶界面而非後端功能，這個工具會更合適。 | low，因為 UI 部分可以輕鬆整合到現有的系統中。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 使用 Python 實作，適合處理大規模數據傳輸，但對於即時通信支持較弱。 | 如果你的應用需要處理大量數據而非即時通信，這個工具會更合適。 | medium，因為需要重寫部分邏輯以適應 Python 環境。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 專注於 Telegram 的 WebSocket 代理，功能較為單一，但在 Telegram 生態中表現良好。 | 如果你的主要目標是 Telegram 機器人，這個工具會更合適。 | low，因為功能上有相似之處，遷移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **wechat-access-unqclawed** | **parsync** | **clawport-ui** |
+> | 維度 | **wechat-access-unqclawed** | **parsync** | **tg-ws-proxy** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體使用效率高，但學習曲線較陡。 | 專注於 UI 的開發，提供更友好的用戶界面，但功能上不如本專案全面。 |
-> | 遷移成本 | - | medium，因為需要重新編寫部分代碼以適應 Rust 的語法和生態。 | low，因為 UI 部分可以輕鬆整合到現有的系統中。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Rust 並需要高效能的解決方案。 | 如果你的重點是用戶界面而非後端功能，這個工具會更合適。 |
+> | 技術路線 | 本專案 | 使用 Python 實作，適合處理大規模數據傳輸，但對於即時通信支持較弱。 | 專注於 Telegram 的 WebSocket 代理，功能較為單一，但在 Telegram 生態中表現良好。 |
+> | 遷移成本 | - | medium，因為需要重寫部分邏輯以適應 Python 環境。 | low，因為功能上有相似之處，遷移成本較低。 |
+> | 適用場景 | 主要場景 | 如果你的應用需要處理大量數據而非即時通信，這個工具會更合適。 | 如果你的主要目標是 Telegram 機器人，這個工具會更合 |
 
 ## 成熟度評估
 
@@ -235,44 +234,44 @@ openclaw channels login --channel wechat-access-unqclawed
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合小型專案或個人使用，但不建議用於生產環境的核心系統。
+> 適合個人或小型團隊的實驗性專案，不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 設備綁定失敗，服務端未返回客服鏈接 UR，可能導致無法正常使用。
-  - 解法：檢查網絡連接，並確保微信客戶端已啟動。
-- [MEDIUM] 最新版本無法正常運行，提示設備不在線。
-  - 解法：確保客戶端已正確連接網絡，並重啟插件。
-- [MEDIUM] 邀請碼驗證失敗，無法跳過。
-  - 解法：檢查配置文件，確保 bypassInvite 設置為 true。
+- **[HIGH]** 設備綁定失敗，服務端未返回客服鏈接 UR
+  - 解法：檢查微信帳號設置，確保已開通相關功能。
+- [MEDIUM] 最新版本仍無法正常工作，顯示設備不在線
+  - 解法：確認客戶端已啟動並連接網絡，重啟插件。
+- [MEDIUM] 邀請碼驗證未能正常跳過
+  - 解法：檢查配置文件，確保 `bypassInvite` 設置為 true。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 提供簡單的集成方式，能快速上手。 |
-| 需要高並發的企業級應用 | 普通 | 在高負載下可能會出現性能瓶頸。 |
-| 對微信機器人功能有需求的開發者 | 非常適合 | 專注於微信生態，提供完整的功能支持。 |
-| 不熟悉 OpenClaw 的新手團隊 | 不適合 | 需要一定的學習成本來理解 OpenClaw 的架構。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 簡化的登錄流程和雙向通信能力非常符合小型團隊的需求。 |
+| 大型企業的客服系統 | 普通 | 雖然支持雙向通信，但在高並發情況下可能會遇到性能瓶頸。 |
+| 個人開發者的實驗性專案 | 非常適合 | 易於上手且功能豐富，適合快速開發原型。 |
+| 需要高可用性的生產環境 | 不適合 | 目前處於 beta 階段，尚未準備好進入生產環境。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
+| 學習時間 | ~2 小時 |
 | 整合時間 | ~3 小時 |
-| 維護負擔 | medium |
-| 綁定風險 | low |
+| 維護負擔 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、3 小時整合，得到即時的微信機器人功能，值得投入。
+> 花 2 小時學習，3 小時整合，得到即時通信的能力，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 安全性評估較低，因為該工具不需要高權限，且不存取敏感資料。使用時需注意依賴的庫是否有已知漏洞。
+> 低風險：該工具不需要高權限，主要存取用戶的 token 和配置文件，依賴鏈中的庫已知安全性良好。
 
 ## 健康度儀表板
 
@@ -337,9 +336,9 @@ openclaw channels login --channel wechat-access-unqclawed
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 109 |
-| Open Issues | 4 |
-| Issue 解決率 | 56% (5 closed) |
+| Forks | 114 |
+| Open Issues | 5 |
+| Issue 解決率 | 50% (5 closed) |
 | 最後推送 | 2026-03-10 |
 | 建立日期 | 2026-03-09 |
 | Repo 大小 | 501 KB |
@@ -360,7 +359,7 @@ openclaw channels login --channel wechat-access-unqclawed
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，近期有多個 Issues 被提出和回應。
+**社群活躍度**：社群活躍，最近有多個提交和問題回覆。
 **連結**：[文件](https://github.com/HenryXiaoYang/wechat-access-unqclawed)
 
 ## 開發動態
@@ -374,6 +373,7 @@ openclaw channels login --channel wechat-access-unqclawed
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#11](https://github.com/HenryXiaoYang/wechat-access-unqclawed/issues/11) | 提示：设备绑定失败: 服务端未返回客服链接 UR | 1 | 7 |
+> | [#13](https://github.com/HenryXiaoYang/wechat-access-unqclawed/issues/13) | docs/behavior mismatch: bypassInvite=true still blocked by s | 0 | 0 |
 > | [#12](https://github.com/HenryXiaoYang/wechat-access-unqclawed/issues/12) | 请求适配---腾讯workbuddy也开放了客服通道 | 0 | 0 |
 > | [#10](https://github.com/HenryXiaoYang/wechat-access-unqclawed/issues/10) | 最新版本还是不行，通过code，设备绑定成功，显示了微信名。但一直提示设备不在线，请确认客户端已启动并连接网络。 | 0 | 12 |
 > | [#9](https://github.com/HenryXiaoYang/wechat-access-unqclawed/issues/9) | 最新版本不行 | 0 | 15 |
@@ -502,19 +502,19 @@ openclaw channels login --channel wechat-access-unqclawed
 
 ## 延伸閱讀
 
-相關概念：[[WebSocket]] · [[OAuth]] · [[即時通訊]]
+相關概念：[[WebSocket]] · [[API 設計]] · [[自動化]]
 
-相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[photon-hq--qclaw-wechat-client|photon-hq/qclaw-wechat-client]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[photon-hq--qclaw-wechat-client|photon-hq/qclaw-wechat-client]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
 
 [GitHub](https://github.com/HenryXiaoYang/wechat-access-unqclawed)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：插件）
+> [!note]- 直接競品（同子分類：API 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "插件" AND file.name != "HenryXiaoYang--wechat-access-unqclawed"
+> WHERE subcategory = "API 工具" AND file.name != "HenryXiaoYang--wechat-access-unqclawed"
 > SORT stars DESC
 > ```
 
@@ -546,7 +546,7 @@ openclaw channels login --channel wechat-access-unqclawed
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["WebSocket","OAuth","即時通訊"];
+> const concepts = ["WebSocket","API 設計","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "HenryXiaoYang--wechat-access-unqclawed" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

