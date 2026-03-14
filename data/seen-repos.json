@@ -15,10 +15,10 @@
   },
   "HKUDS/CLI-Anything": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-13",
-    "times_seen": 4,
+    "last_seen": "2026-03-14",
+    "times_seen": 5,
     "stars_first": 2197,
-    "stars_last": 8931
+    "stars_last": 11721
   },
   "twostraws/SwiftUI-Agent-Skill": {
     "first_seen": "2026-03-10",
@@ -71,10 +71,10 @@
   },
   "FreedomIntelligence/OpenClaw-Medical-Skills": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-13",
-    "times_seen": 4,
+    "last_seen": "2026-03-14",
+    "times_seen": 5,
     "stars_first": 885,
-    "stars_last": 1077
+    "stars_last": 1125
   },
   "op7418/Claude-to-IM-skill": {
     "first_seen": "2026-03-10",
@@ -113,10 +113,10 @@
   },
   "ParthJadhav/app-store-screenshots": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-13",
-    "times_seen": 4,
+    "last_seen": "2026-03-14",
+    "times_seen": 5,
     "stars_first": 653,
-    "stars_last": 2190
+    "stars_last": 2419
   },
   "jshachm/pi-rs": {
     "first_seen": "2026-03-10",
@@ -148,10 +148,10 @@
   },
   "tanweai/pua": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-13",
-    "times_seen": 4,
+    "last_seen": "2026-03-14",
+    "times_seen": 5,
     "stars_first": 517,
-    "stars_last": 5233
+    "stars_last": 6620
   },
   "TinyAGI/fractals": {
     "first_seen": "2026-03-10",
@@ -365,24 +365,24 @@
   },
   "jackwener/xiaohongshu-cli": {
     "first_seen": "2026-03-11",
-    "last_seen": "2026-03-13",
-    "times_seen": 2,
+    "last_seen": "2026-03-14",
+    "times_seen": 3,
     "stars_first": 389,
-    "stars_last": 786
+    "stars_last": 921
   },
   "garrytan/gstack": {
     "first_seen": "2026-03-13",
-    "last_seen": "2026-03-13",
-    "times_seen": 1,
+    "last_seen": "2026-03-14",
+    "times_seen": 2,
     "stars_first": 2724,
-    "stars_last": 2724
+    "stars_last": 6191
   },
   "gsd-build/gsd-2": {
     "first_seen": "2026-03-13",
-    "last_seen": "2026-03-13",
-    "times_seen": 1,
+    "last_seen": "2026-03-14",
+    "times_seen": 2,
     "stars_first": 779,
-    "stars_last": 779
+    "stars_last": 990
   },
   "larksuite/openclaw-lark": {
     "first_seen": "2026-03-13",
@@ -390,5 +390,26 @@
     "times_seen": 1,
     "stars_first": 746,
     "stars_last": 746
+  },
+  "davebcn87/pi-autoresearch": {
+    "first_seen": "2026-03-14",
+    "last_seen": "2026-03-14",
+    "times_seen": 1,
+    "stars_first": 1167,
+    "stars_last": 1167
+  },
+  "TianyiDataScience/openclaw-control-center": {
+    "first_seen": "2026-03-14",
+    "last_seen": "2026-03-14",
+    "times_seen": 1,
+    "stars_first": 994,
+    "stars_last": 994
+  },
+  "aiming-lab/MetaClaw": {
+    "first_seen": "2026-03-14",
+    "last_seen": "2026-03-14",
+    "times_seen": 1,
+    "stars_first": 980,
+    "stars_last": 980
   }
 }

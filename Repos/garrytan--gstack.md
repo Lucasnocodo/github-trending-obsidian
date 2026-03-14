@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Use Garry Tan's exact Claude Code setup: 6 opinionated tools that serve as CEO, Eng Manager, Release Manager and QA Engineer"
 homepage: ""
-stars: 2775
-stars_per_day: 2775
-forks: 342
-open_issues: 15
+stars: 6191
+stars_per_day: 3096
+forks: 733
+open_issues: 23
 created: 2026-03-11
-pushed_at: 2026-03-13
+pushed_at: 2026-03-14
 first_seen: 2026-03-13
 week: "2026-W11"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "將 Claude Code 轉變為一個可隨時召喚的專家團隊，提�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-16"
+appearances: 2
+next_review: "2026-03-17"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 12
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-13"
-star_history: "2026-03-13:2724,2026-03-13:2775"
+star_history: "2026-03-13:2724,2026-03-13:2775,2026-03-14:6191"
 tags:
   - github
   - "category/開發工具"
@@ -863,4 +863,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-14|2026-03-14]] — 再次上榜，6.2k stars
 - [[2026-03-13|2026-03-13]] — 首次收錄，2.7k stars

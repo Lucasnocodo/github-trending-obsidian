@@ -7,12 +7,12 @@ language: TypeScript
 license: N/A
 description: "你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。"
 homepage: "https://pua-skill.pages.dev/"
-stars: 5233
-stars_per_day: 1308
-forks: 214
-open_issues: 20
+stars: 6620
+stars_per_day: 1324
+forks: 288
+open_issues: 36
 created: 2026-03-08
-pushed_at: 2026-03-12
+pushed_at: 2026-03-13
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
@@ -27,12 +27,12 @@ use_case: "讓 AI 積極面對問題，避免放棄，提升調試效率。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-03-16"
+appearances: 4
+next_review: "2026-03-17"
 engagement: "low"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-13:5233"
+star_history: "2026-03-13:5233,2026-03-14:6620"
 tags:
   - github
   - "category/開發工具"
@@ -435,6 +435,7 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-14|2026-03-14]] — 再次上榜，6.6k stars
 - [[2026-03-13|2026-03-13]] — 再次上榜，5.2k stars
 - [[2026-03-11|2026-03-11]] — 再次上榜，556 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，517 stars

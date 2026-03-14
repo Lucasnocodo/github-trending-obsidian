@@ -7,12 +7,12 @@ language: Python
 license: N/A
 description: "A CLI for Xiaohongshu (小红书) — search, read, interact via reverse-engineered API"
 homepage: ""
-stars: 791
-stars_per_day: 198
-forks: 77
+stars: 921
+stars_per_day: 184
+forks: 89
 open_issues: 8
 created: 2026-03-08
-pushed_at: 2026-03-12
+pushed_at: 2026-03-13
 first_seen: 2026-03-11
 week: "2026-W11"
 month: "2026-03"
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-11
 use_case: "透過逆向工程的 API，讓你在 CLI 中搜尋、閱讀和互動小紅書內容。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-03-20"
+appearances: 3
+next_review: "2026-03-21"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 27
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-11"
-star_history: "2026-03-11:389,2026-03-13:786,2026-03-13:791"
+star_history: "2026-03-11:389,2026-03-13:786,2026-03-13:791,2026-03-14:921"
 tags:
   - github
   - "category/cli_工具"
@@ -853,5 +853,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-14|2026-03-14]] — 再次上榜，921 stars
 - [[2026-03-13|2026-03-13]] — 再次上榜，786 stars
 - [[2026-03-11|2026-03-11]] — 首次收錄，389 stars
