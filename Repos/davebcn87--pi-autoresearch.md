@@ -7,8 +7,8 @@ language: TypeScript
 license: MIT
 description: "Autonomous experiment loop extension for pi"
 homepage: ""
-stars: 1599
-stars_per_day: 533
+stars: 1605
+stars_per_day: 535
 forks: 78
 open_issues: 5
 created: 2026-03-11
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-14
-use_case: "自動化實驗循環，幫助開發者持續優化代碼性能。"
+use_case: "自動化實驗循環，幫助優化各種指標。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-14"
-star_history: "2026-03-14:1167,2026-03-14:1172,2026-03-15:1599"
+star_history: "2026-03-14:1167,2026-03-14:1172,2026-03-15:1599,2026-03-15:1605"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "pi-autoresearch"
   - "davebcn87/pi-autoresearch"
-  - "自動化實驗循環，幫助開發者持續優化代碼性能。"
+  - "自動化實驗循環，幫助優化各種指標。"
 ---
 
 # pi-autoresearch
 
-**1.2k** stars · **586** stars/天 · 建立 2 天前 · TypeScript · MIT
+**1.6k** stars · **535** stars/天 · 建立 3 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/davebcn87--pi-autoresearch");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `easy-install`
 
 > [!summary] 一句話摘要
-> 自動化實驗循環，幫助開發者持續優化代碼性能。
+> 自動化實驗循環，幫助優化各種指標。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (586 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要持續優化代碼性能的開發者，特別是大型專案的團隊。
-> **一句話重點** 這個專案的自動化實驗循環設計，讓開發者能夠專注於優化代碼，而不是繁瑣的測試流程。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (535 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 2 人 · **參與度** Low
+> **適合** 希望在開發過程中自動化實驗和優化的工程師和團隊。
+> **一句話重點** 這個專案的自動化實驗循環設計，讓開發者能夠專注於優化結果，而不是管理過程。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,27 +101,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，得到自動化實驗的效果，值得嘗試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，1 小時整合，得到自動化實驗的效果，值得考慮。
 
 > [!abstract] 核心創新
-> 提供了一個無縫的自動化實驗循環，能夠持續優化代碼性能。
+> 這個專案提供了一個自動化的實驗循環，能夠持續測試和優化多種指標，並且能夠在重啟後保持上下文。
 
 ## 專案簡介
 
-這個專案提供了一個自動化的實驗循環，允許開發者持續測試和優化他們的代碼。使用者可以透過 `/skill:autoresearch-create` 指令啟動一個實驗，系統會自動詢問目標、命令、度量標準等資訊，並生成兩個檔案：`autoresearch.md` 和 `autoresearch.sh`，前者記錄實驗的背景和歷史，後者則執行實驗並記錄結果。這樣的設計讓實驗過程不斷迭代，並能在重啟後繼續進行，這是因為所有結果都會被寫入 `autoresearch.jsonl` 檔案中。這個工具的賣點在於其無縫的自動化流程，能夠持續運行，直到被手動中斷。技術上，這個專案依賴於 TypeScript，並使用了多個 peer dependencies，如 `@mariozechner/pi-ai` 和 `@sinclair/typebox`，這使得它在功能上非常靈活。
+這個專案提供了一個自動化的實驗循環，讓用戶能夠持續測試、記錄和優化各種指標。用戶可以透過 `/skill:autoresearch-create` 指令開始一個新的實驗，系統會自動詢問目標、命令和指標等資訊，並生成相應的 `autoresearch.md` 和 `autoresearch.sh` 檔案。這樣的設計讓實驗過程不斷重複，並且能夠在每次執行後自動記錄結果，確保即使在重啟後也能繼續進行。這個工具的賣點在於其持久性和自動化，能夠有效地管理和優化實驗結果。技術上，這個專案使用 TypeScript 開發，並依賴於多個 peerDependencies，如 `@mariozechner/pi-ai` 和 `@sinclair/typebox`，這使得它能夠與其他 Pi 生態系統工具無縫整合。
 
-與其他工具相比，如 `karpathy/autoresearch`，這個專案專注於與 PI 生態系統的整合，並提供了即時的狀態小工具和完整的儀表板，讓使用者能夠隨時監控實驗進度。使用者可以在多個領域中應用此工具，如測試速度、包大小和 LLM 訓練等，這些都可以透過簡單的命令來進行測試。儘管目前有一些開放的問題，但社群的活躍度還算不錯，且有持續的更新。整體來說，這是一個適合需要持續優化代碼性能的開發者的工具，特別是在大型專案中，能夠顯著提高開發效率。
+與其他類似工具相比，如 `karpathy/autoresearch`，這個專案的優勢在於其簡單的命令行介面和自動化的實驗管理，能夠支持多種優化目標，並且不需要用戶手動干預。實際使用中，這個工具能夠處理多個實驗並記錄結果，並且支援多種指標的測試，適合需要持續優化的開發團隊。這個專案目前處於活躍開發階段，社群反饋良好，但仍有一些開放的問題需要解決。對於希望在 CI/CD 流程中自動化測試和優化的團隊來說，這是一個值得考慮的選擇。
 
 **技術棧**：`TypeScript`
 
 ## 重點功能
 
-- 自動化實驗循環 — 透過 `/skill:autoresearch-create` 指令啟動，系統自動詢問並生成實驗配置。
-- 即時狀態小工具 — 在編輯器上方顯示當前實驗狀態，方便隨時監控進度。
-- 完整的結果儀表板 — 使用 `/autoresearch` 指令查看所有實驗結果和最佳表現。
-- 持久化記錄 — 所有實驗結果寫入 `autoresearch.jsonl`，即使重啟也能繼續進行。
-- 可選的回壓檢查 — 在每次基準測試後自動執行測試、類型檢查和 lint，確保代碼質量。
+- 自動化實驗循環 — 使用 `/skill:autoresearch-create` 指令啟動實驗，系統會自動詢問並生成必要的檔案。
+- 持久化結果記錄 — 所有實驗結果會記錄在 `autoresearch.jsonl` 中，確保即使重啟也能繼續。
+- 狀態小工具 — 在編輯器上方顯示當前實驗狀態，讓用戶隨時了解進度。
+- 支持多種優化目標 — 可用於測試速度、包大小、LLM 訓練等多種指標。
+- 可選的回壓檢查 — 允許用戶在每次基準測試後自動執行測試和類型檢查，確保不會破壞功能。
 
 ## 快速開始
 
@@ -133,75 +133,65 @@ pi install https://github.com/davebcn87/pi-autoresearch
 ```bash
 /skill:autoresearch-create
 ```
-3. 監控實驗進度
+3. 監控進度
 ```bash
 /autoresearch
-```
-
-## 程式碼範例
-
-```ts
-[
-  "# 前置條件：已安裝 pi-autoresearch",
-  "/skill:autoresearch-create",
-  "# 預期輸出：系統會詢問目標、命令、度量標準等資訊，並開始實驗循環。"
-]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天就累積 1172 stars（586/天），forks 56（4.8%），這顯示出強烈的興趣和潛在的實用性。作者 davebcn87 和 tobi 在開源社群中有一定的影響力，並且這個專案解決了開發者在代碼優化過程中常見的手動測試和記錄的痛點。之前的解決方案往往需要手動管理實驗結果，這個工具的自動化特性顯著降低了這個負擔。社群的討論和反饋也促進了這個專案的快速成長，特別是在 GitHub 上的曝光率和活躍度。這個工具的設計理念符合現代開發流程的需求，特別是在持續集成和持續交付的背景下，讓開發者能夠更專注於代碼本身而非繁瑣的測試流程。
+> 建立 3 天內累積 1605 stars（535/天），forks 78（4.9%），顯示出強勁的增長潛力。這個專案的作者 davebcn87 和 tobi 之前在開源社群中有過其他貢獻，這可能吸引了他們的追隨者來試用新工具。它解決了在優化過程中手動管理實驗的繁瑣，提供了一個自動化的解決方案，讓開發者能夠專注於結果而非過程。社群的反應和活躍度也促進了其快速成長。
 
 ## 適合誰使用
 
-**目標受眾**：需要持續優化代碼性能的開發者，特別是大型專案的團隊。
+**目標受眾**：希望在開發過程中自動化實驗和優化的工程師和團隊。
 
 > [!example] 使用場景
-> - 後端工程師用它來自動測試 API 性能，因為手動測試容易漏掉細節，這樣可以持續優化性能。
-> - 前端開發者用它來監控打包大小，因為每次改動後都能自動記錄結果，避免因為不經意的改動導致包體積增加。
-> - 資料科學家用它來優化 LLM 訓練過程，因為能夠自動記錄每次訓練的結果，方便比較和選擇最佳參數。
+> - 前端工程師用它來自動化測試應用程式的加載速度，因為手動測試耗時且容易遺漏。
+> - 後端開發者用它來優化 API 的響應時間，因為能夠持續監控和記錄每次變更的影響。
+> - 資料科學家用它來評估模型訓練的效能，因為能夠快速迭代並記錄每次訓練的結果。
 
 ## 架構分析
 
-這個專案採用 TypeScript 作為主要開發語言，並將功能分為擴展和技能兩個部分。擴展提供了全域的實驗運行和記錄功能，而技能則針對特定領域進行優化。這樣的設計使得擴展可以在多個領域中重用，並且能夠快速適應不同的需求。
+這個專案採用模組化的架構，將擴展和技能分開設計，使得一個擴展可以服務於多個領域。擴展提供了基本的實驗運行和記錄功能，而技能則負責特定領域的知識編碼。這樣的設計使得系統能夠靈活應對不同的優化需求。
 
-資料流方面，實驗結果會被持久化到 `autoresearch.jsonl` 檔案中，這樣即使在重啟後，系統也能夠恢復到之前的狀態。選擇 TypeScript 帶來了靜態類型檢查的優勢，減少了潛在的錯誤，但也增加了學習成本。整體架構的擴展性良好，但在處理大量數據時可能會遇到性能瓶頸，特別是在多個實驗同時運行的情況下。
+每次實驗的結果會記錄在 `autoresearch.jsonl` 中，這樣即使在重啟後也能夠恢復上次的狀態。選擇這種架構的代價是需要用戶在初始設置時提供必要的上下文信息，但這也使得系統的擴展性更強。整體來看，這個架構能夠支持多種優化目標，並且能夠在不同的開發環境中靈活運用。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於將實驗過程自動化，使用 TypeScript 作為開發語言，並透過擴展和技能的分離設計來實現功能的靈活性。擴展部分負責執行實驗和記錄結果，而技能則專注於特定領域的優化。這種設計使得同一擴展可以應用於多個不同的優化目標。效能方面，這個工具能夠處理多個實驗的運行，並將結果持久化到 `autoresearch.jsonl` 檔案中，這樣即使在重啟後也能恢復實驗狀態。
+這個專案的核心技術機制在於其自動化的實驗循環，使用 TypeScript 實現，並依賴於多個 peerDependencies 以擴展功能。整個系統的設計分為擴展和技能兩部分，擴展提供了基本的實驗運行和記錄功能，而技能則專注於特定的優化領域。這樣的設計使得系統能夠靈活應對不同的優化需求。效能方面，這個工具能夠處理多個實驗並記錄結果，並且支援多種指標的測試，適合需要持續優化的開發團隊。
 
-選擇 TypeScript 帶來了靜態類型檢查的優勢，減少了潛在的錯誤，但也增加了學習成本。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在多個實驗同時運行的情況下。整合方面，這個工具與 PI 生態系統的其他工具相容性良好，但在與主流框架的整合上可能會遇到一些摩擦點。整體來說，這是一個設計良好的自動化工具，適合需要持續優化代碼性能的開發者。
+選擇 TypeScript 作為開發語言的好處在於其靜態類型檢查能夠減少潛在的錯誤，並提高開發效率。依賴樹的複雜度較低，主要依賴於 Pi 生態系統的其他工具，這降低了維護成本。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在處理大量數據時。整合方面，這個工具能夠與現有的 CI/CD 流程無縫結合，並且支援多種指標的測試，適合需要持續優化的開發團隊。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，包含安裝和使用範例，易於理解。安裝過程順暢，無明顯坑點。提供了良好的入門指南，讓新手能夠快速上手。文件目前僅提供英文版本，可能對非英語使用者造成一些障礙。
+> README 文件清晰，提供了安裝和使用的詳細步驟。安裝過程順暢，無明顯坑點。文件中包含了使用範例，對於新手友好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化實驗循環，減少手動測試的負擔。
-> - 即時監控實驗進度，方便開發者隨時查看結果。
-> - 支持多種度量標準，適用於不同的優化需求。
+> - 自動化實驗循環，減少手動干預的需求。
+> - 持久化結果記錄，能夠在重啟後繼續實驗。
+> - 支持多種優化指標，靈活應對不同需求。
 
 > [!danger] 缺點
-> - 目前僅限於 PI 生態系統，無法獨立使用。
-> - 需要用戶手動中斷循環，缺乏自動停止功能。
-> - 對於大型專案，可能需要額外的配置以確保性能。
+> - 目前僅限於 Pi 生態系統，無法在其他環境中使用。
+> - 需要用戶手動配置初始實驗參數，對於新手可能有一定的學習曲線。
+> - 不支援 Windows 環境，僅限於 Unix-like 系統。
 
 > [!warning] 注意事項
-> - 目前僅支援 PI 生態系統，無法獨立運行。
-> - 需要用戶手動中斷循環，無法自動停止。
-> - 對於大型專案，可能需要額外的配置以確保性能。
+> - 目前僅支援 Pi 生態系統，無法在其他環境中使用。
+> - 需要用戶手動配置初始實驗參數，對於新手可能有一定的學習曲線。
+> - 不支援 Windows 環境，僅限於 Unix-like 系統。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 這個工具專注於自動化實驗循環，而 karpathy 的版本則較少針對 PI 生態系統進行優化。 |
-| [trevin-creator/autoresearch-mlx](https://github.com/trevin-creator/autoresearch-mlx) | 這個工具提供類似的自動化功能，但缺乏即時狀態監控和儀表板功能。 |
+| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 這個工具專注於自動化實驗，但沒有提供持久化結果的功能，使用者需手動管理實驗狀態。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這個工具主要用於資料同步，與本專案的實驗優化功能有根本差異，適合不同的使用場景。 |
 
 ## 替代方案決策
 
@@ -209,45 +199,45 @@ pi install https://github.com/davebcn87/pi-autoresearch
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 這個工具專注於自動化實驗循環，而 karpathy 的版本則較少針對 PI 生態系統進行優化。 | 如果你的團隊已經在使用 karpathy 的工具，並希望在更廣泛的生態系統中進行實驗，則可以考慮使用它。 | medium，因為需要調整現有的實驗流程以適應新的工具。 |
-| [trevin-creator/autoresearch-mlx](https://github.com/trevin-creator/autoresearch-mlx) | 這個工具提供類似的自動化功能，但缺乏即時狀態監控和儀表板功能。 | 如果你需要一個簡單的自動化實驗工具，並且不需要即時監控功能，可以考慮這個選擇。 | low，因為功能相似，遷移過程相對簡單。 |
+| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 這個工具專注於自動化實驗，但沒有提供持久化結果的功能，使用者需手動管理實驗狀態。 | 如果你需要一個更簡單的自動化實驗工具，並且不需要持久化功能，karpathy/autoresearch 可能更適合。 | medium，因為需要重新設置實驗管理流程。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這個工具主要用於資料同步，與本專案的實驗優化功能有根本差異，適合不同的使用場景。 | 如果你的需求是資料同步而非實驗優化，則應選擇 AlpinDale/parsync。 | low，因為功能和需求完全不同。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **pi-autoresearch** | **autoresearch** | **autoresearch-mlx** |
+> | 維度 | **pi-autoresearch** | **autoresearch** | **parsync** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這個工具專注於自動化實驗循環，而 karpathy 的版本則較少針對 PI 生態系統進行優化。 | 這個工具提供類似的自動化功能，但缺乏即時狀態監控和儀表板功能。 |
-> | 遷移成本 | - | medium，因為需要調整現有的實驗流程以適應新的工具。 | low，因為功能相似，遷移過程相對簡單。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 karpathy 的工具，並希望在更 | 如果你需要一個簡單的自動化實驗工具，並且不需要即時監控功能， |
+> | 技術路線 | 本專案 | 這個工具專注於自動化實驗，但沒有提供持久化結果的功能，使用者需手動管理實驗狀態。 | 這個工具主要用於資料同步，與本專案的實驗優化功能有根本差異，適合不同的使用場景。 |
+> | 遷移成本 | - | medium，因為需要重新設置實驗管理流程。 | low，因為功能和需求完全不同。 |
+> | 適用場景 | 主要場景 | 如果你需要一個更簡單的自動化實驗工具，並且不需要持久化功能， | 如果你的需求是資料同步而非實驗優化，則應選擇 AlpinDa |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，但不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在不同的 PI 專案中，狀態可能會洩漏，導致結果不準確。
-  - 解法：確保每次實驗都在獨立的環境中運行。
-- [MEDIUM] 缺乏明確的停止命令，可能導致實驗無法中斷。
-  - 解法：手動中斷循環。
+- **[HIGH]** 在不同的專案中使用時，可能會出現狀態洩漏的問題。
+  - 解法：確保每個專案都獨立運行，避免共享狀態。
+- [MEDIUM] 缺少明確的停止按鈕或命令，可能導致實驗無法中斷。
+  - 解法：使用 `Escape` 鍵來中斷實驗。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠自動化測試和優化過程，減少手動操作。 |
-| 大型企業的多專案管理 | 適合 | 能夠在多個專案中持續優化，但可能需要額外配置。 |
-| 個人開發者的 side project | 非常適合 | 簡單易用，能夠快速上手並獲得結果。 |
-| 需要高穩定性的生產環境 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠自動化測試和優化 API 響應時間，提升開發效率。 |
+| 大型企業的資料科學團隊 | 普通 | 雖然能夠支持多種優化，但可能需要更多的配置和管理。 |
+| 個人開發者的 side project | 非常適合 | 簡單易用，能夠快速上手並獲得實驗結果。 |
+| 需要在 Windows 環境下運行的專案 | 不適合 | 目前不支援 Windows 環境。 |
 
 ## 採用成本分析
 
@@ -259,12 +249,12 @@ pi install https://github.com/davebcn87/pi-autoresearch
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到自動化實驗的效果，值得嘗試。
+> 花 2 小時學習，1 小時整合，得到自動化實驗的效果，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，使用時需注意依賴的安全性。整體依賴鏈的信任程度良好，適合在 CI/CD pipeline 中使用。
+> 低風險：不需要高權限，僅存取專案內部資料，依賴鏈的信任程度高，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -329,7 +319,7 @@ pi install https://github.com/davebcn87/pi-autoresearch
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 56 |
+| Forks | 78 |
 | Open Issues | 5 |
 | Issue 解決率 | 17% (1 closed) |
 | 最後推送 | 2026-03-13 |
@@ -345,7 +335,7 @@ pi install https://github.com/davebcn87/pi-autoresearch
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有持續的更新和問題回應。
+**社群活躍度**：社群活躍，最近有多次提交和開放的問題。
 
 ## 開發動態
 
@@ -358,7 +348,7 @@ pi install https://github.com/davebcn87/pi-autoresearch
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#7](https://github.com/davebcn87/pi-autoresearch/issues/7) | Autoresearch state leaks across pi sessions/projects (widget | 0 | 0 |
-> | [#6](https://github.com/davebcn87/pi-autoresearch/issues/6) | Dedicated 'stop' button or command? | 0 | 0 |
+> | [#6](https://github.com/davebcn87/pi-autoresearch/issues/6) | Dedicated 'stop' button or command? | 0 | 2 |
 
 ## README 摘錄
 
@@ -519,9 +509,9 @@ pi install https://github.com/davebcn87/pi-autoresearch
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[CI/CD]] · [[持續集成]]
+相關概念：[[自動化]] · [[CI/CD]] · [[資料視覺化]]
 
-相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[trevin-creator--autoresearch-mlx|trevin-creator/autoresearch-mlx]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[livehl--aimirror|livehl/aimirror]]
+相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[trevin-creator--autoresearch-mlx|trevin-creator/autoresearch-mlx]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[livehl--aimirror|livehl/aimirror]]
 
 [GitHub](https://github.com/davebcn87/pi-autoresearch)
 
@@ -563,7 +553,7 @@ pi install https://github.com/davebcn87/pi-autoresearch
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","CI/CD","持續集成"];
+> const concepts = ["自動化","CI/CD","資料視覺化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "davebcn87--pi-autoresearch" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

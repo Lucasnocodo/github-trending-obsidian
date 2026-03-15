@@ -7,17 +7,17 @@ language: Python
 license: Apache-2.0
 description: "A CLI for Bilibili — browse videos, users, search, and feeds from the terminal"
 homepage: ""
-stars: 421
-stars_per_day: 47
-forks: 40
+stars: 457
+stars_per_day: 46
+forks: 47
 open_issues: 2
 created: 2026-03-04
-pushed_at: 2026-03-13
+pushed_at: 2026-03-14
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "CLI 工具"
-subcategory: "視頻工具"
+subcategory: "社交媒體工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,23 +26,23 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "讓你在終端機上瀏覽 Bilibili 的影片、用戶和動態。"
+use_case: "讓你從終端機瀏覽 Bilibili 的影片、用戶、搜尋和動態。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 2
 next_review: "2026-03-18"
 contributor_count: 2
-engagement: "low"
+engagement: "medium"
 issue_close_rate: 50
-repo_size_kb: 1099
+repo_size_kb: 1108
 readme_length: 10000
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-11:361,2026-03-13:408,2026-03-14:421"
+star_history: "2026-03-11:361,2026-03-13:408,2026-03-14:421,2026-03-15:457"
 tags:
   - github
   - "category/cli_工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "bilibili-cli"
   - "jackwener/bilibili-cli"
-  - "讓你在終端機上瀏覽 Bilibili 的影片、用戶和動態。"
+  - "讓你從終端機瀏覽 Bilibili 的影片、用戶、搜尋和動態。"
 ---
 
 # bilibili-cli
 
-**421** stars · **47** stars/天 · 建立 9 天前 · Python · Apache-2.0
+**457** stars · **46** stars/天 · 建立 10 天前 · Python · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/jackwener--bilibili-cli");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `easy-install`
 
 > [!summary] 一句話摘要
-> 讓你在終端機上瀏覽 Bilibili 的影片、用戶和動態。
+> 讓你從終端機瀏覽 Bilibili 的影片、用戶、搜尋和動態。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (47 stars/day)
-> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要在終端機上高效訪問和管理 Bilibili 內容的開發者和內容創作者。
-> **一句話重點** 這個工具的設計讓用戶能夠在終端機上高效地管理和訪問 Bilibili 的內容，特別適合開發者和內容創作者。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (46 stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Medium
+> **適合** 希望在終端機中高效訪問 Bilibili 內容的開發者或重度用戶。
+> **一句話重點** 這個專案讓用戶能夠在終端機中高效地訪問 Bilibili 資源，特別適合開發者和重度用戶。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/jackwener--bilibili-cli");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "視頻工具" && p.file.name !== "jackwener--bilibili-cli" && p.status !== "archived")
+>     .where(p => p.subcategory === "社交媒體工具" && p.file.name !== "jackwener--bilibili-cli" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,32 +96,35 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 視頻工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 社交媒體工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到高效的 Bilibili 內容管理工具，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，1 小時整合，能快速獲得 Bilibili 資源，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供結構化的輸出格式，方便用於自動化和 AI 代理的整合。
+> 提供了一個簡潔的命令列介面來訪問 Bilibili 的各種功能，並支持自動登錄。
 
 ## 專案簡介
 
-bilibili-cli 是一個專為 Bilibili 設計的命令列介面工具，讓用戶能夠透過終端機方便地瀏覽影片、用戶資料、搜尋和動態更新。用戶可以使用 `bili video <BV_ID>` 指令獲取影片詳細資訊，包括字幕、AI 摘要和相關影片，並且可以透過 `bili user <ID>` 獲取用戶的個人資料和影片列表。這個工具的賣點在於其結構化的輸出格式，支持 YAML 和 JSON，方便用於自動化腳本和 AI 代理的整合。技術上，該專案使用 Python 開發，依賴多個庫如 `aiohttp` 和 `rich` 來處理網路請求和美化輸出。相較於其他類似工具，如 `youtube-dl`，bilibili-cli 專注於 Bilibili 的生態系統，提供更深入的用戶互動和內容管理功能，特別適合需要在終端機上進行快速操作的用戶。
+bilibili-cli 是一個用於 Bilibili 的命令列介面工具，允許用戶從終端機直接瀏覽影片、用戶資料和熱門動態。用戶可以使用 `bili login` 進行 QR 碼登錄，並且可以透過 `bili status` 檢查登錄狀態。這個工具的設計重點在於簡化用戶與 Bilibili 的互動，提供如影片詳細資訊、字幕、AI 摘要、用戶資料、搜尋功能等多種功能，並且支持結構化輸出格式（如 YAML 和 JSON）。技術上，它依賴於 Python 的多個庫，包括 `bilibili-api-python` 和 `aiohttp`，這使得它能夠輕鬆處理 HTTP 請求和非同步操作。這個工具的賣點在於其簡潔的命令和豐富的功能，讓用戶能夠快速獲取所需資訊，而不需要進入繁瑣的網頁操作。
 
-使用者可以輕鬆地透過 `bili hot` 獲取熱門影片，或使用 `bili favorites` 瀏覽收藏夾，這些功能在其他工具中往往缺乏。該工具目前處於 alpha 階段，功能尚在持續開發中，使用者需注意可能的 API 變更和功能不穩定性。社群活躍度中等，開發者在 GitHub 上持續更新，並有解決部分已知問題的能力。對於需要快速獲取 Bilibili 內容的開發者和愛好者，這是一個值得嘗試的工具。
+與其他 CLI 工具相比，如 `xiaohongshu-cli` 和 `twitter-cli`，bilibili-cli 專注於 Bilibili 的生態系統，提供針對性強的功能，並且能夠自動提取瀏覽器中的登錄資訊，減少用戶的操作負擔。這個工具適合需要快速訪問 Bilibili 資源的開發者或重度用戶，尤其是在需要批量處理或自動化任務時。由於目前仍在 Alpha 階段，使用者應注意可能的 API 變更和功能不穩定。整體而言，bilibili-cli 是一個非常有潛力的工具，特別是對於那些希望將 Bilibili 整合到自動化工作流中的用戶。
 
-**技術棧**：`Python 3.10` · `aiohttp` · `click` · `rich`
+**技術棧**：`Python 3.10` · `bilibili-api-python` · `aiohttp` · `click` · `rich`
 
 ## 重點功能
 
-- 影片詳情 — 使用 `bili video <BV_ID>` 獲取影片詳細資訊，包括字幕、AI 摘要和相關影片。
-- 用戶資料 — 使用 `bili user <ID>` 獲取用戶的個人資料和影片列表。
-- 搜尋功能 — 使用 `bili search <關鍵字>` 搜尋用戶或影片，支持分頁和數量限制。
-- 動態更新 — 使用 `bili feed` 獲取動態時間線，方便跟蹤關注的用戶。
-- 結構化輸出 — 支持 `--yaml` 和 `--json` 參數，方便與其他工具整合。
+- 影片詳細資訊 — 提供影片的詳細信息、字幕、AI 摘要和相關影片。
+- 用戶資料 — 獲取用戶的個人資料、影片列表和關注列表。
+- 搜尋功能 — 支持根據關鍵字搜尋用戶或影片。
+- 熱門影片 — 獲取當前熱門影片和網站排名。
+- 動態時間線 — 瀏覽來自關注用戶的動態。
+- 收藏夾 — 瀏覽收藏夾、稍後觀看和觀看歷史。
+- 智能登錄 — 自動提取 Chrome/Firefox 的 cookies 或使用 QR 碼登錄。
+- 結構化輸出 — 支持 `--yaml` 和 `--json` 格式的輸出。
 
 ## 快速開始
 
@@ -129,77 +132,79 @@ bilibili-cli 是一個專為 Bilibili 設計的命令列介面工具，讓用戶
 ```bash
 pipx install bilibili-cli
 ```
-2. 使用 QR 碼登錄
+2. 登錄 Bilibili 帳號
 ```bash
 bili login
 ```
-3. 獲取影片詳情
+3. 檢查登錄狀態
 ```bash
-bili video BV1ABcsztEcY
+bili status
 ```
 
 ## 程式碼範例
 
 ```python
 [
-  "# 前置條件：已安裝 bilibili-cli 並登錄",
-  "bili video BV1ABcsztEcY --subtitle --json",
-  "# 預期輸出：影片詳情及字幕的 JSON 格式"
+  "# 前置條件：已安裝 bilibili-cli",
+  "bili status",
+  "# 預期輸出：顯示當前登錄狀態"
 ]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 9 天內累積 421 stars（約 47 stars/天），forks 數量為 40（9.5%），顯示出不錯的社群關注度。作者 jackwener 之前有開發其他社交媒體 CLI 工具，這次針對 Bilibili 的需求提供了一個專門的解決方案。此工具解決了在終端機上無法輕鬆訪問 Bilibili 內容的痛點，特別是對於開發者和愛好者來說，能夠快速獲取和管理內容。社群的反饋和需求促進了這個工具的快速成長。該工具的設計使得用戶能夠在不依賴圖形界面的情況下，仍然能夠享受 Bilibili 的豐富內容，這在當前 CLI 工具日益增長的趨勢中顯得尤為重要。
+> 建立 10 天內累積 457 stars（約 46 stars/天），forks 數量為 47（10.3%），顯示出一定的社群關注度。作者 jackwener 之前有開發其他社交媒體 CLI 工具，這使得他在這一領域有一定的經驗。這個專案解決了用戶在終端機中快速訪問 Bilibili 資源的需求，之前用戶可能需要依賴繁瑣的網頁操作。最近的推特討論和 GitHub 活動也可能促進了這個專案的曝光。由於 CLI 工具的特性，使用者能夠在不打開瀏覽器的情況下，快速獲取資訊，這在當前的開發環境中非常重要。forks/stars 比率為 10.3%，顯示出有不少用戶對這個工具進行了實際的修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要在終端機上高效訪問和管理 Bilibili 內容的開發者和內容創作者。
+**目標受眾**：希望在終端機中高效訪問 Bilibili 內容的開發者或重度用戶。
 
 > [!example] 使用場景
-> - 後端工程師用它來快速獲取 Bilibili 上的熱門影片資訊，因為這樣能夠節省手動查找的時間，並且可以將結果整合到自動化報告中。
-> - 內容創作者用它來提取影片的字幕和 AI 摘要，因為這樣可以快速獲得影片的核心內容，並用於後續的內容分析或創作。
-> - 數據分析師用它來收集 Bilibili 上的用戶互動數據，因為結構化的 JSON/YAML 輸出方便進行數據處理和視覺化。
+> - 後端工程師用它來從終端機快速獲取 Bilibili 上的熱門影片，因為這樣能節省時間並提高工作效率。
+> - 數據分析師用它來提取 Bilibili 用戶的觀看歷史，因為這樣可以方便地進行用戶行為分析。
+> - 內容創作者用它來自動化獲取影片的字幕和摘要，因為這樣能夠快速生成內容報告。
+> - 學習者用它來查找特定主題的影片，因為這樣能夠快速獲得相關學習資源。
 
 ## 架構分析
 
-bilibili-cli 採用模組化的設計，主要由 CLI 介面和多個功能模組組成。CLI 介面使用 Click 框架來處理命令行參數和輸出格式，這使得用戶能夠輕鬆地執行各種操作。資料流方面，使用 aiohttp 進行非同步網路請求，這樣可以提高效率並減少延遲。
-
-選擇 Python 作為開發語言的原因在於其生態系統豐富，並且有大量的庫可供使用。這種設計使得工具能夠快速擴展功能，但也可能導致依賴管理的複雜性。整體來看，該工具的架構設計使得用戶能夠快速上手並進行操作，但在功能擴展時需要注意依賴的穩定性。
+bilibili-cli 採用 Python 語言實現，設計上以命令列介面為主，使用 `click` 框架來處理命令行參數和選項。資料流方面，使用 `aiohttp` 進行非同步 HTTP 請求，以提高效能和響應速度。這種設計使得用戶能夠快速獲取 Bilibili 的各種資源，而不需要等待網頁加載。選擇 Python 作為開發語言的優勢在於其豐富的庫和社群支持，但也可能導致性能瓶頸，特別是在處理大量請求時。整體架構的擴展性良好，但在高並發情況下可能需要進一步優化。
 
 ## 技術深入分析
 
-bilibili-cli 的核心技術機制是基於 Python 的 CLI 工具，使用 Click 框架來處理命令行參數，並使用 aiohttp 進行非同步網路請求。這使得工具在處理大量請求時能夠保持高效，並且能夠快速響應用戶的操作。效能方面，該工具能夠快速獲取 Bilibili 的內容，並且支持結構化的輸出格式，這對於需要進行數據分析的用戶來說非常有用。設計上選擇 Python 是因為其生態系統豐富，並且有大量的庫可供使用，但這也可能導致依賴管理的複雜性。技術風險方面，隨著功能的擴展，可能會出現 API 變更的問題，這需要開發者保持警惕。整合方面，該工具與主流的 CI/CD 工具相容性良好，能夠方便地融入現有的開發流程中。
+bilibili-cli 的核心技術機制是基於 Python 的命令列介面設計，使用 `click` 框架來處理用戶輸入，並利用 `aiohttp` 進行非同步請求，這使得它能夠快速響應用戶的查詢。效能上，這個工具能夠處理多達幾百個請求，但在高並發情況下可能會遇到瓶頸，特別是在 API 響應時間較長的情況下。選擇 Python 作為開發語言的好處在於其豐富的庫和簡單的語法，但在性能上可能不如 C++ 或 Go 等語言。技術風險方面，隨著 Bilibili API 的變化，這個工具可能需要頻繁更新以保持兼容性，這對於開發者來說是一個潛在的負擔。整合方面，這個工具能夠與其他 CLI 工具如 `xiaohongshu-cli` 和 `twitter-cli` 一起使用，提供更全面的社交媒體互動體驗，但在與大型應用的整合上可能需要額外的適配層。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了安裝和使用的詳細說明；安裝過程順暢，使用 pipx 或 uv tool 都能輕鬆安裝；有提供基本的使用範例，但缺乏更深入的使用指南；目前文件僅有英文，對於中文用戶可能需要額外翻譯。
+> README 文件清晰且包含使用範例，安裝過程簡單，使用者只需執行一行命令即可安裝。文檔中有詳細的功能介紹和使用說明，對於新手來說友好度高。整體而言，花 30 分鐘內應該能夠順利安裝並運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供結構化的輸出格式，方便與其他工具整合。
-> - 支持多種用戶互動功能，如點贊和收藏。
-> - 能夠快速獲取熱門影片和用戶動態，提升使用效率。
+> - 簡單易用的命令列介面，適合快速訪問 Bilibili 資源。
+> - 支持多種輸出格式，方便用戶根據需求選擇。
+> - 自動登錄功能減少了用戶的操作負擔。
+> - 活躍的開發和社群支持，能夠快速解決問題。
 
 > [!danger] 缺點
-> - 目前功能仍在開發中，穩定性有待提高。
-> - 部分功能需要登錄，增加了使用的複雜性。
-> - 依賴多個外部庫，可能導致兼容性問題。
+> - 目前仍在 Alpha 階段，功能和穩定性可能不夠完善。
+> - 對於某些 API 變更可能無法即時更新，影響使用體驗。
+> - 僅支援 Python 3.10 以上版本，限制了使用者範圍。
+> - 不支持 Windows 平台的某些功能，影響跨平台使用。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.10 以上版本。
-> - 部分功能需要登錄才能使用，如收藏夾和互動功能。
-> - 目前處於 alpha 階段，可能存在不穩定性和 API 變更。
+> - 僅支援 Python 3.10 以上版本
+> - 目前仍在 Alpha 階段，功能可能不穩定
+> - 對於某些 API 變更可能無法即時更新
+> - 不支持 Windows 平台的某些功能
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [ytdl-org/youtube-dl](https://github.com/ytdl-org/youtube-dl) | youtube-dl 專注於 YouTube 影片下載，功能較為全面，但不支持 Bilibili 的特定功能，如用戶互動和動態更新。 |
-| [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) | yt-dlp 是 youtube-dl 的分支，提供更快的下載速度和更多的格式選擇，但同樣不針對 Bilibili 的特定需求。 |
+| [jackwener/xiaohongshu-cli](https://github.com/jackwener/xiaohongshu-cli) | 專注於小紅書的 CLI 工具，提供類似的社交媒體互動功能，但針對不同平台。 |
+| [jackwener/twitter-cli](https://github.com/jackwener/twitter-cli) | 專注於 Twitter 的 CLI 工具，功能上與 bilibili-cli 類似，但針對 Twitter 的生態系統。 |
 
 ## 替代方案決策
 
@@ -207,16 +212,16 @@ bilibili-cli 的核心技術機制是基於 Python 的 CLI 工具，使用 Click
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [ytdl-org/youtube-dl](https://github.com/ytdl-org/youtube-dl) | youtube-dl 專注於 YouTube 影片下載，提供更全面的下載選項和格式支持。 | 如果你的需求主要是下載 YouTube 影片，且需要多種格式選擇，youtube-dl 是更好的選擇。 | medium，因為命令和參數的使用方式有所不同。 |
-| [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) | yt-dlp 是 youtube-dl 的分支，提供更快的下載速度和更多的格式選擇，但不針對 Bilibili 的特定需求。 | 如果你需要更快的下載速度和更豐富的格式選擇，且不介意使用 YouTube 相關的工具，yt-dlp 是更合適的選擇。 | medium，因為需要重新學習命令和參數的使用方式。 |
+| [jackwener/xiaohongshu-cli](https://github.com/jackwener/xiaohongshu-cli) | 專注於小紅書的社交媒體互動，提供類似的 CLI 功能，但針對不同平台的需求。 | 如果你的主要需求是小紅書的內容管理和互動，則應選擇這個工具。 | low，因為兩者的使用方式和命令結構相似。 |
+| [jackwener/twitter-cli](https://github.com/jackwener/twitter-cli) | 專注於 Twitter 的 CLI 工具，提供針對 Twitter 的特定功能，與 bilibili-cli 互補。 | 如果你需要同時管理 Twitter 和 Bilibili 的內容，則應選擇這個工具。 | medium，因為需要適應不同的命令和功能。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **bilibili-cli** | **youtube-dl** | **yt-dlp** |
+> | 維度 | **bilibili-cli** | **xiaohongshu-cli** | **twitter-cli** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | youtube-dl 專注於 YouTube 影片下載，提供更全面的下載選項和格式支持。 | yt-dlp 是 youtube-dl 的分支，提供更快的下載速度和更多的格式選擇，但不針對 Bilibili 的特定需求。 |
-> | 遷移成本 | - | medium，因為命令和參數的使用方式有所不同。 | medium，因為需要重新學習命令和參數的使用方式。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是下載 YouTube 影片，且需要多種格式 | 如果你需要更快的下載速度和更豐富的格式選擇，且不介意使用 Y |
+> | 技術路線 | 本專案 | 專注於小紅書的社交媒體互動，提供類似的 CLI 功能，但針對不同平台的需求。 | 專注於 Twitter 的 CLI 工具，提供針對 Twitter 的特定功能，與 bilibili-cli 互補。 |
+> | 遷移成本 | - | low，因為兩者的使用方式和命令結構相似。 | medium，因為需要適應不同的命令和功能。 |
+> | 適用場景 | 主要場景 | 如果你的主要需求是小紅書的內容管理和互動，則應選擇這個工具。 | 如果你需要同時管理 Twitter 和 Bilibili 的 |
 
 ## 成熟度評估
 
@@ -227,27 +232,25 @@ bilibili-cli 的核心技術機制是基於 Python 的 CLI 工具，使用 Click
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合個人試用和探索，不建議用於生產環境的關鍵任務。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 登錄時可能會遇到 QR 碼無法識別的問題
-  - 解法：確保使用最新版本的 bilibili-cli，並檢查瀏覽器的 cookie 設定
-- [MEDIUM] 某些 API 請求可能會因為 Bilibili 的反爬蟲機制而失敗
-  - 解法：減少請求頻率或使用不同的網路環境
-- [MEDIUM] 影片的 BV ID 格式不正確時會導致請求失敗
-  - 解法：檢查 BV ID 是否符合格式要求，必須是 BV 開頭的 10 個字母數字
+- **[HIGH]** 登錄時可能遇到 QR 碼無法識別的問題
+  - 解法：嘗試使用不同的瀏覽器掃描 QR 碼
+- [MEDIUM] 某些 API 變更可能導致功能失效
+  - 解法：定期檢查更新以獲取最新版本
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 個人開發者在終端機上管理 Bilibili 內容 | 非常適合 | 提供了多種方便的命令來訪問和管理內容。 |
-| 大型團隊需要在 CI/CD 中集成 Bilibili 內容 | 普通 | 雖然支持結構化輸出，但目前仍在 alpha 階段，穩定性不足。 |
-| 需要快速獲取 Bilibili 動態的內容創作者 | 非常適合 | 能夠快速獲取用戶動態和熱門影片，提升工作效率。 |
-| 需要在 Windows 環境下使用的用戶 | 不適合 | 目前未明確支持 Windows 環境，可能會遇到兼容性問題。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 簡單易用，能快速整合到現有工作流中。 |
+| 大型企業的社交媒體管理 | 不適合 | 目前功能尚不穩定，可能影響業務運作。 |
+| 個人開發者的自動化工具 | 適合 | 能夠快速實現自動化需求，提升工作效率。 |
+| 學術研究中的數據收集 | 普通 | 功能雖然強大，但穩定性不足，需謹慎使用。 |
 
 ## 採用成本分析
 
@@ -256,15 +259,15 @@ bilibili-cli 的核心技術機制是基於 Python 的 CLI 工具，使用 Click
 | 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到高效的 Bilibili 內容管理工具，值得一試。
+> 花 2 小時學習，1 小時整合，能快速獲得 Bilibili 資源，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 該工具不需要高權限運行，主要通過 API 請求獲取資料，並不存取敏感資料。依賴的外部庫需定期檢查更新，以避免安全風險。在 CI/CD 中使用時，需確保環境安全性。
+> 低風險：該工具不需要高權限，主要通過 API 存取公開資料，不存取敏感資訊。
 
 ## 健康度儀表板
 
@@ -329,10 +332,10 @@ bilibili-cli 的核心技術機制是基於 Python 的 CLI 工具，使用 Click
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 40 |
+| Forks | 47 |
 | Open Issues | 2 |
 | Issue 解決率 | 50% (2 closed) |
-| 最後推送 | 2026-03-13 |
+| 最後推送 | 2026-03-14 |
 | 建立日期 | 2026-03-04 |
 | Repo 大小 | 1.1 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/jackwener/bilibili-cli) |
@@ -340,18 +343,18 @@ bilibili-cli 的核心技術機制是基於 Python 的 CLI 工具，使用 Click
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@jackwener](https://github.com/jackwener) | 76 |
+> | [@jackwener](https://github.com/jackwener) | 79 |
 > | [@fkysly](https://github.com/fkysly) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者定期更新。
+**社群活躍度**：社群活躍度中等，最近有幾個問題被提出和解決。
 **連結**：[文件](https://github.com/jackwener/bilibili-cli)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-10 ~ 2026-03-13）
-> **活躍天數** 3 天 · **最新 commit** docs: align SKILL.md version to 0.6.2
+> [!abstract] 最近 10 次 commit（2026-03-10 ~ 2026-03-14）
+> **活躍天數** 4 天 · **最新 commit** ci: remove deprecated ClawHub publish workflow
 
 ## 熱門議題
 
@@ -379,6 +382,16 @@ bilibili-cli 的核心技術機制是基於 Python 的 CLI 工具，使用 Click
 > ## Installation
 > 
 > ```bash
+> 
+> ### Manual Install
+> 
+> ```bash
+> mkdir -p .agents/skills
+> git clone git@github.com:jackwener/bilibili-cli.git .agents/skills/bilibili-cli
+> ```
+> 
+> Once added, AI agents that support the `.agents/skills/` convention will automatically discover and use bilibili-cli commands.
+> 
 > 
 > ## Usage
 > 
@@ -578,13 +591,11 @@ bilibili-cli 的核心技術機制是基於 Python 的 CLI 工具，使用 Click
 > bili user-videos 946974 --max 3 --yaml
 > ```
 > 
-> For agent usage, also prefer narrower queries (`--max`, `--page`, `--offset`) to avoid wasting context on oversized payloads.
-> 
-> When an AI agent is asked to summarize a video, it should fetch subtitles first. Subtitles usually contain the core content of the video and are the best primary source for summarization. Only fall back to AI summary, comments, or audio extraction when subtit
+> For agent usage, also prefer narrower queries (`--max`, `--page`, `--offset`) to avoid wasting context on oversized payl
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化]] · [[資料視覺化]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[API 設計]]
 
 相關專案：[[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[jackwener--twitter-cli|jackwener/twitter-cli]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[knowsuchagency--mcp2cli|knowsuchagency/mcp2cli]] · [[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]] · [[sanbuphy--nanoAgent|sanbuphy/nanoAgent]] · [[steipete--discrawl|steipete/discrawl]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
@@ -592,11 +603,11 @@ bilibili-cli 的核心技術機制是基於 Python 的 CLI 工具，使用 Click
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：視頻工具）
+> [!note]- 直接競品（同子分類：社交媒體工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "視頻工具" AND file.name != "jackwener--bilibili-cli"
+> WHERE subcategory = "社交媒體工具" AND file.name != "jackwener--bilibili-cli"
 > SORT stars DESC
 > ```
 
@@ -628,7 +639,7 @@ bilibili-cli 的核心技術機制是基於 Python 的 CLI 工具，使用 Click
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化","資料視覺化"];
+> const concepts = ["CLI/TUI","自動化","API 設計"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "jackwener--bilibili-cli" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
