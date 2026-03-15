@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: ""
 homepage: ""
-stars: 1005
-stars_per_day: 503
-forks: 148
-open_issues: 9
+stars: 1420
+stars_per_day: 473
+forks: 191
+open_issues: 13
 created: 2026-03-11
-pushed_at: 2026-03-13
+pushed_at: 2026-03-14
 first_seen: 2026-03-14
 week: "2026-W11"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "提供一個安全優先的本地控制中心，集中管理 OpenClaw
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-17"
+appearances: 2
+next_review: "2026-03-18"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 40
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-14"
-star_history: "2026-03-14:994,2026-03-14:1005"
+star_history: "2026-03-14:994,2026-03-14:1005,2026-03-15:1420"
 tags:
   - github
   - "category/開發工具"
@@ -1011,4 +1011,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-15|2026-03-15]] — 再次上榜，1.4k stars
 - [[2026-03-14|2026-03-14]] — 首次收錄，994 stars

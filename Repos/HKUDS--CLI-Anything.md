@@ -7,12 +7,12 @@ language: Python
 license: N/A
 description: "CLI-Anything: Making ALL Software Agent-Native"
 homepage: ""
-stars: 11739
-stars_per_day: 2348
-forks: 1000
-open_issues: 44
+stars: 13789
+stars_per_day: 2298
+forks: 1157
+open_issues: 48
 created: 2026-03-08
-pushed_at: 2026-03-13
+pushed_at: 2026-03-14
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "讓所有軟體都能成為 AI 代理的原生工具。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-03-17"
+appearances: 5
+next_review: "2026-03-18"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 10
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:3381,2026-03-11:3472,2026-03-13:8931,2026-03-13:8970,2026-03-14:11721,2026-03-14:11739"
+star_history: "2026-03-10:3381,2026-03-11:3472,2026-03-13:8931,2026-03-13:8970,2026-03-14:11721,2026-03-14:11739,2026-03-15:13789"
 tags:
   - github
   - "category/開發工具"
@@ -981,6 +981,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-15|2026-03-15]] — 再次上榜，13.8k stars
 - [[2026-03-14|2026-03-14]] — 再次上榜，11.7k stars
 - [[2026-03-13|2026-03-13]] — 再次上榜，8.9k stars
 - [[2026-03-11|2026-03-11]] — 再次上榜，2.5k stars

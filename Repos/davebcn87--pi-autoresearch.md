@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "Autonomous experiment loop extension for pi"
 homepage: ""
-stars: 1172
-stars_per_day: 586
-forks: 56
+stars: 1599
+stars_per_day: 533
+forks: 78
 open_issues: 5
 created: 2026-03-11
 pushed_at: 2026-03-13
@@ -30,8 +30,8 @@ use_case: "自動化實驗循環，幫助開發者持續優化代碼性能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-17"
+appearances: 2
+next_review: "2026-03-18"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 17
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-14"
-star_history: "2026-03-14:1167,2026-03-14:1172"
+star_history: "2026-03-14:1167,2026-03-14:1172,2026-03-15:1599"
 tags:
   - github
   - "category/開發工具"
@@ -817,4 +817,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-15|2026-03-15]] — 再次上榜，1.6k stars
 - [[2026-03-14|2026-03-14]] — 首次收錄，1.2k stars
