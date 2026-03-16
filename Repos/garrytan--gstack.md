@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "Use Garry Tan's exact Claude Code setup: 6 opinionated tools that serve as CEO, Eng Manager, Release Manager and QA Engineer"
 homepage: ""
-stars: 14039
-stars_per_day: 3510
-forks: 1606
-open_issues: 48
+stars: 14093
+stars_per_day: 3523
+forks: 1614
+open_issues: 50
 created: 2026-03-11
 pushed_at: 2026-03-16
 first_seen: 2026-03-13
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-13
-use_case: "將 Claude Code 轉變為一個隨叫隨到的專業團隊，提供多種自動化工作流程技能。"
+use_case: "將 Claude Code 轉變為一個可隨時召喚的專業團隊，提供多種工程管理技能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 4
 next_review: "2026-03-19"
 contributor_count: 2
 engagement: "medium"
-issue_close_rate: 8
-repo_size_kb: 22295
+issue_close_rate: 7
+repo_size_kb: 22488
 readme_length: 9985
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-13"
-star_history: "2026-03-13:2724,2026-03-13:2775,2026-03-14:6191,2026-03-14:6258,2026-03-15:10586,2026-03-15:10635,2026-03-16:14039"
+star_history: "2026-03-13:2724,2026-03-13:2775,2026-03-14:6191,2026-03-14:6258,2026-03-15:10586,2026-03-15:10635,2026-03-16:14039,2026-03-16:14093"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "gstack"
   - "garrytan/gstack"
-  - "將 Claude Code 轉變為一個隨叫隨到的專業團隊，提供多種自動化工作流程技能。"
+  - "將 Claude Code 轉變為一個可隨時召喚的專業團隊，提供多種工程管理技能。"
 ---
 
 # gstack
 
-**10.6k** stars · **3.5k** stars/天 · 建立 3 天前 · TypeScript · MIT
+**14.1k** stars · **3.5k** stars/天 · 建立 4 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/garrytan--gstack");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `easy-install`
 
 > [!summary] 一句話摘要
-> 將 Claude Code 轉變為一個隨叫隨到的專業團隊，提供多種自動化工作流程技能。
+> 將 Claude Code 轉變為一個可隨時召喚的專業團隊，提供多種工程管理技能。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (3.5k stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Medium
-> **適合** 需要高效能自動化工具來提升開發流程的中小型團隊。
-> **一句話重點** gstack 不僅是一個工具，而是一種全新的開發思維模式，將複雜的工程流程簡化為可重複的命令。
+> **適合** 需要在 Claude Code 環境中快速部署專業技能的開發團隊。
+> **一句話重點** gstack 將 Claude Code 的使用方式徹底改變，讓開發者能夠像使用專業工具一樣高效工作。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,27 +101,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、2 小時整合，得到高效的開發自動化工具，值得採用。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，3 小時整合，得到高效的工程管理工具，值得投資。
 
 > [!abstract] 核心創新
-> gstack 將 Claude Code 轉變為一個隨叫隨到的專業團隊，提供多種自動化工作流程技能。
+> gstack 將 Claude Code 轉變為一個可隨時召喚的專業團隊，提供多種工程管理技能。
 
 ## 專案簡介
 
-gstack 是一個針對 Claude Code 的工具集，將其轉變為一個多功能的專業團隊。使用者可以透過簡單的指令（如 `/plan-ceo-review`、`/qa`、`/ship`）來進行產品規劃、代碼審查、發佈和質量保證等工作。這些指令背後的設計理念是將複雜的工程流程簡化為可重複使用的命令，讓工程師能夠專注於高層次的決策，而不是繁瑣的細節。gstack 依賴於 Playwright 進行瀏覽器自動化，並使用 Bun 作為執行環境，這使得它在性能上相對輕量，且支持快速的開發和測試。與其他工具相比，gstack 提供了更為集成的工作流，特別是在多會話並行操作的情境下，能夠有效避免狀態衝突。
+gstack 是一個專為 Claude Code 設計的工具集，旨在將一個通用助手轉變為多個專業角色，包括 CEO、工程經理、發佈經理和 QA 工程師。用戶可以透過簡單的指令如 `/plan-ceo-review` 和 `/qa` 來執行各種任務，這樣的設計使得工程流程更為高效和專業。安裝過程中，gstack 會在用戶的 Claude 環境中創建必要的技能文件和符號鏈接，並且不會影響系統的 PATH。技術上，gstack 使用了 TypeScript 和 Go Template，並依賴 Playwright 進行瀏覽器自動化，這使得它在處理網頁任務時具備高效能。與其他工具如 AlpinDale/parsync 和 Flowseal/tg-ws-proxy 相比，gstack 提供了更為專業化的工作流程，並且能夠直接在 Claude 環境中運行，無需額外的配置。
 
-這使得它在需要同時處理多個任務的情況下，表現出色。使用者可以在一個專案中同時運行多個 Claude Code 實例，這樣的設計讓開發過程更加靈活和高效。gstack 的安裝過程簡單，且不會影響系統環境，所有的操作都在 `.claude/` 目錄下進行，這降低了使用門檻。對於需要快速迭代和多任務處理的開發團隊，gstack 是一個非常合適的選擇。
+使用者在進行 QA 測試時，可以透過 `/setup-browser-cookies` 指令輕鬆導入真實的會話，避免了重複登錄的麻煩。儘管目前有 50 個開放的問題，但社群活躍度仍然不錯，且有定期的更新。這個專案的成熟度目前為 beta，適合需要快速部署和測試的開發團隊。對於小型團隊或新創公司來說，gstack 是一個值得考慮的選擇，特別是在需要快速迭代和高效協作的情境下。
 
 **技術棧**：`TypeScript` · `Go Template` · `Shell` · `Playwright`
 
 ## 重點功能
 
-- 多種工作流技能 — 提供 /plan-ceo-review、/plan-eng-review、/review、/ship、/qa 等指令，涵蓋產品規劃到質量保證的完整流程。
-- /setup-browser-cookies — 自動導入瀏覽器會話，簡化測試過程，支持多種 Chromium 瀏覽器。
-- 並行會話支持 — 使用 Conductor 可以同時運行多個 Claude Code 實例，避免狀態衝突。
-- 輕量安裝 — 所有操作在 .claude/ 目錄下進行，無需改變系統環境。
-- 基於 Playwright 的瀏覽器自動化 — 提供穩定的自動化測試環境，支持快速的開發和測試。
+- 多種工作流程技能 — 提供如 /plan-ceo-review、/qa 等多種專業技能指令。
+- 瀏覽器自動化 — 使用 Playwright 進行網頁操作，支援 headless 模式。
+- 會話管理 — 透過 /setup-browser-cookies 指令導入真實會話，簡化測試流程。
+- Markdown 提示文件 — 在 ~/.claude/skills/gstack/ 中生成技能提示文件，便於使用。
+- 輕量安裝 — 所有文件和二進制檔案都存放在 ~/.claude/，不影響系統環境。
 
 ## 快速開始
 
@@ -133,67 +133,71 @@ git clone https://github.com/garrytan/gstack.git ~/.claude/skills/gstack
 ```bash
 cd ~/.claude/skills/gstack
 ```
-3. 執行安裝
+3. 執行安裝腳本
 ```bash
 ./setup
+```
+
+## 程式碼範例
+
+```ts
+[
+  "# 前置條件：已安裝 Claude Code 和 Bun",
+  "Install gstack: run `git clone https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup`",
+  "# 預期輸出：gstack 將被安裝並可用於 Claude Code 環境中。"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 10635 stars（3545/天），forks 1268（11.9%），顯示出強勁的增長潛力。作者 Garry Tan 以其在 AI 工具開發上的專業背景，提供了一個針對 Claude Code 的優化解決方案，填補了市場上對於高效能自動化工具的需求。這個工具的出現正好符合當前開發者對於提升工作效率的迫切需求。社群的反應也表明，這個工具解決了許多開發者在日常工作中遇到的痛點，特別是在多任務處理和自動化測試方面。forks/stars 比率為 11.9%，顯示出許多開發者對此工具進行了實際修改和使用。
+> 建立 4 天內累積 14093 stars（3523/天），forks 1614（11.5%），顯示出強烈的社群興趣。這個專案的創建者 Garry Tan 之前在 AI 和工程管理領域有豐富的經驗，解決了在使用 Claude Code 時缺乏專業化工具的痛點。隨著 AI 工具的普及，開發者越來越需要能夠高效協作的工具集，gstack 恰好滿足了這一需求。社群對於安全性問題的關注（如 #18）也顯示出使用者對於工具的信任度和關心程度。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效能自動化工具來提升開發流程的中小型團隊。
+**目標受眾**：需要在 Claude Code 環境中快速部署專業技能的開發團隊。
 
 > [!example] 使用場景
-> - 後端工程師用它來自動化代碼審查，因為手動檢查代碼容易漏掉細節，使用 gstack 可以快速獲得全面的代碼分析。
-> - 產品經理用它來進行產品規劃，因為 gstack 的 /plan-ceo-review 可以幫助他們更清晰地定義產品需求，避免不必要的開發。
-> - QA 工程師用它來進行自動化測試，因為 gstack 的 /qa 指令可以快速檢查多個路由的功能，節省大量手動測試的時間。
+> - 工程經理用它來進行代碼審查，因為可以快速調用專業技能，提升審查效率。
+> - QA 工程師用它來自動化測試流程，因為能夠直接導入真實的會話，減少手動操作。
+> - 產品經理用它來進行工程回顧，因為可以透過簡單指令快速獲得團隊的工作總結。
 
 ## 架構分析
 
-gstack 採用模組化設計，將不同的工作流技能封裝為獨立的命令，這樣的設計使得使用者可以根據需求選擇合適的工具。資料流方面，使用者的輸入經由 Claude Code 處理，然後調用 Playwright 進行瀏覽器操作，最終將結果返回給使用者。這種設計的優勢在於靈活性和可擴展性，使用者可以根據自己的需求添加新的技能或修改現有技能。
-
-選擇 Playwright 而非其他瀏覽器自動化工具的原因在於其穩定性和強大的功能，能夠支持多種瀏覽器和平台。這樣的架構也使得 gstack 在性能上表現出色，能夠快速響應使用者的請求。擴展性方面，隨著使用者需求的增加，可以輕鬆添加新的工作流技能，而不會影響現有功能的穩定性。
+gstack 的架構設計為一個輕量級的 CLI 工具，所有功能都集中在 ~/.claude/skills/gstack/ 目錄下，這樣的設計使得安裝和使用都非常簡單。資料流方面，使用者透過簡單的指令調用不同的技能，這些技能在背景中運行 Playwright 進行網頁操作。選擇使用 TypeScript 和 Go Template 是因為這些技術能夠提供良好的開發體驗和高效的執行效率。這樣的選擇雖然增加了一些學習成本，但也使得工具的擴展性更強。整體來看，gstack 的設計使得開發者能夠快速上手並進行高效的工程管理。
 
 ## 技術深入分析
 
-gstack 的核心技術機制是將 Claude Code 的功能模組化，使其能夠根據使用者的需求提供不同的工作流技能。這些技能包括產品規劃、代碼審查、發佈和質量保證等，使用者可以通過簡單的指令來調用。gstack 使用 Playwright 進行瀏覽器自動化，這使得它在性能上非常優越，能夠快速處理多個請求。根據 README，gstack 的設計考量在於提供一個靈活且可擴展的工具，讓開發者能夠根據自己的需求進行調整。選擇 TypeScript 和 Go Template 作為主要語言，這樣的選擇使得開發過程更加高效，並且能夠充分利用現有的生態系統。技術風險方面，gstack 可能在高負載情況下出現性能瓶頸，這需要在設計時考慮到資源的分配。整合方面，gstack 與現有的開發工具鏈（如 Git 和 CI/CD 工具）相容性良好，能夠輕鬆融入現有的開發流程。
+gstack 的核心技術機制是將 Claude Code 的功能模組化，讓用戶能夠根據需求調用不同的專業技能。這些技能使用 TypeScript 實現，並透過 Playwright 進行網頁自動化，這使得整體性能表現良好。gstack 的設計使得用戶可以在不改變系統環境的情況下，快速安裝和使用各種功能。由於依賴於 Playwright，gstack 能夠處理複雜的網頁操作，但這也意味著需要一定的資源來支持這些操作。設計上，選擇使用 TypeScript 而非 JavaScript 是因為其靜態類型系統能夠提供更好的開發體驗和錯誤檢查。整體來看，gstack 的架構設計使得其在功能擴展上具備良好的靈活性，並且能夠快速適應用戶需求的變化。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且詳細，提供了安裝和使用的具體步驟。安裝過程相對順暢，沒有明顯的坑。文件中包含了使用範例，讓新手能夠快速上手。
+> README 文件提供了清晰的安裝指引和使用範例，讓新手能夠快速上手。安裝過程相對順暢，但需要確保滿足所有前置條件。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 集成多種自動化工作流，提升開發效率。
-> - 輕量安裝，無需改變系統環境。
-> - 支持多會話並行操作，適合大型專案。
-> - 使用 Playwright 進行穩定的瀏覽器自動化。
+> - 提供多種專業技能，提升工程效率。
+> - 安裝簡單，不影響系統環境。
+> - 使用 Playwright 進行高效的瀏覽器自動化。
 
 > [!danger] 缺點
-> - 目前僅支援 macOS 和 Linux，Windows 用戶無法使用。
-> - 需要安裝額外的依賴（Claude Code 和 Bun）。
-> - 對於非瀏覽器自動化的支持有限。
-> - 在高負載情況下可能需要更多資源。
+> - 僅支援特定操作系統。
+> - 目前存在一定數量的開放問題。
+> - 對於新手來說，可能需要時間學習各種指令。
 
 > [!warning] 注意事項
-> - 僅支援 macOS 和 Linux 系統（x64 和 arm64）。
+> - 僅支援 macOS 和 Linux 環境。
 > - 需要安裝 Claude Code 和 Bun v1.0+。
-> - 目前功能主要針對瀏覽器自動化，對於其他類型的自動化支持有限。
-> - 在多會話並行操作時，可能需要額外的資源來維持性能。
+> - 目前有 50 個開放的問題，可能影響使用體驗。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [runanywhereAI/RCLI](https://github.com/runanywhereAI/RCLI) | RCLI 提供了一個命令行界面來執行 AI 任務，但缺乏 gstack 的多任務並行處理能力和專業工作流支持。 |
-| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | autoresearch 專注於自動化研究過程，而 gstack 更加關注於開發流程中的各個環節，提供更全面的工具集。 |
-| [duoan/TorchCode](https://github.com/duoan/TorchCode) | TorchCode 專注於深度學習代碼生成，而 gstack 提供了更廣泛的開發自動化功能，適合多種開發場景。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步和備份，而 gstack 提供的是一整套工程管理技能。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 主要用於代理和通訊，而 gstack 則是針對工程流程的自動化和專業化。 |
 
 ## 替代方案決策
 
@@ -201,64 +205,64 @@ gstack 的核心技術機制是將 Claude Code 的功能模組化，使其能夠
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | parsync 專注於並行數據同步，而 gstack 更加關注於開發流程的自動化和多任務處理。 | 如果你的需求主要是數據同步而非開發流程自動化，parsync 會是更合適的選擇。 | medium，因為需要重新設計工作流。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 提供了一個安全的數據傳輸方案，而 gstack 更加專注於開發自動化。 | 如果你的專案需要強調數據安全性，Shadowbroker 會是更好的選擇。 | high，因為需要重新設計整個系統架構。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步和備份，而 gstack 提供的是一整套工程管理技能。 | 如果你的需求主要是資料備份和同步，則 AlpinDale/parsync 會更合適。 | low，因為兩者的使用場景和功能差異不大。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 主要用於代理和通訊，而 gstack 則是針對工程流程的自動化和專業化。 | 如果你的專案需要強大的代理功能，則 Flowseal/tg-ws-proxy 會是更好的選擇。 | medium，因為需要重新調整工作流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **gstack** | **parsync** | **Shadowbroker** |
+> | 維度 | **gstack** | **parsync** | **tg-ws-proxy** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | parsync 專注於並行數據同步，而 gstack 更加關注於開發流程的自動化和多任務處理。 | Shadowbroker 提供了一個安全的數據傳輸方案，而 gstack 更加專注於開發自動化。 |
-> | 遷移成本 | - | medium，因為需要重新設計工作流。 | high，因為需要重新設計整個系統架構。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是數據同步而非開發流程自動化，parsync | 如果你的專案需要強調數據安全性，Shadowbroker 會 |
+> | 技術路線 | 本專案 | 專注於資料同步和備份，而 gstack 提供的是一整套工程管理技能。 | 主要用於代理和通訊，而 gstack 則是針對工程流程的自動化和專業化。 |
+> | 遷移成本 | - | low，因為兩者的使用場景和功能差異不大。 | medium，因為需要重新調整工作流程。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是資料備份和同步，則 AlpinDale/p | 如果你的專案需要強大的代理功能，則 Flowseal/tg- |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人試用或小型專案，不建議用在生產環境的核心路徑上。
+> 適合小型團隊進行試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在使用 /setup-browser-cookies 時，可能會因為瀏覽器版本不兼容導致無法導入 cookies。
-  - 解法：確保使用最新版本的 Chromium 瀏覽器。
-- [MEDIUM] 多會話運行時，可能會出現資源競爭問題。
-  - 解法：適當調整並行會話數量以避免過載。
-- [MEDIUM] 在某些情況下，/qa 指令可能無法正確識別路由變更。
-  - 解法：手動檢查路由變更，並在必要時重新執行 /qa。
+- **[HIGH]** 使用 /qa 測試時可能會遇到敏感資訊洩漏問題
+  - 解法：確保不在測試中使用敏感資料
+- [MEDIUM] 安裝過程中可能會遇到依賴問題
+  - 解法：確保所有前置條件都已滿足
+- [MEDIUM] 某些指令在特定環境下可能無法正常運行
+  - 解法：檢查環境配置，必要時更新相關依賴
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | gstack 提供了全面的自動化工具，能夠提升開發效率。 |
-| 大型企業的開發團隊 | 適合 | 雖然 gstack 支持多會話，但在高負載情況下可能需要更多資源。 |
-| 個人開發者的 side project | 非常適合 | gstack 的安裝和使用都非常簡單，適合快速迭代。 |
-| 對安全性要求高的金融應用 | 不適合 | gstack 目前對於數據安全的支持有限，可能不符合要求。 |
+| 10 人以下的新創公司後端開發團隊 | 非常適合 | 提供了多種專業技能，能夠有效提升團隊的工作效率。 |
+| 大型企業的核心系統開發 | 不適合 | 目前處於 beta 階段，穩定性不足。 |
+| 需要快速迭代的產品開發團隊 | 適合 | 能夠快速部署和測試，適合敏捷開發環境。 |
+| 對安全性要求極高的專案 | 普通 | 存在敏感資訊洩漏的風險，需要謹慎使用。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~2 小時 |
-| 維護負擔 | low |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、2 小時整合，得到高效的開發自動化工具，值得採用。
+> 花 5 小時學習，3 小時整合，得到高效的工程管理工具，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：gstack 本身不需要高權限運行，但在使用過程中會存取瀏覽器的 cookies，需注意敏感資料的保護。依賴的 Playwright 也有良好的安全性評價，適合在 CI/CD 中使用。
+> 中等風險：需要訪問用戶的會話資料，可能會洩漏敏感資訊；依賴於 Playwright 的安全性，需定期檢查更新。使用時需謹慎處理敏感資料。
 
 ## 健康度儀表板
 
@@ -323,12 +327,12 @@ gstack 的核心技術機制是將 Claude Code 的功能模組化，使其能夠
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 1.3k |
-| Open Issues | 36 |
-| Issue 解決率 | 8% (3 closed) |
-| 最後推送 | 2026-03-14 |
+| Forks | 1.6k |
+| Open Issues | 50 |
+| Issue 解決率 | 7% (4 closed) |
+| 最後推送 | 2026-03-16 |
 | 建立日期 | 2026-03-11 |
-| Repo 大小 | 21.8 MB |
+| Repo 大小 | 22.0 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/garrytan/gstack) |
 
 > [!info]- 主要依賴
@@ -338,7 +342,7 @@ gstack 的核心技術機制是將 Claude Code 的功能模組化，使其能夠
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 79
+>     "TypeScript" : 77
 >     "Go Template" : 20
 >     "Shell" : 2
 > ```
@@ -346,18 +350,17 @@ gstack 的核心技術機制是將 Claude Code 的功能模組化，使其能夠
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@garrytan](https://github.com/garrytan) | 46 |
+> | [@garrytan](https://github.com/garrytan) | 48 |
 > | [@morluto](https://github.com/morluto) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有更新和回應。
-**連結**：[文件](https://github.com/garrytan/gstack#readme)
+**社群活躍度**：社群活躍度良好，定期更新。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-14 ~ 2026-03-14）
-> **活躍天數** 1 天 · **最新 commit** feat: screenshot element/region clipping (v0.3.7) (#56)
+> [!abstract] 最近 10 次 commit（2026-03-14 ~ 2026-03-15）
+> **活躍天數** 2 天 · **最新 commit** feat: smart update check with auto-upgrade, snooze backoff, config CLI (v0.3.9) (#62)
 
 ## 熱門議題
 
@@ -365,6 +368,8 @@ gstack 的核心技術機制是將 Claude Code 的功能模組化，使其能夠
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#18](https://github.com/garrytan/gstack/issues/18) | [Security] Sensitive values leaked into stdout and model tra | 3 | 0 |
+> | [#8](https://github.com/garrytan/gstack/issues/8) | browse skill: default to sonnet to save tokens | 2 | 0 |
+> | [#63](https://github.com/garrytan/gstack/issues/63) | Is this repo maintained? | 1 | 0 |
 
 ## README 摘錄
 
@@ -546,9 +551,9 @@ gstack 的核心技術機制是將 Claude Code 的功能模組化，使其能夠
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[CI/CD]] · [[瀏覽器自動化]]
+相關概念：[[自動化]] · [[CLI/TUI]] · [[工程管理]]
 
-相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[duoan--TorchCode|duoan/TorchCode]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[karpathy--autoresearch|karpathy/autoresearch]] · [[duoan--TorchCode|duoan/TorchCode]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/garrytan/gstack)
 
@@ -590,7 +595,7 @@ gstack 的核心技術機制是將 Claude Code 的功能模組化，使其能夠
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","CI/CD","瀏覽器自動化"];
+> const concepts = ["自動化","CLI/TUI","工程管理"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "garrytan--gstack" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
