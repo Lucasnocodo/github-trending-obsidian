@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Turn any MCP server or OpenAPI spec into a CLI — at runtime, with zero codegen"
 homepage: "https://pypi.org/project/mcp2cli/"
-stars: 530
-stars_per_day: 530
-forks: 28
+stars: 1127
+stars_per_day: 188
+forks: 67
 open_issues: 0
 created: 2026-03-09
-pushed_at: 2026-03-10
+pushed_at: 2026-03-15
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
@@ -24,13 +24,15 @@ status: to-review
 my_rating: 0
 last_reviewed: 2026-03-10
 use_case: "讓任何 MCP 伺服器或 OpenAPI 規範即時轉換為 CLI，無需代碼生成。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-next_review: "2026-03-13"
+appearances: 3
+next_review: "2026-03-23"
 engagement: "low"
 verdict: ""
 ring_history: "assess@2026-03-10"
+star_history: "2026-03-16:1127"
 tags:
   - github
   - "category/cli_工具"
@@ -408,5 +410,6 @@ _重點：寫下你的主觀判斷（為什麼好/不好），而不只是功能
 
 ## 出現記錄
 
+- [[2026-03-16|2026-03-16]] — 再次上榜，1.1k stars
 - [[2026-03-11|2026-03-11]] — 再次上榜，522 stars
 - [[2026-03-10|2026-03-10]] — 首次收錄，460 stars

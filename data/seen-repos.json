@@ -190,10 +190,10 @@
   },
   "knowsuchagency/mcp2cli": {
     "first_seen": "2026-03-10",
-    "last_seen": "2026-03-11",
-    "times_seen": 3,
+    "last_seen": "2026-03-16",
+    "times_seen": 4,
     "stars_first": 460,
-    "stars_last": 522
+    "stars_last": 1127
   },
   "trevin-creator/autoresearch-mlx": {
     "first_seen": "2026-03-10",
@@ -372,45 +372,45 @@
   },
   "garrytan/gstack": {
     "first_seen": "2026-03-13",
-    "last_seen": "2026-03-15",
-    "times_seen": 3,
+    "last_seen": "2026-03-16",
+    "times_seen": 4,
     "stars_first": 2724,
-    "stars_last": 10586
+    "stars_last": 14039
   },
   "gsd-build/gsd-2": {
     "first_seen": "2026-03-13",
-    "last_seen": "2026-03-15",
-    "times_seen": 3,
+    "last_seen": "2026-03-16",
+    "times_seen": 4,
     "stars_first": 779,
-    "stars_last": 1155
+    "stars_last": 1364
   },
   "larksuite/openclaw-lark": {
     "first_seen": "2026-03-13",
-    "last_seen": "2026-03-13",
-    "times_seen": 1,
+    "last_seen": "2026-03-16",
+    "times_seen": 2,
     "stars_first": 746,
-    "stars_last": 746
+    "stars_last": 1004
   },
   "davebcn87/pi-autoresearch": {
     "first_seen": "2026-03-14",
-    "last_seen": "2026-03-15",
-    "times_seen": 2,
+    "last_seen": "2026-03-16",
+    "times_seen": 3,
     "stars_first": 1167,
-    "stars_last": 1599
+    "stars_last": 1851
   },
   "TianyiDataScience/openclaw-control-center": {
     "first_seen": "2026-03-14",
-    "last_seen": "2026-03-15",
-    "times_seen": 2,
+    "last_seen": "2026-03-16",
+    "times_seen": 3,
     "stars_first": 994,
-    "stars_last": 1420
+    "stars_last": 1721
   },
   "aiming-lab/MetaClaw": {
     "first_seen": "2026-03-14",
-    "last_seen": "2026-03-15",
-    "times_seen": 2,
+    "last_seen": "2026-03-16",
+    "times_seen": 3,
     "stars_first": 980,
-    "stars_last": 1139
+    "stars_last": 1323
   },
   "NawfalMotii79/PLFM_RADAR": {
     "first_seen": "2026-03-15",
@@ -418,5 +418,26 @@
     "times_seen": 1,
     "stars_first": 1703,
     "stars_last": 1703
+  },
+  "pasky/chrome-cdp-skill": {
+    "first_seen": "2026-03-16",
+    "last_seen": "2026-03-16",
+    "times_seen": 1,
+    "stars_first": 1502,
+    "stars_last": 1502
+  },
+  "wanshuiyin/Auto-claude-code-research-in-sleep": {
+    "first_seen": "2026-03-16",
+    "last_seen": "2026-03-16",
+    "times_seen": 1,
+    "stars_first": 1296,
+    "stars_last": 1296
+  },
+  "novatic14/MANPADS-System-Launcher-and-Rocket": {
+    "first_seen": "2026-03-16",
+    "last_seen": "2026-03-16",
+    "times_seen": 1,
+    "stars_first": 969,
+    "stars_last": 969
   }
 }

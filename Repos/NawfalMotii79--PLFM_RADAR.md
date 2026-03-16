@@ -480,7 +480,7 @@ AERIS-10的核心技術在於其模組化設計和先進的信號處理能力。
 
 相關概念：[[開源硬體]] · [[信號處理]] · [[雷達技術]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[novatic14--MANPADS-System-Launcher-and-Rocket|novatic14/MANPADS-System-Launcher-and-Rocket]]
 
 [GitHub](https://github.com/NawfalMotii79/PLFM_RADAR)
 

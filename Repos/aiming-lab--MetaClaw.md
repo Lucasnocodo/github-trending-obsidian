@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "Just talk to your agent — it learns and EVOLVES."
 homepage: ""
-stars: 1141
-stars_per_day: 228
-forks: 146
-open_issues: 0
+stars: 1323
+stars_per_day: 221
+forks: 172
+open_issues: 2
 created: 2026-03-09
 pushed_at: 2026-03-14
 first_seen: 2026-03-14
@@ -30,8 +30,8 @@ use_case: "讓 AI 代理透過對話學習並不斷進化。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-03-18"
+appearances: 3
+next_review: "2026-03-19"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-14"
-star_history: "2026-03-14:980,2026-03-14:981,2026-03-15:1139,2026-03-15:1141"
+star_history: "2026-03-14:980,2026-03-14:981,2026-03-15:1139,2026-03-15:1141,2026-03-16:1323"
 tags:
   - github
   - "category/ai_ml"
@@ -936,5 +936,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-16|2026-03-16]] — 再次上榜，1.3k stars
 - [[2026-03-15|2026-03-15]] — 再次上榜，1.1k stars
 - [[2026-03-14|2026-03-14]] — 首次收錄，980 stars
