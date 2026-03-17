@@ -7,12 +7,12 @@ language: C++
 license: MIT
 description: "Talk to your Mac, query your docs, no cloud required. On-device voice AI + RAG"
 homepage: "https://github.com/RunanywhereAI/runanywhere-sdks"
-stars: 1196
-stars_per_day: 109
-forks: 60
+stars: 1207
+stars_per_day: 101
+forks: 62
 open_issues: 7
 created: 2026-03-04
-pushed_at: 2026-03-15
+pushed_at: 2026-03-16
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "讓你的 Mac 透過語音控制，無需雲端，實現本地 AI 助手。"
+use_case: "讓你的 Mac 透過語音進行操作，無需雲端，完全在本地運行。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-03-18"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 30
-repo_size_kb: 9889
+repo_size_kb: 9931
 readme_length: 9755
 bus_factor: 1
-last_release_days: 1
+last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-11:619,2026-03-11:622,2026-03-11:637,2026-03-13:1027,2026-03-14:1074,2026-03-15:1141,2026-03-16:1196"
+star_history: "2026-03-11:619,2026-03-11:622,2026-03-11:637,2026-03-13:1027,2026-03-14:1074,2026-03-15:1141,2026-03-16:1196,2026-03-17:1207"
 tags:
   - github
   - "category/ai_ml"
@@ -57,12 +57,12 @@ tags:
 aliases:
   - "RCLI"
   - "RunanywhereAI/RCLI"
-  - "讓你的 Mac 透過語音控制，無需雲端，實現本地 AI 助手。"
+  - "讓你的 Mac 透過語音進行操作，無需雲端，完全在本地運行。"
 ---
 
 # RCLI
 
-**1.2k** stars · **109** stars/天 · 建立 11 天前 · C++ · MIT
+**1.2k** stars · **101** stars/天 · 建立 12 天前 · C++ · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/RunanywhereAI--RCLI");
@@ -80,13 +80,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ai-assistant` `apple-silicon` `kitten-tts` `kokoro-tts` `lfm2` `llama-cpp` `llm` `local-ai` `metal` `on-device-ai` `parakeet` `qwen3` `rag` `speech-to-text` `text-to-speech` `tool-calling` `voice-assistant`
 
 > [!summary] 一句話摘要
-> 讓你的 Mac 透過語音控制，無需雲端，實現本地 AI 助手。
+> 讓你的 Mac 透過語音進行操作，無需雲端，完全在本地運行。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (109 stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (101 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Low
-> **適合** 需要在 macOS 上實現本地語音控制的開發者和專業用戶。
-> **一句話重點** RCLI 是一個專為 Apple Silicon 設計的本地語音 AI 工具，無需雲端，提供即時反應和高效能。
+> **適合** 需要在 Apple Silicon 上進行本地語音處理的開發者或高效能使用者。
+> **一句話重點** RCLI 的本地運行設計不僅提升了性能，還解決了隱私問題，對於需要高效能語音處理的使用者來說是一個理想選擇。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -109,26 +109,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **安裝** Easy (一行搞定)
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，2 小時整合，得到高效的本地語音助手，值得一試。
 
 > [!abstract] 核心創新
-> RCLI 提供了無需雲端的本地語音 AI 解決方案，專為 Apple Silicon 優化。
+> RCLI 是一個完全本地運行的語音 AI，無需雲端支持，提供即時的語音控制和文檔檢索功能。
 
 ## 專案簡介
 
-RCLI 是一款專為 macOS 設計的本地語音 AI 工具，能夠在 Apple Silicon 上運行，提供完整的語音識別（STT）、語音合成（TTS）、大型語言模型（LLM）和視覺語言模型（VLM）功能。用戶可以透過簡單的語音指令來控制應用程式或查詢文件，並且所有處理都在本地完成，無需依賴雲端服務。安裝後，只需執行 `rcli` 命令即可進入互動模式，或使用 `rcli ask` 指令發送單次命令。這樣的設計不僅提升了隱私性，還減少了延遲，實現了低於 200 毫秒的端到端響應時間。RCLI 利用 MetalRT 引擎進行 GPU 加速，特別針對 Apple Silicon 進行優化，這使得它在性能上優於其他基於 CPU 的解決方案。使用者可以透過 `rcli vlm` 指令進行圖片分析，或使用 `rcli camera` 進行實時視覺分析，這些功能在其他同類工具中較為罕見。
+RCLI 是一款專為 macOS 設計的本地語音 AI，支持語音識別（STT）、大型語言模型（LLM）、文本到語音（TTS）及視覺語言模型（VLM）。用戶可以透過語音指令控制 Mac，執行超過 40 種操作，如開啟應用程式、播放音樂等，且所有處理均在本地完成，無需依賴雲端。安裝過程簡單，只需執行 `brew install rcli`，並透過 `rcli setup` 下載模型（約 1GB）。RCLI 的一大賣點是其低延遲性能，整體延遲低於 200ms，並且 STT 性能比實時快 714 倍。技術上，RCLI 使用 MetalRT 作為 GPU 推理引擎，專為 Apple Silicon 優化，並支持多種模型，如 Qwen3 和 LFM2。
 
-RCLI 的架構選擇了 C++ 和 Objective-C，這使得它能夠充分利用 macOS 的原生特性，並且在性能上表現出色。與其他工具相比，如 AlpinDale/parsync 和 FreedomIntelligence/OpenClaw-Medical-Skills，RCLI 的本地處理能力和即時反應時間是其主要優勢。儘管目前仍在開發中，但其穩定性和性能已經足以支持日常使用，特別是對於需要高效能語音控制的專業用戶來說。RCLI 的社群活躍度尚可，但仍需關注開發者對於已知問題的回應速度和解決率。對於希望在 macOS 上實現語音控制的開發者來說，RCLI 是一個值得考慮的選擇。
+與其他語音助手相比，RCLI 的優勢在於完全本地運行，無需 API 鍵或網路連接，這對於隱私和安全性有顯著提升。與 Siri 或 Google Assistant 相比，RCLI 提供更高的自訂性和擴展性，特別是在本地文檔查詢和操作方面。使用者可以透過 `rcli rag ingest` 將本地文件索引，並使用語音進行查詢，延遲僅約 4ms。RCLI 目前處於 beta 階段，適合需要高效能本地語音處理的開發者或使用者。未來可能會進一步擴展功能和模型支持。
 
-**技術棧**：`C++` · `Objective-C` · `CMake`
+**技術棧**：`C++` · `CMake` · `Objective-C` · `Ruby`
 
 ## 重點功能
 
-- 本地語音識別 — 支援即時語音轉文字，延遲低於 200 毫秒。
-- 本地語音合成 — 提供高品質的語音輸出，無需雲端服務。
-- 視覺語言模型 — 使用 `rcli vlm` 指令進行圖片分析，支持即時視覺反饋。
-- 多種 macOS 操作控制 — 透過語音指令控制 38 種 macOS 操作，如開啟應用程式和調整音量。
-- GPU 加速 — 利用 MetalRT 引擎進行高效能計算，特別針對 Apple Silicon 優化。
+- 本地語音控制 — 支持 40 種 macOS 操作，通過語音指令執行。
+- 低延遲性能 — 整體延遲低於 200ms，STT 性能比實時快 714 倍。
+- 多模型支持 — 支持 Qwen3、LFM2 等多種模型，並可隨時熱切換。
+- 文檔智能檢索 — 使用 `rcli rag ingest` 將本地文件索引，並能快速查詢。
+- 即時視覺分析 — 支持相機和螢幕捕捉的視覺語言模型功能。
 
 ## 快速開始
 
@@ -140,7 +141,7 @@ brew tap RunanywhereAI/rcli https://github.com/RunanywhereAI/RCLI.git
 ```bash
 brew install rcli
 ```
-3. 設置 AI 模型
+3. 設置 RCLI 以下載模型
 ```bash
 rcli setup
 ```
@@ -148,63 +149,136 @@ rcli setup
 ## 程式碼範例
 
 ```cpp
-[
-  "# 前置條件：安裝 RCLI 後，啟動互動模式",
-  "rcli                             # 進入互動模式",
-  "# 預期輸出：進入語音控制界面"
-]
+{
+  "前置條件": "已安裝 RCLI",
+  "指令": "rcli ask \"open Safari\"",
+  "預期輸出": "開啟 Safari 瀏覽器"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 11 天內累積 1196 stars（109/天），forks 60（5.0%），顯示出穩定的增長潛力。這個專案由 RunAnywhere, Inc. 開發，專注於提供本地語音 AI 解決方案，解決了許多依賴雲端的語音助手的隱私和延遲問題。隨著 Apple Silicon 的普及，對於本地高效能 AI 解決方案的需求逐漸上升，這使得 RCLI 成為一個有吸引力的選擇。社群的活躍度和開發者的回應速度將是未來發展的關鍵因素。
+> 建立 12 天內累積 1207 stars（101/天），forks 62（5.1%），顯示出穩定的增長趨勢。這個專案由 RunAnywhere, Inc. 開發，專注於本地語音 AI 的需求，解決了許多語音助手依賴雲端的痛點。之前的方案如 Siri 和 Google Assistant 雖然功能強大，但在隱私和延遲方面存在問題。RCLI 的出現正好填補了這一空白，並且在社群中引發了熱烈討論。這個工具的成功也得益於 Apple Silicon 的技術進步，使得本地運行的 AI 模型變得可行。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 macOS 上實現本地語音控制的開發者和專業用戶。
+**目標受眾**：需要在 Apple Silicon 上進行本地語音處理的開發者或高效能使用者。
 
 > [!example] 使用場景
-> - 軟體開發者用它來快速查詢文件，因為可以透過語音指令即時獲取所需資訊，提升工作效率。
-> - 設計師用它來控制音樂播放和調整音量，因為可以用語音指令輕鬆管理工作環境，無需手動操作。
-> - 內容創作者用它來進行即時語音轉文字，因為其快速的 STT 功能能夠大幅減少編輯時間。
+> - 自由職業者用它來快速查詢文件，因為 RCLI 支持本地文檔檢索，延遲僅 4ms，遠快於傳統的雲端查詢。
+> - 開發者用它來控制開發環境中的應用程式，因為可以通過語音指令執行 40 種 macOS 操作，提升工作效率。
+> - 設計師用它來進行即時的視覺分析，因為 RCLI 支持即時相機分析，無需依賴網路，確保資料安全。
 
 ## 架構分析
 
-RCLI 的架構基於 C++ 和 Objective-C，專為 macOS 設計，利用 MetalRT 引擎實現 GPU 加速，這使得它能夠在 Apple Silicon 上高效運行。資料流方面，語音輸入經過 STT 模組處理後，轉換為文本，然後通過 LLM 進行理解和回應，最後再由 TTS 模組輸出語音。這樣的設計使得整個過程能夠在本地完成，減少了對網路的依賴。選擇 C++ 和 Objective-C 的原因在於它們能夠充分利用 macOS 的原生特性，並且在性能上表現出色。這樣的架構設計雖然在跨平台支持上有所限制，但在 Apple 環境中卻能提供最佳的性能和用戶體驗。
+RCLI 採用模組化架構，主要分為語音識別、語言模型和文本到語音三個部分，這樣的設計使得每個模組可以獨立優化。語音識別使用 Silero 和 Whisper，確保高效的語音處理；LLM 部分則利用 Qwen3 和 LFM2，支持即時的語言理解和生成。這種模組化的設計使得 RCLI 能夠在不同的硬體上靈活運行，並且能夠根據需求選擇合適的模型，這樣的靈活性是傳統雲端助手所無法比擬的。整體架構的輕量化設計也使得 RCLI 在 Apple Silicon 上能夠達到低延遲的性能，這對於即時語音交互至關重要。
 
 ## 技術深入分析
 
-RCLI 利用 C++ 和 Objective-C 開發，並且專注於 Apple Silicon 的性能優化，這使得它能夠充分利用 macOS 的原生特性。核心技術包括 STT、TTS 和 LLM，這些模組都在本地運行，並且通過 MetalRT 引擎進行 GPU 加速。根據 README，MetalRT 的 STT 性能是實時的 714 倍，這顯示出其在處理速度上的優勢。設計上，RCLI 選擇了本地處理而非雲端，這樣的選擇雖然提升了隱私性，但也限制了跨平台的使用。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在資源有限的情況下。整合方面，RCLI 目前主要針對 macOS 環境，與其他主流工具鏈的相容性尚需進一步測試。整體而言，RCLI 在 Apple 環境中的表現優異，但在其他平台的適用性仍有待觀察。
+RCLI 的核心技術機制在於其本地運行的語音 AI 系統，使用了 MetalRT 作為 GPU 推理引擎，專為 Apple Silicon 優化。這使得 RCLI 能夠在處理語音識別和生成時達到極低的延遲，並且支持多種語音模型。效能方面，RCLI 在 M3 Max 上能達到 550 tok/s 的 LLM 吞吐量，並且 STT 和 TTS 的實時因子遠低於 1，這意味著用戶可以幾乎無延遲地進行語音交互。設計上，RCLI 選擇了 C++ 和 Objective-C 作為主要開發語言，這使得其能夠充分利用 Apple 的硬體加速特性，並且在性能上優於許多基於 Python 的解決方案。技術風險方面，RCLI 目前依賴於 Apple 的 Metal 技術，未來若 Apple 改變其策略，可能會影響 RCLI 的運作。整合方面，RCLI 能夠與 macOS 的原生功能無縫結合，使用者可以通過語音控制系統操作，這在現有的語音助手中是相對少見的。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且詳細，提供了安裝和使用的具體步驟。安裝過程相對順暢，但需要注意硬體要求。文件中有提供基本的使用範例，對於新手來說，能夠在 30 分鐘內順利運行。
+> README 文件清晰且詳細，提供了安裝和使用的具體步驟。安裝過程相對順暢，但需注意 macOS 版本要求。文件中有良好的快速入門指南，幫助新手快速上手。文件目前僅提供英文版本，可能對非英語使用者造成困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 本地處理，無需雲端，提升隱私性。
-> - 低延遲的語音交互，適合即時應用。
-> - 支持多種語音操作，提升使用便利性。
+> - 完全本地運行，無需雲端支持，增強隱私安全。
+> - 低延遲性能，適合需要即時反應的應用場景。
+> - 支持多種模型，靈活性高，能夠根據需求調整。
+> - 提供豐富的語音控制功能，提升使用者體驗。
 
 > [!danger] 缺點
-> - 僅限於 macOS 環境，無法跨平台使用。
-> - 需要較高的硬體要求，僅支持 Apple Silicon。
-> - 目前功能仍在開發中，穩定性可能不如成熟工具。
+> - 僅支援 Apple Silicon，對於其他平台無法使用。
+> - 目前功能尚在開發中，可能存在不穩定性。
+> - 對於大型模型的支持仍在持續完善中，可能需要等待更新。
 
 > [!warning] 注意事項
 > - 僅支援 macOS 13+ 的 Apple Silicon。
-> - 需要大約 1GB 的存儲空間來下載 AI 模型。
-> - 目前僅支援特定的 macOS 操作，對於其他系統無法使用。
+> - MetalRT 引擎僅在 M3 或更高版本上運行，M1/M2 需回退到 llama.cpp。
+> - 目前 VLM 僅支持 llama.cpp 引擎，MetalRT VLM 支持尚未推出。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 主要用於文件同步，無法提供語音控制功能，適合需要文件管理的用戶。 |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的技能，無法提供廣泛的語音控制功能，適合特定行業的需求。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供文件同步功能，但不具備語音控制能力，適合需要文件管理的使用者。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的語音助手，但不支持本地運行，依賴雲端服務。 |
+| [THU-MAIC/OpenMAIC](https://github.com/THU-MAIC/OpenMAIC) | 提供多模態 AI 服務，但不專注於語音控制及本地運行。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 提供了一個基於雲端的語音助手，依賴於網路連接，與 RCLI 的本地運行形成鮮明對比。 | 如果你的團隊已經在使用雲端服務，並且不需要本地運行的優勢，Shadowbroker 可能更適合。 | medium，因為需要重新設計用戶的工作流程以適應雲端環境。 |
+| [HenryXiaoYang/wechat-access-unqclawed](https://github.com/HenryXiaoYang/wechat-access-unqclawed) | 這個工具專注於微信的自動化，但不支持語音控制，主要用於消息管理。 | 如果你的需求主要集中在消息管理而非語音交互，這個工具會更合適。 | low，因為功能範圍相對狹窄，容易上手。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **RCLI** | **Shadowbroker** | **wechat-access-unqclawed** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | Shadowbroker 提供了一個基於雲端的語音助手，依賴於網路連接，與 RCLI 的本地運行形成鮮明對比。 | 這個工具專注於微信的自動化，但不支持語音控制，主要用於消息管理。 |
+> | 遷移成本 | - | medium，因為需要重新設計用戶的工作流程以適應雲端環境。 | low，因為功能範圍相對狹窄，容易上手。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用雲端服務，並且不需要本地運行的優勢，S | 如果你的需求主要集中在消息管理而非語音交互，這個工具會更合適 |
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Beta |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | medium |
+
+> [!tip] 採用建議
+> 適合開發者進行測試和探索，但不建議在生產環境中使用。
+
+## 已知陷阱
+
+> [!bug] 踩坑才知道的問題
+
+- **[HIGH]** 在 M1/M2 上運行時，可能會自動回退到 llama.cpp，影響性能。
+  - 解法：使用 M3 或更高版本的設備以獲得最佳性能。
+- [MEDIUM] 安裝過程中可能出現 SHA256 不匹配的錯誤。
+  - 解法：執行 `brew untap` 並重新安裝。
+- [MEDIUM] 某些 macOS 操作可能無法正常執行。
+  - 解法：檢查語音指令是否正確，並確保相關應用已安裝。
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 小型創業公司的開發團隊 | 非常適合 | 可以快速查詢和控制開發環境，提升工作效率。 |
+| 需要高效能語音助手的個人使用者 | 適合 | 本地運行的特性提供了更好的隱私和安全性。 |
+| 大型企業的 IT 部門 | 普通 | 雖然功能強大，但可能需要更多的穩定性和支持。 |
+| 不熟悉技術的普通使用者 | 不適合 | 目前的使用方式需要一定的技術背景。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~2 小時 |
+| 維護負擔 | medium |
+| 綁定風險 | medium |
+
+> [!tip] 投入 vs 回報
+> 花 5 小時學習，2 小時整合，得到高效的本地語音助手，值得一試。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 低風險：RCLI 本身不需要高權限，且所有處理均在本地進行，減少了對敏感資料的存取風險。依賴的庫和模型需定期更新以避免安全漏洞。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+RCLI 最常與 macOS 原生應用搭配使用，特別是在開發和生產環境中。用戶可以通過語音控制應用程式，這在現有的 macOS 生態系統中相對少見。實際整合範例包括在使用 Xcode 開發時，通過 RCLI 控制模擬器或編譯過程。RCLI 支援與 GitHub Actions 等 CI 工具的整合，並且能夠在 VS Code 等 IDE 中使用。整合的摩擦點主要在於需要適當的配置和權限設置，以確保語音指令能夠正確執行。
 
 ## 健康度儀表板
 
@@ -269,10 +343,10 @@ RCLI 利用 C++ 和 Objective-C 開發，並且專注於 Apple Silicon 的性能
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 60 |
+| Forks | 62 |
 | Open Issues | 7 |
 | Issue 解決率 | 30% (3 closed) |
-| 最後推送 | 2026-03-15 |
+| 最後推送 | 2026-03-16 |
 | 建立日期 | 2026-03-04 |
 | 官方網站 | [Link](https://github.com/RunanywhereAI/runanywhere-sdks) |
 | Repo 大小 | 9.7 MB |
@@ -325,7 +399,7 @@ RCLI 利用 C++ 和 Objective-C 開發，並且專注於 Apple Silicon 的性能
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，但仍需關注開發者對於已知問題的回應速度。
+**社群活躍度**：社群活躍，最近有多次提交和問題回應。
 **連結**：[文件](https://github.com/RunanywhereAI/RCLI)
 
 ## 開發動態
@@ -573,7 +647,7 @@ RCLI 利用 C++ 和 Objective-C 開發，並且專注於 Apple Silicon 的性能
 
 相關概念：[[語音合成]] · [[自然語言處理]] · [[邊緣推論]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[alexa--alexa|alexa/alexa]] · [[google--assistant|google/assistant]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[binance--binance-skills-hub|binance/binance-skills-hub]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[THU-MAIC--OpenMAIC|THU-MAIC/OpenMAIC]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[alexa--alexa|alexa/alexa]] · [[google--assistant|google/assistant]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]]
 
 [GitHub](https://github.com/RunanywhereAI/RCLI) · [官方網站](https://github.com/RunanywhereAI/runanywhere-sdks)
 

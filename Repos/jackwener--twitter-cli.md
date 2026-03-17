@@ -7,12 +7,12 @@ language: Python
 license: Apache-2.0
 description: "A CLI for Twitter/X — feed, bookmarks, and user timeline in terminal"
 homepage: ""
-stars: 1908
-stars_per_day: 191
-forks: 162
-open_issues: 4
+stars: 1959
+stars_per_day: 178
+forks: 167
+open_issues: 8
 created: 2026-03-05
-pushed_at: 2026-03-15
+pushed_at: 2026-03-16
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "在終端機中無需 API 金鑰即可讀取 Twitter/X 的時間線、書籤和用戶資料。"
+use_case: "在終端機中讀取 Twitter/X 的時間線、書籤和用戶資料。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 1
 next_review: "2026-03-13"
 contributor_count: 4
 engagement: "low"
-issue_close_rate: 73
-repo_size_kb: 557
+issue_close_rate: 58
+repo_size_kb: 316
 readme_length: 10000
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:1703,2026-03-14:1754,2026-03-15:1855,2026-03-16:1908"
+star_history: "2026-03-10:1703,2026-03-14:1754,2026-03-15:1855,2026-03-16:1908,2026-03-17:1959"
 tags:
   - github
   - "category/cli_工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "twitter-cli"
   - "jackwener/twitter-cli"
-  - "在終端機中無需 API 金鑰即可讀取 Twitter/X 的時間線、書籤和用戶資料。"
+  - "在終端機中讀取 Twitter/X 的時間線、書籤和用戶資料。"
 ---
 
 # twitter-cli
 
-**1.9k** stars · **191** stars/天 · 建立 10 天前 · Python · Apache-2.0
+**2.0k** stars · **178** stars/天 · 建立 11 天前 · Python · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/jackwener--twitter-cli");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `easy-install`
 
 > [!summary] 一句話摘要
-> 在終端機中無需 API 金鑰即可讀取 Twitter/X 的時間線、書籤和用戶資料。
+> 在終端機中讀取 Twitter/X 的時間線、書籤和用戶資料。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (191 stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (178 stars/day)
 > **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Low
-> **適合** 需要在終端機中輕鬆訪問 Twitter 資訊的開發者和社群媒體專業人士。
-> **一句話重點** 這個專案讓使用者可以無需 API 金鑰，便捷地在終端機中與 Twitter 互動。
+> **適合** 需要在終端機中高效管理 Twitter 賬戶的開發者和數據分析師。
+> **一句話重點** 這個工具讓 Twitter 的操作變得更加靈活，特別適合需要在終端機中快速管理社交媒體的開發者。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,106 +101,101 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** medium
-> **結論** 花 3 小時學習，2 小時整合，得到便捷的 Twitter 互動工具，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，1 小時整合，得到高效的社交媒體管理工具，值得一試。
 
 > [!abstract] 核心創新
-> 提供無需 API 金鑰的 Twitter 互動方式。
+> 這個專案的創新點在於無需 API 金鑰即可直接在終端機中操作 Twitter/X。
 
 ## 專案簡介
 
-這個 CLI 工具讓你能在終端機中直接讀取 Twitter 的時間線、書籤和用戶資料，無需 API 金鑰。使用者可以透過簡單的指令來獲取 'for-you' 和 'following' 的推文，並能夠列出保存的推文或根據關鍵字搜尋推文。這裡的關鍵賣點在於它的 cookie 認證方式，這樣用戶可以避免繁瑣的 API 認證流程。使用者只需透過 `twitter` 指令來啟動 CLI，並可以使用 `--full-text` 參數來顯示完整的推文內容，而不是截斷的版本。技術上，這個工具依賴於 Python 的多個庫，如 `click` 和 `rich`，來提供豐富的命令行介面和格式化輸出。
+這個 CLI 工具讓你可以在終端機中直接讀取 Twitter/X 的時間線、書籤和用戶資料，而不需要使用 API 金鑰。用戶可以透過 `twitter feed` 指令來獲取個人化的時間線，並且支持多種輸出格式（如 YAML 和 JSON），方便與其他工具整合。這個工具的核心設計是利用瀏覽器的 cookie 進行身份驗證，這樣可以獲取更完整的用戶資料，並且模擬正常的瀏覽器請求來避免被檢測。使用者可以透過 `twitter search` 指令來查找特定的推文，並且可以使用 `--filter` 參數來啟用推文排名過濾，根據互動權重來篩選結果。這樣的設計使得用戶能夠快速找到最相關的內容，而不必手動篩選。這個工具的賣點在於其簡單易用和高效的資料處理能力，特別適合需要快速查找和管理推文的開發者。它的依賴相對輕量，主要使用 Python 的標準庫和一些流行的第三方庫，如 `rich` 和 `beautifulsoup4`，這使得它的安裝和使用都非常方便。
 
-相較於其他 Twitter CLI 工具，這個專案支援的功能更為全面，包括推文的詳細查看、用戶資料查詢及書籤管理等。它還提供 YAML 和 JSON 的結構化輸出，方便用於腳本或 AI agent 的整合。使用者在發佈推文時，可以附加圖片，並且支持刪除推文和管理喜歡的推文。這些功能的設計使得用戶能夠更靈活地與 Twitter 互動，尤其適合需要快速訪問 Twitter 資訊的開發者或重度使用者。這個專案目前處於 alpha 階段，開發者應考慮到可能的 API 變更和功能不穩定性。
-
-**技術棧**：`Python 3.10` · `click` · `rich`
+**技術棧**：`Python 3.10` · `click` · `rich` · `beautifulsoup4`
 
 ## 重點功能
 
-- 時間線讀取 — 獲取 'for-you' 和 'following' 的推文，使用 `twitter timeline` 指令。
-- 書籤管理 — 列出保存的推文，使用 `twitter bookmarks` 指令。
-- 推文詳情查看 — 使用 `show <tweet_id>` 指令查看特定推文及其回覆。
-- 結構化輸出 — 支持 YAML 和 JSON 格式，使用 `--yaml` 或 `--json` 參數。
-- 推文發佈 — 使用 `twitter post` 指令發佈新推文，支持圖片附加。
+- 時間線讀取 — 使用 `twitter feed` 指令獲取個人化的推文流，支持 `--full-text` 參數顯示完整推文。
+- 書籤管理 — 使用 `twitter bookmarks` 指令列出保存的推文，並支持 YAML 和 JSON 輸出。
+- 推文搜尋 — 使用 `twitter search` 指令查找推文，支持多種過濾條件（如時間、語言等）。
+- 用戶資料查詢 — 使用 `twitter user` 指令獲取用戶的推文、喜歡的內容和關注者列表。
+- 身份驗證 — 支持使用瀏覽器 cookie 進行身份驗證，並可通過環境變數設置代理。
 
 ## 快速開始
 
-1. 安裝開發依賴
+1. 安裝工具
 ```bash
-uv sync --extra dev
+uv tool install twitter-cli
 ```
-2. 啟動 CLI
+2. 獲取時間線
 ```bash
-twitter
+twitter feed
 ```
-3. 查看時間線
+3. 查詢書籤
 ```bash
-twitter timeline
+twitter bookmarks
 ```
 
 ## 程式碼範例
 
 ```python
-[
-  "# 前置條件：已安裝 twitter-cli",
-  "twitter timeline --full-text",
-  "# 預期輸出：顯示完整的推文內容"
-]
+{
+  "前置條件": "確保已安裝 twitter-cli 並完成身份驗證。",
+  "指令": "twitter feed --max 50 --full-text --json",
+  "預期輸出": "返回最多 50 條完整的推文，格式為 JSON。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 10 天內累積 1908 stars（191/天），forks 162（8.5%），這顯示出不錯的社群關注度。作者 jackwener 之前有開發過多個 CLI 工具，這次專案提供了無需 API 金鑰的 Twitter 互動方式，解決了許多開發者在使用 Twitter API 時的繁瑣認證問題。這個工具的推出也正值許多開發者尋求更簡便的社交媒體互動方式之際。高達 8.5% 的 forks/stars 比率顯示出許多人在實際修改和使用這個工具，而不僅僅是觀望。
+> 建立 11 天就累積 1959 stars（178/天），forks 167（8.5%），這顯示出這個專案的快速增長。作者 jackwener 之前有多個成功的 CLI 工具專案，這次針對 Twitter 的需求填補了市場上缺乏終端機友好的解決方案的空白。這個工具的出現正好迎合了對於無需 API 金鑰的簡單使用需求，並且在社群中引起了討論，特別是在開發者圈子中。高達 8.5% 的 forks/stars 比率顯示出許多人對此專案進行了實際的修改和使用，這是對其實用性的強烈肯定。
 
 ## 適合誰使用
 
-**目標受眾**：需要在終端機中輕鬆訪問 Twitter 資訊的開發者和社群媒體專業人士。
+**目標受眾**：需要在終端機中高效管理 Twitter 賬戶的開發者和數據分析師。
 
 > [!example] 使用場景
-> - 社群媒體經理用它來快速檢視 Twitter 時間線，因為可以無需 API 金鑰直接訪問，節省了設置時間。
-> - 開發者用它來自動化推文發佈，因為支持圖片附加和結構化輸出，便於整合到 CI/CD 流程中。
-> - 數據分析師用它來提取推文數據並進行分析，因為提供 YAML 和 JSON 輸出格式，方便進行後續處理。
+> - 後端工程師用它來快速獲取 Twitter 時間線，因為可以直接在終端機中查看推文，省去使用瀏覽器的麻煩。
+> - 數據分析師用它來提取特定推文的數據，因為可以將結果導出為 JSON 格式，方便進一步分析。
+> - 內容創作者用它來管理自己的推文和書籤，因為可以輕鬆地發佈新推文和管理喜歡的內容。
 
 ## 架構分析
 
-這個專案採用 Python 作為主要開發語言，結合多個庫來實現 CLI 功能。使用 `click` 提供命令行介面，並用 `rich` 來美化輸出。資料流方面，使用者透過命令行輸入指令，系統則根據這些指令調用相應的 API 來獲取資料。
-
-這樣的設計使得用戶能夠快速獲取 Twitter 資訊，而無需繁瑣的認證過程。選擇 Python 作為開發語言的好處在於其生態系統豐富，能夠快速集成多個庫，但也可能帶來較高的記憶體使用量。整體架構的擴展性良好，未來可以透過增加更多功能來擴展工具的能力。
+這個專案採用 Python 作為開發語言，並使用了多個輕量級的第三方庫來實現功能。其架構設計為 CLI 工具，主要通過命令行參數來控制行為，這樣的設計使得使用者可以靈活地選擇輸入和輸出格式。資料流方面，使用者的請求會通過 cookie 驗證進行身份驗證，然後根據不同的指令進行相應的 API 請求，最終將結果以結構化的格式輸出。這樣的設計使得工具能夠快速響應用戶請求，並且能夠輕鬆整合到其他自動化流程中。選擇 Python 作為語言的好處在於其生態系統豐富，依賴管理相對簡單，但也帶來了對於 Python 環境的依賴性問題，可能會影響在某些環境中的部署。
 
 ## 技術深入分析
 
-這個 CLI 工具的核心技術機制是基於 Python 的多個庫，特別是 `click` 和 `rich`，提供了一個直觀的命令行介面和美觀的輸出格式。它能夠處理 Twitter 的 API 請求，並利用 cookie 認證來簡化用戶的登錄過程。效能上，這個工具能夠快速獲取推文資料，並且支持多種輸出格式，這對於需要進行數據分析的使用者來說非常有用。設計上，選擇 Python 作為開發語言使得整個專案的依賴樹相對簡單，但也可能在高負載下出現性能瓶頸。對於未來的擴展性，這個工具可以輕鬆地增加新的功能，如支持更多的 Twitter API 端點。整合方面，這個工具能夠與現有的 Python 生態系統無縫對接，並且可以輕鬆地與 CI/CD 流程結合。使用者在使用過程中可能會遇到的問題包括依賴庫的版本衝突，這需要定期維護和更新。
+這個 CLI 工具的核心技術機制是基於 Python 的命令行介面設計，利用 `click` 庫來處理命令行參數和選項。資料的提取主要依賴於 `beautifulsoup4` 進行 HTML 解析，並且使用 `curl_cffi` 來處理網絡請求，這樣的設計使得工具能夠在不同的環境中靈活運行。效能上，這個工具的設計使得它能夠快速響應用戶請求，並且在處理大量資料時表現良好。選擇 Python 作為開發語言的好處在於其生態系統的豐富性，但也帶來了對於 Python 環境的依賴性問題，這可能會影響在某些環境中的部署。技術風險方面，這個工具依賴於瀏覽器 cookie 進行身份驗證，這在某些情況下可能會導致安全性問題，特別是在使用公共網絡時。整合方面，這個工具能夠輕鬆與其他 Python 工具鏈整合，但對於非 Python 環境的整合可能需要額外的適配工作。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了基本的安裝和使用說明，但缺乏詳細的範例。安裝過程相對順暢，但對於新手來說，可能需要一些時間來熟悉 CLI 的操作。文件目前僅提供英文版本，缺少多語言支持。
+> README 文件提供了清晰的安裝和使用指南，但缺乏詳細的範例。安裝過程相對順暢，使用 `uv tool` 或 `pipx` 都能輕鬆安裝。整體來說，對於有一定 CLI 經驗的用戶來說，花 30 分鐘應該能夠順利上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 無需 API 金鑰，降低使用門檻。
-> - 支持多種輸出格式，方便整合。
-> - 功能全面，涵蓋讀取和發佈推文的需求。
+> - 無需 API 金鑰，使用方便。
+> - 支持多種輸出格式，便於整合。
+> - 功能全面，涵蓋了推文的讀取和管理。
 
 > [!danger] 缺點
-> - 目前仍在 alpha 階段，功能可能不穩定。
-> - 不支援 Windows 環境，限制了使用者範圍。
-> - 依賴於多個外部庫，可能會增加維護成本。
+> - 在 Windows 環境下可能存在一些 bug。
+> - 對於不熟悉命令行的用戶來說，學習曲線較陡。
+> - 依賴於瀏覽器 cookie，對於某些用戶不太友好。
 
 > [!warning] 注意事項
-> - 目前僅支援 Python 3.10 以上版本。
-> - 不支援 Windows 環境，僅適用於類 Unix 系統。
-> - 功能仍在開發中，可能會有不穩定的 API 行為。
+> - 僅支援 Python 3.10 以上版本。
+> - 在 Windows 上可能會遇到 cookie 提取失敗的問題。
+> - 需要安裝瀏覽器以提取 cookie，對於不使用瀏覽器的用戶不太友好。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [jackwener/xiaohongshu-cli](https://github.com/jackwener/xiaohongshu-cli) | 這個工具專注於小紅書的 CLI 操作，功能上與 Twitter CLI 相似，但針對不同平台的 API 設計。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這是一個用於檔案同步的 CLI 工具，與 Twitter CLI 的社交媒體功能無關，但都是 CLI 工具。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 這個工具專注於數據抓取，雖然功能不同，但都是針對特定平台的 CLI 解決方案。 |
+| [jackwener/bilibili-cli](https://github.com/jackwener/bilibili-cli) | 專注於 Bilibili 的 CLI 工具，功能類似但針對不同平台。 |
+| [jackwener/xiaohongshu-cli](https://github.com/jackwener/xiaohongshu-cli) | 針對小紅書的 CLI 工具，提供社交媒體管理功能，但不支持 Twitter 的特定功能。 |
 
 ## 替代方案決策
 
@@ -208,16 +203,16 @@ twitter timeline
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [jackwener/xiaohongshu-cli](https://github.com/jackwener/xiaohongshu-cli) | 專注於小紅書的 CLI 操作，提供類似的社交媒體互動功能，但針對不同平台的 API 設計。 | 如果你的團隊主要在使用小紅書，這個工具會更合適。 | medium，因為需要重新學習小紅書的 API 和功能。 |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 這是一個 Telegram 的代理工具，專注於即時通訊，而非社交媒體互動。 | 如果你的需求主要是即時通訊而非社交媒體，這個工具會更適合。 | low，因為功能和操作方式有很大的不同。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於檔案同步的 CLI 工具，與本專案不同的是它並不針對社交媒體。 | 如果你的需求是檔案同步而非社交媒體管理，這個工具會更合適。 | low，因為兩者的使用場景和功能差異較大。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供社交媒體數據抓取的工具，但功能上不如本專案全面。 | 如果你需要特定社交媒體的數據抓取，這個工具可能更合適。 | medium，因為需要重新適應不同的命令和功能。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **twitter-cli** | **xiaohongshu-cli** | **tg-ws-proxy** |
+> | 維度 | **twitter-cli** | **parsync** | **Shadowbroker** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於小紅書的 CLI 操作，提供類似的社交媒體互動功能，但針對不同平台的 API 設計。 | 這是一個 Telegram 的代理工具，專注於即時通訊，而非社交媒體互動。 |
-> | 遷移成本 | - | medium，因為需要重新學習小紅書的 API 和功能。 | low，因為功能和操作方式有很大的不同。 |
-> | 適用場景 | 主要場景 | 如果你的團隊主要在使用小紅書，這個工具會更合適。 | 如果你的需求主要是即時通訊而非社交媒體，這個工具會更適合。 |
+> | 技術路線 | 本專案 | 專注於檔案同步的 CLI 工具，與本專案不同的是它並不針對社交媒體。 | 提供社交媒體數據抓取的工具，但功能上不如本專案全面。 |
+> | 遷移成本 | - | low，因為兩者的使用場景和功能差異較大。 | medium，因為需要重新適應不同的命令和功能。 |
+> | 適用場景 | 主要場景 | 如果你的需求是檔案同步而非社交媒體管理，這個工具會更合適。 | 如果你需要特定社交媒體的數據抓取，這個工具可能更合適。 |
 
 ## 成熟度評估
 
@@ -228,44 +223,48 @@ twitter timeline
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和開發，但不建議用於生產環境。
+> 適合個人試用和小型專案，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 使用過程中可能會遇到 API 限制，導致請求失敗
-  - 解法：調整請求頻率，使用 `rateLimit` 設定
-- [MEDIUM] 在某些情況下，cookie 認證可能無法正常工作
-  - 解法：確保使用最新的瀏覽器 cookie
-- [low] CLI 輸出格式可能不符合預期
-  - 解法：使用 `--yaml` 或 `--json` 參數進行調整
+- **[HIGH]** Windows 環境下 cookie 提取失敗，導致身份驗證失敗。
+  - 解法：使用 Linux 或 WSL 環境進行操作。
+- [MEDIUM] 在高頻率請求下可能會被 Twitter 暫時封鎖。
+  - 解法：適當降低請求頻率，使用代理。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的社群媒體管理 | 非常適合 | 功能全面，能快速訪問和管理推文。 |
-| 大型企業的社群媒體分析 | 普通 | 雖然功能強大，但可能需要更多的穩定性和擴展性。 |
-| 個人開發者的專案 | 非常適合 | 無需 API 金鑰，降低了使用門檻。 |
-| 需要 Windows 支援的使用者 | 不適合 | 目前不支援 Windows 環境。 |
+| 小型團隊的社交媒體管理 | 非常適合 | 功能全面且易於使用，適合快速上手。 |
+| 大型企業的社交媒體數據分析 | 普通 | 雖然功能強大，但在高頻率請求下可能會遇到問題。 |
+| 個人開發者的社交媒體自動化 | 非常適合 | CLI 工具設計適合自動化腳本的整合。 |
+| 需要高安全性的社交媒體操作 | 不適合 | 依賴於瀏覽器 cookie，存在安全風險。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~3 小時 |
-| 整合時間 | ~2 小時 |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~1 小時 |
 | 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，2 小時整合，得到便捷的 Twitter 互動工具，值得一試。
+> 花 2 小時學習，1 小時整合，得到高效的社交媒體管理工具，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：此工具不需要高權限，僅需訪問用戶的 Twitter 資訊。依賴的庫需定期更新以避免潛在的安全風險。
+> 這個工具需要訪問瀏覽器的 cookie，可能會涉及敏感資料的存取。使用時建議在安全的環境中操作，並考慮使用代理來降低風險。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個工具最常與其他 Python 工具搭配使用，特別是在自動化腳本中。它可以輕鬆整合到 CI/CD 流程中，使用者可以將其作為一個步驟來自動化社交媒體的操作。與主流的 CI 工具（如 GitHub Actions）相容良好，但在與非 Python 工具鏈的整合上可能需要額外的適配工作。常見的整合問題包括 cookie 提取失敗，這可能需要用戶手動配置。
 
 ## 健康度儀表板
 
@@ -330,18 +329,18 @@ twitter timeline
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 162 |
-| Open Issues | 4 |
-| Issue 解決率 | 73% (11 closed) |
-| 最後推送 | 2026-03-15 |
+| Forks | 167 |
+| Open Issues | 8 |
+| Issue 解決率 | 58% (11 closed) |
+| 最後推送 | 2026-03-16 |
 | 建立日期 | 2026-03-05 |
-| Repo 大小 | 557 KB |
+| Repo 大小 | 316 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/jackwener/twitter-cli) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@jackwener](https://github.com/jackwener) | 112 |
+> | [@jackwener](https://github.com/jackwener) | 115 |
 > | [@Pleasurecruise](https://github.com/Pleasurecruise) | 2 |
 > | [@y0u-0](https://github.com/y0u-0) | 1 |
 > | [@JackDKobe](https://github.com/JackDKobe) | 1 |
@@ -353,17 +352,16 @@ twitter timeline
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-14 ~ 2026-03-15）
-> **活躍天數** 2 天 · **最新 commit** chore: code review cleanup + bump v0.8.4
+> [!abstract] 最近 10 次 commit（2026-03-14 ~ 2026-03-16）
+> **活躍天數** 3 天 · **最新 commit** refactor: unify exception handling, add ISO 8601 time, dedup commands, expand tests
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#21](https://github.com/jackwener/twitter-cli/issues/21) | Feature request: support official Twitter API v2 as an auth  `enhancement` `low priority` | 0 | 1 |
-> | [#13](https://github.com/jackwener/twitter-cli/issues/13) | Feature request: support video media upload when posting `enhancement` | 0 | 3 |
-> | [#9](https://github.com/jackwener/twitter-cli/issues/9) | [feature] Extend your CLI tool as a Python library `enhancement` | 0 | 1 |
+> | [#28](https://github.com/jackwener/twitter-cli/issues/28) | [Bug] Windows: browser cookie extraction fails (Unable to ge | 1 | 1 |
+> | [#29](https://github.com/jackwener/twitter-cli/issues/29) | [Bug] Windows: rich table output not capturable by pipe/subp | 0 | 3 |
 
 ## README 摘錄
 
@@ -643,9 +641,9 @@ twitter timeline
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[API 設計]] · [[自動化]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[API 設計]]
 
-相關專案：[[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]]
+相關專案：[[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]]
 
 [GitHub](https://github.com/jackwener/twitter-cli)
 
@@ -687,7 +685,7 @@ twitter timeline
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","API 設計","自動化"];
+> const concepts = ["CLI/TUI","自動化","API 設計"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "jackwener--twitter-cli" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
