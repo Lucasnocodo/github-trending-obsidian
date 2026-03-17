@@ -7,12 +7,12 @@ language: JavaScript
 license: N/A
 description: "Give your AI agent access to your live Chrome session — works out of the box, connects to tabs you already have open"
 homepage: ""
-stars: 1502
-stars_per_day: 501
-forks: 85
-open_issues: 2
+stars: 1874
+stars_per_day: 469
+forks: 101
+open_issues: 4
 created: 2026-03-13
-pushed_at: 2026-03-15
+pushed_at: 2026-03-16
 first_seen: 2026-03-16
 week: "2026-W12"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "讓你的 AI 代理能夠直接訪問現有的 Chrome 瀏覽器會話
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-19"
+appearances: 2
+next_review: "2026-03-20"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 71
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-16"
-star_history: "2026-03-16:1502"
+star_history: "2026-03-16:1502,2026-03-17:1874"
 tags:
   - github
   - "category/開發工具"
@@ -747,4 +747,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-17|2026-03-17]] — 再次上榜，1.9k stars
 - [[2026-03-16|2026-03-16]] — 首次收錄，1.5k stars

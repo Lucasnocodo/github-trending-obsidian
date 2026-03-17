@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "ARIS ⚔️ (Auto-Research-In-Sleep) — Claude Code skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation via Codex MCP"
 homepage: ""
-stars: 1296
-stars_per_day: 259
-forks: 120
-open_issues: 6
+stars: 1680
+stars_per_day: 280
+forks: 157
+open_issues: 4
 created: 2026-03-10
 pushed_at: 2026-03-16
 first_seen: 2026-03-16
@@ -30,8 +30,8 @@ use_case: "讓 Claude Code 在你睡覺時自動進行研究，早上醒來就�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-19"
+appearances: 2
+next_review: "2026-03-20"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 45
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-16"
-star_history: "2026-03-16:1296"
+star_history: "2026-03-16:1296,2026-03-17:1680"
 tags:
   - github
   - "category/ai_ml"
@@ -867,4 +867,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-17|2026-03-17]] — 再次上榜，1.7k stars
 - [[2026-03-16|2026-03-16]] — 首次收錄，1.3k stars

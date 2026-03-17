@@ -1,64 +1,69 @@
 ---
-repo: novatic14/MANPADS-System-Launcher-and-Rocket
-url: https://github.com/novatic14/MANPADS-System-Launcher-and-Rocket
-owner: novatic14
-owner_type: User
-language: N/A
+repo: aiming-lab/AutoResearchClaw
+url: https://github.com/aiming-lab/AutoResearchClaw
+owner: aiming-lab
+owner_type: Organization
+language: Python
 license: N/A
-description: ""
+description: "Fully autonomous research from idea to paper. Chat an Idea. Get a Paper. Fully Autonomous. 🦞"
 homepage: ""
-stars: 1392
-stars_per_day: 278
-forks: 358
-open_issues: 10
-created: 2026-03-11
-pushed_at: 2026-03-15
-first_seen: 2026-03-16
+stars: 1449
+stars_per_day: 1449
+forks: 192
+open_issues: 6
+created: 2026-03-15
+pushed_at: 2026-03-16
+first_seen: 2026-03-17
 week: "2026-W12"
 month: "2026-03"
-category: "其他"
-subcategory: "開源硬體"
-release_tag: ""
-install_complexity: "medium"
+category: "Other"
+subcategory: ""
+release_tag: "v0.2.0"
+install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-03-16
-use_case: "提供一個低成本的火箭發射器和導引火箭系統的原型設計。"
+last_reviewed: 2026-03-17
+use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-03-20"
-contributor_count: 1
+contributor_count: 5
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 23540
-readme_length: 1679
+issue_close_rate: 33
+repo_size_kb: 7252
+readme_length: 10000
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-03-16"
-star_history: "2026-03-16:969,2026-03-17:1392"
+ring_history: "assess@2026-03-17"
+star_history: "2026-03-17:1449"
 tags:
   - github
-  - "category/其他"
-  - "lang/other"
+  - "category/other"
+  - "lang/python"
+  - org
+  - "topic/autonomous_research"
+  - "topic/citation_verification"
+  - "topic/llm_agents"
+  - "topic/multi_agent_debate"
+  - "topic/openclaw"
 aliases:
-  - "MANPADS-System-Launcher-and-Rocket"
-  - "novatic14/MANPADS-System-Launcher-and-Rocket"
-  - "提供一個低成本的火箭發射器和導引火箭系統的原型設計。"
+  - "AutoResearchClaw"
+  - "aiming-lab/AutoResearchClaw"
 ---
 
-# MANPADS-System-Launcher-and-Rocket
+# AutoResearchClaw
 
-**969** stars · **242** stars/天 · 建立 4 天前 · N/A · 未標註授權
+**1.4k** stars · **1.4k** stars/天 · 建立 1 天前 · Python · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/novatic14--MANPADS-System-Launcher-and-Rocket");
+const me = dv.page("Repos/aiming-lab--AutoResearchClaw");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -68,138 +73,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案`
+> [!warning] AI 摘要產生失敗
+> 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
+
+`ORG` `v0.2.0`
+
+`autonomous-research` `citation-verification` `llm-agents` `multi-agent-debate` `openclaw` `paper-generation` `scientific-discovery`
 
 > [!summary] 一句話摘要
-> 提供一個低成本的火箭發射器和導引火箭系統的原型設計。
-
-> [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (242 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 對火箭技術和開源硬體有興趣的學生和業餘愛好者。
-> **一句話重點** 這個專案展示了如何利用開源硬體和消費電子產品來實現火箭發射系統，降低了進入門檻。
-
-> [!abstract]- 同類競品快速對比
-> ```dataviewjs
-> const me = dv.page("Repos/novatic14--MANPADS-System-Launcher-and-Rocket");
-> if (me) {
->   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "開源硬體" && p.file.name !== "novatic14--MANPADS-System-Launcher-and-Rocket" && p.status !== "archived")
->     .sort(p => p.stars || 0, "desc").limit(5);
->   if (rivals.length > 0) {
->     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
->       p.file.link,
->       (p.stars || 0).toLocaleString(),
->       p.stars_per_day || 0,
->       p.install_complexity || "?",
->       p.license || "?",
->       p.ring || "assess"
->     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 開源硬體 類工具_"); }
-> }
-> ```
-
-> [!question] TL;DR — 值得投入嗎？
-> **安裝** Medium (需設定)
-
-> [!abstract] 核心創新
-> 這個專案提供了一個低成本的火箭發射系統原型，使用消費電子產品和3D列印技術。
+> Fully autonomous research from idea to paper. Chat an Idea. Get a Paper. Fully Autonomous. 🦞
 
 ## 專案簡介
 
-這個專案是一個低成本火箭發射器和導引火箭系統的原型，旨在利用消費電子產品和3D列印元件來實現。使用者可以透過ESP32飛行計算機和MPU6050慣性測量單元來控制火箭的折疊翼和導向穩定性。發射器整合了GPS、指南針和氣壓模組等感測器，以確定方向並提供遙測數據。這個系統的設計過程使用Fusion 360進行建模，並透過OpenRocket進行模擬，最終經過多次機械設計、電子整合和發射測試來完成。專案的總硬體成本約為96美元，這使得它在經濟上相對可行。核心內容包括機械CAD檔案、火箭飛行控制器和發射系統的韌體源碼，還有用於氣動穩定性分析的OpenRocket模擬檔案。這個專案的「一句話賣點」是：用低成本的消費電子產品打造一個可操作的火箭發射系統，適合教育和實驗用途。
-
-**技術棧**：`ESP32` · `Fusion 360` · `OpenRocket`
-
-## 重點功能
-
-- 低成本設計 — 總硬體成本約96美元，適合教育和實驗用途。
-- 使用ESP32飛行計算機 — 控制火箭的折疊翼和穩定性，提供高效的控制系統。
-- 整合多種感測器 — 包括GPS、指南針和氣壓模組，以獲得準確的遙測數據。
-- 提供完整的CAD檔案 — 方便使用者進行機械設計和組裝。
-- 開源韌體源碼 — 允許使用者根據需求進行修改和擴展。
-
-## 快速開始
-
-1. 下載專案檔案
-```bash
-git clone https://github.com/novatic14/MANPADS-System-Launcher-and-Rocket.git
-```
-2. 安裝所需的開發工具
-```bash
-pip install -r requirements.txt
-```
-3. 編譯韌體
-```bash
-make firmware
-```
-
-## 程式碼範例
-
-```bash
-# README 未提供程式碼範例
-# 基於文件推測
-# 使用 ESP32 控制火箭的基本程式碼範例
-#include <ESP32.h>
-void setup() {
-  // 初始化控制系統
-}
-void loop() {
-  // 控制火箭飛行
-}
-```
-
-## 為什麼值得關注
-
-> [!tip] 爆紅原因
-> 建立4天內累積969 stars（242/天），forks 225（23.2%），顯示出強烈的興趣和參與度。這位作者novatic14在開源硬體領域有一定的經驗，這個專案解決了低成本火箭發射系統的需求，之前的方案往往成本高且不易取得。隨著開源硬體的興起，這個專案提供了一個實用的解決方案，吸引了許多對火箭技術感興趣的開發者和愛好者。forks/stars的比率高達23.2%，顯示出許多使用者正在積極修改和使用這個專案。
-
-## 適合誰使用
-
-**目標受眾**：對火箭技術和開源硬體有興趣的學生和業餘愛好者。
-
-> [!example] 使用場景
-> - 學生用它來學習火箭發射原理和控制系統，因為這個專案提供了完整的設計和實作指南，降低了學習門檻。
-> - 業餘火箭愛好者用它來進行小型火箭發射實驗，因為其低成本和開源特性使得實驗變得可行。
-> - 教育機構用它來設計課程，教授機械設計和電子整合，因為它包含了詳細的文檔和開發媒體，便於教學。
-
-## 架構分析
-
-這個專案採用模組化設計，將火箭的控制系統和發射器分開。使用ESP32作為核心控制單元，負責處理感測器數據和控制信號。資料流從感測器到ESP32，再到發射器，確保即時控制和反饋。
-
-這樣的設計使得系統易於擴展和維護，但也要求使用者具備一定的技術背景。選擇ESP32而非其他微控制器，因為其具備Wi-Fi和藍牙功能，便於遠端控制和數據傳輸。整體架構的擴展性良好，但在高負載情況下可能會面臨性能瓶頸。
-
-## 技術深入分析
-
-這個專案的核心技術機制在於使用ESP32作為飛行控制器，並結合MPU6050進行姿態控制。這樣的設計使得火箭能夠在飛行過程中進行實時調整，確保穩定性。效能方面，這個系統能夠處理小型火箭的飛行控制，但在大規模發射時可能會遇到計算資源不足的問題。選擇ESP32而非其他微控制器的原因在於其強大的無線通訊能力，這對於遙測和控制至關重要。整體依賴樹相對簡單，主要依賴ESP32的開發環境和相關庫。設計上，這個專案的風險在於對於高負載的控制需求，可能會導致性能瓶頸，特別是在多個火箭同時發射的情況下。整合到現有的開發環境中相對容易，尤其是對於熟悉ESP32的開發者來說。
-
-## 新手體驗
-
-> [!info] 上手難度評估
-> README文件提供了基本的專案概述，但缺乏詳細的安裝和使用範例。安裝過程相對順暢，但對於新手來說可能會有一些技術門檻。文件沒有提供多語言支持，僅有英文版本。整體而言，花30分鐘能夠完成基本的設置，但深入使用可能需要更多時間來熟悉系統。
-
-## 優缺點分析
-
-> [!success] 優點
-> - 低成本，適合教育和實驗用途。
-> - 開源設計，便於修改和擴展。
-> - 整合多種感測器，提供準確的遙測數據。
-
-> [!danger] 缺點
-> - 需要使用者具備一定的電子和機械設計知識。
-> - 不支援大型火箭設計，僅適合小型原型。
-> - 發射測試需要遵循當地法律法規，可能會受到限制。
-
-> [!warning] 注意事項
-> - 不支援大型火箭設計，僅適合小型火箭原型。
-> - 需要使用者具備基本的電子和機械設計知識。
-> - 發射測試需要遵循當地法律法規，可能會受到限制。
+Fully autonomous research from idea to paper. Chat an Idea. Get a Paper. Fully Autonomous. 🦞
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/novatic14--MANPADS-System-Launcher-and-Rocket");
+> const me = dv.page("Repos/aiming-lab--AutoResearchClaw");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -234,7 +126,7 @@ void loop() {
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/novatic14--MANPADS-System-Launcher-and-Rocket");
+> const me = dv.page("Repos/aiming-lab--AutoResearchClaw");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -258,111 +150,288 @@ void loop() {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 225 |
-| Open Issues | 4 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-03-15 |
-| 建立日期 | 2026-03-11 |
-| Repo 大小 | 23.0 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/novatic14/MANPADS-System-Launcher-and-Rocket) |
+| Forks | 192 |
+| Open Issues | 6 |
+| Issue 解決率 | 33% (3 closed) |
+| 最後推送 | 2026-03-16 |
+| 建立日期 | 2026-03-15 |
+| Repo 大小 | 7.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/aiming-lab/AutoResearchClaw) |
+| Topics | `autonomous-research` `citation-verification` `llm-agents` `multi-agent-debate` `openclaw` `paper-generation` `scientific-discovery` |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 93
+>     "HTML" : 3
+>     "TeX" : 1
+>     "BibTeX Style" : 1
+>     "CSS" : 1
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@novatic14](https://github.com/novatic14) | 6 |
+> | [@Jiaaqiliu](https://github.com/Jiaaqiliu) | 13 |
+> | [@JasonOA888](https://github.com/JasonOA888) | 2 |
+> | [@lupuleticatalin](https://github.com/lupuleticatalin) | 1 |
+> | [@dl-m9](https://github.com/dl-m9) | 1 |
+> | [@huaxiuyao](https://github.com/huaxiuyao) | 1 |
 
-## 社群與生態
+**最新版本**：v0.2.0 — v0.2.0 — Multi-Agent Pipeline, Docker Sandbox & Quality Hardening (2026-03-16)
 
-**社群活躍度**：社群活躍度中等，有4個開放的Issues
+> [!info]- Release Notes
+> ## Highlights
+> 
+> This release introduces **three multi-agent subsystems**, a **hardened Docker sandbox**, and **4 rounds of paper quality auditing** — significantly improving the end-to-end quality of generated research papers.
+> 
+> ## New Multi-Agent Subsystems
+> 
+> ### CodeAgent (4-phase architecture)
+> - LLM generates multi-file experiment code (main.py + setup.py + requirements.txt)
+> - Static analysis & deep validation (AST-based class/method checks)
+> - LLM-guided code review with structured JSON feedback
+> - Iterative repair loop (up to 3 rounds) with automatic UnboundLocalError fix
+> 
+> ### BenchmarkAgent (4 sub-agents: Surveyor → Selector → Acquirer → Validator)
+> - Domain-aware dataset and baseline selection from 13-domain knowledge base
+> - Automatic benchmark acquisition with Docker compatibility validation
+> - Integrated at Stage 9 (experiment_design), output injected into Stage 10
+> 
+> ### FigureAgent (5 sub-agents: Planner → CodeGen → Renderer → Critic → Integrator)
+> - Academic-quality chart generation with SciencePlots, 300 DPI, colorblind-safe palette
+> - 6 built-in chart templates + LLM fallback for custom visualizations
+> - Tri-modal critic review (data accuracy, aesthetics, academic convention)
+> 
+> ## Docker Sandbox Enhancements
+> - Network-policy-aware code generation: `none` | `setup_only` | `pip_only` | `full`
+> - Dynamic dependency installation via requirements.txt
+> - Pre-cached datasets: CIFAR-10/100, MNIST, FashionMNIST, STL-10, SVHN
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-11 ~ 2026-03-15）
-> **活躍天數** 2 天 · **最新 commit** Update README with new video links and formatting
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#3](https://github.com/novatic14/MANPADS-System-Launcher-and-Rocket/issues/3) | It is too round at the top. | 2 | 1 |
-> | [#2](https://github.com/novatic14/MANPADS-System-Launcher-and-Rocket/issues/2) | Closed | 1 | 3 |
-> | [#5](https://github.com/novatic14/MANPADS-System-Launcher-and-Rocket/issues/5) | Proposal: Adoption of CERN Open Hardware License | 0 | 0 |
-> | [#1](https://github.com/novatic14/MANPADS-System-Launcher-and-Rocket/issues/1) | Initializing document manifest xml stream failed | 0 | 1 |
+> [!abstract] 最近 10 次 commit（2026-03-15 ~ 2026-03-16）
+> **活躍天數** 2 天 · **最新 commit** docs: update badges, URLs, and config reference across all READMEs
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # MANPADS Rocket & Launcher Prototype
+> Chat an Idea. Get a Paper. Fully Autonomous.
 > 
-> ## 30 Second Overview
+>   Just chat with OpenClaw: "Research X" → done.
 > 
-> [](https://www.youtube.com/shorts/zFn__6_LdTc)
+>   
 > 
-> ## Full System Overview (5 Minutes)
+>   
+>   
+>   
+>   
+>   
 > 
-> [](https://www.youtube.com/watch?v=DDO2EvXyncE&t=59s)
+>   🇨🇳 中文 ·
+>   🇯🇵 日本語 ·
+>   🇰🇷 한국어 ·
+>   🇫🇷 Français ·
+>   🇩🇪 Deutsch ·
+>   🇪🇸 Español ·
+>   🇧🇷 Português ·
+>   🇷🇺 Русский ·
+>   🇸🇦 العربية
 > 
-> ---
-> 
-> ## Full Development Media and Documentation
-> https://drive.google.com/drive/folders/17zpks6_R59H0iXJaGkTrtp1SzIFFAQtY?usp=drive_link
-> 
-> The Google Drive archive contains additional development media and documentation, including:
-> 
-> - Mechanical design and assembly  
-> - System electronics and firmware testing  
-> - Launch testing and rocket motor development  
-> - System flow diagrams  
-> - Rocket specifications  
-> - Bill of materials and cost breakdown  
-> 
-> ---
-> 
-> ## Project Overview
-> 
-> This project is a proof-of-concept prototype of a low-cost rocket launcher and guided rocket system built using consumer electronics and 3D-printed components.
-> 
-> The rocket uses folding fins and canard stabilization controlled by an onboard ESP32 flight computer and MPU6050 inertial measurement unit. The launcher integrates sensors such as GPS, compass, and barometric modules to determine orientation and provide telemetry.
-> 
-> The system was designed in Fusion 360, simulated using OpenRocket, and developed through iterative mechanical design, electronics integration, and launch testing.
-> 
-> The total hardware cost of the prototype is approximately **$96**.
+>   📖 Integration Guide
 > 
 > ---
 > 
-> ## Repository Contents
+> > **🧪 We're looking for testers!** Try the pipeline with your own research idea — from any field — and [tell us what you think](docs/TESTER_GUIDE.md). Your feedback directly shapes the next version. **[→ Testing Guide](docs/TESTER_GUIDE.md)** | **[→ 中文测试指南](docs/TESTER_GUIDE_CN.md)**
 > 
-> This repository contains the core engineering components of the project:
+> ---
 > 
-> - Mechanical CAD files for the rocket and launcher  
-> - Firmware source code for the rocket flight controller and launcher system  
-> - OpenRocket simulation files used for aerodynamic stability analysis  
-> - Supporting project documentation
+> 
+> ## 🚀 Quick Start
+> 
+> ```bash
+> 
+> # 1. Clone & install
+> git clone https://github.com/aiming-lab/AutoResearchClaw.git
+> cd AutoResearchClaw
+> python3 -m venv .venv && source .venv/bin/activate
+> pip install -e .
+> 
+> 
+> # config.yaml — ACP example
+> llm:
+>   provider: "acp"
+>   acp:
+>     agent: "claude"   # Any ACP-compatible agent CLI command
+>     cwd: "."          # Working directory for the agent
+>   # No base_url or api_key needed — the agent handles its own auth.
+> ```
+> 
+> ```bash
+> 
+> ## ✨ Key Features
+> 
+> | Feature | Description |
+> |---------|------------|
+> | **📚 Multi-Source Literature** | Real papers from arXiv (primary) + Semantic Scholar — query expansion, deduplication, circuit breaker with graceful degradation |
+> | **🔍 4-Layer Citation Verification** | arXiv ID check → CrossRef/DataCite DOI → Semantic Scholar title match → LLM relevance scoring. Hallucinated refs auto-removed. |
+> | **🖥️ Hardware-Aware Execution** | Auto-detects GPU (NVIDIA CUDA / Apple MPS / CPU-only) and adapts code generation, imports, and experiment scale accordingly |
+> | **🧪 Sandbox Experiments** | AST-validated code, immutable harness, NaN/Inf fast-fail, self-healing repair, iterative refinement (up to 10 rounds), partial result capture |
+> | **📝 Conference-Grade Writing** | NeurIPS/ICML/ICLR templates, section-by-section drafting (5,000-6,500 words), anti-fabrication guard, revision length guard, anti-disclaimer enforcement |
+> | **📐 Template Switching** | `neurips_2025`, `iclr_2026`, `icml_2026` — Markdown → LaTeX with math, tables, figures, cross-refs, `\cite{}` |
+> | **🚦 Quality Gates** | 3 human-in-the-loop gates (Stages 5, 9, 20) with rollback. Skip with `--auto-approve`. |
+> 
+> ---
+> 
+> 
+> # 2. Configure
+> cp config.researchclaw.example.yaml config.arc.yaml
+> 
+> # Edit config.arc.yaml — set your LLM API endpoint and key
+> 
+> 
+> # config.arc.yaml
+> openclaw_bridge:
+>   use_cron: true              # ⏰ Scheduled research runs
+>   use_message: true           # 💬 Progress notifications (Discord/Slack/Telegram)
+>   use_memory: true            # 🧠 Cross-session knowledge persistence
+>   use_sessions_spawn: true    # 🔀 Spawn parallel sub-sessions for concurrent stages
+>   use_web_fetch: true         # 🌐 Live web search during literature review
+>   use_browser: false          # 🖥️ Browser-based paper collection
+> ```
+> 
+> Each flag activates a typed adapter protocol. When OpenClaw provides these capabilities, the adapters consume them without code changes. See [`docs/integration-guide.md`](docs/integration-guide.md) for full details.
+> 
+> 
+> ## ⚙️ Configuration Reference
+> 
+> Click to expand full configuration reference
+> 
+> ```yaml
+> 
+> ## 🔥 News
+> - **[03/16/2026]** [v0.2.0](https://github.com/aiming-lab/AutoResearchClaw/releases/tag/v0.2.0) — Three multi-agent subsystems (CodeAgent, BenchmarkAgent, FigureAgent), hardened Docker sandbox with network-policy-aware execution, 4-round paper quality audit (AI-slop detection, 7-dim review scoring, NeurIPS checklist), and 15+ bug fixes from production runs.
+> - **[03/15/2026]** [v0.1.0](https://github.com/aiming-lab/AutoResearchClaw/releases/tag/v0.1.0) — We release AutoResearchClaw: a fully autonomous 23-stage research pipeline that turns a single research idea into a conference-ready paper. No human intervention required.
+> 
+> ---
+> 
+> 
+> ## ⚡ One Command. One Paper.
+> 
+> ```bash
+> pip install -e . && researchclaw run --topic "Your research idea here" --auto-approve
+> ```
+> 
+> ---
+> 
+> 
+> ## 🤔 What Is This?
+> 
+> **You think it. AutoResearchClaw writes it.**
+> 
+> Drop a research topic — get back a full academic paper with real literature from arXiv & Semantic Scholar, hardware-aware sandbox experiments (GPU/MPS/CPU auto-detected), statistical analysis, multi-agent peer review, and conference-ready LaTeX targeting NeurIPS/ICML/ICLR. No babysitting. No copy-pasting. No hallucinated references.
+> 
+> 📄paper_draft.mdFull academic paper (Introduction, Related Work, Method, Experiments, Results, Conclusion)
+> 📐paper.texConference-ready LaTeX (NeurIPS / ICLR / ICML templates)
+> 📚references.bibReal BibTeX references from Semantic Scholar and arXiv — auto-pruned to match inline citations
+> 🔍verification_report.json4-layer citation integrity + relevance verification (arXiv, CrossRef, DataCite, LLM)
+> 🧪experiment runs/Generated code + sandbox results + structured JSON metrics
+> 📊charts/Auto-generated condition comparison charts with error bars and confidence intervals
+> 📝reviews.mdMulti-agent peer review with methodology-evidence consistency checks
+> 🧬evolution/Self-learning lessons extracted from each run
+> 📦deliverables/All final outputs in one folder — compile-ready for Overleaf
+> 
+> The pipeline runs **end-to-end without human intervention**. When experiments fail, it self-heals. When hypotheses don't hold, it pivots. When citations are fake, it kills them.
+> 
+> ---
+> 
+> 
+> # 3. Run
+> export OPENAI_API_KEY="sk-..."
+> researchclaw run --config config.arc.yaml --topic "Your research idea" --auto-approve
+> ```
+> 
+> Output → `artifacts/rc-YYYYMMDD-HHMMSS-/deliverables/` — compile-ready LaTeX, BibTeX, experiment code, charts.
+> 
+> 📝 Minimum required config
+> 
+> ```yaml
+> project:
+>   name: "my-research"
+> 
+> research:
+>   topic: "Your research topic here"
+> 
+> llm:
+>   base_url: "https://api.openai.com/v1"
+>   api_key_env: "OPENAI_API_KEY"
+>   primary_model: "gpt-4o"
+>   fallback_models: ["gpt-4o-mini"]
+> 
+> experiment:
+>   mode: "sandbox"
+>   sandbox:
+>     python_path: ".venv/bin/python"
+> ```
+> 
+> ---
+> 
+> 
+> ## 🧠 What Makes It Different
+> 
+> | Capability | How It Works |
+> |-----------|-------------|
+> | **🔄 PIVOT / REFINE Loop** | Stage 15 autonomously decides: PROCEED, REFINE (tweak params), or PIVOT (new direction). Artifacts auto-versioned. |
+> | **🤖 Multi-Agent Debate** | Hypothesis generation, result analysis, and peer review each use structured multi-perspective debate. |
+> | **🧬 Self-Learning** | Lessons extracted per run (decision rationale, runtime warnings, metric anomalies) with 30-day time-decay. Future runs learn from past mistakes. |
+> | **📚 Knowledge Base** | Every run builds structured KB across 6 categories (decisions, experiments, findings, literature, questions, reviews). |
+> | **🛡️ Sentinel Watchdog** | Background quality monitor: NaN/Inf detection, paper-evidence consistency, citation relevance scoring, anti-fabrication guard. |
+> 
+> ---
+> 
+> 
+> ## 🦞 OpenClaw Integration
+> 
+> **AutoResearchClaw is an [OpenClaw](https://github.com/openclaw/openclaw)-compatible service.** Install it in OpenClaw and launch autonomous research with a single message — or use it standalone via CLI, Claude Code, or any AI coding assistant.
+> 
+> 
+> ### 🚀 Use with OpenClaw (Recommended)
+> 
+> If you already use [OpenClaw](https://github.com/openclaw/openclaw) as your AI assistant:
+> 
+> ```
+> 1️⃣  Share the GitHub repo URL with OpenClaw
+> 2️⃣  OpenClaw auto-reads RESEARCHCLAW_AGENTS.md → understands the pipeline
+> 3️⃣  Say: "Research [your topic]"
+> 4️⃣  Done — OpenClaw clones, installs, configures, runs, and returns results
+> ```
+> 
+> **That's it.** OpenClaw handles `git clone`, `pip install`, config setup, and pipeline execution automatically. You just chat.
+> 
+> 💡 What happens under the hood
+> 
+> 1. OpenClaw reads `RESEARCHCLAW_AGENTS.md` → learns the research orchestrator role
+> 2. OpenClaw reads `README.md` → understands installation and pipeline structure
+> 3. OpenClaw copies `config.researchclaw.example.yaml` → `config.yaml`
+> 4. Asks for your LLM API key (or uses your environment variable)
+> 5. Runs `pip install -e .` + `researchclaw run --topic "..." --auto-approve`
+> 6. Returns the paper, LaTeX, experiments, and citations
+> 
+> 
+> ### 🔌 OpenClaw Bri
 
 ## 延伸閱讀
 
-相關概念：[[開源硬體]] · [[機械設計]] · [[電子整合]]
-
-相關專案：[[NawfalMotii79--PLFM_RADAR|NawfalMotii79/PLFM_RADAR]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[calesthio--Crucix|calesthio/Crucix]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]]
-
-[GitHub](https://github.com/novatic14/MANPADS-System-Launcher-and-Rocket)
+[GitHub](https://github.com/aiming-lab/AutoResearchClaw)
 
 ## 相關收錄
-
-> [!note]- 直接競品（同子分類：開源硬體）
-> ```dataview
-> TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
-> FROM "Repos"
-> WHERE subcategory = "開源硬體" AND file.name != "novatic14--MANPADS-System-Launcher-and-Rocket"
-> SORT stars DESC
-> ```
 
 > [!note]- 同分類的其他專案
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "novatic14--MANPADS-System-Launcher-and-Rocket"
+> WHERE category = "Other" AND file.name != "aiming-lab--AutoResearchClaw"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -371,7 +440,7 @@ void loop() {
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "novatic14--MANPADS-System-Launcher-and-Rocket" AND status != "archived"
+> WHERE language = "Python" AND file.name != "aiming-lab--AutoResearchClaw" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -380,33 +449,18 @@ void loop() {
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W12" AND file.name != "novatic14--MANPADS-System-Launcher-and-Rocket"
+> WHERE week = "2026-W12" AND file.name != "aiming-lab--AutoResearchClaw"
 > SORT stars DESC
-> ```
-
-> [!note]- 共用概念的相關專案
-> ```dataviewjs
-> const concepts = ["開源硬體","機械設計","電子整合"];
-> const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "novatic14--MANPADS-System-Launcher-and-Rocket" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
->   .sort(p => p.stars, "desc")
->   .limit(5);
-> if (pages.length > 0) {
->   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
->     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
->     return [p.file.link, p.stars, p.category, shared.join(", ")];
->   }));
-> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/novatic14--MANPADS-System-Launcher-and-Rocket");
+> const me = dv.page("Repos/aiming-lab--AutoResearchClaw");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "novatic14--MANPADS-System-Launcher-and-Rocket" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "aiming-lab--AutoResearchClaw" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -422,7 +476,7 @@ void loop() {
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "novatic14" AND file.name != "novatic14--MANPADS-System-Launcher-and-Rocket"
+> WHERE owner = "aiming-lab" AND file.name != "aiming-lab--AutoResearchClaw"
 > SORT stars DESC
 > ```
 
@@ -430,7 +484,7 @@ void loop() {
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/novatic14--MANPADS-System-Launcher-and-Rocket");
+> const me = dv.page("Repos/aiming-lab--AutoResearchClaw");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -447,7 +501,7 @@ void loop() {
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/novatic14--MANPADS-System-Launcher-and-Rocket");
+> const me = dv.page("Repos/aiming-lab--AutoResearchClaw");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -480,7 +534,7 @@ void loop() {
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/novatic14--MANPADS-System-Launcher-and-Rocket");
+> const me = dv.page("Repos/aiming-lab--AutoResearchClaw");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -504,7 +558,7 @@ void loop() {
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/novatic14--MANPADS-System-Launcher-and-Rocket");
+> const me = dv.page("Repos/aiming-lab--AutoResearchClaw");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -541,7 +595,7 @@ void loop() {
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/novatic14--MANPADS-System-Launcher-and-Rocket");
+> const me = dv.page("Repos/aiming-lab--AutoResearchClaw");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -624,7 +678,7 @@ void loop() {
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-03-16** — 首次收錄
+> **2026-03-17** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -640,5 +694,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-03-17|2026-03-17]] — 再次上榜，1.4k stars
-- [[2026-03-16|2026-03-16]] — 首次收錄，969 stars
+- [[2026-03-17|2026-03-17]] — 首次收錄，1.4k stars

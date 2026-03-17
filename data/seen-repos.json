@@ -372,17 +372,17 @@
   },
   "garrytan/gstack": {
     "first_seen": "2026-03-13",
-    "last_seen": "2026-03-16",
-    "times_seen": 4,
+    "last_seen": "2026-03-17",
+    "times_seen": 5,
     "stars_first": 2724,
-    "stars_last": 14039
+    "stars_last": 17282
   },
   "gsd-build/gsd-2": {
     "first_seen": "2026-03-13",
-    "last_seen": "2026-03-16",
-    "times_seen": 4,
+    "last_seen": "2026-03-17",
+    "times_seen": 5,
     "stars_first": 779,
-    "stars_last": 1364
+    "stars_last": 1545
   },
   "larksuite/openclaw-lark": {
     "first_seen": "2026-03-13",
@@ -393,17 +393,17 @@
   },
   "davebcn87/pi-autoresearch": {
     "first_seen": "2026-03-14",
-    "last_seen": "2026-03-16",
-    "times_seen": 3,
+    "last_seen": "2026-03-17",
+    "times_seen": 4,
     "stars_first": 1167,
-    "stars_last": 1851
+    "stars_last": 1986
   },
   "TianyiDataScience/openclaw-control-center": {
     "first_seen": "2026-03-14",
-    "last_seen": "2026-03-16",
-    "times_seen": 3,
+    "last_seen": "2026-03-17",
+    "times_seen": 4,
     "stars_first": 994,
-    "stars_last": 1721
+    "stars_last": 1892
   },
   "aiming-lab/MetaClaw": {
     "first_seen": "2026-03-14",
@@ -421,23 +421,44 @@
   },
   "pasky/chrome-cdp-skill": {
     "first_seen": "2026-03-16",
-    "last_seen": "2026-03-16",
-    "times_seen": 1,
+    "last_seen": "2026-03-17",
+    "times_seen": 2,
     "stars_first": 1502,
-    "stars_last": 1502
+    "stars_last": 1874
   },
   "wanshuiyin/Auto-claude-code-research-in-sleep": {
     "first_seen": "2026-03-16",
-    "last_seen": "2026-03-16",
-    "times_seen": 1,
+    "last_seen": "2026-03-17",
+    "times_seen": 2,
     "stars_first": 1296,
-    "stars_last": 1296
+    "stars_last": 1680
   },
   "novatic14/MANPADS-System-Launcher-and-Rocket": {
     "first_seen": "2026-03-16",
-    "last_seen": "2026-03-16",
-    "times_seen": 1,
+    "last_seen": "2026-03-17",
+    "times_seen": 2,
     "stars_first": 969,
-    "stars_last": 969
+    "stars_last": 1392
+  },
+  "THU-MAIC/OpenMAIC": {
+    "first_seen": "2026-03-17",
+    "last_seen": "2026-03-17",
+    "times_seen": 1,
+    "stars_first": 1990,
+    "stars_last": 1990
+  },
+  "calesthio/Crucix": {
+    "first_seen": "2026-03-17",
+    "last_seen": "2026-03-17",
+    "times_seen": 1,
+    "stars_first": 1888,
+    "stars_last": 1888
+  },
+  "aiming-lab/AutoResearchClaw": {
+    "first_seen": "2026-03-17",
+    "last_seen": "2026-03-17",
+    "times_seen": 1,
+    "stars_first": 1449,
+    "stars_last": 1449
   }
 }
