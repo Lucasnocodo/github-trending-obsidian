@@ -7,8 +7,8 @@ language: TypeScript
 license: MIT
 description: "Fractals is a recursive task orchestrator for agent swarm"
 homepage: "https://tinyagicompany.com"
-stars: 596
-stars_per_day: 54
+stars: 595
+stars_per_day: 50
 forks: 46
 open_issues: 3
 created: 2026-03-05
@@ -17,7 +17,7 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
-subcategory: "自動化"
+subcategory: "任務協調"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "自動將高階任務分解為可執行的子任務，並透過代理群體執行。"
+use_case: "將高層任務轉化為可執行的子任務樹，並透過代理群組執行。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-11:517,2026-03-11:517,2026-03-11:517,2026-03-13:582,2026-03-14:588,2026-03-15:589,2026-03-16:593,2026-03-17:596"
+star_history: "2026-03-11:517,2026-03-11:517,2026-03-11:517,2026-03-13:582,2026-03-14:588,2026-03-15:589,2026-03-16:593,2026-03-17:596,2026-03-18:595"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "fractals"
   - "TinyAGI/fractals"
-  - "自動將高階任務分解為可執行的子任務，並透過代理群體執行。"
+  - "將高層任務轉化為可執行的子任務樹，並透過代理群組執行。"
 ---
 
 # fractals
 
-**596** stars · **54** stars/天 · 建立 11 天前 · TypeScript · MIT
+**595** stars · **50** stars/天 · 建立 12 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/TinyAGI--fractals");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 自動將高階任務分解為可執行的子任務，並透過代理群體執行。
+> 將高層任務轉化為可執行的子任務樹，並透過代理群組執行。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (54 stars/day)
-> **授權** MIT (商業友好) · **維護** Moderate (最後推送 10 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要自動化任務分解並管理多個代理的開發團隊。
-> **一句話重點** Fractals 的遞歸任務分解能力讓複雜任務管理變得前所未有的簡單。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (50 stars/day)
+> **授權** MIT (商業友好) · **維護** Moderate (最後推送 11 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要高效管理和執行複雜任務的開發團隊或專案管理者。
+> **一句話重點** 這個專案展示了如何利用 LLM 自動化複雜任務的管理，並且在開發過程中保持高效。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/TinyAGI--fractals");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "自動化" && p.file.name !== "TinyAGI--fractals" && p.status !== "archived")
+>     .where(p => p.subcategory === "任務協調" && p.file.name !== "TinyAGI--fractals" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,30 +96,30 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 任務協調 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，8 小時整合，得到自動化任務管理的效果，值得嘗試。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學習，5 小時整合，得到高效的任務管理效果，值得嘗試。
 
 > [!abstract] 核心創新
-> Fractals 提供了一種全新的方式來自動化任務的分解和執行，通過遞歸結構來管理複雜的任務。這種設計使得多代理協作變得更加高效。
+> 能夠自動化高層任務的遞歸分解和執行，並在獨立的 git 工作樹中管理每個子任務。
 
 ## 專案簡介
 
-Fractals 是一個遞歸任務協調器，能將任何高階任務轉化為自相似的可執行子任務樹，並在獨立的 git 工作樹中執行每個葉子任務。使用者首先輸入任務，系統會透過 LLM 進行分類和分解，然後標記為準備就緒。接著，使用者確認計畫並提供工作空間路徑，系統會初始化 git 工作空間並創建工作樹，最後以批次方式執行葉子任務，並實時更新狀態。這種設計使得任務的執行可以在多個環境中獨立進行，降低了相互之間的影響。關鍵指令包括 `npm run server` 啟動後端服務和 `npm run dev` 啟動前端界面，這樣用戶可以方便地與系統互動。這個工具的賣點在於其自動化的任務分解和執行，讓複雜任務的管理變得簡單高效。
+Fractals 是一個遞歸任務協調器，能將高層次的任務分解為可執行的子任務樹，並在獨立的 git 工作樹中以代理群組執行每個子任務。使用者只需輸入任務，系統會自動生成任務樹，並在兩個階段中進行處理：第一階段是計劃，第二階段是執行。這樣的設計使得任務的分解和執行都能夠高效且有序進行，並且支持多種批次執行策略以應對 API 的速率限制。核心的 CLI 指令如 `npm run server` 和 `npm run dev` 使得啟動伺服器和前端變得簡單。這個工具的賣點在於其能夠自動化複雜任務的執行，並且透過可視化界面讓使用者能夠清楚地看到任務進度和狀態。
 
-**技術棧**：`TypeScript` · `Hono` · `OpenAI`
+**技術棧**：`TypeScript 5.9.3` · `Hono 4.12.5` · `OpenAI 6.25.0`
 
 ## 重點功能
 
-- 任務分解 — 將高階任務自動分解為可執行的子任務樹，支持最大深度設定（預設 4）。
-- 批次執行 — 以深度優先策略執行葉子任務，並支持未來的廣度優先和層序執行策略。
-- 即時狀態更新 — 實時輪詢任務執行狀態，使用者可以隨時查看進度。
-- 多工作樹管理 — 在獨立的 git 工作樹中執行任務，避免任務間的相互影響。
-- CLI 支援 — 提供命令行介面，方便用戶在無需前端的情況下使用。
+- 遞歸任務分解 — 將高層任務轉化為可執行的子任務樹，支持多層次分解。
+- 批次執行策略 — 支持深度優先和廣度優先的批次執行策略，以應對 API 速率限制。
+- 即時狀態更新 — 透過 HTTP 請求獲取當前任務狀態，支持實時監控。
+- 多工作樹管理 — 在獨立的 git 工作樹中執行子任務，避免相互干擾。
+- 可視化界面 — 提供前端界面以便使用者查看任務樹和執行狀態。
 
 ## 快速開始
 
@@ -135,11 +135,11 @@ cd web && npm install && cd ..
 ```bash
 echo "OPENAI_API_KEY=sk-..." > .env
 ```
-4. 啟動伺服器（端口 1618）
+4. 啟動伺服器
 ```bash
 npm run server
 ```
-5. 啟動前端（端口 3000）
+5. 啟動前端
 ```bash
 cd web && npm run dev
 ```
@@ -147,66 +147,65 @@ cd web && npm run dev
 ## 程式碼範例
 
 ```ts
-[
-  "# 前置條件：安裝所有依賴並設置環境變數",
-  "npm run server",
-  "# 預期輸出：伺服器啟動並監聽在 1618 端口"
-]
+{
+  "前置條件": "需要安裝 Node.js 和 npm，並設置 OpenAI API 金鑰。",
+  "指令": "npm run server",
+  "預期輸出": "伺服器啟動，監聽在 1618 端口。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 11 天就累積 596 stars（54/天），forks 46（7.7%），這顯示出穩定的增長潛力。作者 jlia0 之前的貢獻顯示其在開源社群中的活躍度。Fractals 解決了傳統任務管理工具無法有效處理複雜任務分解的痛點，特別是在需要多個代理協同工作的情境下。這個工具的出現正好符合了當前對於自動化和智能化工作的需求，尤其是在 AI 技術快速發展的背景下。forks/stars 比率為 7.7%，顯示出有相當比例的用戶對其進行實際修改和使用。
+> 建立 12 天內累積 595 stars（50/天），forks 46（7.7%），顯示出穩定的增長。作者 jlia0 之前在開源社群中有多個貢獻，這個專案解決了任務分解和執行的複雜性問題，之前的解決方案往往需要手動管理子任務，效率低下。這個工具的出現使得使用者能夠輕鬆管理多個任務，並且在執行過程中保持高效。社群的活躍度和開發者的回應速度也顯示出這個專案的潛力。
 
 ## 適合誰使用
 
-**目標受眾**：需要自動化任務分解並管理多個代理的開發團隊。
+**目標受眾**：需要高效管理和執行複雜任務的開發團隊或專案管理者。
 
 > [!example] 使用場景
-> - 後端工程師用它來自動化將大型專案的功能拆解為小任務，因為手動管理這些任務容易出錯且耗時。
-> - 產品經理用它來快速生成可執行的任務清單，因為這樣可以更清楚地分配資源和時間。
-> - DevOps 工程師用它來在多個環境中部署相同的任務，因為可以確保每個環境的獨立性和一致性。
+> - 專案經理用它來自動化任務分解，因為手動管理多個任務容易出錯，這樣可以提高效率並減少人為失誤。
+> - 開發者用它來在 CI/CD 流程中自動執行測試任務，因為這樣可以確保每次提交都能夠自動化測試，提升代碼質量。
+> - 數據科學家用它來管理複雜的數據處理任務，因為這樣可以輕鬆追蹤每個子任務的狀態，並快速調整處理流程。
 
 ## 架構分析
 
-Fractals 採用 Hono 作為後端伺服器，並使用 Next.js 作為前端框架，這樣的選擇使得整個系統能夠快速響應用戶請求。資料流從用戶輸入任務開始，經過 LLM 的分類和分解，然後生成一棵任務樹。每個葉子任務在獨立的 git 工作樹中執行，這樣可以避免任務之間的相互影響。
+Fractals 的架構基於 Hono 作為後端伺服器，並使用 Next.js 作為前端界面。後端處理任務的分解和執行，前端則提供用戶輸入和任務狀態的可視化。這樣的設計使得使用者能夠清晰地看到任務的進度，並即時獲取狀態更新。
 
-選擇 Hono 的原因是其輕量級和高效能，能夠快速處理 HTTP 請求。這種架構的代價是需要用戶手動管理工作空間，未來可能會考慮自動化配置。整體上，這種設計使得系統具備良好的擴展性，但在任務執行的即時性上仍有待提升。
+系統使用 OpenAI 的 API 進行任務分類和分解，這樣能夠利用 LLM 的強大能力來處理複雜的任務。選擇 Hono 作為後端框架是因為其輕量且高效，適合快速開發 RESTful API。整體架構的代價在於需要依賴外部 API，這可能會影響到系統的穩定性和可用性。
 
 ## 技術深入分析
 
-Fractals 的核心技術機制是使用 LLM 進行任務的分類和分解，這使得系統能夠自動生成可執行的任務樹。使用 Hono 作為後端伺服器，能夠快速處理用戶請求，並且支持高效的 HTTP 通訊。系統能夠處理的任務規模取決於 OpenAI 的 API 限制，對於高頻請求可能會受到影響。選擇 TypeScript 作為開發語言，讓代碼更具可讀性和可維護性，但也增加了一定的學習曲線。設計上，Fractals 目前依賴於 OpenAI 的 API，這可能會在未來造成供應鏈風險，特別是當 API 更新或變更時。整合方面，與主流的 CI/CD 工具兼容性良好，但在實際使用中，可能需要額外的配置來確保順利運行。
+Fractals 的核心技術機制是基於遞歸任務分解，使用 OpenAI 的 LLM 來進行任務的分類和分解。系統的資料流從用戶輸入任務開始，經過 LLM 的處理後生成任務樹，然後在 git 工作樹中執行每個子任務。這樣的設計使得任務的執行能夠獨立且不互相干擾，提升了整體的效率。效能方面，系統能夠處理多層次的任務分解，但在高並發的情況下可能會受到 API 的速率限制影響。選擇 TypeScript 作為開發語言是因為其靜態類型系統能夠提高代碼的可維護性，並且 Hono 作為後端框架能夠快速構建 API。技術風險方面，依賴外部 API 可能會導致系統在高負載下出現不穩定的情況，並且需要考慮到安全性和數據隱私的問題。整合方面，與主流的 CI/CD 工具鏈相容性良好，能夠輕鬆集成到現有的開發流程中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了詳細的安裝步驟，讓新手能夠快速上手。安裝過程相對順暢，但需要注意環境變數的設置。文件中提供了快速入門指南，幫助用戶理解基本操作。文件目前僅提供英文版本，對於非英語使用者可能會有一定的障礙。
+> README 文件提供了清晰的安裝步驟和使用範例，讓新手能夠快速上手。安裝過程相對順暢，但需要注意環境變數的設置。整體來說，花 30 分鐘內能夠順利啟動並運行。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化任務分解，減少手動操作的錯誤率。
-> - 支持多工作樹管理，確保任務獨立執行。
-> - 即時狀態更新，方便用戶監控進度。
+> - 自動化任務分解，減少手動操作的錯誤。
+> - 支持多種批次執行策略，靈活應對 API 限制。
+> - 可視化界面提升使用者體驗，易於監控任務進度。
 
 > [!danger] 缺點
-> - 目前依賴 OpenAI API，無法使用其他 LLM。
-> - 批次執行策略尚不完善，未來可能需要更多調整。
-> - 需要用戶手動設置工作空間，對新手不太友好。
+> - 依賴 OpenAI API，可能會受到速率限制影響。
+> - 需要手動設置環境變數，對新手不友好。
+> - 目前功能還在開發中，可能存在不穩定性。
 
 > [!warning] 注意事項
 > - 目前僅支持 OpenAI 的 API，無法使用其他 LLM。
-> - 批次執行策略尚未完全實現，未來可能會有更多選項。
-> - 需要用戶手動設置工作空間路徑，尚未實現自動化配置。
+> - 執行過程中可能受到 API 速率限制影響，需考慮批次執行策略。
+> - 需要手動設置環境變數，對新手不太友好。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於並行任務執行，但不具備自動分解任務的功能。 |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 主要用於即時通訊的代理，不適合用於任務管理。 |
-| [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | 專注於自動化研究任務，但缺乏 Fractals 的遞歸任務分解能力。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的任務分解功能，但主要針對檔案同步，無法處理複雜的任務樹。 |
+| [karpathy/agenthub](https://github.com/karpathy/agenthub) | 專注於 AI 代理的管理和協調，但不支持遞歸任務分解。 |
 
 ## 替代方案決策
 
@@ -214,16 +213,16 @@ Fractals 的核心技術機制是使用 LLM 進行任務的分類和分解，這
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於任務的自動化執行，但不具備自動分解的能力。 | 如果你的團隊需要一個簡單的任務執行工具，而不需要複雜的任務分解。 | medium，因為需要重新設計任務流。 |
-| [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | 專注於自動化研究任務，提供一些類似的功能，但不支持遞歸任務分解。 | 如果你的需求主要集中在研究任務的自動化，而不是通用的任務管理。 | high，因為需要重構整個任務管理流程。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於任務的自動化執行，使用 Python 實作，記憶體使用量較少，但功能上不如 Fractals 完整。 | 如果你的團隊已經在使用 Python 並需要簡單的任務執行，自動化程度不高的情況下可以選擇它。 | medium，因為需要重寫部分邏輯以適應 Python 環境。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 專注於 AI 代理的協調，使用 C++ 實作，性能優越，但學習曲線較陡峭。 | 如果需要高性能的任務執行且團隊對 C++ 熟悉，可以考慮這個工具。 | high，因為需要全面重構任務流和邏輯。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **fractals** | **Shadowbroker** | **AutoResearchClaw** |
+> | 維度 | **fractals** | **Shadowbroker** | **NemoClaw** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於任務的自動化執行，但不具備自動分解的能力。 | 專注於自動化研究任務，提供一些類似的功能，但不支持遞歸任務分解。 |
-> | 遷移成本 | - | medium，因為需要重新設計任務流。 | high，因為需要重構整個任務管理流程。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要一個簡單的任務執行工具，而不需要複雜的任務分 | 如果你的需求主要集中在研究任務的自動化，而不是通用的任務管理 |
+> | 技術路線 | 本專案 | 專注於任務的自動化執行，使用 Python 實作，記憶體使用量較少，但功能上不如 Fractals 完整。 | 專注於 AI 代理的協調，使用 C++ 實作，性能優越，但學習曲線較陡峭。 |
+> | 遷移成本 | - | medium，因為需要重寫部分邏輯以適應 Python 環境。 | high，因為需要全面重構任務流和邏輯。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Python 並需要簡單的任務執行， | 如果需要高性能的任務執行且團隊對 C++ 熟悉，可以考慮這個 |
 
 ## 成熟度評估
 
@@ -234,44 +233,44 @@ Fractals 的核心技術機制是使用 LLM 進行任務的分類和分解，這
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合開發者進行實驗和測試，但不建議在生產環境中使用。
+> 適合用於探索性專案，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些情況下，任務分解後的按鈕會隱藏，影響用戶操作
-  - 解法：手動滾動頁面以查看隱藏的按鈕
-- **[HIGH]** 批次執行時可能會遇到 API 限制，導致執行失敗
-  - 解法：調整批次策略以避免超過限制
-- [MEDIUM] 需要用戶手動設置工作空間，對新手不友好
-  - 解法：提供詳細的設置指南以幫助新手
+- [MEDIUM] 在分解任務時，某些子任務可能會被錯誤標記為完成
+  - 解法：手動檢查每個子任務的狀態
+- [low] 前端界面在某些瀏覽器中顯示不正常
+  - 解法：使用 Chrome 或 Firefox 瀏覽器
+- **[HIGH]** API 請求過於頻繁可能導致速率限制錯誤
+  - 解法：調整批次執行策略，減少請求頻率
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 5 人以下的創業團隊進行產品開發 | 非常適合 | 能夠自動化任務分解和執行，提高開發效率。 |
-| 大型企業的專案管理部門 | 普通 | 雖然功能強大，但可能需要額外的配置和學習。 |
-| 個人開發者進行小型專案 | 非常適合 | 簡化了任務管理流程，讓開發者專注於實現功能。 |
-| 需要高頻任務執行的 DevOps 團隊 | 不適合 | 目前的 API 限制可能會影響執行效率。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠自動化任務分解，減少手動操作的錯誤。 |
+| 大型企業的任務協調系統 | 普通 | 功能上可能無法滿足所有需求，需進一步開發。 |
+| 個人開發者的專案管理 | 適合 | 簡單易用，能夠快速上手。 |
+| 需要高性能的任務執行系統 | 不適合 | 可能受到 API 限制影響，無法達到高效能要求。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~8 小時 |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~5 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，8 小時整合，得到自動化任務管理的效果，值得嘗試。
+> 花 3 小時學習，5 小時整合，得到高效的任務管理效果，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限操作，主要依賴 OpenAI API，需妥善管理 API 金鑰。對於 CI/CD 的使用相對安全，但需注意 API 的變更可能影響功能。
+> 低風險：該工具不需要高權限，僅存取 OpenAI API，且依賴鏈相對簡單，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -364,7 +363,7 @@ Fractals 的核心技術機制是使用 LLM 進行任務的分類和分解，這
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有更新但問題解決率較低。
+**社群活躍度**：社群活躍度中等，最近有更新和回應。
 **連結**：[文件](https://tinyagicompany.com)
 
 ## 開發動態
@@ -547,19 +546,19 @@ Fractals 的核心技術機制是使用 LLM 進行任務的分類和分解，這
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[微服務]] · [[任務協調]]
+相關概念：[[自動化測試]] · [[CI/CD]] · [[任務管理]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[aiming-lab--AutoResearchClaw|aiming-lab/AutoResearchClaw]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[google--TaskOrchestrator|google/TaskOrchestrator]] · [[airflow--airflow|airflow/airflow]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[karpathy--agenthub|karpathy/agenthub]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[aiming-lab--AutoResearchClaw|aiming-lab/AutoResearchClaw]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[google--TaskOrchestrator|google/TaskOrchestrator]] · [[airflow--airflow|airflow/airflow]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/TinyAGI/fractals) · [官方網站](https://tinyagicompany.com)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：自動化）
+> [!note]- 直接競品（同子分類：任務協調）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "自動化" AND file.name != "TinyAGI--fractals"
+> WHERE subcategory = "任務協調" AND file.name != "TinyAGI--fractals"
 > SORT stars DESC
 > ```
 
@@ -591,7 +590,7 @@ Fractals 的核心技術機制是使用 LLM 進行任務的分類和分解，這
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","微服務","任務協調"];
+> const concepts = ["自動化測試","CI/CD","任務管理"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "TinyAGI--fractals" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

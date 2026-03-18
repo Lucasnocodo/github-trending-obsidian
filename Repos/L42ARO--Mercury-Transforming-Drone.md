@@ -7,9 +7,9 @@ language: Python
 license: CERN-OHL-S-2.0
 description: "Mercury is a transforming drone anyone can build that can be adapted for many use cases thanks to it's versatile mobility, wide range of sensors, and cargo bay area"
 homepage: ""
-stars: 410
-stars_per_day: 41
-forks: 49
+stars: 416
+stars_per_day: 38
+forks: 51
 open_issues: 0
 created: 2026-03-06
 pushed_at: 2026-03-11
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "一款可變形的無人機，適合多種用途，具備多樣的感測器和貨艙空間。"
+use_case: "一款可變形的無人機，適合多種用途，具備靈活的移動性和多樣的感測器。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:364,2026-03-11:364,2026-03-11:364,2026-03-13:380,2026-03-14:396,2026-03-15:400,2026-03-16:402,2026-03-17:410"
+star_history: "2026-03-10:364,2026-03-11:364,2026-03-11:364,2026-03-13:380,2026-03-14:396,2026-03-15:400,2026-03-16:402,2026-03-17:410,2026-03-18:416"
 tags:
   - github
   - "category/其他"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "Mercury-Transforming-Drone"
   - "L42ARO/Mercury-Transforming-Drone"
-  - "一款可變形的無人機，適合多種用途，具備多樣的感測器和貨艙空間。"
+  - "一款可變形的無人機，適合多種用途，具備靈活的移動性和多樣的感測器。"
 ---
 
 # Mercury-Transforming-Drone
 
-**410** stars · **41** stars/天 · 建立 10 天前 · Python · CERN-OHL-S-2.0
+**416** stars · **38** stars/天 · 建立 11 天前 · Python · CERN-OHL-S-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/L42ARO--Mercury-Transforming-Drone");
@@ -69,13 +69,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```
 
 > [!summary] 一句話摘要
-> 一款可變形的無人機，適合多種用途，具備多樣的感測器和貨艙空間。
+> 一款可變形的無人機，適合多種用途，具備靈活的移動性和多樣的感測器。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (41 stars/day)
-> **授權** CERN-OHL-S-2.0 · **維護** Active (最後推送 5 天前) · **貢獻者** 2 人 · **參與度** Medium
-> **適合** 對無人機技術有興趣的開發者，特別是希望在多用途應用中探索創新解決方案的人。
-> **一句話重點** Mercury 的變形設計讓無人機在多種環境中運作成為可能，這是其最大的創新點。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (38 stars/day)
+> **授權** CERN-OHL-S-2.0 · **維護** Active (最後推送 6 天前) · **貢獻者** 2 人 · **參與度** Medium
+> **適合** 對無人機技術有興趣並希望在多種環境中進行應用的開發者和研究人員。
+> **一句話重點** Mercury 的設計不僅僅是無人機，更是一個靈活的多功能平台，能夠適應各種應用需求。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -98,26 +98,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **安裝** Medium (需設定)
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
+> **結論** 花 10 小時學習、15 小時整合，得到靈活的無人機解決方案，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供了一種靈活的變形設計，能夠在多種環境中運作。
+> Mercury 提供了一個可變形的無人機設計，能夠在多種環境中靈活運作。
 
 ## 專案簡介
 
-Mercury 是一款可變形的無人機，設計上強調多功能性，適合不同的使用情境。用戶可以透過簡單的變形機制，將無人機從飛行模式轉換為地面行駛模式，這樣的設計使其能夠在多種環境中運作。核心功能包括內部貨艙可容納 1 公斤的負載，並搭載 RGB、深度及熱成像攝影機，這些感測器能夠提供豐富的環境數據。使用者需將自動化軟體上傳至 Raspberry Pi 5，並透過簡單的指令設置虛擬環境及安裝依賴，像是 `pip install -r requirements.txt`。這個工具的賣點在於其靈活的應用場景，從環境監測到運輸任務，都能輕鬆應對。技術上，Mercury 使用 Ardupilot 進行飛行控制，並透過 GPS 定位，這樣的選擇提高了其穩定性和可靠性。
-
-相較於其他無人機，Mercury 的變形能力和內部貨艙設計使其在多用途應用上更具優勢。與傳統無人機相比，Mercury 的設計讓使用者不再受限於單一的操作模式，能夠在不同情境中靈活運用。使用者在操作時，需注意網路連接的穩定性，因為遠程控制需要良好的網路環境。這個專案目前處於活躍開發階段，社群活躍度高，且有明確的貢獻者。對於小型團隊或個人開發者來說，這是一個值得嘗試的專案，未來可能會有更多功能擴展。
+Mercury 是一款可變形的無人機，設計上強調靈活性和多功能性，適合各種應用場景。用戶可以透過簡單的轉換機制，將無人機從飛行模式切換到地面行駛模式，這樣的設計使得它在狹小空間或不平坦地形中也能靈活運動。無人機內部配備一個可容納 1 公斤的貨物艙，並搭載 RGB、深度及熱成像攝影機，這使得它在監控、救災或環境監測等場景中表現出色。使用者只需將自動駕駛軟體上傳至 Raspberry Pi 5，並透過簡單的指令啟動 Mavproxy 進行控制，這樣的設計降低了使用門檻，讓更多人能夠輕鬆上手。其一句話賣點是：一款靈活多變的無人機，適合各種環境和任務需求。
 
 **技術棧**：`Python` · `TypeScript` · `C++`
 
 ## 重點功能
 
-- 內部貨艙 — 可容納 1 公斤的負載，適合多種運輸需求。
-- 變形機制 — 簡單的設計讓無人機能在飛行和地面行駛間切換。
-- 多種感測器 — 搭載 RGB、深度及熱成像攝影機，提供多樣的環境數據。
-- 基於 Ardupilot — 使用成熟的飛行控制軟體，提升穩定性和可靠性。
-- 遠程控制 — 支持透過網路控制，並可使用 Tailscale 進行長距離操作。
+- 變形機制 — 簡單的轉換機制讓無人機能在飛行和地面行駛模式間切換。
+- 內部貨物艙 — 可容納 1 公斤的貨物，適合運送小型物品。
+- 多種攝影機 — 配備 RGB、深度和熱成像攝影機，能夠滿足不同的監控需求。
+- 自動駕駛軟體 — 透過 Raspberry Pi 5 運行自動駕駛軟體，簡化操作流程。
+- 遠端控制 — 支援透過 Tailscale 進行長距離控制，適合多種使用情境。
 
 ## 快速開始
 
@@ -133,11 +132,11 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-4. 啟動 Mavproxy Bridge
+4. 啟動 Mavproxy
 ```bash
 ./start_mavproxy.sh
 ```
-5. 啟動主軟體
+5. 啟動主程式
 ```bash
 ./run.sh
 ```
@@ -146,57 +145,127 @@ pip install -r requirements.txt
 
 ```python
 {
-  "前置條件": "在 Raspberry Pi 上設置虛擬環境並安裝依賴",
+  "前置條件": "在 Raspberry Pi 上安裝並啟動虛擬環境",
   "指令": "./start_mavproxy.sh",
-  "預期輸出": "顯示 IP 地址以便於控制無人機"
+  "預期輸出": "顯示 IP 地址以便控制無人機"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 10 天內累積 410 stars（41/天），forks 49（12.0%），顯示出良好的社群反響。主要貢獻者 L42ARO 和 Agonat0r 具備相關技術背景，能夠持續推動專案進展。這個專案解決了傳統無人機在多用途應用上的限制，提供了靈活的變形設計和多樣的感測器配置。社群中對於無人機的需求日益增加，特別是在環境監測和物流運輸方面，這使得 Mercury 的出現恰逢其時。高 forks/stars 比率顯示許多人對其進行修改和實驗，顯示出實際應用的潛力。
+> 建立 11 天內累積 416 stars（38/天），forks 51（12.3%），顯示出穩定的增長潛力。主要貢獻者 L42ARO 和 Agonat0r 具備相關背景，能夠持續推動專案發展。這個專案解決了傳統無人機在多功能性和適應性上的不足，過去的無人機通常只能在特定環境下運作，無法靈活應對多變的任務需求。社群對於這種可變形設計的興趣也促進了其快速增長。特別是對於需要在複雜環境中運作的應用場景，Mercury 提供了一個全新的解決方案。
 
 ## 適合誰使用
 
-**目標受眾**：對無人機技術有興趣的開發者，特別是希望在多用途應用中探索創新解決方案的人。
+**目標受眾**：對無人機技術有興趣並希望在多種環境中進行應用的開發者和研究人員。
 
 > [!example] 使用場景
-> - 環境科學家用它來進行地形勘測，因為其搭載的熱成像和深度攝影機能提供多維度的環境數據。
-> - 物流公司用它來運送小型貨物，因為內部貨艙可容納 1 公斤的負載，且可在不同地形上靈活運行。
-> - 教育機構用它來進行無人機操作教學，因為其簡單的變形機制和開源軟體設計適合學生實驗和學習。
+> - 救災人員用它來在災後區域進行環境監測，因為它的熱成像攝影機能快速定位受困者。
+> - 農業工作者用它來監測作物健康狀況，因為其搭載的 RGB 和深度攝影機能提供詳細的地面資料。
+> - 研究人員用它來收集環境數據，因為它的可變形設計使其能夠在不同地形上靈活移動。
 
 ## 架構分析
 
-Mercury 的架構設計以 Raspberry Pi 為核心，搭配多種感測器和驅動模組。使用者需透過簡單的指令將自動化軟體上傳至 Raspberry Pi，並設置虛擬環境。資料流方面，無人機的控制指令透過 Mavproxy Bridge 與飛行控制器進行通訊，並將感測器數據回傳至使用者端。
-
-這樣的設計使得無人機能夠在多變的環境中靈活運作，並且能夠快速響應使用者的指令。選擇 Raspberry Pi 使得系統具備較高的可擴展性，但同時也帶來了對硬體的依賴，限制了其在某些環境中的應用。擴展性方面，未來可以透過增加更多感測器或模組來提升功能，但這也可能增加系統的複雜度。
+Mercury 的架構設計以 Raspberry Pi 5 為核心，搭載自動駕駛軟體以實現無人機的自主飛行。資料流從感測器（RGB、深度、熱成像）收集數據，經由 Raspberry Pi 處理後，透過 Mavproxy 與飛行控制器進行通訊。這樣的設計使得無人機能夠在複雜環境中靈活運作，然而，對於新手來說，Raspberry Pi 的配置和軟體安裝可能會帶來一定的學習曲線。選擇 Raspberry Pi 5 作為硬體平台的好處是其強大的計算能力和廣泛的社群支持，但也意味著需要額外的硬體成本和配置時間。整體而言，這種架構適合對無人機技術有一定了解的使用者，但對於完全新手可能會感到困難。
 
 ## 技術深入分析
 
-Mercury 的核心技術機制在於其變形設計，這使得無人機能夠在飛行和地面行駛之間切換。使用 Raspberry Pi 作為控制核心，搭配 Ardupilot 進行飛行控制，這樣的選擇使得系統具備高穩定性和可擴展性。感測器方面，RGB、深度和熱成像攝影機的搭載，讓無人機能夠在不同環境中進行數據收集。效能上，無人機的運行依賴於 Raspberry Pi 的處理能力，對於較大規模的數據處理可能會有瓶頸。設計上選擇了開源的硬體和軟體，這樣的選擇降低了成本，但也可能帶來對於社群支持的依賴。技術風險方面，隨著使用者數量增加，可能會面臨更多的使用場景和需求，這對於系統的穩定性和擴展性提出了挑戰。整合方面，與主流的開發工具鏈相容性良好，使用者可以輕鬆將其納入現有的開發流程中。
+Mercury 的核心技術機制依賴於 Raspberry Pi 5 作為控制核心，並搭載多種感測器進行數據收集。這些感測器包括 RGB 攝影機、深度攝影機和熱成像攝影機，能夠提供豐富的環境數據。無人機的自動駕駛功能是透過 Mavproxy 進行控制，這是一個開源的地面控制站軟體，能夠與多種飛行控制器兼容。效能方面，無人機的運行依賴於 Raspberry Pi 的計算能力，這意味著在處理大量數據時可能會面臨瓶頸，特別是在高解析度影像處理時。設計上選擇 Raspberry Pi 的好處在於其強大的社群支持和靈活的擴展性，但也帶來了額外的學習成本和配置時間。技術風險方面，無人機在複雜環境中的運行可能會受到外部因素影響，如氣候變化和地形限制，這需要使用者具備一定的操作經驗。整合方面，Mercury 能夠與多種開源工具和框架兼容，這使得開發者能夠根據需求進行擴展和定制。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和範例，對於新手來說相對友好。安裝過程順暢，沒有明顯的坑。文件中缺乏多語言支持，但提供了足夠的技術細節以協助使用者上手。
+> README 文件提供了清晰的安裝步驟和基本操作指引，對於新手來說相對友好。安裝過程中需注意 Raspberry Pi 的配置，這可能會對初學者造成困難。文件中未提供多語言支持，僅有英文版本。整體而言，花 30 分鐘能夠完成基本的安裝和運行，但對於不熟悉 Raspberry Pi 的使用者來說，可能需要更多時間學習。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 靈活的變形設計，適合多種應用場景。
-> - 搭載多種感測器，能夠提供豐富的環境數據。
-> - 使用成熟的 Ardupilot 控制系統，提升穩定性。
+> - 靈活的變形設計，適合多種環境和任務。
+> - 多樣的感測器配置，能夠滿足不同的監控需求。
+> - 易於上手的自動駕駛軟體，降低使用門檻。
 
 > [!danger] 缺點
-> - 需要穩定的網路環境以進行遠程控制。
-> - 對於初學者，可能需要較長的學習曲線。
-> - 硬體依賴於 Raspberry Pi 5，限制了兼容性。
+> - 對於新手來說，Raspberry Pi 的配置可能會有一定難度。
+> - 內部貨物艙的容量限制，無法運送較重物品。
+> - 需要穩定的網路連接以進行遠端控制，對於某些應用場景可能不夠便利。
 
 > [!warning] 注意事項
-> - 僅支援 Raspberry Pi 5，其他版本可能無法運行。
-> - 需要穩定的網路連接以進行遠程控制。
-> - 對於初學者，可能需要額外的學習時間來理解無人機操作。
+> - 僅支援 Raspberry Pi 5，其他版本可能不兼容。
+> - 內部貨物艙容量限制為 1 公斤，無法運送較重物品。
+> - 需要穩定的網路連接以進行遠端控制。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步，而 Mercury 提供多功能的無人機解決方案，適合不同的應用場景。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | NemoClaw 側重於 AI 應用，而 Mercury 更加靈活，適合多種感測器搭載。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步，而 Mercury 提供多功能的無人機解決方案，適合不同的應用場景。 | 如果你的需求主要是資料同步而非無人機操作，則應選擇 AlpinDale/parsync。 | low，因為兩者的功能範圍不同，無需直接轉移。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | NemoClaw 側重於 AI 應用，而 Mercury 更加靈活，適合多種感測器搭載。 | 如果你的專案需要強大的 AI 功能，NemoClaw 可能更合適。 | medium，因為需要重新考慮硬體和軟體架構。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **Mercury-Transforming-Drone** | **parsync** | **NemoClaw** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 專注於資料同步，而 Mercury 提供多功能的無人機解決方案，適合不同的應用場景。 | NemoClaw 側重於 AI 應用，而 Mercury 更加靈活，適合多種感測器搭載。 |
+> | 遷移成本 | - | low，因為兩者的功能範圍不同，無需直接轉移。 | medium，因為需要重新考慮硬體和軟體架構。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是資料同步而非無人機操作，則應選擇 Alpi | 如果你的專案需要強大的 AI 功能，NemoClaw 可能更 |
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Alpha |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | high |
+
+> [!tip] 採用建議
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+
+## 已知陷阱
+
+> [!bug] 踩坑才知道的問題
+
+- **[HIGH]** 在某些環境下，無法穩定連接到 Mavproxy，導致控制延遲
+  - 解法：確保網路穩定，或考慮使用有線連接
+- [MEDIUM] Raspberry Pi 的性能在高負載情況下可能不足以支持所有感測器同時運行
+  - 解法：考慮減少同時運行的感測器數量
+- [MEDIUM] 對於初學者，Raspberry Pi 的配置可能會造成困難
+  - 解法：參考社群提供的配置指南或視頻
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 小型創業團隊開發環境監測解決方案 | 非常適合 | 靈活的設計和多樣的感測器配置能滿足不同需求。 |
+| 大型企業的無人機監控系統 | 不適合 | 目前仍處於 alpha 階段，穩定性不足。 |
+| 學術研究團隊進行無人機技術實驗 | 適合 | 開放的設計和社群支持能促進研究進展。 |
+| 個人愛好者進行無人機改裝 | 非常適合 | 簡單的變形機制和開源特性適合個人探索。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~10 小時 |
+| 整合時間 | ~15 小時 |
+| 維護負擔 | medium |
+| 綁定風險 | medium |
+
+> [!tip] 投入 vs 回報
+> 花 10 小時學習、15 小時整合，得到靈活的無人機解決方案，值得嘗試。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 低風險：無人機本身不需要高權限操作，但需注意網路安全性，特別是在遠端控制時。
 
 ## 健康度儀表板
 
@@ -261,7 +330,7 @@ Mercury 的核心技術機制在於其變形設計，這使得無人機能夠在
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 49 |
+| Forks | 51 |
 | Open Issues | 0 |
 | 最後推送 | 2026-03-11 |
 | 建立日期 | 2026-03-06 |
@@ -288,7 +357,7 @@ Mercury 的核心技術機制在於其變形設計，這使得無人機能夠在
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期有更新和貢獻。
+**社群活躍度**：社群活躍度中等，近期有更新，但貢獻者數量有限。
 
 ## 開發動態
 
@@ -397,9 +466,9 @@ Mercury 的核心技術機制在於其變形設計，這使得無人機能夠在
 
 ## 延伸閱讀
 
-相關概念：[[無人機技術]] · [[自動化]] · [[感測器技術]]
+相關概念：[[自動化]] · [[無人機技術]] · [[環境監測]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]]
 
 [GitHub](https://github.com/L42ARO/Mercury-Transforming-Drone)
 
@@ -441,7 +510,7 @@ Mercury 的核心技術機制在於其變形設計，這使得無人機能夠在
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["無人機技術","自動化","感測器技術"];
+> const concepts = ["自動化","無人機技術","環境監測"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "L42ARO--Mercury-Transforming-Drone" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

@@ -6,10 +6,10 @@ owner_type: User
 language: JavaScript
 license: AGPL-3.0
 description: "Your personal intelligence agent. Watches the world from multiple data sources and pings you when something changes."
-homepage: ""
-stars: 3081
-stars_per_day: 1027
-forks: 386
+homepage: "https://crucix.live"
+stars: 3092
+stars_per_day: 1031
+forks: 387
 open_issues: 16
 created: 2026-03-14
 pushed_at: 2026-03-17
@@ -26,23 +26,23 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-17
-use_case: "一個個人智能代理，從多個數據來源監控世界並在變化時通知你。"
+use_case: "整合多個資料來源，實時監控並在變更時通知你的個人智能代理。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 2
 next_review: "2026-03-21"
-contributor_count: 3
+contributor_count: 5
 engagement: "medium"
-issue_close_rate: 7
-repo_size_kb: 2418
-readme_length: 9961
+issue_close_rate: 11
+repo_size_kb: 2450
+readme_length: 10000
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-17"
-star_history: "2026-03-17:1888,2026-03-17:1918,2026-03-18:3081"
+star_history: "2026-03-17:1888,2026-03-17:1918,2026-03-18:3081,2026-03-18:3092"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "Crucix"
   - "calesthio/Crucix"
-  - "一個個人智能代理，從多個數據來源監控世界並在變化時通知你。"
+  - "整合多個資料來源，實時監控並在變更時通知你的個人智能代理。"
 ---
 
 # Crucix
 
-**1.9k** stars · **959** stars/天 · 建立 2 天前 · JavaScript · AGPL-3.0
+**3.1k** stars · **1.0k** stars/天 · 建立 3 天前 · JavaScript · AGPL-3.0
 
 ```dataviewjs
 const me = dv.page("Repos/calesthio--Crucix");
@@ -69,13 +69,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```
 
 > [!summary] 一句話摘要
-> 一個個人智能代理，從多個數據來源監控世界並在變化時通知你。
+> 整合多個資料來源，實時監控並在變更時通知你的個人智能代理。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (959 stars/day)
-> **授權** AGPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Medium
-> **適合** 需要即時監控多個開源情報來源的獨立開發者或分析師。
-> **一句話重點** Crucix 的設計理念是將所有開源情報整合到一個本地儀表板，讓用戶能夠隨時獲取即時數據。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (1.0k stars/day)
+> **授權** AGPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 需要即時獲取多元開放數據的研究人員和分析師。
+> **一句話重點** Crucix 提供了一個無雲端的解決方案，讓用戶能夠在本地獲取和分析即時情報，這在當前的數據隱私環境中尤為重要。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -99,26 +99,24 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習，3 小時整合，得到即時情報監控的能力，值得一試。
+> **結論** 花 5 小時學習，3 小時整合，得到即時情報的能力，值得投入。
 
 > [!abstract] 核心創新
-> Crucix 將 27 個開源情報來源整合到一個本地儀表板，無需雲端支持。
+> Crucix 將 27 個開放數據來源整合到一個本地儀表板，並提供即時更新和多層級警報系統。
 
 ## 專案簡介
 
-Crucix 是一個本地智能引擎，能夠從 27 個開源情報來源中提取數據，並每 15 分鐘自動更新一次，將所有信息集中在一個儀表板上。用戶可以透過簡單的命令（例如 `/brief` 和 `/sweep`）獲得即時報告，並且可以選擇連接 LLM 以獲得更深入的分析與交易建議。這樣的設計使得用戶無需依賴雲端服務，所有數據都在本地處理，強調隱私與安全。核心功能包括自動刷新、數據合成、變化檢測和多層級警報系統，這些都能在儀表板上直觀呈現。使用者可以透過 Telegram 和 Discord 接收即時通知，並設定敏感度以過濾噪音。
+Crucix 是一個本地智能引擎，整合了 27 個開放來源的情報數據，並提供一個即時更新的儀表板。用戶可以透過簡單的命令啟動監控，系統每 15 分鐘自動掃描所有資料來源，並將變更結果推送至儀表板。這個工具的賣點在於它的無雲端設計，所有數據都在本地處理，並且支持多種 LLM 提供者進行智能分析。用戶可以選擇連接多個 LLM 來生成交易建議，並透過 Telegram 或 Discord 接收即時警報。關鍵指令如 `npm run dev` 啟動服務，並在 `http://localhost:3117` 查看儀表板。這種設計讓用戶能夠在不依賴雲端的情況下，獲得實時的全球情報，適合研究人員、記者和 OSINT 分析師等需要即時數據的人士。
 
-技術上，Crucix 使用 Node.js 和 Express 框架，並且依賴於多個開源 API 來獲取數據，這使得它在性能上相對輕量，且易於部署。與其他類似工具相比，Crucix 的獨特之處在於其無需雲端支持，並且提供了豐富的自定義選項，適合需要即時情報的用戶，如研究人員、記者和交易者。使用者在配置過程中需要注意 API 密鑰的設置，並且在某些情況下可能需要手動處理錯誤。這個專案目前處於活躍開發中，社群反應良好，並且有潛力在未來幾個月內持續增長。
-
-**技術棧**：`Node.js 22+` · `Express 5.1.0`
+**技術棧**：`Node.js 22+` · `Express 5.1.0` · `Docker`
 
 ## 重點功能
 
-- 多來源數據提取 — 每 15 分鐘自動從 27 個開源情報來源提取數據。
-- 即時警報系統 — 當有重要變化時，透過 Telegram 和 Discord 自動推送通知。
-- 自定義 LLM 層 — 可選擇連接多個 LLM 提供者以獲得更深入的分析和交易建議。
-- 本地運行 — 無需雲端，所有數據在本地處理，強調隱私和安全。
-- 儀表板即時更新 — 使用 SSE 技術自動刷新數據，無需手動操作。
+- 多來源整合 — 每 15 分鐘自動掃描 27 個開放數據來源，並在儀表板上顯示變更。
+- 即時警報系統 — 支持 Telegram 和 Discord 通知，並可配置多層級的警報類型（FLASH/PRIORITY/ROUTINE）。
+- LLM 支援 — 可選擇連接多個 LLM 提供者（如 OpenAI、Anthropic），生成基於數據的交易建議。
+- 無需雲端 — 所有數據在本地處理，無需訂閱或雲端服務，保障數據隱私。
+- 自定義配置 — 用戶可透過 `.env` 文件輕鬆配置 API 鍵和其他參數。
 
 ## 快速開始
 
@@ -138,65 +136,64 @@ npm run dev
 ## 程式碼範例
 
 ```js
-[
-  "# 前置條件：Node.js 22+ 環境",
-  "npm install",
-  "# 預期輸出：安裝所有依賴後，啟動儀表板。"
-]
+{
+  "前置條件": "確保已安裝 Node.js 22+",
+  "指令": "npm run dev",
+  "預期輸出": "儀表板將在 http://localhost:3117 自動打開，並開始第一次情報掃描。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天內累積 1918 stars（959/天），forks 234（12.2%），顯示出強烈的興趣。作者 calesthio 之前在開源社群中活躍，這個專案解決了從多個數據來源獲取即時情報的痛點，這在現有工具中較少見。近期的社交媒體討論和開源社群的支持可能促進了其快速增長。高 forks/stars 比率（12.2%）顯示出許多人在實際修改和使用這個工具，而不是僅僅觀望。
+> 建立 3 天就累積 3092 stars（1031/天），forks 387（12.5%），顯示出強烈的社群興趣。作者 calesthio 之前有開發其他開源工具，這個專案解決了即時情報獲取的痛點，因為過去的解決方案往往需要訂閱或是依賴雲端服務，無法提供即時且免費的數據。社群的反應也顯示出對於開放數據的需求，並且有多個功能請求已經被提出，顯示出活躍的開發和使用情況。
 
 ## 適合誰使用
 
-**目標受眾**：需要即時監控多個開源情報來源的獨立開發者或分析師。
+**目標受眾**：需要即時獲取多元開放數據的研究人員和分析師。
 
 > [!example] 使用場景
-> - 研究人員用它來實時監控全球經濟指標，因為它能自動從多個來源提取數據，節省了手動查找的時間。
-> - 交易者用它來獲得即時的市場變化警報，因為系統能夠根據設定的敏感度自動推送重要信息。
-> - 記者用它來追蹤衝突事件和社會情緒變化，因為它提供了多層級的警報系統，幫助他們快速反應。
+> - OSINT 分析師用它來整合多個開放數據來源，因為這樣能在一個儀表板上獲得全面的情報視圖，節省了手動查詢的時間。
+> - 金融交易員用它來生成基於即時數據的交易建議，因為這樣可以快速反應市場變化，提升交易決策的準確性。
+> - 記者用它來追蹤全球事件，因為這樣能即時獲得重要新聞的變化，提升報導的時效性。
 
 ## 架構分析
 
-Crucix 採用單一 Node.js 應用架構，所有數據處理和用戶界面都在本地運行，這樣設計的目的是為了強調隱私和安全性。數據流從 27 個開源 API 獲取情報，並通過 Express 框架提供 RESTful API 供前端儀表板使用。每 15 分鐘進行一次數據提取，並將結果合成後推送到用戶界面，這樣的設計確保了即時性和準確性。
-
-選擇 Node.js 是因為其非阻塞 I/O 特性，使得在高併發的情況下仍能保持良好的性能。這種架構的代價是需要用戶自行管理所有的 API 密鑰和配置，對於不熟悉開發的用戶來說，可能會增加上手難度。擴展性方面，由於所有數據都在本地處理，未來可以輕鬆添加更多數據來源或功能，而不需要依賴外部服務。
+Crucix 採用 Node.js 作為後端框架，並使用 Express 處理 HTTP 請求。資料流從 27 個開放數據來源並行獲取數據，然後在伺服器端進行合成和分析，最後將結果推送到前端儀表板。這種設計使得用戶能夠在本地環境中獲得即時情報，避免了雲端延遲和隱私問題。選擇 Node.js 使得開發者能夠利用現有的 JavaScript 生態系統，並且簡化了部署過程。擴展性方面，這個架構能夠輕鬆添加新的數據來源，但隨著來源數量的增加，可能會面臨性能瓶頸，特別是在高頻率的數據更新情況下。
 
 ## 技術深入分析
 
-Crucix 的核心技術機制在於其能夠從 27 個開源情報來源中提取數據，這些來源包括衛星火災檢測、飛行追蹤、經濟指標等。這些數據每 15 分鐘自動更新，並且通過 Node.js 的非阻塞 I/O 特性，能夠在高併發的情況下保持良好的性能。儀表板使用 SSE 技術來實現即時更新，這使得用戶無需手動刷新頁面。設計取捨方面，選擇本地運行的架構使得用戶能夠完全控制數據，但也意味著需要自行管理所有的 API 密鑰和配置，這對於不熟悉開發的用戶來說是一個挑戰。技術風險方面，未來如果數據來源的 API 發生變化，可能會導致系統無法正常運作。此外，對於大型數據集的處理能力可能有限，這可能會在未來的擴展中成為瓶頸。整合分析方面，Crucix 可以與主流的 CI/CD 工具鏈無縫整合，並且支持多種即時通訊工具，這使得其在開發和運營中都能夠保持高效。
+Crucix 的核心技術機制在於其使用 Node.js 和 Express 來構建一個高效的伺服器，並利用非同步請求從多個資料來源獲取數據。這使得系統能夠在短時間內完成大量的資料查詢，通常在 30 秒內完成所有 27 個來源的掃描。設計上，這個系統優化了資料流的處理，能夠即時將變更推送至前端儀表板，並且使用 SSE 技術實現即時更新。選擇 Node.js 使得開發者能夠利用 JavaScript 的非同步特性，提升了整體效能。隨著資料來源的增加，系統在高頻率更新時可能會面臨性能瓶頸，特別是在資料處理和合成的階段，這需要進一步的優化。整合方面，Crucix 可以輕鬆與其他 JavaScript 生態系統的工具整合，如 CI/CD 流程中的自動化測試和部署。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和配置指南，並且包含了多個範例。安裝過程相對順暢，但對於新手來說，API 密鑰的配置可能會造成困難。整體來說，花 30 分鐘應該能夠成功運行起來。
+> README 文件清晰且包含必要的安裝步驟和範例，讓新手能夠快速上手。安裝過程相對順暢，但需要手動配置 API 鍵，這對新手來說可能有些挑戰。整體來說，花 30 分鐘就能夠成功運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 無需雲端，所有數據在本地處理，增強隱私。
-> - 支持多種 LLM 提供者，增強分析能力。
-> - 自動化數據提取和更新，節省時間。
+> - 無需雲端，所有數據在本地處理，保障隱私。
+> - 支持多種 LLM 提供者，增強數據分析能力。
+> - 即時更新和警報系統，適合需要快速反應的用戶。
 
 > [!danger] 缺點
-> - 需要手動配置 API 密鑰，對新手可能有挑戰。
-> - 在特定環境下可能會遇到啟動問題，需要額外診斷。
-> - 對於大型數據集的處理能力可能有限。
+> - 需要手動配置 API 鍵，對新手不太友好。
+> - 目前僅支持特定的數據來源，擴展性有限。
+> - 在高負載情況下可能面臨性能瓶頸。
 
 > [!warning] 注意事項
 > - 僅支援 Node.js 22 以上版本。
-> - 需要手動配置 API 密鑰，對新手可能有一定門檻。
-> - 在特定環境下，`npm run dev` 可能會靜默失敗，需要手動運行 Node 來診斷問題。
+> - 需要手動配置 API 鍵來使用某些數據來源。
+> - 目前僅支持 27 個特定的開放數據來源，可能無法覆蓋所有需求。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步，而 Crucix 專注於即時情報監控，功能範圍不同。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 側重於網絡安全情報，而 Crucix 提供更廣泛的開源數據來源。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的數據同步功能，但專注於檔案同步而非即時情報更新。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於社交媒體數據的收集，與 Crucix 的多來源整合有所不同。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 針對醫療數據的專用工具，與 Crucix 的通用 OSINT 功能相比，適用範圍更窄。 |
 
 ## 替代方案決策
 
@@ -204,16 +201,16 @@ Crucix 的核心技術機制在於其能夠從 27 個開源情報來源中提取
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步，而 Crucix 專注於即時情報監控，功能範圍不同。 | 如果你的需求主要是文件同步而非即時數據監控，則可以選擇它。 | low，因為兩者的使用場景完全不同。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 側重於網絡安全情報，而 Crucix 提供更廣泛的開源數據來源。 | 如果你的主要需求是網絡安全監控，Shadowbroker 會更適合。 | medium，因為需要重新配置數據來源和警報系統。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於檔案同步，並不提供即時情報更新的功能。 | 如果你的需求是檔案同步而非即時數據監控，則應選擇它。 | low，因為兩者的基本概念相似。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於社交媒體數據的收集，與 Crucix 的多來源整合有所不同。 | 如果你的主要需求是社交媒體數據分析，則應選擇它。 | medium，因為需要調整數據來源的配置。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **Crucix** | **parsync** | **Shadowbroker** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於文件同步，而 Crucix 專注於即時情報監控，功能範圍不同。 | Shadowbroker 側重於網絡安全情報，而 Crucix 提供更廣泛的開源數據來源。 |
-> | 遷移成本 | - | low，因為兩者的使用場景完全不同。 | medium，因為需要重新配置數據來源和警報系統。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是文件同步而非即時數據監控，則可以選擇它。 | 如果你的主要需求是網絡安全監控，Shadowbroker 會 |
+> | 技術路線 | 本專案 | 專注於檔案同步，並不提供即時情報更新的功能。 | 專注於社交媒體數據的收集，與 Crucix 的多來源整合有所不同。 |
+> | 遷移成本 | - | low，因為兩者的基本概念相似。 | medium，因為需要調整數據來源的配置。 |
+> | 適用場景 | 主要場景 | 如果你的需求是檔案同步而非即時數據監控，則應選擇它。 | 如果你的主要需求是社交媒體數據分析，則應選擇它。 |
 
 ## 成熟度評估
 
@@ -224,27 +221,26 @@ Crucix 的核心技術機制在於其能夠從 27 個開源情報來源中提取
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和開發，但不建議用於生產環境。
+> 適合個人試用和探索，但不建議用於生產環境的核心應用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Windows 環境中，`npm run dev` 可能會靜默失敗
-  - 解法：直接使用 Node.js 運行 `node --trace-warnings server.mjs` 來診斷問題。
-- [MEDIUM] 某些 API 密鑰配置不當會導致數據無法更新
-  - 解法：仔細檢查 `.env` 文件中的配置，確保所有密鑰正確無誤。
-- [MEDIUM] 初次啟動時儀表板可能顯示空白
-  - 解法：等待第一次數據提取完成，通常需要 30-60 秒。
+- **[HIGH]** 在某些系統上，`npm run dev` 可能會靜默失敗，無法顯示錯誤信息。
+  - 解法：直接使用 `node --trace-warnings server.mjs` 來啟動。
+- [MEDIUM] 需要手動配置 API 鍵，對於新手來說可能造成困惑。
+  - 解法：參考 README 中的配置說明，逐步完成設置。
+- [MEDIUM] 在高負載情況下，數據更新可能會延遲。
+  - 解法：調整掃描頻率或優化資料來源的配置。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要實時監控全球經濟指標的金融分析師 | 非常適合 | Crucix 提供多個經濟數據來源，能夠即時更新。 |
-| 小型團隊需要跟蹤社會情緒變化的研究者 | 適合 | 無需雲端，數據在本地處理，保護隱私。 |
-| 大型企業需要高頻次的市場變化警報 | 普通 | 雖然功能強大，但可能在處理大型數據集時表現不佳。 |
-| 對開源情報感興趣的獨立開發者 | 非常適合 | 提供了豐富的數據來源和自定義選項。 |
+| 10 人以下的新創公司進行 OSINT 分析 | 非常適合 | 因為它提供了即時的數據整合，適合小型團隊的需求。 |
+| 大型金融機構需要即時市場數據 | 普通 | 雖然功能強大，但可能需要更多的擴展性和穩定性。 |
+| 獨立記者追蹤全球事件 | 非常適合 | 因為它能夠即時獲取多元數據，提升報導的時效性。 |
 
 ## 採用成本分析
 
@@ -256,12 +252,12 @@ Crucix 的核心技術機制在於其能夠從 27 個開源情報來源中提取
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到即時情報監控的能力，值得一試。
+> 花 5 小時學習，3 小時整合，得到即時情報的能力，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：本工具無需高權限運行，所有數據在本地處理，並且不存取敏感資料。依賴鏈的信任程度較高，未發現明顯的供應鏈風險。
+> 低風險：Crucix 本身不需要高權限運行，並且所有數據在本地處理，不會存取敏感資料。依賴的庫也相對穩定，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -326,11 +322,12 @@ Crucix 的核心技術機制在於其能夠從 27 個開源情報來源中提取
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 234 |
-| Open Issues | 13 |
-| Issue 解決率 | 7% (1 closed) |
-| 最後推送 | 2026-03-16 |
+| Forks | 387 |
+| Open Issues | 16 |
+| Issue 解決率 | 11% (2 closed) |
+| 最後推送 | 2026-03-17 |
 | 建立日期 | 2026-03-14 |
+| 官方網站 | [Link](https://crucix.live) |
 | Repo 大小 | 2.4 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/calesthio/Crucix) |
 
@@ -348,26 +345,31 @@ Crucix 的核心技術機制在於其能夠從 27 個開源情報來源中提取
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@calesthio](https://github.com/calesthio) | 17 |
+> | [@calesthio](https://github.com/calesthio) | 25 |
+> | [@DanNO248](https://github.com/DanNO248) | 5 |
 > | [@VergilSkye](https://github.com/VergilSkye) | 4 |
 > | [@The-R4V3N](https://github.com/The-R4V3N) | 3 |
+> | [@xaoscience](https://github.com/xaoscience) | 2 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，近期有多次提交和討論。
-**連結**：[文件](https://github.com/calesthio/Crucix)
+**社群活躍度**：社群活躍，開發者定期更新並回應問題。
+**連結**：[文件](https://crucix.live)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-15 ~ 2026-03-16）
-> **活躍天數** 2 天 · **最新 commit** chore: add CODEOWNERS and update gitignore
+> [!abstract] 最近 10 次 commit（2026-03-16 ~ 2026-03-17）
+> **活躍天數** 2 天 · **最新 commit** Merge pull request #26 from trisk/aljazeera-url
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#7](https://github.com/calesthio/Crucix/issues/7) | Added Anthropic API but still getting LLM not configured | 1 | 2 |
+> | [#30](https://github.com/calesthio/Crucix/issues/30) | [Feature] Add Ollama Provider Support for Selft-Hosted Optio `enhancement` | 2 | 1 |
+> | [#25](https://github.com/calesthio/Crucix/issues/25) | Prebuilt docker images on ghcr / dockerhub | 1 | 2 |
+> | [#15](https://github.com/calesthio/Crucix/issues/15) | [Feature] Add Mistral AI LLM provider `enhancement` | 1 | 0 |
+> | [#7](https://github.com/calesthio/Crucix/issues/7) | Added Anthropic API but still getting LLM not configured | 1 | 4 |
 
 ## README 摘錄
 
@@ -375,30 +377,6 @@ Crucix 的核心技術機制在於其能夠從 27 個開源情報來源中提取
 > # Crucix
 > 
 > **Your own intelligence terminal. 27 sources. One command. Zero cloud.**
-> 
-> [](#quick-start)
-> [](LICENSE)
-> [-orange)](#architecture)
-> [](#data-sources-27)
-> [](#docker)
-> 
-> More screenshots
-> 
-> | Boot Sequence | World Map |
-> |:---:|:---:|
-> |  |  |
-> 
-> | 3D Globe View |
-> |:---:|
-> |  |
-> 
-> Crucix pulls satellite fire detection, flight tracking, radiation monitoring, satellite constellation tracking, economic indicators, live market prices, conflict data, sanctions lists, and social sentiment from 27 open-source intelligence feeds — in parallel, every 15 minutes — and renders everything on a single self-contained Jarvis-style dashboard.
-> 
-> Hook it up to an LLM and it becomes a **two-way intelligence assistant** — pushing multi-tier alerts to Telegram and Discord when something meaningful changes, responding to commands like `/brief` and `/sweep` from your phone, and generating actionable trade ideas grounded in real cross-domain data. Your own analyst that watches the world while you sleep.
-> 
-> No cloud. No telemetry. No subscriptions. Just `node server.mjs` and you're running.
-> 
-> ---
 > 
 > 
 > ## Quick Start
@@ -423,10 +401,10 @@ Crucix 的核心技術機制在於其能夠從 27 個開源情報來源中提取
 > 
 > 
 > ### Optional LLM Layer
-> Connect any of 4 LLM providers for enhanced analysis:
+> Connect any of 6 LLM providers for enhanced analysis:
 > - **AI trade ideas** — quantitative analyst producing 5-8 actionable ideas citing specific data
 > - **Smarter alert evaluation** — LLM classifies signals into FLASH/PRIORITY/ROUTINE tiers with cross-domain correlation and confidence scoring
-> - Providers: Anthropic Claude, OpenAI, Google Gemini, OpenAI Codex (ChatGPT subscription)
+> - Providers: Anthropic Claude, OpenAI, Google Gemini, OpenRouter (Unified API), OpenAI Codex (ChatGPT subscription), MiniMax
 > - Graceful fallback — when LLM is unavailable, a rule-based engine takes over alert evaluation. LLM failures never crash the sweep cycle.
 > 
 > ---
@@ -443,14 +421,16 @@ Crucix 的核心技術機制在於其能夠從 27 個開源情報來源中提取
 > 
 > ### LLM Provider (optional, for AI-enhanced ideas)
 > 
-> Set `LLM_PROVIDER` to one of: `anthropic`, `openai`, `gemini`, `codex`
+> Set `LLM_PROVIDER` to one of: `anthropic`, `openai`, `gemini`, `codex`, `openrouter`, `minimax`
 > 
 > | Provider | Key Required | Default Model |
 > |----------|-------------|---------------|
 > | `anthropic` | `LLM_API_KEY` | claude-sonnet-4-6 |
 > | `openai` | `LLM_API_KEY` | gpt-5.4 |
 > | `gemini` | `LLM_API_KEY` | gemini-3.1-pro |
+> | `openrouter` | `LLM_API_KEY` | openrouter/auto |
 > | `codex` | None (uses `~/.codex/auth.json`) | gpt-5.3-codex |
+> | `minimax` | `LLM_API_KEY` | MiniMax-M2.5 |
 > 
 > For Codex, run `npx @openai/codex login` to authenticate via your ChatGPT subscription.
 > 
@@ -493,7 +473,7 @@ Crucix 的核心技術機制在於其能夠從 27 個開源情報來源中提取
 > |----------|---------|-------------|
 > | `PORT` | `3117` | Dashboard server port |
 > | `REFRESH_INTERVAL_MINUTES` | `15` | Auto-refresh interval |
-> | `LLM_PROVIDER` | disabled | `anthropic`, `openai`, `gemini`, or `codex` |
+> | `LLM_PROVIDER` | disabled | `anthropic`, `openai`, `gemini`, `codex`, `openrouter`, or `minimax` |
 > | `LLM_API_KEY` | — | API key (not needed for codex) |
 > | `LLM_MODEL` | per-provider default | Override model selection |
 > | `TELEGRAM_BOT_TOKEN` | disabled | For Telegram alerts + bot commands |
@@ -535,9 +515,44 @@ Crucix 的核心技術機制在於其能夠從 27 個開源情報來源中提取
 > ---
 > 
 > 
+> ## [Visit The Live Site: crucix.live](https://www.crucix.live/)
+> 
+> [](https://www.crucix.live/)
+> [](https://www.crucix.live/)
+> 
+> [](#quick-start)
+> [](LICENSE)
+> [-orange)](#architecture)
+> [](#data-sources-27)
+> [](#docker)
+> 
+> More screenshots
+> 
+> | Boot Sequence | World Map |
+> |:---:|:---:|
+> |  |  |
+> 
+> | 3D Globe View |
+> |:---:|
+> |  |
+> 
+> > **Live website:** [https://www.crucix.live/](https://www.crucix.live/)
+> > Explore the public demo first, then clone the repo to run Crucix locally.
+> 
+> Crucix pulls satellite fire detection, flight tracking, radiation monitoring, satellite constellation tracking, economic indicators, live market prices, conflict data, sanctions lists, and social sentiment from 27 open-source intelligence feeds — in parallel, every 15 minutes — and renders everything on a single self-contained Jarvis-style dashboard.
+> 
+> Hook it up to an LLM and it becomes a **two-way intelligence assistant** — pushing multi-tier alerts to Telegram and Discord when something meaningful changes, responding to commands like `/brief` and `/sweep` from your phone, and generating actionable trade ideas grounded in real cross-domain data. Your own analyst that watches the world while you sleep.
+> 
+> Try the live demo first at [https://www.crucix.live/](https://www.crucix.live/), then clone the repo when you want the full local stack.
+> 
+> No cloud. No telemetry. No subscriptions. Just `node server.mjs` and you're running.
+> 
+> ---
+> 
+> 
 > # 1. Clone the repo
 > git clone https://github.com/calesthio/Crucix.git
-> cd crucix
+> cd Crucix
 > 
 > 
 > # 4. Start the dashboard
@@ -545,20 +560,15 @@ Crucix 的核心技術機制在於其能夠從 27 個開源情報來源中提取
 > ```
 > 
 > > **If `npm run dev` fails silently** (exits with no output), run Node directly instead:
-> > ```bash
-> > node --trace-warnings server.mjs
-> > ```
-> > This bypasses npm's script runner, which can swallow errors on some systems (particularly PowerShell on Windows). You can also run `node diag.mjs` to diagnose the exact issue — it checks your Node version, tests each module import individually, and verifies port availability. See [Troubleshooting](#troubleshooting) for more.
-> 
-> The dashboard opens automatically at `http://localhost:3117` and immediately begins its first intelligence sweep. This initial sweep queries all 27 sources in parallel and typically takes 30–60 seconds — the dashboar
+> > `
 
 ## 延伸閱讀
 
-相關概念：[[OSINT]] · [[即時通訊]] · [[自動化]]
+相關概念：[[OSINT]] · [[即時通訊]] · [[API 設計]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[novatic14--MANPADS-System-Launcher-and-Rocket|novatic14/MANPADS-System-Launcher-and-Rocket]] · [[uluckyXH--OpenMOSS|uluckyXH/OpenMOSS]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[novatic14--MANPADS-System-Launcher-and-Rocket|novatic14/MANPADS-System-Launcher-and-Rocket]] · [[uluckyXH--OpenMOSS|uluckyXH/OpenMOSS]]
 
-[GitHub](https://github.com/calesthio/Crucix)
+[GitHub](https://github.com/calesthio/Crucix) · [官方網站](https://crucix.live)
 
 ## 相關收錄
 
@@ -598,7 +608,7 @@ Crucix 的核心技術機制在於其能夠從 27 個開源情報來源中提取
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["OSINT","即時通訊","自動化"];
+> const concepts = ["OSINT","即時通訊","API 設計"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "calesthio--Crucix" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

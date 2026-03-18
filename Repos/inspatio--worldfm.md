@@ -7,17 +7,17 @@ language: Python
 license: Apache-2.0
 description: ""
 homepage: ""
-stars: 599
-stars_per_day: 46
-forks: 64
+stars: 613
+stars_per_day: 44
+forks: 69
 open_issues: 5
 created: 2026-03-03
-pushed_at: 2026-03-06
+pushed_at: 2026-03-17
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "AI/ML"
-subcategory: "影像生成"
+subcategory: "圖像生成"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "生成多視角影像的即時擴散模型。"
+use_case: "實時多視角擴散模型，能根據參考圖像和目標相機姿勢生成新視點的圖像。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-03-17"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 17
-repo_size_kb: 523
-readme_length: 5046
+repo_size_kb: 3814
+readme_length: 5149
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:515,2026-03-14:517,2026-03-15:534,2026-03-16:584,2026-03-17:599"
+star_history: "2026-03-10:515,2026-03-14:517,2026-03-15:534,2026-03-16:584,2026-03-17:599,2026-03-18:613"
 tags:
   - github
   - "category/ai_ml"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "worldfm"
   - "inspatio/worldfm"
-  - "生成多視角影像的即時擴散模型。"
+  - "實時多視角擴散模型，能根據參考圖像和目標相機姿勢生成新視點的圖像。"
 ---
 
 # worldfm
 
-**599** stars · **46** stars/天 · 建立 13 天前 · Python · Apache-2.0
+**613** stars · **44** stars/天 · 建立 14 天前 · Python · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/inspatio--worldfm");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 生成多視角影像的即時擴散模型。
+> 實時多視角擴散模型，能根據參考圖像和目標相機姿勢生成新視點的圖像。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (46 stars/day)
-> **授權** Apache-2.0 (商業友好) · **維護** Moderate (最後推送 10 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要即時生成多視角影像的開發者，尤其是在遊戲和虛擬實境領域。
-> **一句話重點** WorldFM 的即時多視角影像生成能力，為許多需要視覺效果的應用提供了新的解決方案。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (44 stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要生成多視角圖像的計算機視覺研究者和開發者。
+> **一句話重點** WorldFM 的多視角生成能力在計算機視覺領域中提供了一個全新的解決方案，特別適合需要高品質視覺效果的應用場景。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/inspatio--worldfm");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "影像生成" && p.file.name !== "inspatio--worldfm" && p.status !== "archived")
+>     .where(p => p.subcategory === "圖像生成" && p.file.name !== "inspatio--worldfm" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,32 +96,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 影像生成 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 圖像生成 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~8h · **綁定風險** medium
-> **結論** 花 8 小時學習，12 小時整合，得到即時多視角影像生成的能力，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
+> **結論** 花 10 小時學習，15 小時整合，得到高品質的多視角生成效果，值得投入。
 
 > [!abstract] 核心創新
-> WorldFM 提供即時多視角影像生成的能力，這在目前的開源工具中尚屬首創。
+> WorldFM 提供了一個實時的多視角圖像生成解決方案，能夠根據參考圖像和相機姿勢生成新視點的圖像。
 
 ## 專案簡介
 
-WorldFM 是一個即時的多視角擴散模型，能根據參考影像和目標相機位置生成新視角的影像。用戶只需提供一張參考影像及其相機內部參數（K矩陣）和相機到世界的轉換矩陣（c2w），模型將自動生成對應的影像。這個設計使得用戶能夠在不同的視角下獲得一致的場景生成，適合需要多視角展示的應用場景。關鍵指令如 `python run_pipeline.py --meta demo/meta.json --output_dir outputs`，可生成沿著預定相機路徑的 MP4 影片，展示生成的影像。技術上，WorldFM 使用 PyTorch 2.5 和 CUDA 12.4，並依賴多個子模組如 Real-ESRGAN 和 HunyuanWorld，這些選擇使得模型在生成質量和速度上達到平衡。
+WorldFM 是一個實時多視角擴散模型，能根據給定的參考圖像和目標相機姿勢生成新視點的圖像。用戶只需提供一張參考圖像及其相機內部參數（K矩陣）和外部參數（c2w矩陣），即可生成多個視角的圖像。這個設計使得用戶能夠在不同的相機位置下獲得一致的場景生成，特別適合需要高品質視覺效果的應用。核心的命令是 `python run_pipeline.py --meta demo/meta.json --output_dir outputs`，這會生成一段沿著預定相機軌跡的 MP4 視頻。技術上，WorldFM 使用了 PyTorch 2.5 和 CUDA 12.4，並依賴多個開源庫，如 `diffusers` 和 `opencv-python`，以支持圖像處理和生成。這樣的選擇使得模型在性能上能夠充分利用 GPU 加速，並且在生成速度和質量上達到平衡。
 
-相較於其他影像生成工具，如 NVIDIA 的 GANs，WorldFM 更專注於多視角生成，這使得它在需要多視角影像的應用中更具優勢。使用者可能會遇到的問題包括如何整合其他開源全景生成模型，這在 README 中有提及。該專案目前處於活躍開發階段，社群回應速度尚可，開放問題數量也顯示出用戶的需求。整體來說，這是一個值得關注的專案，特別是對於需要即時生成多視角影像的開發者。適合在需要視覺效果的應用中使用，但對於不需要多視角的簡單影像生成則不太適合。
+與其他同類工具相比，WorldFM 的獨特之處在於其能夠生成多視角圖像，這在傳統的單視角生成模型中是無法實現的。使用者可以在多個姿勢下獲得不同的輸出，這對於需要多視角展示的應用場景尤為重要。實際使用中，模型的效能依賴於所選擇的生成步驟（如 `--step 1` 或 `--step 2`），這直接影響到生成的速度和質量。維護者的社群活躍度尚可，但目前的開放問題顯示出對於模型細節和使用的需求，這可能會影響新手的上手體驗。整體來看，這是一個具有潛力的工具，但對於新手來說，可能需要一些時間來熟悉其環境和依賴。適合需要生成多視角圖像的開發者，尤其是在遊戲開發或虛擬現實等領域。
 
 **技術棧**：`Python 3.10` · `PyTorch 2.5` · `CUDA 12.4`
 
 ## 重點功能
 
-- 即時多視角生成 — 根據參考影像和相機位置生成新視角影像，支持多達 N 個視角。
-- 多種模型選擇 — 提供兩種模型（1步和2步）以平衡速度和質量，使用 `--step` 參數選擇。
-- 簡單的命令行介面 — 使用 `python run_pipeline.py` 指令輕鬆生成影像。
-- 支持自定義相機參數 — 用戶可自定義相機內部參數和轉換矩陣，靈活應用於不同場景。
-- 整合多個開源模型 — 可與 HunyuanWorld-1.0 等開源全景生成模型整合，提升生成效果。
+- 實時多視角生成 — 根據參考圖像和相機姿勢生成多個視角的圖像。
+- 支持自定義相機參數 — 用戶可提供 K 矩陣和 c2w 矩陣來調整生成效果。
+- 可選生成步驟 — 使用 `--step 1` 或 `--step 2` 來平衡生成速度和質量。
+- 簡單的命令行介面 — 透過 `python run_pipeline.py --meta demo/meta.json --output_dir outputs` 生成視頻。
+- 開源依賴 — 基於 PyTorch 和多個流行的開源庫，易於整合和擴展。
 
 ## 快速開始
 
@@ -133,7 +133,7 @@ bash setup.sh
 ```bash
 python download_ckpts.py
 ```
-3. 運行示範生成影像
+3. 運行示範生成視頻
 ```bash
 python run_pipeline.py --meta demo/meta.json --output_dir outputs
 ```
@@ -141,54 +141,54 @@ python run_pipeline.py --meta demo/meta.json --output_dir outputs
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 13 天就累積 599 stars（46/天），forks 64（10.7%），顯示出穩定的增長潛力。作者 WeihongPan 在影像生成領域有一定的經驗，這個專案解決了多視角影像生成的需求，之前的解決方案往往無法提供即時生成的能力。近期的社群討論集中在如何進一步提升模型的可用性和功能，這顯示出用戶對於該工具的期望。技術上，這個工具的出現得益於深度學習和計算機視覺技術的進步，尤其是擴散模型的發展。forks/stars 比率在 10% 以上，顯示出有相當比例的用戶在實際修改和使用這個工具。
+> 建立 14 天內累積 613 stars（44/天），forks 69（11.3%），顯示出一定的社群關注。作者 WeihongPan 以其在計算機視覺領域的背景，提供了一個解決多視角生成的有效方案，之前的工具往往只能處理單一視角，無法滿足多視角需求。社群中對於模型細節的討論和需求顯示出使用者對於這個工具的興趣和期待。技術上，隨著深度學習和計算機視覺技術的進步，這個工具的實現變得可行，並且能夠在現有的生成模型基礎上進行擴展。forks/stars 比率為 11.3%，顯示出有相當比例的使用者在進行實際的修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要即時生成多視角影像的開發者，尤其是在遊戲和虛擬實境領域。
+**目標受眾**：需要生成多視角圖像的計算機視覺研究者和開發者。
 
 > [!example] 使用場景
-> - 3D 藝術家用它來生成多視角的場景影像，因為這樣可以快速展示作品的不同角度，提升客戶的視覺體驗。
-> - 遊戲開發者用它來創建遊戲中的環境視角，因為能夠即時生成不同視角的影像，節省了大量的手工設計時間。
-> - 虛擬實境開發者用它來生成全景影像，因為這樣可以在不同的虛擬場景中提供更真實的沉浸感。
+> - 遊戲開發者用它來生成多視角的遊戲場景，因為這能提升遊戲的沉浸感和視覺效果。
+> - 虛擬現實設計師用它來創建多視角的虛擬環境，因為這樣可以讓用戶在不同角度下體驗同一場景，增強互動性。
+> - 電影製作人用它來生成不同視角的場景，因為這能夠節省拍攝成本並提高後期製作的效率。
 
 ## 架構分析
 
-WorldFM 的架構基於多模組設計，核心是擴散模型，並集成了多個子模組以增強功能。資料流從用戶輸入的參考影像開始，經過相機參數處理，再由擴散模型生成新視角影像。選擇這種架構的原因在於能夠靈活應對不同的場景需求，但代價是需要用戶具備一定的技術背景來進行配置。擴展性方面，雖然模型本身能處理多視角生成，但在整合其他開源模型時可能會遇到兼容性問題，這需要額外的開發工作。整體來說，這種設計能夠滿足即時生成的需求，但對於不熟悉深度學習的用戶來說，入門門檻較高。
+WorldFM 的架構基於多視角擴散模型，設計上選擇了 PyTorch 作為主要框架，因為其在深度學習中的廣泛應用和強大性能。資料流方面，模型首先接收參考圖像和相機參數，然後通過內部生成模型生成新視角圖像。這樣的設計使得用戶能夠靈活地調整生成參數，並在不同的相機位置下獲得一致的效果。選擇 PyTorch 而非 TensorFlow 是因為其更適合快速原型開發和調試，雖然這可能會增加學習成本。擴展性方面，模型依賴於多個開源庫，這使得用戶能夠根據需求進行自定義和擴展，但也增加了依賴管理的複雜度。
 
 ## 技術深入分析
 
-WorldFM 的核心技術機制是基於擴散模型，這種模型在生成影像時能夠考慮到多個視角的需求。使用 PyTorch 作為主要框架，這使得模型能夠充分利用 GPU 加速來提升生成速度。效能方面，模型能夠在合理的時間內生成高質量影像，但具體的生成速度依賴於硬體配置和場景複雜度。選擇擴散模型而非傳統的 GANs 是因為其在生成多樣性和質量上表現更佳，然而這也意味著需要更多的計算資源。技術風險方面，隨著用戶需求的增加，模型的擴展性可能會受到挑戰，特別是在整合其他開源模型時。整合方面，與主流框架的兼容性良好，但在 CI/CD pipeline 中的整合可能需要額外的適配工作。整體來看，WorldFM 在即時生成多視角影像的應用中展現了良好的潛力，但仍需進一步優化使用者體驗。
+WorldFM 的核心技術機制基於擴散模型，這是一種新興的生成技術，能夠在多視角下生成高質量的圖像。使用 PyTorch 作為框架，這使得模型能夠充分利用 GPU 加速，並在生成速度和質量上達到平衡。效能上，模型能夠處理高達數百萬像素的圖像，但需要強大的 GPU 支持，冷啟動時間和記憶體佔用會隨著圖像大小和生成步驟的不同而變化。選擇擴散模型而非傳統的 GAN 模型，主要是因為其在生成質量上表現更佳，雖然這可能會增加計算成本。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在高負載情況下。整合方面，與主流框架的相容性良好，但對於 CI/CD pipeline 的支持尚需進一步強化。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了基本的安裝和使用指導，但缺乏詳細的範例。安裝過程中需要手動配置多個子模組，對新手來說可能會有一定的困難。整體而言，花 30 分鐘能夠完成基本的環境設置，但對於不熟悉的用戶來說，可能需要更長的時間來理解整個流程。
+> README 文件提供了基本的安裝和使用說明，但缺乏詳細範例。安裝過程中需要注意依賴的版本和環境設置，對新手來說可能會有一定的挑戰。整體上，文件的清晰度和完整性有待提高。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 即時生成多視角影像，適合需要快速展示的場景。
-> - 支持多種模型選擇，能根據需求調整生成質量與速度。
-> - 靈活的相機參數設定，能夠適應不同的應用需求。
+> - 支持多視角生成，適合需要高品質視覺效果的應用。
+> - 基於 PyTorch，易於擴展和自定義。
+> - 提供簡單的命令行介面，便於使用。
 
 > [!danger] 缺點
-> - 安裝過程較為繁瑣，需要用戶具備一定的技術背景。
-> - 缺乏詳細的使用文檔，對新手不友好。
-> - 目前僅支持 Linux 和 macOS，不支持 Windows 環境。
+> - 環境設置較為複雜，對新手不友好。
+> - 缺乏詳細的文檔和社群支持。
+> - 對硬體要求高，需要 NVIDIA GPU。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.10 和 CUDA 12.4。
-> - 需要安裝多個子模組，整合過程可能較為複雜。
-> - 不支持 Windows 環境，需要在 Linux 或 macOS 上運行。
-> - 目前缺乏詳細的使用文檔，可能對新手不友好。
+> - 需要 NVIDIA GPU 以支持 CUDA 加速。
+> - 對於新手來說，環境設置可能會有一定的難度。
+> - 目前缺乏詳細的使用文檔和社群支持。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [NVIDIA/StyleGAN](https://github.com/NVIDIA/StyleGAN) | 專注於生成高質量的靜態影像，而 WorldFM 更適合即時多視角生成。 |
-| [OpenAI/DALL-E](https://github.com/OpenAI/DALL-E) | DALL-E 主要生成靜態圖像，而 WorldFM 提供多視角的動態生成能力。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於數據同步，而非圖像生成，適合需要高效數據傳輸的場景。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 主要用於影像處理，功能較為單一，無法實現多視角生成。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 用於 WebSocket 代理，與圖像生成無關，適合網路通訊需求。 |
 
 ## 替代方案決策
 
@@ -196,16 +196,16 @@ WorldFM 的核心技術機制是基於擴散模型，這種模型在生成影像
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [NVIDIA/StyleGAN](https://github.com/NVIDIA/StyleGAN) | 使用生成對抗網絡技術專注於靜態影像生成，而 WorldFM 則專注於即時多視角生成。 | 如果你的需求主要是生成高質量的靜態影像，StyleGAN 會是更好的選擇。 | medium，因為需要重新設計生成流程。 |
-| [OpenAI/DALL-E](https://github.com/OpenAI/DALL-E) | DALL-E 使用文本到圖像生成技術，主要針對靜態圖像，而 WorldFM 提供多視角的動態生成能力。 | 如果你的應用需要根據文本描述生成影像，DALL-E 會更適合。 | high，因為需要完全重構生成邏輯。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 專注於深度學習模型的訓練和推論，而非圖像生成，適合需要高效能計算的場景。 | 如果你的團隊已經在使用 NVIDIA 的生態系統並需要強大的計算能力。 | medium，因為需要重新調整模型和環境設置。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 用於 WebSocket 代理，與圖像生成無關，適合網路通訊需求。 | 如果你的應用主要集中在網路通訊而非圖像生成。 | low，因為不涉及圖像生成的相關轉換。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **worldfm** | **StyleGAN** | **DALL-E** |
+> | 維度 | **worldfm** | **NemoClaw** | **tg-ws-proxy** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用生成對抗網絡技術專注於靜態影像生成，而 WorldFM 則專注於即時多視角生成。 | DALL-E 使用文本到圖像生成技術，主要針對靜態圖像，而 WorldFM 提供多視角的動態生成能力。 |
-> | 遷移成本 | - | medium，因為需要重新設計生成流程。 | high，因為需要完全重構生成邏輯。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是生成高質量的靜態影像，StyleGAN 會 | 如果你的應用需要根據文本描述生成影像，DALL-E 會更適合 |
+> | 技術路線 | 本專案 | 專注於深度學習模型的訓練和推論，而非圖像生成，適合需要高效能計算的場景。 | 用於 WebSocket 代理，與圖像生成無關，適合網路通訊需求。 |
+> | 遷移成本 | - | medium，因為需要重新調整模型和環境設置。 | low，因為不涉及圖像生成的相關轉換。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 NVIDIA 的生態系統並需要強大的 | 如果你的應用主要集中在網路通訊而非圖像生成。 |
 
 ## 成熟度評估
 
@@ -216,56 +216,73 @@ WorldFM 的核心技術機制是基於擴散模型，這種模型在生成影像
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人或小型項目試用，但不建議用於生產環境的核心功能。
+> 適合個人項目試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 安裝過程中可能遇到依賴衝突，特別是在不同版本的 CUDA 和 PyTorch 之間。
-  - 解法：確保使用相容的版本，並參考官方文檔進行配置。
-- [MEDIUM] 生成影像的質量可能因場景複雜度而異，簡單場景效果較好，複雜場景可能生成失敗。
-  - 解法：在生成前簡化場景或調整參數。
-- [MEDIUM] 缺乏詳細的錯誤信息，可能使得調試過程變得困難。
-  - 解法：查看 GitHub Issues 獲取其他用戶的解決方案。
+- **[HIGH]** 在某些環境下，依賴安裝可能會失敗，特別是 CUDA 版本不匹配時。
+  - 解法：確保 CUDA 和 PyTorch 版本相容，必要時手動安裝。
+- [MEDIUM] 生成速度可能會因 GPU 負載而變慢。
+  - 解法：在低負載時運行生成任務，或考慮升級硬體。
+- [MEDIUM] 缺乏詳細的使用範例，可能導致新手上手困難。
+  - 解法：參考社群討論或尋找其他用戶的範例。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 遊戲開發中的環境設計 | 非常適合 | 能夠快速生成多視角影像，提升開發效率。 |
-| 虛擬實境應用中的全景影像生成 | 適合 | 提供即時生成能力，增強沉浸感。 |
-| 靜態影像展示 | 不適合 | 主要針對動態多視角生成，不適合靜態需求。 |
-| 小型創業團隊的快速原型開發 | 適合 | 能夠快速迭代和生成多視角影像，適合快速開發需求。 |
+| 10 人以下的新創公司後端 API | 適合 | 能夠快速生成多視角圖像，提升產品的視覺效果。 |
+| 大型遊戲開發團隊 | 非常適合 | 需要高品質的多視角生成以增強遊戲的沉浸感。 |
+| 個人開發者的側項目 | 普通 | 雖然功能強大，但環境設置可能會讓新手感到困難。 |
+| 需要即時生成的商業應用 | 不適合 | 生成速度可能無法滿足即時需求。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~8 小時 |
-| 整合時間 | ~12 小時 |
+| 學習時間 | ~10 小時 |
+| 整合時間 | ~15 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 8 小時學習，12 小時整合，得到即時多視角影像生成的能力，值得投入。
+> 花 10 小時學習，15 小時整合，得到高品質的多視角生成效果，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，並且不存取敏感資料。依賴的庫和模組均為開源，無已知的供應鏈風險，適合在 CI/CD pipeline 中使用。
+> 低風險：該工具不需要高權限，且不存取敏感資料，但需注意依賴庫的安全性和更新。整體依賴鏈需定期檢查以防範潛在的供應鏈風險。
 
 ## 生態系整合
 
 > [!abstract] 如何融入你的工具鏈
 
-WorldFM 最常與深度學習框架如 PyTorch 搭配使用，通常在開發和建置階段進行整合。在一個使用 PyTorch 的專案中，你可以將 WorldFM 作為影像生成模組，具體做法是通過 `import worldfm` 將其整合進你的模型中。支援 GitHub Actions 和其他 CI 工具，能夠輕鬆地融入現有的開發流程。整合的摩擦點主要在於依賴的子模組版本管理，可能需要額外的配置來確保相容性。
+WorldFM 通常與 PyTorch 和 CUDA 環境搭配使用，適合在深度學習和計算機視覺的工作流中進行。實際整合範例可在用戶的深度學習項目中使用，透過 `python run_pipeline.py` 命令生成多視角圖像。該工具支援與 GitHub Actions 等 CI 工具的整合，但對於某些 IDE 的支援尚不明確。最常見的整合問題是依賴版本不匹配，需確保環境設置的一致性。
 
 ## 歷史脈絡
 
 > [!info] 這個工具為什麼現在出現？
 
-在 WorldFM 出現之前，多視角影像生成主要依賴於靜態影像生成技術，這些技術無法滿足即時生成的需求。隨著深度學習技術的進步，特別是擴散模型的發展，使得即時多視角生成成為可能。WorldFM 代表了這一技術趨勢的前沿，未來可能會在虛擬實境和遊戲開發中得到更廣泛的應用。
+在 WorldFM 出現之前，多視角生成主要依賴於傳統的圖像處理技術，這些技術往往無法滿足高品質生成的需求。隨著深度學習技術的進步，特別是擴散模型的發展，使得這種生成方式變得可行。WorldFM 代表了計算機視覺領域中對於多視角生成的需求，未來可能會隨著技術的進一步發展而演變，成為更廣泛應用的工具。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-5 人的小型團隊
+
+**前置技能**：
+- 熟悉 Python
+- 了解深度學習基本概念
+- 有使用 PyTorch 的經驗
+
+> [!tip] 導入策略
+> 第一週：在個人項目中試用。第二週：在內部工具中進行小範圍測試。第三週：收集反饋並調整使用方式。第四週：在主產品中整合並發布。
+
+**成功指標**：生成的圖像質量提升 30%，用戶滿意度提高。
+
+> [!warning] 退出計畫
+> 所有設定和模型權重均可導出為標準格式，便於轉移至其他工具或平台。
 
 ## 健康度儀表板
 
@@ -330,12 +347,12 @@ WorldFM 最常與深度學習框架如 PyTorch 搭配使用，通常在開發和
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 64 |
+| Forks | 69 |
 | Open Issues | 5 |
 | Issue 解決率 | 17% (1 closed) |
-| 最後推送 | 2026-03-06 |
+| 最後推送 | 2026-03-17 |
 | 建立日期 | 2026-03-03 |
-| Repo 大小 | 523 KB |
+| Repo 大小 | 3.7 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/inspatio/worldfm) |
 
 > [!info]- 主要依賴
@@ -345,17 +362,17 @@ WorldFM 最常與深度學習框架如 PyTorch 搭配使用，通常在開發和
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@WeihongPan](https://github.com/WeihongPan) | 5 |
+> | [@WeihongPan](https://github.com/WeihongPan) | 6 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，問題回應速度中等。
+**社群活躍度**：社群活躍度中等，存在一些未解決的問題。
 **連結**：[文件](https://inspatio.github.io/worldfm)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-05 ~ 2026-03-06）
-> **活躍天數** 2 天 · **最新 commit** Update README: add checkpoint clarification
+> [!abstract] 最近 10 次 commit（2026-03-05 ~ 2026-03-17）
+> **活躍天數** 3 天 · **最新 commit** Update README: add arxiv link
 
 ## 熱門議題
 
@@ -372,6 +389,10 @@ WorldFM 最常與深度學習框架如 PyTorch 搭配使用，通常在開發和
 
 > [!info]- 展開查看原文 README
 > # WorldFM
+> 
+>     
+> 
+> [](https://github.com/inspatio/worldfm/blob/main/LICENSE)  [](https://arxiv.org/abs/2603.11911)
 > 
 > WorldFM, a real-time multi-view diffusion model. Given a reference image and target camera poses, WorldFM generates images at those new viewpoints. Checkout our website ([WorldFM](https://inspatio.github.io/worldfm)) for videos and interactive results!
 > 
@@ -550,7 +571,7 @@ WorldFM 最常與深度學習框架如 PyTorch 搭配使用，通常在開發和
 
 ## 延伸閱讀
 
-相關概念：[[深度學習]] · [[電腦視覺]] · [[生成對抗網絡]]
+相關概念：[[深度學習]] · [[電腦視覺]] · [[圖像生成]]
 
 相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[duoan--TorchCode|duoan/TorchCode]]
 
@@ -558,11 +579,11 @@ WorldFM 最常與深度學習框架如 PyTorch 搭配使用，通常在開發和
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：影像生成）
+> [!note]- 直接競品（同子分類：圖像生成）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "影像生成" AND file.name != "inspatio--worldfm"
+> WHERE subcategory = "圖像生成" AND file.name != "inspatio--worldfm"
 > SORT stars DESC
 > ```
 
@@ -594,7 +615,7 @@ WorldFM 最常與深度學習框架如 PyTorch 搭配使用，通常在開發和
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["深度學習","電腦視覺","生成對抗網絡"];
+> const concepts = ["深度學習","電腦視覺","圖像生成"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "inspatio--worldfm" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

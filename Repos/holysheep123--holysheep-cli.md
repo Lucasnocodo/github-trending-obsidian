@@ -7,8 +7,8 @@ language: JavaScript
 license: N/A
 description: "🐑 One command to configure all AI coding tools — Claude Code, Codex, Gemini CLI, Cursor, Aider & more"
 homepage: "https://holysheep.ai"
-stars: 304
-stars_per_day: 34
+stars: 301
+stars_per_day: 30
 forks: 1
 open_issues: 1
 created: 2026-03-07
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "一條命令配置所有 AI 編程工具，簡化設定流程。"
+use_case: "一條命令配置所有 AI 編程工具，簡化接入 HolySheep API 的流程。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-03-17"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 2454
-readme_length: 5306
+repo_size_kb: 2467
+readme_length: 5584
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:305,2026-03-14:305,2026-03-15:310,2026-03-16:310,2026-03-17:304"
+star_history: "2026-03-10:305,2026-03-14:305,2026-03-15:310,2026-03-16:310,2026-03-17:304,2026-03-18:301"
 tags:
   - github
   - "category/cli_工具"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "holysheep-cli"
   - "holysheep123/holysheep-cli"
-  - "一條命令配置所有 AI 編程工具，簡化設定流程。"
+  - "一條命令配置所有 AI 編程工具，簡化接入 HolySheep API 的流程。"
 ---
 
 # holysheep-cli
 
-**304** stars · **34** stars/天 · 建立 9 天前 · JavaScript · 未標註授權
+**301** stars · **30** stars/天 · 建立 10 天前 · JavaScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/holysheep123--holysheep-cli");
@@ -79,13 +79,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ai` `ai-coding` `aider` `anthropic` `api` `api-proxy` `china` `claude` `claude-code` `cli` `codex` `coding-assistant` `cursor` `gemini` `gemini-cli` `gpt-5` `holysheep` `llm` `openai` `openclaw`
 
 > [!summary] 一句話摘要
-> 一條命令配置所有 AI 編程工具，簡化設定流程。
+> 一條命令配置所有 AI 編程工具，簡化接入 HolySheep API 的流程。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (34 stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (30 stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在中國使用 AI 編程助手但不想手動配置的開發者。
-> **一句話重點** HolySheep CLI 讓 AI 編程工具的配置變得前所未有的簡單，特別是在中國環境中。
+> **適合** 需要在中國快速配置多個 AI 編程工具的開發者。
+> **一句話重點** HolySheep CLI 是一個針對中國開發者的高效工具，能快速配置多個 AI 編程助手，省去繁瑣的手動配置。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -109,26 +109,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學、1 小時整合，得到快速配置多個 AI 工具的效果，值得採用。
+> **結論** 花 2 小時學習，1 小時整合，得到快速配置多個 AI 工具的效果，值得嘗試。
 
 > [!abstract] 核心創新
-> HolySheep CLI 提供了一鍵配置多個 AI 編程工具的能力，簡化了開發者的設置流程。
+> HolySheep CLI 提供了一個無需 VPN 的簡單解決方案來配置多個 AI 編程工具。
 
 ## 專案簡介
 
-HolySheep CLI 是一個命令行工具，通過一條命令自動配置多個流行的 AI 編程助手，以使用 HolySheep API。用戶只需執行 `hs setup`，然後輸入 API 金鑰，選擇要配置的工具，便可完成配置，省去手動編輯配置文件的繁瑣。這個工具支持的 AI 編程助手包括 Claude Code、Codex CLI 和 Aider 等，並能在中國無需 VPN 地直接訪問。技術上，它使用 Node.js 16+，依賴於 chalk、commander 和 inquirer 等庫，確保了良好的用戶互動和配置過程的流暢性。
+HolySheep CLI 是一個命令行工具，通過一條命令配置多個 AI 編程助手以使用 HolySheep API，這是一個在中國無需 VPN 的中繼服務。用戶只需運行 `hs setup`，輸入 API 金鑰，然後選擇要配置的工具，便可自動完成配置，省去手動編輯配置文件的繁瑣。此工具支持的助手包括 Claude Code、Codex CLI、Aider 等，且大多數工具的配置都是自動化的，僅有 Cursor 需要手動操作。技術上，HolySheep CLI 使用 Node.js 16+，依賴於幾個輕量級的庫如 `commander` 和 `inquirer`，使得 CLI 的交互式配置變得簡單且直觀。與其他工具相比，如 OpenClaw 和 Codex，HolySheep CLI 提供了更為集中化的配置方式，避免了多個工具間的配置不一致問題。
 
-與其他工具相比，HolySheep CLI 的優勢在於它的自動化配置能力，避免了手動設定的錯誤和繁瑣，特別適合需要快速部署多個 AI 工具的開發者。雖然它不支持 Gemini CLI，但對於大多數主流工具的支持已經足夠，並且提供了清晰的指令和使用說明。使用者在配置過程中可能會遇到 API 金鑰的問題，這需要在官方網站上註冊獲取。整體來看，HolySheep CLI 是一個穩定且高效的工具，適合中小型團隊在開發過程中使用，未來可能會擴展更多工具的支持。
+這在需要快速部署多個 AI 工具的場景下尤為重要，特別是對於開發者和小型團隊。使用者在配置過程中可能會遇到 API 金鑰的管理問題，建議使用 `hs login` 命令來保存金鑰。這個工具目前處於 beta 階段，雖然功能完整，但仍有改進空間，特別是在社群支持和文檔方面。適合需要快速接入多個 AI 編程工具的開發者，尤其是在中國的開發環境中。
 
-**技術棧**：`Node.js 16+` · `chalk` · `commander` · `inquirer` · `node-fetch`
+**技術棧**：`Node.js 16+` · `chalk` · `commander` · `inquirer` · `node-fetch` · `ora`
 
 ## 重點功能
 
-- 一鍵配置 — 只需執行 `hs setup`，即可自動配置多個 AI 工具。
-- 支持多種工具 — 包括 Claude Code、Codex CLI 和 Aider，無需手動編輯配置文件。
-- 互動式命令行界面 — 使用 inquirer 提供清晰的配置選項和提示。
-- API 金鑰管理 — 使用 `hs login` 命令安全保存 API 金鑰。
-- 檢查配置狀態 — 使用 `hs doctor` 命令檢查配置和連接狀態。
+- 一鍵配置 — 只需運行 `hs setup` 命令，即可自動配置多個 AI 工具。
+- 支持多種工具 — 包括 Claude Code、Codex CLI、Aider 等，幾乎涵蓋主流 AI 編程助手。
+- API 金鑰管理 — 使用 `hs login` 命令可安全保存 API 金鑰，避免重複輸入。
+- 配置檢查 — 使用 `hs doctor` 命令檢查配置狀態和連通性，確保一切正常運行。
+- 用戶友好的交互式設計 — 使用 `inquirer` 庫提供清晰的提示和選擇，提升用戶體驗。
 
 ## 快速開始
 
@@ -136,7 +136,7 @@ HolySheep CLI 是一個命令行工具，通過一條命令自動配置多個流
 ```bash
 npm install -g @simonyea/holysheep-cli
 ```
-2. 執行配置命令
+2. 運行配置命令
 ```bash
 hs setup
 ```
@@ -158,74 +158,49 @@ hs setup
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 9 天就累積 304 stars（34/天），forks 1（0.3%），顯示出一定的初期關注。這個專案由 holysheep123 開發，解決了在中國使用 AI 編程助手時的配置繁瑣問題，特別是無需 VPN 的情況下。這一需求在當前環境中非常迫切，尤其是對於開發者來說。社群的反應也顯示出對於簡化配置流程的需求。這個工具的出現正好填補了這一空白。
+> 建立 10 天內累積 301 stars（30 stars/天），forks 1（0.3%），顯示出一定的初步關注度。作者 holysheep123 是一名活躍的開發者，專注於 AI 和 CLI 工具的開發。這個工具解決了在中國使用 AI 編程助手的配置問題，之前用戶需要手動配置多個工具，繁瑣且易出錯。這個工具的推出正好填補了這一需求，並且在社群中引起了討論。技術上，HolySheep CLI 的設計使得用戶可以在不需要 VPN 的情況下，輕鬆接入多個 AI API，這在當前的技術環境中是非常實用的。forks/stars 比率低，顯示出目前使用者對於修改和擴展的需求不高，可能是因為工具本身已經滿足了大多數用戶的需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要在中國使用 AI 編程助手但不想手動配置的開發者。
+**目標受眾**：需要在中國快速配置多個 AI 編程工具的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來快速配置多個 AI 編程工具，因為只需一條命令即可完成所有設置，節省了手動配置的時間。
-> - 新創團隊的開發者用它來在短時間內整合多個 AI 助手，因為它支持多種工具並且無需 VPN，適合在中國使用。
-> - 自由職業者用它來簡化開發環境的設置，因為它能自動配置常用的 AI 工具，讓他們專注於編碼而非配置。
+> - 後端工程師用它來快速配置 Claude Code 和 Codex CLI，因為這樣可以節省手動編輯配置文件的時間，並且確保配置的一致性。
+> - 小型團隊的開發者使用 HolySheep CLI 來接入多個 AI 編程助手，因為這樣可以在短時間內完成多個工具的配置，提升開發效率。
+> - 在中國的開發者用它來無需 VPN 訪問 AI API，因為 HolySheep CLI 提供了一個簡單的解決方案來繞過地區限制。
 
 ## 架構分析
 
-HolySheep CLI 採用單一命令行工具架構，設計目的是為了簡化多個 AI 編程助手的配置過程。用戶只需執行 `hs setup`，CLI 會自動引導用戶輸入 API 金鑰並選擇要配置的工具。這樣的設計使得用戶無需手動編輯配置文件，降低了出錯的可能性。
-
-CLI 的資料流主要依賴於 Node.js 的事件循環和非阻塞 I/O，使得配置過程快速且高效。選擇 Node.js 的原因在於其廣泛的生態系統和對於 CLI 工具的良好支持。這種設計雖然簡化了使用流程，但在某些情況下，對於不熟悉命令行的用戶可能會造成一定的學習曲線。
-
-整體而言，HolySheep CLI 的架構設計旨在提升開發者的效率，未來可能會擴展更多的工具支持。
+HolySheep CLI 採用單一的 Node.js 應用架構，設計上旨在簡化多個 AI 工具的配置過程。用戶通過命令行輸入 API 金鑰，然後選擇要配置的工具，CLI 會自動生成相應的配置文件。這種設計的好處在於用戶無需手動編輯每個工具的配置文件，降低了出錯的風險。然而，這也意味著對於不支持的工具，使用者將無法獲得自動化配置的便利。整體而言，這種架構模式使得 HolySheep CLI 在使用上非常友好，特別適合需要快速上手的開發者。
 
 ## 技術深入分析
 
-HolySheep CLI 的核心技術機制是基於 Node.js 的命令行工具，使用了 chalk 和 inquirer 等庫來提供友好的用戶界面。其設計模式採用命令行交互，使用者可以通過簡單的命令完成多個工具的配置，這樣的設計使得新手也能輕鬆上手。效能上，CLI 的配置速度取決於用戶的 API 金鑰輸入和選擇工具的速度，通常在幾秒內完成。由於依賴於 Node.js 的非阻塞 I/O，整體性能表現良好。選擇 Node.js 的原因在於其廣泛的生態系統和對於 CLI 工具的良好支持，這使得 HolySheep CLI 能夠快速迭代和擴展功能。技術風險方面，未來可能面臨 API 變更的挑戰，這需要持續的維護和更新。整合方面，HolySheep CLI 可以與多種開發環境兼容，特別是在使用 Node.js 的項目中，整合難度低，適合快速部署。
+HolySheep CLI 的核心技術機制是通過 Node.js 實現的命令行工具，利用 `commander` 庫來處理命令行參數，並使用 `inquirer` 提供互動式的用戶界面。這使得用戶在配置過程中能夠獲得清晰的指引。工具的效能表現在其快速的配置能力上，能夠在幾秒內完成多個工具的設置，這對於需要快速迭代的開發者來說是非常重要的。設計上選擇 Node.js 是因為其在處理 I/O 操作時的高效性，並且能夠輕鬆集成多個 NPM 庫來擴展功能。
+
+這種選擇雖然使得工具的依賴性增加，但也帶來了更強的功能性。技術風險方面，若未來有新工具出現，HolySheep CLI 可能需要快速更新以支持這些工具，否則將面臨用戶流失的風險。整合方面，HolySheep CLI 可以輕鬆與現有的開發環境結合，特別是對於使用 Node.js 的項目，能夠無縫接入。整體來看，HolySheep CLI 提供了一個便捷的解決方案，特別適合在中國的開發者使用。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的使用說明和範例，安裝過程順暢，沒有明顯的坑。整體上，對於新手來說，30 分鐘內可以順利上手並完成配置。
+> README 文件提供了清晰的指引和範例，安裝過程相對順暢，沒有明顯的坑。提供了快速開始的指南，幫助新手快速上手。文件有中英文版本，對於不同語言的用戶都很友好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化配置，節省時間和精力。
-> - 支持多種流行的 AI 編程工具。
-> - 互動式命令行界面，易於使用。
+> - 自動化配置多個工具，節省時間和精力。
+> - 無需 VPN，適合在中國的開發者使用。
+> - 用戶友好的 CLI 設計，易於上手。
 
 > [!danger] 缺點
-> - 不支持所有 AI 工具，限制使用範圍。
-> - 需要 Node.js 環境，對於某些用戶可能不便。
-> - 某些工具仍需手動配置，無法完全自動化。
+> - 僅支持部分 AI 工具，限制了用戶選擇。
+> - 目前社群活躍度較低，可能影響未來的支持和更新。
+> - 對於不熟悉命令行的用戶來說，仍然需要一定的學習曲線。
 
 > [!warning] 注意事項
-> - 不支持 Gemini CLI。
-> - 需要 Node.js 16+ 環境。
-> - 對於某些工具如 Cursor 需要手動配置，無法完全自動化。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [holysheep123/openclaw](https://github.com/holysheep123/openclaw) | OpenClaw 提供了更全面的 AI 智能體網關功能，但需要額外的配置和管理。 |
-| [openai/codex](https://github.com/openai/codex) | Codex 是一個獨立的 AI 編程助手，無法自動配置多個工具，使用上較為繁瑣。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| [openai/codex](https://github.com/openai/codex) | Codex 是一個獨立的 AI 編程助手，無法自動配置多個工具，使用上較為繁瑣。 | 如果需要一個功能強大的獨立編程助手，Codex 可能更合適。 | medium，因為需要重新配置和學習新的使用方式。 |
-| [holysheep123/openclaw](https://github.com/holysheep123/openclaw) | OpenClaw 提供了更全面的 AI 智能體網關功能，但需要額外的配置和管理。 | 如果需要更強大的 AI 智能體管理功能，OpenClaw 是更好的選擇。 | high，因為需要重新設置和管理更多的配置。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **holysheep-cli** | **codex** | **openclaw** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Codex 是一個獨立的 AI 編程助手，無法自動配置多個工具，使用上較為繁瑣。 | OpenClaw 提供了更全面的 AI 智能體網關功能，但需要額外的配置和管理。 |
-> | 遷移成本 | - | medium，因為需要重新配置和學習新的使用方式。 | high，因為需要重新設置和管理更多的配置。 |
-> | 適用場景 | 主要場景 | 如果需要一個功能強大的獨立編程助手，Codex 可能更合適。 | 如果需要更強大的 AI 智能體管理功能，OpenClaw 是 |
+> - 目前僅支持 Node.js 16+ 環境。
+> - Cursor 工具需要手動配置，無法自動化。
+> - Gemini CLI 尚不支持，限制了某些用戶的選擇。
+> - 目前只有一個開放的 issue，顯示社群活躍度較低。
 
 ## 成熟度評估
 
@@ -236,25 +211,27 @@ HolySheep CLI 的核心技術機制是基於 Node.js 的命令行工具，使用
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人項目試用，但不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些環境下，API 金鑰無法正確保存
-  - 解法：確保使用最新版本的 Node.js，並檢查權限設置
-- [MEDIUM] OpenClaw Gateway 停止後無法自動重啟
-  - 解法：需手動重新運行 `npx openclaw gateway --port 18789`
+- [MEDIUM] 在 Windows 環境下可能需要重啟終端才能識別 `hs` 命令
+  - 解法：重啟終端或直接使用 npx 命令
+- **[HIGH]** OpenClaw Gateway 需要保持開啟，否則無法使用瀏覽器界面
+  - 解法：確保在使用時保持 Gateway 窗口開啟
+- [MEDIUM] 對於不支持的工具，無法自動配置
+  - 解法：手動配置或尋找其他工具
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能快速配置多個 AI 工具，提升開發效率。 |
-| 大型企業的 AI 工具整合 | 普通 | 雖然支持多種工具，但不支持所有工具，可能需要額外配置。 |
-| 自由職業者的個人專案 | 非常適合 | 簡化了配置流程，讓專注於開發。 |
-| 需要高可用性的生產環境 | 不適合 | 目前處於 beta 階段，穩定性不足。 |
+| 小型開發團隊需要快速配置多個 AI 工具 | 非常適合 | 自動化配置節省時間，提升效率。 |
+| 獨立開發者在中國使用 AI 工具 | 非常適合 | 無需 VPN，便於快速接入。 |
+| 大型企業需要穩定的 AI 工具配置 | 不適合 | 目前處於 beta 階段，穩定性不足。 |
+| 對命令行不熟悉的用戶 | 普通 | 需要一定的學習曲線，但提供了友好的交互式設計。 |
 
 ## 採用成本分析
 
@@ -266,12 +243,12 @@ HolySheep CLI 的核心技術機制是基於 Node.js 的命令行工具，使用
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學、1 小時整合，得到快速配置多個 AI 工具的效果，值得採用。
+> 花 2 小時學習，1 小時整合，得到快速配置多個 AI 工具的效果，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：HolySheep CLI 本身不需要高權限，僅需存取 API 金鑰。對於使用過程中的敏感資料，需確保金鑰的安全性。
+> 低風險：HolySheep CLI 本身不需要高權限，僅需訪問用戶的 API 金鑰。依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -353,17 +330,17 @@ HolySheep CLI 的核心技術機制是基於 Node.js 的命令行工具，使用
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@holysheep123](https://github.com/holysheep123) | 1 |
+> | [@holysheep123](https://github.com/holysheep123) | 2 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有更新但問題解決率低。
+**社群活躍度**：社群活躍度較低，目前僅有一個開放的 issue。
 **連結**：[文件](https://holysheep.ai)
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-03-10 ~ 2026-03-17）
-> **活躍天數** 3 天 · **最新 commit** fix: update homepage from shop.holysheep.ai to holysheep.ai
+> **活躍天數** 3 天 · **最新 commit** v1.5.6: setup registration banner, upgrade hints
 
 ## 熱門議題
 
@@ -382,6 +359,7 @@ HolySheep CLI 的核心技術機制是基於 Node.js 的命令行工具，使用
 > [](https://www.npmjs.com/package/@simonyea/holysheep-cli)
 > [](https://www.npmjs.com/package/@simonyea/holysheep-cli)
 > [](LICENSE)
+> [](https://holysheep.ai/register)
 > 
 > **One command to configure all AI coding tools with HolySheep API**
 > **一条命令，配置所有 AI 编程工具**
@@ -412,6 +390,8 @@ HolySheep CLI 的核心技術機制是基於 Node.js 的命令行工具，使用
 > | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | Google protocol only | ❌ Not supported |
 > 
 > ### Quick Start
+> 
+> > 🔑 **First, get your free API Key** → [**holysheep.ai/register**](https://holysheep.ai/register) (free signup, pay-as-you-go from ¥10)
 > 
 > ```bash
 > npx @simonyea/holysheep-cli@latest setup
@@ -483,6 +463,8 @@ HolySheep CLI 的核心技術機制是基於 Node.js 的命令行工具，使用
 > | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | ❌ 不支持 | 仅支持 Google 官方协议 |
 > 
 > ### 快速开始
+> 
+> > 🔑 **第一步：注册获取 API Key** → [**holysheep.ai/register**](https://holysheep.ai/register)（免费注册，¥10 起充，按量计费）
 > 
 > ```bash
 > npx @simonyea/holysheep-cli@latest setup
@@ -568,7 +550,7 @@ HolySheep CLI 的核心技術機制是基於 Node.js 的命令行工具，使用
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[AI]] · [[自動化]]
+相關概念：[[API 設計]] · [[CLI/TUI]] · [[自動化]]
 
 相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[ahmadawais--chartli|ahmadawais/chartli]]
 
@@ -612,7 +594,7 @@ HolySheep CLI 的核心技術機制是基於 Node.js 的命令行工具，使用
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","AI","自動化"];
+> const concepts = ["API 設計","CLI/TUI","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "holysheep123--holysheep-cli" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

