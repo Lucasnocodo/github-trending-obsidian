@@ -7,12 +7,12 @@ language: JavaScript
 license: AGPL-3.0
 description: "Your personal intelligence agent. Watches the world from multiple data sources and pings you when something changes."
 homepage: ""
-stars: 1918
-stars_per_day: 959
-forks: 234
-open_issues: 13
+stars: 3081
+stars_per_day: 1027
+forks: 386
+open_issues: 16
 created: 2026-03-14
-pushed_at: 2026-03-16
+pushed_at: 2026-03-17
 first_seen: 2026-03-17
 week: "2026-W12"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "一個個人智能代理，從多個數據來源監控世界並在變
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-20"
+appearances: 2
+next_review: "2026-03-21"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 7
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-17"
-star_history: "2026-03-17:1888,2026-03-17:1918"
+star_history: "2026-03-17:1888,2026-03-17:1918,2026-03-18:3081"
 tags:
   - github
   - "category/開發工具"
@@ -852,4 +852,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-18|2026-03-18]] — 再次上榜，3.1k stars
 - [[2026-03-17|2026-03-17]] — 首次收錄，1.9k stars

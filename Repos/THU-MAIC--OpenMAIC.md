@@ -7,10 +7,10 @@ language: TypeScript
 license: AGPL-3.0
 description: "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click"
 homepage: ""
-stars: 2036
-stars_per_day: 407
-forks: 268
-open_issues: 30
+stars: 4657
+stars_per_day: 776
+forks: 604
+open_issues: 50
 created: 2026-03-11
 pushed_at: 2026-03-17
 first_seen: 2026-03-17
@@ -30,8 +30,8 @@ use_case: "提供一個沉浸式的多代理互動學習體驗，只需一鍵即
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-20"
+appearances: 2
+next_review: "2026-03-21"
 contributor_count: 4
 engagement: "medium"
 issue_close_rate: 14
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-17"
-star_history: "2026-03-17:1990,2026-03-17:2036"
+star_history: "2026-03-17:1990,2026-03-17:2036,2026-03-18:4657"
 tags:
   - github
   - "category/教育"
@@ -919,4 +919,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-18|2026-03-18]] — 再次上榜，4.7k stars
 - [[2026-03-17|2026-03-17]] — 首次收錄，2.0k stars

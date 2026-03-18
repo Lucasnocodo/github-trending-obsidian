@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Autonomous experiment loop extension for pi"
 homepage: ""
-stars: 1987
-stars_per_day: 397
-forks: 98
-open_issues: 10
+stars: 2084
+stars_per_day: 347
+forks: 101
+open_issues: 9
 created: 2026-03-11
-pushed_at: 2026-03-16
+pushed_at: 2026-03-17
 first_seen: 2026-03-14
 week: "2026-W11"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "自動化實驗循環，幫助開發者持續優化專案性能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-03-20"
+appearances: 5
+next_review: "2026-03-21"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 23
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-14"
-star_history: "2026-03-14:1167,2026-03-14:1172,2026-03-15:1599,2026-03-15:1605,2026-03-16:1851,2026-03-16:1853,2026-03-17:1986,2026-03-17:1987"
+star_history: "2026-03-14:1167,2026-03-14:1172,2026-03-15:1599,2026-03-15:1605,2026-03-16:1851,2026-03-16:1853,2026-03-17:1986,2026-03-17:1987,2026-03-18:2084"
 tags:
   - github
   - "category/開發工具"
@@ -864,6 +864,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-18|2026-03-18]] — 再次上榜，2.1k stars
 - [[2026-03-17|2026-03-17]] — 再次上榜，2.0k stars
 - [[2026-03-16|2026-03-16]] — 再次上榜，1.9k stars
 - [[2026-03-15|2026-03-15]] — 再次上榜，1.6k stars

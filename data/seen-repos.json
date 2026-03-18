@@ -372,17 +372,17 @@
   },
   "garrytan/gstack": {
     "first_seen": "2026-03-13",
-    "last_seen": "2026-03-17",
-    "times_seen": 5,
+    "last_seen": "2026-03-18",
+    "times_seen": 6,
     "stars_first": 2724,
-    "stars_last": 17282
+    "stars_last": 20749
   },
   "gsd-build/gsd-2": {
     "first_seen": "2026-03-13",
-    "last_seen": "2026-03-17",
-    "times_seen": 5,
+    "last_seen": "2026-03-18",
+    "times_seen": 6,
     "stars_first": 779,
-    "stars_last": 1545
+    "stars_last": 1752
   },
   "larksuite/openclaw-lark": {
     "first_seen": "2026-03-13",
@@ -393,17 +393,17 @@
   },
   "davebcn87/pi-autoresearch": {
     "first_seen": "2026-03-14",
-    "last_seen": "2026-03-17",
-    "times_seen": 4,
+    "last_seen": "2026-03-18",
+    "times_seen": 5,
     "stars_first": 1167,
-    "stars_last": 1986
+    "stars_last": 2084
   },
   "TianyiDataScience/openclaw-control-center": {
     "first_seen": "2026-03-14",
-    "last_seen": "2026-03-17",
-    "times_seen": 4,
+    "last_seen": "2026-03-18",
+    "times_seen": 5,
     "stars_first": 994,
-    "stars_last": 1892
+    "stars_last": 2025
   },
   "aiming-lab/MetaClaw": {
     "first_seen": "2026-03-14",
@@ -421,10 +421,10 @@
   },
   "pasky/chrome-cdp-skill": {
     "first_seen": "2026-03-16",
-    "last_seen": "2026-03-17",
-    "times_seen": 2,
+    "last_seen": "2026-03-18",
+    "times_seen": 3,
     "stars_first": 1502,
-    "stars_last": 1874
+    "stars_last": 2062
   },
   "wanshuiyin/Auto-claude-code-research-in-sleep": {
     "first_seen": "2026-03-16",
@@ -442,23 +442,37 @@
   },
   "THU-MAIC/OpenMAIC": {
     "first_seen": "2026-03-17",
-    "last_seen": "2026-03-17",
-    "times_seen": 1,
+    "last_seen": "2026-03-18",
+    "times_seen": 2,
     "stars_first": 1990,
-    "stars_last": 1990
+    "stars_last": 4657
   },
   "calesthio/Crucix": {
     "first_seen": "2026-03-17",
-    "last_seen": "2026-03-17",
-    "times_seen": 1,
+    "last_seen": "2026-03-18",
+    "times_seen": 2,
     "stars_first": 1888,
-    "stars_last": 1888
+    "stars_last": 3081
   },
   "aiming-lab/AutoResearchClaw": {
     "first_seen": "2026-03-17",
-    "last_seen": "2026-03-17",
-    "times_seen": 1,
+    "last_seen": "2026-03-18",
+    "times_seen": 2,
     "stars_first": 1449,
-    "stars_last": 1449
+    "stars_last": 4186
+  },
+  "NVIDIA/NemoClaw": {
+    "first_seen": "2026-03-18",
+    "last_seen": "2026-03-18",
+    "times_seen": 1,
+    "stars_first": 4282,
+    "stars_last": 4282
+  },
+  "webadderall/Recordly": {
+    "first_seen": "2026-03-18",
+    "last_seen": "2026-03-18",
+    "times_seen": 1,
+    "stars_first": 2350,
+    "stars_last": 2350
   }
 }

@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "A powerful meta-prompting, context engineering and spec-driven development system that enables agents to work for long periods of time autonomously without losing track of the big picture"
 homepage: ""
-stars: 1545
-stars_per_day: 309
-forks: 132
-open_issues: 24
+stars: 1752
+stars_per_day: 292
+forks: 146
+open_issues: 30
 created: 2026-03-11
-pushed_at: 2026-03-17
+pushed_at: 2026-03-18
 first_seen: 2026-03-13
 week: "2026-W11"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "讓代理能夠長時間自主工作而不失去全局視野的強大
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-03-20"
+appearances: 6
+next_review: "2026-03-21"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 71
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-13"
-star_history: "2026-03-13:779,2026-03-13:783,2026-03-14:990,2026-03-15:1155,2026-03-16:1364,2026-03-17:1545"
+star_history: "2026-03-13:779,2026-03-13:783,2026-03-14:990,2026-03-15:1155,2026-03-16:1364,2026-03-17:1545,2026-03-18:1752"
 tags:
   - github
   - "category/開發工具"
@@ -895,6 +895,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-18|2026-03-18]] — 再次上榜，1.8k stars
 - [[2026-03-17|2026-03-17]] — 再次上榜，1.5k stars
 - [[2026-03-16|2026-03-16]] — 再次上榜，1.4k stars
 - [[2026-03-15|2026-03-15]] — 再次上榜，1.2k stars
