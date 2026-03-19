@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Autonomous experiment loop extension for pi"
 homepage: ""
-stars: 2084
-stars_per_day: 347
-forks: 101
-open_issues: 9
+stars: 2216
+stars_per_day: 317
+forks: 109
+open_issues: 7
 created: 2026-03-11
-pushed_at: 2026-03-17
+pushed_at: 2026-03-18
 first_seen: 2026-03-14
 week: "2026-W11"
 month: "2026-03"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-14
-use_case: "自動化實驗循環擴展，幫助優化各種指標。"
+use_case: "自動化實驗循環，讓你能夠持續測試、評估並優化你的代碼或模型。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 5
 next_review: "2026-03-21"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 31
-repo_size_kb: 1038
+issue_close_rate: 42
+repo_size_kb: 1050
 readme_length: 7433
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-14"
-star_history: "2026-03-14:1167,2026-03-14:1172,2026-03-15:1599,2026-03-15:1605,2026-03-16:1851,2026-03-16:1853,2026-03-17:1986,2026-03-17:1987,2026-03-18:2084,2026-03-18:2084"
+star_history: "2026-03-14:1167,2026-03-14:1172,2026-03-15:1599,2026-03-15:1605,2026-03-16:1851,2026-03-16:1853,2026-03-17:1986,2026-03-17:1987,2026-03-18:2084,2026-03-18:2084,2026-03-19:2216"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "pi-autoresearch"
   - "davebcn87/pi-autoresearch"
-  - "自動化實驗循環擴展，幫助優化各種指標。"
+  - "自動化實驗循環，讓你能夠持續測試、評估並優化你的代碼或模型。"
 ---
 
 # pi-autoresearch
 
-**2.1k** stars · **347** stars/天 · 建立 6 天前 · TypeScript · MIT
+**2.2k** stars · **317** stars/天 · 建立 7 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/davebcn87--pi-autoresearch");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `easy-install`
 
 > [!summary] 一句話摘要
-> 自動化實驗循環擴展，幫助優化各種指標。
+> 自動化實驗循環，讓你能夠持續測試、評估並優化你的代碼或模型。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (347 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (317 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要快速迭代和優化實驗的開發團隊，特別是在測試和數據科學領域。
-> **一句話重點** 這個專案最厲害的地方在於它能夠自動化整個實驗過程，讓開發者專注於優化而非管理。
+> **適合** 需要自動化測試和優化過程的開發團隊，特別是在大型專案中。
+> **一句話重點** 這個專案讓開發者能夠以自動化的方式持續優化代碼，提升開發效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,35 +101,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、3 小時整合，得到快速迭代的效果，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習、3 小時整合，得到自動化實驗的高效益，值得投入。
 
 > [!abstract] 核心創新
-> 提供了一個自動化的實驗循環，讓使用者能夠快速測試不同的優化目標。
+> 這個專案的創新在於提供了一個可持續的自動化實驗循環，並且能夠在不同的優化目標之間靈活切換。
 
 ## 專案簡介
 
-這個專案提供了一個自動化的實驗循環，讓使用者能夠快速測試不同的優化目標，並根據結果持續迭代。使用者透過 `/autoresearch` 指令進入自動化模式，系統會根據設定的目標執行實驗，記錄結果並決定保留或丟棄。這樣的設計讓使用者能夠專注於優化過程，而不必手動管理每個實驗的執行。核心指令如 `run_experiment` 和 `log_experiment` 使得實驗的執行和結果記錄變得簡單高效。這個工具的賣點在於其自動化的能力，能夠在不斷的迭代中找到最佳的解決方案。
+這個專案提供了一個自動化的實驗循環，讓開發者能夠快速測試不同的優化方案，並根據結果決定保留或丟棄。用戶可以透過 `/autoresearch` 命令進入自動研究模式，並設定實驗的目標、命令和指標。每次實驗的結果會被記錄到 `autoresearch.jsonl` 檔案中，這樣即使重啟也能夠繼續進行。這種設計使得實驗過程不斷迭代，並且能夠在不同分支之間保持獨立的實驗狀態。其核心賣點在於能夠自動化測試過程，減少手動操作的需求，並且提供即時的結果反饋。
 
-技術上，這個專案使用 TypeScript 實作，並依賴於多個 peerDependencies，如 `@mariozechner/pi-ai` 和 `@sinclair/typebox`，這使得它能夠與其他 Pi 生態系統的工具無縫整合。效能方面，儘管 README 中未提供具體數據，但其設計目標是能夠高效地處理多個實驗，並在每次迭代中自動記錄結果。
-
-
-
-與其他類似工具相比，如 `karpathy/autoresearch`，這個專案的優勢在於其擴展性和靈活性，特別是能夠針對不同的優化目標進行調整。相比之下，`karpathy/autoresearch` 可能更專注於特定的優化場景，而這個專案則提供了一個更通用的框架。
-
-在實際使用中，這個工具能夠有效地支持多種優化目標，如測試速度、包大小和 LLM 訓練等，並且其自動化的特性使得使用者能夠在不斷變化的需求中快速適應。社群活躍度方面，最近的 commit 活動顯示出持續的維護和更新，這對於使用者來說是一個正面的信號。
-
-總體來看，這個專案目前處於 beta 階段，適合需要快速迭代和優化的團隊使用。未來幾個月內，隨著社群的增長和更多功能的加入，這個專案有潛力成為一個更強大的工具。
+技術上，這個專案使用 TypeScript 開發，並依賴於多個 peer dependencies，如 `@mariozechner/pi-ai` 和 `@sinclair/typebox`，這些都強化了其功能性和擴展性。與其他類似工具相比，如 `karpathy/autoresearch`，這個專案的優勢在於其可擴展的架構，能夠支持多種優化目標，並且提供了完整的 UI 介面來監控實驗進度。使用者在使用過程中可能會遇到一些限制，例如對於特定命令的支持程度，或是需要手動設定某些參數。總體而言，這個專案非常適合需要進行持續優化的開發團隊，尤其是在大型專案中，能夠顯著提升開發效率。
 
 **技術棧**：`TypeScript`
 
 ## 重點功能
 
-- 自動化實驗循環 — 透過 `/autoresearch` 指令自動執行實驗並記錄結果。
-- 多種優化目標支持 — 能夠針對測試速度、包大小、LLM 訓練等多種指標進行優化。
-- 實時監控儀表板 — 提供狀態小工具和全屏儀表板，隨時查看實驗進度。
-- 自動記錄和恢復 — 所有實驗結果保存於 `autoresearch.jsonl`，可隨時恢復。
-- 可擴展的配置選項 — 透過 `autoresearch.config.json` 自定義行為和最大實驗次數。
+- 自動化實驗循環 — 透過 `/autoresearch` 命令進入自動研究模式，持續測試和優化。
+- 實驗結果記錄 — 每次實驗結果會被記錄到 `autoresearch.jsonl`，支持恢復和持久化。
+- 多種指標支持 — 能夠測試速度、包大小、模型訓練等多種優化目標。
+- 即時監控面板 — 提供可視化的狀態小工具和擴展的儀表板，便於監控實驗進度。
+- 可擴展的架構 — 分離的擴展和技能設計，支持多種領域的優化需求。
 
 ## 快速開始
 
@@ -137,65 +129,77 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 pi install https://github.com/davebcn87/pi-autoresearch
 ```
-2. 啟動自動化實驗
+2. 啟動自動研究
 ```bash
 /skill:autoresearch-create
 ```
-3. 開始實驗循環
+3. 進入自動研究模式
 ```bash
 /autoresearch
+```
+
+## 程式碼範例
+
+```ts
+{
+  "前置條件": "已安裝 pi-autoresearch",
+  "指令": "/autoresearch optimize unit test runtime, monitor correctness",
+  "預期輸出": "開始自動化測試並監控正確性。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天內累積 2084 stars（347/天），forks 101（4.8%），顯示出強勁的增長潛力。作者 davebcn87 及其團隊在開源社群中有一定的影響力，且這個專案解決了在優化過程中缺乏自動化工具的痛點。之前的解決方案往往需要手動管理實驗，效率低下，而這個工具的出現正好填補了這一空白。社群的反饋和需求也促進了這個專案的快速發展。
+> 建立 7 天內累積 2216 stars（317/天），forks 109（4.9%），顯示出穩定的增長潛力。作者 davebcn87 之前參與過多個開源專案，這次專案解決了自動化實驗過程中的繁瑣手動操作問題，讓開發者能夠專注於優化而非管理實驗。近期的推廣和社群的討論也可能促進了其曝光率。這個工具的設計理念符合當前開發者對於自動化和效率提升的需求，尤其是在快速迭代的開發環境中。forks/stars 比率為 4.9%，顯示出有相當比例的用戶在積極修改和使用這個工具。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速迭代和優化實驗的開發團隊，特別是在測試和數據科學領域。
+**目標受眾**：需要自動化測試和優化過程的開發團隊，特別是在大型專案中。
 
 > [!example] 使用場景
-> - 後端工程師用它來自動化測試執行時間的優化，因為手動測試過程繁瑣且容易出錯。
-> - 數據科學家用它來優化 LLM 訓練的參數，因為能夠自動記錄和分析結果，節省大量時間。
-> - 前端開發者用它來監控 Lighthouse 性能分數，因為能夠快速迭代和調整代碼以達到最佳性能。
+> - 前端工程師用它來自動測試和優化網站的加載速度，因為它能夠持續監控並記錄每次測試的結果，讓優化過程變得高效且可追溯。
+> - 資料科學家用它來優化機器學習模型的訓練過程，因為它可以自動執行多次訓練並記錄性能指標，幫助快速找到最佳模型參數。
+> - DevOps 工程師用它來監控和優化 CI/CD 流程，因為它能夠自動記錄每次構建的時間和結果，從而持續改進構建效率。
 
 ## 架構分析
 
-這個專案採用模組化的架構，將擴展和技能分開設計，使得一個擴展可以服務於多個領域。這樣的設計使得系統能夠靈活應對不同的優化需求，並且便於未來的擴展。資料流方面，使用者的命令會被轉換為實驗執行，並透過日誌系統持續記錄結果。選擇這種架構的代價是需要使用者對於如何配置和管理實驗有一定的理解。擴展性方面，這種設計能夠支持多種不同的優化目標，但在某些情況下可能會導致配置的複雜性增加。
+這個專案的架構分為兩個主要部分：擴展和技能。擴展部分提供了全域的實驗運行和記錄功能，而技能則專注於特定領域的優化知識。這種設計使得一個擴展可以服務於無限的領域，並且能夠根據不同的需求進行調整。
+
+資料流方面，實驗的每次運行都會記錄到 `autoresearch.jsonl` 中，這樣即使重啟也能夠恢復上下文。選擇這種架構的代價在於需要用戶手動配置某些參數，並且對於大型專案的支持可能需要額外的管理。整體而言，這種設計提供了靈活性和擴展性，但在使用上可能會增加一些複雜度。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於其模組化的設計，將擴展和技能分開，讓一個擴展可以服務於多個優化領域。使用者透過指令進入自動化模式，系統會根據設定的目標執行實驗，並記錄結果。效能方面，儘管沒有具體數據，但設計上應該能夠支持多個實驗的並行執行，並且能夠在每次迭代中自動記錄結果。設計取捨方面，選擇這種架構的好處在於靈活性和擴展性，但也可能導致配置的複雜性增加。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在大量實驗同時進行時。整合方面，這個工具與其他 Pi 生態系統的工具高度兼容，能夠輕鬆融入現有的開發流程中。
+這個專案的核心技術機制在於其自動化的實驗循環，使用 TypeScript 實現，並依賴於多個 peer dependencies 來擴展功能。每次實驗的結果會被記錄到 `autoresearch.jsonl` 檔案中，這樣即使在重啟後也能夠恢復上下文。效能方面，這個工具能夠處理多個實驗的運行，並且在記憶體和 CPU 使用上相對輕量，適合在開發環境中使用。設計上選擇了分離的擴展和技能架構，這使得其能夠支持多種優化領域，但也要求用戶在設定上花費更多時間。技術風險方面，對於大型專案的支持可能會遇到上下文管理的挑戰，特別是在多分支開發的情況下。整合方面，這個工具可以與現有的 CI/CD pipeline 友好整合，但在具體實施時可能需要額外的適配工作。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含範例，安裝過程順暢，沒有明顯的坑。提供了良好的入門指導，適合新手快速上手。
+> README 文件質量良好，提供了清晰的安裝和使用指導。安裝過程相對順暢，但需要注意環境變數的配置。文件中沒有多語言支持，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化實驗流程，減少手動操作的需求。
+> - 提供自動化的實驗循環，顯著減少手動操作。
 > - 支持多種優化目標，靈活性高。
-> - 實時監控和記錄功能，方便追蹤實驗進度。
+> - 即時監控和結果記錄，便於追蹤進度。
 
 > [!danger] 缺點
-> - 需要在 pi 環境中運行，限制了使用場景。
-> - 對於新手來說，配置和使用上可能有一定的學習曲線。
-> - 目前文檔僅有英文，對非英語使用者不友好。
+> - 對於特定命令的支持可能有限。
+> - 需要手動配置環境變數，增加使用複雜度。
+> - 大型專案的上下文管理可能需要額外的手動介入。
 
 > [!warning] 注意事項
-> - 僅支援在 pi 環境中運行。
-> - 需要對 TypeScript 有基本了解以進行自定義配置。
-> - 目前僅有英文文檔，對於非英語使用者可能有學習障礙。
+> - 目前只支持特定的命令格式，對於不在支持範圍內的命令可能無法正常運行。
+> - 需要正確配置環境變數以確保實驗能夠順利執行。
+> - 對於大型專案，可能需要手動管理實驗的上下文和狀態。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 這個專案專注於特定的優化場景，而 pi-autoresearch 提供了一個更通用的框架，支持多種優化目標。 |
-| [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | AutoResearchClaw 主要針對特定的 AI 模型優化，而 pi-autoresearch 則能夠應用於更廣泛的開發場景。 |
+| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 這個專案是 karpathy 的原始版本，提供基本的自動化實驗功能，但缺乏更進階的 UI 和多領域支持。 |
+| [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | 這個工具專注於特定的優化領域，可能在功能上更為專一，但不如本專案通用。 |
 
 ## 替代方案決策
 
@@ -203,16 +207,16 @@ pi install https://github.com/davebcn87/pi-autoresearch
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 專注於特定的優化場景，提供了針對特定任務的自動化工具。 | 如果你的需求主要集中在特定的優化任務上，karpathy 的工具可能更適合。 | medium，因為需要重新配置實驗流程。 |
-| [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | 針對特定的 AI 模型進行優化，而 pi-autoresearch 則提供了更廣泛的應用場景。 | 如果你的工作主要集中在 AI 模型的優化上，AutoResearchClaw 可能更合適。 | high，因為需要重寫大部分的實驗配置。 |
+| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 這個工具提供了基本的自動化實驗功能，但缺乏更進階的 UI 和多領域支持。 | 如果你只需要基本的自動化實驗功能，而不需要複雜的 UI 和多領域支持時，可以選擇它。 | medium，因為需要重新配置實驗環境和上下文管理。 |
+| [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | 這個工具專注於特定的優化領域，可能在功能上更為專一，但不如本專案通用。 | 如果你的專案有特定的優化需求，且不需要通用性，可以考慮這個工具。 | low，因為功能相似且配置較為簡單。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **pi-autoresearch** | **autoresearch** | **AutoResearchClaw** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於特定的優化場景，提供了針對特定任務的自動化工具。 | 針對特定的 AI 模型進行優化，而 pi-autoresearch 則提供了更廣泛的應用場景。 |
-> | 遷移成本 | - | medium，因為需要重新配置實驗流程。 | high，因為需要重寫大部分的實驗配置。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要集中在特定的優化任務上，karpathy 的 | 如果你的工作主要集中在 AI 模型的優化上，AutoRese |
+> | 技術路線 | 本專案 | 這個工具提供了基本的自動化實驗功能，但缺乏更進階的 UI 和多領域支持。 | 這個工具專注於特定的優化領域，可能在功能上更為專一，但不如本專案通用。 |
+> | 遷移成本 | - | medium，因為需要重新配置實驗環境和上下文管理。 | low，因為功能相似且配置較為簡單。 |
+> | 適用場景 | 主要場景 | 如果你只需要基本的自動化實驗功能，而不需要複雜的 UI 和多 | 如果你的專案有特定的優化需求，且不需要通用性，可以考慮這個工 |
 
 ## 成熟度評估
 
@@ -223,25 +227,27 @@ pi install https://github.com/davebcn87/pi-autoresearch
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合在小型專案中試用，但不建議在生產環境的核心路徑上使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些情況下，實驗結果可能會因為環境變化而不一致。
-  - 解法：確保在穩定的環境中運行實驗。
-- **[HIGH]** 當同時運行多個實驗時，可能會導致資源競爭。
-  - 解法：限制同時運行的實驗數量。
+- **[HIGH]** 對於某些命令可能無法正常執行，特別是未經測試的命令。
+  - 解法：在執行之前先確認命令的兼容性。
+- [MEDIUM] 在大型專案中，可能需要手動管理實驗的上下文和狀態。
+  - 解法：定期檢查 `autoresearch.jsonl` 的內容以確保狀態正確。
+- **[HIGH]** 環境變數配置不當可能導致實驗失敗。
+  - 解法：仔細檢查配置文件，確保所有必要的變數都已正確設置。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠快速迭代和優化 API 性能，提升開發效率。 |
-| 大型企業的數據科學團隊 | 適合 | 能夠自動化多個實驗，節省時間和資源。 |
-| 個人開發者的 side project | 非常適合 | 簡單易用，能夠快速上手並獲得結果。 |
-| 需要高穩定性的生產環境 | 不適合 | 目前處於 beta 階段，穩定性尚未保證。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠快速測試和優化 API 性能，提升開發效率。 |
+| 大型企業的多分支開發專案 | 普通 | 需要額外的上下文管理，可能會增加複雜度。 |
+| 資料科學團隊進行模型訓練 | 非常適合 | 能夠自動化訓練過程並持續優化模型性能。 |
+| 個人開發者的 side project | 非常適合 | 簡單易用，能夠快速進行實驗和優化。 |
 
 ## 採用成本分析
 
@@ -249,16 +255,47 @@ pi install https://github.com/davebcn87/pi-autoresearch
 | --- | --- |
 | 學習時間 | ~5 小時 |
 | 整合時間 | ~3 小時 |
-| 維護負擔 | low |
-| 綁定風險 | medium |
+| 維護負擔 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、3 小時整合，得到快速迭代的效果，值得一試。
+> 花 5 小時學習、3 小時整合，得到自動化實驗的高效益，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限運行，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：這個工具不需要高權限，且不存取敏感資料。依賴鏈的信任程度較高，沒有已知的供應鏈風險。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個工具最常與 pi 生態系統中的其他工具搭配使用，特別是在開發和測試階段。典型的工作流中，它可以與 CI/CD 工具整合，提供自動化的測試和部署。實際整合範例是，在使用 Next.js 的專案中，可以透過 `/autoresearch` 命令自動測試和優化應用性能。與主流 CI 工具如 GitHub Actions 和 GitLab CI 的相容性良好，並且可以與 VS Code 等 IDE 整合，提供即時的反饋和監控。整合的摩擦點主要在於需要手動配置某些參數，並且對於大型專案的支持可能需要額外的適配工作。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在這個工具出現之前，開發者通常依賴手動測試和優化，這導致了效率低下和錯誤率高。使用的工具往往缺乏自動化能力，無法持續追蹤和記錄實驗結果。隨著自動化技術的進步，這個專案的出現使得開發者能夠更有效地進行實驗和優化。
+
+這個工具代表了開發流程中自動化和智能化的趨勢，未來可能會進一步整合 AI 技術來提升優化效果。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-5 人的小型團隊
+
+**前置技能**：
+- 熟悉 TypeScript
+- 了解基本的 CI/CD 流程
+- 有使用 pi 生態系統的經驗
+
+> [!tip] 導入策略
+> 第一週：在個人專案中試用，熟悉基本功能。第二週：在小型團隊的內部工具中導入，測試效果。第三週：根據使用反饋調整配置，並撰寫最佳實踐文件。第四週：在主產品中選擇一個非核心模組開始使用。
+
+**成功指標**：實驗的成功率提高 30%，或測試時間減少 50%。
+
+> [!warning] 退出計畫
+> 所有設定存在標準 JSON 格式，可以輕鬆轉換為其他工具的格式，減少遷移成本。
 
 ## 健康度儀表板
 
@@ -323,10 +360,10 @@ pi install https://github.com/davebcn87/pi-autoresearch
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 101 |
-| Open Issues | 9 |
-| Issue 解決率 | 31% (4 closed) |
-| 最後推送 | 2026-03-17 |
+| Forks | 109 |
+| Open Issues | 7 |
+| Issue 解決率 | 42% (5 closed) |
+| 最後推送 | 2026-03-18 |
 | 建立日期 | 2026-03-11 |
 | Repo 大小 | 1.0 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/davebcn87/pi-autoresearch) |
@@ -334,21 +371,28 @@ pi install https://github.com/davebcn87/pi-autoresearch
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@tobi](https://github.com/tobi) | 50 |
-> | [@davebcn87](https://github.com/davebcn87) | 24 |
+> | [@tobi](https://github.com/tobi) | 51 |
+> | [@davebcn87](https://github.com/davebcn87) | 37 |
 > | [@kshetrajna12](https://github.com/kshetrajna12) | 4 |
 > | [@matteodepalo](https://github.com/matteodepalo) | 3 |
 > | [@ayagmar](https://github.com/ayagmar) | 2 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有多次 commit 和開放的 issue。
-**連結**：[文件](https://github.com/davebcn87/pi-autoresearch)
+**社群活躍度**：社群活躍度中等，有一定的開發者參與和問題回應。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-13 ~ 2026-03-17）
-> **活躍天數** 3 天 · **最新 commit** Merge pull request #8 from ayagmar/fix/autoresearch-session-leak
+> [!abstract] 最近 10 次 commit（2026-03-18 ~ 2026-03-18）
+> **活躍天數** 1 天 · **最新 commit** fix: reset secondaryMetrics on segment change during jsonl reconstruction
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#23](https://github.com/davebcn87/pi-autoresearch/issues/23) | support openai codex ? | 0 | 0 |
+> | [#15](https://github.com/davebcn87/pi-autoresearch/issues/15) | RFC: Statistical confidence layer for METRIC improvements | 0 | 4 |
 
 ## README 摘錄
 
@@ -557,7 +601,7 @@ pi install https://github.com/davebcn87/pi-autoresearch
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[CI/CD]] · [[資料視覺化]]
+相關概念：[[自動化]] · [[CI/CD]] · [[機器學習]]
 
 相關專案：[[karpathy--autoresearch|karpathy/autoresearch]] · [[aiming-lab--AutoResearchClaw|aiming-lab/AutoResearchClaw]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[trevin-creator--autoresearch-mlx|trevin-creator/autoresearch-mlx]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]]
 
@@ -601,7 +645,7 @@ pi install https://github.com/davebcn87/pi-autoresearch
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","CI/CD","資料視覺化"];
+> const concepts = ["自動化","CI/CD","機器學習"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "davebcn87--pi-autoresearch" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

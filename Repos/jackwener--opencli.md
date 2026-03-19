@@ -7,9 +7,9 @@ language: TypeScript
 license: Apache-2.0
 description: "Make any website your CLI. A powerful, AI-native runtime for seamless browser automation and dynamic web data extraction."
 homepage: ""
-stars: 1858
-stars_per_day: 465
-forks: 172
+stars: 1885
+stars_per_day: 471
+forks: 174
 open_issues: 20
 created: 2026-03-14
 pushed_at: 2026-03-18
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-19
-use_case: "將任何網站轉換為命令行介面，實現無縫的瀏覽器自動化和動態網頁數據提取。"
+use_case: "將任何網站或 Electron 應用程式轉換為命令行介面，實現無縫的瀏覽器自動化和動態網頁數據提取。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-19"
-star_history: "2026-03-19:1858"
+star_history: "2026-03-19:1858,2026-03-19:1885"
 tags:
   - github
   - "category/cli_工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "opencli"
   - "jackwener/opencli"
-  - "將任何網站轉換為命令行介面，實現無縫的瀏覽器自動化和動態網頁數據提取。"
+  - "將任何網站或 Electron 應用程式轉換為命令行介面，實現無縫的瀏覽器自動化和動態網頁數據提取。"
 ---
 
 # opencli
 
-**1.9k** stars · **465** stars/天 · 建立 4 天前 · TypeScript · Apache-2.0
+**1.9k** stars · **471** stars/天 · 建立 4 天前 · TypeScript · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/jackwener--opencli");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `v0.9.8` `easy-install`
 
 > [!summary] 一句話摘要
-> 將任何網站轉換為命令行介面，實現無縫的瀏覽器自動化和動態網頁數據提取。
+> 將任何網站或 Electron 應用程式轉換為命令行介面，實現無縫的瀏覽器自動化和動態網頁數據提取。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (465 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (471 stars/day)
 > **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要從多個網站提取數據並希望簡化工作流程的開發者。
-> **一句話重點** OpenCLI 不僅能將網站轉換為 CLI，還能利用 AI 驅動的功能自動化數據提取，這在開發者中具有很大的吸引力。
+> **適合** 需要從多個網站自動提取數據的開發者，特別是那些熟悉命令行操作的。
+> **一句話重點** OpenCLI 的強大之處在於它將多個網站的數據提取整合到一個統一的命令行介面，極大地簡化了開發者的工作流程。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,38 +102,38 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** medium
-> **結論** 花 3 小時學習，2 小時整合，能夠快速實現多網站數據提取，值得考慮。
+> **結論** 花 3 小時學習，2 小時整合，得到快速的數據提取能力，值得投資。
 
 > [!abstract] 核心創新
-> OpenCLI 是首個將任何網站或 Electron 應用轉換為命令行介面的工具，並且支持 AI 驅動的自動化功能。
+> 將任何網站或 Electron 應用程式轉換為命令行介面，實現無縫的瀏覽器自動化。
 
 ## 專案簡介
 
-OpenCLI 是一個強大的命令行工具，能將任何網站或 Electron 應用程式轉換為 CLI，透過重用 Chrome 登入狀態來實現無縫的自動化和數據提取。使用者在安裝並設置 Playwright MCP Bridge 擴展後，可以透過簡單的命令如 `opencli list` 獲取所有可用命令，或使用 `opencli bilibili hot --limit 5` 直接從瀏覽器獲取 Bilibili 熱門內容。這種設計使得用戶無需擔心登錄信息的安全性，因為所有操作都在 Chrome 瀏覽器內部進行。技術上，OpenCLI 利用 TypeScript 和 Playwright 框架，支持 YAML 和 TypeScript 的雙引擎架構，讓用戶能夠靈活地擴展和自定義命令。
+OpenCLI 是一個命令行工具，能將任何網站或 Electron 應用程式轉換為 CLI，通過重用 Chrome 登入狀態和 AI 驅動的發現來實現。用戶首先需要安裝 Playwright MCP Bridge 擴展，然後通過 `opencli setup` 指令來配置連接。這樣就能使用各種命令，如 `opencli bilibili hot --limit 5` 來提取特定網站的熱門內容，並支持多種輸出格式（如 JSON、YAML）。這個工具的賣點在於其強大的自動化能力，能夠無縫地與多個網站進行互動，並且支持下載媒體內容。技術上，OpenCLI 使用 TypeScript 和 Playwright，這使得它能夠高效地處理瀏覽器自動化任務。
 
-與其他 CLI 工具相比，如 jackwener/twitter-cli 和 jackwener/xiaohongshu-cli，OpenCLI 提供了更廣泛的網站支持和更強大的自動化功能，特別是在處理 Electron 應用時。使用者可以輕鬆下載媒體內容，並且支持多種輸出格式（如 JSON 和 YAML），這使得它在數據提取和自動化任務中非常靈活。對於需要從多個網站提取數據的開發者，OpenCLI 提供了一個統一的解決方案，減少了使用多個工具的複雜性。這個專案目前處於穩定階段，並且社群活躍，對於希望簡化網頁數據提取過程的開發者來說，這是一個值得考慮的選擇。
+與其他 CLI 工具相比，如 jackwener/twitter-cli 和 jackwener/xiaohongshu-cli，OpenCLI 的優勢在於它的通用性，能夠將多個網站整合到一個統一的介面中，並且無需額外的認證步驟。使用者可能會遇到的問題包括需要確保 Chrome 已登錄目標網站，否則會導致數據提取失敗。這個專案目前處於 beta 階段，適合需要快速開發和測試自動化腳本的開發者。未來六個月內，預計會增加更多網站支持和功能擴展。建議對於需要從多個網站提取數據的開發者使用，但如果只需針對單一網站的簡單操作，則可能會覺得這個工具過於複雜。
 
 **技術棧**：`TypeScript` · `JavaScript` · `Playwright`
 
 ## 重點功能
 
-- 網站 CLI 轉換 — 將任何網站或 Electron 應用轉換為 CLI，支持多種網站如 Bilibili、Twitter、Zhihu 等。
-- 重用 Chrome 登入 — 透過重用 Chrome 登入狀態，確保用戶的帳戶安全，無需再次輸入憑證。
-- 動態加載 — 只需將 `.ts` 或 `.yaml` 適配器放入 `clis/` 文件夾，即可自動註冊。
-- AI 驅動的發現 — 使用 `explore` 命令自動發現 API，並生成適配器。
-- 多種輸出格式 — 支持 JSON 和 YAML 格式輸出，方便用戶根據需求選擇。
+- 多網站支持 — 支持從 Bilibili、Zhihu、Twitter 等多個網站提取數據。
+- 重用 Chrome 登入狀態 — 自動使用已登入的 Chrome 瀏覽器，無需再次認證。
+- 多種輸出格式 — 支持 JSON、YAML 等多種格式的數據輸出。
+- AI 驅動的命令發現 — 使用 `opencli explore` 命令自動發現網站 API。
+- 自動化下載 — 支持從各大平台下載媒體內容，如視頻和圖片。
 
 ## 快速開始
 
-1. 安裝 OpenCLI
+1. 全局安裝 OpenCLI
 ```bash
 npm install -g @jackwener/opencli
 ```
-2. 設置 Playwright MCP Token
+2. 配置 Playwright MCP 令牌
 ```bash
 opencli setup
 ```
-3. 列出所有命令
+3. 列出所有可用命令
 ```bash
 opencli list
 ```
@@ -142,62 +142,64 @@ opencli list
 
 ```ts
 [
-  "# 前置條件：已安裝 OpenCLI 並設置 Playwright MCP Token",
+  "# 前置條件：已安裝 OpenCLI 並配置好 MCP 令牌",
   "opencli bilibili hot --limit 5",
-  "# 預期輸出：返回 Bilibili 熱門內容的列表"
+  "# 預期輸出：返回 Bilibili 熱門視頻的數據"
 ]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 1858 stars（465/天），forks 172（9.3%），顯示出強勁的增長潛力。作者 jackwener 之前開發過多個 CLI 工具，這次的 OpenCLI 解決了用戶在多個網站上使用不同 CLI 工具的痛點，提供了一個統一的解決方案。近期的推文和社群討論也引發了關注，特別是對於自動化和數據提取的需求日益增加。這個工具的高 forks/stars 比率顯示出許多開發者正在積極修改和使用它，反映出其實用性和潛力。
+> 建立 4 天就累積 1885 stars（471/天），forks 174（9.2%），這顯示出強烈的社群興趣。作者 jackwener 之前開發過多個 CLI 工具，這次的 OpenCLI 解決了傳統 CLI 工具無法整合多個網站的痛點。這個工具的出現，正好滿足了開發者對於簡化網頁數據提取的需求，並且提供了一個統一的操作介面。社群的反饋和需求驅動了這個專案的快速增長。
 
 ## 適合誰使用
 
-**目標受眾**：需要從多個網站提取數據並希望簡化工作流程的開發者。
+**目標受眾**：需要從多個網站自動提取數據的開發者，特別是那些熟悉命令行操作的。
 
 > [!example] 使用場景
-> - 數據科學家用它來從 Bilibili 自動提取熱門視頻數據，因為這樣可以節省手動查找和下載的時間，並且能夠快速獲得最新的數據。
-> - 前端工程師用它來自動化測試 Twitter API，因為可以直接在 CLI 中執行命令，並獲得即時反饋，提升開發效率。
-> - 內容創作者用它來批量下載小紅書的圖片和視頻，因為這樣能夠快速收集素材，並且支持多種格式輸出，方便後續使用。
+> - 後端工程師用它來從 Bilibili 提取熱門視頻數據，因為傳統 API 需要繁瑣的認證流程，而 OpenCLI 直接重用 Chrome 登入狀態。
+> - 數據分析師用它來自動下載 Zhihu 文章並轉換為 Markdown 格式，因為這樣可以節省手動複製和格式化的時間。
+> - 開發者用它來測試各種網站的 API，因為它支持動態發現和生成適配器，能快速適應不同的網站結構。
 
 ## 架構分析
 
-OpenCLI 採用雙引擎架構，支持 YAML 和 TypeScript 的命令定義，這使得用戶可以根據需求靈活選擇使用方式。它通過 Playwright MCP Bridge 擴展與 Chrome 瀏覽器進行連接，利用現有的 Chrome 登入狀態來執行命令，這樣的設計降低了用戶的安全風險。資料流方面，命令的執行過程中，OpenCLI 會自動發現可用的 API 並生成適配器，這樣用戶無需手動配置。選擇 Playwright 而非其他自動化工具的原因在於其強大的瀏覽器控制能力和對現代網站的良好支持。這種設計雖然增加了初始設置的複雜度，但卻為用戶提供了更高的靈活性和功能擴展性。
+OpenCLI 的架構基於 TypeScript 和 Playwright，這使得它能夠高效地與瀏覽器進行互動。它通過 MCP Bridge 擴展與 Chrome 進行連接，並重用用戶的登入狀態，這樣可以避免重複認證的麻煩。資料流方面，OpenCLI 先通過 `setup` 指令配置 MCP 令牌，然後用戶可以使用各種命令來提取數據或執行操作。
+
+這種設計使得用戶能夠在 CLI 中快速執行操作，並且能夠動態加載新的命令和適配器。選擇 Playwright 而非 Selenium 是因為其更輕量且支持現代瀏覽器的特性，這樣可以提高執行效率。整體來看，這個架構的擴展性良好，但在處理高頻請求時可能會受到瀏覽器的反爬蟲機制影響。
 
 ## 技術深入分析
 
-OpenCLI 的核心技術機制在於其雙引擎架構，支持 YAML 和 TypeScript 的命令定義，這使得用戶可以靈活選擇使用方式。它利用 Playwright MCP Bridge 擴展與 Chrome 瀏覽器進行連接，這樣的設計不僅提高了安全性，還能夠充分利用 Chrome 的登入狀態來執行命令。效能方面，OpenCLI 可以快速處理多個網站的數據提取，特別是在使用 AI 驅動的發現功能時，能夠自動生成適配器，減少了手動配置的需求。選擇 TypeScript 作為開發語言的原因在於其靜態類型檢查能夠提高代碼的穩定性和可維護性。這種設計雖然增加了初始設置的複雜度，但卻為用戶提供了更高的靈活性和功能擴展性。技術風險方面，對於某些網站的支持可能會隨著網站的更新而變得不穩定，這需要持續的維護和更新。整合方面，OpenCLI 能夠與現有的開發工具鏈（如 CI/CD）良好整合，並且支持多種輸出格式，這使得它在開發過程中非常靈活。
+OpenCLI 的核心技術機制是基於 TypeScript 和 Playwright，這使得它能夠高效地與瀏覽器進行互動。它的資料流設計允許用戶通過簡單的 CLI 命令來執行複雜的網頁操作，並且支持動態加載新的命令和適配器。效能方面，OpenCLI 能夠在用戶的本地環境中快速執行命令，但在高頻請求時可能會受到瀏覽器的反爬蟲機制影響。選擇 Playwright 而非 Selenium 是因為其更輕量且支持現代瀏覽器的特性，這樣可以提高執行效率。依賴樹方面，OpenCLI 的依賴相對簡單，主要依賴於 Playwright 和一些基本的 CLI 工具，這降低了使用的複雜度。技術風險方面，未來可能會面臨網站反爬蟲策略的變化，這可能會影響到數據提取的穩定性。整合方面，OpenCLI 可以輕鬆與現有的 CI/CD 流程結合，並且支持多種 IDE 的開發環境，這使得它的學習成本相對較低。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含多個範例，安裝過程相對順暢，但需要注意 Playwright MCP Bridge 的設置。文件目前僅提供英文版本，對於非英語用戶可能會有一定的學習曲線。整體來說，花 30 分鐘應該能夠成功運行起來。
+> README 文件清晰且提供了詳細的安裝步驟和使用範例，安裝過程順暢。配置 Playwright MCP 令牌的步驟簡單明瞭，並且有良好的診斷工具。文件目前僅提供英文版，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多種網站和 Electron 應用的 CLI 轉換，功能強大。
-> - 重用 Chrome 登入狀態，確保安全性。
-> - AI 驅動的發現和自動化功能，提升使用效率。
+> - 支持多個網站的數據提取，功能強大。
+> - 重用 Chrome 登入狀態，簡化用戶操作。
+> - AI 驅動的命令發現，提升使用便利性。
 
 > [!danger] 缺點
-> - 需要安裝 Chrome 瀏覽器和 Playwright MCP Bridge 擴展，初始設置較為繁瑣。
-> - 僅支持 Node.js 20.0.0 以上版本，對於舊版用戶不友好。
-> - 對於某些網站，可能需要額外的下載工具，增加了依賴性。
+> - 需要用戶手動安裝和配置 Chrome 擴展。
+> - 對於某些網站的反爬蟲措施可能無法穩定運作。
+> - 依賴於用戶的 Chrome 環境，移植性較差。
 
 > [!warning] 注意事項
-> - 需要 Chrome 瀏覽器並已登錄目標網站。
-> - 僅支持 Node.js 20.0.0 以上版本。
-> - 對於某些網站，可能需要額外的下載工具（如 yt-dlp）來支持媒體下載。
+> - 僅支持 Node.js 20.0.0 以上版本
+> - 需要 Chrome 瀏覽器並已登入目標網站
+> - 某些網站可能會因為反爬蟲措施而無法正常提取數據
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [jackwener/twitter-cli](https://github.com/jackwener/twitter-cli) | 專注於 Twitter 的 CLI 工具，功能較為單一，無法支持其他網站的自動化。 |
-| [jackwener/xiaohongshu-cli](https://github.com/jackwener/xiaohongshu-cli) | 專注於小紅書的 CLI 工具，功能範圍較窄，無法實現多網站的整合。 |
+| [jackwener/twitter-cli](https://github.com/jackwener/twitter-cli) | 專注於 Twitter 的 CLI 工具，功能較為單一，無法整合多個網站。 |
+| [jackwener/xiaohongshu-cli](https://github.com/jackwener/xiaohongshu-cli) | 專注於小紅書的數據提取，無法支持其他網站的操作。 |
 
 ## 替代方案決策
 
@@ -205,16 +207,16 @@ OpenCLI 的核心技術機制在於其雙引擎架構，支持 YAML 和 TypeScri
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [jackwener/twitter-cli](https://github.com/jackwener/twitter-cli) | 專注於 Twitter 的 CLI 工具，功能較為單一，無法支持其他網站的自動化。 | 如果你的需求僅限於 Twitter 的數據提取，這個工具會更簡單易用。 | low，因為功能較為單一，轉移成本低。 |
-| [jackwener/xiaohongshu-cli](https://github.com/jackwener/xiaohongshu-cli) | 專注於小紅書的 CLI 工具，功能範圍較窄，無法實現多網站的整合。 | 如果你的主要需求是針對小紅書的數據提取，這個工具會更專注且簡單。 | low，因為功能較為專一，轉移成本低。 |
+| [jackwener/twitter-cli](https://github.com/jackwener/twitter-cli) | 專注於 Twitter 的數據提取，無法支持多個網站的操作。 | 如果只需要針對 Twitter 的數據提取，這個工具會更簡單易用。 | low，因為功能較為單一，遷移成本低。 |
+| [jackwener/xiaohongshu-cli](https://github.com/jackwener/xiaohongshu-cli) | 專注於小紅書的數據提取，無法支持其他網站的操作。 | 如果只需針對小紅書進行操作，這個工具會更專注且簡單。 | low，因為功能較為單一，遷移成本低。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **opencli** | **twitter-cli** | **xiaohongshu-cli** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 Twitter 的 CLI 工具，功能較為單一，無法支持其他網站的自動化。 | 專注於小紅書的 CLI 工具，功能範圍較窄，無法實現多網站的整合。 |
-> | 遷移成本 | - | low，因為功能較為單一，轉移成本低。 | low，因為功能較為專一，轉移成本低。 |
-> | 適用場景 | 主要場景 | 如果你的需求僅限於 Twitter 的數據提取，這個工具會更 | 如果你的主要需求是針對小紅書的數據提取，這個工具會更專注且簡 |
+> | 技術路線 | 本專案 | 專注於 Twitter 的數據提取，無法支持多個網站的操作。 | 專注於小紅書的數據提取，無法支持其他網站的操作。 |
+> | 遷移成本 | - | low，因為功能較為單一，遷移成本低。 | low，因為功能較為單一，遷移成本低。 |
+> | 適用場景 | 主要場景 | 如果只需要針對 Twitter 的數據提取，這個工具會更簡單 | 如果只需針對小紅書進行操作，這個工具會更專注且簡單。 |
 
 ## 成熟度評估
 
@@ -225,27 +227,26 @@ OpenCLI 的核心技術機制在於其雙引擎架構，支持 YAML 和 TypeScri
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人項目和小型團隊試用，但不建議用於生產環境的核心路徑上。
+> 適合開發者在測試環境中使用，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 某些網站的命令可能會因網站更新而失效
-  - 解法：定期檢查官方文檔或社群更新以獲取最新支持的命令
-- [MEDIUM] 初次設置 Playwright MCP Bridge 可能會遇到連接問題
-  - 解法：確保 Chrome 瀏覽器已正確安裝並登錄目標網站
-- [MEDIUM] 在某些環境下，可能需要額外的依賴工具（如 yt-dlp）
-  - 解法：提前檢查所需的依賴並進行安裝
+- **[HIGH]** 需要確保 Chrome 已登錄目標網站，否則會導致數據提取失敗。
+  - 解法：在運行命令前，手動確認 Chrome 已登錄。
+- [MEDIUM] 某些網站的反爬蟲措施可能會導致請求失敗。
+  - 解法：使用 `opencli doctor` 進行診斷，並檢查配置。
+- [low] 使用過程中可能會出現 UI 閃爍現象。
+  - 解法：暫時使用其他 CLI 工具或等待更新修復。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要從多個網站提取數據的小型開發團隊 | 非常適合 | 提供了統一的 CLI 解決方案，減少了多工具的複雜性。 |
-| 單一網站數據提取的個人開發者 | 普通 | 雖然功能強大，但對於單一網站的需求可能過於複雜。 |
-| 需要自動化測試的前端工程師 | 適合 | 能夠快速執行命令並獲得即時反饋，提升開發效率。 |
-| 大型企業的數據分析團隊 | 不適合 | 目前處於 beta 階段，可能不穩定，不建議用於核心業務。 |
+| 需要從多個網站提取數據的開發者 | 非常適合 | 這個工具能夠整合多個網站的數據提取，提升效率。 |
+| 僅需針對單一網站進行操作的開發者 | 不適合 | 這個工具的功能過於複雜，對於單一網站的操作來說不夠簡單。 |
+| 需要快速開發和測試自動化腳本的開發者 | 適合 | 這個工具的自動化能力能夠加速開發流程。 |
 
 ## 採用成本分析
 
@@ -257,12 +258,12 @@ OpenCLI 的核心技術機制在於其雙引擎架構，支持 YAML 和 TypeScri
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，2 小時整合，能夠快速實現多網站數據提取，值得考慮。
+> 花 3 小時學習，2 小時整合，得到快速的數據提取能力，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：工具本身不需要高權限，所有操作都在 Chrome 瀏覽器內部進行，敏感資料不會外洩。對於依賴的 Playwright MCP Bridge，需確保其安全性和更新。
+> 低風險：該工具需要訪問 Chrome 瀏覽器，但不會存取敏感資料。依賴於用戶的 Chrome 環境，安全性相對較高。
 
 ## 健康度儀表板
 
@@ -327,7 +328,7 @@ OpenCLI 的核心技術機制在於其雙引擎架構，支持 YAML 和 TypeScri
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 172 |
+| Forks | 174 |
 | Open Issues | 20 |
 | Issue 解決率 | 44% (16 closed) |
 | 最後推送 | 2026-03-18 |
@@ -376,8 +377,8 @@ OpenCLI 的核心技術機制在於其雙引擎架構，支持 YAML 和 TypeScri
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有多次提交和更新。
-**連結**：[文件](https://github.com/jackwener/opencli#readme)
+**社群活躍度**：社群活躍，有定期的更新和問題回應。
+**連結**：[文件](https://github.com/jackwener/opencli)
 
 ## 開發動態
 
@@ -613,7 +614,7 @@ OpenCLI 的核心技術機制在於其雙引擎架構，支持 YAML 和 TypeScri
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[CLI/TUI]] · [[資料提取]]
+相關概念：[[自動化]] · [[CLI/TUI]] · [[瀏覽器自動化]]
 
 相關專案：[[jackwener--twitter-cli|jackwener/twitter-cli]] · [[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[Narcooo--inkos|Narcooo/inkos]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[TianyiDataScience--openclaw-control-center|TianyiDataScience/openclaw-control-center]]
 
@@ -657,7 +658,7 @@ OpenCLI 的核心技術機制在於其雙引擎架構，支持 YAML 和 TypeScri
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","CLI/TUI","資料提取"];
+> const concepts = ["自動化","CLI/TUI","瀏覽器自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "jackwener--opencli" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
