@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "A free, open-source Screen Studio alternative that adds auto-zoom, cursor animations and more to your screen recordings. Substantially modifies the OpenScreen foundation."
 homepage: "https://recordly.dev"
-stars: 2350
-stars_per_day: 470
-forks: 120
-open_issues: 12
+stars: 2511
+stars_per_day: 419
+forks: 135
+open_issues: 10
 created: 2026-03-12
-pushed_at: 2026-03-17
+pushed_at: 2026-03-19
 first_seen: 2026-03-18
 week: "2026-W12"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "提供自動縮放、游標動畫等功能的免費開源螢幕錄影
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-21"
+appearances: 2
+next_review: "2026-03-22"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 64
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-18"
-star_history: "2026-03-18:2350"
+star_history: "2026-03-18:2350,2026-03-19:2511"
 tags:
   - github
   - "category/開發工具"
@@ -706,7 +706,7 @@ Recordly 的核心技術機制在於其使用 Electron 作為應用框架，這�
 
 相關概念：[[自動化測試]] · [[資料視覺化]] · [[多模態]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[THU-MAIC--OpenMAIC|THU-MAIC/OpenMAIC]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[THU-MAIC--OpenMAIC|THU-MAIC/OpenMAIC]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]]
 
 [GitHub](https://github.com/webadderall/Recordly) · [官方網站](https://recordly.dev)
 
@@ -1002,4 +1002,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-19|2026-03-19]] — 再次上榜，2.5k stars
 - [[2026-03-18|2026-03-18]] — 首次收錄，2.4k stars

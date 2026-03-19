@@ -7,12 +7,12 @@ language: JavaScript
 license: AGPL-3.0
 description: "Your personal intelligence agent. Watches the world from multiple data sources and pings you when something changes."
 homepage: "https://crucix.live"
-stars: 3092
-stars_per_day: 1031
-forks: 387
-open_issues: 16
+stars: 4496
+stars_per_day: 1124
+forks: 618
+open_issues: 23
 created: 2026-03-14
-pushed_at: 2026-03-17
+pushed_at: 2026-03-18
 first_seen: 2026-03-17
 week: "2026-W12"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "整合多個資料來源，實時監控並在變更時通知你的個
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-03-21"
+appearances: 3
+next_review: "2026-03-22"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 11
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-17"
-star_history: "2026-03-17:1888,2026-03-17:1918,2026-03-18:3081,2026-03-18:3092"
+star_history: "2026-03-17:1888,2026-03-17:1918,2026-03-18:3081,2026-03-18:3092,2026-03-19:4496"
 tags:
   - github
   - "category/開發工具"
@@ -862,5 +862,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-19|2026-03-19]] — 再次上榜，4.5k stars
 - [[2026-03-18|2026-03-18]] — 再次上榜，3.1k stars
 - [[2026-03-17|2026-03-17]] — 首次收錄，1.9k stars
