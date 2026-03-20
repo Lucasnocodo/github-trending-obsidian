@@ -7,10 +7,10 @@ language: JavaScript
 license: Apache-2.0
 description: "NVIDIA plugin for secure installation of OpenClaw"
 homepage: "https://docs.nvidia.com/nemoclaw/latest/"
-stars: 8511
-stars_per_day: 2837
-forks: 879
-open_issues: 230
+stars: 12647
+stars_per_day: 3162
+forks: 1208
+open_issues: 257
 created: 2026-03-15
 pushed_at: 2026-03-19
 first_seen: 2026-03-18
@@ -30,10 +30,10 @@ use_case: "提供安全的 OpenClaw 安裝解決方案，簡化運行 NVIDIA 的
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-03-22"
+appearances: 3
+next_review: "2026-03-23"
 contributor_count: 5
-engagement: "medium"
+engagement: "low"
 issue_close_rate: 13
 repo_size_kb: 974
 readme_length: 10000
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-18"
-star_history: "2026-03-18:4282,2026-03-18:4313,2026-03-19:8457,2026-03-19:8511"
+star_history: "2026-03-18:4282,2026-03-18:4313,2026-03-19:8457,2026-03-19:8511,2026-03-20:12647"
 tags:
   - github
   - "category/開發工具"
@@ -856,5 +856,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-20|2026-03-20]] — 再次上榜，12.6k stars
 - [[2026-03-19|2026-03-19]] — 再次上榜，8.5k stars
 - [[2026-03-18|2026-03-18]] — 首次收錄，4.3k stars

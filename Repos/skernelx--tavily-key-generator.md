@@ -7,9 +7,9 @@ language: Python
 license: N/A
 description: "Multi-service toolkit for Tavily and Firecrawl signup automation, key validation, and isolated proxy pools."
 homepage: ""
-stars: 1307
-stars_per_day: 327
-forks: 815
+stars: 1331
+stars_per_day: 266
+forks: 820
 open_issues: 1
 created: 2026-03-14
 pushed_at: 2026-03-17
@@ -30,8 +30,8 @@ use_case: "自動化註冊 Tavily 和 Firecrawl 的 API 金鑰，並提供金鑰
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-22"
+appearances: 2
+next_review: "2026-03-23"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 75
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-19"
-star_history: "2026-03-19:1307"
+star_history: "2026-03-19:1307,2026-03-20:1331"
 tags:
   - github
   - "category/開發工具"
@@ -809,4 +809,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-20|2026-03-20]] — 再次上榜，1.3k stars
 - [[2026-03-19|2026-03-19]] — 首次收錄，1.3k stars

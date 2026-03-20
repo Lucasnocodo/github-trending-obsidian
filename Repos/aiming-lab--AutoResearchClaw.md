@@ -7,10 +7,10 @@ language: Python
 license: N/A
 description: "Fully autonomous research from idea to paper. Chat an Idea. Get a Paper. Fully Autonomous. 🦞"
 homepage: ""
-stars: 6233
-stars_per_day: 2078
-forks: 623
-open_issues: 0
+stars: 6782
+stars_per_day: 1696
+forks: 698
+open_issues: 2
 created: 2026-03-15
 pushed_at: 2026-03-19
 first_seen: 2026-03-17
@@ -30,10 +30,10 @@ use_case: "從研究想法到論文的全自動化流程，讓你只需輸入想
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-03-22"
+appearances: 4
+next_review: "2026-03-23"
 contributor_count: 5
-engagement: "low"
+engagement: "medium"
 issue_close_rate: 33
 repo_size_kb: 7252
 readme_length: 10000
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-17"
-star_history: "2026-03-17:1449,2026-03-17:1460,2026-03-18:4186,2026-03-19:6233"
+star_history: "2026-03-17:1449,2026-03-17:1460,2026-03-18:4186,2026-03-19:6233,2026-03-20:6782"
 tags:
   - github
   - "category/ai_ml"
@@ -930,6 +930,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-20|2026-03-20]] — 再次上榜，6.8k stars
 - [[2026-03-19|2026-03-19]] — 再次上榜，6.2k stars
 - [[2026-03-18|2026-03-18]] — 再次上榜，4.2k stars
 - [[2026-03-17|2026-03-17]] — 首次收錄，1.4k stars

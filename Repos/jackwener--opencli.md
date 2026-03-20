@@ -7,12 +7,12 @@ language: TypeScript
 license: Apache-2.0
 description: "Make any website your CLI. A powerful, AI-native runtime for seamless browser automation and dynamic web data extraction."
 homepage: ""
-stars: 1885
-stars_per_day: 471
-forks: 174
-open_issues: 20
+stars: 2453
+stars_per_day: 491
+forks: 221
+open_issues: 32
 created: 2026-03-14
-pushed_at: 2026-03-18
+pushed_at: 2026-03-19
 first_seen: 2026-03-19
 week: "2026-W12"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "將任何網站或 Electron 應用程式轉換為命令行介面，�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-22"
+appearances: 2
+next_review: "2026-03-23"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 44
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-19"
-star_history: "2026-03-19:1858,2026-03-19:1885"
+star_history: "2026-03-19:1858,2026-03-19:1885,2026-03-20:2453"
 tags:
   - github
   - "category/cli_工具"
@@ -912,4 +912,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-20|2026-03-20]] — 再次上榜，2.5k stars
 - [[2026-03-19|2026-03-19]] — 首次收錄，1.9k stars

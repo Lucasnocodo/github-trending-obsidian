@@ -421,10 +421,10 @@
   },
   "pasky/chrome-cdp-skill": {
     "first_seen": "2026-03-16",
-    "last_seen": "2026-03-19",
-    "times_seen": 4,
+    "last_seen": "2026-03-20",
+    "times_seen": 5,
     "stars_first": 1502,
-    "stars_last": 2207
+    "stars_last": 2299
   },
   "wanshuiyin/Auto-claude-code-research-in-sleep": {
     "first_seen": "2026-03-16",
@@ -449,24 +449,24 @@
   },
   "calesthio/Crucix": {
     "first_seen": "2026-03-17",
-    "last_seen": "2026-03-19",
-    "times_seen": 3,
+    "last_seen": "2026-03-20",
+    "times_seen": 4,
     "stars_first": 1888,
-    "stars_last": 4496
+    "stars_last": 5178
   },
   "aiming-lab/AutoResearchClaw": {
     "first_seen": "2026-03-17",
-    "last_seen": "2026-03-19",
-    "times_seen": 3,
+    "last_seen": "2026-03-20",
+    "times_seen": 4,
     "stars_first": 1449,
-    "stars_last": 6233
+    "stars_last": 6782
   },
   "NVIDIA/NemoClaw": {
     "first_seen": "2026-03-18",
-    "last_seen": "2026-03-19",
-    "times_seen": 2,
+    "last_seen": "2026-03-20",
+    "times_seen": 3,
     "stars_first": 4282,
-    "stars_last": 8457
+    "stars_last": 12647
   },
   "webadderall/Recordly": {
     "first_seen": "2026-03-18",
@@ -477,17 +477,17 @@
   },
   "jackwener/opencli": {
     "first_seen": "2026-03-19",
-    "last_seen": "2026-03-19",
-    "times_seen": 1,
+    "last_seen": "2026-03-20",
+    "times_seen": 2,
     "stars_first": 1858,
-    "stars_last": 1858
+    "stars_last": 2453
   },
   "MoonshotAI/Attention-Residuals": {
     "first_seen": "2026-03-19",
-    "last_seen": "2026-03-19",
-    "times_seen": 1,
+    "last_seen": "2026-03-20",
+    "times_seen": 2,
     "stars_first": 1811,
-    "stars_last": 1811
+    "stars_last": 2012
   },
   "Narcooo/inkos": {
     "first_seen": "2026-03-19",
@@ -498,16 +498,30 @@
   },
   "uditgoenka/autoresearch": {
     "first_seen": "2026-03-19",
-    "last_seen": "2026-03-19",
-    "times_seen": 1,
+    "last_seen": "2026-03-20",
+    "times_seen": 2,
     "stars_first": 1386,
-    "stars_last": 1386
+    "stars_last": 1504
   },
   "skernelx/tavily-key-generator": {
     "first_seen": "2026-03-19",
-    "last_seen": "2026-03-19",
-    "times_seen": 1,
+    "last_seen": "2026-03-20",
+    "times_seen": 2,
     "stars_first": 1307,
-    "stars_last": 1307
+    "stars_last": 1331
+  },
+  "HKUDS/ClawTeam": {
+    "first_seen": "2026-03-20",
+    "last_seen": "2026-03-20",
+    "times_seen": 1,
+    "stars_first": 1687,
+    "stars_last": 1687
+  },
+  "VoltAgent/awesome-codex-subagents": {
+    "first_seen": "2026-03-20",
+    "last_seen": "2026-03-20",
+    "times_seen": 1,
+    "stars_first": 1509,
+    "stars_last": 1509
   }
 }

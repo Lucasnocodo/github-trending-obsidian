@@ -7,12 +7,12 @@ language: Shell
 license: MIT
 description: "Claude Autoresearch Skill — Autonomous goal-directed iteration for Claude Code. Inspired by Karpathy's autoresearch. Modify → Verify → Keep/Discard → Repeat forever."
 homepage: "https://udit.co/projects/autoresearch"
-stars: 1386
-stars_per_day: 277
-forks: 108
+stars: 1504
+stars_per_day: 251
+forks: 113
 open_issues: 1
 created: 2026-03-13
-pushed_at: 2026-03-18
+pushed_at: 2026-03-19
 first_seen: 2026-03-19
 week: "2026-W12"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "讓 Claude 自動化目標導向的迭代過程，實現持續改進�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-22"
+appearances: 2
+next_review: "2026-03-23"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 90
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-19"
-star_history: "2026-03-19:1386"
+star_history: "2026-03-19:1386,2026-03-20:1504"
 tags:
   - github
   - "category/開發工具"
@@ -881,4 +881,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-20|2026-03-20]] — 再次上榜，1.5k stars
 - [[2026-03-19|2026-03-19]] — 首次收錄，1.4k stars
