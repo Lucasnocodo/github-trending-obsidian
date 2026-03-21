@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "ClawTeam: Agent Swarm Intelligence (One Command → Full Automation)"
 homepage: ""
-stars: 1693
-stars_per_day: 847
-forks: 207
-open_issues: 10
+stars: 2091
+stars_per_day: 697
+forks: 260
+open_issues: 14
 created: 2026-03-17
-pushed_at: 2026-03-19
+pushed_at: 2026-03-20
 first_seen: 2026-03-20
 week: "2026-W12"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "讓 AI 代理人自動組成團隊，協同工作並快速交付結�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-23"
+appearances: 2
+next_review: "2026-03-24"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 33
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-20"
-star_history: "2026-03-20:1687,2026-03-20:1693"
+star_history: "2026-03-20:1687,2026-03-20:1693,2026-03-21:2091"
 tags:
   - github
   - "category/開發工具"
@@ -965,4 +965,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-21|2026-03-21]] — 再次上榜，2.1k stars
 - [[2026-03-20|2026-03-20]] — 首次收錄，1.7k stars

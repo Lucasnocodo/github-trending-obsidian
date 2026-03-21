@@ -449,24 +449,24 @@
   },
   "calesthio/Crucix": {
     "first_seen": "2026-03-17",
-    "last_seen": "2026-03-20",
-    "times_seen": 4,
+    "last_seen": "2026-03-21",
+    "times_seen": 5,
     "stars_first": 1888,
-    "stars_last": 5178
+    "stars_last": 5741
   },
   "aiming-lab/AutoResearchClaw": {
     "first_seen": "2026-03-17",
-    "last_seen": "2026-03-20",
-    "times_seen": 4,
+    "last_seen": "2026-03-21",
+    "times_seen": 5,
     "stars_first": 1449,
-    "stars_last": 6782
+    "stars_last": 7132
   },
   "NVIDIA/NemoClaw": {
     "first_seen": "2026-03-18",
-    "last_seen": "2026-03-20",
-    "times_seen": 3,
+    "last_seen": "2026-03-21",
+    "times_seen": 4,
     "stars_first": 4282,
-    "stars_last": 12647
+    "stars_last": 14333
   },
   "webadderall/Recordly": {
     "first_seen": "2026-03-18",
@@ -477,17 +477,17 @@
   },
   "jackwener/opencli": {
     "first_seen": "2026-03-19",
-    "last_seen": "2026-03-20",
-    "times_seen": 2,
+    "last_seen": "2026-03-21",
+    "times_seen": 3,
     "stars_first": 1858,
-    "stars_last": 2453
+    "stars_last": 3102
   },
   "MoonshotAI/Attention-Residuals": {
     "first_seen": "2026-03-19",
-    "last_seen": "2026-03-20",
-    "times_seen": 2,
+    "last_seen": "2026-03-21",
+    "times_seen": 3,
     "stars_first": 1811,
-    "stars_last": 2012
+    "stars_last": 2247
   },
   "Narcooo/inkos": {
     "first_seen": "2026-03-19",
@@ -505,23 +505,37 @@
   },
   "skernelx/tavily-key-generator": {
     "first_seen": "2026-03-19",
-    "last_seen": "2026-03-20",
-    "times_seen": 2,
+    "last_seen": "2026-03-21",
+    "times_seen": 3,
     "stars_first": 1307,
-    "stars_last": 1331
+    "stars_last": 1340
   },
   "HKUDS/ClawTeam": {
     "first_seen": "2026-03-20",
-    "last_seen": "2026-03-20",
-    "times_seen": 1,
+    "last_seen": "2026-03-21",
+    "times_seen": 2,
     "stars_first": 1687,
-    "stars_last": 1687
+    "stars_last": 2091
   },
   "VoltAgent/awesome-codex-subagents": {
     "first_seen": "2026-03-20",
-    "last_seen": "2026-03-20",
-    "times_seen": 1,
+    "last_seen": "2026-03-21",
+    "times_seen": 2,
     "stars_first": 1509,
-    "stars_last": 1509
+    "stars_last": 1841
+  },
+  "zerobootdev/zeroboot": {
+    "first_seen": "2026-03-21",
+    "last_seen": "2026-03-21",
+    "times_seen": 1,
+    "stars_first": 1414,
+    "stars_last": 1414
+  },
+  "Lum1104/Understand-Anything": {
+    "first_seen": "2026-03-21",
+    "last_seen": "2026-03-21",
+    "times_seen": 1,
+    "stars_first": 1388,
+    "stars_last": 1388
   }
 }
