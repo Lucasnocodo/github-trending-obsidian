@@ -7,17 +7,17 @@ language: C
 license: NOASSERTION
 description: "Open-source, low-cost 10.5 GHz PLFM phased array RADAR system"
 homepage: ""
-stars: 3405
-stars_per_day: 310
-forks: 708
-open_issues: 11
+stars: 3448
+stars_per_day: 287
+forks: 719
+open_issues: 10
 created: 2026-03-08
 pushed_at: 2026-03-20
 first_seen: 2026-03-15
 week: "2026-W12"
 month: "2026-03"
 category: "基礎設施"
-subcategory: "硬體設計"
+subcategory: "雷達系統"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-15
-use_case: "提供一個開源、低成本的10.5 GHz相控陣列雷達系統，讓研究者和開發者能夠探索雷達技術。"
+use_case: "提供開源、低成本的 10.5 GHz 脈衝線性頻率調變相控陣列雷達系統。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 1
 next_review: "2026-03-18"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 48
-repo_size_kb: 93176
+issue_close_rate: 52
+repo_size_kb: 93184
 readme_length: 8018
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-15"
-star_history: "2026-03-15:1703,2026-03-15:1708,2026-03-16:2576,2026-03-17:3042,2026-03-18:3202,2026-03-19:3341,2026-03-20:3405"
+star_history: "2026-03-15:1703,2026-03-15:1708,2026-03-16:2576,2026-03-17:3042,2026-03-18:3202,2026-03-19:3341,2026-03-20:3405,2026-03-21:3448"
 tags:
   - github
   - "category/基礎設施"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "PLFM_RADAR"
   - "NawfalMotii79/PLFM_RADAR"
-  - "提供一個開源、低成本的10.5 GHz相控陣列雷達系統，讓研究者和開發者能夠探索雷達技術。"
+  - "提供開源、低成本的 10.5 GHz 脈衝線性頻率調變相控陣列雷達系統。"
 ---
 
 # PLFM_RADAR
 
-**3.4k** stars · **310** stars/天 · 建立 11 天前 · C · NOASSERTION
+**3.4k** stars · **287** stars/天 · 建立 12 天前 · C · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/NawfalMotii79--PLFM_RADAR");
@@ -71,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> 提供一個開源、低成本的10.5 GHz相控陣列雷達系統，讓研究者和開發者能夠探索雷達技術。
+> 提供開源、低成本的 10.5 GHz 脈衝線性頻率調變相控陣列雷達系統。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (310 stars/day)
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (287 stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 對雷達技術有興趣的研究者和開發者，尤其是無人機和SDR領域的專業人士。
-> **一句話重點** AERIS-10不僅是一個雷達系統，更是一個開放的實驗平台，讓更多人能夠參與到雷達技術的探索中。
+> **適合** 對雷達技術有深入需求的研究者和開發者，特別是需要自定義硬體的團隊。
+> **一句話重點** 這個專案不僅是雷達系統的開源實現，更是對於開源硬體設計的深刻探索，讓更多人能夠進入這個領域。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/NawfalMotii79--PLFM_RADAR");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "硬體設計" && p.file.name !== "NawfalMotii79--PLFM_RADAR" && p.status !== "archived")
+>     .where(p => p.subcategory === "雷達系統" && p.file.name !== "NawfalMotii79--PLFM_RADAR" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,110 +95,100 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 硬體設計 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 雷達系統 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** low
-> **結論** 花10小時學習，20小時整合，得到一個靈活的雷達系統，值得投資。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~20h · **綁定風險** medium
+> **結論** 花 20 小時學習，40 小時整合，得到強大的雷達系統，值得投入。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於提供一個完全開源的相控陣列雷達系統，讓研究者和開發者能夠自由探索和實驗。
+> 這個專案的核心創新在於其開源的相控陣列雷達系統設計，讓研究者能夠自由修改和擴展。
 
 ## 專案簡介
 
-AERIS-10是一個開源的10.5 GHz相控陣列雷達系統，專為研究者、無人機開發者和SDR愛好者設計。其核心機制包括生成脈衝線性頻率調製（LFM）信號，通過DAC生成雷達脈衝，然後使用LT5552混頻器進行頻率轉換，接著由FPGA進行信號處理，最後通過Python GUI進行可視化。這個系統的賣點在於其完全開源的硬體和軟體設計，讓使用者能夠自由修改和擴展。系統架構方面，AERIS-10包含多個子系統，如電源管理板、頻率合成器板和主板，並使用XC7A100T FPGA進行信號處理，支持自動增益控制、I/Q基帶下變頻和脈衝壓縮等功能。與傳統雷達系統相比，AERIS-10提供了更靈活的模組化設計和電子波束控制，適合不同的應用需求。
+AERIS-10 是一個開源的 10.5 GHz 相控陣列雷達系統，專為研究者和無人機開發者設計，支持 3km 和 20km 的兩種版本。其核心機制是利用脈衝線性頻率調變（LFM）來生成雷達波形，並透過 FPGA 進行信號處理，最終輸出經過處理的目標數據。使用者可透過 Python GUI 進行實時控制和目標追蹤，並整合 GPS 和 IMU 進行位置修正。這個系統的賣點在於其開源硬體和軟體設計，讓使用者能夠自由修改和擴展功能。技術上，AERIS-10 使用了高性能的時鐘生成器和多通道相位移器，並且具備電子波束控制，能夠在 ±45° 的範圍內進行調整。
 
-相較於其他雷達系統，如AlpinDale/parsync和NVIDIA/NemoClaw，AERIS-10的開源特性和低成本使其更易於進行實驗和開發。實際使用中，該系統的效能受限於硬體配置，並需要一定的PCB組裝經驗。這個專案目前處於活躍開發階段，社群回應良好，對於想要深入雷達技術的開發者來說，值得考慮。適合的使用場景包括學術研究、無人機測試和高級製作人實驗，但不建議用於商業產品的核心應用，因為其仍在開發中。
+與傳統雷達系統相比，這個系統的模組化設計使得維護和升級變得更加簡單。與其他替代方案如 AlpinDale/parsync 和 Flowseal/tg-ws-proxy 相比，AERIS-10 提供了更高的靈活性和可擴展性，特別適合需要自定義硬體的開發者。實際使用中，系統的效能和穩定性取決於硬體組裝的精確度，並且需要一定的 FPGA 開發經驗來進行信號處理的調整。這個專案目前處於活躍開發階段，社群回應迅速，適合對雷達技術有深入需求的團隊使用。對於小型團隊或個人開發者，這個系統的學習曲線可能較陡峭，但長期來看，能夠提供強大的實驗平台。
 
-**技術棧**：`C` · `Python` · `Verilog` · `PLSQL` · `C++` · `SMT` · `TypeSpec` · `MATLAB` · `Tcl` · `Linker Script`
+**技術棧**：`C++` · `Python` · `Verilog` · `MATLAB`
 
 ## 重點功能
 
-- 開源硬體與軟體 — 提供完整的電路圖、PCB佈局和韌體。
-- 雙版本可選 — AERIS-10N（3km範圍）和AERIS-10E（20km範圍）。
-- 全電子波束控制 — ±45°的電子控制，支持高精度的波束指向。
-- 先進信號處理 — FPGA進行脈衝壓縮、Doppler FFT和目標檢測。
-- Python GUI — 提供用戶友好的界面，支持地圖整合和實時目標顯示。
+- 開源硬體與軟體 — 提供完整的電路圖、PCB 佈局、韌體和軟體。
+- 雙版本可選 — AERIS-10N (3km) 和 AERIS-10E (20km)，滿足不同需求。
+- 全電子波束控制 — 在 ±45° 的範圍內進行電子調整。
+- 先進的信號處理 — FPGA 處理脈衝壓縮、Doppler FFT、MTI 和 CFAR。
+- Python GUI — 提供友好的介面，支持地圖整合和實時目標追蹤。
 
 ## 快速開始
 
-1. 訂購PCB
+1. 訂購 PCB
 ```bash
-從/4_Schematics and Boards Layout中獲取Gerber文件
+從 /4_Schematics and Boards Layout 獲取 Gerber 檔案
 ```
 2. 組裝硬體
 ```bash
-參考/10_docs/assembly_guide.md中的組裝指南
+遵循 /10_docs/assembly_guide.md 中的組裝指南
 ```
-3. 安裝Python依賴
+3. 安裝 Python 環境
 ```bash
 pip install -r requirements.txt
-```
-
-## 程式碼範例
-
-```c
-{
-  "前置條件": "確保已安裝Python 3.8+",
-  "指令": "python gui.py",
-  "預期輸出": "啟動AERIS-10的用戶界面，顯示雷達控制和目標追蹤功能。"
-}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立11天內累積3405 stars（310/天），forks 708（20.8%），顯示出強烈的社群興趣。作者NawfalMotii79在開源硬體領域有一定的影響力，這個專案填補了低成本雷達系統的市場空白，讓更多人能夠接觸和實驗雷達技術。該專案的開源性和模組化設計吸引了許多研究者和開發者的注意，特別是在無人機和SDR領域。社群的活躍度和對問題的快速反應也促進了專案的快速成長。
+> 建立 12 天就累積 3448 stars（287/天），forks 719（20.9%），顯示出強烈的社群興趣。NawfalMotii79 是這個專案的主要貢獻者，專注於開源硬體和無人機技術。這個專案解決了傳統雷達系統高成本和封閉性問題，提供了一個可供研究和實驗的開放平台。近期的社群討論集中在硬體測試和功能擴展，顯示出用戶對於實際應用的需求。技術上，開源硬體的趨勢使得這類專案越來越可行，並且吸引了大量開發者的關注。高達 20.9% 的 forks/stars 比率顯示出許多人正在實際修改和使用這個專案。
 
 ## 適合誰使用
 
-**目標受眾**：對雷達技術有興趣的研究者和開發者，尤其是無人機和SDR領域的專業人士。
+**目標受眾**：對雷達技術有深入需求的研究者和開發者，特別是需要自定義硬體的團隊。
 
 > [!example] 使用場景
-> - 無人機開發者用它來測試和優化自動駕駛系統，因為AERIS-10提供了高精度的目標追蹤和環境感知功能。
-> - 學術研究者用它來進行雷達信號處理的實驗，因為其開源設計允許自由修改和擴展功能。
-> - 高級製作人用它來探索相控陣列雷達技術，因為其低成本和模組化設計使得實驗變得可行。
+> - 無人機開發者用它來測試雷達系統，因為它提供了開源的硬體設計和模組化的組件，便於快速迭代和實驗。
+> - 學術研究者用它來進行雷達信號處理的研究，因為其 FPGA 支持複雜的信號處理演算法，能夠進行深入的數據分析。
+> - 電子工程師用它來設計和測試新的雷達應用，因為其開放的設計允許自由修改和擴展功能，適合創新開發。
 
 ## 架構分析
 
-AERIS-10的架構設計為模組化，包含多個子系統以確保靈活性和可擴展性。電源管理板確保所有電子元件的電壓供應，頻率合成器板使用高性能時鐘生成器提供相位對齊的時鐘參考。主板上集成了DAC、混頻器和FPGA，實現了雷達信號的生成和處理。
+AERIS-10 的架構設計為模組化，主要由電源管理、頻率合成、主板和天線陣列組成。電源管理板確保所有元件獲得正確的電壓和濾波，而頻率合成板則使用高性能的時鐘生成器來提供相位對齊的時鐘參考。主板上集成了 DAC、微波混頻器和相位移器，這些元件共同實現了雷達信號的生成和處理。
 
-選擇FPGA進行信號處理的好處在於其高效能和可編程性，但也增加了設計的複雜度。系統的擴展性受到硬體配置的限制，特別是在高功率和高頻率應用中。整體來說，這種設計使得AERIS-10能夠在不同的應用場景中靈活運用。
+選擇 FPGA 作為信號處理核心，因為其靈活性和高效能，能夠實現複雜的信號處理任務。這種設計的代價是需要較高的技術門檻來進行硬體組裝和信號處理的調整。整體架構的擴展性良好，但在處理高頻信號時可能會面臨熱管理和電源供應的挑戰。
 
 ## 技術深入分析
 
-AERIS-10的核心技術機制基於脈衝線性頻率調製（LFM）信號，這種技術能夠提高雷達的距離分辨率。系統使用FPGA進行信號處理，這使得其在處理速度和靈活性上具有優勢，能夠實現複雜的信號處理算法，如脈衝壓縮和Doppler處理。根據技術規格，AERIS-10N的最大範圍為3公里，而AERIS-10E則可達20公里，這使得其在不同的應用場景中都有良好的表現。設計選擇上，選擇使用C和Python進行開發，這使得開發者能夠快速上手並進行修改，但同時也增加了對開發者技能的要求。系統的依賴關係相對簡單，主要集中在FPGA開發工具和Python環境上，這降低了學習曲線。技術風險方面，FPGA的設計可能在擴展時出現瓶頸，尤其是在高功率應用中。與主流框架的整合難度較低，特別是在CI/CD流程中，因為其開源特性使得與現有工具鏈的整合變得容易。
+AERIS-10 的核心技術機制是基於 FPGA 的信號處理，這使得系統能夠實現高效的脈衝壓縮和 Doppler 處理。其使用的 DAC 和混頻器能夠生成高品質的雷達波形，並通過相位移器實現電子波束控制。系統的效能特性在於其能夠處理高達 20km 的範圍，並且具備實時數據處理能力。設計上選擇 FPGA 而非傳統的微控制器，因為 FPGA 在處理速度和靈活性上具有明顯優勢，但這也意味著需要較高的開發門檻。技術風險方面，隨著使用者數量的增加，可能會面臨硬體兼容性和維護的挑戰。整合到現有的開發環境中，特別是與 Python GUI 的結合，能夠提供良好的使用體驗，但對於 CI/CD 的支持仍需進一步強化。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README文件提供了清晰的指導，包含安裝步驟和組裝指南。安裝過程相對順暢，但對於新手來說，PCB組裝可能會有挑戰。文件中包含了必要的依賴和環境設置，對於有經驗的開發者來說，能夠在30分鐘內啟動項目。
+> README 文件詳細且清晰，包含了硬體組裝和軟體安裝的步驟。安裝過程中可能會遇到一些電子組裝的挑戰，但整體流程順暢。文件中提供了足夠的範例和參考資料，對於有基礎的使用者來說，能在 30 分鐘內完成基本設置。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開源設計，允許用戶自由修改和擴展功能。
-> - 低成本，適合學術研究和開發實驗。
-> - 模組化設計，方便維護和升級。
+> - 開源設計，提供完整的硬體和軟體資源，便於修改。
+> - 模組化架構，易於維護和升級。
+> - 支持先進的信號處理功能，適合專業研究和開發。
 
 > [!danger] 缺點
-> - 需要一定的硬體組裝和FPGA開發經驗。
-> - 目前仍在開發中，可能存在不穩定性。
-> - 對於商業應用的支持有限。
+> - 組裝和配置過程對新手不友好，需要一定的電子知識。
+> - 需要額外的 FPGA 開發工具，增加了學習成本。
+> - 目前社群相對較新，資源和支持可能有限。
 
 > [!warning] 注意事項
-> - 需要基本的雷達原理知識。
-> - PCB組裝經驗是必需的，對新手來說可能有挑戰。
-> - FPGA開發工具（如Vivado）需安裝以進行信號處理修改。
+> - 需要 FPGA 開發工具（Vivado）進行信號處理修改。
+> - 組裝過程需要一定的電子硬體知識，對新手可能不友好。
+> - 不支援 Windows 環境，需在 Linux 或 macOS 上運行。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | AlpinDale/parsync專注於並行數據傳輸，而AERIS-10則專注於雷達信號處理和應用。 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | NVIDIA/NemoClaw主要用於深度學習應用，而AERIS-10則是針對雷達技術的開源硬體。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的開源雷達系統，但主要聚焦於數據同步和傳輸，缺乏 AERIS-10 的信號處理能力。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 雖然是開源工具，但主要用於網路流量代理，與雷達系統無直接關聯。 |
 
 ## 替代方案決策
 
@@ -206,16 +196,16 @@ AERIS-10的核心技術機制基於脈衝線性頻率調製（LFM）信號，這
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | AlpinDale/parsync專注於數據的高效並行傳輸，而AERIS-10則專注於雷達信號的生成和處理。 | 如果你的專案需要高效的數據傳輸而非雷達信號處理，則應選擇AlpinDale/parsync。 | medium，因為需要重新設計數據流和處理邏輯。 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | NVIDIA/NemoClaw主要用於深度學習應用，而AERIS-10則針對雷達技術的開源硬體。 | 如果你的專案重點在於深度學習和AI應用，則NVIDIA/NemoClaw更合適。 | high，因為需要轉換到不同的技術棧和開發環境。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於數據同步和傳輸，並不專注於雷達信號處理，這使得其在功能上不如 AERIS-10 多樣化。 | 如果你的需求主要是數據同步，而非雷達信號處理，則可以考慮這個工具。 | low，因為其功能範圍較窄，轉移過程中不會有太多技術挑戰。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 主要用於網路流量代理，與雷達系統無直接關聯，功能上相對單一。 | 如果你的專案需要處理網路流量而非雷達信號，則可以選擇這個工具。 | medium，因為需要重新設計整個系統架構以適應新的工具。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **PLFM_RADAR** | **parsync** | **NemoClaw** |
+> | 維度 | **PLFM_RADAR** | **parsync** | **tg-ws-proxy** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | AlpinDale/parsync專注於數據的高效並行傳輸，而AERIS-10則專注於雷達信號的生成和處理。 | NVIDIA/NemoClaw主要用於深度學習應用，而AERIS-10則針對雷達技術的開源硬體。 |
-> | 遷移成本 | - | medium，因為需要重新設計數據流和處理邏輯。 | high，因為需要轉換到不同的技術棧和開發環境。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要高效的數據傳輸而非雷達信號處理，則應選擇Al | 如果你的專案重點在於深度學習和AI應用，則NVIDIA/Ne |
+> | 技術路線 | 本專案 | 專注於數據同步和傳輸，並不專注於雷達信號處理，這使得其在功能上不如 AERIS-10 多樣化。 | 主要用於網路流量代理，與雷達系統無直接關聯，功能上相對單一。 |
+> | 遷移成本 | - | low，因為其功能範圍較窄，轉移過程中不會有太多技術挑戰。 | medium，因為需要重新設計整個系統架構以適應新的工具。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是數據同步，而非雷達信號處理，則可以考慮這個 | 如果你的專案需要處理網路流量而非雷達信號，則可以選擇這個工具 |
 
 ## 成熟度評估
 
@@ -226,44 +216,50 @@ AERIS-10的核心技術機制基於脈衝線性頻率調製（LFM）信號，這
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人side project試用，不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** FPGA開發工具的安裝可能會遇到兼容性問題
-  - 解法：確保使用最新版本的Vivado
-- [MEDIUM] 組裝過程中可能缺少某些元件
-  - 解法：參考BOM文件並確認所有元件已準備好
-- [MEDIUM] Python GUI可能在某些環境中無法正常啟動
-  - 解法：檢查Python版本和依賴是否正確安裝
+- **[HIGH]** 組裝過程中可能會出現元件不兼容的問題，特別是在使用不同供應商的 PCB 時。
+  - 解法：確保所有元件來自同一供應商，並在組裝前進行充分的測試。
+- [MEDIUM] FPGA 開發工具的版本更新可能導致不兼容的問題。
+  - 解法：在開始開發前，確認使用的工具版本與專案要求相符。
+- [MEDIUM] 使用 Python GUI 時，可能會遇到性能瓶頸，特別是在處理大量數據時。
+  - 解法：考慮優化數據處理流程，或使用更高效的數據結構。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10人以下的新創公司進行雷達技術研究 | 非常適合 | 開源設計和低成本使其易於實驗和開發。 |
-| 學術機構進行雷達信號處理的實驗 | 適合 | 提供完整的硬體和軟體設計，方便學術研究。 |
-| 大型企業需要商業級雷達系統 | 不適合 | 目前仍在開發中，穩定性不足。 |
-| 無人機開發團隊進行環境感知測試 | 非常適合 | 高精度的目標追蹤功能符合需求。 |
+| 10 人以下的新創公司開發雷達應用 | 非常適合 | 開源設計和模組化架構使得小型團隊能夠快速迭代。 |
+| 大型研究機構進行雷達信號處理研究 | 適合 | 具備先進的信號處理能力，能滿足高需求的研究環境。 |
+| 對雷達技術完全不熟悉的初學者 | 不適合 | 組裝和配置過程對新手不友好，需要一定的電子知識。 |
+| 需要快速原型開發的無人機公司 | 普通 | 雖然具備開源優勢，但可能需要較長的學習曲線來掌握。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~20 小時 |
+| 學習時間 | ~20 小時 |
+| 整合時間 | ~40 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花10小時學習，20小時整合，得到一個靈活的雷達系統，值得投資。
+> 花 20 小時學習，40 小時整合，得到強大的雷達系統，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，依賴鏈的信任程度較高，適合在CI/CD中使用。
+> 低風險：系統本身不需要高權限，且不存取敏感資料，但硬體組裝過程中需小心電源管理和信號處理的安全性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+AERIS-10 最常與無人機開發平台和信號處理工具搭配使用，通常在開發和測試階段進行整合。實際整合範例包括在使用 Raspberry Pi 進行數據收集時，透過 USB 接口連接 AERIS-10，並使用 Python GUI 進行控制。與主流 CI/CD 工具如 GitHub Actions 的整合仍需進一步開發，特別是在自動化測試方面。整合過程中，最常見的問題是硬體兼容性，特別是在使用不同版本的 FPGA 時。
 
 ## 健康度儀表板
 
@@ -328,9 +324,9 @@ AERIS-10的核心技術機制基於脈衝線性頻率調製（LFM）信號，這
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 708 |
-| Open Issues | 11 |
-| Issue 解決率 | 48% (10 closed) |
+| Forks | 719 |
+| Open Issues | 10 |
+| Issue 解決率 | 52% (11 closed) |
 | 最後推送 | 2026-03-20 |
 | 建立日期 | 2026-03-08 |
 | Repo 大小 | 91.0 MB |
@@ -352,17 +348,17 @@ AERIS-10的核心技術機制基於脈衝線性頻率調製（LFM）信號，這
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@NawfalMotii79](https://github.com/NawfalMotii79) | 61 |
+> | [@NawfalMotii79](https://github.com/NawfalMotii79) | 63 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，對問題的回應速度快。
+**社群活躍度**：社群活躍，最近有多個問題和功能請求被討論。
 **連結**：[文件](https://github.com/NawfalMotii79/PLFM_RADAR)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-18 ~ 2026-03-20）
-> **活躍天數** 3 天 · **最新 commit** Added Full Diagram
+> [!abstract] 最近 10 次 commit（2026-03-19 ~ 2026-03-20）
+> **活躍天數** 2 天 · **最新 commit** Change radar system image format to PNG
 
 ## 熱門議題
 
@@ -370,10 +366,10 @@ AERIS-10的核心技術機制基於脈衝線性頻率調製（LFM）信號，這
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#26](https://github.com/NawfalMotii79/PLFM_RADAR/issues/26) | Project Updates | 2 | 2 |
-> | [#22](https://github.com/NawfalMotii79/PLFM_RADAR/issues/22) | FPGA Files | 2 | 5 |
-> | [#21](https://github.com/NawfalMotii79/PLFM_RADAR/issues/21) | Adding LAN interface | 2 | 11 |
+> | [#21](https://github.com/NawfalMotii79/PLFM_RADAR/issues/21) | Adding LAN interface | 2 | 12 |
 > | [#10](https://github.com/NawfalMotii79/PLFM_RADAR/issues/10) | Folder 10_docs seems missing | 1 | 2 |
 > | [#25](https://github.com/NawfalMotii79/PLFM_RADAR/issues/25) | Looking for hardware testers: XC7A200T-2FBG484(I/C) (TE0712/ | 0 | 4 |
+> | [#23](https://github.com/NawfalMotii79/PLFM_RADAR/issues/23) | Missing Gerberfiles and Schematics | 0 | 6 |
 
 ## README 摘錄
 
@@ -562,19 +558,19 @@ AERIS-10的核心技術機制基於脈衝線性頻率調製（LFM）信號，這
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[微服務]] · [[機器學習]]
+相關概念：[[自動化測試]] · [[機器學習]] · [[深度學習]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[novatic14--MANPADS-System-Launcher-and-Rocket|novatic14/MANPADS-System-Launcher-and-Rocket]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[aiming-lab--AutoResearchClaw|aiming-lab/AutoResearchClaw]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[novatic14--MANPADS-System-Launcher-and-Rocket|novatic14/MANPADS-System-Launcher-and-Rocket]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[aiming-lab--AutoResearchClaw|aiming-lab/AutoResearchClaw]]
 
 [GitHub](https://github.com/NawfalMotii79/PLFM_RADAR)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：硬體設計）
+> [!note]- 直接競品（同子分類：雷達系統）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "硬體設計" AND file.name != "NawfalMotii79--PLFM_RADAR"
+> WHERE subcategory = "雷達系統" AND file.name != "NawfalMotii79--PLFM_RADAR"
 > SORT stars DESC
 > ```
 
@@ -606,7 +602,7 @@ AERIS-10的核心技術機制基於脈衝線性頻率調製（LFM）信號，這
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化測試","微服務","機器學習"];
+> const concepts = ["自動化測試","機器學習","深度學習"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "NawfalMotii79--PLFM_RADAR" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

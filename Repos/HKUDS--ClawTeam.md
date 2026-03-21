@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "ClawTeam: Agent Swarm Intelligence (One Command → Full Automation)"
 homepage: ""
-stars: 2091
-stars_per_day: 697
-forks: 260
+stars: 2096
+stars_per_day: 699
+forks: 261
 open_issues: 14
 created: 2026-03-17
 pushed_at: 2026-03-20
@@ -17,7 +17,7 @@ first_seen: 2026-03-20
 week: "2026-W12"
 month: "2026-03"
 category: "開發工具"
-subcategory: "自動化"
+subcategory: "多代理協調"
 release_tag: "v0.1.2"
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-20
-use_case: "讓 AI 代理人自動組成團隊，協同工作並快速交付結果。"
+use_case: "讓 AI 代理協同工作，實現全自動化任務管理。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 2
 next_review: "2026-03-24"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 33
-repo_size_kb: 8814
-readme_length: 9978
+issue_close_rate: 26
+repo_size_kb: 8849
+readme_length: 10000
 bus_factor: 1
-last_release_days: 2
+last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-20"
-star_history: "2026-03-20:1687,2026-03-20:1693,2026-03-21:2091"
+star_history: "2026-03-20:1687,2026-03-20:1693,2026-03-21:2091,2026-03-21:2096"
 tags:
   - github
   - "category/開發工具"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "ClawTeam"
   - "HKUDS/ClawTeam"
-  - "讓 AI 代理人自動組成團隊，協同工作並快速交付結果。"
+  - "讓 AI 代理協同工作，實現全自動化任務管理。"
 ---
 
 # ClawTeam
 
-**1.7k** stars · **847** stars/天 · 建立 2 天前 · Python · MIT
+**2.1k** stars · **699** stars/天 · 建立 3 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/HKUDS--ClawTeam");
@@ -73,20 +73,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG` `v0.1.2` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓 AI 代理人自動組成團隊，協同工作並快速交付結果。
+> 讓 AI 代理協同工作，實現全自動化任務管理。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (847 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (699 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要快速自動化多代理協作的開發團隊，特別是在 AI 研究和軟體開發領域。
-> **一句話重點** ClawTeam 的創新在於它讓 AI 代理人能夠自動組成團隊，實現協同工作，這在當前的多代理系統中是前所未有的。
+> **適合** 需要在多代理環境中實現自動化任務管理的開發者和研究團隊。
+> **一句話重點** ClawTeam 的創新在於讓 AI 代理能夠自組織，實現真正的協作與自動化。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/HKUDS--ClawTeam");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "自動化" && p.file.name !== "HKUDS--ClawTeam" && p.status !== "archived")
+>     .where(p => p.subcategory === "多代理協調" && p.file.name !== "HKUDS--ClawTeam" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -97,34 +97,34 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 多代理協調 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到快速的多代理協作，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~4h · **綁定風險** medium
+> **結論** 花 4 小時學習，8 小時整合，得到高效的多代理協作，值得嘗試。
 
 > [!abstract] 核心創新
-> ClawTeam 允許 AI 代理人自動組成團隊，協同工作並快速交付結果，實現了代理的自組織能力。
+> ClawTeam 透過自組織的代理協作，實現了全自動化的任務管理。
 
 ## 專案簡介
 
-ClawTeam 是一個多代理協調的 CLI 工具，旨在透過一條命令實現全自動化。用戶只需提供目標，代理團隊便會自動生成、分配任務並交付成果。其核心機制包括專門的子代理生成、智能任務分配及實時協調，這些都透過 `clawteam spawn` 和 `clawteam inbox` 等指令來實現。這種設計使得複雜任務的協調變得簡單，避免了手動管理多個代理的麻煩。技術上，ClawTeam 使用 Python 3.10+，並依賴 `typer`、`pydantic` 和 `rich` 等輕量級庫，這使得它在性能上相對輕便，適合快速開發和部署。
+ClawTeam 是一個多代理協調的命令行工具，旨在讓 AI 代理形成協作團隊，通過簡單的命令實現全自動化。用戶只需提供目標，代理團隊便會自動分配任務、生成子代理並監控進度。其核心機制包括任務依賴鏈的自動解鎖和文件基於消息的通訊，這樣可以確保代理之間的協作無縫進行。用戶可以透過 `clawteam spawn` 指令來創建代理，並使用 `clawteam board serve` 來監控團隊進度，這樣的設計使得複雜任務的管理變得簡單高效。ClawTeam 支持多種 CLI 代理，如 Claude Code 和 Codex，這使得它在多種環境下都能靈活運用。其技術架構基於 Python，並使用了 `typer` 和 `pydantic` 等輕量級依賴，這使得整體安裝和運行都相對輕便。
 
-與其他類似工具相比，ClawTeam 允許任何 CLI 代理（如 Claude Code 和 Codex）進行無縫整合，而不是僅限於特定框架，這使得它的應用場景更廣泛。使用者可以在多種環境中運行，並通過 `tmux` 和 Git worktree 確保每個代理的隔離性，這在處理大型項目時特別有用。儘管目前仍處於 alpha 階段，但其潛力巨大，特別適合需要快速迭代和實驗的團隊。未來幾個月，預計將增加更多的模板和功能，進一步提升用戶體驗。對於需要自動化多代理協作的開發團隊，ClawTeam 是一個值得考慮的選擇，尤其是在 AI 研究和軟體開發領域。
+與其他多代理框架相比，ClawTeam 的優勢在於它的自組織能力和對多種 CLI 代理的支持，這使得用戶能夠快速上手而無需複雜的配置。實際使用中，ClawTeam 可以在大型機器學習實驗中自動化任務分配，顯著提高效率，並且能夠在多個 GPU 上同時運行多個實驗。這樣的設計使得用戶能夠專注於高層次的目標，而不必擔心底層的協調問題。ClawTeam 目前處於 alpha 階段，適合需要快速實現多代理協作的開發者和研究團隊。預計未來幾個月內，該專案將持續增強功能，並改善社群支持。
 
-**技術棧**：`Python 3.10` · `typer` · `pydantic` · `rich`
+**技術棧**：`Python 3.10+` · `typer` · `pydantic` · `rich`
 
 ## 重點功能
 
 - 多代理協調 CLI — 創建團隊、分配任務、生成代理、監控進度。
 - 任務依賴鏈 — 當依賴完成時自動解鎖任務。
-- 基於文件的消息傳遞 — 代理之間的收發和廣播。
-- tmux + git worktree 隔離 — 每個代理獲得自己的分支和終端。
-- 看板 — 終端儀表板和網頁 UI 監控。
-- 內建模板 — 專為對沖基金、代碼審查、研究論文等設計的團隊範本。
-- 代理技能 — 通過 `npx skills add HKUDS/ClawTeam` 安裝 Claude Code、Cursor、Codex 等技能。
+- 文件基於消息 — 代理之間的收發/廣播功能。
+- tmux + git worktree 隔離 — 每個代理擁有自己的分支和終端。
+- 看板 — 終端儀表板和網頁 UI 監控團隊進度。
+- 內建模板 — 提供對沖基金、代碼審查、研究論文等團隊範本。
+- 代理技能 — 通過 `npx skills add HKUDS/ClawTeam` 安裝各種技能。
 
 ## 快速開始
 
@@ -132,67 +132,79 @@ ClawTeam 是一個多代理協調的 CLI 工具，旨在透過一條命令實現
 ```bash
 pip install clawteam
 ```
-2. 配置 tmux 和代理 CLI
+2. 配置代理環境
 ```bash
-clawteam config show
+clawteam config set transport p2p
 ```
 3. 啟動代理團隊
 ```bash
 clawteam spawn --team my-team --agent-name worker1 --task 'Implement auth module'
 ```
 
+## 程式碼範例
+
+```python
+{
+  "前置條件": "需要安裝 tmux 和 CLI 代理。",
+  "指令": "clawteam spawn --team my-team --agent-name worker1 --task 'Implement auth module'",
+  "預期輸出": "代理 worker1 開始執行任務 'Implement auth module'。"
+}
+```
+
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天就累積 1693 stars（846.5/天），forks 207（12.2%），這顯示出強烈的社群興趣。作者 HKUDS 團隊在 AI 和自動化領域有豐富的經驗，這項工具解決了現有 AI 代理人孤立運作的痛點，讓多個代理能夠協同工作。近期的推廣活動和社群討論也可能促進了這一增長。技術上，ClawTeam 的設計使得它能夠在多種環境中靈活運作，這在當前的 AI 生態系中是非常重要的。forks/stars 比率為 12.2%，顯示出有相當比例的用戶在進行實際修改和使用。
+> 建立 3 天內累積 2096 stars（699/天），forks 261（12.5%），顯示出強烈的社群興趣。作者 HKUDS 團隊在多代理系統的開發上有豐富經驗，這個工具解決了現有 AI 代理孤立運作的痛點，讓多個代理能夠協同工作。最近的推廣活動和社群討論也促進了其曝光率。技術上，隨著 AI 代理技術的成熟，這種協作模式變得越來越可行，進一步推動了 ClawTeam 的發展。forks/stars 比率為 12.5%，顯示出有相當比例的用戶在實際修改和使用這個工具。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速自動化多代理協作的開發團隊，特別是在 AI 研究和軟體開發領域。
+**目標受眾**：需要在多代理環境中實現自動化任務管理的開發者和研究團隊。
 
 > [!example] 使用場景
-> - AI 研究人員用它來自動化 ML 實驗，因為它能快速生成和管理多個實驗代理，顯著縮短研究時間。
-> - 軟體工程師用它來協調全棧開發任務，因為它能自動分配任務並管理依賴關係，減少手動協調的負擔。
-> - 投資分析師用它來自動化市場研究，因為它能快速生成多策略投資組合，並實時評估風險。
+> - AI 研究員用它來自動化 ML 實驗，因為它能夠在多個 GPU 上同時運行多個實驗，大幅提升效率。
+> - 全端開發者用它來協調團隊開發一個全棧應用，因為它能夠自動管理任務依賴，減少手動協調的負擔。
+> - 金融分析師用它來實現自動化市場研究，因為它能夠快速生成和執行多個策略，並實時調整。
 
 ## 架構分析
 
-ClawTeam 採用 CLI 工具架構，設計上強調輕量級和靈活性。每個代理在獨立的 Git worktree 和 tmux 環境中運行，這樣的設計使得每個代理能夠在隔離的環境中獨立執行任務，避免了相互干擾。使用者通過簡單的 CLI 指令進行操作，這樣的設計降低了使用門檻。選擇 tmux 作為終端管理工具，能夠實現多任務的同時監控，這在處理大型項目時特別有用。由於目前仍處於 alpha 階段，未來可能會出現擴展性瓶頸，特別是在代理數量增加時，性能可能會受到影響。
+ClawTeam 採用單一命令行工具的架構，設計目標是簡化多代理協作的複雜性。每個代理在獨立的 git worktree 和 tmux 環境中運行，這樣可以避免環境衝突並保持任務的隔離。資料流方面，代理之間通過文件基於消息的方式進行通訊，這樣可以實現即時的狀態更新和結果回報。選擇這種架構的代價在於需要額外的環境配置，但這樣的設計使得用戶能夠快速上手並靈活運用。擴展性方面，這種架構能夠支持多個代理同時運行，但在資源配置上可能需要進一步的優化。
 
 ## 技術深入分析
 
-ClawTeam 的核心技術機制是基於多代理協調的 CLI 工具，利用 Python 的靈活性和強大的庫支持來實現功能。它使用 `typer` 來構建 CLI 接口，`pydantic` 用於數據驗證，`rich` 則提供了美觀的終端輸出。這樣的選擇使得整體架構輕量且易於擴展。性能方面，ClawTeam 能夠處理多個代理同時運行，具體的性能瓶頸尚未明確，但在高負載下可能會出現延遲。設計上，選擇 Git worktrees 作為代理的隔離環境，這樣的選擇使得每個代理能夠獨立管理自己的代碼和狀態，這在實驗和開發中非常有用。技術風險方面，隨著代理數量的增加，可能會導致協調複雜度上升，這需要進一步的優化和改進。整合方面，ClawTeam 可以輕鬆與其他 CLI 工具鏈整合，但在與大型系統的集成時可能需要額外的適配層。
+ClawTeam 的核心技術基於 Python，利用了 `typer` 和 `pydantic` 來構建命令行介面和數據模型。這使得用戶能夠快速定義和管理代理任務。系統的性能特性在於能夠在多個 GPU 上同時運行多個代理，這對於大型機器學習實驗尤為重要。設計上，選擇使用 git worktree 來隔離每個代理的環境，這樣可以避免環境衝突，並保持任務的獨立性。這種設計的代價在於需要用戶具備一定的 git 使用經驗。技術風險方面，隨著代理數量的增加，系統的資源需求可能會迅速上升，這需要用戶在配置時謹慎考量。與主流框架的整合難度較低，因為它支持任何 CLI 代理，但對於特定的框架，可能需要額外的適配工作。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了安裝和快速入門的指導。安裝過程相對順暢，但需要確保所有依賴都已安裝。文件中有多語言支持，對於不同語言的使用者友好。
+> README 文件清晰，提供了安裝和快速入門的指導；安裝過程相對順暢，但需要用戶自行配置 tmux；有提供基本的使用範例，但缺乏深入的指導；目前僅提供英文文檔，對非英語使用者可能不太友好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用的 CLI 接口，快速上手。
+> - 簡化的多代理協作流程，減少手動管理的需求。
 > - 支持多種 CLI 代理，靈活性高。
-> - 實時監控和協調功能，提升工作效率。
+> - 實時監控和進度跟蹤，便於管理。
+> - 自動化任務依賴管理，提升工作效率。
 
 > [!danger] 缺點
-> - 目前功能仍在開發中，穩定性不足。
-> - 需要額外的配置和依賴，對新手不友好。
-> - 僅限於 Python 環境，對其他語言支持有限。
+> - 目前功能仍在開發中，可能不夠穩定。
+> - 需要額外的環境配置，如 tmux。
+> - 對於大型專案，資源需求可能較高。
+> - 缺乏詳細的文檔和範例，對新手不太友好。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.10+。
-> - 需要 tmux 和 CLI 代理運行在同一台機器上。
-> - 目前仍處於 alpha 階段，功能可能不穩定。
-> - 依賴於特定的 CLI 代理，整合新代理可能需要額外的調試。
+> - 僅支援 Python 3.10 以上版本。
+> - 需要安裝 tmux 作為終端管理工具。
+> - 目前處於 alpha 階段，功能可能不穩定。
+> - 對於大型專案，可能需要更多的資源配置。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | 提供通用的 CLI 代理支持，但缺乏 ClawTeam 的多代理協調功能。 |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的代理技能，功能範圍較窄，不如 ClawTeam 的通用性強。 |
-| [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | 專注於自動化研究，但不具備 ClawTeam 的多任務協調和實時監控功能。 |
+| [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | 提供更廣泛的 CLI 代理支持，但不具備 ClawTeam 的自動化任務管理功能。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的多代理協作，但功能範圍較窄。 |
+| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 針對自動化研究的工具，專注於特定任務，而 ClawTeam 提供更通用的多代理協調能力。 |
 
 ## 替代方案決策
 
@@ -200,16 +212,16 @@ ClawTeam 的核心技術機制是基於多代理協調的 CLI 工具，利用 Py
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步和多線程處理，與 ClawTeam 的多代理協調有所不同。 | 如果你的需求主要是文件同步而非多代理協作，則可以考慮使用它。 | low，因為主要功能不同，遷移不會太複雜。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供了一個多代理框架，但不支持 ClawTeam 的自動化任務分配。 | 如果你需要一個更靈活的多代理框架，而不需要自動化功能，可以考慮這個工具。 | medium，因為需要重新設計任務分配邏輯。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步和多代理協作，但不具備 ClawTeam 的自動化任務管理能力。 | 如果你的需求主要是文件同步而非任務協調，則可以選擇它。 | medium，因為需要重新設計任務管理流程。 |
+| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 專注於自動化研究，提供特定的實驗設計功能，而 ClawTeam 提供更通用的多代理協調能力。 | 如果你的專案專注於研究自動化，則可以考慮使用它。 | high，因為需要調整整體工作流程和工具鏈。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **ClawTeam** | **parsync** | **Shadowbroker** |
+> | 維度 | **ClawTeam** | **parsync** | **autoresearch** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於文件同步和多線程處理，與 ClawTeam 的多代理協調有所不同。 | 提供了一個多代理框架，但不支持 ClawTeam 的自動化任務分配。 |
-> | 遷移成本 | - | low，因為主要功能不同，遷移不會太複雜。 | medium，因為需要重新設計任務分配邏輯。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是文件同步而非多代理協作，則可以考慮使用它。 | 如果你需要一個更靈活的多代理框架，而不需要自動化功能，可以考 |
+> | 技術路線 | 本專案 | 專注於文件同步和多代理協作，但不具備 ClawTeam 的自動化任務管理能力。 | 專注於自動化研究，提供特定的實驗設計功能，而 ClawTeam 提供更通用的多代理協調能力。 |
+> | 遷移成本 | - | medium，因為需要重新設計任務管理流程。 | high，因為需要調整整體工作流程和工具鏈。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是文件同步而非任務協調，則可以選擇它。 | 如果你的專案專注於研究自動化，則可以考慮使用它。 |
 
 ## 成熟度評估
 
@@ -220,50 +232,44 @@ ClawTeam 的核心技術機制是基於多代理協調的 CLI 工具，利用 Py
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人項目或實驗，不建議在生產環境中使用。
+> 適合個人或小型團隊的實驗性專案，不建議用於生產環境的核心任務。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些環境下，tmux 可能無法正常啟動，導致代理無法運行。
-  - 解法：確保 tmux 已正確安裝並可在命令行中運行。
-- [MEDIUM] 代理間的消息傳遞可能因環境配置不同而失敗。
-  - 解法：檢查配置文件中的 transport 設定。
-- **[HIGH]** 使用不支持的 CLI 代理時，可能會導致錯誤。
-  - 解法：確保所使用的代理在支持列表中。
+- **[HIGH]** 在某些環境下，tmux 配置可能導致代理無法啟動。
+  - 解法：確保 tmux 正常安裝並配置。
+- [MEDIUM] 當代理數量過多時，可能會導致資源不足。
+  - 解法：適當調整同時運行的代理數量。
+- [MEDIUM] 缺乏對於新手的詳細指導，可能會造成上手困難。
+  - 解法：參考社群提供的範例和文檔。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司進行 AI 研究 | 非常適合 | 能夠自動化多個實驗，節省時間和人力。 |
-| 大型企業的軟體開發團隊 | 適合 | 能夠協調多個模組的開發，但可能需要額外的配置。 |
-| 個人開發者進行小型專案 | 非常適合 | 簡單易用，快速上手，適合快速迭代。 |
-| 需要高穩定性的生產環境 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠快速組織和協調小型團隊的工作。 |
+| 大型機器學習實驗團隊 | 適合 | 能夠在多個 GPU 上同時運行多個實驗。 |
+| 需要快速原型開發的個人開發者 | 普通 | 雖然功能強大，但對於新手可能上手困難。 |
+| 大型企業的核心系統開發 | 不適合 | 目前功能仍在開發中，穩定性不足。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~4 小時 |
+| 整合時間 | ~8 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到快速的多代理協作，值得嘗試。
+> 花 4 小時學習，8 小時整合，得到高效的多代理協作，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：ClawTeam 本身不需要高權限，且不存取敏感資料。依賴的庫和工具需定期更新以避免潛在的安全風險。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-ClawTeam 通常與其他 CLI 工具和開發環境搭配使用，特別是在 AI 研究和軟體開發中。用戶可以在使用 Next.js 或 Flask 的專案中，利用 ClawTeam 來協調多個任務，具體做法是通過 `clawteam spawn` 指令來生成代理並分配任務。它與 Git 和 tmux 的整合使得在開發過程中能夠輕鬆管理多個工作環境。對於 CI/CD 流程，ClawTeam 可以與 GitHub Actions 整合，但可能需要額外的配置來適應特定的工作流。
+> 低風險：該工具不需要高權限，且不會存取敏感資料。依賴鏈相對簡單，無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -328,10 +334,10 @@ ClawTeam 通常與其他 CLI 工具和開發環境搭配使用，特別是在 AI
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 207 |
-| Open Issues | 10 |
-| Issue 解決率 | 33% (5 closed) |
-| 最後推送 | 2026-03-19 |
+| Forks | 261 |
+| Open Issues | 14 |
+| Issue 解決率 | 26% (5 closed) |
+| 最後推送 | 2026-03-20 |
 | 建立日期 | 2026-03-17 |
 | Repo 大小 | 8.6 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/HKUDS/ClawTeam) |
@@ -339,18 +345,18 @@ ClawTeam 通常與其他 CLI 工具和開發環境搭配使用，特別是在 AI
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 96
->     "HTML" : 4
+>     "Python" : 97
+>     "HTML" : 3
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@tjb-tech](https://github.com/tjb-tech) | 32 |
-> | [@he-yufeng](https://github.com/he-yufeng) | 5 |
+> | [@tjb-tech](https://github.com/tjb-tech) | 39 |
+> | [@he-yufeng](https://github.com/he-yufeng) | 7 |
 > | [@who96](https://github.com/who96) | 5 |
 > | [@chaohuang-ai](https://github.com/chaohuang-ai) | 4 |
-> | [@fancyboi999](https://github.com/fancyboi999) | 3 |
+> | [@xzq-xu](https://github.com/xzq-xu) | 4 |
 
 **最新版本**：v0.1.2 — v0.1.2 — First PyPI Release (2026-03-18)
 
@@ -377,13 +383,21 @@ ClawTeam 通常與其他 CLI 工具和開發環境搭配使用，特別是在 AI
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，近期有持續的更新和討論。
+**社群活躍度**：社群活躍度中等，開發者定期更新和回應問題。
 **連結**：[文件](https://github.com/HKUDS/ClawTeam)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-19 ~ 2026-03-19）
-> **活躍天數** 2 天 · **最新 commit** Add software development team template
+> [!abstract] 最近 10 次 commit（2026-03-19 ~ 2026-03-20）
+> **活躍天數** 2 天 · **最新 commit** Add gource visualization and git context tooling
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#51](https://github.com/HKUDS/ClawTeam/issues/51) | Auto-injected skill missing `team spawn-team` — teams not di | 0 | 0 |
+> | [#50](https://github.com/HKUDS/ClawTeam/issues/50) | Feature Request: Timezone support for timestamp display | 0 | 0 |
 
 ## README 摘錄
 
@@ -482,7 +496,11 @@ ClawTeam 通常與其他 CLI 工具和開發環境搭配使用，特別是在 AI
 > 
 > ---
 > 
-> https://github.com/user-attachments/assets/7e2f0ecd-8fe3-4970-90ac-5c9669ff060c
+>   
+>     Watch the demo video
+>   
+> 
+>   Open the demo video directly
 > 
 > ☝️ Intelligent leader agent orchestrates 8 specialized sub-agents across 8 H100 GPUs, autonomously designing experiments and dynamically reallocating resources based on real-time performance.
 > 
@@ -557,7 +575,7 @@ ClawTeam 通常與其他 CLI 工具和開發環境搭配使用，特別是在 AI
 > 
 > • **🔄 Adapts strategies dynamically** — reallocates resources and redirects efforts
 > 
-> #### ✨ The Result?**
+> #### ✨ The Result?
 > You set the vision. The swarm executes with collective intelligence.
 > 
 >   
@@ -663,23 +681,23 @@ ClawTeam 通常與其他 CLI 工具和開發環境搭配使用，特別是在 AI
 > │   ├── Read each agent's results.tsv
 > │   ├── 🏆 Identified best findings (depth=12, batch=2^17, norm-before-RoPE)
 > │   └── 📡 Cross-pollinated: told new agents to start from the best config
-> ├── 🔧 When agents fini
+> ├── 🔧 When agents finished, reassigned GP
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[多模態]] · [[微服務]]
+相關概念：[[多模態]] · [[自動化]] · [[微服務]]
 
-相關專案：[[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[aiming-lab--AutoResearchClaw|aiming-lab/AutoResearchClaw]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[NawfalMotii79--PLFM_RADAR|NawfalMotii79/PLFM_RADAR]] · [[THU-MAIC--OpenMAIC|THU-MAIC/OpenMAIC]]
+相關專案：[[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[karpathy--autoresearch|karpathy/autoresearch]] · [[aiming-lab--AutoResearchClaw|aiming-lab/AutoResearchClaw]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[NawfalMotii79--PLFM_RADAR|NawfalMotii79/PLFM_RADAR]]
 
 [GitHub](https://github.com/HKUDS/ClawTeam)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：自動化）
+> [!note]- 直接競品（同子分類：多代理協調）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "自動化" AND file.name != "HKUDS--ClawTeam"
+> WHERE subcategory = "多代理協調" AND file.name != "HKUDS--ClawTeam"
 > SORT stars DESC
 > ```
 
@@ -711,7 +729,7 @@ ClawTeam 通常與其他 CLI 工具和開發環境搭配使用，特別是在 AI
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","多模態","微服務"];
+> const concepts = ["多模態","自動化","微服務"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "HKUDS--ClawTeam" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

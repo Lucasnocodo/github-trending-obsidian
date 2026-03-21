@@ -20,7 +20,7 @@ category: "CLI 工具"
 subcategory: "API 工具"
 release_tag: "v1.0.0-config"
 install_complexity: "easy"
-status: to-review
+status: archived
 my_rating: 0
 score_confidence: 0
 score_interest: 0
