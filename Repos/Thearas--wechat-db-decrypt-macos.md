@@ -7,9 +7,9 @@ language: Python
 license: WTFPL
 description: "macOS arm64 微信 4.1 数据库解密，只在最新的微信 4.1.2.241 测试过，不支持4.0 以下版本"
 homepage: ""
-stars: 442
-stars_per_day: 29
-forks: 427
+stars: 446
+stars_per_day: 28
+forks: 428
 open_issues: 4
 created: 2026-03-05
 pushed_at: 2026-03-09
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:388,2026-03-11:388,2026-03-11:388,2026-03-13:398,2026-03-14:401,2026-03-15:407,2026-03-16:415,2026-03-17:427,2026-03-18:431,2026-03-19:433,2026-03-20:435,2026-03-21:442"
+star_history: "2026-03-10:388,2026-03-11:388,2026-03-11:388,2026-03-13:398,2026-03-14:401,2026-03-15:407,2026-03-16:415,2026-03-17:427,2026-03-18:431,2026-03-19:433,2026-03-20:435,2026-03-21:442,2026-03-22:446"
 tags:
   - github
   - "category/開發工具"
@@ -55,7 +55,7 @@ aliases:
 
 # wechat-db-decrypt-macos
 
-**442** stars · **29** stars/天 · 建立 15 天前 · Python · WTFPL
+**446** stars · **28** stars/天 · 建立 16 天前 · Python · WTFPL
 
 ```dataviewjs
 const me = dv.page("Repos/Thearas--wechat-db-decrypt-macos");
@@ -72,10 +72,10 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 解密 macOS arm64 微信 4.1 数据库，提取聊天记录和密钥。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (29 stars/day)
-> **授權** WTFPL · **維護** Moderate (最後推送 11 天前) · **貢獻者** 3 人 · **參與度** High
-> **適合** 需要在 macOS 上解密微信數據的開發者和數據分析師。
-> **一句話重點** 這個專案的最大亮點是它能夠在 macOS 上解密微信數據，並且提供了與 AI 系統的整合能力。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (28 stars/day)
+> **授權** WTFPL · **維護** Moderate (最後推送 12 天前) · **貢獻者** 3 人 · **參與度** High
+> **適合** 需要在 macOS 上解密微信數據並進行數據分析的開發者和研究人員。
+> **一句話重點** 這個專案的獨特之處在於它能夠將微信數據解密並與 AI 整合，開啟了新的數據分析可能性。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -98,33 +98,33 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，得到便捷的微信數據解密功能，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學習，2 小時整合，能夠獲得強大的數據解密功能，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案提供了針對 macOS 的微信數據解密解決方案，並整合了 AI 查詢功能。
+> 支持直接與 AI 進行交互查詢微信數據，這在同類工具中較為罕見。
 
 ## 專案簡介
 
-這個專案的核心功能是解密微信的 SQLCipher 加密本地數據庫，讓使用者能夠提取和導出聊天記錄。使用者需要在 macOS arm64 環境下運行，並禁用 SIP，這是因為該工具需要直接訪問內存來提取密鑰。具體流程包括運行 `find_key_memscan.py` 提取密鑰，然後使用 `decrypt_db.py` 解密數據庫，最後通過 `export_messages.py` 導出聊天記錄。這個工具的賣點在於其能夠直接與 AI 系統整合，透過 MCP Server 讓 AI 查詢微信數據，這在其他類似工具中並不常見。技術上，這個專案依賴於 Python 和 SQLCipher，並且使用了內存掃描技術來獲取密鑰，這使得解密過程相對高效，但也需要一定的技術門檻。
+這個專案的核心功能是解密微信 4.1 版本的本地 SQLCipher 加密數據庫，並導出聊天記錄。使用者首先需要在 macOS arm64 環境中禁用 SIP，然後安裝必要的依賴，如 LLVM 和 SQLCipher。提取密鑰的指令是 `PYTHONPATH=$(lldb -P) python3 find_key_memscan.py`，這會將密鑰保存到 `wechat_keys.json`。接著，使用 `python3 decrypt_db.py` 解密數據庫，並透過 `export_messages.py` 導出聊天記錄，支持多種查詢方式，包括模糊匹配和關鍵字搜索。這個工具的賣點在於能夠直接與 AI 進行交互，通過 MCP Server 查詢微信數據，這在其他類似工具中並不常見。
 
-與其他工具相比，如 ylytdeng/wechat-decrypt，這個專案專注於 macOS 環境並提供了 AI 查詢功能，這是其獨特之處。使用者在實際操作中可能會遇到導出內容出現亂碼的問題，這是目前的熱門問題之一。這個專案的社群活躍度不錯，已經有 427 次 fork，顯示出有不少開發者對其進行了修改和使用。整體而言，這是一個針對特定需求的專案，適合需要解密和導出微信數據的 macOS 使用者。
+技術上，這個專案依賴 Python 和 SQLCipher，並使用了 FastMCP 來實現 AI 查詢功能，這使得整體架構相對輕量且易於部署。與其他工具相比，如 ylytdeng/wechat-decrypt，這個專案的特點在於專注於 macOS arm64 環境，並且提供了更直接的 AI 查詢接口。使用者可能會遇到的問題包括導出的聊天數據中表情包和圖片出現亂碼，這是目前的熱門問題之一。整體而言，這個專案適合需要提取和分析微信聊天數據的開發者，特別是那些希望將數據與 AI 整合的使用者。
 
-**技術棧**：`Python 3` · `SQLCipher`
+**技術棧**：`Python 3` · `SQLCipher` · `FastMCP`
 
 ## 重點功能
 
-- 密鑰提取 — 使用 `find_key_memscan.py` 提取微信數據庫密鑰，並保存至 `wechat_keys.json`。
-- 數據庫解密 — 使用 `decrypt_db.py` 解密 SQLCipher 加密的微信數據庫。
-- 聊天記錄導出 — 使用 `export_messages.py` 導出聊天記錄，支持模糊匹配和關鍵字搜索。
-- MCP Server 整合 — 讓 AI 直接查詢微信數據，支持多種查詢功能。
-- 支持多種導出選項 — 包括導出最近 N 條消息和所有會話。
+- 密鑰提取 — 使用 `PYTHONPATH=$(lldb -P) python3 find_key_memscan.py` 提取密鑰，並保存至 `wechat_keys.json`。
+- 數據解密 — 使用 `python3 decrypt_db.py` 解密 SQLCipher 加密的數據庫。
+- 聊天記錄導出 — 使用 `python3 export_messages.py` 列出會話，支持模糊匹配和關鍵字搜索。
+- AI 查詢支持 — 通過 MCP Server 直接查詢微信數據，使用 `claude mcp add wechat -- python3 $(pwd)/mcp_server.py` 註冊。
+- 多種導出選項 — 支持導出最近 N 條消息、特定會話或所有會話，方便用戶靈活使用。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 禁用 SIP 並安裝依賴
 ```bash
-brew install llvm sqlcipher
+csrutil disable && brew install llvm sqlcipher
 ```
 2. 提取密鑰
 ```bash
@@ -139,58 +139,67 @@ python3 decrypt_db.py
 python3 export_messages.py --all
 ```
 
+## 程式碼範例
+
+```python
+{
+  "前置條件": "確保微信已登錄並正在運行；",
+  "指令": "PYTHONPATH=$(lldb -P) python3 find_key_memscan.py",
+  "預期輸出": "密鑰保存到 `wechat_keys.json`。"
+}
+```
+
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 15 天內累積 442 stars（29/天），forks 427（96.6%），這顯示出使用者對此工具的強烈興趣。作者 Thearas 和其他貢獻者在開源社群中有一定的影響力，這個工具解決了在 macOS 環境下解密微信數據的需求，之前的方案多數針對 Windows，這使得 macOS 使用者面臨困境。近期的社群討論和問題反饋也顯示出使用者對於數據導出和解密過程中的具體需求，這些都促進了專案的快速成長。這個工具的出現正好填補了市場的空白，讓 macOS 使用者能夠輕鬆解密和導出微信數據。
+> 建立 16 天就累積 446 stars（28/天），forks 428（96.0%），顯示出極高的實際修改和使用需求。作者 Thearas 和其他貢獻者在開源社群中活躍，提供了一個針對特定需求的解決方案，填補了微信數據提取的空白。這個工具的出現正好解決了用戶在數據解密和導出方面的痛點，特別是在 macOS 環境中。社群的反饋也促進了其快速發展，並且有多個開放的問題顯示出使用者的活躍參與。這些因素共同推動了專案的快速增長。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 macOS 上解密微信數據的開發者和數據分析師。
+**目標受眾**：需要在 macOS 上解密微信數據並進行數據分析的開發者和研究人員。
 
 > [!example] 使用場景
-> - 數據分析師用它來提取微信聊天記錄，因為這樣能夠快速分析用戶行為和互動模式。
-> - 開發者用它來測試微信數據的安全性，因為能夠直接解密和導出數據，便於進行安全審計。
-> - AI 研究者用它來訓練模型，因為能夠從微信數據中提取大量的對話樣本，進行自然語言處理研究。
+> - 數據分析師用它來提取微信聊天記錄，因為這樣可以快速分析用戶行為，並生成報告。
+> - 開發者用它來整合微信數據到 AI 應用中，因為能夠直接查詢聊天記錄提升了應用的智能化程度。
+> - 研究人員用它來分析社交媒體趨勢，因為能夠獲取大量的聊天數據來進行文本分析和情感分析。
 
 ## 架構分析
 
-這個專案的架構基於 Python，主要由三個模組組成：密鑰提取、數據解密和聊天記錄導出。密鑰提取使用內存掃描技術，這樣可以在不直接訪問文件的情況下獲取加密密鑰，這是為了避免文件系統的限制。數據解密模組則使用 SQLCipher 的 API 來解密數據庫，這樣能夠保持高效的解密速度。
-
-聊天記錄導出模組則提供了多種導出選項，這樣使用者可以根據需求選擇導出方式。這樣的設計使得整個流程相對簡單，但也需要使用者具備一定的技術背景來操作。整體架構的擴展性良好，但在處理大量數據時可能會面臨性能瓶頸，特別是在內存使用上。
+這個專案採用 Python 作為主要開發語言，並使用 SQLCipher 進行數據加密和解密。架構上，使用者需要在 macOS arm64 環境中運行，並禁用 SIP 以獲取內存中的密鑰。數據流從提取密鑰開始，然後解密數據庫，最後導出聊天記錄。選擇 SQLCipher 是因為其廣泛應用於移動應用的數據加密，這樣的選擇雖然增加了使用的複雜性，但能提供更高的安全性。整體架構輕量且易於部署，但對於不熟悉命令行的使用者來說，學習曲線可能較陡峭。
 
 ## 技術深入分析
 
-這個專案的核心技術機制基於 Python 和 SQLCipher，使用內存掃描技術來提取加密密鑰。這種方法的優勢在於能夠在不直接訪問文件系統的情況下獲取密鑰，這樣可以避免許多安全限制。效能方面，因為使用了 SQLCipher 的 API，解密速度相對較快，但在處理大量數據時，內存使用可能成為瓶頸。設計上選擇 Python 是因為其生態系統豐富，能夠快速開發和迭代，但這也意味著在性能上可能不如 C/C++ 等語言。技術風險方面，內存掃描技術在某些情況下可能會失敗，特別是在系統更新或微信版本變更時，這可能導致密鑰提取失敗。整合方面，這個工具可以與現有的 Python 生態系統無縫對接，並且能夠輕鬆集成到 CI/CD 流程中，這對於開發者來說是一個加分項。
+專案使用 Python 進行開發，並依賴 SQLCipher 來處理數據的加密和解密。核心功能是提取密鑰，這是通過內存掃描實現的，這樣的技術選擇使得解密過程相對安全且有效。效能方面，解密過程的速度取決於數據庫的大小和系統性能，通常在幾秒鐘內完成。設計上，選擇 Python 是因為其易於使用和廣泛的庫支持，但這也意味著可能存在性能瓶頸。技術風險方面，未來可能會遇到微信版本更新導致的兼容性問題，這需要持續的維護和更新。整合方面，這個工具與其他 Python 生態系統的工具相容性良好，能夠方便地嵌入到現有的數據分析流程中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和使用步驟。安裝過程相對順暢，但需要禁用 SIP，這可能對新手造成困擾。提供了良好的快速開始指南，讓使用者能夠在短時間內上手。文件目前僅提供英文版本，可能對非英語使用者造成一定障礙。
+> README 文件提供了清晰的安裝步驟和使用範例，對於新手來說相對友好。安裝過程需要禁用 SIP，這可能對某些使用者造成困擾。整體而言，文檔質量良好，能夠幫助使用者快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 專注於 macOS 環境，提供針對性的解決方案。
-> - 支持 AI 查詢功能，擴展了使用場景。
-> - 操作流程簡單，易於使用。
+> - 支持直接提取和解密微信數據，功能強大。
+> - 能夠與 AI 進行交互，提升數據利用率。
+> - 設計針對 macOS arm64，性能優化良好。
 
 > [!danger] 缺點
-> - 僅支持微信 4.1 版本，限制了使用範圍。
+> - 僅支持微信 4.1 版本，限制使用範圍。
 > - 需要禁用 SIP，可能影響系統安全性。
-> - 導出數據時可能出現亂碼問題，影響使用體驗。
+> - 導出的數據中可能出現亂碼，影響使用體驗。
 
 > [!warning] 注意事項
-> - 僅支持微信 4.1 版本，4.0 以下版本不兼容。
+> - 僅支持微信 4.1 版本，不兼容 4.0 以下版本。
 > - 需要禁用 SIP，這可能會影響系統安全性。
-> - 導出的聊天數據中可能出現表情包和圖片內容的亂碼問題。
+> - 導出的數據中表情包和圖片可能出現亂碼。
+> - 目前僅支持 macOS arm64 平台，無法在其他平台使用。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [ylytdeng/wechat-decrypt](https://github.com/ylytdeng/wechat-decrypt) | 這個工具主要針對 Windows 環境，而本專案專注於 macOS，提供了針對 macOS 的特定功能。 |
-| [jackwener/wechat-access-unqclawed](https://github.com/jackwener/wechat-access-unqclawed) | 這個工具提供了更全面的微信數據訪問功能，但不專注於解密和導出聊天記錄。 |
+| [ylytdeng/wechat-decrypt](https://github.com/ylytdeng/wechat-decrypt) | 這個工具專注於 Windows 環境，而本專案專為 macOS arm64 設計，提供更好的本地支持。 |
+| [jackwener/wechat-access-unqclawed](https://github.com/jackwener/wechat-access-unqclawed) | 這個工具提供了不同的數據訪問方式，但不支持 SQLCipher 解密功能。 |
 
 ## 替代方案決策
 
@@ -198,16 +207,16 @@ python3 export_messages.py --all
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [ylytdeng/wechat-decrypt](https://github.com/ylytdeng/wechat-decrypt) | 這個工具主要針對 Windows 環境，使用了不同的解密方法，對於 macOS 使用者來說並不適用。 | 如果你的團隊主要在 Windows 環境下工作，並且需要解密微信數據，這個工具會更合適。 | medium，因為需要重新適配 Windows 環境的特定需求。 |
-| [jackwener/wechat-access-unqclawed](https://github.com/jackwener/wechat-access-unqclawed) | 這個工具提供了更全面的微信數據訪問功能，但不專注於解密和導出聊天記錄。 | 如果你需要更全面的數據訪問功能，而不僅僅是解密，這個工具會更適合。 | low，因為這兩個工具的使用場景有一定重疊。 |
+| [ylytdeng/wechat-decrypt](https://github.com/ylytdeng/wechat-decrypt) | 這個工具專注於 Windows 環境，使用不同的解密方法，適合 Windows 用戶。 | 如果你的團隊主要在 Windows 環境中工作，這個工具會更合適。 | medium，因為需要重新適應不同的環境和工具使用方式。 |
+| [jackwener/wechat-access-unqclawed](https://github.com/jackwener/wechat-access-unqclawed) | 這個工具提供了 API 訪問微信數據的方式，但不支持解密功能。 | 如果需要在不解密的情況下訪問數據，這個工具會更合適。 | low，因為 API 設計相對簡單，易於整合。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **wechat-db-decrypt-macos** | **wechat-decrypt** | **wechat-access-unqclawed** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這個工具主要針對 Windows 環境，使用了不同的解密方法，對於 macOS 使用者來說並不適用。 | 這個工具提供了更全面的微信數據訪問功能，但不專注於解密和導出聊天記錄。 |
-> | 遷移成本 | - | medium，因為需要重新適配 Windows 環境的特定需求。 | low，因為這兩個工具的使用場景有一定重疊。 |
-> | 適用場景 | 主要場景 | 如果你的團隊主要在 Windows 環境下工作，並且需要解密 | 如果你需要更全面的數據訪問功能，而不僅僅是解密，這個工具會更 |
+> | 技術路線 | 本專案 | 這個工具專注於 Windows 環境，使用不同的解密方法，適合 Windows 用戶。 | 這個工具提供了 API 訪問微信數據的方式，但不支持解密功能。 |
+> | 遷移成本 | - | medium，因為需要重新適應不同的環境和工具使用方式。 | low，因為 API 設計相對簡單，易於整合。 |
+> | 適用場景 | 主要場景 | 如果你的團隊主要在 Windows 環境中工作，這個工具會更 | 如果需要在不解密的情況下訪問數據，這個工具會更合適。 |
 
 ## 成熟度評估
 
@@ -218,44 +227,44 @@ python3 export_messages.py --all
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人項目和測試使用，但不建議在生產環境中使用。
+> 適合個人項目或小型團隊試用，但不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 導出的聊天數據中表情包和圖片出現亂碼
-  - 解法：目前無法解決，需等待更新
-- [MEDIUM] 提取密鑰時可能會報錯
-  - 解法：確保微信已登錄並運行，重試提取
-- **[HIGH]** 需要禁用 SIP，這可能影響系統安全性
-  - 解法：使用時需謹慎，並在不需要時重新啟用 SIP
+- **[HIGH]** 導出的聊天數據中表情包和圖片出現亂碼，影響使用體驗。
+  - 解法：目前無法解決，需等待未來版本更新。
+- [MEDIUM] 提取密鑰時可能會報錯，特別是在微信未正常運行的情況下。
+  - 解法：確保微信已登錄並運行，重試提取密鑰。
+- **[HIGH]** 需要禁用 SIP，這可能導致系統安全性降低。
+  - 解法：在使用後重新啟用 SIP，確保系統安全。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊需要解密微信數據進行分析 | 非常適合 | 專案專注於 macOS，提供針對性解決方案。 |
-| 大型企業需要批量導出微信數據 | 不適合 | 目前僅支持單個用戶數據導出，無法批量處理。 |
-| 開發者需要測試微信數據的安全性 | 適合 | 能夠直接解密和導出數據，便於進行安全審計。 |
-| 個人用戶需要備份微信聊天記錄 | 非常適合 | 操作簡單，能夠快速導出聊天記錄。 |
+| 小型團隊需要提取和分析微信數據 | 非常適合 | 專案提供了完整的解密和導出功能，滿足需求。 |
+| 大型企業需要穩定的數據解密工具 | 不適合 | 目前處於 beta 階段，穩定性不足。 |
+| 個人開發者希望將微信數據與 AI 整合 | 非常適合 | 提供了與 AI 交互的功能，開啟新的應用場景。 |
+| 需要在 Windows 環境中解密微信數據 | 不適合 | 僅支持 macOS arm64 平台，無法使用。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
+| 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到便捷的微信數據解密功能，值得一試。
+> 花 3 小時學習，2 小時整合，能夠獲得強大的數據解密功能，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，但禁用 SIP 可能會影響系統安全性。它不會存取敏感資料，主要操作本地數據庫。
+> 安全性中等，因為需要禁用 SIP，這可能會影響系統的安全性。工具本身不會存取敏感資料，但依賴的庫需定期檢查更新以防止安全漏洞。
 
 ## 健康度儀表板
 
@@ -320,7 +329,7 @@ python3 export_messages.py --all
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 427 |
+| Forks | 428 |
 | Open Issues | 4 |
 | Issue 解決率 | 43% (3 closed) |
 | 最後推送 | 2026-03-09 |
@@ -337,7 +346,7 @@ python3 export_messages.py --all
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有多次 commit 和問題回應。
+**社群活躍度**：社群活躍度中等，最近有 4 天的活躍提交。
 
 ## 開發動態
 
@@ -429,7 +438,7 @@ python3 export_messages.py --all
 
 ## 延伸閱讀
 
-相關概念：[[SQLCipher]] · [[數據解密]] · [[內存掃描]]
+相關概念：[[SQLCipher]] · [[數據解密]] · [[社交媒體分析]]
 
 相關專案：[[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[photon-hq--qclaw-wechat-client|photon-hq/qclaw-wechat-client]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
 
@@ -473,7 +482,7 @@ python3 export_messages.py --all
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["SQLCipher","數據解密","內存掃描"];
+> const concepts = ["SQLCipher","數據解密","社交媒體分析"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Thearas--wechat-db-decrypt-macos" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

@@ -7,17 +7,17 @@ language: TypeScript
 license: Apache-2.0
 description: "An open-source desktop app for generating videos with LTX models"
 homepage: "https://www.ltx.video"
-stars: 965
-stars_per_day: 60
-forks: 185
+stars: 989
+stars_per_day: 58
+forks: 192
 open_issues: 48
 created: 2026-03-04
 pushed_at: 2026-03-16
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
-category: "AI/ML"
-subcategory: "影片生成"
+category: "開發工具"
+subcategory: "視頻生成"
 release_tag: "v1.0.2"
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "一個開源桌面應用程式，用於生成 LTX 模型的影片。"
+use_case: "一個開源桌面應用程式，用於生成 LTX 模型的視頻。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,14 +38,14 @@ issue_close_rate: 21
 repo_size_kb: 42368
 readme_length: 2494
 bus_factor: 1
-last_release_days: 9
+last_release_days: 10
 release_cadence: "monthly"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-11:411,2026-03-11:415,2026-03-11:424,2026-03-13:619,2026-03-14:665,2026-03-15:699,2026-03-16:744,2026-03-17:795,2026-03-18:854,2026-03-19:887,2026-03-20:930,2026-03-21:965"
+star_history: "2026-03-11:411,2026-03-11:415,2026-03-11:424,2026-03-13:619,2026-03-14:665,2026-03-15:699,2026-03-16:744,2026-03-17:795,2026-03-18:854,2026-03-19:887,2026-03-20:930,2026-03-21:965,2026-03-22:989"
 tags:
   - github
-  - "category/ai_ml"
+  - "category/開發工具"
   - "lang/typescript"
   - org
   - "topic/generative_ai"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "LTX-Desktop"
   - "Lightricks/LTX-Desktop"
-  - "一個開源桌面應用程式，用於生成 LTX 模型的影片。"
+  - "一個開源桌面應用程式，用於生成 LTX 模型的視頻。"
 ---
 
 # LTX-Desktop
 
-**965** stars · **60** stars/天 · 建立 16 天前 · TypeScript · Apache-2.0
+**989** stars · **58** stars/天 · 建立 17 天前 · TypeScript · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/Lightricks--LTX-Desktop");
@@ -78,20 +78,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `generative-ai` `ltx` `ltx-2` `non-linear-editing`
 
 > [!summary] 一句話摘要
-> 一個開源桌面應用程式，用於生成 LTX 模型的影片。
+> 一個開源桌面應用程式，用於生成 LTX 模型的視頻。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (60 stars/day)
-> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 4 天前) · **貢獻者** 3 人 · **參與度** Medium
-> **適合** 需要在本地生成高品質影片但不想依賴雲端服務的創作者和開發者。
-> **一句話重點** LTX Desktop 的強大之處在於其本地生成能力，讓用戶能夠在不依賴雲端的情況下創建高品質影片。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (58 stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** 3 人 · **參與度** Medium
+> **適合** 需要在本地生成視頻並希望利用高效能 GPU 的開發者和創意工作者。
+> **一句話重點** LTX Desktop 是一個強大的本地視頻生成工具，特別適合擁有高效能 GPU 的開發者。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Lightricks--LTX-Desktop");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "影片生成" && p.file.name !== "Lightricks--LTX-Desktop" && p.status !== "archived")
+>     .where(p => p.subcategory === "視頻生成" && p.file.name !== "Lightricks--LTX-Desktop" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -102,32 +102,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 影片生成 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 視頻生成 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、10 小時整合，得到快速生成影片的能力，值得考慮。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~4h · **綁定風險** medium
+> **結論** 花 4 小時學習，6 小時整合，得到高效的視頻生成工具，值得嘗試。
 
 > [!abstract] 核心創新
-> LTX Desktop 提供了一個簡單易用的介面來生成和編輯影片，支援多種媒體格式的轉換。
+> LTX Desktop 提供本地生成視頻的能力，特別針對高效能 NVIDIA GPU 進行優化。
 
 ## 專案簡介
 
-LTX Desktop 是一個開源的桌面應用程式，專注於使用 LTX 模型生成影片，支援在具備 NVIDIA GPU 的 Windows 和 Linux 系統上進行本地生成，並提供 API 模式以支援不支援的硬體和 macOS。用戶可以透過簡單的介面進行文本、圖像和音頻轉換為影片，並且可以進行影片編輯。核心賣點在於其能夠在本地生成高品質的影片，並且能夠在不支援的硬體上透過 API 進行操作。技術上，該應用使用 TypeScript 和 Python，並搭配 Electron 框架來構建桌面應用，後端則使用 FastAPI 來處理請求。這種設計使得應用能夠快速響應用戶操作，並且在本地生成影片時能夠充分利用 GPU 的計算能力。
+LTX Desktop 是一個開源桌面應用程式，專為生成 LTX 模型的視頻而設計，支持在具有 NVIDIA GPU 的 Windows 和 Linux 系統上本地運行，並提供 API 模式以支持不兼容的硬體和 macOS。用戶可以進行文本、圖像和音頻轉視頻的生成，並擁有視頻編輯界面和項目管理功能。這個工具的賣點在於它能夠在本地生成視頻，減少對網絡的依賴，並且支持多種生成模式。技術上，LTX Desktop 使用 TypeScript 和 Python，並依賴 Electron 框架來構建跨平台應用，後端則使用 FastAPI 來處理請求。這樣的選擇使得開發者能夠利用現有的 JavaScript 生態系統，同時保持後端的靈活性。
 
-與其他類似工具相比，如 AlpinDale/parsync 和 BigBodyCobain/Shadowbroker，LTX Desktop 提供了更為直觀的用戶介面和更強的本地生成能力，特別是在處理大型模型時。實際使用中，應用的效能表現取決於硬體配置，特別是 GPU 的 VRAM 大小，對於低於 32GB VRAM 的用戶，則需要依賴 API 模式進行生成。社群活躍度中等，開發者在過去的幾天內持續進行更新，顯示出對於問題的回應和修復能力。該專案目前處於 beta 階段，適合對於生成影片有需求的開發者和創作者，但需注意可能會有破壞性變更。對於小型團隊或個人開發者來說，這是一個值得考慮的工具，尤其是在需要快速生成和編輯影片的情境下。
+與其他視頻生成工具相比，如 AlpinDale/parsync 和 BigBodyCobain/Shadowbroker，LTX Desktop 提供了更強的本地生成能力，特別是在高性能 GPU 上運行時，能夠顯著提高生成速度。使用者在處理大型視頻項目時，可能會面臨性能瓶頸，尤其是在低於 32GB VRAM 的 GPU 上，這是當前社群中熱門的問題之一。這個專案目前處於 Beta 階段，預期會有破壞性變更，因此不建議在生產環境中使用。對於小型團隊或個人開發者，這是一個值得嘗試的工具，但在大型項目中可能需要更多的穩定性和支持。對於那些需要快速生成視頻的開發者，LTX Desktop 提供了一個強大的選擇，但在整合到現有工作流時，可能需要一些時間來適應其特定的開發環境和依賴管理。
 
-**技術棧**：`TypeScript` · `Python 3.12+` · `Electron` · `FastAPI`
+**技術棧**：`TypeScript` · `Python 3.12+` · `Electron`
 
 ## 重點功能
 
-- 文本轉影片生成 — 支援將文本內容轉換為影片，簡化內容創作流程。
-- 圖像轉影片生成 — 允許用戶將靜態圖像轉換為動態影片，增強視覺效果。
-- 音頻轉影片生成 — 支援將音頻內容轉換為影片，適合音樂和播客內容創作者。
-- 影片編輯介面 — 提供直觀的編輯工具，讓用戶能夠輕鬆編輯生成的影片。
-- API 模式 — 允許在不支援的硬體上進行影片生成，擴大使用範圍。
+- 文本轉視頻生成 — 支持從文本描述生成相應的視頻內容。
+- 圖像轉視頻生成 — 能夠將靜態圖像轉換為動態視頻。
+- 音頻轉視頻生成 — 根據音頻內容生成相應的視頻。
+- 視頻編輯界面 — 提供用戶友好的界面以進行視頻編輯和項目管理。
+- API 模式 — 支持在不兼容的硬體上進行視頻生成，提供靈活性。
 
 ## 快速開始
 
@@ -144,58 +144,68 @@ pnpm dev
 pnpm dev:debug
 ```
 
+## 程式碼範例
+
+```ts
+{
+  "前置條件": "需要安裝 Node.js 和 Python 3.12+",
+  "指令": "pnpm setup:dev",
+  "預期輸出": "安裝所有開發依賴並準備開發環境。"
+}
+```
+
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 16 天內累積 965 stars（60/天），forks 185（19.2%），顯示出相對活躍的社群參與。作者 Lightricks 是知名的創新公司，專注於影像處理和生成技術。這個專案解決了在本地生成高品質影片的需求，特別是對於需要使用大型 LTX 模型的用戶。隨著生成式 AI 的興起，對於影片生成的需求也隨之增加，這使得 LTX Desktop 的出現恰逢其時。forks/stars 比率為 19.2%，顯示出許多用戶在積極修改和使用這個工具，反映出其實際應用的潛力。
+> 建立 17 天就累積 989 stars（58/天），forks 192（19.4%），顯示出穩定的增長潛力。這個專案由 Lightricks 團隊開發，他們在生成式 AI 領域有豐富的經驗。LTX Desktop 解決了本地生成視頻的需求，特別是對於擁有高效能 GPU 的開發者來說，這是一個之前缺乏的解決方案。最近的推廣活動和社群討論也促進了其曝光度，特別是在 Reddit 和 Twitter 上的討論。這個工具的出現正好符合了對高效能視頻生成需求的增長，尤其是在 AI 和創意內容生成的背景下。forks/stars 比率接近 20%，顯示出許多開發者對這個專案的實際修改和使用，這是健康的社群活躍度指標。
 
 ## 適合誰使用
 
-**目標受眾**：需要在本地生成高品質影片但不想依賴雲端服務的創作者和開發者。
+**目標受眾**：需要在本地生成視頻並希望利用高效能 GPU 的開發者和創意工作者。
 
 > [!example] 使用場景
-> - 影片製作人用它來快速生成視頻內容，因為它能夠將文本和圖像轉換為影片，節省了大量的編輯時間。
-> - 遊戲開發者用它來創建遊戲預告片，因為其支持多種媒體格式的轉換，並且能夠在本地生成高品質的影片。
-> - 教育工作者用它來製作教學影片，因為其簡單的介面使得非技術用戶也能輕鬆上手，快速生成教學內容。
+> - 獨立開發者用它來生成高品質的視頻內容，因為它支持本地生成，能夠利用高效能 GPU 提高生成速度。
+> - 小型團隊用它來快速創建視頻原型，因為它的 API 模式允許在不支持的硬體上進行生成，靈活性高。
+> - 教育機構用它來製作教學視頻，因為其簡單的界面和多種生成模式使得非技術用戶也能輕鬆上手。
 
 ## 架構分析
 
-LTX Desktop 採用 Electron 框架來構建桌面應用，這使得它能夠跨平台運行。前端使用 TypeScript 開發，後端則使用 FastAPI 來處理請求，這種分層架構設計使得應用能夠有效地處理用戶請求並進行影片生成。資料流方面，前端通過 IPC 與後端進行通信，並且後端可以根據用戶的硬體配置選擇本地生成或 API 生成。
-
-這樣的設計使得應用在本地生成時能夠充分利用 GPU 的計算能力，而在不支援的硬體上則能夠透過 API 進行操作。選擇 Electron 的代價是需要額外的資源來支持跨平台運行，但這使得應用能夠覆蓋更廣泛的用戶群體。擴展性方面，隨著功能的增加，可能會面臨性能瓶頸，特別是在處理大型影片時。
+LTX Desktop 採用 Electron 框架來構建跨平台應用，這使得它能夠在 Windows 和 Linux 上運行。前端使用 TypeScript 和 React，後端則使用 FastAPI 來處理請求，這樣的選擇使得開發者能夠利用現有的 JavaScript 生態系統，同時保持後端的靈活性。資料流方面，前端通過 IPC 與後端進行通信，並且可以根據用戶的硬體配置選擇本地生成或 API 模式。這種設計的代價是需要在不同平台上進行額外的測試和調整，以確保兼容性。擴展性方面，隨著用戶需求的增加，可能需要進一步優化後端的性能，以支持更多的並發請求。
 
 ## 技術深入分析
 
-LTX Desktop 的核心技術機制是基於 LTX 模型的生成式 AI，使用 FastAPI 作為後端框架來處理用戶請求，並利用 NVIDIA GPU 進行高效能的影片生成。應用的前端使用 TypeScript 和 Electron 框架，這使得它能夠在多個平台上運行。效能方面，應用能夠處理高達 32GB VRAM 的 GPU，並在本地生成影片時能夠充分利用 GPU 的計算能力。選擇 FastAPI 作為後端框架的好處在於其高效能和簡單的 API 設計，這使得開發者能夠快速構建和擴展功能。依賴樹方面，應用的依賴相對輕量，主要依賴於 Electron 和 FastAPI，這降低了維護成本。技術風險方面，隨著用戶需求的增加，可能會面臨性能瓶頸，特別是在處理大型影片時。整合方面，應用能夠與主流的 CI/CD 工具相容，並且能夠輕鬆地與現有的開發工具鏈整合。
+LTX Desktop 的核心技術機制基於 Electron 框架，這使得它能夠在多個平台上運行，並利用 TypeScript 和 React 進行前端開發。後端使用 FastAPI，這是一個高效的 Python 框架，能夠快速處理請求並支持異步操作。這樣的設計使得應用能夠在本地生成視頻時，充分利用 GPU 的計算能力。根據 README，應用能夠處理多達 32GB VRAM 的 GPU，這對於生成高品質視頻至關重要。
+
+設計上選擇了 Electron 而非其他框架，這樣可以減少開發時間並利用現有的 JavaScript 生態系統，但代價是可能會增加應用的體積和啟動時間。技術風險方面，隨著用戶數量的增加，後端可能會面臨性能瓶頸，特別是在高並發請求的情況下。此外，對於依賴於外部 API 的功能，可能會受到網絡延遲的影響。整合方面，LTX Desktop 可以輕鬆與現有的開發工具鏈（如 GitHub Actions）進行集成，但在 CI/CD pipeline 中的使用可能需要額外的配置。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝和使用指引，安裝過程相對順暢，但需要注意依賴的版本要求。文件中有詳細的開發指南，對於新手來說，能夠在短時間內上手。整體而言，花 30 分鐘應該能夠成功運行起來。
+> README 文件提供了清晰的安裝指導和使用範例，對於新手來說相對友好。安裝過程順暢，但需要確保所有依賴都已正確安裝。文件中有關於開發的快速入門指南，對於希望參與貢獻的開發者非常有幫助。文件目前僅提供英文版本，可能對非英語使用者造成一定的障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支援多種媒體格式的轉換，靈活性高。
-> - 本地生成影片的性能優越，特別是在高效能 GPU 上。
-> - 簡單直觀的用戶介面，適合非技術用戶。
+> - 支持多種視頻生成模式，包括文本、圖像和音頻。
+> - 本地生成能力強，能夠充分利用高效能 GPU。
+> - 開源且社群活躍，易於獲得支持和貢獻。
 
 > [!danger] 缺點
-> - 僅支援 NVIDIA GPU，對於其他硬體的支持有限。
-> - 目前處於 beta 階段，可能會有破壞性變更。
-> - 對於低於 32GB VRAM 的 GPU，性能可能不佳。
+> - 目前僅支持 NVIDIA GPU，對其他硬體的支持有限。
+> - 處於 Beta 階段，可能存在不穩定性。
+> - 在低 VRAM 環境下性能可能不佳。
 
 > [!warning] 注意事項
-> - 僅支援 NVIDIA GPU，對於其他硬體的支持有限。
-> - 目前處於 beta 階段，可能會有破壞性變更。
-> - 對於低於 32GB VRAM 的 GPU，性能可能不佳，需要依賴 API 模式。
+> - 僅支持 NVIDIA GPU，對於其他硬體的支持有限。
+> - 在低於 32GB VRAM 的 GPU 上性能可能會受到限制。
+> - 目前處於 Beta 階段，可能會有破壞性變更。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的影片生成能力，但主要針對並行處理，適合需要高效能的用戶。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於視頻編輯的工具，功能上更為專業，但不如 LTX Desktop 直觀。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於視頻同步和分發，而 LTX Desktop 更加專注於視頻生成和編輯。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供不同的視頻生成策略，但缺乏 LTX Desktop 的本地生成能力。 |
 
 ## 替代方案決策
 
@@ -203,16 +213,16 @@ LTX Desktop 的核心技術機制是基於 LTX 模型的生成式 AI，使用 Fa
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 主要針對並行處理和高效能生成，適合需要大量計算資源的用戶。 | 如果你的團隊需要處理大量的影片生成任務，且已有高效能的計算資源。 | medium，因為需要重新調整生成流程和工具鏈。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於視頻編輯的功能，提供更為專業的編輯工具，但不如 LTX Desktop 直觀。 | 如果你的專案需要更強大的編輯功能，且團隊成員具備相關技術背景。 | high，因為需要重新學習和適應新的編輯流程。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於視頻同步和分發，而 LTX Desktop 更加專注於視頻生成和編輯。 | 如果你的需求主要是視頻的同步和分發，而不是生成，則應選擇 AlpinDale/parsync。 | low，因為兩者的功能有明顯的不同，遷移不會很複雜。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供不同的視頻生成策略，但缺乏 LTX Desktop 的本地生成能力。 | 如果你的團隊需要多樣化的視頻生成策略，而不僅僅是本地生成，則應選擇 BigBodyCobain/Shadowbroker。 | medium，因為需要重新適應不同的生成策略和工具鏈。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **LTX-Desktop** | **parsync** | **Shadowbroker** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 主要針對並行處理和高效能生成，適合需要大量計算資源的用戶。 | 專注於視頻編輯的功能，提供更為專業的編輯工具，但不如 LTX Desktop 直觀。 |
-> | 遷移成本 | - | medium，因為需要重新調整生成流程和工具鏈。 | high，因為需要重新學習和適應新的編輯流程。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要處理大量的影片生成任務，且已有高效能的計算資 | 如果你的專案需要更強大的編輯功能，且團隊成員具備相關技術背景 |
+> | 技術路線 | 本專案 | 專注於視頻同步和分發，而 LTX Desktop 更加專注於視頻生成和編輯。 | 提供不同的視頻生成策略，但缺乏 LTX Desktop 的本地生成能力。 |
+> | 遷移成本 | - | low，因為兩者的功能有明顯的不同，遷移不會很複雜。 | medium，因為需要重新適應不同的生成策略和工具鏈。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是視頻的同步和分發，而不是生成，則應選擇 A | 如果你的團隊需要多樣化的視頻生成策略，而不僅僅是本地生成，則 |
 
 ## 成熟度評估
 
@@ -223,44 +233,44 @@ LTX Desktop 的核心技術機制是基於 LTX 模型的生成式 AI，使用 Fa
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在低於 32GB VRAM 的 GPU 上性能不佳，可能導致生成速度緩慢
-  - 解法：使用 API 模式進行生成
-- [MEDIUM] 某些功能在 beta 階段可能會有破壞性變更
-  - 解法：定期檢查更新和發佈說明
-- [MEDIUM] 安裝過程中可能會遇到依賴版本不匹配的問題
-  - 解法：確保安裝正確版本的 Node.js 和 Python
+- **[HIGH]** 在低於 32GB VRAM 的 GPU 上性能可能不佳，導致生成速度慢。
+  - 解法：考慮使用 API 模式或升級硬體。
+- [MEDIUM] Beta 階段可能會有破壞性變更，導致現有功能失效。
+  - 解法：定期檢查更新和變更日誌以保持最新。
+- [MEDIUM] 安裝過程中可能會遇到依賴問題，特別是在不同平台上。
+  - 解法：確保所有依賴都已正確安裝，並參考文檔中的安裝指導。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型創業團隊需要快速生成市場推廣影片 | 非常適合 | 因為其簡單的介面和本地生成能力能夠快速響應需求。 |
-| 大型媒體公司需要處理高效能的影片生成 | 普通 | 雖然能夠生成影片，但對於大型專案可能需要更多的資源和優化。 |
-| 教育機構需要製作教學影片 | 適合 | 因為其易用性使得非技術用戶也能輕鬆上手。 |
-| 個人開發者想要探索生成式 AI 的應用 | 非常適合 | 因為其開源特性和活躍的社群支持。 |
+| 小型創業團隊需要快速生成視頻內容 | 非常適合 | LTX Desktop 提供了高效的本地生成能力，適合快速迭代的需求。 |
+| 教育機構希望製作教學視頻 | 適合 | 其簡單的界面和多種生成模式使得非技術用戶也能輕鬆上手。 |
+| 大型企業需要穩定的視頻生成解決方案 | 不適合 | 目前處於 Beta 階段，可能存在不穩定性和破壞性變更。 |
+| 獨立開發者尋找開源工具進行視頻創作 | 非常適合 | 開源且社群活躍，易於獲得支持和貢獻。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 學習時間 | ~4 小時 |
+| 整合時間 | ~6 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、10 小時整合，得到快速生成影片的能力，值得考慮。
+> 花 4 小時學習，6 小時整合，得到高效的視頻生成工具，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：應用不需要高權限，且不存取敏感資料，依賴鏈相對簡單，適合在 CI/CD 中使用。
+> 低風險：應用不需要高權限運行，且不存取敏感資料。依賴鏈的信任程度良好，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -325,7 +335,7 @@ LTX Desktop 的核心技術機制是基於 LTX 模型的生成式 AI，使用 Fa
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 185 |
+| Forks | 192 |
 | Open Issues | 48 |
 | Issue 解決率 | 21% (13 closed) |
 | 最後推送 | 2026-03-16 |
@@ -375,7 +385,7 @@ LTX Desktop 的核心技術機制是基於 LTX 模型的生成式 AI，使用 Fa
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者持續進行更新和問題修復。
+**社群活躍度**：社群活躍，定期更新和回應問題。
 **連結**：[文件](https://github.com/Lightricks/LTX-Desktop)
 
 ## 開發動態
@@ -389,7 +399,7 @@ LTX Desktop 的核心技術機制是基於 LTX 模型的生成式 AI，使用 Fa
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#16](https://github.com/Lightricks/LTX-Desktop/issues/16) | Support CPU offloading for text encoder to enable local infe | 14 | 4 |
-> | [#36](https://github.com/Lightricks/LTX-Desktop/issues/36) | Add support for LTX-2.3-fp8 | 10 | 3 |
+> | [#36](https://github.com/Lightricks/LTX-Desktop/issues/36) | Add support for LTX-2.3-fp8 | 11 | 3 |
 > | [#6](https://github.com/Lightricks/LTX-Desktop/issues/6) | GGUF and PyTorch XPU support ! | 9 | 3 |
 > | [#4](https://github.com/Lightricks/LTX-Desktop/issues/4) | Linux support ? | 7 | 2 |
 > | [#46](https://github.com/Lightricks/LTX-Desktop/issues/46) | [Feature Request] First and Last Frame option | 5 | 0 |
@@ -501,7 +511,7 @@ LTX Desktop 的核心技術機制是基於 LTX 模型的生成式 AI，使用 Fa
 
 ## 延伸閱讀
 
-相關概念：[[生成式 AI]] · [[影片編輯]] · [[本地推論]]
+相關概念：[[生成式 AI]] · [[視頻編輯]] · [[API 設計]]
 
 相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[binance--binance-skills-hub|binance/binance-skills-hub]] · [[duoan--TorchCode|duoan/TorchCode]]
 
@@ -509,11 +519,11 @@ LTX Desktop 的核心技術機制是基於 LTX 模型的生成式 AI，使用 Fa
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：影片生成）
+> [!note]- 直接競品（同子分類：視頻生成）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "影片生成" AND file.name != "Lightricks--LTX-Desktop"
+> WHERE subcategory = "視頻生成" AND file.name != "Lightricks--LTX-Desktop"
 > SORT stars DESC
 > ```
 
@@ -521,7 +531,7 @@ LTX Desktop 的核心技術機制是基於 LTX 模型的生成式 AI，使用 Fa
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "AI/ML" AND file.name != "Lightricks--LTX-Desktop"
+> WHERE category = "開發工具" AND file.name != "Lightricks--LTX-Desktop"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -545,7 +555,7 @@ LTX Desktop 的核心技術機制是基於 LTX 模型的生成式 AI，使用 Fa
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["生成式 AI","影片編輯","本地推論"];
+> const concepts = ["生成式 AI","視頻編輯","API 設計"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Lightricks--LTX-Desktop" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
