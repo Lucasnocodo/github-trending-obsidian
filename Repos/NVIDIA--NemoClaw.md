@@ -7,12 +7,12 @@ language: JavaScript
 license: Apache-2.0
 description: "Run OpenClaw securely inside NVIDIA OpenShell with managed inference"
 homepage: "https://docs.nvidia.com/nemoclaw/latest/"
-stars: 14336
-stars_per_day: 2867
-forks: 1381
-open_issues: 302
+stars: 14882
+stars_per_day: 2480
+forks: 1483
+open_issues: 331
 created: 2026-03-15
-pushed_at: 2026-03-21
+pushed_at: 2026-03-22
 first_seen: 2026-03-18
 week: "2026-W12"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "在 NVIDIA OpenShell 中安全地運行 OpenClaw，並進行管理推
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-03-24"
+appearances: 5
+next_review: "2026-03-25"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 19
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-18"
-star_history: "2026-03-18:4282,2026-03-18:4313,2026-03-19:8457,2026-03-19:8511,2026-03-20:12647,2026-03-20:12676,2026-03-21:14333,2026-03-21:14336"
+star_history: "2026-03-18:4282,2026-03-18:4313,2026-03-19:8457,2026-03-19:8511,2026-03-20:12647,2026-03-20:12676,2026-03-21:14333,2026-03-21:14336,2026-03-22:14882"
 tags:
   - github
   - "category/ai_ml"
@@ -861,6 +861,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-22|2026-03-22]] — 再次上榜，14.9k stars
 - [[2026-03-21|2026-03-21]] — 再次上榜，14.3k stars
 - [[2026-03-20|2026-03-20]] — 再次上榜，12.6k stars
 - [[2026-03-19|2026-03-19]] — 再次上榜，8.5k stars

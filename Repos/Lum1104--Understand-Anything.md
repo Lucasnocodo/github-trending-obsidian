@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Claude Code skills that turn any codebase into an interactive knowledge graph you can explore, search, and ask questions about (Multi-platform e.g., Codex are supported)."
 homepage: "https://lum.is-a.dev/Understand-Anything/"
-stars: 1399
-stars_per_day: 280
-forks: 123
+stars: 2600
+stars_per_day: 433
+forks: 249
 open_issues: 4
 created: 2026-03-15
-pushed_at: 2026-03-20
+pushed_at: 2026-03-21
 first_seen: 2026-03-21
 week: "2026-W12"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "將任何代碼庫轉換為可互動的知識圖譜，讓你可以探
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-24"
+appearances: 2
+next_review: "2026-03-25"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-21"
-star_history: "2026-03-21:1388,2026-03-21:1399"
+star_history: "2026-03-21:1388,2026-03-21:1399,2026-03-22:2600"
 tags:
   - github
   - "category/開發工具"
@@ -957,4 +957,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-22|2026-03-22]] — 再次上榜，2.6k stars
 - [[2026-03-21|2026-03-21]] — 首次收錄，1.4k stars

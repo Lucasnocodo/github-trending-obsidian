@@ -456,17 +456,17 @@
   },
   "aiming-lab/AutoResearchClaw": {
     "first_seen": "2026-03-17",
-    "last_seen": "2026-03-21",
-    "times_seen": 5,
+    "last_seen": "2026-03-22",
+    "times_seen": 6,
     "stars_first": 1449,
-    "stars_last": 7132
+    "stars_last": 7381
   },
   "NVIDIA/NemoClaw": {
     "first_seen": "2026-03-18",
-    "last_seen": "2026-03-21",
-    "times_seen": 4,
+    "last_seen": "2026-03-22",
+    "times_seen": 5,
     "stars_first": 4282,
-    "stars_last": 14333
+    "stars_last": 14882
   },
   "webadderall/Recordly": {
     "first_seen": "2026-03-18",
@@ -484,10 +484,10 @@
   },
   "MoonshotAI/Attention-Residuals": {
     "first_seen": "2026-03-19",
-    "last_seen": "2026-03-21",
-    "times_seen": 3,
+    "last_seen": "2026-03-22",
+    "times_seen": 4,
     "stars_first": 1811,
-    "stars_last": 2247
+    "stars_last": 2419
   },
   "Narcooo/inkos": {
     "first_seen": "2026-03-19",
@@ -512,30 +512,51 @@
   },
   "HKUDS/ClawTeam": {
     "first_seen": "2026-03-20",
-    "last_seen": "2026-03-21",
-    "times_seen": 2,
+    "last_seen": "2026-03-22",
+    "times_seen": 3,
     "stars_first": 1687,
-    "stars_last": 2091
+    "stars_last": 2479
   },
   "VoltAgent/awesome-codex-subagents": {
     "first_seen": "2026-03-20",
-    "last_seen": "2026-03-21",
-    "times_seen": 2,
+    "last_seen": "2026-03-22",
+    "times_seen": 3,
     "stars_first": 1509,
-    "stars_last": 1841
+    "stars_last": 1981
   },
   "zerobootdev/zeroboot": {
     "first_seen": "2026-03-21",
-    "last_seen": "2026-03-21",
-    "times_seen": 1,
+    "last_seen": "2026-03-22",
+    "times_seen": 2,
     "stars_first": 1414,
-    "stars_last": 1414
+    "stars_last": 1684
   },
   "Lum1104/Understand-Anything": {
     "first_seen": "2026-03-21",
-    "last_seen": "2026-03-21",
-    "times_seen": 1,
+    "last_seen": "2026-03-22",
+    "times_seen": 2,
     "stars_first": 1388,
-    "stars_last": 1388
+    "stars_last": 2600
+  },
+  "cnlimiter/codex-manager": {
+    "first_seen": "2026-03-22",
+    "last_seen": "2026-03-22",
+    "times_seen": 1,
+    "stars_first": 1346,
+    "stars_last": 1346
+  },
+  "Infatoshi/OpenSquirrel": {
+    "first_seen": "2026-03-22",
+    "last_seen": "2026-03-22",
+    "times_seen": 1,
+    "stars_first": 1235,
+    "stars_last": 1235
+  },
+  "lcoutodemos/clui-cc": {
+    "first_seen": "2026-03-22",
+    "last_seen": "2026-03-22",
+    "times_seen": 1,
+    "stars_first": 968,
+    "stars_last": 968
   }
 }
