@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "xiaohongshu-skills"
 homepage: ""
-stars: 701
-stars_per_day: 39
-forks: 97
+stars: 719
+stars_per_day: 38
+forks: 98
 open_issues: 32
 created: 2026-03-03
 pushed_at: 2026-03-09
@@ -38,11 +38,11 @@ issue_close_rate: 22
 repo_size_kb: 269
 readme_length: 6434
 bus_factor: 1
-last_release_days: 13
+last_release_days: 14
 release_cadence: "monthly"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:432,2026-03-11:433,2026-03-13:497,2026-03-14:527,2026-03-15:549,2026-03-16:567,2026-03-17:597,2026-03-18:628,2026-03-19:642,2026-03-20:667,2026-03-21:686,2026-03-22:701"
+star_history: "2026-03-10:432,2026-03-11:433,2026-03-13:497,2026-03-14:527,2026-03-15:549,2026-03-16:567,2026-03-17:597,2026-03-18:628,2026-03-19:642,2026-03-20:667,2026-03-21:686,2026-03-22:701,2026-03-23:719"
 tags:
   - github
   - "category/開發工具"
@@ -57,7 +57,7 @@ aliases:
 
 # xiaohongshu-skills
 
-**701** stars · **39** stars/天 · 建立 18 天前 · Python · MIT
+**719** stars · **38** stars/天 · 建立 19 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/autoclaw-cc--xiaohongshu-skills");
@@ -76,10 +76,10 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 自動化操作小紅書的技能集，基於 Python CDP 瀏覽器自動化引擎。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (39 stars/day)
-> **授權** MIT (商業友好) · **維護** Moderate (最後推送 12 天前) · **貢獻者** 3 人 · **參與度** Medium
-> **適合** 需要在小紅書上進行自動化操作的社交媒體經營者和內容創作者。
-> **一句話重點** 這個專案的設計讓自動化操作變得更直觀，降低了使用門檻，特別適合社交媒體經營者。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (38 stars/day)
+> **授權** MIT (商業友好) · **維護** Moderate (最後推送 13 天前) · **貢獻者** 3 人 · **參與度** Medium
+> **適合** 需要自動化小紅書操作的開發者或社交媒體經營者。
+> **一句話重點** 這個專案的創新在於將自然語言處理與瀏覽器自動化結合，讓小紅書的操作變得更簡單。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -103,106 +103,105 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到高效的社交媒體自動化工具，值得投資。
+> **結論** 花 5 小時學、3 小時整合，得到自動化小紅書操作的能力，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供了基於自然語言的複合操作能力，讓用戶能夠更直觀地與小紅書進行互動。
+> 支持自然語言指令的複合操作，讓用戶能夠更靈活地進行小紅書的自動化管理。
 
 ## 專案簡介
 
-這個專案提供了一系列自動化技能，讓用戶能夠在小紅書上進行操作，如內容發布、社交互動和內容發現。用戶可以透過自然語言指令來觸發這些技能，Agent 會自動串聯多個步驟完成任務，例如「搜索刺客信條最火的圖文帖子，收藏它，然後告訴我講了什麼」。這樣的設計讓使用者能夠更直觀地與系統互動，而不需要深入了解具體的 API 調用。技術上，這個專案使用了 Python 的 CDP（Chrome DevTools Protocol）來控制瀏覽器，並內建反檢測機制以提高穩定性和安全性。
+xiaohongshu-skills 是一個專為小紅書設計的自動化技能集，利用 Python 的 CDP（Chrome DevTools Protocol）來控制瀏覽器。使用者可以透過自然語言指令來執行多種操作，如內容發布、社交互動和內容探索。這個工具的核心賣點在於其支持複合操作，使用者可以一次性下達多個指令，Agent 會自動處理整個流程，例如：搜索、收藏和總結內容。技術上，該專案依賴於 requests 和 websockets 來進行網絡請求和實時通訊，並且設計了反檢測機制以避免被小紅書識別。
 
-與其他工具相比，如 OpenClaw，這個專案的優勢在於其專注於小紅書的操作，並提供了完整的技能集，適合需要進行社交媒體自動化的用戶。實際使用中，這個工具能夠處理多種操作，如圖文發布、視頻發布和社交互動，並且支持複合操作，讓用戶能夠一次性完成多個任務。對於小型團隊或個人開發者來說，這是一個非常實用的工具，但在大型項目中可能會遇到性能瓶頸。整體而言，這個專案在小紅書自動化領域提供了一個強大的解決方案，值得關注和使用。
+與其他類似工具相比，如 OpenClaw，xiaohongshu-skills 提供了更為細緻的操作能力和自然語言處理的支持，讓使用者能夠更靈活地進行內容管理。該專案目前仍在活躍開發中，開發者需要 Python 3.11 以上版本和 Google Chrome 瀏覽器。使用者可能會遇到的問題包括商品綁定功能缺失和執行問題，這些都是社群中熱門的討論話題。整體而言，這是一個適合需要自動化小紅書操作的開發者的工具，但在穩定性和功能上仍有待進一步完善。
 
 **技術棧**：`Python 3.11` · `requests 2.28.0` · `websockets 12.0`
 
 ## 重點功能
 
-- xhs-auth — 支持多帳號管理和登入檢查，確保用戶能夠靈活切換帳號。
-- xhs-publish — 提供圖文、視頻和長文的發布功能，並支持定時發布。
-- xhs-explore — 具備關鍵字搜索和筆記詳情查看功能，方便用戶發現新內容。
-- xhs-interact — 支持評論、回覆、點讚和收藏，增強用戶的社交互動能力。
+- xhs-auth — 支持多帳號登錄和檢查登錄狀態，方便用戶管理多個小紅書帳號。
+- xhs-publish — 支持圖文、視頻和長文的發布，並提供預覽和定時發布功能。
+- xhs-explore — 提供關鍵字搜索和用戶頁面瀏覽功能，幫助用戶快速找到感興趣的內容。
+- xhs-interact — 支持對筆記的評論、點讚和收藏，增強社交互動能力。
 - 連貫操作 — 允許用戶用自然語言下達複合指令，Agent 自動串聯多個技能完成任務。
 
 ## 快速開始
 
 1. 下載 ZIP 安裝
 ```bash
-git clone https://github.com/autoclaw-cc/xiaohongshu-skills.git
+在 GitHub 頁面點擊 Code → Download ZIP
 ```
-2. 進入專案目錄
+2. 解壓到 skills 目錄下
 ```bash
-cd xiaohongshu-skills
+解壓到 /skills/xiaohongshu-skills/
 ```
 3. 安裝 Python 依賴
 ```bash
-uv sync
+cd xiaohongshu-skills && uv sync
 ```
 
 ## 程式碼範例
 
 ```python
-{
-  "前置條件": "安裝完成後，啟動 Chrome 瀏覽器",
-  "指令": "python scripts/cli.py search-feeds --keyword '关键词'",
-  "預期輸出": "返回符合關鍵字的筆記列表（JSON 格式）"
-}
+[
+  "# 启动 Chrome",
+  "python scripts/chrome_launcher.py",
+  "# 预期输出：启动 Chrome 浏览器"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 18 天就累積 701 stars（39/天），forks 97（13.8%），顯示出良好的社群反應。作者 Angiin 和其他貢獻者在自動化和 AI 相關領域有一定的經驗，解決了小紅書自動化操作的需求，之前的方案往往功能不全或不夠靈活。這個專案的出現，正好填補了這一空白，並且隨著小紅書用戶的增長，對於自動化工具的需求也在上升。社群的活躍度和開發者的回應速度都表明這個專案有潛力成為一個成熟的工具。
+> 建立 19 天內累積 719 stars（38/天），forks 98（13.6%），顯示出一定的社群關注度。作者 Angiin 和其他貢獻者在自動化和 AI Agent 領域有一定經驗，這個工具解決了小紅書操作繁瑣的問題，尤其是在內容發布和社交互動方面。社群的反饋和需求驅動了這個專案的發展，特別是對於複合操作的需求。技術上，CDP 的使用讓這個工具能夠直接控制瀏覽器，這在過去的工具中並不常見。forks/stars 比率為 13.6%，顯示出有不少開發者在實際修改和使用這個工具。
 
 ## 適合誰使用
 
-**目標受眾**：需要在小紅書上進行自動化操作的社交媒體經營者和內容創作者。
+**目標受眾**：需要自動化小紅書操作的開發者或社交媒體經營者。
 
 > [!example] 使用場景
-> - 社交媒體經營者用它來自動發布小紅書內容，因為可以節省時間並提高發布效率。
-> - 數據分析師用它來收集小紅書上的用戶互動數據，因為可以快速獲取大量資料進行分析。
-> - 內容創作者用它來搜尋和收藏靈感，因為可以輕鬆找到熱門內容並進行整理。
+> - 社交媒體經營者用它來自動發布小紅書內容，因為可以節省手動操作時間，提升發布效率。
+> - 數據分析師用它來批量收集小紅書上的用戶互動數據，因為可以快速獲取大量資料進行分析。
+> - 內容創作者用它來定時發布圖文和視頻，因為可以確保內容在最佳時間點曝光，增加互動率。
 
 ## 架構分析
 
-這個專案採用雙層設計，分為 Skills 層和引擎層。Skills 層定義了 AI Agent 的能力，通過 SKILL.md 文件來描述如何觸發和處理操作。引擎層則使用 Python 的 CDP 自動化引擎，直接控制 Chrome 瀏覽器。
+該專案採用雙層設計，分為 Skills 層和引擎層。Skills 層定義了 AI Agent 的能力，通過 SKILL.md 來路由用戶的意圖；引擎層則是基於 Python 的 CDP 自動化引擎，直接控制 Chrome 瀏覽器。這樣的設計使得功能擴展變得簡單，因為只需在 Skills 層添加新的技能即可。
 
-這樣的設計使得用戶可以通過自然語言指令來操作小紅書，而不需要了解具體的 API 調用。選擇 CDP 作為控制方式的好處是能夠實現更高的靈活性和穩定性，但代價是需要依賴 Chrome 瀏覽器的運行環境。整體架構的擴展性良好，但在高頻操作下可能會遇到性能瓶頸。
+資料流從用戶的自然語言指令開始，經過意圖路由，最終由引擎層執行具體的瀏覽器操作。這種架構的代價在於需要一定的學習曲線來理解如何定義和使用技能，但這也使得整體系統具備了高度的靈活性和可擴展性。擴展性瓶頸主要在於 CDP 的性能限制，當操作過於頻繁時可能會導致性能下降。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於 Python 的 CDP（Chrome DevTools Protocol），通過直接控制 Chrome 瀏覽器來實現自動化操作。這種方式允許開發者使用 JavaScript 來模擬用戶行為，並且能夠有效地處理網頁的動態內容。效能上，這個工具能夠處理多種操作，但在高頻率使用時可能會遇到延遲或崩潰的問題。設計上，選擇 Python 是因為其生態系統豐富且易於開發，但這也意味著需要用戶具備一定的 Python 知識。
-
-依賴於 Chrome 瀏覽器的運行，可能會面臨版本不兼容的風險。技術風險方面，若小紅書的 API 發生變更，將可能導致功能失效。整合方面，這個工具能夠與現有的 Python 開發環境良好配合，但在 CI/CD pipeline 的整合上可能需要額外的配置。整體而言，這個專案在自動化操作方面提供了一個強大的解決方案，值得開發者關注。
+xiaohongshu-skills 的核心技術在於使用 Chrome DevTools Protocol 來控制瀏覽器，這使得它能夠直接與小紅書的前端進行交互。該專案的資料提取方式是通過 `window.__INITIAL_STATE__` 來獲取頁面數據，這樣的設計與小紅書的前端框架高度對齊，能夠有效地提取所需資訊。反檢測機制的實現則是通過 Stealth JS 注入和模擬真實用戶行為來避免被識別，這在自動化工具中是相對少見的。該專案能夠處理的資料量取決於 Chrome 瀏覽器的性能，冷啟動時間和記憶體佔用會隨著操作的頻繁程度而變化。選擇 Python 作為開發語言是因為其在自動化和網絡請求方面的強大生態系統，然而這也導致了對 Python 環境的依賴。技術風險主要在於 CDP 的穩定性，當小紅書的前端改版時，可能會導致工具的功能失效。整合方面，該專案與主流的 CI/CD 工具鏈相容性良好，能夠輕鬆集成到現有的開發流程中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含詳細的安裝步驟和使用範例，安裝過程相對順暢，沒有明顯的坑。提供了良好的入門指南，適合新手快速上手。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
+> README 文件清晰，提供了詳細的安裝和使用說明，並且有實際的範例。安裝過程相對順暢，但需要確保 Python 和 Chrome 的版本符合要求。文件目前僅提供英文版本，可能對非英語使用者造成一定障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多種操作，涵蓋內容發布、社交互動等功能。
-> - 提供自然語言處理能力，降低使用門檻。
-> - 內建反檢測機制，提高穩定性。
+> - 支持自然語言操作，使用者體驗友好
+> - 功能模組化，易於擴展和維護
+> - 提供反檢測機制，增強使用安全性
 
 > [!danger] 缺點
-> - 僅支援特定版本的 Python 和 Chrome 瀏覽器。
-> - 在高頻率操作下可能會出現性能問題。
-> - 功能依賴於小紅書的 API 穩定性，若有變動可能影響使用。
+> - 功能尚未完全穩定，可能會遇到 bug
+> - 依賴於 Chrome 瀏覽器，無法在其他瀏覽器上運行
+> - 需要一定的技術背景來配置和使用
 
 > [!warning] 注意事項
 > - 僅支援 Python 3.11 以上版本
-> - 需要 Google Chrome 瀏覽器作為自動化控制的基礎
-> - 在高頻率操作下可能會遇到性能瓶頸
+> - 需要 Google Chrome 瀏覽器
+> - 目前不支持商品綁定功能
+> - 功能仍在開發中，穩定性有待加強
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的自動化技能，功能上可能不如本專案全面，但在特定領域有更深的專業性。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供類似的自動化功能，但主要針對社交媒體的數據抓取，缺乏小紅書特定的操作能力。 |
+| [autoclaw-cc/openclaw](https://github.com/autoclaw-cc/openclaw) | OpenClaw 提供了基本的自動化功能，但不支持複合操作，使用者需手動執行多個步驟。 |
+| [jackwener/xiaohongshu-cli](https://github.com/jackwener/xiaohongshu-cli) | xiaohongshu-cli 主要提供 CLI 操作，而本專案則支持自然語言交互，使用上更為便捷。 |
 
 ## 替代方案決策
 
@@ -210,16 +209,16 @@ uv sync
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的自動化技能，提供特定功能，但不如本專案全面。 | 如果你的需求主要集中在醫療領域的自動化操作，這個工具會更合適。 | medium，因為需要重新學習其特定的操作流程。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供類似的自動化功能，但主要針對社交媒體的數據抓取，缺乏小紅書特定的操作能力。 | 如果你的需求是針對多個社交媒體平台的數據抓取，這個工具會更合適。 | low，因為功能上有相似之處。 |
+| OpenClaw | OpenClaw 提供了基本的自動化功能，但不支持複合操作，使用者需手動執行多個步驟。 | 如果需要一個簡單的自動化工具，且不需要複雜的操作流程。 | low，因為功能相似，轉換成本不高。 |
+| xiaohongshu-cli | xiaohongshu-cli 主要提供 CLI 操作，而本專案則支持自然語言交互，使用上更為便捷。 | 如果你的團隊已經習慣使用 CLI 工具，且不需要自然語言處理功能。 | medium，因為需要調整使用習慣和操作方式。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **xiaohongshu-skills** | **OpenClaw-Medical-Skills** | **Shadowbroker** |
+> | 維度 | **xiaohongshu-skills** | **OpenClaw** | **xiaohongshu-cli** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於醫療領域的自動化技能，提供特定功能，但不如本專案全面。 | 提供類似的自動化功能，但主要針對社交媒體的數據抓取，缺乏小紅書特定的操作能力。 |
-> | 遷移成本 | - | medium，因為需要重新學習其特定的操作流程。 | low，因為功能上有相似之處。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要集中在醫療領域的自動化操作，這個工具會更合適 | 如果你的需求是針對多個社交媒體平台的數據抓取，這個工具會更合 |
+> | 技術路線 | 本專案 | OpenClaw 提供了基本的自動化功能，但不支持複合操作，使用者需手動執行多個步驟。 | xiaohongshu-cli 主要提供 CLI 操作，而本專案則支持自然語言交互，使用上更為便捷。 |
+> | 遷移成本 | - | low，因為功能相似，轉換成本不高。 | medium，因為需要調整使用習慣和操作方式。 |
+> | 適用場景 | 主要場景 | 如果需要一個簡單的自動化工具，且不需要複雜的操作流程。 | 如果你的團隊已經習慣使用 CLI 工具，且不需要自然語言處理 |
 
 ## 成熟度評估
 
@@ -230,27 +229,27 @@ uv sync
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人或小型項目的試用，但不建議在生產環境的核心路徑上使用。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高頻率操作下可能會導致 Chrome 崩潰
-  - 解法：減少操作頻率或增加延遲
-- [MEDIUM] 小紅書 API 變更可能導致功能失效
-  - 解法：定期檢查更新並調整使用方式
-- [MEDIUM] 多帳號管理時可能會出現登錄狀態不一致
-  - 解法：確保在每次操作前檢查登錄狀態
+- **[HIGH]** 商品綁定功能缺失，無法直接關聯商品
+  - 解法：手動處理商品綁定
+- [MEDIUM] 執行過程中可能會遇到反檢測失敗的情況
+  - 解法：檢查網絡環境或使用不同的登錄方式
+- [MEDIUM] 多帳號管理時可能會出現登錄狀態不一致的問題
+  - 解法：定期檢查和更新登錄狀態
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的社交媒體管理 | 非常適合 | 提供全面的自動化操作功能，能夠提高工作效率。 |
-| 大型企業的數據收集 | 普通 | 雖然功能強大，但在高頻率操作下可能會遇到性能瓶頸。 |
-| 個人內容創作者 | 非常適合 | 能夠簡化內容發布流程，提升創作效率。 |
-| 需要高穩定性的商業應用 | 不適合 | 目前仍處於 beta 階段，穩定性有待提高。 |
+| 社交媒體經營者需要自動化內容發布 | 非常適合 | 支持多種內容格式的發布，並且可以定時發布 |
+| 數據分析師需要批量收集用戶互動數據 | 適合 | 能夠快速獲取大量資料進行分析 |
+| 小型團隊需要簡單的自動化工具 | 普通 | 功能尚未完全穩定，可能會遇到 bug |
+| 大型企業需要穩定的自動化解決方案 | 不適合 | 目前仍在開發中，穩定性有待加強 |
 
 ## 採用成本分析
 
@@ -262,12 +261,42 @@ uv sync
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到高效的社交媒體自動化工具，值得投資。
+> 花 5 小時學、3 小時整合，得到自動化小紅書操作的能力，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限操作，主要通過瀏覽器進行自動化，且不存取敏感資料。依賴於 Chrome 的安全性，但需注意依賴鏈的信任程度。
+> 低風險：該工具不需要高權限，主要操作為瀏覽器自動化，不存取敏感資料。依賴鏈的信任程度較高，但仍需注意外部 API 的變化對功能的影響。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+xiaohongshu-skills 最常與 OpenClaw 和其他支持 SKILL.md 的 AI Agent 平台搭配使用，通常在開發和部署階段進行整合。在使用中，開發者可以將該工具放入其 skills 目錄，並通過自然語言與 Agent 進行交互。與主流 CI/CD 工具（如 GitHub Actions）相容性良好，能夠輕鬆集成到現有的開發流程中。最常見的整合問題是需要確保 Chrome 瀏覽器的版本與工具相容，否則可能會導致功能失效。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 xiaohongshu-skills 出現之前，自動化小紅書的工具多數功能單一，缺乏靈活性。使用者通常需要手動執行多個步驟，這導致了效率低下。隨著 CDP 技術的成熟，這個工具的出現使得複雜的操作變得簡單可行。
+
+未來，隨著 AI 和自動化技術的進步，這類工具將會越來越普及，並可能引入更多智能化的功能。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-5 人的小型團隊
+
+**前置技能**：
+- 熟悉 Python
+- 了解基本的自動化原理
+
+> [!tip] 導入策略
+> 第一週：在個人項目中試用。第二週：在小型團隊內部工具中導入。第三週：撰寫使用文檔和最佳實踐。第四週：在主產品中逐步使用。
+
+**成功指標**：自動化操作時間減少 50%，提高內容發布效率。
+
+> [!warning] 退出計畫
+> 所有設定存在標準 JSON 格式，可以用官方工具轉換為其他平台的格式。
 
 ## 健康度儀表板
 
@@ -332,7 +361,7 @@ uv sync
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 97 |
+| Forks | 98 |
 | Open Issues | 32 |
 | Issue 解決率 | 22% (9 closed) |
 | 最後推送 | 2026-03-09 |
@@ -358,7 +387,7 @@ uv sync
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者回應速度良好。
+**社群活躍度**：社群活躍，定期更新和回應問題
 **連結**：[文件](https://github.com/autoclaw-cc/xiaohongshu-skills)
 
 ## 開發動態
@@ -374,7 +403,7 @@ uv sync
 > | [#12](https://github.com/autoclaw-cc/xiaohongshu-skills/issues/12) | 没有商品绑定功能 | 2 | 0 |
 > | [#28](https://github.com/autoclaw-cc/xiaohongshu-skills/issues/28) | 可以加上任务记录日志，让模型不要重复去读一些读过的笔记 | 1 | 0 |
 > | [#57](https://github.com/autoclaw-cc/xiaohongshu-skills/issues/57) | openclaw执行问题 | 0 | 0 |
-> | [#56](https://github.com/autoclaw-cc/xiaohongshu-skills/issues/56) | nanobot 支持吗 | 0 | 0 |
+> | [#56](https://github.com/autoclaw-cc/xiaohongshu-skills/issues/56) | nanobot 支持吗 | 0 | 1 |
 > | [#55](https://github.com/autoclaw-cc/xiaohongshu-skills/issues/55) | 成功使用该skill发布了2篇了； | 0 | 0 |
 
 ## README 摘錄
@@ -673,9 +702,9 @@ uv sync
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[API 設計]] · [[網頁爬蟲]]
+相關概念：[[自動化]] · [[AI Agent]] · [[CDP]]
 
-相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
+相關專案：[[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
 
 [GitHub](https://github.com/autoclaw-cc/xiaohongshu-skills)
 
@@ -717,7 +746,7 @@ uv sync
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","API 設計","網頁爬蟲"];
+> const concepts = ["自動化","AI Agent","CDP"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "autoclaw-cc--xiaohongshu-skills" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

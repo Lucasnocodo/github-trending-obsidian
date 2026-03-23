@@ -7,8 +7,8 @@ language: N/A
 license: MIT
 description: "the holly uncodexify instructions - letting GPT create uncodexified UI"
 homepage: ""
-stars: 1717
-stars_per_day: 114
+stars: 1731
+stars_per_day: 108
 forks: 126
 open_issues: 0
 created: 2026-03-06
@@ -17,7 +17,7 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
-subcategory: "UI 工具"
+subcategory: "UI 設計"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "幫助 GPT 生成更正常的 UI 設計，避免常見的糟糕設計模式。"
+use_case: "幫助 GPT 生成更自然的 UI 設計，避免常見的設計缺陷。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:1380,2026-03-11:1382,2026-03-13:1461,2026-03-13:1461,2026-03-14:1495,2026-03-15:1527,2026-03-16:1563,2026-03-17:1592,2026-03-18:1613,2026-03-19:1636,2026-03-20:1672,2026-03-21:1697,2026-03-22:1717"
+star_history: "2026-03-10:1380,2026-03-11:1382,2026-03-13:1461,2026-03-13:1461,2026-03-14:1495,2026-03-15:1527,2026-03-16:1563,2026-03-17:1592,2026-03-18:1613,2026-03-19:1636,2026-03-20:1672,2026-03-21:1697,2026-03-22:1717,2026-03-23:1731"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "Uncodixfy"
   - "cyxzdev/Uncodixfy"
-  - "幫助 GPT 生成更正常的 UI 設計，避免常見的糟糕設計模式。"
+  - "幫助 GPT 生成更自然的 UI 設計，避免常見的設計缺陷。"
 ---
 
 # Uncodixfy
 
-**1.7k** stars · **114** stars/天 · 建立 15 天前 · N/A · MIT
+**1.7k** stars · **108** stars/天 · 建立 16 天前 · N/A · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/cyxzdev--Uncodixfy");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `easy-install`
 
 > [!summary] 一句話摘要
-> 幫助 GPT 生成更正常的 UI 設計，避免常見的糟糕設計模式。
+> 幫助 GPT 生成更自然的 UI 設計，避免常見的設計缺陷。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (114 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** 3 人 · **參與度** Low
-> **適合** 需要生成 UI 設計但又想避免常見設計缺陷的開發者和設計師。
-> **一句話重點** 這個專案證明了簡單的規則集可以顯著改善 AI 生成的 UI 設計質量。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (108 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 4 天前) · **貢獻者** 3 人 · **參與度** Low
+> **適合** 需要生成高品質 UI 但又不想花太多時間在設計上的開發者或設計師。
+> **一句話重點** Uncodixfy 讓 GPT 的 UI 設計更符合人類習慣，避免常見的設計缺陷。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/cyxzdev--Uncodixfy");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "UI 工具" && p.file.name !== "cyxzdev--Uncodixfy" && p.status !== "archived")
+>     .where(p => p.subcategory === "UI 設計" && p.file.name !== "cyxzdev--Uncodixfy" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,164 +96,88 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 UI 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 UI 設計 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到更高質量的 UI 設計，值得嘗試。
+> **安裝** Easy (一行搞定)
 
 > [!abstract] 核心創新
-> 這個專案最核心的創新點是提供了一套規則集，專門用於引導 GPT 避免常見的 UI 設計缺陷。
+> 這個專案的創新點在於提供一套明確的設計限制，幫助 GPT 避免常見的 UI 設計缺陷。
 
 ## 專案簡介
 
-Uncodixify 的核心機制是透過 `uncodixify.md` 文件，限制 GPT 在生成 UI 時的設計選擇。使用者只需將此文件包含在提示中，GPT 就會避免常見的設計缺陷，如浮動卡片、過大的圓角和過度的漸層效果。這種方法的賣點在於，它不教 GPT 如何設計，而是告訴它應該避免哪些設計模式，從而促使生成更符合人類設計習慣的界面。技術上，這個工具不依賴複雜的算法或框架，而是通過簡單的規則來引導 GPT 的設計行為，這使得它的依賴性非常低，容易整合。與其他 UI 設計工具相比，如 Figma 或 Sketch，Uncodixify 更加專注於修正 AI 生成的設計缺陷，而非提供完整的設計環境。
+Uncodixfy 的核心機制是透過一套規則集，指導 GPT 避免常見的 UI 設計缺陷，讓生成的介面更符合人類的設計習慣。使用者只需將 `uncodixify.md` 包含在提示中，GPT 就會依據這些規則生成 UI，避免如浮動卡片、過大的圓角和過度使用漸層等問題。這樣的設計不僅能提升生成介面的質感，也能減少後續的修改工作。技術上，這個工具並不教 GPT 如何設計，而是明確告訴它「不該做什麼」，這樣的設計思路能有效降低 GPT 的設計偏差。與其他 AI 設計工具相比，如 Figma 的 AI 插件，Uncodixfy 更專注於限制不良設計，而非提供創意建議。
 
-這意味著它適合那些已經在使用 GPT 生成內容的開發者，尤其是在需要快速生成 UI 原型的場景。使用者在實際應用中可能會發現，這個工具能有效減少重複的設計模式，但仍需手動調整以滿足具體需求。這個專案目前處於活躍開發階段，且社群反應良好，所有開放的問題都已解決，顯示出良好的維護狀態。對於小型團隊或個人開發者來說，這是一個值得嘗試的工具，尤其是在需要快速迭代 UI 設計的情況下。
+這使得它在需要快速生成符合特定風格的 UI 時，特別有用。實際使用中，這個工具能有效減少設計反覆的時間，特別是在需要大量 UI 元件的專案中。維護者的活躍度高，且問題解決率達 100%，顯示出社群的健康度。對於小型團隊或個人開發者來說，這是一個值得嘗試的工具，特別是當他們需要快速生成 UI 時。未來六個月，隨著 AI 設計需求的增加，這個專案可能會持續增長，並吸引更多使用者。
 
 ## 重點功能
 
-- 設計規則集 — 包含 `uncodixify.md` 文件，指導 GPT 避免常見的 UI 設計缺陷。
-- 簡單整合 — 只需在提示中包含 `uncodixify.md`，即可引導 GPT 生成更正常的 UI。
-- 多平台支持 — 可用作 AI 編碼代理的技能，支持 Codex 和 Claude Code。
-- 命令行安裝 — 使用 `npx skills add cyxzdev/Uncodixfy` 進行安裝，簡單易用。
-- 即時反饋 — 生成的 UI 可以立即與之前的設計進行比較，便於調整和改進。
+- 設計限制規則 — 包含多項避免常見設計缺陷的規則，提升生成 UI 的質感。
+- 簡單整合 — 透過 `npx skills add cyxzdev/Uncodixfy` 指令輕鬆安裝。
+- 多平台支持 — 可與 Codex 和 Claude Code 等 AI 編碼代理一起使用。
+- 即時反饋 — 根據使用者的提示，快速生成符合要求的 UI。
+- 開源社群支持 — 100% 的問題解決率，顯示出活躍的社群參與。
 
 ## 快速開始
 
-1. 安裝 Uncodixify
+1. 安裝 Uncodixfy
 ```bash
 npx skills add cyxzdev/Uncodixfy
 ```
-2. 在提示中包含設計規則
-```bash
-Include `uncodixify.md` in your prompt.
-```
-3. 使用命令調用 Uncodixify
+2. 在提示中使用 Uncodixfy
 ```bash
 /uncodixfy
+```
+3. 查看生成的 UI 設計
+```bash
+檢查 GPT 的輸出
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 15 天內累積 1717 stars（114/天），forks 126（7.3%），這顯示出穩定的增長潛力。作者 cyxzdev 及其團隊在開源社群中有一定的影響力，解決了 GPT 生成 UI 設計時的常見問題，這在以往的工具中並未得到有效解決。這個專案的出現正好填補了這一空白，讓使用者能夠更好地控制 AI 的設計輸出。社群的反應積極，所有問題都已解決，顯示出良好的支持和活躍度。
+> 建立 16 天就累積 1731 stars（108/天），forks 126（7.3%），顯示出穩定的增長。作者 cyxzdev 及其團隊專注於改善 AI 設計的質量，解決了 GPT 在 UI 設計上的常見缺陷，這在過去並沒有好的解決方案。這個工具的出現正好填補了這一空白，特別是在 AI 設計工具日益普及的背景下。forks/stars 比率為 7.3%，顯示出有一定數量的使用者在進行實際修改，這是良好的社群參與指標。
 
 ## 適合誰使用
 
-**目標受眾**：需要生成 UI 設計但又想避免常見設計缺陷的開發者和設計師。
+**目標受眾**：需要生成高品質 UI 但又不想花太多時間在設計上的開發者或設計師。
 
 > [!example] 使用場景
-> - 前端開發者用它來生成符合設計規範的 UI 原型，因為它能有效避免 GPT 常見的設計缺陷。
-> - 產品經理用它來快速迭代 UI 設計，因為它能讓 GPT 生成更符合用戶需求的界面。
-> - UX 設計師用它來檢查 AI 生成的設計，因為它能幫助識別和修正不當的設計模式。
+> - UI 設計師用它來生成符合品牌風格的介面，因為它能有效避免常見的設計缺陷，節省了修改時間。
+> - 獨立開發者用它來快速生成原型 UI，因為它能提升設計質感，讓使用者更容易接受。
+> - 產品經理用它來指導開發團隊生成 UI，因為它能提供明確的設計限制，減少溝通成本。
 
 ## 架構分析
 
-Uncodixify 的架構設計相對簡單，主要依賴於一個規則集 `uncodixify.md`，這使得整合過程非常輕量。使用者只需在提示中包含該文件，GPT 就會根據規則生成 UI。這種設計的優勢在於降低了使用門檻，任何熟悉 GPT 的開發者都能輕鬆上手。
-
-由於不依賴複雜的後端服務或數據庫，這個工具的維護成本相對較低。然而，這也意味著在處理更複雜的 UI 設計需求時，可能需要額外的手動調整。整體而言，這是一個針對特定問題的解決方案，適合快速生成 UI 原型。
+Uncodixfy 的架構主要基於一套規則集，這些規則被設計來限制 GPT 的生成行為。這樣的設計使得使用者能夠在不需要深入了解設計原則的情況下，快速獲得符合需求的 UI。資料流方面，使用者的提示經過這些限制後，生成的 UI 將更符合人類的設計習慣。這樣的選擇雖然降低了 GPT 的創造性，但卻能有效提高生成結果的實用性。擴展性方面，這個工具的設計使得未來可以加入更多的限制規則，以適應不同的設計需求。
 
 ## 技術深入分析
 
-Uncodixify 的核心技術機制在於使用一套明確的設計規則，這些規則能夠引導 GPT 避免常見的設計缺陷。這種方法不依賴於複雜的算法，而是通過簡單的指導原則來達成目標。由於其設計的輕量性，使用者可以快速整合到現有的開發流程中，並在生成 UI 時獲得即時的反饋。這樣的設計選擇使得 Uncodixify 在資源需求上相對較低，並且能夠快速適應不同的開發環境。選擇這種方法的代價在於，對於更複雜的 UI 設計需求，使用者可能需要進行額外的手動調整。這個工具的整合難度低，並且能夠與現有的開發工具鏈無縫對接，特別是在使用 GPT 進行內容生成的場景中。整體而言，Uncodixify 提供了一個有效的解決方案，能夠幫助開發者在使用 AI 生成內容時，提升 UI 設計的質量。
+Uncodixfy 的核心技術機制在於一套明確的設計限制規則，這些規則不僅告訴 GPT 不該做什麼，還能有效引導其生成更符合人類設計習慣的介面。這樣的設計模式使得使用者能夠快速獲得符合需求的 UI，而不必擔心 GPT 可能產生的設計缺陷。效能方面，這個工具能夠快速生成 UI，並且在使用者的提示下，能夠即時反饋生成結果。設計取捨方面，選擇限制 GPT 的生成行為雖然降低了其創造性，但卻能有效提高生成結果的實用性，這對於需要快速生成 UI 的場景尤其重要。技術風險方面，由於依賴於 GPT 的能力，若 GPT 本身的設計能力不足，可能會影響最終的生成結果。整合方面，這個工具能夠輕鬆融入現有的工作流程，並且與其他 AI 設計工具相容，這使得它在實際應用中具備良好的靈活性。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了使用示例；安裝過程順暢，無明顯坑；有簡單的入門指南，但缺乏多語言支持。
+> README 文件清晰，提供了使用範例；安裝過程簡單，無明顯坑；有簡單的使用指南，但缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能有效避免 GPT 常見的 UI 設計缺陷。
-> - 安裝和使用過程簡單，適合快速上手。
-> - 提供即時反饋，便於用戶調整設計。
+> - 能有效避免常見的設計缺陷，提升 UI 質感。
+> - 簡單易用，快速整合到現有工作流程中。
+> - 活躍的社群支持，問題解決率高。
 
 > [!danger] 缺點
-> - 不提供完整的設計環境，仍需手動調整。
-> - 對於複雜的設計需求，可能無法完全滿足。
-> - 僅適用於 GPT 生成的內容，無法應用於其他工具。
+> - 不提供設計創意，僅限於限制生成行為。
+> - 依賴於 GPT 的能力，若 GPT 表現不佳，效果會受影響。
+> - 不適合需要高度創意的設計任務。
 
 > [!warning] 注意事項
-> - 僅適用於 GPT 生成的 UI，無法直接應用於其他設計工具。
-> - 不提供完整的設計環境，仍需手動調整生成的 UI。
-> - 對於複雜的 UI 設計需求，可能無法完全滿足。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步，而非 UI 設計，適用於不同場景。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 主要用於安全性測試，與 UI 設計無關。 |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 用於網路代理，與 UI 設計無直接關聯。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| Figma | 提供完整的 UI 設計環境，而 Uncodixify 只是針對 AI 生成的設計進行優化。 | 如果需要一個全面的設計工具來創建和編輯 UI，Figma 是更好的選擇。 | high，因為需要從 AI 生成的設計轉換到 Figma 的設計環境。 |
-| Sketch | 專注於設計而非 AI 生成的內容，Uncodixify 主要針對 GPT 的設計缺陷。 | 如果團隊已經在使用 Sketch 進行設計，則選擇 Sketch 更為合適。 | medium，因為需要將 AI 生成的設計轉換為 Sketch 格式。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **Uncodixfy** | **Figma** | **Sketch** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供完整的 UI 設計環境，而 Uncodixify 只是針對 AI 生成的設計進行優化。 | 專注於設計而非 AI 生成的內容，Uncodixify 主要針對 GPT 的設計缺陷。 |
-> | 遷移成本 | - | high，因為需要從 AI 生成的設計轉換到 Figma 的設計環境。 | medium，因為需要將 AI 生成的設計轉換為 Sketch 格式。 |
-> | 適用場景 | 主要場景 | 如果需要一個全面的設計工具來創建和編輯 UI，Figma 是 | 如果團隊已經在使用 Sketch 進行設計，則選擇 Sket |
-
-## 成熟度評估
-
-| 項目 | 評估 |
-| --- | --- |
-| 開發階段 | Beta |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
-
-> [!tip] 採用建議
-> 適合個人或小型團隊試用，但不建議用於生產環境的核心功能。
-
-## 已知陷阱
-
-> [!bug] 踩坑才知道的問題
-
-- [MEDIUM] 生成的 UI 可能仍需手動調整以符合具體需求
-  - 解法：在生成後進行人工審核和修改
-- **[HIGH]** 不支持複雜的 UI 設計需求
-  - 解法：對於複雜需求，考慮其他設計工具
-- [low] 僅適用於 GPT 生成的內容，無法應用於其他工具
-  - 解法：確保使用 GPT 進行內容生成
-
-## 使用情境適合度
-
-| 情境 | 適合度 | 說明 |
-| --- | --- | --- |
-| 小型開發團隊的 UI 原型設計 | 非常適合 | 能快速生成符合設計規範的 UI 原型。 |
-| 大型企業的複雜 UI 設計 | 不適合 | 無法滿足複雜的設計需求。 |
-| 個人開發者的快速 UI 迭代 | 適合 | 能有效避免重複的設計缺陷，提升效率。 |
-| 需要與其他設計工具整合的專案 | 普通 | 整合過程可能需要額外的轉換工作。 |
-
-## 採用成本分析
-
-| 項目 | 評估 |
-| --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
-| 綁定風險 | low |
-
-> [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到更高質量的 UI 設計，值得嘗試。
-
-## 安全性評估
-
-> [!warning] 安全性快速掃描
-> 低風險：此工具不需要高權限，且不存取敏感資料，適合在 CI/CD 中使用。安全性考量較低。
+> - 不教 GPT 如何設計，只提供限制，可能無法滿足所有設計需求。
+> - 依賴於 GPT 的生成能力，若 GPT 本身的設計能力不足，效果會受限。
+> - 不適用於需要高度創意的設計任務。
 
 ## 健康度儀表板
 
@@ -335,7 +259,7 @@ Uncodixify 的核心技術機制在於使用一套明確的設計規則，這些
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，所有開放問題已解決。
+**社群活躍度**：社群活躍，問題解決率達 100%。
 
 ## 開發動態
 
@@ -414,7 +338,7 @@ Uncodixify 的核心技術機制在於使用一套明確的設計規則，這些
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[UI-UX 設計]] · [[AI 生成內容]]
+相關概念：[[UI-UX 設計]] · [[AI 設計工具]] · [[設計模式]]
 
 相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]]
 
@@ -422,11 +346,11 @@ Uncodixify 的核心技術機制在於使用一套明確的設計規則，這些
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：UI 工具）
+> [!note]- 直接競品（同子分類：UI 設計）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "UI 工具" AND file.name != "cyxzdev--Uncodixfy"
+> WHERE subcategory = "UI 設計" AND file.name != "cyxzdev--Uncodixfy"
 > SORT stars DESC
 > ```
 
@@ -458,7 +382,7 @@ Uncodixify 的核心技術機制在於使用一套明確的設計規則，這些
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化測試","UI-UX 設計","AI 生成內容"];
+> const concepts = ["UI-UX 設計","AI 設計工具","設計模式"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "cyxzdev--Uncodixfy" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
