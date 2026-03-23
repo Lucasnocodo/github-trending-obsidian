@@ -7,10 +7,10 @@ language: N/A
 license: MIT
 description: "A collection of 130+ specialized Codex subagents covering a wide range of development use cases."
 homepage: "https://github.com/VoltAgent/voltagent"
-stars: 1982
-stars_per_day: 496
-forks: 162
-open_issues: 1
+stars: 2071
+stars_per_day: 414
+forks: 175
+open_issues: 0
 created: 2026-03-17
 pushed_at: 2026-03-20
 first_seen: 2026-03-20
@@ -30,8 +30,8 @@ use_case: "提供 130 多個專門的 Codex 子代理，涵蓋廣泛的開發用
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-03-25"
+appearances: 4
+next_review: "2026-03-26"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-20"
-star_history: "2026-03-20:1509,2026-03-20:1514,2026-03-21:1841,2026-03-21:1843,2026-03-22:1981,2026-03-22:1982"
+star_history: "2026-03-20:1509,2026-03-20:1514,2026-03-21:1841,2026-03-21:1843,2026-03-22:1981,2026-03-22:1982,2026-03-23:2071"
 tags:
   - github
   - "category/開發工具"
@@ -824,6 +824,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-23|2026-03-23]] — 再次上榜，2.1k stars
 - [[2026-03-22|2026-03-22]] — 再次上榜，2.0k stars
 - [[2026-03-21|2026-03-21]] — 再次上榜，1.8k stars
 - [[2026-03-20|2026-03-20]] — 首次收錄，1.5k stars

@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "Clui CC — Command Line User Interface for Claude Code"
 homepage: ""
-stars: 968
-stars_per_day: 161
-forks: 129
-open_issues: 24
+stars: 1009
+stars_per_day: 144
+forks: 134
+open_issues: 23
 created: 2026-03-16
 pushed_at: 2026-03-20
 first_seen: 2026-03-22
@@ -30,8 +30,8 @@ use_case: "為 Claude Code 提供的命令行用戶界面，讓使用者能夠�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-29"
+appearances: 2
+next_review: "2026-03-30"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 20
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-22"
-star_history: "2026-03-22:968"
+star_history: "2026-03-22:968,2026-03-23:1009"
 tags:
   - github
   - "category/開發工具"
@@ -911,4 +911,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-23|2026-03-23]] — 再次上榜，1.0k stars
 - [[2026-03-22|2026-03-22]] — 首次收錄，968 stars
