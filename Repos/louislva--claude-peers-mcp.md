@@ -458,7 +458,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 相關概念：[[即時通訊]] · [[MCP Protocol]] · [[CLI/TUI]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[Infatoshi--OpenSquirrel|Infatoshi/OpenSquirrel]]
 
 [GitHub](https://github.com/louislva/claude-peers-mcp)
 

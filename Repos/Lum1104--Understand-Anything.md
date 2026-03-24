@@ -7,17 +7,17 @@ language: TypeScript
 license: MIT
 description: "Claude Code skills that turn any codebase into an interactive knowledge graph you can explore, search, and ask questions about (Multi-platform e.g., Codex are supported)."
 homepage: "https://lum.is-a.dev/Understand-Anything/"
-stars: 4225
-stars_per_day: 604
-forks: 346
-open_issues: 7
+stars: 5509
+stars_per_day: 689
+forks: 427
+open_issues: 13
 created: 2026-03-15
 pushed_at: 2026-03-23
 first_seen: 2026-03-21
 week: "2026-W12"
 month: "2026-03"
 category: "開發工具"
-subcategory: "代碼分析"
+subcategory: "知識圖譜"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,23 +26,23 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-21
-use_case: "將任何代碼庫轉換為可互動的知識圖譜，讓你可以探索、搜尋並提問。"
+use_case: "將任何代碼庫轉換為可互動的知識圖譜，讓你能夠探索、搜尋和提問。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 2
 next_review: "2026-03-25"
-contributor_count: 4
+contributor_count: 5
 engagement: "low"
-issue_close_rate: 36
-repo_size_kb: 2250
-readme_length: 7935
+issue_close_rate: 28
+repo_size_kb: 2247
+readme_length: 7966
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-21"
-star_history: "2026-03-21:1388,2026-03-21:1399,2026-03-22:2600,2026-03-22:2608,2026-03-23:4225"
+star_history: "2026-03-21:1388,2026-03-21:1399,2026-03-22:2600,2026-03-22:2608,2026-03-23:4225,2026-03-24:5509"
 tags:
   - github
   - "category/開發工具"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "Understand-Anything"
   - "Lum1104/Understand-Anything"
-  - "將任何代碼庫轉換為可互動的知識圖譜，讓你可以探索、搜尋並提問。"
+  - "將任何代碼庫轉換為可互動的知識圖譜，讓你能夠探索、搜尋和提問。"
 ---
 
 # Understand-Anything
 
-**4.2k** stars · **604** stars/天 · 建立 7 天前 · TypeScript · MIT
+**5.5k** stars · **689** stars/天 · 建立 8 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Lum1104--Understand-Anything");
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `claude-code` `claude-skills` `codex` `codex-skills` `knowledge-graph` `understandcode`
 
 > [!summary] 一句話摘要
-> 將任何代碼庫轉換為可互動的知識圖譜，讓你可以探索、搜尋並提問。
+> 將任何代碼庫轉換為可互動的知識圖譜，讓你能夠探索、搜尋和提問。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (604 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Low
-> **適合** 需要快速理解大型代碼庫的開發團隊成員和產品經理。
-> **一句話重點** 這個專案透過結合 LLM 和靜態分析，讓代碼理解變得前所未有的簡單和直觀。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (689 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
+> **適合** 需要快速理解大型代碼庫的開發者和產品經理。
+> **一句話重點** 這個工具不僅是代碼理解的利器，更是提升團隊協作效率的關鍵。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Lum1104--Understand-Anything");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "代碼分析" && p.file.name !== "Lum1104--Understand-Anything" && p.status !== "archived")
+>     .where(p => p.subcategory === "知識圖譜" && p.file.name !== "Lum1104--Understand-Anything" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,32 +103,33 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 代碼分析 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 知識圖譜 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** low
-> **結論** 花 3 小時學習，2 小時整合，得到快速理解代碼庫的能力，值得投資。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，3 小時整合，得到快速理解代碼的工具，值得嘗試。
 
 > [!abstract] 核心創新
-> 結合 LLM 智能與靜態分析，生成可互動的代碼知識圖譜。
+> 結合 LLM 智能和靜態分析，提供可視化的代碼理解工具。
 
 ## 專案簡介
 
-Understand Anything 是一個將代碼庫轉換為可互動知識圖譜的工具，透過多代理管道分析專案，提取每個文件、函數、類別及其依賴關係，並生成可視化的儀表板。使用者只需執行 `/understand` 指令，系統便會自動建立一個 `knowledge-graph.json` 文件，並透過 `/understand-dashboard` 命令啟動可視化界面，讓使用者可以點擊任意節點查看其代碼及關係，並獲得簡單易懂的解釋。這樣的設計使得開發者在面對龐大的代碼庫時不再感到迷失，特別適合新手開發者和產品經理。技術上，這個專案使用 TypeScript 和 React，並依賴於一系列專門的 AI 代理來進行靜態分析和圖譜生成，這樣的架構使得分析過程高效且可擴展。與其他類似工具相比，Understand Anything 提供了更為直觀的圖形化界面和自然語言解釋，這對於非技術人員來說尤為友好。
+Understand Anything 是一個 Claude Code 插件，透過多代理管道分析你的代碼專案，構建每個文件、函數、類別和依賴的知識圖譜，並提供可視化的互動儀表板。這個工具的核心賣點在於結合了 LLM 智能和靜態分析，讓開發者能夠以簡單的英語理解複雜的代碼結構。使用者只需執行 `/understand` 指令，便能自動生成知識圖譜，並透過 `/understand-dashboard` 開啟可視化界面，輕鬆探索代碼的各個部分。這對於新進開發者、產品經理及設計師來說，都是一個極大的幫助，因為他們可以不必深入閱讀代碼就能理解系統運作。
 
-對比 Codex 和其他靜態分析工具，Understand Anything 的優勢在於其多代理架構和即時的互動性。使用者在實際操作中可能會遇到大型知識圖譜導致儀表板無法使用的問題，這是目前社群關注的熱門議題之一。這個專案目前處於活躍開發階段，未來可能會增加更多自定義功能和擴展性。對於需要快速理解和探索代碼庫的團隊，這是一個值得考慮的工具。
+技術上，這個專案使用 TypeScript 和 React，並且支持多平台安裝，讓使用者可以在不同的 AI 編碼平台上運行。與其他工具相比，如 AlpinDale/parsync 和 FreedomIntelligence/OpenClaw-Medical-Skills，Understand Anything 提供了更為直觀的可視化和互動性，特別適合需要快速上手大型代碼庫的團隊。儘管目前有一些已知的問題，例如大型知識圖譜可能導致儀表板變得無法使用，但這個專案的活躍開發和社群支持顯示出其潛力。整體來看，這是一個值得關注的工具，特別是對於需要快速理解和導航大型代碼庫的開發者。
 
 **技術棧**：`TypeScript` · `React 18` · `Vite` · `TailwindCSS v4`
 
 ## 重點功能
 
-- 互動式知識圖譜 — 將文件、函數、類別及其關係可視化，使用者可點擊任意節點查看詳細資訊。
-- 自然語言摘要 — 每個節點都有 LLM 生成的簡單解釋，讓技術和非技術人員都能理解。
-- 自動導覽 — 根據依賴關係自動生成的導覽，幫助使用者按正確順序學習代碼庫。
-- 模糊和語義搜尋 — 支持根據名稱或意義搜尋，能快速找到相關代碼片段。
-- 影響分析 — 在提交之前查看變更影響的部分，了解代碼的波及效應。
+- 互動知識圖譜 — 可視化所有文件、函數和類別的關係，並提供點擊查看代碼的功能。
+- 簡單英語摘要 — 每個節點都有 LLM 生成的解釋，讓非技術人員也能理解。
+- 自動導覽 — 生成的導覽幫助使用者按依賴順序學習代碼架構。
+- 模糊和語義搜尋 — 允許使用者根據名稱或意義搜尋代碼，提升查找效率。
+- 影響分析 — 在提交之前查看代碼變更對系統的影響，幫助理解變更的範圍。
+- 多平台支持 — 支援 Claude Code、Codex、OpenCode 等多個平台的安裝和使用。
 
 ## 快速開始
 
@@ -149,63 +150,63 @@ Understand Anything 是一個將代碼庫轉換為可互動知識圖譜的工具
 ## 程式碼範例
 
 ```ts
-{
-  "前置條件": "已安裝插件並分析代碼庫",
-  "指令": "/understand-chat How does the payment flow work?",
-  "預期輸出": "獲得關於支付流程的清晰解釋，基於實際代碼的上下文。"
-}
+[
+  "# 前置條件\n# 需要在支持的 AI 編碼平台上安裝插件。\n/plugin marketplace add Lum1104/Understand-Anything\n/plugin install understand-anything\n\n# 預期輸出\n# 插件成功安裝並可用於分析代碼庫。"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 7 天內累積 4225 stars（604/天），forks 346（8.2%），顯示出強勁的增長潛力。作者 Lum1104 在開源社群中活躍，過去參與過多個相關專案，這次專案解決了代碼理解的痛點，特別是在大型代碼庫中，傳統的文檔往往過時且難以維護。這個工具的推出正好填補了市場上對於可視化代碼理解工具的需求，並且其多平台支持使得使用者能夠在不同的開發環境中輕鬆使用。社群的反饋也顯示出對於這個工具的需求，特別是在大型團隊中，這樣的工具能顯著提高新成員的上手速度。
+> 建立 8 天內累積 5509 stars（689/天），forks 427（7.8%），這顯示出強大的增長潛力。這個專案由 Lum1104 等多位貢獻者共同開發，解決了開發者在面對龐大代碼庫時的理解困難，特別是對於新手來說，能夠快速上手是非常重要的。社群的反饋也顯示出對於知識圖譜的需求，尤其是在代碼複雜性不斷增加的情況下。這個工具的出現正好契合了開發者對於更高效學習和理解代碼的需求，並且在多平台的支持下，擴大了其適用範圍。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速理解大型代碼庫的開發團隊成員和產品經理。
+**目標受眾**：需要快速理解大型代碼庫的開發者和產品經理。
 
 > [!example] 使用場景
-> - 新進開發者用它來快速了解大型代碼庫的架構，因為它提供了可視化的導覽和簡單的解釋，讓他們能在短時間內掌握關鍵概念。
-> - 產品經理用它來理解系統的運作方式，因為可以直接詢問代碼相關問題，並獲得基於實際代碼的清晰回答，避免了閱讀繁瑣文檔的麻煩。
-> - AI 開發者用它來為 AI 工具提供深度上下文，因為可以利用其分析結果來進行代碼審查和模組深入分析，提升開發效率。
+> - 新進開發者用它來快速理解大型代碼庫的架構，因為它提供了可視化的知識圖譜和簡單的解釋，讓他們能夠在短時間內掌握關鍵概念。
+> - 產品經理用它來了解系統的運作方式，因為他們可以直接詢問代碼中的功能，而不需要深入閱讀代碼，節省了大量時間。
+> - AI 開發者用它來為 AI 工具提供深度上下文，因為它能夠自動生成導覽和解釋，讓 AI 更加智能化地參與代碼審查和修改。
 
 ## 架構分析
 
-Understand Anything 採用多代理架構，通過五個專門的代理來進行代碼分析和圖譜生成。這樣的設計使得每個代理可以專注於特定任務，如文件掃描、文件分析和架構分析，從而提高了整體效率和準確性。代理之間的並行處理能力允許同時分析多個文件，這對於大型代碼庫的處理尤為重要。選擇這種架構的代價在於需要更複雜的協調和管理，但最終能夠提供更快速和準確的結果。擴展性方面，這種設計能夠輕鬆添加新的分析代理或功能，滿足不斷變化的需求。
+Understand Anything 採用多代理架構，透過五個專門的代理來分析代碼庫。這種設計使得文件分析可以並行進行，提升了效率。每個代理負責不同的任務，例如文件掃描、函數提取和架構分析，最終生成一個完整的知識圖譜。
+
+這種架構的優勢在於能夠快速適應代碼變更，僅重新分析變更的文件，降低了資源消耗。儘管如此，這也意味著在處理非常大的代碼庫時，可能會遇到性能瓶頸，特別是在圖譜變得過於龐大時。整體來看，這種設計使得工具能夠靈活應對不同規模的代碼庫，但在用戶體驗上仍需進一步優化。
 
 ## 技術深入分析
 
-Understand Anything 的核心技術機制是其多代理架構，這使得代碼分析過程能夠高效且準確。每個代理專注於特定任務，例如 `project-scanner` 負責發現文件和檢測語言，而 `file-analyzer` 則提取函數和類別，生成圖譜節點。這種設計不僅提高了處理速度，還能支持增量更新，僅重新分析變更的文件。效能方面，該工具能夠處理大型代碼庫，但在面對極大規模的知識圖譜時可能會出現性能瓶頸。選擇 TypeScript 和 React 作為技術棧的原因在於其強大的生態系統和良好的開發體驗，然而這也帶來了一定的學習曲線。技術風險方面，依賴於外部 API 進行靜態分析可能會導致不穩定性，特別是在 API 更新時。整合方面，該工具與主流的開發框架和 CI/CD 流程相容性良好，但在特定環境中可能需要額外的配置。
+Understand Anything 的核心技術機制在於其多代理架構，這使得代碼分析能夠高效且靈活地進行。每個代理專注於特定任務，例如 `project-scanner` 負責發現文件和檢測語言，`file-analyzer` 則提取函數和類別，這樣的設計不僅提升了分析速度，也確保了結果的準確性。這個工具能夠處理大型代碼庫，並且支持增量更新，這意味著只有改變的文件會被重新分析，這樣可以節省時間和資源。選擇 TypeScript 和 React 作為技術棧，讓開發者能夠快速上手並進行擴展，這對於持續的開發和社群貢獻至關重要。然而，這也帶來了依賴管理的挑戰，特別是在處理多個版本的依賴時。技術風險方面，隨著代碼庫的擴大，可能會出現性能瓶頸，特別是在圖譜變得過於龐大時，這需要進一步的優化。整合方面，這個工具與主流的開發框架和 CI/CD 流程的兼容性良好，能夠輕鬆融入現有的開發環境。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含安裝和使用範例，安裝過程順暢，沒有明顯的坑。提供了良好的入門指南，讓新手能夠快速上手。文件目前僅有英文版本，可能對非英語使用者造成一定困難。
+> README 文件提供了清晰的安裝步驟和使用指令，讓新手能夠快速上手。安裝過程相對順暢，沒有明顯的坑。文件中有多語言支持，對於不同背景的開發者都很友好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供直觀的可視化界面，幫助使用者快速理解代碼結構。
-> - 自然語言解釋使得非技術人員也能理解代碼功能。
-> - 支持多平台，方便在不同開發環境中使用。
+> - 提供直觀的可視化界面，幫助使用者理解代碼結構。
+> - 結合 LLM 智能，生成易於理解的代碼解釋。
+> - 支持多平台，方便不同環境的開發者使用。
 
 > [!danger] 缺點
-> - 大型代碼庫可能導致性能問題，特別是在儀表板上。
-> - 目前缺乏自動化測試，可能影響穩定性。
-> - 對於某些代碼結構的支持可能不夠全面。
+> - 大型知識圖譜可能導致性能問題。
+> - 對於某些代碼結構的解釋準確性有待提高。
+> - 目前的社群支持和文檔仍在擴展中。
 
 > [!warning] 注意事項
-> - 大型知識圖譜可能導致儀表板無法使用。
-> - 目前缺乏 CI 管道，無法自動測試每個 PR。
-> - 對於某些代碼結構，可能無法完全捕捉所有依賴關係。
+> - 大型知識圖譜可能導致儀表板變得無法使用。
+> - 目前僅支持特定的編碼平台，對於其他平台的支持尚未完善。
+> - 對於某些複雜的代碼結構，可能無法生成準確的解釋。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於代碼同步和版本控制，而 Understand Anything 提供可視化和互動式的代碼理解功能。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 主要用於代碼安全分析，而 Understand Anything 更加注重代碼結構和關係的可視化。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | AlpinDale/parsync 提供了文件同步和版本控制功能，而 Understand Anything 專注於代碼理解和可視化，適合不同的使用場景。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | FreedomIntelligence/OpenClaw-Medical-Skills 主要針對醫療領域的技能，而 Understand Anything 則是通用的代碼理解工具，適用於各種代碼庫。 |
 
 ## 替代方案決策
 
@@ -213,16 +214,16 @@ Understand Anything 的核心技術機制是其多代理架構，這使得代碼
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 專注於 WebSocket 代理，而 Understand Anything 專注於代碼分析和可視化。 | 如果你的需求是建立 WebSocket 代理而非代碼理解，則應選擇 Flowseal。 | low，因為兩者的功能範圍不同，無需直接遷移。 |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的技能，而 Understand Anything 是通用代碼分析工具。 | 如果你的專案專注於醫療應用，則選擇 OpenClaw 會更合適。 | medium，因為需要重新適應不同的技能集和功能。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | AlpinDale/parsync 專注於文件同步和版本控制，而 Understand Anything 則專注於代碼理解和可視化，適合不同的使用場景。 | 如果你的團隊需要強調版本控制和文件同步，AlpinDale/parsync 會是更好的選擇。 | medium，因為需要重新設計工作流以適應不同的工具特性。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | FreedomIntelligence/OpenClaw-Medical-Skills 主要針對醫療領域的技能，而 Understand Anything 則是通用的代碼理解工具。 | 如果你的專案專注於醫療領域的代碼，FreedomIntelligence/OpenClaw-Medical-Skills 會提供更針對性的功能。 | low，因為兩者的基本功能有相似之處，轉換相對容易。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **Understand-Anything** | **tg-ws-proxy** | **OpenClaw-Medical-Skills** |
+> | 維度 | **Understand-Anything** | **parsync** | **OpenClaw-Medical-Skills** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 WebSocket 代理，而 Understand Anything 專注於代碼分析和可視化。 | 專注於醫療領域的技能，而 Understand Anything 是通用代碼分析工具。 |
-> | 遷移成本 | - | low，因為兩者的功能範圍不同，無需直接遷移。 | medium，因為需要重新適應不同的技能集和功能。 |
-> | 適用場景 | 主要場景 | 如果你的需求是建立 WebSocket 代理而非代碼理解，則 | 如果你的專案專注於醫療應用，則選擇 OpenClaw 會更合 |
+> | 技術路線 | 本專案 | AlpinDale/parsync 專注於文件同步和版本控制，而 Understand Anything 則專注於代碼理解和可視化，適合不同的使用場景。 | FreedomIntelligence/OpenClaw-Medical-Skills 主要針對醫療領域的技能，而 Understand Anything 則是通用的代碼理解工具。 |
+> | 遷移成本 | - | medium，因為需要重新設計工作流以適應不同的工具特性。 | low，因為兩者的基本功能有相似之處，轉換相對容易。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要強調版本控制和文件同步，AlpinDale/ | 如果你的專案專注於醫療領域的代碼，FreedomIntell |
 
 ## 成熟度評估
 
@@ -233,44 +234,44 @@ Understand Anything 的核心技術機制是其多代理架構，這使得代碼
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合小型團隊試用，但不建議在生產環境的核心路徑上使用。
+> 適合個人試用和小型團隊，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 大型知識圖譜可能導致儀表板無法使用
-  - 解法：考慮將圖譜分割成多個小型圖譜
-- [MEDIUM] 缺乏 CI 管道，可能影響穩定性
-  - 解法：手動測試每個 PR
-- [MEDIUM] 對於某些代碼結構的支持可能不夠全面
-  - 解法：手動檢查未捕捉的依賴關係
+- **[HIGH]** 大型知識圖譜可能導致儀表板變得無法使用
+  - 解法：分批分析代碼庫，避免一次性加載過多數據
+- [MEDIUM] 對於某些代碼結構的解釋準確性有待提高
+  - 解法：手動檢查關鍵代碼段的解釋
+- [low] 安裝過程中可能遇到平台兼容性問題
+  - 解法：查閱官方文檔以獲取最新的安裝指南
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠快速幫助新成員理解代碼結構，減少上手時間。 |
-| 大型企業的代碼庫管理 | 適合 | 雖然性能可能會受到影響，但仍能提供有價值的可視化和解釋。 |
-| 需要快速迭代的開發團隊 | 普通 | 在快速變更的環境中，可能需要更頻繁的更新和測試。 |
-| 對代碼理解要求不高的產品經理 | 非常適合 | 能夠輕鬆理解系統運作，而不需要深入代碼。 |
+| 新進開發者加入一個大型專案 | 非常適合 | 能夠快速理解代碼結構，減少學習曲線。 |
+| 產品經理需要了解系統功能 | 適合 | 提供簡單的代碼解釋，無需深入閱讀代碼。 |
+| 小型團隊進行代碼審查 | 普通 | 雖然有助於理解，但可能不夠全面。 |
+| 大型企業的核心系統開發 | 不適合 | 目前仍處於 beta 階段，穩定性不足。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~3 小時 |
-| 整合時間 | ~2 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，2 小時整合，得到快速理解代碼庫的能力，值得投資。
+> 花 5 小時學習，3 小時整合，得到快速理解代碼的工具，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，僅訪問代碼庫和相關文件，不會存取敏感資料。依賴鏈的信任程度高，無已知的供應鏈風險。
+> 低風險：該工具不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
 
 ## 健康度儀表板
 
@@ -335,9 +336,9 @@ Understand Anything 的核心技術機制是其多代理架構，這使得代碼
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 346 |
-| Open Issues | 7 |
-| Issue 解決率 | 36% (4 closed) |
+| Forks | 427 |
+| Open Issues | 13 |
+| Issue 解決率 | 28% (5 closed) |
 | 最後推送 | 2026-03-23 |
 | 建立日期 | 2026-03-15 |
 | 官方網站 | [Link](https://lum.is-a.dev/Understand-Anything/) |
@@ -360,30 +361,29 @@ Understand Anything 的核心技術機制是其多代理架構，這使得代碼
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Lum1104](https://github.com/Lum1104) | 100 |
+> | [@Lum1104](https://github.com/Lum1104) | 106 |
 > | [@Jamie-HM](https://github.com/Jamie-HM) | 2 |
+> | [@eltociear](https://github.com/eltociear) | 1 |
 > | [@KyleWMiller](https://github.com/KyleWMiller) | 1 |
 > | [@longvv](https://github.com/longvv) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有多個 PR 被合併。
+**社群活躍度**：社群活躍，定期更新和回應問題。
 **連結**：[文件](https://lum.is-a.dev/Understand-Anything/)
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-03-21 ~ 2026-03-23）
-> **活躍天數** 3 天 · **最新 commit** Merge pull request #17 from Lum1104/fix/opencode-plugin-discovery
+> **活躍天數** 3 天 · **最新 commit** Merge pull request #13 from Lum1104/feat/language-agnostic-support
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#14](https://github.com/Lum1104/Understand-Anything/issues/14) | Dashboard becomes unusable with large knowledge graphs `bug` `help wanted` | 2 | 5 |
+> | [#14](https://github.com/Lum1104/Understand-Anything/issues/14) | Dashboard becomes unusable with large knowledge graphs `bug` `help wanted` | 4 | 5 |
 > | [#7](https://github.com/Lum1104/Understand-Anything/issues/7) | Feature Request: Runtime theme customization `enhancement` | 2 | 1 |
-> | [#21](https://github.com/Lum1104/Understand-Anything/issues/21) | No CI pipeline — a plugin used to analyze codebases should i `enhancement` | 1 | 0 |
-> | [#20](https://github.com/Lum1104/Understand-Anything/issues/20) | knowledge-graph.json is stored in .understand-anything/ whic `enhancement` | 1 | 1 |
 
 ## README 摘錄
 
@@ -392,7 +392,7 @@ Understand Anything 的核心技術機制是其多代理架構，這使得代碼
 > 
 >   Turn any codebase into an interactive knowledge graph you can explore, search, and ask questions about.
 > 
->   English | 中文
+>   English | 中文 | 日本語
 > 
 >   
 >   
@@ -502,11 +502,9 @@ Understand Anything 的核心技術機制是其多代理架構，這使得代碼
 > 
 > ### OpenCode
 > 
-> Add to your `opencode.json`:
-> ```json
-> {
->   "plugin": ["understand-anything@git+https://github.com/Lum1104/Understand-Anything.git"]
-> }
+> Tell OpenCode:
+> ```
+> Fetch and follow instructions from https://raw.githubusercontent.com/Lum1104/Understand-Anything/refs/heads/main/.opencode/INSTALL.md
 > ```
 > 
 > ### OpenClaw
@@ -533,7 +531,7 @@ Understand Anything 的核心技術機制是其多代理架構，這使得代碼
 > |----------|--------|----------------|
 > | Claude Code | ✅ Native | Plugin marketplace |
 > | Codex | ✅ Supported | AI-driven install |
-> | OpenCode | ✅ Supported | Plugin config |
+> | OpenCode | ✅ Supported | AI-driven install |
 > | OpenClaw | ✅ Supported | AI-driven install |
 > | Cursor | ✅ Supported | Auto-discovery |
 > | Antigravity | ✅ Supported | AI-driven install |
@@ -661,19 +659,19 @@ Understand Anything 的核心技術機制是其多代理架構，這使得代碼
 
 ## 延伸閱讀
 
-相關概念：[[靜態分析]] · [[知識圖譜]] · [[自然語言處理]]
+相關概念：[[知識圖譜]] · [[靜態分析]] · [[多代理系統]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
 
 [GitHub](https://github.com/Lum1104/Understand-Anything) · [官方網站](https://lum.is-a.dev/Understand-Anything/)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：代碼分析）
+> [!note]- 直接競品（同子分類：知識圖譜）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "代碼分析" AND file.name != "Lum1104--Understand-Anything"
+> WHERE subcategory = "知識圖譜" AND file.name != "Lum1104--Understand-Anything"
 > SORT stars DESC
 > ```
 
@@ -705,7 +703,7 @@ Understand Anything 的核心技術機制是其多代理架構，這使得代碼
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["靜態分析","知識圖譜","自然語言處理"];
+> const concepts = ["知識圖譜","靜態分析","多代理系統"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Lum1104--Understand-Anything" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
