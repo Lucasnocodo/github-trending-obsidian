@@ -7,9 +7,9 @@ language: N/A
 license: MIT
 description: "AI agent skill to scan iOS/macOS projects for App Store rejection patterns before submission"
 homepage: ""
-stars: 838
-stars_per_day: 279
-forks: 44
+stars: 897
+stars_per_day: 224
+forks: 50
 open_issues: 0
 created: 2026-03-19
 pushed_at: 2026-03-20
@@ -30,8 +30,8 @@ use_case: "在提交前掃描 iOS/macOS 專案，檢查可能導致 App Store �
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-26"
+appearances: 2
+next_review: "2026-03-27"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-23"
-star_history: "2026-03-23:838"
+star_history: "2026-03-23:838,2026-03-24:897"
 tags:
   - github
   - "category/開發工具"
@@ -771,4 +771,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-24|2026-03-24]] — 再次上榜，897 stars
 - [[2026-03-23|2026-03-23]] — 首次收錄，838 stars

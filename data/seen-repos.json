@@ -512,17 +512,17 @@
   },
   "HKUDS/ClawTeam": {
     "first_seen": "2026-03-20",
-    "last_seen": "2026-03-23",
-    "times_seen": 4,
+    "last_seen": "2026-03-24",
+    "times_seen": 5,
     "stars_first": 1687,
-    "stars_last": 2851
+    "stars_last": 3171
   },
   "VoltAgent/awesome-codex-subagents": {
     "first_seen": "2026-03-20",
-    "last_seen": "2026-03-23",
-    "times_seen": 4,
+    "last_seen": "2026-03-24",
+    "times_seen": 5,
     "stars_first": 1509,
-    "stars_last": 2071
+    "stars_last": 2275
   },
   "zerobootdev/zeroboot": {
     "first_seen": "2026-03-21",
@@ -561,51 +561,58 @@
   },
   "MiniMax-AI/skills": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-23",
-    "times_seen": 1,
+    "last_seen": "2026-03-24",
+    "times_seen": 2,
     "stars_first": 1841,
-    "stars_last": 1841
+    "stars_last": 3324
   },
   "danveloper/flash-moe": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-23",
-    "times_seen": 1,
+    "last_seen": "2026-03-24",
+    "times_seen": 2,
     "stars_first": 1220,
-    "stars_last": 1220
+    "stars_last": 1672
   },
   "math-inc/OpenGauss": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-23",
-    "times_seen": 1,
+    "last_seen": "2026-03-24",
+    "times_seen": 2,
     "stars_first": 1021,
-    "stars_last": 1021
+    "stars_last": 1062
   },
   "lxf746/any-auto-register": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-23",
-    "times_seen": 1,
+    "last_seen": "2026-03-24",
+    "times_seen": 2,
     "stars_first": 982,
-    "stars_last": 982
+    "stars_last": 1030
   },
   "dontbesilent2025/dbskill": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-23",
-    "times_seen": 1,
+    "last_seen": "2026-03-24",
+    "times_seen": 2,
     "stars_first": 909,
-    "stars_last": 909
+    "stars_last": 1255
   },
   "mattprusak/autoresearch-genealogy": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-23",
-    "times_seen": 1,
+    "last_seen": "2026-03-24",
+    "times_seen": 2,
     "stars_first": 878,
-    "stars_last": 878
+    "stars_last": 905
   },
   "truongduy2611/app-store-preflight-skills": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-23",
-    "times_seen": 1,
+    "last_seen": "2026-03-24",
+    "times_seen": 2,
     "stars_first": 838,
-    "stars_last": 838
+    "stars_last": 897
+  },
+  "louislva/claude-peers-mcp": {
+    "first_seen": "2026-03-24",
+    "last_seen": "2026-03-24",
+    "times_seen": 1,
+    "stars_first": 948,
+    "stars_last": 948
   }
 }

@@ -7,12 +7,12 @@ language: N/A
 license: NOASSERTION
 description: "dontbesilent 的商业诊断 Skills for Claude Code"
 homepage: ""
-stars: 924
-stars_per_day: 462
-forks: 169
-open_issues: 2
+stars: 1255
+stars_per_day: 418
+forks: 213
+open_issues: 3
 created: 2026-03-20
-pushed_at: 2026-03-22
+pushed_at: 2026-03-23
 first_seen: 2026-03-23
 week: "2026-W13"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "提供商业诊断工具与知识库，帮助用户优化决策与内
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-26"
+appearances: 2
+next_review: "2026-03-27"
 contributor_count: 0
 engagement: "medium"
 issue_close_rate: 33
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-23"
-star_history: "2026-03-23:909,2026-03-23:924"
+star_history: "2026-03-23:909,2026-03-23:924,2026-03-24:1255"
 tags:
   - github
   - "category/開發工具"
@@ -556,7 +556,7 @@ dbskill 最常與 Claude Code 搭配使用，作為商業診斷的輔助工具�
 
 相關概念：[[商業模式]] · [[內容創作]] · [[知識管理]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[Infatoshi--OpenSquirrel|Infatoshi/OpenSquirrel]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
 
 [GitHub](https://github.com/dontbesilent2025/dbskill)
 
@@ -852,4 +852,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-24|2026-03-24]] — 再次上榜，1.3k stars
 - [[2026-03-23|2026-03-23]] — 首次收錄，909 stars

@@ -7,10 +7,10 @@ language: Objective-C
 license: N/A
 description: "Running a big model on a small laptop"
 homepage: ""
-stars: 1233
-stars_per_day: 308
-forks: 116
-open_issues: 10
+stars: 1672
+stars_per_day: 334
+forks: 151
+open_issues: 12
 created: 2026-03-18
 pushed_at: 2026-03-19
 first_seen: 2026-03-23
@@ -30,8 +30,8 @@ use_case: "在小型筆記型電腦上運行 397 億參數的 Mixture-of-Experts
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-26"
+appearances: 2
+next_review: "2026-03-27"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 9
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-23"
-star_history: "2026-03-23:1220,2026-03-23:1233"
+star_history: "2026-03-23:1220,2026-03-23:1233,2026-03-24:1672"
 tags:
   - github
   - "category/ai_ml"
@@ -825,4 +825,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-24|2026-03-24]] — 再次上榜，1.7k stars
 - [[2026-03-23|2026-03-23]] — 首次收錄，1.2k stars
