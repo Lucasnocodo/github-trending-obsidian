@@ -7,10 +7,10 @@ language: Python
 license: N/A
 description: ""
 homepage: ""
-stars: 1030
-stars_per_day: 206
-forks: 510
-open_issues: 14
+stars: 1075
+stars_per_day: 179
+forks: 528
+open_issues: 15
 created: 2026-03-18
 pushed_at: 2026-03-20
 first_seen: 2026-03-23
@@ -30,8 +30,8 @@ use_case: "提供多平台帳號自動註冊與管理的系統，支持插件擴
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-03-27"
+appearances: 3
+next_review: "2026-04-01"
 contributor_count: 0
 engagement: "high"
 issue_close_rate: 19
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-23"
-star_history: "2026-03-23:982,2026-03-24:1030"
+star_history: "2026-03-23:982,2026-03-24:1030,2026-03-25:1075"
 tags:
   - github
   - "category/開發工具"
@@ -894,5 +894,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-25|2026-03-25]] — 再次上榜，1.1k stars
 - [[2026-03-24|2026-03-24]] — 再次上榜，1.0k stars
 - [[2026-03-23|2026-03-23]] — 首次收錄，982 stars

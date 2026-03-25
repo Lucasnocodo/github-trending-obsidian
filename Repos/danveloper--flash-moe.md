@@ -7,9 +7,9 @@ language: Objective-C
 license: N/A
 description: "Running a big model on a small laptop"
 homepage: ""
-stars: 1678
-stars_per_day: 336
-forks: 152
+stars: 1864
+stars_per_day: 311
+forks: 175
 open_issues: 12
 created: 2026-03-18
 pushed_at: 2026-03-19
@@ -30,8 +30,8 @@ use_case: "在小型筆記型電腦上運行 397 億參數的模型。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-03-27"
+appearances: 3
+next_review: "2026-03-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 8
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-23"
-star_history: "2026-03-23:1220,2026-03-23:1233,2026-03-24:1672,2026-03-24:1678"
+star_history: "2026-03-23:1220,2026-03-23:1233,2026-03-24:1672,2026-03-24:1678,2026-03-25:1864"
 tags:
   - github
   - "category/ai_ml"
@@ -818,5 +818,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-25|2026-03-25]] — 再次上榜，1.9k stars
 - [[2026-03-24|2026-03-24]] — 再次上榜，1.7k stars
 - [[2026-03-23|2026-03-23]] — 首次收錄，1.2k stars

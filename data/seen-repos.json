@@ -568,51 +568,72 @@
   },
   "danveloper/flash-moe": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-24",
-    "times_seen": 2,
+    "last_seen": "2026-03-25",
+    "times_seen": 3,
     "stars_first": 1220,
-    "stars_last": 1672
+    "stars_last": 1864
   },
   "math-inc/OpenGauss": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-24",
-    "times_seen": 2,
+    "last_seen": "2026-03-25",
+    "times_seen": 3,
     "stars_first": 1021,
-    "stars_last": 1062
+    "stars_last": 1076
   },
   "lxf746/any-auto-register": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-24",
-    "times_seen": 2,
+    "last_seen": "2026-03-25",
+    "times_seen": 3,
     "stars_first": 982,
-    "stars_last": 1030
+    "stars_last": 1075
   },
   "dontbesilent2025/dbskill": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-24",
-    "times_seen": 2,
+    "last_seen": "2026-03-25",
+    "times_seen": 3,
     "stars_first": 909,
-    "stars_last": 1255
+    "stars_last": 1421
   },
   "mattprusak/autoresearch-genealogy": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-24",
-    "times_seen": 2,
+    "last_seen": "2026-03-25",
+    "times_seen": 3,
     "stars_first": 878,
-    "stars_last": 905
+    "stars_last": 915
   },
   "truongduy2611/app-store-preflight-skills": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-24",
-    "times_seen": 2,
+    "last_seen": "2026-03-25",
+    "times_seen": 3,
     "stars_first": 838,
-    "stars_last": 897
+    "stars_last": 923
   },
   "louislva/claude-peers-mcp": {
     "first_seen": "2026-03-24",
-    "last_seen": "2026-03-24",
-    "times_seen": 1,
+    "last_seen": "2026-03-25",
+    "times_seen": 2,
     "stars_first": 948,
-    "stars_last": 948
+    "stars_last": 1119
+  },
+  "zarazhangrui/codebase-to-course": {
+    "first_seen": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "times_seen": 1,
+    "stars_first": 1094,
+    "stars_last": 1094
+  },
+  "slavingia/skills": {
+    "first_seen": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "times_seen": 1,
+    "stars_first": 1076,
+    "stars_last": 1076
+  },
+  "eze-is/web-access": {
+    "first_seen": "2026-03-25",
+    "last_seen": "2026-03-25",
+    "times_seen": 1,
+    "stars_first": 1010,
+    "stars_last": 1010
   }
 }

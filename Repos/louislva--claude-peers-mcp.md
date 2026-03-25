@@ -7,10 +7,10 @@ language: TypeScript
 license: N/A
 description: "Allow all your Claude Codes to message each other ad-hoc!"
 homepage: ""
-stars: 948
-stars_per_day: 474
-forks: 86
-open_issues: 8
+stars: 1119
+stars_per_day: 373
+forks: 103
+open_issues: 11
 created: 2026-03-21
 pushed_at: 2026-03-21
 first_seen: 2026-03-24
@@ -30,8 +30,8 @@ use_case: "讓所有的 Claude 代碼實例可以即時互相通訊。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-27"
+appearances: 2
+next_review: "2026-03-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-24"
-star_history: "2026-03-24:948"
+star_history: "2026-03-24:948,2026-03-25:1119"
 tags:
   - github
   - "category/開發工具"
@@ -754,4 +754,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-25|2026-03-25]] — 再次上榜，1.1k stars
 - [[2026-03-24|2026-03-24]] — 首次收錄，948 stars

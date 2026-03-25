@@ -7,9 +7,9 @@ language: N/A
 license: MIT
 description: "Structured prompts, vault templates, and archive guides for AI-assisted genealogy research. Built for Claude Code."
 homepage: ""
-stars: 905
-stars_per_day: 181
-forks: 76
+stars: 915
+stars_per_day: 153
+forks: 78
 open_issues: 4
 created: 2026-03-18
 pushed_at: 2026-03-18
@@ -30,8 +30,8 @@ use_case: "提供結構化提示、資料庫模板和檔案指南，以協助 AI
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-03-31"
+appearances: 3
+next_review: "2026-04-01"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 20
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-23"
-star_history: "2026-03-23:878,2026-03-24:905"
+star_history: "2026-03-23:878,2026-03-24:905,2026-03-25:915"
 tags:
   - github
   - "category/其他"
@@ -757,5 +757,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-25|2026-03-25]] — 再次上榜，915 stars
 - [[2026-03-24|2026-03-24]] — 再次上榜，905 stars
 - [[2026-03-23|2026-03-23]] — 首次收錄，878 stars
