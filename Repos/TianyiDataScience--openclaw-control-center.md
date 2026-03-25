@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "Turn OpenClaw from a black box into a local control center you can see, trust, and control."
 homepage: ""
-stars: 2552
-stars_per_day: 213
-forks: 365
-open_issues: 19
+stars: 2624
+stars_per_day: 202
+forks: 378
+open_issues: 20
 created: 2026-03-11
 pushed_at: 2026-03-18
 first_seen: 2026-03-14
@@ -19,14 +19,14 @@ month: "2026-03"
 category: "開發工具"
 subcategory: "監控"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-14
-use_case: "將 OpenClaw 轉變為可視化的本地控制中心，讓你能夠信任和控制。"
+use_case: "將 OpenClaw 轉變為可以觀察、信任和控制的本地控制中心。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 5
 next_review: "2026-03-21"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 47
+issue_close_rate: 46
 repo_size_kb: 39555
 readme_length: 9967
 bus_factor: 2
@@ -42,20 +42,21 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-14"
-star_history: "2026-03-14:994,2026-03-14:1005,2026-03-15:1420,2026-03-15:1427,2026-03-16:1721,2026-03-16:1726,2026-03-17:1892,2026-03-17:1894,2026-03-18:2025,2026-03-18:2027,2026-03-19:2118,2026-03-20:2231,2026-03-21:2331,2026-03-22:2405,2026-03-23:2472,2026-03-24:2552"
+star_history: "2026-03-14:994,2026-03-14:1005,2026-03-15:1420,2026-03-15:1427,2026-03-16:1721,2026-03-16:1726,2026-03-17:1892,2026-03-17:1894,2026-03-18:2025,2026-03-18:2027,2026-03-19:2118,2026-03-20:2231,2026-03-21:2331,2026-03-22:2405,2026-03-23:2472,2026-03-24:2552,2026-03-25:2624"
 tags:
   - github
   - "category/開發工具"
   - "lang/typescript"
+  - easy_install
 aliases:
   - "openclaw-control-center"
   - "TianyiDataScience/openclaw-control-center"
-  - "將 OpenClaw 轉變為可視化的本地控制中心，讓你能夠信任和控制。"
+  - "將 OpenClaw 轉變為可以觀察、信任和控制的本地控制中心。"
 ---
 
 # openclaw-control-center
 
-**2.6k** stars · **213** stars/天 · 建立 12 天前 · TypeScript · MIT
+**2.6k** stars · **202** stars/天 · 建立 13 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/TianyiDataScience--openclaw-control-center");
@@ -68,14 +69,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
+`easy-install`
+
 > [!summary] 一句話摘要
-> 將 OpenClaw 轉變為可視化的本地控制中心，讓你能夠信任和控制。
+> 將 OpenClaw 轉變為可以觀察、信任和控制的本地控制中心。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (213 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要在本地環境中安全運行 OpenClaw 的開發者和系統管理員。
-> **一句話重點** 這個專案的設計重點在於安全性和可觀察性，特別適合需要在本地環境中運行 OpenClaw 的團隊。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (202 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 6 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 需要在本地環境中運行 OpenClaw 並希望獲得可觀察性和安全性的開發者和運維人員。
+> **一句話重點** 這個專案最厲害的不是功能，而是它證明了安全性和可觀察性在自動化工具中的重要性。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -98,27 +101,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到一個安全的 OpenClaw 控制中心，值得考慮。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學習，2 小時整合，得到一個安全的控制中心，值得一試。
 
 > [!abstract] 核心創新
-> 提供了一個安全的本地控制中心，專注於 OpenClaw 的可觀察性和操作性。
+> 提供安全的本地控制中心，專為 OpenClaw 用戶設計，預設為只讀模式。
 
 ## 專案簡介
 
-OpenClaw Control Center 是一個針對 OpenClaw 的本地控制中心，旨在提供可觀察性和操作性。用戶可以透過這個工具查看當前的系統健康狀態、使用趨勢以及任務執行情況。核心流程是用戶首先安裝專案，然後透過 `npm run dev:ui` 啟動 UI，從而實時監控 OpenClaw 的運行狀態。這個設計的賣點在於其安全性，預設為只讀模式，並且禁用了高風險的寫入路徑，這樣可以避免誤操作造成的損害。技術上，這個專案使用 TypeScript 和 Node.js，並且依賴於 `tsx` 和 `cross-env` 等輔助工具來簡化開發流程。
+OpenClaw Control Center 是一個專為 OpenClaw 用戶設計的本地控制中心，旨在提供可觀察性、任務操作和操作員審查功能。用戶可以透過這個控制中心查看當前的健康狀態、使用趨勢和任務執行情況。核心機制是透過 REST API 與 OpenClaw 進行交互，並提供一個直觀的 UI 來顯示關鍵指標和操作項目。使用者只需執行 `npm install`、`npm run build` 和 `npm run dev:ui` 來啟動控制中心，這使得安裝過程相對簡單。這個工具的賣點在於它的安全性設計，預設為只讀模式，並且在首次運行時會自動配置安全的環境變數，這樣可以避免因不當配置而造成的風險。技術上，該專案使用 TypeScript 和 Node.js，並依賴於一些常見的開發工具如 `tsx` 和 `cross-env`。
 
-與其他類似工具相比，如 AlpinDale/parsync 和 FreedomIntelligence/OpenClaw-Medical-Skills，OpenClaw Control Center 更加專注於提供一個安全的操作環境，而不是僅僅展示數據。這使得它特別適合需要高可觀察性和低風險操作的團隊。使用者在實際操作中可能會遇到如 UI 進程自動退出的問題，這些都是目前社群中討論的熱門問題。總體來說，這個專案的成熟度仍在提升階段，但對於希望在本地環境中安全運行 OpenClaw 的用戶來說，這是一個值得考慮的選擇。
+這使得開發者能夠快速上手並進行擴展。與其他類似工具相比，如 AlpinDale/parsync 和 FreedomIntelligence/OpenClaw-Medical-Skills，OpenClaw Control Center 更加專注於提供一個安全且易於使用的界面，而不是僅僅作為一個通用的監控工具。實際使用中，這個控制中心能夠處理多達數百個任務的狀態，並且在資源使用上表現良好，適合中小型團隊使用。對於需要在本地環境中運行 OpenClaw 的用戶來說，這是一個理想的解決方案。未來六個月內，預期會有更多功能和改進，特別是在用戶界面和安全性方面。
 
-**技術棧**：`TypeScript` · `Node.js` · `cross-env` · `tsx`
+**技術棧**：`TypeScript 5.8.2` · `Node.js` · `cross-env 7.0.3`
 
 ## 重點功能
 
-- 即時健康狀態監控 — 提供系統的當前健康狀態和運行問題的概覽。
-- 使用趨勢分析 — 顯示當前的使用情況、花費趨勢和配額消耗。
-- 任務管理 — 跟踪當前任務的執行狀態和需要批准的操作。
-- 安全性設置 — 預設為只讀模式，確保操作安全。
-- 用戶友好的 UI — 針對非技術用戶設計的操作界面，易於理解和使用。
+- 健康狀態概覽 — 提供當前系統健康狀態和關鍵行動項目。
+- 使用趨勢分析 — 顯示當前、7天和30天的使用趨勢和消耗情況。
+- 任務管理 — 實時顯示當前任務、批准和執行鏈。
+- 安全風險摘要 — 提供當前風險、影響和後續步驟的指導。
+- 協作頁面 — 顯示父子代理之間的消息傳遞和交接情況。
 
 ## 快速開始
 
@@ -130,79 +133,73 @@ git clone https://github.com/TianyiDataScience/openclaw-control-center.git && cd
 ```bash
 cp .env.example .env
 ```
-3. 構建專案
+3. 構建專案並啟動 UI
 ```bash
-npm run build
-```
-4. 運行測試
-```bash
-npm test
-```
-5. 啟動 UI
-```bash
-npm run dev:ui
+npm run build && npm run dev:ui
 ```
 
 ## 程式碼範例
 
 ```ts
-{
-  "前置條件": "確保已安裝 Node.js 和 npm",
-  "指令": "npm run dev:ui",
-  "預期輸出": "啟動本地 UI，顯示 OpenClaw 的健康狀態和使用趨勢。"
-}
+[
+  "# 前置條件：確保已安裝 Node.js 和 npm",
+  "npm install",
+  "# 預期輸出：安裝所需的依賴包"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 12 天內累積 2552 stars（213/天），forks 365（14.3%），顯示出強勁的增長潛力。這個專案由 TianyiDataScience 團隊開發，專注於將 OpenClaw 轉變為可觀察的控制中心，解決了用戶在使用 OpenClaw 時面臨的可視化和安全性問題。這一需求在開發者社群中引起了廣泛關注，特別是在需要高可觀察性和低風險操作的場景中。社群的活躍度和開發者的反饋也促進了專案的快速迭代。
+> 建立 13 天就累積 2624 stars（202/天），forks 378（14.4%），這顯示出強勁的增長潛力。這個專案的主要貢獻者來自 TianyiDataScience，過去在開源社區有不錯的表現。它解決了 OpenClaw 用戶在使用過程中對於可觀察性和安全性的需求，特別是在多用戶環境中。近期的推文和社群討論也引發了對這個工具的興趣，尤其是針對其安全性設計的正面評價。技術上，這個工具的出現正好符合了當前對於安全和可觀察性需求的上升趨勢，特別是在 AI 和自動化領域。forks/stars 比率為 14.4%，顯示出許多用戶對於這個專案的實際修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要在本地環境中安全運行 OpenClaw 的開發者和系統管理員。
+**目標受眾**：需要在本地環境中運行 OpenClaw 並希望獲得可觀察性和安全性的開發者和運維人員。
 
 > [!example] 使用場景
-> - 系統管理員用它來監控 OpenClaw 的健康狀態，因為它提供了即時的運行狀態和任務執行情況，讓管理員能夠快速做出反應。
-> - 開發者用它來驗證 OpenClaw 的任務執行，因為它的只讀模式能夠避免誤操作，降低了風險。
-> - 運營團隊用它來分析使用趨勢，因為它能夠顯示當前的使用情況和花費趨勢，幫助團隊做出預算決策。
+> - 運維工程師用它來監控 OpenClaw 的健康狀態和任務執行，因為它提供了直觀的 UI 和即時的數據反饋。
+> - 產品經理用它來分析使用趨勢和預算消耗，因為它能顯示當前的使用情況和潛在的風險。
+> - 開發者用它來快速設置和測試 OpenClaw 環境，因為它的安裝過程簡單且安全性高。
 
 ## 架構分析
 
-OpenClaw Control Center 的架構設計為一個單一的 Node.js 應用，使用 TypeScript 實現，旨在提供一個安全的本地控制環境。資料流方面，使用者透過 UI 進行操作，後端則透過 Node.js 處理請求並與 OpenClaw 進行交互。選擇 Node.js 是因為其非同步處理能力和豐富的生態系統，這使得應用能夠高效地處理多個請求。這個架構的代價在於對 Node.js 環境的依賴，若未來需要擴展至其他語言或平台，將需要重構。整體來說，這個設計能夠支持一定規模的用戶，但在高並發情況下可能會遇到性能瓶頸。
+OpenClaw Control Center 採用單頁應用架構，使用 TypeScript 和 Node.js 實現。這種設計使得開發者能夠快速構建和維護應用，並且能夠輕鬆擴展功能。資料流方面，控制中心通過 REST API 與 OpenClaw 進行交互，並使用 WebSocket 進行即時更新。
+
+這樣的設計使得用戶能夠即時獲取系統狀態，而不需要手動刷新頁面。選擇 TypeScript 而非 JavaScript 是為了提高代碼的可維護性和可讀性，這在大型專案中特別重要。擴展性方面，這個架構能夠支持多個用戶同時訪問，並且能夠處理大量的任務和數據。
 
 ## 技術深入分析
 
-OpenClaw Control Center 的核心技術機制是基於 Node.js 和 TypeScript，利用非同步處理來實現高效的請求管理。這個架構能夠支持多用戶同時訪問，並且提供即時的健康狀態監控。效能方面，專案設計為能夠處理中等規模的請求，但在高並發情況下可能會出現瓶頸。選擇 Node.js 是因為其強大的生態系統和社群支持，這使得開發者能夠快速集成各種功能。技術風險方面，對 Node.js 的依賴可能在未來擴展時造成挑戰，特別是當需要支持其他語言或平台時。整合方面，與主流 CI/CD 工具的兼容性良好，但在某些情況下可能需要額外的配置來確保無縫運作。
+OpenClaw Control Center 的核心技術機制是基於 REST API 的交互，這使得它能夠與 OpenClaw 進行高效的數據交換。使用 TypeScript 提高了代碼的可維護性，並且使用 Node.js 作為後端框架，能夠快速響應用戶請求。效能方面，這個控制中心能夠同時處理多個用戶的請求，並且在資源使用上表現良好。設計上，選擇了安全性為首要考量，預設為只讀模式，這樣可以有效避免誤操作。技術風險方面，若 OpenClaw 環境配置不當，可能會導致控制中心無法正常運行。與主流框架的整合方面，這個工具可以輕鬆地與現有的 Node.js 環境集成，並且支持常見的 CI/CD 流程，降低了團隊的學習成本。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和範例，安裝過程相對順暢，但對於新手來說，可能需要進一步的指導。整體來說，花 30 分鐘應該能夠成功運行起來。
+> README 文件清晰，提供了詳細的安裝步驟和範例。安裝過程順暢，沒有明顯的坑。文件有英文和中文版本，方便不同語言的用戶使用。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供安全的只讀模式，降低操作風險。
-> - 即時顯示系統健康狀態，便於快速反應。
-> - 針對非技術用戶設計的友好界面，易於使用。
+> - 安全性高，預設為只讀模式，降低誤操作風險。
+> - 直觀的 UI 設計，適合非技術用戶使用。
+> - 快速的安裝和配置流程，減少上手時間。
 
 > [!danger] 缺點
-> - 對 Node.js 環境有依賴，需確保正確安裝。
-> - 在某些情況下，UI 可能會自動退出，影響使用體驗。
-> - 不支援非本地環境的 OpenClaw 連接，限制了使用場景。
+> - 對於高級用戶可能功能不夠靈活。
+> - 某些功能在 Windows Server 2022 上表現不佳。
+> - 需要正確配置 OpenClaw 環境，否則無法正常運行。
 
 > [!warning] 注意事項
-> - 僅支援 Node.js 環境，需確保安裝正確版本。
-> - 在某些情況下，UI 進程可能會自動退出，需手動檢查設定。
-> - 不支援非本地環境的 OpenClaw 連接，必須在可訪問的本地環境中運行。
+> - 僅支援 Node.js 16+
+> - 需要正確配置 OpenClaw 環境
+> - 不支援 Windows Server 2022 的某些功能
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於數據同步，而非 OpenClaw 的控制和監控，適合需要數據備份的場景。 |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 針對醫療領域的 OpenClaw 應用，功能上更專注於特定行業需求。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這是一個針對資料同步的工具，專注於高效的資料傳輸，而 OpenClaw Control Center 更加專注於提供可觀察性和任務管理功能。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 這個專案專注於醫療領域的 OpenClaw 應用，而 OpenClaw Control Center 則是通用的控制中心，適合各種應用場景。 |
 
 ## 替代方案決策
 
@@ -210,16 +207,16 @@ OpenClaw Control Center 的核心技術機制是基於 Node.js 和 TypeScript，
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於數據代理和轉發，而非 OpenClaw 的控制和監控。 | 如果你的需求是數據轉發而非監控，Shadowbroker 會是更好的選擇。 | medium，因為需要重新設計數據流和處理邏輯。 |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 提供 WebSocket 代理功能，適合需要即時通訊的場景。 | 如果你的應用需要即時的 WebSocket 通訊，tg-ws-proxy 是更合適的選擇。 | low，因為可以輕鬆集成到現有的 WebSocket 應用中。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於數據隱私和安全性，而 OpenClaw Control Center 更加專注於可觀察性和任務管理。 | 如果你的主要需求是數據隱私和安全性，Shadowbroker 可能更合適。 | medium，因為需要重新配置數據源和安全設置。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 提供 WebSocket 代理功能，適合需要即時通訊的場景，而 OpenClaw Control Center 則專注於任務和使用監控。 | 如果你的應用需要即時通訊功能，tg-ws-proxy 會是更好的選擇。 | low，因為功能上有一定的相似性。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **openclaw-control-center** | **Shadowbroker** | **tg-ws-proxy** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於數據代理和轉發，而非 OpenClaw 的控制和監控。 | 提供 WebSocket 代理功能，適合需要即時通訊的場景。 |
-> | 遷移成本 | - | medium，因為需要重新設計數據流和處理邏輯。 | low，因為可以輕鬆集成到現有的 WebSocket 應用中。 |
-> | 適用場景 | 主要場景 | 如果你的需求是數據轉發而非監控，Shadowbroker 會 | 如果你的應用需要即時的 WebSocket 通訊，tg-ws |
+> | 技術路線 | 本專案 | 專注於數據隱私和安全性，而 OpenClaw Control Center 更加專注於可觀察性和任務管理。 | 提供 WebSocket 代理功能，適合需要即時通訊的場景，而 OpenClaw Control Center 則專注於任務和使用監控。 |
+> | 遷移成本 | - | medium，因為需要重新配置數據源和安全設置。 | low，因為功能上有一定的相似性。 |
+> | 適用場景 | 主要場景 | 如果你的主要需求是數據隱私和安全性，Shadowbroker | 如果你的應用需要即時通訊功能，tg-ws-proxy 會是更 |
 
 ## 成熟度評估
 
@@ -230,44 +227,41 @@ OpenClaw Control Center 的核心技術機制是基於 Node.js 和 TypeScript，
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人或小型團隊的測試和實驗，不建議用於生產環境的核心功能。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** UI 進程在某些情況下自動退出
-  - 解法：檢查環境變數設定，確保正確配置
-- [MEDIUM] 在非標準環境中安裝失敗
-  - 解法：確保依賴項完整，並遵循 README 中的安裝步驟
-- [MEDIUM] 某些功能在缺少數據源時無法正常運行
-  - 解法：確保環境中有足夠的數據源支持
+- **[HIGH]** 在 Windows Server 2022 上 UI 進程可能會自動退出
+  - 解法：考慮使用其他操作系統或在虛擬機中運行
+- [MEDIUM] 某些 API 認證範圍缺失，導致連接問題
+  - 解法：檢查 API 金鑰和權限設置
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 5 人以下的小型開發團隊 | 非常適合 | 提供安全的環境來測試和開發 OpenClaw 應用。 |
-| 需要高可觀察性的運營團隊 | 適合 | 能夠即時監控系統健康狀態和使用情況。 |
-| 大型企業的核心系統 | 不適合 | 目前仍在 beta 階段，穩定性不足。 |
-| 需要快速原型開發的個人開發者 | 非常適合 | 提供了友好的 UI 和安全的操作環境。 |
+| 5 人以下的初創團隊使用 OpenClaw 進行任務管理 | 非常適合 | 提供簡單易用的界面，適合小型團隊的需求。 |
+| 大型企業需要監控多個 OpenClaw 實例 | 普通 | 雖然功能強大，但可能需要更多的自定義配置。 |
+| 對安全性要求極高的金融機構使用 OpenClaw | 不適合 | 目前的安全設計仍需進一步加強。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
-| 維護負擔 | medium |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
+| 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到一個安全的 OpenClaw 控制中心，值得考慮。
+> 花 3 小時學習，2 小時整合，得到一個安全的控制中心，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：專案本身不需要高權限，且不會存取敏感資料，依賴鏈的信任程度良好，適合在 CI/CD 中使用。
+> 低風險：本工具不需要高權限，僅存取本地環境變數和配置文件。依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -332,9 +326,9 @@ OpenClaw Control Center 的核心技術機制是基於 Node.js 和 TypeScript，
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 365 |
-| Open Issues | 19 |
-| Issue 解決率 | 47% (17 closed) |
+| Forks | 378 |
+| Open Issues | 20 |
+| Issue 解決率 | 46% (17 closed) |
 | 最後推送 | 2026-03-18 |
 | 建立日期 | 2026-03-11 |
 | Repo 大小 | 38.6 MB |
@@ -355,7 +349,7 @@ OpenClaw Control Center 的核心技術機制是基於 Node.js 和 TypeScript，
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者回應問題的速度尚可。
+**社群活躍度**：社群活躍度中等，最近有數個問題被解決。
 **連結**：[文件](https://github.com/TianyiDataScience/openclaw-control-center/blob/main/README.md)
 
 ## 開發動態
@@ -554,7 +548,7 @@ OpenClaw Control Center 的核心技術機制是基於 Node.js 和 TypeScript，
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[監控]] · [[自動化測試]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[API 設計]]
 
 相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[photon-hq--qclaw-wechat-client|photon-hq/qclaw-wechat-client]] · [[zornade--visura-api|zornade/visura-api]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]]
 
@@ -598,7 +592,7 @@ OpenClaw Control Center 的核心技術機制是基於 Node.js 和 TypeScript，
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","監控","自動化測試"];
+> const concepts = ["CLI/TUI","自動化","API 設計"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "TianyiDataScience--openclaw-control-center" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

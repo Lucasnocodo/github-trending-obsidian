@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "一句话生成大师级海报、书籍封面、专辑封面和各类设计作品。无需懂PS、配色或艺术史，AI自动选择最佳风格（基于20位传奇海报设计师）。支持电影海报、读书笔记、公众号封面、小红书配图等。默认9:16竖版，完美适配社交媒体。包含AI提示词优化、风格对比、图生图转换功能。触发词：\"Mondo风格\"、\"书籍封"
 homepage: ""
-stars: 544
-stars_per_day: 42
-forks: 54
+stars: 560
+stars_per_day: 35
+forks: 58
 open_issues: 1
 created: 2026-03-08
 pushed_at: 2026-03-19
@@ -33,7 +33,7 @@ discovered_via: "GitHub Trending"
 appearances: 2
 next_review: "2026-03-18"
 contributor_count: 1
-engagement: "low"
+engagement: "medium"
 issue_close_rate: 0
 repo_size_kb: 69654
 readme_length: 8399
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-11:382,2026-03-16:468,2026-03-18:510,2026-03-20:530,2026-03-21:536,2026-03-22:544"
+star_history: "2026-03-11:382,2026-03-16:468,2026-03-18:510,2026-03-20:530,2026-03-21:536,2026-03-22:544,2026-03-25:560"
 tags:
   - github
   - "category/其他"
@@ -56,7 +56,7 @@ aliases:
 
 # qiaomu-mondo-poster-design
 
-**544** stars · **42** stars/天 · 建立 13 天前 · Python · MIT
+**560** stars · **35** stars/天 · 建立 16 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/joeseesun--qiaomu-mondo-poster-design");
@@ -75,10 +75,10 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 一句话生成大师级海报、书籍封面、专辑封面和各类设计作品。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (42 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要快速生成專業設計作品但不懂設計的內容創作者。
-> **一句話重點** 這個工具讓每個人都能輕鬆創作出專業級的設計作品，打破了設計的門檻。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (35 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要快速生成高質量設計但不懂設計的內容創作者和小型企業。
+> **一句話重點** 這個專案讓不懂設計的人也能輕鬆創作出專業級的設計作品，降低了創作門檻。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,27 +101,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花2小時學習，1小時整合，能快速生成專業設計，值得一試。
+> **安裝** Easy (一行搞定)
 
 > [!abstract] 核心創新
-> AI自動選擇最合適的藝術風格，並生成專業級設計作品。
+> AI自動選擇最佳藝術風格和配色方案，讓不懂設計的人也能輕鬆創作專業級作品。
 
 ## 專案簡介
 
-這個工具的核心機制是透過簡單的文字描述來生成專業級的設計作品，無需使用者具備設計技能。用戶只需輸入如「用 Mondo 風格為《三体》生成一张书籍封面」的提示，AI會自動選擇最合適的藝術風格並生成相應的設計。這樣的設計流程不僅提升了效率，還能保證設計的藝術性，因為它基於20位傳奇設計師的風格進行選擇。技術上，該工具使用Python語言，依賴requests和Pillow等庫來處理網絡請求和圖像生成，這使得它在性能上相對輕量，適合快速生成設計。與傳統的設計工具相比，這個工具不需要用戶了解複雜的設計原則或使用專業軟體，因為AI會自動處理配色和構圖。
+這個專案的核心機制是讓用戶只需輸入一句話，AI就能生成專業級的海報和封面設計。用戶可以透過簡單的提示詞，如「為《三体》生成一張書籍封面」，AI會自動選擇最合適的藝術風格並生成設計，省去學習設計軟體的麻煩。這樣的設計方式不僅提升了創作效率，也讓不懂設計的人能夠輕鬆創作出獨特的作品。技術上，專案使用Python語言，依賴於requests和Pillow等庫，支持圖生圖和風格對比等功能，這使得用戶可以進行更靈活的設計選擇。與其他設計工具相比，這個專案不需要用戶具備設計基礎，且AI會自動匹配最佳的配色方案和構圖原則，這在傳統設計工具中是無法實現的。
 
-它的主要賣點是零門檻的使用體驗，特別適合不懂設計的用戶。與其他類似工具相比，如Canva或Adobe Spark，這個工具的獨特之處在於它的AI自動化設計能力，能夠生成更具個性化和藝術感的作品。使用者在實際運用中，可能會發現生成的圖像在商用上也具備一定的靈活性，但仍需注意使用條款。這個工具目前處於alpha階段，適合個人或小型團隊進行試用，未來可能會加入更多功能以提升設計的多樣性和靈活性。
+對比其他工具，如Canva和Adobe Spark，這個專案的優勢在於其自動化程度更高，且風格選擇更具藝術性。實際使用中，用戶可以生成各種比例的設計，如21:9的公众号封面或3:4的小红书配图，這些都是針對不同平台的需求進行優化的。值得注意的是，專案目前仍在早期階段，只有一個開放的問題，社群活躍度尚可，但未來的發展潛力仍然可觀。對於小型團隊或個人創作者來說，這是一個值得嘗試的工具，尤其是在需要快速生成設計的情況下。總之，這個專案的設計理念是讓每個人都能輕鬆創作出專業級的設計作品，無需任何設計背景。
 
 **技術棧**：`Python 3.7+` · `requests>=2.31.0` · `Pillow>=10.0.0`
 
 ## 重點功能
 
-- 一鍵生成設計 — 用戶只需輸入簡單的提示詞，AI會自動生成相應的設計。
-- 多種藝術風格選擇 — 基於20位傳奇設計師的風格，AI自動選擇最合適的藝術風格。
-- 自動配色方案 — AI根據題材自動選擇大師級配色方案，提升設計美感。
-- 平台比例自動適配 — 根據用途自動匹配最佳比例，適合各種社交媒體。
-- 圖生圖功能 — 支持將現有圖片轉換為Mondo藝術風格，增加創作靈活性。
+- 一鍵生成設計 — 用戶只需輸入一句話，AI自動生成海報或封面。
+- 多平台適配 — 支持21:9、3:4、9:16等多種比例，適合不同用途。
+- 藝術風格自動匹配 — AI根據內容自動選擇最合適的藝術風格。
+- 配色方案自動生成 — AI根據題材自動選擇大師級配色方案。
+- 圖生圖功能 — 支持將現有圖片轉換為Mondo藝術風格。
 
 ## 快速開始
 
@@ -129,141 +128,69 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 npx skills add joeseesun/qiaomu-mondo-poster-design
 ```
-2. 生成公众号封面
+2. 生成設計
 ```bash
 "用 Mondo 风格为《三体》生成一张书籍封面"
 ```
-3. 生成小红书配图
+3. 查看所有可用風格
 ```bash
-"为《小王子》设计读书分享配图"
+python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py --list-styles
 ```
 
 ## 程式碼範例
 
 ```python
 {
-  "前置條件": "安裝Python 3.7+和設置AI Gateway API Key。",
+  "前置條件": "用戶已安裝Python和相關依賴",
   "指令": "python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py \"人类简史\" book --style wenyi --aspect-ratio 21:9",
-  "預期輸出": "生成一張符合21:9比例的公众号封面。"
+  "預期輸出": "生成一張符合21:9比例的《人类简史》公众号封面"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 13 天就累積 544 stars（41.8/天），forks 54（9.9%），這顯示出穩定的增長潛力。作者joeseesun在設計領域有一定的背景，這個工具解決了許多不懂設計的用戶在創作過程中的痛點，讓他們能夠輕鬆生成專業作品。近期的推廣活動和社交媒體的曝光也可能促進了這個工具的流行。技術上，AI生成設計的能力在當前的設計生態中越來越受到重視，這使得該工具的出現恰逢其時。forks/stars比率的9.9%顯示出用戶對這個工具的實際修改和使用意願較高，這是一個健康的指標。
+> 建立 16 天就累積 560 stars（35/天），forks 58（10.4%），這顯示出穩定的增長潛力。作者joeseesun過去在設計工具領域有一定的經驗，這個專案解決了許多不懂設計的用戶在創作過程中的痛點，讓他們能夠快速生成高質量的設計作品。近期的社交媒體討論和分享也為這個專案帶來了更多的曝光。技術上，AI生成設計的能力在近年來得到了顯著提升，這使得這個工具的實用性大大增加。forks/stars比率為10.4%，顯示出有相當比例的用戶對這個工具進行了實際的修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成專業設計作品但不懂設計的內容創作者。
+**目標受眾**：需要快速生成高質量設計但不懂設計的內容創作者和小型企業。
 
 > [!example] 使用場景
-> - 社交媒體運營者用它來生成吸引人的公众号封面，因為這樣可以節省設計時間並提升內容的視覺吸引力。
-> - 作家用它來快速設計書籍封面，因為這樣可以在不懂設計的情況下創造出專業的視覺效果。
-> - 音樂愛好者用它來為專輯創作封面，因為這樣可以根據音樂風格自動生成符合主題的藝術作品。
+> - 內容創作者用它來快速生成社交媒體封面，因為不需要設計基礎，能在短時間內獲得專業效果。
+> - 學生用它來設計讀書筆記海報，因為只需一句話描述書籍內容，就能得到吸引人的設計。
+> - 小型企業用它來創建活動海報，因為能夠自動適配不同平台的比例，節省了設計時間。
 
 ## 架構分析
 
-該專案採用Python語言實現，主要依賴requests和Pillow庫來處理網絡請求和圖像生成。整體架構設計為輕量級，旨在快速響應用戶的設計請求。資料流方面，使用者的提示詞會被傳遞至AI模型，AI根據內部算法選擇合適的藝術風格並生成設計圖像。選擇Python作為開發語言的原因在於其強大的庫支持和簡單的語法，這使得開發過程更加高效。該工具的擴展性在於未來可以加入更多的藝術風格和功能，但目前的依賴樹相對簡單，降低了維護的複雜度。
+這個專案採用Python作為主要開發語言，結合requests和Pillow等庫來實現設計生成。架構上，使用了簡單的命令行介面，讓用戶可以方便地輸入提示詞並生成設計。資料流方面，AI會根據用戶的輸入自動選擇藝術風格和配色方案，這樣的設計使得用戶無需具備設計基礎即可獲得高質量的結果。選擇Python的原因在於其廣泛的應用和豐富的庫支持，這樣能夠快速實現功能。擴展性方面，未來可以考慮加入更多的藝術風格和功能，但目前的依賴關係相對簡單，降低了維護成本。
 
 ## 技術深入分析
 
-該工具的核心技術機制是基於自然語言處理的AI模型，能夠理解用戶的提示並生成相應的設計。它使用了多種藝術風格的資料集，這些風格來自於知名的設計師，這使得生成的作品在藝術性上有保障。效能方面，由於使用Python和輕量級的依賴，該工具能夠快速響應用戶請求，並在短時間內生成高質量的設計圖像。設計選擇上，AI會根據用戶的提示自動匹配最合適的風格，這樣的設計模式不僅提升了效率，也能夠保證設計的獨特性。技術風險方面，AI生成的設計可能會受到訓練數據的限制，未來在擴展功能時可能需要更多的數據支持。整合方面，該工具可以輕鬆地與現有的設計流程結合，特別是在社交媒體內容創作中，能夠快速生成符合需求的設計作品。
-
-## 新手體驗
-
-> [!info] 上手難度評估
-> README文件清晰，提供了詳細的安裝和使用說明。安裝過程相對順暢，但需要設置AI Gateway API Key，這可能對新手造成一定困難。文件中有簡單的範例，幫助用戶快速上手。整體來說，花30分鐘應該能夠成功運行該工具。
+這個專案的核心技術在於AI自動生成設計，使用了自然語言處理技術來理解用戶的提示詞。AI會根據用戶的描述自動選擇最合適的藝術風格，這樣的設計理念使得用戶無需具備設計基礎即可獲得高質量的結果。效能方面，專案能夠快速生成設計，但生成的質量可能受限於AI模型的能力。選擇Python作為開發語言的原因在於其廣泛的應用和豐富的庫支持，這樣能夠快速實現功能。技術風險方面，AI生成的設計可能在某些情況下無法滿足用戶的期望，這需要不斷優化模型。整合方面，該工具可以輕鬆融入現有的工作流程，特別是對於需要快速生成設計的內容創作者來說，這是一個非常實用的工具。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 零門檻使用，適合不懂設計的用戶。
-> - AI自動選擇藝術風格，提升設計的專業性。
-> - 支持多種平台比例，方便用戶直接使用。
+> - 使用簡單，無需設計基礎。
+> - 自動生成設計，節省時間。
+> - 支持多平台比例，靈活應用。
 
 > [!danger] 缺點
-> - 目前處於alpha階段，功能可能不穩定。
-> - 需要設置AI Gateway API Key，增加了使用門檻。
-> - 生成的設計可能缺乏個性化，依賴於AI的選擇。
+> - 目前功能相對簡單，尚未支持多語言。
+> - 生成質量受限於AI模型的能力。
+> - 社群活躍度尚可，但仍需時間發展。
 
 > [!warning] 注意事項
-> - 僅支援Python 3.7+。
-> - 需要設置AI Gateway API Key才能運行。
-> - 目前處於alpha階段，功能可能不穩定。
+> - 目前僅支持Python環境，需安裝相關依賴。
+> - 生成的圖像質量可能受限於AI模型的能力。
+> - 尚未支持多語言界面，主要以中文為主。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這是一個專注於文件同步的工具，與本專案的設計生成功能無法直接比較。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 這個工具主要用於網絡安全，與設計生成無關。 |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 這是一個用於代理的工具，與設計生成無直接關聯。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| Canva | Canva提供了豐富的模板和設計工具，但需要用戶具備一定的設計基礎，而本專案則完全依賴AI自動生成設計。 | 如果你的團隊已經在使用Canva並且需要更多的自定義設計選項，則應選擇Canva。 | medium，因為需要將現有的設計轉換到新的工具中。 |
-| Adobe Spark | Adobe Spark提供了強大的設計功能，但使用門檻較高，需要用戶理解設計原則，而本專案則無需任何設計背景。 | 如果你的團隊需要更專業的設計功能，且成員具備設計基礎，則應選擇Adobe Spark。 | high，因為需要重新學習工具的使用方法。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **qiaomu-mondo-poster-design** | **Canva** | **Adobe Spark** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Canva提供了豐富的模板和設計工具，但需要用戶具備一定的設計基礎，而本專案則完全依賴AI自動生成設計。 | Adobe Spark提供了強大的設計功能，但使用門檻較高，需要用戶理解設計原則，而本專案則無需任何設計背景。 |
-> | 遷移成本 | - | medium，因為需要將現有的設計轉換到新的工具中。 | high，因為需要重新學習工具的使用方法。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用Canva並且需要更多的自定義設計選項 | 如果你的團隊需要更專業的設計功能，且成員具備設計基礎，則應選 |
-
-## 成熟度評估
-
-| 項目 | 評估 |
-| --- | --- |
-| 開發階段 | Alpha |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | high |
-
-> [!tip] 採用建議
-> 適合個人試用，不建議在生產環境中使用。
-
-## 已知陷阱
-
-> [!bug] 踩坑才知道的問題
-
-- [MEDIUM] 生成的設計可能不符合用戶的期望，特別是對於不具體的提示詞
-  - 解法：使用更具體的提示詞來引導AI生成更符合需求的設計
-- **[HIGH]** 需要設置AI Gateway API Key，對於新手來說可能會造成困難
-  - 解法：參考README中的安裝說明，逐步設置API Key
-- [MEDIUM] 生成的圖像在商用時可能需要注意使用條款
-  - 解法：在使用前仔細閱讀相關的使用條款
-
-## 使用情境適合度
-
-| 情境 | 適合度 | 說明 |
-| --- | --- | --- |
-| 小型創業團隊的市場推廣 | 非常適合 | 能快速生成專業的市場推廣材料，提升品牌形象。 |
-| 個人部落客的內容創作 | 適合 | 能夠快速生成吸引人的封面和配圖，增加文章點擊率。 |
-| 大型企業的設計部門 | 普通 | 雖然能提高效率，但可能無法滿足高端設計需求。 |
-| 學校的設計課程 | 不適合 | 不適合用於教學設計原則，因為依賴AI生成。 |
-
-## 採用成本分析
-
-| 項目 | 評估 |
-| --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
-| 綁定風險 | medium |
-
-> [!tip] 投入 vs 回報
-> 花2小時學習，1小時整合，能快速生成專業設計，值得一試。
-
-## 安全性評估
-
-> [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，僅需存取用戶的提示詞和生成的圖像，無敏感資料存取。
+| [joeseesun/qiaomu-mondo-poster-design](https://github.com/joeseesun/qiaomu-mondo-poster-design) | 這個專案專注於自動生成設計，無需用戶具備設計基礎，與其他工具相比，提供了更高的自動化程度。 |
 
 ## 健康度儀表板
 
@@ -328,7 +255,7 @@ npx skills add joeseesun/qiaomu-mondo-poster-design
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 54 |
+| Forks | 58 |
 | Open Issues | 1 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-03-19 |
@@ -347,8 +274,7 @@ npx skills add joeseesun/qiaomu-mondo-poster-design
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有更新和回應。
-**連結**：[文件](https://github.com/joeseesun/qiaomu-mondo-poster-design/blob/main/README.md)
+**社群活躍度**：社群活躍度尚可，開放的問題數量較少。
 
 ## 開發動態
 
@@ -794,9 +720,9 @@ npx skills add joeseesun/qiaomu-mondo-poster-design
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[設計工具]] · [[AI生成]]
+相關概念：[[自動化設計]] · [[AI生成藝術]] · [[社交媒體內容創作]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
+相關專案：[[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]]
 
 [GitHub](https://github.com/joeseesun/qiaomu-mondo-poster-design)
 
@@ -838,7 +764,7 @@ npx skills add joeseesun/qiaomu-mondo-poster-design
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","設計工具","AI生成"];
+> const concepts = ["自動化設計","AI生成藝術","社交媒體內容創作"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "joeseesun--qiaomu-mondo-poster-design" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

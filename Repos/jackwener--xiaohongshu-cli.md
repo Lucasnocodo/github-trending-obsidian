@@ -7,8 +7,8 @@ language: Python
 license: N/A
 description: "A CLI for Xiaohongshu (小红书) — search, read, interact via reverse-engineered API"
 homepage: ""
-stars: 1402
-stars_per_day: 93
+stars: 1418
+stars_per_day: 89
 forks: 138
 open_issues: 11
 created: 2026-03-08
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-11
-use_case: "透過逆向工程的 API，提供小紅書的 CLI 工具，讓用戶能夠搜尋、閱讀及互動。"
+use_case: "透過反向工程的 API，提供小紅書的 CLI 工具，讓用戶可以搜尋、閱讀和互動。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-11"
-star_history: "2026-03-11:389,2026-03-13:786,2026-03-13:791,2026-03-14:921,2026-03-14:923,2026-03-15:1080,2026-03-15:1082,2026-03-16:1177,2026-03-18:1268,2026-03-19:1304,2026-03-20:1331,2026-03-21:1343,2026-03-22:1370,2026-03-24:1402"
+star_history: "2026-03-11:389,2026-03-13:786,2026-03-13:791,2026-03-14:921,2026-03-14:923,2026-03-15:1080,2026-03-15:1082,2026-03-16:1177,2026-03-18:1268,2026-03-19:1304,2026-03-20:1331,2026-03-21:1343,2026-03-22:1370,2026-03-24:1402,2026-03-25:1418"
 tags:
   - github
   - "category/cli_工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "xiaohongshu-cli"
   - "jackwener/xiaohongshu-cli"
-  - "透過逆向工程的 API，提供小紅書的 CLI 工具，讓用戶能夠搜尋、閱讀及互動。"
+  - "透過反向工程的 API，提供小紅書的 CLI 工具，讓用戶可以搜尋、閱讀和互動。"
 ---
 
 # xiaohongshu-cli
 
-**1.4k** stars · **93** stars/天 · 建立 15 天前 · Python · 未標註授權
+**1.4k** stars · **89** stars/天 · 建立 16 天前 · Python · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/jackwener--xiaohongshu-cli");
@@ -69,13 +69,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```
 
 > [!summary] 一句話摘要
-> 透過逆向工程的 API，提供小紅書的 CLI 工具，讓用戶能夠搜尋、閱讀及互動。
+> 透過反向工程的 API，提供小紅書的 CLI 工具，讓用戶可以搜尋、閱讀和互動。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (93 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 2 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 希望在小紅書上進行自動化操作的開發者和內容創作者。
-> **一句話重點** 這款 CLI 工具不僅提供了小紅書的基本操作，還加入了抗檢測的設計，讓用戶能夠更加安全地進行自動化操作。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (89 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 3 天前) · **貢獻者** 5+ 人 · **參與度** Low
+> **適合** 希望在命令行中高效管理小紅書內容的開發者和數據分析師。
+> **一句話重點** 這個專案展示了如何透過反向工程的 API，為小紅書用戶提供一個強大的 CLI 工具，實現自動化的社交媒體互動。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -98,101 +98,108 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習、3 小時整合，能夠獲得自動化社交互動的能力，值得投入。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學習，2 小時整合，得到靈活的社交媒體管理工具，值得一試。
 
 > [!abstract] 核心創新
-> 透過逆向工程的 API 提供小紅書的完整 CLI 操作體驗。
+> 提供了小紅書的完整 CLI 互動功能，支持多種社交操作和數據提取。
 
 ## 專案簡介
 
-xiaohongshu-cli 是一款專為小紅書設計的命令列工具，主要功能包括搜尋、閱讀和互動。用戶可以透過 CLI 指令如 `xhs search` 來搜尋特定關鍵字的筆記，並使用 `xhs read` 來查看詳細內容。這個工具的賣點在於其逆向工程的 API，能夠提供類似於官方應用的功能，並且支持多種身份驗證方式，如自動提取瀏覽器 cookies 和 QR 碼登入。技術上，這個專案使用 Python 語言，依賴於 httpx、click 和 rich 等庫，這些都是輕量且高效的選擇，讓整體性能表現良好。與其他類似工具相比，如 jackwener/twitter-cli，xiaohongshu-cli 提供了更豐富的社交互動功能，例如關注、喜歡和評論，這對於需要在小紅書上進行內容創作的用戶特別有用。使用者在使用過程中可能會遇到 API 限制問題，但該工具內建的抗檢測機制能有效減少被封鎖的風險。這個專案目前處於 alpha 階段，適合對小紅書有需求的開發者或內容創作者使用，未來可能會持續增強功能和穩定性。
+xiaohongshu-cli 是一個用於小紅書的命令行介面工具，允許用戶透過反向工程的 API 進行搜尋、閱讀、互動和發佈內容。用戶可以使用 `xhs login` 指令自動提取瀏覽器 cookies 進行身份驗證，或使用 QR 碼登入。搜尋功能支持關鍵字、用戶和主題，並可透過 `--sort` 和 `--type` 參數進行篩選。閱讀功能允許用戶查看筆記細節和評論，並可使用短索引導航快速訪問最近的結果。這個工具的賣點在於其強大的社交互動功能，支持點讚、收藏、評論和刪除等操作，並提供了穩定的輸出格式選擇（如 YAML 或 JSON）。
+
+技術上，這個專案使用 Python 實作，依賴於 `httpx` 進行 HTTP 請求，並使用 `click` 來構建命令行介面。
+
+它還實現了多種反檢測措施，如高斯抖動和自動重試機制，以避免被平台檢測到過於頻繁的請求。與其他類似工具相比，如 `bilibili-cli` 和 `twitter-cli`，xiaohongshu-cli 專注於小紅書的特定功能，並提供了更全面的社交互動選項。
+
+在實際使用中，這個工具能夠處理大量的請求，並且在用戶的身份驗證和請求管理上提供了靈活性。使用者可能會遇到的問題包括 API 限制和身份驗證過期，但這些都可以透過自動重試和 cookie 刷新來解決。社群活躍度中等，開發者持續更新，顯示出良好的維護狀態。整體來看，這個專案仍在 alpha 階段，但功能已經相對完整，適合小型團隊或個人開發者進行社交媒體數據的自動化管理。
 
 **技術棧**：`Python 3.10` · `httpx` · `click` · `rich`
 
 ## 重點功能
 
-- 自動提取瀏覽器 cookies — 支持多種瀏覽器，簡化登入過程。
-- 搜尋功能 — 使用 `xhs search` 指令搜尋筆記，支持關鍵字、用戶和主題搜尋。
-- 社交互動 — 包括關注、喜歡、評論等功能，讓用戶能夠輕鬆管理社交活動。
-- 結構化輸出 — 支持 `--yaml` 和 `--json` 格式，方便數據處理和分析。
-- 抗檢測機制 — 包含高級的請求延遲和指紋穩定性設計，降低被封鎖的風險。
+- 自動身份驗證 — 使用 `xhs login` 提取瀏覽器 cookies 或 QR 碼登入。
+- 強大的搜尋功能 — 使用 `xhs search` 指令搜尋筆記，支持關鍵字、用戶和主題篩選。
+- 社交互動 — 支持點讚、收藏、評論等操作，使用 `xhs like`、`xhs favorite` 等指令。
+- 短索引導航 — 使用 `xhs read 1` 快速訪問最近的搜尋結果。
+- 結構化輸出 — 支持 `--yaml` 和 `--json` 參數，方便數據處理。
 
 ## 快速開始
 
-1. 克隆專案
+1. 克隆專案並安裝依賴
 ```bash
-git clone git@github.com:jackwener/xiaohongshu-cli.git
+git clone git@github.com:jackwener/xiaohongshu-cli.git && cd xiaohongshu-cli && uv sync
 ```
-2. 安裝依賴
-```bash
-uv sync
-```
-3. 登入小紅書
+2. 登入小紅書
 ```bash
 xhs login
+```
+3. 搜尋筆記
+```bash
+xhs search '美食'
 ```
 
 ## 程式碼範例
 
 ```python
-{
-  "前置條件": "已安裝 xiaohongshu-cli 並完成登入",
-  "指令": "xhs search \"美食\" --sort popular",
-  "預期輸出": "返回與美食相關的熱門筆記列表"
-}
+[
+  "# 前置條件：已安裝 xiaohongshu-cli 並登入；",
+  "xhs search '旅行' --sort popular",
+  "# 預期輸出：返回與旅行相關的熱門筆記列表。"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 15 天內累積 1402 stars（93/天），forks 138（9.8%），顯示出穩定的增長潛力。作者 jackwener 之前已經開發過多個 CLI 工具，這次針對小紅書的需求填補了市場上缺乏 CLI 介面的空白。這個工具的出現正好滿足了需要在小紅書上進行自動化操作的用戶需求，特別是在內容創作和社交互動方面。社群的活躍度和開放的問題回饋也顯示出使用者對這個工具的期待和需求。
+> 建立 16 天就累積 1418 stars（89/天），forks 138（9.7%），顯示出不錯的增長潛力。作者 jackwener 過去已經開發了多個成功的 CLI 工具，如 `bilibili-cli` 和 `twitter-cli`，這使得他在這個領域有一定的經驗。這個工具解決了小紅書用戶在使用官方應用時的限制，提供了一個更靈活的互動方式。最近的推廣活動和社群討論也可能促進了這個專案的曝光度。整體來看，這是個自然擴散的增長模式，未來可能會吸引更多用戶。
 
 ## 適合誰使用
 
-**目標受眾**：希望在小紅書上進行自動化操作的開發者和內容創作者。
+**目標受眾**：希望在命令行中高效管理小紅書內容的開發者和數據分析師。
 
 > [!example] 使用場景
-> - 內容創作者用它來自動搜尋小紅書上的熱門話題，因為手動搜尋耗時且容易錯過最新趨勢。
-> - 社交媒體經營者用它來管理多個小紅書帳號，因為可以快速執行關注、喜歡和評論等操作，提升互動率。
-> - 數據分析師用它來提取小紅書上的數據進行分析，因為可以自動化抓取筆記和用戶資料，節省大量時間。
+> - 社交媒體管理者用它來自動化小紅書內容的搜尋與互動，因為可以快速獲取熱門話題和用戶反饋，提升工作效率。
+> - 數據分析師用它來收集小紅書上的用戶行為數據，因為 CLI 工具能夠輕鬆整合到數據處理流程中，並支持多種輸出格式。
+> - 開發者用它來測試小紅書的 API，因為能夠快速發送請求並獲取結構化的回應，方便進行功能測試和調試。
 
 ## 架構分析
 
-xiaohongshu-cli 採用模組化設計，主要由 CLI 介面和 API 交互組成。使用者透過 CLI 指令與後端 API 進行互動，所有請求都經過精心設計的抗檢測機制，以模擬自然的使用行為。資料流方面，使用者的請求經過身份驗證後，通過 HTTP 請求發送至小紅書的 API，並接收結構化的回應。選擇 Python 作為開發語言，因其擁有豐富的庫和簡單的語法，適合快速開發和迭代。這樣的設計使得工具的擴展性較高，但也可能面臨 API 變更帶來的維護挑戰。
+這個專案採用 Python 實作，使用了 click 框架來構建命令行介面，並依賴 httpx 進行 API 請求。架構設計上，CLI 工具的命令和參數設計非常直觀，讓用戶能夠快速上手。資料流方面，所有的 API 請求都經過反向工程的簽名處理，這樣的設計使得工具能夠在不被檢測的情況下進行操作。選擇 Python 作為開發語言的好處在於其強大的生態系統和易於維護的特性，但也可能導致性能瓶頸，特別是在高頻請求的情況下。擴展性方面，這個工具的設計使得未來可以輕鬆加入更多功能，但需注意 API 限制可能會影響使用體驗。
 
 ## 技術深入分析
 
-xiaohongshu-cli 的核心機制在於其逆向工程的 API，這使得用戶能夠透過命令列進行各種互動。這個工具的設計考慮到了使用者的需求，特別是在社交互動和內容創作方面。效能上，該工具能夠快速處理請求並返回結果，並且通過抗檢測機制來降低被封鎖的風險。選擇 Python 作為開發語言，讓開發者能夠利用現有的庫來快速構建功能。這樣的選擇雖然增加了依賴性，但也使得開發過程更加高效。在技術風險方面，API 的變更可能會影響工具的穩定性，且對外部 API 的依賴程度較高。整合方面，該工具可以輕鬆地與現有的開發環境結合，並且支持 CI/CD 流程的自動化。
+xiaohongshu-cli 的核心技術機制在於使用 Python 和多個強大的庫來實現命令行介面和 API 請求。其使用的 httpx 庫提供了非同步請求的能力，這對於處理大量的 API 請求非常重要。這個工具能夠處理的請求數量取決於 API 的限制和用戶的身份驗證狀態，通常在正常情況下可以支持每分鐘數十次請求。設計上，這個工具選擇了 click 作為命令行介面的框架，這使得用戶能夠輕鬆定義和管理命令。這樣的選擇帶來了良好的用戶體驗，但也可能增加學習曲線，特別是對於不熟悉 CLI 的用戶。技術風險方面，API 的變動可能會導致工具的功能失效，因此需要持續維護和更新。整合方面，這個工具可以輕鬆與現有的 Python 生態系統和 CI/CD 流程整合，但對於非 Python 環境的整合可能會有一定的挑戰。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且詳細，提供了安裝和使用的範例。安裝過程相對順暢，但對於新手來說，CLI 操作可能需要一些學習。文件目前僅提供英文，缺乏多語言支持，可能對非英語使用者造成困難。
+> README 文件清晰且包含詳細的使用範例，安裝過程相對順暢，沒有明顯的坑。文件目前僅提供英文，對於中文用戶可能不夠友好，但整體上對於新手來說是易於上手的。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 功能全面，涵蓋搜尋、閱讀和社交互動。
-> - 抗檢測設計降低了被封鎖的風險。
-> - 支持多種輸出格式，便於數據處理。
+> - 功能全面，支持多種社交互動操作。
+> - 自動化的身份驗證流程，使用方便。
+> - 支持結構化輸出，方便數據處理和分析。
 
 > [!danger] 缺點
-> - 目前仍在 alpha 階段，穩定性有待提升。
-> - 對於新手來說，CLI 操作可能需要學習成本。
-> - API 請求速率限制可能影響使用體驗。
+> - 仍在 alpha 階段，可能存在不穩定性。
+> - API 請求頻率受限，可能導致使用上的不便。
+> - 依賴於有效的瀏覽器 cookies，對於某些用戶來說可能不便。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.10 以上版本。
-> - API 請求可能受到速率限制，需注意使用頻率。
-> - 目前處於 alpha 階段，可能存在不穩定的功能。
+> - 僅支援 Python 3.10+
+> - 需要有效的瀏覽器 cookies 進行身份驗證
+> - API 請求頻率受限，過快請求可能導致被封鎖
+> - 目前仍在 alpha 階段，功能可能不穩定
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [jackwener/twitter-cli](https://github.com/jackwener/twitter-cli) | 提供 Twitter 的 CLI 功能，但不支持小紅書的社交互動特性，適合需要在 Twitter 上進行操作的用戶。 |
-| [jackwener/bilibili-cli](https://github.com/jackwener/bilibili-cli) | 專注於 Bilibili 的內容管理，功能上較為單一，不如 xiaohongshu-cli 的社交互動豐富。 |
+| [jackwener/bilibili-cli](https://github.com/jackwener/bilibili-cli) | 專注於 Bilibili 的視頻和用戶管理，功能上更針對視頻內容，而非社交互動。 |
+| [jackwener/twitter-cli](https://github.com/jackwener/twitter-cli) | 針對 Twitter 的時間線和書籤管理，雖然功能類似，但不支持小紅書特有的社交互動特性。 |
 
 ## 替代方案決策
 
@@ -200,16 +207,16 @@ xiaohongshu-cli 的核心機制在於其逆向工程的 API，這使得用戶能
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [jackwener/twitter-cli](https://github.com/jackwener/twitter-cli) | 專注於 Twitter 的社交互動，提供類似的 CLI 操作，但不支持小紅書的特定功能。 | 如果你的主要需求是在 Twitter 上進行自動化操作，這個工具會更合適。 | low，因為命令列操作相似，轉換成本較低。 |
-| [jackwener/bilibili-cli](https://github.com/jackwener/bilibili-cli) | 針對 Bilibili 的內容管理，功能較為單一，無法提供小紅書的社交互動特性。 | 如果你的需求主要是針對 Bilibili 的內容，這個工具會更合適。 | medium，因為功能和操作方式有所不同。 |
+| [jackwener/bilibili-cli](https://github.com/jackwener/bilibili-cli) | 專注於 Bilibili 的內容管理，功能上更針對視頻，而非社交互動。 | 如果你的主要需求是管理視頻內容而非社交互動，則 bilibili-cli 更合適。 | medium，因為需要重新學習命令和功能。 |
+| [jackwener/twitter-cli](https://github.com/jackwener/twitter-cli) | 針對 Twitter 的時間線和書籤管理，功能類似但不支持小紅書特有的社交互動特性。 | 如果你的工作主要集中在 Twitter 的數據管理上，則 twitter-cli 更為合適。 | medium，因為命令和功能有相似之處，但仍需調整。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **xiaohongshu-cli** | **twitter-cli** | **bilibili-cli** |
+> | 維度 | **xiaohongshu-cli** | **bilibili-cli** | **twitter-cli** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 Twitter 的社交互動，提供類似的 CLI 操作，但不支持小紅書的特定功能。 | 針對 Bilibili 的內容管理，功能較為單一，無法提供小紅書的社交互動特性。 |
-> | 遷移成本 | - | low，因為命令列操作相似，轉換成本較低。 | medium，因為功能和操作方式有所不同。 |
-> | 適用場景 | 主要場景 | 如果你的主要需求是在 Twitter 上進行自動化操作，這個 | 如果你的需求主要是針對 Bilibili 的內容，這個工具會 |
+> | 技術路線 | 本專案 | 專注於 Bilibili 的內容管理，功能上更針對視頻，而非社交互動。 | 針對 Twitter 的時間線和書籤管理，功能類似但不支持小紅書特有的社交互動特性。 |
+> | 遷移成本 | - | medium，因為需要重新學習命令和功能。 | medium，因為命令和功能有相似之處，但仍需調整。 |
+> | 適用場景 | 主要場景 | 如果你的主要需求是管理視頻內容而非社交互動，則 bilibi | 如果你的工作主要集中在 Twitter 的數據管理上，則 t |
 
 ## 成熟度評估
 
@@ -220,44 +227,44 @@ xiaohongshu-cli 的核心機制在於其逆向工程的 API，這使得用戶能
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 目前適合個人試用和小型專案，不建議用於生產環境的核心功能。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** API 請求速率限制可能導致操作失敗
-  - 解法：減少請求頻率，並使用自動重試機制。
-- [MEDIUM] 登入過程中可能無法提取 cookies
-  - 解法：手動登入並保存 cookies。
+- **[HIGH]** API 請求過快可能導致被封鎖
+  - 解法：使用內建的延遲和重試機制來減少請求頻率。
+- [MEDIUM] 身份驗證過期可能導致操作失敗
+  - 解法：定期使用 `xhs login` 更新 cookies。
 - [MEDIUM] 某些功能在特定地區可能無法使用
-  - 解法：使用 VPN 來繞過地區限制。
+  - 解法：嘗試使用 VPN 或其他工具來繞過地區限制。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型內容創作團隊 | 非常適合 | 能夠快速自動化社交互動和內容管理。 |
-| 個人開發者進行小紅書數據分析 | 適合 | 提供了豐富的數據提取功能，方便分析。 |
-| 大型企業需要穩定的 API 接入 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
-| 社交媒體經營者需要快速互動工具 | 非常適合 | 功能全面，能夠有效提升互動率。 |
+| 小型創業團隊的社交媒體管理 | 非常適合 | 提供全面的社交互動功能，能夠提升工作效率。 |
+| 大型企業的數據分析部門 | 普通 | 雖然功能強大，但可能面臨 API 限制的挑戰。 |
+| 個人開發者的自動化項目 | 非常適合 | 易於使用且支持多種操作，適合個人項目。 |
+| 學術研究團隊的數據收集 | 不適合 | API 的不穩定性可能影響數據的可靠性。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習、3 小時整合，能夠獲得自動化社交互動的能力，值得投入。
+> 花 3 小時學習，2 小時整合，得到靈活的社交媒體管理工具，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，僅存取用戶的 cookies 和基本資料。依賴的庫和 API 也經過審核，安全性相對可靠。
+> 低風險：工具本身不需要高權限，僅需訪問用戶的瀏覽器 cookies。依賴鏈中無已知的安全風險，使用時需注意 API 的安全性。
 
 ## 健康度儀表板
 
@@ -341,7 +348,7 @@ xiaohongshu-cli 的核心機制在於其逆向工程的 API，這使得用戶能
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放的問題回饋顯示出使用者的需求。
+**社群活躍度**：社群活躍度中等，開發者持續更新。
 **連結**：[文件](https://github.com/jackwener/xiaohongshu-cli)
 
 ## 開發動態
@@ -561,9 +568,9 @@ xiaohongshu-cli 的核心機制在於其逆向工程的 API，這使得用戶能
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[API 設計]] · [[CLI/TUI]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[API 設計]]
 
-相關專案：[[jackwener--twitter-cli|jackwener/twitter-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[steipete--discrawl|steipete/discrawl]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]]
+相關專案：[[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[jackwener--twitter-cli|jackwener/twitter-cli]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[steipete--discrawl|steipete/discrawl]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[Thearas--wechat-db-decrypt-macos|Thearas/wechat-db-decrypt-macos]]
 
 [GitHub](https://github.com/jackwener/xiaohongshu-cli)
 
@@ -605,7 +612,7 @@ xiaohongshu-cli 的核心機制在於其逆向工程的 API，這使得用戶能
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","API 設計","CLI/TUI"];
+> const concepts = ["CLI/TUI","自動化","API 設計"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "jackwener--xiaohongshu-cli" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

@@ -7,26 +7,26 @@ language: JavaScript
 license: N/A
 description: "给 Claude Code 装上完整联网能力的 skill：三层通道调度 + 浏览器 CDP + 并行分治"
 homepage: ""
-stars: 1010
-stars_per_day: 168
-forks: 105
+stars: 1026
+stars_per_day: 171
+forks: 106
 open_issues: 5
 created: 2026-03-18
 pushed_at: 2026-03-25
 first_seen: 2026-03-25
 week: "2026-W13"
 month: "2026-03"
-category: "Other"
-subcategory: ""
+category: "開發工具"
+subcategory: "自動化"
 release_tag: ""
-install_complexity: "unknown"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-25
-use_case: ""
+use_case: "為 Claude Code 提供完整的網絡能力，實現自動化網頁操作和數據提取。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,19 +42,20 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-25"
-star_history: "2026-03-25:1010"
+star_history: "2026-03-25:1010,2026-03-25:1026"
 tags:
   - github
-  - "category/other"
+  - "category/開發工具"
   - "lang/javascript"
 aliases:
   - "web-access"
   - "eze-is/web-access"
+  - "為 Claude Code 提供完整的網絡能力，實現自動化網頁操作和數據提取。"
 ---
 
 # web-access
 
-**1.0k** stars · **168** stars/天 · 建立 6 天前 · JavaScript · 未標註授權
+**1.0k** stars · **171** stars/天 · 建立 6 天前 · JavaScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/eze-is--web-access");
@@ -67,15 +68,200 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-> [!warning] AI 摘要產生失敗
-> 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
-
 > [!summary] 一句話摘要
-> 给 Claude Code 装上完整联网能力的 skill：三层通道调度 + 浏览器 CDP + 并行分治
+> 為 Claude Code 提供完整的網絡能力，實現自動化網頁操作和數據提取。
+
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (171 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Medium
+> **適合** 需要自動化網頁操作的開發者，特別是使用 Claude Code 的使用者。
+> **一句話重點** 這個專案不僅提供了強大的網頁自動化能力，還結合了多種工具的優勢，讓使用者能夠更高效地完成任務。
+
+> [!abstract]- 同類競品快速對比
+> ```dataviewjs
+> const me = dv.page("Repos/eze-is--web-access");
+> if (me) {
+>   const rivals = dv.pages('"Repos"')
+>     .where(p => p.subcategory === "自動化" && p.file.name !== "eze-is--web-access" && p.status !== "archived")
+>     .sort(p => p.stars || 0, "desc").limit(5);
+>   if (rivals.length > 0) {
+>     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
+>       p.file.link,
+>       (p.stars || 0).toLocaleString(),
+>       p.stars_per_day || 0,
+>       p.install_complexity || "?",
+>       p.license || "?",
+>       p.ring || "assess"
+>     ]));
+>   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
+> }
+> ```
+
+> [!question] TL;DR — 值得投入嗎？
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，3 小時整合，得到高效的網頁自動化能力，值得投入。
+
+> [!abstract] 核心創新
+> 提供了一種全新的方式來自動化網頁操作，結合了多種工具的優勢。
 
 ## 專案簡介
 
-给 Claude Code 装上完整联网能力的 skill：三层通道调度 + 浏览器 CDP + 并行分治
+這個專案的核心機制是為 Claude Code 增強網絡能力，通過三層通道調度、CDP 瀏覽器操作和並行分治來實現。使用者可以透過簡單的指令讓 Agent 自動執行網絡任務，例如使用 `/click` 來模擬點擊，或使用 `/setFiles` 來上傳文件。這樣的設計使得 Agent 能夠在多種場景下自動選擇最合適的工具進行操作，從而提高效率。技術上，這個專案使用了 Node.js 22+ 和 Chrome 的遠程調試功能，並通過 WebSocket 與 Chrome 直接連接，提供 HTTP API 進行操作。這樣的架構選擇使得操作更加靈活，並且能夠處理動態頁面和交互操作。
+
+與其他類似工具相比，這個專案的優勢在於其支持多種操作方式和並行執行，能夠有效應對多目標任務，而其他工具可能僅支持單一操作或無法有效管理多個任務。實際使用中，這個工具能夠處理多達數十個並行任務，並且能夠在不同的 session 之間共享操作經驗，這對於需要頻繁進行網絡操作的使用者來說非常有幫助。社群活躍度方面，這個專案在短短六天內就獲得了超過 1000 顆 stars，顯示出其受歡迎程度。總體來看，這個專案適合需要高效網絡操作的開發者，特別是那些需要自動化處理多個網頁任務的團隊。
+
+**技術棧**：`Node.js 22+` · `Chrome`
+
+## 重點功能
+
+- 自動選擇網絡工具 — 根據場景自動選擇 WebSearch、WebFetch、curl 等工具。
+- CDP Proxy 瀏覽器操作 — 直接連接 Chrome，支持動態頁面和交互操作。
+- 三種點擊方式 — 支持 JS 點擊、真實鼠標事件和文件上傳。
+- 並行分治 — 支持多目標任務的並行執行，提升效率。
+- 站點經驗積累 — 按域名存儲操作經驗，跨 session 重用。
+
+## 快速開始
+
+1. 自動安裝技能
+```bash
+帮我安装这个 skill：https://github.com/eze-is/web-access
+```
+2. 手動克隆專案
+```bash
+git clone https://github.com/eze-is/web-access ~/.claude/skills/web-access
+```
+3. 檢查運行環境
+```bash
+bash ~/.claude/skills/web-access/scripts/check-deps.sh
+```
+
+## 程式碼範例
+
+```js
+[
+  "# 前置條件：Node.js 22+ 和 Chrome 開啟遠程調試",
+  "node ~/.claude/skills/web-access/scripts/cdp-proxy.mjs &",
+  "# 預期輸出：啟動 CDP Proxy，準備進行網頁操作"
+]
+```
+
+## 為什麼值得關注
+
+> [!tip] 爆紅原因
+> 建立 6 天內累積 1026 stars（171/天），forks 106（10.3%），顯示出強勁的增長勢頭。作者 EzeW 和團隊在開源社群中有一定的知名度，之前也有其他成功的專案。這個專案解決了 Claude Code 在網絡操作上的不足，提供了一個更靈活的解決方案，特別是在自動化和並行處理方面。最近的社群討論和問題反饋也顯示出使用者對於 CDP Proxy 連接的需求，這進一步推動了專案的關注度。技術上，隨著 Node.js 和瀏覽器自動化技術的成熟，這個工具的可行性大大提高。forks/stars 比率為 10.3%，顯示出不少使用者對於這個專案的實際修改和使用。
+
+## 適合誰使用
+
+**目標受眾**：需要自動化網頁操作的開發者，特別是使用 Claude Code 的使用者。
+
+> [!example] 使用場景
+> - 後端工程師用它來自動化網頁數據抓取，因為可以輕鬆處理多個網站的動態內容。
+> - 數據分析師用它來快速獲取市場資訊，因為支持並行查詢多個產品的官網。
+> - 產品經理用它來檢查競爭對手的網站變更，因為能夠自動執行點擊和截圖操作，節省時間。
+
+## 架構分析
+
+這個專案的架構選擇了 Node.js 作為後端，利用 Chrome 的 CDP 進行瀏覽器操作。這樣的設計使得專案能夠靈活地與 Chrome 進行交互，並且能夠支持多種操作模式。資料流方面，使用者的請求會經由 WebSocket 轉發到 Chrome，並通過 HTTP API 進行操作。
+
+這樣的設計使得操作更加高效，但也要求使用者在本地環境中配置 Chrome 的遠程調試功能。選擇 Node.js 的好處是其非同步處理能力強，能夠同時處理多個請求，但也可能導致在高並發時出現性能瓶頸。整體而言，這個架構在靈活性和性能之間取得了一定的平衡。
+
+未來擴展性方面，隨著使用者需求的增加，可能需要考慮如何進一步優化性能和擴展能力。
+
+## 技術深入分析
+
+這個專案的核心技術機制是基於 Node.js 和 Chrome 的 CDP，利用 WebSocket 進行高效的瀏覽器操作。其設計模式採用了事件驅動的非同步處理，能夠同時處理多個請求，這對於需要快速響應的網頁操作來說至關重要。效能方面，這個工具能夠在多個目標之間並行執行操作，具體能處理的並行任務數量取決於使用者的硬體資源。設計取捨方面，選擇 Node.js 使得開發過程中能夠快速迭代，但也可能在高負載時出現性能瓶頸。技術風險方面，隨著使用者數量的增加，可能需要考慮如何優化資源使用和提高穩定性。整合方面，這個工具可以輕鬆與現有的 CI/CD pipeline 整合，並且支援與主流 IDE 的協作，降低了學習成本。
+
+## 新手體驗
+
+> [!info] 上手難度評估
+> README 文件清晰，提供了詳細的安裝步驟和使用範例。安裝過程相對順暢，但需要注意 Chrome 的遠程調試配置。文件支持多語言，方便不同語言的使用者上手。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 支持多種操作模式，靈活應對不同場景。
+> - 能夠自動選擇最佳工具，提升使用效率。
+> - 並行處理能力強，適合多目標任務。
+
+> [!danger] 缺點
+> - 需要額外配置 Chrome 的遠程調試，增加了使用門檻。
+> - 對於某些網站的支持可能不夠完善。
+> - 在高並發情況下可能出現性能瓶頸。
+
+> [!warning] 注意事項
+> - 僅支援 Node.js 22+。
+> - 需要 Chrome 開啟遠程調試，可能需要重啟瀏覽器。
+> - 目前僅支持部分網站的自動化操作，對於某些網站可能無法正常工作。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的並行處理能力，但主要針對文件同步而非網頁操作。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於網絡代理和隱私保護，功能範圍較窄，不支持自動化操作。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 主要用於 Telegram 的 WebSocket 代理，無法處理多種網頁操作。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步，使用 Rust 實作，性能優越但功能較單一。 | 如果你的需求主要是文件同步而非網頁操作，這個工具會更合適。 | low，因為功能範圍明確，易於上手。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供網絡代理功能，但不支持自動化操作，主要用於隱私保護。 | 如果你的主要需求是隱私保護而非網頁自動化，這個工具會更合適。 | medium，因為需要重新設計操作流程。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **web-access** | **parsync** | **Shadowbroker** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 專注於文件同步，使用 Rust 實作，性能優越但功能較單一。 | 提供網絡代理功能，但不支持自動化操作，主要用於隱私保護。 |
+> | 遷移成本 | - | low，因為功能範圍明確，易於上手。 | medium，因為需要重新設計操作流程。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是文件同步而非網頁操作，這個工具會更合適。 | 如果你的主要需求是隱私保護而非網頁自動化，這個工具會更合適。 |
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Beta |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | medium |
+
+> [!tip] 採用建議
+> 適合開發者進行試用，但不建議用於生產環境的核心任務。
+
+## 已知陷阱
+
+> [!bug] 踩坑才知道的問題
+
+- **[HIGH]** CDP Proxy 連接不穩定，可能導致操作失敗
+  - 解法：檢查 Chrome 的遠程調試配置，確保正確啟用
+- [MEDIUM] 某些網站的操作可能無法正常執行
+  - 解法：嘗試使用不同的操作模式或工具
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 需要自動化處理多個網站的數據抓取 | 非常適合 | 支持並行處理，能夠高效完成多個任務。 |
+| 小型團隊進行網頁測試 | 適合 | 能夠快速執行多個測試用例。 |
+| 大型企業的核心業務系統 | 不適合 | 目前仍處於 beta 階段，穩定性不足。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | medium |
+| 綁定風險 | medium |
+
+> [!tip] 投入 vs 回報
+> 花 5 小時學習，3 小時整合，得到高效的網頁自動化能力，值得投入。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 低風險：不需要高權限，僅需訪問本地 Chrome 瀏覽器，且不存取敏感資料。
 
 ## 健康度儀表板
 
@@ -140,7 +326,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 105 |
+| Forks | 106 |
 | Open Issues | 5 |
 | Issue 解決率 | 50% (5 closed) |
 | 最後推送 | 2026-03-25 |
@@ -158,10 +344,15 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@EzeW](https://github.com/EzeW) | 13 |
+> | [@EzeW](https://github.com/EzeW) | 14 |
 > | [@eze-is](https://github.com/eze-is) | 11 |
 > | [@VegetaPn](https://github.com/VegetaPn) | 1 |
 > | [@li-xiu-qi](https://github.com/li-xiu-qi) | 1 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度高，近期有多次更新和問題回應。
+**連結**：[文件](https://github.com/eze-is/web-access)
 
 ## 開發動態
 
@@ -300,15 +491,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 ## 延伸閱讀
 
+相關概念：[[自動化]] · [[瀏覽器自動化]] · [[CDP]]
+
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[pasky--chrome-cdp-skill|pasky/chrome-cdp-skill]]
+
 [GitHub](https://github.com/eze-is/web-access)
 
 ## 相關收錄
+
+> [!note]- 直接競品（同子分類：自動化）
+> ```dataview
+> TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
+> FROM "Repos"
+> WHERE subcategory = "自動化" AND file.name != "eze-is--web-access"
+> SORT stars DESC
+> ```
 
 > [!note]- 同分類的其他專案
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "eze-is--web-access"
+> WHERE category = "開發工具" AND file.name != "eze-is--web-access"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -328,6 +531,21 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > FROM "Repos"
 > WHERE week = "2026-W13" AND file.name != "eze-is--web-access"
 > SORT stars DESC
+> ```
+
+> [!note]- 共用概念的相關專案
+> ```dataviewjs
+> const concepts = ["自動化","瀏覽器自動化","CDP"];
+> const pages = dv.pages('"Repos"')
+>   .where(p => p.file.name !== "eze-is--web-access" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .sort(p => p.stars, "desc")
+>   .limit(5);
+> if (pages.length > 0) {
+>   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
+>     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
+>     return [p.file.link, p.stars, p.category, shared.join(", ")];
+>   }));
+> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
 > ```
 
 > [!note]- Ring 更高的同類競品

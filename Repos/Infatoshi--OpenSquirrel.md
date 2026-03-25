@@ -7,17 +7,17 @@ language: Rust
 license: MIT
 description: "For people who get distracted by agents. A native Rust/GPUI control plane for running Claude Code, Codex, Cursor, and OpenCode side by side — because if you're going to be squirrely, you might as well optimize for it."
 homepage: ""
-stars: 1290
-stars_per_day: 161
-forks: 81
+stars: 1312
+stars_per_day: 146
+forks: 85
 open_issues: 4
 created: 2026-03-15
-pushed_at: 2026-03-18
+pushed_at: 2026-03-24
 first_seen: 2026-03-22
 week: "2026-W13"
 month: "2026-03"
 category: "開發工具"
-subcategory: "多代理管理"
+subcategory: "CLI 工具"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-22
-use_case: "為分心的開發者提供一個原生的 Rust/GPUI 控制平面，讓多個 AI 編碼代理同時運行。"
+use_case: "為了讓使用者能夠更有效率地同時運行多個 AI 編碼代理，提供一個原生的 Rust/GPUI 控制平面。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-03-25"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 20
-repo_size_kb: 48861
-readme_length: 3709
+repo_size_kb: 48972
+readme_length: 3792
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-22"
-star_history: "2026-03-22:1235,2026-03-22:1236,2026-03-23:1270,2026-03-24:1290"
+star_history: "2026-03-22:1235,2026-03-22:1236,2026-03-23:1270,2026-03-24:1290,2026-03-25:1312"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "OpenSquirrel"
   - "Infatoshi/OpenSquirrel"
-  - "為分心的開發者提供一個原生的 Rust/GPUI 控制平面，讓多個 AI 編碼代理同時運行。"
+  - "為了讓使用者能夠更有效率地同時運行多個 AI 編碼代理，提供一個原生的 Rust/GPUI 控制平面。"
 ---
 
 # OpenSquirrel
 
-**1.3k** stars · **161** stars/天 · 建立 8 天前 · Rust · MIT
+**1.3k** stars · **146** stars/天 · 建立 9 天前 · Rust · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Infatoshi--OpenSquirrel");
@@ -71,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> 為分心的開發者提供一個原生的 Rust/GPUI 控制平面，讓多個 AI 編碼代理同時運行。
+> 為了讓使用者能夠更有效率地同時運行多個 AI 編碼代理，提供一個原生的 Rust/GPUI 控制平面。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (161 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要高效管理多個 AI 編碼代理的開發者，特別是在 macOS 環境中。
-> **一句話重點** OpenSquirrel 讓多個 AI 編碼代理的管理變得簡單且高效，特別適合需要同時處理多個任務的開發者。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (146 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要同時運行多個 AI 編碼代理並希望簡化操作流程的開發者。
+> **一句話重點** 這個專案的反思過程強調了終端機的優勢，並指出不需要額外的 GUI 來協調 AI 代理。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Infatoshi--OpenSquirrel");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "多代理管理" && p.file.name !== "Infatoshi--OpenSquirrel" && p.status !== "archived")
+>     .where(p => p.subcategory === "CLI 工具" && p.file.name !== "Infatoshi--OpenSquirrel" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,108 +95,110 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 多代理管理 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 CLI 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習、3 小時整合，得到高效的多代理管理效果，值得嘗試。
+> **成熟度** archived · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** high
+> **結論** 花 10 小時學習，5 小時整合，得到的效果可能不如直接使用 CLI 工具，值得考慮其他替代方案。
 
 > [!abstract] 核心創新
-> 提供了一個原生的 GPU 渲染控制平面，專為多代理協作設計，避免了 Electron 的重量級依賴。
+> 提供一個 GPU 渲染的平鋪管理器，專為同時運行多個 AI 編碼代理而設計。
 
 ## 專案簡介
 
-OpenSquirrel 是一個專為 AI 編碼代理設計的控制平面，使用 Rust 和 GPUI 技術，能夠在 macOS 上運行 Claude Code、Codex、Cursor 和 OpenCode 等多個代理。使用者可以透過 SSH 連接到遠端機器，並在一個響應式的平鋪佈局中同時運行多個代理，這樣可以更有效率地處理多個任務。主要代理（Opus）能夠自動生成子代理以專注於特定任務，並且返回簡化的結果而非完整的對話紀錄。這個工具的賣點在於它的持久會話功能，能夠在應用重啟後保留代理狀態、對話紀錄和滾動位置，讓使用者能夠隨時恢復中斷的任務。使用者可以透過配置檔來定義運行時、模型、MCP 伺服器等，並使用標準的 Cmd 鍵盤快捷鍵進行操作。
+OpenSquirrel 是一個原生的 GPU 渲染平鋪管理器，旨在同時運行多個 AI 編碼代理，如 Claude Code、Codex 和 Cursor。使用者可以透過 SSH 遠端機器，並且支援持久會話。這個專案的核心賣點在於自動子代理委派，讓使用者能夠在多個代理之間高效切換。這個專案使用 Rust 和 GPUI 框架，並且依賴於 async-channel、serde 和 portable-pty 等庫來處理非同步通訊和 JSON 數據解析。這樣的設計使得它在性能上能夠充分利用 GPU 的渲染能力，並且提供流暢的用戶體驗。然而，開發者在實作過程中發現，實際上不需要這樣的 GUI 來協調 AI 代理，因為現有的 CLI 工具已經足夠強大，且使用者對於終端機的熟悉度更高。
 
-這樣的設計使得使用者不需要學習新的操作模式，降低了上手難度。技術上，OpenSquirrel 使用了 GPUI 框架來實現 GPU 渲染，這樣可以在 macOS 上提供流暢的用戶體驗，並且避免了 Electron 的重量級依賴。相較於其他工具如 AlpinDale/parsync 和 BigBodyCobain/Shadowbroker，OpenSquirrel 提供了更高的靈活性和可擴展性，特別是在多代理協作和持久會話管理方面。使用者在處理多個 AI 代理時，能夠享受到更高的效率和更少的干擾。這個專案目前處於早期階段，雖然功能尚在增強中，但已經展現出良好的潛力，適合對 AI 編碼代理有需求的開發者使用。
+這使得 OpenSquirrel 在功能上與 CodexBar 和其他 CLI 工具相比，顯得多餘。實際使用中，使用者可能會發現，直接在終端中運行代理更為高效，且不需要額外的 GUI 輔助。這個專案目前已經被存檔，並不再積極維護，顯示出開發者對於這個工具的反思與學習。對於想要使用或自訂的開發者，專案的 `legacy` 分支仍然保留了完整的功能集，包括多代理網格、自動佈局和 SSH 遠端目標等功能。整體來看，這個專案的設計反映了對於用戶需求的深入理解，並且強調了終端機的優勢。
 
-**技術棧**：`Rust 2024` · `GPUI 0.2`
+**技術棧**：`Rust 1.85+` · `GPUI`
 
 ## 重點功能
 
-- 多代理平鋪佈局 — 同時運行多個代理，根據數量自動排列。
-- 協調者/工作者委派 — 主代理可自動生成子代理以專注於特定任務。
-- 遠端機器目標 — 支持透過 SSH 連接到本地或遠端機器。
-- 持久會話 — 代理狀態和對話紀錄在應用重啟後保留。
-- 結構化輸出解析 — 解析所有運行時的 `stream-json` 輸出，並自定義 Markdown 渲染。
+- 多代理支援 — 同時運行 Claude Code、Codex、Cursor 等多個代理，並自動進行子代理委派。
+- 遠端 SSH 管理 — 支援透過 SSH 遠端管理多個機器，方便進行集中式操作。
+- 持久會話 — 允許使用者在多次啟動後保持會話狀態，提升使用體驗。
+- 自動佈局 — 具備自動佈局功能，讓使用者可以更直觀地管理多個代理。
+- 配置文件 — 使用 `~/.osq/config.toml` 進行靈活的配置，支持多種運行時和主題設定。
 
 ## 快速開始
 
-1. 安裝 Rust 工具鏈
+1. 安裝 Rust 和依賴
 ```bash
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup install 1.85
 ```
-2. 構建專案
+2. 編譯專案
 ```bash
 cargo build --release
 ```
-3. 運行應用
+3. 運行應用程式
 ```bash
-./target/release/opensquirrel
+cp target/release/opensquirrel dist/OpenSquirrel.app/Contents/MacOS/OpenSquirrel-bin && open dist/OpenSquirrel.app
 ```
 
 ## 程式碼範例
 
 ```rust
 {
-  "前置條件": "需要安裝 Rust 工具鏈和 macOS。",
-  "指令": "cargo build --release\n./target/release/opensquirrel",
-  "預期輸出": "啟動 OpenSquirrel 應用，並顯示多代理界面。"
+  "前置條件": "需要安裝 Rust 1.85+ 和 macOS。",
+  "指令": "cargo build --release",
+  "預期輸出": "編譯成功，生成可執行檔案。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 8 天內累積 1290 stars（161/天），forks 81（6.3%），顯示出穩定的增長。作者 Infatoshi 在開源社群中活躍，過去有多個相關專案。這個工具解決了多代理管理的痛點，特別是在需要同時運行多個 AI 編碼代理的情境下，之前的解決方案多數無法有效支持持久會話和自動代理生成。最近的推文和社群討論也引起了關注。這個工具的出現是因為 GPU 渲染技術的進步，使得在桌面環境中實現高效能的多代理協作變得可行。forks/stars 比率在 6.3%，顯示出使用者對這個專案的興趣和實際修改的可能性。
+> 建立 9 天內累積 1312 stars（146/天），forks 85（6.5%），顯示出一定的關注度。作者 Infatoshi 在開源社群中有一定的影響力，過去的專案也多與 AI 和開發工具相關。這個專案解決了使用者在多個 AI 編碼代理之間切換的痛點，但最終發現現有的 CLI 工具已經足夠強大，無需額外的 GUI。這個反思過程引發了社群的共鳴，尤其是在多數開發者對於終端機的依賴日益增加的情況下。專案的存檔狀態也引發了關於開發工具設計的討論，讓更多人關注到簡化工作流程的重要性。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效管理多個 AI 編碼代理的開發者，特別是在 macOS 環境中。
+**目標受眾**：需要同時運行多個 AI 編碼代理並希望簡化操作流程的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來同時運行多個 AI 編碼代理，因為這樣可以在一個界面中快速切換和管理不同的任務，提升工作效率。
-> - DevOps 工程師用它來遠端管理多台伺服器上的 AI 代理，因為它支持 SSH 連接，能夠在不同的環境中靈活運用。
-> - 研究人員用它來進行 AI 模型的實驗，因為持久會話功能讓他們能夠隨時恢復中斷的實驗，避免重複工作。
+> - 後端工程師用它來同時運行多個 AI 編碼代理，因為這樣可以更有效地利用不同工具的特性，提升開發效率。
+> - 系統管理員用它來遠端管理多個服務器上的 AI 工具，因為這樣可以簡化操作流程，減少切換上下文的時間。
+> - 開發者用它來測試不同的 AI 編碼工具，因為可以在同一界面中比較不同工具的表現，快速找到最佳解決方案。
 
 ## 架構分析
 
-OpenSquirrel 的架構基於 Rust 和 GPUI，使用 GPU 渲染來提供流暢的用戶體驗。主要由三個文件組成：`src/main.rs` 負責 UI 和代理生命週期管理，`src/lib.rs` 處理行分類和 Markdown 解析，`tests/state_tests.rs` 包含多個集成測試以確保功能穩定。這樣的架構設計使得功能模組化，便於未來擴展和維護。選擇 Rust 作為開發語言，因其性能和安全性優勢，代價是需要開發者具備相應的語言知識。整體上，這個專案的擴展性良好，但在處理大量代理時可能會面臨性能瓶頸，特別是在資源有限的環境中。
+OpenSquirrel 採用 Rust 和 GPUI 框架，設計上旨在提供高效的 GPU 渲染能力。資料流方面，使用者的指令經由 Rust 程式解析，並透過 GPUI 進行渲染。這樣的設計使得應用程式能夠在性能上充分發揮 GPU 的優勢，並提供流暢的使用體驗。
+
+然而，開發者發現，將 AI 編碼工具的 CLI 輸出轉換為 GUI 的過程中，會產生不必要的複雜性，反而影響了開發效率。這種架構的選擇使得每個功能的開發都變得更為繁瑣，導致開發時間大幅增加。最終，開發者選擇回歸終端機，這反映出在多代理編碼的工作流程中，終端機的靈活性和效率更具優勢。
 
 ## 技術深入分析
 
-OpenSquirrel 的核心技術機制基於 Rust 和 GPUI，利用 GPU 渲染來實現高效的用戶界面和多代理管理。整個系統能夠處理多個代理的同時運行，並且支持 SSH 連接到遠端機器，這在開發和測試環境中非常實用。效能方面，這個工具能夠在 macOS 上流暢運行，但在處理大量代理時可能會面臨性能瓶頸，特別是當資源有限時。選擇 Rust 作為開發語言的好處在於其高效能和安全性，但這也意味著開發者需要具備相應的語言知識。依賴樹相對簡單，主要依賴 GPUI 和一些輕量級的庫，這降低了潛在的 vendor lock-in 風險。技術風險方面，隨著使用者數量的增加，可能會出現性能下降的問題，特別是在多代理同時運行的情況下。整合方面，與主流 CI/CD 工具的相容性尚未明確，但由於其基於 Rust 的設計，應該能夠與大多數現有工具鏈進行整合。
+OpenSquirrel 的核心技術機制在於使用 Rust 和 GPUI 進行 GPU 渲染，這使得它能夠在性能上優於傳統的 CPU 渲染應用。專案的設計初衷是為了提供一個高效的平鋪管理器，讓使用者能夠同時運行多個 AI 編碼代理。然而，開發者在實作過程中發現，實際上不需要這樣的 GUI，因為現有的 CLI 工具已經足夠強大，且使用者對於終端機的熟悉度更高。這使得專案在功能上顯得多餘，並且每個功能的開發都因為需要將 CLI 輸出轉換為 GUI 而變得繁瑣。這樣的架構選擇導致了開發時間的延長，最終開發者選擇回歸終端機。整體來看，這個專案的設計反映了對於用戶需求的深入理解，並且強調了終端機的優勢，未來可能會有更多的開發者回歸到終端機的使用上。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用說明，對新手友好。安裝過程相對順暢，但需要確保 Rust 環境已經配置好。沒有提供多語言支持，可能對非英語使用者造成一定障礙。
+> README 文件清晰地說明了專案的背景和使用方式，但由於專案已被存檔，缺乏活躍的支持。安裝過程相對順暢，但對於不熟悉 Rust 的開發者來說，可能會有一定的學習曲線。整體來說，花 30 分鐘能夠理解專案的基本運作，但實際運行可能需要更多的時間來熟悉配置和命令。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 原生 GPU 渲染，提供流暢的用戶體驗。
-> - 支持多代理同時運行，提升工作效率。
-> - 持久會話功能，避免重複工作。
+> - 支持多個 AI 編碼代理，方便用戶同時使用不同工具。
+> - GPU 渲染提高了界面的流暢度，適合高效能需求。
+> - 配置靈活，使用者可根據需求自訂設定。
 
 > [!danger] 缺點
-> - 僅支援 macOS，限制了使用者範圍。
-> - 功能尚在增強中，可能存在未解決的問題。
-> - 需要 Rust 環境，對新手有一定學習曲線。
+> - 不再維護，未來可能缺乏支持和更新。
+> - 對於不熟悉 Rust 的開發者來說，學習曲線較高。
+> - 實際使用中發現 GUI 需求不高，可能造成不必要的複雜性。
 
 > [!warning] 注意事項
-> - 僅支援 macOS (Metal GPU)。
-> - 目前功能仍在增強中，可能存在未解決的錯誤。
-> - 需要 Rust 工具鏈，對於不熟悉 Rust 的開發者可能有學習成本。
+> - 不再積極維護，未來可能不會有更新或修復。
+> - 僅支援 macOS 和 Linux，對於 Windows 用戶不友好。
+> - 需要較高的學習曲線，特別是對於不熟悉 Rust 的開發者。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供多代理管理，但不支持持久會話和自動代理生成，適合簡單的文件同步。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於代理的安全性和隱私保護，但缺乏 OpenSquirrel 的多代理協作功能。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的多代理支援，但專注於資料同步，而非編碼代理的管理。 |
+| CodexBar | 專注於追蹤多個 AI 編碼工具的使用情況，無需額外的 GUI，直接在菜單欄運行。 |
 
 ## 替代方案決策
 
@@ -204,64 +206,63 @@ OpenSquirrel 的核心技術機制基於 Rust 和 GPUI，利用 GPU 渲染來實
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 使用簡單的文件同步機制，無法提供多代理管理的功能。 | 如果你的需求僅限於文件同步，而不需要多代理協作。 | low，因為功能簡單，容易上手。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於安全性和隱私保護，無法支持持久會話和多代理管理。 | 如果你的專案對安全性有極高要求，並且不需要多代理協作。 | medium，因為需要重新設計工作流程以適應其安全模型。 |
+| CodexBar | 專注於追蹤多個 AI 編碼工具的使用情況，無需額外的 GUI，直接在菜單欄運行。 | 如果你只需要追蹤多個 AI 工具的使用情況，而不需要額外的 GUI，CodexBar 是更簡單的選擇。 | low，因為 CodexBar 直接在菜單欄運行，無需額外配置。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的多代理支援，但專注於資料同步，而非編碼代理的管理。 | 如果你的需求是資料同步而非多代理管理，則 AlpinDale/parsync 更為合適。 | medium，因為需要重新配置和調整使用方式。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **OpenSquirrel** | **parsync** | **Shadowbroker** |
+> | 維度 | **OpenSquirrel** | **CodexBar** | **parsync** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用簡單的文件同步機制，無法提供多代理管理的功能。 | 專注於安全性和隱私保護，無法支持持久會話和多代理管理。 |
-> | 遷移成本 | - | low，因為功能簡單，容易上手。 | medium，因為需要重新設計工作流程以適應其安全模型。 |
-> | 適用場景 | 主要場景 | 如果你的需求僅限於文件同步，而不需要多代理協作。 | 如果你的專案對安全性有極高要求，並且不需要多代理協作。 |
+> | 技術路線 | 本專案 | 專注於追蹤多個 AI 編碼工具的使用情況，無需額外的 GUI，直接在菜單欄運行。 | 提供類似的多代理支援，但專注於資料同步，而非編碼代理的管理。 |
+> | 遷移成本 | - | low，因為 CodexBar 直接在菜單欄運行，無需額外配置。 | medium，因為需要重新配置和調整使用方式。 |
+> | 適用場景 | 主要場景 | 如果你只需要追蹤多個 AI 工具的使用情況，而不需要額外的  | 如果你的需求是資料同步而非多代理管理，則 AlpinDale |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | archived |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | low |
 
 > [!tip] 採用建議
-> 適合開發者進行實驗和探索，但不建議在生產環境中使用。
+> 不建議在生產環境中使用，因為專案已被存檔，未來可能缺乏支持。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** macOS .app 包不繼承 shell PATH，可能導致找不到代理命令
-  - 解法：直接運行二進位檔，而非透過 .app 包
-- [MEDIUM] 在多代理運行時，可能會出現性能瓶頸
-  - 解法：減少同時運行的代理數量以提高性能
-- [MEDIUM] 尚未完全測試的功能可能導致不穩定
-  - 解法：在非關鍵環境中進行測試
+- **[HIGH]** 專案已被存檔，未來可能不會有更新或修復
+  - 解法：考慮使用其他活躍的替代方案
+- [MEDIUM] 對於不熟悉 Rust 的開發者來說，學習曲線較高
+  - 解法：尋找 Rust 的學習資源，或考慮使用 CLI 工具
+- [MEDIUM] 在使用 GUI 時，可能會發現不如直接使用 CLI 方便
+  - 解法：直接在終端中運行代理，避免使用 GUI
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊需要同時運行多個 AI 編碼代理 | 非常適合 | 專為多代理管理設計，能有效提升工作效率。 |
-| 大型企業需要高效的遠端機器管理 | 普通 | 雖然支持 SSH，但可能在性能上有瓶頸。 |
-| 個人開發者進行 AI 實驗 | 適合 | 持久會話功能能夠避免重複工作，提升實驗效率。 |
-| 需要高安全性的環境 | 不適合 | 目前尚未針對安全性進行全面測試。 |
+| 需要同時運行多個 AI 編碼代理的開發者 | 不適合 | 因為專案已被存檔，未來可能缺乏支持。 |
+| 希望簡化多代理管理的系統管理員 | 不適合 | 因為使用 GUI 反而增加了複雜性。 |
+| 對於終端機熟悉的開發者 | 普通 | 雖然有一定的功能，但實際上 CLI 工具已經足夠。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~10 小時 |
+| 整合時間 | ~5 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | low |
+| 綁定風險 | high |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習、3 小時整合，得到高效的多代理管理效果，值得嘗試。
+> 花 10 小時學習，5 小時整合，得到的效果可能不如直接使用 CLI 工具，值得考慮其他替代方案。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，且不存取敏感資料，但需注意依賴庫的安全性。
+> 低風險：專案本身不需要高權限，且不存取敏感資料，但由於專案已被存檔，未來可能存在安全性風險。
 
 ## 健康度儀表板
 
@@ -326,12 +327,12 @@ OpenSquirrel 的核心技術機制基於 Rust 和 GPUI，利用 GPU 渲染來實
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 81 |
+| Forks | 85 |
 | Open Issues | 4 |
 | Issue 解決率 | 20% (1 closed) |
-| 最後推送 | 2026-03-18 |
+| 最後推送 | 2026-03-24 |
 | 建立日期 | 2026-03-15 |
-| Repo 大小 | 47.7 MB |
+| Repo 大小 | 47.8 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Infatoshi/OpenSquirrel) |
 
 > [!info]- 主要依賴
@@ -341,16 +342,16 @@ OpenSquirrel 的核心技術機制基於 Rust 和 GPUI，利用 GPU 渲染來實
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Infatoshi](https://github.com/Infatoshi) | 15 |
+> | [@Infatoshi](https://github.com/Infatoshi) | 17 |
 
 ## 社群與生態
 
-**社群活躍度**：最近兩天有活躍的提交，顯示出開發者對專案的持續關注。
+**社群活躍度**：社群活躍度較低，因為專案已被存檔。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-16 ~ 2026-03-18）
-> **活躍天數** 2 天 · **最新 commit** Add 26 security and edge-case tests from audit
+> [!abstract] 最近 10 次 commit（2026-03-16 ~ 2026-03-24）
+> **活躍天數** 4 天 · **最新 commit** Archive project: update README with learnings, fix assistant message parsing
 
 ## 熱門議題
 
@@ -364,90 +365,80 @@ OpenSquirrel 的核心技術機制基於 Rust 和 GPUI，利用 GPU 渲染來實
 > [!info]- 展開查看原文 README
 > OpenSquirrel
 > 
-> Native, GPU-rendered control plane for AI coding agents. Rust + GPUI. No Electron.
+>   This project is no longer actively maintained.
+>   Fork it, customize it, make it yours.
 > 
-> Run Claude Code, Codex, Cursor, and OpenCode side by side with automatic sub-agent delegation, remote machine targeting via SSH, and persistent multi-turn sessions.
+>   
 > 
-> ## What it does
+> ## What it was
 > 
-> - **Multi-agent grid** — Run multiple agents simultaneously in a responsive tiled layout. Agents auto-arrange based on count (1=full, 2=split, 4=2×2, etc).
-> - **Coordinator/worker delegation** — A primary agent (Opus) can automatically spawn sub-agents for focused tasks. Workers return condensed results, not full transcripts.
-> - **Remote machine targeting** — Agents can target local or remote machines via SSH + tmux. Configure machines in `~/.osq/config.toml`.
-> - **MCP integration** — MCP servers (Playwright, browser-use, etc.) are wired directly to agent CLI args. Select per-agent during setup.
-> - **Persistent sessions** — Agent state, transcripts, scroll positions, and pending prompts survive app restarts. Interrupted turns can be resumed.
-> - **Structured output parsing** — Parses `stream-json` output from all runtimes. Custom markdown rendering with code blocks, diffs, headings, bullets.
+> A native, GPU-rendered tiling manager for AI coding agents. Rust + GPUI. Run Claude Code, Codex, Cursor, Gemini, and OpenCode side by side with automatic sub-agent delegation, remote machine targeting via SSH, and persistent sessions.
 > 
-> ## Supported runtimes
+> ## Why it's archived
 > 
-> | Runtime | Mode | Permission bypass |
-> |---------|------|-------------------|
-> | Claude Code | Persistent stdin (multi-turn) | `--dangerously-skip-permissions` |
-> | Codex | One-shot per prompt | `--dangerously-bypass-approvals-and-sandbox` |
-> | Cursor Agent | One-shot per prompt | `--yolo` |
-> | OpenCode | One-shot per prompt | Auto-approved in `run` mode |
+> After a week of building this, I arrived at a simpler conclusion: **you don't need a custom GUI to orchestrate AI agents.**
 > 
-> ## Build & run
+> Here's what I learned:
+> 
+> **The terminal already won.** Every AI coding CLI (Claude Code, Codex, Cursor Agent, Gemini CLI, OpenCode) ships with a polished terminal TUI. Building a Rust GUI that parses their JSON output and re-renders it will always be worse than just... using the native TUI. Users are comfortable in their terminal. They don't want a new window.
+> 
+> **Delegation is a prompt, not a product.** The entire coordinator/worker delegation system -- spawning sub-agents across runtimes, collecting results, feeding them back -- can be done with 4 lines in a `CLAUDE.md` file telling the model to use `cursor agent --print` or `codex exec` via Bash. No orchestration daemon needed. No hooks. No middleware. Claude Code's Agent tool already handles internal delegation. For external CLIs, just run them headless.
+> 
+> **Token tracking already exists.** [CodexBar](https://github.com/steipete/CodexBar) sits in your macOS menu bar and tracks usage across Claude, Codex, Cursor, Gemini, and more by reading their local data files. No need to build this into a GUI.
+> 
+> **The architectural mismatch.** Using Claude Code (a Node/Bun process) to build and iterate on a Rust GPU application through JSON stream parsing is a bizarre feedback loop. The model is trained on terminal interactions, not on debugging GPUI render pipelines. Every feature took 10x longer than it should have because the tooling fought the workflow.
+> 
+> **Models aren't good enough yet for opinionated UX.** Nobody knows the right workflow for multi-agent coding. Building a rigid UI around one workflow locks you in. The terminal is infinitely flexible. Wait for patterns to emerge before building products around them.
+> 
+> ## What works instead
+> 
+> The setup I actually use now:
+> 
+> - **Terminal**: Ghostty (or whatever you prefer)
+> - **Agents**: Run them directly -- `claude`, `codex`, `cursor agent`, `gemini`
+> - **Delegation**: Instructions in `~/.claude/CLAUDE.md` telling Claude to run external CLIs via Bash when asked
+> - **Token tracking**: CodexBar (menu bar app, reads local files)
+> - **Multi-agent**: Just open multiple terminal tabs/panes
+> 
+> That's it. No custom software. The orchestration layer is a config file.
+> 
+> ## If you want to use or fork this
+> 
+> The code works. The `legacy` branch at commit `78f1bf2` has the full feature set:
+> 
+> - Multi-agent grid with auto-layout
+> - Coordinator/worker delegation across runtimes
+> - Remote SSH targeting with tmux session persistence
+> - Reusable UI components (FuzzyList, modal builders, selectable rows)
+> - Model picker with fuzzy search (Cmd+M)
+> - Token/cost tracking per agent
+> - 7 themes, persistent state, MCP integration
+> - 93 passing tests
+> 
+> ### Build & run
 > 
 > ```bash
 > cargo build --release
-> ./target/release/opensquirrel
-> ```
-> 
-> Requires Rust toolchain and macOS (Metal GPU).
-> 
-> To run as a proper macOS `.app` bundle with the squirrel icon:
-> 
-> ```bash
-> # Build
-> cargo build --release
-> 
-> # Create .app bundle
-> mkdir -p dist/OpenSquirrel.app/Contents/{MacOS,Resources}
-> cp target/release/opensquirrel dist/OpenSquirrel.app/Contents/MacOS/OpenSquirrel
-> cp assets/OpenSquirrel.icns dist/OpenSquirrel.app/Contents/Resources/
-> 
-> # Launch
+> # Run as .app bundle:
+> cp target/release/opensquirrel dist/OpenSquirrel.app/Contents/MacOS/OpenSquirrel-bin
 > open dist/OpenSquirrel.app
 > ```
 > 
-> Note: macOS `.app` bundles don't inherit your shell PATH. If agents like `claude` or `npx` aren't found, run the binary directly instead of via the `.app` bundle.
+> Requires Rust 1.85+ and macOS (Metal GPU). Linux (Vulkan) compiles and tests pass.
 > 
-> ## Keybinds
+> ### Config
 > 
-> No vim modes — text input is always active. All actions use standard Cmd- keybinds.
+> `~/.osq/config.toml` -- runtimes, machines, MCPs, themes, settings.
 > 
-> | Key | Action |
-> |-----|--------|
-> | `Enter` | Send prompt |
-> | `Escape` | Dismiss overlay (palette, setup wizard, search) |
-> | `Cmd-N` | New agent (opens setup wizard) |
-> | `Cmd-K` | Command palette (themes, settings, compact context, kill, views) |
-> | `Cmd-F` | Search transcripts |
-> | `Cmd-]` / `Cmd-[` | Next / prev pane within group |
-> | `Cmd-}` / `Cmd-{` | Next / prev group |
-> | `Cmd-V` | Paste from clipboard |
-> | `Cmd-=` / `Cmd--` | Zoom in / out |
+> ### Supported runtimes
 > 
-> **Setup wizard:** Arrow keys to navigate, `Enter` to drill into directories, `Backspace` to go up, `Tab` to advance step, `Shift-Tab` to go back.
-> 
-> ## Configuration
-> 
-> Config lives at `~/.osq/config.toml`. Defines runtimes, models, MCP servers, machines, themes, and settings.
-> 
-> State is persisted at `~/.osq/state.json` (agents, transcripts, scroll positions).
-> 
-> ## Architecture
-> 
-> ~7,200 lines of Rust across 3 files:
-> - `src/main.rs` — UI, agent lifecycle, rendering, keybinds, persistence
-> - `src/lib.rs` — Line classification, markdown parsing, diff summarization, helpers
-> - `tests/state_tests.rs` — 30 integration tests covering navigation, scrolling, themes, search, agent lifecycle
-> 
-> Built on [GPUI](https://crates.io/crates/gpui) (the UI framework from Zed, used as a standalone crate). GPU-rendered via Metal on macOS.
-> 
-> ## Themes
-> 
-> midnight, charcoal, gruvbox, solarized-dark, light, solarized-light, ops, monokai-pro
+> | Runtime | CLI | Mode |
+> |---------|-----|------|
+> | Claude Code | `claude` | Persistent multi-turn |
+> | Codex | `codex` | One-shot |
+> | Cursor Agent | `cursor agent` | One-shot |
+> | Gemini CLI | `gemini` | One-shot |
+> | OpenCode | `opencode` | One-shot |
 > 
 > ## License
 > 
@@ -455,7 +446,7 @@ OpenSquirrel 的核心技術機制基於 Rust 和 GPUI，利用 GPU 渲染來實
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[自動化]] · [[微服務]]
+相關概念：[[CLI/TUI]] · [[多模態]] · [[自動化]]
 
 相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[TianyiDataScience--openclaw-control-center|TianyiDataScience/openclaw-control-center]] · [[ahmadawais--chartli|ahmadawais/chartli]]
 
@@ -463,11 +454,11 @@ OpenSquirrel 的核心技術機制基於 Rust 和 GPUI，利用 GPU 渲染來實
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：多代理管理）
+> [!note]- 直接競品（同子分類：CLI 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "多代理管理" AND file.name != "Infatoshi--OpenSquirrel"
+> WHERE subcategory = "CLI 工具" AND file.name != "Infatoshi--OpenSquirrel"
 > SORT stars DESC
 > ```
 
@@ -499,7 +490,7 @@ OpenSquirrel 的核心技術機制基於 Rust 和 GPUI，利用 GPU 渲染來實
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["多模態","自動化","微服務"];
+> const concepts = ["CLI/TUI","多模態","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Infatoshi--OpenSquirrel" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
