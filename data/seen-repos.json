@@ -575,10 +575,10 @@
   },
   "math-inc/OpenGauss": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-25",
-    "times_seen": 3,
+    "last_seen": "2026-03-26",
+    "times_seen": 4,
     "stars_first": 1021,
-    "stars_last": 1076
+    "stars_last": 1088
   },
   "lxf746/any-auto-register": {
     "first_seen": "2026-03-23",
@@ -589,10 +589,10 @@
   },
   "dontbesilent2025/dbskill": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-25",
-    "times_seen": 3,
+    "last_seen": "2026-03-26",
+    "times_seen": 4,
     "stars_first": 909,
-    "stars_last": 1421
+    "stars_last": 1542
   },
   "mattprusak/autoresearch-genealogy": {
     "first_seen": "2026-03-23",
@@ -603,31 +603,31 @@
   },
   "truongduy2611/app-store-preflight-skills": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-25",
-    "times_seen": 3,
+    "last_seen": "2026-03-26",
+    "times_seen": 4,
     "stars_first": 838,
-    "stars_last": 923
+    "stars_last": 944
   },
   "louislva/claude-peers-mcp": {
     "first_seen": "2026-03-24",
-    "last_seen": "2026-03-25",
-    "times_seen": 2,
+    "last_seen": "2026-03-26",
+    "times_seen": 3,
     "stars_first": 948,
-    "stars_last": 1119
+    "stars_last": 1201
   },
   "zarazhangrui/codebase-to-course": {
     "first_seen": "2026-03-25",
-    "last_seen": "2026-03-25",
-    "times_seen": 1,
+    "last_seen": "2026-03-26",
+    "times_seen": 2,
     "stars_first": 1094,
-    "stars_last": 1094
+    "stars_last": 1511
   },
   "slavingia/skills": {
     "first_seen": "2026-03-25",
-    "last_seen": "2026-03-25",
-    "times_seen": 1,
+    "last_seen": "2026-03-26",
+    "times_seen": 2,
     "stars_first": 1076,
-    "stars_last": 1076
+    "stars_last": 2498
   },
   "eze-is/web-access": {
     "first_seen": "2026-03-25",
@@ -635,5 +635,33 @@
     "times_seen": 1,
     "stars_first": 1010,
     "stars_last": 1010
+  },
+  "dou-jiang/codex-console": {
+    "first_seen": "2026-03-26",
+    "last_seen": "2026-03-26",
+    "times_seen": 1,
+    "stars_first": 933,
+    "stars_last": 933
+  },
+  "facebookresearch/HyperAgents": {
+    "first_seen": "2026-03-26",
+    "last_seen": "2026-03-26",
+    "times_seen": 1,
+    "stars_first": 912,
+    "stars_last": 912
+  },
+  "wong2/weixin-agent-sdk": {
+    "first_seen": "2026-03-26",
+    "last_seen": "2026-03-26",
+    "times_seen": 1,
+    "stars_first": 892,
+    "stars_last": 892
+  },
+  "HKUDS/OpenSpace": {
+    "first_seen": "2026-03-26",
+    "last_seen": "2026-03-26",
+    "times_seen": 1,
+    "stars_first": 883,
+    "stars_last": 883
   }
 }

@@ -1,23 +1,23 @@
 ---
-repo: louislva/claude-peers-mcp
-url: https://github.com/louislva/claude-peers-mcp
-owner: louislva
-owner_type: User
-language: TypeScript
-license: N/A
-description: "Allow all your Claude Codes to message each other ad-hoc!"
+repo: facebookresearch/HyperAgents
+url: https://github.com/facebookresearch/HyperAgents
+owner: facebookresearch
+owner_type: Organization
+language: Python
+license: NOASSERTION
+description: "Self-referential self-improving agents that can optimize for any computable task"
 homepage: ""
-stars: 1201
-stars_per_day: 300
-forks: 113
-open_issues: 13
-created: 2026-03-21
-pushed_at: 2026-03-21
-first_seen: 2026-03-24
+stars: 912
+stars_per_day: 152
+forks: 135
+open_issues: 9
+created: 2026-03-19
+pushed_at: 2026-03-23
+first_seen: 2026-03-26
 week: "2026-W13"
 month: "2026-03"
-category: "開發工具"
-subcategory: "即時通訊"
+category: "AI/ML"
+subcategory: "自動化"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -25,40 +25,41 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-03-24
-use_case: "讓所有的 Claude 代碼實例可以即時互相通訊。"
-priority: high
+last_reviewed: 2026-03-26
+use_case: "自我參照的自我改進代理，可以優化任何可計算的任務。"
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-03-29"
-contributor_count: 1
-engagement: "low"
+appearances: 1
+next_review: "2026-04-02"
+contributor_count: 2
+engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 28
-readme_length: 3969
+repo_size_kb: 16273
+readme_length: 2509
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-03-24"
-star_history: "2026-03-24:948,2026-03-25:1119,2026-03-26:1201"
+ring_history: "assess@2026-03-26"
+star_history: "2026-03-26:912"
 tags:
   - github
-  - "category/開發工具"
-  - "lang/typescript"
+  - "category/ai_ml"
+  - "lang/python"
+  - org
 aliases:
-  - "claude-peers-mcp"
-  - "louislva/claude-peers-mcp"
-  - "讓所有的 Claude 代碼實例可以即時互相通訊。"
+  - "HyperAgents"
+  - "facebookresearch/HyperAgents"
+  - "自我參照的自我改進代理，可以優化任何可計算的任務。"
 ---
 
-# claude-peers-mcp
+# HyperAgents
 
-**948** stars · **474** stars/天 · 建立 2 天前 · TypeScript · 未標註授權
+**912** stars · **152** stars/天 · 建立 6 天前 · Python · NOASSERTION
 
 ```dataviewjs
-const me = dv.page("Repos/louislva--claude-peers-mcp");
+const me = dv.page("Repos/facebookresearch--HyperAgents");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -68,23 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案`
+`ORG`
 
 > [!summary] 一句話摘要
-> 讓所有的 Claude 代碼實例可以即時互相通訊。
+> 自我參照的自我改進代理，可以優化任何可計算的任務。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (474 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在多個 Claude 實例間進行即時通訊的開發者和團隊。
-> **一句話重點** 這個工具讓多個 Claude 實例之間的通訊變得簡單而即時，適合需要快速協作的開發者。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (152 stars/day)
+> **授權** NOASSERTION · **維護** Active (最後推送 2 天前) · **貢獻者** 2 人 · **參與度** Medium
+> **適合** 需要開發自我優化算法的 AI 研究人員和開發者。
+> **一句話重點** HyperAgents 的自我改進能力使其在計算任務中具有獨特的優勢。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/facebookresearch--HyperAgents");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "即時通訊" && p.file.name !== "louislva--claude-peers-mcp" && p.status !== "archived")
+>     .where(p => p.subcategory === "自動化" && p.file.name !== "facebookresearch--HyperAgents" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,113 +96,119 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 即時通訊 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習、3 小時整合，得到即時通訊的效果，值得在小型專案中試用。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
+> **結論** 花 10 小時學習，15 小時整合，得到自我優化的能力，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供即時通訊功能，讓多個 Claude 實例能夠自動發現並互相溝通。
+> 這個專案的核心創新在於其自我參照的自我改進能力，能夠優化任何可計算的任務。
 
 ## 專案簡介
 
-claude-peers 是一個用於 Claude Code 實例之間即時通訊的工具。當你在不同專案中運行多個 Claude 實例時，它們可以自動發現彼此並發送消息。使用者只需在終端機中執行 `claude --dangerously-load-development-channels server:claude-peers`，便可啟動通訊功能。該工具依賴一個運行在 localhost:7899 的 broker daemon，並使用 SQLite 數據庫來管理連接。
+HyperAgents 是一個自我參照的自我改進代理系統，旨在優化各種可計算任務。用戶需透過設置 API 金鑰來啟動系統，然後可以使用 `python generate_loop.py --domains` 指令來運行算法，預設輸出會保存在 `outputs/` 目錄中。這個系統的核心在於其能夠不斷自我優化，通過執行和評估生成的代碼來提升性能。技術上，HyperAgents 使用了 Python 和 Docker，並依賴多個庫如 `requests` 和 `gym`，這使得它能夠在多種環境中靈活運行。這個專案的賣點在於其自我改進的能力，能夠在執行過程中學習並調整策略。
 
-每個 Claude 實例會啟動一個 MCP 伺服器，並每秒輪詢消息，這樣可以確保消息即時送達。該工具的賣點在於簡化了多實例間的通訊，讓開發者能夠快速查詢其他實例的狀態和發送消息。使用者可以透過 `list_peers` 和 `send_message` 指令來互動，並且可以設定自己的工作摘要以便其他實例查看。這種設計使得開發者在多任務環境中能夠更有效率地協作和溝通。
+與傳統的靜態算法相比，HyperAgents 的動態學習能力能夠更好地適應變化的需求。與其他類似工具如 `AlpinDale/parsync` 和 `BigBodyCobain/Shadowbroker` 相比，HyperAgents 提供了更高的靈活性和自我調整的能力，特別是在需要持續優化的任務中。實際使用中，這個系統能夠處理複雜的計算任務，但也需要注意其潛在的安全風險，因為它涉及執行未經信任的代碼。這個專案目前處於早期階段，社群活躍度尚可，但仍需時間來解決現有的問題。對於需要自我優化算法的開發者來說，HyperAgents 是一個值得關注的選擇。
 
-**技術棧**：`TypeScript` · `Bun` · `SQLite`
+**技術棧**：`Python 3.12` · `Docker` · `requests 2.32.4` · `gym 0.23.0`
 
 ## 重點功能
 
-- 即時通訊 — 允許 Claude 實例之間即時發送和接收消息。
-- 自動發現 — Claude 實例能夠自動發現同一機器上的其他實例。
-- 工作摘要 — 每個實例可以設定自己的工作摘要，讓其他實例了解當前工作狀態。
-- 命令行介面 — 提供 CLI 指令如 `list_peers` 和 `send_message` 來進行互動。
-- SQLite 數據庫 — 使用 SQLite 來管理實例之間的連接和消息記錄。
+- 自我改進能力 — 能夠在執行過程中學習並調整策略。
+- 多任務支持 — 可以優化各種可計算的任務，靈活應對不同需求。
+- Docker 支持 — 提供 Dockerfile 以便於在不同環境中運行。
+- 實驗日誌管理 — 實驗日誌以多部分 ZIP 檔案存儲，便於管理和分析。
+- 安全考量 — 提醒用戶執行未經信任的代碼的潛在風險。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 安裝必要的系統依賴
 ```bash
-bun install
+sudo dnf install -y python3.12-devel graphviz graphviz-devel cmake ninja-build bzip2-devel zlib-devel ncurses-devel libffi-devel
 ```
-2. 啟動 broker
+2. 創建虛擬環境並安裝依賴
 ```bash
-bun broker
+python3.12 -m venv venv_nat && source venv_nat/bin/activate && pip install -r requirements.txt
 ```
-3. 啟動 Claude 實例
+3. 構建 Docker 容器
 ```bash
-claude --dangerously-load-development-channels server:claude-peers
+docker build --network=host -t hyperagents .
+```
+4. 設置初始代理
+```bash
+bash ./setup_initial.sh
+```
+5. 運行 HyperAgents
+```bash
+python generate_loop.py --domains
 ```
 
 ## 程式碼範例
 
-```ts
+```python
 {
-  "前置條件": "確保已經啟動 broker 和至少一個 Claude 實例。",
-  "指令": "claude --dangerously-load-development-channels server:claude-peers",
-  "預期輸出": "啟動 Claude 實例並準備接收消息。"
+  "前置條件": "已安裝必要的依賴和設置環境變數。",
+  "指令": "python generate_loop.py --domains",
+  "預期輸出": "預設輸出會保存在 outputs/ 目錄中。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天就累積 948 stars（474/天），forks 86（9.1%），這顯示出相當高的使用興趣。作者 louislva 是一位活躍的開發者，專注於 Claude 相關的工具開發。這個專案解決了多個 Claude 實例間通訊的痛點，之前的方案往往需要手動配置或無法實現即時通訊。近期的推廣和社群討論也可能促進了這個專案的曝光。技術上，這個工具利用了 MCP 協議，這在 Claude 生態系統中是相對新穎的，並且其高效的即時通訊能力吸引了開發者的注意。forks/stars 比率為 9.1%，顯示出有不少開發者在實際修改和使用這個工具。
+> 建立 6 天內累積 912 stars（152/天），forks 135（14.8%），顯示出強勁的增長潛力。這個專案由 Facebook Research 團隊開發，該團隊在 AI 和機器學習領域有著豐富的經驗。HyperAgents 解決了傳統算法在面對動態環境時的不足，提供了一種新的自我改進方法。近期的社群討論和學術引用也提升了其曝光率。技術上，隨著計算能力的提升，這種自我優化的代理系統變得越來越可行，這使得 HyperAgents 成為一個具潛力的工具。forks/stars 比率為 14.8%，顯示出有相當比例的用戶在積極修改和使用這個專案。
 
 ## 適合誰使用
 
-**目標受眾**：需要在多個 Claude 實例間進行即時通訊的開發者和團隊。
+**目標受眾**：需要開發自我優化算法的 AI 研究人員和開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來在多個 Claude 實例之間即時發送消息，因為這樣可以快速協調工作進度，避免重複勞動。
-> - 開發者用它來查詢其他 Claude 實例的工作狀態，因為這樣能夠更好地了解團隊的整體進展。
-> - 測試人員用它來發送測試結果到其他 Claude 實例，因為這樣可以即時獲得反饋並調整測試策略。
+> - AI 研究人員用它來開發自我改進的算法，因為它能夠在多種計算任務中自動優化性能。
+> - 數據科學家用它來自動調整模型參數，因為這樣可以節省大量手動調整的時間。
+> - 開發者用它來測試和評估不同的計算策略，因為其自我學習能力能夠快速適應變化的需求。
 
 ## 架構分析
 
-該專案採用一個 broker daemon 和多個 MCP 伺服器的架構。broker 負責管理所有 Claude 實例的連接，並使用 SQLite 數據庫來存儲狀態和消息。每個 Claude 實例都會啟動一個 MCP 伺服器，並定期向 broker 請求消息，這樣可以確保消息的即時性。
+HyperAgents 的架構設計以模組化為核心，便於擴展和維護。系統主要由多個代理組成，每個代理專注於不同的計算任務，透過 `meta_agent.py` 進行協調。資料流從用戶輸入開始，經過各個代理的處理，最終生成結果並輸出到指定目錄。
 
-選擇這種架構的原因是希望能夠在本地環境中輕鬆管理多個實例，而不需要複雜的網路配置。這種設計的代價是無法跨網路使用，限制了其應用範圍。擴展性方面，當實例數量增加時，broker 可能會成為瓶頸，因為它需要處理所有實例的消息流。
+選擇 Python 作為開發語言，因為其在 AI 和數據科學領域的廣泛應用和豐富的庫支持。這種設計使得系統能夠靈活應對不同的任務需求，但也帶來了對外部庫的依賴，可能增加了維護成本。擴展性方面，隨著代理數量的增加，系統的性能可能會受到影響，特別是在資源有限的環境中。
 
 ## 技術深入分析
 
-claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker 使用 SQLite 作為數據存儲，能夠高效管理多個實例的連接。每個 Claude 實例都會啟動一個 MCP 伺服器，並每秒向 broker 請求消息，這樣可以確保消息的即時性。這種設計使得開發者能夠快速查詢其他實例的狀態，並發送消息。
-
-選擇 TypeScript 和 Bun 作為開發語言和執行環境，主要是因為它們提供了良好的性能和開發體驗。依賴樹相對簡單，主要依賴於 @modelcontextprotocol/sdk，這使得整體架構較為輕量。隨著實例數量的增加，broker 可能成為性能瓶頸，特別是在高負載情況下。整合到現有的開發流程中相對容易，但需要注意版本兼容性問題。
+HyperAgents 的核心技術機制在於其自我參照的設計，這使得系統能夠在執行過程中不斷學習和優化。使用了多個 Python 庫來支持其功能，如 `gym` 用於模擬環境，`requests` 用於 API 通信。這個系統能夠處理多種計算任務，具體性能依賴於所選的代理和任務複雜度。由於使用了 Docker，這使得部署和環境配置變得更加簡單，但也增加了對 Docker 環境的依賴。設計上選擇 Python 是因為其在 AI 領域的廣泛應用，但這也意味著在性能上可能不如某些編譯語言。技術風險方面，執行未經信任的代碼可能導致安全問題，這在設計時需要特別考量。整合方面，HyperAgents 可以與多種主流框架和工具鏈相容，但在某些情況下可能需要額外的適配層。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝和使用指引，並包含範例指令。安裝過程相對順暢，但需要確保 Bun 環境的正確配置。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
+> README 文件提供了清晰的安裝指導和使用範例，整體質量良好。安裝過程需要安裝多個系統依賴，可能對新手造成一定困難。沒有提供專門的入門指南，但基本的使用流程已在文件中說明。文件目前僅提供英文版本，缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 即時消息傳遞，提升多實例間的協作效率。
-> - 簡單的 CLI 指令，易於使用和集成。
-> - 自動發現功能，無需手動配置連接。
+> - 自我改進能力強，能夠適應變化的需求。
+> - 模組化設計，便於擴展和維護。
+> - 支持多種計算任務，靈活性高。
 
 > [!danger] 缺點
-> - 僅限於本地環境，無法在雲端或跨網路使用。
-> - 需要依賴特定版本的 Claude Code，限制了兼容性。
-> - 目前社群活躍度較低，解決問題的資源有限。
+> - 安全風險高，執行未經信任的代碼。
+> - 依賴多個外部庫，可能導致兼容性問題。
+> - 目前功能尚不完全成熟，可能存在穩定性問題。
 
 > [!warning] 注意事項
-> - 僅支援在 localhost 環境中運行，無法跨網路使用。
-> - 需要 Claude Code v2.1.80 以上版本。
-> - 依賴於 Bun 作為執行環境，需確保安裝正確。
+> - 需要高權限執行某些操作。
+> - 執行未經信任的代碼可能存在安全風險。
+> - 依賴多個外部庫，可能導致兼容性問題。
+> - 目前處於早期階段，功能和穩定性尚未完全成熟。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的多實例通訊功能，但主要針對檔案同步，而非即時消息傳遞。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於安全性和加密的通訊，適合需要高安全性的場景。 |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 用於 Telegram 的消息代理，雖然功能相似，但專注於社交媒體平台的整合。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | AlpinDale/parsync 專注於資料同步，而 HyperAgents 提供自我優化的能力，適用於更廣泛的計算任務。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 主要用於數據隱私，而 HyperAgents 則專注於自我改進和優化計算性能。 |
 
 ## 替代方案決策
 
@@ -209,16 +216,16 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於檔案同步，使用不同的協議進行通訊。 | 如果你的主要需求是檔案同步而非即時消息，則應選擇它。 | medium，因為需要重新設計通訊流程。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供加密的消息通訊，適合需要高安全性的應用。 | 如果你的應用需要高安全性和加密，則應選擇它。 | high，因為需要重構整個通訊架構。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | Flowseal/tg-ws-proxy 專注於 Telegram 的 WebSocket 代理，而 HyperAgents 提供更廣泛的自我優化能力。 | 如果你的專案專注於即時通訊和 WebSocket 代理，Flowseal/tg-ws-proxy 會是更合適的選擇。 | low，因為兩者的基本架構和使用方式相似。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | NVIDIA/NemoClaw 專注於深度學習模型的訓練和推理，而 HyperAgents 則針對自我優化的計算任務。 | 如果你的需求主要是深度學習模型的訓練，NVIDIA/NemoClaw 會更合適。 | medium，因為需要重構部分代碼以適應不同的框架。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **claude-peers-mcp** | **parsync** | **Shadowbroker** |
+> | 維度 | **HyperAgents** | **tg-ws-proxy** | **NemoClaw** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於檔案同步，使用不同的協議進行通訊。 | 提供加密的消息通訊，適合需要高安全性的應用。 |
-> | 遷移成本 | - | medium，因為需要重新設計通訊流程。 | high，因為需要重構整個通訊架構。 |
-> | 適用場景 | 主要場景 | 如果你的主要需求是檔案同步而非即時消息，則應選擇它。 | 如果你的應用需要高安全性和加密，則應選擇它。 |
+> | 技術路線 | 本專案 | Flowseal/tg-ws-proxy 專注於 Telegram 的 WebSocket 代理，而 HyperAgents 提供更廣泛的自我優化能力。 | NVIDIA/NemoClaw 專注於深度學習模型的訓練和推理，而 HyperAgents 則針對自我優化的計算任務。 |
+> | 遷移成本 | - | low，因為兩者的基本架構和使用方式相似。 | medium，因為需要重構部分代碼以適應不同的框架。 |
+> | 適用場景 | 主要場景 | 如果你的專案專注於即時通訊和 WebSocket 代理，Fl | 如果你的需求主要是深度學習模型的訓練，NVIDIA/Nemo |
 
 ## 成熟度評估
 
@@ -229,48 +236,49 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 目前不建議在生產環境中使用，適合個人實驗和測試。
+> 適合個人實驗和研究，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 如果未啟用通道，則無法接收消息。
-  - 解法：確保在啟動時正確配置通道。
-- [MEDIUM] Claude 在回覆同伴消息時使用內建的 SendMessage，而非 mcp__claude-peers__send_message。
-  - 解法：檢查配置以確保正確使用通訊協議。
+- **[HIGH]** 執行未經信任的代碼可能導致安全問題，特別是在不受控的環境中。
+  - 解法：在受控環境中運行，並仔細審查生成的代碼。
+- [MEDIUM] Docker 環境配置不當可能導致運行失敗。
+  - 解法：確保 Docker 環境正確配置，並參考官方文檔。
+- [MEDIUM] 依賴庫版本不兼容可能導致錯誤。
+  - 解法：定期檢查依賴庫版本，並根據需求進行更新。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的開發環境 | 非常適合 | 能夠快速實現多實例間的即時通訊，提升協作效率。 |
-| 大型企業的生產環境 | 不適合 | 目前尚未成熟，存在高風險的破壞性變更。 |
-| 個人開發者的實驗項目 | 適合 | 適合用於測試和探索多實例通訊的可能性。 |
-| 需要跨網路的即時通訊需求 | 不適合 | 僅限於本地環境，無法滿足跨網路需求。 |
+| 需要自我優化算法的 AI 研究團隊 | 非常適合 | 其自我改進能力能夠滿足不斷變化的研究需求。 |
+| 小型專案的開發者 | 適合 | 可以快速實現自我優化的功能，但需注意安全風險。 |
+| 大型企業的生產環境 | 不適合 | 目前處於 alpha 階段，穩定性不足，不建議用於關鍵任務。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~10 小時 |
+| 整合時間 | ~15 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習、3 小時整合，得到即時通訊的效果，值得在小型專案中試用。
+> 花 10 小時學習，15 小時整合，得到自我優化的能力，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，並且不存取敏感資料。依賴的庫和框架在社群中有一定的信任度，適合在 CI/CD 中使用。
+> 中等風險：需要高權限執行，並可能存取敏感資料，使用時需謹慎。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/facebookresearch--HyperAgents");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -305,7 +313,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/facebookresearch--HyperAgents");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -329,146 +337,138 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 86 |
-| Open Issues | 8 |
+| Forks | 135 |
+| Open Issues | 9 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-03-21 |
-| 建立日期 | 2026-03-21 |
-| Repo 大小 | 28 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/louislva/claude-peers-mcp) |
+| 最後推送 | 2026-03-23 |
+| 建立日期 | 2026-03-19 |
+| Repo 大小 | 15.9 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/facebookresearch/HyperAgents) |
 
 > [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@modelcontextprotocol/sdk` `@types/bun`
+> `requirements.txt` 中的核心套件：
+> `requests` `dotenv` `tqdm` `backoff` `matplotlib` `docker` `datasets` `GitPython` `litellm` `pandas` `sympy` `hydra-core` `gym` `gymnasium` `setuptools`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 99
+>     "Dockerfile" : 1
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@louislva](https://github.com/louislva) | 5 |
+> | [@Rybolos](https://github.com/Rybolos) | 5 |
+> | [@dependabot[bot]](https://github.com/dependabot[bot]) | 2 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度較低，目前只有 8 個開放的問題尚未解決。
+**社群活躍度**：社群活躍度尚可，但仍需時間來解決現有的問題。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-20 ~ 2026-03-21）
-> **活躍天數** 2 天 · **最新 commit** nicer square
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#8](https://github.com/louislva/claude-peers-mcp/issues/8) | cannot receive messages if channels are not enabled | 0 | 0 |
-> | [#6](https://github.com/louislva/claude-peers-mcp/issues/6) | Claude uses built-in SendMessage instead of mcp__claude-peer | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-03-20 ~ 2026-03-23）
+> **活躍天數** 2 天 · **最新 commit** adding paper citation
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # claude-peers
+> HyperAgents
 > 
-> Let your Claude Code instances find each other and talk. When you're running 5 sessions across different projects, any Claude can discover the others and send messages that arrive instantly.
+> Self-referential self-improving agents that can optimize for any computable task
 > 
+> ---
+> 
+> ## Setup
+> ```bash
+> # API keys, put these into .env file
+> OPENAI_API_KEY=...
+> ANTHROPIC_API_KEY=...
+> GEMINI_API_KEY=...
 > ```
->   Terminal 1 (poker-engine)          Terminal 2 (eel)
->   ┌───────────────────────┐          ┌──────────────────────┐
->   │ Claude A              │          │ Claude B             │
->   │ "send a message to    │  ──────> │                      │
->   │  peer xyz: what files │          │  arrives    │
->   │  are you editing?"    │   **Tip:** Add it to an alias so you don't have to type it every time:
-> >
-> > ```bash
-> > alias claudepeers='claude --dangerously-load-development-channels server:claude-peers'
-> > ```
-> 
-> ### 4. Open a second session and try it
-> 
-> In another terminal, start Claude Code the same way. Then ask either one:
-> 
-> > List all peers on this machine
-> 
-> It'll show every running instance with their working directory, git repo, and a summary of what they're doing. Then:
-> 
-> > Send a message to peer [id]: "what are you working on?"
-> 
-> The other Claude receives it immediately and responds.
-> 
-> ## What Claude can do
-> 
-> | Tool             | What it does                                                                   |
-> | ---------------- | ------------------------------------------------------------------------------ |
-> | `list_peers`     | Find other Claude Code instances — scoped to `machine`, `directory`, or `repo` |
-> | `send_message`   | Send a message to another instance by ID (arrives instantly via channel push)  |
-> | `set_summary`    | Describe what you're working on (visible to other peers)                       |
-> | `check_messages` | Manually check for messages (fallback if not using channel mode)               |
-> 
-> ## How it works
-> 
-> A **broker daemon** runs on `localhost:7899` with a SQLite database. Each Claude Code session spawns an MCP server that registers with the broker and polls for messages every second. Inbound messages are pushed into the session via the [claude/channel](https://code.claude.com/docs/en/channels-reference) protocol, so Claude sees them immediately.
-> 
-> ```
->                     ┌───────────────────────────┐
->                     │  broker daemon            │
->                     │  localhost:7899 + SQLite  │
->                     └──────┬───────────────┬────┘
->                            │               │
->                       MCP server A    MCP server B
->                       (stdio)         (stdio)
->                            │               │
->                       Claude A         Claude B
-> ```
-> 
-> The broker auto-launches when the first session starts. It cleans up dead peers automatically. Everything is localhost-only.
-> 
-> ## Auto-summary
-> 
-> If you set `OPENAI_API_KEY` in your environment, each instance generates a brief summary on startup using `gpt-5.4-nano` (costs fractions of a cent). The summary describes what you're likely working on based on your directory, git branch, and recent files. Other instances see this when they call `list_peers`.
-> 
-> Without the API key, Claude sets its own summary via the `set_summary` tool.
-> 
-> ## CLI
-> 
-> You can also inspect and interact from the command line:
 > 
 > ```bash
-> cd ~/claude-peers-mcp
-> 
-> bun cli.ts status            # broker status + all peers
-> bun cli.ts peers             # list peers
-> bun cli.ts send     # send a message into a Claude session
-> bun cli.ts kill-broker       # stop the broker
+> # Install things
+> sudo dnf install -y python3.12-devel
+> sudo dnf install -y graphviz graphviz-devel cmake ninja-build bzip2-devel zlib-devel ncurses-devel libffi-devel
 > ```
 > 
-> ## Configuration
+> ```bash
+> # Create virtual environment
+> python3.12 -m venv venv_nat
+> source venv_nat/bin/activate
+> pip install -r requirements.txt
+> pip install -r requirements_dev.txt
+> # To build the docker container
+> docker build --network=host -t hyperagents .
+> ```
 > 
-> | Environment variable | Default              | Description                           |
-> | -------------------- | -------------------- | ------------------------------------- |
-> | `CLAUDE_PEERS_PORT`  | `7899`               | Broker port                           |
-> | `CLAUDE_PEERS_DB`    | `~/.claude-peers.db` | SQLite database path                  |
-> | `OPENAI_API_KEY`     | —                    | Enables auto-summary via gpt-5.4-nano |
+> ```bash
+> # Setup initial agents
+> bash ./setup_initial.sh
+> ```
 > 
-> ## Requirements
+> ## Running HyperAgents
 > 
-> - [Bun](https://bun.sh)
-> - Claude Code v2.1.80+
-> - claude.ai login (channels require it — API key auth won't work)
+> ```bash
+> # See the script for args, and baseline selections
+> python generate_loop.py --domains 
+> ```
+> 
+> By default, outputs will be saved in `outputs/` directory.
+> 
+> ## File Structure
+> - `agent/` code for using foundation models
+> - `analysis/` scripts used for plotting and analysis
+> - `domains/` code for each domain
+> - `utils/` common code used in the repo
+> - `run_meta_agent.py` script to help run the meta agent and get the diffs
+> - `meta_agent.py` main implementation of the meta agent
+> - `task_agent.py` main implementation of the task agent
+> - `generate_loop.py` entry point for running the algorithm
+> 
+> ## Logs from Experiments
+> 
+> The experiment logs are stored as a multi-part ZIP archive. To extract them, ensure all .z01, .z02, etc., files are in the same directory as the .zip file, then run:
+> ```bash
+> zip -s 0 outputs_os_parts.zip --out unsplit_logs.zip
+> unzip unsplit_outputs.zip
+> ```
+> 
+> ## Safety Consideration
+> > [!WARNING]  
+> > This repository involves executing untrusted, model-generated code. We strongly advise users to be aware of the associated safety risks. While it is highly unlikely that such code will perform overtly malicious actions under our current settings and with the models we use, it may still behave destructively due to limitations in model capability or alignment. By using this repository, you acknowledge and accept these risks.
+> 
+> ## Citing
+> If you find this project useful, please consider citing:
+> ```bibtex
+> @misc{zhang2026hyperagents,
+>       title={Hyperagents}, 
+>       author={Jenny Zhang and Bingchen Zhao and Wannan Yang and Jakob Foerster and Jeff Clune and Minqi Jiang and Sam Devlin and Tatiana Shavrina},
+>       year={2026},
+>       eprint={2603.19461},
+>       archivePrefix={arXiv},
+>       primaryClass={cs.AI},
+>       url={https://arxiv.org/abs/2603.19461}, 
+> }
+> ```
 
 ## 延伸閱讀
 
-相關概念：[[即時通訊]] · [[MCP Protocol]] · [[CLI/TUI]]
+相關概念：[[自動化]] · [[強化學習]] · [[AI 代理]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[Infatoshi--OpenSquirrel|Infatoshi/OpenSquirrel]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[VoltAgent--awesome-codex-subagents|VoltAgent/awesome-codex-subagents]]
 
-[GitHub](https://github.com/louislva/claude-peers-mcp)
+[GitHub](https://github.com/facebookresearch/HyperAgents)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：即時通訊）
+> [!note]- 直接競品（同子分類：自動化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "即時通訊" AND file.name != "louislva--claude-peers-mcp"
+> WHERE subcategory = "自動化" AND file.name != "facebookresearch--HyperAgents"
 > SORT stars DESC
 > ```
 
@@ -476,7 +476,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "louislva--claude-peers-mcp"
+> WHERE category = "AI/ML" AND file.name != "facebookresearch--HyperAgents"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -485,7 +485,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "louislva--claude-peers-mcp" AND status != "archived"
+> WHERE language = "Python" AND file.name != "facebookresearch--HyperAgents" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -494,15 +494,15 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W13" AND file.name != "louislva--claude-peers-mcp"
+> WHERE week = "2026-W13" AND file.name != "facebookresearch--HyperAgents"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["即時通訊","MCP Protocol","CLI/TUI"];
+> const concepts = ["自動化","強化學習","AI 代理"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "louislva--claude-peers-mcp" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "facebookresearch--HyperAgents" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -515,12 +515,12 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/facebookresearch--HyperAgents");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "louislva--claude-peers-mcp" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "facebookresearch--HyperAgents" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -536,7 +536,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "louislva" AND file.name != "louislva--claude-peers-mcp"
+> WHERE owner = "facebookresearch" AND file.name != "facebookresearch--HyperAgents"
 > SORT stars DESC
 > ```
 
@@ -544,7 +544,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/facebookresearch--HyperAgents");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -561,7 +561,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/facebookresearch--HyperAgents");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -594,7 +594,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/facebookresearch--HyperAgents");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -618,7 +618,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/facebookresearch--HyperAgents");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -655,7 +655,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/facebookresearch--HyperAgents");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -738,7 +738,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-03-24** — 首次收錄
+> **2026-03-26** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -754,6 +754,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-03-26|2026-03-26]] — 再次上榜，1.2k stars
-- [[2026-03-25|2026-03-25]] — 再次上榜，1.1k stars
-- [[2026-03-24|2026-03-24]] — 首次收錄，948 stars
+- [[2026-03-26|2026-03-26]] — 首次收錄，912 stars

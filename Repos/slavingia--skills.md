@@ -7,12 +7,12 @@ language: N/A
 license: N/A
 description: "Claude Code skills based on The Minimalist Entrepreneur by Sahil Lavingia"
 homepage: "https://minimalistentrepreneur.com"
-stars: 1076
-stars_per_day: 1076
-forks: 78
-open_issues: 2
+stars: 2498
+stars_per_day: 1249
+forks: 139
+open_issues: 1
 created: 2026-03-23
-pushed_at: 2026-03-23
+pushed_at: 2026-03-25
 first_seen: 2026-03-25
 week: "2026-W13"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "提供基於《極簡主義創業者》的 Claude Code 技能，幫�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-28"
+appearances: 2
+next_review: "2026-03-29"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-25"
-star_history: "2026-03-25:1076"
+star_history: "2026-03-25:1076,2026-03-26:2498"
 tags:
   - github
   - "category/開發工具"
@@ -351,7 +351,7 @@ git clone https://github.com/slavingia/skills.git ~/.claude/plugins/skills
 
 相關概念：[[創業]] · [[產品管理]] · [[行銷策略]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[Infatoshi--OpenSquirrel|Infatoshi/OpenSquirrel]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
 
 [GitHub](https://github.com/slavingia/skills) · [官方網站](https://minimalistentrepreneur.com)
 
@@ -647,4 +647,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-26|2026-03-26]] — 再次上榜，2.5k stars
 - [[2026-03-25|2026-03-25]] — 首次收錄，1.1k stars

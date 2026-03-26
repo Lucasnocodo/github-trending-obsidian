@@ -7,10 +7,10 @@ language: N/A
 license: N/A
 description: "A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders."
 homepage: ""
-stars: 1094
-stars_per_day: 547
-forks: 98
-open_issues: 0
+stars: 1511
+stars_per_day: 504
+forks: 139
+open_issues: 3
 created: 2026-03-22
 pushed_at: 2026-03-24
 first_seen: 2026-03-25
@@ -30,8 +30,8 @@ use_case: "將任何代碼庫轉換為美觀的互動式單頁 HTML 課程，讓
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-28"
+appearances: 2
+next_review: "2026-03-29"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-25"
-star_history: "2026-03-25:1094"
+star_history: "2026-03-25:1094,2026-03-26:1511"
 tags:
   - github
   - "category/開發工具"
@@ -358,7 +358,7 @@ Say: 'Turn this codebase into an interactive course'
 
 相關概念：[[教學資源]] · [[互動式學習]] · [[視覺化]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[Infatoshi--OpenSquirrel|Infatoshi/OpenSquirrel]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
 
 [GitHub](https://github.com/zarazhangrui/codebase-to-course)
 
@@ -654,4 +654,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-26|2026-03-26]] — 再次上榜，1.5k stars
 - [[2026-03-25|2026-03-25]] — 首次收錄，1.1k stars
