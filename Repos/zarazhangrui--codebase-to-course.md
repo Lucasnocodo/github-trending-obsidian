@@ -7,9 +7,9 @@ language: N/A
 license: N/A
 description: "A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders."
 homepage: ""
-stars: 1511
-stars_per_day: 504
-forks: 139
+stars: 1750
+stars_per_day: 438
+forks: 155
 open_issues: 3
 created: 2026-03-22
 pushed_at: 2026-03-24
@@ -30,8 +30,8 @@ use_case: "將任何代碼庫轉換為美觀的互動式單頁 HTML 課程，讓
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-03-29"
+appearances: 3
+next_review: "2026-03-30"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-25"
-star_history: "2026-03-25:1094,2026-03-26:1511"
+star_history: "2026-03-25:1094,2026-03-26:1511,2026-03-27:1750"
 tags:
   - github
   - "category/開發工具"
@@ -654,5 +654,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-27|2026-03-27]] — 再次上榜，1.8k stars
 - [[2026-03-26|2026-03-26]] — 再次上榜，1.5k stars
 - [[2026-03-25|2026-03-25]] — 首次收錄，1.1k stars

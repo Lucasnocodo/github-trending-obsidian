@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "微信Clawbot接入任意Agent"
 homepage: ""
-stars: 892
-stars_per_day: 297
-forks: 96
+stars: 919
+stars_per_day: 230
+forks: 98
 open_issues: 4
 created: 2026-03-22
 pushed_at: 2026-03-25
@@ -30,8 +30,8 @@ use_case: "讓微信接入任意 AI Agent，簡化多種智能體的整合。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-29"
+appearances: 2
+next_review: "2026-03-30"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 67
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-26"
-star_history: "2026-03-26:892"
+star_history: "2026-03-26:892,2026-03-27:919"
 tags:
   - github
   - "category/開發工具"
@@ -862,4 +862,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-27|2026-03-27]] — 再次上榜，919 stars
 - [[2026-03-26|2026-03-26]] — 首次收錄，892 stars

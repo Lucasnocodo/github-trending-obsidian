@@ -7,9 +7,9 @@ language: N/A
 license: NOASSERTION
 description: "dontbesilent 的商业诊断 Skills for Claude Code"
 homepage: ""
-stars: 1542
-stars_per_day: 308
-forks: 248
+stars: 1652
+stars_per_day: 275
+forks: 258
 open_issues: 3
 created: 2026-03-20
 pushed_at: 2026-03-23
@@ -30,8 +30,8 @@ use_case: "提供商业诊断工具与知识库，帮助用户优化决策与内
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-03-29"
+appearances: 5
+next_review: "2026-03-30"
 contributor_count: 0
 engagement: "medium"
 issue_close_rate: 33
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-23"
-star_history: "2026-03-23:909,2026-03-23:924,2026-03-24:1255,2026-03-25:1421,2026-03-26:1542"
+star_history: "2026-03-23:909,2026-03-23:924,2026-03-24:1255,2026-03-25:1421,2026-03-26:1542,2026-03-27:1652"
 tags:
   - github
   - "category/開發工具"
@@ -852,6 +852,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-27|2026-03-27]] — 再次上榜，1.7k stars
 - [[2026-03-26|2026-03-26]] — 再次上榜，1.5k stars
 - [[2026-03-25|2026-03-25]] — 再次上榜，1.4k stars
 - [[2026-03-24|2026-03-24]] — 再次上榜，1.3k stars

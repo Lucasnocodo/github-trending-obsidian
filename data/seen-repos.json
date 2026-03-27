@@ -589,10 +589,10 @@
   },
   "dontbesilent2025/dbskill": {
     "first_seen": "2026-03-23",
-    "last_seen": "2026-03-26",
-    "times_seen": 4,
+    "last_seen": "2026-03-27",
+    "times_seen": 5,
     "stars_first": 909,
-    "stars_last": 1542
+    "stars_last": 1652
   },
   "mattprusak/autoresearch-genealogy": {
     "first_seen": "2026-03-23",
@@ -610,24 +610,24 @@
   },
   "louislva/claude-peers-mcp": {
     "first_seen": "2026-03-24",
-    "last_seen": "2026-03-26",
-    "times_seen": 3,
+    "last_seen": "2026-03-27",
+    "times_seen": 4,
     "stars_first": 948,
-    "stars_last": 1201
+    "stars_last": 1259
   },
   "zarazhangrui/codebase-to-course": {
     "first_seen": "2026-03-25",
-    "last_seen": "2026-03-26",
-    "times_seen": 2,
+    "last_seen": "2026-03-27",
+    "times_seen": 3,
     "stars_first": 1094,
-    "stars_last": 1511
+    "stars_last": 1750
   },
   "slavingia/skills": {
     "first_seen": "2026-03-25",
-    "last_seen": "2026-03-26",
-    "times_seen": 2,
+    "last_seen": "2026-03-27",
+    "times_seen": 3,
     "stars_first": 1076,
-    "stars_last": 2498
+    "stars_last": 3636
   },
   "eze-is/web-access": {
     "first_seen": "2026-03-25",
@@ -638,10 +638,10 @@
   },
   "dou-jiang/codex-console": {
     "first_seen": "2026-03-26",
-    "last_seen": "2026-03-26",
-    "times_seen": 1,
+    "last_seen": "2026-03-27",
+    "times_seen": 2,
     "stars_first": 933,
-    "stars_last": 933
+    "stars_last": 1045
   },
   "facebookresearch/HyperAgents": {
     "first_seen": "2026-03-26",
@@ -652,16 +652,37 @@
   },
   "wong2/weixin-agent-sdk": {
     "first_seen": "2026-03-26",
-    "last_seen": "2026-03-26",
-    "times_seen": 1,
+    "last_seen": "2026-03-27",
+    "times_seen": 2,
     "stars_first": 892,
-    "stars_last": 892
+    "stars_last": 919
   },
   "HKUDS/OpenSpace": {
     "first_seen": "2026-03-26",
-    "last_seen": "2026-03-26",
-    "times_seen": 1,
+    "last_seen": "2026-03-27",
+    "times_seen": 2,
     "stars_first": 883,
-    "stars_last": 883
+    "stars_last": 1284
+  },
+  "alvinunreal/awesome-opensource-ai": {
+    "first_seen": "2026-03-27",
+    "last_seen": "2026-03-27",
+    "times_seen": 1,
+    "stars_first": 1024,
+    "stars_last": 1024
+  },
+  "GAIR-NLP/daVinci-MagiHuman": {
+    "first_seen": "2026-03-27",
+    "last_seen": "2026-03-27",
+    "times_seen": 1,
+    "stars_first": 934,
+    "stars_last": 934
+  },
+  "opa334/darksword-kexploit": {
+    "first_seen": "2026-03-27",
+    "last_seen": "2026-03-27",
+    "times_seen": 1,
+    "stars_first": 891,
+    "stars_last": 891
   }
 }
