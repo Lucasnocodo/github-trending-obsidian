@@ -7,10 +7,10 @@ language: JavaScript
 license: Apache-2.0
 description: "Run OpenClaw more securely inside NVIDIA OpenShell with managed inference"
 homepage: "https://docs.nvidia.com/nemoclaw/latest/"
-stars: 16764
-stars_per_day: 1676
-forks: 1844
-open_issues: 422
+stars: 17068
+stars_per_day: 1552
+forks: 1917
+open_issues: 443
 created: 2026-03-15
 pushed_at: 2026-03-26
 first_seen: 2026-03-18
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-18
-use_case: "在 NVIDIA OpenShell 中更安全地運行 OpenClaw，並進行管理推論。"
+use_case: "在 NVIDIA OpenShell 中更安全地運行 OpenClaw，並進行管理推理。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 5
 next_review: "2026-03-25"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 22
-repo_size_kb: 6108
-readme_length: 9994
+issue_close_rate: 23
+repo_size_kb: 5975
+readme_length: 9381
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-18"
-star_history: "2026-03-18:4282,2026-03-18:4313,2026-03-19:8457,2026-03-19:8511,2026-03-20:12647,2026-03-20:12676,2026-03-21:14333,2026-03-21:14336,2026-03-22:14882,2026-03-22:14885,2026-03-23:15356,2026-03-24:15935,2026-03-25:16379,2026-03-26:16764"
+star_history: "2026-03-18:4282,2026-03-18:4313,2026-03-19:8457,2026-03-19:8511,2026-03-20:12647,2026-03-20:12676,2026-03-21:14333,2026-03-21:14336,2026-03-22:14882,2026-03-22:14885,2026-03-23:15356,2026-03-24:15935,2026-03-25:16379,2026-03-26:16764,2026-03-27:17068"
 tags:
   - github
   - "category/ai_ml"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "NemoClaw"
   - "NVIDIA/NemoClaw"
-  - "在 NVIDIA OpenShell 中更安全地運行 OpenClaw，並進行管理推論。"
+  - "在 NVIDIA OpenShell 中更安全地運行 OpenClaw，並進行管理推理。"
 ---
 
 # NemoClaw
 
-**16.8k** stars · **1.7k** stars/天 · 建立 10 天前 · JavaScript · Apache-2.0
+**17.1k** stars · **1.6k** stars/天 · 建立 11 天前 · JavaScript · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/NVIDIA--NemoClaw");
@@ -73,13 +73,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG` `easy-install`
 
 > [!summary] 一句話摘要
-> 在 NVIDIA OpenShell 中更安全地運行 OpenClaw，並進行管理推論。
+> 在 NVIDIA OpenShell 中更安全地運行 OpenClaw，並進行管理推理。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Viral (1.7k stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Viral (1.6k stars/day)
 > **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要在安全環境中運行 AI 代理的開發者和研究人員。
-> **一句話重點** NemoClaw 將安全性和易用性結合，為 AI 代理的運行提供了一個理想的解決方案。
+> **適合** 需要在安全環境中運行 AI 助手的開發者和研究人員。
+> **一句話重點** NemoClaw 的安全設計使其在運行 AI 助手時提供了更高的保障，特別適合需要強化安全性的場景。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -103,28 +103,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到一個安全的 AI 代理運行環境，值得投入。
+> **結論** 花 5 小時學、3 小時整合，得到安全的 AI 助手運行環境，值得考慮。
 
 > [!abstract] 核心創新
-> NemoClaw 提供了一個安全的沙盒環境來運行 OpenClaw 代理，並通過政策控制來管理所有的網路請求和文件訪問。
+> NemoClaw 提供了一個安全的沙盒環境來運行 OpenClaw，這在同類工具中是獨特的。
 
 ## 專案簡介
 
-NemoClaw 是一個開源參考堆疊，旨在簡化在 NVIDIA OpenShell 中運行 OpenClaw 的過程，並提供額外的安全性。使用者可以透過 `curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash` 指令快速安裝，安裝過程中會創建一個新的 OpenClaw 實例，並配置安全策略。NemoClaw 利用 OpenShell 的沙盒環境，所有網路請求和文件訪問都受到政策的約束，這樣可以防止未經授權的訪問。它的設計考量了安全性和易用性，並提供了 CLI 和 TUI 介面來與代理進行互動。這種設計使得開發者能夠在受控環境中運行自動化代理，並且可以根據需求自定義網路政策。
+NVIDIA NemoClaw 是一個開源參考堆疊，旨在更安全地運行 OpenClaw 這類的持續助手。用戶可以透過簡單的安裝腳本來設置一個沙盒環境，並在其中運行 OpenClaw，這樣能夠利用 NVIDIA OpenShell 提供的安全功能。安裝過程中，NemoClaw 會自動創建一個新的 OpenClaw 實例，並配置推理和安全策略。關鍵指令如 `curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash` 用於安裝，並在安裝完成後用戶可以透過 `nemoclaw my-assistant connect` 來連接沙盒。這個工具的賣點在於其安全性，因為它使用了 Landlock 和 seccomp 來限制沙盒內的行為，從而降低潛在的安全風險。NemoClaw 目前處於 alpha 階段，並不適合生產環境，接口和行為可能會隨著開發而變動。
 
-NemoClaw 的架構包括插件、藍圖和沙盒，這些組件協同工作以確保推論過程的安全性和高效性。相較於其他類似工具，NemoClaw 提供了更強的安全性和政策控制，特別適合需要高安全性的應用場景。使用者需注意，這是一個 alpha 階段的軟體，尚未準備好進入生產環境，未來可能會有接口和行為的變更。對於需要在受限環境中運行 AI 代理的開發者來說，NemoClaw 提供了一個理想的解決方案。
+它的設計考慮了用戶的安全需求，並提供了靈活的沙盒政策配置，這使得用戶能夠根據需求自定義網路策略。與其他類似工具相比，NemoClaw 的優勢在於它的安全性和易用性，特別適合需要高安全性環境的開發者。使用者需要注意的是，NemoClaw 對硬體資源有一定要求，建議至少有 8GB 的 RAM 來避免 OOM 問題。此外，社群的活躍度和問題解決率相對較低，這可能會影響使用者的體驗。整體而言，這是一個值得關注的專案，特別是對於那些在開發過程中需要強化安全性的團隊。
 
-**技術棧**：`Node.js >= 20` · `Docker` · `OpenShell`
+**技術棧**：`Node.js >=22.16.0` · `Docker` · `OpenShell`
 
 ## 重點功能
 
-- 安全沙盒環境 — 使用 OpenShell 提供的沙盒來隔離 OpenClaw 的運行，防止未經授權的訪問。
-- 簡單的安裝流程 — 透過單行指令快速安裝和配置環境。
-- 自定義網路政策 — 使用 YAML 文件來定義和管理沙盒的網路政策。
-- CLI 和 TUI 介面 — 提供命令行和圖形界面來與代理進行互動。
-- 支持多種開源模型 — 包含 NVIDIA Nemotron 等多種模型，方便用戶進行推論。
-- 即時監控和日誌 — 提供命令來檢查代理狀態和日誌，便於故障排除。
-- 社群支持 — 鼓勵用戶提交問題和建議，並參與討論以改善專案。
+- 安全沙盒環境 — 使用 Landlock 和 seccomp 限制沙盒內的行為，降低安全風險。
+- 自動化安裝 — 透過簡單的命令安裝和配置 OpenClaw 實例，節省時間。
+- 靈活的網路政策配置 — 支援靜態和動態的沙盒政策設定，滿足不同需求。
+- 即時日誌查看 — 使用 `nemoclaw my-assistant logs --follow` 指令，實時監控沙盒狀態。
+- 多平台支援 — 支援 Docker、Colima 和 WSL 等多種容器運行時環境。
 
 ## 快速開始
 
@@ -136,9 +134,9 @@ curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash
 ```bash
 nemoclaw my-assistant connect
 ```
-3. 檢查代理狀態
+3. 查看日誌
 ```bash
-nemoclaw my-assistant status
+nemoclaw my-assistant logs --follow
 ```
 
 ## 程式碼範例
@@ -147,67 +145,61 @@ nemoclaw my-assistant status
 {
   "前置條件": "已安裝 NemoClaw 並創建沙盒",
   "指令": "openclaw agent --agent main --local -m \"hello\" --session-id test",
-  "預期輸出": "完整的回應直接在終端中顯示"
+  "預期輸出": "完整的回應直接在終端顯示"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 10 天就累積 16764 stars（1676/天），forks 1844（11%），顯示出強烈的社群興趣。這個專案由 NVIDIA 團隊開發，解決了在不安全環境中運行 AI 代理的痛點，特別是針對 OpenClaw 的需求。此專案的推出引起了開發者的關注，因為它提供了一個安全的運行環境，並且能夠簡化配置過程。社群的反饋和問題討論也顯示出使用者對於功能和穩定性的需求。這個工具的出現正好符合了對於安全性和易用性的需求，特別是在 AI 代理的運行上。
+> 建立 11 天就累積 17068 stars（1552/天），forks 1917（11.2%），顯示出強烈的興趣和參與度。這個專案的主要貢獻者來自 NVIDIA，過去在 AI 和開源領域有豐富的經驗。NemoClaw 解決了在運行 OpenClaw 時的安全性問題，這在過去是個痛點，因為許多類似工具缺乏足夠的安全防護。近期的推廣活動和社群討論也促進了其曝光率。技術上，NemoClaw 的設計依賴於 NVIDIA 的 OpenShell，這使得它能夠提供更高效的安全管理，適合需要高安全性的應用場景。forks/stars 比率為 11.2%，顯示出有相當比例的用戶在進行實際修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要在安全環境中運行 AI 代理的開發者和研究人員。
+**目標受眾**：需要在安全環境中運行 AI 助手的開發者和研究人員。
 
 > [!example] 使用場景
-> - 後端工程師用它來在受控環境中運行 OpenClaw 代理，因為這樣可以確保所有操作都在安全的沙盒中進行，避免潛在的安全風險。
-> - DevOps 工程師用它來快速部署和管理 AI 代理，因為 NemoClaw 提供了簡單的 CLI 指令來配置和監控代理狀態。
-> - 研究人員用它來測試不同的推論模型，因為它支持多種開源模型並能夠輕鬆切換。
+> - AI 研究人員用它來在安全的沙盒環境中運行 OpenClaw 助手，因為這樣可以有效降低安全風險，並利用 NVIDIA 的推理能力進行實驗。
+> - DevOps 工程師用它來在 CI/CD 流程中集成 OpenClaw，因為它提供了安全的運行環境，能夠防止潛在的安全漏洞。
+> - 獨立開發者用它來快速部署 AI 助手，因為 NemoClaw 的安裝和配置過程簡單，能夠快速上手。
 
 ## 架構分析
 
-NemoClaw 採用模組化架構，主要由插件、藍圖和沙盒組成。插件負責 CLI 命令的執行，藍圖則管理沙盒的創建和推論設置。這樣的設計使得每個組件都能獨立運行，並且能夠根據需求進行擴展。
-
-資料流方面，所有請求都經過 OpenShell 的網路政策進行檢查，確保安全性。選擇這種架構的代價是需要額外的配置和管理，但帶來了更高的安全性和靈活性。擴展性方面，隨著使用者需求的增加，可能需要更多的資源來支持更大的推論模型和更複雜的政策。
-
-這樣的設計使得 NemoClaw 能夠適應不同的使用場景，從小型實驗到大型生產環境。
+NemoClaw 的架構基於 NVIDIA OpenShell，這是一個輕量級的容器化平台，專為安全運行而設計。它的資料流包括安裝過程中創建的沙盒和運行的 OpenClaw 實例，這些都在 Docker 環境中運行。選擇這種架構的原因是能夠提供高效的安全管理，並且易於擴展。這樣的設計使得用戶能夠快速上手，但在高負載時可能會遇到性能瓶頸，特別是 RAM 使用上。整體而言，這種架構能夠支持多種運行時環境，並且能夠靈活配置網路政策，這是其設計的一大優勢。
 
 ## 技術深入分析
 
-NemoClaw 的核心技術機制是基於 OpenShell 的沙盒環境，這樣的設計使得所有的網路請求和文件訪問都受到嚴格的政策控制。它使用 TypeScript 和 Python 來實現 CLI 和藍圖的功能，並依賴 Docker 來提供容器化的運行環境。這種架構的效能特性在於能夠快速啟動和隔離運行，但在資源使用上可能會受到限制，特別是在低配置的機器上。設計取捨方面，選擇使用 Node.js 和 Docker 使得開發和部署變得簡單，但也可能導致依賴性增加。技術風險方面，隨著使用者需求的增長，可能會面臨擴展性瓶頸，特別是在推論模型的選擇和管理上。整合方面，NemoClaw 可以輕鬆與現有的 CI/CD 流程結合，但對於某些特定的環境配置可能需要額外的調整。
+NemoClaw 的核心技術機制在於其基於 NVIDIA OpenShell 的安全沙盒架構，這使得用戶能夠在受限的環境中運行 OpenClaw。這種設計不僅提高了安全性，還能夠靈活配置網路政策。效能方面，NemoClaw 需要至少 8GB 的 RAM，因為在安裝和運行過程中，Docker 和 OpenShell 會消耗大量內存。選擇 Node.js 作為主要執行環境使得開發和維護變得簡單，但也可能帶來性能瓶頸，特別是在高負載情況下。技術風險方面，NemoClaw 目前處於 alpha 階段，未來可能會面臨接口變更和穩定性問題。整合方面，NemoClaw 能夠與 Docker 和其他容器化技術良好協作，但在某些平台上可能會遇到兼容性問題。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含詳細的安裝步驟和範例，安裝過程相對順暢，但對於某些環境可能需要額外的配置。建議新手在安裝前仔細檢查先決條件，並參考官方文檔進行設置。整體而言，花 30 分鐘應該能夠成功運行起來。
+> README 文件清晰，提供了詳細的安裝步驟和範例。安裝過程相對順暢，但對於低配設備可能會遇到性能問題。文件目前僅提供英文版本，沒有多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供安全的沙盒環境，防止未經授權的訪問。
-> - 簡單的安裝和配置流程，適合快速上手。
-> - 支持多種開源模型，靈活性高。
-> - 社群活躍，能夠快速獲得支持和反饋。
+> - 提供安全的沙盒環境，降低運行風險。
+> - 安裝和配置過程簡單，適合快速上手。
+> - 靈活的網路政策設定，滿足多樣化需求。
 
 > [!danger] 缺點
-> - 目前處於 alpha 階段，穩定性不足。
-> - 對於低配置機器的支持有限，可能需要額外的內存。
-> - 不支持 Windows 原生運行，限制了使用者範圍。
-> - 某些功能仍在開發中，可能會有變更。
+> - 目前仍在 alpha 階段，穩定性不足。
+> - 對硬體資源有要求，可能不適合低配設備。
+> - 社群活躍度較低，問題解決速度慢。
 
 > [!warning] 注意事項
-> - 目前處於 alpha 階段，尚未準備好進入生產環境。
-> - 需要至少 8 GB RAM，否則可能會觸發 OOM killer。
-> - 不支持 Windows 原生運行，需透過 WSL。
-> - 對於 macOS，Podman 尚未完全支持。
+> - 僅支援 Linux 和 macOS，Windows 需透過 WSL 使用。
+> - 目前處於 alpha 階段，接口和行為可能隨時變動。
+> - 對硬體資源有要求，建議至少 8GB 的 RAM。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [NVIDIA/OpenClaw](https://github.com/NVIDIA/OpenClaw) | NemoClaw 提供了額外的安全性和政策控制，而 OpenClaw 本身缺乏這些功能。 |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 後者專注於醫療技能的應用，而 NemoClaw 更加通用，適合各種 AI 代理的運行。 |
+| [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) | NemoClaw 是基於 OpenShell 的安全運行環境，提供了更高層次的安全性和易用性。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | OpenClaw-Medical-Skills 專注於醫療領域的應用，而 NemoClaw 提供更通用的安全運行環境。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 提供的功能更為廣泛，但缺乏 NemoClaw 的安全性設計。 |
 
 ## 替代方案決策
 
@@ -215,16 +207,16 @@ NemoClaw 的核心技術機制是基於 OpenShell 的沙盒環境，這樣的設
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [NVIDIA/OpenClaw](https://github.com/NVIDIA/OpenClaw) | OpenClaw 本身缺乏 NemoClaw 提供的安全性和政策控制功能，無法在受控環境中運行。 | 如果只需要基本的 OpenClaw 功能而不需要額外的安全性，則可以選擇 OpenClaw。 | medium，因為需要重新配置環境和安全政策。 |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的技能應用，而 NemoClaw 更加通用，適合各種 AI 代理的運行。 | 如果你的應用場景專注於醫療領域，則可以選擇這個專案。 | low，因為相似的技術棧和運行環境。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 使用 Go 語言實現，專注於高效的資料同步，與 NemoClaw 的安全性設計不同。 | 如果你的應用需要高效的資料同步而非安全性，則應選擇它。 | low，因為兩者的功能範圍不同，遷移不會太困難。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 提供 WebSocket 代理功能，專注於即時通訊，並不具備 NemoClaw 的安全性。 | 如果你的需求是即時通訊而非安全運行，則應選擇它。 | medium，因為需要重新設計通訊邏輯。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **NemoClaw** | **OpenClaw** | **OpenClaw-Medical-Skills** |
+> | 維度 | **NemoClaw** | **parsync** | **tg-ws-proxy** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | OpenClaw 本身缺乏 NemoClaw 提供的安全性和政策控制功能，無法在受控環境中運行。 | 專注於醫療領域的技能應用，而 NemoClaw 更加通用，適合各種 AI 代理的運行。 |
-> | 遷移成本 | - | medium，因為需要重新配置環境和安全政策。 | low，因為相似的技術棧和運行環境。 |
-> | 適用場景 | 主要場景 | 如果只需要基本的 OpenClaw 功能而不需要額外的安全性 | 如果你的應用場景專注於醫療領域，則可以選擇這個專案。 |
+> | 技術路線 | 本專案 | 使用 Go 語言實現，專注於高效的資料同步，與 NemoClaw 的安全性設計不同。 | 提供 WebSocket 代理功能，專注於即時通訊，並不具備 NemoClaw 的安全性。 |
+> | 遷移成本 | - | low，因為兩者的功能範圍不同，遷移不會太困難。 | medium，因為需要重新設計通訊邏輯。 |
+> | 適用場景 | 主要場景 | 如果你的應用需要高效的資料同步而非安全性，則應選擇它。 | 如果你的需求是即時通訊而非安全運行，則應選擇它。 |
 
 ## 成熟度評估
 
@@ -235,27 +227,27 @@ NemoClaw 的核心技術機制是基於 OpenShell 的沙盒環境，這樣的設
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人實驗和測試，但不建議用於生產環境。
+> 適合個人試用和早期實驗，不建議用於生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 安裝過程中可能會遇到 Docker 連接錯誤
-  - 解法：確保 Docker 運行並正確配置
-- [MEDIUM] 在低內存環境中可能會觸發 OOM killer
-  - 解法：增加 swap 空間以改善性能
-- [MEDIUM] 某些功能在 alpha 階段可能不穩定
-  - 解法：定期檢查更新和社群反饋
+- **[HIGH]** 在 macOS 上首次運行時，可能因缺少開發者工具而失敗
+  - 解法：確保安裝 Xcode Command Line Tools
+- [MEDIUM] 在低於 8GB RAM 的設備上可能會遇到 OOM 問題
+  - 解法：配置至少 8GB 的 swap 空間
+- [MEDIUM] 安裝後 `nemoclaw` 命令可能無法找到
+  - 解法：運行 `source ~/.bashrc` 或重新打開終端
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊開發 AI 代理 | 非常適合 | 提供了安全的沙盒環境和簡單的配置流程。 |
-| 大型企業的生產環境 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
-| 研究機構進行 AI 測試 | 適合 | 支持多種開源模型，靈活性高。 |
-| 個人開發者進行實驗 | 非常適合 | 簡單的安裝和配置流程，易於上手。 |
+| 需要高安全性環境的 AI 開發團隊 | 非常適合 | NemoClaw 提供了強化的安全性設計，適合這類需求。 |
+| 資源有限的小型開發團隊 | 普通 | 對硬體資源有要求，可能不適合低配設備。 |
+| 希望快速部署 AI 助手的獨立開發者 | 適合 | 安裝過程簡單，能夠快速上手。 |
+| 大型企業的生產環境 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
 
 ## 採用成本分析
 
@@ -267,12 +259,12 @@ NemoClaw 的核心技術機制是基於 OpenShell 的沙盒環境，這樣的設
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到一個安全的 AI 代理運行環境，值得投入。
+> 花 5 小時學、3 小時整合，得到安全的 AI 助手運行環境，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：NemoClaw 本身不需要高權限運行，但需要 Docker 和 Node.js 的安裝。它不會存取敏感資料，依賴鏈的信任程度高，適合在 CI/CD 中使用。
+> 低風險：NemoClaw 本身不需要高權限，但在運行時會存取 Docker 和 Node.js 環境。依賴鏈中有一些未審計的依賴，使用時需謹慎。
 
 ## 健康度儀表板
 
@@ -337,25 +329,25 @@ NemoClaw 的核心技術機制是基於 OpenShell 的沙盒環境，這樣的設
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 1.8k |
-| Open Issues | 422 |
-| Issue 解決率 | 22% (121 closed) |
+| Forks | 1.9k |
+| Open Issues | 443 |
+| Issue 解決率 | 23% (133 closed) |
 | 最後推送 | 2026-03-26 |
 | 建立日期 | 2026-03-15 |
 | 官方網站 | [Link](https://docs.nvidia.com/nemoclaw/latest/) |
-| Repo 大小 | 6.0 MB |
+| Repo 大小 | 5.8 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/NVIDIA/NemoClaw) |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `openclaw` `@commitlint/cli` `@commitlint/config-conventional` `@eslint/js` `@j178/prek` `@types/node` `@vitest/coverage-v8` `eslint` `typescript` `vitest`
+> `openclaw` `@commitlint/cli` `@commitlint/config-conventional` `@eslint/js` `@j178/prek` `@types/node` `@vitest/coverage-v8` `execa` `eslint` `tsx` `typescript` `vitest`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 43
->     "Shell" : 33
->     "TypeScript" : 19
+>     "JavaScript" : 45
+>     "Shell" : 32
+>     "TypeScript" : 18
 >     "Python" : 5
 >     "Dockerfile" : 1
 > ```
@@ -363,21 +355,21 @@ NemoClaw 的核心技術機制是基於 OpenShell 的沙盒環境，這樣的設
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@ericksoa](https://github.com/ericksoa) | 166 |
+> | [@ericksoa](https://github.com/ericksoa) | 167 |
 > | [@miyoungc](https://github.com/miyoungc) | 61 |
-> | [@cv](https://github.com/cv) | 27 |
+> | [@cv](https://github.com/cv) | 31 |
 > | [@jacobtomlinson](https://github.com/jacobtomlinson) | 25 |
-> | [@kjw3](https://github.com/kjw3) | 15 |
+> | [@kjw3](https://github.com/kjw3) | 16 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和回應問題。
+**社群活躍度**：社群活躍度中等，問題解決率約 23%。
 **連結**：[文件](https://docs.nvidia.com/nemoclaw/latest/)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-25 ~ 2026-03-26）
-> **活躍天數** 2 天 · **最新 commit** fix: make ulimit best-effort, fix PATH test regression (#947)
+> [!abstract] 最近 10 次 commit（2026-03-26 ~ 2026-03-26）
+> **活躍天數** 1 天 · **最新 commit** fix: standardize Node.js minimum version to 22.16 (#840)
 
 ## 熱門議題
 
@@ -385,10 +377,10 @@ NemoClaw 的核心技術機制是基於 OpenShell 的沙盒環境，這樣的設
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#65](https://github.com/NVIDIA/NemoClaw/issues/65) | Support for jetson nano `Platform: AGX Thor/Orin` | 8 | 2 |
+> | [#924](https://github.com/NVIDIA/NemoClaw/issues/924) | refactor(cli): shell consolidation, TypeScript migration & o | 5 | 2 |
 > | [#93](https://github.com/NVIDIA/NemoClaw/issues/93) | [Bug] Telegram agent exits with code 255: "sandbox not found `priority: medium` `Integration: Telegram` | 5 | 1 |
 > | [#50](https://github.com/NVIDIA/NemoClaw/issues/50) | Fedora - Docker - Onboarding cannot find Docker `Docker` | 5 | 6 |
-> | [#368](https://github.com/NVIDIA/NemoClaw/issues/368) | How to use other providers/model like google/gemini-3-pro `documentation` `enhancement: provider` | 4 | 3 |
-> | [#315](https://github.com/NVIDIA/NemoClaw/issues/315) | Local vLLM inference from sandbox on WSL2 + RTX 5090 — worka `Platform: Windows/WSL` | 4 | 6 |
+> | [#888](https://github.com/NVIDIA/NemoClaw/issues/888) | Gateway restart regenerates TLS certificates, breaking exist | 4 | 1 |
 
 ## README 摘錄
 
@@ -442,7 +434,7 @@ NemoClaw 的核心技術機制是基於 OpenShell 的沙盒環境，這樣的設
 > | Dependency | Version                          |
 > |------------|----------------------------------|
 > | Linux      | Ubuntu 22.04 LTS or later |
-> | Node.js    | 20 or later |
+> | Node.js    | 22.16 or later |
 > | npm        | 10 or later |
 > | Container runtime | Supported runtime installed and running |
 > | [OpenShell](https://github.com/NVIDIA/OpenShell) | Installed |
@@ -472,6 +464,7 @@ NemoClaw 的核心技術機制是基於 OpenShell 的沙盒環境，這樣的設
 > 3. Run the NemoClaw installer.
 > 
 > This avoids the two most common first-run failures on macOS:
+> 
 > - missing developer tools needed by the installer and Node.js toolchain
 > - Docker connection errors when no supported container runtime is installed or running
 > 
@@ -533,6 +526,23 @@ NemoClaw 的核心技術機制是基於 OpenShell 的沙盒環境，這樣的設
 > ---
 > 
 > 
+> ## Host-Side State and Config
+> 
+> NemoClaw keeps its operator-facing state on the host rather than inside the sandbox.
+> These are the main files new users usually need to locate:
+> 
+> | Path | Purpose |
+> |---|---|
+> | `~/.nemoclaw/credentials.json` | Provider credentials saved during onboarding |
+> | `~/.nemoclaw/sandboxes.json` | Registered sandbox metadata, including the default sandbox selection |
+> | `~/.openclaw/openclaw.json` | Host OpenClaw configuration that NemoClaw snapshots or restores during migration flows |
+> 
+> Common environment variables for optional services and local access include `TELEGRAM_BOT_TOKEN`, `ALLOWED_CHAT_IDS`, and `CHAT_UI_URL`.
+> For normal sandbox setup and reconfiguration, prefer `nemoclaw onboard` over editing these files by hand.
+> 
+> ---
+> 
+> 
 > ## Configuring Sandbox Policy
 > 
 > The sandbox policy is defined in a declarative YAML file and enforced by the OpenShell runtime.
@@ -551,28 +561,7 @@ NemoClaw 的核心技術機制是基於 OpenShell 的沙盒環境，這樣的設
 > 
 > When the agent attempts to reach an endpoint not covered by the policy, OpenShell blocks the request and surfaces it in the TUI (`openshell term`) for the operator to approve or deny in real time. Approved endpoints persist for the current session only.
 > 
-> For step-by-step instructions, see [Customize Network Policy](https://docs.nvidia.com/nemoclaw/latest/network-policy/customize-network-policy.html). For the underlying enforcement details, see the OpenShell [Policy Schema](https://docs.nvidia.com/openshell/latest/reference/policy-schema.html) and [Sandbox Policies](https://docs.nvidia.com/openshell/latest/sandboxes/policies.html) documentation.
-> 
-> ---
-> 
-> 
-> ### Chat with the Agent
-> 
-> Connect to the sandbox, then chat with the agent through the TUI or the CLI.
-> 
-> #### Connect to the Sandbox
-> 
-> Run the following command to connect to the sandbox:
-> 
-> ```bash
-> nemoclaw my-assistant connect
-> ```
-> 
-> This connects you to the sandbox shell `sandbox@my-assistant:~$` where you can run `openclaw` commands.
-> 
-> #### OpenClaw TUI
-> 
-> In the sandbox shell, run the following command to open the OpenClaw TUI, which opens an interact
+> For step-by-step instructions, see [Customize Network Policy](https://docs.nvidia.com/ne
 
 ## 延伸閱讀
 
