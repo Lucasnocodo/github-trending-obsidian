@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "codex-console 是一个集成化控制台项目，支持任务管理、批量处理、数据导出、自动上传、日志查看与打包支持。"
 homepage: ""
-stars: 1048
-stars_per_day: 210
-forks: 633
-open_issues: 23
+stars: 1146
+stars_per_day: 191
+forks: 664
+open_issues: 24
 created: 2026-03-21
-pushed_at: 2026-03-26
+pushed_at: 2026-03-27
 first_seen: 2026-03-26
 week: "2026-W13"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "提供集成化控制台，支持任务管理、批量处理、数据
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-03-30"
+appearances: 3
+next_review: "2026-04-04"
 contributor_count: 2
 engagement: "high"
 issue_close_rate: 12
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-26"
-star_history: "2026-03-26:933,2026-03-26:937,2026-03-27:1045,2026-03-27:1048"
+star_history: "2026-03-26:933,2026-03-26:937,2026-03-27:1045,2026-03-27:1048,2026-03-28:1146"
 tags:
   - github
   - "category/開發工具"
@@ -977,5 +977,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-28|2026-03-28]] — 再次上榜，1.1k stars
 - [[2026-03-27|2026-03-27]] — 再次上榜，1.0k stars
 - [[2026-03-26|2026-03-26]] — 首次收錄，933 stars

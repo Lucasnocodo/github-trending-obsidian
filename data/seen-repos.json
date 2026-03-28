@@ -610,24 +610,24 @@
   },
   "louislva/claude-peers-mcp": {
     "first_seen": "2026-03-24",
-    "last_seen": "2026-03-27",
-    "times_seen": 4,
+    "last_seen": "2026-03-28",
+    "times_seen": 5,
     "stars_first": 948,
-    "stars_last": 1259
+    "stars_last": 1296
   },
   "zarazhangrui/codebase-to-course": {
     "first_seen": "2026-03-25",
-    "last_seen": "2026-03-27",
-    "times_seen": 3,
+    "last_seen": "2026-03-28",
+    "times_seen": 4,
     "stars_first": 1094,
-    "stars_last": 1750
+    "stars_last": 2069
   },
   "slavingia/skills": {
     "first_seen": "2026-03-25",
-    "last_seen": "2026-03-27",
-    "times_seen": 3,
+    "last_seen": "2026-03-28",
+    "times_seen": 4,
     "stars_first": 1076,
-    "stars_last": 3636
+    "stars_last": 4473
   },
   "eze-is/web-access": {
     "first_seen": "2026-03-25",
@@ -638,10 +638,10 @@
   },
   "dou-jiang/codex-console": {
     "first_seen": "2026-03-26",
-    "last_seen": "2026-03-27",
-    "times_seen": 2,
+    "last_seen": "2026-03-28",
+    "times_seen": 3,
     "stars_first": 933,
-    "stars_last": 1045
+    "stars_last": 1146
   },
   "facebookresearch/HyperAgents": {
     "first_seen": "2026-03-26",
@@ -659,30 +659,44 @@
   },
   "HKUDS/OpenSpace": {
     "first_seen": "2026-03-26",
-    "last_seen": "2026-03-27",
-    "times_seen": 2,
+    "last_seen": "2026-03-28",
+    "times_seen": 3,
     "stars_first": 883,
-    "stars_last": 1284
+    "stars_last": 1473
   },
   "alvinunreal/awesome-opensource-ai": {
     "first_seen": "2026-03-27",
-    "last_seen": "2026-03-27",
-    "times_seen": 1,
+    "last_seen": "2026-03-28",
+    "times_seen": 2,
     "stars_first": 1024,
-    "stars_last": 1024
+    "stars_last": 1460
   },
   "GAIR-NLP/daVinci-MagiHuman": {
     "first_seen": "2026-03-27",
-    "last_seen": "2026-03-27",
-    "times_seen": 1,
+    "last_seen": "2026-03-28",
+    "times_seen": 2,
     "stars_first": 934,
-    "stars_last": 934
+    "stars_last": 1014
   },
   "opa334/darksword-kexploit": {
     "first_seen": "2026-03-27",
-    "last_seen": "2026-03-27",
-    "times_seen": 1,
+    "last_seen": "2026-03-28",
+    "times_seen": 2,
     "stars_first": 891,
-    "stars_last": 891
+    "stars_last": 956
+  },
+  "magnum6actual/flipoff": {
+    "first_seen": "2026-03-28",
+    "last_seen": "2026-03-28",
+    "times_seen": 1,
+    "stars_first": 1337,
+    "stars_last": 1337
+  },
+  "CoderLuii/HolyClaude": {
+    "first_seen": "2026-03-28",
+    "last_seen": "2026-03-28",
+    "times_seen": 1,
+    "stars_first": 969,
+    "stars_last": 969
   }
 }

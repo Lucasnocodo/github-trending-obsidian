@@ -1,64 +1,65 @@
 ---
-repo: louislva/claude-peers-mcp
-url: https://github.com/louislva/claude-peers-mcp
-owner: louislva
+repo: magnum6actual/flipoff
+url: https://github.com/magnum6actual/flipoff
+owner: magnum6actual
 owner_type: User
-language: TypeScript
+language: JavaScript
 license: N/A
-description: "Allow all your Claude Codes to message each other ad-hoc!"
+description: "Free split-flap display emulator for any TV. The classic flip-board look, without the $3,500 hardware."
 homepage: ""
-stars: 1296
-stars_per_day: 216
-forks: 128
-open_issues: 17
-created: 2026-03-21
-pushed_at: 2026-03-21
-first_seen: 2026-03-24
+stars: 1337
+stars_per_day: 1337
+forks: 184
+open_issues: 7
+created: 2026-03-26
+pushed_at: 2026-03-26
+first_seen: 2026-03-28
 week: "2026-W13"
 month: "2026-03"
-category: "開發工具"
-subcategory: "即時通訊"
+category: "其他"
+subcategory: "顯示工具"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-03-24
-use_case: "讓所有的 Claude 代碼實例可以即時互相通訊。"
+last_reviewed: 2026-03-28
+use_case: "將任何電視轉變為復古的翻板顯示器，無需昂貴的硬體設備。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
+appearances: 1
 next_review: "2026-03-31"
-contributor_count: 1
-engagement: "low"
+contributor_count: 0
+engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 28
-readme_length: 3969
-bus_factor: 1
+repo_size_kb: 672
+readme_length: 3034
+bus_factor: 0
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-03-24"
-star_history: "2026-03-24:948,2026-03-25:1119,2026-03-26:1201,2026-03-27:1259,2026-03-28:1296"
+ring_history: "assess@2026-03-28"
+star_history: "2026-03-28:1337"
 tags:
   - github
-  - "category/開發工具"
-  - "lang/typescript"
+  - "category/其他"
+  - "lang/javascript"
+  - easy_install
 aliases:
-  - "claude-peers-mcp"
-  - "louislva/claude-peers-mcp"
-  - "讓所有的 Claude 代碼實例可以即時互相通訊。"
+  - "flipoff"
+  - "magnum6actual/flipoff"
+  - "將任何電視轉變為復古的翻板顯示器，無需昂貴的硬體設備。"
 ---
 
-# claude-peers-mcp
+# flipoff
 
-**948** stars · **474** stars/天 · 建立 2 天前 · TypeScript · 未標註授權
+**1.3k** stars · **1.3k** stars/天 · 建立 1 天前 · JavaScript · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/louislva--claude-peers-mcp");
+const me = dv.page("Repos/magnum6actual--flipoff");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -68,23 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案`
+`easy-install`
 
 > [!summary] 一句話摘要
-> 讓所有的 Claude 代碼實例可以即時互相通訊。
+> 將任何電視轉變為復古的翻板顯示器，無需昂貴的硬體設備。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (474 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在多個 Claude 實例間進行即時通訊的開發者和團隊。
-> **一句話重點** 這個工具讓多個 Claude 實例之間的通訊變得簡單而即時，適合需要快速協作的開發者。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (1.3k stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 想要在活動或商業場合中使用復古翻板顯示效果的設計師或開發者。
+> **一句話重點** FlipOff 是一個將復古翻板顯示器帶入現代的創意專案，無需昂貴的硬體。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/magnum6actual--flipoff");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "即時通訊" && p.file.name !== "louislva--claude-peers-mcp" && p.status !== "archived")
+>     .where(p => p.subcategory === "顯示工具" && p.file.name !== "magnum6actual--flipoff" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,113 +96,108 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 即時通訊 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 顯示工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習、3 小時整合，得到即時通訊的效果，值得在小型專案中試用。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~1h · **綁定風險** low
+> **結論** 花 1 小時學習、1 小時整合，得到簡單的翻板顯示效果，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供即時通訊功能，讓多個 Claude 實例能夠自動發現並互相溝通。
+> 提供了一個免費的翻板顯示器模擬，無需昂貴的硬體。
 
 ## 專案簡介
 
-claude-peers 是一個用於 Claude Code 實例之間即時通訊的工具。當你在不同專案中運行多個 Claude 實例時，它們可以自動發現彼此並發送消息。使用者只需在終端機中執行 `claude --dangerously-load-development-channels server:claude-peers`，便可啟動通訊功能。該工具依賴一個運行在 localhost:7899 的 broker daemon，並使用 SQLite 數據庫來管理連接。
+FlipOff 是一個免費的開源網頁應用，模擬經典的機械翻板顯示器，讓使用者能夠將電視或大型顯示器轉變為復古風格的顯示屏。使用者只需打開 `index.html`，即可在全螢幕模式下享受真實的翻板動畫和音效。每個翻板的動畫過程中，顯示的字符會經過隨機的顏色背景變化，並伴隨著真實的機械聲音，增強了使用體驗。這個工具的賣點在於其零依賴性，完全使用純 HTML/CSS/JS，無需任何框架或建置工具，且能在離線環境下運行。使用者可以透過簡單的鍵盤操作來導航顯示內容，並可自定義顯示的訊息、顏色和動畫時間。
 
-每個 Claude 實例會啟動一個 MCP 伺服器，並每秒輪詢消息，這樣可以確保消息即時送達。該工具的賣點在於簡化了多實例間的通訊，讓開發者能夠快速查詢其他實例的狀態和發送消息。使用者可以透過 `list_peers` 和 `send_message` 指令來互動，並且可以設定自己的工作摘要以便其他實例查看。這種設計使得開發者在多任務環境中能夠更有效率地協作和溝通。
+技術上，FlipOff 使用了 Web Audio API 來播放音效，並透過 JavaScript 控制每個翻板的動畫邏輯，這使得整體體驗非常流暢。相較於其他類似的工具，FlipOff 的優勢在於其簡單的安裝過程和完整的功能，無需註冊或訂閱費用，這使得它對於喜愛復古風格的使用者來說非常具吸引力。使用者在自定義內容時，可以輕鬆修改 `js/constants.js` 文件來調整顯示的訊息和顏色，這樣的靈活性使得 FlipOff 適合各種場合的使用。社群活躍度尚可，但目前仍有一些未解決的問題，這可能影響到使用者的體驗。整體來看，FlipOff 是一個值得嘗試的創意專案，尤其適合喜愛復古風格的開發者和設計師。
 
-**技術棧**：`TypeScript` · `Bun` · `SQLite`
+**技術棧**：`JavaScript` · `CSS` · `HTML`
 
 ## 重點功能
 
-- 即時通訊 — 允許 Claude 實例之間即時發送和接收消息。
-- 自動發現 — Claude 實例能夠自動發現同一機器上的其他實例。
-- 工作摘要 — 每個實例可以設定自己的工作摘要，讓其他實例了解當前工作狀態。
-- 命令行介面 — 提供 CLI 指令如 `list_peers` 和 `send_message` 來進行互動。
-- SQLite 數據庫 — 使用 SQLite 來管理實例之間的連接和消息記錄。
+- 真實的翻板動畫 — 每個翻板獨立動畫，顯示過程中有隨機顏色背景。
+- 機械聲音效果 — 使用真實錄音的機械聲音，增強使用體驗。
+- 全螢幕模式 — 按 `F` 鍵可進入全螢幕顯示，適合大型顯示器。
+- 離線運行 — 無需外部依賴，完全在本地運行。
+- 自定義訊息 — 編輯 `js/constants.js` 文件可修改顯示的文字和顏色。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 克隆這個 repo
 ```bash
-bun install
+git clone https://github.com/magnum6actual/flipoff.git
 ```
-2. 啟動 broker
+2. 在瀏覽器中打開 `index.html`
 ```bash
-bun broker
+open flipoff/index.html
 ```
-3. 啟動 Claude 實例
+3. 按 `F` 進入全螢幕模式
 ```bash
-claude --dangerously-load-development-channels server:claude-peers
+按 `F` 鍵
 ```
 
 ## 程式碼範例
 
-```ts
+```js
 {
-  "前置條件": "確保已經啟動 broker 和至少一個 Claude 實例。",
-  "指令": "claude --dangerously-load-development-channels server:claude-peers",
-  "預期輸出": "啟動 Claude 實例並準備接收消息。"
+  "前置條件": "確保在本地環境中有 Python 3",
+  "指令": "python3 -m http.server 8080",
+  "預期輸出": "在瀏覽器中打開 http://localhost:8080"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天就累積 948 stars（474/天），forks 86（9.1%），這顯示出相當高的使用興趣。作者 louislva 是一位活躍的開發者，專注於 Claude 相關的工具開發。這個專案解決了多個 Claude 實例間通訊的痛點，之前的方案往往需要手動配置或無法實現即時通訊。近期的推廣和社群討論也可能促進了這個專案的曝光。技術上，這個工具利用了 MCP 協議，這在 Claude 生態系統中是相對新穎的，並且其高效的即時通訊能力吸引了開發者的注意。forks/stars 比率為 9.1%，顯示出有不少開發者在實際修改和使用這個工具。
+> 建立 1 天就累積 1337 stars（1337/天），forks 184（13.8%），這顯示出強烈的興趣和需求。作者的背景不明，但這個專案解決了高價翻板顯示器的痛點，提供了一個免費的替代方案。沒有明顯的觸發事件，但其獨特的功能和免費的特性吸引了許多使用者。技術上，這個工具的可行性來自於現代瀏覽器對 HTML/CSS/JS 的良好支援。forks/stars 比率為 13.8%，這表示有相當一部分使用者在進行實際修改，顯示出對這個專案的實際應用需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要在多個 Claude 實例間進行即時通訊的開發者和團隊。
+**目標受眾**：想要在活動或商業場合中使用復古翻板顯示效果的設計師或開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來在多個 Claude 實例之間即時發送消息，因為這樣可以快速協調工作進度，避免重複勞動。
-> - 開發者用它來查詢其他 Claude 實例的工作狀態，因為這樣能夠更好地了解團隊的整體進展。
-> - 測試人員用它來發送測試結果到其他 Claude 實例，因為這樣可以即時獲得反饋並調整測試策略。
+> - 活動策劃者用它來在婚禮上展示祝福語，因為其復古的外觀和音效能夠增添氛圍。
+> - 小型咖啡館的老闆用它來顯示每日特價，因為這樣可以吸引顧客的注意，並且不需要額外的硬體成本。
+> - 學校的老師用它來展示學生的成就，因為這樣的展示方式能夠激勵學生，並且操作簡單。
 
 ## 架構分析
 
-該專案採用一個 broker daemon 和多個 MCP 伺服器的架構。broker 負責管理所有 Claude 實例的連接，並使用 SQLite 數據庫來存儲狀態和消息。每個 Claude 實例都會啟動一個 MCP 伺服器，並定期向 broker 請求消息，這樣可以確保消息的即時性。
-
-選擇這種架構的原因是希望能夠在本地環境中輕鬆管理多個實例，而不需要複雜的網路配置。這種設計的代價是無法跨網路使用，限制了其應用範圍。擴展性方面，當實例數量增加時，broker 可能會成為瓶頸，因為它需要處理所有實例的消息流。
+FlipOff 的架構基於單頁應用的設計，所有功能都在 `index.html` 中實現。資料流方面，使用 JavaScript 控制翻板的動畫和聲音播放，並利用 DOM 操作來更新顯示內容。這種設計使得應用能夠在不同的設備上運行，從手機到 4K 顯示器都能保持良好的顯示效果。選擇純 HTML/CSS/JS 的架構使得安裝和使用變得簡單，但也限制了未來擴展的可能性，例如無法輕易加入複雜的功能或第三方庫。整體而言，這種設計適合小型專案，但在面對更大規模的應用時，可能會遇到性能瓶頸。
 
 ## 技術深入分析
 
-claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker 使用 SQLite 作為數據存儲，能夠高效管理多個實例的連接。每個 Claude 實例都會啟動一個 MCP 伺服器，並每秒向 broker 請求消息，這樣可以確保消息的即時性。這種設計使得開發者能夠快速查詢其他實例的狀態，並發送消息。
-
-選擇 TypeScript 和 Bun 作為開發語言和執行環境，主要是因為它們提供了良好的性能和開發體驗。依賴樹相對簡單，主要依賴於 @modelcontextprotocol/sdk，這使得整體架構較為輕量。隨著實例數量的增加，broker 可能成為性能瓶頸，特別是在高負載情況下。整合到現有的開發流程中相對容易，但需要注意版本兼容性問題。
+FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動畫和聲音播放，這樣的設計使得整個應用能夠在任何現代瀏覽器中運行。每個翻板的動畫是獨立的，透過 DOM 操作來實現，這樣的設計讓使用者能夠享受到流暢的視覺效果。效能方面，由於是純前端應用，對於資源的需求相對較低，但在顯示大量訊息時可能會出現延遲。選擇不使用任何框架或庫，雖然降低了學習曲線，但也限制了未來的擴展性。技術風險方面，隨著使用者需求的增加，可能會面臨功能擴展的挑戰，特別是在需要更複雜的動畫或互動時。整合方面，由於是純前端應用，與現有的技術生態整合相對簡單，但缺乏與其他工具的直接整合能力。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝和使用指引，並包含範例指令。安裝過程相對順暢，但需要確保 Bun 環境的正確配置。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
+> README 文件提供了清晰的使用說明，並且包含了簡單的範例。安裝過程非常順暢，只需打開 `index.html` 即可運行。文件目前僅提供英文版本，缺乏多語言支持，這可能對非英語使用者造成困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 即時消息傳遞，提升多實例間的協作效率。
-> - 簡單的 CLI 指令，易於使用和集成。
-> - 自動發現功能，無需手動配置連接。
+> - 免費且開源，無需額外費用。
+> - 簡單易用，無需註冊或訂閱。
+> - 可在多種設備上運行，適應性強。
 
 > [!danger] 缺點
-> - 僅限於本地環境，無法在雲端或跨網路使用。
-> - 需要依賴特定版本的 Claude Code，限制了兼容性。
-> - 目前社群活躍度較低，解決問題的資源有限。
+> - 功能相對簡單，無法滿足高級需求。
+> - 不支援多語言，僅限於英文。
+> - 社群活躍度尚可，問題解決率低。
 
 > [!warning] 注意事項
-> - 僅支援在 localhost 環境中運行，無法跨網路使用。
-> - 需要 Claude Code v2.1.80 以上版本。
-> - 依賴於 Bun 作為執行環境，需確保安裝正確。
+> - 僅支援現代瀏覽器，舊版瀏覽器可能無法正常運行。
+> - 不支援多語言，僅提供英文界面。
+> - 無法自動更新顯示內容，需手動編輯文件。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的多實例通訊功能，但主要針對檔案同步，而非即時消息傳遞。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於安全性和加密的通訊，適合需要高安全性的場景。 |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 用於 Telegram 的消息代理，雖然功能相似，但專注於社交媒體平台的整合。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這是一個用於同步文件的工具，與 FlipOff 的顯示功能無關，適用場景不同。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 這是一個網路安全工具，與 FlipOff 的娛樂性質完全不同。 |
 
 ## 替代方案決策
 
@@ -209,16 +205,16 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於檔案同步，使用不同的協議進行通訊。 | 如果你的主要需求是檔案同步而非即時消息，則應選擇它。 | medium，因為需要重新設計通訊流程。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供加密的消息通訊，適合需要高安全性的應用。 | 如果你的應用需要高安全性和加密，則應選擇它。 | high，因為需要重構整個通訊架構。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 這是一個用於 Telegram 的 WebSocket 代理工具，與 FlipOff 的顯示功能無關，適用場景不同。 | 如果你的需求是進行即時通訊的代理，而非顯示內容。 | low，因為這兩者的功能和目的完全不同。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 這是一個針對 NVIDIA 硬體的優化工具，與 FlipOff 的娛樂性質完全不同。 | 如果你需要針對 NVIDIA 硬體進行性能優化，而非顯示內容。 | medium，因為需要重新考慮整體架構和需求。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **claude-peers-mcp** | **parsync** | **Shadowbroker** |
+> | 維度 | **flipoff** | **tg-ws-proxy** | **NemoClaw** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於檔案同步，使用不同的協議進行通訊。 | 提供加密的消息通訊，適合需要高安全性的應用。 |
-> | 遷移成本 | - | medium，因為需要重新設計通訊流程。 | high，因為需要重構整個通訊架構。 |
-> | 適用場景 | 主要場景 | 如果你的主要需求是檔案同步而非即時消息，則應選擇它。 | 如果你的應用需要高安全性和加密，則應選擇它。 |
+> | 技術路線 | 本專案 | 這是一個用於 Telegram 的 WebSocket 代理工具，與 FlipOff 的顯示功能無關，適用場景不同。 | 這是一個針對 NVIDIA 硬體的優化工具，與 FlipOff 的娛樂性質完全不同。 |
+> | 遷移成本 | - | low，因為這兩者的功能和目的完全不同。 | medium，因為需要重新考慮整體架構和需求。 |
+> | 適用場景 | 主要場景 | 如果你的需求是進行即時通訊的代理，而非顯示內容。 | 如果你需要針對 NVIDIA 硬體進行性能優化，而非顯示內容 |
 
 ## 成熟度評估
 
@@ -229,48 +225,50 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 目前不建議在生產環境中使用，適合個人實驗和測試。
+> 適合個人試用或小型專案，但不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 如果未啟用通道，則無法接收消息。
-  - 解法：確保在啟動時正確配置通道。
-- [MEDIUM] Claude 在回覆同伴消息時使用內建的 SendMessage，而非 mcp__claude-peers__send_message。
-  - 解法：檢查配置以確保正確使用通訊協議。
+- [MEDIUM] 在某些瀏覽器中，音效可能無法正常播放
+  - 解法：確保瀏覽器允許自動播放音訊
+- **[HIGH]** 自定義訊息時，格式不正確可能導致顯示錯誤
+  - 解法：仔細檢查 `js/constants.js` 中的格式
+- [MEDIUM] 在某些解析度下，顯示可能不完全
+  - 解法：調整 CSS 以適應不同的顯示器
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的開發環境 | 非常適合 | 能夠快速實現多實例間的即時通訊，提升協作效率。 |
-| 大型企業的生產環境 | 不適合 | 目前尚未成熟，存在高風險的破壞性變更。 |
-| 個人開發者的實驗項目 | 適合 | 適合用於測試和探索多實例通訊的可能性。 |
-| 需要跨網路的即時通訊需求 | 不適合 | 僅限於本地環境，無法滿足跨網路需求。 |
+| 小型咖啡館的每日特價顯示 | 非常適合 | 簡單易用且無需額外硬體成本。 |
+| 大型活動的祝福語展示 | 適合 | 能夠吸引注意並增添氛圍。 |
+| 學校的成就展示 | 普通 | 雖然能展示內容，但功能較為簡單。 |
+| 需要高級動畫效果的商業展示 | 不適合 | 缺乏複雜的動畫和互動功能。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~3 小時 |
-| 維護負擔 | medium |
-| 綁定風險 | medium |
+| 學習時間 | ~1 小時 |
+| 整合時間 | ~1 小時 |
+| 維護負擔 | low |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習、3 小時整合，得到即時通訊的效果，值得在小型專案中試用。
+> 花 1 小時學習、1 小時整合，得到簡單的翻板顯示效果，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，並且不存取敏感資料。依賴的庫和框架在社群中有一定的信任度，適合在 CI/CD 中使用。
+> 低風險：這個工具不需要高權限，且不會存取敏感資料，依賴鏈簡單，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/magnum6actual--flipoff");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -305,7 +303,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/magnum6actual--flipoff");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -329,146 +327,142 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 86 |
-| Open Issues | 8 |
+| Forks | 184 |
+| Open Issues | 7 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-03-21 |
-| 建立日期 | 2026-03-21 |
-| Repo 大小 | 28 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/louislva/claude-peers-mcp) |
+| 最後推送 | 2026-03-26 |
+| 建立日期 | 2026-03-26 |
+| Repo 大小 | 672 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/magnum6actual/flipoff) |
 
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@modelcontextprotocol/sdk` `@types/bun`
-
-> [!info]- 主要貢獻者
-> | 貢獻者 | Commits |
-> | --- | --- |
-> | [@louislva](https://github.com/louislva) | 5 |
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "JavaScript" : 60
+>     "CSS" : 34
+>     "HTML" : 6
+> ```
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度較低，目前只有 8 個開放的問題尚未解決。
+**社群活躍度**：社群活躍度尚可，但目前有 7 個未解決的問題。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-20 ~ 2026-03-21）
-> **活躍天數** 2 天 · **最新 commit** nicer square
+> [!abstract] 最近 10 次 commit（2026-03-26）
+> **活躍天數** 1 天 · **最新 commit** Initial release: FlipOff split-flap display web app
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#8](https://github.com/louislva/claude-peers-mcp/issues/8) | cannot receive messages if channels are not enabled | 0 | 0 |
-> | [#6](https://github.com/louislva/claude-peers-mcp/issues/6) | Claude uses built-in SendMessage instead of mcp__claude-peer | 0 | 0 |
+> | [#8](https://github.com/magnum6actual/flipoff/issues/8) | Free? | 0 | 2 |
+> | [#6](https://github.com/magnum6actual/flipoff/issues/6) | Chances of getting this in Docker | 0 | 5 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # claude-peers
+> # FlipOff.
 > 
-> Let your Claude Code instances find each other and talk. When you're running 5 sessions across different projects, any Claude can discover the others and send messages that arrive instantly.
+> **Turn any TV into a retro split-flap display.** The classic flip-board look, without the $3,500 hardware. And it's free.
 > 
-> ```
->   Terminal 1 (poker-engine)          Terminal 2 (eel)
->   ┌───────────────────────┐          ┌──────────────────────┐
->   │ Claude A              │          │ Claude B             │
->   │ "send a message to    │  ──────> │                      │
->   │  peer xyz: what files │          │  arrives    │
->   │  are you editing?"    │   **Tip:** Add it to an alias so you don't have to type it every time:
-> >
-> > ```bash
-> > alias claudepeers='claude --dangerously-load-development-channels server:claude-peers'
-> > ```
+> ## What is this?
 > 
-> ### 4. Open a second session and try it
+> FlipOff is a free, open-source web app that emulates a classic mechanical split-flap (flip-board) airport terminal display — the kind you'd see at train stations and airports. It runs full-screen in any browser, turning a TV or large monitor into a beautiful retro display.
 > 
-> In another terminal, start Claude Code the same way. Then ask either one:
+> No accounts. No subscriptions. No $199 fee. Just open `index.html` and go.
 > 
-> > List all peers on this machine
+> ## Features
 > 
-> It'll show every running instance with their working directory, git repo, and a summary of what they're doing. Then:
+> - Realistic split-flap animation with colorful scramble transitions
+> - Authentic mechanical clacking sound (recorded from a real split-flap display)
+> - Auto-rotating inspirational quotes
+> - Fullscreen TV mode (press `F`)
+> - Keyboard controls for manual navigation
+> - Works offline — zero external dependencies
+> - Responsive from mobile to 4K displays
+> - Pure vanilla HTML/CSS/JS — no frameworks, no build tools, no npm
 > 
-> > Send a message to peer [id]: "what are you working on?"
+> ## Quick Start
 > 
-> The other Claude receives it immediately and responds.
-> 
-> ## What Claude can do
-> 
-> | Tool             | What it does                                                                   |
-> | ---------------- | ------------------------------------------------------------------------------ |
-> | `list_peers`     | Find other Claude Code instances — scoped to `machine`, `directory`, or `repo` |
-> | `send_message`   | Send a message to another instance by ID (arrives instantly via channel push)  |
-> | `set_summary`    | Describe what you're working on (visible to other peers)                       |
-> | `check_messages` | Manually check for messages (fallback if not using channel mode)               |
-> 
-> ## How it works
-> 
-> A **broker daemon** runs on `localhost:7899` with a SQLite database. Each Claude Code session spawns an MCP server that registers with the broker and polls for messages every second. Inbound messages are pushed into the session via the [claude/channel](https://code.claude.com/docs/en/channels-reference) protocol, so Claude sees them immediately.
-> 
-> ```
->                     ┌───────────────────────────┐
->                     │  broker daemon            │
->                     │  localhost:7899 + SQLite  │
->                     └──────┬───────────────┬────┘
->                            │               │
->                       MCP server A    MCP server B
->                       (stdio)         (stdio)
->                            │               │
->                       Claude A         Claude B
-> ```
-> 
-> The broker auto-launches when the first session starts. It cleans up dead peers automatically. Everything is localhost-only.
-> 
-> ## Auto-summary
-> 
-> If you set `OPENAI_API_KEY` in your environment, each instance generates a brief summary on startup using `gpt-5.4-nano` (costs fractions of a cent). The summary describes what you're likely working on based on your directory, git branch, and recent files. Other instances see this when they call `list_peers`.
-> 
-> Without the API key, Claude sets its own summary via the `set_summary` tool.
-> 
-> ## CLI
-> 
-> You can also inspect and interact from the command line:
+> 1. Clone the repo
+> 2. Open `index.html` in a browser (or serve with any static file server)
+> 3. Click anywhere to enable audio
+> 4. Press `F` for fullscreen TV mode
 > 
 > ```bash
-> cd ~/claude-peers-mcp
-> 
-> bun cli.ts status            # broker status + all peers
-> bun cli.ts peers             # list peers
-> bun cli.ts send     # send a message into a Claude session
-> bun cli.ts kill-broker       # stop the broker
+> # Or serve locally:
+> python3 -m http.server 8080
+> # Then open http://localhost:8080
 > ```
 > 
-> ## Configuration
+> ## Keyboard Shortcuts
 > 
-> | Environment variable | Default              | Description                           |
-> | -------------------- | -------------------- | ------------------------------------- |
-> | `CLAUDE_PEERS_PORT`  | `7899`               | Broker port                           |
-> | `CLAUDE_PEERS_DB`    | `~/.claude-peers.db` | SQLite database path                  |
-> | `OPENAI_API_KEY`     | —                    | Enables auto-summary via gpt-5.4-nano |
+> | Key | Action |
+> |-----|--------|
+> | `Enter` / `Space` | Next message |
+> | `Arrow Left` | Previous message |
+> | `Arrow Right` | Next message |
+> | `F` | Toggle fullscreen |
+> | `M` | Toggle mute |
+> | `Escape` | Exit fullscreen |
 > 
-> ## Requirements
+> ## How It Works
 > 
-> - [Bun](https://bun.sh)
-> - Claude Code v2.1.80+
-> - claude.ai login (channels require it — API key auth won't work)
+> Each tile on the board is an independent element that can animate through a scramble sequence (rapid random characters with colored backgrounds) before settling on the final character. Only tiles whose content changes between messages animate — just like a real mechanical board.
+> 
+> The sound is a single recorded audio clip of a real split-flap transition, played once per message change to perfectly sync with the visual animation.
+> 
+> ## File Structure
+> 
+> ```
+> flipoff/
+>   index.html           — Single-page app
+>   css/
+>     reset.css          — CSS reset
+>     layout.css         — Page layout (header, hero, board)
+>     board.css          — Board container and accent bars
+>     tile.css           — Tile styling and 3D flip animation
+>     responsive.css     — Media queries for all screen sizes
+>   js/
+>     main.js            — Entry point and UI wiring
+>     Board.js           — Grid manager and transition orchestration
+>     Tile.js            — Individual tile animation logic
+>     SoundEngine.js     — Audio playback with Web Audio API
+>     MessageRotator.js  — Quote rotation timer
+>     KeyboardController.js — Keyboard shortcut handling
+>     constants.js       — Configuration (grid size, colors, quotes)
+>     flapAudio.js       — Embedded audio data (base64)
+> ```
+> 
+> ## Customization
+> 
+> Edit `js/constants.js` to change:
+> - **Messages**: Add your own quotes or text
+> - **Grid size**: Adjust `GRID_COLS` and `GRID_ROWS`
+> - **Timing**: Tweak `SCRAMBLE_DURATION`, `STAGGER_DELAY`, etc.
+> - **Colors**: Modify `SCRAMBLE_COLORS` and `ACCENT_COLORS`
+> 
+> ## License
+> 
+> MIT — do whatever you want with it.
 
 ## 延伸閱讀
 
-相關概念：[[即時通訊]] · [[MCP Protocol]] · [[CLI/TUI]]
+相關概念：[[自動化]] · [[顯示技術]] · [[開源]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[Infatoshi--OpenSquirrel|Infatoshi/OpenSquirrel]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alvinunreal--awesome-opensource-ai|alvinunreal/awesome-opensource-ai]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]]
 
-[GitHub](https://github.com/louislva/claude-peers-mcp)
+[GitHub](https://github.com/magnum6actual/flipoff)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：即時通訊）
+> [!note]- 直接競品（同子分類：顯示工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "即時通訊" AND file.name != "louislva--claude-peers-mcp"
+> WHERE subcategory = "顯示工具" AND file.name != "magnum6actual--flipoff"
 > SORT stars DESC
 > ```
 
@@ -476,7 +470,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "louislva--claude-peers-mcp"
+> WHERE category = "其他" AND file.name != "magnum6actual--flipoff"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -485,7 +479,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "louislva--claude-peers-mcp" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "magnum6actual--flipoff" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -494,15 +488,15 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W13" AND file.name != "louislva--claude-peers-mcp"
+> WHERE week = "2026-W13" AND file.name != "magnum6actual--flipoff"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["即時通訊","MCP Protocol","CLI/TUI"];
+> const concepts = ["自動化","顯示技術","開源"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "louislva--claude-peers-mcp" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "magnum6actual--flipoff" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -515,12 +509,12 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/magnum6actual--flipoff");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "louislva--claude-peers-mcp" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "magnum6actual--flipoff" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -536,7 +530,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "louislva" AND file.name != "louislva--claude-peers-mcp"
+> WHERE owner = "magnum6actual" AND file.name != "magnum6actual--flipoff"
 > SORT stars DESC
 > ```
 
@@ -544,7 +538,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/magnum6actual--flipoff");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -561,7 +555,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/magnum6actual--flipoff");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -594,7 +588,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/magnum6actual--flipoff");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -618,7 +612,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/magnum6actual--flipoff");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -655,7 +649,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/louislva--claude-peers-mcp");
+> const me = dv.page("Repos/magnum6actual--flipoff");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -738,7 +732,7 @@ claude-peers 的核心技術在於其 broker 和 MCP 伺服器的設計。broker
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-03-24** — 首次收錄
+> **2026-03-28** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -754,8 +748,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-03-28|2026-03-28]] — 再次上榜，1.3k stars
-- [[2026-03-27|2026-03-27]] — 再次上榜，1.3k stars
-- [[2026-03-26|2026-03-26]] — 再次上榜，1.2k stars
-- [[2026-03-25|2026-03-25]] — 再次上榜，1.1k stars
-- [[2026-03-24|2026-03-24]] — 首次收錄，948 stars
+- [[2026-03-28|2026-03-28]] — 首次收錄，1.3k stars

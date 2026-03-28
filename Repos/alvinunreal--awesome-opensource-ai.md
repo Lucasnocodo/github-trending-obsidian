@@ -7,12 +7,12 @@ language: N/A
 license: NOASSERTION
 description: "Curated list of the best truly open-source AI projects, models, tools, and infrastructure."
 homepage: ""
-stars: 1037
-stars_per_day: 519
-forks: 76
-open_issues: 5
+stars: 1460
+stars_per_day: 487
+forks: 109
+open_issues: 7
 created: 2026-03-24
-pushed_at: 2026-03-26
+pushed_at: 2026-03-27
 first_seen: 2026-03-27
 week: "2026-W13"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "整理出最優質的開源 AI 專案、模型、工具和基礎設�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-03-30"
+appearances: 2
+next_review: "2026-03-31"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-27"
-star_history: "2026-03-27:1024,2026-03-27:1037"
+star_history: "2026-03-27:1024,2026-03-27:1037,2026-03-28:1460"
 tags:
   - github
   - "category/其他"
@@ -390,7 +390,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 相關概念：[[開源]] · [[機器學習]] · [[AI 工具]]
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[mattprusak--autoresearch-genealogy|mattprusak/autoresearch-genealogy]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[mattprusak--autoresearch-genealogy|mattprusak/autoresearch-genealogy]] · [[magnum6actual--flipoff|magnum6actual/flipoff]] · [[novatic14--MANPADS-System-Launcher-and-Rocket|novatic14/MANPADS-System-Launcher-and-Rocket]]
 
 [GitHub](https://github.com/alvinunreal/awesome-opensource-ai)
 
@@ -686,4 +686,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-28|2026-03-28]] — 再次上榜，1.5k stars
 - [[2026-03-27|2026-03-27]] — 首次收錄，1.0k stars
