@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "\"OpenSpace: Make Your Agents: Smarter, Low-Cost, Self-Evolving\" -- Community: https://open-space.cloud/"
 homepage: ""
-stars: 1473
-stars_per_day: 491
-forks: 166
-open_issues: 27
+stars: 1947
+stars_per_day: 487
+forks: 216
+open_issues: 29
 created: 2026-03-24
-pushed_at: 2026-03-27
+pushed_at: 2026-03-28
 first_seen: 2026-03-26
 week: "2026-W13"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "讓你的 AI 代理更聰明、低成本、自我進化。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-03-31"
+appearances: 4
+next_review: "2026-04-01"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-26"
-star_history: "2026-03-26:883,2026-03-26:888,2026-03-27:1284,2026-03-28:1473"
+star_history: "2026-03-26:883,2026-03-26:888,2026-03-27:1284,2026-03-28:1473,2026-03-29:1947"
 tags:
   - github
   - "category/ai_ml"
@@ -843,6 +843,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-29|2026-03-29]] — 再次上榜，1.9k stars
 - [[2026-03-28|2026-03-28]] — 再次上榜，1.5k stars
 - [[2026-03-27|2026-03-27]] — 再次上榜，1.3k stars
 - [[2026-03-26|2026-03-26]] — 首次收錄，883 stars

@@ -7,12 +7,12 @@ language: Dockerfile
 license: MIT
 description: "AI coding workstation: Claude Code + web UI + 5 AI CLIs + headless browser + 50+ tools"
 homepage: "https://holyclaude.coderluii.dev"
-stars: 970
-stars_per_day: 162
-forks: 100
-open_issues: 5
+stars: 1187
+stars_per_day: 170
+forks: 122
+open_issues: 2
 created: 2026-03-22
-pushed_at: 2026-03-27
+pushed_at: 2026-03-28
 first_seen: 2026-03-28
 week: "2026-W13"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "提供一個完整的 AI 編程工作站，整合 Claude Code 和多�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-04"
+appearances: 2
+next_review: "2026-04-05"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 29
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-28"
-star_history: "2026-03-28:969,2026-03-28:970"
+star_history: "2026-03-28:969,2026-03-28:970,2026-03-29:1187"
 tags:
   - github
   - "category/開發工具"
@@ -896,4 +896,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-29|2026-03-29]] — 再次上榜，1.2k stars
 - [[2026-03-28|2026-03-28]] — 首次收錄，969 stars

@@ -617,17 +617,17 @@
   },
   "zarazhangrui/codebase-to-course": {
     "first_seen": "2026-03-25",
-    "last_seen": "2026-03-28",
-    "times_seen": 4,
+    "last_seen": "2026-03-29",
+    "times_seen": 5,
     "stars_first": 1094,
-    "stars_last": 2069
+    "stars_last": 2297
   },
   "slavingia/skills": {
     "first_seen": "2026-03-25",
-    "last_seen": "2026-03-28",
-    "times_seen": 4,
+    "last_seen": "2026-03-29",
+    "times_seen": 5,
     "stars_first": 1076,
-    "stars_last": 4473
+    "stars_last": 4987
   },
   "eze-is/web-access": {
     "first_seen": "2026-03-25",
@@ -659,44 +659,58 @@
   },
   "HKUDS/OpenSpace": {
     "first_seen": "2026-03-26",
-    "last_seen": "2026-03-28",
-    "times_seen": 3,
+    "last_seen": "2026-03-29",
+    "times_seen": 4,
     "stars_first": 883,
-    "stars_last": 1473
+    "stars_last": 1947
   },
   "alvinunreal/awesome-opensource-ai": {
     "first_seen": "2026-03-27",
-    "last_seen": "2026-03-28",
-    "times_seen": 2,
+    "last_seen": "2026-03-29",
+    "times_seen": 3,
     "stars_first": 1024,
-    "stars_last": 1460
+    "stars_last": 1746
   },
   "GAIR-NLP/daVinci-MagiHuman": {
     "first_seen": "2026-03-27",
-    "last_seen": "2026-03-28",
-    "times_seen": 2,
+    "last_seen": "2026-03-29",
+    "times_seen": 3,
     "stars_first": 934,
-    "stars_last": 1014
+    "stars_last": 1078
   },
   "opa334/darksword-kexploit": {
     "first_seen": "2026-03-27",
-    "last_seen": "2026-03-28",
-    "times_seen": 2,
+    "last_seen": "2026-03-29",
+    "times_seen": 3,
     "stars_first": 891,
-    "stars_last": 956
+    "stars_last": 991
   },
   "magnum6actual/flipoff": {
     "first_seen": "2026-03-28",
-    "last_seen": "2026-03-28",
-    "times_seen": 1,
+    "last_seen": "2026-03-29",
+    "times_seen": 2,
     "stars_first": 1337,
-    "stars_last": 1337
+    "stars_last": 2068
   },
   "CoderLuii/HolyClaude": {
     "first_seen": "2026-03-28",
-    "last_seen": "2026-03-28",
-    "times_seen": 1,
+    "last_seen": "2026-03-29",
+    "times_seen": 2,
     "stars_first": 969,
-    "stars_last": 969
+    "stars_last": 1187
+  },
+  "larksuite/cli": {
+    "first_seen": "2026-03-29",
+    "last_seen": "2026-03-29",
+    "times_seen": 1,
+    "stars_first": 1710,
+    "stars_last": 1710
+  },
+  "elder-plinius/G0DM0D3": {
+    "first_seen": "2026-03-29",
+    "last_seen": "2026-03-29",
+    "times_seen": 1,
+    "stars_first": 1509,
+    "stars_last": 1509
   }
 }

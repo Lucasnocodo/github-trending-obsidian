@@ -7,12 +7,12 @@ language: Python
 license: N/A
 description: ""
 homepage: ""
-stars: 1015
-stars_per_day: 203
-forks: 78
+stars: 1078
+stars_per_day: 180
+forks: 84
 open_issues: 14
 created: 2026-03-22
-pushed_at: 2026-03-26
+pushed_at: 2026-03-28
 first_seen: 2026-03-27
 week: "2026-W13"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "提供一個快速的音視頻生成基礎模型，簡化多模態處
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-03-31"
+appearances: 3
+next_review: "2026-04-05"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 30
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-27"
-star_history: "2026-03-27:934,2026-03-27:934,2026-03-28:1014,2026-03-28:1015"
+star_history: "2026-03-27:934,2026-03-27:934,2026-03-28:1014,2026-03-28:1015,2026-03-29:1078"
 tags:
   - github
   - "category/ai_ml"
@@ -900,5 +900,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-29|2026-03-29]] — 再次上榜，1.1k stars
 - [[2026-03-28|2026-03-28]] — 再次上榜，1.0k stars
 - [[2026-03-27|2026-03-27]] — 首次收錄，934 stars
