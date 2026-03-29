@@ -20,7 +20,7 @@ category: "其他"
 subcategory: "OSINT"
 release_tag: "v0.9.6"
 install_complexity: "easy"
-status: to-review
+status: archived
 my_rating: 0
 score_confidence: 0
 score_interest: 0
