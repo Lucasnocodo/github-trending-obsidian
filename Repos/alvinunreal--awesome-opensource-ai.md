@@ -7,12 +7,12 @@ language: N/A
 license: NOASSERTION
 description: "Curated list of the best truly open-source AI projects, models, tools, and infrastructure."
 homepage: ""
-stars: 1751
-stars_per_day: 438
-forks: 134
+stars: 1931
+stars_per_day: 386
+forks: 149
 open_issues: 10
 created: 2026-03-24
-pushed_at: 2026-03-28
+pushed_at: 2026-03-29
 first_seen: 2026-03-27
 week: "2026-W13"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "整理出最優秀的開源 AI 專案、模型、工具和基礎設�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-04-01"
+appearances: 4
+next_review: "2026-04-02"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 17
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-27"
-star_history: "2026-03-27:1024,2026-03-27:1037,2026-03-28:1460,2026-03-28:1467,2026-03-29:1746,2026-03-29:1751"
+star_history: "2026-03-27:1024,2026-03-27:1037,2026-03-28:1460,2026-03-28:1467,2026-03-29:1746,2026-03-29:1751,2026-03-30:1931"
 tags:
   - github
   - "category/其他"
@@ -709,6 +709,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-30|2026-03-30]] — 再次上榜，1.9k stars
 - [[2026-03-29|2026-03-29]] — 再次上榜，1.7k stars
 - [[2026-03-28|2026-03-28]] — 再次上榜，1.5k stars
 - [[2026-03-27|2026-03-27]] — 首次收錄，1.0k stars

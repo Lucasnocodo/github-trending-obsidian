@@ -624,10 +624,10 @@
   },
   "slavingia/skills": {
     "first_seen": "2026-03-25",
-    "last_seen": "2026-03-29",
-    "times_seen": 5,
+    "last_seen": "2026-03-30",
+    "times_seen": 6,
     "stars_first": 1076,
-    "stars_last": 4987
+    "stars_last": 5410
   },
   "eze-is/web-access": {
     "first_seen": "2026-03-25",
@@ -659,17 +659,17 @@
   },
   "HKUDS/OpenSpace": {
     "first_seen": "2026-03-26",
-    "last_seen": "2026-03-29",
-    "times_seen": 4,
+    "last_seen": "2026-03-30",
+    "times_seen": 5,
     "stars_first": 883,
-    "stars_last": 1947
+    "stars_last": 2469
   },
   "alvinunreal/awesome-opensource-ai": {
     "first_seen": "2026-03-27",
-    "last_seen": "2026-03-29",
-    "times_seen": 3,
+    "last_seen": "2026-03-30",
+    "times_seen": 4,
     "stars_first": 1024,
-    "stars_last": 1746
+    "stars_last": 1931
   },
   "GAIR-NLP/daVinci-MagiHuman": {
     "first_seen": "2026-03-27",
@@ -680,17 +680,17 @@
   },
   "opa334/darksword-kexploit": {
     "first_seen": "2026-03-27",
-    "last_seen": "2026-03-29",
-    "times_seen": 3,
+    "last_seen": "2026-03-30",
+    "times_seen": 4,
     "stars_first": 891,
-    "stars_last": 991
+    "stars_last": 1038
   },
   "magnum6actual/flipoff": {
     "first_seen": "2026-03-28",
-    "last_seen": "2026-03-29",
-    "times_seen": 2,
+    "last_seen": "2026-03-30",
+    "times_seen": 3,
     "stars_first": 1337,
-    "stars_last": 2068
+    "stars_last": 2423
   },
   "CoderLuii/HolyClaude": {
     "first_seen": "2026-03-28",
@@ -701,16 +701,37 @@
   },
   "larksuite/cli": {
     "first_seen": "2026-03-29",
-    "last_seen": "2026-03-29",
-    "times_seen": 1,
+    "last_seen": "2026-03-30",
+    "times_seen": 2,
     "stars_first": 1710,
-    "stars_last": 1710
+    "stars_last": 3056
   },
   "elder-plinius/G0DM0D3": {
     "first_seen": "2026-03-29",
-    "last_seen": "2026-03-29",
-    "times_seen": 1,
+    "last_seen": "2026-03-30",
+    "times_seen": 2,
     "stars_first": 1509,
-    "stars_last": 1509
+    "stars_last": 2002
+  },
+  "nashsu/opencli-rs": {
+    "first_seen": "2026-03-30",
+    "last_seen": "2026-03-30",
+    "times_seen": 1,
+    "stars_first": 982,
+    "stars_last": 982
+  },
+  "facebookresearch/tribev2": {
+    "first_seen": "2026-03-30",
+    "last_seen": "2026-03-30",
+    "times_seen": 1,
+    "stars_first": 900,
+    "stars_last": 900
+  },
+  "jxnxts/mcp-brasil": {
+    "first_seen": "2026-03-30",
+    "last_seen": "2026-03-30",
+    "times_seen": 1,
+    "stars_first": 875,
+    "stars_last": 875
   }
 }
