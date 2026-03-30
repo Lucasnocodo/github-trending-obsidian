@@ -7,9 +7,9 @@ language: TypeScript
 license: AGPL-3.0
 description: "LIBERATED AI CHAT"
 homepage: ""
-stars: 2002
-stars_per_day: 501
-forks: 388
+stars: 2010
+stars_per_day: 503
+forks: 389
 open_issues: 11
 created: 2026-03-25
 pushed_at: 2026-03-26
@@ -17,7 +17,7 @@ first_seen: 2026-03-29
 week: "2026-W14"
 month: "2026-03"
 category: "AI/ML"
-subcategory: "聊天介面"
+subcategory: "推論優化"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-29
-use_case: "提供多模型的開源 AI 聊天介面，專為駭客和研究者設計。"
+use_case: "提供一個開源的多模型聊天介面，專為駭客和系統愛好者設計。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 2
 next_review: "2026-04-02"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 0
+issue_close_rate: 8
 repo_size_kb: 1078
 readme_length: 8546
 bus_factor: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-29"
-star_history: "2026-03-29:1509,2026-03-29:1520,2026-03-30:2002"
+star_history: "2026-03-29:1509,2026-03-29:1520,2026-03-30:2002,2026-03-30:2010"
 tags:
   - github
   - "category/ai_ml"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "G0DM0D3"
   - "elder-plinius/G0DM0D3"
-  - "提供多模型的開源 AI 聊天介面，專為駭客和研究者設計。"
+  - "提供一個開源的多模型聊天介面，專為駭客和系統愛好者設計。"
 ---
 
 # G0DM0D3
 
-**1.5k** stars · **507** stars/天 · 建立 3 天前 · TypeScript · AGPL-3.0
+**2.0k** stars · **503** stars/天 · 建立 4 天前 · TypeScript · AGPL-3.0
 
 ```dataviewjs
 const me = dv.page("Repos/elder-plinius--G0DM0D3");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供多模型的開源 AI 聊天介面，專為駭客和研究者設計。
+> 提供一個開源的多模型聊天介面，專為駭客和系統愛好者設計。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (507 stars/day)
-> **授權** AGPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 對 AI 聊天和模型研究有興趣的開發者，特別是駭客和研究者。
-> **一句話重點** G0DM0D3 不僅是一個聊天介面，更是推動認知自由的工具。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (503 stars/day)
+> **授權** AGPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要進行 AI 互動和紅隊測試的開發者和研究者。
+> **一句話重點** G0DM0D3 不僅是一個聊天工具，更是一個探索 AI 互動的實驗平台。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/elder-plinius--G0DM0D3");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "聊天介面" && p.file.name !== "elder-plinius--G0DM0D3" && p.status !== "archived")
+>     .where(p => p.subcategory === "推論優化" && p.file.name !== "elder-plinius--G0DM0D3" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,40 +96,41 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 聊天介面 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 推論優化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習，2 小時整合，得到靈活的 AI 聊天介面，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學習，2 小時整合，得到靈活的 AI 互動工具，值得一試。
 
 > [!abstract] 核心創新
-> G0DM0D3 提供了一個多模型聊天介面，並且強調用戶隱私和數據安全。
+> 提供一個完全開源且隱私優先的多模型聊天介面，專為駭客和研究者設計。
 
 ## 專案簡介
 
-G0DM0D3 是一個開源的多模型聊天介面，旨在為駭客和認知研究者提供自由的 AI 互動。用戶可以透過 OpenRouter API 使用超過 50 種模型，包括 Claude、GPT-5 和 Gemini，並且支援多種輸入和輸出方式。核心功能如 GODMODE CLASSIC 允許多個模型並行運行，尋找最佳回應。而 ULTRAPLINIAN 則提供一個多模型評估引擎，根據 100 分的綜合指標來評分回應，選擇最佳結果。這些功能使得 G0DM0D3 在進行紅隊測試和模型穩健性研究時表現出色。該專案的設計考慮了隱私，所有 API 金鑰僅存儲在用戶的瀏覽器中，並且無需登錄。使用者可以通過單一的 `index.html` 文件進行自我託管，無需複雜的安裝步驟。
+G0DM0D3 是一個開源的多模型聊天介面，專為駭客和系統愛好者設計，旨在提供無限制的 AI 互動。用戶可以透過這個介面使用超過 50 種模型，包括 Claude、GPT-5 和 Gemini，並利用 `OpenRouter` API 進行互動。其核心機制是透過 `GODMODE CLASSIC`，將五個經過驗證的模型和提示組合並行運行，以尋找最佳回應，這樣的設計讓用戶能夠快速獲得多樣化的答案。這個工具的賣點在於其隱私優先的設計，所有數據收集都是選擇性的，並且 API 金鑰保留在用戶的瀏覽器中，避免了不必要的數據洩露。
 
-這樣的設計使得 G0DM0D3 在部署上非常靈活，適合各種環境。與其他工具相比，如 AlpinDale/parsync 和 CoderLuii/HolyClaude，G0DM0D3 提供了更高的模型多樣性和更靈活的用戶控制。使用者可以根據需求選擇不同的模型和參數，這在進行實驗和研究時提供了更大的自由度。社群活躍度尚可，但目前有 9 個開放問題，解決率為 0%。這可能影響新手的使用體驗，因為他們可能會遇到未解決的問題。整體來看，G0DM0D3 是一個非常有潛力的工具，適合對 AI 聊天和模型研究有興趣的開發者。
+技術上，G0DM0D3 使用了 Next.js 和 Express 框架，並依賴於多種現代 JavaScript 庫，如 React 和 Zustand，這使得它的前端和後端都具備良好的性能和擴展性。與其他類似工具相比，如 `AlpinDale/parsync` 和 `CoderLuii/HolyClaude`，G0DM0D3 提供了更靈活的模型選擇和更強的隱私保護，特別適合需要進行紅隊測試和認知研究的用戶。使用者在實際操作中可能會遇到一些問題，例如某些模型的組合可能無法正常運作，這在熱門 Issues 中有提到。整體來看，G0DM0D3 是一個值得探索的工具，特別適合對 AI 互動有高需求的開發者和研究者。
 
-**技術棧**：`TypeScript` · `Next.js 14` · `Express 5.2.1`
+**技術棧**：`Next.js 14` · `Express 5` · `React 18` · `TypeScript 5`
 
 ## 重點功能
 
-- 50+ 模型 — 支援多種 AI 模型，包括 Claude、GPT-5 和 Gemini，透過 OpenRouter 接入。
-- GODMODE CLASSIC — 5 種經過測試的提示和模型組合並行運行，選擇最佳回應。
-- ULTRAPLINIAN — 多模型評估引擎，根據 100 分的綜合指標評分回應。
-- Parseltongue — 輸入擾動引擎，使用 33 種技術測試模型的穩健性。
-- AutoTune — 自適應取樣參數引擎，自動選擇最佳的查詢參數。
+- 50+ 模型 — 支持多種 AI 模型，包括 Claude、GPT-5、Gemini 等，透過 OpenRouter API 進行互動。
+- GODMODE CLASSIC — 5 種經過驗證的模型和提示組合並行運行，尋找最佳回應。
+- AutoTune — 自適應取樣參數引擎，支持溫度和 top_p 調整，並具備 EMA 學習能力。
+- Parseltongue — 輸入擾動引擎，提供 33 種技術，適合紅隊測試。
+- 隱私優先 — 數據收集選擇性，API 金鑰保留在用戶瀏覽器中，無需擔心數據洩露。
+- 單檔部署 — 只需一個 index.html 文件，便於在任何靜態主機上部署。
 
 ## 快速開始
 
-1. 克隆專案
+1. 克隆倉庫
 ```bash
 git clone https://github.com/elder-plinius/G0DM0D3.git
 ```
-2. 進入專案目錄
+2. 進入目錄
 ```bash
 cd G0DM0D3
 ```
@@ -148,60 +149,60 @@ python3 -m http.server 8000
 {
   "前置條件": "需要安裝 Python 3",
   "指令": "python3 -m http.server 8000",
-  "預期輸出": "在瀏覽器中訪問 http://localhost:8000"
+  "預期輸出": "本地伺服器啟動，能在瀏覽器中訪問。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 1520 stars（507/天），forks 296（19.5%），顯示出極高的用戶關注度。作者 elder-plinius 在開源社群中有一定的影響力，專案解決了多模型聊天介面的需求，特別是在駭客和研究者之間。這種需求在現今對 AI 互動的探索中越來越明顯。社群的反饋和需求驅動了這個專案的快速成長，並且它的隱私設計也吸引了對數據安全有要求的用戶。這些因素共同促成了 G0DM0D3 的快速增長。
+> 建立 4 天內累積 2010 stars（503/天），forks 389（19.4%），顯示出強勁的增長潛力。這個專案的作者 elder-plinius 過去在開源社群中活躍，並專注於 AI 和駭客文化的交集。G0DM0D3 解決了傳統 AI 互動工具在隱私和靈活性上的不足，提供了一個開放且可自訂的解決方案。近期的推廣和社群的熱烈反應也促進了其快速成長。這個工具的出現正好契合了對於開源 AI 互動的需求，尤其是在駭客和研究者之間。
 
 ## 適合誰使用
 
-**目標受眾**：對 AI 聊天和模型研究有興趣的開發者，特別是駭客和研究者。
+**目標受眾**：需要進行 AI 互動和紅隊測試的開發者和研究者。
 
 > [!example] 使用場景
-> - 駭客用它來測試 AI 模型的穩健性，因為多模型評估可以快速找出最佳回應，提升測試效率。
-> - 研究者用它來進行認知實驗，因為它支援多種模型和自定義參數，能夠靈活調整實驗設計。
-> - 開發者用它來構建自定義的聊天機器人，因為單一文件的部署方式讓整合變得簡單方便。
+> - 駭客用它來進行紅隊測試，因為它提供了多達 33 種輸入擾動技術，能夠有效測試模型的穩定性和安全性。
+> - 研究人員用它來探索 AI 認知，因為它支持多模型評估，能夠快速比較不同模型的表現。
+> - 開發者用它來建立自訂的 AI 聊天機器人，因為它的單檔部署特性使得整合過程簡單且快速。
 
 ## 架構分析
 
-G0DM0D3 採用單文件架構，所有功能都集中在 `index.html` 中，這樣的設計使得部署變得極為簡單，無需複雜的安裝步驟或依賴。資料流方面，使用者的請求直接通過 OpenRouter API 路由到不同的 AI 模型，並根據評分標準選擇最佳回應。這種設計的優點是靈活性高，使用者可以輕鬆自定義和擴展功能，但缺點是對於大型應用可能不夠高效，因為所有邏輯都集中在一個文件中，可能導致維護困難。整體而言，這種架構適合小型專案或實驗，但在面對更大規模的需求時可能需要重新考慮架構設計。
+G0DM0D3 採用單檔架構設計，所有功能整合在一個 `index.html` 文件中，這樣的設計使得部署變得極為簡單，無需複雜的依賴或建置步驟。資料流方面，使用者的請求通過前端的 JavaScript 代碼發送到 OpenRouter API，並接收回應後在界面上顯示。這種設計使得用戶能夠快速上手，但也限制了功能的擴展性，因為所有邏輯都集中在一個文件中，未來若需要增加功能可能會導致代碼複雜度增加。整體而言，這種設計適合小型專案或個人使用，但在大規模應用時可能會面臨維護困難的挑戰。
 
 ## 技術深入分析
 
-G0DM0D3 的核心技術機制是基於多模型的聊天介面，使用 OpenRouter API 來路由請求並獲取不同模型的回應。這種設計使得用戶能夠靈活選擇和比較不同模型的表現，特別適合進行紅隊測試和認知研究。效能方面，G0DM0D3 能夠處理小型查詢，但在面對大量請求時可能會出現延遲，因為所有請求都集中在單一的 API 路由上。設計上選擇了 TypeScript 和 Next.js，以便於開發和維護，但這也意味著對於不熟悉這些技術的用戶來說，學習曲線可能會稍陡。技術風險方面，對於大型資料集的處理能力有限，可能在未來的擴展中面臨挑戰。整合方面，由於其單文件架構，與現有的 CI/CD 流程整合相對簡單，但在大型應用中可能需要額外的適配層來支持更複雜的需求。
+G0DM0D3 的核心技術機制基於多模型架構，使用者可以選擇不同的 AI 模型進行互動，這些模型通過 OpenRouter API 進行整合。其設計模式採用的是單檔架構，這樣的選擇使得部署變得簡單，但也限制了未來的功能擴展。效能方面，這個工具能夠快速響應用戶請求，但在高流量情況下可能會受到 API 限制的影響。設計取捨上，選擇使用 Next.js 和 Express 框架，這使得開發過程中能夠享受到現代 JavaScript 生態的優勢，但也帶來了對於 Node.js 環境的依賴。技術風險方面，隨著使用者數量的增加，可能會面臨 API 請求的瓶頸，這需要未來進一步的優化和擴展。整合方面，與主流的 CI/CD 工具如 GitHub Actions 相容性良好，但在與大型專案整合時可能需要額外的適配工作。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝指導和使用範例，整體上易於理解。安裝過程順暢，無需複雜的配置。雖然文件中有基本的使用說明，但缺乏更詳細的入門指南，可能對新手造成一定困難。文件目前僅提供英文版本，對於非英語使用者來說可能會有障礙。
+> README 文件提供了清晰的指導，包含快速上手的步驟和範例。安裝過程相對順暢，無需複雜的配置。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開源且尊重隱私，無需登錄，API 金鑰僅存儲在用戶端。
-> - 支持多種 AI 模型，靈活性高，適合不同需求的用戶。
-> - 單文件部署，簡化了安裝和使用過程。
+> - 開源且隱私優先，無需擔心數據洩露。
+> - 支持多種 AI 模型，靈活性高。
+> - 單檔部署，簡化了使用流程。
 
 > [!danger] 缺點
-> - 目前有多個開放問題，可能影響使用體驗。
-> - 不支援大型資料集的即時處理，適合小型實驗。
-> - 缺乏社群支持，問題解決速度較慢。
+> - 某些模型組合可能無法正常運作，依賴社群支持。
+> - 功能擴展性有限，未來可能面臨維護挑戰。
+> - 需要穩定的網路連接以獲取模型回應。
 
 > [!warning] 注意事項
-> - 目前有 9 個開放問題，解決率為 0%。
-> - 需要用戶自行管理 API 金鑰，無法自動同步。
-> - 不支援大型資料集的即時處理，適合小型實驗和測試。
+> - 目前僅支持 OpenRouter API，無法使用其他 API。
+> - 某些模型的組合可能無法正常運作，需依賴社群支持。
+> - 需要穩定的網路連接以獲取模型回應。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的多模型支持，但主要針對資料同步而非聊天介面。 |
-| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於 Claude 模型的優化，功能較為單一，適合需要特定模型的用戶。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供了類似的多模型選擇，但缺乏 G0DM0D3 的隱私優先設計和單檔部署特性。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於 Claude 模型的應用，但不如 G0DM0D3 提供多樣化的模型選擇和紅隊測試功能。 |
 
 ## 替代方案決策
 
@@ -209,16 +210,16 @@ G0DM0D3 的核心技術機制是基於多模型的聊天介面，使用 OpenRout
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步，並不提供多模型聊天功能。 | 如果你的需求主要是資料同步而非聊天介面，這個工具會更合適。 | medium，因為需要重新設計資料流和邏輯。 |
-| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於 Claude 模型的優化，功能較為單一。 | 如果你的團隊專注於 Claude 模型的應用，這個工具會更適合。 | low，因為功能相似，遷移成本較低。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 使用了類似的多模型架構，但缺乏 G0DM0D3 的隱私優先設計和單檔部署特性。 | 如果需要更強的數據隱私保護和簡單的部署流程，G0DM0D3 是更好的選擇。 | medium，因為需要重新配置 API 和模型選擇。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於 Claude 模型的應用，但不如 G0DM0D3 提供多樣化的模型選擇和紅隊測試功能。 | 如果專注於 Claude 模型的應用，HolyClaude 可能更合適。 | low，因為功能相似，遷移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **G0DM0D3** | **parsync** | **HolyClaude** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於資料同步，並不提供多模型聊天功能。 | 專注於 Claude 模型的優化，功能較為單一。 |
-> | 遷移成本 | - | medium，因為需要重新設計資料流和邏輯。 | low，因為功能相似，遷移成本較低。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是資料同步而非聊天介面，這個工具會更合適。 | 如果你的團隊專注於 Claude 模型的應用，這個工具會更適 |
+> | 技術路線 | 本專案 | 使用了類似的多模型架構，但缺乏 G0DM0D3 的隱私優先設計和單檔部署特性。 | 專注於 Claude 模型的應用，但不如 G0DM0D3 提供多樣化的模型選擇和紅隊測試功能。 |
+> | 遷移成本 | - | medium，因為需要重新配置 API 和模型選擇。 | low，因為功能相似，遷移成本較低。 |
+> | 適用場景 | 主要場景 | 如果需要更強的數據隱私保護和簡單的部署流程，G0DM0D3  | 如果專注於 Claude 模型的應用，HolyClaude  |
 
 ## 成熟度評估
 
@@ -229,44 +230,44 @@ G0DM0D3 的核心技術機制是基於多模型的聊天介面，使用 OpenRout
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人實驗和研究，不建議用於生產環境的核心應用。
+> 適合個人試用或小型專案，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 使用者在設定 API 金鑰時可能會遇到困難，特別是對於新手。
-  - 解法：提供清晰的設定指導，並在 README 中加入範例。
-- **[HIGH]** 當前有多個開放問題，可能影響使用體驗。
-  - 解法：定期檢查 GitHub Issues，了解問題狀況。
-- [MEDIUM] 在不同瀏覽器中可能會出現兼容性問題。
-  - 解法：建議使用 Chrome 或 Firefox 進行測試。
+- **[HIGH]** 某些模型的組合可能無法正常運作，特別是在高負載情況下。
+  - 解法：嘗試不同的模型組合，或降低請求頻率。
+- [MEDIUM] API 請求可能會受到限制，導致延遲。
+  - 解法：確保網路連接穩定，並考慮使用本地部署。
+- [MEDIUM] 使用過程中可能會遇到未處理的錯誤。
+  - 解法：查看 GitHub Issues，尋找解決方案或報告問題。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型研究團隊進行 AI 模型測試 | 非常適合 | 支援多模型和靈活的參數設置，適合實驗需求。 |
-| 大型企業的生產環境 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
-| 個人開發者進行 AI 聊天機器人開發 | 適合 | 單文件部署簡化了開發流程，易於快速迭代。 |
-| 教育機構進行 AI 課程教學 | 普通 | 雖然功能豐富，但可能需要額外的教學資源來幫助學生上手。 |
+| 小型團隊的 AI 研究專案 | 非常適合 | 提供多模型選擇和靈活的部署方式，適合快速實驗和迭代。 |
+| 大型企業的核心 AI 應用 | 不適合 | 目前處於 alpha 階段，穩定性和性能尚未達到生產要求。 |
+| 個人開發者的 AI 聊天機器人 | 適合 | 簡單的單檔部署和多模型支持，適合快速開發原型。 |
+| 需要高安全性的 AI 互動應用 | 普通 | 雖然隱私優先，但仍需注意 API 請求的安全性。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
+| 學習時間 | ~3 小時 |
 | 整合時間 | ~2 小時 |
-| 維護負擔 | medium |
-| 綁定風險 | low |
+| 維護負擔 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，2 小時整合，得到靈活的 AI 聊天介面，值得一試。
+> 花 3 小時學習，2 小時整合，得到靈活的 AI 互動工具，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，API 金鑰僅存儲在用戶端，無需登錄。對於 CI/CD 使用安全，但需注意 API 金鑰的管理。
+> 低風險：工具本身不需要高權限，且不存取敏感資料。依賴鏈的信任程度良好，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -331,9 +332,9 @@ G0DM0D3 的核心技術機制是基於多模型的聊天介面，使用 OpenRout
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 296 |
-| Open Issues | 9 |
-| Issue 解決率 | 0% (0 closed) |
+| Forks | 389 |
+| Open Issues | 11 |
+| Issue 解決率 | 8% (1 closed) |
 | 最後推送 | 2026-03-26 |
 | 建立日期 | 2026-03-25 |
 | Repo 大小 | 1.1 MB |
@@ -358,7 +359,7 @@ G0DM0D3 的核心技術機制是基於多模型的聊天介面，使用 OpenRout
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，但目前有 9 個開放問題，解決率為 0%。
+**社群活躍度**：社群活躍度中等，最近有多個問題被提出，但解決率較低。
 **連結**：[文件](https://github.com/elder-plinius/G0DM0D3)
 
 ## 開發動態
@@ -371,8 +372,10 @@ G0DM0D3 的核心技術機制是基於多模型的聊天介面，使用 OpenRout
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#8](https://github.com/elder-plinius/G0DM0D3/issues/8) | >_ Error: All G0DM0D3 CLASSIC combos failed and All Parselto | 0 | 0 |
-> | [#7](https://github.com/elder-plinius/G0DM0D3/issues/7) | The classic mode is not working | 0 | 0 |
+> | [#8](https://github.com/elder-plinius/G0DM0D3/issues/8) | >_ Error: All G0DM0D3 CLASSIC combos failed and All Parselto | 1 | 1 |
+> | [#7](https://github.com/elder-plinius/G0DM0D3/issues/7) | The classic mode is not working | 1 | 2 |
+> | [#11](https://github.com/elder-plinius/G0DM0D3/issues/11) | Hey pls read this | 0 | 0 |
+> | [#10](https://github.com/elder-plinius/G0DM0D3/issues/10) | 66 | 0 | 0 |
 
 ## README 摘錄
 
@@ -555,7 +558,7 @@ G0DM0D3 的核心技術機制是基於多模型的聊天介面，使用 OpenRout
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[自動化測試]] · [[API 設計]]
+相關概念：[[RAG]] · [[自動化測試]] · [[多模態]]
 
 相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[MiniMax-AI--skills|MiniMax-AI/skills]] · [[uluckyXH--OpenMOSS|uluckyXH/OpenMOSS]]
 
@@ -563,11 +566,11 @@ G0DM0D3 的核心技術機制是基於多模型的聊天介面，使用 OpenRout
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：聊天介面）
+> [!note]- 直接競品（同子分類：推論優化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "聊天介面" AND file.name != "elder-plinius--G0DM0D3"
+> WHERE subcategory = "推論優化" AND file.name != "elder-plinius--G0DM0D3"
 > SORT stars DESC
 > ```
 
@@ -599,7 +602,7 @@ G0DM0D3 的核心技術機制是基於多模型的聊天介面，使用 OpenRout
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["多模態","自動化測試","API 設計"];
+> const concepts = ["RAG","自動化測試","多模態"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "elder-plinius--G0DM0D3" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

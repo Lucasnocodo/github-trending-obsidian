@@ -7,17 +7,17 @@ language: TypeScript
 license: MIT
 description: "Turn OpenClaw from a black box into a local control center you can see, trust, and control."
 homepage: ""
-stars: 2873
-stars_per_day: 169
-forks: 417
+stars: 2943
+stars_per_day: 164
+forks: 430
 open_issues: 26
 created: 2026-03-11
-pushed_at: 2026-03-18
+pushed_at: 2026-03-29
 first_seen: 2026-03-14
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
-subcategory: "API 工具"
+subcategory: "監控"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -35,14 +35,14 @@ next_review: "2026-03-21"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 41
-repo_size_kb: 39555
-readme_length: 9967
+repo_size_kb: 39691
+readme_length: 9978
 bus_factor: 2
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-14"
-star_history: "2026-03-14:994,2026-03-14:1005,2026-03-15:1420,2026-03-15:1427,2026-03-16:1721,2026-03-16:1726,2026-03-17:1892,2026-03-17:1894,2026-03-18:2025,2026-03-18:2027,2026-03-19:2118,2026-03-20:2231,2026-03-21:2331,2026-03-22:2405,2026-03-23:2472,2026-03-24:2552,2026-03-25:2624,2026-03-26:2707,2026-03-27:2764,2026-03-28:2804,2026-03-29:2873"
+star_history: "2026-03-14:994,2026-03-14:1005,2026-03-15:1420,2026-03-15:1427,2026-03-16:1721,2026-03-16:1726,2026-03-17:1892,2026-03-17:1894,2026-03-18:2025,2026-03-18:2027,2026-03-19:2118,2026-03-20:2231,2026-03-21:2331,2026-03-22:2405,2026-03-23:2472,2026-03-24:2552,2026-03-25:2624,2026-03-26:2707,2026-03-27:2764,2026-03-28:2804,2026-03-29:2873,2026-03-30:2943"
 tags:
   - github
   - "category/開發工具"
@@ -55,7 +55,7 @@ aliases:
 
 # openclaw-control-center
 
-**2.9k** stars · **169** stars/天 · 建立 17 天前 · TypeScript · MIT
+**2.9k** stars · **164** stars/天 · 建立 18 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/TianyiDataScience--openclaw-control-center");
@@ -72,17 +72,17 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 將 OpenClaw 轉變為一個可見、可信且可控制的本地控制中心。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (169 stars/day)
-> **授權** MIT (商業友好) · **維護** Moderate (最後推送 10 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要簡化 OpenClaw 操作的團隊，尤其是希望降低技術門檻的非技術用戶。
-> **一句話重點** 這個專案讓 OpenClaw 的操作變得簡單易懂，特別適合非技術背景的使用者。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (164 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 需要在本地環境中運行 OpenClaw 並希望獲得可觀察性和控制的開發者和運維人員。
+> **一句話重點** 這個專案最厲害的不是功能，而是它證明了即使是複雜的系統也能透過友好的界面讓非技術用戶輕鬆管理。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/TianyiDataScience--openclaw-control-center");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "API 工具" && p.file.name !== "TianyiDataScience--openclaw-control-center" && p.status !== "archived")
+>     .where(p => p.subcategory === "監控" && p.file.name !== "TianyiDataScience--openclaw-control-center" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -93,38 +93,38 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 API 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 監控 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
-> **結論** 花 3 小時學習，5 小時整合，得到簡化的 OpenClaw 操作體驗，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** low
+> **結論** 花 3 小時學習，2 小時整合，得到一個安全的 OpenClaw 控制中心，值得。
 
 > [!abstract] 核心創新
-> 提供了一個安全的本地控制中心，讓非技術用戶能夠輕鬆監控和操作 OpenClaw。
+> 提供一個安全的本地控制中心，讓非技術用戶也能輕鬆管理 OpenClaw。
 
 ## 專案簡介
 
-OpenClaw Control Center 是一個專為 OpenClaw 用戶設計的本地控制中心，旨在提供可觀察性、任務操作和操作員審查。使用者可以透過簡單的 UI 來查看當前的健康狀態、使用趨勢和任務進度。安裝過程中，使用者只需執行 `npm install` 和 `npm run dev:ui`，便可啟動控制中心，並透過 `GATEWAY_URL` 來連接到 OpenClaw 環境。這個設計使得非技術用戶能夠輕鬆獲取關鍵資訊，並確保安全性，因為預設為只讀模式，並禁用高風險的寫入路徑。技術上，該專案使用 TypeScript 和 Node.js，並依賴於 `tsx` 和 `cross-env` 等工具來簡化開發流程。
+OpenClaw Control Center 的核心機制是將 OpenClaw 的運行狀態和任務操作可視化，讓用戶能夠輕鬆監控和管理。用戶首先透過 `npm install` 安裝專案，然後配置環境變數，接著使用 `npm run dev:ui` 啟動本地 UI，最終可以查看當前的健康狀態和任務執行情況。這樣的設計使得非技術用戶能夠在不深入後端細節的情況下，獲得所需的可觀察性和控制能力。技術上，該專案使用 TypeScript 和 Node.js，並且依賴於 `tsx` 和 `cross-env` 等工具，這使得開發過程中能夠輕鬆管理環境變數和執行腳本。與其他類似工具相比，如 AlpinDale/parsync 和 BigBodyCobain/Shadowbroker，OpenClaw Control Center 更加專注於提供一個安全的本地環境，並且預設為只讀模式，這降低了誤操作的風險。
 
-與其他類似工具相比，OpenClaw Control Center 提供了更直觀的操作界面，並專注於非技術用戶的需求，這使得它在團隊協作和任務管理上更具優勢。使用者可以在 UI 中查看當前的控制姿態、關鍵行動項目和預算風險，這些功能在其他工具中往往需要更複雜的設置。儘管目前仍有 26 個開放的問題，但社群的活躍度相對較高，且有 41% 的問題已被解決，顯示出良好的維護狀態。整體來說，這是一個適合需要簡化 OpenClaw 操作的團隊，尤其是那些希望降低技術門檻的使用者。
+該工具的使用效果良好，能夠處理多種環境配置，並且在本地運行時不需要過多的外部依賴。對於需要在單一機器上運行 OpenClaw 的團隊來說，這是一個非常合適的選擇。未來六個月內，預計會持續增強用戶界面的友好性和功能的擴展性。建議在小型團隊或新創公司中使用，尤其是那些對於 OpenClaw 的使用場景尚不熟悉的用戶。
 
-**技術棧**：`TypeScript` · `Node.js` · `tsx`
+**技術棧**：`TypeScript` · `Node.js` · `cross-env` · `tsx`
 
 ## 重點功能
 
-- 健康狀態檢視 — 提供當前控制姿態、關鍵行動項目和預算風險的即時資訊。
-- 使用趨勢分析 — 顯示當前、7 天和 30 天的使用和支出趨勢，幫助用戶了解資源使用情況。
-- 任務管理 — 提供當前工作、批准和執行鏈的可視化，便於追蹤任務進度。
-- 安全性設置 — 預設為只讀模式，並禁用高風險的寫入路徑，確保操作安全。
-- 用戶友好界面 — 專為非技術用戶設計的操作界面，簡化了 OpenClaw 的使用流程。
+- 即時健康狀態監控 — 顯示 OpenClaw 的當前運行狀態和健康指標。
+- 使用趨勢分析 — 提供今日、7天和30天的使用和花費趨勢。
+- 任務管理 — 顯示當前任務的執行狀態和待處理的批准。
+- 安全的預設配置 — 預設為只讀模式，降低誤操作風險。
+- 多用戶協作 — 支持多代理之間的實時討論和工作分配。
 
 ## 快速開始
 
-1. 安裝專案依賴
+1. 克隆專案並安裝依賴
 ```bash
-npm install
+git clone https://github.com/TianyiDataScience/openclaw-control-center.git && cd openclaw-control-center && npm install
 ```
 2. 複製環境變數範本
 ```bash
@@ -141,63 +141,60 @@ npm run dev:ui
 {
   "前置條件": "確保已安裝 Node.js 和 npm",
   "指令": "npm run dev:ui",
-  "預期輸出": "啟動本地控制中心的 UI，並顯示當前的 OpenClaw 健康狀態和任務進度。"
+  "預期輸出": "啟動本地 UI，顯示 OpenClaw 的健康狀態和任務執行情況。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 17 天就累積 2873 stars（169/天），forks 417（14.5%），這顯示出相當高的興趣和使用潛力。作者 TianyiDataScience 團隊在開源社群中活躍，之前有多個相關專案，這個專案解決了 OpenClaw 用戶在操作和監控上的痛點，讓使用者能夠更輕鬆地管理和觀察其環境。近期的推廣和社群互動也可能促進了其快速增長。這個工具的出現是因為在 OpenClaw 的使用中，許多用戶需要一個更友好的界面來進行操作和監控，而這正是本專案所提供的功能。forks/stars 比率 14.5% 顯示出許多人在實際修改和使用此工具，這是活躍開發的良好指標。
+> 建立 18 天內累積 2943 stars（164/天），forks 430（14.6%），顯示出強勁的增長潛力。這個專案的作者團隊擁有豐富的開源經驗，並且專注於解決 OpenClaw 使用者對於可觀察性和控制的需求，這在過去的解決方案中並不常見。近期的社群討論和反饋也促進了這個專案的快速迭代和改進。這些因素共同推動了該專案的快速成長。
 
 ## 適合誰使用
 
-**目標受眾**：需要簡化 OpenClaw 操作的團隊，尤其是希望降低技術門檻的非技術用戶。
+**目標受眾**：需要在本地環境中運行 OpenClaw 並希望獲得可觀察性和控制的開發者和運維人員。
 
 > [!example] 使用場景
-> - 運維工程師用它來監控 OpenClaw 的健康狀態，因為可以快速查看當前的控制姿態和任務進度，避免手動查詢後端數據的繁瑣。
-> - 產品經理用它來分析使用趨勢和預算風險，因為可以在 UI 中直觀地查看 7 天和 30 天的使用趨勢，幫助做出更好的預算決策。
-> - 開發者用它來進行任務操作和審查，因為提供了清晰的任務執行鏈和當前工作狀態，減少了溝通成本。
+> - 運維工程師用它來監控 OpenClaw 的健康狀態，因為它提供了即時的使用趨勢和警報，讓他們能夠快速反應。
+> - 產品經理用它來查看當前任務的執行狀態，因為它能夠清晰地顯示任務的進度和風險，幫助他們做出更好的決策。
+> - 開發者用它來進行功能測試和驗證，因為它的界面友好且能夠快速集成到現有的開發流程中。
 
 ## 架構分析
 
-OpenClaw Control Center 採用單體架構，使用 TypeScript 和 Node.js 開發，並利用 `tsx` 進行開發和測試。資料流方面，使用者透過 UI 與 OpenClaw 進行互動，所有操作都經過安全檢查，確保不會對系統造成風險。這樣的設計使得非技術用戶能夠輕鬆使用，但也可能在面對大型數據時出現性能瓶頸。
-
-選擇 Node.js 作為後端語言是因為其非同步處理能力強，適合處理多用戶請求，但這也可能導致在高並發情況下的資源競爭問題。整體而言，這個架構適合中小型團隊使用，但在擴展性上可能需要進一步的優化。對於大型企業，可能需要考慮分散式架構以應對更高的負載。
+該專案採用 Node.js 作為後端框架，並使用 TypeScript 進行開發，這使得代碼更具可讀性和可維護性。資料流方面，使用環境變數來配置 OpenClaw 的運行環境，並通過腳本來執行各種任務。選擇 Node.js 的原因是其非阻塞 I/O 特性，能夠有效處理多用戶請求。這個架構的代價在於需要確保所有依賴項的相容性，特別是在不同的環境中。擴展性方面，該專案能夠支持多個用戶同時訪問，但在高並發情況下可能會遇到性能瓶頸。
 
 ## 技術深入分析
 
-OpenClaw Control Center 的核心技術機制是基於 TypeScript 和 Node.js，利用非同步 I/O 來處理多用戶請求。它的設計模式採用單體架構，這使得開發和維護變得簡單，但在面對高並發時可能會出現性能瓶頸。效能方面，該工具能夠快速響應用戶請求，但在處理大量數據時，可能需要更多的資源來保持流暢的操作。選擇 Node.js 是因為其在處理 I/O 密集型應用時的優勢，但這也意味著在 CPU 密集型任務上可能會出現性能下降的情況。技術風險方面，若使用者未能正確配置環境變數，可能會導致控制中心無法正常啟動。此外，對於依賴於外部 API 的功能，若這些 API 出現問題，將直接影響到整個控制中心的可用性。整合方面，該工具能夠與主流的 CI/CD 工具進行良好的整合，但在大型專案中，可能需要額外的適配工作以確保無縫連接。
+OpenClaw Control Center 使用 Node.js 和 TypeScript 作為核心技術棧，這使得開發者能夠利用 JavaScript 的生態系統來快速構建應用。該專案的資料流設計使得用戶能夠透過環境變數配置運行環境，而不需要修改代碼，這降低了使用的複雜性。效能方面，該工具能夠處理多個並發請求，但在高負載情況下可能會遇到性能瓶頸，特別是在使用者數量增加時。選擇 Node.js 的原因在於其非阻塞 I/O 特性，能夠有效應對多用戶的請求。這樣的設計雖然帶來了良好的性能，但也要求開發者對 Node.js 的運行環境有一定的了解。技術風險方面，若未來 OpenClaw 的 API 發生變更，可能會影響到該控制中心的運行。整合方面，該工具能夠與現有的 CI/CD 流程無縫對接，但在某些情況下可能需要額外的配置。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含詳細的安裝步驟，安裝過程相對順暢，但對於新手來說，可能需要一些基本的 Node.js 知識。提供了良好的入門指導，並且有多語言版本可供選擇，這對於不同語言背景的使用者非常友好。
+> README 文件清晰且提供了詳細的安裝步驟，包含必要的範例和指令。安裝過程相對順暢，但對於新手來說，可能需要一些 Node.js 的基礎知識。整體上，對於新手來說，花 30 分鐘應該能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供直觀的 UI，適合非技術用戶使用。
-> - 安全性高，預設為只讀模式，避免誤操作。
-> - 能夠快速查看 OpenClaw 的健康狀態和使用趨勢，幫助做出決策。
+> - 界面友好，適合非技術用戶使用。
+> - 提供即時的健康狀態和使用趨勢監控。
+> - 安全性高，預設為只讀模式，降低誤操作風險。
 
 > [!danger] 缺點
-> - 目前仍有開放的問題，可能影響使用體驗。
-> - 對於大型團隊的支持可能不足，需進一步優化。
-> - 不支援非本地環境，限制了使用場景。
+> - 僅支援 Node.js 環境，對於其他環境的支持有限。
+> - 在某些情況下，可能需要手動配置，增加了使用門檻。
+> - 對於大型團隊的協作功能仍有提升空間。
 
 > [!warning] 注意事項
-> - 目前仍有 26 個開放的問題，可能影響使用體驗。
-> - 對於大型團隊或複雜的 OpenClaw 環境，可能需要額外的配置和調整。
-> - 不支援在非本地環境中運行，必須在可訪問的本地環境中使用。
+> - 僅支援 Node.js 環境，需確保相容性。
+> - 在某些環境下，可能需要手動配置 Gateway URL。
+> - 不支持 Windows 環境的完整功能，可能會遇到兼容性問題。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的任務管理功能，但不專注於 OpenClaw 環境，適合一般的任務同步需求。 |
-| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於 AI 代理的管理，適合需要處理多個 AI 代理的情境，但不提供 OpenClaw 的特定功能。 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 針對 NVIDIA 硬體優化的 OpenClaw 版本，適合需要高效能計算的用戶，但不適合一般使用者。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步和傳輸，而非 OpenClaw 的任務管理和可觀察性。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供更為複雜的代理管理功能，但不如本專案專注於用戶友好的界面和安全性。 |
 
 ## 替代方案決策
 
@@ -205,16 +202,16 @@ OpenClaw Control Center 的核心技術機制是基於 TypeScript 和 Node.js，
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於數據的隱私保護和安全性，與 OpenClaw 的功能相比，Shadowbroker 更加注重數據的安全性和隱私。 | 如果你的團隊在處理敏感數據並需要更高的安全性，Shadowbroker 可能是更好的選擇。 | medium，因為需要重新配置和調整安全設置。 |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 提供 WebSocket 代理功能，專注於即時通訊，而 OpenClaw 更加專注於任務管理和觀察性。 | 如果你的應用需要即時通訊功能，tg-ws-proxy 會是更合適的選擇。 | low，因為可以輕鬆集成到現有的系統中。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於提供一個簡化的界面來管理 Claude 代理，而本專案則針對 OpenClaw 提供更全面的控制和監控功能。 | 如果你的團隊主要使用 Claude 並且需要一個簡單的管理工具，HolyClaude 會是更好的選擇。 | low，因為兩者都使用類似的 JavaScript 生態系統。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 提供 Telegram 的 WebSocket 代理功能，與本專案的任務管理和可觀察性功能不同。 | 如果你的需求主要是 Telegram 的消息代理，tg-ws-proxy 會更合適。 | medium，因為需要調整使用場景和功能。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **openclaw-control-center** | **Shadowbroker** | **tg-ws-proxy** |
+> | 維度 | **openclaw-control-center** | **HolyClaude** | **tg-ws-proxy** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於數據的隱私保護和安全性，與 OpenClaw 的功能相比，Shadowbroker 更加注重數據的安全性和隱私。 | 提供 WebSocket 代理功能，專注於即時通訊，而 OpenClaw 更加專注於任務管理和觀察性。 |
-> | 遷移成本 | - | medium，因為需要重新配置和調整安全設置。 | low，因為可以輕鬆集成到現有的系統中。 |
-> | 適用場景 | 主要場景 | 如果你的團隊在處理敏感數據並需要更高的安全性，Shadowb | 如果你的應用需要即時通訊功能，tg-ws-proxy 會是更 |
+> | 技術路線 | 本專案 | 專注於提供一個簡化的界面來管理 Claude 代理，而本專案則針對 OpenClaw 提供更全面的控制和監控功能。 | 提供 Telegram 的 WebSocket 代理功能，與本專案的任務管理和可觀察性功能不同。 |
+> | 遷移成本 | - | low，因為兩者都使用類似的 JavaScript 生態系統。 | medium，因為需要調整使用場景和功能。 |
+> | 適用場景 | 主要場景 | 如果你的團隊主要使用 Claude 並且需要一個簡單的管理工 | 如果你的需求主要是 Telegram 的消息代理，tg-ws |
 
 ## 成熟度評估
 
@@ -225,44 +222,44 @@ OpenClaw Control Center 的核心技術機制是基於 TypeScript 和 Node.js，
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合小型團隊試用，但不建議用於生產環境的核心路徑上。
+> 適合小型團隊試用，但不建議用於生產環境的核心任務。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些環境中，可能會出現無法找到核心源文件的錯誤
-  - 解法：確保當前目錄是控制中心的 repo 根目錄，並重新克隆官方 repo。
-- [MEDIUM] 如果環境變數配置不正確，可能導致控制中心無法啟動
-  - 解法：仔細檢查 .env 文件中的配置，確保所有必要的變數都已正確設置。
-- [MEDIUM] 在高並發情況下，可能會出現性能瓶頸
-  - 解法：考慮在更高效的硬體上運行，或優化應用程式的性能。
+- **[HIGH]** 在某些環境下，可能會出現無法找到 src/runtime 的錯誤
+  - 解法：確認當前目錄為專案根目錄，並重新克隆專案。
+- [MEDIUM] 如果環境變數配置不正確，可能導致無法啟動 UI
+  - 解法：檢查 .env 文件中的配置，確保 GATEWAY_URL 正確。
+- [MEDIUM] 在高並發情況下，可能會遇到性能瓶頸
+  - 解法：考慮擴展伺服器資源或優化請求處理邏輯。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的 OpenClaw 監控 | 非常適合 | 提供了簡單易用的界面，適合非技術用戶。 |
-| 大型企業的 OpenClaw 部署 | 不適合 | 在高並發情況下可能會出現性能瓶頸，需要更高效的架構。 |
-| 需要即時通訊的應用 | 普通 | 雖然有一定的即時性，但主要功能不在於即時通訊。 |
-| 對安全性要求高的數據處理 | 適合 | 提供了安全的預設配置，適合處理敏感數據。 |
+| 小型團隊運行 OpenClaw 的後端服務 | 非常適合 | 提供了友好的界面和即時的健康狀態監控。 |
+| 大型企業需要多用戶協作的 OpenClaw 控制中心 | 普通 | 雖然支持多用戶，但在功能上仍有提升空間。 |
+| 個人開發者需要簡單的 OpenClaw 監控工具 | 非常適合 | 安裝簡單且功能足夠滿足基本需求。 |
+| 對 OpenClaw 不熟悉的運維人員 | 適合 | 提供了安全的預設配置，降低了使用門檻。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~3 小時 |
-| 整合時間 | ~5 小時 |
+| 整合時間 | ~2 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，5 小時整合，得到簡化的 OpenClaw 操作體驗，值得一試。
+> 花 3 小時學習，2 小時整合，得到一個安全的 OpenClaw 控制中心，值得。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：該工具需要訪問 OpenClaw 環境，可能涉及敏感資料的存取，但預設為只讀模式，降低了風險。
+> 低風險：該工具不需要高權限，並且不存取敏感資料。依賴鏈的信任程度良好，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -327,17 +324,24 @@ OpenClaw Control Center 的核心技術機制是基於 TypeScript 和 Node.js，
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 417 |
+| Forks | 430 |
 | Open Issues | 26 |
 | Issue 解決率 | 41% (18 closed) |
-| 最後推送 | 2026-03-18 |
+| 最後推送 | 2026-03-29 |
 | 建立日期 | 2026-03-11 |
-| Repo 大小 | 38.6 MB |
+| Repo 大小 | 38.8 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/TianyiDataScience/openclaw-control-center) |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
 > `@types/node` `cross-env` `tsx` `typescript`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "TypeScript" : 97
+>     "JavaScript" : 2
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
@@ -350,13 +354,13 @@ OpenClaw Control Center 的核心技術機制是基於 TypeScript 和 Node.js，
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，有定期的更新和問題回應。
-**連結**：[文件](https://github.com/TianyiDataScience/openclaw-control-center/blob/main/README.md)
+**社群活躍度**：社群活躍度中等，近期有多個更新和討論。
+**連結**：[文件](https://github.com/TianyiDataScience/openclaw-control-center)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-16 ~ 2026-03-18）
-> **活躍天數** 3 天 · **最新 commit** perf: limit session-preview concurrency and increase render cache TTL
+> [!abstract] 最近 10 次 commit（2026-03-17 ~ 2026-03-29）
+> **活躍天數** 4 天 · **最新 commit** Honor explicit hall mentions on first task
 
 ## 熱門議題
 
@@ -381,7 +385,8 @@ OpenClaw Control Center 的核心技術機制是基於 TypeScript 和 Node.js，
 > 4. `npm run build`
 > 5. `npm test`
 > 6. `npm run smoke:ui`
-> 7. `npm run dev:ui`
+> 7. `npm run smoke:hall`
+> 8. `npm run dev:ui`
 > 
 > 
 > ## Installation and onboarding
@@ -463,9 +468,9 @@ OpenClaw Control Center 的核心技術機制是基於 TypeScript 和 Node.js，
 > 8. Do not assume any fixed agent names. If `openclaw.json` is readable, treat it as the source of truth.
 > 
 > Phase 2: install the project
-> 9. Confirm that the current directory is the control-center repo root.
+> 9. Confirm that the current directory is the control-center repo root. If it has not been cloned yet, clone it first: `git clone https://github.com/TianyiDataScience/openclaw-control-center.git`
 > 10. Verify the repo is complete before editing anything.
-> 11. If core paths are missing, stop and re-clone the official repo.
+> 11. If core paths (`src/runtime`, `src/ui`, `package.json`) are missing, do not continue. Re-clone from `https://github.com/TianyiDataScience/openclaw-control-center.git`.
 > 12. Run dependency install.
 > 13. If `.env` does not exist, create it from `.env.example`; otherwise correct it while preserving safe defaults.
 > 
@@ -486,6 +491,7 @@ OpenClaw Control Center 的核心技術機制是基於 TypeScript 和 Node.js，
 >    - npm run build
 >    - npm test
 >    - npm run smoke:ui
+>    - npm run smoke:hall
 > 18. If any step fails, stop and tell me exactly which step failed, why, and what I should fix next.
 > 19. If build / test / smoke succeed but the live Gateway is still unreachable, classify the result as: local UI works, but live observability is not fully connected yet.
 > 
@@ -540,29 +546,23 @@ OpenClaw Control Center 的核心技術機制是基於 TypeScript 和 Node.js，
 > - `Overview`: health, current state, decisions waiting, and operator-facing summaries
 > - `Usage`: usage, spend, subscription windows, and connector status
 > - `Staff`: who is really working now versus only queued
-> - `Collaboration`: parent-child relays and cross-session messages between existing agent sessions
-> - `Tasks`: current work, approvals, execution chains, and runtime evidence
-> - `Documents` and `Memory`: source-backed workbenches scoped to active OpenClaw agents
-> 
-> 
-> ## What this release adds
-> - `Collaboration`: a new standalone collaborat
+> - `Collaboration`: a hall-first multi-agent work chat with
 
 ## 延伸閱讀
 
-相關概念：[[微服務]] · [[API 設計]] · [[自動化測試]]
+相關概念：[[CLI/TUI]] · [[監控]] · [[自動化]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[photon-hq--qclaw-wechat-client|photon-hq/qclaw-wechat-client]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[photon-hq--qclaw-wechat-client|photon-hq/qclaw-wechat-client]]
 
 [GitHub](https://github.com/TianyiDataScience/openclaw-control-center)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：API 工具）
+> [!note]- 直接競品（同子分類：監控）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "API 工具" AND file.name != "TianyiDataScience--openclaw-control-center"
+> WHERE subcategory = "監控" AND file.name != "TianyiDataScience--openclaw-control-center"
 > SORT stars DESC
 > ```
 
@@ -594,7 +594,7 @@ OpenClaw Control Center 的核心技術機制是基於 TypeScript 和 Node.js，
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["微服務","API 設計","自動化測試"];
+> const concepts = ["CLI/TUI","監控","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "TianyiDataScience--openclaw-control-center" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
