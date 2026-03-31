@@ -7,12 +7,12 @@ language: Jupyter Notebook
 license: NOASSERTION
 description: "This repository contains the code to train and evaluate TRIBE v2, a multimodal model for brain response prediction"
 homepage: ""
-stars: 901
-stars_per_day: 180
-forks: 176
-open_issues: 13
+stars: 1048
+stars_per_day: 175
+forks: 210
+open_issues: 11
 created: 2026-03-24
-pushed_at: 2026-03-26
+pushed_at: 2026-03-30
 first_seen: 2026-03-30
 week: "2026-W14"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "預測大腦反應的多模態模型，結合視覺、聽覺和語言
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-06"
+appearances: 2
+next_review: "2026-04-07"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-30"
-star_history: "2026-03-30:900,2026-03-30:901"
+star_history: "2026-03-30:900,2026-03-30:901,2026-03-31:1048"
 tags:
   - github
   - "category/ai_ml"
@@ -805,4 +805,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-31|2026-03-31]] — 再次上榜，1.0k stars
 - [[2026-03-30|2026-03-30]] — 首次收錄，900 stars

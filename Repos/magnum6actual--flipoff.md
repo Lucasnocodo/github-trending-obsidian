@@ -7,9 +7,9 @@ language: JavaScript
 license: N/A
 description: "Free split-flap display emulator for any TV. The classic flip-board look, without the $3,500 hardware."
 homepage: ""
-stars: 2423
-stars_per_day: 808
-forks: 291
+stars: 2517
+stars_per_day: 629
+forks: 304
 open_issues: 15
 created: 2026-03-26
 pushed_at: 2026-03-26
@@ -30,8 +30,8 @@ use_case: "將任何電視轉變為復古的翻板顯示器，無需昂貴的硬
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-04-02"
+appearances: 4
+next_review: "2026-04-03"
 contributor_count: 0
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-28"
-star_history: "2026-03-28:1337,2026-03-29:2068,2026-03-30:2423"
+star_history: "2026-03-28:1337,2026-03-29:2068,2026-03-30:2423,2026-03-31:2517"
 tags:
   - github
   - "category/其他"
@@ -748,6 +748,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-03-31|2026-03-31]] — 再次上榜，2.5k stars
 - [[2026-03-30|2026-03-30]] — 再次上榜，2.4k stars
 - [[2026-03-29|2026-03-29]] — 再次上榜，2.1k stars
 - [[2026-03-28|2026-03-28]] — 首次收錄，1.3k stars
