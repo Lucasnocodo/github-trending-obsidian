@@ -7,12 +7,12 @@ language: JavaScript
 license: N/A
 description: "给 Claude Code 装上完整联网能力的 skill：三层通道调度 + 浏览器 CDP + 并行分治"
 homepage: ""
-stars: 2090
-stars_per_day: 190
-forks: 168
-open_issues: 10
+stars: 2833
+stars_per_day: 236
+forks: 198
+open_issues: 3
 created: 2026-03-18
-pushed_at: 2026-03-26
+pushed_at: 2026-03-31
 first_seen: 2026-03-25
 week: "2026-W13"
 month: "2026-03"
@@ -26,23 +26,23 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-25
-use_case: "為 Claude Code 提供完整的網路能力，支援多種自動化操作。"
+use_case: "為 Claude Code 提供完整的網路能力，支持多種瀏覽器自動化和調度策略。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 1
 next_review: "2026-04-01"
-contributor_count: 4
+contributor_count: 5
 engagement: "low"
-issue_close_rate: 41
-repo_size_kb: 52
-readme_length: 2953
+issue_close_rate: 81
+repo_size_kb: 83
+readme_length: 3381
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-25"
-star_history: "2026-03-25:1010,2026-03-25:1026,2026-03-26:1444,2026-03-27:1721,2026-03-29:2026,2026-03-30:2090"
+star_history: "2026-03-25:1010,2026-03-25:1026,2026-03-26:1444,2026-03-27:1721,2026-03-29:2026,2026-03-30:2090,2026-03-31:2833"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "web-access"
   - "eze-is/web-access"
-  - "為 Claude Code 提供完整的網路能力，支援多種自動化操作。"
+  - "為 Claude Code 提供完整的網路能力，支持多種瀏覽器自動化和調度策略。"
 ---
 
 # web-access
 
-**2.1k** stars · **190** stars/天 · 建立 11 天前 · JavaScript · 未標註授權
+**2.8k** stars · **236** stars/天 · 建立 12 天前 · JavaScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/eze-is--web-access");
@@ -69,13 +69,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```
 
 > [!summary] 一句話摘要
-> 為 Claude Code 提供完整的網路能力，支援多種自動化操作。
+> 為 Claude Code 提供完整的網路能力，支持多種瀏覽器自動化和調度策略。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (190 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 3 天前) · **貢獻者** 4+ 人 · **參與度** Low
-> **適合** 需要在 Claude Code 上進行自動化網路操作的開發者和研究人員。
-> **一句話重點** 這個專案的真正價值在於它能讓 AI 自動化執行複雜的網路任務，顯著提高工作效率。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (236 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
+> **適合** 需要自動化網頁操作且希望提高效率的開發者。
+> **一句話重點** 這個專案不僅提供了網頁自動化的能力，還引入了智能調度和經驗積累的概念，讓 AI 能夠更有效地執行任務。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -99,27 +99,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習、3 小時整合，得到高效的網頁自動化能力，值得投入。
+> **結論** 花 5 小時學習，3 小時整合，得到高效的網頁自動化能力，值得投入。
 
 > [!abstract] 核心創新
-> 這個專案的創新點在於結合了多種網路工具和自動化策略，實現了高效的網頁操作能力。
+> 支持自動選擇聯網工具和多目標的並行執行。
 
 ## 專案簡介
 
-這個專案為 Claude Code 增加了強大的網路能力，透過三層通道調度、CDP 瀏覽器操作和並行分治技術，讓 AI 能夠自動化執行各種網路任務。使用者可以透過簡單的指令讓 AI 執行如網頁搜索、讀取頁面內容或在社交平台上發佈內容等操作。核心機制是根據場景自動選擇合適的工具（如 WebSearch、curl 或 CDP），並且支持多種點擊方式和文件上傳，這樣的設計使得操作更靈活且高效。技術上，專案使用 JavaScript 和 Shell，並依賴 Node.js 和 Chrome 的遠端調試功能，這樣的選擇使得開發者能夠快速集成和測試。
+這個專案的核心機制是為 Claude Code 增強網路能力，透過三層通道調度、CDP 瀏覽器操作和並行分治來實現。使用者可以透過簡單的指令讓 Agent 自動執行網路任務，例如使用 `/click` 或 `/setFiles` 指令來進行互動操作。這樣的設計使得 Agent 能夠根據場景自動選擇合適的工具，如 WebSearch、curl 或 CDP，從而提高效率。技術上，專案使用 Node.js 來實現跨平台支持，並透過 WebSocket 直接連接 Chrome 瀏覽器，這樣的選擇使得操作更為靈活且能夠處理動態網頁。
 
-與其他類似工具相比，如 AlpinDale/parsync 和 BigBodyCobain/Shadowbroker，這個專案提供了更高的自動化程度和更靈活的操作方式，特別是在處理動態網頁和多任務並行執行方面。雖然功能強大，但使用者需要注意 CDP 模式的配置要求，並確保 Chrome 瀏覽器的設置正確。這個專案目前處於活躍開發中，社群回應速度尚可，但仍有一些開放的問題需要解決。總體來說，這是一個值得關注的工具，特別適合需要自動化網路操作的開發者和研究人員。
+與其他工具相比，如 AlpinDale/parsync 和 CoderLuii/HolyClaude，本專案的獨特之處在於其能夠進行多目標的並行執行，並且支持站點經驗的積累，這使得在相同網站上的操作能夠更快速且準確。使用者在實際操作中可能會遇到如 Firefox 支持不足等問題，但社群的活躍度和問題解決率顯示出其穩定性。整體而言，這個專案適合需要高效網路操作的開發者，尤其是在需要自動化多個網頁任務的情境下。未來可能會進一步擴展對更多瀏覽器的支持，提升其通用性。
 
-**技術棧**：`Node.js 22+` · `JavaScript` · `Shell`
+**技術棧**：`Node.js 22+` · `Chrome CDP`
 
 ## 重點功能
 
-- 自動選擇網路工具 — 根據場景自動選擇 WebSearch、WebFetch、curl、Jina 或 CDP。
-- CDP Proxy 瀏覽器操作 — 直連 Chrome，支持動態頁面和交互操作。
+- 聯網工具自動選擇 — 根據場景自動選擇 WebSearch、curl 或 CDP 等工具。
+- CDP Proxy 瀏覽器操作 — 直接連接 Chrome，支持動態頁面和交互操作。
 - 三種點擊方式 — 支持 JS 點擊、真實鼠標事件和文件上傳。
-- 並行分治 — 多目標時分發子 Agent 並行執行，實現高效處理。
+- 並行分治 — 多目標時分發子 Agent 並行執行，提升效率。
 - 站點經驗積累 — 按域名存儲操作經驗，跨 session 复用。
-- 媒體提取 — 從 DOM 直取圖片/視頻 URL，或對視頻任意時間點截帧分析。
 
 ## 快速開始
 
@@ -127,75 +126,77 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 帮我安装这个 skill：https://github.com/eze-is/web-access
 ```
-2. 手動克隆專案
+2. 使用 Plugin 安裝
+```bash
+claude plugin marketplace add https://github.com/eze-is/web-access
+```
+3. 手動安裝
 ```bash
 git clone https://github.com/eze-is/web-access ~/.claude/skills/web-access
-```
-3. 運行環境檢查
-```bash
-bash ~/.claude/skills/web-access/scripts/check-deps.sh
 ```
 
 ## 程式碼範例
 
 ```js
 [
-  "# 前置條件：需要 Node.js 22+ 和 Chrome 開啟遠程調試",
-  "node ~/.claude/skills/web-access/scripts/cdp-proxy.mjs &",
-  "# 預期輸出：啟動 CDP Proxy 服務"
+  "# 前置條件：Node.js 22+ 和 Chrome 開啟遠程調試",
+  "curl -s \"http://localhost:3456/new?url=https://example.com\"     # 新建 tab",
+  "curl -s -X POST \"http://localhost:3456/eval?target=ID\" -d 'document.title'  # 執行 JS",
+  "curl -s -X POST \"http://localhost:3456/click?target=ID\" -d 'button.submit'  # JS 點擊",
+  "curl -s \"http://localhost:3456/screenshot?target=ID&file=/tmp/shot.png\"     # 截圖"
 ]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 11 天就累積 2090 stars（190/天），forks 168（8.0%），這顯示出相對較高的使用興趣。專案的主要貢獻者 EzeW 和其他成員在開源社群中有一定的影響力，過去的作品也受到好評。這個專案解決了 Claude Code 在網路操作上的不足，之前的解決方案如 WebSearch 和 WebFetch 缺乏調度策略和自動化能力，無法滿足高效的需求。社群的反饋和需求促使了這個專案的快速成長，特別是在自動化和 AI 技術日益普及的背景下。forks/stars 比率為 8.0%，顯示出使用者對這個工具的實際修改和使用興趣。
+> 建立 12 天內累積 2833 stars（236/天），forks 198（7.0%），顯示出強烈的使用需求。這個專案由 EzeW 和其他貢獻者共同開發，他們在開源社群中有著良好的聲譽。該專案解決了 Claude Code 在網路操作上的不足，特別是缺乏調度策略和自動化能力的問題。社群中對於 Firefox 支持和其他瀏覽器操作的需求也引起了討論，顯示出使用者對於這個工具的期待。技術上，Node.js 的使用讓這個工具能夠跨平台運行，這在過去是較難實現的。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Claude Code 上進行自動化網路操作的開發者和研究人員。
+**目標受眾**：需要自動化網頁操作且希望提高效率的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來自動化網頁數據抓取，因為可以快速獲取最新的市場資訊，節省手動操作的時間。
-> - 數據分析師用它來在多個網站上進行資料比較，因為可以同時調研多個產品的官網，獲得更全面的數據。
-> - 內容創作者用它來在社交平台上發佈內容，因為可以自動化操作，提升工作效率，減少重複性任務的負擔。
+> - 後端工程師用它來自動化網頁數據抓取，因為可以輕鬆實現多目標的並行執行，節省了大量時間。
+> - 數據分析師用它來快速獲取網站的最新數據，因為它支持動態頁面和交互操作，能夠獲取更全面的信息。
+> - 產品經理用它來調研競爭對手的網站，因為可以同時對多個網站進行操作，並獲得對比摘要。
 
 ## 架構分析
 
-這個專案採用模組化設計，主要由 CDP Proxy 和多種網路工具組成，讓使用者能夠靈活選擇合適的操作方式。CDP Proxy 透過 WebSocket 直接連接 Chrome，提供 HTTP API 進行頁面操作，這樣的設計使得操作更為高效且即時。使用者可以根據需求選擇不同的工具進行操作，這樣的靈活性是專案的一大優勢。選擇 Node.js 作為後端語言，因為它在處理 I/O 密集型任務時表現優異，但這也意味著需要確保 Node 環境的正確配置。整體架構的擴展性良好，但在高並發情況下可能會遇到性能瓶頸，特別是在多任務並行執行時，需要進一步優化。
+這個專案採用 Node.js 作為核心架構，因為它能夠提供跨平台支持，並且利用非阻塞 I/O 來處理多個網頁請求。資料流方面，使用 WebSocket 直接連接 Chrome 瀏覽器，這樣的設計使得操作更為靈活且能夠處理動態網頁。選擇 CDP 進行瀏覽器操作是因為它能夠提供更細緻的控制，然而這也意味著需要用戶手動配置 Chrome 的遠程調試。這樣的架構在處理大量請求時可能會面臨性能瓶頸，特別是在高並發的情況下。整體而言，這個架構適合需要高效網頁操作的場景，但在擴展性上可能需要進一步優化。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是透過 CDP Proxy 直接與 Chrome 進行交互，使用 WebSocket 提供即時的頁面操作能力。這樣的設計使得操作延遲大幅降低，特別是在需要即時反饋的情況下，能夠快速執行 JS 代碼或進行頁面交互。效能方面，專案在處理多個任務時能夠有效分配資源，支持並行執行，但在高負載情況下可能會出現性能瓶頸。選擇 Node.js 作為後端語言的好處在於其非阻塞 I/O 模型，能夠高效處理大量請求，但這也帶來了對環境配置的要求。技術風險方面，CDP 依賴於 Chrome 的穩定性，若 Chrome 更新或改變 API，可能會影響專案的運行。整合方面，與現有的開發工具鏈（如 VS Code）相容性良好，但使用者需自行配置環境，這可能會增加初期的學習成本。
+專案的核心技術機制是基於 Node.js 和 Chrome 的 CDP，這使得它能夠實現高效的網頁操作。使用 WebSocket 直接連接 Chrome 瀏覽器，這樣的設計讓資料流更加順暢，並且能夠處理動態內容。效能方面，專案支持並行分治，這意味著在處理多個請求時能夠有效分配資源，然而在高並發情況下仍需注意性能瓶頸。選擇 Node.js 是因為它的非阻塞特性，但這也可能導致在 CPU 密集型操作中性能下降。技術風險方面，依賴於 Chrome 的遠程調試功能，若未來 Chrome 改變其 API，將可能影響專案的穩定性。整合方面，與主流的 CI/CD 工具鏈相容性良好，但在某些情況下可能需要額外的配置。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用範例，對於新手來說相對友好。安裝過程中需要手動配置 Chrome 的遠程調試選項，這可能會造成一些困難。整體上，文件的多語言支持也增加了可接觸性，讓不同語言的使用者都能理解。整體而言，花 30 分鐘應該能夠順利運行起來。
+> README 文件清晰，包含多種語言支持和安裝指引。安裝過程相對順暢，但需要用戶手動配置 Chrome 的遠程調試。提供了良好的入門指南，幫助新手快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供多種自動化操作方式，靈活性高。
-> - 支持並行分治，能夠高效處理多個任務。
-> - 結合了多種網路工具，使用者可以根據需求選擇。
+> - 支持多種網頁操作工具，自動選擇最合適的。
+> - 能夠進行多目標的並行執行，大幅提升效率。
+> - 支持動態頁面和交互操作，適用範圍廣泛。
 
 > [!danger] 缺點
-> - 需要手動配置 Chrome 的遠程調試選項，對新手不友好。
-> - 在某些網站上可能會遇到連接問題或授權彈窗。
-> - 依賴於 Node.js 和 Chrome 的配置，增加了使用門檻。
+> - 需要用戶手動配置 Chrome 的遠程調試，增加了使用門檻。
+> - 目前對 Firefox 的支持有限，可能影響使用者體驗。
+> - 在高並發情況下可能會遇到性能瓶頸。
 
 > [!warning] 注意事項
-> - 僅支援 Node.js 22+ 和 Chrome 開啟遠程調試。
-> - 需要手動配置 Chrome 的遠程調試選項。
-> - 對於某些網站，可能會遇到連接問題或授權彈窗。
+> - 僅支援 Node.js 22+。
+> - 需要 Chrome 開啟遠程調試，可能需要重啟瀏覽器。
+> - 目前對 Firefox 的支持有限，可能會遇到兼容性問題。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這個工具主要用於檔案同步，而本專案專注於網頁自動化操作，功能範圍不同。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 提供網路代理功能，但不具備本專案的自動化和多任務處理能力。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步和傳輸，而本專案專注於網頁自動化和操作。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 提供類似的自動化功能，但不支持並行分治和站點經驗積累。 |
 
 ## 替代方案決策
 
@@ -203,16 +204,16 @@ bash ~/.claude/skills/web-access/scripts/check-deps.sh
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於檔案同步，而不是網頁自動化，功能範圍明顯不同。 | 如果你的需求主要是檔案同步而非網頁操作，則應選擇此工具。 | low，因為兩者的功能和目的差異較大。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供網路代理功能，但不具備自動化和多任務處理能力。 | 如果需要簡單的網路代理而不需要複雜的自動化，則可選擇此工具。 | medium，因為需要重新設計操作流程。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步和傳輸，而本專案專注於網頁自動化和操作。 | 如果你的需求主要是文件同步而非網頁操作，則應選擇此工具。 | low，因為兩者的操作邏輯相似。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 提供類似的自動化功能，但不支持並行分治和站點經驗積累。 | 如果你的需求不需要高效的並行處理，則可以考慮此工具。 | medium，因為需要調整操作流程以適應不同的 API。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **web-access** | **parsync** | **Shadowbroker** |
+> | 維度 | **web-access** | **parsync** | **HolyClaude** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於檔案同步，而不是網頁自動化，功能範圍明顯不同。 | 提供網路代理功能，但不具備自動化和多任務處理能力。 |
-> | 遷移成本 | - | low，因為兩者的功能和目的差異較大。 | medium，因為需要重新設計操作流程。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是檔案同步而非網頁操作，則應選擇此工具。 | 如果需要簡單的網路代理而不需要複雜的自動化，則可選擇此工具。 |
+> | 技術路線 | 本專案 | 專注於文件同步和傳輸，而本專案專注於網頁自動化和操作。 | 提供類似的自動化功能，但不支持並行分治和站點經驗積累。 |
+> | 遷移成本 | - | low，因為兩者的操作邏輯相似。 | medium，因為需要調整操作流程以適應不同的 API。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是文件同步而非網頁操作，則應選擇此工具。 | 如果你的需求不需要高效的並行處理，則可以考慮此工具。 |
 
 ## 成熟度評估
 
@@ -223,27 +224,27 @@ bash ~/.claude/skills/web-access/scripts/check-deps.sh
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合用於開發和測試階段，但不建議在生產環境中使用。
+> 適合個人項目試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** CDP 連接超時可能導致誤導提示，影響使用體驗
-  - 解法：檢查 Chrome 的遠程調試設置，確保正確配置。
-- [MEDIUM] 某些網站可能會因為授權問題無法正常操作
-  - 解法：確保已經登入相關帳號，並檢查網頁的訪問權限。
-- **[HIGH]** 在 macOS 上可能無法連接 Chrome，導致功能無法使用
-  - 解法：檢查 CDP Proxy 的配置，確保 Chrome 正在運行。
+- **[HIGH]** Firefox 支持不足，可能導致某些功能無法正常使用
+  - 解法：使用 Chrome 瀏覽器進行操作
+- [MEDIUM] 在高並發情況下可能會遇到性能瓶頸
+  - 解法：考慮減少同時請求數量
+- [MEDIUM] CDP 模式需要手動配置，增加了使用門檻
+  - 解法：仔細按照 README 指示進行配置
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的網頁自動化需求 | 非常適合 | 提供靈活的自動化操作，能夠滿足多樣化需求。 |
-| 大型企業的高頻網頁操作 | 普通 | 雖然功能強大，但在高並發情況下可能會遇到性能瓶頸。 |
-| 個人開發者的實驗性專案 | 非常適合 | 易於上手，能夠快速實現網頁操作的自動化。 |
-| 需要高穩定性的生產環境 | 不適合 | 目前仍在 beta 階段，穩定性和可靠性尚未達到生產要求。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠自動化多個網頁操作，提升開發效率。 |
+| 大型企業的數據分析部門 | 適合 | 支持動態頁面和並行處理，能夠快速獲取數據。 |
+| 個人開發者的自動化工具 | 普通 | 雖然功能強大，但需要一定的配置和學習成本。 |
+| 需要高效網頁操作的研究團隊 | 非常適合 | 支持多目標並行執行，能夠快速完成任務。 |
 
 ## 採用成本分析
 
@@ -255,12 +256,12 @@ bash ~/.claude/skills/web-access/scripts/check-deps.sh
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習、3 小時整合，得到高效的網頁自動化能力，值得投入。
+> 花 5 小時學習，3 小時整合，得到高效的網頁自動化能力，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，主要操作是通過 Chrome 的遠程調試進行，對敏感資料的存取風險較低。
+> 低風險：不需要高權限，僅需訪問 Chrome 的遠程調試功能，且不存取敏感資料。
 
 ## 健康度儀表板
 
@@ -325,47 +326,41 @@ bash ~/.claude/skills/web-access/scripts/check-deps.sh
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 168 |
-| Open Issues | 10 |
-| Issue 解決率 | 41% (7 closed) |
-| 最後推送 | 2026-03-26 |
+| Forks | 198 |
+| Open Issues | 3 |
+| Issue 解決率 | 81% (13 closed) |
+| 最後推送 | 2026-03-31 |
 | 建立日期 | 2026-03-18 |
-| Repo 大小 | 52 KB |
+| Repo 大小 | 83 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/eze-is/web-access) |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "JavaScript" : 82
->     "Shell" : 18
-> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@EzeW](https://github.com/EzeW) | 16 |
-> | [@eze-is](https://github.com/eze-is) | 11 |
+> | [@EzeW](https://github.com/EzeW) | 20 |
+> | [@eze-is](https://github.com/eze-is) | 12 |
+> | [@HaiyiMei](https://github.com/HaiyiMei) | 1 |
 > | [@VegetaPn](https://github.com/VegetaPn) | 1 |
 > | [@li-xiu-qi](https://github.com/li-xiu-qi) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，最近有多次提交和問題回應。
-**連結**：[文件](https://github.com/eze-is/web-access#readme)
+**社群活躍度**：社群活躍，問題解決率達 81%。
+**連結**：[文件](https://github.com/eze-is/web-access)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-23 ~ 2026-03-26）
-> **活躍天數** 4 天 · **最新 commit** fix: check-deps.sh 用 /targets 替代 /health 统一连接检测，proxy connect() 防重入避免重复弹窗
+> [!abstract] 最近 10 次 commit（2026-03-25 ~ 2026-03-31）
+> **活躍天數** 4 天 · **最新 commit** fix: move skills field from marketplace.json to plugin.json
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#20](https://github.com/eze-is/web-access/issues/20) | check-deps.sh: CDP 连接超时时误导提示「可能有授权弹窗」 | 2 | 5 |
-> | [#26](https://github.com/eze-is/web-access/issues/26) | 💡 Proposal: 社区增长 & 可见性策略 | 0 | 0 |
-> | [#23](https://github.com/eze-is/web-access/issues/23) | [macOS] CDP Proxy 无法连接 Chrome — browser-level endpoint 不可用 | 0 | 0 |
+> | [#27](https://github.com/eze-is/web-access/issues/27) | firefox 支持 | 1 | 0 |
+> | [#33](https://github.com/eze-is/web-access/issues/33) | 基于 Chromium 的 ARC 浏览器，在打开 remote-debugging 时没有弹窗 | 0 | 2 |
+> | [#32](https://github.com/eze-is/web-access/issues/32) | 能支持其它chromium浏览器的操作吗 | 0 | 0 |
 
 ## README 摘錄
 
@@ -395,7 +390,7 @@ bash ~/.claude/skills/web-access/scripts/check-deps.sh
 > 
 > ---
 > 
-> ## v2.4 能力
+> ## v2.4.1 能力
 > 
 > | 能力 | 说明 |
 > |------|------|
@@ -406,7 +401,12 @@ bash ~/.claude/skills/web-access/scripts/check-deps.sh
 > | 站点经验积累 | 按域名存储操作经验（URL 模式、平台特征、已知陷阱），跨 session 复用 |
 > | 媒体提取 | 从 DOM 直取图片/视频 URL，或对视频任意时间点截帧分析 |
 > 
-> **v2.4 更新：**
+> **v2.4.1 更新：**
+> - **跨平台支持** — 脚本从 bash 迁移到 Node.js，Windows / Linux / macOS 均可使用
+> - **DOM 边界穿透** — 新增技术事实：eval 递归遍历可穿透 Shadow DOM、iframe 等选择器不可跨越的边界
+> 
+> v2.4 更新
+> 
 > - **站点内 URL 可靠性** — 新增事实说明：站点生成的链接自带完整上下文，手动构造的 URL 可能缺失隐式必要参数
 > - **平台错误提示不可信** — 新增技术事实：平台返回的"内容不存在"等提示可能是访问方式问题而非内容本身问题
 > - **小红书站点经验增强** — xsec_token 机制、创作者平台状态校验、暂存草稿流程
@@ -425,7 +425,14 @@ bash ~/.claude/skills/web-access/scripts/check-deps.sh
 > 帮我安装这个 skill：https://github.com/eze-is/web-access
 > ```
 > 
-> **方式二：手动**
+> **方式二：Plugin 安装**
+> 
+> ```bash
+> claude plugin marketplace add https://github.com/eze-is/web-access
+> claude plugin install web-access@web-access --scope user
+> ```
+> 
+> **方式三：手动**
 > 
 > ```bash
 > git clone https://github.com/eze-is/web-access ~/.claude/skills/web-access
@@ -438,10 +445,12 @@ bash ~/.claude/skills/web-access/scripts/check-deps.sh
 > 1. Chrome 地址栏打开 `chrome://inspect/#remote-debugging`
 > 2. 勾选 **Allow remote debugging for this browser instance**（可能需要重启浏览器）
 > 
-> 运行环境检查：
+> 环境检查（Agent 运行时会自动完成前置检查，无需手动执行）：
 > 
 > ```bash
-> bash ~/.claude/skills/web-access/scripts/check-deps.sh
+> node "$CLAUDE_SKILL_DIR/scripts/check-deps.mjs"
+> # $CLAUDE_SKILL_DIR 是 skill 加载时自动设置的环境变量
+> # 手动运行请替换为实际路径，如 ~/.claude/skills/web-access
 > ```
 > 
 > ## CDP Proxy API
@@ -449,8 +458,8 @@ bash ~/.claude/skills/web-access/scripts/check-deps.sh
 > Proxy 通过 WebSocket 直连 Chrome（兼容 `chrome://inspect` 方式，无需命令行参数启动），提供 HTTP API：
 > 
 > ```bash
-> # 启动
-> node ~/.claude/skills/web-access/scripts/cdp-proxy.mjs &
+> # 启动（Agent 会自动管理 Proxy 生命周期，无需手动启动）
+> node "$CLAUDE_SKILL_DIR/scripts/cdp-proxy.mjs" &
 > 
 > # 页面操作
 > curl -s "http://localhost:3456/new?url=https://example.com"     # 新建 tab
@@ -490,9 +499,9 @@ bash ~/.claude/skills/web-access/scripts/check-deps.sh
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[CLI/TUI]] · [[網路爬蟲]]
+相關概念：[[自動化]] · [[CLI/TUI]] · [[網頁自動化]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]]
 
 [GitHub](https://github.com/eze-is/web-access)
 
@@ -534,7 +543,7 @@ bash ~/.claude/skills/web-access/scripts/check-deps.sh
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","CLI/TUI","網路爬蟲"];
+> const concepts = ["自動化","CLI/TUI","網頁自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "eze-is--web-access" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
