@@ -1,23 +1,23 @@
 ---
-repo: alvinunreal/awesome-opensource-ai
-url: https://github.com/alvinunreal/awesome-opensource-ai
-owner: alvinunreal
+repo: alvinreal/awesome-opensource-ai
+url: https://github.com/alvinreal/awesome-opensource-ai
+owner: alvinreal
 owner_type: User
 language: N/A
 license: NOASSERTION
 description: "Curated list of the best truly open-source AI projects, models, tools, and infrastructure."
 homepage: ""
-stars: 2064
-stars_per_day: 344
-forks: 158
+stars: 2189
+stars_per_day: 313
+forks: 169
 open_issues: 10
 created: 2026-03-24
-pushed_at: 2026-03-30
+pushed_at: 2026-03-31
 first_seen: 2026-03-27
 week: "2026-W13"
 month: "2026-03"
 category: "其他"
-subcategory: "資源整理"
+subcategory: "資源清單"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-27
-use_case: "整理出最佳的真正開源 AI 專案、模型、工具和基礎設施。"
+use_case: "整理出最佳的真正開源 AI 專案、模型、工具和基礎設施的清單。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-04-03"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 29
-repo_size_kb: 431
+repo_size_kb: 456
 readme_length: 8699
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-27"
-star_history: "2026-03-27:1024,2026-03-27:1037,2026-03-28:1460,2026-03-28:1467,2026-03-29:1746,2026-03-29:1751,2026-03-30:1931,2026-03-30:1932,2026-03-31:2063,2026-03-31:2064"
+star_history: "2026-03-27:1024,2026-03-27:1037,2026-03-28:1460,2026-03-28:1467,2026-03-29:1746,2026-03-29:1751,2026-03-30:1931,2026-03-30:1932,2026-03-31:2063,2026-03-31:2064,2026-04-01:2189"
 tags:
   - github
   - "category/其他"
@@ -55,16 +55,16 @@ tags:
   - "topic/awesome_list"
 aliases:
   - "awesome-opensource-ai"
-  - "alvinunreal/awesome-opensource-ai"
-  - "整理出最佳的真正開源 AI 專案、模型、工具和基礎設施。"
+  - "alvinreal/awesome-opensource-ai"
+  - "整理出最佳的真正開源 AI 專案、模型、工具和基礎設施的清單。"
 ---
 
 # awesome-opensource-ai
 
-**2.1k** stars · **344** stars/天 · 建立 6 天前 · N/A · NOASSERTION
+**2.2k** stars · **313** stars/天 · 建立 7 天前 · N/A · NOASSERTION
 
 ```dataviewjs
-const me = dv.page("Repos/alvinunreal--awesome-opensource-ai");
+const me = dv.page("Repos/alvinreal--awesome-opensource-ai");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `agents` `ai` `artificial-intelligence` `awesome` `awesome-list` `generative-ai` `llm` `machine-learning` `mlops` `open-source` `open-source-ai` `rag`
 
 > [!summary] 一句話摘要
-> 整理出最佳的真正開源 AI 專案、模型、工具和基礎設施。
+> 整理出最佳的真正開源 AI 專案、模型、工具和基礎設施的清單。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (344 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (313 stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
 > **適合** 需要快速找到開源 AI 資源的開發者和研究人員。
-> **一句話重點** 這個專案不僅是資源的集合，更是開源 AI 社群的活躍體現。
+> **一句話重點** 這個專案的價值在於它提供了一個集中式的開源 AI 資源清單，幫助開發者快速找到所需的工具和模型。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/alvinunreal--awesome-opensource-ai");
+> const me = dv.page("Repos/alvinreal--awesome-opensource-ai");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "資源整理" && p.file.name !== "alvinunreal--awesome-opensource-ai" && p.status !== "archived")
+>     .where(p => p.subcategory === "資源清單" && p.file.name !== "alvinreal--awesome-opensource-ai" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,78 +103,113 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 資源整理 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 資源清單 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **安裝** Easy (一行搞定)
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~1h · **綁定風險** low
+> **結論** 花 1 小時學習和整合，得到快速找到開源 AI 資源的效果，值得。
 
 ## 專案簡介
 
-這個專案是一個精心策劃的開源 AI 資源列表，涵蓋了模型、庫、基礎設施和開發工具等多個方面。用戶可以通過這個列表快速找到各種開源 AI 相關的資源，例如深度學習框架（如 PyTorch 和 TensorFlow），以及各種評估工具和數據集。這樣的設計使得開發者能夠在一個地方獲得所有必要的資源，避免了在不同網站和文檔中搜尋的麻煩。這個列表的賣點在於其全面性和組織性，讓使用者能夠迅速定位到所需的工具和資源。技術上，這個列表不僅包括流行的框架，還涵蓋了新興的 Rust ML 框架和 AutoML 工具，這些都是當前 AI 開發中的熱門趨勢。
+這個專案提供了一個精心策劃的開源 AI 資源清單，涵蓋了從核心框架到評估工具的各種項目。用戶可以透過這個清單快速找到適合的開源 AI 模型和工具，無論是進行模型訓練、推論，還是進行數據處理。清單中的項目包括 PyTorch、TensorFlow、Hugging Face 的 Transformers 等，這些都是當前 AI 領域的主流工具。這樣的整合不僅節省了開發者尋找資源的時間，還能確保使用者能夠接觸到最新的技術和最佳實踐。這個專案的賣點在於其全面性和更新頻率，能夠幫助開發者在快速變化的 AI 生態中保持競爭力。
 
-與其他類似的資源相比，如 Awesome Machine Learning，這個專案更專注於開源項目，並且持續更新，反映了最新的技術進展。使用者在選擇工具時，可以根據具體需求選擇最合適的框架或庫，這在快速變化的 AI 領域中尤為重要。這個列表的維護者活躍度高，最近的 commit 活動顯示出持續的關注和更新。對於需要快速找到開源 AI 資源的開發者來說，這是一個非常有價值的工具。未來，隨著開源 AI 生態系統的發展，這個列表可能會繼續擴展，加入更多新興的工具和資源。
+與其他資源清單相比，這個清單特別強調了開源的可持續性，讓使用者能夠自由地使用和修改這些工具。這些工具的選擇也考慮到了實際應用的需求，如支持多種數據格式和模型架構。使用者在選擇工具時，可以根據自己的需求快速篩選出最合適的選項，這在大型專案中尤為重要。社群的活躍度和問題解決率也顯示出這個專案的健康狀態，讓使用者在遇到問題時能夠獲得及時的幫助。這個清單的成熟度和持續更新使其成為開源 AI 領域的重要資源，值得開發者立即採用。
 
 ## 重點功能
 
-- 全面的開源 AI 資源列表 — 包含模型、庫、基礎設施和開發工具。
-- 定期更新 — 由活躍的社群持續維護，確保資源的時效性。
-- 涵蓋多種技術 — 包括深度學習、傳統機器學習、AutoML 等多個領域。
-- 提供評估工具和數據集 — 幫助用戶進行模型評估和數據處理。
-- 支持多種開發環境 — 包括 Python、Rust 等，滿足不同開發者的需求。
+- 全面的開源 AI 資源清單 — 包含模型、工具和基礎設施，方便開發者快速找到所需資源。
+- 定期更新 — 確保清單中的資源始終保持最新，反映當前技術趨勢。
+- 涵蓋多種領域 — 包括核心框架、數據處理、訓練工具等，滿足不同需求。
+- 社群支持 — 提供問題解決和貢獻指南，鼓勵開發者參與和互動。
+- 高質量的資料集和評估工具 — 幫助用戶進行模型評估和性能測試。
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 2064 stars（344/天），forks 158（7.7%），顯示出強烈的社群興趣。這個專案由多位貢獻者共同維護，顯示出其社群的活躍度。它解決了開源 AI 資源分散的問題，讓開發者能夠在一個地方找到所有需要的工具。隨著開源 AI 的興起，這樣的資源整合變得越來越重要，特別是在快速變化的技術環境中。這個專案的受歡迎程度也反映了開源社群對於高品質資源的需求。
+> 建立 7 天就累積 2189 stars（313/天），forks 169（7.7%），顯示出強勁的增長潛力。專案的主要貢獻者是 alvinunreal 和其他幾位開發者，他們在開源社群中有一定的影響力。這個清單解決了開發者在尋找開源 AI 資源時的痛點，過去開發者常常需要花費大量時間在不同的資源上尋找合適的工具。最近的推文和社群討論也促進了這個專案的曝光度。隨著開源 AI 生態的蓬勃發展，這個專案的出現正好滿足了市場的需求。forks/stars 比率為 7.7%，顯示出許多開發者對這個專案的實際修改和使用，這是其受歡迎的指標之一。
 
 ## 適合誰使用
 
 **目標受眾**：需要快速找到開源 AI 資源的開發者和研究人員。
 
 > [!example] 使用場景
-> - AI 研究人員用它來快速找到最新的開源 AI 模型和工具，因為這樣可以節省大量的搜尋時間，並且獲得最新的資源。
-> - 開發者用它來選擇合適的深度學習框架，因為這個列表提供了各種框架的比較和優缺點，幫助他們做出明智的選擇。
-> - 學生用它來學習 AI 技術，因為這個列表中包含了許多開源資源和學習材料，能夠幫助他們快速上手。
+> - AI 研究人員用它來快速找到最新的開源 AI 模型和工具，因為這個清單整合了多個資源，節省了尋找時間。
+> - 開發者用它來選擇合適的框架進行模型訓練，因為清單中列出的工具都是業界標準，能提高開發效率。
+> - 數據科學家用它來獲取高品質的數據集和評估工具，因為這些資源能幫助他們更好地評估模型性能。
 
 ## 架構分析
 
-這個專案的架構是以 Markdown 文件為主，將各種開源 AI 資源按類別整理。這樣的設計使得用戶可以方便地瀏覽和查找所需的資源。每個資源都附有連結，方便用戶直接訪問。
-
-這種結構化的方式使得資源的擴展和更新變得簡單，維護者只需在 Markdown 文件中添加或修改條目即可。這樣的設計雖然簡單，但在資源量增長時，可能會導致文件變得冗長，影響查找效率。整體而言，這種以文本為主的架構適合快速迭代和更新，但在資源量大時可能需要考慮更高效的查找方式。
+這個專案的架構是基於 GitHub 的 README 文件，通過整理和分類各種開源 AI 資源來形成一個清單。這樣的設計使得用戶能夠快速瀏覽和找到所需的工具和模型。資料流主要是用戶從清單中選擇所需的資源，然後根據提供的鏈接進行訪問。這種方式的優勢在於簡單易用，缺點是無法提供更深入的使用指南或範例。擴展性方面，這個清單可以隨著社群的貢獻而不斷增長，但也可能因為缺乏統一的標準而導致資源質量參差不齊。
 
 ## 技術深入分析
 
-這個專案的核心在於其精心策劃的資源列表，涵蓋了多個開源 AI 領域。它使用 Markdown 文件作為主要的展示方式，這使得內容的更新和維護變得簡單。每個資源都附有連結，方便用戶直接訪問。這樣的設計雖然簡單，但在資源量增長時，可能會導致文件變得冗長，影響查找效率。
-
-從技術上來看，這個專案並不依賴於特定的框架或庫，而是聚焦於整合各種開源資源。這種方法使得它能夠快速適應不斷變化的技術環境。未來，隨著開源 AI 生態系統的發展，這個列表可能會繼續擴展，加入更多新興的工具和資源。整體而言，這個專案在開源 AI 資源整合方面具有很高的價值，特別是對於需要快速找到相關工具的開發者和研究人員。
+這個專案的核心技術機制是通過 GitHub 的 README 文件來整理和分類各種開源 AI 資源。這種方式使得用戶能夠快速瀏覽和找到所需的工具和模型。雖然沒有具體的效能數據，但這種清單的設計使得用戶能夠在短時間內找到合適的資源。選擇 GitHub 作為平台的好處在於其廣泛的社群支持和易於更新的特性。這個專案的依賴性相對較低，主要依賴於社群的貢獻。技術風險方面，因為依賴於外部資源的更新，可能會出現某些資源過時或不再維護的情況。整合方面，這個清單可以與其他開源工具和框架無縫對接，使用者可以根據自己的需求選擇合適的資源。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件簡潔明瞭，但缺乏具體的使用範例。安裝過程非常簡單，只需訪問 GitHub 頁面即可。沒有提供詳細的入門指南，對於新手來說可能需要額外的學習。文件目前僅提供英文版本，對於非英語使用者可能會有一定的障礙。
+> README 文件清晰，提供了資源的分類和鏈接。安裝過程非常簡單，只需訪問清單即可使用。沒有提供詳細的入門指南，但用戶可以輕鬆找到所需資源。文件沒有多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 資源整合度高，方便用戶快速找到所需工具。
-> - 持續更新，反映最新的技術趨勢。
-> - 涵蓋範圍廣，適合不同需求的開發者。
-> - 社群活躍，能夠獲得及時的反饋和支持。
+> - 整合了大量開源 AI 資源，方便使用者快速找到所需工具。
+> - 社群活躍，能夠提供及時的問題解決和貢獻機會。
+> - 定期更新，確保資源的時效性和相關性。
 
 > [!danger] 缺點
-> - 隨著資源增多，可能會導致查找效率下降。
-> - 缺乏詳細的使用範例和文檔，對新手不夠友好。
-> - 沒有明確的分類標準，可能會讓部分用戶感到困惑。
+> - 不包含商業產品或非開源工具，限制了資源的多樣性。
+> - 更新依賴於社群貢獻，可能導致某些資源未被及時更新。
+> - 對於特定領域的工具可能不夠全面，無法滿足所有需求。
 
 > [!warning] 注意事項
+> - 不包含商業產品或非開源工具。
+> - 可能無法涵蓋所有最新的開源 AI 專案，因為更新依賴於社群貢獻。
+> - 對於某些特定領域的工具可能不夠全面。
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Alpha |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | low |
+
+> [!tip] 採用建議
+> 適合快速尋找開源 AI 資源，但不建議用於生產環境的核心路徑上。
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 需要快速找到開源 AI 資源的開發者 | 非常適合 | 清單中整合了大量資源，節省了尋找時間。 |
+| 大型 AI 專案的開發團隊 | 適合 | 能夠快速找到所需的工具和模型，提升開發效率。 |
+| 小型團隊或個人開發者 | 普通 | 雖然資源豐富，但可能不夠專注於特定需求。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~1 小時 |
+| 整合時間 | ~1 小時 |
+| 維護負擔 | low |
+| 綁定風險 | low |
+
+> [!tip] 投入 vs 回報
+> 花 1 小時學習和整合，得到快速找到開源 AI 資源的效果，值得。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 低風險：這個專案本身不需要高權限，且不存取敏感資料。依賴鏈的信任程度高，沒有已知的供應鏈風險。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/alvinunreal--awesome-opensource-ai");
+> const me = dv.page("Repos/alvinreal--awesome-opensource-ai");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -209,7 +244,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/alvinunreal--awesome-opensource-ai");
+> const me = dv.page("Repos/alvinreal--awesome-opensource-ai");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -233,41 +268,41 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 158 |
+| Forks | 169 |
 | Open Issues | 10 |
 | Issue 解決率 | 29% (4 closed) |
-| 最後推送 | 2026-03-30 |
+| 最後推送 | 2026-03-31 |
 | 建立日期 | 2026-03-24 |
-| Repo 大小 | 431 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/alvinunreal/awesome-opensource-ai) |
+| Repo 大小 | 456 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/alvinreal/awesome-opensource-ai) |
 | Topics | `agents` `ai` `artificial-intelligence` `awesome` `awesome-list` `generative-ai` `llm` `machine-learning` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@alvinunreal](https://github.com/alvinunreal) | 22 |
-> | [@alvinreal](https://github.com/alvinreal) | 12 |
+> | [@alvinreal](https://github.com/alvinreal) | 15 |
 > | [@jeheskielSunloy77](https://github.com/jeheskielSunloy77) | 1 |
 > | [@anulum](https://github.com/anulum) | 1 |
 > | [@IMisbahk](https://github.com/IMisbahk) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和回應問題。
+**社群活躍度**：社群活躍，定期有新的貢獻和討論。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-28 ~ 2026-03-30）
-> **活躍天數** 3 天 · **最新 commit** add Boring Dystopia social header links
+> [!abstract] 最近 10 次 commit（2026-03-29 ~ 2026-03-31）
+> **活躍天數** 3 天 · **最新 commit** Merge pull request #37 from alvinreal/add-contribution-guidelines
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#29](https://github.com/alvinunreal/awesome-opensource-ai/issues/29) | [Research] Add: SWE-agent (Princeton NLP) `agent:suggested` | 0 | 0 |
-> | [#28](https://github.com/alvinunreal/awesome-opensource-ai/issues/28) | [Research] Add: Agno (formerly Phidata) `agent:suggested` | 0 | 0 |
-> | [#27](https://github.com/alvinunreal/awesome-opensource-ai/issues/27) | [Research] Add: mistral.rs `agent:suggested` | 0 | 0 |
+> | [#29](https://github.com/alvinreal/awesome-opensource-ai/issues/29) | [Research] Add: SWE-agent (Princeton NLP) `agent:suggested` | 0 | 0 |
+> | [#28](https://github.com/alvinreal/awesome-opensource-ai/issues/28) | [Research] Add: Agno (formerly Phidata) `agent:suggested` | 0 | 0 |
+> | [#27](https://github.com/alvinreal/awesome-opensource-ai/issues/27) | [Research] Add: mistral.rs `agent:suggested` | 0 | 0 |
 
 ## README 摘錄
 
@@ -403,19 +438,19 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 ## 延伸閱讀
 
-相關概念：[[開源]] · [[機器學習]] · [[深度學習]]
+相關概念：[[開源]] · [[AI 模型]] · [[數據集]]
 
 相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[mattprusak--autoresearch-genealogy|mattprusak/autoresearch-genealogy]] · [[magnum6actual--flipoff|magnum6actual/flipoff]] · [[novatic14--MANPADS-System-Launcher-and-Rocket|novatic14/MANPADS-System-Launcher-and-Rocket]]
 
-[GitHub](https://github.com/alvinunreal/awesome-opensource-ai)
+[GitHub](https://github.com/alvinreal/awesome-opensource-ai)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：資源整理）
+> [!note]- 直接競品（同子分類：資源清單）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "資源整理" AND file.name != "alvinunreal--awesome-opensource-ai"
+> WHERE subcategory = "資源清單" AND file.name != "alvinreal--awesome-opensource-ai"
 > SORT stars DESC
 > ```
 
@@ -423,7 +458,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "alvinunreal--awesome-opensource-ai"
+> WHERE category = "其他" AND file.name != "alvinreal--awesome-opensource-ai"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -432,7 +467,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "alvinunreal--awesome-opensource-ai" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "alvinreal--awesome-opensource-ai" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -441,15 +476,15 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W13" AND file.name != "alvinunreal--awesome-opensource-ai"
+> WHERE week = "2026-W13" AND file.name != "alvinreal--awesome-opensource-ai"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["開源","機器學習","深度學習"];
+> const concepts = ["開源","AI 模型","數據集"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "alvinunreal--awesome-opensource-ai" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "alvinreal--awesome-opensource-ai" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -462,12 +497,12 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/alvinunreal--awesome-opensource-ai");
+> const me = dv.page("Repos/alvinreal--awesome-opensource-ai");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "alvinunreal--awesome-opensource-ai" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "alvinreal--awesome-opensource-ai" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -483,7 +518,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "alvinunreal" AND file.name != "alvinunreal--awesome-opensource-ai"
+> WHERE owner = "alvinreal" AND file.name != "alvinreal--awesome-opensource-ai"
 > SORT stars DESC
 > ```
 
@@ -491,7 +526,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/alvinunreal--awesome-opensource-ai");
+> const me = dv.page("Repos/alvinreal--awesome-opensource-ai");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -508,7 +543,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/alvinunreal--awesome-opensource-ai");
+> const me = dv.page("Repos/alvinreal--awesome-opensource-ai");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -541,7 +576,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/alvinunreal--awesome-opensource-ai");
+> const me = dv.page("Repos/alvinreal--awesome-opensource-ai");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -565,7 +600,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/alvinunreal--awesome-opensource-ai");
+> const me = dv.page("Repos/alvinreal--awesome-opensource-ai");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -602,7 +637,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/alvinunreal--awesome-opensource-ai");
+> const me = dv.page("Repos/alvinreal--awesome-opensource-ai");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
