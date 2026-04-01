@@ -1,23 +1,23 @@
 ---
-repo: magnum6actual/flipoff
-url: https://github.com/magnum6actual/flipoff
-owner: magnum6actual
+repo: ChinaSiro/claude-code-sourcemap
+url: https://github.com/ChinaSiro/claude-code-sourcemap
+owner: ChinaSiro
 owner_type: User
-language: JavaScript
+language: TypeScript
 license: N/A
-description: "Free split-flap display emulator for any TV. The classic flip-board look, without the $3,500 hardware."
-homepage: ""
-stars: 2559
-stars_per_day: 512
-forks: 309
-open_issues: 15
-created: 2026-03-26
-pushed_at: 2026-03-26
-first_seen: 2026-03-28
-week: "2026-W13"
-month: "2026-03"
-category: "其他"
-subcategory: "顯示工具"
+description: ""
+homepage: "https://linux.do/u/huo0"
+stars: 4889
+stars_per_day: 4889
+forks: 8813
+open_issues: 3
+created: 2026-03-31
+pushed_at: 2026-03-31
+first_seen: 2026-04-01
+week: "2026-W14"
+month: "2026-04"
+category: "開發工具"
+subcategory: "源碼還原"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -25,41 +25,41 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-03-28
-use_case: "將任何電視轉變為復古的翻板顯示器，無需昂貴的硬體設備。"
+last_reviewed: 2026-04-01
+use_case: "還原 Claude 的 TypeScript 源碼，供研究使用。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
+appearances: 1
 next_review: "2026-04-04"
-contributor_count: 0
-engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 672
-readme_length: 3034
-bus_factor: 0
+contributor_count: 1
+engagement: "high"
+issue_close_rate: 67
+repo_size_kb: 73856
+readme_length: 1430
+bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-03-28"
-star_history: "2026-03-28:1337,2026-03-29:2068,2026-03-30:2423,2026-03-31:2517,2026-04-01:2559"
+ring_history: "assess@2026-04-01"
+star_history: "2026-04-01:4889"
 tags:
   - github
-  - "category/其他"
-  - "lang/javascript"
+  - "category/開發工具"
+  - "lang/typescript"
   - easy_install
 aliases:
-  - "flipoff"
-  - "magnum6actual/flipoff"
-  - "將任何電視轉變為復古的翻板顯示器，無需昂貴的硬體設備。"
+  - "claude-code-sourcemap"
+  - "ChinaSiro/claude-code-sourcemap"
+  - "還原 Claude 的 TypeScript 源碼，供研究使用。"
 ---
 
-# flipoff
+# claude-code-sourcemap
 
-**1.3k** stars · **1.3k** stars/天 · 建立 1 天前 · JavaScript · 未標註授權
+**4.9k** stars · **4.9k** stars/天 · 建立 1 天前 · TypeScript · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/magnum6actual--flipoff");
+const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`easy-install`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 將任何電視轉變為復古的翻板顯示器，無需昂貴的硬體設備。
+> 還原 Claude 的 TypeScript 源碼，供研究使用。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (1.3k stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 想要在活動或商業場合中使用復古翻板顯示效果的設計師或開發者。
-> **一句話重點** FlipOff 是一個將復古翻板顯示器帶入現代的創意專案，無需昂貴的硬體。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (4.9k stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
+> **適合** 對 Claude 的內部運作有興趣的開發者和研究人員。
+> **一句話重點** 這個專案讓開發者能夠深入了解 Claude 的內部運作，並進行技術研究。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/magnum6actual--flipoff");
+> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "顯示工具" && p.file.name !== "magnum6actual--flipoff" && p.status !== "archived")
+>     .where(p => p.subcategory === "源碼還原" && p.file.name !== "ChinaSiro--claude-code-sourcemap" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,108 +96,110 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 顯示工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 源碼還原 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~1h · **綁定風險** low
-> **結論** 花 1 小時學習、1 小時整合，得到簡單的翻板顯示效果，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，4 小時整合，得到對 Claude 的源碼還原，值不值得。
 
 > [!abstract] 核心創新
-> 提供了一個免費的翻板顯示器模擬，無需昂貴的硬體。
+> 基於公開 npm 包還原 Claude 的 TypeScript 源碼，提供研究用途。
 
 ## 專案簡介
 
-FlipOff 是一個免費的開源網頁應用，模擬經典的機械翻板顯示器，讓使用者能夠將電視或大型顯示器轉變為復古風格的顯示屏。使用者只需打開 `index.html`，即可在全螢幕模式下享受真實的翻板動畫和音效。每個翻板的動畫過程中，顯示的字符會經過隨機的顏色背景變化，並伴隨著真實的機械聲音，增強了使用體驗。這個工具的賣點在於其零依賴性，完全使用純 HTML/CSS/JS，無需任何框架或建置工具，且能在離線環境下運行。使用者可以透過簡單的鍵盤操作來導航顯示內容，並可自定義顯示的訊息、顏色和動畫時間。
+這個專案通過分析 npm 包 `@anthropic-ai/claude-code` 附帶的 source map，還原了 Claude 的 TypeScript 源碼，版本為 `2.1.88`。具體來說，它提取了 `cli.js.map` 中的 `sourcesContent` 字段，並生成了 4756 個還原文件，其中包含 1884 個 `.ts` 和 `.tsx` 源文件。這樣的設計使得開發者能夠研究 Claude 的內部結構和運作邏輯，而不需要直接訪問原始的開發代碼。這個工具的賣點在於其對於理解 Claude 的運作提供了可行的途徑，特別是對於想要進行技術研究的開發者。技術上，這個專案使用 TypeScript 和 JavaScript，並且依賴於 npm 包的結構，這使得它的依賴樹相對簡單，便於使用者進行修改和擴展。
 
-技術上，FlipOff 使用了 Web Audio API 來播放音效，並透過 JavaScript 控制每個翻板的動畫邏輯，這使得整體體驗非常流暢。相較於其他類似的工具，FlipOff 的優勢在於其簡單的安裝過程和完整的功能，無需註冊或訂閱費用，這使得它對於喜愛復古風格的使用者來說非常具吸引力。使用者在自定義內容時，可以輕鬆修改 `js/constants.js` 文件來調整顯示的訊息和顏色，這樣的靈活性使得 FlipOff 適合各種場合的使用。社群活躍度尚可，但目前仍有一些未解決的問題，這可能影響到使用者的體驗。整體來看，FlipOff 是一個值得嘗試的創意專案，尤其適合喜愛復古風格的開發者和設計師。
+與其他類似的專案相比，如 AlpinDale/parsync 和 BigBodyCobain/Shadowbroker，這個專案專注於還原 Claude 的源碼，而不是提供新的功能或擴展。這使得它在學術研究和技術分析方面具有獨特的價值。使用者在使用過程中可能會遇到版權問題，因為這些源碼的版權仍然屬於原開發者 Anthropic。這個專案目前處於 alpha 階段，適合對 Claude 的內部運作有興趣的開發者進行探索和研究。未來幾個月，隨著更多的研究者參與，這個專案可能會吸引更多的貢獻者，進一步豐富其內容。
 
-**技術棧**：`JavaScript` · `CSS` · `HTML`
+**技術棧**：`TypeScript` · `JavaScript`
 
 ## 重點功能
 
-- 真實的翻板動畫 — 每個翻板獨立動畫，顯示過程中有隨機顏色背景。
-- 機械聲音效果 — 使用真實錄音的機械聲音，增強使用體驗。
-- 全螢幕模式 — 按 `F` 鍵可進入全螢幕顯示，適合大型顯示器。
-- 離線運行 — 無需外部依賴，完全在本地運行。
-- 自定義訊息 — 編輯 `js/constants.js` 文件可修改顯示的文字和顏色。
+- 源碼還原 — 基於 npm 包 `@anthropic-ai/claude-code` 的 source map 還原 TypeScript 源碼。
+- 版本支持 — 還原的版本為 `2.1.88`，包含 4756 個還原文件。
+- 結構清晰 — 目錄結構包含 CLI 入口、工具實現、命令實現等，便於理解和擴展。
+- 非官方性質 — 明確標示為非官方，僅供研究使用，避免商業用途。
+- 社群互動 — 目前有 3 個開放的 Issues，顯示出活躍的社群參與。
 
 ## 快速開始
 
-1. 克隆這個 repo
+1. 克隆專案
 ```bash
-git clone https://github.com/magnum6actual/flipoff.git
+git clone https://github.com/ChinaSiro/claude-code-sourcemap.git
 ```
-2. 在瀏覽器中打開 `index.html`
+2. 安裝依賴
 ```bash
-open flipoff/index.html
+npm install
 ```
-3. 按 `F` 進入全螢幕模式
+3. 運行 CLI
 ```bash
-按 `F` 鍵
+node restored-src/src/main.tsx
 ```
 
 ## 程式碼範例
 
-```js
+```ts
 {
-  "前置條件": "確保在本地環境中有 Python 3",
-  "指令": "python3 -m http.server 8080",
-  "預期輸出": "在瀏覽器中打開 http://localhost:8080"
+  "前置條件": "需要安裝 Node.js 和 npm。",
+  "指令": "node restored-src/src/main.tsx",
+  "預期輸出": "啟動 CLI 入口，顯示可用命令列表。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 1337 stars（1337/天），forks 184（13.8%），這顯示出強烈的興趣和需求。作者的背景不明，但這個專案解決了高價翻板顯示器的痛點，提供了一個免費的替代方案。沒有明顯的觸發事件，但其獨特的功能和免費的特性吸引了許多使用者。技術上，這個工具的可行性來自於現代瀏覽器對 HTML/CSS/JS 的良好支援。forks/stars 比率為 13.8%，這表示有相當一部分使用者在進行實際修改，顯示出對這個專案的實際應用需求。
+> 建立 1 天就累積 4889 stars（4889/天），forks 8813（180.3%），這顯示出極高的興趣和參與度。作者 ChinaSiro 可能是開源社群中的活躍成員，這個專案解決了開發者對於 Claude 內部運作的好奇心，之前的方案無法提供這樣的源碼還原。這個專案的出現可能受到社群對於開源 AI 工具的需求增加的影響，特別是在研究和學習的領域。高達 180.3% 的 forks/stars 比率顯示出許多開發者正在積極修改和使用這個專案，這意味著它不僅僅是個觀望的工具，而是實際被應用和改進的對象。
 
 ## 適合誰使用
 
-**目標受眾**：想要在活動或商業場合中使用復古翻板顯示效果的設計師或開發者。
+**目標受眾**：對 Claude 的內部運作有興趣的開發者和研究人員。
 
 > [!example] 使用場景
-> - 活動策劃者用它來在婚禮上展示祝福語，因為其復古的外觀和音效能夠增添氛圍。
-> - 小型咖啡館的老闆用它來顯示每日特價，因為這樣可以吸引顧客的注意，並且不需要額外的硬體成本。
-> - 學校的老師用它來展示學生的成就，因為這樣的展示方式能夠激勵學生，並且操作簡單。
+> - 研究人員用它來分析 Claude 的內部邏輯，因為可以直接查看源碼結構和實現細節。
+> - 開發者用它來進行功能擴展，因為可以基於還原的源碼進行二次開發。
+> - 學生用它來學習 TypeScript 和 JavaScript 的實際應用，因為提供了真實的代碼範例和結構。
 
 ## 架構分析
 
-FlipOff 的架構基於單頁應用的設計，所有功能都在 `index.html` 中實現。資料流方面，使用 JavaScript 控制翻板的動畫和聲音播放，並利用 DOM 操作來更新顯示內容。這種設計使得應用能夠在不同的設備上運行，從手機到 4K 顯示器都能保持良好的顯示效果。選擇純 HTML/CSS/JS 的架構使得安裝和使用變得簡單，但也限制了未來擴展的可能性，例如無法輕易加入複雜的功能或第三方庫。整體而言，這種設計適合小型專案，但在面對更大規模的應用時，可能會遇到性能瓶頸。
+這個專案的架構主要是基於 TypeScript 和 JavaScript，並通過分析 npm 包的 source map 來還原源碼。這樣的設計使得專案能夠快速生成大量的源碼文件，並且保持結構的清晰。資料流方面，從 npm 包中提取 source map，然後生成對應的 TypeScript 源碼。
+
+選擇這種方法的代價在於可能無法還原所有的內部邏輯，因為這只是基於公開的資料。擴展性方面，這個專案的依賴樹相對簡單，便於開發者進行修改和擴展，但也意味著可能缺乏一些高級功能。整體而言，這個專案在源碼還原的領域提供了一個有趣的切入點，適合對 AI 工具有興趣的開發者進行探索。
 
 ## 技術深入分析
 
-FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動畫和聲音播放，這樣的設計使得整個應用能夠在任何現代瀏覽器中運行。每個翻板的動畫是獨立的，透過 DOM 操作來實現，這樣的設計讓使用者能夠享受到流暢的視覺效果。效能方面，由於是純前端應用，對於資源的需求相對較低，但在顯示大量訊息時可能會出現延遲。選擇不使用任何框架或庫，雖然降低了學習曲線，但也限制了未來的擴展性。技術風險方面，隨著使用者需求的增加，可能會面臨功能擴展的挑戰，特別是在需要更複雜的動畫或互動時。整合方面，由於是純前端應用，與現有的技術生態整合相對簡單，但缺乏與其他工具的直接整合能力。
+這個專案的核心技術機制是通過分析 npm 包的 source map 來還原 TypeScript 源碼，這樣的做法使得開發者能夠獲得 Claude 的內部邏輯。效能上，這個專案能夠生成大量的源碼文件，並且保持結構的清晰，這對於研究者來說是非常有價值的。選擇 TypeScript 和 JavaScript 作為開發語言，讓這個專案能夠充分利用現有的生態系統，並且降低了學習成本。技術風險方面，這個專案可能在未來面臨版權問題，因為源碼的版權仍然歸原開發者所有。整合方面，這個專案能夠輕鬆地與其他 JavaScript 工具鏈進行整合，但在商業應用中可能會遇到法律風險。整體而言，這個專案在源碼還原的領域提供了一個有趣的切入點，適合對 AI 工具有興趣的開發者進行探索。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的使用說明，並且包含了簡單的範例。安裝過程非常順暢，只需打開 `index.html` 即可運行。文件目前僅提供英文版本，缺乏多語言支持，這可能對非英語使用者造成困難。
+> README 文件清晰，提供了詳細的使用說明和範例；安裝過程順暢，沒有明顯的坑；有良好的 getting started guide；文件目前僅提供英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 免費且開源，無需額外費用。
-> - 簡單易用，無需註冊或訂閱。
-> - 可在多種設備上運行，適應性強。
+> - 提供了對 Claude 的源碼還原，方便進行技術研究。
+> - 結構清晰，便於理解和擴展。
+> - 社群活躍，能夠獲得及時的支持和更新。
 
 > [!danger] 缺點
-> - 功能相對簡單，無法滿足高級需求。
-> - 不支援多語言，僅限於英文。
-> - 社群活躍度尚可，問題解決率低。
+> - 僅供研究使用，無法用於商業用途。
+> - 源碼版權問題需謹慎處理。
+> - 可能不包含最新的功能或更新。
 
 > [!warning] 注意事項
-> - 僅支援現代瀏覽器，舊版瀏覽器可能無法正常運行。
-> - 不支援多語言，僅提供英文界面。
-> - 無法自動更新顯示內容，需手動編輯文件。
+> - 僅供研究使用，不能用於商業用途。
+> - 源碼版權仍然歸原開發者所有，使用時需注意版權問題。
+> - 可能不包含最新的功能或更新，因為是基於特定版本的還原。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這是一個用於同步文件的工具，與 FlipOff 的顯示功能無關，適用場景不同。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 這是一個網路安全工具，與 FlipOff 的娛樂性質完全不同。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於數據同步和傳輸，而本專案專注於源碼還原。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供類似的源碼分析功能，但針對不同的 npm 包。 |
 
 ## 替代方案決策
 
@@ -205,16 +207,16 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 這是一個用於 Telegram 的 WebSocket 代理工具，與 FlipOff 的顯示功能無關，適用場景不同。 | 如果你的需求是進行即時通訊的代理，而非顯示內容。 | low，因為這兩者的功能和目的完全不同。 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 這是一個針對 NVIDIA 硬體的優化工具，與 FlipOff 的娛樂性質完全不同。 | 如果你需要針對 NVIDIA 硬體進行性能優化，而非顯示內容。 | medium，因為需要重新考慮整體架構和需求。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於提供 Claude 的 API 接口，而本專案專注於源碼還原。 | 如果需要直接使用 Claude 的功能而不是研究源碼，則應選擇 HolyClaude。 | low，因為兩者都是基於 Claude 的技術，切換相對簡單。 |
+| [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) | 提供 Telegram 的 WebSocket 代理，而本專案專注於源碼還原。 | 如果需要在 Telegram 中使用 Claude 的功能，則應選擇 tg-ws-proxy。 | medium，因為需要重新設計應用邏輯。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **flipoff** | **tg-ws-proxy** | **NemoClaw** |
+> | 維度 | **claude-code-sourcemap** | **HolyClaude** | **tg-ws-proxy** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這是一個用於 Telegram 的 WebSocket 代理工具，與 FlipOff 的顯示功能無關，適用場景不同。 | 這是一個針對 NVIDIA 硬體的優化工具，與 FlipOff 的娛樂性質完全不同。 |
-> | 遷移成本 | - | low，因為這兩者的功能和目的完全不同。 | medium，因為需要重新考慮整體架構和需求。 |
-> | 適用場景 | 主要場景 | 如果你的需求是進行即時通訊的代理，而非顯示內容。 | 如果你需要針對 NVIDIA 硬體進行性能優化，而非顯示內容 |
+> | 技術路線 | 本專案 | 專注於提供 Claude 的 API 接口，而本專案專注於源碼還原。 | 提供 Telegram 的 WebSocket 代理，而本專案專注於源碼還原。 |
+> | 遷移成本 | - | low，因為兩者都是基於 Claude 的技術，切換相對簡單。 | medium，因為需要重新設計應用邏輯。 |
+> | 適用場景 | 主要場景 | 如果需要直接使用 Claude 的功能而不是研究源碼，則應選 | 如果需要在 Telegram 中使用 Claude 的功能， |
 
 ## 成熟度評估
 
@@ -225,50 +227,56 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用或小型專案，但不建議用於生產環境的核心功能。
+> 適合對 Claude 的內部運作有興趣的開發者進行探索，但不建議用於生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些瀏覽器中，音效可能無法正常播放
-  - 解法：確保瀏覽器允許自動播放音訊
-- **[HIGH]** 自定義訊息時，格式不正確可能導致顯示錯誤
-  - 解法：仔細檢查 `js/constants.js` 中的格式
-- [MEDIUM] 在某些解析度下，顯示可能不完全
-  - 解法：調整 CSS 以適應不同的顯示器
+- [MEDIUM] 源碼還原的完整性可能不高，因為僅基於公開的資料進行分析。
+  - 解法：使用者需自行驗證還原的源碼是否符合預期。
+- **[HIGH]** 可能會遇到版權問題，因為源碼仍然屬於原開發者。
+  - 解法：僅用於研究和學習，避免商業用途。
+- [MEDIUM] 未來可能不再更新，因為專案仍處於 alpha 階段。
+  - 解法：持續關注專案的更新狀態。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型咖啡館的每日特價顯示 | 非常適合 | 簡單易用且無需額外硬體成本。 |
-| 大型活動的祝福語展示 | 適合 | 能夠吸引注意並增添氛圍。 |
-| 學校的成就展示 | 普通 | 雖然能展示內容，但功能較為簡單。 |
-| 需要高級動畫效果的商業展示 | 不適合 | 缺乏複雜的動畫和互動功能。 |
+| 對 Claude 的內部運作有興趣的開發者 | 非常適合 | 提供了源碼還原，便於深入研究。 |
+| 希望將 Claude 用於商業產品的團隊 | 不適合 | 源碼版權問題需謹慎處理。 |
+| 學術研究的學生 | 適合 | 能夠獲得真實的代碼範例和結構。 |
+| 希望快速開發基於 Claude 的應用的開發者 | 普通 | 可能需要額外的開發工作來整合功能。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~1 小時 |
-| 整合時間 | ~1 小時 |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~4 小時 |
 | 維護負擔 | low |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 1 小時學習、1 小時整合，得到簡單的翻板顯示效果，值得嘗試。
+> 花 2 小時學習，4 小時整合，得到對 Claude 的源碼還原，值不值得。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具不需要高權限，且不會存取敏感資料，依賴鏈簡單，適合在 CI/CD 中使用。
+> 低風險：專案本身不需要高權限，且不存取敏感資料，但使用時需注意版權問題和依賴的安全性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個專案最常與 Node.js 和 npm 生態系統搭配使用，通常在開發和研究階段進行整合。在一個使用 Node.js 的專案中，你可以通過安裝 npm 包來使用這個工具，具體做法是運行 `npm install`。與主流的 CI/CD 工具（如 GitHub Actions）相容，能夠輕鬆集成到現有的開發流程中。整合的摩擦點主要在於版權問題，使用者需確保遵循相關法律法規。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/magnum6actual--flipoff");
+> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -303,7 +311,7 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/magnum6actual--flipoff");
+> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -327,142 +335,105 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 184 |
-| Open Issues | 7 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-03-26 |
-| 建立日期 | 2026-03-26 |
-| Repo 大小 | 672 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/magnum6actual/flipoff) |
+| Forks | 8.8k |
+| Open Issues | 3 |
+| Issue 解決率 | 67% (6 closed) |
+| 最後推送 | 2026-03-31 |
+| 建立日期 | 2026-03-31 |
+| 官方網站 | [Link](https://linux.do/u/huo0) |
+| Repo 大小 | 72.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/ChinaSiro/claude-code-sourcemap) |
 
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "JavaScript" : 60
->     "CSS" : 34
->     "HTML" : 6
-> ```
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@ChinaSiro](https://github.com/ChinaSiro) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，但目前有 7 個未解決的問題。
+**社群活躍度**：社群活躍，開放的 Issues 顯示出參與度。
+**連結**：[文件](https://linux.do/u/huo0)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-26）
-> **活躍天數** 1 天 · **最新 commit** Initial release: FlipOff split-flap display web app
+> [!abstract] 最近 10 次 commit（2026-03-31）
+> **活躍天數** 1 天 · **最新 commit** init: restore source from @anthropic-ai/claude-code@2.1.88 sourcemap
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#8](https://github.com/magnum6actual/flipoff/issues/8) | Free? | 0 | 2 |
-> | [#6](https://github.com/magnum6actual/flipoff/issues/6) | Chances of getting this in Docker | 0 | 5 |
+> | [#2](https://github.com/ChinaSiro/claude-code-sourcemap/issues/2) | 请问这个和官方仓的主要区别是啥？ | 6 | 3 |
+> | [#8](https://github.com/ChinaSiro/claude-code-sourcemap/issues/8) | 🤡 原汤化原食，Claude 如何看待眼中的老己 https://github.com/openedclaude/cl | 5 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # FlipOff.
+> # claude-code-sourcemap
 > 
-> **Turn any TV into a retro split-flap display.** The classic flip-board look, without the $3,500 hardware. And it's free.
+> [](https://linux.do)
 > 
-> ## What is this?
+> > [!WARNING]
+> > This repository is **unofficial** and is reconstructed from the public npm package and source map analysis, **for research purposes only**.
+> > It does **not** represent the original internal development repository structure.
+> >
+> > 本仓库为**非官方**整理版，基于公开 npm 发布包与 source map 分析还原，**仅供研究使用**。
+> > **不代表**官方原始内部开发仓库结构。
+> > 一切基于L站"飘然与我同"的情报提供
 > 
-> FlipOff is a free, open-source web app that emulates a classic mechanical split-flap (flip-board) airport terminal display — the kind you'd see at train stations and airports. It runs full-screen in any browser, turning a TV or large monitor into a beautiful retro display.
+> ## 概述
 > 
-> No accounts. No subscriptions. No $199 fee. Just open `index.html` and go.
+> 本仓库通过 npm 发布包（`@anthropic-ai/claude-code`）内附带的 source map（`cli.js.map`）还原的 TypeScript 源码，版本为 `2.1.88`。
 > 
-> ## Features
+> ## 来源
 > 
-> - Realistic split-flap animation with colorful scramble transitions
-> - Authentic mechanical clacking sound (recorded from a real split-flap display)
-> - Auto-rotating inspirational quotes
-> - Fullscreen TV mode (press `F`)
-> - Keyboard controls for manual navigation
-> - Works offline — zero external dependencies
-> - Responsive from mobile to 4K displays
-> - Pure vanilla HTML/CSS/JS — no frameworks, no build tools, no npm
+> - npm 包：[@anthropic-ai/claude-code](https://www.npmjs.com/package/@anthropic-ai/claude-code)
+> - 还原版本：`2.1.88`
+> - 还原文件数：**4756 个**（含 1884 个 `.ts`/`.tsx` 源文件）
+> - 还原方式：提取 `cli.js.map` 中的 `sourcesContent` 字段
 > 
-> ## Quick Start
-> 
-> 1. Clone the repo
-> 2. Open `index.html` in a browser (or serve with any static file server)
-> 3. Click anywhere to enable audio
-> 4. Press `F` for fullscreen TV mode
-> 
-> ```bash
-> # Or serve locally:
-> python3 -m http.server 8080
-> # Then open http://localhost:8080
-> ```
-> 
-> ## Keyboard Shortcuts
-> 
-> | Key | Action |
-> |-----|--------|
-> | `Enter` / `Space` | Next message |
-> | `Arrow Left` | Previous message |
-> | `Arrow Right` | Next message |
-> | `F` | Toggle fullscreen |
-> | `M` | Toggle mute |
-> | `Escape` | Exit fullscreen |
-> 
-> ## How It Works
-> 
-> Each tile on the board is an independent element that can animate through a scramble sequence (rapid random characters with colored backgrounds) before settling on the final character. Only tiles whose content changes between messages animate — just like a real mechanical board.
-> 
-> The sound is a single recorded audio clip of a real split-flap transition, played once per message change to perfectly sync with the visual animation.
-> 
-> ## File Structure
+> ## 目录结构
 > 
 > ```
-> flipoff/
->   index.html           — Single-page app
->   css/
->     reset.css          — CSS reset
->     layout.css         — Page layout (header, hero, board)
->     board.css          — Board container and accent bars
->     tile.css           — Tile styling and 3D flip animation
->     responsive.css     — Media queries for all screen sizes
->   js/
->     main.js            — Entry point and UI wiring
->     Board.js           — Grid manager and transition orchestration
->     Tile.js            — Individual tile animation logic
->     SoundEngine.js     — Audio playback with Web Audio API
->     MessageRotator.js  — Quote rotation timer
->     KeyboardController.js — Keyboard shortcut handling
->     constants.js       — Configuration (grid size, colors, quotes)
->     flapAudio.js       — Embedded audio data (base64)
+> restored-src/src/
+> ├── main.tsx              # CLI 入口
+> ├── tools/                # 工具实现（Bash、FileEdit、Grep、MCP 等 30+ 个）
+> ├── commands/             # 命令实现（commit、review、config 等 40+ 个）
+> ├── services/             # API、MCP、分析等服务
+> ├── utils/                # 工具函数（git、model、auth、env 等）
+> ├── context/              # React Context
+> ├── coordinator/          # 多 Agent 协调模式
+> ├── assistant/            # 助手模式（KAIROS）
+> ├── buddy/                # AI 伴侣 UI
+> ├── remote/               # 远程会话
+> ├── plugins/              # 插件系统
+> ├── skills/               # 技能系统
+> ├── voice/                # 语音交互
+> └── vim/                  # Vim 模式
 > ```
 > 
-> ## Customization
+> ## 声明
 > 
-> Edit `js/constants.js` to change:
-> - **Messages**: Add your own quotes or text
-> - **Grid size**: Adjust `GRID_COLS` and `GRID_ROWS`
-> - **Timing**: Tweak `SCRAMBLE_DURATION`, `STAGGER_DELAY`, etc.
-> - **Colors**: Modify `SCRAMBLE_COLORS` and `ACCENT_COLORS`
-> 
-> ## License
-> 
-> MIT — do whatever you want with it.
+> - 源码版权归 [Anthropic](https://www.anthropic.com) 所有
+> - 本仓库仅用于技术研究与学习，请勿用于商业用途
+> - 如有侵权，请联系删除
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[顯示技術]] · [[開源]]
+相關概念：[[源碼還原]] · [[開源研究]] · [[TypeScript]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alvinunreal--awesome-opensource-ai|alvinunreal/awesome-opensource-ai]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[mattprusak--autoresearch-genealogy|mattprusak/autoresearch-genealogy]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]]
 
-[GitHub](https://github.com/magnum6actual/flipoff)
+[GitHub](https://github.com/ChinaSiro/claude-code-sourcemap) · [官方網站](https://linux.do/u/huo0)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：顯示工具）
+> [!note]- 直接競品（同子分類：源碼還原）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "顯示工具" AND file.name != "magnum6actual--flipoff"
+> WHERE subcategory = "源碼還原" AND file.name != "ChinaSiro--claude-code-sourcemap"
 > SORT stars DESC
 > ```
 
@@ -470,7 +441,7 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "magnum6actual--flipoff"
+> WHERE category = "開發工具" AND file.name != "ChinaSiro--claude-code-sourcemap"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -479,7 +450,7 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "magnum6actual--flipoff" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "ChinaSiro--claude-code-sourcemap" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -488,15 +459,15 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W13" AND file.name != "magnum6actual--flipoff"
+> WHERE week = "2026-W14" AND file.name != "ChinaSiro--claude-code-sourcemap"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","顯示技術","開源"];
+> const concepts = ["源碼還原","開源研究","TypeScript"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "magnum6actual--flipoff" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "ChinaSiro--claude-code-sourcemap" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -509,12 +480,12 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/magnum6actual--flipoff");
+> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "magnum6actual--flipoff" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "ChinaSiro--claude-code-sourcemap" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -530,7 +501,7 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "magnum6actual" AND file.name != "magnum6actual--flipoff"
+> WHERE owner = "ChinaSiro" AND file.name != "ChinaSiro--claude-code-sourcemap"
 > SORT stars DESC
 > ```
 
@@ -538,7 +509,7 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/magnum6actual--flipoff");
+> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -555,7 +526,7 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/magnum6actual--flipoff");
+> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -588,7 +559,7 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/magnum6actual--flipoff");
+> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -612,7 +583,7 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/magnum6actual--flipoff");
+> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -649,7 +620,7 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/magnum6actual--flipoff");
+> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -732,7 +703,7 @@ FlipOff 的核心技術機制是利用純 JavaScript 來控制每個翻板的動
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-03-28** — 首次收錄
+> **2026-04-01** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -748,8 +719,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-04-01|2026-04-01]] — 再次上榜，2.6k stars
-- [[2026-03-31|2026-03-31]] — 再次上榜，2.5k stars
-- [[2026-03-30|2026-03-30]] — 再次上榜，2.4k stars
-- [[2026-03-29|2026-03-29]] — 再次上榜，2.1k stars
-- [[2026-03-28|2026-03-28]] — 首次收錄，1.3k stars
+- [[2026-04-01|2026-04-01]] — 首次收錄，4.9k stars

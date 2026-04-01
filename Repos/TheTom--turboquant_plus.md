@@ -7,12 +7,12 @@ language: Python
 license: Apache-2.0
 description: ""
 homepage: ""
-stars: 1887
-stars_per_day: 315
-forks: 168
-open_issues: 17
+stars: 3895
+stars_per_day: 556
+forks: 468
+open_issues: 24
 created: 2026-03-25
-pushed_at: 2026-03-30
+pushed_at: 2026-04-01
 first_seen: 2026-03-31
 week: "2026-W14"
 month: "2026-03"
@@ -30,10 +30,10 @@ use_case: "透過 KV 快取壓縮技術提升本地 LLM 推論效率。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-03"
+appearances: 2
+next_review: "2026-04-04"
 contributor_count: 2
-engagement: "low"
+engagement: "medium"
 issue_close_rate: 63
 repo_size_kb: 4772
 readme_length: 10000
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-31"
-star_history: "2026-03-31:1887"
+star_history: "2026-03-31:1887,2026-04-01:3895"
 tags:
   - github
   - "category/ai_ml"
@@ -851,4 +851,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-01|2026-04-01]] — 再次上榜，3.9k stars
 - [[2026-03-31|2026-03-31]] — 首次收錄，1.9k stars

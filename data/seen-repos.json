@@ -687,10 +687,10 @@
   },
   "magnum6actual/flipoff": {
     "first_seen": "2026-03-28",
-    "last_seen": "2026-03-31",
-    "times_seen": 4,
+    "last_seen": "2026-04-01",
+    "times_seen": 5,
     "stars_first": 1337,
-    "stars_last": 2517
+    "stars_last": 2559
   },
   "CoderLuii/HolyClaude": {
     "first_seen": "2026-03-28",
@@ -701,17 +701,17 @@
   },
   "larksuite/cli": {
     "first_seen": "2026-03-29",
-    "last_seen": "2026-03-31",
-    "times_seen": 3,
+    "last_seen": "2026-04-01",
+    "times_seen": 4,
     "stars_first": 1710,
-    "stars_last": 4683
+    "stars_last": 5462
   },
   "elder-plinius/G0DM0D3": {
     "first_seen": "2026-03-29",
-    "last_seen": "2026-03-31",
-    "times_seen": 3,
+    "last_seen": "2026-04-01",
+    "times_seen": 4,
     "stars_first": 1509,
-    "stars_last": 2254
+    "stars_last": 2444
   },
   "nashsu/opencli-rs": {
     "first_seen": "2026-03-30",
@@ -736,17 +736,17 @@
   },
   "TheTom/turboquant_plus": {
     "first_seen": "2026-03-31",
-    "last_seen": "2026-03-31",
-    "times_seen": 1,
+    "last_seen": "2026-04-01",
+    "times_seen": 2,
     "stars_first": 1887,
-    "stars_last": 1887
+    "stars_last": 3895
   },
   "openai/codex-plugin-cc": {
     "first_seen": "2026-03-31",
-    "last_seen": "2026-03-31",
-    "times_seen": 1,
+    "last_seen": "2026-04-01",
+    "times_seen": 2,
     "stars_first": 1400,
-    "stars_last": 1400
+    "stars_last": 5783
   },
   "qiuzhi2046/Qclaw": {
     "first_seen": "2026-03-31",
@@ -761,5 +761,40 @@
     "times_seen": 1,
     "stars_first": 1044,
     "stars_last": 1044
+  },
+  "instructkr/claw-code": {
+    "first_seen": "2026-04-01",
+    "last_seen": "2026-04-01",
+    "times_seen": 1,
+    "stars_first": 63551,
+    "stars_last": 63551
+  },
+  "ChinaSiro/claude-code-sourcemap": {
+    "first_seen": "2026-04-01",
+    "last_seen": "2026-04-01",
+    "times_seen": 1,
+    "stars_first": 4889,
+    "stars_last": 4889
+  },
+  "sanbuphy/claude-code-source-code": {
+    "first_seen": "2026-04-01",
+    "last_seen": "2026-04-01",
+    "times_seen": 1,
+    "stars_first": 4868,
+    "stars_last": 4868
+  },
+  "Kuberwastaken/claude-code": {
+    "first_seen": "2026-04-01",
+    "last_seen": "2026-04-01",
+    "times_seen": 1,
+    "stars_first": 3470,
+    "stars_last": 3470
+  },
+  "titanwings/colleague-skill": {
+    "first_seen": "2026-04-01",
+    "last_seen": "2026-04-01",
+    "times_seen": 1,
+    "stars_first": 3437,
+    "stars_last": 3437
   }
 }

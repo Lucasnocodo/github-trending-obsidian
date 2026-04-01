@@ -7,12 +7,12 @@ language: Go
 license: MIT
 description: "A command-line tool for Lark/Feishu Open Platform — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 19 AI Agent Skills."
 homepage: ""
-stars: 4683
-stars_per_day: 937
-forks: 217
-open_issues: 85
+stars: 5462
+stars_per_day: 910
+forks: 264
+open_issues: 112
 created: 2026-03-25
-pushed_at: 2026-03-30
+pushed_at: 2026-03-31
 first_seen: 2026-03-29
 week: "2026-W14"
 month: "2026-03"
@@ -30,8 +30,8 @@ use_case: "提供 Lark/Feishu 的命令行工具，讓用戶和 AI 代理輕鬆�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-04-03"
+appearances: 4
+next_review: "2026-04-04"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 6
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-29"
-star_history: "2026-03-29:1710,2026-03-30:3056,2026-03-31:4683"
+star_history: "2026-03-29:1710,2026-03-30:3056,2026-03-31:4683,2026-04-01:5462"
 tags:
   - github
   - "category/cli_工具"
@@ -892,6 +892,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-01|2026-04-01]] — 再次上榜，5.5k stars
 - [[2026-03-31|2026-03-31]] — 再次上榜，4.7k stars
 - [[2026-03-30|2026-03-30]] — 再次上榜，3.1k stars
 - [[2026-03-29|2026-03-29]] — 首次收錄，1.7k stars
