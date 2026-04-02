@@ -7,10 +7,10 @@ language: JavaScript
 license: Apache-2.0
 description: "Use Codex from Claude Code to review code or delegate tasks."
 homepage: ""
-stars: 5783
-stars_per_day: 5783
-forks: 280
-open_issues: 40
+stars: 8574
+stars_per_day: 4287
+forks: 443
+open_issues: 64
 created: 2026-03-30
 pushed_at: 2026-03-31
 first_seen: 2026-03-31
@@ -30,8 +30,8 @@ use_case: "讓 Claude Code 用 Codex 進行代碼審查或委派任務。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-04"
+appearances: 3
+next_review: "2026-04-05"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 6
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-31"
-star_history: "2026-03-31:1400,2026-04-01:5783"
+star_history: "2026-03-31:1400,2026-04-01:5783,2026-04-02:8574"
 tags:
   - github
   - "category/開發工具"
@@ -954,5 +954,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-02|2026-04-02]] — 再次上榜，8.6k stars
 - [[2026-04-01|2026-04-01]] — 再次上榜，5.8k stars
 - [[2026-03-31|2026-03-31]] — 首次收錄，1.4k stars

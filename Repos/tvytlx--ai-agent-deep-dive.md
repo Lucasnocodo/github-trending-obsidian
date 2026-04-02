@@ -1,23 +1,23 @@
 ---
-repo: ChinaSiro/claude-code-sourcemap
-url: https://github.com/ChinaSiro/claude-code-sourcemap
-owner: ChinaSiro
+repo: tvytlx/ai-agent-deep-dive
+url: https://github.com/tvytlx/ai-agent-deep-dive
+owner: tvytlx
 owner_type: User
-language: TypeScript
+language: N/A
 license: N/A
-description: ""
-homepage: "https://linux.do/u/huo0"
-stars: 7368
-stars_per_day: 7368
-forks: 12711
-open_issues: 7
+description: "AI Agent 源码深度研究报告"
+homepage: ""
+stars: 3130
+stars_per_day: 3130
+forks: 1107
+open_issues: 1
 created: 2026-03-31
-pushed_at: 2026-03-31
-first_seen: 2026-04-01
+pushed_at: 2026-04-01
+first_seen: 2026-04-02
 week: "2026-W14"
 month: "2026-04"
 category: "其他"
-subcategory: "源碼還原"
+subcategory: "學習資源"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -25,41 +25,41 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-04-01
-use_case: "還原 Claude 的 TypeScript 源碼，供研究使用。"
+last_reviewed: 2026-04-02
+use_case: "提供 AI Agent 源碼的深度分析報告，幫助開發者理解其運作機制。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-04-05"
 contributor_count: 1
 engagement: "high"
-issue_close_rate: 67
-repo_size_kb: 73856
-readme_length: 1430
+issue_close_rate: 50
+repo_size_kb: 14733
+readme_length: 176
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-04-01"
-star_history: "2026-04-01:4889,2026-04-01:4969,2026-04-02:7368"
+ring_history: "assess@2026-04-02"
+star_history: "2026-04-02:3130"
 tags:
   - github
   - "category/其他"
-  - "lang/typescript"
+  - "lang/other"
   - easy_install
 aliases:
-  - "claude-code-sourcemap"
-  - "ChinaSiro/claude-code-sourcemap"
-  - "還原 Claude 的 TypeScript 源碼，供研究使用。"
+  - "ai-agent-deep-dive"
+  - "tvytlx/ai-agent-deep-dive"
+  - "提供 AI Agent 源碼的深度分析報告，幫助開發者理解其運作機制。"
 ---
 
-# claude-code-sourcemap
+# ai-agent-deep-dive
 
-**5.0k** stars · **5.0k** stars/天 · 建立 1 天前 · TypeScript · 未標註授權
+**3.1k** stars · **3.1k** stars/天 · 建立 1 天前 · N/A · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
+const me = dv.page("Repos/tvytlx--ai-agent-deep-dive");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +69,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
+> [!caution] README 資訊不足
+> 此專案的 README 僅 176 字元，以下分析可能含有推測內容。建議直接查看 [GitHub](https://github.com/tvytlx/ai-agent-deep-dive) 原始碼。
+
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 還原 Claude 的 TypeScript 源碼，供研究使用。
+> 提供 AI Agent 源碼的深度分析報告，幫助開發者理解其運作機制。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (5.0k stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (3.1k stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 對 Claude 源碼有研究需求的開發者和研究者。
-> **一句話重點** 這個專案讓開發者能夠深入研究 Claude 的內部運作，提供了一個非官方的源碼結構。
+> **適合** 對 AI Agent 技術有興趣的開發者和研究者，特別是希望深入了解其源碼和設計的學習者。
+> **一句話重點** 這個專案的價值在於它提供了一個系統性的 AI Agent 深度分析報告，對於希望深入了解該技術的開發者和研究者來說非常有幫助。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
+> const me = dv.page("Repos/tvytlx--ai-agent-deep-dive");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "源碼還原" && p.file.name !== "ChinaSiro--claude-code-sourcemap" && p.status !== "archived")
+>     .where(p => p.subcategory === "學習資源" && p.file.name !== "tvytlx--ai-agent-deep-dive" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,115 +99,85 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 源碼還原 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 學習資源 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **安裝** Easy (一行搞定)
 
-> [!abstract] 核心創新
-> 這個專案是基於公開 npm 包和 source map 分析還原的非官方源碼版本。
-
 ## 專案簡介
 
-這個專案通過分析 npm 包 `@anthropic-ai/claude-code` 內的 source map 來還原 Claude 的 TypeScript 源碼，版本為 `2.1.88`。使用者可以從 `cli.js.map` 中提取 `sourcesContent` 字段，得到 4756 個還原文件，包括 1884 個 `.ts` 和 `.tsx` 源文件。這樣的設計使得開發者能夠研究 Claude 的內部運作，並且不需要直接訪問官方的內部代碼庫。這個工具的賣點在於它提供了一個非官方的、可供研究的源碼結構，對於想要了解 Claude 的開發者來說，這是一個寶貴的資源。技術上，這個專案依賴於 TypeScript 和 JavaScript，並且結構清晰，包含 CLI 入口、工具實現、命令實現等多個模組，這樣的模組化設計使得代碼的可讀性和可維護性都得到了提升。
+這個專案的核心是提供一份針對 AI Agent 的深入分析報告，主要以 PDF 格式呈現。用戶可以下載最新的報告，並透過這份資料了解 AI Agent 的設計和實作細節，這對於希望深入研究 AI 技術的開發者來說非常有價值。報告中可能涵蓋了多種 AI Agent 的架構、算法及其應用場景，讓讀者能夠獲得實用的知識。此專案的設計選擇了 PDF 作為主要的輸出格式，因為這樣能夠方便地分享和閱讀，並且適合於學術和技術討論。這種方式的優勢在於能夠集中展示大量資訊，並且便於後續的引用和參考。與其他開源專案相比，這個專案並不提供源碼，而是專注於分析和報告，這使得它在同類工具中獨樹一幟。
 
-與其他類似工具相比，如 `Kuberwastaken/claude-code`，這個專案專注於源碼的還原而非功能擴展，適合對 Claude 的內部邏輯進行深入研究的開發者。使用這個工具時，開發者需要注意它僅供研究用途，並不適合用於商業項目。社群活躍度相對較高，開放的 issues 數量也顯示出使用者對於功能的關注。整體來看，這是一個適合技術研究的工具，但不建議用於生產環境。
-
-**技術棧**：`TypeScript` · `JavaScript`
+相較於其他類似的專案，如 AlpinDale/parsync 和 BigBodyCobain/Shadowbroker，這個專案更專注於文檔和學習資源的提供，而不是實際的代碼實現。這樣的設計雖然限制了其應用範圍，但對於學術研究和技術學習卻是十分有益的。使用者在使用這份報告時，應注意其內容的更新頻率和實用性，因為 AI 技術的發展速度非常快。總體來看，這是一個適合對 AI Agent 有興趣的開發者和研究者的資源，能夠幫助他們更好地理解這一領域的最新趨勢和技術。未來幾個月，隨著 AI 技術的進步，這份報告可能會持續更新，提供更多的見解和分析。
 
 ## 重點功能
 
-- 源碼還原 — 從 npm 包 `@anthropic-ai/claude-code` 的 source map 中還原 TypeScript 源碼。
-- 模組化結構 — 包含 CLI 入口、工具實現、命令實現等多個模組，便於維護和擴展。
-- 研究用途 — 僅供研究使用，適合對 Claude 的內部邏輯進行深入分析。
-- 開放社群 — 活躍的社群和開放的 issues，便於用戶交流和問題解決。
-- 版本控制 — 還原的版本為 `2.1.88`，確保用戶使用的是最新的源碼結構。
-
-## 快速開始
-
-1. 克隆專案
-```bash
-git clone https://github.com/ChinaSiro/claude-code-sourcemap.git
-```
-2. 進入專案目錄
-```bash
-cd claude-code-sourcemap
-```
-3. 安裝依賴
-```bash
-npm install
-```
-
-## 程式碼範例
-
-```ts
-{
-  "前置條件": "已安裝 Node.js 和 npm。",
-  "指令": "npm install @anthropic-ai/claude-code",
-  "預期輸出": "成功安裝 @anthropic-ai/claude-code 包。"
-}
-```
+- 深入分析 — 提供對 AI Agent 設計和實作的詳細報告，幫助讀者理解其運作機制。
+- PDF 格式 — 便於下載和分享，適合學術和技術討論。
+- 系統性資料 — 整合多種 AI Agent 的架構和算法，提供全面的知識。
+- 更新頻率 — 隨著技術進步，報告將持續更新，保持內容的時效性。
+- 學習資源 — 適合用於教學和自學，幫助使用者掌握最新的 AI 技術趨勢。
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 4969 stars（4969/天），forks 8979（180.7%），這是極端爆發式增長。作者 ChinaSiro 透過這個專案解決了對於 Claude 源碼的研究需求，之前開發者只能依賴官方的文檔和有限的資源。這個專案的出現讓開發者能夠更深入地了解 Claude 的運作邏輯，並且能夠進行自定義的實驗和開發。社群的反應熱烈，特別是對於源碼的還原和使用場景的討論。這個工具的可行性得益於 TypeScript 和 JavaScript 的普及，使得開發者能夠輕鬆上手。forks/stars 比率高達 180.7%，顯示出許多人對於這個專案的實際修改和使用。
+> 建立 1 天就累積 3130 stars（3130/天），forks 1107（35.4%），這顯示出強烈的社群興趣。作者 tvytlx 可能是 AI 領域的專家，這份報告解決了對於 AI Agent 源碼理解的需求，之前的資源可能較為分散且缺乏系統性。此專案的推出可能受到社群對於 AI 技術深入理解的需求驅動，並且在技術論壇或社交媒體上引起了關注。這種高比例的 forks 表示許多人對於這份報告的內容感興趣，並希望進一步探索或修改。整體來看，這是一個自然擴散的現象，反映了當前對於 AI 技術的熱情。
 
 ## 適合誰使用
 
-**目標受眾**：對 Claude 源碼有研究需求的開發者和研究者。
+**目標受眾**：對 AI Agent 技術有興趣的開發者和研究者，特別是希望深入了解其源碼和設計的學習者。
 
 > [!example] 使用場景
-> - AI 研究者用它來分析 Claude 的內部邏輯，因為這個工具提供了完整的 TypeScript 源碼，讓研究者能夠深入理解其運作原理。
-> - 開發者用它來進行功能擴展和自定義，因為源碼的開放性使得他們能夠根據自己的需求進行修改。
-> - 學生用它來學習 TypeScript 和 JavaScript 的最佳實踐，因為這個專案的結構清晰，適合用作學習範本。
+> - AI 研究者用它來深入理解 AI Agent 的設計原理，因為報告提供了詳細的分析和背景資料。
+> - 開發者用它來獲取最新的 AI 技術趨勢，因為報告中可能包含了多種實作案例和最佳實踐。
+> - 學生用它來作為學習資源，因為報告的系統性分析能幫助他們快速掌握 AI Agent 的核心概念。
 
 ## 架構分析
 
-這個專案採用模組化的架構設計，將源碼分為多個功能模組，如 CLI 入口、工具實現、命令實現等。這樣的設計使得代碼結構清晰，便於維護和擴展。資料流方面，使用者可以通過 npm 包安裝，然後直接使用 CLI 進行操作。
+本專案的架構主要是以 PDF 文件為核心，並不涉及複雜的技術架構。報告的內容是通過對 AI Agent 的研究和分析整理而成，這樣的設計使得使用者能夠方便地獲取資訊，而不需要進行額外的技術配置。資料流主要是從研究資料到報告生成，並不涉及實時數據處理或互動功能。
 
-選擇 TypeScript 作為主要語言，因為它提供了靜態類型檢查，有助於減少錯誤並提高代碼質量。這個選擇的代價是學習曲線相對較陡，但對於有經驗的開發者來說，這是值得的。擴展性方面，模組化設計使得未來可以輕鬆添加新功能或修改現有功能，這對於持續的開發和研究非常重要。
+這樣的設計雖然簡單，但也限制了其應用範圍，無法提供即時的互動或更新。擴展性方面，由於報告內容的更新依賴於作者的研究進度，因此在資料的持續更新上可能會遇到瓶頸。整體來看，這是一個針對學習和研究的資源，而非一個可擴展的技術平台。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是通過分析 npm 包的 source map 來還原源碼，這樣的方式使得開發者能夠在不接觸官方代碼的情況下，獲得 Claude 的內部邏輯。效能方面，這個專案能夠處理大量的源碼文件，並且結構清晰，便於快速定位和修改。選擇 TypeScript 作為主要語言，帶來了靜態類型檢查的優勢，這對於大型專案的維護非常重要，但也增加了學習成本。技術風險方面，由於這個專案是非官方的，未來可能會面臨源碼不完整或不一致的問題。整合方面，這個專案與現有的 JavaScript 生態系統相容良好，並且可以與多種工具鏈進行整合，對於開發者來說，這是一個友好的環境。
+這個專案的核心技術機制是針對 AI Agent 的深入分析，主要以 PDF 格式呈現。報告中可能涵蓋了多種 AI Agent 的設計原理、算法及其應用場景，這對於希望深入研究 AI 技術的開發者來說非常有價值。由於專案並不涉及實際的代碼實現，因此在技術選型上並無特定的框架或語言依賴。報告的內容整理和分析可能基於大量的文獻和現有的研究，這使得其資料來源相對廣泛。雖然這樣的設計能夠提供系統性的學習資源，但也限制了其在實際應用中的靈活性。使用者在使用這份報告時，應注意其內容的更新頻率和實用性，因為 AI 技術的發展速度非常快。整體來看，這是一個適合對 AI Agent 有興趣的開發者和研究者的資源，能夠幫助他們更好地理解這一領域的最新趨勢和技術。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了安裝和使用的基本步驟。安裝過程相對順暢，但需要注意 npm 的依賴問題。文件沒有多語言支持，僅提供英文和中文。整體來說，花 30 分鐘能夠順利跑起來。
+> README 文件簡潔明瞭，提供了 PDF 下載的連結，但缺乏具體的使用範例。安裝過程非常簡單，只需下載 PDF 文件即可。沒有提供多語言支持，僅以英文呈現。整體來說，對於新手來說，能夠在短時間內獲得所需的資料，但對於深入學習可能需要額外的資源。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供完整的 TypeScript 源碼，便於研究和學習。
-> - 模組化設計，易於維護和擴展。
-> - 活躍的社群支持，便於解決問題。
+> - 提供深入的 AI Agent 分析，適合學術研究和技術學習。
+> - PDF 格式便於分享和引用，適合學術討論。
+> - 系統性資料整合，幫助讀者快速掌握核心概念。
 
 > [!danger] 缺點
-> - 僅供研究使用，無法用於商業項目。
-> - 不代表官方的內部結構，可能存在不完整性。
-> - 需要一定的技術基礎才能有效利用。
+> - 不提供源碼或實作細節，限制了實際應用。
+> - 內容更新依賴於作者的研究進度，可能過時。
+> - 缺乏互動性，無法即時回饋或討論。
 
 > [!warning] 注意事項
-> - 僅供研究使用，不適合商業用途。
-> - 不代表官方的內部開發結構，可能存在不完整性。
-> - 需要一定的 TypeScript 和 JavaScript 知識才能有效利用。
+> - 僅提供 PDF 格式的報告，不包含源碼或實作細節。
+> - 報告內容可能隨著技術進步而快速過時，需要定期檢查更新。
+> - 缺乏互動性，無法即時回饋或討論報告中的內容。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [Kuberwastaken/claude-code](https://github.com/Kuberwastaken/claude-code) | 這個工具專注於源碼的還原，而非功能擴展，適合對 Claude 的內部邏輯進行深入研究。 |
-| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | HolyClaude 提供了一些功能擴展，而本專案則專注於源碼的還原，適合需要深入分析的開發者。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步和傳輸，適合需要實作代碼的開發者，而本專案則專注於分析和報告。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供實作代碼和工具，適合直接應用於開發，而本專案則是學習和分析資源。 |
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
+> const me = dv.page("Repos/tvytlx--ai-agent-deep-dive");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -239,7 +212,7 @@ npm install
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
+> const me = dv.page("Repos/tvytlx--ai-agent-deep-dive");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -263,105 +236,59 @@ npm install
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 9.0k |
-| Open Issues | 3 |
-| Issue 解決率 | 67% (6 closed) |
-| 最後推送 | 2026-03-31 |
+| Forks | 1.1k |
+| Open Issues | 1 |
+| Issue 解決率 | 50% (1 closed) |
+| 最後推送 | 2026-04-01 |
 | 建立日期 | 2026-03-31 |
-| 官方網站 | [Link](https://linux.do/u/huo0) |
-| Repo 大小 | 72.1 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/ChinaSiro/claude-code-sourcemap) |
+| Repo 大小 | 14.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/tvytlx/ai-agent-deep-dive) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@ChinaSiro](https://github.com/ChinaSiro) | 1 |
-
-## 社群與生態
-
-**社群活躍度**：社群活躍，有多個開放的 issues 和討論。
-**連結**：[文件](https://linux.do/u/huo0)
+> | [@tvytlx](https://github.com/tvytlx) | 2 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-31）
-> **活躍天數** 1 天 · **最新 commit** init: restore source from @anthropic-ai/claude-code@2.1.88 sourcemap
+> [!abstract] 最近 10 次 commit（2026-04-01 ~ 2026-04-01）
+> **活躍天數** 1 天 · **最新 commit** Trim README to links and notes only
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#2](https://github.com/ChinaSiro/claude-code-sourcemap/issues/2) | 请问这个和官方仓的主要区别是啥？ | 6 | 3 |
-> | [#8](https://github.com/ChinaSiro/claude-code-sourcemap/issues/8) | 🤡 原汤化原食，Claude 如何看待眼中的老己 https://github.com/openedclaude/cl | 5 | 0 |
+> | [#1](https://github.com/tvytlx/ai-agent-deep-dive/issues/1) | 这pdf 咋做的、是用啥提示词扫的 | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # claude-code-sourcemap
+> # AI Agent Deep Dive
 > 
-> [](https://linux.do)
+> ## Quick Links
 > 
-> > [!WARNING]
-> > This repository is **unofficial** and is reconstructed from the public npm package and source map analysis, **for research purposes only**.
-> > It does **not** represent the original internal development repository structure.
-> >
-> > 本仓库为**非官方**整理版，基于公开 npm 发布包与 source map 分析还原，**仅供研究使用**。
-> > **不代表**官方原始内部开发仓库结构。
-> > 一切基于L站"飘然与我同"的情报提供
+> PDF 下载 / PDF Report:
+> - 最新 [ai-agent-deep-dive-v2.pdf](./ai-agent-deep-dive-v2.pdf)
 > 
-> ## 概述
+> ## Notes
 > 
-> 本仓库通过 npm 发布包（`@anthropic-ai/claude-code`）内附带的 source map（`cli.js.map`）还原的 TypeScript 源码，版本为 `2.1.88`。
-> 
-> ## 来源
-> 
-> - npm 包：[@anthropic-ai/claude-code](https://www.npmjs.com/package/@anthropic-ai/claude-code)
-> - 还原版本：`2.1.88`
-> - 还原文件数：**4756 个**（含 1884 个 `.ts`/`.tsx` 源文件）
-> - 还原方式：提取 `cli.js.map` 中的 `sourcesContent` 字段
-> 
-> ## 目录结构
-> 
-> ```
-> restored-src/src/
-> ├── main.tsx              # CLI 入口
-> ├── tools/                # 工具实现（Bash、FileEdit、Grep、MCP 等 30+ 个）
-> ├── commands/             # 命令实现（commit、review、config 等 40+ 个）
-> ├── services/             # API、MCP、分析等服务
-> ├── utils/                # 工具函数（git、model、auth、env 等）
-> ├── context/              # React Context
-> ├── coordinator/          # 多 Agent 协调模式
-> ├── assistant/            # 助手模式（KAIROS）
-> ├── buddy/                # AI 伴侣 UI
-> ├── remote/               # 远程会话
-> ├── plugins/              # 插件系统
-> ├── skills/               # 技能系统
-> ├── voice/                # 语音交互
-> └── vim/                  # Vim 模式
-> ```
-> 
-> ## 声明
-> 
-> - 源码版权归 [Anthropic](https://www.anthropic.com) 所有
-> - 本仓库仅用于技术研究与学习，请勿用于商业用途
-> - 如有侵权，请联系删除
+> - 本仓库仅保留面向学习与评论的分析材料，不提供源码目录。
+> - 第二版 PDF 已完成。
 
 ## 延伸閱讀
 
-相關概念：[[源碼還原]] · [[TypeScript]] · [[開源研究]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alvinunreal--awesome-opensource-ai|alvinunreal/awesome-opensource-ai]]
 
-相關專案：[[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alvinunreal--awesome-opensource-ai|alvinunreal/awesome-opensource-ai]]
-
-[GitHub](https://github.com/ChinaSiro/claude-code-sourcemap) · [官方網站](https://linux.do/u/huo0)
+[GitHub](https://github.com/tvytlx/ai-agent-deep-dive)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：源碼還原）
+> [!note]- 直接競品（同子分類：學習資源）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "源碼還原" AND file.name != "ChinaSiro--claude-code-sourcemap"
+> WHERE subcategory = "學習資源" AND file.name != "tvytlx--ai-agent-deep-dive"
 > SORT stars DESC
 > ```
 
@@ -369,7 +296,7 @@ npm install
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "ChinaSiro--claude-code-sourcemap"
+> WHERE category = "其他" AND file.name != "tvytlx--ai-agent-deep-dive"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -378,7 +305,7 @@ npm install
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "ChinaSiro--claude-code-sourcemap" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "tvytlx--ai-agent-deep-dive" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -387,33 +314,18 @@ npm install
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W14" AND file.name != "ChinaSiro--claude-code-sourcemap"
+> WHERE week = "2026-W14" AND file.name != "tvytlx--ai-agent-deep-dive"
 > SORT stars DESC
-> ```
-
-> [!note]- 共用概念的相關專案
-> ```dataviewjs
-> const concepts = ["源碼還原","TypeScript","開源研究"];
-> const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "ChinaSiro--claude-code-sourcemap" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
->   .sort(p => p.stars, "desc")
->   .limit(5);
-> if (pages.length > 0) {
->   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
->     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
->     return [p.file.link, p.stars, p.category, shared.join(", ")];
->   }));
-> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
+> const me = dv.page("Repos/tvytlx--ai-agent-deep-dive");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "ChinaSiro--claude-code-sourcemap" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "tvytlx--ai-agent-deep-dive" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -429,7 +341,7 @@ npm install
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "ChinaSiro" AND file.name != "ChinaSiro--claude-code-sourcemap"
+> WHERE owner = "tvytlx" AND file.name != "tvytlx--ai-agent-deep-dive"
 > SORT stars DESC
 > ```
 
@@ -437,7 +349,7 @@ npm install
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
+> const me = dv.page("Repos/tvytlx--ai-agent-deep-dive");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -454,7 +366,7 @@ npm install
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
+> const me = dv.page("Repos/tvytlx--ai-agent-deep-dive");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -487,7 +399,7 @@ npm install
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
+> const me = dv.page("Repos/tvytlx--ai-agent-deep-dive");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -511,7 +423,7 @@ npm install
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
+> const me = dv.page("Repos/tvytlx--ai-agent-deep-dive");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -548,7 +460,7 @@ npm install
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
+> const me = dv.page("Repos/tvytlx--ai-agent-deep-dive");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -631,7 +543,7 @@ npm install
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-04-01** — 首次收錄
+> **2026-04-02** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -647,5 +559,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-04-02|2026-04-02]] — 再次上榜，7.4k stars
-- [[2026-04-01|2026-04-01]] — 首次收錄，4.9k stars
+- [[2026-04-02|2026-04-02]] — 首次收錄，3.1k stars

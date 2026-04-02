@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！"
 homepage: ""
-stars: 3437
-stars_per_day: 3437
-forks: 166
-open_issues: 33
+stars: 4648
+stars_per_day: 2324
+forks: 252
+open_issues: 44
 created: 2026-03-30
-pushed_at: 2026-03-31
+pushed_at: 2026-04-01
 first_seen: 2026-04-01
 week: "2026-W14"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "將離職同事的知識和風格轉化為可用的 AI 技能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-04"
+appearances: 2
+next_review: "2026-04-05"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 8
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-01"
-star_history: "2026-04-01:3437"
+star_history: "2026-04-01:3437,2026-04-02:4648"
 tags:
   - github
   - "category/開發工具"
@@ -877,4 +877,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-02|2026-04-02]] — 再次上榜，4.6k stars
 - [[2026-04-01|2026-04-01]] — 首次收錄，3.4k stars
