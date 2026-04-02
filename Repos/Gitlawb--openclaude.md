@@ -7,9 +7,9 @@ language: TypeScript
 license: N/A
 description: "Claude Code opened to any LLM — OpenAI, Gemini, DeepSeek, Ollama, and 200+ models via OpenAI-compatible API shim"
 homepage: ""
-stars: 3599
-stars_per_day: 3599
-forks: 1398
+stars: 3635
+stars_per_day: 3635
+forks: 1412
 open_issues: 31
 created: 2026-04-01
 pushed_at: 2026-04-02
@@ -17,7 +17,7 @@ first_seen: 2026-04-02
 week: "2026-W14"
 month: "2026-04"
 category: "開發工具"
-subcategory: "API 工具"
+subcategory: "CLI 工具"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-02"
-star_history: "2026-04-02:3599"
+star_history: "2026-04-02:3599,2026-04-02:3635"
 tags:
   - github
   - "category/開發工具"
@@ -77,15 +77,15 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (3.6k stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** High
-> **適合** 需要在多種 LLM 之間靈活切換的開發者，尤其是那些希望簡化開發流程的後端工程師。
-> **一句話重點** OpenClaude 讓開發者能夠輕鬆整合多種 LLM，顯著簡化了開發流程。
+> **適合** 需要在多種 LLM 環境中靈活切換的開發者或研究者。
+> **一句話重點** OpenClaude 讓開發者能夠靈活地在多種 LLM 環境中工作，顯著提升了開發效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Gitlawb--openclaude");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "API 工具" && p.file.name !== "Gitlawb--openclaude" && p.status !== "archived")
+>     .where(p => p.subcategory === "CLI 工具" && p.file.name !== "Gitlawb--openclaude" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,32 +96,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 API 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 CLI 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到靈活的多模型支持，值得考慮。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學、2 小時整合，得到靈活的多模型支援，值得考慮。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於提供一個 OpenAI 相容的 API 接口，讓 Claude Code 能夠與多種 LLM 互動。
+> 提供一個 OpenAI 兼容的 shim，讓 Claude Code 能夠與任何 LLM 無縫整合。
 
 ## 專案簡介
 
-OpenClaude 是一個讓 Claude Code 可以與任何 LLM 互動的工具，這意味著不再僅限於 Claude 模型。使用者可以透過 OpenAI 相容的 API 接口，輕鬆接入 GPT-4o、DeepSeek、Gemini 等 200 多個模型。這個工具的核心是將 Claude Code 的工具系統與 LLM API 之間的接口進行轉換，具體來說，它能將 Anthropic 的消息格式轉換為 OpenAI 的消息格式，並支持多步驟的工具鏈調用。使用者只需執行 `openclaude` 命令即可啟動，並可透過設置環境變數來選擇所需的模型和 API 密鑰。這個工具的賣點在於其靈活性和擴展性，無論是進行文件操作、實時流式處理，還是使用多種工具，OpenClaude 都能輕鬆應對。
+OpenClaude 是一個可以讓用戶使用 Claude Code 的工具，並且支援多種 LLM 模型，包括 OpenAI、Gemini、DeepSeek 等。用戶只需透過簡單的環境變數設定，即可選擇所需的模型，並利用 Claude Code 提供的各種工具，如 bash、文件讀寫、grep 等。這個設計的核心賣點在於其靈活性，讓開發者能夠根據需求選擇最適合的模型，而不僅限於 Claude。技術上，OpenClaude 使用了一個 shim 層，將 Claude Code 的請求轉換為 OpenAI 兼容的格式，這樣即使是不同的模型，也能無縫整合進來。這種設計使得用戶無需改變原有的工作流程，只需簡單的 API 調用即可。
 
-技術上，它採用了 TypeScript 和 Bun 作為主要開發環境，並依賴多個 SDK 來支持不同的 LLM。與其他工具相比，如 AlpinDale/parsync 和 CoderLuii/HolyClaude，OpenClaude 提供了更廣泛的模型支持和更靈活的配置選項，特別是在本地模型的使用上。使用者在實際操作中可能會遇到一些環境變數設置的問題，特別是在使用 Codex 或 OpenAI 模型時。這個專案目前處於早期階段，活躍度高，適合需要多模型支持的開發者使用。對於小型團隊或個人開發者來說，這是一個值得考慮的選擇，未來可能會持續增強其功能和穩定性。
+相較於其他工具，如 AlpinDale/parsync 和 CoderLuii/HolyClaude，OpenClaude 提供了更廣泛的模型支援和更簡單的整合方式，特別是在多模型環境中。實際使用中，OpenClaude 能夠處理高達 32K 的輸出，並且支持實時流式傳輸，這對於需要快速反應的應用場景非常有利。然而，使用者需注意，某些模型可能會對 token 數量有所限制，這可能會影響到最終的輸出效果。整體來看，這個專案在開發者社群中有著良好的活躍度，並且對於需要多模型支援的團隊來說，值得考慮使用。
 
-**技術棧**：`TypeScript` · `Bun`
+**技術棧**：`TypeScript` · `Python` · `JavaScript`
 
 ## 重點功能
 
-- 多模型支持 — 支援 OpenAI、Gemini、DeepSeek 等 200 多個模型的即時調用。
-- 環境變數配置 — 透過設置環境變數輕鬆選擇所需的模型和 API 密鑰。
-- CLI 命令行工具 — 使用 `openclaude` 命令啟動，並支持多種工具的調用。
-- 實時流式處理 — 支持實時的 token 流式輸出，適合需要快速反應的應用場景。
-- 多步驟工具鏈 — 允許模型調用多個工具，並在每一步獲取結果，實現複雜的任務處理。
+- 多模型支援 — 支援 OpenAI、Gemini、DeepSeek 等 200+ 模型，透過簡單的環境變數設定即可切換。
+- 即時流式傳輸 — 支援實時 token 流式傳輸，適合需要快速反應的應用場景。
+- CLI 工具 — 提供豐富的命令行工具，方便用戶進行各種操作，如文件讀寫、grep 等。
+- 環境檢查工具 — 提供 runtime doctor 檢查，幫助用戶快速診斷環境問題。
+- 簡單的安裝過程 — 使用 bun 進行安裝，並提供多種安裝選項，靈活性高。
 
 ## 快速開始
 
@@ -129,75 +129,66 @@ OpenClaude 是一個讓 Claude Code 可以與任何 LLM 互動的工具，這意
 ```bash
 bun install
 ```
-2. 啟動 CLI 工具
+2. 執行 CLI
 ```bash
 openclaude
 ```
-3. 進行快速啟動檢查
+3. 執行健康檢查
 ```bash
 bun run smoke
-```
-
-## 程式碼範例
-
-```ts
-{
-  "前置條件": "需要設置環境變數以選擇模型",
-  "指令": "export CLAUDE_CODE_USE_OPENAI=1\nexport OPENAI_API_KEY=sk-your-key-here\nexport OPENAI_MODEL=gpt-4o\nnode dist/cli.mjs",
-  "預期輸出": "啟動 OpenClaude 工具，並準備好使用指定的 LLM。"
-}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 3599 stars（3599/天），forks 1398（38.8%），顯示出強烈的社群參與。作者 kevincodex1 和團隊在開源社群中有一定的影響力，之前的專案也獲得了良好的反響。這個專案解決了在多種 LLM 之間切換的複雜性，讓開發者能夠更輕鬆地使用不同的模型進行開發，這在當前多樣化的 AI 生態中是個迫切需求。社群的活躍度和問題反饋也顯示出使用者對這個工具的期待和需求。forks/stars 比率高達 38.8%，顯示出許多人在實際修改和使用這個工具，而不僅僅是觀望。
+> 建立 1 天就累積 3635 stars（3635/天），forks 1412（38.8%），這顯示出強烈的社群興趣。作者 kevincodex1 和其他貢獻者在開源社群中有一定的知名度，過去參與過多個相關專案。這個專案解決了多模型整合的痛點，之前的方案往往只能針對單一模型進行調整，無法靈活應對不同需求。近期的推廣活動和社群討論也促進了這個專案的曝光率。技術上，隨著 LLM 的普及，開發者對於多模型支援的需求日益增加，這使得 OpenClaude 的出現恰逢其時。高達 38.8% 的 forks/stars 比率表明許多人在實際修改和使用該專案，顯示出其實用性和潛力。
 
 ## 適合誰使用
 
-**目標受眾**：需要在多種 LLM 之間靈活切換的開發者，尤其是那些希望簡化開發流程的後端工程師。
+**目標受眾**：需要在多種 LLM 環境中靈活切換的開發者或研究者。
 
 > [!example] 使用場景
-> - 後端工程師用它來整合多種 LLM 進行 API 開發，因為這樣可以在同一個工具中靈活切換不同的模型，提升開發效率。
-> - 資料科學家用它來快速測試不同的 LLM 模型，因為它支持多種模型的即時調用，能夠快速比較結果。
-> - 獨立開發者用它來構建個人專案，因為它的安裝和使用過程簡單，適合快速原型開發。
+> - 後端工程師用它來整合多種 LLM 模型，因為這樣可以根據不同需求快速切換模型，提升開發效率。
+> - AI 研究者用它來測試不同的 AI 模型，因為它支援多達 200+ 模型，能夠輕鬆比較各種模型的表現。
+> - DevOps 工程師用它來自動化 CI/CD 流程，因為它的 CLI 工具能夠與現有的工作流無縫整合。
 
 ## 架構分析
 
-OpenClaude 的架構設計旨在提供靈活的多模型支持，主要透過一個 shim 層來實現。這個 shim 層將 Claude Code 的工具系統與 LLM API 之間的接口進行轉換，具體來說，它能將 Anthropic 的消息格式轉換為 OpenAI 的消息格式。這樣的設計使得使用者可以無縫地在不同的 LLM 之間切換，而不需要修改原有的工具系統。這種架構的代價在於需要維護這個 shim 層的兼容性，隨著 LLM 的更新，可能需要不斷調整轉換邏輯。擴展性方面，這個架構能夠支持多種不同的 LLM，但在整合新模型時可能會遇到挑戰，特別是當新模型的 API 與現有的轉換邏輯不兼容時。
+OpenClaude 的架構設計為一個 shim 層，將 Claude Code 的請求轉換為 OpenAI 兼容的格式。這樣的設計使得用戶無需改變原有的工作流程，僅需透過簡單的 API 調用即可使用不同的 LLM。資料流方面，Claude Code 的工具系統通過這個 shim 層與不同的 LLM 進行交互，實現了格式轉換和功能調用。選擇這種架構的代價在於需要維護 shim 層的穩定性和兼容性，但這樣的設計大大提升了靈活性和擴展性。擴展性方面，隨著更多 LLM 的出現，OpenClaude 可以輕鬆添加新的模型支援，這使得它在快速變化的 AI 環境中保持競爭力。
 
 ## 技術深入分析
 
-OpenClaude 的核心技術機制是透過 shim 層實現的，這個 shim 層負責將 Claude Code 的工具系統與不同 LLM 的 API 進行轉換。這種設計使得使用者可以在不改變原有工具系統的情況下，靈活地選擇不同的 LLM。效能方面，這個工具能夠支持實時的 token 流式輸出，適合需要快速反應的應用場景。設計上，選擇 TypeScript 和 Bun 作為開發環境，這樣的選擇使得開發過程中能夠利用現代 JavaScript 的特性，但也帶來了對 Bun 的依賴。技術風險方面，隨著 LLM 的更新，shim 層的兼容性可能會成為一個瓶頸，特別是在新模型的 API 與現有邏輯不兼容時。整合方面，這個工具能夠與現有的開發工具鏈（如 VS Code）無縫對接，並且支援多種 CI/CD 流程，降低了團隊的學習成本。
+OpenClaude 的核心技術機制是透過 shim 層將 Claude Code 的請求轉換為 OpenAI 兼容格式，這使得用戶能夠無縫地使用多種 LLM。這種設計不僅提升了靈活性，還能夠快速適應不同的需求。效能方面，OpenClaude 能夠處理高達 32K 的輸出，並支援實時流式傳輸，這對於需要快速反應的應用場景非常有利。選擇 TypeScript 和 Bun 作為開發語言和環境，這樣的選擇使得開發過程中能夠充分利用現代 JavaScript 的特性，並且 Bun 提供了快速的執行環境。技術風險方面，隨著模型數量的增加，shim 層的維護和兼容性將成為一個挑戰，這可能會在未來的擴展中引發問題。整合方面，OpenClaude 與現有的開發工具鏈相容性良好，能夠輕鬆融入 CI/CD 流程，並且對於使用者的學習成本相對較低。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和範例；安裝過程相對順暢，但需要注意 Bun 的版本要求；有良好的快速入門指南，幫助新手快速上手；目前文件僅提供英文版本，可能對非英語使用者造成一定障礙。
+> README 文件清晰且提供了多種安裝選項，對於新手來說相對友好。安裝過程中，對 Bun 的依賴可能會造成一些困難，但整體流程順暢。文件中有詳細的快速入門指南，幫助用戶快速上手。文件目前僅提供英文版本，可能對非英語使用者造成一定障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多種 LLM，靈活性高。
-> - 簡單的 CLI 工具，易於使用。
-> - 實時流式處理，適合快速反應的應用。
+> - 靈活性高 — 支援多種 LLM 模型，能夠根據需求快速切換。
+> - 功能全面 — 提供多種工具和命令行選項，適合各種開發需求。
+> - 社群活躍 — 擁有良好的貢獻者和使用者社群，能夠快速獲得支援。
 
 > [!danger] 缺點
-> - 需要正確設置環境變數，對新手可能有一定的學習曲線。
-> - 在使用過程中可能會遇到兼容性問題，特別是對於新模型。
-> - 依賴於 Bun，對於不熟悉此工具的開發者來說可能會增加學習成本。
+> - 安裝過程可能對新手有一定挑戰，特別是對 Bun 的依賴。
+> - 某些模型的 token 限制可能影響使用體驗。
+> - 目前仍在早期開發階段，可能存在不穩定性。
 
 > [!warning] 注意事項
-> - 需要 Bun 1.3.11 或更新版本進行源碼構建。
-> - 對於某些模型，可能會有 token 限制，需注意模型的最大輸出限制。
-> - 在使用 Codex 時，需要提供有效的 API 密鑰或 auth.json 文件。
+> - 需要 Bun 1.3.11 或更新版本，舊版本可能會出現模組錯誤。
+> - 某些模型的 token 數量可能會受到限制，影響輸出效果。
+> - 在使用非本地模型時，需提供有效的 API 金鑰。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的多模型支持，但主要集中在特定的 LLM，缺乏 OpenAI 相容的 API 接口。 |
-| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於 Claude 模型的優化，而 OpenClaude 則支持更廣泛的模型選擇。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供文件同步功能，但不支援多模型整合，適合單一模型的使用場景。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於 Claude 的功能，缺乏對其他 LLM 的支援。 |
+| [Kuberwastaken/claude-code](https://github.com/Kuberwastaken/claude-code) | 提供類似功能，但不如 OpenClaude 靈活，無法輕鬆切換模型。 |
 
 ## 替代方案決策
 
@@ -205,16 +196,17 @@ OpenClaude 的核心技術機制是透過 shim 層實現的，這個 shim 層負
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於特定 LLM 的整合，缺乏 OpenAI 相容的 API 接口，使用上較為局限。 | 如果你的團隊主要使用特定的 LLM，且不需要多模型支持，則可以考慮此工具。 | medium，因為需要重新調整 API 調用方式。 |
-| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於 Claude 模型的優化，無法支持其他 LLM，功能較為單一。 | 如果你只需要使用 Claude 模型，且希望獲得更好的性能，則可以選擇此工具。 | low，因為功能相似，遷移成本較低。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步功能，無法支援多模型整合，適合單一模型的使用場景。 | 如果你的需求僅限於文件同步，且不需要多模型支援。 | low，因為功能範圍較小，易於上手。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於 Claude 的功能，缺乏對其他 LLM 的支援，適合只使用 Claude 的場景。 | 如果你的團隊已經在使用 Claude，且不需要其他模型的支援。 | medium，因為需要調整現有的工作流程。 |
+| [Kuberwastaken/claude-code](https://github.com/Kuberwastaken/claude-code) | 提供類似功能，但不如 OpenClaude 靈活，無法輕鬆切換模型。 | 如果你的需求僅限於 Claude，且不需要靈活性。 | medium，因為需要重新配置環境。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **openclaude** | **parsync** | **HolyClaude** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於特定 LLM 的整合，缺乏 OpenAI 相容的 API 接口，使用上較為局限。 | 專注於 Claude 模型的優化，無法支持其他 LLM，功能較為單一。 |
-> | 遷移成本 | - | medium，因為需要重新調整 API 調用方式。 | low，因為功能相似，遷移成本較低。 |
-> | 適用場景 | 主要場景 | 如果你的團隊主要使用特定的 LLM，且不需要多模型支持，則可 | 如果你只需要使用 Claude 模型，且希望獲得更好的性能， |
+> | 維度 | **openclaude** | **parsync** | **HolyClaude** | **claude-code** |
+> | --- | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 專注於文件同步功能，無法支援多模型整合，適合單一模型的使用場景。 | 專注於 Claude 的功能，缺乏對其他 LLM 的支援，適合只使用 Claude 的場景。 | 提供類似功能，但不如 OpenClaude 靈活，無法輕鬆切換模型。 |
+> | 遷移成本 | - | low，因為功能範圍較小，易於上手。 | medium，因為需要調整現有的工作流程。 | medium，因為需要重新配置環境。 |
+> | 適用場景 | 主要場景 | 如果你的需求僅限於文件同步，且不需要多模型支援。 | 如果你的團隊已經在使用 Claude，且不需要其他模型的支援 | 如果你的需求僅限於 Claude，且不需要靈活性。 |
 
 ## 成熟度評估
 
@@ -225,44 +217,44 @@ OpenClaude 的核心技術機制是透過 shim 層實現的，這個 shim 層負
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和小型專案，但不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在設置環境變數時，可能會因為缺少 API 密鑰而無法啟動。
-  - 解法：確保提供正確的 API 密鑰或使用本地模型。
-- [MEDIUM] 使用舊版本的 Bun 可能導致構建失敗。
-  - 解法：確保使用 Bun 1.3.11 或更新版本。
-- [MEDIUM] 某些 LLM 的 token 限制可能導致輸出不完整。
-  - 解法：檢查所選模型的 token 限制，並根據需要調整輸入。
+- **[HIGH]** 在 Windows 上使用 Bun 時可能會遇到模組錯誤
+  - 解法：確保使用 Bun 1.3.11 或更新版本
+- [MEDIUM] 使用非本地模型時，需提供有效的 API 金鑰
+  - 解法：確保在環境變數中設定正確的金鑰
+- [MEDIUM] 某些模型的 token 限制可能影響輸出效果
+  - 解法：根據模型文檔調整輸出參數
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型創業團隊進行 AI 開發 | 非常適合 | 能夠快速整合多種 LLM，提升開發效率。 |
-| 大型企業的核心產品開發 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
-| 個人開發者進行原型設計 | 適合 | 安裝簡單，適合快速原型開發。 |
-| 需要穩定 API 的中型專案 | 普通 | 雖然功能多樣，但穩定性和成熟度仍需觀察。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 靈活支援多種 LLM，能夠快速適應需求變化。 |
+| 大型企業的 AI 研究團隊 | 適合 | 能夠整合多種模型進行比較和測試。 |
+| 個人開發者的 AI 實驗專案 | 非常適合 | 安裝簡單且功能全面，適合小型專案。 |
+| 需要穩定生產環境的企業應用 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到靈活的多模型支持，值得考慮。
+> 花 3 小時學、2 小時整合，得到靈活的多模型支援，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：需要提供 API 密鑰，並存取環境變數；依賴的 SDK 需定期檢查安全性。
+> 中等風險：需要有效的 API 金鑰，並可能存取敏感資料。依賴鏈的信任程度需謹慎評估，特別是在 CI/CD 中使用時。
 
 ## 健康度儀表板
 
@@ -346,13 +338,13 @@ OpenClaude 的核心技術機制是透過 shim 層實現的，這個 shim 層負
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，開放問題回應速度快。
+**社群活躍度**：社群活躍，定期有更新和問題回應。
 **連結**：[文件](https://gitlawb.com/node/repos/z6MkgKkb/instructkr-claude-code)
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-04-01 ~ 2026-04-02）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #34 from auriti/fix/macro-package-url
+> **活躍天數** 2 天 · **最新 commit** bump version
 
 ## 熱門議題
 
@@ -698,19 +690,19 @@ OpenClaude 的核心技術機制是透過 shim 層實現的，這個 shim 層負
 
 ## 延伸閱讀
 
-相關概念：[[API 設計]] · [[多模態]] · [[容器化]]
+相關概念：[[CLI/TUI]] · [[多模態]] · [[機器學習]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jxnxts--mcp-brasil|jxnxts/mcp-brasil]] · [[elder-plinius--G0DM0D3|elder-plinius/G0DM0D3]] · [[wong2--weixin-agent-sdk|wong2/weixin-agent-sdk]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jxnxts--mcp-brasil|jxnxts/mcp-brasil]] · [[elder-plinius--G0DM0D3|elder-plinius/G0DM0D3]] · [[wong2--weixin-agent-sdk|wong2/weixin-agent-sdk]]
 
 [GitHub](https://github.com/Gitlawb/openclaude)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：API 工具）
+> [!note]- 直接競品（同子分類：CLI 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "API 工具" AND file.name != "Gitlawb--openclaude"
+> WHERE subcategory = "CLI 工具" AND file.name != "Gitlawb--openclaude"
 > SORT stars DESC
 > ```
 
@@ -742,7 +734,7 @@ OpenClaude 的核心技術機制是透過 shim 層實現的，這個 shim 層負
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["API 設計","多模態","容器化"];
+> const concepts = ["CLI/TUI","多模態","機器學習"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Gitlawb--openclaude" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

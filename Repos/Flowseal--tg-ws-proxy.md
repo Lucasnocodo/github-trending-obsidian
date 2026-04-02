@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "Local MTProto proxy server for partial bypassing of Telegram loading"
 homepage: ""
-stars: 3858
-stars_per_day: 143
-forks: 163
-open_issues: 143
+stars: 3965
+stars_per_day: 142
+forks: 172
+open_issues: 153
 created: 2026-03-04
 pushed_at: 2026-03-30
 first_seen: 2026-03-10
@@ -19,14 +19,14 @@ month: "2026-03"
 category: "基礎設施"
 subcategory: "代理工具"
 release_tag: "v1.4.0"
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "提供本地 MTProto 代理伺服器以部分繞過 Telegram 加載問題。"
+use_case: "提供 Telegram 的本地 MTProto 代理伺服器，部分繞過 Telegram 加載問題。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,28 +34,29 @@ appearances: 1
 next_review: "2026-03-17"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 59
+issue_close_rate: 57
 repo_size_kb: 257
 readme_length: 7245
 bus_factor: 1
-last_release_days: 3
+last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:794,2026-03-11:797,2026-03-13:910,2026-03-14:985,2026-03-15:1159,2026-03-16:1438,2026-03-17:1706,2026-03-18:2153,2026-03-19:2445,2026-03-20:2610,2026-03-21:2847,2026-03-22:3004,2026-03-23:3162,2026-03-24:3283,2026-03-25:3363,2026-03-26:3449,2026-03-27:3550,2026-03-28:3626,2026-03-29:3680,2026-03-30:3725,2026-03-31:3789,2026-04-01:3858"
+star_history: "2026-03-10:794,2026-03-11:797,2026-03-13:910,2026-03-14:985,2026-03-15:1159,2026-03-16:1438,2026-03-17:1706,2026-03-18:2153,2026-03-19:2445,2026-03-20:2610,2026-03-21:2847,2026-03-22:3004,2026-03-23:3162,2026-03-24:3283,2026-03-25:3363,2026-03-26:3449,2026-03-27:3550,2026-03-28:3626,2026-03-29:3680,2026-03-30:3725,2026-03-31:3789,2026-04-01:3858,2026-04-02:3965"
 tags:
   - github
   - "category/基礎設施"
   - "lang/python"
+  - easy_install
 aliases:
   - "tg-ws-proxy"
   - "Flowseal/tg-ws-proxy"
-  - "提供本地 MTProto 代理伺服器以部分繞過 Telegram 加載問題。"
+  - "提供 Telegram 的本地 MTProto 代理伺服器，部分繞過 Telegram 加載問題。"
 ---
 
 # tg-ws-proxy
 
-**3.9k** stars · **143** stars/天 · 建立 27 天前 · Python · MIT
+**4.0k** stars · **142** stars/天 · 建立 28 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Flowseal--tg-ws-proxy");
@@ -68,16 +69,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v1.4.0`
+`v1.4.0` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供本地 MTProto 代理伺服器以部分繞過 Telegram 加載問題。
+> 提供 Telegram 的本地 MTProto 代理伺服器，部分繞過 Telegram 加載問題。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (143 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要在不穩定網絡環境中提高 Telegram 使用體驗的普通用戶和開發者。
-> **一句話重點** tg-ws-proxy 讓 Telegram 用戶能夠在不穩定的網絡環境中獲得更好的使用體驗，特別是對於需要快速連接的用戶。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (142 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** 5+ 人 · **參與度** Low
+> **適合** 需要在本地環境中快速訪問 Telegram 的開發者和普通用戶。
+> **一句話重點** tg-ws-proxy 提供了一個簡單而高效的本地代理解決方案，特別適合需要在不穩定網絡環境中使用 Telegram 的用戶。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -100,27 +101,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Stable (可用) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，能顯著提高 Telegram 使用體驗，值得採用。
+> **成熟度** Stable (可用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，1 小時整合，得到快速且安全的 Telegram 訪問，值得採用。
 
 > [!abstract] 核心創新
-> 提供本地 MTProto 代理服務，無需依賴外部伺服器，並能自動切換連接模式。
+> 提供本地 MTProto 代理，無需依賴外部伺服器，確保數據安全性和隱私。
 
 ## 專案簡介
 
-tg-ws-proxy 是一個本地 MTProto 代理伺服器，旨在加速 Telegram Desktop 的運行。其工作流程為：Telegram Desktop 透過 MTProto 代理（127.0.0.1:1443）將流量轉發至 WebSocket，再連接至 Telegram 數據中心。這樣的設計可避免使用第三方伺服器，並保持數據的加密性。此工具的賣點在於其能夠自動切換至直接 TCP 連接，當 WebSocket 不可用時，從而提升連接的穩定性和可靠性。技術上，tg-ws-proxy 使用 Python 開發，並依賴於多個平台特定的庫，如 `pyperclip` 和 `psutil`，以確保跨平台的兼容性。
+tg-ws-proxy 是一個本地 MTProto 代理伺服器，旨在透過 WebSocket 連接加速 Telegram Desktop 的運行。其工作流程為：Telegram Desktop 透過 MTProto 代理（127.0.0.1:1443）連接，然後將數據轉發至 Telegram 的數據中心。這樣設計的原因是為了避免使用外部伺服器，並保持數據的加密性，從而提高安全性和隱私。使用者只需在本地啟動代理，並配置 Telegram 連接即可。最關鍵的指令是 `tg-ws-proxy`，這會啟動代理服務。這個工具的賣點在於其簡單的本地部署和高效的數據轉發。
 
-與其他類似工具相比，如 AlpinDale/parsync 和 BigBodyCobain/Shadowbroker，tg-ws-proxy 提供了更簡單的安裝流程和更直觀的用戶界面，特別是對於 Windows 和 macOS 用戶來說。使用者可以透過簡單的 CLI 命令來啟動代理，並可自定義多個參數，如端口和數據中心 IP。tg-ws-proxy 的性能在處理高流量時表現良好，但在某些情況下，可能會遇到與防病毒軟件的兼容性問題。這個專案目前處於穩定階段，適合需要在 Telegram 中提高連接速度的用戶，特別是那些在網絡環境不佳的地區。對於小型團隊或個人使用者來說，tg-ws-proxy 是一個值得考慮的選擇，因為其安裝和配置相對簡單，並且能夠顯著改善 Telegram 的使用體驗。
+技術上，它使用 Python 實現，並依賴於 WebSocket 進行通信，這樣的選擇使得其延遲相對較低，且易於維護。與其他 Telegram 代理相比，如 Shadowsocks 或 V2Ray，tg-ws-proxy 的優勢在於其專注於 Telegram 的特定需求，並且不需要額外的伺服器設定。使用者在使用過程中可能會遇到 Windows Defender 將其標記為惡意軟體的問題，這需要手動處理。tg-ws-proxy 在處理 Telegram 的數據流時，能夠自動切換到直接的 TCP 連接，這提高了其穩定性。這個專案目前處於穩定階段，適合需要在本地快速訪問 Telegram 的用戶，尤其是在網絡環境不佳的情況下。未來六個月內，預期會有更多功能更新，特別是針對不同操作系統的支持和性能優化。
 
-**技術棧**：`Python 3.8+` · `Dockerfile`
+**技術棧**：`Python 3.8+` · `Docker`
 
 ## 重點功能
 
-- 本地 MTProto 代理 — 提供 127.0.0.1:1443 的代理服務，無需外部伺服器。
-- 自動切換 TCP 連接 — 當 WebSocket 連接失敗時，自動切換至直接 TCP 連接以保持穩定性。
+- 本地 MTProto 代理 — 透過 WebSocket 連接加速 Telegram Desktop 的運行。
+- 自動切換 TCP 連接 — 當 WebSocket 不可用時，自動轉換為直接 TCP 連接以保持穩定性。
 - 多平台支持 — 提供 Windows、macOS 和 Linux 的安裝包，方便不同用戶使用。
-- 簡單的 CLI 配置 — 可通過命令行參數自定義端口、數據中心 IP 和日誌設置。
-- 系統托盤應用 — 提供 GUI 界面，方便用戶管理代理設置和查看日誌。
+- 簡單的 GUI 設定 — 提供系統托盤選單，方便用戶快速配置和管理代理。
+- 自動更新檢查 — 應用啟動時自動檢查更新，確保用戶使用最新版本。
 
 ## 快速開始
 
@@ -128,77 +129,67 @@ tg-ws-proxy 是一個本地 MTProto 代理伺服器，旨在加速 Telegram Desk
 ```bash
 從 https://github.com/Flowseal/tg-ws-proxy/releases 下載 TgWsProxy_windows.exe
 ```
-2. 安裝 Linux 版本
+2. 啟動代理
 ```bash
-sudo dpkg -i TgWsProxy_linux_amd64.deb
+執行 TgWsProxy_windows.exe
 ```
-3. 啟動代理
+3. 配置 Telegram 連接
 ```bash
-tg-ws-proxy --port 1443
-```
-
-## 程式碼範例
-
-```python
-{
-  "前置條件": "已安裝 tg-ws-proxy",
-  "指令": "tg-ws-proxy --port 9050 --dc-ip 1:149.154.175.205 --dc-ip 2:149.154.167.220",
-  "預期輸出": "啟動代理並連接至指定的數據中心"
-}
+使用 tg://proxy 連結自動設置 Telegram 代理
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 27 天內累積 3858 stars（143/天），forks 163（4.2%），顯示出穩定的增長趨勢。作者 Flowseal 及其團隊在 Telegram 相關工具的開發上有豐富經驗，這使得此專案能夠解決 Telegram 用戶在連接過程中遇到的延遲和不穩定問題。之前，使用者通常依賴於不穩定的第三方代理，這導致了頻繁的連接中斷和數據洩露的風險。tg-ws-proxy 的推出正好填補了這一空白，並且其開源特性使得用戶能夠自行檢查和修改代碼以滿足需求。社群的活躍度和開發者的快速回應也促進了專案的成長。
+> 建立 28 天內累積 3965 stars（142/天），forks 172（4.3%），顯示出穩定的增長。作者 Flowseal 及其團隊在 Telegram 代理領域有豐富的經驗，這個專案解決了許多用戶在使用 Telegram 時遇到的加載和連接問題。過去，使用者通常依賴於外部伺服器進行代理，這不僅增加了延遲，還可能影響安全性。tg-ws-proxy 的推出正好填補了這一空白，提供了一個簡單且有效的解決方案。社群的反應熱烈，特別是在 GitHub Issues 中的問題和建議，顯示出使用者對於功能的需求和期待。
 
 ## 適合誰使用
 
-**目標受眾**：需要在不穩定網絡環境中提高 Telegram 使用體驗的普通用戶和開發者。
+**目標受眾**：需要在本地環境中快速訪問 Telegram 的開發者和普通用戶。
 
 > [!example] 使用場景
-> - 系統管理員用它來設置本地 MTProto 代理，因為這樣能夠在不依賴外部伺服器的情況下提高 Telegram 的連接速度。
-> - 開發者用它來測試 Telegram 應用的性能，因為它提供了簡單的 CLI 界面和多種配置選項，方便快速調整。
-> - 普通用戶用它來繞過網絡限制，因為它的設置簡單，並且能夠在不同操作系統上運行。
+> - 前端開發者用它來在本地環境中快速測試 Telegram 應用，因為它能夠減少加載時間並保持數據安全。
+> - 系統管理員用它來設置 Telegram 通知系統，因為它能夠在不依賴外部伺服器的情況下穩定運行。
+> - 普通用戶用它來繞過 ISP 的限制，因為它提供了簡單的本地代理解決方案，無需複雜的配置。
 
 ## 架構分析
 
-tg-ws-proxy 的架構基於 MTProto 協議，設計上旨在提供快速且安全的 Telegram 連接。其核心是將 Telegram 的流量通過本地代理轉發至 Telegram 的數據中心，並使用 WebSocket 進行加密通信。這樣的設計使得用戶無需依賴不穩定的外部伺服器，並能夠在網絡環境不佳的情況下保持穩定的連接。
+tg-ws-proxy 採用單一應用架構，通過 WebSocket 與 Telegram 的數據中心進行通信。這樣的設計使得用戶可以在本地快速啟動代理，並且不需要複雜的伺服器配置。數據流從 Telegram Desktop 進入本地代理，然後通過 WebSocket 轉發至 Telegram 的數據中心，這樣的設計降低了延遲並提高了安全性。
 
-tg-ws-proxy 的實現使用了 Python 作為主要語言，這使得其依賴樹相對簡單，易於維護和擴展。選擇 Python 也使得開發者能夠快速迭代和修復問題，但可能在性能上不如 C++ 等編譯語言。整體上，tg-ws-proxy 的設計考慮到了用戶的便利性和安全性，並在功能上做出了合理的取捨。
+選擇 WebSocket 而非傳統的 HTTP 連接，能夠更有效地處理持久連接和實時數據傳輸。這樣的架構在高流量情況下仍能保持穩定，但可能在某些網絡環境下遇到連接問題。整體而言，tg-ws-proxy 的設計旨在提供一個簡單且高效的解決方案，適合需要快速訪問 Telegram 的用戶。
 
 ## 技術深入分析
 
-tg-ws-proxy 的核心技術機制是基於 MTProto 協議，這是一種為 Telegram 設計的加密通訊協議。其使用 WebSocket 作為主要的數據傳輸方式，這樣可以在保持數據加密的同時，減少延遲和提高傳輸效率。tg-ws-proxy 能夠處理多個數據中心的連接，並根據需要自動切換，這使得其在高流量情況下仍能保持穩定。對於資源需求，tg-ws-proxy 在運行時的內存佔用相對較低，適合在各種硬體上運行。選擇 Python 作為開發語言使得其依賴關係簡單，便於維護，但在性能上可能不如其他編譯語言。tg-ws-proxy 的設計考慮到了用戶的便利性，提供了 GUI 界面和 CLI 命令，讓用戶能夠輕鬆配置和管理代理。整體上，tg-ws-proxy 在設計上做出了合理的取捨，能夠在多種環境中提供穩定的服務。
+tg-ws-proxy 的核心技術基於 MTProto 協議，這是 Telegram 特有的加密協議，能夠確保數據的安全性和隱私。它使用 WebSocket 進行持久連接，這樣的選擇使得數據傳輸更為高效，特別是在高流量的情況下。tg-ws-proxy 能夠處理大量的並發連接，並且在不同的操作系統上都有良好的性能表現。設計上，選擇 Python 作為開發語言，這使得專案的維護和擴展變得更加容易，但也可能導致性能上的一些瓶頸，尤其是在高負載的情況下。tg-ws-proxy 的依賴樹相對簡單，主要依賴於幾個核心庫，這降低了維護的複雜度。技術風險方面，隨著用戶數量的增加，可能會出現性能瓶頸，特別是在高流量的使用場景下。整合方面，tg-ws-proxy 可以輕鬆地與現有的 Telegram 應用程式鏈接，並且對於 CI/CD 流程的支持也相對友好，這使得團隊在使用時能夠快速上手。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含詳細的安裝步驟和範例，安裝過程順暢，沒有明顯的坑。提供了良好的入門指南，對於新手友好。
+> README 文件提供了清晰的安裝和使用說明，並包含了具體的指令和範例。安裝過程相對順暢，但需要注意防毒軟體的誤報問題。文件中有良好的快速入門指南，能夠幫助新手快速上手。文件目前僅提供英文版本，可能對非英語使用者造成一定的障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用的安裝和配置流程，適合各類用戶。
-> - 提供穩定的連接，能自動切換至 TCP 以應對 WebSocket 失敗。
-> - 跨平台支持，能在多種操作系統上運行。
+> - 簡單易用的本地代理設置，無需外部伺服器。
+> - 保持數據加密，增強用戶隱私和安全性。
+> - 多平台支持，方便不同操作系統的用戶使用。
 
 > [!danger] 缺點
-> - 在某些防病毒軟件中可能會被誤報，導致下載困難。
-> - 需要 AppIndicator 支持，對於某些 Linux 發行版可能不夠友好。
-> - 在高負載情況下性能可能不如專業的商業解決方案。
+> - 可能會被防毒軟體誤報，影響下載和使用體驗。
+> - 在某些網絡環境下可能無法穩定連接。
+> - 需要手動處理某些系統兼容性問題。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.8 以上版本
-> - 在某些防病毒軟件中可能會被誤報為惡意軟件
-> - 需要 AppIndicator 支持以在 Linux 上運行系統托盤
+> - Windows Defender 可能會誤報為惡意軟體，需手動處理。
+> - 在某些網絡環境下，WebSocket 可能無法使用，需要手動切換到 TCP 連接。
+> - 不支持某些舊版操作系統，需確認系統兼容性。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的代理功能，但主要針對文件同步，tg-ws-proxy 更專注於 Telegram 的連接優化。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於隱私保護和匿名性，而 tg-ws-proxy 更加關注於提高 Telegram 的性能。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 提供更廣泛的代理功能，但需要額外的伺服器配置，適合需要多用途代理的用戶。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | parsync 專注於數據同步，對於需要高效數據傳輸的用戶更合適，但不專注於 Telegram 的特定需求。 |
 
 ## 替代方案決策
 
@@ -206,16 +197,16 @@ tg-ws-proxy 的核心技術機制是基於 MTProto 協議，這是一種為 Tele
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步，tg-ws-proxy 更專注於 Telegram 的性能優化。 | 如果你的需求主要是文件同步而非即時通訊，則可以選擇它。 | medium，因為需要重新設置同步邏輯。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於隱私保護和匿名性，tg-ws-proxy 更加關注於提高 Telegram 的性能。 | 如果你的主要需求是隱私和匿名性，則可以考慮使用 Shadowbroker。 | high，因為需要完全重新設計網絡架構。 |
+| Shadowsocks | Shadowsocks 使用 SOCKS5 協議，提供更廣泛的代理功能，但需要額外的伺服器配置。 | 如果你的團隊需要多用途代理，並且願意進行伺服器配置，Shadowsocks 會是更好的選擇。 | medium，因為需要重新配置伺服器和客戶端設置。 |
+| V2Ray | V2Ray 提供更高級的路由和混淆功能，適合需要複雜代理設置的用戶。 | 如果你的應用場景需要高級的流量混淆和路由功能，V2Ray 是更合適的選擇。 | high，因為需要重新設置和學習新的配置方式。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **tg-ws-proxy** | **parsync** | **Shadowbroker** |
+> | 維度 | **tg-ws-proxy** | **Shadowsocks** | **V2Ray** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於文件同步，tg-ws-proxy 更專注於 Telegram 的性能優化。 | 專注於隱私保護和匿名性，tg-ws-proxy 更加關注於提高 Telegram 的性能。 |
-> | 遷移成本 | - | medium，因為需要重新設置同步邏輯。 | high，因為需要完全重新設計網絡架構。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是文件同步而非即時通訊，則可以選擇它。 | 如果你的主要需求是隱私和匿名性，則可以考慮使用 Shadow |
+> | 技術路線 | 本專案 | Shadowsocks 使用 SOCKS5 協議，提供更廣泛的代理功能，但需要額外的伺服器配置。 | V2Ray 提供更高級的路由和混淆功能，適合需要複雜代理設置的用戶。 |
+> | 遷移成本 | - | medium，因為需要重新配置伺服器和客戶端設置。 | high，因為需要重新設置和學習新的配置方式。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要多用途代理，並且願意進行伺服器配置，Shad | 如果你的應用場景需要高級的流量混淆和路由功能，V2Ray 是 |
 
 ## 成熟度評估
 
@@ -226,27 +217,27 @@ tg-ws-proxy 的核心技術機制是基於 MTProto 協議，這是一種為 Tele
 | Breaking Change 風險 | low |
 
 > [!tip] 採用建議
-> 適合個人和小型團隊的生產環境使用，特別是對於需要提高 Telegram 連接速度的用戶。
+> 適合個人和小型團隊使用，尤其是在需要快速訪問 Telegram 的情況下。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些防病毒軟件中被誤報為惡意軟件，導致下載困難。
-  - 解法：使用 Windows 7 版本或暫時禁用防病毒軟件。
-- [MEDIUM] Linux 上需要 AppIndicator 支持，否則無法使用系統托盤功能。
-  - 解法：確保安裝了相應的 AppIndicator 庫。
-- [MEDIUM] 在高流量情況下可能會遇到性能瓶頸。
-  - 解法：考慮增加伺服器資源或使用更高效的網絡配置。
+- **[HIGH]** Windows Defender 可能會誤報為惡意軟體，導致下載困難。
+  - 解法：暫時禁用防毒軟體或添加例外。
+- [MEDIUM] 在某些網絡環境下，WebSocket 連接可能不穩定。
+  - 解法：手動切換到 TCP 連接。
+- [low] 某些舊版操作系統不兼容。
+  - 解法：確認系統版本並升級至支持版本。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的 Telegram 客戶端 | 非常適合 | tg-ws-proxy 提供穩定的連接和簡單的配置，適合小型團隊使用。 |
-| 大型企業的即時通訊需求 | 普通 | 雖然 tg-ws-proxy 能提高性能，但對於大型流量需求可能不夠強大。 |
-| 個人用戶在不穩定網絡環境中使用 Telegram | 非常適合 | tg-ws-proxy 專為提高 Telegram 連接速度而設計，能有效改善使用體驗。 |
-| 需要高隱私保護的用戶 | 不適合 | tg-ws-proxy 主要關注性能，對隱私保護的支持有限。 |
+| 小型團隊的 Telegram 應用開發 | 非常適合 | 簡單的本地部署和快速訪問 Telegram 的需求。 |
+| 需要在不穩定網絡環境中使用 Telegram 的用戶 | 非常適合 | 能夠有效繞過 ISP 限制。 |
+| 大型企業的 Telegram 通知系統 | 不適合 | 可能無法處理高流量的並發連接需求。 |
+| 個人使用 Telegram 的普通用戶 | 適合 | 提供了簡單且安全的本地代理解決方案。 |
 
 ## 採用成本分析
 
@@ -258,12 +249,12 @@ tg-ws-proxy 的核心技術機制是基於 MTProto 協議，這是一種為 Tele
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，能顯著提高 Telegram 使用體驗，值得採用。
+> 花 2 小時學習，1 小時整合，得到快速且安全的 Telegram 訪問，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> tg-ws-proxy 本身不需要高權限運行，但在使用過程中會存取 Telegram 的連接信息。依賴的庫中沒有已知的安全漏洞，整體風險較低。
+> 低風險：tg-ws-proxy 本身不需要高權限，且不存取敏感資料。依賴的庫經過審計，整體安全性較高。
 
 ## 健康度儀表板
 
@@ -328,9 +319,9 @@ tg-ws-proxy 的核心技術機制是基於 MTProto 協議，這是一種為 Tele
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 163 |
-| Open Issues | 143 |
-| Issue 解決率 | 59% (203 closed) |
+| Forks | 172 |
+| Open Issues | 153 |
+| Issue 解決率 | 57% (206 closed) |
 | 最後推送 | 2026-03-30 |
 | 建立日期 | 2026-03-04 |
 | Repo 大小 | 257 KB |
@@ -367,7 +358,7 @@ tg-ws-proxy 的核心技術機制是基於 MTProto 協議，這是一種為 Tele
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和解決問題。
+**社群活躍度**：社群活躍，定期更新和回應問題。
 **連結**：[文件](https://github.com/Flowseal/tg-ws-proxy)
 
 ## 開發動態
@@ -380,10 +371,10 @@ tg-ws-proxy 的核心技術機制是基於 MTProto 協議，這是一種為 Tele
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#389](https://github.com/Flowseal/tg-ws-proxy/issues/389) | 📗 Вопросы и ответы `documentation` | 11 | 24 |
+> | [#389](https://github.com/Flowseal/tg-ws-proxy/issues/389) | 📗 Вопросы и ответы `documentation` | 12 | 26 |
 > | [#166](https://github.com/Flowseal/tg-ws-proxy/issues/166) | [Проблема] не грузит файлы медиа | 11 | 14 |
 > | [#39](https://github.com/Flowseal/tg-ws-proxy/issues/39) | [Предложение] Поддержка на Linux | 9 | 4 |
-> | [#147](https://github.com/Flowseal/tg-ws-proxy/issues/147) | [Проблема]  не грузят ЧУЖИЕ файлы, медиа и видео | 7 | 12 |
+> | [#492](https://github.com/Flowseal/tg-ws-proxy/issues/492) | [Предложение] Fake TLS для MTProto | 8 | 0 |
 
 ## README 摘錄
 
@@ -612,9 +603,9 @@ tg-ws-proxy 的核心技術機制是基於 MTProto 協議，這是一種為 Tele
 
 ## 延伸閱讀
 
-相關概念：[[MTProto]] · [[WebSocket]] · [[代理伺服器]]
+相關概念：[[MTProto]] · [[WebSocket]] · [[代理工具]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]]
 
 [GitHub](https://github.com/Flowseal/tg-ws-proxy)
 
@@ -656,7 +647,7 @@ tg-ws-proxy 的核心技術機制是基於 MTProto 協議，這是一種為 Tele
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["MTProto","WebSocket","代理伺服器"];
+> const concepts = ["MTProto","WebSocket","代理工具"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Flowseal--tg-ws-proxy" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

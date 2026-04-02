@@ -7,12 +7,12 @@ language: N/A
 license: NOASSERTION
 description: "Curated list of the best truly open-source AI projects, models, tools, and infrastructure."
 homepage: ""
-stars: 2189
-stars_per_day: 313
-forks: 169
-open_issues: 10
+stars: 2236
+stars_per_day: 280
+forks: 179
+open_issues: 6
 created: 2026-03-24
-pushed_at: 2026-03-31
+pushed_at: 2026-04-01
 first_seen: 2026-03-27
 week: "2026-W13"
 month: "2026-03"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-27
-use_case: "整理出最佳的真正開源 AI 專案、模型、工具和基礎設施的清單。"
+use_case: "整理出最佳的真正開源 AI 專案、模型、工具和基礎設施。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 5
 next_review: "2026-04-03"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 29
-repo_size_kb: 456
+issue_close_rate: 63
+repo_size_kb: 480
 readme_length: 8699
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-27"
-star_history: "2026-03-27:1024,2026-03-27:1037,2026-03-28:1460,2026-03-28:1467,2026-03-29:1746,2026-03-29:1751,2026-03-30:1931,2026-03-30:1932,2026-03-31:2063,2026-03-31:2064,2026-04-01:2189"
+star_history: "2026-03-27:1024,2026-03-27:1037,2026-03-28:1460,2026-03-28:1467,2026-03-29:1746,2026-03-29:1751,2026-03-30:1931,2026-03-30:1932,2026-03-31:2063,2026-03-31:2064,2026-04-01:2189,2026-04-02:2236"
 tags:
   - github
   - "category/其他"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "awesome-opensource-ai"
   - "alvinreal/awesome-opensource-ai"
-  - "整理出最佳的真正開源 AI 專案、模型、工具和基礎設施的清單。"
+  - "整理出最佳的真正開源 AI 專案、模型、工具和基礎設施。"
 ---
 
 # awesome-opensource-ai
 
-**2.2k** stars · **313** stars/天 · 建立 7 天前 · N/A · NOASSERTION
+**2.2k** stars · **280** stars/天 · 建立 8 天前 · N/A · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/alvinreal--awesome-opensource-ai");
@@ -79,13 +79,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `agents` `ai` `artificial-intelligence` `awesome` `awesome-list` `generative-ai` `llm` `machine-learning` `mlops` `open-source` `open-source-ai` `rag`
 
 > [!summary] 一句話摘要
-> 整理出最佳的真正開源 AI 專案、模型、工具和基礎設施的清單。
+> 整理出最佳的真正開源 AI 專案、模型、工具和基礎設施。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (313 stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (280 stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要快速找到開源 AI 資源的開發者和研究人員。
-> **一句話重點** 這個專案的價值在於它提供了一個集中式的開源 AI 資源清單，幫助開發者快速找到所需的工具和模型。
+> **適合** 需要快速獲取高質量開源 AI 資源的開發者和研究人員。
+> **一句話重點** 這個專案提供了一個集中化的開源 AI 資源清單，對於開發者和研究人員來說是個極大的便利。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,102 +108,65 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~1h · **綁定風險** low
-> **結論** 花 1 小時學習和整合，得到快速找到開源 AI 資源的效果，值得。
+> **安裝** Easy (一行搞定)
 
 ## 專案簡介
 
-這個專案提供了一個精心策劃的開源 AI 資源清單，涵蓋了從核心框架到評估工具的各種項目。用戶可以透過這個清單快速找到適合的開源 AI 模型和工具，無論是進行模型訓練、推論，還是進行數據處理。清單中的項目包括 PyTorch、TensorFlow、Hugging Face 的 Transformers 等，這些都是當前 AI 領域的主流工具。這樣的整合不僅節省了開發者尋找資源的時間，還能確保使用者能夠接觸到最新的技術和最佳實踐。這個專案的賣點在於其全面性和更新頻率，能夠幫助開發者在快速變化的 AI 生態中保持競爭力。
+這個專案是一個精心策劃的開源 AI 資源清單，涵蓋了從核心框架到多種工具的各個方面。用戶可以透過這個清單快速找到各種開源 AI 模型、庫和基礎設施，特別是針對機器學習和生成式 AI 的需求。清單中包含了多個評估框架和數據集，讓開發者能夠有效地評估和比較不同的 AI 模型。這個清單的賣點在於其全面性和組織性，使用者只需點擊鏈接即可獲得詳細資訊，省去尋找資料的時間。技術上，這個專案並不依賴於特定的程式語言，而是整合了多種流行的 AI 框架，如 PyTorch 和 TensorFlow，並提供了對應的開源數據集和工具。相比其他資源清單，這個專案的獨特之處在於其專注於真正的開源項目，並且經過社群的精選和整理。
 
-與其他資源清單相比，這個清單特別強調了開源的可持續性，讓使用者能夠自由地使用和修改這些工具。這些工具的選擇也考慮到了實際應用的需求，如支持多種數據格式和模型架構。使用者在選擇工具時，可以根據自己的需求快速篩選出最合適的選項，這在大型專案中尤為重要。社群的活躍度和問題解決率也顯示出這個專案的健康狀態，讓使用者在遇到問題時能夠獲得及時的幫助。這個清單的成熟度和持續更新使其成為開源 AI 領域的重要資源，值得開發者立即採用。
+這使得開發者在尋找開源解決方案時，可以更快地找到合適的工具和資源。使用這個清單的開發者可以在短時間內獲得高質量的開源資源，特別是在進行 AI 研究或開發時。儘管這個專案目前仍在活躍開發中，但其結構清晰且易於擴展，未來可能會加入更多的資源和工具。對於需要快速獲取開源 AI 資源的開發者來說，這是一個非常值得參考的清單。使用者應該注意，這個清單不包含商業產品或閉源項目，完全專注於開源社群的貢獻。
 
 ## 重點功能
 
-- 全面的開源 AI 資源清單 — 包含模型、工具和基礎設施，方便開發者快速找到所需資源。
-- 定期更新 — 確保清單中的資源始終保持最新，反映當前技術趨勢。
-- 涵蓋多種領域 — 包括核心框架、數據處理、訓練工具等，滿足不同需求。
-- 社群支持 — 提供問題解決和貢獻指南，鼓勵開發者參與和互動。
-- 高質量的資料集和評估工具 — 幫助用戶進行模型評估和性能測試。
+- 全面的開源 AI 資源清單 — 包含模型、工具、數據集等，方便開發者快速查找。
+- 精選的評估框架 — 提供多種模型評估工具，幫助使用者進行有效的比較。
+- 整合多種流行框架 — 包括 PyTorch、TensorFlow 等，支持多種開發需求。
+- 持續更新 — 社群活躍，定期添加新資源，保持內容的時效性。
+- 清晰的結構 — 方便用戶快速導航和查找所需資源。
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 7 天就累積 2189 stars（313/天），forks 169（7.7%），顯示出強勁的增長潛力。專案的主要貢獻者是 alvinunreal 和其他幾位開發者，他們在開源社群中有一定的影響力。這個清單解決了開發者在尋找開源 AI 資源時的痛點，過去開發者常常需要花費大量時間在不同的資源上尋找合適的工具。最近的推文和社群討論也促進了這個專案的曝光度。隨著開源 AI 生態的蓬勃發展，這個專案的出現正好滿足了市場的需求。forks/stars 比率為 7.7%，顯示出許多開發者對這個專案的實際修改和使用，這是其受歡迎的指標之一。
+> 建立 8 天就累積 2236 stars（279.5/天），forks 179（8.0%），這顯示出強勁的社群關注度。專案的主要貢獻者來自於 Boring Dystopia Development，這是一個專注於開源 AI 的團隊。這個清單解決了開源 AI 資源分散的問題，讓開發者能夠集中獲取高質量的開源工具和模型。隨著開源 AI 的需求上升，這個專案的出現正好滿足了市場的需求。社群的活躍度和持續更新也顯示出其潛在的長期價值。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速找到開源 AI 資源的開發者和研究人員。
+**目標受眾**：需要快速獲取高質量開源 AI 資源的開發者和研究人員。
 
 > [!example] 使用場景
 > - AI 研究人員用它來快速找到最新的開源 AI 模型和工具，因為這個清單整合了多個資源，節省了尋找時間。
-> - 開發者用它來選擇合適的框架進行模型訓練，因為清單中列出的工具都是業界標準，能提高開發效率。
-> - 數據科學家用它來獲取高品質的數據集和評估工具，因為這些資源能幫助他們更好地評估模型性能。
+> - 資料科學家用它來獲取高質量的數據集和評估工具，因為這些資源都是經過精選的，能提高模型評估的效率。
+> - 開發者用它來選擇合適的開源框架進行 AI 開發，因為清單中的框架都是業界標準，能夠提高開發的穩定性和效率。
 
 ## 架構分析
 
-這個專案的架構是基於 GitHub 的 README 文件，通過整理和分類各種開源 AI 資源來形成一個清單。這樣的設計使得用戶能夠快速瀏覽和找到所需的工具和模型。資料流主要是用戶從清單中選擇所需的資源，然後根據提供的鏈接進行訪問。這種方式的優勢在於簡單易用，缺點是無法提供更深入的使用指南或範例。擴展性方面，這個清單可以隨著社群的貢獻而不斷增長，但也可能因為缺乏統一的標準而導致資源質量參差不齊。
+這個專案的架構主要是基於 Markdown 文件，將各種開源 AI 資源進行分類和整理。每個分類下列出相關的項目及其鏈接，方便用戶快速訪問。這種設計使得內容易於維護和更新，並且能夠快速擴展新的資源。由於不依賴於特定的技術棧，這個清單能夠適應不同的開發需求，並且不會因為技術變遷而受到限制。這樣的架構設計使得用戶能夠在最短的時間內找到所需資源，減少了尋找資料的時間成本。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是通過 GitHub 的 README 文件來整理和分類各種開源 AI 資源。這種方式使得用戶能夠快速瀏覽和找到所需的工具和模型。雖然沒有具體的效能數據，但這種清單的設計使得用戶能夠在短時間內找到合適的資源。選擇 GitHub 作為平台的好處在於其廣泛的社群支持和易於更新的特性。這個專案的依賴性相對較低，主要依賴於社群的貢獻。技術風險方面，因為依賴於外部資源的更新，可能會出現某些資源過時或不再維護的情況。整合方面，這個清單可以與其他開源工具和框架無縫對接，使用者可以根據自己的需求選擇合適的資源。
+這個專案的核心技術機制在於其精心策劃的資源整理，涵蓋了多種開源 AI 模型和工具。它不僅提供了模型和工具的鏈接，還包括評估框架和數據集，讓使用者能夠進行全面的比較和評估。這種設計使得開發者能夠在短時間內獲得所需的資源，特別是在 AI 研究和開發中。由於專案不依賴於特定的程式語言或框架，這使得它能夠適應不同的開發需求，並且不會受到技術變遷的影響。這樣的架構設計也使得用戶能夠在最短的時間內找到所需資源，減少了尋找資料的時間成本。隨著開源 AI 的需求上升，這個專案的出現正好滿足了市場的需求，並且未來可能會加入更多的資源和工具。整體來看，這個專案在開源 AI 生態系統中扮演了重要的角色，為開發者提供了寶貴的資源。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了資源的分類和鏈接。安裝過程非常簡單，只需訪問清單即可使用。沒有提供詳細的入門指南，但用戶可以輕鬆找到所需資源。文件沒有多語言支持。
+> README 文件清晰且結構良好，提供了詳細的資源分類。安裝過程非常簡單，因為這是一個純粹的資源清單，不需要複雜的安裝步驟。雖然沒有提供具體的入門指南，但用戶可以直接通過鏈接訪問各個資源，這對於熟悉開源生態的開發者來說非常方便。文件目前僅提供英語版本，可能對某些用戶造成障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 整合了大量開源 AI 資源，方便使用者快速找到所需工具。
-> - 社群活躍，能夠提供及時的問題解決和貢獻機會。
-> - 定期更新，確保資源的時效性和相關性。
+> - 提供全面的開源 AI 資源，便於快速查找。
+> - 持續更新，保持內容的時效性。
+> - 結構清晰，易於導航和使用。
 
 > [!danger] 缺點
-> - 不包含商業產品或非開源工具，限制了資源的多樣性。
-> - 更新依賴於社群貢獻，可能導致某些資源未被及時更新。
-> - 對於特定領域的工具可能不夠全面，無法滿足所有需求。
+> - 不包含商業產品或閉源項目。
+> - 對於特定領域的資源可能不夠全面。
+> - 仍在開發中，可能會有不穩定的內容。
 
 > [!warning] 注意事項
-> - 不包含商業產品或非開源工具。
-> - 可能無法涵蓋所有最新的開源 AI 專案，因為更新依賴於社群貢獻。
-> - 對於某些特定領域的工具可能不夠全面。
-
-## 成熟度評估
-
-| 項目 | 評估 |
-| --- | --- |
-| 開發階段 | Alpha |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | low |
-
-> [!tip] 採用建議
-> 適合快速尋找開源 AI 資源，但不建議用於生產環境的核心路徑上。
-
-## 使用情境適合度
-
-| 情境 | 適合度 | 說明 |
-| --- | --- | --- |
-| 需要快速找到開源 AI 資源的開發者 | 非常適合 | 清單中整合了大量資源，節省了尋找時間。 |
-| 大型 AI 專案的開發團隊 | 適合 | 能夠快速找到所需的工具和模型，提升開發效率。 |
-| 小型團隊或個人開發者 | 普通 | 雖然資源豐富，但可能不夠專注於特定需求。 |
-
-## 採用成本分析
-
-| 項目 | 評估 |
-| --- | --- |
-| 學習時間 | ~1 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
-| 綁定風險 | low |
-
-> [!tip] 投入 vs 回報
-> 花 1 小時學習和整合，得到快速找到開源 AI 資源的效果，值得。
-
-## 安全性評估
-
-> [!warning] 安全性快速掃描
-> 低風險：這個專案本身不需要高權限，且不存取敏感資料。依賴鏈的信任程度高，沒有已知的供應鏈風險。
+> - 不包含商業產品或閉源項目，僅專注於開源資源。
+> - 目前仍在活躍開發中，可能會有不穩定的內容。
+> - 對於特定領域的資源可能不夠全面，需自行補充。
 
 ## 健康度儀表板
 
@@ -268,41 +231,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 169 |
-| Open Issues | 10 |
-| Issue 解決率 | 29% (4 closed) |
-| 最後推送 | 2026-03-31 |
+| Forks | 179 |
+| Open Issues | 6 |
+| Issue 解決率 | 63% (10 closed) |
+| 最後推送 | 2026-04-01 |
 | 建立日期 | 2026-03-24 |
-| Repo 大小 | 456 KB |
+| Repo 大小 | 480 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/alvinreal/awesome-opensource-ai) |
 | Topics | `agents` `ai` `artificial-intelligence` `awesome` `awesome-list` `generative-ai` `llm` `machine-learning` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@alvinunreal](https://github.com/alvinunreal) | 22 |
-> | [@alvinreal](https://github.com/alvinreal) | 15 |
+> | [@alvinunreal](https://github.com/alvinunreal) | 23 |
+> | [@alvinreal](https://github.com/alvinreal) | 16 |
+> | [@paihari](https://github.com/paihari) | 2 |
 > | [@jeheskielSunloy77](https://github.com/jeheskielSunloy77) | 1 |
 > | [@anulum](https://github.com/anulum) | 1 |
-> | [@IMisbahk](https://github.com/IMisbahk) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期有新的貢獻和討論。
+**社群活躍度**：社群活躍，定期更新內容。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-29 ~ 2026-03-31）
-> **活躍天數** 3 天 · **最新 commit** Merge pull request #37 from alvinreal/add-contribution-guidelines
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#29](https://github.com/alvinreal/awesome-opensource-ai/issues/29) | [Research] Add: SWE-agent (Princeton NLP) `agent:suggested` | 0 | 0 |
-> | [#28](https://github.com/alvinreal/awesome-opensource-ai/issues/28) | [Research] Add: Agno (formerly Phidata) `agent:suggested` | 0 | 0 |
-> | [#27](https://github.com/alvinreal/awesome-opensource-ai/issues/27) | [Research] Add: mistral.rs `agent:suggested` | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-03-29 ~ 2026-04-01）
+> **活躍天數** 4 天 · **最新 commit** fix: Move Assistant UI to correct section (Developer Tools > UI Components)
 
 ## README 摘錄
 
@@ -438,7 +392,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 ## 延伸閱讀
 
-相關概念：[[開源]] · [[AI 模型]] · [[數據集]]
+相關概念：[[開源]] · [[機器學習]] · [[生成式 AI]]
 
 相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[mattprusak--autoresearch-genealogy|mattprusak/autoresearch-genealogy]] · [[magnum6actual--flipoff|magnum6actual/flipoff]] · [[novatic14--MANPADS-System-Launcher-and-Rocket|novatic14/MANPADS-System-Launcher-and-Rocket]]
 
@@ -482,7 +436,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["開源","AI 模型","數據集"];
+> const concepts = ["開源","機器學習","生成式 AI"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "alvinreal--awesome-opensource-ai" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

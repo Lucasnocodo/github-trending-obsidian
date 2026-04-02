@@ -1,18 +1,18 @@
 ---
-repo: Kuberwastaken/claude-code
-url: https://github.com/Kuberwastaken/claude-code
+repo: Kuberwastaken/claurst
+url: https://github.com/Kuberwastaken/claurst
 owner: Kuberwastaken
 owner_type: User
 language: Rust
 license: N/A
-description: "Claude Code in Rust & a Breakdown of How it Works"
+description: "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries"
 homepage: "https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it"
-stars: 3557
-stars_per_day: 3557
-forks: 4872
-open_issues: 7
+stars: 6609
+stars_per_day: 6609
+forks: 6844
+open_issues: 8
 created: 2026-03-31
-pushed_at: 2026-03-31
+pushed_at: 2026-04-01
 first_seen: 2026-04-01
 week: "2026-W14"
 month: "2026-04"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-01
-use_case: "用 Rust 重構 Claude Code，並深入分析其運作方式。"
+use_case: "提供一個用 Rust 實作的 Terminal Coding Agent，並分析 Claude Code 的代碼洩漏事件。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,31 +34,31 @@ appearances: 1
 next_review: "2026-04-04"
 contributor_count: 1
 engagement: "high"
-issue_close_rate: 22
-repo_size_kb: 1644
+issue_close_rate: 53
+repo_size_kb: 1904
 readme_length: 9835
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-01"
-star_history: "2026-04-01:3470,2026-04-01:3557"
+star_history: "2026-04-01:3470,2026-04-01:3557,2026-04-02:6609"
 tags:
   - github
   - "category/開發工具"
   - "lang/rust"
 aliases:
-  - "claude-code"
-  - "Kuberwastaken/claude-code"
-  - "用 Rust 重構 Claude Code，並深入分析其運作方式。"
+  - "claurst"
+  - "Kuberwastaken/claurst"
+  - "提供一個用 Rust 實作的 Terminal Coding Agent，並分析 Claude Code 的代碼洩漏事件"
 ---
 
-# claude-code
+# claurst
 
-**3.6k** stars · **3.6k** stars/天 · 建立 1 天前 · Rust · 未標註授權
+**6.6k** stars · **6.6k** stars/天 · 建立 1 天前 · Rust · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/Kuberwastaken--claude-code");
+const me = dv.page("Repos/Kuberwastaken--claurst");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> 用 Rust 重構 Claude Code，並深入分析其運作方式。
+> 提供一個用 Rust 實作的 Terminal Coding Agent，並分析 Claude Code 的代碼洩漏事件。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (3.6k stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (6.6k stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 希望在 CLI 環境中使用 AI 編程的開發者，特別是對 Rust 語言有興趣的人。
-> **一句話重點** 這個專案展示了如何在法律框架內重建 AI 工具的行為，並且提供了一個有趣的 Rust 實作。
+> **適合** 希望在 Rust 中實現 AI 代理功能的開發者，特別是對法律合規性有需求的團隊。
+> **一句話重點** 這個專案不僅是技術上的重構，更是一個法律合規的成功案例，展示了如何在不侵犯版權的情況下實現複雜的 AI 行為。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/Kuberwastaken--claude-code");
+> const me = dv.page("Repos/Kuberwastaken--claurst");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "CLI 工具" && p.file.name !== "Kuberwastaken--claude-code" && p.status !== "archived")
+>     .where(p => p.subcategory === "CLI 工具" && p.file.name !== "Kuberwastaken--claurst" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -100,31 +100,31 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到一個合法且有趣的 AI 編程工具，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
+> **結論** 花 10 小時學習，5 小時整合，得到高效的 AI 代理功能，值得投入。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於合法的清室工程，重建 Claude Code 的行為而不侵犯原始代碼。
+> 這個專案的核心創新在於其法律合規的清潔室工程實作，能夠重現 Claude Code 的行為而不侵犯版權。
 
 ## 專案簡介
 
-這個專案是 Claude Code 的 Rust 版本，並不包含原始的 TypeScript 代碼，而是透過兩階段的過程重建其行為。首先，AI 代理分析原始代碼並生成行為規範，然後另一個 AI 代理根據這些規範實作出符合 Rust 語言風格的代碼。這樣的設計不僅遵循了法律上的清室工程原則，還確保了行為的再現性而不侵犯原始表達。專案中使用了 compile-time feature flags 來控制功能的啟用，這使得不同版本的構建可以根據需求進行調整，並且避免了不必要的代碼在生產環境中出現。
+這個專案是 Claude Code 的一個 Rust 重構版本，旨在模擬其行為而不直接使用原始 TypeScript 代碼。核心流程包括兩個階段：首先，AI 代理分析原始代碼並生成行為規範；接著，另一個 AI 代理根據這些規範實作出符合 Rust 語言風格的代碼。這樣的設計不僅遵循了法律上的清潔室工程原則，還保護了原始代碼的版權。專案的賣點在於其能夠在不侵犯版權的情況下，重現 Claude Code 的功能。技術上，這個專案使用了 Rust 語言，並在架構上實現了多代理協調系統和背景記憶整合引擎，這些都是其性能和擴展性的關鍵。與其他類似工具相比，如 AlpinDale/parsync 和 CoderLuii/HolyClaude，這個專案的特點在於其清晰的法律合規性和對原始行為的忠實重現。
 
-與其他類似工具相比，Claude Code 的特點在於它的多代理協作系統和背景記憶整合引擎，這讓它在處理複雜任務時更具優勢。使用者可以透過 CLI 進行互動，並且有一個完整的 Tamagotchi 伴侶系統，這在其他 AI 工具中並不常見。儘管專案剛剛成立，但已經引起了廣泛的關注，並且有不少開放的問題等待解決。這個專案的成熟度目前仍在 alpha 階段，對於希望在 CLI 環境中使用 AI 編程的開發者來說，這是一個值得關注的選擇。
+實際使用中，這個工具的效能在於其能夠處理多種複雜的命令，並且在 CLI 環境中提供即時反饋。社群活躍度高，開發者能夠快速獲得支援。這個專案目前處於 alpha 階段，適合對 Rust 和 AI 代理有興趣的開發者進行實驗和學習。未來可能會加入更多功能，特別是在多代理協作和自動化方面。適合用於小型團隊的開發環境，特別是那些需要快速迭代和測試 AI 代理的專案。
 
 **技術棧**：`Rust`
 
 ## 重點功能
 
-- 行為重建 — 根據原始 Claude Code 的行為規範，實作出符合 Rust 語言的代碼。
-- 多代理協作 — 支援多個 AI 代理的協作處理，提升任務執行效率。
-- 背景記憶整合 — 內建的記憶整合引擎，能夠在背景中進行資料處理。
-- Tamagotchi 伴侶系統 — 提供獨特的伴侶互動體驗，增加使用的趣味性。
-- 功能開關 — 使用 compile-time feature flags 控制功能的啟用，靈活應對不同需求。
+- 行為模擬 — 透過 AI 生成的行為規範，重現 Claude Code 的功能。
+- Rust 實作 — 完全用 Rust 語言實作，符合 Rust 的語言特性和性能需求。
+- 多代理協調系統 — 支援多個 AI 代理之間的協作，增強功能擴展性。
+- 背景記憶整合 — 提供記憶整合引擎，提升用戶體驗和反應速度。
+- 法律合規性 — 遵循清潔室工程原則，確保不侵犯原始代碼的版權。
 
 ## 快速開始
 
-1. 克隆專案
+1. 克隆專案到本地
 ```bash
 git clone https://github.com/Kuberwastaken/claude-code.git
 ```
@@ -132,11 +132,11 @@ git clone https://github.com/Kuberwastaken/claude-code.git
 ```bash
 cd claude-code
 ```
-3. 編譯專案
+3. 使用 Cargo 編譯專案
 ```bash
 cargo build
 ```
-4. 執行 CLI 工具
+4. 運行 CLI 工具
 ```bash
 cargo run
 ```
@@ -145,64 +145,64 @@ cargo run
 
 ```rust
 {
-  "前置條件": "需要 Rust 環境",
+  "前置條件": "需要 Rust 環境和 Cargo 工具",
   "指令": "cargo run",
-  "預期輸出": "顯示 Claude Code CLI 的主介面"
+  "預期輸出": "啟動 CLI 工具並顯示可用命令列表"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 3557 stars（3557/天），forks 4872（137.0%），這是極端爆發式增長。這位開發者 Kuberwastaken 之前在開源社群有一定的影響力，並且這個專案解決了原始 Claude Code 的開放性問題，讓開發者能夠在不侵犯版權的情況下使用其功能。最近的事件是 Claude Code 的源代碼意外洩露，這引發了社群的廣泛討論和興趣。這個專案的出現正好填補了這一空白，並且提供了一個合法的替代方案。forks/stars 比率高達 137.0%，顯示出許多人對此專案的實際修改和使用。
+> 建立 1 天就累積 6609 stars（6609/天），forks 6844（103.6%），這顯示出極高的興趣和參與度。作者 Kuberwastaken 在開源社群中活躍，並且對 AI 和 Rust 有深厚的理解。這個專案解決了原始 Claude Code 代碼洩漏後的合法重建問題，讓開發者能夠在不違反版權的情況下使用其功能。最近的社交媒體討論和技術博客也引起了廣泛關注，進一步推動了這個專案的流行。高 forks/stars 比率顯示許多人對這個專案感興趣並進行修改。
 
 ## 適合誰使用
 
-**目標受眾**：希望在 CLI 環境中使用 AI 編程的開發者，特別是對 Rust 語言有興趣的人。
+**目標受眾**：希望在 Rust 中實現 AI 代理功能的開發者，特別是對法律合規性有需求的團隊。
 
 > [!example] 使用場景
-> - 後端工程師用它來在 CLI 中進行 AI 編程，因為它提供了 Rust 實作的 Claude Code 行為，能夠在不侵犯版權的情況下使用。
-> - 開發者用它來探索 AI 伴侶系統，因為它的 Tamagotchi 伴侶系統提供了獨特的互動體驗，增加了使用的趣味性。
-> - AI 研究者用它來分析和改進 AI 行為，因為它的行為規範是基於原始代碼的深入分析，能夠提供有價值的見解。
+> - AI 開發者用它來構建自動化的代碼生成工具，因為它能夠在 CLI 中即時執行命令並獲得反饋。
+> - Rust 開發者用它來學習如何將複雜的 AI 行為轉換為 Rust 語言的實作，因為它提供了清晰的行為規範和實作範例。
+> - 小型團隊用它來快速原型設計 AI 代理，因為其高效的多代理協調系統能夠簡化開發過程。
 
 ## 架構分析
 
-這個專案採用了清室工程的架構模式，將行為規範與實作分開。資料流中，AI 代理首先分析原始代碼並生成行為規範，然後另一個代理根據這些規範實作出 Rust 代碼。這樣的設計使得專案能夠合法地再現原始功能，但不包含任何原始代碼。
+這個專案採用模組化的架構設計，將行為規範和實作分開。這樣的設計使得代碼的可維護性和可擴展性大大提高。資料流方面，AI 代理首先分析原始代碼，生成行為規範，然後由另一個 AI 代理根據這些規範實作 Rust 代碼。
 
-選擇 Rust 作為實作語言是因為其性能和安全性，這對於需要高效能的 AI 工具來說至關重要。這種架構的代價在於需要較高的開發成本和時間，因為必須進行詳細的行為分析和規範制定。擴展性方面，這種設計能夠靈活地添加新功能，但也可能因為複雜的規範而導致維護困難。
+這樣的分層設計能夠有效降低法律風險，但也增加了開發的複雜性。選擇 Rust 作為實作語言，主要是考慮到其性能和安全性，這對於 AI 代理的即時反應至關重要。擴展性方面，未來可以透過增加更多的功能模組來擴展系統，但需要注意的是，隨著功能增多，系統的複雜度也會隨之上升。
 
 ## 技術深入分析
 
-專案的核心技術機制在於清室工程，這是一種通過行為規範重建功能的方式，避免了直接使用原始代碼。這種方式使得專案能夠合法地再現 Claude Code 的行為，而不侵犯版權。效能方面，由於使用 Rust，專案在執行效率上有顯著優勢，能夠快速處理複雜的 AI 任務。設計取捨上，選擇 Rust 使得專案在性能上有保障，但也增加了學習曲線。技術風險方面，這種清室工程的方式可能在未來面臨法律挑戰，尤其是對於行為規範的解釋。整合方面，專案與現有的 Rust 生態系統相容良好，能夠輕鬆與其他 Rust 工具鏈整合，並且支援 CI/CD 流程。
+專案的核心技術機制在於其清潔室工程的實作，這意味著在不直接參考原始代碼的情況下，重現其行為。這樣的設計使得專案能夠合法運行，並且不會面臨版權訴訟的風險。效能方面，Rust 的編譯型特性使得其執行速度較快，適合用於即時反應的 AI 代理。設計上，選擇 Rust 而非其他語言（如 Python）是因為其在性能和安全性上的優勢，這對於處理大量即時請求的 AI 系統至關重要。技術風險方面，隨著功能的增加，系統的複雜度也會隨之上升，可能導致維護困難。整合方面，與現有的 CI/CD 流程相容性良好，能夠輕鬆融入開發環境。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含了必要的安裝步驟，但缺乏詳細的範例。安裝過程相對順暢，但需要注意 Rust 環境的配置。整體來說，花 30 分鐘能夠順利跑起來。
+> README 文件清晰，提供了詳細的使用說明和範例。安裝過程相對順暢，但需要注意 Rust 環境的配置。文件目前僅有英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 合法的行為重建，避免版權問題。
-> - 使用 Rust 提供高效能和安全性。
-> - 獨特的伴侶系統增加使用趣味性。
+> - 法律合規性高，避免版權問題。
+> - 性能優越，適合即時反應的應用場景。
+> - 模組化設計，易於擴展和維護。
 
 > [!danger] 缺點
 > - 仍在 alpha 階段，功能不穩定。
-> - 需要較高的 Rust 知識門檻。
-> - 功能開發可能受到法律限制。
+> - 需要較高的 Rust 語言基礎。
+> - 相對於其他成熟工具，社群支援可能不足。
 
 > [!warning] 注意事項
-> - 目前仍在 alpha 階段，功能可能不穩定。
-> - 僅支援 Rust 環境，對於其他語言的開發者不友好。
-> - 需要一定的 Rust 編程知識才能有效使用。
+> - 目前仍在 alpha 階段，可能存在不穩定的功能。
+> - 僅支援 Rust 環境，對於其他語言的開發者來說可能不太友好。
+> - 需要一定的 Rust 語言基礎才能進行有效的修改和擴展。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的 CLI 工具，但專注於資料同步而非 AI 編程。 |
-| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於 Claude Code 的功能擴展，但未提供 Rust 實作。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的 CLI 工具，但主要針對資料同步，功能範圍較窄。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於 Claude 的功能擴展，但並未實現 Rust 重構，可能面臨版權問題。 |
 
 ## 替代方案決策
 
@@ -210,16 +210,16 @@ cargo run
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Claude Code | 原始的 Claude Code 使用 TypeScript 實作，功能上更為成熟，但無法提供開源版本。 | 如果需要穩定且成熟的功能，則應選擇原始的 Claude Code。 | medium，因為需要重新適應 TypeScript 環境。 |
-| OpenAI Codex | Codex 提供了強大的 API 接口，適合需要即時 AI 編程的開發者，但不提供開源代碼。 | 如果需要即時的 API 接口和強大的功能，Codex 是更好的選擇。 | high，因為需要重構現有的工作流程以適應 API。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步，使用 Python 實作，性能較低但易於上手。 | 如果你的專案主要集中在資料同步，且團隊對 Python 更熟悉。 | low，因為 Python 的學習曲線較平緩。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於擴展 Claude 的功能，使用 JavaScript 實作，適合前端開發者。 | 如果你的團隊已經在使用 JavaScript 且需要前端整合。 | medium，因為需要適應不同的語言和框架。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **claude-code** | **Claude Code** | **OpenAI Codex** |
+> | 維度 | **claurst** | **parsync** | **HolyClaude** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 原始的 Claude Code 使用 TypeScript 實作，功能上更為成熟，但無法提供開源版本。 | Codex 提供了強大的 API 接口，適合需要即時 AI 編程的開發者，但不提供開源代碼。 |
-> | 遷移成本 | - | medium，因為需要重新適應 TypeScript 環境。 | high，因為需要重構現有的工作流程以適應 API。 |
-> | 適用場景 | 主要場景 | 如果需要穩定且成熟的功能，則應選擇原始的 Claude Co | 如果需要即時的 API 接口和強大的功能，Codex 是更好 |
+> | 技術路線 | 本專案 | 專注於資料同步，使用 Python 實作，性能較低但易於上手。 | 專注於擴展 Claude 的功能，使用 JavaScript 實作，適合前端開發者。 |
+> | 遷移成本 | - | low，因為 Python 的學習曲線較平緩。 | medium，因為需要適應不同的語言和框架。 |
+> | 適用場景 | 主要場景 | 如果你的專案主要集中在資料同步，且團隊對 Python 更熟 | 如果你的團隊已經在使用 JavaScript 且需要前端整合 |
 
 ## 成熟度評估
 
@@ -230,49 +230,50 @@ cargo run
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合個人實驗和學習，不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 使用過程中可能會遇到功能不穩定的情況，特別是在 alpha 階段時。
-  - 解法：建議在非關鍵專案中使用，並隨時關注更新。
-- [MEDIUM] Rust 環境配置可能會有困難，特別是對於新手。
-  - 解法：參考官方文檔進行配置，或尋求社群幫助。
-- **[HIGH]** 功能開發可能受到法律挑戰，影響未來更新。
-  - 解法：保持關注法律動態，並準備調整使用方式。
+- **[HIGH]** 在某些環境下可能無法正確編譯，特別是舊版的 Rust 環境
+  - 解法：確保使用最新版本的 Rust 工具鏈
+- [MEDIUM] CLI 命令的輸入格式要求嚴格，容易出錯
+  - 解法：仔細檢查命令格式，參考 README 中的範例
+- [MEDIUM] 多代理協調時可能出現延遲
+  - 解法：優化代理間的通訊，減少不必要的請求
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的 AI 編程工具 | 非常適合 | 專案提供了合法的 AI 編程解決方案，適合小型團隊使用。 |
-| 大型企業的核心編程工具 | 不適合 | 目前仍在 alpha 階段，功能不穩定，不適合關鍵業務使用。 |
-| 個人開發者的實驗性專案 | 非常適合 | 提供了獨特的功能和靈活性，適合個人開發者探索。 |
+| 小型團隊的 AI 開發專案 | 非常適合 | 提供了高效的多代理協調系統，適合快速迭代的開發環境。 |
+| 大型企業的核心系統 | 不適合 | 目前仍在 alpha 階段，功能不穩定，可能不符合生產需求。 |
+| 學術研究中的 AI 行為模擬 | 適合 | 能夠合法重現複雜的 AI 行為，適合用於研究和實驗。 |
+| 需要快速原型設計的創業公司 | 非常適合 | 模組化設計和高效能使其能夠快速實現原型。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~10 小時 |
+| 整合時間 | ~5 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到一個合法且有趣的 AI 編程工具，值得嘗試。
+> 花 10 小時學習，5 小時整合，得到高效的 AI 代理功能，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：專案本身不需要高權限，且不存取敏感資料。依賴鏈的信任程度高，沒有已知的供應鏈風險。
+> 低風險：專案不需要高權限運行，且不存取敏感資料。依賴鏈的信任程度高，無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/Kuberwastaken--claude-code");
+> const me = dv.page("Repos/Kuberwastaken--claurst");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -307,7 +308,7 @@ cargo run
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/Kuberwastaken--claude-code");
+> const me = dv.page("Repos/Kuberwastaken--claurst");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -331,14 +332,14 @@ cargo run
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 4.9k |
-| Open Issues | 7 |
-| Issue 解決率 | 22% (2 closed) |
-| 最後推送 | 2026-03-31 |
+| Forks | 6.8k |
+| Open Issues | 8 |
+| Issue 解決率 | 53% (9 closed) |
+| 最後推送 | 2026-04-01 |
 | 建立日期 | 2026-03-31 |
 | 官方網站 | [Link](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it) |
-| Repo 大小 | 1.6 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Kuberwastaken/claude-code) |
+| Repo 大小 | 1.9 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Kuberwastaken/claurst) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
@@ -347,23 +348,24 @@ cargo run
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放問題數量較少。
+**社群活躍度**：社群活躍，開發者能快速獲得支援。
 **連結**：[文件](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-31 ~ 2026-03-31）
-> **活躍天數** 1 天 · **最新 commit** minor README tweaks + rust progress
+> [!abstract] 最近 10 次 commit（2026-04-01 ~ 2026-04-01）
+> **活躍天數** 1 天 · **最新 commit** Massive TUI improvements
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#7](https://github.com/Kuberwastaken/claude-code/issues/7) | Did I just see a rugpull here ;P | 1 | 0 |
-> | [#10](https://github.com/Kuberwastaken/claude-code/issues/10) | Bro wasting usage for the useless stufff😭 | 0 | 0 |
-> | [#8](https://github.com/Kuberwastaken/claude-code/issues/8) | What if they leak it on purpose? | 0 | 0 |
-> | [#6](https://github.com/Kuberwastaken/claude-code/issues/6) | Fix the Readme | 0 | 0 |
+> | [#7](https://github.com/Kuberwastaken/claurst/issues/7) | Did I just see a rugpull here ;P | 4 | 0 |
+> | [#23](https://github.com/Kuberwastaken/claurst/issues/23) | Executing a simple commands give me following | 0 | 0 |
+> | [#22](https://github.com/Kuberwastaken/claurst/issues/22) | Wasn't the agent coordination / swarm mentioned in the READM | 0 | 0 |
+> | [#18](https://github.com/Kuberwastaken/claurst/issues/18) | Is there a roadmap to release it? | 0 | 1 |
+> | [#15](https://github.com/Kuberwastaken/claurst/issues/15) | Is anyone here because how he managed to convert to Rust so  | 0 | 5 |
 
 ## README 摘錄
 
@@ -507,11 +509,11 @@ cargo run
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化]] · [[機器學習]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[多模態]]
 
 相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[duoan--TorchCode|duoan/TorchCode]] · [[sanbuphy--claude-code-source-code|sanbuphy/claude-code-source-code]] · [[twostraws--SwiftUI-Agent-Skill|twostraws/SwiftUI-Agent-Skill]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[jshachm--pi-rs|jshachm/pi-rs]]
 
-[GitHub](https://github.com/Kuberwastaken/claude-code) · [官方網站](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it)
+[GitHub](https://github.com/Kuberwastaken/claurst) · [官方網站](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it)
 
 ## 相關收錄
 
@@ -519,7 +521,7 @@ cargo run
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "CLI 工具" AND file.name != "Kuberwastaken--claude-code"
+> WHERE subcategory = "CLI 工具" AND file.name != "Kuberwastaken--claurst"
 > SORT stars DESC
 > ```
 
@@ -527,7 +529,7 @@ cargo run
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "Kuberwastaken--claude-code"
+> WHERE category = "開發工具" AND file.name != "Kuberwastaken--claurst"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -536,7 +538,7 @@ cargo run
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Rust" AND file.name != "Kuberwastaken--claude-code" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "Kuberwastaken--claurst" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -545,15 +547,15 @@ cargo run
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W14" AND file.name != "Kuberwastaken--claude-code"
+> WHERE week = "2026-W14" AND file.name != "Kuberwastaken--claurst"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化","機器學習"];
+> const concepts = ["CLI/TUI","自動化","多模態"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "Kuberwastaken--claude-code" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "Kuberwastaken--claurst" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -566,12 +568,12 @@ cargo run
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/Kuberwastaken--claude-code");
+> const me = dv.page("Repos/Kuberwastaken--claurst");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "Kuberwastaken--claude-code" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Kuberwastaken--claurst" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -587,7 +589,7 @@ cargo run
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "Kuberwastaken" AND file.name != "Kuberwastaken--claude-code"
+> WHERE owner = "Kuberwastaken" AND file.name != "Kuberwastaken--claurst"
 > SORT stars DESC
 > ```
 
@@ -595,7 +597,7 @@ cargo run
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/Kuberwastaken--claude-code");
+> const me = dv.page("Repos/Kuberwastaken--claurst");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -612,7 +614,7 @@ cargo run
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/Kuberwastaken--claude-code");
+> const me = dv.page("Repos/Kuberwastaken--claurst");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -645,7 +647,7 @@ cargo run
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/Kuberwastaken--claude-code");
+> const me = dv.page("Repos/Kuberwastaken--claurst");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -669,7 +671,7 @@ cargo run
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/Kuberwastaken--claude-code");
+> const me = dv.page("Repos/Kuberwastaken--claurst");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -706,7 +708,7 @@ cargo run
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/Kuberwastaken--claude-code");
+> const me = dv.page("Repos/Kuberwastaken--claurst");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
