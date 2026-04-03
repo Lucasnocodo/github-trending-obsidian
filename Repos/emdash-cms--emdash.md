@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to WordPress"
 homepage: "https://emdashcms.com"
-stars: 4343
-stars_per_day: 4343
-forks: 274
-open_issues: 87
+stars: 4366
+stars_per_day: 4366
+forks: 277
+open_issues: 92
 created: 2026-04-01
 pushed_at: 2026-04-03
 first_seen: 2026-04-03
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-03
-use_case: "提供一個現代化的全棧 TypeScript CMS，重塑 WordPress 的可擴展性和安全性。"
+use_case: "提供一個全新的 TypeScript CMS，重構 WordPress 的擴展性和安全性。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-04-06"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 9
-repo_size_kb: 10072
+repo_size_kb: 10075
 readme_length: 7888
 bus_factor: 1
 last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-03"
-star_history: "2026-04-03:4343"
+star_history: "2026-04-03:4343,2026-04-03:4366"
 tags:
   - github
   - "category/開發工具"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "emdash"
   - "emdash-cms/emdash"
-  - "提供一個現代化的全棧 TypeScript CMS，重塑 WordPress 的可擴展性和安全性。"
+  - "提供一個全新的 TypeScript CMS，重構 WordPress 的擴展性和安全性。"
 ---
 
 # emdash
 
-**4.3k** stars · **4.3k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**4.4k** stars · **4.4k** stars/天 · 建立 1 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/emdash-cms--emdash");
@@ -78,13 +78,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `astro` `cms` `emdash` `typescript`
 
 > [!summary] 一句話摘要
-> 提供一個現代化的全棧 TypeScript CMS，重塑 WordPress 的可擴展性和安全性。
+> 提供一個全新的 TypeScript CMS，重構 WordPress 的擴展性和安全性。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (4.3k stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (4.4k stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要一個現代化且安全的 CMS，並希望避免 WordPress 的安全問題的開發者。
-> **一句話重點** EmDash 透過安全的插件架構和靈活的內容管理，為現代 CMS 提供了一個全新的解決方案。
+> **適合** 需要一個安全、可擴展的 CMS 解決方案的全端開發者和團隊。
+> **一句話重點** EmDash 透過現代化的架構和安全性設計，為需要高擴展性和安全性的 CMS 提供了一個全新的選擇。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -107,103 +107,103 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學、5 小時整合，得到高安全性和靈活性的 CMS，值得考慮。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到一個安全且現代化的 CMS，值得考慮。
 
 > [!abstract] 核心創新
-> EmDash 的創新在於將插件運行在安全的 Worker 隔離環境中，解決了 WordPress 的安全問題。
+> EmDash 以現代化的方式重構了 WordPress 的核心概念，提供安全的沙盒插件系統和結構化內容存儲。
 
 ## 專案簡介
 
-EmDash 是一個基於 Astro 的全棧 TypeScript CMS，旨在解決 WordPress 的許多痛點。它的核心機制是將插件運行在安全的 Worker 隔離環境中，這樣可以避免單一插件的漏洞影響整個網站。用戶可以通過簡單的 CLI 指令 `npm create emdash@latest` 快速創建新專案，並且可以選擇直接部署到 Cloudflare 或任何 Node.js 伺服器。技術上，EmDash 使用 Portable Text 格式來存儲內容，這樣可以讓內容與呈現分離，並支持多種輸出格式。這種設計使得內容可以靈活地用於網頁、移動應用或 API 回應，而不需要解析 HTML。
+EmDash 是一個基於 Astro 的全棧 TypeScript CMS，旨在重構 WordPress 的核心概念，如擴展性和管理用戶體驗。它通過使用 Cloudflare 的 Dynamic Workers 來運行沙盒插件，解決了 WordPress 插件架構的安全問題。用戶可以透過簡單的 CLI 指令 `npm create emdash@latest` 快速啟動專案，並選擇不同的模板，如博客、行銷頁面和作品集。EmDash 使用 Portable Text 格式來存儲內容，這樣可以將內容與呈現分離，並支持多種輸出格式，無需解析 HTML。
 
-與 WordPress 相比，EmDash 的插件系統更安全，因為它限制了插件的權限，並且支持動態工作負載。相較於其他 CMS，如 Ghost 或 Strapi，EmDash 提供更強的安全性和靈活性，特別是在處理大型網站時。實際使用中，EmDash 需要 Cloudflare 的付費帳號來啟用動態工作負載，這可能會成為小型團隊的障礙。這個專案目前處於 beta 階段，社群活躍度尚可，但也有 87 個開放問題，解決率較低。總體來看，EmDash 是一個值得關注的選擇，特別適合需要高安全性和靈活性的現代網站。
+這個系統的設計使得非開發者也能通過管理界面輕鬆創建和修改內容類型，並且開發者可以透過 `npx emdash types` 生成 TypeScript 類型。相較於傳統的 WordPress，EmDash 不再依賴 PHP 和獨立的主機層，並且支持多種資料庫和存儲解決方案，如 SQLite 和 AWS S3。它的插件系統允許開發者定義插件的能力，並且這些插件在沙盒環境中運行，降低了安全風險。整體而言，EmDash 是針對現代需求設計的 CMS，適合需要高安全性和擴展性的開發者和團隊。
 
-**技術棧**：`Astro` · `TypeScript` · `SQLite` · `Cloudflare Workers`
+**技術棧**：`Astro` · `TypeScript` · `Cloudflare Workers` · `SQLite`
 
 ## 重點功能
 
-- 安全的插件系統 — 插件在沙盒環境中運行，避免安全漏洞影響整個網站。
-- Portable Text 格式 — 內容以結構化的 JSON 格式存儲，與呈現分離。
-- 多種模板 — 提供博客、行銷和作品集等多種起始模板。
-- CLI 支持 — 透過 CLI 指令管理內容和架構，簡化開發流程。
-- WordPress 遷移工具 — 支持從 WordPress 導入內容，方便舊用戶轉移。
+- 沙盒插件系統 — 使用 Cloudflare 的 Dynamic Workers 來運行插件，確保安全性。
+- Portable Text 格式 — 使用結構化 JSON 存儲內容，支持多種輸出格式。
+- 多種模板 — 提供博客、行銷和作品集等多種啟動模板，快速搭建網站。
+- CLI 工具 — 使用 `npm create emdash@latest` 快速啟動專案，並支持內容管理。
+- 完整的管理面板 — 提供可視化的內容和結構管理，無需編碼。
 
 ## 快速開始
 
-1. 創建新的 EmDash 專案
+1. 安裝 EmDash
 ```bash
 npm create emdash@latest
 ```
-2. 將 EmDash 添加到 Astro 配置中
-```bash
-import emdash from 'emdash/astro';
-```
-3. 啟動開發伺服器
+2. 啟動本地開發伺服器
 ```bash
 pnpm --filter emdash-demo dev
+```
+3. 訪問管理界面
+```bash
+http://localhost:4321/_emdash/admin
 ```
 
 ## 程式碼範例
 
 ```ts
 {
-  "前置條件": "已安裝 EmDash 並配置 Astro",
-  "指令": "// astro.config.mjs\nimport emdash from 'emdash/astro';\nimport { d1 } from 'emdash/db';\n\nexport default defineConfig({\n\tintegrations: [emdash({ database: d1() })],\n});",
-  "預期輸出": "配置完成後，EmDash 將作為完整的 CMS 整合進入 Astro 專案中。"
+  "前置條件": "需要安裝 Node.js 和 pnpm。",
+  "指令": "import emdash from 'emdash/astro';\n\nexport default defineConfig({\n  integrations: [emdash({ database: d1() })],\n});",
+  "預期輸出": "這段程式碼將 EmDash 整合到 Astro 配置中，並設置資料庫連接。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 4343 stars（4343/天），forks 274（6.3%），這顯示出強烈的興趣。作者 Matt Kane 曾經參與過多個開源專案，這次的 EmDash 針對 WordPress 的安全性和擴展性問題提供了創新的解決方案，特別是針對插件的安全性。這個專案的推出正好符合當前對於更安全、更靈活的 CMS 解決方案的需求。社群的反應也相當熱烈，尤其是對於插件的沙盒化運行和內容結構化的設計。這些特性使得 EmDash 在同類工具中脫穎而出。
+> 建立 1 天就累積 4366 stars（4366/天），forks 277（6.3%），這顯示出強烈的興趣和潛在的使用者基礎。作者 Matt Kane 之前在開源社區活躍，這次推出的 EmDash 解決了 WordPress 在安全性和擴展性上的痛點，特別是針對插件的安全性問題。近期的推廣和社群討論可能也促進了這個專案的曝光和使用。由於 Cloudflare 的技術支持，這個工具的可行性和性能得到了保證，吸引了許多開發者的注意。forks/stars 比率顯示出社群對這個專案的實際修改和使用意圖，這是相對健康的指標。
 
 ## 適合誰使用
 
-**目標受眾**：需要一個現代化且安全的 CMS，並希望避免 WordPress 的安全問題的開發者。
+**目標受眾**：需要一個安全、可擴展的 CMS 解決方案的全端開發者和團隊。
 
 > [!example] 使用場景
-> - 網站開發者用它來建立一個安全的內容管理系統，因為它的插件沙盒化設計能有效避免安全漏洞。
-> - 小型團隊用它來快速部署一個博客，因為它提供了現成的模板和簡單的 CLI 指令。
-> - 企業用它來管理多種內容類型，因為它支持 Portable Text 格式，讓內容可以靈活應用於不同平台。
+> - 前端開發者用它來快速搭建一個博客網站，因為它提供了多種模板和簡單的 CLI 指令，能夠在幾分鐘內完成部署。
+> - 內容管理員用它來管理網站內容，因為它的管理界面友好且支持多種內容類型，無需編碼知識。
+> - 全端工程師用它來開發一個行銷網站，因為它的插件系統可以輕鬆擴展功能，並且支持多種資料庫選擇。
 
 ## 架構分析
 
-EmDash 採用單一的 Astro 整合架構，將所有功能模組化，這樣可以保持靈活性和可擴展性。資料流方面，內容類型在資料庫中定義，並透過 SQL 查詢來獲取，這樣可以避免重建的需求。選擇使用 Portable Text 格式而非傳統的 HTML 儲存，這樣可以讓內容更靈活地應用於不同平台。這種設計使得 EmDash 在性能上優於傳統 CMS，但也帶來了學習曲線的挑戰。擴展性方面，雖然目前的架構支持多種資料庫，但在高流量的情況下，可能會面臨性能瓶頸，特別是當使用 Cloudflare 的 D1 時。
+EmDash 採用單體架構，整合了 Astro 作為前端框架，並使用 Cloudflare 的 Dynamic Workers 來處理插件的執行。這種設計使得系統能夠在不同的環境中運行，無論是 Cloudflare 還是本地 Node.js 伺服器。資料流方面，內容通過 Portable Text 格式進行存儲，並在管理界面中以可視化方式呈現。這種設計的代價在於需要依賴 Cloudflare 的服務，對於不願意使用雲端服務的開發者來說，可能會造成不便。擴展性方面，使用 SQLite 或其他資料庫的選擇使得系統能夠靈活應對不同規模的應用需求。
 
 ## 技術深入分析
 
-EmDash 的核心技術在於其基於 Astro 的架構，這使得它能夠利用現代的前端技術來構建 CMS。插件的沙盒化運行是其主要創新，這樣可以有效避免 WordPress 中常見的安全漏洞。使用 Portable Text 格式來儲存內容，這不僅提高了內容的靈活性，也簡化了資料的處理過程。效能方面，EmDash 在處理大量請求時表現良好，但在高流量情況下，可能會因為依賴 Cloudflare 的 D1 而面臨瓶頸。選擇 TypeScript 作為開發語言，使得整個專案在型別安全性上有了保障，這對於大型專案的維護至關重要。依賴樹的複雜度適中，但仍需注意可能的 vendor lock-in 風險，特別是在使用 Cloudflare 的服務時。整合方面，EmDash 可以與現有的 CI/CD 流程無縫對接，並且支持多種資料庫，這使得它在技術生態中有著良好的適應性。
+EmDash 的核心技術機制基於 Astro 和 Cloudflare 的 Dynamic Workers，這使得插件能夠在沙盒環境中運行，降低了安全風險。它使用 Portable Text 格式來存儲內容，這樣可以讓內容與呈現解耦，並支持多種輸出格式。效能方面，EmDash 能夠在 Cloudflare 環境中高效運行，但在本地 Node.js 環境中可能會受到資料庫性能的影響。選擇 TypeScript 作為主要語言，提供了靜態類型檢查的優勢，減少了潛在的錯誤。依賴樹的複雜度相對較低，主要依賴於 Astro 和 Cloudflare 的生態系統。技術風險方面，對於大型應用來說，資料庫的選擇可能會成為性能瓶頸，特別是在高流量的情況下。整合方面，與主流框架如 React 和 Vue 的整合相對簡單，並且支持 CI/CD 流程的友好度較高。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件相對清晰，提供了詳細的安裝和使用說明。安裝過程中需要注意 Cloudflare 的付費要求，這可能會成為新手的障礙。文檔中有針對新手的指導，但缺乏多語言支持，可能對非英語使用者造成困難。
+> README 文件清晰，提供了詳細的安裝步驟和範例。安裝過程順暢，但需要注意 Cloudflare 的付費要求。文件中有良好的入門指南，並且有多語言支持的需求。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 安全性高，插件運行在沙盒環境中。
-> - 靈活的內容管理，支持多種資料庫。
-> - 現成的模板加速開發流程。
+> - 安全性高 — 沙盒插件系統降低了安全風險。
+> - 易於使用 — 提供友好的管理界面和多種模板。
+> - 現代化架構 — 使用 TypeScript 和 Astro，適合當前開發趨勢。
 
 > [!danger] 缺點
-> - 需要付費的 Cloudflare 帳號來啟用某些功能。
-> - 仍在 beta 階段，可能存在不穩定性。
-> - 社群支持和文檔尚不完善。
+> - 依賴 Cloudflare — 需要付費帳戶才能使用完整功能。
+> - 仍在 beta 階段 — 可能存在不穩定性和潛在的 bug。
+> - 對於大型網站的性能可能受限於資料庫選擇。
 
 > [!warning] 注意事項
-> - 需要 Cloudflare 的付費帳號來啟用動態工作負載。
+> - 需要付費 Cloudflare 帳戶以使用 Dynamic Workers。
 > - 目前仍在 beta 階段，可能存在不穩定性。
-> - 社群支持和文檔尚不完善，可能需要額外的學習時間。
+> - 對於大型網站，性能可能會受到資料庫和存儲選擇的影響。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| Ghost | Ghost 是一個專注於內容創作的 CMS，但不具備 EmDash 的插件沙盒化特性，安全性較低。 |
-| Strapi | Strapi 提供靈活的內容管理，但在安全性和插件管理上不如 EmDash 的設計。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的內容管理功能，但不支持沙盒插件，安全性較低。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於安全性和擴展性，但不如 EmDash 提供多樣的模板和管理界面。 |
 
 ## 替代方案決策
 
@@ -211,16 +211,16 @@ EmDash 的核心技術在於其基於 Astro 的架構，這使得它能夠利用
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Ghost | Ghost 專注於內容創作，使用 Node.js 架構，但不具備 EmDash 的插件沙盒化特性，安全性較低。 | 如果你的專案主要是內容驅動，並且不需要複雜的插件系統，Ghost 會是更簡單的選擇。 | medium，因為需要將內容從 WordPress 或其他平台轉移。 |
-| Strapi | Strapi 提供靈活的內容管理，但在安全性和插件管理上不如 EmDash 的設計。 | 如果你的團隊需要一個可擴展的 API 驅動 CMS，Strapi 會是更合適的選擇。 | high，因為需要重新設計內容結構。 |
+| WordPress | 使用 PHP 和 MySQL，傳統的 CMS 架構，較為成熟但安全性較低。 | 如果你的團隊已經熟悉 PHP 並且需要一個成熟的生態系統。 | medium — 需要將內容從 WordPress 轉移到 EmDash，可能需要進行格式轉換。 |
+| Ghost | 基於 Node.js 的現代化 CMS，專注於內容創作和簡單性。 | 如果你需要一個簡單易用的內容管理系統，並且不需要複雜的擴展功能。 | low — 內容轉移相對容易，因為都是基於 JSON 格式。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **emdash** | **Ghost** | **Strapi** |
+> | 維度 | **emdash** | **WordPress** | **Ghost** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Ghost 專注於內容創作，使用 Node.js 架構，但不具備 EmDash 的插件沙盒化特性，安全性較低。 | Strapi 提供靈活的內容管理，但在安全性和插件管理上不如 EmDash 的設計。 |
-> | 遷移成本 | - | medium，因為需要將內容從 WordPress 或其他平台轉移。 | high，因為需要重新設計內容結構。 |
-> | 適用場景 | 主要場景 | 如果你的專案主要是內容驅動，並且不需要複雜的插件系統，Gho | 如果你的團隊需要一個可擴展的 API 驅動 CMS，Stra |
+> | 技術路線 | 本專案 | 使用 PHP 和 MySQL，傳統的 CMS 架構，較為成熟但安全性較低。 | 基於 Node.js 的現代化 CMS，專注於內容創作和簡單性。 |
+> | 遷移成本 | - | medium — 需要將內容從 WordPress 轉移到 EmDash，可能需要進行格式轉換。 | low — 內容轉移相對容易，因為都是基於 JSON 格式。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經熟悉 PHP 並且需要一個成熟的生態系統。 | 如果你需要一個簡單易用的內容管理系統，並且不需要複雜的擴展功 |
 
 ## 成熟度評估
 
@@ -228,47 +228,47 @@ EmDash 的核心技術在於其基於 Astro 的架構，這使得它能夠利用
 | --- | --- |
 | 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，但不建議用在生產環境的核心路徑上。
+> 適合開發者進行試用和評估，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 需要付費的 Cloudflare 帳號才能啟用插件功能
-  - 解法：可以選擇不使用插件，或使用本地 Node.js 伺服器
-- [MEDIUM] 社群支持和文檔尚不完善，可能需要額外的學習時間
-  - 解法：參考 GitHub 上的範例和其他開發者的經驗
-- [MEDIUM] 在高流量情況下，可能會面臨性能瓶頸
-  - 解法：考慮使用更高效的資料庫或優化查詢
+- **[HIGH]** 需要付費 Cloudflare 帳戶才能使用完整功能，免費帳戶無法運行沙盒插件。
+  - 解法：可以考慮使用本地 Node.js 環境進行開發。
+- [MEDIUM] 在高流量情況下，資料庫性能可能成為瓶頸。
+  - 解法：選擇適合的資料庫方案，如 D1 或 PostgreSQL。
+- [MEDIUM] 目前仍在 beta 階段，可能會遇到不穩定性和 bug。
+  - 解法：定期檢查更新和社群討論以獲取最新資訊。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | EmDash 提供了靈活的內容管理和安全的插件系統，適合小型團隊使用。 |
-| 大型企業網站需要高安全性 | 適合 | EmDash 的插件沙盒化設計能有效降低安全風險。 |
-| 需要快速部署的個人博客 | 非常適合 | 提供現成的模板和簡單的 CLI 指令，快速上手。 |
-| 需要高擴展性的內容平台 | 普通 | 雖然 EmDash 支持多種資料庫，但在高流量情況下可能會有瓶頸。 |
+| 小型創業團隊的網站 | 非常適合 | 提供了簡單的部署和管理界面，適合快速上手。 |
+| 大型企業的內容管理系統 | 普通 | 雖然功能強大，但目前仍在 beta 階段，可能不夠穩定。 |
+| 需要高安全性的應用 | 非常適合 | 沙盒插件系統提供了更高的安全性，適合處理敏感資料。 |
+| 對 PHP 有依賴的舊系統 | 不適合 | EmDash 不支持 PHP，遷移成本較高。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~5 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學、5 小時整合，得到高安全性和靈活性的 CMS，值得考慮。
+> 花 5 小時學習，10 小時整合，得到一個安全且現代化的 CMS，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：EmDash 本身不需要高權限，但依賴 Cloudflare 的服務，可能會有供應鏈風險。使用時需注意插件的安全性，確保不會引入漏洞。
+> 中等風險：需要 Cloudflare 的帳戶，並且沙盒插件的安全性設計降低了潛在的攻擊面。整體來說，適合在 CI/CD 流程中使用，但仍需注意外部依賴的安全性。
 
 ## 健康度儀表板
 
@@ -333,8 +333,8 @@ EmDash 的核心技術在於其基於 Astro 的架構，這使得它能夠利用
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 274 |
-| Open Issues | 87 |
+| Forks | 277 |
+| Open Issues | 92 |
 | Issue 解決率 | 9% (9 closed) |
 | 最後推送 | 2026-04-03 |
 | 建立日期 | 2026-04-01 |
@@ -379,7 +379,7 @@ EmDash 的核心技術在於其基於 Astro 的架構，這使得它能夠利用
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，但開放問題解決率較低。
+**社群活躍度**：社群活躍度中等，開發者對於功能和插件的貢獻持續增加。
 **連結**：[文件](https://github.com/emdash-cms/emdash/tree/main/docs)
 
 ## 開發動態
@@ -593,9 +593,9 @@ EmDash 的核心技術在於其基於 Astro 的架構，這使得它能夠利用
 
 ## 延伸閱讀
 
-相關概念：[[MCP Protocol]] · [[安全漏洞]] · [[自動化測試]]
+相關概念：[[MCP Protocol]] · [[CLI/TUI]] · [[自動化測試]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/emdash-cms/emdash) · [官方網站](https://emdashcms.com)
 
@@ -637,7 +637,7 @@ EmDash 的核心技術在於其基於 Astro 的架構，這使得它能夠利用
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["MCP Protocol","安全漏洞","自動化測試"];
+> const concepts = ["MCP Protocol","CLI/TUI","自動化測試"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "emdash-cms--emdash" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

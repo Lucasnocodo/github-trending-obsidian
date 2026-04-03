@@ -7,9 +7,9 @@ language: Objective-C
 license: N/A
 description: "Running a big model on a small laptop"
 homepage: ""
-stars: 3092
-stars_per_day: 221
-forks: 351
+stars: 3170
+stars_per_day: 211
+forks: 365
 open_issues: 16
 created: 2026-03-18
 pushed_at: 2026-03-19
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-23
-use_case: "在小型筆記型電腦上運行 397 億參數的模型。"
+use_case: "在小型筆記型電腦上運行 3970 億參數的模型，實現高效能推論。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-23"
-star_history: "2026-03-23:1220,2026-03-23:1233,2026-03-24:1672,2026-03-24:1678,2026-03-25:1864,2026-03-25:1864,2026-03-26:1994,2026-03-27:2059,2026-03-29:2180,2026-03-30:2237,2026-03-31:2570,2026-04-01:2955,2026-04-02:3092"
+star_history: "2026-03-23:1220,2026-03-23:1233,2026-03-24:1672,2026-03-24:1678,2026-03-25:1864,2026-03-25:1864,2026-03-26:1994,2026-03-27:2059,2026-03-29:2180,2026-03-30:2237,2026-03-31:2570,2026-04-01:2955,2026-04-02:3092,2026-04-03:3170"
 tags:
   - github
   - "category/ai_ml"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "flash-moe"
   - "danveloper/flash-moe"
-  - "在小型筆記型電腦上運行 397 億參數的模型。"
+  - "在小型筆記型電腦上運行 3970 億參數的模型，實現高效能推論。"
 ---
 
 # flash-moe
 
-**3.1k** stars · **221** stars/天 · 建立 14 天前 · Objective-C · 未標註授權
+**3.2k** stars · **211** stars/天 · 建立 15 天前 · Objective-C · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/danveloper--flash-moe");
@@ -71,13 +71,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> 在小型筆記型電腦上運行 397 億參數的模型。
+> 在小型筆記型電腦上運行 3970 億參數的模型，實現高效能推論。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (221 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 13 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要在 MacBook Pro 上運行大型 AI 模型但不想依賴 Python 的開發者。
-> **一句話重點** 這個專案最厲害的不是功能，而是它證明了在資源有限的環境中運行大型模型的可能性，並且不依賴 Python 的設計讓它更具效率。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (211 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 14 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要在 MacBook Pro 上運行大型 AI 模型但不想使用 Python 的開發者。
+> **一句話重點** 這個專案展示了如何在有限的硬體上運行大型模型，並且不依賴於傳統的 Python 環境。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,112 +101,102 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習、10 小時整合，得到高效能推理的效果，值得考慮。
+> **結論** 花 5 小時學習，3 小時整合，得到高效能推論，值得一試。
 
 > [!abstract] 核心創新
-> 使用純 C 和 Metal 實現的推理引擎，能在 MacBook Pro 上運行 397 億參數的模型，無需 Python 和其他框架。
+> 使用純 C 和 Metal 實現的推論引擎，能在小型筆記型電腦上運行 397B 參數模型。
 
 ## 專案簡介
 
-Flash-MoE 是一個用於在 MacBook Pro 上運行 397 億參數 Mixture-of-Experts 模型的推理引擎，能達到每秒 4.4+ 個 token 的速度，並且不依賴 Python 或其他框架。該引擎使用純 C 和 Metal 實現，並透過自定義的 Metal 計算管道從 SSD 流式傳輸 209GB 的模型。核心機制包括 SSD 專家流式傳輸、FMA 優化的去量化內核和手寫的 Metal 計算著色器，這些設計使得模型在運行時能夠有效地管理內存和計算資源。使用者可以透過簡單的命令行指令來進行推理，例如 `./infer --prompt "Explain quantum computing" --tokens 100`。這個工具的賣點在於其高效能和低延遲，適合需要在資源有限的環境中運行大型模型的開發者。
+Flash-MoE 是一個用於在 MacBook Pro 上運行 3970 億參數 Mixture-of-Experts 模型的推論引擎，能達到每秒 4.4+ 個 token 的速度。這個專案的核心在於使用純 C 和 Metal 實現，避免了 Python 和其他框架的依賴，這樣的設計使得性能更為優化，尤其是在 SSD 流式讀取和 GPU 計算方面。具體來說，模型的權重從 NVMe SSD 讀取，並通過 GCD 並行處理，僅加載每層的 K=4 個活躍專家，這樣的設計減少了記憶體的使用。使用 4-bit 專家配置時，性能達到 4.36 tok/s，並且支持完整的工具調用。技術上，這個專案利用了 FMA 優化的去量化內核，並且手動編寫 Metal compute shaders 來進行矩陣向量乘法和注意力計算，這些都顯著提升了運算效率。
 
-與其他工具相比，Flash-MoE 在不需要額外的 Python 環境下，直接利用 Apple 硬體的優勢，實現了更快的推理速度和更低的內存使用。這使得它在小型設備上運行大型模型時，能夠達到更高的效能，尤其是在需要即時響應的應用場景中。實際使用中，使用者可能會面臨如模型權重文件缺失等問題，但社群的活躍度和開發者的支持有助於快速解決這些問題。整體而言，這是一個適合需要高效能推理的開發者的工具，特別是在資源受限的情況下。
+與其他類似工具相比，Flash-MoE 的優勢在於其高效的資源利用和無需額外的 Python 環境，適合需要在有限硬體上運行大型模型的開發者。實際使用中，使用者可能會遇到模型權重文件缺失的問題，這在 GitHub Issues 中有反映。整體來看，這是一個適合對性能有高要求的開發者使用的專案，尤其是在小型團隊或個人項目中。預計未來會持續優化性能和擴展功能。
 
-**技術棧**：`C` · `Objective-C` · `Metal` · `Python`
+**技術棧**：`C` · `Objective-C` · `Metal` · `Python` · `Shell`
 
 ## 重點功能
 
-- SSD 專家流式傳輸 — 透過並行 `pread()` 從 NVMe SSD 按需讀取專家權重，僅加載每層的 K=4 活躍專家。
-- FMA 優化的去量化內核 — 內部循環重組數學運算，讓 GPU 的融合乘加單元能在一個指令中完成去量化和乘法運算，速度提升 12%。
-- 手寫 Metal 計算著色器 — 包含 4-bit 和 2-bit 去量化矩陣-向量乘法、融合 SwiGLU 激活、RMS 正規化等，實現高效能計算。
-- 延遲 GPU 專家計算 — 提交 CMD3 而不等待，讓 GPU 在 CPU 準備下一層時執行計算，提升效率。
-- 加速 BLAS 用於線性注意力 — 使用 `cblas_sscal`, `cblas_sgemv`, 和 `cblas_sger` 進行狀態矩陣更新，速度提升 64%。
+- SSD 專家流式讀取 — 專家權重從 NVMe SSD 按需讀取，僅加載活躍專家，減少記憶體使用。
+- FMA 優化的去量化內核 — 內部運算重組以提升性能，達到 12% 的速度提升。
+- 手動編寫的 Metal compute shaders — 包含多種優化的矩陣向量乘法和注意力計算，提升運算效率。
+- 支持完整工具調用 — 在 4-bit 配置下，能夠進行高品質的工具調用。
+- 高效能推論 — 在 MacBook Pro 上達到每秒 4.4+ 個 token 的速度，適合實際應用。
 
 ## 快速開始
 
-1. 進入 metal_infer 目錄
+1. 克隆專案
 ```bash
-cd metal_infer
+git clone https://github.com/danveloper/flash-moe.git
 ```
-2. 編譯推理引擎
+2. 進入專案目錄
+```bash
+cd flash-moe
+```
+3. 編譯專案
 ```bash
 make
 ```
-3. 運行 4-bit 推理
+4. 運行推論
 ```bash
-./infer --prompt "Explain quantum computing" --tokens 100
-```
-4. 運行 2-bit 推理（速度更快但不支持工具調用）
-```bash
-./infer --prompt "Explain quantum computing" --tokens 100 --2bit
-```
-5. 運行互動聊天模式
-```bash
-./chat
-```
-
-## 程式碼範例
-
-```objective-c
-{
-  "前置條件": "需要 packed_experts/ 目錄",
-  "指令": "./infer --prompt \"Explain quantum computing\" --tokens 100",
-  "預期輸出": "返回關於量子計算的解釋。"
-}
+./flash-moe model_weights.bin
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 14 天內累積 3092 stars（221/天），forks 351（11.4%），顯示出強勁的增長潛力。作者 danveloper 以其在 AI 和計算領域的經驗，成功解決了在小型設備上運行大型模型的挑戰，這在過去是個棘手的問題。之前的解決方案往往需要依賴 Python 和繁重的框架，導致性能瓶頸。此專案的出現正好填補了這一空白，並且其技術細節和實驗結果在社群中引發了廣泛的討論和興趣。
+> 建立 15 天內累積 3170 stars（211/天），forks 365（11.5%），顯示出強烈的社群興趣。這個專案由 danveloper 開發，他在 AI 和高效能計算領域有豐富經驗。Flash-MoE 解決了在小型硬體上運行大型模型的痛點，之前的方案往往需要高性能伺服器或複雜的環境設置。近期的推文和討論也引起了廣泛的關注，特別是在開源社群中。技術上，Apple 的硬體架構和 Metal API 的進步使得這樣的實現成為可能。高達 11.5% 的 forks/stars 比率顯示出許多開發者對此專案的實際修改和使用意圖。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 MacBook Pro 上運行大型 AI 模型但不想依賴 Python 的開發者。
+**目標受眾**：需要在 MacBook Pro 上運行大型 AI 模型但不想使用 Python 的開發者。
 
 > [!example] 使用場景
-> - AI 開發者用它在 MacBook Pro 上運行大型模型，因為它能在不依賴 Python 的情況下，達到每秒 4.4+ 個 token 的推理速度。
-> - 研究人員用它進行模型推理實驗，因為其提供的 SSD 流式傳輸技術能有效管理大規模模型的內存使用。
-> - 獨立開發者用它來開發即時響應的 AI 應用，因為其高效能和低延遲特性使得在資源有限的環境中也能運行大型模型。
+> - AI 研究者用它來在 MacBook Pro 上運行大型語言模型，因為它能在不依賴 Python 的情況下提供高效能推論。
+> - 獨立開發者用它來測試 Mixture-of-Experts 模型的性能，因為它能在 48GB RAM 的環境下運行 397B 參數模型。
+> - 小型團隊用它來開發 AI 驅動的應用，因為它的設計使得在筆記型電腦上運行大型模型變得可行且高效。
 
 ## 架構分析
 
-Flash-MoE 的架構設計以高效能為核心，使用純 C 和 Metal 來實現推理引擎，避免了 Python 的性能損失。資料流方面，專家權重從 SSD 按需流式傳輸，並且透過 GCD 並行處理來提高效率。每層的專家計算是延遲提交的，這樣可以在 CPU 準備下一層的同時，GPU 進行計算，減少了等待時間。
+Flash-MoE 採用純 C 和 Metal 的架構，設計目標是實現高效能推論，特別是在 MacBook Pro 上。模型的權重從 SSD 流式讀取，利用 GCD 並行處理，這樣的設計減少了記憶體的使用並提高了性能。每層的 K=4 個活躍專家按需加載，這樣的流式設計使得整體運行效率更高。
 
-這種設計使得整體延遲降低，並且在資源有限的環境中能夠達到最佳性能。選擇 Metal 作為計算平台是因為其能充分利用 Apple 硬體的優勢，雖然這樣的選擇可能限制了跨平台的兼容性，但在 Apple 生態系統中卻能獲得最佳的效能。整體而言，這樣的設計使得 Flash-MoE 在運行大型模型時，能夠在小型設備上實現高效能的推理。
+選擇 Metal 作為計算框架的原因在於其對 Apple 硬體的優化，這樣可以充分利用 GPU 的計算能力。這樣的設計雖然提高了性能，但也增加了開發的複雜度，因為需要手動編寫計算著色器。整體架構的擴展性受到硬體限制，未來可能需要考慮更高效的硬體支持以進一步提升性能。
 
 ## 技術深入分析
 
-Flash-MoE 的核心技術機制包括 SSD 專家流式傳輸和 FMA 優化的去量化內核，這些技術使得模型在運行時能夠有效地管理內存和計算資源。SSD 流式傳輸透過 GCD 並行處理來加速專家權重的讀取，這樣的設計避免了傳統模型在大規模數據處理時的瓶頸。效能方面，該模型能在 MacBook Pro 上達到每秒 4.4+ 個 token 的速度，這在同類工具中表現出色。選擇 C 和 Metal 作為開發語言和平台，能夠充分利用 Apple 硬體的優勢，雖然這樣的選擇可能限制了跨平台的兼容性，但在 Apple 生態系統中卻能獲得最佳的效能。技術風險方面，這個專案的設計決策可能在未來的擴展中面臨挑戰，特別是在處理更大規模的模型時，可能需要重新考慮內存管理和計算效率的平衡。整合方面，Flash-MoE 與主流的開發工具鏈（如 Xcode）相容性良好，但在 CI/CD pipeline 的整合可能需要額外的配置。
+Flash-MoE 的核心技術機制在於其使用純 C 和 Metal 實現的推論引擎，這使得它能夠在 MacBook Pro 上運行 397B 參數的模型。模型的架構包含 60 層 transformer，並且每層有 512 個專家，這樣的設計使得模型能夠在每次推論中動態選擇 K=4 個活躍專家。效能上，這個專案能達到每秒 4.4+ 個 token 的速度，這在小型硬體上是相當驚人的。選擇 Metal 作為計算框架是因為它能夠充分發揮 Apple 硬體的性能，這樣的選擇雖然增加了開發的複雜度，但也帶來了更高的運算效率。設計上，這個專案的依賴樹相對簡單，主要依賴於 C 和 Metal，這使得它在部署時不需要額外的庫或框架。技術風險方面，未來在擴展性上可能會遇到瓶頸，尤其是在硬體資源有限的情況下。整合方面，這個專案與現有的開發工具鏈相容性良好，但在 CI/CD pipeline 的整合上可能需要額外的適配。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件品質良好，提供了清晰的安裝指引和範例。安裝過程相對順暢，但對於新手來說可能需要一些技術背景。文件目前僅提供英文版本，缺乏多語言支持。
+> README 文件清晰，包含了必要的安裝步驟和使用範例。安裝過程相對順暢，但對於新手來說，可能會遇到一些配置上的挑戰。文件目前僅提供英文版本，缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 高效能推理 — 在 MacBook Pro 上能達到每秒 4.4+ 個 token 的速度。
-> - 無需 Python 環境 — 使用純 C 和 Metal 實現，減少了運行時的性能損失。
-> - SSD 流式傳輸 — 透過按需讀取專家權重，減少了內存使用並提高了計算效率。
+> - 高效能推論，能在小型筆記型電腦上運行大型模型。
+> - 無需 Python 環境，減少了依賴性和配置複雜度。
+> - 手動優化的計算內核，提供更快的運算速度。
+> - 支持完整的工具調用功能，適合實際應用。
 
 > [!danger] 缺點
-> - 僅限於 Apple 硬體 — 不支持其他平台，限制了使用範圍。
-> - 2-bit 模型的 JSON 輸出不可靠 — 需要使用 4-bit 配置以獲得最佳性能。
-> - 安裝和配置過程相對複雜 — 需要一定的技術背景才能順利運行。
+> - 僅支援特定硬體，對於其他平台無法運行。
+> - 需要較高的記憶體配置，限制了使用範圍。
+> - 缺乏詳細的使用文檔，對新手不友好。
+> - 在 2-bit 配置下的 JSON 輸出不可靠，影響工具調用。
 
 > [!warning] 注意事項
-> - 需要 macOS 26.2 或以上版本。
-> - 僅支持在 Apple Silicon 硬體上運行，其他平台不兼容。
-> - 2-bit 模型可能導致 JSON 輸出不可靠，建議使用 4-bit 配置以獲得最佳性能。
+> - 僅支援 MacBook Pro 硬體，對於其他平台可能無法運行。
+> - 需要 48GB RAM，對於低於此配置的設備無法運行。
+> - 2-bit 配置下的 JSON 輸出不可靠，可能影響工具調用功能。
+> - 目前缺乏詳細的使用文檔，可能對新手造成困難。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於數據同步和傳輸，而 Flash-MoE 專注於大型模型的推理性能。 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | NemoClaw 主要針對 NVIDIA 硬體優化，而 Flash-MoE 則專為 Apple 硬體設計，無需依賴 NVIDIA 的生態系統。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步，而非大型模型推論，適合不同場景。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 使用 NVIDIA 硬體優化，對於需要 GPU 加速的場景更為合適。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供不同的模型架構，適合需要多樣化模型的使用者。 |
 
 ## 替代方案決策
 
@@ -214,16 +204,16 @@ Flash-MoE 的核心技術機制包括 SSD 專家流式傳輸和 FMA 優化的去
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | NemoClaw 專注於 NVIDIA 硬體優化，適合需要高效能推理的用戶，而 Flash-MoE 則專為 Apple 硬體設計，無需依賴 NVIDIA 的生態系統。 | 如果你的團隊已經在使用 NVIDIA 硬體並需要進行大規模的模型推理，NemoClaw 會是更好的選擇。 | medium，因為需要重新配置環境和依賴。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | parsync 專注於數據同步和傳輸，而 Flash-MoE 專注於大型模型的推理性能，兩者的應用場景有所不同。 | 如果你的需求主要是數據同步而非模型推理，parsync 會是更合適的選擇。 | low，因為兩者的技術棧和使用方式差異不大。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 使用 NVIDIA 硬體優化，專注於 GPU 加速的推論，適合需要高性能的場景。 | 如果你的團隊已經在使用 NVIDIA 硬體並需要進行大規模推論，這個工具會更合適。 | medium，因為需要重新調整模型和環境配置。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供不同的模型架構，專注於多樣化的模型選擇，適合需要多樣化模型的使用者。 | 如果你的應用需要多種模型架構的支持，這個工具會更適合。 | low，因為它的設計較為靈活，易於整合。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **flash-moe** | **NemoClaw** | **parsync** |
+> | 維度 | **flash-moe** | **NemoClaw** | **Shadowbroker** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | NemoClaw 專注於 NVIDIA 硬體優化，適合需要高效能推理的用戶，而 Flash-MoE 則專為 Apple 硬體設計，無需依賴 NVIDIA 的生態系統。 | parsync 專注於數據同步和傳輸，而 Flash-MoE 專注於大型模型的推理性能，兩者的應用場景有所不同。 |
-> | 遷移成本 | - | medium，因為需要重新配置環境和依賴。 | low，因為兩者的技術棧和使用方式差異不大。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 NVIDIA 硬體並需要進行大規模的 | 如果你的需求主要是數據同步而非模型推理，parsync 會是 |
+> | 技術路線 | 本專案 | 使用 NVIDIA 硬體優化，專注於 GPU 加速的推論，適合需要高性能的場景。 | 提供不同的模型架構，專注於多樣化的模型選擇，適合需要多樣化模型的使用者。 |
+> | 遷移成本 | - | medium，因為需要重新調整模型和環境配置。 | low，因為它的設計較為靈活，易於整合。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 NVIDIA 硬體並需要進行大規模推 | 如果你的應用需要多種模型架構的支持，這個工具會更適合。 |
 
 ## 成熟度評估
 
@@ -234,50 +224,43 @@ Flash-MoE 的核心技術機制包括 SSD 專家流式傳輸和 FMA 優化的去
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，但不建議用在生產環境的核心路徑上。
+> 適合個人或小型專案試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 模型權重文件缺失會導致無法運行
-  - 解法：確保 `model_weights.bin` 文件存在於正確的目錄中。
-- [MEDIUM] 2-bit 模型的 JSON 輸出不可靠
-  - 解法：使用 4-bit 配置以獲得最佳性能。
-- [MEDIUM] 安裝過程中可能會遇到編譯錯誤
-  - 解法：檢查所有依賴是否正確安裝，並確保使用正確的 macOS 版本。
+- **[HIGH]** 模型權重文件缺失，導致無法運行
+  - 解法：確保模型權重文件存在於正確路徑
+- [MEDIUM] 2-bit 配置下的 JSON 輸出不可靠
+  - 解法：使用 4-bit 配置以確保工具調用的可靠性
+- [MEDIUM] 缺乏詳細的使用文檔，可能造成使用困難
+  - 解法：參考 GitHub Issues 中的討論以獲取解決方案
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊開發 AI 應用 | 非常適合 | 高效能推理和低延遲特性使其在資源有限的環境中表現出色。 |
-| 大型企業的生產環境 | 不適合 | 目前仍處於 beta 階段，穩定性和生產就緒性不足。 |
-| 研究機構進行模型推理實驗 | 適合 | 提供高效能且無需依賴 Python 的推理引擎，適合快速實驗。 |
-| 獨立開發者進行個人專案 | 非常適合 | 能在小型設備上運行大型模型，且安裝過程相對簡單。 |
+| 小型團隊開發 AI 驅動的應用 | 非常適合 | 能在有限硬體上運行大型模型，適合小型團隊的需求。 |
+| 個人開發者進行 AI 研究 | 適合 | 提供高效能推論，能在筆記型電腦上運行大型模型。 |
+| 大型企業的生產環境 | 不適合 | 目前尚未達到生產環境的穩定性和可靠性。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習、10 小時整合，得到高效能推理的效果，值得考慮。
+> 花 5 小時學習，3 小時整合，得到高效能推論，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，依賴的庫和工具鏈也相對安全。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-Flash-MoE 最常與 Apple 的開發工具（如 Xcode）搭配使用，適合在開發和測試階段進行模型推理。在一個使用 Xcode 的專案中，可以透過簡單的命令行指令來運行推理，具體做法是編譯後使用 `./infer` 指令進行測試。與主流 CI 工具（如 GitHub Actions）相容性良好，但在整合過程中可能需要額外的配置來處理依賴問題。整合的摩擦點主要在於需要確保所有依賴的正確版本，並且可能會遇到編譯錯誤。
+> 低風險：該工具不需要高權限，並且不存取敏感資料。依賴鏈相對簡單，無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -342,7 +325,7 @@ Flash-MoE 最常與 Apple 的開發工具（如 Xcode）搭配使用，適合在
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 351 |
+| Forks | 365 |
 | Open Issues | 16 |
 | Issue 解決率 | 16% (3 closed) |
 | 最後推送 | 2026-03-19 |
@@ -368,8 +351,7 @@ Flash-MoE 最常與 Apple 的開發工具（如 Xcode）搭配使用，適合在
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者對問題的回應速度良好。
-**連結**：[文件](https://github.com/danveloper/flash-moe)
+**社群活躍度**：社群活躍度中等，存在一些未解決的問題和討論。
 
 ## 開發動態
 
@@ -381,10 +363,10 @@ Flash-MoE 最常與 Apple 的開發工具（如 Xcode）搭配使用，適合在
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
+> | [#19](https://github.com/danveloper/flash-moe/issues/19) | Please add a license to this repo | 2 | 0 |
 > | [#15](https://github.com/danveloper/flash-moe/issues/15) | I did get it working, with a lot of pain, if your interested | 2 | 3 |
 > | [#8](https://github.com/danveloper/flash-moe/issues/8) | Cannot open model_weights.bin: No such file or directory | 2 | 2 |
 > | [#20](https://github.com/danveloper/flash-moe/issues/20) | Other Qwen models | 1 | 0 |
-> | [#19](https://github.com/danveloper/flash-moe/issues/19) | Please add a license to this repo | 1 | 0 |
 
 ## README 摘錄
 
@@ -537,7 +519,7 @@ Flash-MoE 最常與 Apple 的開發工具（如 Xcode）搭配使用，適合在
 
 ## 延伸閱讀
 
-相關概念：[[LLM 推論]] · [[效能優化]] · [[容器化]]
+相關概念：[[深度學習]] · [[推論優化]] · [[Mixture-of-Experts]]
 
 相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[MoonshotAI--Attention-Residuals|MoonshotAI/Attention-Residuals]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[VoltAgent--awesome-codex-subagents|VoltAgent/awesome-codex-subagents]]
 
@@ -581,7 +563,7 @@ Flash-MoE 最常與 Apple 的開發工具（如 Xcode）搭配使用，適合在
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["LLM 推論","效能優化","容器化"];
+> const concepts = ["深度學習","推論優化","Mixture-of-Experts"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "danveloper--flash-moe" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

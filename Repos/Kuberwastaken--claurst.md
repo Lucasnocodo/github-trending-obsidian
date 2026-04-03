@@ -7,9 +7,9 @@ language: Rust
 license: N/A
 description: "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries"
 homepage: "https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it"
-stars: 7380
-stars_per_day: 3690
-forks: 7214
+stars: 7389
+stars_per_day: 3695
+forks: 7216
 open_issues: 4
 created: 2026-03-31
 pushed_at: 2026-04-02
@@ -17,7 +17,7 @@ first_seen: 2026-04-02
 week: "2026-W14"
 month: "2026-04"
 category: "開發工具"
-subcategory: "AI 工具"
+subcategory: "CLI 工具"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-02
-use_case: "提供一個用 Rust 實作的 Terminal Coding Agent，並分析 Claude Code 的代碼洩漏與發現。"
+use_case: "提供一個用 Rust 重寫的 Claude Code 行為的終端編碼代理。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 2
 next_review: "2026-04-06"
 contributor_count: 1
 engagement: "high"
-issue_close_rate: 53
-repo_size_kb: 1904
+issue_close_rate: 78
+repo_size_kb: 2254
 readme_length: 9835
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-02"
-star_history: "2026-04-02:6592,2026-04-02:6612,2026-04-03:7380"
+star_history: "2026-04-02:6592,2026-04-02:6612,2026-04-03:7380,2026-04-03:7389"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "claurst"
   - "Kuberwastaken/claurst"
-  - "提供一個用 Rust 實作的 Terminal Coding Agent，並分析 Claude Code 的代碼洩漏與發"
+  - "提供一個用 Rust 重寫的 Claude Code 行為的終端編碼代理。"
 ---
 
 # claurst
 
-**6.6k** stars · **6.6k** stars/天 · 建立 1 天前 · Rust · 未標註授權
+**7.4k** stars · **3.7k** stars/天 · 建立 2 天前 · Rust · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/Kuberwastaken--claurst");
@@ -71,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> 提供一個用 Rust 實作的 Terminal Coding Agent，並分析 Claude Code 的代碼洩漏與發現。
+> 提供一個用 Rust 重寫的 Claude Code 行為的終端編碼代理。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (6.6k stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (3.7k stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 對 AI 代理開發有興趣的獨立開發者或小型團隊。
-> **一句話重點** 這個專案展示了如何在法律框架內合法地重現 AI 行為，為開發者提供了一個可靠的工具。
+> **適合** 希望在高性能環境中使用 AI 代理的 Rust 開發者。
+> **一句話重點** 這個專案展示了如何在法律框架內，利用清房工程重寫一個複雜的 AI 系統。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Kuberwastaken--claurst");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "AI 工具" && p.file.name !== "Kuberwastaken--claurst" && p.status !== "archived")
+>     .where(p => p.subcategory === "CLI 工具" && p.file.name !== "Kuberwastaken--claurst" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,114 +95,106 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 AI 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 CLI 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習，5 小時整合，得到高效能的 AI 代理工具，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~20h · **綁定風險** medium
+> **結論** 花 20 小時學習，10 小時整合，得到高性能的 AI 代理系統，值得投入。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於其清潔室工程方法，合法地重現 Claude Code 的行為而不侵犯版權。
+> 這個專案的核心創新在於使用清房工程的方式合法重寫 Claude Code 的行為。
 
 ## 專案簡介
 
-這個專案的核心在於用 Rust 重新實作 Claude Code 的行為，並不包含原始的 TypeScript 代碼。過程分為兩個階段：首先，AI 代理分析原始代碼並生成行為規範，然後另一個 AI 代理根據這些規範實作出符合 Rust 語法的代碼。這樣的設計遵循了法律先例，確保不侵犯版權。專案中包含許多未公開的 API 特性，如 'interleaved-thinking' 和 'context-1m'，這些特性在原始代碼中並未公開。使用 Rust 的原因在於其高效能和安全性，特別適合開發需要高效能的應用程式。專案的依賴性相對輕量，主要依賴 Rust 的標準庫和一些輔助庫。
+這個專案是對 Claude Code 行為的 Rust 重寫，並不包含原始的 TypeScript 代碼。其核心機制分為兩個階段：首先，AI 代理分析原始代碼並生成行為規範；接著，另一個 AI 代理根據這些規範實作出符合 Rust 語法的代碼。這樣的設計遵循了法律上的清房工程原則，避免了直接抄襲原始代碼的風險。專案中使用了編譯時的功能標誌來控制不同的功能，這使得在不同的構建中可以靈活開啟或關閉某些功能，從而達到優化性能的效果。與其他同類工具相比，這個專案的特點在於其使用 Rust 語言，這意味著它在性能和內存管理上有更好的表現，特別是在高並發的情況下。
 
-與其他類似工具相比，如 AlpinDale/parsync 和 BigBodyCobain/Shadowbroker，這個專案的獨特之處在於其清晰的法律合規性和對原始行為的忠實重現。實際使用中，這個工具能夠處理複雜的 AI 代理行為，但可能在特定功能上仍有待完善。專案目前處於早期階段，未來可能會持續增加功能和改進性能。適合小型團隊或獨立開發者進行實驗和開發，尤其是對 AI 代理有興趣的開發者。總體而言，這是一個值得關注的專案，未來可能會在 AI 開發領域中扮演重要角色。
+相較於使用 JavaScript 的工具，Rust 的靜態類型系統能夠在編譯階段捕捉更多的錯誤，這對於大型專案尤其重要。使用者在實際操作中可能會遇到功能開關的管理問題，因為某些功能需要在編譯時明確設定，這可能會增加初學者的學習成本。這個專案目前仍在快速發展中，未來可能會加入更多的功能和改進。對於需要高性能和穩定性的開發者來說，這是一個值得考慮的選擇，但對於小型專案或快速原型開發者來說，可能會因為學習曲線而感到不便。
 
-**技術棧**：`Rust`
+**技術棧**：`Rust 1.60` · `Cargo`
 
 ## 重點功能
 
-- 行為規範生成 — 使用 AI 代理分析原始代碼並生成行為規範，確保不侵犯版權。
-- Rust 實作 — 完全用 Rust 實作，提供高效能和安全性。
-- API 特性揭露 — 包含多個未公開的 API 特性，如 'interleaved-thinking' 和 'context-1m'。
-- 清晰的法律合規性 — 遵循法律先例，確保開發過程中的合規性。
-- 輕量依賴性 — 主要依賴 Rust 標準庫，保持專案的輕量化。
+- 清房工程實作 — 透過 AI 生成行為規範並用 Rust 實作，避免法律風險。
+- 編譯時功能標誌 — 使用功能標誌來靈活控制不同的功能，優化性能。
+- 多代理協作系統 — 支持多個 AI 代理之間的協作，提升工作效率。
+- 內建的伴侶系統 — 提供 Tamagotchi 風格的伴侶系統，增加互動性。
+- 高效的記憶整合引擎 — 透過背景記憶整合提升系統的長期記憶能力。
 
 ## 快速開始
 
 1. 克隆專案
 ```bash
-git clone https://github.com/Kuberwastaken/claurst.git
+git clone https://github.com/Kuberwastaken/claude-code.git
 ```
 2. 進入專案目錄
 ```bash
-cd claurst
+cd claude-code
 ```
 3. 編譯專案
 ```bash
 cargo build
 ```
-4. 運行專案
+4. 運行 CLI 工具
 ```bash
 cargo run
-```
-
-## 程式碼範例
-
-```rust
-# 前置條件：需要 Rust 環境
-fn main() {
-    println!("Hello, Claude!");
-}
-# 預期輸出：Hello, Claude!
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 6612 stars（6612/天），forks 高達 6844（103.5%），顯示出極高的社群參與度。作者 Kuberwastaken 以其快速的開發速度和清晰的法律合規性吸引了大量關注。這個專案解決了開發者對於 Claude Code 行為的需求，並且提供了一個合法的替代方案。最近的推文和討論也引發了對於 AI 代理的熱烈討論，進一步推動了專案的曝光率。高達 103.5% 的 forks/stars 比率顯示出許多開發者對於這個專案的實際修改和應用，代表著強烈的實際使用意圖。
+> 建立 2 天就累積 7389 stars（3695/天），forks 7216（97.7%），這顯示出極高的興趣和參與度。作者 Kuberwastaken 以其對 AI 和 Rust 的專業知識而聞名，這個專案解決了開發者在使用 Claude Code 時面臨的法律和技術挑戰，提供了一個合法且高效的替代方案。近期的代碼洩漏事件引發了社群的廣泛關注，促使更多開發者探索這個重寫版本的潛力。這個工具的出現也反映了 Rust 在 AI 開發中的逐漸普及，特別是在需要高效能和安全性的場景中。forks/stars 比率高達 97.7%，顯示出許多人對這個專案的實際修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：對 AI 代理開發有興趣的獨立開發者或小型團隊。
+**目標受眾**：希望在高性能環境中使用 AI 代理的 Rust 開發者。
 
 > [!example] 使用場景
-> - 獨立開發者用它來快速實現 AI 代理功能，因為 Rust 的性能優勢能夠支持高效的運算需求。
-> - 小型團隊用它來開發內部工具，因為其清晰的行為規範能夠加速開發流程。
-> - 研究人員用它來分析 AI 行為，因為專案提供了詳細的 API 特性和行為規範，便於進行深入研究。
+> - 後端工程師用它來重構現有的 AI 代理系統，因為 Rust 的性能優勢能夠顯著提升系統的響應速度。
+> - AI 研究者用它來實驗新的功能和行為，因為清房工程的設計讓他們能夠在不違反版權的情況下進行創新。
+> - 開發者用它來學習 Rust 語言的應用，因為這個專案提供了實際的代碼範例和功能實現的參考。
 
 ## 架構分析
 
-專案採用清潔室工程的架構模式，分為行為規範生成和實作兩個階段。行為規範生成階段由 AI 代理分析原始代碼，確保不直接引用任何原始代碼，這樣的設計避免了版權問題。實作階段則是根據生成的規範用 Rust 實作，這樣的選擇使得代碼更具可讀性和維護性。
+這個專案採用 Rust 語言實作，主要分為兩個部分：行為規範和實作。行為規範由 AI 生成，確保不直接引用原始代碼，這樣的設計降低了法律風險。實作部分則專注於用 Rust 實現這些規範，利用 Rust 的性能優勢來提升系統的效率。
 
-資料流方面，從行為規範到 Rust 實作的轉換過程中，確保了行為的一致性。選擇 Rust 作為開發語言，帶來了高效能和安全性，但也可能增加學習曲線。整體架構的設計使得專案能夠在法律框架內運作，這是其他類似專案所缺乏的優勢。
+資料流方面，從行為規範到代碼實作的過程中，使用了編譯時的功能標誌來控制不同功能的開啟與關閉，這樣的設計使得系統在不同的運行環境中能夠靈活調整。選擇 Rust 而非其他語言如 Python，主要是因為 Rust 在性能和內存管理上的優勢，特別是在高並發的情況下。這樣的選擇雖然增加了學習成本，但長期來看能夠提供更穩定的系統性能。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於清潔室工程，通過兩個階段的過程來確保不侵犯版權。行為規範生成使用 AI 代理分析原始代碼，這樣的設計避免了直接引用原始代碼的風險。效能方面，Rust 的高效能使得專案能夠處理複雜的 AI 行為，並且在記憶體管理上提供了優勢。選擇 Rust 而非其他語言如 Python，主要是因為其在性能和安全性上的優勢，雖然這也增加了學習曲線。技術風險方面，清潔室工程的實施需要嚴格遵循法律規範，否則可能面臨法律風險。整合方面，與現有的 Rust 生態系統相容性良好，能夠輕鬆整合到現有的開發流程中。整體而言，這個專案在技術上具有創新性，並且在法律合規性上提供了新的思路。
+這個專案的核心技術機制在於清房工程的實作，通過 AI 生成行為規範，並用 Rust 語言進行實作。這樣的設計不僅避免了法律風險，還能利用 Rust 的性能優勢來提升系統的效率。專案能夠處理高並發請求，並且在內存管理上表現出色，這對於需要高效能的 AI 系統來說至關重要。選擇 Rust 而非其他語言如 Python，主要是因為 Rust 的靜態類型系統能夠在編譯階段捕捉更多的錯誤，這對於大型專案尤其重要。在設計取捨方面，雖然 Rust 的學習曲線較陡峭，但長期來看能夠提供更穩定的系統性能。技術風險方面，隨著專案的擴展，可能會面臨依賴管理和版本控制的挑戰。整合到現有的開發流程中，對於熟悉 Rust 的團隊來說相對容易，但對於不熟悉的團隊則需要額外的學習時間。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且詳細，提供了良好的指導和範例。安裝過程相對順暢，但需要一定的 Rust 環境配置。文件目前僅提供英文版本，可能對非英語使用者造成一定的障礙。
+> README 文件清晰且包含詳細的使用說明，安裝過程相對順暢，但對於初學者來說，Rust 的學習曲線可能會造成一些困難。文件目前僅提供英文版本，缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 法律合規性強，避免了版權問題。
-> - 高效能的 Rust 實作，適合處理複雜的 AI 行為。
-> - 清晰的行為規範，便於開發和維護。
+> - 高性能 — Rust 提供優越的執行效率和內存管理。
+> - 法律風險低 — 清房工程的設計避免了版權問題。
+> - 靈活的功能開關 — 編譯時功能標誌讓使用者可以根據需求調整功能。
 
 > [!danger] 缺點
-> - 功能尚在開發中，某些特性可能不完整。
-> - 社群支持仍在建立中，問題解決資源有限。
-> - 對於大型資料集的處理能力可能需要進一步優化。
+> - 學習曲線陡峭 — 對於不熟悉 Rust 的開發者來說，學習成本較高。
+> - Windows 支援有限 — 目前主要針對 Linux 和 macOS 開發。
+> - 功能仍在開發中 — 可能會遇到不穩定的情況。
 
 > [!warning] 注意事項
-> - 目前功能仍在持續開發中，某些 API 特性尚未實現。
-> - 對於大型資料集的處理能力可能有限，需進一步優化。
-> - 社群支持仍在建立中，可能缺乏即時的問題解決資源。
+> - 僅支援 Rust 1.60+。
+> - 需要在 Linux 或 macOS 環境下運行，Windows 支援有限。
+> - 對於初學者來說，學習 Rust 的曲線較陡峭。
+> - 目前功能仍在持續開發中，可能會有不穩定的情況。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步，而本專案專注於 AI 代理行為的實作，適合不同的使用場景。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供更廣泛的功能集，但缺乏本專案的法律合規性和行為重現特性。 |
+| [Kuberwastaken/claude-code](https://github.com/Kuberwastaken/claude-code) | 這是原始的 Claude Code 實作，使用 TypeScript，適合快速開發和原型，但在性能和安全性上不如 Rust 實作。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這是一個用於並行處理的工具，雖然功能不同，但在性能優化上有相似的目標。 |
+| [FreedomIntelligence/OpenClaw](https://github.com/FreedomIntelligence/OpenClaw) | 這是一個開源的 AI 代理系統，雖然功能上有重疊，但並未專注於清房工程的法律問題。 |
 
 ## 替代方案決策
 
@@ -210,16 +202,16 @@ fn main() {
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步，而本專案專注於 AI 代理行為的實作，適合不同的使用場景。 | 如果你的需求主要是資料同步，且不需要 AI 行為的複雜性。 | low，因為兩者的功能範圍不同，轉換過程相對簡單。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供更廣泛的功能集，但缺乏本專案的法律合規性和行為重現特性。 | 如果你需要更多功能和靈活性，並且不在意法律合規性問題。 | medium，因為需要重新設計部分功能以符合新的架構。 |
+| [Kuberwastaken/claude-code](https://github.com/Kuberwastaken/claude-code) | 這是原始的 Claude Code 實作，使用 TypeScript，適合快速開發和原型，但在性能和安全性上不如 Rust 實作。 | 如果你的團隊已經熟悉 TypeScript 並且需要快速迭代，這個工具會更合適。 | medium，因為需要將 TypeScript 的邏輯轉換為 Rust。 |
+| [FreedomIntelligence/OpenClaw](https://github.com/FreedomIntelligence/OpenClaw) | 這是一個開源的 AI 代理系統，雖然功能上有重疊，但並未專注於清房工程的法律問題。 | 如果你需要一個開源的 AI 代理系統且不考慮法律風險，這個工具會更合適。 | low，因為功能上有相似之處，轉換相對簡單。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **claurst** | **parsync** | **Shadowbroker** |
+> | 維度 | **claurst** | **claude-code** | **OpenClaw** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於資料同步，而本專案專注於 AI 代理行為的實作，適合不同的使用場景。 | 提供更廣泛的功能集，但缺乏本專案的法律合規性和行為重現特性。 |
-> | 遷移成本 | - | low，因為兩者的功能範圍不同，轉換過程相對簡單。 | medium，因為需要重新設計部分功能以符合新的架構。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是資料同步，且不需要 AI 行為的複雜性。 | 如果你需要更多功能和靈活性，並且不在意法律合規性問題。 |
+> | 技術路線 | 本專案 | 這是原始的 Claude Code 實作，使用 TypeScript，適合快速開發和原型，但在性能和安全性上不如 Rust 實作。 | 這是一個開源的 AI 代理系統，雖然功能上有重疊，但並未專注於清房工程的法律問題。 |
+> | 遷移成本 | - | medium，因為需要將 TypeScript 的邏輯轉換為 Rust。 | low，因為功能上有相似之處，轉換相對簡單。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經熟悉 TypeScript 並且需要快速迭代 | 如果你需要一個開源的 AI 代理系統且不考慮法律風險，這個工 |
 
 ## 成熟度評估
 
@@ -230,43 +222,44 @@ fn main() {
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和實驗，但不建議在生產環境中使用。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 某些 API 特性尚未實現，可能導致功能不完整
-  - 解法：持續關注更新以獲取最新功能
-- [MEDIUM] 社群支持有限，問題解決速度可能較慢
-  - 解法：參考文檔和範例進行自助解決
-- **[HIGH]** 對於大型資料集的處理能力可能有限
-  - 解法：考慮使用其他工具進行資料處理
+- [MEDIUM] 某些功能需要在編譯時明確設定，初學者可能會感到困惑。
+  - 解法：參考官方文件中的功能開關說明。
+- **[HIGH]** 在 Windows 環境下運行可能會遇到兼容性問題。
+  - 解法：建議使用 WSL 或在 Linux/macOS 環境下運行。
+- [MEDIUM] 由於專案仍在開發中，某些功能可能會不穩定。
+  - 解法：定期檢查更新，並參與社群討論以獲取最新資訊。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊開發 AI 代理工具 | 非常適合 | 專案提供清晰的行為規範和高效能的實作。 |
-| 獨立開發者進行 AI 研究 | 適合 | Rust 的性能優勢能夠支持複雜的計算需求。 |
-| 大型企業開發商業產品 | 不適合 | 專案仍在開發中，功能不夠完整。 |
+| 小型創業團隊開發 AI 代理系統 | 非常適合 | Rust 的性能優勢能夠提升系統的響應速度，適合高效能需求。 |
+| 大型企業需要穩定的 AI 系統 | 適合 | 清房工程的設計降低了法律風險，適合大規模部署。 |
+| 初學者學習 Rust 語言 | 普通 | 雖然有實際的代碼範例，但學習曲線較陡峭。 |
+| 需要快速原型開發的團隊 | 不適合 | Rust 的開發速度較慢，對於快速迭代不利。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~5 小時 |
+| 學習時間 | ~20 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習，5 小時整合，得到高效能的 AI 代理工具，值得嘗試。
+> 花 20 小時學習，10 小時整合，得到高性能的 AI 代理系統，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：專案不需要高權限，且不存取敏感資料，依賴鏈的信任程度高，適合在 CI/CD 中使用。
+> 低風險：該工具不需要高權限運行，且不會存取敏感資料。依賴鏈的信任程度高，沒有已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -331,40 +324,39 @@ fn main() {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 6.8k |
-| Open Issues | 8 |
-| Issue 解決率 | 53% (9 closed) |
-| 最後推送 | 2026-04-01 |
+| Forks | 7.2k |
+| Open Issues | 4 |
+| Issue 解決率 | 78% (14 closed) |
+| 最後推送 | 2026-04-02 |
 | 建立日期 | 2026-03-31 |
 | 官方網站 | [Link](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it) |
-| Repo 大小 | 1.9 MB |
+| Repo 大小 | 2.2 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Kuberwastaken/claurst) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Kuberwastaken](https://github.com/Kuberwastaken) | 2 |
+> | [@Kuberwastaken](https://github.com/Kuberwastaken) | 5 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，問題回應速度快。
+**社群活躍度**：社群活躍度高，近期有多個問題被快速回應。
 **連結**：[文件](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-01 ~ 2026-04-01）
-> **活躍天數** 1 天 · **最新 commit** Massive TUI improvements
+> [!abstract] 最近 10 次 commit（2026-04-01 ~ 2026-04-02）
+> **活躍天數** 2 天 · **最新 commit** feat: substantial revisions and progess, version cc
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#7](https://github.com/Kuberwastaken/claurst/issues/7) | Did I just see a rugpull here ;P | 4 | 0 |
-> | [#23](https://github.com/Kuberwastaken/claurst/issues/23) | Executing a simple commands give me following | 0 | 0 |
-> | [#22](https://github.com/Kuberwastaken/claurst/issues/22) | Wasn't the agent coordination / swarm mentioned in the READM | 0 | 0 |
-> | [#18](https://github.com/Kuberwastaken/claurst/issues/18) | Is there a roadmap to release it? | 0 | 1 |
-> | [#15](https://github.com/Kuberwastaken/claurst/issues/15) | Is anyone here because how he managed to convert to Rust so  | 0 | 5 |
+> | [#24](https://github.com/Kuberwastaken/claurst/issues/24) | Extend to other provider | 2 | 0 |
+> | [#15](https://github.com/Kuberwastaken/claurst/issues/15) | Is anyone here because how he managed to convert to Rust so  | 0 | 9 |
+> | [#3](https://github.com/Kuberwastaken/claurst/issues/3) | hi people, it was nice seeing you all before dmca | 0 | 2 |
+> | [#2](https://github.com/Kuberwastaken/claurst/issues/2) | SAFE?? | 0 | 2 |
 
 ## README 摘錄
 
@@ -508,19 +500,19 @@ fn main() {
 
 ## 延伸閱讀
 
-相關概念：[[AI 代理]] · [[行為規範]] · [[Rust]]
+相關概念：[[清房工程]] · [[CLI/TUI]] · [[多模態]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
+相關專案：[[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
 
 [GitHub](https://github.com/Kuberwastaken/claurst) · [官方網站](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：AI 工具）
+> [!note]- 直接競品（同子分類：CLI 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "AI 工具" AND file.name != "Kuberwastaken--claurst"
+> WHERE subcategory = "CLI 工具" AND file.name != "Kuberwastaken--claurst"
 > SORT stars DESC
 > ```
 
@@ -552,7 +544,7 @@ fn main() {
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["AI 代理","行為規範","Rust"];
+> const concepts = ["清房工程","CLI/TUI","多模態"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Kuberwastaken--claurst" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
