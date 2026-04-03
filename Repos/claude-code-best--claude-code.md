@@ -7,10 +7,10 @@ language: TypeScript
 license: N/A
 description: "原汁原昧 Claude Code 可运行,可构建版; Typescript 类型全修复; 企业级可靠性; 安全无毒, lock 文件保真, 可直接 bun i; bun run dev 启动"
 homepage: "https://ccb.agent-aura.top/"
-stars: 7914
-stars_per_day: 7914
-forks: 9608
-open_issues: 3
+stars: 10736
+stars_per_day: 5368
+forks: 12099
+open_issues: 11
 created: 2026-03-31
 pushed_at: 2026-04-02
 first_seen: 2026-04-02
@@ -30,8 +30,8 @@ use_case: "提供 Claude Code CLI 工具的反向工程版本，具備企業級�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-05"
+appearances: 2
+next_review: "2026-04-06"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 88
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-02"
-star_history: "2026-04-02:7790,2026-04-02:7914"
+star_history: "2026-04-02:7790,2026-04-02:7914,2026-04-03:10736"
 tags:
   - github
   - "category/開發工具"
@@ -941,4 +941,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-03|2026-04-03]] — 再次上榜，10.7k stars
 - [[2026-04-02|2026-04-02]] — 首次收錄，7.8k stars

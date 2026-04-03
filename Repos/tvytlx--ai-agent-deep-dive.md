@@ -7,12 +7,12 @@ language: N/A
 license: N/A
 description: "AI Agent 源码深度研究报告"
 homepage: ""
-stars: 3130
-stars_per_day: 3130
-forks: 1107
+stars: 4491
+stars_per_day: 2246
+forks: 1400
 open_issues: 1
 created: 2026-03-31
-pushed_at: 2026-04-01
+pushed_at: 2026-04-02
 first_seen: 2026-04-02
 week: "2026-W14"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供 AI Agent 源碼的深度分析報告，幫助開發者理解�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-05"
+appearances: 2
+next_review: "2026-04-06"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-02"
-star_history: "2026-04-02:3130"
+star_history: "2026-04-02:3130,2026-04-03:4491"
 tags:
   - github
   - "category/其他"
@@ -559,4 +559,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-03|2026-04-03]] — 再次上榜，4.5k stars
 - [[2026-04-02|2026-04-02]] — 首次收錄，3.1k stars

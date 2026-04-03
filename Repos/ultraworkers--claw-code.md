@@ -7,9 +7,9 @@ language: Rust
 license: N/A
 description: "The fastest repo in history to surpass 100K stars ⭐. Better Harness Tools that make real things done. Built in Rust using oh-my-codex."
 homepage: ""
-stars: 121830
-stars_per_day: 121830
-forks: 102127
+stars: 150874
+stars_per_day: 75437
+forks: 101336
 open_issues: 1413
 created: 2026-03-31
 pushed_at: 2026-04-02
@@ -30,8 +30,8 @@ use_case: "提供一個快速且安全的工具集來重寫和擴展 Claw Code �
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-05"
+appearances: 2
+next_review: "2026-04-06"
 contributor_count: 3
 engagement: "high"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-02"
-star_history: "2026-04-02:121830"
+star_history: "2026-04-02:121830,2026-04-03:150874"
 tags:
   - github
   - "category/開發工具"
@@ -863,4 +863,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-03|2026-04-03]] — 再次上榜，150.9k stars
 - [[2026-04-02|2026-04-02]] — 首次收錄，121.8k stars
