@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "codex-console 是一个集成化控制台项目，支持任务管理、批量处理、数据导出、自动上传、日志查看与打包支持。"
 homepage: ""
-stars: 1652
-stars_per_day: 138
-forks: 920
-open_issues: 61
+stars: 1694
+stars_per_day: 130
+forks: 941
+open_issues: 64
 created: 2026-03-21
 pushed_at: 2026-04-02
 first_seen: 2026-03-26
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-26
-use_case: "提供一個集成化控制台，支持任務管理、批量處理和數據導出等功能，提升 OpenAI 註冊流程的穩定性。"
+use_case: "提供一个集成化控制台，支持任务管理、数据导出与自动上传等功能，提升 OpenAI 注册链路的稳定性。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,11 +38,11 @@ issue_close_rate: 6
 repo_size_kb: 957
 readme_length: 6947
 bus_factor: 1
-last_release_days: 3
+last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-26"
-star_history: "2026-03-26:933,2026-03-26:937,2026-03-27:1045,2026-03-27:1048,2026-03-28:1146,2026-03-29:1232,2026-03-30:1299,2026-03-31:1387,2026-04-01:1497,2026-04-02:1582,2026-04-03:1652"
+star_history: "2026-03-26:933,2026-03-26:937,2026-03-27:1045,2026-03-27:1048,2026-03-28:1146,2026-03-29:1232,2026-03-30:1299,2026-03-31:1387,2026-04-01:1497,2026-04-02:1582,2026-04-03:1652,2026-04-04:1694"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "codex-console"
   - "dou-jiang/codex-console"
-  - "提供一個集成化控制台，支持任務管理、批量處理和數據導出等功能，提升 OpenAI 註冊流程的穩定性。"
+  - "提供一个集成化控制台，支持任务管理、数据导出与自动上传等功能，提升 OpenAI 注册链路的稳定性。"
 ---
 
 # codex-console
 
-**1.7k** stars · **138** stars/天 · 建立 12 天前 · Python · MIT
+**1.7k** stars · **130** stars/天 · 建立 13 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/dou-jiang--codex-console");
@@ -71,13 +71,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `v1.1.2`
 
 > [!summary] 一句話摘要
-> 提供一個集成化控制台，支持任務管理、批量處理和數據導出等功能，提升 OpenAI 註冊流程的穩定性。
+> 提供一个集成化控制台，支持任务管理、数据导出与自动上传等功能，提升 OpenAI 注册链路的稳定性。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (138 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 5+ 人 · **參與度** High
-> **適合** 需要穩定 OpenAI 註冊流程的開發者和團隊，特別是對自動化和任務管理有需求的使用者。
-> **一句話重點** 這個專案不僅提供了功能，還強調了穩定性和用戶體驗，適合需要自動化和任務管理的開發者。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (130 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** 5+ 人 · **參與度** High
+> **適合** 需要穩定處理 OpenAI 註冊和任務管理的開發團隊。
+> **一句話重點** 這個專案不僅解決了 OpenAI 註冊過程中的問題，還提供了強大的任務管理功能，值得關注。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -100,27 +100,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~8h · **綁定風險** medium
-> **結論** 花 8 小時學、5 小時整合，得到穩定的任務管理效果，值得試用。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~4h · **綁定風險** medium
+> **結論** 花 4 小時學習、6 小時整合，得到穩定的註冊和任務管理功能，值得投入。
 
 > [!abstract] 核心創新
-> 提供統一的任務管理和自檢能力，提升 OpenAI 註冊流程的穩定性。
+> 提供了統一的任務管理和自檢能力，提升了 OpenAI 註冊鏈路的穩定性。
 
 ## 專案簡介
 
-codex-console 是一個針對 OpenAI 註冊流程的增強版控制台，旨在解決註冊、登錄、任務調度等過程中的不穩定問題。使用者可以透過 Web UI 管理註冊任務、支付、郵件服務等，並支持單任務和批量任務的處理。核心賣點在於其自檢能力和統一任務中心，能夠有效管理各類任務狀態，並支持周期性任務調度。技術上，codex-console 基於 Python 和 FastAPI 架構，使用 SQLAlchemy 進行數據管理，並支持 SQLite 和 PostgreSQL 數據庫。這種設計使得它能夠在多種環境下靈活運行，並且易於擴展。
+codex-console 是一个集成化控制台，旨在解决 OpenAI 注册链路中的常见问题。用户通过 Web UI 管理注册任务、支付、邮箱服务等，支持单任务和批量任务的处理。核心机制包括统一任务中心和周期任务调度，用户可以创建、编辑和管理任务状态。CLI 指令如 `python webui.py` 启动 Web UI，用户可通过 `docker-compose up -d` 部署容器化版本。技术上，该项目基于 FastAPI 和 SQLAlchemy，使用了 Alembic 进行数据库迁移，支持 SQLite 和 PostgreSQL，确保了数据的持久化和管理。与同类工具相比，codex-console 提供了更完善的任务调度和自动化能力，特别是在处理 OpenAI 注册时的稳定性方面。
 
-與其他類似工具相比，如 cnlimiter/codex-manager，codex-console 提供了更為穩定的註冊流程和更豐富的功能集。實際使用中，使用者可能會遇到如郵件服務不兼容等問題，但社群活躍度高，能夠快速獲得支持。這個專案目前處於 beta 階段，適合需要穩定 OpenAI 註冊流程的開發者和團隊。未來可能會持續增強自檢和任務調度功能，進一步提升使用體驗。建議在小型專案或內部工具中試用，避免在生產環境中直接使用。
+相比于 cnlimiter/codex-manager，codex-console 进行了多项增强和修复，确保了更好的用户体验和功能完整性。使用者在处理大量注册任务时，可能会遇到并发控制和请求超时的问题，但项目提供了优化方案。该项目目前处于 beta 阶段，适合需要稳定注册和任务管理的团队使用。未来可能会继续扩展功能，特别是在自动化和任务调度方面。建议在小型团队或个人项目中试用，避免在关键生产环境中直接使用。
 
-**技術棧**：`Python 3.10+` · `FastAPI` · `SQLAlchemy` · `Docker`
+**技術棧**：`FastAPI` · `SQLAlchemy` · `Alembic`
 
 ## 重點功能
 
-- 統一任務中心 — 管理註冊、支付、自檢等任務狀態，支持任務的暫停、繼續和重試。
-- 周期任務調度 — 支持計劃任務的創建、編輯和立即執行，方便用戶管理定期任務。
-- 自檢能力 — 提供系統自檢和修復功能，確保系統穩定運行。
-- 多種郵件服務支持 — 包括 CloudMail 和 LuckMail，方便用戶接收驗證郵件。
-- 數據庫支持 — 支持 SQLite 和 PostgreSQL，靈活應對不同的數據存儲需求。
+- 統一任務中心 — 管理註冊、支付、自檢等任務狀態，支持暫停、繼續和取消。
+- 周期任務調度 — 支持計劃任務的創建、編輯和立即執行。
+- 多種郵箱服務接入 — 支持 CloudMail、LuckMail 等郵箱服務的接入。
+- 數據導出與導入 — 提供日誌功能，方便排查問題和數據遷移。
+- 自檢能力 — 增強系統穩定性，支持自檢記錄和修復動作。
 
 ## 快速開始
 
@@ -130,7 +130,7 @@ pip install -r requirements.txt
 ```
 2. 啟動 Web UI
 ```bash
-python webui.py --host 0.0.0.0 --port 8080
+python webui.py
 ```
 3. 使用 Docker 部署
 ```bash
@@ -140,69 +140,65 @@ docker-compose up -d
 ## 程式碼範例
 
 ```python
-[
-  "# 前置條件：已安裝依賴和配置環境變量",
-  "python webui.py --host 0.0.0.0 --port 8080",
-  "# 預期輸出：啟動 Web UI 服務，並在 8080 端口可訪問"
-]
+{
+  "前置條件": "安裝依賴後，啟動 Web UI",
+  "指令": "python webui.py --host 0.0.0.0 --port 8080 --access-password mypassword",
+  "預期輸出": "Web UI 會在 http://0.0.0.0:8080 上啟動，並要求輸入訪問密碼。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 12 天內累積 1652 stars（138/天），forks 920（55.7%），顯示出強烈的社群參與。作者 dou-jiang 之前在 cnlimiter/codex-manager 上有過成功的經驗，這個專案解決了原有工具在 OpenAI 註冊過程中出現的多個問題，如郵件接收失敗和任務管理不便。近期的社群討論和需求反饋也促進了這個專案的快速發展。高 forks/stars 比率（55.7%）顯示出許多開發者在實際修改和使用這個工具，反映出其實用性和需求。
+> 建立 13 天就累積 1694 stars（130/天），forks 941（55.5%），顯示出強烈的社群參與。作者 dou-jiang 是該專案的主要貢獻者，之前的 cnlimiter/codex-manager 提供了基礎，codex-console 則在此基礎上進行了多項增強，解決了許多用戶在註冊過程中遇到的問題。這個專案的出現正好填補了 OpenAI 註冊鏈路中的空白，並且其功能的增強吸引了大量使用者的關注。社群的活躍度和開發者的回應速度也顯示出這個專案的潛力。
 
 ## 適合誰使用
 
-**目標受眾**：需要穩定 OpenAI 註冊流程的開發者和團隊，特別是對自動化和任務管理有需求的使用者。
+**目標受眾**：需要穩定處理 OpenAI 註冊和任務管理的開發團隊。
 
 > [!example] 使用場景
 > - 後端工程師用它來管理 OpenAI 註冊任務，因為它提供了穩定的任務調度和自檢功能，減少了手動操作的錯誤。
-> - DevOps 工程師用它來自動化批量註冊和支付流程，因為它支持多種郵件服務和自動綁卡功能，提升了工作效率。
-> - 測試工程師用它來檢查註冊流程的穩定性，因為它的自檢能力可以快速發現問題並進行修復。
+> - DevOps 工程師用它來自動化數據導出和上傳，因為它支持批量處理和自動化流程，提升了工作效率。
+> - 產品經理用它來監控註冊狀態和支付歷史，因為它的日誌功能和數據可視化幫助快速定位問題。
 
 ## 架構分析
 
-codex-console 採用 Python 和 FastAPI 架構，使用 SQLAlchemy 進行數據管理，並支持 SQLite 和 PostgreSQL。這種設計使得它能夠在多種環境下靈活運行。系統的核心功能包括任務管理、數據導入和自檢能力，這些功能的實現依賴於多個模塊的協作。
+codex-console 採用 FastAPI 作為後端框架，提供 RESTful API 以支持前端的各種請求。資料庫使用 SQLAlchemy 進行管理，並透過 Alembic 進行版本控制和遷移。這種架構設計使得系統能夠輕鬆擴展和維護，但也帶來了對資料庫的依賴。
 
-選擇 FastAPI 是因為其高效的異步處理能力，能夠應對高並發的請求。這樣的設計雖然增加了系統的複雜度，但能夠顯著提升性能和用戶體驗。在擴展性方面，使用 Docker 部署使得系統能夠輕鬆地在不同環境中運行，並且支持持久化數據存儲。
-
-整體而言，這個架構能夠滿足當前對於穩定性和擴展性的需求。
+資料流方面，使用者的請求經過 API 路由到相應的服務，並與資料庫進行交互。選擇 FastAPI 的原因在於其高效能和易於使用的特性，這使得開發過程更加順暢。隨著使用者數量的增加，系統可能會面臨性能瓶頸，特別是在高並發的情況下，這需要進一步的優化和擴展策略。
 
 ## 技術深入分析
 
-codex-console 的核心機制是基於 FastAPI 的任務管理系統，能夠高效處理多任務並提供即時反饋。系統能夠支持高達 1000 個註冊任務的批量處理，並且具備自檢能力，能夠在出現問題時自動進行修復。這樣的設計使得系統在處理高並發請求時，能夠保持穩定性。選擇 SQLAlchemy 作為數據管理工具，能夠靈活地支持多種數據庫，並且提供了良好的 ORM 支持。
-
-這種選擇雖然增加了學習曲線，但能夠顯著提升開發效率。系統的設計考慮到了擴展性，未來可以根據需求增加更多功能模塊。技術風險方面，隨著用戶數量的增加，可能會出現性能瓶頸，這需要在後續版本中進行優化。整合主流 CI/CD 工具的友好度高，能夠輕鬆融入現有的開發流程。
+codex-console 的核心技術機制基於 FastAPI 和 SQLAlchemy，這使得它能夠高效處理用戶請求並進行數據管理。使用 Alembic 進行數據庫遷移，保證了數據結構的靈活性和可擴展性。該系統能夠處理大量的註冊請求，並在高並發情況下保持穩定運行。設計上，選擇 FastAPI 是因為其非同步處理能力，這對於需要高效能的應用場景至關重要。隨著用戶數量的增加，系統可能會面臨性能瓶頸，特別是在高併發的情況下，這需要進一步的優化和擴展策略。整體而言，codex-console 提供了一個穩定且易於使用的解決方案，特別適合需要自動化註冊和任務管理的開發團隊。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，包含詳細的安裝步驟和使用範例。安裝過程相對順暢，但需要注意環境變量的配置。文件目前僅提供中文，對於非中文使用者可能會有些不便。
+> README 文件清晰，提供了詳細的安裝步驟和使用範例。安裝過程相對順暢，但需要注意依賴的版本要求。文件中有針對常見問題的解決方案，對新手友好。整體而言，花 30 分鐘能夠順利跑起來。
 
 ## 優缺點分析
 
 > [!success] 優點
 > - 提供穩定的任務管理和自檢能力，減少手動操作的錯誤。
-> - 支持多種郵件服務，方便用戶接收驗證郵件。
-> - 靈活的數據庫支持，適應不同的存儲需求。
+> - 支持多種郵箱服務，方便用戶接收驗證郵件。
+> - 易於部署，支持 Docker 和本地安裝。
 
 > [!danger] 缺點
-> - 需要一定的技術背景才能進行配置和維護。
-> - 在高並發情況下可能會出現延遲。
-> - 部分功能可能因第三方服務變更而失效。
+> - 在高並發情況下可能會遇到性能瓶頸。
+> - 需要一定的技術背景來進行配置和維護。
+> - 目前仍處於 beta 階段，可能存在未解決的問題。
 
 > [!warning] 注意事項
-> - 目前僅支持 Python 3.10 及以上版本。
-> - 自動綁卡功能可能因第三方服務變更而失效。
-> - 在高並發情況下，可能會出現任務執行延遲的情況。
+> - 僅支援 Python 3.10+
+> - 需要 PostgreSQL 或 SQLite 作為數據庫
+> - 在高並發情況下可能會遇到請求超時問題
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [cnlimiter/codex-manager](https://github.com/cnlimiter/codex-manager) | codex-console 是對原專案的增強版，提供了更穩定的註冊流程和更多功能。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | parsync 專注於數據同步，而 codex-console 更加關注於任務管理和自動化流程。 |
+| [cnlimiter/codex-manager](https://github.com/cnlimiter/codex-manager) | codex-console 是基於此專案的增強版本，提供了更穩定的註冊鏈路和任務管理功能。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | parsync 專注於文件同步，而 codex-console 更加專注於註冊和任務管理的自動化。 |
 
 ## 替代方案決策
 
@@ -210,16 +206,16 @@ codex-console 的核心機制是基於 FastAPI 的任務管理系統，能夠高
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [cnlimiter/codex-manager](https://github.com/cnlimiter/codex-manager) | 原專案，功能較為簡單，主要針對基本的註冊流程。 | 如果只需要基本的註冊功能，而不需要額外的任務管理和自檢能力。 | low，因為兩者的結構相似。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於數據同步，而 codex-console 更加關注於任務管理和自動化流程。 | 如果主要需求是數據同步，而不是任務管理。 | medium，因為兩者的功能和架構差異較大。 |
+| [cnlimiter/codex-manager](https://github.com/cnlimiter/codex-manager) | 這個專案主要提供基本的註冊功能，而 codex-console 則在此基礎上進行了增強和修復，提供了更穩定的註冊鏈路和任務管理功能。 | 如果需要一個穩定的註冊管理工具，codex-console 是更好的選擇。 | medium，因為需要調整配置和數據結構。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | parsync 專注於文件同步，而 codex-console 更加專注於註冊和任務管理的自動化。 | 如果主要需求是文件同步，parsync 會更合適。 | low，因為兩者功能差異大。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **codex-console** | **codex-manager** | **parsync** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 原專案，功能較為簡單，主要針對基本的註冊流程。 | 專注於數據同步，而 codex-console 更加關注於任務管理和自動化流程。 |
-> | 遷移成本 | - | low，因為兩者的結構相似。 | medium，因為兩者的功能和架構差異較大。 |
-> | 適用場景 | 主要場景 | 如果只需要基本的註冊功能，而不需要額外的任務管理和自檢能力。 | 如果主要需求是數據同步，而不是任務管理。 |
+> | 技術路線 | 本專案 | 這個專案主要提供基本的註冊功能，而 codex-console 則在此基礎上進行了增強和修復，提供了更穩定的註冊鏈路和任務管理功能。 | parsync 專注於文件同步，而 codex-console 更加專注於註冊和任務管理的自動化。 |
+> | 遷移成本 | - | medium，因為需要調整配置和數據結構。 | low，因為兩者功能差異大。 |
+> | 適用場景 | 主要場景 | 如果需要一個穩定的註冊管理工具，codex-console  | 如果主要需求是文件同步，parsync 會更合適。 |
 
 ## 成熟度評估
 
@@ -230,44 +226,44 @@ codex-console 的核心機制是基於 FastAPI 的任務管理系統，能夠高
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合小型團隊或個人項目試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在高並發情況下，任務可能會延遲執行。
-  - 解法：減少同時執行的任務數量。
-- **[HIGH]** 郵件服務不兼容可能導致註冊失敗。
-  - 解法：使用官方推薦的郵件服務。
-- **[HIGH]** Docker 部署時，數據未持久化可能導致數據丟失。
-  - 解法：確保正確配置數據卷。
+- **[HIGH]** 在高並發情況下可能會遇到請求超時問題
+  - 解法：調整請求的超時設置，或增加伺服器資源以應對高流量。
+- [MEDIUM] 某些郵箱服務的兼容性問題，可能導致註冊失敗
+  - 解法：使用官方推薦的郵箱服務，或檢查郵箱設置。
+- **[HIGH]** Docker 部署時，數據持久化設置不當可能導致數據丟失
+  - 解法：確保正確設置 Docker 卷以持久化數據。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 提供穩定的註冊和任務管理功能，能夠有效減少人力成本。 |
-| 大型企業的自動化任務管理系統 | 適合 | 具備良好的擴展性和自檢能力，能夠應對高並發需求。 |
-| 個人開發者的實驗性專案 | 普通 | 功能豐富，但可能需要較高的配置和維護成本。 |
-| 需要高穩定性的生產環境 | 不適合 | 目前仍在 beta 階段，存在不穩定風險。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 提供穩定的註冊和任務管理功能，適合小型團隊使用。 |
+| 需要自動化處理大量註冊的開發團隊 | 非常適合 | 支持批量任務和自動化流程，提升工作效率。 |
+| 大型企業的核心系統 | 不適合 | 目前仍處於 beta 階段，存在不穩定性風險。 |
+| 需要快速搭建測試環境的開發者 | 適合 | 易於部署和配置，適合快速測試和開發。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~8 小時 |
-| 整合時間 | ~5 小時 |
+| 學習時間 | ~4 小時 |
+| 整合時間 | ~6 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 8 小時學、5 小時整合，得到穩定的任務管理效果，值得試用。
+> 花 4 小時學習、6 小時整合，得到穩定的註冊和任務管理功能，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：需要配置環境變量存取敏感資料，並且依賴第三方郵件服務，需注意安全性。
+> 中等風險：該工具需要訪問敏感資料，如郵箱和數據庫連接字符串，使用時需謹慎配置環境變數。依賴鏈的信任程度較高，但仍需定期檢查安全性。
 
 ## 健康度儀表板
 
@@ -332,8 +328,8 @@ codex-console 的核心機制是基於 FastAPI 的任務管理系統，能夠高
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 920 |
-| Open Issues | 61 |
+| Forks | 941 |
+| Open Issues | 64 |
 | Issue 解決率 | 6% (4 closed) |
 | 最後推送 | 2026-04-02 |
 | 建立日期 | 2026-03-21 |
@@ -398,7 +394,7 @@ codex-console 的核心機制是基於 FastAPI 的任務管理系統，能夠高
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和修復問題。
+**社群活躍度**：社群活躍，最近有多次提交和問題回應。
 **連結**：[文件](https://github.com/dou-jiang/codex-console)
 
 ## 開發動態
@@ -412,9 +408,10 @@ codex-console 的核心機制是基於 FastAPI 的任務管理系統，能夠高
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#67](https://github.com/dou-jiang/codex-console/issues/67) | 希望加入ip检测开关 | 1 | 1 |
+> | [#87](https://github.com/dou-jiang/codex-console/issues/87) | 加速器很多中转都被封了，但没事我们有直连有中转还有专线。 | 0 | 0 |
+> | [#86](https://github.com/dou-jiang/codex-console/issues/86) | 注册失败 | 0 | 1 |
+> | [#85](https://github.com/dou-jiang/codex-console/issues/85) | 额度获取失败：Codex 凭证缺少 ChatGPT 账号 ID | 0 | 1 |
 > | [#84](https://github.com/dou-jiang/codex-console/issues/84) | cpa上传失败 | 0 | 0 |
-> | [#83](https://github.com/dou-jiang/codex-console/issues/83) | 能否添加为账号绑定codex授权设备代码的功能 | 0 | 0 |
-> | [#82](https://github.com/dou-jiang/codex-console/issues/82) | 凭证上传cpa失败 测试cpa连接成功 但是上传cpa就失败无法成功 | 0 | 0 |
 
 ## README 摘錄
 
@@ -797,7 +794,7 @@ codex-console 的核心機制是基於 FastAPI 的任務管理系統，能夠高
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[任務調度]] · [[數據管理]]
+相關概念：[[自動化]] · [[任務調度]] · [[CI/CD]]
 
 相關專案：[[cnlimiter--codex-manager|cnlimiter/codex-manager]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[TinyAGI--fractals|TinyAGI/fractals]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]]
 
@@ -841,7 +838,7 @@ codex-console 的核心機制是基於 FastAPI 的任務管理系統，能夠高
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","任務調度","數據管理"];
+> const concepts = ["自動化","任務調度","CI/CD"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "dou-jiang--codex-console" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
