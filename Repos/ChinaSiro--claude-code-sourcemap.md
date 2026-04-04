@@ -7,9 +7,9 @@ language: TypeScript
 license: N/A
 description: ""
 homepage: "https://linux.do/u/huo0"
-stars: 8013
-stars_per_day: 4007
-forks: 13589
+stars: 8275
+stars_per_day: 2758
+forks: 13933
 open_issues: 8
 created: 2026-03-31
 pushed_at: 2026-03-31
@@ -30,8 +30,8 @@ use_case: "還原 Claude 的 TypeScript 源碼，便於技術研究與學習。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-04-06"
+appearances: 4
+next_review: "2026-04-07"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 43
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-01"
-star_history: "2026-04-01:4889,2026-04-01:4969,2026-04-02:7368,2026-04-02:7376,2026-04-03:8012,2026-04-03:8013"
+star_history: "2026-04-01:4889,2026-04-01:4969,2026-04-02:7368,2026-04-02:7376,2026-04-03:8012,2026-04-03:8013,2026-04-04:8275"
 tags:
   - github
   - "category/開發工具"
@@ -687,6 +687,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-04|2026-04-04]] — 再次上榜，8.3k stars
 - [[2026-04-03|2026-04-03]] — 再次上榜，8.0k stars
 - [[2026-04-02|2026-04-02]] — 再次上榜，7.4k stars
 - [[2026-04-01|2026-04-01]] — 首次收錄，4.9k stars

@@ -7,12 +7,12 @@ language: TypeScript
 license: N/A
 description: "Claude Code opened to any LLM — OpenAI, Gemini, DeepSeek, Ollama, and 200+ models via OpenAI-compatible API shim"
 homepage: ""
-stars: 7630
-stars_per_day: 7630
-forks: 2925
-open_issues: 49
+stars: 11768
+stars_per_day: 5884
+forks: 4165
+open_issues: 69
 created: 2026-04-01
-pushed_at: 2026-04-03
+pushed_at: 2026-04-04
 first_seen: 2026-04-02
 week: "2026-W14"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "讓 Claude Code 支援任何 LLM，無論是 OpenAI、Gemini 還是�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-06"
+appearances: 3
+next_review: "2026-04-07"
 contributor_count: 5
 engagement: "high"
 issue_close_rate: 57
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-02"
-star_history: "2026-04-02:3599,2026-04-02:3635,2026-04-03:7609,2026-04-03:7630"
+star_history: "2026-04-02:3599,2026-04-02:3635,2026-04-03:7609,2026-04-03:7630,2026-04-04:11768"
 tags:
   - github
   - "category/開發工具"
@@ -828,5 +828,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-04|2026-04-04]] — 再次上榜，11.8k stars
 - [[2026-04-03|2026-04-03]] — 再次上榜，7.6k stars
 - [[2026-04-02|2026-04-02]] — 首次收錄，3.6k stars

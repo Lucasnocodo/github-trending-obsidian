@@ -743,10 +743,10 @@
   },
   "openai/codex-plugin-cc": {
     "first_seen": "2026-03-31",
-    "last_seen": "2026-04-03",
-    "times_seen": 4,
+    "last_seen": "2026-04-04",
+    "times_seen": 5,
     "stars_first": 1400,
-    "stars_last": 10653
+    "stars_last": 11297
   },
   "qiuzhi2046/Qclaw": {
     "first_seen": "2026-03-31",
@@ -771,10 +771,10 @@
   },
   "ChinaSiro/claude-code-sourcemap": {
     "first_seen": "2026-04-01",
-    "last_seen": "2026-04-03",
-    "times_seen": 3,
+    "last_seen": "2026-04-04",
+    "times_seen": 4,
     "stars_first": 4889,
-    "stars_last": 8012
+    "stars_last": 8275
   },
   "sanbuphy/claude-code-source-code": {
     "first_seen": "2026-04-01",
@@ -792,45 +792,45 @@
   },
   "titanwings/colleague-skill": {
     "first_seen": "2026-04-01",
-    "last_seen": "2026-04-03",
-    "times_seen": 3,
+    "last_seen": "2026-04-04",
+    "times_seen": 4,
     "stars_first": 3437,
-    "stars_last": 5453
+    "stars_last": 6496
   },
   "ultraworkers/claw-code": {
     "first_seen": "2026-04-02",
-    "last_seen": "2026-04-03",
-    "times_seen": 2,
+    "last_seen": "2026-04-04",
+    "times_seen": 3,
     "stars_first": 121830,
-    "stars_last": 150874
+    "stars_last": 162433
   },
   "sanbuphy/learn-coding-agent": {
     "first_seen": "2026-04-02",
-    "last_seen": "2026-04-03",
-    "times_seen": 2,
+    "last_seen": "2026-04-04",
+    "times_seen": 3,
     "stars_first": 10559,
-    "stars_last": 11009
+    "stars_last": 11181
   },
   "claude-code-best/claude-code": {
     "first_seen": "2026-04-02",
-    "last_seen": "2026-04-03",
-    "times_seen": 2,
+    "last_seen": "2026-04-04",
+    "times_seen": 3,
     "stars_first": 7790,
-    "stars_last": 10736
+    "stars_last": 13023
   },
   "Kuberwastaken/claurst": {
     "first_seen": "2026-04-02",
-    "last_seen": "2026-04-03",
-    "times_seen": 2,
+    "last_seen": "2026-04-04",
+    "times_seen": 3,
     "stars_first": 6592,
-    "stars_last": 7380
+    "stars_last": 7802
   },
   "Gitlawb/openclaude": {
     "first_seen": "2026-04-02",
-    "last_seen": "2026-04-03",
-    "times_seen": 2,
+    "last_seen": "2026-04-04",
+    "times_seen": 3,
     "stars_first": 3599,
-    "stars_last": 7609
+    "stars_last": 11768
   },
   "tvytlx/ai-agent-deep-dive": {
     "first_seen": "2026-04-02",
@@ -848,9 +848,16 @@
   },
   "emdash-cms/emdash": {
     "first_seen": "2026-04-03",
-    "last_seen": "2026-04-03",
-    "times_seen": 1,
+    "last_seen": "2026-04-04",
+    "times_seen": 2,
     "stars_first": 4343,
-    "stars_last": 4343
+    "stars_last": 6144
+  },
+  "ultraworkers/claw-code-parity": {
+    "first_seen": "2026-04-04",
+    "last_seen": "2026-04-04",
+    "times_seen": 1,
+    "stars_first": 5160,
+    "stars_last": 5160
   }
 }
