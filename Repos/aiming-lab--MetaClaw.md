@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "🦞 Just talk to your agent — it learns and EVOLVES 🧬."
 homepage: "https://arxiv.org/abs/2603.17187"
-stars: 3479
-stars_per_day: 139
-forks: 379
-open_issues: 10
+stars: 3508
+stars_per_day: 135
+forks: 383
+open_issues: 13
 created: 2026-03-09
 pushed_at: 2026-04-03
 first_seen: 2026-03-14
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-14
-use_case: "讓你的 AI 代理透過對話學習並不斷進化。"
+use_case: "讓你的 AI 代理透過對話學習和進化。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 3
 next_review: "2026-03-19"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 76
+issue_close_rate: 71
 repo_size_kb: 78428
 readme_length: 10000
 bus_factor: 2
-last_release_days: 10
+last_release_days: 11
 release_cadence: "monthly"
 verdict: ""
 ring_history: "assess@2026-03-14"
-star_history: "2026-03-14:980,2026-03-14:981,2026-03-15:1139,2026-03-15:1141,2026-03-16:1323,2026-03-16:1325,2026-03-17:1470,2026-03-18:1646,2026-03-19:1870,2026-03-20:2071,2026-03-21:2216,2026-03-22:2274,2026-03-24:2527,2026-03-25:2610,2026-03-26:2663,2026-03-27:2751,2026-03-28:2837,2026-03-29:2913,2026-03-30:2989,2026-03-31:3051,2026-04-01:3174,2026-04-02:3408,2026-04-03:3451,2026-04-04:3479"
+star_history: "2026-03-14:980,2026-03-14:981,2026-03-15:1139,2026-03-15:1141,2026-03-16:1323,2026-03-16:1325,2026-03-17:1470,2026-03-18:1646,2026-03-19:1870,2026-03-20:2071,2026-03-21:2216,2026-03-22:2274,2026-03-24:2527,2026-03-25:2610,2026-03-26:2663,2026-03-27:2751,2026-03-28:2837,2026-03-29:2913,2026-03-30:2989,2026-03-31:3051,2026-04-01:3174,2026-04-02:3408,2026-04-03:3451,2026-04-04:3479,2026-04-05:3508"
 tags:
   - github
   - "category/ai_ml"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "MetaClaw"
   - "aiming-lab/MetaClaw"
-  - "讓你的 AI 代理透過對話學習並不斷進化。"
+  - "讓你的 AI 代理透過對話學習和進化。"
 ---
 
 # MetaClaw
 
-**3.5k** stars · **139** stars/天 · 建立 25 天前 · Python · MIT
+**3.5k** stars · **135** stars/天 · 建立 26 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/aiming-lab--MetaClaw");
@@ -79,13 +79,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `agent` `ai-agent` `continual-learning` `fine-tuning` `llm` `lora` `meta-learning` `metaclaw` `online-learning` `openclaw` `reinforcement-learning` `skill-learning` `tinker`
 
 > [!summary] 一句話摘要
-> 讓你的 AI 代理透過對話學習並不斷進化。
+> 讓你的 AI 代理透過對話學習和進化。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (139 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要構建能夠持續學習和進化的 AI 代理的開發者和研究人員。
-> **一句話重點** MetaClaw 的設計理念是讓 AI 代理能夠在實際使用中不斷進化，這在當前的 AI 生態中是相當創新的。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (135 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 需要開發能夠自我學習和進化的 AI 代理的開發者和研究人員。
+> **一句話重點** MetaClaw 的創新在於其能夠在實時對話中學習和進化，這在現有的 AI 代理中是相對少見的。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,39 +108,39 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習，10 小時整合，得到持續學習的 AI 代理，值得投資。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到持續學習的 AI 代理，值得嘗試。
 
 > [!abstract] 核心創新
-> MetaClaw 透過每次對話的學習信號實現持續進化，無需 GPU 支持。
+> MetaClaw 透過即時對話學習和進化，實現了真正的持續學習能力。
 
 ## 專案簡介
 
-MetaClaw 是一個能夠在實際對話中學習並進化的 AI 代理。用戶只需與代理進行對話，MetaClaw 會將每次互動轉化為學習信號，並在實際部署中持續改進，而不是依賴離線訓練。這個過程中，MetaClaw 會在用戶的個人代理（如 OpenClaw 或 CoPaw）後面設置代理，攔截互動並注入相關技能，從累積的經驗中進行元學習。其一句話賣點是：無需 GPU，任何 OpenAI 兼容的 LLM API 都能輕鬆使用。技術上，MetaClaw 使用 FastAPI 和 Uvicorn 作為後端服務，並依賴 PyTorch 和 Transformers 進行模型訓練和推理，這使得其在資源需求上相對輕量。
+MetaClaw 是一個能夠在實際對話中學習和進化的 AI 代理。用戶只需與代理進行對話，MetaClaw 會自動從每次互動中提取學習信號，並持續改進其行為和技能。這個過程不需要 GPU，因為它可以與任何 OpenAI 兼容的 LLM API 直接工作。用戶可以透過 `metaclaw setup` 指令選擇個人代理，並透過 `metaclaw start` 啟動代理，這樣就能自動配置和啟動所選代理。MetaClaw 的核心機制是將模型放置在代理後面，攔截互動並在每次交互中注入相關技能，並從累積的經驗中進行元學習。這種設計使得代理能夠在不斷的實時使用中進行學習，而不是僅依賴離線訓練。
 
-與其他類似工具相比，如 OpenClaw 和 CoPaw，MetaClaw 提供了更靈活的技能進化和記憶管理功能，能夠在多代理環境中進行更好的隔離和管理。使用者可以選擇多種運行模式，如僅技能模式或強化學習模式，這使得其在不同場景下的適用性更廣。實際使用中，MetaClaw 能夠處理多日的互動歷史，並在每次會話後自動總結技能，這對於需要持續學習的應用場景非常有用。雖然目前仍在 beta 階段，但其設計理念和功能已經相當成熟，適合中小型團隊快速部署和測試。
+其架構使用 FastAPI 和 Uvicorn 作為後端，並依賴 PyTorch 和 Transformers 進行模型運行和訓練。這樣的選擇使得 MetaClaw 在資源使用上相對輕量，適合各種環境。與其他類似工具相比，如 OpenClaw 和 CoPaw，MetaClaw 提供了更靈活的學習和進化機制，特別是在持續學習和記憶管理方面。使用者可以選擇不同的運行模式，如 `skills_only` 和 `rl`，以滿足不同的需求。這使得 MetaClaw 在多種場景下都能保持高效能，並且能夠處理多日的互動歷史。由於其開放性和可擴展性，MetaClaw 特別適合需要快速迭代和持續改進的 AI 應用場景。
 
 **技術棧**：`Python` · `FastAPI` · `PyTorch` · `Transformers`
 
 ## 重點功能
 
-- 持續學習 — 透過每次對話自動更新技能，無需離線訓練。
-- 多代理支持 — 支援多種代理類型（如 OpenClaw、CoPaw），可靈活配置。
-- 記憶管理 — 自動記錄和檢索用戶偏好和項目歷史，提升對話的上下文理解。
-- 強化學習模式 — 可選擇強化學習訓練，並在閒置時自動更新權重。
-- 一鍵部署 — 透過簡單的命令行指令快速啟動和配置代理。
+- 持續學習 — 代理能夠從每次對話中提取學習信號，並自動改進其行為。
+- 多種運行模式 — 支援 `skills_only`、`rl` 和 `auto` 模式，滿足不同的需求。
+- 記憶管理 — 具備跨會話記憶的能力，自動檢索和注入相關信息。
+- 無需 GPU — 能在普通環境下運行，適合各種開發者。
+- 即時配置 — 使用 `metaclaw setup` 和 `metaclaw start` 指令輕鬆啟動代理。
 
 ## 快速開始
 
-1. 下載並解壓 MetaClaw 插件
-```bash
-curl -LO https://github.com/aiming-lab/MetaClaw/releases/download/v0.4.0/metaclaw-plugin.zip
-```
-2. 安裝所需依賴
+1. 安裝 MetaClaw
 ```bash
 pip install -e .
 ```
-3. 啟動 MetaClaw
+2. 配置代理
+```bash
+metaclaw setup
+```
+3. 啟動代理
 ```bash
 metaclaw start
 ```
@@ -148,53 +148,57 @@ metaclaw start
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 25 天內累積 3479 stars（139/天），forks 379（10.9%），顯示出強烈的社群興趣。作者 huaxiuyao 和其他貢獻者在 AI 和機器學習領域有豐富的背景，之前的項目也獲得了良好的反響。MetaClaw 解決了 AI 代理在實際應用中學習的痛點，傳統的模型訓練往往需要大量的計算資源和時間，而這個工具則能在無需 GPU 的情況下進行持續學習。最近的推廣活動和社群討論也促進了其曝光率，特別是在 AI 代理和強化學習的交集上。forks/stars 比率為 10.9%，顯示出許多人在實際修改和使用這個工具。
+> 建立 26 天內累積 3508 stars（135/天），forks 383（10.9%），顯示出強勁的增長潛力。作者 huaxiuyao 和其他貢獻者在 AI 和機器學習領域有豐富的經驗，之前的項目也獲得了良好的評價。MetaClaw 解決了傳統 AI 代理在實時學習上的不足，讓代理能夠在實際使用中持續進化，這在市場上是相對少見的。社群對於其功能的需求和反饋也促進了其快速發展，特別是對於多代理部署的需求。這些因素共同推動了 MetaClaw 的受歡迎程度。
 
 ## 適合誰使用
 
-**目標受眾**：需要構建能夠持續學習和進化的 AI 代理的開發者和研究人員。
+**目標受眾**：需要開發能夠自我學習和進化的 AI 代理的開發者和研究人員。
 
 > [!example] 使用場景
-> - AI 研究員用它來開發自適應的對話代理，因為它能夠從每次對話中學習並進化，提升用戶互動的質量。
-> - 產品經理用它來快速構建原型，因為其一鍵部署和靈活的配置選項能夠大幅縮短開發時間。
-> - 教育工作者用它來創建個性化的學習助手，因為它能夠根據學生的反饋自動調整教學策略。
+> - AI 研究員用它來開發能夠自我學習的對話代理，因為它能夠在實時對話中持續改進，減少了手動調整的需求。
+> - 產品經理用它來快速迭代產品功能，因為 MetaClaw 能夠根據用戶反饋自動調整其行為。
+> - 開發者用它來測試不同的 AI 代理配置，因為它提供了靈活的配置選項和多種運行模式，便於快速實驗。
 
 ## 架構分析
 
-MetaClaw 採用代理-伺服器架構，將用戶的代理放在一個代理後面，並通過 FastAPI 提供的 API 進行交互。這樣的設計使得代理可以在不干擾用戶的情況下進行學習和更新。資料流方面，MetaClaw 會攔截用戶的請求，注入技能並記錄對話歷史，這些資料會被用於後續的模型更新。選擇這種架構的代價是需要額外的配置和管理，但能夠提供更靈活的功能和擴展性。擴展性方面，MetaClaw 可以輕鬆地支持多個代理和用戶，這對於需要大規模部署的應用場景非常有利。
+MetaClaw 的架構基於 FastAPI 和 Uvicorn，這使得它能夠高效處理請求並支持異步操作。代理被設置在一個代理層後面，這個層負責攔截用戶的互動並注入相關技能。這樣的設計使得代理能夠在不影響用戶體驗的情況下進行學習和優化。
+
+記憶管理功能則是透過一個獨立的服務來實現，這樣可以在需要時進行隔離，確保系統的穩定性。選擇 FastAPI 是因為它的高效性能和易於擴展的特性，這對於需要快速迭代的 AI 應用來說至關重要。整體架構的設計考慮到了擴展性和靈活性，能夠支持多種不同的代理配置和運行模式。
 
 ## 技術深入分析
 
-MetaClaw 的核心技術機制是基於元學習的持續學習框架，使用 PyTorch 和 Transformers 進行模型訓練。其設計中，代理的每次互動都被視為學習信號，這使得模型能夠在實際使用中不斷改進。效能方面，MetaClaw 能夠處理多日的互動歷史，並在每次會話後自動總結技能，這對於需要持續學習的應用場景非常有用。設計取捨上，選擇 FastAPI 作為後端服務框架，這使得其能夠快速響應請求，但可能在高併發時遇到性能瓶頸。技術風險方面，隨著用戶數量的增加，代理的性能可能會受到影響，特別是在記憶管理和技能更新的過程中。整合方面，MetaClaw 可以與多種 LLM 提供者兼容，這使得其在不同的應用場景中都能靈活使用，並且能夠輕鬆集成到現有的開發流程中。
+MetaClaw 的核心技術機制是基於元學習和強化學習的結合，這使得代理能夠在實際使用中不斷適應和改進。它使用 FastAPI 作為後端框架，這使得其能夠高效處理請求並支持異步操作。效能方面，MetaClaw 可以在普通環境下運行，無需高性能的 GPU，這降低了使用門檻。設計上，選擇了 PyTorch 和 Transformers 作為主要依賴，這是因為它們在深度學習和自然語言處理領域的成熟度和廣泛應用。
+
+這樣的選擇使得 MetaClaw 能夠快速集成最新的模型和技術。技術風險方面，持續學習的過程可能會導致模型的不穩定，特別是在面對多樣化的用戶輸入時。整合方面，MetaClaw 能夠與多種 LLM API 兼容，這使得它在不同的應用場景中都能保持高效能。整體而言，MetaClaw 的設計考慮到了靈活性和擴展性，能夠適應未來的技術變化和需求。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了詳細的安裝步驟和範例，安裝過程相對順暢，沒有明顯的坑。整體來說，對於有一定技術背景的用戶來說，花 30 分鐘能夠順利運行起來。
+> README 文件提供了清晰的安裝和配置指導，並包含多語言版本，對於非英語使用者友好。安裝過程相對順暢，但對於某些功能的配置可能需要額外的學習。整體而言，花 30 分鐘可以順利啟動並運行 MetaClaw。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 無需 GPU 支持，降低了部署成本。
-> - 持續學習能力強，能夠快速適應用戶需求。
-> - 多代理支持，靈活性高，適合不同場景。
+> - 支持持續學習，能夠根據實時對話進行自我優化。
+> - 無需高性能硬體，適合各種開發環境。
+> - 靈活的配置選項，能夠滿足不同的使用需求。
 
 > [!danger] 缺點
-> - 仍在 beta 階段，可能存在不穩定性。
-> - 對於大規模數據處理的性能可能不足。
-> - 需要正確配置 API 密鑰，對新手來說有一定學習曲線。
+> - 對於大型模型的支持可能需要額外配置。
+> - 記憶管理功能的使用需要額外的設置和理解。
+> - 相較於傳統的 AI 代理，學習過程可能需要更多的時間來達到最佳效果。
 
 > [!warning] 注意事項
-> - 目前仍在 beta 階段，可能存在不穩定的功能。
-> - 對於大規模的數據處理，性能可能會受到限制。
-> - 需要正確配置 API 密鑰和 LLM 提供者，否則無法正常運行。
+> - 目前僅支援 Python 環境。
+> - 對於大型模型的訓練需求，可能需要額外的依賴配置。
+> - 記憶管理功能需要額外配置，否則將無法使用。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [aiming-lab/OpenClaw](https://github.com/aiming-lab/OpenClaw) | OpenClaw 提供基本的代理功能，但不具備 MetaClaw 的持續學習和記憶管理能力。 |
-| [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | AutoResearchClaw 專注於自動化研究，但缺乏 MetaClaw 的多代理支持和強化學習功能。 |
+| [aiming-lab/OpenClaw](https://github.com/aiming-lab/OpenClaw) | OpenClaw 是一個基於對話的 AI 代理，但不具備持續學習的能力，適合於靜態任務。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | NemoClaw 專注於語音和語言任務，而 MetaClaw 提供更廣泛的應用場景，特別是在持續學習方面。 |
 
 ## 替代方案決策
 
@@ -202,16 +206,16 @@ MetaClaw 的核心技術機制是基於元學習的持續學習框架，使用 P
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [aiming-lab/OpenClaw](https://github.com/aiming-lab/OpenClaw) | OpenClaw 提供基本的代理功能，但不具備 MetaClaw 的持續學習和記憶管理能力。 | 如果你的需求只是基本的代理功能，且不需要持續學習，OpenClaw 會是更輕量的選擇。 | low，因為兩者在基本架構上相似。 |
-| [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | AutoResearchClaw 專注於自動化研究，但缺乏 MetaClaw 的多代理支持和強化學習功能。 | 如果你的主要需求是自動化研究，AutoResearchClaw 會是更合適的選擇。 | medium，因為需要適應不同的 API 和功能設計。 |
+| [aiming-lab/OpenClaw](https://github.com/aiming-lab/OpenClaw) | OpenClaw 專注於靜態任務，缺乏持續學習能力，適合於不需要實時調整的場景。 | 如果你的應用場景不需要持續學習，且希望簡化配置過程。 | low，因為配置和使用上都相對簡單。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | NemoClaw 專注於語音和語言任務，並且需要較高的硬體要求。 | 如果你的應用主要集中在語音處理，且有足夠的硬體支持。 | medium，因為需要重新調整模型和環境配置。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **MetaClaw** | **OpenClaw** | **AutoResearchClaw** |
+> | 維度 | **MetaClaw** | **OpenClaw** | **NemoClaw** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | OpenClaw 提供基本的代理功能，但不具備 MetaClaw 的持續學習和記憶管理能力。 | AutoResearchClaw 專注於自動化研究，但缺乏 MetaClaw 的多代理支持和強化學習功能。 |
-> | 遷移成本 | - | low，因為兩者在基本架構上相似。 | medium，因為需要適應不同的 API 和功能設計。 |
-> | 適用場景 | 主要場景 | 如果你的需求只是基本的代理功能，且不需要持續學習，OpenC | 如果你的主要需求是自動化研究，AutoResearchCla |
+> | 技術路線 | 本專案 | OpenClaw 專注於靜態任務，缺乏持續學習能力，適合於不需要實時調整的場景。 | NemoClaw 專注於語音和語言任務，並且需要較高的硬體要求。 |
+> | 遷移成本 | - | low，因為配置和使用上都相對簡單。 | medium，因為需要重新調整模型和環境配置。 |
+> | 適用場景 | 主要場景 | 如果你的應用場景不需要持續學習，且希望簡化配置過程。 | 如果你的應用主要集中在語音處理，且有足夠的硬體支持。 |
 
 ## 成熟度評估
 
@@ -222,27 +226,26 @@ MetaClaw 的核心技術機制是基於元學習的持續學習框架，使用 P
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合中小型團隊進行測試和探索，但不建議用於生產環境的核心路徑上。
+> 適合開發者進行實驗和測試，不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在多代理環境中，技能更新可能會出現延遲，影響即時反應
-  - 解法：考慮使用單一代理進行測試，或調整更新頻率
-- **[HIGH]** 記憶管理功能在高負載下可能會導致性能下降
-  - 解法：監控系統資源，必要時調整記憶配置
-- **[HIGH]** API 密鑰配置錯誤會導致代理無法啟動
-  - 解法：仔細檢查配置文件中的 API 密鑰和 LLM 提供者設置
+- **[HIGH]** 在某些環境下，安裝過程可能會遇到依賴衝突問題。
+  - 解法：檢查 requirements.txt 確保所有依賴版本相容。
+- [MEDIUM] 記憶管理功能的配置可能會導致性能下降。
+  - 解法：在不需要記憶的情況下禁用此功能。
+- [MEDIUM] 某些代理在高負載下可能會出現延遲。
+  - 解法：考慮使用更高效的硬體或優化代理配置。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型 AI 研究團隊進行對話代理開發 | 非常適合 | MetaClaw 的持續學習功能能夠快速適應用戶需求。 |
-| 需要快速原型開發的產品經理 | 適合 | 一鍵部署和靈活配置能夠大幅縮短開發時間。 |
-| 大型企業的 AI 部門進行大規模部署 | 普通 | 可能在性能和記憶管理上遇到瓶頸。 |
-| 個人開發者進行 AI 代理實驗 | 非常適合 | 無需 GPU 支持，易於上手。 |
+| 需要快速迭代的 AI 產品開發團隊 | 非常適合 | 因為其持續學習能力能夠快速響應用戶需求。 |
+| 小型團隊進行 AI 研究 | 適合 | 因為其無需高性能硬體，降低了進入門檻。 |
+| 大型企業的核心 AI 系統 | 不適合 | 因為目前仍處於 beta 階段，穩定性不足。 |
 
 ## 採用成本分析
 
@@ -251,21 +254,45 @@ MetaClaw 的核心技術機制是基於元學習的持續學習框架，使用 P
 | 學習時間 | ~5 小時 |
 | 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到持續學習的 AI 代理，值得投資。
+> 花 5 小時學習，10 小時整合，得到持續學習的 AI 代理，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：MetaClaw 本身不需要高權限操作，且不存取敏感資料。依賴的第三方 API 需注意其安全性和授權管理。
+> 低風險：MetaClaw 本身不需要高權限，且不存取敏感資料。依賴鏈中使用的庫需定期檢查以確保安全性。
 
 ## 生態系整合
 
 > [!abstract] 如何融入你的工具鏈
 
-MetaClaw 通常與 OpenAI 兼容的 LLM API 一起使用，在開發流程中作為代理層。用戶可以在使用 Next.js 構建的應用中，通過 MetaClaw 提供的 API 進行用戶交互，並自動學習用戶的偏好。與 CI/CD 工具的整合相對簡單，支援 GitHub Actions 和其他主流 CI 工具，並且能夠輕鬆集成到現有的開發環境中。整合摩擦點主要在於 API 配置和記憶管理的調整，這需要一定的技術背景。
+MetaClaw 最常與 OpenAI 兼容的 LLM API 一起使用，並且能夠輕鬆集成到現有的開發流程中。在使用中，開發者可以透過 `metaclaw setup` 指令快速配置，然後用 `metaclaw start` 啟動代理，這樣就能夠自動化整個過程。MetaClaw 與 GitHub Actions 和其他 CI 工具的整合也相對簡單，能夠支持自動化部署和測試。整合的摩擦點主要在於對於記憶管理功能的配置，使用者需要仔細設定以避免性能問題。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 MetaClaw 出現之前，許多 AI 代理只能在靜態環境中運行，無法實現持續學習。這限制了它們在動態應用中的表現。隨著深度學習技術的進步，特別是在強化學習和元學習方面，MetaClaw 的設計得以實現。
+
+這個工具代表了 AI 代理的未來趨勢，即能夠在實際環境中不斷適應和改進。未來 6 個月內，隨著社群的反饋和需求的變化，MetaClaw 可能會進一步增強其功能，特別是在多代理協作和記憶管理方面。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-5 人的小型團隊
+
+**前置技能**：
+- 基本的 Python 知識
+- 了解 AI 和機器學習的基本概念
+
+> [!tip] 導入策略
+> 第一週：在個人項目中試用 MetaClaw。第二週：在小型團隊內部工具中導入。第三週：根據使用反饋調整配置。第四週：在主要產品中進行測試。
+
+**成功指標**：代理的學習速度和用戶滿意度提升。
+
+> [!warning] 退出計畫
+> 如果需要退出，所有配置都存儲在標準格式中，可以輕鬆轉移到其他工具。
 
 ## 健康度儀表板
 
@@ -330,9 +357,9 @@ MetaClaw 通常與 OpenAI 兼容的 LLM API 一起使用，在開發流程中作
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 379 |
-| Open Issues | 10 |
-| Issue 解決率 | 76% (32 closed) |
+| Forks | 383 |
+| Open Issues | 13 |
+| Issue 解決率 | 71% (32 closed) |
 | 最後推送 | 2026-04-03 |
 | 建立日期 | 2026-03-09 |
 | 官方網站 | [Link](https://arxiv.org/abs/2603.17187) |
@@ -369,7 +396,7 @@ MetaClaw 通常與 OpenAI 兼容的 LLM API 一起使用，在開發流程中作
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和回應問題。
+**社群活躍度**：社群活躍，定期更新和回應使用者問題。
 **連結**：[文件](https://arxiv.org/abs/2603.17187)
 
 ## 開發動態
@@ -382,9 +409,8 @@ MetaClaw 通常與 OpenAI 兼容的 LLM API 一起使用，在開發流程中作
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#49](https://github.com/aiming-lab/MetaClaw/issues/49) | Feature Request: Per-agent isolation (skills, mode, LoRA, me | 2 | 0 |
+> | [#49](https://github.com/aiming-lab/MetaClaw/issues/49) | Feature Request: Per-agent isolation (skills, mode, LoRA, me | 3 | 0 |
 > | [#51](https://github.com/aiming-lab/MetaClaw/issues/51) | Community fork: per-agent isolation for multi-agent OpenClaw | 1 | 0 |
-> | [#55](https://github.com/aiming-lab/MetaClaw/issues/55) | Proposal: verified_skills mode — deterministic, auditable sk | 0 | 0 |
 
 ## README 摘錄
 
@@ -584,9 +610,9 @@ MetaClaw 通常與 OpenAI 兼容的 LLM API 一起使用，在開發流程中作
 
 ## 延伸閱讀
 
-相關概念：[[強化學習]] · [[持續學習]] · [[元學習]]
+相關概念：[[持續學習]] · [[元學習]] · [[強化學習]]
 
-相關專案：[[aiming-lab--AutoResearchClaw|aiming-lab/AutoResearchClaw]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]]
+相關專案：[[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[aiming-lab--AutoResearchClaw|aiming-lab/AutoResearchClaw]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]]
 
 [GitHub](https://github.com/aiming-lab/MetaClaw) · [官方網站](https://arxiv.org/abs/2603.17187)
 
@@ -628,7 +654,7 @@ MetaClaw 通常與 OpenAI 兼容的 LLM API 一起使用，在開發流程中作
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["強化學習","持續學習","元學習"];
+> const concepts = ["持續學習","元學習","強化學習"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "aiming-lab--MetaClaw" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
