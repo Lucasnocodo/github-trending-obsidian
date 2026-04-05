@@ -7,12 +7,12 @@ language: Rust
 license: GPL-3.0
 description: "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries"
 homepage: "https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it"
-stars: 7803
-stars_per_day: 2601
-forks: 7380
-open_issues: 4
+stars: 8063
+stars_per_day: 2016
+forks: 7503
+open_issues: 10
 created: 2026-03-31
-pushed_at: 2026-04-03
+pushed_at: 2026-04-04
 first_seen: 2026-04-02
 week: "2026-W14"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供一個用 Rust 實作的終端編碼代理，並深入分析 Cl
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-04-07"
+appearances: 4
+next_review: "2026-04-08"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 80
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-02"
-star_history: "2026-04-02:6592,2026-04-02:6612,2026-04-03:7380,2026-04-03:7389,2026-04-04:7802,2026-04-04:7803"
+star_history: "2026-04-02:6592,2026-04-02:6612,2026-04-03:7380,2026-04-03:7389,2026-04-04:7802,2026-04-04:7803,2026-04-05:8063"
 tags:
   - github
   - "category/開發工具"
@@ -806,6 +806,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-05|2026-04-05]] — 再次上榜，8.1k stars
 - [[2026-04-04|2026-04-04]] — 再次上榜，7.8k stars
 - [[2026-04-03|2026-04-03]] — 再次上榜，7.4k stars
 - [[2026-04-02|2026-04-02]] — 首次收錄，6.6k stars
