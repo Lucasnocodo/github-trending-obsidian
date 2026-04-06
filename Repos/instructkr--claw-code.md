@@ -1,23 +1,23 @@
 ---
-repo: instructkr/claw-code
-url: https://github.com/instructkr/claw-code
-owner: instructkr
+repo: ultraworkers/claw-code
+url: https://github.com/ultraworkers/claw-code
+owner: ultraworkers
 owner_type: Organization
 language: Rust
 license: N/A
-description: "The fastest repo in history to surpass 50K stars ⭐, reaching the milestone in just 2 hours after publication. Better Harness Tools, not merely storing the archive of leaked Claude Code but also make real things done. Now rewriting in Rust."
+description: "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex."
 homepage: ""
-stars: 63551
-stars_per_day: 63551
-forks: 65130
-open_issues: 1855
+stars: 171023
+stars_per_day: 34205
+forks: 103707
+open_issues: 1413
 created: 2026-03-31
-pushed_at: 2026-04-01
+pushed_at: 2026-04-06
 first_seen: 2026-04-01
 week: "2026-W14"
 month: "2026-04"
 category: "開發工具"
-subcategory: "工具整合"
+subcategory: "CLI 工具"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,23 +26,23 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-01
-use_case: "提供一個快速且安全的工具，重寫 Claude Code 的功能，並支援多種工具整合。"
+use_case: "提供一個快速的 CLI 工具，讓開發者能夠輕鬆使用和管理 AI 代理。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 1
 next_review: "2026-04-04"
-contributor_count: 1
+contributor_count: 2
 engagement: "high"
 issue_close_rate: 0
-repo_size_kb: 5264
-readme_length: 7773
+repo_size_kb: 7120
+readme_length: 2770
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-01"
-star_history: "2026-04-01:63551"
+star_history: "2026-04-01:63551,2026-04-06:171023"
 tags:
   - github
   - "category/開發工具"
@@ -50,16 +50,16 @@ tags:
   - org
 aliases:
   - "claw-code"
-  - "instructkr/claw-code"
-  - "提供一個快速且安全的工具，重寫 Claude Code 的功能，並支援多種工具整合。"
+  - "ultraworkers/claw-code"
+  - "提供一個快速的 CLI 工具，讓開發者能夠輕鬆使用和管理 AI 代理。"
 ---
 
 # claw-code
 
-**63.6k** stars · **63.6k** stars/天 · 建立 1 天前 · Rust · 未標註授權
+**171.0k** stars · **34.2k** stars/天 · 建立 5 天前 · Rust · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/instructkr--claw-code");
+const me = dv.page("Repos/ultraworkers--claw-code");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供一個快速且安全的工具，重寫 Claude Code 的功能，並支援多種工具整合。
+> 提供一個快速的 CLI 工具，讓開發者能夠輕鬆使用和管理 AI 代理。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (63.6k stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 需要快速開發和測試工具整合的 AI 研究者和後端工程師。
-> **一句話重點** 這個專案不僅是對 Claude Code 的重寫，更是對工具整合和安全性的全新探索。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (34.2k stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** High
+> **適合** 需要快速開發和管理 AI 代理的開發者和工程師。
+> **一句話重點** Claw Code 的設計理念在於提供一個高效且易於使用的 CLI 工具，讓開發者能夠快速管理 AI 代理。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/instructkr--claw-code");
+> const me = dv.page("Repos/ultraworkers--claw-code");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "工具整合" && p.file.name !== "instructkr--claw-code" && p.status !== "archived")
+>     .where(p => p.subcategory === "CLI 工具" && p.file.name !== "ultraworkers--claw-code" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,108 +96,121 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 工具整合 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 CLI 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到靈活的開發環境，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
+> **結論** 花 10 小時學習，5 小時整合，得到高效能的 AI 代理管理工具，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於將 Claude Code 的功能重寫為 Python，並計劃轉向 Rust，以提高性能和安全性。
+> 提供一個高效的 CLI 工具來管理和使用 AI 代理。
 
 ## 專案簡介
 
-這個專案的核心機制是將 Claude Code 的功能重寫為 Python，並計劃將其轉換為 Rust，以提供更快且安全的執行環境。使用者可以透過簡單的 CLI 指令來生成 Python 工作區的摘要或列出模組，這使得開發者能夠快速掌握當前的開發狀態。這個工具的賣點在於它不僅僅是存儲泄露的代碼，而是提供了一個可操作的框架，讓開發者能夠在此基礎上進行擴展和改進。專案使用了 `oh-my-codex` 進行工作流管理，這使得代碼的重寫過程更為高效。技術上，專案目前主要依賴 Python，但未來會轉向 Rust，以提高性能和安全性。
+Claw Code 是一個用 Rust 實作的 CLI 工具，專為管理和使用 AI 代理而設計。使用者可以透過 `claw` 命令行介面來執行各種操作，例如使用 `prompt` 指令來生成摘要。這個工具的設計目的是提供一個高效且可擴展的環境，讓開發者能夠輕鬆整合和管理 AI 代理的功能。使用者首先需要透過 API 金鑰或 OAuth 流程進行身份驗證，然後就可以使用 CLI 進行各種操作。這樣的設計使得開發者能夠快速上手，並且能夠在不同的環境中靈活運用。核心功能包括支持多種命令和配置選項，並且提供了詳細的使用說明文件。
 
-與其他類似工具相比，如 `AlpinDale/parsync` 和 `CoderLuii/HolyClaude`，本專案的優勢在於其強調的安全性和性能優化，並且提供了更為清晰的架構設計。實際使用中，開發者可以透過簡單的測試指令來驗證功能的正確性，但目前的 Python 版本仍未完全取代原有系統，這意味著在某些情況下可能會遇到功能不完整的問題。專案的社群活躍度較高，但目前的開發進度仍在初期階段，未來的版本可能會有更大的改進。對於需要快速開發和測試的團隊來說，這個工具是非常合適的選擇，但對於需要穩定和成熟解決方案的團隊，則可能需要再觀望一段時間。
+這個專案的技術棧主要是 Rust，並且包含 Python 和 Shell 腳本，這樣的選擇使得它在性能和可擴展性上都表現優異。與其他類似工具相比，Claw Code 提供了更為直觀的 CLI 介面和更高的執行效率，特別是在需要快速響應的場景下。使用者可以在各種環境中運行這個工具，無論是本地開發還是雲端部署。儘管目前有 1413 個開放問題，但這並不影響其核心功能的穩定性。對於需要快速開發和測試 AI 代理的團隊來說，這是一個非常合適的選擇。未來幾個月內，預期會有更多功能和改進推出，特別是在社群的活躍參與下。
 
-**技術棧**：`Python` · `Rust`
+**技術棧**：`Rust` · `Python` · `Shell` · `Dockerfile`
 
 ## 重點功能
 
-- Python 工作區 — 提供 `src/` 目錄，包含各種模組和工具的重寫。
-- CLI 指令 — 使用 `python3 -m src.main summary` 生成當前工作區的摘要。
-- 單元測試 — 使用 `python3 -m unittest discover -s tests -v` 來驗證功能正確性。
-- 工具清單 — 使用 `python3 -m src.main commands` 列出當前的命令和工具庫。
-- 未來的 Rust 版本 — 正在開發中，旨在提供更快且安全的執行環境。
+- CLI 操作 — 使用 `./target/debug/claw prompt` 指令生成摘要，簡化操作流程。
+- 身份驗證支持 — 支持 API 金鑰和 OAuth 流程，方便用戶登錄。
+- 測試套件 — 使用 `cargo test --workspace` 指令運行測試，確保穩定性。
+- 詳細文檔 — 提供多個文檔檔案，幫助用戶快速上手和了解功能。
+- Rust 實作 — 基於 Rust 的高性能實現，適合需要高效能的場景。
 
 ## 快速開始
 
-1. 生成 Python 工作區摘要
+1. 切換到 Rust 目錄
 ```bash
-python3 -m src.main summary
+cd rust
 ```
-2. 列出當前模組
+2. 構建工作區
 ```bash
-python3 -m src.main subsystems --limit 16
+cargo build --workspace
 ```
-3. 運行單元測試
+3. 查看 CLI 幫助信息
 ```bash
-python3 -m unittest discover -s tests -v
+./target/debug/claw --help
+```
+4. 進行身份驗證
+```bash
+export ANTHROPIC_API_KEY="sk-ant-..."
+```
+5. 運行測試套件
+```bash
+cargo test --workspace
 ```
 
 ## 程式碼範例
 
 ```rust
-{
-  "前置條件": "確保 Python 環境已安裝。",
-  "指令": "python3 -m src.main summary",
-  "預期輸出": "顯示當前 Python 工作區的摘要。"
-}
+[
+  "# 前置條件：已經構建工作區",
+  "./target/debug/claw prompt \"summarize this repository\"",
+  "# 預期輸出：生成該倉庫的摘要"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 63551 stars（63551/天），forks 65130（102.5%），這是極端爆發式增長。作者 Yeachan-Heo 之前在 harness engineering 領域有豐富經驗，這次專案解決了開發者對於安全且高效工具的需求。社群對於 Claude Code 的興趣和需求驅動了這個專案的快速成長。技術上，Rust 的引入使得這個工具在性能上有了顯著的提升潛力。forks/stars 比率超過 100% 表示許多開發者對此專案進行了實際修改和擴展，顯示出強烈的參與意願。
+> 建立 5 天內累積 171023 stars（34205/天），forks 103707（60.6%），這顯示出極高的使用興趣。作者 Yeachan-Heo 和 code-yeongyu 在開源社群中有一定的影響力，這個專案解決了開發者在使用 AI 代理時的複雜性問題，提供了一個簡單的 CLI 工具來管理這些代理。近期的社交媒體討論和 Discord 社群的活躍也促進了專案的快速成長。這個工具的出現正好契合了開發者對於高效能和易用性的需求，特別是在 AI 領域的快速發展背景下。高達 60.6% 的 forks/stars 比率顯示出許多開發者正在積極修改和使用這個工具，這對於未來的發展是個好兆頭。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速開發和測試工具整合的 AI 研究者和後端工程師。
+**目標受眾**：需要快速開發和管理 AI 代理的開發者和工程師。
 
 > [!example] 使用場景
-> - 後端工程師用它來重寫和擴展 Claude Code 的功能，因為這樣可以在不違反版權的情況下利用已有的架構。
-> - AI 研究者用它來快速測試新的工具整合，因為它提供了清晰的架構和簡單的測試指令。
-> - 開發團隊用它來建立安全的開發環境，因為 Rust 的引入能夠提供更高的安全性和性能。
+> - 後端工程師用它來快速生成 AI 代理的摘要，因為使用 `claw prompt` 指令能夠節省大量時間，並提高工作效率。
+> - DevOps 工程師用它來管理和部署 AI 代理，因為它的 CLI 工具能夠輕鬆整合到 CI/CD pipeline 中，提升自動化程度。
+> - AI 研究人員用它來測試不同的 AI 模型，因為它支持多種配置和測試用例，方便進行快速迭代。
 
 ## 架構分析
 
-專案採用 Python 進行重寫，並計劃轉向 Rust，這樣的設計旨在提高執行效率和安全性。資料流方面，使用者可以透過 CLI 指令來執行各種操作，這樣的設計使得開發者能夠快速上手。選擇 Python 作為初期語言是因為其易於開發和測試，但未來轉向 Rust 將帶來更高的性能。這樣的選擇也意味著需要在開發過程中處理語言之間的轉換和兼容性問題。擴展性方面，Rust 的引入將使得專案在處理高並發和大規模數據時更具優勢。
+Claw Code 採用 Rust 作為主要開發語言，這使得它在性能上具有優勢。整體架構分為 CLI 和 Rust 工作區，CLI 負責用戶交互，Rust 工作區則處理核心邏輯。使用者通過 CLI 發出指令，這些指令會被轉換為 Rust 函數調用，並返回結果。
+
+這樣的設計使得用戶能夠快速獲得反饋，並且在需要擴展功能時能夠輕鬆添加新的指令。選擇 Rust 而非 Python 是因為其性能更佳，特別是在處理大量數據時。這樣的選擇雖然增加了學習曲線，但帶來了更高的執行效率。
+
+整體來說，這個架構能夠支持高併發的請求，並且在未來擴展性方面也表現良好。
 
 ## 技術深入分析
 
-專案的核心技術機制是將 Claude Code 的功能重寫為 Python，並計劃轉向 Rust。這樣的設計使得開發者能夠在不違反版權的情況下，快速利用已有的架構進行擴展。效能方面，Python 的開發速度快，但在處理高並發時可能會出現瓶頸，未來轉向 Rust 將有助於解決這一問題。選擇 Python 是因為其生態系統成熟，開發者容易上手，但這也意味著在轉向 Rust 時需要處理語言之間的兼容性問題。技術風險方面，當前的開放問題數量較多，可能影響專案的穩定性。整合分析方面，專案與現有的開發工具鏈（如 GitHub Actions）相容性良好，能夠輕鬆融入現有的 CI/CD 流程。
+Claw Code 的核心技術機制是基於 Rust 的 CLI 工具，這使得它在性能和響應速度上具有優勢。使用者可以通過簡單的命令行指令來與 AI 代理進行互動，這樣的設計使得開發者能夠快速上手並進行測試。效能方面，Rust 的編譯特性使得執行速度非常快，適合需要高效能的應用場景。設計上選擇 Rust 而非其他語言，主要是考量到性能和安全性，這樣的選擇雖然增加了學習成本，但長期來看能夠提供更穩定的運行環境。在技術風險方面，開放問題的數量顯示出目前的穩定性仍需加強，未來可能需要更多的測試和修正。整合方面，Claw Code 能夠與現有的開發工具鏈無縫對接，特別是在 CI/CD 流程中，這使得它在實際應用中非常靈活。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了多個範例和指令；安裝過程相對順暢，但需要注意 Python 環境的配置；有良好的 getting started guide，適合新手快速上手；目前僅提供英文文件，缺乏多語言支持。
+> README 文件提供了詳細的使用說明和範例，讓新手能夠快速上手。安裝過程相對順暢，但對於不熟悉 Rust 的用戶可能需要一些學習時間。文件目前僅提供英文版本，可能對非英語使用者造成一些障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速的開發和測試流程，使用者可以快速上手。
-> - 未來的 Rust 版本將提高性能和安全性。
-> - 強調工具整合，適合需要多種工具的開發者。
+> - 高效能 — 基於 Rust 的實現，適合高負載場景。
+> - 易於使用 — 提供直觀的 CLI 操作，降低了使用門檻。
+> - 活躍的社群 — 擁有大量的 forks 和 stars，顯示出強大的社群支持。
 
 > [!danger] 缺點
-> - 目前的功能尚不完整，可能影響使用體驗。
-> - 存在大量未解決的開放問題，社群支持尚不成熟。
-> - Rust 版本尚在開發中，未來的穩定性和性能尚未確定。
+> - 開放問題較多，可能影響穩定性。
+> - 對於新手來說，Rust 的學習曲線較陡峭。
+> - 目前功能尚未完全穩定，可能會有變動。
 
 > [!warning] 注意事項
-> - 目前的 Python 版本尚未完全取代原有系統，功能可能不完整。
-> - 存在大量未解決的開放問題（1855 個），可能影響使用體驗。
-> - Rust 版本尚在開發中，未來的穩定性和性能尚未確定。
+> - 目前有 1413 個開放問題，可能影響使用體驗。
+> - 對於大型項目，可能需要額外的配置和調整。
+> - 尚未有穩定的版本釋出，功能可能會頻繁變動。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於數據同步，但缺乏對工具整合的支持，適合需要快速數據傳輸的場景。 |
-| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 提供類似的功能，但未強調安全性和性能，適合小型專案的快速開發。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的 CLI 工具，但主要針對資料同步，功能範圍較窄。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於數據隱私和安全，與 Claw Code 的 AI 代理管理功能不同。 |
+| [ChinaSiro/claude-code-sourcemap](https://github.com/ChinaSiro/claude-code-sourcemap) | 提供源碼映射功能，適合需要深入分析的開發者，但不具備 Claw Code 的 CLI 操作便利性。 |
 
 ## 替代方案決策
 
@@ -205,16 +218,16 @@ python3 -m unittest discover -s tests -v
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於數據同步，使用 Go 語言實作，性能較高，但不支持工具整合。 | 如果你的專案主要需求是數據同步而非工具整合，則應選擇此工具。 | medium，因為需要重新設計數據流和同步邏輯。 |
-| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 提供類似功能，但使用 JavaScript 實作，性能較低。 | 如果你的團隊已經在使用 JavaScript 並需要快速開發，則選擇此工具更為合適。 | low，因為可以直接使用現有的 JavaScript 代碼。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步，使用 Python 實作，適合需要處理大量資料的場景。 | 如果你的專案主要是資料同步，且團隊熟悉 Python，這是個不錯的選擇。 | low，因為 Python 的學習曲線相對較平緩。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於數據隱私和安全，使用 Java 實作，功能範圍較窄。 | 如果你的專案需要強調數據隱私，且團隊熟悉 Java，這是更合適的選擇。 | medium，因為需要重新學習 Java 的生態系統。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **claw-code** | **parsync** | **HolyClaude** |
+> | 維度 | **claw-code** | **parsync** | **Shadowbroker** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於數據同步，使用 Go 語言實作，性能較高，但不支持工具整合。 | 提供類似功能，但使用 JavaScript 實作，性能較低。 |
-> | 遷移成本 | - | medium，因為需要重新設計數據流和同步邏輯。 | low，因為可以直接使用現有的 JavaScript 代碼。 |
-> | 適用場景 | 主要場景 | 如果你的專案主要需求是數據同步而非工具整合，則應選擇此工具。 | 如果你的團隊已經在使用 JavaScript 並需要快速開發 |
+> | 技術路線 | 本專案 | 專注於資料同步，使用 Python 實作，適合需要處理大量資料的場景。 | 專注於數據隱私和安全，使用 Java 實作，功能範圍較窄。 |
+> | 遷移成本 | - | low，因為 Python 的學習曲線相對較平緩。 | medium，因為需要重新學習 Java 的生態系統。 |
+> | 適用場景 | 主要場景 | 如果你的專案主要是資料同步，且團隊熟悉 Python，這是個 | 如果你的專案需要強調數據隱私，且團隊熟悉 Java，這是更合 |
 
 ## 成熟度評估
 
@@ -225,50 +238,64 @@ python3 -m unittest discover -s tests -v
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人試用和開發，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 目前的 Python 版本功能不完整，可能導致開發者無法使用某些功能
-  - 解法：持續關注更新，並參與社群討論以獲取最新資訊
-- [MEDIUM] 存在大量未解決的開放問題，可能影響使用體驗
-  - 解法：在使用前檢查開放問題，並考慮使用穩定版本的替代方案
-- [MEDIUM] Rust 版本尚在開發中，未來的穩定性和性能尚未確定
-  - 解法：在使用時保持靈活，隨時準備切換到其他工具
+- [MEDIUM] 在某些環境下，Rust 的編譯時間可能較長，影響開發效率。
+  - 解法：使用更高效的硬體或進行編譯優化。
+- **[HIGH]** 開放問題數量較多，可能影響使用體驗。
+  - 解法：定期檢查更新，並參與社群討論。
+- [MEDIUM] 對於不熟悉 CLI 的用戶，使用門檻較高。
+  - 解法：參考官方文檔，並尋求社群幫助。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的 AI 開發專案 | 非常適合 | 提供快速開發和測試的環境，適合小型團隊的需求。 |
-| 大型企業的核心系統開發 | 不適合 | 目前的功能尚不完整，無法滿足大型系統的穩定性需求。 |
-| 個人開發者的實驗性專案 | 適合 | 提供靈活的開發環境，適合進行實驗和探索。 |
-| 需要高性能的生產環境 | 不適合 | Rust 版本尚在開發中，無法提供穩定的性能。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 這個工具能夠快速集成 AI 代理，提升開發效率。 |
+| 大型企業的數據處理任務 | 普通 | 雖然性能優越，但開放問題可能影響穩定性。 |
+| AI 研究團隊進行快速原型開發 | 非常適合 | 提供了靈活的 CLI 操作，適合快速迭代。 |
+| 需要高穩定性的生產環境 | 不適合 | 目前仍處於 alpha 階段，穩定性不足。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 學習時間 | ~10 小時 |
+| 整合時間 | ~5 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到靈活的開發環境，值得一試。
+> 花 10 小時學習，5 小時整合，得到高效能的 AI 代理管理工具，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：專案本身不需要高權限，且不存取敏感資料；依賴鏈的信任程度尚可，但需注意未審計的依賴項目。
+> 低風險：該工具不需要高權限，且不存取敏感資料，但需注意依賴的庫是否存在已知漏洞。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Claw Code 通常與其他 UltraWorkers 工具鏈搭配使用，例如 clawhip 和 oh-my-openagent。在一個典型的開發流程中，Claw Code 可以用來快速生成和測試 AI 代理，具體做法是使用 CLI 指令來執行各種操作。它能夠與 GitHub Actions 整合，支持 CI/CD 流程，並且可以在 VS Code 中使用相關插件進行開發。整合的摩擦點主要在於 Rust 的學習曲線，對於不熟悉 Rust 的團隊可能需要額外的時間來適應。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 Claw Code 出現之前，開發者主要依賴於各種分散的工具來管理 AI 代理，這些工具往往功能不全且難以整合。隨著 AI 技術的快速發展，對於高效能和易用性的需求越來越迫切。Claw Code 的出現正好填補了這一空白，提供了一個集成化的解決方案。
+
+它代表了開發者對於簡化工作流程和提高效率的追求，未來可能會隨著 AI 技術的進一步發展而持續演進。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/instructkr--claw-code");
+> const me = dv.page("Repos/ultraworkers--claw-code");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -303,7 +330,7 @@ python3 -m unittest discover -s tests -v
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/instructkr--claw-code");
+> const me = dv.page("Repos/ultraworkers--claw-code");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -327,42 +354,53 @@ python3 -m unittest discover -s tests -v
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 65.1k |
-| Open Issues | 1855 |
+| Forks | 103.7k |
+| Open Issues | 1413 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-04-01 |
+| 最後推送 | 2026-04-06 |
 | 建立日期 | 2026-03-31 |
-| Repo 大小 | 5.1 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/instructkr/claw-code) |
+| Repo 大小 | 7.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/ultraworkers/claw-code) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Rust" : 88
->     "Python" : 12
+>     "Rust" : 96
+>     "Python" : 4
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Yeachan-Heo](https://github.com/Yeachan-Heo) | 81 |
+> | [@Yeachan-Heo](https://github.com/Yeachan-Heo) | 416 |
+> | [@code-yeongyu](https://github.com/code-yeongyu) | 52 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，經常有更新和討論。
-**連結**：[文件](https://github.com/instructkr/claw-code) · [Discord](https://instruct.kr/)
+**社群活躍度**：社群活躍，定期更新和討論。
+**連結**：[文件](https://github.com/ultraworkers/claw-code) · [Discord](https://discord.gg/5TUQKqFWd)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-01 ~ 2026-04-01）
-> **活躍天數** 1 天 · **最新 commit** feat: git integration, sandbox isolation, init command (merged from rcc branches)
+> [!abstract] 最近 10 次 commit（2026-04-05 ~ 2026-04-06）
+> **活躍天數** 2 天 · **最新 commit** Emit structured doctor JSON diagnostics
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Rewriting Project Claw Code
+> # Claw Code
 > 
->   ⭐ The fastest repo in history to surpass 50K stars, reaching the milestone in just 2 hours after publication ⭐
+>   ultraworkers/claw-code
+>   ·
+>   Usage
+>   ·
+>   Rust workspace
+>   ·
+>   Parity
+>   ·
+>   Roadmap
+>   ·
+>   UltraWorkers Discord
 > 
 >   
 >     
@@ -374,178 +412,85 @@ python3 -m unittest discover -s tests -v
 > 
 >   
 > 
->   Better Harness Tools, not merely storing the archive of leaked Claude Code
-> 
->   
+> Claw Code is the public Rust implementation of the `claw` CLI agent harness.
+> The canonical implementation lives in [`rust/`](./rust), and the current source of truth for this repository is **ultraworkers/claw-code**.
 > 
 > > [!IMPORTANT]
-> > **Rust port is now in progress** on the [`dev/rust`](https://github.com/instructkr/claw-code/tree/dev/rust) branch and is expected to be merged into main today. The Rust implementation aims to deliver a faster, memory-safe harness runtime. Stay tuned — this will be the definitive version of the project.
+> > Start with [`USAGE.md`](./USAGE.md) for build, auth, CLI, session, and parity-harness workflows. Make `claw doctor` your first health check after building, use [`rust/README.md`](./rust/README.md) for crate-level details, read [`PARITY.md`](./PARITY.md) for the current Rust-port checkpoint, and see [`docs/container.md`](./docs/container.md) for the container-first workflow.
 > 
-> > If you find this work useful, consider [sponsoring @instructkr on GitHub](https://github.com/sponsors/instructkr) to support continued open-source harness engineering research.
+> ## Current repository shape
 > 
-> ---
+> - **`rust/`** — canonical Rust workspace and the `claw` CLI binary
+> - **`USAGE.md`** — task-oriented usage guide for the current product surface
+> - **`PARITY.md`** — Rust-port parity status and migration notes
+> - **`ROADMAP.md`** — active roadmap and cleanup backlog
+> - **`PHILOSOPHY.md`** — project intent and system-design framing
+> - **`src/` + `tests/`** — companion Python/reference workspace and audit helpers; not the primary runtime surface
 > 
-> ## Backstory
-> 
-> At 4 AM on March 31, 2026, I woke up to my phone blowing up with notifications. The Claude Code source had been exposed, and the entire dev community was in a frenzy. My girlfriend in Korea was genuinely worried I might face legal action from Anthropic just for having the code on my machine — so I did what any engineer would do under pressure: I sat down, ported the core features to Python from scratch, and pushed it before the sun came up.
-> 
-> The whole thing was orchestrated end-to-end using [oh-my-codex (OmX)](https://github.com/Yeachan-Heo/oh-my-codex) by [@bellman_ych](https://x.com/bellman_ych) — a workflow layer built on top of OpenAI's Codex ([@OpenAIDevs](https://x.com/OpenAIDevs)). I used `$team` mode for parallel code review and `$ralph` mode for persistent execution loops with architect-level verification. The entire porting session — from reading the original harness structure to producing a working Python tree with tests — was driven through OmX orchestration.
-> 
-> The result is a clean-room Python rewrite that captures the architectural patterns of Claude Code's agent harness without copying any proprietary source. I'm now actively collaborating with [@bellman_ych](https://x.com/bellman_ych) — the creator of OmX himself — to push this further. The basic Python foundation is already in place and functional, but we're just getting started. **Stay tuned — a much more capable version is on the way.**
-> 
-> https://github.com/instructkr/claw-code
-> 
-> ## The Creators Featured in Wall Street Journal For Avid Claude Code Fans
-> 
-> I've been deeply interested in **harness engineering** — studying how agent systems wire tools, orchestrate tasks, and manage runtime context. This isn't a sudden thing. The Wall Street Journal featured my work earlier this month, documenting how I've been one of the most active power users exploring these systems:
-> 
-> > AI startup worker Sigrid Jin, who attended the Seoul dinner, single-handedly used 25 billion of Claude Code tokens last year. At the time, usage limits were looser, allowing early enthusiasts to reach tens of billions of tokens at a very low cost.
-> >
-> > Despite his countless hours with Claude Code, Jin isn't faithful to any one AI lab. The tools available have different strengths and weaknesses, he said. Codex is better at reasoning, while Claude Code generates cleaner, more shareable code.
-> >
-> > Jin flew to San Francisco in February for Claude Code's first birthday party, where attendees waited in line to compare notes with Cherny. The crowd included a practicing cardiologist from Belgium who had built an app to help patients navigate care, and a California lawyer who made a tool for automating building permit approvals using Claude Code.
-> >
-> > "It was basically like a sharing party," Jin said. "There were lawyers, there were doctors, there were dentists. They did not have software engineering backgrounds."
-> >
-> > — *The Wall Street Journal*, March 21, 2026, [*"The Trillion Dollar Race to Automate Our Entire Lives"*](https://lnkd.in/gs9td3qd)
-> 
-> ---
-> 
-> ## Porting Status
-> 
-> The main source tree is now Python-first.
-> 
-> - `src/` contains the active Python porting workspace
-> - `tests/` verifies the current Python workspace
-> - the exposed snapshot is no longer part of the tracked repository state
-> 
-> The current Python workspace is not yet a complete one-to-one replacement for the original system, but the primary implementation surface is now Python.
-> 
-> ## Why this rewrite exists
-> 
-> I originally studied the exposed codebase to understand its harness, tool wiring, and agent workflow. After spending more time with the legal and ethical questions—and after reading the essay linked below—I did not want the exposed snapshot itself to remain the main tracked source tree.
-> 
-> This repository now focuses on Python porting work instead.
-> 
-> ## Repository Layout
-> 
-> ```text
-> .
-> ├── src/                                # Python porting workspace
-> │   ├── __init__.py
-> │   ├── commands.py
-> │   ├── main.py
-> │   ├── models.py
-> │   ├── port_manifest.py
-> │   ├── query_engine.py
-> │   ├── task.py
-> │   └── tools.py
-> ├── tests/                              # Python verification
-> ├── assets/omx/                         # OmX workflow screenshots
-> ├── 2026-03-09-is-legal-the-same-as-legitimate-ai-reimplementation-and-the-erosion-of-copyleft.md
-> └── README.md
-> ```
-> 
-> ## Python Workspace Overview
-> 
-> The new Python `src/` tree currently provides:
-> 
-> - **`port_manifest.py`** — summarizes the current Python workspace structure
-> - **`models.py`** — dataclasses for subsystems, modules, and backlog state
-> - **`commands.py`** — Python-side command port metadata
-> - **`tools.py`** — Python-side tool port metadata
-> - **`query_engine.py`** — renders a Python porting summary from the active workspace
-> - **`main.py`** — a CLI entrypoint for manifest and summary output
-> 
-> ## Quickstart
-> 
-> Render the Python porting summary:
+> ## Quick start
 > 
 > ```bash
-> python3 -m src.main summary
+> cd rust
+> cargo build --workspace
+> ./target/debug/claw --help
+> ./target/debug/claw prompt "summarize this repository"
 > ```
 > 
-> Print the current Python workspace manifest:
+> Authenticate with either an API key or the built-in OAuth flow:
 > 
 > ```bash
-> python3 -m src.main manifest
+> export ANTHROPIC_API_KEY="sk-ant-..."
+> # or
+> cd rust
+> ./target/debug/claw login
 > ```
 > 
-> List the current Python modules:
+> Run the workspace test suite:
 > 
 > ```bash
-> python3 -m src.main subsystems --limit 16
+> cd rust
+> cargo test --workspace
 > ```
 > 
-> Run verification:
+> ## Documentation map
 > 
-> ```bash
-> python3 -m unittest discover -s tests -v
-> ```
+> - [`USAGE.md`](./USAGE.md) — quick commands, auth, sessions, config, parity harness
+> - [`rust/README.md`](./rust/README.md) — crate map, CLI surface, features, workspace layout
+> - [`PARITY.md`](./PARITY.md) — parity status for the Rust port
+> - [`rust/MOCK_PARITY_HARNESS.md`](./rust/MOCK_PARITY_HARNESS.md) — deterministic mock-service harness details
+> - [`ROADMAP.md`](./ROADMAP.md) — active roadmap and open cleanup work
+> - [`PHILOSOPHY.md`](./PHILOSOPHY.md) — why the project exists and how it is operated
 > 
-> Run the parity audit against the local ignored archive (when present):
+> ## Ecosystem
 > 
-> ```bash
-> python3 -m src.main parity-audit
-> ```
+> Claw Code is built in the open alongside the broader UltraWorkers toolchain:
 > 
-> Inspect mirrored command/tool inventories:
+> - [clawhip](https://github.com/Yeachan-Heo/clawhip)
+> - [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)
+> - [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)
+> - [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex)
+> - [UltraWorkers Discord](https://discord.gg/5TUQKqFWd)
 > 
-> ```bash
-> python3 -m src.main commands --limit 10
-> python3 -m src.main tools --limit 10
-> ```
-> 
-> ## Current Parity Checkpoint
-> 
-> The port now mirrors the archived root-entry file surface, top-level subsystem names, and command/tool inventories much more closely than before. However, it is **not yet** a full runtime-equivalent replacement for the original TypeScript system; the Python tree still contains fewer executable runtime slices than the archived source.
-> 
-> ## Built with `oh-my-codex`
-> 
-> The restructuring and documentation work on this repository was AI-assisted and orchestrated with Yeachan Heo's [oh-my-codex (OmX)](https://github.com/Yeachan-Heo/oh-my-codex), layered on top of Codex.
-> 
-> - **`$team` mode:** used for coordinated parallel review and architectural feedback
-> - **`$ralph` mode:** used for persistent execution, verification, and completion discipline
-> - **Codex-driven workflow:** used to turn the main `src/` tree into a Python-first porting workspace
-> 
-> ### OmX workflow screenshots
-> 
-> *Ralph/team orchestration view while the README and essay context were being reviewed in terminal panes.*
-> 
-> *Split-pane review and verification flow during the final README wording pass.*
-> 
-> ## Community
-> 
->   
-> 
-> Join the [**instructkr Discord**](https://instruct.kr/) — the best Korean language model community. Come chat about LLMs, harness engineering, agent workflows, and everything in between.
-> 
-> [](https://instruct.kr/)
-> 
-> ## Star History
-> 
-> See the chart at the top of this README.
-> 
-> ## Ownership / Affiliation Disclaimer
+> ## Ownership / affiliation disclaimer
 > 
 > - This repository does **not** claim ownership of the original Claude Code source material.
 > - This repository is **not affiliated with, endorsed by, or maintained by Anthropic**.
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化測試]] · [[工具整合]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[機器學習]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[jackwener--opencli|jackwener/opencli]] · [[knowsuchagency--mcp2cli|knowsuchagency/mcp2cli]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[jackwener--opencli|jackwener/opencli]]
 
-[GitHub](https://github.com/instructkr/claw-code)
+[GitHub](https://github.com/ultraworkers/claw-code)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：工具整合）
+> [!note]- 直接競品（同子分類：CLI 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "工具整合" AND file.name != "instructkr--claw-code"
+> WHERE subcategory = "CLI 工具" AND file.name != "ultraworkers--claw-code"
 > SORT stars DESC
 > ```
 
@@ -553,7 +498,7 @@ python3 -m unittest discover -s tests -v
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "instructkr--claw-code"
+> WHERE category = "開發工具" AND file.name != "ultraworkers--claw-code"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -562,7 +507,7 @@ python3 -m unittest discover -s tests -v
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Rust" AND file.name != "instructkr--claw-code" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "ultraworkers--claw-code" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -571,15 +516,15 @@ python3 -m unittest discover -s tests -v
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W14" AND file.name != "instructkr--claw-code"
+> WHERE week = "2026-W14" AND file.name != "ultraworkers--claw-code"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化測試","工具整合"];
+> const concepts = ["CLI/TUI","自動化","機器學習"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "instructkr--claw-code" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "ultraworkers--claw-code" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -592,12 +537,12 @@ python3 -m unittest discover -s tests -v
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/instructkr--claw-code");
+> const me = dv.page("Repos/ultraworkers--claw-code");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "instructkr--claw-code" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "ultraworkers--claw-code" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -613,7 +558,7 @@ python3 -m unittest discover -s tests -v
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "instructkr" AND file.name != "instructkr--claw-code"
+> WHERE owner = "ultraworkers" AND file.name != "ultraworkers--claw-code"
 > SORT stars DESC
 > ```
 
@@ -621,7 +566,7 @@ python3 -m unittest discover -s tests -v
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/instructkr--claw-code");
+> const me = dv.page("Repos/ultraworkers--claw-code");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -638,7 +583,7 @@ python3 -m unittest discover -s tests -v
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/instructkr--claw-code");
+> const me = dv.page("Repos/ultraworkers--claw-code");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -671,7 +616,7 @@ python3 -m unittest discover -s tests -v
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/instructkr--claw-code");
+> const me = dv.page("Repos/ultraworkers--claw-code");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -695,7 +640,7 @@ python3 -m unittest discover -s tests -v
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/instructkr--claw-code");
+> const me = dv.page("Repos/ultraworkers--claw-code");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -732,7 +677,7 @@ python3 -m unittest discover -s tests -v
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/instructkr--claw-code");
+> const me = dv.page("Repos/ultraworkers--claw-code");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },

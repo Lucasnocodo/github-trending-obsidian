@@ -7,10 +7,10 @@ language: Python
 license: Apache-2.0
 description: "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/"
 homepage: "https://clianything.cc/"
-stars: 28055
-stars_per_day: 1039
-forks: 2650
-open_issues: 72
+stars: 28397
+stars_per_day: 1014
+forks: 2696
+open_issues: 75
 created: 2026-03-08
 pushed_at: 2026-04-04
 first_seen: 2026-03-10
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "將所有軟體轉變為可由 AI 代理使用的 CLI 工具。"
+use_case: "讓所有軟體都能成為代理原生，實現更高效的自動化操作。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,11 +38,11 @@ issue_close_rate: 23
 repo_size_kb: 23010
 readme_length: 10000
 bus_factor: 1
-last_release_days: 6
+last_release_days: 7
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:3381,2026-03-11:3472,2026-03-13:8931,2026-03-13:8970,2026-03-14:11721,2026-03-14:11739,2026-03-15:13789,2026-03-15:13796,2026-03-16:15263,2026-03-17:16691,2026-03-18:17798,2026-03-19:18612,2026-03-20:19370,2026-03-21:19980,2026-03-22:20536,2026-03-23:21234,2026-03-24:21928,2026-03-25:22505,2026-03-26:23083,2026-03-27:23598,2026-03-28:23940,2026-03-29:24338,2026-03-30:24723,2026-03-31:25202,2026-04-01:25643,2026-04-02:26275,2026-04-03:27144,2026-04-04:27697,2026-04-05:28055"
+star_history: "2026-03-10:3381,2026-03-11:3472,2026-03-13:8931,2026-03-13:8970,2026-03-14:11721,2026-03-14:11739,2026-03-15:13789,2026-03-15:13796,2026-03-16:15263,2026-03-17:16691,2026-03-18:17798,2026-03-19:18612,2026-03-20:19370,2026-03-21:19980,2026-03-22:20536,2026-03-23:21234,2026-03-24:21928,2026-03-25:22505,2026-03-26:23083,2026-03-27:23598,2026-03-28:23940,2026-03-29:24338,2026-03-30:24723,2026-03-31:25202,2026-04-01:25643,2026-04-02:26275,2026-04-03:27144,2026-04-04:27697,2026-04-05:28055,2026-04-06:28397"
 tags:
   - github
   - "category/開發工具"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "CLI-Anything"
   - "HKUDS/CLI-Anything"
-  - "將所有軟體轉變為可由 AI 代理使用的 CLI 工具。"
+  - "讓所有軟體都能成為代理原生，實現更高效的自動化操作。"
 ---
 
 # CLI-Anything
 
-**28.1k** stars · **1.0k** stars/天 · 建立 27 天前 · Python · Apache-2.0
+**28.4k** stars · **1.0k** stars/天 · 建立 28 天前 · Python · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/HKUDS--CLI-Anything");
@@ -73,13 +73,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG` `v0.2.0` `easy-install`
 
 > [!summary] 一句話摘要
-> 將所有軟體轉變為可由 AI 代理使用的 CLI 工具。
+> 讓所有軟體都能成為代理原生，實現更高效的自動化操作。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Recent · **熱度** Viral (1.0k stars/day)
-> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要將現有軟體轉換為 AI 代理可用 CLI 的開發者。
-> **一句話重點** CLI-Anything 的最大優勢在於其能將各種軟體轉變為 AI 代理可用的 CLI，這在當前 AI 應用日益普及的環境中，具有重要的實用價值。
+> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 5+ 人 · **參與度** Low
+> **適合** 需要將多個應用程式整合到一個 CLI 中以提高工作效率的開發者。
+> **一句話重點** CLI-Anything 的設計理念是將所有軟體轉換為代理原生的 CLI，這在自動化操作上具有革命性意義。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,27 +102,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學、3 小時整合，得到快速生成 CLI 的能力，值得考慮。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，3 小時整合，能夠顯著提高工作效率，值得採用。
 
 > [!abstract] 核心創新
-> CLI-Anything 提供了一個通用的 CLI 生成框架，能將各種軟體轉變為可由 AI 代理使用的工具。
+> CLI-Anything 能夠將任何軟體轉換為代理原生的 CLI，實現更高效的自動化操作。
 
 ## 專案簡介
 
-CLI-Anything 的核心機制是將各種軟體轉換為可由 AI 代理操作的命令行介面（CLI）。用戶只需透過簡單的指令，如 `/cli-anything build a CLI for ./gimp`，便能生成相應的 CLI，這樣 AI 代理就能直接與這些軟體互動。這種設計的優勢在於，CLI 提供了一個結構化且可組合的介面，讓 AI 代理能夠更有效地執行複雜的工作流程，並且減少了對 GUI 的依賴。技術上，CLI-Anything 使用 Python 作為主要開發語言，並且支援多種 AI 編碼代理，如 Claude Code 和 OpenClaw，這使得它在不同平台上都能運行。
+CLI-Anything 的核心機制在於將各種軟體轉換為代理原生的命令行介面，使 AI 代理能夠直接與這些軟體互動。使用者只需透過簡單的命令，如 `/cli-anything build a CLI for ./gimp`，即可為指定的應用程式生成 CLI，這樣可以大幅簡化與軟體的交互過程。這個工具的賣點在於其能夠統一多個分散的 API，讓使用者透過一個 CLI 來操作多個服務，從而提高效率並降低操作複雜度。技術上，CLI-Anything 是用 Python、C#、JavaScript 和 Shell 實現，並且支援多個 AI 編碼代理，如 Claude Code 和 OpenClaw，這使得它在不同平台上都能靈活運用。與其他類似工具相比，如 Codex 和 OpenClaw，CLI-Anything 提供了更為強大的 CLI 生成能力，能夠將多個 API 整合為一個命令，顯著減少了操作的繁瑣性。
 
-與其他類似工具相比，如 Codex 和 OpenClaw，CLI-Anything 提供了一個統一的 CLI，能夠將分散的 API 整合成一個命令，這樣用戶只需面對一個工具，而不是多個 API 調用，從而提高了效率。實際使用中，CLI-Anything 可以處理多達 258 個命令，並且可以在多種作業系統上運行，這使得它在跨平台的應用上具有優勢。雖然目前仍在 alpha 階段，但其社群活躍度高，且持續有新功能更新，未來可能會成為一個穩定的解決方案。對於需要快速生成 CLI 以便 AI 代理使用的開發者，CLI-Anything 是一個值得考慮的選擇，但對於不熟悉命令行操作的用戶，可能會需要一些學習成本。
+實際使用中，這個工具可以處理的資料量相當可觀，並且能夠在多個平台上運行，對於需要頻繁操作多個應用的開發者來說，CLI-Anything 是一個理想的選擇。未來，隨著更多 AI 代理的支援，CLI-Anything 的功能將會更加強大。對於小型團隊或個人開發者來說，這是一個值得立即採用的工具，因為它能夠顯著提高工作效率。建議在需要自動化多個應用程式操作的情境下使用，但如果你的工作流程不涉及多個軟體的整合，則可能不需要這樣的工具。
 
-**技術棧**：`Python 3.10+`
+**技術棧**：`Python 3.10+` · `C#` · `JavaScript` · `Shell` · `PowerShell`
 
 ## 重點功能
 
-- 統一 API — 將多個分散的 API 整合為一個 CLI，簡化操作流程。
-- 多平台支援 — 支援 Python、C#、JavaScript 等多種語言，適用於不同開發環境。
-- 簡單安裝 — 只需一行指令即可安裝並使用，降低使用門檻。
-- 自動生成文檔 — 生成的 CLI 自帶 --help 標誌，提供自動文檔。
-- 社群驅動 — 持續更新，並接受社群貢獻，功能不斷增強。
+- 一鍵生成 CLI — 透過簡單命令將任何應用程式轉換為 CLI，支持多種軟體。
+- 統一 API 操作 — 將多個分散的 API 整合為一個命令，減少操作複雜度。
+- 支援多平台 — 可在多種 AI 編碼代理上運行，如 Claude Code 和 OpenClaw。
+- 自動文檔生成 — CLI 自帶 --help 標誌，提供即時文檔，方便使用者查詢。
+- 輕量級設計 — 無需額外依賴，簡化安裝和使用過程。
 
 ## 快速開始
 
@@ -130,66 +130,80 @@ CLI-Anything 的核心機制是將各種軟體轉換為可由 AI 代理操作的
 ```bash
 /plugin install cli-anything
 ```
-2. 為 GIMP 建立 CLI
+2. 為 GIMP 生成 CLI
 ```bash
 @cli-anything build a CLI for ./gimp
 ```
-3. 驗證 CLI
+3. 驗證 GIMP 功能
 ```bash
 /cli-anything:validate ./gimp
+```
+
+## 程式碼範例
+
+```python
+{
+  "前置條件": "安裝 Python 3.10+ 和目標軟體",
+  "指令": "# 安裝 CLI-Anything 插件\n/plugin install cli-anything\n\n# 為 GIMP 生成 CLI\n@cli-anything build a CLI for ./gimp\n\n# 驗證 GIMP 功能\n/cli-anything:validate ./gimp",
+  "預期輸出": "CLI 生成成功，並可用於後續操作。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 27 天就累積 28055 stars（1039/天），forks 2650（9.4%），這顯示出強烈的社群興趣。作者 HKUDS 團隊在開源領域有多個成功專案，這次專案解決了將現有軟體轉換為 AI 代理可用 CLI 的痛點，之前的解決方案往往需要手動整合多個 API，效率低下。近期的推廣活動和社群貢獻也促進了其快速成長，特別是在 AI 代理日益普及的背景下，這使得 CLI-Anything 的需求急劇上升。
+> 建立 28 天就累積 28397 stars（1014/天），forks 2696（9.5%），顯示出強烈的社群參與。這個專案的主要貢獻者來自 HKUDS 團隊，他們在開源社群中有豐富的經驗。CLI-Anything 解決了過去需要手動整合多個 API 的痛點，讓開發者能夠更高效地使用各種軟體。近期的推廣活動和社群的活躍度也促進了其快速增長。這個工具的設計理念符合當前 AI 代理的需求，並且隨著 AI 技術的進步，CLI-Anything 的應用場景也在不斷擴展。
 
 ## 適合誰使用
 
-**目標受眾**：需要將現有軟體轉換為 AI 代理可用 CLI 的開發者。
+**目標受眾**：需要將多個應用程式整合到一個 CLI 中以提高工作效率的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來快速為 GIMP 建立 CLI，因為這樣可以讓 AI 代理自動化圖像處理任務，節省手動操作的時間。
-> - 產品經理用它來整合多個 API，生成一個統一的 CLI，因為這樣可以簡化測試流程，減少對多個工具的依賴。
-> - AI 開發者用它來為自己的應用程式生成 CLI，因為這樣可以讓 AI 代理更容易地與應用程式互動，提升開發效率。
+> - 後端開發者用它來為 GIMP 生成 CLI，因為這樣可以快速自動化圖像處理任務，減少手動操作的時間。
+> - AI 研究員用它來整合多個 API，因為可以透過一個統一的 CLI 操作，提升工作效率並降低錯誤率。
+> - 產品經理用它來驗證 LibreOffice 的功能，因為能夠快速生成測試腳本，確保產品的穩定性。
 
 ## 架構分析
 
-CLI-Anything 採用插件架構，允許用戶將其安裝到不同的 AI 編碼代理中。這樣的設計使得 CLI-Anything 能夠在多個平台上運行，並且能夠快速集成新的功能。資料流方面，CLI-Anything 透過命令行指令接收用戶輸入，然後生成相應的 CLI，這些 CLI 會被 AI 代理使用。選擇這種架構的代價在於，可能需要用戶對命令行操作有一定的熟悉度。擴展性方面，由於其插件架構，未來可以加入更多的 AI 編碼代理，這樣能夠持續增強其功能。
+CLI-Anything 採用模組化設計，允許用戶透過簡單的命令生成 CLI。其核心是將各種應用程式的 API 整合為一個統一的命令行介面，這樣可以減少用戶在操作多個應用時的複雜性。資料流方面，使用者輸入命令後，系統會自動生成相應的 CLI，並將其安裝到指定的環境中。
+
+這樣的設計使得 CLI-Anything 在不同平台上都能靈活運用，但也可能導致在某些特定環境下的兼容性問題。選擇這種設計的代價在於需要持續維護多個平台的支援，並確保生成的 CLI 能夠正確運行。擴展性方面，CLI-Anything 可以隨著更多 AI 代理的加入而不斷增強其功能。
+
+整體而言，這種設計使得 CLI-Anything 成為一個強大的工具，能夠滿足多樣化的需求。
 
 ## 技術深入分析
 
-CLI-Anything 的核心技術在於其能夠將不同的軟體轉換為統一的 CLI，這是透過分析軟體的 API 和功能來實現的。這種方法使得 AI 代理能夠以結構化的方式與軟體互動，並且能夠生成自動化的工作流程。效能方面，CLI-Anything 能夠處理多達 258 個命令，並且在多種作業系統上運行，這使得它在跨平台的應用上具有優勢。設計取捨方面，選擇使用 Python 作為主要開發語言，使得其在開發上具有靈活性，但也可能導致在某些高效能需求的場景下表現不如其他語言。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在處理大量並發請求時。整合分析方面，CLI-Anything 能夠與多種主流開發工具和 CI/CD 流程相容，這使得它能夠輕鬆融入現有的開發生態系統中。
+CLI-Anything 的核心技術在於其模組化設計，允許用戶透過簡單的命令生成 CLI。這一過程中，使用者輸入的命令會被解析並轉換為相應的 CLI，這樣的設計使得用戶無需深入了解每個應用的 API。效能方面，CLI-Anything 能夠處理大量的 API 請求，並且在多個平台上運行時表現穩定。選擇 Python 作為主要開發語言，使得其在處理文本和命令行操作上具有優勢，但也可能導致在某些環境下的性能瓶頸。技術風險方面，CLI-Anything 依賴於多個外部 API，這可能會在未來造成兼容性問題。整合方面，CLI-Anything 能夠與主流的開發工具鏈無縫對接，並且在 CI/CD 流程中表現良好，這使得其在實際開發中非常實用。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含範例，安裝過程相對簡單，但對於 Windows 用戶可能需要額外配置。文件目前僅提供英文，對於非英語使用者可能會有一定障礙。整體而言，花 30 分鐘能夠順利運行。
+> README 文件提供了清晰的安裝步驟和使用範例，對於新手來說相對友好。安裝過程順暢，沒有明顯的坑。文件中有多語言支持，方便不同語言的使用者。整體來說，花 30 分鐘應該能夠順利運行。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速生成可操作的 CLI，提升開發效率。
-> - 支援多種語言和平台，具有良好的通用性。
-> - 社群活躍，持續更新和改進。
+> - 能夠快速生成 CLI，提升工作效率。
+> - 統一多個 API 的操作，簡化使用流程。
+> - 支援多種平台，靈活性高。
 
 > [!danger] 缺點
-> - 對於不熟悉命令行的用戶，學習曲線較陡。
-> - 目前仍在 alpha 階段，可能存在不穩定性。
-> - 需要安裝目標軟體，增加了使用前的準備工作。
+> - 目前僅支援 Python 3.10+，對於其他版本不友好。
+> - 需要目標軟體安裝，限制了使用場景。
+> - 對於不熟悉命令行的使用者，學習曲線較陡。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.10+。
-> - 需要安裝目標軟體，如 GIMP 或 Blender。
-> - 對於不熟悉命令行的用戶，可能需要額外學習時間。
-> - 目前仍在 alpha 階段，功能可能不穩定。
+> - 目前僅支援 Python 3.10+。
+> - 需要目標軟體已安裝，否則無法生成相應的 CLI。
+> - 對於不熟悉命令行的使用者，可能需要額外學習成本。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| Codex | Codex 專注於自然語言處理，而 CLI-Anything 將重點放在生成可操作的 CLI，適合需要直接與軟體互動的場景。 |
-| OpenClaw | OpenClaw 提供的功能較為專一，而 CLI-Anything 則是通用的 CLI 生成工具，適合多種軟體。 |
+| [HKUDS/OpenClaw](https://github.com/HKUDS/OpenClaw) | OpenClaw 提供了類似的 AI 代理整合功能，但 CLI-Anything 更專注於生成 CLI，操作更為簡便。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 主要用於 API 代理，而 CLI-Anything 則是將所有軟體轉換為 CLI，功能範圍更廣。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | HolyClaude 提供了特定的 AI 代理功能，但 CLI-Anything 的通用性和整合能力更強。 |
 
 ## 替代方案決策
 
@@ -197,47 +211,47 @@ CLI-Anything 的核心技術在於其能夠將不同的軟體轉換為統一的 
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Codex | Codex 專注於自然語言處理，主要用於生成程式碼，而 CLI-Anything 專注於生成可操作的 CLI，適合需要直接與軟體互動的場景。 | 如果你的團隊需要強大的自然語言處理能力來生成程式碼，而不僅僅是 CLI，則應選擇 Codex。 | medium，因為需要重新設計工作流程以適應 Codex 的使用方式。 |
-| OpenClaw | OpenClaw 提供的功能較為專一，主要針對特定應用，而 CLI-Anything 則是通用的 CLI 生成工具，適合多種軟體。 | 如果你的專案需要針對特定應用進行深度整合，則 OpenClaw 可能更合適。 | low，因為兩者在某些功能上有重疊，轉換相對簡單。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | parsync 專注於高效的資料同步，而 CLI-Anything 則是將所有軟體轉換為 CLI，功能範圍更廣。 | 如果你的主要需求是資料同步，parsync 會是更合適的選擇。 | low，因為兩者的使用方式有一定相似性。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | OpenClaw 主要針對醫療領域的 AI 代理，而 CLI-Anything 則是通用的 CLI 生成工具。 | 如果你的應用場景專注於醫療領域，OpenClaw 會提供更專業的功能。 | medium，因為需要調整使用場景和命令格式。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **CLI-Anything** | **Codex** | **OpenClaw** |
+> | 維度 | **CLI-Anything** | **parsync** | **OpenClaw-Medical-Skills** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Codex 專注於自然語言處理，主要用於生成程式碼，而 CLI-Anything 專注於生成可操作的 CLI，適合需要直接與軟體互動的場景。 | OpenClaw 提供的功能較為專一，主要針對特定應用，而 CLI-Anything 則是通用的 CLI 生成工具，適合多種軟體。 |
-> | 遷移成本 | - | medium，因為需要重新設計工作流程以適應 Codex 的使用方式。 | low，因為兩者在某些功能上有重疊，轉換相對簡單。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要強大的自然語言處理能力來生成程式碼，而不僅僅 | 如果你的專案需要針對特定應用進行深度整合，則 OpenCla |
+> | 技術路線 | 本專案 | parsync 專注於高效的資料同步，而 CLI-Anything 則是將所有軟體轉換為 CLI，功能範圍更廣。 | OpenClaw 主要針對醫療領域的 AI 代理，而 CLI-Anything 則是通用的 CLI 生成工具。 |
+> | 遷移成本 | - | low，因為兩者的使用方式有一定相似性。 | medium，因為需要調整使用場景和命令格式。 |
+> | 適用場景 | 主要場景 | 如果你的主要需求是資料同步，parsync 會是更合適的選擇 | 如果你的應用場景專注於醫療領域，OpenClaw 會提供更專 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Windows 上執行時，可能需要安裝 Git for Windows 以支持 bash 命令。
-  - 解法：確保安裝 Git for Windows 或使用 WSL。
-- [MEDIUM] 某些命令在不同平台上可能表現不一致。
-  - 解法：測試命令在目標平台上的兼容性。
-- [MEDIUM] CLI-Anything 目前仍在持續開發中，可能會有未解決的 bug。
-  - 解法：定期檢查更新和社群討論以獲取最新資訊。
+- **[HIGH]** 在 Windows 環境下，某些命令可能因缺少 bash 支援而無法運行。
+  - 解法：安裝 Git for Windows 或使用 WSL。
+- [MEDIUM] 生成的 CLI 可能需要手動調整以適應特定應用的需求。
+  - 解法：參考文檔進行調整。
+- [MEDIUM] 某些 API 的變更可能導致 CLI 無法正常工作。
+  - 解法：定期檢查更新並調整使用的命令。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能快速生成 CLI，提升開發效率，適合小團隊使用。 |
-| 大型企業的核心系統 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
-| 需要快速原型開發的團隊 | 適合 | 能快速生成可操作的 CLI，適合快速迭代。 |
-| 對命令行不熟悉的用戶 | 普通 | 需要一定的學習成本，但功能強大。 |
+| 小型開發團隊需要快速整合多個應用程式的功能 | 非常適合 | CLI-Anything 能夠有效統一操作，提升效率。 |
+| 大型企業需要穩定的 CLI 工具進行自動化測試 | 普通 | 雖然功能強大，但目前仍處於 beta 階段，穩定性有待提高。 |
+| 個人開發者希望簡化日常工作流程 | 非常適合 | CLI-Anything 能夠快速生成 CLI，減少手動操作。 |
+| 需要高效資料同步的專案 | 不適合 | 這不是 CLI-Anything 的主要功能。 |
 
 ## 採用成本分析
 
@@ -245,16 +259,45 @@ CLI-Anything 的核心技術在於其能夠將不同的軟體轉換為統一的 
 | --- | --- |
 | 學習時間 | ~5 小時 |
 | 整合時間 | ~3 小時 |
-| 維護負擔 | medium |
-| 綁定風險 | low |
+| 維護負擔 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、3 小時整合，得到快速生成 CLI 的能力，值得考慮。
+> 花 5 小時學習，3 小時整合，能夠顯著提高工作效率，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：CLI-Anything 本身不需要高權限，且不存取敏感資料，但使用者需注意生成的 CLI 是否有安全漏洞。
+> 中等風險：CLI-Anything 本身不需要高權限，但在使用過程中可能會存取敏感資料，需注意 API 的安全性和授權問題。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+CLI-Anything 最常與 AI 編碼代理搭配使用，如 Claude Code 和 OpenClaw。在一個使用 Claude Code 的專案中，開發者可以透過 CLI-Anything 生成 GIMP 的 CLI，具體做法是使用 `/cli-anything build a CLI for ./gimp`。這個工具支援與 GitHub Copilot CLI 和其他主流開發工具的整合，能夠在 CI/CD 流程中輕鬆使用。整合過程中，最常見的問題是命令格式的調整，這需要用戶根據具體情況進行修改。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 CLI-Anything 出現之前，開發者通常需要手動整合多個 API，這不僅耗時，還容易出錯。隨著 AI 技術的進步，對於自動化工具的需求日益增加，CLI-Anything 應運而生。它代表了將 AI 代理與各種軟體整合的趨勢，未來可能會隨著更多 AI 代理的出現而進一步發展。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-5 人的小型團隊
+
+**前置技能**：
+- 熟悉基本的命令行操作
+- 了解 Python 基礎
+- 有使用 AI 編碼代理的經驗
+
+> [!tip] 導入策略
+> 第一週：在個人項目中試用 CLI-Anything。第二週：在小型團隊的內部工具中導入。第三週：撰寫最佳實踐文檔。第四週：在主產品的一個非核心模組中使用。
+
+**成功指標**：CLI 生成時間減少 50%，手動操作錯誤率降低至零。
+
+> [!warning] 退出計畫
+> 所有設定和命令都以標準格式保存，方便轉移到其他工具或手動操作。
 
 ## 健康度儀表板
 
@@ -319,9 +362,9 @@ CLI-Anything 的核心技術在於其能夠將不同的軟體轉換為統一的 
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 2.6k |
-| Open Issues | 72 |
-| Issue 解決率 | 23% (21 closed) |
+| Forks | 2.7k |
+| Open Issues | 75 |
+| Issue 解決率 | 23% (22 closed) |
 | 最後推送 | 2026-04-04 |
 | 建立日期 | 2026-03-08 |
 | 官方網站 | [Link](https://clianything.cc/) |
@@ -365,8 +408,8 @@ CLI-Anything 的核心技術在於其能夠將不同的軟體轉換為統一的 
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，持續有新功能和修復更新。
-**連結**：[文件](https://clianything.cc/)
+**社群活躍度**：社群活躍，經常有更新和討論。
+**連結**：[文件](https://hkuds.github.io/CLI-Anything/)
 
 ## 開發動態
 
@@ -381,7 +424,6 @@ CLI-Anything 的核心技術在於其能夠將不同的軟體轉換為統一的 
 > | [#19](https://github.com/HKUDS/CLI-Anything/issues/19) | Unknown skill: cli-anything `bug` `documentation` `compatibility` | 4 | 12 |
 > | [#144](https://github.com/HKUDS/CLI-Anything/issues/144) | Zoom harness stores OAuth tokens without restrictive file pe | 1 | 0 |
 > | [#34](https://github.com/HKUDS/CLI-Anything/issues/34) | can i use this for gemini-cli? `question` | 1 | 0 |
-> | [#179](https://github.com/HKUDS/CLI-Anything/issues/179) | [Feature]: add Pi Coding Agent extension support | 0 | 0 |
 
 ## README 摘錄
 
@@ -631,7 +673,7 @@ CLI-Anything 的核心技術在於其能夠將不同的軟體轉換為統一的 
 
 相關概念：[[CLI/TUI]] · [[自動化]] · [[API 設計]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[MiniMax-AI--skills|MiniMax-AI/skills]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[MiniMax-AI--skills|MiniMax-AI/skills]]
 
 [GitHub](https://github.com/HKUDS/CLI-Anything) · [官方網站](https://clianything.cc/)
 

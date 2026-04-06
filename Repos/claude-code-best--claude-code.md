@@ -7,12 +7,12 @@ language: TypeScript
 license: N/A
 description: "原汁原昧 Claude Code 可运行,可构建, 可调试版; Typescript 类型全修复; 企业级可靠性; 安全无毒, lock 文件保真, 可直接 bun i; bun run dev 启动"
 homepage: "https://ccb.agent-aura.top/"
-stars: 13897
-stars_per_day: 2779
-forks: 14068
+stars: 13908
+stars_per_day: 2782
+forks: 14072
 open_issues: 15
 created: 2026-03-31
-pushed_at: 2026-04-05
+pushed_at: 2026-04-06
 first_seen: 2026-04-02
 week: "2026-W14"
 month: "2026-04"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-02
-use_case: "提供一個可運行、可構建、可調試的 Claude Code CLI 工具，具備企業級可靠性。"
+use_case: "提供一個可運行、可構建的 Claude Code CLI 工具，適合開發者進行 AI 編碼助手的開發。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-04-09"
 contributor_count: 5
 engagement: "high"
 issue_close_rate: 83
-repo_size_kb: 59884
+repo_size_kb: 60312
 readme_length: 3828
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-02"
-star_history: "2026-04-02:7790,2026-04-02:7914,2026-04-03:10736,2026-04-03:10850,2026-04-04:13023,2026-04-04:13026,2026-04-05:13577,2026-04-05:13580,2026-04-06:13897"
+star_history: "2026-04-02:7790,2026-04-02:7914,2026-04-03:10736,2026-04-03:10850,2026-04-04:13023,2026-04-04:13026,2026-04-05:13577,2026-04-05:13580,2026-04-06:13897,2026-04-06:13908"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "claude-code"
   - "claude-code-best/claude-code"
-  - "提供一個可運行、可構建、可調試的 Claude Code CLI 工具，具備企業級可靠性。"
+  - "提供一個可運行、可構建的 Claude Code CLI 工具，適合開發者進行 AI 編碼助手的開發。"
 ---
 
 # claude-code
 
-**13.6k** stars · **3.4k** stars/天 · 建立 4 天前 · TypeScript · 未標註授權
+**13.9k** stars · **2.8k** stars/天 · 建立 5 天前 · TypeScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/claude-code-best--claude-code");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `easy-install`
 
 > [!summary] 一句話摘要
-> 提供一個可運行、可構建、可調試的 Claude Code CLI 工具，具備企業級可靠性。
+> 提供一個可運行、可構建的 Claude Code CLI 工具，適合開發者進行 AI 編碼助手的開發。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (3.4k stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (2.8k stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** High
-> **適合** 需要在終端中運行 AI 編程助手的開發者，特別是對安全性和可靠性有高要求的企業團隊。
-> **一句話重點** 這個專案不僅是工具，還是一個活躍的開源社群，持續推動 AI 編程助手的發展。
+> **適合** 需要在本地環境中快速構建和測試 AI 編碼助手的開發者，尤其是在企業環境中。
+> **一句話重點** CCB 不僅是一個 CLI 工具，更是一個開放的 AI 編碼助手平台，適合各種開發需求。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,27 +101,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學、3 小時整合，得到高效的 AI 編程助手，值得。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學習，2 小時整合，得到一個靈活的 AI 編碼助手，值得一試。
 
 > [!abstract] 核心創新
-> 提供了一個開源的、企業級的 AI 編程助手 CLI 工具，具備高度的靈活性和安全性。
+> 提供了一個開源的、企業級的 AI 編碼助手 CLI 工具，具備多種擴展功能和安全性設計。
 
 ## 專案簡介
 
-Claude Code Best (CCB) 是一個反向工程的 CLI 工具，旨在重現 Anthropic 的 Claude Code 功能，讓開發者能夠在終端中與 AI 進行互動。使用者可以透過 `bun i -g claude-code-best` 安裝，然後使用 `ccb` 指令啟動 CLI 環境，並透過 `/login` 配置 API 連接。這個工具的賣點在於其高可靠性和安全性，特別是針對企業環境設計，並且支持多種功能開關，讓使用者能靈活調整功能。技術上，CCB 使用 Bun 作為執行環境，並利用 TypeScript 進行開發，這使得其具備良好的型別安全性和開發效率。與其他類似工具相比，如 OpenAI 的 CLI 工具，CCB 提供了更強的自定義能力和本地執行的選擇，特別適合需要私有化部署的企業。
+Claude Code Best (CCB) 是一個反向工程的 CLI 工具，旨在重現 Anthropic 的 Claude Code 功能，讓開發者能在終端中使用 AI 編碼助手。使用者可以透過 `ccb` 指令直接啟動工具，並在 REPL 環境中進行互動。這個工具的核心賣點在於其企業級的可靠性和安全性，並且支持多種功能如自定義登入和網頁搜索。技術上，CCB 使用了 Bun 作為執行環境，並採用代碼分割技術來構建，這使得最終產物能夠在 Node.js 和 Bun 環境中運行。與其他 CLI 工具相比，CCB 提供了更好的安全性和可擴展性，並且支持與第三方 API 的兼容性，這在許多開源替代品中並不常見。
 
-實際使用中，CCB 能夠處理複雜的 API 認證和多種功能開關，這在開發過程中能顯著提高效率。雖然目前仍在快速迭代中，但其穩定性和活躍的社群支持使其成為值得考慮的選擇。對於小型團隊或個人開發者來說，這是一個非常合適的工具，但在大型企業環境中，可能需要更多的測試和驗證。未來幾個月內，預計將會有更多功能和改進被加入，特別是在 API 兼容性和性能優化方面。
+實際使用中，開發者可以輕鬆配置 API 鍵和模型 ID，並透過 `/login` 指令進行設置。這個工具適合需要在本地環境中快速構建和測試 AI 編碼助手的開發者，尤其是在企業環境中。當前版本仍在活躍開發中，社群的參與度高，問題解決率達到 83%。未來可能會進一步模塊化和擴展功能，對於希望在 AI 編碼助手領域探索的團隊來說，這是一個值得關注的選擇。
 
-**技術棧**：`TypeScript` · `Bun >= 1.3.11`
+**技術棧**：`Bun >= 1.3.11` · `TypeScript` · `Node.js`
 
 ## 重點功能
 
-- 企業級可靠性 — 提供穩定的運行環境，適合商業用途。
-- 安全無毒 — 確保 lock 文件保真，避免依賴問題。
-- 多功能開關 — 透過環境變數啟用不同功能，靈活調整。
-- 即時反饋 — 在終端中直接與 AI 互動，提升開發效率。
-- API 兼容性 — 支持多種第三方 API，方便整合。
+- 即時 REPL 環境 — 使用 `ccb` 指令直接啟動，支持互動式編碼。
+- 企業級安全性 — 支持自定義登入和 API 鍵配置，確保數據安全。
+- 代碼分割構建 — 使用 `bun run build` 進行多文件打包，產物可在 Node.js 和 Bun 中運行。
+- 支持多種功能 — 包括網頁搜索、計算機使用模式等，擴展性強。
+- 活躍的社群支持 — 問題解決率高達 83%，社群互動頻繁。
 
 ## 快速開始
 
@@ -129,11 +129,11 @@ Claude Code Best (CCB) 是一個反向工程的 CLI 工具，旨在重現 Anthro
 ```bash
 bun i -g claude-code-best
 ```
-2. 信任安裝包
+2. 信任 CCB 安裝
 ```bash
 bun pm -g trust claude-code-best
 ```
-3. 啟動 CLI 環境
+3. 啟動 CCB
 ```bash
 ccb
 ```
@@ -142,7 +142,7 @@ ccb
 
 ```ts
 {
-  "前置條件": "已安裝 Bun 1.3.11 或更高版本",
+  "前置條件": "需要安裝 Bun 並確保版本 >= 1.3.11",
   "指令": "bun run dev",
   "預期輸出": "顯示版本號 888，表示運行成功。"
 }
@@ -151,53 +151,55 @@ ccb
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 13580 stars（3395/天），forks 13867（102.1%），顯示出極高的使用者興趣。這個專案由多位貢獻者共同維護，且其目標是填補市場上對於企業級 AI 編程助手的需求，特別是在安全性和可靠性方面。之前的解決方案往往缺乏靈活性和安全性，而 CCB 提供了開源的替代方案，讓開發者能夠在本地環境中運行 AI 工具。社群的活躍度和多樣化的功能需求也促進了其快速增長。
+> 建立 5 天內累積 13908 stars（2782/天），forks 14072（101.2%），顯示出極高的使用興趣。這個專案由一群活躍的開發者維護，他們在開源社群中有著良好的聲譽。CCB 解決了開發者在使用官方 Claude Code 工具時遇到的限制，提供了一個開放且可擴展的替代方案。近期的推廣活動和社群互動也促進了其快速增長。這個工具的出現正好滿足了對於安全、可擴展的 AI 編碼助手的需求，特別是在企業環境中。
 
 ## 適合誰使用
 
-**目標受眾**：需要在終端中運行 AI 編程助手的開發者，特別是對安全性和可靠性有高要求的企業團隊。
+**目標受眾**：需要在本地環境中快速構建和測試 AI 編碼助手的開發者，尤其是在企業環境中。
 
 > [!example] 使用場景
-> - 後端工程師用它來在終端中快速調用 AI 進行代碼補全，因為這能顯著提高開發效率，並減少錯誤。
-> - 企業開發團隊用它來構建自定義的 AI 編程助手，因為其支持多種 API 兼容性，能夠輕鬆整合現有系統。
-> - 獨立開發者用它來進行快速原型開發，因為其簡單的安裝流程和即時反饋能夠加快開發進度。
+> - 後端工程師用它來快速構建 AI 編碼助手，因為它提供了即時的 REPL 環境和簡單的 API 配置。
+> - DevOps 工程師用它來集成 AI 功能到現有的 CI/CD pipeline，因為它支持與多種 API 的兼容性和安全性。
+> - 開發者用它來測試和調試 AI 代碼，因為其企業級的可靠性和安全性讓測試過程更加順利。
 
 ## 架構分析
 
-CCB 採用 Bun 作為執行環境，這使得其具備快速的啟動時間和低資源佔用。整體架構上，CCB 使用了模組化設計，支持多個功能模組的獨立開發和測試。資料流方面，使用者的請求經由 CLI 進入主程式，然後根據功能開關進行相應處理，最後返回結果。這種設計使得功能擴展變得簡單，但也可能導致初期的學習曲線。擴展性方面，由於採用了 Bun，未來可以輕鬆整合更多的功能模組。
+CCB 採用模組化的架構設計，主要由 Bun 作為執行環境，並使用代碼分割技術來構建。這樣的設計使得最終產物能夠在多種環境中運行，並且便於擴展和維護。資料流方面，使用者通過 REPL 環境與工具互動，後端則通過 API 進行數據處理。選擇 Bun 而非其他環境的原因在於其高效能和快速啟動時間，但這也意味著對於 Bun 的依賴性較高，可能在未來的版本中造成兼容性問題。整體而言，這種設計使得 CCB 在功能擴展上具備良好的彈性，但也需要持續關注 Bun 的更新和變化。
 
 ## 技術深入分析
 
-CCB 的核心技術機制是基於 Bun 的 CLI 工具，這使得其在性能上具備優勢，能夠快速響應使用者的請求。由於使用 TypeScript 開發，CCB 在型別安全性上也有良好的表現，減少了潛在的錯誤。效能方面，CCB 能夠在本地環境中運行，這對於需要快速迭代的開發者來說是個優勢，但也意味著需要更多的本地資源。設計上，CCB 採用模組化架構，這讓功能的擴展變得容易，但也可能導致初期的學習曲線。技術風險方面，由於依賴於 Bun，未來如果 Bun 的生態發生變化，可能會影響到 CCB 的穩定性。整合方面，CCB 能夠與現有的 CI/CD 流程無縫對接，但對於某些特定功能的整合可能需要額外的適配工作。
+CCB 的核心技術機制是基於 Bun 的高效能執行環境，並利用 TypeScript 進行開發，這使得代碼結構清晰且易於維護。其使用的代碼分割技術能夠有效降低冷啟動時間，並提升整體性能。CCB 能夠處理的資料量相對較大，因為其設計上考慮了多個 chunk 文件的管理，這在大型專案中尤為重要。選擇 Bun 而非 Node.js 的原因在於其更快的啟動速度和更低的資源消耗，但這也意味著對 Bun 的依賴性增加，可能會影響未來的擴展性。技術風險方面，CCB 可能會面臨由於 Bun 更新導致的兼容性問題，這需要開發者持續關注。整合方面，CCB 能夠輕鬆與現有的 CI/CD pipeline 結合，並且支持多種 IDE 的插件，這使得它在開發流程中非常友好。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用範例，對新手友好。安裝過程順暢，無明顯坑點。文件有在線文檔支持，但缺乏多語言版本。
+> README 文件清晰且包含詳細的安裝步驟，對於新手來說相對容易上手。安裝過程順暢，無明顯的坑。提供了良好的快速開始指南，並且有多語言支持，對於不同背景的開發者友好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 高可靠性，適合企業環境使用。
-> - 靈活的功能開關，能根據需求調整。
-> - 開源，社群活躍，支持持續改進。
+> - 企業級安全性，支持 API 鍵和自定義登入配置。
+> - 活躍的社群支持，問題解決率高。
+> - 多功能擴展，支持網頁搜索和計算機使用模式等。
+> - 使用簡單，安裝和啟動過程流暢。
 
 > [!danger] 缺點
-> - 目前仍在快速迭代中，可能存在不穩定性。
-> - 需要 Bun 環境，對於不熟悉的開發者有學習成本。
-> - 某些功能可能需要額外的 API 設定，增加使用複雜度。
+> - 需要最新版本的 Bun，對於某些使用者可能造成困擾。
+> - 對於 GitHub 網路較差的地區，安裝過程可能不順利。
+> - 仍在活躍開發中，未來版本可能會有不穩定的 API 變更。
 
 > [!warning] 注意事項
-> - 僅支持 Bun 環境，需確保版本更新。
-> - 對於大型團隊，可能需要更多的測試和驗證。
-> - 某些功能可能需要額外的 API 設定。
+> - 需要最新版本的 Bun，否則可能會遇到各種錯誤。
+> - 對於 GitHub 網路較差的地區，需設置環境變量以確保正常運行。
+> - 目前仍在活躍開發中，未來版本可能會有不穩定的 API 變更。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [OpenAI/openai-cli](https://github.com/OpenAI/openai-cli) | OpenAI 的 CLI 工具主要依賴雲端 API，而 CCB 提供本地執行的選擇，適合需要私有化部署的用戶。 |
-| [Anthropic/claude](https://github.com/Anthropic/claude) | Anthropic 的官方工具可能缺乏 CCB 的自定義功能和靈活性，特別是在企業環境中。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的 CLI 工具，但主要聚焦於數據同步，而 CCB 更專注於 AI 編碼助手的功能。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | HolyClaude 提供的功能較為簡單，CCB 則擁有更全面的 API 兼容性和安全性設計。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 側重於數據隱私，而 CCB 則是針對 AI 編碼助手的開發，功能上有明顯差異。 |
 
 ## 替代方案決策
 
@@ -205,16 +207,16 @@ CCB 的核心技術機制是基於 Bun 的 CLI 工具，這使得其在性能上
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [OpenAI/openai-cli](https://github.com/OpenAI/openai-cli) | 依賴雲端 API，使用者需連接網路，而 CCB 提供本地執行的選擇。 | 如果你的團隊已經在使用 OpenAI 的生態系統，且不需要本地運行。 | medium，因為需要重新配置 API 連接和使用方式。 |
-| [Anthropic/claude](https://github.com/Anthropic/claude) | 官方工具，功能較為固定，缺乏 CCB 的靈活性。 | 如果需要官方支持和穩定性，且不需要高度自定義。 | low，因為功能相似，轉換成本較低。 |
+| Claude Code | Claude Code 是官方版本，提供了完整的功能，但缺乏開源的靈活性和擴展性。 | 如果需要官方支持和完整功能，則選擇 Claude Code 更合適。 | medium，因為需要重新配置和適應官方 API。 |
+| OpenAI Codex | OpenAI Codex 提供了強大的 AI 編碼能力，但需要付費使用，且不支持本地運行。 | 如果需要強大的 AI 編碼能力且不介意付費，則選擇 OpenAI Codex 更合適。 | high，因為需要重構整個開發流程以適應 OpenAI 的 API。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **claude-code** | **openai-cli** | **claude** |
+> | 維度 | **claude-code** | **Claude Code** | **OpenAI Codex** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 依賴雲端 API，使用者需連接網路，而 CCB 提供本地執行的選擇。 | 官方工具，功能較為固定，缺乏 CCB 的靈活性。 |
-> | 遷移成本 | - | medium，因為需要重新配置 API 連接和使用方式。 | low，因為功能相似，轉換成本較低。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 OpenAI 的生態系統，且不需要本 | 如果需要官方支持和穩定性，且不需要高度自定義。 |
+> | 技術路線 | 本專案 | Claude Code 是官方版本，提供了完整的功能，但缺乏開源的靈活性和擴展性。 | OpenAI Codex 提供了強大的 AI 編碼能力，但需要付費使用，且不支持本地運行。 |
+> | 遷移成本 | - | medium，因為需要重新配置和適應官方 API。 | high，因為需要重構整個開發流程以適應 OpenAI 的 API。 |
+> | 適用場景 | 主要場景 | 如果需要官方支持和完整功能，則選擇 Claude Code  | 如果需要強大的 AI 編碼能力且不介意付費，則選擇 Open |
 
 ## 成熟度評估
 
@@ -225,44 +227,43 @@ CCB 的核心技術機制是基於 Bun 的 CLI 工具，這使得其在性能上
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合開發者進行試用，但不建議在生產環境中使用。
+> 適合個人或小型團隊的實驗性專案，不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些環境中，Bun 版本不兼容可能導致運行失敗。
-  - 解法：確保使用最新版本的 Bun。
-- [MEDIUM] 首次運行時，API 配置可能不夠直觀。
-  - 解法：參考官方文檔進行配置。
-- [MEDIUM] 某些功能在特定環境下可能無法正常運行。
-  - 解法：在本地環境中進行測試，確保依賴完整。
+- **[HIGH]** 首次運行後需要手動配置 API 鍵，否則無法正常使用
+  - 解法：在 REPL 中使用 `/login` 指令進行配置
+- [MEDIUM] 在某些環境下安裝過程可能會失敗
+  - 解法：確保使用最新版本的 Bun，並檢查網路連接
+- [MEDIUM] 未來版本可能會有不穩定的 API 變更
+  - 解法：定期檢查更新和社群討論以獲取最新資訊
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊進行 AI 編程助手開發 | 非常適合 | 具備靈活的功能開關和本地執行能力。 |
-| 大型企業需要穩定的 AI 工具 | 普通 | 雖然可靠，但仍在快速迭代中。 |
-| 個人開發者進行快速原型開發 | 非常適合 | 安裝簡單且能快速反饋。 |
-| 需要高安全性的商業應用 | 適合 | 提供了企業級的可靠性和安全性。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 輕量級且易於配置，適合小型團隊快速開發。 |
+| 需要高安全性的企業環境 | 適合 | 提供企業級的安全性和 API 兼容性。 |
+| 大型企業的核心系統 | 不適合 | 仍在開發中，可能存在不穩定性和風險。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
-| 維護負擔 | medium |
-| 綁定風險 | low |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
+| 維護負擔 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、3 小時整合，得到高效的 AI 編程助手，值得。
+> 花 3 小時學習，2 小時整合，得到一個靈活的 AI 編碼助手，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：本工具不需要高權限運行，且不存取敏感資料。依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
+> CCB 本身不需要高權限，但需要配置 API 鍵，需注意安全性。依賴的庫和模組需定期檢查更新以避免潛在的安全風險。
 
 ## 健康度儀表板
 
@@ -327,41 +328,42 @@ CCB 的核心技術機制是基於 Bun 的 CLI 工具，這使得其在性能上
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 13.9k |
+| Forks | 14.1k |
 | Open Issues | 15 |
-| Issue 解決率 | 83% (71 closed) |
-| 最後推送 | 2026-04-04 |
+| Issue 解決率 | 83% (74 closed) |
+| 最後推送 | 2026-04-06 |
 | 建立日期 | 2026-03-31 |
 | 官方網站 | [Link](https://ccb.agent-aura.top/) |
-| Repo 大小 | 58.5 MB |
+| Repo 大小 | 58.9 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/claude-code-best/claude-code) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@claude-code-best](https://github.com/claude-code-best) | 155 |
+> | [@claude-code-best](https://github.com/claude-code-best) | 160 |
 > | [@smallflyingpig](https://github.com/smallflyingpig) | 3 |
 > | [@amDosion](https://github.com/amDosion) | 2 |
 > | [@JiayuuWang](https://github.com/JiayuuWang) | 2 |
-> | [@2228293026](https://github.com/2228293026) | 1 |
+> | [@sobird](https://github.com/sobird) | 2 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，經常有新功能和修復更新。
+**社群活躍度**：社群活躍，經常有新問題和功能討論。
 **連結**：[文件](https://ccb.agent-aura.top/) · [Discord](https://discord.gg/qZU6zS7Q)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-04 ~ 2026-04-04）
-> **活躍天數** 1 天 · **最新 commit** Revert "docs: 更新 README，新增 Run.ps1/TODO.md，删除 V6.md"
+> [!abstract] 最近 10 次 commit（2026-04-05 ~ 2026-04-05）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #140 from amDosion/feat/enable-safe-feature-flags
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#13](https://github.com/claude-code-best/claude-code/issues/13) | [留影专用]: 大家想留影就到这里来吧 | 25 | 121 |
-> | [#128](https://github.com/claude-code-best/claude-code/issues/128) | 依然无法获取项目级agents | 0 | 1 |
+> | [#13](https://github.com/claude-code-best/claude-code/issues/13) | [留影专用]: 大家想留影就到这里来吧 | 26 | 123 |
+> | [#133](https://github.com/claude-code-best/claude-code/issues/133) | Error writing file   和   Invalid tool parameters  报错 | 0 | 4 |
+> | [#131](https://github.com/claude-code-best/claude-code/issues/131) | 希望大佬研究pipe，这样可以复用官方agent teams land的代码实现群控. | 0 | 1 |
 
 ## README 摘錄
 
@@ -508,9 +510,9 @@ CCB 的核心技術機制是基於 Bun 的 CLI 工具，這使得其在性能上
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化]] · [[API 設計]]
+相關概念：[[CLI/TUI]] · [[自動化測試]] · [[API 設計]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[NanmiCoder--claude-code-haha|NanmiCoder/claude-code-haha]] · [[TianyiDataScience--openclaw-control-center|TianyiDataScience/openclaw-control-center]] · [[TinyAGI--fractals|TinyAGI/fractals]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[NanmiCoder--claude-code-haha|NanmiCoder/claude-code-haha]] · [[TianyiDataScience--openclaw-control-center|TianyiDataScience/openclaw-control-center]]
 
 [GitHub](https://github.com/claude-code-best/claude-code) · [官方網站](https://ccb.agent-aura.top/)
 
@@ -552,7 +554,7 @@ CCB 的核心技術機制是基於 Bun 的 CLI 工具，這使得其在性能上
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化","API 設計"];
+> const concepts = ["CLI/TUI","自動化測試","API 設計"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "claude-code-best--claude-code" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

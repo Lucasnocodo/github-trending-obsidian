@@ -7,10 +7,10 @@ language: TypeScript
 license: NOASSERTION
 description: "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs."
 homepage: ""
-stars: 16481
-stars_per_day: 4120
-forks: 5767
-open_issues: 81
+stars: 16489
+stars_per_day: 4122
+forks: 5769
+open_issues: 82
 created: 2026-04-01
 pushed_at: 2026-04-05
 first_seen: 2026-04-02
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-02
-use_case: "提供統一 CLI 介面，整合多種 AI 模型的編碼代理。"
+use_case: "提供一個統一的 CLI 工具，讓開發者能夠使用多種 AI 模型進行編碼和開發工作。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 5
 next_review: "2026-04-09"
 contributor_count: 5
 engagement: "high"
-issue_close_rate: 52
-repo_size_kb: 10064
-readme_length: 8272
+issue_close_rate: 59
+repo_size_kb: 13029
+readme_length: 9333
 bus_factor: 2
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-02"
-star_history: "2026-04-02:3599,2026-04-02:3635,2026-04-03:7609,2026-04-03:7630,2026-04-04:11768,2026-04-04:11794,2026-04-05:14725,2026-04-05:14735,2026-04-06:16481"
+star_history: "2026-04-02:3599,2026-04-02:3635,2026-04-03:7609,2026-04-03:7630,2026-04-04:11768,2026-04-04:11794,2026-04-05:14725,2026-04-05:14735,2026-04-06:16481,2026-04-06:16489"
 tags:
   - github
   - "category/開發工具"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "openclaude"
   - "Gitlawb/openclaude"
-  - "提供統一 CLI 介面，整合多種 AI 模型的編碼代理。"
+  - "提供一個統一的 CLI 工具，讓開發者能夠使用多種 AI 模型進行編碼和開發工作。"
 ---
 
 # openclaude
 
-**14.7k** stars · **4.9k** stars/天 · 建立 3 天前 · TypeScript · NOASSERTION
+**16.5k** stars · **4.1k** stars/天 · 建立 4 天前 · TypeScript · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/Gitlawb--openclaude");
@@ -73,13 +73,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供統一 CLI 介面，整合多種 AI 模型的編碼代理。
+> 提供一個統一的 CLI 工具，讓開發者能夠使用多種 AI 模型進行編碼和開發工作。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (4.9k stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (4.1k stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** High
-> **適合** 需要快速接入多種 AI 模型的開發者，特別是在使用 CLI 工具的環境中。
-> **一句話重點** OpenClaude 的最大優勢在於其能夠統一多種 AI 模型的使用，讓開發者在同一 CLI 環境中高效工作。
+> **適合** 需要在多種 AI 模型間切換並整合開發工作流程的全端開發者。
+> **一句話重點** OpenClaude 的設計讓開發者能夠無縫地在多種 AI 模型之間切換，提升了開發效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,39 +102,39 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學、1 小時整合，得到統一的多模型接入工具，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，3 小時整合，得到靈活的多模型支持，值得一試。
 
 > [!abstract] 核心創新
-> 提供統一的 CLI 介面來接入多種 AI 模型，簡化開發者的工作流程。
+> OpenClaude 提供一個統一的 CLI 工具，讓開發者能夠使用多種 AI 模型進行編碼和開發工作。
 
 ## 專案簡介
 
-OpenClaude 是一個開源的編碼代理 CLI，旨在整合多個 AI 模型的使用，讓開發者可以通過一個統一的命令行介面來接入 OpenAI、Gemini、Codex、Ollama 等多種模型。使用者只需執行 `openclaude` 指令，即可啟動 CLI，並透過 `/provider` 指令進行模型的設置與管理。這種設計使得開發者可以在同一個環境中流暢地切換不同的 AI 服務，避免了傳統上需要多個 CLI 工具的繁瑣。技術上，OpenClaude 利用 TypeScript 和多個 Node.js 套件來實現其功能，並提供了多種開發指令，如 `npm install -g @gitlawb/openclaude` 來進行安裝，並支援多種環境變數設置以快速配置。這個工具的賣點在於其能夠將多個 AI 服務整合在一個 CLI 中，並且支援即時的命令輸入與回應，提升了開發效率。
+OpenClaude 是一個開源的 CLI 工具，旨在統一各種 AI 模型的使用，無論是雲端還是本地模型。用戶可以透過 OpenAI 相容的 API、Gemini、Codex、Ollama 等多種後端進行編碼工作，並且保持一個終端優先的工作流程。其核心賣點在於提供一個簡單的指令介面，使用者只需執行 `openclaude` 即可進入 CLI 環境，並透過 `/provider` 指令進行模型設置，或使用 `/onboard-github` 進行 GitHub 模型的快速上手。技術上，OpenClaude 使用 TypeScript 和 JavaScript 實作，並依賴 Bun 作為執行環境，這使得其在性能上相對輕量且快速。
 
-與其他工具相比，如 AlpinDale/parsync 和 CoderLuii/HolyClaude，OpenClaude 提供了更為直觀的用戶介面和更廣泛的模型支援，特別是在與 GitHub 模型的整合上，使用者可以通過 `/onboard-github` 指令進行簡單的設置。這使得 OpenClaude 在需要多模型支援的開發環境中，特別適合快速迭代和測試的場景。使用者在使用過程中，可能會遇到如安裝依賴不全的問題，需確保系統中安裝了 `ripgrep` 等工具。整體來看，OpenClaude 目前處於 beta 階段，對於需要快速接入多種 AI 模型的開發者來說，這是一個值得考慮的工具。
+與其他類似工具相比，如 AlpinDale/parsync 和 CoderLuii/HolyClaude，OpenClaude 提供了更為廣泛的模型支持和更靈活的工作流程設計，特別是在多步驟工具調用和即時響應方面。使用者可以在多種環境中運行，無論是本地伺服器還是雲端服務，並且支援多種編碼工具和命令，這使得它在開發過程中非常靈活。儘管如此，使用者可能會遇到一些模型之間行為不一致的問題，特別是當使用較小的本地模型時，這可能會影響多步驟工具流的效果。整體來看，OpenClaude 是一個值得考慮的工具，特別是對於需要整合多種 AI 模型的開發者來說，未來可能會進一步增強對新模型的支持，並改善使用者體驗。
 
-**技術棧**：`TypeScript` · `Node.js` · `Bun`
+**技術棧**：`TypeScript` · `JavaScript` · `Bun`
 
 ## 重點功能
 
-- 統一 CLI 介面 — 支援 OpenAI、Gemini、Codex 等 200+ 模型，讓開發者不需切換多個工具。
-- 簡單的模型設置 — 使用 `/provider` 指令進行模型配置，快速上手。
-- VS Code 擴展支援 — 提供 VS Code 插件，方便在開發環境中直接使用。
-- 即時命令輸入 — 支援流式輸出，提升使用者互動體驗。
-- 多環境支援 — 可在 macOS、Linux 和 Windows 上運行，並提供相應的安裝指令。
+- 統一 CLI 界面 — 支持 OpenAI、Gemini、Codex、Ollama 等多種模型，使用者只需一個工具即可操作。
+- 即時響應 — 提供流式輸出，讓用戶能夠實時查看模型的回應和進度。
+- 多步驟工具調用 — 支持複雜的工具調用流程，適合需要多次交互的編碼任務。
+- 模型配置簡單 — 使用 `/provider` 指令輕鬆設置和管理模型配置。
+- VS Code 擴展支持 — 提供 VS Code 擴展，便於在開發環境中直接使用。
 
 ## 快速開始
 
-1. 全域安裝 OpenClaude
+1. 全局安裝 OpenClaude
 ```bash
 npm install -g @gitlawb/openclaude
 ```
-2. 啟動 OpenClaude
+2. 啟動 OpenClaude CLI
 ```bash
 openclaude
 ```
-3. 設置 OpenAI 模型
+3. 設置 OpenAI 模型環境變數
 ```bash
 export CLAUDE_CODE_USE_OPENAI=1; export OPENAI_API_KEY=sk-your-key-here; export OPENAI_MODEL=gpt-4o; openclaude
 ```
@@ -142,67 +142,63 @@ export CLAUDE_CODE_USE_OPENAI=1; export OPENAI_API_KEY=sk-your-key-here; export 
 ## 程式碼範例
 
 ```ts
-{
-  "前置條件": "已安裝 OpenClaude 並設置環境變數",
-  "指令": "openclaude",
-  "預期輸出": "啟動 OpenClaude CLI，準備接收命令"
-}
+[
+  "# 前置條件（需要安裝 OpenClaude）",
+  "openclaude",
+  "# 預期輸出：進入 OpenClaude CLI 環境，並可使用指令如 `/provider` 進行設置。"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 14735 stars（4912/天），forks 5147（34.9%），這顯示出強烈的社群參與。作者 kevincodex1 和團隊在開源社群中有一定的影響力，這個工具解決了開發者在使用多個 AI 模型時的繁瑣流程，之前開發者通常需要分別安裝和配置不同的 CLI 工具，這樣的方式效率低下。近期的推廣和討論也促進了這個專案的曝光率，特別是在 Reddit 和 Hacker News 的討論中引起了關注。這個工具的出現正好填補了市場上對於統一 AI 模型接入工具的需求，並且其高 forks/stars 比率（34.9%）表明許多開發者正在實際使用並修改這個工具。
+> 建立 4 天內累積 16489 stars（4122/天），forks 5769（35.0%），這顯示出強烈的社群參與度。作者 kevincodex1 和其他貢獻者在開源社群中活躍，這個專案解決了開發者在使用多種 AI 模型時的整合問題，以前的解決方案往往需要多個工具來完成相同的任務。這個專案的推出引起了廣泛的討論，特別是在 GitHub Issues 和 Discussions 中，顯示出使用者對其功能的需求和期待。技術上，OpenClaude 的設計使得它能夠在多種環境中靈活運行，這在當前的開發生態中是非常重要的。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速接入多種 AI 模型的開發者，特別是在使用 CLI 工具的環境中。
+**目標受眾**：需要在多種 AI 模型間切換並整合開發工作流程的全端開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來整合多種 AI 模型進行代碼生成，因為可以通過一個 CLI 簡化多模型的使用流程。
-> - 資料科學家用它來快速測試不同的模型效果，因為可以在同一個環境中切換不同的 AI 提供者。
-> - 初創公司開發者用它來加速產品開發，因為能夠快速接入多種 AI 服務，提升開發效率。
+> - 後端工程師用它來整合多種 AI 模型進行代碼生成，因為這樣可以節省時間並提高生產力，特別是在需要快速迭代的開發環境中。
+> - 資料科學家用它來測試不同的模型效果，因為它支持多種本地和雲端模型，讓他們能夠快速比較和選擇最佳方案。
+> - DevOps 工程師用它來自動化 CI/CD 流程中的代碼檢查，因為它的 CLI 工具可以輕鬆集成到現有的工作流程中。
 
 ## 架構分析
 
-OpenClaude 採用模組化的架構設計，主要由 TypeScript 實現，並利用 Node.js 作為執行環境。CLI 的核心功能集中在 `cli.mjs` 中，並透過多個指令來管理不同的 AI 模型。這種設計使得開發者可以輕鬆擴展和維護各種模型的接入。
-
-資料流方面，使用者的命令會被解析並轉發至對應的模型提供者，並將結果即時回傳。選擇使用 Node.js 的原因在於其豐富的生態系和良好的非同步處理能力，這對於需要即時反應的 CLI 工具至關重要。這樣的設計雖然增加了初期的學習成本，但長期來看能夠提供更靈活的擴展性，尤其是在面對不斷變化的 AI 模型市場時。
-
-整體來說，這種架構設計使得 OpenClaude 在面對多變的需求時，能夠快速適應和調整。
+OpenClaude 採用模組化的架構，核心是用 TypeScript 實作的 CLI 工具，並使用 Bun 作為執行環境，這使得其在性能上相對輕量。資料流方面，使用者透過 CLI 指令與不同的 AI 模型進行交互，支持即時響應和多步驟工具調用。選擇 Bun 作為執行環境的好處在於其快速的啟動時間和輕量級的依賴，但可能在某些情況下限制了對其他 Node.js 生態系的支持。整體架構設計考量了使用者的靈活性和擴展性，未來可能會進一步增強對新模型的支持。
 
 ## 技術深入分析
 
-OpenClaude 的核心技術機制在於其模組化設計，使用 TypeScript 實現，並利用 Node.js 進行非同步處理。這使得 CLI 能夠快速解析使用者輸入的命令，並將其轉發至相應的 AI 模型提供者。效能方面，該工具能夠即時回應使用者的請求，並在多種環境中保持穩定運行。設計上，選擇 Node.js 是因為其豐富的生態系和良好的非同步處理能力，這對於需要即時反應的 CLI 工具至關重要。這種選擇雖然增加了初期的學習成本，但長期來看能夠提供更靈活的擴展性。技術風險方面，隨著使用者數量的增加，可能會面臨性能瓶頸，特別是在高併發的情況下。整合方面，OpenClaude 可以與主流的 CI/CD 工具如 GitHub Actions 無縫對接，並且支援 VS Code 插件，這使得開發者能夠在熟悉的環境中使用該工具。
+OpenClaude 的核心技術機制是基於 CLI 的多模型支持，使用 TypeScript 和 Bun 作為開發語言和執行環境。其設計模式採用模組化架構，讓使用者能夠透過簡單的指令與不同的 AI 模型進行交互。效能方面，OpenClaude 能夠快速啟動並即時響應使用者的請求，這對於需要快速迭代的開發環境非常重要。選擇 Bun 作為執行環境的好處在於其輕量和快速，但可能在某些情況下限制了對其他 Node.js 生態系的支持。技術風險方面，對於小型模型的支持可能在未來的擴展中出現瓶頸，特別是在需要長時間運行的情況下。整合方面，OpenClaude 能夠與多種主流開發工具和 CI/CD 流程無縫對接，這使得它在現有的開發生態中具有良好的兼容性。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和使用指導，並包含範例指令。安裝過程相對順暢，但需注意安裝依賴的要求。文件中有針對不同平台的快速入門指南，適合新手使用。
+> README 文件提供了清晰的安裝和使用指引，並包含範例指令。安裝過程相對順暢，但需要注意額外依賴的安裝。提供了良好的入門指南，適合新手使用。文件目前僅提供英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 整合多種 AI 模型，提升開發效率。
-> - 提供即時命令輸入和流式輸出，改善使用者體驗。
-> - 支援多平台運行，方便不同環境的開發者使用。
+> - 支持多種 AI 模型，提供靈活的工作流程。
+> - 即時響應功能，提升開發效率。
+> - 簡單的 CLI 界面，降低使用門檻。
 
 > [!danger] 缺點
-> - 仍在 beta 階段，可能存在穩定性問題。
-> - 需要額外安裝依賴，增加安裝複雜度。
-> - 對某些模型的支援可能不夠完善，使用者需自行測試。
+> - 對於小型模型的支持可能不如大型模型穩定。
+> - 某些功能在不同模型間表現不一致。
+> - 需要額外安裝某些依賴（如 ripgrep）才能正常運行。
 
 > [!warning] 注意事項
-> - 需要安裝 `ripgrep` 作為依賴，否則無法正常啟動。
-> - 目前仍在 beta 階段，可能存在未解決的 bug。
-> - 對於某些模型的支援可能不夠完善，使用者需自行測試。
+> - 對於較小的本地模型，可能在長多步驟工具流中表現不佳。
+> - 某些提供者可能會對輸出進行限制，影響 CLI 的預設行為。
+> - 使用者需自行安裝 ripgrep，否則可能會遇到啟動問題。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供多種資料同步功能，但不支援多模型接入，適合單一任務的資料處理。 |
-| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於特定模型的使用，而 OpenClaude 提供更廣泛的模型支援和統一的 CLI 介面。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步和傳輸，而 OpenClaude 提供更廣泛的 AI 模型支持和編碼工具整合。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | HolyClaude 主要針對特定模型進行優化，而 OpenClaude 支援多種模型，提供更靈活的工作流程。 |
 
 ## 替代方案決策
 
@@ -210,64 +206,94 @@ OpenClaude 的核心技術機制在於其模組化設計，使用 TypeScript 實
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步功能，並不支援多模型接入，適合單一任務的資料處理。 | 如果你的需求主要是資料同步，而不需要多模型的支援。 | low，因為功能範圍較小，易於替換。 |
-| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於特定模型的使用，無法提供 OpenClaude 的廣泛模型支援。 | 如果你的團隊已經在使用 HolyClaude，且不需要其他模型的整合。 | medium，因為需要重新適應不同的 CLI 工具。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步和傳輸，而 OpenClaude 提供更廣泛的 AI 模型支持和編碼工具整合。 | 如果你的主要需求是資料同步而非多模型支持，則可以選擇 AlpinDale/parsync。 | medium，因為需要重新設計工作流程以適應不同的工具。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | HolyClaude 主要針對特定模型進行優化，而 OpenClaude 支援多種模型，提供更靈活的工作流程。 | 如果你的團隊已經在使用 HolyClaude 並且只需要一個特定模型的優化，則可以考慮繼續使用它。 | low，因為 HolyClaude 和 OpenClaude 的使用方式相似。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **openclaude** | **parsync** | **HolyClaude** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於資料同步功能，並不支援多模型接入，適合單一任務的資料處理。 | 專注於特定模型的使用，無法提供 OpenClaude 的廣泛模型支援。 |
-> | 遷移成本 | - | low，因為功能範圍較小，易於替換。 | medium，因為需要重新適應不同的 CLI 工具。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是資料同步，而不需要多模型的支援。 | 如果你的團隊已經在使用 HolyClaude，且不需要其他模 |
+> | 技術路線 | 本專案 | 專注於資料同步和傳輸，而 OpenClaude 提供更廣泛的 AI 模型支持和編碼工具整合。 | HolyClaude 主要針對特定模型進行優化，而 OpenClaude 支援多種模型，提供更靈活的工作流程。 |
+> | 遷移成本 | - | medium，因為需要重新設計工作流程以適應不同的工具。 | low，因為 HolyClaude 和 OpenClaude 的使用方式相似。 |
+> | 適用場景 | 主要場景 | 如果你的主要需求是資料同步而非多模型支持，則可以選擇 Alp | 如果你的團隊已經在使用 HolyClaude 並且只需要一個 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合個人 side project 試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 安裝時可能會遇到 `ripgrep not found` 的錯誤
-  - 解法：確保系統中已安裝 `ripgrep` 並可用
-- [MEDIUM] 某些模型的支援可能不夠完善，使用者需自行測試
-  - 解法：在使用前進行充分的測試
-- **[HIGH]** 在高併發情況下可能會出現性能瓶頸
-  - 解法：考慮使用負載平衡或分散式架構
+- **[HIGH]** 使用 GitHub 模型時可能遇到的 onboarding 失敗問題
+  - 解法：檢查 API 權限設置，確保正確配置。
+- [MEDIUM] CLI 崩潰的 TypeError 錯誤
+  - 解法：確保所有依賴已正確安裝，並檢查使用的模型是否支持。
+- [MEDIUM] 某些模型的工具質量可能不一致
+  - 解法：選擇性能較好的模型進行關鍵任務。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠快速接入多種 AI 模型，提升開發效率。 |
-| 大型企業的核心系統 | 不適合 | 目前仍在 beta 階段，穩定性不足。 |
-| 資料科學團隊進行模型測試 | 適合 | 支援多種模型，便於快速迭代和測試。 |
-| 個人開發者的 side project | 非常適合 | 簡單易用，能夠快速上手。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 提供多種模型支持，能夠靈活應對不同需求。 |
+| 大型企業的生產環境 | 不適合 | 目前處於 alpha 階段，穩定性和性能尚未達到生產要求。 |
+| 需要快速迭代的開發團隊 | 適合 | 即時響應和多步驟工具調用功能能夠提升開發效率。 |
+| 資料科學研究團隊 | 普通 | 雖然支持多種模型，但對於特定模型的優化可能不足。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
-| 綁定風險 | low |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | medium |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學、1 小時整合，得到統一的多模型接入工具，值得嘗試。
+> 花 2 小時學習，3 小時整合，得到靈活的多模型支持，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，但需注意 API 金鑰的安全性。依賴鏈的信任程度較高，無已知的供應鏈風險。
+> 低風險：OpenClaude 本身不需要高權限，且不會存取敏感資料，但使用者需注意 API 金鑰的安全性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+OpenClaude 最常與 VS Code 和其他 CLI 工具搭配使用，適合在開發和測試環境中進行集成。使用者可以在 VS Code 中安裝相應的擴展，並透過 CLI 指令進行操作。與主流 CI 工具如 GitHub Actions 兼容，能夠在自動化流程中輕鬆集成。整合過程中，使用者可能需要處理某些依賴問題，特別是在使用特定模型時，需確保所有必要的環境變數已正確設置。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 OpenClaude 出現之前，開發者通常需要使用多個工具來整合不同的 AI 模型，這樣的工作流程繁瑣且效率低下。隨著 AI 模型的多樣化和需求的增加，開發者迫切需要一個統一的解決方案。OpenClaude 的出現正好滿足了這一需求，並且其開源特性使得社群能夠持續改進和擴展功能。
+
+未來，隨著 AI 技術的進步，OpenClaude 可能會進一步增強對新模型的支持，並改善使用者體驗。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-5 人的小型團隊
+
+**前置技能**：
+- 熟悉 CLI 工具使用
+- 基本的 JavaScript/TypeScript 知識
+
+> [!tip] 導入策略
+> 第一週：在個人專案中試用 OpenClaude。第二週：在小型團隊內部工具中導入。第三週：收集使用反饋並調整使用方式。第四週：在主要專案中進行實驗性使用。
+
+**成功指標**：開發效率提升 30%，減少工具切換時間。
+
+> [!warning] 退出計畫
+> 若需退出，所有設定均存儲為 JSON 格式，便於轉換為其他工具的配置。
 
 ## 健康度儀表板
 
@@ -332,32 +358,32 @@ OpenClaude 的核心技術機制在於其模組化設計，使用 TypeScript 實
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 5.1k |
-| Open Issues | 87 |
-| Issue 解決率 | 52% (96 closed) |
-| 最後推送 | 2026-04-04 |
+| Forks | 5.8k |
+| Open Issues | 82 |
+| Issue 解決率 | 59% (119 closed) |
+| 最後推送 | 2026-04-05 |
 | 建立日期 | 2026-04-01 |
-| Repo 大小 | 9.8 MB |
+| Repo 大小 | 12.7 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Gitlawb/openclaude) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@kevincodex1](https://github.com/kevincodex1) | 102 |
+> | [@kevincodex1](https://github.com/kevincodex1) | 104 |
 > | [@gnanam1990](https://github.com/gnanam1990) | 44 |
 > | [@Vasanthdev2004](https://github.com/Vasanthdev2004) | 36 |
-> | [@auriti](https://github.com/auriti) | 20 |
-> | [@anandh8x](https://github.com/anandh8x) | 14 |
+> | [@auriti](https://github.com/auriti) | 23 |
+> | [@anandh8x](https://github.com/anandh8x) | 16 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，定期有更新和討論。
-**連結**：[文件](https://github.com/Gitlawb/openclaude)
+**社群活躍度**：社群活躍，定期更新和回應使用者問題。
+**連結**：[文件](https://github.com/Gitlawb/openclaude/docs)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-04 ~ 2026-04-04）
-> **活躍天數** 1 天 · **最新 commit** feat: activate buddy system in open build (#346)
+> [!abstract] 最近 10 次 commit（2026-04-05 ~ 2026-04-05）
+> **活躍天數** 1 天 · **最新 commit** fix: coalesce consecutive same-role messages for strict template models (#241)
 
 ## 熱門議題
 
@@ -365,10 +391,10 @@ OpenClaude 的核心技術機制在於其模組化設計，使用 TypeScript 實
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#297](https://github.com/Gitlawb/openclaude/issues/297) | agent mascot... | 6 | 1 |
-> | [#368](https://github.com/Gitlawb/openclaude/issues/368) | ‼️ can you help spread the awareness about this malware repo | 5 | 0 |
 > | [#363](https://github.com/Gitlawb/openclaude/issues/363) | I am still unable to type | 5 | 13 |
-> | [#300](https://github.com/Gitlawb/openclaude/issues/300) | 
-# Bug: OpenClaude ignora OPENAI_MODEL e tenta usar gemini-2 | 2 | 0 |
+> | [#378](https://github.com/Gitlawb/openclaude/issues/378) | Feature Request: Add support for --channels flag (Telegram/M | 4 | 0 |
+> | [#293](https://github.com/Gitlawb/openclaude/issues/293) | [Bug]: /onboard-github failure (invalid_scope) and CLI crash | 3 | 3 |
+> | [#286](https://github.com/Gitlawb/openclaude/issues/286) | Add support for llama-swap and llama.cpp | 3 | 1 |
 
 ## README 摘錄
 
@@ -571,11 +597,56 @@ OpenClaude 的核心技術機制在於其模組化設計，使用 TypeScript 實
 > Helpful commands:
 > 
 > - `bun run dev`
+> - `bun test`
+> - `bun run test:coverage`
+> - `bun run security:pr-scan -- --base origin/main`
 > - `bun run smoke`
 > - `bun run doctor:runtime`
 > - `bun run verify:privacy`
 > - focused `bun test ...` runs for the areas you touch
 > 
+> ## Testing And Coverage
+> 
+> OpenClaude uses Bun's built-in test runner for unit tests.
+> 
+> Run the full unit suite:
+> 
+> ```bash
+> bun test
+> ```
+> 
+> Generate unit test coverage:
+> 
+> ```bash
+> bun run test:coverage
+> ```
+> 
+> Open the visual coverage report:
+> 
+> ```bash
+> open coverage/index.html
+> ```
+> 
+> If you already have `coverage/lcov.info` and only want to rebuild the UI:
+> 
+> ```bash
+> bun run test:coverage:ui
+> ```
+> 
+> Use focused test runs when you only touch one area:
+> 
+> - `bun run test:provider`
+> - `bun run test:provider-recommendation`
+> - `bun test path/to/file.test.ts`
+> 
+> Recommended contributor validation before opening a PR:
+> 
+> - `bun run build`
+> - `bun run smoke`
+> - `bun run test:coverage` for broader unit coverage when your change affects shared runtime or provider logic
+> - focused `bun test ...` runs for the files and flows you changed
+> 
+> Coverage output is written to `coverage/lcov.info`, and OpenClaude also generates a git-activity-style heatmap at `coverage/index.html`.
 > ## Repository Structure
 > 
 > - `src/` - core CLI/runtime
@@ -583,39 +654,11 @@ OpenClaude 的核心技術機制在於其模組化設計，使用 TypeScript 實
 > - `docs/` - setup, contributor, and project documentation
 > - `python/` - standalone Python helpers and their tests
 > - `vscode-extension/openclaude-vscode/` - VS Code extension
-> - `.github/` - repo automation, templates, and CI configuration
-> - `bin/` - CLI launcher entrypoints
-> 
-> ## VS Code Extension
-> 
-> The repo includes a VS Code extension in [`vscode-extension/openclaude-vscode`](vscode-extension/openclaude-vscode) for OpenClaude launch integration, provider-aware control-center UI, and theme support.
-> 
-> ## Security
-> 
-> If you believe you found a security issue, see [SECURITY.md](SECURITY.md).
-> 
-> ## Community
-> 
-> - Use [GitHub Discussions](https://github.com/Gitlawb/openclaude/discussions) for Q&A, ideas, and community conversation
-> - Use [GitHub Issues](https://github.com/Gitlawb/openclaude/issues) for confirmed bugs and actionable feature work
-> 
-> ## Contributing
-> 
-> Contributions are welcome.
-> 
-> For larger changes, open an issue first so the scope is clear before implementation. Helpful validation commands include:
-> 
-> - `bun run build`
-> - `bun run smoke`
-> - focused `bun test ...` runs for touched areas
-> 
-> ## Disclaimer
-> 
-> OpenClaude is an independent community project and is not affiliated with, endorsed by, or sponsored by Anthropic.
+> - `.github/` - 
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[多模態]] · [[自動化測試]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[多模態]]
 
 相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jxnxts--mcp-brasil|jxnxts/mcp-brasil]] · [[elder-plinius--G0DM0D3|elder-plinius/G0DM0D3]] · [[wong2--weixin-agent-sdk|wong2/weixin-agent-sdk]]
 
@@ -659,7 +702,7 @@ OpenClaude 的核心技術機制在於其模組化設計，使用 TypeScript 實
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","多模態","自動化測試"];
+> const concepts = ["CLI/TUI","自動化","多模態"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Gitlawb--openclaude" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

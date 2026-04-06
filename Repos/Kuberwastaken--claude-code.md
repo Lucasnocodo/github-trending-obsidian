@@ -7,12 +7,12 @@ language: Rust
 license: GPL-3.0
 description: "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries"
 homepage: "https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it"
-stars: 8063
-stars_per_day: 2016
-forks: 7505
+stars: 8297
+stars_per_day: 1659
+forks: 7561
 open_issues: 10
 created: 2026-03-31
-pushed_at: 2026-04-04
+pushed_at: 2026-04-05
 first_seen: 2026-04-01
 week: "2026-W14"
 month: "2026-04"
@@ -26,23 +26,23 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-01
-use_case: "提供一個用 Rust 實作的終端編碼代理，並分析 Claude 代碼洩漏的細節。"
+use_case: "提供一個用 Rust 實作的終端編碼代理，並深入分析 Claude 代碼洩漏事件。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 1
 next_review: "2026-04-04"
-contributor_count: 1
+contributor_count: 2
 engagement: "high"
-issue_close_rate: 63
-repo_size_kb: 3582
-readme_length: 9935
+issue_close_rate: 66
+repo_size_kb: 4037
+readme_length: 9984
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-01"
-star_history: "2026-04-01:3470,2026-04-01:3557,2026-04-02:6609,2026-04-03:7387,2026-04-04:7803,2026-04-05:8063"
+star_history: "2026-04-01:3470,2026-04-01:3557,2026-04-02:6609,2026-04-03:7387,2026-04-04:7803,2026-04-05:8063,2026-04-06:8297"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "claurst"
   - "Kuberwastaken/claurst"
-  - "提供一個用 Rust 實作的終端編碼代理，並分析 Claude 代碼洩漏的細節。"
+  - "提供一個用 Rust 實作的終端編碼代理，並深入分析 Claude 代碼洩漏事件。"
 ---
 
 # claurst
 
-**8.1k** stars · **2.0k** stars/天 · 建立 4 天前 · Rust · GPL-3.0
+**8.3k** stars · **1.7k** stars/天 · 建立 5 天前 · Rust · GPL-3.0
 
 ```dataviewjs
 const me = dv.page("Repos/Kuberwastaken--claurst");
@@ -68,16 +68,14 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案`
-
 > [!summary] 一句話摘要
-> 提供一個用 Rust 實作的終端編碼代理，並分析 Claude 代碼洩漏的細節。
+> 提供一個用 Rust 實作的終端編碼代理，並深入分析 Claude 代碼洩漏事件。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (2.0k stars/day)
-> **授權** GPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 需要隱私保護且希望在終端中快速編碼的獨立開發者。
-> **一句話重點** CLAURST 不僅是對 Claude Code 的重實作，更是對開源編碼代理的一次隱私和性能的重新思考。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (1.7k stars/day)
+> **授權** GPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** High
+> **適合** 需要在終端中使用高效能 AI 編碼助手的開發者，特別是對隱私和記憶體效率有高要求的人。
+> **一句話重點** CLAURST 不僅是對 Claude 代碼的重建，更是對於高效能編碼代理的一次全新探索。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,108 +99,92 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習，10 小時整合，得到高效能的編碼工具，值得考慮。
+> **結論** 花 5 小時學習，10 小時整合，得到高效能的編碼代理，值得投入。
 
 > [!abstract] 核心創新
-> 這個專案是對 Claude Code 行為的清潔室重實作，完全不參考原始 TypeScript 代碼。
+> 這個專案是對 Claude 代碼的清房工程重建，避免了版權問題。
 
 ## 專案簡介
 
-CLAURST 是一個用 Rust 實作的終端編碼代理，旨在提供更高效的編碼體驗。使用者可以透過 `/connect` 指令連接到不同的 AI 提供者，並享受無追蹤的編碼環境。這個專案的設計基於對 Claude Code 洩漏的深入分析，並在記憶體使用上優於原始版本。核心機制是透過編譯時的特徵標誌來控制功能開關，這使得用戶能夠根據需要啟用或禁用特定功能，如 `PROACTIVE` 模式和 `BUDDY` 系統。技術上，CLAURST 利用 Rust 的高效能來實現更低的記憶體消耗，並且沒有依賴於外部追蹤系統。
+CLAURST 是一個用 Rust 實作的終端編碼代理，旨在提供高效能的 AI 編碼體驗。使用者可以透過 `/connect` 指令連接到不同的 AI 提供者，並享受無追蹤的實驗性功能。這個專案的核心在於其從 Claude 代碼的洩漏中重建的功能，並且聲稱在記憶體使用上比原始版本更有效率。專案的設計遵循了清房工程的原則，確保不直接使用原始的 TypeScript 代碼，而是從行為規範出發進行 Rust 實作。這意味著它能夠在不侵犯版權的情況下重現 Claude 的功能。CLAURST 的架構中包含多種編譯時功能標誌，這些標誌控制著不同的功能開關，並允許用戶根據需求選擇啟用或禁用特定功能。
 
-與其他類似工具相比，如 Claude Code 和 OpenAI 的 Codex，CLAURST 提供了一個更輕量且無追蹤的替代方案，特別適合對隱私有高要求的開發者。使用者在實際運行中可能會遇到多提供者支持的實驗性問題，這需要進一步的測試和穩定性改進。專案目前處於活躍開發中，社群參與度高，已經有 8063 顆星和 7505 次 fork。未來幾個月，專案可能會進一步擴展功能和穩定性，適合需要快速開發和測試的開發團隊。對於小型專案或個人開發者來說，CLAURST 是一個值得考慮的選擇，尤其是在需要快速迭代和隱私保護的情況下。
+與其他類似工具相比，如 AlpinDale/parsync 和 BigBodyCobain/Shadowbroker，CLAURST 提供了更高的記憶體效率和無追蹤的使用體驗。實際使用中，CLAURST 能夠處理多達 1M 的上下文窗口，並支援多種內部和外部功能。這些功能的實現使得 CLAURST 在處理複雜任務時，能夠保持高效能和靈活性。儘管專案仍在開發中，但其活躍的社群和快速的問題解決能力顯示出良好的未來潛力。對於需要在終端中進行高效編碼的開發者來說，CLAURST 是一個值得考慮的選擇。
 
 **技術棧**：`Rust`
 
 ## 重點功能
 
-- 多提供者支持 — 使用 `/connect` 指令連接不同的 AI 提供者，實驗性功能。
-- 無追蹤設計 — 提供一個不收集用戶資料的編碼環境。
-- 編譯時特徵標誌 — 透過編譯時的特徵開關來控制功能，靈活性高。
-- 高效能記憶體使用 — 相較於原始版本，CLAURST 在記憶體使用上更為高效。
-- BUDDY 系統 — 提供 Tamagotchi 風格的伴侶系統，增強互動體驗。
+- 多提供者支持 — 使用 /connect 指令連接到不同的 AI 提供者。
+- 記憶體效率 — 相較於原始版本，CLAURST 在記憶體使用上更為高效。
+- 無追蹤功能 — 提供無追蹤的使用體驗，保護用戶隱私。
+- 編譯時功能標誌 — 支援多種功能開關，讓用戶根據需求選擇啟用或禁用特定功能。
+- 清房工程實作 — 從行為規範重建功能，避免版權問題。
 
 ## 快速開始
 
-1. 克隆專案
+1. 安裝 CLAURST
 ```bash
-git clone https://github.com/Kuberwastaken/claurst.git
+cargo install claurst
 ```
-2. 進入專案目錄
+2. 啟動 CLAURST
 ```bash
-cd claurst
+claurst
 ```
-3. 安裝依賴
+3. 連接到 AI 提供者
 ```bash
-cargo build
-```
-4. 運行 CLAURST
-```bash
-cargo run
-```
-
-## 程式碼範例
-
-```rust
-{
-  "前置條件": "需要 Rust 環境",
-  "指令": "cargo run",
-  "預期輸出": "啟動 CLAURST 終端編碼代理"
-}
+/connect
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 8063 stars（2016/天），forks 7505（93.1%），顯示出極高的社群參與度。作者 Kuberwastaken 之前在 AI 工具開發上有豐富經驗，這次專案解決了 Claude Code 洩漏後的需求，提供了一個清潔的 Rust 實作。這個專案的成功可能與社群對於開源 AI 工具的需求上升有關，特別是在隱私和性能方面的考量。forks/stars 比率高達 93.1%，顯示許多人在實際修改和使用這個專案。
+> 建立 5 天內累積 8297 stars（1659/天），forks 7561（91.1%），顯示出極高的社群參與度。這個專案的創建者 Kuberwastaken 之前在開源社群有一定的影響力，並且這個工具解決了開發者對於高效能編碼代理的需求，特別是在記憶體使用和無追蹤功能上的優勢。最近的代碼洩漏事件引起了廣泛的關注，並促使開發者對於這個工具的興趣大增。這樣的背景使得 CLAURST 在短時間內獲得了大量的關注和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要隱私保護且希望在終端中快速編碼的獨立開發者。
+**目標受眾**：需要在終端中使用高效能 AI 編碼助手的開發者，特別是對隱私和記憶體效率有高要求的人。
 
 > [!example] 使用場景
-> - 獨立開發者用它來快速連接不同的 AI 提供者，因為它的多提供者支持讓開發過程更加靈活。
-> - 小型團隊用它來構建內部工具，因為 Rust 的高效能和低記憶體使用使得部署成本更低。
-> - 對隱私有高要求的開發者用它來進行編碼，因為它不包含任何追蹤功能，保護用戶資料安全。
+> - 後端工程師用它來連接不同的 AI 提供者，因為這樣可以在終端中靈活選擇最佳的編碼助手。
+> - 獨立開發者用它來在本地環境中進行高效的編碼，因為 CLAURST 提供了無追蹤的使用體驗，保護了用戶的隱私。
+> - AI 研究者用它來測試和驗證不同的 AI 模型，因為其支持多種功能標誌，便於快速調整和實驗。
 
 ## 架構分析
 
-CLAURST 採用 Rust 作為開發語言，這使得它在性能和記憶體使用上有優勢。架構上，專案使用編譯時特徵標誌來控制功能，這樣可以根據用戶需求靈活開啟或關閉特定功能。數據流方面，使用者的請求會經過一個多層的處理系統，最終由 Rust 的高效能執行。
-
-選擇 Rust 而非其他語言如 Python，主要是因為 Rust 提供的性能優勢和記憶體安全性。這樣的選擇雖然增加了學習曲線，但在長期運行中能降低資源消耗。擴展性方面，CLAURST 的設計使得未來可以輕鬆添加新功能或支持更多的 AI 提供者。
+CLAURST 採用 Rust 語言實作，設計上遵循清房工程的原則，避免直接使用原始的 TypeScript 代碼。其架構中包含多種編譯時功能標誌，這些標誌控制著不同的功能開關，讓用戶能夠根據需求選擇啟用或禁用特定功能。資料流方面，CLAURST 使用 Rust 的高效能特性，確保在處理複雜任務時保持高效能和靈活性。選擇 Rust 作為實作語言的原因在於其高效能和安全性，這對於需要高效能編碼的用戶來說是至關重要的。擴展性方面，CLAURST 能夠輕鬆整合新的功能和工具，這使得它在未來的開發中具有良好的潛力。
 
 ## 技術深入分析
 
-CLAURST 的核心技術機制是基於 Rust 的高效能特性，這使得它能夠在記憶體使用上優於許多同類工具。專案中使用的編譯時特徵標誌讓開發者能夠靈活控制功能，這在其他工具中並不常見。效能方面，CLAURST 的設計目標是降低資源消耗，這使得它在處理大型請求時仍能保持流暢。選擇 Rust 而非其他語言如 Go 或 Python，主要是因為 Rust 提供的內存安全性和執行效率。這樣的選擇雖然增加了開發的複雜性，但長期來看能夠降低維護成本。技術風險方面，CLAURST 可能在未來的擴展中遇到性能瓶頸，特別是在多提供者支持的情況下。整合方面，CLAURST 與現有的 CI/CD 工具鏈相容性良好，能夠輕鬆融入現有的開發流程。
+CLAURST 的核心技術機制是基於 Rust 語言的高效能特性，並採用了清房工程的原則進行開發。這意味著它能夠在不侵犯版權的情況下重現 Claude 的功能。效能方面，CLAURST 能夠處理多達 1M 的上下文窗口，並且在記憶體使用上比原始版本更為高效。選擇 Rust 作為實作語言的原因在於其高效能和安全性，這對於需要高效能編碼的用戶來說是至關重要的。設計上，CLAURST 使用了編譯時功能標誌來控制不同的功能開關，這使得用戶能夠根據需求靈活調整使用體驗。技術風險方面，CLAURST 仍在開發中，某些功能可能會存在不穩定的情況。整合方面，CLAURST 能夠輕鬆與現有的開發工具鏈整合，並且對於 CI/CD pipeline 友好，這使得它在團隊協作中具有良好的潛力。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，包含了基本的使用指引和安裝步驟。安裝過程相對順暢，但需要使用者具備 Rust 開發環境。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
+> README 文件清晰，提供了安裝和使用的詳細步驟。安裝過程相對順暢，但對於新手可能需要一些 Rust 環境的基本知識。文件中有提供一些範例，幫助用戶快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 高效能和低記憶體使用，適合資源有限的環境。
-> - 無追蹤設計，保護用戶隱私。
-> - 靈活的功能控制，能根據需求調整。
+> - 高效能的記憶體管理，適合處理大型任務。
+> - 多樣化的功能開關，讓用戶能夠根據需求調整使用體驗。
+> - 無追蹤的使用模式，保護用戶隱私。
 
 > [!danger] 缺點
-> - 仍在實驗階段，可能不夠穩定。
-> - 需要 Rust 環境，對新手有一定挑戰。
-> - 多提供者支持尚未完全成熟。
+> - 仍在開發中，可能存在不穩定的功能。
+> - 對於非 Rust 環境的支持尚未實現。
+> - 某些功能仍處於實驗階段，可能會有 bug。
 
 > [!warning] 注意事項
-> - 目前為實驗性版本，可能會遇到穩定性問題。
-> - 多提供者支持尚在測試階段，可能不完全可靠。
-> - 需要 Rust 環境，對於不熟悉 Rust 的開發者有學習曲線。
+> - 仍在開發中，功能可能不穩定。
+> - 某些功能仍處於實驗階段，可能會有 bug。
+> - 目前僅支援 Rust 環境，對於其他語言的支持尚未實現。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [Kuberwastaken/claude-code](https://github.com/Kuberwastaken/claude-code) | CLAURST 是用 Rust 實作，提供更高效的記憶體使用，而 Claude Code 是用 TypeScript 實作，可能會有較高的記憶體消耗。 |
-| [OpenAI/codex](https://github.com/OpenAI/codex) | CLAURST 提供無追蹤的編碼環境，而 Codex 可能涉及用戶數據的收集和使用。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供類似的編碼代理功能，但主要使用 Python 實作，記憶體效率較低。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於安全性和隱私保護，但功能上不如 CLAURST 多樣化。 |
 
 ## 替代方案決策
 
@@ -210,16 +192,16 @@ CLAURST 的核心技術機制是基於 Rust 的高效能特性，這使得它能
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [OpenAI/codex](https://github.com/OpenAI/codex) | Codex 是用 Python 實作，提供了強大的 API 接口，但在性能上可能不如 Rust 實作的 CLAURST。 | 如果你的團隊已經在使用 OpenAI 的生態系統，並需要強大的 API 支持。 | medium，因為需要重新設計與 API 的整合。 |
-| [Kuberwastaken/claude-code](https://github.com/Kuberwastaken/claude-code) | Claude Code 是 CLAURST 的前身，使用 TypeScript 實作，性能和記憶體使用上不如 CLAURST。 | 如果需要使用 Claude Code 的特定功能或 API，且不介意較高的資源消耗。 | low，因為兩者有相似的功能和設計理念。 |
+| Claude Code | Claude Code 是原始的 TypeScript 實作，功能上較為完整，但在記憶體效率上不如 CLAURST。 | 如果需要完整的功能和更穩定的版本，可以選擇 Claude Code。 | medium，因為需要從 TypeScript 遷移到 Rust。 |
+| OpenAI Codex | OpenAI Codex 提供了強大的 API 支援，但在終端使用上不如 CLAURST 方便。 | 如果需要強大的 API 支援和更廣泛的功能，可以選擇 OpenAI Codex。 | low，因為可以直接使用 API。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **claurst** | **codex** | **claude-code** |
+> | 維度 | **claurst** | **Claude Code** | **OpenAI Codex** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Codex 是用 Python 實作，提供了強大的 API 接口，但在性能上可能不如 Rust 實作的 CLAURST。 | Claude Code 是 CLAURST 的前身，使用 TypeScript 實作，性能和記憶體使用上不如 CLAURST。 |
-> | 遷移成本 | - | medium，因為需要重新設計與 API 的整合。 | low，因為兩者有相似的功能和設計理念。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 OpenAI 的生態系統，並需要強大 | 如果需要使用 Claude Code 的特定功能或 API， |
+> | 技術路線 | 本專案 | Claude Code 是原始的 TypeScript 實作，功能上較為完整，但在記憶體效率上不如 CLAURST。 | OpenAI Codex 提供了強大的 API 支援，但在終端使用上不如 CLAURST 方便。 |
+> | 遷移成本 | - | medium，因為需要從 TypeScript 遷移到 Rust。 | low，因為可以直接使用 API。 |
+> | 適用場景 | 主要場景 | 如果需要完整的功能和更穩定的版本，可以選擇 Claude C | 如果需要強大的 API 支援和更廣泛的功能，可以選擇 Ope |
 
 ## 成熟度評估
 
@@ -230,26 +212,27 @@ CLAURST 的核心技術機制是基於 Rust 的高效能特性，這使得它能
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人或小型專案試用，不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 多提供者支持可能不穩定，連接時可能會出現問題。
-  - 解法：在使用前確認提供者的可用性。
-- **[HIGH]** 在某些環境下安裝 Rust 可能會遇到困難。
-  - 解法：參考官方文檔進行安裝，必要時尋求社群幫助。
-- [MEDIUM] 實驗性功能可能會導致意外行為。
-  - 解法：在非關鍵環境中測試新功能。
+- **[HIGH]** 某些功能在特定情況下可能不穩定，導致崩潰
+  - 解法：定期更新到最新版本以獲得修復
+- [MEDIUM] 在某些終端中顯示不正常
+  - 解法：嘗試更換終端或調整顯示設置
+- [MEDIUM] 功能開關可能無法正常工作
+  - 解法：檢查編譯時功能標誌設置
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊的內部工具 | 非常適合 | CLAURST 的高效能和低記憶體使用非常適合小型團隊的需求。 |
-| 需要快速迭代的個人專案 | 適合 | 無追蹤設計和靈活的功能控制能夠加快開發速度。 |
-| 大型企業的核心系統 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
+| 10 人以下的新創公司後端 API | 非常適合 | CLAURST 提供了高效能的編碼代理，適合小型團隊快速開發。 |
+| 大型企業的核心系統開發 | 不適合 | 目前仍在開發中，功能不穩定。 |
+| AI 研究團隊進行模型測試 | 適合 | 支持多種功能開關，便於快速調整和實驗。 |
+| 需要高效能編碼的獨立開發者 | 非常適合 | 無追蹤的使用模式和高效能的記憶體管理。 |
 
 ## 採用成本分析
 
@@ -261,12 +244,12 @@ CLAURST 的核心技術機制是基於 Rust 的高效能特性，這使得它能
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到高效能的編碼工具，值得考慮。
+> 花 5 小時學習，10 小時整合，得到高效能的編碼代理，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> CLAURST 本身不需要高權限，且不存取敏感資料。依賴鏈的信任程度高，無已知的供應鏈風險，適合在 CI/CD pipeline 中使用。
+> CLAURST 本身不需要高權限，並且不存取敏感資料。依賴鏈的信任程度較高，無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -331,37 +314,38 @@ CLAURST 的核心技術機制是基於 Rust 的高效能特性，這使得它能
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 7.5k |
+| Forks | 7.6k |
 | Open Issues | 10 |
-| Issue 解決率 | 63% (17 closed) |
-| 最後推送 | 2026-04-04 |
+| Issue 解決率 | 66% (19 closed) |
+| 最後推送 | 2026-04-05 |
 | 建立日期 | 2026-03-31 |
 | 官方網站 | [Link](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it) |
-| Repo 大小 | 3.5 MB |
+| Repo 大小 | 3.9 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Kuberwastaken/claurst) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Kuberwastaken](https://github.com/Kuberwastaken) | 32 |
+> | [@Kuberwastaken](https://github.com/Kuberwastaken) | 35 |
+> | [@Sporkley](https://github.com/Sporkley) | 3 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，已經有多個 issue 被提出和解決。
+**社群活躍度**：社群活躍，問題解決率達 66%。
 **連結**：[文件](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-03 ~ 2026-04-04）
-> **活躍天數** 2 天 · **最新 commit** 0.07 Release + Multi Provider Support (Beta)
+> [!abstract] 最近 10 次 commit（2026-04-04 ~ 2026-04-05）
+> **活躍天數** 2 天 · **最新 commit** feat: multiple TUI enhancements, made Rustle sprite cooler, added working shortcut keys and other mi
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#24](https://github.com/Kuberwastaken/claurst/issues/24) | Extend to other provider | 4 | 8 |
-> | [#34](https://github.com/Kuberwastaken/claurst/issues/34) | to test | 0 | 0 |
+> | [#40](https://github.com/Kuberwastaken/claurst/issues/40) | context limit for models | 0 | 1 |
+> | [#39](https://github.com/Kuberwastaken/claurst/issues/39) | any way to contribute  | 0 | 0 |
 
 ## README 摘錄
 
@@ -470,7 +454,6 @@ CLAURST 的核心技術機制是基於 Rust 的高效能特性，這使得它能
 > ## Technical Breakdown
 > 
 > >**PS:** I've also published this [breakdown on my blog](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it) with a better reading experience and UX :)
-> >**PS:** I've also published this [breakdown on my blog](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it) with a better reading experience and UX :)
 > 
 > Earlier today (March 31st, 2026) - Chaofan Shou on X discovered something that Anthropic probably didn't want the world to see: the **entire source code** of Claude Code, Anthropic's official AI coding CLI, was sitting in plain sight on the npm registry via a sourcemap file bundled into the published package.
 > 
@@ -509,13 +492,15 @@ CLAURST 的核心技術機制是基於 Rust 的高效能特性，這使得它能
 > 
 > [](https://raw.githubusercontent.com/kuberwastaken/claude-code/main/public/claude-files.png)
 > 
-> The funniest p
+> The funniest part is, there's an entire system called ["Undercover Mode"](#undercover-mode--do-not-blow-your-cover) specifically designed to prevent Anthropic's internal information from leaking.
+> 
+> They built a whole subsystem to st
 
 ## 延伸閱讀
 
 相關概念：[[CLI/TUI]] · [[自動化]] · [[隱私保護]]
 
-相關專案：[[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[duoan--TorchCode|duoan/TorchCode]] · [[sanbuphy--claude-code-source-code|sanbuphy/claude-code-source-code]] · [[twostraws--SwiftUI-Agent-Skill|twostraws/SwiftUI-Agent-Skill]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[duoan--TorchCode|duoan/TorchCode]] · [[sanbuphy--claude-code-source-code|sanbuphy/claude-code-source-code]] · [[twostraws--SwiftUI-Agent-Skill|twostraws/SwiftUI-Agent-Skill]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/Kuberwastaken/claurst) · [官方網站](https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it)
 
