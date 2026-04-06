@@ -7,12 +7,12 @@ language: TypeScript
 license: NOASSERTION
 description: "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs."
 homepage: ""
-stars: 14735
-stars_per_day: 4912
-forks: 5147
-open_issues: 87
+stars: 16481
+stars_per_day: 4120
+forks: 5767
+open_issues: 81
 created: 2026-04-01
-pushed_at: 2026-04-04
+pushed_at: 2026-04-05
 first_seen: 2026-04-02
 week: "2026-W14"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供統一 CLI 介面，整合多種 AI 模型的編碼代理。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-04-08"
+appearances: 5
+next_review: "2026-04-09"
 contributor_count: 5
 engagement: "high"
 issue_close_rate: 52
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-02"
-star_history: "2026-04-02:3599,2026-04-02:3635,2026-04-03:7609,2026-04-03:7630,2026-04-04:11768,2026-04-04:11794,2026-04-05:14725,2026-04-05:14735"
+star_history: "2026-04-02:3599,2026-04-02:3635,2026-04-03:7609,2026-04-03:7630,2026-04-04:11768,2026-04-04:11794,2026-04-05:14725,2026-04-05:14735,2026-04-06:16481"
 tags:
   - github
   - "category/開發工具"
@@ -913,6 +913,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-06|2026-04-06]] — 再次上榜，16.5k stars
 - [[2026-04-05|2026-04-05]] — 再次上榜，14.7k stars
 - [[2026-04-04|2026-04-04]] — 再次上榜，11.8k stars
 - [[2026-04-03|2026-04-03]] — 再次上榜，7.6k stars

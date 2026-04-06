@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to WordPress"
 homepage: "https://emdashcms.com"
-stars: 7051
-stars_per_day: 2350
-forks: 492
-open_issues: 141
+stars: 7441
+stars_per_day: 1860
+forks: 532
+open_issues: 162
 created: 2026-04-01
 pushed_at: 2026-04-05
 first_seen: 2026-04-03
@@ -30,8 +30,8 @@ use_case: "提供一個基於 Astro 的全棧 TypeScript CMS，旨在取代 Word
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-04-08"
+appearances: 4
+next_review: "2026-04-09"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 11
@@ -42,7 +42,7 @@ last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-03"
-star_history: "2026-04-03:4343,2026-04-03:4366,2026-04-04:6144,2026-04-04:6157,2026-04-05:7047,2026-04-05:7051"
+star_history: "2026-04-03:4343,2026-04-03:4366,2026-04-04:6144,2026-04-04:6157,2026-04-05:7047,2026-04-05:7051,2026-04-06:7441"
 tags:
   - github
   - "category/開發工具"
@@ -919,6 +919,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-06|2026-04-06]] — 再次上榜，7.4k stars
 - [[2026-04-05|2026-04-05]] — 再次上榜，7.0k stars
 - [[2026-04-04|2026-04-04]] — 再次上榜，6.1k stars
 - [[2026-04-03|2026-04-03]] — 首次收錄，4.3k stars
