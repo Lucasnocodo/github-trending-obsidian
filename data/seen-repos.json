@@ -771,10 +771,10 @@
   },
   "ChinaSiro/claude-code-sourcemap": {
     "first_seen": "2026-04-01",
-    "last_seen": "2026-04-06",
-    "times_seen": 6,
+    "last_seen": "2026-04-07",
+    "times_seen": 7,
     "stars_first": 4889,
-    "stars_last": 8453
+    "stars_last": 8517
   },
   "sanbuphy/claude-code-source-code": {
     "first_seen": "2026-04-01",
@@ -799,38 +799,38 @@
   },
   "ultraworkers/claw-code": {
     "first_seen": "2026-04-02",
-    "last_seen": "2026-04-06",
-    "times_seen": 5,
+    "last_seen": "2026-04-07",
+    "times_seen": 6,
     "stars_first": 121830,
-    "stars_last": 170957
+    "stars_last": 173951
   },
   "sanbuphy/learn-coding-agent": {
     "first_seen": "2026-04-02",
-    "last_seen": "2026-04-06",
-    "times_seen": 5,
+    "last_seen": "2026-04-07",
+    "times_seen": 6,
     "stars_first": 10559,
-    "stars_last": 11334
+    "stars_last": 11399
   },
   "claude-code-best/claude-code": {
     "first_seen": "2026-04-02",
-    "last_seen": "2026-04-06",
-    "times_seen": 5,
+    "last_seen": "2026-04-07",
+    "times_seen": 6,
     "stars_first": 7790,
-    "stars_last": 13897
+    "stars_last": 14198
   },
   "Kuberwastaken/claurst": {
     "first_seen": "2026-04-02",
-    "last_seen": "2026-04-06",
-    "times_seen": 5,
+    "last_seen": "2026-04-07",
+    "times_seen": 6,
     "stars_first": 6592,
-    "stars_last": 8294
+    "stars_last": 8517
   },
   "Gitlawb/openclaude": {
     "first_seen": "2026-04-02",
-    "last_seen": "2026-04-06",
-    "times_seen": 5,
+    "last_seen": "2026-04-07",
+    "times_seen": 6,
     "stars_first": 3599,
-    "stars_last": 16481
+    "stars_last": 18057
   },
   "tvytlx/ai-agent-deep-dive": {
     "first_seen": "2026-04-02",
@@ -848,23 +848,30 @@
   },
   "emdash-cms/emdash": {
     "first_seen": "2026-04-03",
-    "last_seen": "2026-04-06",
-    "times_seen": 4,
+    "last_seen": "2026-04-07",
+    "times_seen": 5,
     "stars_first": 4343,
-    "stars_last": 7441
+    "stars_last": 7825
   },
   "ultraworkers/claw-code-parity": {
     "first_seen": "2026-04-04",
-    "last_seen": "2026-04-04",
-    "times_seen": 1,
+    "last_seen": "2026-04-07",
+    "times_seen": 2,
     "stars_first": 5160,
-    "stars_last": 5160
+    "stars_last": 6545
   },
   "VoltAgent/awesome-design-md": {
     "first_seen": "2026-04-05",
-    "last_seen": "2026-04-06",
-    "times_seen": 2,
+    "last_seen": "2026-04-07",
+    "times_seen": 3,
     "stars_first": 8473,
-    "stars_last": 15235
+    "stars_last": 23033
+  },
+  "santifer/career-ops": {
+    "first_seen": "2026-04-07",
+    "last_seen": "2026-04-07",
+    "times_seen": 1,
+    "stars_first": 11317,
+    "stars_last": 11317
   }
 }

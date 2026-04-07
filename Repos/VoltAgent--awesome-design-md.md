@@ -7,12 +7,12 @@ language: HTML
 license: MIT
 description: "Collection of DESIGN.md files that capture design systems from popular websites. Drop one into your project and let coding agents build matching UI."
 homepage: ""
-stars: 15335
-stars_per_day: 3067
-forks: 1885
-open_issues: 97
+stars: 23033
+stars_per_day: 3839
+forks: 2844
+open_issues: 163
 created: 2026-03-31
-pushed_at: 2026-04-03
+pushed_at: 2026-04-06
 first_seen: 2026-04-05
 week: "2026-W15"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供各大網站的 DESIGN.md 文件，讓 AI 自動生成匹配的
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-09"
+appearances: 3
+next_review: "2026-04-10"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 17
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-05"
-star_history: "2026-04-05:8473,2026-04-05:8531,2026-04-06:15235,2026-04-06:15335"
+star_history: "2026-04-05:8473,2026-04-05:8531,2026-04-06:15235,2026-04-06:15335,2026-04-07:23033"
 tags:
   - github
   - "category/開發工具"
@@ -710,5 +710,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-07|2026-04-07]] — 再次上榜，23.0k stars
 - [[2026-04-06|2026-04-06]] — 再次上榜，15.2k stars
 - [[2026-04-05|2026-04-05]] — 首次收錄，8.5k stars

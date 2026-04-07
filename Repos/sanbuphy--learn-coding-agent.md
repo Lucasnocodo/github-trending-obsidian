@@ -7,9 +7,9 @@ language: N/A
 license: N/A
 description: "Research on Coding Agents"
 homepage: ""
-stars: 11334
-stars_per_day: 2267
-forks: 19655
+stars: 11399
+stars_per_day: 1900
+forks: 19674
 open_issues: 57
 created: 2026-03-31
 pushed_at: 2026-04-01
@@ -30,8 +30,8 @@ use_case: "研究 CLI Agent 架構，幫助開發者理解和利用 Agent 技術
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-04-09"
+appearances: 6
+next_review: "2026-04-10"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 2
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-02"
-star_history: "2026-04-02:10559,2026-04-03:11009,2026-04-04:11181,2026-04-05:11263,2026-04-06:11334"
+star_history: "2026-04-02:10559,2026-04-03:11009,2026-04-04:11181,2026-04-05:11263,2026-04-06:11334,2026-04-07:11399"
 tags:
   - github
   - "category/開發工具"
@@ -857,6 +857,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-07|2026-04-07]] — 再次上榜，11.4k stars
 - [[2026-04-06|2026-04-06]] — 再次上榜，11.3k stars
 - [[2026-04-05|2026-04-05]] — 再次上榜，11.3k stars
 - [[2026-04-04|2026-04-04]] — 再次上榜，11.2k stars

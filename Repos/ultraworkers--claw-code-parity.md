@@ -7,12 +7,12 @@ language: Rust
 license: N/A
 description: "Join Discord: https://discord.gg/5TUQKqFWd /  claw-code Rust port parity work - it is temporary work while claw-code repo is doing migration"
 homepage: ""
-stars: 5160
-stars_per_day: 5160
-forks: 4603
+stars: 6545
+stars_per_day: 1636
+forks: 5396
 open_issues: 0
 created: 2026-04-02
-pushed_at: 2026-04-03
+pushed_at: 2026-04-05
 first_seen: 2026-04-04
 week: "2026-W14"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供 Claude Code 的 Rust 和 Python 版本重寫，解決原始碼
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-07"
+appearances: 2
+next_review: "2026-04-10"
 contributor_count: 2
 engagement: "high"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-04"
-star_history: "2026-04-04:5160"
+star_history: "2026-04-04:5160,2026-04-07:6545"
 tags:
   - github
   - "category/開發工具"
@@ -834,4 +834,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-07|2026-04-07]] — 再次上榜，6.5k stars
 - [[2026-04-04|2026-04-04]] — 首次收錄，5.2k stars
