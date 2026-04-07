@@ -7,18 +7,18 @@ language: TypeScript
 license: Apache-2.0
 description: "Make Any Website & Tool Your CLI. A universal CLI Hub and AI-native runtime. Transform any website, Electron app, or local binary into a standardized command-line interface. Built for AI Agents to discover, learn, and execute tools seamlessly via a unified AGENT.md integration."
 homepage: "https://opencli.info/"
-stars: 9235
-stars_per_day: 577
-forks: 773
-open_issues: 86
+stars: 13687
+stars_per_day: 595
+forks: 1253
+open_issues: 93
 created: 2026-03-14
-pushed_at: 2026-03-30
+pushed_at: 2026-04-06
 first_seen: 2026-03-19
 week: "2026-W12"
 month: "2026-03"
 category: "CLI 工具"
-subcategory: "命令行介面"
-release_tag: "v1.5.6"
+subcategory: "自動化"
+release_tag: "v1.6.8"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-19
-use_case: "將任何網站或工具轉換為命令行介面，讓 AI 代理無縫發現和執行工具。"
+use_case: "將任何網站或工具轉換為 CLI，讓 AI 代理無縫操作。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 3
 next_review: "2026-03-24"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 55
-repo_size_kb: 3857
-readme_length: 9955
+issue_close_rate: 64
+repo_size_kb: 4481
+readme_length: 10000
 bus_factor: 1
-last_release_days: 1
+last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-03-19"
-star_history: "2026-03-19:1858,2026-03-19:1885,2026-03-20:2453,2026-03-20:2480,2026-03-21:3102,2026-03-21:3117,2026-03-22:3676,2026-03-23:4443,2026-03-24:5348,2026-03-25:6185,2026-03-26:6951,2026-03-29:8422,2026-03-31:9235"
+star_history: "2026-03-19:1858,2026-03-19:1885,2026-03-20:2453,2026-03-20:2480,2026-03-21:3102,2026-03-21:3117,2026-03-22:3676,2026-03-23:4443,2026-03-24:5348,2026-03-25:6185,2026-03-26:6951,2026-03-29:8422,2026-03-31:9235,2026-04-07:13687"
 tags:
   - github
   - "category/cli_工具"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "opencli"
   - "jackwener/opencli"
-  - "將任何網站或工具轉換為命令行介面，讓 AI 代理無縫發現和執行工具。"
+  - "將任何網站或工具轉換為 CLI，讓 AI 代理無縫操作。"
 ---
 
 # opencli
 
-**9.2k** stars · **577** stars/天 · 建立 16 天前 · TypeScript · Apache-2.0
+**13.7k** stars · **595** stars/天 · 建立 23 天前 · TypeScript · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/jackwener--opencli");
@@ -73,25 +73,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v1.5.6` `easy-install`
+`v1.6.8` `easy-install`
 
 `ai-agent` `ai-agents` `ai-tools` `cli`
 
 > [!summary] 一句話摘要
-> 將任何網站或工具轉換為命令行介面，讓 AI 代理無縫發現和執行工具。
+> 將任何網站或工具轉換為 CLI，讓 AI 代理無縫操作。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (577 stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (595 stars/day)
 > **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要將網站和應用轉換為命令行工具的開發者，特別是那些希望利用 AI 進行自動化操作的團隊。
-> **一句話重點** OpenCLI 不僅是一個命令行工具，更是一個將網站和應用轉換為 CLI 的平台，為開發者帶來極大的便利。
+> **適合** 需要將網站和應用程式轉換為 CLI 的開發者，特別是那些在 AI 領域工作的工程師。
+> **一句話重點** OpenCLI 的強大之處在於它能將網站和應用轉換為 CLI，並支持 AI 代理的自動化操作，這在開發者中具有很高的實用價值。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/jackwener--opencli");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "命令行介面" && p.file.name !== "jackwener--opencli" && p.status !== "archived")
+>     .where(p => p.subcategory === "自動化" && p.file.name !== "jackwener--opencli" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -102,113 +102,106 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 命令行介面 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** low
-> **結論** 花 3 小時學習，2 小時整合，能夠快速實現網站操作，自動化流程，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，3 小時整合，得到強大的自動化工具，值得採用。
 
 > [!abstract] 核心創新
-> 提供一個通用的 CLI Hub，將各種網站和應用轉換為命令行介面，並支持 AI 驅動的自動化操作。
+> 將任何網站或應用程式轉換為 CLI，並支持 AI 代理的直接控制。
 
 ## 專案簡介
 
-OpenCLI 是一個將任何網站、Electron 應用或本地 CLI 工具轉換為命令行介面的工具，透過瀏覽器會話重用和 AI 驅動的發現，讓使用者能夠輕鬆執行各種命令。使用者只需安裝一個輕量級的 Chrome 擴展和 OpenCLI，便可透過命令如 `opencli list` 來查看可用的命令。這個工具的賣點在於其能夠自動安裝缺失的工具，並且支持多達 50 多個網站的命令，包括 Bilibili、Zhihu 和 Twitter 等。技術上，OpenCLI 使用 TypeScript 和 JavaScript 開發，並依賴 Node.js 20.0.0 以上版本，具有良好的擴展性和靈活性。與其他工具相比，OpenCLI 不需要消耗 LLM 令牌，並且提供穩定的輸出格式，適合用於 CI/CD 流程。
+OpenCLI 是一個 CLI 工具，能將任何網站、Electron 應用程式或本地 CLI 工具轉換為命令行介面。用戶可以透過 `opencli register mycli` 將本地 CLI 註冊到 OpenCLI，並讓 AI 代理自動發現和調用這些工具。這個工具的核心在於重用 Chrome/Chromium 的登入狀態，並利用 AI 進行命令的發現和執行，這樣用戶不需要再次輸入憑證。OpenCLI 支持 70 多個預建適配器，並允許用戶自定義命令，透過 `opencli record` 將網站操作轉化為 CLI 命令。它還提供了強大的瀏覽器自動化功能，AI 代理可以直接控制瀏覽器進行點擊、輸入、截圖等操作。使用者可以透過 `opencli list` 查看所有可用命令，並使用 `opencli hackernews top --limit 5` 等命令來快速獲取數據。這個工具的賣點在於它的通用性和易於擴展的特性，特別適合需要自動化操作的開發者和 AI 代理使用者。
 
-與 Browser-Use 和 Crawl4AI 等工具相比，OpenCLI 提供更廣泛的網站支持和更簡單的命令行操作，特別適合需要從多個網站提取數據的情況。使用者可以使用 `opencli doctor` 命令檢查連接狀態，並透過 `opencli` 進行各種操作，如下載視頻或提取文章。這個工具的設計考量了安全性，重用 Chrome 登入狀態，並內建防檢測功能，確保使用者的數據安全。整體而言，OpenCLI 是一個功能強大且易於使用的命令行工具，適合需要自動化網頁操作的開發者和數據科學家。
-
-**技術棧**：`TypeScript 6.0.2` · `Node.js >= 20.0.0` · `VitePress`
+**技術棧**：`TypeScript 6.0.2` · `Node.js >= 20.0.0` · `Vitest`
 
 ## 重點功能
 
-- 支持多種網站 — 內建 50 多個網站的命令，如 `opencli bilibili hot --limit 5`。
-- 自動安裝缺失工具 — 使用 `opencli register mycli` 註冊本地 CLI，並自動安裝缺失的工具。
-- 安全性設計 — 重用 Chrome 登入狀態，確保用戶的憑證不會外洩。
-- 防檢測功能 — 內建防檢測措施，保護用戶的操作不被網站識別。
-- 多格式輸出 — 支持 `--format` 參數，輸出 JSON、YAML、CSV 等格式。
+- 網站轉 CLI — 將任何網站轉換為命令行介面，支持 70+ 預建適配器。
+- AI 代理支持 — 直接控制瀏覽器，執行點擊、輸入等操作，並生成可重用的 CLI 命令。
+- 自動註冊本地 CLI — 使用 `opencli register mycli` 將本地工具註冊到 OpenCLI。
+- 動態加載適配器 — 將 `.ts` 或 `.yaml` 適配器放入 `clis/` 資料夾即可自動註冊。
+- 自我修復設置 — 使用 `opencli doctor` 檢查擴展和守護進程的連接狀態。
 
 ## 快速開始
 
-1. 安裝 Chrome 擴展
+1. 安裝瀏覽器橋接擴展
 ```bash
-下載並加載 `opencli-extension.zip` 到 Chrome 擴展中。
+下載並解壓 opencli-extension.zip，然後在 chrome://extensions 中加載未打包擴展。
 ```
 2. 安裝 OpenCLI
 ```bash
 npm install -g @jackwener/opencli
 ```
-3. 檢查連接狀態
+3. 安裝 AI 技能
 ```bash
-opencli doctor
+npx skills add jackwener/opencli
 ```
 
 ## 程式碼範例
 
 ```ts
 {
-  "前置條件": "需安裝 Chrome 擴展並登入目標網站。",
+  "前置條件": "需要安裝 OpenCLI 和瀏覽器擴展。",
   "指令": "opencli bilibili hot --limit 5",
-  "預期輸出": "返回 Bilibili 熱門視頻的 JSON 格式數據。"
+  "預期輸出": "返回 Bilibili 上的熱門視頻列表。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 16 天內累積 9235 stars（577/天），forks 773（8.4%），顯示出強勁的增長潛力。作者 jackwener 在開源界有一定的知名度，之前也有其他成功的專案。OpenCLI 解決了將網站和應用轉換為 CLI 的需求，這在現有工具中並不多見，特別是對於需要 AI 代理自動化操作的場景。此外，社群中對於其功能的需求和反饋也促進了其快速成長。這個工具的推出正好符合了開發者對於自動化和簡化工作流程的需求。
+> 建立 23 天就累積 13687 stars（595/天），forks 1253（9.2%），這顯示出強勁的增長潛力。作者 jackwener 在開源社群中活躍，過去有多個成功專案，這次專案解決了將網站和應用程式轉換為 CLI 的需求，讓開發者能夠更方便地進行自動化操作。社群對於其功能的需求和對於 AI 代理的興趣也推動了這個專案的流行。特別是對於需要自動化和整合多個工具的開發者來說，這是一個非常實用的解決方案。
 
 ## 適合誰使用
 
-**目標受眾**：需要將網站和應用轉換為命令行工具的開發者，特別是那些希望利用 AI 進行自動化操作的團隊。
+**目標受眾**：需要將網站和應用程式轉換為 CLI 的開發者，特別是那些在 AI 領域工作的工程師。
 
 > [!example] 使用場景
-> - 數據科學家用它來從 Bilibili 自動提取熱門視頻數據，因為手動操作繁瑣且耗時。
-> - 後端工程師用它來將 Electron 應用轉換為 CLI 工具，因為這樣可以更方便地進行自動化測試和操作。
-> - 內容創作者用它來批量下載小紅書的圖片和視頻，因為這樣可以節省大量的時間和精力。
+> - 後端工程師用它來將 Bilibili 的熱門視頻下載到本地，因為可以直接使用 `opencli bilibili hot --limit 5` 命令，節省了手動操作的時間。
+> - 數據分析師用它來自動化從 Reddit 獲取數據的流程，因為可以透過 `opencli reddit hot --limit 10` 命令快速獲取熱門帖子。
+> - AI 開發者用它來訓練 AI 代理進行網站操作，因為它支持直接控制瀏覽器並執行複雜的操作，如點擊和輸入。
 
 ## 架構分析
 
-OpenCLI 採用雙引擎架構，支持 YAML 聲明式數據管道和 TypeScript 注入的穩健瀏覽器運行時。這樣的設計使得用戶可以靈活地擴展和自定義命令。資料流方面，使用者可以透過 `opencli register` 將本地 CLI 註冊到系統中，並透過 `opencli list` 來查看可用的命令。
-
-選擇這種架構的原因在於其能夠提供更高的靈活性和擴展性，然而這也意味著需要用戶具備一定的技術背景來進行自定義。擴展性方面，OpenCLI 能夠支持多達 50 多個網站的命令，這在其他同類工具中是相對少見的。整體而言，這種架構設計使得 OpenCLI 在功能上具有很大的優勢，但也要求用戶在使用時具備一定的技術能力。
+OpenCLI 採用模組化設計，將不同功能拆分為獨立的模組，這樣可以方便擴展和維護。使用 Node.js 作為後端，並通過 Chrome 擴展與瀏覽器進行通信，這樣可以重用用戶的登入狀態。資料流方面，命令首先由 CLI 接收，然後通過擴展發送到瀏覽器，最後執行操作並返回結果。選擇這種架構的好處是能夠快速集成多個網站和應用，代價是需要用戶手動安裝擴展。擴展性方面，通過動態加載適配器，使用者可以輕鬆擴展功能，但在某些情況下可能會遇到性能瓶頸，特別是在處理大量請求時。
 
 ## 技術深入分析
 
-OpenCLI 的核心技術機制是將各種網站和應用轉換為命令行介面，這通過使用 Chrome 的 CDP（Chrome DevTools Protocol）來實現。這使得 OpenCLI 能夠在不需要額外的 API 認證的情況下，直接與網站進行交互。效能方面，OpenCLI 能夠快速響應用戶的命令，並提供穩定的輸出格式，這對於需要在 CI/CD 流程中使用的用戶來說是非常重要的。選擇 TypeScript 作為開發語言的原因在於其靜態類型檢查能夠提高代碼的可維護性和可讀性。
-
-依賴樹方面，OpenCLI 的依賴相對輕量，主要依賴於一些常用的庫，如 `chalk` 和 `commander`，這使得整體安裝和運行都相對簡單。在技術風險方面，OpenCLI 可能會面臨來自網站的防爬蟲措施，這可能會導致某些命令無法正常工作。此外，對於依賴於 Chrome 瀏覽器的設計，未來可能會面臨兼容性問題。整合方面，OpenCLI 能夠輕鬆與現有的 CI/CD pipeline 整合，並且支持多種 IDE 的開發環境，這使得其在開發過程中非常友好。
+OpenCLI 的核心技術在於其模組化設計和與瀏覽器的深度集成。使用 TypeScript 和 Node.js 開發，確保了代碼的可維護性和擴展性。資料流方面，命令通過 CLI 接收後，通過 Chrome 擴展與瀏覽器進行通信，這樣可以重用用戶的登入狀態，並執行各種操作。這種設計使得 OpenCLI 能夠支持多種網站和應用，但也帶來了安裝擴展的複雜性。在效能方面，OpenCLI 可以處理大量的命令，但在高並發情況下可能會遇到瓶頸。選擇 Node.js 作為後端的好處是能夠快速開發和部署，但也可能面臨依賴管理的挑戰。整體而言，OpenCLI 提供了一個強大的解決方案，特別適合需要自動化操作的開發者和 AI 代理使用者。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了詳細的安裝步驟，包含必要的範例和注意事項。安裝過程相對順暢，只需安裝 Chrome 擴展和使用 npm 安裝 OpenCLI。文件中有良好的 getting started guide，幫助新手快速上手。文件目前僅提供英文版本，可能對非英語使用者造成一些障礙。
+> README 文件清晰，提供了詳細的安裝步驟和範例；安裝過程相對順暢，但需要手動安裝瀏覽器擴展；有良好的入門指南，文件目前僅提供英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多種網站的命令，方便用戶進行數據提取和操作。
-> - 安全性設計良好，重用 Chrome 登入狀態，保護用戶數據。
-> - 自動安裝缺失工具，減少用戶的配置工作量。
+> - 支持多種網站和應用的 CLI 轉換，擴展性強。
+> - AI 代理可以直接控制瀏覽器，實現自動化操作。
+> - 自我修復功能，減少用戶手動維護的需求。
 
 > [!danger] 缺點
-> - 需要用戶在 Chrome 中登入目標網站，增加了使用門檻。
-> - 對於某些網站的防爬蟲機制可能會導致命令失效。
-> - 目前仍在快速迭代中，可能存在不穩定的情況。
+> - 需要用戶手動安裝瀏覽器擴展，增加了初始設置的複雜性。
+> - 對於某些網站，可能需要額外的適配器或配置，增加了使用門檻。
+> - 在處理大量請求時，可能會遇到性能瓶頸。
 
 > [!warning] 注意事項
-> - 僅支援 Node.js >= 20.0.0。
-> - 需要 Chrome 瀏覽器並登入目標網站，否則無法執行命令。
-> - 對於某些網站，可能會因為防爬蟲機制而無法正常工作。
+> - 僅支援 Node.js 20.0.0 以上版本。
+> - 需要 Chrome 或 Chromium 瀏覽器並登入目標網站。
+> - 對於某些網站，可能需要額外的適配器或配置。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [jackwener/bilibili-cli](https://github.com/jackwener/bilibili-cli) | 專注於 Bilibili 的命令行工具，但功能範圍較窄，無法支持其他網站。 |
-| [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | 提供類似的 CLI 功能，但不支持自動安裝缺失工具，使用上較為繁瑣。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於網頁抓取，但缺乏 OpenCLI 的多網站支持和安全性設計。 |
+| [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | 提供類似的 CLI 轉換功能，但不支持 AI 代理的直接控制。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的自動化，但功能範圍較窄，無法廣泛應用於其他網站。 |
 
 ## 替代方案決策
 
@@ -216,16 +209,16 @@ OpenCLI 的核心技術機制是將各種網站和應用轉換為命令行介面
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步和備份，而非廣泛的網站命令行操作。 | 如果你的需求主要是文件同步和備份，parsync 會是更合適的選擇。 | low，因為功能範圍較窄，轉移成本低。 |
-| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 提供 AI 代理的功能，但不支持將網站轉換為 CLI。 | 如果你需要專注於 AI 代理的功能，而不需要網站操作，HolyClaude 是不錯的選擇。 | medium，因為需要重新設計工作流程。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步和備份，而非將網站轉換為 CLI。 | 如果你的需求主要是文件同步而非網站自動化，則可以選擇它。 | low，因為兩者的功能範圍不同，遷移不會很複雜。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於與 Claude 進行交互，而不是將網站轉換為 CLI。 | 如果你的主要需求是與 Claude 進行交互，則可以選擇它。 | medium，因為需要重新考慮命令的使用方式。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **opencli** | **parsync** | **HolyClaude** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於文件同步和備份，而非廣泛的網站命令行操作。 | 提供 AI 代理的功能，但不支持將網站轉換為 CLI。 |
-> | 遷移成本 | - | low，因為功能範圍較窄，轉移成本低。 | medium，因為需要重新設計工作流程。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是文件同步和備份，parsync 會是更合適 | 如果你需要專注於 AI 代理的功能，而不需要網站操作，Hol |
+> | 技術路線 | 本專案 | 專注於文件同步和備份，而非將網站轉換為 CLI。 | 專注於與 Claude 進行交互，而不是將網站轉換為 CLI。 |
+> | 遷移成本 | - | low，因為兩者的功能範圍不同，遷移不會很複雜。 | medium，因為需要重新考慮命令的使用方式。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是文件同步而非網站自動化，則可以選擇它。 | 如果你的主要需求是與 Claude 進行交互，則可以選擇它。 |
 
 ## 成熟度評估
 
@@ -236,44 +229,44 @@ OpenCLI 的核心技術機制是將各種網站和應用轉換為命令行介面
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人項目和測試，但不建議在生產環境中使用。
+> 適合個人項目和小型團隊試用，但不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Windows 上使用時，某些適配器可能因為路徑問題而無法正常工作。
-  - 解法：使用 WSL 或確保路徑格式正確。
-- [MEDIUM] 某些網站的防爬蟲機制可能會導致命令失效。
-  - 解法：嘗試使用不同的命令或檢查網站的使用條款。
-- [MEDIUM] 安裝過程中可能會遇到依賴問題。
-  - 解法：確保所有依賴都已正確安裝，並使用 `npm install` 重新安裝。
+- **[HIGH]** 在 Windows 上安裝時可能會遇到路徑問題，導致無法正確加載模組。
+  - 解法：確保使用正確的路徑格式，或在 WSL 中運行。
+- [MEDIUM] 某些網站的適配器可能不穩定，導致命令執行失敗。
+  - 解法：檢查適配器的最新版本，必要時手動更新。
+- [MEDIUM] 需要手動安裝瀏覽器擴展，可能會讓新手感到困惑。
+  - 解法：參考官方文檔中的安裝步驟，確保按照指示操作。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要從多個網站提取數據的數據科學家 | 非常適合 | 支持多種網站的命令，方便進行數據提取。 |
-| 希望將 Electron 應用轉換為 CLI 的開發者 | 適合 | 能夠輕鬆將應用轉換為命令行工具。 |
-| 需要高效的網頁抓取的開發者 | 普通 | 雖然支持多個網站，但對於大規模抓取可能不如專門工具。 |
-| 不需要 CLI 功能的普通用戶 | 不適合 | 該工具主要針對開發者和技術用戶。 |
+| 小型團隊的網站自動化項目 | 非常適合 | 提供了強大的自動化功能和多種適配器。 |
+| 大型企業的核心系統 | 不適合 | 目前處於 beta 階段，穩定性不足。 |
+| 開發者需要快速測試網站功能 | 適合 | 能快速將網站轉換為 CLI，節省開發時間。 |
+| 需要高性能的自動化工具 | 普通 | 在高並發情況下可能會遇到性能瓶頸。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~3 小時 |
-| 整合時間 | ~2 小時 |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，2 小時整合，能夠快速實現網站操作，自動化流程，值得一試。
+> 花 2 小時學習，3 小時整合，得到強大的自動化工具，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：OpenCLI 主要依賴於 Chrome 瀏覽器的安全性，並不需要高權限操作。它不會存取敏感資料，但需要用戶在 Chrome 中登入目標網站。
+> 低風險：不需要高權限，僅需訪問瀏覽器的登入狀態，且不存取敏感資料。依賴鏈的信任程度良好，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -338,13 +331,13 @@ OpenCLI 的核心技術機制是將各種網站和應用轉換為命令行介面
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 773 |
-| Open Issues | 86 |
-| Issue 解決率 | 55% (104 closed) |
-| 最後推送 | 2026-03-30 |
+| Forks | 1.3k |
+| Open Issues | 93 |
+| Issue 解決率 | 64% (163 closed) |
+| 最後推送 | 2026-04-06 |
 | 建立日期 | 2026-03-14 |
 | 官方網站 | [Link](https://opencli.info/) |
-| Repo 大小 | 3.8 MB |
+| Repo 大小 | 4.4 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/jackwener/opencli) |
 | Topics | `ai-agent` `ai-agents` `ai-tools` `cli` |
 
@@ -355,35 +348,35 @@ OpenCLI 的核心技術機制是將各種網站和應用轉換為命令行介面
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 98
+>     "TypeScript" : 99
 >     "JavaScript" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@jackwener](https://github.com/jackwener) | 403 |
-> | [@Astro-Han](https://github.com/Astro-Han) | 37 |
+> | [@jackwener](https://github.com/jackwener) | 474 |
+> | [@Astro-Han](https://github.com/Astro-Han) | 47 |
 > | [@ByteYue](https://github.com/ByteYue) | 29 |
-> | [@dependabot[bot]](https://github.com/dependabot[bot]) | 8 |
-> | [@0xsline](https://github.com/0xsline) | 6 |
+> | [@dependabot[bot]](https://github.com/dependabot[bot]) | 9 |
+> | [@0xsline](https://github.com/0xsline) | 7 |
 
-**最新版本**：v1.5.6 (2026-03-30)
+**最新版本**：v1.6.8 (2026-04-05)
 
 > [!info]- Release Notes
 > ## What's Changed
-> * fix(tests): update E2E exit code assertions for usage errors by @jackwener in https://github.com/jackwener/opencli/pull/567
-> * docs: sync docs with codebase (v1.5.5, exit codes, hub table, new adapters) by @jackwener in https://github.com/jackwener/opencli/pull/575
-> * fix(weread): harden reader fallback and search mapping by @Astro-Han in https://github.com/jackwener/opencli/pull/562
-> * feat: add 知识星球(zsxq) site adapter by @xtftbwvfp in https://github.com/jackwener/opencli/pull/571
-> * feat(xiaohongshu): use CDP DOM.setFileInputFiles for image upload by @james0x-sudo in https://github.com/jackwener/opencli/pull/574
-> * feat(band): add Band.us adapter — bands, posts, mentions, post commands by @kanghouchao in https://github.com/jackwener/opencli/pull/532
-> * feat(spotify): add Spotify playback adapter by @bhutano in https://github.com/jackwener/opencli/pull/560
-> * fix(zsxq): require active group context by @jackwener in https://github.com/jackwener/opencli/pull/579
-> * feat(xiaohongshu): add cover image URL to user notes output by @jeffdeen in https://github.com/jackwener/opencli/pull/572
-> * feat(douyin): add user-videos command with top comments by @sunbird89629 in https://github.com/jackwener/opencli/pull/554
-> * refactor(douyin): share user video public api by @jackwener in https://github.com/jackwener/opencli/pull/580
-> * feat(doubao): add history, detail, meeting-summary by @svcvit in https://github.com/jackwener/opencli/pull/566
+> * refactor: centralize build path resolution by @jackwener in https://github.com/jackwener/opencli/pull/807
+> * fix: add safety boundaries to diagnostic output by @jackwener in https://github.com/jackwener/opencli/pull/806
+> * test: remove flaky bloomberg e2e tests by @jackwener in https://github.com/jackwener/opencli/pull/818
+> * fix(scaffold): replace non-existent extract step with select by @jackwener in https://github.com/jackwener/opencli/pull/814
+> * feat(cdp): implement session-level network capture for CDPPage by @jackwener in https://github.com/jackwener/opencli/pull/815
+> * feat(operate): unify network capture + implement CDP consoleMessages by @jackwener in https://github.com/jackwener/opencli/pull/816
+> * feat:add 1688 assets downloadable by @BruceLoveDecimal in https://github.com/jackwener/opencli/pull/820
+> * feat(xueqiu): add kline and groups adapters by @williamxie1989 in https://github.com/jackwener/opencli/pull/809
+> * feat(extension): v1.6.8 — fix scripting permission + refresh icons by @jackwener in https://github.com/jackwener/opencli/pull/822
+> * refactor: extract shared scoring + consolidate time utils by @jackwener in https://github.com/jackwener/opencli/pull/823
+> * feat(linux-do): split topic content into a dedicated command by @tiaot33 in https://github.com/jackwener/opencli/pull/821
+> * refactor: remove scoring heuristic, use noise filter + structured metadata by @jackwener in https://github.com/jackwener/opencli/pull/824
 > ...（完整內容見 GitHub）
 
 ## 社群與生態
@@ -393,19 +386,18 @@ OpenCLI 的核心技術機制是將各種網站和應用轉換為命令行介面
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-29 ~ 2026-03-30）
-> **活躍天數** 2 天 · **最新 commit** fix(xiaohongshu): support full URL/short link and fix video extraction (#615)
+> [!abstract] 最近 10 次 commit（2026-04-05 ~ 2026-04-06）
+> **活躍天數** 2 天 · **最新 commit** fix: include intercepted payloads in diagnostic (#829)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#496](https://github.com/jackwener/opencli/issues/496) | Extension v1.5.0 release package contains wrong manifest ver | 2 | 0 |
+> | [#746](https://github.com/jackwener/opencli/issues/746) | [Feature]: 允许安装在docker里的agents或者AI CLI控制远程的Chrome extension `enhancement` | 3 | 3 |
 > | [#55](https://github.com/jackwener/opencli/issues/55) | [Bug] Windows: Antigravity CDP adapter fails due to MCP path | 2 | 1 |
-> | [#605](https://github.com/jackwener/opencli/issues/605) | [Feature]: 希望迁移 skill.md 放到统一的项目根目录 skills `enhancement` | 1 | 1 |
+> | [#792](https://github.com/jackwener/opencli/issues/792) | [Bug]: [Windows]Failed to load module C:\Users\windows\.open `bug` | 1 | 5 |
 > | [#547](https://github.com/jackwener/opencli/issues/547) | 支持百度贴吧 (Tieba) 适配器 | 1 | 2 |
-> | [#468](https://github.com/jackwener/opencli/issues/468) | [Feature]: 希望可以把skill上传到整合平台 `enhancement` | 1 | 1 |
 
 ## README 摘錄
 
@@ -413,7 +405,7 @@ OpenCLI 的核心技術機制是將各種網站和應用轉換為命令行介面
 > # OpenCLI
 > 
 > > **Make any website, Electron App, or Local Tool your CLI.**
-> > Zero risk · Reuse Chrome login · AI-powered discovery · Universal CLI Hub
+> > Zero risk · Reuse Chrome/Chromium login · AI-powered discovery · Universal CLI Hub
 > 
 > [](./README.zh-CN.md)
 > [](https://www.npmjs.com/package/@jackwener/opencli)
@@ -422,7 +414,7 @@ OpenCLI 的核心技術機制是將各種網站和應用轉換為命令行介面
 > 
 > A CLI tool that turns **any website**, **Electron app**, or **local CLI tool** into a command-line interface — Bilibili, Zhihu, 小红书, Twitter/X, Reddit, YouTube, Antigravity, `gh`, `docker`, and [many more](#built-in-commands) — powered by browser session reuse and AI-native discovery.
 > 
-> **Built for AI Agents** — Configure an instruction in your `AGENT.md` or `.cursorrules` to run `opencli list` via Bash. The AI will automatically discover and invoke all available tools.
+> **Built for AI Agents** — Load the [`opencli-operate` skill](./skills/opencli-operate/SKILL.md) to give any AI agent (Claude Code, Cursor) direct browser control. Operate any website, then crystallize those interactions into reusable CLI commands. Configure `opencli list` in your `AGENT.md` or `.cursorrules` so the AI auto-discovers all available tools.
 > 
 > **CLI Hub** — Register any local CLI (`opencli register mycli`) so AI agents can discover and call it alongside built-in commands. Auto-installs missing tools via your package manager (e.g. if `gh` isn't installed, `opencli gh ...` runs `brew install gh` first then re-executes seamlessly).
 > 
@@ -436,7 +428,7 @@ OpenCLI 的核心技術機制是將各種網站和應用轉換為命令行介面
 > 
 > ### 1. Install Browser Bridge Extension
 > 
-> > OpenCLI connects to your browser through a lightweight **Browser Bridge** Chrome Extension + micro-daemon (zero config, auto-start).
+> > OpenCLI connects to your browser through a lightweight **Browser Bridge** Chrome/Chromium extension + micro-daemon (zero config, auto-start).
 > 
 > 1. Go to the GitHub [Releases page](https://github.com/jackwener/opencli/releases) and download the latest `opencli-extension.zip`.
 > 2. Unzip the file and open `chrome://extensions`, enable **Developer mode** (top-right toggle).
@@ -449,48 +441,55 @@ OpenCLI 的核心技術機制是將各種網站和應用轉換為命令行介面
 > 
 > ```bash
 > npm install -g @jackwener/opencli
+> 
+> 
+> # Install AI skills for Claude Code / Cursor
+> npx skills add jackwener/opencli
 > ```
+> 
+> 
+> ### Install AI Skills
+> 
+> OpenCLI provides [skills](./skills/) for AI agents (Claude Code, etc.):
+> 
+> ```bash
+> 
+> # Install all OpenCLI skills
+> npx skills add jackwener/opencli
+> 
+> 
+> # Or install specific skills
+> npx skills add jackwener/opencli --skill opencli-usage      # Command reference
+> npx skills add jackwener/opencli --skill opencli-operate     # Browser automation for AI agents
+> npx skills add jackwener/opencli --skill opencli-explorer    # Adapter development guide
+> npx skills add jackwener/opencli --skill opencli-oneshot     # Quick command reference
+> ```
+> 
+> ---
 > 
 > 
 > ## Prerequisites
 > 
 > - **Node.js**: >= 20.0.0 (or **Bun** >= 1.0)
-> - **Chrome** running **and logged into the target site** (e.g. bilibili.com, zhihu.com, xiaohongshu.com).
+> - **Chrome or Chromium** running **and logged into the target site** (e.g. bilibili.com, zhihu.com, xiaohongshu.com, goofish.com).
 > 
-> > **⚠️ Important**: Browser commands reuse your Chrome login session. You must be logged into the target website in Chrome before running commands. If you get empty data or errors, check your login status first.
+> > **⚠️ Important**: Browser commands reuse your Chrome/Chromium login session. You must be logged into the target website in Chrome or Chromium before running commands. If you get empty data or errors, check your login status first.
 > 
 > 
 > ## Highlights
 > 
 > - **CLI All Electron** — CLI-ify apps like Antigravity Ultra! Now AI can control itself natively.
-> - **Account-safe** — Reuses Chrome's logged-in state; your credentials never leave the browser.
+> - **Browser Automation** — `operate` gives AI agents direct browser control: click, type, extract, screenshot — any interaction, fully scriptable.
+> - **Website → CLI** — Turn any website into a deterministic CLI: 70+ pre-built adapters, or crystallize your own with `opencli record`.
+> - **Account-safe** — Reuses Chrome/Chromium logged-in state; your credentials never leave the browser.
 > - **Anti-detection built-in** — Patches `navigator.webdriver`, stubs `window.chrome`, fakes plugin lists, cleans ChromeDriver/Playwright globals, and strips CDP frames from Error stack traces. Extensive anti-fingerprinting and risk-control evasion measures baked in at every layer.
-> - **AI Agent ready** — `explore` discovers APIs, `synthesize` generates adapters, `cascade` finds auth strategies.
+> - **AI Agent ready** — `explore` discovers APIs, `synthesize` generates adapters, `cascade` finds auth strategies, `operate` controls the browser directly.
 > - **External CLI Hub** — Discover, auto-install, and passthrough commands to any external CLI (gh, obsidian, docker, etc). Zero setup.
 > - **Self-healing setup** — `opencli doctor` diagnoses and auto-starts the daemon, extension, and live browser connectivity.
 > - **Dynamic Loader** — Simply drop `.ts` or `.yaml` adapters into the `clis/` folder for auto-registration.
-> - **Dual-Engine Architecture** — Supports both YAML declarative data pipelines and robust browser runtime TypeScript injections.
-> 
-> 
-> ## Why opencli?
-> 
-> There are many great browser automation tools. Here's when opencli is the right choice:
-> 
-> | Your need | Best tool | Why |
-> |-----------|-----------|-----|
-> | Scheduled data extraction from specific sites | **opencli** | Pre-built adapters, deterministic JSON, zero LLM cost |
-> | AI agent needs reliable site operations | **opencli** | Hundreds of commands, structured output, fast deterministic response |
-> | Explore an unknown website ad-hoc | Browser-Use, Stagehand | LLM-driven general browsing for one-off tasks |
-> | Large-scale web crawling | Crawl4AI, Scrapy | Purpose-built for throughput and scale |
-> | Control desktop Electron apps from terminal | **opencli** | CDP + AppleScript — the only CLI tool that does this |
-> 
-> **What makes opencli different:**
-> 
 > - **Zero LLM cost** — No tokens consumed at runtime. Run 10,000 times and pay nothing.
 > - **Deterministic** — Same command, same output schema, every time. Pipeable, scriptable, CI-friendly.
-> - **Broad coverage** — 50+ sites across global and Chinese platforms (Bilibili, Zhihu, Xiaohongshu, Reddit, HackerNews, and more), plus desktop Electron apps via CDP.
-> 
-> > For a detailed comparison with Browser-Use, Crawl4AI, Firecrawl, and others, see the [Comparison Guide](./docs/comparison.md).
+> - **Broad coverage** — 79+ sites across global and Chinese platforms (Bilibili, Zhihu, Xiaohongshu, Reddit, HackerNews, and more), plus desktop Electron apps via CDP.
 > 
 > ---
 > 
@@ -498,7 +497,8 @@ OpenCLI 的核心技術機制是將各種網站和應用轉換為命令行介面
 > ### 3. Verify & Try
 > 
 > ```bash
-> opencli doctor   # Check extension + daemon connectivity
+> opencli doctor          # Check extension + daemon connectivity
+> opencli daemon status   # Check daemon state (PID, uptime, memory)
 > ```
 > 
 > **Try it out:**
@@ -510,13 +510,18 @@ OpenCLI 的核心技術機制是將各種網站和應用轉換為命令行介面
 > ```
 > 
 > 
+> ### 4. Browser Automation — Make Websites Accessible for AI Agents
+> 
+> Point your AI agent (Claude Code, Cursor) to [`skills/opencli-operate/SKILL.md`](./skills/opencli-operate/SKILL.md). It has everything needed — full command reference, examples, and workflow.
+> 
+> Available commands: `open`, `state`, `click`, `type`, `select`, `keys`, `wait`, `get`, `screenshot`, `scroll`, `back`, `eval`, `network`, `init`, `verify`, `close`.
+> 
+> 
 > ### Update
 > 
 > ```bash
 > npm install -g @jackwener/opencli@latest
 > ```
-> 
-> ---
 > 
 > 
 > ### For Developers
@@ -542,58 +547,42 @@ OpenCLI 的核心技術機制是將各種網站和應用轉換為命令行介面
 > | **xiaohongshu** | `search` `note` `comments` `feed` `user` `download` `publish` `notifications` `creator-notes` `creator-notes-summary` `creator-note-detail` `creator-profile` `creator-stats` |
 > | **bilibili** | `hot` `search` `history` `feed` `ranking` `download` `comments` `dynamic` `favorite` `following` `me` `subtitle` `user-videos` |
 > | **tieba** | `hot` `posts` `search` `read` |
+> | **hupu** | `hot` `search` `detail` `mentions` `reply` `like` `unlike` |
 > | **twitter** | `trending` `search` `timeline` `bookmarks` `post` `download` `profile` `article` `like` `likes` `notifications` `reply` `reply-dm` `thread` `follow` `unfollow` `followers` `following` `block` `unblock` `bookmark` `unbookmark` `delete` `hide-reply` `accept` |
-> | **reddit** | `hot` `frontpage` `popular` `search` `subreddit` `user` `user-posts` `user-comments` `read` `save` `saved` `subscribe` `upvote` `upvoted` `comment` |
+> | **reddit** | `hot` `frontpage` `popular` `search` `subreddit` `read` `user` `user-posts` `user-comments` `upvote` `upvoted` `save` `saved` `comment` `subscribe` |
+> | **amazon** | `bestsellers` `search` `product` `offer` `discussion` `movers-shakers` `new-releases` |
+> | **1688** | `search` `item` `assets` `download` `store` |
+> | **gemini** | `new` `ask` `image` `deep-research` `deep-research-result` |
+> | **yuanbao** | `new` `ask` |
+> | **notebooklm** | `status` `list` `open` `current` `get` `history` `summary` `note-list` `notes-get` `source-list` `source-get` `source-fulltext` `source-guide` |
 > | **spotify** | `auth` `status` `play` `pause` `next` `prev` `volume` `search` `queue` `shuffle` `repeat` |
+> | **xianyu** | `search` `item` `chat` |
+> | **xiaoe** | `courses` `detail` `catalog` `play-url` `content` |
 > 
-> 66+ adapters in total — **[→ see all supported sites & commands](./docs/adapters/index.md)**
+> 79+ adapters in total — **[→ see all supported sites & commands](./docs/adapters/index.md)**
 > 
 > 
 > ## CLI Hub
 > 
 > OpenCLI acts as a universal hub for your existing command-line tools — unified discovery, pure passthrough execution, and auto-install (if a tool isn't installed, OpenCLI runs `brew install ` automatically before re-running the command).
 > 
-> | External CLI | Description | Example |
-> |--------------|-------------|---------|
-> | **gh** | GitHub CLI | `opencli gh pr list --limit 5` |
-> | **obsidian** | Obsidian vault management | `opencli obsidian search query="AI"` |
-> | **docker** | Docker | `opencli docker ps` |
-> | **lark-cli** | Lark/Feishu — messages, docs, calendar, tasks, 200+ commands | `opencli lark-cli calendar +agenda` |
-> | **dingtalk** | DingTalk — cross-platform CLI for DingTalk's full suite, designed for humans and AI agents | `opencli dingtalk msg send --to user "hello"` |
-> | **wecom** | WeCom/企业微信 — CLI for WeCom open platform, for humans and AI agents | `opencli wecom msg send --to user "hello"` |
-> | **vercel** | Vercel — deploy projects, manage domains, env vars, logs | `opencli vercel deploy --prod` |
-> 
-> **Register your own** — add any local CLI so AI agents can discover it via `opencli list`:
-> 
-> ```bash
-> opencli register mycli
-> ```
-> 
-> 
-> ### Desktop App Adapters
-> 
-> Control Electron desktop apps directly from the terminal. Each adapter has its own detailed documentation:
-> 
-> | App | Description | Doc |
-> |-----|-------------|-----|
-> | **Cursor** | Control Cursor IDE — Composer, chat, code extraction | [Doc](./docs/adapters/desktop/cursor.md) |
-> | **Codex** | Drive OpenAI Codex CLI agent headlessly | [Doc](./docs/adapters/d
+> | External 
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[CLI/TUI]] · [[資料提取]]
+相關概念：[[自動化]] · [[CLI/TUI]] · [[AI 代理]]
 
-相關專案：[[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[jackwener--twitter-cli|jackwener/twitter-cli]] · [[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[Narcooo--inkos|Narcooo/inkos]]
+相關專案：[[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[jackwener--twitter-cli|jackwener/twitter-cli]] · [[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]]
 
 [GitHub](https://github.com/jackwener/opencli) · [官方網站](https://opencli.info/)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：命令行介面）
+> [!note]- 直接競品（同子分類：自動化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "命令行介面" AND file.name != "jackwener--opencli"
+> WHERE subcategory = "自動化" AND file.name != "jackwener--opencli"
 > SORT stars DESC
 > ```
 
@@ -625,7 +614,7 @@ OpenCLI 的核心技術機制是將各種網站和應用轉換為命令行介面
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化測試","CLI/TUI","資料提取"];
+> const concepts = ["自動化","CLI/TUI","AI 代理"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "jackwener--opencli" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

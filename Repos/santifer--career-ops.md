@@ -603,7 +603,7 @@ Career-Ops 可以與多個求職平台和工具鏈整合，特別是使用 Playw
 
 相關概念：[[自動化]] · [[求職管理]] · [[AI 代理]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[VoltAgent--awesome-codex-subagents|VoltAgent/awesome-codex-subagents]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]] · [[VoltAgent--awesome-codex-subagents|VoltAgent/awesome-codex-subagents]] · [[davebcn87--pi-autoresearch|davebcn87/pi-autoresearch]] · [[dou-jiang--codex-console|dou-jiang/codex-console]]
 
 [GitHub](https://github.com/santifer/career-ops)
 

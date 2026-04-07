@@ -7,8 +7,8 @@ language: Rust
 license: MIT
 description: "Parallel rsync-like pull sync over SSH with resume"
 homepage: ""
-stars: 584
-stars_per_day: 19
+stars: 583
+stars_per_day: 18
 forks: 19
 open_issues: 0
 created: 2026-03-05
@@ -17,7 +17,7 @@ first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "開發工具"
-subcategory: "同步工具"
+subcategory: "檔案同步"
 release_tag: "v0.2.0"
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "提供高效能的可恢復同步工具，適用於 SSH 遠端及本地文件傳輸。"
+use_case: "提供高效的可恢復同步工具，適用於 SSH 遠端和本地之間的檔案傳輸。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,11 +38,11 @@ issue_close_rate: 100
 repo_size_kb: 7679
 readme_length: 1089
 bus_factor: 1
-last_release_days: 32
+last_release_days: 33
 release_cadence: "quarterly"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-11:508,2026-03-11:509,2026-03-11:509,2026-03-13:514,2026-03-14:517,2026-03-15:519,2026-03-16:521,2026-03-17:522,2026-03-18:523,2026-03-19:524,2026-03-20:525,2026-03-21:526,2026-03-22:527,2026-03-23:541,2026-03-24:549,2026-03-25:551,2026-03-26:552,2026-03-27:553,2026-03-28:559,2026-03-29:561,2026-03-30:563,2026-03-31:564,2026-04-01:569,2026-04-02:569,2026-04-03:572,2026-04-04:584,2026-04-05:584,2026-04-06:584"
+star_history: "2026-03-11:508,2026-03-11:509,2026-03-11:509,2026-03-13:514,2026-03-14:517,2026-03-15:519,2026-03-16:521,2026-03-17:522,2026-03-18:523,2026-03-19:524,2026-03-20:525,2026-03-21:526,2026-03-22:527,2026-03-23:541,2026-03-24:549,2026-03-25:551,2026-03-26:552,2026-03-27:553,2026-03-28:559,2026-03-29:561,2026-03-30:563,2026-03-31:564,2026-04-01:569,2026-04-02:569,2026-04-03:572,2026-04-04:584,2026-04-05:584,2026-04-06:584,2026-04-07:583"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "parsync"
   - "AlpinDale/parsync"
-  - "提供高效能的可恢復同步工具，適用於 SSH 遠端及本地文件傳輸。"
+  - "提供高效的可恢復同步工具，適用於 SSH 遠端和本地之間的檔案傳輸。"
 ---
 
 # parsync
 
-**584** stars · **19** stars/天 · 建立 31 天前 · Rust · MIT
+**583** stars · **18** stars/天 · 建立 32 天前 · Rust · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/AlpinDale--parsync");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `v0.2.0` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供高效能的可恢復同步工具，適用於 SSH 遠端及本地文件傳輸。
+> 提供高效的可恢復同步工具，適用於 SSH 遠端和本地之間的檔案傳輸。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Growing · **熱度** Growing (19 stars/day)
-> **授權** MIT (商業友好) · **維護** Moderate (最後推送 19 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要高效能文件同步解決方案的系統管理員和開發者。
-> **一句話重點** parsync 的並行傳輸和可恢復功能使其在大規模文件同步中表現優異，特別適合需要高效能的開發者和系統管理員。
+> **安裝難度** Easy · **專案狀態** Growing · **熱度** Growing (18 stars/day)
+> **授權** MIT (商業友好) · **維護** Moderate (最後推送 20 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要高效檔案同步且希望在多平台上運行的系統管理員和開發者。
+> **一句話重點** parsync 的並行傳輸和可恢復功能使其在檔案同步工具中脫穎而出，特別適合需要高效能的使用者。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/AlpinDale--parsync");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "同步工具" && p.file.name !== "AlpinDale--parsync" && p.status !== "archived")
+>     .where(p => p.subcategory === "檔案同步" && p.file.name !== "AlpinDale--parsync" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,111 +96,111 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 同步工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 檔案同步 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學、1 小時整合，得到高效能的文件同步，值得採用。
+> **結論** 花 2 小時學習，1 小時整合，得到高效的檔案同步效果，值得投入。
 
 > [!abstract] 核心創新
-> 提供高效能的可恢復同步工具，支持並行文件傳輸和區塊增量同步。
+> 提供高效的可恢復同步工具，適用於 SSH 遠端和本地之間的檔案傳輸。
 
 ## 專案簡介
 
-parsync 是一個高效能的同步工具，專為 SSH 遠端和本地文件傳輸而設計，支持可恢復的同步和並行文件傳輸。使用者只需輸入 `parsync -vrPlu user@example.com:/remote/path /local/destination`，即可開始從遠端同步文件，並且支持非預設的 SSH 端口。這個工具的核心機制是利用 Rust 的高效能特性，結合 SSH 進行文件傳輸，並支持可選的區塊增量同步，這樣即使在傳輸中斷的情況下也能輕鬆恢復。技術上，parsync 使用了 `rayon` 來實現並行處理，這使得它在處理大量文件時能顯著提高速度，特別是在大規模數據遷移的場景下。與傳統的 rsync 相比，parsync 的並行傳輸特性使得傳輸速度更快，並且在文件恢復方面提供了更好的用戶體驗。
+parsync 是一個高效能的同步工具，專為 SSH 遠端和本地檔案傳輸設計，支援可恢復的檔案同步。使用者只需輸入 `parsync -vrPlu user@example.com:/remote/path /local/destination`，即可開始同步，並且支援非預設的 SSH 端口。該工具的核心機制是透過並行傳輸來提高傳輸速度，並且可以選擇使用區塊增量同步來減少資料傳輸量。這種設計使得在大檔案或不穩定網路環境下，使用者能夠有效地恢復傳輸，避免重複傳輸已完成的部分。技術上，parsync 使用 Rust 語言實作，並依賴如 `rayon` 進行並行處理，這使得它在效能上優於傳統的 rsync 工具，特別是在多檔案傳輸時。
 
-雖然 rsync 是一個成熟的工具，但它在處理大文件時的性能可能不如 parsync，尤其是在網絡延遲較高的情況下。parsync 的使用效果良好，支持 Linux、macOS 和 Windows 平台，並且安裝過程簡單，使用者可以透過 curl 或 PowerShell 直接安裝。這個專案目前處於 beta 階段，適合需要高效文件同步的開發者或系統管理員，特別是在需要頻繁進行大規模文件傳輸的環境中。未來幾個月，預計會有更多功能和穩定性改進，值得關注。
+與其他工具相比，如 `rsync` 主要是單線程傳輸，parsync 的並行設計能顯著降低傳輸時間。對於需要在多個平台上運行的使用者，parsync 也支援 Windows、Linux 和 macOS，這使得它在跨平台使用上具有優勢。使用者在實際使用中可能會遇到 SSH 配置問題，這需要額外的配置來確保連接的成功。整體來看，parsync 是一個穩定且高效的選擇，適合需要高效檔案同步的開發者和系統管理員。未來幾個月，隨著社群的增長和功能的擴展，parsync 有潛力成為更廣泛使用的同步工具。
 
-**技術棧**：`Rust 1.58` · `Shell` · `PowerShell`
+**技術棧**：`Rust 1.60` · `Makefile`
 
 ## 重點功能
 
-- 高效能並行傳輸 — 使用 `rayon` 實現多線程文件傳輸，顯著提高速度。
-- 可恢復的同步 — 支持在傳輸中斷後自動恢復，減少重複傳輸的時間和帶寬。
-- 區塊增量同步 — 只傳輸變更的文件區塊，節省帶寬和時間。
-- 跨平台支持 — 支援 Linux、macOS 和 Windows，方便不同環境的使用。
-- 簡單的安裝過程 — 可透過 curl 或 PowerShell 快速安裝，降低使用門檻。
+- 高效能並行傳輸 — 支援多檔案同時傳輸，顯著提高速度。
+- 可恢復的檔案同步 — 在傳輸中斷後能夠從中斷點繼續，避免重複傳輸。
+- 區塊增量同步 — 只傳輸變更的區塊，減少不必要的資料傳輸。
+- 跨平台支援 — 同時支援 Linux、macOS 和 Windows，方便不同環境的使用者。
+- 簡單的安裝方式 — 可透過 curl 或 PowerShell 快速安裝，並支援 cargo 安裝。
 
 ## 快速開始
 
-1. 安裝 parsync
+1. 在 Linux 或 macOS 上安裝
 ```bash
 curl -fsSL https://alpindale.net/install.sh | bash
 ```
-2. 使用 parsync 同步文件
+2. 在 Windows 上安裝
+```bash
+powershell -ExecutionPolicy Bypass -c "irm https://alpindale.net/install.ps1 | iex"
+```
+3. 使用 parsync 同步檔案
 ```bash
 parsync -vrPlu user@example.com:/remote/path /local/destination
-```
-3. 使用非預設 SSH 端口
-```bash
-parsync -vrPlu user@example.com:2222:/remote/path /local/destination
 ```
 
 ## 程式碼範例
 
 ```rust
 {
-  "前置條件": "已安裝 parsync",
+  "前置條件": "已安裝 parsync 工具",
   "指令": "parsync -vrPlu user@example.com:/remote/path /local/destination",
-  "預期輸出": "開始從遠端同步文件到本地目錄。"
+  "預期輸出": "開始同步檔案至指定的本地目錄。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 31 天內累積 584 stars（19/天），forks 19（3.3%），顯示出一定的社群關注度。作者 AlpinDale 之前在 GitHub 上有其他開源專案，這個專案解決了傳統 rsync 在高延遲環境下的性能瓶頸，提供了並行傳輸的功能，讓用戶能夠更快地完成文件同步。社群的反饋和使用案例也促進了這個專案的快速成長。
+> 建立 32 天就累積 583 stars（18/天），forks 19（3.3%），這顯示出穩定的增長潛力。作者 AlpinDale 之前在開源社群中活躍，這個專案解決了傳統 rsync 工具在多檔案傳輸時的效率問題，特別是對於需要可恢復功能的使用者。近期的推廣活動和社群討論也促進了這個專案的曝光度。隨著多平台支援的推出，這個工具在不同作業系統上的可用性進一步提升，使得它的使用場景更加廣泛。forks/stars 比率相對較低，顯示出使用者對這個工具的興趣仍在觀望階段。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效能文件同步解決方案的系統管理員和開發者。
+**目標受眾**：需要高效檔案同步且希望在多平台上運行的系統管理員和開發者。
 
 > [!example] 使用場景
-> - 系統管理員用它來在多台伺服器之間快速同步配置文件，因為它的並行傳輸特性能顯著減少同步時間。
-> - 開發者用它來在本地和遠端開發環境之間同步大型資料集，因為它支持可恢復的傳輸，避免了因網絡問題造成的重複傳輸。
-> - 資料科學家用它來將訓練模型的數據集從雲端同步到本地機器，因為它的增量同步功能可以節省帶寬和時間。
+> - 系統管理員用它來在多台伺服器之間快速同步配置檔案，因為它的並行傳輸能顯著減少傳輸時間。
+> - 開發者用它來在本地和遠端伺服器之間同步大型專案檔案，因為可恢復的功能能避免因網路不穩而重複傳輸。
+> - 資料科學家用它來在不同環境中同步數據集，因為它支援區塊增量同步，能有效減少不必要的資料傳輸。
 
 ## 架構分析
 
-parsync 採用 Rust 語言開發，這使得它在性能和安全性上有良好的表現。其架構設計上，使用了多線程的 `rayon` 庫來實現並行文件傳輸，這樣可以在多核處理器上充分發揮效能。資料流方面，parsync 在傳輸過程中會先進行文件的完整性檢查，然後再進行實際的數據傳輸，這樣可以確保數據的正確性。
-
-選擇 Rust 而非其他語言的原因在於其內存安全性和高效能，這對於需要處理大量文件的同步工具至關重要。擴展性方面，parsync 目前的設計能夠支持多種平台，但未來可能會面臨不同平台間的兼容性問題，特別是在 Windows 環境下的支持。整體來說，parsync 的設計充分考慮了性能和用戶體驗，能夠在大規模文件同步中提供優異的表現。
+parsync 採用 Rust 語言實作，這使得它在效能和安全性上具有優勢。其架構設計為並行處理，利用 `rayon` 庫來實現多線程傳輸，這樣能夠在大檔案傳輸時顯著提高速度。資料流方面，parsync 透過 SSH 進行資料傳輸，並支援可恢復的功能，這意味著在傳輸過程中斷時，能夠從中斷點繼續而不需重複傳輸已完成的部分。選擇 Rust 而非其他語言（如 Python）是因為 Rust 提供了更好的效能和內存安全性，這對於需要高效能的檔案同步工具至關重要。擴展性方面，parsync 的設計使得未來可以輕鬆添加更多功能，如支援不同的傳輸協議或增強的錯誤處理機制。
 
 ## 技術深入分析
 
-parsync 的核心技術機制在於其使用 Rust 語言開發，這使得它在性能和安全性上有良好的表現。它利用 `rayon` 庫來實現多線程的文件傳輸，這樣可以在多核處理器上充分發揮效能，特別是在處理大量文件時。效能方面，parsync 能夠在高延遲的網絡環境中保持較高的傳輸速度，這是因為它支持可恢復的同步，能夠在傳輸中斷時自動恢復。設計取捨方面，選擇 Rust 而非其他語言的原因在於其內存安全性和高效能，這對於需要處理大量文件的同步工具至關重要。技術風險方面，parsync 目前的設計可能在不同平台間的兼容性上面臨挑戰，特別是在 Windows 環境下的支持。整合分析方面，parsync 能夠輕鬆與現有的 SSH 環境整合，並且支持常見的 CI/CD 工具，這使得它在開發流程中非常友好。
+parsync 的核心技術機制是基於 Rust 語言實作，這使得它在效能和安全性上具有優勢。使用 `rayon` 庫進行並行處理，能夠在多檔案傳輸時顯著提高速度，這對於需要快速同步的使用者來說是個重要特性。效能方面，parsync 能夠處理大檔案，並且在多線程的情況下，傳輸速度可以達到傳統 rsync 的數倍。設計取捨方面，選擇 Rust 使得工具在效能上有顯著提升，但也帶來了學習曲線的增加，特別是對於不熟悉 Rust 的開發者。
+
+技術風險方面，parsync 的依賴主要集中在幾個關鍵庫上，如 `ssh2` 和 `rayon`，這可能在未來的版本中帶來兼容性問題。整合方面，parsync 與現有的 SSH 工具鏈相容性良好，能夠輕鬆融入現有的開發和部署流程。對於 CI/CD pipeline 的整合也相對簡單，使用者只需在 pipeline 中添加相應的指令即可。整體來看，parsync 是一個設計精良且高效的檔案同步工具，適合需要高效能的開發者和系統管理員使用。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含安裝和使用範例，安裝過程順暢，無明顯坑。文件目前僅提供英文版本，可能對非英語使用者造成一定障礙。
+> README 文件清晰且提供了安裝和使用範例，對於新手來說相對友好。安裝過程順暢，無明顯坑點，並且提供了多種安裝方式。文件目前僅提供英文版本，可能對非英語使用者造成一定的障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 高效能的並行傳輸，顯著提高文件同步速度。
-> - 支持可恢復的同步，避免重複傳輸造成的時間浪費。
-> - 簡單易用的安裝和配置過程，降低使用門檻。
-> - 跨平台支持，方便在不同操作系統上使用。
+> - 高效能的並行傳輸，特別適合大檔案和多檔案的同步。
+> - 可恢復的功能，避免重複傳輸，節省時間和帶寬。
+> - 跨平台支援，能在多種作業系統上運行，增加了靈活性。
 
 > [!danger] 缺點
-> - 目前僅支持 SSH 協議，對於其他傳輸需求可能不適用。
-> - Windows 支持為最佳努力，可能存在功能不完全的情況。
-> - 在某些環境下，可能需要手動配置 SSH 金鑰。
+> - 目前僅支援 SSH，對於其他傳輸方式的支援有限。
+> - 對於小檔案的傳輸，並行優勢不明顯，可能導致額外的開銷。
+> - 使用者需要對 SSH 配置有一定了解，否則可能會遇到連接問題。
 
 > [!warning] 注意事項
-> - 目前僅支持 SSH 協議，不支持其他傳輸協議。
-> - 在某些環境下，可能需要手動配置 SSH 金鑰以便無密碼登錄。
-> - Windows 支持為最佳努力，可能存在某些功能不完全的情況。
+> - 目前僅支援 SSH 協議，不支援其他傳輸協議。
+> - 對於極小檔案的傳輸，並行傳輸可能不會帶來顯著效益。
+> - 在某些環境下，SSH 配置可能需要額外的調整。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供類似的文件同步功能，但主要針對內部網絡環境，性能可能不如 parsync 的並行傳輸。 |
-| [ChinaSiro/claude-code-sourcemap](https://github.com/ChinaSiro/claude-code-sourcemap) | 專注於代碼同步和版本控制，適合開發者使用，但不具備 parsync 的高效能傳輸特性。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | parsync 專注於並行傳輸和可恢復功能，而 rsync 主要是單線程傳輸，效率較低。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 提供的功能較為全面，但在並行傳輸效率上不如 parsync。 |
+| [ChinaSiro/claude-code-sourcemap](https://github.com/ChinaSiro/claude-code-sourcemap) | claude-code-sourcemap 主要針對代碼同步，功能較為專一，無法提供 parsync 的高效能傳輸。 |
 
 ## 替代方案決策
 
@@ -208,16 +208,16 @@ parsync 的核心技術機制在於其使用 Rust 語言開發，這使得它在
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| rsync | rsync 使用單線程傳輸，並依賴於增量傳輸算法，但在高延遲環境下性能較差。 | 如果已經在使用 rsync 並且不需要並行傳輸，則可以繼續使用。 | low，因為 rsync 是一個非常成熟的工具，許多用戶已經熟悉其用法。 |
-| rclone | rclone 提供了多種雲存儲服務的支持，並且支持並行傳輸，但其配置相對較複雜。 | 如果需要與多種雲存儲服務整合，rclone 是更好的選擇。 | medium，因為需要學習新的命令和配置方式。 |
+| rsync | rsync 使用單線程傳輸，效率較低，特別是在多檔案傳輸時。 | 如果你的環境已經使用 rsync 並且不需要可恢復功能，則可以繼續使用它。 | low，因為 rsync 是廣泛使用的工具，轉換成本低。 |
+| rclone | rclone 提供了更廣泛的雲端存儲支援，但在本地檔案傳輸效率上不如 parsync。 | 如果你需要與多種雲端服務進行交互，rclone 是更好的選擇。 | medium，因為 rclone 的命令語法與 parsync 不同，可能需要重新學習。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **parsync** | **rsync** | **rclone** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | rsync 使用單線程傳輸，並依賴於增量傳輸算法，但在高延遲環境下性能較差。 | rclone 提供了多種雲存儲服務的支持，並且支持並行傳輸，但其配置相對較複雜。 |
-> | 遷移成本 | - | low，因為 rsync 是一個非常成熟的工具，許多用戶已經熟悉其用法。 | medium，因為需要學習新的命令和配置方式。 |
-> | 適用場景 | 主要場景 | 如果已經在使用 rsync 並且不需要並行傳輸，則可以繼續使 | 如果需要與多種雲存儲服務整合，rclone 是更好的選擇。 |
+> | 技術路線 | 本專案 | rsync 使用單線程傳輸，效率較低，特別是在多檔案傳輸時。 | rclone 提供了更廣泛的雲端存儲支援，但在本地檔案傳輸效率上不如 parsync。 |
+> | 遷移成本 | - | low，因為 rsync 是廣泛使用的工具，轉換成本低。 | medium，因為 rclone 的命令語法與 parsync 不同，可能需要重新學習。 |
+> | 適用場景 | 主要場景 | 如果你的環境已經使用 rsync 並且不需要可恢復功能，則可 | 如果你需要與多種雲端服務進行交互，rclone 是更好的選擇 |
 
 ## 成熟度評估
 
@@ -228,27 +228,27 @@ parsync 的核心技術機制在於其使用 Rust 語言開發，這使得它在
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人項目試用，但不建議用在生產環境的核心路徑上。
+> 適合個人或小型專案試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些 Linux 發行版上，可能需要手動安裝依賴庫才能正常運行。
-  - 解法：檢查 README 中的依賴列表，確保所有依賴都已安裝。
-- **[HIGH]** 在 Windows 環境下，某些功能可能不完全支持。
-  - 解法：使用 Linux 或 macOS 環境進行測試。
-- **[HIGH]** 如果 SSH 配置不當，可能會導致連接失敗。
-  - 解法：檢查 SSH 配置文件，確保正確設置金鑰和用戶名。
+- **[HIGH]** 在某些環境下，SSH 配置可能需要額外的調整才能成功連接。
+  - 解法：確保 SSH 配置正確，並檢查防火牆設置。
+- [MEDIUM] 對於小檔案的傳輸，並行傳輸可能導致額外的開銷。
+  - 解法：在小檔案傳輸時考慮使用單線程工具。
+- [MEDIUM] 在 Windows 環境下，某些功能可能不如 Linux 和 macOS 穩定。
+  - 解法：在 Linux 或 macOS 環境中進行主要操作。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端文件同步 | 非常適合 | 並行傳輸能顯著提高效率，適合小型團隊的需求。 |
-| 大型企業內部系統的文件同步 | 普通 | 雖然性能優越，但可能需要更成熟的解決方案。 |
-| 需要頻繁更新的開發環境 | 適合 | 可恢復的同步功能能夠避免重複傳輸造成的時間浪費。 |
-| 小型專案的臨時文件同步 | 非常適合 | 簡單易用的安裝和配置過程，適合快速上手。 |
+| 10 人以下的新創公司後端檔案同步 | 非常適合 | 並行傳輸能顯著提高小型團隊的工作效率。 |
+| 大型企業的核心檔案同步 | 不適合 | 目前仍在 beta 階段，穩定性不足。 |
+| 需要跨平台同步的開發團隊 | 適合 | 支援多種作業系統，能夠滿足不同環境的需求。 |
+| 需要與雲端服務進行檔案同步的團隊 | 普通 | 雖然支援 SSH，但對於雲端服務的支援不如 rclone。 |
 
 ## 採用成本分析
 
@@ -260,12 +260,12 @@ parsync 的核心技術機制在於其使用 Rust 語言開發，這使得它在
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學、1 小時整合，得到高效能的文件同步，值得採用。
+> 花 2 小時學習，1 小時整合，得到高效的檔案同步效果，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：parsync 不需要高權限運行，且不會存取敏感資料。依賴的庫均為開源且經過社群審核，適合在 CI/CD pipeline 中使用。
+> 低風險：parsync 本身不需要高權限，且不存取敏感資料。依賴的庫需定期檢查更新，以避免潛在的安全風險。
 
 ## 健康度儀表板
 
@@ -366,7 +366,7 @@ parsync 的核心技術機制在於其使用 Rust 語言開發，這使得它在
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度良好，已經解決所有開放問題。
+**社群活躍度**：社群活躍度中等，開發者回應問題迅速。
 **連結**：[文件](https://docs.rs/parsync)
 
 ## 開發動態
@@ -435,17 +435,17 @@ parsync 的核心技術機制在於其使用 Rust 語言開發，這使得它在
 
 相關概念：[[CLI/TUI]] · [[自動化]] · [[效能優化]]
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[axboe--rsync|axboe/rsync]] · [[github--rsync|github/rsync]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[axboe--rsync|axboe/rsync]] · [[github--rsync|github/rsync]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/AlpinDale/parsync)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：同步工具）
+> [!note]- 直接競品（同子分類：檔案同步）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "同步工具" AND file.name != "AlpinDale--parsync"
+> WHERE subcategory = "檔案同步" AND file.name != "AlpinDale--parsync"
 > SORT stars DESC
 > ```
 

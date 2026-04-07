@@ -6,18 +6,18 @@ owner_type: Organization
 language: HTML
 license: MIT
 description: "Collection of DESIGN.md files that capture design systems from popular websites. Drop one into your project and let coding agents build matching UI."
-homepage: ""
-stars: 23033
-stars_per_day: 3839
-forks: 2844
-open_issues: 163
+homepage: "https://github.com/VoltAgent/voltagent"
+stars: 23235
+stars_per_day: 3873
+forks: 2875
+open_issues: 167
 created: 2026-03-31
 pushed_at: 2026-04-06
 first_seen: 2026-04-05
 week: "2026-W15"
 month: "2026-04"
 category: "開發工具"
-subcategory: "設計系統"
+subcategory: "設計工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-05
-use_case: "提供各大網站的 DESIGN.md 文件，讓 AI 自動生成匹配的 UI。"
+use_case: "提供設計系統的 DESIGN.md 文件，讓 AI 自動生成符合設計的 UI。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 3
 next_review: "2026-04-10"
 contributor_count: 3
 engagement: "medium"
-issue_close_rate: 17
-repo_size_kb: 721
+issue_close_rate: 15
+repo_size_kb: 820
 readme_length: 9509
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-05"
-star_history: "2026-04-05:8473,2026-04-05:8531,2026-04-06:15235,2026-04-06:15335,2026-04-07:23033"
+star_history: "2026-04-05:8473,2026-04-05:8531,2026-04-06:15235,2026-04-06:15335,2026-04-07:23033,2026-04-07:23235"
 tags:
   - github
   - "category/開發工具"
@@ -57,12 +57,12 @@ tags:
 aliases:
   - "awesome-design-md"
   - "VoltAgent/awesome-design-md"
-  - "提供各大網站的 DESIGN.md 文件，讓 AI 自動生成匹配的 UI。"
+  - "提供設計系統的 DESIGN.md 文件，讓 AI 自動生成符合設計的 UI。"
 ---
 
 # awesome-design-md
 
-**15.3k** stars · **3.1k** stars/天 · 建立 5 天前 · HTML · MIT
+**23.2k** stars · **3.9k** stars/天 · 建立 6 天前 · HTML · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/VoltAgent--awesome-design-md");
@@ -80,20 +80,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `awesome-list` `design-md` `design-system` `design-tokens` `figma` `google-stitch` `landing-page`
 
 > [!summary] 一句話摘要
-> 提供各大網站的 DESIGN.md 文件，讓 AI 自動生成匹配的 UI。
+> 提供設計系統的 DESIGN.md 文件，讓 AI 自動生成符合設計的 UI。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (3.1k stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** 3 人 · **參與度** Medium
-> **適合** 需要快速生成 UI 且對設計系統有需求的前端開發者。
-> **一句話重點** 這個專案讓設計與開發之間的界限變得模糊，開發者可以直接用設計文檔生成 UI。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (3.9k stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Medium
+> **適合** 希望快速生成符合設計系統的 UI 的前端開發者和設計師。
+> **一句話重點** 這個專案讓設計系統的實現變得前所未有的簡單，開發者只需一個文件即可生成一致的 UI。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/VoltAgent--awesome-design-md");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "設計系統" && p.file.name !== "VoltAgent--awesome-design-md" && p.status !== "archived")
+>     .where(p => p.subcategory === "設計工具" && p.file.name !== "VoltAgent--awesome-design-md" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -104,43 +104,42 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 設計系統 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 設計工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **安裝** Easy (一行搞定)
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，1 小時整合，能快速生成符合設計的 UI，值得一試。
 
 > [!abstract] 核心創新
-> 提供一種全新的設計系統文檔格式，讓 AI 能夠自動生成一致的 UI。
+> 這個專案的創新在於使用純文本的 DESIGN.md 文件來讓 AI 代理生成一致的 UI。
 
 ## 專案簡介
 
-這個專案的核心機制是提供一系列的 DESIGN.md 文件，這些文件是由 Google Stitch 提出的設計系統文檔格式，能夠被 AI 編程代理理解並用來生成一致的 UI。使用者只需將某個網站的 DESIGN.md 文件複製到專案根目錄，然後告訴 AI 代理「為我構建一個看起來像這樣的頁面」，便能獲得像素完美的 UI。這種方法的賣點在於簡化了設計到實作的過程，無需額外的工具或轉換，因為 Markdown 是 LLM 最容易理解的格式。每個 DESIGN.md 文件包含了視覺主題、色彩調色板、排版規則、組件樣式等詳細信息，這些都能幫助 AI 更好地理解設計意圖。技術上，這些文件遵循 Google Stitch 的格式，並擴展了多個部分以捕捉設計的各個方面。
-
-與傳統的設計工具相比，這種方法不需要 Figma 輸出或 JSON 結構，降低了使用門檻。與其他設計系統相比，如 Figma 或 Adobe XD，這個專案的優勢在於其輕量級和易於整合，特別適合需要快速原型設計的開發者。實際使用中，這些 DESIGN.md 文件能夠快速生成符合設計規範的 UI，並且能夠輕鬆應對不同的響應式設計需求。這個專案目前處於初期階段，社群活躍度尚可，開發者可考慮在小型專案中試用，未來可能會有更多網站的 DESIGN.md 文件加入。對於需要快速生成 UI 的開發者，這是一個值得嘗試的工具，但如果需要更複雜的設計或交互，可能還是需要依賴傳統的設計工具。
+這個專案提供了一系列的 DESIGN.md 文件，這些文件是基於 Google Stitch 的設計系統，旨在幫助開發者快速生成符合特定網站設計的 UI。使用者只需將某個網站的 DESIGN.md 文件複製到專案根目錄，然後告訴 AI 代理「建造一個看起來像這樣的頁面」，就能獲得像素完美的 UI。這種方法的優勢在於其簡單性，因為 DESIGN.md 是純文本格式，無需任何特殊工具或解析步驟，AI 代理可以直接理解其內容。每個 DESIGN.md 文件包含了視覺主題、顏色調色板、排版規則、元件樣式等詳細信息，這些都是設計代理所需的關鍵參數。這樣的設計使得開發者可以快速實現一致的 UI，而不必手動調整每個元件的樣式。最重要的是，這些文件是從真實網站提取的，確保了實用性和現實性。
 
 **技術棧**：`HTML`
 
 ## 重點功能
 
-- 簡單整合 — 只需將 DESIGN.md 複製到專案根目錄，無需額外配置。
-- 多樣化設計 — 提供多個網站的 DESIGN.md 文件，涵蓋不同風格和需求。
-- 響應式設計 — 包含響應式行為的定義，支持不同設備的顯示需求。
-- 即時生成 — AI 代理能夠即時根據 DESIGN.md 生成符合設計的 UI。
-- 設計指導 — 包含設計原則和注意事項，幫助開發者避免常見的設計錯誤。
+- 即時生成 UI — 將 DESIGN.md 文件放入專案後，告訴 AI 代理生成頁面，快速獲得設計一致的 UI。
+- 詳細的設計規範 — 每個 DESIGN.md 包含顏色調色板、排版規則、元件樣式等，確保設計一致性。
+- 無需特殊工具 — 使用純文本格式的 DESIGN.md，無需額外的解析或配置。
+- 支持多種網站 — 提供多個網站的 DESIGN.md 文件，方便開發者選擇和使用。
+- 可擴展性 — 開發者可以根據需求自定義或請求新的 DESIGN.md 文件。
 
 ## 快速開始
 
-1. 複製 DESIGN.md 文件
+1. 將 DESIGN.md 文件複製到專案根目錄
 ```bash
 cp path/to/website/DESIGN.md ./
 ```
 2. 告訴 AI 代理生成頁面
 ```bash
-your-ai-agent build 'build me a page that looks like this'
+ai-agent build 'build me a page that looks like this'
 ```
-3. 查看生成的 UI
+3. 檢查生成的 UI 是否符合預期
 ```bash
 open index.html
 ```
@@ -148,48 +147,134 @@ open index.html
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天就累積 15335 stars（3067/天），forks 1885（12.3%），這顯示出強烈的使用需求。作者 necatiozmen 和其他貢獻者在設計系統領域有一定的背景，這個專案解決了設計與開發之間的溝通問題，讓開發者能夠快速獲得設計指導。這個工具的出現正好填補了市場上對於簡單、易用的設計系統文檔的需求。社群的反應也表明，許多人對於能否生成特定網站的 DESIGN.md 表示關注，這可能是推動其快速增長的原因之一。
+> 建立 6 天就累積 23235 stars（3873/天），forks 2875（12.4%），這顯示出極高的興趣和需求。作者是 necatiozmen，過去在開源設計系統方面有一定的貢獻。這個專案解決了開發者在設計一致性上的痛點，傳統上需要花費大量時間手動調整 UI，而這個工具可以自動化這一過程。近期的社群討論也顯示出對於 DESIGN.md 的需求，尤其是在 AI 生成設計的背景下，這使得這個工具的出現恰逢其時。forks/stars 比率為 12.4%，顯示出許多人在實際修改和使用這個專案。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成 UI 且對設計系統有需求的前端開發者。
+**目標受眾**：希望快速生成符合設計系統的 UI 的前端開發者和設計師。
 
 > [!example] 使用場景
-> - 前端工程師用它來快速生成符合設計規範的 UI，因為只需複製 DESIGN.md 文件並告訴 AI 代理如何構建頁面，節省了手動設計的時間。
-> - 產品經理用它來驗證設計理念，因為可以快速生成原型並進行用戶測試，讓團隊更快迭代。
-> - 新創團隊用它來建立 MVP，因為能夠在短時間內獲得專業的 UI 設計，降低了開發成本。
+> - 前端工程師用它來快速生成符合公司設計規範的 UI，因為只需複製 DESIGN.md 文件並告訴 AI 代理生成頁面，大幅減少了手動調整的時間。
+> - 產品經理用它來驗證設計概念，因為可以快速生成原型並進行用戶測試，這樣能在早期階段收集用戶反饋。
+> - 設計師用它來確保開發團隊實現的 UI 與設計稿一致，因為 DESIGN.md 文件提供了詳細的設計規範，減少了溝通成本。
 
 ## 架構分析
 
-這個專案的架構基於簡單的 Markdown 文件，設計為零依賴的解決方案。使用者只需將 DESIGN.md 文件放入專案中，AI 代理便能讀取並生成 UI。這種設計使得開發者不需要額外的工具或轉換過程，降低了使用門檻。
-
-資料流方面，設計文件直接影響生成的 UI，這樣的設計選擇使得開發者能夠快速迭代和測試設計。選擇 Markdown 作為格式的好處在於其普遍性和易讀性，但代價是對於更複雜的設計需求可能無法完全滿足。擴展性方面，隨著更多網站的 DESIGN.md 文件加入，這個專案的價值會隨之提升。
+這個專案的架構基於簡單的文件系統，使用 DESIGN.md 作為設計規範的載體。每個 DESIGN.md 文件包含了多個設計元素，這些元素由 AI 代理直接讀取並生成相應的 UI。這種設計使得開發者不需要額外的工具或配置，直接使用純文本格式的文件來描述設計，降低了使用門檻。選擇這種方法的代價是對於更複雜的設計需求，可能無法完全滿足，需進行手動調整。整體來看，這個架構非常輕量，適合快速開發和迭代。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是使用 DESIGN.md 格式，這是一種純文本的設計系統文檔，能夠被 AI 代理直接讀取。這種設計選擇使得開發者能夠快速生成符合設計規範的 UI，並且無需額外的工具或轉換過程。效能方面，這些 Markdown 文件的大小通常較小，生成的 UI 速度快，適合快速原型設計。設計取捨方面，選擇 Markdown 格式的好處在於其易讀性和普遍性，但對於更複雜的設計需求，可能無法完全滿足。技術風險方面，依賴 AI 代理的能力，若代理不夠智能，生成效果可能不理想。整合方面，這個專案可以輕鬆與現有的前端開發流程結合，特別是對於使用 Markdown 的項目，學習成本低，能快速上手。
+這個專案的核心技術機制在於使用 DESIGN.md 文件作為設計規範，這種方法使得 AI 代理能夠快速理解並生成符合設計的 UI。每個 DESIGN.md 文件包含了多個關鍵設計元素，如顏色調色板、排版規則等，這些都是設計代理所需的參數。效能上，這種方法能夠快速生成 UI，但對於複雜的設計需求，可能需要進行手動調整。選擇使用純文本格式的好處在於降低了使用門檻，但也意味著對於更複雜的設計需求支持有限。
+
+這個專案的依賴關係相對簡單，主要依賴於 HTML 和 AI 代理的能力。技術風險方面，若 AI 代理無法正確解讀 DESIGN.md 的內容，可能會導致生成的 UI 不符合預期。整合方面，這個專案可以輕鬆融入現有的開發流程，特別是對於已經在使用 AI 代理的團隊。整體來看，這個專案在設計系統的自動化生成方面提供了一個創新的解決方案。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的使用說明和範例。安裝過程非常順暢，只需複製 DESIGN.md 文件即可。文件中有良好的 getting started guide，讓新手能快速上手。文件目前僅提供英文，可能對非英語使用者有一定挑戰。
+> README 文件清晰且包含使用範例，安裝過程簡單，無需特殊配置。提供的指令明確，讓新手能快速上手。整體來說，花 30 分鐘就能順利運行。無多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速生成 UI，節省設計時間。
-> - 簡單易用，無需複雜的設置。
-> - 支持多種設計風格，適用於不同需求。
+> - 快速生成符合設計的 UI，節省開發時間。
+> - 使用純文本格式，降低了使用門檻。
+> - 提供多個現成的設計範本，方便開發者選擇。
 
 > [!danger] 缺點
-> - 對於複雜的設計需求支持有限。
-> - 依賴 AI 代理的能力，效果不一。
-> - 目前社群活躍度尚可，未來發展不確定。
+> - 對於複雜設計需求的支持有限，可能需要手動調整。
+> - 僅支援 HTML 格式，對其他格式的支持不足。
+> - 需要確保 AI 代理能正確解讀 DESIGN.md 的內容。
 
 > [!warning] 注意事項
-> - 僅支援 Markdown 格式的 DESIGN.md 文件。
-> - 對於複雜的交互設計，可能無法完全滿足需求。
-> - 需要依賴 AI 代理的能力，若代理不夠智能，生成效果可能不理想。
+> - 僅支援 HTML 格式的 DESIGN.md 文件，對於其他格式的支持有限。
+> - 需要確保 AI 代理能正確解讀 DESIGN.md 的內容，否則可能生成不符合預期的 UI。
+> - 對於複雜的設計需求，可能需要手動調整生成的 UI。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) | 這個專案專注於 AI 代理的能力擴展，而本專案則專注於設計系統的生成，適用場景不同。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | parsync 是一個針對資料同步的工具，與本專案的 UI 生成無關，功能範圍不同。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| Figma | Figma 是一個圖形設計工具，專注於設計界面，而本專案專注於生成 UI 的自動化，適用場景不同。 | 如果你的團隊需要更強大的設計工具和協作功能，Figma 更適合。 | medium，因為需要將設計轉換為 DESIGN.md 格式。 |
+| Adobe XD | Adobe XD 提供了完整的設計工具集，而本專案則專注於簡化設計生成過程，功能範圍不同。 | 如果你的團隊已經在使用 Adobe 生態系統，則 Adobe XD 更合適。 | medium，因為需要將設計轉換為 DESIGN.md 格式。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **awesome-design-md** | **Figma** | **Adobe XD** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | Figma 是一個圖形設計工具，專注於設計界面，而本專案專注於生成 UI 的自動化，適用場景不同。 | Adobe XD 提供了完整的設計工具集，而本專案則專注於簡化設計生成過程，功能範圍不同。 |
+> | 遷移成本 | - | medium，因為需要將設計轉換為 DESIGN.md 格式。 | medium，因為需要將設計轉換為 DESIGN.md 格式。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要更強大的設計工具和協作功能，Figma 更適 | 如果你的團隊已經在使用 Adobe 生態系統，則 Adobe |
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Alpha |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | high |
+
+> [!tip] 採用建議
+> 適合個人項目試用，但不建議在生產環境中使用。
+
+## 已知陷阱
+
+> [!bug] 踩坑才知道的問題
+
+- **[HIGH]** AI 代理可能無法正確解讀某些 DESIGN.md 文件的內容，導致生成的 UI 不符合預期
+  - 解法：確保 DESIGN.md 文件格式正確，並進行測試
+- [MEDIUM] 對於複雜的設計需求，生成的 UI 可能需要手動調整
+  - 解法：在生成後進行人工調整以符合設計需求
+- [MEDIUM] 僅支援 HTML 格式，對其他格式的支持不足
+  - 解法：確保使用 HTML 格式的 DESIGN.md 文件
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 小型創業團隊的前端開發 | 非常適合 | 快速生成 UI 以符合設計需求，節省開發時間。 |
+| 大型企業的設計團隊 | 普通 | 可能需要更複雜的設計工具來滿足需求。 |
+| 個人開發者的快速原型設計 | 非常適合 | 能夠快速生成原型並進行測試。 |
+| 需要高自訂設計的項目 | 不適合 | 對於複雜的設計需求，可能無法完全滿足。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~1 小時 |
+| 維護負擔 | low |
+| 綁定風險 | low |
+
+> [!tip] 投入 vs 回報
+> 花 2 小時學習，1 小時整合，能快速生成符合設計的 UI，值得一試。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 低風險：該工具不需要高權限，且不會存取敏感資料，使用時相對安全。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個工具最常與 AI 代理搭配使用，處於開發流程的設計階段。開發者可以在使用 AI 代理的專案中，將 DESIGN.md 文件直接放入專案中，然後告訴 AI 代理生成頁面。與主流 CI 工具（如 GitHub Actions）相容，能夠輕鬆整合進現有的開發流程。整合的摩擦點主要在於需要確保 DESIGN.md 文件格式正確，否則可能導致生成問題。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在這個工具出現之前，開發者通常需要手動設計 UI，這個過程耗時且容易出錯。傳統的設計工具如 Figma 和 Adobe XD 雖然強大，但並不適合快速生成 UI。隨著 AI 技術的進步，這種自動化生成設計的需求越來越明顯，這使得 DESIGN.md 的出現成為可能。
+
+這個工具代表了設計自動化的趨勢，未來可能會有更多類似的解決方案出現。
 
 ## 健康度儀表板
 
@@ -254,42 +339,43 @@ open index.html
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 1.9k |
-| Open Issues | 97 |
-| Issue 解決率 | 17% (20 closed) |
-| 最後推送 | 2026-04-03 |
+| Forks | 2.9k |
+| Open Issues | 167 |
+| Issue 解決率 | 15% (30 closed) |
+| 最後推送 | 2026-04-06 |
 | 建立日期 | 2026-03-31 |
-| Repo 大小 | 721 KB |
+| 官方網站 | [Link](https://github.com/VoltAgent/voltagent) |
+| Repo 大小 | 820 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/VoltAgent/awesome-design-md) |
 | Topics | `awesome-list` `design-md` `design-system` `design-tokens` `figma` `google-stitch` `landing-page` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@necatiozmen](https://github.com/necatiozmen) | 13 |
+> | [@necatiozmen](https://github.com/necatiozmen) | 16 |
 > | [@LeeDoYup](https://github.com/LeeDoYup) | 1 |
 > | [@omeraplak](https://github.com/omeraplak) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，定期有更新和討論。
-**連結**：[文件](https://github.com/VoltAgent/awesome-design-md) · [Discord](https://s.voltagent.dev/discord)
+**社群活躍度**：社群活躍，最近有多個提交和問題討論。
+**連結**：[文件](https://github.com/VoltAgent/awesome-design-md)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-01 ~ 2026-04-03）
-> **活躍天數** 3 天 · **最新 commit** update YAML
+> [!abstract] 最近 10 次 commit（2026-04-02 ~ 2026-04-06）
+> **活躍天數** 3 天 · **最新 commit** minor edits
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
+> | [#156](https://github.com/VoltAgent/awesome-design-md/issues/156) | DESIGN.md for <your website> | 1 | 0 |
+> | [#151](https://github.com/VoltAgent/awesome-design-md/issues/151) | DESIGN.md for modal.com | 1 | 0 |
+> | [#90](https://github.com/VoltAgent/awesome-design-md/issues/90) | Add Claude Code skill for the awesome-design-md collection | 1 | 1 |
 > | [#86](https://github.com/VoltAgent/awesome-design-md/issues/86) | DESIGN.md for <your website> | 1 | 0 |
 > | [#50](https://github.com/VoltAgent/awesome-design-md/issues/50) | DESIGN.md for <your website> | 1 | 0 |
-> | [#124](https://github.com/VoltAgent/awesome-design-md/issues/124) | rename linear.app to linear_app | 0 | 0 |
-> | [#123](https://github.com/VoltAgent/awesome-design-md/issues/123) | Will there be an app's DESIGN.md? | 0 | 0 |
-> | [#122](https://github.com/VoltAgent/awesome-design-md/issues/122) | DESIGN.md for <dribbble.com/> | 0 | 0 |
 
 ## README 摘錄
 
@@ -412,19 +498,19 @@ open index.html
 
 ## 延伸閱讀
 
-相關概念：[[設計系統]] · [[Markdown]] · [[AI 生成 UI]]
+相關概念：[[設計系統]] · [[自動化設計]] · [[AI 生成]]
 
 相關專案：[[VoltAgent--awesome-codex-subagents|VoltAgent/awesome-codex-subagents]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
-[GitHub](https://github.com/VoltAgent/awesome-design-md)
+[GitHub](https://github.com/VoltAgent/awesome-design-md) · [官方網站](https://github.com/VoltAgent/voltagent)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：設計系統）
+> [!note]- 直接競品（同子分類：設計工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "設計系統" AND file.name != "VoltAgent--awesome-design-md"
+> WHERE subcategory = "設計工具" AND file.name != "VoltAgent--awesome-design-md"
 > SORT stars DESC
 > ```
 
@@ -456,7 +542,7 @@ open index.html
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["設計系統","Markdown","AI 生成 UI"];
+> const concepts = ["設計系統","自動化設計","AI 生成"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "VoltAgent--awesome-design-md" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
