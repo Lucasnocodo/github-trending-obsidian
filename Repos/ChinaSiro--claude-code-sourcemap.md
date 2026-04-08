@@ -7,26 +7,26 @@ language: TypeScript
 license: N/A
 description: ""
 homepage: "https://linux.do/u/huo0"
-stars: 8518
-stars_per_day: 1420
-forks: 14176
+stars: 8586
+stars_per_day: 1227
+forks: 14266
 open_issues: 10
 created: 2026-03-31
 pushed_at: 2026-03-31
 first_seen: 2026-04-01
 week: "2026-W14"
 month: "2026-04"
-category: "開發工具"
+category: "其他"
 subcategory: "源碼還原"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-01
-use_case: "還原 Claude 的 TypeScript 源碼，供研究用途。"
+use_case: "還原 Claude 的 TypeScript 源碼，供研究使用。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,21 +42,20 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-01"
-star_history: "2026-04-01:4889,2026-04-01:4969,2026-04-02:7368,2026-04-02:7376,2026-04-03:8012,2026-04-03:8013,2026-04-04:8275,2026-04-04:8277,2026-04-05:8378,2026-04-05:8378,2026-04-06:8453,2026-04-06:8453,2026-04-07:8517,2026-04-07:8518"
+star_history: "2026-04-01:4889,2026-04-01:4969,2026-04-02:7368,2026-04-02:7376,2026-04-03:8012,2026-04-03:8013,2026-04-04:8275,2026-04-04:8277,2026-04-05:8378,2026-04-05:8378,2026-04-06:8453,2026-04-06:8453,2026-04-07:8517,2026-04-07:8518,2026-04-08:8586"
 tags:
   - github
-  - "category/開發工具"
+  - "category/其他"
   - "lang/typescript"
-  - easy_install
 aliases:
   - "claude-code-sourcemap"
   - "ChinaSiro/claude-code-sourcemap"
-  - "還原 Claude 的 TypeScript 源碼，供研究用途。"
+  - "還原 Claude 的 TypeScript 源碼，供研究使用。"
 ---
 
 # claude-code-sourcemap
 
-**8.5k** stars · **1.4k** stars/天 · 建立 6 天前 · TypeScript · 未標註授權
+**8.6k** stars · **1.2k** stars/天 · 建立 7 天前 · TypeScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/ChinaSiro--claude-code-sourcemap");
@@ -69,16 +68,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `easy-install`
+`個人專案`
 
 > [!summary] 一句話摘要
-> 還原 Claude 的 TypeScript 源碼，供研究用途。
+> 還原 Claude 的 TypeScript 源碼，供研究使用。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (1.4k stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 6 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 希望深入了解 Claude 源碼結構的 AI 開發者和研究人員。
-> **一句話重點** 這個專案讓開發者能夠深入了解 Claude 的內部運作，並進行相應的技術研究。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (1.2k stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 7 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
+> **適合** 對 Claude 源碼有興趣的開發者和研究者，尤其是在學術和技術研究領域。
+> **一句話重點** 這個專案讓開發者能夠深入探索 Claude 的內部邏輯，提供了一個學習和研究的絕佳資源。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,27 +100,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習、2 小時整合，得到深入了解 Claude 源碼的效果，值得研究。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，3 小時整合，得到對 Claude 源碼的深入理解，值得。
 
 > [!abstract] 核心創新
-> 本專案提供了 Claude 的非官方源碼還原，供研究和學習使用。
+> 本專案提供了 Claude 的 TypeScript 源碼還原，供研究和學習使用。
 
 ## 專案簡介
 
-這個專案透過分析 npm 包 `@anthropic-ai/claude-code` 附帶的 source map，還原出 Claude 的 TypeScript 源碼，版本為 `2.1.88`。使用者可以從 `cli.js.map` 中提取 `sourcesContent` 字段，獲得 4756 個還原文件，包括 1884 個 `.ts` 和 `.tsx` 源文件。這樣的設計使得研究者能夠深入了解 Claude 的內部結構，並進行相應的技術研究。這個工具的賣點在於它提供了一個非官方的源碼結構，讓開發者能夠探索 Claude 的功能和架構，而不需要直接接觸官方的內部代碼。技術上，這個專案使用 TypeScript 和 JavaScript，並且依賴於 npm 的包管理系統，這使得它的安裝和使用相對簡單。
+這個專案旨在從公開的 npm 包 `@anthropic-ai/claude-code` 中提取 TypeScript 源碼，並還原出版本 `2.1.88` 的完整結構。使用者可以透過分析 `cli.js.map` 來獲取源碼，這樣的設計使得開發者能夠更深入地理解 Claude 的內部運作。專案中包含 4756 個還原文件，涵蓋了多種功能模組，如 CLI 入口、工具實現、命令實現、API 服務等。這樣的結構不僅便於研究，還可以作為學習 TypeScript 和大型應用架構的範本。這個工具的賣點在於它提供了對 Claude 內部邏輯的透明度，讓開發者能夠探索其設計思路和實作細節。
 
-與其他類似工具相比，如 AlpinDale/parsync 和 BigBodyCobain/Shadowbroker，這個專案專注於還原特定的 AI 源碼，並提供了更詳細的命令和工具實現。實際使用中，開發者可以利用這些源碼來進行功能擴展或進一步的研究，但需要注意這是非官方版本，可能不完全反映原始代碼的結構。這個專案目前處於初期階段，開發者社群活躍度尚可，開放問題數量適中，顯示出一定的使用需求。適合對 AI 開發和源碼分析有興趣的技術人員，尤其是希望深入了解 Claude 的運作原理者。
+相較於其他類似的專案，如 `0xGF/boneyard` 和 `Kuberwastaken/claude-code`，這個專案專注於源碼的還原，並提供了完整的目錄結構，便於使用者進行研究和學習。使用者在使用過程中可能會遇到版權問題，因為源碼的版權歸原開發者所有，因此不應用於商業用途。這個專案的社群活躍度高，最近的 commit 活動顯示出持續的維護和更新，並且有不少開放的 issue 供使用者討論和提問。整體來看，這是一個適合對 Claude 有興趣的開發者和研究者的工具，尤其是在學術和技術研究領域。未來可能會有更多的功能擴展和社群貢獻，值得持續關注。
 
 **技術棧**：`TypeScript` · `JavaScript`
 
 ## 重點功能
 
-- 源碼還原 — 從 npm 包 `@anthropic-ai/claude-code` 的 source map 中提取出 4756 個文件，包括 1884 個 TypeScript 源文件。
-- CLI 入口 — 提供 `main.tsx` 作為命令行介面的進入點，方便使用者進行交互。
-- 多工具支持 — 包含 30+ 個工具實現，如 Bash、FileEdit、Grep 等，擴展性強。
-- 插件系統 — 支持插件擴展，開發者可以根據需求添加自定義功能。
-- 技能系統 — 提供技能系統，便於開發者組織和管理不同的功能模組。
+- 源碼還原 — 從 npm 包中提取 TypeScript 源碼，還原版本為 2.1.88。
+- 完整目錄結構 — 包含 CLI 入口、工具實現、命令實現等多種模組。
+- 研究用途 — 僅供技術研究與學習，避免商業用途。
+- 社群活躍 — 定期更新，開放的 issue 供使用者討論。
+- 版權聲明 — 明確標示源碼的版權歸原開發者所有。
 
 ## 快速開始
 
@@ -135,71 +134,69 @@ npm install
 ```
 3. 運行 CLI
 ```bash
-npm start
+node ./restored-src/src/main.tsx
 ```
 
 ## 程式碼範例
 
 ```ts
 {
-  "前置條件": "需要安裝 Node.js 和 npm。",
-  "指令": "npm start",
-  "預期輸出": "啟動 CLI 介面，顯示可用命令列表。"
+  "前置條件": "需安裝 Node.js 和 npm。",
+  "指令": "node ./restored-src/src/main.tsx",
+  "預期輸出": "啟動 CLI 入口，顯示可用命令和功能。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 8518 stars（1420/天），forks 14176（166.4%），這顯示出極高的使用需求。作者 ChinaSiro 透過這個專案解決了對 Claude 源碼的研究需求，之前沒有好的開源替代方案能夠提供這樣的源碼還原。這個專案的爆炸性增長可能與社群對 AI 模型透明度的需求有關，特別是在 Claude 這樣的 AI 系統中。forks/stars 比率高達 166.4%，顯示出許多人在積極修改和使用這個工具。
+> 建立 7 天內累積 8586 stars（1227/天），forks 14266（166.2%），顯示出極高的興趣和參與度。這個專案由 ChinaSiro 發起，專注於還原 Claude 的源碼，解決了開發者對於 Claude 內部運作的透明度需求。之前，開發者只能依賴官方文檔和有限的資源來理解 Claude 的功能，這個專案提供了一個更直接的方式來探索其源碼。最近的推特和技術論壇討論也引起了廣泛的關注，進一步推動了其流行。高比例的 forks/stars（166.2%）顯示出許多人在實際修改和使用這個專案，反映出其實用性和吸引力。
 
 ## 適合誰使用
 
-**目標受眾**：希望深入了解 Claude 源碼結構的 AI 開發者和研究人員。
+**目標受眾**：對 Claude 源碼有興趣的開發者和研究者，尤其是在學術和技術研究領域。
 
 > [!example] 使用場景
-> - AI 研究人員用它來分析 Claude 的源碼結構，因為這樣能深入理解其運作邏輯，並進行改進或擴展。
-> - 開發者用它來探索 Claude 的功能實現，因為這可以幫助他們在自己的專案中實現類似的功能。
-> - 學生用它來學習 TypeScript 和 JavaScript 的實際應用，因為這個專案提供了大量的實際代碼範例。
+> - 研究人員用它來分析 Claude 的內部邏輯，因為它提供了完整的 TypeScript 源碼結構，便於深入研究。
+> - 開發者用它來學習大型應用的架構設計，因為它的目錄結構清晰，包含多種功能模組的實作。
+> - 學生用它來進行技術實驗，因為可以在不侵犯版權的情況下探索和學習 Claude 的設計思路。
 
 ## 架構分析
 
-這個專案採用 TypeScript 和 JavaScript 作為主要開發語言，結構清晰，便於維護。資料流主要通過 CLI 進行交互，使用者可以透過命令行執行不同的功能。選擇 TypeScript 的原因在於其靜態類型檢查能提高代碼的可維護性和可讀性。
-
-這個專案的依賴關係相對簡單，主要依賴於 npm 包管理系統，降低了使用門檻。擴展性方面，插件系統和技能系統的設計使得未來可以輕鬆添加新功能，但也可能導致代碼複雜度增加。整體來看，這個架構設計適合小型團隊或個人開發者，但在大型專案中可能需要更多的組織和規範。
+這個專案的架構是基於從 npm 包中提取的 source map，使用 TypeScript 進行源碼還原。資料流的核心在於從 `cli.js.map` 中提取 `sourcesContent`，這樣的設計使得還原過程相對簡單，但也可能導致與原始結構的差異。選擇 TypeScript 而非 JavaScript 是因為其靜態類型特性有助於更清晰的代碼結構，雖然這會增加學習曲線。這個專案的擴展性瓶頸在於源碼的合法性和使用範圍，未來可能需要考慮如何在不侵犯版權的情況下進行擴展。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於從 npm 包的 source map 中提取源碼，使用 TypeScript 和 JavaScript 進行開發。透過分析 `cli.js.map`，開發者能夠獲得完整的源碼結構，這在 AI 開發中非常重要。專案能夠處理的資料量相對較小，主要集中在 Claude 的功能實現上，對於大型資料集的處理能力尚未測試。選擇 TypeScript 的原因在於其靜態類型特性，可以減少錯誤並提高代碼可讀性，這對於源碼還原特別重要。技術風險方面，這個專案可能面臨源碼更新帶來的兼容性問題，特別是當官方版本進行重大變更時。整合方面，這個專案可以輕鬆與現有的 JavaScript 生態系統結合，但對於非 TypeScript 的開發者來說，學習曲線可能較陡峭。
+這個專案的核心技術機制在於使用 TypeScript 進行源碼還原，透過分析 npm 包中的 source map 來提取源碼。這樣的設計使得開發者能夠獲得 Claude 的內部邏輯，但也可能導致與原始結構的差異。效能方面，還原過程的速度取決於源碼的大小和結構，對於 4756 個文件的處理，可能需要一定的計算資源。選擇 TypeScript 而非 JavaScript 是因為其靜態類型特性能提高代碼的可讀性和可維護性，但這也增加了學習的難度。技術風險方面，源碼的合法性和使用範圍是主要考量，未來可能需要考慮如何在不侵犯版權的情況下進行擴展。整合方面，這個專案可以與現有的 TypeScript 開發環境無縫對接，但對於不熟悉 TypeScript 的開發者來說，學習成本可能較高。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的專案概述和使用說明，安裝過程簡單，無明顯坑點。文件中包含了基本的使用範例，對於新手友好。整體來說，花 30 分鐘能夠順利跑起來。
+> README 文件提供了清晰的專案背景和使用說明，安裝過程相對順暢，沒有明顯的坑。雖然沒有詳細的 getting started guide，但提供的步驟足以讓新手快速上手。文件目前僅有英文版本，可能對非英語使用者造成一定的障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供完整的源碼還原，便於研究和學習。
-> - 支持多種工具和命令的實現，功能強大。
-> - 結構清晰，易於維護和擴展。
+> - 提供完整的 TypeScript 源碼結構，便於研究和學習。
+> - 社群活躍，定期更新，能夠獲得最新的技術支持。
+> - 清晰的目錄結構，便於開發者快速上手。
 
 > [!danger] 缺點
-> - 僅供研究用途，商業使用受限。
-> - 源碼結構可能與官方版本存在差異。
-> - 對新手來說，理解源碼可能有一定挑戰。
+> - 僅供研究使用，商業用途受限。
+> - 可能存在版權問題，需遵循開發者的要求。
+> - 源碼還原的準確性可能不如官方版本。
 
 > [!warning] 注意事項
-> - 僅供研究用途，不能用於商業目的。
-> - 源碼結構可能不完全反映官方版本，存在一定的差異。
-> - 對於非 TypeScript 開發者，理解源碼可能有一定難度。
+> - 僅供研究使用，不得用於商業用途。
+> - 可能存在版權問題，需遵循原開發者的要求。
+> - 未經官方授權的還原，可能與實際內部結構不符。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步和傳輸，而本專案專注於源碼還原和分析，適合不同的使用場景。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供類似的源碼分析功能，但可能不如本專案針對 Claude 的深入。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於開源工具的逆向工程，但不如本專案專注於特定的 Claude 源碼還原。 |
+| [Kuberwastaken/claude-code](https://github.com/Kuberwastaken/claude-code) | 提供類似的源碼還原功能，但版本和結構可能不同。 |
 
 ## 替代方案決策
 
@@ -207,16 +204,16 @@ npm start
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於資料同步和傳輸，與本專案的源碼還原功能有明顯區別。 | 如果需要進行資料同步而非源碼分析，則應選擇此工具。 | low，因為兩者功能差異明顯，無需直接轉換。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供類似的源碼分析功能，但專注於不同的 AI 模型。 | 若需要分析其他 AI 模型的源碼，則可考慮此工具。 | medium，因為需要重新學習不同的源碼結構和功能。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於開源工具的逆向工程，提供多種開源工具的源碼，但不如本專案專注於 Claude 的源碼還原。 | 如果你需要探索多種開源工具的源碼，而不僅僅是 Claude 的話，這個工具會更合適。 | medium，因為需要理解不同工具的架構和實作。 |
+| [Kuberwastaken/claude-code](https://github.com/Kuberwastaken/claude-code) | 提供類似的源碼還原功能，但版本和結構可能不同，可能不如本專案完整。 | 如果你的需求是針對特定版本的 Claude 源碼，這個工具會更合適。 | low，因為結構相似，遷移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **claude-code-sourcemap** | **parsync** | **Shadowbroker** |
+> | 維度 | **claude-code-sourcemap** | **boneyard** | **claude-code** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於資料同步和傳輸，與本專案的源碼還原功能有明顯區別。 | 提供類似的源碼分析功能，但專注於不同的 AI 模型。 |
-> | 遷移成本 | - | low，因為兩者功能差異明顯，無需直接轉換。 | medium，因為需要重新學習不同的源碼結構和功能。 |
-> | 適用場景 | 主要場景 | 如果需要進行資料同步而非源碼分析，則應選擇此工具。 | 若需要分析其他 AI 模型的源碼，則可考慮此工具。 |
+> | 技術路線 | 本專案 | 專注於開源工具的逆向工程，提供多種開源工具的源碼，但不如本專案專注於 Claude 的源碼還原。 | 提供類似的源碼還原功能，但版本和結構可能不同，可能不如本專案完整。 |
+> | 遷移成本 | - | medium，因為需要理解不同工具的架構和實作。 | low，因為結構相似，遷移成本較低。 |
+> | 適用場景 | 主要場景 | 如果你需要探索多種開源工具的源碼，而不僅僅是 Claude  | 如果你的需求是針對特定版本的 Claude 源碼，這個工具會 |
 
 ## 成熟度評估
 
@@ -227,44 +224,44 @@ npm start
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人研究和學習，不建議用於生產環境。
+> 適合技術研究和學習，但不建議用於生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 源碼結構可能與官方版本不一致，導致功能無法正常使用。
-  - 解法：在使用前仔細檢查源碼和功能對應。
-- [MEDIUM] 對於非 TypeScript 開發者，理解源碼可能有挑戰。
+- **[HIGH]** 源碼還原的準確性可能不如官方版本，可能導致功能不全。
+  - 解法：參考官方文檔以獲得完整功能說明。
+- **[HIGH]** 使用過程中可能遇到版權問題，需遵循原開發者的要求。
+  - 解法：僅用於研究目的，避免商業用途。
+- [MEDIUM] 對於不熟悉 TypeScript 的開發者來說，學習曲線較陡峭。
   - 解法：建議先學習 TypeScript 基礎知識。
-- **[HIGH]** 未來官方版本更新可能導致兼容性問題。
-  - 解法：定期檢查官方版本更新，及時調整使用方法。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| AI 開發者進行 Claude 源碼分析 | 非常適合 | 提供完整的源碼還原，便於深入研究。 |
-| 學生學習 TypeScript 和 JavaScript | 適合 | 包含大量實際代碼範例，有助於學習。 |
-| 商業開發團隊使用 Claude 功能 | 不適合 | 僅供研究用途，商業使用受限。 |
-| 小型開發團隊進行 AI 相關專案 | 普通 | 源碼結構可能與官方版本存在差異。 |
+| 學術研究團隊分析 Claude 的內部邏輯 | 非常適合 | 提供完整的源碼結構，便於深入研究。 |
+| 開發者學習大型應用架構設計 | 適合 | 清晰的目錄結構，包含多種功能模組的實作。 |
+| 商業團隊尋找可用於產品的源碼 | 不適合 | 僅供研究使用，商業用途受限。 |
+| 學生進行技術實驗 | 非常適合 | 可以在不侵犯版權的情況下探索和學習。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~2 小時 |
-| 維護負擔 | low |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習、2 小時整合，得到深入了解 Claude 源碼的效果，值得研究。
+> 花 5 小時學習，3 小時整合，得到對 Claude 源碼的深入理解，值得。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：專案本身不需要高權限，僅存取公開的 npm 包資料。對於 CI/CD 使用安全，但需注意源碼的合法性問題。
+> 低風險：本專案不需要高權限，僅存取公開的 npm 包資料，不涉及敏感資料。
 
 ## 健康度儀表板
 
@@ -329,7 +326,7 @@ npm start
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 14.2k |
+| Forks | 14.3k |
 | Open Issues | 10 |
 | Issue 解決率 | 38% (6 closed) |
 | 最後推送 | 2026-03-31 |
@@ -345,7 +342,7 @@ npm start
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，開放問題數量適中，顯示出一定的使用需求。
+**社群活躍度**：社群活躍，定期更新和討論。
 **連結**：[文件](https://linux.do/u/huo0)
 
 ## 開發動態
@@ -416,9 +413,9 @@ npm start
 
 ## 延伸閱讀
 
-相關概念：[[源碼還原]] · [[開源軟體]] · [[AI 模型分析]]
+相關概念：[[源碼還原]] · [[開源軟體]] · [[技術研究]]
 
-相關專案：[[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alvinunreal--awesome-opensource-ai|alvinunreal/awesome-opensource-ai]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]]
 
 [GitHub](https://github.com/ChinaSiro/claude-code-sourcemap) · [官方網站](https://linux.do/u/huo0)
 
@@ -436,7 +433,7 @@ npm start
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "ChinaSiro--claude-code-sourcemap"
+> WHERE category = "其他" AND file.name != "ChinaSiro--claude-code-sourcemap"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -460,7 +457,7 @@ npm start
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["源碼還原","開源軟體","AI 模型分析"];
+> const concepts = ["源碼還原","開源軟體","技術研究"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "ChinaSiro--claude-code-sourcemap" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

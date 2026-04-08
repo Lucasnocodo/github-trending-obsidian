@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "\"OpenHarness: Open Agent Harness\""
 homepage: ""
-stars: 7142
-stars_per_day: 1190
-forks: 1238
+stars: 7164
+stars_per_day: 1194
+forks: 1243
 open_issues: 17
 created: 2026-04-01
 pushed_at: 2026-04-07
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-08
-use_case: "提供輕量級的代理基礎設施，支持多種工具和多代理協調。"
+use_case: "提供輕量級的代理基礎設施，支持多代理協調與工具使用。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-08"
-star_history: "2026-04-08:7142"
+star_history: "2026-04-08:7142,2026-04-08:7164"
 tags:
   - github
   - "category/開發工具"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "OpenHarness"
   - "HKUDS/OpenHarness"
-  - "提供輕量級的代理基礎設施，支持多種工具和多代理協調。"
+  - "提供輕量級的代理基礎設施，支持多代理協調與工具使用。"
 ---
 
 # OpenHarness
 
-**7.1k** stars · **1.2k** stars/天 · 建立 6 天前 · Python · MIT
+**7.2k** stars · **1.2k** stars/天 · 建立 6 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/HKUDS--OpenHarness");
@@ -73,13 +73,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供輕量級的代理基礎設施，支持多種工具和多代理協調。
+> 提供輕量級的代理基礎設施，支持多代理協調與工具使用。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (1.2k stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要快速整合多個 LLM API 並希望進行實驗的開發者。
-> **一句話重點** OpenHarness 不僅是一個工具，更是一個開放的實驗平台，讓開發者能夠探索和擴展 AI 代理的潛力。
+> **適合** 需要快速整合多個 LLM API 並進行實驗的開發者和研究者。
+> **一句話重點** OpenHarness 的設計不僅簡化了 LLM 的整合，還提供了多代理協調的能力，讓開發者能夠更靈活地實驗和部署 AI 解決方案。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -103,26 +103,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到靈活的 AI 代理開發平台，值得一試。
+> **結論** 花 5 小時學習，10 小時整合，得到靈活的 LLM 整合能力，值得投資。
 
 > [!abstract] 核心創新
-> 提供了一個完整的代理基礎設施，支持多種工具和多代理協調。
+> OpenHarness 提供了一個輕量級的代理基礎設施，支持多代理協調和工具使用，並能夠輕鬆整合多種 LLM API。
 
 ## 專案簡介
 
-OpenHarness 是一個開源的代理架構，旨在為開發者提供一個完整的基礎設施來運行和管理 AI 代理。用戶可以通過一個命令（`oh`）啟動 OpenHarness，並整合多種 CLI 代理，如 OpenClaw 和 Cursor。這個工具的核心功能包括流式工具調用循環、API 重試機制、並行工具執行以及成本追蹤，這些設計使得代理的運行更加高效和可靠。技術上，OpenHarness 使用 Python 和 TypeScript，並依賴於多個庫如 `anthropic` 和 `openai`，這使得它能夠與主流的 LLM API 兼容。與其他類似工具相比，OpenHarness 提供了更靈活的工作流配置選項，支持多種 API 格式，並能夠根據用戶需求動態加載技能和工具。
+OpenHarness 是一個開源的代理基礎設施，旨在簡化與大型語言模型（LLM）的整合。用戶可以透過單一命令 `oh` 啟動 OpenHarness，並解鎖所有代理功能。它支持多種 CLI 代理整合，包括 OpenClaw 和 Cursor，並提供一個統一的工作流程設置，讓用戶能夠輕鬆選擇和配置不同的 API 提供者。技術上，OpenHarness 使用 Python 和 TypeScript，並依賴於多個庫如 `anthropic` 和 `openai`，這使得它能夠與多種 LLM 進行互動。
 
-這使得它在需要快速適應不同 LLM 的場景中更具優勢。實際使用中，OpenHarness 需要 Python 3.10 以上和 Node.js 18 以上，並且能夠處理多個 API 鍵，這對於需要管理多個 LLM 的開發者來說非常方便。儘管目前仍在活躍開發中，社群的回應速度和問題解決率都顯示出良好的活躍度。這個專案適合對 AI 代理開發有興趣的開發者，尤其是那些希望在開發過程中進行實驗和擴展的使用者。
+這種設計不僅提升了開發效率，還能夠支持多種工具和技能的加載，並提供持久的記憶功能。與其他工具相比，如 `0xGF/boneyard` 和 `CoderLuii/HolyClaude`，OpenHarness 提供了更強大的多代理協調能力和用戶友好的配置流程，特別適合需要快速迭代和實驗的開發者。使用者可以在本地環境中輕鬆運行和測試，並且支持多種 API 的兼容性，這使得它在多樣化的開發需求中具有優勢。雖然目前仍在快速發展中，但其社群活躍度和開發者的參與度顯示出良好的未來潛力。
 
 **技術棧**：`Python 3.10` · `TypeScript` · `Node.js 18`
 
 ## 重點功能
 
-- 一鍵安裝 — 使用 `curl` 命令快速安裝 OpenHarness，支持 OS 檢測和依賴檢查。
-- 流式工具調用循環 — 支持並行執行多個工具，提升效率。
-- 多種 API 兼容性 — 支持 Anthropic 和 OpenAI 的多種 API 格式，方便用戶選擇。
-- 動態技能加載 — 允許用戶根據需求加載和配置技能，靈活應對不同場景。
-- 多代理協調 — 支持代理之間的協作和任務管理，適合複雜的工作流。
+- 一鍵安裝 — 使用 `curl` 命令快速安裝 OpenHarness，支持 OS 自動檢測和依賴檢查。
+- 多代理協調 — 支持同時運行多個代理，並能夠進行任務管理和子代理生成。
+- API 兼容性 — 支持多種 LLM API，包括 Anthropic 和 OpenAI，並能夠輕鬆切換和配置。
+- 持久記憶功能 — 提供上下文壓縮和會話恢復功能，能夠記錄和管理代理的歷史。
+- 插件生態系統 — 支持自定義插件和技能的加載，擴展代理的功能和應用場景。
 
 ## 快速開始
 
@@ -134,9 +134,9 @@ curl -fsSL https://raw.githubusercontent.com/HKUDS/OpenHarness/main/scripts/inst
 ```bash
 curl -fsSL https://raw.githubusercontent.com/HKUDS/OpenHarness/main/scripts/install.sh | bash -s -- --from-source
 ```
-3. 啟動 OpenHarness
+3. 運行代理
 ```bash
-oh
+uv run oh -p 'Inspect this repository and list the top 3 refactors'
 ```
 
 ## 程式碼範例
@@ -144,68 +144,67 @@ oh
 ```python
 {
   "前置條件": "需要設置 ANTHROPIC_API_KEY 環境變數",
-  "指令": "ANTHROPIC_API_KEY=your_key uv run oh -p \"Inspect this repository and list the top 3 refactors\"",
-  "預期輸出": "返回檢查結果和建議的重構列表（推測）"
+  "指令": "ANTHROPIC_API_KEY=your_key uv run oh -p 'Inspect this repository and list the top 3 refactors'",
+  "預期輸出": "將列出該代碼庫的前三個重構建議。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 7142 stars（1190/天），forks 1238（17.3%），顯示出強勁的增長勢頭。作者團隊由多位開源貢獻者組成，過去在 AI 和開源社群中有良好的聲譽。這個專案解決了多代理協調和工具整合的痛點，之前的工具往往缺乏靈活性和擴展性。近期的推廣活動和社群討論也促進了其曝光率，技術生態的變化使得這種開放式架構更具可行性。高達 17.3% 的 forks/stars 比率顯示出許多開發者對此專案的實際修改和使用需求。
+> 建立 6 天就累積 7164 stars（1194/天），forks 1243（17.4%），顯示出強勁的增長趨勢。開發者主要來自 HKUDS 團隊，過去在開源社群中有良好表現。這個專案解決了多代理協調和 LLM 整合的痛點，之前的方案往往缺乏靈活性和易用性。近期的推廣活動和社群討論也促進了其曝光率，讓更多開發者注意到這個工具。技術上，隨著 Python 和 Node.js 的普及，這個工具的可行性和實用性大幅提升。forks/stars 比率高達 17.4%，顯示出許多人在實際修改和使用這個工具。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速整合多個 LLM API 並希望進行實驗的開發者。
+**目標受眾**：需要快速整合多個 LLM API 並進行實驗的開發者和研究者。
 
 > [!example] 使用場景
-> - AI 研究者用它來快速整合多個 LLM API，因為它支持多種 API 格式和動態技能加載。
-> - 開發者用它來構建自定義的 AI 代理，因為它提供了靈活的工作流配置和多代理協調功能。
-> - 產品經理用它來測試不同的 AI 工具整合，因為它能夠快速部署和管理多個代理的環境。
+> - 後端工程師用它來整合多個 LLM API，因為它提供了簡單的配置流程和多代理支持，能夠快速部署和測試不同的模型。
+> - AI 研究者用它來實驗不同的代理協調模式，因為它的開源性質允許他們自由修改和擴展功能，並能夠快速迭代。
+> - 產品經理用它來設計和測試新的 AI 功能，因為它支持多種工具和技能的加載，能夠快速驗證想法和原型。
 
 ## 架構分析
 
-OpenHarness 採用模組化設計，核心是 Python 實現的代理架構，並使用 TypeScript 提供前端支持。這樣的設計使得用戶可以輕鬆擴展和自定義功能。資料流方面，代理通過 API 調用與 LLM 進行交互，並使用 `uv` 進行任務管理和執行。
+OpenHarness 採用模組化設計，主要由 Python 和 TypeScript 組成，並使用 `uv` 作為協調工具。這種設計使得用戶能夠輕鬆擴展功能，並支持多種 API 的整合。資料流方面，使用者可以透過 CLI 指令與系統互動，並且所有的 API 調用都經過統一的配置流程。
 
-選擇 Python 作為主要語言是因為其在 AI 領域的廣泛應用，而 TypeScript 則提供了更好的前端開發體驗。這樣的選擇使得整體架構既能保持靈活性又能確保性能。擴展性方面，使用插件系統支持動態加載技能和工具，但這也可能導致在某些情況下性能下降，特別是在大量插件同時運行時。
+選擇 Python 使得開發者能夠快速迭代，而 TypeScript 則提供了更好的前端體驗。這樣的設計雖然增加了學習曲線，但也提升了靈活性和擴展性。未來可能面臨的瓶頸包括對新 API 的支持和性能優化，特別是在高併發的情況下。
 
-整體來看，這種架構設計適合快速迭代和實驗，但在大規模部署時可能需要進一步優化。
+整體而言，這種架構適合快速開發和實驗，但在面對大規模應用時可能需要進一步的優化。
 
 ## 技術深入分析
 
-OpenHarness 的核心技術在於其模組化的代理架構，使用 Python 和 TypeScript 進行開發。這種設計使得用戶可以輕鬆地擴展功能，並根據需求動態加載技能和工具。效能方面，OpenHarness 能夠處理多個並行的 API 請求，這對於需要高效能的 AI 應用來說至關重要。選擇 Python 是因為其在 AI 領域的廣泛應用，而 TypeScript 則提供了更好的前端開發體驗。
+OpenHarness 的核心技術機制在於其模組化設計，使用 Python 和 TypeScript 來實現多代理協調。透過 `uv` 工具，OpenHarness 能夠高效地管理 API 調用和代理任務。這種設計使得用戶可以快速設置和配置不同的 LLM，並且支持多種工具和技能的加載。效能方面，OpenHarness 能夠處理多個並行請求，但在高併發情況下可能會面臨瓶頸。
 
-這樣的選擇使得整體架構既能保持靈活性又能確保性能。技術風險方面，隨著用戶數量的增加，可能會面臨性能瓶頸，特別是在大量插件同時運行時。整合方面，OpenHarness 與主流的 CI/CD 工具兼容，並能夠輕鬆集成到現有的開發流程中，這使得它在開發團隊中具有很高的適用性。整體來看，這個專案在未來有潛力成為 AI 代理開發的重要工具。
+選擇 Python 使得開發者能夠快速迭代，而 TypeScript 提供了更好的前端體驗。這樣的選擇雖然增加了學習曲線，但也提升了靈活性和擴展性。技術風險方面，未來可能需要針對新 API 的支持進行優化，特別是在高併發的情況下。整合方面，OpenHarness 與主流的 CI/CD 工具相容性良好，能夠輕鬆融入現有的開發流程。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和範例。安裝過程相對順暢，但需要注意 Python 和 Node.js 的版本要求。文件中有基本的快速入門指南，但缺乏多語言支持。
+> README 文件提供了清晰的安裝指引和範例，安裝過程相對順暢，無重大坑點。文檔中包含了快速入門指南，對於新手來說，花 30 分鐘能夠成功運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 靈活的工作流配置，支持多種 API 格式
-> - 強大的多代理協調功能，適合複雜任務
-> - 開源社群活躍，持續更新和改進
+> - 支持多種 LLM API，提供靈活的整合選擇。
+> - 模組化設計，方便擴展和自定義功能。
+> - 活躍的社群和持續的開發更新，確保工具的持續改進。
 
 > [!danger] 缺點
-> - 需要一定的技術背景才能充分利用
-> - 目前功能仍在開發中，可能不穩定
-> - 對於不熟悉 CLI 的用戶，學習曲線較陡
+> - 對於新手來說，學習曲線可能較陡峭。
+> - 某些功能仍在開發中，可能不夠穩定。
+> - 需要額外的設置來支持某些 API 的授權。
 
 > [!warning] 注意事項
-> - 需要 Python 3.10 以上和 Node.js 18 以上環境
-> - 目前仍在開發中，可能存在不穩定的功能
-> - 對於不熟悉 CLI 工具的用戶，學習曲線可能較陡峭
+> - 僅支持 Python 3.10 以上版本
+> - 需要 Node.js 18 以上版本（可選，僅限於 React 終端 UI）
+> - 對於某些 API 可能需要額外的授權設置
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | 提供類似的 CLI 工具集成，但不支持多代理協調功能。 |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的技能集成，功能範圍較窄。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供類似的代理功能，但缺乏 OpenHarness 的靈活性和擴展性。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 LLM 整合，但缺乏 OpenHarness 的多代理協調功能，適合單一模型的使用場景。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於 Claude 模型的整合，而 OpenHarness 支持多種 LLM，提供更大的靈活性。 |
 
 ## 替代方案決策
 
@@ -213,16 +212,16 @@ OpenHarness 的核心技術在於其模組化的代理架構，使用 Python 和
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [FreedomIntelligence/OpenClaw](https://github.com/FreedomIntelligence/OpenClaw) | 專注於醫療領域的技能集成，功能範圍較窄，無法支持多代理協調。 | 如果你的應用專注於醫療領域，且需要特定的醫療技能集成。 | medium，因為需要重新配置和適應不同的 API 格式。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供類似的代理功能，但缺乏 OpenHarness 的靈活性和擴展性。 | 如果你的需求較為簡單，且不需要多代理協調功能。 | low，因為功能相似，遷移成本較低。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 使用 Rust 實作，記憶體使用量更低，但生態系統不如 Python 豐富。 | 如果你的團隊已經在使用 Rust 並需要高效的記憶體管理。 | medium，因為需要重寫部分代碼以適應 Rust 環境。 |
+| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 專注於 Claude 模型的整合，功能較為單一。 | 如果你的主要需求是與 Claude 模型進行深度整合。 | low，因為功能相似，遷移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **OpenHarness** | **OpenClaw** | **Shadowbroker** |
+> | 維度 | **OpenHarness** | **boneyard** | **HolyClaude** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於醫療領域的技能集成，功能範圍較窄，無法支持多代理協調。 | 提供類似的代理功能，但缺乏 OpenHarness 的靈活性和擴展性。 |
-> | 遷移成本 | - | medium，因為需要重新配置和適應不同的 API 格式。 | low，因為功能相似，遷移成本較低。 |
-> | 適用場景 | 主要場景 | 如果你的應用專注於醫療領域，且需要特定的醫療技能集成。 | 如果你的需求較為簡單，且不需要多代理協調功能。 |
+> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體使用量更低，但生態系統不如 Python 豐富。 | 專注於 Claude 模型的整合，功能較為單一。 |
+> | 遷移成本 | - | medium，因為需要重寫部分代碼以適應 Rust 環境。 | low，因為功能相似，遷移成本較低。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Rust 並需要高效的記憶體管理。 | 如果你的主要需求是與 Claude 模型進行深度整合。 |
 
 ## 成熟度評估
 
@@ -233,27 +232,27 @@ OpenHarness 的核心技術在於其模組化的代理架構，使用 Python 和
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人或小型專案試用，不建議用在生產環境的核心路徑上。
+> 適合個人或小型項目的試用，不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些系統上安裝時可能會遇到依賴問題
-  - 解法：確保所有依賴都已正確安裝，並檢查 Python 和 Node.js 版本
-- [MEDIUM] CLI 命令可能不夠直觀，特別是對新手來說
-  - 解法：參考官方文檔和範例，熟悉基本命令
-- [MEDIUM] 在高負載下可能會出現性能瓶頸
-  - 解法：考慮優化插件使用或減少同時運行的代理數量
+- **[HIGH]** 在某些環境下，安裝過程可能會因依賴問題而失敗
+  - 解法：確保所有依賴都是最新版本，並檢查 Python 和 Node.js 的版本
+- [MEDIUM] 某些 API 的授權設置可能不夠直觀
+  - 解法：參考文檔中的授權指南，確保正確配置
+- [MEDIUM] 高併發請求時可能會導致性能下降
+  - 解法：考慮增加服務器資源或優化請求處理邏輯
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 提供靈活的 API 整合和多代理協調功能，適合小型團隊的需求。 |
-| 大型企業的 AI 代理開發 | 普通 | 雖然功能強大，但目前仍在開發中，穩定性可能不足。 |
-| 個人開發者的 AI 實驗項目 | 非常適合 | 開源且易於擴展，適合進行實驗和學習。 |
-| 需要穩定商業應用的團隊 | 不適合 | 目前處於 alpha 階段，生產環境的穩定性不足。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 提供靈活的 LLM 整合和快速開發能力。 |
+| 大型企業的生產環境 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
+| AI 研究實驗室進行模型測試 | 適合 | 支持多種 LLM 和快速迭代的能力。 |
+| 需要高效能的即時應用 | 普通 | 在高併發情況下可能會遇到性能瓶頸。 |
 
 ## 採用成本分析
 
@@ -265,12 +264,12 @@ OpenHarness 的核心技術在於其模組化的代理架構，使用 Python 和
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到靈活的 AI 代理開發平台，值得一試。
+> 花 5 小時學習，10 小時整合，得到靈活的 LLM 整合能力，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，僅需 API 鍵來訪問 LLM。依賴鏈中有一些常見的庫，但沒有已知的供應鏈風險。在 CI/CD 中使用時，需確保 API 鍵的安全管理。
+> 中等風險：需提供 API 金鑰，並存取環境變數。依賴的庫需定期更新以避免安全漏洞。
 
 ## 健康度儀表板
 
@@ -362,7 +361,7 @@ OpenHarness 的核心技術在於其模組化的代理架構，使用 Python 和
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和回應問題
+**社群活躍度**：社群活躍，定期更新和討論。
 **連結**：[文件](https://github.com/HKUDS/OpenHarness)
 
 ## 開發動態
@@ -697,9 +696,9 @@ OpenHarness 的核心技術在於其模組化的代理架構，使用 Python 和
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[多模態]] · [[Agent 框架]]
+相關概念：[[CLI/TUI]] · [[多模態]] · [[自動化測試]]
 
-相關專案：[[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[Infatoshi--OpenSquirrel|Infatoshi/OpenSquirrel]] · [[NanmiCoder--claude-code-haha|NanmiCoder/claude-code-haha]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[Kuberwastaken--claude-code|Kuberwastaken/claude-code]]
 
 [GitHub](https://github.com/HKUDS/OpenHarness)
 
@@ -741,7 +740,7 @@ OpenHarness 的核心技術在於其模組化的代理架構，使用 Python 和
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","多模態","Agent 框架"];
+> const concepts = ["CLI/TUI","多模態","自動化測試"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "HKUDS--OpenHarness" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
