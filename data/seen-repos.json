@@ -827,10 +827,10 @@
   },
   "Gitlawb/openclaude": {
     "first_seen": "2026-04-02",
-    "last_seen": "2026-04-07",
-    "times_seen": 6,
+    "last_seen": "2026-04-08",
+    "times_seen": 7,
     "stars_first": 3599,
-    "stars_last": 18057
+    "stars_last": 19109
   },
   "tvytlx/ai-agent-deep-dive": {
     "first_seen": "2026-04-02",
@@ -848,17 +848,17 @@
   },
   "emdash-cms/emdash": {
     "first_seen": "2026-04-03",
-    "last_seen": "2026-04-07",
-    "times_seen": 5,
+    "last_seen": "2026-04-08",
+    "times_seen": 6,
     "stars_first": 4343,
-    "stars_last": 7825
+    "stars_last": 8180
   },
   "ultraworkers/claw-code-parity": {
     "first_seen": "2026-04-04",
-    "last_seen": "2026-04-07",
-    "times_seen": 2,
+    "last_seen": "2026-04-08",
+    "times_seen": 3,
     "stars_first": 5160,
-    "stars_last": 6545
+    "stars_last": 6599
   },
   "VoltAgent/awesome-design-md": {
     "first_seen": "2026-04-05",
@@ -869,9 +869,51 @@
   },
   "santifer/career-ops": {
     "first_seen": "2026-04-07",
-    "last_seen": "2026-04-07",
-    "times_seen": 1,
+    "last_seen": "2026-04-08",
+    "times_seen": 2,
     "stars_first": 11317,
-    "stars_last": 11317
+    "stars_last": 18471
+  },
+  "milla-jovovich/mempalace": {
+    "first_seen": "2026-04-08",
+    "last_seen": "2026-04-08",
+    "times_seen": 1,
+    "stars_first": 17279,
+    "stars_last": 17279
+  },
+  "HKUDS/OpenHarness": {
+    "first_seen": "2026-04-08",
+    "last_seen": "2026-04-08",
+    "times_seen": 1,
+    "stars_first": 7142,
+    "stars_last": 7142
+  },
+  "safishamsi/graphify": {
+    "first_seen": "2026-04-08",
+    "last_seen": "2026-04-08",
+    "times_seen": 1,
+    "stars_first": 7061,
+    "stars_last": 7061
+  },
+  "JuliusBrussee/caveman": {
+    "first_seen": "2026-04-08",
+    "last_seen": "2026-04-08",
+    "times_seen": 1,
+    "stars_first": 5957,
+    "stars_last": 5957
+  },
+  "kevinrgu/autoagent": {
+    "first_seen": "2026-04-08",
+    "last_seen": "2026-04-08",
+    "times_seen": 1,
+    "stars_first": 3805,
+    "stars_last": 3805
+  },
+  "0xGF/boneyard": {
+    "first_seen": "2026-04-08",
+    "last_seen": "2026-04-08",
+    "times_seen": 1,
+    "stars_first": 3525,
+    "stars_last": 3525
   }
 }
