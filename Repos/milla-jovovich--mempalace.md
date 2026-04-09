@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "The highest-scoring AI memory system ever benchmarked. And it's free."
 homepage: ""
-stars: 17279
-stars_per_day: 5760
-forks: 1966
-open_issues: 90
+stars: 27495
+stars_per_day: 6874
+forks: 3444
+open_issues: 191
 created: 2026-04-05
-pushed_at: 2026-04-07
+pushed_at: 2026-04-08
 first_seen: 2026-04-08
 week: "2026-W15"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供 AI 記憶系統，讓你能夠將專案和對話整理成可�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-11"
+appearances: 2
+next_review: "2026-04-12"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 26
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-08"
-star_history: "2026-04-08:17279"
+star_history: "2026-04-08:17279,2026-04-09:27495"
 tags:
   - github
   - "category/ai_ml"
@@ -583,7 +583,7 @@ MemPalace 的核心技術在於其結構化的記憶管理，將記憶分為翼�
 
 相關概念：[[記憶系統]] · [[向量資料庫]] · [[AI 記憶]]
 
-相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]] · [[MoonshotAI--Attention-Residuals|MoonshotAI/Attention-Residuals]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]]
+相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]] · [[MoonshotAI--Attention-Residuals|MoonshotAI/Attention-Residuals]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[TheTom--turboquant_plus|TheTom/turboquant_plus]] · [[aiming-lab--AutoResearchClaw|aiming-lab/AutoResearchClaw]]
 
 [GitHub](https://github.com/milla-jovovich/mempalace)
 
@@ -879,4 +879,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-09|2026-04-09]] — 再次上榜，27.5k stars
 - [[2026-04-08|2026-04-08]] — 首次收錄，17.3k stars

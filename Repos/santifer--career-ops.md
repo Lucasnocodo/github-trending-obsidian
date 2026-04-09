@@ -7,12 +7,12 @@ language: Go
 license: MIT
 description: "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing."
 homepage: ""
-stars: 18471
-stars_per_day: 6157
-forks: 3535
-open_issues: 32
+stars: 24614
+stars_per_day: 6154
+forks: 4575
+open_issues: 29
 created: 2026-04-04
-pushed_at: 2026-04-07
+pushed_at: 2026-04-08
 first_seen: 2026-04-07
 week: "2026-W15"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "一個 AI 驅動的求職系統，幫助用戶生成個性化履歷�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-11"
+appearances: 3
+next_review: "2026-04-12"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 44
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-07"
-star_history: "2026-04-07:11317,2026-04-08:18471"
+star_history: "2026-04-07:11317,2026-04-08:18471,2026-04-09:24614"
 tags:
   - github
   - "category/開發工具"
@@ -899,5 +899,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-09|2026-04-09]] — 再次上榜，24.6k stars
 - [[2026-04-08|2026-04-08]] — 再次上榜，18.5k stars
 - [[2026-04-07|2026-04-07]] — 首次收錄，11.3k stars

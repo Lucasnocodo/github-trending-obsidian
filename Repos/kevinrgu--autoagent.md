@@ -7,10 +7,10 @@ language: Python
 license: N/A
 description: "autonomous harness engineering"
 homepage: ""
-stars: 3805
-stars_per_day: 761
-forks: 432
-open_issues: 5
+stars: 3900
+stars_per_day: 650
+forks: 443
+open_issues: 6
 created: 2026-04-02
 pushed_at: 2026-04-03
 first_seen: 2026-04-08
@@ -30,8 +30,8 @@ use_case: "讓 AI 自動構建和迭代代理系統，無需手動編輯代碼�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-11"
+appearances: 2
+next_review: "2026-04-12"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-08"
-star_history: "2026-04-08:3805"
+star_history: "2026-04-08:3805,2026-04-09:3900"
 tags:
   - github
   - "category/開發工具"
@@ -805,4 +805,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-09|2026-04-09]] — 再次上榜，3.9k stars
 - [[2026-04-08|2026-04-08]] — 首次收錄，3.8k stars
