@@ -7,9 +7,9 @@ language: N/A
 license: N/A
 description: ""
 homepage: ""
-stars: 3025
-stars_per_day: 132
-forks: 155
+stars: 3042
+stars_per_day: 127
+forks: 156
 open_issues: 10
 created: 2026-03-15
 pushed_at: 2026-03-17
@@ -17,7 +17,7 @@ first_seen: 2026-03-19
 week: "2026-W12"
 month: "2026-03"
 category: "AI/ML"
-subcategory: "深度學習"
+subcategory: "模型優化"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-19
-use_case: "提供一種新的殘差連接方法，改善 Transformer 模型的性能與穩定性。"
+use_case: "提供一種改進的殘差連接方法，讓 Transformer 模型能夠選擇性地聚合早期層的表示。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-19"
-star_history: "2026-03-19:1811,2026-03-19:1813,2026-03-20:2012,2026-03-20:2015,2026-03-21:2247,2026-03-21:2248,2026-03-22:2419,2026-03-22:2419,2026-03-23:2513,2026-03-24:2603,2026-03-25:2673,2026-03-26:2722,2026-03-27:2759,2026-03-28:2797,2026-03-29:2818,2026-03-30:2831,2026-03-31:2844,2026-04-01:2860,2026-04-02:2891,2026-04-03:2920,2026-04-04:2935,2026-04-05:2954,2026-04-06:2989,2026-04-07:3000,2026-04-08:3025"
+star_history: "2026-03-19:1811,2026-03-19:1813,2026-03-20:2012,2026-03-20:2015,2026-03-21:2247,2026-03-21:2248,2026-03-22:2419,2026-03-22:2419,2026-03-23:2513,2026-03-24:2603,2026-03-25:2673,2026-03-26:2722,2026-03-27:2759,2026-03-28:2797,2026-03-29:2818,2026-03-30:2831,2026-03-31:2844,2026-04-01:2860,2026-04-02:2891,2026-04-03:2920,2026-04-04:2935,2026-04-05:2954,2026-04-06:2989,2026-04-07:3000,2026-04-08:3025,2026-04-09:3042"
 tags:
   - github
   - "category/ai_ml"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "Attention-Residuals"
   - "MoonshotAI/Attention-Residuals"
-  - "提供一種新的殘差連接方法，改善 Transformer 模型的性能與穩定性。"
+  - "提供一種改進的殘差連接方法，讓 Transformer 模型能夠選擇性地聚合早期層的表示。"
 ---
 
 # Attention-Residuals
 
-**3.0k** stars · **132** stars/天 · 建立 23 天前 · N/A · 未標註授權
+**3.0k** stars · **127** stars/天 · 建立 24 天前 · N/A · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/MoonshotAI--Attention-Residuals");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供一種新的殘差連接方法，改善 Transformer 模型的性能與穩定性。
+> 提供一種改進的殘差連接方法，讓 Transformer 模型能夠選擇性地聚合早期層的表示。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (132 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 21 天前) · **貢獻者** 3 人 · **參與度** Low
-> **適合** 希望優化 Transformer 模型性能的深度學習研究者和工程師。
-> **一句話重點** AttnRes 的創新在於其選擇性聚合的注意力機制，這在深度學習模型中能顯著改善性能和穩定性。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (127 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 22 天前) · **貢獻者** 3 人 · **參與度** Low
+> **適合** 希望提升 Transformer 模型性能的深度學習研究者和工程師。
+> **一句話重點** AttnRes 的設計不僅提升了模型性能，還解決了深度學習中常見的隱藏狀態增長問題。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/MoonshotAI--Attention-Residuals");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "深度學習" && p.file.name !== "MoonshotAI--Attention-Residuals" && p.status !== "archived")
+>     .where(p => p.subcategory === "模型優化" && p.file.name !== "MoonshotAI--Attention-Residuals" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,42 +96,44 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 深度學習 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 模型優化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習，20 小時整合，得到顯著的性能提升，值得投入。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到顯著的性能提升，值得投入。
 
 > [!abstract] 核心創新
-> AttnRes 提供了一種新的方式來選擇性聚合 Transformer 模型中的層輸出，改善了訓練穩定性和性能。
+> AttnRes 提供了一種新的殘差連接方法，透過學習的注意力機制來選擇性聚合早期層的表示。
 
 ## 專案簡介
 
-Attention Residuals (AttnRes) 是一種替代傳統殘差連接的技術，旨在解決隨著層數增加而導致的隱藏狀態增長問題。它透過學習的注意力機制，讓每一層能夠選擇性地聚合之前的表示，從而提高模型的性能。具體來說，AttnRes 使用 softmax 注意力來計算每層的權重，這樣可以避免固定權重導致的貢獻稀釋。Block AttnRes 則進一步將層分為多個區塊，減少記憶體使用，並在每個區塊內部使用標準殘差連接，這樣可以在保持性能的同時降低計算成本。該技術在多個基準測試中表現優於傳統方法，特別是在多步推理和代碼生成任務上。使用 PyTorch 實現的簡單範例展示了如何在層之間進行注意力聚合，並且能夠在不增加太多開銷的情況下，顯著改善模型的訓練動態和結果。與傳統的 PreNorm 方法相比，AttnRes 能夠更好地控制梯度的分佈，從而提高訓練的穩定性和效率。
+Attention Residuals (AttnRes) 是一種用於 Transformer 模型的殘差連接替代方案，透過學習的注意力機制來選擇性地聚合早期層的輸出。傳統的殘差連接使用固定權重進行累加，隨著層數增加，這會導致每層貢獻的稀釋和隱藏狀態的無限增長。AttnRes 透過 softmax 注意力來計算每層的加權，這使得每層可以根據內容選擇性地訪問所有早期表示。具體來說，Block AttnRes 將層分組以減少內存需求，並在每個區塊內使用標準殘差進行累加，這樣可以在保留大部分性能的同時降低內存使用。
+
+核心指令 `block_attn_res` 函數展示了如何在區塊間進行注意力計算，並在前向傳播中更新隱藏狀態。這種方法在多個基準測試中表現優於傳統方法，特別是在多步推理和代碼生成任務上。使用 AttnRes 可以有效減少 PreNorm 的稀釋問題，保持輸出幅度的穩定。這個專案的賣點在於其可作為現有 Transformer 模型的無縫替代，並且能在不增加計算負擔的情況下提升性能。
 
 **技術棧**：`PyTorch`
 
 ## 重點功能
 
-- 選擇性聚合 — 每層透過學習的注意力機制選擇性聚合之前的表示，避免固定權重導致的貢獻稀釋。
-- Block AttnRes — 將層分為多個區塊，降低記憶體需求，並在區塊內部使用標準殘差連接。
-- PyTorch 實現 — 提供簡單的 PyTorch 風格的伪代碼，方便開發者快速上手。
-- 改善訓練穩定性 — 減少梯度消失問題，保持隱藏狀態的穩定性。
-- 多項基準測試優於傳統方法 — 在多步推理和代碼生成任務上顯著提高性能。
+- 選擇性聚合 — 每層通過學習的注意力權重選擇性聚合早期層的輸出。
+- Block AttnRes — 將層分組以降低內存需求，從 O(Ld) 降至 O(Nd)。
+- PyTorch 兼容 — 提供 PyTorch 風格的實現，方便整合到現有模型中。
+- 性能提升 — 在多步推理和代碼生成任務中顯著提高模型表現。
+- 穩定輸出 — 減少 PreNorm 稀釋問題，保持輸出幅度穩定。
 
 ## 快速開始
 
-1. 安裝依賴
-```bash
-pip install torch
-```
-2. 克隆專案
+1. 克隆專案
 ```bash
 git clone https://github.com/MoonshotAI/Attention-Residuals.git
 ```
-3. 運行範例
+2. 安裝依賴
+```bash
+pip install -r requirements.txt
+```
+3. 運行示例
 ```bash
 python example.py
 ```
@@ -147,60 +149,60 @@ python example.py
   "    logits = torch.einsum('d, n b t d -> n b t', proj.weight.squeeze(), K)",
   "    h = torch.einsum('n b t, n b t d -> b t d', logits.softmax(0), V)",
   "    return h",
-  "# 預期輸出：返回聚合後的表示"
+  "# 預期輸出：返回加權的隱藏狀態"
 ]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 23 天內累積 3025 stars（132/天），forks 155（5.1%），顯示出穩定的增長潛力。作者團隊由多位在 AI 領域有經驗的研究者組成，過去的研究成果為這個專案奠定了基礎。AttnRes 解決了傳統殘差連接在深度學習中的一些已知問題，特別是在層數增加時的性能下降，這在現有的 Transformer 架構中是一個普遍的痛點。最近的推文和社群討論也引起了對這個專案的關注，顯示出對其潛在應用的興趣。Forks/stars 比率為 5.1%，顯示出有相當比例的用戶在進行實際的修改和使用。
+> 建立 24 天內累積 3042 stars（127/天），forks 156（5.1%），顯示出穩定的增長趨勢。主要貢獻者包括 yzhangcs、Nathancgy 和 bigeagle，這些人員在深度學習和自然語言處理領域有豐富的經驗。這個專案解決了傳統殘差連接在深度學習中的一些痛點，特別是隱藏狀態的增長問題，這在大型模型訓練中尤為重要。最近的討論和需求（如 #5 和 #6）顯示出社群對於實現和應用的強烈興趣，這可能促進了其快速的採用和關注。
 
 ## 適合誰使用
 
-**目標受眾**：希望優化 Transformer 模型性能的深度學習研究者和工程師。
+**目標受眾**：希望提升 Transformer 模型性能的深度學習研究者和工程師。
 
 > [!example] 使用場景
-> - 深度學習研究者用它來改善 Transformer 模型的訓練穩定性，因為 AttnRes 能夠有效控制隱藏狀態的增長。
-> - 機器學習工程師用它來提升代碼生成模型的性能，因為在多步推理任務中，AttnRes 提供了顯著的性能增益。
-> - AI 開發者用它來實現更高效的模型訓練，因為 Block AttnRes 降低了記憶體需求，適合在資源有限的環境中使用。
+> - 深度學習研究者用它來提升 Transformer 模型的性能，因為 AttnRes 在多步推理任務上比傳統方法提高了 7.5 分。
+> - AI 工程師用它來優化代碼生成模型，因為在 HumanEval 測試中，AttnRes 提升了 3.1 分的表現。
+> - 機器學習團隊用它來減少模型訓練中的隱藏狀態增長問題，因為其設計能有效控制梯度的分佈和輸出幅度。
 
 ## 架構分析
 
-AttnRes 的架構基於傳統的 Transformer 模型，但引入了選擇性聚合的注意力機制。這種設計使得每一層能夠根據輸入動態調整其對先前層的影響，從而避免了固定權重導致的性能下降。Block AttnRes 則進一步將層分為多個區塊，這樣在計算上更為高效，並且能夠在不顯著增加記憶體需求的情況下，保持性能。這種設計的代價在於需要額外的計算來處理注意力權重，但這在大多數應用中是可以接受的。整體而言，這種架構在處理大規模數據時表現良好，但在極小模型上可能不會顯著提升性能。
+AttnRes 的架構主要基於 Transformer 模型，通過替換傳統的殘差連接來增強模型的表現。這種設計選擇使得每層可以根據內容選擇性地聚合早期層的輸出，避免了傳統方法中隱藏狀態無限增長的問題。Block AttnRes 將層分組，這樣在計算注意力時只需考慮區塊級別的表示，從而降低了內存需求。這種方法的取捨在於，雖然減少了內存使用，但仍能保持性能的提升。擴展性方面，這種設計能夠適應大型模型的訓練需求，並且在多步推理和代碼生成任務中表現出色。
 
 ## 技術深入分析
 
-AttnRes 的核心技術機制在於其選擇性聚合的注意力機制，這使得每一層能夠根據輸入動態調整對先前層的影響。這種設計不僅改善了模型的性能，還能有效控制梯度的分佈，避免了傳統方法中的梯度消失問題。Block AttnRes 則通過將層分為多個區塊，減少了記憶體的使用，並且在保持性能的同時，降低了計算成本。這種設計的代價在於需要額外的計算來處理注意力權重，但這在大多數應用中是可以接受的。整體而言，這種架構在處理大規模數據時表現良好，但在極小模型上可能不會顯著提升性能。與主流的 Transformer 架構相比，AttnRes 提供了一種新的思路來解決深度學習中的一些已知問題，未來可能會成為深度學習模型設計的一個重要方向。
+AttnRes 的核心技術在於使用學習的注意力機制來替代傳統的殘差連接，這使得每層可以根據內容選擇性地聚合早期層的輸出。這種設計模式不僅提高了模型的性能，還有效減少了 PreNorm 稀釋問題，保持了輸出幅度的穩定。Block AttnRes 的實現將層分組，這樣在計算注意力時只需考慮區塊級別的表示，從而降低了內存需求。這種方法能夠在保持性能的同時減少計算資源的消耗。技術上，這種設計的取捨在於，雖然減少了內存使用，但仍能保持性能的提升。隨著模型規模的擴大，這種設計能夠適應更高的計算需求，並且在多步推理和代碼生成任務中表現出色。整合到現有的深度學習框架中相對容易，對於熟悉 PyTorch 的開發者來說，學習成本低。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了基本的使用範例和安裝指導。安裝過程相對順暢，但需要注意依賴環境的配置。文件中缺乏詳細的入門指南，可能對新手不太友好。
+> README 文件提供了清晰的概述和範例，安裝過程相對順暢，沒有明顯的坑。雖然缺乏詳細的入門指南，但基本的使用說明能夠幫助新手快速上手。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 改善模型性能，特別是在多步推理和代碼生成任務上。
-> - 動態聚合機制提高了訓練的穩定性。
-> - Block AttnRes 降低了記憶體需求，適合資源有限的環境。
+> - 性能提升明顯，特別是在多步推理和代碼生成任務上。
+> - 設計簡單，易於整合到現有的 Transformer 模型中。
+> - 有效控制隱藏狀態的增長問題，保持輸出穩定。
 
 > [!danger] 缺點
-> - 僅支援 PyTorch，對於其他框架的兼容性較差。
-> - 對於非常淺的模型，可能無法顯著提升性能。
-> - 需要一定的計算資源來訓練模型。
+> - 需要較高的計算資源以發揮性能。
+> - 目前僅支持 PyTorch，對於其他框架的支持有限。
+> - 對於小型模型，性能提升可能不明顯。
 
 > [!warning] 注意事項
-> - 僅支援 PyTorch 環境
-> - 對於非常淺的模型，可能無法顯著提升性能
-> - 需要一定的計算資源來訓練模型
+> - 目前僅支持 PyTorch 環境。
+> - 需要較高的計算資源以充分發揮性能。
+> - 對於小型模型，性能提升可能不明顯。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的深度學習模型優化技術，但主要集中在模型剪枝和量化上，適合需要減少模型大小的場景。 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 專注於語音和語言模型的優化，使用不同的技術路線，適合特定應用場景。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的模型優化技術，但主要集中於不同的網絡架構和訓練方法。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 專注於語音和語言模型的優化，與本專案的通用性相比，應用範圍較窄。 |
 
 ## 替代方案決策
 
@@ -208,64 +210,93 @@ AttnRes 的核心技術機制在於其選擇性聚合的注意力機制，這使
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 專注於語音和語言模型的優化，使用不同的技術路線，適合特定應用場景。 | 如果你的專案主要集中在語音或語言處理上，NemoClaw 可能會提供更針對性的優化。 | medium，因為需要重新調整模型架構和訓練流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的深度學習模型優化技術，但主要集中在模型剪枝和量化上。 | 如果你的目標是減少模型大小並提高推理速度，boneyard 可能更合適。 | high，因為需要對模型進行大幅度的重構。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於並行處理和數據同步，與本專案的注意力聚合方法不同。 | 如果你的應用場景需要高效的數據同步和處理，則應選擇此工具。 | medium，因為需要重新設計數據流和處理邏輯。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 專注於語音和語言模型的優化，與本專案的通用性相比，應用範圍較窄。 | 如果你的專案主要集中在語音或語言模型上，則應選擇此工具。 | high，因為需要適應不同的模型架構和訓練流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **Attention-Residuals** | **NemoClaw** | **boneyard** |
+> | 維度 | **Attention-Residuals** | **parsync** | **NemoClaw** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於語音和語言模型的優化，使用不同的技術路線，適合特定應用場景。 | 提供類似的深度學習模型優化技術，但主要集中在模型剪枝和量化上。 |
-> | 遷移成本 | - | medium，因為需要重新調整模型架構和訓練流程。 | high，因為需要對模型進行大幅度的重構。 |
-> | 適用場景 | 主要場景 | 如果你的專案主要集中在語音或語言處理上，NemoClaw 可 | 如果你的目標是減少模型大小並提高推理速度，boneyard  |
+> | 技術路線 | 本專案 | 專注於並行處理和數據同步，與本專案的注意力聚合方法不同。 | 專注於語音和語言模型的優化，與本專案的通用性相比，應用範圍較窄。 |
+> | 遷移成本 | - | medium，因為需要重新設計數據流和處理邏輯。 | high，因為需要適應不同的模型架構和訓練流程。 |
+> | 適用場景 | 主要場景 | 如果你的應用場景需要高效的數據同步和處理，則應選擇此工具。 | 如果你的專案主要集中在語音或語言模型上，則應選擇此工具。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合研究和實驗性專案，但不建議用於生產環境的核心路徑上。
+> 適合個人研究和小型專案試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在小型模型上可能無法顯著提升性能
-  - 解法：在大型模型上進行測試以獲得最佳效果
-- **[HIGH]** 對於非 PyTorch 環境的支持有限
-  - 解法：考慮使用 PyTorch 作為主要開發框架
-- [MEDIUM] 需要較高的計算資源來訓練模型
-  - 解法：在資源充足的環境中進行訓練
+- **[HIGH]** 在多層模型中，可能會遇到隱藏狀態增長過快的問題，特別是在使用標準殘差時。
+  - 解法：使用 Block AttnRes 來控制隱藏狀態的增長。
+- [MEDIUM] 對於小型模型，性能提升可能不明顯，導致資源浪費。
+  - 解法：在選擇模型時，考慮模型的規模和計算需求。
+- [MEDIUM] 目前僅支持 PyTorch，對於其他框架的支持有限。
+  - 解法：考慮使用 PyTorch 進行開發，或等待未來的跨框架支持。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 大型深度學習研究團隊 | 非常適合 | 能夠顯著提升模型性能，特別是在多步推理任務上。 |
-| 小型初創公司 | 普通 | 可能需要較高的計算資源，對於資源有限的團隊來說不太友好。 |
-| 教育機構進行深度學習教學 | 適合 | 提供了新的模型設計思路，適合用於教學和實驗。 |
-| 需要快速原型開發的團隊 | 不適合 | 可能需要較長的訓練時間和資源投入。 |
+| 大型深度學習模型的訓練 | 非常適合 | AttnRes 能有效控制隱藏狀態增長，提升模型穩定性。 |
+| 小型模型的快速原型開發 | 普通 | 對於小型模型，性能提升可能不明顯。 |
+| 需要多步推理的應用 | 非常適合 | 在多步推理任務上，AttnRes 提升了模型的表現。 |
+| 語音或語言模型的優化 | 不適合 | 專案主要針對通用 Transformer 模型，對於特定應用的支持有限。  |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~20 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習，20 小時整合，得到顯著的性能提升，值得投入。
+> 花 5 小時學習，10 小時整合，得到顯著的性能提升，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限操作，且不會存取敏感資料，但在使用時仍需注意依賴的安全性。
+> 低風險：該工具本身不需要高權限，且不存取敏感資料。對於依賴的庫，需注意其安全性和更新狀態。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+AttnRes 最常與 PyTorch 及其生態系統中的其他工具搭配使用，特別是在深度學習模型的開發和訓練過程中。實際整合範例包括在用 PyTorch 開發的 Transformer 模型中，使用 AttnRes 替代傳統的殘差連接，以提升模型性能。該工具與主流的 CI/CD 工具（如 GitHub Actions）兼容，並且可以輕鬆集成到現有的開發流程中。常見的整合問題包括對於模型架構的適配，需要根據具體情況進行調整，並可能面臨 API 的變更風險。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 AttnRes 出現之前，傳統的殘差連接在深度學習中廣泛使用，但隨著模型深度的增加，這種方法導致了隱藏狀態的無限增長和性能的稀釋。隨著注意力機制的發展，研究者們開始探索如何將其應用於殘差連接，以改善模型的性能和穩定性。AttnRes 代表了一種新的設計思路，未來可能會在更廣泛的應用中得到驗證和擴展。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-5 人的小型團隊
+
+**前置技能**：
+- 熟悉 PyTorch
+- 了解深度學習基本概念
+- 有 Transformer 模型的開發經驗
+
+> [!tip] 導入策略
+> 第一週：在個人專案中試用 AttnRes。第二週：在小型內部工具中實施。第三週：撰寫使用文檔和最佳實踐。第四週：在主要產品中進行測試。
+
+**成功指標**：模型的訓練時間減少 20%，性能提升 10%。
+
+> [!warning] 退出計畫
+> 如果需要退出，所有設定和模型參數都可以導出為標準格式，便於轉換至其他工具。
 
 ## 健康度儀表板
 
@@ -330,7 +361,7 @@ AttnRes 的核心技術機制在於其選擇性聚合的注意力機制，這使
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 155 |
+| Forks | 156 |
 | Open Issues | 10 |
 | Issue 解決率 | 9% (1 closed) |
 | 最後推送 | 2026-03-17 |
@@ -347,7 +378,7 @@ AttnRes 的核心技術機制在於其選擇性聚合的注意力機制，這使
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，近期有持續的更新和討論。
+**社群活躍度**：社群活躍度中等，開放問題數量適中，回應速度尚可。
 
 ## 開發動態
 
@@ -361,7 +392,7 @@ AttnRes 的核心技術機制在於其選擇性聚合的注意力機制，這使
 > | --- | --- | --- | --- |
 > | [#8](https://github.com/MoonshotAI/Attention-Residuals/issues/8) | Talk is cheap. Show me the code. | 12 | 1 |
 > | [#5](https://github.com/MoonshotAI/Attention-Residuals/issues/5) | Release Kimi Linear AttnRes model on Hugging Face | 11 | 1 |
-> | [#6](https://github.com/MoonshotAI/Attention-Residuals/issues/6) | 請問有實現的程式碼嗎? | 8 | 2 |
+> | [#6](https://github.com/MoonshotAI/Attention-Residuals/issues/6) | 請問有實現的程式碼嗎? | 8 | 3 |
 > | [#3](https://github.com/MoonshotAI/Attention-Residuals/issues/3) | 为什么文章中完全没有任何参考引用？ | 2 | 4 |
 > | [#9](https://github.com/MoonshotAI/Attention-Residuals/issues/9) | block parameter N | 1 | 0 |
 
@@ -496,7 +527,7 @@ AttnRes 的核心技術機制在於其選擇性聚合的注意力機制，這使
 
 ## 延伸閱讀
 
-相關概念：[[深度學習]] · [[Transformer]] · [[注意力機制]]
+相關概念：[[深度學習]] · [[Transformer]] · [[模型優化]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[tanishqkumar--ssd|tanishqkumar/ssd]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[aiming-lab--AutoResearchClaw|aiming-lab/AutoResearchClaw]]
 
@@ -504,11 +535,11 @@ AttnRes 的核心技術機制在於其選擇性聚合的注意力機制，這使
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：深度學習）
+> [!note]- 直接競品（同子分類：模型優化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "深度學習" AND file.name != "MoonshotAI--Attention-Residuals"
+> WHERE subcategory = "模型優化" AND file.name != "MoonshotAI--Attention-Residuals"
 > SORT stars DESC
 > ```
 
@@ -540,7 +571,7 @@ AttnRes 的核心技術機制在於其選擇性聚合的注意力機制，這使
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["深度學習","Transformer","注意力機制"];
+> const concepts = ["深度學習","Transformer","模型優化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "MoonshotAI--Attention-Residuals" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

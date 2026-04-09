@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman"
 homepage: "https://juliusbrussee.github.io/caveman/"
-stars: 7529
-stars_per_day: 1882
-forks: 306
+stars: 7541
+stars_per_day: 1885
+forks: 309
 open_issues: 3
 created: 2026-04-04
 pushed_at: 2026-04-08
@@ -17,8 +17,8 @@ first_seen: 2026-04-08
 week: "2026-W15"
 month: "2026-04"
 category: "AI/ML"
-subcategory: "Prompt Engineering"
-release_tag: "v1.2.0"
+subcategory: "LLM 推論"
+release_tag: "v1.3.0"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-08
-use_case: "用 caveman 語言減少 65% 的 token 使用，讓 Claude 更有效率地回應。"
+use_case: "透過簡化語言，減少 65% 的 token 使用，提升 Claude Code 的效率。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 2
 next_review: "2026-04-12"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 35
-repo_size_kb: 58
-readme_length: 8945
+issue_close_rate: 83
+repo_size_kb: 2229
+readme_length: 8925
 bus_factor: 1
-last_release_days: 2
+last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-08"
-star_history: "2026-04-08:5957,2026-04-08:5973,2026-04-09:7529"
+star_history: "2026-04-08:5957,2026-04-08:5973,2026-04-09:7529,2026-04-09:7541"
 tags:
   - github
   - "category/ai_ml"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "caveman"
   - "JuliusBrussee/caveman"
-  - "用 caveman 語言減少 65% 的 token 使用，讓 Claude 更有效率地回應。"
+  - "透過簡化語言，減少 65% 的 token 使用，提升 Claude Code 的效率。"
 ---
 
 # caveman
 
-**6.0k** stars · **2.0k** stars/天 · 建立 3 天前 · Python · MIT
+**7.5k** stars · **1.9k** stars/天 · 建立 4 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/JuliusBrussee--caveman");
@@ -74,25 +74,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v1.2.0` `easy-install`
+`v1.3.0` `easy-install`
 
 `ai` `anthropic` `caveman` `claude` `claude-code` `llm` `meme` `prompt-engineering` `skill` `tokens`
 
 > [!summary] 一句話摘要
-> 用 caveman 語言減少 65% 的 token 使用，讓 Claude 更有效率地回應。
+> 透過簡化語言，減少 65% 的 token 使用，提升 Claude Code 的效率。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (2.0k stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (1.9k stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要在 LLM 環境中減少 token 使用的開發者和團隊。
-> **一句話重點** Caveman 不僅是個有趣的工具，更是提升 LLM 效率的實用解決方案。
+> **適合** 需要在 LLM 中減少 token 使用並提高效率的開發者。
+> **一句話重點** Caveman 不僅是減少字數的工具，更是提升 LLM 效率的利器。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/JuliusBrussee--caveman");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "Prompt Engineering" && p.file.name !== "JuliusBrussee--caveman" && p.status !== "archived")
+>     .where(p => p.subcategory === "LLM 推論" && p.file.name !== "JuliusBrussee--caveman" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,112 +103,100 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 Prompt Engineering 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 LLM 推論 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，得到顯著的 token 節省，值得採用。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學、1 小時整合，得到顯著的 token 節省效果，值得一試。
 
 > [!abstract] 核心創新
-> Caveman 透過簡化語言來顯著減少 LLM 的 token 使用，提升效率。
+> Caveman 透過簡化語言來顯著減少 LLM 的 token 使用，並保持技術準確性。
 
 ## 專案簡介
 
-Caveman 是一個 Claude Code 的技能，旨在通過使用簡化的 caveman 語言來減少生成的 token 數量，平均可節省 65%。用戶只需一行安裝命令 `npx skills add JuliusBrussee/caveman`，即可啟用此功能。Caveman 的設計理念是去除冗餘的填充詞，保留技術準確性，讓回應更簡潔明瞭。使用者可選擇三種強度級別：Lite、Full 和 Ultra，分別對應不同程度的壓縮。這樣的設計不僅提高了回應速度，還降低了使用成本，因為 token 的數量直接影響計費。
+Caveman 是一個 Claude Code 的技能插件，旨在透過簡化語言來減少輸出 token 的數量，平均可節省約 75% 的 token，同時保持技術準確性。使用者可以透過簡單的指令來啟用不同的語言模式，例如 `/caveman` 來啟用 caveman 模式，或 `/caveman wenyan` 來使用文言文模式。這個設計的核心在於減少冗長的文字，讓回應更直接且易於理解，從而提升溝通效率。技術上，Caveman 使用 Python 實作，並且依賴 Claude Code 的 API 進行交互，這使得它能夠在不影響思考過程的情況下，顯著減少輸出 token 的數量。
 
-技術上，Caveman 利用 Python 實現，並與 Claude API 進行交互，確保在壓縮過程中不損失任何技術信息。與其他工具相比，Caveman 針對 LLM 的輸出進行優化，而不僅僅是簡單的文本處理，這使得它在處理複雜的技術問題時依然能保持高準確性。使用者在實際操作中，會發現 Caveman 的壓縮效果在多種情境下都能顯著提高效率，特別是在需要快速回應的環境中。這個工具的社群活躍度高，開發者持續更新，並且有良好的文檔支持，適合需要高效能回應的開發者和團隊。未來幾個月內，預計會有更多功能和優化推出，進一步提升使用體驗。
+與其他類似工具相比，如 Codex，Caveman 更專注於語言的簡化，而不是僅僅減少字數，這使得它在技術準確性上有更好的表現。使用者在實際運用中，會發現 Caveman 不僅能加快回應速度，還能節省 API 調用的成本，這對於需要頻繁使用 LLM 的開發者來說，無疑是一大優勢。儘管如此，使用者仍需注意，Caveman 主要影響輸出 token，思考過程中的 token 使用不會受到影響，這意味著在某些情境下，仍需考慮到模型的推理能力。總體來看，Caveman 是一個適合希望提升 LLM 效率的開發者的工具，尤其是在需要快速且準確的回應時。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 強度級別選擇 — 提供 Lite、Full 和 Ultra 三種壓縮模式，滿足不同需求。
-- 自動清晰度 — 對於安全警告和破壞性操作，自動禁用壓縮以保持清晰度。
-- caveman-compress 技能 — 專門壓縮自然語言記憶文件，減少約 45% 的輸入 token。
-- GitHub Action 支援 — 自動同步 SKILL.md，保持技能入口一致性。
-- 壓縮基準測試 — 提供實際 token 數據，幫助用戶評估效果。
+- Caveman 語言模式 — 減少輸出 token 約 75%，保持技術準確性。
+- 文言文模式 — 提供三種不同的文言文表達方式，適合不同的使用需求。
+- caveman-commit — 生成簡潔的 commit 訊息，符合 Conventional Commits 格式。
+- caveman-review — 提供一行的 PR 評論，快速指出問題和解決方案。
+- caveman-compress — 讓 Claude 在每次會話中讀取更少的 token，進一步節省資源。
 
 ## 快速開始
 
-1. 安裝 Caveman
+1. 安裝 Caveman 插件
 ```bash
 npx skills add JuliusBrussee/caveman
 ```
-2. 選擇強度級別
-```bash
-/caveman full
-```
-3. 開始使用
+2. 啟用 Caveman 模式
 ```bash
 /caveman
 ```
-
-## 程式碼範例
-
-```python
-{
-  "前置條件": "已安裝 Caveman 插件",
-  "指令": "/caveman",
-  "預期輸出": "使用 caveman 語言進行回應，顯著減少 token 數量。"
-}
+3. 使用文言文模式
+```bash
+/caveman wenyan
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 5973 stars（1991/天），forks 218（3.6%），這顯示出強烈的用戶興趣。作者 JuliusBrussee 之前有多個開源專案，顯示出其在開發社群中的影響力。Caveman 解決了 LLM 使用中的 token 浪費問題，這在當前的 AI 應用中是一個重要的痛點。這個專案的出現正好契合了對於高效能和低成本的需求，並且在社交媒體上引發了廣泛的討論。高 forks/stars 比率顯示許多開發者在實際修改和使用這個工具。
+> 建立 4 天內累積 7541 stars（1885/天），forks 309（4.1%），顯示出強烈的社群關注。作者 Julius Brussee 之前開發過多個與 Claude Code 相關的工具，這次的 Caveman 解決了 LLM 使用過程中 token 浪費的問題，讓開發者能以更少的資源獲得相同的技術支持。這一創新吸引了大量開發者的注意，特別是在社交媒體上引發了熱烈討論。技術上，Caveman 的出現正好契合了對於高效能 LLM 的需求，尤其是在成本控制方面。forks/stars 比率為 4.1%，顯示出一些使用者已經開始對其進行修改和擴展，這是社群活躍度的良好指標。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 LLM 環境中減少 token 使用的開發者和團隊。
+**目標受眾**：需要在 LLM 中減少 token 使用並提高效率的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來優化 API 回應，因為能顯著減少 token 使用，降低成本。
-> - DevOps 工程師用它來壓縮日誌輸出，因為這樣能提高可讀性並減少存儲需求。
-> - 產品經理用它來快速生成簡報，因為 caveman 語言能讓技術細節更易於理解。
+> - 後端工程師用它來簡化 API 回應，因為能夠節省大量的 token 成本，讓每次調用更具經濟效益。
+> - 前端開發者用它來快速生成簡潔的 commit 訊息，因為這樣可以提高團隊的協作效率，減少溝通上的誤解。
+> - 資料科學家用它來優化模型的輸出，因為能夠在保持準確性的同時，顯著減少輸出內容的冗長性。
 
 ## 架構分析
 
-Caveman 採用 Python 實現，並與 Claude API 進行交互。其架構設計旨在最大化 token 使用效率，通過簡化輸出來降低生成成本。資料流中，Caveman 先接收用戶請求，然後通過不同的強度級別進行處理，最後返回經過壓縮的回應。
+Caveman 的架構設計以簡化語言為核心，通過調用 Claude Code 的 API 來實現功能。這樣的設計使得 Caveman 能夠在不影響模型推理的情況下，減少輸出 token 的數量。資料流方面，使用者的請求經由 API 傳遞至 Caveman，然後返回簡化後的回應。
 
-這樣的設計使得用戶可以根據需求選擇合適的壓縮程度，並且不影響技術準確性。選擇 Python 作為開發語言的好處在於其生態系統豐富，能夠快速集成各種功能。這種設計的代價是可能在某些情況下導致信息過度簡化，影響可讀性。
-
-整體而言，Caveman 的架構適合快速開發和迭代，能夠應對不斷變化的需求。
+這樣的設計選擇使得 Caveman 能夠快速響應，並且不需要額外的資源來處理複雜的邏輯。選擇 Python 作為開發語言，因為它在處理文本和 API 調用方面的靈活性，但也可能面臨性能瓶頸，特別是在高並發的情況下。整體而言，Caveman 的設計目的是為了在保持準確性的同時，提升效率，這對於需要頻繁調用 LLM 的開發者來說，無疑是一個重要的考量。
 
 ## 技術深入分析
 
-Caveman 利用簡化的 caveman 語言來減少 LLM 的 token 使用，這一策略基於對語言模型的深入理解。其核心技術在於去除冗餘的填充詞，並保留必要的技術信息，這樣的設計使得回應更加精簡且高效。效能上，Caveman 在多個測試中顯示出高達 87% 的 token 節省，這對於需要頻繁交互的應用場景尤為重要。選擇 Python 作為開發語言，讓 Caveman 能夠快速集成各種功能，並且在社群中擁有良好的支持。這種設計的取捨在於，雖然能夠快速迭代，但在某些情況下可能導致信息過度簡化，影響可讀性。技術風險方面，Caveman 依賴於 Claude API 的穩定性，若 API 發生變更，可能會影響其功能。整合方面，Caveman 能夠輕鬆與現有的開發工具鏈結合，並在 CI/CD 流程中提供支持，這使得其在實際應用中非常靈活。
+Caveman 的核心技術機制在於其對輸出文本的簡化，通過分析語言結構，去除冗餘的詞彙，並保留必要的技術信息。這種方法不僅提升了回應的速度，還能有效降低 API 調用的成本，特別是在高頻使用的情況下。從效能和規模特性來看，Caveman 能夠處理大量的請求，並在每次請求中保持高效的響應時間。設計上選擇 Python 作為開發語言，這使得開發過程更加靈活，但在高並發情況下可能會面臨性能瓶頸。這種設計選擇的代價在於，對於需要極高性能的應用，可能需要進一步優化。技術風險方面，Caveman 依賴於 Claude Code 的 API，若 API 發生變更，可能會影響到 Caveman 的功能。整合方面，Caveman 可以輕鬆地與現有的開發工具鏈結合，特別是在使用 Claude Code 和其他 LLM 的環境中，這使得它在團隊協作中非常友好。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了安裝和使用範例，安裝過程順暢，無明顯坑點。文檔中有良好的入門指南，適合新手快速上手。
+> README 文件提供了清晰的安裝指引和使用範例，讓新手能夠快速上手。安裝過程相對順暢，沒有明顯的坑。文件中包含了多種使用場景的說明，對於新手來說非常友好。
 
 ## 優缺點分析
 
 > [!success] 優點
 > - 顯著減少 token 使用，降低成本。
-> - 保持技術準確性，無損信息。
-> - 提供多種強度選擇，靈活性高。
+> - 保持技術準確性，無需擔心信息損失。
+> - 提供多種語言模式，適應不同需求。
 
 > [!danger] 缺點
-> - 在某些情況下可能過度簡化，導致信息損失。
-> - 僅影響輸出，不影響思考過程中的 token 使用。
-> - 對於非技術性問題效果有限。
+> - 僅影響輸出，思考過程中的 token 使用不會減少。
+> - 在某些情境下，簡化後的回應可能不夠詳細。
+> - 依賴於 Claude Code 的 API，若 API 不穩定會影響使用。
 
 > [!warning] 注意事項
-> - 僅影響輸出 token，不影響思考過程中的 token 使用。
-> - 可能在某些情境下過度簡化，導致信息損失。
-> - 對於非技術性問題，效果可能不如預期。
+> - 僅影響輸出 token，思考過程中的 token 使用不會減少。
+> - 對於某些複雜問題，可能需要更詳細的回應，簡化後的內容可能不夠充分。
+> - 需要依賴 Claude Code 的 API，若 API 不穩定會影響使用體驗。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 token 優化功能，但不專注於 caveman 語言的簡化。 |
-| [Kuberwastaken/claurst](https://github.com/Kuberwastaken/claurst) | 專注於 Kubernetes 環境的 token 優化，適用場景較窄。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 token 簡化功能，但不專注於技術準確性，適合一般性對話。 |
+| [Kuberwastaken/claurst](https://github.com/Kuberwastaken/claurst) | 專注於 Kubernetes 環境的簡化，但不具備 Caveman 的多語言支持。 |
 
 ## 替代方案決策
 
@@ -216,47 +204,45 @@ Caveman 利用簡化的 caveman 語言來減少 LLM 的 token 使用，這一策
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 專注於語言生成的優化，但不專注於 caveman 語言的簡化。 | 如果需要更廣泛的語言生成優化，而不僅僅是 token 減少。 | medium，因為需要調整生成邏輯。 |
-| [CoderLuii/HolyClaude](https://github.com/CoderLuii/HolyClaude) | 提供類似的功能，但在技術準確性上可能不如 Caveman。 | 如果對於技術準確性要求不高，且需要更簡單的集成。 | low，因為集成過程相對簡單。 |
+| Codex | Codex 提供了強大的代碼生成能力，但不專注於 token 簡化，適合需要生成大量代碼的場景。 | 如果你的團隊需要生成複雜的代碼而不僅僅是簡化回應，Codex 會是更合適的選擇。 | medium，因為需要調整使用習慣和整合方式。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 token 簡化功能，但不專注於技術準確性，適合一般性對話。 | 如果你的需求主要是簡化對話而非技術準確性，這個工具會更合適。 | low，因為功能相似，轉移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **caveman** | **Shadowbroker** | **HolyClaude** |
+> | 維度 | **caveman** | **Codex** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於語言生成的優化，但不專注於 caveman 語言的簡化。 | 提供類似的功能，但在技術準確性上可能不如 Caveman。 |
-> | 遷移成本 | - | medium，因為需要調整生成邏輯。 | low，因為集成過程相對簡單。 |
-> | 適用場景 | 主要場景 | 如果需要更廣泛的語言生成優化，而不僅僅是 token 減少。 | 如果對於技術準確性要求不高，且需要更簡單的集成。 |
+> | 技術路線 | 本專案 | Codex 提供了強大的代碼生成能力，但不專注於 token 簡化，適合需要生成大量代碼的場景。 | 提供類似的 token 簡化功能，但不專注於技術準確性，適合一般性對話。 |
+> | 遷移成本 | - | medium，因為需要調整使用習慣和整合方式。 | low，因為功能相似，轉移成本較低。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要生成複雜的代碼而不僅僅是簡化回應，Codex | 如果你的需求主要是簡化對話而非技術準確性，這個工具會更合適。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人項目試用，但不建議用於生產環境的核心功能。
+> 適合個人或小型團隊試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高壓環境下可能過度簡化回應，導致信息缺失
-  - 解法：適當調整強度級別以平衡簡潔性與信息完整性
-- [MEDIUM] 對於非技術性問題的回應效果不佳
-  - 解法：在這些情況下使用正常模式
-- **[HIGH]** 依賴於 Claude API 的穩定性，若 API 變更可能影響功能
-  - 解法：定期檢查 API 更新和文檔
+- [MEDIUM] 在某些情境下，簡化後的回應可能不夠詳細，導致理解困難。
+  - 解法：可以手動調整回應模式以獲得更詳細的解釋。
+- **[HIGH]** 依賴於 Claude Code 的 API，若 API 不穩定會影響使用體驗。
+  - 解法：定期檢查 API 狀態，並準備替代方案。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊需要快速生成技術文檔 | 非常適合 | 能顯著減少文檔生成時間和成本。 |
-| 大型企業的技術支持部門 | 適合 | 能提高回應速度，但需注意信息完整性。 |
-| 教育機構的教學助理 | 普通 | 對於非技術性問題效果有限。 |
-| 個人開發者的 side project | 非常適合 | 能快速提高開發效率，降低成本。 |
+| 需要快速生成簡潔的 API 回應的後端開發者 | 非常適合 | 能夠顯著減少 token 使用，降低成本。 |
+| 需要生成大量代碼的前端開發者 | 普通 | 雖然能簡化回應，但不專注於代碼生成。 |
+| 需要簡化團隊內部溝通的產品經理 | 適合 | 能夠提高溝通效率，減少誤解。 |
+| 需要高頻調用 LLM 的大型企業 | 不適合 | 在高並發情況下可能面臨性能瓶頸。 |
 
 ## 採用成本分析
 
@@ -268,12 +254,12 @@ Caveman 利用簡化的 caveman 語言來減少 LLM 的 token 使用，這一策
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到顯著的 token 節省，值得採用。
+> 花 2 小時學、1 小時整合，得到顯著的 token 節省效果，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：Caveman 本身不需要高權限，且不存取敏感資料。依賴鏈的信任程度良好，適合在 CI/CD 中使用。
+> 低風險：Caveman 本身不需要高權限，僅依賴於 Claude Code 的 API，並不存取敏感資料。
 
 ## 健康度儀表板
 
@@ -338,61 +324,76 @@ Caveman 利用簡化的 caveman 語言來減少 LLM 的 token 使用，這一策
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 218 |
-| Open Issues | 15 |
-| Issue 解決率 | 35% (8 closed) |
-| 最後推送 | 2026-04-07 |
+| Forks | 309 |
+| Open Issues | 3 |
+| Issue 解決率 | 83% (15 closed) |
+| 最後推送 | 2026-04-08 |
 | 建立日期 | 2026-04-04 |
 | 官方網站 | [Link](https://juliusbrussee.github.io/caveman/) |
-| Repo 大小 | 58 KB |
+| Repo 大小 | 2.2 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/JuliusBrussee/caveman) |
 | Topics | `ai` `anthropic` `caveman` `claude` `claude-code` `llm` `meme` `prompt-engineering` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@JuliusBrussee](https://github.com/JuliusBrussee) | 24 |
+> | [@JuliusBrussee](https://github.com/JuliusBrussee) | 45 |
+> | [@sebastianbreguel](https://github.com/sebastianbreguel) | 9 |
 > | [@vraj00222](https://github.com/vraj00222) | 5 |
-> | [@lbzepoqo](https://github.com/lbzepoqo) | 2 |
-> | [@schnapster](https://github.com/schnapster) | 1 |
-> | [@Juris-S](https://github.com/Juris-S) | 1 |
+> | [@leoz32](https://github.com/leoz32) | 3 |
+> | [@cbarrado](https://github.com/cbarrado) | 2 |
 
-**最新版本**：v1.2.0 — v1.2.0 — Intensity Levels, Auto-Clarity & Caveman-Compress (2026-04-06)
+**最新版本**：v1.3.0 — v1.3.0 — 文言文, Skills, Evals & Community Fixes (2026-04-08)
 
 > [!info]- Release Notes
-> ## What's new
+> ## What's New
 > 
-> - **Intensity levels** — choose `lite`, `full` (default), or `ultra` caveman compression. Fine-grained control over how aggressive the token savings are.
-> - **Auto-Clarity** — caveman mode automatically drops compression for security warnings and destructive operations. Safety-critical output stays crystal clear.
-> - **caveman-compress skill** — new standalone skill that compresses natural language memory files (CLAUDE.md, todos, preferences) into caveman format. Preserves all technical substance while cutting tokens.
-> - **GitHub Action for SKILL.md sync** — auto-syncs SKILL.md copies on push to main, keeping all skill entry points consistent.
-> - **GitHub Pages landing site** — project now has a proper landing page.
-> - **SKILL.md prompt compression** — ~40% fewer tokens in the skill prompt while keeping all behavioral anchors.
+> ### 📜 文言文 (Wenyan) Mode
+> Classical Chinese literary compression — same technical accuracy, different era, fewer tokens. Three levels: wenyan-lite, wenyan-full, wenyan-ultra.
 > 
-> ## Upgrade
+> ```
+> English:  "Your component re-renders because you create a new object reference each render."
+> Caveman:  "New object ref each render. Wrap in useMemo."
+> Wenyan:   "物出新參照，致重繪。useMemo Wrap之。"
+> ```
 > 
-> Update your skill installation to get intensity levels and auto-clarity automatically.
+> ### 🛠️ New Skills
+> - **caveman-commit** — terse commit messages in Conventional Commits format. `/caveman-commit`
+> - **caveman-review** — one-line PR review comments: location, problem, fix. `/caveman-review`
 > 
-> **Full Changelog**: https://github.com/JuliusBrussee/caveman/compare/v1.1.0...v1.2.0
+> ### 📊 Eval Harness
+> Three-arm eval methodology that measures real token compression honestly — skill vs terse control, not skill vs verbose baseline. Run it yourself:
+> ```bash
+> uv run python evals/llm_run.py
+> uv run --with tiktoken python evals/measure.py
+> ```
+> 
+> ### 🔧 Fixes & Improvements
+> - **caveman-compress:** Anthropic SDK direct call support (bypasses subprocess when `ANTHROPIC_API_KEY` is set)
+> - **caveman-compress:** 500KB file size limit, path resolution, configurable model via `CAVEMAN_MODEL` env var
+> - **caveman-compress:** SECURITY.md addressing Snyk false positive
+> - **caveman-compress:** Backup overwrite protection — won't silently destroy existing `.original.md`
+> - **caveman-compress:** Fixed PATH_REGEX that was matching every English word as a file path
+> - **Codex plugin:** Windows install support, SVG icons, OpenAI agent config
+> - **Evals:** Fixed inverted sign in `fmt_pct` output
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，持續更新和解決問題。
+**社群活躍度**：社群活躍，問題解決率高達 83%。
 **連結**：[文件](https://juliusbrussee.github.io/caveman/)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-06 ~ 2026-04-07）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #29 from nisrulz/patch-1
+> [!abstract] 最近 10 次 commit（2026-04-08 ~ 2026-04-08）
+> **活躍天數** 1 天 · **最新 commit** chore: sync SKILL.md copies and caveman.skill [skip ci]
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#18](https://github.com/JuliusBrussee/caveman/issues/18) | README makes two inaccurate claims about token savings | 19 | 1 |
-> | [#16](https://github.com/JuliusBrussee/caveman/issues/16) | Opencode / Oh-my-pi support `enhancement` | 11 | 1 |
-> | [#9](https://github.com/JuliusBrussee/caveman/issues/9) | Abathur mode — alternative persona `enhancement` `good first issue` | 6 | 1 |
+> | [#16](https://github.com/JuliusBrussee/caveman/issues/16) | Opencode / Oh-my-pi support `enhancement` | 13 | 1 |
+> | [#32](https://github.com/JuliusBrussee/caveman/issues/32) | Fix GitHub Copilot installation command in README `bug` | 0 | 0 |
 
 ## README 摘錄
 
@@ -405,16 +406,16 @@ Caveman 利用簡化的 caveman 語言來減少 LLM 的 token 使用，這一策
 >   
 >   
 > 
->   Install •
->   Benchmarks •
 >   Before/After •
->   Intensity Levels •
->   Compress •
->   Why
+>   Install •
+>   Levels •
+>   Skills •
+>   Benchmarks •
+>   Evals
 > 
 > ---
 > 
-> A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill/plugin and Codex plugin that makes agent talk like caveman — cutting **~75% of output tokens** while keeping full technical accuracy. Plus a companion tool that compresses your memory files to cut **~45% of input tokens** every session.
+> A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill/plugin and Codex plugin that makes agent talk like caveman — cutting **~75% of output tokens** while keeping full technical accuracy. Now with [文言文 mode](#文言文-wenyan-mode), [terse commits](#caveman-commit), [one-line code reviews](#caveman-review), and a [compression tool](#caveman-compress) that cuts **~45% of input tokens** every session.
 > 
 > Based on the viral observation that caveman-speak dramatically reduces LLM token usage without losing technical substance. So we made it a one-line install.
 > 
@@ -438,7 +439,7 @@ Caveman 利用簡化的 caveman 語言來減少 LLM 的 token 使用，這一策
 > 
 > **Same fix. 75% less word. Brain still big.**
 > 
-> **Sometimes too much caveman. Sometimes not enough:**
+> **Pick your level of grunt:**
 > 
 > #### 🪶 Lite
 > 
@@ -452,34 +453,26 @@ Caveman 利用簡化的 caveman 語言來減少 LLM 的 token 使用，這一策
 > 
 > > "Inline obj prop → new ref → re-render. `useMemo`."
 > 
+> #### 📜 文言文
+> 
+> > "物出新參照，致重繪。useMemo Wrap之。"
+> 
 > **Same answer. You pick how many word.**
 > 
-> ## Benchmarks
+> ```
+> ┌─────────────────────────────────────┐
+> │  TOKENS SAVED          ████████ 75% │
+> │  TECHNICAL ACCURACY    ████████ 100%│
+> │  SPEED INCREASE        ████████ ~3x │
+> │  VIBES                 ████████ OOG │
+> └─────────────────────────────────────┘
+> ```
 > 
-> Real token counts from the Claude API ([reproduce it yourself](benchmarks/)):
-> 
-> | Task | Normal (tokens) | Caveman (tokens) | Saved |
-> |------|---------------:|----------------:|------:|
-> | Explain React re-render bug | 1180 | 159 | 87% |
-> | Fix auth middleware token expiry | 704 | 121 | 83% |
-> | Set up PostgreSQL connection pool | 2347 | 380 | 84% |
-> | Explain git rebase vs merge | 702 | 292 | 58% |
-> | Refactor callback to async/await | 387 | 301 | 22% |
-> | Architecture: microservices vs monolith | 446 | 310 | 30% |
-> | Review PR for security issues | 678 | 398 | 41% |
-> | Docker multi-stage build | 1042 | 290 | 72% |
-> | Debug PostgreSQL race condition | 1200 | 232 | 81% |
-> | Implement React error boundary | 3454 | 456 | 87% |
-> | **Average** | **1214** | **294** | **65%** |
-> 
-> *Range: 22%–87% savings across prompts.*
-> 
-> > [!IMPORTANT]
-> > Caveman only affects output tokens — thinking/reasoning tokens are untouched. Caveman no make brain smaller. Caveman make *mouth* smaller. Biggest win is **readability and speed**, cost savings are a bonus.
-> 
-> ### Science back caveman up
-> 
-> A March 2026 paper ["Brevity Constraints Reverse Performance Hierarchies in Language Models"](https://arxiv.org/abs/2604.00025) found that constraining large models to brief responses **improved accuracy by 26 percentage points** on certain benchmarks and completely reversed performance hierarchies. Verbose not always better. Sometimes less word = more correct.
+> - **Faster response** — less token to generate = speed go brrr
+> - **Easier to read** — no wall of text, just the answer
+> - **Same accuracy** — all technical info kept, only fluff removed ([science say so](https://arxiv.org/abs/2604.00025))
+> - **Save money** — ~71% less output token = less cost
+> - **Fun** — every code review become comedy
 > 
 > ## Install
 > 
@@ -504,6 +497,19 @@ Caveman 利用簡化的 caveman 語言來減少 LLM 的 token 使用，這一策
 > claude plugin install caveman@caveman
 > ```
 > 
+> Codex:
+> 
+> 1. Clone repo
+> 2. Open Codex in repo
+> 3. Run `/plugins`
+> 4. Search `Caveman`
+> 5. Install plugin
+> 
+> > [!NOTE]
+> > **Windows Codex users:** Clone repo → VS Code → Codex Settings → Plugins → find `Caveman` under local marketplace → Install → Reload Window. Also enable `git config core.symlinks true` before cloning (requires developer mode or admin).
+> 
+> Install once. Use in all sessions after that. One rock. That it.
+> 
 > ## Usage
 > 
 > Trigger with:
@@ -516,90 +522,45 @@ Caveman 利用簡化的 caveman 語言來減少 LLM 的 token 使用，這一策
 > 
 > ### Intensity Levels
 > 
-> Sometimes full caveman too much. Sometimes not enough. Now you pick:
+> | Level | Trigger | What it do |
+> |-------|---------|------------|
+> | **Lite** | `/caveman lite` | Drop filler, keep grammar. Professional but no fluff |
+> | **Full** | `/caveman full` | Default caveman. Drop articles, fragments, full grunt |
+> | **Ultra** | `/caveman ultra` | Maximum compression. Telegraphic. Abbreviate everything |
+> 
+> ### 文言文 (Wenyan) Mode
+> 
+> Classical Chinese literary compression — same technical accuracy, but in the most token-efficient written language humans ever invented.
 > 
 > | Level | Trigger | What it do |
 > |-------|---------|------------|
-> | **Lite** | `/caveman lite` or `$caveman lite` | Drop filler, keep grammar. Professional but no fluff |
-> | **Full** | `/caveman full` or `$caveman full` | Default caveman. Drop articles, fragments, full grunt |
-> | **Ultra** | `/caveman ultra` or `$caveman ultra` | Maximum compression. Telegraphic. Abbreviate everything |
+> | **Wenyan-Lite** | `/caveman wenyan-lite` | Semi-classical. Grammar intact, filler gone |
+> | **Wenyan-Full** | `/caveman wenyan` | Full 文言文. Maximum classical terseness |
+> | **Wenyan-Ultra** | `/caveman wenyan-ultra` | Extreme. Ancient scholar on a budget |
 > 
 > Level stick until you change it or session end.
 > 
-> ## What Caveman Do
+> ## Caveman Skills
 > 
-> | Thing | Caveman Do? |
-> |-------|------------|
-> | English explanation | 🪨 Caveman smash filler words |
-> | Code blocks | ✍️ Write normal (caveman not stupid) |
-> | Technical terms | 🧠 Keep exact (polymorphism stay polymorphism) |
-> | Error messages | 📋 Quote exact |
-> | Git commits & PRs | ✍️ Write normal |
-> | Articles (a, an, the) | 💀 Gone |
-> | Pleasantries | 💀 "Sure I'd be happy to" is dead |
-> | Hedging | 💀 "It might be worth considering" extinct |
+> | Skill | What it do | Trigger |
+> |-------|-----------|---------|
+> | **caveman-commit** | Terse commit messages. Conventional Commits. ≤50 char subject. Why over what. | `/caveman-commit` |
+> | **caveman-review** | One-line PR comments: `L42: 🔴 bug: user null. Add guard.` No throat-clearing. | `/caveman-review` |
 > 
-> ## Why
+> ### caveman-compress
+> 
+> Caveman make Claude *speak* with fewer tokens. **Compress** make Claude *read* fewer tokens.
+> 
+> Your `CLAUDE.md` loads on **every session start**. Caveman Compress rewrites memory files into caveman-speak so Claude reads less — without you losing the human-readable original.
 > 
 > ```
-> ┌─────────────────────────────────────┐
-> │  TOKENS SAVED          ████████ 75% │
-> │  TECHNICAL ACCURACY    ████████ 100%│
-> │  SPEED INCREASE        ████████ ~3x │
-> │  VIBES                 ████████ OOG │
-> └─────────────────────────────────────┘
-> ```
-> 
-> - **Faster response** — less token to generate = speed go brrr
-> - **Easier to read** — no wall of text, just the answer
-> - **Same accuracy** — all technical info kept, only fluff removed ([science say so](https://arxiv.org/abs/2604.00025))
-> - **Save money** — ~71% less output token = less cost
-> - **Fun** — every code review become comedy
-> 
-> ## How It Work
-> 
-> Caveman not dumb. Caveman **efficient**.
-> 
-> Normal LLM waste token on:
-> - "I'd be happy to help you with that" (8 wasted tokens)
-> - "The reason this is happening is because" (7 wasted tokens)
-> - "I would recommend that you consider" (7 wasted tokens)
-> - "Sure, let me take a look at that for you" (10 wasted tokens)
-> 
-> Caveman say what need saying. Then stop.
-> 
-> ## Caveman Compress
-> 
-> Caveman makes Claude *speak* with fewer tokens. **Caveman Compress** makes Claude *read* fewer tokens.
-> 
-> Your `CLAUDE.md` loads on **every session start**. A 1000-token project memory file costs you tokens every single time you open a project. Caveman Compress rewrites those files into caveman-speak so Claude reads less — without you losing the human-readable original.
-> 
-> ```
-> /caveman-compress CLAUDE.md
+> /caveman:compress CLAUDE.md
 > ```
 > 
 > ```
 > CLAUDE.md          ← compressed (Claude reads this every session — fewer tokens)
 > CLAUDE.original.md ← human-readable backup (you read and edit this)
 > ```
-> 
-> ### How it works
-> 
-> A Python pipeline that shells out to `claude --print` for the actual compression, then validates the result locally — no tokens wasted on checking.
-> 
-> ```
-> detect file type (local)  →  compress with Claude (1 call)  →  validate (local)
->                                                                     ↓
->                                                               if errors: targeted fix (1 call, cherry-pick only)
->                                                                     ↓
->                                                               retry up to 2×, restore original on failure
-> ```
-> 
-> ### What's preserved exactly
-> 
-> Code blocks, inline code, URLs, file paths, commands, headings, table structure, dates, version numbers — anything technical passes through untouched. Only natural language prose gets compressed.
-> 
-> ### Compress benchmarks
 > 
 > | File | Original | Compressed | Saved |
 > |------|----------:|----------:|------:|
@@ -610,10 +571,38 @@ Caveman 利用簡化的 caveman 語言來減少 LLM 的 token 使用，這一策
 > | `mixed-with-code.md` | 888 | 574 | **35.4%** |
 > | **Average** | **898** | **494** | **45%** |
 > 
-> ### Full-circle token savings
+> Code blocks, URLs, file paths, commands, headings, dates, version numbers — anything technical passes through untouched. Only prose gets compressed. See the full [caveman-compress README](caveman-compress/README.md) for details. [Security note](./caveman-compress/SECURITY.md): Snyk flags this as High Risk due to subprocess/file patterns — it's a false positive.
 > 
-> | Tool | What it cuts | Savings |
-> |------
+> ## Benchmarks
+> 
+> Real token counts from the Claude API ([reproduce it yourself](benchmarks/)):
+> 
+> | Task | Normal (tokens) | Caveman (tokens) | Saved |
+> |------|---------------:|----------------:|------:|
+> | Explain React re-render bug | 1180 | 159 | 87% |
+> | Fix auth middleware token expiry | 704 | 121 | 83% |
+> | Set up PostgreSQL connection pool | 2347 | 380 | 84% |
+> | Explain git rebase vs merge | 702 | 292 | 58% |
+> | Refactor callback to async/await | 387 | 301 | 22% |
+> | Architecture: microservices vs monolith | 446 | 310 | 30% |
+> | Review PR for security issues | 678 | 398 | 41% |
+> | Docker multi-stage build | 1042 | 290 | 72% |
+> | Debug PostgreSQL race condition | 1200 | 232 | 81% |
+> | Implement React error boundary | 3454 | 456 | 87% |
+> | **Average** | **1214** | **294** | **65%** |
+> 
+> *Range: 22%–87% savings across prompts.*
+> 
+> > [!IMPORTANT]
+> > Caveman only affects output tokens — thinking/reasoning tokens are untouched. Caveman no make brain smaller. Caveman make *mouth* smaller. Biggest win is **readability and speed**, cost savings are a bonus.
+> 
+> A March 2026 paper ["Brevity Constraints Reverse Performance Hierarchies in Language Models"](https://arxiv.org/abs/2604.00025) found that constraining large models to brief responses **improved accuracy by 26 percentage points** on certain benchmarks and completely reversed performance hierarchies. Verbose not always better. Sometimes less word = more correct.
+> 
+> ## Evals
+> 
+> Caveman not just claim 75%. Caveman **prove** it.
+> 
+> The `evals/` directory has a three-arm eval harness that measures real token compression against a proper control — not just "verbose vs skill" but "terse vs skill". Because comparing caveman to verbose Claude conflate the skill with generic terseness. That cheatin
 
 ## 延伸閱讀
 
@@ -625,11 +614,11 @@ Caveman 利用簡化的 caveman 語言來減少 LLM 的 token 使用，這一策
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：Prompt Engineering）
+> [!note]- 直接競品（同子分類：LLM 推論）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "Prompt Engineering" AND file.name != "JuliusBrussee--caveman"
+> WHERE subcategory = "LLM 推論" AND file.name != "JuliusBrussee--caveman"
 > SORT stars DESC
 > ```
 
