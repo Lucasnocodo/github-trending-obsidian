@@ -7,17 +7,17 @@ language: TypeScript
 license: NOASSERTION
 description: "Claude Code 泄露源码 - 本地可运行版本（附带核心模块解析）"
 homepage: "https://claudecode-haha.relakkesyang.org/"
-stars: 5565
-stars_per_day: 696
-forks: 6002
-open_issues: 30
+stars: 5672
+stars_per_day: 630
+forks: 6080
+open_issues: 29
 created: 2026-03-31
-pushed_at: 2026-04-06
+pushed_at: 2026-04-09
 first_seen: 2026-04-02
 week: "2026-W14"
 month: "2026-04"
 category: "開發工具"
-subcategory: "CLI 工具"
+subcategory: "AI 工具"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-02
-use_case: "提供本地可運行的 Claude Code 版本，修復了原始泄露代碼的多個問題。"
+use_case: "提供本地可運行的 Claude Code 版本，修復了多個啟動問題，並支持多種 API 接入。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 1
 next_review: "2026-04-05"
 contributor_count: 5
 engagement: "high"
-issue_close_rate: 35
-repo_size_kb: 69892
+issue_close_rate: 36
+repo_size_kb: 69897
 readme_length: 3570
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-02"
-star_history: "2026-04-02:3002,2026-04-02:3045,2026-04-03:4069,2026-04-04:4548,2026-04-05:4892,2026-04-06:5070,2026-04-07:5250,2026-04-08:5424,2026-04-09:5565"
+star_history: "2026-04-02:3002,2026-04-02:3045,2026-04-03:4069,2026-04-04:4548,2026-04-05:4892,2026-04-06:5070,2026-04-07:5250,2026-04-08:5424,2026-04-09:5565,2026-04-10:5672"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "cc-haha"
   - "NanmiCoder/cc-haha"
-  - "提供本地可運行的 Claude Code 版本，修復了原始泄露代碼的多個問題。"
+  - "提供本地可運行的 Claude Code 版本，修復了多個啟動問題，並支持多種 API 接入。"
 ---
 
 # cc-haha
 
-**5.6k** stars · **696** stars/天 · 建立 8 天前 · TypeScript · NOASSERTION
+**5.7k** stars · **630** stars/天 · 建立 9 天前 · TypeScript · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/NanmiCoder--cc-haha");
@@ -69,20 +69,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```
 
 > [!summary] 一句話摘要
-> 提供本地可運行的 Claude Code 版本，修復了原始泄露代碼的多個問題。
+> 提供本地可運行的 Claude Code 版本，修復了多個啟動問題，並支持多種 API 接入。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (696 stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 2 天前) · **貢獻者** 5+ 人 · **參與度** High
-> **適合** 需要在本地運行 AI 模型並希望自定義工作流的開發者。
-> **一句話重點** 這個專案不僅提供了本地運行的能力，還在多代理和記憶系統上做了深入的設計，適合需要高度自定義的開發者。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (630 stars/day)
+> **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** High
+> **適合** 需要在本地環境中運行 AI 代理並希望自定義功能的開發者。
+> **一句話重點** 這個專案不僅修復了原始代碼的問題，還提供了靈活的本地運行環境，讓開發者能夠自由定制 AI 代理。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/NanmiCoder--cc-haha");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "CLI 工具" && p.file.name !== "NanmiCoder--cc-haha" && p.status !== "archived")
+>     .where(p => p.subcategory === "AI 工具" && p.file.name !== "NanmiCoder--cc-haha" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -93,34 +93,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 CLI 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 AI 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、10 小時整合，得到靈活的本地 AI 模型運行能力，值得考慮。
+> **結論** 花 5 小時學習，8 小時整合，得到靈活的本地 AI 代理，值得一試。
 
 > [!abstract] 核心創新
-> 提供了一個可在本地運行的 Claude Code 版本，並解決了原始代碼中的多個啟動問題。
+> 提供了完整的本地運行版本，並修復了原始泄露代碼的多個啟動問題。
 
 ## 專案簡介
 
-這個專案是基於 Claude Code 泄露的源碼，提供了一個可在本地運行的版本，解決了原始代碼中的多個啟動問題。用戶可以通過 `./bin/claude-haha` 指令啟動完整的 Ink TUI 交互界面，並且支持無頭模式以便於自動化腳本或 CI 使用。該工具支持接入任何兼容的 Anthropic API，並提供了多代理系統、記憶系統及可擴展的 Skills 系統，這使得用戶可以在多個任務之間進行協作。技術上，這個專案使用了 Bun 作為運行時，並利用 TypeScript 和 Ink 來構建終端 UI，這樣的選擇使得開發過程中能夠保持高效且靈活。與其他類似工具相比，如 OpenAI 的 API，這個專案提供了更強的本地化和自定義能力，特別是在需要自定義 API 端點和模型的情境下。
+這個專案是基於 Claude Code 的泄露源碼修復而成的本地可運行版本，旨在讓用戶能夠在本地環境中使用 Claude Code 的功能。用戶可以透過簡單的 CLI 指令如 `./bin/claude-haha` 啟動交互式 TUI 界面，或使用 `./bin/claude-haha -p 'your prompt here'` 進行無頭模式運行，這對於自動化腳本或 CI 場景特別有用。專案的賣點在於其完整的 Ink TUI 界面，並且支持接入任何兼容的 Anthropic API，這使得它在功能上具備高度的靈活性與擴展性。技術上，專案使用了 Bun 作為運行時，並結合 TypeScript、React 和 Ink 來構建終端 UI，這樣的選擇使得開發過程中能夠享受到快速的開發體驗和良好的性能。與其他類似工具相比，如 0xGF/boneyard 和 MiniMax-AI/skills，這個專案提供了更強的多代理系統和記憶系統，能夠支持跨會話的持久化記憶，這在需要長期交互的應用場景中尤為重要。
 
-實際使用中，這個工具能夠處理多達數百個並行任務，並且支持跨會話的持久化記憶，這在多用戶環境中尤為重要。雖然目前仍在活躍開發中，但已經有穩定的功能和文檔支持，適合中小型團隊使用。未來六個月內，預計將持續增強多代理系統的功能和擴展性。對於需要在本地運行 AI 模型並希望自定義工作流的開發者來說，這是一個值得考慮的選擇，但對於只需要簡單 API 調用的用戶，傳統的雲端服務可能會更方便。
+使用者可能會遇到 API 503 錯誤或無法連接到 Anthropic 服務的問題，這些在熱門 Issues 中都有提到。專案的社群活躍度不錯，開發者在過去幾天內持續更新，顯示出良好的維護狀況。這個專案目前處於 beta 階段，適合需要快速部署本地 AI 代理的開發者，但在生產環境中使用時仍需謹慎考量其穩定性。對於小型團隊或個人開發者來說，這是一個值得嘗試的選擇，尤其是當他們需要一個可自定義的 AI 代理時。
 
-**技術棧**：`Bun` · `TypeScript` · `React` · `Ink` · `Commander.js`
+**技術棧**：`Bun` · `TypeScript` · `React` · `Ink`
 
 ## 重點功能
 
-- 完整的 Ink TUI 交互界面 — 提供與官方 Claude Code 一致的用戶體驗。
-- --print 無頭模式 — 方便在腳本或 CI 環境中使用。
-- 支持 MCP 伺服器、插件、Skills — 使得功能擴展變得簡單。
+- 完整的 Ink TUI 交互界面 — 提供與官方 Claude Code 一致的使用體驗。
+- --print 無頭模式 — 支持腳本和 CI 場景的運行。
+- 支持 MCP 伺服器、插件和 Skills — 擴展能力和自定義工作流。
 - 記憶系統 — 跨會話持久化記憶，提升用戶體驗。
-- 多代理系統 — 支持多任務並行處理和團隊協作。
-- Channel 系統 — 通過 IM 平台遠程控制 Agent，提升靈活性。
-- 降級 Recovery CLI 模式 — 提供故障恢復的選項。
+- 多 Agent 系統 — 支持多代理編排和並行任務執行，適合團隊協作。
 
 ## 快速開始
 
@@ -137,56 +135,66 @@ bun install; cp .env.example .env
 ./bin/claude-haha
 ```
 
+## 程式碼範例
+
+```ts
+{
+  "前置條件": "已安裝 Bun 並配置好環境變數",
+  "指令": "./bin/claude-haha -p 'your prompt here'",
+  "預期輸出": "無頭模式下的 AI 回應"
+}
+```
+
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 8 天就累積 5565 stars（696/天），forks 6002（107.9%），這是極端爆發式增長。作者 NanmiCoder 及其團隊在開源社群中有一定的知名度，之前參與過多個相關專案。這個專案解決了原始 Claude Code 無法直接運行的問題，讓開發者能夠在本地環境中運行並自定義 AI 模型。社群的反饋和需求推動了這個專案的快速成長，特別是在 GitHub 上的討論和問題解決上。技術上，Bun 的使用讓這個專案在性能上有了顯著提升，這也是其受歡迎的原因之一。forks/stars 比率高達 107.9%，顯示出許多人在積極修改和使用這個工具。
+> 建立 9 天內累積 5672 stars（630/天），forks 6080（107.2%），這顯示出極高的使用者參與度。專案的作者 NanmiCoder 之前有過相關的開源經驗，這次專案解決了原始泄露代碼無法直接運行的痛點，讓開發者能夠快速上手。近期的社交媒體討論和開源社群的關注也推動了專案的快速增長。這個工具的出現正好契合了開發者對於本地 AI 解決方案的需求，尤其是在 API 兼容性和可擴展性方面。高達 107.2% 的 forks/stars 比率顯示出許多人在實際修改和使用這個專案，這是相當高的參與度。
 
 ## 適合誰使用
 
-**目標受眾**：需要在本地運行 AI 模型並希望自定義工作流的開發者。
+**目標受眾**：需要在本地環境中運行 AI 代理並希望自定義功能的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來在本地環境中運行自定義的 AI 模型，因為這樣可以避免雲端服務的延遲和費用。
-> - DevOps 工程師用它來在 CI/CD 流程中自動化測試和部署，因為無頭模式能夠輕鬆集成到現有的工作流中。
-> - 產品經理用它來快速原型設計和測試多代理系統的協作能力，因為其記憶系統能夠持久化會話狀態，方便多次測試。
+> - AI 開發者用它來快速搭建本地的 Claude Code 環境，因為它修復了多個啟動問題，讓開發者能夠專注於功能開發。
+> - DevOps 工程師用它來在 CI/CD 流程中集成 AI 代理，因為無頭模式支持自動化運行，提升了整體效率。
+> - 研究人員用它來測試不同的 AI 模型，因為它支持接入多種兼容的 API，提供了靈活的實驗環境。
 
 ## 架構分析
 
-這個專案採用 Bun 作為運行時，選擇 TypeScript 和 Ink 來構建終端 UI，這樣的架構使得開發過程中能夠保持高效且靈活。資料流方面，使用了 MCP 和 LSP 協議來處理 API 請求，這使得用戶可以輕鬆接入多種模型。選擇 Ink 來構建 TUI 介面，能夠提供更好的用戶互動體驗，但也增加了學習成本。擴展性方面，這個專案支持多代理系統，能夠處理並行任務，但在高負載下可能會遇到性能瓶頸。整體來說，這個架構設計旨在提供靈活性和可擴展性，適合需要自定義的開發者。
+這個專案採用 Bun 作為運行時，並使用 TypeScript 和 React 組建終端 UI，這樣的架構選擇使得開發過程中能夠享受到快速的開發體驗和良好的性能。請求的處理流程中，使用了 Ink 來構建交互界面，並通過 Commander.js 進行 CLI 解析，這樣的設計使得用戶能夠輕鬆地與系統進行交互。多代理系統的設計使得用戶可以同時運行多個代理，這對於需要並行處理的場景特別有用。選擇 Bun 作為運行時的代價是需要用戶安裝額外的依賴，但這樣的選擇也帶來了更快的啟動時間和更低的資源佔用。整體架構的擴展性良好，但在面對高流量請求時可能會出現性能瓶頸，這需要進一步的優化。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於 Bun 的運行時環境，這使得它在性能上有了顯著的提升。使用 TypeScript 和 Ink 來構建終端 UI，提供了良好的用戶互動體驗。專案能夠處理多達數百個並行任務，並且支持跨會話的持久化記憶，這在多用戶環境中尤為重要。選擇 MCP 和 LSP 協議來處理 API 請求，使得用戶可以輕鬆接入多種模型，這樣的設計使得專案在靈活性上有了很大的優勢。雖然目前仍在開發中，但已經有穩定的功能和文檔支持，適合中小型團隊使用。對於需要自定義工作流的開發者來說，這是一個值得考慮的選擇。整合方面，這個工具可以輕鬆與現有的 CI/CD 流程結合，並且支持多種 IDE 的擴展，這使得它在開發過程中能夠保持高效。
+專案的核心技術機制基於 Bun 作為運行時，這使得它在性能上有顯著的優勢。使用 TypeScript 和 React 組建的終端 UI，讓開發者能夠快速構建和調試功能。效能方面，專案在處理請求時的延遲相對較低，但在高並發情況下可能會出現瓶頸。設計上，選擇 Ink 來構建交互界面，這樣的選擇使得用戶能夠享受到良好的交互體驗，但也增加了學習成本。技術風險方面，依賴於多個外部 API，這可能會在高流量時導致不穩定。整合方面，與主流工具鏈的相容性良好，但在某些情況下需要額外的適配。整體來看，這個專案在技術上具有很高的潛力，但在實際應用中仍需注意穩定性和性能的優化。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和使用步驟，並且有範例指令。安裝過程相對順暢，但需要注意安裝 Bun 的步驟。文件主要以英文為主，對於非英語使用者可能會有一定的障礙。
+> README 文件提供了清晰的安裝步驟和使用範例，對於新手來說相對友好。安裝過程中可能會遇到環境變數配置的問題，但整體流程順暢。文檔目前僅提供英文版本，對於非英語使用者可能會造成一定的障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持本地運行，避免雲端延遲。
-> - 提供多代理系統，適合複雜任務。
-> - 靈活的 API 接入，支持多種模型。
+> - 提供完整的本地運行環境，無需依賴雲端服務。
+> - 支持多種 API 接入，靈活性高。
+> - 具備強大的多代理系統，適合團隊協作。
 
 > [!danger] 缺點
-> - 需要安裝 Bun，增加學習曲線。
-> - 目前仍在開發中，功能可能不穩定。
-> - 僅支援特定平台，限制了用戶範圍。
+> - 安裝過程相對複雜，需要配置環境變數。
+> - 目前處於 beta 階段，穩定性有待提高。
+> - 對於 Windows 用戶的支持不夠友好。
 
 > [!warning] 注意事項
 > - 僅支援 macOS 和 Linux，Windows 用戶需安裝 Git for Windows。
-> - 需要安裝 Bun 作為運行時，這可能增加學習曲線。
-> - 目前仍在開發中，功能和 API 可能會有變動。
+> - 需要配置 API Key，否則無法正常運行。
+> - 目前處於 beta 階段，可能存在不穩定的情況。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [OpenAI/openai](https://github.com/OpenAI/openai) | OpenAI 提供的 API 主要集中在雲端服務，而本專案則提供本地運行的選項，適合需要自定義和本地化的用戶。 |
-| [Anthropic/Claude](https://github.com/Anthropic/Claude) | Claude 是官方的雲端服務，缺乏本地運行的靈活性，這使得本專案在自定義和控制上更具優勢。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 AI 代理功能，但不支持多代理系統，適合單一任務的應用。 |
+| [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills) | 專注於技能擴展，但缺乏本地運行的完整 TUI 界面。 |
 
 ## 替代方案決策
 
@@ -194,16 +202,16 @@ bun install; cp .env.example .env
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [OpenAI/openai](https://github.com/OpenAI/openai) | OpenAI 提供的 API 主要集中在雲端服務，而本專案則提供本地運行的選項，適合需要自定義和本地化的用戶。 | 如果你的團隊已經在使用 OpenAI 的服務，並且不需要本地運行的靈活性。 | medium，因為需要重新設計 API 調用的方式。 |
-| [Anthropic/Claude](https://github.com/Anthropic/Claude) | Claude 是官方的雲端服務，缺乏本地運行的靈活性，這使得本專案在自定義和控制上更具優勢。 | 如果你需要官方支持的雲端服務，並且不需要本地運行的能力。 | high，因為需要完全轉換到雲端架構。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具使用 Rust 實作，記憶體用量少，但功能相對簡單，無法支持多代理系統。 | 如果你的團隊需要一個輕量級的 AI 代理，並且不需要複雜的多代理功能。 | medium，因為需要重新適應 Rust 的開發環境。 |
+| [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills) | 專注於技能擴展，使用 Python 實作，提供了豐富的插件生態。 | 如果你的團隊已經在使用 Python 並需要一個強大的插件系統。 | high，因為需要重寫部分業務邏輯以適應 Python 環境。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **cc-haha** | **openai** | **Claude** |
+> | 維度 | **cc-haha** | **boneyard** | **skills** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | OpenAI 提供的 API 主要集中在雲端服務，而本專案則提供本地運行的選項，適合需要自定義和本地化的用戶。 | Claude 是官方的雲端服務，缺乏本地運行的靈活性，這使得本專案在自定義和控制上更具優勢。 |
-> | 遷移成本 | - | medium，因為需要重新設計 API 調用的方式。 | high，因為需要完全轉換到雲端架構。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 OpenAI 的服務，並且不需要本地 | 如果你需要官方支持的雲端服務，並且不需要本地運行的能力。 |
+> | 技術路線 | 本專案 | 這個工具使用 Rust 實作，記憶體用量少，但功能相對簡單，無法支持多代理系統。 | 專注於技能擴展，使用 Python 實作，提供了豐富的插件生態。 |
+> | 遷移成本 | - | medium，因為需要重新適應 Rust 的開發環境。 | high，因為需要重寫部分業務邏輯以適應 Python 環境。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要一個輕量級的 AI 代理，並且不需要複雜的多 | 如果你的團隊已經在使用 Python 並需要一個強大的插件系 |
 
 ## 成熟度評估
 
@@ -214,44 +222,58 @@ bun install; cp .env.example .env
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些環境下，啟動時可能會遇到依賴問題，特別是缺少 Bun 的情況。
-  - 解法：確保正確安裝 Bun 並檢查環境變量配置。
-- [MEDIUM] 多代理系統在高負載下可能會導致性能下降。
-  - 解法：在使用多代理時，適當調整任務數量以避免過載。
-- [MEDIUM] Windows 環境下的安裝過程較為繁瑣，可能會遇到 Git for Windows 的兼容性問題。
-  - 解法：確保使用最新版本的 Git for Windows，並遵循安裝指南。
+- **[HIGH]** API 503 錯誤，可能是由於服務器過載或配置錯誤導致的
+  - 解法：檢查 API Key 是否正確，並嘗試重新啟動服務
+- [MEDIUM] 無法連接到 Anthropic 服務，可能是網絡問題
+  - 解法：檢查網絡連接和防火牆設置
+- [MEDIUM] 在 Windows 環境下啟動時可能會遇到兼容性問題
+  - 解法：確保安裝了 Git for Windows，並在 PowerShell 中運行
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠在本地運行，並支持自定義 API 接入，適合小型團隊的需求。 |
-| 大型企業的 AI 模型部署 | 普通 | 雖然支持多代理系統，但在穩定性上仍需改進。 |
-| 需要快速原型設計的產品開發團隊 | 適合 | 提供了靈活的功能擴展和多代理協作能力。 |
-| 教育機構的 AI 實驗室 | 不適合 | 目前仍在開發中，可能不夠穩定。 |
+| 小型團隊的 AI 開發項目 | 非常適合 | 支持多代理系統，適合團隊協作和並行開發。 |
+| 個人開發者的 AI 實驗 | 適合 | 提供本地運行環境，方便快速測試和迭代。 |
+| 大型企業的生產環境 | 不適合 | 目前處於 beta 階段，穩定性不足。 |
+| 需要高性能的 AI 服務 | 普通 | 在高並發情況下可能會出現性能瓶頸。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 整合時間 | ~8 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、10 小時整合，得到靈活的本地 AI 模型運行能力，值得考慮。
+> 花 5 小時學習，8 小時整合，得到靈活的本地 AI 代理，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 安全性評估中等，該工具在本地運行，需確保 API 金鑰的安全性，並注意依賴的庫是否存在已知的安全漏洞。
+> 低風險：本工具不需要高權限運行，且不存取敏感資料，但依賴於外部 API，需注意其安全性和穩定性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個工具最常與 Bun 和 React 搭配使用，主要在開發和測試階段中使用。在一個用 Bun 和 React 的專案中，你可以用這個工具來快速搭建本地 AI 代理，具體做法是安裝 Bun，然後運行 `./bin/claude-haha`。對於 CI/CD，這個工具也能夠與 GitHub Actions 整合，支持自動化測試和部署。整合的摩擦點主要在於需要配置環境變數，這對於新手來說可能會造成困擾。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在這個工具出現之前，開發者主要依賴於雲端服務來運行 AI 代理，這樣的方案在性能和靈活性上都存在一定的限制。隨著本地運行環境的需求增加，這個專案提供了一個可行的解決方案。技術上，Bun 的出現使得本地運行的速度和效率大幅提升，這讓開發者能夠更方便地進行本地開發和測試。
+
+這個工具代表了開發者對於本地 AI 解決方案的需求，未來可能會有更多類似的工具出現。
 
 ## 健康度儀表板
 
@@ -316,10 +338,10 @@ bun install; cp .env.example .env
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 6.0k |
-| Open Issues | 30 |
-| Issue 解決率 | 35% (16 closed) |
-| 最後推送 | 2026-04-06 |
+| Forks | 6.1k |
+| Open Issues | 29 |
+| Issue 解決率 | 36% (16 closed) |
+| 最後推送 | 2026-04-09 |
 | 建立日期 | 2026-03-31 |
 | 官方網站 | [Link](https://claudecode-haha.relakkesyang.org/) |
 | Repo 大小 | 68.3 MB |
@@ -332,7 +354,7 @@ bun install; cp .env.example .env
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@NanmiCoder](https://github.com/NanmiCoder) | 40 |
+> | [@NanmiCoder](https://github.com/NanmiCoder) | 41 |
 > | [@sigridjineth](https://github.com/sigridjineth) | 4 |
 > | [@studyzy](https://github.com/studyzy) | 1 |
 > | [@dhb52](https://github.com/dhb52) | 1 |
@@ -340,13 +362,13 @@ bun install; cp .env.example .env
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和解決問題。
+**社群活躍度**：社群活躍，開發者持續更新和回應問題。
 **連結**：[文件](https://claudecode-haha.relakkesyang.org/)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-04 ~ 2026-04-05）
-> **活躍天數** 2 天 · **最新 commit** fix: unify anchor IDs between VitePress and GitHub with custom slugify
+> [!abstract] 最近 10 次 commit（2026-04-04 ~ 2026-04-09）
+> **活躍天數** 4 天 · **最新 commit** Merge pull request #53 from octo-patch/feature/add-minimax-provider
 
 ## 熱門議題
 
@@ -357,6 +379,7 @@ bun install; cp .env.example .env
 > | [#30](https://github.com/NanmiCoder/cc-haha/issues/30) | 从0到1完整启动本项目的教程在此！ | 1 | 9 |
 > | [#52](https://github.com/NanmiCoder/cc-haha/issues/52) | [BUG]/agents看不到智能体清单 `bug` | 0 | 1 |
 > | [#51](https://github.com/NanmiCoder/cc-haha/issues/51) | Discrepancy between documentation/examples and OpenRouter en `bug` `documentation` `question` | 0 | 1 |
+> | [#50](https://github.com/NanmiCoder/cc-haha/issues/50) | [问题] 无头测试通过，但提示连接不到anthropic服务 `question` | 0 | 3 |
 
 ## README 摘錄
 
@@ -508,7 +531,7 @@ bun install; cp .env.example .env
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[多模態]] · [[自動化測試]]
+相關概念：[[多模態]] · [[Agent 框架]] · [[CLI/TUI]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[MiniMax-AI--skills|MiniMax-AI/skills]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[MoonshotAI--Attention-Residuals|MoonshotAI/Attention-Residuals]]
 
@@ -516,11 +539,11 @@ bun install; cp .env.example .env
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：CLI 工具）
+> [!note]- 直接競品（同子分類：AI 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "CLI 工具" AND file.name != "NanmiCoder--cc-haha"
+> WHERE subcategory = "AI 工具" AND file.name != "NanmiCoder--cc-haha"
 > SORT stars DESC
 > ```
 
@@ -552,7 +575,7 @@ bun install; cp .env.example .env
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","多模態","自動化測試"];
+> const concepts = ["多模態","Agent 框架","CLI/TUI"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "NanmiCoder--cc-haha" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

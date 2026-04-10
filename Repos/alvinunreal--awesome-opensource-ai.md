@@ -7,16 +7,16 @@ language: Python
 license: NOASSERTION
 description: "Curated list of the best truly open-source AI projects, models, tools, and infrastructure."
 homepage: "https://awesomeosai.com"
-stars: 2423
-stars_per_day: 162
-forks: 210
-open_issues: 17
+stars: 2434
+stars_per_day: 152
+forks: 212
+open_issues: 21
 created: 2026-03-24
-pushed_at: 2026-04-09
+pushed_at: 2026-04-10
 first_seen: 2026-03-27
 week: "2026-W13"
 month: "2026-03"
-category: "AI/ML"
+category: "其他"
 subcategory: "開源資源"
 release_tag: ""
 install_complexity: "easy"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-27
-use_case: "提供最佳的真正開源 AI 專案、模型、工具和基礎設施的精選列表。"
+use_case: "整理出最佳的真正開源 AI 專案、模型、工具和基礎設施。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,18 +34,18 @@ appearances: 5
 next_review: "2026-04-03"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 39
-repo_size_kb: 1506
-readme_length: 9930
+issue_close_rate: 34
+repo_size_kb: 1578
+readme_length: 9095
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-27"
-star_history: "2026-03-27:1024,2026-03-27:1037,2026-03-28:1460,2026-03-28:1467,2026-03-29:1746,2026-03-29:1751,2026-03-30:1931,2026-03-30:1932,2026-03-31:2063,2026-03-31:2064,2026-04-01:2189,2026-04-02:2236,2026-04-03:2265,2026-04-04:2291,2026-04-05:2308,2026-04-06:2345,2026-04-07:2385,2026-04-08:2402,2026-04-09:2423"
+star_history: "2026-03-27:1024,2026-03-27:1037,2026-03-28:1460,2026-03-28:1467,2026-03-29:1746,2026-03-29:1751,2026-03-30:1931,2026-03-30:1932,2026-03-31:2063,2026-03-31:2064,2026-04-01:2189,2026-04-02:2236,2026-04-03:2265,2026-04-04:2291,2026-04-05:2308,2026-04-06:2345,2026-04-07:2385,2026-04-08:2402,2026-04-09:2423,2026-04-10:2434"
 tags:
   - github
-  - "category/ai_ml"
+  - "category/其他"
   - "lang/python"
   - easy_install
   - "topic/agents"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "awesome-opensource-ai"
   - "alvinreal/awesome-opensource-ai"
-  - "提供最佳的真正開源 AI 專案、模型、工具和基礎設施的精選列表。"
+  - "整理出最佳的真正開源 AI 專案、模型、工具和基礎設施。"
 ---
 
 # awesome-opensource-ai
 
-**2.4k** stars · **162** stars/天 · 建立 15 天前 · Python · NOASSERTION
+**2.4k** stars · **152** stars/天 · 建立 16 天前 · Python · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/alvinreal--awesome-opensource-ai");
@@ -79,13 +79,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `agents` `ai` `artificial-intelligence` `awesome` `awesome-list` `generative-ai` `llm` `machine-learning` `mlops` `open-source` `open-source-ai` `rag`
 
 > [!summary] 一句話摘要
-> 提供最佳的真正開源 AI 專案、模型、工具和基礎設施的精選列表。
+> 整理出最佳的真正開源 AI 專案、模型、工具和基礎設施。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (162 stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (152 stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 希望尋找高品質開源 AI 資源的開發者和研究人員。
-> **一句話重點** 這個專案的價值在於其集中化的開源 AI 資源列表，能夠有效幫助開發者快速找到所需工具。
+> **適合** 需要快速找到高品質開源 AI 資源的開發者和研究人員。
+> **一句話重點** 這個專案證明了開源 AI 資源的聚合能大幅提升開發效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,163 +108,115 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~1h · **綁定風險** low
-> **結論** 花 1 小時學習和 1 小時整合，能快速獲得各種開源 AI 資源，值得採用。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，1 小時整合，得到高品質開源 AI 資源，值得。
 
 > [!abstract] 核心創新
-> 這個專案提供了經過實戰驗證的開源 AI 資源的集中化列表，讓開發者能夠快速找到高品質的工具。
+> 這個專案提供了經過戰鬥測試的開源 AI 資源，僅列出精英級專案。
 
 ## 專案簡介
 
-這個專案是一個精心策劃的開源 AI 資源列表，涵蓋了從模型到基礎設施的各種工具。用戶可以透過這個列表找到經過實戰驗證的開源 AI 專案，這些專案在生產環境中已經被廣泛應用。列表中的項目包括各種評估框架、數據集和工具，幫助用戶進行模型的評估和基準測試。核心賣點在於提供一個集中化的平台，讓開發者能夠快速找到高品質的開源 AI 資源。這個列表不僅涵蓋了主流的開源模型，還包括一些新興的技術和工具，讓用戶能夠跟上最新的技術趨勢。
+這個專案提供了一個精心策劃的開源 AI 資源列表，涵蓋從模型到基礎設施的各種工具。用戶可以透過這個列表快速找到經過驗證的開源 AI 專案，並且這些專案都經過實際生產環境的考驗。列表中包含了各種範疇的工具，例如核心框架、生成媒體工具、評估基準等，讓開發者能夠在不同的 AI 領域找到合適的解決方案。使用者只需訪問 [awesomeosai.com](https://awesomeosai.com) 即可獲取這些資源。這個工具的賣點在於其高品質的內容，僅列出經過嚴格篩選的「精英級」專案，這對於尋找可靠開源解決方案的開發者來說非常重要。
 
-使用者可以透過簡單的鏈接訪問每個專案的詳細信息，並根據自己的需求選擇合適的工具。這樣的設計使得開發者在尋找開源 AI 解決方案時不再需要四處搜尋，節省了大量時間。這個列表的維護者們也持續更新內容，確保資源的時效性和相關性。相較於其他開源資源列表，這個專案的獨特之處在於其專注於經過實戰驗證的項目，並且提供了詳細的分類和描述，讓用戶能夠更快找到所需的工具。整體來說，這是一個對於希望在開源 AI 領域中獲得最新資源的開發者來說非常有價值的工具。
+技術上，這個列表涵蓋了 Python 語言的多個開源專案，並且不斷更新以反映最新的技術進展。這些專案的選擇基於其在社群中的影響力和實用性，並且提供了多種評估框架和基準，幫助用戶在選擇模型時進行有效的比較。
+
+與其他開源列表相比，這個專案專注於「戰鬥測試」的工具，確保用戶獲得的資源都是經過實際使用驗證的。
+
+實際使用中，這個列表能夠幫助開發者節省大量的時間，因為他們不需要自己去篩選和評估每個專案的質量。這對於需要快速搭建 AI 解決方案的團隊來說尤其重要。社群的活躍度也相對較高，開放的提交指南讓更多開發者能夠參與進來，這有助於保持列表的更新和多樣性。
+
+然而，這個專案的限制在於它並不提供具體的實作指導，使用者仍需具備一定的技術背景來理解和使用這些資源。整體來說，這是一個非常適合需要快速獲取高品質開源 AI 資源的開發者的工具，尤其是對於正在尋找成熟解決方案的團隊來說。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 精選開源 AI 專案 — 僅包含經過實戰驗證的項目，確保資源的可靠性。
-- 詳細分類 — 將資源分為多個類別，方便用戶快速找到所需工具。
-- 持續更新 — 定期更新內容，確保用戶獲得最新的資源。
-- 鏈接直接訪問 — 每個項目都有直接鏈接，方便用戶快速進入詳細頁面。
-- 社群貢獻 — 鼓勵用戶提交新的資源，保持列表的活躍性和多樣性。
-
-## 快速開始
-
-1. 訪問專案網站
-```bash
-https://awesomeosai.com
-```
-2. 瀏覽分類列表
-```bash
-# 無需指令，直接在網站上瀏覽
-```
-3. 選擇感興趣的項目
-```bash
-# 點擊鏈接以獲取更多資訊
-```
+- 精選開源 AI 專案 — 僅列出經過實際生產環境測試的工具和模型。
+- 多樣化的資源分類 — 包含核心框架、評估基準、生成媒體工具等，滿足不同需求。
+- 持續更新 — 定期更新以反映最新的技術進展和社群貢獻。
+- 開放的提交指南 — 鼓勵社群參與，保持內容的新鮮度和多樣性。
+- 高品質的評估框架 — 提供多種評估工具，幫助用戶選擇合適的模型。
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 15 天內累積 2423 stars（162/天），forks 210（8.7%），顯示出強勁的增長潛力。這個專案由一群經驗豐富的開發者維護，他們在開源社群中擁有良好的聲譽。它解決了開發者在尋找高品質開源 AI 資源時的痛點，之前的解決方案往往缺乏集中化和更新頻率。隨著開源 AI 的需求增加，這個專案正好填補了這一空白。社群的參與度也相對較高，顯示出用戶對這個資源的需求。這個專案的成功與開源 AI 生態系統的快速發展密切相關。
+> 建立 16 天就累積 2434 stars（152/天），forks 212（8.7%），這顯示出穩定的增長潛力。專案的主要貢獻者來自於活躍的開源社群，這些貢獻者在 AI 領域有著豐富的經驗。這個專案解決了開源 AI 資源分散、質量參差不齊的問題，讓開發者能夠快速找到可靠的工具和模型。近期的推文和社群討論也引起了更多開發者的注意，進一步促進了其受歡迎程度。隨著開源 AI 生態系統的發展，這個專案的價值愈加凸顯，尤其是在需要高效解決方案的背景下。forks/stars 比率為 8.7%，顯示出相對較高的實際使用和修改需求。
 
 ## 適合誰使用
 
-**目標受眾**：希望尋找高品質開源 AI 資源的開發者和研究人員。
+**目標受眾**：需要快速找到高品質開源 AI 資源的開發者和研究人員。
 
 > [!example] 使用場景
-> - AI 研究人員用它來快速找到最新的開源 AI 模型和工具，因為這個列表提供了經過驗證的資源，節省了大量的搜尋時間。
-> - 資料科學家用它來尋找合適的數據集和評估工具，因為這些資源都是針對特定任務精心挑選的，能提高工作效率。
-> - 開發者用它來整合多種開源 AI 工具到自己的專案中，因為這個列表提供了詳細的分類和鏈接，方便快速集成。
+> - AI 研究人員用它來快速找到經過驗證的開源 AI 模型，因為這樣可以節省大量的篩選時間，專注於實驗和開發。
+> - 開發者用它來尋找適合的 MLOps 工具，因為這個列表提供了多種高品質的選擇，能夠加速模型的部署和管理。
+> - 新創公司用它來建立 AI 驅動的產品，因為這些經過測試的工具能夠降低開發風險，提高產品的市場競爭力。
 
 ## 架構分析
 
-這個專案的架構基於一個精選的資源列表，使用 Markdown 格式進行組織。這樣的設計使得用戶能夠輕鬆瀏覽和查找所需的資源。每個資源都附有直接鏈接，方便用戶快速訪問。
+這個專案的架構是基於一個精選的開源資源列表，旨在提供高品質的 AI 工具和模型。選擇這種方式的原因在於能夠快速聚合社群中最優秀的資源，並且避免了使用者在海量資訊中迷失。資料流的具體節點包括從各大開源平台（如 GitHub）收集資料，經過篩選和評估後整理成列表。
 
-選擇 Markdown 格式的好處是簡潔且易於維護，社群貢獻者可以輕鬆地提交新的資源。這種架構的代價是無法提供即時的資源使用體驗，因為用戶需要跳轉到外部鏈接。整體而言，這個架構非常適合快速查找和分享開源資源，但在使用上不如集成化的工具來得方便。
+這樣的設計使得使用者能夠在一個地方找到所有需要的資源，省去大量的搜尋時間。選擇聚合而非單一專案的方式，能夠提供更全面的資源，但也可能導致某些專案的細節被忽略。整體來說，這個架構在擴展性上表現良好，因為隨著社群的參與，資源會不斷增加和更新。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於精選和整理開源 AI 資源，使用 Markdown 格式進行組織。這樣的設計不僅簡單易用，還能夠快速更新。整體資料流從用戶訪問網站開始，然後通過分類和鏈接引導用戶找到所需的資源。這個專案的設計取捨在於選擇了簡潔性和易維護性，而不是即時的使用體驗。這意味著用戶需要跳轉到外部鏈接來使用資源，這在某些情況下可能會造成不便。這個專案的擴展性良好，因為社群可以隨時提交新的資源，保持列表的活躍性。整體而言，這是一個對於希望在開源 AI 領域獲得最新資源的開發者來說非常有價值的工具。
+這個專案的核心技術機制在於精選和整理開源 AI 資源，並提供一個集中式的平台供開發者使用。使用的資料結構主要是列表和分類，便於用戶快速查找所需的工具。這些資源涵蓋了從模型到基礎設施的各種範疇，能夠支持不同的開發需求。效能上，這個列表的擴展性良好，因為隨著社群的參與，資源會持續增加。設計上選擇聚合而非單一專案的方式，能夠提供更全面的資源，但也可能導致某些專案的細節被忽略。整體來說，這個專案在與主流開源平台的整合上表現良好，能夠快速引導用戶找到所需的資源，並且在 CI/CD pipeline 中也能輕鬆融入。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件品質良好，清楚列出資源和分類。安裝過程非常簡單，只需訪問網站即可。文件沒有多語言支持，但內容簡潔明瞭，適合快速上手。
+> README 文件清晰，提供了資源的概覽和使用方式。安裝過程非常簡單，因為只需訪問網站即可獲取資源。文件中沒有提供具體的範例，但整體結構易於理解。沒有多語言支持，僅提供英文內容。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 集中化的資源列表，節省搜尋時間。
-> - 經過實戰驗證的項目，確保資源的可靠性。
-> - 持續更新，保持資源的時效性。
-> - 詳細分類，方便用戶快速找到所需工具。
+> - 提供高品質的開源資源，經過實際測試。
+> - 涵蓋多個 AI 領域，滿足不同需求。
+> - 社群活躍，資源不斷更新。
 
 > [!danger] 缺點
-> - 不包含非開源的 AI 資源，可能限制選擇。
-> - 僅提供鏈接，無法直接使用或測試資源。
-> - 依賴社群貢獻，可能存在更新不及時的情況。
-> - 缺乏詳細的使用說明，對新手不夠友好。
+> - 不提供具體的實作指導。
+> - 部分資源可能缺乏詳細的文檔。
+> - 使用者需自行評估每個專案的適用性。
 
 > [!warning] 注意事項
-> - 不包含非開源的 AI 資源，可能限制某些用戶的選擇。
-> - 僅提供鏈接，無法直接使用或測試資源。
-> - 依賴社群貢獻，可能存在資源更新不及時的情況。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於開源 AI 的資源，而 boneyard 主要是針對各種開源專案的集合。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | parsync 主要針對數據同步，而本專案專注於 AI 相關的資源和工具。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 更偏向於特定的 AI 應用，而本專案提供廣泛的開源 AI 資源。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| Hugging Face Datasets | 專注於提供開源數據集，而本專案則是綜合性的資源列表。 | 如果你需要專門的數據集，而不僅僅是工具和模型，Hugging Face Datasets 更適合。 | low，因為兩者都提供開源資源，切換相對容易。 |
-| OpenAI Model Hub | 提供專門的模型，而本專案則是綜合性的資源列表。 | 如果你專注於 OpenAI 的模型，OpenAI Model Hub 是更好的選擇。 | medium，因為需要重新評估資源的適用性。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **awesome-opensource-ai** | **Hugging Face Datasets** | **OpenAI Model Hub** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於提供開源數據集，而本專案則是綜合性的資源列表。 | 提供專門的模型，而本專案則是綜合性的資源列表。 |
-> | 遷移成本 | - | low，因為兩者都提供開源資源，切換相對容易。 | medium，因為需要重新評估資源的適用性。 |
-> | 適用場景 | 主要場景 | 如果你需要專門的數據集，而不僅僅是工具和模型，Hugging | 如果你專注於 OpenAI 的模型，OpenAI Model |
+> - 不提供具體的實作指導，使用者需具備一定技術背景。
+> - 部分資源可能缺乏詳細的文檔或範例，使用時需自行探索。
+> - 社群貢獻的質量可能不一，需自行評估每個專案的適用性。
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
 | 開發階段 | Beta |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| 生產環境就緒 | Yes |
+| Breaking Change 風險 | low |
 
 > [!tip] 採用建議
-> 適合開發者用於尋找開源 AI 資源，但不建議用於生產環境的核心路徑上。
-
-## 已知陷阱
-
-> [!bug] 踩坑才知道的問題
-
-- [MEDIUM] 某些資源可能已經不再維護，導致鏈接失效
-  - 解法：定期檢查資源的更新狀態
-- **[HIGH]** 缺乏詳細的使用說明，對新手不夠友好
-  - 解法：尋找其他資源或社群支持
-- [MEDIUM] 社群貢獻的資源質量參差不齊
-  - 解法：仔細評估每個資源的評價和使用情況
+> 適合快速獲取高品質開源 AI 資源的開發者。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 大型 AI 研究團隊尋找開源工具 | 非常適合 | 提供了多樣化的資源選擇，能滿足不同需求。 |
-| 個人開發者需要快速找到特定工具 | 適合 | 資源列表簡潔明瞭，方便快速查找。 |
-| 小型團隊希望整合多種開源工具 | 普通 | 雖然提供了多種資源，但可能需要額外的整合工作。 |
-| 需要專門的數據集或模型的開發者 | 不適合 | 這個專案主要是資源列表，缺乏專門的數據集。 |
+| 需要快速找到開源 AI 模型的研究團隊 | 非常適合 | 提供經過測試的高品質資源，能夠加速研究進程。 |
+| 小型開發團隊尋找 MLOps 工具 | 適合 | 涵蓋多種 MLOps 解決方案，能夠滿足不同需求。 |
+| 大型企業尋找穩定的開源 AI 解決方案 | 普通 | 雖然資源質量高，但可能需要更多的實作指導。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~1 小時 |
+| 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 1 小時學習和 1 小時整合，能快速獲得各種開源 AI 資源，值得採用。
+> 花 2 小時學習，1 小時整合，得到高品質開源 AI 資源，值得。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個專案本身不需要高權限，且不存取敏感資料。使用時需注意外部鏈接的安全性。
+> 低風險：這個工具本身不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
 
 ## 健康度儀表板
 
@@ -329,10 +281,10 @@ https://awesomeosai.com
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 210 |
-| Open Issues | 17 |
-| Issue 解決率 | 39% (11 closed) |
-| 最後推送 | 2026-04-09 |
+| Forks | 212 |
+| Open Issues | 21 |
+| Issue 解決率 | 34% (11 closed) |
+| 最後推送 | 2026-04-10 |
 | 建立日期 | 2026-03-24 |
 | 官方網站 | [Link](https://awesomeosai.com) |
 | Repo 大小 | 1.5 MB |
@@ -342,7 +294,7 @@ https://awesomeosai.com
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@alvinreal](https://github.com/alvinreal) | 73 |
+> | [@alvinreal](https://github.com/alvinreal) | 75 |
 > | [@alvinunreal](https://github.com/alvinunreal) | 52 |
 > | [@paihari](https://github.com/paihari) | 2 |
 > | [@jeheskielSunloy77](https://github.com/jeheskielSunloy77) | 1 |
@@ -350,13 +302,13 @@ https://awesomeosai.com
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新資源列表。
+**社群活躍度**：社群活躍，定期更新和貢獻。
 **連結**：[文件](https://awesomeosai.com)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-08 ~ 2026-04-08）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #160 from alvinreal/research/training-fine-tuning-2026-04-08
+> [!abstract] 最近 10 次 commit（2026-04-08 ~ 2026-04-09）
+> **活躍天數** 2 天 · **最新 commit** Add elite-tier RAG & Knowledge projects (#158)
 
 ## README 摘錄
 
@@ -441,47 +393,43 @@ https://awesomeosai.com
 > ---
 > 
 > 
-> ### 🔍 5. Retrieval-Augmented Generation (RAG) & Knowledge
+> ### 🎨 6. Generative Media Tools
 > 
-> > Retrieval systems, vector databases, embedding models, and related tooling for RAG pipelines.
+> > Open-source models and applications for image, video, audio, and 3D generation and editing.
 > 
-> #### Vector Databases & Search Engines
+> #### Image Generation & Editing
 > 
-> - **[Chroma](https://github.com/chroma-core/chroma)**  - Most popular open-source embedding database.
-> - **[Qdrant](https://github.com/qdrant/qdrant)**  - High-performance vector search engine in Rust.
-> - **[Weaviate](https://github.com/weaviate/weaviate)**  - GraphQL-native vector search engine.
-> - **[Milvus](https://github.com/milvus-io/milvus)**  - Scalable cloud-native vector database.
-> - **[Faiss](https://github.com/facebookresearch/faiss)**  - Similarity search and clustering library for dense vectors with CPU and GPU implementations.
-> - **[LanceDB](https://github.com/lancedb/lancedb)**  - Serverless vector DB optimized for multimodal data.
-> - **[Vespa](https://github.com/vespa-engine/vespa)**  - AI + Data platform with hybrid search (vector + keyword) and real-time indexing at scale. Battle-tested serving billions of queries daily.
-> - **[pgvector](https://github.com/pgvector/pgvector)**  - PostgreSQL extension for vector similarity search.
-> - **[Quickwit](https://github.com/quickwit-oss/quickwit)**  - Cloud-native search engine for observability. Open-source alternative to Datadog, Elasticsearch, Loki, and Tempo with native vector search support.
-> - **[Tantivy](https://github.com/quickwit-oss/tantivy)**  - Full-text search engine library inspired by Apache Lucene and written in Rust. Powers Quickwit and other production search systems.
-> - **[Manticore Search](https://github.com/manticoresoftware/manticoresearch)**  - Easy to use open source fast database for search. Good alternative to Elasticsearch with SQL-like interface and vector search capabilities.
-> - **[OpenSearch](https://github.com/opensearch-project/OpenSearch)**  - Open-source distributed and RESTful search and analytics suite with native vector search. Enterprise-grade fork of Elasticsearch with k-NN plugin for semantic search at scale.
+> - **[ComfyUI](https://github.com/Comfy-Org/ComfyUI)**  - Node-based visual workflow editor for Stable Diffusion, FLUX, etc.
+> - **[Stable Diffusion WebUI Forge - Neo](https://github.com/Haoming02/sd-webui-forge-classic)**  - Actively maintained Forge-based Stable Diffusion web UI with the familiar extension-driven workflow.
+> - **[Fooocus](https://github.com/lllyasviel/Fooocus)**  - Midjourney-style UI with beautiful out-of-the-box results.
+> - **[Diffusers](https://github.com/huggingface/diffusers)**  - PyTorch library for diffusion pipelines spanning image, video, and audio generation.
+> - **[InvokeAI](https://github.com/invoke-ai/InvokeAI)**  - Full-featured creative studio.
+> - **[PowerPaint (OpenMMLab)](https://github.com/open-mmlab/PowerPaint)**  - Versatile image inpainting model supporting text-guided inpainting, object removal, and outpainting (ECCV 2024).
+> - **[SD.Next](https://github.com/vladmandic/sdnext)**  - All-in-one WebUI for AI generative image and video creation with multi-platform support, SDNQ quantization, and balanced CPU/GPU memory offload.
 > 
-> #### Embedding Models
+> #### Video Generation
 > 
-> - **[BGE (FlagEmbedding)](https://github.com/FlagOpen/FlagEmbedding)**  - BAAI's best-in-class embedding family.
-> - **[E5 (Microsoft)](https://github.com/microsoft/unilm)**  - High-performance text embeddings for retrieval.
+> - **[Wan2.2 (Alibaba)](https://github.com/Wan-Video/Wan2.1)**  - Leading open Mixture-of-Experts text-to-video model.
+> - **[HunyuanVideo (Tencent)](https://github.com/Tencent-Hunyuan/HunyuanVideo)**  - 13B-parameter systematic video generation framework. Leading quality among open models.
+> - **[SkyReels V2/V3 (Skywork)](https://github.com/SkyworkAI/SkyReels-V2)**  - First open-source infinite-length film generative model using AutoRegressive Diffusion-Forcing.
+> - **[Mochi 1 (Genmo)](https://github.com/genmoai/mochi)**  - 10B-parameter open video model.
+> - **[LTX-Video (Lightricks)](https://github.com/Lightricks/LTX-Video)**  - Fast native 4K video generation.
+> - **[Stable Video Diffusion (Stability AI)](https://github.com/Stability-AI/generative-models)**  - Official image-to-video and text-to-video implementation within Stability AI's generative models repository.
+> - **[Latte (Vchitect)](https://github.com/Vchitect/Latte)**  - Latent Diffusion Transformer for video generation with state-of-the-art quality (TMLR 2025). Apache 2.0 licensed.
+> - **[Open-Sora-Plan (PKU-YuanGroup)](https://github.com/PKU-YuanGroup/Open-Sora-Plan)**  - Reproduction of Sora with full open-source pipeline for text-to-video generation. MIT licensed.
+> - **[Helios (PKU-YuanGroup)](https://github.com/PKU-YuanGroup/Helios)**  - Efficient long-video generation framework with 24GB VRAM support for up to 10,000 frames (5+ minutes) and 1280×768 resolution. Apache 2.0 licensed.
 > 
-> #### Embedding Benchmarks
+> #### Audio / Music / Voice Generation
 > 
-> - **[MTEB](https://github.com/embeddings-benchmark/mteb)**  - Massive Text Embedding Benchmark covering 1000+ languages and diverse tasks. The industry standard for evaluating and comparing embedding models.
-> 
-> #### RAG Frameworks & Advanced Retrieval Tools
-> 
-> - **[LlamaIndex](https://github.com/run-llama/llama_index)**  - Full-featured RAG pipeline with advanced indexing.
-> - **[Haystack](https://github.com/deepset-ai/haystack)**  - End-to-end NLP and RAG framework.
-> - **[RAGFlow](https://github.com/infiniflow/ragflow)**  - Deep-document-understanding RAG engine.
-> - **[GraphRAG (Microsoft)](https://github.com/microsoft/graphrag)**  - Knowledge-graph-based RAG.
-> - **[Docling](https://github.com/docling-project/docling)**  - Document processing toolkit for turning PDFs and other files into structured data for GenAI workflows.
-> - **[Unstructured](https://github.com/Unstructured-IO/unstructured)**  - Best-in-class document preprocessing.
-> - **[MinerU](https://github.com/opendatalab/MinerU)*
+> - **[AudioCraft / MusicGen (Meta)](https://github.com/facebookresearch/audiocraft)**  - Controllable text-to-music and audio models.
+> - **[ACE-Step 1.5](https://github.com/ace-step/ACE-Step-1.5)**  - Local-first music generation model with broad hardware support across Mac, AMD, Intel, and CUDA devices.
+> - **[Fish Speech](https://github.com/fishaudio/fish-speech)**  - Zero-shot TTS and voice cloning.
+> - **[CosyVoice 2](https://github.com/FunAudioLLM/CosyVoice)**  - Natural multilingual TTS with emotional control.
+> - **[OuteTTS](htt
 
 ## 延伸閱讀
 
-相關概念：[[開源]] · [[機器學習]] · [[AI 模型]]
+相關概念：[[開源]] · [[機器學習]] · [[生成式 AI]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[juliye2025--evil-read-arxiv|juliye2025/evil-read-arxiv]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[mattprusak--autoresearch-genealogy|mattprusak/autoresearch-genealogy]]
 
@@ -501,7 +449,7 @@ https://awesomeosai.com
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "AI/ML" AND file.name != "alvinreal--awesome-opensource-ai"
+> WHERE category = "其他" AND file.name != "alvinreal--awesome-opensource-ai"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -525,7 +473,7 @@ https://awesomeosai.com
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["開源","機器學習","AI 模型"];
+> const concepts = ["開源","機器學習","生成式 AI"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "alvinreal--awesome-opensource-ai" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

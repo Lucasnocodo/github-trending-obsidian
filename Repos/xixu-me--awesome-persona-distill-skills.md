@@ -487,7 +487,7 @@ bun test
 
 相關概念：[[Agent 框架]] · [[自動化]] · [[數位人格]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[sanbuphy--learn-coding-agent|sanbuphy/learn-coding-agent]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[sanbuphy--learn-coding-agent|sanbuphy/learn-coding-agent]] · [[farzaa--clicky|farzaa/clicky]]
 
 [GitHub](https://github.com/xixu-me/awesome-persona-distill-skills)
 

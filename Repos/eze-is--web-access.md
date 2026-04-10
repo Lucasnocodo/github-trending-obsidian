@@ -7,10 +7,10 @@ language: JavaScript
 license: N/A
 description: "给 Claude Code 装上完整联网能力的 skill：三层通道调度 + 浏览器 CDP + 并行分治"
 homepage: ""
-stars: 4373
-stars_per_day: 208
-forks: 301
-open_issues: 15
+stars: 4478
+stars_per_day: 204
+forks: 307
+open_issues: 16
 created: 2026-03-18
 pushed_at: 2026-04-07
 first_seen: 2026-03-25
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-25
-use_case: "為 Claude Code 提供完整的網絡能力，支持多種自動化操作。"
+use_case: "為 Claude Code 提供完整的網路能力，實現自動化瀏覽器操作和多目標並行處理。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 1
 next_review: "2026-04-01"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 56
+issue_close_rate: 54
 repo_size_kb: 70
 readme_length: 3641
 bus_factor: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-25"
-star_history: "2026-03-25:1010,2026-03-25:1026,2026-03-26:1444,2026-03-27:1721,2026-03-29:2026,2026-03-30:2090,2026-03-31:2833,2026-04-01:3170,2026-04-02:3404,2026-04-03:3585,2026-04-04:3726,2026-04-05:3802,2026-04-06:3927,2026-04-07:4085,2026-04-08:4234,2026-04-09:4373"
+star_history: "2026-03-25:1010,2026-03-25:1026,2026-03-26:1444,2026-03-27:1721,2026-03-29:2026,2026-03-30:2090,2026-03-31:2833,2026-04-01:3170,2026-04-02:3404,2026-04-03:3585,2026-04-04:3726,2026-04-05:3802,2026-04-06:3927,2026-04-07:4085,2026-04-08:4234,2026-04-09:4373,2026-04-10:4478"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "web-access"
   - "eze-is/web-access"
-  - "為 Claude Code 提供完整的網絡能力，支持多種自動化操作。"
+  - "為 Claude Code 提供完整的網路能力，實現自動化瀏覽器操作和多目標並行處理。"
 ---
 
 # web-access
 
-**4.4k** stars · **208** stars/天 · 建立 21 天前 · JavaScript · 未標註授權
+**4.5k** stars · **204** stars/天 · 建立 22 天前 · JavaScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/eze-is--web-access");
@@ -69,13 +69,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```
 
 > [!summary] 一句話摘要
-> 為 Claude Code 提供完整的網絡能力，支持多種自動化操作。
+> 為 Claude Code 提供完整的網路能力，實現自動化瀏覽器操作和多目標並行處理。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (208 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 2 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要在 Claude Code 上進行高效網絡操作的開發者和自動化專家。
-> **一句話重點** 這個專案不僅提供了強大的網絡操作能力，還強調了 AI 自主選擇的設計哲學。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (204 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 3 天前) · **貢獻者** 5+ 人 · **參與度** Low
+> **適合** 需要在多平台環境下進行網頁自動化的開發者，特別是需要高效能和靈活性的場景。
+> **一句話重點** 這個專案的創新在於結合了 CDP 瀏覽器操作和多目標並行處理，顯著提升了網頁自動化的效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -98,32 +98,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
-> **結論** 花 3 小時學習，2 小時整合，得到高效的網絡操作能力，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習、10 小時整合，得到高效的網頁自動化能力，值得考慮。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於結合了多種網絡操作工具，實現了靈活的自動化能力。
+> 這個專案結合了 CDP 瀏覽器操作和多目標並行處理的能力，顯著提升了網頁自動化的效率。
 
 ## 專案簡介
 
-這個專案為 Claude Code 增加了完整的網絡能力，通過三層通道調度、CDP 瀏覽器操作和並行分治來實現。用戶可以通過簡單的指令讓 Agent 自動執行網絡任務，例如搜索最新資訊或在社交平台上發佈內容。核心機制是根據場景自動選擇合適的工具（如 WebSearch、curl 或 CDP），並支持多種操作方式，包括 JS 點擊、真實鼠標事件和文件上傳。技術上，這個專案使用 Node.js 22+ 和 Chrome 的遠程調試功能，實現了跨平台支持，並且能在各種操作系統上運行。與其他工具相比，如 0xGF/boneyard 和 AlpinDale/parsync，本專案提供了更靈活的操作方式和更高的自動化程度，特別是在需要處理動態網頁時。
+這個專案的核心機制是將 Claude Code 的網路能力擴展到自動化瀏覽器操作，通過三層通道調度、CDP（Chrome DevTools Protocol）和並行分治來實現。使用者可以透過指令如 `/click` 和 `/setFiles` 來進行網頁操作，這些操作可以根據場景自動選擇使用 WebSearch、WebFetch 或 CDP 等工具。這樣的設計使得 Claude Code 能夠在動態網頁上進行複雜的交互操作，並且能夠根據過去的經驗來優化操作流程。技術上，專案使用 JavaScript 和 Node.js，並依賴 Chrome 的遠端調試功能來實現與瀏覽器的連接，這樣的選擇使得跨平台（Windows、Linux、macOS）支持成為可能。與其他自動化工具相比，如 Puppeteer 或 Selenium，本專案的優勢在於其能夠在同一個代理下並行處理多個目標，並且能夠利用站點經驗來提高操作的可靠性。
 
-使用者可以在多個目標上並行執行任務，並且通過站點經驗積累來提高操作的可靠性。這個專案的設計哲學強調了 AI 自主選擇的能力，讓使用者能夠更有效地利用網絡資源。對於需要進行大量網絡操作的開發者來說，這個工具能顯著提高效率，但在使用社交平台時需謹慎，避免帳號被封禁的風險。整體來看，這是一個成熟且值得信賴的工具，適合各種規模的團隊使用。
+使用者在實際操作中可能會遇到如 WSL2 環境下的連接問題，這需要特別注意。這個專案目前處於活躍開發中，未來可能會持續增加更多的功能和改進。對於需要進行網頁自動化的開發者來說，這是一個值得考慮的選擇，尤其是在需要高效能和靈活性的場景下。適合的使用情境包括需要自動化測試的開發環境或需要從多個網站提取數據的任務，而不建議在對性能要求極高的實時應用中使用。
 
-**技術棧**：`Node.js 22+` · `Chrome CDP`
+**技術棧**：`Node.js 22+` · `JavaScript`
 
 ## 重點功能
 
-- 自動選擇工具 — 根據場景自主選擇 WebSearch、WebFetch、curl、Jina 或 CDP。
-- CDP Proxy 瀏覽器操作 — 直接連接用戶的 Chrome 瀏覽器，支持動態頁面和交互操作。
-- 三種點擊方式 — 支持 JS 點擊、真實鼠標事件和文件上傳，靈活處理各種操作需求。
-- 並行分治 — 在多目標任務中，分發子 Agent 並行執行，提升效率。
-- 站點經驗積累 — 按域名存儲操作經驗，跨 session 共享，提升操作可靠性。
-- 媒體提取 — 從 DOM 中提取圖片或視頻 URL，支持任意時間點截帧分析。
+- 自動選擇工具 — 根據場景自動選擇 WebSearch、WebFetch、curl、Jina 或 CDP。
+- CDP Proxy 瀏覽器操作 — 直連 Chrome，支持動態頁面和交互操作。
+- 三種點擊方式 — 包括 JS click、真實鼠標事件和文件上傳。
+- 並行分治 — 多目標時分發子 Agent 並行執行，支持 tab 隔離。
+- 站點經驗積累 — 按域名存儲操作經驗，跨 session 复用。
+- 媒體提取 — 從 DOM 直接提取圖片/視頻 URL，或對視頻截帧分析。
 
 ## 快速開始
 
-1. 自動安裝 Skill
+1. 自動安裝此技能
 ```bash
 帮我安装这个 skill：https://github.com/eze-is/web-access
 ```
@@ -139,63 +139,68 @@ git clone https://github.com/eze-is/web-access ~/.claude/skills/web-access
 ## 程式碼範例
 
 ```js
-[
-  "# 前置條件：需要 Node.js 22+ 和 Chrome 開啟遠程調試；",
-  "node \"${CLAUDE_SKILL_DIR}/scripts/cdp-proxy.mjs\" &",
-  "# 預期輸出：啟動 CDP Proxy，並可通過 HTTP API 進行操作。"
-]
+{
+  "前置條件": "需要 Node.js 22+ 和 Chrome 開啟遠程調試",
+  "指令": "curl -s -X POST \"http://localhost:3456/click?target=ID\" -d 'button.submit'",
+  "預期輸出": "觸發按鈕的點擊事件"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 21 天內累積 4373 stars（208/天），forks 301（6.9%），顯示出穩定的增長趨勢。作者 EzeW 及其團隊在開源社區有一定的影響力，之前的專案也獲得了良好的反響。這個專案解決了 Claude Code 在網絡操作上的不足，提供了一個更完整的解決方案，特別是在自動化和多任務處理方面。社群對於這個專案的反應積極，尤其是對於 Firefox 支持的需求，顯示出使用者對於功能擴展的期待。技術上，這個專案的出現是因為現有的網絡操作工具無法滿足高效能和靈活性的需求，尤其是在處理動態內容時。forks/stars 比率在中等範圍，顯示出不少使用者在實際修改和使用這個工具。
+> 建立 22 天內累積 4478 stars（204/天），forks 307（6.9%），顯示出穩定的增長。作者 EzeW 和其團隊在開源社群中有一定的影響力，之前也有多個成功的專案。這個專案解決了現有自動化工具在調度策略和瀏覽器操作上的不足，特別是在需要多目標並行處理的場景中。社群的需求和討論也促進了這個專案的發展，尤其是在 GitHub Issues 中的活躍討論。技術上，CDP 的使用使得這個工具在瀏覽器自動化方面具有更高的靈活性和效率，這在過去的工具中是較少見的。forks/stars 比率為 6.9%，顯示出不少使用者對這個專案進行了實際的修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Claude Code 上進行高效網絡操作的開發者和自動化專家。
+**目標受眾**：需要在多平台環境下進行網頁自動化的開發者，特別是需要高效能和靈活性的場景。
 
 > [!example] 使用場景
-> - 後端工程師用它來自動化網頁數據抓取，因為能夠靈活選擇合適的工具來處理不同的網頁結構。
-> - 產品經理用它來快速調研競爭對手的網站，因為可以同時在多個網站上執行任務，節省時間。
-> - 社交媒體經營者用它來自動發佈內容到多個平台，因為支持的 CDP 瀏覽器操作能夠保持登入狀態，避免重複登入的麻煩。
+> - 前端工程師用它來自動化測試動態網頁，因為它支持多種操作方式並能夠根據場景自動選擇工具。
+> - 數據科學家用它來從多個網站提取數據，因為它的並行處理能力能顯著提高數據抓取效率。
+> - DevOps 工程師用它來監控和測試應用的網頁介面，因為它能夠利用過去的站點經驗來提高測試的可靠性。
 
 ## 架構分析
 
-這個專案的架構基於 Node.js 和 Chrome 的 CDP，選擇這種方式是因為它能夠直接操作用戶的瀏覽器，提供更高的靈活性和性能。資料流中，使用者的請求經由 CDP Proxy 轉發到 Chrome，並通過 HTTP API 進行操作。這樣的設計使得操作可以在多個 tab 之間隔離，並且能夠同時處理多個請求。選擇 Node.js 是因為其非同步特性能夠有效處理高併發的請求，但這也帶來了對於 Node.js 環境的依賴。擴展性方面，這個架構能夠支持多種操作，但在處理大量請求時可能會遇到性能瓶頸，特別是在網絡延遲較高的情況下。
+這個專案的架構基於 Node.js，使用 CDP 來實現與 Chrome 瀏覽器的連接。選擇 Node.js 是因為其在處理 I/O 密集型操作時的高效能，並且能夠輕鬆實現跨平台支持。資料流方面，使用 WebSocket 來與 Chrome 進行實時通訊，這樣的設計使得操作能夠即時反饋。
+
+選擇 CDP 而非傳統的 HTTP API 是因為 CDP 提供了更細緻的控制和更高的操作靈活性。這樣的設計雖然增加了初期的學習成本，但在長期使用中能夠顯著提高自動化的效率。隨著使用者數量的增加，可能會面臨性能瓶頸，特別是在高併發的情況下，這需要進一步的優化和擴展。
+
+整體而言，這個架構能夠支持多種使用場景，並且在未來的發展中有良好的擴展性。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於 Node.js 和 Chrome 的 CDP，通過 WebSocket 直連 Chrome 瀏覽器，實現了高效的網頁操作。使用者的請求被轉換為 HTTP API 調用，這樣的設計使得操作可以在多個 tab 之間進行隔離，並且支持多種操作方式，如 JS 點擊和真實鼠標事件。效能方面，這個專案能夠處理多個並行請求，但在高併發情況下可能會遇到性能瓶頸，特別是在網絡延遲較高的情況下。選擇 Node.js 是因為其非同步特性能夠有效處理高併發的請求，但這也帶來了對於 Node.js 環境的依賴。技術風險方面，使用 CDP 操作社交平台可能會導致帳號被封禁，這是使用者需要特別注意的問題。整合方面，這個工具可以輕鬆融入現有的開發流程，與主流的 CI/CD 工具兼容良好，並且能夠與各種 IDE 進行整合，降低了學習成本。
+專案的核心技術機制是基於 Chrome DevTools Protocol (CDP)，這使得它能夠直接與 Chrome 瀏覽器進行通訊，實現高效的自動化操作。使用者可以透過 HTTP API 進行各種操作，如點擊、截圖和文件上傳，這些操作都能夠即時反饋。效能方面，由於使用了並行處理的設計，專案能夠在多目標的情境下顯著提高執行效率，這在傳統的單一任務自動化工具中是難以實現的。設計上選擇 Node.js 是因為其在 I/O 密集型任務中的優勢，並且能夠輕鬆實現跨平台支持。這樣的選擇雖然增加了初期的學習成本，但長期來看能夠顯著提高自動化的效率。技術風險方面，隨著使用者數量的增加，可能會面臨性能瓶頸，特別是在高併發的情況下，這需要進一步的優化和擴展。整合方面，這個工具能夠與現有的 CI/CD pipeline 相容，並且能夠與主流的開發工具鏈進行整合，這使得它在實際使用中具有良好的適應性。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和使用範例。安裝過程相對順暢，但需要注意 Node.js 環境的版本要求。文件中有多語言支持，方便不同語言的使用者理解。整體來說，花 30 分鐘能夠順利運行起來。
+> README 文件提供了清晰的安裝步驟和使用範例，對於新手來說相對友好。安裝過程順暢，但需要注意環境配置，特別是 Chrome 的遠程調試設置。文件有多語言支持，能夠幫助不同語言的使用者快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 靈活的工具選擇，能根據場景自動選擇合適的網絡操作工具。
-> - 支持多種操作方式，能夠處理動態網頁和複雜的用戶交互。
-> - 具備並行處理能力，能夠同時執行多個任務，提升效率。
+> - 支持多種操作方式，靈活性高。
+> - 能夠在多目標環境下進行並行處理，效率提升。
+> - 具備站點經驗積累功能，能夠提高操作的可靠性。
 
 > [!danger] 缺點
-> - 需要較新的 Node.js 環境，對於舊系統的兼容性較差。
-> - 使用 CDP 操作社交平台存在帳號被封禁的風險，需謹慎使用。
-> - 在某些情況下，平台返回的錯誤提示可能不準確，增加了使用的複雜性。
+> - 需要較高的學習成本，特別是對於新手。
+> - 在某些環境下可能會遇到連接問題。
+> - 對於特殊網站的支持可能不夠完善。
 
 > [!warning] 注意事項
-> - 需要 Node.js 22+ 環境，無法在舊版本運行。
-> - 使用 CDP 操作社交平台存在帳號被限流或封禁的風險。
-> - 在某些情況下，平台返回的錯誤提示可能不準確，需謹慎處理。
+> - 僅支援 Node.js 22+。
+> - 需要 Chrome 開啟遠程調試，可能需要重啟瀏覽器。
+> - 在 WSL2 環境下可能會遇到連接問題。
+> - 不支持某些特殊的網站結構，可能需要手動調整操作。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的網絡操作能力，但缺乏自動選擇工具的靈活性和多任務處理功能。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步，無法提供瀏覽器自動化操作，適合不同的使用場景。 |
+| [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) | Puppeteer 提供了強大的瀏覽器自動化能力，但不支持多目標並行處理，適合單一任務的自動化。 |
+| [selenium/selenium](https://github.com/selenium/selenium) | Selenium 是一個成熟的自動化測試框架，但其配置較為繁瑣，且性能不如本專案的並行處理能力。 |
 
 ## 替代方案決策
 
@@ -203,16 +208,16 @@ git clone https://github.com/eze-is/web-access ~/.claude/skills/web-access
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的網絡操作能力，但缺乏自動選擇工具的靈活性和多任務處理功能。 | 如果你的需求主要是簡單的網絡請求，而不需要複雜的自動化操作，可以考慮這個工具。 | medium，因為需要重新調整操作邏輯。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於文件同步，無法提供瀏覽器自動化操作，適合不同的使用場景。 | 如果你的主要需求是文件同步而非網頁操作，這個工具會更合適。 | low，因為主要功能不同，遷移成本較低。 |
+| [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) | Puppeteer 提供了強大的瀏覽器自動化能力，但不支持多目標並行處理，適合單一任務的自動化。 | 如果你的任務主要是針對單一網站的自動化測試，Puppeteer 可能是更簡單的選擇。 | medium，因為需要重新設計多目標處理的邏輯。 |
+| [selenium/selenium](https://github.com/selenium/selenium) | Selenium 是一個成熟的自動化測試框架，但其配置較為繁瑣，且性能不如本專案的並行處理能力。 | 如果你的團隊已經在使用 Selenium，且不需要並行處理的能力，則可以繼續使用。 | high，因為需要重新設計整個自動化流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **web-access** | **boneyard** | **parsync** |
+> | 維度 | **web-access** | **puppeteer** | **selenium** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供類似的網絡操作能力，但缺乏自動選擇工具的靈活性和多任務處理功能。 | 專注於文件同步，無法提供瀏覽器自動化操作，適合不同的使用場景。 |
-> | 遷移成本 | - | medium，因為需要重新調整操作邏輯。 | low，因為主要功能不同，遷移成本較低。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是簡單的網絡請求，而不需要複雜的自動化操作， | 如果你的主要需求是文件同步而非網頁操作，這個工具會更合適。 |
+> | 技術路線 | 本專案 | Puppeteer 提供了強大的瀏覽器自動化能力，但不支持多目標並行處理，適合單一任務的自動化。 | Selenium 是一個成熟的自動化測試框架，但其配置較為繁瑣，且性能不如本專案的並行處理能力。 |
+> | 遷移成本 | - | medium，因為需要重新設計多目標處理的邏輯。 | high，因為需要重新設計整個自動化流程。 |
+> | 適用場景 | 主要場景 | 如果你的任務主要是針對單一網站的自動化測試，Puppetee | 如果你的團隊已經在使用 Selenium，且不需要並行處理的 |
 
 ## 成熟度評估
 
@@ -223,44 +228,43 @@ git clone https://github.com/eze-is/web-access ~/.claude/skills/web-access
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人或小型專案試用，但不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些平台上操作可能會導致帳號被限流或封禁
-  - 解法：強烈建議使用小號進行操作
-- [MEDIUM] 平台返回的錯誤提示可能不準確
-  - 解法：需謹慎處理，並考慮可能的訪問方式問題
-- [MEDIUM] 在高併發情況下可能會遇到性能瓶頸
-  - 解法：適當控制請求數量，避免一次性發送過多請求
+- **[HIGH]** 在 WSL2 環境下可能會遇到連接問題
+  - 解法：檢查 WebSocket 路徑設置，確保 UUID 正確
+- [MEDIUM] 某些網站的操作可能需要手動調整
+  - 解法：根據網站特性調整操作邏輯
+- [MEDIUM] 在使用過程中可能會遇到性能瓶頸
+  - 解法：優化並行處理的設計，減少同時操作的數量
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠靈活處理多種網絡請求，提升開發效率。 |
-| 大型企業的核心業務系統 | 不適合 | 目前處於 beta 階段，穩定性不足。 |
-| 需要快速原型開發的團隊 | 適合 | 提供了強大的自動化能力，能快速實現需求。 |
-| 需要高頻率網絡操作的應用 | 普通 | 在高併發情況下可能會遇到性能瓶頸。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠快速實現網頁自動化，提升開發效率。 |
+| 大型企業的自動化測試 | 普通 | 雖然支持並行處理，但可能需要額外的性能優化。 |
+| 需要高性能的即時應用 | 不適合 | 在高併發情況下可能會面臨性能瓶頸。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~3 小時 |
-| 整合時間 | ~2 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，2 小時整合，得到高效的網絡操作能力，值得投入。
+> 花 5 小時學習、10 小時整合，得到高效的網頁自動化能力，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 這個工具需要訪問用戶的瀏覽器，存在一定的安全風險，特別是在操作社交平台時，建議使用小號進行測試。
+> 低風險：專案本身不需要高權限，主要依賴於 Chrome 的遠程調試功能，不會存取敏感資料。依賴鏈的信任程度較高，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -325,9 +329,9 @@ git clone https://github.com/eze-is/web-access ~/.claude/skills/web-access
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 301 |
-| Open Issues | 15 |
-| Issue 解決率 | 56% (19 closed) |
+| Forks | 307 |
+| Open Issues | 16 |
+| Issue 解決率 | 54% (19 closed) |
 | 最後推送 | 2026-04-07 |
 | 建立日期 | 2026-03-18 |
 | Repo 大小 | 70 KB |
@@ -344,8 +348,8 @@ git clone https://github.com/eze-is/web-access ~/.claude/skills/web-access
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新，回應速度良好。
-**連結**：[文件](https://mp.weixin.qq.com/s/rps5YVB6TchT9npAaIWKCw)
+**社群活躍度**：社群活躍，定期更新和回應問題。
+**連結**：[文件](https://github.com/eze-is/web-access)
 
 ## 開發動態
 
@@ -358,6 +362,7 @@ git clone https://github.com/eze-is/web-access ~/.claude/skills/web-access
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#27](https://github.com/eze-is/web-access/issues/27) | firefox 支持 | 1 | 0 |
+> | [#53](https://github.com/eze-is/web-access/issues/53) | CDP Proxy fails to connect in WSL2: missing UUID in WebSocke | 0 | 0 |
 > | [#52](https://github.com/eze-is/web-access/issues/52) | 感谢 web-access 给 use-my-browser 带来的灵感 | 0 | 0 |
 > | [#49](https://github.com/eze-is/web-access/issues/49) | Add actionbook as a browsing provider | 0 | 0 |
 
@@ -507,7 +512,7 @@ git clone https://github.com/eze-is/web-access ~/.claude/skills/web-access
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[瀏覽器自動化]] · [[API 設計]]
+相關概念：[[自動化測試]] · [[瀏覽器自動化]] · [[多模態]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]]
 
@@ -551,7 +556,7 @@ git clone https://github.com/eze-is/web-access ~/.claude/skills/web-access
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","瀏覽器自動化","API 設計"];
+> const concepts = ["自動化測試","瀏覽器自動化","多模態"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "eze-is--web-access" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

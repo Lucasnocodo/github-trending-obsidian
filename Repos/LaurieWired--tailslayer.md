@@ -7,7 +7,7 @@ language: C++
 license: Apache-2.0
 description: "Library for reducing tail latency in RAM reads"
 homepage: ""
-stars: 1667
+stars: 1668
 stars_per_day: 417
 forks: 90
 open_issues: 12
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-10
-use_case: "減少 RAM 讀取中的尾延遲，提升效能。"
+use_case: "減少 RAM 讀取中的尾延遲，解決 DRAM 刷新造成的延遲問題。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-10"
-star_history: "2026-04-10:1667"
+star_history: "2026-04-10:1667,2026-04-10:1668"
 tags:
   - github
   - "category/開發工具"
@@ -50,7 +50,7 @@ tags:
 aliases:
   - "tailslayer"
   - "LaurieWired/tailslayer"
-  - "減少 RAM 讀取中的尾延遲，提升效能。"
+  - "減少 RAM 讀取中的尾延遲，解決 DRAM 刷新造成的延遲問題。"
 ---
 
 # tailslayer
@@ -71,13 +71,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> 減少 RAM 讀取中的尾延遲，提升效能。
+> 減少 RAM 讀取中的尾延遲，解決 DRAM 刷新造成的延遲問題。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (417 stars/day)
 > **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在高性能計算環境中優化 RAM 讀取延遲的系統工程師或開發者。
-> **一句話重點** Tailslayer 的設計讓 RAM 讀取延遲的優化成為可能，這在高性能計算中至關重要。
+> **適合** 需要在高性能計算環境中減少 RAM 讀取延遲的系統開發者。
+> **一句話重點** Tailslayer 的設計不僅是針對延遲優化，更是對多核處理器性能的深度挖掘。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -100,27 +100,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，能夠顯著提升 RAM 讀取性能，值得考慮。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~8h · **綁定風險** medium
+> **結論** 花 8 小時學習，4 小時整合，能夠顯著提升 RAM 讀取性能，值得考慮。
 
 > [!abstract] 核心創新
-> Tailslayer 利用未公開的通道打亂偏移來減少 DRAM 刷新造成的延遲。
+> 透過多通道數據複製和不相關的刷新計劃，顯著減少 RAM 讀取的尾延遲。
 
 ## 專案簡介
 
-Tailslayer 是一個 C++ 庫，專注於減少 RAM 讀取中的尾延遲，這主要是由於 DRAM 刷新停頓造成的。它透過在多個獨立的 DRAM 通道中複製數據，並使用不相關的刷新計劃來達成這一目標。當請求到達時，Tailslayer 會在所有副本之間發出 hedged 讀取，從而優先處理最先回應的結果。這種設計使得在高延遲環境中讀取操作的性能大幅提升，特別是在多核處理器上。使用者只需提供信號函數和最終處理函數作為模板參數，便可輕鬆集成到現有項目中。這個庫目前支持兩個通道，未來將擴展至多通道使用，並提供了基準測試以評估性能。Tailslayer 的核心賣點在於其能有效減少因 DRAM 刷新造成的延遲，這在高性能計算和實時應用中尤為重要。
+Tailslayer 是一個 C++ 庫，專注於減少因 DRAM 刷新停頓而造成的尾延遲。它透過在多個獨立的 DRAM 通道中複製數據，並使用不相關的刷新計劃來實現，這樣在接收到請求時，Tailslayer 可以同時發出多個讀取請求，並選擇最先回應的結果。這種設計的賣點在於能夠顯著降低延遲，特別是在高頻率讀取的場景中。使用者需要提供一個信號函數來決定何時讀取，以及一個最終處理函數來處理讀取的值，這樣可以靈活地適應不同的應用需求。核心功能是 `HedgedReader` 類別，能夠在多個通道上進行讀取，並且每個副本都被固定在不同的核心上運行，這樣可以提高並行處理的效率。這個庫目前支持兩個通道的使用，但未來計劃擴展到 N-way 的支持。這種設計的好處在於能夠利用多核處理器的優勢，減少因單一通道延遲造成的影響。
 
-它的實作依賴於 C++17，並使用了多線程技術來確保每個副本在獨立核心上運行，這樣可以最大化資源利用率。與其他工具相比，Tailslayer 的設計更專注於硬體層面的優化，而非單純的軟體調整。這使得它在處理高頻繁讀取請求時表現出色，尤其是在需要低延遲的場景中。使用者可能會遇到的問題包括對於特定硬體的兼容性，及其對於多通道配置的支持程度。這個專案目前仍在活躍開發中，未來可能會增加更多功能和優化。對於需要在高性能環境中運行的應用來說，Tailslayer 是一個值得考慮的選擇。
-
-**技術棧**：`C++ 17` · `CMake`
+**技術棧**：`C++17` · `CMake` · `pthread`
 
 ## 重點功能
 
-- 多通道數據複製 — 利用不相關的刷新計劃在多個 DRAM 通道中複製數據，減少延遲。
-- Hedged 讀取 — 在所有副本之間發出讀取請求，優先處理最先回應的結果。
-- 模板參數化 — 使用者可以自定義信號函數和最終處理函數，靈活適應不同場景。
-- 支持多核心 — 每個副本被固定到獨立核心，最大化資源利用率。
-- 基準測試支持 — 提供基準測試工具以評估 DRAM 刷新行為和性能。
+- 多通道數據複製 — 支持在多個 DRAM 通道上複製數據，減少延遲。
+- HedgedReader 類別 — 提供靈活的讀取和處理方式，支持自定義信號和處理函數。
+- 核心固定 — 每個副本被固定在不同的核心上運行，提高並行處理效率。
+- 支持模板參數 — 允許用戶自定義數據類型和函數參數。
+- 簡單的構建過程 — 使用 CMake 進行構建，便於集成到現有項目中。
 
 ## 快速開始
 
@@ -132,11 +130,11 @@ git clone https://github.com/LaurieWired/tailslayer.git
 ```bash
 cd tailslayer
 ```
-3. 編譯範例程式
+3. 構建示例
 ```bash
 make
 ```
-4. 執行範例程式
+4. 運行示例
 ```bash
 ./tailslayer_example
 ```
@@ -145,63 +143,65 @@ make
 
 ```cpp
 {
-  "前置條件": "需要包含 tailslayer 的頭檔",
-  "程式碼": "#include <tailslayer/hedged_reader.hpp>\n\n[[gnu::always_inline]] inline std::size_t my_signal() {\n    return index_to_read;\n}\n\ntemplate <typename T>\n[[gnu::always_inline]] inline void my_work(T val) {\n    // Use the value\n}\n\nint main() {\n    using T = uint8_t;\n    tailslayer::HedgedReader<T> reader{};\n    reader.insert(0x43);\n    reader.insert(0x44);\n    reader.start_workers();\n}",
-  "預期輸出": "在多個通道中進行的 RAM 讀取，並返回最先回應的結果。"
+  "前置條件": "需要包含 tailslayer 的頭文件",
+  "程式碼": "#include <tailslayer/hedged_reader.hpp>\n\n[[gnu::always_inline]] inline std::size_t my_signal() {\n    return index_to_read;\n}\n\ntemplate <typename T>\n[[gnu::always_inline]] inline void my_work(T val) {\n    // Use the value\n}\n\nint main() {\n    using T = uint8_t;\n    tailslayer::pin_to_core(tailslayer::CORE_MAIN);\n\n    tailslayer::HedgedReader<T> reader{};\n    reader.insert(0x43);\n    reader.insert(0x44);\n    reader.start_workers();\n}",
+  "預期輸出": "讀取的值將被處理，具體取決於 my_work 函數的實現。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 1667 stars（417/天），forks 90（5.4%），這顯示出其在開發者社群中的快速增長。LaurieWired 是這個專案的主要貢獻者，過去在相關領域有一定的經驗。這個專案解決了 DRAM 刷新導致的延遲問題，這在高性能計算中是一個普遍的痛點。之前的解決方案往往無法有效處理多通道的複雜性，而 Tailslayer 則利用了未公開的通道打亂偏移來實現更高效的數據讀取。社群的反應熱烈，尤其是針對其在 Linux 核心中的應用討論。這個專案的成功也反映了對於低延遲計算需求的增長，尤其是在多核處理器的普及下。
+> 建立 4 天內累積 1668 stars（417/天），forks 90（5.4%），這顯示出其在社群中的快速增長。LaurieWired 是該專案的主要貢獻者，過去在相關領域有一定的經驗。這個專案解決了 DRAM 刷新造成的延遲問題，這在高性能計算和即時應用中是個常見的痛點。近期的討論和反饋顯示出使用者對於其實用性和性能的高度關注，特別是在高頻讀取的應用場景中。這樣的需求使得 Tailslayer 成為一個有吸引力的解決方案。
 
 ## 適合誰使用
 
-**目標受眾**：需要在高性能計算環境中優化 RAM 讀取延遲的系統工程師或開發者。
+**目標受眾**：需要在高性能計算環境中減少 RAM 讀取延遲的系統開發者。
 
 > [!example] 使用場景
-> - 系統工程師用它來優化伺服器的 RAM 讀取性能，因為 Tailslayer 能有效減少由 DRAM 刷新造成的延遲，提升整體系統響應速度。
-> - 高頻交易開發者用它來降低交易延遲，因為在金融市場中，毫秒的延遲都可能導致重大損失，Tailslayer 提供了必要的性能優化。
-> - 遊戲開發者用它來提升即時遊戲的數據讀取速度，因為遊戲中的快速反應要求極低的延遲，Tailslayer 能夠支持這種需求。
+> - 高頻交易工程師用它來減少交易系統中的延遲，因為每毫秒的延遲都可能造成巨大的經濟損失。
+> - 遊戲開發者用它來優化遊戲伺服器的讀取速度，因為玩家對於即時反應的需求非常高。
+> - 數據科學家用它來加速大數據分析中的數據讀取過程，因為傳統的讀取方式常常造成瓶頸。
 
 ## 架構分析
 
-Tailslayer 使用了多通道的 DRAM 結構，並透過複製數據來降低延遲。其核心架構是基於 C++ 的多線程設計，確保每個副本在獨立核心上運行。這樣的設計使得在高頻繁的讀取請求中能夠有效分散負載，減少單一通道的壅塞。選擇 C++ 是因為其性能優越，適合底層硬體操作，但這也使得學習曲線相對較陡。擴展性方面，未來可能會增加對更多通道的支持，但目前的實作仍然依賴於特定的硬體配置，這可能會限制其普遍適用性。
+Tailslayer 採用 C++ 的介面設計，通過 `HedgedReader` 類別來實現多通道數據的複製和讀取。這種設計使得每個副本可以在不同的核心上運行，從而提高並行處理的效率。資料流方面，使用者提供的信號函數決定何時發起讀取請求，而最終的處理函數則在讀取完成後執行。
+
+這樣的設計使得系統能夠在高頻率讀取的情況下，減少因單一通道延遲造成的影響。選擇 C++ 是因為其性能優越，能夠直接操作硬體資源，但這也帶來了較高的學習曲線和潛在的錯誤風險。整體架構的擴展性良好，但在實現多通道支持時可能需要考慮硬體的兼容性和性能瓶頸。
 
 ## 技術深入分析
 
-Tailslayer 的核心技術機制在於其多通道的 DRAM 結構，這使得它能夠在不同的通道上進行數據複製，從而減少因 DRAM 刷新造成的延遲。它使用了 C++ 的多線程設計，確保每個副本在獨立核心上運行，這樣可以有效分散負載，降低單一通道的壅塞。效能方面，這個庫的設計使得它能夠在高頻繁的讀取請求中保持較低的延遲，特別是在需要實時反應的場景中。選擇 C++ 作為開發語言是因為其性能優越，但這也意味著使用者需要具備一定的編程基礎。設計上的取捨包括了對硬體的依賴，這可能會限制其在不同環境中的適用性。技術風險方面，隨著使用者數量的增加，可能會面臨更多的兼容性問題，特別是在不同品牌的 DRAM 上。整合方面，這個工具與主流的 C++ 開發環境相容良好，但對於新手來說，學習曲線可能較陡。
+Tailslayer 的核心技術在於其使用的 `HedgedReader` 類別，這個類別能夠在多個 DRAM 通道上進行數據複製，並通過不相關的刷新計劃來減少延遲。這種設計使得在高頻率讀取的場景中，能夠同時發起多個讀取請求，並選擇最先回應的結果。效能方面，這樣的設計能夠顯著降低因單一通道延遲造成的影響，尤其是在需要快速響應的應用中。選擇 C++ 作為開發語言是因為其性能優越，能夠直接操作硬體資源，但這也使得學習曲線相對較高。依賴關係方面，使用 CMake 和 pthread 使得整合到現有項目中相對簡單，但對於不熟悉這些技術的開發者來說，仍然需要一定的學習時間。技術風險方面，未來的擴展可能會受到硬體兼容性的限制，特別是在多通道支持方面。整體來看，這個專案在性能優化上具有很大的潛力，但也需要考慮到使用者的技術背景和硬體環境。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的使用範例和安裝指導，讓新手能夠快速上手。安裝過程相對順暢，但對於 C++ 的要求可能會讓一些使用者感到困難。文件中未提供多語言支持，主要以英文為主。整體而言，花 30 分鐘能夠完成基本的安裝和使用。
+> README 文件提供了清晰的使用說明和範例，安裝過程相對順暢，但對於新手來說可能需要一些時間來理解其設計理念。整體來說，花 30 分鐘應該能夠成功運行起來，但對於不熟悉 C++ 的開發者來說，可能會遇到一些挑戰。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 有效減少 DRAM 刷新延遲，提升 RAM 讀取性能。
-> - 支持多核心運行，最大化資源利用率。
-> - 靈活的模板設計，適應不同的使用場景。
+> - 顯著減少 RAM 讀取延遲，特別是在高頻率讀取場景中。
+> - 靈活的設計，支持用戶自定義信號和處理函數。
+> - 良好的多核支持，能夠充分利用現代處理器的性能。
 
 > [!danger] 缺點
-> - 目前僅支持兩個通道，未來版本尚未確定。
-> - 對於不同硬體的兼容性可能存在問題。
-> - 需要一定的 C++ 知識才能有效使用。
+> - 目前僅支持兩個通道，未來版本的擴展性尚未明確。
+> - 需要較高的技術門檻，對新手不太友好。
+> - 可能需要針對特定硬體進行調整，增加了使用的複雜性。
 
 > [!warning] 注意事項
-> - 目前僅支持兩個通道，未來版本將擴展至多通道。
-> - 需要 C++17 支持，舊版本的編譯器可能無法使用。
-> - 對於特定硬體的兼容性可能存在問題，特別是在不同品牌的 DRAM 上。
+> - 目前僅支持兩個通道，未來版本將擴展至 N-way。
+> - 需要在支持的硬體上運行，可能不兼容某些舊型號的 DRAM。
+> - 使用時需要小心信號函數的實現，以避免不必要的延遲。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 專注於低延遲的資料庫查詢，而 Tailslayer 更專注於 RAM 讀取延遲的優化。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 提供了並行數據傳輸的功能，但不專注於 DRAM 刷新延遲的問題，適用場景不同。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 主要用於數據隱私和安全，而 Tailslayer 專注於性能優化，兩者的核心目標不同。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的性能優化功能，但主要針對存儲系統的延遲問題。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於並行數據傳輸，適合需要高效能網絡傳輸的場景。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 針對虛擬化環境中的數據延遲進行優化，與 Tailslayer 的硬體優化有所不同。 |
 
 ## 替代方案決策
 
@@ -209,16 +209,16 @@ Tailslayer 的核心技術機制在於其多通道的 DRAM 結構，這使得它
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 主要專注於低延遲的資料庫查詢，而 Tailslayer 則專注於 RAM 讀取延遲的優化，兩者的技術路線有所不同。 | 如果你的應用場景主要是資料庫查詢，Boneyard 可能更適合，因為它專注於查詢性能。 | medium，因為兩者的 API 和使用方式有一定差異。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 提供了並行數據傳輸的功能，但不專注於 DRAM 刷新延遲的問題，適用場景不同。 | 如果你的需求是並行數據傳輸而非 RAM 讀取優化，Parsync 會是更好的選擇。 | low，因為其 API 設計較為簡單，易於上手。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於存儲系統的延遲優化，使用不同的技術路線來解決類似問題。 | 如果你的系統主要面臨存儲延遲問題，而非 RAM 讀取延遲，則應選擇它。 | medium，因為需要調整整體架構以適應不同的優化策略。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於並行數據傳輸，適合需要高效能網絡傳輸的場景。 | 如果你的應用主要依賴於網絡性能而非內部 RAM 讀取，則應選擇它。 | low，因為它的設計理念與 Tailslayer 相似，易於整合。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **tailslayer** | **boneyard** | **parsync** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Boneyard 主要專注於低延遲的資料庫查詢，而 Tailslayer 則專注於 RAM 讀取延遲的優化，兩者的技術路線有所不同。 | Parsync 提供了並行數據傳輸的功能，但不專注於 DRAM 刷新延遲的問題，適用場景不同。 |
-> | 遷移成本 | - | medium，因為兩者的 API 和使用方式有一定差異。 | low，因為其 API 設計較為簡單，易於上手。 |
-> | 適用場景 | 主要場景 | 如果你的應用場景主要是資料庫查詢，Boneyard 可能更適 | 如果你的需求是並行數據傳輸而非 RAM 讀取優化，Parsy |
+> | 技術路線 | 本專案 | 專注於存儲系統的延遲優化，使用不同的技術路線來解決類似問題。 | 專注於並行數據傳輸，適合需要高效能網絡傳輸的場景。 |
+> | 遷移成本 | - | medium，因為需要調整整體架構以適應不同的優化策略。 | low，因為它的設計理念與 Tailslayer 相似，易於整合。 |
+> | 適用場景 | 主要場景 | 如果你的系統主要面臨存儲延遲問題，而非 RAM 讀取延遲，則 | 如果你的應用主要依賴於網絡性能而非內部 RAM 讀取，則應選 |
 
 ## 成熟度評估
 
@@ -229,41 +229,49 @@ Tailslayer 的核心技術機制在於其多通道的 DRAM 結構，這使得它
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合進行實驗和測試，但不建議在生產環境中使用。
+> 適合個人實驗和測試，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些硬體上可能會遇到兼容性問題，特別是不同品牌的 DRAM。
-  - 解法：在使用前檢查硬體兼容性，或考慮使用相同品牌的 DRAM。
-- [MEDIUM] 使用時可能需要調整信號函數以適應不同的應用場景。
-  - 解法：參考範例程式碼進行調整，或尋求社群的幫助。
+- **[HIGH]** 在某些硬體上可能無法正常運行，特別是舊型號的 DRAM。
+  - 解法：確保使用支持的硬體，並進行充分測試。
+- [MEDIUM] 信號函數的實現不當可能導致延遲增加。
+  - 解法：仔細設計信號函數，並進行性能測試。
+- [MEDIUM] 多通道支持尚未完全實現，可能會影響性能。
+  - 解法：關注未來版本的更新，並根據需求調整使用策略。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 高頻交易系統 | 非常適合 | 因為其能有效減少延遲，提升交易反應速度。 |
-| 即時遊戲開發 | 適合 | 因為遊戲中的快速反應要求低延遲，Tailslayer 能夠支持這種需求。 |
-| 一般伺服器應用 | 普通 | 雖然能提升性能，但對於不需要極低延遲的應用可能效果有限。 |
+| 高頻交易系統 | 非常適合 | 能夠顯著減少交易延遲，提升交易效率。 |
+| 遊戲伺服器 | 適合 | 能夠提高伺服器的即時反應能力，改善玩家體驗。 |
+| 大數據分析 | 普通 | 在某些情況下可能無法顯著提升性能，依賴於具體的數據讀取模式。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~8 小時 |
+| 整合時間 | ~4 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，能夠顯著提升 RAM 讀取性能，值得考慮。
+> 花 8 小時學習，4 小時整合，能夠顯著提升 RAM 讀取性能，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：此工具不需要高權限，且不存取敏感資料，但使用者應注意其對硬體的依賴性。
+> 低風險：該工具不需要高權限操作，且不會存取敏感資料，但使用時仍需注意硬體的兼容性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Tailslayer 最常與高性能計算框架搭配使用，特別是在需要快速數據讀取的應用中。它可以與 CMake 工具鏈無縫整合，並且能夠在多核環境中運行。實際整合範例中，可以在一個使用 CMake 的專案中，將 Tailslayer 作為一個庫引入，並在主程式中使用其提供的 `HedgedReader` 類別進行數據讀取。與主流 CI 工具（如 GitHub Actions）兼容，能夠輕鬆集成到現有的開發流程中。整合的摩擦點主要在於需要熟悉 C++ 的開發者，對於不熟悉的團隊來說，可能需要額外的學習時間。
 
 ## 健康度儀表板
 
@@ -352,7 +360,7 @@ Tailslayer 的核心技術機制在於其多通道的 DRAM 結構，這使得它
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有持續的更新和討論。
+**社群活躍度**：社群活躍度中等，最近有多個討論和反饋。
 **連結**：[文件](https://github.com/LaurieWired/tailslayer)
 
 ## 開發動態
@@ -450,9 +458,9 @@ Tailslayer 的核心技術機制在於其多通道的 DRAM 結構，這使得它
 
 ## 延伸閱讀
 
-相關概念：[[效能優化]] · [[多模態]] · [[微服務]]
+相關概念：[[效能優化]] · [[多核處理]] · [[DRAM 管理]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/LaurieWired/tailslayer)
 
@@ -494,7 +502,7 @@ Tailslayer 的核心技術機制在於其多通道的 DRAM 結構，這使得它
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["效能優化","多模態","微服務"];
+> const concepts = ["效能優化","多核處理","DRAM 管理"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "LaurieWired--tailslayer" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
