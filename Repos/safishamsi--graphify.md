@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw, Factory Droid). Turn any folder of code, docs, papers, or images into a queryable knowledge graph"
 homepage: "https://pypi.org/project/graphifyy/"
-stars: 12891
-stars_per_day: 2578
-forks: 1315
-open_issues: 18
+stars: 17742
+stars_per_day: 2957
+forks: 1805
+open_issues: 36
 created: 2026-04-03
-pushed_at: 2026-04-09
+pushed_at: 2026-04-10
 first_seen: 2026-04-08
 week: "2026-W15"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "將任何代碼、文檔、論文或圖像資料夾轉換為可查詢
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-12"
+appearances: 3
+next_review: "2026-04-13"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 66
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-08"
-star_history: "2026-04-08:7061,2026-04-09:12891"
+star_history: "2026-04-08:7061,2026-04-09:12891,2026-04-10:17742"
 tags:
   - github
   - "category/開發工具"
@@ -830,5 +830,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-10|2026-04-10]] — 再次上榜，17.7k stars
 - [[2026-04-09|2026-04-09]] — 再次上榜，12.9k stars
 - [[2026-04-08|2026-04-08]] — 首次收錄，7.1k stars

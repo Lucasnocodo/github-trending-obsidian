@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman"
 homepage: "https://juliusbrussee.github.io/caveman/"
-stars: 7541
-stars_per_day: 1885
-forks: 309
-open_issues: 3
+stars: 8851
+stars_per_day: 1770
+forks: 391
+open_issues: 17
 created: 2026-04-04
-pushed_at: 2026-04-08
+pushed_at: 2026-04-09
 first_seen: 2026-04-08
 week: "2026-W15"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "透過簡化語言，減少 65% 的 token 使用，提升 Claude Code
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-12"
+appearances: 3
+next_review: "2026-04-13"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 83
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-08"
-star_history: "2026-04-08:5957,2026-04-08:5973,2026-04-09:7529,2026-04-09:7541"
+star_history: "2026-04-08:5957,2026-04-08:5973,2026-04-09:7529,2026-04-09:7541,2026-04-10:8851"
 tags:
   - github
   - "category/ai_ml"
@@ -904,5 +904,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-10|2026-04-10]] — 再次上榜，8.9k stars
 - [[2026-04-09|2026-04-09]] — 再次上榜，7.5k stars
 - [[2026-04-08|2026-04-08]] — 首次收錄，6.0k stars

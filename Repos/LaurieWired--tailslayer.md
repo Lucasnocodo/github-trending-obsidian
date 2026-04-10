@@ -1,65 +1,64 @@
 ---
-repo: GitFrog1111/badclaude
-url: https://github.com/GitFrog1111/badclaude
-owner: GitFrog1111
+repo: LaurieWired/tailslayer
+url: https://github.com/LaurieWired/tailslayer
+owner: LaurieWired
 owner_type: User
-language: HTML
-license: N/A
-description: ""
+language: C++
+license: Apache-2.0
+description: "Library for reducing tail latency in RAM reads"
 homepage: ""
-stars: 1767
-stars_per_day: 353
-forks: 180
-open_issues: 32
-created: 2026-04-04
+stars: 1667
+stars_per_day: 417
+forks: 90
+open_issues: 12
+created: 2026-04-05
 pushed_at: 2026-04-07
-first_seen: 2026-04-09
+first_seen: 2026-04-10
 week: "2026-W15"
 month: "2026-04"
 category: "開發工具"
-subcategory: "CLI 工具"
+subcategory: "性能優化"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-04-09
-use_case: "一個用來「鞭策」Claude AI 的工具，讓它更有效率。"
+last_reviewed: 2026-04-10
+use_case: "減少 RAM 讀取中的尾延遲，提升效能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-04-13"
 contributor_count: 1
-engagement: "medium"
-issue_close_rate: 7
-repo_size_kb: 562
-readme_length: 542
+engagement: "low"
+issue_close_rate: 8
+repo_size_kb: 41
+readme_length: 3232
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-04-09"
-star_history: "2026-04-09:1501,2026-04-09:1508,2026-04-10:1767"
+ring_history: "assess@2026-04-10"
+star_history: "2026-04-10:1667"
 tags:
   - github
   - "category/開發工具"
-  - "lang/html"
-  - easy_install
+  - "lang/c++"
 aliases:
-  - "badclaude"
-  - "GitFrog1111/badclaude"
-  - "一個用來「鞭策」Claude AI 的工具，讓它更有效率。"
+  - "tailslayer"
+  - "LaurieWired/tailslayer"
+  - "減少 RAM 讀取中的尾延遲，提升效能。"
 ---
 
-# badclaude
+# tailslayer
 
-**1.5k** stars · **377** stars/天 · 建立 4 天前 · HTML · 未標註授權
+**1.7k** stars · **417** stars/天 · 建立 4 天前 · C++ · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/GitFrog1111--badclaude");
+const me = dv.page("Repos/LaurieWired--tailslayer");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `easy-install`
+`個人專案`
 
 > [!summary] 一句話摘要
-> 一個用來「鞭策」Claude AI 的工具，讓它更有效率。
+> 減少 RAM 讀取中的尾延遲，提升效能。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (377 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 尋找有趣方式來互動和調整 AI 行為的開發者。
-> **一句話重點** badclaude 不僅是一個工具，更是一種輕鬆互動的方式來調整 AI 行為。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (417 stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要在高性能計算環境中優化 RAM 讀取延遲的系統工程師或開發者。
+> **一句話重點** Tailslayer 的設計讓 RAM 讀取延遲的優化成為可能，這在高性能計算中至關重要。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/LaurieWired--tailslayer");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "CLI 工具" && p.file.name !== "GitFrog1111--badclaude" && p.status !== "archived")
+>     .where(p => p.subcategory === "性能優化" && p.file.name !== "LaurieWired--tailslayer" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,98 +95,113 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 CLI 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 性能優化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學、1 小時整合，得到輕鬆互動的體驗，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，3 小時整合，能夠顯著提升 RAM 讀取性能，值得考慮。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於將幽默感和互動性融入到 AI 控制工具中。
+> Tailslayer 利用未公開的通道打亂偏移來減少 DRAM 刷新造成的延遲。
 
 ## 專案簡介
 
-badclaude 是一個有趣的工具，旨在透過一個簡單的互動界面來「鞭策」Claude AI，使其運行更有效率。用戶可以透過點擊系統托盤圖示來生成鞭子，並且每次點擊會發送一個中斷信號 (Ctrl-C)，同時顯示五種鼓勵訊息之一。這種設計不僅增加了互動性，還讓使用者在使用過程中感受到趣味性。這個工具使用 Electron 框架開發，能夠在 macOS 和 Windows 上運行，並且需要 Node.js 18 以上版本。其依賴的 Electron 版本為 33.0.0，這意味著它能夠利用最新的桌面應用功能。
+Tailslayer 是一個 C++ 庫，專注於減少 RAM 讀取中的尾延遲，這主要是由於 DRAM 刷新停頓造成的。它透過在多個獨立的 DRAM 通道中複製數據，並使用不相關的刷新計劃來達成這一目標。當請求到達時，Tailslayer 會在所有副本之間發出 hedged 讀取，從而優先處理最先回應的結果。這種設計使得在高延遲環境中讀取操作的性能大幅提升，特別是在多核處理器上。使用者只需提供信號函數和最終處理函數作為模板參數，便可輕鬆集成到現有項目中。這個庫目前支持兩個通道，未來將擴展至多通道使用，並提供了基準測試以評估性能。Tailslayer 的核心賣點在於其能有效減少因 DRAM 刷新造成的延遲，這在高性能計算和實時應用中尤為重要。
 
-與其他類似工具相比，badclaude 的獨特之處在於它的幽默感和互動性，這使得它在功能上與傳統的 AI 控制工具如 0xGF/boneyard 和 Gitlawb/openclaude 有所不同，後者通常更專注於功能性而非趣味性。使用者可能會發現，這個工具在實際使用中會有一些限制，例如它的實用性可能不如專業的 AI 控制工具，但它的設計理念卻能帶來輕鬆的使用體驗。這個專案目前處於早期階段，社群活躍度中等，開發者對於功能的未來擴展有清晰的路線圖。對於喜歡輕鬆互動的開發者來說，這是一個值得嘗試的工具，但如果需要穩定的生產環境，則可能需要考慮其他選擇。
+它的實作依賴於 C++17，並使用了多線程技術來確保每個副本在獨立核心上運行，這樣可以最大化資源利用率。與其他工具相比，Tailslayer 的設計更專注於硬體層面的優化，而非單純的軟體調整。這使得它在處理高頻繁讀取請求時表現出色，尤其是在需要低延遲的場景中。使用者可能會遇到的問題包括對於特定硬體的兼容性，及其對於多通道配置的支持程度。這個專案目前仍在活躍開發中，未來可能會增加更多功能和優化。對於需要在高性能環境中運行的應用來說，Tailslayer 是一個值得考慮的選擇。
 
-**技術棧**：`Electron 33.0.0` · `Node.js >=18.0.0`
+**技術棧**：`C++ 17` · `CMake`
 
 ## 重點功能
 
-- 互動鞭子 — 點擊托盤圖示生成鞭子並發送中斷信號。
-- 鼓勵訊息 — 每次使用鞭子會顯示五種鼓勵訊息之一。
-- 跨平台支持 — 可在 macOS 和 Windows 上運行。
-- 簡單安裝 — 使用 npm 安裝，命令為 `npm install -g badclaude`。
-- 開發者友好 — 使用 Electron 框架，便於進一步擴展和自定義。
+- 多通道數據複製 — 利用不相關的刷新計劃在多個 DRAM 通道中複製數據，減少延遲。
+- Hedged 讀取 — 在所有副本之間發出讀取請求，優先處理最先回應的結果。
+- 模板參數化 — 使用者可以自定義信號函數和最終處理函數，靈活適應不同場景。
+- 支持多核心 — 每個副本被固定到獨立核心，最大化資源利用率。
+- 基準測試支持 — 提供基準測試工具以評估 DRAM 刷新行為和性能。
 
 ## 快速開始
 
-1. 安裝 badclaude
+1. 克隆專案
 ```bash
-npm install -g badclaude
+git clone https://github.com/LaurieWired/tailslayer.git
 ```
-2. 啟動 badclaude
+2. 進入專案目錄
 ```bash
-badclaude
+cd tailslayer
 ```
-3. 點擊托盤圖示以生成鞭子
+3. 編譯範例程式
 ```bash
-# 點擊托盤圖示
+make
+```
+4. 執行範例程式
+```bash
+./tailslayer_example
+```
+
+## 程式碼範例
+
+```cpp
+{
+  "前置條件": "需要包含 tailslayer 的頭檔",
+  "程式碼": "#include <tailslayer/hedged_reader.hpp>\n\n[[gnu::always_inline]] inline std::size_t my_signal() {\n    return index_to_read;\n}\n\ntemplate <typename T>\n[[gnu::always_inline]] inline void my_work(T val) {\n    // Use the value\n}\n\nint main() {\n    using T = uint8_t;\n    tailslayer::HedgedReader<T> reader{};\n    reader.insert(0x43);\n    reader.insert(0x44);\n    reader.start_workers();\n}",
+  "預期輸出": "在多個通道中進行的 RAM 讀取，並返回最先回應的結果。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 1508 stars（377/天），forks 157（10.4%），顯示出相當高的使用者興趣。作者 GitFrog1111 似乎專注於創造有趣的工具，這個專案的幽默性和互動性是它的賣點。這個工具解決了用戶在使用 Claude AI 時的效率問題，提供了一種輕鬆的方式來提高其表現。社群對於功能的需求也反映在熱門 Issues 中，像是對於聲音效果和整合的需求。這些因素共同促成了其快速的增長。
+> 建立 4 天內累積 1667 stars（417/天），forks 90（5.4%），這顯示出其在開發者社群中的快速增長。LaurieWired 是這個專案的主要貢獻者，過去在相關領域有一定的經驗。這個專案解決了 DRAM 刷新導致的延遲問題，這在高性能計算中是一個普遍的痛點。之前的解決方案往往無法有效處理多通道的複雜性，而 Tailslayer 則利用了未公開的通道打亂偏移來實現更高效的數據讀取。社群的反應熱烈，尤其是針對其在 Linux 核心中的應用討論。這個專案的成功也反映了對於低延遲計算需求的增長，尤其是在多核處理器的普及下。
 
 ## 適合誰使用
 
-**目標受眾**：尋找有趣方式來互動和調整 AI 行為的開發者。
+**目標受眾**：需要在高性能計算環境中優化 RAM 讀取延遲的系統工程師或開發者。
 
 > [!example] 使用場景
-> - 遊戲開發者用它來調整 AI 的行為，因為這樣可以讓遊戲中的角色更具互動性和趣味性。
-> - 教育工作者用它來展示 AI 的反應，因為這能讓學生在學習過程中感受到趣味和參與感。
-> - 獨立開發者用它來測試 AI 的反應速度，因為這樣可以在開發過程中快速調整 AI 的行為。
+> - 系統工程師用它來優化伺服器的 RAM 讀取性能，因為 Tailslayer 能有效減少由 DRAM 刷新造成的延遲，提升整體系統響應速度。
+> - 高頻交易開發者用它來降低交易延遲，因為在金融市場中，毫秒的延遲都可能導致重大損失，Tailslayer 提供了必要的性能優化。
+> - 遊戲開發者用它來提升即時遊戲的數據讀取速度，因為遊戲中的快速反應要求極低的延遲，Tailslayer 能夠支持這種需求。
 
 ## 架構分析
 
-badclaude 採用 Electron 框架，這使得它能夠在桌面環境中運行，並利用 Node.js 的生態系統。應用的主要功能集中在一個簡單的用戶界面上，通過托盤圖示與用戶互動。資料流方面，當用戶點擊托盤圖示時，應用會生成一個鞭子並發送中斷信號，這個設計使得用戶能夠輕鬆地與 AI 進行互動。選擇 Electron 的好處在於它的跨平台支持，但代價是可能會增加應用的體積和資源消耗。整體上，這個架構適合小型工具，但在擴展性上可能會面臨挑戰，尤其是當功能需求增加時。
+Tailslayer 使用了多通道的 DRAM 結構，並透過複製數據來降低延遲。其核心架構是基於 C++ 的多線程設計，確保每個副本在獨立核心上運行。這樣的設計使得在高頻繁的讀取請求中能夠有效分散負載，減少單一通道的壅塞。選擇 C++ 是因為其性能優越，適合底層硬體操作，但這也使得學習曲線相對較陡。擴展性方面，未來可能會增加對更多通道的支持，但目前的實作仍然依賴於特定的硬體配置，這可能會限制其普遍適用性。
 
 ## 技術深入分析
 
-badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用 Node.js 的生態系統來開發桌面應用。應用的互動設計讓用戶能夠通過簡單的點擊來控制 AI，這種方式提高了使用的趣味性和參與感。效能方面，由於是基於 Electron，可能會對資源有一定的需求，但具體的數據尚未提供。選擇 Electron 的好處在於能夠快速開發跨平台應用，但這也可能導致應用體積較大，影響啟動速度。技術風險方面，由於專案仍在早期階段，未來的功能擴展可能會面臨不穩定的問題。整合方面，這個工具可以與其他 Node.js 生態系統的工具進行搭配，但在與大型框架的整合上可能會遇到挑戰。
+Tailslayer 的核心技術機制在於其多通道的 DRAM 結構，這使得它能夠在不同的通道上進行數據複製，從而減少因 DRAM 刷新造成的延遲。它使用了 C++ 的多線程設計，確保每個副本在獨立核心上運行，這樣可以有效分散負載，降低單一通道的壅塞。效能方面，這個庫的設計使得它能夠在高頻繁的讀取請求中保持較低的延遲，特別是在需要實時反應的場景中。選擇 C++ 作為開發語言是因為其性能優越，但這也意味著使用者需要具備一定的編程基礎。設計上的取捨包括了對硬體的依賴，這可能會限制其在不同環境中的適用性。技術風險方面，隨著使用者數量的增加，可能會面臨更多的兼容性問題，特別是在不同品牌的 DRAM 上。整合方面，這個工具與主流的 C++ 開發環境相容良好，但對於新手來說，學習曲線可能較陡。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了安裝和使用的基本指導。安裝過程相對順暢，沒有明顯的坑。雖然沒有詳細的入門指南，但基本功能易於理解，適合新手快速上手。
+> README 文件提供了清晰的使用範例和安裝指導，讓新手能夠快速上手。安裝過程相對順暢，但對於 C++ 的要求可能會讓一些使用者感到困難。文件中未提供多語言支持，主要以英文為主。整體而言，花 30 分鐘能夠完成基本的安裝和使用。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 有趣的互動設計，讓使用 AI 的過程變得輕鬆。
-> - 簡單的安裝過程，適合快速上手。
-> - 跨平台支持，能在多種操作系統上運行。
+> - 有效減少 DRAM 刷新延遲，提升 RAM 讀取性能。
+> - 支持多核心運行，最大化資源利用率。
+> - 靈活的模板設計，適應不同的使用場景。
 
 > [!danger] 缺點
-> - 功能仍在開發中，穩定性不足。
-> - 不適合用於生產環境，主要用於娛樂。
-> - 社群活躍度中等，可能影響未來的支持和更新。
+> - 目前僅支持兩個通道，未來版本尚未確定。
+> - 對於不同硬體的兼容性可能存在問題。
+> - 需要一定的 C++ 知識才能有效使用。
 
 > [!warning] 注意事項
-> - 目前功能仍在開發中，未來可能會有更多功能。
-> - 使用過程中可能會遇到不穩定的行為，因為專案仍在早期階段。
-> - 不適合用於生產環境，主要用於娛樂和互動。
+> - 目前僅支持兩個通道，未來版本將擴展至多通道。
+> - 需要 C++17 支持，舊版本的編譯器可能無法使用。
+> - 對於特定硬體的兼容性可能存在問題，特別是在不同品牌的 DRAM 上。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 更專注於功能性，適合需要穩定 AI 控制的開發者，而 badclaude 則提供更輕鬆的互動體驗。 |
-| [Gitlawb/openclaude](https://github.com/Gitlawb/openclaude) | openclaude 提供更為專業的 AI 控制選項，適合需要高效能的應用場景，badclaude 則更著重於趣味性。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 專注於低延遲的資料庫查詢，而 Tailslayer 更專注於 RAM 讀取延遲的優化。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 提供了並行數據傳輸的功能，但不專注於 DRAM 刷新延遲的問題，適用場景不同。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 主要用於數據隱私和安全，而 Tailslayer 專注於性能優化，兩者的核心目標不同。 |
 
 ## 替代方案決策
 
@@ -195,16 +209,16 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 更專注於功能性，適合需要穩定 AI 控制的開發者，而 badclaude 則提供更輕鬆的互動體驗。 | 如果你的專案需要穩定的 AI 控制功能，而不需要趣味性，則應選擇 boneyard。 | medium，因為需要重新設計用戶互動方式。 |
-| [Gitlawb/openclaude](https://github.com/Gitlawb/openclaude) | openclaude 提供更為專業的 AI 控制選項，適合需要高效能的應用場景，badclaude 則更著重於趣味性。 | 如果你的團隊需要高效能的 AI 控制，而不在乎互動性，則應選擇 openclaude。 | high，因為需要重新設計整個應用的架構和功能。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 主要專注於低延遲的資料庫查詢，而 Tailslayer 則專注於 RAM 讀取延遲的優化，兩者的技術路線有所不同。 | 如果你的應用場景主要是資料庫查詢，Boneyard 可能更適合，因為它專注於查詢性能。 | medium，因為兩者的 API 和使用方式有一定差異。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 提供了並行數據傳輸的功能，但不專注於 DRAM 刷新延遲的問題，適用場景不同。 | 如果你的需求是並行數據傳輸而非 RAM 讀取優化，Parsync 會是更好的選擇。 | low，因為其 API 設計較為簡單，易於上手。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **badclaude** | **boneyard** | **openclaude** |
+> | 維度 | **tailslayer** | **boneyard** | **parsync** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | boneyard 更專注於功能性，適合需要穩定 AI 控制的開發者，而 badclaude 則提供更輕鬆的互動體驗。 | openclaude 提供更為專業的 AI 控制選項，適合需要高效能的應用場景，badclaude 則更著重於趣味性。 |
-> | 遷移成本 | - | medium，因為需要重新設計用戶互動方式。 | high，因為需要重新設計整個應用的架構和功能。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要穩定的 AI 控制功能，而不需要趣味性，則應 | 如果你的團隊需要高效能的 AI 控制，而不在乎互動性，則應選 |
+> | 技術路線 | 本專案 | Boneyard 主要專注於低延遲的資料庫查詢，而 Tailslayer 則專注於 RAM 讀取延遲的優化，兩者的技術路線有所不同。 | Parsync 提供了並行數據傳輸的功能，但不專注於 DRAM 刷新延遲的問題，適用場景不同。 |
+> | 遷移成本 | - | medium，因為兩者的 API 和使用方式有一定差異。 | low，因為其 API 設計較為簡單，易於上手。 |
+> | 適用場景 | 主要場景 | 如果你的應用場景主要是資料庫查詢，Boneyard 可能更適 | 如果你的需求是並行數據傳輸而非 RAM 讀取優化，Parsy |
 
 ## 成熟度評估
 
@@ -215,50 +229,47 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合進行實驗和測試，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些系統上可能無法正常顯示托盤圖示
-  - 解法：檢查系統托盤設定或重新啟動應用
-- **[HIGH]** 使用過程中可能會出現不穩定的行為
-  - 解法：定期更新應用以獲取最新修復
-- [MEDIUM] 部分功能尚未實現，可能導致使用者失望
-  - 解法：關注未來更新以獲取新功能
+- **[HIGH]** 在某些硬體上可能會遇到兼容性問題，特別是不同品牌的 DRAM。
+  - 解法：在使用前檢查硬體兼容性，或考慮使用相同品牌的 DRAM。
+- [MEDIUM] 使用時可能需要調整信號函數以適應不同的應用場景。
+  - 解法：參考範例程式碼進行調整，或尋求社群的幫助。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型遊戲開發團隊 | 非常適合 | 可以輕鬆調整 AI 行為，增加遊戲趣味性。 |
-| 教育機構的 AI 課程 | 適合 | 能夠展示 AI 的反應，增加學生的參與感。 |
-| 大型企業的生產環境 | 不適合 | 不穩定性和功能缺失不符合生產需求。 |
-| 獨立開發者的個人專案 | 普通 | 雖然有趣，但功能尚不成熟。 |
+| 高頻交易系統 | 非常適合 | 因為其能有效減少延遲，提升交易反應速度。 |
+| 即時遊戲開發 | 適合 | 因為遊戲中的快速反應要求低延遲，Tailslayer 能夠支持這種需求。 |
+| 一般伺服器應用 | 普通 | 雖然能提升性能，但對於不需要極低延遲的應用可能效果有限。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
-| 綁定風險 | low |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | medium |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學、1 小時整合，得到輕鬆互動的體驗，值得一試。
+> 花 5 小時學習，3 小時整合，能夠顯著提升 RAM 讀取性能，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：此工具不需要高權限，且不存取敏感資料，但使用者應注意其對硬體的依賴性。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/LaurieWired--tailslayer");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -293,7 +304,7 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/LaurieWired--tailslayer");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -317,94 +328,141 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 157 |
-| Open Issues | 28 |
-| Issue 解決率 | 7% (2 closed) |
+| Forks | 90 |
+| Open Issues | 12 |
+| Issue 解決率 | 8% (1 closed) |
 | 最後推送 | 2026-04-07 |
-| 建立日期 | 2026-04-04 |
-| Repo 大小 | 562 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/GitFrog1111/badclaude) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `electron` `koffi`
+| 建立日期 | 2026-04-05 |
+| Repo 大小 | 41 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/LaurieWired/tailslayer) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "HTML" : 62
->     "JavaScript" : 38
+>     "C++" : 76
+>     "C" : 22
+>     "Makefile" : 1
+>     "CMake" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@GitFrog1111](https://github.com/GitFrog1111) | 10 |
+> | [@LaurieWired](https://github.com/LaurieWired) | 12 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者對功能的未來擴展有清晰的路線圖。
-**連結**：[文件](https://github.com/GitFrog1111/badclaude#readme)
+**社群活躍度**：社群活躍度中等，最近有持續的更新和討論。
+**連結**：[文件](https://github.com/LaurieWired/tailslayer)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-04 ~ 2026-04-07）
-> **活躍天數** 2 天 · **最新 commit** Exhibit A
+> [!abstract] 最近 10 次 commit（2026-04-05 ~ 2026-04-07）
+> **活躍天數** 2 天 · **最新 commit** Update readme
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#5](https://github.com/GitFrog1111/badclaude/issues/5) | Feature Request: Add Tom Scream Sound Effect | 41 | 3 |
-> | [#12](https://github.com/GitFrog1111/badclaude/issues/12) | Feature Request: MCP integration | 15 | 0 |
-> | [#17](https://github.com/GitFrog1111/badclaude/issues/17) | Mine starts moaning when I use the whip?? | 6 | 2 |
-> | [#8](https://github.com/GitFrog1111/badclaude/issues/8) | CLAUDE.md file missing. | 6 | 1 |
+> | [#7](https://github.com/LaurieWired/tailslayer/issues/7) | Will this break my 64 GB DDR4 Kingston RAM I just purchased  | 30 | 11 |
+> | [#2](https://github.com/LaurieWired/tailslayer/issues/2) | [RFC] Tailslayer implementation for linux kernel | 17 | 4 |
+> | [#13](https://github.com/LaurieWired/tailslayer/issues/13) | Tailslayer as a CPU-level quantum patch — and why it breaks  | 8 | 2 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # badclaude
+> [](https://www.apache.org/licenses/LICENSE-2.0)
+> [](https://github.com/LaurieWired/tailslayer/stargazers)
+> [](https://github.com/LaurieWired/tailslayer/network/members)
+> [](https://github.com/LaurieWired/tailslayer/graphs/contributors)
+> [](https://twitter.com/lauriewired)
 > 
-> Sometimes claude code is going too shlow, and you must whip him into shape..
+> # Tailslayer
 > 
-> ## Install + run
+> Tailslayer is a C++ library that reduces tail latency in RAM reads caused by DRAM refresh stalls. 
 > 
-> ```bash
-> npm install -g badclaude
-> badclaude
+> It replicates data across multiple, independent DRAM channels with uncorrelated refresh schedules, using (undocumented!) channel scrambling offsets that works on AMD, Intel, and Graviton. Once the request comes in, Tailslayer issues hedged reads across all replicas, allowing the work to be performed on whichever result responds first.
+> 
+> ## Usage
+> 
+> The library code is available in [hedged_reader.cpp](https://github.com/LaurieWired/tailslayer/blob/main/include/tailslayer/hedged_reader.hpp) and the example using the library can be found in [tailslayer_example.cpp](https://github.com/LaurieWired/tailslayer/blob/main/tailslayer_example.cpp). To use it, copy `include/tailslayer` into your project and `#include `. The library currently works with two channels (updates to come!), but full N-way usage is available in the [benchmark](https://github.com/LaurieWired/tailslayer/tree/main/discovery/benchmark).
+> 
+> You provide the value type and two functions as template parameters:
+> 
+> 1. **Signal function**: Add the loop that waits for the external signal. This determines when to read. Return the desired index to read, and the read immediately fires.
+> 2. **Final work function**: This receives the value immediately after it is read. Add the desired value processing code here.
+> 
+> ```cpp
+> #include 
+> 
+> [[gnu::always_inline]] inline std::size_t my_signal() {
+>     // Wait for your event, then return the index to read
+>     return index_to_read;
+> }
+> 
+> template 
+> [[gnu::always_inline]] inline void my_work(T val) {
+>     // Use the value
+> }
+> 
+> int main() {
+>     using T = uint8_t;
+>     tailslayer::pin_to_core(tailslayer::CORE_MAIN);
+> 
+>     tailslayer::HedgedReader> reader{};
+>     reader.insert(0x43);
+>     reader.insert(0x44);
+>     reader.start_workers();
+> }
 > ```
 > 
-> ## Controls
+> Arguments can be passed to either function via `ArgList`:
 > 
-> - Click tray icon: spawn whip.
-> - Click: drop whip.
-> - Whip him 😩💢
-> - It sends an interrupt (Ctrl-C) and one of 5 encouraging messages!
+> ```cpp
+> tailslayer::HedgedReader,
+>     tailslayer::ArgList,   // args to signal function
+>     tailslayer::ArgList       // args to final work function
+> > reader{};
+> ```
 > 
-> ## Roadmap
+> You can also optionally pass in a different channel offset, channel bit, and number of replicas to the constructor. *Note:* Each insert copies the element N times where N is the number of replicas. It does the address calculation work on the backend, allowing tailslayer to act as a hedged vector that uses logical indices. Additionally, each replica is pinned to a separate core, and will spin on that core according to the signal function until the read happens.
 > 
-> - [x] Initial release! 🥳
-> - [x] Cease and desist letter from Anthropic
-> - [ ] Crypto miner
-> - [ ] Logs of how many times you whipped claude so when the robots come we can order people nicely for them
-> - [ ] Updated whip physics
+> ## Build the example
+> 
+> ```bash
+> make
+> ./tailslayer_example
+> ```
+> 
+> ## Benchmarks and spike timing
+> 
+> The `discovery/` directory contains supporting code used to characterize DRAM refresh behavior:
+> 
+> - `discovery/benchmark/`: Channel-hedged read benchmark
+> - `discovery/trefi_probe.c`: Spike timing probe for measuring the refresh cycle
+> 
+> ```bash
+> cd discovery/benchmark
+> make
+> sudo chrt -f 99 ./hedged_read_cpp --all --channel-bit 8
+> ```
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化]] · [[互動設計]]
+相關概念：[[效能優化]] · [[多模態]] · [[微服務]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[claude-code-best--claude-code|claude-code-best/claude-code]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[knowsuchagency--mcp2cli|knowsuchagency/mcp2cli]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]]
 
-[GitHub](https://github.com/GitFrog1111/badclaude)
+[GitHub](https://github.com/LaurieWired/tailslayer)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：CLI 工具）
+> [!note]- 直接競品（同子分類：性能優化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "CLI 工具" AND file.name != "GitFrog1111--badclaude"
+> WHERE subcategory = "性能優化" AND file.name != "LaurieWired--tailslayer"
 > SORT stars DESC
 > ```
 
@@ -412,7 +470,7 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "GitFrog1111--badclaude"
+> WHERE category = "開發工具" AND file.name != "LaurieWired--tailslayer"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -421,7 +479,7 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "HTML" AND file.name != "GitFrog1111--badclaude" AND status != "archived"
+> WHERE language = "C++" AND file.name != "LaurieWired--tailslayer" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -430,15 +488,15 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W15" AND file.name != "GitFrog1111--badclaude"
+> WHERE week = "2026-W15" AND file.name != "LaurieWired--tailslayer"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化","互動設計"];
+> const concepts = ["效能優化","多模態","微服務"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "GitFrog1111--badclaude" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "LaurieWired--tailslayer" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -451,12 +509,12 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/LaurieWired--tailslayer");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "GitFrog1111--badclaude" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "LaurieWired--tailslayer" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -472,7 +530,7 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "GitFrog1111" AND file.name != "GitFrog1111--badclaude"
+> WHERE owner = "LaurieWired" AND file.name != "LaurieWired--tailslayer"
 > SORT stars DESC
 > ```
 
@@ -480,7 +538,7 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/LaurieWired--tailslayer");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -497,7 +555,7 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/LaurieWired--tailslayer");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -530,7 +588,7 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/LaurieWired--tailslayer");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -554,7 +612,7 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/LaurieWired--tailslayer");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -591,7 +649,7 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/LaurieWired--tailslayer");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -674,7 +732,7 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠利用
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-04-09** — 首次收錄
+> **2026-04-10** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -690,5 +748,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-04-10|2026-04-10]] — 再次上榜，1.8k stars
-- [[2026-04-09|2026-04-09]] — 首次收錄，1.5k stars
+- [[2026-04-10|2026-04-10]] — 首次收錄，1.7k stars

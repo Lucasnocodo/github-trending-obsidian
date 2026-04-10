@@ -7,12 +7,12 @@ language: Swift
 license: MIT
 description: ""
 homepage: ""
-stars: 2250
-stars_per_day: 2250
-forks: 413
-open_issues: 25
+stars: 3156
+stars_per_day: 1578
+forks: 561
+open_issues: 33
 created: 2026-04-07
-pushed_at: 2026-04-08
+pushed_at: 2026-04-10
 first_seen: 2026-04-09
 week: "2026-W15"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供一個 AI 助手，能在螢幕旁邊即時協助使用者。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-12"
+appearances: 2
+next_review: "2026-04-13"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-09"
-star_history: "2026-04-09:2241,2026-04-09:2250"
+star_history: "2026-04-09:2241,2026-04-09:2250,2026-04-10:3156"
 tags:
   - github
   - "category/開發工具"
@@ -842,4 +842,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-10|2026-04-10]] — 再次上榜，3.2k stars
 - [[2026-04-09|2026-04-09]] — 首次收錄，2.2k stars

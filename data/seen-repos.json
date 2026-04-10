@@ -869,17 +869,17 @@
   },
   "santifer/career-ops": {
     "first_seen": "2026-04-07",
-    "last_seen": "2026-04-09",
-    "times_seen": 3,
+    "last_seen": "2026-04-10",
+    "times_seen": 4,
     "stars_first": 11317,
-    "stars_last": 24614
+    "stars_last": 27741
   },
   "milla-jovovich/mempalace": {
     "first_seen": "2026-04-08",
-    "last_seen": "2026-04-09",
-    "times_seen": 2,
+    "last_seen": "2026-04-10",
+    "times_seen": 3,
     "stars_first": 17279,
-    "stars_last": 27495
+    "stars_last": 35831
   },
   "HKUDS/OpenHarness": {
     "first_seen": "2026-04-08",
@@ -890,17 +890,17 @@
   },
   "safishamsi/graphify": {
     "first_seen": "2026-04-08",
-    "last_seen": "2026-04-09",
-    "times_seen": 2,
+    "last_seen": "2026-04-10",
+    "times_seen": 3,
     "stars_first": 7061,
-    "stars_last": 12891
+    "stars_last": 17742
   },
   "JuliusBrussee/caveman": {
     "first_seen": "2026-04-08",
-    "last_seen": "2026-04-09",
-    "times_seen": 2,
+    "last_seen": "2026-04-10",
+    "times_seen": 3,
     "stars_first": 5957,
-    "stars_last": 7529
+    "stars_last": 8851
   },
   "kevinrgu/autoagent": {
     "first_seen": "2026-04-08",
@@ -918,17 +918,17 @@
   },
   "alchaincyf/nuwa-skill": {
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-09",
-    "times_seen": 1,
+    "last_seen": "2026-04-10",
+    "times_seen": 2,
     "stars_first": 3895,
-    "stars_last": 3895
+    "stars_last": 5526
   },
   "farzaa/clicky": {
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-09",
-    "times_seen": 1,
+    "last_seen": "2026-04-10",
+    "times_seen": 2,
     "stars_first": 2241,
-    "stars_last": 2241
+    "stars_last": 3156
   },
   "sooryathejas/METATRON": {
     "first_seen": "2026-04-09",
@@ -939,9 +939,30 @@
   },
   "GitFrog1111/badclaude": {
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-09",
-    "times_seen": 1,
+    "last_seen": "2026-04-10",
+    "times_seen": 2,
     "stars_first": 1501,
-    "stars_last": 1501
+    "stars_last": 1767
+  },
+  "alchaincyf/zhangxuefeng-skill": {
+    "first_seen": "2026-04-10",
+    "last_seen": "2026-04-10",
+    "times_seen": 1,
+    "stars_first": 2017,
+    "stars_last": 2017
+  },
+  "xixu-me/awesome-persona-distill-skills": {
+    "first_seen": "2026-04-10",
+    "last_seen": "2026-04-10",
+    "times_seen": 1,
+    "stars_first": 1798,
+    "stars_last": 1798
+  },
+  "LaurieWired/tailslayer": {
+    "first_seen": "2026-04-10",
+    "last_seen": "2026-04-10",
+    "times_seen": 1,
+    "stars_first": 1667,
+    "stars_last": 1667
   }
 }
