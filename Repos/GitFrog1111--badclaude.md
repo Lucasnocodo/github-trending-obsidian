@@ -7,10 +7,10 @@ language: HTML
 license: N/A
 description: ""
 homepage: ""
-stars: 1770
-stars_per_day: 354
-forks: 181
-open_issues: 32
+stars: 1934
+stars_per_day: 322
+forks: 201
+open_issues: 34
 created: 2026-04-04
 pushed_at: 2026-04-07
 first_seen: 2026-04-09
@@ -30,8 +30,8 @@ use_case: "讓 Claude 變得更快，透過有趣的方式激勵它。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-13"
+appearances: 3
+next_review: "2026-04-14"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 6
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-09"
-star_history: "2026-04-09:1501,2026-04-09:1508,2026-04-10:1767,2026-04-10:1770"
+star_history: "2026-04-09:1501,2026-04-09:1508,2026-04-10:1767,2026-04-10:1770,2026-04-11:1934"
 tags:
   - github
   - "category/開發工具"
@@ -689,5 +689,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-11|2026-04-11]] — 再次上榜，1.9k stars
 - [[2026-04-10|2026-04-10]] — 再次上榜，1.8k stars
 - [[2026-04-09|2026-04-09]] — 首次收錄，1.5k stars

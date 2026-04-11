@@ -7,12 +7,12 @@ language: N/A
 license: MIT
 description: "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。"
 homepage: ""
-stars: 2057
-stars_per_day: 514
-forks: 703
-open_issues: 13
+stars: 3106
+stars_per_day: 621
+forks: 1303
+open_issues: 23
 created: 2026-04-05
-pushed_at: 2026-04-09
+pushed_at: 2026-04-10
 first_seen: 2026-04-10
 week: "2026-W15"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供高考志愿、考研及职业规划的实战思维框架。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-13"
+appearances: 2
+next_review: "2026-04-14"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 7
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-10"
-star_history: "2026-04-10:2017,2026-04-10:2057"
+star_history: "2026-04-10:2017,2026-04-10:2057,2026-04-11:3106"
 tags:
   - github
   - "category/其他"
@@ -606,7 +606,7 @@ python main.py
 
 相關概念：[[職業規劃]] · [[社會篩子論]] · [[決策分析]]
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[alvinunreal--awesome-opensource-ai|alvinunreal/awesome-opensource-ai]] · [[farzaa--clicky|farzaa/clicky]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[alvinunreal--awesome-opensource-ai|alvinunreal/awesome-opensource-ai]] · [[farzaa--clicky|farzaa/clicky]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[garrytan--gbrain|garrytan/gbrain]]
 
 [GitHub](https://github.com/alchaincyf/zhangxuefeng-skill)
 
@@ -902,4 +902,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-11|2026-04-11]] — 再次上榜，3.1k stars
 - [[2026-04-10|2026-04-10]] — 首次收錄，2.0k stars

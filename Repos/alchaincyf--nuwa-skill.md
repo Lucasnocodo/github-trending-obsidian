@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks."
 homepage: ""
-stars: 5558
-stars_per_day: 1390
-forks: 771
-open_issues: 2
+stars: 6623
+stars_per_day: 1325
+forks: 1008
+open_issues: 4
 created: 2026-04-05
-pushed_at: 2026-04-09
+pushed_at: 2026-04-10
 first_seen: 2026-04-09
 week: "2026-W15"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "幫助用戶蒸餾任何人的思維方式，提取心智模型和決
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-13"
+appearances: 3
+next_review: "2026-04-14"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 80
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-09"
-star_history: "2026-04-09:3895,2026-04-09:3932,2026-04-10:5526,2026-04-10:5558"
+star_history: "2026-04-09:3895,2026-04-09:3932,2026-04-10:5526,2026-04-10:5558,2026-04-11:6623"
 tags:
   - github
   - "category/其他"
@@ -946,5 +946,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-11|2026-04-11]] — 再次上榜，6.6k stars
 - [[2026-04-10|2026-04-10]] — 再次上榜，5.5k stars
 - [[2026-04-09|2026-04-09]] — 首次收錄，3.9k stars
