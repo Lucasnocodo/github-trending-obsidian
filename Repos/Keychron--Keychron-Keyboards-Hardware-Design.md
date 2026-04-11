@@ -7,7 +7,7 @@ language: Python
 license: NOASSERTION
 description: "Industrial design files for Keychron keyboards and mice. 100+ models with CAD assets in STEP, DXF, DWG, and PDF. Source-available, with commercial use allowed for original compatible accessories within the license terms."
 homepage: "https://www.keychron.com/"
-stars: 2145
+stars: 2147
 stars_per_day: 358
 forks: 155
 open_issues: 4
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-11
-use_case: "提供 Keychron 鍵盤和滑鼠的工業設計檔案，包含 100 多個模型的 CAD 資產。"
+use_case: "提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者能夠學習和自製兼容配件。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-11"
-star_history: "2026-04-11:2145"
+star_history: "2026-04-11:2145,2026-04-11:2147"
 tags:
   - github
   - "category/其他"
@@ -56,7 +56,7 @@ tags:
 aliases:
   - "Keychron-Keyboards-Hardware-Design"
   - "Keychron/Keychron-Keyboards-Hardware-Design"
-  - "提供 Keychron 鍵盤和滑鼠的工業設計檔案，包含 100 多個模型的 CAD 資產。"
+  - "提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者能夠學習和自製兼容配件。"
 ---
 
 # Keychron-Keyboards-Hardware-Design
@@ -79,13 +79,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `3d-printing` `cad` `gaming` `gaming-keyboard` `gaming-mouse` `hardware-designs` `keyboard` `keyboard-firmware` `keychron` `mechanical-keyboard` `mouse` `qmk` `qmk-firmware` `zephyr` `zmk` `zmk-firmware`
 
 > [!summary] 一句話摘要
-> 提供 Keychron 鍵盤和滑鼠的工業設計檔案，包含 100 多個模型的 CAD 資產。
+> 提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者能夠學習和自製兼容配件。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (358 stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Low
-> **適合** 對鍵盤設計和改裝有興趣的硬體愛好者和工程師。
-> **一句話重點** 這個專案不僅提供設計檔案，更是促進硬體設計社群成長的重要資源。
+> **適合** 對鍵盤設計和硬體改裝有興趣的工程師和設計師。
+> **一句話重點** 這個專案不僅提供設計檔案，還鼓勵社群參與，讓使用者能夠成為創造者而不僅僅是消費者。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,93 +108,94 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習，10 小時整合，能夠獲得豐富的設計資源，值得投入。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習 CAD 操作，10 小時整合到現有專案，能夠獲得豐富的設計資源，值得投資。
 
 > [!abstract] 核心創新
-> 這個專案提供了開放的硬體設計檔案，讓使用者能夠學習和改編真實的工業設計。
+> 提供可用於商業兼容配件的開源硬體設計檔案，這在鍵盤設計領域是相對少見的。
 
 ## 專案簡介
 
-這個專案提供了 Keychron 鍵盤和滑鼠的生產級硬體設計檔案，讓使用者可以研究、改編和製作兼容的配件。用戶可以從 CAD 檔案中學習實際的設計決策，並利用這些資源製作自定義的外殼、底板和配件。透過指令如 `repo_inventory.py`，使用者能夠生成當前的檔案庫，並且可以使用 STEP、DXF、DWG 和 PDF 格式的檔案進行設計。這個專案的賣點在於它降低了進入門檻，讓愛好者和學生能夠接觸到真實的設計檔案，進而促進硬體社群的成長。技術上，這些檔案的開放性設計使得社群能夠探索更深層的硬體變更和創新，並且提供了實際的教育價值。
+這個專案提供了 Keychron 鍵盤和滑鼠的生產級硬體設計檔案，包括 STEP、DXF、DWG 和 PDF 格式，讓使用者能夠學習、改編和設計兼容配件。使用者可以透過這些設計檔案來研究實際的工業設計，並進行個性化的改裝。這樣的開放設計不僅降低了入門門檻，還擴展了社群的創新能力，讓愛好者能夠探索新的材料和結構變化。專案的核心賣點在於提供真實的設計檔案，讓使用者能夠從中學習並創造出兼容的配件。技術上，這些檔案涵蓋了多種型號和設計，並且允許商業用途的兼容配件，這在硬體設計領域是相對少見的。
 
-與其他專案相比，如 0xGF/boneyard 和 AlpinDale/parsync，這個專案專注於鍵盤和滑鼠的設計，並且支持商業用途的兼容配件，這在硬體設計領域中是相對少見的。使用者可以在 Keychron Discord 社群中交流和分享他們的設計，這進一步增強了社群的互動性和支持。這個專案的活躍度相對較高，最近的更新顯示出持續的維護和增長。對於想要進行硬體設計或改裝的開發者來說，這是一個非常值得考慮的資源。
+與其他設計資源相比，這個專案不僅提供了設計檔案，還鼓勵社群參與和貢獻，這使得它在開源硬體設計中顯得尤為重要。使用者可以在 CAD 軟體中開啟這些檔案，並根據自己的需求進行修改。這個專案的設計理念是促進社群的成長和創新，並且反映了對使用者的信任和透明度。雖然目前的設計檔案數量已經相當可觀，但仍有一些型號的檔案缺失，這在社群中引發了一些討論和需求。整體來看，這是一個值得關注的專案，特別是對於對鍵盤設計和硬體改裝有興趣的使用者。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 多種檔案格式 — 提供 STEP、DXF、DWG 和 PDF 格式的設計檔案，方便不同需求的使用者。
-- 兼容配件設計 — 允許商業用途的兼容配件，促進社群創新。
-- 豐富的模型庫 — 包含 100 多個鍵盤和滑鼠模型，滿足各種設計需求。
-- 社群支持 — 提供 Discord 社群平台，讓使用者交流和分享設計。
-- 詳細的文件指引 — 包含檔案格式指南和入門指南，幫助新手快速上手。
+- 多種格式支持 — 提供 STEP、DXF、DWG 和 PDF 格式，適用於不同的 CAD 軟體。
+- 超過 100 種型號 — 包含多個 Keychron 鍵盤和滑鼠的設計檔案，滿足不同需求。
+- 社群貢獻 — 鼓勵使用者修正和改進設計，促進社群的參與。
+- 商業兼容 — 允許商業用途的兼容配件設計，擴大了應用範圍。
+- 詳細的文件指導 — 提供文件格式指南和入門指南，幫助新手快速上手。
 
 ## 快速開始
 
-1. 克隆庫
+1. 克隆專案
 ```bash
 git clone https://github.com/Keychron/Keychron-Keyboards-Hardware-Design.git
 ```
-2. 查看檔案
+2. 瀏覽鍵盤檔案
 ```bash
-cd Keychron-Keyboards-Hardware-Design
+cd Keychron-Keyboards-Hardware-Design/Q-Series/
 ```
-3. 生成檔案庫
+3. 開啟檔案
 ```bash
-python scripts/repo_inventory.py
+使用 CAD 軟體打開所需的檔案格式
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 2145 stars（358/天），forks 155（7.2%），這顯示出強烈的社群興趣。這個專案由 Keychron 團隊開發，他們在鍵盤市場上已有良好的聲譽，並且提供了之前沒有的開放設計檔案，讓使用者能夠自定義和改裝硬體。這樣的開放性設計在硬體領域中相對少見，吸引了許多愛好者和設計師的關注。社群的活躍度和持續的更新也促進了使用者的參與和貢獻。
+> 建立 6 天就累積 2147 stars（358/天），forks 155（7.2%），這顯示出強烈的社群興趣。專案的主要貢獻者 Keychron 是知名的鍵盤品牌，過去在鍵盤設計上有良好的聲譽。這個專案解決了硬體設計資源不足的問題，讓使用者可以直接獲得高品質的設計檔案，而不必從零開始。社群的需求和參與度也促進了這個專案的快速成長。隨著開源硬體的興起，這樣的資源變得越來越重要，特別是在 DIY 和客製化的市場中。
 
 ## 適合誰使用
 
-**目標受眾**：對鍵盤設計和改裝有興趣的硬體愛好者和工程師。
+**目標受眾**：對鍵盤設計和硬體改裝有興趣的工程師和設計師。
 
 > [!example] 使用場景
-> - 硬體設計師用它來研究 Keychron 鍵盤的設計，因為可以直接獲得真實的 CAD 檔案，降低了設計的學習曲線。
-> - 學生用它來學習工業設計，因為可以從實際的設計檔案中獲得靈感，並進行改編和實驗。
-> - DIY 鍵盤愛好者用它來製作兼容的配件，因為這些設計檔案支持商業用途，能夠創造獨特的產品。
+> - 硬體設計師用它來研究 Keychron 鍵盤的設計，因為可以直接獲得高品質的 CAD 檔案，節省了大量的設計時間。
+> - 學生用它來學習工業設計，因為可以透過實際的設計檔案了解設計原則和製造流程。
+> - DIY 愛好者用它來製作兼容的鍵盤配件，因為這些檔案提供了必要的結構和尺寸資訊，讓改裝變得容易。
 
 ## 架構分析
 
-這個專案的架構基於開放的硬體設計檔案，使用者可以通過 CAD 軟體來查看和修改這些檔案。設計選擇上，專案使用了多種檔案格式（如 STEP 和 DXF），以便於不同的設計需求。這樣的選擇使得使用者能夠在不同的環境中使用這些檔案，但也增加了學習的複雜度。擴展性方面，這些檔案的開放性設計使得社群能夠創造兼容的配件，進一步增強了生態系統的發展。整體而言，這個專案的設計考量了使用者的需求和社群的參與，並且在商業用途上保持了合理的限制。
+這個專案的架構以文件為核心，提供多種格式的設計檔案，讓使用者能夠在不同的 CAD 軟體中使用。選擇使用 STEP 和 DXF 格式是因為它們在工業設計中廣泛使用，能夠兼容多數 CAD 軟體。資料流方面，使用者可以直接從 GitHub 獲取檔案，並在本地環境中進行修改和設計。這種設計使得使用者能夠快速上手，但也要求使用者具備一定的 CAD 操作知識。擴展性方面，這個專案的設計檔案可以被社群進一步改進和擴展，這樣的開放性促進了創新，但也可能導致檔案的質量參差不齊。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於提供開放的 CAD 檔案，使用者可以透過 STEP 和 DXF 格式進行設計和修改。這些檔案的設計考量了實際的生產需求，讓使用者能夠學習到真實的工業設計原則。效能方面，這些檔案的大小和複雜度取決於具體的模型，使用者需要一定的計算資源來處理大型檔案。設計選擇上，使用 Python 進行檔案管理和生成，這使得整體架構相對輕量，但對於不熟悉 Python 的使用者來說，可能會增加學習成本。技術風險方面，隨著社群的擴展，如何保持檔案的質量和一致性將是未來的一個挑戰。整合方面，這些檔案可以與主流的 CAD 軟體兼容，但使用者需要根據具體的需求進行調整，這可能會造成一定的摩擦點。
+這個專案的核心技術機制在於提供多種格式的設計檔案，讓使用者能夠在不同的 CAD 軟體中使用。使用 STEP 和 DXF 格式的選擇，讓這些檔案能夠被廣泛應用於工業設計領域。效能方面，這些檔案的大小和複雜度取決於具體的設計，但通常能夠在主流 CAD 軟體中流暢運行。設計取捨方面，選擇開放設計的方式促進了社群的參與，但也對檔案的質量和一致性提出了挑戰。技術風險方面，隨著社群的擴大，可能會出現檔案質量參差不齊的問題。整合方面，這些檔案可以輕鬆地與現有的設計流程整合，但對於新手來說，學習曲線可能較陡峭。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的指引和範例，安裝過程相對順暢。新手可以通過入門指南快速上手，並且文件有多語言支持，降低了學習門檻。
+> README 文件清晰，提供了多種使用指導和範例；安裝過程相對順暢，但對於 CAD 軟體的使用需要一定的背景知識；有良好的入門指南和社群支持，能夠幫助新手快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供多種檔案格式，方便不同使用者使用。
-> - 社群支持強大，能夠獲得即時幫助和建議。
-> - 開放的設計促進了創新和自定義的可能性。
+> - 提供高品質的設計檔案，適合學習和改裝。
+> - 支持社群貢獻，促進創新和改進。
+> - 商業兼容性允許使用者設計配件，擴大應用範圍。
 
 > [!danger] 缺點
-> - 商業用途受到限制，無法直接販售設計檔案。
-> - 對於新手來說，學習曲線可能較陡峭。
-> - 缺乏對特定硬體的全面支持，可能需要額外的調整。
+> - 某些型號的檔案可能不完整，需持續更新。
+> - 需要 CAD 軟體的基礎知識，對新手有一定門檻。
+> - 不允許複製或銷售 Keychron 產品，限制了商業用途。
 
 > [!warning] 注意事項
-> - 不允許複製和銷售 Keychron 鍵盤或滑鼠。
-> - 不支援對 Keychron 商標的使用。
-> - 檔案僅限於個人和教育用途，商業用途需遵循授權條款。
+> - 不允許複製或銷售 Keychron 鍵盤或滑鼠。
+> - 某些型號的設計檔案仍在更新中，可能不完整。
+> - 需要 CAD 軟體的基礎知識來操作和修改檔案。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於鍵盤的設計和改裝，但不提供如此多的模型和檔案格式。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供硬體設計檔案，但主要針對特定的設備，功能範圍較窄。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供鍵盤設計檔案，但主要針對 3D 打印，而非完整的 CAD 檔案。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於鍵盤固件的設計，與硬體設計無關。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供鍵盤設計資源，但缺乏 Keychron 的商業兼容性和社群支持。 |
 
 ## 替代方案決策
 
@@ -202,16 +203,17 @@ python scripts/repo_inventory.py
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於鍵盤的設計和改裝，但不提供如此多的模型和檔案格式。 | 如果你需要專注於特定鍵盤的設計，並且不需要多種檔案格式。 | medium，因為需要重新適應不同的檔案結構和格式。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 提供硬體設計檔案，但主要針對特定的設備，功能範圍較窄。 | 如果你的需求非常專注於某一特定設備的設計，這可能是更合適的選擇。 | low，因為檔案格式和結構相對簡單。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 3D 打印的鍵盤設計，提供的檔案格式較為單一。 | 如果你的重點在於 3D 打印而非完整的 CAD 設計，則可以選擇這個專案。 | medium，因為需要轉換檔案格式和適應新的設計流程。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於鍵盤固件的設計，與硬體設計無關，提供的資源較為有限。 | 如果你的需求主要是固件開發而非硬體設計，則這個專案更合適。 | low，因為固件和硬體設計的轉換相對簡單。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供鍵盤設計資源，但缺乏 Keychron 的商業兼容性和社群支持。 | 如果你需要一個更靈活的設計資源，而不介意缺乏社群支持，可以考慮這個專案。 | high，因為需要重新適應新的設計標準和流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **Keychron-Keyboards-Hardware-Design** | **boneyard** | **parsync** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於鍵盤的設計和改裝，但不提供如此多的模型和檔案格式。 | 提供硬體設計檔案，但主要針對特定的設備，功能範圍較窄。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的檔案結構和格式。 | low，因為檔案格式和結構相對簡單。 |
-> | 適用場景 | 主要場景 | 如果你需要專注於特定鍵盤的設計，並且不需要多種檔案格式。 | 如果你的需求非常專注於某一特定設備的設計，這可能是更合適的選 |
+> | 維度 | **Keychron-Keyboards-Hardware-Design** | **boneyard** | **parsync** | **Shadowbroker** |
+> | --- | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 專注於 3D 打印的鍵盤設計，提供的檔案格式較為單一。 | 專注於鍵盤固件的設計，與硬體設計無關，提供的資源較為有限。 | 提供鍵盤設計資源，但缺乏 Keychron 的商業兼容性和社群支持。 |
+> | 遷移成本 | - | medium，因為需要轉換檔案格式和適應新的設計流程。 | low，因為固件和硬體設計的轉換相對簡單。 | high，因為需要重新適應新的設計標準和流程。 |
+> | 適用場景 | 主要場景 | 如果你的重點在於 3D 打印而非完整的 CAD 設計，則可以 | 如果你的需求主要是固件開發而非硬體設計，則這個專案更合適。 | 如果你需要一個更靈活的設計資源，而不介意缺乏社群支持，可以考 |
 
 ## 成熟度評估
 
@@ -219,30 +221,30 @@ python scripts/repo_inventory.py
 | --- | --- |
 | 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人學習和實驗，但不建議用於生產環境的核心路徑上。
+> 適合個人學習和實驗，但不建議用於生產環境的核心設計。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 某些模型的檔案可能缺失，需手動查找或請求更新。
-  - 解法：在 GitHub 提交問題，等待社群回應。
-- [MEDIUM] 對於新手來說，檔案格式的多樣性可能造成混淆。
-  - 解法：參考文件中的檔案格式指南。
-- **[HIGH]** 商業用途的限制可能影響某些使用者的需求。
-  - 解法：確保遵循授權條款，並尋求兼容的設計方案。
+- [MEDIUM] 某些型號的檔案缺失，可能影響設計進度
+  - 解法：定期檢查更新，參與社群討論以獲取最新資訊
+- **[HIGH]** 對 CAD 軟體的要求較高，初學者可能難以上手
+  - 解法：參加社群的學習活動或尋找相關的線上課程
+- [MEDIUM] 商業用途的限制可能影響某些使用者的需求
+  - 解法：確保了解授權條款，避免不必要的法律問題
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司進行硬體設計 | 非常適合 | 提供了豐富的設計資源，能夠快速上手。 |
-| 大型企業進行生產級硬體設計 | 不適合 | 商業用途受到限制，無法直接販售設計檔案。 |
-| 學生進行工業設計學習 | 非常適合 | 提供真實的設計檔案，能夠學習到實際的設計原則。 |
-| DIY 鍵盤愛好者進行自定義設計 | 適合 | 開放的設計檔案支持創新和自定義。 |
+| 小型硬體設計團隊 | 非常適合 | 提供了大量的設計資源，能夠加速開發流程。 |
+| 學生學習工業設計 | 適合 | 提供真實的設計檔案，能夠作為學習的實際範本。 |
+| 大型企業的商業產品開發 | 不適合 | 商業用途的限制可能影響產品的開發和銷售。 |
+| DIY 愛好者進行鍵盤改裝 | 非常適合 | 提供了豐富的設計檔案，能夠滿足個性化需求。 |
 
 ## 採用成本分析
 
@@ -251,15 +253,15 @@ python scripts/repo_inventory.py
 | 學習時間 | ~5 小時 |
 | 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，能夠獲得豐富的設計資源，值得投入。
+> 花 5 小時學習 CAD 操作，10 小時整合到現有專案，能夠獲得豐富的設計資源，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該專案不需要高權限，且不存取敏感資料，適合在 CI/CD 中使用。
+> 低風險：專案本身不需要高權限，僅提供設計檔案，不存取敏感資料。依賴鏈的信任程度高，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -343,7 +345,7 @@ python scripts/repo_inventory.py
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和互動。
+**社群活躍度**：社群活躍，定期更新和討論。
 **連結**：[文件](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/docs) · [Discord](https://discord.com/invite/HAYbRrTsjN)
 
 ## 開發動態
@@ -521,7 +523,7 @@ python scripts/repo_inventory.py
 
 相關概念：[[3D 打印]] · [[硬體設計]] · [[開源設計]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[alchaincyf--zhangxuefeng-skill|alchaincyf/zhangxuefeng-skill]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[alchaincyf--zhangxuefeng-skill|alchaincyf/zhangxuefeng-skill]] · [[farzaa--clicky|farzaa/clicky]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]]
 
 [GitHub](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design) · [官方網站](https://www.keychron.com/)
 

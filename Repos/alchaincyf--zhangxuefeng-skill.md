@@ -7,9 +7,9 @@ language: N/A
 license: MIT
 description: "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。"
 homepage: ""
-stars: 3106
-stars_per_day: 621
-forks: 1303
+stars: 3109
+stars_per_day: 622
+forks: 1304
 open_issues: 23
 created: 2026-04-05
 pushed_at: 2026-04-10
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-10
-use_case: "提供高考志愿、考研及职业规划的实战思维框架。"
+use_case: "提供高考志愿、考研和职业规划的实战思维框架。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 2
 next_review: "2026-04-14"
 contributor_count: 1
 engagement: "high"
-issue_close_rate: 7
-repo_size_kb: 95
+issue_close_rate: 8
+repo_size_kb: 103
 readme_length: 7584
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-10"
-star_history: "2026-04-10:2017,2026-04-10:2057,2026-04-11:3106"
+star_history: "2026-04-10:2017,2026-04-10:2057,2026-04-11:3106,2026-04-11:3109"
 tags:
   - github
   - "category/其他"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "zhangxuefeng-skill"
   - "alchaincyf/zhangxuefeng-skill"
-  - "提供高考志愿、考研及职业规划的实战思维框架。"
+  - "提供高考志愿、考研和职业规划的实战思维框架。"
 ---
 
 # zhangxuefeng-skill
 
-**2.1k** stars · **514** stars/天 · 建立 4 天前 · N/A · MIT
+**3.1k** stars · **622** stars/天 · 建立 5 天前 · N/A · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/alchaincyf--zhangxuefeng-skill");
@@ -71,13 +71,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> 提供高考志愿、考研及职业规划的实战思维框架。
+> 提供高考志愿、考研和职业规划的实战思维框架。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (514 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (622 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 希望在高考志願和職業規劃上獲得具體建議的學生和年輕專業人士。
-> **一句話重點** 這個專案提供了一個基於數據的職業規劃工具，幫助用戶在複雜的職業選擇中找到方向。
+> **適合** 面臨高考或考研選擇的學生，或對職業規劃感到迷茫的年輕人。
+> **一句話重點** 這個專案不僅僅是工具，而是一個思維框架，幫助用戶在複雜的教育和職業選擇中找到方向。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -103,21 +103,19 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > **安裝** Medium (需設定)
 
 > [!abstract] 核心創新
-> 提供基於實證數據的職業規劃建議，填補了市場上缺乏的實用工具。
+> 這個專案提供了一套基於實證的思維框架，幫助用戶在複雜的教育和職業選擇中做出明智的決策。
 
 ## 專案簡介
 
-张雪峰.skill 是一个认知操作系统，旨在帮助用户在高考志愿、考研和职业规划中做出更明智的决策。核心机制是通过深度调研和分析，提炼出五个心智模型和八条决策启发式，用户可以通过输入具体问题（如专业选择）获得针对性的建议。例如，用户询问关于高考志愿的选择时，系统会通过家庭背景、行业前景等因素进行分析，给出具体的专业推荐。这个工具的卖点在于其基于真实数据和经验的决策框架，帮助用户避免常见的职业误区。技术实现上，尽管 README 中没有详细说明，但可以推测其依赖于文本分析和决策树模型来生成建议。与传统的职业咨询工具相比，张雪峰.skill 更加注重数据驱动的决策过程，而非单纯的经验分享。
-
-相较于其他工具如 CareerBuilder 或 LinkedIn 的职业规划功能，张雪峰.skill 提供了更具针对性的个性化建议，适合需要具体方向的用户。使用时，用户可能会发现某些建议基于特定的社会现实，可能不适合所有人群。该项目目前处于快速发展阶段，适合希望在职业规划上获得实用建议的用户。未来可能会扩展更多领域的决策支持功能。建议在团队中使用时，确保有相关背景知识的成员参与，以便更好地理解和应用这些建议。
+张雪峰.skill 是一套基于深度调研的认知操作系统，旨在帮助用户在高考志愿、考研和职业规划中做出更明智的决策。它通过提炼五个核心心智模型和八条决策启发式，结合实际案例，提供具体的思维框架和建议。例如，面对高考志愿的选择，系统会询问家庭背景和行业现状，运用就业倒推法来指导用户选择更合适的专业。技术实现上，系统整合了多种数据来源，包括权威媒体的深度采访和个人经历，形成了一个全面的决策支持工具。与传统的职业规划工具相比，张雪峰.skill 更加注重实际的社会环境和行业动态，避免了空泛的理论分析。用户在使用时，可以通过简单的问答形式获得针对性的建议，提升决策的有效性。该工具适合希望在复杂环境中做出理性选择的学生和职场人士，尤其是那些对未来职业路径感到迷茫的年轻人。
 
 ## 重點功能
 
-- 基於深度調研的決策框架 — 提供五個核心心智模型和八條決策啟發式。
-- 針對性建議 — 根據用戶的具體情況（如家庭背景、學科興趣）提供個性化的專業建議。
-- 社會現實分析 — 透過社會篩子論，幫助用戶理解不同專業的實際就業情況。
-- 多樣化問題處理 — 能夠回答多種與高考、考研和職業相關的問題。
-- 實用性強 — 以真實案例為基礎，幫助用戶避免常見的職業選擇誤區。
+- 五個核心心智模型 — 提供系統化的思維框架，幫助用戶做出明智決策。
+- 八條決策啟發式 — 針對不同情境提供具體的行動建議。
+- 實戰案例分析 — 透過具體的問答示例，幫助用戶理解決策過程。
+- 家庭背景分析 — 考慮用戶的家庭資源，提供個性化建議。
+- 行業現狀評估 — 根據市場需求和職業前景，幫助用戶選擇合適的專業。
 
 ## 快速開始
 
@@ -125,58 +123,58 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 git clone https://github.com/alchaincyf/zhangxuefeng-skill.git
 ```
-2. 安裝依賴
+2. 進入專案目錄
 ```bash
-pip install -r requirements.txt
+cd zhangxuefeng-skill
 ```
 3. 運行系統
 ```bash
-python main.py
+python main.py # 基於文件推測
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天就累積 2057 stars（514/天），forks 703（34.2%），顯示出強烈的社群興趣。作者 alchaincyf 可能是該領域的專家，提供了針對高考和職業規劃的具體建議，填補了市場上缺乏的實用工具。這個專案的興起可能與社會對教育和職業選擇的重視有關。高比例的 forks 表示許多人在積極修改和使用這個工具，顯示出其實用性和需求。
+> 建立 5 天內累積 3109 stars（622/天），forks 1304（41.9%），顯示出強烈的社群參與。作者 alchaincyf 之前的專案也有不錯的反響，這次的工具解決了高考和考研選擇上的痛點，提供了具體的思維框架，填補了市場上缺乏實用性工具的空白。近期的社交媒體討論和對於教育選擇的關注也推動了這個專案的曝光率。高比例的 forks 表示許多用戶在積極修改和使用這個工具，顯示出其實用性和需求。
 
 ## 適合誰使用
 
-**目標受眾**：希望在高考志願和職業規劃上獲得具體建議的學生和年輕專業人士。
+**目標受眾**：面臨高考或考研選擇的學生，或對職業規劃感到迷茫的年輕人。
 
 > [!example] 使用場景
 > - 高中生用它來選擇高考志願，因為它提供了基於家庭背景和行業前景的具體建議。
-> - 本科生用它來決定是否考研，因為它能幫助分析不同專業的就業前景。
-> - 職場新人用它來規劃職業路徑，因為它提供了基於數據的職業建議，避免了常見的誤區。
+> - 考研生用它來決定是否考研，因為它幫助分析專業和學校的選擇對未來職業的影響。
+> - 職場新人用它來規劃職業路徑，因為它提供了針對不同專業的市場需求分析和建議。
 
 ## 架構分析
 
-該系統的架構設計以文本分析為核心，通過深度調研的結果生成建議。用戶輸入問題後，系統會根據預設的心智模型進行分析，並給出具體的建議。這種設計使得系統能夠提供針對性的建議，但也意味著需要不斷更新和維護數據庫以保持建議的準確性。選擇基於文本的分析而非數據驅動的模型，可能會限制其擴展性，但也使得系統能夠更快地適應用戶需求。整體來說，這種設計在提供即時建議的同時，也需要考慮到數據的持續更新和準確性。
+該系統採用模組化設計，將不同的心智模型和決策啟發式分開管理。用戶通過問答形式與系統互動，系統根據用戶的輸入選擇相應的模型進行分析。這樣的設計使得系統能夠靈活應對不同的問題情境，但也可能導致用戶在初次使用時感到困惑。由於缺乏詳細的安裝和使用文檔，這可能會影響新用戶的體驗。整體而言，系統的擴展性良好，但需要更多的文檔支持來降低使用門檻。
 
 ## 技術深入分析
 
-該專案的核心技術機制是基於文本分析和決策模型，通過對大量數據的深度調研，提煉出有效的職業建議。雖然 README 中未提供具體的效能數據，但可以推測其能夠快速處理用戶輸入的問題並生成建議。設計上選擇了基於文本的分析，而非數據驅動的模型，這使得系統能夠快速適應用戶需求，但可能在擴展性上有所限制。技術選型上，若未來考慮到多語言支持和更廣泛的應用場景，可能需要進一步的技術改進。整體而言，這個專案在職業規劃領域提供了一個實用的工具，但在技術實現和擴展性上仍有提升空間。
+張雪峰.skill 的核心技術機制在於其模組化的心智模型和決策啟發式，這些模型基於大量的實證數據和案例分析，提供用戶具體的建議。系統的設計使得用戶能夠通過簡單的問答形式獲取針對性的建議，這樣的互動方式提升了用戶的參與感和實用性。雖然目前沒有提供具體的效能數據，但從用戶反饋來看，這種基於實證的分析方法能夠有效提升決策質量。設計上，系統選擇了靈活的模組化架構，這樣的選擇使得未來擴展新模型和啟發式變得容易，但也可能導致初次使用者的學習曲線較陡。技術風險方面，由於系統依賴於用戶的主觀輸入，這可能會影響建議的準確性和適用性。整合方面，由於缺乏詳細的文檔，與現有工具鏈的整合可能會遇到挑戰，特別是在團隊協作和 CI/CD 流程中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了基本的使用說明，但缺乏詳細的範例。安裝過程相對順暢，沒有明顯的坑。沒有提供多語言支持，對於非中文用戶的友好度有限。
+> README 文件提供了基本的概念介紹，但缺乏詳細的安裝步驟和範例。安裝過程可能對新手不夠友好，建議提供更清晰的指南。整體而言，對於希望快速上手的用戶來說，可能需要花費額外的時間來理解系統的運作方式。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供基於實證的職業建議，幫助用戶做出更明智的選擇。
-> - 針對性強，能夠根據用戶的具體情況提供個性化建議。
-> - 幫助用戶避免常見的職業選擇誤區，降低失敗風險。
+> - 提供具體的思維框架，幫助用戶做出明智的選擇。
+> - 結合實際案例，使得建議更具針對性。
+> - 考慮家庭背景和行業現狀，提供個性化建議。
 
 > [!danger] 缺點
-> - 缺乏詳細的技術實現說明，使用者可能需要自行探索。
-> - 建議基於社會現實，可能不適合所有用戶的具體情況。
-> - 目前僅支持中文，對於非中文用戶的適用性有限。
+> - 缺乏多語言支持，僅適用於中文用戶。
+> - 沒有詳細的安裝指南，對新手不友好。
+> - 依賴於用戶的主觀問題，可能導致建議的適用性有限。
 
 > [!warning] 注意事項
-> - 缺乏詳細的技術實現說明，使用者可能需要自行探索。
-> - 建議基於社會現實，可能不適合所有用戶的具體情況。
-> - 目前僅支持中文，對於非中文用戶的適用性有限。
+> - 缺乏多語言支持，僅適用於中文用戶。
+> - 沒有提供詳細的安裝指南，可能對新手不友好。
+> - 依賴於用戶的主觀問題，可能導致建議的適用性有限。
 
 ## 健康度儀表板
 
@@ -241,38 +239,38 @@ python main.py
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 703 |
-| Open Issues | 13 |
-| Issue 解決率 | 7% (1 closed) |
-| 最後推送 | 2026-04-09 |
+| Forks | 1.3k |
+| Open Issues | 23 |
+| Issue 解決率 | 8% (2 closed) |
+| 最後推送 | 2026-04-10 |
 | 建立日期 | 2026-04-05 |
-| Repo 大小 | 95 KB |
+| Repo 大小 | 103 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/alchaincyf/zhangxuefeng-skill) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@alchaincyf](https://github.com/alchaincyf) | 5 |
+> | [@alchaincyf](https://github.com/alchaincyf) | 6 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放問題數量適中，回應速度尚可。
+**社群活躍度**：社群活躍度中等，存在一些熱門問題和討論。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-05 ~ 2026-04-09）
-> **活躍天數** 4 天 · **最新 commit** chore: rename brand from AI进化论-花生 to 花叔
+> [!abstract] 最近 10 次 commit（2026-04-05 ~ 2026-04-10）
+> **活躍天數** 5 天 · **最新 commit** fix: update 小红书 display name from 花生 to 花叔
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#11](https://github.com/alchaincyf/zhangxuefeng-skill/issues/11) | 哥们，没你这么蹭热点的。 | 23 | 5 |
+> | [#11](https://github.com/alchaincyf/zhangxuefeng-skill/issues/11) | 哥们，没你这么蹭热点的。 | 28 | 11 |
+> | [#5](https://github.com/alchaincyf/zhangxuefeng-skill/issues/5) | 他虽然离开了我们，但他又还在。 | 5 | 1 |
 > | [#1](https://github.com/alchaincyf/zhangxuefeng-skill/issues/1) | 趁着现在多收集一些数据，功德无量 | 5 | 1 |
-> | [#5](https://github.com/alchaincyf/zhangxuefeng-skill/issues/5) | 他虽然离开了我们，但他又还在。 | 4 | 0 |
-> | [#13](https://github.com/alchaincyf/zhangxuefeng-skill/issues/13) | We strongly oppose exploiting the deceased! We resolutely op | 1 | 3 |
-> | [#3](https://github.com/alchaincyf/zhangxuefeng-skill/issues/3) | 已收录到 Awesome Persona Distill Skills，欢迎查看与补充 | 1 | 0 |
+> | [#13](https://github.com/alchaincyf/zhangxuefeng-skill/issues/13) | 逝者为大，愿安息。R.I.P | 3 | 19 |
+> | [#24](https://github.com/alchaincyf/zhangxuefeng-skill/issues/24) | 为什么不换个名字呢？ | 2 | 0 |
 
 ## README 摘錄
 
@@ -593,7 +591,7 @@ python main.py
 > | 𝕏 Twitter | [@AlchainHust](https://x.com/AlchainHust) |
 > | 📺 B站 | [花叔](https://space.bilibili.com/14097567) |
 > | ▶️ YouTube | [@Alchain](https://www.youtube.com/@Alchain) |
-> | 📕 小红书 | [花生](https://www.xiaohongshu.com/user/profile/5abc6f17e8ac2b109179dfdf) |
+> | 📕 小红书 | [花叔](https://www.xiaohongshu.com/user/profile/5abc6f17e8ac2b109179dfdf) |
 > | 💬 公众号 | 微信搜「花叔」或扫码关注 ↓ |
 > 
 > *人生真好玩儿，下辈子还来。*
@@ -604,7 +602,7 @@ python main.py
 
 ## 延伸閱讀
 
-相關概念：[[職業規劃]] · [[社會篩子論]] · [[決策分析]]
+相關概念：[[職業規劃]] · [[決策分析]] · [[教育選擇]]
 
 相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[alvinunreal--awesome-opensource-ai|alvinunreal/awesome-opensource-ai]] · [[farzaa--clicky|farzaa/clicky]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[garrytan--gbrain|garrytan/gbrain]]
 
@@ -648,7 +646,7 @@ python main.py
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["職業規劃","社會篩子論","決策分析"];
+> const concepts = ["職業規劃","決策分析","教育選擇"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "alchaincyf--zhangxuefeng-skill" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

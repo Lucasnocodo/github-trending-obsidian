@@ -7,16 +7,16 @@ language: TypeScript
 license: MIT
 description: "Garry's Opinionated OpenClaw/Hermes Agent Brain"
 homepage: ""
-stars: 2528
-stars_per_day: 506
-forks: 274
-open_issues: 20
+stars: 2572
+stars_per_day: 514
+forks: 282
+open_issues: 21
 created: 2026-04-05
 pushed_at: 2026-04-11
 first_seen: 2026-04-11
 week: "2026-W15"
 month: "2026-04"
-category: "其他"
+category: "開發工具"
 subcategory: "知識管理"
 release_tag: ""
 install_complexity: "medium"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-11
-use_case: "提供一個基於 Postgres 的個人知識管理系統，結合關鍵字和向量搜索，幫助用戶更有效地管理和檢索信息。"
+use_case: "提供一個基於 Postgres 的個人知識管理系統，結合關鍵字和向量搜索，讓使用者能快速查詢和更新知識。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,20 +42,20 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-11"
-star_history: "2026-04-11:2528"
+star_history: "2026-04-11:2528,2026-04-11:2572"
 tags:
   - github
-  - "category/其他"
+  - "category/開發工具"
   - "lang/typescript"
 aliases:
   - "gbrain"
   - "garrytan/gbrain"
-  - "提供一個基於 Postgres 的個人知識管理系統，結合關鍵字和向量搜索，幫助用戶更有效地管理和檢索信息。"
+  - "提供一個基於 Postgres 的個人知識管理系統，結合關鍵字和向量搜索，讓使用者能快速查詢和更新知識。"
 ---
 
 # gbrain
 
-**2.5k** stars · **506** stars/天 · 建立 5 天前 · TypeScript · MIT
+**2.6k** stars · **514** stars/天 · 建立 5 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/garrytan--gbrain");
@@ -71,13 +71,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> 提供一個基於 Postgres 的個人知識管理系統，結合關鍵字和向量搜索，幫助用戶更有效地管理和檢索信息。
+> 提供一個基於 Postgres 的個人知識管理系統，結合關鍵字和向量搜索，讓使用者能快速查詢和更新知識。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (506 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (514 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要高效管理和檢索大量信息的專業人士，如企業管理者、研究人員或自由職業者。
-> **一句話重點** GBrain 不僅是個知識管理工具，更是隨著使用者的互動而不斷增長的智能系統。
+> **適合** 需要管理大量資料並希望自動化知識更新的專業人士，例如企業高管或研究人員。
+> **一句話重點** GBrain 的設計不僅是為了管理知識，更是為了讓使用者的知識隨著時間不斷增長和更新。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -100,27 +100,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到高效的知識管理系統，值得考慮。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到高效的知識管理工具，值得投入。
 
 > [!abstract] 核心創新
-> GBrain 提供了一個基於 Postgres 的混合搜索系統，能夠在大量 markdown 文件中快速檢索信息。
+> GBrain 提供混合搜索能力，結合關鍵字和向量搜索，讓使用者能在龐大資料中快速找到所需信息。
 
 ## 專案簡介
 
-GBrain 是一個基於 Postgres 的個人知識管理系統，旨在幫助用戶有效地管理和檢索信息。用戶可以通過 CLI 指令 `gbrain import /path/to/brain/` 將 markdown 文件導入系統，並利用混合搜索技術（關鍵字和向量搜索）來快速檢索信息。這種設計使得用戶能夠在面對大量數據時，仍能快速找到所需的內容，避免了傳統 grep 工具在大數據量下的性能瓶頸。GBrain 的架構包括一個 markdown 文件庫作為真實數據源，Postgres 作為數據庫，並透過 AI Agent 進行數據的讀取和寫入，形成一個持續增長的知識庫。這種設計使得用戶的知識隨著時間推移而不斷增長，形成一個智能的知識管理系統。GBrain 的賣點在於它能夠讓用戶在日常使用中，不斷累積和更新知識，並且能夠在需要時迅速查詢。
+GBrain 是一個結合 Postgres 和向量搜索的個人知識管理系統，旨在幫助使用者有效管理和檢索大量資料。其核心機制是將 markdown 文件作為知識的來源，使用者可以透過 CLI 指令 `gbrain import /path/to/brain/` 將資料導入系統，並利用 `gbrain search` 進行查詢。GBrain 的設計重點在於提供混合搜索能力，結合關鍵字搜索和向量搜索，以便在大量資料中快速找到所需信息。這種設計使得在面對大量資料時，使用者不再依賴於傳統的 grep 工具，因為 GBrain 能夠即時更新索引，並在幾毫秒內返回查詢結果。技術上，GBrain 使用了 Postgres 和 pgvector 來實現高效的資料檢索，並且支援增量更新，這在處理大量 markdown 文件時特別重要。
 
-其技術實作上，GBrain 使用了 Postgres 和 pgvector 來支持高效的數據檢索，並且依賴於一系列的 npm 包來實現功能，整體依賴樹相對輕量。與其他工具相比，GBrain 的混合搜索能力使其在處理大量 markdown 文件時，能夠提供更快的查詢響應時間，特別適合需要管理大量信息的用戶。使用 GBrain 時，常見的挑戰包括設置和維護 Postgres 數據庫，並確保數據的持續同步。這個專案目前處於 beta 階段，對於需要長期管理和檢索信息的用戶來說，GBrain 是一個值得考慮的選擇。適合的使用場景包括需要管理大量會議記錄、電子郵件和文檔的專業人士，或是希望建立個人知識庫的研究者。
+與其他知識管理工具相比，如 Notion 或 Roam Research，GBrain 更加專注於結合 AI 代理和知識更新的自動化，讓使用者的知識隨著時間不斷增長。這種設計的優勢在於，使用者不需要手動更新資料，系統會自動追蹤和記錄變更，並且能夠在多次查詢中保持上下文。雖然 GBrain 的學習曲線相對較陡，但對於需要處理大量資料的專業人士來說，這種自動化的知識管理方式能顯著提高工作效率。未來，隨著功能的持續增強，GBrain 有潛力成為個人知識管理的主流工具之一。適合需要管理大量資料並希望自動化知識更新的使用者，例如企業高管或研究人員。
 
-**技術棧**：`PostgreSQL` · `pgvector` · `Bun`
+**技術棧**：`PostgreSQL 16` · `pgvector` · `Bun`
 
 ## 重點功能
 
-- 混合搜索 — 結合關鍵字和向量搜索，提供更精確的檢索結果。
-- Markdown 文件導入 — 使用 `gbrain import /path/to/brain/` 指令輕鬆導入 markdown 文件。
-- 自動更新 — AI Agent 能夠自動更新知識庫，保持信息的最新狀態。
-- 數據同步 — 使用 `gbrain sync --watch` 指令自動同步 markdown 文件的變更。
-- 文件存儲遷移 — 支持將二進制文件遷移到雲端，減少 git repo 的大小。
+- 混合搜索 — 結合關鍵字和向量搜索，快速檢索資料。
+- 自動更新 — AI 代理自動更新知識庫，保持資料的即時性。
+- Markdown 支援 — 以 markdown 文件作為知識的來源，易於編輯和管理。
+- 增量索引 — 當資料變更時，系統能即時更新索引，無需全目錄掃描。
+- CLI 操作 — 提供簡單的命令行介面，方便用戶進行資料導入和查詢。
 
 ## 快速開始
 
@@ -128,78 +128,70 @@ GBrain 是一個基於 Postgres 的個人知識管理系統，旨在幫助用戶
 ```bash
 bun update gbrain
 ```
-2. 運行設置向導
+2. 執行初始化向導
 ```bash
-gbrain init --url postgresql://user:pass@host:5432/dbname
+gbrain init --supabase
 ```
 3. 導入 markdown 文件
 ```bash
 gbrain import /path/to/brain/
 ```
 
-## 程式碼範例
-
-```ts
-{
-  "前置條件": "已安裝 GBrain 並設置好 Postgres 數據庫",
-  "指令": "gbrain import /path/to/brain/",
-  "預期輸出": "導入過程中顯示進度條，並在完成後顯示導入成功的消息。"
-}
-```
-
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天內累積 2528 stars（506/天），forks 274（10.8%），顯示出強烈的社群關注。作者 Garry Tan 以其在 OpenClaw 領域的專業背景，針對知識管理的痛點提出了這個解決方案。GBrain 的出現填補了傳統工具在面對大量數據時的不足，提供了更高效的檢索方式。社群的反饋和需求促進了這個專案的快速成長，並且在技術生態中，Postgres 的使用使得這個工具的可行性大幅提升。forks/stars 比率為 10.8%，顯示出許多用戶對於這個工具的實際修改和使用需求。
+> 建立 5 天內累積 2572 stars（514/天），forks 282（11.0%），顯示出強烈的社群興趣。作者 Garry Tan 之前在知識管理和 AI 領域有豐富的經驗，這個專案解決了傳統知識管理工具在面對大量資料時的效率問題。GBrain 提供的混合搜索功能和自動更新的知識模型，讓使用者能夠在資料量龐大時仍能快速檢索，這是許多現有工具無法達到的。社群的反應也顯示出對於這種創新的知識管理方式的期待，特別是在 AI 代理的應用上。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效管理和檢索大量信息的專業人士，如企業管理者、研究人員或自由職業者。
+**目標受眾**：需要管理大量資料並希望自動化知識更新的專業人士，例如企業高管或研究人員。
 
 > [!example] 使用場景
-> - 企業管理者用它來快速查詢過去的會議記錄和決策，因為能夠在數千條記錄中迅速找到相關信息，節省了大量時間。
-> - 研究人員用它來整理和檢索文獻資料，因為 GBrain 的混合搜索技術能夠提供更精確的結果，提升研究效率。
-> - 自由職業者用它來管理客戶資料和項目進度，因為能夠自動更新和整理信息，減少了手動維護的負擔。
+> - 企業高管用它來管理會議記錄和重要聯絡人資料，因為 GBrain 能夠自動更新和檢索關鍵信息，節省了大量手動整理的時間。
+> - 研究人員用它來整合和查詢過去的研究資料，因為其混合搜索功能能快速找到相關文獻和數據，提升研究效率。
+> - 內容創作者用它來管理靈感和草稿，因為 GBrain 能自動追蹤和整理創意，讓創作過程更加流暢。
 
 ## 架構分析
 
-GBrain 的架構由三個主要部分組成：一個 markdown 文件庫作為真實數據源，Postgres 作為數據庫，和 AI Agent 負責數據的讀取和寫入。這種設計使得用戶能夠在日常使用中不斷累積和更新知識。資料流方面，markdown 文件經由 `gbrain import` 導入到 Postgres 中，然後 AI Agent 透過混合搜索技術進行查詢和更新。
+GBrain 的架構由三個主要部分組成：Brain Repo、GBrain 和 AI Agent。Brain Repo 是一個 git 儲存庫，存放 markdown 文件，作為知識的來源。GBrain 負責檢索和索引資料，使用 Postgres 和 pgvector 來實現高效的資料檢索。
 
-選擇 Postgres 和 pgvector 是因為它們能夠提供高效的數據檢索能力，這對於處理大量文本數據至關重要。這樣的設計雖然增加了系統的複雜度，但卻能顯著提升檢索性能。擴展性方面，隨著數據量的增加，可能需要進行性能調優，以確保系統能夠持續高效運行。
+AI Agent 則負責讀取和寫入資料，並根據使用者的需求進行知識更新。這種設計使得 GBrain 能夠在資料量龐大時仍能保持高效的檢索性能。選擇 Postgres 作為資料庫的原因在於其強大的查詢能力和擴展性，而 pgvector 則提供了對向量資料的支援，這在處理複雜查詢時非常有用。
+
+整體架構的設計考量了資料的即時性和可擴展性，能夠隨著使用者需求的增長而調整。未來可能需要考慮資料庫的性能優化，以應對更大規模的資料處理需求。
 
 ## 技術深入分析
 
-GBrain 的核心技術機制包括使用 Postgres 作為後端數據庫，並結合 pgvector 提供高效的向量檢索能力。這使得 GBrain 能夠在面對大量 markdown 文件時，仍能保持快速的查詢響應時間。效能方面，GBrain 能夠處理數千個 markdown 文件，並在導入過程中保持良好的性能。設計取捨方面，選擇 Postgres 而非 NoSQL 數據庫是因為其在處理複雜查詢和關聯數據時的優勢，雖然這樣可能增加了系統的複雜度。技術風險方面，隨著數據量的增加，可能會面臨性能瓶頸，特別是在高並發查詢的情況下。整合分析方面，GBrain 與主流的開發框架（如 React 或 Vue）整合難度較低，但需要用戶具備一定的數據庫知識以便於設置和維護。
+GBrain 的核心技術機制是結合了 Postgres 和 pgvector，實現了高效的資料檢索和更新。系統使用了增量索引的方式，當資料變更時，能即時更新索引，這在處理大量 markdown 文件時特別重要。效能上，GBrain 能夠在幾毫秒內返回查詢結果，這對於需要快速檢索的使用者來說非常關鍵。選擇 Postgres 作為資料庫的原因在於其強大的查詢能力和擴展性，而 pgvector 則提供了對向量資料的支援，這在處理複雜查詢時非常有用。設計上，GBrain 旨在減少使用者的手動維護工作，透過 AI 代理自動更新知識庫，讓使用者能專注於更重要的決策。技術風險方面，隨著資料量的增長，可能會出現性能瓶頸，因此需要定期進行性能優化。整合方面，GBrain 與主流的開發工具和 CI/CD pipeline 友好，能輕鬆融入現有的工作流中，降低了學習成本和整合摩擦。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且詳細，提供了安裝和使用的具體指導。安裝過程相對順暢，但需要用戶具備一定的數據庫知識。文件中包含了多個範例和指令，幫助用戶快速上手。
+> README 文件提供了清晰的安裝和使用指導，並包含了範例指令。安裝過程相對順暢，但對於不熟悉 Postgres 的用戶可能會有一些挑戰。文件中有詳細的設置向導，能幫助新手快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 高效的混合搜索能力，能夠快速檢索大量信息。
-> - 支持自動更新和同步，減少手動維護的工作量。
-> - 結合 markdown 文件的靈活性，適合多種使用場景。
+> - 提供混合搜索功能，能快速檢索大量資料。
+> - AI 代理自動更新知識庫，減少手動維護的需求。
+> - Markdown 支援使得資料易於編輯和管理，符合開發者的習慣。
 
 > [!danger] 缺點
-> - 需要安裝和配置 Postgres，對於不熟悉數據庫的用戶可能有挑戰。
-> - 在處理極大數據集時，可能需要進行性能調整。
-> - 目前僅支持 Postgres，對於其他數據庫的支持尚未實現。
+> - 需要 Postgres 作為後端，對於不熟悉 SQL 的用戶有學習曲線。
+> - 目前僅支援 markdown 文件，對其他格式支援有限。
+> - 在處理極大規模資料時，可能需要額外的性能調優。
 
 > [!warning] 注意事項
-> - 需要安裝 Postgres 和 pgvector，對於不熟悉數據庫的用戶可能有一定的學習曲線。
-> - 在處理非常大的數據集時，可能需要額外的性能調優。
-> - 目前僅支持 Postgres 作為後端，對於其他數據庫的支持尚未實現。
+> - 需要 Postgres 作為後端資料庫，對於不熟悉 SQL 的用戶可能有學習曲線。
+> - 目前僅支援 markdown 文件作為知識來源，對於其他格式的支援有限。
+> - 在處理極大規模的資料時，可能需要額外的性能調優。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 主要針對大型數據集的管理，使用了不同的數據存儲技術，適合需要處理大規模數據的用戶。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 專注於並行數據同步，而 GBrain 更加重視知識的增長和檢索，適合不同的使用場景。 |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | OpenClaw-Medical-Skills 專注於醫療領域的知識管理，GBrain 則提供更通用的知識管理解決方案。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供類似的知識管理功能，但主要依賴於 JSON 文件，而 GBrain 則使用 Postgres 來實現更高效的檢索和更新。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 專注於資料同步，而 GBrain 更加專注於知識的管理和檢索，提供混合搜索功能。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | OpenClaw 主要針對醫療領域的知識管理，而 GBrain 則是一個通用的知識管理工具，適用於各種領域。 |
 
 ## 替代方案決策
 
@@ -207,47 +199,47 @@ GBrain 的核心技術機制包括使用 Postgres 作為後端數據庫，並結
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 使用不同的數據存儲技術，專注於大型數據集的管理，適合需要處理大規模數據的用戶。 | 如果你的項目需要處理超過 10,000 條記錄，並且需要高效的數據管理。 | medium，因為需要重新設計數據結構。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 專注於並行數據同步，與 GBrain 的知識增長和檢索功能有所不同。 | 如果你的應用需要高效的數據同步而非知識管理。 | low，因為可以直接使用類似的數據結構。 |
+| Notion | Notion 提供了一個全功能的知識管理平台，但主要依賴於雲端儲存，而 GBrain 則使用本地 markdown 文件和 Postgres，提供更高的靈活性。 | 如果你的團隊需要一個全功能的協作平台，並且不介意雲端儲存，Notion 會是更好的選擇。 | medium，因為需要將資料從 markdown 轉移到 Notion 的格式。 |
+| Roam Research | Roam Research 提供了類似的知識管理功能，但主要依賴於網頁應用，而 GBrain 則專注於本地資料和 CLI 操作。 | 如果你的團隊偏好使用網頁應用並需要即時協作，Roam Research 會是更好的選擇。 | high，因為需要將資料轉換為 Roam 的格式，並且可能需要手動重組。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **gbrain** | **boneyard** | **parsync** |
+> | 維度 | **gbrain** | **Notion** | **Roam Research** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Boneyard 使用不同的數據存儲技術，專注於大型數據集的管理，適合需要處理大規模數據的用戶。 | Parsync 專注於並行數據同步，與 GBrain 的知識增長和檢索功能有所不同。 |
-> | 遷移成本 | - | medium，因為需要重新設計數據結構。 | low，因為可以直接使用類似的數據結構。 |
-> | 適用場景 | 主要場景 | 如果你的項目需要處理超過 10,000 條記錄，並且需要高效 | 如果你的應用需要高效的數據同步而非知識管理。 |
+> | 技術路線 | 本專案 | Notion 提供了一個全功能的知識管理平台，但主要依賴於雲端儲存，而 GBrain 則使用本地 markdown 文件和 Postgres，提供更高的靈活性。 | Roam Research 提供了類似的知識管理功能，但主要依賴於網頁應用，而 GBrain 則專注於本地資料和 CLI 操作。 |
+> | 遷移成本 | - | medium，因為需要將資料從 markdown 轉移到 Notion 的格式。 | high，因為需要將資料轉換為 Roam 的格式，並且可能需要手動重組。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要一個全功能的協作平台，並且不介意雲端儲存，N | 如果你的團隊偏好使用網頁應用並需要即時協作，Roam Res |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和小型專案，但不建議用於生產環境的核心路徑上。
+> 適合個人試用和探索，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在導入大量文件時，可能會遇到性能瓶頸，導致導入過程變慢。
-  - 解法：分批導入文件，並監控性能。
-- [MEDIUM] Postgres 配置不當可能導致連接問題。
-  - 解法：確保使用正確的連接字符串和配置參數。
-- [MEDIUM] 在高並發查詢時，可能會出現性能下降。
-  - 解法：考慮使用緩存層來減少查詢負擔。
+- **[HIGH]** 在導入大量 markdown 文件時，可能會遇到性能瓶頸，導致導入時間過長。
+  - 解法：可以分批導入文件，減少單次導入的資料量。
+- [MEDIUM] 使用者在設置 Postgres 連接時，可能會遇到配置錯誤。
+  - 解法：確保使用正確的連接字串，並檢查 Postgres 的設定。
+- [MEDIUM] 在更新資料時，可能會導致索引不一致。
+  - 解法：定期運行索引重建指令以保持資料一致性。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要管理大量會議記錄的企業管理者 | 非常適合 | GBrain 能夠快速檢索和更新會議記錄，提升工作效率。 |
-| 研究人員需要整理文獻資料 | 適合 | GBrain 的混合搜索技術能夠提供精確的檢索結果。 |
-| 自由職業者管理客戶資料 | 普通 | 雖然 GBrain 提供了良好的管理功能，但對於小型項目可能過於複雜。 |
-| 小型團隊需要簡單的知識管理工具 | 不適合 | GBrain 的設置和維護對於小型團隊來說可能過於繁瑣。 |
+| 10 人以下的新創公司後端知識管理 | 非常適合 | GBrain 的自動更新和混合搜索功能能有效管理小型團隊的知識。 |
+| 大型企業的知識庫管理 | 普通 | 雖然 GBrain 功能強大，但在大型企業中可能需要更多的性能優化。 |
+| 學術研究團隊的資料管理 | 適合 | GBrain 能夠整合大量研究資料並提供快速檢索，適合學術環境。 |
+| 個人知識管理 | 非常適合 | GBrain 的設計專注於個人知識的增長，能夠隨著時間不斷更新。 |
 
 ## 採用成本分析
 
@@ -259,12 +251,12 @@ GBrain 的核心技術機制包括使用 Postgres 作為後端數據庫，並結
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到高效的知識管理系統，值得考慮。
+> 花 5 小時學習，10 小時整合，得到高效的知識管理工具，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：GBrain 需要連接到 Postgres 數據庫，可能會存取敏感資料，使用時需注意數據安全性。
+> GBrain 本身不需要高權限，但需要正確配置 Postgres 連接。它不會存取敏感資料，但依賴的資料庫需確保安全性。整體來說，使用 GBrain 在 CI/CD 中是安全的，只要遵循最佳實踐。
 
 ## 健康度儀表板
 
@@ -329,8 +321,8 @@ GBrain 的核心技術機制包括使用 Postgres 作為後端數據庫，並結
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 274 |
-| Open Issues | 20 |
+| Forks | 282 |
+| Open Issues | 21 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-04-11 |
 | 建立日期 | 2026-04-05 |
@@ -359,8 +351,8 @@ GBrain 的核心技術機制包括使用 Postgres 作為後端數據庫，並結
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有更新和開發活動。
-**連結**：[文件](https://github.com/garrytan/gbrain/blob/main/README.md)
+**社群活躍度**：社群活躍，最近有多次更新和修復。
+**連結**：[文件](https://github.com/garrytan/gbrain)
 
 ## 開發動態
 
@@ -552,9 +544,9 @@ GBrain 的核心技術機制包括使用 Postgres 作為後端數據庫，並結
 
 ## 延伸閱讀
 
-相關概念：[[知識管理]] · [[AI Agent]] · [[向量資料庫]]
+相關概念：[[知識管理]] · [[向量資料庫]] · [[自動化]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
 
 [GitHub](https://github.com/garrytan/gbrain)
 
@@ -572,7 +564,7 @@ GBrain 的核心技術機制包括使用 Postgres 作為後端數據庫，並結
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "garrytan--gbrain"
+> WHERE category = "開發工具" AND file.name != "garrytan--gbrain"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -596,7 +588,7 @@ GBrain 的核心技術機制包括使用 Postgres 作為後端數據庫，並結
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["知識管理","AI Agent","向量資料庫"];
+> const concepts = ["知識管理","向量資料庫","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "garrytan--gbrain" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
