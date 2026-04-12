@@ -918,17 +918,17 @@
   },
   "alchaincyf/nuwa-skill": {
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-11",
-    "times_seen": 3,
+    "last_seen": "2026-04-12",
+    "times_seen": 4,
     "stars_first": 3895,
-    "stars_last": 6623
+    "stars_last": 7442
   },
   "farzaa/clicky": {
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-11",
-    "times_seen": 3,
+    "last_seen": "2026-04-12",
+    "times_seen": 4,
     "stars_first": 2241,
-    "stars_last": 3566
+    "stars_last": 3780
   },
   "sooryathejas/METATRON": {
     "first_seen": "2026-04-09",
@@ -946,31 +946,31 @@
   },
   "alchaincyf/zhangxuefeng-skill": {
     "first_seen": "2026-04-10",
-    "last_seen": "2026-04-11",
-    "times_seen": 2,
+    "last_seen": "2026-04-12",
+    "times_seen": 3,
     "stars_first": 2017,
-    "stars_last": 3106
+    "stars_last": 4310
   },
   "xixu-me/awesome-persona-distill-skills": {
     "first_seen": "2026-04-10",
-    "last_seen": "2026-04-11",
-    "times_seen": 2,
+    "last_seen": "2026-04-12",
+    "times_seen": 3,
     "stars_first": 1798,
-    "stars_last": 2855
+    "stars_last": 3181
   },
   "LaurieWired/tailslayer": {
     "first_seen": "2026-04-10",
-    "last_seen": "2026-04-10",
-    "times_seen": 1,
+    "last_seen": "2026-04-12",
+    "times_seen": 2,
     "stars_first": 1667,
-    "stars_last": 1667
+    "stars_last": 2028
   },
   "garrytan/gbrain": {
     "first_seen": "2026-04-11",
-    "last_seen": "2026-04-11",
-    "times_seen": 1,
+    "last_seen": "2026-04-12",
+    "times_seen": 2,
     "stars_first": 2528,
-    "stars_last": 2528
+    "stars_last": 4848
   },
   "Keychron/Keychron-Keyboards-Hardware-Design": {
     "first_seen": "2026-04-11",
@@ -978,5 +978,33 @@
     "times_seen": 1,
     "stars_first": 2145,
     "stars_last": 2145
+  },
+  "MemPalace/mempalace": {
+    "first_seen": "2026-04-12",
+    "last_seen": "2026-04-12",
+    "times_seen": 1,
+    "stars_first": 41802,
+    "stars_last": 41802
+  },
+  "alchaincyf/hermes-agent-orange-book": {
+    "first_seen": "2026-04-12",
+    "last_seen": "2026-04-12",
+    "times_seen": 1,
+    "stars_first": 1876,
+    "stars_last": 1876
+  },
+  "KKKKhazix/khazix-skills": {
+    "first_seen": "2026-04-12",
+    "last_seen": "2026-04-12",
+    "times_seen": 1,
+    "stars_first": 1585,
+    "stars_last": 1585
+  },
+  "hotcoffeeshake/tong-jincheng-skill": {
+    "first_seen": "2026-04-12",
+    "last_seen": "2026-04-12",
+    "times_seen": 1,
+    "stars_first": 1559,
+    "stars_last": 1559
   }
 }

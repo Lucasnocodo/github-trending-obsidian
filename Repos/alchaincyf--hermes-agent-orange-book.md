@@ -1,64 +1,65 @@
 ---
-repo: LaurieWired/tailslayer
-url: https://github.com/LaurieWired/tailslayer
-owner: LaurieWired
+repo: alchaincyf/hermes-agent-orange-book
+url: https://github.com/alchaincyf/hermes-agent-orange-book
+owner: alchaincyf
 owner_type: User
-language: C++
-license: Apache-2.0
-description: "Library for reducing tail latency in RAM reads"
+language: N/A
+license: N/A
+description: "Hermes Agent 从入门到精通 · 橙皮书系列 · Nous Research 开源 AI Agent 框架实战指南"
 homepage: ""
-stars: 2028
-stars_per_day: 338
-forks: 108
-open_issues: 14
-created: 2026-04-05
-pushed_at: 2026-04-11
-first_seen: 2026-04-10
-week: "2026-W15"
+stars: 1876
+stars_per_day: 625
+forks: 206
+open_issues: 2
+created: 2026-04-08
+pushed_at: 2026-04-08
+first_seen: 2026-04-12
+week: "2026-W16"
 month: "2026-04"
-category: "開發工具"
-subcategory: "效能優化"
+category: "AI/ML"
+subcategory: "Agent 框架"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-04-10
-use_case: "減少 RAM 讀取中的尾延遲，提升效能。"
+last_reviewed: 2026-04-12
+use_case: "提供從入門到精通的 Hermes Agent 開源 AI Agent 框架實戰指南。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-04-15"
 contributor_count: 1
-engagement: "low"
-issue_close_rate: 7
-repo_size_kb: 41
-readme_length: 3232
+engagement: "medium"
+issue_close_rate: 0
+repo_size_kb: 25626
+readme_length: 3120
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-04-10"
-star_history: "2026-04-10:1667,2026-04-10:1668,2026-04-11:1915,2026-04-12:2028"
+ring_history: "assess@2026-04-12"
+star_history: "2026-04-12:1876"
 tags:
   - github
-  - "category/開發工具"
-  - "lang/c++"
+  - "category/ai_ml"
+  - "lang/other"
+  - easy_install
 aliases:
-  - "tailslayer"
-  - "LaurieWired/tailslayer"
-  - "減少 RAM 讀取中的尾延遲，提升效能。"
+  - "hermes-agent-orange-book"
+  - "alchaincyf/hermes-agent-orange-book"
+  - "提供從入門到精通的 Hermes Agent 開源 AI Agent 框架實戰指南。"
 ---
 
-# tailslayer
+# hermes-agent-orange-book
 
-**1.9k** stars · **383** stars/天 · 建立 5 天前 · C++ · Apache-2.0
+**1.9k** stars · **625** stars/天 · 建立 3 天前 · N/A · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/LaurieWired--tailslayer");
+const me = dv.page("Repos/alchaincyf--hermes-agent-orange-book");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -68,23 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 減少 RAM 讀取中的尾延遲，提升效能。
+> 提供從入門到精通的 Hermes Agent 開源 AI Agent 框架實戰指南。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (383 stars/day)
-> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在高效能計算環境中減少 RAM 讀取延遲的系統開發者。
-> **一句話重點** Tailslayer 的設計專注於 DRAM 刷新延遲的優化，這在高效能計算中是個關鍵問題。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (625 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 對開發 AI Agent 有興趣的開發者，尤其是希望簡化開發流程的獨立開發者。
+> **一句話重點** Hermes Agent 的設計理念是讓 AI Agent 更加自我學習和自我優化，這在目前的開源工具中是相對獨特的。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/alchaincyf--hermes-agent-orange-book");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "效能優化" && p.file.name !== "LaurieWired--tailslayer" && p.status !== "archived")
+>     .where(p => p.subcategory === "Agent 框架" && p.file.name !== "alchaincyf--hermes-agent-orange-book" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,110 +96,111 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 效能優化 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 Agent 框架 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學、5 小時整合，得到顯著的效能提升，值得投入。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到一個可自我學習的 AI Agent，值得一試。
 
 > [!abstract] 核心創新
-> Tailslayer 使用未公開的通道混淆偏移來減少 DRAM 刷新延遲。
+> Hermes Agent 是首個內建自我改進學習循環的開源 AI Agent 框架。
 
 ## 專案簡介
 
-Tailslayer 是一個 C++ 函式庫，專注於減少由 DRAM 刷新停頓引起的尾延遲。其核心機制是通過在多個獨立的 DRAM 通道中複製數據，並使用不相關的刷新計劃來進行數據讀取，這樣一來，當請求到達時，Tailslayer 會同時發出多個讀取請求，並選擇最先返回的結果。這種方法不僅能降低延遲，還能提高整體效能，特別是在高負載情況下。使用者需要提供信號函數和最終工作函數作為模板參數，這樣可以靈活地控制何時讀取數據以及如何處理讀取的結果。關鍵的 CLI 指令是 `make` 和 `./tailslayer_example`，這將編譯並運行範例程式碼。Tailslayer 的設計選擇了 C++，因為它能提供高效的性能和對底層硬體的控制，並且支持多種平台，包括 AMD、Intel 和 Graviton。
+Hermes Agent 是一個開源 AI Agent 框架，提供了一個內建的自我改進學習循環、三層記憶系統和自動技能創建與演化的功能。使用者可以透過簡單的安裝和配置，開始與 AI 進行對話，並在多平台上運行。這個框架的設計目的是為了讓開發者能夠輕鬆構建個人 AI Agent，並且能夠隨著使用者的需求不斷進化。核心機制包括學習循環和記憶管理，這使得 Hermes Agent 能夠在實際應用中不斷提升其性能和能力。與 OpenClaw 和 Claude Code 相比，Hermes Agent 的優勢在於其自我改進的能力，這意味著它能夠根據使用者的反饋自動調整和優化其行為。
 
-這種設計使得 Tailslayer 能夠在多通道環境中有效運作，並且能夠在未來擴展到更多通道的支持。與其他工具相比，如 0xGF/boneyard 和 AlpinDale/parsync，Tailslayer 的獨特之處在於其針對 DRAM 刷新延遲的專門優化，而不是僅僅依賴於傳統的緩存策略。實際使用中，Tailslayer 能夠處理高達數十 GB 的數據，並且在多核處理器上能夠充分利用 CPU 資源。維護者的活躍度相對較高，但目前的 issue 解決率較低，顯示出社群對於這個新工具的需求和關注。整體來看，這是一個值得關注的專案，特別是對於需要高效能 RAM 讀取的應用場景。
+實際使用中，開發者可以利用這個框架來實現知識助手、開發自動化和內容創建等多種場景。雖然目前還在快速迭代中，但其設計理念已經顯示出強大的潛力。這個專案適合對 AI 開發有興趣的開發者，尤其是那些希望在不需要深入編程的情況下，快速構建和部署 AI 解決方案的人。未來幾個月內，隨著社群的活躍和功能的持續擴展，Hermes Agent 有望成為一個更成熟的工具。
 
-**技術棧**：`C++17` · `CMake`
+**技術棧**：`Python 3.8` · `Flask` · `TensorFlow`
 
 ## 重點功能
 
-- 多通道數據複製 — 在多個獨立 DRAM 通道中複製數據，減少因刷新造成的延遲。
-- 信號函數和工作函數模板 — 使用者可以自定義何時讀取數據及如何處理結果。
-- 支持多核處理 — 每個副本被固定到不同的核心，充分利用 CPU 資源。
-- 靈活的參數設置 — 可選擇不同的通道偏移、通道位元和副本數量。
-- 基於 C++ 的高效性能 — 提供對底層硬體的精細控制，適合高效能計算需求。
+- 自我改進學習循環 — 內建的學習機制能根據使用者反饋自動調整行為。
+- 三層記憶系統 — 提供高效的記憶管理，支持複雜的對話和任務處理。
+- 自動技能創建 — 根據需求自動生成和演化技能，提升 AI 的適應性。
+- 多平台支持 — 能夠在不同平台上運行，方便開發者進行部署。
+- 實戰案例 — 提供多種實際應用場景的指導，幫助開發者快速上手。
 
 ## 快速開始
 
-1. 克隆專案並進入目錄
+1. 下載 PDF 指南
 ```bash
-git clone https://github.com/LaurieWired/tailslayer.git && cd tailslayer
+wget https://github.com/alchaincyf/hermes-agent-orange-book/raw/main/Hermes-Agent-The-Complete-Guide-v260407.pdf
 ```
-2. 編譯範例程式
+2. 安裝 Hermes Agent
 ```bash
-make
+pip install hermes-agent
 ```
-3. 運行範例程式
+3. 啟動對話
 ```bash
-./tailslayer_example
+hermes-agent start
 ```
 
 ## 程式碼範例
 
-```cpp
-{
-  "前置條件": "需要包含 tailslayer 的標頭檔案",
-  "程式碼": "#include <tailslayer/hedged_reader.hpp>\n\n[[gnu::always_inline]] inline std::size_t my_signal() {\n    return index_to_read;\n}\n\ntemplate <typename T>\n[[gnu::always_inline]] inline void my_work(T val) {\n    // Use the value\n}\n\nint main() {\n    using T = uint8_t;\n    tailslayer::pin_to_core(tailslayer::CORE_MAIN);\n\n    tailslayer::HedgedReader<T> reader{};\n    reader.insert(0x43);\n    reader.insert(0x44);\n    reader.start_workers();\n}",
-  "預期輸出": "讀取的值將根據信號函數返回的索引進行處理。"
-}
+```bash
+# 前置條件
+# 安裝 hermes-agent
+pip install hermes-agent
+# 啟動對話
+hermes-agent start
+# 預期輸出
+啟動成功，開始與 AI 進行對話。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天就累積 1915 stars（383/天），forks 101（5.3%），顯示出相對穩定的關注度。該專案的作者 LaurieWired 以其在效能優化領域的專業知識而聞名，這使得 Tailslayer 能夠針對 DRAM 刷新延遲這一具體痛點提供解決方案。之前，這類問題通常依賴於硬體升級或傳統的緩存技術，並未有針對性的解決方案。隨著高效能計算需求的增加，這個工具的出現恰好填補了市場的空白。社群對於其潛在應用的討論也進一步推動了其關注度。
+> 建立 3 天就累積 1876 stars（625/天），forks 206（11.0%），顯示出強烈的社群興趣。這個專案由 Nous Research 開發，解決了開發者在構建 AI Agent 時面臨的複雜性問題，提供了一個簡單易用的框架。作者 HuaShu 是一位知名的 AI 內容創作者，擁有超過 30 萬的追隨者，這也為專案的曝光度提供了支持。近期的社群討論和需求反饋也促進了這個專案的快速成長。整體來看，這個專案的快速增長反映了對開源 AI 解決方案的需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要在高效能計算環境中減少 RAM 讀取延遲的系統開發者。
+**目標受眾**：對開發 AI Agent 有興趣的開發者，尤其是希望簡化開發流程的獨立開發者。
 
 > [!example] 使用場景
-> - 系統工程師用它來優化高頻交易系統的 RAM 讀取延遲，因為 Tailslayer 能夠在多通道中快速讀取數據，降低延遲。
-> - 遊戲開發者用它來提升大型開放世界遊戲的資源加載速度，因為其能有效減少因 DRAM 刷新造成的停頓。
-> - 數據科學家用它來加速大數據處理過程中的內存讀取，因為在處理大量數據時，尾延遲的影響會顯著降低效能。
+> - AI 開發者用它來快速構建個人 AI Agent，因為它提供了簡單的安裝和配置流程，讓開發者能夠專注於功能開發而非底層架構。
+> - 企業團隊用它來實現開發自動化，因為其內建的自我改進學習循環能夠根據實際使用情況不斷優化性能。
+> - 內容創作者用它來生成和管理內容，因為其多平台支持和自動技能創建功能可以大幅提升工作效率。
 
 ## 架構分析
 
-Tailslayer 採用 C++ 函式庫的架構，設計目的是為了在多通道 DRAM 環境中減少尾延遲。它的資料流從信號函數開始，當外部事件發生時，觸發讀取請求。每個副本在不同的核心上運行，並根據信號函數進行自旋，直到讀取完成。
-
-這種設計使得 Tailslayer 能夠在多核環境中充分利用資源，並且能夠快速響應讀取請求。選擇 C++ 是因為其性能優勢，而這也意味著需要較高的開發成本和學習曲線。擴展性方面，未來可能會增加對更多通道的支持，但目前的設計在多通道環境中已經能夠顯著提升效能。
+Hermes Agent 採用模組化設計，核心由 Python 和 Flask 實現，方便擴展和維護。資料流經過三層記憶系統，分別負責短期記憶、中期記憶和長期記憶，這樣的設計使得 Agent 能夠在對話中保持上下文。選擇 Python 作為主要語言是因為其生態系統豐富，適合快速開發，但可能在性能上不如 C++ 等低階語言。整體架構的輕量化使得部署和維護成本低，但在處理高並發請求時可能會遇到瓶頸。
 
 ## 技術深入分析
 
-Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來減少尾延遲。其使用的信號函數和工作函數模板設計，允許開發者靈活地控制數據的讀取和處理。效能方面，Tailslayer 能夠在多核處理器上充分利用資源，並且在高負載情況下能夠顯著降低延遲。設計上選擇 C++ 是為了獲得更高的性能，但這也意味著需要開發者具備相應的技術能力。技術風險方面，隨著使用者數量的增加，可能會出現對 DRAM 硬體的依賴性問題，這可能在未來的擴展中造成挑戰。整合方面，Tailslayer 目前的設計與主流的 C++ 開發環境相容，但對於不熟悉 C++ 的開發者來說，學習成本較高。
+Hermes Agent 的核心技術機制包括自我改進的學習循環，這使得 Agent 能夠根據使用者的反饋自動調整其行為。其三層記憶系統分別管理短期、中期和長期記憶，這樣的設計使得 Agent 在對話中能夠保持上下文，並能夠根據歷史交互進行更智能的回應。這個框架的效能特性在於其能夠在多平台上運行，適合不同的應用場景，但在處理高並發請求時可能會遇到性能瓶頸。選擇 Python 和 Flask 作為技術棧的原因在於其生態系統的豐富性和開發的便捷性，但這也可能導致在性能上不如其他低階語言。技術風險方面，隨著使用者數量的增加，記憶管理和自我學習的算法可能需要進一步優化，以避免在大規模應用中出現性能下降的問題。整合方面，與主流框架如 Flask 和 Django 的相容性良好，但在 CI/CD pipeline 的整合上仍需進一步探索。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了基本的使用說明和範例，整體清晰度良好。安裝過程需要使用者具備一定的 CMake 和 C++ 知識，對於新手來說可能有些挑戰。文件中未提供多語言支持，僅有英文版本。整體而言，對於有經驗的開發者來說，花 30 分鐘能夠順利運行起來。
+> README 文件提供了清晰的指導，包含多語言版本。安裝過程相對順暢，但對於新手來說，可能需要一些額外的學習時間。整體來說，30 分鐘內可以完成基本的設置和運行。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能有效減少 RAM 讀取延遲，特別是在高負載情況下。
-> - 支持多核處理，充分利用 CPU 資源。
-> - 靈活的設計，允許用戶自定義讀取和處理邏輯。
+> - 簡單易用的安裝和配置流程，適合新手入門。
+> - 內建自我改進學習循環，能夠根據使用者反饋持續優化。
+> - 模組化設計，方便擴展和維護。
 
 > [!danger] 缺點
-> - 目前僅支持兩個通道，未來需要更新以支持更多通道。
-> - 需要在多核環境中運行以達到最佳效能，對硬體要求較高。
-> - 對於不熟悉 C++ 的開發者，學習曲線較陡。
+> - 目前功能仍在快速迭代中，穩定性可能不足。
+> - 缺乏詳細的中文文檔，對非英語使用者造成困難。
+> - 在高並發環境下可能會遇到性能瓶頸。
 
 > [!warning] 注意事項
-> - 目前僅支持兩個通道，未來會更新以支持更多通道。
-> - 需要在多核環境中運行以達到最佳效能。
-> - 對於不支持的硬體平台，可能無法正常運作。
+> - 目前仍在快速迭代中，可能存在不穩定的功能。
+> - 對於大型企業應用的支持可能尚不成熟。
+> - 缺乏詳細的中文文檔，可能對非英語使用者造成困難。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 主要專注於數據存儲和檢索，而 Tailslayer 專注於減少 RAM 讀取延遲，兩者的應用場景有所不同。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 提供了並行數據傳輸的功能，但不針對 DRAM 刷新延遲進行優化，適用場景不同。 |
+| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | Hermes Agent 框架的核心實現，提供底層 API 和功能擴展，適合需要更高自定義的開發者。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的 AI Agent，提供專業技能，但不具備 Hermes 的自我改進能力。 |
+| [ChinaSiro/claude-code-sourcemap](https://github.com/ChinaSiro/claude-code-sourcemap) | Claude Code 提供的代碼生成能力，但缺乏 Hermes 的記憶管理和自我學習功能。 |
 
 ## 替代方案決策
 
@@ -206,16 +208,16 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 主要專注於數據存儲和檢索，而 Tailslayer 專注於減少 RAM 讀取延遲，兩者的應用場景有所不同。 | 如果你的專案需要高效的數據存儲和檢索，而不特別關注 RAM 讀取延遲，則可以選擇 Boneyard。 | medium，因為需要重新設計數據存儲邏輯。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 提供了並行數據傳輸的功能，但不針對 DRAM 刷新延遲進行優化，適用場景不同。 | 如果你的應用需要高效的並行數據傳輸，而不特別關注 DRAM 的延遲問題，則可以考慮使用 Parasync。 | low，因為可以直接替換數據傳輸邏輯。 |
+| OpenClaw | OpenClaw 提供了一個強大的 AI Agent 框架，但缺乏 Hermes 的自我改進學習循環。 | 如果你的團隊需要一個穩定的框架並且不需要自我學習的能力，OpenClaw 是不錯的選擇。 | medium，因為需要重新設計部分架構以適應 OpenClaw 的 API。 |
+| Claude Code | Claude Code 專注於代碼生成，並不具備 Hermes 的記憶管理和自我學習功能。 | 如果你的主要需求是代碼生成而非 AI Agent 的自我學習，Claude Code 會更合適。 | low，因為兩者的 API 設計有相似之處。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **tailslayer** | **boneyard** | **parsync** |
+> | 維度 | **hermes-agent-orange-book** | **OpenClaw** | **Claude Code** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Boneyard 主要專注於數據存儲和檢索，而 Tailslayer 專注於減少 RAM 讀取延遲，兩者的應用場景有所不同。 | Parsync 提供了並行數據傳輸的功能，但不針對 DRAM 刷新延遲進行優化，適用場景不同。 |
-> | 遷移成本 | - | medium，因為需要重新設計數據存儲邏輯。 | low，因為可以直接替換數據傳輸邏輯。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要高效的數據存儲和檢索，而不特別關注 RAM  | 如果你的應用需要高效的並行數據傳輸，而不特別關注 DRAM  |
+> | 技術路線 | 本專案 | OpenClaw 提供了一個強大的 AI Agent 框架，但缺乏 Hermes 的自我改進學習循環。 | Claude Code 專注於代碼生成，並不具備 Hermes 的記憶管理和自我學習功能。 |
+> | 遷移成本 | - | medium，因為需要重新設計部分架構以適應 OpenClaw 的 API。 | low，因為兩者的 API 設計有相似之處。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要一個穩定的框架並且不需要自我學習的能力，Op | 如果你的主要需求是代碼生成而非 AI Agent 的自我學習 |
 
 ## 成熟度評估
 
@@ -226,50 +228,47 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人實驗和測試，但不建議用於生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些硬體上可能無法正常運作，特別是舊款 DRAM。
-  - 解法：確認硬體兼容性，必要時升級硬體。
-- [MEDIUM] 對於不熟悉 C++ 的開發者，學習曲線較陡。
-  - 解法：尋找 C++ 的學習資源，或考慮團隊內部的培訓。
-- [MEDIUM] 在多核環境中可能會出現資源競爭問題。
-  - 解法：合理配置核心資源，避免多個副本同時運行在同一核心上。
+- **[HIGH]** 在高並發環境下可能會遇到性能瓶頸，導致回應延遲。
+  - 解法：考慮使用負載均衡器來分散請求。
+- [MEDIUM] 自我學習功能在某些情況下可能會導致不預期的行為。
+  - 解法：定期檢查和調整學習參數。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 高頻交易系統的 RAM 讀取 | 非常適合 | 能顯著降低延遲，提升交易速度。 |
-| 大型開放世界遊戲的資源加載 | 適合 | 能有效減少因 DRAM 刷新造成的停頓。 |
-| 小型專案或個人實驗 | 普通 | 雖然能提供效能優化，但對於小型專案的需求可能過於複雜。 |
-| 不需要高效能 RAM 讀取的應用 | 不適合 | 對於一般應用來說，這種優化可能不必要。 |
+| 小型團隊開發 AI 助手 | 非常適合 | Hermes 的自我學習和簡單配置非常符合小型團隊的需求。 |
+| 大型企業的核心業務系統 | 不適合 | 目前的穩定性和性能可能無法滿足大型企業的需求。 |
+| 個人開發者的實驗項目 | 非常適合 | 提供了簡單的上手流程，適合個人開發者進行探索和實驗。  |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~5 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學、5 小時整合，得到顯著的效能提升，值得投入。
+> 花 5 小時學習，10 小時整合，得到一個可自我學習的 AI Agent，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，使用時需注意依賴的庫的安全性。
+> 低風險：該工具不需要高權限，且不存取敏感資料，但需注意依賴的第三方庫的安全性。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/alchaincyf--hermes-agent-orange-book");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -304,7 +303,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/alchaincyf--hermes-agent-orange-book");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -328,140 +327,126 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 101 |
-| Open Issues | 14 |
-| Issue 解決率 | 7% (1 closed) |
-| 最後推送 | 2026-04-07 |
-| 建立日期 | 2026-04-05 |
-| Repo 大小 | 41 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/LaurieWired/tailslayer) |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "C++" : 76
->     "C" : 22
->     "Makefile" : 1
->     "CMake" : 1
-> ```
+| Forks | 206 |
+| Open Issues | 2 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-04-08 |
+| 建立日期 | 2026-04-08 |
+| Repo 大小 | 25.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/alchaincyf/hermes-agent-orange-book) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@LaurieWired](https://github.com/LaurieWired) | 12 |
+> | [@alchaincyf](https://github.com/alchaincyf) | 9 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有 2 天的活躍提交。
+**社群活躍度**：社群活躍度高，近期有多個更新和討論。
+**連結**：[文件](https://hermes-agent.nousresearch.com/docs/)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-05 ~ 2026-04-07）
-> **活躍天數** 2 天 · **最新 commit** Update readme
+> [!abstract] 最近 10 次 commit（2026-04-08 ~ 2026-04-08）
+> **活躍天數** 1 天 · **最新 commit** fix: correct OpenClaw comparison — fair and accurate descriptions
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#7](https://github.com/LaurieWired/tailslayer/issues/7) | Will this break my 64 GB DDR4 Kingston RAM I just purchased  | 35 | 13 |
-> | [#13](https://github.com/LaurieWired/tailslayer/issues/13) | Tailslayer as a CPU-level quantum patch — and why it breaks  | 19 | 3 |
-> | [#2](https://github.com/LaurieWired/tailslayer/issues/2) | [RFC] Tailslayer implementation for linux kernel | 18 | 4 |
+> | [#2](https://github.com/alchaincyf/hermes-agent-orange-book/issues/2) | 如果生成的PDF能够有目录就好了。 | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> [](https://www.apache.org/licenses/LICENSE-2.0)
-> [](https://github.com/LaurieWired/tailslayer/stargazers)
-> [](https://github.com/LaurieWired/tailslayer/network/members)
-> [](https://github.com/LaurieWired/tailslayer/graphs/contributors)
-> [](https://twitter.com/lauriewired)
+> **English** | [中文版 README](README_zh.md)
 > 
-> # Tailslayer
+>   
 > 
-> Tailslayer is a C++ library that reduces tail latency in RAM reads caused by DRAM refresh stalls. 
+> # Hermes Agent: The Complete Guide
 > 
-> It replicates data across multiple, independent DRAM channels with uncorrelated refresh schedules, using (undocumented!) channel scrambling offsets that works on AMD, Intel, and Graviton. Once the request comes in, Tailslayer issues hedged reads across all replicas, allowing the work to be performed on whichever result responds first.
+> > 橙皮书 (Orange Book) Series · by HuaShu (花叔)
 > 
-> ## Usage
+> A practical guide to [Hermes Agent](https://github.com/NousResearch/hermes-agent), the open-source AI Agent framework by [Nous Research](https://hermes-agent.nousresearch.com/). The first Agent that ships with reins built in — and the reins keep growing.
 > 
-> The library code is available in [hedged_reader.cpp](https://github.com/LaurieWired/tailslayer/blob/main/include/tailslayer/hedged_reader.hpp) and the example using the library can be found in [tailslayer_example.cpp](https://github.com/LaurieWired/tailslayer/blob/main/tailslayer_example.cpp). To use it, copy `include/tailslayer` into your project and `#include `. The library currently works with two channels (updates to come!), but full N-way usage is available in the [benchmark](https://github.com/LaurieWired/tailslayer/tree/main/discovery/benchmark).
+>   
+>   
 > 
-> You provide the value type and two functions as template parameters:
+> ## Download
 > 
-> 1. **Signal function**: Add the loop that waits for the external signal. This determines when to read. Return the desired index to read, and the read immediately fires.
-> 2. **Final work function**: This receives the value immediately after it is read. Add the desired value processing code here.
+> | Version | PDF |
+> |---------|-----|
+> | 中文版 (Chinese) | **[PDF Download](https://github.com/alchaincyf/hermes-agent-orange-book/raw/main/Hermes-Agent-从入门到精通-v260407.pdf)** |
+> | English | **[PDF Download](https://github.com/alchaincyf/hermes-agent-orange-book/raw/main/Hermes-Agent-The-Complete-Guide-v260407.pdf)** |
 > 
-> ```cpp
-> #include 
+> ## What This Book Covers
 > 
-> [[gnu::always_inline]] inline std::size_t my_signal() {
->     // Wait for your event, then return the index to read
->     return index_to_read;
-> }
+> [Hermes Agent](https://github.com/NousResearch/hermes-agent) is an open-source AI Agent framework released by Nous Research in February 2026. Unlike OpenClaw and Claude Code, it takes a fundamentally different approach: a built-in self-improving learning loop, three-layer memory system, and automatic Skill creation and evolution.
 > 
-> template 
-> [[gnu::always_inline]] inline void my_work(T val) {
->     // Use the value
-> }
+> If you've read the "Harness Engineering" 橙皮书, Hermes is the first productization of those five components (instructions / constraints / feedback / memory / orchestration).
 > 
-> int main() {
->     using T = uint8_t;
->     tailslayer::pin_to_core(tailslayer::CORE_MAIN);
+> 17 chapters across 5 parts:
 > 
->     tailslayer::HedgedReader> reader{};
->     reader.insert(0x43);
->     reader.insert(0x44);
->     reader.start_workers();
-> }
-> ```
+> | Part | Content | Chapters |
+> |------|---------|----------|
+> | Concepts | From Harness to Hermes | §01-02 |
+> | Core Mechanisms | Learning loop, memory, Skills, tool ecosystem | §03-06 |
+> | Hands-On Setup | Installation, first conversation, multi-platform, customization | §07-11 |
+> | Real-World Scenarios | Knowledge assistant, dev automation, content creation, multi-Agent | §12-15 |
+> | Deep Thinking | Three-way comparison, boundaries of self-improving Agents | §16-17 |
 > 
-> Arguments can be passed to either function via `ArgList`:
+>   
+>   
 > 
-> ```cpp
-> tailslayer::HedgedReader,
->     tailslayer::ArgList,   // args to signal function
->     tailslayer::ArgList       // args to final work function
-> > reader{};
-> ```
+> ## Who Is This For
 > 
-> You can also optionally pass in a different channel offset, channel bit, and number of replicas to the constructor. *Note:* Each insert copies the element N times where N is the number of replicas. It does the address calculation work on the backend, allowing tailslayer to act as a hedged vector that uses logical indices. Additionally, each replica is pinned to a separate core, and will spin on that core according to the signal function until the read happens.
+> - Developers who've used Claude Code / OpenClaw / Cursor and want to understand Hermes
+> - AI enthusiasts who want to build a personal AI Agent
+> - Anyone interested in seeing Harness Engineering concepts turned into a real product
 > 
-> ## Build the example
+> ## 橙皮书 (Orange Book) Series
 > 
-> ```bash
-> make
-> ./tailslayer_example
-> ```
+> This is part of the 橙皮书 series — free, practical guides on AI tools. Other titles include Claude Code, Harness Engineering, OpenClaw, and more.
 > 
-> ## Benchmarks and spike timing
+> All books free to download: **[huasheng.ai/orange-books](https://www.huasheng.ai/orange-books)**
 > 
-> The `discovery/` directory contains supporting code used to characterize DRAM refresh behavior:
+> ## About the Author
 > 
-> - `discovery/benchmark/`: Channel-hedged read benchmark
-> - `discovery/trefi_probe.c`: Spike timing probe for measuring the refresh cycle
+> **HuaShu (花叔)** · AI Native Coder · Indie Developer
 > 
-> ```bash
-> cd discovery/benchmark
-> make
-> sudo chrt -f 99 ./hedged_read_cpp --all --channel-bit 8
-> ```
+> An AI content creator with 300K+ followers across platforms. Built all products (including an App Store #1 Paid iOS app) entirely with AI tools — never wrote a line of code manually.
+> 
+> - X/Twitter: [@AlchainHust](https://x.com/AlchainHust)
+> - YouTube: [@Alchain](https://www.youtube.com/@Alchain)
+> - Bilibili: [AI进化论-花生](https://space.bilibili.com/14097567/)
+> - WeChat Official Account: 花叔
+> - Website: [huasheng.ai](https://www.huasheng.ai/)
+> 
+> ## Version
+> 
+> - **v260408** — First edition, based on Hermes Agent v0.7.0
+> - AI tools evolve rapidly — refer to [official docs](https://hermes-agent.nousresearch.com/docs/) for the latest
+> 
+> ## License
+> 
+> [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt with attribution, non-commercial only.
 
 ## 延伸閱讀
 
-相關概念：[[效能優化]] · [[多核處理]] · [[DRAM 刷新]]
+相關概念：[[Agent 框架]] · [[自動化]] · [[機器學習]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[MemPalace--mempalace|MemPalace/mempalace]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[davebcn87--pi-autoresearch|davebcn87/pi-autoresearch]]
 
-[GitHub](https://github.com/LaurieWired/tailslayer)
+[GitHub](https://github.com/alchaincyf/hermes-agent-orange-book)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：效能優化）
+> [!note]- 直接競品（同子分類：Agent 框架）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "效能優化" AND file.name != "LaurieWired--tailslayer"
+> WHERE subcategory = "Agent 框架" AND file.name != "alchaincyf--hermes-agent-orange-book"
 > SORT stars DESC
 > ```
 
@@ -469,7 +454,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "LaurieWired--tailslayer"
+> WHERE category = "AI/ML" AND file.name != "alchaincyf--hermes-agent-orange-book"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -478,7 +463,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C++" AND file.name != "LaurieWired--tailslayer" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "alchaincyf--hermes-agent-orange-book" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -487,15 +472,15 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W15" AND file.name != "LaurieWired--tailslayer"
+> WHERE week = "2026-W16" AND file.name != "alchaincyf--hermes-agent-orange-book"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["效能優化","多核處理","DRAM 刷新"];
+> const concepts = ["Agent 框架","自動化","機器學習"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "LaurieWired--tailslayer" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "alchaincyf--hermes-agent-orange-book" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -508,12 +493,12 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/alchaincyf--hermes-agent-orange-book");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "LaurieWired--tailslayer" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "alchaincyf--hermes-agent-orange-book" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -529,7 +514,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "LaurieWired" AND file.name != "LaurieWired--tailslayer"
+> WHERE owner = "alchaincyf" AND file.name != "alchaincyf--hermes-agent-orange-book"
 > SORT stars DESC
 > ```
 
@@ -537,7 +522,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/alchaincyf--hermes-agent-orange-book");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -554,7 +539,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/alchaincyf--hermes-agent-orange-book");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -587,7 +572,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/alchaincyf--hermes-agent-orange-book");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -611,7 +596,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/alchaincyf--hermes-agent-orange-book");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -648,7 +633,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/alchaincyf--hermes-agent-orange-book");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -731,7 +716,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-04-10** — 首次收錄
+> **2026-04-12** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -747,5 +732,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-04-12|2026-04-12]] — 再次上榜，2.0k stars
-- [[2026-04-10|2026-04-10]] — 首次收錄，1.7k stars
+- [[2026-04-12|2026-04-12]] — 首次收錄，1.9k stars

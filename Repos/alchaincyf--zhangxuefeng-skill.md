@@ -7,10 +7,10 @@ language: N/A
 license: MIT
 description: "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。"
 homepage: ""
-stars: 3109
-stars_per_day: 622
-forks: 1304
-open_issues: 23
+stars: 4310
+stars_per_day: 718
+forks: 1585
+open_issues: 31
 created: 2026-04-05
 pushed_at: 2026-04-10
 first_seen: 2026-04-10
@@ -30,8 +30,8 @@ use_case: "提供高考志愿、考研和职业规划的实战思维框架。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-14"
+appearances: 3
+next_review: "2026-04-15"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 8
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-10"
-star_history: "2026-04-10:2017,2026-04-10:2057,2026-04-11:3106,2026-04-11:3109"
+star_history: "2026-04-10:2017,2026-04-10:2057,2026-04-11:3106,2026-04-11:3109,2026-04-12:4310"
 tags:
   - github
   - "category/其他"
@@ -900,5 +900,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-12|2026-04-12]] — 再次上榜，4.3k stars
 - [[2026-04-11|2026-04-11]] — 再次上榜，3.1k stars
 - [[2026-04-10|2026-04-10]] — 首次收錄，2.0k stars

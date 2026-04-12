@@ -1,64 +1,65 @@
 ---
-repo: LaurieWired/tailslayer
-url: https://github.com/LaurieWired/tailslayer
-owner: LaurieWired
+repo: KKKKhazix/khazix-skills
+url: https://github.com/KKKKhazix/khazix-skills
+owner: KKKKhazix
 owner_type: User
-language: C++
-license: Apache-2.0
-description: "Library for reducing tail latency in RAM reads"
+language: N/A
+license: MIT
+description: "数字生命卡兹克开源的 AI Skills 合集"
 homepage: ""
-stars: 2028
-stars_per_day: 338
-forks: 108
-open_issues: 14
-created: 2026-04-05
-pushed_at: 2026-04-11
-first_seen: 2026-04-10
-week: "2026-W15"
+stars: 1585
+stars_per_day: 317
+forks: 337
+open_issues: 3
+created: 2026-04-06
+pushed_at: 2026-04-06
+first_seen: 2026-04-12
+week: "2026-W16"
 month: "2026-04"
 category: "開發工具"
-subcategory: "效能優化"
+subcategory: "AI Skills"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-04-10
-use_case: "減少 RAM 讀取中的尾延遲，提升效能。"
+last_reviewed: 2026-04-12
+use_case: "提供可组合、可移植的 AI Skills，扩展 AI Agent 的能力。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-04-15"
 contributor_count: 1
-engagement: "low"
-issue_close_rate: 7
-repo_size_kb: 41
-readme_length: 3232
+engagement: "medium"
+issue_close_rate: 25
+repo_size_kb: 47
+readme_length: 989
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-04-10"
-star_history: "2026-04-10:1667,2026-04-10:1668,2026-04-11:1915,2026-04-12:2028"
+ring_history: "assess@2026-04-12"
+star_history: "2026-04-12:1585"
 tags:
   - github
   - "category/開發工具"
-  - "lang/c++"
+  - "lang/other"
+  - easy_install
 aliases:
-  - "tailslayer"
-  - "LaurieWired/tailslayer"
-  - "減少 RAM 讀取中的尾延遲，提升效能。"
+  - "khazix-skills"
+  - "KKKKhazix/khazix-skills"
+  - "提供可组合、可移植的 AI Skills，扩展 AI Agent 的能力。"
 ---
 
-# tailslayer
+# khazix-skills
 
-**1.9k** stars · **383** stars/天 · 建立 5 天前 · C++ · Apache-2.0
+**1.6k** stars · **317** stars/天 · 建立 5 天前 · N/A · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/LaurieWired--tailslayer");
+const me = dv.page("Repos/KKKKhazix--khazix-skills");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -68,23 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 減少 RAM 讀取中的尾延遲，提升效能。
+> 提供可组合、可移植的 AI Skills，扩展 AI Agent 的能力。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (383 stars/day)
-> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在高效能計算環境中減少 RAM 讀取延遲的系統開發者。
-> **一句話重點** Tailslayer 的設計專注於 DRAM 刷新延遲的優化，這在高效能計算中是個關鍵問題。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (317 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 希望快速擴展 AI Agent 功能的開發者，特別是在內容創作領域。
+> **一句話重點** Khazix Skills 通过模块化和可组合的设计理念，为 AI Agent 的能力扩展提供了新的思路。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/KKKKhazix--khazix-skills");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "效能優化" && p.file.name !== "LaurieWired--tailslayer" && p.status !== "archived")
+>     .where(p => p.subcategory === "AI Skills" && p.file.name !== "KKKKhazix--khazix-skills" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,110 +96,96 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 效能優化 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 AI Skills 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學、5 小時整合，得到顯著的效能提升，值得投入。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學、2 小時整合，得到擴展 AI 功能的能力，值得嘗試。
 
 > [!abstract] 核心創新
-> Tailslayer 使用未公開的通道混淆偏移來減少 DRAM 刷新延遲。
+> Skills 遵循 Agent Skills 开放标准，具备可组合、可移植、按需加载的设计理念。
 
 ## 專案簡介
 
-Tailslayer 是一個 C++ 函式庫，專注於減少由 DRAM 刷新停頓引起的尾延遲。其核心機制是通過在多個獨立的 DRAM 通道中複製數據，並使用不相關的刷新計劃來進行數據讀取，這樣一來，當請求到達時，Tailslayer 會同時發出多個讀取請求，並選擇最先返回的結果。這種方法不僅能降低延遲，還能提高整體效能，特別是在高負載情況下。使用者需要提供信號函數和最終工作函數作為模板參數，這樣可以靈活地控制何時讀取數據以及如何處理讀取的結果。關鍵的 CLI 指令是 `make` 和 `./tailslayer_example`，這將編譯並運行範例程式碼。Tailslayer 的設計選擇了 C++，因為它能提供高效的性能和對底層硬體的控制，並且支持多種平台，包括 AMD、Intel 和 Graviton。
+Khazix Skills 是一套遵循 Agent Skills 开放标准的结构化指令集，旨在通过模块化的方式扩展 AI Agent 的能力。用户可以通过简单的指令 `/skill-name` 来调用特定的 Skill，或在相关场景下自动加载。其设计理念在于可组合性和可移植性，允许多个 Skills 协同工作，提升了 AI 在特定任务中的执行效率。当前已开源的 Skills 包含 kaizike-writer，专注于公众号长文写作，提供了详细的写作风格规则和内容方法论。技术上，这些 Skills 以文件夹结构组织，包含指令、脚本和参考资源，便于用户在不同工具中复用。
 
-這種設計使得 Tailslayer 能夠在多通道環境中有效運作，並且能夠在未來擴展到更多通道的支持。與其他工具相比，如 0xGF/boneyard 和 AlpinDale/parsync，Tailslayer 的獨特之處在於其針對 DRAM 刷新延遲的專門優化，而不是僅僅依賴於傳統的緩存策略。實際使用中，Tailslayer 能夠處理高達數十 GB 的數據，並且在多核處理器上能夠充分利用 CPU 資源。維護者的活躍度相對較高，但目前的 issue 解決率較低，顯示出社群對於這個新工具的需求和關注。整體來看，這是一個值得關注的專案，特別是對於需要高效能 RAM 讀取的應用場景。
-
-**技術棧**：`C++17` · `CMake`
+与其他工具相比，如 0xGF/boneyard 和 MiniMax-AI/skills，Khazix Skills 强调了按需加载和跨工具使用的灵活性。适合需要快速部署和扩展 AI 能力的团队，尤其是在内容创作领域。虽然目前只有一个 Skill，但其设计理念和结构提供了良好的扩展潜力。社区活跃度尚可，当前有 3 个开放问题，解决率为 25%。对于希望在 AI Agent 中实现特定功能的开发者来说，这是一种值得尝试的解决方案。
 
 ## 重點功能
 
-- 多通道數據複製 — 在多個獨立 DRAM 通道中複製數據，減少因刷新造成的延遲。
-- 信號函數和工作函數模板 — 使用者可以自定義何時讀取數據及如何處理結果。
-- 支持多核處理 — 每個副本被固定到不同的核心，充分利用 CPU 資源。
-- 靈活的參數設置 — 可選擇不同的通道偏移、通道位元和副本數量。
-- 基於 C++ 的高效性能 — 提供對底層硬體的精細控制，適合高效能計算需求。
+- 可组合性 — 支持多个 Skills 协同工作，提升任务执行效率。
+- 可移植性 — 同一 Skill 可在不同工具中复用，降低学习成本。
+- 按需加载 — Skills 可根据场景自动加载，提升使用灵活性。
+- 结构化指令集 — 通过文件夹组织指令、脚本和参考资源，便于管理和调用。
+- 开源 — 允许用户自由修改和扩展，促进社区参与。
 
 ## 快速開始
 
-1. 克隆專案並進入目錄
+1. 通过 Agent 安装 Skill
 ```bash
-git clone https://github.com/LaurieWired/tailslayer.git && cd tailslayer
+安装这个 skill：https://github.com/KKKKhazix/khazix-skills
 ```
-2. 編譯範例程式
+2. 手动下载 Skill
 ```bash
-make
+在 Releases 页面下载对应 Skill 的 .skill 安装包
 ```
-3. 運行範例程式
+3. 拖动到对应工具的 Skills 目录
 ```bash
-./tailslayer_example
-```
-
-## 程式碼範例
-
-```cpp
-{
-  "前置條件": "需要包含 tailslayer 的標頭檔案",
-  "程式碼": "#include <tailslayer/hedged_reader.hpp>\n\n[[gnu::always_inline]] inline std::size_t my_signal() {\n    return index_to_read;\n}\n\ntemplate <typename T>\n[[gnu::always_inline]] inline void my_work(T val) {\n    // Use the value\n}\n\nint main() {\n    using T = uint8_t;\n    tailslayer::pin_to_core(tailslayer::CORE_MAIN);\n\n    tailslayer::HedgedReader<T> reader{};\n    reader.insert(0x43);\n    reader.insert(0x44);\n    reader.start_workers();\n}",
-  "預期輸出": "讀取的值將根據信號函數返回的索引進行處理。"
-}
+将 .skill 文件拖动到 ~/.claude/skills/ 或 ~/.openclaw/skills/ 等路径
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天就累積 1915 stars（383/天），forks 101（5.3%），顯示出相對穩定的關注度。該專案的作者 LaurieWired 以其在效能優化領域的專業知識而聞名，這使得 Tailslayer 能夠針對 DRAM 刷新延遲這一具體痛點提供解決方案。之前，這類問題通常依賴於硬體升級或傳統的緩存技術，並未有針對性的解決方案。隨著高效能計算需求的增加，這個工具的出現恰好填補了市場的空白。社群對於其潛在應用的討論也進一步推動了其關注度。
+> 建立 5 天就累積 1585 stars（317/天），forks 337（21.3%），顯示出高活躍度。作者 KKKKhazix 透過長期打磨的 Skills，解決了 AI Agent 能力擴展的痛點，讓用戶能夠快速集成和使用。這些 Skills 的開源讓更多開發者能夠參與和貢獻，進一步推動了專案的發展。社群的反饋和使用情況也促進了專案的改進。
 
 ## 適合誰使用
 
-**目標受眾**：需要在高效能計算環境中減少 RAM 讀取延遲的系統開發者。
+**目標受眾**：希望快速擴展 AI Agent 功能的開發者，特別是在內容創作領域。
 
 > [!example] 使用場景
-> - 系統工程師用它來優化高頻交易系統的 RAM 讀取延遲，因為 Tailslayer 能夠在多通道中快速讀取數據，降低延遲。
-> - 遊戲開發者用它來提升大型開放世界遊戲的資源加載速度，因為其能有效減少因 DRAM 刷新造成的停頓。
-> - 數據科學家用它來加速大數據處理過程中的內存讀取，因為在處理大量數據時，尾延遲的影響會顯著降低效能。
+> - 內容創作者用它來快速生成符合風格的長文，因為 kaizike-writer 提供了完整的寫作規範和自檢體系。
+> - 開發者用它來擴展 AI Agent 的功能，因為可以輕鬆地將不同的 Skills 組合使用，提升工作效率。
+> - 教育工作者用它來設計教學內容，因為 Skills 的可移植性允許在多個平台上使用相同的教學模組。
 
 ## 架構分析
 
-Tailslayer 採用 C++ 函式庫的架構，設計目的是為了在多通道 DRAM 環境中減少尾延遲。它的資料流從信號函數開始，當外部事件發生時，觸發讀取請求。每個副本在不同的核心上運行，並根據信號函數進行自旋，直到讀取完成。
-
-這種設計使得 Tailslayer 能夠在多核環境中充分利用資源，並且能夠快速響應讀取請求。選擇 C++ 是因為其性能優勢，而這也意味著需要較高的開發成本和學習曲線。擴展性方面，未來可能會增加對更多通道的支持，但目前的設計在多通道環境中已經能夠顯著提升效能。
+Khazix Skills 采用模块化设计，允许用户根据需求组合和加载不同的 Skills。每个 Skill 以文件夹结构组织，包含指令、脚本和参考资源，便于管理和调用。这种设计使得用户能够在不同的 AI Agent 中复用相同的 Skill，提升了灵活性和效率。选择这种结构化方式的代价是初期可能需要更多的学习和适应，但长期来看，能够显著提高开发效率和代码复用率。由于当前仅有一个 Skill，扩展性尚待观察，但设计理念为未来的功能扩展提供了良好的基础。
 
 ## 技術深入分析
 
-Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來減少尾延遲。其使用的信號函數和工作函數模板設計，允許開發者靈活地控制數據的讀取和處理。效能方面，Tailslayer 能夠在多核處理器上充分利用資源，並且在高負載情況下能夠顯著降低延遲。設計上選擇 C++ 是為了獲得更高的性能，但這也意味著需要開發者具備相應的技術能力。技術風險方面，隨著使用者數量的增加，可能會出現對 DRAM 硬體的依賴性問題，這可能在未來的擴展中造成挑戰。整合方面，Tailslayer 目前的設計與主流的 C++ 開發環境相容，但對於不熟悉 C++ 的開發者來說，學習成本較高。
+Khazix Skills 的核心技術機制在於其遵循 Agent Skills 開放標準，允許用戶透過結構化的指令集來擴展 AI Agent 的功能。每個 Skill 以文件夾形式組織，包含指令、腳本和參考資源，這樣的設計使得 Skills 可以在不同的工具中重複使用，提升了靈活性。效能方面，這些 Skills 的加載和執行速度取決於所使用的 Agent，但整體設計旨在減少不必要的資源消耗。選擇這種結構化的方式使得用戶能夠快速集成和使用，但也可能需要一定的學習成本。技術風險方面，隨著功能的擴展，可能會出現兼容性問題，特別是在不同 Agent 之間的整合。整合的摩擦點主要在於不同工具的 Skills 安裝路徑和格式，這需要用戶在使用前進行適當的配置。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了基本的使用說明和範例，整體清晰度良好。安裝過程需要使用者具備一定的 CMake 和 C++ 知識，對於新手來說可能有些挑戰。文件中未提供多語言支持，僅有英文版本。整體而言，對於有經驗的開發者來說，花 30 分鐘能夠順利運行起來。
+> README 文件清晰，提供了安裝步驟和使用範例；安裝過程相對順暢，無明顯坑；缺乏詳細的入門指南，可能需要用戶自行摸索；目前僅提供英文文檔，缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能有效減少 RAM 讀取延遲，特別是在高負載情況下。
-> - 支持多核處理，充分利用 CPU 資源。
-> - 靈活的設計，允許用戶自定義讀取和處理邏輯。
+> - 模块化设计，能够快速组合和扩展功能。
+> - 支持多种 AI Agent，提升了使用的灵活性。
+> - 开源社区活跃，便于用户参与和贡献。
 
 > [!danger] 缺點
-> - 目前僅支持兩個通道，未來需要更新以支持更多通道。
-> - 需要在多核環境中運行以達到最佳效能，對硬體要求較高。
-> - 對於不熟悉 C++ 的開發者，學習曲線較陡。
+> - 目前功能较为单一，仅有一个 Skill。
+> - 需要在特定的 Agent 中使用，限制了应用场景。
+> - 文档和社区支持可能尚不完善，初学者需要额外学习。
 
 > [!warning] 注意事項
-> - 目前僅支持兩個通道，未來會更新以支持更多通道。
-> - 需要在多核環境中運行以達到最佳效能。
-> - 對於不支持的硬體平台，可能無法正常運作。
+> - 目前仅提供一个 kaizike-writer Skill，功能较为单一。
+> - 需要在支持的 Agent 中使用，限制了适用范围。
+> - 社区支持和文档可能尚不完善，初学者可能需要额外的学习时间。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 主要專注於數據存儲和檢索，而 Tailslayer 專注於減少 RAM 讀取延遲，兩者的應用場景有所不同。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 提供了並行數據傳輸的功能，但不針對 DRAM 刷新延遲進行優化，適用場景不同。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供多种 AI Skills，但缺乏 Khazix Skills 的模块化和可组合性。 |
+| [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills) | 虽然也提供 AI Skills，但在按需加载和跨工具使用方面不如 Khazix Skills 灵活。 |
 
 ## 替代方案決策
 
@@ -206,16 +193,16 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 主要專注於數據存儲和檢索，而 Tailslayer 專注於減少 RAM 讀取延遲，兩者的應用場景有所不同。 | 如果你的專案需要高效的數據存儲和檢索，而不特別關注 RAM 讀取延遲，則可以選擇 Boneyard。 | medium，因為需要重新設計數據存儲邏輯。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 提供了並行數據傳輸的功能，但不針對 DRAM 刷新延遲進行優化，適用場景不同。 | 如果你的應用需要高效的並行數據傳輸，而不特別關注 DRAM 的延遲問題，則可以考慮使用 Parasync。 | low，因為可以直接替換數據傳輸邏輯。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供多種 AI Skills，但缺乏 Khazix Skills 的模块化和可组合性。 | 如果需要多样化的 Skills 但不在意模块化设计，可以选择它。 | medium，因為需要重新適應不同的使用方式。 |
+| [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills) | 虽然也提供 AI Skills，但在按需加载和跨工具使用方面不如 Khazix Skills 灵活。 | 如果需要更成熟的功能和社区支持，可以选择它。 | medium，因為需要重新學習其使用方法。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **tailslayer** | **boneyard** | **parsync** |
+> | 維度 | **khazix-skills** | **boneyard** | **skills** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Boneyard 主要專注於數據存儲和檢索，而 Tailslayer 專注於減少 RAM 讀取延遲，兩者的應用場景有所不同。 | Parsync 提供了並行數據傳輸的功能，但不針對 DRAM 刷新延遲進行優化，適用場景不同。 |
-> | 遷移成本 | - | medium，因為需要重新設計數據存儲邏輯。 | low，因為可以直接替換數據傳輸邏輯。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要高效的數據存儲和檢索，而不特別關注 RAM  | 如果你的應用需要高效的並行數據傳輸，而不特別關注 DRAM  |
+> | 技術路線 | 本專案 | 提供多種 AI Skills，但缺乏 Khazix Skills 的模块化和可组合性。 | 虽然也提供 AI Skills，但在按需加载和跨工具使用方面不如 Khazix Skills 灵活。 |
+> | 遷移成本 | - | medium，因為需要重新適應不同的使用方式。 | medium，因為需要重新學習其使用方法。 |
+> | 適用場景 | 主要場景 | 如果需要多样化的 Skills 但不在意模块化设计，可以选择 | 如果需要更成熟的功能和社区支持，可以选择它。 |
 
 ## 成熟度評估
 
@@ -226,50 +213,49 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人實驗和測試，但不建議用於生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些硬體上可能無法正常運作，特別是舊款 DRAM。
-  - 解法：確認硬體兼容性，必要時升級硬體。
-- [MEDIUM] 對於不熟悉 C++ 的開發者，學習曲線較陡。
-  - 解法：尋找 C++ 的學習資源，或考慮團隊內部的培訓。
-- [MEDIUM] 在多核環境中可能會出現資源競爭問題。
-  - 解法：合理配置核心資源，避免多個副本同時運行在同一核心上。
+- [MEDIUM] 在不同 Agent 中使用時，可能需要手動調整 Skills 安裝路徑
+  - 解法：參考 README 中的安裝說明進行配置
+- **[HIGH]** 目前只有一個 Skill，功能較為單一，可能無法滿足多樣化需求
+  - 解法：等待未來的功能擴展或考慮其他替代方案
+- [MEDIUM] 文檔可能不夠詳細，初學者可能需要額外的學習時間
+  - 解法：參考社群討論或尋找其他資源
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 高頻交易系統的 RAM 讀取 | 非常適合 | 能顯著降低延遲，提升交易速度。 |
-| 大型開放世界遊戲的資源加載 | 適合 | 能有效減少因 DRAM 刷新造成的停頓。 |
-| 小型專案或個人實驗 | 普通 | 雖然能提供效能優化，但對於小型專案的需求可能過於複雜。 |
-| 不需要高效能 RAM 讀取的應用 | 不適合 | 對於一般應用來說，這種優化可能不必要。 |
+| 內容創作團隊需要快速生成長文 | 非常適合 | kaizike-writer 提供了完整的寫作規範，能夠提升創作效率。 |
+| 小型開發團隊希望擴展 AI 功能 | 適合 | 模組化設計使得功能擴展變得簡單。 |
+| 大型企業需要穩定的 AI 解決方案 | 不適合 | 目前功能單一，尚未成熟，無法滿足企業需求。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~5 小時 |
-| 維護負擔 | medium |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~2 小時 |
+| 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學、5 小時整合，得到顯著的效能提升，值得投入。
+> 花 5 小時學、2 小時整合，得到擴展 AI 功能的能力，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，使用時需注意依賴的庫的安全性。
+> 低風險：不需要高權限，且不存取敏感資料，但依賴的 Agent 可能有其安全性考量。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/KKKKhazix--khazix-skills");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -304,7 +290,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/KKKKhazix--khazix-skills");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -328,140 +314,98 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 101 |
-| Open Issues | 14 |
-| Issue 解決率 | 7% (1 closed) |
-| 最後推送 | 2026-04-07 |
-| 建立日期 | 2026-04-05 |
-| Repo 大小 | 41 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/LaurieWired/tailslayer) |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "C++" : 76
->     "C" : 22
->     "Makefile" : 1
->     "CMake" : 1
-> ```
+| Forks | 337 |
+| Open Issues | 3 |
+| Issue 解決率 | 25% (1 closed) |
+| 最後推送 | 2026-04-06 |
+| 建立日期 | 2026-04-06 |
+| Repo 大小 | 47 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/KKKKhazix/khazix-skills) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@LaurieWired](https://github.com/LaurieWired) | 12 |
+> | [@KKKKhazix](https://github.com/KKKKhazix) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有 2 天的活躍提交。
+**社群活躍度**：社群活躍度尚可，解決率為 25%。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-05 ~ 2026-04-07）
-> **活躍天數** 2 天 · **最新 commit** Update readme
+> [!abstract] 最近 10 次 commit（2026-04-06 ~ 2026-04-06）
+> **活躍天數** 1 天 · **最新 commit** Replace kaizike-writer with updated khazix-writer skill
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#7](https://github.com/LaurieWired/tailslayer/issues/7) | Will this break my 64 GB DDR4 Kingston RAM I just purchased  | 35 | 13 |
-> | [#13](https://github.com/LaurieWired/tailslayer/issues/13) | Tailslayer as a CPU-level quantum patch — and why it breaks  | 19 | 3 |
-> | [#2](https://github.com/LaurieWired/tailslayer/issues/2) | [RFC] Tailslayer implementation for linux kernel | 18 | 4 |
+> | [#3](https://github.com/KKKKhazix/khazix-skills/issues/3) | 朋友推荐过来的，我刚在本地workbuddy安装体验了。 | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> [](https://www.apache.org/licenses/LICENSE-2.0)
-> [](https://github.com/LaurieWired/tailslayer/stargazers)
-> [](https://github.com/LaurieWired/tailslayer/network/members)
-> [](https://github.com/LaurieWired/tailslayer/graphs/contributors)
-> [](https://twitter.com/lauriewired)
+> # Khazix Skills
 > 
-> # Tailslayer
+> 数字生命卡兹克开源的 AI Skills 合集。
 > 
-> Tailslayer is a C++ library that reduces tail latency in RAM reads caused by DRAM refresh stalls. 
+> 这里是我自己在用的、经过长期打磨的 Skills，现在决定把它们完整地、一字不改地开源出来。
 > 
-> It replicates data across multiple, independent DRAM channels with uncorrelated refresh schedules, using (undocumented!) channel scrambling offsets that works on AMD, Intel, and Graviton. Once the request comes in, Tailslayer issues hedged reads across all replicas, allowing the work to be performed on whichever result responds first.
+> ## 什么是 Skill
 > 
-> ## Usage
+> Skill 是遵循 [Agent Skills](https://agentskills.io) 开放标准的结构化指令集，由包含指令、脚本和参考资源的文件夹组成，用于扩展 AI Agent 的能力边界。Agent 会在相关场景下自动加载对应的 Skill，你也可以通过 `/skill-name` 手动调用。
 > 
-> The library code is available in [hedged_reader.cpp](https://github.com/LaurieWired/tailslayer/blob/main/include/tailslayer/hedged_reader.hpp) and the example using the library can be found in [tailslayer_example.cpp](https://github.com/LaurieWired/tailslayer/blob/main/tailslayer_example.cpp). To use it, copy `include/tailslayer` into your project and `#include `. The library currently works with two channels (updates to come!), but full N-way usage is available in the [benchmark](https://github.com/LaurieWired/tailslayer/tree/main/discovery/benchmark).
+> Skill 的设计理念是**可组合、可移植、按需加载**。多个 Skill 可以协同工作，同一个 Skill 可以跨工具使用。它让你能够把领域专业知识打包成 AI 可以复用的模块，在特定场景下按照这套方法论来执行任务。
 > 
-> You provide the value type and two functions as template parameters:
+> ## 已开源的 Skills
 > 
-> 1. **Signal function**: Add the loop that waits for the external signal. This determines when to read. Return the desired index to read, and the read immediately fires.
-> 2. **Final work function**: This receives the value immediately after it is read. Add the desired value processing code here.
+> | Skill | 说明 |
+> |-------|------|
+> | [**kaizike-writer**](./kaizike-writer/) | 卡兹克公众号长文写作 Skill，包含完整的写作风格规则、四层自检体系、内容方法论和风格示例库 |
 > 
-> ```cpp
-> #include 
+> ## 安装
 > 
-> [[gnu::always_inline]] inline std::size_t my_signal() {
->     // Wait for your event, then return the index to read
->     return index_to_read;
-> }
+> ### 通过 Agent 安装
 > 
-> template 
-> [[gnu::always_inline]] inline void my_work(T val) {
->     // Use the value
-> }
+> 在 Claude Code、Codex、OpenClaw 等支持 Skill 的 Agent 中，直接对话：
 > 
-> int main() {
->     using T = uint8_t;
->     tailslayer::pin_to_core(tailslayer::CORE_MAIN);
-> 
->     tailslayer::HedgedReader> reader{};
->     reader.insert(0x43);
->     reader.insert(0x44);
->     reader.start_workers();
-> }
+> ```
+> 安装这个 skill：https://github.com/KKKKhazix/khazix-skills
 > ```
 > 
-> Arguments can be passed to either function via `ArgList`:
+> ### 手动安装
 > 
-> ```cpp
-> tailslayer::HedgedReader,
->     tailslayer::ArgList,   // args to signal function
->     tailslayer::ArgList       // args to final work function
-> > reader{};
-> ```
+> 1. 在本仓库的 [Releases](https://github.com/KKKKhazix/khazix-skills/releases) 页面下载对应 Skill 的 `.skill` 安装包
+> 2. 将 `.skill` 文件拖动到对应工具的 Skills 目录下
 > 
-> You can also optionally pass in a different channel offset, channel bit, and number of replicas to the constructor. *Note:* Each insert copies the element N times where N is the number of replicas. It does the address calculation work on the backend, allowing tailslayer to act as a hedged vector that uses logical indices. Additionally, each replica is pinned to a separate core, and will spin on that core according to the signal function until the read happens.
+> 各工具的 Skills 安装路径：
 > 
-> ## Build the example
+> | 工具 | 路径 |
+> |------|------|
+> | Claude Code | `~/.claude/skills/` |
+> | OpenClaw | `~/.openclaw/skills/` |
+> | Codex | `~/.agents/skills/` |
 > 
-> ```bash
-> make
-> ./tailslayer_example
-> ```
+> ## License
 > 
-> ## Benchmarks and spike timing
-> 
-> The `discovery/` directory contains supporting code used to characterize DRAM refresh behavior:
-> 
-> - `discovery/benchmark/`: Channel-hedged read benchmark
-> - `discovery/trefi_probe.c`: Spike timing probe for measuring the refresh cycle
-> 
-> ```bash
-> cd discovery/benchmark
-> make
-> sudo chrt -f 99 ./hedged_read_cpp --all --channel-bit 8
-> ```
+> [MIT](./LICENSE)
 
 ## 延伸閱讀
 
-相關概念：[[效能優化]] · [[多核處理]] · [[DRAM 刷新]]
+相關概念：[[Agent 框架]] · [[模組化設計]] · [[開放標準]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[MiniMax-AI--skills|MiniMax-AI/skills]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
 
-[GitHub](https://github.com/LaurieWired/tailslayer)
+[GitHub](https://github.com/KKKKhazix/khazix-skills)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：效能優化）
+> [!note]- 直接競品（同子分類：AI Skills）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "效能優化" AND file.name != "LaurieWired--tailslayer"
+> WHERE subcategory = "AI Skills" AND file.name != "KKKKhazix--khazix-skills"
 > SORT stars DESC
 > ```
 
@@ -469,7 +413,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "LaurieWired--tailslayer"
+> WHERE category = "開發工具" AND file.name != "KKKKhazix--khazix-skills"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -478,7 +422,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C++" AND file.name != "LaurieWired--tailslayer" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "KKKKhazix--khazix-skills" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -487,15 +431,15 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W15" AND file.name != "LaurieWired--tailslayer"
+> WHERE week = "2026-W16" AND file.name != "KKKKhazix--khazix-skills"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["效能優化","多核處理","DRAM 刷新"];
+> const concepts = ["Agent 框架","模組化設計","開放標準"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "LaurieWired--tailslayer" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "KKKKhazix--khazix-skills" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -508,12 +452,12 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/KKKKhazix--khazix-skills");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "LaurieWired--tailslayer" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "KKKKhazix--khazix-skills" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -529,7 +473,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "LaurieWired" AND file.name != "LaurieWired--tailslayer"
+> WHERE owner = "KKKKhazix" AND file.name != "KKKKhazix--khazix-skills"
 > SORT stars DESC
 > ```
 
@@ -537,7 +481,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/KKKKhazix--khazix-skills");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -554,7 +498,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/KKKKhazix--khazix-skills");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -587,7 +531,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/KKKKhazix--khazix-skills");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -611,7 +555,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/KKKKhazix--khazix-skills");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -648,7 +592,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/LaurieWired--tailslayer");
+> const me = dv.page("Repos/KKKKhazix--khazix-skills");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -731,7 +675,7 @@ Tailslayer 的核心技術機制是通過在多個 DRAM 通道中複製數據來
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-04-10** — 首次收錄
+> **2026-04-12** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -747,5 +691,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-04-12|2026-04-12]] — 再次上榜，2.0k stars
-- [[2026-04-10|2026-04-10]] — 首次收錄，1.7k stars
+- [[2026-04-12|2026-04-12]] — 首次收錄，1.6k stars

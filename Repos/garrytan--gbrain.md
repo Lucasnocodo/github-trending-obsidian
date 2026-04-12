@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "Garry's Opinionated OpenClaw/Hermes Agent Brain"
 homepage: ""
-stars: 2572
-stars_per_day: 514
-forks: 282
-open_issues: 21
+stars: 4848
+stars_per_day: 808
+forks: 541
+open_issues: 23
 created: 2026-04-05
 pushed_at: 2026-04-11
 first_seen: 2026-04-11
@@ -30,8 +30,8 @@ use_case: "提供一個基於 Postgres 的個人知識管理系統，結合關�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-14"
+appearances: 2
+next_review: "2026-04-15"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-11"
-star_history: "2026-04-11:2528,2026-04-11:2572"
+star_history: "2026-04-11:2528,2026-04-11:2572,2026-04-12:4848"
 tags:
   - github
   - "category/開發工具"
@@ -842,4 +842,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-12|2026-04-12]] — 再次上榜，4.8k stars
 - [[2026-04-11|2026-04-11]] — 首次收錄，2.5k stars
