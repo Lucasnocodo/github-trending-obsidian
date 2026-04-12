@@ -7,26 +7,26 @@ language: TypeScript
 license: MIT
 description: "Garry's Opinionated OpenClaw/Hermes Agent Brain"
 homepage: ""
-stars: 4848
-stars_per_day: 808
-forks: 541
-open_issues: 23
+stars: 4867
+stars_per_day: 811
+forks: 545
+open_issues: 24
 created: 2026-04-05
 pushed_at: 2026-04-11
 first_seen: 2026-04-11
 week: "2026-W15"
 month: "2026-04"
-category: "開發工具"
-subcategory: "知識管理"
+category: "AI/ML"
+subcategory: "個人知識管理"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-11
-use_case: "提供一個基於 Postgres 的個人知識管理系統，結合關鍵字和向量搜索，讓使用者能快速查詢和更新知識。"
+use_case: "將個人知識轉化為可搜尋的資料庫，讓 AI 助手更聰明。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,28 +34,29 @@ appearances: 2
 next_review: "2026-04-15"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 3754
-readme_length: 9780
+issue_close_rate: 8
+repo_size_kb: 4473
+readme_length: 9929
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-11"
-star_history: "2026-04-11:2528,2026-04-11:2572,2026-04-12:4848"
+star_history: "2026-04-11:2528,2026-04-11:2572,2026-04-12:4848,2026-04-12:4867"
 tags:
   - github
-  - "category/開發工具"
+  - "category/ai_ml"
   - "lang/typescript"
+  - easy_install
 aliases:
   - "gbrain"
   - "garrytan/gbrain"
-  - "提供一個基於 Postgres 的個人知識管理系統，結合關鍵字和向量搜索，讓使用者能快速查詢和更新知識。"
+  - "將個人知識轉化為可搜尋的資料庫，讓 AI 助手更聰明。"
 ---
 
 # gbrain
 
-**2.6k** stars · **514** stars/天 · 建立 5 天前 · TypeScript · MIT
+**4.9k** stars · **811** stars/天 · 建立 6 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/garrytan--gbrain");
@@ -68,23 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供一個基於 Postgres 的個人知識管理系統，結合關鍵字和向量搜索，讓使用者能快速查詢和更新知識。
+> 將個人知識轉化為可搜尋的資料庫，讓 AI 助手更聰明。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (514 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (811 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要管理大量資料並希望自動化知識更新的專業人士，例如企業高管或研究人員。
-> **一句話重點** GBrain 的設計不僅是為了管理知識，更是為了讓使用者的知識隨著時間不斷增長和更新。
+> **適合** 需要快速設置個人化 AI 助手並整合多種資訊來源的獨立開發者或小型團隊。
+> **一句話重點** GBrain 的設計讓個人知識管理變得簡單且高效，特別適合需要快速部署 AI 助手的用戶。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/garrytan--gbrain");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "知識管理" && p.file.name !== "garrytan--gbrain" && p.status !== "archived")
+>     .where(p => p.subcategory === "個人知識管理" && p.file.name !== "garrytan--gbrain" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,103 +96,108 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 知識管理 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 個人知識管理 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到高效的知識管理工具，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，3 小時整合，得到一個高效的個人知識管理系統，值得投入。
 
 > [!abstract] 核心創新
-> GBrain 提供混合搜索能力，結合關鍵字和向量搜索，讓使用者能在龐大資料中快速找到所需信息。
+> GBrain 是一個基於 PGLite 的個人知識管理系統，支持循環學習和多種整合。這種設計使得 AI 助手能夠隨著時間變得更聰明。
 
 ## 專案簡介
 
-GBrain 是一個結合 Postgres 和向量搜索的個人知識管理系統，旨在幫助使用者有效管理和檢索大量資料。其核心機制是將 markdown 文件作為知識的來源，使用者可以透過 CLI 指令 `gbrain import /path/to/brain/` 將資料導入系統，並利用 `gbrain search` 進行查詢。GBrain 的設計重點在於提供混合搜索能力，結合關鍵字搜索和向量搜索，以便在大量資料中快速找到所需信息。這種設計使得在面對大量資料時，使用者不再依賴於傳統的 grep 工具，因為 GBrain 能夠即時更新索引，並在幾毫秒內返回查詢結果。技術上，GBrain 使用了 Postgres 和 pgvector 來實現高效的資料檢索，並且支援增量更新，這在處理大量 markdown 文件時特別重要。
+GBrain 是一個針對個人知識管理的 AI 助手，專為整合會議、電子郵件、推文等資訊而設計。用戶可以透過簡單的 CLI 指令 `gbrain init` 快速設置一個基於 PGLite 的資料庫，無需伺服器，並在 2 秒內完成初始化。接著用戶可以透過 `gbrain import` 將 Markdown 文件導入資料庫，並使用 `gbrain embed` 生成向量嵌入以支持更複雜的查詢。GBrain 的核心賣點在於它的循環學習能力，透過不斷更新知識庫，讓 AI 助手能夠在每次對話中提供更具上下文的回應。這樣的設計使得 AI 助手能夠在每次互動中獲得新知識，避免了使用過時資訊的情況。
 
-與其他知識管理工具相比，如 Notion 或 Roam Research，GBrain 更加專注於結合 AI 代理和知識更新的自動化，讓使用者的知識隨著時間不斷增長。這種設計的優勢在於，使用者不需要手動更新資料，系統會自動追蹤和記錄變更，並且能夠在多次查詢中保持上下文。雖然 GBrain 的學習曲線相對較陡，但對於需要處理大量資料的專業人士來說，這種自動化的知識管理方式能顯著提高工作效率。未來，隨著功能的持續增強，GBrain 有潛力成為個人知識管理的主流工具之一。適合需要管理大量資料並希望自動化知識更新的使用者，例如企業高管或研究人員。
+GBrain 使用 TypeScript 和 PLpgSQL，並依賴 PGLite 作為資料庫，這使得它在資源使用上非常輕量，適合個人或小型團隊使用。與其他類似工具相比，如 OpenClaw 和 Hermes Agent，GBrain 提供了更為簡便的設置流程和更強的個人化知識管理能力，特別適合需要快速部署 AI 助手的用戶。儘管目前仍在開發中，但其設計理念和功能已經相當成熟，適合對個人知識管理有需求的開發者和創業者。使用者在導入過程中可能會遇到需要調整的資料結構，但這是設計上的考量，能夠確保資料的整合性和可搜尋性。未來的發展方向可能會集中在擴展更多的整合選項和增強 AI 的理解能力上。
 
-**技術棧**：`PostgreSQL 16` · `pgvector` · `Bun`
+**技術棧**：`TypeScript` · `PLpgSQL` · `Shell`
 
 ## 重點功能
 
-- 混合搜索 — 結合關鍵字和向量搜索，快速檢索資料。
-- 自動更新 — AI 代理自動更新知識庫，保持資料的即時性。
-- Markdown 支援 — 以 markdown 文件作為知識的來源，易於編輯和管理。
-- 增量索引 — 當資料變更時，系統能即時更新索引，無需全目錄掃描。
-- CLI 操作 — 提供簡單的命令行介面，方便用戶進行資料導入和查詢。
+- 快速初始化 — 使用 `gbrain init` 兩秒內設置 PGLite 資料庫，無需伺服器。
+- Markdown 導入 — 使用 `gbrain import` 將 Markdown 文件導入資料庫，支持文本和嵌入。
+- 向量嵌入生成 — 使用 `gbrain embed` 生成向量嵌入，支持語義查詢。
+- 循環學習 — 每次查詢後自動更新知識庫，讓 AI 助手隨時間變得更聰明。
+- 多種整合選項 — 支持與 Gmail、Twitter 等多種服務的整合，通過 `gbrain integrations` 管理。
 
 ## 快速開始
 
 1. 安裝 GBrain
 ```bash
-bun update gbrain
+bun add github:garrytan/gbrain
 ```
-2. 執行初始化向導
+2. 初始化資料庫
 ```bash
-gbrain init --supabase
+gbrain init
 ```
-3. 導入 markdown 文件
+3. 導入 Markdown 文件
 ```bash
-gbrain import /path/to/brain/
+gbrain import /path/to/markdown
+```
+
+## 程式碼範例
+
+```ts
+{
+  "前置條件": "已安裝 GBrain",
+  "指令": "gbrain init --supabase",
+  "預期輸出": "初始化 Supabase 資料庫，並配置所有必要的設置。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天內累積 2572 stars（514/天），forks 282（11.0%），顯示出強烈的社群興趣。作者 Garry Tan 之前在知識管理和 AI 領域有豐富的經驗，這個專案解決了傳統知識管理工具在面對大量資料時的效率問題。GBrain 提供的混合搜索功能和自動更新的知識模型，讓使用者能夠在資料量龐大時仍能快速檢索，這是許多現有工具無法達到的。社群的反應也顯示出對於這種創新的知識管理方式的期待，特別是在 AI 代理的應用上。
+> 建立 6 天內累積 4867 stars（811/天），forks 545（11.2%），顯示出強烈的社群興趣。Garry Tan 是知名的開源貢獻者，過去在 AI 和開源工具方面有豐富的經驗。GBrain 解決了個人知識管理中 AI 助手缺乏上下文理解的問題，讓使用者能夠更有效地利用過去的資訊。這種需求在當前的 AI 生態中越來越明顯，特別是在遠端工作和個人效率提升的背景下。社群的反應和使用案例也促進了其快速成長。
 
 ## 適合誰使用
 
-**目標受眾**：需要管理大量資料並希望自動化知識更新的專業人士，例如企業高管或研究人員。
+**目標受眾**：需要快速設置個人化 AI 助手並整合多種資訊來源的獨立開發者或小型團隊。
 
 > [!example] 使用場景
-> - 企業高管用它來管理會議記錄和重要聯絡人資料，因為 GBrain 能夠自動更新和檢索關鍵信息，節省了大量手動整理的時間。
-> - 研究人員用它來整合和查詢過去的研究資料，因為其混合搜索功能能快速找到相關文獻和數據，提升研究效率。
-> - 內容創作者用它來管理靈感和草稿，因為 GBrain 能自動追蹤和整理創意，讓創作過程更加流暢。
+> - 自由職業者用它來整合會議記錄和客戶電子郵件，因為這樣可以快速查詢過去的對話並準備會議。
+> - 小型創業團隊用它來管理產品開發文檔，因為可以輕鬆導入 Markdown 文件並進行版本控制。
+> - 研究人員用它來整理文獻資料，因為能夠快速查詢和交叉比對不同的研究主題。
 
 ## 架構分析
 
-GBrain 的架構由三個主要部分組成：Brain Repo、GBrain 和 AI Agent。Brain Repo 是一個 git 儲存庫，存放 markdown 文件，作為知識的來源。GBrain 負責檢索和索引資料，使用 Postgres 和 pgvector 來實現高效的資料檢索。
-
-AI Agent 則負責讀取和寫入資料，並根據使用者的需求進行知識更新。這種設計使得 GBrain 能夠在資料量龐大時仍能保持高效的檢索性能。選擇 Postgres 作為資料庫的原因在於其強大的查詢能力和擴展性，而 pgvector 則提供了對向量資料的支援，這在處理複雜查詢時非常有用。
-
-整體架構的設計考量了資料的即時性和可擴展性，能夠隨著使用者需求的增長而調整。未來可能需要考慮資料庫的性能優化，以應對更大規模的資料處理需求。
+GBrain 採用單一應用架構，使用 PGLite 作為資料庫，這樣的設計使得部署過程簡單且無需伺服器。資料流從用戶輸入 Markdown 文件開始，經過初始化和導入，最終生成可查詢的知識庫。選擇 PGLite 而非傳統的伺服器型資料庫，能夠降低資源需求，但在處理大量資料時可能會遇到性能瓶頸。整體架構輕量且易於擴展，未來可以考慮支持更多的資料庫選項以提高靈活性。
 
 ## 技術深入分析
 
-GBrain 的核心技術機制是結合了 Postgres 和 pgvector，實現了高效的資料檢索和更新。系統使用了增量索引的方式，當資料變更時，能即時更新索引，這在處理大量 markdown 文件時特別重要。效能上，GBrain 能夠在幾毫秒內返回查詢結果，這對於需要快速檢索的使用者來說非常關鍵。選擇 Postgres 作為資料庫的原因在於其強大的查詢能力和擴展性，而 pgvector 則提供了對向量資料的支援，這在處理複雜查詢時非常有用。設計上，GBrain 旨在減少使用者的手動維護工作，透過 AI 代理自動更新知識庫，讓使用者能專注於更重要的決策。技術風險方面，隨著資料量的增長，可能會出現性能瓶頸，因此需要定期進行性能優化。整合方面，GBrain 與主流的開發工具和 CI/CD pipeline 友好，能輕鬆融入現有的工作流中，降低了學習成本和整合摩擦。
+GBrain 的核心技術基於 PGLite，這是一個嵌入式的 Postgres 資料庫，能夠快速初始化並支持向量嵌入。這使得 GBrain 在資源使用上非常輕量，適合個人或小型團隊。效能方面，GBrain 能夠處理數千個 Markdown 文件，但在處理超過 1000 個文件時，建議使用 Supabase 以獲得更好的性能。設計上選擇 TypeScript 使得開發過程更為靈活，並且能夠利用現有的 JavaScript 生態系統。技術風險方面，GBrain 目前對於大型資料集的支持仍有待加強，未來可能需要考慮如何擴展資料庫的能力。與主流框架的整合難度相對較低，因為其 CLI 工具可以輕鬆集成到現有的開發流程中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝和使用指導，並包含了範例指令。安裝過程相對順暢，但對於不熟悉 Postgres 的用戶可能會有一些挑戰。文件中有詳細的設置向導，能幫助新手快速上手。
+> README 文件品質良好，提供了詳細的安裝步驟和範例。安裝過程相對順暢，無需複雜的配置。提供了清晰的入門指南，適合新手使用。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供混合搜索功能，能快速檢索大量資料。
-> - AI 代理自動更新知識庫，減少手動維護的需求。
-> - Markdown 支援使得資料易於編輯和管理，符合開發者的習慣。
+> - 快速設置，能在短時間內建立完整的知識庫。
+> - 支持 Markdown 文件，方便用戶導入現有資料。
+> - 循環學習能力，讓 AI 助手隨著使用變得更聰明。
 
 > [!danger] 缺點
-> - 需要 Postgres 作為後端，對於不熟悉 SQL 的用戶有學習曲線。
-> - 目前僅支援 markdown 文件，對其他格式支援有限。
-> - 在處理極大規模資料時，可能需要額外的性能調優。
+> - 對於大型資料集的支持有限，需要升級到 Supabase。
+> - 依賴特定的 AI 模型，可能不適用於所有用戶。
+> - 需要用戶具備一定的技術背景來管理 API 金鑰。
 
 > [!warning] 注意事項
-> - 需要 Postgres 作為後端資料庫，對於不熟悉 SQL 的用戶可能有學習曲線。
-> - 目前僅支援 markdown 文件作為知識來源，對於其他格式的支援有限。
-> - 在處理極大規模的資料時，可能需要額外的性能調優。
+> - 僅支援 PGLite 作為資料庫，對於大型資料集可能需要升級到 Supabase。
+> - 需要使用者具備基本的 API 金鑰管理能力。
+> - 目前僅支持特定的 AI 模型，可能與其他模型不兼容。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供類似的知識管理功能，但主要依賴於 JSON 文件，而 GBrain 則使用 Postgres 來實現更高效的檢索和更新。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 專注於資料同步，而 GBrain 更加專注於知識的管理和檢索，提供混合搜索功能。 |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | OpenClaw 主要針對醫療領域的知識管理，而 GBrain 則是一個通用的知識管理工具，適用於各種領域。 |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | OpenClaw 提供了更廣泛的 AI 助手功能，但設置過程較為複雜，適合需要多功能的用戶。 |
+| [hermes-agent/hermes-agent](https://github.com/hermes-agent/hermes-agent) | Hermes Agent 更加專注於任務導向的 AI 助手，但缺乏 GBrain 的個人知識管理能力。 |
 
 ## 替代方案決策
 
@@ -199,64 +205,64 @@ GBrain 的核心技術機制是結合了 Postgres 和 pgvector，實現了高效
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Notion | Notion 提供了一個全功能的知識管理平台，但主要依賴於雲端儲存，而 GBrain 則使用本地 markdown 文件和 Postgres，提供更高的靈活性。 | 如果你的團隊需要一個全功能的協作平台，並且不介意雲端儲存，Notion 會是更好的選擇。 | medium，因為需要將資料從 markdown 轉移到 Notion 的格式。 |
-| Roam Research | Roam Research 提供了類似的知識管理功能，但主要依賴於網頁應用，而 GBrain 則專注於本地資料和 CLI 操作。 | 如果你的團隊偏好使用網頁應用並需要即時協作，Roam Research 會是更好的選擇。 | high，因為需要將資料轉換為 Roam 的格式，並且可能需要手動重組。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了一個更為靈活的知識管理系統，但需要較高的技術門檻來設置。 | 如果你的團隊需要更高的自定義能力和靈活性，Boneyard 會是更好的選擇。 | medium，因為需要重新設計資料結構以符合 Boneyard 的要求。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 專注於資料同步，但不具備 GBrain 的知識管理功能，適合需要資料備份的場景。 | 如果你的主要需求是資料同步而非知識管理，Parsync 會更合適。 | low，因為資料結構相對簡單，易於轉移。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **gbrain** | **Notion** | **Roam Research** |
+> | 維度 | **gbrain** | **boneyard** | **parsync** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Notion 提供了一個全功能的知識管理平台，但主要依賴於雲端儲存，而 GBrain 則使用本地 markdown 文件和 Postgres，提供更高的靈活性。 | Roam Research 提供了類似的知識管理功能，但主要依賴於網頁應用，而 GBrain 則專注於本地資料和 CLI 操作。 |
-> | 遷移成本 | - | medium，因為需要將資料從 markdown 轉移到 Notion 的格式。 | high，因為需要將資料轉換為 Roam 的格式，並且可能需要手動重組。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要一個全功能的協作平台，並且不介意雲端儲存，N | 如果你的團隊偏好使用網頁應用並需要即時協作，Roam Res |
+> | 技術路線 | 本專案 | Boneyard 提供了一個更為靈活的知識管理系統，但需要較高的技術門檻來設置。 | Parsync 專注於資料同步，但不具備 GBrain 的知識管理功能，適合需要資料備份的場景。 |
+> | 遷移成本 | - | medium，因為需要重新設計資料結構以符合 Boneyard 的要求。 | low，因為資料結構相對簡單，易於轉移。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要更高的自定義能力和靈活性，Boneyard  | 如果你的主要需求是資料同步而非知識管理，Parsync 會更 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人試用和探索，但不建議在生產環境中使用。
+> 適合個人或小型專案試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在導入大量 markdown 文件時，可能會遇到性能瓶頸，導致導入時間過長。
-  - 解法：可以分批導入文件，減少單次導入的資料量。
-- [MEDIUM] 使用者在設置 Postgres 連接時，可能會遇到配置錯誤。
-  - 解法：確保使用正確的連接字串，並檢查 Postgres 的設定。
-- [MEDIUM] 在更新資料時，可能會導致索引不一致。
-  - 解法：定期運行索引重建指令以保持資料一致性。
+- **[HIGH]** 在導入大量 Markdown 文件時，可能會遇到性能瓶頸。
+  - 解法：考慮分批導入文件，或使用 Supabase 進行管理。
+- [MEDIUM] 某些 API 金鑰的管理可能會導致配置錯誤。
+  - 解法：仔細檢查 API 金鑰的格式和有效性。
+- [MEDIUM] 在使用特定 AI 模型時，可能會出現兼容性問題。
+  - 解法：確保使用推薦的 AI 模型，並定期檢查更新。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端知識管理 | 非常適合 | GBrain 的自動更新和混合搜索功能能有效管理小型團隊的知識。 |
-| 大型企業的知識庫管理 | 普通 | 雖然 GBrain 功能強大，但在大型企業中可能需要更多的性能優化。 |
-| 學術研究團隊的資料管理 | 適合 | GBrain 能夠整合大量研究資料並提供快速檢索，適合學術環境。 |
-| 個人知識管理 | 非常適合 | GBrain 的設計專注於個人知識的增長，能夠隨著時間不斷更新。 |
+| 5 人以下的創業團隊進行知識管理 | 非常適合 | GBrain 提供了快速設置和循環學習的能力，能夠有效支持小型團隊的需求。 |
+| 大型企業的知識管理系統 | 不適合 | 對於大型資料集的支持有限，可能無法滿足企業級需求。 |
+| 自由職業者的項目管理 | 適合 | 能夠快速整合多種資訊來源，提升工作效率。 |
+| 學術研究團隊的文獻管理 | 普通 | 雖然能夠支持文獻管理，但對於特定的學術需求可能不夠靈活。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
-| 維護負擔 | medium |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到高效的知識管理工具，值得投入。
+> 花 2 小時學習，3 小時整合，得到一個高效的個人知識管理系統，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> GBrain 本身不需要高權限，但需要正確配置 Postgres 連接。它不會存取敏感資料，但依賴的資料庫需確保安全性。整體來說，使用 GBrain 在 CI/CD 中是安全的，只要遵循最佳實踐。
+> 低風險：GBrain 不需要高權限，僅存取用戶的 Markdown 文件和 API 金鑰，依賴鏈中無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -321,57 +327,58 @@ GBrain 的核心技術機制是結合了 Postgres 和 pgvector，實現了高效
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 282 |
-| Open Issues | 21 |
-| Issue 解決率 | 0% (0 closed) |
+| Forks | 545 |
+| Open Issues | 24 |
+| Issue 解決率 | 8% (2 closed) |
 | 最後推送 | 2026-04-11 |
 | 建立日期 | 2026-04-05 |
-| Repo 大小 | 3.7 MB |
+| Repo 大小 | 4.4 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/garrytan/gbrain) |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `@anthropic-ai/sdk` `@aws-sdk/client-s3` `@modelcontextprotocol/sdk` `gray-matter` `openai` `pgvector` `postgres` `@types/bun`
+> `@anthropic-ai/sdk` `@aws-sdk/client-s3` `@electric-sql/pglite` `@modelcontextprotocol/sdk` `gray-matter` `openai` `pgvector` `postgres` `@types/bun`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 73
->     "Go Template" : 18
->     "Shell" : 4
->     "JavaScript" : 3
->     "CSS" : 1
->     "HTML" : 1
+>     "TypeScript" : 98
+>     "PLpgSQL" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@garrytan](https://github.com/garrytan) | 24 |
+> | [@garrytan](https://github.com/garrytan) | 44 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有多次更新和修復。
+**社群活躍度**：社群活躍，最近有多次提交和問題回應。
 **連結**：[文件](https://github.com/garrytan/gbrain)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-09 ~ 2026-04-11）
-> **活躍天數** 3 天 · **最新 commit** feat: GBrain v0.6.0 — Remote MCP Server + 12 Bug Fixes (#28)
+> [!abstract] 最近 10 次 commit（2026-04-10 ~ 2026-04-11）
+> **活躍天數** 2 天 · **最新 commit** feat: Voice v0.8.0 + feature discovery + Edge Function removal (#55)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#32](https://github.com/garrytan/gbrain/issues/32) | Support PGLite with local file as DB | 0 | 0 |
+> | [#32](https://github.com/garrytan/gbrain/issues/32) | Support PGLite with local file as DB | 2 | 0 |
+> | [#57](https://github.com/garrytan/gbrain/issues/57) | Use wick_search and wick_fetch `enhancement` | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
 > # GBrain
 > 
-> The memex Vannevar Bush imagined, built for people who think for a living.
+> Your AI agent is smart but it doesn't know anything about your life. GBrain fixes that. Meetings, emails, tweets, calendar events, voice calls, original ideas... all of it flows into a searchable knowledge base that your agent reads before every response and writes to after every conversation. The agent gets smarter every day.
+> 
+> > **~30 minutes to a fully working brain.** Your agent does the work. Database ready in 2 seconds (PGLite, no server). Schema, import, embeddings, and integrations take 15-30 minutes depending on brain size. You just answer questions about API keys.
+> >
+> > **Requires a frontier model.** Tested with **Claude Opus 4.6** and **GPT-5.4 Thinking**. Likely to break with smaller models.
 > 
 > 
 > # Installed via bun (standalone or library)
@@ -382,63 +389,138 @@ GBrain 的核心技術機制是結合了 Postgres 和 pgvector，實現了高效
 > clawhub update gbrain
 > 
 > 
-> ## Setup
+> ## Setup details
 > 
-> After installing via CLI or library path, run the setup wizard:
+> `gbrain init` defaults to PGLite (embedded Postgres 17.5 via WASM). No accounts, no server. Config saved to `~/.gbrain/config.json`.
 > 
 > ```bash
+> gbrain init                     # PGLite (default)
+> gbrain init --supabase          # guided wizard for Supabase
+> gbrain init --url         # any Postgres with pgvector
+> ```
 > 
-> ## Why Postgres
-> 
-> At 500 files, `grep` is fine. At 3,000 people pages, 5,800 Apple Notes, and 13 years of calendar data, `grep` falls apart. You need keyword search for exact names, vector search for semantic meaning, and something that fuses both. You need an index that updates incrementally when one file changes, not a full directory walk. You need your agent to find "everyone who was at the board dinner last March" in milliseconds, not 30 seconds of grepping.
-> 
-> GBrain gives you hybrid search that combines keyword and vector approaches, plus a knowledge model that treats every page like an intelligence assessment: compiled truth on top (your current best understanding, rewritten when evidence changes), append-only timeline on the bottom (the evidence trail that never gets edited).
-> 
-> AI agents maintain the brain. You ingest a document and the agent updates every entity mentioned, creates cross-reference links, and appends timeline entries. MCP clients query it. The intelligence lives in fat markdown skills, not application code.
+> Import is idempotent. Re-running skips unchanged files (SHA-256 content hash). ~30s for text import of 7,000 files, ~10-15 min for embedding.
 > 
 > 
-> ## How this happened
+> ## Need an AI agent first?
 > 
-> I was setting up my [OpenClaw](https://openclaw.com) agent and started a markdown brain repo. One page per person, one page per company, compiled truth on top, append-only timeline on the bottom. The agent got smarter the more it knew, so I kept feeding it. Meetings, emails, tweets, Apple Notes, calendar data, original ideas. One thing led to another. Within a week I had:
+> GBrain is designed to be installed and operated by an AI agent. If you don't have one running yet:
 > 
-> - **10,000+ markdown files** indexed and searchable
-> - **3,000+ people** with compiled dossiers and relationship history
-> - **13 years of calendar data** (21,000+ events)
-> - **5,800+ Apple Notes** going back to 2009
-> - **280+ meeting transcripts** with AI analysis
-> - **300+ captured original ideas** organized by thesis
-> - **500+ media pages** (video transcripts, books, articles)
-> - Company profiles, food guides, travel logs
-> 
-> This is what I actually use day to day. The agent runs while I sleep... literally. The dream cycle scans every conversation from the day, enriches missing entities, fixes broken citations, and consolidates memory. I wake up and the brain is smarter than when I went to sleep. OpenClaw ships this as DREAMS.md. Hermes Agent can do the same with a nightly cron job (see the [SKILLPACK](docs/GBRAIN_SKILLPACK.md#the-dream-cycle) for setup).
-> 
-> **You don't need Postgres to start.** The knowledge model is just markdown files in a git repo. The [skills](docs/GBRAIN_SKILLPACK.md) and [schema](docs/GBRAIN_RECOMMENDED_SCHEMA.md) work with any AI agent that can read and write files. Start there.
-> 
-> I added Postgres + pgvector later because at 1,000 to 10,000 long markdown docs, `grep` stops working. You need real chunking, real retrieval, real search. GBrain is the thin CLI and MCP layer I built on top of Postgres to solve that, optimized for OpenClaw and smart agents.
+> - **[OpenClaw](https://openclaw.ai)** — Deploy [AlphaClaw on Render](https://render.com/deploy?repo=https://github.com/openclaw/alphaclaw) (one click, requires 8GB+ RAM instance)
+> - **[Hermes Agent](https://github.com/NousResearch/hermes-agent)** — Deploy on [Railway using this template](https://github.com/praveen-ks-2001/hermes-agent-template) (one click)
 > 
 > 
-> ### Ask it anything
+> ## Start here: paste this into your agent
 > 
-> > "Who should I invite to dinner who knows both Pedro and Diana?"
-> > — cross-references the social graph across 3,000+ people pages
+> Copy this block into OpenClaw or Hermes Agent. The agent will install GBrain, set up the brain schema, import your files, configure all integrations, and verify everything works. GBrain needs a persistent agent that can run cron jobs and background sync.
 > 
-> > "What have I said about the relationship between shame and founder performance?"
-> > — searches YOUR thinking, not the internet
+> ```
+> GOAL: I want an opinionated AI agent setup that actually works. Get me
+> there. Install GBrain, set up the brain schema, import my files,
+> configure all integrations, and verify everything works. Do not skip
+> steps. Verify each step before proceeding. If a step fails, stop
+> and fix it.
 > 
-> > "What changed with the Series A since Tuesday?"
-> > — diffs timeline entries across deal and company pages
+> You don't need a server to start. gbrain init defaults to PGLite
+> (embedded Postgres 17.5 via WASM). No Supabase account, no Docker,
+> no connection strings. One command and you have a full Postgres brain
+> with pgvector, hybrid search, and all 37 operations. When your brain
+> outgrows local (1000+ files), gbrain migrate --to supabase moves
+> everything to managed Postgres in one shot.
 > 
-> > "Prep me for my meeting with Jordan in 30 minutes"
-> > — pulls dossier, shared history, recent activity, open threads
+> The knowledge model is markdown files in a git repo. Read
+> docs/GBRAIN_SKILLPACK.md for the full agent playbook and
+> docs/GBRAIN_RECOMMENDED_SCHEMA.md for the brain directory structure.
 > 
-> Your markdown repo is the source of truth. GBrain makes it searchable. Your AI agent makes it live.
+> STEP 1 — INSTALL
+>   curl -fsSL https://bun.sh/install | bash && source ~/.bashrc
+>   bun add github:garrytan/gbrain
+>   Verify: gbrain --version
+> 
+> STEP 2 — DATABASE
+>   Run: gbrain init
+>   This creates a local PGLite brain (embedded Postgres, no server).
+>   Brain ready in ~2 seconds. No accounts, no connection strings.
+>   Verify: gbrain doctor --json (all checks pass)
+> 
+>   For large brains (1000+ files) or remote access, use Supabase:
+>     gbrain init --supabase
+>   You can migrate anytime: gbrain migrate --to supabase
+> 
+> STEP 3 — SCHEMA
+>   Read docs/GBRAIN_RECOMMENDED_SCHEMA.md — this is the brain's directory
+>   structure. Set up the MECE directories (people/, companies/, deals/,
+>   concepts/, etc.) with README.md resolvers in each. The schema tells
+>   you exactly what goes where and how to resolve ambiguity.
+>   The agent maintains this structure automatically after setup.
+> 
+> STEP 4 — IMPORT
+>   Find markdown: find ~/git ~/Documents ~/notes -maxdepth 3 -name "*.md" | head -30
+>   Tell user what you found. Import: gbrain import /path/ --no-embed
+>   Verify: gbrain stats (page count > 0)
+> 
+> STEP 5 — SEARCH
+>   Run: gbrain embed --stale (generates vector embeddings, ~1 min per 1000 pages)
+>   Then: gbrain query "what are the key themes across these documents?"
+>   Show the user the results. This is the magic moment.
+>   Verify: results include semantic matches, not just keyword hits
+> 
+> STEP 6 — GO LIVE
+>   a. Read docs/GBRAIN_SKILLPACK.md — adopt brain-first lookup, entity
+>      detection, and back-linking into your behavior immediately
+>   b. Set up live sync: gbrain sync --repo /path/ && gbrain embed --stale
+>      (see docs/guides/live-sync.md for cron/watch/webhook options)
+>   c. Set up auto-update: gbrain check-update --json on a daily cron
+>      (never auto-install — always ask the user first)
+>   d. Run verification: read and execute docs/GBRAIN_VERIFY.md
+> 
+> STEP 7 — INTEGRATIONS
+>   Run: gbrain integrations list
+>   For EVERY available recipe, set it up. Each recipe is a markdown file
+>   that tells the agent exactly what credentials to ask for, how to
+>   validate them, and how to wire the integration. The agent reads the
+>   recipe, asks the user for API keys, and handles the rest.
+>   Voice, email, calendar, Twitter — install them all.
+>   Verify: gbrain integrations doctor (all health checks pass)
+> 
+> DONE. Tell the user: "GBrain is live. You have [N] pages with hybrid
+> search. I now check the brain before answering questions. All available
+> integrations are configured."
+> ```
+> 
+> 
+> ### Without an agent (standalone CLI)
+> 
+> ```bash
+> bun add -g github:garrytan/gbrain
+> gbrain init                     # local brain, ready in 2 seconds
+> gbrain import ~/git/brain/      # index your markdown
+> gbrain query "what themes show up across my notes?"
+> ```
+> 
+> Run `gbrain --help` for all commands. See [MCP setup](docs/mcp/DEPLOY.md) for connecting Claude Desktop, Perplexity, etc.
+> 
+> 
+> ## Getting Data In
+> 
+> Once GBrain is installed, your agent needs data flowing in. GBrain ships integration recipes that your agent sets up for you. It reads the recipe, asks for API keys, validates each one, and runs a smoke test. [Markdown is code](docs/ethos/THIN_HARNESS_FAT_SKILLS.md)... the recipe IS the installer.
+> 
+> | Recipe | Requires | What It Does |
+> |--------|----------|-------------|
+> | [Public Tunnel](recipes/ngrok-tunnel.md) | — | Fixed URL for MCP + voice (ngrok Hobby $8/mo) |
+> | [Credential Gateway](recipes/credential-gateway.md) | — | Gmail + Calendar access (ClawVisor or Google OAuth) |
+> | [Voice-to-Brain](recipes/twilio-voice-brain.md) | ngrok-tunnel | Phone calls → brain pages (Twilio + OpenAI Realtime) |
+> | [Email-to-Brain](recipes/email-to-brain.md) | credential-gateway | Gmail → entity pages (deterministic collector) |
+> | [X-to-Brain](recipes/x-to-brain.md) | — | Twitter → brain pages (timeline + mentions + deletions) |
+> | [Calendar-to-Brain](recipes/calendar-to-brain.md) | credential-gateway | Google Calendar → searchable daily pages |
+> | [Meeting Sync](recipes/meeting-sync.md) | — | Circleback transcripts → brain pages with attendees |
+> 
+> Run `gbrain integrations` to see status. Dependencies resolve automatically. See [Getting Data In](docs/integrations/README.md) for the full guide.
 > 
 > 
 > ## The Compounding Thesis
 > 
 > Most tools help you find things. GBrain makes you smarter over time.
-> 
-> The core loop:
 > 
 > ```
 > Signal arrives (meeting, email, tweet, link)
@@ -449,102 +531,18 @@ GBrain 的核心技術機制是結合了 Postgres 和 pgvector，實現了高效
 >   → Sync: gbrain indexes changes for next query
 > ```
 > 
-> Every cycle through this loop adds knowledge. The agent enriches a person page after a meeting. Next time that person comes up, the agent already has context — their role, your history, what they care about, what you discussed last time. You never start from zero.
+> Every cycle through this loop adds knowledge. The agent enriches a person page after a meeting. Next time that person comes up, the agent already has context. You never start from zero.
 > 
 > An agent without this loop answers from stale context. An agent with it gets smarter every conversation. The difference compounds daily.
 > 
-> Never do anything twice. If you look someone up once, that lookup lives in the brain forever. If a pattern emerges across three meetings, the agent captures it. If you generate an original idea in conversation, it goes to `originals/` — your searchable intellectual archive.
+> > "Who should I invite to dinner who knows both Pedro and Diana?"
+> > — cross-references the social graph across 3,000+ people pages
 > 
-> 
-> ## Architecture
-> 
-> ```
-> ┌──────────────────┐    ┌───────────────┐    ┌──────────────────┐
-> │   Brain Repo     │    │    GBrain     │    │    AI Agent      │
-> │   (git)          │    │  (retrieval)  │    │  (read/write)    │
-> │                  │    │               │    │                  │
-> │  markdown files  │───>│  Postgres +   ││  skills define   │
-> │  = source of     │    │  pgvector     │    │  HOW to use the  │
-> │    truth         │    │               │    │  brain           │
-> │                  │ --no-embed
-> 
-> 4. Run a query against the imported data to prove search works
-> 
-> 5. Read docs/GBRAIN_RECOMMENDED_SCHEMA.md and offer to
->    restructure my knowledge base
-> 
-> 6. Read docs/GBRAIN_SKILLPACK.md and update all your skills
->    with the production agent patterns: brain-agent loop,
->    entity detection, source attribution, iron law back-linking,
->    and the enrichment pipeline
-> 
-> 7. Set up a daily cron for `gbrain check-update`.
->    Notify me on new features only, not patches.
->    Never auto-install, just tell me what's new.
-> 
-> 8. Set up automatic sync so the vector DB stays current
->    with the brain repo. Read GBRAIN_SKILLPACK.md Section 18
->    for approaches (cron, --watch, webhook). Pick what fits
->    your environment. Always chain:
->    gbrain sync --repo  && gbrain embed --stale
->    Verify: push a change, confirm it appears in search.
-> 
-> 9. Run the verification runbook (docs/GBRAIN_VERIFY.md)
->    to confirm everything works: schema, sync, embeddings,
->    brain-first lookup.
-> ```
-> 
-> OpenClaw will install gbrain, walk through Supabase setup, discover your markdown files, import them, and prove search works with a query from your data.
-> 
-> After setup, you talk to your brain through OpenClaw:
-> 
-> ```
-> Search the brain for everything we know about [topic]
-> Ingest my meeting notes from today
-> Give me a briefing for my meetings tomorrow
-> How many pages are in the brain now?
-> ```
-> 
-> GBrain keeps your brain current. After setup, `gbrain sync --watch` polls your git repo and imports only what changed. Binary files (images, PDFs, audio) can be moved to cloud storage with `gbrain files mirror` to slim down your git repo.
-> 
-> > **Supabase settings:** GBrain connects directly to Postgres (not the REST API).
-> > You need the **Shared Pooler connection string**, not the project URL or anon key.
-> > Find it: go to your project, click **Get Connected** next to the project URL,
-> > then **Direct Connection String** > **Session Pooler**, and copy the
-> > **Shared Pooler** connection string.
-> 
-> 
-> ## Upgrade
-> 
-> Upgrade depends on how you installed:
-> 
-> ```bash
-> 
-> # Compiled binary
-> 
-> # Download the latest from https://github.com/garrytan/gbrain/releases
-> ```
-> 
-> After upgrading, run `gbrain init` again to apply any schema migrations (idempotent, safe to re-run).
-> 
-> 
-> # Guided wizard: auto-provisions Supabase or accepts a connection URL
-> gbrain init --supabase
-> 
-> 
-> # Or connect to any Postgres with pgvector
-> gbrain init --url postgresql://user:pass@host:5432/dbname
-> ```
-> 
-> The init wizard:
-> 1. Checks for Supabase CLI, offers auto-provisioning
-> 2. Falls back to manual connection URL if CLI isn't available
-> 3. Runs the full schema migration (tables, indexes, triggers, extensions)
-> 4. Verifies the connection and confirms the dat
+> > "What have I said about the relationship 
 
 ## 延伸閱讀
 
-相關概念：[[知識管理]] · [[向量資料庫]] · [[自動化]]
+相關概念：[[RAG]] · [[CLI/TUI]] · [[自動化]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
 
@@ -552,11 +550,11 @@ GBrain 的核心技術機制是結合了 Postgres 和 pgvector，實現了高效
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：知識管理）
+> [!note]- 直接競品（同子分類：個人知識管理）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "知識管理" AND file.name != "garrytan--gbrain"
+> WHERE subcategory = "個人知識管理" AND file.name != "garrytan--gbrain"
 > SORT stars DESC
 > ```
 
@@ -564,7 +562,7 @@ GBrain 的核心技術機制是結合了 Postgres 和 pgvector，實現了高效
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "garrytan--gbrain"
+> WHERE category = "AI/ML" AND file.name != "garrytan--gbrain"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -588,7 +586,7 @@ GBrain 的核心技術機制是結合了 Postgres 和 pgvector，實現了高效
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["知識管理","向量資料庫","自動化"];
+> const concepts = ["RAG","CLI/TUI","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "garrytan--gbrain" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

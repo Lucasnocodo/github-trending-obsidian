@@ -7,8 +7,8 @@ language: N/A
 license: N/A
 description: "Hermes Agent 从入门到精通 · 橙皮书系列 · Nous Research 开源 AI Agent 框架实战指南"
 homepage: ""
-stars: 1876
-stars_per_day: 625
+stars: 1881
+stars_per_day: 627
 forks: 206
 open_issues: 2
 created: 2026-04-08
@@ -19,14 +19,14 @@ month: "2026-04"
 category: "AI/ML"
 subcategory: "Agent 框架"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-12
-use_case: "提供從入門到精通的 Hermes Agent 開源 AI Agent 框架實戰指南。"
+use_case: "提供 Hermes Agent 框架的實戰指南，幫助開發者從入門到精通。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,21 +42,20 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-12"
-star_history: "2026-04-12:1876"
+star_history: "2026-04-12:1876,2026-04-12:1881"
 tags:
   - github
   - "category/ai_ml"
   - "lang/other"
-  - easy_install
 aliases:
   - "hermes-agent-orange-book"
   - "alchaincyf/hermes-agent-orange-book"
-  - "提供從入門到精通的 Hermes Agent 開源 AI Agent 框架實戰指南。"
+  - "提供 Hermes Agent 框架的實戰指南，幫助開發者從入門到精通。"
 ---
 
 # hermes-agent-orange-book
 
-**1.9k** stars · **625** stars/天 · 建立 3 天前 · N/A · 未標註授權
+**1.9k** stars · **627** stars/天 · 建立 3 天前 · N/A · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/alchaincyf--hermes-agent-orange-book");
@@ -69,16 +68,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `easy-install`
+`個人專案`
 
 > [!summary] 一句話摘要
-> 提供從入門到精通的 Hermes Agent 開源 AI Agent 框架實戰指南。
+> 提供 Hermes Agent 框架的實戰指南，幫助開發者從入門到精通。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (625 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (627 stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 對開發 AI Agent 有興趣的開發者，尤其是希望簡化開發流程的獨立開發者。
-> **一句話重點** Hermes Agent 的設計理念是讓 AI Agent 更加自我學習和自我優化，這在目前的開源工具中是相對獨特的。
+> **適合** 希望深入了解 AI Agent 開發的開發者和 AI 愛好者，特別是已經使用過 Claude Code 或 OpenClaw 的人。
+> **一句話重點** Hermes Agent 的設計不僅強調功能性，還注重自我學習和適應能力，這在當前的 AI 工具中是相對少見的。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,106 +100,92 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到一個可自我學習的 AI Agent，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到靈活的 AI Agent 開發框架，值得一試。
 
 > [!abstract] 核心創新
-> Hermes Agent 是首個內建自我改進學習循環的開源 AI Agent 框架。
+> Hermes Agent 是首個內建自我改進學習循環的 AI Agent 框架。
 
 ## 專案簡介
 
-Hermes Agent 是一個開源 AI Agent 框架，提供了一個內建的自我改進學習循環、三層記憶系統和自動技能創建與演化的功能。使用者可以透過簡單的安裝和配置，開始與 AI 進行對話，並在多平台上運行。這個框架的設計目的是為了讓開發者能夠輕鬆構建個人 AI Agent，並且能夠隨著使用者的需求不斷進化。核心機制包括學習循環和記憶管理，這使得 Hermes Agent 能夠在實際應用中不斷提升其性能和能力。與 OpenClaw 和 Claude Code 相比，Hermes Agent 的優勢在於其自我改進的能力，這意味著它能夠根據使用者的反饋自動調整和優化其行為。
+Hermes Agent 是一個開源的 AI Agent 框架，具有內建的自我改進學習循環、三層記憶系統和自動技能創建與演進。這本橙皮書分為五個部分，涵蓋從基本概念到實際應用的各個方面，讓開發者能夠快速上手並深入理解框架的運作。核心機制包括學習循環和工具生態系統，這使得 Hermes Agent 能夠在多種場景下靈活應用，例如知識助手和開發自動化。與 OpenClaw 和 Claude Code 相比，Hermes Agent 的自我改進能力和記憶管理系統提供了更高的靈活性和擴展性。這本書的目標讀者是希望深入了解 Hermes 的開發者和 AI 愛好者，特別是那些已經使用過類似工具的人。
 
-實際使用中，開發者可以利用這個框架來實現知識助手、開發自動化和內容創建等多種場景。雖然目前還在快速迭代中，但其設計理念已經顯示出強大的潛力。這個專案適合對 AI 開發有興趣的開發者，尤其是那些希望在不需要深入編程的情況下，快速構建和部署 AI 解決方案的人。未來幾個月內，隨著社群的活躍和功能的持續擴展，Hermes Agent 有望成為一個更成熟的工具。
-
-**技術棧**：`Python 3.8` · `Flask` · `TensorFlow`
+實際使用中，Hermes Agent 的效能依賴於其記憶系統的設計，能夠處理複雜的對話和任務，並且在多平台上運行良好。社群活躍度高，作者有豐富的 AI 開發經驗，這為使用者提供了良好的支持。這個專案目前處於早期階段，適合對 AI Agent 開發有興趣的團隊，未來可能會隨著功能的增強而變得更加成熟。使用者在實際應用中可能會遇到文檔不足的問題，但整體來說，這本書提供了良好的入門指導和實用的案例分析。
 
 ## 重點功能
 
-- 自我改進學習循環 — 內建的學習機制能根據使用者反饋自動調整行為。
+- 自我改進學習循環 — 內建的學習機制，能夠根據用戶反饋自動調整行為。
 - 三層記憶系統 — 提供高效的記憶管理，支持複雜的對話和任務處理。
-- 自動技能創建 — 根據需求自動生成和演化技能，提升 AI 的適應性。
-- 多平台支持 — 能夠在不同平台上運行，方便開發者進行部署。
-- 實戰案例 — 提供多種實際應用場景的指導，幫助開發者快速上手。
+- 自動技能創建 — 根據用戶需求自動生成和演進技能，提升靈活性。
+- 多平台支持 — 能夠在不同的操作系統上運行，方便開發者進行部署。
+- 實戰案例分析 — 書中包含多個實際應用場景，幫助開發者理解框架的應用。
 
 ## 快速開始
 
-1. 下載 PDF 指南
+1. 下載 PDF 手冊
 ```bash
-wget https://github.com/alchaincyf/hermes-agent-orange-book/raw/main/Hermes-Agent-The-Complete-Guide-v260407.pdf
+wget https://github.com/alchaincyf/hermes-agent-orange-book/raw/main/Hermes-Agent-从入门到精通-v260407.pdf
 ```
 2. 安裝 Hermes Agent
 ```bash
 pip install hermes-agent
 ```
-3. 啟動對話
+3. 啟動第一個對話
 ```bash
 hermes-agent start
-```
-
-## 程式碼範例
-
-```bash
-# 前置條件
-# 安裝 hermes-agent
-pip install hermes-agent
-# 啟動對話
-hermes-agent start
-# 預期輸出
-啟動成功，開始與 AI 進行對話。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天就累積 1876 stars（625/天），forks 206（11.0%），顯示出強烈的社群興趣。這個專案由 Nous Research 開發，解決了開發者在構建 AI Agent 時面臨的複雜性問題，提供了一個簡單易用的框架。作者 HuaShu 是一位知名的 AI 內容創作者，擁有超過 30 萬的追隨者，這也為專案的曝光度提供了支持。近期的社群討論和需求反饋也促進了這個專案的快速成長。整體來看，這個專案的快速增長反映了對開源 AI 解決方案的需求。
+> 建立 3 天就累積 1881 stars（627/天），forks 206（11.0%），顯示出強勁的增長潛力。作者 alchaincyf 是一位活躍的 AI 開發者，擁有豐富的開發經驗，並且在社群中有良好的影響力。Hermes Agent 解決了開發者在構建 AI Agent 時所面臨的自我改進和記憶管理的痛點，這在現有的工具中並不常見。這本書的發布引起了社群的廣泛關注，尤其是在 AI 開發者中。技術生態的變化，例如對自我學習和記憶系統的需求，讓這個工具變得更加可行。forks/stars 比率為 11.0%，顯示出許多開發者對此工具的實際修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：對開發 AI Agent 有興趣的開發者，尤其是希望簡化開發流程的獨立開發者。
+**目標受眾**：希望深入了解 AI Agent 開發的開發者和 AI 愛好者，特別是已經使用過 Claude Code 或 OpenClaw 的人。
 
 > [!example] 使用場景
-> - AI 開發者用它來快速構建個人 AI Agent，因為它提供了簡單的安裝和配置流程，讓開發者能夠專注於功能開發而非底層架構。
-> - 企業團隊用它來實現開發自動化，因為其內建的自我改進學習循環能夠根據實際使用情況不斷優化性能。
-> - 內容創作者用它來生成和管理內容，因為其多平台支持和自動技能創建功能可以大幅提升工作效率。
+> - AI 開發者用它來學習如何構建自我改進的 AI Agent，因為這本書提供了詳細的實作步驟和案例分析。
+> - 企業內部開發團隊用它來提升開發自動化的效率，因為 Hermes Agent 的多平台支持能夠快速整合到現有工作流中。
+> - AI 愛好者用它來建立個人化的 AI 助手，因為框架的靈活性和自動技能創建功能使得開發過程更簡單。
 
 ## 架構分析
 
-Hermes Agent 採用模組化設計，核心由 Python 和 Flask 實現，方便擴展和維護。資料流經過三層記憶系統，分別負責短期記憶、中期記憶和長期記憶，這樣的設計使得 Agent 能夠在對話中保持上下文。選擇 Python 作為主要語言是因為其生態系統豐富，適合快速開發，但可能在性能上不如 C++ 等低階語言。整體架構的輕量化使得部署和維護成本低，但在處理高並發請求時可能會遇到瓶頸。
+Hermes Agent 採用模組化設計，核心由自我改進學習循環、三層記憶系統和技能管理組成。這種設計使得框架在處理複雜任務時能夠靈活調整。資料流方面，使用者的輸入會經過學習循環進行分析，然後根據記憶系統的狀態生成相應的回應。選擇這種架構的代價在於需要較高的計算資源來支持自我學習的過程。擴展性方面，隨著使用者需求的增加，可能需要進一步優化記憶管理和學習算法，以避免性能瓶頸。
 
 ## 技術深入分析
 
-Hermes Agent 的核心技術機制包括自我改進的學習循環，這使得 Agent 能夠根據使用者的反饋自動調整其行為。其三層記憶系統分別管理短期、中期和長期記憶，這樣的設計使得 Agent 在對話中能夠保持上下文，並能夠根據歷史交互進行更智能的回應。這個框架的效能特性在於其能夠在多平台上運行，適合不同的應用場景，但在處理高並發請求時可能會遇到性能瓶頸。選擇 Python 和 Flask 作為技術棧的原因在於其生態系統的豐富性和開發的便捷性，但這也可能導致在性能上不如其他低階語言。技術風險方面，隨著使用者數量的增加，記憶管理和自我學習的算法可能需要進一步優化，以避免在大規模應用中出現性能下降的問題。整合方面，與主流框架如 Flask 和 Django 的相容性良好，但在 CI/CD pipeline 的整合上仍需進一步探索。
+Hermes Agent 的核心技術機制包括內建的自我改進學習循環，這使得它能夠根據用戶的反饋不斷調整行為。這種設計使得框架在處理複雜任務時能夠靈活應對，並且能夠在多種場景下運行良好。效能方面，Hermes Agent 能夠處理大量的對話和任務，但需要足夠的計算資源來支持自我學習的過程。選擇這種架構的代價在於需要較高的計算資源來支持自我學習的過程，這可能會在資源有限的情況下成為瓶頸。技術風險方面，隨著使用者需求的增加，可能需要進一步優化記憶管理和學習算法，以避免性能瓶頸。整合方面，Hermes Agent 能夠與主流框架良好整合，但在某些情況下可能需要額外的適配器或包裝器來解決兼容性問題。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的指導，包含多語言版本。安裝過程相對順暢，但對於新手來說，可能需要一些額外的學習時間。整體來說，30 分鐘內可以完成基本的設置和運行。
+> README 文件提供了清晰的指導和下載鏈接，安裝過程相對順暢，但文檔尚不完善，可能會讓新手感到困惑。整體來說，花 30 分鐘應該能夠完成基本的設置和運行。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用的安裝和配置流程，適合新手入門。
-> - 內建自我改進學習循環，能夠根據使用者反饋持續優化。
-> - 模組化設計，方便擴展和維護。
+> - 內建自我改進機制，提升 AI Agent 的靈活性和適應性。
+> - 詳細的實戰指南，幫助開發者快速上手。
+> - 多平台支持，方便部署和使用。
 
 > [!danger] 缺點
-> - 目前功能仍在快速迭代中，穩定性可能不足。
-> - 缺乏詳細的中文文檔，對非英語使用者造成困難。
-> - 在高並發環境下可能會遇到性能瓶頸。
+> - 文檔尚不完善，部分功能缺乏詳細說明。
+> - 對於大型項目，可能需要額外的配置和調整。
+> - 在某些平台上可能會遇到兼容性問題。
 
 > [!warning] 注意事項
-> - 目前仍在快速迭代中，可能存在不穩定的功能。
-> - 對於大型企業應用的支持可能尚不成熟。
-> - 缺乏詳細的中文文檔，可能對非英語使用者造成困難。
+> - 目前文檔尚不完善，部分功能缺乏詳細說明。
+> - 對於大型項目，可能需要額外的配置和調整。
+> - 在某些平台上可能會遇到兼容性問題。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | Hermes Agent 框架的核心實現，提供底層 API 和功能擴展，適合需要更高自定義的開發者。 |
-| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 專注於醫療領域的 AI Agent，提供專業技能，但不具備 Hermes 的自我改進能力。 |
-| [ChinaSiro/claude-code-sourcemap](https://github.com/ChinaSiro/claude-code-sourcemap) | Claude Code 提供的代碼生成能力，但缺乏 Hermes 的記憶管理和自我學習功能。 |
+| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | Hermes Agent 是核心框架，而橙皮書則是其實戰指南，提供了詳細的使用說明和案例分析。 |
+| [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | OpenClaw 專注於醫療領域的技能，而 Hermes Agent 提供更廣泛的應用場景和自我改進能力。 |
+| [ChinaSiro/claude-code-sourcemap](https://github.com/ChinaSiro/claude-code-sourcemap) | Claude Code 側重於代碼生成，而 Hermes Agent 更加注重自我學習和記憶管理。 |
 
 ## 替代方案決策
 
@@ -208,16 +193,16 @@ Hermes Agent 的核心技術機制包括自我改進的學習循環，這使得 
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| OpenClaw | OpenClaw 提供了一個強大的 AI Agent 框架，但缺乏 Hermes 的自我改進學習循環。 | 如果你的團隊需要一個穩定的框架並且不需要自我學習的能力，OpenClaw 是不錯的選擇。 | medium，因為需要重新設計部分架構以適應 OpenClaw 的 API。 |
-| Claude Code | Claude Code 專注於代碼生成，並不具備 Hermes 的記憶管理和自我學習功能。 | 如果你的主要需求是代碼生成而非 AI Agent 的自我學習，Claude Code 會更合適。 | low，因為兩者的 API 設計有相似之處。 |
+| [OpenAI/Claude](https://github.com/OpenAI/Claude) | Claude 專注於自然語言處理和生成，而 Hermes Agent 更加注重自我學習和記憶管理。 | 如果你的項目主要集中在自然語言處理和生成上，Claude 可能更適合。 | medium，因為需要重新設計自我學習的部分。 |
+| [NousResearch/OpenClaw](https://github.com/NousResearch/OpenClaw) | OpenClaw 側重於特定領域的技能，而 Hermes Agent 提供更廣泛的應用場景和自我改進能力。 | 如果你的應用場景非常專注於某一領域，OpenClaw 可能會更有效。 | high，因為需要重新設計整個架構。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **hermes-agent-orange-book** | **OpenClaw** | **Claude Code** |
+> | 維度 | **hermes-agent-orange-book** | **Claude** | **OpenClaw** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | OpenClaw 提供了一個強大的 AI Agent 框架，但缺乏 Hermes 的自我改進學習循環。 | Claude Code 專注於代碼生成，並不具備 Hermes 的記憶管理和自我學習功能。 |
-> | 遷移成本 | - | medium，因為需要重新設計部分架構以適應 OpenClaw 的 API。 | low，因為兩者的 API 設計有相似之處。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要一個穩定的框架並且不需要自我學習的能力，Op | 如果你的主要需求是代碼生成而非 AI Agent 的自我學習 |
+> | 技術路線 | 本專案 | Claude 專注於自然語言處理和生成，而 Hermes Agent 更加注重自我學習和記憶管理。 | OpenClaw 側重於特定領域的技能，而 Hermes Agent 提供更廣泛的應用場景和自我改進能力。 |
+> | 遷移成本 | - | medium，因為需要重新設計自我學習的部分。 | high，因為需要重新設計整個架構。 |
+> | 適用場景 | 主要場景 | 如果你的項目主要集中在自然語言處理和生成上，Claude 可 | 如果你的應用場景非常專注於某一領域，OpenClaw 可能會 |
 
 ## 成熟度評估
 
@@ -234,18 +219,18 @@ Hermes Agent 的核心技術機制包括自我改進的學習循環，這使得 
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高並發環境下可能會遇到性能瓶頸，導致回應延遲。
-  - 解法：考慮使用負載均衡器來分散請求。
-- [MEDIUM] 自我學習功能在某些情況下可能會導致不預期的行為。
-  - 解法：定期檢查和調整學習參數。
+- **[HIGH]** 在某些平台上安裝可能會遇到兼容性問題
+  - 解法：檢查官方文檔以獲取最新的安裝指導
+- [MEDIUM] 文檔不夠詳細，可能會讓新手困惑
+  - 解法：參考社群討論和示例
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊開發 AI 助手 | 非常適合 | Hermes 的自我學習和簡單配置非常符合小型團隊的需求。 |
-| 大型企業的核心業務系統 | 不適合 | 目前的穩定性和性能可能無法滿足大型企業的需求。 |
-| 個人開發者的實驗項目 | 非常適合 | 提供了簡單的上手流程，適合個人開發者進行探索和實驗。  |
+| 小型開發團隊進行 AI Agent 開發 | 非常適合 | Hermes Agent 提供了靈活的架構和詳細的指南，適合快速開發和迭代。 |
+| 大型企業的 AI 解決方案 | 不適合 | 目前仍處於 alpha 階段，穩定性不足。 |
+| 個人開發者探索 AI 技術 | 適合 | 提供了良好的入門資源和實戰案例，易於上手。  |
 
 ## 採用成本分析
 
@@ -257,12 +242,24 @@ Hermes Agent 的核心技術機制包括自我改進的學習循環，這使得 
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到一個可自我學習的 AI Agent，值得一試。
+> 花 5 小時學習，10 小時整合，得到靈活的 AI Agent 開發框架，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，但需注意依賴的第三方庫的安全性。
+> 低風險：Hermes Agent 本身不需要高權限，不存取敏感資料，但使用者需注意依賴的第三方庫的安全性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Hermes Agent 最常與其他 AI 工具搭配使用，特別是在開發和部署階段。實際整合範例中，開發者可以在使用 Next.js 的專案中，透過 API 調用 Hermes Agent 來實現自動化任務。支援主流 CI 工具如 GitHub Actions，並且可以與 VS Code 等 IDE 整合。整合的摩擦點主要在於需要對框架的內部運作有一定了解，以便進行適當的配置和調整。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 Hermes Agent 出現之前，開發者主要依賴於 OpenClaw 和 Claude 等工具來構建 AI Agent，但這些工具在自我學習和記憶管理方面存在一定的限制。隨著對 AI 自我學習需求的增加，Hermes Agent 提供了一個新的解決方案，代表了 AI Agent 開發的一個重要進步。未來，隨著技術的進步，這個領域可能會出現更多創新和改進。
 
 ## 健康度儀表板
 
@@ -342,7 +339,7 @@ Hermes Agent 的核心技術機制包括自我改進的學習循環，這使得 
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，近期有多個更新和討論。
+**社群活躍度**：社群活躍，作者經常更新和回應問題。
 **連結**：[文件](https://hermes-agent.nousresearch.com/docs/)
 
 ## 開發動態
@@ -434,7 +431,7 @@ Hermes Agent 的核心技術機制包括自我改進的學習循環，這使得 
 
 ## 延伸閱讀
 
-相關概念：[[Agent 框架]] · [[自動化]] · [[機器學習]]
+相關概念：[[Agent 框架]] · [[自我學習]] · [[記憶管理]]
 
 相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[MemPalace--mempalace|MemPalace/mempalace]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[davebcn87--pi-autoresearch|davebcn87/pi-autoresearch]]
 
@@ -478,7 +475,7 @@ Hermes Agent 的核心技術機制包括自我改進的學習循環，這使得 
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["Agent 框架","自動化","機器學習"];
+> const concepts = ["Agent 框架","自我學習","記憶管理"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "alchaincyf--hermes-agent-orange-book" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

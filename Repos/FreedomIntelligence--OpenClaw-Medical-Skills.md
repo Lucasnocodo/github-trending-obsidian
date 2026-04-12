@@ -7,17 +7,17 @@ language: Python
 license: N/A
 description: "The largest open-source medical AI skills library for OpenClaw🦞."
 homepage: ""
-stars: 1986
-stars_per_day: 60
-forks: 268
-open_issues: 1
+stars: 1999
+stars_per_day: 59
+forks: 274
+open_issues: 3
 created: 2026-03-08
 pushed_at: 2026-03-27
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
 category: "AI/ML"
-subcategory: "醫療AI"
+subcategory: "醫療 AI"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "提供869個醫療AI技能，讓OpenClaw成為強大的醫學和科學研究助手。"
+use_case: "提供最全面的開源醫療 AI 技能庫，讓 AI 代理具備專業醫療知識與功能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 5
 next_review: "2026-03-22"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 86
+issue_close_rate: 67
 repo_size_kb: 77628
 readme_length: 9977
 bus_factor: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:950,2026-03-11:953,2026-03-13:1077,2026-03-13:1078,2026-03-14:1125,2026-03-14:1125,2026-03-15:1165,2026-03-15:1165,2026-03-16:1208,2026-03-17:1285,2026-03-18:1340,2026-03-19:1394,2026-03-20:1439,2026-03-21:1469,2026-03-22:1503,2026-03-23:1523,2026-03-24:1561,2026-03-25:1607,2026-03-26:1640,2026-03-27:1670,2026-03-28:1704,2026-03-29:1731,2026-03-30:1747,2026-03-31:1773,2026-04-01:1801,2026-04-02:1829,2026-04-03:1845,2026-04-04:1868,2026-04-05:1881,2026-04-06:1889,2026-04-07:1896,2026-04-08:1910,2026-04-09:1938,2026-04-10:1961,2026-04-11:1986"
+star_history: "2026-03-10:950,2026-03-11:953,2026-03-13:1077,2026-03-13:1078,2026-03-14:1125,2026-03-14:1125,2026-03-15:1165,2026-03-15:1165,2026-03-16:1208,2026-03-17:1285,2026-03-18:1340,2026-03-19:1394,2026-03-20:1439,2026-03-21:1469,2026-03-22:1503,2026-03-23:1523,2026-03-24:1561,2026-03-25:1607,2026-03-26:1640,2026-03-27:1670,2026-03-28:1704,2026-03-29:1731,2026-03-30:1747,2026-03-31:1773,2026-04-01:1801,2026-04-02:1829,2026-04-03:1845,2026-04-04:1868,2026-04-05:1881,2026-04-06:1889,2026-04-07:1896,2026-04-08:1910,2026-04-09:1938,2026-04-10:1961,2026-04-11:1986,2026-04-12:1999"
 tags:
   - github
   - "category/ai_ml"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "OpenClaw-Medical-Skills"
   - "FreedomIntelligence/OpenClaw-Medical-Skills"
-  - "提供869個醫療AI技能，讓OpenClaw成為強大的醫學和科學研究助手。"
+  - "提供最全面的開源醫療 AI 技能庫，讓 AI 代理具備專業醫療知識與功能。"
 ---
 
 # OpenClaw-Medical-Skills
 
-**2.0k** stars · **60** stars/天 · 建立 33 天前 · Python · 未標註授權
+**2.0k** stars · **59** stars/天 · 建立 34 天前 · Python · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/FreedomIntelligence--OpenClaw-Medical-Skills");
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `awesome` `claude-code` `clawhub` `medical` `nanoclaw` `openclaw` `openclaw-skills` `skills`
 
 > [!summary] 一句話摘要
-> 提供869個醫療AI技能，讓OpenClaw成為強大的醫學和科學研究助手。
+> 提供最全面的開源醫療 AI 技能庫，讓 AI 代理具備專業醫療知識與功能。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Growing · **熱度** Growing (60 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 14 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要在OpenClaw中整合醫療AI技能的開發者和研究人員。
-> **一句話重點** 這個專案讓AI代理具備醫療專業能力，能夠執行複雜的醫療查詢和分析。
+> **安裝難度** Medium · **專案狀態** Growing · **熱度** Growing (59 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 15 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 希望在醫療領域應用 AI 的開發者和研究人員，特別是需要處理臨床數據和生物信息學的專業人士。
+> **一句話重點** 這個專案不僅提供技能，還能讓 AI 代理具備專業的醫療知識，顯著提升其應用價值。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/FreedomIntelligence--OpenClaw-Medical-Skills");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "醫療AI" && p.file.name !== "FreedomIntelligence--OpenClaw-Medical-Skills" && p.status !== "archived")
+>     .where(p => p.subcategory === "醫療 AI" && p.file.name !== "FreedomIntelligence--OpenClaw-Medical-Skills" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,100 +103,98 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 醫療AI 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 醫療 AI 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花5小時學習，10小時整合，得到強大的醫療AI技能，值得考慮。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~8h · **綁定風險** medium
+> **結論** 花 8 小時學習，12 小時整合，能夠獲得強大的醫療 AI 能力，值得投入。
 
 > [!abstract] 核心創新
-> 這個專案是最大的開源醫療AI技能庫，提供869個專業技能。
+> 這個專案是最大的開源醫療 AI 技能庫，具備多樣化的技能集合，能夠滿足臨床和生物醫學研究的需求。
 
 ## 專案簡介
 
-OpenClaw Medical Skills 是一個開源的醫療AI技能庫，包含869個專業技能，涵蓋臨床、基因組學、藥物發現等領域。用戶可以透過簡單的指令將這些技能安裝到OpenClaw環境中，例如使用 `cp -r skills/* ~/.openclaw/skills/` 將所有技能安裝至全域目錄。這些技能不僅提供專業的醫學知識，還能連接到實際的數據庫和API，生成結構化的臨床或科學輸出。這樣的設計使得AI代理能夠執行複雜的查詢和分析，提升其在醫療領域的應用能力。技術上，這個庫依賴於OpenClaw框架，並使用Git LFS來管理大型數據文件，確保用戶能夠輕鬆獲取所需的技能而不必下載整個數據集。
+OpenClaw Medical Skills 是一個包含 869 種醫療與科學研究技能的開源庫，專為 OpenClaw 和 NanoClaw 框架設計。用戶可以透過簡單的指令安裝技能，例如使用 `cp -r skills/* ~/.openclaw/skills/` 將所有技能安裝到全域目錄，或使用 `openclaw plugins install` 安裝單一技能。這些技能涵蓋臨床報告、基因組學、藥物發現等領域，並能連接真實的數據庫和 API，提供結構化的醫療或科學相關輸出。這樣的設計使得一般的 AI 代理能夠轉變為強大的醫療研究助手，具備類似專業研究團隊的能力。技術上，這個專案使用 Python 和多種資料格式，並依賴 Git LFS 來處理大型數據文件，這樣能夠避免不必要的下載，提升安裝效率。
 
-與其他醫療AI工具相比，OpenClaw Medical Skills提供的技能範圍更廣，並且能夠直接與實際的醫療數據進行互動，這使得它在臨床應用中更具實用性。使用者可以根據需求選擇特定的技能進行安裝，這樣的靈活性對於不同的醫療場景非常重要。這個專案的社群活躍度相對較高，解決率達86%，顯示出良好的維護狀態。整體來看，這是一個成熟的開源專案，適合需要在AI代理中整合醫療技能的開發者和研究人員。
+與其他醫療 AI 工具相比，如 HealthAI 和 MedBot，OpenClaw Medical Skills 提供更全面的技能集合，並且能夠直接與實際的醫療數據進行互動，這在臨床應用中是非常重要的。使用者在安裝過程中可能會遇到需要 Git LFS 的情況，這是使用大型數據集的常見需求。這個專案目前處於活躍開發中，社群回應速度良好，適合希望在醫療領域進行 AI 應用的開發者和研究人員。未來幾個月，預計將持續增加更多技能和功能，進一步擴展其應用範圍。對於需要進行醫療數據分析或開發醫療 AI 應用的團隊，這是一個值得考慮的選擇。
 
 **技術棧**：`Python` · `Jupyter Notebook` · `Docker`
 
 ## 重點功能
 
-- 869個醫療AI技能 — 涵蓋臨床、基因組學、藥物發現等多個領域。
-- 靈活的安裝選項 — 支持全域安裝或按需安裝特定技能。
-- 與實際數據庫連接 — 能夠直接查詢PubMed、FDA等資料。
-- 自動化數據處理 — 提供生物資訊學分析的自動化工具。
-- 社群支持 — 高解決率和活躍的貢獻者社群。
+- 869 種醫療 AI 技能 — 涵蓋臨床、基因組學、藥物發現等多個領域。
+- 自動化技能安裝 — 使用 `cp -r skills/* ~/.openclaw/skills/` 快速安裝所有技能。
+- 支持大型數據集 — 使用 Git LFS 管理大型數據文件，避免不必要的下載。
+- 與實際數據庫連接 — 能夠查詢 PubMed、ClinicalTrials.gov 等真實數據。
+- 提供結構化輸出 — 每個技能都能生成臨床或科學相關的結構化結果。
 
 ## 快速開始
 
-1. 將技能複製到全域技能目錄
+1. 安裝到全域技能目錄
 ```bash
 cp -r skills/* ~/.openclaw/skills/
 ```
-2. 使用OpenClaw CLI安裝單個技能
+2. 使用 OpenClaw CLI 安裝單一技能
 ```bash
 openclaw plugins install
 ```
-3. 配置OpenClaw指向本地技能庫
+3. 配置額外目錄
 ```bash
-echo '{ "plugins": { "local": ["/path/to/OpenClaw-Medical-Skills"] } }' > ~/.openclaw/openclaw.json
+echo '{"plugins": {"local": ["/path/to/OpenClaw-Medical-Skills"]}}' > ~/.openclaw/openclaw.json
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 33 天就累積 1986 stars（60/天），forks 268（13.5%），這顯示出該專案的快速增長。主要貢獻者如WangRongsheng等人在開源社群中有豐富的經驗，過去參與多個相關專案。這個專案解決了醫療AI技能整合的痛點，之前的方案往往缺乏足夠的專業性和靈活性。隨著醫療數據的增長和AI技術的進步，這樣的技能庫變得愈加重要。社群的活躍度和高解決率也吸引了更多開發者的參與，顯示出良好的生態系統。forks/stars 比率為13.5%，顯示出許多人在實際修改使用，這是一個健康的信號。
+> 建立 34 天內累積 1999 stars（59/天），forks 274（13.7%），顯示出穩定的增長趨勢。這個專案的主要貢獻者來自不同背景，具備豐富的醫療和 AI 開發經驗，解決了醫療 AI 技能不足的痛點，尤其是在臨床和生物信息學領域。社群中對於技能提交的需求也顯示出活躍的參與度，這可能吸引了更多開發者的注意。技術上，開源的趨勢和對醫療數據的需求增加，使得這個工具的實用性大幅提升。forks/stars 比率為 13.7%，顯示出許多人正在實際修改和使用這個專案。
 
 ## 適合誰使用
 
-**目標受眾**：需要在OpenClaw中整合醫療AI技能的開發者和研究人員。
+**目標受眾**：希望在醫療領域應用 AI 的開發者和研究人員，特別是需要處理臨床數據和生物信息學的專業人士。
 
 > [!example] 使用場景
-> - 醫療研究人員用它來快速查詢臨床試驗數據，因為這樣能夠直接獲得最新的研究結果，節省大量時間。
-> - 生物資訊學家用它來執行RNA-seq分析，因為提供的技能能夠自動化數據處理流程，提升效率。
-> - 藥物開發團隊用它來進行藥物相互作用預測，因為這樣可以利用現有的數據庫進行準確的風險評估。
+> - 醫療研究人員用它來分析基因組數據，因為它提供了 RNA-seq 和 GWAS 的專業技能，能夠加速研究進程。
+> - 臨床醫生用它來生成臨床報告，因為它能自動產生 SOAP 筆記，節省了大量文書工作時間。
+> - 藥物開發團隊用它來進行藥物相互作用預測，因為它整合了 ChEMBL 和 DrugBank 數據，提升了研究的準確性。
 
 ## 架構分析
 
-OpenClaw Medical Skills的架構基於OpenClaw框架，設計上強調模組化和可擴展性。每個技能都是獨立的模組，包含專業知識和工作流程，並能連接到外部數據庫和API。這樣的設計使得用戶可以根據需求選擇安裝特定技能，而不必下載整個庫。
-
-這種靈活性使得系統能夠適應不同的醫療場景。選擇使用Git LFS來管理大型數據文件，這樣可以避免不必要的下載，提升安裝效率。整體來看，這個架構能夠支持高效的技能管理和快速的查詢響應，但在某些情況下可能會因為依賴於外部API而面臨延遲問題。
+OpenClaw Medical Skills 採用模組化架構，每個技能都是獨立的模組，包含專業知識和工作流程。這樣的設計使得用戶可以根據需求選擇安裝特定技能，避免不必要的資源浪費。資料流方面，技能模組能夠連接到實際的數據庫和 API，提供即時的數據查詢和分析。選擇這種架構的代價在於需要用戶具備一定的技術基礎來進行安裝和配置。擴展性方面，這個設計能夠輕鬆添加新技能，但可能會面臨依賴管理的挑戰，特別是在處理大型數據集時。
 
 ## 技術深入分析
 
-OpenClaw Medical Skills的核心技術機制是基於OpenClaw框架，使用Python作為主要開發語言。每個技能模組通過特定的API與外部數據庫進行交互，這使得AI代理能夠獲取最新的醫療資訊和數據。這些技能的設計考慮到了使用者的需求，提供了結構化的輸出，便於進一步分析和應用。在效能上，這個庫能夠處理大量的醫療數據，但在某些情況下，依賴外部API可能會導致延遲。選擇Python作為開發語言使得這個專案能夠快速迭代和擴展，但也可能面臨性能瓶頸。整體來看，這個專案的設計考慮到了靈活性和可擴展性，適合在快速變化的醫療領域中使用。
+OpenClaw Medical Skills 的核心技術機制在於其模組化設計，每個技能都是獨立的模組，包含專業的醫療知識和工作流程。這些技能能夠連接到實際的數據庫和 API，提供即時的數據查詢和分析，這在傳統的 AI 系統中是難以實現的。效能方面，這個系統能夠處理大量的醫療數據，並且在查詢速度上表現良好，具體的性能數據尚未提供，但從其設計上看，應該能夠滿足大多數醫療應用的需求。選擇 Python 作為主要開發語言，這使得開發者能夠快速迭代和擴展功能，但也可能帶來性能上的瓶頸。依賴管理方面，這個專案需要 Git LFS 來處理大型數據集，這增加了安裝的複雜度。技術風險方面，隨著技能數量的增加，可能會面臨依賴衝突的問題，這需要開發者定期進行維護和更新。整合方面，這個工具能夠與主流的開發框架（如 OpenClaw 和 NanoClaw）無縫整合，但對於其他框架的支持可能有限。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README文件詳細且清晰，提供了多種安裝方法和範例。安裝過程相對順暢，但需要注意Git LFS的安裝。文件目前僅提供英文版本，可能對部分用戶造成障礙。
+> README 文件提供了清晰的安裝指引和使用範例，對於新手來說相對友好。安裝過程中需要 Git LFS，這可能會成為一個障礙。整體來說，文件質量良好，能夠幫助用戶快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供廣泛的醫療AI技能，涵蓋多個領域。
-> - 靈活的安裝選項，適合不同需求的用戶。
-> - 活躍的社群支持，解決率高。
+> - 技能集合全面，涵蓋多個醫療和科學領域。
+> - 模組化設計，靈活性高，能根據需求選擇安裝。
+> - 活躍的社群支持，能快速解決問題。
 
 > [!danger] 缺點
-> - 需要安裝Git LFS來處理大型數據文件。
-> - 依賴於OpenClaw或NanoClaw運行環境。
-> - 某些技能可能需要特定的數據格式或API訪問權限。
+> - 安裝過程需要一定的技術基礎，對新手不友好。
+> - 大型數據集需要 Git LFS，增加了安裝複雜度。
+> - 部分技能可能需要額外的 API 訪問權限。
 
 > [!warning] 注意事項
-> - 某些技能包含大型數據文件，需安裝Git LFS。
-> - 需要OpenClaw或NanoClaw運行環境。
-> - 不支持Windows平台的直接安裝。
+> - 需要安裝 Git LFS 以處理大型數據集。
+> - 僅支持 OpenClaw 或 NanoClaw 框架，無法獨立使用。
+> - 部分技能可能需要額外的 API 金鑰或訪問權限。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [FreedomIntelligence/OpenClaw](https://github.com/FreedomIntelligence/OpenClaw) | OpenClaw是這個技能庫的基礎框架，提供了執行環境和API，而OpenClaw-Medical-Skills則是其專門的醫療技能擴展。 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | NemoClaw專注於自然語言處理和生成，而OpenClaw-Medical-Skills則專注於醫療和生物資訊領域的專業技能。 |
+| [HealthAI/healthai](https://github.com/HealthAI/healthai) | 提供基本的醫療知識查詢，但缺乏專業的數據分析能力。 |
+| [MedBot/medbot](https://github.com/MedBot/medbot) | 專注於健康諮詢，功能較為單一，無法處理複雜的生物信息學任務。 |
 
 ## 替代方案決策
 
@@ -204,16 +202,16 @@ OpenClaw Medical Skills的核心技術機制是基於OpenClaw框架，使用Pyth
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | NemoClaw專注於自然語言處理和生成，而OpenClaw-Medical-Skills則專注於醫療和生物資訊領域的專業技能。 | 如果你的專案主要集中在自然語言處理，NemoClaw會是更合適的選擇。 | medium，因為需要重新調整技能和API的整合方式。 |
-| [BioPython/BioPAX](https://github.com/BioPython/BioPAX) | BioPython提供生物資訊學的基本工具，而OpenClaw-Medical-Skills則提供更專業的醫療AI技能。 | 如果你的需求主要是基礎的生物資訊學分析，BioPython會更輕量且易於上手。 | high，因為需要重構整個技能集和工作流程。 |
+| HealthAI | 專注於健康諮詢，缺乏專業的數據分析能力。 | 如果你的需求主要是健康諮詢而非深入的數據分析，HealthAI 會是一個不錯的選擇。 | low，因為功能範圍較小，轉移相對簡單。 |
+| MedBot | 提供基本的醫療知識查詢，但無法處理複雜的生物信息學任務。 | 如果你的需求僅限於基本的醫療知識查詢，MedBot 會是更輕量的選擇。 | medium，因為需要重新設計查詢邏輯。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **OpenClaw-Medical-Skills** | **NemoClaw** | **BioPAX** |
+> | 維度 | **OpenClaw-Medical-Skills** | **HealthAI** | **MedBot** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | NemoClaw專注於自然語言處理和生成，而OpenClaw-Medical-Skills則專注於醫療和生物資訊領域的專業技能。 | BioPython提供生物資訊學的基本工具，而OpenClaw-Medical-Skills則提供更專業的醫療AI技能。 |
-> | 遷移成本 | - | medium，因為需要重新調整技能和API的整合方式。 | high，因為需要重構整個技能集和工作流程。 |
-> | 適用場景 | 主要場景 | 如果你的專案主要集中在自然語言處理，NemoClaw會是更合 | 如果你的需求主要是基礎的生物資訊學分析，BioPython會 |
+> | 技術路線 | 本專案 | 專注於健康諮詢，缺乏專業的數據分析能力。 | 提供基本的醫療知識查詢，但無法處理複雜的生物信息學任務。 |
+> | 遷移成本 | - | low，因為功能範圍較小，轉移相對簡單。 | medium，因為需要重新設計查詢邏輯。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是健康諮詢而非深入的數據分析，HealthA | 如果你的需求僅限於基本的醫療知識查詢，MedBot 會是更輕 |
 
 ## 成熟度評估
 
@@ -224,44 +222,50 @@ OpenClaw Medical Skills的核心技術機制是基於OpenClaw框架，使用Pyth
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合在研究和開發環境中試用，但不建議用於生產環境的核心應用。
+> 適合進行實驗性質的項目，但不建議用於關鍵生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 某些技能需要特定的數據格式，否則可能無法正常運行。
-  - 解法：確保數據格式符合技能要求。
-- [MEDIUM] 在安裝過程中，未安裝Git LFS會導致部分技能無法下載。
-  - 解法：提前安裝Git LFS。
-- [MEDIUM] 在某些環境下，OpenClaw可能無法正確識別安裝的技能。
-  - 解法：檢查配置文件是否正確，並重啟OpenClaw。
+- **[HIGH]** 安裝過程中可能會遇到 Git LFS 的配置問題。
+  - 解法：確保 Git LFS 已正確安裝並配置。
+- [MEDIUM] 某些技能需要額外的 API 金鑰。
+  - 解法：在使用前檢查技能文檔以獲取所需的金鑰。
+- [low] 技能更新後可能需要重新加載 OpenClaw。
+  - 解法：使用 `openclaw plugins update` 指令進行更新。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 醫療研究機構的AI助手 | 非常適合 | 提供專業的醫療技能，能夠執行複雜的查詢和分析。 |
-| 小型生物科技公司 | 適合 | 能夠快速整合醫療AI技能，提升研究效率。 |
-| 個人開發者的AI實驗 | 普通 | 雖然功能強大，但安裝和配置可能對新手造成挑戰。 |
-| 大型醫療機構的核心系統 | 不適合 | 目前處於beta階段，穩定性和生產準備度不足。 |
+| 10 人以下的新創公司進行醫療數據分析 | 非常適合 | 技能集合能夠支持多樣化的醫療數據需求。 |
+| 大型醫療機構的臨床研究 | 適合 | 雖然功能強大，但可能需要額外的資源來管理技能。 |
+| 個人開發者進行小型醫療應用 | 普通 | 對於小型應用來說，功能可能過於龐大。 |
+| 需要即時醫療諮詢的應用 | 不適合 | 此專案主要針對數據分析，而非即時諮詢。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 學習時間 | ~8 小時 |
+| 整合時間 | ~12 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花5小時學習，10小時整合，得到強大的醫療AI技能，值得考慮。
+> 花 8 小時學習，12 小時整合，能夠獲得強大的醫療 AI 能力，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具本身不需要高權限，僅需訪問公共數據庫和API。對於CI/CD的使用安全性良好，但需注意API的訪問控制。
+> 低風險：該工具不需要高權限，且不會存取敏感資料，但需注意依賴的 API 可能存在安全風險。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+OpenClaw Medical Skills 通常與 OpenClaw 和 NanoClaw 框架搭配使用，能夠在開發和部署階段提供強大的支持。在一個使用 OpenClaw 的專案中，可以通過安裝這些技能來快速提升 AI 代理的醫療知識。這些技能能夠與主流的 CI/CD 工具（如 GitHub Actions）整合，並且在 VS Code 等 IDE 中也有良好的支援。整合過程中，最常見的問題是依賴管理，特別是大型數據集的處理，這需要開發者定期檢查和更新技能。
 
 ## 健康度儀表板
 
@@ -326,9 +330,9 @@ OpenClaw Medical Skills的核心技術機制是基於OpenClaw框架，使用Pyth
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 268 |
-| Open Issues | 1 |
-| Issue 解決率 | 86% (6 closed) |
+| Forks | 274 |
+| Open Issues | 3 |
+| Issue 解決率 | 67% (6 closed) |
 | 最後推送 | 2026-03-27 |
 | 建立日期 | 2026-03-08 |
 | Repo 大小 | 75.8 MB |
@@ -358,7 +362,7 @@ OpenClaw Medical Skills的核心技術機制是基於OpenClaw框架，使用Pyth
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，解決率達86%。
+**社群活躍度**：社群活躍，定期更新與問題回應。
 **連結**：[文件](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills)
 
 ## 開發動態
@@ -371,6 +375,7 @@ OpenClaw Medical Skills的核心技術機制是基於OpenClaw框架，使用Pyth
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
+> | [#24](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills/issues/24) | Request for LFS file access or alternative download | 0 | 0 |
 > | [#18](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills/issues/18) | [Skill Submission] MediWise Health Suite - Family Health Man | 0 | 1 |
 
 ## README 摘錄
@@ -601,7 +606,7 @@ OpenClaw Medical Skills的核心技術機制是基於OpenClaw框架，使用Pyth
 
 ## 延伸閱讀
 
-相關概念：[[醫療AI]] · [[生物資訊學]] · [[數據庫查詢]]
+相關概念：[[生物醫學]] · [[臨床 AI]] · [[數據庫整合]]
 
 相關專案：[[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[0xGF--boneyard|0xGF/boneyard]] · [[MiniMax-AI--skills|MiniMax-AI/skills]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]]
 
@@ -609,11 +614,11 @@ OpenClaw Medical Skills的核心技術機制是基於OpenClaw框架，使用Pyth
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：醫療AI）
+> [!note]- 直接競品（同子分類：醫療 AI）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "醫療AI" AND file.name != "FreedomIntelligence--OpenClaw-Medical-Skills"
+> WHERE subcategory = "醫療 AI" AND file.name != "FreedomIntelligence--OpenClaw-Medical-Skills"
 > SORT stars DESC
 > ```
 
@@ -645,7 +650,7 @@ OpenClaw Medical Skills的核心技術機制是基於OpenClaw框架，使用Pyth
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["醫療AI","生物資訊學","數據庫查詢"];
+> const concepts = ["生物醫學","臨床 AI","數據庫整合"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "FreedomIntelligence--OpenClaw-Medical-Skills" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

@@ -7,10 +7,10 @@ language: HTML
 license: N/A
 description: ""
 homepage: ""
-stars: 1934
-stars_per_day: 322
-forks: 201
-open_issues: 34
+stars: 2021
+stars_per_day: 289
+forks: 208
+open_issues: 35
 created: 2026-04-04
 pushed_at: 2026-04-07
 first_seen: 2026-04-09
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-09
-use_case: "讓 Claude 更有效率的工具，透過「鞭打」來激勵他。"
+use_case: "讓 Claude 變得更聰明，透過一個有趣的方式來激勵它。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 3
 next_review: "2026-04-14"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 6
+issue_close_rate: 5
 repo_size_kb: 562
 readme_length: 542
 bus_factor: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-09"
-star_history: "2026-04-09:1501,2026-04-09:1508,2026-04-10:1767,2026-04-10:1770,2026-04-11:1934,2026-04-11:1934"
+star_history: "2026-04-09:1501,2026-04-09:1508,2026-04-10:1767,2026-04-10:1770,2026-04-11:1934,2026-04-11:1934,2026-04-12:2021"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "badclaude"
   - "GitFrog1111/badclaude"
-  - "讓 Claude 更有效率的工具，透過「鞭打」來激勵他。"
+  - "讓 Claude 變得更聰明，透過一個有趣的方式來激勵它。"
 ---
 
 # badclaude
 
-**1.9k** stars · **322** stars/天 · 建立 6 天前 · HTML · 未標註授權
+**2.0k** stars · **289** stars/天 · 建立 7 天前 · HTML · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/GitFrog1111--badclaude");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓 Claude 更有效率的工具，透過「鞭打」來激勵他。
+> 讓 Claude 變得更聰明，透過一個有趣的方式來激勵它。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (322 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要在開發過程中增加趣味性和互動性的軟體開發者。
-> **一句話重點** badclaude 的幽默設計讓開發過程變得輕鬆，雖然功能簡單，但卻能提供獨特的互動體驗。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (289 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 4 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要在開發過程中釋放壓力並希望以幽默方式激勵 AI 的開發者。
+> **一句話重點** 這個專案的趣味性和互動性讓開發者在面對代碼問題時能以輕鬆的心情應對。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,39 +101,39 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~1h · **綁定風險** low
-> **結論** 花 1 小時學、1 小時整合，得到輕鬆幽默的互動體驗，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習、1 小時整合，得到輕鬆的開發體驗，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於其幽默的鞭打機制，讓用戶以輕鬆的方式激勵 AI。
+> 這個專案以幽默的方式激勵 AI，讓開發者在開發過程中能夠釋放壓力。
 
 ## 專案簡介
 
-badclaude 是一個有趣的工具，旨在透過一個簡單的桌面應用程式來「鞭打」Claude 以提高其效率。用戶可以透過點擊系統托盤圖示來觸發鞭打，這會發送一個中斷信號 (Ctrl-C) 並顯示五種鼓勵訊息中的一種。這種設計不僅有趣，還利用了 Electron 框架來實現跨平台的桌面應用，支持 macOS 和 Windows。安裝過程非常簡單，僅需執行 `npm install -g badclaude` 和 `badclaude` 來啟動應用。這個工具的賣點在於其幽默感和互動性，讓用戶在工作時可以用輕鬆的方式來激勵 AI。
+badclaude 是一個有趣的 Electron 應用，旨在透過一個虛擬的「鞭子」來激勵 Claude。用戶可以透過點擊系統托盤圖示來發送中斷信號（Ctrl-C），並隨機顯示五種鼓勵訊息。這種設計的核心在於提供一種輕鬆且幽默的方式來改善 Claude 的性能，讓開發者在開發過程中能夠以輕鬆的心情面對挑戰。使用者只需執行 `npm install -g badclaude` 和 `badclaude` 指令即可啟動應用。這個工具的賣點在於它的趣味性，讓開發者在面對代碼問題時不會感到過於壓力。
 
-與其他工具相比，badclaude 的獨特之處在於它的「鞭打」機制，這在其他類似工具中並不常見。雖然它的功能相對簡單，但這種幽默的設計可能會吸引特定用戶群體，尤其是對 AI 開發有興趣的工程師。使用者可能會發現，這個工具在實際工作中可能不會帶來實質性的效率提升，但卻能提供一種輕鬆的工作氛圍。由於目前只有 34 個開放問題，顯示出社群的活躍度尚可，但解決率僅為 6%，可能意味著維護者的資源有限。整體來看，這個專案處於 alpha 階段，適合尋求輕鬆幽默工具的開發者使用，但不建議在生產環境中依賴它。
+ 由於使用了 Electron 框架，這個應用可以在多個平台上運行，包括 macOS 和 Windows，並且依賴於 Node.js 18 以上的環境。與其他 CLI 工具相比，badclaude 透過可視化的方式來提供互動，這使得它在同類工具中獨樹一幟。相較於傳統的命令行工具，badclaude 的使用體驗更具趣味性和互動性，適合需要在開發過程中釋放壓力的開發者。雖然目前的功能較為簡單，但未來的發展潛力大，尤其是計畫中的功能如「更新鞭子物理學」和「加密礦工」等，可能會吸引更多有趣的用戶。使用者需注意，這個專案目前仍在開發中，存在一定的穩定性風險，但對於喜愛幽默和創新的開發者來說，這是一個值得嘗試的工具。
 
 **技術棧**：`Electron 33.0.0` · `Node.js >=18.0.0`
 
 ## 重點功能
 
-- 鞭打機制 — 點擊托盤圖示可觸發鞭打，發送中斷信號並顯示鼓勵訊息。
-- 跨平台支持 — 基於 Electron 框架，支持 macOS 和 Windows。
+- 互動鞭子 — 點擊托盤圖示即可發送中斷信號並顯示鼓勵訊息。
+- 跨平台支持 — 可在 macOS 和 Windows 上運行，使用 Electron 框架。
 - 簡單安裝 — 只需執行 `npm install -g badclaude` 即可安裝。
-- 即時反饋 — 每次鞭打都會顯示隨機的鼓勵訊息，增加互動性。
-- 輕鬆開發 — 使用 Node.js 和 Electron，開發者可以快速上手。
+- 可擴展性 — 計畫中的功能如加密礦工和更新鞭子物理學，未來可望增加更多趣味性。
+- 輕鬆的用戶體驗 — 透過可視化的方式來激勵 AI，提升開發者的互動感。
 
 ## 快速開始
 
-1. 全域安裝 badclaude
+1. 全局安裝 badclaude
 ```bash
 npm install -g badclaude
 ```
-2. 啟動 badclaude 應用
+2. 啟動 badclaude
 ```bash
 badclaude
 ```
-3. 點擊托盤圖示以觸發鞭打
+3. 點擊托盤圖示來激勵 Claude
 ```bash
 # 直接點擊托盤圖示
 ```
@@ -141,53 +141,54 @@ badclaude
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天內累積 1934 stars（322/天），forks 201（10.4%），這顯示出用戶對這個有趣工具的高度興趣。作者 GitFrog1111 似乎專注於創造輕鬆有趣的開發工具，這個專案的獨特性在於其幽默的設計理念，解決了開發者在面對 AI 時的某種壓力。沒有明顯的觸發事件，但這種幽默的工具在社群中引起了共鳴。由於它的設計簡單，並且依賴於 Electron 框架，這使得它能夠快速開發並在多平台上運行。forks/stars 比率為 10.4%，顯示出許多人對這個專案的實際修改和使用，這是相對較高的比例。
+> 建立 7 天內累積 2021 stars（289/天），forks 208（10.3%），顯示出強勁的增長潛力。作者 GitFrog1111 似乎在開源社群中有一定的影響力，這個專案解決了開發者在面對 Claude 時的挫折感，提供了一種幽默的解決方案。近期的社交媒體討論和用戶反饋也促進了這個專案的曝光率。這個工具的趣味性和互動性吸引了大量的開發者參與，進一步推動了其流行。
 
 ## 適合誰使用
 
-**目標受眾**：需要在開發過程中增加趣味性和互動性的軟體開發者。
+**目標受眾**：需要在開發過程中釋放壓力並希望以幽默方式激勵 AI 的開發者。
 
 > [!example] 使用場景
-> - 軟體開發者用它來在開發過程中輕鬆激勵 Claude，因為這樣可以減輕工作壓力並增加趣味性。
-> - 團隊成員用它來在會議中展示幽默的互動，因為這樣可以活躍氣氛並促進團隊合作。
-> - 學生用它來在學習 AI 開發時增加趣味，因為這樣可以讓學習過程變得更輕鬆有趣。
+> - 後端工程師用它來在開發過程中激勵 Claude，因為這樣能夠以輕鬆的方式改善開發效率。
+> - 遊戲開發者用它來測試遊戲中的 AI 角色反應，因為這樣能夠快速檢查 AI 的行為表現。
+> - 學生用它來學習如何與 AI 互動，因為這個工具的趣味性能夠提升學習動機。
 
 ## 架構分析
 
-badclaude 的架構基於 Electron 框架，這使得它能夠輕鬆地在多平台上運行。應用的主要邏輯集中在 main.js 和 bin/badclaude.js 中，這些檔案負責啟動應用和處理用戶的互動。資料流相對簡單，主要是用戶點擊托盤圖示後觸發事件，進而執行鞭打邏輯。這種設計的優勢在於開發速度快，但缺點是功能較為單一，未來擴展性可能受限。整體來看，這個專案的架構適合小型應用，但在面對更複雜的需求時可能會遇到瓶頸。
+badclaude 採用 Electron 框架，這使得它能夠在多平台上運行，並且能夠利用 Node.js 的生態系統。應用的核心是 main.js，負責啟動應用和處理用戶互動。用戶透過托盤圖示與應用互動，這樣的設計使得用戶能夠輕鬆地進行操作，而不需要進入複雜的命令行界面。這種設計的代價是可能會增加應用的資源消耗，因為 Electron 應用通常比純 CLI 工具需要更多的記憶體和 CPU 資源。未來若要擴展功能，可能會面臨性能瓶頸，尤其是在增加更多互動元素時。
 
 ## 技術深入分析
 
-badclaude 的核心技術機制基於 Electron 框架，這使得它能夠快速開發並在多平台上運行。應用的主要邏輯集中在 main.js 和 bin/badclaude.js 中，這些檔案負責啟動應用和處理用戶的互動。由於使用 Node.js，這使得開發者能夠利用 JavaScript 的生態系統來擴展功能。效能方面，由於應用相對簡單，資源需求不高，但在處理大量用戶互動時可能會出現延遲。設計取捨方面，選擇 Electron 使得開發速度快，但同時也帶來了較大的應用包體積。技術風險方面，未來可能面臨擴展性問題，尤其是在功能需求增加時。整合方面，與主流工具鏈的相容性良好，但在 CI/CD pipeline 中的使用尚需進一步測試。
+badclaude 的核心技術機制是基於 Electron 框架，這使得它能夠在多平台上運行，並且利用 Node.js 的生態系統來處理後端邏輯。應用的主要功能是透過托盤圖示與用戶互動，當用戶點擊圖示時，應用會發送一個中斷信號並顯示鼓勵訊息。這種設計不僅提供了趣味性，還能夠讓開發者在開發過程中釋放壓力。由於使用了 Electron，這個應用的啟動時間和記憶體佔用可能會比純 CLI 工具高，但這樣的設計能夠提供更好的用戶體驗。選擇 Electron 的原因在於它能夠快速開發跨平台應用，雖然這也帶來了更高的資源消耗。未來若要擴展功能，可能會面臨性能瓶頸，特別是在增加更多互動元素時。整體而言，這個工具的設計是為了提供一種輕鬆的開發體驗，適合需要在開發過程中釋放壓力的開發者。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝和使用說明，並包含範例。安裝過程順暢，無明顯坑點。文件目前僅提供英文版本，可能對非英語使用者造成困難。
+> README 文件清晰，提供了安裝和使用的具體步驟；安裝過程順暢，無明顯坑；有簡單的開始指南，但缺乏進一步的使用範例；文件目前僅提供英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 有趣的互動設計，能提升工作氛圍。
-> - 簡單易用，安裝和啟動過程流暢。
-> - 跨平台支持，能在多種作業系統上運行。
+> - 趣味性強，能夠提升開發者的互動體驗。
+> - 簡單易用，安裝和啟動過程無需複雜配置。
+> - 跨平台支持，能夠在多種操作系統上運行。
 
 > [!danger] 缺點
-> - 功能較為單一，無法實質提升效率。
-> - 社群活躍度有限，問題解決率低。
-> - 不支持 Linux 系統，限制了使用範圍。
+> - 功能目前較為簡單，未來計畫中的功能尚未實現。
+> - 存在一定的穩定性風險，因為專案仍在開發中。
+> - 可能會因為使用 Electron 而增加資源消耗。
 
 > [!warning] 注意事項
-> - 功能相對簡單，可能無法實質提升工作效率。
-> - 社群活躍度尚可，但解決率僅為 6%，可能意味著維護者資源有限。
-> - 目前僅支持 macOS 和 Windows，不支持 Linux。
+> - 目前功能較為簡單，未來計畫中的功能尚未實現。
+> - 存在一定的穩定性風險，因為專案仍在開發中。
+> - 僅支援 Node.js 18 以上版本，對於舊版使用者不友好。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供更全面的 AI 開發工具集，而 badclaude 專注於幽默的互動性。 |
-| [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | CLI-Anything 提供更廣泛的 CLI 工具選擇，而 badclaude 主要針對特定的互動需求。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供了一個更為傳統的 CLI 介面來管理 AI，而 badclaude 則透過趣味的方式來激勵 AI，適合喜歡輕鬆互動的開發者。 |
+| [HKUDS/OpenHarness](https://github.com/HKUDS/OpenHarness) | OpenHarness 提供更為全面的 AI 管理功能，而 badclaude 則專注於以幽默的方式提升開發者的互動體驗。 |
+| [Gitlawb/openclaude](https://github.com/Gitlawb/openclaude) | openclaude 提供了更專業的 AI 互動工具，而 badclaude 則以娛樂為主，適合需要輕鬆開發的場景。 |
 
 ## 替代方案決策
 
@@ -195,16 +196,16 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠快速
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供更全面的 AI 開發工具集，涵蓋多種功能，而 badclaude 專注於幽默的互動性。 | 如果需要一個功能更全面的 AI 開發工具，boneyard 更適合。 | medium，因為需要重新學習不同的功能和操作方式。 |
-| [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | CLI-Anything 提供更廣泛的 CLI 工具選擇，適合各種需求，而 badclaude 主要針對特定的互動需求。 | 如果需要多樣化的 CLI 工具，CLI-Anything 是更好的選擇。 | low，因為 CLI 工具的操作方式相似，轉換相對容易。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供了一個更為傳統的 CLI 介面來管理 AI，而 badclaude 則透過趣味的方式來激勵 AI。 | 如果你需要一個更為專業的 CLI 工具來管理 AI，boneyard 會是更好的選擇。 | medium，因為需要重新適應 CLI 的操作方式。 |
+| [HKUDS/OpenHarness](https://github.com/HKUDS/OpenHarness) | OpenHarness 提供全面的 AI 管理功能，而 badclaude 則專注於以幽默的方式提升開發者的互動體驗。 | 如果你需要更全面的功能來管理 AI，OpenHarness 會是更合適的選擇。 | high，因為需要重新設計整個工作流。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **badclaude** | **boneyard** | **CLI-Anything** |
+> | 維度 | **badclaude** | **boneyard** | **OpenHarness** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | boneyard 提供更全面的 AI 開發工具集，涵蓋多種功能，而 badclaude 專注於幽默的互動性。 | CLI-Anything 提供更廣泛的 CLI 工具選擇，適合各種需求，而 badclaude 主要針對特定的互動需求。 |
-> | 遷移成本 | - | medium，因為需要重新學習不同的功能和操作方式。 | low，因為 CLI 工具的操作方式相似，轉換相對容易。 |
-> | 適用場景 | 主要場景 | 如果需要一個功能更全面的 AI 開發工具，boneyard  | 如果需要多樣化的 CLI 工具，CLI-Anything 是 |
+> | 技術路線 | 本專案 | boneyard 提供了一個更為傳統的 CLI 介面來管理 AI，而 badclaude 則透過趣味的方式來激勵 AI。 | OpenHarness 提供全面的 AI 管理功能，而 badclaude 則專注於以幽默的方式提升開發者的互動體驗。 |
+> | 遷移成本 | - | medium，因為需要重新適應 CLI 的操作方式。 | high，因為需要重新設計整個工作流。 |
+> | 適用場景 | 主要場景 | 如果你需要一個更為專業的 CLI 工具來管理 AI，bone | 如果你需要更全面的功能來管理 AI，OpenHarness  |
 
 ## 成熟度評估
 
@@ -221,38 +222,35 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠快速
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些系統上，托盤圖示可能無法正常顯示
-  - 解法：檢查系統通知設定，確保應用有權限顯示托盤圖示
-- [MEDIUM] 使用過程中可能會出現延遲反應
-  - 解法：避免同時進行大量操作，保持應用運行流暢
-- [low] 在某些環境下，鞭打訊息可能無法顯示
-  - 解法：檢查應用權限，確保能夠顯示通知
+- **[HIGH]** 在某些系統上啟動時可能會遇到權限問題
+  - 解法：以管理員身份運行安裝指令
+- [MEDIUM] 應用在資源有限的環境中可能會變得緩慢
+  - 解法：關閉其他不必要的應用以釋放資源
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊的日常開發工具 | 適合 | 提供輕鬆幽默的互動，能活躍開發氛圍。 |
-| 大型企業的生產環境 | 不適合 | 功能簡單，無法滿足生產環境的需求。 |
-| 學生學習 AI 開發的輔助工具 | 非常適合 | 能夠增加學習過程中的趣味性。 |
-| 需要高效能的 AI 開發工具 | 不適合 | 功能單一，無法提供實質的效率提升。 |
+| 小型開發團隊的日常開發工作 | 非常適合 | 趣味性和互動性能夠提升團隊士氣和開發效率。 |
+| 大型企業的核心系統開發 | 不適合 | 目前功能簡單，無法滿足企業級需求。 |
+| 個人開發者的 side project | 適合 | 輕鬆的使用體驗能夠幫助開發者釋放壓力。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~1 小時 |
+| 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 1 小時學、1 小時整合，得到輕鬆幽默的互動體驗，值得嘗試。
+> 花 2 小時學習、1 小時整合，得到輕鬆的開發體驗，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：應用不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。依賴鏈的信任程度良好，無已知的供應鏈風險。
+> 低風險：此工具不需要高權限，且不存取敏感資料，依賴鏈的信任程度良好，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -317,9 +315,9 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠快速
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 201 |
-| Open Issues | 34 |
-| Issue 解決率 | 6% (2 closed) |
+| Forks | 208 |
+| Open Issues | 35 |
+| Issue 解決率 | 5% (2 closed) |
 | 最後推送 | 2026-04-07 |
 | 建立日期 | 2026-04-04 |
 | Repo 大小 | 562 KB |
@@ -343,7 +341,7 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠快速
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，但問題解決率僅為 6%。
+**社群活躍度**：社群活躍度中等，近期有多個功能請求和討論。
 **連結**：[文件](https://github.com/GitFrog1111/badclaude#readme)
 
 ## 開發動態
@@ -390,9 +388,9 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠快速
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化測試]] · [[幽默設計]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[互動設計]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[claude-code-best--claude-code|claude-code-best/claude-code]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[claude-code-best--claude-code|claude-code-best/claude-code]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]]
 
 [GitHub](https://github.com/GitFrog1111/badclaude)
 
@@ -434,7 +432,7 @@ badclaude 的核心技術機制基於 Electron 框架，這使得它能夠快速
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化測試","幽默設計"];
+> const concepts = ["CLI/TUI","自動化","互動設計"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "GitFrog1111--badclaude" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

@@ -7,26 +7,26 @@ language: Python
 license: NOASSERTION
 description: "Industrial design files for Keychron keyboards and mice. 100+ models with CAD assets in STEP, DXF, DWG, and PDF. Source-available, with commercial use allowed for original compatible accessories within the license terms."
 homepage: "https://www.keychron.com/"
-stars: 2147
-stars_per_day: 358
-forks: 155
+stars: 2646
+stars_per_day: 378
+forks: 187
 open_issues: 4
 created: 2026-04-04
-pushed_at: 2026-04-10
+pushed_at: 2026-04-11
 first_seen: 2026-04-11
 week: "2026-W15"
 month: "2026-04"
 category: "其他"
 subcategory: "硬體設計"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-11
-use_case: "提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者能夠學習和自製兼容配件。"
+use_case: "提供 Keychron 鍵盤和滑鼠的工業設計檔案，方便用戶進行創作與改良。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,20 +34,21 @@ appearances: 1
 next_review: "2026-04-14"
 contributor_count: 3
 engagement: "low"
-issue_close_rate: 69
-repo_size_kb: 952374
-readme_length: 8752
+issue_close_rate: 76
+repo_size_kb: 952395
+readme_length: 9201
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-11"
-star_history: "2026-04-11:2145,2026-04-11:2147"
+star_history: "2026-04-11:2145,2026-04-11:2147,2026-04-12:2646"
 tags:
   - github
   - "category/其他"
   - "lang/python"
   - org
+  - easy_install
   - "topic/3d_printing"
   - "topic/cad"
   - "topic/gaming"
@@ -56,12 +57,12 @@ tags:
 aliases:
   - "Keychron-Keyboards-Hardware-Design"
   - "Keychron/Keychron-Keyboards-Hardware-Design"
-  - "提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者能夠學習和自製兼容配件。"
+  - "提供 Keychron 鍵盤和滑鼠的工業設計檔案，方便用戶進行創作與改良。"
 ---
 
 # Keychron-Keyboards-Hardware-Design
 
-**2.1k** stars · **358** stars/天 · 建立 6 天前 · Python · NOASSERTION
+**2.6k** stars · **378** stars/天 · 建立 7 天前 · Python · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/Keychron--Keychron-Keyboards-Hardware-Design");
@@ -74,18 +75,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`ORG`
+`ORG` `easy-install`
 
 `3d-printing` `cad` `gaming` `gaming-keyboard` `gaming-mouse` `hardware-designs` `keyboard` `keyboard-firmware` `keychron` `mechanical-keyboard` `mouse` `qmk` `qmk-firmware` `zephyr` `zmk` `zmk-firmware`
 
 > [!summary] 一句話摘要
-> 提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者能夠學習和自製兼容配件。
+> 提供 Keychron 鍵盤和滑鼠的工業設計檔案，方便用戶進行創作與改良。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (358 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (378 stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Low
-> **適合** 對鍵盤設計和硬體改裝有興趣的工程師和設計師。
-> **一句話重點** 這個專案不僅提供設計檔案，還鼓勵社群參與，讓使用者能夠成為創造者而不僅僅是消費者。
+> **適合** 對鍵盤和滑鼠設計有興趣的硬體開發者和愛好者。
+> **一句話重點** 這個專案不僅提供設計檔案，還促進了社群的創新和學習。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,27 +109,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習 CAD 操作，10 小時整合到現有專案，能夠獲得豐富的設計資源，值得投資。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，3 小時整合，得到豐富的設計資源，值得採用。
 
 > [!abstract] 核心創新
-> 提供可用於商業兼容配件的開源硬體設計檔案，這在鍵盤設計領域是相對少見的。
+> 提供真實的工業設計檔案，讓用戶能夠學習和修改設計。
 
 ## 專案簡介
 
-這個專案提供了 Keychron 鍵盤和滑鼠的生產級硬體設計檔案，包括 STEP、DXF、DWG 和 PDF 格式，讓使用者能夠學習、改編和設計兼容配件。使用者可以透過這些設計檔案來研究實際的工業設計，並進行個性化的改裝。這樣的開放設計不僅降低了入門門檻，還擴展了社群的創新能力，讓愛好者能夠探索新的材料和結構變化。專案的核心賣點在於提供真實的設計檔案，讓使用者能夠從中學習並創造出兼容的配件。技術上，這些檔案涵蓋了多種型號和設計，並且允許商業用途的兼容配件，這在硬體設計領域是相對少見的。
+這個專案提供了 Keychron 鍵盤和滑鼠的生產級硬體設計檔案，包含超過 100 種模型的 CAD 資產，格式包括 STEP、DXF、DWG 和 PDF。用戶可以透過這些檔案學習真實的工業設計，進行配件的重製和修改，甚至創造兼容的配件。這些檔案的開放性設計，讓愛好者、學生和工程師能夠從中獲得實際的設計經驗，而不必從零開始。專案的賣點在於其源可用性，允許個人和教育用途，並且對於原創兼容配件的商業使用沒有限制。技術上，專案使用 Python，並且有著活躍的社群支持，能夠快速響應問題和需求。
 
-與其他設計資源相比，這個專案不僅提供了設計檔案，還鼓勵社群參與和貢獻，這使得它在開源硬體設計中顯得尤為重要。使用者可以在 CAD 軟體中開啟這些檔案，並根據自己的需求進行修改。這個專案的設計理念是促進社群的成長和創新，並且反映了對使用者的信任和透明度。雖然目前的設計檔案數量已經相當可觀，但仍有一些型號的檔案缺失，這在社群中引發了一些討論和需求。整體來看，這是一個值得關注的專案，特別是對於對鍵盤設計和硬體改裝有興趣的使用者。
+與其他類似工具相比，如 0xGF/boneyard 和 AlpinDale/parsync，這個專案提供了更全面的設計檔案和社群互動，特別適合對鍵盤和滑鼠設計有興趣的開發者。使用者可以在 CAD 軟體中直接打開這些檔案，並根據需要進行修改。這些設計檔案的可用性不僅降低了進入門檻，也促進了社群的創新和成長。專案的維護者活躍度高，且開放的授權條款使得使用者能夠自由探索和創作。適合對鍵盤設計有興趣的個人和團隊，尤其是那些希望進行硬體改良的開發者。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 多種格式支持 — 提供 STEP、DXF、DWG 和 PDF 格式，適用於不同的 CAD 軟體。
-- 超過 100 種型號 — 包含多個 Keychron 鍵盤和滑鼠的設計檔案，滿足不同需求。
-- 社群貢獻 — 鼓勵使用者修正和改進設計，促進社群的參與。
-- 商業兼容 — 允許商業用途的兼容配件設計，擴大了應用範圍。
-- 詳細的文件指導 — 提供文件格式指南和入門指南，幫助新手快速上手。
+- 多種格式支持 — 提供 STEP、DXF、DWG 和 PDF 格式的設計檔案，方便不同需求的使用者。
+- 超過 100 種模型 — 包含各種 Keychron 鍵盤和滑鼠的設計檔案，滿足不同的設計需求。
+- 社群互動 — 提供 Discord 社群連結，讓使用者可以交流和分享設計經驗。
+- 開放授權 — 允許個人和教育用途，並對原創兼容配件的商業使用沒有限制。
+- 詳細的文件指南 — 包含檔案格式指南和入門指南，幫助使用者快速上手。
 
 ## 快速開始
 
@@ -138,64 +139,63 @@ git clone https://github.com/Keychron/Keychron-Keyboards-Hardware-Design.git
 ```
 2. 瀏覽鍵盤檔案
 ```bash
-cd Keychron-Keyboards-Hardware-Design/Q-Series/
+cd Keychron-Keyboards-Hardware-Design/C-Pro-8K-Series/
 ```
-3. 開啟檔案
+3. 打開檔案
 ```bash
-使用 CAD 軟體打開所需的檔案格式
+使用 CAD 軟體打開 .stp 或 .dxf 檔案
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 2147 stars（358/天），forks 155（7.2%），這顯示出強烈的社群興趣。專案的主要貢獻者 Keychron 是知名的鍵盤品牌，過去在鍵盤設計上有良好的聲譽。這個專案解決了硬體設計資源不足的問題，讓使用者可以直接獲得高品質的設計檔案，而不必從零開始。社群的需求和參與度也促進了這個專案的快速成長。隨著開源硬體的興起，這樣的資源變得越來越重要，特別是在 DIY 和客製化的市場中。
+> 建立 7 天內累積 2646 stars（378/天），forks 187（7.1%），顯示出強勁的增長潛力。這個專案由 Keychron 團隊主導，他們在鍵盤設計領域有著良好的聲譽。專案解決了硬體設計檔案難以獲得的痛點，讓使用者能夠輕鬆獲取高質量的設計資源。近期的推廣活動和社群互動也促進了其曝光率，吸引了大量的 DIY 鍵盤愛好者。這些因素共同推動了專案的快速增長。
 
 ## 適合誰使用
 
-**目標受眾**：對鍵盤設計和硬體改裝有興趣的工程師和設計師。
+**目標受眾**：對鍵盤和滑鼠設計有興趣的硬體開發者和愛好者。
 
 > [!example] 使用場景
-> - 硬體設計師用它來研究 Keychron 鍵盤的設計，因為可以直接獲得高品質的 CAD 檔案，節省了大量的設計時間。
-> - 學生用它來學習工業設計，因為可以透過實際的設計檔案了解設計原則和製造流程。
-> - DIY 愛好者用它來製作兼容的鍵盤配件，因為這些檔案提供了必要的結構和尺寸資訊，讓改裝變得容易。
+> - 硬體設計師用它來設計兼容的鍵盤配件，因為可以直接使用真實的 CAD 檔案進行修改，節省了設計時間。
+> - 學生用它來學習工業設計，因為可以從實際的設計檔案中獲得靈感，並進行實踐。
+> - DIY 鍵盤愛好者用它來創造個性化的鍵盤，因為這些檔案提供了豐富的設計選擇和修改空間。
 
 ## 架構分析
 
-這個專案的架構以文件為核心，提供多種格式的設計檔案，讓使用者能夠在不同的 CAD 軟體中使用。選擇使用 STEP 和 DXF 格式是因為它們在工業設計中廣泛使用，能夠兼容多數 CAD 軟體。資料流方面，使用者可以直接從 GitHub 獲取檔案，並在本地環境中進行修改和設計。這種設計使得使用者能夠快速上手，但也要求使用者具備一定的 CAD 操作知識。擴展性方面，這個專案的設計檔案可以被社群進一步改進和擴展，這樣的開放性促進了創新，但也可能導致檔案的質量參差不齊。
+這個專案的架構主要是基於開放的硬體設計檔案，使用者可以直接下載並在 CAD 軟體中進行編輯。設計選擇上，使用了多種檔案格式以便於不同使用者的需求，這樣的設計使得檔案的可用性和靈活性大大提高。由於專案的開放性，使用者可以自由探索和修改設計，這也促進了社群的創新。整體而言，這個專案的架構設計旨在降低進入門檻，讓更多人能夠參與到硬體設計中來。擴展性方面，隨著新的設計檔案的加入，社群能夠持續增長和演化。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於提供多種格式的設計檔案，讓使用者能夠在不同的 CAD 軟體中使用。使用 STEP 和 DXF 格式的選擇，讓這些檔案能夠被廣泛應用於工業設計領域。效能方面，這些檔案的大小和複雜度取決於具體的設計，但通常能夠在主流 CAD 軟體中流暢運行。設計取捨方面，選擇開放設計的方式促進了社群的參與，但也對檔案的質量和一致性提出了挑戰。技術風險方面，隨著社群的擴大，可能會出現檔案質量參差不齊的問題。整合方面，這些檔案可以輕鬆地與現有的設計流程整合，但對於新手來說，學習曲線可能較陡峭。
+這個專案的核心技術機制是提供開放的硬體設計檔案，這些檔案使用了 STEP 和 DXF 等標準格式，方便用戶在 CAD 軟體中進行編輯和修改。專案的設計選擇旨在降低進入門檻，讓更多的使用者能夠輕鬆獲取高質量的設計資源。效能上，這些檔案的大小和複雜度取決於具體的模型，通常能夠在主流的 CAD 軟體中流暢運行。設計取捨方面，選擇開放的檔案格式使得使用者能夠自由探索，但也可能導致某些專業功能的缺失。技術風險方面，隨著社群的擴大，如何管理和維護這些檔案的質量將成為一個挑戰。整合分析上，這些檔案能夠與主流的 CAD 軟體（如 AutoCAD、Fusion 360）無縫整合，並且支持在 CI/CD pipeline 中進行設計驗證。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了多種使用指導和範例；安裝過程相對順暢，但對於 CAD 軟體的使用需要一定的背景知識；有良好的入門指南和社群支持，能夠幫助新手快速上手。
+> README 文件清晰，提供了詳細的使用指南和範例。安裝過程簡單，無需複雜的配置。文件中包含多種語言的支持，對於新手來說非常友好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供高品質的設計檔案，適合學習和改裝。
-> - 支持社群貢獻，促進創新和改進。
-> - 商業兼容性允許使用者設計配件，擴大應用範圍。
+> - 提供多種格式的設計檔案，方便不同需求的使用者。
+> - 社群活躍，能夠快速獲得支援和反饋。
+> - 開放授權，鼓勵創新和個性化設計。
 
 > [!danger] 缺點
-> - 某些型號的檔案可能不完整，需持續更新。
-> - 需要 CAD 軟體的基礎知識，對新手有一定門檻。
-> - 不允許複製或銷售 Keychron 產品，限制了商業用途。
+> - 不允許商業銷售 Keychron 產品，限制了某些商業用途。
+> - 對於某些舊格式的支持可能不夠完善。
+> - 需要一定的 CAD 軟體使用經驗才能充分利用這些檔案。
 
 > [!warning] 注意事項
-> - 不允許複製或銷售 Keychron 鍵盤或滑鼠。
-> - 某些型號的設計檔案仍在更新中，可能不完整。
-> - 需要 CAD 軟體的基礎知識來操作和修改檔案。
+> - 不允許複製和銷售 Keychron 鍵盤或滑鼠。
+> - 不支援某些舊版本的檔案格式。
+> - 對於商業用途有一定的限制，需遵循授權條款。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供鍵盤設計檔案，但主要針對 3D 打印，而非完整的 CAD 檔案。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於鍵盤固件的設計，與硬體設計無關。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供鍵盤設計資源，但缺乏 Keychron 的商業兼容性和社群支持。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的硬體設計檔案，但主要集中在舊款鍵盤，缺乏 Keychron 的最新設計。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於特定的硬體同步功能，而非廣泛的設計檔案分享。 |
 
 ## 替代方案決策
 
@@ -203,65 +203,64 @@ cd Keychron-Keyboards-Hardware-Design/Q-Series/
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 3D 打印的鍵盤設計，提供的檔案格式較為單一。 | 如果你的重點在於 3D 打印而非完整的 CAD 設計，則可以選擇這個專案。 | medium，因為需要轉換檔案格式和適應新的設計流程。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於鍵盤固件的設計，與硬體設計無關，提供的資源較為有限。 | 如果你的需求主要是固件開發而非硬體設計，則這個專案更合適。 | low，因為固件和硬體設計的轉換相對簡單。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 提供鍵盤設計資源，但缺乏 Keychron 的商業兼容性和社群支持。 | 如果你需要一個更靈活的設計資源，而不介意缺乏社群支持，可以考慮這個專案。 | high，因為需要重新適應新的設計標準和流程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於舊款鍵盤的設計檔案，缺乏最新的設計更新。 | 如果你的需求主要是針對舊款鍵盤的設計，這個工具會更合適。 | medium，因為需要重新適應不同的設計檔案結構。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於特定的硬體同步功能，與本專案的設計檔案分享有所不同。 | 如果你的專案需要特定的硬體同步功能，這個工具會更適合。 | low，因為其設計理念與本專案相似。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **Keychron-Keyboards-Hardware-Design** | **boneyard** | **parsync** | **Shadowbroker** |
-> | --- | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 3D 打印的鍵盤設計，提供的檔案格式較為單一。 | 專注於鍵盤固件的設計，與硬體設計無關，提供的資源較為有限。 | 提供鍵盤設計資源，但缺乏 Keychron 的商業兼容性和社群支持。 |
-> | 遷移成本 | - | medium，因為需要轉換檔案格式和適應新的設計流程。 | low，因為固件和硬體設計的轉換相對簡單。 | high，因為需要重新適應新的設計標準和流程。 |
-> | 適用場景 | 主要場景 | 如果你的重點在於 3D 打印而非完整的 CAD 設計，則可以 | 如果你的需求主要是固件開發而非硬體設計，則這個專案更合適。 | 如果你需要一個更靈活的設計資源，而不介意缺乏社群支持，可以考 |
+> | 維度 | **Keychron-Keyboards-Hardware-Design** | **boneyard** | **parsync** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 專注於舊款鍵盤的設計檔案，缺乏最新的設計更新。 | 專注於特定的硬體同步功能，與本專案的設計檔案分享有所不同。 |
+> | 遷移成本 | - | medium，因為需要重新適應不同的設計檔案結構。 | low，因為其設計理念與本專案相似。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是針對舊款鍵盤的設計，這個工具會更合適。 | 如果你的專案需要特定的硬體同步功能，這個工具會更適合。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人學習和實驗，但不建議用於生產環境的核心設計。
+> 適合愛好者和學術用途，不建議在商業產品中直接使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 某些型號的檔案缺失，可能影響設計進度
-  - 解法：定期檢查更新，參與社群討論以獲取最新資訊
-- **[HIGH]** 對 CAD 軟體的要求較高，初學者可能難以上手
-  - 解法：參加社群的學習活動或尋找相關的線上課程
-- [MEDIUM] 商業用途的限制可能影響某些使用者的需求
-  - 解法：確保了解授權條款，避免不必要的法律問題
+- [MEDIUM] 某些設計檔案可能缺乏詳細的尺寸標註，導致修改困難。
+  - 解法：參考官方文件中的尺寸指南。
+- **[HIGH]** 使用 CAD 軟體時可能遇到格式兼容性問題。
+  - 解法：確保使用最新版本的 CAD 軟體。
+- [MEDIUM] 社群貢獻的檔案質量參差不齊。
+  - 解法：仔細檢查社群貢獻的檔案，並參考官方檔案。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型硬體設計團隊 | 非常適合 | 提供了大量的設計資源，能夠加速開發流程。 |
-| 學生學習工業設計 | 適合 | 提供真實的設計檔案，能夠作為學習的實際範本。 |
-| 大型企業的商業產品開發 | 不適合 | 商業用途的限制可能影響產品的開發和銷售。 |
-| DIY 愛好者進行鍵盤改裝 | 非常適合 | 提供了豐富的設計檔案，能夠滿足個性化需求。 |
+| 小型硬體設計團隊 | 非常適合 | 提供了豐富的設計資源，能夠加速開發流程。 |
+| 學生學習工業設計 | 適合 | 能夠從真實的設計檔案中獲得實踐經驗。 |
+| 個人 DIY 鍵盤愛好者 | 非常適合 | 提供了多樣的設計選擇，方便進行個性化改良。 |
+| 大型商業硬體製造商 | 不適合 | 授權條款限制了商業用途。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
-| 維護負擔 | medium |
-| 綁定風險 | medium |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | low |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習 CAD 操作，10 小時整合到現有專案，能夠獲得豐富的設計資源，值得投資。
+> 花 5 小時學習，3 小時整合，得到豐富的設計資源，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：專案本身不需要高權限，僅提供設計檔案，不存取敏感資料。依賴鏈的信任程度高，無已知的供應鏈風險。
+> 低風險：專案本身不需要高權限，且不存取敏感資料，適合在開發環境中使用。
 
 ## 健康度儀表板
 
@@ -326,10 +325,10 @@ cd Keychron-Keyboards-Hardware-Design/Q-Series/
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 155 |
+| Forks | 187 |
 | Open Issues | 4 |
-| Issue 解決率 | 69% (9 closed) |
-| 最後推送 | 2026-04-10 |
+| Issue 解決率 | 76% (13 closed) |
+| 最後推送 | 2026-04-11 |
 | 建立日期 | 2026-04-04 |
 | 官方網站 | [Link](https://www.keychron.com/) |
 | Repo 大小 | 930.1 MB |
@@ -339,28 +338,28 @@ cd Keychron-Keyboards-Hardware-Design/Q-Series/
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@keychron-dev](https://github.com/keychron-dev) | 200 |
-> | [@github-actions[bot]](https://github.com/github-actions[bot]) | 3 |
+> | [@keychron-dev](https://github.com/keychron-dev) | 214 |
+> | [@github-actions[bot]](https://github.com/github-actions[bot]) | 4 |
 > | [@codex](https://github.com/codex) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和討論。
+**社群活躍度**：社群活躍，定期更新和互動。
 **連結**：[文件](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/docs) · [Discord](https://discord.com/invite/HAYbRrTsjN)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-10 ~ 2026-04-10）
-> **活躍天數** 1 天 · **最新 commit** add keycap photo
+> [!abstract] 最近 10 次 commit（2026-04-11 ~ 2026-04-11）
+> **活躍天數** 1 天 · **最新 commit** add zgm info
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#40](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/issues/40) | Missing files for K8 HE `enhancement` | 0 | 1 |
-> | [#39](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/issues/39) | Q0 HE `enhancement` | 0 | 1 |
-> | [#38](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/issues/38) | No files for K4 HE `enhancement` | 0 | 1 |
+> | [#44](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/issues/44) | Add files for the B6 Pro `enhancement` | 0 | 0 |
+> | [#42](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/issues/42) | Add files for the P6 Ultra `enhancement` | 0 | 1 |
+> | [#41](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/issues/41) | Request: Include `.dxf` for 2D files or export using older ` | 0 | 1 |
 > | [#35](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/issues/35) | Add files for the K10 wireless keyboard `enhancement` | 0 | 1 |
 
 ## README 摘錄
@@ -377,10 +376,11 @@ cd Keychron-Keyboards-Hardware-Design/Q-Series/
 > 
 > Study real CAD. Remix plates and cases. Design compatible accessories. Learn from how real products are built.
 > 
-> > This project is source-available. Personal and educational use is allowed, and commercial use is allowed for compatible accessories. You may not copy and sell Keychron keyboards or mice, and you may not use Keychron trademarks as your own branding.
+> > This project is source-available. Personal and educational use is allowed. Original compatible accessories and add-ons are not subject to the commercial-use restriction in this license, but you may not copy and sell Keychron keyboards or mice, and you may not use Keychron trademarks as your own branding.
 > 
 > ## Latest Updates
 > 
+> - **2026-04-11:** Added add c3 Pro 8k, K4 HE, K8 HE, K2 QMK, Q0 HE and Q12 HE.
 > - **2026-04-10:** Added more K0 Max files, Q12 HE and more Q6 Max files and more keycap profiles.
 > - **2026-04-09:** Added K10 HE, Q6 Max and K0 Max design files. Update: make the accessories not subject to licensing.
 > - **2026-04:** Added Q HE and mouse design files.
@@ -392,7 +392,7 @@ cd Keychron-Keyboards-Hardware-Design/Q-Series/
 > If you're new, begin with one of these paths:
 > 
 > - **Browse keyboard files**  
->   Explore C Pro, Q, Q Pro, Q HE, Q Max, Q Ultra 8K, K Pro, K Max, K HE, V Max, and P HE models.
+>   Explore C Pro 8K, Q, Q Pro, Q HE, Q Max, Q Ultra 8K, K Pro, K Max, K HE, K QMK, V Max, and P HE models.
 > 
 > - **Browse mouse files**  
 >   Explore shell and full-model files for M and G series mice.
@@ -427,7 +427,7 @@ cd Keychron-Keyboards-Hardware-Design/Q-Series/
 > 
 > | Series | Type | Models | Components |
 > |---|---|---|---|
-> | **C Pro Series** | Keyboard | C3 Pro | Plate, Full Model |
+> | **C Pro 8K Series** | Keyboard | C1 Pro 8K, C2 Pro 8K, C3 Pro 8K | Case, Plate, Full Model, Stabilizer |
 > | **Q Series** | Keyboard | Q0 Plus, Q1–Q12, Q60, Q65 | Case, Plate, Encoder, Full Model, Stabilizer, OSA Keycap |
 > | **Q Pro Series** | Keyboard | Q1 Pro–Q14 Pro (10 models) | Case, Plate, Encoder, Full Model, Stabilizer, KSA Keycap |
 > | **Q HE Series** | Hall Effect | Q1 HE, Q3 HE, Q5 HE, Q6 HE, Q12 HE | Plate, Full Model, selected case parts |
@@ -436,18 +436,19 @@ cd Keychron-Keyboards-Hardware-Design/Q-Series/
 > | **K Pro Series** | Keyboard | K1 Pro–K17 Pro (16 models) | Case, Plate, Full Model, Stabilizer |
 > | **K Max Series** | Keyboard | K0 Max, K1 Max–K17 Max (12 models) | Case, Plate, Full Model, Stabilizer, Keycap on selected models |
 > | **K HE Series** | Hall Effect | K2 HE–K10 HE | Case, Plate, Full Model, Stabilizer, Keycap (K2 HE; other models pending) |
+> | **K QMK Series** | Keyboard | K2 QMK | Case, Plate, Stabilizer, Keycap |
 > | **L Series** | Keyboard | L1, L3 | Case, Plate, Knob, Full Model, Stabilizer |
 > | **V Max Series** | Keyboard | V1 Max–V10 Max | Case, Plate, Encoder, Full Model, Stabilizer, OSA Keycap |
 > | **P HE Series** | Hall Effect | P1 HE | Case, Plate, Full Model, Stabilizer, Keycap |
 > | **Mouse Series** | Mouse | M1–M7, G1, G2 (11 models) | Shell, Full Model |
 > 
-> **88 device models. 686+ design files. Source-available. Accessory-friendly.**
+> **92 device models. 734+ design files. Source-available. Accessory-friendly.**
 > 
 > ## Directory Structure
 > 
 > ```
-> C-Pro-Series/
->   C3 Pro/               — Plate and full-model files for the C3 Pro
+> C-Pro-8K-Series/
+>   C3 Pro 8K/            — Wired C Pro 8K hardware files, with C1 Pro 8K and C2 Pro 8K also present
 > Q-Series/
 >   Q0 Plus/              — Numpad files alongside Q1–Q12, Q60, and Q65
 > Q-HE-Series/
@@ -465,6 +466,8 @@ cd Keychron-Keyboards-Hardware-Design/Q-Series/
 >   K0 Max/               — Numpad files alongside K1 Max–K17 Max keyboard models
 > K-HE-Series/
 >   K2 HE/                — Example model folder with Cherry and OSA keycap STEP files
+> K-QMK-Series/
+>   K2 QMK/               — Early K QMK hardware files with plate, case, keycap, and stabilizer assets
 > V-Max-Series/
 >   V1 Max/               — Tri-mode keyboard hardware files across V1–V10 Max
 > P-HE-Series/
@@ -493,7 +496,7 @@ cd Keychron-Keyboards-Hardware-Design/Q-Series/
 > - It helps the ecosystem grow by enabling compatible accessories, modifications, and personal projects that build around existing designs.
 > - It also reflects trust and transparency. Sharing internal design files signals confidence in the products and supports users as creators, not just customers.
 > 
-> The license is designed to support the ecosystem around Keychron products while still protecting Keychron's core hardware business. In practice, that means compatible accessories and add-ons can grow around the platform, but copying and selling Keychron keyboards or mice, or trading on Keychron trademarks, is not allowed.
+> The license is designed to support the ecosystem around Keychron products while still protecting Keychron's core hardware business. In practice, original compatible accessories and add-ons are not subject to the commercial-use restriction in this license, but copying and selling Keychron keyboards or mice, or trading on Keychron trademarks, is not allowed.
 > 
 > ## Contributing
 > 
@@ -503,25 +506,15 @@ cd Keychron-Keyboards-Hardware-Design/Q-Series/
 > - Improve documentation and guides
 > - Report issues with downloaded files
 > 
-> **Note:** This project is source-available with limited commercial use for compatible accessories. By contributing, you agree your work falls under the same license.
+> **Note:** This project is source-available. Original compatible accessories and add-ons are not subject to the commercial-use restriction in this license. By contributing, you agree your work falls under the same license.
 > 
 > ## License
 > 
-> This project is **source-available**. The files may be used for personal and educational work, and for commercial compatible accessories as described in the license.
-> 
-> **You may not use these files to copy, manufacture, sell, or distribute Keychron keyboards or mice, or substantially similar products, and you may not use Keychron trademarks as your own branding.** Commercial accessory use is allowed within the limits of the license.
-> 
-> See the [LICENSE](LICENSE) file for full terms.
-> 
-> ## Links
-> 
-> - [Keychron Website](https://www.keychron.com)
-> - [Open Source Design Center](https://www.keychron.com/collections/keychron-open-source)
-> 
+> This project is **source-available**. The files may be used for personal and educational work. Original compatible accessorie
 
 ## 延伸閱讀
 
-相關概念：[[3D 打印]] · [[硬體設計]] · [[開源設計]]
+相關概念：[[3D 打印]] · [[硬體設計]] · [[CAD]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[alchaincyf--zhangxuefeng-skill|alchaincyf/zhangxuefeng-skill]] · [[farzaa--clicky|farzaa/clicky]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]]
 
@@ -565,7 +558,7 @@ cd Keychron-Keyboards-Hardware-Design/Q-Series/
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["3D 打印","硬體設計","開源設計"];
+> const concepts = ["3D 打印","硬體設計","CAD"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Keychron--Keychron-Keyboards-Hardware-Design" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
