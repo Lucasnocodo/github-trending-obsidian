@@ -3,16 +3,16 @@ repo: Keychron/Keychron-Keyboards-Hardware-Design
 url: https://github.com/Keychron/Keychron-Keyboards-Hardware-Design
 owner: Keychron
 owner_type: Organization
-language: Python
+language: N/A
 license: NOASSERTION
 description: "Industrial design files for Keychron keyboards and mice. 100+ models with CAD assets in STEP, DXF, DWG, and PDF. Source-available, with commercial use allowed for original compatible accessories within the license terms."
 homepage: "https://www.keychron.com/"
-stars: 2646
-stars_per_day: 378
-forks: 187
+stars: 2784
+stars_per_day: 348
+forks: 203
 open_issues: 4
 created: 2026-04-04
-pushed_at: 2026-04-11
+pushed_at: 2026-04-12
 first_seen: 2026-04-11
 week: "2026-W15"
 month: "2026-04"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-11
-use_case: "提供 Keychron 鍵盤和滑鼠的工業設計檔案，方便用戶進行創作與改良。"
+use_case: "提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者能夠學習和自製兼容配件。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,18 +35,18 @@ next_review: "2026-04-14"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 76
-repo_size_kb: 952395
-readme_length: 9201
+repo_size_kb: 952530
+readme_length: 9876
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-11"
-star_history: "2026-04-11:2145,2026-04-11:2147,2026-04-12:2646"
+star_history: "2026-04-11:2145,2026-04-11:2147,2026-04-12:2646,2026-04-13:2784"
 tags:
   - github
   - "category/其他"
-  - "lang/python"
+  - "lang/other"
   - org
   - easy_install
   - "topic/3d_printing"
@@ -57,12 +57,12 @@ tags:
 aliases:
   - "Keychron-Keyboards-Hardware-Design"
   - "Keychron/Keychron-Keyboards-Hardware-Design"
-  - "提供 Keychron 鍵盤和滑鼠的工業設計檔案，方便用戶進行創作與改良。"
+  - "提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者能夠學習和自製兼容配件。"
 ---
 
 # Keychron-Keyboards-Hardware-Design
 
-**2.6k** stars · **378** stars/天 · 建立 7 天前 · Python · NOASSERTION
+**2.8k** stars · **348** stars/天 · 建立 8 天前 · N/A · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/Keychron--Keychron-Keyboards-Hardware-Design");
@@ -80,13 +80,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `3d-printing` `cad` `gaming` `gaming-keyboard` `gaming-mouse` `hardware-designs` `keyboard` `keyboard-firmware` `keychron` `mechanical-keyboard` `mouse` `qmk` `qmk-firmware` `zephyr` `zmk` `zmk-firmware`
 
 > [!summary] 一句話摘要
-> 提供 Keychron 鍵盤和滑鼠的工業設計檔案，方便用戶進行創作與改良。
+> 提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者能夠學習和自製兼容配件。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (378 stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (348 stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Low
-> **適合** 對鍵盤和滑鼠設計有興趣的硬體開發者和愛好者。
-> **一句話重點** 這個專案不僅提供設計檔案，還促進了社群的創新和學習。
+> **適合** 對鍵盤設計和硬體改裝有興趣的工程師和愛好者。
+> **一句話重點** 這個專案不僅提供設計檔案，更是促進硬體設計社群創新的平台。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -110,26 +110,24 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習，3 小時整合，得到豐富的設計資源，值得採用。
+> **結論** 花 5 小時學習 CAD 基礎，2 小時整合到現有專案，得到豐富的設計資源，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供真實的工業設計檔案，讓用戶能夠學習和修改設計。
+> 這個專案的核心創新在於提供開放的生產級硬體設計檔案，讓使用者能夠學習和創造兼容配件。
 
 ## 專案簡介
 
-這個專案提供了 Keychron 鍵盤和滑鼠的生產級硬體設計檔案，包含超過 100 種模型的 CAD 資產，格式包括 STEP、DXF、DWG 和 PDF。用戶可以透過這些檔案學習真實的工業設計，進行配件的重製和修改，甚至創造兼容的配件。這些檔案的開放性設計，讓愛好者、學生和工程師能夠從中獲得實際的設計經驗，而不必從零開始。專案的賣點在於其源可用性，允許個人和教育用途，並且對於原創兼容配件的商業使用沒有限制。技術上，專案使用 Python，並且有著活躍的社群支持，能夠快速響應問題和需求。
+這個專案提供了 Keychron 鍵盤和滑鼠的生產級硬體設計檔案，包括 STEP、DXF、DWG 和 PDF 格式，讓使用者能夠學習、重製和設計兼容配件。使用者可以下載這些檔案，進行修改或創建新的配件，這降低了進入硬體設計的門檻，特別是對於學生和工程師來說。這些設計檔案不僅有助於個人項目，也促進了社群的創新，因為使用者可以探索新的材料和結構設計。專案的授權條款允許商業用途，但禁止複製和銷售 Keychron 的產品，這樣的設計旨在保護核心業務的同時支持生態系統的成長。從技術實作角度來看，這些檔案是生產級的，提供了實際的設計決策參考，包括安裝系統和元件整合。
 
-與其他類似工具相比，如 0xGF/boneyard 和 AlpinDale/parsync，這個專案提供了更全面的設計檔案和社群互動，特別適合對鍵盤和滑鼠設計有興趣的開發者。使用者可以在 CAD 軟體中直接打開這些檔案，並根據需要進行修改。這些設計檔案的可用性不僅降低了進入門檻，也促進了社群的創新和成長。專案的維護者活躍度高，且開放的授權條款使得使用者能夠自由探索和創作。適合對鍵盤設計有興趣的個人和團隊，尤其是那些希望進行硬體改良的開發者。
-
-**技術棧**：`Python`
+與其他硬體設計資源相比，這個專案的獨特之處在於它的開放性和社群導向，讓使用者不僅是消費者，更是創造者。使用者可以在設計上進行深度自定義，這在其他類似專案中並不常見。實際使用中，這些設計檔案可以處理各種硬體改裝需求，對於有興趣進行硬體設計的開發者和愛好者來說，提供了豐富的資源。這個專案目前處於活躍開發階段，社群反應良好，並且有持續的更新和維護。整體來說，這是一個值得關注的資源，特別是對於想要深入硬體設計的使用者。
 
 ## 重點功能
 
 - 多種格式支持 — 提供 STEP、DXF、DWG 和 PDF 格式的設計檔案，方便不同需求的使用者。
-- 超過 100 種模型 — 包含各種 Keychron 鍵盤和滑鼠的設計檔案，滿足不同的設計需求。
-- 社群互動 — 提供 Discord 社群連結，讓使用者可以交流和分享設計經驗。
-- 開放授權 — 允許個人和教育用途，並對原創兼容配件的商業使用沒有限制。
-- 詳細的文件指南 — 包含檔案格式指南和入門指南，幫助使用者快速上手。
+- 開放授權 — 允許個人和教育用途，並支持兼容配件的商業使用。
+- 設計學習資源 — 提供真實的生產級設計，幫助使用者學習硬體設計的最佳實踐。
+- 社群驅動 — 鼓勵使用者參與設計和創新，促進社群的發展。
+- 持續更新 — 定期添加新設計檔案，保持資源的新鮮度和實用性。
 
 ## 快速開始
 
@@ -137,82 +135,58 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 git clone https://github.com/Keychron/Keychron-Keyboards-Hardware-Design.git
 ```
-2. 瀏覽鍵盤檔案
+2. 進入專案目錄
 ```bash
-cd Keychron-Keyboards-Hardware-Design/C-Pro-8K-Series/
+cd Keychron-Keyboards-Hardware-Design
 ```
-3. 打開檔案
+3. 查看可用的設計檔案
 ```bash
-使用 CAD 軟體打開 .stp 或 .dxf 檔案
+ls -R
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 7 天內累積 2646 stars（378/天），forks 187（7.1%），顯示出強勁的增長潛力。這個專案由 Keychron 團隊主導，他們在鍵盤設計領域有著良好的聲譽。專案解決了硬體設計檔案難以獲得的痛點，讓使用者能夠輕鬆獲取高質量的設計資源。近期的推廣活動和社群互動也促進了其曝光率，吸引了大量的 DIY 鍵盤愛好者。這些因素共同推動了專案的快速增長。
+> 建立 8 天就累積 2784 stars（348/天），forks 203（7.3%），顯示出強勁的增長潛力。這個專案的主要貢獻者 Keychron 在鍵盤市場上有良好的聲譽，過去也推出過多款受歡迎的產品。這個專案解決了許多硬體設計資源不足的問題，提供了實際可用的設計檔案，讓使用者能夠進行創新和改裝。近期的推廣活動和社群討論也提升了專案的可見度，吸引了更多的使用者參與。這些設計檔案的開放性與社群的需求相結合，促進了這個專案的快速成長。
 
 ## 適合誰使用
 
-**目標受眾**：對鍵盤和滑鼠設計有興趣的硬體開發者和愛好者。
+**目標受眾**：對鍵盤設計和硬體改裝有興趣的工程師和愛好者。
 
 > [!example] 使用場景
-> - 硬體設計師用它來設計兼容的鍵盤配件，因為可以直接使用真實的 CAD 檔案進行修改，節省了設計時間。
-> - 學生用它來學習工業設計，因為可以從實際的設計檔案中獲得靈感，並進行實踐。
-> - DIY 鍵盤愛好者用它來創造個性化的鍵盤，因為這些檔案提供了豐富的設計選擇和修改空間。
+> - 學生用它來學習 CAD 設計，因為可以直接從真實的設計檔案中獲得實踐經驗。
+> - 硬體愛好者用它來設計兼容的鍵盤配件，因為這些檔案提供了詳細的結構和設計參考。
+> - 工程師用它來開發新型鍵盤，因為可以在現有設計的基礎上進行改進和創新。
 
 ## 架構分析
 
-這個專案的架構主要是基於開放的硬體設計檔案，使用者可以直接下載並在 CAD 軟體中進行編輯。設計選擇上，使用了多種檔案格式以便於不同使用者的需求，這樣的設計使得檔案的可用性和靈活性大大提高。由於專案的開放性，使用者可以自由探索和修改設計，這也促進了社群的創新。整體而言，這個專案的架構設計旨在降低進入門檻，讓更多人能夠參與到硬體設計中來。擴展性方面，隨著新的設計檔案的加入，社群能夠持續增長和演化。
+這個專案的架構主要是基於開放的硬體設計檔案，使用者可以直接下載和修改這些檔案。設計檔案的格式多樣，支持不同的 CAD 軟體，這樣的設計選擇使得使用者能夠在不同環境中靈活使用。這種開放性設計的代價是需要使用者具備一定的 CAD 基礎知識，才能充分利用這些資源。擴展性方面，使用者可以根據自己的需求進行修改和創新，這對於硬體設計的探索是非常有利的。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是提供開放的硬體設計檔案，這些檔案使用了 STEP 和 DXF 等標準格式，方便用戶在 CAD 軟體中進行編輯和修改。專案的設計選擇旨在降低進入門檻，讓更多的使用者能夠輕鬆獲取高質量的設計資源。效能上，這些檔案的大小和複雜度取決於具體的模型，通常能夠在主流的 CAD 軟體中流暢運行。設計取捨方面，選擇開放的檔案格式使得使用者能夠自由探索，但也可能導致某些專業功能的缺失。技術風險方面，隨著社群的擴大，如何管理和維護這些檔案的質量將成為一個挑戰。整合分析上，這些檔案能夠與主流的 CAD 軟體（如 AutoCAD、Fusion 360）無縫整合，並且支持在 CI/CD pipeline 中進行設計驗證。
+這個專案的核心技術機制在於提供多種格式的設計檔案，讓使用者能夠在不同的 CAD 環境中進行學習和創作。這些檔案的設計是基於實際生產經驗，涵蓋了安裝系統、元件整合等關鍵技術細節。從效能和規模特性來看，這些設計檔案可以支持各種硬體改裝需求，對於有興趣進行硬體設計的開發者和愛好者來說，提供了豐富的資源。設計取捨方面，選擇開放性設計的好處是能夠促進社群的參與和創新，但也意味著使用者需要具備一定的技術背景。技術風險方面，這些設計檔案的使用可能會受到使用者自身技術水平的影響，對於初學者來說，可能會面臨學習曲線。整合分析方面，這些設計檔案可以與主流的 CAD 軟體無縫整合，並且對於 CI/CD 流程的支持程度也相對較高，這使得使用者能夠在現有的工作流中輕鬆使用這些資源。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的使用指南和範例。安裝過程簡單，無需複雜的配置。文件中包含多種語言的支持，對於新手來說非常友好。
+> README 文件清晰，提供了設計檔案的使用說明和授權條款。安裝過程相對順暢，使用者只需克隆專案即可開始使用。文件中未提供多語言版本，但內容簡單易懂，適合大多數使用者。整體來說，花 30 分鐘能夠順利上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供多種格式的設計檔案，方便不同需求的使用者。
-> - 社群活躍，能夠快速獲得支援和反饋。
-> - 開放授權，鼓勵創新和個性化設計。
+> - 提供多種格式的設計檔案，適合不同需求的使用者。
+> - 開放授權支持社群創新，促進硬體設計的發展。
+> - 持續更新的設計檔案，保持資源的新鮮度。
 
 > [!danger] 缺點
-> - 不允許商業銷售 Keychron 產品，限制了某些商業用途。
-> - 對於某些舊格式的支持可能不夠完善。
-> - 需要一定的 CAD 軟體使用經驗才能充分利用這些檔案。
+> - 不允許商業銷售，限制了某些使用者的商業潛力。
+> - 需要一定的 CAD 知識才能有效使用這些檔案。
+> - 缺乏直接的技術支援，使用者需自行探索。
 
 > [!warning] 注意事項
 > - 不允許複製和銷售 Keychron 鍵盤或滑鼠。
-> - 不支援某些舊版本的檔案格式。
-> - 對於商業用途有一定的限制，需遵循授權條款。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的硬體設計檔案，但主要集中在舊款鍵盤，缺乏 Keychron 的最新設計。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於特定的硬體同步功能，而非廣泛的設計檔案分享。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於舊款鍵盤的設計檔案，缺乏最新的設計更新。 | 如果你的需求主要是針對舊款鍵盤的設計，這個工具會更合適。 | medium，因為需要重新適應不同的設計檔案結構。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 專注於特定的硬體同步功能，與本專案的設計檔案分享有所不同。 | 如果你的專案需要特定的硬體同步功能，這個工具會更適合。 | low，因為其設計理念與本專案相似。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **Keychron-Keyboards-Hardware-Design** | **boneyard** | **parsync** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於舊款鍵盤的設計檔案，缺乏最新的設計更新。 | 專注於特定的硬體同步功能，與本專案的設計檔案分享有所不同。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的設計檔案結構。 | low，因為其設計理念與本專案相似。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是針對舊款鍵盤的設計，這個工具會更合適。 | 如果你的專案需要特定的硬體同步功能，這個工具會更適合。 |
+> - 不支持使用 Keychron 商標作為自己的品牌。
+> - 僅限於設計檔案的使用，無法直接使用於商業產品。
 
 ## 成熟度評估
 
@@ -223,44 +197,44 @@ cd Keychron-Keyboards-Hardware-Design/C-Pro-8K-Series/
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合愛好者和學術用途，不建議在商業產品中直接使用。
+> 適合個人或小型專案試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 某些設計檔案可能缺乏詳細的尺寸標註，導致修改困難。
-  - 解法：參考官方文件中的尺寸指南。
-- **[HIGH]** 使用 CAD 軟體時可能遇到格式兼容性問題。
-  - 解法：確保使用最新版本的 CAD 軟體。
-- [MEDIUM] 社群貢獻的檔案質量參差不齊。
-  - 解法：仔細檢查社群貢獻的檔案，並參考官方檔案。
+- [MEDIUM] 某些設計檔案可能不完整，導致使用者在修改時遇到困難。
+  - 解法：參考社群討論或尋求其他使用者的幫助。
+- **[HIGH]** 使用者可能對授權條款理解不清，導致商業使用時出現問題。
+  - 解法：仔細閱讀授權條款，必要時諮詢法律意見。
+- [MEDIUM] 缺乏直接的技術支援，初學者可能會感到困惑。
+  - 解法：尋找相關的 CAD 教學資源或參加社群討論。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型硬體設計團隊 | 非常適合 | 提供了豐富的設計資源，能夠加速開發流程。 |
-| 學生學習工業設計 | 適合 | 能夠從真實的設計檔案中獲得實踐經驗。 |
-| 個人 DIY 鍵盤愛好者 | 非常適合 | 提供了多樣的設計選擇，方便進行個性化改良。 |
-| 大型商業硬體製造商 | 不適合 | 授權條款限制了商業用途。 |
+| 對硬體設計有興趣的學生 | 非常適合 | 提供真實的設計檔案，適合學習和實踐 CAD 技能。 |
+| 小型硬體創業團隊 | 適合 | 能夠快速獲得設計資源，降低開發成本。 |
+| 大型企業的產品開發部門 | 普通 | 雖然資源豐富，但可能需要更多的商業授權支持。 |
+| 對硬體設計無經驗的初學者 | 不適合 | 需要一定的 CAD 知識才能有效使用這些檔案。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
 | 維護負擔 | low |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到豐富的設計資源，值得採用。
+> 花 5 小時學習 CAD 基礎，2 小時整合到現有專案，得到豐富的設計資源，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：專案本身不需要高權限，且不存取敏感資料，適合在開發環境中使用。
+> 低風險：專案本身不需要高權限，且不存取敏感資料，使用時需遵循授權條款。
 
 ## 健康度儀表板
 
@@ -325,40 +299,40 @@ cd Keychron-Keyboards-Hardware-Design/C-Pro-8K-Series/
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 187 |
+| Forks | 203 |
 | Open Issues | 4 |
 | Issue 解決率 | 76% (13 closed) |
-| 最後推送 | 2026-04-11 |
+| 最後推送 | 2026-04-12 |
 | 建立日期 | 2026-04-04 |
 | 官方網站 | [Link](https://www.keychron.com/) |
-| Repo 大小 | 930.1 MB |
+| Repo 大小 | 930.2 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Keychron/Keychron-Keyboards-Hardware-Design) |
 | Topics | `3d-printing` `cad` `gaming` `gaming-keyboard` `gaming-mouse` `hardware-designs` `keyboard` `keyboard-firmware` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@keychron-dev](https://github.com/keychron-dev) | 214 |
+> | [@keychron-dev](https://github.com/keychron-dev) | 247 |
 > | [@github-actions[bot]](https://github.com/github-actions[bot]) | 4 |
 > | [@codex](https://github.com/codex) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和互動。
-**連結**：[文件](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/docs) · [Discord](https://discord.com/invite/HAYbRrTsjN)
+**社群活躍度**：社群活躍，定期更新和回應使用者的需求。
+**連結**：[文件](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/docs)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-11 ~ 2026-04-11）
-> **活躍天數** 1 天 · **最新 commit** add zgm info
+> [!abstract] 最近 10 次 commit（2026-04-12 ~ 2026-04-12）
+> **活躍天數** 1 天 · **最新 commit** Update CONTRIBUTING.md
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#44](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/issues/44) | Add files for the B6 Pro `enhancement` | 0 | 0 |
-> | [#42](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/issues/42) | Add files for the P6 Ultra `enhancement` | 0 | 1 |
+> | [#44](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/issues/44) | Add files for the B6 Pro `enhancement` | 0 | 1 |
+> | [#42](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/issues/42) | Add files for the P6 Ultra `enhancement` | 0 | 2 |
 > | [#41](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/issues/41) | Request: Include `.dxf` for 2D files or export using older ` | 0 | 1 |
 > | [#35](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/issues/35) | Add files for the K10 wireless keyboard `enhancement` | 0 | 1 |
 
@@ -378,14 +352,33 @@ cd Keychron-Keyboards-Hardware-Design/C-Pro-8K-Series/
 > 
 > > This project is source-available. Personal and educational use is allowed. Original compatible accessories and add-ons are not subject to the commercial-use restriction in this license, but you may not copy and sell Keychron keyboards or mice, and you may not use Keychron trademarks as your own branding.
 > 
+> 
+> ## Why This Matters
+> 
+> Making production hardware files available is a meaningful contribution to the broader hardware and keyboard community.
+> 
+> - It lowers the barrier to entry by giving hobbyists, students, and engineers real STEP and DXF files they can study, remix, and build from instead of starting from zero.
+> - It expands what customization can mean. With access to case, plate, and component designs, the community can explore deeper hardware changes, new materials, structural tweaks, and original variations.
+> - It offers real educational value. These are production-level designs, so people can learn from actual decisions around mounting systems, tolerances, and component integration.
+> - It helps the ecosystem grow by enabling compatible accessories, modifications, and personal projects that build around existing designs.
+> - It also reflects trust and transparency. Sharing internal design files signals confidence in the products and supports users as creators, not just customers.
+> 
+> The license is designed to support the ecosystem around Keychron products while still protecting Keychron's core hardware business. In practice, original compatible accessories and add-ons are not subject to the commercial-use restriction in this license, but copying and selling Keychron keyboards or mice, or trading on Keychron trademarks, is not allowed.
+> 
+> 
 > ## Latest Updates
 > 
-> - **2026-04-11:** Added add c3 Pro 8k, K4 HE, K8 HE, K2 QMK, Q0 HE and Q12 HE.
+> - **2026-04-12:** Added V1 8K, V3 8K, V5 8K, and V6 8K series folders and README pages.
+> - **2026-04-12:** Added V0 Ultra 8K, V1 Ultra 8K, V3 Ultra 8K, V5 Ultra 8K, V6 Ultra 8K, and V10 Ultra 8K series folders and README pages.
+> - **2026-04-12:** Added Q1 HE 8K, Q2 HE 8K, Q3 HE 8K, Q5 HE 8K, Q6 HE 8K, and Q16 HE 8K series folders and README pages.
+> - **2026-04-12:** Added Q1 Ultra 8K, Q3 Ultra 8K, Q5 Ultra 8K, and Q13 Ultra 8K series folders and README pages.
+> - **2026-04-11:** Added C3 Pro 8K, K4 HE, K8 HE, K2 QMK, Q0 HE, and Q12 HE.
 > - **2026-04-10:** Added more K0 Max files, Q12 HE and more Q6 Max files and more keycap profiles.
 > - **2026-04-09:** Added K10 HE, Q6 Max and K0 Max design files. Update: make the accessories not subject to licensing.
 > - **2026-04:** Added Q HE and mouse design files.
 > - **2026-03:** Expanded K Max coverage.
 > - More milestone updates will be published in [GitHub Releases](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/releases).
+> 
 > 
 > ## Start Here
 > 
@@ -407,13 +400,14 @@ cd Keychron-Keyboards-Hardware-Design/C-Pro-8K-Series/
 >   Open the [Repository Inventory](docs/repo-inventory.md) generated from the repo itself.
 > 
 > - **Contribute fixes or improvements**  
->   Read [Contributing](CONTRIBUTING.md) for workflow, file standards, and submission rules.
+>   Read [Contributing](docs/CONTRIBUTING.md) for workflow, file standards, and submission rules.
 > 
 > - **Join the community**  
 >   Join the [Keychron Discord](https://discord.com/invite/HAYbRrTsjN) to share builds, ask questions, and help grow the hardware modding community.
 > 
 > - **Understand the license before building**  
 >   Read the [License FAQ](docs/license-faq.md).
+> 
 > 
 > ## What You Can Do With This Repository
 > 
@@ -423,6 +417,7 @@ cd Keychron-Keyboards-Hardware-Design/C-Pro-8K-Series/
 > - Build community mods and compatible add-ons
 > - Contribute documentation, corrections, and new variants that fit the license
 > 
+> 
 > ## What's Inside
 > 
 > | Series | Type | Models | Components |
@@ -430,19 +425,23 @@ cd Keychron-Keyboards-Hardware-Design/C-Pro-8K-Series/
 > | **C Pro 8K Series** | Keyboard | C1 Pro 8K, C2 Pro 8K, C3 Pro 8K | Case, Plate, Full Model, Stabilizer |
 > | **Q Series** | Keyboard | Q0 Plus, Q1–Q12, Q60, Q65 | Case, Plate, Encoder, Full Model, Stabilizer, OSA Keycap |
 > | **Q Pro Series** | Keyboard | Q1 Pro–Q14 Pro (10 models) | Case, Plate, Encoder, Full Model, Stabilizer, KSA Keycap |
-> | **Q HE Series** | Hall Effect | Q1 HE, Q3 HE, Q5 HE, Q6 HE, Q12 HE | Plate, Full Model, selected case parts |
-> | **Q Max Series** | Keyboard | Q6 Max | Case, Plate, Full Model, Stabilizer |
-> | **Q Ultra 8K Series** | Keyboard | Q6 Ultra 8K | Plate |
+> | **Q HE Series** | Hall Effect | Q0 HE, Q1 HE, Q2 HE, Q3 HE, Q4 HE, Q5 HE, Q6 HE, Q12 HE | Published files for selected models; newer Q HE folders also include README/model pages for future CAD uploads |
+> | **Q HE 8K Series** | Hall Effect | Q1 HE 8K, Q2 HE 8K, Q3 HE 8K, Q5 HE 8K, Q6 HE 8K, Q16 HE 8K | README/model pages prepared for future CAD uploads |
+> | **Q Max Series** | Keyboard | Q0 Max, Q1 Max, Q2 Max, Q3 Max, Q5 Max, Q6 Max, Q8 Max, Q10 Max, Q12 Max, Q13 Max, Q14 Max, Q15 Max | Published CAD files for Q6 Max; README/model pages prepared for the others |
+> | **Q Ultra 8K Series** | Keyboard | Q1 Ultra 8K, Q3 Ultra 8K, Q5 Ultra 8K, Q6 Ultra 8K, Q13 Ultra 8K | Published plate files for Q6 Ultra 8K; README/model pages prepared for the others |
 > | **K Pro Series** | Keyboard | K1 Pro–K17 Pro (16 models) | Case, Plate, Full Model, Stabilizer |
-> | **K Max Series** | Keyboard | K0 Max, K1 Max–K17 Max (12 models) | Case, Plate, Full Model, Stabilizer, Keycap on selected models |
-> | **K HE Series** | Hall Effect | K2 HE–K10 HE | Case, Plate, Full Model, Stabilizer, Keycap (K2 HE; other models pending) |
-> | **K QMK Series** | Keyboard | K2 QMK | Case, Plate, Stabilizer, Keycap |
+> | **K Max Series** | Keyboard | K0 Max, K1 Max, K2 Max, K3 Max, K4 Max, K5 Max, K7 Max, K8 Max, K9 Max, K10 Max, K11 Max, K13 Max, K15 Max, K17 Max | Case, Plate, Full Model, Stabilizer, Keycap on selected models; README/model pages prepared for K4 Max and K9 Max |
+> | **K HE Series** | Hall Effect | K2 HE, K4 HE, K6 HE, K8 HE, K10 HE | Published models include case, plate, full model, stabilizer, and selected keycap files; K6 HE is currently folder-only |
+> | **K QMK Series** | Keyboard | K1 QMK, K2 QMK, K3 QMK, K4 QMK, K5 QMK, K8 QMK, K10 QMK | Published CAD files for K2 QMK; README/model pages prepared for the others |
 > | **L Series** | Keyboard | L1, L3 | Case, Plate, Knob, Full Model, Stabilizer |
+> | **V 8K Series** | Keyboard | V1 8K, V3 8K, V5 8K, V6 8K | README/model pages prepared for future CAD uploads |
+> | **V Ultra 8K Series** | Keyboard | V0 Ultra 8K, V1 Ultra 8K, V3 Ultra 8K, V5 Ultra 8K, V6 Ultra 8K, V10 Ultra 8K | README/model pages prepared for future CAD uploads |
 > | **V Max Series** | Keyboard | V1 Max–V10 Max | Case, Plate, Encoder, Full Model, Stabilizer, OSA Keycap |
-> | **P HE Series** | Hall Effect | P1 HE | Case, Plate, Full Model, Stabilizer, Keycap |
+> | **P HE Series** | Hall Effect | P1 HE, P2 HE, P3 HE | Published files for P1 HE; README/model pages prepared for P2 HE and P3 HE |
 > | **Mouse Series** | Mouse | M1–M7, G1, G2 (11 models) | Shell, Full Model |
 > 
-> **92 device models. 734+ design files. Source-available. Accessory-friendly.**
+> **135 device models. 734+ design files. Source-available. Accessory-friendly.**
+> 
 > 
 > ## Directory Structure
 > 
@@ -452,65 +451,14 @@ cd Keychron-Keyboards-Hardware-Design/C-Pro-8K-Series/
 > Q-Series/
 >   Q0 Plus/              — Numpad files alongside Q1–Q12, Q60, and Q65
 > Q-HE-Series/
->   Q12 HE/               — Hall Effect files alongside Q1 HE, Q3 HE, Q5 HE, and Q6 HE
+>   Q0 HE/                — Hall Effect numpad files alongside Q1, Q2, Q3, Q4, Q5, Q6, and Q12 HE models
+> Q-HE-8K-Series/
+>   Q1 HE 8K/             — README and product page reference, ready for future CAD uploads alongside Q2, Q3, Q5, Q6, and Q16 HE 8K
 > Q-Pro-Series/
 >   Q1 Pro/               — Wireless Q-series hardware files across 10 models
 > Q-Max-Series/
->   Q6 Max/               — Wireless Q-series case, plate, full model, and stabilizer files
-> Q-Ultra-8K-Series/
->   Q6 Ultra 8K/          — Ultra 8K plate files
-> K-Pro-Series/
->   K1 Pro/               — Low-profile and standard K Pro models through K17 Pro
->   K8 Pro/               — Example model folder with `K8-Pro-Keycap.stp`
-> K-Max-Series/
->   K0 Max/               — Numpad files alongside K1 Max–K17 Max keyboard models
-> K-HE-Series/
->   K2 HE/                — Example model folder with Cherry and OSA keycap STEP files
-> K-QMK-Series/
->   K2 QMK/               — Early K QMK hardware files with plate, case, keycap, and stabilizer assets
-> V-Max-Series/
->   V1 Max/               — Tri-mode keyboard hardware files across V1–V10 Max
-> P-HE-Series/
->   P1 HE/                — Lemokey Hall Effect keyboard files
-> L-Series/
->   L1/                   — Aluminum keyboard files with plate, case, knob, and stabilizers
-> Mice/
->   M1/                   — Shell and full model
-> Keycap Profiles/
->   Cherry Profile/       — Reference profile docs alongside KSA, LSA, MDA, OEM, and OSA
-> docs/
->   file-format-guide.md  — How to open and edit these files
->   getting-started.md    — First-stop guide for browsing and remixing
->   3d-printing-guide.md  — Practical printing guidance for compatible parts
-> scripts/
->   repo_inventory.py     — Regenerates the repository inventory from the live tree
-> ```
-> 
-> ## Why This Matters
-> 
-> Making production hardware files available is a meaningful contribution to the broader hardware and keyboard community.
-> 
-> - It lowers the barrier to entry by giving hobbyists, students, and engineers real STEP and DXF files they can study, remix, and build from instead of starting from zero.
-> - It expands what customization can mean. With access to case, plate, and component designs, the community can explore deeper hardware changes, new materials, structural tweaks, and original variations.
-> - It offers real educational value. These are production-level designs, so people can learn from actual decisions around mounting systems, tolerances, and component integration.
-> - It helps the ecosystem grow by enabling compatible accessories, modifications, and personal projects that build around existing designs.
-> - It also reflects trust and transparency. Sharing internal design files signals confidence in the products and supports users as creators, not just customers.
-> 
-> The license is designed to support the ecosystem around Keychron products while still protecting Keychron's core hardware business. In practice, original compatible accessories and add-ons are not subject to the commercial-use restriction in this license, but copying and selling Keychron keyboards or mice, or trading on Keychron trademarks, is not allowed.
-> 
-> ## Contributing
-> 
-> **Ways to contribute:**
-> - Fix dimensional errors or tolerances in existing models
-> - Add ISO layout plate variants
-> - Improve documentation and guides
-> - Report issues with downloaded files
-> 
-> **Note:** This project is source-available. Original compatible accessories and add-ons are not subject to the commercial-use restriction in this license. By contributing, you agree your work falls under the same license.
-> 
-> ## License
-> 
-> This project is **source-available**. The files may be used for personal and educational work. Original compatible accessorie
+>   Q0 Max/               — README and product page reference, with Q1, Q2, Q3, Q5, Q6, Q8, Q10, Q12, Q13, Q14, and Q15 Max model folders also present
+> Q-Ultra-8K-S
 
 ## 延伸閱讀
 
@@ -543,7 +491,7 @@ cd Keychron-Keyboards-Hardware-Design/C-Pro-8K-Series/
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "Keychron--Keychron-Keyboards-Hardware-Design" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "Keychron--Keychron-Keyboards-Hardware-Design" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```

@@ -7,17 +7,17 @@ language: Python
 license: MIT
 description: "你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks."
 homepage: ""
-stars: 7453
-stars_per_day: 1242
-forks: 1187
-open_issues: 7
+stars: 8592
+stars_per_day: 1227
+forks: 1390
+open_issues: 6
 created: 2026-04-05
-pushed_at: 2026-04-10
+pushed_at: 2026-04-12
 first_seen: 2026-04-09
 week: "2026-W15"
 month: "2026-04"
 category: "其他"
-subcategory: "思維模型提取"
+subcategory: "AI 工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-09
-use_case: "蒸馏任何人的思维方式，提取认知框架和决策启发式。"
+use_case: "讓你蒸馏任何人的思維方式，從而獲得他們的心智模型和決策啟發式。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 4
 next_review: "2026-04-15"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 53
-repo_size_kb: 18053
+issue_close_rate: 70
+repo_size_kb: 18096
 readme_length: 8309
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-09"
-star_history: "2026-04-09:3895,2026-04-09:3932,2026-04-10:5526,2026-04-10:5558,2026-04-11:6623,2026-04-11:6627,2026-04-12:7442,2026-04-12:7453"
+star_history: "2026-04-09:3895,2026-04-09:3932,2026-04-10:5526,2026-04-10:5558,2026-04-11:6623,2026-04-11:6627,2026-04-12:7442,2026-04-12:7453,2026-04-13:8592"
 tags:
   - github
   - "category/其他"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "nuwa-skill"
   - "alchaincyf/nuwa-skill"
-  - "蒸馏任何人的思维方式，提取认知框架和决策启发式。"
+  - "讓你蒸馏任何人的思維方式，從而獲得他們的心智模型和決策啟發式。"
 ---
 
 # nuwa-skill
 
-**7.5k** stars · **1.2k** stars/天 · 建立 6 天前 · Python · MIT
+**8.6k** stars · **1.2k** stars/天 · 建立 7 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/alchaincyf--nuwa-skill");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 蒸馏任何人的思维方式，提取认知框架和决策启发式。
+> 讓你蒸馏任何人的思維方式，從而獲得他們的心智模型和決策啟發式。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (1.2k stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 希望從名人思維中獲得啟發的創業者和學習者。
-> **一句話重點** Nuwa 不僅能蒸馏名人的語錄，更能提取他們的思維框架，讓使用者在面對問題時獲得不同的視角。
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 希望從名人思維中獲得啟發的創業者和專業人士。
+> **一句話重點** Nuwa Skill 不僅是蒸馏名人的工具，更是提取思維方式的創新方法。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/alchaincyf--nuwa-skill");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "思維模型提取" && p.file.name !== "alchaincyf--nuwa-skill" && p.status !== "archived")
+>     .where(p => p.subcategory === "AI 工具" && p.file.name !== "alchaincyf--nuwa-skill" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,29 +96,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 思維模型提取 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 AI 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **安裝** Easy (一行搞定)
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，1 小時整合，得到多元化的思維框架，值得一試。
 
 > [!abstract] 核心創新
-> Nuwa 提供了一種全新的方式來提取名人的思維方式，讓使用者能夠在面對問題時獲得不同的視角。
+> Nuwa Skill 提供了一種全新的方式來蒸馏名人的思維方式，讓使用者能夠獲得深度的認知框架。
 
 ## 專案簡介
 
-Nuwa 是一個用於蒸馏名人思維的工具，通過輸入一個名字，系統會自動進行調研並提煉出該名人的心智模型和決策啟發式。這一過程包括六路並行的資料收集，涵蓋著作、播客、社交媒體等多個來源，並經過三重驗證以確保提煉的內容具備預測力和排他性。最終生成的 Skill 包含多個心智模型、表達 DNA、價值觀等，使用者可以直接調用這些 Skill 進行分析和決策建議。這種設計的賣點在於不僅僅是模仿名人的語錄，而是提取他們的思維方式，讓使用者能夠在面對問題時獲得不同的視角和解決方案。使用者只需透過簡單的指令，如 `npx skills add alchaincyf/nuwa-skill` 來安裝並使用。
+Nuwa Skill 是一個 AI 工具，旨在蒸馏名人的思維方式，讓用戶能夠從如喬布斯、馬斯克等人的認知框架中獲得洞見。使用者只需輸入一個名字，Nuwa 會自動進行六路並行的資料收集，涵蓋著作、播客、社交媒體等多個來源，並提煉出心智模型和決策啟發式。這個過程不僅僅是複製名人的語錄，而是提取他們的思考方式，讓用戶能夠在面對問題時，運用這些框架進行分析。安裝非常簡單，只需執行 `npx skills add alchaincyf/nuwa-skill`，然後就可以開始使用。技術上，Nuwa Skill 依賴於 Python 和 Shell，並且有著良好的模組化設計，讓使用者可以輕鬆擴展和調整。
+
+與其他類似工具相比，如同事技能（colleague-skill），Nuwa Skill 的獨特之處在於它不僅限於同事，而是可以蒸馏各個領域的頂尖人物，這使得它的應用範圍更廣。實際使用中，Nuwa Skill 能夠提供多層次的思考框架，從如何表達到如何做出判斷，這些都是日常工作中難以獲得的深度洞見。這個工具適合對個人發展、決策分析有需求的專業人士，尤其是創業者和管理者。未來，隨著更多人物的加入，Nuwa Skill 的能力將會持續增強。
 
 **技術棧**：`Python` · `Shell`
 
 ## 重點功能
 
-- 六路並行采集 — 同時從著作、播客、社交媒體等六個來源收集資料。
-- 三重驗證提煉 — 確保提煉的心智模型具備預測力和排他性。
-- 多元思維框架 — 提供多個心智模型和決策啟發式，幫助使用者分析問題。
-- 表達 DNA 提取 — 提取名人的語氣、節奏、用詞偏好，讓分析更具真實感。
-- 誠實邊界標註 — 明確標示 Skill 的局限性，增強信任度。
+- 六路並行資料收集 — 同時從著作、播客、社交媒體等多個來源提取信息。
+- 三重驗證提煉 — 確保提煉出的心智模型具有預測性和排他性。
+- 多層次思維框架 — 提取表達DNA、心智模型、決策啟發式等多方面內容。
+- 即時使用 — 安裝後可立即使用，無需複雜設定。
+- 開源透明 — 提供完整的調研過程和數據，使用者可深入了解提煉方法。
 
 ## 快速開始
 
@@ -126,68 +129,130 @@ Nuwa 是一個用於蒸馏名人思維的工具，通過輸入一個名字，系
 ```bash
 npx skills add alchaincyf/nuwa-skill
 ```
-2. 蒸馏某位名人
+2. 使用 Nuwa Skill 蒸馏名人
 ```bash
 > 蒸馏一个保罗·格雷厄姆
 ```
-3. 使用蒸馏結果
+3. 調用蒸馏結果
 ```bash
 > 用芒格的视角帮我分析这个投资决策
-```
-
-## 程式碼範例
-
-```python
-{
-  "前置條件": "已安裝 Nuwa Skill",
-  "指令": "> 蒸馏一个保罗·格雷厄姆",
-  "預期輸出": "提取保罗·格雷厄姆的思维框架和决策启发式。"
-}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天內累積 7453 stars（1242/天），forks 1187（15.9%），這顯示出極高的興趣和參與度。作者 alchaincyf 之前開發的同事.skill 已經證明了蒸馏個體的可行性，這使得 Nuwa 能夠吸引對於思維模型提取有需求的用戶。這個工具解決了以往在自我提升和決策過程中缺乏多元視角的問題，並且能夠快速生成可用的思維框架。社群的反饋和活躍度也顯示出對於這種創新的需求。
+> 建立 7 天就累積 8592 stars（1227/天），forks 1390（16.2%），顯示出強烈的社群興趣。作者 alchaincyf 是一位獨立開發者，過去有成功的開源項目，如同事技能，這證明了蒸馏個人思維的可行性。此工具解決了以往難以獲得名人思維的痛點，透過自動化的方式讓使用者能夠輕鬆獲得這些信息。社群中對於如何聯繫和交流的需求也顯示出使用者對於這個工具的期待和興趣。
 
 ## 適合誰使用
 
-**目標受眾**：希望從名人思維中獲得啟發的創業者和學習者。
+**目標受眾**：希望從名人思維中獲得啟發的創業者和專業人士。
 
 > [!example] 使用場景
-> - 創業者用它來蒸馏馬斯克的思維方式，因為他想學習如何在產品開發中運用第一性原理。
-> - 學生用它來蒸馏費曼的學習方法，因為他希望提高自己的科學思維能力。
-> - 內容創作者用它來蒸馏喬布斯的產品設計理念，因為他想在自己的作品中融入更多創新元素。
+> - 創業者用它來分析市場策略，因為能夠獲得馬斯克的思維框架，幫助他們制定更有效的商業決策。
+> - 內容創作者用它來提升寫作風格，因為能夠學習喬布斯的表達方式，讓他們的作品更具吸引力。
+> - 教育工作者用它來設計課程，因為能夠借鑒費曼的教學思維，提升學生的學習效果。
 
 ## 架構分析
 
-Nuwa 的架構設計採用六路並行資料收集的模式，這樣可以在短時間內從多個來源獲取大量信息。每個資料來源都由獨立的 Agent 負責，並將結果整合到一個統一的 Skill 中。這樣的設計使得資料的多樣性和豐富性得以保證，並且能夠在提煉過程中進行交叉驗證，增加了最終結果的可靠性。這種模式的代價在於需要較高的計算資源來支持多個 Agent 的運行，但對於用戶來說，這種即時性和準確性是非常值得的。整體而言，這種架構能夠有效地擴展，適應未來更多名人的蒸馏需求。
+Nuwa Skill 採用模組化設計，核心是六路並行的資料收集系統，這樣的設計使得資料獲取的效率大幅提升。每個資料來源都由獨立的 Agent 負責，確保資料的多樣性和全面性。提煉過程中，使用三重驗證來確保心智模型的可靠性，這樣的設計使得最終生成的 Skill 具有高度的預測性和排他性。這種架構的代價在於需要較高的計算資源來同時運行多個 Agent，但這也為使用者帶來了更快的反饋和更準確的結果。整體而言，這個架構能夠支持未來的擴展，隨著更多名人的加入，Nuwa Skill 的能力將持續增強。
 
 ## 技術深入分析
 
-Nuwa 的核心技術機制在於其六路並行的資料收集方式，這使得系統能夠從多個來源獲取信息，並進行交叉驗證。每個 Agent 負責不同的資料來源，確保了資料的多樣性和全面性。效能上，這種設計能夠在短時間內處理大量資料，但也需要較高的計算資源來支持多個 Agent 的運行。設計上選擇了 Python 作為主要開發語言，因為其在資料處理和機器學習領域的強大生態系統。這樣的選擇雖然帶來了開發的靈活性，但也可能面臨性能瓶頸，特別是在資料量極大的情況下。技術風險方面，依賴於公開資料的特性可能會在未來面臨資料來源的變化或限制，這需要持續關注和調整。整合方面，Nuwa 能夠輕鬆融入現有的開發流程，並且與主流的 CI/CD 工具相容性良好，降低了整合的摩擦點。
+Nuwa Skill 的核心技術在於其資料收集和提煉過程。使用六路並行的資料收集方式，確保了資料來源的多樣性，這對於提煉出準確的心智模型至關重要。每個資料來源都由獨立的 Agent 負責，這樣的設計不僅提高了效率，也降低了資料偏差的風險。提煉過程中，使用三重驗證來確保每個心智模型的可靠性，這意味著只有那些在多個領域中出現的觀點才能被納入，這樣的設計使得最終生成的 Skill 具有高度的預測性和排他性。這種架構的選擇使得 Nuwa Skill 在處理複雜問題時能夠提供更具深度的分析，但也需要較高的計算資源來支持多 Agent 的運行。未來，隨著更多人物的加入，Nuwa Skill 的能力將持續增強，這將使得它在市場上的競爭力進一步提升。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含實際範例，安裝過程順暢，使用者能在短時間內上手。文件目前僅提供中文版本，對於非中文使用者可能會有障礙。
+> README 文件清晰，包含安裝和使用範例，讓新手能快速上手。安裝過程順暢，無明顯坑點。文件提供多語言版本，增加了可讀性。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速生成思維框架 — 通過自動化的資料收集和提煉，節省時間。
-> - 多元視角 — 提供來自不同名人的思維方式，幫助用戶拓展思維。
-> - 透明的調研過程 — 用戶可以查看每個 Skill 的調研資料，增強信任感。
+> - 提供多元化的思維框架，幫助用戶從不同角度分析問題。
+> - 安裝和使用簡單，適合各類型用戶。
+> - 開源透明，使用者可深入了解提煉過程。
 
 > [!danger] 缺點
-> - 依賴公開信息 — 只能基於公開資料進行蒸馏，無法捕捉私人見解。
-> - 局限於已知人物 — 目前僅支持已蒸馏的名人，對於新興人物的支持有限。
-> - 可能缺乏深度 — 雖然提煉出心智模型，但無法替代深入的個人學習和思考。
+> - 依賴於公開資料，無法捕捉私密思維。
+> - 對未知問題的回答準確性可能不足。
+> - 需要較高的計算資源以支持多 Agent 同時運行。
 
 > [!warning] 注意事項
-> - 蒸馏不了直觉 — 只能提取公開的心智模型，無法捕捉內在靈感。
-> - 捕捉不了突变 — 只基於調研時間的快照，無法反映即時變化。
-> - 公開表達 ≠ 真实想法 — 只能基於公開信息進行提煉。
+> - 無法蒸馏直覺和靈感 — 只能提取公開信息中的心智模型。
+> - 依賴於公開資料 — 不能捕捉突變或私密想法。
+> - 質量驗證依賴於已知問題 — 對未知問題的回答可能不夠準確。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 專注於蒸馏同事的思維，範圍較窄，無法涵蓋各領域的頂尖人物。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供不同的 AI 角色扮演，但不專注於提煉名人的思維框架。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 專注於蒸馏同事的思維，範圍較窄，無法涵蓋各領域的頂尖人物。 | 如果你的需求僅限於同事的思維蒸馏，這個工具會更合適。 | low，因為兩者的使用方式相似。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供不同的 AI 角色扮演，但不專注於提煉名人的思維框架。 | 如果需要多種角色的即時對話，這個工具會更合適。 | medium，因為需要調整使用場景。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **nuwa-skill** | **colleague-skill** | **boneyard** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 專注於蒸馏同事的思維，範圍較窄，無法涵蓋各領域的頂尖人物。 | 提供不同的 AI 角色扮演，但不專注於提煉名人的思維框架。 |
+> | 遷移成本 | - | low，因為兩者的使用方式相似。 | medium，因為需要調整使用場景。 |
+> | 適用場景 | 主要場景 | 如果你的需求僅限於同事的思維蒸馏，這個工具會更合適。 | 如果需要多種角色的即時對話，這個工具會更合適。 |
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Beta |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | medium |
+
+> [!tip] 採用建議
+> 適合個人側項目試用，但不建議用在生產環境的核心路徑上。
+
+## 已知陷阱
+
+> [!bug] 踩坑才知道的問題
+
+- **[HIGH]** 對於不在資料庫中的名人，無法提供有效的蒸馏結果。
+  - 解法：使用者可以手動提供資料來源以輔助蒸馏。
+- [MEDIUM] 蒸馏過程中可能出現的資料偏差。
+  - 解法：使用者需對結果進行二次驗證。
+- [MEDIUM] 對於某些複雜問題的回答可能不夠準確。
+  - 解法：建議使用者在提問時提供更多上下文信息。
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 小型創業團隊需要快速獲得市場洞察 | 非常適合 | 能夠快速蒸馏多位名人的思維，提供多元化的市場分析。 |
+| 大型企業的決策團隊需要深度分析 | 適合 | 雖然能提供深度分析，但可能需要額外的資料驗證。 |
+| 個人開發者希望提升自己的思維方式 | 非常適合 | 能夠從多位名人中獲得啟發，提升思考深度。 |
+| 教育機構希望設計課程 | 普通 | 雖然能提供思維框架，但可能不夠針對性。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~1 小時 |
+| 維護負擔 | low |
+| 綁定風險 | low |
+
+> [!tip] 投入 vs 回報
+> 花 2 小時學習，1 小時整合，得到多元化的思維框架，值得一試。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 低風險：該工具不需要高權限，僅存取公開資料，不涉及敏感信息。
 
 ## 健康度儀表板
 
@@ -252,12 +317,12 @@ Nuwa 的核心技術機制在於其六路並行的資料收集方式，這使得
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 1.2k |
-| Open Issues | 7 |
-| Issue 解決率 | 53% (8 closed) |
-| 最後推送 | 2026-04-10 |
+| Forks | 1.4k |
+| Open Issues | 6 |
+| Issue 解決率 | 70% (14 closed) |
+| 最後推送 | 2026-04-12 |
 | 建立日期 | 2026-04-05 |
-| Repo 大小 | 17.6 MB |
+| Repo 大小 | 17.7 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/alchaincyf/nuwa-skill) |
 
 > [!info]- 語言組成
@@ -270,28 +335,26 @@ Nuwa 的核心技術機制在於其六路並行的資料收集方式，這使得
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@alchaincyf](https://github.com/alchaincyf) | 21 |
+> | [@alchaincyf](https://github.com/alchaincyf) | 22 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，問題解決率達53%。
+**社群活躍度**：社群活躍，開發者定期更新和回應問題。
 **連結**：[文件](https://github.com/alchaincyf/nuwa-skill)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-07 ~ 2026-04-10）
-> **活躍天數** 4 天 · **最新 commit** docs: move Star History chart above examples for visibility
+> [!abstract] 最近 10 次 commit（2026-04-07 ~ 2026-04-12）
+> **活躍天數** 5 天 · **最新 commit** fix: add missing research files to x-mastery-mentor example
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#13](https://github.com/alchaincyf/nuwa-skill/issues/13) | 能否支持下opencode | 1 | 0 |
-> | [#15](https://github.com/alchaincyf/nuwa-skill/issues/15) | 分享一个女娲的下游配套：诸子.skill | 0 | 0 |
-> | [#14](https://github.com/alchaincyf/nuwa-skill/issues/14) | Awesome 女娲.skill — 135+ 人物思维框架合集 | 0 | 1 |
-> | [#12](https://github.com/alchaincyf/nuwa-skill/issues/12) | 我觉得样例里面应该加2个人，一个是雷军一个是刘强东哈哈 | 0 | 0 |
-> | [#11](https://github.com/alchaincyf/nuwa-skill/issues/11) | “帮我蒸馏周奇墨” 消耗了40刀 | 0 | 0 |
+> | [#19](https://github.com/alchaincyf/nuwa-skill/issues/19) | 很优秀的项目，怎么联系，求交流，有没有群 | 0 | 0 |
+> | [#18](https://github.com/alchaincyf/nuwa-skill/issues/18) | [Web UI] Built a web version of nuwa-skill for non-developer | 0 | 0 |
+> | [#11](https://github.com/alchaincyf/nuwa-skill/issues/11) | “帮我蒸馏周奇墨” 消耗了40刀 | 0 | 1 |
 
 ## README 摘錄
 
@@ -573,7 +636,7 @@ Nuwa 的核心技術機制在於其六路並行的資料收集方式，這使得
 
 ## 延伸閱讀
 
-相關概念：[[心智模型]] · [[決策啟發式]] · [[自我提升]]
+相關概念：[[Agent 框架]] · [[自然語言處理]] · [[自動化]]
 
 相關專案：[[titanwings--colleague-skill|titanwings/colleague-skill]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]]
 
@@ -581,11 +644,11 @@ Nuwa 的核心技術機制在於其六路並行的資料收集方式，這使得
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：思維模型提取）
+> [!note]- 直接競品（同子分類：AI 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "思維模型提取" AND file.name != "alchaincyf--nuwa-skill"
+> WHERE subcategory = "AI 工具" AND file.name != "alchaincyf--nuwa-skill"
 > SORT stars DESC
 > ```
 
@@ -617,7 +680,7 @@ Nuwa 的核心技術機制在於其六路並行的資料收集方式，這使得
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["心智模型","決策啟發式","自我提升"];
+> const concepts = ["Agent 框架","自然語言處理","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "alchaincyf--nuwa-skill" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

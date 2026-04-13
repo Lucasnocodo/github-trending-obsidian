@@ -557,7 +557,7 @@ Gemma Tuner 的核心技術機制依賴於 PyTorch 和 Metal Performance Shaders
 
 相關概念：[[多模態]] · [[音頻處理]] · [[圖像生成]]
 
-相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]]
+相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]] · [[MemPalace--mempalace|MemPalace/mempalace]] · [[MoonshotAI--Attention-Residuals|MoonshotAI/Attention-Residuals]]
 
 [GitHub](https://github.com/mattmireles/gemma-tuner-multimodal)
 
