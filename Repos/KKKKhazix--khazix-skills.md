@@ -7,12 +7,12 @@ language: N/A
 license: MIT
 description: "数字生命卡兹克开源的 AI Skills 合集"
 homepage: ""
-stars: 1588
-stars_per_day: 318
-forks: 337
+stars: 1719
+stars_per_day: 287
+forks: 359
 open_issues: 3
 created: 2026-04-06
-pushed_at: 2026-04-06
+pushed_at: 2026-04-12
 first_seen: 2026-04-12
 week: "2026-W16"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供可组合的 AI 技能模块，扩展 AI Agent 的能力。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-15"
+appearances: 2
+next_review: "2026-04-16"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 25
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-12"
-star_history: "2026-04-12:1585,2026-04-12:1588"
+star_history: "2026-04-12:1585,2026-04-12:1588,2026-04-13:1719"
 tags:
   - github
   - "category/開發工具"
@@ -665,4 +665,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-13|2026-04-13]] — 再次上榜，1.7k stars
 - [[2026-04-12|2026-04-12]] — 首次收錄，1.6k stars

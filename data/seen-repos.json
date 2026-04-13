@@ -925,10 +925,10 @@
   },
   "farzaa/clicky": {
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-12",
-    "times_seen": 4,
+    "last_seen": "2026-04-13",
+    "times_seen": 5,
     "stars_first": 2241,
-    "stars_last": 3780
+    "stars_last": 3946
   },
   "sooryathejas/METATRON": {
     "first_seen": "2026-04-09",
@@ -953,10 +953,10 @@
   },
   "xixu-me/awesome-persona-distill-skills": {
     "first_seen": "2026-04-10",
-    "last_seen": "2026-04-12",
-    "times_seen": 3,
+    "last_seen": "2026-04-13",
+    "times_seen": 4,
     "stars_first": 1798,
-    "stars_last": 3181
+    "stars_last": 3431
   },
   "LaurieWired/tailslayer": {
     "first_seen": "2026-04-10",
@@ -988,17 +988,17 @@
   },
   "alchaincyf/hermes-agent-orange-book": {
     "first_seen": "2026-04-12",
-    "last_seen": "2026-04-12",
-    "times_seen": 1,
+    "last_seen": "2026-04-13",
+    "times_seen": 2,
     "stars_first": 1876,
-    "stars_last": 1876
+    "stars_last": 2118
   },
   "KKKKhazix/khazix-skills": {
     "first_seen": "2026-04-12",
-    "last_seen": "2026-04-12",
-    "times_seen": 1,
+    "last_seen": "2026-04-13",
+    "times_seen": 2,
     "stars_first": 1585,
-    "stars_last": 1585
+    "stars_last": 1719
   },
   "hotcoffeeshake/tong-jincheng-skill": {
     "first_seen": "2026-04-12",
@@ -1006,5 +1006,47 @@
     "times_seen": 1,
     "stars_first": 1559,
     "stars_last": 1559
+  },
+  "yizhiyanhua-ai/fireworks-tech-graph": {
+    "first_seen": "2026-04-13",
+    "last_seen": "2026-04-13",
+    "times_seen": 1,
+    "stars_first": 1580,
+    "stars_last": 1580
+  },
+  "mattmireles/gemma-tuner-multimodal": {
+    "first_seen": "2026-04-13",
+    "last_seen": "2026-04-13",
+    "times_seen": 1,
+    "stars_first": 1231,
+    "stars_last": 1231
+  },
+  "nashsu/llm_wiki": {
+    "first_seen": "2026-04-13",
+    "last_seen": "2026-04-13",
+    "times_seen": 1,
+    "stars_first": 923,
+    "stars_last": 923
+  },
+  "QLHazyCoder/codex-oauth-automation-extension": {
+    "first_seen": "2026-04-13",
+    "last_seen": "2026-04-13",
+    "times_seen": 1,
+    "stars_first": 905,
+    "stars_last": 905
+  },
+  "phuryn/claude-usage": {
+    "first_seen": "2026-04-13",
+    "last_seen": "2026-04-13",
+    "times_seen": 1,
+    "stars_first": 878,
+    "stars_last": 878
+  },
+  "wxtsky/CodeIsland": {
+    "first_seen": "2026-04-13",
+    "last_seen": "2026-04-13",
+    "times_seen": 1,
+    "stars_first": 872,
+    "stars_last": 872
   }
 }
