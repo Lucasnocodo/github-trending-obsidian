@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "Fine-tune Gemma 4 and 3n with audio, images and text on Apple Silicon, using PyTorch and Metal Performance Shaders."
 homepage: ""
-stars: 1231
-stars_per_day: 246
-forks: 78
-open_issues: 2
+stars: 1255
+stars_per_day: 209
+forks: 83
+open_issues: 4
 created: 2026-04-07
 pushed_at: 2026-04-12
 first_seen: 2026-04-13
@@ -30,8 +30,8 @@ use_case: "在 Apple Silicon 上使用 PyTorch 和 Metal Performance Shaders 對
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-16"
+appearances: 2
+next_review: "2026-04-17"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 86
@@ -42,7 +42,7 @@ last_release_days: 5
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-13"
-star_history: "2026-04-13:1231"
+star_history: "2026-04-13:1231,2026-04-14:1255"
 tags:
   - github
   - "category/ai_ml"
@@ -557,7 +557,7 @@ Gemma Tuner 的核心技術機制依賴於 PyTorch 和 Metal Performance Shaders
 
 相關概念：[[多模態]] · [[音頻處理]] · [[圖像生成]]
 
-相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]] · [[MemPalace--mempalace|MemPalace/mempalace]] · [[MoonshotAI--Attention-Residuals|MoonshotAI/Attention-Residuals]]
+相關專案：[[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]] · [[MemPalace--mempalace|MemPalace/mempalace]] · [[MoonshotAI--Attention-Residuals|MoonshotAI/Attention-Residuals]] · [[RunanywhereAI--RCLI|RunanywhereAI/RCLI]] · [[TheTom--turboquant_plus|TheTom/turboquant_plus]]
 
 [GitHub](https://github.com/mattmireles/gemma-tuner-multimodal)
 
@@ -853,4 +853,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-14|2026-04-14]] — 再次上榜，1.3k stars
 - [[2026-04-13|2026-04-13]] — 首次收錄，1.2k stars

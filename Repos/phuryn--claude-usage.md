@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "A local dashboard for tracking your Claude Code token usage, costs, and session history. Pro and Max subscribers get a progress bar. This gives you the full picture."
 homepage: "https://www.productcompass.pm/"
-stars: 878
-stars_per_day: 176
-forks: 128
-open_issues: 10
+stars: 907
+stars_per_day: 151
+forks: 133
+open_issues: 14
 created: 2026-04-07
 pushed_at: 2026-04-09
 first_seen: 2026-04-13
@@ -30,8 +30,8 @@ use_case: "提供本地儀表板來追蹤 Claude Code 的 token 使用情況、�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-20"
+appearances: 2
+next_review: "2026-04-21"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 33
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-13"
-star_history: "2026-04-13:878"
+star_history: "2026-04-13:878,2026-04-14:907"
 tags:
   - github
   - "category/開發工具"
@@ -794,4 +794,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-14|2026-04-14]] — 再次上榜，907 stars
 - [[2026-04-13|2026-04-13]] — 首次收錄，878 stars

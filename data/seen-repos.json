@@ -925,10 +925,10 @@
   },
   "farzaa/clicky": {
     "first_seen": "2026-04-09",
-    "last_seen": "2026-04-13",
-    "times_seen": 5,
+    "last_seen": "2026-04-14",
+    "times_seen": 6,
     "stars_first": 2241,
-    "stars_last": 3946
+    "stars_last": 4080
   },
   "sooryathejas/METATRON": {
     "first_seen": "2026-04-09",
@@ -988,10 +988,10 @@
   },
   "alchaincyf/hermes-agent-orange-book": {
     "first_seen": "2026-04-12",
-    "last_seen": "2026-04-13",
-    "times_seen": 2,
+    "last_seen": "2026-04-14",
+    "times_seen": 3,
     "stars_first": 1876,
-    "stars_last": 2118
+    "stars_last": 2288
   },
   "KKKKhazix/khazix-skills": {
     "first_seen": "2026-04-12",
@@ -1009,38 +1009,38 @@
   },
   "yizhiyanhua-ai/fireworks-tech-graph": {
     "first_seen": "2026-04-13",
-    "last_seen": "2026-04-13",
-    "times_seen": 1,
+    "last_seen": "2026-04-14",
+    "times_seen": 2,
     "stars_first": 1580,
-    "stars_last": 1580
+    "stars_last": 2040
   },
   "mattmireles/gemma-tuner-multimodal": {
     "first_seen": "2026-04-13",
-    "last_seen": "2026-04-13",
-    "times_seen": 1,
+    "last_seen": "2026-04-14",
+    "times_seen": 2,
     "stars_first": 1231,
-    "stars_last": 1231
+    "stars_last": 1255
   },
   "nashsu/llm_wiki": {
     "first_seen": "2026-04-13",
-    "last_seen": "2026-04-13",
-    "times_seen": 1,
+    "last_seen": "2026-04-14",
+    "times_seen": 2,
     "stars_first": 923,
-    "stars_last": 923
+    "stars_last": 1135
   },
   "QLHazyCoder/codex-oauth-automation-extension": {
     "first_seen": "2026-04-13",
-    "last_seen": "2026-04-13",
-    "times_seen": 1,
+    "last_seen": "2026-04-14",
+    "times_seen": 2,
     "stars_first": 905,
-    "stars_last": 905
+    "stars_last": 1193
   },
   "phuryn/claude-usage": {
     "first_seen": "2026-04-13",
-    "last_seen": "2026-04-13",
-    "times_seen": 1,
+    "last_seen": "2026-04-14",
+    "times_seen": 2,
     "stars_first": 878,
-    "stars_last": 878
+    "stars_last": 907
   },
   "wxtsky/CodeIsland": {
     "first_seen": "2026-04-13",
@@ -1048,5 +1048,26 @@
     "times_seen": 1,
     "stars_first": 872,
     "stars_last": 872
+  },
+  "AgriciDaniel/claude-obsidian": {
+    "first_seen": "2026-04-14",
+    "last_seen": "2026-04-14",
+    "times_seen": 1,
+    "stars_first": 988,
+    "stars_last": 988
+  },
+  "momenbasel/PureMac": {
+    "first_seen": "2026-04-14",
+    "last_seen": "2026-04-14",
+    "times_seen": 1,
+    "stars_first": 907,
+    "stars_last": 907
+  },
+  "joeynyc/hermes-hudui": {
+    "first_seen": "2026-04-14",
+    "last_seen": "2026-04-14",
+    "times_seen": 1,
+    "stars_first": 833,
+    "stars_last": 833
   }
 }
