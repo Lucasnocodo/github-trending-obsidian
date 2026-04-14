@@ -7,17 +7,17 @@ language: TypeScript
 license: MIT
 description: "Garry's Opinionated OpenClaw/Hermes Agent Brain"
 homepage: ""
-stars: 6382
-stars_per_day: 912
-forks: 698
-open_issues: 36
+stars: 7448
+stars_per_day: 931
+forks: 798
+open_issues: 42
 created: 2026-04-05
 pushed_at: 2026-04-13
 first_seen: 2026-04-11
 week: "2026-W15"
 month: "2026-04"
-category: "AI/ML"
-subcategory: "個人知識管理"
+category: "開發工具"
+subcategory: "AI 代理"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-11
-use_case: "讓 AI 代理擁有個人化的知識庫，隨時回應你的需求。"
+use_case: "讓 AI 代理擁有個人化的知識庫，隨時可搜尋和更新生活中的資訊。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,29 +34,29 @@ appearances: 2
 next_review: "2026-04-15"
 contributor_count: 3
 engagement: "medium"
-issue_close_rate: 8
-repo_size_kb: 4425
+issue_close_rate: 14
+repo_size_kb: 4561
 readme_length: 9941
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-11"
-star_history: "2026-04-11:2528,2026-04-11:2572,2026-04-12:4848,2026-04-12:4867,2026-04-13:6382"
+star_history: "2026-04-11:2528,2026-04-11:2572,2026-04-12:4848,2026-04-12:4867,2026-04-13:6382,2026-04-14:7448"
 tags:
   - github
-  - "category/ai_ml"
+  - "category/開發工具"
   - "lang/typescript"
   - easy_install
 aliases:
   - "gbrain"
   - "garrytan/gbrain"
-  - "讓 AI 代理擁有個人化的知識庫，隨時回應你的需求。"
+  - "讓 AI 代理擁有個人化的知識庫，隨時可搜尋和更新生活中的資訊。"
 ---
 
 # gbrain
 
-**6.4k** stars · **912** stars/天 · 建立 7 天前 · TypeScript · MIT
+**7.4k** stars · **931** stars/天 · 建立 8 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/garrytan--gbrain");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `easy-install`
 
 > [!summary] 一句話摘要
-> 讓 AI 代理擁有個人化的知識庫，隨時回應你的需求。
+> 讓 AI 代理擁有個人化的知識庫，隨時可搜尋和更新生活中的資訊。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (912 stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (931 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Medium
-> **適合** 需要整合多種資訊來源以提升 AI 代理效能的專業人士。
-> **一句話重點** GBrain 的設計讓 AI 代理能夠在每次互動中持續學習，這是傳統知識管理工具無法實現的。
+> **適合** 需要建立個人化知識庫以提升 AI 代理智能的獨立開發者或小型團隊。
+> **一句話重點** GBrain 讓 AI 代理能夠隨著時間的推移不斷增強智能，這是傳統工具無法實現的。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/garrytan--gbrain");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "個人知識管理" && p.file.name !== "garrytan--gbrain" && p.status !== "archived")
+>     .where(p => p.subcategory === "AI 代理" && p.file.name !== "garrytan--gbrain" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,108 +96,112 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 個人知識管理 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 AI 代理 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** medium
-> **結論** 花 3 小時學習、2 小時整合，得到持續增長的個人知識庫，值得一試。
+> **結論** 花 3 小時學、2 小時整合，得到持續增強的 AI 代理，值得一試。
 
 > [!abstract] 核心創新
-> GBrain 提供了一個嵌入式的個人知識庫，能夠隨著使用者的互動而持續增長智慧。
+> GBrain 提供了一個無需伺服器的嵌入式資料庫解決方案，並能夠隨著用戶的互動不斷更新知識庫。
 
 ## 專案簡介
 
-GBrain 是一個專為 AI 代理設計的個人知識庫，能夠將會議、電子郵件、推文等資訊整合進可搜尋的資料庫中，並在每次回應前進行檢索。用戶只需簡單的 API 金鑰設定，並透過 `gbrain init` 指令在 2 秒內啟動 PGLite 資料庫，接著可使用 `gbrain import` 將 Markdown 文件匯入，並透過 `gbrain query` 進行查詢。這個工具的賣點在於它能夠隨著使用者的互動而不斷增長智慧，形成一個自我增強的知識循環。技術上，GBrain 使用了嵌入式 Postgres (PGLite) 來儲存資料，並支援向量搜尋，這使得資料檢索速度快且無需伺服器。
+GBrain 是一個設計用於提升 AI 代理智能的工具，通過建立一個可搜尋的知識庫來整合會議、電子郵件、推文等資訊。用戶只需執行 `gbrain init` 來快速設置，並可選擇使用 PGLite 作為嵌入式資料庫，無需伺服器，這使得安裝過程極為簡便，通常在 30 分鐘內完成。此工具的核心在於其混合 RAG 搜尋能力，能夠在用戶的資料中進行高效查詢，並隨著時間不斷更新知識。GBrain 支援與多種 AI 模型（如 Claude Opus 和 GPT-5.4）整合，並要求使用者提供 API 金鑰以提升搜尋質量。與其他工具相比，如 OpenClaw 和 Hermes Agent，GBrain 更加專注於個人化知識的累積與管理，並且其設計使得 AI 代理能夠在每次互動後自動更新資料庫，從而持續增強其智能。
 
-與傳統的知識管理工具相比，GBrain 的設計使得用戶能夠在每次互動中持續累積知識，避免了從零開始的情況。這種設計使得 AI 代理能夠在每次對話中獲得更新，並能夠在未來的對話中提供更具上下文的回應。使用者需要注意的是，GBrain 目前僅支援較新的 AI 模型，如 Claude Opus 4.6 和 GPT-5.4，較小的模型可能會導致功能不穩定。整體而言，這個工具適合需要持續累積個人知識的使用者，尤其是那些依賴 AI 代理進行日常工作的專業人士。
+這種設計不僅提高了查詢的準確性，也使得用戶能夠在會議或對話中獲得更具上下文的回應。GBrain 的使用者可以在本地運行其資料庫，並在需要時輕鬆遷移到雲端解決方案，這對於需要多設備存取的用戶來說非常方便。社群活躍度不高，解決率僅 14%，但仍有潛力。整體來看，GBrain 是一個適合希望提升 AI 代理智能的個人或小型團隊使用的工具。
 
 **技術棧**：`TypeScript` · `PLpgSQL` · `Shell`
 
 ## 重點功能
 
-- PGLite 資料庫 — 嵌入式 Postgres，無需伺服器，啟動時間僅需 2 秒。
-- Markdown 匯入 — 使用 `gbrain import` 指令將 Markdown 文件匯入，支援 idempotent 匯入。
-- 向量搜尋 — 整合 OpenAI 和 Anthropic API，提供高效的關鍵字搜尋和查詢擴展。
-- 自我增強 — 每次互動後更新知識庫，讓 AI 代理隨著時間變得更聰明。
-- 多種整合 — 支援 Gmail、Google Calendar 等多種服務的整合，透過預設的 recipe 自動化設定。
+- 快速設置 — 使用 `gbrain init` 在 2 秒內完成資料庫初始化。
+- 支持多種資料來源 — 整合會議、電子郵件、推文等，並自動更新知識庫。
+- 混合 RAG 搜尋 — 結合關鍵字搜尋與向量搜尋，提升查詢準確性。
+- 本地運行 — 使用 PGLite 作為嵌入式資料庫，無需伺服器。
+- 自動化更新 — 設定定期同步與更新，確保知識庫持續增長。
 
 ## 快速開始
 
-1. 克隆 GBrain 倉庫
+1. 克隆專案並安裝依賴
 ```bash
-git clone https://github.com/garrytan/gbrain.git ~/gbrain && cd ~/gbrain
+git clone https://github.com/garrytan/gbrain.git && cd gbrain && bun install && bun link
 ```
-2. 安裝依賴
-```bash
-curl -fsSL https://bun.sh/install | bash && export PATH="$HOME/.bun/bin:$PATH" && bun install
-```
-3. 初始化資料庫
+2. 初始化資料庫
 ```bash
 gbrain init
+```
+3. 導入資料
+```bash
+gbrain import ~/notes/
 ```
 
 ## 程式碼範例
 
 ```ts
 [
-  "# 前置條件：已安裝 GBrain",
+  "# 前置條件（1 行）",
   "gbrain init                     # PGLite (default)",
-  "# 預期輸出：資料庫初始化完成，無需伺服器"
+  "# 預期輸出（從 README 描述推測）",
+  "資料庫初始化完成，準備好使用。"
 ]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 7 天內累積 6382 stars（912/天），forks 698（10.9%），顯示出強烈的使用者興趣。Garry Tan 是這個專案的創始人，過去在 AI 和開源領域有豐富經驗。GBrain 解決了個人知識管理的痛點，讓 AI 代理能夠持續學習並提供更個性化的回應，這在傳統的知識管理工具中是難以實現的。社群的活躍度和開發者的參與度也顯示出這個專案的潛力和需求。這個工具的設計理念和功能特性吸引了許多希望提升 AI 代理能力的開發者。
+> 建立 8 天內累積 7448 stars（931/天），forks 798（10.7%），顯示出強勁的增長潛力。Garry Tan 是這個專案的作者，他過去在 AI 代理領域有豐富的經驗，這個專案解決了個人化知識管理的痛點，之前的方案往往無法有效整合多種資料來源。近期的推廣活動和社群討論也為其帶來了關注。技術上，GBrain 利用 PGLite 作為資料庫，這使得其在本地運行時不需要伺服器，降低了使用門檻。forks/stars 比率為 10.7%，顯示出許多用戶對這個專案有實際的修改需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要整合多種資訊來源以提升 AI 代理效能的專業人士。
+**目標受眾**：需要建立個人化知識庫以提升 AI 代理智能的獨立開發者或小型團隊。
 
 > [!example] 使用場景
-> - 企業主管用它來整合會議記錄和電子郵件，因為這樣可以快速查詢過去的決策背景，提升會議效率。
-> - 自由工作者用它來管理客戶資料和項目進度，因為能夠隨時檢索相關資訊，減少重複工作。
-> - 研究人員用它來整理文獻和實驗數據，因為能夠快速查找關鍵主題，提升研究效率。
+> - 自由職業者用它來整合客戶會議紀錄與電子郵件，因為這樣可以在會議前快速查詢客戶背景，提升會議效率。
+> - 小型團隊用它來管理專案文件與討論，因為能夠自動更新知識庫，減少重複工作。
+> - 個人用戶用它來記錄生活點滴與想法，因為能夠隨時查詢過去的記錄，增強思考的連貫性。
 
 ## 架構分析
 
-GBrain 採用嵌入式的 Postgres 資料庫 (PGLite)，這使得安裝和運行都非常簡便，無需伺服器。資料流從用戶的 Markdown 文件進入資料庫，透過向量搜尋技術提供快速查詢。這種設計不僅降低了使用門檻，也使得用戶能夠在本地環境中快速搭建個人知識庫。選擇 PGLite 而非傳統的伺服器架構，雖然犧牲了多用戶同時訪問的能力，但卻大幅簡化了部署過程。擴展性方面，當資料量增長到一定程度時，用戶可以選擇將資料遷移到雲端的 Postgres 環境，這樣可以保持靈活性和擴展性。
+GBrain 採用嵌入式 Postgres 作為資料庫，這使得用戶能夠在本地輕鬆運行而無需伺服器。資料流從用戶的會議、電子郵件等來源進入系統，通過 GBrain 的 API 進行處理，最終存儲在資料庫中。這種設計使得資料的讀取與寫入都非常迅速，並且能夠支持多種資料格式。
+
+選擇 PGLite 作為資料庫的代價是無法實現大規模的分布式存儲，但對於個人用戶或小型團隊來說，這樣的設計已經足夠。擴展性方面，當資料量增長到一定程度後，用戶可以選擇將資料遷移到雲端的 Postgres 解決方案。這樣的設計使得 GBrain 既能滿足當前需求，又能隨著用戶的成長進行擴展。
 
 ## 技術深入分析
 
-GBrain 的核心技術在於其使用的嵌入式 Postgres 資料庫，這使得資料存取速度快且不需要伺服器。其資料流從用戶的 Markdown 文件進入資料庫，並透過向量搜尋技術進行查詢，這樣的設計讓用戶能夠快速獲取所需資訊。GBrain 的效能在於能夠處理大量的資料，並且在使用者的互動中不斷增強知識庫。選擇 TypeScript 作為開發語言，讓整個專案在型別安全上有更好的保障，並且能夠利用現有的 JavaScript 生態系統。這個選擇雖然增加了一定的學習曲線，但也讓未來的擴展和維護變得更加容易。技術風險方面，GBrain 依賴於外部 API，這可能在未來的使用中造成不穩定性，特別是當 API 發生變更時。整合方面，GBrain 能夠與多種服務進行整合，這使得它在實際應用中非常靈活，但也可能帶來額外的配置和維護成本。
+GBrain 的核心技術在於其使用的 PGLite 資料庫，這使得資料的讀取與寫入速度都非常快。系統設計上，資料流從會議、電子郵件等來源進入 GBrain，然後通過內部的 API 進行處理，最終存儲在資料庫中。這樣的設計不僅提升了查詢的效率，也讓資料的更新變得簡單。效能上，GBrain 能夠處理數千個資料條目，並且在本地運行時不需要額外的伺服器資源。選擇 TypeScript 作為開發語言的好處在於其靜態類型檢查能夠減少錯誤，但也可能導致學習曲線稍陡。技術風險方面，當資料量增長到一定程度後，可能會遇到性能瓶頸，這需要用戶考慮遷移到雲端的解決方案。整合方面，GBrain 能夠與多種 AI 模型進行整合，但對於較小的模型則可能無法正常運作，這限制了其使用範圍。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了詳細的安裝步驟和範例，讓新手能夠快速上手。安裝過程相對順暢，無需複雜的設定。文件主要以英文撰寫，對於非英語使用者可能需要額外的翻譯支持。
+> README 文件清晰且包含詳細的安裝步驟，安裝過程順暢。提供了良好的入門指南，幫助新手快速上手。文件目前僅提供英文版本，可能對非英語使用者造成障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速啟動 — 僅需幾個指令即可完成安裝和初始化。
-> - 自我增強 — 隨著使用者的互動，知識庫持續增長，提升 AI 代理的效能。
-> - 無需伺服器 — 嵌入式資料庫設計使得使用者無需管理伺服器，降低了技術門檻。
+> - 快速安裝與設置，適合快速上手。
+> - 無需伺服器，降低了使用門檻。
+> - 自動化的知識更新，提升了 AI 代理的智能。
 
 > [!danger] 缺點
-> - 僅支援較新的 AI 模型，對於舊模型的兼容性較差。
-> - 依賴外部 API，若 API 不穩定可能影響功能。
-> - 使用者需自行管理 API 金鑰，增加了使用的複雜性。
+> - 對於大型資料集的支持有限，可能需要遷移到雲端。
+> - 需要用戶提供 API 金鑰，增加了使用的複雜性。
+> - 社群活躍度不高，問題解決率較低。
 
 > [!warning] 注意事項
-> - 僅支援較新的 AI 模型，如 Claude Opus 4.6 和 GPT-5.4。
-> - 目前的整合功能依賴於外部 API，若 API 不穩定可能影響功能。
-> - 使用者需自行管理 API 金鑰，未來若有變更需手動更新。
+> - 僅支援 Postgres 17.5 及以上版本。
+> - 需要提供有效的 API 金鑰以獲得最佳搜尋效果。
+> - 對於小型 AI 模型的兼容性較差，可能無法正常運作。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 主要聚焦於資料的存儲和檢索，而 GBrain 則強調與 AI 代理的整合和自我增強的知識循環。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 側重於資料的同步和備份，GBrain 則專注於個人知識的管理和增強。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 主要聚焦於資料的長期儲存與檢索，而 GBrain 則專注於即時的知識更新與整合。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | Claude-Obsidian 提供了更強的文檔編輯功能，但缺乏 GBrain 的自動化知識更新能力。 |
+| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | Shadowbroker 側重於資料的隱私保護，而 GBrain 則更強調知識的即時性與可搜尋性。 |
 
 ## 替代方案決策
 
@@ -205,16 +209,16 @@ GBrain 的核心技術在於其使用的嵌入式 Postgres 資料庫，這使得
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 專注於資料的存儲和檢索，使用較為傳統的資料庫架構，而 GBrain 則強調與 AI 代理的整合和自我增強的知識循環。 | 如果你的需求主要是資料的存儲和檢索，而不需要 AI 代理的功能，則 Boneyard 可能更合適。 | medium — 需要將資料格式轉換，並重新設計資料流。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | Parsync 側重於資料的同步和備份，使用的是較為傳統的資料處理方式，而 GBrain 則專注於個人知識的管理和增強。 | 如果你的需求是資料的定期備份和同步，Parsync 會是更好的選擇。 | low — 主要是資料的轉移，不需要重構整個系統。 |
+| OpenClaw | OpenClaw 提供了一個更全面的 AI 代理框架，而 GBrain 專注於個人知識的管理與更新。 | 如果需要一個完整的 AI 代理解決方案，OpenClaw 會是更好的選擇。 | medium，因為需要重新設計資料流與整合方式。 |
+| Hermes Agent | Hermes Agent 側重於多模態的 AI 交互，而 GBrain 更加專注於知識的累積與管理。 | 如果需要強調多種交互方式，Hermes Agent 會更合適。 | medium，因為需要調整資料結構與交互方式。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **gbrain** | **boneyard** | **parsync** |
+> | 維度 | **gbrain** | **OpenClaw** | **Hermes Agent** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Boneyard 專注於資料的存儲和檢索，使用較為傳統的資料庫架構，而 GBrain 則強調與 AI 代理的整合和自我增強的知識循環。 | Parsync 側重於資料的同步和備份，使用的是較為傳統的資料處理方式，而 GBrain 則專注於個人知識的管理和增強。 |
-> | 遷移成本 | - | medium — 需要將資料格式轉換，並重新設計資料流。 | low — 主要是資料的轉移，不需要重構整個系統。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是資料的存儲和檢索，而不需要 AI 代理的功 | 如果你的需求是資料的定期備份和同步，Parsync 會是更好 |
+> | 技術路線 | 本專案 | OpenClaw 提供了一個更全面的 AI 代理框架，而 GBrain 專注於個人知識的管理與更新。 | Hermes Agent 側重於多模態的 AI 交互，而 GBrain 更加專注於知識的累積與管理。 |
+> | 遷移成本 | - | medium，因為需要重新設計資料流與整合方式。 | medium，因為需要調整資料結構與交互方式。 |
+> | 適用場景 | 主要場景 | 如果需要一個完整的 AI 代理解決方案，OpenClaw 會 | 如果需要強調多種交互方式，Hermes Agent 會更合適 |
 
 ## 成熟度評估
 
@@ -225,26 +229,26 @@ GBrain 的核心技術在於其使用的嵌入式 Postgres 資料庫，這使得
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，但不建議用在生產環境的核心路徑上。
+> 適合個人側項目試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些系統上，PGLite 的性能可能不如預期，特別是在資料量大時。
-  - 解法：定期檢查資料庫性能，必要時考慮遷移到雲端資料庫。
-- [MEDIUM] API 金鑰的管理可能會造成安全風險，若未妥善保管可能導致資料洩漏。
-  - 解法：使用環境變數管理 API 金鑰，並定期更新。
-- [MEDIUM] 在使用向量搜尋時，若資料庫未正確配置，可能導致查詢失敗。
-  - 解法：確保在初始化時正確設定資料庫參數。
+- **[HIGH]** 在使用 PGLite 時，資料庫可能會因為資料量過大而導致性能下降。
+  - 解法：定期清理不必要的資料，或考慮遷移至雲端解決方案。
+- [MEDIUM] API 金鑰配置不當可能導致搜尋失敗。
+  - 解法：確保在 shell profile 中正確設置 API 金鑰。
+- [MEDIUM] 在大型資料集上進行查詢時，可能會出現延遲。
+  - 解法：優化資料結構，或考慮分批查詢。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠快速整合多種資訊來源，提升團隊的工作效率。 |
-| 需要管理大量客戶資料的自由工作者 | 適合 | 能夠隨時檢索過去的互動記錄，減少重複工作。 |
-| 大型企業的知識管理系統 | 不適合 | 目前的架構不支援多用戶同時訪問，可能無法滿足企業需求。  |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠快速建立知識庫並隨著時間增強智能。 |
+| 需要整合多種資料來源的個人用戶 | 適合 | 能夠自動更新知識庫，提升查詢效率。 |
+| 大型企業的資料管理系統 | 不適合 | 對於大型資料集的支持有限，可能無法滿足需求。 |
 
 ## 採用成本分析
 
@@ -252,16 +256,16 @@ GBrain 的核心技術在於其使用的嵌入式 Postgres 資料庫，這使得
 | --- | --- |
 | 學習時間 | ~3 小時 |
 | 整合時間 | ~2 小時 |
-| 維護負擔 | low |
+| 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習、2 小時整合，得到持續增長的個人知識庫，值得一試。
+> 花 3 小時學、2 小時整合，得到持續增強的 AI 代理，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：GBrain 本身不需要高權限運行，但使用者需妥善管理 API 金鑰，避免資料洩漏的風險。
+> 低風險：GBrain 本身不需要高權限，僅需存取用戶的資料。依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -326,12 +330,12 @@ GBrain 的核心技術在於其使用的嵌入式 Postgres 資料庫，這使得
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 698 |
-| Open Issues | 36 |
-| Issue 解決率 | 8% (3 closed) |
+| Forks | 798 |
+| Open Issues | 42 |
+| Issue 解決率 | 14% (7 closed) |
 | 最後推送 | 2026-04-13 |
 | 建立日期 | 2026-04-05 |
-| Repo 大小 | 4.3 MB |
+| Repo 大小 | 4.5 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/garrytan/gbrain) |
 
 > [!info]- 主要依賴
@@ -348,19 +352,19 @@ GBrain 的核心技術在於其使用的嵌入式 Postgres 資料庫，這使得
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@garrytan](https://github.com/garrytan) | 61 |
+> | [@garrytan](https://github.com/garrytan) | 62 |
 > | [@anurag](https://github.com/anurag) | 1 |
 > | [@franmaranchello](https://github.com/franmaranchello) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者回應速度尚可。
+**社群活躍度**：社群活躍度不高，解決率僅 14%。
 **連結**：[文件](https://github.com/garrytan/gbrain)
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-04-12 ~ 2026-04-13）
-> **活躍天數** 2 天 · **最新 commit** fix: create PGLite data dir before lock (#85)
+> **活躍天數** 2 天 · **最新 commit** security: fix wave 2 — 5 vulns + typed health check DSL (v0.9.3) (#95)
 
 ## 熱門議題
 
@@ -368,7 +372,7 @@ GBrain 的核心技術在於其使用的嵌入式 Postgres 資料庫，這使得
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#32](https://github.com/garrytan/gbrain/issues/32) | Support PGLite with local file as DB | 2 | 1 |
-> | [#84](https://github.com/garrytan/gbrain/issues/84) | Add policy enforcement for destructive MCP tools (delete_pag | 0 | 0 |
+> | [#91](https://github.com/garrytan/gbrain/issues/91) | vector serialization bug during migration to supabase `bug` | 1 | 1 |
 
 ## README 摘錄
 
@@ -537,19 +541,19 @@ GBrain 的核心技術在於其使用的嵌入式 Postgres 資料庫，這使得
 
 ## 延伸閱讀
 
-相關概念：[[RAG]] · [[向量資料庫]] · [[自動化]]
+相關概念：[[RAG]] · [[CLI/TUI]] · [[資料視覺化]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]]
 
 [GitHub](https://github.com/garrytan/gbrain)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：個人知識管理）
+> [!note]- 直接競品（同子分類：AI 代理）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "個人知識管理" AND file.name != "garrytan--gbrain"
+> WHERE subcategory = "AI 代理" AND file.name != "garrytan--gbrain"
 > SORT stars DESC
 > ```
 
@@ -557,7 +561,7 @@ GBrain 的核心技術在於其使用的嵌入式 Postgres 資料庫，這使得
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "AI/ML" AND file.name != "garrytan--gbrain"
+> WHERE category = "開發工具" AND file.name != "garrytan--gbrain"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -581,7 +585,7 @@ GBrain 的核心技術在於其使用的嵌入式 Postgres 資料庫，這使得
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["RAG","向量資料庫","自動化"];
+> const concepts = ["RAG","CLI/TUI","資料視覺化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "garrytan--gbrain" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

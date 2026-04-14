@@ -7,9 +7,9 @@ language: JavaScript
 license: Apache-2.0
 description: "Chrome扩展：支持OpenAI OAuth注册、验证码获取、CPA回调验证与自动恢复"
 homepage: "https://linux.do/t/topic/1928372"
-stars: 1193
-stars_per_day: 298
-forks: 258
+stars: 1198
+stars_per_day: 300
+forks: 260
 open_issues: 34
 created: 2026-04-09
 pushed_at: 2026-04-13
@@ -18,7 +18,7 @@ week: "2026-W16"
 month: "2026-04"
 category: "開發工具"
 subcategory: "自動化"
-release_tag: "v6.1.0"
+release_tag: "v7.7"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-13
-use_case: "自動化 OpenAI OAuth 註冊流程的 Chrome 擴展，簡化驗證碼獲取與 CPA 回調驗證。"
+use_case: "自動化處理 OpenAI OAuth 註冊流程的 Chrome 擴展。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 2
 next_review: "2026-04-17"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 10
-repo_size_kb: 986
-readme_length: 10000
+issue_close_rate: 6
+repo_size_kb: 1252
+readme_length: 9954
 bus_factor: 1
 last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-13"
-star_history: "2026-04-13:905,2026-04-13:913,2026-04-14:1193"
+star_history: "2026-04-13:905,2026-04-13:913,2026-04-14:1193,2026-04-14:1198"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "codex-oauth-automation-extension"
   - "QLHazyCoder/codex-oauth-automation-extension"
-  - "自動化 OpenAI OAuth 註冊流程的 Chrome 擴展，簡化驗證碼獲取與 CPA 回調驗證。"
+  - "自動化處理 OpenAI OAuth 註冊流程的 Chrome 擴展。"
 ---
 
 # codex-oauth-automation-extension
 
-**913** stars · **304** stars/天 · 建立 3 天前 · JavaScript · Apache-2.0
+**1.2k** stars · **300** stars/天 · 建立 4 天前 · JavaScript · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/QLHazyCoder--codex-oauth-automation-extension");
@@ -69,16 +69,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v6.1.0` `easy-install`
+`v7.7` `easy-install`
 
 > [!summary] 一句話摘要
-> 自動化 OpenAI OAuth 註冊流程的 Chrome 擴展，簡化驗證碼獲取與 CPA 回調驗證。
+> 自動化處理 OpenAI OAuth 註冊流程的 Chrome 擴展。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (304 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (300 stars/day)
 > **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要批量註冊 OpenAI 帳號的開發者或測試工程師，尤其是在需要快速測試的情況下。
-> **一句話重點** 這個擴展不僅簡化了 OpenAI 的註冊流程，還通過靈活的郵件服務選擇提升了用戶體驗。
+> **適合** 需要批量註冊 OpenAI 帳號的開發者或企業團隊。
+> **一句話重點** 這個擴展的自動化設計能夠大幅提升 OpenAI 帳號註冊的效率，特別適合需要批量操作的開發者。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,108 +102,94 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，得到高效的自動化註冊流程，值得投入。
+> **結論** 花 2 小時學習，1 小時整合，得到批量註冊的高效能，值得採用。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於其自動化 OpenAI OAuth 註冊流程的能力，並支持多種郵件來源的靈活配置。
+> 這個擴展能夠自動化整個 OpenAI OAuth 註冊流程，顯著減少手動操作的需求。
 
 ## 專案簡介
 
-這個 Chrome 擴展旨在自動化 OpenAI 的 OAuth 註冊與登錄流程，使用者只需配置一次，後續可全自動運行。核心流程包括從 CPA 面板獲取 OAuth 授權鏈接，然後自動填寫註冊頁面上的電子郵件和密碼，並獲取驗證碼。使用者可以選擇多種郵件來源，如 QQ、163 或 DuckDuckGo，並根據需要自動生成隨機郵箱。這個工具的賣點在於其高效的自動化能力，支持多輪運行和中途停止，讓使用者能夠輕鬆管理多個帳號的註冊過程。技術上，擴展使用 JavaScript 進行 DOM 操作，並透過 Chrome 的 debugger API 來模擬用戶行為，這樣的設計使得擴展能夠靈活應對不同的頁面結構變化。
+這個 Chrome 擴展專為批量處理 OpenAI OAuth 註冊和登錄流程而設計，支持自動填寫郵箱、密碼和獲取驗證碼。用戶只需配置管理面板的 OAuth 地址和郵箱來源，擴展會自動打開註冊頁面，填寫所需信息，並通過 DuckDuckGo、QQ、163 等郵箱服務獲取驗證碼。這樣的設計減少了手動操作的繁瑣，特別適合需要批量註冊帳號的用戶。關鍵指令包括自動獲取 OAuth 連結和自動填寫註冊表單，這使得整個流程幾乎無需人為干預。擴展支持多種郵箱來源，並能根據用戶需求自動生成強密碼，這對於安全性有很大提升。
 
-與傳統的手動註冊流程相比，這個工具能顯著減少時間成本，並提高成功率。相較於其他類似工具，這個擴展支持多種郵件來源和自動生成郵箱的功能，這在需要大量註冊的場景中尤為重要。使用者在使用過程中可能會遇到郵件延遲或頁面結構變化導致的錯誤，但擴展提供了手動干預的選項來解決這些問題。整體來看，這個擴展適合需要批量註冊 OpenAI 帳號的開發者或團隊，尤其是在需要快速測試或開發的情況下。未來可能會增加更多郵件服務的支持，進一步擴展其功能。
+技術上，這個擴展使用了 JavaScript 和 Chrome API，並且依賴於用戶的 CPA 管理面板，這意味著用戶需要確保其結構與擴展兼容。相比其他類似工具，這個擴展的優勢在於其多郵箱支持和自動化程度，能夠顯著提升註冊效率。使用者可能會遇到郵箱驗證失敗的問題，這通常需要手動干預來解決。整體來看，這個工具適合需要大量註冊 OpenAI 帳號的開發者或企業，並且在未來可能會進一步增強對其他郵箱服務的支持。
 
-**技術棧**：`JavaScript` · `CSS` · `HTML`
+**技術棧**：`JavaScript` · `CSS` · `Python` · `HTML`
 
 ## 重點功能
 
-- 自動獲取 OAuth 授權鏈接 — 透過 CPA 面板自動獲取鏈接，簡化註冊流程。
-- 支持多種郵件來源 — 包括 QQ、163、DuckDuckGo 等，靈活選擇郵件服務。
-- 自動生成隨機郵箱 — 根據 Cloudflare 或 DuckDuckGo 自動生成可用郵箱，減少手動操作。
-- 支持多輪運行 — 可以設定自動運行多次，適合需要大量註冊的場景。
-- 中途停止功能 — 允許使用者在流程中隨時停止，便於處理異常情況。
+- 自動獲取 OAuth 連結 — 透過 CPA 面板自動獲取 OpenAI OAuth 授權鏈接。
+- 自動填寫註冊表單 — 自動填寫郵箱和密碼，支持自定義和自動生成強密碼。
+- 多郵箱支持 — 支持 QQ、163、Hotmail 等多種郵箱服務，靈活獲取驗證碼。
+- 支持自動重試 — 在獲取驗證碼失敗時，自動重試多次，減少手動干預。
+- 側邊欄控制 — 提供直觀的側邊欄界面，方便用戶操作和配置。
 
 ## 快速開始
 
-1. 打開 Chrome 擴展頁面
+1. 安裝擴展
 ```bash
-chrome://extensions/
+在 Chrome 瀏覽器中打開 chrome://extensions/，開啟開發者模式，選擇加載已解壓的擴展程序，並選擇本項目目錄。
 ```
-2. 啟用開發者模式
+2. 配置 CPA 地址
 ```bash
-開啟右上角的開關
+在側邊欄中填寫你的管理面板 OAuth 地址，例如 http(s):///management.html#/oauth。
 ```
-3. 加載已解壓的擴展程序
+3. 選擇郵箱來源
 ```bash
-選擇本專案目錄
-```
-4. 配置 CPA 地址和郵件來源
-```bash
-在擴展側邊欄填寫相應信息
-```
-5. 開始自動註冊
-```bash
-點擊右上角的 Auto 按鈕
+在側邊欄中選擇郵箱來源，如 QQ Mail 或 163 Mail，並配置郵箱生成方式。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 913 stars（304/天），forks 192（21.0%），顯示出強勁的增長潛力。作者 QLHazyCoder 及其團隊在開源社群中活躍，過去有多個相關專案。這個工具解決了大量用戶在 OpenAI 註冊過程中面臨的繁瑣驗證碼問題，特別是在需要多次註冊的情況下，傳統方法效率低下。近期的推廣活動和社群討論也促進了這個工具的曝光率。技術上，這個工具的自動化能力和靈活的郵件來源選擇使其在同類工具中脫穎而出，特別是在需要快速註冊的場景中。
+> 建立 4 天就累積 1198 stars（299.5/天），forks 260（21.7%），這顯示出高需求和活躍的使用者基礎。作者 QLHazyCoder 及其團隊在開源社區有一定的知名度，之前也有其他成功的項目。這個工具解決了批量註冊 OpenAI 帳號的痛點，之前的手動流程繁瑣且容易出錯，這個擴展的自動化特性顯著提高了效率。社群的反饋和需求促使了這個工具的快速成長，特別是在需要快速獲取多個帳號的場景下。使用者對於郵箱驗證的需求和問題也促使了這個工具的開發。
 
 ## 適合誰使用
 
-**目標受眾**：需要批量註冊 OpenAI 帳號的開發者或測試工程師，尤其是在需要快速測試的情況下。
+**目標受眾**：需要批量註冊 OpenAI 帳號的開發者或企業團隊。
 
 > [!example] 使用場景
-> - 開發者用它來批量註冊 OpenAI 帳號，因為手動註冊過程繁瑣且耗時，這個工具能顯著提高效率。
-> - 測試工程師用它來快速生成多個測試帳號，因為這樣可以在短時間內完成大量測試，提升測試覆蓋率。
-> - 團隊成員用它來協助新成員快速獲取 OpenAI 帳號，因為這樣能減少新成員的上手時間，提升團隊效率。
+> - 開發者用它來批量註冊 OpenAI 帳號，因為手動註冊過程繁瑣且容易出錯，這個擴展能自動化整個流程。
+> - 企業用它來快速創建多個測試帳號，因為這樣可以節省大量時間，尤其是在需要進行大量測試的情況下。
+> - 個人用戶用它來管理多個 OpenAI 帳號，因為擴展支持多種郵箱來源，能夠靈活應對不同需求。
 
 ## 架構分析
 
-這個擴展採用 Chrome 擴展架構，主要由 JavaScript 實現 DOM 操作和事件處理。其設計目的是為了簡化用戶在 OpenAI 註冊過程中的繁瑣步驟。資料流中，擴展首先從 CPA 面板獲取 OAuth 鏈接，然後根據用戶選擇的郵件來源自動生成郵箱並填寫註冊表單。
+這個擴展的架構基於 Chrome 擴展的設計模式，使用 JavaScript 進行前端邏輯處理。用戶的 CPA 管理面板作為主要的數據來源，擴展通過 Chrome API 與頁面進行交互。資料流從用戶配置的 OAuth 地址開始，擴展自動獲取 OAuth 連結並填寫註冊表單。
 
-選擇使用 Chrome debugger API 來模擬用戶行為，這樣的設計使得擴展能夠靈活應對不同頁面結構的變化。這樣的選擇雖然增加了對頁面結構變化的敏感度，但也提高了自動化的成功率。擴展的擴展性在於其支持多種郵件服務，未來可以根據需求增加更多功能。
-
-整體來看，這個架構設計旨在降低用戶的操作負擔，提升註冊效率。
+選擇使用自動化流程的用戶可以在設定中調整各種參數，如郵箱來源和延遲時間。這樣的設計使得擴展能夠靈活應對不同的使用情境，但也依賴於用戶的環境配置，這可能會造成一定的使用門檻。整體而言，這個擴展的設計旨在提高註冊效率，但在某些情況下，對於郵箱服務的依賴可能會成為瓶頸。
 
 ## 技術深入分析
 
-這個擴展的核心技術機制是基於 JavaScript 的 DOM 操作，通過 Chrome 的 debugger API 來模擬用戶行為，這使得擴展能夠自動化整個 OAuth 註冊流程。效能上，這個擴展能夠快速處理多個註冊請求，具體的性能數據尚未提供，但其設計目標是高效且穩定。選擇 JavaScript 作為開發語言是因為其與 Chrome 擴展的相容性和強大的 DOM 操作能力，這樣的選擇使得開發過程相對簡單。技術風險方面，由於依賴於頁面結構，未來可能會因為 OpenAI 的頁面改版而導致功能失效，這需要開發者持續關注。整合方面，這個擴展能夠與現有的 Chrome 環境無縫對接，並且能夠輕鬆與其他工具鏈進行整合，降低了使用門檻。
+這個擴展的核心技術機制是基於 Chrome 擴展架構，使用 JavaScript 與 Chrome API 進行頁面交互。擴展的自動化流程包括獲取 OAuth 連結、自動填寫註冊表單和獲取驗證碼，這些操作通過輪詢郵箱來實現。效能方面，擴展能夠快速處理多個註冊請求，但在郵箱驗證階段可能會遇到延遲，特別是在高流量時段。設計上，這個擴展選擇了基於 JavaScript 的實現，這使得開發和維護相對簡單，但也可能導致在某些環境下的兼容性問題。技術風險方面，對於郵箱服務的依賴可能在未來造成問題，特別是當這些服務的 API 政策發生變化時。整合方面，這個擴展與主流的開發工具鏈相容性良好，能夠輕鬆嵌入到現有的工作流程中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且詳細，提供了完整的安裝和使用指南。安裝過程順暢，無需特別配置。提供了良好的快速開始指引，讓新手能夠在短時間內上手。文件目前僅提供英文版本，可能對非英語使用者造成一定障礙。
+> README 文件提供了詳細的安裝步驟和使用說明，並包含範例配置。安裝過程相對順暢，但需要用戶具備一定的技術背景以配置 CPA 管理面板。整體來說，花 30 分鐘應該能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多種郵件來源，靈活性高。
-> - 自動化流程減少手動操作，提高效率。
-> - 提供中途停止功能，便於處理異常情況。
-> - 簡單易用的界面，適合各類用戶。
+> - 自動化程度高，能顯著減少手動操作時間。
+> - 支持多種郵箱服務，靈活應對不同需求。
+> - 界面友好，易於配置和使用。
 
 > [!danger] 缺點
-> - 對頁面結構變化敏感，可能需要頻繁更新。
-> - 僅支援 Chrome 瀏覽器，無法在其他環境使用。
-> - 需要用戶手動配置 CPA 管理面板，對新手不友好。
-> - 在某些郵件服務上可能會遇到驗證碼延遲問題。
+> - 僅限於 Chrome 瀏覽器，無法跨平台使用。
+> - 對於某些郵箱服務的支持可能不穩定，需手動干預。
+> - 需要用戶具備一定的技術背景以配置 CPA 管理面板。
 
 > [!warning] 注意事項
-> - 僅支援 Chrome 瀏覽器，無法在其他瀏覽器上使用。
-> - 需要用戶手動配置 CPA 管理面板，對於不熟悉的用戶可能有一定難度。
-> - 在某些郵件服務上可能會遇到驗證碼延遲的問題，影響自動化流程。
-> - 對於頁面結構變化敏感，可能需要不定期更新擴展以適應變化。
+> - 僅支援 Chrome 瀏覽器，無法在其他瀏覽器中使用。
+> - 需要用戶的 CPA 管理面板結構與擴展兼容，否則可能無法正常運行。
+> - 在某些郵箱服務上，驗證碼獲取可能會失敗，需手動干預。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於自動化多種 OAuth 流程，但不支持郵件生成，適合需要多種 OAuth 服務的用戶。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這個工具主要用於同步文件，與本專案的 OAuth 自動化功能無關，但在自動化方面有相似的目標。 |
-| [BigBodyCobain/Shadowbroker](https://github.com/BigBodyCobain/Shadowbroker) | 此工具專注於隱私保護和匿名註冊，雖然有類似的自動化功能，但不支持 OpenAI 的 OAuth 流程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於批量處理各種 OAuth 流程，但不支持郵箱自動生成，適合需要更高自定義的用戶。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 這個工具提供類似的 OAuth 自動化功能，但主要針對特定平台，功能範圍較窄。 |
 
 ## 替代方案決策
 
@@ -211,16 +197,16 @@ chrome://extensions/
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於多種 OAuth 流程的自動化，但不支持郵件生成，適合需要多種 OAuth 服務的用戶。 | 如果你的需求是多種 OAuth 流程的自動化，而不需要郵件生成的功能。 | medium，因為需要重新配置 OAuth 流程。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這個工具主要用於文件同步，與本專案的 OAuth 自動化功能無關，但在自動化方面有相似的目標。 | 如果你的需求主要是文件同步，而不是 OAuth 註冊。 | low，因為功能需求不同。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具使用 Rust 實作，記憶體用量少，但功能相對較為簡單，缺乏郵箱自動生成的能力。 | 如果你的團隊需要一個輕量級的解決方案，並且不需要郵箱自動生成的功能。 | medium，因為需要重新配置 OAuth 流程。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 這個工具專注於特定平台的 OAuth 自動化，功能範圍較窄，適合特定需求。 | 如果你的需求非常專一，且只針對特定平台進行 OAuth 操作。 | low，因為功能相似，遷移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **codex-oauth-automation-extension** | **boneyard** | **parsync** |
+> | 維度 | **codex-oauth-automation-extension** | **boneyard** | **claude-obsidian** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這個工具專注於多種 OAuth 流程的自動化，但不支持郵件生成，適合需要多種 OAuth 服務的用戶。 | 這個工具主要用於文件同步，與本專案的 OAuth 自動化功能無關，但在自動化方面有相似的目標。 |
-> | 遷移成本 | - | medium，因為需要重新配置 OAuth 流程。 | low，因為功能需求不同。 |
-> | 適用場景 | 主要場景 | 如果你的需求是多種 OAuth 流程的自動化，而不需要郵件生 | 如果你的需求主要是文件同步，而不是 OAuth 註冊。 |
+> | 技術路線 | 本專案 | 這個工具使用 Rust 實作，記憶體用量少，但功能相對較為簡單，缺乏郵箱自動生成的能力。 | 這個工具專注於特定平台的 OAuth 自動化，功能範圍較窄，適合特定需求。 |
+> | 遷移成本 | - | medium，因為需要重新配置 OAuth 流程。 | low，因為功能相似，遷移成本較低。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要一個輕量級的解決方案，並且不需要郵箱自動生成 | 如果你的需求非常專一，且只針對特定平台進行 OAuth 操作 |
 
 ## 成熟度評估
 
@@ -231,25 +217,27 @@ chrome://extensions/
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人或小型團隊的測試使用，不建議用於生產環境的核心業務。
+> 適合個人或小型團隊進行測試，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些郵件服務上可能會遇到驗證碼延遲的問題，導致自動化失敗。
-  - 解法：手動檢查郵件，必要時重新啟動流程。
-- [MEDIUM] 頁面結構變化可能導致擴展功能失效。
-  - 解法：定期檢查擴展更新，並根據需要調整配置。
+- **[HIGH]** 在某些郵箱服務上，驗證碼獲取失敗，需手動干預。
+  - 解法：檢查郵箱配置，確保能正常接收郵件。
+- [MEDIUM] 擴展在高流量時可能會延遲，導致註冊過程變慢。
+  - 解法：嘗試在低流量時段進行註冊。
+- [MEDIUM] 某些用戶可能無法正確配置 CPA 管理面板。
+  - 解法：參考 README 中的詳細配置說明。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要批量註冊 OpenAI 帳號的開發者 | 非常適合 | 自動化流程大幅提升註冊效率，減少手動操作。 |
-| 測試工程師需要快速生成多個測試帳號 | 非常適合 | 能在短時間內完成大量註冊，提升測試覆蓋率。 |
-| 新成員快速獲取 OpenAI 帳號 | 適合 | 能減少新成員的上手時間，提升團隊效率。 |
-| 個人使用者偶爾註冊 OpenAI 帳號 | 普通 | 雖然功能強大，但對於偶爾使用者來說可能過於複雜。 |
+| 需要批量註冊 OpenAI 帳號的開發團隊 | 非常適合 | 自動化流程能顯著提高註冊效率，減少手動操作。 |
+| 小型企業需要快速創建測試帳號 | 適合 | 支持多種郵箱來源，能夠靈活應對不同需求。 |
+| 對於單一帳號的手動註冊 | 不適合 | 這個工具的優勢在於批量處理，單一註冊過程不需要這麼複雜的自動化。 |
+| 需要在多個郵箱服務上進行註冊的用戶 | 非常適合 | 擴展支持多種郵箱服務，能夠靈活應對不同需求。 |
 
 ## 採用成本分析
 
@@ -261,12 +249,12 @@ chrome://extensions/
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到高效的自動化註冊流程，值得投入。
+> 花 2 小時學習，1 小時整合，得到批量註冊的高效能，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 這個擴展不需要高權限，主要操作是通過 Chrome 瀏覽器進行。它不存取敏感資料，但需要用戶提供的郵件帳號和密碼。依賴鏈的信任程度較高，因為使用的是公開的 Chrome 擴展架構。在 CI/CD 中使用時，需注意擴展的自動化行為可能會影響測試結果。
+> 低風險：擴展本身不需要高權限，僅在用戶的環境中運行，且不存取敏感資料。
 
 ## 健康度儀表板
 
@@ -331,58 +319,67 @@ chrome://extensions/
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 192 |
-| Open Issues | 18 |
-| Issue 解決率 | 10% (2 closed) |
-| 最後推送 | 2026-04-12 |
+| Forks | 260 |
+| Open Issues | 34 |
+| Issue 解決率 | 6% (2 closed) |
+| 最後推送 | 2026-04-13 |
 | 建立日期 | 2026-04-09 |
 | 官方網站 | [Link](https://linux.do/t/topic/1928372) |
-| Repo 大小 | 986 KB |
+| Repo 大小 | 1.2 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/QLHazyCoder/codex-oauth-automation-extension) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 90
+>     "JavaScript" : 86
 >     "CSS" : 6
+>     "Python" : 4
 >     "HTML" : 4
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@QLHazyCoder](https://github.com/QLHazyCoder) | 85 |
+> | [@QLHazyCoder](https://github.com/QLHazyCoder) | 114 |
 > | [@whwh1233](https://github.com/whwh1233) | 11 |
 > | [@Jimmy-Bots](https://github.com/Jimmy-Bots) | 5 |
 > | [@hisence999](https://github.com/hisence999) | 5 |
-> | [@Liu8Can](https://github.com/Liu8Can) | 1 |
+> | [@Copilot](https://github.com/Copilot) | 2 |
 
-**最新版本**：v6.1.0 (2026-04-12)
+**最新版本**：v7.7 (2026-04-13)
 
 > [!info]- Release Notes
-> - 兼容新的 Codex OAuth 同意页结构，补充 `Sign in to Codex` 场景识别，优先在 consent form 内定位 `Continue` 按钮
-> - 更新 README 快速开始说明，补充邮箱生成方案与 Cloudflare 配置指引
-> - 扩展版本号更新为 `6.1.0`
+> ## v7.7
+> 
+> ### 更新内容
+> - 优化侧边栏“自动重试”开关区域，移除残留的英文提示文案
+> - 在线程间隔设置中恢复正确的显示逻辑，使相关输入区域不再被错误隐藏
+> - 调整自动重试交互流程，开启时按确认弹窗逻辑处理，并支持直接关闭开关
+> 
+> ### 修复与优化
+> - 修复自动重试开启后无法关闭的问题，避免切换时被强制重新勾选
+> - 修复线程间隔输入框始终不可编辑的问题，改为仅在满足条件时启用
+> - 将本次发布版本号从 `7.6.0` 更新为 `7.7`
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和回應使用者問題。
+**社群活躍度**：社群活躍度中等，開發者定期更新和回應問題。
 **連結**：[文件](https://linux.do/t/topic/1928372)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-12 ~ 2026-04-12）
-> **活躍天數** 1 天 · **最新 commit** docs: move star history before capability section
+> [!abstract] 最近 10 次 commit（2026-04-13 ~ 2026-04-13）
+> **活躍天數** 1 天 · **最新 commit** chore(release): bump version to v7.7
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#30](https://github.com/QLHazyCoder/codex-oauth-automation-extension/issues/30) | 佬, Hotmail是没完全支持吗, 本地点校验都一直报错 | 1 | 5 |
-> | [#4](https://github.com/QLHazyCoder/codex-oauth-automation-extension/issues/4) | mac 无法获取163邮箱验证吗 | 1 | 3 |
-> | [#33](https://github.com/QLHazyCoder/codex-oauth-automation-extension/issues/33) | 是否可以增加手机号功能 | 0 | 0 |
-> | [#32](https://github.com/QLHazyCoder/codex-oauth-automation-extension/issues/32) | 最新6.1.0 缺少buildLocalhostCleanupPrefix方法 | 0 | 1 |
+> | [#54](https://github.com/QLHazyCoder/codex-oauth-automation-extension/issues/54) | 这回彻底拉了。需要手机验证了。 | 1 | 1 |
+> | [#30](https://github.com/QLHazyCoder/codex-oauth-automation-extension/issues/30) | 佬, Hotmail是没完全支持吗, 本地点校验都一直报错 | 1 | 11 |
+> | [#4](https://github.com/QLHazyCoder/codex-oauth-automation-extension/issues/4) | mac 无法获取163邮箱验证吗 | 1 | 4 |
+> | [#59](https://github.com/QLHazyCoder/codex-oauth-automation-extension/issues/59) | 希望支持gmail | 0 | 0 |
 
 ## README 摘錄
 
@@ -403,9 +400,9 @@ chrome://extensions/
 > 5. Step 9 会把 localhost 回调提交回 SUB2API，并直接创建 OpenAI 账号
 > 
 > 
-> ## 最新版本测试结果
+> ## 插件效果
 > 
-> 最新版本实测了一个 5 轮自动，0 次失重试；睡前挂了一个十轮自动，1次重试：
+> 一百五十个号，一个401：
 > 
 >   
 >     
@@ -448,7 +445,7 @@ chrome://extensions/
 > - 支持自定义密码；留空时自动生成强密码
 > - 自动显示当前使用中的密码，便于后续保存
 > - 自动获取注册验证码与登录验证码
-> - 支持 `Hotmail`：直接使用 `邮箱 + 客户端 ID + 刷新令牌（refresh token）` 刷新微软令牌，并通过 Microsoft Graph 读取最新邮件
+> - 支持 `Hotmail`：继续使用 `邮箱 + 客户端 ID + 刷新令牌（refresh token）`，并可在远程服务与本地助手两种模式间切换
 > - 支持 `QQ Mail`、`163 Mail`、`Inbucket mailbox`
 > - 支持从 DuckDuckGo Email Protection 自动生成新的 `@duck.com` 地址
 > - 支持基于 Cloudflare 自定义域名自动生成随机邮箱前缀
@@ -532,7 +529,7 @@ chrome://extensions/
 > 
 > 说明：
 > 
-> - `Hotmail` 通过侧边栏里的 Hotmail 账号池选择账号，并直接访问 Microsoft Graph 邮件接口
+> - `Hotmail` 通过侧边栏里的 Hotmail 账号池选择账号，可切换为远程服务模式或本地助手模式
 > - `QQ`、`163`、`163 VIP` 用于直接轮询网页邮箱
 > - `Inbucket` 通过你在侧边栏里配置的 host 访问 `mailbox` 页面：`https:///m//`
 > 
@@ -540,6 +537,12 @@ chrome://extensions/
 > ### `Hotmail 账号池`
 > 
 > 仅当 `Mail = Hotmail` 时使用。
+> 
+> 可配置项：
+> 
+> - `接码模式`
+> - `远程服务地址`
+> - `本地助手地址`
 > 
 > 每条账号支持保存：
 > 
@@ -550,10 +553,60 @@ chrome://extensions/
 > 
 > 使用方式：
 > 
-> - 先新增账号
+> - 先选择 Hotmail 接码模式
+> - 远程模式下填写你自己的远程服务地址
+> - 本地模式下填写本地助手地址（默认 `http://127.0.0.1:17373`）
+> - Windows 运行仓库根目录的 `start-hotmail-helper.bat`
+> - macOS 运行仓库根目录的 `start-hotmail-helper.command`
+> - 本地 helper 当前仅依赖 Python 标准库，无需额外安装第三方 Python 包
+> - 再新增账号
 > - 点击 `校验`
 > - 校验通过后，可点击 `测试收信`
 > - Auto 模式每轮会自动选用一个可用账号
+> 
+> #### 本地 helper 启动命令
+> 
+> Windows：
+> 
+> ```powershell
+> .\start-hotmail-helper.bat
+> ```
+> 
+> macOS：
+> 
+> ```bash
+> chmod +x ./start-hotmail-helper.command
+> ./start-hotmail-helper.command
+> ```
+> 
+> 如果你不想走启动脚本，也可以直接运行 Python 程序本体：
+> 
+> ```bash
+> python scripts/hotmail_helper.py
+> ```
+> 
+> 如果你的环境里命令是 `python3`：
+> 
+> ```bash
+> python3 scripts/hotmail_helper.py
+> ```
+> 
+> #### 启动成功标志
+> 
+> 本地 helper 启动成功后，终端会输出：
+> 
+> ```text
+> Hotmail helper listening on http://127.0.0.1:17373
+> ```
+> 
+> 看到这行再回到扩展里点 `校验` 或 `复制最新验证码`。
+> 
+> #### 最小排错说明
+> 
+> - 如果提示 `Python 3 not found`，先安装 Python 3.10+
+> - 如果 helper 已启动但扩展仍报连接失败，先确认模式切到了 `本地助手`
+> - 确认本地助手地址与终端输出一致，默认应为 `http://127.0.0.1:17373`
+> - 如果地址一致仍失败，再检查是否有端口占用或终端里是否已经抛出异常
 > 
 > 
 > ### `Mailbox`
@@ -726,6 +779,10 @@ chrome://extensions/
 > 
 > 支持多轮运行，运行次数由右上角数字框决定。
 > 
+> `延迟` 里的“启动前倒计时”只控制整轮 Auto 开始前要不要先倒计时多少分钟。
+> 
+> `步间随机` 控制 Auto 流程里**每一步真正执行前**的额外等待秒数。这个设置只影响 Auto，不影响你手动单步点击执行；填 `0` 或留空表示不延迟。
+> 
 > 如果当前面板里已经存在未完成进度，点击 `Auto` 时会弹出选择：
 > 
 > - `重新开始`：重置当前流程进度，从 Step 1 开始新一轮
@@ -761,70 +818,13 @@ chrome://extensions/
 > 3. 根据 `Mail` 选择邮箱来源
 > 4. 如果 `Mail = Hotmail`，会从账号池自动分配一个可用账号
 > 5. 如果不是 Hotmail，则按当前“邮箱生成”配置尝试自动获取邮箱（Duck 或 Cloudflare）
-> 6. 如果自动获取失败，暂停并等待你在侧边栏填写邮箱后点击 `Continue`
-> 7. 继续执行 Step 3 ~ Step 9
-> 
-> 也就是说：
-> 
-> - 如果邮箱可自动获取，整套流程更接近全自动
-> - 如果自动获取失败，后台会先自动重试 5 次；仍失败时，Auto 才会在邮箱阶段暂停
-> - Auto 的暂停状态会保存在会话状态中，重新打开侧边栏后仍可继续
-> - 如果你在 Auto 暂停时改为手动点步骤或跳过步骤，面板会先确认并停止 Auto，再切回手动控制
-> - 选择 `继续当前` 时，后台不会先做大而全的前置校验，而是从当前步骤状态直接继续；缺什么条件，就在运行到那一步时再报错或暂停
-> 
-> 
-> ## 详细步骤说明
-> 
-> 
-> ### Step 1: Get OAuth Link
-> 
-> 通过 `content/vps-panel.js`：
-> 
-> - 打开 CPA OAuth 面板
-> - 等待 `Codex OAuth` 卡片出现
-> - 点击“登录”
-> - 读取页面里的授权链接
-> 
-> 结果会保存到侧边栏的 `OAuth` 字段。
-> 
-> 
-> ### Step 2: Open Signup
-> 
-> 通过 `content/signup-page.js`：
-> 
-> - 打开授权链接
-> - 查找 `Sign up / Register / 创建账户` 按钮
-> - 自动点击进入注册流程
-> 
-> 
-> ### Step 3: Fill Email / Password
-> 
-> - 如果侧边栏邮箱为空，会先按当前“邮箱生成”配置自动获取邮箱；失败时再提示手动粘贴
-> - 自动填写邮箱
-> - 如页面先要求邮箱，再进入密码页，会自动切页继续填写
-> - 使用自定义密码或自动生成密码
-> - 提交注册表单
-> 
-> 实际使用的密码会写入会话状态，并同步到侧边栏显示。
-> 
-> 
-> ### Step 4: Get Signup Code
-> 
-> 根据 `Mail` 配置，轮询邮箱并提取 6 位验证码。
-> 
-> 进入邮箱轮询前，脚本会先确认认证页是否已经进入验证码页面；如果密码页出现 `糟糕，出错了 / 操作超时（Operation timed out）` 并带有 `重试` 按钮，会先自动点击 `重试`、回到密码页重新提交，再继续等待验证码页面。
-> 
-> 支持：
-> 
-> - `Hotmail`（Microsoft Graph 邮件接口）
-> - `content/qq-mail.js`
-> - `content
+> 6. 如果自动获取失败，暂停并等待你在
 
 ## 延伸閱讀
 
 相關概念：[[自動化]] · [[OAuth]] · [[Chrome 擴展]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[TianyiDataScience--openclaw-control-center|TianyiDataScience/openclaw-control-center]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/QLHazyCoder/codex-oauth-automation-extension) · [官方網站](https://linux.do/t/topic/1928372)
 
