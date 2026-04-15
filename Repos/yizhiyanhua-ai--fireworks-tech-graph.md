@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Claude Code skill for generating production-quality SVG+PNG technical diagrams. Supports 8 diagram types, 5 visual styles, and deep AI/Agent domain knowledge."
 homepage: ""
-stars: 2040
-stars_per_day: 680
-forks: 158
+stars: 2457
+stars_per_day: 614
+forks: 197
 open_issues: 3
 created: 2026-04-10
-pushed_at: 2026-04-12
+pushed_at: 2026-04-14
 first_seen: 2026-04-13
 week: "2026-W16"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "自動生成高品質技術圖表的工具，支持多種圖表類型
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-17"
+appearances: 3
+next_review: "2026-04-18"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-13"
-star_history: "2026-04-13:1580,2026-04-14:2040"
+star_history: "2026-04-13:1580,2026-04-14:2040,2026-04-15:2457"
 tags:
   - github
   - "category/開發工具"
@@ -910,5 +910,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-15|2026-04-15]] — 再次上榜，2.5k stars
 - [[2026-04-14|2026-04-14]] — 再次上榜，2.0k stars
 - [[2026-04-13|2026-04-13]] — 首次收錄，1.6k stars

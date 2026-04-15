@@ -7,10 +7,10 @@ language: TypeScript
 license: NOASSERTION
 description: "LLM Wiki is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base — automatically. Instead of traditional RAG (retrieve-and-answer from scratch every time), the LLM incrementally builds and maintains a persistent wiki from your sources。"
 homepage: ""
-stars: 1135
-stars_per_day: 227
-forks: 123
-open_issues: 7
+stars: 1297
+stars_per_day: 216
+forks: 137
+open_issues: 12
 created: 2026-04-08
 pushed_at: 2026-04-12
 first_seen: 2026-04-13
@@ -30,8 +30,8 @@ use_case: "自動將文檔轉換為有組織的知識庫，並持續更新。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-17"
+appearances: 3
+next_review: "2026-04-18"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 70
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-13"
-star_history: "2026-04-13:923,2026-04-14:1135"
+star_history: "2026-04-13:923,2026-04-14:1135,2026-04-15:1297"
 tags:
   - github
   - "category/開發工具"
@@ -854,5 +854,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-15|2026-04-15]] — 再次上榜，1.3k stars
 - [[2026-04-14|2026-04-14]] — 再次上榜，1.1k stars
 - [[2026-04-13|2026-04-13]] — 首次收錄，923 stars

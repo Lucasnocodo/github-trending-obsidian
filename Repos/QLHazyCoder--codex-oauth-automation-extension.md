@@ -7,12 +7,12 @@ language: JavaScript
 license: Apache-2.0
 description: "Chrome扩展：支持OpenAI OAuth注册、验证码获取、CPA回调验证与自动恢复"
 homepage: "https://linux.do/t/topic/1928372"
-stars: 1198
-stars_per_day: 300
-forks: 260
-open_issues: 34
+stars: 1372
+stars_per_day: 274
+forks: 297
+open_issues: 36
 created: 2026-04-09
-pushed_at: 2026-04-13
+pushed_at: 2026-04-15
 first_seen: 2026-04-13
 week: "2026-W16"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "自動化處理 OpenAI OAuth 註冊流程的 Chrome 擴展。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-17"
+appearances: 3
+next_review: "2026-04-18"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 6
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-13"
-star_history: "2026-04-13:905,2026-04-13:913,2026-04-14:1193,2026-04-14:1198"
+star_history: "2026-04-13:905,2026-04-13:913,2026-04-14:1193,2026-04-14:1198,2026-04-15:1372"
 tags:
   - github
   - "category/開發工具"
@@ -1120,5 +1120,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-15|2026-04-15]] — 再次上榜，1.4k stars
 - [[2026-04-14|2026-04-14]] — 再次上榜，1.2k stars
 - [[2026-04-13|2026-04-13]] — 首次收錄，905 stars

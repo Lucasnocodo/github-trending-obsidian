@@ -988,10 +988,10 @@
   },
   "alchaincyf/hermes-agent-orange-book": {
     "first_seen": "2026-04-12",
-    "last_seen": "2026-04-14",
-    "times_seen": 3,
+    "last_seen": "2026-04-15",
+    "times_seen": 4,
     "stars_first": 1876,
-    "stars_last": 2288
+    "stars_last": 2452
   },
   "KKKKhazix/khazix-skills": {
     "first_seen": "2026-04-12",
@@ -1009,10 +1009,10 @@
   },
   "yizhiyanhua-ai/fireworks-tech-graph": {
     "first_seen": "2026-04-13",
-    "last_seen": "2026-04-14",
-    "times_seen": 2,
+    "last_seen": "2026-04-15",
+    "times_seen": 3,
     "stars_first": 1580,
-    "stars_last": 2040
+    "stars_last": 2457
   },
   "mattmireles/gemma-tuner-multimodal": {
     "first_seen": "2026-04-13",
@@ -1023,17 +1023,17 @@
   },
   "nashsu/llm_wiki": {
     "first_seen": "2026-04-13",
-    "last_seen": "2026-04-14",
-    "times_seen": 2,
+    "last_seen": "2026-04-15",
+    "times_seen": 3,
     "stars_first": 923,
-    "stars_last": 1135
+    "stars_last": 1297
   },
   "QLHazyCoder/codex-oauth-automation-extension": {
     "first_seen": "2026-04-13",
-    "last_seen": "2026-04-14",
-    "times_seen": 2,
+    "last_seen": "2026-04-15",
+    "times_seen": 3,
     "stars_first": 905,
-    "stars_last": 1193
+    "stars_last": 1372
   },
   "phuryn/claude-usage": {
     "first_seen": "2026-04-13",
@@ -1058,16 +1058,44 @@
   },
   "momenbasel/PureMac": {
     "first_seen": "2026-04-14",
-    "last_seen": "2026-04-14",
-    "times_seen": 1,
+    "last_seen": "2026-04-15",
+    "times_seen": 2,
     "stars_first": 907,
-    "stars_last": 907
+    "stars_last": 1517
   },
   "joeynyc/hermes-hudui": {
     "first_seen": "2026-04-14",
-    "last_seen": "2026-04-14",
-    "times_seen": 1,
+    "last_seen": "2026-04-15",
+    "times_seen": 2,
     "stars_first": 833,
-    "stars_last": 833
+    "stars_last": 881
+  },
+  "AgentSeal/codeburn": {
+    "first_seen": "2026-04-15",
+    "last_seen": "2026-04-15",
+    "times_seen": 1,
+    "stars_first": 897,
+    "stars_last": 897
+  },
+  "vyfor/rattles": {
+    "first_seen": "2026-04-15",
+    "last_seen": "2026-04-15",
+    "times_seen": 1,
+    "stars_first": 853,
+    "stars_last": 853
+  },
+  "hexiecs/talk-normal": {
+    "first_seen": "2026-04-15",
+    "last_seen": "2026-04-15",
+    "times_seen": 1,
+    "stars_first": 832,
+    "stars_last": 832
+  },
+  "OpenMOSS/MOSS-TTS-Nano": {
+    "first_seen": "2026-04-15",
+    "last_seen": "2026-04-15",
+    "times_seen": 1,
+    "stars_first": 753,
+    "stars_last": 753
   }
 }

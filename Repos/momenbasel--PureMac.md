@@ -7,12 +7,12 @@ language: Swift
 license: MIT
 description: "Free, open-source macOS cleaner. CleanMyMac alternative with zero telemetry. Native SwiftUI, scheduled auto-cleaning, Xcode/Homebrew/system cache cleanup. MIT licensed."
 homepage: "https://github.com/momenbasel/PureMac#install"
-stars: 907
-stars_per_day: 181
-forks: 41
-open_issues: 13
+stars: 1517
+stars_per_day: 253
+forks: 91
+open_issues: 5
 created: 2026-04-08
-pushed_at: 2026-04-10
+pushed_at: 2026-04-14
 first_seen: 2026-04-14
 week: "2026-W16"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供免費、開源的 macOS 清理工具，無數據收集，為 C
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-21"
+appearances: 2
+next_review: "2026-04-18"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 19
@@ -42,7 +42,7 @@ last_release_days: 5
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-14"
-star_history: "2026-04-14:907"
+star_history: "2026-04-14:907,2026-04-15:1517"
 tags:
   - github
   - "category/開發工具"
@@ -835,4 +835,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-15|2026-04-15]] — 再次上榜，1.5k stars
 - [[2026-04-14|2026-04-14]] — 首次收錄，907 stars

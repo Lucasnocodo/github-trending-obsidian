@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Web UI consciousness monitor for Hermes — the AI agent with persistent memory"
 homepage: ""
-stars: 833
-stars_per_day: 167
-forks: 86
-open_issues: 7
+stars: 881
+stars_per_day: 147
+forks: 92
+open_issues: 9
 created: 2026-04-09
-pushed_at: 2026-04-13
+pushed_at: 2026-04-15
 first_seen: 2026-04-14
 week: "2026-W16"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "為 Hermes AI 代理提供的 Web UI 意識監控工具。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-21"
+appearances: 2
+next_review: "2026-04-22"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-14"
-star_history: "2026-04-14:833"
+star_history: "2026-04-14:833,2026-04-15:881"
 tags:
   - github
   - "category/開發工具"
@@ -435,7 +435,7 @@ Hermes HUD 的核心技術機制是基於 FastAPI 和 WebSocket 的即時數據�
 
 相關概念：[[AI 代理]] · [[即時通訊]] · [[資料視覺化]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[AgentSeal--codeburn|AgentSeal/codeburn]]
 
 [GitHub](https://github.com/joeynyc/hermes-hudui)
 
@@ -731,4 +731,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-15|2026-04-15]] — 再次上榜，881 stars
 - [[2026-04-14|2026-04-14]] — 首次收錄，833 stars
