@@ -17,7 +17,7 @@ first_seen: 2026-04-15
 week: "2026-W16"
 month: "2026-04"
 category: "開發工具"
-subcategory: "API 工具"
+subcategory: "AI 工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-15
-use_case: "讓任何 LLM 像正常人一樣對話，去除冗長的 AI 語言。"
+use_case: "讓任何 LLM 像正常人一樣對話，消除冗長的 AI 語言。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-15"
-star_history: "2026-04-15:832"
+star_history: "2026-04-15:832,2026-04-15:832"
 tags:
   - github
   - "category/開發工具"
@@ -51,7 +51,7 @@ tags:
 aliases:
   - "talk-normal"
   - "hexiecs/talk-normal"
-  - "讓任何 LLM 像正常人一樣對話，去除冗長的 AI 語言。"
+  - "讓任何 LLM 像正常人一樣對話，消除冗長的 AI 語言。"
 ---
 
 # talk-normal
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓任何 LLM 像正常人一樣對話，去除冗長的 AI 語言。
+> 讓任何 LLM 像正常人一樣對話，消除冗長的 AI 語言。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (139 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要快速獲取 LLM 回應但不想被冗長內容困擾的開發者和研究者。
-> **一句話重點** 這個專案的核心價值在於能夠顯著提升 LLM 的回應效率，讓使用者獲得更直接的資訊。
+> **適合** 希望提升 LLM 回答質量的開發者和研究人員。
+> **一句話重點** 這個專案能夠顯著提升 LLM 的回答質量，特別適合需要快速獲得資訊的場景。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/hexiecs--talk-normal");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "API 工具" && p.file.name !== "hexiecs--talk-normal" && p.status !== "archived")
+>     .where(p => p.subcategory === "AI 工具" && p.file.name !== "hexiecs--talk-normal" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,110 +96,108 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 API 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 AI 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到顯著的回應效率提升，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~1h · **綁定風險** low
+> **結論** 花 1 小時學、2 小時整合，得到高效的 LLM 回答，值得採用。
 
 > [!abstract] 核心創新
-> 提供單一系統提示，能顯著減少 LLM 的冗長輸出，提升回應效率。
+> 提供一個簡單的系統提示，能顯著減少 LLM 的冗長輸出。
 
 ## 專案簡介
 
-這個專案提供了一個系統提示，能夠將 LLM 的冗長、企業化的輸出轉換為直接且具資訊性的回答。使用者只需將 `prompt.md` 的內容複製到所用工具的系統提示欄位，即可使用。經測試，該系統提示在 GPT-4o-mini 上可減少 73% 的字數，並在 GPT-5.4 上減少 72%，同時保留所有有用信息。具體來說，使用者可以透過簡單的 API 調用來獲得精簡的回答，像是使用 `curl` 指令來發送請求。這個工具的賣點在於其能顯著提升 LLM 的回應效率，特別是在需要快速獲取資訊的場景中。
+這個專案提供了一個系統提示，能將 LLM 的冗長、企業化的回答轉換為直接且具資訊性的回應。使用者只需將這個提示應用於任何模型（如 GPT、Gemini、LLaMA 等），即可顯著減少輸出字數，並保持重要資訊。根據測試，GPT-4o-mini 的輸出字數減少了 73%，而 GPT-5.4 減少了 72%。例如，對於問題「Python 是什麼？」的回答，經過處理後，字數從 1583 減少到 513，並且保留了關鍵資訊。這使得使用者能夠快速獲得所需的答案，而不必閱讀冗長的背景資訊。
 
-其技術實作上，這個工具不依賴於特定的 LLM 模型，適用於各種模型（如 GPT、Gemini、LLaMA 等），並且其安裝過程簡單，支持多種安裝方式。相較於其他 LLM 調整工具，這個專案專注於減少輸出冗長性，讓回答更為精簡，適合需要快速獲取信息的開發者和研究者。使用者在實際操作中可能會遇到的問題包括如何有效整合到現有的工作流中，這需要一定的技術背景。該專案目前處於活躍開發中，社群反應良好，且無開放問題，顯示出良好的維護狀態。對於希望提升 LLM 效率的團隊，這是一個值得考慮的工具。
+技術上，這個工具不依賴於特定的框架或庫，因為它只需一個簡單的系統提示即可運行。這樣的設計使得它的整合非常輕便，並且不會對現有的 LLM 使用流程造成影響。與其他工具相比，如 0xGF/boneyard 和 AgentSeal/codeburn，這個專案的優勢在於其簡單性和高效性，能夠快速適應不同的 LLM。實際使用中，這個工具能夠在各種場景下提供高效的回答，特別適合需要快速獲得資訊的開發者或研究人員。這個專案目前處於活躍開發中，且沒有開放的問題，顯示出良好的維護狀態。對於希望提升 LLM 回答質量的團隊，這是一個值得考慮的選擇。
 
 **技術棧**：`Shell`
 
 ## 重點功能
 
-- 系統提示 — 將 LLM 的輸出轉換為直接、無冗長的回答，經測試可減少 72%-89% 的字數。
-- 多模型支持 — 適用於各種 LLM 模型，如 GPT、Gemini、LLaMA 等。
-- 簡易安裝 — 提供多種安裝方式，包括直接複製 GitHub 連結、使用 clawhub 或手動 git clone。
-- API 調用範例 — 提供 `curl` 指令範例，方便用戶快速上手。
-- 自動更新 — 安裝過程中自動檢測並更新規則，保持最新狀態。
+- 系統提示 — 將 LLM 的冗長回答轉換為直接且具資訊性的回應。
+- 跨模型兼容性 — 支援多種 LLM 模型，包括 GPT、Gemini 和 LLaMA。
+- 高效能 — 減少輸出字數，GPT-4o-mini 減少 73%，GPT-5.4 減少 72%。
+- 簡單整合 — 只需一個系統提示即可運行，無需額外依賴。
+- 開放貢獻 — 鼓勵社群參與，提供建議和改進。
 
 ## 快速開始
 
-1. 使用 curl 調用 API
+1. 安裝專案
 ```bash
-curl https://api.openai.com/v1/chat/completions -H "Authorization: Bearer $OPENAI_API_KEY" -H "Content-Type: application/json" -d '{"model": "gpt-4o-mini", "messages": [{"role": "system", "content": ""}, {"role": "user", "content": "What is Python?"}]}''
+git clone https://github.com/hexiecs/talk-normal.git
 ```
-2. 選擇安裝方式
+2. 進入專案目錄
 ```bash
-clawhub install talk-normal && bash skills/talk-normal/install.sh
+cd talk-normal
 ```
-3. 手動安裝
+3. 使用系統提示
 ```bash
-git clone https://github.com/hexiecs/talk-normal.git && cd talk-normal && bash install.sh
+echo 'Your question' | ./run.sh
 ```
 
 ## 程式碼範例
 
 ```bash
 {
-  "前置條件": "需要安裝 OpenAI API 並獲得 API 金鑰。",
-  "指令": "curl https://api.openai.com/v1/chat/completions -H \"Authorization: Bearer $OPENAI_API_KEY\" -H \"Content-Type: application/json\" -d '{\"model\": \"gpt-4o-mini\", \"messages\": [{\"role\": \"system\", \"content\": \"\"}, {\"role\": \"user\", \"content\": \"What is Python?\"}]}''",
-  "預期輸出": "Python is a high-level, interpreted programming language known for its readability and simplicity. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming."
+  "前置條件": "已安裝必要的 shell 環境",
+  "指令": "echo 'Your question' | ./run.sh",
+  "預期輸出": "直接且具資訊性的回答"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 832 stars（139/天），forks 19（2.3%），這顯示出一定的市場需求。作者 hexiecs 在開源社群中活躍，這個專案解決了 LLM 輸出冗長的痛點，讓使用者能夠獲得更直接的回答。隨著 AI 應用的普及，對於簡化 LLM 輸出的需求日益增加，這使得該專案的價值凸顯。社群的反饋也表明，這個工具在實際使用中能夠有效提升工作效率。
+> 建立 6 天內累積 832 stars（139/天），forks 19（2.3%），顯示出穩定的增長。作者 hexiecs 似乎專注於提升 LLM 的實用性，這解決了許多使用者對於 AI 回答過於冗長的痛點。這個工具的出現正好符合了對於更簡潔、直接的 AI 回答需求的上升。這個專案的高 forks/stars 比率（2.3%）顯示出使用者對於這個工具的實際修改和使用意圖，表明其在社群中的實際應用潛力。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速獲取 LLM 回應但不想被冗長內容困擾的開發者和研究者。
+**目標受眾**：希望提升 LLM 回答質量的開發者和研究人員。
 
 > [!example] 使用場景
-> - 開發者用它來優化 API 回應，因為可以快速獲得精簡的資訊，減少不必要的字數。
-> - 產品經理用它來整理市場調查結果，因為能將冗長的報告簡化為關鍵要點，提升閱讀效率。
-> - 學生用它來快速理解複雜的概念，因為能將學術文章的內容轉換為易懂的語言，節省學習時間。
+> - 開發者用它來快速獲得技術問題的答案，因為這樣能節省閱讀冗長文檔的時間。
+> - 研究人員用它來簡化文獻回顧，因為能直接獲得關鍵資訊，避免了不必要的細節。
+> - 產品經理用它來快速了解市場趨勢，因為能夠獲得簡潔明瞭的報告，便於決策。
 
 ## 架構分析
 
-該專案採用簡單的 Shell 腳本架構，安裝過程中自動檢測用戶的環境並注入系統提示。這種設計使得使用者能夠快速上手，無需複雜的配置。資料流方面，使用者的問題經過 API 調用發送至 LLM，然後根據系統提示進行處理，最終返回精簡的回答。
-
-這樣的架構設計使得專案具備良好的擴展性，未來可以輕鬆加入更多的規則或功能。選擇 Shell 作為主要語言，雖然在性能上可能不如其他語言，但其簡單易用的特性使得新手也能快速上手。整體而言，這種設計在使用便捷性和功能擴展性之間取得了良好的平衡。
+這個專案採用簡單的 shell 腳本架構，因為其目標是提供一個輕量級的解決方案。資料流從用戶輸入問題開始，經過系統提示處理，最後輸出簡潔的回答。這樣的設計使得整合變得非常簡單，並且不需要額外的依賴。選擇 shell 作為實作語言的代價是可能無法處理更複雜的邏輯，但這樣的簡單性也使得使用者能夠快速上手。擴展性方面，由於依賴於通用的 LLM，未來可以根據需求進行調整。
 
 ## 技術深入分析
 
-該專案的核心技術機制是透過一個系統提示來調整 LLM 的輸出風格，這種方法能夠有效減少冗長的回答，讓回應更為精簡。具體來說，這個系統提示經過多次迭代和測試，確保能夠在保留有用信息的同時，去除不必要的填充內容。效能方面，該工具在 GPT-4o-mini 和 GPT-5.4 上的測試結果顯示，平均可減少 72%-89% 的字數，這對於需要快速獲取信息的使用者來說，無疑是一大優勢。設計上選擇使用 Shell 作為主要語言，雖然在性能上可能不如其他語言，但其簡單易用的特性使得新手能夠快速上手。技術風險方面，對於某些複雜問題，可能無法完全去除冗長性，這需要使用者在使用時進行調整。整合方面，該工具能夠輕鬆融入現有的工作流中，特別是對於已經在使用 OpenAI API 的團隊來說，整合難度相對較低。整體而言，這個專案在提升 LLM 效率方面展現了良好的潛力，未來可能會進一步擴展其功能和適用範圍。
+這個專案的核心技術是通過一個系統提示來優化 LLM 的輸出，這種方法簡單而有效。使用者只需將提示應用於任何 LLM 模型，便能顯著減少冗長的回答，並保留關鍵資訊。效能方面，經測試，GPT-4o-mini 的輸出字數減少了 73%，而 GPT-5.4 減少了 72%。這樣的設計選擇使得專案的依賴樹非常輕，因為它不依賴於特定的框架或庫。技術風險方面，這個工具的設計決策可能在處理複雜問題時出現瓶頸，因為它依賴於通用的 LLM 輸出。整合方面，由於其簡單的 shell 腳本設計，與主流開發工具的整合難度低，適合快速部署。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和使用範例。安裝過程相對順暢，沒有明顯的坑。文件目前僅提供英文版本，對於非英語使用者可能會造成一些障礙。
+> README 文件清晰，提供了簡單的使用範例。安裝過程順暢，無明顯坑。文件中有多語言版本，方便不同語言使用者理解。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能顯著減少 LLM 輸出的冗長性，提升回應效率。
-> - 安裝簡單，支持多種安裝方式，方便用戶選擇。
-> - 適用於多種 LLM 模型，具有良好的通用性。
+> - 簡單易用，快速整合到現有 LLM 流程中。
+> - 顯著減少冗長輸出，提升回答效率。
+> - 支持多種 LLM 模型，靈活性高。
 
 > [!danger] 缺點
-> - 目前僅支持英文，對其他語言的適用性有限。
-> - 對於某些特定問題，可能無法完全去除冗長性。
-> - 需要有效的 OpenAI API 金鑰，增加使用門檻。
+> - 僅限於文本輸入，無法處理其他格式。
+> - 對於複雜問題的回答可能仍需人工干預。
+> - 不支援特定的 LLM 設定，需依賴通用模型。
 
 > [!warning] 注意事項
-> - 目前僅支持英文輸入，對其他語言的支持有限。
-> - 需要有效的 OpenAI API 金鑰才能正常運作。
-> - 對於某些複雜問題，可能無法完全去除冗長性。
+> - 僅支援文本輸入，無法處理其他格式。
+> - 對於某些複雜問題，可能仍需人工調整輸出。
+> - 不支援特定的 LLM 設定，需依賴通用模型。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 LLM 的多樣性和創造性，而本專案則專注於減少冗長性。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 提供更豐富的上下文管理功能，而本專案則專注於簡化回答。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於清理和優化 LLM 的輸出，但可能不如 talk-normal 直接有效。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 此工具提供更複雜的 LLM 管理功能，但對於簡單問題的回答可能不如 talk-normal 迅速。 |
 
 ## 替代方案決策
 
@@ -207,16 +205,16 @@ git clone https://github.com/hexiecs/talk-normal.git && cd talk-normal && bash i
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 LLM 的多樣性和創造性，而本專案則專注於減少冗長性。 | 如果需要更豐富的 LLM 輸出選擇，而不僅僅是簡化回答。 | medium，因為需要重新調整使用的 LLM 模型和輸出格式。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 提供更豐富的上下文管理功能，而本專案則專注於簡化回答。 | 如果需要更強的上下文理解和管理能力，而不僅僅是簡化輸出。 | high，因為需要重新設計整個工作流以適應新的上下文管理方式。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於清理和優化 LLM 輸出，但可能不如本專案直接有效。 | 如果需要更複雜的輸出格式處理，可能會選擇這個工具。 | medium，因為需要重新調整使用流程。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 提供更複雜的 LLM 管理功能，但對於簡單問題的回答不如本專案迅速。 | 如果需要更全面的 LLM 管理功能，這個工具可能更合適。 | high，因為需要重構整個 LLM 使用流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **talk-normal** | **boneyard** | **claude-obsidian** |
+> | 維度 | **talk-normal** | **boneyard** | **codeburn** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 LLM 的多樣性和創造性，而本專案則專注於減少冗長性。 | 提供更豐富的上下文管理功能，而本專案則專注於簡化回答。 |
-> | 遷移成本 | - | medium，因為需要重新調整使用的 LLM 模型和輸出格式。 | high，因為需要重新設計整個工作流以適應新的上下文管理方式。 |
-> | 適用場景 | 主要場景 | 如果需要更豐富的 LLM 輸出選擇，而不僅僅是簡化回答。 | 如果需要更強的上下文理解和管理能力，而不僅僅是簡化輸出。 |
+> | 技術路線 | 本專案 | 專注於清理和優化 LLM 輸出，但可能不如本專案直接有效。 | 提供更複雜的 LLM 管理功能，但對於簡單問題的回答不如本專案迅速。 |
+> | 遷移成本 | - | medium，因為需要重新調整使用流程。 | high，因為需要重構整個 LLM 使用流程。 |
+> | 適用場景 | 主要場景 | 如果需要更複雜的輸出格式處理，可能會選擇這個工具。 | 如果需要更全面的 LLM 管理功能，這個工具可能更合適。 |
 
 ## 成熟度評估
 
@@ -227,42 +225,44 @@ git clone https://github.com/hexiecs/talk-normal.git && cd talk-normal && bash i
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人試用或小型專案，不建議用在生產環境的核心路徑上。
+> 適合個人試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 對於某些複雜問題，可能無法完全去除冗長性。
-  - 解法：使用者需根據具體情況調整問題表達。
-- [MEDIUM] 安裝過程中可能需要手動調整 AGENTS.md 文件。
-  - 解法：仔細閱讀安裝說明，確保正確配置。
+- [MEDIUM] 在某些情況下，輸出可能仍然過於簡化，導致缺乏必要資訊
+  - 解法：可手動調整問題以獲得更詳細的回答
+- **[HIGH]** 對於特定領域的問題，可能無法提供專業的回答
+  - 解法：建議搭配其他專業工具使用
+- [MEDIUM] 在處理多輪對話時，可能無法保持上下文連貫性
+  - 解法：建議在每次提問時重申上下文
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要快速獲取 LLM 回應的開發者 | 非常適合 | 能顯著減少冗長性，提升回應效率。 |
-| 需要處理多語言的應用 | 不適合 | 目前僅支持英文輸入。 |
-| 小型專案或個人使用 | 適合 | 安裝簡單，使用門檻低。 |
-| 大型企業級應用 | 普通 | 雖然能提升效率，但需要考慮整合的複雜性。 |
+| 小型開發團隊需要快速獲得技術問題的答案 | 非常適合 | 能顯著減少冗長回答，提升效率。 |
+| 大型企業需要處理大量客戶查詢 | 適合 | 能快速提供直接的回答，減少客服負擔。 |
+| 個人研究者需要簡化文獻回顧 | 普通 | 對於複雜問題可能仍需人工調整。 |
+| 需要處理多輪對話的聊天機器人 | 不適合 | 可能無法保持上下文連貫性。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
+| 學習時間 | ~1 小時 |
+| 整合時間 | ~2 小時 |
 | 維護負擔 | low |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到顯著的回應效率提升，值得嘗試。
+> 花 1 小時學、2 小時整合，得到高效的 LLM 回答，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，僅需訪問 OpenAI API，且不存取敏感資料。
+> 低風險：該工具不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
 
 ## 健康度儀表板
 
@@ -341,7 +341,7 @@ git clone https://github.com/hexiecs/talk-normal.git && cd talk-normal && bash i
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，無開放問題，顯示出良好的維護狀態。
+**社群活躍度**：社群活躍，無開放問題，顯示良好維護狀態。
 **連結**：[文件](https://github.com/hexiecs/talk-normal)
 
 ## 開發動態
@@ -516,19 +516,19 @@ git clone https://github.com/hexiecs/talk-normal.git && cd talk-normal && bash i
 
 ## 延伸閱讀
 
-相關概念：[[API 設計]] · [[自動化]] · [[自然語言處理]]
+相關概念：[[自然語言處理]] · [[機器學習]] · [[自動化測試]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[TianyiDataScience--openclaw-control-center|TianyiDataScience/openclaw-control-center]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[cnlimiter--codex-manager|cnlimiter/codex-manager]] · [[dou-jiang--codex-console|dou-jiang/codex-console]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[TianyiDataScience--openclaw-control-center|TianyiDataScience/openclaw-control-center]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[cnlimiter--codex-manager|cnlimiter/codex-manager]]
 
 [GitHub](https://github.com/hexiecs/talk-normal)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：API 工具）
+> [!note]- 直接競品（同子分類：AI 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "API 工具" AND file.name != "hexiecs--talk-normal"
+> WHERE subcategory = "AI 工具" AND file.name != "hexiecs--talk-normal"
 > SORT stars DESC
 > ```
 
@@ -560,7 +560,7 @@ git clone https://github.com/hexiecs/talk-normal.git && cd talk-normal && bash i
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["API 設計","自動化","自然語言處理"];
+> const concepts = ["自然語言處理","機器學習","自動化測試"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "hexiecs--talk-normal" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

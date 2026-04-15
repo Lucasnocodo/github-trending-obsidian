@@ -1,23 +1,23 @@
 ---
-repo: GitFrog1111/badclaude
-url: https://github.com/GitFrog1111/badclaude
+repo: GitFrog1111/OpenWhip
+url: https://github.com/GitFrog1111/OpenWhip
 owner: GitFrog1111
 owner_type: User
 language: HTML
 license: N/A
 description: ""
 homepage: ""
-stars: 2129
-stars_per_day: 237
-forks: 227
+stars: 2179
+stars_per_day: 218
+forks: 230
 open_issues: 38
 created: 2026-04-04
-pushed_at: 2026-04-07
+pushed_at: 2026-04-14
 first_seen: 2026-04-09
 week: "2026-W15"
 month: "2026-04"
-category: "其他"
-subcategory: "娛樂工具"
+category: "開發工具"
+subcategory: "CLI 工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-09
-use_case: "讓 Claude 更有效率的工具，透過有趣的方式激勵他。"
+use_case: "讓 Claude 變得更聰明，透過簡單的指令來激勵他。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,31 +35,31 @@ next_review: "2026-04-14"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 5
-repo_size_kb: 562
-readme_length: 542
+repo_size_kb: 590
+readme_length: 710
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-09"
-star_history: "2026-04-09:1501,2026-04-09:1508,2026-04-10:1767,2026-04-10:1770,2026-04-11:1934,2026-04-11:1934,2026-04-12:2021,2026-04-13:2083,2026-04-14:2129"
+star_history: "2026-04-09:1501,2026-04-09:1508,2026-04-10:1767,2026-04-10:1770,2026-04-11:1934,2026-04-11:1934,2026-04-12:2021,2026-04-13:2083,2026-04-14:2129,2026-04-15:2179"
 tags:
   - github
-  - "category/其他"
+  - "category/開發工具"
   - "lang/html"
   - easy_install
 aliases:
-  - "badclaude"
-  - "GitFrog1111/badclaude"
-  - "讓 Claude 更有效率的工具，透過有趣的方式激勵他。"
+  - "OpenWhip"
+  - "GitFrog1111/OpenWhip"
+  - "讓 Claude 變得更聰明，透過簡單的指令來激勵他。"
 ---
 
-# badclaude
+# OpenWhip
 
-**2.1k** stars · **237** stars/天 · 建立 9 天前 · HTML · 未標註授權
+**2.2k** stars · **218** stars/天 · 建立 10 天前 · HTML · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/GitFrog1111--badclaude");
+const me = dv.page("Repos/GitFrog1111--OpenWhip");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓 Claude 更有效率的工具，透過有趣的方式激勵他。
+> 讓 Claude 變得更聰明，透過簡單的指令來激勵他。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (237 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 6 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 喜歡用幽默方式提升 AI 效率的開發者和使用者。
-> **一句話重點** badclaude 不僅是一個工具，更是一種娛樂方式，讓使用者在與 AI 互動時感到輕鬆有趣。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (218 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要簡單方式來激勵 AI 的獨立開發者或小型團隊。
+> **一句話重點** 這個專案的趣味性在於它將 AI 的互動變得輕鬆有趣，適合喜歡嘗試新工具的開發者。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/GitFrog1111--OpenWhip");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "娛樂工具" && p.file.name !== "GitFrog1111--badclaude" && p.status !== "archived")
+>     .where(p => p.subcategory === "CLI 工具" && p.file.name !== "GitFrog1111--OpenWhip" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,99 +96,108 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 娛樂工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 CLI 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~1h · **綁定風險** low
-> **結論** 花 1 小時學習和 1 小時整合，得到輕鬆有趣的互動體驗，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，1 小時整合，得到簡單的 AI 互動工具，值得嘗試。
 
 > [!abstract] 核心創新
-> 透過幽默的方式激勵 AI，提高使用者的互動體驗。
+> 透過簡單的 CLI 指令來激勵 AI，提升互動體驗。
 
 ## 專案簡介
 
-badclaude 是一個有趣的工具，旨在透過一種幽默的方式來激勵 Claude 這個 AI 系統。使用者可以透過點擊系統托盤圖示來「鞭策」Claude，這會發送一個中斷信號（Ctrl-C），並隨機顯示五種鼓勵的訊息。這種設計不僅讓使用者在使用過程中感到輕鬆有趣，也讓人們在面對 AI 反應慢的情況時，能以輕鬆的心態來處理。該工具基於 Electron 框架開發，這意味著它可以在多個平台上運行，包括 macOS 和 Windows，並且依賴於 Electron 和 Koffi 這兩個庫。
+OpenWhip 是一個用於激勵 Claude 的工具，透過簡單的 CLI 指令來發送鼓勵訊息。用戶可以透過點擊系統托盤圖示來啟動工具，並使用 Ctrl-C 中斷訊號來傳遞訊息。這個工具的設計目的在於簡化與 Claude 的互動，讓使用者能夠快速發送鼓勵訊息，進而提升 Claude 的表現。它支援 Windows、macOS 和 Linux，但在 Linux 上需要額外安裝 xdotool 來進行鍵盤自動化。核心功能包括發送五種鼓勵訊息，並記錄使用者的互動次數，這樣在未來的應用中可以更好地調整使用策略。這個工具的「一句話賣點」在於簡化與 AI 的互動，讓用戶可以輕鬆激勵 AI。
 
-這種選擇使得開發者能夠快速構建桌面應用，但也帶來了相對較大的應用包大小。與其他類似工具相比，badclaude 的獨特之處在於其幽默的交互方式，這使得它不僅僅是一個生產力工具，更是一個娛樂性質的應用。雖然目前的功能相對簡單，但未來的計畫包括增加更多的互動功能，例如記錄鞭打次數等，這可能會吸引更多的使用者。使用者在使用過程中可能會遇到一些小問題，例如在不同平台上的兼容性，但整體來說，這是一個有趣且具實驗性的工具，適合喜歡探索新奇事物的開發者和使用者。
+技術上，它使用 Electron 框架來構建桌面應用，並依賴 Node.js 18 以上版本，這使得它在各大平台上都能穩定運行。相較於其他類似工具，如 AgentSeal/codeburn 和 GitFrog1111/badclaude，OpenWhip 更專注於簡單的用戶互動，而不是複雜的功能或設定。這使得它在小型團隊或個人開發者中更具吸引力，因為它能快速上手且不需要額外的配置。使用者在實際操作中可能會遇到 Linux 環境下的依賴安裝問題，這需要額外注意。整體來看，這是一個適合小型專案或個人使用的工具，未來可能會持續增加新功能以擴展其應用範圍。
 
 **技術棧**：`Electron 33.0.0` · `Node.js >=18.0.0`
 
 ## 重點功能
 
-- 鞭打功能 — 點擊托盤圖示來激勵 Claude，並隨機顯示鼓勵訊息。
-- 跨平台支持 — 基於 Electron 開發，支持 macOS 和 Windows。
-- 簡單安裝 — 使用 npm 安裝，命令為 `npm install -g badclaude`。
-- 即時反饋 — 每次鞭打都會發送中斷信號，讓使用者即時看到效果。
-- 未來擴展性 — 計畫增加更多功能，如記錄鞭打次數等。
+- 簡單的 CLI 操作 — 使用 `openwhip` 指令啟動工具，無需複雜設定。
+- 多平台支援 — 支援 Windows、macOS 和 Linux，Linux 需額外安裝 xdotool。
+- 發送鼓勵訊息 — 透過 Ctrl-C 發送五種不同的鼓勵訊息。
+- 系統托盤整合 — 點擊托盤圖示即可快速啟動和使用。
+- 使用者互動記錄 — 記錄用戶的互動次數，便於未來分析。
 
 ## 快速開始
 
-1. 全域安裝 badclaude
+1. 安裝 OpenWhip
 ```bash
-npm install -g badclaude
+npm install -g openwhip
 ```
-2. 啟動 badclaude
+2. 啟動 OpenWhip
 ```bash
-badclaude
+openwhip
 ```
-3. 點擊托盤圖示開始互動
+3. 在 Linux 上安裝 xdotool
 ```bash
-# 直接點擊托盤圖示
+sudo apt install xdotool
+```
+
+## 程式碼範例
+
+```html
+[
+  "# 前置條件：已安裝 OpenWhip",
+  "openwhip",
+  "# 預期輸出：啟動 OpenWhip 並顯示托盤圖示"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 9 天內累積 2129 stars（237/天），forks 227（10.7%），這顯示出其受歡迎程度。GitFrog1111 是一位活躍的開發者，這個專案的幽默性質吸引了許多對 AI 互動感興趣的使用者。這個工具解決了 AI 反應慢的問題，讓使用者可以以輕鬆的方式來激勵 AI。社群的反應熱烈，特別是對於未來功能的需求（如 MCP 整合），顯示出使用者對這個工具的期待。這種輕鬆有趣的方式在技術社群中引起了共鳴，促進了其快速增長。
+> 建立 10 天內累積 2179 stars（218/天），forks 230（10.6%），這顯示出該專案的快速增長。作者 GitFrog1111 在開源社群中活躍，這個專案解決了使用者與 AI 互動的痛點，讓用戶能夠輕鬆激勵 AI 的表現。近期的熱門 Issue，如對 Tom Scream 音效的需求，顯示出社群對於功能擴展的期待。這個工具的設計使得它能夠在多平台上運行，並且簡化了使用者的操作流程，這在當前的開發生態中是非常受歡迎的。
 
 ## 適合誰使用
 
-**目標受眾**：喜歡用幽默方式提升 AI 效率的開發者和使用者。
+**目標受眾**：需要簡單方式來激勵 AI 的獨立開發者或小型團隊。
 
 > [!example] 使用場景
-> - 軟體開發者用它來激勵 Claude 在開發過程中更快反應，因為這樣可以減少等待時間，提升開發效率。
-> - 遊戲開發者用它來測試 AI 角色的反應速度，因為這樣可以在遊戲中創造更有趣的互動體驗。
-> - 教育工作者用它來展示 AI 的互動性，因為這樣可以讓學生更容易理解 AI 的運作方式。
+> - 獨立開發者用它來快速激勵 Claude，因為這樣能提高開發效率，減少等待時間。
+> - 小型團隊用它來增強團隊成員對 AI 的互動，因為簡單的操作可以讓每個人都能參與進來。
+> - 教育工作者用它來展示 AI 的反應，因為這樣可以讓學生更直觀地理解 AI 的運作方式。
 
 ## 架構分析
 
-badclaude 採用 Electron 作為框架，這使得它能夠在多個平台上運行。應用的核心是 main.js，負責啟動應用並管理托盤圖示。使用者的互動主要通過 overlay.html 來實現，這樣的設計讓 UI 與邏輯分離，便於未來擴展。選擇 Electron 的代價是應用的體積較大，但這樣的架構能夠快速開發出跨平台的桌面應用。整體來說，這樣的設計使得開發者能夠專注於功能開發，而不必過於擔心平台兼容性問題。
+OpenWhip 採用 Electron 框架來構建跨平台的桌面應用，這使得它能夠在 Windows、macOS 和 Linux 上運行。資料流方面，使用者透過 CLI 指令啟動應用，然後透過系統托盤圖示進行互動。這種設計使得用戶能夠快速上手，但也限制了功能的擴展性。選擇 Electron 的好處在於能夠快速開發和部署，但可能會導致應用體積較大。未來擴展功能時，可能會面臨性能瓶頸，特別是在處理大量用戶互動時。
 
 ## 技術深入分析
 
-badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操作系統上運行，並且能夠快速開發出桌面應用。應用的主要邏輯集中在 main.js 中，負責啟動應用並管理使用者的互動。使用者的每一次互動都會觸發一個中斷信號，這種設計讓使用者能夠即時看到反饋。這種即時反饋的設計不僅提升了使用者的互動體驗，也讓整個應用變得更加有趣。儘管目前的功能較為簡單，但未來計畫增加更多的互動功能，例如記錄鞭打次數等，這可能會吸引更多的使用者。選擇 Electron 的代價是應用的體積較大，但這樣的架構能夠快速開發出跨平台的桌面應用。整體來說，這樣的設計使得開發者能夠專注於功能開發，而不必過於擔心平台兼容性問題。
+OpenWhip 的核心技術機制基於 Electron 框架，這使得它能夠在多平台上運行，並利用 Node.js 進行後端邏輯處理。它的資料流設計簡單，使用者透過 CLI 指令啟動應用，並透過系統托盤進行互動。這樣的設計雖然簡化了使用流程，但也限制了未來功能的擴展性。效能方面，因為是桌面應用，對於資源的需求相對較高，特別是在多用戶同時互動的情況下。選擇 Electron 的好處在於快速開發和跨平台支援，但可能會導致應用體積增大，並且在性能上可能會有瓶頸。技術風險方面，未來若使用者數量增加，可能會影響應用的穩定性。整合方面，與主流開發工具的相容性良好，但在 CI/CD pipeline 的整合上可能需要額外的適配工作。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了安裝和使用的範例，讓新手能夠快速上手。安裝過程相對順暢，沒有明顯的坑。文件目前僅提供英文，對於非英語使用者可能會有些挑戰，但整體上能在 30 分鐘內完成安裝和基本使用。
+> README 文件清晰，包含安裝和使用指令。安裝過程順暢，但 Linux 使用者需注意額外依賴。文件沒有多語言支持，主要以英文為主。整體來說，花 30 分鐘應該能夠順利運行。
 
 ## 優缺點分析
 
 > [!success] 優點
+> - 簡單易用，適合新手。
+> - 多平台支援，方便不同使用者。
 > - 有趣的互動方式，提升使用者體驗。
-> - 跨平台支持，方便不同系統的使用者。
-> - 簡單的安裝和使用流程，降低入門門檻。
 
 > [!danger] 缺點
-> - 功能較為簡單，缺乏進階選項。
-> - 依賴於 Electron，導致應用包較大。
-> - 在不同平台上的兼容性可能會有小問題。
+> - 功能較為單一，缺乏進階選項。
+> - 社群活躍度低，問題解決速度慢。
+> - Linux 使用者需額外安裝依賴。
 
 > [!warning] 注意事項
-> - 目前功能較為簡單，缺乏進階設定。
-> - 在不同平台上的兼容性可能會有小問題。
-> - 依賴於 Electron，可能導致應用包較大。
+> - Linux 環境需額外安裝 xdotool。
+> - 目前僅支援基本的鼓勵訊息，功能較為單一。
+> - 開發者社群活躍度尚需提升，Issue 解決率低。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供了更全面的 AI 互動功能，但缺乏幽默性質的設計。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | claude-obsidian 更專注於生產力工具，而 badclaude 則強調娛樂性。 |
-| [HKUDS/OpenHarness](https://github.com/HKUDS/OpenHarness) | OpenHarness 提供了更高級的 API 整合，但不具備 badclaude 的互動趣味性。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於 AI 代碼的自動化，功能較為複雜，適合需要高效能的團隊。 |
+| [GitFrog1111/badclaude](https://github.com/GitFrog1111/badclaude) | 提供更豐富的功能選擇，但相對較難上手，適合有經驗的開發者。 |
 
 ## 替代方案決策
 
@@ -196,16 +205,16 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供了更全面的 AI 互動功能，但缺乏幽默性質的設計。 | 如果需要更全面的 AI 功能而不在乎娛樂性質，boneyard 是更好的選擇。 | medium，因為兩者的功能和設計理念有所不同。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | claude-obsidian 更專注於生產力工具，而 badclaude 則強調娛樂性。 | 如果主要需求是生產力而非娛樂，claude-obsidian 會更合適。 | low，因為兩者的基本使用方式相似。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於 AI 代碼的自動化，功能較為複雜，適合需要高效能的團隊。 | 如果你的團隊需要更高效的 AI 代碼自動化，並且能接受較高的學習曲線。 | medium，因為需要重新學習新的操作流程。 |
+| [GitFrog1111/badclaude](https://github.com/GitFrog1111/badclaude) | 提供更豐富的功能選擇，但相對較難上手，適合有經驗的開發者。 | 如果你需要更複雜的功能和設定，並且有能力處理更高的學習曲線。 | high，因為需要重新適應新的功能和操作方式。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **badclaude** | **boneyard** | **claude-obsidian** |
+> | 維度 | **OpenWhip** | **codeburn** | **badclaude** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | boneyard 提供了更全面的 AI 互動功能，但缺乏幽默性質的設計。 | claude-obsidian 更專注於生產力工具，而 badclaude 則強調娛樂性。 |
-> | 遷移成本 | - | medium，因為兩者的功能和設計理念有所不同。 | low，因為兩者的基本使用方式相似。 |
-> | 適用場景 | 主要場景 | 如果需要更全面的 AI 功能而不在乎娛樂性質，boneyar | 如果主要需求是生產力而非娛樂，claude-obsidian |
+> | 技術路線 | 本專案 | 專注於 AI 代碼的自動化，功能較為複雜，適合需要高效能的團隊。 | 提供更豐富的功能選擇，但相對較難上手，適合有經驗的開發者。 |
+> | 遷移成本 | - | medium，因為需要重新學習新的操作流程。 | high，因為需要重新適應新的功能和操作方式。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要更高效的 AI 代碼自動化，並且能接受較高的 | 如果你需要更複雜的功能和設定，並且有能力處理更高的學習曲線。 |
 
 ## 成熟度評估
 
@@ -216,50 +225,49 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和娛樂用途，不建議用在生產環境中。
+> 適合個人試用或小型專案，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些平台上可能會遇到兼容性問題，特別是舊版操作系統。
-  - 解法：確保使用最新的操作系統版本。
-- **[HIGH]** 安裝過程中可能會遇到權限問題，特別是在 macOS 上。
-  - 解法：使用 sudo 安裝。
-- [MEDIUM] 應用啟動速度可能較慢，特別是在初次啟動時。
-  - 解法：耐心等待，後續啟動速度會加快。
+- **[HIGH]** 在 Linux 上安裝時，xdotool 可能會導致安裝失敗
+  - 解法：確保系統已更新並安裝必要的依賴
+- [MEDIUM] 使用過程中可能會出現性能瓶頸，特別是多用戶互動時
+  - 解法：限制同時互動的用戶數量
+- [MEDIUM] 社群活躍度低，問題解決速度慢
+  - 解法：尋找其他社群或論壇尋求幫助
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的開發者用於提升 AI 效率 | 非常適合 | 具備簡單的安裝和有趣的互動方式，適合小型團隊使用。 |
-| 大型企業的生產力工具 | 不適合 | 功能較為簡單，無法滿足大型企業的需求。 |
-| 教育機構用於展示 AI 互動 | 適合 | 幽默的設計能吸引學生的注意，適合教育用途。 |
-| 個人開發者用於實驗和娛樂 | 非常適合 | 提供了一個輕鬆有趣的方式來與 AI 互動，適合個人使用。 |
+| 小型團隊的 AI 互動工具 | 非常適合 | 簡單易用，能快速上手，適合小型團隊使用。 |
+| 個人開發者的實驗性專案 | 適合 | 能夠快速激勵 AI，提升開發效率。 |
+| 大型企業的核心系統 | 不適合 | 功能較為單一，無法滿足複雜需求。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~1 小時 |
+| 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 1 小時學習和 1 小時整合，得到輕鬆有趣的互動體驗，值得一試。
+> 花 2 小時學習，1 小時整合，得到簡單的 AI 互動工具，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：不需要高權限，僅存取用戶的本地環境，不會存取敏感資料。依賴鏈的信任程度高，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/GitFrog1111--OpenWhip");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -294,7 +302,7 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/GitFrog1111--OpenWhip");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -318,13 +326,13 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 227 |
+| Forks | 230 |
 | Open Issues | 38 |
 | Issue 解決率 | 5% (2 closed) |
-| 最後推送 | 2026-04-07 |
+| 最後推送 | 2026-04-14 |
 | 建立日期 | 2026-04-04 |
-| Repo 大小 | 562 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/GitFrog1111/badclaude) |
+| Repo 大小 | 590 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/GitFrog1111/OpenWhip) |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
@@ -333,45 +341,51 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "HTML" : 62
->     "JavaScript" : 38
+>     "HTML" : 59
+>     "JavaScript" : 41
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@GitFrog1111](https://github.com/GitFrog1111) | 10 |
+> | [@GitFrog1111](https://github.com/GitFrog1111) | 12 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，有一些功能請求和回饋。
-**連結**：[文件](https://github.com/GitFrog1111/badclaude#readme)
+**社群活躍度**：社群活躍度中等，近期有 10 天內的開發活動。
+**連結**：[文件](https://github.com/GitFrog1111/OpenWhip#readme)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-04 ~ 2026-04-07）
-> **活躍天數** 2 天 · **最新 commit** Exhibit A
+> [!abstract] 最近 10 次 commit（2026-04-04 ~ 2026-04-14）
+> **活躍天數** 3 天 · **最新 commit** Whipped
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#5](https://github.com/GitFrog1111/badclaude/issues/5) | Feature Request: Add Tom Scream Sound Effect | 42 | 3 |
-> | [#12](https://github.com/GitFrog1111/badclaude/issues/12) | Feature Request: MCP integration | 15 | 0 |
+> | [#5](https://github.com/GitFrog1111/OpenWhip/issues/5) | Feature Request: Add Tom Scream Sound Effect | 42 | 3 |
+> | [#12](https://github.com/GitFrog1111/OpenWhip/issues/12) | Feature Request: MCP integration | 15 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # badclaude
+> # OpenWhip
 > 
 > Sometimes claude code is going too shlow, and you must whip him into shape..
 > 
 > ## Install + run
 > 
 > ```bash
-> npm install -g badclaude
-> badclaude
+> npm install -g openwhip
+> openwhip
+> ```
+> 
+> windows and mac supported out of the box, but Linux is a special snowflake so you need to install `xdotool` for keyboard automation
+> 
+> ```bash
+> sudo apt install xdotool
 > ```
 > 
 > ## Controls
@@ -391,19 +405,19 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化]] · [[娛樂工具]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[開發工具]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[claude-code-best--claude-code|claude-code-best/claude-code]]
+相關專案：[[AgentSeal--codeburn|AgentSeal/codeburn]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]]
 
-[GitHub](https://github.com/GitFrog1111/badclaude)
+[GitHub](https://github.com/GitFrog1111/OpenWhip)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：娛樂工具）
+> [!note]- 直接競品（同子分類：CLI 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "娛樂工具" AND file.name != "GitFrog1111--badclaude"
+> WHERE subcategory = "CLI 工具" AND file.name != "GitFrog1111--OpenWhip"
 > SORT stars DESC
 > ```
 
@@ -411,7 +425,7 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "GitFrog1111--badclaude"
+> WHERE category = "開發工具" AND file.name != "GitFrog1111--OpenWhip"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -420,7 +434,7 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "HTML" AND file.name != "GitFrog1111--badclaude" AND status != "archived"
+> WHERE language = "HTML" AND file.name != "GitFrog1111--OpenWhip" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -429,15 +443,15 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W15" AND file.name != "GitFrog1111--badclaude"
+> WHERE week = "2026-W15" AND file.name != "GitFrog1111--OpenWhip"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化","娛樂工具"];
+> const concepts = ["CLI/TUI","自動化","開發工具"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "GitFrog1111--badclaude" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "GitFrog1111--OpenWhip" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -450,12 +464,12 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/GitFrog1111--OpenWhip");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "GitFrog1111--badclaude" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "GitFrog1111--OpenWhip" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -471,7 +485,7 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "GitFrog1111" AND file.name != "GitFrog1111--badclaude"
+> WHERE owner = "GitFrog1111" AND file.name != "GitFrog1111--OpenWhip"
 > SORT stars DESC
 > ```
 
@@ -479,7 +493,7 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/GitFrog1111--OpenWhip");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -496,7 +510,7 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/GitFrog1111--OpenWhip");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -529,7 +543,7 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/GitFrog1111--OpenWhip");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -553,7 +567,7 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/GitFrog1111--OpenWhip");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -590,7 +604,7 @@ badclaude 的核心技術基於 Electron 框架，這使得它能夠在多個操
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/GitFrog1111--badclaude");
+> const me = dv.page("Repos/GitFrog1111--OpenWhip");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
