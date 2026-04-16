@@ -7,9 +7,9 @@ language: Rust
 license: MIT
 description: "🪇 Minimal terminal spinners for Rust"
 homepage: "https://docs.rs/rattles"
-stars: 853
-stars_per_day: 213
-forks: 16
+stars: 867
+stars_per_day: 173
+forks: 17
 open_issues: 0
 created: 2026-04-10
 pushed_at: 2026-04-14
@@ -30,8 +30,8 @@ use_case: "提供簡潔的終端動畫旋轉器，讓 Rust 開發者能輕鬆增
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-18"
+appearances: 2
+next_review: "2026-04-23"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-15"
-star_history: "2026-04-15:853"
+star_history: "2026-04-15:853,2026-04-16:867"
 tags:
   - github
   - "category/cli_工具"
@@ -464,7 +464,7 @@ Rattles 的核心技術機制是基於 Rust 的標準庫和 crossterm，這使�
 
 相關概念：[[CLI/TUI]] · [[動畫]] · [[無標準庫]]
 
-相關專案：[[Narcooo--inkos|Narcooo/inkos]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[jackwener--opencli|jackwener/opencli]] · [[jackwener--twitter-cli|jackwener/twitter-cli]]
+相關專案：[[Narcooo--inkos|Narcooo/inkos]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[jackwener--opencli|jackwener/opencli]] · [[jackwener--twitter-cli|jackwener/twitter-cli]] · [[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[larksuite--cli|larksuite/cli]]
 
 [GitHub](https://github.com/vyfor/rattles) · [官方網站](https://docs.rs/rattles)
 
@@ -760,4 +760,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-16|2026-04-16]] — 再次上榜，867 stars
 - [[2026-04-15|2026-04-15]] — 首次收錄，853 stars

@@ -1009,10 +1009,10 @@
   },
   "yizhiyanhua-ai/fireworks-tech-graph": {
     "first_seen": "2026-04-13",
-    "last_seen": "2026-04-15",
-    "times_seen": 3,
+    "last_seen": "2026-04-16",
+    "times_seen": 4,
     "stars_first": 1580,
-    "stars_last": 2457
+    "stars_last": 2982
   },
   "mattmireles/gemma-tuner-multimodal": {
     "first_seen": "2026-04-13",
@@ -1030,10 +1030,10 @@
   },
   "QLHazyCoder/codex-oauth-automation-extension": {
     "first_seen": "2026-04-13",
-    "last_seen": "2026-04-15",
-    "times_seen": 3,
+    "last_seen": "2026-04-16",
+    "times_seen": 4,
     "stars_first": 905,
-    "stars_last": 1372
+    "stars_last": 1520
   },
   "phuryn/claude-usage": {
     "first_seen": "2026-04-13",
@@ -1065,24 +1065,24 @@
   },
   "joeynyc/hermes-hudui": {
     "first_seen": "2026-04-14",
-    "last_seen": "2026-04-15",
-    "times_seen": 2,
+    "last_seen": "2026-04-16",
+    "times_seen": 3,
     "stars_first": 833,
-    "stars_last": 881
+    "stars_last": 914
   },
   "AgentSeal/codeburn": {
     "first_seen": "2026-04-15",
-    "last_seen": "2026-04-15",
-    "times_seen": 1,
+    "last_seen": "2026-04-16",
+    "times_seen": 2,
     "stars_first": 897,
-    "stars_last": 897
+    "stars_last": 1789
   },
   "vyfor/rattles": {
     "first_seen": "2026-04-15",
-    "last_seen": "2026-04-15",
-    "times_seen": 1,
+    "last_seen": "2026-04-16",
+    "times_seen": 2,
     "stars_first": 853,
-    "stars_last": 853
+    "stars_last": 867
   },
   "hexiecs/talk-normal": {
     "first_seen": "2026-04-15",
@@ -1093,9 +1093,37 @@
   },
   "OpenMOSS/MOSS-TTS-Nano": {
     "first_seen": "2026-04-15",
-    "last_seen": "2026-04-15",
-    "times_seen": 1,
+    "last_seen": "2026-04-16",
+    "times_seen": 2,
     "stars_first": 753,
-    "stars_last": 753
+    "stars_last": 1028
+  },
+  "alchaincyf/darwin-skill": {
+    "first_seen": "2026-04-16",
+    "last_seen": "2026-04-16",
+    "times_seen": 1,
+    "stars_first": 816,
+    "stars_last": 816
+  },
+  "Mouseww/anything-analyzer": {
+    "first_seen": "2026-04-16",
+    "last_seen": "2026-04-16",
+    "times_seen": 1,
+    "stars_first": 798,
+    "stars_last": 798
+  },
+  "sterlingcrispin/nothing-ever-happens": {
+    "first_seen": "2026-04-16",
+    "last_seen": "2026-04-16",
+    "times_seen": 1,
+    "stars_first": 771,
+    "stars_last": 771
+  },
+  "whwangovo/pyre-code": {
+    "first_seen": "2026-04-16",
+    "last_seen": "2026-04-16",
+    "times_seen": 1,
+    "stars_first": 726,
+    "stars_last": 726
   }
 }
