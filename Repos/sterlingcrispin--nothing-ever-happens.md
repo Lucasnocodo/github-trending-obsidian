@@ -7,9 +7,9 @@ language: Python
 license: CC0-1.0
 description: "Polymarket bot that buys \"No\" on all non-sports markets"
 homepage: ""
-stars: 771
-stars_per_day: 257
-forks: 75
+stars: 799
+stars_per_day: 200
+forks: 83
 open_issues: 0
 created: 2026-04-12
 pushed_at: 2026-04-13
@@ -30,10 +30,10 @@ use_case: "自動在 Polymarket 上購買所有非體育市場的「否」選項
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-19"
+appearances: 2
+next_review: "2026-04-20"
 contributor_count: 1
-engagement: "low"
+engagement: "medium"
 issue_close_rate: -1
 repo_size_kb: 254
 readme_length: 3015
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-16"
-star_history: "2026-04-16:771"
+star_history: "2026-04-16:771,2026-04-17:799"
 tags:
   - github
   - "category/其他"
@@ -782,4 +782,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-17|2026-04-17]] — 再次上榜，799 stars
 - [[2026-04-16|2026-04-16]] — 首次收錄，771 stars

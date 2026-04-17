@@ -7,12 +7,12 @@ language: TypeScript
 license: N/A
 description: "利用 browser + CDP capture + AI analysis  傻瓜式生成 注册机 | 2API | 其他浏览器或应用行为 的协议分析文档"
 homepage: ""
-stars: 799
-stars_per_day: 266
-forks: 212
-open_issues: 4
+stars: 1042
+stars_per_day: 261
+forks: 258
+open_issues: 10
 created: 2026-04-12
-pushed_at: 2026-04-15
+pushed_at: 2026-04-16
 first_seen: 2026-04-16
 week: "2026-W16"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "傻瓜式生成注册机和协议分析文档，支持多种应用和
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-19"
+appearances: 2
+next_review: "2026-04-20"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 60
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-16"
-star_history: "2026-04-16:798,2026-04-16:799"
+star_history: "2026-04-16:798,2026-04-16:799,2026-04-17:1042"
 tags:
   - github
   - "category/開發工具"
@@ -933,4 +933,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-17|2026-04-17]] — 再次上榜，1.0k stars
 - [[2026-04-16|2026-04-16]] — 首次收錄，798 stars

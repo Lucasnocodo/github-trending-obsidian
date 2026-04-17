@@ -7,8 +7,8 @@ language: Rust
 license: MIT
 description: "🪇 Minimal terminal spinners for Rust"
 homepage: "https://docs.rs/rattles"
-stars: 867
-stars_per_day: 173
+stars: 879
+stars_per_day: 147
 forks: 17
 open_issues: 0
 created: 2026-04-10
@@ -30,8 +30,8 @@ use_case: "提供簡潔的終端動畫旋轉器，讓 Rust 開發者能輕鬆增
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-23"
+appearances: 3
+next_review: "2026-04-24"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-15"
-star_history: "2026-04-15:853,2026-04-16:867"
+star_history: "2026-04-15:853,2026-04-16:867,2026-04-17:879"
 tags:
   - github
   - "category/cli_工具"
@@ -760,5 +760,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-17|2026-04-17]] — 再次上榜，879 stars
 - [[2026-04-16|2026-04-16]] — 再次上榜，867 stars
 - [[2026-04-15|2026-04-15]] — 首次收錄，853 stars

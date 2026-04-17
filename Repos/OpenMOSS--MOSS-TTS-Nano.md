@@ -7,12 +7,12 @@ language: Python
 license: Apache-2.0
 description: "MOSS-TTS-Nano is an open-source multilingual tiny speech generation model from MOSI.AI and the OpenMOSS team. With only 0.1B parameters, it is designed for realtime speech generation, can run directly on CPU without a GPU, and keeps the deployment stack simple enough for local demos, web serving, and lightweight product integration."
 homepage: "https://openmoss.github.io/MOSS-TTS-Nano-Demo/"
-stars: 1033
+stars: 1239
 stars_per_day: 207
-forks: 102
-open_issues: 14
+forks: 139
+open_issues: 20
 created: 2026-04-10
-pushed_at: 2026-04-14
+pushed_at: 2026-04-16
 first_seen: 2026-04-15
 week: "2026-W16"
 month: "2026-04"
@@ -27,13 +27,13 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-15
 use_case: "提供即時語音生成的多語言小型模型，無需 GPU 即可運行。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-19"
+appearances: 3
+next_review: "2026-04-20"
 contributor_count: 2
-engagement: "low"
+engagement: "medium"
 issue_close_rate: 0
 repo_size_kb: 53922
 readme_length: 9477
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-15"
-star_history: "2026-04-15:753,2026-04-15:760,2026-04-16:1028,2026-04-16:1033"
+star_history: "2026-04-15:753,2026-04-15:760,2026-04-16:1028,2026-04-16:1033,2026-04-17:1239"
 tags:
   - github
   - "category/ai_ml"
@@ -849,5 +849,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-17|2026-04-17]] — 再次上榜，1.2k stars
 - [[2026-04-16|2026-04-16]] — 再次上榜，1.0k stars
 - [[2026-04-15|2026-04-15]] — 首次收錄，753 stars

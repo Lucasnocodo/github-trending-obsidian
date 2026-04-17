@@ -7,9 +7,9 @@ language: HTML
 license: N/A
 description: "达尔文.skill —— 一个让你的Skill无限进化的系统：评估→改进→测试→保留或回滚 | Autoresearch-inspired autonomous skill optimization for Claude Code. Evaluate, improve, test, keep or revert."
 homepage: ""
-stars: 819
-stars_per_day: 410
-forks: 100
+stars: 966
+stars_per_day: 322
+forks: 111
 open_issues: 2
 created: 2026-04-13
 pushed_at: 2026-04-14
@@ -30,8 +30,8 @@ use_case: "一個讓你的技能自動優化的系統，透過評估、改進、
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-19"
+appearances: 2
+next_review: "2026-04-20"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-16"
-star_history: "2026-04-16:816,2026-04-16:819"
+star_history: "2026-04-16:816,2026-04-16:819,2026-04-17:966"
 tags:
   - github
   - "category/開發工具"
@@ -822,4 +822,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-17|2026-04-17]] — 再次上榜，966 stars
 - [[2026-04-16|2026-04-16]] — 首次收錄，816 stars

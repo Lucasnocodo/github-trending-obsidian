@@ -1009,10 +1009,10 @@
   },
   "yizhiyanhua-ai/fireworks-tech-graph": {
     "first_seen": "2026-04-13",
-    "last_seen": "2026-04-16",
-    "times_seen": 4,
+    "last_seen": "2026-04-17",
+    "times_seen": 5,
     "stars_first": 1580,
-    "stars_last": 2982
+    "stars_last": 3374
   },
   "mattmireles/gemma-tuner-multimodal": {
     "first_seen": "2026-04-13",
@@ -1072,17 +1072,17 @@
   },
   "AgentSeal/codeburn": {
     "first_seen": "2026-04-15",
-    "last_seen": "2026-04-16",
-    "times_seen": 2,
+    "last_seen": "2026-04-17",
+    "times_seen": 3,
     "stars_first": 897,
-    "stars_last": 1789
+    "stars_last": 2283
   },
   "vyfor/rattles": {
     "first_seen": "2026-04-15",
-    "last_seen": "2026-04-16",
-    "times_seen": 2,
+    "last_seen": "2026-04-17",
+    "times_seen": 3,
     "stars_first": 853,
-    "stars_last": 867
+    "stars_last": 879
   },
   "hexiecs/talk-normal": {
     "first_seen": "2026-04-15",
@@ -1093,31 +1093,31 @@
   },
   "OpenMOSS/MOSS-TTS-Nano": {
     "first_seen": "2026-04-15",
-    "last_seen": "2026-04-16",
-    "times_seen": 2,
+    "last_seen": "2026-04-17",
+    "times_seen": 3,
     "stars_first": 753,
-    "stars_last": 1028
+    "stars_last": 1239
   },
   "alchaincyf/darwin-skill": {
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-16",
-    "times_seen": 1,
+    "last_seen": "2026-04-17",
+    "times_seen": 2,
     "stars_first": 816,
-    "stars_last": 816
+    "stars_last": 966
   },
   "Mouseww/anything-analyzer": {
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-16",
-    "times_seen": 1,
+    "last_seen": "2026-04-17",
+    "times_seen": 2,
     "stars_first": 798,
-    "stars_last": 798
+    "stars_last": 1042
   },
   "sterlingcrispin/nothing-ever-happens": {
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-16",
-    "times_seen": 1,
+    "last_seen": "2026-04-17",
+    "times_seen": 2,
     "stars_first": 771,
-    "stars_last": 771
+    "stars_last": 799
   },
   "whwangovo/pyre-code": {
     "first_seen": "2026-04-16",
@@ -1125,5 +1125,26 @@
     "times_seen": 1,
     "stars_first": 726,
     "stars_last": 726
+  },
+  "vercel-labs/wterm": {
+    "first_seen": "2026-04-17",
+    "last_seen": "2026-04-17",
+    "times_seen": 1,
+    "stars_first": 1043,
+    "stars_last": 1043
+  },
+  "sogonov/anubis": {
+    "first_seen": "2026-04-17",
+    "last_seen": "2026-04-17",
+    "times_seen": 1,
+    "stars_first": 784,
+    "stars_last": 784
+  },
+  "Nightmare-Eclipse/RedSun": {
+    "first_seen": "2026-04-17",
+    "last_seen": "2026-04-17",
+    "times_seen": 1,
+    "stars_first": 785,
+    "stars_last": 785
   }
 }
