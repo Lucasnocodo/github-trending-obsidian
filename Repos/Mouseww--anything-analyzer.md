@@ -7,18 +7,18 @@ language: TypeScript
 license: N/A
 description: "利用 browser + CDP capture + AI analysis  傻瓜式生成 注册机 | 2API | 其他浏览器或应用行为 的协议分析文档"
 homepage: ""
-stars: 1042
-stars_per_day: 261
+stars: 1048
+stars_per_day: 262
 forks: 258
-open_issues: 10
+open_issues: 9
 created: 2026-04-12
-pushed_at: 2026-04-16
+pushed_at: 2026-04-17
 first_seen: 2026-04-16
 week: "2026-W16"
 month: "2026-04"
 category: "開發工具"
-subcategory: "抓包工具"
-release_tag: "v3.0.0"
+subcategory: "協議分析"
+release_tag: "v3.1.0"
 install_complexity: "medium"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-16
-use_case: "傻瓜式生成注册机和协议分析文档，支持多种应用和浏览器的流量捕获与AI分析。"
+use_case: "傻瓜式生成注册机、API 和其他应用行为的协议分析文档。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 2
 next_review: "2026-04-20"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 60
-repo_size_kb: 544
-readme_length: 6719
+issue_close_rate: 44
+repo_size_kb: 559
+readme_length: 6764
 bus_factor: 1
-last_release_days: 2
+last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-16"
-star_history: "2026-04-16:798,2026-04-16:799,2026-04-17:1042"
+star_history: "2026-04-16:798,2026-04-16:799,2026-04-17:1042,2026-04-17:1048"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "anything-analyzer"
   - "Mouseww/anything-analyzer"
-  - "傻瓜式生成注册机和协议分析文档，支持多种应用和浏览器的流量捕获与AI分析。"
+  - "傻瓜式生成注册机、API 和其他应用行为的协议分析文档。"
 ---
 
 # anything-analyzer
 
-**799** stars · **266** stars/天 · 建立 3 天前 · TypeScript · 未標註授權
+**1.0k** stars · **262** stars/天 · 建立 4 天前 · TypeScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/Mouseww--anything-analyzer");
@@ -68,23 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `v3.0.0`
+`個人專案` `v3.1.0`
 
 > [!summary] 一句話摘要
-> 傻瓜式生成注册机和协议分析文档，支持多种应用和浏览器的流量捕获与AI分析。
+> 傻瓜式生成注册机、API 和其他应用行为的协议分析文档。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (266 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (262 stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要進行多場景流量分析的開發者和安全研究人員。
-> **一句話重點** 這個工具不僅能捕獲多種來源的流量，還能自動生成 AI 分析報告，顯著提高了開發和安全測試的效率。
+> **適合** 需要快速分析和逆向網路協議的開發者和安全工程師。
+> **一句話重點** 這個專案不僅提供抓包功能，還能自動生成分析報告，顯著提升了開發者的工作效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Mouseww--anything-analyzer");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "抓包工具" && p.file.name !== "Mouseww--anything-analyzer" && p.status !== "archived")
+>     .where(p => p.subcategory === "協議分析" && p.file.name !== "Mouseww--anything-analyzer" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,99 +95,117 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 抓包工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 協議分析 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到高效的流量分析工具，值得投資。
+> **成熟度** Stable (可用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，3 小時整合，能夠快速獲得 API 信息，值得採用。
 
 > [!abstract] 核心創新
-> 全場景抓包 + AI 自動分析，實現了多種來源流量的統一捕獲與分析。
+> 提供全場景抓包和 AI 智能分析的集成解決方案。
 
 ## 專案簡介
 
-Anything Analyzer 是一款全场景抓包工具，支持通过内嵌浏览器和 MITM 代理捕获 HTTP(S) 流量，並利用 AI 進行自動分析。使用者只需簡單的設定，即可捕獲來自各種來源的請求，並在同一會話中進行統一分析。核心功能包括雙通道捕獲，支持從內嵌瀏覽器和外部應用（如 Postman、curl、Python 腳本等）捕獲流量，並自動生成協議逆向和安全審計報告。技術上，專案使用 Electron 框架，搭配 React 和 TypeScript，並內建 HTTPS 中間人代理，實現高效的 TLS 解密和請求捕獲。與傳統工具相比，Anything Analyzer 不僅能捕獲瀏覽器流量，還能分析桌面應用和移動端流量，這在功能覆蓋範圍上具有明顯優勢。
+Anything Analyzer 是一款集成浏览器和 AI 分析的全场景抓包工具，旨在简化网络协议的逆向分析。用户可以通过内嵌浏览器直接操作网页，或使用 MITM 代理抓取桌面应用、终端命令和移动设备的流量。抓取的请求会统一汇入一个会话，AI 将对其进行智能分析，生成 API 文档、鉴权流程和安全审计报告。核心功能包括两阶段分析、支持多种流量来源和实时流式输出。使用者只需配置 LLM API Key，创建会话并开始抓包，AI 分析便可自动进行。
 
-使用者可以通過簡單的 CLI 指令設置代理，並在捕獲後進行 AI 分析，這使得整個過程更加高效和自動化。實際使用中，該工具能夠處理大量請求，並且支持多種分析模式，如 API 逆向和性能分析。社群活躍度良好，開發者定期更新，解決率達到 60%。整體來看，這是一款適合需要進行多場景流量分析的開發者和安全研究人員的工具。
+该工具支持多种平台，包括 Windows、macOS 和 Linux，且具有良好的用户界面和操作体验。其技术架构基于 Electron、React 和 TypeScript，使用 Chrome DevTools Protocol 进行抓包，依赖于内置的 MITM 代理进行 HTTPS 流量捕获。与传统工具相比，Anything Analyzer 通过集成多种抓包方式，消除了手动分析的繁琐，适合需要快速获取 API 信息和进行安全审计的开发者。尽管如此，使用者需注意其对网络环境的依赖和可能的 SSL 证书问题。该项目目前处于稳定阶段，适合小型团队和个人开发者使用，未来可能会进一步扩展 AI 分析能力和支持更多协议。
 
 **技術棧**：`Electron 35` · `React 19` · `TypeScript 5.7.0` · `better-sqlite3`
 
 ## 重點功能
 
-- 雙通道捕獲 — 同時支持內嵌瀏覽器和外部應用的 HTTP(S) 流量捕獲。
-- 一鍵 CA 证书管理 — 自動生成和管理根 CA，支持跨平台安裝。
-- 系統代理集成 — 一鍵設為系統代理，簡化配置過程。
-- 按域名簽發子證書 — 提高 TLS 解密性能，支持高效的請求處理。
-- AI 智能分析 — 提供多種分析模式，自動生成協議逆向和安全審計報告。
+- 全場景抓包 — 支持內嵌瀏覽器、MITM 代理等多種流量來源。
+- AI 智能分析 — 提供兩階段分析，能自動識別 API 和安全漏洞。
+- MCP 生態集成 — 支持與外部 AI Agent 的連接，擴展分析能力。
+- 多平台支持 — 可在 Windows、macOS 和 Linux 上運行。
+- 實時流式輸出 — 分析報告可即時顯示，支持多輪追問。
 
 ## 快速開始
 
-1. 下載安裝包
+1. 下載並安裝應用
 ```bash
 從 Releases 下載對應平台的安裝包
 ```
-2. 安裝 CA 证书
+2. 配置 LLM API
 ```bash
-Settings → MITM 代理 → 安裝 CA 证书
+Settings → LLM，填入 API Key
 ```
-3. 啟用代理
+3. 新建 Session
 ```bash
-設置系統代理為 http://127.0.0.1:8888
+輸入名稱和目標 URL，然後點擊 Start Capture
+```
+4. 進行抓包
+```bash
+在內嵌瀏覽器中操作網站
+```
+5. 分析數據
+```bash
+停止捕獲後點擊 Analyze，選擇分析模式
+```
+
+## 程式碼範例
+
+```ts
+{
+  "前置條件": "已安裝 CA 证书并启用 MITM 代理",
+  "指令": "curl -x http://127.0.0.1:8888 https://api.example.com/data",
+  "預期輸出": "返回 API 的响应数据"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 799 stars（266/天），forks 212（26.5%），顯示出強勁的增長潛力。作者 Mouseww 在開源社群中有一定的影響力，並且這個工具解決了傳統抓包工具無法同時捕獲多種來源流量的痛點。過去，開發者通常需要多個工具來完成相同的任務，這導致了效率低下。最近的社交媒體討論和技術論壇的關注也推動了這個專案的曝光度。高達 26.5% 的 forks/stars 比率顯示出許多開發者正在積極修改和使用這個工具，這意味著它在實際應用中獲得了良好的反饋。
+> 建立 4 天內累積 1048 stars（262/天），forks 258（24.6%），顯示出相對活躍的社群參與。作者 Mouseww 之前有開發類似工具，這次的專案解決了傳統抓包工具各自為政的痛點，提供了一個全方位的解決方案。近期的推廣活動和社群討論也可能促進了這個專案的曝光率。高達 24.6% 的 forks/stars 比率顯示許多使用者對此工具進行了實際修改或擴展，這是社群活躍的良好指標。
 
 ## 適合誰使用
 
-**目標受眾**：需要進行多場景流量分析的開發者和安全研究人員。
+**目標受眾**：需要快速分析和逆向網路協議的開發者和安全工程師。
 
 > [!example] 使用場景
-> - 安全研究員用它來捕獲和分析移動應用的 HTTP 流量，因為可以快速識別潛在的安全漏洞和 API 鑑權流程。
-> - 後端開發者用它來逆向網站 API，因為能夠自動生成 API 文檔和 Python 代碼，節省了大量手動分析的時間。
-> - 測試工程師用它來調試 CLI 工具的 HTTP 請求，因為可以輕鬆捕獲請求和響應，並進行詳細的性能分析。
+> - 安全工程師用它來分析網站 API 的安全性，因為它能自動生成 API 文檔和鑑權流程，節省了手動分析的時間。
+> - 後端開發者用它來逆向移動應用的隱藏 API，因為它集成了多種抓包方式，能快速捕獲和分析流量。
+> - 測試工程師用它來進行安全審計，因為它能檢測 Token 泄露和 CSRF 漏洞，並提供詳細的分析報告。
 
 ## 架構分析
 
-Anything Analyzer 採用 Electron 框架，結合 React 和 TypeScript，實現跨平台的桌面應用。架構中包含內置的 MITM 代理，能夠捕獲系統級的 HTTP(S) 流量，並通過 Chrome DevTools Protocol (CDP) 進行內嵌瀏覽器的請求捕獲。這種設計使得用戶能夠在同一會話中分析來自不同來源的請求，降低了使用門檻。選擇 Electron 作為開發框架的好處在於其跨平台特性，但這也意味著應用的體積較大，啟動速度可能受到影響。整體架構的擴展性良好，能夠支持未來的功能增強和性能優化。
+專案採用 Electron 作為桌面應用框架，利用 Chrome DevTools Protocol 進行抓包，並通過內置的 MITM 代理捕獲 HTTPS 流量。架構設計上，抓包引擎和 AI 分析模組分開，便於擴展和維護。資料流經過內嵌瀏覽器和 MITM 代理，最終統一匯入同一會話進行分析。選擇 Electron 的原因在於其跨平台特性，代價是可能會增加應用的體積和啟動時間。擴展性方面，未來可通過 MCP 協議進一步擴展 AI 分析能力。
 
 ## 技術深入分析
 
-Anything Analyzer 的核心技術機制在於其雙通道捕獲能力，通過 CDP 和 MITM 代理實現對 HTTP(S) 流量的全面捕獲。這使得用戶能夠在同一會話中分析來自瀏覽器和外部應用的請求，並利用 AI 進行智能分析。效能方面，該工具能夠處理大量請求，並且支持多種分析模式，如 API 逆向和性能分析。選擇 Electron 作為開發框架的好處在於其跨平台特性，但這也意味著應用的體積較大，啟動速度可能受到影響。技術風險方面，MITM 代理的配置可能在某些環境下遇到問題，並且不支持 WebSocket 流量的解密。整合方面，該工具能夠輕鬆與現有的開發工具鏈相容，並支持多種 CI/CD 流程的集成。
+Anything Analyzer 的核心技術在於其全場景抓包能力，通過內嵌的瀏覽器和 MITM 代理，能夠捕獲各類應用的網絡流量。其 AI 分析模組則基於多種分析模式，能夠自動識別和解釋請求，並生成詳細的報告。效能方面，該工具能夠處理大部分常見的 HTTP 請求，但在高流量情況下可能會出現延遲。選擇 Electron 作為框架使得應用具有良好的跨平台特性，但也可能導致應用體積較大。技術風險方面，依賴於外部 API 的穩定性，若 API 發生變更，可能會影響分析結果。整合方面，與主流工具鏈的兼容性良好，能夠輕鬆嵌入到現有的開發流程中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，包含詳細的使用說明和範例；安裝過程相對順暢，但需要管理員權限；有良好的快速入門指南，文件支持多語言。
+> README 文件清晰，提供了詳細的安裝和使用指導。安裝過程順暢，但需要注意 CA 证书的安裝。文檔目前僅提供中文，可能對非中文使用者造成障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多種來源的流量捕獲，功能覆蓋範圍廣。
-> - AI 分析報告自動生成，節省手動分析時間。
-> - 跨平台支持，適用於 Windows、macOS 和 Linux。
+> - 集成多種抓包方式，支持全場景應用。
+> - AI 分析能力強大，能自動生成報告。
+> - 跨平台支持，適合多種操作系統。
 
 > [!danger] 缺點
-> - 安裝 CA 证书需要管理員權限，可能對新手不友好。
-> - 在某些環境下，MITM 代理的配置可能較為複雜。
-> - 不支持 WebSocket 流量的解密，功能有所限制。
+> - 需要安裝 CA 证书，初次配置較繁瑣。
+> - 在某些網路環境下可能會遇到 SSL 問題。
+> - 對於大型流量的處理可能會有性能瓶頸。
 
 > [!warning] 注意事項
-> - 不支持捕獲 WebSocket 流量的解密。
-> - 在某些環境下，安裝 CA 证书可能需要管理員權限。
-> - 不支持非法獲取或修改計算機數據的功能。
+> - 不支持非法获取或修改计算机数据的功能。
+> - 需要安装 CA 证书才能抓取 HTTPS 流量。
+> - 在某些网络环境下可能会遇到 SSL 证书问题。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 專注於 HTTP 流量的深度分析，但不支持同時捕獲多種來源的流量。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | Codeburn 提供了強大的 API 逆向功能，但缺乏內嵌瀏覽器的支持。 |
-| Fiddler | Fiddler 是一個成熟的抓包工具，但無法自動生成 AI 分析報告。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的抓包功能，但主要針對特定協議，適合需要深入協議分析的用戶。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於自動化測試和安全審計，適合需要集成到 CI/CD 流程的團隊。 |
+| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 針對數據同步和傳輸的工具，適合需要高效數據處理的用戶。 |
 
 ## 替代方案決策
 
@@ -195,47 +213,47 @@ Anything Analyzer 的核心技術機制在於其雙通道捕獲能力，通過 C
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Fiddler | Fiddler 使用代理模式捕獲 HTTP 流量，但不支持 AI 分析功能。 | 如果需要一個成熟的抓包工具，且不需要自動分析功能，可以選擇 Fiddler。 | medium，因為需要重新學習 Fiddler 的使用方式。 |
-| Charles | Charles 也使用 MITM 代理，但不支持內嵌瀏覽器的流量捕獲。 | 如果主要需求是抓取 HTTP 流量，而不需要多來源的統一分析，可以選擇 Charles。 | low，因為界面和操作方式相似。 |
+| Fiddler | Fiddler 主要針對 HTTP/HTTPS 流量進行抓包，而 Anything Analyzer 則支持多種流量來源，包括桌面應用和移動設備。 | 如果你的團隊已經在使用 Fiddler 進行 HTTP 抓包，並且不需要多場景支持，則可選擇它。 | medium，因為需要重新學習界面和功能。 |
+| Wireshark | Wireshark 是一款功能強大的網絡分析工具，但主要針對低層協議，對於高層應用協議的分析不如 Anything Analyzer 方便。 | 如果需要深入分析網絡層的數據包，Wireshark 是更合適的選擇。 | high，因為需要掌握不同的分析方法和工具。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **anything-analyzer** | **Fiddler** | **Charles** |
+> | 維度 | **anything-analyzer** | **Fiddler** | **Wireshark** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Fiddler 使用代理模式捕獲 HTTP 流量，但不支持 AI 分析功能。 | Charles 也使用 MITM 代理，但不支持內嵌瀏覽器的流量捕獲。 |
-> | 遷移成本 | - | medium，因為需要重新學習 Fiddler 的使用方式。 | low，因為界面和操作方式相似。 |
-> | 適用場景 | 主要場景 | 如果需要一個成熟的抓包工具，且不需要自動分析功能，可以選擇  | 如果主要需求是抓取 HTTP 流量，而不需要多來源的統一分析 |
+> | 技術路線 | 本專案 | Fiddler 主要針對 HTTP/HTTPS 流量進行抓包，而 Anything Analyzer 則支持多種流量來源，包括桌面應用和移動設備。 | Wireshark 是一款功能強大的網絡分析工具，但主要針對低層協議，對於高層應用協議的分析不如 Anything Analyzer 方便。 |
+> | 遷移成本 | - | medium，因為需要重新學習界面和功能。 | high，因為需要掌握不同的分析方法和工具。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Fiddler 進行 HTTP 抓包 | 如果需要深入分析網絡層的數據包，Wireshark 是更合適 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| 開發階段 | Stable |
+| 生產環境就緒 | Yes |
+| Breaking Change 風險 | low |
 
 > [!tip] 採用建議
-> 適合進行開發測試，但不建議用於生產環境的核心路徑上。
+> 適合小型團隊和個人開發者使用，能夠有效提升開發效率。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些環境下，安裝 CA 证书可能會失敗
-  - 解法：確保使用管理員權限進行安裝
-- [MEDIUM] 在 macOS 上可能會遇到意外退出的情況
-  - 解法：檢查系統日誌以獲取詳細錯誤信息
-- **[HIGH]** MITM 代理配置不當可能導致流量無法捕獲
-  - 解法：確保代理設置正確，並重啟應用
+- **[HIGH]** 首次安裝需要管理員權限，可能會造成安裝失敗
+  - 解法：確保以管理員身份運行安裝程序
+- [MEDIUM] 在某些網絡環境下可能會遇到 SSL 证书問題
+  - 解法：檢查網絡設置或使用其他網絡環境
+- [MEDIUM] 抓包過程中可能會因為流量過大導致性能下降
+  - 解法：適當調整抓包範圍或過濾不必要的請求
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠快速捕獲和分析 API 流量，節省開發時間。 |
-| 大型企業的安全測試團隊 | 適合 | 支持多場景流量分析，能夠滿足複雜的測試需求。 |
-| 個人開發者的簡單專案 | 普通 | 功能強大但可能對新手有些複雜。 |
-| 需要高效抓包的遊戲開發者 | 不適合 | 不支持 WebSocket 流量的解密，可能無法滿足需求。 |
+| 小型開發團隊進行 API 逆向 | 非常適合 | 集成多種抓包方式，能快速獲取 API 信息。 |
+| 安全測試團隊進行漏洞掃描 | 適合 | 提供安全審計功能，能檢測常見漏洞。 |
+| 大型企業進行網絡流量分析 | 普通 | 在高流量情況下可能會出現性能瓶頸。 |
+| 個人開發者進行小型專案測試 | 非常適合 | 簡單易用，能快速上手。 |
 
 ## 採用成本分析
 
@@ -243,16 +261,16 @@ Anything Analyzer 的核心技術機制在於其雙通道捕獲能力，通過 C
 | --- | --- |
 | 學習時間 | ~5 小時 |
 | 整合時間 | ~3 小時 |
-| 維護負擔 | medium |
-| 綁定風險 | medium |
+| 維護負擔 | low |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到高效的流量分析工具，值得投資。
+> 花 5 小時學習，3 小時整合，能夠快速獲得 API 信息，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，僅在本地捕獲流量，不存取敏感資料。依賴鏈中無已知的供應鏈風險，使用時相對安全。
+> 低風險：該工具不需要高權限運行，且不會存取敏感資料。依賴的第三方庫需定期更新以避免安全漏洞。
 
 ## 健康度儀表板
 
@@ -317,12 +335,12 @@ Anything Analyzer 的核心技術機制在於其雙通道捕獲能力，通過 C
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 212 |
-| Open Issues | 4 |
-| Issue 解決率 | 60% (6 closed) |
-| 最後推送 | 2026-04-15 |
+| Forks | 258 |
+| Open Issues | 9 |
+| Issue 解決率 | 44% (7 closed) |
+| 最後推送 | 2026-04-17 |
 | 建立日期 | 2026-04-12 |
-| Repo 大小 | 544 KB |
+| Repo 大小 | 559 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Mouseww/anything-analyzer) |
 
 > [!info]- 主要依賴
@@ -334,64 +352,63 @@ Anything Analyzer 的核心技術機制在於其雙通道捕獲能力，通過 C
 > | --- | --- |
 > | [@Mouseww](https://github.com/Mouseww) | 3 |
 
-**最新版本**：v3.0.0 (2026-04-14)
+**最新版本**：v3.1.0 (2026-04-16)
 
 > [!info]- Release Notes
-> # Anything Analyzer v3.0.0
+> # Anything Analyzer v3.1.0
 > 
-> ## MITM 代理抓包 — 突破浏览器边界
+> ## 新功能：暂停/恢复抓包
 > 
-> v3.0.0 最大的变化：**新增内置 HTTPS 中间人代理**，支持捕获系统级/外部应用的 HTTP(S) 流量。现在你不仅可以分析内嵌浏览器里的请求，还可以抓取 Postman、curl、Python 脚本、移动端 App 等任何 HTTP 客户端的流量，统一送入 AI 分析。
+> - **Pause → Resume 切换** — 点击 Pause 暂停抓包后，按钮自动变为 Resume，再次点击即可恢复抓包，无需重新开始会话
+> - **MCP 工具支持** — 新增 `resume_capture` MCP tool，外部 AI Agent 可通过 MCP 控制暂停/恢复
 > 
-> ### 核心特性
+> ## 改进：LLM 连接错误诊断
 > 
-> - **双通道捕获** — 浏览器内通过 CDP 抓包 + 外部应用通过 MITM 代理抓包，数据统一汇入同一会话
-> - **一键 CA 证书管理** — 自动生成根 CA，支持安装/卸载/重新生成/导出，跨平台支持（Windows/macOS/Linux）
-> - **系统代理集成** — 一键设为系统代理，无需手动配置
-> - **纯代理模式** — 创建 Session 时不填 URL，专注捕获外部应用流量
-> - **按域名签发子证书** — LRU 缓存，高性能 TLS 解密
-> - **请求来源标记** — 请求列表中区分「CDP」和「代理」来源
+> 之前点击分析失败时只显示 `fetch failed`，用户无法判断原因。现在会根据错误类型给出具体的中文诊断信息：
 > 
-> ### 使用方式
-> 
-> 1. Settings → MITM 代理 → 安装 CA 证书 → 启用代理
-> 2. 开启「设为系统代理」或手动指定 `http://127.0.0.1:8888`
-> 3. 正常操作目标应用，所有 HTTP(S) 请求自动捕获
-> 4. 停止捕获 → AI 分析，与浏览器抓包数据统一处理
-> 
-> ## 其他改进
-> 
-> - **Settings UI 重构** — 分模块组件化（通用 / LLM / 代理 / MCP Server / MITM 代理），体验更清晰
-> - **Domain 过滤** — 请求列表支持按域名分组过滤 + 部分匹配搜索
-> - **数据库迁移** — 新增 `source` 字段区分请求来源（CDP vs 代理）
-> - **多项 Bug 修复** — 存储快照捕获、LLM 请求体特殊字符处理等
+> | 错误场景 | 提示信息 |
+> |---------|---------|
+> | API 地址写错 | DNS 解析失败：无法解析 xxx。请检查 API 地址拼写是否正确 |
+> | 本地中转服务未启动 | 连接被拒绝：xxx 未在监听。请确认该服务已启动 |
+> | 网络不通 / 被墙 | 网络请求失败：无法连接到 xxx。常见原因：API 地址错误、需科学上网、本地服务未启动 |
+> | 请求超时 | 连接超时：xxx 在 120 秒内未响应 |
+> | SSL 证书问题 | SSL 证书错误：无法与 xxx 建立安全连接 |
+> | 连接被重置 | 连接被重置：可能是代理不稳定或 API 限流 |
 > 
 > ## 下载
+> 
+> | 平台 | 文件 |
+> |------|------|
+> | Windows | `Anything-Analyzer-Setup-3.1.0.exe` |
+> | macOS (Apple Silicon) | `Anything-Analyzer-3.1.0-arm64.dmg` |
+> | macOS (Intel) | `Anything-Analyzer-3.1.0-x64.dmg` |
+> | Linux | `Anything-Analyzer-3.1.0.AppImage` |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新，解決率達到 60%。
+**社群活躍度**：社群活躍，近期有多次更新和討論。
 **連結**：[文件](https://github.com/Mouseww/anything-analyzer)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-14 ~ 2026-04-15）
-> **活躍天數** 2 天 · **最新 commit** docs: 重写 README，突出全场景抓包能力
+> [!abstract] 最近 10 次 commit（2026-04-14 ~ 2026-04-17）
+> **活躍天數** 4 天 · **最新 commit** Merge pull request #13 from furkankoykiran/docs/readme-english
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#10](https://github.com/Mouseww/anything-analyzer/issues/10) | 功能请求:过反爬虫 | 0 | 0 |
-> | [#9](https://github.com/Mouseww/anything-analyzer/issues/9) | 功能请求：在点击pause后，这个按钮可以切换为绿色的start按钮，启动抓包 | 0 | 1 |
-> | [#7](https://github.com/Mouseww/anything-analyzer/issues/7) | mac环境下正常退出弹意外退出 | 0 | 2 |
-> | [#4](https://github.com/Mouseww/anything-analyzer/issues/4) | mac 下dmg后安装无法打开 | 0 | 2 |
+> | [#16](https://github.com/Mouseww/anything-analyzer/issues/16) | 窗口大小无法托业大小，浏览器的窗口。上下拖曳大小。 | 0 | 2 |
+> | [#15](https://github.com/Mouseww/anything-analyzer/issues/15) | 请问能支持对一些电商平台注册账号的手机验证码协议进行分析吗？ | 0 | 1 |
+> | [#12](https://github.com/Mouseww/anything-analyzer/issues/12) | Add English README for global audience | 0 | 2 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
 > # Anything Analyzer
+> 
+> [简体中文](README.md) | [English](README.en.md)
 > 
 > > **网页、桌面应用、终端命令、Python 脚本、手机 App —— 不管流量从哪来，抓到就能让 AI 自动逆向分析。**
 > 
@@ -635,19 +652,19 @@ Anything Analyzer 的核心技術機制在於其雙通道捕獲能力，通過 C
 
 ## 延伸閱讀
 
-相關概念：[[MITM 代理]] · [[API 逆向]] · [[安全審計]]
+相關概念：[[MCP Protocol]] · [[自動化測試]] · [[API 設計]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]]
 
 [GitHub](https://github.com/Mouseww/anything-analyzer)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：抓包工具）
+> [!note]- 直接競品（同子分類：協議分析）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "抓包工具" AND file.name != "Mouseww--anything-analyzer"
+> WHERE subcategory = "協議分析" AND file.name != "Mouseww--anything-analyzer"
 > SORT stars DESC
 > ```
 
@@ -679,7 +696,7 @@ Anything Analyzer 的核心技術機制在於其雙通道捕獲能力，通過 C
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["MITM 代理","API 逆向","安全審計"];
+> const concepts = ["MCP Protocol","自動化測試","API 設計"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Mouseww--anything-analyzer" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

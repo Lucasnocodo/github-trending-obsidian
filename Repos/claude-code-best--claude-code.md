@@ -7,26 +7,26 @@ language: TypeScript
 license: N/A
 description: "原汁原昧 Claude Code 可运行,可构建, 可调试版; Typescript 类型全修复; 企业级可靠性; 安全无毒, lock 文件保真, 可直接 bun i; bun run dev 启动"
 homepage: "https://ccb.agent-aura.top/"
-stars: 15939
-stars_per_day: 1063
-forks: 15074
-open_issues: 20
+stars: 16067
+stars_per_day: 1004
+forks: 15130
+open_issues: 14
 created: 2026-03-31
-pushed_at: 2026-04-15
+pushed_at: 2026-04-17
 first_seen: 2026-04-02
 week: "2026-W14"
 month: "2026-04"
 category: "開發工具"
 subcategory: "CLI 工具"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-02
-use_case: "提供一個可運行、可構建、可調試的 Claude Code CLI 工具，具備企業級可靠性。"
+use_case: "提供一個可運行、可構建、可調試的 Claude Code 版本，並修復所有 TypeScript 類型。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,28 +34,29 @@ appearances: 6
 next_review: "2026-04-10"
 contributor_count: 5
 engagement: "high"
-issue_close_rate: 86
-repo_size_kb: 69815
-readme_length: 4892
+issue_close_rate: 90
+repo_size_kb: 66612
+readme_length: 5008
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-02"
-star_history: "2026-04-02:7790,2026-04-02:7914,2026-04-03:10736,2026-04-03:10850,2026-04-04:13023,2026-04-04:13026,2026-04-05:13577,2026-04-05:13580,2026-04-06:13897,2026-04-06:13908,2026-04-07:14198,2026-04-07:14224,2026-04-08:14619,2026-04-09:14877,2026-04-10:15129,2026-04-11:15296,2026-04-12:15415,2026-04-13:15527,2026-04-14:15678,2026-04-15:15818,2026-04-16:15939"
+star_history: "2026-04-02:7790,2026-04-02:7914,2026-04-03:10736,2026-04-03:10850,2026-04-04:13023,2026-04-04:13026,2026-04-05:13577,2026-04-05:13580,2026-04-06:13897,2026-04-06:13908,2026-04-07:14198,2026-04-07:14224,2026-04-08:14619,2026-04-09:14877,2026-04-10:15129,2026-04-11:15296,2026-04-12:15415,2026-04-13:15527,2026-04-14:15678,2026-04-15:15818,2026-04-16:15939,2026-04-17:16067"
 tags:
   - github
   - "category/開發工具"
   - "lang/typescript"
+  - easy_install
 aliases:
   - "claude-code"
   - "claude-code-best/claude-code"
-  - "提供一個可運行、可構建、可調試的 Claude Code CLI 工具，具備企業級可靠性。"
+  - "提供一個可運行、可構建、可調試的 Claude Code 版本，並修復所有 TypeScript 類型。"
 ---
 
 # claude-code
 
-**15.9k** stars · **1.1k** stars/天 · 建立 15 天前 · TypeScript · 未標註授權
+**16.1k** stars · **1.0k** stars/天 · 建立 16 天前 · TypeScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/claude-code-best--claude-code");
@@ -68,14 +69,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
+`easy-install`
+
 > [!summary] 一句話摘要
-> 提供一個可運行、可構建、可調試的 Claude Code CLI 工具，具備企業級可靠性。
+> 提供一個可運行、可構建、可調試的 Claude Code 版本，並修復所有 TypeScript 類型。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Viral (1.1k stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Viral (1.0k stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** High
-> **適合** 需要高效且安全的 AI 開發環境的企業開發團隊。
-> **一句話重點** Claude Code Best 是一個強大的 CLI 工具，專注於安全性和多實例協作，適合需要高效開發環境的團隊。
+> **適合** 需要高可靠性和靈活性的開發團隊，尤其是已經在使用 Bun 的開發者。
+> **一句話重點** 這個專案不僅是對 Claude Code 的復刻，更是對企業級 CLI 工具的一次探索。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -98,104 +101,103 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、10 小時整合，得到高效的開發環境，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，3 小時整合，得到高可靠性的 CLI 工具，值得考慮。
 
 > [!abstract] 核心創新
-> 提供了安全無毒的企業級可靠性，並支援多實例協作。
+> 支持多實例協作和自定義模型供應商的企業級 CLI 工具。
 
 ## 專案簡介
 
-Claude Code Best 是一個反向工程的 CLI 工具，旨在重現 Anthropic 的 Claude Code 功能。用戶可以透過 `ccb` 指令啟動 CLI，並利用其強大的多實例協作和自定義模型功能，實現高效的開發體驗。核心機制包括使用 Pipe IPC 技術進行多實例間的自動編排和通訊，並支援 Docker 自托管，讓用戶能夠在本地環境中輕鬆部署。這個工具的賣點在於其安全性和可靠性，確保 lock 文件的完整性，並且可以直接使用 `bun i` 安裝依賴，`bun run dev` 啟動開發環境。技術上，它使用 TypeScript 和 Node.js，並依賴於多個 Anthropic 的 SDK，這使得它在功能上能夠與 OpenAI 和其他平台兼容。
+Claude Code Best（CCB）是對 Anthropic Claude Code CLI 工具的反向工程，旨在復現其大部分功能和工程能力。用戶可以透過簡單的命令 `bun i -g claude-code-best` 安裝，並使用 `ccb` 或 `ccb-bun` 命令啟動。這個工具的賣點在於其企業級的可靠性和安全性，並且支持多實例協作和自定義模型供應商。技術上，CCB 使用了 Bun 作為執行環境，並依賴多個 npm 套件來實現其功能，這使得它在性能上具備優勢。與其他 CLI 工具相比，如 OpenAI 的 CLI，CCB 提供了更高的自定義性和靈活性，特別是在支持多種 API 的兼容性方面。使用者可以在 Docker 中自托管，並利用內置的網頁搜索工具進行信息檢索。
 
-與其他 CLI 工具相比，如 OpenAI 的 CLI，Claude Code Best 提供了更靈活的多實例協作功能，並且在安全性上有更高的保障。使用者在處理大型專案時，能夠利用其自動整理記憶的功能，提升開發效率。雖然目前仍在活躍開發中，但社群的活躍度和問題解決率相對較高，顯示出良好的支持。這個專案適合需要高效開發環境的團隊，尤其是對安全性有高要求的企業。未來六個月內，預期會有更多功能的加入，特別是在自定義模型和遠端控制方面。
+CCB 也具備強大的錯誤追蹤和功能開關管理，這對於企業級應用尤為重要。雖然目前仍在活躍開發中，但其社群活躍度高，問題解決率達到 90%。未來可能會進一步模組化，提升擴展性。適合需要高可靠性和靈活性的開發團隊，尤其是那些已經在使用 Bun 的開發者。對於小型專案或不需要高自定義的使用者，可能會覺得這個工具的學習曲線稍陡。
 
-**技術棧**：`TypeScript` · `Node.js` · `Docker`
+**技術棧**：`Bun >= 1.3.11` · `TypeScript` · `Node.js`
 
 ## 重點功能
 
-- 多實例協作 — 使用 Pipe IPC 技術實現同機和 LAN 跨機器的自動編排與通訊。
-- Docker 自托管 — 提供私有部署選項，並支援 Web UI 管理。
-- 自動記憶整理 — 利用 `/dream` 指令自動整理和優化記憶文件。
-- 內置網頁搜索 — 具備內置的網頁搜索工具，方便開發者查詢資料。
-- 自定義模型供應商 — 支援 OpenAI、Anthropic、Gemini 等多種模型供應商的整合。
+- 多實例協作 — 支持同機和 LAN 跨機器的零配置發現與通訊。
+- 自定義模型供應商 — 兼容 OpenAI、Anthropic、Gemini 等多種模型。
+- 企業級錯誤追蹤 — 使用 Sentry 進行錯誤監控和追蹤。
+- 網頁搜索工具 — 內置的搜索功能可快速獲取信息。
+- Docker 自托管 — 支持在 Docker 環境中自我部署，方便管理。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 全局安裝 CCB
 ```bash
-bun i
+bun i -g claude-code-best
 ```
-2. 啟動開發環境
-```bash
-bun run dev
-```
-3. 運行 CLI 工具
+2. 啟動 CCB
 ```bash
 ccb
+```
+3. 在開發模式下運行
+```bash
+bun run dev
 ```
 
 ## 程式碼範例
 
 ```ts
 {
-  "前置條件": "已安裝 bun 和相關依賴",
+  "前置條件": "需要安裝 Bun 1.3.11 或以上版本。",
   "指令": "bun run dev",
-  "預期輸出": "啟動開發環境，顯示 CLI 工具的使用說明"
+  "預期輸出": "顯示版本號 888，表示啟動成功。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 15 天內累積 15939 stars（1063/天），forks 15074（94.6%），這顯示出極高的社群參與度。主要貢獻者來自於開源社群，過去有多個成功的開源專案經驗。這個專案解決了許多開發者在使用現有 AI 工具時遇到的安全性和可靠性問題，特別是在多實例協作方面。近期的社群討論和 PR 懸賞活動也吸引了大量關注，顯示出其在開發者中的熱度。技術生態的變化，如對安全性和可靠性的需求增加，讓這個工具的出現變得更加重要。高達 94.6% 的 forks/stars 比率顯示出許多人在實際修改和使用這個工具，而不僅僅是觀望。
+> 建立 16 天內累積 16067 stars（1004/天），forks 15130（94.2%），顯示出極高的社群參與度。這個專案的主要貢獻者來自於 Claude Code 的開發社群，過去有豐富的開源經驗。它解決了使用者對於原版 Claude Code 的功能限制，提供了一個更靈活的替代方案。近期的推廣和討論也促進了其曝光率，尤其是在 Discord 和 GitHub 上的活躍互動。高 forks/stars 比率顯示出許多人在實際修改和使用這個工具，並非只是觀望。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效且安全的 AI 開發環境的企業開發團隊。
+**目標受眾**：需要高可靠性和靈活性的開發團隊，尤其是已經在使用 Bun 的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來在本地環境中快速啟動 AI 開發環境，因為它的 Docker 支援和安全性設計能夠降低部署風險。
-> - 全端開發者用它來進行多實例協作，因為其 Pipe IPC 技術能夠簡化跨機器的通訊和編排。
-> - 企業開發團隊用它來自托管 AI 工具，因為其企業級可靠性和 lock 文件保真能夠確保開發環境的穩定性。
+> - 後端工程師用它來在開發環境中快速構建和調試 AI 代碼，因為其支持即時反饋和錯誤追蹤功能。
+> - DevOps 團隊用它來自托管 Claude Code 的遠程控制功能，因為 Docker 部署簡單且支持多實例協作。
+> - 全端工程師用它來整合多種 API 服務，因為其靈活的模型供應商選擇讓開發過程更高效。
 
 ## 架構分析
 
-Claude Code Best 採用模組化架構，主要由多個 TypeScript 模組組成，這樣的設計使得功能擴展變得更加靈活。資料流方面，使用 Pipe IPC 技術進行多實例間的通訊，這樣可以實現低延遲的消息傳遞和協作。選擇 TypeScript 是為了提高開發效率和代碼可維護性，但這也增加了學習成本。擴展性方面，Docker 部署使得用戶能夠輕鬆在不同環境中運行，但可能會面臨配置上的挑戰。整體來看，這樣的架構設計在功能上提供了靈活性，但在初期設置上可能需要更多的時間和精力。
+CCB 採用 Bun 作為執行環境，這使得其在性能上優於傳統 Node.js 應用。架構上，CCB 使用了多實例協作的 Pipe IPC 技術，這讓同機和 LAN 跨機器的通訊變得簡單。資料流方面，使用者可以透過命令行與系統互動，並且系統會根據用戶的輸入進行即時反饋。選擇 Bun 而非 Node.js 是因為其更快的啟動時間和更低的資源消耗，但這也意味著需要用戶安裝 Bun，增加了初期的使用門檻。擴展性方面，CCB 的模組化設計使得未來可以輕鬆添加新功能或整合其他服務。
 
 ## 技術深入分析
 
-Claude Code Best 的核心技術機制是基於 TypeScript 和 Node.js 的模組化設計，這使得功能擴展變得靈活且易於維護。使用 Pipe IPC 技術進行多實例間的通訊，能夠實現低延遲的消息傳遞，這對於需要高效協作的開發者來說至關重要。效能上，這個工具能夠處理多個實例的同時運行，但在資源需求上可能會隨著實例數量的增加而增加。選擇 Docker 進行自托管，提供了靈活的部署選項，但也可能面臨配置上的挑戰。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在高並發的情況下。整合方面，與主流 CI/CD 工具的相容性良好，但在初期設置上可能需要額外的時間和精力來配置環境。
+CCB 的核心技術機制是基於 Bun 的高效執行環境，這使得其在啟動和運行速度上優於傳統的 Node.js 應用。它使用 Pipe IPC 技術來實現多實例協作，這讓用戶能夠在同一台機器上運行多個實例，並實現零配置的 LAN 通訊。效能方面，CCB 能夠快速處理用戶的請求，並且在多實例運行時仍能保持穩定。選擇 Bun 作為執行環境的好處在於其更快的啟動時間和更低的資源消耗，但這也意味著用戶需要額外安裝 Bun，這可能成為一個使用門檻。技術風險方面，CCB 的多實例協作設計在用戶數量增加時可能會面臨性能瓶頸，特別是在資源有限的情況下。與主流的 CLI 工具相比，CCB 在整合方面的難度較低，因為它提供了多種 API 兼容性，並且能夠輕鬆與現有的開發工具鏈整合。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝指引和範例，安裝過程相對順暢，但對於新手來說可能需要一些時間來理解。文件目前僅提供英文版本，缺乏多語言支持。整體來說，花 30 分鐘應該能夠順利運行起來。
+> README 文件提供了清晰的安裝步驟和範例，整體安裝過程順暢。新手可以透過 `/login` 命令快速配置，並且有詳細的文檔支持。整體來說，花 30 分鐘就能順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 企業級可靠性，確保開發環境的穩定性。
-> - 多實例協作功能，提升開發效率。
-> - 安全性設計，保護用戶資料和環境。
+> - 高可靠性和安全性，適合企業級應用。
+> - 支持多種 API 兼容性，靈活性高。
+> - 社群活躍，問題解決率高。
 
 > [!danger] 缺點
-> - 仍在活躍開發中，可能會有不穩定的功能。
-> - 需要一定的環境配置，對新手不太友好。
-> - 部分功能尚未完全實現，可能影響使用體驗。
+> - 需要最新版本的 Bun，可能造成使用障礙。
+> - 仍在開發中，功能可能不穩定。
+> - 學習曲線較陡，對新手不友好。
 
 > [!warning] 注意事項
+> - 需要最新版本的 Bun，否則可能出現各種錯誤。
 > - 目前仍在活躍開發中，可能會有不穩定的功能。
-> - 需要安裝 bun 1.2.0 以上版本，對環境有一定要求。
-> - 部分功能仍在開發中，可能不完全符合預期。
+> - 對於不熟悉 CLI 的使用者，學習曲線可能較陡。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 CLI 工具，但在多實例協作上不如 Claude Code Best 靈活。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於特定的 AI 服務整合，而 Claude Code Best 提供更廣泛的自定義模型支援。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 雖然也提供 AI 開發工具，但缺乏 Claude Code Best 的安全性和可靠性設計。 |
+| [openai/openai-cli](https://github.com/openai/openai-cli) | OpenAI CLI 提供基本的 API 接口，但缺乏 CCB 的多實例協作和自定義模型支持。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供類似的 CLI 功能，但不支持多實例和企業級錯誤追蹤。 |
 
 ## 替代方案決策
 
@@ -203,16 +205,16 @@ Claude Code Best 的核心技術機制是基於 TypeScript 和 Node.js 的模組
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [OpenAI/cli](https://github.com/OpenAI/cli) | OpenAI 的 CLI 工具專注於與其 API 的整合，提供了簡單的使用方式，但缺乏多實例協作的能力。 | 如果你的團隊已經在使用 OpenAI 的服務，且需要簡單的 CLI 操作，可以選擇這個工具。 | low，因為 CLI 操作相對簡單，轉移到 OpenAI 的工具不會有太大困難。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 CLI 工具，但在多實例協作上不如 Claude Code Best 靈活。 | 如果你需要一個簡單的 CLI 工具，且不需要多實例協作的功能，可以考慮這個選擇。 | medium，因為需要重新適應不同的 CLI 命令和功能。 |
+| [openai/openai-cli](https://github.com/openai/openai-cli) | OpenAI CLI 提供基本的 API 接口，但缺乏 CCB 的多實例協作和自定義模型支持。 | 如果你只需要基本的 API 功能，且不需要多實例支持，OpenAI CLI 是一個簡單的選擇。 | medium，因為需要重寫部分集成代碼。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供類似的 CLI 功能，但不支持多實例和企業級錯誤追蹤。 | 如果你的需求較簡單，且不需要企業級的錯誤追蹤，Boneyard 是一個不錯的選擇。 | low，因為功能相似，遷移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **claude-code** | **cli** | **boneyard** |
+> | 維度 | **claude-code** | **openai-cli** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | OpenAI 的 CLI 工具專注於與其 API 的整合，提供了簡單的使用方式，但缺乏多實例協作的能力。 | 提供類似的 CLI 工具，但在多實例協作上不如 Claude Code Best 靈活。 |
-> | 遷移成本 | - | low，因為 CLI 操作相對簡單，轉移到 OpenAI 的工具不會有太大困難。 | medium，因為需要重新適應不同的 CLI 命令和功能。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 OpenAI 的服務，且需要簡單的  | 如果你需要一個簡單的 CLI 工具，且不需要多實例協作的功能 |
+> | 技術路線 | 本專案 | OpenAI CLI 提供基本的 API 接口，但缺乏 CCB 的多實例協作和自定義模型支持。 | Boneyard 提供類似的 CLI 功能，但不支持多實例和企業級錯誤追蹤。 |
+> | 遷移成本 | - | medium，因為需要重寫部分集成代碼。 | low，因為功能相似，遷移成本較低。 |
+> | 適用場景 | 主要場景 | 如果你只需要基本的 API 功能，且不需要多實例支持，Ope | 如果你的需求較簡單，且不需要企業級的錯誤追蹤，Boneyar |
 
 ## 成熟度評估
 
@@ -223,41 +225,44 @@ Claude Code Best 的核心技術機制是基於 TypeScript 和 Node.js 的模組
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，但不建議用在生產環境的核心路徑上。
+> 適合小型團隊試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些環境下，Docker 部署可能會遇到配置問題。
-  - 解法：參考官方文檔進行配置，或尋求社群幫助。
-- [MEDIUM] 多實例協作時，可能會出現消息延遲。
-  - 解法：優化 IPC 設定，或減少同時運行的實例數量。
+- **[HIGH]** 首次運行時需要進行配置，否則無法正常使用。
+  - 解法：在 REPL 中輸入 `/login` 進行配置。
+- [MEDIUM] 對於不熟悉 Bun 的使用者，可能會遇到安裝問題。
+  - 解法：確保使用最新版本的 Bun，並參考官方文檔。
+- [MEDIUM] 多實例運行時可能會遇到性能瓶頸。
+  - 解法：在資源充足的環境中運行多實例。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 其安全性和可靠性設計能夠滿足小型團隊的需求。 |
-| 大型企業的 AI 開發團隊 | 適合 | 提供的多實例協作功能能夠提升開發效率。 |
-| 個人開發者的 AI 專案 | 普通 | 雖然功能強大，但可能對新手來說有些複雜。 |
+| 10 人以下的新創公司後端 API | 非常適合 | CCB 提供了靈活的 API 支持和企業級的錯誤追蹤。 |
+| 大型企業的核心系統 | 不適合 | 目前仍在開發中，可能不夠穩定。 |
+| 需要快速原型開發的團隊 | 適合 | CCB 的快速構建和調試功能非常適合原型開發。 |
+| 對 CLI 工具不熟悉的使用者 | 普通 | 學習曲線較陡，可能需要額外的學習時間。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、10 小時整合，得到高效的開發環境，值得投入。
+> 花 5 小時學習，3 小時整合，得到高可靠性的 CLI 工具，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：工具本身不需要高權限，且不存取敏感資料。依賴鏈的信任程度良好，沒有已知的供應鏈風險，適合在 CI/CD 中使用。
+> 低風險：CCB 本身不需要高權限，且不存取敏感資料。依賴鏈的信任程度較高，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -323,18 +328,18 @@ Claude Code Best 的核心技術機制是基於 TypeScript 和 Node.js 的模組
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 15.1k |
-| Open Issues | 20 |
-| Issue 解決率 | 86% (121 closed) |
-| 最後推送 | 2026-04-15 |
+| Open Issues | 14 |
+| Issue 解決率 | 90% (127 closed) |
+| 最後推送 | 2026-04-17 |
 | 建立日期 | 2026-03-31 |
 | 官方網站 | [Link](https://ccb.agent-aura.top/) |
-| Repo 大小 | 68.2 MB |
+| Repo 大小 | 65.1 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/claude-code-best/claude-code) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@claude-code-best](https://github.com/claude-code-best) | 255 |
+> | [@claude-code-best](https://github.com/claude-code-best) | 263 |
 > | [@2228293026](https://github.com/2228293026) | 17 |
 > | [@amDosion](https://github.com/amDosion) | 5 |
 > | [@bonerush](https://github.com/bonerush) | 4 |
@@ -342,13 +347,13 @@ Claude Code Best 的核心技術機制是基於 TypeScript 和 Node.js 的模組
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和問題解決。
-**連結**：[文件](https://ccb.agent-aura.top/) · [Discord](https://discord.gg/qZU6zS7Q)
+**社群活躍度**：社群活躍，經常有新問題和功能的討論。
+**連結**：[文件](https://ccb.agent-aura.top/)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-13 ~ 2026-04-15）
-> **活躍天數** 3 天 · **最新 commit** fix: 修复类型问题(#267) (#271)
+> [!abstract] 最近 10 次 commit（2026-04-16 ~ 2026-04-17）
+> **活躍天數** 2 天 · **最新 commit** fix: 修复 linux 端的安装问题
 
 ## 熱門議題
 
@@ -357,8 +362,9 @@ Claude Code Best 的核心技術機制是基於 TypeScript 和 Node.js 的模組
 > | --- | --- | --- | --- |
 > | [#13](https://github.com/claude-code-best/claude-code/issues/13) | [留影专用]: 大家想留影就到这里来吧 | 27 | 144 |
 > | [#198](https://github.com/claude-code-best/claude-code/issues/198) | [PR 悬赏]: 现在需要所有的网页文档的优化 | 2 | 2 |
-> | [#154](https://github.com/claude-code-best/claude-code/issues/154) | Crab Code -- 受本项目启发，正在用 Rust 重写 Claude Code | 2 | 4 |
-> | [#277](https://github.com/claude-code-best/claude-code/issues/277) | bash工具和相关命令行工具调用不了 | 0 | 1 |
+> | [#154](https://github.com/claude-code-best/claude-code/issues/154) | Crab Code -- 受本项目启发，正在用 Rust 重写 Claude Code | 2 | 6 |
+> | [#281](https://github.com/claude-code-best/claude-code/issues/281) | Windows下，退出时，系统的路径提示输出重叠在历史输出上 | 0 | 0 |
+> | [#273](https://github.com/claude-code-best/claude-code/issues/273) | 如何与正版CC隔离使用 | 0 | 1 |
 
 ## README 摘錄
 
@@ -382,6 +388,7 @@ Claude Code Best 的核心技術機制是基於 TypeScript 和 Node.js 的模組
 > | 特性 | 说明 | 文档 |
 > |------|------|------|
 > | **Claude 群控技术** | Pipe IPC 多实例协作：同机 main/sub 自动编排 + LAN 跨机器零配置发现与通讯，`/pipes` 选择面板 + `Shift+↓` 交互 + 消息广播路由 | [Pipe IPC](https://ccb.agent-aura.top/docs/features/pipes-and-lan) / [LAN](https://ccb.agent-aura.top/docs/features/lan-pipes) |
+> | ACP 协议一等一支持 | 支持接入 Zed、Cursor 等 IDE，支持会话恢复、Skills、权限桥接 | [文档](https://ccb.agent-aura.top/docs/features/acp-zed) |
 > | Remote Control 私有部署 | Docker 自托管 RCS + Web UI | [文档](https://ccb.agent-aura.top/docs/features/remote-control-self-hosting) |
 > | /dream 记忆整理 | 自动整理和优化记忆文件 | [文档](https://ccb.agent-aura.top/docs/features/auto-dream) |
 > | Web Search | 内置网页搜索工具 | [文档](https://ccb.agent-aura.top/docs/features/web-browser-tool) |
@@ -534,7 +541,7 @@ Claude Code Best 的核心技術機制是基於 TypeScript 和 Node.js 的模組
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化]] · [[多模態]]
+相關概念：[[CLI/TUI]] · [[Docker]] · [[自動化]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]]
 
@@ -578,7 +585,7 @@ Claude Code Best 的核心技術機制是基於 TypeScript 和 Node.js 的模組
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化","多模態"];
+> const concepts = ["CLI/TUI","Docker","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "claude-code-best--claude-code" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
