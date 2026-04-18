@@ -7,26 +7,26 @@ language: TypeScript
 license: AGPL-3.0
 description: "Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. The knowledge is available to all but rarely aggregated in the open, until now."
 homepage: ""
-stars: 5282
-stars_per_day: 126
-forks: 797
+stars: 5368
+stars_per_day: 125
+forks: 814
 open_issues: 1
 created: 2026-03-05
 pushed_at: 2026-04-04
 first_seen: 2026-03-10
 week: "2026-W11"
 month: "2026-03"
-category: "其他"
-subcategory: "OSINT"
+category: "開發工具"
+subcategory: "OSINT 工具"
 release_tag: "v0.9.6"
-install_complexity: "easy"
+install_complexity: "medium"
 status: archived
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-10
-use_case: "提供全球即時開源情報的統一介面，追蹤從富豪私人飛機到地震事件的所有資訊。"
+use_case: "提供全球即時開源情報的統一介面，追蹤從富豪私人飛機到地震事件的各種數據。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,16 +38,15 @@ issue_close_rate: 98
 repo_size_kb: 7276
 readme_length: 10000
 bus_factor: 1
-last_release_days: 22
+last_release_days: 23
 release_cadence: "monthly"
 verdict: ""
 ring_history: "assess@2026-03-10"
-star_history: "2026-03-10:1455,2026-03-11:1464,2026-03-13:2127,2026-03-14:2662,2026-03-15:2852,2026-03-16:3053,2026-03-17:3274,2026-03-18:3512,2026-03-19:3617,2026-03-20:3892,2026-03-21:4221,2026-03-22:4471,2026-03-23:4737,2026-03-24:4878,2026-03-25:4964,2026-03-26:5049,2026-03-27:5096,2026-03-28:5128,2026-04-04:5151,2026-04-10:5150,2026-04-11:5162,2026-04-12:5172,2026-04-13:5180,2026-04-14:5187,2026-04-15:5238,2026-04-16:5267,2026-04-17:5282"
+star_history: "2026-03-10:1455,2026-03-11:1464,2026-03-13:2127,2026-03-14:2662,2026-03-15:2852,2026-03-16:3053,2026-03-17:3274,2026-03-18:3512,2026-03-19:3617,2026-03-20:3892,2026-03-21:4221,2026-03-22:4471,2026-03-23:4737,2026-03-24:4878,2026-03-25:4964,2026-03-26:5049,2026-03-27:5096,2026-03-28:5128,2026-04-04:5151,2026-04-10:5150,2026-04-11:5162,2026-04-12:5172,2026-04-13:5180,2026-04-14:5187,2026-04-15:5238,2026-04-16:5267,2026-04-17:5282,2026-04-18:5368"
 tags:
   - github
-  - "category/其他"
+  - "category/開發工具"
   - "lang/typescript"
-  - easy_install
   - "topic/air_force_one"
   - "topic/airforce1"
   - "topic/asdb"
@@ -56,12 +55,12 @@ tags:
 aliases:
   - "Shadowbroker"
   - "BigBodyCobain/Shadowbroker"
-  - "提供全球即時開源情報的統一介面，追蹤從富豪私人飛機到地震事件的所有資訊。"
+  - "提供全球即時開源情報的統一介面，追蹤從富豪私人飛機到地震事件的各種數據。"
 ---
 
 # Shadowbroker
 
-**5.3k** stars · **126** stars/天 · 建立 42 天前 · TypeScript · AGPL-3.0
+**5.4k** stars · **125** stars/天 · 建立 43 天前 · TypeScript · AGPL-3.0
 
 ```dataviewjs
 const me = dv.page("Repos/BigBodyCobain--Shadowbroker");
@@ -74,25 +73,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v0.9.6` `easy-install`
+`v0.9.6`
 
 `air-force-one` `airforce1` `asdb` `cctv` `cctv-cameras` `cctv-surveillance` `earthquake-visualization` `elonjet` `osint` `osint-resources` `osint-tool` `sattelite` `sattelite-imagery` `sdr`
 
 > [!summary] 一句話摘要
-> 提供全球即時開源情報的統一介面，追蹤從富豪私人飛機到地震事件的所有資訊。
+> 提供全球即時開源情報的統一介面，追蹤從富豪私人飛機到地震事件的各種數據。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Growing · **熱度** Hot (126 stars/day)
-> **授權** AGPL-3.0 (Copyleft，商用需注意) · **維護** Moderate (最後推送 12 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要即時整合多元開源情報的分析師和研究人員。
-> **一句話重點** 這個專案不僅整合了多種情報來源，還提供了即時更新的能力，讓使用者能夠在一個平台上獲得全面的情報視圖。
+> **安裝難度** Medium · **專案狀態** Growing · **熱度** Hot (125 stars/day)
+> **授權** AGPL-3.0 (Copyleft，商用需注意) · **維護** Moderate (最後推送 13 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 需要即時整合多個開源情報數據來源的分析師和研究人員。
+> **一句話重點** 這個專案將多個開源情報數據源整合到一個即時更新的平台，極大提高了數據的可用性和可視化效果。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/BigBodyCobain--Shadowbroker");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "OSINT" && p.file.name !== "BigBodyCobain--Shadowbroker" && p.status !== "archived")
+>     .where(p => p.subcategory === "OSINT 工具" && p.file.name !== "BigBodyCobain--Shadowbroker" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,113 +102,112 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 OSINT 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 OSINT 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習，3 小時整合，得到即時的多元情報視圖，值得投資。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，3 小時整合，得到即時情報整合的效果，值得投入。
 
 > [!abstract] 核心創新
-> 將 60+ 個即時情報來源整合到一個黑色操作地圖介面上，提供即時的多領域情報追蹤。
+> 提供一個無需用戶數據收集的即時 OSINT 數據整合平台。
 
 ## 專案簡介
 
-ShadowBroker 是一個即時的多領域開源情報(OSINT)儀表板，將 60 多個即時情報來源整合到一個黑色操作地圖介面上。用戶可以追蹤飛機、船隻、衛星、衝突區域、CCTV 網絡等，所有數據都在一個螢幕上即時更新。這個設計讓分析師、研究人員和無線電操作員能夠在同一平台上獲得全面的地理情報，並且完全不收集用戶數據。核心技術包括 Next.js、MapLibre GL 和 FastAPI，並提供 35+ 可切換的數據層，讓用戶能夠右鍵點擊地球上的任意位置來獲取詳細資料。這個工具的賣點在於其即時性和多元性，讓使用者能夠在一個界面上獲得多種情報。
+ShadowBroker 是一個即時的多領域開源情報 (OSINT) 儀表板，將 60 多個實時情報來源融合到一個黑色操作地圖介面中。用戶可以追蹤飛機、船隻、衛星、衝突區域、CCTV 網絡等，所有數據都在一個屏幕上實時更新。這個平台的賣點在於其模組化架構，允許用戶根據需求擴展後端和前端。使用者只需在瀏覽器中運行，無需用戶數據收集，這樣的設計提高了隱私性。關鍵指令包括 `docker compose up -d`，這樣可以快速啟動儀表板，並在 `http://localhost:3000` 查看結果。技術上，ShadowBroker 使用 Next.js、MapLibre GL 和 FastAPI，這些技術選擇使得其在處理大量數據時具備良好的性能。
 
-其模組化架構允許獨立擴展情報後端和前端界面，並且安全上下文設計使其在容器中運行時限制了 UID，增強了安全性。與其他 OSINT 工具相比，ShadowBroker 提供了更豐富的數據來源和即時更新能力，並且不需要用戶進行複雜的設置。這使得它在需要快速獲取情報的情境下特別有用，例如在危機管理或災害應對中。使用者可以通過 Docker 簡單地啟動儀表板，並且支持多種 API 整合，進一步提升了其靈活性和擴展性。
+與其他 OSINT 工具相比，如 0xGF/boneyard 和 AgentSeal/codeburn，ShadowBroker 提供更全面的數據層級，並且支持即時更新，這在需要快速反應的情況下尤為重要。使用者可以從多個來源獲取數據，包括航空、海運、地震等，這使得它在多種情境下都能發揮作用。儘管如此，使用者需要注意 API 金鑰的配置，這可能會影響某些數據的獲取。整體而言，這是一個適合需要即時情報的分析師和研究人員的工具，尤其是在需要整合多個數據來源的情況下。未來幾個月，隨著社群的增長和功能的擴展，預計將會有更多的數據來源和功能加入。
 
-**技術棧**：`Next.js` · `MapLibre GL` · `FastAPI` · `Python`
+**技術棧**：`Next.js 18` · `FastAPI` · `Python 3.10` · `Docker`
 
 ## 重點功能
 
-- 即時數據整合 — 整合 60+ 個即時情報來源，提供多元化的數據視圖。
-- 模組化架構 — 獨立擴展情報後端和前端界面，提升靈活性。
-- 安全上下文 — 在容器中運行時限制 UID，增強安全性。
-- 無需用戶數據 — 儀表板完全在用戶瀏覽器中運行，無需收集用戶數據。
-- 多樣化數據層 — 提供 35+ 可切換的數據層，讓用戶自定義視圖。
+- 即時數據整合 — 60+ 個實時情報來源，涵蓋航空、海運、地震等多個領域。
+- 模組化架構 — 獨立擴展後端和前端，滿足不同需求。
+- 無需用戶數據收集 — 儀表板完全在本地運行，保護用戶隱私。
+- 支持 Docker 部署 — 簡單的 `docker compose up -d` 指令即可啟動。
+- 多層數據視覺化 — 提供 35+ 可切換的數據層，方便用戶自定義視圖。
 
 ## 快速開始
 
-1. 克隆專案並進入目錄
+1. 克隆專案
 ```bash
-git clone https://github.com/BigBodyCobain/Shadowbroker.git && cd Shadowbroker
+git clone https://github.com/BigBodyCobain/Shadowbroker.git
 ```
-2. 啟動 Docker 容器
+2. 進入專案目錄
+```bash
+cd Shadowbroker
+```
+3. 啟動 Docker 容器
 ```bash
 docker compose up -d
-```
-3. 訪問儀表板
-```bash
-Open http://localhost:3000
 ```
 
 ## 程式碼範例
 
 ```ts
 [
-  "# 前置條件：已安裝 Docker",
-  "git clone https://github.com/BigBodyCobain/Shadowbroker.git",
-  "cd Shadowbroker",
+  "# 前置條件（需安裝 Docker）",
   "docker compose up -d",
-  "# 預期輸出：啟動儀表板，訪問 http://localhost:3000"
+  "# 預期輸出：啟動後可在 http://localhost:3000 查看儀表板"
 ]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 42 天內累積 5282 stars（126/天），forks 797（15.1%），這顯示出強勁的社群興趣。作者 BigBodyCobain 和團隊在開源情報領域有豐富的經驗，這個專案解決了以往分散的情報來源難以整合的痛點。之前的解決方案往往需要多個工具來獲取不同的數據，這導致了效率低下。近期的社交媒體討論和開源社群的推廣也為此專案帶來了關注。隨著全球對開源情報需求的上升，這個工具的出現正好迎合了市場需求，並且其高 fork/stars 比率（15.1%）顯示出許多開發者對其進行了實際修改和使用。
+> 建立 43 天就累積 5368 stars（125/天），forks 814（15.2%），顯示出強勁的社群關注度。這個專案的主要貢獻者包括多位活躍的開發者，且有著高達 98% 的 issue 解決率，顯示出良好的維護狀況。作者的背景和過去的貢獻使得這個專案在技術上具備可信度。它解決了整合多個 OSINT 數據源的需求，這在過去的工具中並不常見，使用者通常需要使用多個工具來獲取類似的數據。社群的活躍度和持續的更新也吸引了更多的使用者。
 
 ## 適合誰使用
 
-**目標受眾**：需要即時整合多元開源情報的分析師和研究人員。
+**目標受眾**：需要即時整合多個開源情報數據來源的分析師和研究人員。
 
 > [!example] 使用場景
-> - 情報分析師用它來即時追蹤全球飛行活動，因為它整合了多個航空數據源，能夠在 60 秒內更新，提供即時的飛行資訊。
-> - 災害應對團隊用它來監控地震活動，因為它能夠即時顯示全球地震事件，幫助團隊快速反應。
-> - 無線電愛好者用它來追蹤網絡連接設備，因為它支持實時的無線電位置數據，讓用戶能夠獲得最新的無線電活動資訊。
+> - 情報分析師用它來即時追蹤全球衝突事件，因為它能整合多個來源的數據，提供全面的視角。
+> - 研究人員用它來分析地震活動，因為它提供了來自 USGS 的即時數據，並能快速生成報告。
+> - 無線電操作員用它來監控航空和海運動態，因為它提供了實時的飛行和船舶位置數據，幫助他們做出快速反應。
 
 ## 架構分析
 
-ShadowBroker 採用模組化架構，前端使用 Next.js 和 MapLibre GL，後端則使用 FastAPI 和 Python。這種設計使得前後端可以獨立擴展，並且在安全性上採用限制 UID 的方式運行容器，降低了潛在的安全風險。數據流從各個情報來源通過 API 進入後端，然後由前端進行視覺化展示。
+ShadowBroker 採用模組化架構，後端使用 FastAPI 處理數據請求，前端則使用 Next.js 提供用戶界面。這樣的設計使得兩者可以獨立擴展，滿足不同的需求。數據流從多個來源進入後端，經過處理後傳遞到前端，這樣用戶可以即時查看更新的數據。
 
-選擇 FastAPI 是因為其高效能和易於擴展的特性，而使用 Next.js 則是為了提供更好的用戶體驗和即時更新能力。這種架構的代價是需要一定的 Docker 環境配置，但這也使得部署變得相對簡單。擴展性方面，隨著數據來源的增加，可能會面臨性能瓶頸，特別是在高流量情況下。
+選擇 FastAPI 是因為其高效的性能和易於擴展的特性，而 Next.js 則提供了良好的用戶體驗。這樣的架構使得 ShadowBroker 在處理大量數據時具備良好的性能，特別是在需要即時反應的情況下。擴展性瓶頸主要在於後端數據源的整合，隨著數據量的增加，可能需要進一步優化數據處理流程。
 
 ## 技術深入分析
 
-ShadowBroker 的核心技術機制在於其即時數據整合能力，使用 FastAPI 來處理後端請求，並利用 WebSocket 進行即時數據推送。前端則使用 Next.js 和 MapLibre GL 進行數據視覺化，這使得用戶能夠在地圖上直觀地查看各種情報。效能方面，系統能夠處理大量的即時數據流，但在高流量情況下可能會出現延遲，特別是在多個數據源同時更新時。選擇 FastAPI 是因為其高效能和易於擴展的特性，而使用 Next.js 則是為了提供更好的用戶體驗。這種選擇的代價是需要一定的 Docker 環境配置，但這也使得部署變得相對簡單。技術風險方面，隨著數據來源的增加，系統可能會面臨性能瓶頸，特別是在高流量情況下。與主流框架的整合難度相對較低，因為 FastAPI 和 Next.js 都有良好的社群支持和文檔。
+ShadowBroker 的核心技術機制在於其即時數據整合能力，使用 FastAPI 作為後端框架，能夠高效處理來自多個來源的請求。前端則利用 Next.js 提供動態的用戶界面，並使用 MapLibre GL 進行地圖視覺化。這樣的設計使得用戶能夠快速獲取所需的情報，並進行即時分析。效能方面，系統能夠處理來自 60+ 個數據源的實時數據，對於大規模數據的處理，系統要求較高的 CPU 和記憶體資源。
+
+設計取捨方面，選擇 FastAPI 而非傳統的 Flask 是因為其性能更佳，能夠支持高並發請求。技術風險方面，隨著數據量的增加，後端可能會面臨性能瓶頸，需進行優化。整合分析方面，這個工具與主流的 CI/CD 工具相容性良好，能夠輕鬆融入現有的開發流程。整體而言，ShadowBroker 的設計考量了性能、擴展性和用戶隱私，是一個值得關注的 OSINT 工具。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了詳細的安裝指導，安裝過程順暢，Docker 環境的設置相對簡單。文件中有良好的 getting started guide，適合新手快速上手。
+> README 文件清晰且提供了詳細的安裝步驟，包含 Docker 部署的指令。安裝過程順暢，但需要用戶具備基本的 Docker 知識。文件中有針對開發者的指南，對於想要修改代碼的使用者也有提供必要的前置條件說明。整體而言，花 30 分鐘內能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 即時數據更新，讓使用者能夠快速獲取情報。
-> - 模組化架構，方便未來擴展和維護。
-> - 不收集用戶數據，保護用戶隱私。
+> - 即時數據更新，適合需要快速反應的使用者。
+> - 模組化設計，便於擴展和維護。
+> - 無需用戶數據收集，保護用戶隱私。
 
 > [!danger] 缺點
-> - 需要 Docker 環境，對新手可能有一定的學習曲線。
-> - 某些數據源需要額外的 API 金鑰，增加使用複雜度。
-> - 不支持 Windows 以外的系統直接運行。
+> - 需要 API 金鑰才能獲取某些數據，增加使用門檻。
+> - 對於大型數據集的處理可能需要較高的系統資源。
+> - 目前僅支持 Docker 部署，對於不熟悉 Docker 的用戶可能有學習曲線。
 
 > [!warning] 注意事項
-> - 需要 Docker 環境才能運行
-> - 某些數據源需要 API 金鑰才能使用
-> - 不支持 Windows 以外的系統直接運行
+> - 需要 API 金鑰才能獲取某些數據，如 AIS 和 OpenSky。
+> - 對於大型數據集的處理可能需要較高的系統資源。
+> - 目前僅支持 Docker 部署，對於不熟悉 Docker 的用戶可能有學習曲線。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 OSINT 功能，但主要集中在網絡安全領域，數據來源較少。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於特定地區的情報追蹤，數據更新頻率較低。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 提供類似的數據視覺化功能，但不支持即時更新。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 OSINT 數據，但主要集中於社交媒體和網路監控，缺乏即時地理數據整合。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於網路安全和漏洞監控，而 ShadowBroker 提供更全面的地理和事件數據。 |
 
 ## 替代方案決策
 
@@ -217,16 +215,16 @@ ShadowBroker 的核心技術機制在於其即時數據整合能力，使用 Fas
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於網絡安全領域，提供較少的數據來源和即時更新能力。 | 如果你的需求主要集中在網絡安全的情報收集上，這個工具可能更合適。 | medium，因為需要重新適應不同的數據來源和界面。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於特定地區的情報追蹤，數據更新頻率較低。 | 如果你的工作主要集中在某個特定地區的情報收集，這個工具可能更合適。 | low，因為界面和功能相似。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於社交媒體和網路監控，並不提供即時地理數據整合。 | 如果你的需求主要是社交媒體監控，而不需要地理數據整合。 | medium，因為需要重新配置數據來源和界面。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於網路安全和漏洞監控，缺乏即時地理數據整合。 | 如果你的主要需求是網路安全監控，而不需要地理數據。 | high，因為需要完全轉換到不同的數據來源和架構。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **Shadowbroker** | **boneyard** | **codeburn** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於網絡安全領域，提供較少的數據來源和即時更新能力。 | 專注於特定地區的情報追蹤，數據更新頻率較低。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的數據來源和界面。 | low，因為界面和功能相似。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要集中在網絡安全的情報收集上，這個工具可能更合 | 如果你的工作主要集中在某個特定地區的情報收集，這個工具可能更 |
+> | 技術路線 | 本專案 | 專注於社交媒體和網路監控，並不提供即時地理數據整合。 | 專注於網路安全和漏洞監控，缺乏即時地理數據整合。 |
+> | 遷移成本 | - | medium，因為需要重新配置數據來源和界面。 | high，因為需要完全轉換到不同的數據來源和架構。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是社交媒體監控，而不需要地理數據整合。 | 如果你的主要需求是網路安全監控，而不需要地理數據。 |
 
 ## 成熟度評估
 
@@ -237,27 +235,27 @@ ShadowBroker 的核心技術機制在於其即時數據整合能力，使用 Fas
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人或小型團隊試用，但不建議在生產環境的核心路徑上使用。
+> 適合個人或小型團隊的試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** Docker 環境配置不當可能導致啟動失敗
-  - 解法：確保 Docker Desktop 或 Docker Engine 正確安裝並運行
-- [MEDIUM] 某些 API 金鑰未配置會導致數據缺失
+- **[HIGH]** 某些 API 金鑰未配置會導致數據無法獲取
   - 解法：檢查 .env 文件，確保所有必要的 API 金鑰已配置
-- [MEDIUM] 在高流量情況下可能會出現延遲
-  - 解法：考慮擴展後端服務以處理更多請求
+- [MEDIUM] Docker 容器啟動後無法訪問 localhost
+  - 解法：檢查 Docker 的網路設定，確保容器能夠訪問主機網路
+- [MEDIUM] 升級後可能會導致某些功能失效
+  - 解法：查看文檔中的升級指南，遵循步驟進行升級
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司進行市場調查 | 非常適合 | 能夠快速獲取多元的市場情報，提升決策效率。 |
-| 大型企業的安全團隊進行風險評估 | 適合 | 提供即時的安全情報，幫助團隊快速反應。 |
-| 學術研究團隊進行地理信息分析 | 普通 | 雖然提供豐富的數據來源，但可能需要額外的數據處理。 |
-| 個人使用者追蹤私人飛機動態 | 非常適合 | 能夠即時獲取飛行信息，滿足個人需求。 |
+| 10 人以下的研究團隊需要即時情報 | 非常適合 | 模組化設計和即時數據更新非常符合團隊需求。 |
+| 大型企業需要整合多個數據來源 | 適合 | 雖然支援多數數據來源，但可能需要額外的資源來處理。 |
+| 個人開發者希望快速獲取開源情報 | 非常適合 | 簡單的 Docker 部署使得個人開發者能夠快速上手。 |
+| 需要長期穩定運行的生產環境 | 不適合 | 目前仍在 beta 階段，穩定性和支持可能不足。 |
 
 ## 採用成本分析
 
@@ -266,15 +264,15 @@ ShadowBroker 的核心技術機制在於其即時數據整合能力，使用 Fas
 | 學習時間 | ~5 小時 |
 | 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到即時的多元情報視圖，值得投資。
+> 花 5 小時學習，3 小時整合，得到即時情報整合的效果，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，且不存取敏感資料。依賴鏈的信任程度高，無已知的供應鏈風險，適合在 CI/CD 中使用。
+> 低風險：儀表板在本地運行，無需高權限，且不存取敏感資料。依賴的第三方 API 需謹慎管理，確保安全性。
 
 ## 健康度儀表板
 
@@ -339,7 +337,7 @@ ShadowBroker 的核心技術機制在於其即時數據整合能力，使用 Fas
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 797 |
+| Forks | 814 |
 | Open Issues | 1 |
 | Issue 解決率 | 98% (57 closed) |
 | 最後推送 | 2026-04-04 |
@@ -398,8 +396,8 @@ ShadowBroker 的核心技術機制在於其即時數據整合能力，使用 Fas
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，開發者回應速度快，問題解決率高達 98%。
-**連結**：[文件](https://github.com/BigBodyCobain/Shadowbroker)
+**社群活躍度**：社群活躍，定期更新，issue 解決率高。
+**連結**：[文件](https://github.com/BigBodyCobain/Shadowbroker/wiki)
 
 ## 開發動態
 
@@ -619,11 +617,11 @@ ShadowBroker 的核心技術機制在於其即時數據整合能力，使用 Fas
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：OSINT）
+> [!note]- 直接競品（同子分類：OSINT 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "OSINT" AND file.name != "BigBodyCobain--Shadowbroker"
+> WHERE subcategory = "OSINT 工具" AND file.name != "BigBodyCobain--Shadowbroker"
 > SORT stars DESC
 > ```
 
@@ -631,7 +629,7 @@ ShadowBroker 的核心技術機制在於其即時數據整合能力，使用 Fas
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "BigBodyCobain--Shadowbroker"
+> WHERE category = "開發工具" AND file.name != "BigBodyCobain--Shadowbroker"
 > SORT stars DESC
 > LIMIT 8
 > ```

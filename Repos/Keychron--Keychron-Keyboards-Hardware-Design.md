@@ -7,12 +7,12 @@ language: N/A
 license: NOASSERTION
 description: "Industrial design files for Keychron keyboards and mice. 100+ models with CAD assets in STEP, DXF, DWG, and PDF. Source-available, with commercial use allowed for original compatible accessories within the license terms."
 homepage: "https://www.keychron.com/"
-stars: 3114
-stars_per_day: 260
-forks: 237
+stars: 3153
+stars_per_day: 243
+forks: 244
 open_issues: 1
 created: 2026-04-04
-pushed_at: 2026-04-15
+pushed_at: 2026-04-17
 first_seen: 2026-04-11
 week: "2026-W15"
 month: "2026-04"
@@ -26,23 +26,23 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-11
-use_case: "提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者可以學習和創建兼容配件。"
+use_case: "提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者能夠學習、修改和創建兼容配件。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 1
 next_review: "2026-04-14"
-contributor_count: 3
+contributor_count: 4
 engagement: "low"
 issue_close_rate: 95
-repo_size_kb: 952409
+repo_size_kb: 952416
 readme_length: 10000
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-11"
-star_history: "2026-04-11:2145,2026-04-11:2147,2026-04-12:2646,2026-04-13:2784,2026-04-14:2959,2026-04-15:3020,2026-04-16:3067,2026-04-17:3114"
+star_history: "2026-04-11:2145,2026-04-11:2147,2026-04-12:2646,2026-04-13:2784,2026-04-14:2959,2026-04-15:3020,2026-04-16:3067,2026-04-17:3114,2026-04-18:3153"
 tags:
   - github
   - "category/其他"
@@ -57,12 +57,12 @@ tags:
 aliases:
   - "Keychron-Keyboards-Hardware-Design"
   - "Keychron/Keychron-Keyboards-Hardware-Design"
-  - "提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者可以學習和創建兼容配件。"
+  - "提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者能夠學習、修改和創建兼容配件。"
 ---
 
 # Keychron-Keyboards-Hardware-Design
 
-**3.1k** stars · **260** stars/天 · 建立 12 天前 · N/A · NOASSERTION
+**3.2k** stars · **243** stars/天 · 建立 13 天前 · N/A · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/Keychron--Keychron-Keyboards-Hardware-Design");
@@ -80,13 +80,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `3d-printing` `cad` `gaming` `gaming-keyboard` `gaming-mouse` `hardware-designs` `keyboard` `keyboard-firmware` `keychron` `mechanical-keyboard` `mouse` `qmk` `qmk-firmware` `zephyr` `zmk` `zmk-firmware`
 
 > [!summary] 一句話摘要
-> 提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者可以學習和創建兼容配件。
+> 提供 Keychron 鍵盤和滑鼠的工業設計檔案，讓使用者能夠學習、修改和創建兼容配件。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (260 stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 2 天前) · **貢獻者** 3 人 · **參與度** Low
-> **適合** 對鍵盤和滑鼠設計有興趣的硬體工程師和設計師。
-> **一句話重點** 這個專案不僅提供設計資源，還促進了硬體設計社群的成長和創新。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (243 stars/day)
+> **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Low
+> **適合** 對鍵盤和滑鼠設計有興趣的硬體愛好者和工程師，特別是希望進行自定義和創新的使用者。
+> **一句話重點** 這個專案不僅提供設計檔案，更是推動硬體設計社群成長的重要資源。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -109,153 +109,83 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習 CAD 操作，3 小時整合設計檔案，能夠獲得豐富的設計資源，值得投入。
+> **安裝** Easy (一行搞定)
 
 > [!abstract] 核心創新
-> 這個專案的創新在於提供開放的生產級硬體設計檔案，讓使用者能夠學習和創建兼容的配件。
+> 提供生產級硬體設計檔案，讓使用者能夠學習和創建兼容配件。
 
 ## 專案簡介
 
-這個專案提供了 Keychron 鍵盤和滑鼠的生產級硬體設計檔案，包括 STEP、DXF、DWG 和 PDF 格式，讓使用者能夠學習、重混和設計兼容配件。核心機制是透過開放的設計檔案降低入門門檻，讓愛好者和工程師可以直接從真實的 CAD 檔案開始，而不是從零開始。這樣的設計不僅擴展了客製化的可能性，還提供了實際的教育價值，讓使用者能夠學習到關於安裝系統、容差和元件整合的實際決策。與其他專案相比，如 0xGF/boneyard 和 AgentSeal/codeburn，這個專案的獨特之處在於它的商業使用授權，允許創建兼容的配件而不需擔心法律問題。這對於想要進一步探索硬體設計的使用者來說，無疑是個利好消息。
+這個專案提供了 Keychron 鍵盤和滑鼠的生產級硬體設計檔案，包含超過 100 種型號的 CAD 資產，格式涵蓋 STEP、DXF、DWG 和 PDF。使用者可以透過這些檔案學習真實的工業設計，並進行 Remix，以創建兼容的配件。這樣的設計不僅降低了入門門檻，還擴展了自定義的可能性，讓社群能夠探索更深層的硬體變更和創新。專案的授權設計支持 Keychron 生態系統的擴展，允許原創兼容配件的商業使用，但禁止複製和銷售 Keychron 的產品。
 
-實際使用中，這些設計檔案能夠支援多種材料和結構調整，讓社群能夠進行更深入的硬體變更。這個專案的社群活躍度高，解決率達到 95%，顯示出良好的支持和回應速度。未來六個月內，預計將會有更多的設計檔案和更新推出，進一步豐富這個生態系統。對於需要進行鍵盤或滑鼠設計的工程師和設計師來說，這是一個非常值得使用的資源。
+關鍵指令包括瀏覽鍵盤和滑鼠檔案，開啟 CAD 軟體檢視檔案，並學習如何 Remix 設計。這個專案的賣點在於其開放性和教育價值，讓使用者能夠從實際的設計決策中學習。隨著社群的成長，這些設計檔案有助於推動硬體改造和個人專案的發展。使用者可以透過 Discord 社群分享建設，進一步促進硬體改造的文化。
 
 ## 重點功能
 
-- 多種格式支持 — 提供 STEP、DXF、DWG 和 PDF 格式的設計檔案，方便不同需求的使用者。
-- 商業使用授權 — 允許創建兼容的配件，支持商業用途，促進生態系統的發展。
-- 實際案例學習 — 設計檔案基於真實產品，提供學習安裝系統和元件整合的機會。
-- 社群支持 — 高達 95% 的問題解決率，顯示出活躍的社群和良好的支持。
-- 持續更新 — 定期添加新的設計檔案，保持內容的新鮮度和實用性。
+- 多種格式支持 — 提供 STEP、DXF、DWG 和 PDF 格式的設計檔案，方便不同 CAD 軟體使用。
+- 超過 100 種型號 — 包含 C Pro、Q 系列、K 系列等多種鍵盤和滑鼠的設計檔案。
+- 開放授權 — 允許使用者創建兼容配件，並進行商業使用，促進社群創新。
+- 詳細的文件指南 — 提供檔案格式指南和 Remix 教學，幫助使用者快速上手。
+- 活躍社群支持 — 加入 Discord 社群，與其他使用者分享經驗和建議。
 
 ## 快速開始
 
-1. 克隆專案
+1. 克隆倉庫
 ```bash
 git clone https://github.com/Keychron/Keychron-Keyboards-Hardware-Design.git
 ```
-2. 進入專案資料夾
+2. 瀏覽鍵盤檔案
 ```bash
-cd Keychron-Keyboards-Hardware-Design
+cd Keychron-Keyboards-Hardware-Design/C-Pro-8K-Series/
 ```
-3. 查看設計檔案
+3. 開啟 CAD 軟體檔案
 ```bash
-ls -l
+使用 CAD 軟體打開 .step 或 .dxf 檔案
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 12 天內累積 3114 stars（260/天），forks 237（7.6%），顯示出強勁的增長潛力。這個專案由 Keychron 團隊主導，他們在鍵盤和滑鼠設計領域有豐富的經驗。這個專案解決了許多硬體設計愛好者面臨的問題，提供了可用的 CAD 檔案，讓他們不必從零開始設計。社群的反饋和需求促使了這個專案的快速發展，並且在設計文件的開放性上，反映了對使用者創造力的信任和支持。這種開放的設計方式在硬體社群中是相對少見的，因為許多競爭對手仍然保持著封閉的設計檔案。forks/stars 比率為 7.6%，顯示出有相當比例的使用者在實際修改和使用這些檔案。
+> 建立 13 天就累積 3153 stars（243/天），forks 244（7.7%），顯示出強勁的增長潛力。這個專案由 Keychron 團隊主導，他們在鍵盤和滑鼠設計上有豐富經驗，這使得他們能夠提供高品質的設計檔案。專案解決了許多硬體愛好者在設計和製作兼容配件時面臨的困難，過去這些設計檔案通常不易獲得。社群的活躍度和開放的授權政策也促進了使用者的參與和貢獻，這些都是其受歡迎的原因。
 
 ## 適合誰使用
 
-**目標受眾**：對鍵盤和滑鼠設計有興趣的硬體工程師和設計師。
+**目標受眾**：對鍵盤和滑鼠設計有興趣的硬體愛好者和工程師，特別是希望進行自定義和創新的使用者。
 
 > [!example] 使用場景
-> - 硬體設計師用它來設計兼容的鍵盤配件，因為可以直接使用真實的 CAD 檔案，降低了設計的難度。
-> - 學生用它來學習鍵盤設計的原理，因為這些生產級設計檔案提供了實際的案例研究。
-> - 工程師用它來改進現有的鍵盤設計，因為可以在現有基礎上進行修改和創新，提升產品性能。
+> - 硬體設計學生用它來學習 CAD 設計，因為可以直接接觸到真實的工業設計檔案，提升實作能力。
+> - DIY 鍵盤愛好者用它來創建自定義鍵盤配件，因為設計檔案的開放性讓他們能夠進行深入的修改和創新。
+> - 工程師用它來開發兼容的鍵盤和滑鼠配件，因為可以利用現有的設計進行快速原型製作，節省時間和成本。
 
 ## 架構分析
 
-這個專案的架構主要是基於開放的 CAD 檔案，設計上選擇了多種格式以便於不同使用者的需求。資料流上，使用者可以直接下載設計檔案，並在 CAD 軟體中進行編輯和重混。這樣的設計使得使用者能夠快速上手，並進行個性化的設計。選擇開放格式的代價是需要使用者具備一定的 CAD 操作能力，但這也促進了社群的學習和創新。擴展性方面，隨著社群的成長，未來可能會有更多的設計檔案和功能加入。
+這個專案採用開放式的設計架構，讓使用者能夠自由訪問和修改設計檔案。設計檔案的結構清晰，分為不同的系列和型號，便於使用者快速找到所需的資源。每個檔案夾包含了完整的設計檔案和說明，使用者可以根據自己的需求進行 Remix。這種架構的設計使得社群能夠在現有的基礎上進行創新，並且支持多種 CAD 軟體的使用，降低了學習曲線。這樣的設計也促進了社群的參與，使用者可以輕鬆地貢獻自己的修改和創新。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於提供開放的 CAD 檔案，讓使用者能夠直接使用真實的設計進行學習和創作。這些檔案涵蓋了多種格式，如 STEP 和 DXF，適合不同的 CAD 軟體使用。效能上，這些設計檔案能夠支持多種材料的使用，並且能夠進行結構調整，讓使用者能夠探索不同的設計可能性。設計選擇上，開放格式的使用使得社群能夠自由地進行創新，但也要求使用者具備一定的技術能力。技術風險方面，隨著社群的擴大，可能會出現設計檔案的版本控制問題，這需要維護者持續關注。整合方面，這些設計檔案可以輕鬆地與現有的 CAD 工具鏈整合，並且能夠在 CI/CD pipeline 中進行自動化設計流程的實現。
+這個專案的核心技術機制是提供多種格式的 CAD 設計檔案，讓使用者能夠學習和修改真實的工業設計。這些檔案涵蓋了多個型號和系列，使用者可以根據自己的需求進行 Remix。效能上，這些設計檔案能夠在主流 CAD 軟體中流暢使用，並且支持 3D 打印等應用。設計選擇上，這些檔案的開放性和社群支持使得使用者能夠快速上手，並且降低了學習曲線。技術風險方面，隨著社群的擴大，可能會出現版本不一致的問題，這需要維護者定期更新和管理。整合方面，這些設計檔案可以輕鬆融入現有的硬體設計流程，並且與多種 CAD 軟體相容，降低了整合的摩擦點。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了設計檔案的使用說明，但缺乏具體的範例。安裝過程相對順暢，使用者只需克隆專案即可。文件沒有多語言支持，可能對非英語使用者造成一定障礙。
+> README 文件提供了清晰的指引和範例，讓新手能夠快速上手。安裝過程簡單，只需克隆倉庫即可。文件中包含了詳細的指南，對於新手非常友好，並且社群活躍，能夠提供即時的幫助。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開放的設計檔案，降低了入門門檻。
-> - 支持商業用途的兼容配件設計，促進生態系統發展。
-> - 高解決率的社群支持，提供良好的使用體驗。
+> - 提供真實的 CAD 設計檔案，讓使用者能夠學習和實作。
+> - 開放的授權政策促進社群創新和貢獻。
+> - 多種型號的設計檔案滿足不同使用者的需求。
 
 > [!danger] 缺點
-> - 不允許複製和銷售 Keychron 產品，限制了某些商業模式。
-> - 需要一定的 CAD 操作能力，對新手有一定挑戰。
-> - 設計檔案的更新頻率可能影響使用者的學習進度。
+> - 不允許商業使用 Keychron 的商標，限制了某些商業應用。
+> - 某些設計檔案可能缺乏詳細的說明，對新手不太友好。
+> - 需要一定的 CAD 軟體使用經驗才能充分利用這些檔案。
 
 > [!warning] 注意事項
 > - 不允許複製和銷售 Keychron 鍵盤或滑鼠。
-> - 不支持使用 Keychron 商標作為自己的品牌。
-> - 僅限於 Keychron 產品的兼容配件設計。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供一個開放的鍵盤設計資源，但不如 Keychron 的設計檔案完整，且缺乏商業使用授權。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於鍵盤固件開發，與 Keychron 的硬體設計檔案不同，主要針對軟體層面。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供開放的鍵盤設計資源，但缺乏商業使用授權，限制了使用者的創作自由。 | 如果你需要一個開放的設計資源，但不需要商業使用的靈活性。 | medium，因為需要重新適應不同的設計規範和授權條款。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於鍵盤固件開發，與 Keychron 的硬體設計檔案不同，主要針對軟體層面。 | 如果你的需求主要集中在鍵盤固件的開發和調整，而非硬體設計。 | low，因為主要是轉換到不同的軟體開發環境。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **Keychron-Keyboards-Hardware-Design** | **boneyard** | **codeburn** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供開放的鍵盤設計資源，但缺乏商業使用授權，限制了使用者的創作自由。 | 專注於鍵盤固件開發，與 Keychron 的硬體設計檔案不同，主要針對軟體層面。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的設計規範和授權條款。 | low，因為主要是轉換到不同的軟體開發環境。 |
-> | 適用場景 | 主要場景 | 如果你需要一個開放的設計資源，但不需要商業使用的靈活性。 | 如果你的需求主要集中在鍵盤固件的開發和調整，而非硬體設計。 |
-
-## 成熟度評估
-
-| 項目 | 評估 |
-| --- | --- |
-| 開發階段 | Beta |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
-
-> [!tip] 採用建議
-> 適合愛好者和學生學習，但不建議用於生產環境的核心產品設計。
-
-## 已知陷阱
-
-> [!bug] 踩坑才知道的問題
-
-- [MEDIUM] 某些設計檔案可能缺失，影響使用者的設計進度。
-  - 解法：定期檢查更新，並參與社群討論以獲取最新資訊。
-- **[HIGH]** 使用者可能對 CAD 操作不熟悉，導致學習曲線陡峭。
-  - 解法：尋找線上教程或參加 CAD 課程以提升技能。
-
-## 使用情境適合度
-
-| 情境 | 適合度 | 說明 |
-| --- | --- | --- |
-| 小型硬體設計團隊 | 非常適合 | 提供了豐富的設計資源和社群支持，能夠快速上手。 |
-| 個人愛好者進行鍵盤改造 | 適合 | 開放的設計檔案讓個人能夠自由創作和實驗。 |
-| 大型企業的產品開發 | 不適合 | 不建議用於核心產品設計，因為缺乏商業保障。  |
-
-## 採用成本分析
-
-| 項目 | 評估 |
-| --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
-| 維護負擔 | low |
-| 綁定風險 | low |
-
-> [!tip] 投入 vs 回報
-> 花 5 小時學習 CAD 操作，3 小時整合設計檔案，能夠獲得豐富的設計資源，值得投入。
-
-## 安全性評估
-
-> [!warning] 安全性快速掃描
-> 低風險：不需要高權限，僅存取公開的設計檔案，不涉及敏感資料。
+> - 某些設計檔案可能缺乏詳細的說明，需自行探索。
+> - 不支援直接商業使用 Keychron 的商標。
 
 ## 健康度儀表板
 
@@ -320,10 +250,10 @@ ls -l
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 237 |
+| Forks | 244 |
 | Open Issues | 1 |
 | Issue 解決率 | 95% (19 closed) |
-| 最後推送 | 2026-04-15 |
+| 最後推送 | 2026-04-17 |
 | 建立日期 | 2026-04-04 |
 | 官方網站 | [Link](https://www.keychron.com/) |
 | Repo 大小 | 930.1 MB |
@@ -333,19 +263,20 @@ ls -l
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@keychron-dev](https://github.com/keychron-dev) | 261 |
+> | [@keychron-dev](https://github.com/keychron-dev) | 262 |
 > | [@github-actions[bot]](https://github.com/github-actions[bot]) | 6 |
+> | [@lewis1017](https://github.com/lewis1017) | 3 |
 > | [@codex](https://github.com/codex) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，問題解決率高，定期更新設計檔案。
-**連結**：[文件](https://www.keychron.com/)
+**社群活躍度**：社群活躍，定期更新和回應問題。
+**連結**：[文件](https://github.com/Keychron/Keychron-Keyboards-Hardware-Design/docs) · [Discord](https://discord.com/invite/HAYbRrTsjN)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-13 ~ 2026-04-15）
-> **活躍天數** 3 天 · **最新 commit** Update README.md
+> [!abstract] 最近 10 次 commit（2026-04-14 ~ 2026-04-17）
+> **活躍天數** 3 天 · **最新 commit** Merge pull request #49 from Keychron/test
 
 ## 熱門議題
 
@@ -481,7 +412,7 @@ ls -l
 
 ## 延伸閱讀
 
-相關概念：[[3D 打印]] · [[硬體設計]] · [[機械鍵盤]]
+相關概念：[[3D 打印]] · [[硬體設計]] · [[開源硬體]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[alchaincyf--zhangxuefeng-skill|alchaincyf/zhangxuefeng-skill]]
 
@@ -525,7 +456,7 @@ ls -l
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["3D 打印","硬體設計","機械鍵盤"];
+> const concepts = ["3D 打印","硬體設計","開源硬體"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Keychron--Keychron-Keyboards-Hardware-Design" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
