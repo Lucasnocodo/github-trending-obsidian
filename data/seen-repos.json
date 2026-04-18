@@ -1072,10 +1072,10 @@
   },
   "AgentSeal/codeburn": {
     "first_seen": "2026-04-15",
-    "last_seen": "2026-04-17",
-    "times_seen": 3,
+    "last_seen": "2026-04-18",
+    "times_seen": 4,
     "stars_first": 897,
-    "stars_last": 2283
+    "stars_last": 2575
   },
   "vyfor/rattles": {
     "first_seen": "2026-04-15",
@@ -1100,17 +1100,17 @@
   },
   "alchaincyf/darwin-skill": {
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-17",
-    "times_seen": 2,
+    "last_seen": "2026-04-18",
+    "times_seen": 3,
     "stars_first": 816,
-    "stars_last": 966
+    "stars_last": 1099
   },
   "Mouseww/anything-analyzer": {
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-17",
-    "times_seen": 2,
+    "last_seen": "2026-04-18",
+    "times_seen": 3,
     "stars_first": 798,
-    "stars_last": 1042
+    "stars_last": 1276
   },
   "sterlingcrispin/nothing-ever-happens": {
     "first_seen": "2026-04-16",
@@ -1128,10 +1128,10 @@
   },
   "vercel-labs/wterm": {
     "first_seen": "2026-04-17",
-    "last_seen": "2026-04-17",
-    "times_seen": 1,
+    "last_seen": "2026-04-18",
+    "times_seen": 2,
     "stars_first": 1043,
-    "stars_last": 1043
+    "stars_last": 1337
   },
   "sogonov/anubis": {
     "first_seen": "2026-04-17",
@@ -1142,9 +1142,44 @@
   },
   "Nightmare-Eclipse/RedSun": {
     "first_seen": "2026-04-17",
-    "last_seen": "2026-04-17",
-    "times_seen": 1,
+    "last_seen": "2026-04-18",
+    "times_seen": 2,
     "stars_first": 785,
-    "stars_last": 785
+    "stars_last": 1354
+  },
+  "browser-use/video-use": {
+    "first_seen": "2026-04-18",
+    "last_seen": "2026-04-18",
+    "times_seen": 1,
+    "stars_first": 950,
+    "stars_last": 950
+  },
+  "Robbyant/lingbot-map": {
+    "first_seen": "2026-04-18",
+    "last_seen": "2026-04-18",
+    "times_seen": 1,
+    "stars_first": 914,
+    "stars_last": 914
+  },
+  "lewislulu/html-ppt-skill": {
+    "first_seen": "2026-04-18",
+    "last_seen": "2026-04-18",
+    "times_seen": 1,
+    "stars_first": 909,
+    "stars_last": 909
+  },
+  "BuilderPulse/BuilderPulse": {
+    "first_seen": "2026-04-18",
+    "last_seen": "2026-04-18",
+    "times_seen": 1,
+    "stars_first": 883,
+    "stars_last": 883
+  },
+  "Manavarya09/design-extract": {
+    "first_seen": "2026-04-18",
+    "last_seen": "2026-04-18",
+    "times_seen": 1,
+    "stars_first": 882,
+    "stars_last": 882
   }
 }

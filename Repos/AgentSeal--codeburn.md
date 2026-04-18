@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "See where your AI coding tokens go. Interactive TUI dashboard for Claude Code and Codex cost observability."
 homepage: ""
-stars: 2283
-stars_per_day: 761
-forks: 156
+stars: 2575
+stars_per_day: 644
+forks: 176
 open_issues: 10
 created: 2026-04-13
-pushed_at: 2026-04-16
+pushed_at: 2026-04-18
 first_seen: 2026-04-15
 week: "2026-W16"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "追蹤你的 AI 編碼代幣使用情況，提供互動式 TUI 儀表
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-04-20"
+appearances: 4
+next_review: "2026-04-21"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 42
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-15"
-star_history: "2026-04-15:897,2026-04-15:900,2026-04-16:1789,2026-04-17:2283"
+star_history: "2026-04-15:897,2026-04-15:900,2026-04-16:1789,2026-04-17:2283,2026-04-18:2575"
 tags:
   - github
   - "category/開發工具"
@@ -885,6 +885,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-18|2026-04-18]] — 再次上榜，2.6k stars
 - [[2026-04-17|2026-04-17]] — 再次上榜，2.3k stars
 - [[2026-04-16|2026-04-16]] — 再次上榜，1.8k stars
 - [[2026-04-15|2026-04-15]] — 首次收錄，897 stars
