@@ -7,18 +7,18 @@ language: Python
 license: MIT
 description: "\"OpenHarness: Open Agent Harness with a Built-in Personal Agent--Ohmo!\""
 homepage: ""
-stars: 10213
-stars_per_day: 638
-forks: 1736
-open_issues: 16
+stars: 10346
+stars_per_day: 609
+forks: 1755
+open_issues: 18
 created: 2026-04-01
-pushed_at: 2026-04-17
+pushed_at: 2026-04-18
 first_seen: 2026-04-08
 week: "2026-W15"
 month: "2026-04"
 category: "開發工具"
-subcategory: "AI 助手"
-release_tag: "v0.1.6"
+subcategory: "CLI 工具"
+release_tag: "v0.1.7"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-08
-use_case: "提供一個開源的個人 AI 助手，能夠在多個平台上自動化開發任務。"
+use_case: "提供一個開放的代理架構，讓個人 AI 助手 Ohmo 能夠在多個平台上運作。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 1
 next_review: "2026-04-11"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 80
-repo_size_kb: 10808
+issue_close_rate: 78
+repo_size_kb: 10801
 readme_length: 10000
 bus_factor: 1
-last_release_days: 8
-release_cadence: "monthly"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-08"
-star_history: "2026-04-08:7142,2026-04-08:7164,2026-04-09:7764,2026-04-10:8224,2026-04-11:8613,2026-04-12:8807,2026-04-13:9045,2026-04-14:9341,2026-04-15:9616,2026-04-16:9857,2026-04-17:10038,2026-04-18:10213"
+star_history: "2026-04-08:7142,2026-04-08:7164,2026-04-09:7764,2026-04-10:8224,2026-04-11:8613,2026-04-12:8807,2026-04-13:9045,2026-04-14:9341,2026-04-15:9616,2026-04-16:9857,2026-04-17:10038,2026-04-18:10213,2026-04-19:10346"
 tags:
   - github
   - "category/開發工具"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "OpenHarness"
   - "HKUDS/OpenHarness"
-  - "提供一個開源的個人 AI 助手，能夠在多個平台上自動化開發任務。"
+  - "提供一個開放的代理架構，讓個人 AI 助手 Ohmo 能夠在多個平台上運作。"
 ---
 
 # OpenHarness
 
-**10.2k** stars · **638** stars/天 · 建立 16 天前 · Python · MIT
+**10.3k** stars · **609** stars/天 · 建立 17 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/HKUDS--OpenHarness");
@@ -70,23 +70,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`ORG` `v0.1.6` `easy-install`
+`ORG` `v0.1.7` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供一個開源的個人 AI 助手，能夠在多個平台上自動化開發任務。
+> 提供一個開放的代理架構，讓個人 AI 助手 Ohmo 能夠在多個平台上運作。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (638 stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (609 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 希望在多平台上使用 AI 助手來自動化開發任務的軟體工程師。
-> **一句話重點** OpenHarness 不僅是一個 AI 助手，更是一個可擴展的開發平台，能夠支持團隊協作和多任務處理。
+> **適合** 希望在多平台上運行個人 AI 助手但不想處理繁瑣 API 配置的開發者。
+> **一句話重點** OpenHarness 的設計不僅提供了強大的功能，還讓用戶能夠輕鬆擴展和自定義代理行為，這對於追求靈活性的開發者來說是個重要優勢。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/HKUDS--OpenHarness");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "AI 助手" && p.file.name !== "HKUDS--OpenHarness" && p.status !== "archived")
+>     .where(p => p.subcategory === "CLI 工具" && p.file.name !== "HKUDS--OpenHarness" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -97,116 +97,108 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 AI 助手 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 CLI 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習，10 小時整合，得到高效的 AI 助手，值得投入。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到靈活的 AI 助手功能，值得考慮。
 
 > [!abstract] 核心創新
-> OpenHarness 提供了一個完整的代理基礎架構，能夠將 LLM 轉化為功能性代理。
+> OpenHarness 提供了一個開放的代理架構，讓用戶能夠輕鬆整合多種 AI 服務，並支持長時間的上下文記憶。
 
 ## 專案簡介
 
-OpenHarness 是一個開源的代理架構，旨在為開發者提供一個輕量級的 AI 助手環境。其核心功能是 ohmo，一個個人 AI 助手，能夠在 Feishu、Slack、Telegram 和 Discord 等平台上運行。使用者只需透過簡單的命令，如 `ohmo init` 和 `ohmo config`，即可快速設置和啟動助手，無需額外的 API 金鑰，因為它可以直接使用現有的 Claude Code 或 Codex 訂閱。這種設計使得開發者可以專注於編寫代碼，而不必擔心複雜的配置過程。
+OpenHarness 是一個開源的代理架構，旨在為用戶提供一個靈活的 AI 助手環境，特別是個人助手 Ohmo。用戶可以透過 CLI 指令 `oh` 啟動 OpenHarness，並整合多種 AI 服務，如 Claude 和 OpenAI，無需額外的 API 金鑰。這個架構支持多種工具的並行執行、API 重試、上下文記憶及多代理協調等功能，讓用戶能夠進行長時間的互動而不會丟失上下文。技術上，OpenHarness 使用 Python 和 TypeScript，並依賴多個庫如 `anthropic` 和 `openai`，以確保其功能的強大和靈活性。這個工具的賣點在於其可擴展性，允許用戶根據需求自定義代理的行為和能力。
 
-在技術實作方面，OpenHarness 使用 Python 和 TypeScript，並依賴多個強大的庫，如 `anthropic` 和 `openai`，以支持不同的 AI 模型。其架構允許多代理協作，並提供了豐富的工具集，如文件操作、Shell 命令和網絡請求，這使得它在功能上比許多傳統的聊天機器人更為強大。
-
-
-
-與其他類似工具相比，如 `0xGF/boneyard` 和 `AgentSeal/codeburn`，OpenHarness 的優勢在於其多平台支持和無需額外 API 金鑰的設計，這降低了使用門檻。相對於 `Claude` 和 `OpenAI` 的原生 API，OpenHarness 提供了更靈活的配置選項，允許用戶根據需求自定義工作流。
-
-在實際使用中，OpenHarness 能夠處理大量的請求，並支持多個用戶的並行操作，這使得它適合於團隊協作和大型項目開發。社群活躍度高，開發者對於問題的回應速度快，這對於新手來說是一個很好的支持。
-
-總體來說，OpenHarness 是一個值得關注的項目，特別是對於需要一個高效能 AI 助手的開發者。未來六個月內，預計將會有更多的功能和改進，特別是在多代理協作和用戶界面方面。
+與其他類似工具相比，如 AgentSeal 和 OpenClaw，OpenHarness 提供了更高的自定義能力和多平台支持，適合需要長時間運作的 AI 助手的用戶。使用者可以在多個平台（如 Slack、Telegram 和 Discord）上與 Ohmo 互動，並且可以在非互動模式下使用管道和腳本進行自動化操作。這個工具的設計考量了用戶的便利性和擴展性，並且在社群中有活躍的貢獻者，顯示出其健康的發展潛力。對於小型團隊或個人開發者來說，這是一個值得考慮的選擇，尤其是那些希望在現有的 AI 生態系統中進行實驗和擴展的用戶。
 
 **技術棧**：`Python 3.10` · `TypeScript` · `Docker`
 
 ## 重點功能
 
-- 個人 AI 助手 ohmo — 支持在多個平台（Feishu、Slack、Telegram、Discord）上運行，無需額外 API 金鑰。
-- 多代理協作 — 支持團隊內部的任務分配和協作，能夠自動生成 PR 和執行測試。
-- 豐富的工具集 — 提供 43 種工具（如文件、Shell、網絡請求等），可擴展性強。
-- 上下文記憶 — 支持持久記憶和上下文壓縮，能夠在長時間會話中保持狀態。
-- 簡單的命令行界面 — 使用 `oh` 命令快速啟動和配置，降低使用門檻。
+- 多代理協調 — 支持同時運行多個代理，並能夠進行任務分配和管理。
+- 上下文記憶 — 自動保存上下文，支持長時間的會話而不丟失信息。
+- API 重試與成本追蹤 — 內建的 API 重試機制，並能夠追蹤使用成本。
+- 多種工具支持 — 提供 43 種工具（如文件、Shell、搜索等）供用戶使用。
+- 即時通訊集成 — 支持在 Slack、Telegram、Discord 等平台上與 Ohmo 互動。
 
 ## 快速開始
 
 1. 安裝 OpenHarness
 ```bash
-pip install openharness-ai
+curl -fsSL https://raw.githubusercontent.com/HKUDS/OpenHarness/main/scripts/install.sh | bash
 ```
-2. 設置 ohmo 環境
+2. 啟動 OpenHarness
+```bash
+oh
+```
+3. 設置 Ohmo 個人代理
 ```bash
 ohmo init
-```
-3. 啟動 ohmo 代理
-```bash
-ohmo gateway start
 ```
 
 ## 程式碼範例
 
 ```python
 {
-  "前置條件": "已安裝 OpenHarness 並配置好環境",
-  "指令": "ohmo init && ohmo config && ohmo gateway start",
-  "預期輸出": "ohmo 現在在你的聊天應用中運行。"
+  "前置條件": "安裝 OpenHarness 並啟動",
+  "指令": "ohmo init",
+  "預期輸出": "初始化 ~/.ohmo 工作區"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 16 天就累積 10213 stars（638/天），forks 1736（17.0%），這顯示出強勁的增長潛力。主要貢獻者包括多位活躍的開發者，這為專案的持續發展提供了保障。OpenHarness 解決了開發者在使用 AI 助手時的配置繁瑣問題，讓使用者能夠更快速地上手。社群的活躍討論和問題解決率高達 80%，顯示出其良好的使用體驗和支持。這些因素共同促成了其快速的流行。
+> 建立 17 天內累積 10346 stars（609/天），forks 1755（17.0%），顯示出強勁的增長潛力。作者團隊由多位活躍的開源貢獻者組成，過去在 AI 和開源社區中有豐富的經驗。這個專案解決了用戶在使用多種 AI 服務時的整合問題，提供了一個統一的接口來管理和使用不同的 AI 模型。近期的推廣活動和社群討論也可能促進了其曝光率。技術上，OpenHarness 利用 Python 和 TypeScript 的組合，使其在開發和擴展上具備良好的靈活性，這對於開發者來說是一個重要的吸引力。forks/stars 比率為 17.0%，顯示出許多人在實際修改和使用此工具，這是一個健康的信號。
 
 ## 適合誰使用
 
-**目標受眾**：希望在多平台上使用 AI 助手來自動化開發任務的軟體工程師。
+**目標受眾**：希望在多平台上運行個人 AI 助手但不想處理繁瑣 API 配置的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來在 Slack 中自動生成 API 文檔，因為這樣可以節省手動編寫的時間，並確保文檔的準確性。
-> - 前端開發者用它來在 Discord 中即時獲取代碼建議，因為這能提高開發效率，減少查詢資料的時間。
-> - 團隊協作時，項目經理用它來在 Telegram 中監控開發進度，因為它能夠自動更新任務狀態，減少手動報告的需要。
+> - 後端工程師用它來整合多個 AI 服務，因為可以透過一個統一的命令 `oh` 來管理不同的模型和工具。
+> - 產品經理用它來快速生成和測試產品文檔，因為 Ohmo 能夠在 Slack 中自動撰寫和開啟 PR，節省了大量時間。
+> - 開發者用它來在 CI/CD 流程中自動化代碼檢查和修復，因為可以使用 `oh -p` 指令來快速執行代碼分析並獲得即時反饋。
 
 ## 架構分析
 
-OpenHarness 采用了模組化的架構設計，將核心功能分為多個獨立模組，這樣的設計使得擴展和維護變得更加容易。每個模組專注於特定的功能，如上下文管理、工具調用和多代理協作，這樣可以在不影響整體系統的情況下進行更新和擴展。資料流方面，使用者的請求經過代理層處理，然後調用相應的工具或服務，最終返回結果。選擇這種架構的代價是需要更多的初始設置和配置，但這樣的靈活性使得 OpenHarness 能夠適應不同的使用場景和需求。擴展性方面，這種模組化設計允許開發者根據需要添加新的工具或功能，而不會影響到現有的系統運行。
+OpenHarness 採用模組化架構，將代理功能分為多個可擴展的模組。這樣的設計使得用戶可以根據需求選擇和整合不同的工具和 API。資料流方面，使用者透過 CLI 指令與代理互動，代理則通過 API 調用來執行任務。這種設計的優勢在於靈活性和可擴展性，但代價是需要用戶具備一定的技術背景來進行配置和擴展。擴展性方面，OpenHarness 可以輕鬆整合新的工具和 API，但在大型專案中可能會面臨管理複雜度的挑戰。
 
 ## 技術深入分析
 
-OpenHarness 的核心技術機制是基於 Python 和 TypeScript 的模組化設計，這使得它能夠靈活地集成多種 AI 模型和工具。其使用的 `anthropic` 和 `openai` 庫提供了強大的 API 支持，能夠輕鬆調用各種 AI 功能。效能方面，OpenHarness 能夠處理大量的請求，並支持多用戶的並行操作，這使得它在團隊協作中表現出色。設計取捨方面，選擇了模組化架構以提高靈活性，但這也意味著初始設置會更為複雜。技術風險方面，隨著用戶數量的增加，可能會出現性能瓶頸，這需要在未來的版本中進行優化。整合分析方面，OpenHarness 與主流的 CI/CD 工具鏈（如 GitHub Actions）兼容，並且可以輕鬆集成到現有的開發流程中。整體而言，OpenHarness 提供了一個強大的平台，能夠支持現代開發的各種需求。
+OpenHarness 的核心技術機制是其模組化的代理架構，這使得用戶可以根據需求選擇不同的工具和 API。它使用 Python 和 TypeScript 作為主要開發語言，並依賴多個庫來實現其功能，如 `anthropic` 和 `openai`。效能方面，OpenHarness 能夠處理多個並行請求，並且支持上下文記憶，這對於長時間的會話非常重要。設計上，選擇 Python 作為主要語言是因為其生態系統豐富，適合快速開發和迭代，但這也可能導致性能瓶頸，特別是在高並發的情況下。技術風險方面，隨著用戶數量的增加，可能會面臨 API 限制和性能下降的問題。整合方面，OpenHarness 與主流的 CI/CD 工具相容性良好，但對於新手來說，學習曲線可能較陡峭。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，包含詳細的安裝和配置步驟。安裝過程順暢，沒有明顯的坑。提供了良好的入門指南，適合新手使用。
+> README 文件清晰，提供了詳細的安裝和使用說明。安裝過程相對順暢，但對於新手來說，可能需要一些時間來熟悉 CLI 指令。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 多平台支持，能夠在不同的聊天應用中運行
-> - 豐富的工具集，支持多種開發任務
-> - 簡單易用的命令行界面，降低了使用門檻
+> - 靈活的代理架構，支持多種 AI 服務的整合。
+> - 強大的上下文記憶功能，適合長時間的互動。
+> - 活躍的社群和貢獻者，持續更新和改進。
 
 > [!danger] 缺點
-> - 需要有效的 Claude Code 或 Codex 訂閱
-> - 在高並發情況下可能會遇到性能瓶頸
-> - 對於新手來說，初始配置可能會有些複雜
+> - 仍在 alpha 階段，可能存在不穩定性。
+> - 對於新手來說，安裝和配置過程可能有些複雜。
+> - 在 Windows 環境下的支持尚不完善。
 
 > [!warning] 注意事項
 > - 僅支援 Python 3.10 以上版本
-> - 需要有效的 Claude Code 或 Codex 訂閱
-> - 在某些平台上可能會遇到性能瓶頸，特別是在高並發情況下
+> - 在 Windows 環境下可能需要額外的配置
+> - 目前仍在 alpha 階段，API 可能會有變動
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 AI 助手功能，但缺乏多平台支持和即時協作功能。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於特定的開發任務自動化，而 OpenHarness 提供更廣泛的工具集和靈活性。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | AgentSeal 提供類似的代理功能，但專注於安全性和隱私保護，而 OpenHarness 更加靈活且易於擴展。 |
+| [HKUDS/OpenClaw](https://github.com/HKUDS/OpenClaw) | OpenClaw 專注於醫療技能的開發，而 OpenHarness 提供更廣泛的工具和多平台支持。 |
 
 ## 替代方案決策
 
@@ -214,46 +206,44 @@ OpenHarness 的核心技術機制是基於 Python 和 TypeScript 的模組化設
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 使用 Rust 實作，記憶體用量少，但生態系統不如 Python 豐富。 | 如果你的團隊已經在使用 Rust 並需要高效能的解決方案。 | medium，因為需要重寫部分代碼以適應 Rust 環境。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於特定的開發任務自動化，功能較為單一。 | 如果你的需求非常專注於某一類型的任務，且不需要多平台支持。 | low，因為功能相似，遷移成本較低。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了一個簡化的代理架構，專注於特定的任務，而 OpenHarness 則提供更廣泛的功能和擴展性。 | 如果你的需求僅限於特定任務，Boneyard 可能會更簡單易用。 | low，因為 Boneyard 的設置較為簡單，且功能較少。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | AgentSeal 提供了更強的安全性和隱私保護，而 OpenHarness 更加靈活且易於擴展。 | 如果你的應用需要更高的安全性，AgentSeal 會是更好的選擇。 | medium，因為需要重新配置安全設置。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **OpenHarness** | **boneyard** | **codeburn** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量少，但生態系統不如 Python 豐富。 | 專注於特定的開發任務自動化，功能較為單一。 |
-> | 遷移成本 | - | medium，因為需要重寫部分代碼以適應 Rust 環境。 | low，因為功能相似，遷移成本較低。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Rust 並需要高效能的解決方案。 | 如果你的需求非常專注於某一類型的任務，且不需要多平台支持。 |
+> | 技術路線 | 本專案 | Boneyard 提供了一個簡化的代理架構，專注於特定的任務，而 OpenHarness 則提供更廣泛的功能和擴展性。 | AgentSeal 提供了更強的安全性和隱私保護，而 OpenHarness 更加靈活且易於擴展。 |
+> | 遷移成本 | - | low，因為 Boneyard 的設置較為簡單，且功能較少。 | medium，因為需要重新配置安全設置。 |
+> | 適用場景 | 主要場景 | 如果你的需求僅限於特定任務，Boneyard 可能會更簡單易 | 如果你的應用需要更高的安全性，AgentSeal 會是更好的 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人或小型團隊的實驗性項目，不建議用於生產環境的核心功能。
+> 適合個人試用和開發，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高並發情況下，可能會出現性能瓶頸，導致請求延遲
-  - 解法：考慮使用負載均衡或分佈式部署
-- [MEDIUM] 某些平台的兼容性問題，特別是在 Windows 上
-  - 解法：使用 WSL 或 Docker 進行開發
-- [MEDIUM] 初始配置過程中可能會遇到 API 鑰匙的配置錯誤
-  - 解法：仔細檢查環境變數和配置文件
+- **[HIGH]** 在 Windows 環境下安裝時可能會遇到權限問題
+  - 解法：確保以管理員身份運行 PowerShell
+- [MEDIUM] 某些 API 可能會因為流量限制而無法正常使用
+  - 解法：考慮使用本地模型或減少請求頻率
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 其輕量級的設計和多平台支持非常符合小型團隊的需求。 |
-| 大型企業的核心系統 | 不適合 | 目前仍在 beta 階段，穩定性和性能可能無法滿足企業需求。 |
-| 開發者希望快速原型設計的項目 | 適合 | 提供了快速的設置和豐富的工具集，能夠加速開發過程。  |
+| 小型團隊的 AI 助手開發 | 非常適合 | 提供靈活的架構和多平台支持，適合快速迭代和實驗。 |
+| 大型企業的生產環境 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
+| 個人開發者的 AI 工具整合 | 適合 | 簡單的安裝和多種工具支持，適合快速上手。 |
 
 ## 採用成本分析
 
@@ -262,15 +252,15 @@ OpenHarness 的核心技術機制是基於 Python 和 TypeScript 的模組化設
 | 學習時間 | ~5 小時 |
 | 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到高效的 AI 助手，值得投入。
+> 花 5 小時學習，10 小時整合，得到靈活的 AI 助手功能，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，僅存取用戶的聊天應用資料。依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
+> 中等風險：工具本身不需要高權限，但需要存取 API 金鑰和敏感資料，建議在安全的環境中使用。
 
 ## 健康度儀表板
 
@@ -335,12 +325,12 @@ OpenHarness 的核心技術機制是基於 Python 和 TypeScript 的模組化設
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 1.7k |
-| Open Issues | 16 |
-| Issue 解決率 | 80% (65 closed) |
-| 最後推送 | 2026-04-17 |
+| Forks | 1.8k |
+| Open Issues | 18 |
+| Issue 解決率 | 78% (65 closed) |
+| 最後推送 | 2026-04-18 |
 | 建立日期 | 2026-04-01 |
-| Repo 大小 | 10.6 MB |
+| Repo 大小 | 10.5 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/HKUDS/OpenHarness) |
 
 > [!info]- 語言組成
@@ -355,55 +345,42 @@ OpenHarness 的核心技術機制是基於 Python 和 TypeScript 的模組化設
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@tjb-tech](https://github.com/tjb-tech) | 179 |
+> | [@tjb-tech](https://github.com/tjb-tech) | 180 |
 > | [@chaohuang-ai](https://github.com/chaohuang-ai) | 32 |
 > | [@glitch-ux](https://github.com/glitch-ux) | 10 |
 > | [@siaochuan](https://github.com/siaochuan) | 9 |
 > | [@yl-jiang](https://github.com/yl-jiang) | 8 |
 
-**最新版本**：v0.1.6 — v0.1.6 — ohmo Personal Agent & Auto-Compaction (2026-04-10)
+**最新版本**：v0.1.7 — v0.1.7 — TUI Polish & Safer Install (2026-04-18)
 
 > [!info]- Release Notes
-> ## Highlights
+> Highlights for 0.1.7
 > 
-> **ohmo** — a personal AI agent built on OpenHarness. Chat with ohmo in Feishu / Slack / Telegram / Discord, and it forks branches, writes code, runs tests, and opens PRs on its own. ohmo runs on your existing Claude Code or Codex subscription — no extra API key needed.
+> - Safer install flow: `scripts/install.sh` now links `oh`, `ohmo`, and `openharness` into `~/.local/bin` instead of prepending the virtualenv `bin` directory to `PATH`, which avoids clobbering Conda-managed shells.
+> - Better React TUI input: `Shift+Enter` now inserts a newline while plain `Enter` still submits.
+> - Quieter busy-state animation: the extra pseudo-animation line was removed, and Windows terminals now use conservative ASCII spinner frames to reduce flashing.
+> - PyPI package published: `openharness-ai==0.1.7`.
 > 
-> ```bash
-> pip install openharness-ai
-> oh setup
-> oh
-> ```
 > 
-> ```bash
-> ohmo init && ohmo config && ohmo gateway start
-> ```
-> 
-> ---
-> 
-> ## What's New since v0.1.0
-> 
-> ### 🤖 Swarm & Multi-Agent
-> - Full coordinator orchestration system with agent definition loading
-> - InProcessBackend with contextvars isolation, subprocess backend for pollable agents
-> - WorktreeManager with git worktree isolation per teammate
-> - TeamLifecycleManager with persistent team file management
-> - Mailbox communication system with file-lock layer extracted to standalone module
-> - Permission sync protocol for leader-worker bridging
-> - Subprocess teammates run in headless worker mode
-> 
-> ### 🧠 Auto-Compaction
-> - Context auto-compression for long-running sessions
-> - Task state and channel logs preserved across compaction
+> ## What's Changed
+> * feat(tui): pair tool-call and tool-result rows for cleaner transcript by @yl-jiang in https://github.com/HKUDS/OpenHarness/pull/111
+> * fix(auth): cache keyring probe and rename misleading encrypt/decrypt by @glitch-ux in https://github.com/HKUDS/OpenHarness/pull/106
+> * feat(providers): add built-in Google Gemini provider profile by @glitch-ux in https://github.com/HKUDS/OpenHarness/pull/105
+> * fix: regenerate system prompt on checkpoint restore by @JiangweiYe76 in https://github.com/HKUDS/OpenHarness/pull/104
+> * fix(tui): keep busy spinner active throughout agent turn by @yl-jiang in https://github.com/HKUDS/OpenHarness/pull/116
+> * fix(config): strip ANSI escape sequences from model names by @jiakeboge in https://github.com/HKUDS/OpenHarness/pull/114
+> * fix(ui): show effective runtime model in header by @siaochuan in https://github.com/HKUDS/OpenHarness/pull/95
+> ...（完整內容見 GitHub）
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，問題解決率達到 80%。
+**社群活躍度**：社群活躍，定期更新和回應問題。
 **連結**：[文件](https://github.com/HKUDS/OpenHarness/blob/main/README.md)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-16 ~ 2026-04-17）
-> **活躍天數** 2 天 · **最新 commit** fix(terminal): support multiline input and reduce flashing
+> [!abstract] 最近 10 次 commit（2026-04-16 ~ 2026-04-18）
+> **活躍天數** 3 天 · **最新 commit** release: publish 0.1.7
 
 ## 熱門議題
 
@@ -412,6 +389,7 @@ OpenHarness 的核心技術機制是基於 Python 和 TypeScript 的模組化設
 > | --- | --- | --- | --- |
 > | [#40](https://github.com/HKUDS/OpenHarness/issues/40) | 是否会支持ACP协议？ `enhancement` | 1 | 0 |
 > | [#18](https://github.com/HKUDS/OpenHarness/issues/18) | [Discussion] Run-level evidence layer: structured archive fo | 1 | 1 |
+> | [#160](https://github.com/HKUDS/OpenHarness/issues/160) | how to delete openharness in my mac | 0 | 1 |
 > | [#102](https://github.com/HKUDS/OpenHarness/issues/102) | 建立 OpenClaw 内部后台任务数据模型 | 0 | 0 |
 
 ## README 摘錄
@@ -609,6 +587,10 @@ OpenHarness 的核心技術機制是基於 Python 和 TypeScript 的模組化設
 > 
 > ## 📰 What's New
 > 
+> - **2026-04-18** ⚙️ **v0.1.7** — Packaging & TUI polish:
+>   - Install script now links `oh`, `ohmo`, and `openharness` into `~/.local/bin` instead of prepending the virtualenv `bin` directory to `PATH`, which avoids clobbering Conda-managed shells.
+>   - React TUI now supports `Shift+Enter` to insert a newline while keeping plain `Enter` as submit.
+>   - Busy-state animation in the React TUI is quieter and less error-prone on Windows terminals, with conservative spinner frames and reduced flashing.
 > - **2026-04-10** 🧠 **v0.1.6** — Auto-Compaction & Markdown TUI:
 >   - Auto-Compaction preserves task state and channel logs across context compression — agents can run multi-day sessions without manual compact/clear
 >   - Subprocess teammates run in headless worker mode; agent team creation stabilized
@@ -661,44 +643,23 @@ OpenHarness 的核心技術機制是基於 Python 和 TypeScript 的模組化設
 > ```bash
 > oh
 > 
-> # On Windows PowerShell, use: openh
-> ```
-> 
->   
-> 
-> 
-> ### 4. Set up ohmo (Personal Agent)
-> 
-> Want an AI agent that works for you from Feishu / Slack / Telegram / Discord?
-> 
-> ```bash
-> ohmo init             # initialize ~/.ohmo workspace
-> ohmo config           # configure channels and provider
-> ohmo gateway start    # start the gateway — ohmo is now live in your chat app
-> ```
-> 
-> ohmo runs on your existing **Claude Code subscription** or **Codex subscription** — no extra API key needed.
-> 
-> 
-> ### Non-Interactive Mode (Pipes & Scripts)
-> 
-> ```bash
+> # On Windows PowerShell, 
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[自動化]] · [[CLI/TUI]]
+相關概念：[[Agent 框架]] · [[CLI/TUI]] · [[多模態]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]]
+相關專案：[[AgentSeal--codeburn|AgentSeal/codeburn]] · [[0xGF--boneyard|0xGF/boneyard]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]]
 
 [GitHub](https://github.com/HKUDS/OpenHarness)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：AI 助手）
+> [!note]- 直接競品（同子分類：CLI 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "AI 助手" AND file.name != "HKUDS--OpenHarness"
+> WHERE subcategory = "CLI 工具" AND file.name != "HKUDS--OpenHarness"
 > SORT stars DESC
 > ```
 
@@ -730,7 +691,7 @@ OpenHarness 的核心技術機制是基於 Python 和 TypeScript 的模組化設
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["多模態","自動化","CLI/TUI"];
+> const concepts = ["Agent 框架","CLI/TUI","多模態"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "HKUDS--OpenHarness" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

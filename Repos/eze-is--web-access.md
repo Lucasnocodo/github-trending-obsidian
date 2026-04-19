@@ -7,26 +7,26 @@ language: JavaScript
 license: N/A
 description: "给 Claude Code 装上完整联网能力的 skill：三层通道调度 + 浏览器 CDP + 并行分治"
 homepage: ""
-stars: 5201
-stars_per_day: 173
-forks: 371
-open_issues: 24
+stars: 5250
+stars_per_day: 169
+forks: 378
+open_issues: 21
 created: 2026-03-18
-pushed_at: 2026-04-10
+pushed_at: 2026-04-18
 first_seen: 2026-03-25
 week: "2026-W13"
 month: "2026-03"
 category: "開發工具"
 subcategory: "自動化"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-25
-use_case: "為 AI Agent 提供完整的網路能力，結合調度策略與瀏覽器自動化。"
+use_case: "為 AI Agent 提供完整的網絡能力，支持多種操作和策略。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,28 +34,29 @@ appearances: 1
 next_review: "2026-04-01"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 44
-repo_size_kb: 47
-readme_length: 3963
+issue_close_rate: 51
+repo_size_kb: 58
+readme_length: 4232
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-25"
-star_history: "2026-03-25:1010,2026-03-25:1026,2026-03-26:1444,2026-03-27:1721,2026-03-29:2026,2026-03-30:2090,2026-03-31:2833,2026-04-01:3170,2026-04-02:3404,2026-04-03:3585,2026-04-04:3726,2026-04-05:3802,2026-04-06:3927,2026-04-07:4085,2026-04-08:4234,2026-04-09:4373,2026-04-10:4478,2026-04-11:4557,2026-04-12:4599,2026-04-13:4672,2026-04-14:4785,2026-04-15:4886,2026-04-16:4980,2026-04-17:5087,2026-04-18:5201"
+star_history: "2026-03-25:1010,2026-03-25:1026,2026-03-26:1444,2026-03-27:1721,2026-03-29:2026,2026-03-30:2090,2026-03-31:2833,2026-04-01:3170,2026-04-02:3404,2026-04-03:3585,2026-04-04:3726,2026-04-05:3802,2026-04-06:3927,2026-04-07:4085,2026-04-08:4234,2026-04-09:4373,2026-04-10:4478,2026-04-11:4557,2026-04-12:4599,2026-04-13:4672,2026-04-14:4785,2026-04-15:4886,2026-04-16:4980,2026-04-17:5087,2026-04-18:5201,2026-04-19:5250"
 tags:
   - github
   - "category/開發工具"
   - "lang/javascript"
+  - easy_install
 aliases:
   - "web-access"
   - "eze-is/web-access"
-  - "為 AI Agent 提供完整的網路能力，結合調度策略與瀏覽器自動化。"
+  - "為 AI Agent 提供完整的網絡能力，支持多種操作和策略。"
 ---
 
 # web-access
 
-**5.2k** stars · **173** stars/天 · 建立 30 天前 · JavaScript · 未標註授權
+**5.3k** stars · **169** stars/天 · 建立 31 天前 · JavaScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/eze-is--web-access");
@@ -68,14 +69,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
+`easy-install`
+
 > [!summary] 一句話摘要
-> 為 AI Agent 提供完整的網路能力，結合調度策略與瀏覽器自動化。
+> 為 AI Agent 提供完整的網絡能力，支持多種操作和策略。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (173 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 7 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要進行網頁自動化操作的開發者，尤其是對 AI Agent 有需求的團隊。
-> **一句話重點** 這個專案不僅提供了網路自動化的能力，更是對 AI Agent 的網路操作進行了深度的思考與設計。
+> **安裝難度** Easy · **專案狀態** Growing · **熱度** Hot (169 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
+> **適合** 需要為 AI Agent 增加網絡能力的開發者，特別是對自動化有需求的團隊。
+> **一句話重點** 這個專案不僅提升了 AI Agent 的網絡能力，還提供了靈活的操作方式，讓自動化變得更加高效。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -98,106 +101,105 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到靈活的網頁自動化能力，值得嘗試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，3 小時整合，得到靈活的網頁自動化能力，值得投入。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於結合了多種網路工具的自動選擇與瀏覽器操作能力，提升了 AI Agent 的網路能力。
+> 提供了自動選擇網絡工具和多種操作方式的能力，提升了 AI Agent 的網絡能力。
 
 ## 專案簡介
 
-這個專案的核心機制是為 AI Agent 提供一個完整的網路能力，通過三層通道調度、CDP 瀏覽器操作和並行分治來實現。使用者可以透過簡單的指令讓 Agent 自動選擇合適的網路工具（如 WebSearch、curl 等），並進行網頁操作。最關鍵的指令是 `npx skills add eze-is/web-access`，這樣就能快速安裝並啟用該技能。這個工具的賣點在於其靈活性和自動化能力，能夠根據不同場景自動選擇最佳的操作方式，並且支持多種操作模式，如 JS 點擊和真實鼠標事件。技術上，專案使用 Node.js 來實現跨平台支持，並且利用 WebSocket 來與 Chrome 進行直接連接，這樣的設計使得操作更為高效。
+這個專案的核心機制是為 AI Agent 增加完整的網絡能力，透過三層通道調度、CDP 瀏覽器操作和並行分治來實現。使用者可以透過指令如 `/click` 和 `/setFiles` 來進行網頁操作，並且可以根據場景自動選擇合適的網絡工具（如 WebSearch、curl 等）。這樣的設計使得 Agent 能夠在動態網頁上進行交互，並且能夠在多目標任務中分發子 Agent 進行並行執行，從而提高效率。技術上，專案使用了 Node.js 作為後端，並且依賴 Chrome 的 CDP 進行瀏覽器操作，這樣的選擇使得它能夠直接利用使用者的 Chrome 瀏覽器，並且支持多平台（Windows、Linux、macOS）。
 
-與其他類似工具相比，如 0xGF/boneyard 和 AgentSeal/codeburn，這個專案的優勢在於其強大的瀏覽器自動化能力和多種操作模式的支持，能夠在更複雜的場景中表現出色。實際使用中，這個工具能夠處理多個目標的並行操作，並且能夠記錄和重用操作經驗，這對於需要頻繁進行網頁操作的使用者來說非常有價值。需要注意的是，使用該工具進行社交平台的自動化操作可能會面臨帳號被限流或封禁的風險，因此建議使用小號進行測試。整體來看，這個專案目前處於 beta 階段，適合需要進行網頁自動化的開發者使用，未來可能會進一步增強其穩定性和功能。適合的使用情境包括需要進行網頁數據抓取的開發者和需要自動化社交媒體操作的使用者，但不建議用於生產環境的核心任務。
+與其他類似工具相比，如 AgentSeal/codeburn 和 0xGF/boneyard，這個專案的優勢在於其能夠自動選擇合適的網絡工具，並且提供了更為靈活的操作方式。實際使用中，這個工具可以處理大量的網頁操作，但在高頻次的請求下可能會遇到速率限制的問題。維護者社群活躍，最近的提交顯示出持續的改進和修復。這個專案目前處於 beta 階段，適合對網頁自動化有需求的開發者使用，未來可能會進一步優化性能和擴展功能。
 
 **技術棧**：`Node.js 22+` · `Chrome CDP`
 
 ## 重點功能
 
-- 自動選擇網路工具 — 根據場景自動選擇 WebSearch、curl 等工具進行操作。
-- CDP Proxy 瀏覽器操作 — 直連 Chrome，支持動態頁面和交互操作。
-- 三種點擊方式 — 支持 JS 點擊、真實鼠標事件和文件上傳。
-- 並行分治 — 多目標時分發子 Agent 並行執行，提升效率。
-- 站點經驗積累 — 按域名存儲操作經驗，跨 session 复用。
-- 媒體提取 — 從 DOM 直接提取圖片/視頻 URL，支持截帧分析。
+- 自動選擇網絡工具 — 根據場景自動選擇 WebSearch、curl 等工具。
+- CDP 瀏覽器操作 — 直接連接用戶的 Chrome，支持動態頁面和交互操作。
+- 多種點擊方式 — 支持 JS click、真實鼠標事件和文件上傳。
+- 本地資源檢索 — 從 Chrome 書籤和歷史中查找 URL。
+- 並行分治 — 支持多目標任務的並行執行，提升效率。
+- 站點經驗積累 — 按域名存儲操作經驗，跨 session 復用。
+- 媒體提取 — 從 DOM 中提取圖片和視頻 URL。
 
 ## 快速開始
 
-1. 使用 npx 安裝技能
+1. 使用 npx 安裝
 ```bash
 npx skills add eze-is/web-access
 ```
-2. 啟動 CDP Proxy
+2. 讓 Agent 自動安裝
 ```bash
-node "${CLAUDE_SKILL_DIR}/scripts/cdp-proxy.mjs" &
+帮我安装这个 skill：https://github.com/eze-is/web-access
 ```
-3. 執行網頁操作
+3. 手動安裝
 ```bash
-curl -s "http://localhost:3456/new?url=https://example.com"
+git clone https://github.com/eze-is/web-access ~/.claude/skills/web-access
 ```
 
 ## 程式碼範例
 
 ```js
-[
-  "# 前置條件：需要 Node.js 22+ 和 Chrome 開啟遠程調試；",
-  "curl -s \"http://localhost:3456/click?target=ID\" -d 'button.submit'  # JS 點擊；",
-  "# 預期輸出：執行指定的 JS 代碼。"
-]
+{
+  "前置條件": "需要 Node.js 22+ 和 Chrome 開啟遠程調試",
+  "指令": "node \"${CLAUDE_SKILL_DIR}/scripts/check-deps.mjs\"",
+  "預期輸出": "檢查環境依賴是否滿足"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 30 天內累積 5201 stars（173/天），forks 371（7.1%），顯示出穩定的增長趨勢。作者 EzeW 和團隊在 AI 相關領域有豐富的經驗，這個專案解決了 AI Agent 在網路操作上的不足，之前的工具如 WebSearch 和 WebFetch 缺乏靈活的調度策略和自動化能力。最近的推廣活動和社群討論也促進了其曝光度，特別是在開源社群中。這個工具的設計理念和技術實現都符合當前對於 AI 自動化的需求，讓使用者能夠更方便地進行網頁操作。forks/stars 比率為 7.1%，顯示出有相當比例的使用者在進行實際修改和使用。
+> 建立 31 天就累積 5250 stars（169/天），forks 378（7.2%），這顯示出相對較高的使用興趣。作者 EzeW 和團隊在 AI 和自動化領域有豐富的經驗，之前的專案也獲得了良好的反響。這個專案解決了 AI Agent 在網絡操作上的不足，提供了更為靈活的操作方式，之前的方案往往缺乏自動化和靈活性。近期的討論和社群反饋也促進了這個工具的發展。技術上，Node.js 和 CDP 的結合使得這個工具能夠充分利用現有的瀏覽器能力，這在過去是難以實現的。forks/stars 比率為 7.2%，顯示出有不少人對這個專案進行了實際的修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要進行網頁自動化操作的開發者，尤其是對 AI Agent 有需求的團隊。
+**目標受眾**：需要為 AI Agent 增加網絡能力的開發者，特別是對自動化有需求的團隊。
 
 > [!example] 使用場景
-> - 數據科學家用它來自動抓取網站數據，因為其支持多種操作模式，能夠靈活應對不同的網頁結構。
-> - 後端開發者用它來在 CI/CD 流程中自動化測試網頁功能，因為其並行分治能力能夠加速測試過程。
-> - 市場分析師用它來自動搜索競爭對手的最新動態，因為其網路工具自動選擇功能能夠提高工作效率。
+> - 後端工程師用它來自動化網頁數據抓取，因為它能夠靈活選擇合適的網絡工具並支持並行處理。
+> - 產品經理用它來測試網站的用戶體驗，因為它支持動態頁面操作和多種交互方式。
+> - 數據科學家用它來從內部系統提取數據，因為它能夠從本地 Chrome 書籤和歷史中快速定位 URL。
 
 ## 架構分析
 
-這個專案採用 Node.js 作為主要開發語言，因為它的非同步特性非常適合處理網路請求和 I/O 操作。架構上，使用 WebSocket 與 Chrome 進行連接，這樣可以實現高效的瀏覽器自動化操作。資料流方面，使用者的請求會經過 CDP Proxy，然後轉發到 Chrome，這樣的設計使得操作更為靈活。
-
-選擇 Node.js 而非其他語言的原因在於其生態系統成熟，且有豐富的庫可供使用。這種設計的代價是需要用戶安裝 Node.js 環境，對於不熟悉的使用者可能會增加學習成本。擴展性方面，這個架構能夠支持多個子 Agent 的並行執行，但在高負載情況下可能會出現性能瓶頸。
+這個專案採用 Node.js 作為後端，並利用 Chrome 的 CDP 進行瀏覽器操作。這樣的設計使得它能夠直接與用戶的 Chrome 瀏覽器進行交互，並且支持多平台。資料流方面，使用者的請求會通過 CDP 進行處理，並根據場景自動選擇合適的網絡工具。這樣的選擇使得專案在靈活性和效率上都有所提升，但也可能在高頻請求時遇到速率限制的問題。整體架構的設計使得它能夠在多目標任務中進行並行處理，這對於需要處理大量請求的場景非常有用。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於利用 Node.js 和 Chrome 的 CDP 進行網頁操作，這樣的設計使得操作更為高效且靈活。效能上，能夠支持多個並行操作，並且對於動態頁面有良好的兼容性。設計上選擇 Node.js 是因為其非同步特性非常適合處理網路請求，而這也使得專案的依賴樹相對簡單，主要依賴於 Node.js 的生態系統。技術風險方面，使用者在高負載下可能會遇到性能瓶頸，特別是在多個子 Agent 同時運行時。整合方面，這個工具能夠輕鬆地與現有的 CI/CD 流程結合，並且對於大多數開發者來說，學習成本相對較低。
+專案的核心技術機制是利用 Node.js 和 Chrome CDP 進行網頁操作，這使得它能夠直接與用戶的瀏覽器進行交互。這樣的設計讓使用者能夠靈活地選擇合適的網絡工具，並且支持多種操作方式，如 JS click 和真實鼠標事件。效能方面，專案能夠處理多個請求，並且在多目標任務中進行並行執行，這對於需要高效處理的場景非常有用。設計上，選擇 Node.js 作為後端使得專案能夠跨平台運行，但也帶來了對 Node.js 環境的依賴。技術風險方面，專案在高頻請求下可能會遇到速率限制問題，這需要在實際使用中進行調整。整合方面，專案能夠與現有的開發工具鏈良好結合，並且提供了簡單的安裝流程，這對於開發者來說非常友好。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 提供了清晰的安裝步驟和使用範例，對於新手來說相對友好。安裝過程順暢，沒有明顯的坑。文檔支持多語言，方便不同語言的使用者理解。
+> README 文件提供了清晰的安裝指導和使用範例，安裝過程相對順暢。整體上，對於新手來說，花 30 分鐘應該能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 靈活的網路工具選擇，能夠根據場景自動判斷。
-> - 支持多種瀏覽器操作，能夠處理動態頁面。
-> - 並行分治能力，提升了操作效率。
+> - 靈活的網絡工具選擇，根據場景自動判斷
+> - 支持多種操作方式，適應不同的需求
+> - 能夠在多目標任務中進行並行處理，提升效率
 
 > [!danger] 缺點
-> - 需要 Node.js 環境，對新手可能有學習門檻。
-> - 使用社交平台操作存在風險，需謹慎使用。
-> - 對某些網站的操作可能會受到限制。
+> - 需要 Node.js 環境，對於某些用戶來說可能有學習成本
+> - 在高頻請求下可能會遇到速率限制
+> - 對於某些動態頁面，可能需要額外的配置
 
 > [!warning] 注意事項
-> - 僅支援 Node.js 22+。
-> - 使用瀏覽器自動化操作社交平台存在帳號被限流或封禁的風險。
-> - 對於某些網站可能存在操作限制，需根據具體情況調整策略。
+> - 需要 Node.js 22+ 環境
+> - 可能會遇到速率限制問題，特別是在高頻請求時
+> - 對於某些動態頁面，可能需要額外的配置
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於數據抓取，但缺乏自動化操作的靈活性，適合簡單的數據提取場景。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 這個工具提供了類似的自動化功能，但在多目標並行處理上不如本專案高效。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 這個工具專注於安全性和隱私保護，而本專案則更強調靈活的網頁操作和自動化。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供了一個更輕量的解決方案，但缺乏本專案的多樣化操作能力和並行處理功能。 |
 
 ## 替代方案決策
 
@@ -205,16 +207,16 @@ curl -s "http://localhost:3456/new?url=https://example.com"
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於數據抓取，使用靜態解析方式，缺乏動態操作能力。 | 如果你的需求僅限於靜態數據抓取，並且不需要複雜的網頁操作。 | medium，因為需要重新設計數據抓取流程。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 這個工具提供了類似的自動化功能，但在多目標並行處理上不如本專案高效。 | 如果你的需求主要集中在單一目標的自動化操作，而不需要並行處理。 | low，因為功能相似，轉換成本較低。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於安全性和隱私保護，提供了更強的數據保護機制。 | 如果你的專案對數據隱私有更高的要求，這個工具會是更好的選擇。 | medium，因為需要重新設計數據處理流程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供輕量級的解決方案，但缺乏多樣化操作能力。 | 如果你的需求較簡單，且不需要複雜的操作，這個工具會更合適。 | low，因為功能較為簡單，遷移成本低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **web-access** | **boneyard** | **codeburn** |
+> | 維度 | **web-access** | **codeburn** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這個工具專注於數據抓取，使用靜態解析方式，缺乏動態操作能力。 | 這個工具提供了類似的自動化功能，但在多目標並行處理上不如本專案高效。 |
-> | 遷移成本 | - | medium，因為需要重新設計數據抓取流程。 | low，因為功能相似，轉換成本較低。 |
-> | 適用場景 | 主要場景 | 如果你的需求僅限於靜態數據抓取，並且不需要複雜的網頁操作。 | 如果你的需求主要集中在單一目標的自動化操作，而不需要並行處理 |
+> | 技術路線 | 本專案 | 專注於安全性和隱私保護，提供了更強的數據保護機制。 | 提供輕量級的解決方案，但缺乏多樣化操作能力。 |
+> | 遷移成本 | - | medium，因為需要重新設計數據處理流程。 | low，因為功能較為簡單，遷移成本低。 |
+> | 適用場景 | 主要場景 | 如果你的專案對數據隱私有更高的要求，這個工具會是更好的選擇。 | 如果你的需求較簡單，且不需要複雜的操作，這個工具會更合適。 |
 
 ## 成熟度評估
 
@@ -225,27 +227,27 @@ curl -s "http://localhost:3456/new?url=https://example.com"
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合進行網頁自動化的開發者試用，但不建議用於生產環境的核心任務。
+> 適合對網頁自動化有需求的開發者試用，但不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 使用社交平台操作可能導致帳號被限流或封禁
-  - 解法：建議使用小號進行測試
-- [MEDIUM] 某些網站的操作可能會受到限制
-  - 解法：需根據具體情況調整操作策略
-- [MEDIUM] 安裝過程中可能會遇到 Node.js 環境配置問題
-  - 解法：確保 Node.js 版本符合要求，並參考文檔進行配置
+- **[HIGH]** 在高頻請求下可能會遇到速率限制問題
+  - 解法：減少請求頻率或增加請求間隔
+- [MEDIUM] 某些動態頁面需要額外配置才能正常操作
+  - 解法：參考文檔中的配置指南
+- [MEDIUM] Windows 環境下可能會遇到路徑問題
+  - 解法：確保使用正確的路徑格式
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要自動化社交媒體操作的市場部門 | 適合 | 具備靈活的網頁操作能力，能夠應對多變的社交平台。 |
-| 小型團隊進行網頁數據抓取 | 非常適合 | 支持多目標並行處理，能夠提高抓取效率。 |
-| 大型企業的核心系統 | 不適合 | 目前處於 beta 階段，穩定性不足，不建議用於生產環境。 |
-| 開發者進行個人項目測試 | 適合 | 安裝簡單，功能強大，適合快速迭代的開發需求。 |
+| 小型團隊的網頁自動化專案 | 非常適合 | 提供靈活的操作方式和自動選擇工具的能力，能夠提高效率。 |
+| 大型企業的數據抓取任務 | 適合 | 雖然能夠處理多目標任務，但在高頻請求下可能會遇到限制。 |
+| 個人開發者的簡單自動化需求 | 非常適合 | 安裝簡單，功能強大，能夠快速上手。 |
+| 對數據隱私有高要求的專案 | 不適合 | 缺乏針對數據隱私的強化措施，可能不符合要求。 |
 
 ## 採用成本分析
 
@@ -257,12 +259,12 @@ curl -s "http://localhost:3456/new?url=https://example.com"
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到靈活的網頁自動化能力，值得嘗試。
+> 花 5 小時學習，3 小時整合，得到靈活的網頁自動化能力，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：需要 Node.js 環境，並可能存取用戶的瀏覽器資料，使用時需注意安全性。
+> 低風險：該工具不需要高權限，且不會存取敏感資料，但仍需注意依賴鏈的安全性。
 
 ## 健康度儀表板
 
@@ -327,18 +329,18 @@ curl -s "http://localhost:3456/new?url=https://example.com"
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 371 |
-| Open Issues | 24 |
-| Issue 解決率 | 44% (19 closed) |
-| 最後推送 | 2026-04-10 |
+| Forks | 378 |
+| Open Issues | 21 |
+| Issue 解決率 | 51% (22 closed) |
+| 最後推送 | 2026-04-18 |
 | 建立日期 | 2026-03-18 |
-| Repo 大小 | 47 KB |
+| Repo 大小 | 58 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/eze-is/web-access) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@EzeW](https://github.com/EzeW) | 24 |
+> | [@EzeW](https://github.com/EzeW) | 26 |
 > | [@eze-is](https://github.com/eze-is) | 12 |
 > | [@HaiyiMei](https://github.com/HaiyiMei) | 1 |
 > | [@VegetaPn](https://github.com/VegetaPn) | 1 |
@@ -346,23 +348,23 @@ curl -s "http://localhost:3456/new?url=https://example.com"
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有多次更新和活躍的討論。
-**連結**：[文件](https://web-access.eze.is)
+**社群活躍度**：社群活躍，最近有持續的提交和問題解決。
+**連結**：[文件](https://github.com/eze-is/web-access)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-03-30 ~ 2026-04-10）
-> **活躍天數** 6 天 · **最新 commit** docs: add website link, npx install method, and agent-agnostic positioning
+> [!abstract] 最近 10 次 commit（2026-03-30 ~ 2026-04-18）
+> **活躍天數** 7 天 · **最新 commit** polish: find-url 文案与 Windows 安装引导
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#55](https://github.com/eze-is/web-access/issues/55) | skills加载失败： skills path escapes plugin directory: ./ | 1 | 3 |
 > | [#52](https://github.com/eze-is/web-access/issues/52) | 感谢 web-access 给 use-my-browser 带来的灵感 | 1 | 1 |
 > | [#27](https://github.com/eze-is/web-access/issues/27) | firefox 支持 | 1 | 0 |
 > | [#62](https://github.com/eze-is/web-access/issues/62) | Bug: plugin.json 'skills': './' causes 'Path escapes plugin  | 0 | 0 |
+> | [#59](https://github.com/eze-is/web-access/issues/59) | Bug: skills 路径配置导致 Claude Code 加载报错 'skills path escapes plu | 0 | 0 |
 
 ## README 摘錄
 
@@ -393,18 +395,23 @@ curl -s "http://localhost:3456/new?url=https://example.com"
 > 
 > ---
 > 
-> ## v2.4.3 能力
+> ## v2.5.0 能力
 > 
 > | 能力 | 说明 |
 > |------|------|
 > | 联网工具自动选择 | WebSearch / WebFetch / curl / Jina / CDP，按场景自主判断，可任意组合 |
 > | CDP Proxy 浏览器操作 | 直连用户日常 Chrome，天然携带登录态，支持动态页面、交互操作、视频截帧 |
 > | 三种点击方式 | `/click`（JS click）、`/clickAt`（CDP 真实鼠标事件）、`/setFiles`（文件上传） |
+> | 本地 Chrome 书签/历史检索 | `find-url.mjs` 查询公网搜不到的目标（内部系统）或用户访问过的页面，支持关键词/时间窗/访问频度排序 |
 > | 并行分治 | 多目标时分发子 Agent 并行执行，共享一个 Proxy，tab 级隔离 |
 > | 站点经验积累 | 按域名存储操作经验（URL 模式、平台特征、已知陷阱），跨 session 复用 |
 > | 媒体提取 | 从 DOM 直取图片/视频 URL，或对视频任意时间点截帧分析 |
 > 
-> **v2.4.3 更新：**
+> **v2.5.0 更新：**
+> - **本地 Chrome 资源检索** — 新增 `scripts/find-url.mjs`，从本地 Chrome 书签/历史按关键词/时间窗/访问频度定位 URL。典型场景：用户提到组织内部系统（"我们的 XX 平台"等公网搜不到的目标）、回查之前访问过但不记得地址的页面、查看最近高频访问网站等（场景感谢 @MVPGFC 在 #60 提出）
+> 
+> v2.4.3 更新
+> 
 > - **修复 CLAUDE_SKILL_DIR 路径问题** — bash 代码块改用 `${CLAUDE_SKILL_DIR}` 字符串替换语法，修复 Windows Git Bash 路径转换错误和变量未设置问题（#47 #46）
 > - **站点经验列表合并到前置检查** — 启动检查通过后自动输出已有站点经验列表，移除不可靠的 `!` 内联注入
 > 
@@ -519,9 +526,9 @@ curl -s "http://localhost:3456/new?url=https://example.com"
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[瀏覽器自動化]] · [[API 設計]]
+相關概念：[[自動化]] · [[網頁抓取]] · [[CDP]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]]
+相關專案：[[AgentSeal--codeburn|AgentSeal/codeburn]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]]
 
 [GitHub](https://github.com/eze-is/web-access)
 
@@ -563,7 +570,7 @@ curl -s "http://localhost:3456/new?url=https://example.com"
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","瀏覽器自動化","API 設計"];
+> const concepts = ["自動化","網頁抓取","CDP"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "eze-is--web-access" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
