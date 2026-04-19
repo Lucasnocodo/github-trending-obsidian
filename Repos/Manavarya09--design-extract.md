@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "Extract the complete design language from any website — colors, typography, spacing, shadows, and more. npx CLI + Claude Code plugin."
 homepage: "https://designlang.vercel.app/"
-stars: 883
-stars_per_day: 442
-forks: 71
-open_issues: 11
+stars: 1007
+stars_per_day: 336
+forks: 80
+open_issues: 6
 created: 2026-04-15
-pushed_at: 2026-04-17
+pushed_at: 2026-04-18
 first_seen: 2026-04-18
 week: "2026-W16"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "從任何網站提取完整的設計語言，包括顏色、排版、
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-21"
+appearances: 2
+next_review: "2026-04-22"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-18"
-star_history: "2026-04-18:882,2026-04-18:883"
+star_history: "2026-04-18:882,2026-04-18:883,2026-04-19:1007"
 tags:
   - github
   - "category/開發工具"
@@ -955,4 +955,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-19|2026-04-19]] — 再次上榜，1.0k stars
 - [[2026-04-18|2026-04-18]] — 首次收錄，882 stars

@@ -7,12 +7,12 @@ language: TypeScript
 license: N/A
 description: "全能协议分析工具：浏览器抓包 + MITM 代理 + 指纹伪装 + AI 分析 + MCP Server 无缝对接 AI Agent/IDE   |  All-in-one protocol analysis toolkit — built-in browser capture, MITM proxy, JS hooks, fingerprint spoofing, AI analysis & MCP server for agent integration"
 homepage: ""
-stars: 1277
-stars_per_day: 255
-forks: 294
+stars: 1350
+stars_per_day: 225
+forks: 311
 open_issues: 3
 created: 2026-04-12
-pushed_at: 2026-04-17
+pushed_at: 2026-04-18
 first_seen: 2026-04-16
 week: "2026-W16"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "全能协议分析工具，支持多种流量来源的自动逆向分
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-04-21"
+appearances: 4
+next_review: "2026-04-22"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 81
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-16"
-star_history: "2026-04-16:798,2026-04-16:799,2026-04-17:1042,2026-04-17:1048,2026-04-18:1276,2026-04-18:1277"
+star_history: "2026-04-16:798,2026-04-16:799,2026-04-17:1042,2026-04-17:1048,2026-04-18:1276,2026-04-18:1277,2026-04-19:1350"
 tags:
   - github
   - "category/開發工具"
@@ -956,6 +956,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-19|2026-04-19]] — 再次上榜，1.4k stars
 - [[2026-04-18|2026-04-18]] — 再次上榜，1.3k stars
 - [[2026-04-17|2026-04-17]] — 再次上榜，1.0k stars
 - [[2026-04-16|2026-04-16]] — 首次收錄，798 stars

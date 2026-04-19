@@ -7,9 +7,9 @@ language: Python
 license: N/A
 description: ""
 homepage: ""
-stars: 960
-stars_per_day: 160
-forks: 88
+stars: 1252
+stars_per_day: 179
+forks: 115
 open_issues: 0
 created: 2026-04-12
 pushed_at: 2026-04-15
@@ -30,8 +30,8 @@ use_case: "透過對話驅動的方式，自動編輯影片，省去繁瑣的手
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-25"
+appearances: 2
+next_review: "2026-04-26"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-18"
-star_history: "2026-04-18:950,2026-04-18:960"
+star_history: "2026-04-18:950,2026-04-18:960,2026-04-19:1252"
 tags:
   - github
   - "category/開發工具"
@@ -757,4 +757,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-19|2026-04-19]] — 再次上榜，1.3k stars
 - [[2026-04-18|2026-04-18]] — 首次收錄，950 stars

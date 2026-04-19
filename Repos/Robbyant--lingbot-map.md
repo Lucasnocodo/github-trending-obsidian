@@ -7,12 +7,12 @@ language: Python
 license: Apache-2.0
 description: "A feed-forward 3D foundation model for reconstructing scenes from streaming data"
 homepage: ""
-stars: 922
-stars_per_day: 461
-forks: 62
-open_issues: 8
+stars: 1903
+stars_per_day: 634
+forks: 137
+open_issues: 18
 created: 2026-04-15
-pushed_at: 2026-04-17
+pushed_at: 2026-04-18
 first_seen: 2026-04-18
 week: "2026-W16"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "從串流數據重建場景的前饋式 3D 基礎模型。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-21"
+appearances: 2
+next_review: "2026-04-22"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 20
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-18"
-star_history: "2026-04-18:914,2026-04-18:922"
+star_history: "2026-04-18:914,2026-04-18:922,2026-04-19:1903"
 tags:
   - github
   - "category/ai_ml"
@@ -903,4 +903,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-19|2026-04-19]] — 再次上榜，1.9k stars
 - [[2026-04-18|2026-04-18]] — 首次收錄，914 stars
