@@ -1100,10 +1100,10 @@
   },
   "alchaincyf/darwin-skill": {
     "first_seen": "2026-04-16",
-    "last_seen": "2026-04-19",
-    "times_seen": 4,
+    "last_seen": "2026-04-20",
+    "times_seen": 5,
     "stars_first": 816,
-    "stars_last": 1194
+    "stars_last": 1293
   },
   "Mouseww/anything-analyzer": {
     "first_seen": "2026-04-16",
@@ -1128,10 +1128,10 @@
   },
   "vercel-labs/wterm": {
     "first_seen": "2026-04-17",
-    "last_seen": "2026-04-19",
-    "times_seen": 3,
+    "last_seen": "2026-04-20",
+    "times_seen": 4,
     "stars_first": 1043,
-    "stars_last": 1565
+    "stars_last": 2081
   },
   "sogonov/anubis": {
     "first_seen": "2026-04-17",
@@ -1142,10 +1142,10 @@
   },
   "Nightmare-Eclipse/RedSun": {
     "first_seen": "2026-04-17",
-    "last_seen": "2026-04-19",
-    "times_seen": 3,
+    "last_seen": "2026-04-20",
+    "times_seen": 4,
     "stars_first": 785,
-    "stars_last": 1500
+    "stars_last": 1573
   },
   "browser-use/video-use": {
     "first_seen": "2026-04-18",
@@ -1156,38 +1156,38 @@
   },
   "Robbyant/lingbot-map": {
     "first_seen": "2026-04-18",
-    "last_seen": "2026-04-19",
-    "times_seen": 2,
+    "last_seen": "2026-04-20",
+    "times_seen": 3,
     "stars_first": 914,
-    "stars_last": 1903
+    "stars_last": 2652
   },
   "lewislulu/html-ppt-skill": {
     "first_seen": "2026-04-18",
-    "last_seen": "2026-04-19",
-    "times_seen": 2,
+    "last_seen": "2026-04-20",
+    "times_seen": 3,
     "stars_first": 909,
-    "stars_last": 1144
+    "stars_last": 1434
   },
   "BuilderPulse/BuilderPulse": {
     "first_seen": "2026-04-18",
-    "last_seen": "2026-04-18",
-    "times_seen": 1,
+    "last_seen": "2026-04-20",
+    "times_seen": 2,
     "stars_first": 883,
-    "stars_last": 883
+    "stars_last": 965
   },
   "Manavarya09/design-extract": {
     "first_seen": "2026-04-18",
-    "last_seen": "2026-04-19",
-    "times_seen": 2,
+    "last_seen": "2026-04-20",
+    "times_seen": 3,
     "stars_first": 882,
-    "stars_last": 1007
+    "stars_last": 1089
   },
   "getagentseal/codeburn": {
     "first_seen": "2026-04-19",
-    "last_seen": "2026-04-19",
-    "times_seen": 1,
+    "last_seen": "2026-04-20",
+    "times_seen": 2,
     "stars_first": 2717,
-    "stars_last": 2717
+    "stars_last": 2871
   },
   "patterniha/SNI-Spoofing": {
     "first_seen": "2026-04-19",
@@ -1195,5 +1195,19 @@
     "times_seen": 1,
     "stars_first": 977,
     "stars_last": 977
+  },
+  "browser-use/browser-harness": {
+    "first_seen": "2026-04-20",
+    "last_seen": "2026-04-20",
+    "times_seen": 1,
+    "stars_first": 2236,
+    "stars_last": 2236
+  },
+  "kyegomez/OpenMythos": {
+    "first_seen": "2026-04-20",
+    "last_seen": "2026-04-20",
+    "times_seen": 1,
+    "stars_first": 1496,
+    "stars_last": 1496
   }
 }

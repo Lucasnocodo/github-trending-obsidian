@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "Extract any website's complete design system with one command. DTCG tokens, semantic+primitive+composite, MCP server for Claude Code/Cursor/Windsurf, multi-platform emitters (iOS SwiftUI, Android Compose, Flutter, WordPress), Tailwind v4, Figma variables, shadcn/ui, CSS health audit, WCAG remediation, Chrome extension. MIT, Playwright, Node 20+."
 homepage: "https://designlang.manavaryasingh.com"
-stars: 1007
-stars_per_day: 336
-forks: 80
+stars: 1089
+stars_per_day: 272
+forks: 86
 open_issues: 6
 created: 2026-04-15
-pushed_at: 2026-04-18
+pushed_at: 2026-04-19
 first_seen: 2026-04-18
 week: "2026-W16"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "一鍵提取任何網站的完整設計系統，並生成可用的前
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-22"
+appearances: 3
+next_review: "2026-04-23"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 45
@@ -42,7 +42,7 @@ last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-18"
-star_history: "2026-04-18:882,2026-04-18:883,2026-04-19:1007,2026-04-19:1007"
+star_history: "2026-04-18:882,2026-04-18:883,2026-04-19:1007,2026-04-19:1007,2026-04-20:1089"
 tags:
   - github
   - "category/開發工具"
@@ -895,5 +895,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-20|2026-04-20]] — 再次上榜，1.1k stars
 - [[2026-04-19|2026-04-19]] — 再次上榜，1.0k stars
 - [[2026-04-18|2026-04-18]] — 首次收錄，882 stars
