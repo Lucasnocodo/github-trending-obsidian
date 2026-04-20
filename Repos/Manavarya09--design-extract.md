@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-18
-use_case: "一鍵提取任何網站的完整設計系統，並生成可用的前端代碼。"
+use_case: "一鍵提取任何網站的完整設計系統，生成多種格式的設計語言文件。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-04-23"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 45
-repo_size_kb: 8268
-readme_length: 9991
+repo_size_kb: 8337
+readme_length: 10000
 bus_factor: 1
-last_release_days: 4
+last_release_days: 5
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-18"
-star_history: "2026-04-18:882,2026-04-18:883,2026-04-19:1007,2026-04-19:1007,2026-04-20:1089"
+star_history: "2026-04-18:882,2026-04-18:883,2026-04-19:1007,2026-04-19:1007,2026-04-20:1089,2026-04-20:1089"
 tags:
   - github
   - "category/開發工具"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "design-extract"
   - "Manavarya09/design-extract"
-  - "一鍵提取任何網站的完整設計系統，並生成可用的前端代碼。"
+  - "一鍵提取任何網站的完整設計系統，生成多種格式的設計語言文件。"
 ---
 
 # design-extract
 
-**1.0k** stars · **336** stars/天 · 建立 3 天前 · JavaScript · MIT
+**1.1k** stars · **272** stars/天 · 建立 4 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Manavarya09--design-extract");
@@ -79,13 +79,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `accessibility` `agent-skill` `ai` `chrome-extension` `claude-code-plugin` `cli` `css` `cursor` `design-system` `design-to-code` `design-tokens` `dtcg` `figma` `mcp-server` `npx` `playwright` `shadcn-ui` `skills-sh` `tailwind` `web-scraping`
 
 > [!summary] 一句話摘要
-> 一鍵提取任何網站的完整設計系統，並生成可用的前端代碼。
+> 一鍵提取任何網站的完整設計系統，生成多種格式的設計語言文件。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (336 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (272 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要快速提取和重用網站設計的前端開發者和設計師。
-> **一句話重點** designlang 不僅提取設計元素，還能捕捉佈局和互動狀態，這在市場上是獨一無二的。
+> **適合** 需要快速提取和生成設計系統的前端開發者和設計師。
+> **一句話重點** 這個工具不僅僅是提取顏色和字體，它還能捕捉到設計的結構和互動，這對於現代前端開發至關重要。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -109,30 +109,30 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，3 小時整合，得到快速提取設計系統的能力，值得投入。
+> **結論** 花 2 小時學習，3 小時整合，能夠快速生成設計系統，值得投入。
 
 > [!abstract] 核心創新
-> designlang 是唯一一個能夠提取完整設計系統，包括佈局模式和互動狀態的工具。
+> 設計提取工具首次能夠捕捉佈局模式和響應式行為，並提供設計質量評分。
 
 ## 專案簡介
 
-designlang 是一個強大的工具，能夠通過無頭瀏覽器爬取網站，提取其所有計算樣式，並生成多達 8 種輸出文件，包括 AI 優化的 Markdown 文件、Tailwind 配置、Figma 變數等。使用者只需執行 `npx designlang <url>` 即可獲得完整設計系統，這個工具的賣點在於它不僅提取顏色和字體，還能捕捉佈局模式、響應式行為及互動狀態，這是許多其他工具無法做到的。設計評分功能可對網站的設計質量進行 A-F 的評分，並提供具體的改進建議。技術上，designlang 使用 Playwright 進行網站爬取，並依賴 Node.js 20+ 環境，這使得它能夠高效地處理複雜的 CSS 和 JavaScript。
+designlang 是一個強大的工具，能夠透過無頭瀏覽器爬取網站，提取所有計算樣式並生成八種輸出文件，包括 AI 優化的 Markdown 文件、Tailwind 配置、Figma 變數等。其核心機制是通過命令 `npx designlang <url>` 來提取設計語言，並支持多種輸出格式，讓開發者能夠快速重建網站的設計系統。此工具不僅提取顏色和字體，還能捕捉佈局模式、響應式行為和互動狀態，這是其他工具所無法做到的。設計評分功能能夠對設計系統的質量進行評分，涵蓋顏色、排版、間距等七個類別，並提供具體的改進建議。
 
-與其他設計提取工具相比，如 0xGF/boneyard 和 AgriciDaniel/claude-obsidian，designlang 提供了更全面的佈局和互動狀態捕捉，並且支持多平台輸出（iOS、Android、Flutter、WordPress）。然而，使用者需要注意，當前版本仍有一些已知的問題，如無法提取 Shadow DOM 元素。整體而言，這個工具適合需要快速提取和重用網站設計的開發者，特別是在設計迭代頻繁的環境中。未來幾個月，隨著功能的增強和社群的活躍，預期會有更多的改進和擴展。
+技術上，designlang 使用了 Playwright 進行網頁爬取，並依賴 Node.js 20+ 版本，這使得它能夠在現代 JavaScript 環境中高效運行。與其他設計提取工具相比，designlang 能夠捕捉到更多的設計細節，如響應式設計和互動狀態，這對於需要高質量設計輸出的團隊來說非常重要。使用者可以通過 `designlang brands <url1> <url2>` 命令進行多品牌比較，生成顏色重疊分析和可及性分數的矩陣，這在設計審核過程中非常有用。整體來看，這是一個設計提取工具的全能解決方案，特別適合需要快速生成設計系統的前端開發者和設計師。
 
-**技術棧**：`Node.js 20+` · `Playwright` · `Tailwind CSS`
+**技術棧**：`Node.js 20+` · `Playwright` · `Tailwind CSS` · `Figma`
 
 ## 重點功能
 
-- 一鍵提取 — 使用 `npx designlang <url>` 提取網站的完整設計系統，包括顏色、字體、間距等。
-- 設計評分 — 使用 `designlang score <url>` 評估網站設計質量，涵蓋顏色、排版、可訪問性等七個類別。
-- 響應式捕捉 — 使用 `--responsive` 參數在四個視口下捕捉設計變化，提供詳細的斷點變化報告。
-- 互動狀態捕捉 — 使用 `--interactions` 參數捕捉按鈕的懸停和焦點狀態，生成完整的 CSS 變化。
-- 多平台輸出 — 支持生成 iOS、Android、Flutter 和 WordPress 的設計代碼，方便跨平台開發。
+- 一鍵提取設計系統 — 使用 `npx designlang <url>` 命令提取顏色、字體、間距等設計元素。
+- 響應式設計捕捉 — 支持多達 4 個視口的響應式設計分析，使用 `--responsive` 參數進行提取。
+- 互動狀態捕捉 — 自動捕捉按鈕的 hover 和 focus 狀態變化，使用 `--interactions` 參數。
+- 設計質量評分 — 使用 `designlang score <url>` 命令對設計系統進行 A-F 評分，涵蓋七個類別。
+- 多品牌比較 — 使用 `designlang brands <url1> <url2>` 命令生成品牌設計比較矩陣。
 
 ## 快速開始
 
-1. 直接使用 npx 提取設計系統
+1. 直接提取設計系統
 ```bash
 npx designlang https://example.com
 ```
@@ -140,9 +140,9 @@ npx designlang https://example.com
 ```bash
 npx designlang https://stripe.com --full
 ```
-3. 生成 Next.js 應用
+3. 安裝為全局命令
 ```bash
-designlang clone https://stripe.com
+npm install -g designlang
 ```
 
 ## 程式碼範例
@@ -150,63 +150,63 @@ designlang clone https://stripe.com
 ```js
 {
   "前置條件": "已安裝 Node.js 20+",
-  "指令": "npx designlang https://vercel.com --full",
-  "預期輸出": "✓ vercel-com-design-language.md (32.6KB)\n✓ vercel-com-design-tokens.json (5.6KB)\n✓ vercel-com-tailwind.config.js (3.4KB)\n✓ vercel-com-variables.css (18.6KB)\n✓ vercel-com-preview.html (31.8KB)\n✓ vercel-com-figma-variables.json (12.4KB)\n✓ vercel-com-theme.js (1.4KB)\n✓ vercel-com-shadcn-theme.css (477B)"
+  "指令": "npx designlang https://stripe.com --full",
+  "預期輸出": "生成多個設計相關的輸出文件，包括 Markdown、Tailwind 配置等。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 1007 stars（336/天），forks 80（7.9%），顯示出強烈的增長潛力。作者 Manavarya09 之前有其他開源貢獻，這個工具解決了設計提取過程中的多個痛點，特別是對於需要快速生成可用前端代碼的開發者。近期的推廣活動和社群討論也可能促進了其曝光率。高 forks/stars 比率（7.9%）顯示出許多使用者在實際修改和使用這個工具，反映出其實用性和需求。
+> 建立 4 天就累積 1089 stars（272/天），forks 86（7.9%），顯示出強烈的社群興趣。作者 Manavarya09 具備豐富的開源經驗，過去也有其他成功的專案。這個工具解決了設計提取過程中的多個痛點，特別是在響應式設計和互動狀態的捕捉上，這在市場上是相對缺乏的。最近的推廣活動和社群討論也為其增添了曝光率，讓更多開發者注意到這個工具的潛力。forks/stars 比率為 7.9%，顯示出使用者對於修改和實際應用的興趣。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速提取和重用網站設計的前端開發者和設計師。
+**目標受眾**：需要快速提取和生成設計系統的前端開發者和設計師。
 
 > [!example] 使用場景
-> - 前端工程師用它來快速提取競爭對手網站的設計系統，因為這樣可以節省手動重建的時間，並加速自己的產品開發。
-> - UX 設計師用它來評估網站的可訪問性，因為它提供了詳細的 WCAG 分數和設計質量評分，幫助他們做出改進。
-> - 開發團隊用它來同步本地設計代碼與實際網站，因為它支持自動檢測設計變更並更新本地設計令牌，減少了手動維護的負擔。
+> - 前端工程師用它來提取網站的設計系統，因為這樣可以快速生成符合設計規範的 CSS 和 Tailwind 配置，節省了手動編寫的時間。
+> - 設計師用它來評估競爭對手的設計質量，因為它提供了詳細的設計評分和可及性分析，幫助設計決策。
+> - 產品經理用它來監控網站的設計變化，因為設計變更監控功能可以及時發現設計不一致，確保品牌形象的一致性。
 
 ## 架構分析
 
-designlang 採用無頭瀏覽器（Playwright）來爬取網站，這樣設計的提取過程能夠模擬用戶行為，捕捉到實際的樣式和互動狀態。資料流方面，首先從網站抓取 DOM，然後提取樣式和佈局，最後生成多種格式的輸出文件。這種設計使得工具能夠高效地處理複雜的 CSS 和 JavaScript，並能夠捕捉到響應式設計的變化。
+designlang 採用模組化的架構，主要由 CLI 和多個擴展組成。核心功能由 Playwright 提供，負責無頭瀏覽器的操作和樣式提取。資料流方面，設計系統的提取過程包括從 DOM 爬取樣式、分析響應式行為、捕捉互動狀態等，這些都在一個命令中完成。
 
-選擇 Playwright 而非其他工具的原因在於其強大的跨瀏覽器支持和高效的性能。這樣的架構雖然增加了初始的安裝複雜度，但能夠顯著提升提取的準確性和完整性。整體來看，這種設計對於需要高品質設計提取的開發者來說是非常有利的。
+選擇 Playwright 使得提取過程更加高效和穩定，但也依賴於 Node.js 環境。這種設計使得工具能夠快速適應不同的網站結構，但在處理複雜的 Shadow DOM 組件時可能會遇到挑戰。整體架構的擴展性良好，能夠支持未來的功能增強和多平台輸出。
 
 ## 技術深入分析
 
-designlang 的核心技術機制是使用 Playwright 進行網站爬取，這使得它能夠模擬用戶行為，捕捉到實際的樣式和互動狀態。它能夠處理複雜的 CSS 和 JavaScript，並生成多種格式的輸出文件，包括 Markdown、JSON 和 CSS。效能方面，設計提取的速度取決於網站的複雜度，通常在幾秒鐘內完成。設計選擇 Playwright 而非 Selenium，因為 Playwright 在處理現代網頁應用時表現更佳，並且支持多瀏覽器環境。這種選擇雖然使得工具的安裝過程稍顯複雜，但卻能顯著提升提取的準確性和完整性。技術風險方面，對於某些網站的提取可能會遇到跨域問題，這需要在未來的版本中進行優化。整合方面，designlang 可以輕鬆融入現有的開發流程，特別是在使用 CI/CD pipeline 的情況下，能夠自動化設計提取的過程。
+designlang 的核心技術在於使用 Playwright 進行無頭瀏覽器操作，這使得它能夠精確提取網站的樣式和結構。它能夠處理多達 4 個視口的響應式設計，並且能夠捕捉到互動狀態的變化，這在其他工具中是難以實現的。設計評分功能則是通過分析顏色、排版、間距等七個類別來實現的，這提供了對設計質量的全面評估。設計選擇上，使用 Node.js 使得工具能夠在現代 JavaScript 環境中高效運行，但也意味著對於不熟悉 Node.js 的開發者來說，學習成本可能會稍高。整體來看，designlang 在設計提取工具中具有獨特的優勢，特別是在設計質量評估和響應式設計捕捉方面，這使得它在市場上具有競爭力。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的指導和範例，安裝過程相對順暢，使用 npx 命令即可快速上手。雖然目前沒有多語言支持，但文件內容詳盡，能夠幫助新手快速理解如何使用這個工具。
+> README 文件清晰且詳細，提供了多個範例和安裝步驟。安裝過程順暢，使用 npx 命令即可快速開始。文件目前僅提供英文，對於非英語使用者可能會有一定的學習障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠全面提取設計系統，包括佈局和互動狀態。
-> - 支持多平台輸出，方便跨平台開發。
-> - 設計評分功能提供了具體的改進建議，提升設計質量。
+> - 能夠快速提取完整的設計系統，節省開發時間。
+> - 支持多平台輸出，適合不同的開發環境。
+> - 提供設計質量評分，幫助改進設計決策。
 
 > [!danger] 缺點
-> - 對於某些網站的提取可能會遇到跨域問題。
-> - 目前仍有已知的 bug 需要修復。
-> - 需要 Node.js 環境，對於某些使用者來說可能增加了學習成本。
+> - 對於需要登錄的網站支持不佳。
+> - 在某些情況下，提取的樣式可能不完全準確。
+> - 對於複雜的互動狀態捕捉可能存在挑戰。
 
 > [!warning] 注意事項
-> - 當前版本無法提取 Shadow DOM 元素。
-> - 對於某些網站，可能無法正確處理跨域樣式表。
-> - 目前的設計評分功能仍在改進中，可能會有誤差。
+> - 目前僅支持提取公開網站，無法處理需要登錄的網站。
+> - 對於某些複雜的 Shadow DOM 組件提取可能存在問題。
+> - 在某些情況下，提取的 CSS 可能不完全符合原始網站的樣式。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 主要專注於提取顏色和字體，而 designlang 提供了完整的佈局和互動狀態捕捉。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | claude-obsidian 針對設計系統的生成較為簡單，而 designlang 提供了多平台的輸出選項和設計評分功能。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於設計資產的管理和版本控制，而 designlang 更加注重於設計系統的提取和生成。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 提供設計到代碼的轉換，但缺乏 designlang 的多平台支持和設計質量評分功能。 |
 
 ## 替代方案決策
 
@@ -214,16 +214,16 @@ designlang 的核心技術機制是使用 Playwright 進行網站爬取，這使
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 主要專注於提取顏色和字體，而 designlang 提供了完整的佈局和互動狀態捕捉。 | 如果你只需要基本的顏色和字體提取，boneyard 會是更簡單的選擇。 | low，因為功能簡單，遷移過程不會太複雜。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | claude-obsidian 針對設計系統的生成較為簡單，而 designlang 提供了多平台的輸出選項和設計評分功能。 | 如果你的需求僅限於簡單的設計系統生成，claude-obsidian 可能會更適合。 | medium，因為功能和設計理念有所不同，可能需要調整使用方式。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於設計資產的管理和版本控制，而 designlang 更加注重於設計系統的提取和生成。 | 如果你的團隊需要管理設計資產的版本和歷史，boneyard 會更合適。 | medium，因為需要將設計資產遷移到新的管理系統。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 提供設計到代碼的轉換，但缺乏 designlang 的多平台支持和設計質量評分功能。 | 如果你的重點是將設計直接轉換為代碼，claude-obsidian 可能更適合。 | low，因為這是一個相對簡單的轉換過程。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **design-extract** | **boneyard** | **claude-obsidian** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | boneyard 主要專注於提取顏色和字體，而 designlang 提供了完整的佈局和互動狀態捕捉。 | claude-obsidian 針對設計系統的生成較為簡單，而 designlang 提供了多平台的輸出選項和設計評分功能。 |
-> | 遷移成本 | - | low，因為功能簡單，遷移過程不會太複雜。 | medium，因為功能和設計理念有所不同，可能需要調整使用方式。 |
-> | 適用場景 | 主要場景 | 如果你只需要基本的顏色和字體提取，boneyard 會是更簡 | 如果你的需求僅限於簡單的設計系統生成，claude-obsi |
+> | 技術路線 | 本專案 | 專注於設計資產的管理和版本控制，而 designlang 更加注重於設計系統的提取和生成。 | 提供設計到代碼的轉換，但缺乏 designlang 的多平台支持和設計質量評分功能。 |
+> | 遷移成本 | - | medium，因為需要將設計資產遷移到新的管理系統。 | low，因為這是一個相對簡單的轉換過程。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要管理設計資產的版本和歷史，boneyard  | 如果你的重點是將設計直接轉換為代碼，claude-obsid |
 
 ## 成熟度評估
 
@@ -231,27 +231,29 @@ designlang 的核心技術機制是使用 Playwright 進行網站爬取，這使
 | --- | --- |
 | 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人測試和小型專案，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 對於某些網站的提取可能會遇到跨域問題，導致樣式無法正確加載。
-  - 解法：嘗試使用 `--insecure` 參數來忽略 HTTPS 警告。
-- [MEDIUM] 在提取 Shadow DOM 元素時，可能會出現樣式缺失的情況。
-  - 解法：目前無法解決，需等待後續版本修復。
+- **[HIGH]** 對於需要登錄的網站支持不佳，可能無法提取所有樣式。
+  - 解法：使用 `--cookie` 參數提供登錄信息。
+- [MEDIUM] 在某些情況下，提取的 CSS 可能不完全符合原始網站的樣式。
+  - 解法：手動檢查和調整提取的樣式。
+- [MEDIUM] 對於複雜的 Shadow DOM 組件提取可能存在問題。
+  - 解法：使用簡化的 DOM 結構進行測試。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的前端開發專案 | 非常適合 | 能夠快速提取設計系統，節省開發時間。 |
-| 大型企業的設計系統維護 | 普通 | 雖然功能全面，但可能需要更多的穩定性和支持。 |
-| 需要快速迭代的設計團隊 | 非常適合 | 能夠自動同步設計變更，提升工作效率。 |
+| 10 人以下的新創公司前端開發團隊 | 非常適合 | 能夠快速提取設計系統，節省開發時間。 |
+| 大型企業的設計審核團隊 | 適合 | 提供設計質量評分和多品牌比較功能，有助於設計決策。 |
+| 需要處理大量登錄網站的開發者 | 不適合 | 對於需要登錄的網站支持不佳，無法提取所有樣式。 |
 
 ## 採用成本分析
 
@@ -263,18 +265,18 @@ designlang 的核心技術機制是使用 Playwright 進行網站爬取，這使
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，3 小時整合，得到快速提取設計系統的能力，值得投入。
+> 花 2 小時學習，3 小時整合，能夠快速生成設計系統，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：工具本身不需要高權限，且不會存取敏感資料。依賴的庫和框架在社群中有良好的信任度，使用於 CI/CD pipeline 時相對安全。
+> 低風險：工具本身不需要高權限，僅在提取過程中訪問公開網站，不存取敏感資料。
 
 ## 生態系整合
 
 > [!abstract] 如何融入你的工具鏈
 
-designlang 可以與現有的開發工具鏈無縫整合，特別是在使用 Node.js 和 Tailwind CSS 的專案中。它能夠作為 CI/CD 流程的一部分，自動化設計提取的過程。在一個使用 Next.js 的專案中，開發者可以使用 `designlang clone <url>` 命令快速生成一個包含提取設計的應用。整合過程中，最常見的問題是需要確保 Node.js 環境的版本符合要求，並且需要安裝 Playwright 的依賴。
+designlang 最常與現代前端框架如 Next.js、React 和 Tailwind CSS 搭配使用，通常在開發階段進行設計提取和生成。在一個使用 Next.js 的專案中，可以通過 `npx designlang <url>` 命令提取設計，並將生成的 Tailwind 配置直接應用到專案中。此工具也支援 GitHub Actions，能夠在 CI/CD 流程中自動檢查設計變更。整合時，最常見的問題是對於複雜的 CSS 結構可能無法完全提取，建議在整合前進行測試。
 
 ## 健康度儀表板
 
@@ -339,10 +341,10 @@ designlang 可以與現有的開發工具鏈無縫整合，特別是在使用 No
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 80 |
+| Forks | 86 |
 | Open Issues | 6 |
 | Issue 解決率 | 45% (5 closed) |
-| 最後推送 | 2026-04-18 |
+| 最後推送 | 2026-04-19 |
 | 建立日期 | 2026-04-15 |
 | 官方網站 | [Link](https://designlang.manavaryasingh.com) |
 | Repo 大小 | 8.1 MB |
@@ -356,16 +358,17 @@ designlang 可以與現有的開發工具鏈無縫整合，特別是在使用 No
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 97
+>     "JavaScript" : 96
 >     "CSS" : 2
 >     "HTML" : 1
+>     "TypeScript" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Manavarya09](https://github.com/Manavarya09) | 50 |
-> | [@bot-manavarya](https://github.com/bot-manavarya) | 1 |
+> | [@Manavarya09](https://github.com/Manavarya09) | 52 |
+> | [@bot-manavarya](https://github.com/bot-manavarya) | 2 |
 
 **最新版本**：v4.0.0 — v4.0.0 — Clone, Score, Watch, 11 Components (2026-04-15)
 
@@ -397,13 +400,13 @@ designlang 可以與現有的開發工具鏈無縫整合，特別是在使用 No
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者對於問題的回應速度尚可。
+**社群活躍度**：社群活躍，定期更新和回應問題。
 **連結**：[文件](https://designlang.manavaryasingh.com)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-18 ~ 2026-04-18）
-> **活躍天數** 1 天 · **最新 commit** chore(release): v7.2.0 (#37)
+> [!abstract] 最近 10 次 commit（2026-04-18 ~ 2026-04-19）
+> **活躍天數** 2 天 · **最新 commit** chore(manavarya-bot): sync reviewer workflow
 
 ## 熱門議題
 
@@ -451,6 +454,21 @@ designlang 可以與現有的開發工具鏈無縫整合，特別是在使用 No
 > 
 > # Or install globally
 > npm install -g designlang
+> 
+> 
+> ## Install Everywhere
+> 
+> designlang ships surfaces beyond the CLI:
+> 
+> | Surface | Path | Description |
+> |---------|------|-------------|
+> | **CLI** | `npx designlang ` | Main entry point. |
+> | **VS Code extension** | [`vscode-extension/`](vscode-extension/) | "Extract design from URL" command + auto-inject into workspace. |
+> | **Raycast extension** | [`raycast-extension/`](raycast-extension/) | Extract, score, and "copy CLI command" from Raycast. |
+> | **Figma plugin** | [`figma-plugin/`](figma-plugin/) | Paste a URL inside Figma, get a full Variables collection. |
+> | **GitHub Action** | [`github-action/`](github-action/) | "Design regression guard" — diffs tokens on every PR and comments. |
+> | **Chrome extension** | [`chrome-extension/`](chrome-extension/) | One-click handoff from any tab (MV3, `activeTab` only). |
+> | **MCP server** | `npx designlang mcp` | Exposes the extracted design as MCP resources + tools for Cursor, Claude Code, Windsurf, etc. See [`docs/MCP-REGISTRY.md`](docs/MCP-REGISTRY.md). |
 > 
 > 
 > ## Example Output
@@ -567,37 +585,11 @@ designlang 可以與現有的開發工具鏈無縫整合，特別是在使用 No
 > 
 > The markdown output has **19 sections**: Color Palette, Typography, Spacing, Border Radii, Box Shadows, CSS Custom Properties, Breakpoints, Transitions & Animations, Component Patterns (with full CSS snippets), Layout System, Responsive Design, Interaction States, Accessibility (WCAG 2.1), Gradients, Z-Index Map, SVG Icons, Font Files, Image Style Patterns, and Quick Start.
 > 
-> In v7 a companion `*-mcp.json` file is also written alongside the 8 outputs so that `designlang mcp` can serve regions, components, and health data from disk on later invocations. Opting into `--platforms ` additively emits `ios/`, `android/`, `flutter/`, and/or `wordpress-theme/` directories in the output folder, and `--emit-agent-rules` adds a `.cursor/`, `.claude/`, `CLAUDE.md.fragment`, and `agents.md` set.
-> 
-> 
-> # As an agent skill (Claude Code, Cursor, Codex, 40+ agents)
-> npx skills add Manavarya09/design-extract
-> ```
-> 
-> 
-> ## What Makes This Different
-> 
-> Most design extraction tools give you colors and fonts. That's it. designlang fills 5 market gaps that no other tool addresses:
-> 
-> 
-> ### 1. Layout System Extraction
-> 
-> Extracts the structural skeleton — grid column patterns, flex direction usage, container widths, gap values, and justify/align patterns.
-> 
-> ```
-> Layout: 55 grids, 492 flex containers
-> ```
-> 
-> Every other tool gives you the paint. designlang gives you the architecture.
-> 
-> 
-> ### 2. Responsive Multi-Breakpoint Capture
-> 
-> Crawls the site at 4 viewports (mobile, t
+> In v7 a companion `*-mcp.json` file is also written alongsid
 
 ## 延伸閱讀
 
-相關概念：[[設計系統]] · [[可訪問性]] · [[響應式設計]] · [[自動化測試]] · [[設計標記]]
+相關概念：[[設計系統]] · [[設計標記]] · [[響應式設計]] · [[可及性]] · [[自動化測試]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]]
 
@@ -641,7 +633,7 @@ designlang 可以與現有的開發工具鏈無縫整合，特別是在使用 No
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["設計系統","可訪問性","響應式設計","自動化測試","設計標記"];
+> const concepts = ["設計系統","設計標記","響應式設計","可及性","自動化測試"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Manavarya09--design-extract" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

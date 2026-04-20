@@ -7,9 +7,9 @@ language: Python
 license: N/A
 description: ""
 homepage: ""
-stars: 1256
-stars_per_day: 179
-forks: 116
+stars: 1537
+stars_per_day: 192
+forks: 158
 open_issues: 0
 created: 2026-04-12
 pushed_at: 2026-04-15
@@ -17,7 +17,7 @@ first_seen: 2026-04-18
 week: "2026-W16"
 month: "2026-04"
 category: "開發工具"
-subcategory: "自動化"
+subcategory: "影片編輯"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,14 +26,14 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-18
-use_case: "透過 Claude Code 自動編輯影片，無需手動操作。"
+use_case: "透過對話驅動的方式，自動編輯影片，省去繁瑣的手動操作。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 2
 next_review: "2026-04-26"
 contributor_count: 1
-engagement: "low"
+engagement: "medium"
 issue_close_rate: -1
 repo_size_kb: 582
 readme_length: 3830
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-18"
-star_history: "2026-04-18:950,2026-04-18:960,2026-04-19:1252,2026-04-19:1256"
+star_history: "2026-04-18:950,2026-04-18:960,2026-04-19:1252,2026-04-19:1256,2026-04-20:1537"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "video-use"
   - "browser-use/video-use"
-  - "透過 Claude Code 自動編輯影片，無需手動操作。"
+  - "透過對話驅動的方式，自動編輯影片，省去繁瑣的手動操作。"
 ---
 
 # video-use
 
-**1.3k** stars · **179** stars/天 · 建立 7 天前 · Python · 未標註授權
+**1.5k** stars · **192** stars/天 · 建立 8 天前 · Python · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/browser-use--video-use");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 透過 Claude Code 自動編輯影片，無需手動操作。
+> 透過對話驅動的方式，自動編輯影片，省去繁瑣的手動操作。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (179 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要快速編輯影片但不想花時間在繁瑣操作上的獨立創作者。
-> **一句話重點** 這個專案展示了如何將對話式介面與自動化影片編輯結合，讓編輯變得更簡單。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (192 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 4 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要快速編輯影片但不想學習複雜編輯軟體的內容創作者。
+> **一句話重點** 這個專案展示了如何透過對話驅動的方式簡化影片編輯流程，讓更多人能輕鬆創作內容。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/browser-use--video-use");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "自動化" && p.file.name !== "browser-use--video-use" && p.status !== "archived")
+>     .where(p => p.subcategory === "影片編輯" && p.file.name !== "browser-use--video-use" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,32 +96,34 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 影片編輯 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
-> **結論** 花 3 小時學習，2 小時整合，得到自動化編輯的高效益，值得嘗試。
+> **結論** 花 3 小時學習，2 小時整合，得到快速編輯影片的效果，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於其將對話式介面與自動化影片編輯結合，讓使用者能夠更直觀地進行編輯。
+> 透過自然語言指令驅動的影片編輯，無需手動操作。
 
 ## 專案簡介
 
-video-use 是一個基於 Claude Code 的開源影片編輯工具，使用者只需將原始影片放入資料夾，然後與 Claude Code 進行對話，即可獲得編輯後的 `final.mp4`。這個工具的核心賣點在於其能夠自動剪輯掉填充詞（如 `umm`、`uh`）和不必要的空白，並且能夠自動進行顏色調整，提供多種風格選擇。使用者可以透過簡單的指令來開始編輯，並且所有輸出都會存放在 `/edit/` 資料夾中，保持技能目錄的整潔。技術上，這個工具使用了 ElevenLabs 的語音轉文字技術來獲取每段的時間戳和說話者識別，並且在決策點時生成視覺合成圖像，這樣可以避免處理大量無用的視頻幀，從而提高效率。
+video-use 是一個基於 Claude Code 的開源影片編輯工具，使用者只需將原始影片放入指定資料夾，透過對話指令即可獲得編輯後的影片。核心流程包括：將原始音訊轉錄為文字，利用 LLM 分析文字並決定剪輯策略，然後生成最終的影片。這個工具的賣點在於其無需手動設置預設或選單，完全依賴自然語言指令進行操作。使用者可以透過簡單的指令，例如 `claude` 來啟動編輯過程，並且編輯結果會自動存放在指定的資料夾中。技術上，這個工具使用了 ElevenLabs 的語音轉錄服務來獲取音訊的時間戳和說話者區分，並且在每次剪接時自動進行自我評估，確保編輯的質量。
 
-其依賴的 Python 庫包括 `requests`、`librosa` 和 `numpy`，這些都是輕量級的依賴，讓整體架構保持簡潔。與其他編輯工具相比，video-use 省去了繁瑣的預設和菜單，讓使用者可以專注於內容創作而非操作界面。這使得它特別適合需要快速編輯和生成內容的創作者，尤其是在短時間內需要產出高質量視頻的情境中。使用者在使用過程中可能會遇到需要配置 API 金鑰的問題，但整體上安裝和使用流程相對簡單，適合小型團隊或個人創作者使用。
+這樣的設計使得編輯過程更為高效，避免了傳統編輯軟體中繁瑣的操作步驟。與其他編輯工具相比，video-use 以其對話驅動的方式和自動化的剪輯流程，顯著降低了使用門檻，特別適合不熟悉專業編輯軟體的使用者。此專案的依賴相對輕量，主要依賴 Python 的幾個常用庫，並且支持擴展功能如動畫生成。使用者在實際操作中可能會遇到需要配置 API 金鑰的情況，這是使用 ElevenLabs 服務的必要步驟。整體來看，video-use 目前處於 alpha 階段，但其潛力巨大，尤其在快速生成內容的需求日益增加的背景下，未來可能會成為內容創作者的必備工具。
 
 **技術棧**：`Python 3.10` · `requests` · `librosa` · `matplotlib` · `pillow` · `numpy`
 
 ## 重點功能
 
-- 自動剪輯 — 剪除填充詞和不必要的空白，提升影片流暢度。
-- 自動顏色調整 — 提供多種顏色風格選擇，滿足不同需求。
-- 音頻淡入淡出 — 每次剪輯時自動添加 30ms 的音頻淡入淡出效果，避免聲音突兀。
-- 生成動畫覆蓋 — 支援使用 Manim 生成動畫，並可並行處理多個動畫。
-- 會話記憶持久化 — 將會話記錄保存在 `project.md` 中，方便下次繼續編輯。
+- 自動剪輯 — 自動去除填充詞和死空間，提升影片流暢度。
+- 自動色彩調整 — 提供多種色彩風格選擇，並可自定義 ffmpeg 處理鏈。
+- 音訊淡入淡出 — 每次剪接自動添加 30ms 的音訊淡入淡出，避免突兀的聲音切換。
+- 燒錄字幕 — 自動生成可自定義風格的字幕，支援兩字大寫塊。
+- 動畫覆蓋生成 — 透過 Manim 或 PIL 生成動畫，並行處理多個動畫。
+- 自我評估 — 每次剪接後自動檢查影片質量，確保輸出效果。
+- 持續會話記憶 — 將會話記錄保存於 project.md，方便下次繼續編輯。
 
 ## 快速開始
 
@@ -145,77 +147,64 @@ $EDITOR .env
 ## 程式碼範例
 
 ```python
-# 先克隆專案
-# 然後進入資料夾並安裝依賴
-pip install -e .
-brew install ffmpeg
-
-# 開始編輯影片
-cd /path/to/your/videos
-claude
-
-# 在會話中輸入指令
-> edit these into a launch video
-
-# 預期輸出
-編輯後的影片將生成在 /edit/final.mp4。
+{
+  "前置條件": "已安裝並配置 Claude Code",
+  "指令": "claude\n> edit these into a launch video",
+  "預期輸出": "編輯後的影片將生成於 /edit/final.mp4"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 7 天內累積 1256 stars（179/天），forks 116（9.2%），顯示出相對穩定的增長。這個專案由 gregpr07 貢獻，提供了一個在影片編輯領域的創新解決方案，特別是對於需要快速編輯的內容創作者。之前的工具往往需要繁瑣的手動操作，而這個專案透過 Claude Code 的對話式介面，讓編輯變得更直觀和高效。近期的推廣活動和社群討論也可能促進了其曝光率，讓更多人注意到這個工具的潛力。整體來看，這個專案的增長是由於其獨特的功能和簡化的使用流程。
+> 建立 8 天就累積 1537 stars（192/天），forks 158（10.3%），顯示出強烈的社群興趣。作者 gregpr07 以往在開源社群中活躍，這個專案解決了傳統影片編輯工具操作繁瑣的痛點，讓使用者能夠透過自然語言進行編輯。近期的推廣活動和社群討論也可能促進了其快速增長。技術上，隨著語音識別和 LLM 的進步，這個工具的可行性大幅提升。高達 10.3% 的 forks/stars 比率顯示出使用者對此專案的實際修改和應用意願。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速編輯影片但不想花時間在繁瑣操作上的獨立創作者。
+**目標受眾**：需要快速編輯影片但不想學習複雜編輯軟體的內容創作者。
 
 > [!example] 使用場景
-> - 內容創作者用它來快速編輯旅行影片，因為它能自動去除不必要的片段，節省了大量的編輯時間。
-> - 教育工作者用它來製作教學影片，因為它可以自動生成字幕，提升了影片的可讀性和專業性。
-> - 社交媒體經營者用它來編輯短片，因為它的自動化功能讓他們能夠在短時間內產出高質量的內容。
+> - 內容創作者用它來快速編輯 YouTube 影片，因為可以省去繁瑣的手動操作，提升工作效率。
+> - 教育工作者用它來製作教學影片，因為其自動剪輯功能能夠快速去除不必要的內容，讓影片更精簡。
+> - 行銷專員用它來編輯產品介紹影片，因為透過對話指令能夠快速獲得專業品質的編輯結果。
 
 ## 架構分析
 
-video-use 採用了一個分層架構，首先通過 ElevenLabs 的語音轉文字技術將音頻轉換為文本，並獲取時間戳和說話者識別。接著，這些信息被打包成一個輕量級的文本檔案，供 LLM 進行分析和決策。這樣的設計使得系統能夠避免處理大量無用的視頻幀，從而提升效率。
-
-每當需要進行決策時，系統會生成視覺合成圖像，這樣可以進一步減少處理的數據量。選擇這種方法的代價在於需要依賴外部 API，但這樣的設計能夠顯著提升編輯的精確度。整體架構的擴展性良好，能夠隨著需求的增加進行調整。
+video-use 採用一個基於 LLM 的架構，將音訊轉錄和視覺合成分為兩個層次。第一層是音訊轉錄，使用 ElevenLabs 的 Scribe 服務獲取時間戳和說話者信息，這樣的設計使得 LLM 能夠精確地根據文字進行剪輯。第二層是視覺合成，僅在決策點生成相關的視覺資料，這樣避免了大量無用的資料流。這種設計的好處在於減少了處理過程中的計算負擔，但也可能在某些情況下導致視覺信息不足。整體架構的擴展性良好，因為可以根據需求添加更多的視覺合成層，但目前的設計仍然依賴於音訊的準確性，若音訊質量不佳，將影響最終的編輯效果。
 
 ## 技術深入分析
 
-video-use 的核心技術在於其將音頻轉換為文本的能力，並利用 LLM 進行智能決策。這個過程中，系統首先通過 ElevenLabs 的 Scribe API 獲取每段音頻的時間戳和說話者識別，這樣可以精確地定位到每個詞的開始和結束時間。接著，這些信息被打包成一個輕量級的文本檔案，這樣 LLM 就能夠快速讀取和分析，而不需要處理大量的視頻數據。這樣的設計使得整體系統的性能得到了顯著提升，因為它避免了傳統編輯工具中常見的高資源消耗問題。
-
-選擇 Python 作為開發語言的原因在於其豐富的數據處理庫和良好的社群支持，這使得開發過程更加高效。依賴的庫如 `librosa` 和 `numpy` 也都是輕量級的，這樣可以保持系統的整體性能。未來可能面臨的風險包括對外部 API 的依賴，這可能會影響到系統的穩定性和可用性。整合到現有的工作流中相對簡單，因為它可以與多種影片編輯工具和平台兼容，並且支持通過 CLI 進行操作。
+video-use 的核心技術在於其利用 LLM 進行影片編輯的創新方法。它透過音訊轉錄將語音轉換為文字，並利用這些文字信息來決定剪輯策略，這樣的設計使得編輯過程更為精確。整體架構中，音訊轉錄的準確性直接影響編輯結果，這意味著高品質的音訊輸入是成功的關鍵。此專案的依賴相對輕量，主要使用 Python 的幾個常用庫，這使得安裝和使用都相對簡單。設計上，video-use 選擇了將音訊作為主要依據，這樣的取捨使得編輯過程更為流暢，但在某些情況下可能會忽略視覺信息的細節。隨著使用者需求的增加，未來可能會擴展更多的視覺合成選項，以滿足更複雜的編輯需求。整體來看，這個工具在快速生成內容的需求下，未來有潛力成為內容創作者的必備工具。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用範例，讓新手能夠快速上手。安裝過程相對順暢，但需要注意配置 API 金鑰的步驟。整體上，文件質量良好，適合新手學習。
+> README 文件提供了清晰的安裝指引和使用範例，讓新手能夠快速上手。安裝過程相對順暢，但需要配置 API 金鑰，這對於新手來說可能需要一些額外的學習。整體而言，花 30 分鐘應該能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化程度高，減少手動操作時間
-> - 對話式編輯介面，使用直觀
-> - 支持多種影片格式和編輯風格
+> - 使用自然語言進行編輯，降低了使用門檻。
+> - 自動化的剪輯和評估流程，提高了效率。
+> - 支持多種輸出格式，靈活性高。
 
 > [!danger] 缺點
-> - 需要外部 API 支持，增加依賴性
-> - 目前不支援 Windows 系統
-> - 對於複雜的編輯需求可能不夠靈活
+> - 目前功能仍在開發中，穩定性有待加強。
+> - 需要配置 API 金鑰，對新手來說可能有點困難。
+> - 對於複雜的編輯需求，可能無法完全滿足。
 
 > [!warning] 注意事項
 > - 僅支援 Python 3.10 以上版本
-> - 需要安裝 ffmpeg，否則無法處理影片
-> - 目前不支援 Windows 系統的安裝
+> - 需要安裝 ffmpeg 以進行影片處理
+> - 目前僅在 alpha 階段，功能可能不穩定
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於影片編輯的自動化，但不具備對話式編輯的功能，使用者需要手動設定編輯流程。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 這個工具提供了更強大的動畫生成能力，但在影片剪輯的自動化方面不如 video-use 直觀。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這個工具主要用於同步和處理多個影片來源，缺乏 video-use 的自動剪輯和顏色調整功能。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供更傳統的影片編輯功能，適合需要詳細手動控制的專業編輯，但不支持自然語言指令。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | codeburn 專注於自動化影片生成，但缺乏 video-use 的自我評估和持續會話記憶功能。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | claude-obsidian 提供更靈活的編輯選項，適合進階用戶，但不如 video-use 直觀易用。 |
 
 ## 替代方案決策
 
@@ -223,17 +212,16 @@ video-use 的核心技術在於其將音頻轉換為文本的能力，並利用 
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於影片編輯的自動化，但不具備對話式編輯的功能，使用者需要手動設定編輯流程。 | 如果你需要更高的編輯靈活性和控制權，而不介意手動操作。 | medium，因為需要重新學習編輯流程和工具的使用。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 這個工具提供了更強大的動畫生成能力，但在影片剪輯的自動化方面不如 video-use 直觀。 | 如果你的專案需要大量的動畫效果，而不僅僅是簡單的剪輯。 | medium，因為需要適應不同的編輯風格和工具。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 這個工具主要用於同步和處理多個影片來源，缺乏 video-use 的自動剪輯和顏色調整功能。 | 如果你的工作主要集中在多來源影片的同步，而不需要自動化編輯。 | low，因為功能上有部分重疊，但操作方式不同。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供更傳統的影片編輯功能，適合需要詳細手動控制的專業編輯，但不支持自然語言指令。 | 如果需要更細緻的手動編輯和控制，boneyard 會是更好的選擇。 | medium，因為需要重新學習編輯流程和工具。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | codeburn 專注於自動化影片生成，但缺乏 video-use 的自我評估和持續會話記憶功能。 | 如果需要快速生成影片而不需要自我評估的功能，codeburn 是不錯的選擇。 | low，因為兩者的使用方式相似，轉換成本不高。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **video-use** | **boneyard** | **codeburn** | **parsync** |
-> | --- | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這個工具專注於影片編輯的自動化，但不具備對話式編輯的功能，使用者需要手動設定編輯流程。 | 這個工具提供了更強大的動畫生成能力，但在影片剪輯的自動化方面不如 video-use 直觀。 | 這個工具主要用於同步和處理多個影片來源，缺乏 video-use 的自動剪輯和顏色調整功能。 |
-> | 遷移成本 | - | medium，因為需要重新學習編輯流程和工具的使用。 | medium，因為需要適應不同的編輯風格和工具。 | low，因為功能上有部分重疊，但操作方式不同。 |
-> | 適用場景 | 主要場景 | 如果你需要更高的編輯靈活性和控制權，而不介意手動操作。 | 如果你的專案需要大量的動畫效果，而不僅僅是簡單的剪輯。 | 如果你的工作主要集中在多來源影片的同步，而不需要自動化編輯。 |
+> | 維度 | **video-use** | **boneyard** | **codeburn** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | boneyard 提供更傳統的影片編輯功能，適合需要詳細手動控制的專業編輯，但不支持自然語言指令。 | codeburn 專注於自動化影片生成，但缺乏 video-use 的自我評估和持續會話記憶功能。 |
+> | 遷移成本 | - | medium，因為需要重新學習編輯流程和工具。 | low，因為兩者的使用方式相似，轉換成本不高。 |
+> | 適用場景 | 主要場景 | 如果需要更細緻的手動編輯和控制，boneyard 會是更好的 | 如果需要快速生成影片而不需要自我評估的功能，codeburn |
 
 ## 成熟度評估
 
@@ -250,21 +238,18 @@ video-use 的核心技術在於其將音頻轉換為文本的能力，並利用 
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 需要正確配置 API 金鑰，否則無法正常運行
-  - 解法：確保在 .env 檔案中正確設置 API 金鑰
-- [MEDIUM] 在某些環境下可能無法安裝 ffmpeg
-  - 解法：檢查系統相容性，必要時手動安裝
-- [MEDIUM] 對於特定格式的影片可能無法正確處理
-  - 解法：使用常見的影片格式，如 MP4，避免使用不常見的格式
+- **[HIGH]** 在某些情況下，音訊轉錄可能不準確，導致編輯結果不理想
+  - 解法：確保使用高品質的音訊來源
+- [MEDIUM] 需要配置 API 金鑰，對新手來說可能有點困難
+  - 解法：參考 README 中的配置指引
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型創業團隊的影片編輯需求 | 非常適合 | 自動化編輯功能能夠大幅提升工作效率，減少人力成本。 |
-| 大型製作公司的高端影片編輯 | 不適合 | 對於複雜的編輯需求，可能無法提供足夠的靈活性和控制權。 |
-| 教育機構的教學影片製作 | 適合 | 自動生成字幕和快速編輯功能能夠提升教學影片的製作效率。 |
-| 個人內容創作者的日常影片編輯 | 非常適合 | 能夠快速生成高質量的內容，適合日常使用。 |
+| 小型創業團隊的影片編輯需求 | 非常適合 | 其自動化和簡單的使用方式非常符合小型團隊的需求。 |
+| 大型企業的專業影片製作 | 不適合 | 對於需要高精度和手動控制的專業編輯，這個工具可能無法滿足需求。 |
+| 教育機構的教學影片製作 | 適合 | 能夠快速生成教學內容，提升製作效率。 |
 
 ## 採用成本分析
 
@@ -276,12 +261,18 @@ video-use 的核心技術在於其將音頻轉換為文本的能力，並利用 
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，2 小時整合，得到自動化編輯的高效益，值得嘗試。
+> 花 3 小時學習，2 小時整合，得到快速編輯影片的效果，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具不需要高權限操作，僅需存取 API 金鑰和本地檔案系統，沒有明顯的安全隱患。
+> 低風險：此工具不需要高權限，且不會存取敏感資料，但需注意 API 金鑰的安全性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+video-use 最常與 Claude Code 搭配使用，作為影片編輯的技能之一。在一個使用 Claude Code 的專案中，可以透過簡單的指令來啟動編輯流程，例如在命令行中輸入 `claude` 並給出編輯指令。此工具與主流 CI/CD 工具的整合尚未明確，但其簡單的命令行操作使得與現有工具鏈的整合相對容易。整合時，使用者可能需要處理 API 金鑰的配置問題，這是最常見的摩擦點。
 
 ## 健康度儀表板
 
@@ -346,7 +337,7 @@ video-use 的核心技術在於其將音頻轉換為文本的能力，並利用 
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 116 |
+| Forks | 158 |
 | Open Issues | 0 |
 | 最後推送 | 2026-04-15 |
 | 建立日期 | 2026-04-12 |
@@ -368,7 +359,8 @@ video-use 的核心技術在於其將音頻轉換為文本的能力，並利用 
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有更新和貢獻。
+**社群活躍度**：社群活躍度高，持續有更新和討論。
+**連結**：[文件](https://github.com/browser-use/video-use)
 
 ## 開發動態
 
@@ -468,19 +460,19 @@ video-use 的核心技術在於其將音頻轉換為文本的能力，並利用 
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[機器學習]] · [[影片編輯]]
+相關概念：[[自動化測試]] · [[自然語言處理]] · [[機器學習]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[KKKKhazix--khazix-skills|KKKKhazix/khazix-skills]] · [[xstongxue--best-skills|xstongxue/best-skills]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[KKKKhazix--khazix-skills|KKKKhazix/khazix-skills]] · [[xstongxue--best-skills|xstongxue/best-skills]]
 
 [GitHub](https://github.com/browser-use/video-use)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：自動化）
+> [!note]- 直接競品（同子分類：影片編輯）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "自動化" AND file.name != "browser-use--video-use"
+> WHERE subcategory = "影片編輯" AND file.name != "browser-use--video-use"
 > SORT stars DESC
 > ```
 
@@ -512,7 +504,7 @@ video-use 的核心技術在於其將音頻轉換為文本的能力，並利用 
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","機器學習","影片編輯"];
+> const concepts = ["自動化測試","自然語言處理","機器學習"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "browser-use--video-use" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

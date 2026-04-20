@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "The best-benchmarked open-source AI memory system. And it's free."
 homepage: "http://mempalaceofficial.com/"
-stars: 47861
-stars_per_day: 3419
-forks: 6268
-open_issues: 406
+stars: 48135
+stars_per_day: 3209
+forks: 6307
+open_issues: 422
 created: 2026-04-05
-pushed_at: 2026-04-18
+pushed_at: 2026-04-19
 first_seen: 2026-04-12
 week: "2026-W16"
 month: "2026-04"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-12
-use_case: "提供一個本地化的 AI 記憶系統，讓你能夠搜尋和管理對話歷史。"
+use_case: "讓 AI 擁有記憶，將專案和對話挖掘成可搜尋的宮殿。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 1
 next_review: "2026-04-15"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 31
-repo_size_kb: 15753
+issue_close_rate: 30
+repo_size_kb: 15521
 readme_length: 6991
 bus_factor: 2
-last_release_days: 1
+last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-12"
-star_history: "2026-04-12:41802,2026-04-12:41809,2026-04-13:43509,2026-04-14:44893,2026-04-15:45915,2026-04-16:46607,2026-04-17:47148,2026-04-18:47576,2026-04-19:47861"
+star_history: "2026-04-12:41802,2026-04-12:41809,2026-04-13:43509,2026-04-14:44893,2026-04-15:45915,2026-04-16:46607,2026-04-17:47148,2026-04-18:47576,2026-04-19:47861,2026-04-20:48135"
 tags:
   - github
   - "category/ai_ml"
@@ -57,12 +57,12 @@ tags:
 aliases:
   - "mempalace"
   - "MemPalace/mempalace"
-  - "提供一個本地化的 AI 記憶系統，讓你能夠搜尋和管理對話歷史。"
+  - "讓 AI 擁有記憶，將專案和對話挖掘成可搜尋的宮殿。"
 ---
 
 # mempalace
 
-**47.9k** stars · **3.4k** stars/天 · 建立 14 天前 · Python · MIT
+**48.1k** stars · **3.2k** stars/天 · 建立 15 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/MemPalace--mempalace");
@@ -80,13 +80,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ai` `chromadb` `llm` `mcp` `memory` `python`
 
 > [!summary] 一句話摘要
-> 提供一個本地化的 AI 記憶系統，讓你能夠搜尋和管理對話歷史。
+> 讓 AI 擁有記憶，將專案和對話挖掘成可搜尋的宮殿。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Viral (3.4k stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Viral (3.2k stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要一個本地化的 AI 記憶系統來管理對話和專案資料的開發者。
-> **一句話重點** MemPalace 的設計理念在於提供一個完全本地化的 AI 記憶系統，讓用戶能夠安全地管理和檢索對話歷史。
+> **適合** 需要在本地環境中管理 AI 記憶的開發者和研究人員。
+> **一句話重點** MemPalace 的設計讓 AI 擁有本地記憶，這在當前的數位隱私環境中是非常重要的。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -109,25 +109,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，3 小時整合，得到高效的本地化記憶系統，值得考慮。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，3 小時整合，得到高隱私性和高準確率的 AI 記憶系統，值得。
 
 > [!abstract] 核心創新
-> 提供一個完全本地化的 AI 記憶系統，無需 API 調用，確保數據隱私。
+> MemPalace 提供了一個完全本地化的 AI 記憶系統，無需 API 金鑰，並且能夠達到高達 96.6% 的檢索準確率。
 
 ## 專案簡介
 
-MemPalace 是一個本地優先的 AI 記憶系統，專為存儲和檢索對話歷史而設計。用戶可以透過 `mempalace mine` 指令將專案文件或對話內容挖掘進入記憶庫，並使用 `mempalace search` 進行語意搜尋，這樣的設計避免了任何 API 調用，確保數據隱私。系統的索引結構化，將人和專案視為「翼」，主題視為「房間」，原始內容則存放在「抽屜」中，這樣的設計使得搜尋更具針對性。MemPalace 使用 ChromaDB 作為默認後端，並允許用戶根據需要替換後端，這樣的靈活性使得系統能夠適應不同的需求。該系統在 LongMemEval 上的檢索回憶率達到 96.6%，這意味著即使不依賴 LLM，仍能提供高效的檢索能力。MemPalace 的設計理念是確保所有數據都保留在本地，只有在用戶選擇的情況下才會進行外部調用，這樣的做法大幅提升了數據安全性。
+MemPalace 是一個開源的 AI 記憶系統，旨在將對話歷史以逐字文本的形式儲存並透過語意搜尋來檢索。使用者可以透過 `mempalace mine` 指令將專案文件或對話內容挖掘進入記憶宮殿，並使用 `mempalace search` 指令進行搜尋，這樣的設計讓使用者能夠更精確地查找所需資訊，而不是在一個平坦的資料庫中搜尋。其核心賣點在於不需要 API 金鑰，所有資料都保留在本地，並且提供高達 96.6% 的檢索準確率，這在許多其他工具中是無法實現的。MemPalace 的檢索層是可插拔的，預設使用 ChromaDB 作為後端，這使得使用者可以根據需求更換後端而不影響整體系統。這種設計不僅提高了靈活性，還能夠在不依賴外部服務的情況下運行，這對於需要高隱私性和安全性的用戶來說非常重要。
 
-**技術棧**：`Python 3.9+` · `ChromaDB >=1.5.4`
+**技術棧**：`Python 3.9+` · `ChromaDB` · `SQLite`
 
 ## 重點功能
 
-- 本地化存儲 — 所有數據都保存在本地，無需 API 調用，確保數據隱私。
-- 結構化索引 — 將對話和專案內容組織成翼、房間和抽屜，提升檢索效率。
-- 可插拔後端 — 默認使用 ChromaDB，支持用戶替換後端以滿足不同需求。
-- 高效檢索 — 在 LongMemEval 上達到 96.6% 的檢索回憶率，無需 LLM。
-- 多語言支持 — 新增五種語言的實體檢測，擴展了應用範圍。
+- 逐字儲存 — 將對話和專案內容逐字儲存，無需摘要或提煉。
+- 可插拔的後端 — 預設使用 ChromaDB，使用者可根據需求更換後端。
+- 高檢索準確率 — 在 LongMemEval 測試中達到 96.6% 的檢索準確率。
+- 本地運行 — 所有資料保留在本地，無需 API 金鑰，確保資料隱私。
+- 多語言支持 — 支援多種語言的實體檢測，提升全球使用者的體驗。
 
 ## 快速開始
 
@@ -135,19 +135,19 @@ MemPalace 是一個本地優先的 AI 記憶系統，專為存儲和檢索對話
 ```bash
 pip install mempalace
 ```
-2. 初始化一個新記憶庫
+2. 初始化專案
 ```bash
 mempalace init ~/projects/myapp
 ```
-3. 挖掘專案內容進入記憶庫
+3. 挖掘內容
 ```bash
 mempalace mine ~/projects/myapp
 ```
-4. 搜尋對話歷史
+4. 搜尋內容
 ```bash
 mempalace search 'why did we switch to GraphQL'
 ```
-5. 載入上下文以開始新會話
+5. 喚醒上下文
 ```bash
 mempalace wake-up
 ```
@@ -156,64 +156,63 @@ mempalace wake-up
 
 ```python
 {
-  "前置條件": "已安裝 MemPalace 並初始化記憶庫",
+  "前置條件": "已安裝 MemPalace 並初始化專案。",
   "指令": "mempalace mine ~/projects/myapp",
-  "預期輸出": "成功將專案內容挖掘到記憶庫中。"
+  "預期輸出": "將專案文件挖掘進入記憶宮殿。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 14 天內累積 47861 stars（3419/天），forks 6268（13.1%），顯示出強勁的增長潛力。作者 Igorls 和團隊過去在 AI 記憶系統方面有豐富經驗，這個專案解決了現有記憶系統依賴雲端服務的痛點，提供了一個完全本地化的替代方案。最近的推特和 HN 討論也引發了更多的關注。隨著對數據隱私的重視，這個工具的需求顯著上升。高達 13.1% 的 forks/stars 比率顯示出許多開發者正在積極修改和使用這個工具。
+> 建立 15 天內累積 48135 stars（3209/天），forks 6307（13.1%），顯示出強勁的增長趨勢。這個專案由 igorls 和其他幾位活躍貢獻者共同開發，解決了許多現有 AI 記憶系統在資料隱私和檢索準確性上的痛點。之前的解決方案如 Mem0 和 Hindsight 都需要依賴雲端服務，這使得資料安全性成為問題，而 MemPalace 則完全在本地運行，避免了這些風險。社群的活躍度也體現在開放的 issues 和快速的回應上，這對於使用者來說是個加分項。
 
 ## 適合誰使用
 
-**目標受眾**：需要一個本地化的 AI 記憶系統來管理對話和專案資料的開發者。
+**目標受眾**：需要在本地環境中管理 AI 記憶的開發者和研究人員。
 
 > [!example] 使用場景
-> - 後端工程師用它來將專案文件挖掘到記憶庫，因為這樣可以快速檢索過去的設計決策，避免重複工作。
-> - 產品經理用它來管理會議記錄和對話歷史，因為能夠快速搜尋關鍵字，提升會議效率。
-> - AI 開發者用它來測試和評估模型的對話能力，因為能夠在本地環境中進行高效的數據檢索和分析。
+> - AI 研究人員用它來儲存和檢索對話歷史，因為這樣可以快速回顧過去的討論，提升研究效率。
+> - 開發者用它來挖掘專案文件，因為這樣可以更方便地查找過去的設計決策和代碼片段，避免重複工作。
+> - 產品經理用它來管理會議記錄和決策過程，因為這樣可以確保所有重要資訊都能被快速檢索，提升團隊的協作效率。
 
 ## 架構分析
 
-MemPalace 採用本地優先的架構設計，所有數據存儲在用戶的設備上，這樣的設計確保了數據的隱私和安全。系統的索引結構化，將對話和專案內容分為不同的層級，這樣的設計使得檢索過程更為高效。使用 ChromaDB 作為默認後端，這樣的選擇使得系統能夠快速檢索數據，且用戶可以根據需求替換後端。
-
-這種靈活性使得系統能夠適應不同的使用場景。選擇本地存儲的代價是需要用戶自行管理數據的安全性和備份，但這樣的設計能夠避免雲端服務的依賴，降低了數據洩露的風險。擴展性方面，系統的設計允許用戶添加新的後端，但可能需要額外的開發工作來確保兼容性。
+MemPalace 採用本地優先的架構，所有資料都儲存在用戶的機器上，這樣的設計確保了資料的隱私性和安全性。系統的資料流由用戶輸入的對話或專案文件開始，這些資料被挖掘並儲存在一個結構化的索引中，使用者可以透過語意搜尋來檢索資料。檢索層是可插拔的，預設使用 ChromaDB，這樣的設計讓使用者可以根據需求更換後端而不影響整體系統。這種架構的代價在於需要用戶自行管理資料儲存和備份，但相對於雲端解決方案，這提供了更高的安全性和控制力。擴展性方面，由於資料完全在本地，對於大型資料集的處理可能需要更多的硬體資源，特別是在磁碟空間和記憶體方面。
 
 ## 技術深入分析
 
-MemPalace 的核心技術機制是基於結構化索引的記憶系統，使用 ChromaDB 作為後端，這使得檢索過程高效且靈活。系統的設計允許用戶將對話和專案內容組織成不同的層級，這樣的結構化設計使得用戶能夠快速定位所需信息。根據官方的基準測試，MemPalace 在 LongMemEval 上的檢索回憶率達到 96.6%，這意味著即使不依賴 LLM，系統仍能提供高效的檢索能力。選擇 Python 作為開發語言的好處在於其豐富的生態系統和廣泛的社群支持，但也可能面臨性能瓶頸，特別是在處理大型數據集時。系統的依賴樹相對簡單，主要依賴 ChromaDB 和 PyYAML，這使得整體架構輕量且易於維護。技術風險方面，隨著數據量的增加，檢索速度可能會受到影響，這需要在未來的版本中進行優化。整合方面，MemPalace 可以輕鬆與現有的 Python 工具鏈進行整合，並且支持在 CI/CD pipeline 中使用，這使得它在開發流程中非常友好。
+MemPalace 的核心技術機制在於其逐字儲存和語意搜尋能力，這使得使用者能夠精確地檢索到所需的對話或專案內容。系統使用 ChromaDB 作為預設的向量資料庫，這樣的選擇使得資料檢索速度快且準確。根據基準測試，MemPalace 在 LongMemEval 測試中達到 96.6% 的檢索準確率，這顯示出其在不依賴外部 API 的情況下仍能提供優異的性能。設計取捨方面，選擇本地運行的架構雖然提高了資料的安全性，但也要求使用者具備一定的技術能力來管理和維護系統。技術風險方面，隨著資料量的增加，系統可能面臨性能瓶頸，特別是在記憶體和磁碟空間的需求上。整合方面，MemPalace 可以與多種工具和框架搭配使用，特別是在開發環境中，這使得其在 CI/CD pipeline 中的整合相對簡單。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了詳細的安裝和使用說明，包含範例指令。安裝過程相對順暢，僅需執行一行指令即可完成安裝。文件中有良好的入門指南，幫助新手快速上手。可惜目前僅提供英文文件，對於非英語使用者可能會有一定的學習障礙。
+> README 文件詳細且清晰，提供了安裝和使用的範例。安裝過程順暢，沒有明顯的坑。文件中有良好的入門指南，並且提供了多語言支持，這對於不同背景的使用者非常友好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 數據完全本地化，無需擔心數據隱私問題。
-> - 高效的檢索能力，無需依賴外部 API。
-> - 靈活的後端選擇，能夠根據需求進行擴展。
+> - 高隱私性 — 所有資料都保留在本地，無需擔心資料外洩。
+> - 高檢索準確率 — 在多個基準測試中表現優異。
+> - 靈活的後端選擇 — 使用者可以根據需求更換後端。
 
 > [!danger] 缺點
-> - 需要用戶自行管理數據的安全性和備份。
-> - 對於大型數據集，檢索速度可能會受到影響。
-> - 目前僅支持 ChromaDB 作為默認後端，其他後端需自行集成。
+> - 需要用戶自行管理資料儲存和備份。
+> - 對於大型資料集，可能需要額外的硬體資源。
+> - 僅支援 Python 3.9 以上版本，限制了使用者群體。
 
 > [!warning] 注意事項
 > - 僅支援 Python 3.9 以上版本。
-> - 目前僅支持 ChromaDB 作為默認後端，其他後端需自行集成。
-> - 對於大型數據集，檢索速度可能會受到影響。
+> - 需要安裝 ChromaDB 作為後端。
+> - 對於大型資料集，可能需要額外的磁碟空間。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了一個基於雲端的記憶系統，依賴於 API 調用，與 MemPalace 的本地化存儲形成鮮明對比。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | Claude-Obsidian 主要針對文本和筆記的管理，而 MemPalace 更專注於對話歷史的存儲和檢索。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供類似的記憶管理功能，但主要依賴雲端服務，可能會影響資料隱私。 |
+| [Hindsight/hindsight](https://github.com/Hindsight/hindsight) | Hindsight 的設計更偏向於回顧過去的決策，而 MemPalace 更注重於即時的資料挖掘和檢索。 |
+| [Zep/zep](https://github.com/Zep/zep) | Zep 提供的記憶系統需要額外的 API 支持，而 MemPalace 完全在本地運行，無需外部依賴。 |
 
 ## 替代方案決策
 
@@ -221,16 +220,16 @@ MemPalace 的核心技術機制是基於結構化索引的記憶系統，使用 
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了一個基於雲端的記憶系統，依賴於 API 調用，而 MemPalace 則完全本地化，無需外部服務。 | 如果你的團隊已經在使用雲端服務，且需要跨設備同步，那麼 Boneyard 可能更適合。 | medium，因為需要將數據從本地遷移到雲端。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | Claude-Obsidian 主要針對文本和筆記的管理，而 MemPalace 更專注於對話歷史的存儲和檢索。 | 如果你的需求主要是管理文本和筆記，Claude-Obsidian 可能會更合適。 | low，因為兩者都支持文本數據的導入。 |
+| [Hindsight/hindsight](https://github.com/Hindsight/hindsight) | Hindsight 提供的記憶系統主要依賴雲端服務，這使得資料隱私成為問題，而 MemPalace 完全在本地運行。 | 如果你的團隊需要雲端協作和存取，Hindsight 可能更適合。 | medium — 需要重新設計資料流和存取方式。 |
+| [Zep/zep](https://github.com/Zep/zep) | Zep 提供的記憶系統需要額外的 API 支持，而 MemPalace 無需外部依賴。 | 如果你的專案需要與其他 API 整合，Zep 可能更適合。 | high — 需要重構整個系統以適應 API 驅動的架構。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **mempalace** | **boneyard** | **claude-obsidian** |
+> | 維度 | **mempalace** | **hindsight** | **zep** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Boneyard 提供了一個基於雲端的記憶系統，依賴於 API 調用，而 MemPalace 則完全本地化，無需外部服務。 | Claude-Obsidian 主要針對文本和筆記的管理，而 MemPalace 更專注於對話歷史的存儲和檢索。 |
-> | 遷移成本 | - | medium，因為需要將數據從本地遷移到雲端。 | low，因為兩者都支持文本數據的導入。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用雲端服務，且需要跨設備同步，那麼 Bo | 如果你的需求主要是管理文本和筆記，Claude-Obsidi |
+> | 技術路線 | 本專案 | Hindsight 提供的記憶系統主要依賴雲端服務，這使得資料隱私成為問題，而 MemPalace 完全在本地運行。 | Zep 提供的記憶系統需要額外的 API 支持，而 MemPalace 無需外部依賴。 |
+> | 遷移成本 | - | medium — 需要重新設計資料流和存取方式。 | high — 需要重構整個系統以適應 API 驅動的架構。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要雲端協作和存取，Hindsight 可能更適 | 如果你的專案需要與其他 API 整合，Zep 可能更適合。 |
 
 ## 成熟度評估
 
@@ -241,44 +240,44 @@ MemPalace 的核心技術機制是基於結構化索引的記憶系統，使用 
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人項目和小型團隊試用，但不建議用於生產環境的核心應用。
+> 適合個人或小型專案試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Linux 上使用時，某些指令可能會因 PEP 668 而失敗
-  - 解法：使用 python3 -m mempalace 來執行指令
-- [MEDIUM] 某些功能在多語言支持上可能存在不一致性
-  - 解法：檢查語言設置，並參考官方文檔進行調整
-- [MEDIUM] 在大型數據集下，檢索速度可能會變慢
-  - 解法：考慮將數據分割成多個小型庫進行管理
+- **[HIGH]** 在某些 Linux 環境中，使用 `python3 -m mempalace` 會導致錯誤
+  - 解法：使用 `mempalace` 命令替代
+- [MEDIUM] 對於大型資料集，檢索速度可能會變慢
+  - 解法：考慮優化資料結構或使用更強大的硬體
+- [MEDIUM] 某些語言的實體檢測可能不完全準確
+  - 解法：手動調整實體檢測模式以提高準確性
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠安全地管理對話歷史，無需依賴外部服務。 |
-| 大型企業的數據管理系統 | 不適合 | 對於大型數據集的檢索速度可能會成為瓶頸。 |
-| AI 開發者的本地測試環境 | 適合 | 提供高效的檢索能力，無需 API 調用。 |
-| 需要跨設備同步的團隊協作 | 不適合 | 目前僅支持本地化存儲，無法實現跨設備數據同步。 |
+| 5 人以下的開發團隊管理對話歷史 | 非常適合 | 本地運行的設計確保了資料的隱私性和安全性。 |
+| 需要雲端存取的跨地區團隊 | 不適合 | MemPalace 完全在本地運行，不支援雲端存取。 |
+| 大型企業的資料管理系統 | 普通 | 雖然能夠處理資料，但對於大型資料集的性能可能會受到限制。 |
+| 個人研究者進行 AI 記憶實驗 | 非常適合 | 提供高準確率且無需 API 金鑰，適合個人使用。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
+| 學習時間 | ~5 小時 |
 | 整合時間 | ~3 小時 |
-| 維護負擔 | low |
-| 綁定風險 | medium |
+| 維護負擔 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，3 小時整合，得到高效的本地化記憶系統，值得考慮。
+> 花 5 小時學習，3 小時整合，得到高隱私性和高準確率的 AI 記憶系統，值得。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，並且所有數據都保存在本地，降低了數據洩露的風險。依賴的庫相對穩定，無已知的供應鏈風險，適合在 CI/CD pipeline 中使用。
+> 低風險：MemPalace 在本地運行，不需要高權限，並且不會存取敏感資料。依賴鏈的信任程度高，沒有已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -344,12 +343,12 @@ MemPalace 的核心技術機制是基於結構化索引的記憶系統，使用 
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 6.3k |
-| Open Issues | 406 |
-| Issue 解決率 | 31% (179 closed) |
-| 最後推送 | 2026-04-18 |
+| Open Issues | 422 |
+| Issue 解決率 | 30% (182 closed) |
+| 最後推送 | 2026-04-19 |
 | 建立日期 | 2026-04-05 |
 | 官方網站 | [Link](http://mempalaceofficial.com/) |
-| Repo 大小 | 15.4 MB |
+| Repo 大小 | 15.2 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/MemPalace/mempalace) |
 | Topics | `ai` `chromadb` `llm` `mcp` `memory` `python` |
 
@@ -368,7 +367,7 @@ MemPalace 的核心技術機制是基於結構化索引的記憶系統，使用 
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@igorls](https://github.com/igorls) | 154 |
-> | [@bensig](https://github.com/bensig) | 100 |
+> | [@bensig](https://github.com/bensig) | 103 |
 > | [@milla-jovovich](https://github.com/milla-jovovich) | 29 |
 > | [@tmuskal](https://github.com/tmuskal) | 26 |
 > | [@github-actions[bot]](https://github.com/github-actions[bot]) | 20 |
@@ -399,13 +398,13 @@ MemPalace 的核心技術機制是基於結構化索引的記憶系統，使用 
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，近期有多個 PR 和 Issue 被處理。
-**連結**：[文件](http://mempalaceofficial.com/)
+**社群活躍度**：社群活躍，經常有新問題和功能請求被提出。
+**連結**：[文件](http://mempalaceofficial.com/) · [Discord](https://discord.com/invite/ycTQQCu6kn)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-18 ~ 2026-04-18）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #990 from MemPalace/docs/rfc-source-adapter-plugin-spec
+> [!abstract] 最近 10 次 commit（2026-04-18 ~ 2026-04-19）
+> **活躍天數** 2 天 · **最新 commit** Merge pull request #1023 from jphein/pr/pid-file-guard
 
 ## 熱門議題
 
@@ -415,7 +414,7 @@ MemPalace 的核心技術機制是基於結構化索引的記憶系統，使用 
 > | [#27](https://github.com/MemPalace/mempalace/issues/27) | Multiple issues between README claims and codebase `bug` `documentation` | 331 | 39 |
 > | [#125](https://github.com/MemPalace/mempalace/issues/125) | BEAM 100K benchmark results - first end-to-end answer qualit `documentation` | 29 | 9 |
 > | [#39](https://github.com/MemPalace/mempalace/issues/39) | Independent benchmark reproduction on M2 Ultra — raw confirm `documentation` | 15 | 13 |
-> | [#408](https://github.com/MemPalace/mempalace/issues/408) | Plugin assumes python3 -m mempalace — breaks on modern Linux `bug` `area/install` | 8 | 11 |
+> | [#408](https://github.com/MemPalace/mempalace/issues/408) | Plugin assumes python3 -m mempalace — breaks on modern Linux `bug` `area/install` | 8 | 12 |
 
 ## README 摘錄
 
@@ -603,7 +602,7 @@ MemPalace 的核心技術機制是基於結構化索引的記憶系統，使用 
 
 ## 延伸閱讀
 
-相關概念：[[RAG]] · [[向量資料庫]] · [[記憶系統]]
+相關概念：[[RAG]] · [[向量資料庫]] · [[自動化]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[milla-jovovich--mempalace|milla-jovovich/mempalace]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]]
 
@@ -647,7 +646,7 @@ MemPalace 的核心技術機制是基於結構化索引的記憶系統，使用 
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["RAG","向量資料庫","記憶系統"];
+> const concepts = ["RAG","向量資料庫","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "MemPalace--mempalace" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
