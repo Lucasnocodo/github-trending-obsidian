@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "\"OpenHarness: Open Agent Harness with a Built-in Personal Agent--Ohmo!\""
 homepage: ""
-stars: 10451
-stars_per_day: 581
-forks: 1772
-open_issues: 20
+stars: 10594
+stars_per_day: 558
+forks: 1801
+open_issues: 16
 created: 2026-04-01
-pushed_at: 2026-04-19
+pushed_at: 2026-04-20
 first_seen: 2026-04-08
 week: "2026-W15"
 month: "2026-04"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-08
-use_case: "提供一個開放的代理架構，讓個人 AI 助手 Ohmo 能夠在多個平台上運行和協作。"
+use_case: "提供一個開源的代理架構，讓個人 AI 助手更有效地運作。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 1
 next_review: "2026-04-11"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 78
-repo_size_kb: 10677
+issue_close_rate: 83
+repo_size_kb: 10733
 readme_length: 10000
 bus_factor: 1
-last_release_days: 2
+last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-08"
-star_history: "2026-04-08:7142,2026-04-08:7164,2026-04-09:7764,2026-04-10:8224,2026-04-11:8613,2026-04-12:8807,2026-04-13:9045,2026-04-14:9341,2026-04-15:9616,2026-04-16:9857,2026-04-17:10038,2026-04-18:10213,2026-04-19:10346,2026-04-20:10451"
+star_history: "2026-04-08:7142,2026-04-08:7164,2026-04-09:7764,2026-04-10:8224,2026-04-11:8613,2026-04-12:8807,2026-04-13:9045,2026-04-14:9341,2026-04-15:9616,2026-04-16:9857,2026-04-17:10038,2026-04-18:10213,2026-04-19:10346,2026-04-20:10451,2026-04-21:10594"
 tags:
   - github
   - "category/開發工具"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "OpenHarness"
   - "HKUDS/OpenHarness"
-  - "提供一個開放的代理架構，讓個人 AI 助手 Ohmo 能夠在多個平台上運行和協作。"
+  - "提供一個開源的代理架構，讓個人 AI 助手更有效地運作。"
 ---
 
 # OpenHarness
 
-**10.5k** stars · **581** stars/天 · 建立 18 天前 · Python · MIT
+**10.6k** stars · **558** stars/天 · 建立 19 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/HKUDS--OpenHarness");
@@ -73,13 +73,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG` `v0.1.7` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供一個開放的代理架構，讓個人 AI 助手 Ohmo 能夠在多個平台上運行和協作。
+> 提供一個開源的代理架構，讓個人 AI 助手更有效地運作。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (581 stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (558 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 希望在多平台上使用 AI 代理進行開發的工程師和團隊。
-> **一句話重點** OpenHarness 的設計不僅提供了強大的功能，還降低了使用 AI 代理的門檻，讓開發者能夠輕鬆上手。
+> **適合** 希望在現有 AI 訂閱上構建個人助手的開發者。
+> **一句話重點** OpenHarness 不僅是一個工具，更是一個開放的代理架構，讓開發者能夠探索和擴展 AI 代理的可能性。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,31 +102,31 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** low
-> **結論** 花 3 小時學、5 小時整合，得到靈活的 AI 代理架構，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學、10 小時整合，得到靈活的 AI 代理架構，值得嘗試。
 
 > [!abstract] 核心創新
-> OpenHarness 提供了一個開放的代理架構，支持多種平台的 AI 代理運行，並且不需要額外的 API 金鑰。
+> OpenHarness 是一個開源的代理架構，專為開發者和研究者設計，支持長時間的會話和多代理協調。
 
 ## 專案簡介
 
-OpenHarness 是一個開放源碼的代理架構，旨在提供一個輕量級的基礎設施來支持各種 AI 代理的運行。使用者可以透過 `oh` 指令啟動 OpenHarness，並整合多種 CLI 代理工具，如 OpenClaw 和 nanobot。該架構支持多種 API 提供者，包括 Claude 和 OpenAI，並且不需要額外的 API 金鑰。技術上，OpenHarness 使用 Python 和 TypeScript，並依賴多個庫來實現其功能，如 `anthropic` 和 `openai`。這使得它能夠在多個平台上運行，並提供豐富的功能，如記憶體管理和多代理協調。與其他工具相比，如 AgentSeal 和 Claude-Obsidian，OpenHarness 提供了更靈活的插件生態系統，允許用戶根據需求擴展功能。
+OpenHarness 是一個開源的代理架構，旨在為用戶提供輕量級的代理基礎設施，包括工具使用、技能、記憶和多代理協調。用戶可以透過 `oh` 命令啟動 OpenHarness，並整合多種 CLI 代理，如 OpenClaw 和 nanobot。這個架構的設計目的是為了讓開發者能夠理解生產 AI 代理的運作原理，並能夠擴展和自定義代理的功能。核心功能包括流式工具調用、API 重試、上下文記憶和多層次的權限管理，這使得 OpenHarness 能夠在長時間的會話中持續工作。
 
-實際使用中，OpenHarness 能夠處理多達 43 種工具的整合，並支持並行執行和 API 重試機制，這對於需要高效能的開發環境尤為重要。這個專案目前處於 v0.1.7 的穩定版本，並且有活躍的社群支持，解決率達到 78%。對於希望在開發過程中使用 AI 代理的團隊來說，OpenHarness 提供了一個強大的解決方案，特別是在需要長時間運行的會話中。未來幾個月，預計會有更多功能和改進，特別是在插件和工具整合方面。建議在小型團隊或個人專案中使用，因為它的安裝和配置相對簡單，且能快速上手。
+技術上，OpenHarness 使用 Python 作為主要語言，並依賴多個庫來支持其功能，如 `anthropic` 和 `openai`。與同類工具相比，OpenHarness 的優勢在於其開放性和可擴展性，允許用戶根據需求添加自定義插件和技能。使用者在實際操作中可能會遇到的問題包括配置的複雜性和對於不同 API 的兼容性挑戰。這個專案目前處於 beta 階段，適合對 AI 代理開發有興趣的開發者，未來可能會進一步增強其功能和穩定性。
 
 **技術棧**：`Python 3.10` · `TypeScript` · `Docker`
 
 ## 重點功能
 
-- 多代理協調 — 支持同時運行多個代理，並能夠有效管理任務分配。
-- 豐富的插件生態系統 — 允許用戶根據需求擴展功能，支持 43 種工具的整合。
-- 記憶體管理 — 提供持久記憶體功能，能夠在長時間會話中保持上下文。
-- API 重試機制 — 使用指數退避策略來處理 API 請求失敗，確保穩定性。
-- 即時反饋 — 支持 JSON 輸出和流式事件，方便程序化使用和整合。
+- 流式工具調用 — 支持實時執行和回傳結果。
+- 多層次權限管理 — 允許細緻的權限設定，確保安全性。
+- 上下文記憶 — 自動壓縮上下文以保持會話持續性。
+- 插件生態系統 — 支持自定義技能和工具的擴展。
+- 兼容多種 API — 支持 OpenAI 和 Anthropic 等多種後端。
 
 ## 快速開始
 
-1. 一鍵安裝
+1. 安裝 OpenHarness
 ```bash
 curl -fsSL https://raw.githubusercontent.com/HKUDS/OpenHarness/main/scripts/install.sh | bash
 ```
@@ -139,67 +139,59 @@ oh setup
 ohmo init && ohmo config && ohmo gateway start
 ```
 
-## 程式碼範例
-
-```python
-{
-  "前置條件": "需要安裝 OpenHarness",
-  "指令": "oh -p \"Fix the bug\" --output-format json",
-  "預期輸出": "一個 JSON 格式的修復建議，便於程序化使用。"
-}
-```
-
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 18 天內累積 10451 stars（581/天），forks 1772（17.0%），這顯示出強勁的增長潛力。該專案的主要貢獻者包括多位活躍的開發者，且其解決了在多平台上運行 AI 代理的需求，這在現有工具中並不常見。特別是，OpenHarness 的設計使得用戶能夠在不需要額外 API 金鑰的情況下，直接使用 Claude Code 或 Codex 訂閱，這降低了使用門檻。社群的活躍討論和問題解決也顯示出其在開發者中的受歡迎程度。
+> 建立 19 天就累積 10594 stars（558/天），forks 1801（17.0%），顯示出強烈的社群參與。主要貢獻者包括多位活躍的開發者，這表明該專案有良好的維護和更新頻率。OpenHarness 解決了現有代理架構的靈活性不足問題，讓開發者能夠輕鬆整合和擴展功能。社群討論中，對於 ACP 協議的支持和命令行前端的需求顯示出用戶對於功能擴展的期待。技術生態的變化，例如對於多種 API 的支持，讓這個工具的實用性大幅提升。
 
 ## 適合誰使用
 
-**目標受眾**：希望在多平台上使用 AI 代理進行開發的工程師和團隊。
+**目標受眾**：希望在現有 AI 訂閱上構建個人助手的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來整合多個 AI 代理，因為它支持多種 API 並能夠在 Slack 和 Discord 等平台上運行。
-> - 產品經理用它來自動化任務分配和跟蹤，因為它的多代理協調功能能夠有效管理團隊工作流。
-> - 開發者用它來快速測試和部署代碼，因為它的 CLI 工具整合和即時反饋功能能夠提高開發效率。
+> - 後端工程師用它來整合多種 AI 服務，因為它支持多種 API 並能夠簡化工具調用流程。
+> - AI 研究者用它來測試不同的代理架構，因為它提供了開放的插件生態系統，方便擴展和自定義。
+> - DevOps 工程師用它來自動化日常任務，因為它的多代理協調功能能夠有效管理背景任務。
 
 ## 架構分析
 
-OpenHarness 採用模組化設計，核心架構由 Python 實現，並使用 TypeScript 來構建前端界面。這樣的設計使得系統能夠靈活擴展，並支持多種 API 提供者。資料流方面，使用者透過 CLI 指令與系統互動，系統再根據配置的 API 提供者進行請求。選擇 Python 作為主要語言的好處在於其豐富的生態系統和社群支持，但也可能導致性能瓶頸，特別是在高併發的情況下。擴展性方面，系統能夠支持多達 43 種工具的整合，這對於需要多樣化功能的使用者來說是個優勢，但也增加了維護的複雜性。
+OpenHarness 採用模組化架構，將代理功能分為多個可擴展的模組。這樣的設計使得用戶可以根據需求添加或移除功能模組，並且能夠輕鬆整合不同的 API。資料流方面，使用者的請求會經過工具調用循環，並在需要時進行上下文記憶的壓縮。
+
+選擇 Python 作為主要語言的原因在於其豐富的庫和社群支持，這對於開發者來說是一個重要的優勢。這種架構的代價在於可能會增加初期的學習曲線，特別是在配置和擴展方面。隨著使用者數量的增加，系統的擴展性可能會面臨挑戰，特別是在多代理協調的情況下。
 
 ## 技術深入分析
 
-OpenHarness 的核心技術機制是基於 Python 的模組化設計，這使得它能夠靈活地整合多種 API 提供者。使用者可以透過 CLI 指令與系統互動，並根據需求選擇不同的 API 進行請求。效能上，OpenHarness 能夠支持多達 43 種工具的整合，這對於需要多樣化功能的使用者來說是個優勢。設計上，選擇 Python 作為主要語言的好處在於其豐富的生態系統和社群支持，但也可能導致性能瓶頸，特別是在高併發的情況下。技術風險方面，對於大型專案，可能需要額外的性能調整以滿足需求。整合方面，OpenHarness 能夠與多種現有工具鏈相容，並且提供了良好的 CI/CD 整合支持，這使得它在團隊合作中能夠發揮出色的效果。
+OpenHarness 的核心技術機制在於其模組化設計，允許用戶根據需求自由組合不同的功能模組。使用了多種流行的 Python 庫，如 `rich` 和 `httpx`，以增強其功能和性能。效能方面，OpenHarness 能夠處理多個並行請求，並且在上下文記憶方面提供了自動壓縮功能，這對於長時間的會話非常重要。選擇 Python 作為主要語言的好處在於其生態系統的豐富，能夠快速集成各種第三方庫。設計上的取捨在於，雖然模組化提供了靈活性，但也可能導致初期的學習成本上升。技術風險方面，隨著使用者數量的增加，系統的擴展性可能會受到影響，特別是在多代理協調的情況下。與主流框架的整合難度相對較低，因為其設計考慮到了與現有工具鏈的兼容性。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了安裝和使用的範例，讓新手能夠快速上手。安裝過程相對順暢，但在某些 Windows 環境下可能會遇到問題。整體上，對於希望快速試用的開發者來說，這是一個友好的入門選擇。
+> README 文件提供了清晰的安裝步驟和範例，安裝過程相對順暢。雖然有一些配置步驟，但整體上對於有經驗的開發者來說不會太困難。文件目前僅有英文版本，可能對非英語使用者造成一些障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 靈活的插件生態系統，允許用戶根據需求擴展功能。
-> - 支持多平台整合，能夠在 Slack 和 Discord 等多個環境中運行。
-> - 提供持久記憶體功能，適合長時間的會話管理。
+> - 開源且可擴展，適合開發者自定義功能。
+> - 支持多種 API，靈活性高。
+> - 提供持久的上下文記憶，適合長時間會話。
 
 > [!danger] 缺點
-> - 對於大型專案，可能需要額外的性能調整。
-> - 安裝過程在某些環境下可能會遇到問題。
-> - 目前僅支援 Python 3.10 以上版本，限制了使用者的選擇。
+> - 初期配置可能較為複雜。
+> - 對於新手來說，學習曲線較陡峭。
+> - 在 Windows 環境下的兼容性可能存在問題。
 
 > [!warning] 注意事項
-> - 目前僅支援 Python 3.10 以上版本。
-> - 在某些 Windows 環境下可能會遇到安裝問題，需要特別注意 PowerShell 的命令使用。
-> - 對於大型專案，可能需要額外的性能調整以滿足需求。
+> - 僅支援 Python 3.10 以上版本。
+> - 對於某些 API 的支持可能需要額外的配置。
+> - 在 Windows 環境下可能會遇到兼容性問題。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 提供類似的代理架構，但不支持多平台整合，適合單一環境使用。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 專注於特定的 AI 代理功能，而 OpenHarness 提供更廣泛的工具整合選擇。 |
-| [HKUDS/OpenClaw](https://github.com/HKUDS/OpenClaw) | 雖然也是一個代理工具，但缺乏 OpenHarness 的插件生態系統和多代理協調功能。 |
+| [HKUDS/OpenClaw](https://github.com/HKUDS/OpenClaw) | OpenClaw 專注於醫療技能，而 OpenHarness 提供更廣泛的代理架構和多種工具整合。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供簡單的 CLI 工具，而 OpenHarness 則是更全面的代理管理平台。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | codeburn 主要針對代碼生成，而 OpenHarness 則是更通用的代理框架，支持多種任務。 |
 
 ## 替代方案決策
 
@@ -207,16 +199,16 @@ OpenHarness 的核心技術機制是基於 Python 的模組化設計，這使得
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於特定的 AI 代理功能，與 OpenHarness 的多功能性形成對比。 | 如果你的團隊需要一個專注於特定任務的代理工具，而不是一個多功能的架構。 | medium，因為需要重新評估功能和整合方式。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 提供類似的代理架構，但不支持多平台整合，適合單一環境使用。 | 如果你的專案只需要在單一平台上運行，且不需要多代理協調功能。 | low，因為功能相似，轉移過程相對簡單。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供簡單的 CLI 工具，專注於特定任務，而 OpenHarness 則是更全面的代理管理平台，支持多種任務和 API。 | 如果你需要一個簡單的 CLI 工具來完成特定任務，而不需要複雜的代理架構。 | low，因為 boneyard 的功能較為簡單，轉移到 OpenHarness 需要重新設計整個流程。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | codeburn 專注於代碼生成，而 OpenHarness 提供更通用的代理框架，支持多種任務。 | 如果你的主要需求是代碼生成，且希望使用專門針對此任務優化的工具。 | medium，因為需要將代碼生成的邏輯轉移到 OpenHarness 的架構中。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **OpenHarness** | **boneyard** | **codeburn** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於特定的 AI 代理功能，與 OpenHarness 的多功能性形成對比。 | 提供類似的代理架構，但不支持多平台整合，適合單一環境使用。 |
-> | 遷移成本 | - | medium，因為需要重新評估功能和整合方式。 | low，因為功能相似，轉移過程相對簡單。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要一個專注於特定任務的代理工具，而不是一個多功 | 如果你的專案只需要在單一平台上運行，且不需要多代理協調功能。 |
+> | 技術路線 | 本專案 | boneyard 提供簡單的 CLI 工具，專注於特定任務，而 OpenHarness 則是更全面的代理管理平台，支持多種任務和 API。 | codeburn 專注於代碼生成，而 OpenHarness 提供更通用的代理框架，支持多種任務。 |
+> | 遷移成本 | - | low，因為 boneyard 的功能較為簡單，轉移到 OpenHarness 需要重新設計整個流程。 | medium，因為需要將代碼生成的邏輯轉移到 OpenHarness 的架構中。 |
+> | 適用場景 | 主要場景 | 如果你需要一個簡單的 CLI 工具來完成特定任務，而不需要複 | 如果你的主要需求是代碼生成，且希望使用專門針對此任務優化的工 |
 
 ## 成熟度評估
 
@@ -227,44 +219,41 @@ OpenHarness 的核心技術機制是基於 Python 的模組化設計，這使得
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些 Windows 環境下安裝過程可能會出現問題，特別是 PowerShell 的命令使用。
-  - 解法：使用 WSL 或者確保 PowerShell 的命令正確。
-- [MEDIUM] 對於大型專案，可能需要額外的性能調整以滿足需求。
-  - 解法：在使用前進行性能測試並根據結果進行調整。
-- [MEDIUM] 某些功能在不同的 API 提供者之間可能表現不一致。
-  - 解法：在整合前仔細檢查各 API 的文檔和限制。
+- **[HIGH]** 在某些環境下，安裝腳本可能會導致 Conda 環境配置錯誤
+  - 解法：手動配置 PATH 以避免衝突
+- [MEDIUM] Windows 環境下的某些功能可能不穩定
+  - 解法：使用 WSL 進行測試
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 因為其輕量級設計和多平台支持能夠快速滿足需求。 |
-| 大型企業的 AI 代理系統 | 不適合 | 因為目前仍在 beta 階段，可能不夠穩定。 |
-| 開發者希望快速測試 AI 代理功能 | 適合 | 因為安裝簡單且功能豐富，能快速上手。 |
-| 需要高效能的多代理協調系統 | 普通 | 因為可能需要額外的性能調整以滿足需求。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 提供靈活的代理架構，能夠快速整合多種 API。 |
+| 大型企業的 AI 代理系統 | 普通 | 雖然功能強大，但可能需要額外的配置和維護。 |
+| 個人開發者的 AI 助手 | 非常適合 | 開源且可擴展，適合個人化需求。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~3 小時 |
-| 整合時間 | ~5 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學、5 小時整合，得到靈活的 AI 代理架構，值得一試。
+> 花 5 小時學、10 小時整合，得到靈活的 AI 代理架構，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不會存取敏感資料。依賴鏈的信任程度高，無已知的供應鏈風險，適合在 CI/CD 中使用。
+> 低風險：不需要高權限，且不存取敏感資料。依賴鏈中有少量未審計的依賴，但整體風險可控。
 
 ## 健康度儀表板
 
@@ -330,11 +319,11 @@ OpenHarness 的核心技術機制是基於 Python 的模組化設計，這使得
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 1.8k |
-| Open Issues | 20 |
-| Issue 解決率 | 78% (71 closed) |
-| 最後推送 | 2026-04-19 |
+| Open Issues | 16 |
+| Issue 解決率 | 83% (79 closed) |
+| 最後推送 | 2026-04-20 |
 | 建立日期 | 2026-04-01 |
-| Repo 大小 | 10.4 MB |
+| Repo 大小 | 10.5 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/HKUDS/OpenHarness) |
 
 > [!info]- 語言組成
@@ -349,11 +338,11 @@ OpenHarness 的核心技術機制是基於 Python 的模組化設計，這使得
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@tjb-tech](https://github.com/tjb-tech) | 183 |
+> | [@tjb-tech](https://github.com/tjb-tech) | 190 |
 > | [@chaohuang-ai](https://github.com/chaohuang-ai) | 32 |
-> | [@glitch-ux](https://github.com/glitch-ux) | 10 |
+> | [@glitch-ux](https://github.com/glitch-ux) | 12 |
+> | [@yl-jiang](https://github.com/yl-jiang) | 9 |
 > | [@siaochuan](https://github.com/siaochuan) | 9 |
-> | [@yl-jiang](https://github.com/yl-jiang) | 8 |
 
 **最新版本**：v0.1.7 — v0.1.7 — TUI Polish & Safer Install (2026-04-18)
 
@@ -378,13 +367,13 @@ OpenHarness 的核心技術機制是基於 Python 的模組化設計，這使得
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和解決問題，解決率達到 78%。
+**社群活躍度**：社群活躍，定期更新和回應問題。
 **連結**：[文件](https://github.com/HKUDS/OpenHarness/blob/main/README.md)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-17 ~ 2026-04-19）
-> **活躍天數** 3 天 · **最新 commit** test(ci): stabilize full-suite regressions
+> [!abstract] 最近 10 次 commit（2026-04-19 ~ 2026-04-20）
+> **活躍天數** 2 天 · **最新 commit** feat(hooks): fire subagent_stop for spawned agents
 
 ## 熱門議題
 
@@ -393,8 +382,8 @@ OpenHarness 的核心技術機制是基於 Python 的模組化設計，這使得
 > | --- | --- | --- | --- |
 > | [#40](https://github.com/HKUDS/OpenHarness/issues/40) | 是否会支持ACP协议？ `enhancement` | 1 | 0 |
 > | [#18](https://github.com/HKUDS/OpenHarness/issues/18) | [Discussion] Run-level evidence layer: structured archive fo | 1 | 1 |
-> | [#171](https://github.com/HKUDS/OpenHarness/issues/171) | [Bug]:  provider switch `bug` | 0 | 0 |
-> | [#169](https://github.com/HKUDS/OpenHarness/issues/169) | [Feature]: Extend HookEvent enum with UserPromptSubmit, Noti | 0 | 0 |
+> | [#176](https://github.com/HKUDS/OpenHarness/issues/176) | 关于命令行前端 | 0 | 7 |
+> | [#102](https://github.com/HKUDS/OpenHarness/issues/102) | 建立 OpenClaw 内部后台任务数据模型 | 0 | 0 |
 
 ## README 摘錄
 
@@ -653,7 +642,7 @@ OpenHarness 的核心技術機制是基於 Python 的模組化設計，這使得
 
 相關概念：[[Agent 框架]] · [[CLI/TUI]] · [[自動化]]
 
-相關專案：[[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[0xGF--boneyard|0xGF/boneyard]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]]
 
 [GitHub](https://github.com/HKUDS/OpenHarness)
 
