@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Self-healing browser harness that enables LLMs to complete any task."
 homepage: ""
-stars: 2264
-stars_per_day: 755
-forks: 194
-open_issues: 30
+stars: 3596
+stars_per_day: 1199
+forks: 295
+open_issues: 44
 created: 2026-04-17
-pushed_at: 2026-04-19
+pushed_at: 2026-04-21
 first_seen: 2026-04-20
 week: "2026-W17"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供自我修復的瀏覽器工具，讓 LLM 完成任何任務。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-23"
+appearances: 2
+next_review: "2026-04-24"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 3
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-20"
-star_history: "2026-04-20:2236,2026-04-20:2264"
+star_history: "2026-04-20:2236,2026-04-20:2264,2026-04-21:3596"
 tags:
   - github
   - "category/開發工具"
@@ -720,4 +720,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-21|2026-04-21]] — 再次上榜，3.6k stars
 - [[2026-04-20|2026-04-20]] — 首次收錄，2.2k stars

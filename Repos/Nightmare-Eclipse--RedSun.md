@@ -7,10 +7,10 @@ language: C++
 license: MIT
 description: "The Red Sun vulnerability repository"
 homepage: ""
-stars: 1573
-stars_per_day: 393
-forks: 343
-open_issues: 6
+stars: 1642
+stars_per_day: 328
+forks: 356
+open_issues: 7
 created: 2026-04-15
 pushed_at: 2026-04-15
 first_seen: 2026-04-17
@@ -30,8 +30,8 @@ use_case: "利用 Windows Defender 的漏洞來覆寫系統檔案以獲得管理
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-04-23"
+appearances: 5
+next_review: "2026-04-24"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 45
@@ -42,7 +42,7 @@ last_release_days: 5
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-17"
-star_history: "2026-04-17:785,2026-04-17:793,2026-04-18:1354,2026-04-18:1358,2026-04-19:1500,2026-04-19:1500,2026-04-20:1573,2026-04-20:1573"
+star_history: "2026-04-17:785,2026-04-17:793,2026-04-18:1354,2026-04-18:1358,2026-04-19:1500,2026-04-19:1500,2026-04-20:1573,2026-04-20:1573,2026-04-21:1642"
 tags:
   - github
   - "category/安全"
@@ -682,6 +682,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-21|2026-04-21]] — 再次上榜，1.6k stars
 - [[2026-04-20|2026-04-20]] — 再次上榜，1.6k stars
 - [[2026-04-19|2026-04-19]] — 再次上榜，1.5k stars
 - [[2026-04-18|2026-04-18]] — 再次上榜，1.4k stars

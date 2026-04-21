@@ -7,12 +7,12 @@ language: N/A
 license: N/A
 description: "AI-powered daily intelligence for indie hackers and builders. 20 questions, 10+ sources, every morning."
 homepage: "https://builderpulse.ai"
-stars: 965
-stars_per_day: 193
-forks: 70
+stars: 1016
+stars_per_day: 169
+forks: 73
 open_issues: 3
 created: 2026-04-14
-pushed_at: 2026-04-19
+pushed_at: 2026-04-20
 first_seen: 2026-04-18
 week: "2026-W16"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "為獨立開發者和創業者提供每日的建設靈感和市場機
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-27"
+appearances: 3
+next_review: "2026-04-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-18"
-star_history: "2026-04-18:883,2026-04-18:883,2026-04-19:929,2026-04-20:965,2026-04-20:965"
+star_history: "2026-04-18:883,2026-04-18:883,2026-04-19:929,2026-04-20:965,2026-04-20:965,2026-04-21:1016"
 tags:
   - github
   - "category/其他"
@@ -634,5 +634,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-21|2026-04-21]] — 再次上榜，1.0k stars
 - [[2026-04-20|2026-04-20]] — 再次上榜，965 stars
 - [[2026-04-18|2026-04-18]] — 首次收錄，883 stars

@@ -7,10 +7,10 @@ language: TypeScript
 license: Apache-2.0
 description: "A terminal emulator for the web"
 homepage: "https://wterm.dev"
-stars: 2081
-stars_per_day: 416
-forks: 79
-open_issues: 6
+stars: 2210
+stars_per_day: 368
+forks: 83
+open_issues: 7
 created: 2026-04-14
 pushed_at: 2026-04-19
 first_seen: 2026-04-17
@@ -30,8 +30,8 @@ use_case: "提供一個基於網頁的終端模擬器，具備高效能和豐富
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-04-23"
+appearances: 5
+next_review: "2026-04-24"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-17"
-star_history: "2026-04-17:1043,2026-04-18:1337,2026-04-19:1565,2026-04-20:2081"
+star_history: "2026-04-17:1043,2026-04-18:1337,2026-04-19:1565,2026-04-20:2081,2026-04-21:2210"
 tags:
   - github
   - "category/開發工具"
@@ -792,6 +792,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-21|2026-04-21]] — 再次上榜，2.2k stars
 - [[2026-04-20|2026-04-20]] — 再次上榜，2.1k stars
 - [[2026-04-19|2026-04-19]] — 再次上榜，1.6k stars
 - [[2026-04-18|2026-04-18]] — 再次上榜，1.3k stars

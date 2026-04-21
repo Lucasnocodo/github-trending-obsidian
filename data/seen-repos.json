@@ -1128,10 +1128,10 @@
   },
   "vercel-labs/wterm": {
     "first_seen": "2026-04-17",
-    "last_seen": "2026-04-20",
-    "times_seen": 4,
+    "last_seen": "2026-04-21",
+    "times_seen": 5,
     "stars_first": 1043,
-    "stars_last": 2081
+    "stars_last": 2210
   },
   "sogonov/anubis": {
     "first_seen": "2026-04-17",
@@ -1142,10 +1142,10 @@
   },
   "Nightmare-Eclipse/RedSun": {
     "first_seen": "2026-04-17",
-    "last_seen": "2026-04-20",
-    "times_seen": 4,
+    "last_seen": "2026-04-21",
+    "times_seen": 5,
     "stars_first": 785,
-    "stars_last": 1573
+    "stars_last": 1642
   },
   "browser-use/video-use": {
     "first_seen": "2026-04-18",
@@ -1156,31 +1156,31 @@
   },
   "Robbyant/lingbot-map": {
     "first_seen": "2026-04-18",
-    "last_seen": "2026-04-20",
-    "times_seen": 3,
+    "last_seen": "2026-04-21",
+    "times_seen": 4,
     "stars_first": 914,
-    "stars_last": 2652
+    "stars_last": 3272
   },
   "lewislulu/html-ppt-skill": {
     "first_seen": "2026-04-18",
-    "last_seen": "2026-04-20",
-    "times_seen": 3,
+    "last_seen": "2026-04-21",
+    "times_seen": 4,
     "stars_first": 909,
-    "stars_last": 1434
+    "stars_last": 1656
   },
   "BuilderPulse/BuilderPulse": {
     "first_seen": "2026-04-18",
-    "last_seen": "2026-04-20",
-    "times_seen": 2,
+    "last_seen": "2026-04-21",
+    "times_seen": 3,
     "stars_first": 883,
-    "stars_last": 965
+    "stars_last": 1016
   },
   "Manavarya09/design-extract": {
     "first_seen": "2026-04-18",
-    "last_seen": "2026-04-20",
-    "times_seen": 3,
+    "last_seen": "2026-04-21",
+    "times_seen": 4,
     "stars_first": 882,
-    "stars_last": 1089
+    "stars_last": 1155
   },
   "getagentseal/codeburn": {
     "first_seen": "2026-04-19",
@@ -1198,16 +1198,30 @@
   },
   "browser-use/browser-harness": {
     "first_seen": "2026-04-20",
-    "last_seen": "2026-04-20",
-    "times_seen": 1,
+    "last_seen": "2026-04-21",
+    "times_seen": 2,
     "stars_first": 2236,
-    "stars_last": 2236
+    "stars_last": 3596
   },
   "kyegomez/OpenMythos": {
     "first_seen": "2026-04-20",
-    "last_seen": "2026-04-20",
-    "times_seen": 1,
+    "last_seen": "2026-04-21",
+    "times_seen": 2,
     "stars_first": 1496,
-    "stars_last": 1496
+    "stars_last": 4271
+  },
+  "wbh604/UZI-Skill": {
+    "first_seen": "2026-04-21",
+    "last_seen": "2026-04-21",
+    "times_seen": 1,
+    "stars_first": 969,
+    "stars_last": 969
+  },
+  "cathrynlavery/diagram-design": {
+    "first_seen": "2026-04-21",
+    "last_seen": "2026-04-21",
+    "times_seen": 1,
+    "stars_first": 965,
+    "stars_last": 965
   }
 }
