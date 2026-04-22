@@ -1142,10 +1142,10 @@
   },
   "Nightmare-Eclipse/RedSun": {
     "first_seen": "2026-04-17",
-    "last_seen": "2026-04-21",
-    "times_seen": 5,
+    "last_seen": "2026-04-22",
+    "times_seen": 6,
     "stars_first": 785,
-    "stars_last": 1642
+    "stars_last": 1685
   },
   "browser-use/video-use": {
     "first_seen": "2026-04-18",
@@ -1156,17 +1156,17 @@
   },
   "Robbyant/lingbot-map": {
     "first_seen": "2026-04-18",
-    "last_seen": "2026-04-21",
-    "times_seen": 4,
+    "last_seen": "2026-04-22",
+    "times_seen": 5,
     "stars_first": 914,
-    "stars_last": 3272
+    "stars_last": 3905
   },
   "lewislulu/html-ppt-skill": {
     "first_seen": "2026-04-18",
-    "last_seen": "2026-04-21",
-    "times_seen": 4,
+    "last_seen": "2026-04-22",
+    "times_seen": 5,
     "stars_first": 909,
-    "stars_last": 1656
+    "stars_last": 1762
   },
   "BuilderPulse/BuilderPulse": {
     "first_seen": "2026-04-18",
@@ -1177,10 +1177,10 @@
   },
   "Manavarya09/design-extract": {
     "first_seen": "2026-04-18",
-    "last_seen": "2026-04-21",
-    "times_seen": 4,
+    "last_seen": "2026-04-22",
+    "times_seen": 5,
     "stars_first": 882,
-    "stars_last": 1155
+    "stars_last": 1277
   },
   "getagentseal/codeburn": {
     "first_seen": "2026-04-19",
@@ -1198,17 +1198,17 @@
   },
   "browser-use/browser-harness": {
     "first_seen": "2026-04-20",
-    "last_seen": "2026-04-21",
-    "times_seen": 2,
+    "last_seen": "2026-04-22",
+    "times_seen": 3,
     "stars_first": 2236,
-    "stars_last": 3596
+    "stars_last": 4459
   },
   "kyegomez/OpenMythos": {
     "first_seen": "2026-04-20",
-    "last_seen": "2026-04-21",
-    "times_seen": 2,
+    "last_seen": "2026-04-22",
+    "times_seen": 3,
     "stars_first": 1496,
-    "stars_last": 4271
+    "stars_last": 6987
   },
   "wbh604/UZI-Skill": {
     "first_seen": "2026-04-21",
@@ -1219,9 +1219,30 @@
   },
   "cathrynlavery/diagram-design": {
     "first_seen": "2026-04-21",
-    "last_seen": "2026-04-21",
-    "times_seen": 1,
+    "last_seen": "2026-04-22",
+    "times_seen": 2,
     "stars_first": 965,
-    "stars_last": 965
+    "stars_last": 1358
+  },
+  "alchaincyf/huashu-design": {
+    "first_seen": "2026-04-22",
+    "last_seen": "2026-04-22",
+    "times_seen": 1,
+    "stars_first": 3080,
+    "stars_last": 3080
+  },
+  "tw93/Kami": {
+    "first_seen": "2026-04-22",
+    "last_seen": "2026-04-22",
+    "times_seen": 1,
+    "stars_first": 1594,
+    "stars_last": 1594
+  },
+  "codejunkie99/agentic-stack": {
+    "first_seen": "2026-04-22",
+    "last_seen": "2026-04-22",
+    "times_seen": 1,
+    "stars_first": 1275,
+    "stars_last": 1275
   }
 }

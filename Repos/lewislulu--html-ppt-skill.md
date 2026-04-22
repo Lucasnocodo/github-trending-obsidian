@@ -7,10 +7,10 @@ language: HTML
 license: MIT
 description: "HTML PPT Studio — AgentSkill with 24 themes, 31 layouts, 20+ animations for building professional HTML presentations"
 homepage: ""
-stars: 1656
-stars_per_day: 331
-forks: 187
-open_issues: 4
+stars: 1762
+stars_per_day: 294
+forks: 195
+open_issues: 5
 created: 2026-04-15
 pushed_at: 2026-04-17
 first_seen: 2026-04-18
@@ -30,8 +30,8 @@ use_case: "提供專業 HTML 簡報製作的工具，擁有多主題和佈局選
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-04-24"
+appearances: 5
+next_review: "2026-04-25"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 67
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-18"
-star_history: "2026-04-18:909,2026-04-19:1144,2026-04-20:1434,2026-04-21:1656"
+star_history: "2026-04-18:909,2026-04-19:1144,2026-04-20:1434,2026-04-21:1656,2026-04-22:1762"
 tags:
   - github
   - "category/其他"
@@ -854,6 +854,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-22|2026-04-22]] — 再次上榜，1.8k stars
 - [[2026-04-21|2026-04-21]] — 再次上榜，1.7k stars
 - [[2026-04-20|2026-04-20]] — 再次上榜，1.4k stars
 - [[2026-04-19|2026-04-19]] — 再次上榜，1.1k stars
