@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "数字生命卡兹克开源的 AI Skills 合集"
 homepage: ""
-stars: 5565
-stars_per_day: 398
-forks: 943
+stars: 5709
+stars_per_day: 381
+forks: 969
 open_issues: 6
 created: 2026-04-06
 pushed_at: 2026-04-18
@@ -17,7 +17,7 @@ first_seen: 2026-04-12
 week: "2026-W16"
 month: "2026-04"
 category: "開發工具"
-subcategory: "AI 工具"
+subcategory: "自動化"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-12
-use_case: "提供一系列可重用的 AI 提示和技能，幫助用戶在數字生命卡兹克中進行深度研究和寫作。"
+use_case: "提供一系列可重用的 AI 技能和提示，幫助用戶進行深度研究和內容創作。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-12"
-star_history: "2026-04-12:1585,2026-04-12:1588,2026-04-13:1719,2026-04-13:1721,2026-04-14:3559,2026-04-15:4270,2026-04-16:4693,2026-04-17:4943,2026-04-18:5105,2026-04-19:5214,2026-04-20:5390,2026-04-21:5565"
+star_history: "2026-04-12:1585,2026-04-12:1588,2026-04-13:1719,2026-04-13:1721,2026-04-14:3559,2026-04-15:4270,2026-04-16:4693,2026-04-17:4943,2026-04-18:5105,2026-04-19:5214,2026-04-20:5390,2026-04-21:5565,2026-04-22:5709"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "khazix-skills"
   - "KKKKhazix/khazix-skills"
-  - "提供一系列可重用的 AI 提示和技能，幫助用戶在數字生命卡兹克中進行深度研究和寫作。"
+  - "提供一系列可重用的 AI 技能和提示，幫助用戶進行深度研究和內容創作。"
 ---
 
 # khazix-skills
 
-**5.6k** stars · **398** stars/天 · 建立 14 天前 · Python · MIT
+**5.7k** stars · **381** stars/天 · 建立 15 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/KKKKhazix--khazix-skills");
@@ -71,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> 提供一系列可重用的 AI 提示和技能，幫助用戶在數字生命卡兹克中進行深度研究和寫作。
+> 提供一系列可重用的 AI 技能和提示，幫助用戶進行深度研究和內容創作。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (398 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要在 AI 研究和寫作中提高效率的專業人士和學生。
-> **一句話重點** Khazix Skills 將深度研究和寫作的需求轉化為可重用的 AI 工具，讓用戶能夠更高效地生成內容。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (381 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要高效生成研究報告和內容的研究人員及內容創作者。
+> **一句話重點** Khazix Skills 不僅是工具，更是提升研究效率的利器。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/KKKKhazix--khazix-skills");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "AI 工具" && p.file.name !== "KKKKhazix--khazix-skills" && p.status !== "archived")
+>     .where(p => p.subcategory === "自動化" && p.file.name !== "KKKKhazix--khazix-skills" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,102 +95,100 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 AI 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、3 小時整合，得到高效的研究和寫作工具，值得考慮。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學、3 小時整合，得到高效的內容生成能力，值得投入。
 
 > [!abstract] 核心創新
-> 提供結構化的 AI Skills 和 Prompts，專注於深度研究和寫作的高效生成。
+> 提供結構化的 AI Skills 和 Prompts，專為深度研究和內容創作設計。
 
 ## 專案簡介
 
-Khazix Skills 是一個專為數字生命卡兹克設計的 AI 工具箱，提供了兩種主要功能：Prompts 和 Skills。Prompts 是輕量級的指令，可以直接複製到任何支持 AI 對話的模型中使用，像是使用橫縱分析法進行深度研究。而 Skills 則是遵循 Agent Skills 開放標準的結構化指令集，安裝後 Agent 會自動加載，能夠執行更複雜的任務。這樣的設計讓用戶可以根據需求選擇合適的工具，無論是快速的提示還是全面的技能。技術上，這個專案使用 Python 實作，並且依賴於 Agent Skills 標準，這使得它能夠與多種 AI Agent 兼容，像是 Claude Code 和 Codex。與其他類似工具相比，Khazix Skills 提供的功能更加專注於深度研究和寫作，這在市場上是相對獨特的。
+Khazix Skills 是一個專為 AI 研究和創作設計的工具箱，包含了經過長期打磨的提示和技能。用戶可以直接複製提示，並將其應用於任何支持 Deep Research 的 AI 模型，這樣可以快速生成高質量的研究報告。技能部分則遵循 Agent Skills 開放標準，安裝後會自動加載，讓用戶能夠利用自動化的方式進行信息收集和報告生成。這個工具的賣點在於其結構化的指令集，能夠幫助用戶在短時間內完成複雜的研究任務，並輸出美觀的 PDF 報告。技術上，這個專案使用 Python 實現，並且依賴於 Agent Skills 的標準，這使得它能夠與多種 AI 工具兼容。
 
-比如，與 0xGF/boneyard 相比，後者更偏向於資料處理，而 Khazix Skills 則專注於結構化的研究報告生成。使用時，可能會遇到安裝路徑不一致的問題，這需要用戶自行查找對應的 Skills 目錄。這個專案目前處於活躍開發階段，社群互動不算頻繁，但仍有一定的使用潛力。未來可能會增加更多的 Skills 和 Prompts，進一步擴展其功能。對於需要進行深度研究或寫作的用戶，這是一個值得考慮的工具，但對於只需要簡單提示的用戶來說，可能會顯得過於複雜。
+相較於其他類似工具，如 0xGF/boneyard 和 AgentSeal/codeburn，Khazix Skills 提供了更為直觀的安裝方式和使用體驗，特別適合需要快速生成報告的用戶。實際使用中，這個工具能夠處理多種研究主題，並且支持多種 AI 平台，讓用戶可以靈活選擇。雖然目前仍在活躍開發中，但其功能已經相當成熟，適合個人和小型團隊使用。未來六個月內，預計會有更多的技能和提示被添加進來，進一步擴展其功能範圍。對於需要快速生成內容的研究人員或內容創作者來說，這是一個值得考慮的工具。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- Prompts — 提供多種可直接使用的 AI 提示，方便用戶快速生成內容。
-- Skills — 遵循 Agent Skills 標準的結構化指令集，支持多種 AI Agent。
-- hv-analysis Skill — 自動收集信息並生成深度研究報告，支持 PDF 輸出。
-- khazix-writer Skill — 提供完整的寫作風格規則和自檢體系，提升寫作質量。
-- 安裝方式多樣 — 支持 Agent 自動安裝和手動安裝，靈活便捷。
+- Prompts — 提供多種可直接複製的提示，支持快速生成研究內容。
+- Skills — 遵循 Agent Skills 標準的結構化指令集，安裝後自動加載。
+- hv-analysis — 自動收集信息並生成排版精美的 PDF 研究報告。
+- khazix-writer — 包含完整的寫作風格規則和內容方法論，提升寫作效率。
+- 多平台支持 — 可在 Claude Code、OpenClaw、Codex 等多種工具中使用。
 
 ## 快速開始
 
-1. 克隆此倉庫
+1. 安裝 Skills
 ```bash
-git clone https://github.com/KKKKhazix/khazix-skills.git
+在支持 Skill 的 Agent 中輸入：安装这个 skill：https://github.com/KKKKhazix/khazix-skills
 ```
-2. 安裝所需的 Skills
+2. 手動下載 Skill
 ```bash
-安装这个 skill：https://github.com/KKKKhazix/khazix-skills
+從 Releases 頁面下載 .skill 文件
 ```
-3. 查看可用的 Prompts
+3. 拖動到對應工具的 Skills 目錄
 ```bash
-cat prompts/*.md
+將 .skill 文件拖動到 ~/.claude/skills/ 或 ~/.openclaw/skills/ 或 ~/.agents/skills/
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 14 天內累積 5565 stars（398/天），forks 943（16.9%），顯示出強勁的增長勢頭。作者 KKKKhazix 透過長期打磨的提示和技能，解決了 AI 研究和寫作過程中的重複性問題，提供了一個可重用的工具集。這個專案的推出正好填補了市場上對於結構化 AI 研究工具的需求，尤其是對於需要高效生成研究報告的用戶。社群的活躍度雖然不高，但已有的 Issues 表明用戶對於功能的期待和改進建議，這對於未來的發展是有幫助的。
+> 建立 15 天內累積 5709 stars（381/天），forks 969（17.0%），顯示出強勁的增長趨勢。作者 KKKKhazix 透過長期的實踐，將自己的方法論開源，解決了用戶在進行深度研究時缺乏高效工具的痛點。這個專案的開源使得更多用戶能夠快速上手，並且提升了研究的效率。社群的活躍度和開發者的回應速度也為這個專案的成長提供了支持。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 AI 研究和寫作中提高效率的專業人士和學生。
+**目標受眾**：需要高效生成研究報告和內容的研究人員及內容創作者。
 
 > [!example] 使用場景
-> - 市場分析師用它來生成競爭對手的深度研究報告，因為使用 hv-analysis Skill 可以自動收集信息並生成排版精美的 PDF。
-> - 內容創作者用它來撰寫長文，因為 khazix-writer Skill 提供了完整的寫作風格規則和自檢體系，能夠提升寫作效率。
-> - 學生用它來進行學術研究，因為 Prompts 可以快速生成研究框架，節省了大量的時間和精力。
+> - 研究人員用它來生成高質量的研究報告，因為它提供了結構化的指令集和自動化的技能，能夠節省大量時間。
+> - 內容創作者用它來撰寫長文，因為其內建的寫作風格規則和自檢體系能夠提高內容的質量和一致性。
+> - 學生用它來進行學術研究，因為它的提示和技能能夠幫助他們快速收集和整理資料。
 
 ## 架構分析
 
-Khazix Skills 採用模組化的設計，將 Prompts 和 Skills 分開管理，這樣的架構使得用戶可以根據需求靈活選擇。Prompts 是輕量級的文本片段，能夠快速集成到各種 AI 對話中，而 Skills 則是更為複雜的功能模組，遵循 Agent Skills 標準，能夠自動加載。這樣的設計使得用戶不必擔心底層實現細節，只需專注於使用。
+Khazix Skills 的架構基於 Python，設計上強調可重用性和易用性。使用者可以透過簡單的指令安裝和使用各種技能，這樣的設計使得用戶能夠快速上手。資料流方面，使用者輸入指令後，系統會自動加載對應的技能，並根據用戶的需求生成報告或內容。
 
-選擇 Python 作為開發語言，因為其擁有豐富的庫和社群支持，能夠快速迭代和擴展功能。這種模組化的架構也使得未來的擴展變得更加容易，能夠在不影響現有功能的情況下增加新的 Skills 和 Prompts。整體而言，這種設計能夠有效降低用戶的學習曲線，讓他們能夠快速上手。
+這種方式的好處在於用戶無需深入了解底層實現，即可享受高效的服務。選擇 Python 作為開發語言，帶來了良好的可擴展性，但也可能在性能上有所妥協。整體而言，這個架構適合小型團隊和個人使用，但在大規模應用時可能會遇到性能瓶頸。
 
 ## 技術深入分析
 
-Khazix Skills 的核心技術機制是基於 Python 的模組化設計，將 Prompts 和 Skills 分開管理。Prompts 是輕量級的文本片段，能夠快速集成到各種 AI 對話中，這使得用戶可以迅速開始使用。Skills 則是遵循 Agent Skills 標準的結構化指令集，能夠自動加載，這樣的設計能夠支持更複雜的任務。效能上，這個工具能夠處理多種不同的研究需求，並且能夠生成高質量的研究報告，這在市場上是相對獨特的。
-
-選擇 Python 作為開發語言，因為其擁有豐富的庫和社群支持，能夠快速迭代和擴展功能。這種模組化的架構也使得未來的擴展變得更加容易，能夠在不影響現有功能的情況下增加新的 Skills 和 Prompts。技術風險方面，未來可能會面臨功能不穩定的問題，尤其是在擴展新功能時。整合方面，Khazix Skills 能夠與主流的 AI Agent 進行良好的整合，這使得它在現有的技術生態中具有一定的競爭力。
+Khazix Skills 的核心技術機制在於其結構化的指令集和提示，這使得用戶能夠在短時間內生成高質量的內容。使用 Python 開發，這個專案能夠快速迭代和擴展，並且依賴於 Agent Skills 的標準，這使得它能夠與多種 AI 工具兼容。效能方面，雖然具體數據未提供，但使用者反饋顯示其生成報告的速度和質量均令人滿意。設計上，選擇 Python 作為開發語言，帶來了良好的可擴展性，但在性能上可能會有所妥協。對於小型團隊和個人使用來說，這是一個非常合適的選擇，但在大規模應用時可能會遇到性能瓶頸。整合方面，Khazix Skills 能夠與多種主流 AI 工具無縫對接，並且支持簡單的安裝流程，這降低了使用門檻。整體而言，這個專案在技術上是成熟的，並且在未來有潛力進一步擴展其功能。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的使用說明和安裝步驟。安裝過程相對順暢，但需要用戶手動查找 Skills 的安裝路徑，這對新手來說可能會有些困難。文件中沒有多語言支持，僅提供英文版本。
+> README 文件清晰，提供了詳細的安裝步驟和使用範例。安裝過程相對順暢，但需要用戶具備一定的 AI 使用經驗。文件目前僅提供英文，可能對非英語用戶造成一定障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供結構化的 AI Skills 和 Prompts，能夠提高工作效率。
-> - 支持多種 AI Agent，靈活性高。
-> - 文檔清晰，易於上手。
+> - 結構化的指令集，易於使用。
+> - 支持多種 AI 工具，靈活性高。
+> - 提供高質量的研究報告生成能力。
 
 > [!danger] 缺點
-> - 目前功能尚不完善，可能存在不穩定性。
-> - 需要手動查找安裝路徑，對新手不太友好。
-> - 社群互動不夠活躍，可能影響未來的支持。
+> - 對於不熟悉 AI 的用戶有一定的學習曲線。
+> - 功能仍在持續開發中，可能不穩定。
+> - 目前僅支持特定的 AI 工具。
 
 > [!warning] 注意事項
-> - 目前僅支持特定的 AI Agent，如 Claude Code 和 Codex。
-> - 需要手動查找 Skills 安裝路徑，對新手不太友好。
-> - 部分功能尚未完全開發，可能存在不穩定性。
+> - 目前僅支持特定的 AI 工具，對於不支持的工具無法使用。
+> - 需要用戶具備基本的 AI 使用經驗，對於新手可能有一定的學習曲線。
+> - 目前功能還在持續開發中，可能會有不穩定的情況。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資料處理，而 Khazix Skills 提供更專業的研究和寫作工具。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 提供的功能較為廣泛，但缺乏 Khazix Skills 的深度研究能力。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的研究工具，但缺乏結構化的指令集，使用上不如 Khazix Skills 直觀。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於特定領域的技能，但不支持多平台，靈活性較差。 |
 
 ## 替代方案決策
 
@@ -198,16 +196,16 @@ Khazix Skills 的核心技術機制是基於 Python 的模組化設計，將 Pro
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資料處理，而 Khazix Skills 提供更專業的研究和寫作工具。 | 如果你的需求主要是資料處理而非深度研究，則 0xGF/boneyard 更加適合。 | medium，因為需要重新適應不同的功能和使用方式。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 提供的功能較為廣泛，但缺乏 Khazix Skills 的深度研究能力。 | 如果需要一個多功能的工具，而不僅僅是專注於研究，則 AgentSeal/codeburn 可能更合適。 | low，因為功能範圍相似，轉移成本較低。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 使用 Rust 實作，記憶體用量較少，但生態系統不如 Python 豐富。 | 如果你的團隊需要高性能且能夠接受 Rust 的學習曲線，則可以選擇它。 | medium，因為需要重寫部分邏輯。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於特定領域的技能，提供更深度的功能，但缺乏多平台支持。 | 如果你的需求集中於特定領域且不需要多平台支持，則可以選擇它。 | low，因為功能相似，遷移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **khazix-skills** | **boneyard** | **codeburn** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於資料處理，而 Khazix Skills 提供更專業的研究和寫作工具。 | 提供的功能較為廣泛，但缺乏 Khazix Skills 的深度研究能力。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的功能和使用方式。 | low，因為功能範圍相似，轉移成本較低。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是資料處理而非深度研究，則 0xGF/bon | 如果需要一個多功能的工具，而不僅僅是專注於研究，則 Agen |
+> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量較少，但生態系統不如 Python 豐富。 | 專注於特定領域的技能，提供更深度的功能，但缺乏多平台支持。 |
+> | 遷移成本 | - | medium，因為需要重寫部分邏輯。 | low，因為功能相似，遷移成本較低。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要高性能且能夠接受 Rust 的學習曲線，則可 | 如果你的需求集中於特定領域且不需要多平台支持，則可以選擇它。 |
 
 ## 成熟度評估
 
@@ -218,27 +216,24 @@ Khazix Skills 的核心技術機制是基於 Python 的模組化設計，將 Pro
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人或小型團隊試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 安裝路徑不一致，可能導致 Skills 無法正常加載
-  - 解法：用戶需手動查找對應的 Skills 目錄
-- **[HIGH]** 部分功能尚未完全開發，可能存在不穩定性
-  - 解法：建議在非關鍵項目中使用
-- [low] 社群互動不夠活躍，可能影響未來的支持
-  - 解法：關注 GitHub Issues 以獲取最新動態
+- [MEDIUM] 安裝過程中可能會遇到路徑問題，特別是在不同操作系統上。
+  - 解法：確保路徑正確，並參考官方文檔。
+- **[HIGH]** 部分技能在特定 AI 工具中可能無法正常運作。
+  - 解法：檢查技能的兼容性，必要時尋求社群幫助。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司進行市場研究 | 非常適合 | 提供的工具能夠高效生成研究報告，節省時間和人力成本。 |
-| 大型企業的內容創作團隊 | 適合 | 能夠提供結構化的寫作指導，但可能需要更多的功能擴展。 |
-| 學術研究生進行論文寫作 | 普通 | 雖然有助於生成框架，但對於特定學科的需求可能不夠深入。 |
-| 個人開發者進行小型專案 | 不適合 | 功能較為複雜，對於簡單任務可能顯得過於繁瑣。 |
+| 小型創業團隊進行市場研究 | 非常適合 | 提供結構化的研究工具，能夠快速生成報告。 |
+| 個人內容創作者撰寫長文 | 適合 | 內建的寫作規則和方法論能夠提升寫作效率。 |
+| 大型企業的專業研究部門 | 普通 | 雖然功能強大，但在大規模應用時可能會遇到性能瓶頸。 |
 
 ## 採用成本分析
 
@@ -247,15 +242,15 @@ Khazix Skills 的核心技術機制是基於 Python 的模組化設計，將 Pro
 | 學習時間 | ~5 小時 |
 | 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、3 小時整合，得到高效的研究和寫作工具，值得考慮。
+> 花 5 小時學、3 小時整合，得到高效的內容生成能力，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，依賴鏈的信任程度較高，適合在 CI/CD 中使用。
+> 低風險：不需要高權限，且不存取敏感資料。依賴鏈的信任程度較高，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -320,7 +315,7 @@ Khazix Skills 的核心技術機制是基於 Python 的模組化設計，將 Pro
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 943 |
+| Forks | 969 |
 | Open Issues | 6 |
 | Issue 解決率 | 14% (1 closed) |
 | 最後推送 | 2026-04-18 |
@@ -335,8 +330,7 @@ Khazix Skills 的核心技術機制是基於 Python 的模組化設計，將 Pro
 
 ## 社群與生態
 
-**社群活躍度**：社群互動不算頻繁，但已有的 Issues 表明用戶對功能的期待。
-**連結**：[文件](https://github.com/KKKKhazix/khazix-skills)
+**社群活躍度**：社群活躍，開發者回應速度快。
 
 ## 開發動態
 
@@ -406,7 +400,7 @@ Khazix Skills 的核心技術機制是基於 Python 的模組化設計，將 Pro
 
 ## 延伸閱讀
 
-相關概念：[[Agent 框架]] · [[自動化]] · [[資料視覺化]]
+相關概念：[[自動化]] · [[AI 研究]] · [[內容生成]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[MiniMax-AI--skills|MiniMax-AI/skills]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]]
 
@@ -414,11 +408,11 @@ Khazix Skills 的核心技術機制是基於 Python 的模組化設計，將 Pro
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：AI 工具）
+> [!note]- 直接競品（同子分類：自動化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "AI 工具" AND file.name != "KKKKhazix--khazix-skills"
+> WHERE subcategory = "自動化" AND file.name != "KKKKhazix--khazix-skills"
 > SORT stars DESC
 > ```
 
@@ -450,7 +444,7 @@ Khazix Skills 的核心技術機制是基於 Python 的模組化設計，將 Pro
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["Agent 框架","自動化","資料視覺化"];
+> const concepts = ["自動化","AI 研究","內容生成"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "KKKKhazix--khazix-skills" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

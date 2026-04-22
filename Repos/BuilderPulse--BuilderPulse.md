@@ -7,17 +7,17 @@ language: N/A
 license: N/A
 description: "AI-powered daily intelligence for indie hackers and builders. 20 questions, 10+ sources, every morning."
 homepage: "https://builderpulse.ai"
-stars: 1016
-stars_per_day: 169
-forks: 73
+stars: 1048
+stars_per_day: 150
+forks: 75
 open_issues: 3
 created: 2026-04-14
-pushed_at: 2026-04-20
+pushed_at: 2026-04-21
 first_seen: 2026-04-18
 week: "2026-W16"
 month: "2026-04"
 category: "其他"
-subcategory: "創業工具"
+subcategory: "商業智能"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-18
-use_case: "為獨立開發者提供每日 AI 驅動的建議和靈感，幫助他們找到值得實現的項目。"
+use_case: "為獨立開發者和創業者提供每日的 AI 驅動商機簡報。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-04-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 567
-readme_length: 2780
+repo_size_kb: 647
+readme_length: 2606
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-18"
-star_history: "2026-04-18:883,2026-04-18:883,2026-04-19:929,2026-04-20:965,2026-04-20:965,2026-04-21:1016,2026-04-21:1016"
+star_history: "2026-04-18:883,2026-04-18:883,2026-04-19:929,2026-04-20:965,2026-04-20:965,2026-04-21:1016,2026-04-21:1016,2026-04-22:1048"
 tags:
   - github
   - "category/其他"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "BuilderPulse"
   - "BuilderPulse/BuilderPulse"
-  - "為獨立開發者提供每日 AI 驅動的建議和靈感，幫助他們找到值得實現的項目。"
+  - "為獨立開發者和創業者提供每日的 AI 驅動商機簡報。"
 ---
 
 # BuilderPulse
 
-**1.0k** stars · **169** stars/天 · 建立 6 天前 · N/A · 未標註授權
+**1.0k** stars · **150** stars/天 · 建立 7 天前 · N/A · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/BuilderPulse--BuilderPulse");
@@ -78,20 +78,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ai` `builders` `indiehackers`
 
 > [!summary] 一句話摘要
-> 為獨立開發者提供每日 AI 驅動的建議和靈感，幫助他們找到值得實現的項目。
+> 為獨立開發者和創業者提供每日的 AI 驅動商機簡報。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (169 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (150 stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 希望快速獲得市場洞察並實施建設的獨立開發者。
-> **一句話重點** BuilderPulse 透過每日具體建議，幫助獨立開發者快速響應市場需求，避免資訊過載。
+> **適合** 希望快速獲得市場洞察的獨立開發者和創業者。
+> **一句話重點** BuilderPulse 提供的每日建議能幫助獨立開發者快速把握市場機會，這在資訊過載的時代尤為重要。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/BuilderPulse--BuilderPulse");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "創業工具" && p.file.name !== "BuilderPulse--BuilderPulse" && p.status !== "archived")
+>     .where(p => p.subcategory === "商業智能" && p.file.name !== "BuilderPulse--BuilderPulse" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -102,160 +102,88 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 創業工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 商業智能 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~1h · **綁定風險** low
-> **結論** 花 1 小時學、1 小時整合，得到每日靈感，值得一試。
+> **安裝** Easy (一行搞定)
 
 > [!abstract] 核心創新
-> 基於 300+ 個公開信號提供每日具體的建設建議，幫助獨立開發者快速行動。
+> 提供每日一個具體的建設想法和其重要性的理由，基於多個公共信號的交叉驗證。
 
 ## 專案簡介
 
-BuilderPulse 每天提供一個具體的建設想法和其重要性，這些想法基於超過 300 個公開信號的交叉驗證，來源包括 Hacker News、GitHub Trending、Product Hunt 等。用戶每天都能獲得一個高信心的建設方向，避免了無休止的資訊滾動。這個工具的核心賣點在於其能夠快速識別當前市場需求，並提供具體的建設建議，讓開發者能夠迅速行動。技術上，BuilderPulse 依賴於對多個來源的數據分析，並且每個建議都附帶了相關的信號鏈接，方便用戶進一步探索。與其他類似工具相比，如 0xGF/boneyard 和 AgentSeal/codeburn，BuilderPulse 更加專注於每日具體的建設想法，而不是僅僅提供數據或趨勢。
+BuilderPulse 每天提供一個具體的建設想法和其重要性的理由，這些信息來自於 300 多個公共信號的交叉驗證。用戶每天都能獲得一個高信心的建設方向，而不是無止境的資訊流。具體來說，使用者可以透過訪問 BuilderPulse 獲得最新的建設建議，例如「開發一個檢測 GitHub 仓库虚假 star 的工具」。這些建議基於 Hacker News、GitHub Trending、Product Hunt 等平台的數據，幫助開發者把握市場機會。技術上，這個專案依賴於數據抓取和分析技術，並且對於獨立開發者來說，這樣的每日更新能夠快速反應市場需求。與其他類似工具相比，BuilderPulse 不僅提供靈感，還附帶了具體的市場需求分析，這使得它在市場上更具競爭力。
 
-這使得它在快速變化的市場中更具實用性。使用者可能會面臨的挑戰包括如何有效地篩選和實施這些建議，特別是在資源有限的情況下。社群的活躍度相對較高，儘管目前有一些未解決的問題，但開發者的回應速度和參與度看起來良好。這個專案目前處於 alpha 階段，適合小型團隊或個人開發者進行試用，未來可能會進一步擴展其功能和社群支持。對於那些希望快速獲得市場洞察並實施建設的獨立開發者來說，BuilderPulse 是一個值得考慮的選擇。
+對比於像是 Indie Hackers 社群，BuilderPulse 提供的建議更具針對性和時效性。使用者可能會發現，這個工具能夠幫助他們在競爭激烈的市場中找到獨特的切入點。這個專案目前處於早期階段，活躍度高，但仍需注意其開發和維護的持續性。適合那些希望快速獲得市場洞察的獨立開發者和創業者。對於需要長期穩定支持的團隊來說，可能需要考慮其他選擇。總的來說，這是一個值得關注的工具，特別是對於那些希望在快速變化的市場中保持敏捷的開發者。
 
 ## 重點功能
 
-- 每日建議 — 每天提供一個具體的建設想法和其重要性。
-- 多來源數據分析 — 基於 300+ 個公開信號進行交叉驗證，確保建議的可靠性。
-- 即時市場反饋 — 提供當前市場需求的即時反饋，幫助用戶快速行動。
-- 鏈接回信號來源 — 每個建議都附帶相關的信號鏈接，方便用戶進一步探索。
-- 社群互動 — 提供用戶反饋和建議的渠道，促進社群參與。
+- 每日建設建議 — 提供一個具體的建設想法和其重要性的理由。
+- 300+ 公共信號交叉驗證 — 從多個來源獲取數據，確保建議的可靠性。
+- 即時市場需求分析 — 每日更新，幫助用戶把握最新的市場趨勢。
+- 多語言支持 — 提供英文和中文版本，擴大受眾範圍。
+- 簡單易用的介面 — 用戶可以輕鬆瀏覽每日建議，無需繁瑣操作。
 
 ## 快速開始
 
-1. 訪問網站以獲取每日建議
+1. 訪問網站以查看每日建議
 ```bash
-https://builderpulse.ai
+訪問 https://builderpulse.ai
+```
+2. 訂閱 RSS 以獲取最新更新
+```bash
+使用 RSS 閱讀器訂閱 https://builderpulse.ai/commits/main.atom
+```
+3. 參與社群討論以獲取更多靈感
+```bash
+在 GitHub 提出建議或問題
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天內累積 1016 stars（169/天），forks 73（7.2%），顯示出強勁的增長潛力。作者 liuxiaopai-ai 之前在 AI 領域有一定的經驗，這使得他能夠針對獨立開發者的需求設計出這個工具。這個專案解決了獨立開發者在資訊過載時難以找到具體建設方向的痛點，之前的解決方案往往缺乏針對性和實用性。最近的社群討論和需求反饋也促進了這個專案的快速發展。技術生態的變化，如 AI 和數據分析技術的進步，使得這種工具的實現變得可行。forks/stars 比率為 7.2%，顯示出有相當比例的用戶在實際修改和使用這個工具。
+> 建立 7 天就累積 1048 stars（150/天），forks 75（7.2%），這顯示出穩定的增長趨勢。這個專案的作者是 Liu Xiaopai，他在 AI 和創業領域有豐富的經驗。BuilderPulse 解決了獨立開發者在尋找創業靈感時的痛點，之前的工具往往缺乏即時性和針對性。這個專案的快速增長可能與其獨特的每日更新模式有關，並且在社群中引起了討論。技術上，這個工具的可行性得益於數據抓取和分析技術的進步，讓它能夠快速反應市場需求。forks/stars 比率為 7.2%，顯示出使用者對於這個工具的實際修改和使用意圖。
 
 ## 適合誰使用
 
-**目標受眾**：希望快速獲得市場洞察並實施建設的獨立開發者。
+**目標受眾**：希望快速獲得市場洞察的獨立開發者和創業者。
 
 > [!example] 使用場景
-> - 獨立開發者用它來每天獲取一個具體的建設想法，因為這樣可以快速響應市場需求，避免資訊過載。
-> - 創業者用它來識別當前熱門的建設方向，因為這樣可以提高產品成功的機率，減少市場調研的時間。
-> - 小型團隊用它來激發創意和靈感，因為這樣可以促進團隊的創新思維，並快速實現可行的項目。
+> - 獨立開發者用它來獲得每日的建設靈感，因為這樣可以快速把握市場機會，避免資訊過載。
+> - 創業者用它來分析市場需求，因為它提供了具體的數據來源和建議，幫助他們做出更明智的決策。
+> - 產品經理用它來跟蹤行業趨勢，因為這樣能夠及時調整產品路線圖，保持競爭優勢。
 
 ## 架構分析
 
-BuilderPulse 的架構設計旨在提供高效的數據分析和建議生成。它通過整合多個來源的數據，實現了對市場需求的快速響應。數據流從各大平台（如 Hacker News 和 GitHub）收集信號，經過分析後生成具體的建設建議。
-
-這種設計使得用戶能夠在短時間內獲得有價值的市場洞察。選擇這種架構的代價在於需要持續監控和更新數據來源，以確保建議的時效性和準確性。擴展性方面，隨著用戶需求的增加，可能需要增加更多的數據來源和分析算法。
+BuilderPulse 的架構設計以數據抓取和分析為核心，通過整合多個公共信號來生成每日建議。這種設計使得用戶能夠獲得即時且具針對性的市場洞察。資料流從各個公共平台（如 Hacker News、GitHub Trending 等）抓取數據，經過分析後生成建議。這樣的架構選擇使得 BuilderPulse 能夠快速反應市場變化，但也可能面臨數據來源不穩定的風險。擴展性方面，若未來需要增加更多數據來源，可能需要進一步優化數據處理流程。
 
 ## 技術深入分析
 
-BuilderPulse 的核心技術機制在於對多個公開信號的數據分析，這些信號來自於 Hacker News、GitHub Trending 等平台。透過交叉驗證，系統能夠提供每日一個具體的建設建議，這對於獨立開發者來說非常重要，因為他們常常面對資訊過載的挑戰。這個系統的效能取決於數據來源的質量和數量，能夠快速生成建議的能力是其一大優勢。選擇這種數據驅動的分析方法使得 BuilderPulse 能夠在快速變化的市場中保持競爭力，但也需要持續的數據更新和維護。技術上，這個專案的依賴關係較少，主要集中在數據抓取和分析上，這使得它在維護上相對輕鬆。隨著使用者的增加，可能需要考慮擴展數據來源和分析算法，以應對更複雜的市場需求。
+BuilderPulse 的核心技術機制在於數據抓取和分析，通過整合多個公共信號來生成每日建議。這些建議不僅具體，還附帶了市場需求的分析，讓用戶能夠快速做出決策。從效能上看，這個工具能夠在短時間內提供最新的市場洞察，但對於數據來源的依賴可能會成為未來的一個瓶頸。選擇這種架構的原因在於希望能夠快速反應市場變化，但這也意味著需要不斷監控數據來源的穩定性。技術上，這個專案的依賴樹相對簡單，主要集中在數據抓取和分析的工具上，這降低了維護的複雜度。隨著用戶數量的增加，可能需要考慮擴展數據來源和提升系統的處理能力，以應對更大的數據流量。整體而言，BuilderPulse 在現有市場中提供了一個獨特的解決方案，特別是對於那些希望快速獲得市場洞察的獨立開發者。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的介紹和使用說明，但缺乏具體的程式碼範例。安裝過程相對簡單，直接訪問網站即可獲得每日建議。整體上，對於新手來說，花 30 分鐘能夠輕鬆上手。
+> README 文件清晰，提供了每日建議的概念和使用方式。安裝過程非常簡單，無需複雜的配置。雖然沒有詳細的 getting started guide，但網站本身提供了足夠的信息。文件目前僅有英文和中文版本，對於非英語使用者來說是友好的。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 每日提供具體建議，幫助用戶快速行動。
-> - 基於多個來源的數據分析，確保建議的可靠性。
-> - 社群互動良好，能夠及時獲取用戶反饋。
+> - 每日更新，提供即時的市場洞察。
+> - 多來源數據交叉驗證，提升建議的可靠性。
+> - 簡單易用的介面，降低使用門檻。
 
 > [!danger] 缺點
-> - 目前僅提供一個建議，無法滿足所有用戶需求。
-> - 處於 alpha 階段，功能可能不穩定。
-> - 社群活躍度雖然良好，但仍有未解決的問題。
+> - 僅提供一個建議，可能無法滿足所有需求。
+> - 依賴公共數據來源，若來源不穩定，建議質量可能受影響。
+> - 目前仍在早期階段，未來的穩定性尚待觀察。
 
 > [!warning] 注意事項
-> - 目前僅提供每日一個建議，無法滿足所有用戶的需求。
-> - 社群活躍度雖然良好，但仍有未解決的問題。
-> - 目前處於 alpha 階段，功能可能不穩定。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供一個開放的資源庫，但缺乏具體的每日建議，適合需要廣泛資料的用戶。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於安全工具的開發，與 BuilderPulse 的創業建議方向有所不同。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供一個開放的資源庫，讓用戶可以自由探索，但缺乏每日具體建議。 | 如果你需要廣泛的資料和靈感，而不僅僅是每日建議。 | low，因為兩者的功能可以互補。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於安全工具的開發，與 BuilderPulse 的創業建議方向有所不同。 | 如果你的需求主要集中在安全工具的開發上，而不是一般的建設建議。 | medium，因為需要重新調整開發方向和思維方式。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **BuilderPulse** | **boneyard** | **codeburn** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供一個開放的資源庫，讓用戶可以自由探索，但缺乏每日具體建議。 | 專注於安全工具的開發，與 BuilderPulse 的創業建議方向有所不同。 |
-> | 遷移成本 | - | low，因為兩者的功能可以互補。 | medium，因為需要重新調整開發方向和思維方式。 |
-> | 適用場景 | 主要場景 | 如果你需要廣泛的資料和靈感，而不僅僅是每日建議。 | 如果你的需求主要集中在安全工具的開發上，而不是一般的建設建議 |
-
-## 成熟度評估
-
-| 項目 | 評估 |
-| --- | --- |
-| 開發階段 | Alpha |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | high |
-
-> [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
-
-## 已知陷阱
-
-> [!bug] 踩坑才知道的問題
-
-- [MEDIUM] 目前僅提供每日一個建議，可能無法滿足所有用戶的需求。
-  - 解法：用戶可以結合其他工具以獲取更多靈感。
-- [MEDIUM] 社群活躍度雖然良好，但仍有未解決的問題。
-  - 解法：用戶可以主動參與討論，幫助解決問題。
-- **[HIGH]** 處於 alpha 階段，功能可能不穩定。
-  - 解法：建議用戶在非關鍵項目中試用。
-
-## 使用情境適合度
-
-| 情境 | 適合度 | 說明 |
-| --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠快速獲得市場需求的具體建議，幫助團隊迅速行動。 |
-| 大型企業的核心產品開發 | 不適合 | 目前處於 alpha 階段，功能不穩定，無法用於關鍵業務。 |
-| 個人開發者的 side project | 適合 | 提供每日靈感，幫助開發者快速實現想法。 |
-
-## 採用成本分析
-
-| 項目 | 評估 |
-| --- | --- |
-| 學習時間 | ~1 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
-| 綁定風險 | low |
-
-> [!tip] 投入 vs 回報
-> 花 1 小時學、1 小時整合，得到每日靈感，值得一試。
-
-## 安全性評估
-
-> [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，使用過程中不會涉及安全性問題。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-BuilderPulse 可以輕鬆融入現有的開發工具生態，特別是與 GitHub 和 Hacker News 的整合。用戶可以在開發過程中，利用 BuilderPulse 提供的每日建議來激發創意。在一個使用 GitHub 進行版本控制的專案中，開發者可以將 BuilderPulse 的建議作為每日的工作目標，具體做法是將建議記錄在專案的任務管理系統中。與主流工具鏈的相容性良好，無需額外的適配器或包裝器，整合過程相對順利。
+> - 目前僅提供每日一個建議，可能無法滿足所有用戶的需求。
+> - 依賴於公共數據來源，若來源數據不穩定，建議質量可能受影響。
+> - 活躍度雖高，但仍在早期階段，未來的穩定性尚待觀察。
 
 ## 健康度儀表板
 
@@ -320,13 +248,13 @@ BuilderPulse 可以輕鬆融入現有的開發工具生態，特別是與 GitHub
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 73 |
+| Forks | 75 |
 | Open Issues | 3 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-04-20 |
+| 最後推送 | 2026-04-21 |
 | 建立日期 | 2026-04-14 |
 | 官方網站 | [Link](https://builderpulse.ai) |
-| Repo 大小 | 567 KB |
+| Repo 大小 | 647 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/BuilderPulse/BuilderPulse) |
 | Topics | `ai` `builders` `indiehackers` |
 
@@ -337,13 +265,13 @@ BuilderPulse 可以輕鬆融入現有的開發工具生態，特別是與 GitHub
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度良好，開發者回應速度快。
+**社群活躍度**：社群活躍，開放問題和建議的討論。
 **連結**：[文件](https://builderpulse.ai)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-17 ~ 2026-04-20）
-> **活躍天數** 4 天 · **最新 commit** Daily: 2026-04-20
+> [!abstract] 最近 10 次 commit（2026-04-18 ~ 2026-04-21）
+> **活躍天數** 4 天 · **最新 commit** Daily: 2026-04-21
 
 ## 熱門議題
 
@@ -366,47 +294,47 @@ BuilderPulse 可以輕鬆融入現有的開發工具生態，特別是與 GitHub
 > 
 > ---
 > 
-> ## 💡 Today's build · Apr 20
+> ## 💡 Today's build · Apr 21
 > 
-> > **build a CLI that audits Google Workspace OAuth grants sorted by sensitive-scope and last-used date to identify revocable zombie apps**
+> > **build a GitHub repo credibility scorer that detects fake stars using public API heuristics**
 > 
-> **Why now:** Vercel's breach IOC (609 HN points) just named a Google Workspace OAuth app as the attack pivot, making zombie grant audits urgent today.
+> **Why now:** Fake star economy is one day old, ranks nowhere on Google yet, and is already pulling 754 HN points of verified demand
 > 
-> [](en/2026/2026-04-20.md)
-> [](zh/2026/2026-04-20.md)
+> [](en/2026/2026-04-21.md)
+> [](zh/2026/2026-04-21.md)
 > 
 > ### Track record — 7 days of signals → builds
 > 
-> - **[Apr 20](en/2026/2026-04-20.md)**: Build OAuthTriage in 2 hours — Vercel's breach named 609-point OAuth exploit no one's auditing yet.
-> - **[Apr 19](en/2026/2026-04-19.md)**: 678 HN points confirm $14,388 in hidden cloud savings — the calculator still doesn't exist
-> - **[Apr 18](en/2026/2026-04-18.md)**: 560-point HN thread demands this tool — but nobody has built the cost comparison yet.
-> - **[Apr 17](en/2026/2026-04-17.md)**: One dev's €54,000 overnight Gemini bill exposed the gap a 2-hour build could close.
-> - **[Apr 16](en/2026/2026-04-16.md)**: Replace $400/month pain with a $10/month tool — will agencies actually switch?
-> - **[Apr 15](en/2026/2026-04-15.md)**: 611 HN users lost files Backblaze quietly stopped backing up — yours might be next
-> - **[Apr 14](en/2026/2026-04-14.md)**: 14,317 devs starred a single CLAUDE.md file — the marketplace doesn't exist yet
+> - **[Apr 21](en/2026/2026-04-21.md)**: 6M fake stars exposed — will your $29 scorer ship before GitHub does it first
+> - **[Apr 20](en/2026/2026-04-20.md)**: Vercel's 609-point breach was OAuth — your workspace has the same zombies
+> - **[Apr 19](en/2026/2026-04-19.md)**: 678 engineers proved the $14,388 cloud exit — nobody built the calculator yet
+> - **[Apr 18](en/2026/2026-04-18.md)**: 560 HN points confirm nobody knows their AI costs — and the window closes Monday
+> - **[Apr 17](en/2026/2026-04-17.md)**: Developer slept, woke to a €54,000 AI bill — no cloud warned them
+> - **[Apr 16](en/2026/2026-04-16.md)**: The 2-hour build replacing $400/month tools — and incumbents still haven't noticed
+> - **[Apr 15](en/2026/2026-04-15.md)**: 611 Backblaze users don't know what's missing — this 2-hour build could show them
 > 
 > [Full archive →](en/)
 > 
 > ---
 > 
-> ## 💡 今日建议 · 4月20日
+> ## 💡 今日建议 · 4月21日
 > 
-> > **做一个审计 Google Workspace 第三方 OAuth 授权并按风险排序导出 CSV 的工具**
+> > **做一个检测 GitHub 仓库虚假 star 并给出可信度评分的工具**
 > 
-> **为什么是现在:** Vercel入侵IOC刚公开24小时，HN 609点赞，OAuth跳板议题的7天窗口正好现在开始
+> **为什么是现在:** 虚假star词汇今日754分首页诞生，当下无竞争
 > 
-> [](zh/2026/2026-04-20.md)
-> [](en/2026/2026-04-20.md)
+> [](zh/2026/2026-04-21.md)
+> [](en/2026/2026-04-21.md)
 > 
 > ### 7 天命中记录 — 信号 → 可做的项目
 > 
-> - **[4月20日](zh/2026/2026-04-20.md)**: Vercel被黑609点，你的OAuth里还藏着几个跳板
-> - **[4月19日](zh/2026/2026-04-19.md)**: 678分迁移帖，计算器等你来建
-> - **[4月18日](zh/2026/2026-04-18.md)**: 算费黑盒560赞等60行来破
-> - **[4月17日](zh/2026/2026-04-17.md)**: €54K一夜蒸发，熔断器等人建
-> - **[4月16日](zh/2026/2026-04-16.md)**: 月付$400的排程工具，等谁来终结
-> - **[4月15日](zh/2026/2026-04-15.md)**: Backblaze 悄悄漏了你的备份，611 条评论谁来接
-> - **[4月14日](zh/2026/2026-04-14.md)**: Skills文件14K星刷屏，发现市集无人敢动
+> - **[4月21日](zh/2026/2026-04-21.md)**: 600万假star曝光，评分器窗口还剩多久
+> - **[4月20日](zh/2026/2026-04-20.md)**: Vercel被黑609赞，OAuth审计工具还没人抢
+> - **[4月19日](zh/2026/2026-04-19.md)**: 年省$14388的迁移算器，空位谁来占
+> - **[4月18日](zh/2026/2026-04-18.md)**: 560赞问AI谁最贵，没人敢说
+> - **[4月17日](zh/2026/2026-04-17.md)**: 一觉€54K账单到，下一个是谁
+> - **[4月16日](zh/2026/2026-04-16.md)**: $400排程账单压着，他3周造出了什么
+> - **[4月15日](zh/2026/2026-04-15.md)**: 611怒评等一个备份审计CLI
 > 
 > [完整归档 →](zh/)
 > 
@@ -426,7 +354,7 @@ BuilderPulse 可以輕鬆融入現有的開發工具生態，特別是與 GitHub
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[資料分析]] · [[創業]]
+相關概念：[[自動化測試]] · [[資料視覺化]] · [[API 設計]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]]
 
@@ -434,11 +362,11 @@ BuilderPulse 可以輕鬆融入現有的開發工具生態，特別是與 GitHub
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：創業工具）
+> [!note]- 直接競品（同子分類：商業智能）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "創業工具" AND file.name != "BuilderPulse--BuilderPulse"
+> WHERE subcategory = "商業智能" AND file.name != "BuilderPulse--BuilderPulse"
 > SORT stars DESC
 > ```
 
@@ -470,7 +398,7 @@ BuilderPulse 可以輕鬆融入現有的開發工具生態，特別是與 GitHub
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","資料分析","創業"];
+> const concepts = ["自動化測試","資料視覺化","API 設計"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "BuilderPulse--BuilderPulse" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
