@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research literature."
 homepage: "https://discord.gg/EamjgSaEQf"
-stars: 6987
-stars_per_day: 2329
-forks: 1468
-open_issues: 34
+stars: 8886
+stars_per_day: 2222
+forks: 1889
+open_issues: 37
 created: 2026-04-18
-pushed_at: 2026-04-20
+pushed_at: 2026-04-22
 first_seen: 2026-04-20
 week: "2026-W17"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供一個理論上的 Claude Mythos 架構重建，讓開發者能
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-04-25"
+appearances: 4
+next_review: "2026-04-26"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 25
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-20"
-star_history: "2026-04-20:1496,2026-04-21:4271,2026-04-22:6987"
+star_history: "2026-04-20:1496,2026-04-21:4271,2026-04-22:6987,2026-04-23:8886"
 tags:
   - github
   - "category/ai_ml"
@@ -867,6 +867,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-23|2026-04-23]] — 再次上榜，8.9k stars
 - [[2026-04-22|2026-04-22]] — 再次上榜，7.0k stars
 - [[2026-04-21|2026-04-21]] — 再次上榜，4.3k stars
 - [[2026-04-20|2026-04-20]] — 首次收錄，1.5k stars

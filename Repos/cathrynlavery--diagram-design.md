@@ -7,12 +7,12 @@ language: HTML
 license: N/A
 description: "Thirteen editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop."
 homepage: ""
-stars: 1366
-stars_per_day: 273
-forks: 94
-open_issues: 2
+stars: 1606
+stars_per_day: 268
+forks: 107
+open_issues: 0
 created: 2026-04-16
-pushed_at: 2026-04-19
+pushed_at: 2026-04-22
 first_seen: 2026-04-21
 week: "2026-W17"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供 13 種編輯品質的圖表類型，讓使用者快速生成�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-25"
+appearances: 3
+next_review: "2026-04-26"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-21"
-star_history: "2026-04-21:965,2026-04-21:970,2026-04-22:1358,2026-04-22:1366"
+star_history: "2026-04-21:965,2026-04-21:970,2026-04-22:1358,2026-04-22:1366,2026-04-23:1606"
 tags:
   - github
   - "category/開發工具"
@@ -853,5 +853,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-23|2026-04-23]] — 再次上榜，1.6k stars
 - [[2026-04-22|2026-04-22]] — 再次上榜，1.4k stars
 - [[2026-04-21|2026-04-21]] — 首次收錄，965 stars

@@ -1,23 +1,23 @@
 ---
-repo: browser-use/browser-harness
-url: https://github.com/browser-use/browser-harness
-owner: browser-use
-owner_type: Organization
+repo: the-hidden-fish/advisor-ledger
+url: https://github.com/the-hidden-fish/advisor-ledger
+owner: the-hidden-fish
+owner_type: User
 language: Python
-license: MIT
-description: "Self-healing browser harness that enables LLMs to complete any task."
-homepage: "https://cloud.browser-use.com"
-stars: 5060
-stars_per_day: 1012
-forks: 453
-open_issues: 63
-created: 2026-04-17
-pushed_at: 2026-04-22
-first_seen: 2026-04-20
+license: N/A
+description: ""
+homepage: ""
+stars: 880
+stars_per_day: 293
+forks: 86
+open_issues: 13
+created: 2026-04-19
+pushed_at: 2026-04-21
+first_seen: 2026-04-23
 week: "2026-W17"
 month: "2026-04"
-category: "開發工具"
-subcategory: "自動化"
+category: "其他"
+subcategory: "學術透明度"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -25,41 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-04-20
-use_case: "提供 LLM 完成任何瀏覽器任務的自我修復工具。"
+last_reviewed: 2026-04-23
+use_case: "持續記錄學術黑榜的變更，保留每次編輯的歷史。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-04-26"
-contributor_count: 5
+contributor_count: 1
 engagement: "low"
-issue_close_rate: 4
-repo_size_kb: 997
-readme_length: 3294
+issue_close_rate: 13
+repo_size_kb: 37548
+readme_length: 1490
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-04-20"
-star_history: "2026-04-20:2236,2026-04-20:2264,2026-04-21:3596,2026-04-21:3619,2026-04-22:4459,2026-04-22:4475,2026-04-23:5060"
+ring_history: "assess@2026-04-23"
+star_history: "2026-04-23:880"
 tags:
   - github
-  - "category/開發工具"
+  - "category/其他"
   - "lang/python"
-  - org
 aliases:
-  - "browser-harness"
-  - "browser-use/browser-harness"
-  - "提供 LLM 完成任何瀏覽器任務的自我修復工具。"
+  - "advisor-ledger"
+  - "the-hidden-fish/advisor-ledger"
+  - "持續記錄學術黑榜的變更，保留每次編輯的歷史。"
 ---
 
-# browser-harness
+# advisor-ledger
 
-**4.5k** stars · **895** stars/天 · 建立 5 天前 · Python · MIT
+**880** stars · **293** stars/天 · 建立 3 天前 · Python · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/browser-use--browser-harness");
+const me = dv.page("Repos/the-hidden-fish--advisor-ledger");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`ORG`
+`個人專案`
 
 > [!summary] 一句話摘要
-> 提供 LLM 完成任何瀏覽器任務的自我修復工具。
+> 持續記錄學術黑榜的變更，保留每次編輯的歷史。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (895 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要高效自動化瀏覽器任務的開發者，特別是那些希望利用 LLM 進行動態調整的團隊。
-> **一句話重點** Browser Harness 讓 LLM 能夠在瀏覽器任務中自動學習和調整，這在自動化領域是一個重要的進步。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (293 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 對學術透明度有需求的研究生和學術工作者。
+> **一句話重點** 這個專案的價值在於它提供了一個學術黑榜的透明化解決方案，讓使用者能夠追蹤導師的信譽變化。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--browser-harness");
+> const me = dv.page("Repos/the-hidden-fish--advisor-ledger");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "自動化" && p.file.name !== "browser-use--browser-harness" && p.status !== "archived")
+>     .where(p => p.subcategory === "學術透明度" && p.file.name !== "the-hidden-fish--advisor-ledger" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,116 +95,105 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 學術透明度 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到靈活的自動化能力，值得考慮。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~4h · **綁定風險** medium
+> **結論** 花 4 小時學習，6 小時整合，得到學術黑榜的透明化，值得一試。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於其自我修復的能力，讓 LLM 在執行任務時能夠動態調整。
+> 提供學術黑榜的持久性和可追溯性，確保編輯歷史不會被隨意刪除。
 
 ## 專案簡介
 
-Browser Harness 是一個自我修復的瀏覽器工具，讓大型語言模型（LLM）能夠自由地執行各種瀏覽器任務。用戶只需將其連接到 Chrome，然後 LLM 可以在執行過程中自動編輯缺失的功能，這樣的設計使得用戶不再需要手動干預。核心機制是通過 WebSocket 與 Chrome 進行通訊，並且不需要任何框架或模板。使用者只需運行 `browser-harness` 指令，即可啟動這個工具，並開始與瀏覽器互動。這個工具的賣點在於其極簡的設計和強大的功能，能夠讓 LLM 在執行任務時自動學習和調整。技術上，它依賴於 CDP（Chrome DevTools Protocol）來控制瀏覽器，並使用 Python 進行開發，這使得整體架構輕量且易於維護。
+Advisor Ledger 是一個用於持續監控和記錄學術黑榜的工具。它會每隔幾分鐘自動抓取 Google Doc 的內容，並將每次變更以 Git 提交的方式保留，這樣即使原文檔的內容被刪除或修改，使用者仍然可以查閱到歷史版本。其核心賣點在於能夠保留被刪除的內容，並提供一個可視化的渲染視圖，讓使用者可以輕鬆查看當前文本及其變更歷史。這個工具使用 Python 和 Shell 實現，並且設計了一個系統定時器來觸發抓取和提交操作，確保數據的即時性和完整性。每次抓取後，會生成結構化的差異報告，並使用本地 LLM 進行審查，標註可能的敏感信息和人身攻擊。
 
-與其他瀏覽器自動化工具相比，如 Selenium 或 Puppeteer，Browser Harness 的優勢在於其即時自我修復能力，能夠在執行過程中動態調整，這在處理複雜的網頁交互時特別有用。這個工具適合需要快速迭代和高效自動化的開發者，尤其是在處理需要多次調整的任務時。雖然目前仍在初期階段，但其活躍的開發和社群支持顯示出良好的未來潛力。使用者可能會遇到的問題包括依賴於特定的 Chrome 版本，並且需要一定的 Python 知識來進行初步設置。對於希望在自動化任務中獲得更高靈活性的團隊來說，這是一個值得考慮的選擇。
+與其他類似工具相比，如 0xGF/boneyard 和 AgentSeal/codeburn，Advisor Ledger 更專注於學術領域的透明度，並且提供了完整的編輯歷史，這在學術界特別重要。這個工具適合對學術透明度有需求的研究人員和學生，尤其是在選擇導師時需要了解其背景的情況下。使用者需要注意的是，這個工具的依賴性相對較低，主要依賴於 Git 和 Google Drive API，這使得它在資源使用上相對輕量。整體來看，這是一個非常有價值的工具，尤其是在當前學術環境中，透明度和信任度越來越受到重視。
 
-**技術棧**：`Python 3.11` · `CDP` · `WebSocket`
+**技術棧**：`Python 3.8` · `Shell` · `Git`
 
 ## 重點功能
 
-- 自我修復功能 — LLM 可以在執行過程中自動編輯缺失的功能，無需手動干預。
-- 輕量架構 — 僅需約592行 Python 代碼，易於理解和維護。
-- 即時與 Chrome 通訊 — 通過 CDP 直接控制瀏覽器，無需額外框架。
-- 免費的遠端瀏覽器 — 提供 3 個並發瀏覽器的免費使用，適合測試和開發。
-- 簡易安裝 — 提供詳細的安裝指導，讓用戶能快速上手。
+- 自動抓取 — 每隔幾分鐘自動從 Google Doc 抓取最新內容。
+- 版本控制 — 每次變更都以 Git 提交的方式保留，確保編輯歷史的完整性。
+- 差異報告 — 生成結構化的差異報告，顯示新增、刪除和修改的內容。
+- 本地審查 — 使用 LLM 進行內容審查，標註可能的敏感信息和人身攻擊。
+- 可視化渲染 — 提供一個可視化的網頁視圖，方便使用者查看當前文本及其變更歷史。
 
 ## 快速開始
 
 1. 克隆專案
 ```bash
-git clone https://github.com/browser-use/browser-harness.git
+git clone https://github.com/the-hidden-fish/advisor-ledger.git
 ```
 2. 安裝依賴
 ```bash
 pip install -r requirements.txt
 ```
-3. 運行工具
+3. 啟動抓取流程
 ```bash
-python -m browser-harness
-```
-
-## 程式碼範例
-
-```python
-[
-  "# 前置條件：已安裝並配置好 Python 環境",
-  "python -m browser-harness",
-  "# 預期輸出：啟動瀏覽器並準備接受 LLM 的指令"
-]
+systemctl start advisor-ledger.service
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天內累積 4475 stars（895/天），forks 381（8.5%），這顯示出強勁的增長潛力。作者 MagMueller 和其他貢獻者在開源社群中有一定的影響力，過去的專案也獲得了良好的反響。這個專案解決了傳統瀏覽器自動化工具在靈活性和自我修復能力上的不足，讓 LLM 能夠在執行任務時自動學習和調整。最近的討論和推廣活動也為其帶來了關注。技術上，CDP 的使用使得這個工具能夠更直接地與瀏覽器互動，這在過去是難以實現的。forks/stars 比率為 8.5%，顯示出許多開發者對此工具的實際修改和使用。
+> 建立 3 天內累積 880 stars（293/天），forks 86（9.8%），顯示出強烈的社群關注。作者 the-hidden-fish 似乎在學術透明度方面有深入的思考，這個工具解決了以往學術黑榜缺乏持久性和可追溯性的問題。之前的解決方案往往依賴於不穩定的社群編輯，容易被刪除或修改，而這個工具則提供了一個穩定的歷史記錄。社群的反應也顯示出對這個問題的關注，尤其是在熱門 Issues 中，許多討論都圍繞著學術界的透明度和導師的信譽問題。這些因素共同推動了這個專案的快速增長。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效自動化瀏覽器任務的開發者，特別是那些希望利用 LLM 進行動態調整的團隊。
+**目標受眾**：對學術透明度有需求的研究生和學術工作者。
 
 > [!example] 使用場景
-> - 自動化測試工程師用它來在 CI/CD 流程中自動執行瀏覽器測試，因為它能自動修復缺失的功能，減少了手動維護的負擔。
-> - 數據科學家用它來自動抓取網頁數據，因為其自我修復的特性讓他們能夠快速適應網站結構的變化。
-> - 產品經理用它來快速驗證用戶流程，因為它能夠在執行過程中即時調整，提升了測試的靈活性和效率。
+> - 研究生用它來查閱導師的學術黑榜紀錄，因為這樣可以避免選擇有不良紀錄的導師，從而提高學術研究的成功率。
+> - 學術界的工作人員用它來監控學術黑榜的變更，因為這樣可以及時獲取最新的導師評價，幫助他們做出更好的決策。
+> - 學術機構用它來分析導師的信譽變化，因為這樣可以幫助機構了解導師的表現，進而改善學術環境。
 
 ## 架構分析
 
-Browser Harness 採用輕量級的 Python 架構，通過 CDP 與 Chrome 進行直接通訊。其設計目標是提供一個簡單且強大的工具，讓 LLM 能夠在執行任務時自動修復缺失的功能。資料流方面，LLM 通過 WebSocket 與 Chrome 進行交互，並在需要時自動編輯 `helpers.py` 中的功能。
+Advisor Ledger 採用了一個基於定時任務的架構，使用 systemd timer 每 2 分鐘觸發抓取和提交操作。這樣的設計確保了數據的即時性和完整性，但也需要考慮到 API 的調用頻率限制。資料流中，首先查詢 Google Drive 的修改時間，若無變更則短路退出；若有變更，則抓取結構化 JSON 和純文本，並進行內容的規範化處理。
 
-這樣的設計使得用戶不需要深入了解底層實作，便能夠使用這個工具。選擇 Python 作為開發語言，能夠快速迭代和開發，並且社群支持良好。這種設計的代價是需要用戶具備一定的 Python 知識來進行初步設置。
+這個過程中，使用了哈希算法來確保內容的一致性，並生成結構化的差異報告。選擇 Git 作為版本控制系統，使得每次變更都能夠被追蹤，這在學術界特別重要，因為透明度和信任度是關鍵考量。這樣的設計雖然增加了系統的複雜性，但卻能夠有效地保留歷史紀錄，避免了資料的隨意刪除。
 
-整體架構的擴展性良好，未來可以根據用戶需求增加更多功能。
+整體而言，這個架構在資源使用上相對輕量，但需要定期維護和監控，以確保其持續運行。
 
 ## 技術深入分析
 
-Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊，這使得 LLM 能夠在執行任務時即時調整。其架構由約592行 Python 代碼組成，並且依賴於 WebSocket 進行資料傳輸。這樣的設計使得整體效能良好，能夠快速響應用戶的請求。選擇 Python 作為開發語言，能夠快速迭代和開發，但也意味著需要用戶具備一定的編程能力。
+Advisor Ledger 的核心技術機制在於自動化的資料抓取和版本控制。它使用 Python 實現了與 Google Drive API 的交互，並通過定時任務定期抓取資料。抓取後，資料會經過規範化處理，以便於進行差異比較，這樣可以有效地減少無意義的變更。每次變更都會生成結構化的差異報告，並使用本地 LLM 進行內容審查，這是其獨特之處。
 
-設計上，這個工具的自我修復能力是其最大的賣點，能夠在執行過程中自動檢測缺失的功能並進行修復。這樣的設計雖然提升了靈活性，但在某些情況下可能導致不穩定性。整合方面，這個工具可以與現有的 Python 環境無縫對接，並且能夠輕鬆集成到 CI/CD 流程中。整體來說，Browser Harness 在自動化瀏覽器任務方面提供了一個創新的解決方案，值得開發者關注。
+效能方面，這個工具能夠處理小到中型的資料集，但隨著資料量的增加，可能會面臨 Git 儲存庫增長過快的問題。設計上選擇 Git 作為版本控制系統，這使得資料的追蹤和管理變得更加方便，但也增加了系統的複雜性。技術風險方面，依賴 Google Drive API 可能會面臨存取權限的問題，並且在大規模使用時，可能會影響效能。整合方面，這個工具與現有的學術研究流程相容性良好，但需要使用者具備一定的技術背景來進行配置和維護。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和使用指導。安裝過程相對順暢，但需要用戶具備一定的 Python 知識。文件中有針對日常使用的指南，幫助新手快速上手。整體來說，花 30 分鐘內能夠順利運行起來。
+> README 文件提供了清晰的功能介紹和使用說明，但缺乏詳細的安裝步驟和範例。安裝過程相對順暢，但需要使用者具備一定的技術背景。文件主要以英文撰寫，對於非英語使用者可能會有些挑戰。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自我修復能力強，能夠在執行過程中動態調整。
-> - 輕量級架構，易於理解和維護。
-> - 免費提供遠端瀏覽器，適合小型專案和測試。
-> - 活躍的開發社群，持續更新和改進。
+> - 提供學術黑榜的持久性和可追溯性，確保透明度。
+> - 自動化抓取和提交流程，減少人工干預。
+> - 使用 LLM 進行內容審查，提升資料的可靠性。
 
 > [!danger] 缺點
-> - 目前功能相對有限，需要用戶自行擴展。
-> - 僅支援特定版本的 Chrome 瀏覽器。
-> - 需要一定的 Python 知識來進行設置和維護。
-> - 自我修復的能力可能在某些情況下不夠穩定。
+> - 需要 Google Drive API 的存取權限，增加了使用門檻。
+> - 對於大規模的編輯歷史，Git 儲存庫可能增長過快。
+> - 不支援 Windows 環境，限制了使用者範圍。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.11 及以上版本
-> - 需要安裝 Chrome 瀏覽器，且版本需與 CDP 相容
-> - 目前僅提供有限的功能和範例，需用戶自行擴展
+> - 僅支援 Python 3.8+
+> - 需要 Google Drive API 的存取權限
+> - 對於大規模的編輯歷史，可能會導致 Git 儲存庫增長過快
+> - 不支援 Windows 環境，需在 Linux 或 macOS 上運行
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [SeleniumHQ/selenium](https://github.com/SeleniumHQ/selenium) | Selenium 提供全面的瀏覽器自動化功能，但缺乏即時自我修復能力，使用者需手動維護測試腳本。 |
-| [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) | Puppeteer 專注於 Chrome 瀏覽器的自動化，但不具備 LLM 自動學習的特性，對於變動頻繁的網站不夠靈活。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要針對社交媒體的內容監控，而 Advisor Ledger 專注於學術黑榜的透明度。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 提供更廣泛的數據監控功能，但缺乏 Advisor Ledger 對學術黑榜的專注和歷史記錄保留。 |
 
 ## 替代方案決策
 
@@ -213,16 +201,16 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [SeleniumHQ/selenium](https://github.com/SeleniumHQ/selenium) | Selenium 提供全面的瀏覽器自動化功能，適合各種瀏覽器，但缺乏即時自我修復能力。 | 如果你的專案需要穩定的瀏覽器自動化且不需要動態調整，Selenium 是更成熟的選擇。 | medium，因為需要重寫自動化腳本以符合 Selenium 的 API。 |
-| [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) | Puppeteer 專注於 Chrome 瀏覽器的自動化，提供高效的 API，但不具備 LLM 自動學習的特性。 | 如果你的專案主要針對 Chrome 瀏覽器，且需要高效的操作，Puppeteer 是不錯的選擇。 | medium，因為需要適應 Puppeteer 的 API 和操作方式。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於社交媒體內容的監控，而 Advisor Ledger 專注於學術黑榜的透明度。 | 如果你的需求是監控社交媒體上的不當行為，這個工具會更適合。 | medium，因為需要重新設計資料抓取和存儲流程。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 提供更廣泛的數據監控功能，但缺乏對學術黑榜的專注和歷史記錄保留。 | 如果需要一個通用的數據監控解決方案，這個工具會更合適。 | high，因為需要重新設計整個監控架構。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **browser-harness** | **selenium** | **puppeteer** |
+> | 維度 | **advisor-ledger** | **boneyard** | **codeburn** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Selenium 提供全面的瀏覽器自動化功能，適合各種瀏覽器，但缺乏即時自我修復能力。 | Puppeteer 專注於 Chrome 瀏覽器的自動化，提供高效的 API，但不具備 LLM 自動學習的特性。 |
-> | 遷移成本 | - | medium，因為需要重寫自動化腳本以符合 Selenium 的 API。 | medium，因為需要適應 Puppeteer 的 API 和操作方式。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要穩定的瀏覽器自動化且不需要動態調整，Sele | 如果你的專案主要針對 Chrome 瀏覽器，且需要高效的操作 |
+> | 技術路線 | 本專案 | 專注於社交媒體內容的監控，而 Advisor Ledger 專注於學術黑榜的透明度。 | 提供更廣泛的數據監控功能，但缺乏對學術黑榜的專注和歷史記錄保留。 |
+> | 遷移成本 | - | medium，因為需要重新設計資料抓取和存儲流程。 | high，因為需要重新設計整個監控架構。 |
+> | 適用場景 | 主要場景 | 如果你的需求是監控社交媒體上的不當行為，這個工具會更適合。 | 如果需要一個通用的數據監控解決方案，這個工具會更合適。 |
 
 ## 成熟度評估
 
@@ -233,50 +221,50 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人側項目試用，但不建議用在生產環境的核心路徑上。
+> 適合個人試用和學術研究，但不建議用於生產環境的核心系統。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些版本的 Chrome 中可能出現不穩定的行為，特別是在自我修復功能上。
-  - 解法：確保使用最新版本的 Chrome，並定期檢查更新。
-- [MEDIUM] 對於複雜的網頁交互，可能需要手動編寫一些功能。
-  - 解法：參考 `helpers.py` 中的範例，並根據需求進行調整。
-- [MEDIUM] 在某些情況下，LLM 可能無法正確識別網頁元素。
-  - 解法：手動提供元素的選擇器，或在 `domain-skills/` 中添加新的技能。
+- **[HIGH]** 在高頻率抓取時，可能會遇到 Google Drive API 的存取限制問題。
+  - 解法：調整抓取頻率，避免超過 API 限制。
+- [MEDIUM] 對於大規模的編輯歷史，Git 儲存庫可能增長過快，影響性能。
+  - 解法：定期清理不必要的歷史紀錄。
+- [MEDIUM] 缺乏 Windows 環境的支援，可能會限制使用者範圍。
+  - 解法：在 Linux 或 macOS 環境中運行。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的瀏覽器自動化任務 | 非常適合 | 自我修復能力讓團隊能快速適應變化的需求。 |
-| 大型企業的穩定自動化流程 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
-| 需要快速迭代的產品開發團隊 | 適合 | 能夠在執行過程中動態調整，提升開發效率。 |
-| 對於複雜的網頁交互的自動化需求 | 普通 | 可能需要手動編寫部分功能，無法完全依賴自我修復。 |
+| 學術研究機構需要監控導師的信譽變化 | 非常適合 | 提供持久的編輯歷史，確保透明度。 |
+| 個人研究生希望查閱導師的學術黑榜紀錄 | 適合 | 能夠避免選擇有不良紀錄的導師。 |
+| 學術機構需要分析導師的表現 | 普通 | 雖然提供了透明度，但可能需要額外的分析工具來進行深入研究。 |
+| 大型學術機構需要處理大量的導師數據 | 不適合 | 在大規模使用時可能會面臨性能瓶頸。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~4 小時 |
+| 整合時間 | ~6 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到靈活的自動化能力，值得考慮。
+> 花 4 小時學習，6 小時整合，得到學術黑榜的透明化，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不會存取敏感資料。依賴鏈的信任程度良好，適合在 CI/CD 中使用。
+> 低風險：該工具主要依賴於 Google Drive API 的存取權限，不會存取敏感資料。使用時需確保 API 密鑰的安全性。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--browser-harness");
+> const me = dv.page("Repos/the-hidden-fish--advisor-ledger");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -311,7 +299,7 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--browser-harness");
+> const me = dv.page("Repos/the-hidden-fish--advisor-ledger");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -335,122 +323,111 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 381 |
-| Open Issues | 48 |
-| Issue 解決率 | 4% (2 closed) |
+| Forks | 86 |
+| Open Issues | 13 |
+| Issue 解決率 | 13% (2 closed) |
 | 最後推送 | 2026-04-21 |
-| 建立日期 | 2026-04-17 |
-| 官方網站 | [Link](https://cloud.browser-use.com) |
-| Repo 大小 | 997 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/browser-use/browser-harness) |
+| 建立日期 | 2026-04-19 |
+| Repo 大小 | 36.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/the-hidden-fish/advisor-ledger) |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 96
+>     "Shell" : 4
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@MagMueller](https://github.com/MagMueller) | 75 |
-> | [@sauravpanda](https://github.com/sauravpanda) | 37 |
-> | [@gregpr07](https://github.com/gregpr07) | 12 |
-> | [@reformedot](https://github.com/reformedot) | 5 |
-> | [@robertguss](https://github.com/robertguss) | 2 |
+> | [@the-hidden-fish](https://github.com/the-hidden-fish) | 439 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期有更新和討論。
-**連結**：[文件](https://cloud.browser-use.com/docs)
+**社群活躍度**：社群活躍度中等，近期有多個熱門討論。
+**連結**：[文件](https://the-hidden-fish.github.io/advisor-ledger/)
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-04-21 ~ 2026-04-21）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #131 from browser-use/feat/versioning-and-fetch-use
+> **活躍天數** 1 天 · **最新 commit** feat: 原文视图加入快照选择器 (2h 网格 + 首尾保留)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#139](https://github.com/browser-use/browser-harness/issues/139) | **1 issue found** across 15 files | 0 | 0 |
+> | [#7](https://github.com/the-hidden-fish/advisor-ledger/issues/7) | 看到一些PhD/Postdoc上黑榜所引发的思考 | 16 | 0 |
+> | [#6](https://github.com/the-hidden-fish/advisor-ledger/issues/6) | 转：从PI视角看学术红黑榜，一些个人思考 | 8 | 0 |
+> | [#14](https://github.com/the-hidden-fish/advisor-ledger/issues/14) | 黑榜补充stanford qiu | 4 | 0 |
+> | [#19](https://github.com/the-hidden-fish/advisor-ledger/issues/19) | 帮TAMU Shuiwang Ji老师辟谣 | 0 | 0 |
+> | [#16](https://github.com/the-hidden-fish/advisor-ledger/issues/16) | 帮Lei Stanley Qi 辟谣 | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Browser Harness ♞
+> # Advisor Ledger(学术黑榜镜像)
 > 
-> The simplest, thinnest, **self-healing** harness that gives LLM **complete freedom** to complete any browser task. Built directly on CDP.
+> 只增不减地镜像社区维护的"学术黑榜 / Advisor Red Flags Notes" Google Doc,记录每一次编辑,保留每一次删除。
 > 
-> The agent writes what's missing, mid-task. No framework, no recipes, no rails. One websocket to Chrome, nothing between.
+> **渲染后的实时视图**:https://the-hidden-fish.github.io/advisor-ledger/
 > 
-> ```
->   ● agent: wants to upload a file
->   │
->   ● helpers.py → upload_file() missing
->   │
->   ● agent edits the harness and writes it    helpers.py   192 → 199 lines
->   │                                                       + upload_file()
->   ✓ file uploaded
-> ```
+> ## 做什么 / 为什么
 > 
-> **You will never use the browser again.**
+> 原文档是匿名可编辑的,也就是说实质性的观察可能被悄悄删掉。本仓库每隔几分钟抓一次原文档并把结果提交到 git,这样编辑历史——包括被撤回或被覆盖的内容——都保留下来。
 > 
-> ## Setup prompt
+> `main` 分支上的每一个 commit 对应原文档的一次真实变更。
 > 
-> Paste into Claude Code or Codex:
+> ## 目录结构
 > 
-> ```text
-> Set up https://github.com/browser-use/browser-harness for me.
+> | 路径 | 用途 |
+> |---|---|
+> | `snapshots/YYYY/MM/DD//*.json` | 每次抓取的完整 `documents.get` JSON |
+> | `snapshots/.../*.txt` | 纯文本导出 |
+> | `snapshots/.../*.meta.json` | Drive 元信息 + 抓取内容的 SHA-256 |
+> | `deltas/.../*.delta.json` | 相对上一次快照的结构化差异(按段落的 insert / delete / replace) |
+> | `reviews/.../*.review.json` | 每次 diff 的本地 LLM 审查结果,标注可能的人肉信息、纯人身攻击、可疑删除。**只做提示,不会阻塞 commit** |
+> | `docs/index.html` | 渲染视图:当前文本,被删段落原地保留(删除线 + 删除时间戳),新增段落高亮。由 GitHub Pages 提供 |
+> | `scripts/` | 流水线:fetch → normalize → diff → review → render → commit → push |
 > 
-> Read `install.md` first to install and connect this repo to my real browser. Then read `SKILL.md` for normal usage. Always read `helpers.py` because that is where the functions are. When you open a setup or verification tab, activate it so I can see the active browser tab. After it is installed, open this repository in my browser and, if I am logged in to GitHub, ask me whether you should star it for me as a quick demo that the interaction works — only click the star if I say yes. If I am not logged in, just go to browser-use.com.
-> ```
+> ## 流水线
 > 
-> When this page appears, tick the checkbox so the agent can connect to your browser:
+> 由 systemd timer 每 2 分钟触发:
 > 
-> See [domain-skills/](domain-skills/) for example tasks.
+> 1. 查询 Drive 的 `modifiedTime`,如果自上次快照以来没变化,直接短路退出。
+> 2. 抓取结构化 JSON 和纯文本导出。
+> 3. 把段落规范化成确定性、便于 diff 的形式(NFC Unicode、按行 rstrip、每段生成内容哈希)。
+> 4. 对比新旧规范化快照,按段落内容哈希生成操作,让真正没变的段落不算 churn。
+> 5. 对本次 delta 跑一次本地 LLM 审查,标三类问题:对私人的身份信息(PII)、纯人身攻击(不是对具体行为的批评)、看起来像压制性删除的改动。审查结果以 JSON 写在 delta 旁边。
+> 6. 重新渲染 `docs/index.html`——当前文本加上按最后已知位置锚定的 ghost 段落。
+> 7. `git add` 新快照、delta、review、渲染产物;commit;push。
 > 
-> ## Free remote browsers
+> 流水线用 `flock` 保护,防止手动触发和 timer 触发撞车。
 > 
-> Useful for stealth, sub-agents, or deployment.
-> **Free tier: 3 concurrent browsers, proxies, captcha solving, and more. No card required.**
+> ## 关于原文档
 > 
-> - Grab a key at [cloud.browser-use.com/new-api-key](https://cloud.browser-use.com/new-api-key)
-> - Or let the agent sign up itself via [docs.browser-use.com/llms.txt](https://docs.browser-use.com/llms.txt) (setup flow + challenge context included).
+> 本仓库是**观察性镜像**。不代表原文档中被点名的任何一方,也不由其制作、背书或审核。`snapshots/` 和 `docs/` 里的内容归原匿名贡献者所有。要补充、更正或撤回,请直接编辑原 Google Doc——本仓库只观察。
 > 
-> ## How simple is it? (~592 lines of Python)
+> ## 许可证
 > 
-> - `install.md` — first-time install and browser bootstrap
-> - `SKILL.md` — day-to-day usage
-> - `run.py` (~36 lines) — runs plain Python with helpers preloaded
-> - `helpers.py` (~195 lines) — starting tool calls; the agent edits these
-> - `admin.py` + `daemon.py` (~361 lines) — daemon bootstrap plus the CDP websocket and socket bridge
-> 
-> ## Contributing
-> 
-> PRs and improvements welcome. The best way to help: **contribute a new domain skill** under [domain-skills/](domain-skills/) for a site or task you use often (LinkedIn outreach, ordering on Amazon, filing expenses, etc.). Each skill teaches the agent the selectors, flows, and edge cases it would otherwise have to rediscover.
-> 
-> - **Skills are written by the harness, not by you.** Just run your task with the agent — when it figures something non-obvious out, it files the skill itself (see [SKILL.md](SKILL.md)). Please don't hand-author skill files; agent-generated ones reflect what actually works in the browser.
-> - Open a PR with the generated `domain-skills//` folder — small and focused is great.
-> - Bug fixes, docs tweaks, and helper improvements are equally welcome.
-> - Browse existing skills (`github/`, `linkedin/`, `amazon/`, ...) to see the shape.
-> 
-> If you're not sure where to start, open an issue and we'll point you somewhere useful.
-> 
-> ---
-> 
-> [Bitter lesson](https://browser-use.com/posts/bitter-lesson-agent-frameworks) · [Skills](https://browser-use.com/posts/web-agents-that-actually-learn)
+> 流水线代码(`scripts/`)以公有领域(CC0)发布。`snapshots/`、`deltas/`、`docs/` 中被镜像的内容保留原作者权利。
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[機器學習]] · [[瀏覽器自動化]]
+相關概念：[[學術透明度]] · [[版本控制]] · [[數據監控]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[QLHazyCoder--codex-oauth-automation-extension|QLHazyCoder/codex-oauth-automation-extension]] · [[pasky--chrome-cdp-skill|pasky/chrome-cdp-skill]] · [[KKKKhazix--khazix-skills|KKKKhazix/khazix-skills]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]]
 
-[GitHub](https://github.com/browser-use/browser-harness) · [官方網站](https://cloud.browser-use.com)
+[GitHub](https://github.com/the-hidden-fish/advisor-ledger)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：自動化）
+> [!note]- 直接競品（同子分類：學術透明度）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "自動化" AND file.name != "browser-use--browser-harness"
+> WHERE subcategory = "學術透明度" AND file.name != "the-hidden-fish--advisor-ledger"
 > SORT stars DESC
 > ```
 
@@ -458,7 +435,7 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "browser-use--browser-harness"
+> WHERE category = "其他" AND file.name != "the-hidden-fish--advisor-ledger"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -467,7 +444,7 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "browser-use--browser-harness" AND status != "archived"
+> WHERE language = "Python" AND file.name != "the-hidden-fish--advisor-ledger" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -476,15 +453,15 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W17" AND file.name != "browser-use--browser-harness"
+> WHERE week = "2026-W17" AND file.name != "the-hidden-fish--advisor-ledger"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","機器學習","瀏覽器自動化"];
+> const concepts = ["學術透明度","版本控制","數據監控"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "browser-use--browser-harness" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "the-hidden-fish--advisor-ledger" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -497,12 +474,12 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--browser-harness");
+> const me = dv.page("Repos/the-hidden-fish--advisor-ledger");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "browser-use--browser-harness" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "the-hidden-fish--advisor-ledger" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -518,7 +495,7 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "browser-use" AND file.name != "browser-use--browser-harness"
+> WHERE owner = "the-hidden-fish" AND file.name != "the-hidden-fish--advisor-ledger"
 > SORT stars DESC
 > ```
 
@@ -526,7 +503,7 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--browser-harness");
+> const me = dv.page("Repos/the-hidden-fish--advisor-ledger");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -543,7 +520,7 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--browser-harness");
+> const me = dv.page("Repos/the-hidden-fish--advisor-ledger");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -576,7 +553,7 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--browser-harness");
+> const me = dv.page("Repos/the-hidden-fish--advisor-ledger");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -600,7 +577,7 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--browser-harness");
+> const me = dv.page("Repos/the-hidden-fish--advisor-ledger");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -637,7 +614,7 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--browser-harness");
+> const me = dv.page("Repos/the-hidden-fish--advisor-ledger");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -720,7 +697,7 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-04-20** — 首次收錄
+> **2026-04-23** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -736,7 +713,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-04-23|2026-04-23]] — 再次上榜，5.1k stars
-- [[2026-04-22|2026-04-22]] — 再次上榜，4.5k stars
-- [[2026-04-21|2026-04-21]] — 再次上榜，3.6k stars
-- [[2026-04-20|2026-04-20]] — 首次收錄，2.2k stars
+- [[2026-04-23|2026-04-23]] — 首次收錄，880 stars

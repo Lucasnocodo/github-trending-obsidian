@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "冰冷的钱就这样流进我温暖的口袋-游资（UZI）Skills — 51位投资大佬帮你看盘 · 22维数据 × 180条量化规则 × 17种机构分析方法 · A股/港股/美股 "
 homepage: ""
-stars: 969
-stars_per_day: 242
-forks: 165
-open_issues: 3
+stars: 1163
+stars_per_day: 194
+forks: 200
+open_issues: 6
 created: 2026-04-16
-pushed_at: 2026-04-21
+pushed_at: 2026-04-22
 first_seen: 2026-04-21
 week: "2026-W17"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供全面的股票分析，結合多位投資專家的見解和量
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-24"
+appearances: 2
+next_review: "2026-04-30"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 40
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-21"
-star_history: "2026-04-21:969"
+star_history: "2026-04-21:969,2026-04-23:1163"
 tags:
   - github
   - "category/開發工具"
@@ -1052,4 +1052,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-23|2026-04-23]] — 再次上榜，1.2k stars
 - [[2026-04-21|2026-04-21]] — 首次收錄，969 stars

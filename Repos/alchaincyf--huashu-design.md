@@ -7,10 +7,10 @@ language: HTML
 license: NOASSERTION
 description: "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic"
 homepage: ""
-stars: 3121
-stars_per_day: 1561
-forks: 496
-open_issues: 5
+stars: 4472
+stars_per_day: 1491
+forks: 706
+open_issues: 7
 created: 2026-04-19
 pushed_at: 2026-04-21
 first_seen: 2026-04-22
@@ -30,8 +30,8 @@ use_case: "讓你只需一句話就能生成高保真的設計，無需任何圖
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-25"
+appearances: 2
+next_review: "2026-04-26"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-22"
-star_history: "2026-04-22:3080,2026-04-22:3121"
+star_history: "2026-04-22:3080,2026-04-22:3121,2026-04-23:4472"
 tags:
   - github
   - "category/開發工具"
@@ -948,4 +948,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-23|2026-04-23]] — 再次上榜，4.5k stars
 - [[2026-04-22|2026-04-22]] — 首次收錄，3.1k stars

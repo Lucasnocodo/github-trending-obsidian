@@ -1198,45 +1198,45 @@
   },
   "browser-use/browser-harness": {
     "first_seen": "2026-04-20",
-    "last_seen": "2026-04-22",
-    "times_seen": 3,
+    "last_seen": "2026-04-23",
+    "times_seen": 4,
     "stars_first": 2236,
-    "stars_last": 4459
+    "stars_last": 5060
   },
   "kyegomez/OpenMythos": {
     "first_seen": "2026-04-20",
-    "last_seen": "2026-04-22",
-    "times_seen": 3,
+    "last_seen": "2026-04-23",
+    "times_seen": 4,
     "stars_first": 1496,
-    "stars_last": 6987
+    "stars_last": 8886
   },
   "wbh604/UZI-Skill": {
     "first_seen": "2026-04-21",
-    "last_seen": "2026-04-21",
-    "times_seen": 1,
+    "last_seen": "2026-04-23",
+    "times_seen": 2,
     "stars_first": 969,
-    "stars_last": 969
+    "stars_last": 1163
   },
   "cathrynlavery/diagram-design": {
     "first_seen": "2026-04-21",
-    "last_seen": "2026-04-22",
-    "times_seen": 2,
+    "last_seen": "2026-04-23",
+    "times_seen": 3,
     "stars_first": 965,
-    "stars_last": 1358
+    "stars_last": 1606
   },
   "alchaincyf/huashu-design": {
     "first_seen": "2026-04-22",
-    "last_seen": "2026-04-22",
-    "times_seen": 1,
+    "last_seen": "2026-04-23",
+    "times_seen": 2,
     "stars_first": 3080,
-    "stars_last": 3080
+    "stars_last": 4472
   },
   "tw93/Kami": {
     "first_seen": "2026-04-22",
-    "last_seen": "2026-04-22",
-    "times_seen": 1,
+    "last_seen": "2026-04-23",
+    "times_seen": 2,
     "stars_first": 1594,
-    "stars_last": 1594
+    "stars_last": 2559
   },
   "codejunkie99/agentic-stack": {
     "first_seen": "2026-04-22",
@@ -1244,5 +1244,33 @@
     "times_seen": 1,
     "stars_first": 1275,
     "stars_last": 1275
+  },
+  "EvoLinkAI/awesome-gpt-image-2-prompts": {
+    "first_seen": "2026-04-23",
+    "last_seen": "2026-04-23",
+    "times_seen": 1,
+    "stars_first": 1761,
+    "stars_last": 1761
+  },
+  "OpenCoworkAI/open-codesign": {
+    "first_seen": "2026-04-23",
+    "last_seen": "2026-04-23",
+    "times_seen": 1,
+    "stars_first": 1261,
+    "stars_last": 1261
+  },
+  "VoltAgent/awesome-claude-design": {
+    "first_seen": "2026-04-23",
+    "last_seen": "2026-04-23",
+    "times_seen": 1,
+    "stars_first": 1213,
+    "stars_last": 1213
+  },
+  "the-hidden-fish/advisor-ledger": {
+    "first_seen": "2026-04-23",
+    "last_seen": "2026-04-23",
+    "times_seen": 1,
+    "stars_first": 880,
+    "stars_last": 880
   }
 }
