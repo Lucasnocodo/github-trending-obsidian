@@ -7,9 +7,9 @@ language: HTML
 license: N/A
 description: "Thirteen editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop."
 homepage: ""
-stars: 1606
+stars: 1609
 stars_per_day: 268
-forks: 107
+forks: 108
 open_issues: 0
 created: 2026-04-16
 pushed_at: 2026-04-22
@@ -26,23 +26,23 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-21
-use_case: "提供 13 種編輯品質的圖表類型，讓使用者快速生成符合品牌風格的圖表。"
+use_case: "提供 14 種編輯圖表類型，快速生成符合品牌風格的高品質圖表。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 3
 next_review: "2026-04-26"
-contributor_count: 2
+contributor_count: 4
 engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 788
-readme_length: 9807
+issue_close_rate: -1
+repo_size_kb: 2652
+readme_length: 9929
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-21"
-star_history: "2026-04-21:965,2026-04-21:970,2026-04-22:1358,2026-04-22:1366,2026-04-23:1606"
+star_history: "2026-04-21:965,2026-04-21:970,2026-04-22:1358,2026-04-22:1366,2026-04-23:1606,2026-04-23:1609"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "diagram-design"
   - "cathrynlavery/diagram-design"
-  - "提供 13 種編輯品質的圖表類型，讓使用者快速生成符合品牌風格的圖表。"
+  - "提供 14 種編輯圖表類型，快速生成符合品牌風格的高品質圖表。"
 ---
 
 # diagram-design
 
-**1.4k** stars · **273** stars/天 · 建立 5 天前 · HTML · 未標註授權
+**1.6k** stars · **268** stars/天 · 建立 6 天前 · HTML · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/cathrynlavery--diagram-design");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `easy-install`
 
 > [!summary] 一句話摘要
-> 提供 13 種編輯品質的圖表類型，讓使用者快速生成符合品牌風格的圖表。
+> 提供 14 種編輯圖表類型，快速生成符合品牌風格的高品質圖表。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (273 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 2 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要快速生成高品質圖表並保持品牌一致性的內容創作者。
-> **一句話重點** 這個專案證明了高品質圖表生成不必依賴複雜的工具，簡單的 HTML 和 SVG 就能達到編輯品質。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (268 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Low
+> **適合** 需要快速生成高品質圖表並保持品牌一致性的設計師和開發者。
+> **一句話重點** 這個專案不僅僅是生成圖表，而是提供了一個快速且符合品牌的視覺化解決方案。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,111 +102,92 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到高品質圖表生成的效果，值得採用。
+> **結論** 花 2 小時學習，1 小時整合，得到快速生成高品質圖表的效果，值得採用。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於提供自動化的品牌色彩提取功能，讓生成的圖表能夠與使用者的網站風格一致。
+> 這個專案提供了一個快速且高品質的圖表生成解決方案，專注於品牌一致性。
 
 ## 專案簡介
 
-這個專案的核心在於提供 13 種不同類型的圖表，讓使用者能夠快速生成符合其品牌風格的高品質圖表。使用者只需透過 Claude Code 輸入指令，如 "Make me an architecture diagram"，Claude 會自動選擇合適的圖表類型並生成 HTML 和 SVG 格式的圖表。這樣的設計使得圖表不僅美觀，還能與使用者的網站風格一致，避免了使用者在設計圖表時的繁瑣過程。技術上，這個專案使用了 HTML 和 SVG，並且不依賴 JavaScript 或外部圖片，這樣的選擇使得圖表能夠快速加載並且易於分享。與其他圖表生成工具相比，這個專案的獨特之處在於其專注於編輯品質，並且提供了自動化的品牌色彩提取功能，這樣使用者可以在 60 秒內將圖表調整為符合自己品牌的風格。
+這個專案的核心在於提供一個簡單的方式，讓使用者能夠快速生成符合品牌風格的編輯圖表。使用者可以透過 Claude Code 插件，輸入網站 URL，系統會自動提取顏色和字體，並生成 14 種不同類型的圖表，包括流程圖、狀態機、時間軸等。這些圖表不需要任何額外的建置步驟，直接以 HTML 和 SVG 格式呈現，省去使用者在設計工具上浪費的時間。這個工具的賣點在於其高效能和自動化的設計過程，讓使用者能在 60 秒內獲得符合品牌的圖表。技術上，這個專案使用了 HTML 和 SVG，並且不依賴 JavaScript 或外部資源，這使得它在性能上相對輕量。
 
-實際上，這個工具的使用效果非常直觀，使用者只需簡單的指令即可生成所需的圖表，並且可以透過簡單的樣板來進行自定義。這個專案的設計考量了可擴展性，使用者可以輕鬆地添加新的圖表類型而不影響現有功能。適合需要快速生成高品質圖表的部落客或內容創作者，尤其是那些希望圖表風格與網站一致的使用者。這個專案目前處於早期階段，活躍度高，未來可能會持續增加更多功能和圖表類型。
+與其他圖表生成工具相比，如 Mermaid 和 Figma，這個專案專注於編輯質量，避免了常見的模板化問題，並提供了更高的自定義能力。使用者可以透過簡單的命令來生成圖表，並且可以選擇不同的樣式變體。這個工具適合需要快速生成高品質圖表的設計師和開發者，特別是在品牌一致性上有高要求的情況下。雖然目前的功能相對專一，但未來可能會擴展更多圖表類型和自定義選項。
 
 **技術棧**：`HTML`
 
 ## 重點功能
 
-- 13 種圖表類型 — 包括架構圖、流程圖、狀態機等，滿足不同需求。
-- 自動品牌色彩提取 — 透過網站 URL 自動提取顏色和字體，快速調整圖表風格。
-- 無需外部依賴 — 所有圖表均為自包含的 HTML 和 SVG 格式，無需 JavaScript。
-- 多種樣式選擇 — 提供最小化淺色、最小化深色和完整編輯風格三種變體。
-- 簡單的安裝流程 — 透過 git clone 或插件安裝，快速上手。
+- 14 種圖表類型 — 包括流程圖、狀態機、時間軸等，滿足不同需求。
+- 自動品牌提取 — 透過網站 URL 自動提取顏色和字體，並應用於圖表。
+- 無需外部依賴 — 完全使用 HTML 和 SVG，無需 JavaScript 或外部資源。
+- 多樣化樣式選擇 — 提供 minimal light、minimal dark 和 full-editorial 三種樣式變體。
+- 即時預覽 — 使用者可以在瀏覽器中直接查看生成的圖表，無需額外步驟。
 
 ## 快速開始
 
-1. 克隆專案到 Claude Code 技能目錄
+1. 安裝插件
 ```bash
-git clone git@github.com:cathrynlavery/diagram-design.git ~/.claude/skills/diagram-design
+/plugin marketplace add cathrynlavery/diagram-design
 ```
-2. 重啟 Claude Code
+2. 安裝圖表設計技能
 ```bash
-重啟命令根據使用者環境而定
+/plugin install diagram-design@diagram-design
 ```
-3. 查看圖表類型畫廊
+3. 開啟圖表畫廊
 ```bash
 open ~/.claude/skills/diagram-design/assets/index.html
-```
-4. 生成圖表
-```bash
-在 Claude Code 中輸入: 'Make me an architecture diagram of my app'
-```
-
-## 程式碼範例
-
-```html
-# 前置條件
-# 在 Claude Code 中輸入生成圖表的指令
-Claude:  → fetches the homepage
-         → extracts the dominant palette + font stack
-         → maps detected values to semantic roles:
-             paper, ink, muted, accent, link
-         → shows a proposed diff
-         → writes your tokens to references/style-guide.md
-You:     'yes, apply it'
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天內已累積 1366 stars（273/天），forks 94（6.9%），顯示出不錯的增長潛力。作者 Cathryn Lavery 過去在設計和創業方面有豐富經驗，這個專案解決了許多內容創作者在生成圖表時的痛點，特別是對於品牌一致性的需求。該專案的推出可能受到社群對於高品質、易於使用的圖表工具需求增加的影響。forks/stars 比率為 6.9%，顯示出有相當比例的使用者對於這個工具進行實際修改和使用。
+> 這個專案在建立 6 天內累積了 1609 stars（每天 268），forks 數量為 108（6.7%），顯示出相對穩定的使用者興趣。作者 Cathryn Lavery 是 BestSelf.co 的創辦人，過去在設計和 AI 領域有豐富的經驗。這個專案解決了設計師在生成圖表時常遇到的模板化和時間浪費的痛點，提供了一個快速且高品質的解決方案。社群的反應也相當積極，顯示出對這個工具的需求。技術上，這個工具的出現正好契合了設計師對於高效能和品牌一致性的需求，並且在目前的市場中，類似的解決方案較少。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成高品質圖表並保持品牌一致性的內容創作者。
+**目標受眾**：需要快速生成高品質圖表並保持品牌一致性的設計師和開發者。
 
 > [!example] 使用場景
-> - 部落客用它來快速生成符合品牌風格的架構圖，因為這樣可以省下設計時間並保持網站風格一致。
-> - 內容創作者用它來製作高品質的流程圖，因為這樣的圖表能夠提升文章的可讀性和專業度。
-> - 開發者用它來展示系統架構，因為自動提取品牌色彩的功能讓圖表看起來更具一致性和美觀性。
+> - 設計師用它來快速生成符合品牌風格的流程圖，因為這樣可以節省大量的設計時間，避免使用 Figma 進行繁瑣的設計過程。
+> - 開發者用它來在技術文檔中插入高品質的架構圖，因為這樣可以保持文檔的專業性和一致性，並且不需要額外的設計工具。
+> - 產品經理用它來展示產品功能流程，因為這樣可以快速獲得視覺化的結果，便於與團隊溝通和討論。
 
 ## 架構分析
 
-這個專案採用模組化的設計，所有圖表類型的參考文件僅在需要時加載，這樣的設計使得工具在處理圖表生成時保持高效。每個圖表類型都有獨立的參考文件，這樣用戶在請求特定類型的圖表時，Claude 只需加載必要的文件，從而減少了不必要的資源消耗。這種設計模式使得未來擴展新圖表類型變得簡單，只需新增一個參考文件即可。選擇 HTML 和 SVG 作為主要技術棧，避免了 JavaScript 的依賴，這樣不僅提高了加載速度，也降低了潛在的安全風險。整體架構考量了可擴展性和性能，適合快速生成高品質圖表的需求。
+這個專案採用簡單的 HTML 和 SVG 結構，避免了複雜的依賴關係。每種圖表類型都有獨立的參考文件，根據用戶需求動態加載，這樣的設計使得系統在性能上非常輕量。這種架構模式的好處在於能夠快速擴展新的圖表類型，而不會影響現有功能。由於不依賴 JavaScript，這個工具在各種環境中都能保持穩定性，適合需要快速生成圖表的情境。整體來說，這個架構設計使得使用者能夠輕鬆上手，並且能夠在短時間內獲得所需的圖表。
 
 ## 技術深入分析
 
-這個專案的核心在於其圖表生成的自動化和品牌一致性。使用者可以透過簡單的指令讓 Claude 自動生成所需的圖表，這樣的設計考量了使用者的需求，避免了繁瑣的手動設計過程。專案使用 HTML 和 SVG，這樣的選擇不僅提高了加載速度，也使得圖表在不同平台上都能良好顯示。每個圖表類型的參考文件在需要時才會加載，這樣的設計使得工具在處理圖表生成時保持高效。設計上，專案強調編輯品質，避免了常見的 AI 生成圖表的粗糙感，並且提供了自動提取品牌色彩的功能，這樣的功能讓使用者能夠在短時間內生成符合品牌風格的圖表。未來可能會增加更多的圖表類型和功能，進一步提升使用者體驗。
+這個專案的核心技術在於使用 HTML 和 SVG 來生成圖表，這使得它在性能上非常輕量且無需依賴 JavaScript。每種圖表類型都有獨立的參考文件，這樣的設計模式使得系統能夠根據用戶的需求動態加載所需的資源，從而提高了效率。效能方面，這個工具能夠快速生成圖表，並且在不需要額外的設置或建置步驟的情況下，直接在瀏覽器中展示。設計上，這個專案避免了傳統圖表工具的模板化問題，提供了更高的自定義能力，讓使用者能夠根據自身品牌的需求進行調整。技術風險方面，由於依賴於網站的設計來提取顏色和字體，這可能在某些情況下導致不準確的結果。此外，這個工具的整合性也相當高，能夠輕鬆融入現有的工作流程中，特別是對於已經在使用 Claude Code 的團隊來說，學習成本相對較低。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了完整的安裝和使用範例，讓新手能夠快速上手。安裝過程相對簡單，使用者只需克隆專案並重啟 Claude Code。文件中有詳細的快速入門指南，幫助使用者了解如何使用這個工具。整體而言，花 30 分鐘應該能夠順利運行起來。
+> README 文件清晰且包含範例，安裝過程順暢，沒有明顯的坑。提供了良好的入門指南，讓使用者能夠快速上手。文件目前僅提供英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供多種圖表類型，滿足不同需求。
-> - 自動提取品牌色彩，提升圖表一致性。
-> - 無需外部依賴，簡化使用流程。
+> - 快速生成符合品牌風格的圖表，節省設計時間。
+> - 無需外部依賴，使用輕量的 HTML 和 SVG。
+> - 提供多樣化的圖表類型，滿足不同需求。
 
 > [!danger] 缺點
-> - 不適合快速生成簡單的 Unicode 圖表。
-> - 對於樣式指南的修改在插件模式下不會保留。
-> - 目前功能仍在擴展中，可能存在不穩定性。
+> - 目前僅支持 14 種圖表類型，未來可能需要擴展。
+> - 需要在 Claude Code 環境中運行，無法獨立使用。
+> - 自動提取顏色和字體的準確性可能會受到網站設計影響。
 
 > [!warning] 注意事項
-> - 不適合用於快速生成 Unicode 圖表。
-> - 不支持單一形狀的圖表生成。
-> - 在插件模式下，對於樣式指南的修改不會隨插件更新而保留。
+> - 目前僅支持 14 種圖表類型，未來可能會擴展。
+> - 需要在 Claude Code 環境中運行，無法獨立使用。
+> - 自動提取顏色和字體的準確性取決於網站的設計。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的圖表生成功能，但更側重於簡單的 ASCII 藝術風格，適合需要快速生成簡單圖表的場景。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於代碼生成和自動化，雖然也能生成圖表，但不如本專案專注於編輯品質和品牌一致性。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 提供更全面的筆記和文檔管理功能，但在圖表生成方面的靈活性和美觀性不及本專案。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的圖表生成功能，但專注於更技術性的應用，適合需要更高自定義的開發者。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於生成代碼相關的圖表，適合開發者使用，但不如本專案在品牌一致性上有優勢。 |
 
 ## 替代方案決策
 
@@ -214,16 +195,16 @@ You:     'yes, apply it'
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供 ASCII 藝術風格的圖表生成，適合快速生成簡單圖表，但不如本專案的編輯品質。 | 如果需要快速生成簡單的 ASCII 圖表，且不在意編輯品質。 | low，因為兩者的使用方式相似。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於代碼生成，雖然也能生成圖表，但不如本專案專注於編輯品質和品牌一致性。 | 如果團隊需要一個更全面的代碼生成工具，而不僅僅是圖表生成。 | medium，因為需要適應不同的使用流程。 |
+| Mermaid | 使用 Markdown 語法生成圖表，適合需要快速編寫文檔的開發者，但在品牌一致性上不如本專案。 | 如果你的團隊已經在使用 Markdown 並需要快速生成圖表，則 Mermaid 會是更好的選擇。 | medium - 需要重新學習語法和整合方式。 |
+| Figma | 提供強大的設計工具和協作功能，但需要較長的設計時間，且不專注於快速生成圖表。 | 如果你的團隊需要高自由度的設計和協作，Figma 會是更合適的選擇。 | high - 需要重新設計流程和學習工具。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **diagram-design** | **boneyard** | **codeburn** |
+> | 維度 | **diagram-design** | **Mermaid** | **Figma** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供 ASCII 藝術風格的圖表生成，適合快速生成簡單圖表，但不如本專案的編輯品質。 | 專注於代碼生成，雖然也能生成圖表，但不如本專案專注於編輯品質和品牌一致性。 |
-> | 遷移成本 | - | low，因為兩者的使用方式相似。 | medium，因為需要適應不同的使用流程。 |
-> | 適用場景 | 主要場景 | 如果需要快速生成簡單的 ASCII 圖表，且不在意編輯品質。 | 如果團隊需要一個更全面的代碼生成工具，而不僅僅是圖表生成。 |
+> | 技術路線 | 本專案 | 使用 Markdown 語法生成圖表，適合需要快速編寫文檔的開發者，但在品牌一致性上不如本專案。 | 提供強大的設計工具和協作功能，但需要較長的設計時間，且不專注於快速生成圖表。 |
+> | 遷移成本 | - | medium - 需要重新學習語法和整合方式。 | high - 需要重新設計流程和學習工具。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Markdown 並需要快速生成圖表 | 如果你的團隊需要高自由度的設計和協作，Figma 會是更合適 |
 
 ## 成熟度評估
 
@@ -234,24 +215,27 @@ You:     'yes, apply it'
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用或小型專案，不建議用在生產環境的核心路徑上。
+> 適合個人試用和小型專案，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些瀏覽器中，SVG 圖表可能無法正確顯示
-  - 解法：使用最新版本的 Chrome 或 Firefox 瀏覽器
-- **[HIGH]** 首次使用時，若未自定義樣式指南，會自動使用預設樣式
-  - 解法：建議在首次使用前進行樣式指南的自定義
+- [MEDIUM] 自動提取顏色和字體的準確性可能不高，特別是對於設計不佳的網站。
+  - 解法：手動編輯 style-guide.md 以確保準確性。
+- **[HIGH]** 在首次使用時，若未自定義 style-guide.md，將無法生成圖表。
+  - 解法：在首次使用前，確保已完成 onboarding 流程。
+- [MEDIUM] 某些瀏覽器可能對 SVG 的支持不佳，導致顯示問題。
+  - 解法：使用最新版本的瀏覽器以獲得最佳效果。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊需要快速生成符合品牌風格的圖表 | 非常適合 | 自動提取品牌色彩功能能夠快速調整圖表風格。 |
-| 大型企業需要生成複雜的系統架構圖 | 普通 | 雖然功能強大，但可能需要更多的自定義選項。 |
-| 個人部落客希望提升文章的專業度 | 非常適合 | 高品質的圖表能夠提升內容的可讀性和專業感。 |
+| 小型設計團隊需要快速生成圖表 | 非常適合 | 提供快速且符合品牌的圖表生成解決方案，節省設計時間。 |
+| 大型企業需要高品質的視覺化工具 | 適合 | 雖然功能較專一，但能夠保持品牌一致性。 |
+| 個人開發者在技術文檔中插入圖表 | 普通 | 雖然能快速生成圖表，但可能不夠靈活以滿足所有需求。 |
+| 需要高自由度設計的團隊 | 不適合 | 本專案的自定義能力不如 Figma 等設計工具。 |
 
 ## 採用成本分析
 
@@ -263,12 +247,12 @@ You:     'yes, apply it'
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到高品質圖表生成的效果，值得採用。
+> 花 2 小時學習，1 小時整合，得到快速生成高品質圖表的效果，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：這個工具不需要高權限，且不會存取敏感資料，適合在 CI/CD pipeline 中使用。
 
 ## 健康度儀表板
 
@@ -333,48 +317,77 @@ You:     'yes, apply it'
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 94 |
-| Open Issues | 2 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-04-19 |
+| Forks | 108 |
+| Open Issues | 0 |
+| 最後推送 | 2026-04-22 |
 | 建立日期 | 2026-04-16 |
-| Repo 大小 | 788 KB |
+| Repo 大小 | 2.6 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cathrynlavery/diagram-design) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@cathrynlavery](https://github.com/cathrynlavery) | 1 |
+> | [@cathrynlavery](https://github.com/cathrynlavery) | 7 |
 > | [@web-flow](https://github.com/web-flow) | 1 |
+> | [@jirayu3141](https://github.com/jirayu3141) | 1 |
+> | [@nkeneng](https://github.com/nkeneng) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，最近有更新和活躍的討論。
+**社群活躍度**：社群活躍，最近有合併請求和問題回應。
 **連結**：[文件](https://github.com/cathrynlavery/diagram-design)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-16 ~ 2026-04-19）
-> **活躍天數** 2 天 · **最新 commit** Add Claude Code plugin + marketplace manifests
+> [!abstract] 最近 10 次 commit（2026-04-16 ~ 2026-04-22）
+> **活躍天數** 5 天 · **最新 commit** Merge pull request #2 from jirayu3141/fix/plugin-path-structure
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
 > # Diagram Design
 > 
-> **I wanted good-looking diagrams for my blog posts.**
+> **Editorial diagrams your designer won't hate.**
 > 
-> I write at [littlemight.com](https://littlemight.com). Every time I needed a diagram — an architecture sketch, a flowchart, a pyramid of what matters most — I'd ask Claude and get back a generic rounded-box thing that looked nothing like the rest of the site. I'd either fight with Figma for 30 minutes or just skip the diagram.
+> 14 types. One Claude Code skill. Your brand in 60 seconds — the skill reads your website and maps colors + fonts to every diagram.
 > 
-> So I built a Claude Code skill for it. 13 types, editorial quality, matches your brand in 60 seconds by reading your website.
-> 
-> > *The highest-quality move is usually deletion.* Every node earns its place. The accent color is reserved for the 1–2 things the reader should look at first. Target density: 4/10.
+> No Figma. No generic rounded boxes. No 30-minute color-picking sessions.
 > 
 > ---
 > 
+> 
+> ## Install
+> 
+> ```bash
+> 
+> ### Alternative: install as a plugin
+> 
+> Quicker to install — but the skill lives in the plugin cache, so edits to `references/style-guide.md` don't survive plugin updates. Pick this if you just want to try it out; use the clone route above if you plan to customize the style guide by hand.
+> 
+> **Claude Code:**
+> ```
+> /plugin marketplace add cathrynlavery/diagram-design
+> /plugin install diagram-design@diagram-design
+> ```
+> 
+> **Claude Cowork:** Customize → Directory → Plugins → **+** → paste `cathrynlavery/diagram-design` → Sync, then install from the Personal list.
+> 
+> **Codex:**
+> ```
+> /plugin marketplace add cathrynlavery/diagram-design
+> /plugin install diagram-design@diagram-design
+> ```
+> 
+> ---
+> 
+> 
+> ## Quickstart
+> 
+> ```bash
+> 
 > ## What it makes
 > 
-> All 13 diagrams ship in three variants: minimal light, minimal dark, and full-editorial. Open any of them directly in a browser — no build step, no JS, no external images.
+> All 14 diagrams ship in three variants: minimal light, minimal dark, and full-editorial. Open any of them directly in a browser — no build step, no JS, no external images.
 > 
 >   ArchitectureComponents + connections
 >   FlowchartDecision logic
@@ -392,44 +405,49 @@ You:     'yes, apply it'
 >   Layer stackStacked abstractions
 >   VennSet overlap
 > 
->   Pyramid / funnelRanked hierarchy or conversion drop-off
+>   Pyramid / funnelRanked hierarchy or drop-off
+>   Consultant 2×2Scenario matrix · named cells
+>   &nbsp;
 > 
-> **Browse the live gallery:** open [`assets/index.html`](assets/index.html) in your browser to flip through all 13 types with light / dark / full-editorial tabs.
+> **Browse the live gallery:** open [`skills/diagram-design/assets/index.html`](skills/diagram-design/assets/index.html) in your browser to flip through all 14 diagrams with light / dark / full-editorial tabs.
 > 
 > ---
 > 
-> ## Install
 > 
-> ```bash
-> # Clone into your Claude Code skills directory
-> git clone git@github.com:cathrynlavery/diagram-design.git ~/.claude/skills/diagram-design
+> ## About
 > 
-> # Or if you keep skills elsewhere, symlink it
+> Made by **Cathryn Lavery** — founder of [BestSelf.co](https://bestself.co?utm_source=diagram-design&utm_medium=readme&utm_campaign=github&utm_content=bio). I write about AI, entrepreneurship, and designing nice-looking things at [littlemight.com](https://littlemight.com?utm_source=diagram-design&utm_medium=readme&utm_campaign=github&utm_content=bio) — blog + newsletter.
+> 
+> If this is useful, **star the repo** and come [say hi on X](https://x.com/cathrynlavery).
+> ## Why I built it
+> 
+> I write at [littlemight.com](https://littlemight.com?utm_source=diagram-design&utm_medium=readme&utm_campaign=github&utm_content=intro) (and run [BestSelf.co](https://bestself.co?utm_source=diagram-design&utm_medium=readme&utm_campaign=github&utm_content=intro) on the side). Every time I needed a diagram — an architecture sketch, a flowchart, a pyramid of what matters most — I'd ask Claude and get back a generic rounded-box thing that looked nothing like the rest of the site. I'd either fight with Figma for 30 minutes or just skip the diagram.
+> 
+> So I built a Claude Code skill for it. Fourteen types, editorial quality, matches your brand in 60 seconds by reading your website.
+> 
+> > *The highest-quality move is usually deletion.* Every node earns its place. The accent color is reserved for the 1–2 things the reader should look at first. Target density: 4/10.
+> 
+> ---
+> 
+> 
+> # "I need a quadrant showing Q2 projects by impact vs effort."
+> 
+> # Clone the repo somewhere, then symlink the inner skill into Claude Code's skills dir
 > git clone git@github.com:cathrynlavery/diagram-design.git ~/code/diagram-design
-> ln -s ~/code/diagram-design ~/.claude/skills/diagram-design
+> ln -s ~/code/diagram-design/skills/diagram-design ~/.claude/skills/diagram-design
 > ```
+> 
+> The real skill lives at `skills/diagram-design/` inside the repo (so the same tree works as a Claude Code plugin, a Codex plugin, and a standalone skill). The symlink points Claude Code at that inner directory.
 > 
 > Restart Claude Code. The skill registers as `diagram-design` and activates whenever you ask Claude to make a diagram.
 > 
-> ### Alternative: install as a plugin
-> 
-> Quicker to install — but the skill lives in the plugin cache, so edits to `references/style-guide.md` don't survive plugin updates. Pick this if you just want to try it out; use the clone route above if you plan to customize the style guide by hand.
-> 
-> **Claude Code:**
-> ```
-> /plugin marketplace add cathrynlavery/diagram-design
-> /plugin install diagram-design@diagram-design
-> ```
-> 
-> **Claude Cowork:** Customize → Directory → Plugins → **+** → paste `cathrynlavery/diagram-design` → Sync, then install from the Personal list.
-> 
-> ---
 > 
 > ## Onboarding — make it look like *your* brand
 > 
 > The whole point: ship editorial-quality diagrams in **your** colors and typography, not a generic template.
 > 
-> Out of the box, diagrams render in a neutral **stone + rust** palette (warm off-white paper, deep charcoal ink, rust-orange accent). Good enough to screenshot straight away. But 60 seconds of onboarding is better — the skill will pull your brand from your website and apply it across every diagram.
+> Out of the box, diagrams render in a clean **jet-black + atomic-tangerine** palette (white-smoke paper, jet-black ink, atomic-tangerine accent, blue-slate muted, silver hairlines). Good enough to screenshot straight away. But 60 seconds of onboarding is better — the skill will pull your brand from your website and apply it across every diagram.
+> 
 > 
 > ### The flow
 > 
@@ -446,6 +464,7 @@ You:     'yes, apply it'
 > 
 > Every new diagram now uses your colors. Your website's paper color becomes the diagram background. Your CTA color becomes the focal accent. Your body font stack becomes the node label family.
 > 
+> 
 > ### What gets extracted
 > 
 > | Detected from your site | Becomes |
@@ -459,13 +478,16 @@ You:     'yes, apply it'
 > | `` font family | `node-name` font |
 > | `` / `` font | `sublabel` font |
 > 
+> 
 > ### Contrast checks happen automatically
 > 
 > Before writing tokens, the skill verifies WCAG AA contrast on `ink` over `paper`. If your site has a color that fails contrast at diagram sizes (9–12px), it proposes an adjusted value and explains why.
 > 
+> 
 > ### Manual override
 > 
-> Prefer to set tokens by hand? Open [`references/style-guide.md`](references/style-guide.md) and edit the table. Everything downstream reads from there — the 13 types, the annotation primitive, and the gallery all inherit semantic role names (`accent`, not `#b5523a`).
+> Prefer to set tokens by hand? Open [`skills/diagram-design/references/style-guide.md`](skills/diagram-design/references/style-guide.md) and edit the table. Everything downstream reads from there — all 14 diagrams, the annotation primitive, and the gallery all inherit semantic role names (`accent`, not `#eb6c36`).
+> 
 > 
 > ### First-run gate
 > 
@@ -473,19 +495,19 @@ You:     'yes, apply it'
 > 
 > > *"This is your first diagram in this project. The style guide is still at the default. Want to run onboarding, paste tokens manually, or proceed with default?"*
 > 
-> See [`references/onboarding.md`](references/onboarding.md) for the full spec.
+> See [`skills/diagram-design/references/onboarding.md`](skills/diagram-design/references/onboarding.md) for the full spec.
 > 
 > ---
 > 
-> ## Quickstart
 > 
-> ```bash
-> # Open the gallery to see all 13 types
+> # Open the gallery to see all 14 diagrams
 > open ~/.claude/skills/diagram-design/assets/index.html
 > 
+> 
 > # In Claude Code, just ask:
+> 
 > # "Make me an architecture diagram of my app: frontend, backend, database, Redis cache."
-> # "I need a quadrant showing Q2 projects by impact vs effort."
+> 
 > # "Give me a sequence diagram of the OAuth handshake."
 > ```
 > 
@@ -497,6 +519,7 @@ You:     'yes, apply it'
 > ```
 > 
 > ---
+> 
 > 
 > ## Architecture
 > 
@@ -522,36 +545,7 @@ You:     'yes, apply it'
 > │   ├── type-venn.md
 > │   ├── type-pyramid.md
 > │   ├── primitive-annotation.md      — italic-serif editorial callouts
-> │   └── primitive-sketchy.md         — hand-drawn SVG filter variant
-> ├── assets/
-> │   ├── index.html                   — live gallery, tabbed
-> │   ├── template*.html               — scaffolds for new diagrams
-> │   └── example-.html          — 3 variants × 13 types
-> └── docs/screenshots/                — the images in this README
-> ```
-> 
-> This keeps Claude's working context tight (only load what you need) and makes the skill easy to extend — drop a new `type-.md` and wire it into the selection guide.
-> 
-> ### What loads when
-> 
-> The top-level `SKILL.md` is always in context. Everything else is pulled in only when relevant — this is what keeps the skill fast even with 15 reference files.
-> 
-> | You ask for… | Claude loads |
-> |---|---|
-> | "Make me a flowchart" | `SKILL.md` + `references/type-flowchart.md` |
-> | "Build an architecture diagram" | `SKILL.md` + `references/type-architecture.md` |
-> | "Onboard this skill to my site" | `SKILL.md` + `references/onboarding.md` + `references/style-guide.md` |
-> | "Add an editorial callout to this diagram" | `SKILL.md` + `references/primitive-annotation.md` |
-> | "Give me a hand-drawn version" | `SKILL.md` + `references/primitive-sketchy.md` |
-> | Routine diagram-making (any of the 13 types) | Only `SKILL.md` + that one type's reference |
-> 
-> No matter how many types exist, Claude only reads the one you need. Add a new type tomorrow and nothing else changes.
-> 
-> ---
-> 
-> ## The design system (in one paragraph)
-> 
-> One accent color, 1–2 focal elements per diagram. Three fon
+> │   └── primitive-sketchy.md         — hand-drawn SVG filt
 
 ## 延伸閱讀
 

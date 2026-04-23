@@ -7,26 +7,26 @@ language: Python
 license: Apache-2.0
 description: "One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols) that plugs into Claude Code, Cursor, Windsurf, OpenCode, OpenClaw, Hermes, or DIY Python — and keeps its knowledge when you switch."
 homepage: ""
-stars: 1275
-stars_per_day: 213
-forks: 152
-open_issues: 2
+stars: 1438
+stars_per_day: 205
+forks: 172
+open_issues: 5
 created: 2026-04-15
-pushed_at: 2026-04-21
+pushed_at: 2026-04-22
 first_seen: 2026-04-22
 week: "2026-W17"
 month: "2026-04"
-category: "Other"
-subcategory: ""
+category: "開發工具"
+subcategory: "記憶管理"
 release_tag: "v0.8.0"
-install_complexity: "unknown"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-22
-use_case: ""
+use_case: "讓多個編碼代理工具共享同一個記憶和技能層，避免切換工具時重置代理的知識。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,27 +34,28 @@ appearances: 1
 next_review: "2026-04-25"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 60
-repo_size_kb: 5213
-readme_length: 9757
+issue_close_rate: 50
+repo_size_kb: 5224
+readme_length: 9857
 bus_factor: 1
-last_release_days: 1
+last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-22"
-star_history: "2026-04-22:1275"
+star_history: "2026-04-22:1275,2026-04-23:1438"
 tags:
   - github
-  - "category/other"
+  - "category/開發工具"
   - "lang/python"
 aliases:
   - "agentic-stack"
   - "codejunkie99/agentic-stack"
+  - "讓多個編碼代理工具共享同一個記憶和技能層，避免切換工具時重置代理的知識。"
 ---
 
 # agentic-stack
 
-**1.3k** stars · **213** stars/天 · 建立 6 天前 · Python · Apache-2.0
+**1.4k** stars · **205** stars/天 · 建立 7 天前 · Python · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/codejunkie99--agentic-stack");
@@ -67,17 +68,204 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-> [!warning] AI 摘要產生失敗
-> 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
-
 `v0.8.0`
 
 > [!summary] 一句話摘要
-> One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols) that plugs into Claude Code, Cursor, Windsurf, OpenCode, OpenClaw, Hermes, or DIY Python — and keeps its knowledge when you switch.
+> 讓多個編碼代理工具共享同一個記憶和技能層，避免切換工具時重置代理的知識。
+
+> [!info] 速覽
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (205 stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 需要在多個編碼代理工具之間切換並保持知識一致性的開發者。
+> **一句話重點** 這個專案的設計讓多個編碼代理之間的知識共享變得簡單而高效。
+
+> [!abstract]- 同類競品快速對比
+> ```dataviewjs
+> const me = dv.page("Repos/codejunkie99--agentic-stack");
+> if (me) {
+>   const rivals = dv.pages('"Repos"')
+>     .where(p => p.subcategory === "記憶管理" && p.file.name !== "codejunkie99--agentic-stack" && p.status !== "archived")
+>     .sort(p => p.stars || 0, "desc").limit(5);
+>   if (rivals.length > 0) {
+>     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
+>       p.file.link,
+>       (p.stars || 0).toLocaleString(),
+>       p.stars_per_day || 0,
+>       p.install_complexity || "?",
+>       p.license || "?",
+>       p.ring || "assess"
+>     ]));
+>   } else { dv.paragraph("_目前 vault 中沒有其他 記憶管理 類工具_"); }
+> }
+> ```
+
+> [!question] TL;DR — 值得投入嗎？
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學、3 小時整合，得到多工具環境中的一致性和效率，值得投資。
+
+> [!abstract] 核心創新
+> 提供一個可攜帶的記憶和技能層，支持多個編碼代理工具的無縫切換。
 
 ## 專案簡介
 
-One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols) that plugs into Claude Code, Cursor, Windsurf, OpenCode, OpenClaw, Hermes, or DIY Python — and keeps its knowledge when you switch.
+agentic-stack 提供一個可攜帶的 `.agent/` 資料夾，整合記憶、技能和協議，能夠與多個編碼代理工具（如 Claude Code、Cursor、Windsurf 等）無縫切換，並保持知識的持久性。使用者只需透過 `brew install agentic-stack` 安裝，或是透過 `git clone` 和 PowerShell 安裝腳本來設置。這個工具的核心賣點在於它的便攜性和多工具兼容性，讓使用者能夠在不同的環境中保持一致的工作流程。技術上，它使用 Python 和 PowerShell，並依賴於 `anthropic` 和 `openai` 等庫來實現功能。每個工具的適配器都能夠讀取特定的配置文件，並提供相應的鉤子支持，這使得 agentic-stack 在不同的編碼環境中都能靈活運作。
+
+與其他工具相比，如 0xGF/boneyard 和 AgentSeal/codeburn，agentic-stack 提供了更全面的記憶管理和技能記錄功能，能夠自動記錄工具的使用情況，並在會話中進行回顧和學習。使用者可以透過 `python3 .agent/memory/memory_search.py` 來進行記憶搜索，這樣的設計讓記憶檢索變得高效且精確。這個工具的設計考量了多種使用場景，特別適合需要在多個編碼代理之間切換的開發者。整體來說，agentic-stack 是一個在多工具環境中保持一致性和效率的強大解決方案。
+
+**技術棧**：`Python` · `PowerShell` · `Shell`
+
+## 重點功能
+
+- 可攜帶的 `.agent/` 資料夾 — 整合記憶、技能和協議，支持多個編碼代理工具。
+- 豐富的記憶搜索功能 — 使用 `python3 .agent/memory/memory_search.py` 進行關鍵字搜索，支持全文檢索。
+- 自動記錄工具使用情況 — 透過 `PostToolUse` 鉤子自動記錄每次工具調用的詳細信息。
+- 適配多種編碼代理 — 支持 Claude Code、Cursor、Windsurf 等多個工具的適配器。
+- 夜間自動回顧 — 使用 `auto_dream.py` 進行候選學習的自動化管理，提升學習效率。
+
+## 快速開始
+
+1. 安裝 agentic-stack
+```bash
+brew tap codejunkie99/agentic-stack https://github.com/codejunkie99/agentic-stack && brew install agentic-stack
+```
+2. 克隆專案並運行安裝器
+```bash
+git clone https://github.com/codejunkie99/agentic-stack.git && cd agentic-stack && .\install.ps1 claude-code C:\path\to\your-project
+```
+3. 啟用記憶搜索功能
+```bash
+python3 .agent/memory/memory_search.py --status
+```
+
+## 程式碼範例
+
+```python
+{
+  "前置條件": "已安裝 agentic-stack 並配置好專案",
+  "指令": "python3 .agent/memory/memory_search.py \"deploy failure\"",
+  "預期輸出": "顯示與 'deploy failure' 相關的記憶條目"
+}
+```
+
+## 為什麼值得關注
+
+> [!tip] 爆紅原因
+> 建立 7 天內累積 1438 stars（205/天），forks 172（12.0%），顯示出強勁的增長潛力。作者 codejunkie99 之前在開源社區活躍，這個專案解決了多工具環境中記憶和技能共享的痛點，之前的解決方案往往無法保持知識的持續性。近期的推廣活動和社群討論也提升了專案的曝光率。技術上，這個工具的設計使得在多個編碼環境中保持一致性成為可能，這在當前的開發生態中是非常有價值的。forks/stars 比率為 12.0%，顯示出許多使用者對此專案進行了實際的修改和使用。
+
+## 適合誰使用
+
+**目標受眾**：需要在多個編碼代理工具之間切換並保持知識一致性的開發者。
+
+> [!example] 使用場景
+> - 後端工程師用它來在多個編碼代理之間切換，因為這樣能夠保持一致的記憶和技能，避免重複學習。
+> - DevOps 工程師用它來管理多個專案的記憶和技能，因為這樣能夠提高工作效率，減少切換成本。
+> - AI 開發者用它來整合不同的 AI 工具，因為這樣能夠快速適應不同的開發環境，並保持知識的持久性。
+
+## 架構分析
+
+agentic-stack 採用模組化設計，核心是 `.agent/` 資料夾，包含記憶、技能和協議等多個子目錄。記憶管理分為工作記憶、情節記憶、語義記憶和個人記憶，每層有不同的保留政策。使用者可以透過適配器將其記憶和技能整合到不同的編碼代理中，這樣的設計使得在不同的開發環境中保持一致性成為可能。每個適配器都能夠讀取特定的配置文件，並提供相應的鉤子支持，這樣的設計考量了多種使用場景，特別適合需要在多個編碼代理之間切換的開發者。整體架構的設計使得擴展性良好，未來可以輕鬆添加新的適配器或功能。
+
+## 技術深入分析
+
+agentic-stack 的核心在於其模組化的記憶管理系統，使用 Python 作為主要開發語言，並依賴於多個外部庫來實現其功能。它的記憶管理分為多個層次，能夠根據使用者的需求進行調整。這種設計使得使用者能夠在不同的編碼代理之間保持一致的知識體系。效能上，這個系統能夠處理大量的記憶條目，並且在檢索時能夠快速響應。
+
+設計上，選擇 Python 是因為其生態系統豐富，能夠輕鬆集成各種庫和工具。這個選擇雖然帶來了較高的學習曲線，但也使得系統的擴展性和靈活性大大提升。技術風險方面，記憶管理系統的複雜性可能在未來的擴展中帶來挑戰，特別是在多工具環境中的兼容性問題。整合方面，與主流的開發工具鏈（如 VS Code、GitHub Actions）相容性良好，但在某些情況下可能需要額外的配置。
+
+## 新手體驗
+
+> [!info] 上手難度評估
+> README 文件清晰且詳細，提供了完整的安裝和使用指南。安裝過程相對順暢，但對於不熟悉 PowerShell 的使用者可能會有些挑戰。文件中有良好的 getting started guide，幫助新手快速上手。文件目前僅提供英文版本，對於非英語使用者可能會造成一定的障礙。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 多工具兼容性，能夠在不同的編碼環境中保持一致性。
+> - 強大的記憶管理功能，自動記錄和回顧學習過程。
+> - 可攜帶的設計，方便在不同專案之間切換。
+
+> [!danger] 缺點
+> - 目前僅支持特定的編碼代理工具，對於不在支持列表中的工具無法使用。
+> - 記憶搜索功能仍在 beta 階段，可能存在不穩定的情況。
+> - 需要安裝特定的 Python 依賴，對於不熟悉 Python 的使用者可能有一定的學習曲線。
+
+> [!warning] 注意事項
+> - 目前僅支持特定的編碼代理工具，對於不在支持列表中的工具無法使用。
+> - 記憶搜索功能仍在 beta 階段，可能存在不穩定的情況。
+> - 需要安裝特定的 Python 依賴，對於不熟悉 Python 的使用者可能有一定的學習曲線。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的記憶管理功能，但缺乏多工具支持，適合單一環境使用。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於安全性和隱私保護，對於需要高安全性的環境更為合適。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 提供更強大的筆記和文檔管理功能，但不支持多工具的記憶共享。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於記憶管理，但僅限於單一環境，無法實現多工具共享。 | 如果你的專案只使用單一編碼代理，且需要強大的記憶管理功能。 | low，因為功能相似，遷移成本低。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於安全性和隱私，適合需要高安全性的環境。 | 如果你的專案對安全性要求極高，且不需要多工具支持。 | medium，因為需要重新考慮記憶管理的方式。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 提供強大的筆記和文檔管理功能，但不支持多工具的記憶共享。 | 如果你的專案需要強大的文檔管理功能，而不在意多工具支持。 | medium，因為需要重新設計記憶管理的流程。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **agentic-stack** | **boneyard** | **codeburn** | **claude-obsidian** |
+> | --- | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 專注於記憶管理，但僅限於單一環境，無法實現多工具共享。 | 專注於安全性和隱私，適合需要高安全性的環境。 | 提供強大的筆記和文檔管理功能，但不支持多工具的記憶共享。 |
+> | 遷移成本 | - | low，因為功能相似，遷移成本低。 | medium，因為需要重新考慮記憶管理的方式。 | medium，因為需要重新設計記憶管理的流程。 |
+> | 適用場景 | 主要場景 | 如果你的專案只使用單一編碼代理，且需要強大的記憶管理功能。 | 如果你的專案對安全性要求極高，且不需要多工具支持。 | 如果你的專案需要強大的文檔管理功能，而不在意多工具支持。 |
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Beta |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | medium |
+
+> [!tip] 採用建議
+> 適合個人 side project 試用，但不建議用在生產環境的核心路徑上。
+
+## 已知陷阱
+
+> [!bug] 踩坑才知道的問題
+
+- [MEDIUM] 在某些環境下，記憶搜索功能可能會出現不穩定的情況。
+  - 解法：使用 `--status` 檢查當前狀態，必要時重啟工具。
+- **[HIGH]** 某些適配器的配置文件可能不完整，導致功能無法正常使用。
+  - 解法：檢查並手動補全配置文件。
+- **[HIGH]** 在 Windows 環境下，PowerShell 的執行策略可能會阻止腳本運行。
+  - 解法：需要以管理員身份運行 PowerShell 並設置執行策略。
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠在多個編碼代理之間快速切換，保持一致的記憶和技能。 |
+| 大型企業的 DevOps 團隊 | 適合 | 能夠管理多個專案的記憶，提升工作效率。 |
+| 個人開發者的 AI 專案 | 普通 | 雖然功能強大，但可能對於小型專案來說過於複雜。 |
+| 需要高安全性的金融應用 | 不適合 | 目前的設計未考慮到安全性和隱私保護的需求。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | medium |
+| 綁定風險 | medium |
+
+> [!tip] 投入 vs 回報
+> 花 5 小時學、3 小時整合，得到多工具環境中的一致性和效率，值得投資。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 安全性評估中等，該工具本身不需要高權限，但在使用過程中可能會存取敏感資料。依賴鏈的信任程度良好，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -142,10 +330,10 @@ One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols)
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 152 |
-| Open Issues | 2 |
-| Issue 解決率 | 60% (3 closed) |
-| 最後推送 | 2026-04-21 |
+| Forks | 172 |
+| Open Issues | 5 |
+| Issue 解決率 | 50% (5 closed) |
+| 最後推送 | 2026-04-22 |
 | 建立日期 | 2026-04-15 |
 | Repo 大小 | 5.1 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/codejunkie99/agentic-stack) |
@@ -157,16 +345,16 @@ One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols)
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 96
->     "PowerShell" : 2
->     "Shell" : 2
+>     "Python" : 92
+>     "PowerShell" : 4
+>     "Shell" : 3
 >     "Ruby" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@codejunkie99](https://github.com/codejunkie99) | 25 |
+> | [@codejunkie99](https://github.com/codejunkie99) | 26 |
 > | [@aliirz](https://github.com/aliirz) | 1 |
 > | [@JagritGumber](https://github.com/JagritGumber) | 1 |
 > | [@mimed95](https://github.com/mimed95) | 1 |
@@ -184,10 +372,22 @@ One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols)
 > - **`on_failure()` severity overrides.** A failed production deploy records its real severity instead of the flat `importance=7 / pain_score=8` defaults.
 > ...（完整內容見 GitHub）
 
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，最近有多次提交和問題回應。
+**連結**：[文件](https://github.com/codejunkie99/agentic-stack)
+
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-20 ~ 2026-04-21）
-> **活躍天數** 2 天 · **最新 commit** docs: refresh Repo layout + architecture diagram for v0.8.0
+> [!abstract] 最近 10 次 commit（2026-04-21 ~ 2026-04-22）
+> **活躍天數** 2 天 · **最新 commit** Merge pull request #15 from codejunkie99/fix/openclaw-auto-wire
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#13](https://github.com/codejunkie99/agentic-stack/issues/13) | pi adapter is missing automatic tool-call logging | 0 | 0 |
 
 ## README 摘錄
 
@@ -400,7 +600,7 @@ One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols)
 > ├── cursor/        (.cursor/rules/*.mdc)
 > ├── windsurf/      (.windsurfrules)
 > ├── opencode/      (AGENTS.md + opencode.json)
-> ├── openclaw/      (system-prompt include)
+> ├── openclaw/      (AGENTS.md + system-prompt include; auto-registers per-project agent)
 > ├── hermes/        (AGENTS.md)
 > ├── pi/            (AGENTS.md + .pi/skills symlink)
 > ├── standalone-python/  (DIY conductor entrypoint)
@@ -415,20 +615,31 @@ One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols)
 > onboard_ui.py                   # ANSI palette, banner, clack-style layout
 > onboard_widgets.py              # arrow-key prompts (text, select, confirm)
 > onboard_render.py               # answers → PREFERENCES.md content
-> onboard_write.py                # atomic file write with backup
-> test_claude_code_hook.py        # hook 
+> onboard_write.py                # atomic file write with 
 
 ## 延伸閱讀
+
+相關概念：[[記憶管理]] · [[多模態]] · [[自動化]]
+
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]]
 
 [GitHub](https://github.com/codejunkie99/agentic-stack)
 
 ## 相關收錄
 
+> [!note]- 直接競品（同子分類：記憶管理）
+> ```dataview
+> TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
+> FROM "Repos"
+> WHERE subcategory = "記憶管理" AND file.name != "codejunkie99--agentic-stack"
+> SORT stars DESC
+> ```
+
 > [!note]- 同分類的其他專案
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "codejunkie99--agentic-stack"
+> WHERE category = "開發工具" AND file.name != "codejunkie99--agentic-stack"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -448,6 +659,21 @@ One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols)
 > FROM "Repos"
 > WHERE week = "2026-W17" AND file.name != "codejunkie99--agentic-stack"
 > SORT stars DESC
+> ```
+
+> [!note]- 共用概念的相關專案
+> ```dataviewjs
+> const concepts = ["記憶管理","多模態","自動化"];
+> const pages = dv.pages('"Repos"')
+>   .where(p => p.file.name !== "codejunkie99--agentic-stack" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .sort(p => p.stars, "desc")
+>   .limit(5);
+> if (pages.length > 0) {
+>   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
+>     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
+>     return [p.file.link, p.stars, p.category, shared.join(", ")];
+>   }));
+> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
 > ```
 
 > [!note]- Ring 更高的同類競品

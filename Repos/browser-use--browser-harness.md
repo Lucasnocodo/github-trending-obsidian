@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "Self-healing browser harness that enables LLMs to complete any task."
 homepage: "https://cloud.browser-use.com"
-stars: 5060
-stars_per_day: 1012
-forks: 453
+stars: 5071
+stars_per_day: 845
+forks: 455
 open_issues: 63
 created: 2026-04-17
 pushed_at: 2026-04-22
@@ -34,15 +34,15 @@ appearances: 4
 next_review: "2026-04-26"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 4
-repo_size_kb: 997
+issue_close_rate: 3
+repo_size_kb: 1011
 readme_length: 3294
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-20"
-star_history: "2026-04-20:2236,2026-04-20:2264,2026-04-21:3596,2026-04-21:3619,2026-04-22:4459,2026-04-22:4475,2026-04-23:5060"
+star_history: "2026-04-20:2236,2026-04-20:2264,2026-04-21:3596,2026-04-21:3619,2026-04-22:4459,2026-04-22:4475,2026-04-23:5060,2026-04-23:5071"
 tags:
   - github
   - "category/開發工具"
@@ -56,7 +56,7 @@ aliases:
 
 # browser-harness
 
-**4.5k** stars · **895** stars/天 · 建立 5 天前 · Python · MIT
+**5.1k** stars · **845** stars/天 · 建立 6 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/browser-use--browser-harness");
@@ -75,10 +75,10 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 提供 LLM 完成任何瀏覽器任務的自我修復工具。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (895 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (845 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要高效自動化瀏覽器任務的開發者，特別是那些希望利用 LLM 進行動態調整的團隊。
-> **一句話重點** Browser Harness 讓 LLM 能夠在瀏覽器任務中自動學習和調整，這在自動化領域是一個重要的進步。
+> **適合** 需要在瀏覽器中自動化任務的開發者，尤其是希望利用 LLM 進行智能化操作的團隊。
+> **一句話重點** Browser Harness 的自我修復能力讓 LLM 在瀏覽器操作中變得更加靈活和高效。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,110 +102,104 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到靈活的自動化能力，值得考慮。
+> **結論** 花 5 小時學習，10 小時整合，得到高效的瀏覽器自動化能力，值得一試。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於其自我修復的能力，讓 LLM 在執行任務時能夠動態調整。
+> 這個專案的核心創新在於其自我修復的能力，讓 LLM 能夠在執行過程中自動編寫缺失的功能。
 
 ## 專案簡介
 
-Browser Harness 是一個自我修復的瀏覽器工具，讓大型語言模型（LLM）能夠自由地執行各種瀏覽器任務。用戶只需將其連接到 Chrome，然後 LLM 可以在執行過程中自動編輯缺失的功能，這樣的設計使得用戶不再需要手動干預。核心機制是通過 WebSocket 與 Chrome 進行通訊，並且不需要任何框架或模板。使用者只需運行 `browser-harness` 指令，即可啟動這個工具，並開始與瀏覽器互動。這個工具的賣點在於其極簡的設計和強大的功能，能夠讓 LLM 在執行任務時自動學習和調整。技術上，它依賴於 CDP（Chrome DevTools Protocol）來控制瀏覽器，並使用 Python 進行開發，這使得整體架構輕量且易於維護。
+Browser Harness 是一個輕量級的自我修復瀏覽器工具，專為大型語言模型（LLM）設計，讓它們能夠自由地執行各種瀏覽器任務。使用者只需透過一個 WebSocket 連接到 Chrome，然後 LLM 可以在執行過程中自動編寫缺失的功能，這樣的設計使得 LLM 能夠在遇到問題時即時修正自己，從而提高效率。核心指令如 `browser-harness` 可以啟動這個工具，並且透過 `helpers.py` 檔案進行功能擴展。這個工具的賣點在於它的簡單性和強大功能，讓 LLM 不再需要手動操作瀏覽器。技術上，這個工具依賴於 CDP（Chrome DevTools Protocol），並使用 Python 來實現，具體依賴包括 `cdp-use` 和 `websockets`。
 
-與其他瀏覽器自動化工具相比，如 Selenium 或 Puppeteer，Browser Harness 的優勢在於其即時自我修復能力，能夠在執行過程中動態調整，這在處理複雜的網頁交互時特別有用。這個工具適合需要快速迭代和高效自動化的開發者，尤其是在處理需要多次調整的任務時。雖然目前仍在初期階段，但其活躍的開發和社群支持顯示出良好的未來潛力。使用者可能會遇到的問題包括依賴於特定的 Chrome 版本，並且需要一定的 Python 知識來進行初步設置。對於希望在自動化任務中獲得更高靈活性的團隊來說，這是一個值得考慮的選擇。
+相較於其他類似工具，Browser Harness 的獨特之處在於它的自我修復能力，這意味著它不需要預先定義的框架或規則，能夠更靈活地應對各種瀏覽器任務。使用者可以在不需要手動干預的情況下，讓 LLM 自動學習和適應新的任務。這樣的設計使得它在需要快速迭代和高效執行的場景下特別有用，尤其是在自動化測試或網頁數據抓取等領域。雖然目前的開發仍在進行中，但已經有一定的使用案例和社群支持。對於需要在瀏覽器中進行複雜操作的開發者來說，這個工具提供了一個非常有吸引力的解決方案。
 
-**技術棧**：`Python 3.11` · `CDP` · `WebSocket`
+**技術棧**：`Python 3.11` · `CDP` · `websockets 16.0`
 
 ## 重點功能
 
-- 自我修復功能 — LLM 可以在執行過程中自動編輯缺失的功能，無需手動干預。
-- 輕量架構 — 僅需約592行 Python 代碼，易於理解和維護。
-- 即時與 Chrome 通訊 — 通過 CDP 直接控制瀏覽器，無需額外框架。
-- 免費的遠端瀏覽器 — 提供 3 個並發瀏覽器的免費使用，適合測試和開發。
-- 簡易安裝 — 提供詳細的安裝指導，讓用戶能快速上手。
+- 自我修復能力 — LLM 可以在執行過程中自動編寫缺失的功能，提升任務完成率。
+- 簡單的 WebSocket 連接 — 只需一個 WebSocket 連接到 Chrome，無需複雜的配置。
+- 即時功能擴展 — 使用者可以透過 `helpers.py` 自定義功能，LLM 會自動學習並生成新的技能。
+- 免費的遠端瀏覽器 — 提供 3 個同時運行的瀏覽器，無需信用卡即可使用。
+- 開源社群支持 — 鼓勵開發者貢獻新的技能，並持續改進工具的功能。
 
 ## 快速開始
 
-1. 克隆專案
-```bash
-git clone https://github.com/browser-use/browser-harness.git
-```
-2. 安裝依賴
+1. 安裝依賴
 ```bash
 pip install -r requirements.txt
 ```
-3. 運行工具
+2. 啟動瀏覽器工具
 ```bash
-python -m browser-harness
+browser-harness
+```
+3. 連接到 Chrome 瀏覽器
+```bash
+在瀏覽器中打開指定的 URL
 ```
 
 ## 程式碼範例
 
 ```python
-[
-  "# 前置條件：已安裝並配置好 Python 環境",
-  "python -m browser-harness",
-  "# 預期輸出：啟動瀏覽器並準備接受 LLM 的指令"
-]
+{
+  "前置條件": "確保已安裝所有依賴並啟動工具。",
+  "指令": "browser-harness",
+  "預期輸出": "啟動瀏覽器工具並準備接收 LLM 的指令。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天內累積 4475 stars（895/天），forks 381（8.5%），這顯示出強勁的增長潛力。作者 MagMueller 和其他貢獻者在開源社群中有一定的影響力，過去的專案也獲得了良好的反響。這個專案解決了傳統瀏覽器自動化工具在靈活性和自我修復能力上的不足，讓 LLM 能夠在執行任務時自動學習和調整。最近的討論和推廣活動也為其帶來了關注。技術上，CDP 的使用使得這個工具能夠更直接地與瀏覽器互動，這在過去是難以實現的。forks/stars 比率為 8.5%，顯示出許多開發者對此工具的實際修改和使用。
+> 在建立的短短 6 天內，Browser Harness 已經累積了 5071 stars（每天 845），forks 數量為 455（9%），顯示出強烈的社群興趣。這個專案的主要貢獻者包括多位活躍的開發者，並且其自我修復的特性解決了 LLM 在瀏覽器操作中遇到的靈活性不足的問題。過去，開發者需要手動編寫瀏覽器操作的代碼，這樣的流程繁瑣且容易出錯，而這個工具的出現使得這一切變得自動化。社群的反饋也顯示出對於這種新型工具的需求，尤其是在自動化和智能化的趨勢下，這個工具的潛力不容小覷。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效自動化瀏覽器任務的開發者，特別是那些希望利用 LLM 進行動態調整的團隊。
+**目標受眾**：需要在瀏覽器中自動化任務的開發者，尤其是希望利用 LLM 進行智能化操作的團隊。
 
 > [!example] 使用場景
-> - 自動化測試工程師用它來在 CI/CD 流程中自動執行瀏覽器測試，因為它能自動修復缺失的功能，減少了手動維護的負擔。
-> - 數據科學家用它來自動抓取網頁數據，因為其自我修復的特性讓他們能夠快速適應網站結構的變化。
-> - 產品經理用它來快速驗證用戶流程，因為它能夠在執行過程中即時調整，提升了測試的靈活性和效率。
+> - 後端工程師用它來自動化網頁數據抓取，因為它能夠自動修復缺失的功能，節省了手動編寫代碼的時間。
+> - 數據分析師用它來快速生成報告，因為 LLM 可以在執行過程中自動調整和優化任務流程。
+> - 產品經理用它來測試新功能的用戶體驗，因為它能夠在瀏覽器中自動執行複雜的操作，並即時反饋結果。
 
 ## 架構分析
 
-Browser Harness 採用輕量級的 Python 架構，通過 CDP 與 Chrome 進行直接通訊。其設計目標是提供一個簡單且強大的工具，讓 LLM 能夠在執行任務時自動修復缺失的功能。資料流方面，LLM 通過 WebSocket 與 Chrome 進行交互，並在需要時自動編輯 `helpers.py` 中的功能。
+Browser Harness 採用單一的 Python 應用架構，透過 CDP 與 Chrome 進行通訊。這樣的設計使得工具能夠直接控制瀏覽器，並且在任務執行過程中即時編寫和修正功能。資料流方面，LLM 透過 WebSocket 與瀏覽器進行交互，所有的指令和反饋都在這個通道中進行。
 
-這樣的設計使得用戶不需要深入了解底層實作，便能夠使用這個工具。選擇 Python 作為開發語言，能夠快速迭代和開發，並且社群支持良好。這種設計的代價是需要用戶具備一定的 Python 知識來進行初步設置。
-
-整體架構的擴展性良好，未來可以根據用戶需求增加更多功能。
+選擇 Python 作為開發語言的原因在於其簡單性和強大的生態系統，然而這也意味著在高並發的情況下可能會遇到性能瓶頸。整體而言，這個架構的擴展性良好，但在處理大量同時請求時可能需要進一步優化。這個工具的設計目標是簡化 LLM 的操作流程，讓它們能夠更靈活地應對各種瀏覽器任務。
 
 ## 技術深入分析
 
-Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊，這使得 LLM 能夠在執行任務時即時調整。其架構由約592行 Python 代碼組成，並且依賴於 WebSocket 進行資料傳輸。這樣的設計使得整體效能良好，能夠快速響應用戶的請求。選擇 Python 作為開發語言，能夠快速迭代和開發，但也意味著需要用戶具備一定的編程能力。
-
-設計上，這個工具的自我修復能力是其最大的賣點，能夠在執行過程中自動檢測缺失的功能並進行修復。這樣的設計雖然提升了靈活性，但在某些情況下可能導致不穩定性。整合方面，這個工具可以與現有的 Python 環境無縫對接，並且能夠輕鬆集成到 CI/CD 流程中。整體來說，Browser Harness 在自動化瀏覽器任務方面提供了一個創新的解決方案，值得開發者關注。
+Browser Harness 的核心技術在於其自我修復的能力，這是透過 LLM 在執行過程中即時編寫缺失功能來實現的。這個工具使用 CDP 與 Chrome 進行通訊，並且依賴於 Python 的簡單性來快速開發和迭代。效能方面，這個工具的設計使得它能夠處理多個並發請求，但在高負載下可能會遇到性能瓶頸。選擇 Python 作為開發語言的好處在於其生態系統的豐富性，但也可能帶來一些性能上的限制。這個工具的設計取捨在於簡化 LLM 的操作流程，讓它們能夠更靈活地應對各種瀏覽器任務。技術風險方面，隨著使用者數量的增加，可能會面臨更高的資源需求和潛在的安全性問題。整合方面，這個工具與主流的開發框架和 CI/CD 流程相容性良好，能夠輕鬆融入現有的開發環境中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和使用指導。安裝過程相對順暢，但需要用戶具備一定的 Python 知識。文件中有針對日常使用的指南，幫助新手快速上手。整體來說，花 30 分鐘內能夠順利運行起來。
+> README 文件清晰且有範例，安裝過程相對順暢，但需要注意 Python 版本的限制。整體來說，對於新手來說，花 30 分鐘應該能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自我修復能力強，能夠在執行過程中動態調整。
-> - 輕量級架構，易於理解和維護。
-> - 免費提供遠端瀏覽器，適合小型專案和測試。
-> - 活躍的開發社群，持續更新和改進。
+> - 自我修復能力強，能夠即時編寫缺失功能。
+> - 簡單易用，無需複雜配置即可啟動。
+> - 社群活躍，鼓勵開發者貢獻新的技能。
 
 > [!danger] 缺點
-> - 目前功能相對有限，需要用戶自行擴展。
-> - 僅支援特定版本的 Chrome 瀏覽器。
-> - 需要一定的 Python 知識來進行設置和維護。
-> - 自我修復的能力可能在某些情況下不夠穩定。
+> - 目前功能仍在開發中，可能不穩定。
+> - 僅支援特定版本的 Python。
+> - 需要穩定的網路連接，否則會影響使用體驗。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.11 及以上版本
-> - 需要安裝 Chrome 瀏覽器，且版本需與 CDP 相容
-> - 目前僅提供有限的功能和範例，需用戶自行擴展
+> - 僅支援 Python 3.11 以上版本。
+> - 需要穩定的網路連接以維持 WebSocket 連接。
+> - 目前的功能仍在開發中，可能存在不穩定的情況。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [SeleniumHQ/selenium](https://github.com/SeleniumHQ/selenium) | Selenium 提供全面的瀏覽器自動化功能，但缺乏即時自我修復能力，使用者需手動維護測試腳本。 |
-| [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) | Puppeteer 專注於 Chrome 瀏覽器的自動化，但不具備 LLM 自動學習的特性，對於變動頻繁的網站不夠靈活。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於自動化測試，而 Browser Harness 更加靈活，能夠處理各種瀏覽器任務。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | AgentSeal 提供了更強的安全性，但在自我修復能力上不如 Browser Harness 的靈活性。 |
 
 ## 替代方案決策
 
@@ -213,16 +207,16 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [SeleniumHQ/selenium](https://github.com/SeleniumHQ/selenium) | Selenium 提供全面的瀏覽器自動化功能，適合各種瀏覽器，但缺乏即時自我修復能力。 | 如果你的專案需要穩定的瀏覽器自動化且不需要動態調整，Selenium 是更成熟的選擇。 | medium，因為需要重寫自動化腳本以符合 Selenium 的 API。 |
-| [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) | Puppeteer 專注於 Chrome 瀏覽器的自動化，提供高效的 API，但不具備 LLM 自動學習的特性。 | 如果你的專案主要針對 Chrome 瀏覽器，且需要高效的操作，Puppeteer 是不錯的選擇。 | medium，因為需要適應 Puppeteer 的 API 和操作方式。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於自動化測試，而 Browser Harness 更加靈活，能夠處理各種瀏覽器任務。 | 如果你的需求主要集中在自動化測試而非一般的瀏覽器操作，則可以選擇這個工具。 | medium，因為需要重新設計自動化流程。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | AgentSeal 提供了更強的安全性，但在自我修復能力上不如 Browser Harness 的靈活性。 | 如果你的應用場景對安全性要求極高，則可以考慮這個工具。 | high，因為需要重新設計整個安全架構。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **browser-harness** | **selenium** | **puppeteer** |
+> | 維度 | **browser-harness** | **boneyard** | **codeburn** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Selenium 提供全面的瀏覽器自動化功能，適合各種瀏覽器，但缺乏即時自我修復能力。 | Puppeteer 專注於 Chrome 瀏覽器的自動化，提供高效的 API，但不具備 LLM 自動學習的特性。 |
-> | 遷移成本 | - | medium，因為需要重寫自動化腳本以符合 Selenium 的 API。 | medium，因為需要適應 Puppeteer 的 API 和操作方式。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要穩定的瀏覽器自動化且不需要動態調整，Sele | 如果你的專案主要針對 Chrome 瀏覽器，且需要高效的操作 |
+> | 技術路線 | 本專案 | 這個工具專注於自動化測試，而 Browser Harness 更加靈活，能夠處理各種瀏覽器任務。 | AgentSeal 提供了更強的安全性，但在自我修復能力上不如 Browser Harness 的靈活性。 |
+> | 遷移成本 | - | medium，因為需要重新設計自動化流程。 | high，因為需要重新設計整個安全架構。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要集中在自動化測試而非一般的瀏覽器操作，則可以 | 如果你的應用場景對安全性要求極高，則可以考慮這個工具。 |
 
 ## 成熟度評估
 
@@ -239,38 +233,38 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些版本的 Chrome 中可能出現不穩定的行為，特別是在自我修復功能上。
-  - 解法：確保使用最新版本的 Chrome，並定期檢查更新。
-- [MEDIUM] 對於複雜的網頁交互，可能需要手動編寫一些功能。
-  - 解法：參考 `helpers.py` 中的範例，並根據需求進行調整。
-- [MEDIUM] 在某些情況下，LLM 可能無法正確識別網頁元素。
-  - 解法：手動提供元素的選擇器，或在 `domain-skills/` 中添加新的技能。
+- **[HIGH]** 在高並發情況下可能會遇到性能瓶頸
+  - 解法：考慮使用負載均衡來分散請求
+- [MEDIUM] 某些功能可能在特定瀏覽器版本中不兼容
+  - 解法：確保使用最新版本的 Chrome
+- **[HIGH]** 需要穩定的網路連接，否則會影響使用體驗
+  - 解法：使用有線網路以提高穩定性
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的瀏覽器自動化任務 | 非常適合 | 自我修復能力讓團隊能快速適應變化的需求。 |
-| 大型企業的穩定自動化流程 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
-| 需要快速迭代的產品開發團隊 | 適合 | 能夠在執行過程中動態調整，提升開發效率。 |
-| 對於複雜的網頁交互的自動化需求 | 普通 | 可能需要手動編寫部分功能，無法完全依賴自我修復。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 這個工具能夠快速自動化瀏覽器任務，適合小型團隊的需求。 |
+| 大型企業的自動化測試 | 普通 | 雖然有自我修復能力，但在高負載下可能會遇到性能瓶頸。 |
+| 需要快速迭代的產品開發團隊 | 非常適合 | 能夠快速適應變化的需求，提升開發效率。 |
+| 對安全性要求極高的應用 | 不適合 | 目前的設計可能存在安全性風險，需謹慎使用。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到靈活的自動化能力，值得考慮。
+> 花 5 小時學習，10 小時整合，得到高效的瀏覽器自動化能力，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不會存取敏感資料。依賴鏈的信任程度良好，適合在 CI/CD 中使用。
+> 低風險：這個工具不需要高權限，但需要穩定的網路連接。依賴的庫需定期更新以避免安全漏洞。
 
 ## 健康度儀表板
 
@@ -335,40 +329,40 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 381 |
-| Open Issues | 48 |
-| Issue 解決率 | 4% (2 closed) |
-| 最後推送 | 2026-04-21 |
+| Forks | 455 |
+| Open Issues | 63 |
+| Issue 解決率 | 3% (2 closed) |
+| 最後推送 | 2026-04-22 |
 | 建立日期 | 2026-04-17 |
 | 官方網站 | [Link](https://cloud.browser-use.com) |
-| Repo 大小 | 997 KB |
+| Repo 大小 | 1011 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/browser-use/browser-harness) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@MagMueller](https://github.com/MagMueller) | 75 |
+> | [@MagMueller](https://github.com/MagMueller) | 76 |
 > | [@sauravpanda](https://github.com/sauravpanda) | 37 |
-> | [@gregpr07](https://github.com/gregpr07) | 12 |
+> | [@gregpr07](https://github.com/gregpr07) | 14 |
 > | [@reformedot](https://github.com/reformedot) | 5 |
 > | [@robertguss](https://github.com/robertguss) | 2 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期有更新和討論。
-**連結**：[文件](https://cloud.browser-use.com/docs)
+**社群活躍度**：社群活躍，持續有新功能和修正更新。
+**連結**：[文件](https://cloud.browser-use.com)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-21 ~ 2026-04-21）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #131 from browser-use/feat/versioning-and-fetch-use
+> [!abstract] 最近 10 次 commit（2026-04-21 ~ 2026-04-22）
+> **活躍天數** 2 天 · **最新 commit** fix(run): exec scoping for comprehensions + sharpen click guidance (#133)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#139](https://github.com/browser-use/browser-harness/issues/139) | **1 issue found** across 15 files | 0 | 0 |
+> | [#145](https://github.com/browser-use/browser-harness/issues/145) | FAKE self healing, none of agentic & browser harness | 10 | 0 |
 
 ## README 摘錄
 
@@ -438,7 +432,7 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[機器學習]] · [[瀏覽器自動化]]
+相關概念：[[自動化]] · [[LLM 推論]] · [[WebSocket]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]] · [[QLHazyCoder--codex-oauth-automation-extension|QLHazyCoder/codex-oauth-automation-extension]] · [[pasky--chrome-cdp-skill|pasky/chrome-cdp-skill]] · [[KKKKhazix--khazix-skills|KKKKhazix/khazix-skills]] · [[autoclaw-cc--xiaohongshu-skills|autoclaw-cc/xiaohongshu-skills]]
 
@@ -482,7 +476,7 @@ Browser Harness 的核心技術機制是通過 CDP 與 Chrome 進行直接通訊
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","機器學習","瀏覽器自動化"];
+> const concepts = ["自動化","LLM 推論","WebSocket"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "browser-use--browser-harness" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
