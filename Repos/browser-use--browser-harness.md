@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "Self-healing browser harness that enables LLMs to complete any task."
 homepage: "https://cloud.browser-use.com"
-stars: 5071
-stars_per_day: 845
-forks: 455
-open_issues: 63
+stars: 5921
+stars_per_day: 987
+forks: 521
+open_issues: 73
 created: 2026-04-17
 pushed_at: 2026-04-22
 first_seen: 2026-04-20
@@ -30,8 +30,8 @@ use_case: "提供 LLM 完成任何瀏覽器任務的自我修復工具。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-04-26"
+appearances: 5
+next_review: "2026-04-27"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 3
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-20"
-star_history: "2026-04-20:2236,2026-04-20:2264,2026-04-21:3596,2026-04-21:3619,2026-04-22:4459,2026-04-22:4475,2026-04-23:5060,2026-04-23:5071"
+star_history: "2026-04-20:2236,2026-04-20:2264,2026-04-21:3596,2026-04-21:3619,2026-04-22:4459,2026-04-22:4475,2026-04-23:5060,2026-04-23:5071,2026-04-24:5921"
 tags:
   - github
   - "category/開發工具"
@@ -730,6 +730,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-24|2026-04-24]] — 再次上榜，5.9k stars
 - [[2026-04-23|2026-04-23]] — 再次上榜，5.1k stars
 - [[2026-04-22|2026-04-22]] — 再次上榜，4.5k stars
 - [[2026-04-21|2026-04-21]] — 再次上榜，3.6k stars

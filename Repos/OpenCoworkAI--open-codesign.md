@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Open-source Claude Design alternative. One-click import your Claude Code / Codex API key. Prompt → prototype / slides / PDF. Multi-model (Claude, GPT, Gemini, Kimi, GLM, Ollama). BYOK, local-first, MIT."
 homepage: "https://opencoworkai.github.io/open-codesign/"
-stars: 1276
-stars_per_day: 319
-forks: 98
-open_issues: 44
+stars: 1902
+stars_per_day: 380
+forks: 143
+open_issues: 48
 created: 2026-04-18
-pushed_at: 2026-04-22
+pushed_at: 2026-04-23
 first_seen: 2026-04-23
 week: "2026-W17"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供一個開源的 Claude 設計替代方案，讓用戶能夠在�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-26"
+appearances: 2
+next_review: "2026-04-27"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 14
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-23"
-star_history: "2026-04-23:1261,2026-04-23:1276"
+star_history: "2026-04-23:1261,2026-04-23:1276,2026-04-24:1902"
 tags:
   - github
   - "category/開發工具"
@@ -890,4 +890,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-24|2026-04-24]] — 再次上榜，1.9k stars
 - [[2026-04-23|2026-04-23]] — 首次收錄，1.3k stars

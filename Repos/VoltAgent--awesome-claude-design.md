@@ -7,9 +7,9 @@ language: N/A
 license: MIT
 description: "Awesome Claude Design: 68 ready-to-use design system inspirations in DESIGN.md format. Drop one in, scaffold a full UI in one shot."
 homepage: ""
-stars: 1213
-stars_per_day: 303
-forks: 128
+stars: 1412
+stars_per_day: 282
+forks: 149
 open_issues: 1
 created: 2026-04-18
 pushed_at: 2026-04-18
@@ -30,8 +30,8 @@ use_case: "提供 68 種現成的設計系統靈感，讓你輕鬆生成完整 U
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-26"
+appearances: 2
+next_review: "2026-04-27"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-23"
-star_history: "2026-04-23:1213,2026-04-23:1213"
+star_history: "2026-04-23:1213,2026-04-23:1213,2026-04-24:1412"
 tags:
   - github
   - "category/開發工具"
@@ -780,4 +780,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-24|2026-04-24]] — 再次上榜，1.4k stars
 - [[2026-04-23|2026-04-23]] — 首次收錄，1.2k stars
