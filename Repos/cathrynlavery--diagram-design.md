@@ -7,17 +7,17 @@ language: HTML
 license: N/A
 description: "Thirteen editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop."
 homepage: ""
-stars: 1609
-stars_per_day: 268
-forks: 108
-open_issues: 0
+stars: 1780
+stars_per_day: 254
+forks: 127
+open_issues: 1
 created: 2026-04-16
 pushed_at: 2026-04-22
 first_seen: 2026-04-21
 week: "2026-W17"
 month: "2026-04"
 category: "開發工具"
-subcategory: "圖表工具"
+subcategory: "圖表生成"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-21
-use_case: "提供 14 種編輯圖表類型，快速生成符合品牌風格的高品質圖表。"
+use_case: "提供 14 種編輯圖表類型，讓設計師不會反感的圖表生成工具。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 3
 next_review: "2026-04-26"
 contributor_count: 4
 engagement: "low"
-issue_close_rate: -1
+issue_close_rate: 0
 repo_size_kb: 2652
 readme_length: 9929
 bus_factor: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-21"
-star_history: "2026-04-21:965,2026-04-21:970,2026-04-22:1358,2026-04-22:1366,2026-04-23:1606,2026-04-23:1609"
+star_history: "2026-04-21:965,2026-04-21:970,2026-04-22:1358,2026-04-22:1366,2026-04-23:1606,2026-04-23:1609,2026-04-24:1780"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "diagram-design"
   - "cathrynlavery/diagram-design"
-  - "提供 14 種編輯圖表類型，快速生成符合品牌風格的高品質圖表。"
+  - "提供 14 種編輯圖表類型，讓設計師不會反感的圖表生成工具。"
 ---
 
 # diagram-design
 
-**1.6k** stars · **268** stars/天 · 建立 6 天前 · HTML · 未標註授權
+**1.8k** stars · **254** stars/天 · 建立 7 天前 · HTML · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/cathrynlavery--diagram-design");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `easy-install`
 
 > [!summary] 一句話摘要
-> 提供 14 種編輯圖表類型，快速生成符合品牌風格的高品質圖表。
+> 提供 14 種編輯圖表類型，讓設計師不會反感的圖表生成工具。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (268 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Low
-> **適合** 需要快速生成高品質圖表並保持品牌一致性的設計師和開發者。
-> **一句話重點** 這個專案不僅僅是生成圖表，而是提供了一個快速且符合品牌的視覺化解決方案。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (254 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** 4+ 人 · **參與度** Low
+> **適合** 需要快速生成品牌一致圖表的設計師和開發者。
+> **一句話重點** 這個專案的最大優勢在於它能夠快速生成符合品牌風格的高品質圖表，省去繁瑣的設計過程。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/cathrynlavery--diagram-design");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "圖表工具" && p.file.name !== "cathrynlavery--diagram-design" && p.status !== "archived")
+>     .where(p => p.subcategory === "圖表生成" && p.file.name !== "cathrynlavery--diagram-design" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,32 +96,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 圖表工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 圖表生成 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到快速生成高品質圖表的效果，值得採用。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，1 小時整合，得到快速生成高品質圖表的效果，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個快速且高品質的圖表生成解決方案，專注於品牌一致性。
+> 這個專案的創新在於能夠自動從網站提取品牌元素，並生成高品質的編輯圖表。
 
 ## 專案簡介
 
-這個專案的核心在於提供一個簡單的方式，讓使用者能夠快速生成符合品牌風格的編輯圖表。使用者可以透過 Claude Code 插件，輸入網站 URL，系統會自動提取顏色和字體，並生成 14 種不同類型的圖表，包括流程圖、狀態機、時間軸等。這些圖表不需要任何額外的建置步驟，直接以 HTML 和 SVG 格式呈現，省去使用者在設計工具上浪費的時間。這個工具的賣點在於其高效能和自動化的設計過程，讓使用者能在 60 秒內獲得符合品牌的圖表。技術上，這個專案使用了 HTML 和 SVG，並且不依賴 JavaScript 或外部資源，這使得它在性能上相對輕量。
+這個專案的核心機制是透過 Claude Code 生成 14 種不同類型的編輯圖表，使用者只需提供網站 URL，工具會自動提取顏色和字體，並生成符合品牌風格的圖表。使用者可以透過 `/plugin marketplace add cathrynlavery/diagram-design` 安裝，並使用 `/plugin install diagram-design@diagram-design` 指令來啟用。這個工具的賣點在於它能在 60 秒內生成高品質的圖表，避免了傳統設計工具如 Figma 的繁瑣流程。技術上，這個專案使用 HTML 和 SVG，並且不依賴 JavaScript 或外部圖片，這使得生成的圖表可以直接在瀏覽器中查看，無需額外的構建步驟。
 
-與其他圖表生成工具相比，如 Mermaid 和 Figma，這個專案專注於編輯質量，避免了常見的模板化問題，並提供了更高的自定義能力。使用者可以透過簡單的命令來生成圖表，並且可以選擇不同的樣式變體。這個工具適合需要快速生成高品質圖表的設計師和開發者，特別是在品牌一致性上有高要求的情況下。雖然目前的功能相對專一，但未來可能會擴展更多圖表類型和自定義選項。
+相較於其他圖表生成工具如 Mermaid，這個專案提供了更高的編輯質量和品牌一致性，因為它能夠自動從網站中提取設計元素。使用者在首次使用時，工具會檢查是否已自定義樣式指南，確保生成的圖表不會是默認模板。這個工具的社群活躍度不高，目前只有一個開放的問題。整體來看，這是一個適合需要快速生成品牌一致圖表的團隊，特別是對於設計師和開發者來說，能夠節省大量的設計時間。
 
-**技術棧**：`HTML`
+**技術棧**：`HTML` · `SVG`
 
 ## 重點功能
 
-- 14 種圖表類型 — 包括流程圖、狀態機、時間軸等，滿足不同需求。
-- 自動品牌提取 — 透過網站 URL 自動提取顏色和字體，並應用於圖表。
-- 無需外部依賴 — 完全使用 HTML 和 SVG，無需 JavaScript 或外部資源。
-- 多樣化樣式選擇 — 提供 minimal light、minimal dark 和 full-editorial 三種樣式變體。
-- 即時預覽 — 使用者可以在瀏覽器中直接查看生成的圖表，無需額外步驟。
+- 14 種圖表類型 — 包括流程圖、架構圖、時間軸等，滿足不同需求。
+- 自動提取品牌顏色和字體 — 透過網站 URL 快速生成符合品牌的圖表。
+- 無需外部依賴 — 完全使用 HTML 和 SVG，直接在瀏覽器中查看。
+- 多種樣式選擇 — 提供最小化淺色、最小化深色和完整編輯風格的圖表。
+- 自動檢查對比度 — 確保生成的圖表符合 WCAG AA 標準。
 
 ## 快速開始
 
@@ -129,65 +129,77 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 /plugin marketplace add cathrynlavery/diagram-design
 ```
-2. 安裝圖表設計技能
+2. 安裝圖表生成插件
 ```bash
 /plugin install diagram-design@diagram-design
 ```
-3. 開啟圖表畫廊
+3. 開始生成圖表
 ```bash
-open ~/.claude/skills/diagram-design/assets/index.html
+在 Claude Code 中詢問: "Make me an architecture diagram of my app"
+```
+
+## 程式碼範例
+
+```html
+{
+  "前置條件": "需要在 Claude Code 中安裝 diagram-design 插件。",
+  "指令": "/plugin install diagram-design@diagram-design",
+  "預期輸出": "成功安裝後，可以使用該插件生成各種圖表。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案在建立 6 天內累積了 1609 stars（每天 268），forks 數量為 108（6.7%），顯示出相對穩定的使用者興趣。作者 Cathryn Lavery 是 BestSelf.co 的創辦人，過去在設計和 AI 領域有豐富的經驗。這個專案解決了設計師在生成圖表時常遇到的模板化和時間浪費的痛點，提供了一個快速且高品質的解決方案。社群的反應也相當積極，顯示出對這個工具的需求。技術上，這個工具的出現正好契合了設計師對於高效能和品牌一致性的需求，並且在目前的市場中，類似的解決方案較少。
+> 建立 7 天就累積 1780 stars（254/天），forks 127（7.1%），這顯示出其快速增長的潛力。作者 Cathryn Lavery 是 BestSelf.co 的創始人，過去專注於設計和創業，這個工具解決了使用者在生成圖表時常遇到的品牌不一致和設計繁瑣的痛點。這個專案的推出正好契合了對高品質設計需求的上升，並且在社交媒體上引起了一定的討論。其簡單的安裝和使用方式使得它成為一個吸引人的選擇。forks/stars 比率為 7.1%，顯示出有相當比例的使用者在實際修改和使用這個工具。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成高品質圖表並保持品牌一致性的設計師和開發者。
+**目標受眾**：需要快速生成品牌一致圖表的設計師和開發者。
 
 > [!example] 使用場景
-> - 設計師用它來快速生成符合品牌風格的流程圖，因為這樣可以節省大量的設計時間，避免使用 Figma 進行繁瑣的設計過程。
-> - 開發者用它來在技術文檔中插入高品質的架構圖，因為這樣可以保持文檔的專業性和一致性，並且不需要額外的設計工具。
-> - 產品經理用它來展示產品功能流程，因為這樣可以快速獲得視覺化的結果，便於與團隊溝通和討論。
+> - 設計師用它來快速生成符合品牌風格的圖表，因為它能自動提取網站的顏色和字體，節省了手動設計的時間。
+> - 開發者用它來在技術文件中插入高品質的架構圖，因為這樣可以避免使用低質量的圖表，提升文件的專業度。
+> - 產品經理用它來展示專案進度的流程圖，因為它提供了多種圖表類型，能夠清晰地表達複雜的資訊。
 
 ## 架構分析
 
-這個專案採用簡單的 HTML 和 SVG 結構，避免了複雜的依賴關係。每種圖表類型都有獨立的參考文件，根據用戶需求動態加載，這樣的設計使得系統在性能上非常輕量。這種架構模式的好處在於能夠快速擴展新的圖表類型，而不會影響現有功能。由於不依賴 JavaScript，這個工具在各種環境中都能保持穩定性，適合需要快速生成圖表的情境。整體來說，這個架構設計使得使用者能夠輕鬆上手，並且能夠在短時間內獲得所需的圖表。
+這個專案採用模組化設計，將不同類型的圖表和參考資料分開存放，這樣可以根據需求動態加載。使用者只需安裝一次插件，然後可以根據需求生成不同類型的圖表。這種設計使得工具能夠保持輕量且快速，因為只有在需要時才會加載相關的參考資料。選擇這種架構的代價是需要使用者了解如何使用命令行進行安裝和配置，但這樣的靈活性使得工具能夠適應不同的使用場景。整體來看，這種設計方式有助於未來的擴展，因為新增的圖表類型只需添加相應的參考文件，而不會影響到現有的功能。
 
 ## 技術深入分析
 
-這個專案的核心技術在於使用 HTML 和 SVG 來生成圖表，這使得它在性能上非常輕量且無需依賴 JavaScript。每種圖表類型都有獨立的參考文件，這樣的設計模式使得系統能夠根據用戶的需求動態加載所需的資源，從而提高了效率。效能方面，這個工具能夠快速生成圖表，並且在不需要額外的設置或建置步驟的情況下，直接在瀏覽器中展示。設計上，這個專案避免了傳統圖表工具的模板化問題，提供了更高的自定義能力，讓使用者能夠根據自身品牌的需求進行調整。技術風險方面，由於依賴於網站的設計來提取顏色和字體，這可能在某些情況下導致不準確的結果。此外，這個工具的整合性也相當高，能夠輕鬆融入現有的工作流程中，特別是對於已經在使用 Claude Code 的團隊來說，學習成本相對較低。
+這個專案的核心技術在於使用 HTML 和 SVG 來生成圖表，這使得生成的圖表可以直接在瀏覽器中查看，而不需要任何額外的 JavaScript 或外部資源。這樣的設計不僅提高了性能，還簡化了使用流程。每種圖表類型都有其獨立的參考文件，這樣可以根據需求動態加載，保持工具的輕量性。這種模組化的設計方式使得未來的擴展變得簡單，只需添加新的參考文件即可。
+
+選擇 HTML 和 SVG 的好處在於它們的普遍性和兼容性，幾乎所有現代瀏覽器都能夠支持。這樣的選擇也降低了對外部依賴的需求，增加了使用的靈活性。技術風險方面，由於目前社群活躍度不高，未來的支持和更新可能會受到影響，這需要使用者在選擇時考慮。整合方面，這個工具可以輕鬆地與現有的工作流結合，尤其是對於已經在使用 Claude Code 的團隊來說，整合的摩擦點相對較少。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含範例，安裝過程順暢，沒有明顯的坑。提供了良好的入門指南，讓使用者能夠快速上手。文件目前僅提供英文版本。
+> README 文件清晰，提供了詳細的安裝和使用說明。安裝過程相對順暢，但需要使用者熟悉命令行操作。文件中包含了快速入門指南，對於新手來說，花 30 分鐘能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速生成符合品牌風格的圖表，節省設計時間。
-> - 無需外部依賴，使用輕量的 HTML 和 SVG。
-> - 提供多樣化的圖表類型，滿足不同需求。
+> - 快速生成符合品牌的圖表，節省設計時間。
+> - 無需依賴外部工具，直接在瀏覽器中查看。
+> - 提供多種圖表類型，滿足不同需求。
 
 > [!danger] 缺點
-> - 目前僅支持 14 種圖表類型，未來可能需要擴展。
-> - 需要在 Claude Code 環境中運行，無法獨立使用。
-> - 自動提取顏色和字體的準確性可能會受到網站設計影響。
+> - 目前僅支援 HTML 和 SVG，無法生成其他格式的圖表。
+> - 社群活躍度不高，可能影響未來的支持。
+> - 插件更新後可能會導致自定義樣式丟失。
 
 > [!warning] 注意事項
-> - 目前僅支持 14 種圖表類型，未來可能會擴展。
-> - 需要在 Claude Code 環境中運行，無法獨立使用。
-> - 自動提取顏色和字體的準確性取決於網站的設計。
+> - 目前僅支援 HTML 和 SVG，無法生成其他格式的圖表。
+> - 社群活躍度不高，只有一個開放的問題，可能影響未來的支持。
+> - 插件更新後可能會導致自定義樣式丟失，需謹慎選擇安裝方式。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的圖表生成功能，但專注於更技術性的應用，適合需要更高自定義的開發者。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於生成代碼相關的圖表，適合開發者使用，但不如本專案在品牌一致性上有優勢。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的圖表生成，但主要聚焦於更複雜的數據視覺化，適合需要深入分析的使用者。 |
+| [ahmadawais/chartli](https://github.com/ahmadawais/chartli) | 專注於生成各種圖表的 CLI 工具，適合需要在命令行中快速生成圖表的開發者。 |
 
 ## 替代方案決策
 
@@ -195,47 +207,45 @@ open ~/.claude/skills/diagram-design/assets/index.html
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Mermaid | 使用 Markdown 語法生成圖表，適合需要快速編寫文檔的開發者，但在品牌一致性上不如本專案。 | 如果你的團隊已經在使用 Markdown 並需要快速生成圖表，則 Mermaid 會是更好的選擇。 | medium - 需要重新學習語法和整合方式。 |
-| Figma | 提供強大的設計工具和協作功能，但需要較長的設計時間，且不專注於快速生成圖表。 | 如果你的團隊需要高自由度的設計和協作，Figma 會是更合適的選擇。 | high - 需要重新設計流程和學習工具。 |
+| Mermaid | 使用 Markdown 語法生成圖表，適合需要快速編寫文檔的使用者，但生成的圖表質量較低。 | 如果你的團隊已經在使用 Markdown 並需要快速生成圖表，Mermaid 是個不錯的選擇。 | low，因為 Mermaid 的語法相對簡單，容易上手。 |
+| draw.io | 提供圖形化界面進行圖表設計，適合需要高度自定義的使用者，但學習曲線較陡。 | 如果你的團隊需要更高的自定義能力和圖形化操作，draw.io 是更好的選擇。 | medium，因為需要重新學習工具的操作方式。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **diagram-design** | **Mermaid** | **Figma** |
+> | 維度 | **diagram-design** | **Mermaid** | **draw.io** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Markdown 語法生成圖表，適合需要快速編寫文檔的開發者，但在品牌一致性上不如本專案。 | 提供強大的設計工具和協作功能，但需要較長的設計時間，且不專注於快速生成圖表。 |
-> | 遷移成本 | - | medium - 需要重新學習語法和整合方式。 | high - 需要重新設計流程和學習工具。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Markdown 並需要快速生成圖表 | 如果你的團隊需要高自由度的設計和協作，Figma 會是更合適 |
+> | 技術路線 | 本專案 | 使用 Markdown 語法生成圖表，適合需要快速編寫文檔的使用者，但生成的圖表質量較低。 | 提供圖形化界面進行圖表設計，適合需要高度自定義的使用者，但學習曲線較陡。 |
+> | 遷移成本 | - | low，因為 Mermaid 的語法相對簡單，容易上手。 | medium，因為需要重新學習工具的操作方式。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Markdown 並需要快速生成圖表 | 如果你的團隊需要更高的自定義能力和圖形化操作，draw.io |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人試用和小型專案，但不建議用在生產環境的核心路徑上。
+> 適合個人或小型團隊的試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 自動提取顏色和字體的準確性可能不高，特別是對於設計不佳的網站。
-  - 解法：手動編輯 style-guide.md 以確保準確性。
-- **[HIGH]** 在首次使用時，若未自定義 style-guide.md，將無法生成圖表。
-  - 解法：在首次使用前，確保已完成 onboarding 流程。
-- [MEDIUM] 某些瀏覽器可能對 SVG 的支持不佳，導致顯示問題。
-  - 解法：使用最新版本的瀏覽器以獲得最佳效果。
+- **[HIGH]** 插件更新後自定義樣式可能丟失
+  - 解法：在更新前備份 style-guide.md 文件
+- [MEDIUM] 首次使用時需手動配置樣式指南
+  - 解法：遵循 README 中的 onboarding 流程進行配置
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型設計團隊需要快速生成圖表 | 非常適合 | 提供快速且符合品牌的圖表生成解決方案，節省設計時間。 |
-| 大型企業需要高品質的視覺化工具 | 適合 | 雖然功能較專一，但能夠保持品牌一致性。 |
-| 個人開發者在技術文檔中插入圖表 | 普通 | 雖然能快速生成圖表，但可能不夠靈活以滿足所有需求。 |
-| 需要高自由度設計的團隊 | 不適合 | 本專案的自定義能力不如 Figma 等設計工具。 |
+| 5 人以下的新創團隊需要快速生成報告用圖表 | 非常適合 | 能夠快速生成符合品牌的高品質圖表，節省時間。 |
+| 大型企業需要多種圖表類型進行內部報告 | 普通 | 雖然提供多種圖表類型，但可能不夠靈活以滿足所有需求。 |
+| 設計師需要高品質的圖表來提升作品集 | 非常適合 | 生成的圖表質量高，符合設計需求。 |
+| 需要生成複雜數據視覺化的數據分析團隊 | 不適合 | 目前僅支援基本的圖表類型，無法處理複雜的數據視覺化需求。 |
 
 ## 採用成本分析
 
@@ -244,15 +254,15 @@ open ~/.claude/skills/diagram-design/assets/index.html
 | 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到快速生成高品質圖表的效果，值得採用。
+> 花 2 小時學習，1 小時整合，得到快速生成高品質圖表的效果，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具不需要高權限，且不會存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：該工具不需要高權限，僅需訪問網站以提取顏色和字體，不存取敏感資料。
 
 ## 健康度儀表板
 
@@ -317,8 +327,9 @@ open ~/.claude/skills/diagram-design/assets/index.html
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 108 |
-| Open Issues | 0 |
+| Forks | 127 |
+| Open Issues | 1 |
+| Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-04-22 |
 | 建立日期 | 2026-04-16 |
 | Repo 大小 | 2.6 MB |
@@ -334,8 +345,7 @@ open ~/.claude/skills/diagram-design/assets/index.html
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有合併請求和問題回應。
-**連結**：[文件](https://github.com/cathrynlavery/diagram-design)
+**社群活躍度**：社群活躍度不高，目前只有一個開放的問題。
 
 ## 開發動態
 
@@ -551,17 +561,17 @@ open ~/.claude/skills/diagram-design/assets/index.html
 
 相關概念：[[資料視覺化]] · [[自動化]] · [[CLI/TUI]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[jxnxts--mcp-brasil|jxnxts/mcp-brasil]] · [[lewislulu--html-ppt-skill|lewislulu/html-ppt-skill]] · [[steipete--discrawl|steipete/discrawl]] · [[viperrcrypto--Siftly|viperrcrypto/Siftly]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[jxnxts--mcp-brasil|jxnxts/mcp-brasil]] · [[lewislulu--html-ppt-skill|lewislulu/html-ppt-skill]] · [[steipete--discrawl|steipete/discrawl]] · [[viperrcrypto--Siftly|viperrcrypto/Siftly]]
 
 [GitHub](https://github.com/cathrynlavery/diagram-design)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：圖表工具）
+> [!note]- 直接競品（同子分類：圖表生成）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "圖表工具" AND file.name != "cathrynlavery--diagram-design"
+> WHERE subcategory = "圖表生成" AND file.name != "cathrynlavery--diagram-design"
 > SORT stars DESC
 > ```
 

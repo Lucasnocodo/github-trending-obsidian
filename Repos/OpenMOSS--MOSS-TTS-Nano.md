@@ -7,10 +7,10 @@ language: Python
 license: Apache-2.0
 description: "MOSS-TTS-Nano is an open-source multilingual tiny speech generation model from MOSI.AI and the OpenMOSS team. With only 0.1B parameters, it is designed for realtime speech generation, can run directly on CPU without a GPU, and keeps the deployment stack simple enough for local demos, web serving, and lightweight product integration."
 homepage: "https://openmoss.github.io/MOSS-TTS-Nano-Demo/"
-stars: 2003
-stars_per_day: 167
-forks: 267
-open_issues: 32
+stars: 2081
+stars_per_day: 160
+forks: 279
+open_issues: 31
 created: 2026-04-10
 pushed_at: 2026-04-17
 first_seen: 2026-04-15
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-15
-use_case: "提供即時語音生成的多語言小型語音合成模型，適合在無 GPU 環境下運行。"
+use_case: "提供即時語音生成的輕量級多語言模型，無需 GPU 即可運行。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 3
 next_review: "2026-04-20"
 contributor_count: 2
 engagement: "medium"
-issue_close_rate: 11
+issue_close_rate: 14
 repo_size_kb: 55925
 readme_length: 9980
 bus_factor: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-15"
-star_history: "2026-04-15:753,2026-04-15:760,2026-04-16:1028,2026-04-16:1033,2026-04-17:1239,2026-04-17:1243,2026-04-18:1369,2026-04-19:1489,2026-04-20:1640,2026-04-21:1791,2026-04-22:1909,2026-04-23:2003"
+star_history: "2026-04-15:753,2026-04-15:760,2026-04-16:1028,2026-04-16:1033,2026-04-17:1239,2026-04-17:1243,2026-04-18:1369,2026-04-19:1489,2026-04-20:1640,2026-04-21:1791,2026-04-22:1909,2026-04-23:2003,2026-04-24:2081"
 tags:
   - github
   - "category/ai_ml"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "MOSS-TTS-Nano"
   - "OpenMOSS/MOSS-TTS-Nano"
-  - "提供即時語音生成的多語言小型語音合成模型，適合在無 GPU 環境下運行。"
+  - "提供即時語音生成的輕量級多語言模型，無需 GPU 即可運行。"
 ---
 
 # MOSS-TTS-Nano
 
-**2.0k** stars · **167** stars/天 · 建立 12 天前 · Python · Apache-2.0
+**2.1k** stars · **160** stars/天 · 建立 13 天前 · Python · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/OpenMOSS--MOSS-TTS-Nano");
@@ -79,13 +79,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `audio-tokenizer` `chinese` `english` `multi-modality` `multilingual` `realtime` `streaming-audio` `tts` `voice-clone`
 
 > [!summary] 一句話摘要
-> 提供即時語音生成的多語言小型語音合成模型，適合在無 GPU 環境下運行。
+> 提供即時語音生成的輕量級多語言模型，無需 GPU 即可運行。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (167 stars/day)
-> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** 2 人 · **參與度** Medium
-> **適合** 需要在無 GPU 環境下實現即時語音合成的開發者和研究人員。
-> **一句話重點** MOSS-TTS-Nano 的設計讓即時語音生成變得可行，特別是在資源有限的環境中。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (160 stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 6 天前) · **貢獻者** 2 人 · **參與度** Medium
+> **適合** 需要在低資源環境中進行語音生成的開發者和研究人員。
+> **一句話重點** 這個專案的設計理念在於提供一個輕量級的語音生成解決方案，特別適合資源有限的環境。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,27 +108,28 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~4h · **綁定風險** low
-> **結論** 花 4 小時學習，2 小時整合，得到即時語音生成的能力，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** low
+> **結論** 花 3 小時學習，2 小時整合，得到即時語音生成的能力，值得一試。
 
 > [!abstract] 核心創新
-> MOSS-TTS-Nano 是一個專為即時語音生成設計的多語言小型模型，能在無 GPU 環境下運行。
+> MOSS-TTS-Nano 是一個專為即時語音生成設計的輕量級模型，能在無 GPU 的情況下運行。
 
 ## 專案簡介
 
-MOSS-TTS-Nano 是一個開源的多語言小型語音生成模型，專為即時語音生成而設計，僅需 0.1B 參數，能在無 GPU 的 CPU 環境下運行。用戶只需透過簡單的命令如 `python app.py` 啟動本地 FastAPI 演示，並可在瀏覽器中訪問。該模型使用純自回歸的音頻標記器和 LLM 管道，確保低延遲和快速的首音生成，並能處理長文本輸入。技術上，MOSS-TTS-Nano 使用了 CNN-free 的 Cat 架構，這使得它在保持高音質的同時，減少了推理成本。
+MOSS-TTS-Nano 是一個開源的多語言語音生成模型，僅有 0.1B 參數，專為即時語音生成設計。用戶可以透過簡單的指令 `python app.py` 啟動本地 FastAPI 演示，並在瀏覽器中測試生成的語音。該模型支持多種語言，包括中文和英文，並且能在無 GPU 的情況下直接在 CPU 上運行，這使得它在資源有限的環境中也能實現低延遲的語音生成。MOSS-TTS-Nano 使用了純自回歸的音頻標記器和 LLM 流程，這樣的設計選擇使得模型在保持小型化的同時，仍能提供足夠的語音質量。這個工具的賣點在於其簡單的本地部署，適合用於快速原型開發和輕量級產品集成。
 
-與其他語音合成工具相比，這個模型的優勢在於其小巧的體積和簡單的部署流程，特別適合需要快速原型或輕量級集成的應用場景。相對於如 Google TTS 或 Azure TTS，MOSS-TTS-Nano 的 CPU 友好性和即時生成能力使其在資源有限的環境中表現出色。使用者在實際操作中可能會遇到如 `pynini` 安裝問題，這是因為其需要特定的 wheel 檔案，解決方法是先安裝 `pynini` 再安裝其他依賴。這個專案目前處於活躍開發中，並且已經有多個功能更新，未來可能會進一步增強其語音合成質量和支持的語言範圍。
+它的架構基於音頻標記器和 LLM，並支援流式推理，能夠快速生成語音。與其他大型語音生成模型相比，MOSS-TTS-Nano 的小型化設計使其更易於部署，特別是在資源受限的環境中。使用者可以輕鬆地透過 `python infer.py` 指令進行語音克隆，並生成高品質的語音輸出。該模型的主要特點包括低延遲、長文本支持和簡單的開源部署方式。社群活躍度中等，開發者可期待未來的功能擴展和改進。
 
-**技術棧**：`Python 3.12` · `FastAPI` · `Torch 2.7.0` · `Transformers 4.57.1`
+**技術棧**：`FastAPI` · `PyTorch 2.7.0` · `Transformers 4.57.1`
 
 ## 重點功能
 
-- 小型模型 — 僅 0.1B 參數，適合資源有限的環境。
-- 即時生成 — 支持低延遲的語音生成，快速響應用戶請求。
-- 多語言支持 — 能生成中文、英文等多種語言的語音。
-- 純自回歸架構 — 基於音頻標記器和 LLM 的管道設計，確保生成質量。
-- 本地部署 — 直接使用 `python app.py` 啟動本地演示，無需複雜配置。
+- 小型模型尺寸 — 僅有 0.1B 參數，適合資源有限的環境。
+- 支持多語言 — 包括中文、英文等 20 種語言。
+- 流式推理 — 提供低延遲的即時語音生成。
+- CPU 友好 — 可以在 4 核 CPU 上運行，無需 GPU。
+- 長文本支持 — 自動分塊生成語音，適合長文本輸入。
+- 簡單的開源部署 — 直接使用 `python app.py` 啟動本地服務。
 
 ## 快速開始
 
@@ -138,7 +139,7 @@ conda create -n moss-tts-nano python=3.12 -y && conda activate moss-tts-nano
 ```
 2. 克隆專案並安裝依賴
 ```bash
-git clone https://github.com/OpenMOSS/MOSS-TTS-Nano.git && cd MOSS-TTS-Nano && pip install -r requirements.txt
+git clone https://github.com/OpenMOSS/MOSS-TTS-Nano.git && cd MOSS-TTS-Nano && pip install -r requirements.txt && pip install -e .
 ```
 3. 啟動本地演示
 ```bash
@@ -149,62 +150,64 @@ python app.py
 
 ```python
 {
-  "前置條件": "安裝完成後，啟動本地演示",
-  "指令": "python app.py",
-  "預期輸出": "啟動本地 FastAPI 服務，並在瀏覽器中訪問 http://127.0.0.1:18083"
+  "前置條件": "確保已安裝所有依賴並啟動服務",
+  "指令": "python infer.py --prompt-audio-path assets/audio/zh_1.wav --text \"欢迎关注模思智能、上海创智学院与复旦大学自然语言处理实验室。\"",
+  "預期輸出": "生成的音頻將寫入 `generated_audio/infer_output.wav`。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 12 天內累積 2003 stars（167/天），forks 267（13.3%），顯示出強烈的社群興趣。主要貢獻者來自 MOSI.AI 和 OpenMOSS 團隊，這些團隊在語音合成領域有豐富的經驗。MOSS-TTS-Nano 解決了在無 GPU 環境下實現即時語音生成的需求，之前的方案如 Google TTS 需要依賴雲端服務，無法在本地環境中輕鬆運行。近期的推廣活動和社群討論也促進了這個專案的曝光率。這個工具的出現正好契合了對輕量級、即時語音合成的需求，特別是在移動設備和邊緣計算的應用場景中。forks/stars 比率為 13.3%，顯示出相對較高的實際修改和使用興趣。
+> 建立 13 天就累積 2081 stars（160/天），forks 279（13.4%），顯示出良好的社群反響。作者來自 MOSI.AI 和 OpenMOSS 團隊，專注於語音生成技術，之前的專案也有良好表現。這個工具解決了即時語音生成的需求，特別是在資源有限的情況下，提供了一個簡單的解決方案。近期的更新和 ONNX 支持引起了關注，讓使用者能在不依賴 GPU 的情況下使用該模型。這些因素共同促進了其快速增長。
 
 ## 適合誰使用
 
-**目標受眾**：需要在無 GPU 環境下實現即時語音合成的開發者和研究人員。
+**目標受眾**：需要在低資源環境中進行語音生成的開發者和研究人員。
 
 > [!example] 使用場景
-> - 語音開發者用它來在本地環境中快速生成多語言語音，因為它的 CPU 友好性讓不具備 GPU 的開發者也能輕鬆使用。
-> - 教育工作者用它來創建語音教材，因為其支持多種語言且易於部署，能在課堂上即時展示語音合成效果。
-> - 獨立開發者用它來在輕量級應用中集成語音功能，因為其小巧的模型和簡單的 API 使得集成過程快速且高效。
+> - 語音開發者用它來快速生成多語言的語音樣本，因為它的即時生成能力和小型化設計使得原型開發變得更簡單。
+> - 教育工作者用它來為線上課程生成語音內容，因為它支持多種語言且能在 CPU 上運行，降低了硬體需求。
+> - 產品經理用它來測試語音交互功能，因為其簡單的本地部署和快速的生成速度能夠加速產品迭代。
 
 ## 架構分析
 
-MOSS-TTS-Nano 採用純自回歸的音頻標記器和 LLM 管道，這種設計使得模型能夠在 CPU 上高效運行。資料流從用戶輸入的文本經過音頻標記器轉換為音頻信號，並最終生成可播放的音頻文件。選擇這種架構的原因在於其能夠在保持音質的同時，降低推理成本。這種設計的代價是對長文本的處理需要額外的自動分塊邏輯。隨著使用者需求的增長，這種架構的擴展性可能會受到挑戰，特別是在處理超長文本或多語言輸入時。
+MOSS-TTS-Nano 採用純自回歸的音頻標記器和 LLM 流程，這樣的設計使得模型能夠在 CPU 上高效運行。其架構基於 Cat（Causal Audio Tokenizer with Transformer），這是一種完全由因果 Transformer 塊組成的音頻標記器。這樣的設計選擇使得模型在保持小型化的同時，仍能提供足夠的語音質量。
+
+選擇使用 ONNX 版本進一步減少了對 PyTorch 的依賴，提升了處理效率。這種設計使得模型能夠在各種環境中靈活部署，但可能會犧牲某些高級功能的支持。整體上，這種架構適合需要快速迭代和輕量級解決方案的開發者。
 
 ## 技術深入分析
 
-MOSS-TTS-Nano 的核心技術機制是基於純自回歸的音頻標記器和 LLM 管道，這使得它能夠在低延遲的情況下生成高質量的語音。該模型能夠處理的資料量相對較小，適合在普通的 CPU 上運行，這對於需要即時反應的應用場景尤為重要。選擇 Python 和 FastAPI 作為技術棧的原因在於其生態系統的豐富性和易用性，這使得開發者能夠快速上手並進行部署。依賴樹的複雜度相對較低，主要依賴於 PyTorch 和 Transformers，這降低了維護成本。隨著使用者需求的增加，對於長文本的支持可能會成為一個瓶頸，特別是在需要高效能的情況下。這個模型在安全性上也相對較低，因為它不需要高權限的操作，適合在 CI/CD pipeline 中使用。整合到現有的技術棧中相對容易，特別是與 FastAPI 和其他 Python 工具鏈的相容性良好。
+MOSS-TTS-Nano 的核心技術機制是基於純自回歸的音頻標記器和 LLM 流程，這使得模型能夠在 CPU 上高效運行。這種設計選擇使得模型在保持小型化的同時，仍能提供足夠的語音質量。該模型的效能特性表現出色，能在 4 核 CPU 上流暢運行，並且支持流式推理，能夠快速生成語音。選擇使用 FastAPI 作為後端框架，這使得模型的本地部署變得簡單且高效。這樣的選擇帶來了良好的開發體驗，但可能在高並發情況下出現性能瓶頸。技術風險方面，隨著使用者數量的增加，可能會出現資源競爭的問題，影響語音生成的延遲。整合方面，該模型能夠輕鬆與現有的 Python 生態系統整合，並且支持多種部署方式，這使得開發者能夠快速上手並進行實驗。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和範例。安裝過程中可能會遇到依賴問題，但整體流程順暢。文件目前僅提供英文和簡體中文，對於非中文用戶可能會有些困難。整體來說，花 30 分鐘可以順利跑起來。
+> README 文件清晰且提供了安裝和使用的詳細步驟，對於新手來說非常友好。安裝過程中可能會遇到某些依賴的問題，但社群已經提供了解決方案。整體上，花 30 分鐘能夠成功運行起來並測試基本功能。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 低資源需求，能在普通 CPU 上運行，適合邊緣計算。
-> - 簡單的部署流程，易於本地測試和集成。
-> - 支持多種語言，擴展性強，適合多語言應用。
+> - 即時語音生成，適合快速原型開發。
+> - 小型化設計，能在低資源環境中運行。
+> - 支持多語言，適合國際化應用。
 
 > [!danger] 缺點
-> - 音質可能不及大型模型，對於高保真需求的應用可能不夠理想。
-> - 安裝過程中可能遇到依賴問題，特別是對於 Windows 用戶。
-> - 對於長文本的處理需要額外的邏輯，增加了使用複雜性。
+> - 語音質量可能不及大型模型。
+> - 某些依賴在特定平台上安裝困難。
+> - 對於長文本生成，處理時間可能較長。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.12 及以上版本
-> - 需要安裝特定版本的 pynini，否則可能會遇到安裝問題
-> - 對於長文本生成，可能需要進行自動分塊處理
+> - 需要 Python 3.12 以上版本。
+> - 某些依賴在 Windows 上安裝可能會遇到問題，需手動處理。
+> - 對於長文本生成，可能需要額外的處理時間。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [GoogleCloudPlatform/text-to-speech](https://github.com/GoogleCloudPlatform/text-to-speech) | Google 的 TTS 服務需要雲端支持，無法在本地輕鬆運行，而 MOSS-TTS-Nano 可以在 CPU 環境下運行。 |
-| [Microsoft/cognitive-services-speech-sdk](https://github.com/Microsoft/cognitive-services-speech-sdk) | 微軟的語音 SDK 需要較高的資源配置，MOSS-TTS-Nano 則針對輕量級應用進行了優化。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 該工具提供更大的模型和更多的語言選擇，但需要 GPU 支持，適合高性能需求的應用。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | NemoClaw 提供更高的語音質量和多樣性，但其設置和資源需求更高，適合大型專案。 |
 
 ## 替代方案決策
 
@@ -212,16 +215,16 @@ MOSS-TTS-Nano 的核心技術機制是基於純自回歸的音頻標記器和 LL
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [GoogleCloudPlatform/text-to-speech](https://github.com/GoogleCloudPlatform/text-to-speech) | Google 的 TTS 服務依賴於雲端計算，無法在本地運行，這使得 MOSS-TTS-Nano 在本地部署上有明顯優勢。 | 如果你的應用需要高保真的語音合成，並且不介意依賴雲端服務，則 Google 的解決方案可能更合適。 | medium，因為需要重構應用以適應雲端 API。 |
-| [Microsoft/cognitive-services-speech-sdk](https://github.com/Microsoft/cognitive-services-speech-sdk) | 微軟的語音 SDK 提供了多種語音合成功能，但需要較高的資源配置，而 MOSS-TTS-Nano 則針對輕量級應用進行了優化。 | 如果你的團隊已經在使用微軟生態系統，並需要更強大的語音合成能力，則可以考慮這個選擇。 | high，因為需要重新設計整個語音合成流程。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | NemoClaw 提供更高的語音質量和多樣性，但需要 GPU 支持，適合高性能需求的應用。 | 如果你的應用需要高品質的語音合成，且有足夠的硬體資源。 | medium，因為需要重新設計部署架構以支持 GPU。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 該工具提供更大的模型和更多的語言選擇，但需要 GPU 支持，適合高性能需求的應用。 | 如果你的團隊已經在使用大型語音模型，並且需要更多的語言支持。 | high，因為需要重構現有的語音生成流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **MOSS-TTS-Nano** | **text-to-speech** | **cognitive-services-speech-sdk** |
+> | 維度 | **MOSS-TTS-Nano** | **NemoClaw** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Google 的 TTS 服務依賴於雲端計算，無法在本地運行，這使得 MOSS-TTS-Nano 在本地部署上有明顯優勢。 | 微軟的語音 SDK 提供了多種語音合成功能，但需要較高的資源配置，而 MOSS-TTS-Nano 則針對輕量級應用進行了優化。 |
-> | 遷移成本 | - | medium，因為需要重構應用以適應雲端 API。 | high，因為需要重新設計整個語音合成流程。 |
-> | 適用場景 | 主要場景 | 如果你的應用需要高保真的語音合成，並且不介意依賴雲端服務，則 | 如果你的團隊已經在使用微軟生態系統，並需要更強大的語音合成能 |
+> | 技術路線 | 本專案 | NemoClaw 提供更高的語音質量和多樣性，但需要 GPU 支持，適合高性能需求的應用。 | 該工具提供更大的模型和更多的語言選擇，但需要 GPU 支持，適合高性能需求的應用。 |
+> | 遷移成本 | - | medium，因為需要重新設計部署架構以支持 GPU。 | high，因為需要重構現有的語音生成流程。 |
+> | 適用場景 | 主要場景 | 如果你的應用需要高品質的語音合成，且有足夠的硬體資源。 | 如果你的團隊已經在使用大型語音模型，並且需要更多的語言支持。 |
 
 ## 成熟度評估
 
@@ -232,44 +235,50 @@ MOSS-TTS-Nano 的核心技術機制是基於純自回歸的音頻標記器和 LL
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人項目試用，但不建議用於生產環境的核心功能。
+> 適合個人項目和小型應用的試用，但不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** Windows 上安裝 pynini 可能會遇到問題，需要特定的 wheel 檔案
-  - 解法：先安裝 pynini，再安裝其他依賴
-- [MEDIUM] 長文本生成可能需要額外的分塊處理
-  - 解法：使用 `--chunk` 參數來處理長文本
-- [MEDIUM] 首次啟動時可能需要較長時間下載模型資源
-  - 解法：確保 models/ 目錄下有必要的權重文件
+- **[HIGH]** 在 Windows 上安裝 pynini 可能會遇到問題，導致安裝失敗。
+  - 解法：手動安裝 pynini，然後再安裝其他依賴。
+- [MEDIUM] 長文本生成時可能需要額外的處理時間。
+  - 解法：將長文本分割為多個短文本進行處理。
+- [MEDIUM] 首次啟動時可能需要額外時間下載資源。
+  - 解法：確保模型資源已經下載完成。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型創業團隊的語音應用 | 非常適合 | 其小型模型和低資源需求非常符合小型團隊的需求。 |
-| 需要高保真語音合成的商業應用 | 不適合 | 音質可能不及大型商業解決方案。 |
-| 教育機構的語音教材製作 | 適合 | 支持多語言且易於部署，適合教育用途。 |
-| 大型企業的語音客服系統 | 普通 | 雖然能運行，但對於高負載需求可能不夠理想。 |
+| 小型創業團隊開發語音助手 | 非常適合 | 小型化設計和即時生成能力使其適合快速原型開發。 |
+| 教育機構需要多語言語音生成 | 適合 | 支持多種語言且能在 CPU 上運行，降低了硬體需求。 |
+| 大型企業需要高品質語音合成 | 不適合 | 語音質量可能不及大型模型，適合高性能需求的應用。 |
+| 個人開發者進行語音生成實驗 | 非常適合 | 簡單的本地部署和快速生成速度能夠加速實驗進行。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~4 小時 |
+| 學習時間 | ~3 小時 |
 | 整合時間 | ~2 小時 |
-| 維護負擔 | medium |
+| 維護負擔 | low |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 4 小時學習，2 小時整合，得到即時語音生成的能力，值得一試。
+> 花 3 小時學習，2 小時整合，得到即時語音生成的能力，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限操作，且不會存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：該工具不需要高權限運行，且不存取敏感資料。依賴的庫中未發現已知的安全漏洞，適合在 CI/CD pipeline 中使用。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+MOSS-TTS-Nano 最常與 FastAPI 和 PyTorch 搭配使用，適合在開發和測試階段進行語音生成。在一個用 FastAPI 部署的應用中，可以通過 `python app.py` 啟動服務，並在瀏覽器中測試生成的語音。該工具支持與 GitHub Actions 整合，方便在 CI/CD 流程中進行測試和部署。整合時，最常見的問題是依賴安裝的兼容性，特別是在不同平台上運行時。
 
 ## 健康度儀表板
 
@@ -334,9 +343,9 @@ MOSS-TTS-Nano 的核心技術機制是基於純自回歸的音頻標記器和 LL
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 267 |
-| Open Issues | 32 |
-| Issue 解決率 | 11% (4 closed) |
+| Forks | 279 |
+| Open Issues | 31 |
+| Issue 解決率 | 14% (5 closed) |
 | 最後推送 | 2026-04-17 |
 | 建立日期 | 2026-04-10 |
 | 官方網站 | [Link](https://openmoss.github.io/MOSS-TTS-Nano-Demo/) |
@@ -363,7 +372,7 @@ MOSS-TTS-Nano 的核心技術機制是基於純自回歸的音頻標記器和 LL
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和問題回應。
+**社群活躍度**：社群活躍度中等，有定期更新和回應。
 **連結**：[文件](https://openmoss.github.io/MOSS-TTS-Nano-Demo/)
 
 ## 開發動態
@@ -376,10 +385,10 @@ MOSS-TTS-Nano 的核心技術機制是基於純自回歸的音頻標記器和 LL
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#6](https://github.com/OpenMOSS/MOSS-TTS-Nano/issues/6) | It run on windows but pynini need a "custom" wheel. | 2 | 2 |
-> | [#38](https://github.com/OpenMOSS/MOSS-TTS-Nano/issues/38) | 如何优化单发音人效果 | 0 | 1 |
+> | [#6](https://github.com/OpenMOSS/MOSS-TTS-Nano/issues/6) | It run on windows but pynini need a "custom" wheel. | 2 | 3 |
 > | [#36](https://github.com/OpenMOSS/MOSS-TTS-Nano/issues/36) | 反馈一下体验吧。。 | 0 | 2 |
 > | [#35](https://github.com/OpenMOSS/MOSS-TTS-Nano/issues/35) | 怎么保持参考音频与生成音频的语速一致？ | 0 | 1 |
+> | [#33](https://github.com/OpenMOSS/MOSS-TTS-Nano/issues/33) | WEB UI界面可以加个cpu、gpu选项吗 | 0 | 2 |
 
 ## README 摘錄
 

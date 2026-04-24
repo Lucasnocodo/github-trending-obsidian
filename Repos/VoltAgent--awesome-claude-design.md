@@ -7,8 +7,8 @@ language: N/A
 license: MIT
 description: "Awesome Claude Design: 68 ready-to-use design system inspirations in DESIGN.md format. Drop one in, scaffold a full UI in one shot."
 homepage: ""
-stars: 1412
-stars_per_day: 282
+stars: 1413
+stars_per_day: 283
 forks: 149
 open_issues: 1
 created: 2026-04-18
@@ -17,7 +17,7 @@ first_seen: 2026-04-23
 week: "2026-W17"
 month: "2026-04"
 category: "開發工具"
-subcategory: "設計工具"
+subcategory: "設計系統"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-23
-use_case: "提供 68 種現成的設計系統靈感，讓你輕鬆生成完整 UI。"
+use_case: "提供 68 種即用設計系統靈感，讓你快速生成完整 UI。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-23"
-star_history: "2026-04-23:1213,2026-04-23:1213,2026-04-24:1412"
+star_history: "2026-04-23:1213,2026-04-23:1213,2026-04-24:1412,2026-04-24:1413"
 tags:
   - github
   - "category/開發工具"
@@ -57,12 +57,12 @@ tags:
 aliases:
   - "awesome-claude-design"
   - "VoltAgent/awesome-claude-design"
-  - "提供 68 種現成的設計系統靈感，讓你輕鬆生成完整 UI。"
+  - "提供 68 種即用設計系統靈感，讓你快速生成完整 UI。"
 ---
 
 # awesome-claude-design
 
-**1.2k** stars · **303** stars/天 · 建立 4 天前 · N/A · MIT
+**1.4k** stars · **283** stars/天 · 建立 5 天前 · N/A · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/VoltAgent--awesome-claude-design");
@@ -80,20 +80,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `claude-code` `claude-design` `design-md` `design-system` `figma`
 
 > [!summary] 一句話摘要
-> 提供 68 種現成的設計系統靈感，讓你輕鬆生成完整 UI。
+> 提供 68 種即用設計系統靈感，讓你快速生成完整 UI。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (303 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 4 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要快速生成 UI 設計系統的設計師和開發者。
-> **一句話重點** 這個專案讓設計師和開發者能夠以更高的效率生成 UI，顯著提升了設計流程的自動化程度。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (283 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要快速生成 UI 設計系統的設計師和產品經理。
+> **一句話重點** 這個專案讓設計師能夠快速生成 UI 設計系統，顯著提升了設計效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/VoltAgent--awesome-claude-design");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "設計工具" && p.file.name !== "VoltAgent--awesome-claude-design" && p.status !== "archived")
+>     .where(p => p.subcategory === "設計系統" && p.file.name !== "VoltAgent--awesome-claude-design" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -104,98 +104,96 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 設計工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 設計系統 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，能快速生成設計系統，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學、3 小時整合，得到快速生成設計系統的效果，值得一試。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於通過一個簡單的 `DESIGN.md` 文件，自動生成完整的設計系統和 UI 套件。
+> 將設計規範與實作細節結合，讓 AI 能夠理解並執行設計決策。
 
 ## 專案簡介
 
-這個專案的核心在於提供一個名為 `DESIGN.md` 的設計文件，使用者只需上傳這個文件，Claude Design 就能自動生成完整的設計系統和 UI 套件。具體流程是：使用者選擇一個設計靈感，下載其 `DESIGN.md`，然後將其上傳至 Claude Design，系統會生成包括 `README.md`、CSS 變數、UI 組件和預覽卡片等一系列文件，讓設計與開發無縫對接。這樣的設計方式不僅省去繁瑣的手動設置，還能快速產出生產就緒的設計包。技術上，這個工具依賴於 Claude 的設計系統，能夠持續管理和擴展設計資產，並保持一致性。與傳統的設計工具相比，這個專案更強調自動化和可重複使用性，特別適合需要快速迭代的團隊。
+這個專案提供了一個名為 `DESIGN.md` 的設計文件格式，能夠快速生成完整的 UI 設計系統。使用者只需將 `DESIGN.md` 文件上傳至 Claude Design，系統會自動生成包括顏色、字體、元件和預覽卡片的完整設計包。這樣的設計流程省去了手動設置的繁瑣，讓設計師能夠專注於創意而非技術細節。核心賣點在於一個 markdown 文件就能產出生產就緒的設計包，這對於需要快速原型設計的團隊尤其有用。
 
-與 Figma 等工具相比，Figma 雖然功能強大，但需要手動設置和調整，而 Claude Design 則能在幾分鐘內完成這些工作。使用者在處理多個設計專案時，Claude Design 的效率優勢會更加明顯。這個專案目前仍在初期階段，活躍度高，但開發者需要注意，因為它的功能和穩定性可能會隨著更新而變化。對於小型團隊或個人開發者來說，這是一個值得嘗試的工具，尤其是在需要快速生成 UI 的情況下。使用者應該考慮到，這個工具最適合用於設計初期，而在設計細節上可能還需要進一步的手動調整。
+使用者可以選擇從設計系統靈感開始，或是從原型開始，兩者都能在幾分鐘內生成完整的設計系統。這個工具的設計理念是將設計規範與實作細節結合，讓 AI 能夠理解並執行設計決策。具體來說，Claude Design 會生成 `README.md`、`colors_and_type.css`、UI 套件等文件，這些都是基於 `DESIGN.md` 的內容。這樣的設計不僅提升了效率，還能保持設計的一致性和可重用性。
 
 ## 重點功能
 
-- 一鍵生成設計系統 — 上傳 `DESIGN.md` 文件後，Claude Design 自動生成完整的設計系統和 UI 套件。
-- 包含 CSS 變數和類別 — 生成的 `colors_and_type.css` 包含了所有必要的樣式變數和工具類別。
-- 自動生成預覽卡片 — 提供顏色、字型、間距和組件的預覽，方便使用者檢視設計效果。
-- 支持 Google Fonts 替代 — 當品牌字型為專有時，自動提供 Google Fonts 替代方案。
-- 生成可用的 UI 套件 — 包含 `index.html` 和組件，適用於實際的市場頁面。
+- 一鍵生成設計系統 — 上傳 `DESIGN.md` 文件即可自動生成完整的 UI 套件。
+- 包含 CSS 變數和實用類別 — 自動生成 `colors_and_type.css`，方便進行樣式調整。
+- 提供 Google Fonts 替代 — 當品牌字體為專有時，自動提供可用的替代字體。
+- 生成預覽卡片 — 包含顏色、字體、間距和元件的預覽，方便設計檢查。
+- 生產就緒的 UI 套件 — 包含 `index.html` 和元件，立即可用於實際的行銷頁面。
 
 ## 快速開始
 
-1. 選擇設計靈感並下載 `DESIGN.md`
+1. 創建新的設計系統
 ```bash
-前往設計靈感頁面，選擇並下載相應的 `DESIGN.md`
+前往 claude.ai/design/#org，點擊 'Create new design system'，上傳 `DESIGN.md`。
 ```
-2. 上傳 `DESIGN.md` 至 Claude Design
+2. 從原型開始
 ```bash
-在 Claude Design 中，選擇創建新的設計系統，並上傳 `DESIGN.md`
+在儀表板上創建新原型，將 `DESIGN.md` 附加到聊天中，輸入 'Create a design system from this DESIGN.md'。
 ```
-3. 生成設計系統
+3. 檢查生成的設計包
 ```bash
-等待系統生成完整的設計包，並下載使用。
+在項目的 Design System review 標籤中檢查生成的設計包。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 1213 stars（303/天），forks 128（10.6%），顯示出強烈的社群興趣。這個專案由 necatiozmen 貢獻，解決了設計系統生成的痛點，讓使用者能快速從靈感轉化為可用的 UI。隨著設計自動化需求的增加，這樣的工具自然受到關注。forks/stars 比率在 10% 以上，顯示出許多人在實際修改和使用這個工具，而不僅僅是觀望。
+> 建立 5 天就累積 1413 stars（283/天），forks 149（10.5%），顯示出強烈的社群興趣。專案的主要貢獻者 necatiozmen 可能在設計和 AI 領域有豐富的經驗，這讓專案具備了良好的技術基礎。這個工具解決了設計師在創建 UI 時常遇到的繁瑣流程，特別是需要快速原型的情境。隨著設計系統需求的增加，這個工具的價值愈加凸顯。社群的反應也顯示出對於設計自動化的需求，這可能是促進其快速增長的原因之一。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成 UI 設計系統的設計師和開發者。
+**目標受眾**：需要快速生成 UI 設計系統的設計師和產品經理。
 
 > [!example] 使用場景
-> - UI 設計師用它來快速生成設計系統，因為可以在幾分鐘內從靈感轉化為完整的 UI 套件，節省了大量手動設置的時間。
-> - 前端開發者用它來建立一致的 UI 元件，因為它提供了完整的 CSS 變數和組件，讓開發過程更為高效。
-> - 產品經理用它來快速展示設計概念，因為可以直接生成可用的設計包，便於與團隊溝通和迭代。
+> - UI 設計師用它來快速生成一個新的設計系統，因為只需上傳一個 `DESIGN.md` 文件，就能在幾分鐘內得到完整的 UI 套件。
+> - 產品經理用它來創建原型，因為這樣可以節省大量時間，讓團隊能夠專注於功能開發而非設計細節。
+> - 新創公司用它來建立品牌識別，因為能夠快速獲得一致的設計語言，並且不需要專業的設計背景。
 
 ## 架構分析
 
-這個專案的架構基於 Claude Design 的設計系統，使用者只需提供一個 `DESIGN.md` 文件，系統便能自動生成相關的設計資產。這樣的設計選擇使得使用者能夠快速獲得生產就緒的設計包，降低了設計和開發之間的摩擦。資料流方面，使用者的設計靈感經由 Claude Design 轉化為具體的設計資產，並以結構化的方式呈現。這樣的設計選擇使得使用者能夠在未來的專案中重複使用這些資產，提升了設計的一致性和效率。由於依賴於 Claude 的設計系統，這個專案的擴展性相對較高，但也可能面臨設計細節上的調整需求。
+這個專案的架構設計以 `DESIGN.md` 為核心，將設計規範與實作細節結合。使用者只需提供一個 markdown 文件，Claude Design 會自動生成完整的設計系統，這樣的設計流程不僅提升了效率，還能保持設計的一致性。資料流的每個節點都經過精心設計，從上傳文件到生成設計包的過程中，Claude 能夠理解設計的語言，並生成相應的 CSS 和 HTML 文件。這樣的設計選擇使得整個系統能夠快速響應使用者需求，並且降低了設計過程中的人為錯誤。擴展性方面，未來可以考慮加入更多的設計模板和樣式選擇，以滿足不同使用者的需求。
 
 ## 技術深入分析
 
-這個專案的核心技術在於使用 `DESIGN.md` 文件作為設計系統的基礎，Claude Design 能夠自動解析這個文件並生成相應的設計資產。這種方法不僅提高了設計的效率，還能確保設計的一致性。由於設計系統的生成是自動化的，使用者能夠在短時間內獲得生產就緒的設計包，這對於需要快速迭代的團隊來說是非常有利的。設計選擇上，Claude Design 依賴於其強大的設計系統，這使得它能夠持續擴展和管理設計資產。
-
-儘管如此，這也意味著使用者在面對複雜設計需求時，仍需進行一定的手動調整。這個專案的依賴關係相對簡單，主要依賴於 Claude 的設計系統，而不會造成過多的技術負擔。在安全性方面，因為這個工具主要處理設計文件，風險相對較低。整合到現有的開發流程中，使用者可以輕鬆將生成的設計資產應用於各種前端框架，並且能夠快速適應團隊的工作流。
+這個專案的核心技術機制在於使用 `DESIGN.md` 文件作為設計的源頭，Claude Design 能夠解析這個文件並生成相應的設計系統。這樣的設計選擇使得 AI 能夠理解設計的語言，並生成相應的 CSS 和 HTML 文件。效能上，這個工具能在幾分鐘內生成完整的設計系統，對於需要快速原型的團隊尤其有用。設計取捨方面，選擇使用 markdown 格式的 `DESIGN.md` 使得設計規範更加清晰，但對於非常複雜的設計需求可能會有所限制。技術風險方面，若未來需要擴展功能，可能需要考慮如何處理更複雜的設計規範。整合方面，這個工具可以輕鬆地與現有的設計工具鏈相容，並且不需要額外的學習成本。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含具體的使用範例，安裝過程簡單，無需複雜的配置。文件目前僅提供英文，可能對非英語使用者造成一定障礙。整體而言，花 30 分鐘內能夠順利上手並生成設計系統。
+> README 文件清晰且包含使用範例，安裝過程順暢，沒有明顯的坑。提供了良好的入門指南，讓新手能夠快速上手。文件目前僅提供英文版本，可能對非英文使用者造成一些障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速生成設計系統，節省時間。
-> - 自動化處理，減少手動設置的繁瑣。
-> - 提供一致的設計資產，提升團隊協作效率。
+> - 快速生成完整的 UI 設計系統，節省時間。
+> - 易於使用，無需專業設計背景即可操作。
+> - 保持設計的一致性和可重用性。
 
 > [!danger] 缺點
-> - 對於複雜設計需求可能無法完全自動化。
-> - 生成的設計系統需要根據具體需求進行調整。
-> - 僅支持特定格式的設計文件。
+> - 對於複雜設計需求的支援有限。
+> - 目前僅支援 `DESIGN.md` 格式，無法使用其他格式。
+> - 需要穩定的網路連接來生成設計系統。
 
 > [!warning] 注意事項
-> - 目前僅支持 `DESIGN.md` 格式，其他格式無法使用。
-> - 生成的設計系統可能需要手動調整以符合特定需求。
-> - 對於複雜的設計需求，可能無法完全自動化處理。
+> - 目前僅支援 `DESIGN.md` 格式，其他格式無法使用。
+> - 對於非常複雜的設計需求，可能無法完全滿足所有細節。
+> - 需要穩定的網路連接以便上傳和生成設計系統。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) | 提供設計系統靈感的集合，但不具備自動生成 UI 套件的功能。 |
-| [Figma/Figma](https://github.com/Figma/Figma) | Figma 提供強大的設計工具，但需要手動設置和調整，無法像 Claude Design 一樣自動生成設計系統。 |
+| [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) | 提供設計靈感的集合，但不具備自動生成設計系統的功能。 |
+| [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) | 專注於 AI 助手的設計，但不專注於 UI 系統的生成。 |
 
 ## 替代方案決策
 
@@ -203,16 +201,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Figma | Figma 提供強大的設計工具和協作功能，但需要手動設置和調整，無法自動生成設計系統。 | 如果你的團隊需要更靈活的設計工具和協作功能，Figma 會是更好的選擇。 | medium，因為需要將設計資產從 Figma 轉移到 Claude Design。 |
-| Adobe XD | Adobe XD 提供設計和原型製作功能，但缺乏自動生成設計系統的能力。 | 如果你的團隊已經在使用 Adobe 生態系統，則使用 Adobe XD 會更為方便。 | high，因為需要手動重建設計系統。 |
+| [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) | 提供設計靈感的集合，但不具備自動生成設計系統的功能。 | 如果你需要靈感而不是自動生成設計系統，這個工具更適合。 | low，因為兩者的使用方式相似。 |
+| [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) | 專注於 AI 助手的設計，但不專注於 UI 系統的生成。 | 如果你的需求更偏向於 AI 助手的功能，而非設計系統的生成，這個工具更適合。 | medium，因為功能和使用場景有所不同。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **awesome-claude-design** | **Figma** | **Adobe XD** |
+> | 維度 | **awesome-claude-design** | **awesome-design-md** | **awesome-codex-subagents** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Figma 提供強大的設計工具和協作功能，但需要手動設置和調整，無法自動生成設計系統。 | Adobe XD 提供設計和原型製作功能，但缺乏自動生成設計系統的能力。 |
-> | 遷移成本 | - | medium，因為需要將設計資產從 Figma 轉移到 Claude Design。 | high，因為需要手動重建設計系統。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要更靈活的設計工具和協作功能，Figma 會是 | 如果你的團隊已經在使用 Adobe 生態系統，則使用 Ado |
+> | 技術路線 | 本專案 | 提供設計靈感的集合，但不具備自動生成設計系統的功能。 | 專注於 AI 助手的設計，但不專注於 UI 系統的生成。 |
+> | 遷移成本 | - | low，因為兩者的使用方式相似。 | medium，因為功能和使用場景有所不同。 |
+> | 適用場景 | 主要場景 | 如果你需要靈感而不是自動生成設計系統，這個工具更適合。 | 如果你的需求更偏向於 AI 助手的功能，而非設計系統的生成， |
 
 ## 成熟度評估
 
@@ -223,44 +221,44 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和小型專案，但不建議用於生產環境的核心路徑上。
+> 適合個人試用或小型專案，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 生成的設計系統可能不符合所有需求，需手動調整。
-  - 解法：使用者需在生成後檢查並根據需求進行調整。
-- **[HIGH]** 對於複雜的設計需求，可能無法完全自動化處理。
-  - 解法：考慮使用其他設計工具進行細節調整。
-- **[HIGH]** 僅支持特定格式的設計文件，其他格式無法使用。
-  - 解法：確保使用 `DESIGN.md` 格式進行上傳。
+- **[HIGH]** 目前僅支援 `DESIGN.md` 格式，其他格式無法使用
+  - 解法：確保使用 `DESIGN.md` 格式的文件
+- [MEDIUM] 對於非常複雜的設計需求，可能無法完全滿足所有細節
+  - 解法：考慮將設計拆分為多個簡單的 `DESIGN.md` 文件
+- [MEDIUM] 需要穩定的網路連接以便上傳和生成設計系統
+  - 解法：在網路穩定的環境中使用此工具
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型創業團隊的 UI 設計 | 非常適合 | 能快速生成設計系統，節省時間和資源。 |
-| 大型企業的複雜設計專案 | 不適合 | 對於複雜需求可能無法完全自動化，需手動調整。 |
-| 個人開發者的設計原型 | 非常適合 | 能快速生成原型，便於展示和迭代。 |
-| 需要高自訂化的設計系統 | 普通 | 雖然能生成設計系統，但可能需要額外的手動調整以符合需求。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 能快速生成設計系統，提升開發效率。 |
+| 大型企業的設計團隊 | 普通 | 可能需要更複雜的設計需求，這個工具的支援有限。 |
+| 自由職業設計師 | 非常適合 | 能快速生成設計系統，幫助客戶快速實現需求。 |
+| 需要高自訂化的設計專案 | 不適合 | 對於複雜的設計需求，可能無法完全滿足。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
+| 整合時間 | ~3 小時 |
 | 維護負擔 | low |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，能快速生成設計系統，值得嘗試。
+> 花 2 小時學、3 小時整合，得到快速生成設計系統的效果，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具主要處理設計文件，不需要高權限，且不存取敏感資料。
+> 低風險：不需要高權限，僅需上傳設計文件，無需存取敏感資料。依賴鏈的信任程度良好，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -325,7 +323,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 128 |
+| Forks | 149 |
 | Open Issues | 1 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-04-18 |
@@ -341,8 +339,8 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，最近有更新和討論。
-**連結**：[Discord](https://s.voltagent.dev/discord)
+**社群活躍度**：社群活躍度中等，最近有更新和討論。
+**連結**：[文件](https://github.com/VoltAgent/awesome-claude-design) · [Discord](https://s.voltagent.dev/discord)
 
 ## 開發動態
 
@@ -484,17 +482,17 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 相關概念：[[設計系統]] · [[自動化設計]] · [[Markdown]]
 
-相關專案：[[VoltAgent--awesome-design-md|VoltAgent/awesome-design-md]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[cyxzdev--Uncodixfy|cyxzdev/Uncodixfy]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]]
+相關專案：[[VoltAgent--awesome-design-md|VoltAgent/awesome-design-md]] · [[VoltAgent--awesome-codex-subagents|VoltAgent/awesome-codex-subagents]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[cyxzdev--Uncodixfy|cyxzdev/Uncodixfy]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
 
 [GitHub](https://github.com/VoltAgent/awesome-claude-design)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：設計工具）
+> [!note]- 直接競品（同子分類：設計系統）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "設計工具" AND file.name != "VoltAgent--awesome-claude-design"
+> WHERE subcategory = "設計系統" AND file.name != "VoltAgent--awesome-claude-design"
 > SORT stars DESC
 > ```
 

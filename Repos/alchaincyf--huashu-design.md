@@ -7,9 +7,9 @@ language: HTML
 license: NOASSERTION
 description: "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic"
 homepage: ""
-stars: 5466
-stars_per_day: 1367
-forks: 848
+stars: 5493
+stars_per_day: 1373
+forks: 851
 open_issues: 7
 created: 2026-04-19
 pushed_at: 2026-04-21
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-22
-use_case: "讓設計師透過簡單的對話生成高保真的設計原型和動畫。"
+use_case: "讓你透過簡單的對話生成高保真的設計作品，無需圖形介面。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 3
 next_review: "2026-04-27"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 0
+issue_close_rate: 13
 repo_size_kb: 222494
 readme_length: 6843
 bus_factor: 1
-last_release_days: 2
+last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-22"
-star_history: "2026-04-22:3080,2026-04-22:3121,2026-04-23:4472,2026-04-23:4500,2026-04-24:5466"
+star_history: "2026-04-22:3080,2026-04-22:3121,2026-04-23:4472,2026-04-23:4500,2026-04-24:5466,2026-04-24:5493"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "huashu-design"
   - "alchaincyf/huashu-design"
-  - "讓設計師透過簡單的對話生成高保真的設計原型和動畫。"
+  - "讓你透過簡單的對話生成高保真的設計作品，無需圖形介面。"
 ---
 
 # huashu-design
 
-**4.5k** stars · **1.5k** stars/天 · 建立 3 天前 · HTML · NOASSERTION
+**5.5k** stars · **1.4k** stars/天 · 建立 4 天前 · HTML · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/alchaincyf--huashu-design");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `v2.0` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓設計師透過簡單的對話生成高保真的設計原型和動畫。
+> 讓你透過簡單的對話生成高保真的設計作品，無需圖形介面。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (1.5k stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 希望快速生成高質量設計但不想使用傳統設計工具的設計師和產品經理。
-> **一句話重點** Huashu Design 讓設計變得簡單，透過對話即可生成高保真設計，這是傳統工具無法實現的。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (1.4k stars/day)
+> **授權** NOASSERTION · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 希望快速生成高保真設計作品但不想使用圖形介面的獨立開發者或設計師。
+> **一句話重點** Huashu Design 的創新在於將設計過程簡化為對話，讓任何人都能輕鬆生成高品質的設計作品。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,27 +101,29 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到高效的設計生成工具，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，1 小時整合，能快速生成高品質設計，值得嘗試。
 
 > [!abstract] 核心創新
-> Huashu Design 透過對話生成高保真的設計，無需傳統的圖形界面。
+> Huashu Design 透過對話生成高保真設計，無需圖形介面，顛覆了傳統設計流程。
 
 ## 專案簡介
 
-Huashu Design 是一個讓用戶能夠透過簡單的對話生成高保真的設計工具。用戶只需在 Claude Code 中輸入需求，例如「做一份 AI 心理學的演講 PPT」，系統會自動生成可交付的設計，並支持多種格式如 HTML、MP4 和 PPTX。這個工具的核心在於其品牌資產協議，能夠根據用戶提供的品牌元素自動調整設計，並且即使沒有提供任何資源，內建的設計語彙也能保證設計質量。使用者可以在 3 到 30 分鐘內獲得產品發布動畫、可點擊的 App 原型或演示幻燈片，這種效率是傳統設計工具無法比擬的。主要的 CLI 指令是 `npx skills add alchaincyf/huashu-design`，安裝後即可使用各種設計功能。
+Huashu Design 是一個基於對話的設計工具，允許用戶通過簡單的語句生成高保真的設計作品，如產品動畫、可點擊的應用原型和可編輯的幻燈片。用戶只需在 Claude Code 中輸入指令，例如「做一份 AI 心理學的演講 PPT」，系統會在 3 到 30 分鐘內生成所需的設計，並支持 MP4 和 GIF 格式的導出。這種設計方式的核心在於品牌資產協議，能夠根據用戶提供的品牌元素進行定制，甚至在沒有任何資料的情況下也能生成合適的設計。主要功能包括交互原型、演講幻燈片、時間軸動畫等，且每個功能的交付時間都在 10-25 分鐘之間。
 
-技術上，Huashu Design 使用 HTML 和 JavaScript，並且設計上遵循了 20 種設計哲學，這使得它在設計質量上具備了相當的深度和廣度。與其他工具相比，如 Claude Design，Huashu Design 的優勢在於其跨平台的兼容性和對話式的操作方式，這使得它在不需要 GUI 的情況下，依然能夠提供高效的設計服務。實際使用中，這個工具的限制在於對於非常複雜的動畫需求可能無法滿足，且完全空白的品牌設計質量會有所下降。整體來看，Huashu Design 是一個適合不想使用傳統設計工具的用戶的高效解決方案。
+使用者可以透過 `npx skills add alchaincyf/huashu-design` 安裝並立即使用，這使得它在多個代理（如 Claude Code、Cursor 等）中都能運行。這個工具的賣點在於其無需圖形介面，讓設計過程變得更為直觀和高效。相較於傳統的設計工具如 Figma，Huashu Design 提供了一種更為簡化的工作流程，特別適合不想使用複雜界面的設計師或開發者。這個工具的設計哲學強調了品牌一致性和設計品質，並且在實際應用中能夠快速生成高質量的設計作品。
 
 **技術棧**：`HTML` · `JavaScript` · `Shell` · `Python`
 
 ## 重點功能
 
-- 品牌資產協議 — 根據用戶提供的品牌元素自動調整設計，確保品牌一致性。
-- 多格式輸出 — 支持 HTML、MP4、GIF 和可編輯 PPTX 的輸出，滿足不同需求。
-- 快速生成 — 交互原型和動畫的生成時間在 3 到 30 分鐘之間，極大提升效率。
-- 設計方向顧問 — 提供 5 種流派和 20 種設計哲學的選擇，幫助用戶找到最佳設計方向。
-- 5 維度評審 — 提供雷達圖可視化和操作建議，幫助用戶快速改進設計。
+- 交互原型 — 生成單文件 HTML，支持真 iPhone bezel 和可點擊功能，使用 Playwright 進行驗證。
+- 演講幻燈片 — 提供 HTML deck 和可編輯的 PPTX，保留文本框內容，便於後續編輯。
+- 時間軸動畫 — 支持 MP4 和 GIF 格式導出，並可選擇 25fps 或 60fps 的插幀。
+- 設計變體 — 允許用戶並排比較多個設計變體，並可實時調整參數。
+- 信息圖 / 可視化 — 提供印刷級排版，支持 PDF/PNG/SVG 格式導出。
+- 設計方向顧問 — 根據 20 種設計哲學推薦 3 個差異化設計方向，並生成 Demo。
+- 5 維度專家評審 — 提供雷達圖和可操作的修復清單，幫助用戶優化設計。
 
 ## 快速開始
 
@@ -133,61 +135,63 @@ npx skills add alchaincyf/huashu-design
 ```bash
 例如：做一份 AI 心理學的演講 PPT
 ```
-3. 獲取生成的設計
+3. 等待生成設計並導出所需格式
 ```bash
-直接查看生成的 HTML 或下載 MP4
+例如：導出 MP4 和 GIF
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 4500 stars（1500/天），forks 713（15.8%），顯示出強勁的增長潛力。作者 alchaincyf 是一位獨立開發者，過去有多個成功的 AI 相關專案，這次的 Huashu Design 解決了設計師在使用傳統工具時的繁瑣流程，讓設計變得更為直觀和高效。社群對於這個工具的反應熱烈，尤其是在 AI 設計領域的應用上，這使得它在短時間內獲得了大量關注。
+> 建立 4 天內累積 5493 stars（1373/天），forks 851（15.5%），顯示出強烈的用戶需求和社群關注。開發者 alchaincyf 之前的作品已獲得廣泛認可，這次推出的 Huashu Design 解決了傳統設計工具操作繁瑣的痛點，讓用戶能夠快速生成高品質設計。社群中對於其易用性和高效率的討論也促進了其流行。最近的推廣活動和社交媒體曝光進一步提升了其知名度，吸引了大量設計師和開發者的關注。forks/stars 比率為 15.5%，顯示出許多人在實際修改和使用這個工具。
 
 ## 適合誰使用
 
-**目標受眾**：希望快速生成高質量設計但不想使用傳統設計工具的設計師和產品經理。
+**目標受眾**：希望快速生成高保真設計作品但不想使用圖形介面的獨立開發者或設計師。
 
 > [!example] 使用場景
-> - 產品經理用它來快速生成產品發布動畫，因為傳統工具需要花費數小時，而這個工具只需 10 分鐘即可完成。
-> - 設計師用它來創建可點擊的 App 原型，因為它能自動生成符合品牌風格的設計，節省了大量的手動調整時間。
-> - 市場行銷專員用它來製作演示幻燈片，因為它能夠在短時間內提供高質量的可編輯 PPTX，提升了工作效率。
+> - 產品經理用它來快速生成產品發布動畫，因為這樣可以在短時間內獲得高質量的視覺效果，提升產品展示的專業度。
+> - 設計師用它來創建可編輯的演示文稿，因為它能夠快速生成符合品牌風格的幻燈片，節省了大量的設計時間。
+> - 開發者用它來生成可點擊的應用原型，因為這樣可以在開發過程中更快地進行用戶測試，獲得即時反饋。
 
 ## 架構分析
 
-Huashu Design 採用模組化的架構，核心功能由多個 JavaScript 模組組成，這些模組負責不同的設計任務，如動畫生成、PPTX 轉換等。資料流從用戶輸入的需求開始，經過品牌資產協議的處理，最終生成所需的設計文件。這種設計使得工具能夠靈活應對不同的設計需求，並且易於擴展。選擇 JavaScript 使得它在瀏覽器中運行時性能優越，但也可能導致在某些複雜動畫上表現不佳。整體架構的輕量化設計使得用戶能夠快速上手，但在處理大量數據時可能會遇到性能瓶頸。
+Huashu Design 採用對話式介面，通過自然語言處理將用戶的需求轉換為設計指令。這種設計使得用戶無需學習複雜的設計工具，能夠快速生成所需的設計作品。系統的核心在於品牌資產協議，確保生成的設計符合用戶的品牌風格。資料流方面，系統會根據用戶的輸入查詢內部的設計庫，然後生成相應的 HTML、MP4 或 GIF 格式的輸出。這種架構的優勢在於其高效性和易用性，但可能在處理非常複雜的設計需求時受到限制，因為它依賴於預先定義的設計規則和樣式。
 
 ## 技術深入分析
 
-Huashu Design 的核心技術機制是基於對話生成設計，使用 JavaScript 和 HTML 來實現各種設計功能。其模組化架構使得每個功能都可以獨立運作，這樣的設計使得工具能夠快速適應不同的設計需求。效能上，Huashu Design 能夠在短時間內生成設計，但在處理複雜動畫時可能會遇到性能瓶頸。選擇 JavaScript 作為主要開發語言，讓它在瀏覽器中運行時性能優越，但也可能導致在某些情況下的資源消耗過高。設計上，Huashu Design 強調品牌資產協議，這使得生成的設計能夠保持品牌一致性，這在許多傳統工具中是難以實現的。技術風險方面，對於複雜的設計需求，使用者可能會發現工具的限制，這需要在未來的版本中進一步優化。整合方面，Huashu Design 可以輕鬆與現有的開發環境結合，並且支持多種輸出格式，這使得它在實際工作流程中非常方便。
+Huashu Design 的核心技術機制是基於自然語言處理和設計規則的結合。它使用 JavaScript 和 Python 來處理用戶的輸入，並根據內部的設計庫生成相應的設計作品。這個系統能夠在短時間內處理用戶的需求，並生成高保真的輸出，這在傳統設計工具中是難以實現的。效能方面，Huashu Design 能夠在 10-30 分鐘內完成設計，這對於需要快速迭代的設計工作流來說是非常有利的。
+
+設計取捨方面，Huashu Design 強調品牌一致性，這意味著在生成設計時會優先考慮用戶提供的品牌元素，這樣的選擇雖然提升了設計的質量，但也限制了對於完全新穎設計的支持。技術風險方面，Huashu Design 依賴於預先定義的設計規則，這可能在面對非常複雜的設計需求時造成瓶頸。整合方面，這個工具與現有的開發工具鏈相容性良好，特別是在使用 Claude Code 時，能夠無縫整合進行設計生成。整體而言，Huashu Design 提供了一種創新的設計方式，適合需要快速生成設計的用戶。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，包含了安裝和使用範例，安裝過程順暢，沒有明顯的坑。文件目前僅提供英文版本，對於非英語使用者可能需要額外的學習時間。
+> README 文件清晰，提供了安裝和使用的詳細步驟。安裝過程順暢，無明顯坑點。文檔中包含多種示例，幫助用戶快速上手，並且支持中英雙語。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速生成高質量設計，節省時間。
-> - 支持多種輸出格式，靈活滿足需求。
-> - 易於使用，無需學習複雜的設計工具。
+> - 快速生成高保真設計，節省時間。
+> - 無需圖形介面，降低使用門檻。
+> - 支持多種格式的導出，靈活性高。
 
 > [!danger] 缺點
-> - 對於複雜動畫的支持有限。
-> - 完全空白的品牌設計質量可能不佳。
-> - 不支持圖層級可編輯的 PPTX 到 Figma。
+> - 對於非常複雜的設計需求支持有限。
+> - 完全空白的品牌設計質量會下降。
+> - 不支持圖層級編輯的 PPTX 導入。
 
 > [!warning] 注意事項
 > - 不支持圖層級可編輯的 PPTX 到 Figma。
-> - Framer Motion 级别的复杂动画不行，3D、物理模拟、粒子系统超出 skill 边界。
-> - 完全空白的品牌从零设计质量会掉到 60–65 分。
+> - 無法生成 Framer Motion 級別的複雜動畫。
+> - 完全空白的品牌設計質量會下降到 60-65 分。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [alchaincyf/claude-design](https://github.com/alchaincyf/claude-design) | Claude Design 是一個專注於圖形界面的設計工具，而 Huashu Design 則是通過對話生成設計，無需 GUI。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了一些設計模板，但缺乏 Huashu Design 的即時生成和品牌資產協議功能。 |
+| [VoltAgent/awesome-claude-design](https://github.com/VoltAgent/awesome-claude-design) | VoltAgent 提供的工具專注於 Claude Design 的擴展，而 Huashu Design 則強調無需圖形介面，直接通過對話生成設計。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供的工具主要針對代碼生成，而 Huashu Design 專注於設計生成，特別是高保真原型和動畫。 |
 
 ## 替代方案決策
 
@@ -195,16 +199,16 @@ Huashu Design 的核心技術機制是基於對話生成設計，使用 JavaScri
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [alchaincyf/claude-design](https://github.com/alchaincyf/claude-design) | Claude Design 提供了一個更完整的圖形界面設計工具，而 Huashu Design 則專注於通過對話生成設計，省去圖形界面的繁瑣。 | 如果需要更複雜的圖形設計和交互操作，Claude Design 會是更好的選擇。 | medium，因為需要重新適應不同的操作方式和功能。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了一些設計模板，但缺乏 Huashu Design 的即時生成和品牌資產協議功能。 | 如果需要使用預設模板進行設計，Boneyard 可能更合適。 | low，因為 Boneyard 的使用方式相對簡單。 |
+| Figma | Figma 是一個基於雲端的設計工具，支持多人協作，而 Huashu Design 則專注於單用戶的對話式設計生成。 | 如果你的團隊需要實時協作和多層級編輯，Figma 是更好的選擇。 | medium，因為需要將設計從對話生成轉換為可視化編輯。 |
+| Canva | Canva 提供了大量的模板和設計元素，適合快速設計，而 Huashu Design 則依賴於用戶的語言輸入生成設計。 | 如果你需要大量的模板和設計元素，Canva 會更方便。 | low，因為 Canva 提供的模板可以直接使用。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **huashu-design** | **claude-design** | **boneyard** |
+> | 維度 | **huashu-design** | **Figma** | **Canva** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Claude Design 提供了一個更完整的圖形界面設計工具，而 Huashu Design 則專注於通過對話生成設計，省去圖形界面的繁瑣。 | Boneyard 提供了一些設計模板，但缺乏 Huashu Design 的即時生成和品牌資產協議功能。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的操作方式和功能。 | low，因為 Boneyard 的使用方式相對簡單。 |
-> | 適用場景 | 主要場景 | 如果需要更複雜的圖形設計和交互操作，Claude Desig | 如果需要使用預設模板進行設計，Boneyard 可能更合適。 |
+> | 技術路線 | 本專案 | Figma 是一個基於雲端的設計工具，支持多人協作，而 Huashu Design 則專注於單用戶的對話式設計生成。 | Canva 提供了大量的模板和設計元素，適合快速設計，而 Huashu Design 則依賴於用戶的語言輸入生成設計。 |
+> | 遷移成本 | - | medium，因為需要將設計從對話生成轉換為可視化編輯。 | low，因為 Canva 提供的模板可以直接使用。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要實時協作和多層級編輯，Figma 是更好的選 | 如果你需要大量的模板和設計元素，Canva 會更方便。 |
 
 ## 成熟度評估
 
@@ -215,27 +219,25 @@ Huashu Design 的核心技術機制是基於對話生成設計，使用 JavaScri
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和小型專案，不建議用在生產環境的核心路徑上。
+> 適合個人試用或小型專案，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 對於非常複雜的動畫需求，可能無法達到預期效果
-  - 解法：簡化動畫設計，避免使用過多的效果
-- [MEDIUM] 完全空白的品牌設計質量可能不佳
-  - 解法：提供至少一些品牌元素以提高設計質量
-- [MEDIUM] 不支持圖層級可編輯的 PPTX 到 Figma，導致無法直接編輯
-  - 解法：將生成的 PPTX 轉換為圖片進行編輯
+- [MEDIUM] 在某些情況下，生成的設計可能不符合預期，特別是當品牌資料不足時。
+  - 解法：提供更多的品牌資料以提高生成質量。
+- **[HIGH]** 對於複雜的動畫需求，生成的效果可能不如專業工具。
+  - 解法：考慮使用專業的動畫工具進行細節調整。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型創業團隊的產品設計 | 非常適合 | 能快速生成設計，節省時間和成本。 |
-| 大型企業的複雜設計需求 | 不適合 | 對於複雜動畫和多層次設計的支持有限。 |
-| 個人開發者的原型設計 | 適合 | 能夠快速生成可用的設計，提升開發效率。 |
-| 需要高保真設計的行銷專案 | 普通 | 雖然能生成高質量設計，但對於品牌要求較高的項目可能不夠。 |
+| 小型創業團隊的產品發布 | 非常適合 | 能快速生成高質量的產品動畫和幻燈片，提升發布效果。 |
+| 大型企業的品牌設計需求 | 不適合 | 對於大型品牌的設計需求，可能無法滿足複雜的品牌規範。 |
+| 個人設計師的日常工作流 | 適合 | 能夠快速生成設計，減少設計時間，提升工作效率。 |
+| 需要實時協作的設計團隊 | 普通 | 缺乏多人協作功能，可能不適合需要團隊合作的情境。  |
 
 ## 採用成本分析
 
@@ -244,29 +246,15 @@ Huashu Design 的核心技術機制是基於對話生成設計，使用 JavaScri
 | 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到高效的設計生成工具，值得一試。
+> 花 2 小時學習，1 小時整合，能快速生成高品質設計，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不會存取敏感資料，適合在 CI/CD 中使用。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-Huashu Design 可以與現有的開發環境無縫整合，特別是在使用 Claude Code 的情況下。它可以作為設計生成的工具鏈的一部分，並且支持多種輸出格式，方便與其他工具配合使用。在實際場景中，你可以在一個使用 Next.js 的專案中，透過 Huashu Design 生成設計，然後將其嵌入到你的應用中。與主流 CI 工具如 GitHub Actions 兼容，並且可以輕鬆集成到現有的開發流程中，這使得它在實際工作中非常方便。
-
-## 歷史脈絡
-
-> [!info] 這個工具為什麼現在出現？
-
-在 Huashu Design 出現之前，設計師通常依賴於傳統的圖形設計工具，如 Figma 或 Adobe XD，這些工具雖然功能強大，但操作繁瑣且需要學習曲線。隨著 AI 技術的進步，越來越多的工具開始嘗試通過對話生成設計，Huashu Design 正是這一趨勢的代表。它不僅簡化了設計流程，還讓設計變得更加直觀和高效。
-
-未來，隨著 AI 技術的進一步發展，這類工具將會變得更加普及，並可能成為設計領域的主流。
+> 低風險：該工具不需要高權限，且不存取敏感資料，依賴於用戶的輸入和生成的設計內容。
 
 ## 健康度儀表板
 
@@ -331,9 +319,9 @@ Huashu Design 可以與現有的開發環境無縫整合，特別是在使用 Cl
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 713 |
+| Forks | 851 |
 | Open Issues | 7 |
-| Issue 解決率 | 0% (0 closed) |
+| Issue 解決率 | 13% (1 closed) |
 | 最後推送 | 2026-04-21 |
 | 建立日期 | 2026-04-19 |
 | Repo 大小 | 217.3 MB |
@@ -373,7 +361,7 @@ Huashu Design 可以與現有的開發環境無縫整合，特別是在使用 Cl
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，開發者經常更新和回應問題。
+**社群活躍度**：社群活躍度中等，開放的問題解決率較低，需持續關注。
 **連結**：[文件](https://skills.sh)
 
 ## 開發動態
@@ -387,7 +375,6 @@ Huashu Design 可以與現有的開發環境無縫整合，特別是在使用 Cl
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#6](https://github.com/alchaincyf/huashu-design/issues/6) | 只能给Claude用吗？Codex能用吗 | 1 | 1 |
-> | [#7](https://github.com/alchaincyf/huashu-design/issues/7) | 帮忙看一下这个是什么报错 | 0 | 1 |
 > | [#5](https://github.com/alchaincyf/huashu-design/issues/5) | API Error: 400 {"id":"xxx","error":{"message":"invalid param | 0 | 0 |
 > | [#4](https://github.com/alchaincyf/huashu-design/issues/4) | 牛大了这个skill | 0 | 0 |
 > | [#3](https://github.com/alchaincyf/huashu-design/issues/3) | vscode copilot能支持吗？ | 0 | 0 |
@@ -664,9 +651,9 @@ Huashu Design 可以與現有的開發環境無縫整合，特別是在使用 Cl
 
 ## 延伸閱讀
 
-相關概念：[[自動化設計]] · [[AI 設計工具]] · [[品牌資產管理]]
+相關概念：[[自動化]] · [[設計思維]] · [[用戶體驗設計]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Manavarya09--design-extract|Manavarya09/design-extract]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
+相關專案：[[VoltAgent--awesome-claude-design|VoltAgent/awesome-claude-design]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[Manavarya09--design-extract|Manavarya09/design-extract]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]]
 
 [GitHub](https://github.com/alchaincyf/huashu-design)
 
@@ -708,7 +695,7 @@ Huashu Design 可以與現有的開發環境無縫整合，特別是在使用 Cl
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化設計","AI 設計工具","品牌資產管理"];
+> const concepts = ["自動化","設計思維","用戶體驗設計"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "alchaincyf--huashu-design" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
