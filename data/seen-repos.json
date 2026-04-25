@@ -1205,10 +1205,10 @@
   },
   "kyegomez/OpenMythos": {
     "first_seen": "2026-04-20",
-    "last_seen": "2026-04-24",
-    "times_seen": 5,
+    "last_seen": "2026-04-25",
+    "times_seen": 6,
     "stars_first": 1496,
-    "stars_last": 9725
+    "stars_last": 10114
   },
   "wbh604/UZI-Skill": {
     "first_seen": "2026-04-21",
@@ -1226,17 +1226,17 @@
   },
   "alchaincyf/huashu-design": {
     "first_seen": "2026-04-22",
-    "last_seen": "2026-04-24",
-    "times_seen": 3,
+    "last_seen": "2026-04-25",
+    "times_seen": 4,
     "stars_first": 3080,
-    "stars_last": 5466
+    "stars_last": 6096
   },
   "tw93/Kami": {
     "first_seen": "2026-04-22",
-    "last_seen": "2026-04-24",
-    "times_seen": 3,
+    "last_seen": "2026-04-25",
+    "times_seen": 4,
     "stars_first": 1594,
-    "stars_last": 2897
+    "stars_last": 3050
   },
   "codejunkie99/agentic-stack": {
     "first_seen": "2026-04-22",
@@ -1247,31 +1247,31 @@
   },
   "EvoLinkAI/awesome-gpt-image-2-prompts": {
     "first_seen": "2026-04-23",
-    "last_seen": "2026-04-24",
-    "times_seen": 2,
+    "last_seen": "2026-04-25",
+    "times_seen": 3,
     "stars_first": 1761,
-    "stars_last": 2734
+    "stars_last": 3244
   },
   "OpenCoworkAI/open-codesign": {
     "first_seen": "2026-04-23",
-    "last_seen": "2026-04-24",
-    "times_seen": 2,
+    "last_seen": "2026-04-25",
+    "times_seen": 3,
     "stars_first": 1261,
-    "stars_last": 1902
+    "stars_last": 2186
   },
   "VoltAgent/awesome-claude-design": {
     "first_seen": "2026-04-23",
-    "last_seen": "2026-04-24",
-    "times_seen": 2,
+    "last_seen": "2026-04-25",
+    "times_seen": 3,
     "stars_first": 1213,
-    "stars_last": 1412
+    "stars_last": 1519
   },
   "the-hidden-fish/advisor-ledger": {
     "first_seen": "2026-04-23",
-    "last_seen": "2026-04-24",
-    "times_seen": 2,
+    "last_seen": "2026-04-25",
+    "times_seen": 3,
     "stars_first": 880,
-    "stars_last": 1025
+    "stars_last": 1059
   },
   "openai/privacy-filter": {
     "first_seen": "2026-04-24",
@@ -1286,5 +1286,26 @@
     "times_seen": 1,
     "stars_first": 931,
     "stars_last": 931
+  },
+  "op7418/guizang-ppt-skill": {
+    "first_seen": "2026-04-25",
+    "last_seen": "2026-04-25",
+    "times_seen": 1,
+    "stars_first": 1942,
+    "stars_last": 1942
+  },
+  "deepseek-ai/TileKernels": {
+    "first_seen": "2026-04-25",
+    "last_seen": "2026-04-25",
+    "times_seen": 1,
+    "stars_first": 1072,
+    "stars_last": 1072
+  },
+  "masterking32/MasterHttpRelayVPN": {
+    "first_seen": "2026-04-25",
+    "last_seen": "2026-04-25",
+    "times_seen": 1,
+    "stars_first": 1053,
+    "stars_last": 1053
   }
 }

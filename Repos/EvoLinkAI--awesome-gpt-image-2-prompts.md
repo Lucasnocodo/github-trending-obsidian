@@ -7,12 +7,12 @@ language: Python
 license: NOASSERTION
 description: "Curated GPT-Image-2 prompts fot the Openai API：image examples across portraits, posters, UI mockups, character sheets, and community experiments."
 homepage: "https://evolink.ai/gpt-image-2"
-stars: 2750
-stars_per_day: 550
-forks: 240
+stars: 3244
+stars_per_day: 541
+forks: 292
 open_issues: 6
 created: 2026-04-18
-pushed_at: 2026-04-23
+pushed_at: 2026-04-24
 first_seen: 2026-04-23
 week: "2026-W17"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供高品質的 GPT-Image-2 提示詞和圖像範例，幫助用�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-27"
+appearances: 3
+next_review: "2026-04-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-23"
-star_history: "2026-04-23:1761,2026-04-23:1768,2026-04-24:2734,2026-04-24:2750"
+star_history: "2026-04-23:1761,2026-04-23:1768,2026-04-24:2734,2026-04-24:2750,2026-04-25:3244"
 tags:
   - github
   - "category/ai_ml"
@@ -842,5 +842,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-25|2026-04-25]] — 再次上榜，3.2k stars
 - [[2026-04-24|2026-04-24]] — 再次上榜，2.7k stars
 - [[2026-04-23|2026-04-23]] — 首次收錄，1.8k stars
