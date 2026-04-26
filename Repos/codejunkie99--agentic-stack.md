@@ -7,18 +7,18 @@ language: Python
 license: Apache-2.0
 description: "One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols) that plugs into Claude Code, Cursor, Windsurf, OpenCode, OpenClaw, Hermes, or DIY Python — and keeps its knowledge when you switch."
 homepage: ""
-stars: 1554
-stars_per_day: 173
-forks: 188
+stars: 1619
+stars_per_day: 162
+forks: 202
 open_issues: 5
 created: 2026-04-15
-pushed_at: 2026-04-24
+pushed_at: 2026-04-25
 first_seen: 2026-04-22
 week: "2026-W17"
 month: "2026-04"
 category: "開發工具"
 subcategory: "自動化"
-release_tag: "v0.9.0"
+release_tag: "v0.9.1"
 install_complexity: "medium"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-22
-use_case: "讓多個編碼代理工具共享同一個可攜式記憶和技能層，避免切換工具時重置代理的工作方式。"
+use_case: "讓你的 AI 代理在不同工具之間切換時不會重置知識，保持一個可攜帶的記憶與技能層。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 1
 next_review: "2026-04-25"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 58
-repo_size_kb: 7556
-readme_length: 9884
+issue_close_rate: 62
+repo_size_kb: 7584
+readme_length: 10000
 bus_factor: 1
 last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-22"
-star_history: "2026-04-22:1275,2026-04-23:1438,2026-04-24:1497,2026-04-25:1554"
+star_history: "2026-04-22:1275,2026-04-23:1438,2026-04-24:1497,2026-04-25:1554,2026-04-26:1619"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "agentic-stack"
   - "codejunkie99/agentic-stack"
-  - "讓多個編碼代理工具共享同一個可攜式記憶和技能層，避免切換工具時重置代理的工作方式。"
+  - "讓你的 AI 代理在不同工具之間切換時不會重置知識，保持一個可攜帶的記憶與技能層。"
 ---
 
 # agentic-stack
 
-**1.6k** stars · **173** stars/天 · 建立 9 天前 · Python · Apache-2.0
+**1.6k** stars · **162** stars/天 · 建立 10 天前 · Python · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/codejunkie99--agentic-stack");
@@ -68,16 +68,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v0.9.0`
+`v0.9.1`
 
 > [!summary] 一句話摘要
-> 讓多個編碼代理工具共享同一個可攜式記憶和技能層，避免切換工具時重置代理的工作方式。
+> 讓你的 AI 代理在不同工具之間切換時不會重置知識，保持一個可攜帶的記憶與技能層。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (173 stars/day)
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (162 stars/day)
 > **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要在多個編碼環境中保持一致性的開發者，特別是使用多種編碼代理工具的團隊。
-> **一句話重點** 這個專案的核心在於提供一個可攜式的記憶和技能層，讓使用者在不同的編碼環境中保持一致性。
+> **適合** 需要在多個 AI 編碼工具之間切換並保持記憶的獨立開發者或團隊。
+> **一句話重點** 這個專案最厲害的地方在於它能夠在多個 AI 編碼工具之間保持知識的連貫性，極大提升了開發者的工作效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -100,103 +100,95 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~4h · **綁定風險** medium
-> **結論** 花 4 小時學、2 小時整合，得到一致的編碼代理記憶，值得嘗試。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學、3 小時整合，得到跨工具的知識共享，值得。
 
 > [!abstract] 核心創新
-> 提供了一個可攜式的記憶和技能層，讓使用者在多個編碼代理工具間無縫切換。
+> 這個專案的創新點在於提供了一個可攜帶的記憶與技能層，能夠在多個編碼代理之間共享知識。
 
 ## 專案簡介
 
-Agentic Stack 提供了一個可攜式的 `.agent/` 資料夾，讓使用者能夠在多個編碼代理工具之間切換，而不會丟失記憶和技能。使用者可以透過 `brew install agentic-stack` 或 `git clone` 來安裝，並使用 `./install.sh` 指令來管理適配器。這個工具的核心賣點在於它的適配器管理系統，允許用戶輕鬆添加或移除適配器，並在不同的編碼環境中保持一致的記憶體和技能。其背後的設計理念是使用 JSON 檔案來描述每個適配器的配置，這樣用戶可以透過簡單的 PR 來擴展功能，而不需要修改 Python 代碼。這種設計使得擴展性和可維護性大幅提升，並且支援跨平台操作，無論是 POSIX 還是 Windows 環境。
+這個專案的核心機制是提供一個可攜帶的 `.agent/` 資料夾，裡面包含記憶、技能和協議，能夠與多種編碼代理工具（如 Claude Code、Cursor、Windsurf 等）無縫連接，讓使用者在不同工具之間切換時不會丟失知識。安裝後，使用者可以透過 `./install.sh` 命令來管理項目，並使用 `add`、`status`、`doctor` 等子命令來進行操作，這種設計使得管理多個代理變得簡單而直觀。技術上，專案使用 Python 和 Shell 腳本來實現跨平台的安裝和管理，並且依賴於 `anthropic` 和 `openai` 這兩個庫來支持 AI 功能。這種架構的選擇使得它能夠在不同的環境中運行，而不需要重複安裝或配置。
 
-與其他工具相比，如 0xGF/boneyard 和 AgentSeal/codeburn，Agentic Stack 的優勢在於其簡單的適配器管理和無需重啟的即時更新能力。使用者在實際操作中可能會遇到需要手動確認刪除的情況，這是為了避免意外刪除重要文件。整體來說，這是一個適合需要在多個編碼環境中工作的開發者的工具，特別是那些希望保持工作流程一致性的團隊。隨著專案的發展，未來可能會增加更多的適配器和功能，讓使用者能夠更靈活地管理其編碼代理。
+與其他類似工具相比，如 `0xGF/boneyard` 和 `AgriciDaniel/claude-obsidian`，這個專案提供了一個更為集中化的記憶管理系統，能夠在多個代理之間共享知識，而不是每個代理都需要獨立的記憶體。使用者在使用時可能會遇到的問題包括在升級過程中需要先運行 `./install.sh doctor` 來合併舊有的安裝設定，這是為了避免資料遺失。整體而言，這個專案在設計上考慮到了使用者的便利性和多樣性，適合需要在多個 AI 工具間切換的開發者。隨著功能不斷增強，未來可能會加入更多的適配器和功能，進一步提升其靈活性和可擴展性。
 
-**技術棧**：`Python` · `TypeScript` · `PowerShell` · `Shell` · `Ruby`
+**技術棧**：`Python` · `Shell` · `PowerShell`
 
 ## 重點功能
 
-- 可攜式 `.agent/` 資料夾 — 保存記憶、技能和協議，隨時切換編碼工具。
-- 適配器管理系統 — 使用 JSON 檔案來描述每個適配器的配置，簡化擴展過程。
-- `./install.sh add <adapter>` — 方便地將新適配器添加到現有專案中。
-- `./install.sh remove <adapter>` — 確認刪除適配器，並自動執行後安裝動作。
-- `./install.sh doctor` — 進行只讀審計，檢查適配器狀態和健康度。
+- 可攜帶的 `.agent/` 資料夾 — 包含記憶、技能和協議，能夠與多種編碼代理工具連接。
+- 多種子命令管理 — 使用 `./install.sh add <adapter>` 來添加適配器，或使用 `status` 查看當前狀態。
+- 跨平台支持 — 同時支持 macOS、Linux 和 Windows，方便不同環境的開發者使用。
+- 自動化的安裝和配置 — 使用者只需運行一次安裝命令，後續可通過簡單的命令進行管理。
+- 記憶搜索功能 — 支持關鍵字搜索，方便快速查找記憶中的信息。
 
 ## 快速開始
 
-1. 安裝 Homebrew 並安裝 agentic-stack
+1. 安裝 agentic-stack
 ```bash
-brew tap codejunkie99/agentic-stack https://github.com/codejunkie99/agentic-stack && brew install agentic-stack
+brew tap codejunkie99/agentic-stack https://github.com/codejunkie99/agentic-stack
 ```
-2. 克隆專案並運行安裝程式
+2. 安裝 agentic-stack
+```bash
+brew install agentic-stack
+```
+3. 克隆並運行安裝程式
 ```bash
 git clone https://github.com/codejunkie99/agentic-stack.git && cd agentic-stack && .\install.ps1 claude-code C:\path\to\your-project
-```
-3. 更新已安裝的 agentic-stack
-```bash
-brew update && brew upgrade agentic-stack
-```
-
-## 程式碼範例
-
-```python
-[
-  "# 前置條件：已安裝 agentic-stack",
-  "./install.sh add cursor          # 添加第二個適配器（Claude Code + Cursor 在同一個 repo）",
-  "# 預期輸出：適配器成功添加，並顯示當前狀態"
-]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 9 天內累積 1554 stars（173/天），forks 188（12.1%），顯示出強勁的增長潛力。作者 codejunkie99 之前在開源社群活躍，這個專案解決了在多個編碼工具間切換時記憶和技能丟失的痛點，之前的解決方案往往需要重複配置或手動管理。這個工具的出現正好滿足了開發者對於高效能和靈活性的需求，並且在社群中引發了討論和關注。其設計理念和實現方式也符合當前開發生態對於可攜式和模組化工具的趨勢。
+> 建立 10 天內累積 1619 stars（162/天），forks 202（12.5%），顯示出相對高的使用者參與度。這個專案的作者 codejunkie99 之前有過多個開源專案，這次針對多工具間的知識共享需求提供了解決方案，之前的工具往往無法有效管理多個代理的記憶。這個專案的推出正好填補了這個空白，並且在社群中引起了討論，進一步推動了其流行。技術上，隨著 AI 代理的普及，這種跨工具的記憶管理需求也變得越來越迫切，促使開發者尋找更好的解決方案。forks/stars 比率為 12.5%，顯示出有相當比例的使用者對此專案進行了實際的修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要在多個編碼環境中保持一致性的開發者，特別是使用多種編碼代理工具的團隊。
+**目標受眾**：需要在多個 AI 編碼工具之間切換並保持記憶的獨立開發者或團隊。
 
 > [!example] 使用場景
-> - 後端工程師用它來在多個編碼代理工具間切換，因為這樣可以保持相同的記憶和技能，避免重複配置。
-> - 全端開發者用它來整合不同的編碼環境，因為它的適配器管理系統讓他們能夠快速添加或移除工具。
-> - AI 研究人員用它來在不同的 AI 開發平台上測試模型，因為它能保持一致的記憶體和技能，提升測試效率。
+> - AI 開發者用它來在不同的編碼代理之間切換，保持記憶和技能的連貫性，因為這樣可以節省重複訓練的時間，提升開發效率。
+> - 資料科學家用它來整合多個 AI 工具的學習成果，因為這樣可以快速獲取不同工具的最佳實踐，避免知識孤島。
+> - DevOps 工程師用它來管理多個 CI/CD 流程中的 AI 代理，因為這樣可以確保每個流程都能利用最新的記憶和技能，提升自動化程度。
 
 ## 架構分析
 
-Agentic Stack 採用模組化的設計，核心是 `.agent/` 資料夾，裡面包含記憶、技能和協議的配置。每個適配器透過 JSON 檔案進行描述，這樣的設計使得擴展和維護變得簡單。資料流從用戶的命令行輸入開始，經過適配器的管理系統，最終將配置應用到指定的編碼工具上。這種設計的代價在於需要用戶對 JSON 配置有一定的理解，並且在添加新適配器時需要遵循特定的格式。整體架構的擴展性良好，但在高並發情況下可能會遇到資源競爭的問題。
+這個專案採用了一個模組化的架構設計，主要由可攜帶的 `.agent/` 資料夾組成，裡面包含記憶、技能和協議。每個適配器都由 `adapter.json` 定義，並由共享的 Python 後端管理。使用者透過 `./install.sh` 命令來安裝和管理適配器，這種設計使得使用者能夠輕鬆地在不同的編碼代理之間切換而不會丟失知識。
+
+這種模組化的架構也使得未來的擴展變得更加容易，使用者可以根據需求添加新的適配器。選擇 Python 作為主要開發語言，使得跨平台支持變得更加簡單，因為 Python 在不同操作系統上都有良好的兼容性。整體架構考慮到了使用者的便捷性和靈活性，未來可能會加入更多的適配器和功能以進一步提升其可擴展性。
 
 ## 技術深入分析
 
-Agentic Stack 的核心技術在於其模組化的適配器管理系統，這使得用戶能夠透過 JSON 檔案輕鬆地添加或移除適配器。這種設計不僅提高了擴展性，還降低了維護成本。效能方面，因為適配器的管理是基於 JSON 檔案的，所以在添加新適配器時不需要重啟整個系統，這樣能夠節省時間。選擇 Python 作為主要語言的原因在於其廣泛的應用和良好的社群支持，這使得開發者能夠快速上手並進行擴展。儘管如此，這也帶來了依賴管理的挑戰，特別是在多個適配器同時運行時，可能會出現資源競爭的問題。對於未來的擴展，這個專案可能需要考慮如何在高並發情況下保持穩定性和效能。整合方面，這個工具能夠與主流的編碼環境良好協作，但在某些情況下可能需要額外的配置來確保兼容性。
+這個專案的核心技術機制在於使用一個可攜帶的 `.agent/` 資料夾來管理記憶、技能和協議，這使得在不同的編碼代理之間切換變得無縫。專案使用 Python 和 Shell 腳本來實現安裝和管理，並且依賴於 `anthropic` 和 `openai` 這兩個庫來支持 AI 功能。效能方面，這個系統能夠在不同的環境中運行，並且在多個代理之間共享知識，這樣的設計使得使用者能夠在不同的工具中保持一致的工作流程。設計取捨方面，選擇 Python 作為主要開發語言使得跨平台支持變得更加簡單，但也可能帶來一定的性能開銷。技術風險方面，未來在擴展時可能會遇到依賴管理的問題，特別是在添加新的適配器時。整合分析方面，這個專案與主流工具鏈（如 GitHub Actions）相容性良好，並且能夠輕鬆整合到現有的 CI/CD 流程中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含範例，安裝過程相對順暢，但需要用戶對 JSON 配置有一定的理解。提供了良好的入門指南，讓新手能夠快速上手。文件目前僅提供英文版本。
+> README 文件提供了清晰的安裝和使用指導，並且包含了豐富的範例。安裝過程相對順暢，但需要注意在升級時運行 `./install.sh doctor`。整體來說，花 30 分鐘能夠順利跑起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多種編碼代理工具，提供靈活的切換選項。
-> - 適配器管理系統簡化了擴展過程，降低了學習成本。
-> - 跨平台支援，適合不同操作系統的開發者。
+> - 提供跨工具的知識共享，避免重複訓練。
+> - 模組化設計，便於擴展和管理。
+> - 支持多平台，方便不同環境的開發者使用。
 
 > [!danger] 缺點
-> - 需要用戶對 JSON 配置有一定的理解，對新手來說可能有學習曲線。
-> - 在某些環境下，適配器的刪除需要手動確認，增加了操作步驟。
-> - 不支援某些舊版的編碼代理工具，需確認兼容性。
+> - 目前僅支援特定的 AI 編碼代理。
+> - 需要使用者具備基本的命令行操作能力。
+> - 升級過程中需注意資料遺失的風險。
 
 > [!warning] 注意事項
-> - 需要安裝 Homebrew 或 Git 來進行安裝。
-> - 在某些環境下，適配器的刪除可能需要手動確認，增加操作步驟。
-> - 不支援某些舊版的編碼代理工具，需確認兼容性。
+> - 目前僅支援特定的 AI 編碼代理，未來可能會擴展到更多工具。
+> - 需要使用者具備基本的命令行操作能力，對於不熟悉 CLI 的使用者可能有一定的學習曲線。
+> - 在升級過程中，需注意運行 `./install.sh doctor` 以避免資料遺失。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具主要用於管理 AI 訓練資料，而 agentic-stack 專注於編碼代理的記憶和技能共享。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | AgentSeal 提供了更為全面的 AI 代理功能，但缺乏 agentic-stack 的輕量級適配器管理系統。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供了一些類似的記憶管理功能，但不支持多工具間的知識共享，主要針對單一工具的使用場景。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 專注於特定的編碼工具，缺乏跨工具的靈活性和可攜帶性。 |
 
 ## 替代方案決策
 
@@ -204,16 +196,16 @@ Agentic Stack 的核心技術在於其模組化的適配器管理系統，這使
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要用於管理 AI 訓練資料，專注於資料的整理和存取，而 agentic-stack 專注於編碼代理的記憶和技能共享。 | 如果你的專案主要集中在 AI 訓練資料的管理，而不是編碼代理的記憶共享，則應選擇 boneyard。 | medium，因為需要重新設計資料流和管理方式。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 提供了更為全面的 AI 代理功能，但缺乏 agentic-stack 的輕量級適配器管理系統。 | 如果需要更全面的 AI 代理功能，並且不在意適配器管理的靈活性，則可以選擇 codeburn。 | high，因為需要重新設計整個代理架構。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供了一些類似的記憶管理功能，但不支持多工具間的知識共享，主要針對單一工具的使用場景。 | 如果你的團隊主要使用單一工具，並且不需要跨工具的知識管理。 | low，因為功能相似，遷移成本低。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 專注於特定的編碼工具，缺乏跨工具的靈活性和可攜帶性。 | 如果你的工作流程完全依賴於特定的編碼工具，且不需要與其他工具整合。 | medium，因為需要重新配置和適配。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **agentic-stack** | **boneyard** | **codeburn** |
+> | 維度 | **agentic-stack** | **boneyard** | **claude-obsidian** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 主要用於管理 AI 訓練資料，專注於資料的整理和存取，而 agentic-stack 專注於編碼代理的記憶和技能共享。 | 提供了更為全面的 AI 代理功能，但缺乏 agentic-stack 的輕量級適配器管理系統。 |
-> | 遷移成本 | - | medium，因為需要重新設計資料流和管理方式。 | high，因為需要重新設計整個代理架構。 |
-> | 適用場景 | 主要場景 | 如果你的專案主要集中在 AI 訓練資料的管理，而不是編碼代理 | 如果需要更全面的 AI 代理功能，並且不在意適配器管理的靈活 |
+> | 技術路線 | 本專案 | 提供了一些類似的記憶管理功能，但不支持多工具間的知識共享，主要針對單一工具的使用場景。 | 專注於特定的編碼工具，缺乏跨工具的靈活性和可攜帶性。 |
+> | 遷移成本 | - | low，因為功能相似，遷移成本低。 | medium，因為需要重新配置和適配。 |
+> | 適用場景 | 主要場景 | 如果你的團隊主要使用單一工具，並且不需要跨工具的知識管理。 | 如果你的工作流程完全依賴於特定的編碼工具，且不需要與其他工具 |
 
 ## 成熟度評估
 
@@ -224,43 +216,48 @@ Agentic Stack 的核心技術在於其模組化的適配器管理系統，這使
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些環境下，適配器的刪除需要手動確認，可能導致誤刪除重要文件
-  - 解法：在刪除前仔細檢查確認提示
-- [MEDIUM] 安裝過程中可能會遇到依賴衝突，特別是在多個適配器同時運行時
-  - 解法：確保所有適配器的依賴版本兼容
-- [MEDIUM] 不支援某些舊版的編碼代理工具，可能導致兼容性問題
-  - 解法：在安裝前確認所需工具的版本
+- **[HIGH]** 升級過程中可能會遺失舊有的安裝設定
+  - 解法：在升級前運行 `./install.sh doctor` 以合併舊有設定
+- [MEDIUM] 在某些環境下可能無法正確識別適配器
+  - 解法：確保所有適配器的配置文件正確無誤
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 輕量級的適配器管理系統能夠快速適應變化的需求。 |
-| 需要在多個編碼環境中保持一致性的開發團隊 | 適合 | 可攜式的記憶和技能層能夠提升團隊效率。 |
-| 大型企業的核心系統開發 | 不適合 | 目前仍處於 beta 階段，穩定性和安全性尚未達到生產環境的要求。  |
+| 需要在多個 AI 編碼工具之間切換的開發團隊 | 非常適合 | 能夠保持知識的連貫性，提升工作效率。 |
+| 單一工具的開發者 | 不適合 | 缺乏對單一工具的專門優化。 |
+| 需要快速整合多個 AI 工具的研究團隊 | 適合 | 能夠快速整合和共享知識。 |
+| 對命令行不熟悉的使用者 | 普通 | 需要一定的命令行操作能力。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~4 小時 |
-| 整合時間 | ~2 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 4 小時學、2 小時整合，得到一致的編碼代理記憶，值得嘗試。
+> 花 5 小時學、3 小時整合，得到跨工具的知識共享，值得。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限操作，僅需訪問本地檔案系統，依賴的庫也相對穩定，適合在 CI/CD 環境中使用。
+> 低風險：這個工具不需要高權限，且不存取敏感資料，依賴鏈也相對簡單，適合在 CI/CD 中使用。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個工具最常與多種 AI 編碼工具搭配使用，處於開發和部署的環節。在一個使用 Claude Code 的專案中，你可以用這個工具來管理多個代理，具體做法是運行 `./install.sh` 來安裝所需的適配器。這個工具支援 GitHub Actions 等主流 CI 工具，並且可以與 VS Code 等 IDE 整合。最常見的整合問題是適配器的配置文件需正確設置，否則可能無法識別。整體來說，這個工具能夠輕鬆融入現有的技術生態。
 
 ## 健康度儀表板
 
@@ -325,10 +322,10 @@ Agentic Stack 的核心技術在於其模組化的適配器管理系統，這使
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 188 |
+| Forks | 202 |
 | Open Issues | 5 |
-| Issue 解決率 | 58% (7 closed) |
-| 最後推送 | 2026-04-24 |
+| Issue 解決率 | 62% (8 closed) |
+| 最後推送 | 2026-04-25 |
 | 建立日期 | 2026-04-15 |
 | Repo 大小 | 7.4 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/codejunkie99/agentic-stack) |
@@ -340,66 +337,45 @@ Agentic Stack 的核心技術在於其模組化的適配器管理系統，這使
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 97
->     "TypeScript" : 2
+>     "Python" : 94
+>     "TypeScript" : 4
 >     "PowerShell" : 1
+>     "Shell" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@codejunkie99](https://github.com/codejunkie99) | 31 |
+> | [@aliirz](https://github.com/aliirz) | 2 |
 > | [@hovhannest](https://github.com/hovhannest) | 2 |
-> | [@aliirz](https://github.com/aliirz) | 1 |
 > | [@ImgBotApp](https://github.com/ImgBotApp) | 1 |
 > | [@JagritGumber](https://github.com/JagritGumber) | 1 |
 
-**最新版本**：v0.9.0 — v0.9.0 — Harness manager: manifest-driven adapter system (2026-04-24)
+**最新版本**：v0.9.1 — v0.9.1 — pi adapter fixes + tz correctness (2026-04-25)
 
 > [!info]- Release Notes
-> ### Added
-> - **Harness manager: manifest-driven adapter system.** Each adapter now
->   ships an `adapters/<name>/adapter.json` declaring its files,
->   collision policy, optional skills directory mirror, and named
->   post-install actions. Adding a new adapter is now a JSON-only PR —
->   no Python code, no test wiring, no class registration. Lives in the
->   new `harness_manager/` Python package.
-> - **`./install.sh add <adapter>`** — append an adapter to an existing
->   project without re-running the onboarding wizard.
-> - **`./install.sh remove <adapter>`** — confirmation prompt lists every
->   file before deletion. Hard delete (no quarantine, no undo — git is
->   the safety net). Reverses post-install actions automatically (e.g.,
->   `openclaw agents remove`).
-> - **`./install.sh doctor`** — read-only audit of installed adapters.
->   Verifies tracked files exist, post-install state is valid, `.agent/`
->   brain is intact. Exits 0 on green, 1 on red. First run on a
->   pre-v0.9.0 project asks before synthesizing `install.json` — never
->   silently mutates.
-> - **`./install.sh status`** — one-screen view of installed adapters,
->   brain stats (skills/episodic/lessons), last-updated timestamp.
-> - **`.agent/install.json`** — authoritative record of what's installed.
->   Schema-versioned. Atomic write via tempfile + rename, fcntl-locked
->   on POSIX.
-> - **PowerShell parity from day one.** `install.ps1` is now a 70-line
->   thin dispatcher to the same Python backend `install.sh` uses. The
+> Patch release that closes the gap between v0.9.0 and a working pi adapter. Every brew user on v0.9.0 hit the first bug; the rest are quieter but make the dream cycle and the cross-harness episodic log actually correct.
+> 
+> ## Highlights
+> 
+> - **`agentic-stack pi` no longer crashes for brew users.** The v0.9.0 Formula didn't include `harness_manager/` in `pkgshare.install`. Now it does.
+> - **Pi's dream cycle actually runs.** `session_shutdown` handler filtered on `event.reason`, but Pi's `SessionShutdownEvent` carries no `reason` field. The filter rejected every event; `auto_dream.py` never ran. Filter dropped, re-entrancy guard added.
+> - **Pi edit reflections capture the diff again.** Hook expected MultiEdit's `edits[]` array; Pi's `EditToolInput` is flat `{path, oldText, newText}`. Reflections silently degraded to `Edited <path>`. Now reads the flat fields.
+> - **No more aware-vs-naive crashes on clean pi exit.** `decay.py` cutoff is UTC; entry timestamps normalised to UTC before comparison.
+> - **Timezone sweep across every Python writer + reader.** `post_execution`, `on_failure`, `learn`, `graduate`, `promote`, `review_state`, `render_lessons` all wrote naive-local; readers normalise mixed shapes.
+> - **`auto_dream` no longer loses entries that land mid-cycle.** Single exclusive `flock` held across the entire read-modify-write window via `_episodic_locked()`. Mutually exclusive with `_episodic_io.append_jsonl`.
 > ...（完整內容見 GitHub）
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者定期更新並回應問題。
-**連結**：[文件](https://github.com/codejunkie99/agentic-stack/blob/main/README.md)
+**社群活躍度**：社群活躍度中等，開發者定期更新和回應問題。
+**連結**：[文件](https://github.com/codejunkie99/agentic-stack)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-23 ~ 2026-04-24）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #23 from codejunkie99/imgbot
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#20](https://github.com/codejunkie99/agentic-stack/issues/20) | VS Code Copilot support `Medium Priority` | 0 | 1 |
+> [!abstract] 最近 10 次 commit（2026-04-24 ~ 2026-04-25）
+> **活躍天數** 2 天 · **最新 commit** docs(changelog): add v0.9.1 release info — tag, GH release URL, brew sha
 
 ## README 摘錄
 
@@ -476,7 +452,29 @@ Agentic Stack 的核心技術在於其模組化的適配器管理系統，這使
 > The index is stored at `.agent/memory/.index/` and gitignored.
 > 
 > 
-> ### New in v0.9.0 — harness manager
+> ### New in v0.9.1 — pi adapter fixes + tz correctness
+> 
+> Patch release. Closes the gap between v0.9.0 and a working pi adapter,
+> plus a timezone sweep across every Python writer/reader so the dream
+> cycle stops drifting against the UTC decay window.
+> 
+> - Brew users on v0.9.0 hit `ModuleNotFoundError: harness_manager` on
+>   first run. Formula now installs `harness_manager/` correctly.
+> - Pi's dream cycle never fired (`session_shutdown` filter rejected every
+>   event because `SessionShutdownEvent` has no `reason` field). Now runs.
+> - Pi's edit reflections were missing the diff (hook expected MultiEdit
+>   shape; Pi's edit input is flat). Now captures `oldText` / `newText`.
+> - Naive-local Python timestamps reinterpreted at decay time as UTC
+>   caused silent drift. Every writer now emits aware UTC; every reader
+>   normalises naive entries before comparing.
+> - `auto_dream` held no lock across its read-modify-write window —
+>   concurrent appenders could be silently truncated. Now holds a single
+>   `flock(LOCK_EX)` on the episodic log for the full cycle.
+> 
+> See [CHANGELOG.md](CHANGELOG.md) for the full list.
+> 
+> 
+> ### v0.9.0 — harness manager
 > 
 >   
 > 
@@ -485,8 +483,7 @@ Agentic Stack 的核心技術在於其模組化的適配器管理系統，這使
 > verb subcommands or an interactive TUI. Cross-platform (POSIX +
 > Windows) with concurrent-write protection, pre-v0.9 migration via
 > `./install.sh doctor`, and shared-file ownership tracking so removing
-> one adapter never orphans another. See [CHANGELOG.md](CHANGELOG.md)
-> for the full list.
+> one adapter never orphans another.
 > 
 > [](https://github.com/codejunkie99/agentic-stack/releases)
 > [](LICENSE)
@@ -611,36 +608,13 @@ Agentic Stack 的核心技術在於其模組化的適配器管理系統，這使
 >   (`graduate.py`, `reject.py`, `reopen.py`) and commits decisions with
 >   a required rationale. No unattended reasoning, no provider coupling.
 > - **Skills** — progressive disclosure. A lightweight manifest always
->   loads; full `SKILL.md` files only load when triggers match the task.
->   Every skill ships with a self-rewrite hook.
-> - **Protocols** — typed tool schemas, a `permissions.md` that the
->   pre-tool-call hook enforces, and a delegation contract for sub-agents.
-> 
-> 
-> ## Memory search `[BETA]`
-> 
-> Opt-in FTS5 keyword search over all memory documents:
-> 
-> ```bash
-> 
-> ## Supported harnesses
-> 
-> | Harness | Config file it reads | Hook support |
-> |---|---|---|
-> | **Claude Code** | `CLAUDE.md` + `.claude/settings.json` | yes (PostToolUse, Stop) |
-> | **Cursor** | `.cursor/rules/*.mdc` | no (manual reflect calls) |
-> | **Windsurf** | `.windsurfrules` | no (manual reflect calls) |
-> | **OpenCode** | `AGENTS.md` + `opencode.json` | partial (permission rules) |
-> | **OpenClaw** | `AGENTS.md` (auto-injected) + per-project `openclaw agents add --workspace` | varies by fork |
-> | **Hermes Agent** | `AGENTS.md` (agentskills.io compatible) | partial (own memory) |
-> | **Pi Coding Agent** | `AGENTS.md` + `.pi/skills/` + `.pi/extensions/` | yes (`tool_result` event) |
-> | **Codex** | `AGENTS.md` + `.agents/skills/` | no (manual ref
+>   loads; full `SKILL.md` files only load when trigge
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[微服務]] · [[容器化]]
+相關概念：[[自動化]] · [[多模態]] · [[記憶管理]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]]
 
 [GitHub](https://github.com/codejunkie99/agentic-stack)
 
@@ -682,7 +656,7 @@ Agentic Stack 的核心技術在於其模組化的適配器管理系統，這使
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","微服務","容器化"];
+> const concepts = ["自動化","多模態","記憶管理"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "codejunkie99--agentic-stack" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

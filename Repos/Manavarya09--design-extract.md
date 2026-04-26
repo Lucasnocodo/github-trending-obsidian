@@ -6,19 +6,19 @@ owner_type: User
 language: JavaScript
 license: MIT
 description: "Extract any website's complete design system with one command. DTCG tokens, semantic+primitive+composite, MCP server for Claude Code/Cursor/Windsurf, multi-platform emitters (iOS SwiftUI, Android Compose, Flutter, WordPress), Tailwind v4, Figma variables, shadcn/ui, CSS health audit, WCAG remediation, Chrome extension. MIT, Playwright, Node 20+."
-homepage: "https://designlang.manavaryasingh.com"
-stars: 1519
-stars_per_day: 169
-forks: 142
+homepage: "https://www.designlang.app"
+stars: 1585
+stars_per_day: 159
+forks: 147
 open_issues: 0
 created: 2026-04-15
-pushed_at: 2026-04-24
+pushed_at: 2026-04-25
 first_seen: 2026-04-18
 week: "2026-W16"
 month: "2026-04"
 category: "開發工具"
 subcategory: "設計系統"
-release_tag: "v11.1.0"
+release_tag: "v11.2.0"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-18
-use_case: "一鍵提取任何網站的完整設計系統，生成多種格式的設計語言。"
+use_case: "一條命令提取任何網站的完整設計系統，生成多種格式的設計資源。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-04-25"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 100
-repo_size_kb: 8530
+repo_size_kb: 8470
 readme_length: 9976
 bus_factor: 1
 last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-18"
-star_history: "2026-04-18:882,2026-04-18:883,2026-04-19:1007,2026-04-19:1007,2026-04-20:1089,2026-04-20:1089,2026-04-21:1155,2026-04-21:1157,2026-04-22:1277,2026-04-22:1278,2026-04-23:1376,2026-04-24:1446,2026-04-25:1519"
+star_history: "2026-04-18:882,2026-04-18:883,2026-04-19:1007,2026-04-19:1007,2026-04-20:1089,2026-04-20:1089,2026-04-21:1155,2026-04-21:1157,2026-04-22:1277,2026-04-22:1278,2026-04-23:1376,2026-04-24:1446,2026-04-25:1519,2026-04-26:1585"
 tags:
   - github
   - "category/開發工具"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "design-extract"
   - "Manavarya09/design-extract"
-  - "一鍵提取任何網站的完整設計系統，生成多種格式的設計語言。"
+  - "一條命令提取任何網站的完整設計系統，生成多種格式的設計資源。"
 ---
 
 # design-extract
 
-**1.5k** stars · **169** stars/天 · 建立 9 天前 · JavaScript · MIT
+**1.6k** stars · **159** stars/天 · 建立 10 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Manavarya09--design-extract");
@@ -74,18 +74,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v11.1.0` `easy-install`
+`v11.2.0` `easy-install`
 
 `accessibility` `agent-skill` `ai` `chrome-extension` `claude-code-plugin` `cli` `css` `cursor` `design-system` `design-to-code` `design-tokens` `dtcg` `figma` `mcp-server` `npx` `playwright` `shadcn-ui` `skills-sh` `tailwind` `web-scraping`
 
 > [!summary] 一句話摘要
-> 一鍵提取任何網站的完整設計系統，生成多種格式的設計語言。
+> 一條命令提取任何網站的完整設計系統，生成多種格式的設計資源。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (169 stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (159 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要快速提取和生成設計系統的前端開發者和設計師。
-> **一句話重點** 這個工具不僅能提取設計，還能分析網站的可及性和動態效果，為前端開發者提供了強大的支持。
+> **適合** 需要快速提取和重用網站設計資源的前端開發者和設計師。
+> **一句話重點** 這個專案的強大之處在於其能夠自動化提取網站設計系統，並生成多種可用格式，極大地提升了設計資源的重用效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,105 +108,105 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** low
-> **結論** 花3小時學習，2小時整合，能快速獲得設計系統，值得投資。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，3 小時整合，能夠快速提取設計資源，值得投入。
 
 > [!abstract] 核心創新
-> 能夠提取網站的完整設計語言，包括動態效果和可及性評分。
+> 能夠提取網站的設計系統並生成多種格式的設計資源，這在市場上是獨一無二的。
 
 ## 專案簡介
 
-這個工具的核心機制是透過無頭瀏覽器爬取網站，提取所有計算樣式，並生成超過17種輸出文件，包括AI優化的Markdown文件、視覺HTML預覽、Tailwind配置、React主題等。使用者只需執行一條命令，例如 `npx designlang https://stripe.com --full`，即可獲得完整的設計語言，這樣的設計選擇是為了簡化設計提取過程，避免手動操作的繁瑣。技術上，它使用Playwright來進行網站爬取，並生成W3C設計標記、CSS自定義屬性等，這些都是現代前端開發中不可或缺的元素。相較於其他工具，這個專案不僅提取顏色和字體，還能分析佈局模式、動態語言、組件解剖學等，這讓它在設計系統的完整性上更具優勢。與Figma或Sketch等設計工具相比，這個工具的優勢在於它能直接從現有網站提取設計，而不僅僅是設計稿，這對於需要快速迭代的團隊來說非常有用。
+這個專案的核心機制是透過 headless browser 爬取網站，提取所有計算出的樣式，並生成超過 17 種輸出文件，包括 AI 優化的 markdown 文件、HTML 預覽、Tailwind 配置、React 主題等。使用者只需執行 `npx designlang <url>`，便能獲得完整的設計語言與資源，這樣的設計能夠幫助開發者快速獲取網站的設計元素，並進行二次開發。技術上，它利用 Playwright 來進行網頁爬取，並生成 W3C DTCG tokens、CSS 自定義屬性等，這樣的選擇使得提取過程既快速又準確，並且支持多平台輸出。與其他工具相比，這個專案不僅能提取顏色和字體，還能捕捉佈局模式、動作語言和響應行為，這使得它在設計系統提取上更具優勢。
 
-使用者可以在多個平台上發佈設計，包括iOS、Android和WordPress，這使得它在多平台開發中非常靈活。實際使用中，這個工具能夠處理複雜的網站結構，並提供WCAG可及性評分，這對於需要遵循無障礙標準的開發者來說至關重要。這個專案目前處於穩定階段，並且有活躍的社群支持，適合中小型團隊在設計系統開發中使用。未來可能會進一步增強AI功能，以提升設計提取的智能化程度。
+與 Figma、Tailwind 等工具的整合，使得設計資源的使用更加靈活。使用者在使用過程中可能會遇到的問題包括需要正確配置 Node 環境和 Playwright 的依賴，這些都是在安裝過程中需要注意的。這個專案目前處於穩定版本，適合中小型團隊快速建立設計系統，未來可能會持續增強與其他設計工具的整合能力。對於需要快速提取和重用設計資源的開發者來說，這是一個非常有價值的工具。
 
-**技術棧**：`Playwright` · `Node.js 20+` · `TypeScript`
+**技術棧**：`Node.js 20+` · `Playwright` · `TypeScript` · `CSS`
 
 ## 重點功能
 
-- 一鍵提取 — 透過 `npx designlang <url> --full` 提取網站的完整設計語言。
-- 多平台支持 — 生成iOS SwiftUI、Android Compose、Flutter和WordPress的設計資源。
-- WCAG可及性評分 — 自動評估設計的可及性，確保符合無障礙標準。
-- 動態語言提取 — 提取網站的動態效果，包括過渡和關鍵幀。
-- 多品牌比較 — 使用 `designlang brands` 命令比較多個網站的設計系統。
+- 多格式輸出 — 生成包括 markdown、HTML、Tailwind 配置等多種格式的設計資源。
+- 全自動提取 — 自動提取顏色、字體、佈局模式、動作語言等設計元素。
+- 多平台支持 — 支援 iOS、Android、Flutter 和 WordPress 的輸出。
+- WCAG 可及性評分 — 自動評估設計的可及性，並提供改善建議。
+- 設計比較功能 — 能夠比較多個品牌的設計系統，生成對比報告。
 
 ## 快速開始
 
-1. 從網站提取設計語言
+1. 直接使用 CLI 提取設計系統
 ```bash
 npx designlang https://example.com
 ```
-2. 提取完整設計系統
+2. 全功能提取設計系統
 ```bash
-npx designlang https://stripe.com --full
+npx designlang https://example.com --full
 ```
-3. 生成多品牌比較報告
+3. 安裝為全局命令
 ```bash
-designlang brands stripe.com vercel.com github.com
+npm install -g designlang
 ```
 
 ## 程式碼範例
 
 ```js
 {
-  "前置條件": "需要安裝Node.js 20+",
-  "指令": "npx designlang https://stripe.com --full",
-  "預期輸出": "✓ stripe-com-design-language.md (32.6KB)\n✓ stripe-com-design-tokens.json (5.6KB)\n✓ stripe-com-tailwind.config.js (3.4KB)\n✓ stripe-com-variables.css (18.6KB)"
+  "前置條件": "已安裝 Node.js 和 npm",
+  "指令": "npx designlang https://stripe.com",
+  "預期輸出": "生成 stripe-com-design-language.md 等多個設計資源文件。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立9天內累積1519 stars（169/天），forks 142（9.3%），顯示出強勁的增長潛力。作者Manavarya09在設計系統和前端開發領域有豐富經驗，這個工具解決了以往設計提取過程中繁瑣的手動操作，讓開發者能夠快速獲得完整的設計語言。近期的推廣活動和社群討論也提升了其曝光率。技術上，這個工具的出現正好搭配了無頭瀏覽器和設計標記的流行趨勢，讓設計提取變得更為可行。高達9.3%的forks/stars比率顯示出許多人在實際修改和使用這個工具。
+> 建立 10 天內累積 1585 stars（159/天），forks 147（9.3%），顯示出強勁的增長潛力。這個專案的作者 Manavarya09 先前在設計系統和工具開發上有一定的經驗，這使得他能夠針對市場需求開發出這樣的工具。該工具解決了設計資源提取的痛點，過去開發者需要手動收集和整理設計元素，這不僅耗時，還容易出錯。這個工具的出現讓這一過程自動化，並且提供了多種格式的輸出，極大地提升了工作效率。最近的社群討論和推廣活動也為其增長提供了助力。整體來看，這個專案的增長是由於其獨特的功能和市場需求的結合。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速提取和生成設計系統的前端開發者和設計師。
+**目標受眾**：需要快速提取和重用網站設計資源的前端開發者和設計師。
 
 > [!example] 使用場景
-> - 前端工程師用它來從現有網站提取設計語言，因為這樣能快速生成符合現有設計的開發資源，節省手動設計的時間。
-> - UX設計師用它來分析競爭對手的設計系統，因為它能提供詳細的顏色、字體和佈局信息，幫助設計決策。
-> - 產品經理用它來監控設計一致性，因為它能生成多頁面的一致性報告，確保品牌形象的統一性。
+> - 前端工程師用它來快速提取網站設計系統，因為手動收集設計元素耗時且容易出錯。
+> - 設計師用它來生成 Figma 變數，因為這樣可以快速將設計轉化為可用的代碼。
+> - 產品經理用它來比較不同網站的設計風格，因為這樣能夠更好地理解競爭對手的設計策略。
 
 ## 架構分析
 
-這個專案採用無頭瀏覽器架構，利用Playwright進行網站爬取和樣式提取。資料流從網站的DOM開始，經過計算樣式的提取，最終生成多種格式的設計資源。這樣的設計選擇使得工具能夠在不依賴特定框架的情況下，廣泛適用於各種網站。
+這個專案採用模組化設計，主要由 Node.js 和 Playwright 組成，利用 Playwright 進行網頁爬取並提取樣式。資料流從網站的 DOM 開始，經過解析和處理，最終生成多種格式的設計資源。這樣的設計使得提取過程高效且靈活。
 
-選擇Playwright而非其他爬蟲工具的原因在於其強大的互動能力和對現代網站的支持。這個架構的代價是需要一定的計算資源，特別是在處理大型網站時。擴展性方面，這個工具能夠隨著網站的增長而擴展，但在高流量網站上可能會遇到性能瓶頸。
+選擇 Node.js 作為主要語言是因為它的非同步特性能夠有效處理 I/O 密集型操作，而 Playwright 提供了強大的瀏覽器自動化能力。這樣的選擇帶來了快速的提取速度，但也可能在處理大型網站時面臨性能瓶頸。整體架構設計考慮到了擴展性，未來可以增加更多的輸出格式或功能。
 
 ## 技術深入分析
 
-這個工具的核心技術機制是使用Playwright進行網站爬取，並提取所有計算樣式，生成多種輸出文件。它能夠處理複雜的網站結構，並提供WCAG可及性評分，這對於需要遵循無障礙標準的開發者來說至關重要。效能方面，這個工具能夠在合理的時間內完成設計提取，但在處理大型網站時可能會遇到性能瓶頸。選擇Node.js和TypeScript作為開發語言，讓這個工具在現代前端開發中具備良好的兼容性和可維護性。這個工具的依賴樹相對簡單，主要依賴Playwright和一些基本的Node.js庫，降低了使用的門檻。技術風險方面，對於某些動態內容的捕捉可能不完全，這需要在未來的版本中進一步改善。整合方面，這個工具可以輕鬆與現有的前端開發流程結合，並且支持多平台的設計輸出，這使得它在實際使用中非常靈活。
+這個專案的核心技術機制是利用 Playwright 進行網站爬取，並提取所有計算出的樣式，生成多種格式的設計資源。它使用了多種演算法來分析網站的 DOM 結構，並提取顏色、字體、佈局模式等元素。效能方面，該工具能夠在短時間內處理大型網站，但在某些情況下可能會受到網站結構的影響，導致提取速度變慢。選擇 Node.js 作為主要語言是因為它的非同步特性能夠有效處理 I/O 密集型操作，而 Playwright 提供了強大的瀏覽器自動化能力。這樣的選擇使得專案在性能和靈活性上達到了良好的平衡。技術風險方面，若網站結構發生重大變化，可能會影響提取的準確性。整合方面，該工具能夠與多種設計工具（如 Figma 和 Tailwind）無縫對接，並且支持 CI/CD 流程，這使得它在現代開發環境中具有很高的適應性。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README文件清晰且詳細，提供了多個範例和安裝指令。安裝過程相對順暢，使用者只需確保Node.js版本符合要求。文件中有良好的入門指南，能夠幫助新手快速上手。
+> README 文件清晰且提供了多個範例，安裝過程相對順暢，但需要注意 Node 環境的配置。文件沒有多語言版本，目前僅提供英文。整體來說，新手在 30 分鐘內應該能夠成功運行該工具。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速提取設計系統，節省時間。
-> - 支持多平台生成，靈活性高。
-> - 自動化可及性評分，符合無障礙標準。
+> - 快速提取網站設計系統，節省時間。
+> - 支持多種輸出格式，方便開發者使用。
+> - 自動化評估可及性，提升設計質量。
 
 > [!danger] 缺點
-> - 對於某些動態內容的捕捉可能不完全。
-> - 需要Node.js 20以上，限制了使用者範圍。
-> - 在處理大型網站時可能性能不足。
+> - 需要一定的 Node.js 環境配置，對新手不友好。
+> - 對於某些網站可能無法完全提取所有設計元素。
+> - 在某些情況下，提取速度可能受到網站結構的影響。
 
 > [!warning] 注意事項
-> - 僅支援 Node.js 20 以上版本。
-> - 對於某些動態內容，可能無法完全捕捉所有交互狀態。
-> - 在處理大型網站時，可能會遇到性能瓶頸。
+> - 需要 Node.js 20+ 環境才能運行。
+> - 對於某些需要身份驗證的網站，可能需要額外配置 cookie。
+> - 在提取過程中可能會受到網站結構的影響，導致部分元素無法正確提取。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於設計系統的版本控制，而本專案則強調從現有網站提取設計。 |
-| [HKUDS/OpenHarness](https://github.com/HKUDS/OpenHarness) | OpenHarness專注於設計工具的整合，而本專案則提供全面的設計提取和生成能力。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於設計資源的版本控制，而本專案則專注於設計系統的提取和生成。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 該工具主要用於生成 AI 相關的設計資源，而本專案則提供更全面的設計系統提取功能。 |
 
 ## 替代方案決策
 
@@ -214,16 +214,16 @@ designlang brands stripe.com vercel.com github.com
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於設計系統的版本控制，提供了設計變更的追蹤功能，而本專案則強調從現有網站提取設計。 | 如果你的團隊需要對設計變更進行嚴格的版本控制，則應選擇這個工具。 | medium，因為需要重新設計工作流程以適應版本控制的需求。 |
-| [HKUDS/OpenHarness](https://github.com/HKUDS/OpenHarness) | 專注於設計工具的整合，提供了多種設計工具的支持，而本專案則提供全面的設計提取和生成能力。 | 如果你的團隊已經在使用多種設計工具，並需要一個整合平台，則應選擇這個工具。 | low，因為可以直接整合到現有的設計流程中。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於設計資源的版本控制，而本專案則專注於設計系統的提取和生成。 | 如果需要對設計資源進行版本管理，這個工具會更合適。 | medium，因為需要重新配置設計資源的管理流程。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 主要用於生成 AI 相關的設計資源，而本專案則提供更全面的設計系統提取功能。 | 如果專注於 AI 設計資源的生成，這個工具會更適合。 | low，因為功能上有一定的重疊。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **design-extract** | **boneyard** | **OpenHarness** |
+> | 維度 | **design-extract** | **boneyard** | **claude-obsidian** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於設計系統的版本控制，提供了設計變更的追蹤功能，而本專案則強調從現有網站提取設計。 | 專注於設計工具的整合，提供了多種設計工具的支持，而本專案則提供全面的設計提取和生成能力。 |
-> | 遷移成本 | - | medium，因為需要重新設計工作流程以適應版本控制的需求。 | low，因為可以直接整合到現有的設計流程中。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要對設計變更進行嚴格的版本控制，則應選擇這個工 | 如果你的團隊已經在使用多種設計工具，並需要一個整合平台，則應 |
+> | 技術路線 | 本專案 | 專注於設計資源的版本控制，而本專案則專注於設計系統的提取和生成。 | 主要用於生成 AI 相關的設計資源，而本專案則提供更全面的設計系統提取功能。 |
+> | 遷移成本 | - | medium，因為需要重新配置設計資源的管理流程。 | low，因為功能上有一定的重疊。 |
+> | 適用場景 | 主要場景 | 如果需要對設計資源進行版本管理，這個工具會更合適。 | 如果專注於 AI 設計資源的生成，這個工具會更適合。 |
 
 ## 成熟度評估
 
@@ -234,56 +234,41 @@ designlang brands stripe.com vercel.com github.com
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人項目或小型團隊試用，但不建議用在生產環境的核心路徑上。
+> 適合個人或小型團隊試用，不建議在生產環境的核心路徑上使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 某些動態內容的捕捉可能不完全，特別是在複雜的網站上。
-  - 解法：在提取之前手動檢查網站的動態效果。
-- **[HIGH]** 需要Node.js 20以上，對於舊版本的使用者不友好。
-  - 解法：升級Node.js版本。
-- [MEDIUM] 在處理大型網站時可能會遇到性能瓶頸。
-  - 解法：考慮分批提取或使用更高效的硬體。
+- **[HIGH]** 對於某些需要身份驗證的網站，提取過程可能會失敗。
+  - 解法：需要配置正確的 cookie 或使用 `--cookie` 參數。
+- [MEDIUM] 在某些網站上，提取的設計元素可能不完整。
+  - 解法：可以嘗試使用 `--full` 參數以獲得更全面的提取。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10人以下的新創公司後端API | 非常適合 | 能快速提取設計語言，節省開發時間。 |
-| 大型企業的設計系統管理 | 普通 | 可能在性能上遇到瓶頸，但仍能提供有價值的設計提取。 |
-| 需要遵循無障礙標準的開發團隊 | 非常適合 | 自動化的WCAG評分功能非常有用。 |
-| 對設計變更有嚴格控制需求的團隊 | 不適合 | 缺乏版本控制功能。 |
+| 中小型開發團隊的設計系統提取 | 非常適合 | 能夠快速提取和生成多種格式的設計資源，提升開發效率。 |
+| 大型企業的設計系統管理 | 普通 | 在大型網站上可能會遇到性能瓶頸，提取準確性需要進一步驗證。 |
+| 需要快速比較多個品牌設計的市場分析團隊 | 非常適合 | 提供多品牌比較功能，能夠快速獲得設計見解。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~3 小時 |
-| 整合時間 | ~2 小時 |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~3 小時 |
 | 維護負擔 | low |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花3小時學習，2小時整合，能快速獲得設計系統，值得投資。
+> 花 2 小時學習，3 小時整合，能夠快速提取設計資源，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，僅需訪問網站資料，且不會存取敏感資料。依賴鏈中無已知的供應鏈風險，適合在CI/CD中使用。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-這個工具最常與現有的前端開發工具鏈搭配使用，特別是在設計系統開發和維護過程中。實際整合範例包括在使用Next.js的專案中，透過 `npx designlang` 提取設計並生成相應的配置文件。它也能與CI/CD工具如GitHub Actions整合，實現設計回歸測試。與主流IDE如VS Code的整合也相對簡單，提供了VS Code擴展來直接提取設計。整合的摩擦點主要在於需要確保Node.js版本符合要求，並且在大型網站提取時可能需要調整性能設定。
-
-## 歷史脈絡
-
-> [!info] 這個工具為什麼現在出現？
-
-在這個工具出現之前，開發者通常依賴手動提取設計元素，這樣的過程繁瑣且容易出錯。隨著無頭瀏覽器技術的進步，這個工具能夠自動化提取過程，並提供更全面的設計語言。這個工具代表了設計提取自動化的趨勢，未來可能會進一步整合AI技術，提升提取的智能化程度。
+> 低風險：該工具本身不需要高權限，主要通過爬取公共網站數據，不存取敏感資料。
 
 ## 健康度儀表板
 
@@ -348,12 +333,12 @@ designlang brands stripe.com vercel.com github.com
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 142 |
+| Forks | 147 |
 | Open Issues | 0 |
 | Issue 解決率 | 100% (14 closed) |
-| 最後推送 | 2026-04-24 |
+| 最後推送 | 2026-04-25 |
 | 建立日期 | 2026-04-15 |
-| 官方網站 | [Link](https://designlang.manavaryasingh.com) |
+| 官方網站 | [Link](https://www.designlang.app) |
 | Repo 大小 | 8.3 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Manavarya09/design-extract) |
 | Topics | `accessibility` `agent-skill` `ai` `chrome-extension` `claude-code-plugin` `cli` `css` `cursor` |
@@ -373,55 +358,37 @@ designlang brands stripe.com vercel.com github.com
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Manavarya09](https://github.com/Manavarya09) | 75 |
+> | [@Manavarya09](https://github.com/Manavarya09) | 82 |
 > | [@bot-manavarya](https://github.com/bot-manavarya) | 2 |
 > | [@ArturLinnik](https://github.com/ArturLinnik) | 1 |
 > | [@OyaAIProd](https://github.com/OyaAIProd) | 1 |
 > | [@vercel[bot]](https://github.com/vercel[bot]) | 1 |
 
-**最新版本**：v11.1.0 — v11.1.0 — storybook emitter + motion replay (2026-04-24)
+**最新版本**：v11.2.0 — v11.2.0 — DESIGN.md + vs/design-extractor (2026-04-25)
 
 > [!info]- Release Notes
-> Closes #9 and #10.
+> ### The agent-native artifact, ours by default
 > 
-> ### \`--storybook\`
-> 
-> Emits a runnable Storybook project from detected \`componentAnatomy\`:
-> 
-> - One \`*.stories.tsx\` per kind (button, card, input, …) with variant + size controls
-> - \`stories/Tokens.mdx\` with \`ColorPalette\` blocks
-> - \`stories/tokens.css\` derived from extracted palette, radius, shadow, font
-> - \`.storybook/main.ts\`, \`.storybook/preview.ts\`, \`package.json\`, \`tsconfig.json\`, \`README.md\`
+> \`designlang <url>\` now writes a \`*-DESIGN.md\` alongside everything else. Single-file, 8-section (Overview · Colors · Typography · Layout · Elevation and Depth · Shapes · Components · Do's and Don'ts), YAML front matter with the machine-readable token snapshot. Compatible with the convention pioneered by [design-extractor.com](https://www.design-extractor.com), but the body is fed by our v10/v11 semantic layer (intent, material, voice, library, anatomy) so it has more to say than a token dump.
 > 
 > \`\`\`
-> npx designlang <url> --storybook --full
-> cd <outDir>/<prefix>-storybook && npm install && npm run storybook
+> npx designlang stripe.com           # writes stripe-com-DESIGN.md
+> npx designlang stripe.com --no-design-md  # opt out
 > \`\`\`
 > 
-> ### \`designlang replay\`
+> ### And the comparison page
 > 
-> Records a short WebM of a site's motion via Playwright's built-in recording — scripted scroll + hover to force transitions and keyframes to fire. Optional MP4 if \`ffmpeg\` is on PATH. Zero new deps.
-> 
-> \`\`\`
-> npx designlang replay stripe.com -d 5
-> npx designlang replay stripe.com -d 5 --mp4
-> \`\`\`
-> 
-> ### Also stubbed / closed with evidence
-> 
-> - #8 — figma plugin already shipped in \`figma-plugin/\`
-> - #11 — cross-origin CSS fetch + parse already in \`crawler.js\` (\`parseCrossOriginCSS\`)
-> - #12 — open shadow roots already traversed in \`collectElements\`; closed roots are unreachable by web platform spec
+> [/vs/design-extractor](https://github.com/Manavarya09/design-extract/blob/main/website/app/vs/design-extractor/page.js) — honest feature table, a real DESIGN.md sample, and the extraction we ran on design-extractor.com itself (\`library: tailwindcss (0.842)\`, \`voice: friendly · sentence case · tight\`, 8 colors). Live on the website.
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，問題解決率100%。
-**連結**：[文件](https://designlang.manavaryasingh.com)
+**社群活躍度**：社群活躍，問題解決率達 100%。
+**連結**：[文件](https://www.designlang.app)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-23 ~ 2026-04-24）
-> **活躍天數** 2 天 · **最新 commit** security: SECURITY.md + CodeQL + postcss >=8.5.10 override
+> [!abstract] 最近 10 次 commit（2026-04-24 ~ 2026-04-25）
+> **活躍天數** 2 天 · **最新 commit** security: fix all 16 real CodeQL findings
 
 ## README 摘錄
 
@@ -584,11 +551,11 @@ designlang brands stripe.com vercel.com github.com
 
 ## 延伸閱讀
 
-相關概念：[[設計系統]] · [[無頭瀏覽器]] · [[WCAG]] · [[設計標記]] · [[前端開發]]
+相關概念：[[設計系統]] · [[設計語言]] · [[WCAG]] · [[自動化測試]] · [[網頁爬蟲]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
 
-[GitHub](https://github.com/Manavarya09/design-extract) · [官方網站](https://designlang.manavaryasingh.com)
+[GitHub](https://github.com/Manavarya09/design-extract) · [官方網站](https://www.designlang.app)
 
 ## 相關收錄
 
@@ -628,7 +595,7 @@ designlang brands stripe.com vercel.com github.com
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["設計系統","無頭瀏覽器","WCAG","設計標記","前端開發"];
+> const concepts = ["設計系統","設計語言","WCAG","自動化測試","網頁爬蟲"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Manavarya09--design-extract" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
