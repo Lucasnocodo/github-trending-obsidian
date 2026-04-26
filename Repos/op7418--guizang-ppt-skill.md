@@ -7,12 +7,12 @@ language: HTML
 license: MIT
 description: "A Claude Code Skill that turns prompts into horizontal-swipe magazine-style HTML decks — 10 layouts, 5 curated themes, WebGL hero backgrounds, single-file output."
 homepage: ""
-stars: 1942
-stars_per_day: 1942
-forks: 235
-open_issues: 5
+stars: 2704
+stars_per_day: 1352
+forks: 298
+open_issues: 3
 created: 2026-04-23
-pushed_at: 2026-04-24
+pushed_at: 2026-04-25
 first_seen: 2026-04-25
 week: "2026-W17"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "將提示轉換為橫向滑動的雜誌風格 HTML 演示文稿，提
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-28"
+appearances: 2
+next_review: "2026-04-29"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-25"
-star_history: "2026-04-25:1942"
+star_history: "2026-04-25:1942,2026-04-26:2704"
 tags:
   - github
   - "category/開發工具"
@@ -810,4 +810,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-26|2026-04-26]] — 再次上榜，2.7k stars
 - [[2026-04-25|2026-04-25]] — 首次收錄，1.9k stars

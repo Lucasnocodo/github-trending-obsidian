@@ -7,8 +7,8 @@ language: Python
 license: N/A
 description: ""
 homepage: ""
-stars: 1059
-stars_per_day: 212
+stars: 1075
+stars_per_day: 179
 forks: 100
 open_issues: 19
 created: 2026-04-19
@@ -30,8 +30,8 @@ use_case: "持續記錄學術黑榜的變更，保留每次編輯的歷史。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-04-28"
+appearances: 4
+next_review: "2026-05-03"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 13
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-23"
-star_history: "2026-04-23:880,2026-04-24:1025,2026-04-25:1059"
+star_history: "2026-04-23:880,2026-04-24:1025,2026-04-25:1059,2026-04-26:1075"
 tags:
   - github
   - "category/其他"
@@ -713,6 +713,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-26|2026-04-26]] — 再次上榜，1.1k stars
 - [[2026-04-25|2026-04-25]] — 再次上榜，1.1k stars
 - [[2026-04-24|2026-04-24]] — 再次上榜，1.0k stars
 - [[2026-04-23|2026-04-23]] — 首次收錄，880 stars

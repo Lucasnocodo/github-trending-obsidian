@@ -1226,17 +1226,17 @@
   },
   "alchaincyf/huashu-design": {
     "first_seen": "2026-04-22",
-    "last_seen": "2026-04-25",
-    "times_seen": 4,
+    "last_seen": "2026-04-26",
+    "times_seen": 5,
     "stars_first": 3080,
-    "stars_last": 6096
+    "stars_last": 6518
   },
   "tw93/Kami": {
     "first_seen": "2026-04-22",
-    "last_seen": "2026-04-25",
-    "times_seen": 4,
+    "last_seen": "2026-04-26",
+    "times_seen": 5,
     "stars_first": 1594,
-    "stars_last": 3050
+    "stars_last": 3262
   },
   "codejunkie99/agentic-stack": {
     "first_seen": "2026-04-22",
@@ -1268,10 +1268,10 @@
   },
   "the-hidden-fish/advisor-ledger": {
     "first_seen": "2026-04-23",
-    "last_seen": "2026-04-25",
-    "times_seen": 3,
+    "last_seen": "2026-04-26",
+    "times_seen": 4,
     "stars_first": 880,
-    "stars_last": 1059
+    "stars_last": 1075
   },
   "openai/privacy-filter": {
     "first_seen": "2026-04-24",
@@ -1289,23 +1289,51 @@
   },
   "op7418/guizang-ppt-skill": {
     "first_seen": "2026-04-25",
-    "last_seen": "2026-04-25",
-    "times_seen": 1,
+    "last_seen": "2026-04-26",
+    "times_seen": 2,
     "stars_first": 1942,
-    "stars_last": 1942
+    "stars_last": 2704
   },
   "deepseek-ai/TileKernels": {
     "first_seen": "2026-04-25",
-    "last_seen": "2026-04-25",
-    "times_seen": 1,
+    "last_seen": "2026-04-26",
+    "times_seen": 2,
     "stars_first": 1072,
-    "stars_last": 1072
+    "stars_last": 1160
   },
   "masterking32/MasterHttpRelayVPN": {
     "first_seen": "2026-04-25",
-    "last_seen": "2026-04-25",
-    "times_seen": 1,
+    "last_seen": "2026-04-26",
+    "times_seen": 2,
     "stars_first": 1053,
-    "stars_last": 1053
+    "stars_last": 1246
+  },
+  "ConardLi/garden-skills": {
+    "first_seen": "2026-04-26",
+    "last_seen": "2026-04-26",
+    "times_seen": 1,
+    "stars_first": 1238,
+    "stars_last": 1238
+  },
+  "Einsia/OpenChronicle": {
+    "first_seen": "2026-04-26",
+    "last_seen": "2026-04-26",
+    "times_seen": 1,
+    "stars_first": 1126,
+    "stars_last": 1126
+  },
+  "cosmicstack-labs/mercury-agent": {
+    "first_seen": "2026-04-26",
+    "last_seen": "2026-04-26",
+    "times_seen": 1,
+    "stars_first": 1117,
+    "stars_last": 1117
+  },
+  "leigest519/OpenGame": {
+    "first_seen": "2026-04-26",
+    "last_seen": "2026-04-26",
+    "times_seen": 1,
+    "stars_first": 1088,
+    "stars_last": 1088
   }
 }

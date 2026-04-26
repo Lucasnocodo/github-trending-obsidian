@@ -7,12 +7,12 @@ language: HTML
 license: NOASSERTION
 description: "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic"
 homepage: ""
-stars: 6103
-stars_per_day: 1221
-forks: 941
-open_issues: 9
+stars: 6518
+stars_per_day: 1086
+forks: 992
+open_issues: 5
 created: 2026-04-19
-pushed_at: 2026-04-21
+pushed_at: 2026-04-25
 first_seen: 2026-04-22
 week: "2026-W17"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "讓設計變得簡單，透過對話生成高保真的產品原型與
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-04-28"
+appearances: 5
+next_review: "2026-04-29"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 10
@@ -42,7 +42,7 @@ last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-22"
-star_history: "2026-04-22:3080,2026-04-22:3121,2026-04-23:4472,2026-04-23:4500,2026-04-24:5466,2026-04-24:5493,2026-04-25:6096,2026-04-25:6103"
+star_history: "2026-04-22:3080,2026-04-22:3121,2026-04-23:4472,2026-04-23:4500,2026-04-24:5466,2026-04-24:5493,2026-04-25:6096,2026-04-25:6103,2026-04-26:6518"
 tags:
   - github
   - "category/開發工具"
@@ -953,6 +953,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-26|2026-04-26]] — 再次上榜，6.5k stars
 - [[2026-04-25|2026-04-25]] — 再次上榜，6.1k stars
 - [[2026-04-24|2026-04-24]] — 再次上榜，5.5k stars
 - [[2026-04-23|2026-04-23]] — 再次上榜，4.5k stars
