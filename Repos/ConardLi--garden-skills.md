@@ -7,7 +7,7 @@ language: JavaScript
 license: MIT
 description: "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more."
 homepage: "https://github.com/ConardLi/garden-skills"
-stars: 1383
+stars: 1386
 stars_per_day: 277
 forks: 255
 open_issues: 2
@@ -17,7 +17,7 @@ first_seen: 2026-04-26
 week: "2026-W18"
 month: "2026-04"
 category: "開發工具"
-subcategory: "技能集成"
+subcategory: "AI 工具"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-26
-use_case: "提供一系列生產就緒的 AI 能力，涵蓋網頁設計、知識檢索、影像生成等功能。"
+use_case: "提供多種 AI 代理技能的開源集合，涵蓋網頁設計、知識檢索、影像生成等功能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 2
 next_review: "2026-04-30"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: -1
+issue_close_rate: 0
 repo_size_kb: 14536
 readme_length: 7788
 bus_factor: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-26"
-star_history: "2026-04-26:1238,2026-04-26:1238,2026-04-27:1383"
+star_history: "2026-04-26:1238,2026-04-26:1238,2026-04-27:1383,2026-04-27:1386"
 tags:
   - github
   - "category/開發工具"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "garden-skills"
   - "ConardLi/garden-skills"
-  - "提供一系列生產就緒的 AI 能力，涵蓋網頁設計、知識檢索、影像生成等功能。"
+  - "提供多種 AI 代理技能的開源集合，涵蓋網頁設計、知識檢索、影像生成等功能。"
 ---
 
 # garden-skills
 
-**1.2k** stars · **310** stars/天 · 建立 4 天前 · JavaScript · MIT
+**1.4k** stars · **277** stars/天 · 建立 5 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/ConardLi--garden-skills");
@@ -78,20 +78,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `agent` `claude` `gpt-image-2` `rag` `skills` `web-design`
 
 > [!summary] 一句話摘要
-> 提供一系列生產就緒的 AI 能力，涵蓋網頁設計、知識檢索、影像生成等功能。
+> 提供多種 AI 代理技能的開源集合，涵蓋網頁設計、知識檢索、影像生成等功能。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (310 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (277 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要在 AI 代理中集成多種技能的開發者，特別是對網頁設計和知識檢索有需求的團隊。
-> **一句話重點** 這個專案的強大之處在於其集中管理的技能集合，讓開發者能夠快速集成多種 AI 能力。
+> **適合** 需要在 AI 代理中整合多種技能的開發者，尤其是小型團隊或新創公司。
+> **一句話重點** 這個專案的模組化設計讓開發者能夠快速整合多種 AI 功能，特別適合小型團隊和新創公司。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/ConardLi--garden-skills");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "技能集成" && p.file.name !== "ConardLi--garden-skills" && p.status !== "archived")
+>     .where(p => p.subcategory === "AI 工具" && p.file.name !== "ConardLi--garden-skills" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -102,98 +102,100 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 技能集成 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 AI 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、3 小時整合，得到快速集成多種 AI 能力的效果，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學、5 小時整合，得到快速整合 AI 功能的效果，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個集中管理和擴展 AI 能力的解決方案，特別針對 Claude 和其他 AI 代理。
+> 這個專案提供了一個結構化的技能集合，專為多種 AI 代理設計，並遵循了標準化的技能規範。
 
 ## 專案簡介
 
-這個專案是一個針對 Claude、Cursor 和 Codex 等 AI 編碼代理的技能集合，旨在提升這些代理的功能性。使用者可以透過三種安裝方式（插件市場、手動複製、Git 子模組）將所需的技能整合到自己的專案中。每個技能都是自包含的，包含必要的文檔和範例，並遵循相同的結構，便於使用者理解和擴展。這些技能包括網頁設計、知識檢索和影像生成，具體如 `web-design-engineer` 提供了六步驟的設計流程和色彩理論，`rag-skill` 則是一個高效的本地知識檢索工具，能在不加載整個文件的情況下進行查詢。這些設計選擇的背後，考量了使用者在實際應用中的需求，並提供了易於使用的接口和範例。
+這個專案是一個針對 AI 代理（如 Claude Code、Cursor 和 Codex）設計的技能集合，讓開發者能夠快速集成多種功能。用戶可以透過簡單的指令安裝不同的技能，例如使用 `/plugin marketplace add ConardLi/web-design-skill` 來安裝網頁設計技能。這些技能包括 `web-design-engineer`、`rag-skill` 和 `gpt-image-2`，各自針對不同的需求設計，提供從網頁設計到知識檢索的功能。這樣的設計使得開發者能夠在不需要深入了解每個技能的情況下，快速上手並整合到自己的專案中。技術上，這些技能使用 JavaScript 和 Python 實作，並遵循了 Anthropic 的 Agent Skills 規範，這確保了技能的可攜性和一致性。
 
-與其他工具相比，這個專案的特點在於其專注於生產就緒的技能，並且具備良好的兼容性，支持多種代理運行環境。使用者在實際應用中可能會遇到的問題包括技能兼容性和文檔更新的需求，這些都在專案中有明確的說明。這個專案目前處於早期階段，但已經展現出強大的潛力，適合需要快速集成 AI 能力的開發者和團隊。未來幾個月，預計將會有更多技能和功能的擴展。適合需要在 AI 代理中集成多種技能的開發者，尤其是對網頁設計和知識檢索有需求的團隊。
+相較於其他類似工具，如 `travisvn/awesome-claude-skills`，這個專案提供了更為結構化的技能模組，並且支持多種代理平台，讓使用者能夠在不同環境中靈活運用。實際使用中，這些技能的效能依賴於代理的能力，並且在資料處理上有一定的限制，例如 `rag-skill` 需要在處理 PDF 和 Excel 文件前進行學習。這個專案目前仍在活躍開發中，適合需要快速集成 AI 功能的開發者，尤其是那些在小型團隊或新創公司工作的工程師。未來六個月內，預期會有更多技能被加入，並且社群的活躍度可能會進一步提升。
 
 **技術棧**：`JavaScript` · `Python`
 
 ## 重點功能
 
-- 多種安裝選項 — 支持插件市場、手動複製和 Git 子模組。
-- 生產就緒的技能 — 包含網頁設計、知識檢索和影像生成等多種技能。
-- 詳細文檔 — 每個技能都有清晰的 README 和範例，便於使用者理解。
-- 兼容性強 — 支持多種 AI 代理運行環境，如 Claude、Cursor 和 Codex。
-- 自包含的技能結構 — 每個技能都獨立，易於擴展和維護。
+- 網頁設計技能 — 提供完整的設計流程和反饋機制，包含 520 行的高級模式庫。
+- 知識檢索技能 — 使用分層索引導航，並支持 PDF 和 Excel 文件的處理。
+- 影像生成技能 — 包含 18 種類別和 70 多個結構化提示模板，支持多種運行模式。
+- 簡單安裝 — 支持通過 Claude Code 插件市場或手動複製到專案中安裝。
+- 多平台兼容 — 支持多種 AI 代理，如 Claude Code、Cursor 和 Codex CLI。
 
 ## 快速開始
 
-1. 使用插件市場安裝技能
+1. 安裝網頁設計技能
 ```bash
 /plugin marketplace add ConardLi/web-design-skill
 ```
-2. 手動複製技能到專案中
+2. 安裝知識檢索技能
 ```bash
-cp -r skills/web-design-engineer your-project/.claude/skills/
+/plugin install knowledge-base-skills@agent-skills
 ```
-3. 添加 Git 子模組以跟蹤更新
+3. 安裝影像生成技能
 ```bash
-git submodule add https://github.com/ConardLi/web-design-skill.git vendor/agent-skills
+/plugin install image-generation-skills@agent-skills
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 1238 stars（310/天），forks 233（18.8%），這顯示出強烈的社群參與。作者 ConardLi 之前在開源社群中活躍，這個專案解決了多種 AI 代理功能不足的問題，提供了一個集中管理和擴展技能的解決方案。近期的社交媒體討論和開源社群的支持也助長了這個專案的快速增長。
+> 建立 5 天內累積 1386 stars（277/天），forks 255（18.4%），顯示出相當高的興趣。這個專案的作者 ConardLi 之前在開源社群中有一定的影響力，並且這個專案解決了多個 AI 代理整合的痛點，讓開發者能夠更方便地使用各種技能。近期的推廣活動和社群討論也可能促進了這一增長。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 AI 代理中集成多種技能的開發者，特別是對網頁設計和知識檢索有需求的團隊。
+**目標受眾**：需要在 AI 代理中整合多種技能的開發者，尤其是小型團隊或新創公司。
 
 > [!example] 使用場景
-> - 前端工程師用它來快速整合網頁設計技能到現有專案，因為這樣可以節省設計時間並提升頁面質感。
-> - 數據科學家用它來在 AI 代理中集成知識檢索功能，因為這能提高查詢效率，避免重複加載資料。
-> - 產品經理用它來測試不同的影像生成技能，以便快速生成產品展示圖，因為這樣能加速產品上線流程。
+> - 前端工程師用它來快速整合網頁設計技能到現有專案中，因為這樣可以節省設計時間，並且提供更專業的界面。
+> - 資料科學家用它來實現知識檢索功能，因為這樣可以快速從大量資料中提取有用信息，提升工作效率。
+> - AI 開發者用它來生成影像，因為這樣可以利用現成的模板和模式，快速產出高品質的圖像。
 
 ## 架構分析
 
-這個專案的架構設計為每個技能獨立，便於使用者根據需求選擇和整合。每個技能都包含必要的文檔和範例，並遵循相同的結構，這樣的設計使得擴展和維護變得簡單。資料流方面，技能的使用依賴於 YAML 前置條件來告訴代理何時使用該技能，這樣可以避免不必要的資源浪費。選擇這種結構的代價在於，對於新手來說，理解每個技能的具體實現可能需要一些時間，但這樣的靈活性和擴展性是值得的。整體而言，這種設計使得專案能夠快速適應不同的使用場景和需求。
+這個專案的架構基於技能模組化設計，每個技能都獨立運行，並遵循相同的格式，這樣的設計使得擴展和維護變得容易。資料流方面，技能的前端和後端都使用了 JavaScript 和 Python，這樣可以確保在不同環境中都能運行。選擇這種模組化的方式是為了提高可重用性，但也意味著在整合時需要考慮不同技能之間的相容性。
+
+擴展性方面，隨著技能數量的增加，可能會面臨管理上的挑戰，特別是在大型專案中。整體來說，這種設計使得新技能的加入變得簡單，但也需要良好的文檔和社群支持來維持其運行。這個專案的架構設計是為了讓開發者能夠快速上手並進行自定義，但在實際使用中，可能需要進一步的調整來適應特定需求。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於其技能的獨立性和自包含性，每個技能都遵循相同的結構，這使得使用者能夠快速理解和擴展。技能的設計考慮到了使用者的需求，並提供了詳細的文檔和範例，這在其他類似工具中並不常見。效能方面，這些技能能夠在多種 AI 代理中運行，具備良好的兼容性，能夠快速適應不同的使用場景。設計取捨方面，選擇這種結構的代價在於新手可能需要花時間學習，但這樣的靈活性和擴展性是值得的。技術風險方面，隨著使用者數量的增加，可能會出現兼容性問題，尤其是在技能更新時。整合分析方面，這個專案與主流的 AI 代理（如 Claude 和 Codex）有良好的整合，並且能夠輕鬆地融入現有的開發流程中，降低了學習成本。
+這個專案的核心技術機制是基於模組化的技能設計，每個技能都遵循相同的結構，這使得開發者在整合時可以快速上手。技能的實作使用了 JavaScript 和 Python，這兩種語言的選擇使得技能能夠在多個平台上運行。效能方面，這些技能的運行效率依賴於所使用的 AI 代理的能力，特別是在處理大型資料時，可能會遇到性能瓶頸。設計上，這個專案選擇了模組化的方式來提高可重用性，但這也意味著在整合時需要考慮不同技能之間的相容性。技術風險方面，隨著技能數量的增加，管理和維護的挑戰也會隨之增加，特別是在大型專案中。整合方面，這個專案與主流框架的相容性良好，能夠輕鬆融入現有的開發流程中，對於 CI/CD pipeline 的支持也相對友好。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，包含多種安裝方式和範例，適合新手學習。安裝過程順暢，無明顯坑點。文件提供中英文版本，方便不同語言的使用者。整體而言，花 30 分鐘能夠順利上手。
+> README 文件提供了清晰的安裝指導和範例，安裝過程相對順暢，沒有明顯的坑。文件有中英文版本，方便不同語言的使用者。整體來說，花 30 分鐘就能夠成功運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 技能集合多樣，能滿足不同需求。
-> - 詳細的文檔和範例，降低學習成本。
-> - 良好的兼容性，支持多種 AI 代理。
+> - 技能模組化設計，便於擴展和維護。
+> - 支持多種 AI 代理，增加了靈活性。
+> - 安裝過程簡單，使用者可以快速上手。
 
 > [!danger] 缺點
-> - 對於新手來說，技能的整合和配置可能有一定難度。
-> - 部分技能可能需要額外的依賴和配置。
-> - 更新頻率可能影響技能的兼容性。
+> - 目前僅支援特定的代理平台，限制了使用範圍。
+> - 安裝過程中可能會遇到與官方插件的衝突。
+> - 部分技能的性能依賴於代理的能力，可能導致效能瓶頸。
 
 > [!warning] 注意事項
-> - 目前僅支持特定的 AI 代理，對於其他平台可能不兼容。
-> - 部分技能可能需要額外的配置或依賴，使用前需仔細閱讀文檔。
-> - 技能更新頻率可能影響兼容性，需定期檢查更新。
+> - 目前僅支援 Claude Code、Cursor 和 Codex CLI。
+> - 安裝過程中可能會遇到與官方插件的衝突。
+> - 部分技能的效能依賴於代理的能力，可能會有性能瓶頸。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供一系列的 AI 能力，但不如本專案專注於生產就緒的技能整合。 |
-| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 專注於影像生成的提示模板，而本專案則涵蓋更廣泛的技能集。 |
+| [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) | 這個專案提供了更結構化的技能模組，並且支持多種代理平台，讓使用者能夠在不同環境中靈活運用。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 雖然也提供技能集合，但缺乏這個專案的多平台兼容性和簡單的安裝流程。 |
 
 ## 替代方案決策
 
@@ -201,16 +203,16 @@ git submodule add https://github.com/ConardLi/web-design-skill.git vendor/agent-
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供一系列的 AI 能力，但不如本專案專注於生產就緒的技能整合。 | 如果需要一個更廣泛的 AI 能力集合，而不僅限於特定技能的整合。 | medium，因為需要重新適應不同的技能結構。 |
-| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 專注於影像生成的提示模板，而本專案則涵蓋更廣泛的技能集。 | 如果專注於影像生成的功能，並需要大量的提示模板。 | low，因為主要是功能的替代，結構相似。 |
+| [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) | 提供了一系列的技能集合，但缺乏這個專案的結構化設計和多平台支持。 | 如果你的團隊已經在使用 Travis 的技能集合，並希望保持一致性。 | medium，因為需要重新調整技能的整合方式。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 雖然也提供技能集合，但缺乏這個專案的多平台兼容性和簡單的安裝流程。 | 如果你的專案需要特定的技能，而這些技能在 boneyard 中可用。 | high，因為需要重新設計整合流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **garden-skills** | **boneyard** | **awesome-gpt-image-2-prompts** |
+> | 維度 | **garden-skills** | **awesome-claude-skills** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供一系列的 AI 能力，但不如本專案專注於生產就緒的技能整合。 | 專注於影像生成的提示模板，而本專案則涵蓋更廣泛的技能集。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的技能結構。 | low，因為主要是功能的替代，結構相似。 |
-> | 適用場景 | 主要場景 | 如果需要一個更廣泛的 AI 能力集合，而不僅限於特定技能的整 | 如果專注於影像生成的功能，並需要大量的提示模板。 |
+> | 技術路線 | 本專案 | 提供了一系列的技能集合，但缺乏這個專案的結構化設計和多平台支持。 | 雖然也提供技能集合，但缺乏這個專案的多平台兼容性和簡單的安裝流程。 |
+> | 遷移成本 | - | medium，因為需要重新調整技能的整合方式。 | high，因為需要重新設計整合流程。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Travis 的技能集合，並希望保持 | 如果你的專案需要特定的技能，而這些技能在 boneyard  |
 
 ## 成熟度評估
 
@@ -218,47 +220,57 @@ git submodule add https://github.com/ConardLi/web-design-skill.git vendor/agent-
 | --- | --- |
 | 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，但不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 技能兼容性問題，特定代理可能無法使用某些技能。
-  - 解法：檢查文檔，確保所選技能支持的代理。
-- [MEDIUM] 技能更新後可能導致原有功能失效。
-  - 解法：定期檢查更新，並測試新版本的兼容性。
-- [MEDIUM] 對於新手來說，技能的配置和整合可能有一定難度。
-  - 解法：參考文檔中的範例和說明，逐步進行配置。
+- **[HIGH]** 安裝過程中可能會遇到與官方插件的衝突
+  - 解法：檢查安裝的插件版本，確保不重複安裝相同功能的插件
+- [MEDIUM] 部分技能在處理大型資料時效能不足
+  - 解法：考慮將資料分批處理，避免一次性加載過多資料
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 技能集合能快速提升開發效率，滿足多樣需求。 |
-| 大型企業的 AI 代理系統 | 普通 | 雖然功能強大，但可能需要更多的自定義和兼容性測試。 |
-| 個人開發者的 AI 實驗專案 | 非常適合 | 能快速集成多種技能，提升實驗效率。 |
-| 需要高穩定性的生產環境 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
+| 小型團隊的前端開發專案 | 非常適合 | 技能模組化設計便於快速整合和使用。 |
+| 大型企業的核心系統 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
+| AI 相關的研究專案 | 適合 | 提供多種 AI 技能，能夠快速實驗不同功能。 |
+| 個人 side project | 非常適合 | 安裝簡單，能夠快速上手並進行自定義。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~5 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、3 小時整合，得到快速集成多種 AI 能力的效果，值得嘗試。
+> 花 3 小時學、5 小時整合，得到快速整合 AI 功能的效果，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：不需要高權限，並且不存取敏感資料。依賴的第三方庫需定期檢查更新，以避免潛在的供應鏈風險。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個專案最常與 Claude Code 和 Cursor 搭配使用，通常在開發過程中用於增強 AI 功能。在使用 Claude Code 的專案中，可以通過簡單的命令安裝技能，並在下次掃描工作區時自動發現。與主流 CI 工具（如 GitHub Actions）相容，並且可以在 VS Code 中進行開發。整合的摩擦點主要在於需要確保不同技能之間的相容性，並且在安裝過程中需注意避免重複安裝相同功能的插件。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在這個專案出現之前，開發者通常需要手動整合多個技能，這樣的過程繁瑣且容易出錯。隨著 AI 代理技術的進步，對於簡化技能整合的需求越來越迫切。這個專案的出現正是為了滿足這一需求，並且隨著開源社群的發展，越來越多的技能被納入其中，未來可能會形成一個龐大的技能生態系統。
 
 ## 健康度儀表板
 
@@ -323,9 +335,10 @@ git submodule add https://github.com/ConardLi/web-design-skill.git vendor/agent-
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 233 |
-| Open Issues | 0 |
-| 最後推送 | 2026-04-25 |
+| Forks | 255 |
+| Open Issues | 2 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-04-26 |
 | 建立日期 | 2026-04-21 |
 | 官方網站 | [Link](https://github.com/ConardLi/garden-skills) |
 | Repo 大小 | 14.2 MB |
@@ -342,17 +355,25 @@ git submodule add https://github.com/ConardLi/web-design-skill.git vendor/agent-
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@ConardLi](https://github.com/ConardLi) | 4 |
+> | [@ConardLi](https://github.com/ConardLi) | 5 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，近期有多次更新和討論。
+**社群活躍度**：社群活躍度中等，開發者回應速度尚可。
 **連結**：[文件](https://github.com/ConardLi/garden-skills)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-21 ~ 2026-04-25）
-> **活躍天數** 2 天 · **最新 commit** Update README files to remove outdated sections and confirm skill compatibility
+> [!abstract] 最近 10 次 commit（2026-04-21 ~ 2026-04-26）
+> **活躍天數** 3 天 · **最新 commit** Rename plugin from "agent-skills" to "garden-skills" in marketplace.json for improved clarity and al
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#3](https://github.com/ConardLi/garden-skills/issues/3) | 安装报和官方的冲突 | 0 | 0 |
+> | [#2](https://github.com/ConardLi/garden-skills/issues/2) | 安装商店错误 | 0 | 2 |
 
 ## README 摘錄
 
@@ -588,7 +609,7 @@ git submodule add https://github.com/ConardLi/web-design-skill.git vendor/agent-
 
 ## 延伸閱讀
 
-相關概念：[[Agent 框架]] · [[技能整合]] · [[知識檢索]]
+相關概念：[[RAG]] · [[Agent 框架]] · [[自動化]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[MiniMax-AI--skills|MiniMax-AI/skills]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]]
 
@@ -596,11 +617,11 @@ git submodule add https://github.com/ConardLi/web-design-skill.git vendor/agent-
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：技能集成）
+> [!note]- 直接競品（同子分類：AI 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "技能集成" AND file.name != "ConardLi--garden-skills"
+> WHERE subcategory = "AI 工具" AND file.name != "ConardLi--garden-skills"
 > SORT stars DESC
 > ```
 
@@ -632,7 +653,7 @@ git submodule add https://github.com/ConardLi/web-design-skill.git vendor/agent-
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["Agent 框架","技能整合","知識檢索"];
+> const concepts = ["RAG","Agent 框架","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "ConardLi--garden-skills" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

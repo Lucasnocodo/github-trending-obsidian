@@ -7,8 +7,8 @@ language: TypeScript
 license: MIT
 description: "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram."
 homepage: "https://mercury.cosmicstack.org/"
-stars: 1416
-stars_per_day: 236
+stars: 1422
+stars_per_day: 237
 forks: 154
 open_issues: 9
 created: 2026-04-20
@@ -17,50 +17,49 @@ first_seen: 2026-04-26
 week: "2026-W18"
 month: "2026-04"
 category: "AI/ML"
-subcategory: "AI Agent"
-release_tag: "v1.0.0"
-install_complexity: "easy"
+subcategory: "AI 代理"
+release_tag: "v1.1.0"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-26
-use_case: "提供一個具備持久記憶的 AI 助手，能夠在 CLI 或 Telegram 上持續運行並進行多通道訪問。"
+use_case: "提供一個以靈魂驅動的 AI 代理，具備權限加強的工具和多通道訪問功能，隨時運行於 CLI 或 Telegram。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 2
 next_review: "2026-04-30"
-contributor_count: 4
+contributor_count: 5
 engagement: "medium"
-issue_close_rate: 11
-repo_size_kb: 1328
-readme_length: 9927
+issue_close_rate: 18
+repo_size_kb: 1438
+readme_length: 9945
 bus_factor: 1
-last_release_days: 3
+last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-26"
-star_history: "2026-04-26:1117,2026-04-26:1124,2026-04-27:1416"
+star_history: "2026-04-26:1117,2026-04-26:1124,2026-04-27:1416,2026-04-27:1422"
 tags:
   - github
   - "category/ai_ml"
   - "lang/typescript"
   - org
-  - easy_install
   - "topic/ai_agent"
   - "topic/ai_assistant"
   - "topic/llm"
 aliases:
   - "mercury-agent"
   - "cosmicstack-labs/mercury-agent"
-  - "提供一個具備持久記憶的 AI 助手，能夠在 CLI 或 Telegram 上持續運行並進行多通道訪問。"
+  - "提供一個以靈魂驅動的 AI 代理，具備權限加強的工具和多通道訪問功能，隨時運行於 CLI 或 Telegram。"
 ---
 
 # mercury-agent
 
-**1.1k** stars · **225** stars/天 · 建立 5 天前 · TypeScript · MIT
+**1.4k** stars · **237** stars/天 · 建立 6 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/cosmicstack-labs--mercury-agent");
@@ -73,25 +72,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`ORG` `v1.0.0` `easy-install`
+`ORG` `v1.1.0`
 
 `ai-agent` `ai-assistant` `llm`
 
 > [!summary] 一句話摘要
-> 提供一個具備持久記憶的 AI 助手，能夠在 CLI 或 Telegram 上持續運行並進行多通道訪問。
+> 提供一個以靈魂驅動的 AI 代理，具備權限加強的工具和多通道訪問功能，隨時運行於 CLI 或 Telegram。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (225 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Medium
-> **適合** 需要一個能夠持續運行並記住上下文的 AI 助手的開發者和團隊。
-> **一句話重點** Mercury Agent 的創新在於將持久記憶和權限管理結合，讓 AI 助手更智能且安全。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (237 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 需要一個安全且個性化的 AI 代理來自動化日常任務的開發者和系統管理員。
+> **一句話重點** Mercury Agent 的靈魂驅動設計讓用戶能夠擁有更個性化的 AI 交互體驗，這在目前的 AI 代理中是相對獨特的。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/cosmicstack-labs--mercury-agent");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "AI Agent" && p.file.name !== "cosmicstack-labs--mercury-agent" && p.status !== "archived")
+>     .where(p => p.subcategory === "AI 代理" && p.file.name !== "cosmicstack-labs--mercury-agent" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -102,44 +101,44 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 AI Agent 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 AI 代理 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，得到一個持久記憶的 AI 助手，值得嘗試。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學、2 小時整合，得到一個個性化的 AI 代理，值得。
 
 > [!abstract] 核心創新
-> Mercury 是第一個將持久記憶和權限管理結合的 AI 助手，能夠在多通道環境中運行。
+> Mercury Agent 以靈魂驅動的方式，讓用戶能夠自定義代理的個性和行為，並提供強大的記憶管理功能。
 
 ## 專案簡介
 
-Mercury Agent 是一個靈魂驅動的 AI 助手，具備持久記憶系統，能夠在 CLI 或 Telegram 上運行。用戶可以透過簡單的 CLI 指令 `npx @cosmicstack/mercury-agent` 開始使用，並在首次運行時進行設置，包括輸入名稱和 API 金鑰。這個工具的核心賣點在於它的「第二大腦」功能，能夠記住用戶的偏好和目標，並自動提取和整合資訊，這使得 Mercury 在多次對話中能夠保持上下文。技術上，Mercury 使用 SQLite 作為記憶儲存，並支援全文字搜索，這讓它能夠高效地管理和檢索用戶資料。
+Mercury Agent 是一個靈魂驅動的 AI 代理，設計上強調用戶的安全性和記憶能力。用戶可以透過 CLI 或 Telegram 與代理互動，並利用 31 種內建工具進行各種操作。其核心機制是透過 SQLite 支持的第二大腦記憶系統，能夠記錄用戶的偏好和行為，並在必要時請求用戶確認行動。使用者可以透過 `npx @cosmicstack/mercury-agent` 快速啟動，或選擇全局安裝後使用 `mercury` 命令進行配置和操作。這個代理的賣點在於其權限加強的設計，能防止不當命令執行，並提供每日的 token 預算管理。
 
-與其他 AI 助手相比，如 OpenAI 的 ChatGPT，Mercury 提供了更強的權限管理和記憶功能，能夠在執行命令前詢問用戶，並且有明確的權限設定。使用者可以透過 `mercury up` 命令將其設置為背景服務，並在系統啟動時自動運行，這對於需要持續運行的任務非常有用。儘管如此，Mercury 仍然有一些限制，例如在 Windows 上的安裝問題，這可能會影響某些用戶的體驗。整體而言，Mercury 是一個穩定的選擇，適合需要持續運行和記憶功能的用戶，尤其是那些在多通道環境中工作的團隊。
+其技術實作上，使用 TypeScript 和多個 AI SDK 進行擴展，並且支持多個 LLM 提供者的回退機制，這意味著在一個提供者失敗時，會自動切換到下一個可用的提供者。與其他 AI 代理相比，Mercury 的獨特之處在於其靈魂驅動的個性化設計，這使得用戶能夠定義代理的個性和行為，並且在多通道上進行互動。實際使用中，Mercury 能夠處理大量的請求和記憶數據，並且在背景運行時具備自動重啟的能力，這對於需要持續運行的應用場景非常有用。社群活躍度尚可，開放的問題數量也顯示出仍有改進的空間。整體來看，這是一個值得關注的 AI 代理，尤其適合需要持續運行和個性化交互的場景。
 
-**技術棧**：`TypeScript` · `SQLite` · `Node.js`
+**技術棧**：`TypeScript 5.7.0` · `Node.js 20+` · `SQLite`
 
 ## 重點功能
 
-- 第二大腦 — 具備 10 種記憶類型（如身份、目標、習慣），並使用 SQLite 進行資料管理。
-- 權限管理 — 執行命令前會詢問用戶，並提供 shell 阻擋清單以避免危險操作。
-- 多通道支持 — 同時在 CLI 和 Telegram 上運行，支持多用戶訪問和即時消息。
-- 實時流式傳輸 — CLI 和 Telegram 上的實時文本流，支持 Markdown 格式。
-- 自動化任務調度 — 使用 cron 表達式進行定期任務調度，並能夠持久化任務設定。
+- 靈魂驅動 — 用戶可透過 markdown 文件定義代理的個性和行為。
+- 權限加強 — 防止執行危險命令，並提供用戶確認流程。
+- 第二大腦記憶 — 使用 SQLite 支持的記憶系統，能夠記錄和檢索用戶的偏好。
+- 多通道訪問 — 同時支持 CLI 和 Telegram，並提供實時消息流。
+- 每日 token 預算管理 — 自動追蹤和管理 API 使用情況。
 
 ## 快速開始
 
-1. 安裝 Mercury Agent
+1. 快速啟動 Mercury Agent
 ```bash
 npx @cosmicstack/mercury-agent
 ```
-2. 全域安裝
+2. 全局安裝 Mercury Agent
 ```bash
 npm i -g @cosmicstack/mercury-agent
 ```
-3. 啟動設置嚮導
+3. 啟動設置向導
 ```bash
 mercury
 ```
@@ -147,66 +146,66 @@ mercury
 ## 程式碼範例
 
 ```ts
-{
-  "前置條件": "已安裝 Mercury Agent",
-  "指令": "mercury up",
-  "預期輸出": "安裝系統服務並啟動背景進程，確保 Mercury 正在運行。"
-}
+[
+  "# 前置條件：已安裝 Mercury Agent",
+  "mercury up",
+  "# 預期輸出：安裝服務並啟動後台進程，確保 Mercury 正在運行。"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 在建立的 5 天內，Mercury Agent 累積了 1124 stars（每天 225），forks 數量為 129（11.5%），顯示出強勁的增長潛力。主要貢獻者來自 Cosmic Stack 團隊，他們過去在 AI 和開源工具方面有豐富經驗。這個專案解決了許多現有 AI 助手在記憶和權限管理上的不足，特別是能夠在多通道環境中提供持續的支持。社群的反饋也促進了功能的快速迭代，像是對於 Telegram 支援的需求。這些因素共同推動了 Mercury 的快速成長。
+> 建立 6 天就累積 1422 stars（237/天），forks 154（10.8%），顯示出強勁的增長潛力。這個專案的主要貢獻者來自 Cosmic Stack，過去在 AI 代理和工具開發上有豐富經驗。Mercury 解決了許多 AI 代理在用戶安全和記憶管理上的痛點，特別是對於需要持續運行的應用場景。最近的推廣活動和社群討論也為其增長提供了動力。技術上，隨著多通道和多提供者的支持，這個工具的可用性和靈活性大幅提升，讓它在當前的 AI 生態中脫穎而出。forks/stars 比率高達 10.8%，顯示出許多人對這個專案的實際修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要一個能夠持續運行並記住上下文的 AI 助手的開發者和團隊。
+**目標受眾**：需要一個安全且個性化的 AI 代理來自動化日常任務的開發者和系統管理員。
 
 > [!example] 使用場景
-> - 產品經理用它來管理多個項目的進度，因為它能夠記住每個項目的關鍵資訊和進展，避免重複查詢。
-> - 開發者用它來自動化日常任務，如代碼提交和文件管理，因為它的 CLI 工具能夠快速執行命令並記錄歷史。
-> - 團隊領導用它來協調團隊成員的任務分配，因為它的 Telegram 整合讓多用戶管理變得簡單高效。
+> - 系統管理員用它來自動化日常任務，因為它能夠持續運行並記錄操作歷史，減少手動錯誤。
+> - 開發者用它來管理 API 請求和回應，因為它的權限管理能防止意外執行危險命令。
+> - 個人用戶用它來建立個性化的助手，因為其靈魂驅動的設計讓用戶能夠定義代理的個性和行為。
 
 ## 架構分析
 
-Mercury Agent 採用模組化設計，核心是基於 Node.js 的服務，並使用 SQLite 作為資料存儲。這種設計使得 Mercury 能夠在不同平台上運行，並保持輕量級。資料流方面，使用者的輸入通過 CLI 或 Telegram 接收，然後經過一系列的處理，最終將結果返回給用戶。
+Mercury Agent 採用模組化架構，主要由 CLI 和 Telegram 兩個通道組成，並通過 SQLite 管理用戶的記憶數據。這種設計使得代理能夠在多個平台上運行，並且支持即時的消息流和用戶交互。資料流方面，所有的用戶請求都會經過權限檢查，確保安全性。
 
-選擇 SQLite 作為資料庫的原因是其輕量和高效，適合用於持久化存儲。這樣的架構設計使得 Mercury 能夠快速啟動並在高負載下保持穩定，但在資料擴展性上可能會遇到瓶頸。整體而言，這種設計使得 Mercury 在多通道支持和即時反應方面表現出色。
+選擇 SQLite 作為記憶存儲的原因在於其輕量和高效，能夠快速檢索用戶的偏好和歷史記錄。這種設計的代價是需要用戶在初次設置時進行配置，並且在高負載情況下可能會遇到性能瓶頸。整體上，這種架構提供了良好的擴展性，能夠支持未來更多的功能和通道。
 
 ## 技術深入分析
 
-Mercury Agent 的核心技術在於其靈魂驅動的設計，這使得它能夠根據用戶的需求進行個性化的回應。使用 SQLite 作為資料庫，讓 Mercury 能夠高效地存儲和檢索用戶的記憶資料。這種設計不僅提高了性能，還支持全文字搜索，方便用戶快速找到所需資訊。在記憶管理上，Mercury 提供了 10 種不同的記憶類型，這讓它能夠靈活地適應不同的使用場景。選擇 Node.js 作為開發語言，則使得 Mercury 能夠在各種平台上運行，並且能夠輕鬆整合各種外部 API。技術上，Mercury 的設計考量了安全性，通過權限管理來防止潛在的安全風險。這些設計選擇使得 Mercury 在多通道環境中表現出色，並能夠持續運行，滿足用戶的需求。
+Mercury Agent 的核心技術機制是基於 TypeScript 和多個 AI SDK 的模組化設計，這使得它能夠靈活地支持不同的 LLM 提供者。其記憶管理系統使用 SQLite，能夠高效地處理用戶的偏好和歷史記錄，並且支持全文本搜索。效能上，Mercury 能夠處理大量的請求，但在高負載情況下可能會出現瓶頸。選擇 TypeScript 作為開發語言的好處在於其靜態類型檢查能夠提高代碼的穩定性，而使用 SQLite 則減少了對外部依賴的需求。技術風險方面，Mercury 依賴於多個外部 API，這可能會在某些情況下導致服務中斷。整合方面，Mercury 能夠與現有的 CI/CD 流程無縫對接，並且支持多種開發環境，這降低了團隊的學習成本。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含詳細的安裝步驟和範例，讓新手能夠快速上手。安裝過程相對順暢，僅需簡單的命令即可完成設置。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
+> README 文件清晰且提供了詳細的安裝和使用指引，讓新手能夠快速上手。安裝過程相對順暢，但需要注意 Node.js 版本要求。文件目前僅提供英文，可能對非英語使用者造成障礙。整體來說，花 30 分鐘應該能夠成功運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 具備持久記憶功能，能夠在多次對話中保持上下文。
-> - 權限管理設計，能夠在執行命令前詢問用戶，增加安全性。
-> - 支持多通道運行，能夠在 CLI 和 Telegram 上同時使用，方便團隊協作。
+> - 靈魂驅動的個性化設計，讓用戶能夠定義代理的行為。
+> - 權限加強的安全設計，防止執行危險命令。
+> - 支持多通道訪問，方便用戶在不同平台上使用。
 
 > [!danger] 缺點
-> - 不支援 Windows，限制了部分用戶的使用。
-> - 需要用戶手動配置，對新手來說可能有一定的學習曲線。
-> - 在高負載下可能會出現延遲，影響使用體驗。
+> - 安裝過程相對較複雜，需要一定的配置。
+> - 在 Windows 上的支持有限，可能無法完全發揮功能。
+> - 對於高負載的請求，性能可能會受到影響。
 
 > [!warning] 注意事項
-> - 不支援 Windows 安裝，可能會影響部分用戶的使用體驗。
-> - 在高負載情況下，可能會出現延遲，特別是在多用戶同時訪問時。
-> - 需要用戶手動配置 API 金鑰和權限設定，對新手來說可能有一定的學習曲線。
+> - 僅支援 Node.js 20 以上版本。
+> - 需要在 UNIX 系統上進行完整功能測試，Windows 支援有限。
+> - 在高負載情況下，可能會遇到性能瓶頸。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的多通道支持，但缺乏 Mercury 的持久記憶和權限管理功能。 |
-| [Einsia/OpenChronicle](https://github.com/Einsia/OpenChronicle) | 專注於時間管理和日程安排，但不具備 Mercury 的靈魂驅動特性和多種記憶類型。 |
-| [VoltAgent/awesome-claude-design](https://github.com/VoltAgent/awesome-claude-design) | 提供 AI 助手功能，但在記憶和用戶交互方面不如 Mercury 靈活。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 主要專注於簡化的 AI 代理功能，而 Mercury 提供更全面的記憶和權限管理。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | Codeburn 提供更強的自動化功能，但在個性化和記憶管理上不如 Mercury。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | Claude-Obsidian 主要針對特定任務優化，而 Mercury 則是通用的 AI 代理，支持多種操作。 |
 
 ## 替代方案決策
 
@@ -214,16 +213,16 @@ Mercury Agent 的核心技術在於其靈魂驅動的設計，這使得它能夠
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的多通道支持，但缺乏 Mercury 的持久記憶和權限管理功能。 | 如果需要一個簡單的多通道 AI 助手，且不需要記憶功能，可以考慮這個工具。 | medium - 需要重新配置和適應新的命令結構。 |
-| [Einsia/OpenChronicle](https://github.com/Einsia/OpenChronicle) | 專注於時間管理和日程安排，但不具備 Mercury 的靈魂驅動特性和多種記憶類型。 | 如果主要需求是日程管理而非全面的 AI 助手功能，這個工具會更合適。 | low - 主要是功能適應，不需重新配置。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 主要專注於簡化的 AI 代理功能，而 Mercury 提供更全面的記憶和權限管理。 | 如果你需要一個輕量級的 AI 代理，且不需要複雜的記憶管理，Boneyard 是不錯的選擇。 | low，因為 Boneyard 的設計較為簡單，遷移成本低。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | Codeburn 提供更強的自動化功能，但在個性化和記憶管理上不如 Mercury。 | 如果你的需求主要是自動化任務而非個性化交互，Codeburn 會更合適。 | medium，因為需要重新設計部分工作流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **mercury-agent** | **boneyard** | **OpenChronicle** |
+> | 維度 | **mercury-agent** | **boneyard** | **codeburn** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供類似的多通道支持，但缺乏 Mercury 的持久記憶和權限管理功能。 | 專注於時間管理和日程安排，但不具備 Mercury 的靈魂驅動特性和多種記憶類型。 |
-> | 遷移成本 | - | medium - 需要重新配置和適應新的命令結構。 | low - 主要是功能適應，不需重新配置。 |
-> | 適用場景 | 主要場景 | 如果需要一個簡單的多通道 AI 助手，且不需要記憶功能，可以 | 如果主要需求是日程管理而非全面的 AI 助手功能，這個工具會 |
+> | 技術路線 | 本專案 | Boneyard 主要專注於簡化的 AI 代理功能，而 Mercury 提供更全面的記憶和權限管理。 | Codeburn 提供更強的自動化功能，但在個性化和記憶管理上不如 Mercury。 |
+> | 遷移成本 | - | low，因為 Boneyard 的設計較為簡單，遷移成本低。 | medium，因為需要重新設計部分工作流程。 |
+> | 適用場景 | 主要場景 | 如果你需要一個輕量級的 AI 代理，且不需要複雜的記憶管理， | 如果你的需求主要是自動化任務而非個性化交互，Codeburn |
 
 ## 成熟度評估
 
@@ -234,43 +233,41 @@ Mercury Agent 的核心技術在於其靈魂驅動的設計，這使得它能夠
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人項目試用，但不建議在生產環境的核心路徑上使用。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Windows 上安裝時會遇到問題，無法正常運行。
-  - 解法：使用 Linux 或 macOS 環境進行安裝。
-- [MEDIUM] 高負載情況下，可能會出現延遲。
-  - 解法：減少同時使用者數量或調整任務調度。
-- [MEDIUM] 需要手動配置 API 金鑰，對新手來說可能有困難。
-  - 解法：參考官方文檔進行設置，或尋求社群幫助。
+- **[HIGH]** 在高負載情況下可能會遇到性能瓶頸，導致請求延遲
+  - 解法：考慮分散請求或增加伺服器資源
+- [MEDIUM] Windows 上的安裝過程可能會遇到問題
+  - 解法：建議使用 WSL 或在 UNIX 系統上運行
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 具備持久記憶和多通道支持，能夠有效協調團隊工作。 |
-| 大型企業的多部門協作 | 普通 | 雖然功能強大，但在高負載下可能會遇到延遲。 |
-| 個人項目或開發者工具 | 非常適合 | 簡單易用，能夠快速上手並提供持久記憶功能。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 其靈魂驅動的設計和權限管理功能能有效支持小型團隊的需求。 |
+| 大型企業的自動化任務 | 普通 | 雖然具備自動化能力，但在高負載下性能可能不穩定。 |
+| 個人使用的 AI 助手 | 非常適合 | 其個性化設計和記憶管理功能非常符合個人需求。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
+| 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到一個持久記憶的 AI 助手，值得嘗試。
+> 花 3 小時學、2 小時整合，得到一個個性化的 AI 代理，值得。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，並且有明確的權限管理設計，能夠有效防止未經授權的操作。
+> 低風險：Mercury Agent 本身不需要高權限，且不存取敏感資料。依賴的外部 API 需謹慎管理，確保不會暴露敏感資訊。
 
 ## 健康度儀表板
 
@@ -335,19 +332,19 @@ Mercury Agent 的核心技術在於其靈魂驅動的設計，這使得它能夠
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 129 |
-| Open Issues | 8 |
-| Issue 解決率 | 11% (1 closed) |
-| 最後推送 | 2026-04-25 |
+| Forks | 154 |
+| Open Issues | 9 |
+| Issue 解決率 | 18% (2 closed) |
+| 最後推送 | 2026-04-26 |
 | 建立日期 | 2026-04-20 |
 | 官方網站 | [Link](https://mercury.cosmicstack.org/) |
-| Repo 大小 | 1.3 MB |
+| Repo 大小 | 1.4 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cosmicstack-labs/mercury-agent) |
 | Topics | `ai-agent` `ai-assistant` `llm` |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `@ai-sdk/anthropic` `@ai-sdk/openai` `@grammyjs/auto-retry` `ai` `chalk` `commander` `dotenv` `grammy` `js-tiktoken` `marked` `node-cron` `ollama-ai-provider` `pino` `yaml` `zod`
+> `@ai-sdk/anthropic` `@ai-sdk/deepseek` `@ai-sdk/openai` `@grammyjs/auto-retry` `ai` `chalk` `commander` `dotenv` `grammy` `js-tiktoken` `marked` `node-cron` `ollama-ai-provider` `pino` `yaml`
 
 > [!info]- 語言組成
 > ```mermaid
@@ -360,43 +357,43 @@ Mercury Agent 的核心技術在於其靈魂驅動的設計，這使得它能夠
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@hotheadhacker](https://github.com/hotheadhacker) | 107 |
+> | [@hotheadhacker](https://github.com/hotheadhacker) | 109 |
+> | [@shehzensidiq](https://github.com/shehzensidiq) | 17 |
 > | [@zaidbinmushtaq](https://github.com/zaidbinmushtaq) | 16 |
-> | [@shehzensidiq](https://github.com/shehzensidiq) | 15 |
 > | [@mercuryagent](https://github.com/mercuryagent) | 4 |
+> | [@Chasen-Liao](https://github.com/Chasen-Liao) | 1 |
 
-**最新版本**：v1.0.0 — v1.0.0 — Second Brain (2026-04-23)
+**最新版本**：v1.1.0 — v1.1.0 — DeepSeek v4 Compatibility & AI SDK v6 Migration (2026-04-26)
 
 > [!info]- Release Notes
-> ## Mercury v1.0.0 — Second Brain
+> ## What's Changed
 > 
-> This is a **major release** introducing the Second Brain — a persistent, structured memory system backed by SQLite with full-text search — alongside fundamental changes to how Mercury stores data and renders output.
+> ### DeepSeek v4 Compatibility
+> - **New dedicated DeepSeek provider** (`@ai-sdk/deepseek`) — replaces the OpenAI-compatible workaround with a proper SDK integration that correctly handles DeepSeek's reasoning mode (`deepseek-reasoner`).
+> - **Thinking mode support** — DeepSeek reasoner models now pass `thinking: { type: 'enabled' }` via `providerOptions`, ensuring `reasoning_content` is included in the response and round-tripped back to the API (fixes the `The reasoning_content in the thinking mode must be passed back to the API` error).
+> - **Default model updated** — `.env.example` now defaults to `deepseek-v4-flash` instead of `deepseek-chat`.
 > 
-> ### Why 1.0.0?
+> ### AI SDK v4 → v6 Migration
+> - Migrated all tool definitions from `parameters: z.object(...)` to `inputSchema: zodSchema(z.object(...))` to match the AI SDK v6 `tool()` API.
+> - Replaced `maxSteps` with `stopWhen: stepCountIs(MAX_STEPS)` for `generateText`/`streamText` agentic loops.
+> - Updated token usage fields from `promptTokens`/`completionTokens` to `inputTokens`/`outputTokens` across all providers.
+> - Changed `maxTokens` to `maxOutputTokens` for memory extraction calls.
+> - Updated tool call property access from `tc.args` to `tc.input` to match v6 `ToolCall` type.
+> - Captured and stored `streamResult.reasoning` in episodic memory for reasoning model responses.
 > 
-> Mercury has been in rapid development through 0.x releases. The Second Brain represents a fundamental capability shift: Mercury now **remembers** across conversations, automatically extracting, consolidating, and recalling facts about you. Combined with the all-in-`~/.mercury/` data architecture and live CLI streaming, this marks a stable, production-ready foundation.
-> 
-> ---
-> 
-> ### 🧠 Second Brain
-> 
-> - **10 memory types** — identity, preference, goal, project, habit, decision, constraint, relationship, episode, reflection
-> - **Automatic extraction** — after each conversation, Mercury extracts 0–3 facts with confidence, importance, and durability scores
-> - **Relevant recall** — before each message, injects top 5 matching memories within a 900-character budget
-> - **Auto-consolidation** — every 60 minutes, synthesizes a profile summary, active-state summary, and generates reflection memories
-> - **Conflict resolution** — opposing memories resolved by higher confidence or recency; negation detection
-> - **Active → Durable promotion** — memories reinforced 3+ times automatically promote to durable scope
+> ### Other
+> - Added `/exit` and `/quit` commands to gracefully shut down the agent from CLI.
 > ...（完整內容見 GitHub）
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和回應問題。
+**社群活躍度**：社群活躍度尚可，開放的問題數量顯示出仍有改進的空間。
 **連結**：[文件](https://mercury.cosmicstack.org/)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-24 ~ 2026-04-25）
-> **活躍天數** 2 天 · **最新 commit** docs: update Discord invite link in README
+> [!abstract] 最近 10 次 commit（2026-04-25 ~ 2026-04-26）
+> **活躍天數** 2 天 · **最新 commit** Merge pull request #16 from Chasen-Liao/codex-chinese-readme
 
 ## 熱門議題
 
@@ -404,10 +401,8 @@ Mercury Agent 的核心技術在於其靈魂驅動的設計，這使得它能夠
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#2](https://github.com/cosmicstack-labs/mercury-agent/issues/2) | README opener could lead with the operator outcome before “s | 2 | 0 |
+> | [#12](https://github.com/cosmicstack-labs/mercury-agent/issues/12) | feat: add support for kimi, glm, custom openai/anthropic com | 1 | 3 |
 > | [#10](https://github.com/cosmicstack-labs/mercury-agent/issues/10) | feat: add Lark Suite channel support `enhancement` | 1 | 0 |
-> | [#13](https://github.com/cosmicstack-labs/mercury-agent/issues/13) | Service cannot be installed in Windows | 0 | 0 |
-> | [#12](https://github.com/cosmicstack-labs/mercury-agent/issues/12) | feat: add support for kimi, glm, custom openai/anthropic com | 0 | 1 |
-> | [#11](https://github.com/cosmicstack-labs/mercury-agent/issues/11) | Feature Request: Add Custom Local provider | 0 | 0 |
 
 ## README 摘錄
 
@@ -419,6 +414,8 @@ Mercury Agent 的核心技術在於其靈魂驅動的設計，這使得它能夠
 >   
 >   
 >   
+> 
+>   English | 简体中文
 > 
 > ---
 > 
@@ -614,23 +611,23 @@ Mercury Agent 的核心技術在於其靈魂驅動的設計，這使得它能夠
 > 
 > Mercury uses an **organization access model** with admins and members.
 > 
-> - **First-time setup:** Send `/start` to your bot, receive a pairing code, enter it in the CLI with `mercury telegram approve `. You be
+> - **First-time setup:** Send `/start` to your bot, receive a pairing code, enter it in the CLI with `mercury telegram
 
 ## 延伸閱讀
 
-相關概念：[[Agent 框架]] · [[多模態]] · [[自動化]]
+相關概念：[[AI 代理]] · [[記憶管理]] · [[權限控制]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[VoltAgent--awesome-claude-design|VoltAgent/awesome-claude-design]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[farzaa--clicky|farzaa/clicky]] · [[xixu-me--awesome-persona-distill-skills|xixu-me/awesome-persona-distill-skills]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[ConardLi--garden-skills|ConardLi/garden-skills]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[VoltAgent--awesome-claude-design|VoltAgent/awesome-claude-design]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[farzaa--clicky|farzaa/clicky]] · [[xixu-me--awesome-persona-distill-skills|xixu-me/awesome-persona-distill-skills]]
 
 [GitHub](https://github.com/cosmicstack-labs/mercury-agent) · [官方網站](https://mercury.cosmicstack.org/)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：AI Agent）
+> [!note]- 直接競品（同子分類：AI 代理）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "AI Agent" AND file.name != "cosmicstack-labs--mercury-agent"
+> WHERE subcategory = "AI 代理" AND file.name != "cosmicstack-labs--mercury-agent"
 > SORT stars DESC
 > ```
 
@@ -662,7 +659,7 @@ Mercury Agent 的核心技術在於其靈魂驅動的設計，這使得它能夠
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["Agent 框架","多模態","自動化"];
+> const concepts = ["AI 代理","記憶管理","權限控制"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "cosmicstack-labs--mercury-agent" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

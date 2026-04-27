@@ -7,8 +7,8 @@ language: Python
 license: MIT
 description: ""
 homepage: ""
-stars: 1422
-stars_per_day: 284
+stars: 1425
+stars_per_day: 285
 forks: 93
 open_issues: 5
 created: 2026-04-21
@@ -17,7 +17,7 @@ first_seen: 2026-04-26
 week: "2026-W18"
 month: "2026-04"
 category: "開發工具"
-subcategory: "記憶體管理"
+subcategory: "記憶體系統"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,23 +26,23 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-26
-use_case: "為 LLM 代理提供本地的、可檢查的記憶體，捕捉應用程式上下文與螢幕內容。"
+use_case: "為任何 LLM 代理提供本地優先的記憶體系統，捕捉屏幕和應用上下文。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 2
 next_review: "2026-04-30"
-contributor_count: 4
+contributor_count: 5
 engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 1811
-readme_length: 7061
+issue_close_rate: 17
+repo_size_kb: 1874
+readme_length: 7064
 bus_factor: 2
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-26"
-star_history: "2026-04-26:1126,2026-04-26:1129,2026-04-27:1422"
+star_history: "2026-04-26:1126,2026-04-26:1129,2026-04-27:1422,2026-04-27:1425"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "OpenChronicle"
   - "Einsia/OpenChronicle"
-  - "為 LLM 代理提供本地的、可檢查的記憶體，捕捉應用程式上下文與螢幕內容。"
+  - "為任何 LLM 代理提供本地優先的記憶體系統，捕捉屏幕和應用上下文。"
 ---
 
 # OpenChronicle
 
-**1.1k** stars · **282** stars/天 · 建立 4 天前 · Python · MIT
+**1.4k** stars · **285** stars/天 · 建立 5 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Einsia--OpenChronicle");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 為 LLM 代理提供本地的、可檢查的記憶體，捕捉應用程式上下文與螢幕內容。
+> 為任何 LLM 代理提供本地優先的記憶體系統，捕捉屏幕和應用上下文。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (282 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Low
-> **適合** 需要在 macOS 上管理 LLM 代理記憶體的開發者和設計師。
-> **一句話重點** OpenChronicle 是一個強調本地優先和可檢查性的記憶體管理工具，適合需要靈活性和隱私的開發者。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (285 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
+> **適合** 希望在 macOS 上構建本地優先 AI 記憶體系統的開發者和研究人員。
+> **一句話重點** OpenChronicle 代表了本地優先記憶體系統的未來，為 LLM 代理提供了靈活且可檢查的記憶體解決方案。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Einsia--OpenChronicle");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "記憶體管理" && p.file.name !== "Einsia--OpenChronicle" && p.status !== "archived")
+>     .where(p => p.subcategory === "記憶體系統" && p.file.name !== "Einsia--OpenChronicle" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,32 +96,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 記憶體管理 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 記憶體系統 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學、3 小時整合，得到靈活的記憶體管理效果，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學、10 小時整合，得到靈活的本地優先記憶體系統，值得考慮。
 
 > [!abstract] 核心創新
-> OpenChronicle 提供了一個開源的本地優先記憶體系統，專為 LLM 代理設計，並支援多種模型與工具。
+> OpenChronicle 提供了一個本地優先的記憶體系統，專為 LLM 代理設計，並支持多種模型。
 
 ## 專案簡介
 
-OpenChronicle 是一個開源的本地記憶體系統，專為任何能夠調用工具的 LLM 代理設計。它運行於 macOS，捕捉使用者的應用程式上下文，並將其轉換為持久的 Markdown 記憶體，記錄使用者的工作狀態、決策、使用的工具及相關人員或專案。核心流程包括捕捉上下文、壓縮為會話、提取持久事實，並將記憶體存儲在本地 SQLite 數據庫中。這個工具的賣點在於其本地化和可檢查性，使用者可以隨時查閱和修改記憶體內容。技術上，OpenChronicle 使用 AX Tree 作為主要信號，這樣能夠以較低的成本捕捉結構化文本，並且更好地捕捉使用者意圖。
+OpenChronicle 是一個開源的本地優先記憶體系統，專為任何能夠調用工具的 LLM 代理設計。它在 macOS 上運行，捕捉用戶的操作上下文，並將其轉換為持久的 Markdown 記憶體，記錄用戶的工作內容、決策及使用的工具。這個系統的核心在於 AX Tree（可及性樹）作為主要信號，並輔以截圖，這樣的設計降低了處理成本，並提高了意圖捕捉的準確性。使用者可以透過 CLI 指令如 `openchronicle start` 啟動服務，並使用 `openchronicle capture-once` 進行一次性捕捉，這些指令使得操作簡單明瞭。技術上，OpenChronicle 使用 Python 實現，並依賴於 Typer、Rich 和 MSS 等庫，這些選擇使得開發過程中能夠快速構建和調試。
 
-與 OpenAI Chronicle 相比，OpenChronicle 是開源的，並且不依賴於特定的模型或應用程式，這使得它更具擴展性和靈活性。使用者可以透過 MCP 協議與各種工具進行整合，並且支援多種 LLM 提供者。實際使用中，這個工具的效能取決於 macOS 的 AX 事件捕捉，並且能夠處理大量的上下文資料。雖然目前仍在 alpha 階段，但其設計理念和功能已經顯示出潛在的廣泛應用場景，特別是在需要記錄和檢索工作上下文的情況下。未來幾個月，隨著社群的貢獻和功能的增強，這個專案有望成為本地記憶體管理的主流選擇。
+與 OpenAI Chronicle 相比，OpenChronicle 是開源的，並且支持多種 LLM 提供者，這使得它在擴展性和靈活性上具備優勢。它的記憶體存儲在本地的 Markdown 文件和 SQLite 數據庫中，這樣的設計不僅便於檢查和擴展，還能保持數據的私密性。使用者可能會遇到的問題包括需要 macOS 13+ 和 Xcode Command Line Tools，這對於非 Mac 用戶來說是一個限制。整體而言，這是一個處於早期 alpha 階段的項目，適合對本地優先記憶體系統感興趣的開發者，特別是那些希望在個人 AI 記憶或開放上下文基礎設施方面進行探索的使用者。
 
 **技術棧**：`Python 3.11` · `Swift` · `Shell`
 
 ## 重點功能
 
-- 本地優先 — 記憶體資料保留在使用者的機器上，增強隱私。
-- 模型無關 — 支援多種 LLM 提供者，如 Ollama 和 OpenAI，使用者可自由選擇。
-- 事件驅動捕捉 — 透過 macOS AX 事件自動捕捉上下文，減少手動輸入。
-- Markdown 格式存儲 — 記憶體以人類可讀的 Markdown 格式存儲，方便檢查和修改。
-- SQLite 本地索引 — 使用 SQLite 進行快速查詢和索引，提升效能。
+- 本地優先記憶體 — 所有數據存儲在用戶的機器上，保護隱私。
+- 多模型支持 — 兼容 Ollama、LM Studio、OpenAI 等多種 LLM 提供者。
+- Markdown 格式存儲 — 記憶體以可讀的 Markdown 格式保存，便於檢查和擴展。
+- 事件驅動捕捉 — 通過 macOS AX 事件自動捕捉上下文信息。
+- 會話感知記憶寫入 — 根據會話進行記憶寫入，減少噪音和冗餘。
 
 ## 快速開始
 
@@ -137,7 +137,7 @@ cd openchronicle
 ```bash
 bash install.sh
 ```
-4. 啟動 OpenChronicle
+4. 啟動服務
 ```bash
 openchronicle start
 ```
@@ -146,66 +146,66 @@ openchronicle start
 
 ```python
 {
-  "前置條件": "需要 macOS 13+ 和 Xcode Command Line Tools",
+  "前置條件": "需要在 macOS 上安裝並配置好環境。",
   "指令": "openchronicle start",
-  "預期輸出": "啟動 OpenChronicle 服務，準備捕捉上下文。"
+  "預期輸出": "啟動 OpenChronicle 服務，並開始捕捉上下文。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 1129 stars（282/天），forks 57（5.0%），顯示出穩定的增長趨勢。這個專案的作者們在開源社群中有一定的影響力，並且針對現有的記憶體管理工具提出了開放且可擴展的替代方案。OpenAI Chronicle 雖然功能強大，但其封閉性和專有性使得許多開發者尋求更靈活的解決方案。社群對於本地記憶體的需求日益增加，尤其是在個人化 AI 助手的應用中，因此 OpenChronicle 的出現正好填補了這一空白。這個工具的開放性和可擴展性使其在技術生態中具備了良好的適應性，未來發展潛力巨大。
+> 建立 5 天就累積 1425 stars（285/天），forks 93（6.5%），顯示出強勁的增長潛力。這個專案的主要貢獻者包括 KMing-L 和其他幾位活躍的開發者，他們在開源社群中有一定的影響力。OpenChronicle 解決了現有工具中缺乏本地優先記憶體系統的痛點，之前的方案如 OpenAI Chronicle 主要依賴於封閉的生態系統，而 OpenChronicle 提供了開放的替代方案。這個專案的推出正值人們對於數據隱私和本地計算的需求上升，並且它的開源性質吸引了許多開發者的關注。forks/stars 比率顯示出使用者對於修改和實際應用的興趣，這可能會促進更多的貢獻和擴展。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 macOS 上管理 LLM 代理記憶體的開發者和設計師。
+**目標受眾**：希望在 macOS 上構建本地優先 AI 記憶體系統的開發者和研究人員。
 
 > [!example] 使用場景
-> - 自由職業者用它來記錄和管理多個客戶專案的上下文，因為它能夠將工作狀態轉換為可檢查的 Markdown 格式，方便隨時回顧。
-> - 開發者用它來捕捉開發過程中的決策和工具使用情況，因為這樣可以避免重複工作並提高效率。
-> - 設計師用它來記錄設計過程中的靈感和修改歷程，因為它提供了清晰的歷史記錄，便於未來參考。
+> - 獨立開發者用它來記錄和管理 AI 代理的上下文記憶，因為它提供了本地存儲和檢查的能力，避免了數據隱私問題。
+> - 產品經理用它來追蹤會議記錄和決策過程，因為它能夠將信息結構化存儲，便於後續查詢和回顧。
+> - 研究人員用它來捕捉實驗過程中的上下文信息，因為它支持多種 LLM 提供者，能夠靈活應對不同的研究需求。
 
 ## 架構分析
 
-OpenChronicle 的架構設計以本地優先為核心，使用者的記憶體資料儲存在本地機器上，這樣能夠提高隱私性和數據安全性。資料捕捉透過 macOS 的 AX 事件進行，並將捕捉到的上下文資料壓縮為會話，最終存儲在 SQLite 數據庫中。這種設計使得記憶體資料更為結構化，便於查詢和管理。
-
-選擇使用 Markdown 格式存儲資料，讓使用者能夠輕鬆檢查和修改記憶體內容。這樣的設計雖然在初期可能需要較高的開發成本，但長期來看能夠提供更靈活的擴展性。未來，隨著功能的增強，可能會面臨資料管理和性能優化的挑戰，特別是在處理大量上下文資料時。
-
-整體而言，這種架構模式在現有的記憶體管理工具中具有一定的創新性。
+OpenChronicle 的架構設計以本地優先為核心，使用 Python 和 Swift 結合來實現高效的上下文捕捉。系統通過 macOS 的 AX 事件來捕捉用戶的操作，並將其轉換為結構化的記憶體，這樣的設計使得記憶體的存取速度更快且更具可讀性。數據存儲在 Markdown 文件和 SQLite 數據庫中，這樣的選擇使得數據的檢索和管理變得簡單。選擇 AX Tree 作為主要信號的設計考量在於其低成本和高效能，這樣的選擇使得系統能夠在不需要重度計算的情況下運行。未來可能會面臨的擴展性瓶頸在於如何處理更複雜的上下文信息，這需要進一步的優化和調整。
 
 ## 技術深入分析
 
-OpenChronicle 的核心技術機制在於其事件驅動的上下文捕捉，利用 macOS 的 AX 事件來獲取應用程式的狀態和使用者的互動。這種方法相較於傳統的螢幕截圖或 OCR 處理，能以更低的成本捕捉到結構化的文本資料，並且更好地反映使用者的意圖。效能上，這個系統能夠處理大量的上下文資料，並且透過 SQLite 進行快速的查詢和索引。設計上，選擇 Markdown 格式作為存儲方式，使得資料更為人性化，便於使用者檢查和修改。這樣的選擇雖然在初期可能增加了開發的複雜度，但長期來看能夠提供更靈活的擴展性。技術風險方面，隨著使用者數量的增加，資料管理和性能優化可能成為未來的挑戰，特別是在處理大量上下文資料時。與主流的記憶體管理工具相比，OpenChronicle 的整合難度相對較低，並且能夠與多種 LLM 提供者進行無縫整合，這使得它在開發和部署上都具備了良好的適應性。
+OpenChronicle 的核心技術機制是基於 macOS 的 AX 事件捕捉，用於捕捉用戶的操作上下文。這些事件被轉換為結構化的記憶體，並以 Markdown 和 SQLite 格式存儲，這樣的設計使得數據的檢索和管理變得簡單且高效。系統能夠處理的數據量取決於用戶的操作頻率和記憶體的存儲限制，冷啟動時間相對較短，因為它依賴於本地存儲。選擇 Python 作為主要開發語言使得開發過程中能夠快速構建和調試，但也可能帶來性能上的瓶頸。未來在擴展性方面，如何處理更複雜的上下文信息將是系統需要面對的挑戰，特別是在記憶體增長時可能會影響性能。整合方面，與主流的 LLM 生態系統（如 OpenAI 和 Ollama）相容性良好，但對於其他工具的支持可能需要額外的適配。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用範例，對於新手來說相對友好。安裝過程順暢，但需要注意 macOS 的版本要求和 Xcode Command Line Tools 的安裝。文件中有詳細的配置和使用說明，對於初學者來說能夠快速上手。
+> README 文件提供了清晰的安裝和使用指導，並且包含了範例指令。安裝過程需要額外的 Xcode Command Line Tools，對於新手來說可能會有一定的門檻。整體而言，文檔質量良好，能夠幫助用戶快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開源且可擴展，使用者可以根據需求進行自定義。
-> - 本地優先設計，增強了資料的隱私性和安全性。
-> - 支援多種 LLM 提供者，使用者有更大的選擇空間。
+> - 本地優先，保護用戶隱私。
+> - 開源，易於擴展和修改。
+> - 支持多種 LLM 模型，靈活性高。
+> - Markdown 格式存儲，便於檢查和管理。
 
 > [!danger] 缺點
-> - 目前僅支援 macOS，限制了使用者範圍。
-> - 仍在 alpha 階段，可能存在不穩定性和功能缺失。
-> - 依賴於 macOS 的 AX 事件，可能無法在所有應用程式中捕捉到完整的上下文。
+> - 僅限於 macOS，對於其他平台不友好。
+> - 處於 alpha 階段，功能不穩定。
+> - 安裝過程需要額外的工具支持，對新手不友好。
+> - 目前功能相對有限，未來需要更多的擴展。
 
 > [!warning] 注意事項
-> - 目前僅支援 macOS 環境，無法在其他作業系統上運行。
-> - 仍處於 alpha 階段，功能和 API 可能會有變動。
-> - 依賴於 macOS 的 AX 事件，可能無法在所有應用程式中捕捉到完整的上下文。
+> - 僅支援 macOS 13+，不支持其他操作系統。
+> - 目前處於 alpha 階段，功能和 API 可能不穩定。
+> - 需要安裝 Xcode Command Line Tools，對於新手可能有入門障礙。
+> - 目前僅支持 AX Tree 作為主要信號，未來可能會擴展到其他信號。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了類似的記憶體管理功能，但主要針對特定的應用場景，缺乏 OpenChronicle 的通用性和擴展性。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | Claude-Obsidian 專注於與 Obsidian 的整合，適合已經在使用該平台的用戶，而 OpenChronicle 提供了更廣泛的工具支援。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 主要用於記錄和管理開發過程中的上下文，但不具備本地優先的存儲特性，適合需要雲端協作的團隊。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | Claude-Obsidian 提供了類似的記憶體功能，但主要依賴於 Obsidian 的生態系統，對於不使用 Obsidian 的用戶來說不太適合。 |
+| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | MemPalace 提供了一個記憶體系統，但它的設計更偏向於遊戲和娛樂用途，而非專業的工作上下文捕捉。 |
 
 ## 替代方案決策
 
@@ -213,16 +213,16 @@ OpenChronicle 的核心技術機制在於其事件驅動的上下文捕捉，利
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了一個記憶體管理系統，但主要針對特定的應用場景，缺乏 OpenChronicle 的通用性和擴展性。 | 如果你的專案已經在使用 Boneyard 並且不需要額外的擴展性，則可以選擇它。 | medium，因為需要調整資料格式和整合方式。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | Claude-Obsidian 專注於與 Obsidian 的整合，適合已經在使用該平台的用戶，而 OpenChronicle 提供了更廣泛的工具支援。 | 如果你的團隊已經在使用 Obsidian 並且需要與其整合，則 Claude-Obsidian 是更好的選擇。 | low，因為可以直接導入 Obsidian 的資料格式。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 主要用於記錄和管理開發過程中的上下文，但不具備本地優先的存儲特性，適合需要雲端協作的團隊。 | 如果你的團隊已經在用雲端工具進行協作，並且不需要本地存儲的話，可以考慮使用 Boneyard。 | medium，因為需要重新設計數據存儲和檢索邏輯。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | Claude-Obsidian 提供了類似的記憶體功能，但主要依賴於 Obsidian 的生態系統，對於不使用 Obsidian 的用戶來說不太適合。 | 如果你的團隊已經在使用 Obsidian 並希望整合記憶體功能，可以考慮使用 Claude-Obsidian。 | low，因為可以直接在 Obsidian 中使用。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **OpenChronicle** | **boneyard** | **claude-obsidian** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Boneyard 提供了一個記憶體管理系統，但主要針對特定的應用場景，缺乏 OpenChronicle 的通用性和擴展性。 | Claude-Obsidian 專注於與 Obsidian 的整合，適合已經在使用該平台的用戶，而 OpenChronicle 提供了更廣泛的工具支援。 |
-> | 遷移成本 | - | medium，因為需要調整資料格式和整合方式。 | low，因為可以直接導入 Obsidian 的資料格式。 |
-> | 適用場景 | 主要場景 | 如果你的專案已經在使用 Boneyard 並且不需要額外的擴 | 如果你的團隊已經在使用 Obsidian 並且需要與其整合， |
+> | 技術路線 | 本專案 | Boneyard 主要用於記錄和管理開發過程中的上下文，但不具備本地優先的存儲特性，適合需要雲端協作的團隊。 | Claude-Obsidian 提供了類似的記憶體功能，但主要依賴於 Obsidian 的生態系統，對於不使用 Obsidian 的用戶來說不太適合。 |
+> | 遷移成本 | - | medium，因為需要重新設計數據存儲和檢索邏輯。 | low，因為可以直接在 Obsidian 中使用。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在用雲端工具進行協作，並且不需要本地存儲的話 | 如果你的團隊已經在使用 Obsidian 並希望整合記憶體功 |
 
 ## 成熟度評估
 
@@ -239,38 +239,35 @@ OpenChronicle 的核心技術機制在於其事件驅動的上下文捕捉，利
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些應用程式中，AX 事件可能無法捕捉到完整的上下文
-  - 解法：手動輸入缺失的上下文信息
-- [MEDIUM] 目前的功能仍在開發中，可能會遇到不穩定性
-  - 解法：定期更新到最新版本以獲取修復
-- [low] Markdown 格式的記憶體可能會導致資料冗餘
-  - 解法：定期清理和整理記憶體資料
+- **[HIGH]** 安裝過程中可能會遇到 Xcode Command Line Tools 未安裝的問題
+  - 解法：確保執行 `xcode-select --install` 安裝必要的工具
+- [MEDIUM] 在 macOS 版本不兼容的情況下，可能無法正常運行
+  - 解法：確認你的 macOS 版本至少為 13+，並進行升級
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠靈活管理記憶體並支援多種 LLM 提供者。 |
-| 大型企業的核心應用系統 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
-| 自由職業者的多專案管理 | 適合 | 能夠有效記錄和管理多個專案的上下文。 |
-| 需要高效能的記憶體管理系統 | 普通 | 效能可能會受到資料量的影響。 |
+| 10 人以下的新創公司後端 AI 代理 | 非常適合 | 本地優先的設計能夠保護數據隱私，並且支持多種 LLM 模型。 |
+| 大型企業的數據管理系統 | 不適合 | 目前僅支持 macOS，對於多平台的需求無法滿足。 |
+| 個人開發者的 AI 助手 | 非常適合 | 提供了靈活的記憶體管理和本地存儲功能。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、3 小時整合，得到靈活的記憶體管理效果，值得嘗試。
+> 花 5 小時學、10 小時整合，得到靈活的本地優先記憶體系統，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：本工具不需要高權限運行，並且不存取敏感資料。依賴的庫和框架均為開源，信任度較高。
+> 低風險：本工具不需要高權限運行，數據存儲在本地，並且不會存取敏感資料。
 
 ## 健康度儀表板
 
@@ -335,10 +332,10 @@ OpenChronicle 的核心技術機制在於其事件驅動的上下文捕捉，利
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 57 |
-| Open Issues | 7 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-04-25 |
+| Forks | 93 |
+| Open Issues | 5 |
+| Issue 解決率 | 17% (1 closed) |
+| 最後推送 | 2026-04-26 |
 | 建立日期 | 2026-04-21 |
 | Repo 大小 | 1.8 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Einsia/OpenChronicle) |
@@ -346,28 +343,36 @@ OpenChronicle 的核心技術機制在於其事件驅動的上下文捕捉，利
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 85
->     "Swift" : 12
+>     "Python" : 86
+>     "Swift" : 11
 >     "Shell" : 3
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
+> | [@KMing-L](https://github.com/KMing-L) | 11 |
 > | [@Xiao-ao-jiang-hu](https://github.com/Xiao-ao-jiang-hu) | 7 |
-> | [@KMing-L](https://github.com/KMing-L) | 6 |
+> | [@Chen17-sq](https://github.com/Chen17-sq) | 5 |
 > | [@abmfy](https://github.com/abmfy) | 3 |
 > | [@slb1988](https://github.com/slb1988) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有合併請求和問題討論。
+**社群活躍度**：社群活躍，最近有多次提交和問題回應。
 **連結**：[文件](https://github.com/Einsia/OpenChronicle)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-23 ~ 2026-04-25）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #9 from slb1988/patch-1
+> [!abstract] 最近 10 次 commit（2026-04-25 ~ 2026-04-26）
+> **活躍天數** 2 天 · **最新 commit** refactor(cli): tidy status helpers + tests
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#7](https://github.com/Einsia/OpenChronicle/issues/7) | RFC: surface time-bound commitments as a new classifier pref | 0 | 0 |
 
 ## README 摘錄
 
@@ -603,7 +608,7 @@ OpenChronicle 的核心技術機制在於其事件驅動的上下文捕捉，利
 >       Bowen Wang💻 🚧
 >       CrazyCalvin💻
 >       Firefly💻
->       校奥浆糊💻
+>       校奥浆糊💻 🚧
 >       Houde Qian💻
 >       GiddensF97🎨
 >     
@@ -616,7 +621,7 @@ OpenChronicle 的核心技術機制在於其事件驅動的上下文捕捉，利
 
 ## 延伸閱讀
 
-相關概念：[[記憶體管理]] · [[本地優先]] · [[事件驅動]]
+相關概念：[[MCP Protocol]] · [[記憶體系統]] · [[可及性]]
 
 相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[MemPalace--mempalace|MemPalace/mempalace]] · [[milla-jovovich--mempalace|milla-jovovich/mempalace]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AlpinDale--parsync|AlpinDale/parsync]]
 
@@ -624,11 +629,11 @@ OpenChronicle 的核心技術機制在於其事件驅動的上下文捕捉，利
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：記憶體管理）
+> [!note]- 直接競品（同子分類：記憶體系統）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "記憶體管理" AND file.name != "Einsia--OpenChronicle"
+> WHERE subcategory = "記憶體系統" AND file.name != "Einsia--OpenChronicle"
 > SORT stars DESC
 > ```
 
@@ -660,7 +665,7 @@ OpenChronicle 的核心技術機制在於其事件驅動的上下文捕捉，利
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["記憶體管理","本地優先","事件驅動"];
+> const concepts = ["MCP Protocol","記憶體系統","可及性"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Einsia--OpenChronicle" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
