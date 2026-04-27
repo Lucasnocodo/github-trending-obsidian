@@ -1233,10 +1233,10 @@
   },
   "tw93/Kami": {
     "first_seen": "2026-04-22",
-    "last_seen": "2026-04-26",
-    "times_seen": 5,
+    "last_seen": "2026-04-27",
+    "times_seen": 6,
     "stars_first": 1594,
-    "stars_last": 3262
+    "stars_last": 3474
   },
   "codejunkie99/agentic-stack": {
     "first_seen": "2026-04-22",
@@ -1289,51 +1289,65 @@
   },
   "op7418/guizang-ppt-skill": {
     "first_seen": "2026-04-25",
-    "last_seen": "2026-04-26",
-    "times_seen": 2,
+    "last_seen": "2026-04-27",
+    "times_seen": 3,
     "stars_first": 1942,
-    "stars_last": 2704
+    "stars_last": 3004
   },
   "deepseek-ai/TileKernels": {
     "first_seen": "2026-04-25",
-    "last_seen": "2026-04-26",
-    "times_seen": 2,
+    "last_seen": "2026-04-27",
+    "times_seen": 3,
     "stars_first": 1072,
-    "stars_last": 1160
+    "stars_last": 1219
   },
   "masterking32/MasterHttpRelayVPN": {
     "first_seen": "2026-04-25",
-    "last_seen": "2026-04-26",
-    "times_seen": 2,
+    "last_seen": "2026-04-27",
+    "times_seen": 3,
     "stars_first": 1053,
-    "stars_last": 1246
+    "stars_last": 1390
   },
   "ConardLi/garden-skills": {
     "first_seen": "2026-04-26",
-    "last_seen": "2026-04-26",
-    "times_seen": 1,
+    "last_seen": "2026-04-27",
+    "times_seen": 2,
     "stars_first": 1238,
-    "stars_last": 1238
+    "stars_last": 1383
   },
   "Einsia/OpenChronicle": {
     "first_seen": "2026-04-26",
-    "last_seen": "2026-04-26",
-    "times_seen": 1,
+    "last_seen": "2026-04-27",
+    "times_seen": 2,
     "stars_first": 1126,
-    "stars_last": 1126
+    "stars_last": 1422
   },
   "cosmicstack-labs/mercury-agent": {
     "first_seen": "2026-04-26",
-    "last_seen": "2026-04-26",
-    "times_seen": 1,
+    "last_seen": "2026-04-27",
+    "times_seen": 2,
     "stars_first": 1117,
-    "stars_last": 1117
+    "stars_last": 1416
   },
   "leigest519/OpenGame": {
     "first_seen": "2026-04-26",
-    "last_seen": "2026-04-26",
-    "times_seen": 1,
+    "last_seen": "2026-04-27",
+    "times_seen": 2,
     "stars_first": 1088,
-    "stars_last": 1088
+    "stars_last": 1254
+  },
+  "victorchen96/deepseek_v4_rolepaly_instruct": {
+    "first_seen": "2026-04-27",
+    "last_seen": "2026-04-27",
+    "times_seen": 1,
+    "stars_first": 1079,
+    "stars_last": 1079
+  },
+  "openclaw/clawsweeper": {
+    "first_seen": "2026-04-27",
+    "last_seen": "2026-04-27",
+    "times_seen": 1,
+    "stars_first": 1007,
+    "stars_last": 1007
   }
 }

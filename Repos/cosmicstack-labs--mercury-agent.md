@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram."
 homepage: "https://mercury.cosmicstack.org/"
-stars: 1124
-stars_per_day: 225
-forks: 129
-open_issues: 8
+stars: 1416
+stars_per_day: 236
+forks: 154
+open_issues: 9
 created: 2026-04-20
-pushed_at: 2026-04-25
+pushed_at: 2026-04-26
 first_seen: 2026-04-26
 week: "2026-W18"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供一個具備持久記憶的 AI 助手，能夠在 CLI 或 Teleg
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-29"
+appearances: 2
+next_review: "2026-04-30"
 contributor_count: 4
 engagement: "medium"
 issue_close_rate: 11
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-26"
-star_history: "2026-04-26:1117,2026-04-26:1124"
+star_history: "2026-04-26:1117,2026-04-26:1124,2026-04-27:1416"
 tags:
   - github
   - "category/ai_ml"
@@ -916,4 +916,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-27|2026-04-27]] — 再次上榜，1.4k stars
 - [[2026-04-26|2026-04-26]] — 首次收錄，1.1k stars

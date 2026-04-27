@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more."
 homepage: "https://github.com/ConardLi/garden-skills"
-stars: 1238
-stars_per_day: 310
-forks: 233
-open_issues: 0
+stars: 1383
+stars_per_day: 277
+forks: 255
+open_issues: 2
 created: 2026-04-21
-pushed_at: 2026-04-25
+pushed_at: 2026-04-26
 first_seen: 2026-04-26
 week: "2026-W18"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供一系列生產就緒的 AI 能力，涵蓋網頁設計、知�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-29"
+appearances: 2
+next_review: "2026-04-30"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-26"
-star_history: "2026-04-26:1238,2026-04-26:1238"
+star_history: "2026-04-26:1238,2026-04-26:1238,2026-04-27:1383"
 tags:
   - github
   - "category/開發工具"
@@ -886,4 +886,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-27|2026-04-27]] — 再次上榜，1.4k stars
 - [[2026-04-26|2026-04-26]] — 首次收錄，1.2k stars

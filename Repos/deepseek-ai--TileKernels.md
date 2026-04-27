@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "A kernel library written in tilelang"
 homepage: ""
-stars: 1160
-stars_per_day: 387
-forks: 89
+stars: 1219
+stars_per_day: 305
+forks: 94
 open_issues: 12
 created: 2026-04-22
 pushed_at: 2026-04-23
@@ -30,8 +30,8 @@ use_case: "提供針對 LLM 操作的優化 GPU 核心，使用 TileLang 開發�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-04-29"
+appearances: 3
+next_review: "2026-04-30"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-25"
-star_history: "2026-04-25:1072,2026-04-26:1160"
+star_history: "2026-04-25:1072,2026-04-26:1160,2026-04-27:1219"
 tags:
   - github
   - "category/ai_ml"
@@ -755,5 +755,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-27|2026-04-27]] — 再次上榜，1.2k stars
 - [[2026-04-26|2026-04-26]] — 再次上榜，1.2k stars
 - [[2026-04-25|2026-04-25]] — 首次收錄，1.1k stars

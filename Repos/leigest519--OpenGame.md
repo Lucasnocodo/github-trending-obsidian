@@ -7,10 +7,10 @@ language: TypeScript
 license: Apache-2.0
 description: "OpenGame: Open Agentic Coding for Games"
 homepage: ""
-stars: 1088
-stars_per_day: 218
-forks: 129
-open_issues: 10
+stars: 1254
+stars_per_day: 209
+forks: 157
+open_issues: 11
 created: 2026-04-20
 pushed_at: 2026-04-22
 first_seen: 2026-04-26
@@ -30,8 +30,8 @@ use_case: "提供一個開源框架，讓使用者能從提示創建完整的網
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-29"
+appearances: 2
+next_review: "2026-04-30"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-26"
-star_history: "2026-04-26:1088"
+star_history: "2026-04-26:1088,2026-04-27:1254"
 tags:
   - github
   - "category/開發工具"
@@ -825,4 +825,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-27|2026-04-27]] — 再次上榜，1.3k stars
 - [[2026-04-26|2026-04-26]] — 首次收錄，1.1k stars

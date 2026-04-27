@@ -7,10 +7,10 @@ language: HTML
 license: MIT
 description: "👩‍🚒 Good content deserves good paper."
 homepage: "https://kami.tw93.fun"
-stars: 3262
-stars_per_day: 652
-forks: 168
-open_issues: 0
+stars: 3474
+stars_per_day: 579
+forks: 180
+open_issues: 1
 created: 2026-04-20
 pushed_at: 2026-04-26
 first_seen: 2026-04-22
@@ -30,8 +30,8 @@ use_case: "提供高品質的文件設計系統，讓你的內容在印刷時展
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-04-29"
+appearances: 6
+next_review: "2026-04-30"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 67
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-22"
-star_history: "2026-04-22:1594,2026-04-23:2559,2026-04-24:2897,2026-04-25:3050,2026-04-26:3262"
+star_history: "2026-04-22:1594,2026-04-23:2559,2026-04-24:2897,2026-04-25:3050,2026-04-26:3262,2026-04-27:3474"
 tags:
   - github
   - "category/開發工具"
@@ -793,6 +793,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-27|2026-04-27]] — 再次上榜，3.5k stars
 - [[2026-04-26|2026-04-26]] — 再次上榜，3.3k stars
 - [[2026-04-25|2026-04-25]] — 再次上榜，3.0k stars
 - [[2026-04-24|2026-04-24]] — 再次上榜，2.9k stars
