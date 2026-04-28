@@ -1,66 +1,69 @@
 ---
-repo: deepseek-ai/TileKernels
-url: https://github.com/deepseek-ai/TileKernels
-owner: deepseek-ai
-owner_type: Organization
-language: Python
+repo: earthtojake/text-to-cad
+url: https://github.com/earthtojake/text-to-cad
+owner: earthtojake
+owner_type: User
+language: JavaScript
 license: MIT
-description: "A kernel library written in tilelang"
+description: "An open source harness for generating CAD models"
 homepage: ""
-stars: 1281
-stars_per_day: 256
-forks: 104
-open_issues: 12
+stars: 952
+stars_per_day: 159
+forks: 151
+open_issues: 0
 created: 2026-04-22
-pushed_at: 2026-04-23
-first_seen: 2026-04-25
-week: "2026-W17"
+pushed_at: 2026-04-26
+first_seen: 2026-04-28
+week: "2026-W18"
 month: "2026-04"
-category: "AI/ML"
-subcategory: "LLM 推論"
+category: "開發工具"
+subcategory: "CAD 工具"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-04-25
-use_case: "提供針對 LLM 操作的優化 GPU 核心，使用 TileLang 開發。"
-priority: high
+last_reviewed: 2026-04-28
+use_case: "一個開源的工具，讓你能夠透過編碼生成 CAD 模型。"
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-05-01"
-contributor_count: 2
-engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 146
-readme_length: 2939
+appearances: 1
+next_review: "2026-05-05"
+contributor_count: 1
+engagement: "medium"
+issue_close_rate: -1
+repo_size_kb: 26226
+readme_length: 2742
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-04-25"
-star_history: "2026-04-25:1072,2026-04-26:1160,2026-04-27:1219,2026-04-28:1281"
+ring_history: "assess@2026-04-28"
+star_history: "2026-04-28:952"
 tags:
   - github
-  - "category/ai_ml"
-  - "lang/python"
-  - org
-  - easy_install
+  - "category/開發工具"
+  - "lang/javascript"
+  - "topic/agents"
+  - "topic/ai"
+  - "topic/ai_agents"
+  - "topic/cad"
+  - "topic/text_to_cad"
 aliases:
-  - "TileKernels"
-  - "deepseek-ai/TileKernels"
-  - "提供針對 LLM 操作的優化 GPU 核心，使用 TileLang 開發。"
+  - "text-to-cad"
+  - "earthtojake/text-to-cad"
+  - "一個開源的工具，讓你能夠透過編碼生成 CAD 模型。"
 ---
 
-# TileKernels
+# text-to-cad
 
-**1.1k** stars · **536** stars/天 · 建立 2 天前 · Python · MIT
+**952** stars · **159** stars/天 · 建立 6 天前 · JavaScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/deepseek-ai--TileKernels");
+const me = dv.page("Repos/earthtojake--text-to-cad");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,23 +73,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`ORG` `easy-install`
+`個人專案`
+
+`agents` `ai` `ai-agents` `cad` `text-to-cad` `wasm`
 
 > [!summary] 一句話摘要
-> 提供針對 LLM 操作的優化 GPU 核心，使用 TileLang 開發。
+> 一個開源的工具，讓你能夠透過編碼生成 CAD 模型。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (536 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要在高效能 GPU 上運行 LLM 應用的開發者和研究人員。
-> **一句話重點** TileKernels 透過 TileLang 提供了高效能 GPU 核心的簡單開發，這將改變 LLM 操作的開發方式。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (159 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要自動化 CAD 模型生成的工程師和設計師。
+> **一句話重點** 這個專案讓 CAD 模型生成變得更簡單，特別是對於需要快速迭代的設計工作。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--TileKernels");
+> const me = dv.page("Repos/earthtojake--text-to-cad");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "LLM 推論" && p.file.name !== "deepseek-ai--TileKernels" && p.status !== "archived")
+>     .where(p => p.subcategory === "CAD 工具" && p.file.name !== "earthtojake--text-to-cad" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -97,111 +102,112 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 LLM 推論 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 CAD 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到高效能 GPU 核心的開發能力，值得嘗試。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，3 小時整合，得到自動化 CAD 模型生成的效果，值得嘗試。
 
 > [!abstract] 核心創新
-> 使用 TileLang 提供高效能 GPU 核心的簡單開發和優化。
+> 這個專案的創新在於將文本描述直接轉化為 CAD 模型，實現了自動化的設計流程。
 
 ## 專案簡介
 
-TileKernels 是一個專為 LLM（大型語言模型）操作優化的 GPU 核心庫，使用 TileLang 這個專門語言來表達高效能的 GPU 核心。使用者可以透過簡單的 Python 語法來開發和優化這些核心，並利用 TileLang 的自動優化功能來提升效能。這個庫包含多種功能，如 Gating、MoE Routing 和 Quantization，這些功能能夠有效地處理複雜的模型運算。舉例來說，使用者可以透過 `pip install tile-kernels` 來安裝這個庫，並使用 `pytest` 進行測試和基準測試，確保核心的正確性和效能。這個工具的賣點在於它能夠接近硬體性能的極限，特別適合需要高效能計算的 AI 應用。
+這個專案提供了一個開源的框架，讓使用者可以透過編碼生成 3D CAD 模型。使用者首先需要描述想要的零件或機構，然後由編碼代理（如 Codex 或 Claude）來更新 CAD 源文件，接著可以生成 STEP、STL、DXF、GLB 或 URDF 格式的模型。這樣的設計使得 CAD 模型的生成過程自動化，並且可以進行版本控制，方便團隊協作。最關鍵的指令是 `npm run dev`，這樣可以啟動本地的 CAD Explorer 來檢視生成的模型。這個工具的賣點在於它能夠將文本描述轉化為 CAD 模型，並且支持多種輸出格式，讓使用者能夠靈活選擇。
 
-技術上，TileKernels 依賴於 PyTorch 和 TileLang，這使得它能夠在 NVIDIA SM90 或 SM100 架構的 GPU 上運行，並且需要 CUDA Toolkit 13.1 以上的版本。與其他 GPU 核心庫相比，如 NVIDIA 的 cuDNN，TileKernels 提供了更高層次的抽象，讓開發者能夠更快速地進行開發和測試。這使得它在快速迭代和開發新功能時，能夠提供更大的靈活性。實際使用中，使用者可能會遇到一些尚未解決的問題，例如在測試過程中對某些數據類型的支持不一致，這在熱門 Issues 中有提到。整體來看，這個專案仍在 Alpha 階段，適合對高效能計算有需求的開發者，但在生產環境中使用時需謹慎考量其穩定性和文檔完整性。
+技術上，這個專案使用 JavaScript 和 Python，並且依賴於一些 CAD 特定的庫來處理模型生成和格式轉換。相較於傳統的 CAD 軟體，這個工具的優勢在於其自動化和可擴展性，特別適合需要快速迭代的設計環境。使用者可以在本地運行，不需要依賴後端服務，這對於小型團隊或個人開發者來說是個很大的優勢。實際使用中，可能會遇到 CAD 模型的複雜性導致生成時間較長的問題，但整體上這個工具的設計是針對現代開發流程進行優化的。這個專案目前處於活躍開發階段，未來可能會增加更多的功能和格式支持。
 
-**技術棧**：`TileLang` · `PyTorch 2.10` · `CUDA Toolkit 13.1`
+**技術棧**：`JavaScript` · `Python` · `CSS` · `HTML`
 
 ## 重點功能
 
-- Gating — 提供 Top-k 專家選擇和評分，用於 Mixture of Experts 路由。
-- MoE Routing — 支持令牌到專家的映射，融合擴展/縮減和權重正規化。
-- Quantization — 支持每個令牌、每個區塊和每個通道的 FP8/FP4/E5M6 轉換，並結合 SwiGLU 和量化操作。
-- Transpose — 支持批量轉置操作，提升數據處理效率。
-- Engram — 提供融合 RMSNorm 的 Engram gating 核心，支持前向/反向傳播和權重梯度縮減。
-- Manifold HyperConnection — 提供包含 Sinkhorn 正規化和混合分割/應用的超連接核心。
-- Modeling — 提供高層次的 `torch.autograd.Function` 包裝，將低層次核心組合成可訓練層。
+- 生成模型 — 使用 Codex 和 Claude 等編碼代理生成 CAD 模型，支持多種格式。
+- 本地運行 — 可以在本地運行 CAD Explorer，無需後端服務。
+- 多格式輸出 — 支持 STEP、STL、DXF、GLB 和 URDF 等多種格式的輸出。
+- 版本控制 — 生成的模型可以進行版本控制，方便團隊協作。
+- 幫助文檔 — 提供了詳細的技能文檔，幫助使用者理解如何使用 CAD 和 URDF 技能。
 
 ## 快速開始
 
-1. 安裝開發版本
+1. 克隆專案
 ```bash
-pip install -e '.[dev]'
+git clone https://github.com/earthtojake/text-to-cad.git
 ```
-2. 安裝釋出版本
+2. 安裝 Python 依賴
 ```bash
-pip install tile-kernels
+python3.11 -m venv .venv && ./.venv/bin/python -m pip install --upgrade pip && ./.venv/bin/pip install -r requirements-cad.txt
 ```
-3. 運行單一測試檔案
+3. 安裝 viewer 依賴
 ```bash
-pytest tests/transpose/test_transpose.py -n 4
+cd viewer && npm install
+```
+4. 運行本地 CAD Explorer
+```bash
+npm run dev
 ```
 
 ## 程式碼範例
 
-```python
+```js
 {
-  "前置條件": "安裝了 TileKernels",
-  "指令": "pytest tests/transpose/test_transpose.py -n 4",
-  "預期輸出": "測試的正確性，使用 4 個工作者進行運行。"
+  "前置條件": "確保已經克隆專案並安裝依賴",
+  "指令": "npm run dev",
+  "預期輸出": "本地 CAD Explorer 啟動，並可以在瀏覽器中檢視生成的模型。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天就累積 1072 stars（536/天），forks 79（7.4%），這顯示出高需求的潛力。這個專案由多位開發者共同維護，且其核心功能針對 LLM 操作進行了優化，解決了現有 GPU 核心庫在性能和開發靈活性上的不足。特別是 TileLang 的使用，使得開發者能夠更快速地進行高效能計算的開發。社群的反應也顯示出對於這個工具的興趣，尤其是在 AI 領域的應用。這些因素共同推動了專案的快速增長。
+> 建立 6 天就累積 952 stars（159/天），forks 151（15.9%），顯示出強烈的社群興趣。作者 earthtojake 在開源社群中有一定的知名度，過去的專案也多與 CAD 和 AI 相關，這使得這個專案能夠迅速吸引關注。這個專案解決了 CAD 模型生成的自動化問題，以往使用者需要手動操作 CAD 軟體，這樣的過程效率低下且容易出錯。隨著 AI 技術的進步，將文本轉化為 CAD 模型的需求逐漸增加，這個工具正好滿足了這一需求。社群的反饋和使用者的需求也促進了這個專案的快速發展。
 
 ## 適合誰使用
 
-**目標受眾**：需要在高效能 GPU 上運行 LLM 應用的開發者和研究人員。
+**目標受眾**：需要自動化 CAD 模型生成的工程師和設計師。
 
 > [!example] 使用場景
-> - AI 工程師用它來優化 LLM 的訓練過程，因為其提供的 GPU 核心能夠顯著提升計算效能，並減少訓練時間。
-> - 數據科學家用它來進行大規模數據處理，因為 TileLang 的設計使得複雜的運算能夠更簡單地實現，並且提升了開發效率。
-> - 研究人員用它來測試新型模型的效能，因為其支持的多種量化技術能夠幫助他們在不同硬體上進行性能評估。
+> - 機械工程師用它來快速生成機械部件的 CAD 模型，因為傳統 CAD 軟體的手動操作效率低下。
+> - 產品設計師用它來迭代設計，因為能夠快速從文本描述生成模型，節省了大量時間。
+> - 教育工作者用它來教學 CAD 模型生成，因為它的開源特性和簡單的使用方式適合學生學習。
 
 ## 架構分析
 
-TileKernels 的架構基於 TileLang，這是一種專為 GPU 核心設計的領域特定語言，能夠簡化高效能計算的開發。資料流從高層次的 Python 語法進入 TileLang，經過編譯後生成高效的 GPU 核心，這樣的設計使得開發者能夠專注於算法而非底層實現。選擇 TileLang 而非直接使用 CUDA 的好處在於，開發者可以更快速地進行迭代，降低了開發門檻，但代價是可能在性能上無法完全達到手動優化的 CUDA 實現。這個架構在處理大規模數據時表現良好，但在極端性能需求下可能會遇到瓶頸。整體而言，這個設計使得 TileKernels 能夠在 AI 應用中提供高效能的計算能力。
+這個專案的架構基於前端和後端的分離設計，前端使用 JavaScript 和 CSS 來構建用戶界面，而後端則使用 Python 處理 CAD 模型的生成。這樣的設計使得使用者可以在本地運行 CAD Explorer，無需依賴後端服務。資料流方面，使用者的描述會被編碼代理解析，然後生成相應的 CAD 源文件，最後再轉換為所需的格式。選擇這種架構的好處是能夠快速迭代和測試，但代價是需要使用者具備一定的技術背景來設置環境。擴展性方面，這個架構可以輕鬆添加新的格式支持或功能，但在處理大型模型時可能會遇到性能瓶頸。
 
 ## 技術深入分析
 
-TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 核心設計的語言，能夠簡化高效能計算的開發過程。這個庫的設計使得開發者能夠使用 Python 語法來編寫高效的 GPU 核心，並透過自動優化來提升性能。效能方面，這些核心能夠接近硬體性能的極限，特別是在處理大規模數據時，能夠有效利用 GPU 的計算能力。設計取捨方面，選擇 TileLang 而非直接使用 CUDA 的好處在於開發速度和靈活性，但可能在性能上無法完全達到手動優化的 CUDA 實現。這個專案的依賴樹相對簡單，主要依賴於 PyTorch 和 TileLang，這降低了整合的複雜度。技術風險方面，專案仍在 Alpha 階段，可能存在穩定性問題，特別是在高負載情況下。整合分析方面，TileKernels 能夠與現有的 PyTorch 生態系統無縫整合，並且支援常見的 CI/CD 流程，這使得它在開發和部署中非常方便。
+這個專案的核心技術機制是將文本描述轉化為 CAD 模型，使用了編碼代理來自動生成源文件。這樣的設計使得使用者可以快速生成和修改模型，並且支持多種輸出格式。效能方面，對於小型到中型的模型生成是相對高效的，但在處理大型模型時可能會遇到性能瓶頸。選擇 JavaScript 和 Python 作為技術棧的好處在於它們的生態系統豐富，並且有許多現成的庫可以使用，但這也意味著需要管理多個依賴。技術風險方面，對於大型模型的生成可能會導致記憶體使用過高，這在資源有限的環境中可能會成為問題。整合方面，這個工具可以與主流的 CI/CD 流程相容，但在設置時可能需要一些額外的配置。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了安裝和測試的具體範例，讓新手能夠快速上手。安裝過程相對順暢，但需要注意 Python 和 CUDA 的版本要求。文件中有基本的使用指導，但缺乏更深入的示例和文檔。整體來說，花 30 分鐘應該能夠成功運行基本範例。
+> README 文件提供了清晰的安裝步驟和使用說明，並且包含了範例指令。安裝過程相對順暢，但需要注意 Python 和 Node.js 的版本要求。整體上，對於有一定技術背景的使用者來說，能夠在 30 分鐘內順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供高效能的 GPU 核心，適合 LLM 操作。
-> - 使用 TileLang 簡化開發流程，降低了學習曲線。
-> - 支持多種先進的運算技術，如量化和 Gating。
+> - 支持多種 CAD 格式的輸出，靈活性高。
+> - 能夠在本地運行，無需依賴雲端服務。
+> - 提供版本控制功能，適合團隊協作。
 
 > [!danger] 缺點
-> - 仍在 Alpha 階段，穩定性不足。
-> - 對某些數據類型的支持不一致，可能影響測試結果。
-> - 需要特定的硬體環境（NVIDIA SM90 或 SM100）。
+> - 對於複雜模型生成的性能可能不佳。
+> - 需要一定的技術背景來設置和使用。
+> - 可能需要額外的時間來學習如何使用編碼代理。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.10 以上版本。
-> - 需要 NVIDIA SM90 或 SM100 架構的 GPU。
-> - 目前仍在 Alpha 階段，可能存在不穩定的問題。
-> - 對某些數據類型的支持不一致，特別是在測試過程中。
+> - 生成複雜模型可能需要較長時間。
+> - 對於非常大型的模型，可能會遇到性能瓶頸。
+> - 需要安裝特定版本的 Python 和 Node.js 依賴。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 GPU 核心功能，但缺乏 TileLang 的高層次抽象，開發者需要更多底層的 CUDA 知識。 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 專注於語音和自然語言處理的 GPU 核心，與 TileKernels 的 LLM 專注有所不同，且可能不支持 TileLang。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於生成 3D 模型，但不支持文本到 CAD 的轉換，適合需要手動設計的使用者。 |
+| [BuilderPulse/BuilderPulse](https://github.com/BuilderPulse/BuilderPulse) | 這個工具提供了更強的團隊協作功能，但不如本專案靈活，特別是在模型生成方面。 |
 
 ## 替代方案決策
 
@@ -209,70 +215,70 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 專注於語音和自然語言處理的 GPU 核心，提供針對特定應用的優化。 | 如果你的專案主要集中在語音或 NLP 應用，NemoClaw 可能提供更針對性的優化。 | medium，因為需要重新適應不同的 API 和功能集。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 GPU 核心功能，但缺乏 TileLang 的高層次抽象。 | 如果你的團隊已經熟悉 CUDA 並希望進行更底層的優化，這可能是更好的選擇。 | high，因為需要重寫大量代碼以適應不同的架構。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於手動設計 3D 模型，並不支持自動化生成，適合需要精細控制的使用者。 | 如果你的團隊需要手動設計並且對 CAD 模型的細節有高要求，這個工具可能更合適。 | medium，因為需要重新調整設計流程。 |
+| [BuilderPulse/BuilderPulse](https://github.com/BuilderPulse/BuilderPulse) | 這個工具提供了強大的團隊協作功能，但不如本專案靈活，特別是在模型生成方面。 | 如果你的團隊已經在使用 BuilderPulse 並需要強調協作，這個工具可能更適合。 | low，因為可以直接整合到現有的工作流程中。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **TileKernels** | **NemoClaw** | **boneyard** |
+> | 維度 | **text-to-cad** | **boneyard** | **BuilderPulse** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於語音和自然語言處理的 GPU 核心，提供針對特定應用的優化。 | 提供類似的 GPU 核心功能，但缺乏 TileLang 的高層次抽象。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的 API 和功能集。 | high，因為需要重寫大量代碼以適應不同的架構。 |
-> | 適用場景 | 主要場景 | 如果你的專案主要集中在語音或 NLP 應用，NemoClaw | 如果你的團隊已經熟悉 CUDA 並希望進行更底層的優化，這可 |
+> | 技術路線 | 本專案 | 這個工具專注於手動設計 3D 模型，並不支持自動化生成，適合需要精細控制的使用者。 | 這個工具提供了強大的團隊協作功能，但不如本專案靈活，特別是在模型生成方面。 |
+> | 遷移成本 | - | medium，因為需要重新調整設計流程。 | low，因為可以直接整合到現有的工作流程中。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要手動設計並且對 CAD 模型的細節有高要求， | 如果你的團隊已經在使用 BuilderPulse 並需要強調 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人項目或小型團隊試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在測試過程中對某些數據類型的支持不一致，可能導致測試失敗。
-  - 解法：確保使用正確的數據類型，並參考文檔中的範例。
-- [MEDIUM] 某些功能尚未完全實現，可能導致運行時錯誤。
-  - 解法：定期檢查更新，並參考 GitHub 上的 Issues。
-- [MEDIUM] 安裝過程中可能會遇到版本不兼容的問題。
-  - 解法：確保所有依賴項的版本符合要求，並參考 README 中的安裝指南。
+- **[HIGH]** 在生成大型模型時可能會遇到性能瓶頸，導致生成時間過長。
+  - 解法：分割模型為多個小型部件進行生成。
+- [MEDIUM] 需要特定版本的 Python 和 Node.js，可能會導致安裝困難。
+  - 解法：仔細檢查 README 中的版本要求，確保環境一致。
+- [MEDIUM] 對於複雜的幾何形狀，生成的模型可能不夠精確。
+  - 解法：在描述中提供更詳細的參數和限制。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要在 NVIDIA GPU 上運行 LLM 的研究團隊 | 非常適合 | 專案專注於高效能計算，能夠充分利用 GPU 的性能。 |
-| 小型初創公司開發 AI 應用 | 適合 | 提供簡化的開發流程，降低了入門門檻。 |
-| 大型企業的生產環境 | 不適合 | 仍在 Alpha 階段，穩定性不足，不建議用於關鍵任務。 |
-| 學術界進行 AI 研究的個人開發者 | 非常適合 | 能夠快速迭代和測試新模型，適合學術研究的需求。 |
+| 小型設計團隊的 CAD 模型生成 | 非常適合 | 支持快速生成和迭代，並且能夠進行版本控制。 |
+| 大型企業的 CAD 設計流程 | 不適合 | 可能在性能和精確度上無法滿足需求。 |
+| 教育機構的 CAD 教學 | 適合 | 開源特性和簡單的使用方式適合學生學習。 |
+| 獨立開發者的個人專案 | 非常適合 | 能夠在本地運行，無需依賴雲端服務。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到高效能 GPU 核心的開發能力，值得嘗試。
+> 花 5 小時學習，3 小時整合，得到自動化 CAD 模型生成的效果，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，主要運行在本地環境中，不存取敏感資料。對於依賴的庫，需定期檢查安全性更新。
+> 低風險：這個工具不需要高權限，並且不會存取敏感資料，但在使用過程中仍需注意依賴的安全性。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--TileKernels");
+> const me = dv.page("Repos/earthtojake--text-to-cad");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -307,7 +313,7 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--TileKernels");
+> const me = dv.page("Repos/earthtojake--text-to-cad");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -331,145 +337,131 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 79 |
-| Open Issues | 8 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-04-23 |
+| Forks | 151 |
+| Open Issues | 0 |
+| 最後推送 | 2026-04-26 |
 | 建立日期 | 2026-04-22 |
-| Repo 大小 | 146 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/deepseek-ai/TileKernels) |
+| Repo 大小 | 25.6 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/earthtojake/text-to-cad) |
+| Topics | `agents` `ai` `ai-agents` `cad` `text-to-cad` `wasm` |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "JavaScript" : 64
+>     "Python" : 35
+>     "CSS" : 1
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@bucket-xv](https://github.com/bucket-xv) | 2 |
-> | [@tianr22](https://github.com/tianr22) | 1 |
+> | [@earthtojake](https://github.com/earthtojake) | 11 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有合併請求和問題回應，但解決率低。
-**連結**：[文件](https://github.com/deepseek-ai/TileKernels)
+**社群活躍度**：社群活躍，最近有多次提交和更新。
+**連結**：[文件](https://github.com/earthtojake/text-to-cad)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-23 ~ 2026-04-23）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #1 from tianr22/main
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#8](https://github.com/deepseek-ai/TileKernels/issues/8) | testing/bench.py: make_param_key does not handle torch.dtype | 0 | 0 |
-> | [#6](https://github.com/deepseek-ai/TileKernels/issues/6) | testing/bench.py: _format_value lacks dict support | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-04-22 ~ 2026-04-26）
+> **活躍天數** 4 天 · **最新 commit** Improve CAD Explorer handoff and workspace defaults
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Tile Kernels
+> # ⚙ Open Source Text to CAD Harness ⚙
 > 
-> Optimized GPU kernels for LLM operations, built with [TileLang](https://github.com/tile-ai/tilelang). TileLang is a domain-specific language for expressing high-performance GPU kernels in Python, featuring easy migration, agile development, and automatic optimization.
+> An open source harness for generating 3D models with your favorite coding agent
 > 
-> Most kernels in this project approach the limit of hardware performance regarding the compute intensity and memory bandwidth. Some of them have already been used in internal training and inference scenarios. However, they do not represent best practices and we are actively working on improving the code quality and documentation.
+> [](https://github.com/earthtojake/text-to-cad/stargazers)
+> [](https://github.com/earthtojake/text-to-cad/network/members)
+> [](LICENSE)
+> [](https://x.com/soft_servo)
+> [](requirements-cad.txt)
+> [](https://github.com/gumyr/build123d)
+> [](requirements-cad.txt)
+> [](skills/cad/SKILL.md)
+> [](skills/cad/SKILL.md)
+> [](skills/urdf/SKILL.md)
+> [](viewer/package.json)
+> [](viewer/package.json)
+> [](viewer/package.json)
 > 
-> ## Features
+> ## ✨ Features
 > 
-> - **Gating** — Top-k expert selection and scoring for Mixture of Experts routing
-> - **MoE Routing** — Token-to-expert mapping, fused expansion/reduction and weight normalization
-> - **Quantization** — Per-token, per-block, and per-channel FP8/FP4/E5M6 casting with fused SwiGLU+quantization ops
-> - **Transpose** — Batched transpose operations
-> - **Engram** — Engram gating kernels with fused RMSNorm, forward/backward passes and weight gradient reduction
-> - **Manifold HyperConnection** — Hyper-connection kernels including Sinkhorn normalization and mix splitting/application
-> - **Modeling** — High-level `torch.autograd.Function` wrappers composing low-level kernels into trainable layers (engram gate, mHC pipeline)
+> - **Generate** - Create source-controlled CAD models with coding agents like Codex and Claude Code.
+> - **Export** - Produce STEP, STL, DXF, GLB, topology data, and URDF robot descriptions.
+> - **Browse** - Inspect generated geometry in a local CAD Explorer viewer.
+> - **Reference** - Copy stable `@cad[...]` references so agents can make precise follow-up edits.
+> - **Review** - Render quick snapshots for fast checks during an iteration loop.
+> - **Reproduce** - Edit source files first, then regenerate explicit targets.
+> - **Local** - Run the harness and viewer locally with no backend to host.
 > 
-> ## Requirements
+> ## 🧰 Bundled Skills
 > 
-> - Python 3.10 or higher
-> - PyTorch 2.10 or higher
-> - TileLang 0.1.9 or higher
-> - NVIDIA SM90 or SM100 architecture GPU
-> - CUDA Toolkit 13.1 or higher
+> This harness vendors file-targeted skills for CAD and robot-description work. Use the bundled copies here for local `models/` projects, or use the dedicated repositories when installing the skills outside this harness.
 > 
-> ## Installation
+> - **CAD Skill** - STEP, STL, DXF, GLB/topology, snapshots, and `@cad[...]` geometry references. [Bundled docs](skills/cad/README.md) · [Standalone repo](https://github.com/earthtojake/cad-skill)
+> - **URDF Skill** - Generated URDF XML, robot links, joints, limits, validation, and mesh references. [Bundled docs](skills/urdf/README.md) · [Standalone repo](https://github.com/earthtojake/urdf-skill)
 > 
-> ### Install a local development version
+> ## 🔁 Workflow
 > 
-> ```bash
-> pip install -e ".[dev]"
-> ```
+> 1. **Describe** - Tell your agent about the part, assembly, fixture, robot, or mechanism you want.
+> 2. **Edit** - Let your coding agent update CAD source files under `models/`.
+> 3. **Regenerate** - Create explicit STEP, STL, DXF, GLB, or URDF targets.
+> 4. **Inspect** - Open the CAD Explorer viewer to review the generated model.
+> 5. **Reference** - Copy `@cad[...]` handles when you want geometry-aware edits.
+> 6. **Commit** - Save the source and generated artifacts together once the model is ready.
 > 
-> ### Install a release version
+> ## 🚀 Quick Start
 > 
-> ```bash
-> pip install tile-kernels
-> ```
-> 
-> ## Testing
-> 
-> Tests using pytest:
-> 
-> ### Test single test file
-> 
-> ```bash
-> pytest tests/transpose/test_transpose.py -n 4 # Correctness only with 4 workers
-> pytest tests/transpose/test_transpose.py --run-benchmark # Correctness + Benchmarking
-> ```
-> 
-> ### Pressure test
+> Clone the repo:
 > 
 > ```bash
-> TK_FULL_TEST=1 pytest -n 4 --count 2
+> git clone https://github.com/earthtojake/text-to-cad.git
+> cd text-to-cad
 > ```
 > 
-> ## Project Structure
+> Install Python CAD dependencies:
 > 
-> ```txt
-> tile_kernels/
-> ├── moe/        # Mixture of Experts routing related kernels
-> ├── quant/      # FP8/FP4/E5M6 quantization
-> ├── transpose/  # Batched transpose
-> ├── engram/     # Engram gating kernels
-> ├── mhc/        # Manifold HyperConnection kernels
-> ├── modeling/   # High-level autograd modeling layers (engram, mHC)
-> ├── torch/      # PyTorch reference implementations
-> └── testing/    # Test and benchmark utilities
+> ```bash
+> python3.11 -m venv .venv
+> ./.venv/bin/python -m pip install --upgrade pip
+> ./.venv/bin/pip install -r requirements-cad.txt
 > ```
 > 
-> ## Acknowledgement
+> Install viewer dependencies:
 > 
-> This project is built on [TileLang](https://github.com/tile-ai/tilelang). Thanks and respect to the developers!
-> 
-> ## License
-> 
-> This code repository is released under [the MIT License](LICENSE).
-> 
-> ## Citation
-> 
-> ```bibtex
-> @misc{tilekernels,
->       title={TileKernels},
->       author={Xiangwen Wang, Chenhao Xu, Huanqi Cao, Rui Tian, Weilin Zhao, Kuai Yu and Chenggang Zhao},
->       year={2026},
->       publisher = {GitHub},
->       howpublished = {\url{https://github.com/deepseek-ai/TileKernels}},
-> }
+> ```bash
+> cd viewer
+> npm install
 > ```
+> 
+> Run the local CAD Explorer:
+> 
+> ```bash
+> npm run dev
+> ```
+> 
+> Then open [http://localhost:4178](http://localhost:4178).
 
 ## 延伸閱讀
 
-相關概念：[[CUDA]] · [[GPU 加速]] · [[深度學習]]
+相關概念：[[自動化]] · [[機器學習]] · [[CAD]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[kyegomez--OpenMythos|kyegomez/OpenMythos]] · [[tanishqkumar--ssd|tanishqkumar/ssd]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[alchaincyf--hermes-agent-orange-book|alchaincyf/hermes-agent-orange-book]]
 
-[GitHub](https://github.com/deepseek-ai/TileKernels)
+[GitHub](https://github.com/earthtojake/text-to-cad)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：LLM 推論）
+> [!note]- 直接競品（同子分類：CAD 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "LLM 推論" AND file.name != "deepseek-ai--TileKernels"
+> WHERE subcategory = "CAD 工具" AND file.name != "earthtojake--text-to-cad"
 > SORT stars DESC
 > ```
 
@@ -477,7 +469,7 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "AI/ML" AND file.name != "deepseek-ai--TileKernels"
+> WHERE category = "開發工具" AND file.name != "earthtojake--text-to-cad"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -486,7 +478,7 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "deepseek-ai--TileKernels" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "earthtojake--text-to-cad" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -495,15 +487,15 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W17" AND file.name != "deepseek-ai--TileKernels"
+> WHERE week = "2026-W18" AND file.name != "earthtojake--text-to-cad"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CUDA","GPU 加速","深度學習"];
+> const concepts = ["自動化","機器學習","CAD"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "deepseek-ai--TileKernels" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "earthtojake--text-to-cad" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -516,12 +508,12 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--TileKernels");
+> const me = dv.page("Repos/earthtojake--text-to-cad");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "deepseek-ai--TileKernels" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "earthtojake--text-to-cad" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -537,7 +529,7 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "deepseek-ai" AND file.name != "deepseek-ai--TileKernels"
+> WHERE owner = "earthtojake" AND file.name != "earthtojake--text-to-cad"
 > SORT stars DESC
 > ```
 
@@ -545,7 +537,7 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--TileKernels");
+> const me = dv.page("Repos/earthtojake--text-to-cad");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -562,7 +554,7 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--TileKernels");
+> const me = dv.page("Repos/earthtojake--text-to-cad");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -595,7 +587,7 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--TileKernels");
+> const me = dv.page("Repos/earthtojake--text-to-cad");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -619,7 +611,7 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--TileKernels");
+> const me = dv.page("Repos/earthtojake--text-to-cad");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -656,7 +648,7 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--TileKernels");
+> const me = dv.page("Repos/earthtojake--text-to-cad");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -739,7 +731,7 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專門為 GPU 
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-04-25** — 首次收錄
+> **2026-04-28** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -755,7 +747,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-04-28|2026-04-28]] — 再次上榜，1.3k stars
-- [[2026-04-27|2026-04-27]] — 再次上榜，1.2k stars
-- [[2026-04-26|2026-04-26]] — 再次上榜，1.2k stars
-- [[2026-04-25|2026-04-25]] — 首次收錄，1.1k stars
+- [[2026-04-28|2026-04-28]] — 首次收錄，952 stars

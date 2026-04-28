@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "ClawSweeper scans all issues and PRs and suggest what we can close, and why. It runs every PR / Issue once a week."
 homepage: ""
-stars: 1007
-stars_per_day: 336
-forks: 108
-open_issues: 3
+stars: 1198
+stars_per_day: 300
+forks: 128
+open_issues: 0
 created: 2026-04-23
-pushed_at: 2026-04-27
+pushed_at: 2026-04-28
 first_seen: 2026-04-27
 week: "2026-W18"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "自動掃描並建議關閉不活躍的 GitHub 問題和 PR，減少�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-04-30"
+appearances: 2
+next_review: "2026-05-01"
 contributor_count: 4
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-27"
-star_history: "2026-04-27:1007"
+star_history: "2026-04-27:1007,2026-04-28:1198"
 tags:
   - github
   - "category/開發工具"
@@ -898,4 +898,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-28|2026-04-28]] — 再次上榜，1.2k stars
 - [[2026-04-27|2026-04-27]] — 首次收錄，1.0k stars
