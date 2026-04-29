@@ -506,7 +506,7 @@ Open Design 的核心技術機制在於其本地 daemon 架構，這使得使用
 
 相關概念：[[設計系統]] · [[開源]] · [[本地優先]]
 
-相關專案：[[OpenCoworkAI--open-codesign|OpenCoworkAI/open-codesign]] · [[op7418--guizang-ppt-skill|op7418/guizang-ppt-skill]] · [[Manavarya09--design-extract|Manavarya09/design-extract]] · [[alchaincyf--huashu-design|alchaincyf/huashu-design]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]]
+相關專案：[[OpenCoworkAI--open-codesign|OpenCoworkAI/open-codesign]] · [[op7418--guizang-ppt-skill|op7418/guizang-ppt-skill]] · [[Manavarya09--design-extract|Manavarya09/design-extract]] · [[alchaincyf--huashu-design|alchaincyf/huashu-design]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]]
 
 [GitHub](https://github.com/nexu-io/open-design) · [官方網站](https://github.com/nexu-io/open-design)
 

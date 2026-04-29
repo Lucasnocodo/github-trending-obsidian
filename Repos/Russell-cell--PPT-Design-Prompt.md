@@ -544,7 +544,7 @@ design-md-ppt convert --source-root ./source --output-root ./ppt-image --manifes
 
 相關概念：[[自動化]] · [[資料轉換]] · [[簡報設計]]
 
-相關專案：[[VoltAgent--awesome-design-md|VoltAgent/awesome-design-md]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[lewislulu--html-ppt-skill|lewislulu/html-ppt-skill]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]]
+相關專案：[[VoltAgent--awesome-design-md|VoltAgent/awesome-design-md]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[lewislulu--html-ppt-skill|lewislulu/html-ppt-skill]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
 
 [GitHub](https://github.com/Russell-cell/PPT-Design-Prompt)
 

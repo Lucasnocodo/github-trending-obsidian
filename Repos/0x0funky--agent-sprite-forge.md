@@ -35,14 +35,14 @@ next_review: "2026-05-02"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
-repo_size_kb: 38576
-readme_length: 9974
+repo_size_kb: 58219
+readme_length: 9824
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-28"
-star_history: "2026-04-28:871,2026-04-28:871,2026-04-29:1042"
+star_history: "2026-04-28:871,2026-04-28:871,2026-04-29:1042,2026-04-29:1042"
 tags:
   - github
   - "category/開發工具"
@@ -60,7 +60,7 @@ aliases:
 
 # agent-sprite-forge
 
-**871** stars · **218** stars/天 · 建立 4 天前 · Python · MIT
+**1.0k** stars · **208** stars/天 · 建立 5 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/0x0funky--agent-sprite-forge");
@@ -81,10 +81,10 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 將自然語言提示轉換為遊戲準備的 2D 精靈和分層 2D 地圖。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (218 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (208 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
 > **適合** 需要快速生成 2D 遊戲資產的獨立開發者或小型遊戲團隊。
-> **一句話重點** 這個專案展示了如何利用 Codex 的能力來簡化遊戲資產的生成過程，特別適合獨立開發者和小型團隊。
+> **一句話重點** 這個專案的最大亮點在於其將自然語言處理與遊戲資產生成結合，讓開發者能夠用更簡單的方式創作遊戲內容。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -107,27 +107,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學、2 小時整合，得到快速生成 2D 遊戲資產的效果，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習、3 小時整合，得到快速生成 2D 資產的能力，值得一試。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於將 Codex 的圖像生成能力與遊戲資產生成流程無縫整合，實現了一個高效的資產生成工作流。
+> 這個專案的創新點在於將 Codex 整合進資產生成流程，實現自然語言到遊戲資產的直接轉換。
 
 ## 專案簡介
 
-Agent Sprite Forge 是一個專為生成 2D 精靈和地圖而設計的工具，使用者可以透過自然語言提示來創建遊戲資產。使用者只需輸入如 `$generate2dsprite` 或 `$generate2dmap` 的指令，工具便會自動生成相應的精靈動畫或地圖，並輸出為透明 PNG 或 GIF 格式。這樣的設計使得整個流程無需額外的圖像 API 或後端，簡化了資產生成的工作流，並且由同一個代理來決定資產計劃和處理。這種 Codex-first 的策略使得生成過程更為高效，因為 Codex 直接在同一工作流中生成圖像，避免了多次的 API 調用。技術上，該工具依賴於 Python 和一些輕量級的庫，如 NumPy 和 Pillow，這使得它的安裝和運行都相對簡單。
+Agent Sprite Forge 是一個專為遊戲開發者設計的工具，能夠將自然語言提示轉換為 2D 精靈和地圖。用戶可以使用指令 $generate2dsprite 生成角色動畫資源，或使用 $generate2dmap 創建地圖，並且能夠導出透明 PNG、GIF 和可用於遊戲的場景數據。這個工具的核心在於 Codex 的整合，讓整個資產生成流程更為簡潔，避免了額外的 API 連接和服務器需求。Python 腳本僅負責執行確定性的像素操作，讓用戶能夠專注於創意而非技術細節。
 
-與其他類似工具相比，如 0xGF/boneyard 或 AgriciDaniel/claude-obsidian，Agent Sprite Forge 提供了更為集成的解決方案，無需依賴外部資源，並且能夠生成更為複雜的分層地圖和精靈。實際使用中，使用者可以生成多種遊戲資產，包括角色、法術、地圖等，並且支持精細的碰撞檢測和區域元數據。這使得它特別適合需要快速原型設計的獨立開發者或小型遊戲團隊。儘管目前仍在快速發展中，但其功能已經相當成熟，值得在小型專案中使用。未來幾個月內，預計會有更多功能和改進，尤其是在生成質量和用戶體驗方面。
+這樣的設計使得資產生成過程更為高效，特別適合需要快速迭代的遊戲開發環境。使用者可以生成各種資產，包括角色、法術、地圖和碰撞數據，並且可以根據需求調整生成的內容。這個工具的優勢在於其靈活性和高效性，能夠滿足不同遊戲類型的需求，從 RPG 到側捲軸遊戲皆可應用。整體而言，Agent Sprite Forge 提供了一個完整的解決方案，讓開發者能夠快速生成遊戲資產，並且在 Codex 的幫助下，實現更高的創作自由度和效率。
 
-**技術棧**：`Python` · `NumPy >=1.26` · `Pillow >=10.0`
+**技術棧**：`Python 3.8+` · `Pillow` · `numpy`
 
 ## 重點功能
 
-- 2D 精靈生成 — 使用 `$generate2dsprite` 指令生成角色、法術和動畫，支持多種樣式和動作。
-- 分層地圖生成 — 使用 `$generate2dmap` 指令創建複雜的地圖，支持碰撞檢測和環境道具。
-- 透明 PNG 和 GIF 輸出 — 生成的資產可直接導出為透明背景的 PNG 或 GIF 格式，方便用於遊戲中。
-- 支持多種資產類型 — 包括生物、角色、法術、投射物等，滿足不同遊戲需求。
-- 簡化的工作流 — Codex-first 設計使得資產生成過程無需額外 API，提升效率。
+- 自然語言生成 — 使用 $generate2dsprite 和 $generate2dmap 指令，將提示轉換為 2D 精靈和地圖。
+- 多樣化資產類型 — 支持生成角色、法術、地圖和碰撞數據等多種遊戲資產。
+- 透明 PNG 和 GIF 輸出 — 能夠導出清晰的透明精靈圖和動畫，方便直接用於遊戲中。
+- Codex 整合 — 直接在工作流程中生成圖像，避免了額外的 API 連接。
+- 分層地圖生成 — 支持生成可編輯的分層地圖，適合用於各種遊戲引擎。
 
 ## 快速開始
 
@@ -139,73 +139,63 @@ git clone https://github.com/0x0funky/agent-sprite-forge.git && cd agent-sprite-
 ```bash
 mkdir -p ~/.codex/skills && cp -R ./skills/* ~/.codex/skills/
 ```
-3. 啟動 Codex 會話以載入技能
+3. 啟動 Codex 會話
 ```bash
-python3 -m codex
-```
-
-## 程式碼範例
-
-```python
-{
-  "前置條件": "已安裝並配置 Codex 環境",
-  "指令": "$generate2dsprite to create a goku is attacking with Kamehameha",
-  "預期輸出": "生成一個 Goku 使用 Kamehameha 的精靈動畫"
-}
+啟動新的 Codex 會話以加載技能。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天就累積 871 stars（218/天），forks 84（9.6%），顯示出強勁的增長潛力。作者 0x0funky 在遊戲資產生成領域有一定的背景，此專案解決了遊戲開發中資產生成的繁瑣過程，尤其是對於獨立開發者來說，能夠快速生成高質量的 2D 精靈和地圖。近期的推廣活動和社群討論也促進了其曝光率，讓更多開發者注意到這個工具。技術上，Codex 的進步使得這種集成的資產生成變得可行，讓開發者能夠在一個平台上完成多個步驟，這在過去是難以實現的。forks/stars 比率為 9.6%，顯示出有相當比例的使用者在實際修改或使用該專案。
+> 建立 5 天就累積 1042 stars（208/天），forks 107（10.3%），顯示出強勁的增長潛力。這個專案由 0x0funky 開發，專注於遊戲資產生成，解決了傳統資產生成流程繁瑣的問題。之前，開發者通常需要依賴多個工具和 API 來生成資產，這樣的流程不僅耗時，還容易出錯。Codex 的整合讓這一切變得簡單，開發者只需透過自然語言提示即可生成所需資產。社群對這個工具的反應熱烈，顯示出其在遊戲開發領域的潛力。
 
 ## 適合誰使用
 
 **目標受眾**：需要快速生成 2D 遊戲資產的獨立開發者或小型遊戲團隊。
 
 > [!example] 使用場景
-> - 獨立遊戲開發者用它來快速生成 RPG 遊戲中的角色精靈，因為能夠節省大量的美術資源時間，並且生成的資產質量高。
-> - 小型遊戲團隊用它來創建遊戲地圖，因為可以輕鬆生成分層地圖和碰撞數據，提升開發效率。
-> - 遊戲設計師用它來設計遊戲中的法術效果，因為能夠快速生成多種動畫效果，並且直接在遊戲中使用。
+> - 遊戲開發者用它來快速生成 RPG 角色動畫，因為傳統手動繪製過程耗時且容易出錯。
+> - 獨立遊戲設計師用它來創建 2D 地圖，因為能夠透過簡單的提示生成複雜的場景，節省了大量時間。
+> - 教育工作者用它來設計遊戲化學習內容，因為可以輕鬆生成各種教學資源，提升學生的學習興趣。
 
 ## 架構分析
 
-該專案採用 Codex-first 的架構設計，將圖像生成和資產處理整合在同一工作流中。資料流中，使用者輸入自然語言提示，Codex 生成相應的精靈或地圖，然後 Python 腳本負責後處理和導出。這種設計的好處在於簡化了資產生成的過程，減少了對外部 API 的依賴，代價是需要使用者熟悉 Codex 的使用。擴展性方面，未來可以考慮增加對 3D 資產的支持，但目前主要集中在 2D 資產的生成上。
+這個專案採用 Python 作為主要開發語言，並利用 Codex 進行圖像生成。整體架構設計上，將生成過程簡化為單一流程，避免了傳統資產生成中多個 API 的繁瑣連接。資料流方面，使用者通過自然語言提示，Codex 解析後直接生成圖像，並由 Python 腳本進行後處理。
+
+這樣的設計使得用戶能夠快速生成所需資產，並且減少了錯誤的可能性。選擇 Python 是因為其強大的圖像處理庫支持，然而這也帶來了對 Python 環境的依賴，可能會影響某些開發者的使用體驗。整體而言，這種設計使得資產生成更為高效，特別適合快速迭代的開發需求。
 
 ## 技術深入分析
 
-Agent Sprite Forge 的核心技術機制是利用 Codex 生成圖像，並通過 Python 腳本進行後處理。這種設計使得資產生成過程無需依賴外部 API，從而提高了效率。該工具能夠處理多種資產類型，包括角色、法術和地圖，並且支持精細的碰撞檢測和區域元數據。效能上，該工具能夠快速生成高質量的 2D 資產，具體的生成速度取決於提示的詳細程度。
-
-設計上，選擇 Python 作為主要開發語言，因為它的生態系統豐富且易於使用，依賴樹相對簡單，主要依賴於 NumPy 和 Pillow。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在生成複雜地圖時。整合方面，該工具可以輕鬆與現有的遊戲開發流程相結合，並且支持多種遊戲引擎的資產導入。整體而言，該專案在遊戲資產生成領域具有很大的潛力，未來可能會進一步擴展其功能。
+Agent Sprite Forge 的核心技術在於將 Codex 整合進資產生成流程，這使得用戶能夠通過自然語言提示生成 2D 精靈和地圖。這個工具使用了 Python 的 Pillow 和 numpy 進行圖像處理，能夠有效地處理透明背景和動畫 GIF 的生成。效能方面，這個工具能夠快速生成多種資產類型，並且支持高效的後處理，如背景去除和幀拆分。選擇 Python 作為開發語言是因為其豐富的圖像處理庫，但這也意味著需要用戶有一定的 Python 環境配置能力。設計上，這個工具避免了傳統資產生成中的多個 API 連接，讓整個流程更為簡潔。技術風險方面，依賴 Codex 的生成能力可能會在未來的版本中面臨不穩定性，特別是在生成質量和準確性上。整合方面，這個工具能夠與多種遊戲引擎兼容，特別是 Godot，並且在 CI/CD pipeline 中的應用也相對友好。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且詳細，提供了多個使用範例和安裝指導。安裝過程順暢，僅需安裝 Python 和相關依賴。提供的提示和範例能幫助新手快速上手，文件目前僅有英文版本，可能對某些使用者造成障礙。
+> README 文件清晰，提供了詳細的使用範例和安裝指導。安裝過程相對順暢，但需要用戶具備基本的 Python 環境配置能力。文件目前僅提供英文和繁體中文版本，對於多語言支持的需求還有提升空間。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速生成高質量的 2D 遊戲資產，節省開發時間。
-> - 集成的工作流無需額外的 API，簡化了開發過程。
-> - 支持多種遊戲資產類型，滿足不同需求。
+> - 快速生成遊戲資產，節省開發時間。
+> - 支持多種資產類型，靈活應用於不同遊戲。
+> - Codex 整合使得流程簡潔，避免繁瑣的 API 連接。
 
 > [!danger] 缺點
-> - 目前僅支持 2D 資產，無法滿足 3D 遊戲的需求。
-> - 需要使用者熟悉 Codex，對新手可能有學習曲線。
-> - 生成結果依賴於提示的詳細程度，較模糊的提示可能導致不理想的結果。
+> - 僅支援 2D 資產生成，無法處理 3D 資產。
+> - 依賴 Python 環境，對某些開發者可能造成不便。
+> - 生成的資產可能需要進一步的手動調整以符合特定需求。
 
 > [!warning] 注意事項
-> - 目前僅支持 2D 精靈和地圖生成，無法生成 3D 資產。
-> - 需要安裝 Python 及相關依賴，對於不熟悉的使用者可能有一定的學習曲線。
-> - 生成的資產質量依賴於提示的詳細程度，較模糊的提示可能導致不理想的結果。
+> - 僅支援 Python 3.8+。
+> - 需要安裝 Pillow 和 numpy 等依賴。
+> - 不支援生成 3D 資產。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的精靈生成能力，但缺乏分層地圖的支持，適合較簡單的遊戲需求。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 專注於角色生成，無法生成地圖和其他遊戲資產，適合專注於角色設計的開發者。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的精靈生成，但主要專注於 3D 資產，適合需要更高維度的開發者。 |
+| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 專注於將圖像轉換為提示，而本專案則是將提示轉換為圖像，功能上有明顯差異。 |
 
 ## 替代方案決策
 
@@ -213,16 +203,16 @@ Agent Sprite Forge 的核心技術機制是利用 Codex 生成圖像，並通過
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於簡單的精靈生成，無法生成複雜的地圖和碰撞數據。 | 如果你的需求僅限於簡單的角色精靈生成，且不需要地圖支持。 | low，因為功能相似，轉移資產生成邏輯相對簡單。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 專注於角色生成，無法生成地圖和其他遊戲資產。 | 如果你只需要角色生成，而不需要地圖或其他資產的支持。 | medium，因為需要重新設計資產生成的工作流。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 3D 資產生成，提供更高維度的資產設計。 | 如果你的遊戲需要 3D 資產，這個工具會更適合。 | medium，因為需要重新設計資產生成流程。 |
+| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 專注於將圖像轉換為提示，而本專案則是將提示轉換為圖像。 | 如果你的需求是從現有圖像生成提示，這個工具會更合適。 | low，因為可以直接使用現有圖像進行轉換。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **agent-sprite-forge** | **boneyard** | **claude-obsidian** |
+> | 維度 | **agent-sprite-forge** | **boneyard** | **awesome-gpt-image-2-prompts** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於簡單的精靈生成，無法生成複雜的地圖和碰撞數據。 | 專注於角色生成，無法生成地圖和其他遊戲資產。 |
-> | 遷移成本 | - | low，因為功能相似，轉移資產生成邏輯相對簡單。 | medium，因為需要重新設計資產生成的工作流。 |
-> | 適用場景 | 主要場景 | 如果你的需求僅限於簡單的角色精靈生成，且不需要地圖支持。 | 如果你只需要角色生成，而不需要地圖或其他資產的支持。 |
+> | 技術路線 | 本專案 | 專注於 3D 資產生成，提供更高維度的資產設計。 | 專注於將圖像轉換為提示，而本專案則是將提示轉換為圖像。 |
+> | 遷移成本 | - | medium，因為需要重新設計資產生成流程。 | low，因為可以直接使用現有圖像進行轉換。 |
+> | 適用場景 | 主要場景 | 如果你的遊戲需要 3D 資產，這個工具會更適合。 | 如果你的需求是從現有圖像生成提示，這個工具會更合適。 |
 
 ## 成熟度評估
 
@@ -233,44 +223,72 @@ Agent Sprite Forge 的核心技術機制是利用 Codex 生成圖像，並通過
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人項目試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 生成的資產質量依賴於提示的詳細程度，較模糊的提示可能導致不理想的結果。
-  - 解法：提供更詳細的提示以獲得更好的生成結果。
-- [MEDIUM] 在某些環境下安裝依賴可能會遇到問題，特別是對於新手。
-  - 解法：確保使用正確的 Python 版本和依賴庫版本。
-- **[HIGH]** 生成複雜地圖時可能會出現性能瓶頸。
-  - 解法：簡化地圖設計或分步生成。
+- [MEDIUM] 生成的資產可能需要手動調整以符合特定需求
+  - 解法：在生成後進行手動編輯以達到預期效果
+- **[HIGH]** 對 Python 環境的依賴可能造成使用上的困難
+  - 解法：確保安裝正確的 Python 版本和依賴
+- [MEDIUM] Codex 的生成質量可能不穩定
+  - 解法：多次嘗試不同的提示以獲得最佳結果
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型獨立遊戲開發團隊 | 非常適合 | 能夠快速生成高質量的遊戲資產，提升開發效率。 |
-| 大型遊戲開發公司 | 不適合 | 可能需要更複雜的資產生成流程和支持 3D 資產。 |
-| 遊戲設計師需要快速原型設計 | 非常適合 | 能夠快速生成多種遊戲資產，適合快速迭代。 |
-| 對遊戲資產生成有特殊需求的開發者 | 普通 | 可能需要額外的自定義功能。 |
+| 小型獨立遊戲開發團隊 | 非常適合 | 能夠快速生成所需的 2D 資產，提升開發效率。 |
+| 大型遊戲開發公司 | 普通 | 雖然功能強大，但可能無法滿足複雜的資產需求。 |
+| 教育機構用於遊戲化學習 | 適合 | 能夠快速生成教學資源，提升學生參與度。 |
+| 需要 3D 資產的遊戲開發 | 不適合 | 僅支持 2D 資產生成，無法滿足需求。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~2 小時 |
-| 維護負擔 | low |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學、2 小時整合，得到快速生成 2D 遊戲資產的效果，值得嘗試。
+> 花 5 小時學習、3 小時整合，得到快速生成 2D 資產的能力，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，且不存取敏感資料，依賴的庫也相對安全。
+> 低風險：該工具不需要高權限，且不存取敏感資料。依賴的庫有一定的信任度，但仍需注意供應鏈風險。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Agent Sprite Forge 最常與 Codex 和各種 2D 遊戲引擎搭配使用，特別是 Godot。在一個使用 Godot 的專案中，你可以使用 $generate2dsprite 生成角色動畫，並使用 $generate2dmap 創建地圖，具體做法是將生成的資產直接導入 Godot 的資產庫。這個工具與 GitHub Actions 等 CI 工具的整合也相對友好，能夠實現自動化資產生成。整合的摩擦點主要在於需要用戶具備一定的 Python 環境配置能力，對於不熟悉 Python 的開發者可能會造成困難。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 Agent Sprite Forge 出現之前，遊戲資產生成通常依賴多個工具和 API，這樣的流程不僅耗時，還容易出錯。隨著 Codex 的發展，將自然語言處理與資產生成結合的可能性變得可行，這使得開發者能夠用更簡單的方式創作遊戲內容。這個工具代表了遊戲開發中對於資產生成流程簡化的趨勢，未來可能會有更多類似的工具出現，進一步提升開發效率。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-5 人的小型團隊
+
+**前置技能**：
+- 熟悉 Python 基本操作
+- 了解遊戲資產生成的基本概念
+
+> [!tip] 導入策略
+> 第一週：在個人項目中試用。第二週：在小型團隊的非關鍵項目中導入。第三週：撰寫最佳實踐文檔。第四週：在主產品的一個模組中開始使用。
+
+**成功指標**：資產生成時間減少 50%。
+
+> [!warning] 退出計畫
+> 所有設定以標準 JSON 格式保存，便於轉換為其他工具。
 
 ## 健康度儀表板
 
@@ -335,11 +353,11 @@ Agent Sprite Forge 的核心技術機制是利用 Codex 生成圖像，並通過
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 84 |
+| Forks | 107 |
 | Open Issues | 0 |
-| 最後推送 | 2026-04-27 |
+| 最後推送 | 2026-04-28 |
 | 建立日期 | 2026-04-23 |
-| Repo 大小 | 37.7 MB |
+| Repo 大小 | 56.9 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/0x0funky/agent-sprite-forge) |
 | Topics | `agent-skills` `codex` `pixel-art` `sprite-generator` |
 
@@ -350,17 +368,17 @@ Agent Sprite Forge 的核心技術機制是利用 Codex 生成圖像，並通過
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@0x0funky](https://github.com/0x0funky) | 17 |
+> | [@0x0funky](https://github.com/0x0funky) | 20 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，最近有多次更新和討論。
+**社群活躍度**：社群活躍，最近有多次提交和更新。
 **連結**：[文件](https://github.com/0x0funky/agent-sprite-forge)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-23 ~ 2026-04-27）
-> **活躍天數** 4 天 · **最新 commit** Update map showcase images
+> [!abstract] 最近 10 次 commit（2026-04-24 ~ 2026-04-28）
+> **活躍天數** 4 天 · **最新 commit** Add Godot map showcase
 
 ## README 摘錄
 
@@ -419,11 +437,13 @@ Agent Sprite Forge 的核心技術機制是利用 Codex 生成圖像，並通過
 > - Small bundles such as `unit_bundle`, `spell_bundle`, and `combat_bundle`
 > - Reference-guided sprite variants, animation sheets, and evolution lines
 > - Single baked 2D maps
+> - Clean HD hand-painted layered maps
 > - Layered base maps with transparent props
 > - Dressed-reference guided layered maps
 > - 2D map prop packs such as `2x2`, `3x3`, and `4x4`
 > - Collision and zone metadata for playable maps
 > - Flattened map previews for QA and showcase
+> - Godot-ready editable maps with `TileMapLayer`, separate props, `Area2D` encounter grass, `StaticBody2D` collision, exit zones, and debug player scenes
 > 
 > 
 > ### Option 1: Windows PowerShell
@@ -636,9 +656,9 @@ Agent Sprite Forge 的核心技術機制是利用 Codex 生成圖像，並通過
 > ```
 > 
 > 
-> ### Layered RPG Map / Reference-Guided Prop Pack
+> ### Layered RPG Map / Clean HD Reference Pipeline
 > 
-> `$generate2dmap` now models maps as a production pipeline instead of a single strategy label. It chooses a visual model, runtime object model, collision model, and export target. For layered raster maps it can generate a ground-only base map, use that visible base as a wrapper reference for a dressed planning pass, batch small props into a 3x3 prop pack, extract transparent props, place them with y-sort metadata, and compose a flattened preview.
+> `$generate2dmap` now models maps as a production pipeline instead of a single strategy label. It chooses a visual model, runtime object model, collision model, art direction, and export target. For layered raster maps it defaults to a clean hand-painted HD game-map style for readability, generates a ground-only base map, uses that visible base as a wrapper reference for a dressed planning pass, batches small props into a 3x3 prop pack, extracts transparent props, places them with y-sort metadata, and composes a flattened preview.
 > 
 >   
 >     
@@ -670,23 +690,16 @@ Agent Sprite Forge 的核心技術機制是利用 Codex 生成圖像，並通過
 > 
 > Reference-guided layered maps use this flow:
 > 
-> 1. Generate a ground-only base map.
-> 2. Show the base map in the conversation context and generate a dressed reference from it.
-> 3. Generate one-by-one props or a tightly margined prop pack from the dressed reference.
-> 4. Run soft-matte chroma-key cleanup with despill before extracting props when magenta fringe appears.
-> 5. Compose the final runtime preview from the original base plus extracted transparent props.
-> 
-> Codex-first 2D game asset skills for game-ready pixel assets and playable map scenes.
-> 
-> This repository currently ships two skills:
-> 
-> - [`skills/generate2dsprite`](./skills/generate2dsprite): generate and postprocess sprites, animation sheets, props, and 
+> 1. Pick the art direction: `clean_hd` by default for readable game maps, `pixel_inspired` for a softer pixel-adjacent look, or `retro_pixel` only when the user asks for classic pixel art.
+> 2. Generate a ground-only base map.
+> 3. Show the base map in the conversation context and generate a dressed reference from it.
+> 4. Generate one-by-one props or a tightly margined prop pack from the dress
 
 ## 延伸閱讀
 
-相關概念：[[遊戲資產生成]] · [[2D 地圖設計]] · [[Codex]]
+相關概念：[[遊戲資產生成]] · [[自然語言處理]] · [[2D 像素藝術]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]]
 
 [GitHub](https://github.com/0x0funky/agent-sprite-forge)
 
@@ -728,7 +741,7 @@ Agent Sprite Forge 的核心技術機制是利用 Codex 生成圖像，並通過
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["遊戲資產生成","2D 地圖設計","Codex"];
+> const concepts = ["遊戲資產生成","自然語言處理","2D 像素藝術"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "0x0funky--agent-sprite-forge" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

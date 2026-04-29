@@ -3,30 +3,30 @@ repo: EvoLinkAI/awesome-gpt-image-2-prompts
 url: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts
 owner: EvoLinkAI
 owner_type: User
-language: Python
+language: N/A
 license: NOASSERTION
 description: "Curated GPT-Image-2 prompts fot the Openai API：image examples across portraits, posters, UI mockups, character sheets, and community experiments."
 homepage: "https://evolink.ai/gpt-image-2-prompts"
-stars: 6885
-stars_per_day: 765
-forks: 674
-open_issues: 9
+stars: 8738
+stars_per_day: 874
+forks: 844
+open_issues: 10
 created: 2026-04-18
-pushed_at: 2026-04-27
+pushed_at: 2026-04-28
 first_seen: 2026-04-23
 week: "2026-W17"
 month: "2026-04"
 category: "AI/ML"
 subcategory: "圖像生成"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-23
-use_case: "提供高品質的 GPT-Image-2 提示詞，幫助生成各類圖像。"
+use_case: "提供高品質的 GPT-Image-2 提示詞與圖像範例，幫助用戶生成各類圖像。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,18 +35,19 @@ next_review: "2026-04-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 81495
-readme_length: 9999
+repo_size_kb: 85328
+readme_length: 10000
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-23"
-star_history: "2026-04-23:1761,2026-04-23:1768,2026-04-24:2734,2026-04-24:2750,2026-04-25:3244,2026-04-25:3246,2026-04-26:3953,2026-04-27:5270,2026-04-28:6885"
+star_history: "2026-04-23:1761,2026-04-23:1768,2026-04-24:2734,2026-04-24:2750,2026-04-25:3244,2026-04-25:3246,2026-04-26:3953,2026-04-27:5270,2026-04-28:6885,2026-04-29:8738"
 tags:
   - github
   - "category/ai_ml"
-  - "lang/python"
+  - "lang/other"
+  - easy_install
   - "topic/api"
   - "topic/awesome_list"
   - "topic/chatgpt"
@@ -55,12 +56,12 @@ tags:
 aliases:
   - "awesome-gpt-image-2-prompts"
   - "EvoLinkAI/awesome-gpt-image-2-prompts"
-  - "提供高品質的 GPT-Image-2 提示詞，幫助生成各類圖像。"
+  - "提供高品質的 GPT-Image-2 提示詞與圖像範例，幫助用戶生成各類圖像。"
 ---
 
 # awesome-gpt-image-2-prompts
 
-**6.9k** stars · **765** stars/天 · 建立 9 天前 · Python · NOASSERTION
+**8.7k** stars · **874** stars/天 · 建立 10 天前 · N/A · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/EvoLinkAI--awesome-gpt-image-2-prompts");
@@ -73,18 +74,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案`
+`個人專案` `easy-install`
 
 `api` `awesome-list` `chatgpt` `generative-` `gpt-image-2` `gpt-image-2-api` `gpt-image-2-prompts` `image-generation` `image-prompt` `image-to-image` `openai` `prompt-` `prompt-collection` `prompts` `text-to-image`
 
 > [!summary] 一句話摘要
-> 提供高品質的 GPT-Image-2 提示詞，幫助生成各類圖像。
+> 提供高品質的 GPT-Image-2 提示詞與圖像範例，幫助用戶生成各類圖像。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (765 stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (874 stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要快速生成特定風格圖像的設計師和開發者。
-> **一句話重點** 這個專案不僅提供生成圖像的能力，更是提升使用者創作效率的工具。
+> **適合** 需要快速生成高品質圖像的設計師和內容創作者。
+> **一句話重點** 這個專案讓用戶能夠透過簡單的提示詞生成高品質圖像，降低了創作的難度。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -107,27 +108,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
-> **結論** 花 3 小時學習，5 小時整合，得到快速生成圖像的能力，值得考慮。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，3 小時整合，能快速生成高品質圖像，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供經過篩選的高品質提示詞，專注於提升 GPT-Image-2 的使用效率。
+> 這個專案的創新在於集中整理高品質的 GPT-Image-2 提示詞，讓用戶能夠快速生成各類圖像。
 
 ## 專案簡介
 
-這個專案收集了高品質的 GPT-Image-2 提示詞和圖像範例，涵蓋了肖像、海報、角色表、UI 模擬等多個領域。用戶可以透過這些提示詞，生成特定風格的圖像，並可直接在 Evolink 平台上使用。核心機制是提供一系列經過篩選的提示，讓使用者能夠快速生成所需的圖像，並且這些提示詞都是從社群和公開示例中整理而來。最關鍵的指令是使用 `gpt_image_2_prompt.json` 來獲取可重複使用的提示模式。這個工具的賣點在於其提供的範例和提示詞，能夠幫助用戶更有效地利用 GPT-Image-2 生成所需的圖像。
+這個專案集中於收集和整理高品質的 GPT-Image-2 提示詞，涵蓋肖像、海報、角色設計、UI 模擬等多種應用場景。用戶可以透過提供的提示詞，生成各種風格的圖像，並且這些提示詞都是從社群實驗、公開示範和創作者社群中精選而來。核心賣點在於其可重用的提示模式，讓用戶能夠快速生成符合需求的圖像。使用者只需將提示詞輸入到 GPT-Image-2 API，系統會根據提示生成相應的圖像，這樣的設計大幅降低了創作的門檻。技術上，這個專案並未明確指出使用的框架或演算法，但其依賴於 OpenAI 的 API，這意味著其性能和生成質量與 OpenAI 的技術密切相關。
 
-技術上，這個專案是基於 Python 開發，並且依賴於 OpenAI 的 API，這使得它能夠快速生成高質量的圖像。與其他類似工具相比，如 `0x0funky/agent-sprite-forge` 和 `0xGF/boneyard`，這個專案專注於提供具體的提示詞而非單純的圖像生成，這使得它在生成特定風格的圖像時更具優勢。使用者在使用過程中可能會遇到提示詞與生成圖像不匹配的問題，這是目前社群反映的主要痛點之一。這個專案目前處於 beta 階段，適合需要快速生成圖像的開發者和設計師，但在生產環境中使用時需要謹慎評估其穩定性。未來幾個月內，預期會持續增加新的提示詞和範例，進一步擴展其功能。
-
-**技術棧**：`Python 3.9` · `OpenAI API`
+與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 432539/gpt2api，這個專案專注於圖像生成的提示詞整理，而不是直接提供生成模型或 API 接口。這使得它在需要快速生成高質量圖像的場景中更具優勢，尤其適合設計師和內容創作者。使用者在使用過程中可能會遇到提示詞不匹配生成結果的問題，這需要用戶不斷調整提示詞以達到最佳效果。這個專案目前處於活躍開發階段，未來可能會持續增加更多的提示詞和範例，對於需要快速生成圖像的團隊來說，值得考慮使用。適合的場景包括：需要快速生成行銷素材的設計團隊、創作角色設計的遊戲開發者，以及需要製作 UI 模擬的產品設計師。
 
 ## 重點功能
 
-- 高品質提示詞 — 提供針對不同場景的具體提示詞，幫助生成特定風格的圖像。
-- 範例圖像 — 收錄多種風格的圖像範例，作為生成的參考。
-- 社群貢獻 — 鼓勵用戶提交自己的提示詞和範例，豐富資料庫。
-- JSON 格式存儲 — 使用 `gpt_image_2_prompt.json` 文件來管理提示詞，方便使用。
-- 多語言支持 — 提供多種語言的 README 文件，方便全球用戶使用。
+- 高品質提示詞收集 — 提供多種場景的提示詞，涵蓋肖像、海報、角色設計等。
+- 社群驅動的範例 — 提示詞來自於社群實驗和公開示範，確保實用性。
+- 可重用的提示模式 — 用戶可以根據需求調整提示詞，靈活生成不同風格的圖像。
+- 支持多語言 — 提供多種語言的提示詞，擴大使用範圍。
+- 持續更新 — 定期增加新的提示詞和範例，保持內容的新鮮感。
 
 ## 快速開始
 
@@ -135,75 +134,65 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 git clone https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts.git
 ```
-2. 安裝依賴
+2. 查看提示詞範例
 ```bash
-pip install -r requirements.txt
+cat README.md
 ```
-3. 運行示例
+3. 使用提示詞生成圖像
 ```bash
-python example.py
-```
-
-## 程式碼範例
-
-```python
-{
-  "前置條件": "需要安裝 OpenAI API 並獲得 API 金鑰。",
-  "程式碼": "import openai\n\nresponse = openai.Image.create(\n  prompt='A futuristic cityscape',\n  n=1,\n  size='1024x1024'\n)\n\nprint(response['data'][0]['url'])",
-  "預期輸出": "生成的圖像 URL，指向生成的城市景觀圖像。"
-}
+curl -X POST 'https://api.openai.com/v1/images/generations' -H 'Authorization: Bearer YOUR_API_KEY' -d '{"prompt": "YOUR_PROMPT"}'
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 9 天就累積 6885 stars（765/天），forks 674（9.8%），這顯示出強勁的成長潛力。這個專案由 EvoLinkAI 團隊主導，他們在生成式 AI 領域有豐富的經驗。它解決了用戶在使用 GPT-Image-2 時缺乏具體提示詞的問題，這在過去是個常見的痛點。最近的社群討論和推廣活動也促進了其曝光率。技術上，隨著 OpenAI API 的普及，這個工具的可行性大幅提升。高達 9.8% 的 forks/stars 比率顯示出許多人在實際修改和使用這個專案。
+> 建立 10 天內累積 8738 stars（874/天），forks 844（9.7%），顯示出強烈的社群興趣。這個專案由 EvoLinkAI 團隊維護，專注於整理和分享 GPT-Image-2 的提示詞，解決了用戶在生成圖像時缺乏靈感的痛點。之前用戶通常需要自行探索和試錯，而這個專案提供了經過驗證的提示詞範例，使得生成過程更為高效。社群的反饋和需求驅動了這個專案的快速成長，並且其在 Twitter 和其他社交平台上的分享進一步提高了可見度。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成特定風格圖像的設計師和開發者。
+**目標受眾**：需要快速生成高品質圖像的設計師和內容創作者。
 
 > [!example] 使用場景
-> - 設計師用它來生成特定風格的海報，因為可以快速獲得高質量的圖像而不需從頭開始設計。
-> - 遊戲開發者用它來創建角色設計的參考圖，因為能夠使用具體的提示詞生成多樣化的角色樣式。
-> - 內容創作者用它來製作社交媒體的視覺內容，因為提供的範例能夠提升內容的吸引力和專業度。
+> - 設計師用它來生成行銷素材的海報，因為可以快速獲得多種風格的設計選擇，節省了創作時間。
+> - 遊戲開發者用它來創建角色設計的概念圖，因為提供的提示詞能夠激發創意並加速設計過程。
+> - 產品設計師用它來製作 UI 模擬，因為可以根據具體需求生成符合品牌風格的圖像，提升設計效率。
 
 ## 架構分析
 
-這個專案的架構設計為一個簡單的 Python 應用，主要依賴於 OpenAI 的 API 來生成圖像。資料流上，使用者輸入提示詞，系統透過 API 請求生成圖像，並將結果返回給使用者。選擇 Python 作為開發語言是因為其在數據處理和 API 整合方面的便利性，代價是可能在性能上不如某些低階語言。擴展性方面，這個專案的瓶頸在於 OpenAI API 的使用限制，若使用者需求量大，可能需要考慮 API 課費問題。
+這個專案的架構主要是基於 OpenAI 的 API，使用者透過提供的提示詞生成圖像。設計上選擇了集中式的提示詞庫，這樣的選擇使得用戶能夠快速找到所需的提示詞，但也意味著用戶需要依賴於這個庫的更新和維護。資料流方面，使用者輸入提示詞後，系統將其發送至 OpenAI 的 API，並接收生成的圖像。這樣的設計使得生成過程相對簡單，但也可能面臨 API 限制和延遲的問題。擴展性方面，若未來需要增加更多的提示詞或範例，維護者需要持續投入時間和精力來更新庫內容。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是利用 OpenAI 的 API 來生成圖像，並且通過整理提示詞來提升生成的效率。使用者可以透過簡單的提示詞來獲得高品質的圖像，這是基於大量社群貢獻的範例和實驗結果。效能上，這個工具能夠快速生成圖像，但在高需求時可能會受到 API 限制的影響。選擇 Python 作為開發語言，因為其在數據處理和 API 整合上的優勢，代價是可能在性能上不如其他語言。技術風險方面，依賴於 OpenAI API 可能會在未來面臨使用限制或費用上升的問題。整合方面，這個工具可以輕鬆與現有的開發流程結合，特別是對於已經使用 Python 的開發者來說，學習成本相對較低。
+這個專案的核心技術機制在於利用 OpenAI 的 GPT-Image-2 API，通過用戶提供的提示詞生成圖像。這樣的設計使得用戶可以快速獲得所需的圖像，而不需要深入了解生成模型的內部運作。效能方面，生成的圖像質量依賴於提示詞的精確性和多樣性，對於不同的提示詞，生成的圖像可能會有顯著差異。設計上選擇了集中式的提示詞庫，這樣的選擇使得用戶能夠快速找到所需的提示詞，但也意味著用戶需要依賴於這個庫的更新和維護。技術風險方面，隨著使用者數量的增加，可能會面臨 API 限制和延遲的問題，這需要維護者持續關注。整合方面，這個專案可以輕鬆與現有的設計工具鏈結合，特別是對於需要快速生成圖像的設計師和內容創作者來說，整合的摩擦點相對較小。整體來看，這個專案在圖像生成的應用場景中具有很大的潛力，尤其是在設計和創作領域。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的介紹和範例，安裝過程相對順暢，沒有明顯的坑。雖然沒有專門的入門指南，但範例的多樣性能夠幫助新手快速上手。文件有多語言版本，方便不同語言的使用者。
+> README 文件提供了清晰的介紹和使用範例，安裝過程相對簡單。雖然沒有詳細的 getting started guide，但用戶可以通過查看提示詞範例快速上手。文件有多語言版本，對於不同語言的用戶友好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供高品質的提示詞，能夠快速生成所需圖像。
-> - 社群貢獻的範例豐富，能夠持續更新。
-> - 多語言支持，方便全球用戶使用。
+> - 提供多樣化的提示詞，適合不同的圖像生成需求。
+> - 社群驅動的內容更新，保持提示詞的新鮮感和實用性。
+> - 簡化了圖像生成的過程，降低了創作門檻。
 
 > [!danger] 缺點
-> - 生成的圖像可能不完全符合提示詞，需要調整。
-> - 依賴於社群貢獻，質量可能不一致。
-> - 對於特定需求，可能需要多次嘗試才能達到理想效果。
+> - 提示詞質量不一，可能需要用戶自行篩選。
+> - 依賴於 OpenAI API，對於不熟悉 API 的用戶有學習曲線。
+> - 目前的功能主要集中於提示詞整理，缺乏直接的圖像生成工具。
 
 > [!warning] 注意事項
-> - 提示詞的質量依賴於社群貢獻，可能存在不一致性。
-> - 生成的圖像可能會與提示詞不完全匹配，需進行多次調整。
-> - 對於特定風格的需求，可能需要進行多次嘗試才能達到理想效果。
+> - 提示詞的生成質量依賴於用戶的輸入，可能需要多次調整以達到最佳效果。
+> - 目前僅支持 OpenAI API，對於不熟悉 API 使用的用戶可能有一定的學習曲線。
+> - 社群貢獻的提示詞質量參差不齊，需用戶自行篩選和驗證。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色生成，但缺乏具體的提示詞範例，適合需要角色設計的開發者。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更廣泛的圖像生成能力，但不專注於提示詞的整理，適合需要多樣化圖像的用戶。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色生成和動畫，而本專案則集中於提示詞整理和圖像生成。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | 提供 GPT-2 的 API 接口，而本專案專注於 GPT-Image-2 的提示詞應用。 |
 
 ## 替代方案決策
 
@@ -211,16 +200,16 @@ python example.py
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 用 Rust 實作，記憶體用量少，但缺乏提示詞的整理。 | 如果你的團隊需要高效能的角色生成，並且對記憶體使用有嚴格要求。 | medium，因為需要重新調整生成邏輯。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更廣泛的圖像生成能力，但不專注於提示詞的整理。 | 如果你需要多樣化的圖像生成，而不僅僅是依賴提示詞。 | high，因為需要重新設計整個生成流程。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色生成和動畫，而本專案則集中於提示詞整理和圖像生成。 | 如果你的需求主要是角色動畫生成，而不是靜態圖像，則應選擇此工具。 | medium，因為需要重新適應不同的提示詞和生成方式。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | 提供 GPT-2 的 API 接口，而本專案專注於 GPT-Image-2 的提示詞應用。 | 如果你需要文本生成而非圖像生成，則應選擇此工具。 | low，因為兩者都基於 OpenAI 的技術，轉換相對容易。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **awesome-gpt-image-2-prompts** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **awesome-gpt-image-2-prompts** | **agent-sprite-forge** | **gpt2api** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 用 Rust 實作，記憶體用量少，但缺乏提示詞的整理。 | 提供更廣泛的圖像生成能力，但不專注於提示詞的整理。 |
-> | 遷移成本 | - | medium，因為需要重新調整生成邏輯。 | high，因為需要重新設計整個生成流程。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要高效能的角色生成，並且對記憶體使用有嚴格要求 | 如果你需要多樣化的圖像生成，而不僅僅是依賴提示詞。 |
+> | 技術路線 | 本專案 | 專注於角色生成和動畫，而本專案則集中於提示詞整理和圖像生成。 | 提供 GPT-2 的 API 接口，而本專案專注於 GPT-Image-2 的提示詞應用。 |
+> | 遷移成本 | - | medium，因為需要重新適應不同的提示詞和生成方式。 | low，因為兩者都基於 OpenAI 的技術，轉換相對容易。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是角色動畫生成，而不是靜態圖像，則應選擇此工 | 如果你需要文本生成而非圖像生成，則應選擇此工具。 |
 
 ## 成熟度評估
 
@@ -231,44 +220,44 @@ python example.py
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人專案或小型團隊試用，但不建議用於生產環境的核心功能。
+> 適合個人或小型團隊試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 提示詞可能與生成圖像不匹配，需多次調整
-  - 解法：使用多個提示詞進行實驗
-- [MEDIUM] 社群貢獻的提示詞質量不一
-  - 解法：選擇經過驗證的範例進行使用
-- **[HIGH]** API 使用量大時可能面臨費用上升
-  - 解法：監控 API 使用情況，適時調整使用策略
+- [MEDIUM] 提示詞與生成圖像不匹配的情況，可能導致用戶失望。
+  - 解法：用戶需要不斷調整提示詞以達到最佳效果。
+- **[HIGH]** API 限制可能導致生成速度變慢。
+  - 解法：考慮分批次生成圖像，避免一次性請求過多。
+- [MEDIUM] 社群貢獻的提示詞質量參差不齊，可能影響生成結果。
+  - 解法：用戶需自行篩選和驗證提示詞的有效性。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型設計團隊需要快速生成海報 | 非常適合 | 提供多樣化的提示詞和範例，能夠快速滿足需求。 |
-| 個人開發者在創作過程中需要靈感 | 適合 | 能夠提供參考和靈感，提升創作效率。 |
-| 大型企業需要穩定的圖像生成工具 | 不適合 | 目前處於 beta 階段，穩定性和可靠性尚需評估。 |
-| 教育機構需要製作教學材料 | 普通 | 雖然有豐富的範例，但可能需要進行多次調整才能達到理想效果。 |
+| 需要快速生成行銷素材的設計團隊 | 非常適合 | 提供多樣化的提示詞，能快速滿足不同需求。 |
+| 創作角色設計的遊戲開發者 | 適合 | 能夠生成多樣的角色設計概念圖。 |
+| 需要製作 UI 模擬的產品設計師 | 普通 | 雖然有提示詞，但可能需要進一步調整以符合品牌風格。 |
+| 大型企業的核心產品開發團隊 | 不適合 | 目前的功能和穩定性不夠，無法滿足高需求。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~3 小時 |
-| 整合時間 | ~5 小時 |
-| 維護負擔 | medium |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，5 小時整合，得到快速生成圖像的能力，值得考慮。
+> 花 2 小時學習，3 小時整合，能快速生成高品質圖像，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，並且不存取敏感資料。使用 OpenAI API 時需注意 API 金鑰的安全性。
+> 低風險：不需要高權限，僅需訪問 OpenAI API，且不存取敏感資料。
 
 ## 健康度儀表板
 
@@ -333,41 +322,41 @@ python example.py
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 674 |
-| Open Issues | 9 |
+| Forks | 844 |
+| Open Issues | 10 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-04-27 |
+| 最後推送 | 2026-04-28 |
 | 建立日期 | 2026-04-18 |
 | 官方網站 | [Link](https://evolink.ai/gpt-image-2-prompts) |
-| Repo 大小 | 79.6 MB |
+| Repo 大小 | 83.3 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/EvoLinkAI/awesome-gpt-image-2-prompts) |
 | Topics | `api` `awesome-list` `chatgpt` `generative-` `gpt-image-2` `gpt-image-2-api` `gpt-image-2-prompts` `image-generation` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@EvoLinkAI](https://github.com/EvoLinkAI) | 63 |
+> | [@EvoLinkAI](https://github.com/EvoLinkAI) | 67 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有多次更新和新提示詞的增加。
+**社群活躍度**：社群活躍度中等，定期更新提示詞和範例。
 **連結**：[文件](https://evolink.ai/gpt-image-2-prompts)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-24 ~ 2026-04-27）
-> **活躍天數** 4 天 · **最新 commit** i18n
+> [!abstract] 最近 10 次 commit（2026-04-26 ~ 2026-04-28）
+> **活躍天數** 3 天 · **最新 commit** feat: add new prompt cases and sync localized updates
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#12](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/issues/12) | one | 0 | 2 |
+> | [#13](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/issues/13) | Prompt Ảnh | 0 | 1 |
+> | [#12](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/issues/12) | one | 0 | 3 |
 > | [#11](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/issues/11) | 有关情侣的提示词 | 0 | 0 |
-> | [#9](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/issues/9) | Case 60 image does not match the prompt | 0 | 0 |
+> | [#9](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/issues/9) | Case 60 image does not match the prompt | 0 | 2 |
 > | [#8](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/issues/8) | Observation: user prompt and final image-generation prompt c | 0 | 0 |
-> | [#7](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/issues/7) | 如何贡献内容到仓库？ | 0 | 1 |
 
 ## README 摘錄
 
@@ -502,22 +491,35 @@ python example.py
 > ```
 > 
 > 
-> ### Case 70: [Restaurant POV Change Comparison](https://x.com/chesnyfcb/status/2047714457774637213) (by [@chesnyfcb](https://x.com/chesnyfcb))
+> ## News
 > 
-> | Output |
-> | :----: |
-> |  |
+> - **April 29, 2026:** Added 8 new GPT-Image-2 prompt cases (2 portrait, 6 poster) and synced localized prompt entries for Cases 102 and 103
+> - **April 26, 2026:** Added 9 new GPT-Image-2 prompt cases (1 character, 7 poster, 1 ui)
+> - **April 25, 2026:** Added 81 new GPT-Image-2 prompt cases (2 character, 20 portrait, 42 poster, 17 ui)
+> - **April 24, 2026:** Added 19 new GPT-Image-2 prompt cases (6 comparison, 6 poster, 7 ui)
+> - **April 23, 2026:** Added 5 new GPT-Image-2 prompt cases (5 ui)
+> - **April 20, 2026:** Added 2 new GPT-Image-2 prompt cases (1 character, 1 poster)
+> - **April 19, 2026:** Added 5 new GPT-Image-2 prompt cases (3 poster, 2 ui)
+> - **April 17, 2026:** Added 1 new GPT-Image-2 prompt cases (1 poster)
+> - **April 16, 2026:** Added 1 new GPT-Image-2 prompt cases (1 poster)
+> - **April 23, 2026:** Standardized case titles in `README.md` and all localized README files, including menu entries, anchors, and case headings
+> - **April 21, 2026:** Categorized 48 new prompt cases into the gallery sections and downloaded linked output images
+> - **April 21, 2026:** Added 12 new GPT-Image-2 prompts across portrait, poster, UI, and comparison cases
+> - **April 20, 2026:** Added 10 newly curated GPT-Image-2 prompts with local image assets and README updates.
+> - **April 19, 2026:** Added 10 new GPT-Image-2 prompts across poster, UI, and comparison cases
+> - **April 18, 2026:** First repository release with curated GPT-Image-2 case set
 > 
-> **Prompt:**
 > 
-> ```
-> A side-by-side comparison graphic on a black background demonstrating a camera-angle change in the same restaurant scene. At the top, large white sans-serif text reads: "Show me the POV from someone standing behind the bar looking out over this crowded restaurant. Change NOTHING in the scene other than the pov". Below, place 2 stacked rectangular photos centered vertically: the top image labeled "Source" in large white text on the left, and the bottom image labeled "Output" in large white text on the left. The top photo shows a warmly lit, upscale, crowded restaurant interior seen from the dining room side, facing a tall back bar filled with many illuminated liquor bottles on wall-to-wall shelves, with bartenders and guests in front, amber lighting, globe pendant lights, wood ceiling, beige columns, and tightly packed seated diners in the foreground. The bottom photo shows the exact same restaurant, same crowd density, same warm lighting, same decor, same bar shelving, same globe pendant lights, and same overall composition elements, but now from the point of view of someone standing behind the bar and looking outward across the crowded restaurant; the foreground includes the bar counter with glassware, metal bar tools, bottles, and a point-of-sale screen visible at the lower left, while guests and staff fill the middle ground and the dining room extends into the background. Preserve the se
+> ## E-commerce Cases
+> 
+> 
+> ### Case 113: [E-commerce Main Image - Luxury Amber Perfume Ad](https://x.com/Polanco_IA/status/2047689647967609037) (by [@Polan
 
 ## 延伸閱讀
 
-相關概念：[[生成式對抗網絡]] · [[文本到圖像生成]] · [[提示工程]]
+相關概念：[[生成對抗網絡]] · [[文本到圖像生成]] · [[提示工程]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[inspatio--worldfm|inspatio/worldfm]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[inspatio--worldfm|inspatio/worldfm]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]]
 
 [GitHub](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) · [官方網站](https://evolink.ai/gpt-image-2-prompts)
 
@@ -544,7 +546,7 @@ python example.py
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "EvoLinkAI--awesome-gpt-image-2-prompts" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "EvoLinkAI--awesome-gpt-image-2-prompts" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -559,7 +561,7 @@ python example.py
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["生成式對抗網絡","文本到圖像生成","提示工程"];
+> const concepts = ["生成對抗網絡","文本到圖像生成","提示工程"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "EvoLinkAI--awesome-gpt-image-2-prompts" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

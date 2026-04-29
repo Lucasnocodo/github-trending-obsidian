@@ -7,7 +7,7 @@ language: JavaScript
 license: MIT
 description: "An open source harness for generating CAD models"
 homepage: ""
-stars: 1094
+stars: 1095
 stars_per_day: 156
 forks: 169
 open_issues: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-28
-use_case: "一個開源的工具，讓你能夠透過編碼生成 CAD 模型。"
+use_case: "一個開源工具，讓你透過編碼生成 CAD 模型。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-28"
-star_history: "2026-04-28:952,2026-04-29:1094"
+star_history: "2026-04-28:952,2026-04-29:1094,2026-04-29:1095"
 tags:
   - github
   - "category/開發工具"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "text-to-cad"
   - "earthtojake/text-to-cad"
-  - "一個開源的工具，讓你能夠透過編碼生成 CAD 模型。"
+  - "一個開源工具，讓你透過編碼生成 CAD 模型。"
 ---
 
 # text-to-cad
 
-**952** stars · **159** stars/天 · 建立 6 天前 · JavaScript · MIT
+**1.1k** stars · **156** stars/天 · 建立 7 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/earthtojake--text-to-cad");
@@ -78,13 +78,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `agents` `ai` `ai-agents` `cad` `text-to-cad` `wasm`
 
 > [!summary] 一句話摘要
-> 一個開源的工具，讓你能夠透過編碼生成 CAD 模型。
+> 一個開源工具，讓你透過編碼生成 CAD 模型。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (159 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要自動化 CAD 模型生成的工程師和設計師。
-> **一句話重點** 這個專案讓 CAD 模型生成變得更簡單，特別是對於需要快速迭代的設計工作。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (156 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 希望透過編碼生成 CAD 模型的工程師和設計師。
+> **一句話重點** 這個專案讓 CAD 模型生成變得更靈活，透過編碼代理的力量，開發者能夠快速迭代設計。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -107,27 +107,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習，3 小時整合，得到自動化 CAD 模型生成的效果，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，8 小時整合，能夠快速生成 CAD 模型，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於將文本描述直接轉化為 CAD 模型，實現了自動化的設計流程。
+> 這個專案的創新在於將編碼代理與 CAD 模型生成結合，實現自動化設計流程。
 
 ## 專案簡介
 
-這個專案提供了一個開源的框架，讓使用者可以透過編碼生成 3D CAD 模型。使用者首先需要描述想要的零件或機構，然後由編碼代理（如 Codex 或 Claude）來更新 CAD 源文件，接著可以生成 STEP、STL、DXF、GLB 或 URDF 格式的模型。這樣的設計使得 CAD 模型的生成過程自動化，並且可以進行版本控制，方便團隊協作。最關鍵的指令是 `npm run dev`，這樣可以啟動本地的 CAD Explorer 來檢視生成的模型。這個工具的賣點在於它能夠將文本描述轉化為 CAD 模型，並且支持多種輸出格式，讓使用者能夠靈活選擇。
+這個專案提供了一個開源的框架，讓使用者能夠透過編碼生成 3D CAD 模型。使用者可以描述所需的零件或機構，然後讓編碼代理（如 Codex 或 Claude Code）自動更新 CAD 源檔，並生成 STEP、STL、DXF、GLB 或 URDF 格式的檔案。這樣的設計使得 CAD 模型的生成過程不僅自動化，還能夠進行版本控制，方便團隊協作和迭代。最關鍵的 CLI 指令是 `npm run dev`，這會啟動本地的 CAD Explorer 進行模型檢視。這個工具的賣點在於結合了編碼代理的強大能力，讓 CAD 模型的生成變得更靈活和高效。技術上，專案使用 JavaScript 和 Python，並依賴於 npm 和 pip 來管理依賴包，這使得整體架構相對輕量且易於部署。
 
-技術上，這個專案使用 JavaScript 和 Python，並且依賴於一些 CAD 特定的庫來處理模型生成和格式轉換。相較於傳統的 CAD 軟體，這個工具的優勢在於其自動化和可擴展性，特別適合需要快速迭代的設計環境。使用者可以在本地運行，不需要依賴後端服務，這對於小型團隊或個人開發者來說是個很大的優勢。實際使用中，可能會遇到 CAD 模型的複雜性導致生成時間較長的問題，但整體上這個工具的設計是針對現代開發流程進行優化的。這個專案目前處於活躍開發階段，未來可能會增加更多的功能和格式支持。
+與傳統 CAD 工具相比，這個專案的優勢在於其自動化程度和對編碼的支持，能夠快速迭代和生成模型。相較於其他 CAD 工具如 AutoCAD 或 SolidWorks，這個專案更適合需要快速原型和版本控制的開發環境。使用者可以在本地運行，避免了對後端伺服器的依賴，這在資源有限的情況下特別有用。儘管如此，對於大型和複雜的 CAD 模型，可能會面臨性能瓶頸，尤其是在生成和檢視過程中。這個專案目前處於早期階段，未來可能會加入更多功能和優化，適合小型團隊或個人開發者使用。對於需要快速生成和迭代 CAD 模型的開發者來說，這是一個值得考慮的工具，但對於需要高效能和穩定性的商業應用，可能還需進一步評估其成熟度。
 
 **技術棧**：`JavaScript` · `Python` · `CSS` · `HTML`
 
 ## 重點功能
 
-- 生成模型 — 使用 Codex 和 Claude 等編碼代理生成 CAD 模型，支持多種格式。
-- 本地運行 — 可以在本地運行 CAD Explorer，無需後端服務。
-- 多格式輸出 — 支持 STEP、STL、DXF、GLB 和 URDF 等多種格式的輸出。
-- 版本控制 — 生成的模型可以進行版本控制，方便團隊協作。
-- 幫助文檔 — 提供了詳細的技能文檔，幫助使用者理解如何使用 CAD 和 URDF 技能。
+- 生成 CAD 模型 — 透過編碼代理自動生成 STEP、STL、DXF、GLB 和 URDF 格式的 CAD 模型。
+- 本地運行 — 無需後端伺服器，直接在本地運行 CAD Explorer 檢視生成的模型。
+- 版本控制 — 支持對生成的 CAD 模型進行版本控制，方便團隊協作。
+- 幫助參考 — 提供 `@cad[...]` 參考，方便後續精確編輯。
+- 快速檢視 — 在迭代過程中快速渲染模型快照，便於檢查。
 
 ## 快速開始
 
@@ -135,7 +135,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 git clone https://github.com/earthtojake/text-to-cad.git
 ```
-2. 安裝 Python 依賴
+2. 安裝 Python CAD 依賴
 ```bash
 python3.11 -m venv .venv && ./.venv/bin/python -m pip install --upgrade pip && ./.venv/bin/pip install -r requirements-cad.txt
 ```
@@ -152,62 +152,62 @@ npm run dev
 
 ```js
 {
-  "前置條件": "確保已經克隆專案並安裝依賴",
+  "前置條件": "已安裝 Node.js 和 Python 環境",
   "指令": "npm run dev",
-  "預期輸出": "本地 CAD Explorer 啟動，並可以在瀏覽器中檢視生成的模型。"
+  "預期輸出": "啟動本地 CAD Explorer，並在瀏覽器中顯示模型檢視介面"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 952 stars（159/天），forks 151（15.9%），顯示出強烈的社群興趣。作者 earthtojake 在開源社群中有一定的知名度，過去的專案也多與 CAD 和 AI 相關，這使得這個專案能夠迅速吸引關注。這個專案解決了 CAD 模型生成的自動化問題，以往使用者需要手動操作 CAD 軟體，這樣的過程效率低下且容易出錯。隨著 AI 技術的進步，將文本轉化為 CAD 模型的需求逐漸增加，這個工具正好滿足了這一需求。社群的反饋和使用者的需求也促進了這個專案的快速發展。
+> 建立 7 天就累積 1095 stars（156/天），forks 169（15.4%），這顯示出強烈的社群興趣。作者 earthtojake 之前在 CAD 和 AI 領域有一定的貢獻，這個專案解決了傳統 CAD 工具在自動化和版本控制方面的痛點，讓開發者能夠更靈活地生成模型。近期的推廣活動和社群討論也促進了這個專案的曝光度。技術上，這個工具的出現正好搭上了 AI 和自動化設計的潮流，讓開發者能夠利用現有的編碼代理來提升工作效率。forks/stars 比率為 15.4%，顯示出有相當一部分使用者在實際修改和使用這個工具。
 
 ## 適合誰使用
 
-**目標受眾**：需要自動化 CAD 模型生成的工程師和設計師。
+**目標受眾**：希望透過編碼生成 CAD 模型的工程師和設計師。
 
 > [!example] 使用場景
-> - 機械工程師用它來快速生成機械部件的 CAD 模型，因為傳統 CAD 軟體的手動操作效率低下。
-> - 產品設計師用它來迭代設計，因為能夠快速從文本描述生成模型，節省了大量時間。
-> - 教育工作者用它來教學 CAD 模型生成，因為它的開源特性和簡單的使用方式適合學生學習。
+> - 機械工程師用它來快速生成機械零件的 CAD 模型，因為可以透過簡單的描述讓編碼代理自動生成，節省了手動建模的時間。
+> - 產品設計師用它來迭代設計概念，因為能夠快速檢視不同版本的模型，並進行即時修改。
+> - 開發者用它來整合 CAD 模型生成到 CI/CD 流程中，因為可以自動生成和測試模型，提升開發效率。
 
 ## 架構分析
 
-這個專案的架構基於前端和後端的分離設計，前端使用 JavaScript 和 CSS 來構建用戶界面，而後端則使用 Python 處理 CAD 模型的生成。這樣的設計使得使用者可以在本地運行 CAD Explorer，無需依賴後端服務。資料流方面，使用者的描述會被編碼代理解析，然後生成相應的 CAD 源文件，最後再轉換為所需的格式。選擇這種架構的好處是能夠快速迭代和測試，但代價是需要使用者具備一定的技術背景來設置環境。擴展性方面，這個架構可以輕鬆添加新的格式支持或功能，但在處理大型模型時可能會遇到性能瓶頸。
+這個專案採用 JavaScript 和 Python 的結合，前端使用 Node.js 來運行 CAD Explorer，後端則使用 Python 處理 CAD 模型生成。這樣的設計使得開發者能夠在本地環境中快速啟動和測試，而不需要依賴外部伺服器。資料流方面，使用者的描述會被編碼代理解析，然後生成相應的 CAD 源檔，最後通過 CAD Explorer 進行檢視。這樣的架構設計使得整體流程高效且易於迭代，但在處理大型模型時可能會面臨性能挑戰。整體而言，這個專案的架構輕量且易於擴展，適合快速原型開發。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是將文本描述轉化為 CAD 模型，使用了編碼代理來自動生成源文件。這樣的設計使得使用者可以快速生成和修改模型，並且支持多種輸出格式。效能方面，對於小型到中型的模型生成是相對高效的，但在處理大型模型時可能會遇到性能瓶頸。選擇 JavaScript 和 Python 作為技術棧的好處在於它們的生態系統豐富，並且有許多現成的庫可以使用，但這也意味著需要管理多個依賴。技術風險方面，對於大型模型的生成可能會導致記憶體使用過高，這在資源有限的環境中可能會成為問題。整合方面，這個工具可以與主流的 CI/CD 流程相容，但在設置時可能需要一些額外的配置。
+這個專案的核心技術機制在於結合了 JavaScript 和 Python，利用編碼代理來自動生成 CAD 模型。使用者可以透過簡單的描述，讓代理生成相應的 CAD 源檔，這樣的設計使得 CAD 模型的生成過程高度自動化。效能方面，專案能夠處理中小型的 CAD 模型，但在面對大型模型時，可能會出現性能瓶頸，特別是在生成和檢視過程中。選擇 JavaScript 和 Python 的原因在於這兩者的生態系統成熟，且有大量的庫可供使用，這使得開發者能夠快速上手並進行擴展。依賴樹的複雜度相對較低，這有助於降低維護成本。技術風險方面，隨著使用者數量的增加，如何保持性能和穩定性將是未來的挑戰。整合方面，這個工具與主流的開發環境（如 VS Code）相容性良好，並且能夠輕鬆地融入現有的 CI/CD 流程中，這使得團隊能夠快速採用並實現自動化設計。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用說明，並且包含了範例指令。安裝過程相對順暢，但需要注意 Python 和 Node.js 的版本要求。整體上，對於有一定技術背景的使用者來說，能夠在 30 分鐘內順利運行起來。
+> README 文件提供了清晰的安裝步驟和使用範例，讓新手能夠快速上手。安裝過程相對順暢，但需要確保安裝正確的 Python 和 Node.js 環境。整體而言，文件質量良好，能夠幫助使用者在 30 分鐘內跑起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多種 CAD 格式的輸出，靈活性高。
-> - 能夠在本地運行，無需依賴雲端服務。
-> - 提供版本控制功能，適合團隊協作。
+> - 支持多種 CAD 格式的輸出，方便與其他工具整合。
+> - 無需後端伺服器，能夠在本地環境中運行，降低了部署成本。
+> - 結合編碼代理，提升了模型生成的靈活性和效率。
 
 > [!danger] 缺點
-> - 對於複雜模型生成的性能可能不佳。
-> - 需要一定的技術背景來設置和使用。
-> - 可能需要額外的時間來學習如何使用編碼代理。
+> - 對於大型模型生成可能會有性能瓶頸，影響使用體驗。
+> - 目前功能相對簡單，可能不適合複雜的 CAD 設計需求。
+> - 需要一定的編碼基礎，對於非技術使用者不太友好。
 
 > [!warning] 注意事項
-> - 生成複雜模型可能需要較長時間。
-> - 對於非常大型的模型，可能會遇到性能瓶頸。
-> - 需要安裝特定版本的 Python 和 Node.js 依賴。
+> - 目前僅支援 Python 3.11+
+> - 對於大型 CAD 模型生成可能會有性能瓶頸
+> - 需要安裝 Node.js 和 Python 環境才能運行
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於生成 3D 模型，但不支持文本到 CAD 的轉換，適合需要手動設計的使用者。 |
-| [BuilderPulse/BuilderPulse](https://github.com/BuilderPulse/BuilderPulse) | 這個工具提供了更強的團隊協作功能，但不如本專案靈活，特別是在模型生成方面。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成遊戲資產，而本專案專注於 CAD 模型生成，適用場景不同。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具提供了更強的自動化設計功能，但不支持 CAD 格式的輸出，適合需要快速原型的開發者。 |
 
 ## 替代方案決策
 
@@ -215,64 +215,64 @@ npm run dev
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於手動設計 3D 模型，並不支持自動化生成，適合需要精細控制的使用者。 | 如果你的團隊需要手動設計並且對 CAD 模型的細節有高要求，這個工具可能更合適。 | medium，因為需要重新調整設計流程。 |
-| [BuilderPulse/BuilderPulse](https://github.com/BuilderPulse/BuilderPulse) | 這個工具提供了強大的團隊協作功能，但不如本專案靈活，特別是在模型生成方面。 | 如果你的團隊已經在使用 BuilderPulse 並需要強調協作，這個工具可能更適合。 | low，因為可以直接整合到現有的工作流程中。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲資產生成，使用更簡化的模型生成方式，適合遊戲開發者。 | 如果你的團隊專注於遊戲開發，且需要快速生成遊戲資產，這個工具會更合適。 | low，因為兩者的基本概念相似，轉換相對容易。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更強的自動化設計功能，但不支持 CAD 格式的輸出，適合需要快速原型的開發者。 | 如果你的專案不需要 CAD 格式的輸出，而是專注於快速原型，這個工具會更合適。 | medium，因為需要調整工作流程以適應不同的設計理念。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **text-to-cad** | **boneyard** | **BuilderPulse** |
+> | 維度 | **text-to-cad** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這個工具專注於手動設計 3D 模型，並不支持自動化生成，適合需要精細控制的使用者。 | 這個工具提供了強大的團隊協作功能，但不如本專案靈活，特別是在模型生成方面。 |
-> | 遷移成本 | - | medium，因為需要重新調整設計流程。 | low，因為可以直接整合到現有的工作流程中。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要手動設計並且對 CAD 模型的細節有高要求， | 如果你的團隊已經在使用 BuilderPulse 並需要強調 |
+> | 技術路線 | 本專案 | 專注於遊戲資產生成，使用更簡化的模型生成方式，適合遊戲開發者。 | 提供更強的自動化設計功能，但不支持 CAD 格式的輸出，適合需要快速原型的開發者。 |
+> | 遷移成本 | - | low，因為兩者的基本概念相似，轉換相對容易。 | medium，因為需要調整工作流程以適應不同的設計理念。 |
+> | 適用場景 | 主要場景 | 如果你的團隊專注於遊戲開發，且需要快速生成遊戲資產，這個工具 | 如果你的專案不需要 CAD 格式的輸出，而是專注於快速原型， |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人項目或小型團隊試用，但不建議用於生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在生成大型模型時可能會遇到性能瓶頸，導致生成時間過長。
-  - 解法：分割模型為多個小型部件進行生成。
-- [MEDIUM] 需要特定版本的 Python 和 Node.js，可能會導致安裝困難。
-  - 解法：仔細檢查 README 中的版本要求，確保環境一致。
-- [MEDIUM] 對於複雜的幾何形狀，生成的模型可能不夠精確。
-  - 解法：在描述中提供更詳細的參數和限制。
+- **[HIGH]** 在大型模型生成時可能會遇到性能瓶頸，導致生成時間過長
+  - 解法：考慮將模型拆分為多個小型模型進行生成
+- [MEDIUM] 需要正確配置 Python 和 Node.js 環境，否則可能無法運行
+  - 解法：仔細遵循 README 中的安裝步驟
+- [MEDIUM] 在使用編碼代理時，可能會遇到生成不準確的情況
+  - 解法：提供更詳細的描述以提高生成準確性
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型設計團隊的 CAD 模型生成 | 非常適合 | 支持快速生成和迭代，並且能夠進行版本控制。 |
-| 大型企業的 CAD 設計流程 | 不適合 | 可能在性能和精確度上無法滿足需求。 |
-| 教育機構的 CAD 教學 | 適合 | 開源特性和簡單的使用方式適合學生學習。 |
-| 獨立開發者的個人專案 | 非常適合 | 能夠在本地運行，無需依賴雲端服務。 |
+| 小型設計團隊的 CAD 模型生成 | 非常適合 | 工具的自動化和版本控制功能能夠提升團隊效率。 |
+| 大型企業的複雜 CAD 設計 | 不適合 | 目前性能瓶頸可能無法滿足大型模型的需求。 |
+| 個人開發者的快速原型設計 | 非常適合 | 能夠快速生成和迭代設計，適合快速開發。 |
+| 需要與其他 CAD 工具整合的專案 | 適合 | 支持多種 CAD 格式的輸出，方便與其他工具協作。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 整合時間 | ~8 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到自動化 CAD 模型生成的效果，值得嘗試。
+> 花 5 小時學習，8 小時整合，能夠快速生成 CAD 模型，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具不需要高權限，並且不會存取敏感資料，但在使用過程中仍需注意依賴的安全性。
+> 低風險：該工具不需要高權限運行，且不會存取敏感資料，適合在 CI/CD 環境中使用。
 
 ## 健康度儀表板
 
@@ -337,7 +337,7 @@ npm run dev
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 151 |
+| Forks | 169 |
 | Open Issues | 0 |
 | 最後推送 | 2026-04-26 |
 | 建立日期 | 2026-04-22 |
@@ -360,7 +360,7 @@ npm run dev
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有多次提交和更新。
+**社群活躍度**：社群活躍度高，最近有多次提交和更新。
 **連結**：[文件](https://github.com/earthtojake/text-to-cad)
 
 ## 開發動態
@@ -449,9 +449,9 @@ npm run dev
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[機器學習]] · [[CAD]]
+相關概念：[[自動化]] · [[CAD]] · [[AI]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[alchaincyf--hermes-agent-orange-book|alchaincyf/hermes-agent-orange-book]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[alchaincyf--hermes-agent-orange-book|alchaincyf/hermes-agent-orange-book]]
 
 [GitHub](https://github.com/earthtojake/text-to-cad)
 
@@ -493,7 +493,7 @@ npm run dev
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","機器學習","CAD"];
+> const concepts = ["自動化","CAD","AI"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "earthtojake--text-to-cad" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

@@ -7,9 +7,9 @@ language: JavaScript
 license: MIT
 description: "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more."
 homepage: "https://github.com/ConardLi/garden-skills"
-stars: 1556
-stars_per_day: 259
-forks: 278
+stars: 1691
+stars_per_day: 242
+forks: 293
 open_issues: 0
 created: 2026-04-21
 pushed_at: 2026-04-27
@@ -17,7 +17,7 @@ first_seen: 2026-04-26
 week: "2026-W18"
 month: "2026-04"
 category: "開發工具"
-subcategory: "AI 技能集"
+subcategory: "AI 技能整合"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-26
-use_case: "提供多種生產就緒的 AI 技能，涵蓋網頁設計、知識檢索、影像生成等領域。"
+use_case: "提供多種 AI 代理技能的開源集合，涵蓋網頁設計、知識檢索、影像生成等功能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-26"
-star_history: "2026-04-26:1238,2026-04-26:1238,2026-04-27:1383,2026-04-27:1386,2026-04-28:1554,2026-04-28:1556"
+star_history: "2026-04-26:1238,2026-04-26:1238,2026-04-27:1383,2026-04-27:1386,2026-04-28:1554,2026-04-28:1556,2026-04-29:1691"
 tags:
   - github
   - "category/開發工具"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "garden-skills"
   - "ConardLi/garden-skills"
-  - "提供多種生產就緒的 AI 技能，涵蓋網頁設計、知識檢索、影像生成等領域。"
+  - "提供多種 AI 代理技能的開源集合，涵蓋網頁設計、知識檢索、影像生成等功能。"
 ---
 
 # garden-skills
 
-**1.6k** stars · **259** stars/天 · 建立 6 天前 · JavaScript · MIT
+**1.7k** stars · **242** stars/天 · 建立 7 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/ConardLi--garden-skills");
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `agent` `claude` `gpt-image-2` `rag` `skills` `web-design`
 
 > [!summary] 一句話摘要
-> 提供多種生產就緒的 AI 技能，涵蓋網頁設計、知識檢索、影像生成等領域。
+> 提供多種 AI 代理技能的開源集合，涵蓋網頁設計、知識檢索、影像生成等功能。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (259 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要快速集成 AI 技能以提升開發效率的全端開發者。
-> **一句話重點** Garden Skills 不僅是一個技能集合，更是提升開發者工作效率的利器。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (242 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 希望整合多種 AI 技能於開發流程中的中小型團隊或個人開發者。
+> **一句話重點** Garden Skills 的模組化設計讓開發者能夠靈活選擇和使用多種 AI 技能，這在當前的開發環境中極具價值。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/ConardLi--garden-skills");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "AI 技能集" && p.file.name !== "ConardLi--garden-skills" && p.status !== "archived")
+>     .where(p => p.subcategory === "AI 技能整合" && p.file.name !== "ConardLi--garden-skills" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,108 +103,103 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 AI 技能集 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 AI 技能整合 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到快速開發的能力，值得嘗試。
+> **結論** 花 5 小時學習，3 小時整合，得到靈活的 AI 技能整合，值得一試。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於提供一個生產就緒的 AI 技能集合，能快速提升開發者的工作效率。
+> 這個專案提供了一個模組化的技能集合，讓開發者能夠根據需求靈活選擇和安裝所需的功能。
 
 ## 專案簡介
 
-Garden Skills 是一個針對 Claude Code、Cursor、Codex 等 AI 編碼代理的技能集合，旨在提升這些代理的功能性。使用者可以透過三種方式安裝這些技能：1) 直接從 Claude Code 插件市場安裝；2) 手動將所需技能複製到專案中；3) 作為 Git 子模組進行版本控制。每個技能都包含一個 SKILL.md 文件，定義了技能的名稱、描述和使用條件，並附有詳細的 README 文件，提供使用說明和範例。這些技能的設計考量了實用性和易用性，例如 `web-design-engineer` 技能能將 AI 生成的網頁從「功能性」提升至「驚艷」，並提供了六步驟的工作流程和 520 行的進階模式庫。這個專案的賣點在於其生產就緒的特性，讓開發者能快速集成各種技能，提升開發效率。
+Garden Skills 是一個針對 Claude 及其他 AI 代理的技能集合，旨在提供生產就緒的解決方案。使用者可以透過簡單的 CLI 指令安裝不同的技能，例如 `plugin install web-design-skills@garden-skills`，這樣就能在 Claude Code 中快速啟用網頁設計技能。每個技能都包含詳細的文檔和範例，讓開發者能夠快速上手。這個專案的設計理念是讓技能模組化，便於用戶根據需求選擇和安裝，並且每個技能都遵循相同的結構，包含 YAML frontmatter 和詳細的 README。技術上，這些技能使用 JavaScript 和 Python 開發，並且可以在多個平台上運行，包括 Claude Code、Cursor 和 Codex CLI，確保了廣泛的兼容性。
 
-技術上，這些技能使用 JavaScript 和 Python，並遵循了 Agent Skills 規範，確保了跨平台的兼容性。與其他類似工具相比，Garden Skills 提供了更為細緻的技能設計和更高的可擴展性，特別適合需要快速開發和部署 AI 解決方案的團隊。使用者可以在多種代理環境中輕鬆部署這些技能，並且每個技能都經過測試以確保其穩定性和可靠性。這個專案目前處於活躍開發中，並且社群回應迅速，對於新手來說，學習曲線相對平緩，適合快速上手。
+與其他類似工具相比，Garden Skills 提供了更為細緻的技能分類和自定義選項，例如 `gpt-image-2` 提供三種運行模式，讓使用者能夠根據需求選擇最適合的方式。這樣的設計不僅提升了使用的靈活性，也降低了使用門檻。使用者在實際操作中可能會遇到技能加載失敗的情況，但這可以通過模式檢測腳本來避免。整體而言，Garden Skills 目前處於穩定階段，適合中小型團隊或個人開發者使用，未來可能會隨著 AI 技術的進步而持續擴展功能和技能集合。
 
 **技術棧**：`JavaScript` · `Python`
 
 ## 重點功能
 
-- 多種安裝選項 — 包含從 Claude Code 插件市場安裝、手動複製或 Git 子模組。
-- 網頁設計技能 — 提供六步驟工作流程和 520 行的進階模式庫，提升設計質量。
-- 影像生成技能 — 支持三種運行模式，並提供 70+ 結構化提示模板。
-- 知識檢索技能 — 使用分層索引導航，避免整個文件載入，提升效率。
-- 多語言支持 — 提供英文和中文文檔，方便不同語言的使用者。
+- 模組化技能 — 每個技能都遵循相同的結構，便於用戶選擇和安裝。
+- 多平台兼容性 — 支援 Claude Code、Cursor、Codex CLI 等多種環境。
+- 詳細文檔 — 每個技能都有完整的 README 和範例，降低使用門檻。
+- 多種運行模式 — `gpt-image-2` 提供三種運行模式，根據需求靈活選擇。
+- 自動化檢測 — 模式檢測腳本可避免技能加載失敗，提升使用體驗。
 
 ## 快速開始
 
-1. 從 Claude Code 插件市場安裝技能
+1. 在 Claude Code 中安裝技能
 ```bash
 /plugin marketplace add ConardLi/garden-skills
 ```
-2. 手動複製網頁設計技能到專案
+2. 安裝網頁設計技能
 ```bash
-cp -r skills/web-design-engineer your-project/.claude/skills/
+/plugin install web-design-skills@garden-skills
 ```
-3. 作為 Git 子模組添加技能
+3. 安裝知識檢索技能
 ```bash
-git submodule add https://github.com/ConardLi/web-design-skill.git vendor/garden-skills
+/plugin install knowledge-base-skills@garden-skills
 ```
-
-## 程式碼範例
-
-```js
-{
-  "前置條件": "需要在 Claude Code 環境中",
-  "指令": "/plugin install web-design-skills@garden-skills",
-  "預期輸出": "成功安裝網頁設計技能"
-}
+4. 安裝影像生成技能
+```bash
+/plugin install image-generation-skills@garden-skills
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天內累積 1556 stars（259/天），forks 278（17.9%），顯示出強勁的增長潛力。作者 ConardLi 之前在開源社群中有過多個成功專案，這次專案解決了 AI 技能整合的痛點，讓開發者能更快速地利用 AI 進行開發。近期的推廣活動和社群討論也促進了這個專案的曝光率。這個工具的可行性得益於 AI 技術的快速發展，特別是在生成式 AI 和知識檢索領域。高達 17.9% 的 forks/stars 比率顯示出許多人在實際修改和使用這個專案，反映出其實用性和需求。
+> 建立 7 天內累積 1691 stars（242/天），forks 293（17.3%），顯示出強勁的增長潛力。作者 ConardLi 在開源社群中活躍，之前有多個相關專案，這次的技能集合解決了 AI 代理技能整合的痛點，讓開發者能夠快速部署和使用各種功能。這個專案的成功也可能受到社群的推廣和討論影響，特別是在 AI 和開發者工具的熱潮中。高達 17.3% 的 forks/stars 比率顯示出許多人對這個專案的實際使用和修改意願，這是其受歡迎的另一個指標。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速集成 AI 技能以提升開發效率的全端開發者。
+**目標受眾**：希望整合多種 AI 技能於開發流程中的中小型團隊或個人開發者。
 
 > [!example] 使用場景
-> - 前端工程師用它來快速整合網頁設計技能，因為其提供的六步驟工作流程能有效提升設計效率。
-> - 資料科學家用它來實現本地知識檢索，因為其不需將整個文件載入上下文，能有效降低記憶體使用。
-> - AI 開發者用它來生成高品質的圖像，因為其提供的 70+ 結構化提示模板能快速生成所需內容。
+> - 前端工程師用它來快速生成符合設計要求的網頁，因為 `web-design-engineer` 提供了六步驟的工作流程和反覆驗證的設計系統。
+> - 數據科學家用它來從 PDF 和 Excel 文件中提取信息，因為 `rag-skill` 能夠高效檢索而不需加載整個文件，節省了處理時間。
+> - 創意設計師用它來生成高品質的圖像，因為 `gpt-image-2` 提供了70多個結構化的提示模板，能夠快速適應不同的需求。
 
 ## 架構分析
 
-Garden Skills 採用模組化的架構設計，每個技能都獨立於其他技能，這樣的設計使得開發和維護變得更加簡單。每個技能包含 SKILL.md、README 和可選的資源，這樣的結構讓使用者能夠快速理解和使用技能。資料流方面，技能的運行依賴於代理的能力，使用 YAML 前置條件來決定何時加載技能。這種設計的取捨在於靈活性與簡單性之間的平衡，雖然可能會犧牲一些性能，但對於大多數開發者來說，這種靈活性是值得的。擴展性方面，這種模組化的設計使得未來添加新技能變得容易，並且不會影響現有技能的運行。
+Garden Skills 採用模組化設計，所有技能都在 `skills/` 目錄下，每個技能都有獨立的 README 和配置文件。這樣的架構使得技能的擴展和維護變得簡單，開發者可以輕鬆添加新技能或修改現有技能。資料流方面，技能的運行依賴於 YAML frontmatter 來告訴代理何時使用該技能，這樣的設計確保了靈活性和可擴展性。選擇這種架構的代價是需要開發者遵循一定的結構規範，否則可能導致加載失敗。未來擴展的瓶頸主要在於技能的兼容性和性能，隨著技能數量的增加，可能需要考慮如何優化加載和執行效率。
 
 ## 技術深入分析
 
-Garden Skills 的核心技術機制在於其模組化的技能設計，每個技能都遵循相同的結構，這使得開發者能夠快速理解和使用。這些技能使用 JavaScript 和 Python 實現，並遵循 Agent Skills 規範，確保了跨平台的兼容性。效能方面，這些技能經過測試，能在多種代理環境中穩定運行，並且不會因為技能的增加而影響性能。設計取捨方面，選擇模組化設計使得未來擴展變得容易，但可能會導致某些功能的性能不如專門的工具。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在高負載的情況下。整合方面，這些技能能夠輕鬆與主流的開發框架和 CI/CD 流程整合，並且不會造成太大的摩擦。
+Garden Skills 的核心技術機制在於其模組化的技能設計，每個技能都遵循相同的結構，這樣的設計使得擴展和維護變得簡單。技能的運行依賴於 YAML frontmatter，這樣的設計讓代理能夠根據需求靈活加載技能。效能方面，這些技能的加載和執行效率良好，能夠處理多種不同的任務，並且在多平台上運行。選擇 JavaScript 和 Python 作為開發語言，帶來了良好的生態系統支持和開發效率，但同時也可能面臨依賴管理的挑戰。技術風險方面，隨著技能數量的增加，可能會影響整體性能，特別是在高負載情況下。整合方面，這個專案與主流的開發工具鏈相容，能夠輕鬆融入現有的 CI/CD 流程，降低了採用的門檻。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和範例；安裝過程順暢，沒有明顯的坑；有良好的入門指南，適合新手快速上手；文件有中英文版本，方便不同語言的使用者。
+> README 文件清晰且包含多語言支持，安裝過程順暢，提供了多種安裝選項。新手可以在短時間內上手，並且有詳細的 getting started guide，適合初學者使用。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 模組化設計，易於擴展和維護。
-> - 提供多種安裝選項，方便不同需求的開發者。
-> - 技能經過測試，確保穩定性和可靠性。
+> - 模組化設計，方便用戶根據需求選擇技能。
+> - 詳細的文檔和範例，降低了上手難度。
+> - 多平台支持，擴展性強。
 
 > [!danger] 缺點
-> - 目前僅支持特定代理環境，限制了使用範圍。
-> - 部分技能可能需要額外的依賴，增加了配置複雜度。
-> - 新手可能需要時間熟悉技能的使用方式。
+> - 目前支持的代理環境有限，可能不適合所有用戶。
+> - 技能加載依賴於正確的目錄結構，對新手來說可能有一定挑戰。
+> - 部分技能可能需要額外的配置或依賴，增加了使用複雜度。
 
 > [!warning] 注意事項
-> - 目前僅支持 Claude Code、Cursor、Codex 等特定代理環境。
-> - 部分技能可能需要額外的依賴或配置，具體依賴於使用的代理。
-> - 不支持在所有環境中運行，需確認兼容性。
+> - 目前僅支援 Claude Code、Cursor 和 Codex CLI，對於其他平台的支持尚未測試。
+> - 技能的加載依賴於正確的目錄結構，錯誤的結構可能導致加載失敗。
+> - 部分技能可能需要額外的依賴或配置，使用前需仔細閱讀文檔。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的代理技能，但專注於遊戲開發，功能範圍不同。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資料處理和分析，與本專案的設計和網頁技能不同。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的技能整合，但專注於遊戲開發領域，適合需要遊戲 AI 的開發者。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要針對資料科學的技能整合，功能範圍較窄，適合專注於數據處理的使用者。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 提供的技能較為單一，專注於代碼生成，對於需要多樣化技能的用戶來說不夠靈活。 |
 
 ## 替代方案決策
 
@@ -212,16 +207,16 @@ Garden Skills 的核心技術機制在於其模組化的技能設計，每個技
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發的代理技能，使用 Rust 實作，性能優於本專案，但生態系統較小。 | 如果你的團隊專注於遊戲開發，且需要高性能的技能，則應選擇它。 | medium，因為需要重新學習其特有的技能結構。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資料處理和分析，使用 Python 實作，功能範圍不同於本專案。 | 如果你的專案主要集中在資料分析，則應選擇它。 | low，因為 Python 的相似性使得轉換相對簡單。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發的技能整合，提供的功能相對單一。 | 如果你的專案專注於遊戲開發，這個工具可能更適合。 | medium，因為需要重新學習其特定的技能結構。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 專注於代碼生成，功能範圍較窄。 | 如果你的需求主要集中在代碼生成，這個工具可能更合適。 | low，因為其使用方式相對簡單。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **garden-skills** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **garden-skills** | **agent-sprite-forge** | **codeburn** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於遊戲開發的代理技能，使用 Rust 實作，性能優於本專案，但生態系統較小。 | 專注於資料處理和分析，使用 Python 實作，功能範圍不同於本專案。 |
-> | 遷移成本 | - | medium，因為需要重新學習其特有的技能結構。 | low，因為 Python 的相似性使得轉換相對簡單。 |
-> | 適用場景 | 主要場景 | 如果你的團隊專注於遊戲開發，且需要高性能的技能，則應選擇它。 | 如果你的專案主要集中在資料分析，則應選擇它。 |
+> | 技術路線 | 本專案 | 專注於遊戲開發的技能整合，提供的功能相對單一。 | 專注於代碼生成，功能範圍較窄。 |
+> | 遷移成本 | - | medium，因為需要重新學習其特定的技能結構。 | low，因為其使用方式相對簡單。 |
+> | 適用場景 | 主要場景 | 如果你的專案專注於遊戲開發，這個工具可能更適合。 | 如果你的需求主要集中在代碼生成，這個工具可能更合適。 |
 
 ## 成熟度評估
 
@@ -232,25 +227,25 @@ Garden Skills 的核心技術機制在於其模組化的技能設計，每個技
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人或小型專案試用，但不建議用在生產環境的核心路徑上。
+> 適合個人或小型專案試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些代理環境中，技能可能無法正確加載
-  - 解法：檢查代理的兼容性設定
-- [MEDIUM] 部分技能在高負載下可能會出現性能瓶頸
-  - 解法：考慮分散負載或優化技能使用
+- **[HIGH]** 在 Claude Code 中安裝時，可能會因目錄結構錯誤導致技能無法加載
+  - 解法：確保技能文件夾結構正確，並遵循文檔指導
+- [MEDIUM] 部分技能在特定環境下可能無法正常運行
+  - 解法：檢查兼容性列表，確保使用的代理環境支持該技能
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 模組化設計使得快速集成和部署成為可能。 |
-| 大型企業的核心系統 | 不適合 | 目前處於 beta 階段，穩定性不足。 |
-| 需要快速開發原型的團隊 | 適合 | 提供的技能能快速提升開發效率。 |
-| 對性能要求極高的應用 | 普通 | 部分技能在高負載下可能會出現瓶頸。 |
+| 10 人以下的新創公司需要快速開發原型 | 非常適合 | 模組化設計和詳細文檔能夠快速上手，適合小型團隊。 |
+| 大型企業需要穩定的 AI 技能整合 | 普通 | 雖然功能強大，但目前仍在 beta 階段，穩定性需進一步驗證。 |
+| 教育機構希望教授 AI 技能整合 | 適合 | 詳細的文檔和範例能夠幫助學生快速理解和實踐。 |
+| 需要高性能的 AI 環境進行大規模部署 | 不適合 | 目前的性能和穩定性尚未達到生產環境的要求。 |
 
 ## 採用成本分析
 
@@ -258,16 +253,16 @@ Garden Skills 的核心技術機制在於其模組化的技能設計，每個技
 | --- | --- |
 | 學習時間 | ~5 小時 |
 | 整合時間 | ~3 小時 |
-| 維護負擔 | medium |
+| 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到快速開發的能力，值得嘗試。
+> 花 5 小時學習，3 小時整合，得到靈活的 AI 技能整合，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，且不存取敏感資料，依賴鏈的信任程度較高，適合在 CI/CD 中使用。
+> 低風險：該工具不需要高權限，並且不存取敏感資料，依賴鏈的信任程度良好，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -332,7 +327,7 @@ Garden Skills 的核心技術機制在於其模組化的技能設計，每個技
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 278 |
+| Forks | 293 |
 | Open Issues | 0 |
 | Issue 解決率 | 100% (2 closed) |
 | 最後推送 | 2026-04-27 |
@@ -356,7 +351,7 @@ Garden Skills 的核心技術機制在於其模組化的技能設計，每個技
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，問題解決率 100%。
+**社群活躍度**：社群活躍，問題解決率高達 100%。
 **連結**：[文件](https://github.com/ConardLi/garden-skills)
 
 ## 開發動態
@@ -598,19 +593,19 @@ Garden Skills 的核心技術機制在於其模組化的技能設計，每個技
 
 ## 延伸閱讀
 
-相關概念：[[RAG]] · [[Agent 框架]] · [[自動化測試]]
+相關概念：[[Agent 框架]] · [[知識檢索]] · [[影像生成]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[MiniMax-AI--skills|MiniMax-AI/skills]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[MiniMax-AI--skills|MiniMax-AI/skills]] · [[432539--gpt2api|432539/gpt2api]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]]
 
 [GitHub](https://github.com/ConardLi/garden-skills) · [官方網站](https://github.com/ConardLi/garden-skills)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：AI 技能集）
+> [!note]- 直接競品（同子分類：AI 技能整合）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "AI 技能集" AND file.name != "ConardLi--garden-skills"
+> WHERE subcategory = "AI 技能整合" AND file.name != "ConardLi--garden-skills"
 > SORT stars DESC
 > ```
 
@@ -642,7 +637,7 @@ Garden Skills 的核心技術機制在於其模組化的技能設計，每個技
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["RAG","Agent 框架","自動化測試"];
+> const concepts = ["Agent 框架","知識檢索","影像生成"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "ConardLi--garden-skills" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
