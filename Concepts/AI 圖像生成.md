@@ -2,14 +2,14 @@
 tags:
   - concept
 aliases:
-  - "Mixture of Experts"
+  - "AI 圖像生成"
 ---
 
-# Mixture of Experts
+# AI 圖像生成
 
 ## 是什麼
 
-Mixture of Experts 是一種機器學習模型架構，透過多個專家模型來處理不同的任務，並根據輸入自動選擇最適合的專家進行預測。這種方法能提高模型的效率和準確性，特別適合處理複雜的問題，像是 Google 的 Switch Transformer 就是這種架構的應用。
+AI 圖像生成是利用人工智慧技術自動創造圖像的過程，這可以用於藝術創作、廣告設計或產品原型開發。這項技術的重要性在於它能大幅提高創作效率，並提供無限的創意可能性，像是 DALL-E 和 Midjourney 就是知名的 AI 圖像生成工具。
 
 ## 快速統計
 

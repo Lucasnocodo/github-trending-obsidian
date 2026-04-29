@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Agent Skill for generating 2D sprite sheets and map, transparent PNG frames, and animated GIFs from prompts."
 homepage: ""
-stars: 871
-stars_per_day: 218
-forks: 84
+stars: 1042
+stars_per_day: 208
+forks: 107
 open_issues: 0
 created: 2026-04-23
-pushed_at: 2026-04-27
+pushed_at: 2026-04-28
 first_seen: 2026-04-28
 week: "2026-W18"
 month: "2026-04"
@@ -30,10 +30,10 @@ use_case: "將自然語言提示轉換為遊戲準備的 2D 精靈和分層 2D �
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-01"
+appearances: 2
+next_review: "2026-05-02"
 contributor_count: 1
-engagement: "low"
+engagement: "medium"
 issue_close_rate: -1
 repo_size_kb: 38576
 readme_length: 9974
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-28"
-star_history: "2026-04-28:871,2026-04-28:871"
+star_history: "2026-04-28:871,2026-04-28:871,2026-04-29:1042"
 tags:
   - github
   - "category/開發工具"
@@ -982,4 +982,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-29|2026-04-29]] — 再次上榜，1.0k stars
 - [[2026-04-28|2026-04-28]] — 首次收錄，871 stars

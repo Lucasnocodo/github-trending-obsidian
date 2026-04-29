@@ -1289,17 +1289,17 @@
   },
   "op7418/guizang-ppt-skill": {
     "first_seen": "2026-04-25",
-    "last_seen": "2026-04-28",
-    "times_seen": 4,
+    "last_seen": "2026-04-29",
+    "times_seen": 5,
     "stars_first": 1942,
-    "stars_last": 3449
+    "stars_last": 3829
   },
   "deepseek-ai/TileKernels": {
     "first_seen": "2026-04-25",
-    "last_seen": "2026-04-28",
-    "times_seen": 4,
+    "last_seen": "2026-04-29",
+    "times_seen": 5,
     "stars_first": 1072,
-    "stars_last": 1281
+    "stars_last": 1320
   },
   "masterking32/MasterHttpRelayVPN": {
     "first_seen": "2026-04-25",
@@ -1338,38 +1338,38 @@
   },
   "victorchen96/deepseek_v4_rolepaly_instruct": {
     "first_seen": "2026-04-27",
-    "last_seen": "2026-04-28",
-    "times_seen": 2,
+    "last_seen": "2026-04-29",
+    "times_seen": 3,
     "stars_first": 1079,
-    "stars_last": 1309
+    "stars_last": 1459
   },
   "openclaw/clawsweeper": {
     "first_seen": "2026-04-27",
-    "last_seen": "2026-04-28",
-    "times_seen": 2,
+    "last_seen": "2026-04-29",
+    "times_seen": 3,
     "stars_first": 1007,
-    "stars_last": 1198
+    "stars_last": 1276
   },
   "freestylefly/awesome-gpt-image-2": {
     "first_seen": "2026-04-28",
-    "last_seen": "2026-04-28",
-    "times_seen": 1,
+    "last_seen": "2026-04-29",
+    "times_seen": 2,
     "stars_first": 1274,
-    "stars_last": 1274
+    "stars_last": 1716
   },
   "earthtojake/text-to-cad": {
     "first_seen": "2026-04-28",
-    "last_seen": "2026-04-28",
-    "times_seen": 1,
+    "last_seen": "2026-04-29",
+    "times_seen": 2,
     "stars_first": 952,
-    "stars_last": 952
+    "stars_last": 1094
   },
   "0x0funky/agent-sprite-forge": {
     "first_seen": "2026-04-28",
-    "last_seen": "2026-04-28",
-    "times_seen": 1,
+    "last_seen": "2026-04-29",
+    "times_seen": 2,
     "stars_first": 871,
-    "stars_last": 871
+    "stars_last": 1042
   },
   "therealaleph/MasterHttpRelayVPN-RUST": {
     "first_seen": "2026-04-28",
@@ -1377,5 +1377,26 @@
     "times_seen": 1,
     "stars_first": 855,
     "stars_last": 855
+  },
+  "nexu-io/open-design": {
+    "first_seen": "2026-04-29",
+    "last_seen": "2026-04-29",
+    "times_seen": 1,
+    "stars_first": 1292,
+    "stars_last": 1292
+  },
+  "wuyoscar/gpt_image_2_skill": {
+    "first_seen": "2026-04-29",
+    "last_seen": "2026-04-29",
+    "times_seen": 1,
+    "stars_first": 949,
+    "stars_last": 949
+  },
+  "Russell-cell/PPT-Design-Prompt": {
+    "first_seen": "2026-04-29",
+    "last_seen": "2026-04-29",
+    "times_seen": 1,
+    "stars_first": 849,
+    "stars_last": 849
   }
 }
