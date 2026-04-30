@@ -1289,10 +1289,10 @@
   },
   "op7418/guizang-ppt-skill": {
     "first_seen": "2026-04-25",
-    "last_seen": "2026-04-29",
-    "times_seen": 5,
+    "last_seen": "2026-04-30",
+    "times_seen": 6,
     "stars_first": 1942,
-    "stars_last": 3829
+    "stars_last": 4180
   },
   "deepseek-ai/TileKernels": {
     "first_seen": "2026-04-25",
@@ -1338,24 +1338,24 @@
   },
   "victorchen96/deepseek_v4_rolepaly_instruct": {
     "first_seen": "2026-04-27",
-    "last_seen": "2026-04-29",
-    "times_seen": 3,
+    "last_seen": "2026-04-30",
+    "times_seen": 4,
     "stars_first": 1079,
-    "stars_last": 1459
+    "stars_last": 1521
   },
   "openclaw/clawsweeper": {
     "first_seen": "2026-04-27",
-    "last_seen": "2026-04-29",
-    "times_seen": 3,
+    "last_seen": "2026-04-30",
+    "times_seen": 4,
     "stars_first": 1007,
-    "stars_last": 1276
+    "stars_last": 1341
   },
   "freestylefly/awesome-gpt-image-2": {
     "first_seen": "2026-04-28",
-    "last_seen": "2026-04-29",
-    "times_seen": 2,
+    "last_seen": "2026-04-30",
+    "times_seen": 3,
     "stars_first": 1274,
-    "stars_last": 1716
+    "stars_last": 2149
   },
   "earthtojake/text-to-cad": {
     "first_seen": "2026-04-28",
@@ -1366,10 +1366,10 @@
   },
   "0x0funky/agent-sprite-forge": {
     "first_seen": "2026-04-28",
-    "last_seen": "2026-04-29",
-    "times_seen": 2,
+    "last_seen": "2026-04-30",
+    "times_seen": 3,
     "stars_first": 871,
-    "stars_last": 1042
+    "stars_last": 1245
   },
   "therealaleph/MasterHttpRelayVPN-RUST": {
     "first_seen": "2026-04-28",
@@ -1380,10 +1380,10 @@
   },
   "nexu-io/open-design": {
     "first_seen": "2026-04-29",
-    "last_seen": "2026-04-29",
-    "times_seen": 1,
+    "last_seen": "2026-04-30",
+    "times_seen": 2,
     "stars_first": 1292,
-    "stars_last": 1292
+    "stars_last": 4442
   },
   "wuyoscar/gpt_image_2_skill": {
     "first_seen": "2026-04-29",
@@ -1398,5 +1398,33 @@
     "times_seen": 1,
     "stars_first": 849,
     "stars_last": 849
+  },
+  "cursor/cookbook": {
+    "first_seen": "2026-04-30",
+    "last_seen": "2026-04-30",
+    "times_seen": 1,
+    "stars_first": 1427,
+    "stars_last": 1427
+  },
+  "GammaLabTechnologies/harmonist": {
+    "first_seen": "2026-04-30",
+    "last_seen": "2026-04-30",
+    "times_seen": 1,
+    "stars_first": 897,
+    "stars_last": 897
+  },
+  "future-agi/future-agi": {
+    "first_seen": "2026-04-30",
+    "last_seen": "2026-04-30",
+    "times_seen": 1,
+    "stars_first": 748,
+    "stars_last": 748
+  },
+  "epoko77-ai/im-not-ai": {
+    "first_seen": "2026-04-30",
+    "last_seen": "2026-04-30",
+    "times_seen": 1,
+    "stars_first": 642,
+    "stars_last": 642
   }
 }

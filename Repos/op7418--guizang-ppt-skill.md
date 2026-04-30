@@ -7,9 +7,9 @@ language: HTML
 license: MIT
 description: "A Claude Code Skill that turns prompts into horizontal-swipe magazine-style HTML decks — 10 layouts, 5 curated themes, WebGL hero backgrounds, single-file output."
 homepage: ""
-stars: 3829
-stars_per_day: 766
-forks: 395
+stars: 4180
+stars_per_day: 697
+forks: 417
 open_issues: 4
 created: 2026-04-23
 pushed_at: 2026-04-28
@@ -30,10 +30,10 @@ use_case: "將提示轉換為橫向滑動的雜誌風格 HTML 演示文稿，提
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-05-02"
+appearances: 6
+next_review: "2026-05-03"
 contributor_count: 1
-engagement: "medium"
+engagement: "low"
 issue_close_rate: 0
 repo_size_kb: 51
 readme_length: 3158
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-25"
-star_history: "2026-04-25:1942,2026-04-26:2704,2026-04-27:3004,2026-04-28:3449,2026-04-29:3829"
+star_history: "2026-04-25:1942,2026-04-26:2704,2026-04-27:3004,2026-04-28:3449,2026-04-29:3829,2026-04-30:4180"
 tags:
   - github
   - "category/開發工具"
@@ -810,6 +810,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-04-30|2026-04-30]] — 再次上榜，4.2k stars
 - [[2026-04-29|2026-04-29]] — 再次上榜，3.8k stars
 - [[2026-04-28|2026-04-28]] — 再次上榜，3.4k stars
 - [[2026-04-27|2026-04-27]] — 再次上榜，3.0k stars
