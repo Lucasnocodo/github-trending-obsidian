@@ -1338,10 +1338,10 @@
   },
   "victorchen96/deepseek_v4_rolepaly_instruct": {
     "first_seen": "2026-04-27",
-    "last_seen": "2026-04-30",
-    "times_seen": 4,
+    "last_seen": "2026-05-01",
+    "times_seen": 5,
     "stars_first": 1079,
-    "stars_last": 1521
+    "stars_last": 1563
   },
   "openclaw/clawsweeper": {
     "first_seen": "2026-04-27",
@@ -1352,10 +1352,10 @@
   },
   "freestylefly/awesome-gpt-image-2": {
     "first_seen": "2026-04-28",
-    "last_seen": "2026-04-30",
-    "times_seen": 3,
+    "last_seen": "2026-05-01",
+    "times_seen": 4,
     "stars_first": 1274,
-    "stars_last": 2149
+    "stars_last": 2562
   },
   "earthtojake/text-to-cad": {
     "first_seen": "2026-04-28",
@@ -1380,10 +1380,10 @@
   },
   "nexu-io/open-design": {
     "first_seen": "2026-04-29",
-    "last_seen": "2026-04-30",
-    "times_seen": 2,
+    "last_seen": "2026-05-01",
+    "times_seen": 3,
     "stars_first": 1292,
-    "stars_last": 4442
+    "stars_last": 8359
   },
   "wuyoscar/gpt_image_2_skill": {
     "first_seen": "2026-04-29",
@@ -1401,10 +1401,10 @@
   },
   "cursor/cookbook": {
     "first_seen": "2026-04-30",
-    "last_seen": "2026-04-30",
-    "times_seen": 1,
+    "last_seen": "2026-05-01",
+    "times_seen": 2,
     "stars_first": 1427,
-    "stars_last": 1427
+    "stars_last": 2631
   },
   "GammaLabTechnologies/harmonist": {
     "first_seen": "2026-04-30",
@@ -1422,9 +1422,44 @@
   },
   "epoko77-ai/im-not-ai": {
     "first_seen": "2026-04-30",
-    "last_seen": "2026-04-30",
-    "times_seen": 1,
+    "last_seen": "2026-05-01",
+    "times_seen": 2,
     "stars_first": 642,
-    "stars_last": 642
+    "stars_last": 670
+  },
+  "theori-io/copy-fail-CVE-2026-31431": {
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-05-01",
+    "times_seen": 1,
+    "stars_first": 1694,
+    "stars_last": 1694
+  },
+  "ps5-linux/ps5-linux-loader": {
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-05-01",
+    "times_seen": 1,
+    "stars_first": 808,
+    "stars_last": 808
+  },
+  "willchen96/mike": {
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-05-01",
+    "times_seen": 1,
+    "stars_first": 785,
+    "stars_last": 785
+  },
+  "DanOps-1/Gpt-Agreement-Payment": {
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-05-01",
+    "times_seen": 1,
+    "stars_first": 779,
+    "stars_last": 779
+  },
+  "GENEXIS-AI/chromex": {
+    "first_seen": "2026-05-01",
+    "last_seen": "2026-05-01",
+    "times_seen": 1,
+    "stars_first": 687,
+    "stars_last": 687
   }
 }
