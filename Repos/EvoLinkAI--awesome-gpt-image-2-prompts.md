@@ -7,47 +7,46 @@ language: Python
 license: NOASSERTION
 description: "Curated GPT-Image-2 prompts fot the Openai API：image examples across portraits, posters, UI mockups, character sheets, and community experiments."
 homepage: "https://evolink.ai/gpt-image-2-prompts"
-stars: 9947
-stars_per_day: 904
-forks: 973
-open_issues: 11
+stars: 10822
+stars_per_day: 902
+forks: 1093
+open_issues: 12
 created: 2026-04-18
-pushed_at: 2026-04-29
+pushed_at: 2026-04-30
 first_seen: 2026-04-23
 week: "2026-W17"
 month: "2026-04"
 category: "AI/ML"
 subcategory: "圖像生成"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-23
-use_case: "提供高品質的 GPT-Image-2 提示詞，幫助用戶生成各類圖像。"
+use_case: "提供多種 GPT-Image-2 的提示詞，幫助生成各類圖片。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 3
 next_review: "2026-04-28"
 contributor_count: 1
-engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 87449
-readme_length: 9989
+engagement: "medium"
+issue_close_rate: 8
+repo_size_kb: 89562
+readme_length: 9943
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-23"
-star_history: "2026-04-23:1761,2026-04-23:1768,2026-04-24:2734,2026-04-24:2750,2026-04-25:3244,2026-04-25:3246,2026-04-26:3953,2026-04-27:5270,2026-04-28:6885,2026-04-29:8738,2026-04-30:9947"
+star_history: "2026-04-23:1761,2026-04-23:1768,2026-04-24:2734,2026-04-24:2750,2026-04-25:3244,2026-04-25:3246,2026-04-26:3953,2026-04-27:5270,2026-04-28:6885,2026-04-29:8738,2026-04-30:9947,2026-05-01:10822"
 tags:
   - github
   - "category/ai_ml"
   - "lang/python"
-  - easy_install
   - "topic/api"
   - "topic/awesome_list"
   - "topic/chatgpt"
@@ -56,12 +55,12 @@ tags:
 aliases:
   - "awesome-gpt-image-2-prompts"
   - "EvoLinkAI/awesome-gpt-image-2-prompts"
-  - "提供高品質的 GPT-Image-2 提示詞，幫助用戶生成各類圖像。"
+  - "提供多種 GPT-Image-2 的提示詞，幫助生成各類圖片。"
 ---
 
 # awesome-gpt-image-2-prompts
 
-**9.9k** stars · **904** stars/天 · 建立 11 天前 · Python · NOASSERTION
+**10.8k** stars · **902** stars/天 · 建立 12 天前 · Python · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/EvoLinkAI--awesome-gpt-image-2-prompts");
@@ -74,18 +73,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `easy-install`
+`個人專案`
 
 `api` `awesome-list` `chatgpt` `generative-` `gpt-image-2` `gpt-image-2-api` `gpt-image-2-prompts` `image-generation` `image-prompt` `image-to-image` `openai` `prompt-` `prompt-collection` `prompts` `text-to-image`
 
 > [!summary] 一句話摘要
-> 提供高品質的 GPT-Image-2 提示詞，幫助用戶生成各類圖像。
+> 提供多種 GPT-Image-2 的提示詞，幫助生成各類圖片。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (904 stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要快速生成高品質圖像的創作者和設計師。
-> **一句話重點** 這個專案的價值在於其高品質的提示詞庫，能夠幫助用戶快速生成各類圖像。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (902 stars/day)
+> **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要快速生成高質量圖片的設計師和開發者。
+> **一句話重點** 這個專案透過提供多樣化的提示詞，讓生成圖片變得更加簡單和高效。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,97 +107,112 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，3 小時整合，能夠快速生成高品質圖像，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習、3 小時整合，得到快速生成圖片的能力，值得考慮。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個高品質的提示詞庫，專為 GPT-Image-2 設計，能夠快速生成多樣化的圖像。
+> 提供了一個集成的提示詞庫，專為生成圖片而設計，簡化了用戶的創作過程。
 
 ## 專案簡介
 
-這個專案專注於收集和整理高品質的 GPT-Image-2 提示詞，涵蓋了肖像、海報、角色表、UI 模擬和社群實驗等多個領域。用戶可以透過這些提示詞生成各式各樣的圖像，例如商業廣告、角色介紹頁面等，並且這些提示詞都是從 Twitter 和創作者社群中精心挑選而來。使用者只需將提示詞輸入到 GPT-Image-2 API 中，即可獲得相應的圖像輸出，這樣的設計使得創作過程變得更加便捷和高效。專案中提供的範例提示詞如「創建一個豪華的香水廣告圖像」或「設計一個角色介紹頁面」等，讓用戶能夠快速上手並生成所需的圖像。這個工具的賣點在於其高質量的提示詞庫，能夠幫助用戶在短時間內創造出專業水準的圖像。
+這個專案提供了一系列針對 OpenAI 的 GPT-Image-2 API 的提示詞，涵蓋了肖像、海報、UI 模擬、角色設計等多種用途。用戶可以透過這些提示詞生成高質量的圖片，並且可以在不同的場景中使用，例如電子商務或社交媒體。核心賣點在於其廣泛的應用範圍和社群貢獻的實例，這讓開發者能夠快速找到合適的提示詞來滿足特定需求。技術上，這個專案是用 Python 實現，並且依賴於 OpenAI 的 API，這意味著用戶需要有 API 金鑰來進行調用。與其他類似工具相比，如 0x0funky/agent-sprite-forge，這個專案的優勢在於其專注於圖片生成的多樣性和社群支持的實例，而不是僅限於某一特定用途。
 
-技術上，這個專案是基於 Python 開發，並利用 OpenAI 的 API 進行圖像生成，這使得其在生成速度和質量上都具備優勢。與其他類似工具相比，如 DALL-E 或 Midjourney，這個專案提供了更為細緻的提示詞設計，能夠針對特定需求進行優化，從而提升生成的圖像質量。實際使用中，用戶可能會遇到提示詞不夠精確或生成結果不符合預期的情況，這時可以通過調整提示詞來改善結果。社群活躍度方面，專案在短短 11 天內便獲得了近 9947 顆星，顯示出其受歡迎程度。這個專案目前處於 beta 階段，適合希望快速生成高質量圖像的創作者和設計師使用。
+使用者可以透過簡單的 API 調用來生成圖片，這樣的設計使得即使是新手也能輕鬆上手。該專案的使用效果取決於用戶輸入的提示詞質量，這意味著用戶需要花時間去探索和實驗。社群的活躍度相對較高，但目前的問題解決率較低，可能會影響使用者的體驗。總體來看，這是一個適合希望快速生成圖片的開發者的工具，但對於需要高度自定義的使用者來說，可能會有一定的限制。建議使用者在小型專案中試用，並根據需求逐步擴展使用範圍。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 高品質提示詞庫 — 提供多種場景的提示詞，涵蓋肖像、海報、角色設計等。
-- 社群實驗案例 — 包含來自社群的實驗和範例，幫助用戶獲得靈感。
-- API 整合 — 可直接與 OpenAI 的 GPT-Image-2 API 整合，簡化使用流程。
-- 範例提示詞 — 提供多個實際的提示詞範例，方便用戶快速上手。
-- 持續更新 — 定期新增提示詞和案例，保持內容的新鮮度和實用性。
+- 多樣化提示詞 — 提供針對肖像、海報、UI 模擬等多種場景的提示詞。
+- 社群實例 — 收錄了社群貢獻的實例，幫助用戶理解如何使用提示詞。
+- API 整合 — 可直接與 OpenAI 的 GPT-Image-2 API 整合，簡化生成過程。
+- 快速檢索功能 — 提供快速檢索的工具，方便用戶找到所需的提示詞。
+- 多語言支持 — README 提供多種語言版本，方便不同語言用戶使用。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 克隆專案
+```bash
+git clone https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts.git
+```
+2. 安裝依賴
 ```bash
 pip install -r requirements.txt
 ```
-2. 運行範例程式
+3. 運行範例
 ```bash
 python example.py
 ```
-3. 使用提示詞生成圖像
-```bash
-python generate_image.py --prompt 'your prompt here'
+
+## 程式碼範例
+
+```python
+# 前置條件
+# 確保已安裝 OpenAI 的 Python 客戶端
+import openai
+
+# 使用提示詞生成圖片
+response = openai.Image.create(
+  prompt='A futuristic cityscape at sunset',
+  n=1,
+  size='1024x1024'
+)
+# 預期輸出
+# 返回生成的圖片 URL
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 11 天內累積 9947 stars（904 stars/天），forks 973（9.8%），顯示出其快速增長的潛力。作者 EvoLinkAI 在圖像生成領域有一定的經驗，這個專案解決了用戶在生成圖像時缺乏高質量提示詞的痛點。之前用戶通常需要自行編寫提示詞，這不僅耗時，且效果不佳。這個專案的推出正好填補了這一空白，並且社群對其反饋良好，進一步促進了其流行。技術上，隨著 OpenAI API 的普及，這個工具的可行性大幅提升。forks/stars 比率為 9.8%，顯示出許多人對這個專案進行了實際修改和使用。
+> 建立 12 天就累積 10822 stars（902/天），forks 1093（10.1%），這顯示出其快速增長的潛力。EvoLinkAI 是一個專注於 AI 和生成內容的團隊，這個專案解決了生成圖片時需要的提示詞問題，之前用戶往往需要自行摸索或參考其他資源。這個專案的推出恰逢社群對於生成藝術和圖片的需求上升，並且有許多社群貢獻的實例，讓用戶能夠看到實際效果。這些因素共同推動了其快速的關注度和使用率。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成高品質圖像的創作者和設計師。
+**目標受眾**：需要快速生成高質量圖片的設計師和開發者。
 
 > [!example] 使用場景
-> - 插畫師用它來生成角色設計圖，因為高品質的提示詞能夠快速達成預期效果。
-> - 市場行銷專員用它來創建廣告海報，因為能夠生成專業水準的圖像，提升廣告效果。
-> - UI 設計師用它來製作應用程式界面模擬，因為提供的提示詞能夠幫助他們快速構思設計。
+> - 平面設計師用它來生成海報設計，因為可以快速獲得多樣化的設計靈感，提升工作效率。
+> - 社交媒體管理者用它來創建吸引人的圖片，因為這些提示詞能幫助他們生成高質感的內容，增加互動率。
+> - 開發者用它來測試不同的 UI 模擬，因為能夠快速生成多種設計，便於比較和選擇最佳方案。
 
 ## 架構分析
 
-這個專案採用的是一個簡單的 Python 應用架構，主要依賴 OpenAI 的 API 進行圖像生成。用戶通過提供提示詞，系統將其發送至 OpenAI API，然後接收生成的圖像。這樣的設計使得用戶無需深入了解底層技術即可輕鬆使用。
+這個專案採用 Python 作為主要開發語言，並且依賴於 OpenAI 的 API 進行圖片生成。用戶需要提供有效的 API 金鑰，然後透過簡單的函數調用來生成圖片。這樣的設計使得用戶能夠快速上手，但也意味著對 API 的依賴性較高，若 API 服務中斷，將影響整體功能。
 
-選擇 Python 作為開發語言的原因在於其簡單易用和豐富的生態系統，這使得開發和維護變得更加高效。由於依賴於外部 API，這可能會導致在高流量時出現延遲，這是需要注意的 trade-off。整體而言，這個架構適合小型到中型的應用，但在面對大量請求時，可能需要考慮擴展性問題。
+資料流方面，使用者輸入提示詞，系統通過 OpenAI 的 API 進行處理，最終返回生成的圖片。這樣的選擇雖然方便，但也限制了用戶的自定義能力，因為所有生成都依賴於 OpenAI 的模型。擴展性方面，若未來需要支持更多的生成模型，可能需要進行較大的架構調整。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是利用 OpenAI 的 GPT-Image-2 API 來生成圖像，這需要用戶提供精確的提示詞。專案中收錄的提示詞都是經過篩選的高品質範例，這樣的設計能夠幫助用戶在短時間內獲得理想的圖像輸出。效能方面，生成圖像的速度取決於 OpenAI API 的響應時間，通常在幾秒鐘內完成，但在高流量時可能會有延遲。選擇 Python 作為開發語言的原因在於其簡單性和廣泛的使用範圍，這使得開發和維護變得更加容易。由於依賴外部 API，這也帶來了供應鏈風險，特別是當 API 服務出現問題時，會直接影響到專案的可用性。整合方面，這個專案可以輕鬆與各種 Python 環境和工具鏈進行整合，對於 CI/CD pipeline 友好，能夠快速部署到生產環境中。
+這個專案的核心技術機制是利用 OpenAI 的 GPT-Image-2 API 來生成圖片，這意味著它依賴於深度學習模型的強大能力。使用者可以透過簡單的提示詞來引導模型生成所需的圖片，這樣的設計使得即使是沒有專業背景的使用者也能輕鬆上手。效能方面，生成圖片的速度取決於 API 的響應時間，通常在幾秒鐘內完成，但在高峰期可能會延遲。設計上，選擇 Python 作為開發語言是因為其在數據科學和機器學習領域的廣泛應用，這樣的選擇使得專案的依賴樹相對簡單，降低了維護成本。技術風險方面，對 OpenAI API 的依賴意味著若未來 API 政策變更，可能會影響專案的持續運行。整合方面，這個專案可以輕鬆地與現有的 Python 生態系統整合，特別是在數據處理和機器學習方面，使用者可以輕鬆地將其納入到現有的工作流中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件品質良好，提供了清晰的使用說明和範例。安裝過程相對順暢，無明顯坑點。文件目前僅提供英文版本，可能對非英語使用者造成障礙。
+> README 文件提供了多語言版本，並且有基本的使用說明，但缺乏詳細的範例。安裝過程相對順暢，但需要注意 API 金鑰的配置。整體而言，對於新手來說，可能需要花一些時間來熟悉提示詞的使用和生成流程。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供高品質的提示詞，能夠快速生成專業圖像。
-> - 社群活躍，持續更新內容。
-> - 簡單易用，適合各類型的創作者。
+> - 提供多樣化的提示詞，適合不同場景使用。
+> - 社群支持的實例豐富，能夠幫助用戶快速上手。
+> - 簡單的 API 調用，降低了使用門檻。
 
 > [!danger] 缺點
-> - 生成結果可能不如預期，需調整提示詞。
-> - 目前僅支援 Python，對其他語言的支持有限。
-> - 仍在 beta 階段，可能存在不穩定性。
+> - 對提示詞質量依賴較高，可能需要多次調整才能達到理想效果。
+> - 目前的問題解決率較低，社群支持可能不夠及時。
+> - 需要有效的 OpenAI API 金鑰，增加了使用成本。
 
 > [!warning] 注意事項
-> - 目前僅支援 Python 環境。
-> - 對於複雜的提示詞，生成結果可能不如預期。
-> - 需要穩定的網路連接以使用 OpenAI API。
-> - 目前仍在 beta 階段，可能會有不穩定的情況。
+> - 需要有效的 OpenAI API 金鑰才能運行。
+> - 生成圖片的質量依賴於提示詞的質量，可能需要多次調整。
+> - 目前的問題解決率較低，社群支持可能不夠及時。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色生成，而本專案則提供多樣化的提示詞，適用於多種場景。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供的功能較為單一，主要針對特定用途，而本專案則涵蓋更廣泛的應用。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | 專注於文本生成，而本專案則專注於圖像生成，功能定位不同。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成角色精靈，適合遊戲開發，但不如本專案多樣化。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更專業的設計工具，但學習曲線較陡，適合有經驗的設計師。 |
 
 ## 替代方案決策
 
@@ -206,16 +220,16 @@ python generate_image.py --prompt 'your prompt here'
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| DALL-E | 專注於文本到圖像的生成，並且提供更為廣泛的生成選項，而本專案則專注於提供高品質的提示詞。 | 如果需要更高的圖像生成自由度和多樣性，則應選擇 DALL-E。 | medium，因為需要重新學習其 API 和提示詞結構。 |
-| Midjourney | 專注於藝術風格的圖像生成，而本專案則提供更為實用的提示詞設計。 | 如果你的需求是生成藝術風格的圖像，則應選擇 Midjourney。 | medium，因為需要調整生成風格和提示詞。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成角色精靈，使用 C++ 實作，記憶體用量較少，但功能範圍較窄。 | 如果你的專案專注於遊戲開發，並需要生成角色精靈，這個工具會更合適。 | medium，因為需要重新調整生成邏輯和提示詞設計。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更專業的設計工具，使用 JavaScript 實作，適合有經驗的設計師。 | 如果你需要更高的自定義能力和專業設計功能，這個工具會更適合。 | high，因為需要重新學習工具的使用和整合方式。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **awesome-gpt-image-2-prompts** | **DALL-E** | **Midjourney** |
+> | 維度 | **awesome-gpt-image-2-prompts** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於文本到圖像的生成，並且提供更為廣泛的生成選項，而本專案則專注於提供高品質的提示詞。 | 專注於藝術風格的圖像生成，而本專案則提供更為實用的提示詞設計。 |
-> | 遷移成本 | - | medium，因為需要重新學習其 API 和提示詞結構。 | medium，因為需要調整生成風格和提示詞。 |
-> | 適用場景 | 主要場景 | 如果需要更高的圖像生成自由度和多樣性，則應選擇 DALL-E | 如果你的需求是生成藝術風格的圖像，則應選擇 Midjourn |
+> | 技術路線 | 本專案 | 專注於生成角色精靈，使用 C++ 實作，記憶體用量較少，但功能範圍較窄。 | 提供更專業的設計工具，使用 JavaScript 實作，適合有經驗的設計師。 |
+> | 遷移成本 | - | medium，因為需要重新調整生成邏輯和提示詞設計。 | high，因為需要重新學習工具的使用和整合方式。 |
+> | 適用場景 | 主要場景 | 如果你的專案專注於遊戲開發，並需要生成角色精靈，這個工具會更 | 如果你需要更高的自定義能力和專業設計功能，這個工具會更適合。 |
 
 ## 成熟度評估
 
@@ -226,44 +240,44 @@ python generate_image.py --prompt 'your prompt here'
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人項目試用，不建議用於生產環境的核心功能。
+> 適合小型專案試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 生成的圖像有時不符合預期，特別是對於複雜提示詞
-  - 解法：調整提示詞以提高生成準確性
-- **[HIGH]** 在高流量時，API 響應時間可能會延遲
-  - 解法：考慮使用緩存機制來減少請求頻率
-- [MEDIUM] 目前僅支援 Python，對其他語言的支持有限
-  - 解法：使用 Python 進行開發，或尋找其他語言的替代方案
+- **[HIGH]** API 金鑰配置不當可能導致無法生成圖片
+  - 解法：確保在環境變數中正確設置 API 金鑰
+- [MEDIUM] 提示詞不夠具體可能導致生成結果不理想
+  - 解法：多次調整提示詞，並參考社群實例
+- [MEDIUM] 高峰期 API 響應時間可能延遲
+  - 解法：避開高峰時段使用，或考慮使用緩存機制
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型創業團隊的市場行銷部門 | 非常適合 | 能夠快速生成高品質的廣告圖像，提升行銷效率。 |
-| 獨立插畫師的個人項目 | 適合 | 提供高品質的提示詞，幫助插畫師快速完成作品。 |
-| 大型企業的產品設計團隊 | 普通 | 雖然能夠生成圖像，但對於需求較高的企業可能不夠靈活。 |
-| 學術研究團隊 | 不適合 | 主要針對商業用途，對於學術需求的支持有限。 |
+| 小型創業團隊的市場推廣 | 非常適合 | 能快速生成多樣化的市場推廣圖片，提升效率。 |
+| 大型企業的產品設計部門 | 普通 | 雖然能提供靈感，但對於高要求的設計可能不夠精細。 |
+| 個人藝術創作 | 非常適合 | 能夠快速生成多樣化的藝術作品，激發創意。 |
+| 需要高自定義的商業應用 | 不適合 | 對於需要特定設計風格的應用，可能無法滿足需求。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
+| 學習時間 | ~5 小時 |
 | 整合時間 | ~3 小時 |
-| 維護負擔 | low |
+| 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，3 小時整合，能夠快速生成高品質圖像，值得投入。
+> 花 5 小時學習、3 小時整合，得到快速生成圖片的能力，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具本身不需要高權限，僅依賴 OpenAI API，並不存取敏感資料。
+> 低風險：該工具本身不需要高權限，僅需 API 金鑰，並不存取敏感資料。依賴於 OpenAI 的 API，需注意其安全性和穩定性。
 
 ## 健康度儀表板
 
@@ -328,41 +342,41 @@ python generate_image.py --prompt 'your prompt here'
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 973 |
-| Open Issues | 11 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-04-29 |
+| Forks | 1.1k |
+| Open Issues | 12 |
+| Issue 解決率 | 8% (1 closed) |
+| 最後推送 | 2026-04-30 |
 | 建立日期 | 2026-04-18 |
 | 官方網站 | [Link](https://evolink.ai/gpt-image-2-prompts) |
-| Repo 大小 | 85.4 MB |
+| Repo 大小 | 87.5 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/EvoLinkAI/awesome-gpt-image-2-prompts) |
 | Topics | `api` `awesome-list` `chatgpt` `generative-` `gpt-image-2` `gpt-image-2-api` `gpt-image-2-prompts` `image-generation` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@EvoLinkAI](https://github.com/EvoLinkAI) | 71 |
+> | [@EvoLinkAI](https://github.com/EvoLinkAI) | 79 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和新增提示詞。
+**社群活躍度**：社群活躍度中等，問題解決率較低。
 **連結**：[文件](https://evolink.ai/gpt-image-2-prompts)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-27 ~ 2026-04-29）
-> **活躍天數** 3 天 · **最新 commit** Protect localized README news and menu sync
+> [!abstract] 最近 10 次 commit（2026-04-29 ~ 2026-04-30）
+> **活躍天數** 2 天 · **最新 commit** point overview menus to category readmes
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
+> | [#15](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/issues/15) | Image in case is failed | 0 | 0 |
 > | [#14](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/issues/14) | 做了一个快速检索的浏览器插件 | 0 | 0 |
 > | [#13](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/issues/13) | Prompt Ảnh | 0 | 1 |
 > | [#12](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/issues/12) | one | 0 | 3 |
 > | [#11](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/issues/11) | 有关情侣的提示词 | 0 | 0 |
-> | [#9](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts/issues/9) | Case 60 image does not match the prompt | 0 | 2 |
 
 ## README 摘錄
 
@@ -386,7 +400,62 @@ python generate_image.py --prompt 'your prompt here'
 > [](README_ru.md)
 > 
 > 
-> ### Case 175: [Blue Tears cocktail tutorial infographic poster](https://x.com/cellinlab/status/2049460927121244510) (by [@cellinlab](https://x.com/cellinlab))
+> ## 🧪 Comparison & Community Examples
+> 
+> > See all cases → [cases/comparison.md](cases/comparison.md)
+> 
+> 
+> ## 📑 Menu
+> 
+> - [🍌 Introduction](#introduction)
+> - [📰 News](#news)
+> - [📑 Menu](#menu)
+> - [🛒 E-commerce Cases](#e-commerce-cases)
+> - [📣 Ad Creative Cases](#ad-creative-cases)
+> - [🍌 Portrait & Photography Cases](#portrait-photography-cases)
+> - [🎨 Poster & Illustration Cases](#poster-illustration-cases)
+> - [🧍 Character Design Cases](#character-design-cases)
+> - [📱 UI & Social Media Mockup Cases](#ui-social-media-mockup-cases)
+> - [🧪 Comparison & Community Examples](#comparison-community-examples)
+> - [🙏 Acknowledge](#acknowledge)
+> - [Case 151: E-commerce Main Image - Miniature Diorama Skincare Advertisement](#case-151-e-commerce-main-image---miniature-diorama-skincare-advertisement)
+> - [Case 160: E-commerce Main Image - 9-Panel Product TVC Storyboard](#case-160-e-commerce-main-image---9-panel-product-tvc-storyboard)
+> - [Case 163: Burger hero image plus 9-cell ad storyboard](#case-163-burger-hero-image-plus-9-cell-ad-storyboard)
+> - [Case 144: Luxury Chronograph Watch Ad](#case-144-luxury-chronograph-watch-ad)
+> - [Case 150: Luxury Miniature Dubai City Model](#case-150-luxury-miniature-dubai-city-model)
+> - [Case 169: Luxury chocolate campaign system](#case-169-luxury-chocolate-campaign-system)
+> - [Case 1: Convenience Store Neon Portrait](#case-1-convenience-store-neon-portrait)
+> - [Case 84: Ink-Etched Family Portrait](#case-84-ink-etched-family-portrait)
+> - [Case 99: Dreamy Underwater Woman With Translucent Fish](#case-99-dreamy-underwater-woman-with-translucent-fish)
+> - [Case 100: Monochrome Glitch Profile Portrait](#case-100-monochrome-glitch-profile-portrait)
+> - [Case 101: Basketball Boy Motion Sequence](#case-101-basketball-boy-motion-sequence)
+> - [Case 102: Golden Hour Street Side-Profile Portrait](#case-102-golden-hour-street-side-profile-portrait)
+> - [Case 3: Chengdu Food Map Illustration](#case-3-chengdu-food-map-illustration)
+> - [Case 79: Peacock Botanical Vintage Symmetrical Art Print](#case-79-peacock-botanical-vintage-symmetrical-art-print)
+> - [Case 174: New York across two centuries cinematic poster](#case-174-new-york-across-two-centuries-cinematic-poster)
+> - [Case 175: Fitness Boxing Campaign Collage Poster](#case-175-fitness-boxing-campaign-collage-poster)
+> - [Case 2: Persona5 Character Reference Card](#case-2-persona5-character-reference-card)
+> - [Case 7: Mecha Girl Sea-City Key Visual](#case-7-mecha-girl-sea-city-key-visual)
+> - [Case 11: GTA 6 in Bangalore Flower Market](#case-11-gta-6-in-bangalore-flower-market)
+> - [Case 1: One-Prompt UI Design Generation](#case-1-one-prompt-ui-design-generation)
+> - [Case 38: Cyberpunk Neon UI Design System](#case-38-cyberpunk-neon-ui-design-system)
+> - [Case 105: Multi-Panel Image Board Template](#case-105-multi-panel-image-board-template)
+> - [Case 106: Personal Color Analysis Graphic Board](#case-106-personal-color-analysis-graphic-board)
+> - [Case 107: Futuristic Hall Fashion Shot Sequence](#case-107-futuristic-hall-fashion-shot-sequence)
+> - [Case 108: High-Fashion Beverage Campaign Board](#case-108-high-fashion-beverage-campaign-board)
+> - [Case 35: Sam Altman Bear Selfie](#case-35-sam-altman-bear-selfie)
+> - [Case 41: Generate an image of the most significant event of 2020](#case-41-generate-an-image-of-the-most-significant-event-of-2020)
+> - [Case 68: Naturalist-Style Food Specimen Cross-Section](#case-68-naturalist-style-food-specimen-cross-section)
+> - [Case 69: 视觉品牌拆解图](#case-69-视觉品牌拆解图)
+> - [Case 70: Apartment Drama Animation Storyboard Sheet](#case-70-apartment-drama-animation-storyboard-sheet)
+> 
+> 
+> ## 🛒 E-commerce Cases
+> 
+> > See all cases → [cases/ecommerce.md](cases/ecommerce.md)
+> 
+> 
+> ### Case 151: [E-commerce Main Image - Miniature Diorama Skincare Advertisement](https://x.com/Strength04_X/status/2048074514278563949) (by [@Strength04_X](https://x.com/Strength04_X))
 > 
 > | Output |
 > | :----: |
@@ -395,31 +464,11 @@ python generate_image.py --prompt 'your prompt here'
 > **Prompt:**
 > 
 > ```
-> 试着帮我生成调制一杯蓝色眼泪鸡尾酒（配料流程你自己发挥想象，但是要写清楚确保可复现）的流程教学图和概念设计宣传图，轻奢酒咖海报风格，横版。
+> A hyper-realistic miniature diorama product advertisement featuring an oversized luxury skincare pump bottle labeled "LUXEVEIL Skin Science – Radiance Nourishing Body Lotion" in cream/beige with a polished gold pump top, placed on a circular platform. Tiny figurine construction workers dressed in yellow coveralls and white hard hats swarm around the bottle climbing scaffolding, painting the bottle with rollers, operating a tower crane, working near industrial tanks and pipework, and unloading a miniature flatbed truck. The scene includes metal scaffolding structures, industrial silos, orange traffic cones, wooden barricades, and storage barrels. The overall color palette is warm beige, cream, gold, and mustard yellow. Studio photography style with soft diffused lighting, no shadows, clean beige background. The concept metaphorically shows workers "crafting" or "building" the perfect lotion. Tilt-shift miniature aesthetic, ultra-detailed, commercial product photography, 8K resolution, photorealistic CGI render.
 > ```
 > 
 > 
-> ## Comparison & Community Examples
-> 
-> 
-> ## Introduction
-> 
-> Welcome to the awesome-gpt-image-2-prompts repository! 🤗
-> 
-> **We collect high-quality prompts and image examples for GPT-Image-2 across portraits, posters, character sheets, UI mockups, and community experiments.**
-> 
-> Most cases in this repository are curated from X/Twitter, creator communities, public demos, and shared experiments.
-> 
-> Try it on Evolink: [GPT-Image-2](https://evolink.ai/gpt-image-2-prompts?utm_source=github&utm_medium=readme&utm_campaign=awesome-gpt-image-2-prompts)
-> 
-> If you find this useful, consider giving it a star. ⭐
-> 
-> > [!NOTE]
-> > This repository focuses on reusable prompt patterns, reference cases, and task-specific examples for GPT-Image-2 on Evolink.
-> > Recent prompt-only updates are also tracked in `gpt_image_2_prompt.json`.
-> 
-> 
-> ### Case 20: [Magazine Travel Guide Feature Article](https://x.com/andis13/status/2047204384811921764) (by [@andis13](https://x.com/andis13))
+> ### Case 160: [E-commerce Main Image - 9-Panel Product TVC Storyboard](https://x.com/Magncsans/status/2047876253898903594) (by [@Magncsans](https://x.com/Magncsans))
 > 
 > | Output |
 > | :----: |
@@ -428,11 +477,11 @@ python generate_image.py --prompt 'your prompt here'
 > **Prompt:**
 > 
 > ```
-> Create image of Magazine feature article [travel] guide page, cute, information dense photo book style magazine feature article page. Add all necessary sections, tips, recommendations, information. add photos for any sections and recommendations if you like. Place the attached person at the precise location of [city, country]. Seamlessly blend the attached person as if they are sightseeing. Approach this task with the understanding that this is a critical, information rich page that will significantly influence visitor numbers, text accuracy is important. Fully use the entire [9:16] page. NEGATIVE PROMPT: coordinate texts @swiat_ai @ProfitAII
+> Using the provided reference image, transform the single casual product photo into a polished e-commerce TVC storyboard board for a {argument name="video duration" default="15-second"} ad in a {argument name="aspect ratio" default="9:16"} vertical format, presented as a 9-panel grid. Keep the same blue-and-white ceramic ashtray as the product base, but restage it across cinematic advertising shots with warm premium lighting, shallow depth of field, and a refined lifestyle desktop environment. Add a dark storyboard layout with Chinese titles and timing for each panel. Include exactly 9 scenes: 1) environment-establishing wide shot with desk, books, window, and the product placed in context; 2) hero product medium shot on the table; 3) extreme close-up of the blue floral craftsmanship pattern; 4) use case showing a hand placing a cigarette into the ashtray with visible smoke; 5) top-down capacity display showing multiple cigarette butts inside; 6) cleaning scene under running water in a sink with a hand holding the product; 7) bottom-detail close-up showing the underside and anti-slip pads; 8) mood/lifestyle scene at night with the product on a desk, smoke rising, and ambient lamp light; 9) brand closing frame with the product as the hero plus Chinese marketing text. Add the overall header text “产品TVC分镜脚本(15秒 / 9:16竖屏 / 9宫格)” and a product subtitle naming it {argument name="product name" default="青花瓷烟灰缸"}. Give each of the 9 panels a Chinese scene title and timestamp, plus small descriptive Chinese copy beneath each image in the style of a professional commercial shot list. Use premium, realistic commercial photography throughout, consistent product identity, elegant Chinese aesthetic, and a clean high-end storyboard presentation.
 > ```
 > 
 > 
-> ### Case 3: [Gal Game Character Introduction Page](https://x.com/09lyco/status/2045281845391323175) (by [@09lyco](https://x.com/09lyco))
+> ### Case 163: [Burger hero image plus 9-cell ad storyboard](https://x.com/Gdgtify/status/2049449869530775877) (by [@Gdgtify](https://x.com/Gdgtify))
 > 
 > | Output |
 > | :----: |
@@ -441,89 +490,11 @@ python generate_image.py --prompt 'your prompt here'
 > **Prompt:**
 > 
 > ```
-> 最新モデルの画像生成ツールを使用して、
-> このちびキャライラストと立ち絵を使って本物のサイトページのようにキャラクター紹介ページ風イラストを作ってください。 （紹介ページとして使ってもおかしくないもの）
-> ギャルゲーのキャラクター紹介ページをイメージした高品質なもの。 顔の差分なども乗っている、CGイラストが存在する。ちびキャラが存在する。
-> 
-> 「ここに自己紹介」
-> 
-> 名前:（ここに名前） 
-> イメージカラー:（ここに色） 
-> 身長:（ここに身長）cm 
-> 体重:（ここに体重）kg
-> キャッチコピー:"「ここにセリフ」"
-> ```
-> 
-> 
-> ### Case 40: [Japanese AI Game Dev Overview Slide Prompt](https://x.com/ailovedirector/status/2046905387274891296) (by [@ailovedirector](https://x.com/ailovedirector))
-> 
-> | Output |
-> | :----: |
-> |  |
-> 
-> **Prompt:**
-> 
-> ```
-> 横長のパワポ画像ここで生成してみて　どのモデル使ってるか判定するから、今のAIゲーム開発の概要をまとめた1枚パワポで　日本語で
-> 
-> ゲーム開発の技術に関して、工数ベースでどこにパワーかかるかの分析資料といかに量産が大事かについての説明とかのパワポ画も作って
-> ```
-> 
-> **Prompt:**
-> ```
-> a Final Fantasy VIII Remake gameplay screenshot at next-gen fidelity (FF16 / GTA6 / RE9).
-> ```
-> 
-> ---
-> 
-> **Prompt:**
-> ```
-> Create a commercial ad from the storyboard @[image1]
-> ```
-> 
-> ---
-> 
-> 
-> ### Case 161: [Parent-Child Miscommunication Infographic](https://x.com/sarinaashapi/status/2048307780864606708) (by [@sarinaashapi](https://x.com/sarinaashapi))
-> 
-> | Output |
-> | :----: |
-> |  |
-> 
-> **Prompt:**
-> 
-> ```
-> {"type":"Japanese infographic","style":"simple, easy-to-understand flat vector diagram, clean white background, rounded light-gray outer frame, minimal pastel color palette, presentation-slide design, clear hierarchy, lots of whitespace, modern sans-serif Japanese typography","canvas":{"aspect_ratio":"16:9"},"headline":{"text":"{argument name=\"headline text\" default=\"親子のすれ違いは、記録があるかないかで起こる\"}","position":"top center","size":"large bold black"},"layout":{"structure":"2 side-by-side rounded panels beneath the headline","sections":[{"title":"記録がない場合(ズレる)","position":"left","count":8,"header_color":"muted blue-gray","panel_border":"light gray","labels":["親の記憶","子どもの記憶","あのとき決まったよね","まだ考えてたのに","ズレが大きくなる","志望校がコロコロ変わる","理由が『なんとなく』","言ってることが違う","関係がギクシャク","現実を見てほしい","ちゃんと決めてほしい","口を出しすぎると関係が悪くなる"],"contents":{"top_left":{"type":"parent icon with thought bubble","icon_color":"blue","caption":"親の記憶","bubble_text":"あのとき\n決まったよね"},"top_right":{"type":"child icon with thought bubble","icon_color":"pink","caption":"子どもの記憶","bubble_text":"まだ考えてたのに"},"center":{"type":"horizontal double-headed arrow","color":"blue-gray"},"bottom_center":{"type":"downward arrow leading to burst shape","color":"light gray","burst_text":"ズレが\n大きくなる"},"bottom_left":{"type":"rounded note box","bullet_count":4,"bullets":["志望校がコロコロ変わる","理由が『なんとなく』","言ってることが違う","関係がギクシャク"]},"bottom_right":{"type":"rounded note box","bullet_count":3,"bullets":["現実を見てほしい","ちゃんと決めてほしい","口を出しすぎると関係が悪くなる"]}}},{"title":"記録がある場合(ズレにくい)","position":"right","count":7,"header_color":"mustard yellow","panel_border":"light yellow","labels":["親の認識","子どもの認識","記録"],"contents":{"top_left":{"type":"parent icon with thought bubble containing document symbol","icon_color":"blue","caption":"親の認識"},"top_right":{"type":"child icon with thought bubble containing document symbol","icon_color":"pink","caption":"子どもの認識"},"center":{"type":"horizontal double-headed arrow","color":"mustard yellow"},"bottom_center":{"type":"circular record icon with document symbol","outline_color":"mustard yellow","text":"記録"},"bottom_left_connector":{"type":"curved arrow from parent to record","color":"blue"},"bottom_right_connector":{"type":"curved arrow from child to record","color":"pink"}}}],"spacing":"balanced, symmetrical"},"visual_language":{"icons":"generic human bust icons and simple document line icons","emphasis":"contrast the left panel's misunderstanding with the right panel's shared record","mood":"educational, calm, practical"},"text_language":"Japanese","render_quality":"crisp vector edges, infographic suitable for social media educational posts"}
-> ```
-> 
-> 
-> ## News
-> 
-> - **April 29, 2026:** Added 22 new GPT-Image-2 prompt cases across the review batches (3 e-commerce, 3 ad creative, 4 portrait, 2 character, 9 poster, 1 comparison), synced localized prompt entries for Cases 102 and 103, and incorporated the broader valid keep-set pass
-> - **April 26, 2026:** Added 9 new GPT-Image-2 prompt cases (1 character, 7 poster, 1 ui)
-> - **April 25, 2026:** Added 81 new GPT-Image-2 prompt cases (2 character, 20 portrait, 42 poster, 17 ui)
-> - **April 24, 2026:** Added 19 new GPT-Image-2 prompt cases (6 comparison, 6 poster, 7 ui)
-> - **April 23, 2026:** Added 5 new GPT-Image-2 prompt cases (5 ui)
-> - **April 20, 2026:** Added 2 new GPT-Image-2 prompt cases (1 character, 1 poster)
-> - **April 19, 2026:** Added 5 new GPT-Image-2 prompt cases (3 poster, 2 ui)
-> - **April 17, 2026:** Added 1 new GPT-Image-2 prompt cases (1 poster)
-> - **April 16, 2026:** Added 1 new GPT-Image-2 prompt cases (1 poster)
-> - **April 23, 2026:** Standardized case titles in `README.md` and all localized README files, including menu entries, anchors, and case headings
-> - **April 21, 2026:** Categorized 48 new prompt cases into the gallery sections and downloaded linked output images
-> - **April 21, 2026:** Added 12 new GPT-Image-2 prompts across portrait, poster, UI, and comparison cases
-> - **April 20, 2026:** Added 10 newly curated GPT-Image-2 prompts with local image assets and README updates.
-> - **April 19, 2026:** Added 10 new GPT-Image-2 prompts across poster, UI, and comparison cases
-> - **April 18, 2026:** First repository release with curated GPT-Image-2 case set
-> 
-> 
-> ## E-commerce Cases
-> 
-> 
-> ### Case 113: [E-comme
+> Prompt 1: Create a cinematic hero image of a gourmet cheeseburger on a dark stone surface with glossy brioche bun, melted cheese, crisp lettuce, tomato, grilled patty, sauce, realistic texture, appetizing steam, warm side light, shallow depth of field, premium food commercia
 
 ## 延伸閱讀
 
-相關概念：[[生成對抗網路]] · [[自然語言處理]] · [[圖像生成]]
+相關概念：[[生成對抗網絡]] · [[深度學習]] · [[自然語言處理]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[inspatio--worldfm|inspatio/worldfm]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]]
 
@@ -567,7 +538,7 @@ python generate_image.py --prompt 'your prompt here'
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["生成對抗網路","自然語言處理","圖像生成"];
+> const concepts = ["生成對抗網絡","深度學習","自然語言處理"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "EvoLinkAI--awesome-gpt-image-2-prompts" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
