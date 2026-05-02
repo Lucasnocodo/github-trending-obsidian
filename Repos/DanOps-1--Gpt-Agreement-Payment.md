@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "ChatGPT Plus/Team/Pro 订阅协议端到端重放工具集 · hCaptcha 视觉求解器 · 反欺诈机制实证研究 / End-to-end protocol replay toolkit for ChatGPT Plus/Team/Pro subscription with from-scratch hCaptcha solver and empirical anti-fraud research"
 homepage: ""
-stars: 780
-stars_per_day: 260
-forks: 358
-open_issues: 1
+stars: 877
+stars_per_day: 219
+forks: 394
+open_issues: 6
 created: 2026-04-27
-pushed_at: 2026-04-30
+pushed_at: 2026-05-01
 first_seen: 2026-05-01
 week: "2026-W18"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "提供 ChatGPT 订阅协议的端到端重放工具，包含 hCaptcha
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-04"
+appearances: 2
+next_review: "2026-05-05"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-01"
-star_history: "2026-05-01:779,2026-05-01:780"
+star_history: "2026-05-01:779,2026-05-01:780,2026-05-02:877"
 tags:
   - github
   - "category/安全"
@@ -890,4 +890,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-02|2026-05-02]] — 再次上榜，877 stars
 - [[2026-05-01|2026-05-01]] — 首次收錄，779 stars

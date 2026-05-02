@@ -7,12 +7,12 @@ language: N/A
 license: MIT
 description: "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库 - 329个案例逆向工程，13套工业级模板"
 homepage: ""
-stars: 2562
-stars_per_day: 512
-forks: 392
+stars: 2989
+stars_per_day: 498
+forks: 450
 open_issues: 3
 created: 2026-04-25
-pushed_at: 2026-04-30
+pushed_at: 2026-05-02
 first_seen: 2026-04-28
 week: "2026-W18"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供工業級提示詞引擎與模板庫，幫助用戶穩定、可
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-05-04"
+appearances: 5
+next_review: "2026-05-05"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-28"
-star_history: "2026-04-28:1274,2026-04-29:1716,2026-04-30:2149,2026-05-01:2562"
+star_history: "2026-04-28:1274,2026-04-29:1716,2026-04-30:2149,2026-05-01:2562,2026-05-02:2989"
 tags:
   - github
   - "category/其他"
@@ -768,6 +768,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-02|2026-05-02]] — 再次上榜，3.0k stars
 - [[2026-05-01|2026-05-01]] — 再次上榜，2.6k stars
 - [[2026-04-30|2026-04-30]] — 再次上榜，2.1k stars
 - [[2026-04-29|2026-04-29]] — 再次上榜，1.7k stars

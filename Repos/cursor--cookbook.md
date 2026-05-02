@@ -7,12 +7,12 @@ language: TypeScript
 license: N/A
 description: ""
 homepage: ""
-stars: 2639
-stars_per_day: 880
-forks: 291
-open_issues: 15
+stars: 2965
+stars_per_day: 741
+forks: 340
+open_issues: 16
 created: 2026-04-27
-pushed_at: 2026-04-29
+pushed_at: 2026-05-01
 first_seen: 2026-04-30
 week: "2026-W18"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供 Cursor SDK 的範例，幫助開發者快速上手。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-05-04"
+appearances: 3
+next_review: "2026-05-05"
 contributor_count: 4
 engagement: "medium"
 issue_close_rate: 6
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-30"
-star_history: "2026-04-30:1427,2026-04-30:1501,2026-05-01:2631,2026-05-01:2639"
+star_history: "2026-04-30:1427,2026-04-30:1501,2026-05-01:2631,2026-05-01:2639,2026-05-02:2965"
 tags:
   - github
   - "category/開發工具"
@@ -707,5 +707,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-02|2026-05-02]] — 再次上榜，3.0k stars
 - [[2026-05-01|2026-05-01]] — 再次上榜，2.6k stars
 - [[2026-04-30|2026-04-30]] — 首次收錄，1.4k stars
