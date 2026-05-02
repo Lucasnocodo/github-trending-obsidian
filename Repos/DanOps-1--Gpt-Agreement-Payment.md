@@ -7,8 +7,8 @@ language: Python
 license: MIT
 description: "ChatGPT Plus/Team/Pro 订阅协议端到端重放工具集 · hCaptcha 视觉求解器 · 反欺诈机制实证研究 / End-to-end protocol replay toolkit for ChatGPT Plus/Team/Pro subscription with from-scratch hCaptcha solver and empirical anti-fraud research"
 homepage: ""
-stars: 877
-stars_per_day: 219
+stars: 878
+stars_per_day: 220
 forks: 394
 open_issues: 6
 created: 2026-04-27
@@ -16,8 +16,8 @@ pushed_at: 2026-05-01
 first_seen: 2026-05-01
 week: "2026-W18"
 month: "2026-05"
-category: "安全"
-subcategory: "反欺詐"
+category: "開發工具"
+subcategory: "自動化"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-01
-use_case: "提供 ChatGPT 订阅协议的端到端重放工具，包含 hCaptcha 求解器及反欺诈机制研究。"
+use_case: "提供 ChatGPT Plus/Team/Pro 订阅协议的端到端重放工具及 hCaptcha 视觉求解器。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,18 +34,18 @@ appearances: 2
 next_review: "2026-05-05"
 contributor_count: 1
 engagement: "high"
-issue_close_rate: 50
-repo_size_kb: 567
+issue_close_rate: 14
+repo_size_kb: 565
 readme_length: 6627
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-01"
-star_history: "2026-05-01:779,2026-05-01:780,2026-05-02:877"
+star_history: "2026-05-01:779,2026-05-01:780,2026-05-02:877,2026-05-02:878"
 tags:
   - github
-  - "category/安全"
+  - "category/開發工具"
   - "lang/python"
   - "topic/adversarial_ml"
   - "topic/anti_fraud"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "Gpt-Agreement-Payment"
   - "DanOps-1/Gpt-Agreement-Payment"
-  - "提供 ChatGPT 订阅协议的端到端重放工具，包含 hCaptcha 求解器及反欺诈机制研究。"
+  - "提供 ChatGPT Plus/Team/Pro 订阅协议的端到端重放工具及 hCaptcha 视觉求解器。"
 ---
 
 # Gpt-Agreement-Payment
 
-**780** stars · **260** stars/天 · 建立 3 天前 · Python · MIT
+**878** stars · **220** stars/天 · 建立 4 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/DanOps-1--Gpt-Agreement-Payment");
@@ -78,20 +78,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `adversarial-ml` `anti-fraud` `bug-bounty` `captcha-solver` `chatgpt` `ctf-tools` `hcaptcha-solver` `mitmproxy` `playwright` `protocol-replay` `stripe` `vlm`
 
 > [!summary] 一句話摘要
-> 提供 ChatGPT 订阅协议的端到端重放工具，包含 hCaptcha 求解器及反欺诈机制研究。
+> 提供 ChatGPT Plus/Team/Pro 订阅协议的端到端重放工具及 hCaptcha 视觉求解器。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (260 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (220 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 對支付協議和反欺詐技術有深入研究需求的開發者。
-> **一句話重點** 這個專案不僅提供了支付協議的重放工具，還深入研究了反欺詐機制，對於安全研究者來說具備極高的實用價值。
+> **適合** 需要自動化 ChatGPT 付費服務測試的安全研究員或開發者。
+> **一句話重點** 這個專案不僅提供了完整的支付流程重放，還包含了反欺詐的實證研究，這在市場上是相對獨特的。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/DanOps-1--Gpt-Agreement-Payment");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "反欺詐" && p.file.name !== "DanOps-1--Gpt-Agreement-Payment" && p.status !== "archived")
+>     .where(p => p.subcategory === "自動化" && p.file.name !== "DanOps-1--Gpt-Agreement-Payment" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -102,42 +102,44 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 反欺詐 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~8h · **綁定風險** medium
-> **結論** 花 8 小時學習，4 小時整合，得到高效的支付協議測試工具，值得投入。
+> **結論** 花 8 小時學習，4 小時整合，能夠自動化測試流程，值得有經驗的開發者考慮。
 
 > [!abstract] 核心創新
-> 提供了一個從零實現的 hCaptcha 視覺求解器，能夠處理多種題型。
+> 提供完整的 ChatGPT Plus/Team/Pro 訂閱協議重放流程，並具備自動化的 hCaptcha 求解器。
 
 ## 專案簡介
 
-這個專案是一個針對 ChatGPT Plus/Team/Pro 訂閱協議的端到端重放工具，能夠透過抓包技術重建整個支付流程，從 Stripe Checkout 到 PayPal 協議授權，最終獲得 OAuth refresh_token。其核心賣點在於提供了一個從零開始的 hCaptcha 視覺求解器，能夠處理 12 種已知的 hCaptcha 題型，並結合 Playwright 進行自動化操作，這使得整個流程能夠在無人值守的情況下運行數周。技術上，專案使用 Python 作為後端語言，並依賴 Playwright 進行瀏覽器自動化，這樣的選擇使得它能夠在多平台上運行，並且能夠快速適應變化的網站結構。與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，這個工具的獨特之處在於它的 hCaptcha 求解器和反欺詐數據的實證研究，這些功能在面對高強度的反欺詐機制時提供了更高的成功率。實際使用中，這個工具的配置和運行需要一定的技術門檻，使用者需要具備基本的 Python 環境配置能力，並且需要一個可用的 PayPal 帳號和代理服務。雖然這個工具的設計目的是為了研究和測試，但其潛在的法律風險不容忽視，使用者需自行承擔所有法律責任。總體來看，這是一個針對特定需求的高效工具，適合對支付協議和反欺詐技術有深入研究需求的開發者。
+這個專案是一個針對 ChatGPT Plus/Team/Pro 訂閱協議的端到端重放工具，能夠從 Stripe Checkout 到 PayPal 授權的整條鏈路進行操作。使用者只需提供一個有效的支付憑證和代理，便可透過命令行獲取 OAuth 的 refresh_token。專案的核心機制包括一個從零實現的 hCaptcha 视觉求解器，利用 VLM 和 OpenCV 進行題型識別，並且支持多種已知的 hCaptcha 題型。這樣的設計使得工具能夠在自動化的情況下，持續運行數周，並且具備自我修復的能力。
 
-**技術棧**：`Python` · `Vue` · `TypeScript` · `CSS` · `HTML`
+技術上，專案使用 Python、Vue 和 TypeScript，並依賴 Playwright 和 mitmproxy 進行瀏覽器自動化和協議抓包，這使得整體架構相對複雜但功能強大。與其他類似工具相比，如 0x0funky/agent-sprite-forge，這個專案不僅提供了完整的支付流程重放，還包含了反欺詐的實證研究，這在市場上是相對獨特的。使用者需要注意的是，這個工具並不適合新手，因為配置過程需要一定的技術背景，並且存在一定的法律風險。整體來看，這是一個針對特定需求的高效工具，適合有經驗的開發者使用。
+
+**技術棧**：`Python` · `Vue` · `TypeScript` · `Playwright` · `mitmproxy`
 
 ## 重點功能
 
-- 端到端重放工具 — 支持從 Stripe Checkout 到 PayPal 協議的完整重放流程，獲得 OAuth refresh_token。
-- hCaptcha 視覺求解器 — 獨立實現的求解器，支持 12 種已知題型，並能夠自動化處理。
-- 自愈環 daemon — 支持無人值守運行，能夠自動更換 IP 和清理資源，設計目標是長時間穩定運行。
-- 反欺詐數據研究 — 提供實證數據，分析 IP 字符串級精確指紋和批次關聯延遲封禁的效果。
-- 多種運行模式 — 支持單次、批量、自我交易和守護進程等多種運行模式，靈活應對不同需求。
+- 端到端重放 — 支持從 Stripe Checkout 到 PayPal 的整條支付流程重放。
+- hCaptcha 视觉求解器 — 獨立實現的求解器，支持 12 種題型，使用 VLM 和 OpenCV 進行識別。
+- 自愈環 daemon — 自動管理 IP 和清理資源，設計為無人值守運行。
+- 多種運行模式 — 包含單次、批量、自我經銷和 daemon 模式，滿足不同需求。
+- 詳細文檔 — 提供完整的安裝、配置和操作指南，幫助使用者快速上手。
 
 ## 快速開始
 
-1. 克隆專案並安裝依賴
+1. 安裝後端依賴
 ```bash
-git clone https://github.com/DanOps-1/Gpt-Agreement-Payment && cd Gpt-Agreement-Payment && pip install -r webui/requirements.txt
+pip install -r webui/requirements.txt
 ```
 2. 構建前端
 ```bash
 cd webui/frontend && pnpm i && pnpm build && cd ../..
 ```
-3. 啟動服務
+3. 啟動服務器
 ```bash
 python -m webui.server
 ```
@@ -145,66 +147,67 @@ python -m webui.server
 ## 程式碼範例
 
 ```python
-[
-  "# 前置條件（安裝依賴）",
-  "pip install requests curl_cffi playwright camoufox browserforge mitmproxy pybase64",
-  "# 預期輸出（啟動服務）",
-  "服務啟動，訪問 http://127.0.0.1:8765 進行配置。"
-]
+{
+  "前置條件": "確保已安裝所有依賴",
+  "指令": "xvfb-run -a python pipeline.py --config CTF-pay/config.paypal.json --paypal",
+  "預期輸出": "成功執行後，將生成 OAuth refresh_token，並存儲在 output/results.jsonl 中。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 780 stars（260/天），forks 358（45.9%），這顯示出該專案的高度關注度。作者 DanOps-1 以其在反欺詐和自動化領域的專業知識為背景，提供了一個在現有工具中缺乏的端到端重放解決方案，這對於需要進行支付協議測試的開發者來說是個重要的工具。專案的推出正值對於支付安全和反欺詐技術需求上升的時期，這使得其受到廣泛關注。高達 45.9% 的 forks/stars 比率顯示出許多人對此專案進行了實際的修改和使用，這表明其在社群中的實際應用潛力。
+> 建立 4 天就累積 878 stars（220/天），forks 394（44.9%），顯示出強烈的社群參與。作者 DanOps-1 擁有多個相關專案，顯示其在反欺詐和自動化領域的專業知識。這個專案解決了在使用 ChatGPT 付費服務時的自動化需求，之前的解決方案往往缺乏完整的支付流程重放功能。近期的社群討論和需求激增，促進了這個工具的快速成長。高比例的 forks 代表許多開發者在實際修改和使用，顯示出該專案的實用性和潛力。
 
 ## 適合誰使用
 
-**目標受眾**：對支付協議和反欺詐技術有深入研究需求的開發者。
+**目標受眾**：需要自動化 ChatGPT 付費服務測試的安全研究員或開發者。
 
 > [!example] 使用場景
-> - 安全研究員用它來測試 ChatGPT 的支付流程，因為它能夠快速重放整個支付協議，節省了手動測試的時間。
-> - 開發者用它來驗證 hCaptcha 求解器的準確性，因為它提供了多種題型的解決方案，提升了自動化測試的效率。
-> - 反欺詐專家用它來分析支付系統的安全性，因為它提供了實證數據來支持反欺詐機制的有效性。
+> - 安全研究員用它來測試 ChatGPT 的反欺詐機制，因為能夠提供真實的攻擊場景和數據分析。
+> - 開發者用它來自動化 ChatGPT Plus 訂閱的測試流程，因為手動操作繁瑣且容易出錯。
+> - 研究人員用它來收集 hCaptcha 的解題數據，因為這能幫助他們改進機器學習模型的準確性。
 
 ## 架構分析
 
-專案採用模組化設計，主要由 pipeline.py 負責整個流程的調度，並通過多個子系統協同工作。資料流從用戶輸入開始，經過 hCaptcha 求解、Stripe Checkout 重放、PayPal 協議授權，最終獲得 OAuth refresh_token。這樣的設計使得每個模組可以獨立開發和測試，降低了維護成本。
+該專案採用模組化設計，將整個支付流程分為多個子系統，從而提高了可維護性和擴展性。核心流程由 pipeline.py 負責，通過多個模組進行協作，包括 hCaptcha 求解器、Stripe 重放和 PayPal 授權。這樣的設計使得每個模組可以獨立開發和測試，降低了整體系統的耦合度。
 
-選擇 Python 作為主要語言，因其在自動化和網絡請求處理上的強大能力，但這也導致了代碼的可讀性下降。擴展性方面，雖然目前設計能夠支持長時間運行，但隨著用戶數量的增加，可能會出現性能瓶頸，特別是在高頻率的請求下。整體架構的選擇使得專案在功能上具備了靈活性，但在實際運行中需要考慮到資源的合理配置。
+使用 Playwright 進行瀏覽器自動化，能夠有效模擬人類操作，並且與 mitmproxy 結合進行協議抓包，這樣的選擇使得整體流程更加靈活。選擇 Python 作為主要開發語言，因為其在自動化和數據處理方面的強大生態系統。整體架構的擴展性良好，但由於代碼風格偏向研究性，可能會影響新開發者的上手速度。
 
 ## 技術深入分析
 
-專案的核心技術機制是基於 Python 的自動化測試框架，結合了 hCaptcha 求解器和支付協議重放的功能。使用了 Playwright 進行瀏覽器自動化，這使得其能夠在多種環境中運行，並且能夠快速適應網站的變化。效能方面，整個流程在 daemon 模式下可以持續運行數周，但在高頻請求下可能會出現性能瓶頸。設計選擇上，Python 的使用雖然提供了強大的網絡請求處理能力，但代碼的可讀性和維護性受到影響。依賴樹方面，專案依賴於多個外部庫，如 Playwright 和 Camoufox，這些庫的更新可能會影響專案的穩定性。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在高頻率的請求下，這需要進一步的優化和測試。整合方面，與主流的 CI/CD 工具整合相對簡單，但對於新手來說，學習成本較高，需要一定的時間來熟悉整個流程。
+專案的核心技術機制包括一個從零實現的 hCaptcha 求解器，利用 VLM 和 OpenCV 進行題型識別，這使得工具能夠在自動化的情況下，持續運行數周。整體架構採用模組化設計，將支付流程分為多個子系統，從而提高了可維護性和擴展性。使用 Playwright 進行瀏覽器自動化，能夠有效模擬人類操作，並且與 mitmproxy 結合進行協議抓包，這樣的選擇使得整體流程更加靈活。效能方面，整個流程的執行時間約為 5 分鐘，並且支持長時間的 daemon 模式運行。
+
+設計上選擇 Python 作為主要開發語言，因為其在自動化和數據處理方面的強大生態系統。這樣的選擇雖然帶來了開發的靈活性，但也可能導致代碼的可讀性下降，影響維護。技術風險方面，使用者需注意法律風險，因為該工具的使用範圍受到限制，並且存在被封禁的風險。整合方面，與主流的 CI/CD 工具相容性良好，但對於新開發者來說，學習曲線較為陡峭。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了詳細的安裝和使用指引，對於新手來說相對友好。安裝過程中需要配置多個依賴，可能會遇到一些問題，但整體流程較為順暢。文件中包含了多個範例，幫助使用者快速上手。整體來說，花 30 分鐘能夠基本跑起來，但需要一定的技術背景。
+> README 文件提供了詳細的安裝和配置指南，但對於新手來說仍然有一定的挑戰。安裝過程需要安裝多個依賴，且配置過程較為繁瑣。整體來說，花 30 分鐘能夠完成基本的安裝和配置，但要完全理解和運行起來可能需要更多時間。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供完整的支付協議重放流程，適合安全測試需求。
-> - 獨立的 hCaptcha 求解器，能夠處理多種題型，提升自動化效率。
-> - 支持無人值守運行，適合長時間的自動化測試。
+> - 提供完整的支付流程重放，適合需要自動化測試的開發者。
+> - 獨立的 hCaptcha 求解器能夠提高自動化的成功率。
+> - 自愈環設計使得長時間運行的穩定性更高。
 
 > [!danger] 缺點
-> - 配置和使用門檻較高，需要一定的技術背景。
-> - 代碼可讀性差，對於新手來說可能難以理解。
-> - 法律風險高，使用者需自行承擔所有法律責任。
+> - 配置過程複雜，對新手不友好。
+> - 存在法律風險，使用者需自行承擔責任。
+> - 代碼風格不夠清晰，維護成本較高。
 
 > [!warning] 注意事項
-> - 僅支援 EU 地區的 PayPal 帳號。
+> - 僅支持 EU 地區的 PayPal 交易。
 > - 批量註冊的存活率約 2%，受限於 ChatGPT 的反欺詐機制。
-> - 目前不支援免費帳號的路徑，需使用有效的付費帳號。
+> - 目前不支持免費帳號的自動化流程。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於自動化攻擊和防禦的工具，與本專案相比缺乏針對支付協議的專門設計。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供多種 CTF 工具，但不具備完整的支付協議重放功能，適合更廣泛的安全測試需求。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的自動化功能，但缺乏完整的支付流程重放能力。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於反欺詐測試，但不具備 hCaptcha 求解器的功能。 |
 
 ## 替代方案決策
 
@@ -212,16 +215,16 @@ python -m webui.server
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於自動化攻擊和防禦的工具，提供了多種 CTF 相關功能，但缺乏針對支付協議的專門設計。 | 如果你的需求主要是針對 CTF 挑戰的自動化攻擊，這個工具會更合適。 | medium，因為需要重新適應不同的工具和流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供多種 CTF 工具，但不具備完整的支付協議重放功能，適合更廣泛的安全測試需求。 | 如果你的需求是多樣化的安全測試，而不僅僅是針對支付協議，這個工具會更合適。 | low，因為其使用方式相對簡單，易於上手。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體用量低，但功能上不如本專案全面。 | 如果需要一個輕量級的自動化工具，且不需要完整的支付流程重放。 | low，因為兩者的功能有一定重疊。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於反欺詐測試，缺乏支付流程的自動化能力。 | 如果主要需求是進行反欺詐測試，而不需要支付流程的重放。 | medium，因為需要重新設計測試流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **Gpt-Agreement-Payment** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於自動化攻擊和防禦的工具，提供了多種 CTF 相關功能，但缺乏針對支付協議的專門設計。 | 提供多種 CTF 工具，但不具備完整的支付協議重放功能，適合更廣泛的安全測試需求。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的工具和流程。 | low，因為其使用方式相對簡單，易於上手。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是針對 CTF 挑戰的自動化攻擊，這個工具會 | 如果你的需求是多樣化的安全測試，而不僅僅是針對支付協議，這個 |
+> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量低，但功能上不如本專案全面。 | 專注於反欺詐測試，缺乏支付流程的自動化能力。 |
+> | 遷移成本 | - | low，因為兩者的功能有一定重疊。 | medium，因為需要重新設計測試流程。 |
+> | 適用場景 | 主要場景 | 如果需要一個輕量級的自動化工具，且不需要完整的支付流程重放。 | 如果主要需求是進行反欺詐測試，而不需要支付流程的重放。 |
 
 ## 成熟度評估
 
@@ -232,27 +235,27 @@ python -m webui.server
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人研究和測試使用，不建議用在生產環境的核心路徑上。
+> 適合有經驗的開發者進行研究和測試，但不建議用於生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 首次運行需要手動通過 PayPal 的 OTP 2FA 驗證，可能會影響自動化流程
-  - 解法：確保在運行前手動完成 2FA 驗證
-- [MEDIUM] hCaptcha 題型未覆蓋時，求解成功率不保證
-  - 解法：使用 VLM 作為兜底，但可能會影響效率
-- **[HIGH]** PayPal 和 Stripe 的地區限制可能導致無法正常運行
-  - 解法：使用符合要求的代理服務
+- **[HIGH]** 首次運行需要手動通過 PayPal 的 OTP 驗證
+  - 解法：準備一個可用的 PayPal 帳號，並在首次運行時手動輸入 OTP。
+- [MEDIUM] 批量註冊的存活率低
+  - 解法：調整使用的 IP 和帳號，並分散註冊時間。
+- [MEDIUM] hCaptcha 題型未覆蓋時可能失敗
+  - 解法：使用 VLM 作為兜底，但成功率不保證。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 安全研究團隊進行支付協議測試 | 非常適合 | 提供完整的支付流程重放功能，能夠有效測試安全性。 |
-| 個人開發者進行 hCaptcha 求解器測試 | 適合 | 獨立的 hCaptcha 求解器能夠提升測試效率。 |
-| 大型企業進行支付系統的安全性評估 | 普通 | 雖然功能強大，但配置和使用門檻較高。 |
-| 小型團隊進行自動化測試 | 不適合 | 需要較高的技術背景，不適合初學者。 |
+| 大型安全團隊進行 ChatGPT 反欺詐測試 | 非常適合 | 提供完整的支付流程和反欺詐數據，能夠進行深入分析。 |
+| 小型開發團隊希望自動化 ChatGPT 訂閱測試 | 適合 | 雖然配置複雜，但能夠提高測試效率。 |
+| 個人開發者想要快速測試 ChatGPT 功能 | 普通 | 需要一定的技術背景，對新手不友好。 |
+| 無法接受法律風險的使用者 | 不適合 | 使用本工具存在法律責任，需謹慎考量。 |
 
 ## 採用成本分析
 
@@ -264,12 +267,12 @@ python -m webui.server
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 8 小時學習，4 小時整合，得到高效的支付協議測試工具，值得投入。
+> 花 8 小時學習，4 小時整合，能夠自動化測試流程，值得有經驗的開發者考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：專案需要存取 PayPal 和 Stripe 的帳號資訊，使用者需確保資訊安全。對於 CI/CD 使用需謹慎，避免洩露敏感資料。
+> 該工具本身不需要高權限，但使用過程中可能涉及敏感資料的存取。依賴鏈中有多個未審計的依賴，使用時需謹慎評估風險。
 
 ## 健康度儀表板
 
@@ -334,12 +337,12 @@ python -m webui.server
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 358 |
-| Open Issues | 1 |
-| Issue 解決率 | 50% (1 closed) |
-| 最後推送 | 2026-04-30 |
+| Forks | 394 |
+| Open Issues | 6 |
+| Issue 解決率 | 14% (1 closed) |
+| 最後推送 | 2026-05-01 |
 | 建立日期 | 2026-04-27 |
-| Repo 大小 | 567 KB |
+| Repo 大小 | 565 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/DanOps-1/Gpt-Agreement-Payment) |
 | Topics | `adversarial-ml` `anti-fraud` `bug-bounty` `captcha-solver` `chatgpt` `ctf-tools` `hcaptcha-solver` `mitmproxy` |
 
@@ -355,17 +358,28 @@ python -m webui.server
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@DanOps-1](https://github.com/DanOps-1) | 8 |
+> | [@DanOps-1](https://github.com/DanOps-1) | 9 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和回應問題。
+**社群活躍度**：社群活躍，經常有新問題和功能請求。
 **連結**：[文件](https://github.com/DanOps-1/Gpt-Agreement-Payment)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-27 ~ 2026-04-30）
-> **活躍天數** 3 天 · **最新 commit** docs: URL slug 再切回 Gpt-Agreement-Payment（GitHub 侧已 gh repo rename 完）
+> [!abstract] 最近 10 次 commit（2026-04-27 ~ 2026-05-01）
+> **活躍天數** 4 天 · **最新 commit** fix(wizard): GoPay 模式下 TopStepper 标签随 pm 动态切换
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#8](https://github.com/DanOps-1/Gpt-Agreement-Payment/issues/8) | feat(whatsapp): 删除 whatsapp_relay sidecar，加 POST /api/whatsa `enhancement` `help wanted` | 0 | 0 |
+> | [#7](https://github.com/DanOps-1/Gpt-Agreement-Payment/issues/7) | fix(backend): preflight 异常风格 + 日志格式统一 `enhancement` `help wanted` `good first issue` | 0 | 0 |
+> | [#6](https://github.com/DanOps-1/Gpt-Agreement-Payment/issues/6) | chore(infra): Dockerfile + docker-compose 一键部署 `enhancement` `help wanted` | 0 | 0 |
+> | [#5](https://github.com/DanOps-1/Gpt-Agreement-Payment/issues/5) | feat(i18n): webui 前端国际化基础设施（vue-i18n 中英双语） `enhancement` `help wanted` | 0 | 0 |
+> | [#4](https://github.com/DanOps-1/Gpt-Agreement-Payment/issues/4) | feat(downstream): 加更多导出渠道（Webhook / Telegram / Discord / Not `enhancement` `help wanted` | 0 | 0 |
 
 ## README 摘錄
 
@@ -592,7 +606,7 @@ python -m webui.server
 
 ## 延伸閱讀
 
-相關概念：[[反欺詐]] · [[自動化測試]] · [[支付安全]]
+相關概念：[[反欺詐]] · [[自動化測試]] · [[機器學習]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Nightmare-Eclipse--RedSun|Nightmare-Eclipse/RedSun]] · [[dazzyddos--PrivHound|dazzyddos/PrivHound]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[imbue-bit--OpenClaw-PwnKit|imbue-bit/OpenClaw-PwnKit]] · [[masterking32--MasterHttpRelayVPN|masterking32/MasterHttpRelayVPN]] · [[opa334--darksword-kexploit|opa334/darksword-kexploit]]
 
@@ -600,11 +614,11 @@ python -m webui.server
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：反欺詐）
+> [!note]- 直接競品（同子分類：自動化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "反欺詐" AND file.name != "DanOps-1--Gpt-Agreement-Payment"
+> WHERE subcategory = "自動化" AND file.name != "DanOps-1--Gpt-Agreement-Payment"
 > SORT stars DESC
 > ```
 
@@ -612,7 +626,7 @@ python -m webui.server
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "安全" AND file.name != "DanOps-1--Gpt-Agreement-Payment"
+> WHERE category = "開發工具" AND file.name != "DanOps-1--Gpt-Agreement-Payment"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -636,7 +650,7 @@ python -m webui.server
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["反欺詐","自動化測試","支付安全"];
+> const concepts = ["反欺詐","自動化測試","機器學習"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "DanOps-1--Gpt-Agreement-Payment" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

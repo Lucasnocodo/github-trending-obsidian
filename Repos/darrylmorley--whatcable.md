@@ -558,7 +558,7 @@ WhatCable 最常與 macOS 環境中的其他硬體監控工具搭配使用，特
 
 相關概念：[[USB Power Delivery]] · [[IOKit]] · [[macOS 應用開發]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]]
 
 [GitHub](https://github.com/darrylmorley/whatcable) · [官方網站](https://github.com/darrylmorley/whatcable/releases/latest)
 
