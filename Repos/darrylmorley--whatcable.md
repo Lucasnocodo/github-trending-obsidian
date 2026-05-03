@@ -7,10 +7,10 @@ language: Swift
 license: MIT
 description: "macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do"
 homepage: "https://github.com/darrylmorley/whatcable/releases/latest"
-stars: 694
-stars_per_day: 694
-forks: 11
-open_issues: 12
+stars: 1261
+stars_per_day: 1261
+forks: 27
+open_issues: 15
 created: 2026-05-01
 pushed_at: 2026-05-01
 first_seen: 2026-05-02
@@ -30,8 +30,8 @@ use_case: "讓你清楚了解每條 USB-C 線纜的功能，避免充電慢的�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-05"
+appearances: 2
+next_review: "2026-05-06"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 54
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-02"
-star_history: "2026-05-02:694"
+star_history: "2026-05-02:694,2026-05-03:1261"
 tags:
   - github
   - "category/開發工具"
@@ -558,7 +558,7 @@ WhatCable 最常與 macOS 環境中的其他硬體監控工具搭配使用，特
 
 相關概念：[[USB Power Delivery]] · [[IOKit]] · [[macOS 應用開發]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
 
 [GitHub](https://github.com/darrylmorley/whatcable) · [官方網站](https://github.com/darrylmorley/whatcable/releases/latest)
 
@@ -854,4 +854,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-03|2026-05-03]] — 再次上榜，1.3k stars
 - [[2026-05-02|2026-05-02]] — 首次收錄，694 stars

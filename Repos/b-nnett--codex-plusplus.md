@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "Codex++ tweak system for the Codex desktop app"
 homepage: ""
-stars: 756
-stars_per_day: 252
-forks: 33
-open_issues: 7
+stars: 836
+stars_per_day: 209
+forks: 40
+open_issues: 10
 created: 2026-04-28
 pushed_at: 2026-05-02
 first_seen: 2026-05-02
@@ -30,8 +30,8 @@ use_case: "為 Codex 桌面應用提供自訂功能和修復的調整系統。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-05"
+appearances: 2
+next_review: "2026-05-06"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-02"
-star_history: "2026-05-02:752,2026-05-02:756"
+star_history: "2026-05-02:752,2026-05-02:756,2026-05-03:836"
 tags:
   - github
   - "category/開發工具"
@@ -877,4 +877,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-03|2026-05-03]] — 再次上榜，836 stars
 - [[2026-05-02|2026-05-02]] — 首次收錄，752 stars

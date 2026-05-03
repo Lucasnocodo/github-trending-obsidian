@@ -1380,10 +1380,10 @@
   },
   "nexu-io/open-design": {
     "first_seen": "2026-04-29",
-    "last_seen": "2026-05-02",
-    "times_seen": 4,
+    "last_seen": "2026-05-03",
+    "times_seen": 5,
     "stars_first": 1292,
-    "stars_last": 11910
+    "stars_last": 16135
   },
   "wuyoscar/gpt_image_2_skill": {
     "first_seen": "2026-04-29",
@@ -1401,10 +1401,10 @@
   },
   "cursor/cookbook": {
     "first_seen": "2026-04-30",
-    "last_seen": "2026-05-02",
-    "times_seen": 3,
+    "last_seen": "2026-05-03",
+    "times_seen": 4,
     "stars_first": 1427,
-    "stars_last": 2965
+    "stars_last": 3137
   },
   "GammaLabTechnologies/harmonist": {
     "first_seen": "2026-04-30",
@@ -1429,10 +1429,10 @@
   },
   "theori-io/copy-fail-CVE-2026-31431": {
     "first_seen": "2026-05-01",
-    "last_seen": "2026-05-02",
-    "times_seen": 2,
+    "last_seen": "2026-05-03",
+    "times_seen": 3,
     "stars_first": 1694,
-    "stars_last": 2466
+    "stars_last": 2901
   },
   "ps5-linux/ps5-linux-loader": {
     "first_seen": "2026-05-01",
@@ -1443,44 +1443,51 @@
   },
   "willchen96/mike": {
     "first_seen": "2026-05-01",
-    "last_seen": "2026-05-02",
-    "times_seen": 2,
+    "last_seen": "2026-05-03",
+    "times_seen": 3,
     "stars_first": 785,
-    "stars_last": 1084
+    "stars_last": 1417
   },
   "DanOps-1/Gpt-Agreement-Payment": {
     "first_seen": "2026-05-01",
-    "last_seen": "2026-05-02",
-    "times_seen": 2,
+    "last_seen": "2026-05-03",
+    "times_seen": 3,
     "stars_first": 779,
-    "stars_last": 877
+    "stars_last": 917
   },
   "GENEXIS-AI/chromex": {
     "first_seen": "2026-05-01",
-    "last_seen": "2026-05-02",
-    "times_seen": 2,
+    "last_seen": "2026-05-03",
+    "times_seen": 3,
     "stars_first": 687,
-    "stars_last": 738
+    "stars_last": 755
   },
   "denuitt1/mhr-cfw": {
     "first_seen": "2026-05-02",
-    "last_seen": "2026-05-02",
-    "times_seen": 1,
+    "last_seen": "2026-05-03",
+    "times_seen": 2,
     "stars_first": 1316,
-    "stars_last": 1316
+    "stars_last": 1701
   },
   "b-nnett/codex-plusplus": {
     "first_seen": "2026-05-02",
-    "last_seen": "2026-05-02",
-    "times_seen": 1,
+    "last_seen": "2026-05-03",
+    "times_seen": 2,
     "stars_first": 752,
-    "stars_last": 752
+    "stars_last": 836
   },
   "darrylmorley/whatcable": {
     "first_seen": "2026-05-02",
-    "last_seen": "2026-05-02",
-    "times_seen": 1,
+    "last_seen": "2026-05-03",
+    "times_seen": 2,
     "stars_first": 694,
-    "stars_last": 694
+    "stars_last": 1261
+  },
+  "t8y2/dbx": {
+    "first_seen": "2026-05-03",
+    "last_seen": "2026-05-03",
+    "times_seen": 1,
+    "stars_first": 713,
+    "stars_last": 713
   }
 }
