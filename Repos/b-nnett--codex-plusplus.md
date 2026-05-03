@@ -7,7 +7,7 @@ language: TypeScript
 license: MIT
 description: "Codex++ tweak system for the Codex desktop app"
 homepage: ""
-stars: 836
+stars: 837
 stars_per_day: 209
 forks: 40
 open_issues: 10
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-02
-use_case: "為 Codex 桌面應用提供自訂功能和修復的調整系統。"
+use_case: "為 Codex 桌面應用提供的調整系統，讓用戶能夠注入自定義功能和修復 UI 錯誤。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 2
 next_review: "2026-05-06"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: 50
-repo_size_kb: 898
+issue_close_rate: 41
+repo_size_kb: 1124
 readme_length: 5899
 bus_factor: 1
-last_release_days: 0
+last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-02"
-star_history: "2026-05-02:752,2026-05-02:756,2026-05-03:836"
+star_history: "2026-05-02:752,2026-05-02:756,2026-05-03:836,2026-05-03:837"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "codex-plusplus"
   - "b-nnett/codex-plusplus"
-  - "為 Codex 桌面應用提供自訂功能和修復的調整系統。"
+  - "為 Codex 桌面應用提供的調整系統，讓用戶能夠注入自定義功能和修復 UI 錯誤。"
 ---
 
 # codex-plusplus
 
-**756** stars · **252** stars/天 · 建立 3 天前 · TypeScript · MIT
+**837** stars · **209** stars/天 · 建立 4 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/b-nnett--codex-plusplus");
@@ -71,13 +71,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `v0.1.4`
 
 > [!summary] 一句話摘要
-> 為 Codex 桌面應用提供自訂功能和修復的調整系統。
+> 為 Codex 桌面應用提供的調整系統，讓用戶能夠注入自定義功能和修復 UI 錯誤。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (252 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (209 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 希望為 Codex 桌面應用添加自定義功能的開發者和設計師。
-> **一句話重點** Codex++ 的設計讓開發者能夠在不重建應用的情況下，靈活地添加和管理自定義功能。
+> **適合** 希望在 Codex 桌面應用中添加自定義功能但不想進行繁瑣重建的開發者。
+> **一句話重點** Codex++ 不僅是功能擴展工具，更是用戶自定義 Codex 體驗的關鍵。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -100,39 +100,37 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，2 小時整合，得到靈活的自定義功能，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學習，2 小時整合，得到靈活的功能擴展能力，值得投入。
 
 > [!abstract] 核心創新
-> Codex++ 允許用戶在不重建應用的情況下，輕鬆注入自定義功能和修復。
+> Codex++ 允許用戶在不重建應用的情況下，輕鬆注入和管理自定義功能。
 
 ## 專案簡介
 
-Codex++ 是一個為 Codex 桌面應用提供調整和擴展功能的系統。它通過在應用啟動時注入一個小型加載器，來實現對 Codex.app 的修補，並從用戶目錄加載運行時和自定義調整。這種設計的好處是，所有調整都位於應用包之外，便於用戶快速迭代和更新。安裝過程中，Codex++ 會自動檢測並備份現有的 Codex.app，然後進行必要的修補，這樣用戶在更新 Codex 時不會丟失調整。用戶可以通過 `codexplusplus install` 指令輕鬆安裝，並使用 `codexplusplus update` 來保持調整的最新狀態。
-
-這個系統的核心在於其靈活性和可擴展性，讓開發者能夠輕鬆編寫和管理調整，並在應用內部進行配置。與其他工具相比，Codex++ 的獨特之處在於它不需要重建應用，並且所有調整都能夠即時生效。這使得它特別適合需要快速測試和迭代的開發者。雖然目前仍在 beta 階段，可能會遇到一些錯誤，但其社群活躍度和持續更新的承諾使其成為一個值得關注的選擇。
+Codex++ 是一個為 Codex 桌面應用提供的調整系統，能夠在啟動時注入一個小型 loader，該 loader 會從用戶目錄中加載 runtime，並發現和加載 tweaks（小型 ESM 模組）。這樣的設計使得用戶可以在不重建應用的情況下，輕鬆地啟用、禁用和配置 tweaks。安裝過程中，Codex++ 會自動備份原始的 Codex.app，並對其進行補丁處理，確保應用在更新後仍能正常運行。關鍵指令如 `codexplusplus install` 和 `codexplusplus update` 使得用戶能夠輕鬆管理調整和更新。這個工具的賣點在於其靈活性和易用性，讓用戶能夠快速迭代和測試自定義功能，而不需要深入了解應用的內部結構。
 
 **技術棧**：`TypeScript` · `JavaScript` · `PowerShell` · `Shell` · `Ruby`
 
 ## 重點功能
 
-- 自動檢測和修補 — 安裝過程中自動檢測 Codex.app 並備份。
-- 靈活的調整管理 — 用戶可以在應用內部啟用、禁用和配置調整。
-- 熱重載功能 — 調整可以即時生效，無需重啟應用。
-- 簡單的命令行工具 — 使用 `codexplusplus` 指令來管理安裝和更新。
-- 支持多平台 — 在 macOS 和 Windows 上均可運行。
+- 自動補丁安裝 — 安裝過程中自動備份原始 Codex.app 並進行補丁處理。
+- 即時更新管理 — 使用 `codexplusplus update` 指令輕鬆更新 Codex++ 和其 tweaks。
+- 自定義功能注入 — 允許用戶通過 tweaks 來添加自定義功能，並在應用內部進行管理。
+- 多平台支持 — 同時支持 macOS 和 Windows 系統，提供一致的使用體驗。
+- 簡化的安裝過程 — 提供多種安裝方式，包括 curl 和 PowerShell，方便用戶選擇。
 
 ## 快速開始
 
-1. 使用 Bun 安裝 Codex++
+1. 使用 bun 安裝 Codex++
 ```bash
 bun install -g github:b-nnett/codex-plusplus
 ```
-2. 執行安裝指令
+2. 安裝 Codex++
 ```bash
 codexplusplus install
 ```
-3. 檢查狀態
+3. 檢查 Codex++ 狀態
 ```bash
 codexplusplus status
 ```
@@ -140,65 +138,65 @@ codexplusplus status
 ## 程式碼範例
 
 ```ts
-{
-  "前置條件": "需要安裝 Codex 桌面應用。",
-  "指令": "codexplusplus install",
-  "預期輸出": "安裝 Codex++ 並修補 Codex.app。"
-}
+[
+  "# 前置條件：安裝 Codex++",
+  "codexplusplus install",
+  "# 預期輸出：安裝成功，並顯示安裝狀態"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 756 stars（252/天），forks 33（4.4%），顯示出穩定的增長。這個專案的作者 b-nnett 之前在開發者社群中活躍，針對 Codex 的需求提供了創新的解決方案。Codex++ 解決了用戶在更新 Codex 應用時，無法保持自定義調整的問題，這在之前的解決方案中並不常見。社群的反饋和需求促進了這個專案的快速發展，並且其設計理念符合當前開發者對靈活性和可擴展性的需求。
+> 建立 4 天內累積 837 stars（209 stars/天），forks 40（4.8%），顯示出穩定的增長潛力。作者 b-nnett 在開源社群中活躍，過去的專案也獲得了一定的關注。Codex++ 解決了 Codex 桌面應用自定義功能不足的痛點，讓用戶能夠輕鬆添加和管理自定義功能，這在目前的生態中是相對缺乏的。社群的反饋也顯示出對於功能擴展的強烈需求，特別是在自動更新和修復方面。
 
 ## 適合誰使用
 
-**目標受眾**：希望為 Codex 桌面應用添加自定義功能的開發者和設計師。
+**目標受眾**：希望在 Codex 桌面應用中添加自定義功能但不想進行繁瑣重建的開發者。
 
 > [!example] 使用場景
-> - 開發者用它來為 Codex 添加自定義功能，因為這樣可以快速迭代和測試新特性，而不需要重建整個應用。
-> - UI 設計師用它來修復 Codex 的 UI 錯誤，因為它允許即時修改和更新，提升了設計效率。
-> - 測試工程師用它來測試不同的調整，因為它的熱重載功能讓他們能夠快速查看變更效果，節省了大量時間。
+> - 開發者用它來快速注入自定義功能到 Codex 應用中，因為這樣可以在不重建應用的情況下進行功能測試。
+> - UI 設計師用它來修復 Codex 的 UI 錯誤，因為這樣能夠快速迭代設計，而不需要等待官方更新。
+> - 系統管理員用它來管理多個 Codex 應用的版本和補丁，因為它提供了自動修復和更新的功能，減少了手動維護的負擔。
 
 ## 架構分析
 
-Codex++ 採用模組化設計，將加載器和運行時分開，這樣可以在不影響主應用的情況下進行調整。加載器在 Codex.app 啟動時運行，並從用戶目錄加載運行時，這樣可以實現熱重載。這種設計的好處是用戶可以快速迭代調整，而不需要重新安裝應用。代價是需要用戶手動管理調整的更新，這可能會造成一定的維護負擔。整體架構的擴展性良好，但在處理大型調整時可能會遇到性能瓶頸，特別是在多個調整同時運行的情況下。
+Codex++ 採用模組化設計，通過 loader 在 Codex.app 啟動時注入功能。這個 loader 負責從用戶目錄中加載 runtime，並發現和加載 tweaks。這樣的設計使得用戶可以快速迭代和測試自定義功能，而不需要深入了解應用的內部結構。
+
+資料流方面，loader 會修改 app.asar 以引入新的功能，並在用戶目錄中維護 runtime 和 tweaks。這樣的設計選擇使得應用的擴展性更強，但也帶來了對於原始應用的潛在風險，因為修改了應用的簽名。擴展性方面，這樣的架構使得用戶可以隨時添加新的 tweaks，但也可能在應用更新時遇到兼容性問題。
 
 ## 技術深入分析
 
-Codex++ 的核心機制是通過加載器和運行時的分離設計，實現了對 Codex.app 的靈活調整。加載器在應用啟動時運行，並從用戶目錄加載運行時，這樣可以實現熱重載和即時更新。這種設計使得用戶能夠快速迭代調整，而不需要重新安裝應用。性能方面，Codex++ 能夠處理多個調整，但在高負載情況下可能會出現延遲。
-
-選擇 TypeScript 和 JavaScript 作為開發語言，能夠提高開發效率和可維護性，但也增加了學習曲線。依賴樹相對簡單，主要依賴於一些常見的庫，降低了整體複雜度。技術風險方面，Codex++ 依賴於 Codex.app 的內部結構，若未來版本改變，可能會導致不兼容。整合方面，與現有的開發工具鏈相容性良好，特別是在 CLI 工具的使用上，能夠輕鬆融入開發流程。
+Codex++ 的核心技術機制在於其模組化設計，使用 loader 在 Codex.app 啟動時注入功能。這個 loader 負責從用戶目錄中加載 runtime，並發現和加載 tweaks。這樣的設計使得用戶可以快速迭代和測試自定義功能，而不需要深入了解應用的內部結構。效能方面，Codex++ 需要一定的系統資源來運行 loader 和 runtime，但具體的資源需求並未在 README 中明確指出。設計取捨方面，選擇了 JavaScript 和 TypeScript 作為主要開發語言，這使得開發者能夠快速上手，但也可能導致性能上的折衷。技術風險方面，修改原始應用的簽名可能會影響官方更新的安全性，並且在應用更新時可能需要手動重新應用補丁。整合分析方面，Codex++ 可以與現有的 CLI 工具鏈無縫集成，但對於某些 IDE 的支持可能有限，這需要額外的適配工作。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了詳細的安裝步驟和範例，讓新手能夠快速上手。安裝過程相對順暢，但對於某些系統配置可能會遇到問題。文件中有 Discord 社群的連結，方便用戶尋求幫助。
+> README 文件清晰，提供了詳細的安裝步驟和範例；安裝過程相對順暢，但對於某些環境可能會遇到問題；有良好的 getting started guide，並且社群支持活躍，能夠提供即時幫助。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 靈活性高，允許用戶快速添加和管理調整。
-> - 支持熱重載，提升開發效率。
-> - 多平台支持，適用於不同操作系統。
+> - 靈活的功能擴展，能夠快速添加和測試自定義功能。
+> - 自動化的更新和修復流程，減少了手動維護的負擔。
+> - 支持多平台，能夠在不同操作系統上使用。
 
 > [!danger] 缺點
-> - 仍在 beta 階段，可能存在不穩定性。
-> - 安裝過程對某些系統配置不友好。
-> - 不支持調整的自動更新，需手動管理。
+> - 仍處於 beta 階段，可能存在不穩定的情況。
+> - 對於某些環境的支持不佳，可能會導致安裝失敗。
+> - 修改原始應用的簽名，可能會影響官方更新的安全性。
 
 > [!warning] 注意事項
-> - 仍在 beta 階段，可能存在未解決的錯誤。
-> - 對於某些系統配置，安裝過程可能會失敗。
-> - 不支持自動更新調整，需手動檢查更新。
+> - 目前仍處於 beta 階段，可能存在未發現的錯誤。
+> - 不支持在某些環境中進行安裝，例如 Macbook 上使用 sudo 可能會失敗。
+> - 對於某些 Codex 更新，可能需要手動干預以重新應用補丁。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的自定義功能，但主要針對不同的應用場景，可能不支持 Codex 的特定功能。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 UI 調整，但不具備 Codex++ 的熱重載功能，更新過程較為繁瑣。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的功能擴展，但專注於不同的應用場景和功能模組。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要用於管理和擴展特定的應用功能，與 Codex++ 的通用性相比，功能範圍較窄。 |
 
 ## 替代方案決策
 
@@ -206,16 +204,16 @@ Codex++ 的核心機制是通過加載器和運行時的分離設計，實現了
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於特定應用的自定義，但不支持 Codex 的擴展性。 | 如果需要針對特定應用進行深度自定義，而不需要 Codex++ 的靈活性。 | medium，因為需要重新學習其特定的調整方法。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供 UI 調整功能，但不具備熱重載，更新過程較為繁瑣。 | 如果需要穩定的 UI 調整，而不需要 Codex++ 的即時更新功能。 | low，因為其設計理念相似，容易上手。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於特定應用的擴展，使用 Rust 實現，性能更佳，但生態系統相對較小。 | 如果你的團隊需要高性能的擴展功能，且已經在使用 Rust 進行開發。 | medium，因為需要重新學習 Rust 的開發模式。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的功能擴展，但專注於不同的應用場景和功能模組，使用 Python 實現。 | 如果你的團隊已經熟悉 Python，並且需要針對特定應用進行深度定制。 | low，因為 Python 的學習曲線相對較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **codex-plusplus** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於特定應用的自定義，但不支持 Codex 的擴展性。 | 提供 UI 調整功能，但不具備熱重載，更新過程較為繁瑣。 |
-> | 遷移成本 | - | medium，因為需要重新學習其特定的調整方法。 | low，因為其設計理念相似，容易上手。 |
-> | 適用場景 | 主要場景 | 如果需要針對特定應用進行深度自定義，而不需要 Codex++ | 如果需要穩定的 UI 調整，而不需要 Codex++ 的即時 |
+> | 技術路線 | 本專案 | 專注於特定應用的擴展，使用 Rust 實現，性能更佳，但生態系統相對較小。 | 提供類似的功能擴展，但專注於不同的應用場景和功能模組，使用 Python 實現。 |
+> | 遷移成本 | - | medium，因為需要重新學習 Rust 的開發模式。 | low，因為 Python 的學習曲線相對較低。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要高性能的擴展功能，且已經在使用 Rust 進 | 如果你的團隊已經熟悉 Python，並且需要針對特定應用進行 |
 
 ## 成熟度評估
 
@@ -226,44 +224,75 @@ Codex++ 的核心機制是通過加載器和運行時的分離設計，實現了
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合開發者進行實驗和測試，但不建議在生產環境中使用。
+> 適合開發者進行測試和功能擴展，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些系統上安裝失敗，特別是使用 sudo 的情況下。
-  - 解法：檢查安裝權限或使用非 sudo 安裝。
-- [MEDIUM] 更新 Codex 時可能會導致調整失效。
-  - 解法：使用 `codexplusplus update-codex` 恢復官方簽名的應用。
-- [MEDIUM] 某些調整可能不兼容最新版本的 Codex。
-  - 解法：手動檢查調整的 GitHub 頁面，確保版本兼容。
+- **[HIGH]** 在某些環境中安裝失敗，特別是 Macbook 使用 sudo 時
+  - 解法：避免使用 sudo 進行安裝，或使用其他安裝方式
+- [MEDIUM] Codex 更新後可能需要手動重新應用補丁
+  - 解法：使用 `codexplusplus update-codex` 指令進行更新
+- [MEDIUM] 某些 tweaks 可能不兼容最新版本的 Codex
+  - 解法：定期檢查 tweaks 的 GitHub 頁面以獲取更新
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊需要為 Codex 添加自定義功能 | 非常適合 | Codex++ 提供靈活的調整管理，適合快速迭代。 |
-| 大型企業需要穩定的應用環境 | 不適合 | 目前仍在 beta 階段，可能存在不穩定性。 |
-| 獨立開發者希望測試新功能 | 非常適合 | 熱重載功能讓開發者能夠快速查看變更效果。 |
-| 需要長期維護的生產環境 | 不適合 | 不建議在生產環境中使用，因為可能會遇到不兼容問題。 |
+| 小型開發團隊希望快速迭代 Codex 應用的功能 | 非常適合 | Codex++ 提供靈活的功能擴展和快速測試的能力。 |
+| 大型企業需要穩定的生產環境 | 不適合 | 目前仍處於 beta 階段，存在不穩定風險。 |
+| 自由開發者希望為 Codex 添加自定義功能 | 非常適合 | Codex++ 使得自定義功能的添加變得簡單且高效。 |
+| 需要在多個操作系統上運行的應用 | 適合 | Codex++ 同時支持 macOS 和 Windows，提供一致的使用體驗。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
+| 學習時間 | ~3 小時 |
 | 整合時間 | ~2 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，2 小時整合，得到靈活的自定義功能，值得一試。
+> 花 3 小時學習，2 小時整合，得到靈活的功能擴展能力，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：需要修改 Codex.app 的簽名，可能會影響安全性；依賴於用戶的管理和維護，需謹慎使用。
+> 中等風險：需要對 Codex.app 進行修改，可能會影響官方更新的安全性；依賴於用戶的 GitHub 賬號和權限；在 CI/CD 中使用時需謹慎，確保不影響生產環境的穩定性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Codex++ 最常與 Codex 桌面應用搭配使用，作為功能擴展的工具。在一個使用 Codex 的開發環境中，Codex++ 可以通過 `codexplusplus install` 指令輕鬆集成，並且可以與現有的 CLI 工具鏈無縫對接。它支援的 CI 工具包括 GitHub Actions，並且可以與 VS Code 等 IDE 整合，但可能需要額外的配置。整合的摩擦點主要在於對於某些操作系統的支持不佳，可能會導致安裝失敗或功能不全。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 Codex++ 出現之前，Codex 桌面應用的自定義功能相對有限，用戶只能依賴官方更新來獲取新功能。這導致了許多用戶對於功能擴展的需求無法得到滿足。隨著開源社群對於自定義功能的需求增加，Codex++ 應運而生，提供了一個靈活的解決方案。
+
+這個工具代表了用戶自定義應用的趨勢，未來可能會有更多類似的工具出現，進一步推動開源生態的發展。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-5 人的小型團隊
+
+**前置技能**：
+- 熟悉 JavaScript/TypeScript
+- 了解基本的 CLI 操作
+- 有 GitHub 使用經驗
+
+> [!tip] 導入策略
+> 第一週：在個人項目中試用 Codex++。第二週：在小型團隊內部工具中導入。第三週：撰寫使用文檔和最佳實踐。第四週：在主產品的一個非核心模組中開始使用。
+
+**成功指標**：功能擴展的開發時間減少 30%。
+
+> [!warning] 退出計畫
+> 所有設定存在標準 JSON 格式，可以用官方 migration 工具轉換為其他工具。
 
 ## 健康度儀表板
 
@@ -328,12 +357,12 @@ Codex++ 的核心機制是通過加載器和運行時的分離設計，實現了
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 33 |
-| Open Issues | 7 |
-| Issue 解決率 | 50% (7 closed) |
+| Forks | 40 |
+| Open Issues | 10 |
+| Issue 解決率 | 41% (7 closed) |
 | 最後推送 | 2026-05-02 |
 | 建立日期 | 2026-04-28 |
-| Repo 大小 | 898 KB |
+| Repo 大小 | 1.1 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/b-nnett/codex-plusplus) |
 
 > [!info]- 主要依賴
@@ -403,8 +432,10 @@ Codex++ 的核心機制是通過加載器和運行時的分離設計，實現了
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#19](https://github.com/b-nnett/codex-plusplus/issues/19) | Codex++ fails to be installed on Macbook with sudo | 0 | 0 |
-> | [#17](https://github.com/b-nnett/codex-plusplus/issues/17) | Codex++ failed to patch Codex after update | 0 | 1 |
+> | [#22](https://github.com/b-nnett/codex-plusplus/issues/22) | Claude desktop support？ | 0 | 0 |
+> | [#21](https://github.com/b-nnett/codex-plusplus/issues/21) | Codex++ failed to patch Codex after update | 0 | 0 |
+> | [#20](https://github.com/b-nnett/codex-plusplus/issues/20) | Use XDG dirs rather than cluttering up $HOME | 0 | 1 |
+> | [#19](https://github.com/b-nnett/codex-plusplus/issues/19) | Codex++ fails to be installed on Macbook with sudo | 0 | 2 |
 
 ## README 摘錄
 
@@ -579,7 +610,7 @@ Codex++ 的核心機制是通過加載器和運行時的分離設計，實現了
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化]] · [[開發工具]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[擴展性]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[QLHazyCoder--codex-oauth-automation-extension|QLHazyCoder/codex-oauth-automation-extension]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]]
 
@@ -623,7 +654,7 @@ Codex++ 的核心機制是通過加載器和運行時的分離設計，實現了
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化","開發工具"];
+> const concepts = ["CLI/TUI","自動化","擴展性"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "b-nnett--codex-plusplus" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
