@@ -5,28 +5,28 @@ owner: freestylefly
 owner_type: User
 language: N/A
 license: MIT
-description: "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库 - 329个案例逆向工程，13套工业级模板"
+description: "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，20+ 套工业级模板，持续更新中"
 homepage: ""
-stars: 2989
-stars_per_day: 498
-forks: 450
-open_issues: 3
+stars: 3434
+stars_per_day: 429
+forks: 496
+open_issues: 4
 created: 2026-04-25
-pushed_at: 2026-05-02
+pushed_at: 2026-05-04
 first_seen: 2026-04-28
 week: "2026-W18"
 month: "2026-04"
-category: "其他"
-subcategory: "提示詞生成"
+category: "開發工具"
+subcategory: "自動化"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-28
-use_case: "提供工業級提示詞引擎與模板庫，幫助用戶穩定、可控地生成圖像。"
+use_case: "提供工業級提示詞引擎與模板庫，幫助用戶高效生成穩定的 AI 圖像。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,27 +35,28 @@ next_review: "2026-05-05"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 120852
-readme_length: 4714
+repo_size_kb: 134678
+readme_length: 6397
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-28"
-star_history: "2026-04-28:1274,2026-04-29:1716,2026-04-30:2149,2026-05-01:2562,2026-05-02:2989"
+star_history: "2026-04-28:1274,2026-04-29:1716,2026-04-30:2149,2026-05-01:2562,2026-05-02:2989,2026-05-04:3434"
 tags:
   - github
-  - "category/其他"
+  - "category/開發工具"
   - "lang/other"
+  - easy_install
 aliases:
   - "awesome-gpt-image-2"
   - "freestylefly/awesome-gpt-image-2"
-  - "提供工業級提示詞引擎與模板庫，幫助用戶穩定、可控地生成圖像。"
+  - "提供工業級提示詞引擎與模板庫，幫助用戶高效生成穩定的 AI 圖像。"
 ---
 
 # awesome-gpt-image-2
 
-**1.3k** stars · **637** stars/天 · 建立 2 天前 · N/A · MIT
+**3.4k** stars · **429** stars/天 · 建立 8 天前 · N/A · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/freestylefly--awesome-gpt-image-2");
@@ -68,23 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供工業級提示詞引擎與模板庫，幫助用戶穩定、可控地生成圖像。
+> 提供工業級提示詞引擎與模板庫，幫助用戶高效生成穩定的 AI 圖像。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (637 stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (429 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要穩定生成高質量圖像的設計師和開發者。
-> **一句話重點** 這個專案的創新在於將提示詞結構化，讓生成圖像的過程更可控和高效。
+> **適合** 需要高效生成穩定 AI 圖像的設計師和開發者。
+> **一句話重點** 這個專案的創新在於將提示詞結構化，讓生成 AI 圖像變得更可控和高效。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/freestylefly--awesome-gpt-image-2");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "提示詞生成" && p.file.name !== "freestylefly--awesome-gpt-image-2" && p.status !== "archived")
+>     .where(p => p.subcategory === "自動化" && p.file.name !== "freestylefly--awesome-gpt-image-2" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,88 +96,166 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 提示詞生成 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **安裝** Medium (需設定)
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習、3 小時整合，得到穩定的圖像生成效果，值得嘗試。
 
 > [!abstract] 核心創新
-> 將提示詞轉化為結構化的代碼，提升生成圖像的可控性和重用性。
+> 將提示詞轉化為結構化的 Prompt-as-Code 資產，提升生成的穩定性和可重用性。
 
 ## 專案簡介
 
-這個專案的核心在於將 GPT-Image2 的提示詞轉化為結構化的代碼，讓用戶能夠在自動化工作流中更有效地生成圖像。用戶可以透過提供的模板和案例，快速生成各種風格的圖像，並且這些模板都是基於實際案例逆向整理而來，能夠提高生成的可控性和重用性。專案提供了329個案例和13套工業級模板，涵蓋了UI設計、信息可視化、海報設計等多個場景，讓用戶能夠根據具體需求選擇合適的模板進行修改。技術上，這個專案並未明確指出使用的框架，但其設計理念是將提示詞的結構化和原子化，以便於在自動化系統中調用。
+這個專案的核心在於將散文式的提示詞轉化為結構化的 Prompt-as-Code 資產，讓用戶能夠在需要批量生成圖像時，快速而穩定地獲得所需的結果。用戶可以透過提供的 370+ 個案例和 20+ 套工業級模板，來逆向工程和組合出符合需求的提示詞。這些模板不僅適合手動使用，還能與自動化系統和 Agent 整合，提升工作效率。這種設計的優勢在於，使用者不再需要依賴單一的提示詞，而是能夠靈活組合各種視覺要素，如光影、材質等，從而達到更高的可控性和重用性。技術上，這個專案並未明確指出使用的框架或演算法，但其結構化的設計理念顯示出對於自動化和工作流友好的考量。
 
-與其他提示詞庫相比，這個專案更注重於工作流的友好性和結構化控制，適合需要批量生成圖像的用戶。使用這個工具的效果是能夠快速生成高質量的圖像，但可能需要一定的學習曲線來掌握模板的使用。這個專案目前處於早期階段，社群活躍度尚可，但仍需觀察未來的發展方向。對於需要在商業環境中穩定生成圖像的團隊，這個工具提供了一個有趣的解決方案，但在實際使用前建議先進行小規模的測試。
+與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 EvoLinkAI/awesome-gpt-image-2-prompts，這個專案更強調模板的可重用性和結構化的提示詞管理。實際使用中，這個專案的效果取決於用戶對於模板的理解和應用能力，並且需要一定的學習曲線來掌握如何有效利用這些資源。對於小型團隊或個人開發者來說，這是一個值得嘗試的工具，但對於大型企業的生產流程，可能需要進一步的整合和調整。總體來說，這個專案在未來的發展中可能會持續更新更多的案例和模板，進一步擴展其應用範圍。
 
 ## 重點功能
 
-- 329個案例 — 提供多種風格的圖像生成示例，涵蓋多個應用場景。
-- 13套工業級模板 — 針對不同需求的模板，便於用戶快速修改。
-- 原子化 Schema — 將視覺要素拆分為可組合的組件，提升靈活性。
-- 工作流友好 — 設計面向 Agent 和自動化系統，便於集成。
-- 結構化控制 — 提高版式和文案的可控性，適合批量生成。
+- 370+ 個案例 — 提供多樣化的視覺設計參考，幫助用戶快速找到靈感。
+- 20+ 套工業級模板 — 結構化的提示詞模板，適合批量生成和自動化工作流。
+- 原子化 Schema — 將視覺要素拆分為可組合的元件，提升重用性。
+- 工作流友好 — 針對 Agent 和自動化系統設計，易於整合。
+- 持續更新 — 定期增加新案例和模板，保持內容的新鮮度和實用性。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 克隆專案
 ```bash
-# README 未提供安裝指令，請參考專案文檔
+git clone https://github.com/freestylefly/awesome-gpt-image-2.git
 ```
-2. 選擇案例
+2. 進入專案目錄
 ```bash
-訪問 docs/gallery.md 瀏覽完整案例
+cd awesome-gpt-image-2
 ```
-3. 使用模板
+3. 查看案例和模板
 ```bash
-訪問 docs/templates.md 獲取模板使用說明
+open docs/gallery.md
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天就累積 1274 stars（637/天），forks 234（18.4%），這顯示出用戶對於這種結構化提示詞生成工具的需求。作者 freestylefly 之前在 AI 和設計領域有一定的背景，這個專案解決了傳統提示詞使用中的不穩定性和難以重用的問題，讓用戶能夠更有效地生成圖像。這個專案的推出可能受到社群對於 AI 生成內容的興趣增長的影響，尤其是在設計和創意領域。高達 18.4% 的 forks/stars 比率顯示出許多用戶對於這個工具的實際修改和使用，表明它在社群中引起了廣泛的關注。
+> 建立 8 天內累積 3434 stars（429/天），forks 496（14.4%），這顯示出強勁的增長潛力。作者 freestylefly 是一位活躍的開源貢獻者，專注於 AI 和設計領域，這個專案解決了生成 AI 圖像時提示詞不夠穩定和可重用的痛點，之前的工具多數只提供單一的提示詞，無法滿足批量生成的需求。社群對於這個工具的需求和反饋也促進了其快速發展，特別是在設計師和開發者中間。這個工具的出現正好契合了當前對於 AI 圖像生成的需求，並且其結構化的設計理念使得它在市場上具有競爭力。
 
 ## 適合誰使用
 
-**目標受眾**：需要穩定生成高質量圖像的設計師和開發者。
+**目標受眾**：需要高效生成穩定 AI 圖像的設計師和開發者。
 
 > [!example] 使用場景
-> - 設計師用它來快速生成多種風格的海報，因為模板化的設計能夠節省時間並提高創意的多樣性。
-> - 產品經理用它來創建信息圖，因為結構化的提示詞能夠更好地控制信息的層次和排版。
-> - 開發者用它來集成到自動化工作流中，因為這樣可以批量生成圖像，提升工作效率。
+> - 設計師用它來快速生成多個版本的產品海報，因為可以透過模板自動化生成，節省了手動調整的時間。
+> - 開發者用它來整合 AI 圖像生成到自動化工作流中，因為結構化的提示詞能夠提高生成圖像的穩定性和一致性。
+> - 教育工作者用它來創建教學材料的視覺內容，因為提供的案例和模板能夠幫助他們快速找到合適的設計風格。
 
 ## 架構分析
 
-這個專案的架構設計以模板和案例為核心，通過將提示詞結構化來提升生成圖像的效率。每個模板都針對特定的應用場景設計，並提供了相應的結構化參數，這樣用戶可以根據自己的需求進行調整。這種設計使得用戶能夠在自動化系統中輕鬆調用模板，從而實現批量生成的需求。選擇這種結構化的方式而非傳統的散文式提示詞，能夠顯著提高生成的穩定性和可控性，但也要求用戶對模板的使用有一定的理解。擴展性方面，隨著案例和模板的增加，未來可能會遇到管理和維護的挑戰。
+這個專案採用的是結構化的提示詞管理架構，將視覺設計要素拆分為原子化的元件，方便用戶根據需求進行組合。這種設計使得用戶能夠靈活調整各個要素，從而達到更高的可控性。資料流方面，使用者可以透過案例畫廊快速找到所需的視覺類型，然後選擇相應的模板進行生成。這種架構的優勢在於能夠應對不同的設計需求，但也可能導致使用者在初期需要花費時間理解如何有效利用這些模板。整體來看，這個架構在未來的擴展性上有良好的潛力，因為可以隨著新案例和模板的增加而持續演進。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於將提示詞結構化，以便於在自動化工作流中使用。透過將視覺要素拆分為原子化的組件，用戶能夠靈活組合，生成符合需求的圖像。雖然 README 中未提供具體的效能數據，但這種結構化的設計理論上能夠提高生成的速度和準確性。選擇這種方式而非傳統的提示詞，能夠顯著降低生成過程中的不確定性，但也要求用戶對模板的使用有一定的理解。這個專案的依賴關係尚不明確，未來可能需要進一步的文檔來說明如何整合到現有的技術棧中。對於需要在商業環境中使用的團隊，這個專案提供了一個有趣的解決方案，但在實際使用前建議先進行小規模的測試，以確保其穩定性和可用性。
+這個專案的核心技術機制在於將提示詞轉化為結構化的資產，這樣的設計使得用戶能夠靈活組合各種視覺要素。雖然 README 中未明確提到具體的技術棧，但其強調的原子化 Schema 和工作流友好性顯示出對於自動化的重視。效能方面，這個專案能夠支持多種視覺設計需求，但具體的處理能力和資源需求尚未明確。設計取捨上，選擇結構化的提示詞管理帶來了更高的可控性，但也可能使得使用者在初期需要投入更多時間來理解如何使用這些資源。技術風險方面，若未來需求快速變化，可能需要不斷更新和擴展模板以保持競爭力。整合方面，這個專案的設計使其能夠輕鬆與現有的工作流和工具鏈進行整合，但具體的實作細節尚需用戶根據自身需求進行調整。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了基本的項目介紹和使用指引，但缺乏詳細的安裝步驟和範例。安裝過程可能會因缺乏指導而造成困難。整體來說，對於新手來說，可能需要額外的時間來理解如何使用這個專案的模板和案例。
+> README 文件提供了清晰的項目介紹和使用指引，但缺乏具體的程式碼範例。安裝過程相對簡單，克隆專案後即可開始使用。文件目前僅提供英文版本，對於非英語使用者可能造成一定的障礙。整體來說，花 30 分鐘能夠理解基本的使用方式，但深入應用可能需要更多的時間學習。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 結構化的提示詞設計，便於重用和調整。
-> - 多樣化的案例和模板，適合不同需求的用戶。
-> - 友好的自動化集成，適合開發者使用。
+> - 提供多樣化的案例和模板，幫助用戶快速找到設計靈感。
+> - 結構化的提示詞設計，提升生成的穩定性和可重用性。
+> - 針對自動化工作流進行優化，易於與其他系統整合。
 
 > [!danger] 缺點
-> - 缺乏詳細的安裝指導和使用文檔。
-> - 目前社群活躍度尚可，但仍需觀察未來發展。
-> - 對於非英語用戶，文檔的語言可能成為障礙。
+> - 對於新手使用者來說，學習曲線較陡峭。
+> - 目前僅提供英文文檔，對非英語使用者不夠友好。
+> - 不支持直接生成圖像，需依賴外部工具。
 
 > [!warning] 注意事項
-> - 尚未提供詳細的安裝指令和依賴說明。
-> - 目前只提供英文文檔，對於非英語用戶可能不夠友好。
-> - 案例和模板的數量雖多，但仍需用戶自行調整以符合具體需求。
+> - 不支持直接生成圖像，需依賴外部 AI 圖像生成工具。
+> - 模板的使用需要一定的學習曲線，對於新手可能不夠友好。
+> - 目前僅提供英文文檔，對於非英語使用者可能造成理解障礙。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色生成和動畫，而本專案則是針對各類視覺設計的提示詞生成。 |
+| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 提供的提示詞更偏向於單一案例，而本專案則強調結構化和模板化的管理。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色生成和動畫，而本專案則是針對各類視覺設計的提示詞生成。 | 如果你的專案主要集中在角色動畫和生成，這個工具會更合適。 | medium，因為需要重新適應不同的提示詞結構和生成方式。 |
+| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 提供的提示詞更偏向於單一案例，而本專案則強調結構化和模板化的管理。 | 如果你只需要快速獲得單一圖像生成的提示，這個工具會更簡單易用。 | low，因為提示詞的使用方式相對簡單明瞭。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **awesome-gpt-image-2** | **agent-sprite-forge** | **awesome-gpt-image-2-prompts** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 專注於角色生成和動畫，而本專案則是針對各類視覺設計的提示詞生成。 | 提供的提示詞更偏向於單一案例，而本專案則強調結構化和模板化的管理。 |
+> | 遷移成本 | - | medium，因為需要重新適應不同的提示詞結構和生成方式。 | low，因為提示詞的使用方式相對簡單明瞭。 |
+> | 適用場景 | 主要場景 | 如果你的專案主要集中在角色動畫和生成，這個工具會更合適。 | 如果你只需要快速獲得單一圖像生成的提示，這個工具會更簡單易用 |
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Alpha |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | high |
+
+> [!tip] 採用建議
+> 適合個人或小型專案試用，但不建議用於生產環境的核心路徑上。
+
+## 已知陷阱
+
+> [!bug] 踩坑才知道的問題
+
+- [MEDIUM] 模板使用不當可能導致生成結果不一致，特別是對於新手使用者。
+  - 解法：建議先參考案例，理解每個模板的設計意圖。
+- **[HIGH]** 缺乏中文文檔可能會讓非英語使用者感到困難。
+  - 解法：可尋找社群支持或使用翻譯工具。
+- [MEDIUM] 不支持直接生成圖像，需依賴外部工具，可能會增加整合的複雜性。
+  - 解法：提前確認所需的外部工具和 API 接口。
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 小型設計團隊需要快速生成多個版本的市場推廣材料 | 非常適合 | 結構化的模板能夠提高生成效率和一致性。 |
+| 個人開發者希望在自己的專案中整合 AI 圖像生成 | 適合 | 提供的案例和模板能夠幫助快速上手。 |
+| 大型企業需要穩定的圖像生成解決方案 | 不適合 | 目前仍在 alpha 階段，穩定性和生產準備度不足。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | medium |
+| 綁定風險 | medium |
+
+> [!tip] 投入 vs 回報
+> 花 5 小時學習、3 小時整合，得到穩定的圖像生成效果，值得嘗試。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 低風險：該工具不需要高權限，且不存取敏感資料，但需依賴外部工具的安全性。整合到 CI/CD 中時，需確保外部工具的安全性和穩定性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個專案最常與 AI 圖像生成工具搭配使用，處於圖像生成的前端設計環節。用戶可以在使用 Next.js 的專案中，透過模板生成視覺內容，具體做法是將生成的提示詞與圖像生成 API 整合。支援的 CI 工具包括 GitHub Actions，並且可以與主流的 IDE 進行整合。最常見的整合問題是如何有效配置外部工具的 API 接口，這需要用戶根據具體情況進行調整。
 
 ## 健康度儀表板
 
@@ -241,40 +320,42 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 234 |
-| Open Issues | 2 |
+| Forks | 496 |
+| Open Issues | 4 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-04-27 |
+| 最後推送 | 2026-05-04 |
 | 建立日期 | 2026-04-25 |
-| Repo 大小 | 118.0 MB |
+| Repo 大小 | 131.5 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/freestylefly/awesome-gpt-image-2) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@freestylefly](https://github.com/freestylefly) | 13 |
+> | [@freestylefly](https://github.com/freestylefly) | 29 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，最近有更新，但 Issue 解決率低。
-**連結**：[文件](https://github.com/freestylefly/awesome-gpt-image-2)
+**社群活躍度**：社群活躍，定期更新案例和模板。
+**連結**：[文件](https://github.com/freestylefly/awesome-gpt-image-2/docs)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-25 ~ 2026-04-27）
-> **活躍天數** 3 天 · **最新 commit** Add GPT Image 2 motion and sports prompt cases
+> [!abstract] 最近 10 次 commit（2026-05-02 ~ 2026-05-03）
+> **活躍天數** 2 天 · **最新 commit** Refresh featured case sections
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#2](https://github.com/freestylefly/awesome-gpt-image-2/issues/2) | 在线可视化展示站点 | 0 | 0 |
+> | [#2](https://github.com/freestylefly/awesome-gpt-image-2/issues/2) | 在线可视化展示站点 | 2 | 3 |
+> | [#4](https://github.com/freestylefly/awesome-gpt-image-2/issues/4) | 666 | 0 | 0 |
+> | [#3](https://github.com/freestylefly/awesome-gpt-image-2/issues/3) | 例 326：红蓝撞色高跟诱惑 明显和提供的提示词不一致 | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> Prompt as Code | GPT-Image2 工业级提示词引擎与模板库
+> Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，18 套工业级模板
 > 
 >   
 >   
@@ -282,6 +363,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >   
 > 
 > > 不定期更新最新的玩法，欢迎star。
+> > 本项目由 [词元 API](https://ciyuan.today/) 提供赞助支持。词元 API 是一个 AI 聚合平台，可以高性价比使用 GPT Image 2。
 > 
 > ## ⚡️ 项目愿景
 > 
@@ -297,31 +379,152 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 
 > - [完整案例总览](docs/gallery.md)
 > - [案例画廊 Part 1：例 1-165](docs/gallery-part-1.md)
-> - [案例画廊 Part 2：例 166-351](docs/gallery-part-2.md)
+> - [案例画廊 Part 2：例 166-378](docs/gallery-part-2.md)
 > - [工业级提示词模板与防坑指南](docs/templates.md#section-templates)
 > - [MIT License](LICENSE)
 > - [完整声明页](docs/disclaimer.md#section-disclaimer)
 > 
 > ## 🗂️ 分类概览
 > 
-> - UI与界面：68
-> - 图表与信息可视化：50
-> - 海报与排版：65
-> - 商品与电商：17
-> - 品牌与标志：16
-> - 建筑与空间：25
-> - 摄影与写实：28
-> - 插画与艺术：24
-> - 人物与角色：12
-> - 场景与叙事：7
-> - 历史与古风题材：8
-> - 文档与出版物：7
-> - 其他应用场景：18
+> 先看案例画册，快速找到你想参考的视觉类型；再看提示词模板，把对应类型拆成可复用结构。
 > 
-> 需要按案例细看，直接进：
+> ### 🖼️ 案例分类画册
 > 
-> - [按册浏览完整画廊](docs/gallery.md)
-> - [提示词模板总表](docs/templates.md)
+>   
+>     
+>       🧩 UI与界面68 cases
+>       
+>       App、网页、仪表盘、社媒截图与产品界面。
+>       查看案例
+>     
+>     
+>       📊 图表与信息可视化55 cases
+>       
+>       信息图、知识图谱、技术解释与结构化图解。
+>       查看案例
+>     
+>     
+>       📰 海报与排版71 cases
+>       
+>       活动海报、封面、字体视觉和强排版画面。
+>       查看案例
+>     
+>   
+>   
+>     
+>       🛍️ 商品与电商24 cases
+>       
+>       商品图、详情页、包装卖点和商业广告。
+>       查看案例
+>     
+>     
+>       🏷️ 品牌与标志19 cases
+>       
+>       Logo、VI、品牌触点和 Campaign 视觉系统。
+>       查看案例
+>     
+>     
+>       🏛️ 建筑与空间25 cases
+>       
+>       建筑表现、室内空间、城市地图和空间概念。
+>       查看案例
+>     
+>   
+>   
+>     
+>       📷 摄影与写实34 cases
+>       
+>       人像、手机纪实、胶片质感和商业摄影。
+>       查看案例
+>     
+>     
+>       🎨 插画与艺术25 cases
+>       
+>       插画、艺术风格、材质实验和装饰画面。
+>       查看案例
+>     
+>     
+>       🧍 人物与角色14 cases
+>       
+>       角色设定、动作参考、卡牌和 3D 玩具。
+>       查看案例
+>     
+>   
+>   
+>     
+>       🎬 场景与叙事7 cases
+>       
+>       分镜、故事场景、直播画面和世界观叙事。
+>       查看案例
+>     
+>     
+>       🏮 历史与古风题材9 cases
+>       
+>       古风长卷、历史人物、传统题材和诗词画面。
+>       查看案例
+>     
+>     
+>       📚 文档与出版物7 cases
+>       
+>       白皮书、手册、百科图鉴和出版页设计。
+>       查看案例
+>     
+>   
+>   
+>     
+>       🧪 其他应用场景20 cases
+>       
+>       创意实验、特殊任务、混合玩法和实用场景。
+>       查看案例
+>     
+>     
+>       🖼️ 完整画廊
+>       
+>       按分册浏览全部 378 个案例和代表案例入口。
+>       进入画廊
+>     
+>     
+>       ⭐ 最新新增
+>       
+>       最近收录的 X 社区案例和新玩法。
+>       查看最新
+>     
+>   
+> 
+> ### 🧩 提示词模板分类
+> 
+> 模板 Page 1 / 4：设计与信息
+> 
+> | 分类 | 模板入口 | 核心能力 |
+> |---|---|---|
+> | 🧩 UI与界面 | [查看提示词](docs/templates.md#tpl-ui) | 组件、页面层级、截图质感 |
+> | 📊 图表与信息可视化 | [查看提示词](docs/templates.md#tpl-infographic) | 模块、箭头、数据结构、可读性 |
+> | 📰 海报与排版 | [查看提示词](docs/templates.md#tpl-poster) | 版式、标题、人物和视觉冲击 |
+> 
+> 模板 Page 2 / 4：商业与空间
+> 
+> | 分类 | 模板入口 | 核心能力 |
+> |---|---|---|
+> | 🛍️ 商品与电商 | [查看提示词](docs/templates.md#tpl-product) | 产品卖点、包装、详情页结构 |
+> | 🏷️ 品牌与标志 | [查看提示词](docs/templates.md#tpl-brand) | Logo、品牌身份、触点系统 |
+> | 🏛️ 建筑与空间 | [查看提示词](docs/templates.md#tpl-architecture) | 透视、材质、室内外光线 |
+> 
+> 模板 Page 3 / 4：影像与角色
+> 
+> | 分类 | 模板入口 | 核心能力 |
+> |---|---|---|
+> | 📷 摄影与写实 | [查看提示词](docs/templates.md#tpl-photo) | 镜头、光线、真实纹理 |
+> | 🎨 插画与艺术 | [查看提示词](docs/templates.md#tpl-illustration) | 笔触、材质、艺术风格 |
+> | 🧍 人物与角色 | [查看提示词](docs/templates.md#tpl-character) | 人设、动作表、角色一致性 |
+> 
+> 模板 Page 4 / 4：叙事与扩展
+> 
+> | 分类 | 模板入口 | 核心能力 |
+> |---|---|---|
+> | 🎬 场景与叙事 | [查看提示词](docs/templates.md#tpl-scene) | 分镜、世界观、情绪铺陈 |
+> | 🏮 历史与古风题材 | [查看提示词](docs/templates.md#tpl-history) | 朝代、服饰、长卷叙事 |
+> | 📚 文档与出版物 | [查看提示词](docs/templates.md#tpl-document) | 页面系统、目录、版面规范 |
+> | 🧪 其他应用场景 | [查看提示词](docs/templates.md#tpl-other) | 混合任务、实验玩法、特殊输出 |
 > 
 > ## 🖼️ 首页精选
 > 
@@ -369,31 +572,75 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 
 > ### 苍何新增实测
 > 
-> - [例 330：月下美女直播画面](docs/gallery-part-2.md#case-330)
-> - [例 331：西安手绘水彩城市地图](docs/gallery-part-2.md#case-331)
-> - [例 332：茶π产品宣传海报](docs/gallery-part-2.md#case-332)
-> - [例 333：AI 眼镜爆炸拆解图](docs/gallery-part-2.md#case-333)
-> - [例 334：RAG 技术详解图](docs/gallery-part-2.md#case-334)
-> - [例 335：朋友圈截图生成](docs/gallery-part-2.md#case-335)
-> - [例 336：个人网页视觉设计](docs/gallery-part-2.md#case-336)
-> - [例 337：《短歌行》诗词意境图](docs/gallery-part-2.md#case-337)
-> - [例 338：《赤壁怀古》长卷图](docs/gallery-part-2.md#case-338)
-> - [例 339：Apple 风格自然科普海报](docs/gallery-part-2.md#case-339)
-> - [例 340：彼岸花丛中的红妆女子](docs/gallery-part-2.md#case-340)
+>   
+>     
+>       例 330：月下美女直播画面
+>       
+>       高仿直播截图，适合参考界面氛围、弹幕和人物写实结合。
+>       查看案例
+>     
+>     
+>       例 334：RAG 技术详解图
+>       
+>       技术概念、流程箭头和中文说明模块的结构参考。
+>       查看案例
+>     
+>     
+>       例 338：《赤壁怀古》长卷图
+>       
+>       长卷尺寸、古风叙事和整篇文字排版结合完整。
+>       查看案例
+>     
+>   
+>   
+>     
+>       例 331：西安手绘水彩城市地图
+>       
+>       城市地图、手绘路线和地标标注的轻量参考。
+>       查看案例
+>     
+>     
+>       例 332：茶π产品宣传海报
+>       
+>       饮品商品图、中文卖点和清爽商业海报组合。
+>       查看案例
+>     
+>     
+>       例 339：Apple 风格自然科普海报
+>       
+>       极简棚拍、自然主体和科普信息排版。
+>       查看案例
+>     
+>   
 > 
 > ### 近 24 小时 X 社区新增
 > 
-> - [例 341：AP Calculus 学习表信息图](docs/gallery-part-2.md#case-341)
-> - [例 342：四季包装 Campaign 宫格](docs/gallery-part-2.md#case-342)
-> - [例 343：高定时尚杂志封面](docs/gallery-part-2.md#case-343)
-> - [例 344：NOIR 街头服饰 Campaign](docs/gallery-part-2.md#case-344)
-> - [例 345：法新浪潮撕纸电影海报](docs/gallery-part-2.md#case-345)
-> - [例 346：立体刺绣小鸟花枝](docs/gallery-part-2.md#case-346)
-> - [例 347：4×4 动作分解参考表](docs/gallery-part-2.md#case-347)
-> - [例 348：胡须风格分析海报](docs/gallery-part-2.md#case-348)
-> - [例 349：运动时尚三联 Campaign](docs/gallery-part-2.md#case-349)
-> - [例 350：足球球员数据涂鸦海报](docs/gallery-part-2.md#case-350)
-> - [例 351：健身品牌力量 Campaign](docs/gallery-part-2.md#case-351)
+>   
+>     
+>       例 375：古希腊三哲时间轴城市图
+>       
+>       历史人物、城市背景和时间轴叙事。
+>       查看案例
+>     
+>     
+>       例 376：泼洒抹茶街头手机照片
+>       
+>       手机纪实、真实光影和负面约束。
+>       查看案例
+>     
+>     
+>       例 377：樱花咖啡户外人像
+>       
+>       参考图编辑、身份保持和户外生活方式写真。
+>       查看案例
+>     
+>     
+>       例 378：高端 3D 收藏玩具头像
+>       
+>       参考图转 3D 收藏玩具，保留身份锚点。
+>       查看案例
+>     
+>   
 > 
 > #### 代表案例 1：月下美女直播画面
 > 
@@ -418,18 +665,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 
 > ## 🧩 模板入口
 > 
-> 完整模板已移到 [`docs/templates.md`](docs/templates.md)。这里保留最核心的使用方式：
-> 
-> 1. 先明确任务类型：UI、海报、电商、信息图、角色设定、出版物。
-> 2. 再锁定结构约束：比例、布局、模块数量、镜头语言、文字要求。
-> 3. 最后补风格和材质：色彩、光线、笔触、氛围、材质、质感。
-> 
-> 如果是给 Agent 或脚本调用，优先看：
-> 
-> - [UI 与界面模板](docs/templates.md#tpl-ui)
-> - [信息图模板](docs/templates.md#tpl-infographic)
-> - [海报模板](docs/templates.md#tpl-poster)
-> - [摄影模板](docs/templates.md#tpl-photo)
+> 完整模板已移到 [`docs/templates.md`](docs/templates.md)。如果你想按分类快速跳转，直接使用上方的 **提示词模板分类**；如果想看完整模板正文，进入 [工业级提示词模板与防坑指南](docs/templates.md#section-templates)。
 > 
 > ## 🚀 怎么用这个库
 > 
@@ -458,7 +694,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 
 > ## Star 趋势图
 > 
-> [](https://star-history.com/#canghe/awesome-gpt-image-2&Date)
+> [](https://star-history.com/#freestylefly/awesome-gpt-image-2&Date)
 > 
 > ## 公众号
 > 
@@ -470,19 +706,19 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 ## 延伸閱讀
 
-相關概念：[[Prompt Engineering]] · [[自動化]] · [[資料視覺化]]
+相關概念：[[自動化]] · [[Prompt Engineering]] · [[AI 圖像生成]]
 
-相關專案：[[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[cathrynlavery--diagram-design|cathrynlavery/diagram-design]] · [[jxnxts--mcp-brasil|jxnxts/mcp-brasil]] · [[lewislulu--html-ppt-skill|lewislulu/html-ppt-skill]] · [[steipete--discrawl|steipete/discrawl]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[cathrynlavery--diagram-design|cathrynlavery/diagram-design]] · [[jxnxts--mcp-brasil|jxnxts/mcp-brasil]]
 
 [GitHub](https://github.com/freestylefly/awesome-gpt-image-2)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：提示詞生成）
+> [!note]- 直接競品（同子分類：自動化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "提示詞生成" AND file.name != "freestylefly--awesome-gpt-image-2"
+> WHERE subcategory = "自動化" AND file.name != "freestylefly--awesome-gpt-image-2"
 > SORT stars DESC
 > ```
 
@@ -490,7 +726,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "freestylefly--awesome-gpt-image-2"
+> WHERE category = "開發工具" AND file.name != "freestylefly--awesome-gpt-image-2"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -514,7 +750,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["Prompt Engineering","自動化","資料視覺化"];
+> const concepts = ["自動化","Prompt Engineering","AI 圖像生成"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "freestylefly--awesome-gpt-image-2" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "A Codex-powered Chrome side-panel assistant for page context, tabs, voice, and image workflows."
 homepage: ""
-stars: 755
-stars_per_day: 189
-forks: 63
+stars: 772
+stars_per_day: 154
+forks: 64
 open_issues: 6
 created: 2026-04-28
 pushed_at: 2026-04-30
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-01
-use_case: "提供 Codex 驅動的 Chrome 側邊面板助手，協助用戶在瀏覽器中進行多種工作流程。"
+use_case: "提供 Codex 驅動的 Chrome 側邊助手，簡化網頁、標籤、語音和圖像工作流程。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,11 +38,11 @@ issue_close_rate: 14
 repo_size_kb: 5422
 readme_length: 7869
 bus_factor: 1
-last_release_days: 4
+last_release_days: 5
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-01"
-star_history: "2026-05-01:687,2026-05-01:687,2026-05-02:738,2026-05-02:738,2026-05-03:755,2026-05-03:755"
+star_history: "2026-05-01:687,2026-05-01:687,2026-05-02:738,2026-05-02:738,2026-05-03:755,2026-05-03:755,2026-05-04:772"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "chromex"
   - "GENEXIS-AI/chromex"
-  - "提供 Codex 驅動的 Chrome 側邊面板助手，協助用戶在瀏覽器中進行多種工作流程。"
+  - "提供 Codex 驅動的 Chrome 側邊助手，簡化網頁、標籤、語音和圖像工作流程。"
 ---
 
 # chromex
 
-**755** stars · **189** stars/天 · 建立 4 天前 · TypeScript · MIT
+**772** stars · **154** stars/天 · 建立 5 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/GENEXIS-AI--chromex");
@@ -71,13 +71,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `v0.1.2`
 
 > [!summary] 一句話摘要
-> 提供 Codex 驅動的 Chrome 側邊面板助手，協助用戶在瀏覽器中進行多種工作流程。
+> 提供 Codex 驅動的 Chrome 側邊助手，簡化網頁、標籤、語音和圖像工作流程。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (189 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** 4+ 人 · **參與度** Low
-> **適合** 需要在 Chrome 瀏覽器中進行多模態工作流程的開發者和專業用戶。
-> **一句話重點** Chromex 的設計不僅強調功能性，還重視用戶的安全和隱私。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (154 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** 4+ 人 · **參與度** Low
+> **適合** 需要在 Chrome 中進行多種工作流程並希望與 Codex 互動的開發者和創作者。
+> **一句話重點** Chromex 的設計不僅強調功能性，還特別注重用戶的安全和隱私。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -100,27 +100,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到高效的多模態工作流程，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，3 小時整合，得到強大的頁面交互能力，值得嘗試。
 
 > [!abstract] 核心創新
-> Chromex 透過本地原生橋接提供了安全的 Codex 整合，避免了敏感資料的存儲問題。
+> Chromex 透過本地原生橋接連接 Chrome 和 Codex，實現了多種頁面上下文交互功能。
 
 ## 專案簡介
 
-Chromex 是一個基於 Chrome MV3 的側邊面板助手，透過本地原生橋接連接到 Codex，讓用戶能夠與當前頁面、選定的標籤、上傳的文件、語音輸入和圖像進行互動。用戶可以透過此工具進行網頁內容的聊天、摘要、比較等操作，並能夠編輯或生成圖像，這些功能都不會將憑證存儲在擴展中。安裝過程中，使用者需要從源碼安裝，並確保在正確的目錄中運行 npm 命令，這樣可以避免常見的安裝錯誤。Chromex 的一個賣點是它的安全性設計，避免存儲敏感資料，並且只有在用戶請求時才會使用頁面內容和標籤數據。
-
-技術上，Chromex 使用了 TypeScript 和 JavaScript，並依賴於多個 npm 包來實現功能，這使得它在性能上相對輕量。與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，Chromex 提供了更為全面的多模態工作流程支持，並且能夠直接與 Chrome 瀏覽器進行深度整合。實際使用中，可能會遇到 Windows 環境下的安裝問題，但文檔中提供了詳細的解決方案。這個專案目前仍在快速發展中，適合需要在 Chrome 中進行高效工作流程的開發者和用戶。
+Chromex 是一個基於 Chrome MV3 的側邊助手，透過本地原生橋接連接 Chrome 和 Codex，幫助用戶與當前網頁、選定標籤、上傳的文件、語音輸入、圖像及瀏覽器工作流程互動。用戶可以與網頁內容進行對話，總結和比較內容，甚至編輯或生成圖像。這個工具的賣點在於其能夠在不將憑證存儲於擴展中的情況下，進行多種操作，並提供即時的頁面感知建議。技術上，Chromex 使用 TypeScript 和 JavaScript，並依賴於 Node.js 和 npm 進行安裝和構建，支持多種語言，並且在安全性上設計了不存儲敏感資料的機制。與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 QLHazyCoder/codex-oauth-automation-extension，Chromex 提供了更強的頁面上下文交互能力和本地處理的靈活性。實際使用中，可能會遇到 Windows 環境下的安裝問題，特別是與 Codex CLI 的連接，這需要用戶仔細遵循安裝步驟。這個專案目前處於 beta 階段，適合中小型團隊或個人開發者試用，未來可能會持續增強其功能和穩定性。
 
 **技術棧**：`TypeScript` · `JavaScript` · `CSS` · `HTML`
 
 ## 重點功能
 
-- 多模態交互 — 支持與當前網頁、選定標籤、上傳文件和語音進行互動。
-- 安全性設計 — 不在擴展存儲中保存敏感憑證，確保用戶資料安全。
-- 即時語音轉錄 — 提供語音輸入功能，並能進行即時建議。
-- 圖像編輯功能 — 支持對上傳的圖像進行非破壞性編輯。
-- 自定義配置文件 — 允許用戶選擇不同的工作流程和設置。
+- 多頁面交互 — 可以與當前網頁、選定標籤、上傳文件進行對話和操作。
+- 即時內容總結 — 支持對 YouTube 影片、新聞文章及 PDF 的快速總結和比較。
+- 圖像生成與編輯 — 通過 Codex 圖像工作流程編輯或生成圖像，並支持本地輸出。
+- 語音輸入支持 — 提供語音轉錄和即時語音模式，提升用戶互動體驗。
+- 安全性設計 — 不在擴展存儲敏感憑證，並提供用戶請求的工作流程。
 
 ## 快速開始
 
@@ -141,64 +139,64 @@ node scripts/install-native-host.mjs
 
 ```ts
 {
-  "前置條件": "確保已經安裝 Node.js 和 npm。",
+  "前置條件": "確保已安裝 Node.js 和 Codex CLI。",
   "指令": "npm install && npm run build && node scripts/install-native-host.mjs",
-  "預期輸出": "成功安裝並配置 Chromex 擴展。"
+  "預期輸出": "安裝完成後，您可以在 Chrome 擴展中找到 Chromex 並進行配置。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天就累積 755 stars（189/天），forks 63（8.3%），這顯示出穩定的增長趨勢。專案的主要貢獻者 GenexisAI 具備相關背景，並且這個工具解決了在 Chrome 瀏覽器中整合 Codex 的需求，之前的解決方案往往缺乏本地支持或安全性考量。最近的推廣活動和社群討論可能也促進了其知名度。這個工具的設計使得它能夠在當前的技術生態中有效運作，尤其是在多模態應用的需求上升的背景下。forks/stars 比率為 8.3%，顯示出有相當比例的用戶在實際修改和使用這個專案。
+> 建立 5 天就累積 772 stars（154/天），forks 64（8.3%），顯示出不錯的增長潛力。作者 GenexisAI 是一個活躍的開發者，專注於 AI 工具的開發。這個工具解決了在 Chrome 瀏覽器中進行多種工作流程的需求，特別是對於需要與 Codex 進行交互的用戶。近期的推廣活動和社群討論也增加了其曝光率。技術上，Codex 的進步使得這種本地橋接方案變得可行，從而提升了用戶的工作效率。forks/stars 比率在 8.3% 屬於中等，顯示出一定的實際使用需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Chrome 瀏覽器中進行多模態工作流程的開發者和專業用戶。
+**目標受眾**：需要在 Chrome 中進行多種工作流程並希望與 Codex 互動的開發者和創作者。
 
 > [!example] 使用場景
-> - 前端開發者用它來快速生成網頁內容摘要，因為這能節省手動查找和整理資料的時間，提升工作效率。
-> - 數據分析師用它來處理和分析上傳的 CSV 和 Excel 文件，因為它支持直接與這些文件進行交互，避免了繁瑣的轉換過程。
-> - 內容創作者用它來編輯和生成圖像，因為它提供了 Codex 的圖像工作流程，使得創作過程更為直觀和高效。
+> - 網頁開發者用它來快速總結和比較不同的網頁內容，因為這樣可以節省大量的閱讀時間，並提高工作效率。
+> - 數據分析師用它來處理和編輯上傳的 CSV 文件，因為它支持多種文件格式的交互，並能即時生成圖表。
+> - 內容創作者用它來生成和編輯圖像，因為它提供了 Codex 驅動的圖像工作流程，能快速滿足創作需求。
 
 ## 架構分析
 
-Chromex 採用模組化設計，將功能劃分為多個包，包括擴展、橋接和本地主機。這樣的設計使得每個部分可以獨立開發和測試，降低了維護成本。資料流從 Chrome 擴展經過本地消息主機到達 Codex 應用伺服器，這樣的架構確保了即時性和安全性。
+Chromex 的架構基於 Chrome 擴展和本地原生橋接，這樣的設計使得用戶可以在不存儲敏感資料的情況下，進行多種操作。資料流從 Chrome 擴展通過本地消息主機到 Codex 應用伺服器，這樣的設計確保了用戶的隱私和安全。選擇使用 Node.js 作為後端服務，這樣可以利用其非同步特性來處理多個請求，提升效能。
 
-選擇 TypeScript 使得類型檢查更為嚴謹，降低了潛在的錯誤。這種模組化的設計也使得未來的擴展和功能添加變得更加容易，但可能會增加初學者的學習曲線。整體架構的擴展性良好，未來可以支持更多的功能和集成。
+這種架構的代價是需要用戶在安裝時進行額外的配置，特別是在 Windows 環境下，這可能會造成使用上的困難。擴展性方面，隨著功能的增強，可能會面臨性能瓶頸，特別是在處理大量數據時。整體而言，這種設計在安全性和功能性之間取得了良好的平衡。
 
 ## 技術深入分析
 
-Chromex 的核心技術機制是透過本地原生橋接來連接 Codex，這使得它能夠在不存儲敏感資料的情況下進行多模態交互。使用 TypeScript 進行開發，提供了更強的類型安全和開發效率。效能方面，Chromex 能夠快速處理用戶的請求，並且在本地執行代碼以降低延遲。設計上，選擇模組化架構使得各個功能可以獨立開發，這樣的選擇雖然增加了初學者的學習難度，但也為未來的擴展提供了便利。技術風險方面，對於本地橋接的依賴可能在未來的擴展中帶來挑戰，特別是在不同操作系統上的兼容性問題。整合方面，Chromex 能夠與現有的 Chrome 瀏覽器生態系統無縫對接，並且支持與多種開發工具的集成，這使得它在開發流程中非常友好。
+Chromex 的核心技術機制是通過本地原生橋接來連接 Chrome 和 Codex，這使得用戶可以在不暴露敏感資料的情況下進行多種操作。它使用 TypeScript 和 JavaScript 開發，並依賴 Node.js 來處理後端邏輯，這樣的選擇使得開發過程中可以利用現有的生態系統和工具。效能方面，Chromex 能夠處理多種請求，但在高負載情況下可能會出現延遲，特別是在 Windows 環境下的安裝和配置過程中。設計上，選擇使用本地消息主機而非直接雲端交互，這樣可以減少延遲並提高安全性，但也增加了安裝的複雜性。技術風險方面，隨著功能的增強，可能會面臨性能瓶頸，特別是在處理大量數據時。整合方面，Chromex 可以與現有的 Chrome 擴展生態系統無縫對接，但在安裝過程中需要用戶進行額外的配置，這可能會影響用戶體驗。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了詳細的安裝和使用說明，對於新手來說相對清晰。安裝過程中，特別是在 Windows 環境下，可能會遇到一些問題，但文檔中有針對性的解決方案。整體來說，花 30 分鐘應該能夠順利安裝並運行起來。
+> README 文件提供了詳細的安裝步驟和功能介紹，但可能對新手來說仍然有些複雜。安裝過程中需要注意 Windows 環境的特殊要求，這可能會造成困擾。整體而言，文件清晰且有範例，適合有一定技術背景的用戶進行安裝和使用。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 多模態支持，能夠處理多種文件和輸入方式。
-> - 強大的安全性設計，避免敏感資料的存儲。
-> - 模組化架構，便於未來擴展和維護。
+> - 多功能性強，支持多種文件和頁面交互。
+> - 安全性高，敏感資料不存儲於擴展中。
+> - 支持即時語音輸入，提升用戶體驗。
 
 > [!danger] 缺點
-> - 安裝過程複雜，特別是在 Windows 環境下。
-> - 目前功能仍在開發中，可能存在不穩定性。
-> - 對於新手來說，學習曲線較陡。
+> - 安裝過程較為複雜，特別是在 Windows 環境下。
+> - 目前處於 beta 階段，功能和穩定性尚未成熟。
+> - 僅支持 Chrome 瀏覽器，無法跨平台使用。
 
 > [!warning] 注意事項
-> - 僅支援 Windows 和 Linux，對 macOS 的支持尚未實現。
-> - 安裝過程對於新手來說可能較為複雜，特別是在 Windows 環境下。
-> - 目前功能仍在開發中，可能會遇到不穩定的情況。
+> - 僅支持 Chrome 瀏覽器，無法在其他瀏覽器中使用。
+> - Windows 環境下安裝可能會遇到本地橋接問題，需要特別注意安裝步驟。
+> - 目前僅在 beta 階段，功能和穩定性可能會有變化。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的多模態交互功能，但缺乏對 Chrome 的深度整合。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 雖然也支持多種文件格式，但不具備即時語音轉錄和編輯功能。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 助手功能，但不支持本地橋接，所有交互均需依賴雲端服務。 |
+| [QLHazyCoder/codex-oauth-automation-extension](https://github.com/QLHazyCoder/codex-oauth-automation-extension) | 專注於 OAuth 自動化，但缺乏 Chromex 的多功能性和頁面上下文交互能力。 |
 
 ## 替代方案決策
 
@@ -206,45 +204,46 @@ Chromex 的核心技術機制是透過本地原生橋接來連接 Codex，這使
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體用量少，但功能較為簡單。 | 如果需要一個輕量級的解決方案，並且不需要多模態支持。 | low，因為功能相似，且 API 設計簡單。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 基於 Python 的解決方案，功能較為全面，但性能較差。 | 如果團隊已經熟悉 Python，且需要更強的數據處理能力。 | medium，因為需要重新學習 API 和功能。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 AI 助手的功能，但缺乏本地橋接的能力，所有交互均需依賴雲端服務，這可能導致延遲。 | 如果你的團隊需要一個簡單的 AI 助手，且不介意依賴雲端服務，這個工具可能更合適。 | medium，因為需要重新設計交互流程以適應雲端架構。 |
+| [QLHazyCoder/codex-oauth-automation-extension](https://github.com/QLHazyCoder/codex-oauth-automation-extension) | 專注於 OAuth 自動化，但不支持多種文件和頁面交互，功能較為單一。 | 如果你的需求主要集中在 OAuth 自動化，這個工具可能更適合。 | low，因為功能較為單一，遷移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **chromex** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **chromex** | **agent-sprite-forge** | **codex-oauth-automation-extension** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量少，但功能較為簡單。 | 基於 Python 的解決方案，功能較為全面，但性能較差。 |
-> | 遷移成本 | - | low，因為功能相似，且 API 設計簡單。 | medium，因為需要重新學習 API 和功能。 |
-> | 適用場景 | 主要場景 | 如果需要一個輕量級的解決方案，並且不需要多模態支持。 | 如果團隊已經熟悉 Python，且需要更強的數據處理能力。 |
+> | 技術路線 | 本專案 | 專注於 AI 助手的功能，但缺乏本地橋接的能力，所有交互均需依賴雲端服務，這可能導致延遲。 | 專注於 OAuth 自動化，但不支持多種文件和頁面交互，功能較為單一。 |
+> | 遷移成本 | - | medium，因為需要重新設計交互流程以適應雲端架構。 | low，因為功能較為單一，遷移成本較低。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要一個簡單的 AI 助手，且不介意依賴雲端服務 | 如果你的需求主要集中在 OAuth 自動化，這個工具可能更適 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人項目試用，但不建議用於生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** Windows 環境下安裝時可能遇到本地橋接失敗的問題
-  - 解法：確保在正確的目錄中運行 npm 命令，並重啟 Chrome 瀏覽器。
-- [MEDIUM] 某些功能在特定網站上無法正常運作
-  - 解法：檢查 Chrome 的權限設置，並確保已經授予必要的訪問權限。
+- **[HIGH]** Windows 環境下可能會遇到本地橋接連接失敗的問題
+  - 解法：確保按照安裝步驟運行 npm 和安裝本地主機
+- [MEDIUM] 安裝過程中可能會出現找不到 package.json 的錯誤
+  - 解法：確認當前目錄是包含 package.json 的正確文件夾
+- [MEDIUM] Chrome 擴展可能無法正確加載最新的 UI
+  - 解法：重新運行 npm run build 並重新加載擴展
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊進行網頁內容分析 | 非常適合 | 提供了多種文件和網頁的交互功能，能夠提升團隊效率。 |
-| 大型企業的生產環境 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
-| 自由職業者進行內容創作 | 適合 | 能夠快速生成和編輯內容，提升工作效率。 |
-| 需要高安全性的應用場景 | 非常適合 | 設計上強調安全性，避免敏感資料存儲。 |
+| 小型團隊的開發者需要在 Chrome 中進行多種工作流程 | 非常適合 | Chromex 提供了強大的頁面上下文交互能力，能夠提升工作效率。 |
+| 個人創作者希望快速生成和編輯圖像 | 適合 | Codex 驅動的圖像工作流程能夠滿足創作需求。 |
+| 大型企業需要穩定的生產環境支持 | 不適合 | 目前處於 beta 階段，功能和穩定性尚未成熟。 |
 
 ## 採用成本分析
 
@@ -256,12 +255,12 @@ Chromex 的核心技術機制是透過本地原生橋接來連接 Codex，這使
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到高效的多模態工作流程，值得投入。
+> 花 5 小時學習，3 小時整合，得到強大的頁面交互能力，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，並且不存取敏感資料，設計上強調用戶的安全和隱私。
+> 低風險：Chromex 不存儲敏感資料，並且所有 API 認證均在本地處理，適合在 CI/CD pipeline 中使用。
 
 ## 健康度儀表板
 
@@ -326,7 +325,7 @@ Chromex 的核心技術機制是透過本地原生橋接來連接 Codex，這使
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 63 |
+| Forks | 64 |
 | Open Issues | 6 |
 | Issue 解決率 | 14% (1 closed) |
 | 最後推送 | 2026-04-30 |
@@ -578,9 +577,9 @@ Chromex 的核心技術機制是透過本地原生橋接來連接 Codex，這使
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[瀏覽器擴展]] · [[即時通訊]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[多模態]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[QLHazyCoder--codex-oauth-automation-extension|QLHazyCoder/codex-oauth-automation-extension]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[QLHazyCoder--codex-oauth-automation-extension|QLHazyCoder/codex-oauth-automation-extension]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]]
 
 [GitHub](https://github.com/GENEXIS-AI/chromex)
 
@@ -622,7 +621,7 @@ Chromex 的核心技術機制是透過本地原生橋接來連接 Codex，這使
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["多模態","瀏覽器擴展","即時通訊"];
+> const concepts = ["CLI/TUI","自動化","多模態"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "GENEXIS-AI--chromex" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

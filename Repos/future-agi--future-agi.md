@@ -7,12 +7,12 @@ language: Python
 license: Apache-2.0
 description: "Open-source, end-to-end platform for evaluating, observing, and improving LLM and AI agent applications. Tracing · Evals · Simulations · Datasets · Gateway · Guardrails. Self-hostable. Apache 2.0."
 homepage: "https://futureagi.com"
-stars: 748
-stars_per_day: 125
-forks: 130
-open_issues: 48
+stars: 816
+stars_per_day: 82
+forks: 140
+open_issues: 67
 created: 2026-04-23
-pushed_at: 2026-04-29
+pushed_at: 2026-05-03
 first_seen: 2026-04-30
 week: "2026-W18"
 month: "2026-04"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-30
-use_case: "提供一個開源平台，幫助評估、觀察和改善 LLM 和 AI agent 應用。"
+use_case: "提供一個開源平台來評估、觀察和改善 LLM 和 AI 代理應用程式。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 1
 next_review: "2026-05-07"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 6
-repo_size_kb: 72411
+issue_close_rate: 4
+repo_size_kb: 71755
 readme_length: 10000
 bus_factor: 3
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-30"
-star_history: "2026-04-30:748"
+star_history: "2026-04-30:748,2026-05-04:816"
 tags:
   - github
   - "category/ai_ml"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "future-agi"
   - "future-agi/future-agi"
-  - "提供一個開源平台，幫助評估、觀察和改善 LLM 和 AI agent 應用。"
+  - "提供一個開源平台來評估、觀察和改善 LLM 和 AI 代理應用程式。"
 ---
 
 # future-agi
 
-**748** stars · **125** stars/天 · 建立 6 天前 · Python · Apache-2.0
+**816** stars · **82** stars/天 · 建立 10 天前 · Python · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/future-agi--future-agi");
@@ -79,13 +79,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ai` `ai-gateway` `evals` `llm` `observability` `simulation`
 
 > [!summary] 一句話摘要
-> 提供一個開源平台，幫助評估、觀察和改善 LLM 和 AI agent 應用。
+> 提供一個開源平台來評估、觀察和改善 LLM 和 AI 代理應用程式。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (125 stars/day)
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (82 stars/day)
 > **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要一個整合評估、監控和優化功能的 AI agent 開發團隊。
-> **一句話重點** 這個專案的價值在於它能夠將多個獨立的 AI 工具整合成一個完整的解決方案，讓開發者能更專注於模型的優化和部署。
+> **適合** 需要一個全面的解決方案來開發和評估 AI 代理的中小型開發團隊。
+> **一句話重點** Future AGI 的整合性和開源特性使其成為開發和評估 AI 代理的理想選擇。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -109,103 +109,103 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習，20 小時整合，得到全面的 AI agent 開發解決方案，值得投入。
+> **結論** 花 10 小時學習，20 小時整合，得到一個全面的 AI 代理開發平台，值得投資。
 
 > [!abstract] 核心創新
-> 將評估、觀察和優化整合為一個平台，實現 AI agent 的自我改進。
+> 提供一個全方位的 AI 代理開發和評估平台，整合模擬、評估、保護和監控功能。
 
 ## 專案簡介
 
-Future AGI 是一個開源的端到端平台，專注於評估、觀察和改善大型語言模型（LLM）及 AI agent 應用。其核心機制是將多種工具整合為一個平台，實現從模擬、評估到保護和優化的完整流程，並通過即時反饋迴路提升 AI agent 的性能。使用者可以透過簡單的指令 `docker compose up -d` 快速啟動自我託管的環境，或選擇雲端服務進行快速部署。技術上，Future AGI 利用 Python 和 Go 實現高效的網關，並通過 OpenTelemetry 提供詳細的追蹤和監控，支持高達 29,000 請求每秒的處理能力。與其他工具相比，如 Langfuse 和 Braintrust，Future AGI 提供了更全面的功能，包括內建的評估套件和模擬功能，這使得它在生產環境中更具優勢。實際使用中，使用者可以透過 `evaluate()` 函數獲取超過 50 種評估指標，並利用內建的防護機制確保 AI agent 的安全性。儘管目前仍在測試階段，但其設計目標是提供一個穩定且高效的解決方案，適合需要高性能 AI agent 的團隊使用。
+Future AGI 是一個開源、端到端的平台，旨在解決 AI 代理在生產環境中常見的問題，通過一個統一的反饋循環來提升性能。用戶可以選擇雲端快速部署或自我託管，並透過 `docker compose up -d` 命令輕鬆啟動。平台的核心功能包括模擬、評估、保護和監控，這些功能整合在一個生態系統中，避免了傳統上需要多個工具的繁瑣。技術上，Future AGI 使用 Python 和 Go，並依賴 PostgreSQL 和 ClickHouse 作為數據存儲，支持高達 29,000 請求每秒的性能，並且 P99 延遲低於 21 毫秒。
 
-**技術棧**：`Python 3.11` · `Go 1.23` · `PostgreSQL` · `ClickHouse` · `Redis` · `RabbitMQ` · `Django 4.2`
+與其他工具相比，Future AGI 提供了內建的評估套件和模擬功能，這在同類產品中是獨特的，能夠在部署前進行全面的測試。使用者可以利用 50 多種評估指標來評估 AI 代理的表現，並且支持多種 LLM 提供者的集成。這使得 Future AGI 特別適合需要快速迭代和高可靠性的 AI 應用開發團隊。隨著開源社群的支持和活躍的開發，這個平台的未來發展值得期待。
+
+**技術棧**：`Python 3.11+ (Django 4.2 + Channels)` · `Go 1.23+ (gateway)` · `PostgreSQL` · `ClickHouse` · `Redis` · `RabbitMQ` · `Temporal`
 
 ## 重點功能
 
-- 全面的評估套件 — 提供超過 50 種評估指標，使用 `evaluate()` 函數進行評估。
-- 內建模擬功能 — 支援多輪對話和邊緣案例模擬，生成真實場景的測試數據。
-- 即時監控 — 使用 OpenTelemetry 進行追蹤，支援高達 29,000 請求每秒的處理能力。
-- 安全防護機制 — 內建 18 種掃描器，檢查 PII 和注入攻擊等風險。
-- 自我託管選項 — 提供 Docker 和 Kubernetes 部署選項，滿足數據主權需求。
+- 一體化平台 — 整合模擬、評估、保護和監控功能，避免使用多個工具。
+- 高性能 — 支持每秒 29,000 請求，P99 延遲低於 21 毫秒，適合生產環境。
+- 多種評估指標 — 提供 50+ 指標來評估 AI 代理的表現，包括基於 LLM 的評估。
+- 開源和自我託管 — 允許用戶完全控制數據和部署環境，符合數據主權要求。
+- 即時監控 — 利用 OpenTelemetry 進行即時性能監控，無需額外配置。
 
 ## 快速開始
 
-1. 克隆專案並啟動 Docker 環境
+1. 克隆專案並啟動 Docker
 ```bash
 git clone https://github.com/future-agi/future-agi.git && cd future-agi && cp futureagi/.env.example futureagi/.env && docker compose up -d
 ```
 2. 訪問本地應用
 ```bash
-http://localhost:3031
+Open http://localhost:3031
 ```
-3. 安裝 Python SDK
+3. 使用 Helm 部署（進階）
 ```bash
-pip install ai-evaluation
+helm repo add futureagi && helm install fagi futureagi/future-agi
 ```
 
 ## 程式碼範例
 
 ```python
 {
-  "前置條件": "安裝了 Future AGI SDK",
-  "程式碼": "from fi_instrumentation import register\nfrom traceai_openai import OpenAIInstrumentor\n\nregister(project_name=\"my-agent\")\nOpenAIInstrumentor().instrument()\n\n# 你的 OpenAI 代碼現在被追蹤。\nresponse = client.chat.completions.create(\n    model=\"gpt-4o\",\n    messages=[{\"role\": \"user\", \"content\": query}],\n)",
-  "預期輸出": "追蹤的 OpenAI 代碼將提供詳細的性能數據和評估指標。"
+  "前置條件": "已安裝必要的 Python 套件",
+  "程式碼": "from fi_instrumentation import register\nfrom traceai_openai import OpenAIInstrumentor\n\nregister(project_name=\"my-agent\")\nOpenAIInstrumentor().instrument()\n\nresponse = client.chat.completions.create(\n    model=\"gpt-4o\",\n    messages=[{\"role\": \"user\", \"content\": query}],\n)",
+  "預期輸出": "將會追蹤 OpenAI 代理的請求和響應。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天內累積 748 stars（124.7/天），forks 130（17.4%），顯示出強勁的增長潛力。作者團隊由多位開發者組成，這些人過去在 AI 和開源領域有豐富的經驗。這個專案解決了以往 AI agent 在生產環境中難以有效監控和優化的痛點，通過整合多種功能，讓開發者能夠在一個平台上完成所有工作。近期的社群討論和需求也促進了這個工具的快速成長。隨著對 AI agent 需求的增加，這個工具的出現恰逢其時。
+> 建立 10 天內累積 816 stars（每日 82），forks 140（17.2%），顯示出強勁的增長潛力。這個專案由一群經驗豐富的開發者推動，他們在 AI 和開源領域有著豐富的背景。Future AGI 解決了 AI 代理在生產環境中常見的失敗問題，提供了一個集成的解決方案，這在市場上是相對稀缺的。最近的推廣活動和社群的積極參與也促進了這個專案的曝光率。隨著對 AI 代理需求的增加，這個平台的可行性和必要性愈發明顯。
 
 ## 適合誰使用
 
-**目標受眾**：需要一個整合評估、監控和優化功能的 AI agent 開發團隊。
+**目標受眾**：需要一個全面的解決方案來開發和評估 AI 代理的中小型開發團隊。
 
 > [!example] 使用場景
-> - AI 研究者用它來模擬多輪對話，因為可以快速生成真實場景的測試數據，提升模型的穩定性。
-> - DevOps 工程師用它來監控 AI agent 的性能，因為內建的 OpenTelemetry 支援讓監控變得無縫且高效。
-> - 產品經理用它來評估不同 AI agent 的表現，因為可以透過一個簡單的 API 獲得超過 50 種評估指標。
+> - AI 研究員用它來模擬多輪對話，因為可以在真實環境中測試代理的表現，從而提高模型的準確性。
+> - DevOps 工程師用它來監控 AI 代理的性能，因為內建的 OpenTelemetry 支持能夠提供即時的性能數據。
+> - 產品經理用它來評估不同 LLM 的表現，因為可以使用 50+ 指標進行全面的性能評估，從而做出更明智的決策。
 
 ## 架構分析
 
-Future AGI 採用微服務架構，核心由 Python 和 Go 實現，確保高效能和可擴展性。數據流通過 OpenTelemetry 進行追蹤，並使用 PostgreSQL 和 ClickHouse 作為數據存儲。這樣的設計使得每個組件都能獨立擴展，並且能夠輕鬆整合不同的技術棧。選擇 Go 作為網關的實現語言，因為其高效的並發處理能力，這對於需要高請求處理的場景至關重要。整體架構的擴展性良好，但在高負載下可能會遇到數據庫性能瓶頸，特別是在大量並發請求的情況下。
+Future AGI 採用微服務架構，核心組件包括使用 Python 和 Go 的服務，並通過 OpenTelemetry 進行追蹤。數據存儲使用 PostgreSQL 和 ClickHouse，支持高效的查詢和分析。每個組件之間的通信使用標準化的 API 接口，這使得整個系統具備良好的擴展性。選擇微服務架構的原因在於能夠獨立部署和擴展各個功能模塊，但這也帶來了管理和部署的複雜性。整體架構設計考慮到性能和可維護性，能夠在高負載下運行，但在某些情況下可能需要額外的資源來支持高並發請求。
 
 ## 技術深入分析
 
-Future AGI 的核心技術機制是將多種功能整合在一個平台上，這包括評估、模擬、監控和優化。這樣的設計使得開發者能夠在同一個環境中進行所有操作，從而提高了效率。效能方面，該平台能夠處理高達 29,000 請求每秒，這對於需要高並發的應用場景非常重要。選擇 Python 和 Go 作為主要開發語言，這不僅提高了開發效率，也確保了運行時的性能。
-
-整體架構的依賴關係相對簡單，主要依賴於 PostgreSQL 和 ClickHouse 進行數據存儲，這使得整體系統的維護成本較低。技術風險方面，隨著使用者數量的增加，可能會遇到性能瓶頸，特別是在數據庫的讀寫性能上。整合方面，Future AGI 能夠輕鬆與主流的 AI 框架如 LangChain 和 LlamaIndex 進行整合，這降低了使用門檻。整體來看，這個專案在技術上具備了良好的擴展性和靈活性，適合未來的發展需求。
+Future AGI 的核心技術機制包括使用 OpenTelemetry 進行追蹤，這使得開發者能夠獲得詳細的性能數據和行為分析。該平台支持高並發請求，能夠在生產環境中處理大量的 AI 代理請求，並且在性能測試中顯示出優異的結果。選擇 Python 和 Go 作為主要開發語言，能夠充分利用兩者在數據處理和網絡性能上的優勢。整體架構設計上，微服務的選擇使得各個功能模塊能夠獨立擴展，但也增加了系統的複雜性。未來的技術風險主要集中在對外部 API 的依賴程度上，尤其是在高負載情況下可能會出現瓶頸。與主流框架的整合相對友好，能夠輕鬆接入現有的 CI/CD 流程，降低了團隊的學習成本。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝指引和範例，讓新手能快速上手。安裝過程相對順暢，但需要具備 Docker 或 Kubernetes 的基本知識。文件中有詳細的 getting started guide，並且提供了多種語言的支持，方便不同背景的開發者使用。
+> README 文件提供了清晰的安裝步驟和範例，讓新手能夠快速上手。安裝過程相對順暢，但仍需注意 Docker 和 Kubernetes 的配置。文件中有詳細的指南和多語言支持，方便不同背景的開發者使用。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 整合多種功能於一個平台，減少工具間的整合成本。
-> - 高效能的網關設計，能處理大量請求。
-> - 開源且可自我託管，滿足數據主權需求。
+> - 提供全面的功能集，無需依賴多個工具。
+> - 開源且可自我託管，適合數據主權需求。
+> - 高性能，適合生產環境的要求。
 
 > [!danger] 缺點
-> - 目前仍在測試階段，可能存在不穩定性。
-> - 需要一定的技術背景來進行自我託管。
-> - 某些功能尚未完全實現，可能影響使用體驗。
+> - 仍在開發中，可能存在不穩定性。
+> - 需要一定的技術背景來進行配置和維護。
+> - 對於特定企業需求的支持可能不足。
 
 > [!warning] 注意事項
 > - 目前仍在測試階段，可能存在不穩定的功能。
-> - 需要 Docker 或 Kubernetes 環境進行自我託管。
-> - 某些功能仍在開發中，可能無法立即使用。
+> - 對於大型企業的特定需求可能需要進一步的自定義。
+> - 需要一定的技術背景來進行自我託管和配置。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI agent 模擬功能，但缺乏內建的評估和監控工具，適合需要專注於模擬的場景。 |
-| [Langfuse/langfuse](https://github.com/Langfuse/langfuse) | 雖然也支持 LLM 追蹤，但 Langfuse 的功能較為單一，無法提供全面的評估和防護機制。 |
-| [Braintrust/braintrust](https://github.com/Braintrust/braintrust) | 提供類似的 AI agent 功能，但缺乏內建的模擬和優化工具，適合較小規模的專案。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 代理模擬功能，但缺乏內建的評估指標和監控工具。 |
+| [Langfuse/langfuse](https://github.com/Langfuse/langfuse) | 專注於 LLM 的追蹤和分析，但不具備模擬和保護功能。 |
+| [Braintrust/braintrust](https://github.com/Braintrust/braintrust) | 提供 AI 代理的監控和評估，但不支持自我託管和開源。 |
 
 ## 替代方案決策
 
@@ -213,16 +213,16 @@ Future AGI 的核心技術機制是將多種功能整合在一個平台上，這
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [Langfuse/langfuse](https://github.com/Langfuse/langfuse) | 專注於 LLM 追蹤和監控，但缺乏模擬和評估功能，適合需要專注於性能監控的場景。 | 如果你的團隊已經在使用 Langfuse 進行監控，並希望專注於性能優化而非模擬。 | medium，因為需要將現有的監控邏輯轉移到 Langfuse。 |
-| [Braintrust/braintrust](https://github.com/Braintrust/braintrust) | 提供基本的 AI agent 功能，但缺乏全面的評估和模擬工具，適合小型專案。 | 如果你的專案規模較小，且不需要複雜的評估和模擬功能。 | low，因為功能較為簡單，遷移成本不高。 |
+| [Langfuse/langfuse](https://github.com/Langfuse/langfuse) | 專注於 LLM 的追蹤和分析，提供基本的評估功能，但缺乏模擬和保護功能。 | 如果你的團隊主要關注 LLM 的性能追蹤，而不需要全面的模擬和保護功能。 | medium，因為需要重新配置評估和模擬的流程。 |
+| [Braintrust/braintrust](https://github.com/Braintrust/braintrust) | 提供 AI 代理的監控和評估，但不支持自我託管，主要依賴雲端服務。 | 如果你的團隊不需要自我託管的選項，並且更傾向於使用雲端解決方案。 | low，因為大多數功能類似，可以直接轉移。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **future-agi** | **langfuse** | **braintrust** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 LLM 追蹤和監控，但缺乏模擬和評估功能，適合需要專注於性能監控的場景。 | 提供基本的 AI agent 功能，但缺乏全面的評估和模擬工具，適合小型專案。 |
-> | 遷移成本 | - | medium，因為需要將現有的監控邏輯轉移到 Langfuse。 | low，因為功能較為簡單，遷移成本不高。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Langfuse 進行監控，並希望專 | 如果你的專案規模較小，且不需要複雜的評估和模擬功能。 |
+> | 技術路線 | 本專案 | 專注於 LLM 的追蹤和分析，提供基本的評估功能，但缺乏模擬和保護功能。 | 提供 AI 代理的監控和評估，但不支持自我託管，主要依賴雲端服務。 |
+> | 遷移成本 | - | medium，因為需要重新配置評估和模擬的流程。 | low，因為大多數功能類似，可以直接轉移。 |
+> | 適用場景 | 主要場景 | 如果你的團隊主要關注 LLM 的性能追蹤，而不需要全面的模擬 | 如果你的團隊不需要自我託管的選項，並且更傾向於使用雲端解決方 |
 
 ## 成熟度評估
 
@@ -233,26 +233,27 @@ Future AGI 的核心技術機制是將多種功能整合在一個平台上，這
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合對 AI agent 開發有興趣的開發者進行試用，但不建議在生產環境中使用。
+> 適合個人或小型團隊的試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高負載下，數據庫可能會成為性能瓶頸。
-  - 解法：考慮使用讀寫分離的數據庫架構來減輕壓力。
-- [MEDIUM] 某些功能仍在開發中，可能會導致不穩定性。
-  - 解法：定期檢查更新和社群討論以獲取最新資訊。
-- [MEDIUM] Docker 環境配置不當可能導致啟動失敗。
-  - 解法：仔細檢查 .env 配置文件，確保所有環境變數正確設置。
+- **[HIGH]** 在高負載下可能會出現性能瓶頸，特別是對外部 API 的依賴。
+  - 解法：考慮使用緩存機制來減少對外部請求的依賴。
+- [MEDIUM] Docker 部署時可能需要特定的環境變數配置。
+  - 解法：確保在 `.env` 文件中正確設置所有必要的變數。
+- [MEDIUM] 某些功能在 Kubernetes 部署中可能不完全支持。
+  - 解法：在部署前檢查官方文檔以獲取最新的支持狀態。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司開發 AI agent | 非常適合 | 提供全面的功能，能夠支持從開發到部署的全過程。 |
-| 大型企業的 AI 部門進行性能監控 | 適合 | 雖然功能強大，但可能需要額外的資源來維護。 |
-| 個人開發者進行小型專案 | 普通 | 功能過於複雜，對於小型專案來說可能不必要。 |
+| 10 人以下的新創公司開發 AI 代理 | 非常適合 | 提供全面的功能集，無需依賴多個工具，適合小型團隊快速迭代。 |
+| 大型企業的 AI 部門 | 普通 | 雖然功能強大，但可能需要額外的自定義和支持。 |
+| 學術研究團隊進行 AI 代理的性能評估 | 適合 | 提供多種評估指標，能夠滿足研究需求。 |
+| 需要快速部署的商業應用 | 不適合 | 目前仍在開發中，可能存在不穩定性。 |
 
 ## 採用成本分析
 
@@ -264,12 +265,12 @@ Future AGI 的核心技術機制是將多種功能整合在一個平台上，這
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習，20 小時整合，得到全面的 AI agent 開發解決方案，值得投入。
+> 花 10 小時學習，20 小時整合，得到一個全面的 AI 代理開發平台，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，並且不會存取敏感資料。依賴鏈的信任程度較高，無已知的供應鏈風險。
+> 低風險：該工具不需要高權限，並且不存取敏感資料，依賴鏈的信任程度高，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -334,13 +335,13 @@ Future AGI 的核心技術機制是將多種功能整合在一個平台上，這
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 130 |
-| Open Issues | 48 |
-| Issue 解決率 | 6% (3 closed) |
-| 最後推送 | 2026-04-29 |
+| Forks | 140 |
+| Open Issues | 67 |
+| Issue 解決率 | 4% (3 closed) |
+| 最後推送 | 2026-05-03 |
 | 建立日期 | 2026-04-23 |
 | 官方網站 | [Link](https://futureagi.com) |
-| Repo 大小 | 70.7 MB |
+| Repo 大小 | 70.1 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/future-agi/future-agi) |
 | Topics | `ai` `ai-gateway` `evals` `llm` `observability` `simulation` |
 
@@ -364,13 +365,13 @@ Future AGI 的核心技術機制是將多種功能整合在一個平台上，這
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和回應問題。
-**連結**：[文件](https://docs.futureagi.com)
+**社群活躍度**：社群活躍，定期更新和討論。
+**連結**：[文件](https://docs.futureagi.com) · [Discord](https://discord.gg/futureagi)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-28 ~ 2026-04-29）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #135 from future-agi/fix/hotfix-for-reddit-metadata-issue
+> [!abstract] 最近 10 次 commit（2026-04-28 ~ 2026-04-30）
+> **活躍天數** 3 天 · **最新 commit** Merge pull request #177 from future-agi/fix/disable-eval-clustering-trigger
 
 ## README 摘錄
 
