@@ -7,12 +7,12 @@ language: Python
 license: N/A
 description: "A Domain-Fronting Relay that routes traffic though GAS (Google Apps Script) and forwards it to Cloudflare Workers. Designed to bypass DPI."
 homepage: ""
-stars: 1703
-stars_per_day: 341
-forks: 192
-open_issues: 49
+stars: 1961
+stars_per_day: 327
+forks: 207
+open_issues: 51
 created: 2026-04-27
-pushed_at: 2026-05-02
+pushed_at: 2026-05-03
 first_seen: 2026-05-02
 week: "2026-W18"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "透過 Google Apps Script 和 Cloudflare Workers 繞過 DPI 的域名
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-05-06"
+appearances: 3
+next_review: "2026-05-07"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 23
@@ -42,7 +42,7 @@ last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-02"
-star_history: "2026-05-02:1316,2026-05-02:1319,2026-05-03:1701,2026-05-03:1703"
+star_history: "2026-05-02:1316,2026-05-02:1319,2026-05-03:1701,2026-05-03:1703,2026-05-04:1961"
 tags:
   - github
   - "category/安全"
@@ -810,5 +810,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-04|2026-05-04]] — 再次上榜，2.0k stars
 - [[2026-05-03|2026-05-03]] — 再次上榜，1.7k stars
 - [[2026-05-02|2026-05-02]] — 首次收錄，1.3k stars

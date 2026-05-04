@@ -1,23 +1,23 @@
 ---
-repo: theori-io/copy-fail-CVE-2026-31431
-url: https://github.com/theori-io/copy-fail-CVE-2026-31431
-owner: theori-io
-owner_type: Organization
-language: Python
+repo: wrongly-cuddly-obsession/NTSB_FOIA_MU5735
+url: https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735
+owner: wrongly-cuddly-obsession
+owner_type: User
+language: N/A
 license: N/A
 description: ""
 homepage: ""
-stars: 3020
-stars_per_day: 755
-forks: 630
-open_issues: 102
-created: 2026-04-29
-pushed_at: 2026-04-29
-first_seen: 2026-05-01
-week: "2026-W18"
+stars: 811
+stars_per_day: 270
+forks: 298
+open_issues: 15
+created: 2026-04-30
+pushed_at: 2026-05-03
+first_seen: 2026-05-04
+week: "2026-W19"
 month: "2026-05"
-category: "安全"
-subcategory: "漏洞測試"
+category: "其他"
+subcategory: "資料存檔"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -25,42 +25,41 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-05-01
-use_case: "提供 CVE-2026-31431 的漏洞利用工具，幫助用戶測試和修補相關系統。"
+last_reviewed: 2026-05-04
+use_case: "提供 MU5735 調查的 FOIA 請求資料，並包含中文翻譯。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-05-07"
-contributor_count: 2
-engagement: "medium"
-issue_close_rate: 7
-repo_size_kb: 3
-readme_length: 405
+contributor_count: 1
+engagement: "high"
+issue_close_rate: 17
+repo_size_kb: 147868
+readme_length: 1476
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-05-01"
-star_history: "2026-05-01:1694,2026-05-02:2466,2026-05-03:2901,2026-05-04:3020"
+ring_history: "assess@2026-05-04"
+star_history: "2026-05-04:811"
 tags:
   - github
-  - "category/安全"
-  - "lang/python"
-  - org
+  - "category/其他"
+  - "lang/other"
   - easy_install
 aliases:
-  - "copy-fail-CVE-2026-31431"
-  - "theori-io/copy-fail-CVE-2026-31431"
-  - "提供 CVE-2026-31431 的漏洞利用工具，幫助用戶測試和修補相關系統。"
+  - "NTSB_FOIA_MU5735"
+  - "wrongly-cuddly-obsession/NTSB_FOIA_MU5735"
+  - "提供 MU5735 調查的 FOIA 請求資料，並包含中文翻譯。"
 ---
 
-# copy-fail-CVE-2026-31431
+# NTSB_FOIA_MU5735
 
-**1.7k** stars · **1.7k** stars/天 · 建立 1 天前 · Python · 未標註授權
+**811** stars · **270** stars/天 · 建立 3 天前 · N/A · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/theori-io--copy-fail-CVE-2026-31431");
+const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,23 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`ORG` `easy-install`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供 CVE-2026-31431 的漏洞利用工具，幫助用戶測試和修補相關系統。
+> 提供 MU5735 調查的 FOIA 請求資料，並包含中文翻譯。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (1.7k stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** 2 人 · **參與度** Medium
-> **適合** 需要針對 CVE-2026-31431 漏洞進行測試的系統管理員和安全研究人員。
-> **一句話重點** 這個工具專注於特定漏洞的測試，能夠快速識別系統的安全隱患。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (270 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
+> **適合** 需要查閱 MU5735 飛機事故調查資料的研究者和專業人士。
+> **一句話重點** 這個專案提供了 MU5735 調查的資料存檔和翻譯，讓使用者能夠更方便地獲取相關資訊。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/theori-io--copy-fail-CVE-2026-31431");
+> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "漏洞測試" && p.file.name !== "theori-io--copy-fail-CVE-2026-31431" && p.status !== "archived")
+>     .where(p => p.subcategory === "資料存檔" && p.file.name !== "wrongly-cuddly-obsession--NTSB_FOIA_MU5735" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -97,174 +96,96 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 漏洞測試 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 資料存檔 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，能快速檢查系統是否受到 CVE-2026-31431 影響，值得採用。
+> **安裝** Easy (一行搞定)
 
 > [!abstract] 核心創新
-> 這個專案專注於 CVE-2026-31431 的漏洞測試，提供了一個針對性強的解決方案。
+> 這個專案提供了 MU5735 調查的資料存檔和翻譯，讓使用者能夠更方便地獲取相關資訊。
 
 ## 專案簡介
 
-這個專案旨在針對 CVE-2026-31431 漏洞提供一個可利用的工具，讓系統管理員和安全研究人員能夠測試其系統的脆弱性。使用者可以在多個 Linux 發行版上進行測試，包括 Ubuntu 24.04 LTS、Amazon Linux 2023、RHEL 10.1 和 SUSE 16。透過執行特定的 Python 指令，使用者可以驗證其系統是否受到影響，並進行相應的修補。這個工具的賣點在於其針對特定漏洞的專注性，能夠快速識別系統的安全隱患。技術上，專案使用 Python 編寫，並依賴於標準的 Linux 系統命令，這使得它的安裝和使用相對簡單。
+這個專案是對 MU5735 飛機事故調查的 FOIA 請求資料的存檔，目的是保留原始資料以供後續查閱。使用者可以在此找到與 NTSB 相關的資料，包括非官方的中文翻譯報告。該專案的設計考量是為了保護原始資料提供者的隱私，因為原始資料已被刪除或設為私有。使用者可以直接從 NTSB 網站下載最新的資料，這樣的設計使得資料的獲取更為方便。關鍵的 CLI 指令是訪問資料的鏈接，並且提供了中文翻譯的連結，這對於中文使用者特別有幫助。這個專案的「一句話賣點」是：提供 MU5735 調查的資料存檔和翻譯，讓使用者能夠更方便地獲取相關資訊。
 
-與其他安全測試工具相比，如 Metasploit 和 Nessus，這個專案專注於單一漏洞的利用，可能在功能上不如這些工具全面，但在針對性測試上更具優勢。使用者在使用過程中可能會遇到一些常見問題，例如需要特定版本的依賴包，或在某些環境下的兼容性問題。這個專案目前處於早期階段，活躍度高，社群反饋也相對迅速，適合對 CVE-2026-31431 漏洞有興趣的安全研究人員和系統管理員。未來幾個月，預計會有更多的功能和修補版本推出，以應對社群的需求。
-
-**技術棧**：`Python`
+技術上，這個專案並未使用複雜的框架或演算法，主要依賴 GitHub 的版本控制功能來管理資料。相較於其他資料庫，這個專案的獨特之處在於它專注於特定事件的資料存檔，並且提供了中文翻譯，這在同類專案中並不常見。使用者可能會遇到的問題包括資料的更新速度和原始資料的可用性，這些都取決於 NTSB 的發布進度。這個專案目前處於活躍狀態，社群的回應速度也相對較快，特別是在熱門問題上。對於需要查閱 MU5735 事件資料的研究者或關心該事件的人來說，這是一個值得使用的資源。未來幾個月，該專案可能會隨著 NTSB 的更新而持續增長，並且可能會吸引更多的使用者來參與資料的討論和補充。
 
 ## 重點功能
 
-- 針對 CVE-2026-31431 的專用漏洞測試工具 — 允許用戶檢查其系統是否受到影響。
-- 支持多個 Linux 發行版 — 包括 Ubuntu、Amazon Linux、RHEL 和 SUSE，增加了使用的靈活性。
-- 簡單的安裝和使用 — 只需執行 Python 指令即可開始測試。
-- 活躍的社群反饋 — 社群能夠快速提出問題和建議，促進專案的改進。
-- 詳細的技術寫作 — 提供了針對漏洞的深入分析和測試指南。
+- 資料存檔 — 提供 MU5735 調查的 FOIA 請求資料，方便查閱。
+- 中文翻譯 — 提供 NTSB 記錄器報告的非官方中文翻譯，方便中文使用者理解。
+- 直接下載鏈接 — 提供從 NTSB 網站直接下載資料的鏈接，方便使用者獲取最新資訊。
+- 社群互動 — 支持使用者在 Issues 中討論和提問，促進資料的理解和補充。
+- 隱私保護 — 重新上傳資料以保護原始資料提供者的隱私。
 
 ## 快速開始
 
-1. 克隆專案
+1. 克隆專案到本地
 ```bash
-git clone https://github.com/theori-io/copy-fail-CVE-2026-31431.git
+git clone https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735.git
 ```
-2. 進入專案目錄
+2. 訪問 NTSB 的資料下載鏈接
 ```bash
-cd copy-fail-CVE-2026-31431
+https://securefoia.ntsb.gov/app/AddAttachment.aspx?docid=66&ispaldoc=F
 ```
-3. 安裝依賴
+3. 查看中文翻譯報告
 ```bash
-pip install -r requirements.txt
-```
-4. 執行測試
-```bash
-python test.py
+https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NTSB_Recorder_Report_CN/MU5735_NTSB_Recorder_Report_Chinese.md
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 1694 stars（1694/天），forks 374（22.1%），這顯示出強烈的社群興趣。作者 junomonster 和 tylerni7 在安全領域有一定的經驗，這使得他們的專案受到關注。這個工具解決了針對 CVE-2026-31431 漏洞的測試需求，之前的工具往往無法針對這類特定漏洞進行有效測試。社群的反饋和需求促使了這個專案的快速發展，尤其是在安全領域，對於特定漏洞的研究和修補需求持續上升。
+> 建立 3 天內累積 811 stars（270/天），forks 298（36.7%），這顯示出極高的使用者關注度。專案的主要貢獻者是 wrongly-cuddly-obsession，這位使用者過去在資料存檔方面有一定的經驗。這個專案解決了資料存取的問題，因為之前的資料已經被刪除，使用者無法獲取。NTSB 的資料發布也促進了這個專案的興起，因為它提供了更方便的資料獲取方式。社群的反應和討論也顯示出使用者對於該事件的關注，特別是在熱門問題中有許多討論。這個專案的 forks/stars 比率高達 36.7%，代表著許多人在實際修改和使用這個專案，顯示出其實用性和需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要針對 CVE-2026-31431 漏洞進行測試的系統管理員和安全研究人員。
+**目標受眾**：需要查閱 MU5735 飛機事故調查資料的研究者和專業人士。
 
 > [!example] 使用場景
-> - 系統管理員用它來測試伺服器是否受到 CVE-2026-31431 漏洞影響，因為這樣可以快速識別並修補潛在的安全隱患。
-> - 安全研究人員用它來驗證不同 Linux 發行版的安全性，因為這能幫助他們了解漏洞的影響範圍。
-> - DevOps 工程師用它來在 CI/CD pipeline 中自動化安全測試，因為這樣可以在部署前確保系統的安全性。
+> - 研究人員用它來查閱 MU5735 事件的 FOIA 請求資料，因為這些資料提供了事故調查的詳細背景。
+> - 航空業專業人士用它來分析事故原因，因為資料的可獲取性有助於行業內的安全改進。
+> - 翻譯工作者用它來獲取 NTSB 報告的中文翻譯，因為這樣能夠更好地服務於中文讀者的需求。
 
 ## 架構分析
 
-這個專案採用 Python 編寫，設計上旨在提供一個簡單易用的漏洞測試工具。資料流方面，使用者透過執行 Python 指令來檢查系統的安全性，並根據輸出結果進行相應的修補。選擇 Python 作為開發語言的原因在於其廣泛的使用和易於學習的特性，這使得專案能夠吸引更多的使用者。由於專案主要依賴於標準的 Linux 系統命令，因此在不同的環境中具有良好的兼容性。這樣的設計也意味著專案的擴展性相對有限，未來可能需要增加對其他漏洞的支持。
+這個專案的架構相對簡單，主要依賴 GitHub 的版本控制系統來管理資料。資料以文件的形式存儲，使用者可以通過訪問鏈接來獲取資料。這樣的設計使得資料的存取變得方便，但也意味著資料的更新和維護需要依賴外部來源。由於專案的主要功能是資料存檔，因此在擴展性方面並沒有特別的考量，未來的更新主要取決於 NTSB 的資料發布情況。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於 Python 的漏洞測試工具，專注於 CVE-2026-31431 漏洞的利用。專案的設計模式是簡單的命令行工具，使用者可以通過執行 Python 指令來檢查系統的安全性。效能上，這個工具能夠快速執行測試，並在幾秒鐘內返回結果，具體取決於系統的性能和配置。選擇 Python 作為開發語言的原因在於其廣泛的應用和良好的社群支持，這使得專案能夠快速迭代和更新。由於專案依賴於標準的 Linux 命令，因此在不同的環境中具有良好的兼容性，但這也意味著未來可能需要進一步擴展以支持其他漏洞。技術風險方面，專案可能在未來遇到擴展性問題，尤其是當需要支持多個漏洞時，可能會導致代碼複雜度增加。整合方面，這個工具可以輕鬆地與現有的 CI/CD pipeline 結合，但需要注意的是，對於不熟悉 Python 的團隊，可能會增加學習成本。
+這個專案的核心技術機制是利用 GitHub 的版本控制功能來存儲和管理資料，這使得資料的查閱和更新變得方便。由於專案主要是資料存檔，因此在效能和規模特性方面並不需要考慮複雜的架構或高效能的計算。資料的更新和維護主要依賴於 NTSB 的資料發布，這意味著使用者需要定期檢查資料的可用性。選擇 GitHub 作為資料存儲平台的好處是其社群互動性，使用者可以在 Issues 中討論資料的內容和解釋。
+
+這樣的設計也使得資料的存取變得透明，但也可能帶來資料更新的不穩定性。未來的擴展性主要取決於 NTSB 的資料發布情況，若 NTSB 更新資料頻繁，則專案將持續保持活躍。整合到現有的工具鏈中相對簡單，使用者只需訪問資料鏈接即可獲取所需資訊，並不需要額外的配置或安裝。整體而言，這個專案在資料存取方面提供了便利，但在資料更新的穩定性上可能存在挑戰。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了基本的使用說明，但缺乏詳細的範例。安裝過程相對順暢，但對於不熟悉 Python 的用戶可能會有一些挑戰。沒有明確的 getting started guide，文件主要以技術寫作為主，缺乏多語言支持。
+> README 文件簡潔明瞭，提供了必要的資料鏈接和中文翻譯的連結。安裝過程非常順暢，只需克隆專案或訪問鏈接即可。文件沒有提供多語言版本，但中文翻譯的存在對於中文使用者來說是個加分項。整體上，花 30 分鐘能夠順利獲取所需資料。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 針對性強，專注於 CVE-2026-31431 的測試。
-> - 安裝和使用簡單，適合初學者。
-> - 活躍的社群支持，能快速解決問題。
+> - 提供 MU5735 調查的 FOIA 請求資料，方便查閱。
+> - 包含非官方中文翻譯，對於中文使用者特別友好。
+> - 社群互動活躍，使用者可以在 Issues 中討論和提問。
 
 > [!danger] 缺點
-> - 僅支持特定版本的 Linux 發行版。
-> - 功能範圍有限，無法檢測其他漏洞。
-> - 對於不熟悉 Python 的用戶可能有一定的學習曲線。
+> - 資料更新依賴於 NTSB 的發布進度，可能會有延遲。
+> - 中文翻譯為非官方版本，可能存在翻譯不準確的風險。
+> - 直接下載資料可能需要使用美國 IP 地址，對於國際使用者來說可能造成障礙。
 
 > [!warning] 注意事項
-> - 僅支持特定版本的 Linux 發行版，可能不適用於其他系統。
-> - 需要 Python 環境，對於不熟悉 Python 的用戶可能有門檻。
-> - 目前的功能僅針對 CVE-2026-31431，無法檢測其他漏洞。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [theori-io/copy-fail-CVE-2026-31431](https://github.com/theori-io/copy-fail-CVE-2026-31431) | 專注於 CVE-2026-31431 的測試，其他工具如 Metasploit 提供更廣泛的漏洞測試功能。 |
-| [rapid7/metasploit-framework](https://github.com/rapid7/metasploit-framework) | Metasploit 提供全面的漏洞利用和測試功能，而本專案專注於單一漏洞的利用。 |
-| [tenable/nessus](https://github.com/tenable/nessus) | Nessus 提供商業級的安全掃描，而本專案是針對特定漏洞的開源工具。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| [rapid7/metasploit-framework](https://github.com/rapid7/metasploit-framework) | Metasploit 提供全面的漏洞利用和測試功能，涵蓋多種漏洞，而本專案專注於單一漏洞的利用。 | 如果需要針對多種漏洞進行測試，Metasploit 是更好的選擇。 | medium，因為需要重新學習 Metasploit 的使用方式。 |
-| [tenable/nessus](https://github.com/tenable/nessus) | Nessus 提供商業級的安全掃描，功能全面，而本專案是針對特定漏洞的開源工具。 | 如果需要商業支持和更全面的安全掃描，Nessus 是更合適的選擇。 | high，因為需要購買授權並學習新的工具。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **copy-fail-CVE-2026-31431** | **metasploit-framework** | **nessus** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Metasploit 提供全面的漏洞利用和測試功能，涵蓋多種漏洞，而本專案專注於單一漏洞的利用。 | Nessus 提供商業級的安全掃描，功能全面，而本專案是針對特定漏洞的開源工具。 |
-> | 遷移成本 | - | medium，因為需要重新學習 Metasploit 的使用方式。 | high，因為需要購買授權並學習新的工具。 |
-> | 適用場景 | 主要場景 | 如果需要針對多種漏洞進行測試，Metasploit 是更好的 | 如果需要商業支持和更全面的安全掃描，Nessus 是更合適的 |
-
-## 成熟度評估
-
-| 項目 | 評估 |
-| --- | --- |
-| 開發階段 | Alpha |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | high |
-
-> [!tip] 採用建議
-> 適合個人測試和學習，但不建議在生產環境中使用。
-
-## 已知陷阱
-
-> [!bug] 踩坑才知道的問題
-
-- **[HIGH]** 在某些 Linux 發行版上可能無法正常運行，特別是未經測試的版本。
-  - 解法：使用官方支持的發行版進行測試。
-- [MEDIUM] 如果缺少依賴包，可能會導致測試失敗。
-  - 解法：確保安裝所有要求的依賴包。
-- [MEDIUM] 輸出結果可能不夠清晰，難以理解。
-  - 解法：參考 README 中的技術寫作進行解釋。
-
-## 使用情境適合度
-
-| 情境 | 適合度 | 說明 |
-| --- | --- | --- |
-| 大型企業的安全測試團隊 | 不適合 | 功能範圍有限，無法滿足全面的安全測試需求。 |
-| 小型開發團隊進行安全測試 | 適合 | 簡單易用，能快速識別特定漏洞。 |
-| 個人開發者測試自己的系統 | 非常適合 | 針對性強，能快速檢查系統安全性。 |
-| 學術研究者進行漏洞研究 | 普通 | 雖然專注於特定漏洞，但缺乏更廣泛的功能支持。 |
-
-## 採用成本分析
-
-| 項目 | 評估 |
-| --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
-| 綁定風險 | low |
-
-> [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，能快速檢查系統是否受到 CVE-2026-31431 影響，值得採用。
-
-## 安全性評估
-
-> [!warning] 安全性快速掃描
-> 低風險：這個工具本身不需要高權限，不存取敏感資料，但使用時需注意系統的安全性。
+> - 資料更新依賴於 NTSB 的發布進度，可能會有延遲。
+> - 中文翻譯為非官方版本，可能存在翻譯不準確的風險。
+> - 直接下載資料可能需要使用美國 IP 地址，對於國際使用者來說可能造成障礙。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/theori-io--copy-fail-CVE-2026-31431");
+> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -299,7 +220,7 @@ python test.py
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/theori-io--copy-fail-CVE-2026-31431");
+> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -323,69 +244,73 @@ python test.py
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 374 |
-| Open Issues | 76 |
-| Issue 解決率 | 7% (6 closed) |
-| 最後推送 | 2026-04-29 |
-| 建立日期 | 2026-04-29 |
-| Repo 大小 | 3 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/theori-io/copy-fail-CVE-2026-31431) |
+| Forks | 298 |
+| Open Issues | 15 |
+| Issue 解決率 | 17% (3 closed) |
+| 最後推送 | 2026-05-03 |
+| 建立日期 | 2026-04-30 |
+| Repo 大小 | 144.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@junomonster](https://github.com/junomonster) | 2 |
-> | [@tylerni7](https://github.com/tylerni7) | 1 |
+> | [@wrongly-cuddly-obsession](https://github.com/wrongly-cuddly-obsession) | 6 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，能快速反饋問題和建議。
+**社群活躍度**：社群活躍，特別是在熱門問題上有許多討論。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-29 ~ 2026-04-29）
-> **活躍天數** 1 天 · **最新 commit** fix RH version
+> [!abstract] 最近 10 次 commit（2026-04-30 ~ 2026-05-03）
+> **活躍天數** 2 天 · **最新 commit** Add info that NTSB has directly published the data on its website
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#54](https://github.com/theori-io/copy-fail-CVE-2026-31431/issues/54) | Please deobfuscate the Python | 56 | 8 |
-> | [#28](https://github.com/theori-io/copy-fail-CVE-2026-31431/issues/28) | Warn people in exploit proof of concept that it makes you ex | 16 | 4 |
-> | [#27](https://github.com/theori-io/copy-fail-CVE-2026-31431/issues/27) | What about a readable reproducer? | 12 | 5 |
+> | [#1](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/issues/1) | 感谢 | 17 | 0 |
+> | [#11](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/issues/11) | 关于一些异常数据的解释与补充 | 13 | 3 |
+> | [#8](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/issues/8) | （机组试图挽救飞机故障）机务相关行业内人员的解读讨论 （本人仅转发且未核实） | 5 | 105 |
+> | [#2](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/issues/2) | 美国人真是太坏了！！！ | 5 | 7 |
+> | [#15](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/issues/15) | 基于此仓库优化并补充了调查报告的翻译 | 4 | 2 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Copy Fail - CVE-2026-31431
+> # NTSB FOIA MU5735
 > 
-> [Technical Writeup](https://xint.io/blog/copy-fail-linux-distributions)
+> This repository contains files originally shared by another GitHub user related to FOIA requests on the MU5735 investigation.
 > 
-> ## Tested Distro / Version
+> The original repository has since been deleted or made private by its owner. To protect their privacy, the files have been re-uploaded here without preserving the original commit history.
 > 
-> |    Distro   |    Version       |
-> |-------------------|-------------------------|
-> | Ubuntu 24.04 LTS  | 6.17.0-1007-aws         |
-> | Amazon Linux 2023 | 6.18.8-9.213.amzn2023   |
-> | RHEL 10.1         | 6.12.0-124.45.1.el10_1  |
-> | SUSE 16           | 6.12.0-160000.9-default |
+> This repository serves as an archive to maintain access to those materials.
+> 
+> An unofficial Chinese translation of the NTSB recorder report is available at:
+> https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NTSB_Recorder_Report_CN/MU5735_NTSB_Recorder_Report_Chinese.md
+> 
+> NTSB记录器报告的非官方中文译文可在以下链接查看：
+> https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NTSB_Recorder_Report_CN/MU5735_NTSB_Recorder_Report_Chinese.md
+> 
+> NTSB has now published data related to MU5735 on its website. You can download it [here](https://securefoia.ntsb.gov/app/AddAttachment.aspx?docid=66&ispaldoc=F). Direct download from the NTSB website may require a U.S. IP address. Thanks to [@SunsetMkt](https://github.com/SunsetMkt) for providing this information via [Issue #14](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/issues/14).
+> 
+> NTSB已在其网站上发布了与MU5735相关的数据。你可以在[此处](https://securefoia.ntsb.gov/app/AddAttachment.aspx?docid=66&ispaldoc=F)下载。从NTSB网站直接下载可能需要使用美国IP地址。感谢[@SunsetMkt](https://github.com/SunsetMkt)通过[Issue #14](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/issues/14)提供的信息。
 
 ## 延伸閱讀
 
-相關概念：[[安全漏洞]] · [[漏洞測試]] · [[CVE]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]]
 
-相關專案：[[DanOps-1--Gpt-Agreement-Payment|DanOps-1/Gpt-Agreement-Payment]] · [[Nightmare-Eclipse--RedSun|Nightmare-Eclipse/RedSun]] · [[dazzyddos--PrivHound|dazzyddos/PrivHound]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[imbue-bit--OpenClaw-PwnKit|imbue-bit/OpenClaw-PwnKit]] · [[masterking32--MasterHttpRelayVPN|masterking32/MasterHttpRelayVPN]] · [[denuitt1--mhr-cfw|denuitt1/mhr-cfw]] · [[opa334--darksword-kexploit|opa334/darksword-kexploit]]
-
-[GitHub](https://github.com/theori-io/copy-fail-CVE-2026-31431)
+[GitHub](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：漏洞測試）
+> [!note]- 直接競品（同子分類：資料存檔）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "漏洞測試" AND file.name != "theori-io--copy-fail-CVE-2026-31431"
+> WHERE subcategory = "資料存檔" AND file.name != "wrongly-cuddly-obsession--NTSB_FOIA_MU5735"
 > SORT stars DESC
 > ```
 
@@ -393,7 +318,7 @@ python test.py
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "安全" AND file.name != "theori-io--copy-fail-CVE-2026-31431"
+> WHERE category = "其他" AND file.name != "wrongly-cuddly-obsession--NTSB_FOIA_MU5735"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -402,7 +327,7 @@ python test.py
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "theori-io--copy-fail-CVE-2026-31431" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "wrongly-cuddly-obsession--NTSB_FOIA_MU5735" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -411,33 +336,18 @@ python test.py
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W18" AND file.name != "theori-io--copy-fail-CVE-2026-31431"
+> WHERE week = "2026-W19" AND file.name != "wrongly-cuddly-obsession--NTSB_FOIA_MU5735"
 > SORT stars DESC
-> ```
-
-> [!note]- 共用概念的相關專案
-> ```dataviewjs
-> const concepts = ["安全漏洞","漏洞測試","CVE"];
-> const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "theori-io--copy-fail-CVE-2026-31431" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
->   .sort(p => p.stars, "desc")
->   .limit(5);
-> if (pages.length > 0) {
->   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
->     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
->     return [p.file.link, p.stars, p.category, shared.join(", ")];
->   }));
-> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/theori-io--copy-fail-CVE-2026-31431");
+> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "theori-io--copy-fail-CVE-2026-31431" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "wrongly-cuddly-obsession--NTSB_FOIA_MU5735" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -453,7 +363,7 @@ python test.py
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "theori-io" AND file.name != "theori-io--copy-fail-CVE-2026-31431"
+> WHERE owner = "wrongly-cuddly-obsession" AND file.name != "wrongly-cuddly-obsession--NTSB_FOIA_MU5735"
 > SORT stars DESC
 > ```
 
@@ -461,7 +371,7 @@ python test.py
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/theori-io--copy-fail-CVE-2026-31431");
+> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -478,7 +388,7 @@ python test.py
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/theori-io--copy-fail-CVE-2026-31431");
+> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -511,7 +421,7 @@ python test.py
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/theori-io--copy-fail-CVE-2026-31431");
+> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -535,7 +445,7 @@ python test.py
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/theori-io--copy-fail-CVE-2026-31431");
+> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -572,7 +482,7 @@ python test.py
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/theori-io--copy-fail-CVE-2026-31431");
+> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -655,7 +565,7 @@ python test.py
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-05-01** — 首次收錄
+> **2026-05-04** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -671,7 +581,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-05-04|2026-05-04]] — 再次上榜，3.0k stars
-- [[2026-05-03|2026-05-03]] — 再次上榜，2.9k stars
-- [[2026-05-02|2026-05-02]] — 再次上榜，2.5k stars
-- [[2026-05-01|2026-05-01]] — 首次收錄，1.7k stars
+- [[2026-05-04|2026-05-04]] — 首次收錄，811 stars
