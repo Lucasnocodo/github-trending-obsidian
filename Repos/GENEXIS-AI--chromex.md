@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "A Codex-powered Chrome side-panel assistant for page context, tabs, voice, and image workflows."
 homepage: ""
-stars: 772
-stars_per_day: 154
-forks: 64
-open_issues: 6
+stars: 819
+stars_per_day: 137
+forks: 73
+open_issues: 3
 created: 2026-04-28
-pushed_at: 2026-04-30
+pushed_at: 2026-05-04
 first_seen: 2026-05-01
 week: "2026-W18"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "提供 Codex 驅動的 Chrome 側邊助手，簡化網頁、標籤、
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-05-10"
+appearances: 4
+next_review: "2026-05-12"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 14
@@ -42,7 +42,7 @@ last_release_days: 5
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-01"
-star_history: "2026-05-01:687,2026-05-01:687,2026-05-02:738,2026-05-02:738,2026-05-03:755,2026-05-03:755,2026-05-04:772"
+star_history: "2026-05-01:687,2026-05-01:687,2026-05-02:738,2026-05-02:738,2026-05-03:755,2026-05-03:755,2026-05-04:772,2026-05-05:819"
 tags:
   - github
   - "category/開發工具"
@@ -875,6 +875,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-05|2026-05-05]] — 再次上榜，819 stars
 - [[2026-05-03|2026-05-03]] — 再次上榜，755 stars
 - [[2026-05-02|2026-05-02]] — 再次上榜，738 stars
 - [[2026-05-01|2026-05-01]] — 首次收錄，687 stars

@@ -7,12 +7,12 @@ language: TypeScript
 license: Apache-2.0
 description: "🎨 Local-first open replica of Anthropic's Claude Design. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems · 🖼️ sandboxed preview · 📦 HTML/PDF/PPTX export. 🤖 Runs on Claude Code / Codex / Cursor / Gemini CLI / OpenCode / Qwen."
 homepage: "https://github.com/nexu-io/open-design"
-stars: 19565
-stars_per_day: 3913
-forks: 2168
-open_issues: 109
+stars: 24088
+stars_per_day: 4015
+forks: 2611
+open_issues: 149
 created: 2026-04-28
-pushed_at: 2026-05-04
+pushed_at: 2026-05-05
 first_seen: 2026-04-29
 week: "2026-W18"
 month: "2026-04"
@@ -30,8 +30,8 @@ use_case: "提供一個本地優先的開源設計工具，讓使用者能夠利
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
-next_review: "2026-05-07"
+appearances: 7
+next_review: "2026-05-08"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 13
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-29"
-star_history: "2026-04-29:1292,2026-04-30:4442,2026-05-01:8359,2026-05-02:11910,2026-05-03:16135,2026-05-04:19565"
+star_history: "2026-04-29:1292,2026-04-30:4442,2026-05-01:8359,2026-05-02:11910,2026-05-03:16135,2026-05-04:19565,2026-05-05:24088"
 tags:
   - github
   - "category/開發工具"
@@ -802,6 +802,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-05|2026-05-05]] — 再次上榜，24.1k stars
 - [[2026-05-04|2026-05-04]] — 再次上榜，19.6k stars
 - [[2026-05-03|2026-05-03]] — 再次上榜，16.1k stars
 - [[2026-05-02|2026-05-02]] — 再次上榜，11.9k stars

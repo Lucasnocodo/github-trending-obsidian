@@ -1380,10 +1380,10 @@
   },
   "nexu-io/open-design": {
     "first_seen": "2026-04-29",
-    "last_seen": "2026-05-04",
-    "times_seen": 6,
+    "last_seen": "2026-05-05",
+    "times_seen": 7,
     "stars_first": 1292,
-    "stars_last": 19565
+    "stars_last": 24088
   },
   "wuyoscar/gpt_image_2_skill": {
     "first_seen": "2026-04-29",
@@ -1429,10 +1429,10 @@
   },
   "theori-io/copy-fail-CVE-2026-31431": {
     "first_seen": "2026-05-01",
-    "last_seen": "2026-05-04",
-    "times_seen": 4,
+    "last_seen": "2026-05-05",
+    "times_seen": 5,
     "stars_first": 1694,
-    "stars_last": 3020
+    "stars_last": 3171
   },
   "ps5-linux/ps5-linux-loader": {
     "first_seen": "2026-05-01",
@@ -1443,10 +1443,10 @@
   },
   "willchen96/mike": {
     "first_seen": "2026-05-01",
-    "last_seen": "2026-05-04",
-    "times_seen": 4,
+    "last_seen": "2026-05-05",
+    "times_seen": 5,
     "stars_first": 785,
-    "stars_last": 1688
+    "stars_last": 2030
   },
   "DanOps-1/Gpt-Agreement-Payment": {
     "first_seen": "2026-05-01",
@@ -1457,10 +1457,10 @@
   },
   "GENEXIS-AI/chromex": {
     "first_seen": "2026-05-01",
-    "last_seen": "2026-05-03",
-    "times_seen": 3,
+    "last_seen": "2026-05-05",
+    "times_seen": 4,
     "stars_first": 687,
-    "stars_last": 755
+    "stars_last": 819
   },
   "denuitt1/mhr-cfw": {
     "first_seen": "2026-05-02",
@@ -1471,37 +1471,44 @@
   },
   "b-nnett/codex-plusplus": {
     "first_seen": "2026-05-02",
-    "last_seen": "2026-05-04",
-    "times_seen": 3,
+    "last_seen": "2026-05-05",
+    "times_seen": 4,
     "stars_first": 752,
-    "stars_last": 855
+    "stars_last": 896
   },
   "darrylmorley/whatcable": {
     "first_seen": "2026-05-02",
-    "last_seen": "2026-05-04",
-    "times_seen": 3,
+    "last_seen": "2026-05-05",
+    "times_seen": 4,
     "stars_first": 694,
-    "stars_last": 1448
+    "stars_last": 1726
   },
   "t8y2/dbx": {
     "first_seen": "2026-05-03",
-    "last_seen": "2026-05-03",
-    "times_seen": 1,
+    "last_seen": "2026-05-05",
+    "times_seen": 2,
     "stars_first": 713,
-    "stars_last": 713
+    "stars_last": 846
   },
   "mattpocock/dictionary-of-ai-coding": {
     "first_seen": "2026-05-04",
-    "last_seen": "2026-05-04",
-    "times_seen": 1,
+    "last_seen": "2026-05-05",
+    "times_seen": 2,
     "stars_first": 849,
-    "stars_last": 849
+    "stars_last": 972
   },
   "wrongly-cuddly-obsession/NTSB_FOIA_MU5735": {
     "first_seen": "2026-05-04",
-    "last_seen": "2026-05-04",
-    "times_seen": 1,
+    "last_seen": "2026-05-05",
+    "times_seen": 2,
     "stars_first": 811,
-    "stars_last": 811
+    "stars_last": 886
+  },
+  "aattaran/deepclaude": {
+    "first_seen": "2026-05-05",
+    "last_seen": "2026-05-05",
+    "times_seen": 1,
+    "stars_first": 1036,
+    "stars_last": 1036
   }
 }

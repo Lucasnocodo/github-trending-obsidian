@@ -7,12 +7,12 @@ language: TypeScript
 license: N/A
 description: "AI coding jargon, explained in plain English."
 homepage: ""
-stars: 849
-stars_per_day: 425
-forks: 114
+stars: 972
+stars_per_day: 324
+forks: 122
 open_issues: 0
 created: 2026-05-01
-pushed_at: 2026-05-03
+pushed_at: 2026-05-04
 first_seen: 2026-05-04
 week: "2026-W19"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "將 AI 編程術語翻譯成淺顯易懂的語言，幫助開發者�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-07"
+appearances: 2
+next_review: "2026-05-08"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-04"
-star_history: "2026-05-04:849"
+star_history: "2026-05-04:849,2026-05-05:972"
 tags:
   - github
   - "category/其他"
@@ -841,4 +841,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-05|2026-05-05]] — 再次上榜，972 stars
 - [[2026-05-04|2026-05-04]] — 首次收錄，849 stars

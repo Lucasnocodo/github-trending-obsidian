@@ -7,10 +7,10 @@ language: N/A
 license: N/A
 description: ""
 homepage: ""
-stars: 811
-stars_per_day: 270
-forks: 298
-open_issues: 15
+stars: 886
+stars_per_day: 222
+forks: 329
+open_issues: 17
 created: 2026-04-30
 pushed_at: 2026-05-03
 first_seen: 2026-05-04
@@ -30,8 +30,8 @@ use_case: "提供 MU5735 調查的 FOIA 請求資料，並包含中文翻譯。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-07"
+appearances: 2
+next_review: "2026-05-08"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 17
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-04"
-star_history: "2026-05-04:811"
+star_history: "2026-05-04:811,2026-05-05:886"
 tags:
   - github
   - "category/其他"
@@ -300,7 +300,7 @@ https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NT
 
 ## 延伸閱讀
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[alchaincyf--zhangxuefeng-skill|alchaincyf/zhangxuefeng-skill]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[alchaincyf--zhangxuefeng-skill|alchaincyf/zhangxuefeng-skill]] · [[farzaa--clicky|farzaa/clicky]] · [[hotcoffeeshake--tong-jincheng-skill|hotcoffeeshake/tong-jincheng-skill]]
 
 [GitHub](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735)
 
@@ -581,4 +581,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-05|2026-05-05]] — 再次上榜，886 stars
 - [[2026-05-04|2026-05-04]] — 首次收錄，811 stars
