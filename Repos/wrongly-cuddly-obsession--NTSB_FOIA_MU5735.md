@@ -7,9 +7,9 @@ language: N/A
 license: N/A
 description: ""
 homepage: ""
-stars: 886
-stars_per_day: 222
-forks: 329
+stars: 940
+stars_per_day: 188
+forks: 345
 open_issues: 17
 created: 2026-04-30
 pushed_at: 2026-05-03
@@ -30,8 +30,8 @@ use_case: "提供 MU5735 調查的 FOIA 請求資料，並包含中文翻譯。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-05-08"
+appearances: 3
+next_review: "2026-05-13"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 17
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-04"
-star_history: "2026-05-04:811,2026-05-05:886"
+star_history: "2026-05-04:811,2026-05-05:886,2026-05-06:940"
 tags:
   - github
   - "category/其他"
@@ -581,5 +581,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-06|2026-05-06]] — 再次上榜，940 stars
 - [[2026-05-05|2026-05-05]] — 再次上榜，886 stars
 - [[2026-05-04|2026-05-04]] — 首次收錄，811 stars

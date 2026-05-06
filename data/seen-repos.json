@@ -1429,10 +1429,10 @@
   },
   "theori-io/copy-fail-CVE-2026-31431": {
     "first_seen": "2026-05-01",
-    "last_seen": "2026-05-05",
-    "times_seen": 5,
+    "last_seen": "2026-05-06",
+    "times_seen": 6,
     "stars_first": 1694,
-    "stars_last": 3171
+    "stars_last": 3321
   },
   "ps5-linux/ps5-linux-loader": {
     "first_seen": "2026-05-01",
@@ -1443,10 +1443,10 @@
   },
   "willchen96/mike": {
     "first_seen": "2026-05-01",
-    "last_seen": "2026-05-05",
-    "times_seen": 5,
+    "last_seen": "2026-05-06",
+    "times_seen": 6,
     "stars_first": 785,
-    "stars_last": 2030
+    "stars_last": 2194
   },
   "DanOps-1/Gpt-Agreement-Payment": {
     "first_seen": "2026-05-01",
@@ -1478,37 +1478,58 @@
   },
   "darrylmorley/whatcable": {
     "first_seen": "2026-05-02",
-    "last_seen": "2026-05-05",
-    "times_seen": 4,
+    "last_seen": "2026-05-06",
+    "times_seen": 5,
     "stars_first": 694,
-    "stars_last": 1726
+    "stars_last": 1949
   },
   "t8y2/dbx": {
     "first_seen": "2026-05-03",
-    "last_seen": "2026-05-05",
-    "times_seen": 2,
+    "last_seen": "2026-05-06",
+    "times_seen": 3,
     "stars_first": 713,
-    "stars_last": 846
+    "stars_last": 918
   },
   "mattpocock/dictionary-of-ai-coding": {
     "first_seen": "2026-05-04",
-    "last_seen": "2026-05-05",
-    "times_seen": 2,
+    "last_seen": "2026-05-06",
+    "times_seen": 3,
     "stars_first": 849,
-    "stars_last": 972
+    "stars_last": 1070
   },
   "wrongly-cuddly-obsession/NTSB_FOIA_MU5735": {
     "first_seen": "2026-05-04",
-    "last_seen": "2026-05-05",
-    "times_seen": 2,
+    "last_seen": "2026-05-06",
+    "times_seen": 3,
     "stars_first": 811,
-    "stars_last": 886
+    "stars_last": 940
   },
   "aattaran/deepclaude": {
     "first_seen": "2026-05-05",
-    "last_seen": "2026-05-05",
-    "times_seen": 1,
+    "last_seen": "2026-05-06",
+    "times_seen": 2,
     "stars_first": 1036,
-    "stars_last": 1036
+    "stars_last": 1329
+  },
+  "vercel-labs/deepsec": {
+    "first_seen": "2026-05-06",
+    "last_seen": "2026-05-06",
+    "times_seen": 1,
+    "stars_first": 1069,
+    "stars_last": 1069
+  },
+  "vibeforge1111/keep-codex-fast": {
+    "first_seen": "2026-05-06",
+    "last_seen": "2026-05-06",
+    "times_seen": 1,
+    "stars_first": 751,
+    "stars_last": 751
+  },
+  "Fokkyp/SoftwareCopyright-Skill": {
+    "first_seen": "2026-05-06",
+    "last_seen": "2026-05-06",
+    "times_seen": 1,
+    "stars_first": 713,
+    "stars_last": 713
   }
 }

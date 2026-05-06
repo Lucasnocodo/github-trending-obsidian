@@ -7,12 +7,12 @@ language: Vue
 license: N/A
 description: "lightweight, cross-platform database client. Supports MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, ClickHouse, SQL Server and more."
 homepage: ""
-stars: 846
-stars_per_day: 169
-forks: 46
-open_issues: 6
+stars: 918
+stars_per_day: 153
+forks: 54
+open_issues: 8
 created: 2026-04-29
-pushed_at: 2026-05-04
+pushed_at: 2026-05-05
 first_seen: 2026-05-03
 week: "2026-W19"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "一個輕量級的跨平台數據庫管理工具，支持多種數據
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-05-12"
+appearances: 3
+next_review: "2026-05-13"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 72
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-03"
-star_history: "2026-05-03:713,2026-05-05:846"
+star_history: "2026-05-03:713,2026-05-05:846,2026-05-06:918"
 tags:
   - github
   - "category/開發工具"
@@ -852,5 +852,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-06|2026-05-06]] — 再次上榜，918 stars
 - [[2026-05-05|2026-05-05]] — 再次上榜，846 stars
 - [[2026-05-03|2026-05-03]] — 首次收錄，713 stars

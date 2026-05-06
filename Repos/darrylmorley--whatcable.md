@@ -7,12 +7,12 @@ language: Swift
 license: MIT
 description: "macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do"
 homepage: "https://github.com/darrylmorley/whatcable/releases/latest"
-stars: 1726
-stars_per_day: 575
-forks: 35
-open_issues: 17
+stars: 1949
+stars_per_day: 487
+forks: 39
+open_issues: 10
 created: 2026-05-01
-pushed_at: 2026-05-01
+pushed_at: 2026-05-05
 first_seen: 2026-05-02
 week: "2026-W18"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "讓你清楚了解每條 USB-C 線纜的功能，避免充電慢的�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-05-08"
+appearances: 5
+next_review: "2026-05-09"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 54
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-02"
-star_history: "2026-05-02:694,2026-05-03:1261,2026-05-04:1448,2026-05-05:1726"
+star_history: "2026-05-02:694,2026-05-03:1261,2026-05-04:1448,2026-05-05:1726,2026-05-06:1949"
 tags:
   - github
   - "category/開發工具"
@@ -854,6 +854,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-06|2026-05-06]] — 再次上榜，1.9k stars
 - [[2026-05-05|2026-05-05]] — 再次上榜，1.7k stars
 - [[2026-05-04|2026-05-04]] — 再次上榜，1.4k stars
 - [[2026-05-03|2026-05-03]] — 再次上榜，1.3k stars
