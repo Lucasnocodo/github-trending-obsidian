@@ -1,0 +1,794 @@
+---
+repo: XBuilderLAB/cheat-on-content
+url: https://github.com/XBuilderLAB/cheat-on-content
+owner: XBuilderLAB
+owner_type: Organization
+language: Python
+license: MIT
+description: "Content is already a cheat-code race—whoever cracks the patterns first wins the traffic. Your auto-evolving ops expert that learns YOUR account, not the global average. The Claude Code workflow behind 1M followers in 1 month."
+homepage: ""
+stars: 778
+stars_per_day: 778
+forks: 162
+open_issues: 4
+created: 2026-05-05
+pushed_at: 2026-05-05
+first_seen: 2026-05-07
+week: "2026-W19"
+month: "2026-05"
+category: "其他"
+subcategory: "內容創作工具"
+release_tag: ""
+install_complexity: "easy"
+status: to-review
+my_rating: 0
+score_confidence: 0
+score_interest: 0
+score_risk: 0
+last_reviewed: 2026-05-07
+use_case: "幫助內容創作者透過數據分析優化發文策略，提升流量和粉絲數。"
+priority: high
+ring: assess
+discovered_via: "GitHub Trending"
+appearances: 1
+next_review: "2026-05-10"
+contributor_count: 2
+engagement: "medium"
+issue_close_rate: 20
+repo_size_kb: 223
+readme_length: 2091
+bus_factor: 1
+last_release_days: -1
+release_cadence: "never"
+verdict: ""
+ring_history: "assess@2026-05-07"
+star_history: "2026-05-07:778"
+tags:
+  - github
+  - "category/其他"
+  - "lang/python"
+  - org
+  - easy_install
+aliases:
+  - "cheat-on-content"
+  - "XBuilderLAB/cheat-on-content"
+  - "幫助內容創作者透過數據分析優化發文策略，提升流量和粉絲數。"
+---
+
+# cheat-on-content
+
+**778** stars · **778** stars/天 · 建立 1 天前 · Python · MIT
+
+```dataviewjs
+const me = dv.page("Repos/XBuilderLAB--cheat-on-content");
+if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
+  const parts = [];
+  if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
+  if (me.ring && me.ring !== "assess") parts.push("Ring: **" + me.ring + "**");
+  if (me.verdict) parts.push(me.verdict);
+  dv.paragraph("> [!success] 你的結論\n> " + parts.join(" / "));
+}
+```
+
+`ORG` `easy-install`
+
+> [!summary] 一句話摘要
+> 幫助內容創作者透過數據分析優化發文策略，提升流量和粉絲數。
+
+> [!info] 速覽
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (778 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 2 人 · **參與度** Medium
+> **適合** 希望透過數據分析提升內容創作效果的社交媒體經營者和內容創作者。
+> **一句話重點** 這個工具的核心在於根據使用者的歷史數據進行個性化的內容分析，這在目前的市場上是相對獨特的。
+
+> [!abstract]- 同類競品快速對比
+> ```dataviewjs
+> const me = dv.page("Repos/XBuilderLAB--cheat-on-content");
+> if (me) {
+>   const rivals = dv.pages('"Repos"')
+>     .where(p => p.subcategory === "內容創作工具" && p.file.name !== "XBuilderLAB--cheat-on-content" && p.status !== "archived")
+>     .sort(p => p.stars || 0, "desc").limit(5);
+>   if (rivals.length > 0) {
+>     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
+>       p.file.link,
+>       (p.stars || 0).toLocaleString(),
+>       p.stars_per_day || 0,
+>       p.install_complexity || "?",
+>       p.license || "?",
+>       p.ring || "assess"
+>     ]));
+>   } else { dv.paragraph("_目前 vault 中沒有其他 內容創作工具 類工具_"); }
+> }
+> ```
+
+> [!question] TL;DR — 值得投入嗎？
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學、1 小時整合，得到個性化的內容分析，值得一試。
+
+> [!abstract] 核心創新
+> 這個工具能根據使用者的歷史數據自動進化，提供個性化的內容分析和預測。
+
+## 專案簡介
+
+Cheat on Content 是一個專為內容創作者設計的工具，旨在透過數據分析來優化發文策略。使用者在發文前可以進行打分和盲預測，並在發文後的三天內進行數據回顧，這樣的循環讓創作者能夠不斷調整自己的內容公式。這個工具的核心賣點在於它能根據使用者的歷史數據自動進化，讓每次發文都成為一次校準實驗。與傳統的靈感工具不同，Cheat on Content 不僅提供靈感，還幫助使用者量化自己的靈感，並持續優化發文效果。技術上，它依賴於 Python 和 Shell 來實現自動化流程，並且設計了 13 個子技能來支持不同的內容項目，這使得整體架構相對輕量且易於維護。
+
+與其他工具相比，如 ChatGPT 和 DeepSeek，這個工具專注於個別帳號的數據分析，而不是通用的建議，這使得它在針對性和準確性上更具優勢。使用者在使用過程中可能會遇到需要不斷調整評分公式的挑戰，但這也是其進化的過程。整體來看，這個工具適合那些希望透過數據驅動的方式提升內容創作效率的創作者，尤其是對於已經有一定粉絲基礎的使用者。未來六個月內，隨著使用者數量的增加，這個工具的社群支持和功能擴展可能會變得更加成熟。
+
+**技術棧**：`Python` · `Shell`
+
+## 重點功能
+
+- 數據打分 — 在發文前對內容進行打分，幫助使用者評估內容質量。
+- 盲預測 — 提供發文前的預測功能，幫助使用者制定發文策略。
+- 自動進化 — 根據使用者的歷史數據自動更新評分公式，提升未來預測的準確性。
+- 全程存檔 — 每次發文都會記錄打分和預測，方便後續數據回顧和分析。
+- 多樣化子技能 — 提供 13 個子技能，支持不同內容項目的需求。
+
+## 快速開始
+
+1. 克隆專案
+```bash
+git clone https://github.com/XBuilderLAB/cheat-on-content.git
+```
+2. 進入專案目錄
+```bash
+cd cheat-on-content
+```
+3. 安裝依賴
+```bash
+bash install.sh
+```
+
+## 程式碼範例
+
+```python
+{
+  "前置條件": "在內容項目目錄中開啟 Claude Code",
+  "指令": "初始化 cheat-on-content",
+  "預期輸出": "5 個 yes/no 搞定 onboarding。強烈建議導對標帳號。"
+}
+```
+
+## 為什麼值得關注
+
+> [!tip] 爆紅原因
+> 建立 1 天就累積 778 stars（778/天），forks 162（20.8%），這顯示出強烈的用戶興趣。作者是 woniuxuezhang 和 Jooonnn，他們在內容創作和數據分析方面有豐富的經驗。這個工具解決了內容創作者在發文時缺乏數據支持的痛點，讓使用者能夠基於自己的歷史數據進行精準的內容創作。最近的推廣活動和社群討論可能也促進了這個工具的快速增長。技術上，這個工具的設計使得它能夠自動進化，這在目前的內容創作工具中是比較少見的，這樣的特點使得它在市場上有一定的競爭優勢。
+
+## 適合誰使用
+
+**目標受眾**：希望透過數據分析提升內容創作效果的社交媒體經營者和內容創作者。
+
+> [!example] 使用場景
+> - 內容創作者用它來分析過去的發文數據，優化未來的內容策略，因為這樣可以提升流量和粉絲數。
+> - 社交媒體經營者用它來評估不同內容的表現，並根據數據調整發文時間和頻率，因為這樣能夠更有效地吸引目標受眾。
+> - 行銷團隊用它來制定內容行銷計劃，通過數據驅動的方式提升品牌曝光率，因為這樣能夠減少不必要的資源浪費。
+
+## 架構分析
+
+Cheat on Content 採用輕量級的架構，主要由 Python 和 Shell 腳本組成，方便使用者進行安裝和使用。數據流從使用者的發文數據開始，經過評分和預測，最終生成優化建議。這種設計使得工具能夠快速迭代和更新，並且能夠根據使用者的需求進行擴展。
+
+選擇 Python 的原因在於其強大的數據處理能力，而 Shell 則用於簡化安裝和運行過程。這種架構的代價在於可能需要使用者具備基本的命令行操作能力。整體來看，這個工具的擴展性良好，但在處理大量數據時可能會遇到性能瓶頸。
+
+## 技術深入分析
+
+Cheat on Content 的核心技術機制是基於使用者的歷史數據進行內容評分和預測，這樣的設計使得每次發文都能成為一次數據驅動的校準實驗。它使用 Python 進行數據處理和分析，並透過 Shell 腳本簡化安裝和使用過程。這個工具能夠處理的數據量相對較小，適合個別創作者使用，但在面對大量數據時可能會遇到性能瓶頸。選擇 Python 的原因在於其強大的數據處理能力，而 Shell 則用於簡化安裝和運行過程。這種設計的風險在於，若使用者未能持續更新數據，可能會導致預測準確性下降。整合方面，這個工具可以與現有的內容管理系統搭配使用，但需要一定的命令行操作能力，這對於不熟悉技術的使用者來說可能是一個障礙。
+
+## 新手體驗
+
+> [!info] 上手難度評估
+> README 文件提供了清晰的安裝步驟和使用指令，對於新手來說相對友好。安裝過程順暢，沒有明顯的坑。文件中有詳細的使用說明和範例，幫助使用者快速上手。
+
+## 優缺點分析
+
+> [!success] 優點
+> - 提供個性化的內容分析，根據使用者的歷史數據進行優化。
+> - 自動進化的評分公式，能隨著使用者的數據增長而變得更準確。
+> - 簡單的安裝和使用流程，適合各類型的內容創作者。
+
+> [!danger] 缺點
+> - 對於新帳號無法提供有效的預測，因為缺乏歷史數據。
+> - 需要持續的數據更新以保持評分公式的準確性。
+> - 可能需要使用者具備基本的命令行操作能力。
+
+> [!warning] 注意事項
+> - 需要使用者提供過去的發文數據以進行準確分析。
+> - 對於新帳號可能無法提供有效的預測，因為缺乏歷史數據。
+> - 需要持續的數據更新以保持評分公式的準確性。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於自動化內容生成，而 Cheat on Content 更加關注數據分析和優化發文策略。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供內容管理功能，而 Cheat on Content 專注於內容的預測和評分。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| ChatGPT | ChatGPT 提供通用的內容建議，而 Cheat on Content 專注於個別帳號的數據分析和預測。 | 如果你需要通用的內容建議而不是針對特定帳號的分析，則 ChatGPT 更適合。 | low，因為 ChatGPT 的使用不需要特定的數據格式。 |
+| DeepSeek | DeepSeek 專注於內容發現，而 Cheat on Content 更加關注數據分析和優化發文策略。 | 如果你需要發現新內容的靈感，而不是針對過去數據的分析，則 DeepSeek 更合適。 | medium，因為需要重新調整內容策略以適應新的工具。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **cheat-on-content** | **ChatGPT** | **DeepSeek** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | ChatGPT 提供通用的內容建議，而 Cheat on Content 專注於個別帳號的數據分析和預測。 | DeepSeek 專注於內容發現，而 Cheat on Content 更加關注數據分析和優化發文策略。 |
+> | 遷移成本 | - | low，因為 ChatGPT 的使用不需要特定的數據格式。 | medium，因為需要重新調整內容策略以適應新的工具。 |
+> | 適用場景 | 主要場景 | 如果你需要通用的內容建議而不是針對特定帳號的分析，則 Cha | 如果你需要發現新內容的靈感，而不是針對過去數據的分析，則 D |
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Alpha |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | high |
+
+> [!tip] 採用建議
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+
+## 已知陷阱
+
+> [!bug] 踩坑才知道的問題
+
+- **[HIGH]** 新帳號無法提供有效的預測，因為缺乏歷史數據
+  - 解法：使用者需先發佈一定數量的內容以累積數據
+- [MEDIUM] 如果不持續更新數據，預測準確性會下降
+  - 解法：定期檢查和更新評分公式以保持準確性
+- [MEDIUM] 對於不熟悉命令行的使用者可能會感到困難
+  - 解法：提供簡單的使用指南和範例以幫助新手上手
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 10 人以下的新創公司後端 API | 適合 | 這類團隊通常需要靈活的數據分析工具來優化內容策略。 |
+| 大型行銷團隊 | 普通 | 雖然可以使用，但可能需要更多的功能來支持團隊協作。 |
+| 個人內容創作者 | 非常適合 | 這個工具專為個別帳號的數據分析設計，非常符合個人創作者的需求。 |
+| 剛起步的新帳號 | 不適合 | 缺乏歷史數據，無法提供有效的預測。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~1 小時 |
+| 維護負擔 | low |
+| 綁定風險 | low |
+
+> [!tip] 投入 vs 回報
+> 花 2 小時學、1 小時整合，得到個性化的內容分析，值得一試。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 低風險：這個工具不需要高權限，並且不存取敏感資料。
+
+## 健康度儀表板
+
+> [!abstract]- 專案健康度綜合評估
+> ```dataviewjs
+> const me = dv.page("Repos/XBuilderLAB--cheat-on-content");
+> if (me) {
+>   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
+>   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
+>   const created = me.created ? new Date(me.created.toString()) : null;
+>   const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : null;
+>   const forkRatio = me.stars > 0 ? ((me.forks || 0) / me.stars * 100).toFixed(1) : 0;
+>   const issueRatio = me.stars > 0 ? ((me.open_issues || 0) / me.stars * 100).toFixed(1) : 0;
+>   const maint = daysSincePush === null ? "?" : daysSincePush <= 7 ? "Active" : daysSincePush <= 30 ? "Moderate" : "Stale";
+>   const busFactor = (me.forks || 0) > 50 ? "Good" : (me.forks || 0) > 10 ? "OK" : "Risk";
+>   // v29: README 品質和 Issue 解決率
+>   const readmeLen = me.readme_length || 0;
+>   const readmeQ = readmeLen > 5000 ? "Excellent" : readmeLen > 2000 ? "Good" : readmeLen > 500 ? "Basic" : readmeLen > 0 ? "Minimal" : "None";
+>   const icr = me.issue_close_rate;
+>   const icrLabel = icr === undefined || icr < 0 ? "N/A" : icr + "%";
+>   const icrEval = icr === undefined || icr < 0 ? "?" : icr >= 80 ? "Excellent" : icr >= 50 ? "Good" : icr >= 20 ? "Fair" : "Poor";
+>   const repoKB = me.repo_size_kb || 0;
+>   const sizeLabel = repoKB > 102400 ? (repoKB/1024).toFixed(0) + " MB" : repoKB + " KB";
+>   dv.table(["指標", "值", "評估"], [
+>     ["維護狀態", daysSincePush + " 天前推送", maint],
+>     ["專案年齡", age + " 天", age > 180 ? "Established" : age > 30 ? "Growing" : "Brand New"],
+>     ["Fork 比率", forkRatio + "%", parseFloat(forkRatio) > 20 ? "High adoption" : parseFloat(forkRatio) > 5 ? "Normal" : "Low"],
+>     ["Issue 密度", issueRatio + "%", parseFloat(issueRatio) > 5 ? "High" : "Normal"],
+>     ["Issue 解決率", icrLabel, icrEval],
+>     ["Bus Factor", (me.bus_factor || 0) + " 人", (me.bus_factor || 0) >= 3 ? "Good" : (me.bus_factor || 0) >= 2 ? "OK" : "Risk"],
+>     ["README 品質", readmeLen.toLocaleString() + " 字元", readmeQ],
+>     ["Repo 大小", sizeLabel, repoKB > 102400 ? "Large" : repoKB > 10240 ? "Medium" : "Small"],
+>     ["發版節奏", me.release_cadence || "unknown", me.release_cadence === "weekly" || me.release_cadence === "monthly" ? "Active" : me.release_cadence === "never" ? "No releases" : "Check"],
+>     ["距上次發版", (me.last_release_days || 0) >= 0 ? (me.last_release_days + " 天") : "N/A", (me.last_release_days || -1) < 0 ? "?" : (me.last_release_days || 0) <= 30 ? "Fresh" : (me.last_release_days || 0) <= 90 ? "OK" : "Stale"],
+>   ]);
+> }
+> ```
+
+> [!abstract]- CHAOSS 社群健康度雷達
+> ```dataviewjs
+> const me = dv.page("Repos/XBuilderLAB--cheat-on-content");
+> if (me) {
+>   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
+>   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
+>   const dims = [
+>     ["維護活躍度", Math.max(0, 5 - Math.floor(daysSincePush / 14))],
+>     ["貢獻者多樣性", Math.min(5, Math.floor((me.bus_factor || 0) * 1.5 + (me.contributor_count || 0) / 3))],
+>     ["Issue 回應力", (me.issue_close_rate || 0) >= 80 ? 5 : (me.issue_close_rate || 0) >= 50 ? 4 : (me.issue_close_rate || 0) >= 20 ? 2 : 1],
+>     ["發版節奏", me.release_cadence === "weekly" ? 5 : me.release_cadence === "monthly" ? 4 : me.release_cadence === "quarterly" ? 3 : me.release_cadence === "irregular" ? 2 : 1],
+>     ["社群規模", Math.min(5, Math.floor(Math.log10(Math.max(me.stars || 1, 1)) * 1.2))],
+>     ["Fork 活躍度", (me.forks || 0) > 100 ? 5 : (me.forks || 0) > 30 ? 4 : (me.forks || 0) > 10 ? 3 : (me.forks || 0) > 3 ? 2 : 1],
+>   ];
+>   dv.table(["維度", "分數", "視覺化"], dims.map(([name, score]) => [
+>     name, score + "/5", "\u2588".repeat(score) + "\u2591".repeat(5 - score)
+>   ]));
+>   const avg = (dims.reduce((a, b) => a + b[1], 0) / dims.length).toFixed(1);
+>   dv.paragraph("**綜合健康度：" + avg + "/5**");
+> }
+> ```
+
+## 技術細節
+
+| 欄位 | 值 |
+| --- | --- |
+| Forks | 162 |
+| Open Issues | 4 |
+| Issue 解決率 | 20% (1 closed) |
+| 最後推送 | 2026-05-05 |
+| 建立日期 | 2026-05-05 |
+| Repo 大小 | 223 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/XBuilderLAB/cheat-on-content) |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 52
+>     "Shell" : 48
+> ```
+
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@woniuxuezhang](https://github.com/woniuxuezhang) | 6 |
+> | [@Jooonnn](https://github.com/Jooonnn) | 1 |
+
+## 社群與生態
+
+**社群活躍度**：社群活躍度中等，開放問題數量較少。
+
+## 開發動態
+
+> [!abstract] 最近 10 次 commit（2026-05-05 ~ 2026-05-05）
+> **活躍天數** 1 天 · **最新 commit** CHANGELOG: backfill Unreleased entries for content_form fix + README rewrite
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#3](https://github.com/XBuilderLAB/cheat-on-content/issues/3) | 这个skill希望也能够支持cursor | 0 | 0 |
+> | [#2](https://github.com/XBuilderLAB/cheat-on-content/issues/2) | 请问能不能添加 tiktok 的支持？ | 0 | 0 |
+> | [#1](https://github.com/XBuilderLAB/cheat-on-content/issues/1) | 我想跟你做一次初次对话 | 0 | 0 |
+
+## README 摘錄
+
+> [!info]- 展開查看原文 README
+> # Cheat on Content
+> 
+> > 做内容本质上就是作弊——谁先看穿规律，谁就拿走流量。
+> > 凭感觉发是**猜**，这套让你**算**。也叫**网红外挂**。
+> > 我用它一个月涨粉 100w —— 不是灵感，是系统。
+> 
+> [](CHANGELOG.md)
+> [](LICENSE)
+> 
+> ---
+> 
+> ## 🎬 它真正在干什么
+> 
+> 90% 的创作者都活在同一个循环里：
+> 
+> > 凭感觉发 → 数据出来发现拉了 → 不知道为什么拉 → 下一条还是凭感觉
+> 
+> 爆了不知道为啥爆，扑了学不到东西。一年发 200 条，水平和第一天一样——只是更累。
+> 
+> **网红外挂**把每一篇都强行变成一次校准实验：
+> 
+> 📊 打分 → 🎯 盲预测 → 🚀 发布 → 📈 T+3 天复盘 → 🧬 进化你的评分公式
+> 
+> 跑一个月 = 你有了一份**只属于你的爆款公式**。
+> 跑三个月 = 你比刚开始的自己强 10 倍。
+> 
+> ---
+> 
+> ## ⚖️ 它和别的"创作工具"哪里不一样
+> 
+> | 别人 | 这个 |
+> |---|---|
+> | 给你"灵感" | 让你**自己的灵感被量化** |
+> | AI 帮你写 | AI 帮你**判**——稿子还是你的 |
+> | 一发发 10 个版本 A/B 测 | 一发就**赌**——把判断写下来，数据出来对账 |
+> | 静态数据看板 | **会进化的评分公式**——你三个月后的 rubric 已经不是初始版 |
+> 
+> 一句话：别的工具帮你"产出更多"，这个工具帮你"判得更准"。
+> 
+> ---
+> 
+> ## 🤔 那 ChatGPT / 豆包 / DeepSeek 不是也能干这个？
+> 
+> 那是**通用助手**——对所有人说同样的话。你问"我这条会爆吗"，它的答案是从全网平均经验拟合出来的，跟你的账号没关系。明天再问一遍，答案还是上次那个——**它不记得你，更不会因为你而变**。
+> 
+> 这套是**你自己的运营专家**，只服务你这一个账号：
+> 
+> - 评分公式从**你的**历史数据反推，不是通用训练分布
+> - 每发一条它就更新一次对你账号的理解——三个月后判断准度比刚开始强 10 倍（**自动进化**）
+> - 它知道你的对标账号、你的发布 cadence、你最近三次为什么扑——这些 ChatGPT 第一句话就忘了
+> 
+> 通用 LLM 帮所有人；这套帮你**这个**账号。
+> 
+> ---
+> 
+> ## 🛡️ 它怎么让循环真的能进化
+> 
+> 📝 **每条都留底**：发布前打分、写预测，全程存档。三天后回来对账——你哪里准、哪里偏，**一目了然**，不再是模糊的"感觉这次没发好"。
+> 
+> 🔁 **越用越准**：连续三次同方向偏差，工具自动催你升级评分公式。**你不主动它也催**。
+> 
+> 🛡️ **升级有刹车**：换公式必须用新公式重判所有历史样本，能比旧公式更准才放行；还要跨模型独立审一次——**防你自己骗自己**。
+> 
+> 🪒 **rubric 是工作台不是博物馆**：被推翻的观察删，被吸收的也删。永远只放当下最有用的。
+> 
+> ---
+> 
+> ## 📦 安装
+> 
+> ```bash
+> git clone https://github.com/XBuilderLAB/cheat-on-content.git
+> cd cheat-on-content
+> bash install.sh
+> ```
+> 
+> 13 个子 skill 软链接到 `~/.claude/skills/`。装一次，所有内容项目都能用。
+> 
+> > 冻结版本：`bash install.sh --copy` / 卸载：`bash uninstall.sh`（不动你的内容数据）
+> 
+> ---
+> 
+> ## 🚀 第一次跑
+> 
+> 在你的内容项目目录里开 Claude Code，说：
+> 
+> ```
+> 初始化 cheat-on-content
+> ```
+> 
+> 5 个 yes/no 搞定 onboarding。**强烈建议导对标账号**——5-10 条样本 → 工具立刻有 anchor，不然前 5 篇预测精度 ±50%。
+> 
+> ---
+> 
+> ## ⚡ 日常用法
+> 
+> ```
+> 打分这篇 scripts/.md         → 评分
+> 启动预测 scripts/.md         → 盲预测 + 决策日志
+> 拍了 scripts/.md            → 建 video folder + buffer +1
+> 已发布 https://...                → buffer -1
+> 复盘 videos//                → T+3d 数据回收 + 复盘
+> 状态 / 抓热点 / 找选题 / 升级 rubric / 找对标
+> ```
+> 
+> 每次开会话 hook 自动报告 buffer + 待复盘 + top 候选——你不用主动问。
+> 
+> 完整工作流 + 子 skill 细节见 [SKILL.md](SKILL.md)。
+> 
+> ---
+> 
+> ## 📜 License
+> 
+> MIT。商用、改造、闭源接入都行。
+> 
+> ---
+> 
+> *这是作弊吗？计算器也是。Google 也是。
+> 未来不奖励努力——它奖励先看见规律的人。*
+
+## 延伸閱讀
+
+相關概念：[[自動化]] · [[資料分析]] · [[內容行銷]]
+
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]]
+
+[GitHub](https://github.com/XBuilderLAB/cheat-on-content)
+
+## 相關收錄
+
+> [!note]- 直接競品（同子分類：內容創作工具）
+> ```dataview
+> TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
+> FROM "Repos"
+> WHERE subcategory = "內容創作工具" AND file.name != "XBuilderLAB--cheat-on-content"
+> SORT stars DESC
+> ```
+
+> [!note]- 同分類的其他專案
+> ```dataview
+> TABLE stars, install_complexity AS "難度", status
+> FROM "Repos"
+> WHERE category = "其他" AND file.name != "XBuilderLAB--cheat-on-content"
+> SORT stars DESC
+> LIMIT 8
+> ```
+
+> [!note]- 同語言的熱門專案
+> ```dataview
+> TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
+> FROM "Repos"
+> WHERE language = "Python" AND file.name != "XBuilderLAB--cheat-on-content" AND status != "archived"
+> SORT stars_per_day DESC
+> LIMIT 5
+> ```
+
+> [!note]- 同週收錄
+> ```dataview
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
+> FROM "Repos"
+> WHERE week = "2026-W19" AND file.name != "XBuilderLAB--cheat-on-content"
+> SORT stars DESC
+> ```
+
+> [!note]- 共用概念的相關專案
+> ```dataviewjs
+> const concepts = ["自動化","資料分析","內容行銷"];
+> const pages = dv.pages('"Repos"')
+>   .where(p => p.file.name !== "XBuilderLAB--cheat-on-content" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .sort(p => p.stars, "desc")
+>   .limit(5);
+> if (pages.length > 0) {
+>   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
+>     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
+>     return [p.file.link, p.stars, p.category, shared.join(", ")];
+>   }));
+> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
+> ```
+
+> [!note]- Ring 更高的同類競品
+> ```dataviewjs
+> const me = dv.page("Repos/XBuilderLAB--cheat-on-content");
+> if (me) {
+>   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
+>   const myRing = ringOrder[me.ring] || 0;
+>   const better = dv.pages('"Repos"')
+>     .where(p => p.file.name !== "XBuilderLAB--cheat-on-content" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .sort(p => p.stars_per_day || 0, "desc").limit(5);
+>   if (better.length > 0) {
+>     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
+>       p.file.link, p.ring, p.stars_per_day || 0, p.install_complexity || "?", (p.use_case || "").toString().slice(0, 40)
+>     ]));
+>   } else { dv.paragraph("_此分類中沒有 Ring 更高的專案（你可能已經在用最好的了）_"); }
+> }
+> ```
+
+## 同 Owner 專案
+
+> [!note]- 這位開發者的其他收錄專案
+> ```dataview
+> TABLE stars AS "Stars", category AS "分類", status AS "狀態"
+> FROM "Repos"
+> WHERE owner = "XBuilderLAB" AND file.name != "XBuilderLAB--cheat-on-content"
+> SORT stars DESC
+> ```
+
+## Vault 排名
+
+> [!abstract]- 這個專案在 vault 中的相對位置
+> ```dataviewjs
+> const me = dv.page("Repos/XBuilderLAB--cheat-on-content");
+> const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
+> const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> const catAll = all.where(p => p.category === me?.category);
+> const catRank = catAll.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> const totalStarsAll = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars || 0, "desc");
+> const starsRank = totalStarsAll.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> if (rank > 0) {
+>   const pct = Math.round((1 - rank / all.length) * 100);
+>   dv.paragraph(`Stars/天排名：**全 vault 第 ${rank}**/${all.length}（前 ${100 - pct}%）· **${me.category} 第 ${catRank}**/${catAll.length}\nStars 總量排名：**第 ${starsRank}**/${totalStarsAll.length}`);
+> }
+> ```
+
+## Star 趨勢
+
+> [!abstract]- Stars 成長追蹤
+> ```dataviewjs
+> const me = dv.page("Repos/XBuilderLAB--cheat-on-content");
+> if (me?.star_history) {
+>   const raw = me.star_history.toString();
+>   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
+>   if (points.length >= 2) {
+>     const max = Math.max(...points.map(p => p.stars));
+>     const lines = points.map(p => {
+>       const w = Math.round(p.stars / max * 25);
+>       return `${p.date} ${"\u2588".repeat(w)}${"\u2591".repeat(25-w)} ${p.stars.toLocaleString()}`;
+>     });
+>     const first = points[0].stars;
+>     const last = points[points.length-1].stars;
+>     const growth = first > 0 ? Math.round((last - first) / first * 100) : 0;
+>     lines.push(`\n**成長** +${(last-first).toLocaleString()} stars（${growth}%）in ${points.length} snapshots`);
+>     // 趨勢方向偵測
+>     if (points.length >= 3) {
+>       const mid = Math.floor(points.length / 2);
+>       const fh = points.slice(0, mid), sh = points.slice(mid);
+>       const rateF = fh.length > 1 ? (fh[fh.length-1].stars - fh[0].stars) / Math.max(1, (new Date(fh[fh.length-1].date) - new Date(fh[0].date)) / 86400000) : 0;
+>       const rateS = sh.length > 1 ? (sh[sh.length-1].stars - sh[0].stars) / Math.max(1, (new Date(sh[sh.length-1].date) - new Date(sh[0].date)) / 86400000) : 0;
+>       const ratio = rateF > 0 ? rateS / rateF : rateS > 0 ? 2 : 1;
+>       const dir = ratio > 1.3 ? "Rising（加速中）" : ratio < 0.7 ? "Cooling（降溫中）" : "Stable（穩定）";
+>       lines.push(`**趨勢方向** ${dir}（加速比 ${Math.round(ratio * 100) / 100}x）`);
+>     }
+>     dv.paragraph(lines.join("\n"));
+>   } else { dv.paragraph("需要 2+ 次快照才能顯示趨勢"); }
+> } else { dv.paragraph("尚無 star_history 資料（下次出現在 trending 時會開始追蹤）"); }
+> ```
+
+## 相對成長速度
+
+> [!abstract]- 跟 vault 中同類專案比較
+> ```dataviewjs
+> const me = dv.page("Repos/XBuilderLAB--cheat-on-content");
+> if (me) {
+>   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
+>   const sameCat = all.where(p => p.category === me.category);
+>   const avgAll = all.length > 0 ? Math.round(all.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / all.length) : 0;
+>   const avgCat = sameCat.length > 0 ? Math.round(sameCat.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / sameCat.length) : 0;
+>   const mySpd = me.stars_per_day || 0;
+>   const vsAll = avgAll > 0 ? Math.round(mySpd / avgAll * 100) : 0;
+>   const vsCat = avgCat > 0 ? Math.round(mySpd / avgCat * 100) : 0;
+>   dv.table(["比較對象", "平均 Stars/天", "本專案", "倍數"], [
+>     ["全 Vault", avgAll, mySpd, vsAll + "%"],
+>     ["同分類 (" + me.category + ")", avgCat, mySpd, vsCat + "%"],
+>   ]);
+>   if (vsAll >= 300) dv.paragraph("**極速成長** — 成長速度是 vault 平均的 3 倍以上");
+>   else if (vsAll >= 150) dv.paragraph("**高速成長** — 成長速度高於 vault 平均");
+>   else if (vsAll >= 50) dv.paragraph("**正常速度** — 接近 vault 平均水平");
+>   else dv.paragraph("**低速成長** — 低於 vault 平均，可能已過熱度高峰");
+> }
+> ```
+
+## 決策分數
+
+> [!abstract]- 綜合評估（自動計算）
+> ```dataviewjs
+> const me = dv.page("Repos/XBuilderLAB--cheat-on-content");
+> if (me) {
+>   let score = 0;
+>   let breakdown = [];
+>   // 熱度 (0-25)
+>   const spd = me.stars_per_day || 0;
+>   const heat = Math.min(25, Math.round(spd / 40 * 25));
+>   score += heat; breakdown.push(`熱度: ${heat}/25`);
+>   // 安裝難度 (0-20)
+>   const inst = me.install_complexity === "easy" ? 20 : me.install_complexity === "medium" ? 12 : 5;
+>   score += inst; breakdown.push(`易用性: ${inst}/20`);
+>   // 成熟度 (0-20)
+>   const created = me.created ? new Date(me.created.toString()) : null;
+>   const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : 0;
+>   const mat = age > 365 ? 20 : age > 180 ? 16 : age > 30 ? 10 : 5;
+>   score += mat; breakdown.push(`成熟度: ${mat}/20`);
+>   // 社群 (0-20)
+>   const forks = me.forks || 0;
+>   const comm = forks > 200 ? 20 : forks > 50 ? 15 : forks > 10 ? 10 : 5;
+>   score += comm; breakdown.push(`社群: ${comm}/20`);
+>   // 授權 (0-15)
+>   const lic = me.license || "";
+>   const friendly = ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unlicense"].includes(lic);
+>   const licScore = friendly ? 15 : lic && lic !== "N/A" ? 8 : 0;
+>   score += licScore; breakdown.push(`授權: ${licScore}/15`);
+>   const grade = score >= 80 ? "A" : score >= 60 ? "B" : score >= 40 ? "C" : "D";
+>   const bar = "\u2588".repeat(Math.round(score/5)) + "\u2591".repeat(20 - Math.round(score/5));
+>   dv.paragraph(`## ${grade} (${score}/100)\n${bar}\n\n${breakdown.join(" | ")}`);
+> }
+> ```
+
+---
+
+## 個人筆記
+
+> [!abstract]- 評估進度
+> ```dataviewjs
+> const me = dv.page("Repos/XBuilderLAB--cheat-on-content");
+> if (me) {
+>   const steps = [
+>     { name: "已讀", done: me.status && me.status !== "to-review" },
+>     { name: "已評分", done: (me.my_rating || 0) > 0 },
+>     { name: "有結論", done: me.verdict && me.verdict !== "" },
+>     { name: "Ring 決策", done: me.ring && me.ring !== "" && me.ring !== "assess" },
+>     { name: "試用記錄", done: me.status === "tried" || me.status === "integrated" },
+>   ];
+>   const done = steps.filter(s => s.done).length;
+>   const pct = Math.round((done / steps.length) * 100);
+>   const bar = "\u2588".repeat(Math.round(pct / 5)) + "\u2591".repeat(20 - Math.round(pct / 5));
+>   dv.paragraph(`${bar} **${done}/${steps.length}** (${pct}%)`);
+>   const todo = steps.filter(s => !s.done).map(s => s.name);
+>   if (todo.length > 0) dv.paragraph("待完成：" + todo.join(" / "));
+> }
+> ```
+
+> [!question]+ 快速評估（30 秒填完）
+> 
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
+> 
+> | 維度 | 分數 (1-5) | 說明 |
+> | --- | :---: | --- |
+> | 信心 | /5 | _我對這工具的了解程度_ |
+> | 興趣 | /5 | _想投入時間研究的程度_ |
+> | 風險 | /5 | _導入風險，5=極低風險_ |
+> 
+> _填完後更新 frontmatter：`score_confidence` / `score_interest` / `score_risk`_
+> 
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
+
+### 試用記錄
+
+> [!example]- 試用 #1
+> 試用日期 :: 
+> 試用版本 :: 
+> 測試環境 :: _OS / Node / Python 版本_
+> 安裝過程 :: _順利 / 遇到問題（描述）_
+> 花費時間 :: _從零到可用_
+> 實際效果 :: _達到預期 / 不如預期（原因）_
+> 踩到的坑 :: _描述 + 解法_
+> 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
+
+> [!question]- 待研究的問題
+> _記下看完後還沒有答案的問題，未來回來補充_
+> 
+> - [ ] 
+
+### 採用判斷
+
+> [!tip]- 什麼時候該用 / 不該用
+> **該用的情況**：
+> - 
+> 
+> **不該用的情況**：
+> - 
+
+> [!warning]- 替換成本
+> 若半年後要換掉，難度多高？資料格式是標準的嗎？
+> 
+> 侵入性:: _低 / 中 / 高_
+> 遷移路徑:: _描述_
+
+### 決策記錄
+
+> [!abstract]- 為什麼評估這個工具？
+> **當時的痛點**：_遇到什麼問題才開始找工具？_
+> **觸發來源**：_GitHub Trending / HN / 同事推薦 / 其他_
+> **當時的約束**：_時間 / 團隊 / 語言 / 部署環境_
+
+> [!note]- 最終決策
+> decision:: _選了什麼（或為何還在觀望）_
+> why:: _當時的理由（越具體越好）_
+> outcome:: _後來實際發生了什麼_
+
+### 探索日誌
+
+_按時間記錄，每次接觸時追加一段（最新在上）_
+
+> **2026-05-07** — 首次收錄
+> _第一印象：_
+
+**狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `ring_history`: 追加新狀態（格式：`assess@2026-03-10, trial@2026-03-15`）
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
+
+## 出現記錄
+
+- [[2026-05-07|2026-05-07]] — 首次收錄，778 stars

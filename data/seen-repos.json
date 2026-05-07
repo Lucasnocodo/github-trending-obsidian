@@ -1478,10 +1478,10 @@
   },
   "darrylmorley/whatcable": {
     "first_seen": "2026-05-02",
-    "last_seen": "2026-05-06",
-    "times_seen": 5,
+    "last_seen": "2026-05-07",
+    "times_seen": 6,
     "stars_first": 694,
-    "stars_last": 1949
+    "stars_last": 2052
   },
   "t8y2/dbx": {
     "first_seen": "2026-05-03",
@@ -1492,38 +1492,38 @@
   },
   "mattpocock/dictionary-of-ai-coding": {
     "first_seen": "2026-05-04",
-    "last_seen": "2026-05-06",
-    "times_seen": 3,
+    "last_seen": "2026-05-07",
+    "times_seen": 4,
     "stars_first": 849,
-    "stars_last": 1070
+    "stars_last": 1154
   },
   "wrongly-cuddly-obsession/NTSB_FOIA_MU5735": {
     "first_seen": "2026-05-04",
-    "last_seen": "2026-05-06",
-    "times_seen": 3,
+    "last_seen": "2026-05-07",
+    "times_seen": 4,
     "stars_first": 811,
-    "stars_last": 940
+    "stars_last": 976
   },
   "aattaran/deepclaude": {
     "first_seen": "2026-05-05",
-    "last_seen": "2026-05-06",
-    "times_seen": 2,
+    "last_seen": "2026-05-07",
+    "times_seen": 3,
     "stars_first": 1036,
-    "stars_last": 1329
+    "stars_last": 1490
   },
   "vercel-labs/deepsec": {
     "first_seen": "2026-05-06",
-    "last_seen": "2026-05-06",
-    "times_seen": 1,
+    "last_seen": "2026-05-07",
+    "times_seen": 2,
     "stars_first": 1069,
-    "stars_last": 1069
+    "stars_last": 1384
   },
   "vibeforge1111/keep-codex-fast": {
     "first_seen": "2026-05-06",
-    "last_seen": "2026-05-06",
-    "times_seen": 1,
+    "last_seen": "2026-05-07",
+    "times_seen": 2,
     "stars_first": 751,
-    "stars_last": 751
+    "stars_last": 816
   },
   "Fokkyp/SoftwareCopyright-Skill": {
     "first_seen": "2026-05-06",
@@ -1531,5 +1531,33 @@
     "times_seen": 1,
     "stars_first": 713,
     "stars_last": 713
+  },
+  "XBuilderLAB/cheat-on-content": {
+    "first_seen": "2026-05-07",
+    "last_seen": "2026-05-07",
+    "times_seen": 1,
+    "stars_first": 778,
+    "stars_last": 778
+  },
+  "jherrodthomas/automotive-skills-suite": {
+    "first_seen": "2026-05-07",
+    "last_seen": "2026-05-07",
+    "times_seen": 1,
+    "stars_first": 730,
+    "stars_last": 730
+  },
+  "crafter-station/petdex": {
+    "first_seen": "2026-05-07",
+    "last_seen": "2026-05-07",
+    "times_seen": 1,
+    "stars_first": 724,
+    "stars_last": 724
+  },
+  "tddworks/baguette": {
+    "first_seen": "2026-05-07",
+    "last_seen": "2026-05-07",
+    "times_seen": 1,
+    "stars_first": 691,
+    "stars_last": 691
   }
 }

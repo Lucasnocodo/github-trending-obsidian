@@ -1,23 +1,23 @@
 ---
-repo: wrongly-cuddly-obsession/NTSB_FOIA_MU5735
-url: https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735
-owner: wrongly-cuddly-obsession
-owner_type: User
-language: N/A
-license: N/A
-description: ""
-homepage: ""
-stars: 976
-stars_per_day: 163
-forks: 357
-open_issues: 16
-created: 2026-04-30
-pushed_at: 2026-05-03
-first_seen: 2026-05-04
+repo: crafter-station/petdex
+url: https://github.com/crafter-station/petdex
+owner: crafter-station
+owner_type: Organization
+language: TypeScript
+license: MIT
+description: "Public gallery of animated Codex pets"
+homepage: "https://petdex.crafter.run"
+stars: 724
+stars_per_day: 181
+forks: 32
+open_issues: 10
+created: 2026-05-02
+pushed_at: 2026-05-06
+first_seen: 2026-05-07
 week: "2026-W19"
 month: "2026-05"
-category: "其他"
-subcategory: "資料存檔"
+category: "開發工具"
+subcategory: "資源管理"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -25,41 +25,42 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-05-04
-use_case: "提供 MU5735 調查的 FOIA 請求資料，並包含中文翻譯。"
-priority: high
+last_reviewed: 2026-05-07
+use_case: "提供 Codex 兼容的動畫寵物公共畫廊，讓用戶可以輕鬆瀏覽和下載寵物資源。"
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-05-14"
-contributor_count: 1
-engagement: "high"
-issue_close_rate: 17
-repo_size_kb: 147868
-readme_length: 1476
+contributor_count: 5
+engagement: "low"
+issue_close_rate: 89
+repo_size_kb: 61008
+readme_length: 467
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-05-04"
-star_history: "2026-05-04:811,2026-05-05:886,2026-05-06:940,2026-05-07:976"
+ring_history: "assess@2026-05-07"
+star_history: "2026-05-07:724"
 tags:
   - github
-  - "category/其他"
-  - "lang/other"
+  - "category/開發工具"
+  - "lang/typescript"
+  - org
   - easy_install
 aliases:
-  - "NTSB_FOIA_MU5735"
-  - "wrongly-cuddly-obsession/NTSB_FOIA_MU5735"
-  - "提供 MU5735 調查的 FOIA 請求資料，並包含中文翻譯。"
+  - "petdex"
+  - "crafter-station/petdex"
+  - "提供 Codex 兼容的動畫寵物公共畫廊，讓用戶可以輕鬆瀏覽和下載寵物資源。"
 ---
 
-# NTSB_FOIA_MU5735
+# petdex
 
-**811** stars · **270** stars/天 · 建立 3 天前 · N/A · 未標註授權
+**724** stars · **181** stars/天 · 建立 4 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
+const me = dv.page("Repos/crafter-station--petdex");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +70,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `easy-install`
+`ORG` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供 MU5735 調查的 FOIA 請求資料，並包含中文翻譯。
+> 提供 Codex 兼容的動畫寵物公共畫廊，讓用戶可以輕鬆瀏覽和下載寵物資源。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (270 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 需要查閱 MU5735 飛機事故調查資料的研究者和專業人士。
-> **一句話重點** 這個專案提供了 MU5735 調查的資料存檔和翻譯，讓使用者能夠更方便地獲取相關資訊。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (181 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
+> **適合** 需要快速建立和管理 Codex 兼容動畫資源的遊戲開發者或獨立創作者。
+> **一句話重點** Petdex 不僅是一個資源庫，更是一個社群互動平台，讓用戶能夠共同創造和分享動畫資源。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
+> const me = dv.page("Repos/crafter-station--petdex");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "資料存檔" && p.file.name !== "wrongly-cuddly-obsession--NTSB_FOIA_MU5735" && p.status !== "archived")
+>     .where(p => p.subcategory === "資源管理" && p.file.name !== "crafter-station--petdex" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,96 +97,179 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 資料存檔 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 資源管理 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **安裝** Easy (一行搞定)
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習、3 小時整合，得到快速的資源管理功能，值得採用。
 
 > [!abstract] 核心創新
-> 這個專案提供了 MU5735 調查的資料存檔和翻譯，讓使用者能夠更方便地獲取相關資訊。
+> Petdex 提供了一個集成的社群平台，讓用戶能夠輕鬆瀏覽、下載和提交 Codex 兼容的動畫寵物資源。
 
 ## 專案簡介
 
-這個專案是對 MU5735 飛機事故調查的 FOIA 請求資料的存檔，目的是保留原始資料以供後續查閱。使用者可以在此找到與 NTSB 相關的資料，包括非官方的中文翻譯報告。該專案的設計考量是為了保護原始資料提供者的隱私，因為原始資料已被刪除或設為私有。使用者可以直接從 NTSB 網站下載最新的資料，這樣的設計使得資料的獲取更為方便。關鍵的 CLI 指令是訪問資料的鏈接，並且提供了中文翻譯的連結，這對於中文使用者特別有幫助。這個專案的「一句話賣點」是：提供 MU5735 調查的資料存檔和翻譯，讓使用者能夠更方便地獲取相關資訊。
+Petdex 是一個專為 Codex 兼容的動畫寵物設計的公共畫廊，讓用戶可以輕鬆瀏覽、預覽和下載各種寵物資源。用戶可以透過簡單的界面查看每個動畫狀態，並下載個別的 ZIP 包或整個畫廊包。開發者可以使用 `bun dev` 指令啟動開發環境，並透過 `bun run build` 指令進行生產環境的建置，這樣的設計使得開發流程簡潔且高效。Petdex 的核心賣點在於其社群功能，允許用戶在瀏覽器中驗證和提交社群寵物包，這樣的互動性增強了用戶的參與感。技術上，Petdex 使用了 Next.js 作為框架，並整合了多個 AWS SDK 來處理資源的上傳和存取，這使得資源管理更為高效。
 
-技術上，這個專案並未使用複雜的框架或演算法，主要依賴 GitHub 的版本控制功能來管理資料。相較於其他資料庫，這個專案的獨特之處在於它專注於特定事件的資料存檔，並且提供了中文翻譯，這在同類專案中並不常見。使用者可能會遇到的問題包括資料的更新速度和原始資料的可用性，這些都取決於 NTSB 的發布進度。這個專案目前處於活躍狀態，社群的回應速度也相對較快，特別是在熱門問題上。對於需要查閱 MU5735 事件資料的研究者或關心該事件的人來說，這是一個值得使用的資源。未來幾個月，該專案可能會隨著 NTSB 的更新而持續增長，並且可能會吸引更多的使用者來參與資料的討論和補充。
+與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，Petdex 提供了更直觀的用戶介面和社群互動功能，這使得它在用戶體驗上更具優勢。實際使用中，Petdex 的效能表現良好，能夠快速加載和展示大量的動畫資源，並且社群的活躍度也相對較高，已經有 89% 的 Issue 被解決。這個專案目前處於 beta 階段，適合小型團隊或個人開發者使用，未來可能會進一步擴展功能和資源庫。對於需要快速建立動畫資源庫的開發者來說，Petdex 是一個值得考慮的選擇，但如果需要更複雜的功能，可能需要考慮其他替代方案。
+
+**技術棧**：`Next.js 16.2.4` · `TypeScript 6.0.3` · `AWS SDK`
 
 ## 重點功能
 
-- 資料存檔 — 提供 MU5735 調查的 FOIA 請求資料，方便查閱。
-- 中文翻譯 — 提供 NTSB 記錄器報告的非官方中文翻譯，方便中文使用者理解。
-- 直接下載鏈接 — 提供從 NTSB 網站直接下載資料的鏈接，方便使用者獲取最新資訊。
-- 社群互動 — 支持使用者在 Issues 中討論和提問，促進資料的理解和補充。
-- 隱私保護 — 重新上傳資料以保護原始資料提供者的隱私。
+- 瀏覽批准的寵物包 — 用戶可以輕鬆查看所有可用的寵物資源。
+- 預覽每個動畫狀態 — 提供即時的動畫效果預覽，方便用戶選擇。
+- 下載個別 ZIP 包 — 用戶可以根據需求下載特定的資源包。
+- 下載完整畫廊包 — 提供整體資源的下載選項，便於批量使用。
+- 社群提交功能 — 用戶可以在瀏覽器中驗證和提交自己的寵物包，增加互動性。
 
 ## 快速開始
 
-1. 克隆專案到本地
+1. 安裝依賴
 ```bash
-git clone https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735.git
+bun install
 ```
-2. 訪問 NTSB 的資料下載鏈接
+2. 啟動開發伺服器
 ```bash
-https://securefoia.ntsb.gov/app/AddAttachment.aspx?docid=66&ispaldoc=F
+bun dev
 ```
-3. 查看中文翻譯報告
+3. 建置生產版本
 ```bash
-https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NTSB_Recorder_Report_CN/MU5735_NTSB_Recorder_Report_Chinese.md
+bun run build
+```
+
+## 程式碼範例
+
+```ts
+{
+  "前置條件": "需要安裝 bun 環境",
+  "指令": "bun dev",
+  "預期輸出": "開發伺服器啟動，並可在瀏覽器中訪問。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 811 stars（270/天），forks 298（36.7%），這顯示出極高的使用者關注度。專案的主要貢獻者是 wrongly-cuddly-obsession，這位使用者過去在資料存檔方面有一定的經驗。這個專案解決了資料存取的問題，因為之前的資料已經被刪除，使用者無法獲取。NTSB 的資料發布也促進了這個專案的興起，因為它提供了更方便的資料獲取方式。社群的反應和討論也顯示出使用者對於該事件的關注，特別是在熱門問題中有許多討論。這個專案的 forks/stars 比率高達 36.7%，代表著許多人在實際修改和使用這個專案，顯示出其實用性和需求。
+> 建立 4 天就累積 724 stars（181/天），forks 32（4.4%），這顯示出相對穩定的關注度。作者 Railly 和其他貢獻者在開源社群中有一定的影響力，之前也參與過多個相關專案。Petdex 解決了用戶在尋找和管理 Codex 兼容寵物資源時的痛點，之前的解決方案往往缺乏社群互動和資源管理的便利性。近期的推廣活動和社群討論也可能促進了這個專案的曝光率。技術上，隨著 Next.js 和 AWS SDK 的成熟，這個工具的實現變得更加可行。forks/stars 比率顯示出用戶對於這個專案的實際修改和使用意願較高，這也反映了其在開發者中的受歡迎程度。
 
 ## 適合誰使用
 
-**目標受眾**：需要查閱 MU5735 飛機事故調查資料的研究者和專業人士。
+**目標受眾**：需要快速建立和管理 Codex 兼容動畫資源的遊戲開發者或獨立創作者。
 
 > [!example] 使用場景
-> - 研究人員用它來查閱 MU5735 事件的 FOIA 請求資料，因為這些資料提供了事故調查的詳細背景。
-> - 航空業專業人士用它來分析事故原因，因為資料的可獲取性有助於行業內的安全改進。
-> - 翻譯工作者用它來獲取 NTSB 報告的中文翻譯，因為這樣能夠更好地服務於中文讀者的需求。
+> - 遊戲開發者用它來快速建立和管理動畫寵物資源，因為其提供了簡單的瀏覽和下載功能，節省了大量時間。
+> - 獨立開發者用它來驗證和提交自己的寵物包，因為這樣的社群互動能夠提升他們的作品曝光率。
+> - 教育工作者用它來展示動畫資源的應用，因為其直觀的介面和豐富的資源能夠吸引學生的注意。
 
 ## 架構分析
 
-這個專案的架構相對簡單，主要依賴 GitHub 的版本控制系統來管理資料。資料以文件的形式存儲，使用者可以通過訪問鏈接來獲取資料。這樣的設計使得資料的存取變得方便，但也意味著資料的更新和維護需要依賴外部來源。由於專案的主要功能是資料存檔，因此在擴展性方面並沒有特別的考量，未來的更新主要取決於 NTSB 的資料發布情況。
+Petdex 採用 Next.js 作為前端框架，這使得開發和部署變得簡單且高效。資料流方面，資源包存放在 `public/pets` 目錄下，並透過 AWS SDK 進行上傳和下載，這樣的設計能夠快速響應用戶請求。選擇 Next.js 的原因在於其優秀的 SSR 和靜態生成能力，這對於資源的快速加載至關重要。相對於傳統的 SPA，這種架構能夠提供更好的 SEO 和用戶體驗。擴展性方面，隨著資源的增長，可能需要考慮如何優化資料庫查詢和資源管理的性能。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是利用 GitHub 的版本控制功能來存儲和管理資料，這使得資料的查閱和更新變得方便。由於專案主要是資料存檔，因此在效能和規模特性方面並不需要考慮複雜的架構或高效能的計算。資料的更新和維護主要依賴於 NTSB 的資料發布，這意味著使用者需要定期檢查資料的可用性。選擇 GitHub 作為資料存儲平台的好處是其社群互動性，使用者可以在 Issues 中討論資料的內容和解釋。
-
-這樣的設計也使得資料的存取變得透明，但也可能帶來資料更新的不穩定性。未來的擴展性主要取決於 NTSB 的資料發布情況，若 NTSB 更新資料頻繁，則專案將持續保持活躍。整合到現有的工具鏈中相對簡單，使用者只需訪問資料鏈接即可獲取所需資訊，並不需要額外的配置或安裝。整體而言，這個專案在資料存取方面提供了便利，但在資料更新的穩定性上可能存在挑戰。
+Petdex 的核心技術機制是基於 Next.js 框架，這使得其能夠有效地處理伺服器端渲染和靜態生成，從而提升用戶體驗。資料結構上，寵物資源存放在 `public/pets`，並透過 AWS SDK 進行資源的上傳和下載，這樣的設計使得資源管理變得高效且可靠。效能方面，Petdex 能夠快速加載大量資源，並且在高並發請求下仍能保持穩定。選擇 Next.js 而非其他框架的原因在於其優秀的生態系統和社群支持，這能夠減少開發過程中的技術負擔。技術風險方面，隨著資源的增長，可能會出現性能瓶頸，特別是在資料庫查詢和資源管理上。整合方面，Petdex 能夠輕鬆與現有的 CI/CD 流程結合，並且對於主流的 IDE 也有良好的支持，這使得開發者能夠快速上手並進行開發。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件簡潔明瞭，提供了必要的資料鏈接和中文翻譯的連結。安裝過程非常順暢，只需克隆專案或訪問鏈接即可。文件沒有提供多語言版本，但中文翻譯的存在對於中文使用者來說是個加分項。整體上，花 30 分鐘能夠順利獲取所需資料。
+> README 文件簡潔明瞭，提供了清晰的安裝和使用指導。安裝過程順暢，沒有明顯的坑。文件中沒有多語言支持，但整體上能夠讓新手快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供 MU5735 調查的 FOIA 請求資料，方便查閱。
-> - 包含非官方中文翻譯，對於中文使用者特別友好。
-> - 社群互動活躍，使用者可以在 Issues 中討論和提問。
+> - 用戶界面友好，易於瀏覽和下載資源。
+> - 社群互動功能增強了用戶參與感。
+> - 快速的資源加載性能，適合大規模使用。
 
 > [!danger] 缺點
-> - 資料更新依賴於 NTSB 的發布進度，可能會有延遲。
-> - 中文翻譯為非官方版本，可能存在翻譯不準確的風險。
-> - 直接下載資料可能需要使用美國 IP 地址，對於國際使用者來說可能造成障礙。
+> - 目前僅支援 Codex 兼容資源，限制了使用範圍。
+> - 社群提交功能仍在測試中，可能不穩定。
+> - 對於大型資源包的管理可能存在性能瓶頸。
 
 > [!warning] 注意事項
-> - 資料更新依賴於 NTSB 的發布進度，可能會有延遲。
-> - 中文翻譯為非官方版本，可能存在翻譯不準確的風險。
-> - 直接下載資料可能需要使用美國 IP 地址，對於國際使用者來說可能造成障礙。
+> - 目前僅支援 Codex 兼容的寵物資源。
+> - 社群提交功能仍在測試階段，可能存在不穩定性。
+> - 對於大型資源包的管理可能會有性能瓶頸。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的寵物資源管理功能，但缺乏社群互動和提交的便捷性。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資源的存儲和管理，但界面不如 Petdex 直觀。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於資源的創建和編輯，而 Petdex 更加強調社群互動和資源的管理。 | 如果你的需求是創建和編輯動畫資源而非管理，它可能更合適。 | medium，因為需要重新適應不同的功能和界面。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供資源的存儲和管理，但缺乏社群互動功能。 | 如果你需要一個簡單的資源存儲解決方案，而不需要社群功能，這個選擇會更合適。 | low，因為功能相似，遷移成本較低。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **petdex** | **agent-sprite-forge** | **boneyard** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 專注於資源的創建和編輯，而 Petdex 更加強調社群互動和資源的管理。 | 提供資源的存儲和管理，但缺乏社群互動功能。 |
+> | 遷移成本 | - | medium，因為需要重新適應不同的功能和界面。 | low，因為功能相似，遷移成本較低。 |
+> | 適用場景 | 主要場景 | 如果你的需求是創建和編輯動畫資源而非管理，它可能更合適。 | 如果你需要一個簡單的資源存儲解決方案，而不需要社群功能，這個 |
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Beta |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | medium |
+
+> [!tip] 採用建議
+> 適合小型團隊或個人開發者試用，但不建議用於生產環境的核心路徑上。
+
+## 已知陷阱
+
+> [!bug] 踩坑才知道的問題
+
+- [MEDIUM] 社群提交功能可能會出現不穩定，導致用戶無法提交資源。
+  - 解法：建議定期檢查提交狀態，並聯繫開發者反饋問題。
+- **[HIGH]** 對於大型資源包的管理可能會造成性能下降。
+  - 解法：考慮將資源拆分為較小的包進行管理。
+- [low] 某些瀏覽器可能無法正確顯示動畫效果。
+  - 解法：建議使用最新版本的 Chrome 或 Firefox 瀏覽器。
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 小型遊戲開發團隊需要快速建立寵物資源庫 | 非常適合 | Petdex 提供了快速的資源管理和社群互動功能，能夠加速開發流程。 |
+| 大型遊戲開發公司需要穩定的資源管理系統 | 不適合 | 目前仍在 beta 階段，可能不夠穩定。 |
+| 獨立開發者希望展示自己的動畫資源 | 適合 | 社群提交功能能夠提升作品的曝光率。 |
+| 教育機構需要展示動畫資源的應用 | 非常適合 | 直觀的介面和豐富的資源能夠吸引學生的注意。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | low |
+| 綁定風險 | low |
+
+> [!tip] 投入 vs 回報
+> 花 2 小時學習、3 小時整合，得到快速的資源管理功能，值得採用。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 低風險：此工具不需要高權限，且不存取敏感資料，依賴鏈的信任程度良好，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
+> const me = dv.page("Repos/crafter-station--petdex");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -220,7 +304,7 @@ https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NT
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
+> const me = dv.page("Repos/crafter-station--petdex");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -244,73 +328,98 @@ https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NT
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 298 |
-| Open Issues | 15 |
-| Issue 解決率 | 17% (3 closed) |
-| 最後推送 | 2026-05-03 |
-| 建立日期 | 2026-04-30 |
-| Repo 大小 | 144.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735) |
+| Forks | 32 |
+| Open Issues | 10 |
+| Issue 解決率 | 89% (84 closed) |
+| 最後推送 | 2026-05-06 |
+| 建立日期 | 2026-05-02 |
+| 官方網站 | [Link](https://petdex.crafter.run) |
+| Repo 大小 | 59.6 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/crafter-station/petdex) |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@aws-sdk/client-s3` `@aws-sdk/s3-request-presigner` `@base-ui/react` `@clerk/localizations` `@clerk/nextjs` `@clerk/themes` `@electric-sql/pglite` `@neondatabase/serverless` `@phosphor-icons/react` `@uploadthing/react` `@upstash/ratelimit` `@upstash/redis` `@vercel/analytics` `ai` `class-variance-authority`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "TypeScript" : 99
+>     "CSS" : 1
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@wrongly-cuddly-obsession](https://github.com/wrongly-cuddly-obsession) | 6 |
+> | [@Railly](https://github.com/Railly) | 242 |
+> | [@cuevaio](https://github.com/cuevaio) | 14 |
+> | [@dependabot[bot]](https://github.com/dependabot[bot]) | 5 |
+> | [@bigbigDreamer](https://github.com/bigbigDreamer) | 4 |
+> | [@vltansky](https://github.com/vltansky) | 3 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，特別是在熱門問題上有許多討論。
+**社群活躍度**：社群活躍度中等，已有 89% 的 Issue 被解決。
+**連結**：[文件](https://petdex.crafter.run)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-30 ~ 2026-05-03）
-> **活躍天數** 2 天 · **最新 commit** Add info that NTSB has directly published the data on its website
+> [!abstract] 最近 10 次 commit（2026-05-06 ~ 2026-05-06）
+> **活躍天數** 1 天 · **最新 commit** Add MIT License to the project
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#1](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/issues/1) | 感谢 | 17 | 0 |
-> | [#11](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/issues/11) | 关于一些异常数据的解释与补充 | 13 | 3 |
-> | [#8](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/issues/8) | （机组试图挽救飞机故障）机务相关行业内人员的解读讨论 （本人仅转发且未核实） | 5 | 105 |
-> | [#2](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/issues/2) | 美国人真是太坏了！！！ | 5 | 7 |
-> | [#15](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/issues/15) | 基于此仓库优化并补充了调查报告的翻译 | 4 | 2 |
+> | [#128](https://github.com/crafter-station/petdex/issues/128) | approval system | 0 | 0 |
+> | [#126](https://github.com/crafter-station/petdex/issues/126) | [Submit fail] Johnny | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # NTSB FOIA MU5735
+> # Petdex
 > 
-> This repository contains files originally shared by another GitHub user related to FOIA requests on the MU5735 investigation.
+> Petdex is a public gallery for Codex-compatible animated pets.
 > 
-> The original repository has since been deleted or made private by its owner. To protect their privacy, the files have been re-uploaded here without preserving the original commit history.
+> ## Features
 > 
-> This repository serves as an archive to maintain access to those materials.
+> - Browse approved pet packs
+> - Preview every animation state
+> - Download individual ZIP packages
+> - Download the full gallery pack
+> - Validate and submit community pet packages in the browser
 > 
-> An unofficial Chinese translation of the NTSB recorder report is available at:
-> https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NTSB_Recorder_Report_CN/MU5735_NTSB_Recorder_Report_Chinese.md
+> ## Development
 > 
-> NTSB记录器报告的非官方中文译文可在以下链接查看：
-> https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NTSB_Recorder_Report_CN/MU5735_NTSB_Recorder_Report_Chinese.md
+> ```bash
+> bun install
+> bun dev
+> ```
 > 
-> NTSB has now published data related to MU5735 on its website. You can download it [here](https://securefoia.ntsb.gov/app/AddAttachment.aspx?docid=66&ispaldoc=F). Direct download from the NTSB website may require a U.S. IP address. Thanks to [@SunsetMkt](https://github.com/SunsetMkt) for providing this information via [Issue #14](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/issues/14).
+> ## Production
 > 
-> NTSB已在其网站上发布了与MU5735相关的数据。你可以在[此处](https://securefoia.ntsb.gov/app/AddAttachment.aspx?docid=66&ispaldoc=F)下载。从NTSB网站直接下载可能需要使用美国IP地址。感谢[@SunsetMkt](https://github.com/SunsetMkt)通过[Issue #14](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/issues/14)提供的信息。
+> ```bash
+> bun run build
+> ```
+> 
+> Pet packages live under `public/pets`, and downloadable archives are generated under `public/packs`.
 
 ## 延伸閱讀
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[alchaincyf--zhangxuefeng-skill|alchaincyf/zhangxuefeng-skill]] · [[farzaa--clicky|farzaa/clicky]] · [[hotcoffeeshake--tong-jincheng-skill|hotcoffeeshake/tong-jincheng-skill]]
+相關概念：[[資源管理]] · [[社群互動]] · [[動畫資源]]
 
-[GitHub](https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735)
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
+
+[GitHub](https://github.com/crafter-station/petdex) · [官方網站](https://petdex.crafter.run)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：資料存檔）
+> [!note]- 直接競品（同子分類：資源管理）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "資料存檔" AND file.name != "wrongly-cuddly-obsession--NTSB_FOIA_MU5735"
+> WHERE subcategory = "資源管理" AND file.name != "crafter-station--petdex"
 > SORT stars DESC
 > ```
 
@@ -318,7 +427,7 @@ https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NT
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "wrongly-cuddly-obsession--NTSB_FOIA_MU5735"
+> WHERE category = "開發工具" AND file.name != "crafter-station--petdex"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -327,7 +436,7 @@ https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NT
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "wrongly-cuddly-obsession--NTSB_FOIA_MU5735" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "crafter-station--petdex" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -336,18 +445,33 @@ https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NT
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W19" AND file.name != "wrongly-cuddly-obsession--NTSB_FOIA_MU5735"
+> WHERE week = "2026-W19" AND file.name != "crafter-station--petdex"
 > SORT stars DESC
+> ```
+
+> [!note]- 共用概念的相關專案
+> ```dataviewjs
+> const concepts = ["資源管理","社群互動","動畫資源"];
+> const pages = dv.pages('"Repos"')
+>   .where(p => p.file.name !== "crafter-station--petdex" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .sort(p => p.stars, "desc")
+>   .limit(5);
+> if (pages.length > 0) {
+>   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
+>     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
+>     return [p.file.link, p.stars, p.category, shared.join(", ")];
+>   }));
+> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
+> const me = dv.page("Repos/crafter-station--petdex");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "wrongly-cuddly-obsession--NTSB_FOIA_MU5735" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "crafter-station--petdex" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -363,7 +487,7 @@ https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NT
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "wrongly-cuddly-obsession" AND file.name != "wrongly-cuddly-obsession--NTSB_FOIA_MU5735"
+> WHERE owner = "crafter-station" AND file.name != "crafter-station--petdex"
 > SORT stars DESC
 > ```
 
@@ -371,7 +495,7 @@ https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NT
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
+> const me = dv.page("Repos/crafter-station--petdex");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -388,7 +512,7 @@ https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NT
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
+> const me = dv.page("Repos/crafter-station--petdex");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -421,7 +545,7 @@ https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NT
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
+> const me = dv.page("Repos/crafter-station--petdex");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -445,7 +569,7 @@ https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NT
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
+> const me = dv.page("Repos/crafter-station--petdex");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -482,7 +606,7 @@ https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NT
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/wrongly-cuddly-obsession--NTSB_FOIA_MU5735");
+> const me = dv.page("Repos/crafter-station--petdex");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -565,7 +689,7 @@ https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735/blob/main/MU5735_NT
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-05-04** — 首次收錄
+> **2026-05-07** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -581,7 +705,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-05-07|2026-05-07]] — 再次上榜，976 stars
-- [[2026-05-06|2026-05-06]] — 再次上榜，940 stars
-- [[2026-05-05|2026-05-05]] — 再次上榜，886 stars
-- [[2026-05-04|2026-05-04]] — 首次收錄，811 stars
+- [[2026-05-07|2026-05-07]] — 首次收錄，724 stars

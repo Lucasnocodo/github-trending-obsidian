@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "A backup-first Codex skill for keeping local Codex state fast, clean, and recoverable."
 homepage: ""
-stars: 751
-stars_per_day: 250
-forks: 42
+stars: 816
+stars_per_day: 204
+forks: 45
 open_issues: 2
 created: 2026-05-02
-pushed_at: 2026-05-04
+pushed_at: 2026-05-06
 first_seen: 2026-05-06
 week: "2026-W19"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "提供一種安全的方式來維護和清理 Codex 的本地狀態�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-09"
+appearances: 2
+next_review: "2026-05-10"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 33
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-06"
-star_history: "2026-05-06:751"
+star_history: "2026-05-06:751,2026-05-07:816"
 tags:
   - github
   - "category/開發工具"
@@ -839,4 +839,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-07|2026-05-07]] — 再次上榜，816 stars
 - [[2026-05-06|2026-05-06]] — 首次收錄，751 stars
