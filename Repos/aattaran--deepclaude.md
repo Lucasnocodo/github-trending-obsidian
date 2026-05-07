@@ -7,7 +7,7 @@ language: JavaScript
 license: MIT
 description: "Use Claude Code's autonomous agent loop with DeepSeek V4 Pro, OpenRouter, or any Anthropic-compatible backend. Same UX, 17x cheaper."
 homepage: ""
-stars: 1490
+stars: 1492
 stars_per_day: 497
 forks: 79
 open_issues: 16
@@ -17,16 +17,16 @@ first_seen: 2026-05-05
 week: "2026-W19"
 month: "2026-05"
 category: "開發工具"
-subcategory: "API 工具"
+subcategory: "自動化"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-05
-use_case: "用更便宜的方式運行 Claude Code 的自主代理循環，支持多種後端。"
+use_case: "使用 DeepSeek V4 Pro 以更低成本運行 Claude Code 的自主代理循環。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 3
 next_review: "2026-05-10"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: 7
+issue_close_rate: 6
 repo_size_kb: 137
 readme_length: 9574
 bus_factor: 1
@@ -42,21 +42,20 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-05"
-star_history: "2026-05-05:1036,2026-05-05:1042,2026-05-06:1329,2026-05-06:1334,2026-05-07:1490"
+star_history: "2026-05-05:1036,2026-05-05:1042,2026-05-06:1329,2026-05-06:1334,2026-05-07:1490,2026-05-07:1492"
 tags:
   - github
   - "category/開發工具"
   - "lang/javascript"
-  - easy_install
 aliases:
   - "deepclaude"
   - "aattaran/deepclaude"
-  - "用更便宜的方式運行 Claude Code 的自主代理循環，支持多種後端。"
+  - "使用 DeepSeek V4 Pro 以更低成本運行 Claude Code 的自主代理循環。"
 ---
 
 # deepclaude
 
-**1.3k** stars · **667** stars/天 · 建立 2 天前 · JavaScript · MIT
+**1.5k** stars · **497** stars/天 · 建立 3 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/aattaran--deepclaude");
@@ -69,23 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `easy-install`
+`個人專案`
 
 > [!summary] 一句話摘要
-> 用更便宜的方式運行 Claude Code 的自主代理循環，支持多種後端。
+> 使用 DeepSeek V4 Pro 以更低成本運行 Claude Code 的自主代理循環。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (667 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在成本控制下運行 Claude Code 的開發者和研究人員。
-> **一句話重點** deepclaude 讓使用 Claude Code 的成本大幅降低，並且提供靈活的後端選擇，適合需要長時間運行的開發者。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (497 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要在開發過程中使用 AI 但又希望降低成本的獨立開發者或小型團隊。
+> **一句話重點** deepclaude 讓開發者以更低成本使用高效能的 AI 代理，並提供靈活的後端選擇。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/aattaran--deepclaude");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "API 工具" && p.file.name !== "aattaran--deepclaude" && p.status !== "archived")
+>     .where(p => p.subcategory === "自動化" && p.file.name !== "aattaran--deepclaude" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,38 +95,38 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 API 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** low
-> **結論** 花 3 小時學習，2 小時整合，能夠顯著降低 AI 開發成本，值得考慮。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** low
+> **結論** 花 3 小時學習，5 小時整合，得到高效能的 AI 代理，值得一試。
 
 > [!abstract] 核心創新
-> deepclaude 提供了即時切換不同 AI 後端的能力，顯著降低了運行成本。
+> deepclaude 提供了一個成本效益極高的自主代理解決方案，並且支持即時後端切換。
 
 ## 專案簡介
 
-deepclaude 是一個能夠以更低成本運行 Claude Code 的工具，支持 DeepSeek V4 Pro、OpenRouter 和其他兼容的後端。用戶只需設置 API 金鑰，並透過簡單的命令行指令或 VS Code 快捷鍵來切換後端。這樣的設計使得用戶能夠在不改變使用體驗的情況下，將運行成本從每月 200 美元降低至約 20 美元，節省高達 90%。技術上，deepclaude 利用 Node.js 18+ 作為代理，並在本地運行，這樣可以實現即時切換後端而不需要重啟會話。與其他工具相比，如 Anthropic 和 Fireworks AI，deepclaude 提供了更具成本效益的選擇，特別是在需要長時間運行的情況下。
+deepclaude 將 Claude Code 的自主代理循環與 DeepSeek V4 Pro 整合，提供相同的用戶體驗，但成本降低至 17 倍。使用者需先安裝 Node.js 18+ 並獲得相應的 API 金鑰，然後透過命令行或 VS Code 快捷鍵輕鬆切換後端。這個工具的主要賣點在於其自動上下文緩存功能，使得代理循環的成本大幅降低，從每千個輸出 token 的 $15 降至 $0.87。技術上，deepclaude 使用了 REST API 進行後端切換，並且支援多種後端，包括 DeepSeek、OpenRouter 和 Anthropic，讓使用者能根據需求選擇最合適的後端。
 
-使用者可以輕鬆地在不同的後端之間切換，並且能夠利用 DeepSeek 的自動上下文緩存功能，進一步降低重複請求的成本。這樣的設計使得深度學習模型的使用變得更加靈活和經濟，特別適合需要長時間運行的自動化任務。實際使用中，deepclaude 支持的功能包括文件讀寫、Bash 執行、Git 操作等，這些都能夠在不同的後端之間無縫切換。整體來看，這個工具不僅降低了使用成本，還提升了使用的靈活性。
+與其他類似工具相比，deepclaude 的主要優勢在於其成本效益和靈活性，尤其是對於需要經常切換後端的用戶。使用者可以在 Claude Code 環境中即時切換後端，無需重啟會話，這對於需要快速迭代的開發者來說非常重要。這個工具的社群活動相對活躍，並且有持續的更新和問題解決，顯示出其潛在的穩定性和可靠性。對於希望降低 AI 工具使用成本的開發者來說，deepclaude 是一個值得考慮的選擇。
 
 **技術棧**：`Node.js 18+` · `PowerShell` · `Shell`
 
 ## 重點功能
 
-- 多後端支持 — 可選擇 DeepSeek、OpenRouter 和 Fireworks AI，根據需求切換。
-- 即時切換 — 使用者可在會話中即時切換後端，無需重啟。
-- 自動上下文緩存 — DeepSeek 提供的緩存功能使得重複請求的成本降低至 $0.004/M。
-- CLI 和 VS Code 整合 — 支持命令行和 VS Code 快捷鍵操作，提升使用便利性。
-- 成本比較 — 提供不同後端的成本比較，幫助用戶選擇最具性價比的方案。
+- 多後端支援 — 支援 DeepSeek、OpenRouter 和 Anthropic，使用者可根據需求選擇。
+- 即時後端切換 — 使用者可在會話中隨時切換後端，無需重啟。
+- 自動上下文緩存 — 使得代理循環的成本大幅降低，重複請求的成本可低至 $0.004/M。
+- CLI 和 VS Code 整合 — 提供命令行和 IDE 的無縫整合，方便開發者使用。
+- 成本比較功能 — 內建成本比較功能，幫助使用者了解不同後端的費用差異。
 
 ## 快速開始
 
-1. 安裝 deepclaude
+1. 安裝 Node.js 18+
 ```bash
-npm install deepclaude
+nvm install 18
 ```
 2. 設置 DeepSeek API 金鑰
 ```bash
@@ -138,67 +137,59 @@ setx DEEPSEEK_API_KEY "sk-..."
 deepclaude
 ```
 
-## 程式碼範例
-
-```js
-{
-  "前置條件": "必須安裝 Node.js 18+ 並設置 API 金鑰。",
-  "指令": "deepclaude --switch deepseek",
-  "預期輸出": "Switched to DeepSeek."
-}
-```
-
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天內累積 1334 stars（667/天），forks 61（4.6%），這顯示出強烈的社群興趣。作者 aliyarattaran-debug 之前有開發過其他相關工具，這次的 deepclaude 解決了高成本使用 Claude Code 的痛點，提供了更便宜的替代方案。近期的推廣和社群討論也可能促進了其快速增長。這個工具的出現正好符合了對於成本控制和靈活性的需求，尤其是在 AI 開發日益普及的背景下。
+> 建立 3 天內累積 1492 stars（497/天），forks 79（5.3%），顯示出強勁的增長潛力。專案的主要貢獻者 aliyarattaran-debug 在開源社群中有一定的影響力，過去參與過多個相關專案。這個工具解決了高成本的 AI 代理問題，提供了一個更具成本效益的替代方案，特別是對於需要長時間運行的用戶。社群中對於其功能的討論和建議也顯示出使用者對於這個工具的需求和期待。技術上，這個專案的出現正好契合了對於高效能、低成本 AI 解決方案的需求，尤其是在許多開發者尋求更具經濟效益的方式來使用 AI 技術的背景下。
 
 ## 適合誰使用
 
-**目標受眾**：需要在成本控制下運行 Claude Code 的開發者和研究人員。
+**目標受眾**：需要在開發過程中使用 AI 但又希望降低成本的獨立開發者或小型團隊。
 
 > [!example] 使用場景
-> - 後端工程師用它來在 CI/CD 流程中運行自動化測試，因為它能將運行成本從每月 200 美元降低至約 20 美元。
-> - AI 開發者用它來快速切換不同的 AI 模型後端，因為可以即時切換而無需重啟會話，提升了開發效率。
-> - 數據科學家用它來進行長時間的模型訓練，因為 DeepSeek 的自動上下文緩存功能能顯著降低重複請求的成本。
+> - 後端工程師用它來在 CI/CD 流程中自動化測試，因為它能夠以 90% 的成本運行相同的 AI 測試。
+> - 獨立開發者用它來快速切換不同的 AI 後端進行原型開發，因為這樣可以在不增加額外成本的情況下測試多種解決方案。
+> - 資料科學家用它來進行模型推論，因為它的自動上下文緩存功能能顯著降低運行成本。
 
 ## 架構分析
 
-deepclaude 採用 Node.js 作為核心代理，這樣的選擇使得其能夠在本地運行並即時處理 API 請求。資料流方面，使用者的請求經由 localhost:3200 的代理轉發至選定的後端，這樣的設計使得用戶能夠在不同的後端之間無縫切換。選擇 Node.js 的好處在於其非同步處理能力，能夠高效管理多個請求，但代價是需要用戶安裝 Node.js 環境。擴展性方面，這樣的架構能夠輕鬆支持未來更多的後端選擇，然而，對於高頻請求的處理可能會受到本地環境性能的限制。
+deepclaude 採用一個代理模式架構，通過在本地啟動一個代理服務來處理所有 API 請求。這樣的設計使得使用者可以在 Claude Code 環境中無縫切換不同的後端，而不需要重啟會話。代理服務在本地運行，並攔截所有 API 請求，根據當前選擇的後端進行轉發。
+
+這種設計的好處在於能夠快速切換後端，並且能夠在不同後端之間共享上下文，降低重複請求的成本。擴展性方面，這種設計可以輕鬆添加新的後端，並且不會影響現有的使用流程。這樣的架構雖然增加了本地的運行負擔，但卻大幅提升了使用的靈活性和成本效益。
 
 ## 技術深入分析
 
-deepclaude 的核心技術機制是基於 Node.js 的代理架構，這使得它能夠高效地處理來自使用者的請求並轉發至不同的 AI 模型後端。這種設計模式允許用戶在不重啟會話的情況下即時切換後端，這在實際開發中能夠大幅提升效率。效能方面，deepclaude 在使用 DeepSeek 時能夠將每月的運行成本降低至約 20 美元，這對於長時間運行的任務來說是非常有吸引力的。設計選擇上，Node.js 的非同步特性使得其能夠同時處理多個請求，但這也意味著對於本地環境的性能要求較高。技術風險方面，若使用者的本地環境性能不足，可能會影響到請求的響應速度。整合方面，deepclaude 能夠輕鬆與 VS Code 等開發工具整合，這降低了使用的摩擦點，並且提供了良好的開發體驗。
+deepclaude 的核心機制是通過一個本地代理服務來管理 API 請求，這使得使用者可以在不同的 AI 後端之間快速切換。這個代理服務使用 REST API 來處理請求，並且能夠根據當前選擇的後端進行轉發。效能上，DeepSeek 的自動上下文緩存功能使得重複請求的成本大幅降低，這對於需要長時間運行的任務來說非常有利。設計上，選擇 Node.js 作為後端語言使得整體架構輕量且易於維護，並且能夠快速響應使用者的請求。這種設計的代價在於需要在本地運行一個代理服務，這對於某些使用者來說可能增加了運行負擔。技術風險方面，隨著使用者數量的增加，代理服務的性能可能會受到影響，特別是在高並發的情況下。整合方面，deepclaude 與主流的開發工具（如 VS Code）有良好的相容性，並且能夠輕鬆整合到現有的 CI/CD 流程中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用範例，對於新手來說友好度較高。安裝過程相對順暢，但需要用戶自行設置環境變數，這對於新手可能有些挑戰。整體來說，花 30 分鐘能夠順利運行起來。
+> README 文件提供了清晰的安裝步驟和範例，安裝過程相對順暢。對於新手來說，能夠在 30 分鐘內完成安裝並運行。文件中沒有多語言支持，但提供了詳細的指令和參數說明，對於熟悉 CLI 的使用者來說非常友好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 顯著降低運行成本，使用 DeepSeek 時每月可節省高達 90%。
-> - 支持即時切換後端，提升使用靈活性和便利性。
-> - 提供自動上下文緩存功能，進一步降低重複請求的成本。
+> - 成本效益高，使用 DeepSeek 可將運行成本降低至 17 倍。
+> - 即時後端切換功能，無需重啟會話，提升開發效率。
+> - 支援多種後端，使用者可根據需求靈活選擇。
 
 > [!danger] 缺點
-> - 對於某些複雜推理任務，性能不如原版的 Claude Opus。
-> - 不支持圖像輸入，限制了某些應用場景。
-> - 需要用戶自行設置環境變數，對新手可能有一定的學習曲線。
+> - 不支援圖像處理，僅限文本操作。
+> - 在處理複雜推理時，性能不如 Anthropic。
+> - 需要安裝 Node.js，對於某些使用者來說可能增加安裝複雜度。
 
 > [!warning] 注意事項
-> - 不支持圖像/視覺輸入，因為 DeepSeek 的端點不支持此功能。
-> - 在複雜推理任務中，DeepSeek 的表現不如原版的 Claude Opus。
-> - 對於 MCP 伺服器工具的支持有限，無法通過兼容層使用。
+> - 不支援圖像/視覺輸入，僅限文本處理。
+> - 在處理複雜推理時，DeepSeek 的表現不如 Anthropic。
+> - 在某些情況下，並行工具使用可能會受到限制。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的自主代理功能，但主要針對不同的後端架構，可能不如 deepclaude 在成本上有優勢。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於特定的 AI 模型，但不支持即時切換後端，使用上不如 deepclaude 靈活。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | 提供 GPT-2 的 API 接口，但在成本和功能靈活性上不及 deepclaude。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的自主代理功能，但不具備即時後端切換的能力。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於自動化任務，但在成本效益上不如 deepclaude。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 提供類似的 AI 整合，但缺乏多後端支援的靈活性。 |
 
 ## 替代方案決策
 
@@ -206,61 +197,64 @@ deepclaude 的核心技術機制是基於 Node.js 的代理架構，這使得它
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於自主代理的功能，但沒有提供即時切換後端的能力。 | 如果需要更專注於自主代理的功能，而不在乎成本的話，可以考慮這個工具。 | medium，因為需要重新設置環境和學習新的命令。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的功能，但不支持即時後端切換，使用上不如 deepclaude 靈活。 | 如果你的需求不需要頻繁切換後端，且更關注特定的 AI 模型，可以考慮這個工具。 | low，因為功能上有一定的相似性。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體用量較少，但功能上不如 deepclaude 靈活。 | 如果你的團隊需要更高的性能且不介意較低的靈活性，可以選擇這個工具。 | medium，因為需要重構部分 API 調用。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 專注於文本生成，但缺乏多後端支援的靈活性。 | 如果你的主要需求是文本生成且不需要切換後端，可以考慮這個工具。 | low，因為 API 調用相似。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **deepclaude** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **deepclaude** | **agent-sprite-forge** | **claude-obsidian** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於自主代理的功能，但沒有提供即時切換後端的能力。 | 提供類似的功能，但不支持即時後端切換，使用上不如 deepclaude 靈活。 |
-> | 遷移成本 | - | medium，因為需要重新設置環境和學習新的命令。 | low，因為功能上有一定的相似性。 |
-> | 適用場景 | 主要場景 | 如果需要更專注於自主代理的功能，而不在乎成本的話，可以考慮這 | 如果你的需求不需要頻繁切換後端，且更關注特定的 AI 模型， |
+> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量較少，但功能上不如 deepclaude 靈活。 | 專注於文本生成，但缺乏多後端支援的靈活性。 |
+> | 遷移成本 | - | medium，因為需要重構部分 API 調用。 | low，因為 API 調用相似。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要更高的性能且不介意較低的靈活性，可以選擇這個 | 如果你的主要需求是文本生成且不需要切換後端，可以考慮這個工具 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人試用和小型專案，但不建議用在生產環境的核心路徑上。
+> 適合個人或小型專案試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些環境下，環境變數設置可能會失敗，導致無法正常運行。
-  - 解法：確保使用者在正確的命令行環境中設置變數，並重啟終端。
-- [MEDIUM] 切換後端時，可能會遇到延遲，影響使用體驗。
-  - 解法：建議在切換後端後稍等幾秒再進行操作。
+- **[HIGH]** 在 Windows 環境下設置環境變數時可能會遇到權限問題。
+  - 解法：以管理員身份運行 PowerShell。
+- [MEDIUM] 某些後端切換可能會導致上下文丟失。
+  - 解法：在切換後端前確保保存當前上下文。
+- **[HIGH]** 使用過程中可能會遇到 API 限制，導致請求失敗。
+  - 解法：檢查 API 金鑰和使用配額。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要長時間運行的 AI 開發專案 | 非常適合 | 因為能夠顯著降低運行成本，並支持多後端切換。 |
-| 小型團隊的開發環境 | 適合 | 因為其安裝和使用相對簡單，適合新手。 |
-| 需要高頻請求的生產環境 | 不適合 | 因為本地環境性能可能成為瓶頸，影響響應速度。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 成本效益高，能夠有效降低開發成本。 |
+| 大型企業的 AI 測試平台 | 普通 | 雖然功能強大，但可能需要更高的穩定性。 |
+| 獨立開發者的個人專案 | 非常適合 | 靈活性高，能夠快速適應不同需求。 |
+| 需要高性能的 AI 生成任務 | 不適合 | 在複雜推理上性能不如 Anthropic。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~3 小時 |
-| 整合時間 | ~2 小時 |
+| 整合時間 | ~5 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，2 小時整合，能夠顯著降低 AI 開發成本，值得考慮。
+> 花 3 小時學習，5 小時整合，得到高效能的 AI 代理，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：deepclaude 本身不需要高權限運行，僅需設置 API 金鑰，對敏感資料的存取有限。
+> 低風險：該工具不需要高權限，僅存取 API 金鑰和基本環境變數。依賴鏈的信任程度較高，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -325,9 +319,9 @@ deepclaude 的核心技術機制是基於 Node.js 的代理架構，這使得它
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 61 |
-| Open Issues | 14 |
-| Issue 解決率 | 7% (1 closed) |
+| Forks | 79 |
+| Open Issues | 16 |
+| Issue 解決率 | 6% (1 closed) |
 | 最後推送 | 2026-05-05 |
 | 建立日期 | 2026-05-03 |
 | Repo 大小 | 137 KB |
@@ -348,8 +342,8 @@ deepclaude 的核心技術機制是基於 Node.js 的代理架構，這使得它
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有持續的提交和問題回應。
-**連結**：[文件](https://github.com/aatttaran/deepclaude)
+**社群活躍度**：社群活躍，持續更新和問題解決。
+**連結**：[文件](https://github.com/aatarran/deepclaude)
 
 ## 開發動態
 
@@ -363,9 +357,8 @@ deepclaude 的核心技術機制是基於 Node.js 的代理架構，這使得它
 > | --- | --- | --- | --- |
 > | [#1](https://github.com/aattaran/deepclaude/issues/1) | What's the advantage of this? | 10 | 2 |
 > | [#4](https://github.com/aattaran/deepclaude/issues/4) | Suggestion: Name Change | 1 | 2 |
+> | [#17](https://github.com/aattaran/deepclaude/issues/17) | API Error: 400 Invalid 'user_id': string does not match patt | 0 | 1 |
 > | [#15](https://github.com/aattaran/deepclaude/issues/15) | How to run claude desktop app  with this, it runs terminal b | 0 | 0 |
-> | [#14](https://github.com/aattaran/deepclaude/issues/14) | deepclaude VS clawcodex | 0 | 0 |
-> | [#13](https://github.com/aattaran/deepclaude/issues/13) | README suggestion: add a compatibility contract | 0 | 0 |
 
 ## README 摘錄
 
@@ -642,19 +635,19 @@ deepclaude 的核心技術機制是基於 Node.js 的代理架構，這使得它
 
 ## 延伸閱讀
 
-相關概念：[[API 設計]] · [[自動化]] · [[深度學習]]
+相關概念：[[自動化]] · [[API 設計]] · [[CLI/TUI]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[DanOps-1--Gpt-Agreement-Payment|DanOps-1/Gpt-Agreement-Payment]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[ParthJadhav--app-store-screenshots|ParthJadhav/app-store-screenshots]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[432539--gpt2api|432539/gpt2api]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[DanOps-1--Gpt-Agreement-Payment|DanOps-1/Gpt-Agreement-Payment]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]]
 
 [GitHub](https://github.com/aattaran/deepclaude)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：API 工具）
+> [!note]- 直接競品（同子分類：自動化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "API 工具" AND file.name != "aattaran--deepclaude"
+> WHERE subcategory = "自動化" AND file.name != "aattaran--deepclaude"
 > SORT stars DESC
 > ```
 
@@ -686,7 +679,7 @@ deepclaude 的核心技術機制是基於 Node.js 的代理架構，這使得它
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["API 設計","自動化","深度學習"];
+> const concepts = ["自動化","API 設計","CLI/TUI"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "aattaran--deepclaude" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

@@ -7,17 +7,17 @@ language: Python
 license: MIT
 description: "A Domain-Fronting Relay that routes traffic though GAS (Google Apps Script) and forwards it to Cloudflare Workers. Designed to bypass DPI."
 homepage: ""
-stars: 2333
-stars_per_day: 292
-forks: 238
-open_issues: 69
+stars: 2468
+stars_per_day: 274
+forks: 244
+open_issues: 73
 created: 2026-04-27
-pushed_at: 2026-05-05
+pushed_at: 2026-05-06
 first_seen: 2026-05-02
 week: "2026-W18"
 month: "2026-05"
-category: "基礎設施"
-subcategory: "代理工具"
+category: "安全"
+subcategory: "DPI 繞過"
 release_tag: "v2.0.1"
 install_complexity: "medium"
 status: to-review
@@ -26,26 +26,26 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-02
-use_case: "透過 Google Apps Script 和 Cloudflare Workers 轉發流量，設計用來繞過 DPI 限制。"
+use_case: "一個透過 GAS 和 Cloudflare Workers 轉發流量的域名前置代理，旨在繞過深度包檢測（DPI）。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 3
 next_review: "2026-05-07"
 contributor_count: 5
-engagement: "medium"
+engagement: "low"
 issue_close_rate: 31
-repo_size_kb: 105
-readme_length: 8433
+repo_size_kb: 157
+readme_length: 8777
 bus_factor: 2
-last_release_days: 3
+last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-02"
-star_history: "2026-05-02:1316,2026-05-02:1319,2026-05-03:1701,2026-05-03:1703,2026-05-04:1961,2026-05-04:1961,2026-05-05:2166,2026-05-06:2333"
+star_history: "2026-05-02:1316,2026-05-02:1319,2026-05-03:1701,2026-05-03:1703,2026-05-04:1961,2026-05-04:1961,2026-05-05:2166,2026-05-06:2333,2026-05-07:2468"
 tags:
   - github
-  - "category/基礎設施"
+  - "category/安全"
   - "lang/python"
   - "topic/cloudflare_workers"
   - "topic/domain_fronting"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "mhr-cfw"
   - "denuitt1/mhr-cfw"
-  - "透過 Google Apps Script 和 Cloudflare Workers 轉發流量，設計用來繞過 DPI 限"
+  - "一個透過 GAS 和 Cloudflare Workers 轉發流量的域名前置代理，旨在繞過深度包檢測（DPI）。"
 ---
 
 # mhr-cfw
 
-**2.3k** stars · **292** stars/天 · 建立 8 天前 · Python · MIT
+**2.5k** stars · **274** stars/天 · 建立 9 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/denuitt1--mhr-cfw");
@@ -78,20 +78,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `cloudflare-workers` `domain-fronting` `dpi` `dpi-bypass` `google-apps-script` `http` `mitm` `proxy` `sni`
 
 > [!summary] 一句話摘要
-> 透過 Google Apps Script 和 Cloudflare Workers 轉發流量，設計用來繞過 DPI 限制。
+> 一個透過 GAS 和 Cloudflare Workers 轉發流量的域名前置代理，旨在繞過深度包檢測（DPI）。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (292 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要匿名訪問並且熟悉網絡技術的開發者和安全研究人員。
-> **一句話重點** 這個專案提供了一個簡單的解決方案來繞過 DPI，適合需要匿名訪問的用戶。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (274 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
+> **適合** 需要在受限網路環境中隱藏流量的開發者和研究人員。
+> **一句話重點** 這個專案展示了如何利用現有的雲服務來隱藏流量，並有效繞過網路監控。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/denuitt1--mhr-cfw");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "代理工具" && p.file.name !== "denuitt1--mhr-cfw" && p.status !== "archived")
+>     .where(p => p.subcategory === "DPI 繞過" && p.file.name !== "denuitt1--mhr-cfw" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -102,32 +102,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 代理工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 DPI 繞過 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到匿名訪問的能力，值得嘗試。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~4h · **綁定風險** medium
+> **結論** 花 4 小時學習，2 小時整合，得到隱藏流量的效果，值得考慮。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於它能夠有效地繞過深度包檢測，隱藏實際的流量來源。
+> 通過 Google Apps Script 和 Cloudflare Workers 組合，實現域名前置代理以繞過 DPI 檢測。
 
 ## 專案簡介
 
-MHR-CFW 是一個域名前置代理工具，能夠將用戶的流量通過 Google 的基礎設施轉發到 Cloudflare Workers，從而隱藏實際的目標網站。用戶的請求首先發送到本地代理，然後經過 Google 的基礎設施，最終由 Cloudflare Worker 轉發到目標網站。這樣的設計使得網絡過濾器只能看到正常的 Google 流量，實際的請求內容則保持隱藏。這個工具的賣點在於其能夠有效繞過深度包檢測（DPI），適合需要匿名訪問的用戶。技術上，它使用 Python 和 JavaScript，並依賴 Google Apps Script 來處理請求，這樣的選擇使得它能夠利用 Google 的廣泛基礎設施來隱藏流量來源。
+MHR-CFW 是一個域名前置代理，利用 Google Apps Script (GAS) 和 Cloudflare Workers 來隱藏實際流量。用戶端的請求首先發送到本地代理，然後經過 Google 的基礎設施，最終到達 Cloudflare Worker，這樣網路監控只看到正常的 Google 流量，而實際的目的地則隱藏在請求中。這種設計的賣點在於能夠有效繞過 DPI 檢測，特別適合在受限網路環境中使用。使用者只需設置 Cloudflare Worker 和 Google Relay，並運行本地代理，即可開始使用。關鍵指令包括 `git clone` 和 `pip install -r requirements.txt`，這些步驟簡化了安裝過程。技術上，這個專案不依賴於外部庫，基本模式下無需額外依賴，僅需 Python 3.10 以上版本。
 
-與其他類似工具相比，如 Shadowsocks 或 V2Ray，MHR-CFW 提供了一個更簡單的設置過程，因為它不需要用戶自行管理伺服器，且能夠利用 Cloudflare 的邊緣計算能力來提高性能。實際使用中，這個工具能夠處理多種網絡環境，但對於需要穩定出口 IP 的用戶，可能需要額外配置上游轉發器。這個工具的社群活躍度中等，開放問題數量相對較高，顯示出仍有許多使用者在探索和解決問題。整體來看，這是一個適合技術熟練的用戶，尤其是需要匿名訪問的開發者和研究人員使用的工具。
+若需要進一步功能，如 MITM 攔截或 HTTP/2 多路復用，則可選擇性安裝相關庫。與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，MHR-CFW 提供了更為簡單的設置流程和更高的隱私保護，因為它利用了 Google 和 Cloudflare 的基礎設施來隱藏流量。使用者可能會遇到的問題包括 SOCKS 代理在某些環境下無法正常工作，這在熱門 Issues 中已有反映。這個專案目前處於活躍開發中，最新版本為 v2.0.1，並且有穩定的社群支持。對於需要在高風險環境中隱藏流量的用戶，這是一個值得考慮的選擇。
 
-**技術棧**：`Python 3.10` · `Google Apps Script` · `Cloudflare Workers`
+**技術棧**：`Python 3.10+` · `Google Apps Script` · `Cloudflare Workers`
 
 ## 重點功能
 
-- 域名前置代理 — 通過 Google Apps Script 和 Cloudflare Workers 隱藏實際流量來源。
-- 支持多種網絡環境 — 能夠在不同的網絡環境中有效運行，適用於多種設備。
-- 簡單的設置過程 — 用戶只需按照步驟配置 Google Apps Script 和 Cloudflare Worker。
-- 可選的穩定出口 IP — 透過上游轉發器配置，解決 CAPTCHA 驗證問題。
-- 支持多種編碼格式 — 包括 Brotli 和 Zstandard，適應現代網站的需求。
+- 域名前置代理 — 利用 GAS 和 Cloudflare Workers 隱藏實際流量，避免 DPI 檢測。
+- 簡單設置 — 只需幾個步驟即可完成安裝和配置，無需複雜的依賴。
+- 可選的穩定出口 IP — 通過自架設的上游轉發器，提供穩定的出口 IP，解決 CAPTCHA 驗證問題。
+- 支持多種環境 — 可在 Windows、Linux、macOS 和 Android/Termux 上運行，無需 C 編譯器。
+- 可擴展性 — 支持 HTTP/2 多路復用和 MITM 攔截，提升性能和功能。
 
 ## 快速開始
 
@@ -137,76 +137,81 @@ git clone https://github.com/denuitt1/mhr-cfw.git && cd mhr-cfw && pip install -
 ```
 2. 設置 Cloudflare Worker
 ```bash
-在 Cloudflare Dashboard 中創建應用並部署 worker.js
+在 Cloudflare Dashboard 中創建應用，並將 worker.js 的內容複製到 Apps Script 編輯器中
 ```
 3. 設置 Google Relay
 ```bash
-在 Google Apps Script 中創建新專案並部署 Code.gs
+在 Google Apps Script 中創建新專案，並將 Code.gs 的內容複製到編輯器中
+```
+4. 運行代理
+```bash
+點擊 run.bat (Windows) 或 run.sh (Linux) 開始代理
 ```
 
 ## 程式碼範例
 
 ```python
-{
-  "前置條件": "已經設置好 Cloudflare Worker 和 Google Apps Script",
-  "指令": "curl -X POST https://forwarder.example.com/fwd -H \"x-upstream-auth: $AUTH_KEY\" -H \"content-type: application/json\" -d '{\"u\":\"https://httpbin.org/ip\",\"m\":\"GET\",\"h\":{}}'",
-  "預期輸出": "應該顯示 VPS 的 IP 地址。"
-}
+[
+  "# 前置條件（設置 Cloudflare Worker）",
+  "const WORKER_URL = \"myworker.workers.dev\";",
+  "# 預期輸出（設置後的 Worker URL）"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 8 天內累積 2333 stars（292/天），forks 238（10.2%），顯示出強勁的增長勢頭。這個專案的作者 denuitt1 和其他貢獻者在開源社群中有一定的知名度，並且解決了以往工具在隱私和匿名性方面的不足。特別是，這個工具提供了一個相對簡單的解決方案來繞過 DPI，這在當前的網絡環境中是非常有需求的。社群的討論和反饋也促進了這個專案的快速迭代，進一步吸引了使用者的注意。
+> 建立 9 天內累積 2468 stars（274/天），forks 244（9.9%），顯示出相對高的使用興趣。作者 denuitt1 及其團隊在開源社群中有一定的影響力，這個專案解決了在受限網路環境中繞過 DPI 的痛點，之前的解決方案往往需要複雜的設置或不夠穩定。最近的推廣和討論可能促進了這一增長，特別是在社交媒體和技術論壇上。這個工具的可行性得益於 Google 和 Cloudflare 的基礎設施，這使得它在技術上具有優勢。forks/stars 比率接近 10%，表明許多人在進行實際修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要匿名訪問並且熟悉網絡技術的開發者和安全研究人員。
+**目標受眾**：需要在受限網路環境中隱藏流量的開發者和研究人員。
 
 > [!example] 使用場景
-> - 網絡安全研究人員用它來隱藏流量來源，因為這樣可以在不被檢測的情況下進行測試。
-> - 開發者用它來測試應用程式在不同地區的可用性，因為它能夠繞過地區限制，模擬真實用戶行為。
-> - 需要匿名訪問的用戶用它來訪問被封鎖的網站，因為它能夠有效隱藏實際的請求來源。
+> - 網路安全研究員用它來隱藏流量並測試網路防火牆，因為它能有效繞過 DPI 檢測，讓流量看起來像正常的 Google 請求。
+> - 開發者用它來測試在受限環境下的應用程式，因為它提供了一個簡單的方式來隱藏實際流量，避免被封鎖。
+> - 普通用戶用它來訪問被限制的網站，因為它能夠隱藏流量來源，讓使用者能夠自由上網。
 
 ## 架構分析
 
-MHR-CFW 的架構基於一個本地代理，該代理將請求轉發至 Google 的基礎設施，然後由 Cloudflare Worker 處理。這種設計使得用戶的實際請求不會被網絡過濾器檢測到。資料流從用戶端發送到本地代理，然後經過 Google 的基礎設施，再由 Cloudflare Worker 獲取實際的網站內容。
+MHR-CFW 採用一種分層架構，將流量通過 Google 和 Cloudflare 的基礎設施進行轉發。用戶端請求首先到達本地代理，然後經過 Google 的 CDN，最終到達 Cloudflare Worker。這樣的設計使得流量看起來像是正常的 Google 請求，從而繞過 DPI 檢測。
 
-這樣的設計選擇使得用戶無需管理伺服器，簡化了使用流程，但也意味著對 Google 和 Cloudflare 的依賴。這種依賴可能在某些情況下造成性能瓶頸，特別是在高流量時期。整體架構的可擴展性取決於 Google 和 Cloudflare 的基礎設施，對於需要高可用性的商業應用可能不夠理想。
+這種架構的代價在於需要用戶設置 Cloudflare Worker 和 Google Apps Script，增加了初始配置的複雜性。流量在每個節點都經過加密，確保安全性，但這也可能導致延遲增加。擴展性方面，使用者可以選擇性地添加上游轉發器以獲得穩定的出口 IP，這對於需要持續 Cookie 的場景尤為重要。
 
 ## 技術深入分析
 
-MHR-CFW 的核心技術機制在於利用 Google Apps Script 和 Cloudflare Workers 來隱藏流量來源。它使用了 HTTP/2 協議來提高性能，並且支持多種編碼格式以適應現代網站的需求。效能方面，這個工具能夠處理大量的請求，但在高流量情況下可能會受到 Google 和 Cloudflare 的基礎設施限制。設計上選擇 Python 和 JavaScript 作為主要語言，這樣的選擇使得開發和維護相對簡單，但也可能導致依賴樹的複雜性增加。技術風險方面，這個工具對 Google 和 Cloudflare 的依賴可能在未來的變化中造成問題，特別是如果這些平台改變了其 API 或使用政策。整合方面，這個工具可以與主流的開發框架無縫協作，但對於沒有經驗的用戶來說，仍然需要一定的學習成本。
+MHR-CFW 的核心技術機制是域名前置代理，通過 Google Apps Script 和 Cloudflare Workers 組合來隱藏流量。這種設計利用了 Google 和 Cloudflare 的基礎設施，讓流量看起來像是正常的 Google 請求。效能方面，這個工具能夠處理大量的請求，但在高負載下可能會出現延遲。選擇 Python 作為主要開發語言，因為其在網路編程中的靈活性和豐富的庫支持。這個選擇的代價在於可能需要用戶對 Python 環境有一定的了解。技術風險方面，隨著使用者數量的增加，可能會導致 Google 和 Cloudflare 的流量監控機制進行調整，影響工具的有效性。整合方面，這個工具可以與現有的代理伺服器和網路應用無縫對接，但對於某些特定的網路環境，可能需要額外的配置。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了詳細的設置步驟和範例，讓新手能夠快速上手。安裝過程相對順暢，但對於某些用戶來說，可能需要額外的配置。整體來說，這個專案的上手難度適中，適合有一定技術基礎的用戶。
+> README 文件清晰且詳細，提供了完整的設置步驟和範例。安裝過程相對順暢，但對於新手來說，可能需要一些時間來理解配置細節。文件目前僅提供英文版本，缺乏多語言支持，這可能會影響非英語使用者的體驗。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用的設置過程，適合技術新手。
-> - 能夠有效繞過 DPI，隱藏流量來源。
-> - 支持多種編碼格式，適應現代網站需求。
+> - 有效繞過 DPI 檢測，隱藏實際流量。
+> - 簡單的設置流程，易於上手。
+> - 支持多種平台，無需 C 編譯器。
+> - 可選的穩定出口 IP，解決 CAPTCHA 問題。
 
 > [!danger] 缺點
-> - 對於需要穩定出口 IP 的用戶，配置較為繁瑣。
-> - 依賴 Google 和 Cloudflare 的基礎設施，可能存在性能瓶頸。
-> - 社群活躍度中等，開放問題數量較高。
+> - 需要穩定的 VPS 來實現完整功能。
+> - 對於某些網站仍需手動解決 CAPTCHA。
+> - 初始設置過程可能對新手造成困難。
+> - 開發者社群相對較小，問題解決速度可能較慢。
 
 > [!warning] 注意事項
 > - 僅支援 Python 3.10+
-> - 需要穩定的 VPS 來配置上游轉發器以解決 CAPTCHA 問題
-> - 不支援 Windows 環境的 TLS 驗證
+> - 需要穩定的 VPS 來運行上游轉發器以獲得穩定出口 IP
+> - 對於某些網站，可能仍需手動解決 CAPTCHA
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的代理功能，但主要針對遊戲流量，設計上更為專注於遊戲環境。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這是一個更為輕量的代理工具，適合快速設置，但不具備域名前置的能力。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | 專注於 API 的代理，但不支持 DPI 繞過，適合需要 API 訪問的場景。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的域名前置功能，但設置過程較為複雜，需要更多的配置和依賴。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於隱私保護的代理工具，但不支持域名前置，可能無法繞過某些 DPI 檢測。 |
 
 ## 替代方案決策
 
@@ -214,16 +219,16 @@ MHR-CFW 的核心技術機制在於利用 Google Apps Script 和 Cloudflare Work
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Shadowsocks | Shadowsocks 使用加密的代理技術來隱藏流量，但不具備域名前置的能力。 | 如果你的需求是加密流量並且不需要隱藏實際的目標網站，Shadowsocks 是一個不錯的選擇。 | medium，因為需要重新配置代理設置和客戶端。 |
-| V2Ray | V2Ray 提供了更靈活的配置選項和多種代理方式，但設置過程相對複雜。 | 如果你需要更高的靈活性和多種協議支持，V2Ray 是更好的選擇。 | high，因為需要重新學習配置和使用方式。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於域名前置和流量隱藏，但設置過程較為複雜，依賴於多個外部庫。 | 如果需要更高的自定義性和功能擴展，且不介意較為複雜的設置過程。 | medium，因為需要重新配置多個服務和依賴。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供基本的代理功能，但不支持域名前置，適合簡單的流量轉發需求。 | 如果只需要基本的流量轉發功能，而不需要隱藏流量來源。 | low，因為設置過程相對簡單。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **mhr-cfw** | **Shadowsocks** | **V2Ray** |
+> | 維度 | **mhr-cfw** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Shadowsocks 使用加密的代理技術來隱藏流量，但不具備域名前置的能力。 | V2Ray 提供了更靈活的配置選項和多種代理方式，但設置過程相對複雜。 |
-> | 遷移成本 | - | medium，因為需要重新配置代理設置和客戶端。 | high，因為需要重新學習配置和使用方式。 |
-> | 適用場景 | 主要場景 | 如果你的需求是加密流量並且不需要隱藏實際的目標網站，Shad | 如果你需要更高的靈活性和多種協議支持，V2Ray 是更好的選 |
+> | 技術路線 | 本專案 | 專注於域名前置和流量隱藏，但設置過程較為複雜，依賴於多個外部庫。 | 提供基本的代理功能，但不支持域名前置，適合簡單的流量轉發需求。 |
+> | 遷移成本 | - | medium，因為需要重新配置多個服務和依賴。 | low，因為設置過程相對簡單。 |
+> | 適用場景 | 主要場景 | 如果需要更高的自定義性和功能擴展，且不介意較為複雜的設置過程 | 如果只需要基本的流量轉發功能，而不需要隱藏流量來源。 |
 
 ## 成熟度評估
 
@@ -234,44 +239,44 @@ MHR-CFW 的核心技術機制在於利用 Google Apps Script 和 Cloudflare Work
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人測試和學習，但不建議在生產環境中使用。
+> 適合個人測試和學習，但不建議用於生產環境的核心應用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些網絡環境中，可能無法穩定連接到 Google Apps Script。
-  - 解法：嘗試更換網絡或使用 VPN 來穩定連接。
-- [MEDIUM] CAPTCHA 驗證可能會因為 IP 變化而失敗。
-  - 解法：配置上游轉發器以獲得穩定的出口 IP。
-- [MEDIUM] 在 Windows 環境中，TLS 驗證可能會出現問題。
-  - 解法：使用 Linux 或 macOS 環境來運行該工具。
+- **[HIGH]** 在某些網路環境下，SOCKS 代理無法正常工作。
+  - 解法：嘗試使用其他代理工具或檢查網路設置。
+- [MEDIUM] CAPTCHA 驗證可能失敗，特別是在使用 Cloudflare 的網站上。
+  - 解法：考慮使用穩定出口 IP 的選項。
+- [MEDIUM] 初次設置過程中可能會遇到配置錯誤。
+  - 解法：仔細檢查 README 中的設置步驟，確保所有變數正確配置。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要匿名訪問的個人用戶 | 非常適合 | 能夠有效隱藏流量來源，適合需要保護隱私的用戶。 |
-| 小型開發團隊進行網絡測試 | 適合 | 簡單的設置過程和良好的性能使其適合小型團隊使用。 |
-| 大型企業需要穩定的出口 IP | 不適合 | 對於需要穩定 IP 的場景，配置較為繁瑣且不夠穩定。 |
-| 學術研究需要匿名訪問特定網站 | 非常適合 | 能夠有效繞過網絡過濾，適合學術研究使用。 |
+| 10 人以下的開發團隊需要隱藏測試流量 | 非常適合 | 簡單的設置流程和有效的隱藏流量功能。 |
+| 大型企業需要穩定的流量轉發 | 不適合 | 可能需要更高的穩定性和支持，且不建議用於生產環境。 |
+| 網路安全研究員需要測試防火牆 | 適合 | 能有效繞過 DPI 檢測，隱藏流量來源。 |
+| 普通用戶需要訪問被限制的網站 | 適合 | 提供簡單的方式來隱藏流量，避免被封鎖。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~4 小時 |
+| 整合時間 | ~2 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到匿名訪問的能力，值得嘗試。
+> 花 4 小時學習，2 小時整合，得到隱藏流量的效果，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 安全性評估中等，該工具不需要高權限，但使用過程中需注意保護 AUTH_KEY 和其他敏感資料的安全性。
+> 低風險：該工具不需要高權限運行，且不會存取敏感資料。依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -336,12 +341,12 @@ MHR-CFW 的核心技術機制在於利用 Google Apps Script 和 Cloudflare Work
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 238 |
-| Open Issues | 69 |
-| Issue 解決率 | 31% (31 closed) |
-| 最後推送 | 2026-05-05 |
+| Forks | 244 |
+| Open Issues | 73 |
+| Issue 解決率 | 31% (33 closed) |
+| 最後推送 | 2026-05-06 |
 | 建立日期 | 2026-04-27 |
-| Repo 大小 | 105 KB |
+| Repo 大小 | 157 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/denuitt1/mhr-cfw) |
 | Topics | `cloudflare-workers` `domain-fronting` `dpi` `dpi-bypass` `google-apps-script` `http` `mitm` `proxy` |
 
@@ -353,7 +358,7 @@ MHR-CFW 的核心技術機制在於利用 Google Apps Script 和 Cloudflare Work
 > ```mermaid
 > pie title 語言組成
 >     "Python" : 94
->     "JavaScript" : 4
+>     "JavaScript" : 5
 >     "Batchfile" : 1
 >     "Shell" : 1
 > ```
@@ -361,11 +366,11 @@ MHR-CFW 的核心技術機制在於利用 Google Apps Script 和 Cloudflare Work
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
+> | [@denuitt1](https://github.com/denuitt1) | 46 |
 > | [@cpog72031](https://github.com/cpog72031) | 38 |
-> | [@denuitt1](https://github.com/denuitt1) | 38 |
-> | [@loada2204](https://github.com/loada2204) | 8 |
+> | [@loada2204](https://github.com/loada2204) | 14 |
+> | [@onlymaj](https://github.com/onlymaj) | 4 |
 > | [@hrnrxb](https://github.com/hrnrxb) | 1 |
-> | [@onlymaj](https://github.com/onlymaj) | 1 |
 
 **最新版本**：v2.0.1 (2026-05-03)
 
@@ -384,13 +389,13 @@ MHR-CFW 的核心技術機制在於利用 Google Apps Script 和 Cloudflare Work
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放問題數量較高，顯示出仍有許多使用者在探索和解決問題。
+**社群活躍度**：社群活躍，近期有多次更新和貢獻。
 **連結**：[文件](https://github.com/denuitt1/mhr-cfw)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-03 ~ 2026-05-05）
-> **活躍天數** 3 天 · **最新 commit** Update README.md
+> [!abstract] 最近 10 次 commit（2026-05-06 ~ 2026-05-06）
+> **活躍天數** 1 天 · **最新 commit** Update README.md
 
 ## 熱門議題
 
@@ -399,8 +404,8 @@ MHR-CFW 的核心技術機制在於利用 Google Apps Script 和 Cloudflare Work
 > | --- | --- | --- | --- |
 > | [#62](https://github.com/denuitt1/mhr-cfw/issues/62) | Socks not working on lan sharing ios | 5 | 1 |
 > | [#3](https://github.com/denuitt1/mhr-cfw/issues/3) | 502 Bad JSON: | 4 | 9 |
-> | [#98](https://github.com/denuitt1/mhr-cfw/issues/98) | Mobile support, any plans or workarounds? | 3 | 2 |
 > | [#73](https://github.com/denuitt1/mhr-cfw/issues/73) | آپلود مجدد فیلم آموزشی | 3 | 1 |
+> | [#68](https://github.com/denuitt1/mhr-cfw/issues/68) | -1ms - lan sharing problem | 2 | 1 |
 
 ## README 摘錄
 
@@ -413,31 +418,30 @@ MHR-CFW 的核心技術機制在於利用 Google Apps Script 和 Cloudflare Work
 > | [English](README.md) | [Persian](README_FA.md) |
 > | :---: | :---: |
 > 
-> ## Disclaimer
-> 
-> `mhr-cfw` is provided for educational, testing, and research purposes only.
-> 
-> - **Provided without warranty:** This software is provided "AS IS", without express or implied warranty, including merchantability, fitness for a particular purpose, and non-infringement.
-> - **Limitation of liability:** The developers and contributors are not responsible for any direct, indirect, incidental, consequential, or other damages resulting from the use of this project or the inability to use it.
-> - **User responsibility:** Running this project outside controlled test environments may affect networks, accounts, proxies, certificates, or connected systems. You are solely responsible for installation, configuration, and use.
-> - **Legal compliance:** You are responsible for complying with all local, national, and international laws and regulations before using this software.
-> - **Google services compliance:** If you use Google Apps Script or other Google services with this project, you are responsible for complying with Google's Terms of Service, acceptable use rules, quotas, and platform policies. Misuse may lead to suspension or termination of your Google account or deployments.
-> - **License terms:** Use, copying, distribution, and modification of this software are governed by the repository license. Any use outside those terms is prohibited.
-> 
 > ---
 > 
 > ## How It Works
 > 
+> ### 1 - GAS + Cloudflare Worker Exit
 > ```
-> Client -> Local Proxy -> Google/CDN front -> GoogleAppsScript (GAS) Relay -> Cloudflare Worker -> Target website
->              |
->              +-> shows www.google.com to the network DPI filter
+> Client -> Local Relay -> Google/CDN Front -> GAS (Google Apps Script) Relay -> Cloudflare Worker -> Exit
+>             |
+>             +-> Shows www.google.com to network DPI filter
 > ```
+> 
+> ### 2 - GAS + Cloudflare Worker Middle + Self-Hosted Upstream Forwarder Relay Exit
+> ```
+> Client -> Local Relay -> Google/CDN Front -> GAS (Google Apps Script) Relay -> Cloudflare Worker -> Self-Hosted Upstream Forwarder -> Exit
+>             |
+>             +-> Shows www.google.com to network DPI filter
+> ```
+> 
 > In normal use, the browser sends traffic to the proxy running on your computer.
 > The proxy sends that traffic through Google-facing infrastructure so the network only sees an allowed domain such as `www.google.com`.
 > Your deployed relay then fetches the real website through cloudflare worker and sends the response back through the same path.
 > 
 > This means the filter sees normal-looking Google traffic, while the actual destination stays hidden inside the relay request.
+> 
 > 
 > --- 
 > 
@@ -581,11 +585,23 @@ MHR-CFW 的核心技術機制在於利用 Google Apps Script 和 Cloudflare Work
 > 
 > ### 3. Verify
 > 
-> Browse `
+> Browse `https://httpbin.org/ip` through the proxy — you should see the **VPS's IP**, not Cloudflare's. Then revisit a CAPTCHA-protected site that wasn't working — the challenge should now validate.
+> 
+> > The forwarder must require auth. Without `AUTH_KEY` it refuses to start. Anyone with the URL and key can use it as a relay, so keep both secret.
+> 
+> ---
+> 
+> ## Disclaimer
+> 
+> `mhr-cfw` is provided for educational, testing, and research purposes only.
+> 
+> - **Provided without warranty:** This software is provided "AS IS", without express or implied warranty, including merchantability, fitness for a particular purpose, and non-infringement.
+> - **Limitation of liability:** The developers and contributors are not responsible for any direct, indirect, incidental, consequential, or other damages resulting from the use of this project or the inability to use it.
+> - **User responsibility:** Running this project outside controlled test environments may affect networks, accounts, proxies, certificates, or connected systems. You are solely
 
 ## 延伸閱讀
 
-相關概念：[[DPI]] · [[代理工具]] · [[Cloudflare Workers]]
+相關概念：[[DPI]] · [[MITM]] · [[HTTP/2]] · [[代理伺服器]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[DanOps-1--Gpt-Agreement-Payment|DanOps-1/Gpt-Agreement-Payment]] · [[Nightmare-Eclipse--RedSun|Nightmare-Eclipse/RedSun]] · [[dazzyddos--PrivHound|dazzyddos/PrivHound]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]]
 
@@ -593,11 +609,11 @@ MHR-CFW 的核心技術機制在於利用 Google Apps Script 和 Cloudflare Work
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：代理工具）
+> [!note]- 直接競品（同子分類：DPI 繞過）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "代理工具" AND file.name != "denuitt1--mhr-cfw"
+> WHERE subcategory = "DPI 繞過" AND file.name != "denuitt1--mhr-cfw"
 > SORT stars DESC
 > ```
 
@@ -605,7 +621,7 @@ MHR-CFW 的核心技術機制在於利用 Google Apps Script 和 Cloudflare Work
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "基礎設施" AND file.name != "denuitt1--mhr-cfw"
+> WHERE category = "安全" AND file.name != "denuitt1--mhr-cfw"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -629,7 +645,7 @@ MHR-CFW 的核心技術機制在於利用 Google Apps Script 和 Cloudflare Work
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["DPI","代理工具","Cloudflare Workers"];
+> const concepts = ["DPI","MITM","HTTP/2","代理伺服器"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "denuitt1--mhr-cfw" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

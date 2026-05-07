@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "Open-source Claude Design alternative. One-click import your Claude Code / Codex API key. Prompt → prototype / slides / PDF. Multi-model (Claude, GPT, Gemini, Kimi, GLM, Ollama). BYOK, local-first, MIT."
 homepage: "https://opencoworkai.github.io/open-codesign/"
-stars: 4832
-stars_per_day: 284
-forks: 503
-open_issues: 45
+stars: 5031
+stars_per_day: 280
+forks: 524
+open_issues: 47
 created: 2026-04-18
 pushed_at: 2026-05-05
 first_seen: 2026-04-23
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-23
-use_case: "提供一個開源的設計工具，讓用戶能夠快速將提示轉換為原型、簡報或市場資產。"
+use_case: "提供開源的設計工具，讓使用者能夠快速從提示生成原型、簡報或行銷資產。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 3
 next_review: "2026-04-28"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 51
+issue_close_rate: 49
 repo_size_kb: 64901
 readme_length: 9990
 bus_factor: 1
-last_release_days: 13
+last_release_days: 14
 release_cadence: "monthly"
 verdict: ""
 ring_history: "assess@2026-04-23"
-star_history: "2026-04-23:1261,2026-04-23:1276,2026-04-24:1902,2026-04-24:1911,2026-04-25:2186,2026-04-25:2189,2026-04-26:2396,2026-04-27:2734,2026-04-28:3010,2026-04-29:3211,2026-04-30:3553,2026-05-01:3798,2026-05-02:3962,2026-05-03:4155,2026-05-04:4400,2026-05-05:4664,2026-05-06:4832"
+star_history: "2026-04-23:1261,2026-04-23:1276,2026-04-24:1902,2026-04-24:1911,2026-04-25:2186,2026-04-25:2189,2026-04-26:2396,2026-04-27:2734,2026-04-28:3010,2026-04-29:3211,2026-04-30:3553,2026-05-01:3798,2026-05-02:3962,2026-05-03:4155,2026-05-04:4400,2026-05-05:4664,2026-05-06:4832,2026-05-07:5031"
 tags:
   - github
   - "category/開發工具"
@@ -57,12 +57,12 @@ tags:
 aliases:
   - "open-codesign"
   - "OpenCoworkAI/open-codesign"
-  - "提供一個開源的設計工具，讓用戶能夠快速將提示轉換為原型、簡報或市場資產。"
+  - "提供開源的設計工具，讓使用者能夠快速從提示生成原型、簡報或行銷資產。"
 ---
 
 # open-codesign
 
-**4.8k** stars · **284** stars/天 · 建立 17 天前 · TypeScript · MIT
+**5.0k** stars · **280** stars/天 · 建立 18 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/OpenCoworkAI--open-codesign");
@@ -80,13 +80,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ai-design` `anthropic` `byok` `claude` `claude-code` `claude-design` `claude-design-alternative` `deepseek` `design-to-code` `desktop-app` `electron` `figma-alternative` `gemini` `local-first` `multi-model` `ollama` `openai` `openrouter` `typescript` `ui-generator`
 
 > [!summary] 一句話摘要
-> 提供一個開源的設計工具，讓用戶能夠快速將提示轉換為原型、簡報或市場資產。
+> 提供開源的設計工具，讓使用者能夠快速從提示生成原型、簡報或行銷資產。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (284 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要在本地運行設計工具並希望避免雲端依賴的設計師和開發者。
-> **一句話重點** 這個專案的價值在於它提供了一個靈活且本地運行的設計工具，讓用戶不再受限於單一的雲端服務。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (280 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 希望在本地環境中使用 AI 設計工具的開發者和設計師，尤其是那些不想依賴雲端服務的用戶。
+> **一句話重點** Open CoDesign 的最大優勢在於它的開源性和本地運行特性，讓用戶能夠完全控制自己的設計流程。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -109,27 +109,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，3 小時整合，得到靈活的設計工具，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習、3 小時整合，得到靈活的設計工具，值得一試。
 
 > [!abstract] 核心創新
-> 提供一個開源的設計工具，支持多種 AI 模型並且完全本地運行。
+> 這個專案的核心創新在於支持多種 AI 模型並實現本地運行，讓用戶擁有更大的靈活性和數據隱私。
 
 ## 專案簡介
 
-Open CoDesign 是一個開源的設計工具，旨在將用戶的提示轉換為高品質的原型、簡報或市場資產，並且可以在本地運行。用戶只需提供一個 API 金鑰，便能快速啟動，並使用多種模型（如 Claude、GPT、Gemini 等）。這個工具的賣點在於其本地運行的特性，避免了雲端依賴和訂閱鎖定。使用者可以通過 CLIProxyAPI 一鍵導入現有的 API 配置，並在設計過程中生成圖像和即時編輯。技術上，Open CoDesign 使用 Electron 框架來構建桌面應用，並且支持多種模型的即時切換，這使得用戶能夠靈活選擇適合的 AI 模型進行設計。
+Open CoDesign 是一款開源的 AI 設計工具，旨在將用戶的提示轉換為精緻的原型、簡報或行銷資產，並且完全在本地運行，無需依賴雲端服務。用戶只需提供一個 API 金鑰（如 Claude、GPT、Gemini 等），便可在約 3 分鐘內開始使用。這款工具的賣點在於它支持多種模型，並且允許用戶將現有的 Claude Code 或 Codex API 金鑰一鍵導入，省去繁瑣的設置過程。技術上，Open CoDesign 使用 Electron 框架構建，並利用本地 SQLite 數據庫來保存設計版本，這樣用戶可以隨時回溯到之前的版本。
 
-與其他設計工具相比，如 Claude Design 和 Figma AI，Open CoDesign 提供了更大的靈活性，因為它支持多種模型並且完全本地運行，這對於需要保護數據隱私的用戶來說是一大優勢。使用者可以導出多種格式的文件，包括 HTML、PDF 和 PPTX，這使得設計成果的分享變得更加方便。儘管目前存在一些已知的錯誤（如 GENERATION_FAILED），但整體的使用體驗仍然相當流暢，並且社群活躍度高，能夠快速解決問題。對於希望在不依賴雲端的情況下進行設計的團隊來說，這是個值得考慮的選擇。
+與同類工具相比，如 Claude Design 和 Lovable，Open CoDesign 提供更大的靈活性，支持多種模型，並且完全本地化，這意味著用戶的數據不會被上傳到雲端，從而提高了隱私性。實際使用中，這款工具能夠生成 HTML、PDF、PPTX 等格式的文件，並且提供即時的設計反饋，讓用戶能夠在設計過程中進行調整。雖然目前仍處於早期階段，但其活躍的開發和社群支持顯示出其潛力。對於希望在本地環境中進行設計的開發者和設計師來說，這是一個值得關注的選擇。
 
 **技術棧**：`TypeScript` · `JavaScript` · `CSS` · `HTML` · `Shell` · `Vue` · `Ruby`
 
 ## 重點功能
 
-- 多模型支持 — 同時支持 Claude、GPT、Gemini 等多種 AI 模型，靈活選擇。
-- 本地運行 — 完全在用戶的設備上運行，無需雲端依賴，保護數據隱私。
-- 即時編輯功能 — 允許用戶在生成過程中即時編輯設計，提升效率。
-- 一鍵導入 API 金鑰 — 支持從 Claude Code 或 Codex 一鍵導入配置，快速上手。
-- 多格式導出 — 支持導出 HTML、PDF、PPTX 等多種格式，方便分享和使用。
+- 多模型支持 — 支援 Claude、GPT、Gemini、Ollama 等多種模型，讓用戶自由選擇。
+- 本地運行 — 完全在本地運行，無需雲端依賴，保護用戶隱私。
+- 一鍵導入 API 金鑰 — 用戶可以輕鬆導入現有的 Claude Code 或 Codex API 金鑰，快速上手。
+- 即時設計反饋 — 提供即時的設計反饋，讓用戶能夠在設計過程中進行調整。
+- 生成多種格式 — 能夠生成 HTML、PDF、PPTX 等多種格式的文件，滿足不同需求。
 
 ## 快速開始
 
@@ -139,63 +139,79 @@ winget install OpenCoworkAI.OpenCoDesign
 ```
 2. 添加 API 金鑰
 ```bash
-在首次啟動時，將 API 金鑰粘貼到設置頁面
+在首次啟動時，將支持的提供者金鑰粘貼到設置頁面
 ```
-3. 輸入提示生成設計
+3. 輸入提示以生成設計
 ```bash
-選擇內建範本或描述自己的設計需求
+選擇內建示例或描述自己的設計需求
+```
+
+## 程式碼範例
+
+```ts
+# 前置條件
+# 用戶需有一個支持的 API 金鑰
+# 添加 API 金鑰
+在首次啟動時，Open CoDesign 打開設置頁面。粘貼任何支持的提供者金鑰：
+- Anthropic (`sk-ant-…`)
+- OpenAI (`sk-…`)
+- Google Gemini
+- 任何 OpenAI 兼容的中繼（OpenRouter、SiliconFlow、本地 Ollama）
+# 預期輸出
+用戶的金鑰將安全地存儲在本地配置文件中，並可用於生成設計。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 17 天內累積 4832 stars（284/天），forks 503（10.4%），顯示出強勁的增長潛力。這個專案的主要貢獻者來自於開源社群，且有著豐富的技術背景。它解決了許多設計工具在雲端依賴和訂閱模式下的痛點，提供了一個本地運行的替代方案。近期的推廣活動和社群討論也提高了其曝光率。這個工具的開發背景反映了對於數據隱私和靈活性的需求，特別是在設計領域。
+> 建立 18 天就累積 5031 stars（280/天），forks 524（10.4%），顯示出強勁的增長勢頭。這個專案的主要貢獻者包括 hqhq1025 和 Sun-sunshine06，這些開發者在開源社群中有一定的影響力。Open CoDesign 解決了許多設計工具在雲端依賴和訂閱鎖定方面的痛點，讓用戶能夠自由選擇模型，並在本地進行設計。這種靈活性是目前市場上其他工具所缺乏的。此外，該專案的推廣和討論在社群中引起了廣泛關注，進一步推動了其使用率的提升。
 
 ## 適合誰使用
 
-**目標受眾**：需要在本地運行設計工具並希望避免雲端依賴的設計師和開發者。
+**目標受眾**：希望在本地環境中使用 AI 設計工具的開發者和設計師，尤其是那些不想依賴雲端服務的用戶。
 
 > [!example] 使用場景
-> - 產品經理用它來快速生成市場簡報，因為可以即時轉換提示為 PPTX 格式，節省了手動設計的時間。
-> - 前端工程師用它來創建原型，因為能夠直接生成 HTML 和 JSX 元素，便於快速迭代和測試。
-> - 設計師用它來生成圖像和設計元素，因為內建的 AI 圖像生成能力能夠提升設計效率，減少外部資源的依賴。
+> - 前端工程師用它來快速生成網站原型，因為可以從提示生成 HTML 結構，節省了手動編碼的時間。
+> - 設計師用它來創建行銷簡報，因為可以一鍵導入 API 金鑰，快速生成符合品牌風格的 PPTX 文件。
+> - 產品經理用它來製作用戶界面設計，因為它支持多種模型，能夠根據不同需求進行調整。
 
 ## 架構分析
 
-Open CoDesign 採用 Electron 框架構建桌面應用，這使得它能夠在多個平台上運行。資料流方面，使用者的提示會被發送到選定的 AI 模型，然後生成設計原型。這種設計選擇的好處是能夠快速部署和更新，但代價是需要用戶自行管理 API 金鑰和模型配置。由於是本地運行，這也意味著用戶的數據不會被上傳到雲端，這對於需要保護隱私的用戶來說是一大優勢。擴展性方面，未來可能會增加更多的模型支持和功能，但目前的架構已經能夠滿足大多數設計需求。
+Open CoDesign 採用 Electron 框架構建，這使得它能夠在多個操作系統上運行。資料流方面，使用者的提示經過本地處理，生成的設計結果會即時反饋給用戶，並保存在本地 SQLite 數據庫中。這樣的設計選擇使得用戶能夠隨時回溯到之前的版本，增強了使用體驗。選擇本地運行的架構雖然提高了數據隱私，但也意味著用戶需要自行管理模型和資源。擴展性方面，由於使用了 Electron，未來可以輕鬆增加新的功能或整合其他工具。
 
 ## 技術深入分析
 
-Open CoDesign 的核心技術機制在於其多模型支持和本地運行的設計。它使用 Electron 框架來構建桌面應用，這使得它能夠在多個操作系統上運行。效能方面，因為是本地運行，所以用戶可以在不依賴網路的情況下進行設計，這對於需要保護數據隱私的用戶來說是一大優勢。設計選擇上，Open CoDesign 允許用戶使用多種 AI 模型，這意味著用戶可以根據需求選擇最合適的模型進行設計。這種靈活性是許多商業工具所不具備的。技術風險方面，未來可能會面臨擴展性問題，特別是在支持更多模型和功能的情況下。整合方面，與現有的設計工具鏈（如 Figma 或 Adobe）相比，Open CoDesign 可能需要額外的適配，但其本地運行的特性使得整合過程相對簡單。
+Open CoDesign 的核心技術機制是基於 Electron 框架，這使得它能夠在多個平台上運行，並且能夠利用本地資源進行設計。它的設計流程從用戶的提示開始，經過本地的 AI 模型處理，最終生成可編輯的原型或簡報。這種設計選擇不僅提高了性能，還增強了用戶的數據隱私。效能上，因為所有處理都是在本地進行，這意味著用戶的設計過程不會受到網路延遲的影響。選擇本地運行的架構雖然提高了數據隱私，但也意味著用戶需要自行管理模型和資源，這對於某些用戶來說可能是一個挑戰。技術風險方面，隨著使用者數量的增加，如何保持穩定性和性能將是一個挑戰。整合方面，因為是基於 Electron，與其他主流工具的整合相對容易，但仍需注意版本兼容性問題。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含快速上手指南，安裝過程相對順暢，但可能需要解決一些安全設置問題。文件提供了多語言支持，對於新手來說，能夠在 30 分鐘內完成設置並運行。整體上，對於新手來說是友好的。
+> README 文件清晰且詳細，提供了安裝和使用的具體步驟。安裝過程相對簡單，但對於新手來說，可能需要一些時間來理解 API 金鑰的管理。文件中有良好的快速入門指南，幫助用戶快速上手。文件目前僅提供英文版本，缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 完全開源，無需擔心訂閱費用。
-> - 支持多種 AI 模型，靈活性高。
-> - 本地運行，數據隱私得到保障。
+> - 開源且本地運行，保護用戶隱私
+> - 支持多種模型，提供靈活性
+> - 即時設計反饋，提高工作效率
 
 > [!danger] 缺點
-> - 目前存在一些已知的錯誤，可能影響使用體驗。
-> - 安裝過程中可能需要解決安全設置問題。
-> - 不如一些成熟的商業工具功能全面。
+> - 仍在開發中，功能可能不穩定
+> - 需要用戶提供 API 金鑰，對於沒有金鑰的用戶無法使用
+> - 安裝過程可能對新手有一定挑戰
 
 > [!warning] 注意事項
-> - 目前存在一些已知的錯誤，如 GENERATION_FAILED 和 RENDERER_ERROR。
-> - 僅支援 macOS 12+、Windows 10+ 和 Linux (glibc ≥ 2.31)。
-> - 安裝過程中可能需要手動解決某些安全設置問題。
+> - 僅支援 macOS 12+、Windows 10+ 和 Linux (glibc ≥ 2.31)
+> - 目前仍在開發中，功能可能不穩定
+> - 需要用戶提供 API 金鑰，對於沒有金鑰的用戶無法使用
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [OpenCoworkAI/claude-design](https://github.com/OpenCoworkAI/claude-design) | Claude Design 是一個封閉的設計工具，只支持其自有模型，而 Open CoDesign 支持多種模型並且是開源的。 |
-| Figma AI | Figma AI 是一個雲端工具，無法在本地運行，而 Open CoDesign 完全支持本地運行，保護用戶數據隱私。 |
+| [OpenCoworkAI/claude-design](https://github.com/OpenCoworkAI/claude-design) | Claude Design 是一個封閉的雲端工具，而 Open CoDesign 是開源且本地運行的替代方案，提供更大的靈活性和數據隱私。 |
+| [lovable/lovable](https://github.com/lovable/lovable) | Lovable 是一個專注於特定設計任務的工具，而 Open CoDesign 提供多模型支持和更廣泛的功能範圍。 |
+| [vercel/v0](https://github.com/vercel/v0) | V0 是一個專注於雲端的設計工具，而 Open CoDesign 完全支持本地運行，無需雲端依賴。 |
 
 ## 替代方案決策
 
@@ -203,47 +219,47 @@ Open CoDesign 的核心技術機制在於其多模型支持和本地運行的設
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成遊戲角色精靈，而 Open CoDesign 則是針對設計原型和市場資產的多功能工具。 | 如果你的專案專注於遊戲開發，並需要專門的角色設計工具，則可以選擇 agent-sprite-forge。 | low，因為兩者的使用方式有相似之處。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | gpt2api 提供了 GPT-2 的 API 接口，主要用於文本生成，而 Open CoDesign 更加專注於設計和多媒體生成。 | 如果你的需求主要是文本生成而非設計，則 gpt2api 會更適合。 | medium，因為需要重新適應不同的生成模式和輸出格式。 |
+| [OpenCoworkAI/claude-design](https://github.com/OpenCoworkAI/claude-design) | Claude Design 是一個封閉的雲端工具，而 Open CoDesign 是開源且本地運行的替代方案，提供更大的靈活性和數據隱私。 | 如果你需要一個快速的雲端解決方案且不在意數據隱私，Claude Design 可能更適合。 | medium，因為需要重新設置環境和 API 金鑰。 |
+| [lovable/lovable](https://github.com/lovable/lovable) | Lovable 專注於特定設計任務，而 Open CoDesign 提供多模型支持和更廣泛的功能範圍。 | 如果你的需求非常專注於某一類設計任務，Lovable 可能會提供更針對性的解決方案。 | low，因為功能範圍相似，轉移相對容易。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **open-codesign** | **agent-sprite-forge** | **gpt2api** |
+> | 維度 | **open-codesign** | **claude-design** | **lovable** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這個工具專注於生成遊戲角色精靈，而 Open CoDesign 則是針對設計原型和市場資產的多功能工具。 | gpt2api 提供了 GPT-2 的 API 接口，主要用於文本生成，而 Open CoDesign 更加專注於設計和多媒體生成。 |
-> | 遷移成本 | - | low，因為兩者的使用方式有相似之處。 | medium，因為需要重新適應不同的生成模式和輸出格式。 |
-> | 適用場景 | 主要場景 | 如果你的專案專注於遊戲開發，並需要專門的角色設計工具，則可以 | 如果你的需求主要是文本生成而非設計，則 gpt2api 會更 |
+> | 技術路線 | 本專案 | Claude Design 是一個封閉的雲端工具，而 Open CoDesign 是開源且本地運行的替代方案，提供更大的靈活性和數據隱私。 | Lovable 專注於特定設計任務，而 Open CoDesign 提供多模型支持和更廣泛的功能範圍。 |
+> | 遷移成本 | - | medium，因為需要重新設置環境和 API 金鑰。 | low，因為功能範圍相似，轉移相對容易。 |
+> | 適用場景 | 主要場景 | 如果你需要一個快速的雲端解決方案且不在意數據隱私，Claud | 如果你的需求非常專注於某一類設計任務，Lovable 可能會 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人或小型團隊的試用，但不建議用於生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些系統上安裝後可能需要手動解決安全設置問題
-  - 解法：參考 README 中的安裝說明進行設置
-- [MEDIUM] 生成過程中可能會遇到 GENERATION_FAILED 錯誤
-  - 解法：檢查 API 金鑰和模型配置是否正確
-- [MEDIUM] 某些功能可能在特定平台上不穩定
-  - 解法：保持應用更新，並參考社群討論解決問題
+- **[HIGH]** 在某些系統上安裝過程可能會遇到權限問題，導致無法正常啟動
+  - 解法：確保以管理員身份運行安裝程序
+- [MEDIUM] API 金鑰管理不當可能導致安全風險
+  - 解法：確保金鑰存儲在安全的本地位置
+- [MEDIUM] 某些模型的兼容性問題，可能導致生成失敗
+  - 解法：檢查模型的支持列表，確保使用正確的金鑰
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司進行產品設計 | 非常適合 | 本地運行且支持多種模型，適合小型團隊使用。 |
-| 大型企業的設計部門 | 普通 | 雖然功能強大，但可能需要更穩定的商業支持。 |
-| 獨立開發者進行個人專案 | 非常適合 | 開源且無需訂閱費用，適合個人使用。 |
-| 需要雲端協作的團隊 | 不適合 | 完全本地運行，無法進行雲端協作。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 本地運行且支持多種模型，適合小型團隊的靈活需求。 |
+| 大型企業的設計團隊 | 普通 | 雖然支持多模型，但大型團隊可能需要更穩定的雲端解決方案。 |
+| 自由職業設計師 | 非常適合 | 能夠快速生成設計，並且保護客戶數據隱私。 |
+| 教育機構的設計課程 | 適合 | 提供多種設計模塊，適合教學用途。 |
 
 ## 採用成本分析
 
@@ -255,12 +271,12 @@ Open CoDesign 的核心技術機制在於其多模型支持和本地運行的設
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，3 小時整合，得到靈活的設計工具，值得一試。
+> 花 2 小時學習、3 小時整合，得到靈活的設計工具，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：本地運行，無需高權限，且不會存取敏感資料。依賴鏈的信任程度高，適合在 CI/CD 中使用。
+> 低風險：本工具在本地運行，無需高權限，並且不會存取敏感資料。依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -325,9 +341,9 @@ Open CoDesign 的核心技術機制在於其多模型支持和本地運行的設
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 503 |
-| Open Issues | 45 |
-| Issue 解決率 | 51% (46 closed) |
+| Forks | 524 |
+| Open Issues | 47 |
+| Issue 解決率 | 49% (46 closed) |
 | 最後推送 | 2026-05-05 |
 | 建立日期 | 2026-04-18 |
 | 官方網站 | [Link](https://opencoworkai.github.io/open-codesign/) |
@@ -383,7 +399,7 @@ Open CoDesign 的核心技術機制在於其多模型支持和本地運行的設
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，已經解決了 51% 的開放問題。
+**社群活躍度**：社群活躍，定期更新和修復問題。
 **連結**：[文件](https://opencoworkai.github.io/open-codesign/)
 
 ## 開發動態
@@ -396,11 +412,11 @@ Open CoDesign 的核心技術機制在於其多模型支持和本地運行的設
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
+> | [#310](https://github.com/OpenCoworkAI/open-codesign/issues/310) | [Bug]: GENERATION_FAILED (fp: c85d010d) `bug` `triage` | 0 | 1 |
+> | [#309](https://github.com/OpenCoworkAI/open-codesign/issues/309) | [Bug]: GENERATION_FAILED (fp: 69213336) `bug` `triage` | 0 | 1 |
 > | [#308](https://github.com/OpenCoworkAI/open-codesign/issues/308) | [Bug]: GENERATION_FAILED (fp: 69213336) `bug` `triage` | 0 | 1 |
 > | [#304](https://github.com/OpenCoworkAI/open-codesign/issues/304) | [Bug]: RENDERER_ERROR (fp: 37ae37fa) `bug` `area:packaging` `triage` | 0 | 2 |
 > | [#303](https://github.com/OpenCoworkAI/open-codesign/issues/303) | [Bug]: GENERATION_FAILED (fp: 69213336) `bug` `triage` | 0 | 1 |
-> | [#285](https://github.com/OpenCoworkAI/open-codesign/issues/285) | [Meta] v0.2 中仍存在的 8个核心代码缺陷 — 汇总与跟踪 | 0 | 2 |
-> | [#282](https://github.com/OpenCoworkAI/open-codesign/issues/282) | [Bug]: GENERATION_FAILED (fp: a1ef45df) `bug` `triage` | 0 | 1 |
 
 ## README 摘錄
 
@@ -617,7 +633,7 @@ Open CoDesign 的核心技術機制在於其多模型支持和本地運行的設
 
 ## 延伸閱讀
 
-相關概念：[[AI 設計]] · [[多模態]] · [[本地運行]]
+相關概念：[[AI 設計]] · [[本地優先]] · [[多模型]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[VoltAgent--awesome-claude-design|VoltAgent/awesome-claude-design]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[Manavarya09--design-extract|Manavarya09/design-extract]] · [[alchaincyf--huashu-design|alchaincyf/huashu-design]] · [[joeseesun--qiaomu-mondo-poster-design|joeseesun/qiaomu-mondo-poster-design]]
 
@@ -661,7 +677,7 @@ Open CoDesign 的核心技術機制在於其多模型支持和本地運行的設
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["AI 設計","多模態","本地運行"];
+> const concepts = ["AI 設計","本地優先","多模型"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "OpenCoworkAI--open-codesign" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
