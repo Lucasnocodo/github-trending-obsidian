@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Content is already a cheat-code race—whoever cracks the patterns first wins the traffic. Your auto-evolving ops expert that learns YOUR account, not the global average. The Claude Code workflow behind 1M followers in 1 month."
 homepage: ""
-stars: 780
-stars_per_day: 780
-forks: 162
-open_issues: 4
+stars: 1022
+stars_per_day: 511
+forks: 217
+open_issues: 5
 created: 2026-05-05
-pushed_at: 2026-05-05
+pushed_at: 2026-05-07
 first_seen: 2026-05-07
 week: "2026-W19"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "透過自動演化的操作專家，量化你的內容創作，提升
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-10"
+appearances: 2
+next_review: "2026-05-11"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 20
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-07"
-star_history: "2026-05-07:778,2026-05-07:780"
+star_history: "2026-05-07:778,2026-05-07:780,2026-05-08:1022"
 tags:
   - github
   - "category/開發工具"
@@ -777,4 +777,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-08|2026-05-08]] — 再次上榜，1.0k stars
 - [[2026-05-07|2026-05-07]] — 首次收錄，778 stars

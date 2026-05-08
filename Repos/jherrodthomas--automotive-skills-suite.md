@@ -7,8 +7,8 @@ language: N/A
 license: MIT
 description: "100+ installable Claude skills covering Engineering areas such as, ISO 26262 functional safety, ISO/SAE 21434 cybersecurity, ISO 21448 SOTIF, AIAG-VDA quality (APQP/PPAP/FMEA), Automotive SPICE, and continuous improvement tools — every builder paired with a confirmation reviewer."
 homepage: ""
-stars: 730
-stars_per_day: 146
+stars: 918
+stars_per_day: 153
 forks: 15
 open_issues: 0
 created: 2026-05-01
@@ -30,8 +30,8 @@ use_case: "提供 152 種可安裝的汽車工程技能，涵蓋安全、網路�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-14"
+appearances: 2
+next_review: "2026-05-15"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-07"
-star_history: "2026-05-07:730"
+star_history: "2026-05-07:730,2026-05-08:918"
 tags:
   - github
   - "category/開發工具"
@@ -819,4 +819,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-08|2026-05-08]] — 再次上榜，918 stars
 - [[2026-05-07|2026-05-07]] — 首次收錄，730 stars

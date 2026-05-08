@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Public gallery of animated Codex pets"
 homepage: "https://petdex.crafter.run"
-stars: 729
-stars_per_day: 182
-forks: 32
-open_issues: 10
+stars: 961
+stars_per_day: 192
+forks: 43
+open_issues: 8
 created: 2026-05-02
-pushed_at: 2026-05-06
+pushed_at: 2026-05-07
 first_seen: 2026-05-07
 week: "2026-W19"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "提供 Codex 兼容的動畫寵物公共畫廊，讓用戶輕鬆瀏�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-14"
+appearances: 2
+next_review: "2026-05-15"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 89
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-07"
-star_history: "2026-05-07:724,2026-05-07:729"
+star_history: "2026-05-07:724,2026-05-07:729,2026-05-08:961"
 tags:
   - github
   - "category/開發工具"
@@ -718,4 +718,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-08|2026-05-08]] — 再次上榜，961 stars
 - [[2026-05-07|2026-05-07]] — 首次收錄，724 stars

@@ -1478,10 +1478,10 @@
   },
   "darrylmorley/whatcable": {
     "first_seen": "2026-05-02",
-    "last_seen": "2026-05-07",
-    "times_seen": 6,
+    "last_seen": "2026-05-08",
+    "times_seen": 7,
     "stars_first": 694,
-    "stars_last": 2052
+    "stars_last": 2107
   },
   "t8y2/dbx": {
     "first_seen": "2026-05-03",
@@ -1492,10 +1492,10 @@
   },
   "mattpocock/dictionary-of-ai-coding": {
     "first_seen": "2026-05-04",
-    "last_seen": "2026-05-07",
-    "times_seen": 4,
+    "last_seen": "2026-05-08",
+    "times_seen": 5,
     "stars_first": 849,
-    "stars_last": 1154
+    "stars_last": 1224
   },
   "wrongly-cuddly-obsession/NTSB_FOIA_MU5735": {
     "first_seen": "2026-05-04",
@@ -1506,10 +1506,10 @@
   },
   "aattaran/deepclaude": {
     "first_seen": "2026-05-05",
-    "last_seen": "2026-05-07",
-    "times_seen": 3,
+    "last_seen": "2026-05-08",
+    "times_seen": 4,
     "stars_first": 1036,
-    "stars_last": 1490
+    "stars_last": 1595
   },
   "vercel-labs/deepsec": {
     "first_seen": "2026-05-06",
@@ -1520,10 +1520,10 @@
   },
   "vibeforge1111/keep-codex-fast": {
     "first_seen": "2026-05-06",
-    "last_seen": "2026-05-07",
-    "times_seen": 2,
+    "last_seen": "2026-05-08",
+    "times_seen": 3,
     "stars_first": 751,
-    "stars_last": 816
+    "stars_last": 873
   },
   "Fokkyp/SoftwareCopyright-Skill": {
     "first_seen": "2026-05-06",
@@ -1534,30 +1534,44 @@
   },
   "XBuilderLAB/cheat-on-content": {
     "first_seen": "2026-05-07",
-    "last_seen": "2026-05-07",
-    "times_seen": 1,
+    "last_seen": "2026-05-08",
+    "times_seen": 2,
     "stars_first": 778,
-    "stars_last": 778
+    "stars_last": 1022
   },
   "jherrodthomas/automotive-skills-suite": {
     "first_seen": "2026-05-07",
-    "last_seen": "2026-05-07",
-    "times_seen": 1,
+    "last_seen": "2026-05-08",
+    "times_seen": 2,
     "stars_first": 730,
-    "stars_last": 730
+    "stars_last": 918
   },
   "crafter-station/petdex": {
     "first_seen": "2026-05-07",
-    "last_seen": "2026-05-07",
-    "times_seen": 1,
+    "last_seen": "2026-05-08",
+    "times_seen": 2,
     "stars_first": 724,
-    "stars_last": 724
+    "stars_last": 961
   },
   "tddworks/baguette": {
     "first_seen": "2026-05-07",
-    "last_seen": "2026-05-07",
-    "times_seen": 1,
+    "last_seen": "2026-05-08",
+    "times_seen": 2,
     "stars_first": 691,
-    "stars_last": 691
+    "stars_last": 739
+  },
+  "yaojingang/yao-open-prompts": {
+    "first_seen": "2026-05-08",
+    "last_seen": "2026-05-08",
+    "times_seen": 1,
+    "stars_first": 1131,
+    "stars_last": 1131
+  },
+  "strukto-ai/mirage": {
+    "first_seen": "2026-05-08",
+    "last_seen": "2026-05-08",
+    "times_seen": 1,
+    "stars_first": 1003,
+    "stars_last": 1003
   }
 }

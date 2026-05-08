@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "Use Claude Code's autonomous agent loop with DeepSeek V4 Pro, OpenRouter, or any Anthropic-compatible backend. Same UX, 17x cheaper."
 homepage: ""
-stars: 1492
-stars_per_day: 497
-forks: 79
-open_issues: 16
+stars: 1595
+stars_per_day: 399
+forks: 89
+open_issues: 21
 created: 2026-05-03
-pushed_at: 2026-05-05
+pushed_at: 2026-05-07
 first_seen: 2026-05-05
 week: "2026-W19"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "使用 DeepSeek V4 Pro 以更低成本運行 Claude Code 的自主代
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-05-10"
+appearances: 4
+next_review: "2026-05-11"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 6
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-05"
-star_history: "2026-05-05:1036,2026-05-05:1042,2026-05-06:1329,2026-05-06:1334,2026-05-07:1490,2026-05-07:1492"
+star_history: "2026-05-05:1036,2026-05-05:1042,2026-05-06:1329,2026-05-06:1334,2026-05-07:1490,2026-05-07:1492,2026-05-08:1595"
 tags:
   - github
   - "category/開發工具"
@@ -933,6 +933,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-08|2026-05-08]] — 再次上榜，1.6k stars
 - [[2026-05-07|2026-05-07]] — 再次上榜，1.5k stars
 - [[2026-05-06|2026-05-06]] — 再次上榜，1.3k stars
 - [[2026-05-05|2026-05-05]] — 首次收錄，1.0k stars

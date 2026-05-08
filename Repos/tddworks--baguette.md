@@ -7,12 +7,12 @@ language: Swift
 license: Apache-2.0
 description: "Headless iOS Simulator manager/farm + host-side input injection for iOS 26 — taps, swipes, multi-finger gestures, and 60 fps streaming"
 homepage: "https://tddworks.github.io/baguette/"
-stars: 691
-stars_per_day: 138
-forks: 26
-open_issues: 1
+stars: 739
+stars_per_day: 123
+forks: 27
+open_issues: 3
 created: 2026-05-01
-pushed_at: 2026-05-06
+pushed_at: 2026-05-07
 first_seen: 2026-05-07
 week: "2026-W19"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "提供無頭 iOS 模擬器管理和主機端輸入注入功能，支�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-14"
+appearances: 2
+next_review: "2026-05-15"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-07"
-star_history: "2026-05-07:691"
+star_history: "2026-05-07:691,2026-05-08:739"
 tags:
   - github
   - "category/開發工具"
@@ -900,4 +900,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-08|2026-05-08]] — 再次上榜，739 stars
 - [[2026-05-07|2026-05-07]] — 首次收錄，691 stars
