@@ -7,17 +7,17 @@ language: Python
 license: MIT
 description: "Content is already a cheat-code race—whoever cracks the patterns first wins the traffic. Your auto-evolving ops expert that learns YOUR account, not the global average. The Claude Code workflow behind 1M followers in 1 month."
 homepage: ""
-stars: 1022
-stars_per_day: 511
+stars: 1031
+stars_per_day: 516
 forks: 217
-open_issues: 5
+open_issues: 6
 created: 2026-05-05
 pushed_at: 2026-05-07
 first_seen: 2026-05-07
 week: "2026-W19"
 month: "2026-05"
 category: "開發工具"
-subcategory: "內容創作"
+subcategory: "內容優化"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-07
-use_case: "透過自動演化的操作專家，量化你的內容創作，提升流量與粉絲數。"
+use_case: "幫助內容創作者透過數據分析優化發文策略，提升流量與粉絲數。 "
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 2
 next_review: "2026-05-11"
 contributor_count: 2
 engagement: "medium"
-issue_close_rate: 20
-repo_size_kb: 223
+issue_close_rate: 14
+repo_size_kb: 239
 readme_length: 2091
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-07"
-star_history: "2026-05-07:778,2026-05-07:780,2026-05-08:1022"
+star_history: "2026-05-07:778,2026-05-07:780,2026-05-08:1022,2026-05-08:1031"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "cheat-on-content"
   - "XBuilderLAB/cheat-on-content"
-  - "透過自動演化的操作專家，量化你的內容創作，提升流量與粉絲數。"
+  - "幫助內容創作者透過數據分析優化發文策略，提升流量與粉絲數。 "
 ---
 
 # cheat-on-content
 
-**780** stars · **780** stars/天 · 建立 1 天前 · Python · MIT
+**1.0k** stars · **516** stars/天 · 建立 2 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/XBuilderLAB--cheat-on-content");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 透過自動演化的操作專家，量化你的內容創作，提升流量與粉絲數。
+> 幫助內容創作者透過數據分析優化發文策略，提升流量與粉絲數。 
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (780 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 2 人 · **參與度** Medium
-> **適合** 希望透過數據驅動內容創作的社交媒體經營者和內容創作者。
-> **一句話重點** 這個專案的核心在於透過數據驅動的方式，幫助創作者量化和優化內容表現。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (516 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Medium
+> **適合** 希望透過數據分析提升社交媒體內容表現的內容創作者。
+> **一句話重點** 這個工具不僅幫助用戶生成內容，還能透過數據分析優化發文策略，提升內容的曝光率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/XBuilderLAB--cheat-on-content");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "內容創作" && p.file.name !== "XBuilderLAB--cheat-on-content" && p.status !== "archived")
+>     .where(p => p.subcategory === "內容優化" && p.file.name !== "XBuilderLAB--cheat-on-content" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,98 +96,113 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 內容創作 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 內容優化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、3 小時整合，得到量化內容創作的能力，值得嘗試。
+> **結論** 花 5 小時學、3 小時整合，得到個性化的內容分析工具，值得投資。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於它能根據用戶的歷史數據自動進化評分公式，提供個性化的內容創作建議。
+> 這個專案的核心創新在於根據用戶的歷史數據自動生成和進化的評分公式。
 
 ## 專案簡介
 
-這個專案的核心機制是透過量化評分和預測來優化內容創作流程。用戶在發佈內容前，先對其進行打分和盲預測，然後在三天後進行數據回顧，這樣的循環讓用戶能夠不斷調整和進化自己的內容評分公式。關鍵指令如 `打分這篇 scripts/.md` 和 `启动预测 scripts/.md` 讓用戶能夠輕鬆進行評估和預測。這種方法的賣點在於它不僅僅提供靈感，而是幫助用戶量化自己的靈感，並根據歷史數據進行個性化的調整。技術上，專案使用 Python 和 Shell，並透過自動化的方式持續更新用戶的評分公式，這使得用戶在使用三個月後，判斷準確度能提升十倍。
+Cheat on Content 是一款專為內容創作者設計的工具，旨在透過數據分析來優化發文策略。用戶在發佈內容前，首先進行打分和盲預測，然後在發佈後的三天內進行數據回顧，這樣的循環讓用戶能夠不斷調整和進化自己的內容公式。這個工具的關鍵在於它根據用戶的歷史數據來生成個性化的評分公式，而不是依賴通用的平均數據。使用者只需在內容專案目錄中運行簡單的命令，如 `初始化 cheat-on-content`，即可開始使用。這種方法不僅幫助用戶量化靈感，還能在三個月內顯著提高預測準確度。
 
-與其他創作工具相比，這個工具的獨特之處在於它專注於用戶的個人數據，而不是通用的平均值，這樣的設計讓用戶能夠獲得更具針對性的建議。實際使用中，用戶可能會發現需要不斷調整自己的評分公式，這樣的過程雖然耗時，但能夠帶來長期的效益。專案目前處於早期階段，社群活躍度尚可，但仍需觀察未來的發展。適合那些希望在社交媒體上提升內容表現的創作者，尤其是已經有一定粉絲基礎的用戶。對於剛起步的創作者，可能需要考慮其他更簡單的工具來開始。
+技術上，這個工具使用 Python 和 Shell，並且依賴於用戶的歷史數據來持續進化其評分公式。與其他創作工具相比，Cheat on Content 更注重於判斷的準確性，而不是僅僅增加內容產出。實際使用中，這個工具能夠處理大量的內容數據，並且在用戶持續使用的過程中，能夠自動更新其評分標準。這種自我進化的特性使得它在長期使用中能夠提供更高的價值。對於那些希望在社交媒體上快速增長的創作者來說，這是一個值得考慮的工具。
 
 **技術棧**：`Python` · `Shell`
 
 ## 重點功能
 
-- 自動化評分系統 — 每篇內容發佈前進行打分，並在三天後進行數據回顧。
-- 盲預測功能 — 讓用戶在發佈前進行預測，並記錄決策過程。
-- 進化的評分公式 — 根據用戶的歷史數據自動調整評分標準。
-- 全程存檔 — 每次發佈都會記錄打分和預測，方便後續分析。
-- 對標分析 — 用戶可以導入競爭對手的內容作為參考，提升預測準確度。
+- 個性化評分公式 — 根據用戶的歷史數據生成，能隨著使用時間不斷進化。
+- 盲預測功能 — 在發佈前進行預測，並記錄決策過程，便於後續分析。
+- 數據回顧 — 發佈後三天自動生成數據回顧報告，幫助用戶了解內容表現。
+- 自動更新 — 根據用戶的發文模式和歷史數據，自動調整評分標準。
+- 支持多種內容格式 — 能夠處理各類型的內容數據，提升靈活性。
 
 ## 快速開始
 
-1. 克隆專案並安裝
+1. 克隆專案
 ```bash
-git clone https://github.com/XBuilderLAB/cheat-on-content.git && cd cheat-on-content && bash install.sh
+git clone https://github.com/XBuilderLAB/cheat-on-content.git
 ```
-2. 初始化工具
+2. 進入專案目錄
 ```bash
-初始化 cheat-on-content
+cd cheat-on-content
 ```
-3. 開始使用打分功能
+3. 安裝依賴
 ```bash
-打分这篇 scripts/.md
+bash install.sh
+```
+
+## 程式碼範例
+
+```python
+{
+  "前置條件": "在內容專案目錄中開啟 Claude Code，並執行初始化。",
+  "指令": "初始化 cheat-on-content",
+  "預期輸出": "5 個 yes/no 搞定 onboarding。強烈建議導對標帳號。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 780 stars（780/天），forks 162（20.8%），這顯示出強烈的社群興趣。主要貢獻者 woniuxuezhang 和 Jooonnn 在內容創作領域有一定的背景，這個工具解決了傳統內容創作工具無法根據個人數據進行精準調整的痛點。沒有明顯的觸發事件，但其獨特的自動進化機制吸引了不少創作者的注意。這個工具的設計使得用戶能夠在不斷變化的社交媒體環境中保持競爭力，這是其受歡迎的原因之一。forks/stars 比率高達 20.8%，顯示出許多人在積極修改和使用這個工具。
+> 建立 2 天就累積 1031 stars（516/天），forks 217（21.0%），這顯示出強烈的社群興趣。作者是 woniuxuezhang 和 Jooonnn，過去可能有相關的開發經驗。這個工具解決了內容創作者在數據分析上的痛點，讓他們能夠根據自己的歷史數據來優化發文策略，而不是依賴通用的建議。這種個性化的數據分析方法在市場上相對少見，吸引了許多創作者的注意。最近的推特或社群討論可能也促進了它的曝光。高達 21.0% 的 forks/stars 比率顯示出許多人在實際修改和使用這個工具，而不僅僅是觀望。
 
 ## 適合誰使用
 
-**目標受眾**：希望透過數據驅動內容創作的社交媒體經營者和內容創作者。
+**目標受眾**：希望透過數據分析提升社交媒體內容表現的內容創作者。
 
 > [!example] 使用場景
-> - 社交媒體經營者用它來量化每篇內容的表現，因為這樣可以根據數據調整內容策略，提升粉絲互動率。
-> - 內容創作者用它來預測新作品的受歡迎程度，因為這能幫助他們在發佈前做出更明智的決策，減少失敗的風險。
-> - 行銷團隊用它來分析競爭對手的內容表現，因為這樣可以更有效地制定行銷策略，提升品牌曝光率。
+> - 社交媒體經營者用它來分析過去的發文數據，預測未來內容的表現，因為這樣能夠提升粉絲互動率和增長速度。
+> - 內容創作者用它來優化自己的發文策略，透過數據驅動的決策來提高每篇文章的曝光率，因為這樣能夠更有效地吸引目標受眾。
+> - 市場行銷專員用它來評估不同內容類型的效果，並根據數據調整行銷策略，因為這樣能夠在競爭激烈的市場中脫穎而出。
 
 ## 架構分析
 
-這個專案採用模組化設計，核心是評分和預測系統。用戶的歷史數據被用來訓練和調整評分公式，這樣的設計使得工具能夠根據用戶的特定需求進行優化。資料流從用戶發佈內容開始，經過評分、預測、數據回顧等步驟，最終形成一個持續進化的系統。選擇這種設計的代價在於需要用戶持續提供數據，這對於新用戶來說可能是個挑戰。擴展性方面，隨著用戶數據的增加，系統的準確度會逐漸提升，但初期的預測準確度可能不高。
+Cheat on Content 的架構設計以用戶的歷史數據為核心，通過 Python 和 Shell 實現數據分析和預測功能。用戶在發佈內容前，工具會自動生成評分和預測，並在發佈後進行數據回顧。這種設計使得每次發佈都能成為一次學習的機會，並且隨著時間的推移，工具能夠自動進化其評分標準。
+
+這樣的架構使得用戶能夠在不斷變化的社交媒體環境中保持競爭力。選擇 Python 作為主要開發語言，因為它在數據分析和機器學習領域的強大生態系統，這使得工具能夠快速實現複雜的數據處理邏輯。這種設計的代價在於需要用戶提供足夠的歷史數據，以便生成準確的評分公式。
+
+隨著用戶數據的增長，工具的效能和準確度將會顯著提升。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於用戶的歷史數據來訓練和調整評分公式，這樣的設計使得每次內容發佈都能成為一次校準實驗。使用 Python 和 Shell 進行開發，這使得工具的安裝和使用相對靈活。效能方面，系統能夠處理用戶的歷史數據並進行實時更新，但初期的準確度可能不高，這需要用戶在使用過程中不斷提供數據。設計上選擇了模組化架構，這樣的選擇使得未來擴展新的功能變得更加容易，但也意味著需要用戶投入更多的時間來熟悉系統。技術風險方面，初期的預測準確度可能會影響用戶的信心，這需要透過不斷的數據回顧來建立信任。整合方面，與主流的社交媒體平台的兼容性需要進一步測試，但目前的設計已經考慮到未來的擴展性。
+Cheat on Content 的核心技術機制在於利用用戶的歷史數據來生成個性化的評分公式，這一過程涉及到數據分析和機器學習的應用。工具在用戶發佈內容前進行打分和盲預測，並在發佈後的三天內進行數據回顧，這樣的流程使得用戶能夠不斷調整和優化自己的內容策略。效能方面，該工具能夠處理大量的內容數據，並且隨著用戶的持續使用，預測準確度會逐漸提高。選擇 Python 作為開發語言，因為它在數據處理和機器學習方面的強大功能，這使得工具能夠快速實現複雜的數據分析邏輯。這樣的選擇雖然帶來了強大的功能，但也要求用戶提供足夠的歷史數據，以便生成準確的評分公式。技術風險方面，若用戶數據不足，可能導致預測準確度下降，這是使用過程中需要注意的問題。整合方面，該工具能夠與主流的內容管理系統相容，但在使用過程中，可能需要用戶自行調整設定以達到最佳效果。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和使用步驟。安裝過程相對順暢，但對於非技術用戶可能有一定的挑戰。文件中有提供初次使用的指南，幫助用戶快速上手。文件目前僅提供英文版本，未來可以考慮增加多語言支持。
+> README 文件提供了清晰的安裝指引和使用範例，讓新手能夠快速上手。安裝過程相對順暢，但需要用戶注意提供足夠的歷史數據以提高預測準確度。整體而言，文件的清晰度和指導性使得新手能夠在短時間內運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠根據用戶的歷史數據自動調整評分公式，提供個性化建議。
-> - 全程存檔的功能讓用戶能夠清楚了解每次發佈的表現。
-> - 持續進化的系統設計使得用戶的內容創作能力隨著時間提升。
+> - 能夠根據用戶的歷史數據生成個性化的評分公式。
+> - 提供盲預測和數據回顧功能，幫助用戶持續優化內容策略。
+> - 支持多種內容格式，提升靈活性和適用範圍。
 
 > [!danger] 缺點
-> - 對於新用戶來說，初期的預測準確度可能不高。
-> - 需要用戶提供歷史數據，這對於剛開始的創作者來說可能不太友好。
-> - 安裝和設置過程相對較複雜，對於非技術用戶可能有一定的門檻。
+> - 對於新帳號，預測準確度可能較低，需要時間累積數據。
+> - 目前不支持 TikTok 等其他社交平台的數據分析。
+> - 需要用戶主動參與數據回顧和評分公式的調整。
 
 > [!warning] 注意事項
-> - 目前僅支援特定平台的內容創作，未來可能會擴展。
-> - 需要用戶提供歷史數據以提升預測準確度，對新用戶不太友好。
-> - 評分公式的調整需要時間，初期可能不夠準確。
+> - 需要用戶提供足夠的歷史數據以生成準確的評分公式。
+> - 對於新帳號，預測準確度可能較低，需時間累積數據。
+> - 目前不支持 TikTok 等其他社交平台的數據分析。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於自動化內容生成，而本專案則強調基於數據的內容評估和優化。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具提供內容分析功能，但不具備自動化進化的能力，無法根據用戶數據持續調整。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於自動化內容生成，而 Cheat on Content 更注重於數據分析和優化。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供內容管理功能，但缺乏個性化的數據分析能力。 |
+| [Einsia/OpenChronicle](https://github.com/Einsia/OpenChronicle) | OpenChronicle 主要用於內容排程，無法提供如 Cheat on Content 一樣的預測和評分功能。 |
 
 ## 替代方案決策
 
@@ -195,16 +210,16 @@ git clone https://github.com/XBuilderLAB/cheat-on-content.git && cd cheat-on-con
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於自動化內容生成，而本專案則強調基於數據的內容評估和優化。 | 如果你的團隊需要快速生成大量內容而非精細化評估，則可以選擇這個工具。 | medium，因為需要重新調整內容生成的流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具提供內容分析功能，但不具備自動化進化的能力，無法根據用戶數據持續調整。 | 如果你需要一個簡單的內容分析工具，而不需要自動化進化的功能，可以考慮這個選項。 | low，因為功能上有部分重疊，轉換成本較低。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於自動化內容生成，與本專案的數據分析和優化功能有所不同。 | 如果你的需求是自動生成內容而非分析和優化，則應選擇此工具。 | medium，因為需要重新調整內容生成的邏輯。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供內容管理功能，但缺乏個性化的數據分析能力，與本專案的核心功能有明顯差異。 | 如果你的重點在於內容的管理而非數據分析，則可以考慮此工具。 | low，因為主要是內容管理的轉換。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **cheat-on-content** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這個工具專注於自動化內容生成，而本專案則強調基於數據的內容評估和優化。 | 這個工具提供內容分析功能，但不具備自動化進化的能力，無法根據用戶數據持續調整。 |
-> | 遷移成本 | - | medium，因為需要重新調整內容生成的流程。 | low，因為功能上有部分重疊，轉換成本較低。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要快速生成大量內容而非精細化評估，則可以選擇這 | 如果你需要一個簡單的內容分析工具，而不需要自動化進化的功能， |
+> | 技術路線 | 本專案 | 專注於自動化內容生成，與本專案的數據分析和優化功能有所不同。 | 提供內容管理功能，但缺乏個性化的數據分析能力，與本專案的核心功能有明顯差異。 |
+> | 遷移成本 | - | medium，因為需要重新調整內容生成的邏輯。 | low，因為主要是內容管理的轉換。 |
+> | 適用場景 | 主要場景 | 如果你的需求是自動生成內容而非分析和優化，則應選擇此工具。 | 如果你的重點在於內容的管理而非數據分析，則可以考慮此工具。 |
 
 ## 成熟度評估
 
@@ -215,26 +230,26 @@ git clone https://github.com/XBuilderLAB/cheat-on-content.git && cd cheat-on-con
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人試用和探索，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 初期預測準確度不高，可能導致用戶失去信心。
-  - 解法：持續提供數據以提升準確度，並定期進行數據回顧。
-- **[HIGH]** 對於新用戶來說，安裝和設置過程可能較為複雜。
-  - 解法：參考 README 中的安裝指南，必要時尋求技術支持。
-- [MEDIUM] 需要用戶持續提供歷史數據，對於剛開始的創作者來說可能不太友好。
-  - 解法：考慮在初期使用其他簡單工具進行內容創作，待累積一定數據後再轉用本工具。
+- **[HIGH]** 新帳號預測準確度低，需時間累積數據。
+  - 解法：在初期多進行測試發佈，收集數據。
+- [MEDIUM] 對標帳號的選擇影響預測準確度。
+  - 解法：選擇與自己內容類型相近的對標帳號。
+- [MEDIUM] 需要用戶主動調整評分公式，可能導致使用不便。
+  - 解法：定期檢查和更新評分公式，保持其準確性。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 適合 | 這個工具能夠幫助小型團隊量化內容表現，提升創作效率。 |
-| 大型企業的內容行銷團隊 | 非常適合 | 大型團隊需要精細化的數據分析來制定行銷策略，這個工具能夠提供個性化的建議。 |
-| 剛起步的內容創作者 | 不適合 | 新手可能無法提供足夠的歷史數據，影響工具的預測準確度。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠根據小型團隊的需求快速調整內容策略。 |
+| 大型企業的內容行銷部門 | 適合 | 能夠提供個性化的數據分析，幫助大型團隊優化內容。 |
+| 個人內容創作者 | 非常適合 | 能夠根據個人歷史數據提供精準的內容建議。 |
 
 ## 採用成本分析
 
@@ -246,12 +261,12 @@ git clone https://github.com/XBuilderLAB/cheat-on-content.git && cd cheat-on-con
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、3 小時整合，得到量化內容創作的能力，值得嘗試。
+> 花 5 小時學、3 小時整合，得到個性化的內容分析工具，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具不需要高權限，且不存取敏感資料。使用時需注意依賴的第三方庫的安全性。
+> 低風險：工具本身不需要高權限，僅存取用戶的內容數據，無需存取敏感資料。
 
 ## 健康度儀表板
 
@@ -316,12 +331,12 @@ git clone https://github.com/XBuilderLAB/cheat-on-content.git && cd cheat-on-con
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 162 |
-| Open Issues | 4 |
-| Issue 解決率 | 20% (1 closed) |
-| 最後推送 | 2026-05-05 |
+| Forks | 217 |
+| Open Issues | 6 |
+| Issue 解決率 | 14% (1 closed) |
+| 最後推送 | 2026-05-07 |
 | 建立日期 | 2026-05-05 |
-| Repo 大小 | 223 KB |
+| Repo 大小 | 239 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/XBuilderLAB/cheat-on-content) |
 
 > [!info]- 語言組成
@@ -335,25 +350,27 @@ git clone https://github.com/XBuilderLAB/cheat-on-content.git && cd cheat-on-con
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@woniuxuezhang](https://github.com/woniuxuezhang) | 6 |
-> | [@Jooonnn](https://github.com/Jooonnn) | 1 |
+> | [@Jooonnn](https://github.com/Jooonnn) | 2 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，最近有更新，但仍需觀察未來的發展。
+**社群活躍度**：社群活躍度中等，最近有持續的更新和問題回應。
+**連結**：[文件](https://github.com/XBuilderLAB/cheat-on-content)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-05 ~ 2026-05-05）
-> **活躍天數** 1 天 · **最新 commit** CHANGELOG: backfill Unreleased entries for content_form fix + README rewrite
+> [!abstract] 最近 10 次 commit（2026-05-05 ~ 2026-05-07）
+> **活躍天數** 2 天 · **最新 commit** v2 prediction system: handle post-shoot script changes via append, not overwrite
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#3](https://github.com/XBuilderLAB/cheat-on-content/issues/3) | 这个skill希望也能够支持cursor | 0 | 0 |
+> | [#8](https://github.com/XBuilderLAB/cheat-on-content/issues/8) | 看起来不错 | 0 | 0 |
+> | [#7](https://github.com/XBuilderLAB/cheat-on-content/issues/7) | 如果对标账号是来自不同领域的，比方说现在我导入的几个对标账号是 AI 领域的，那如果我想导入科技数码领域的，会不会影响？ | 0 | 0 |
+> | [#3](https://github.com/XBuilderLAB/cheat-on-content/issues/3) | 这个skill希望也能够支持cursor | 0 | 1 |
 > | [#2](https://github.com/XBuilderLAB/cheat-on-content/issues/2) | 请问能不能添加 tiktok 的支持？ | 0 | 0 |
-> | [#1](https://github.com/XBuilderLAB/cheat-on-content/issues/1) | 我想跟你做一次初次对话 | 0 | 0 |
 
 ## README 摘錄
 
@@ -479,19 +496,19 @@ git clone https://github.com/XBuilderLAB/cheat-on-content.git && cd cheat-on-con
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[內容創作]] · [[數據分析]]
+相關概念：[[自動化測試]] · [[資料視覺化]] · [[機器學習]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]]
 
 [GitHub](https://github.com/XBuilderLAB/cheat-on-content)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：內容創作）
+> [!note]- 直接競品（同子分類：內容優化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "內容創作" AND file.name != "XBuilderLAB--cheat-on-content"
+> WHERE subcategory = "內容優化" AND file.name != "XBuilderLAB--cheat-on-content"
 > SORT stars DESC
 > ```
 
@@ -523,7 +540,7 @@ git clone https://github.com/XBuilderLAB/cheat-on-content.git && cd cheat-on-con
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","內容創作","數據分析"];
+> const concepts = ["自動化測試","資料視覺化","機器學習"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "XBuilderLAB--cheat-on-content" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
