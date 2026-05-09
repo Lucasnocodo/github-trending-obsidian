@@ -457,7 +457,7 @@ TokenSpeed 最常與 TensorRT 和其他 LLM 框架搭配使用，通常在推論
 
 相關概念：[[LLM 推論]] · [[深度學習]] · [[靜態編譯]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[deepseek-ai--TileKernels|deepseek-ai/TileKernels]] · [[kyegomez--OpenMythos|kyegomez/OpenMythos]] · [[tanishqkumar--ssd|tanishqkumar/ssd]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[deepseek-ai--TileKernels|deepseek-ai/TileKernels]] · [[kyegomez--OpenMythos|kyegomez/OpenMythos]] · [[tanishqkumar--ssd|tanishqkumar/ssd]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]]
 
 [GitHub](https://github.com/lightseekorg/tokenspeed) · [官方網站](https://lightseek.org/blog/lightseek-tokenspeed.html)
 
