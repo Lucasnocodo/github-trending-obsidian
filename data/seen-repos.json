@@ -1506,10 +1506,10 @@
   },
   "aattaran/deepclaude": {
     "first_seen": "2026-05-05",
-    "last_seen": "2026-05-08",
-    "times_seen": 4,
+    "last_seen": "2026-05-09",
+    "times_seen": 5,
     "stars_first": 1036,
-    "stars_last": 1595
+    "stars_last": 1642
   },
   "vercel-labs/deepsec": {
     "first_seen": "2026-05-06",
@@ -1520,10 +1520,10 @@
   },
   "vibeforge1111/keep-codex-fast": {
     "first_seen": "2026-05-06",
-    "last_seen": "2026-05-08",
-    "times_seen": 3,
+    "last_seen": "2026-05-09",
+    "times_seen": 4,
     "stars_first": 751,
-    "stars_last": 873
+    "stars_last": 914
   },
   "Fokkyp/SoftwareCopyright-Skill": {
     "first_seen": "2026-05-06",
@@ -1534,10 +1534,10 @@
   },
   "XBuilderLAB/cheat-on-content": {
     "first_seen": "2026-05-07",
-    "last_seen": "2026-05-08",
-    "times_seen": 2,
+    "last_seen": "2026-05-09",
+    "times_seen": 3,
     "stars_first": 778,
-    "stars_last": 1022
+    "stars_last": 1214
   },
   "jherrodthomas/automotive-skills-suite": {
     "first_seen": "2026-05-07",
@@ -1548,10 +1548,10 @@
   },
   "crafter-station/petdex": {
     "first_seen": "2026-05-07",
-    "last_seen": "2026-05-08",
-    "times_seen": 2,
+    "last_seen": "2026-05-09",
+    "times_seen": 3,
     "stars_first": 724,
-    "stars_last": 961
+    "stars_last": 1126
   },
   "tddworks/baguette": {
     "first_seen": "2026-05-07",
@@ -1562,16 +1562,44 @@
   },
   "yaojingang/yao-open-prompts": {
     "first_seen": "2026-05-08",
-    "last_seen": "2026-05-08",
-    "times_seen": 1,
+    "last_seen": "2026-05-09",
+    "times_seen": 2,
     "stars_first": 1131,
-    "stars_last": 1131
+    "stars_last": 1374
   },
   "strukto-ai/mirage": {
     "first_seen": "2026-05-08",
-    "last_seen": "2026-05-08",
-    "times_seen": 1,
+    "last_seen": "2026-05-09",
+    "times_seen": 2,
     "stars_first": 1003,
-    "stars_last": 1003
+    "stars_last": 1447
+  },
+  "V4bel/dirtyfrag": {
+    "first_seen": "2026-05-09",
+    "last_seen": "2026-05-09",
+    "times_seen": 1,
+    "stars_first": 2889,
+    "stars_last": 2889
+  },
+  "antirez/ds4": {
+    "first_seen": "2026-05-09",
+    "last_seen": "2026-05-09",
+    "times_seen": 1,
+    "stars_first": 2460,
+    "stars_last": 2460
+  },
+  "MayersScott/rkn-block-checker": {
+    "first_seen": "2026-05-09",
+    "last_seen": "2026-05-09",
+    "times_seen": 1,
+    "stars_first": 796,
+    "stars_last": 796
+  },
+  "lightseekorg/tokenspeed": {
+    "first_seen": "2026-05-09",
+    "last_seen": "2026-05-09",
+    "times_seen": 1,
+    "stars_first": 785,
+    "stars_last": 785
   }
 }

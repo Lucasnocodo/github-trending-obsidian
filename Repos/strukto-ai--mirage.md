@@ -7,12 +7,12 @@ language: TypeScript
 license: Apache-2.0
 description: "A Unified Virtual Filesystem For AI Agents"
 homepage: "https://www.strukto.ai/mirage"
-stars: 1003
-stars_per_day: 1003
-forks: 58
-open_issues: 6
+stars: 1447
+stars_per_day: 724
+forks: 86
+open_issues: 11
 created: 2026-05-06
-pushed_at: 2026-05-06
+pushed_at: 2026-05-08
 first_seen: 2026-05-08
 week: "2026-W19"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "為 AI 代理提供統一的虛擬檔案系統，讓多種服務如 S
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-11"
+appearances: 2
+next_review: "2026-05-12"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-08"
-star_history: "2026-05-08:1003"
+star_history: "2026-05-08:1003,2026-05-09:1447"
 tags:
   - github
   - "category/開發工具"
@@ -936,4 +936,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-09|2026-05-09]] — 再次上榜，1.4k stars
 - [[2026-05-08|2026-05-08]] — 首次收錄，1.0k stars
