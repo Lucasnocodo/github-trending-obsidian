@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "Claude + Obsidian knowledge companion. Persistent, compounding wiki vault based on Karpathy's LLM Wiki pattern. /wiki /save /autoresearch"
 homepage: "https://agricidaniel.com/blog/claude-obsidian-ai-second-brain"
-stars: 4552
-stars_per_day: 147
-forks: 510
+stars: 4625
+stars_per_day: 145
+forks: 520
 open_issues: 25
 created: 2026-04-07
 pushed_at: 2026-04-24
@@ -19,14 +19,14 @@ month: "2026-04"
 category: "開發工具"
 subcategory: "知識管理"
 release_tag: "v1.6.0"
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-14
-use_case: "建立一個持久的知識庫，讓 Claude 與 Obsidian 結合，實現自動化的知識管理。"
+use_case: "將 Claude 與 Obsidian 結合，建立一個持久的知識庫，讓知識隨著使用而增長。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,16 +38,15 @@ issue_close_rate: 14
 repo_size_kb: 33722
 readme_length: 9950
 bus_factor: 1
-last_release_days: 15
+last_release_days: 16
 release_cadence: "monthly"
 verdict: ""
 ring_history: "assess@2026-04-14"
-star_history: "2026-04-14:988,2026-04-14:989,2026-04-15:1184,2026-04-16:1364,2026-04-17:1488,2026-04-18:1696,2026-04-19:1915,2026-04-20:2134,2026-04-21:2308,2026-04-22:2685,2026-04-23:2902,2026-04-24:3114,2026-04-25:3257,2026-04-26:3330,2026-04-27:3415,2026-04-28:3516,2026-04-29:3616,2026-04-30:3707,2026-05-01:3778,2026-05-02:3905,2026-05-03:3981,2026-05-04:4094,2026-05-05:4179,2026-05-06:4272,2026-05-07:4411,2026-05-08:4491,2026-05-09:4552"
+star_history: "2026-04-14:988,2026-04-14:989,2026-04-15:1184,2026-04-16:1364,2026-04-17:1488,2026-04-18:1696,2026-04-19:1915,2026-04-20:2134,2026-04-21:2308,2026-04-22:2685,2026-04-23:2902,2026-04-24:3114,2026-04-25:3257,2026-04-26:3330,2026-04-27:3415,2026-04-28:3516,2026-04-29:3616,2026-04-30:3707,2026-05-01:3778,2026-05-02:3905,2026-05-03:3981,2026-05-04:4094,2026-05-05:4179,2026-05-06:4272,2026-05-07:4411,2026-05-08:4491,2026-05-09:4552,2026-05-10:4625"
 tags:
   - github
   - "category/開發工具"
   - "lang/python"
-  - easy_install
   - "topic/ai"
   - "topic/claude_code"
   - "topic/claude_code_skill"
@@ -56,12 +55,12 @@ tags:
 aliases:
   - "claude-obsidian"
   - "AgriciDaniel/claude-obsidian"
-  - "建立一個持久的知識庫，讓 Claude 與 Obsidian 結合，實現自動化的知識管理。"
+  - "將 Claude 與 Obsidian 結合，建立一個持久的知識庫，讓知識隨著使用而增長。"
 ---
 
 # claude-obsidian
 
-**4.6k** stars · **147** stars/天 · 建立 31 天前 · Python · MIT
+**4.6k** stars · **145** stars/天 · 建立 32 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/AgriciDaniel--claude-obsidian");
@@ -74,18 +73,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `v1.6.0` `easy-install`
+`個人專案` `v1.6.0`
 
 `ai` `claude-code` `claude-code-skill` `knowledge-management` `obsidian` `open-source` `second-brain`
 
 > [!summary] 一句話摘要
-> 建立一個持久的知識庫，讓 Claude 與 Obsidian 結合，實現自動化的知識管理。
+> 將 Claude 與 Obsidian 結合，建立一個持久的知識庫，讓知識隨著使用而增長。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Growing · **熱度** Hot (147 stars/day)
-> **授權** MIT (商業友好) · **維護** Moderate (最後推送 14 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要自動化知識管理的研究人員和學生。
-> **一句話重點** 這個專案的核心在於自動化知識管理，讓使用者能夠輕鬆地整合和查詢資料。
+> **安裝難度** Medium · **專案狀態** Growing · **熱度** Hot (145 stars/day)
+> **授權** MIT (商業友好) · **維護** Moderate (最後推送 15 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 希望自動化個人知識管理的研究人員和開發者。
+> **一句話重點** 這個專案最厲害的不是功能，而是它證明了 AI 可以自動化知識管理的過程，讓用戶專注於內容而非整理。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,92 +107,94 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習、1 小時整合，得到高效的知識管理工具，值得一試。
+> **成熟度** Stable (可用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，3 小時整合，得到自動化的知識管理效果，值得投入。
 
 > [!abstract] 核心創新
-> DragonScale 提供了多種記憶機制，增強了 LLM 知識庫的功能。
+> DragonScale 記憶層提供了四種機制的選擇，增強了 LLM wiki vault 的功能。
 
 ## 專案簡介
 
-這個專案結合了 Claude 和 Obsidian，提供了一個持久的知識庫，能夠自動整合使用者的資料並進行查詢。使用者可以透過 `/wiki` 指令來查詢已經讀取的內容，並且所有新增的資料都會自動整合進去，讓知識像利息一樣增長。這個工具基於 Andrej Karpathy 的 LLM Wiki 模式，並且提供了 11 種技能，無需手動整理資料。使用者可以選擇啟用 DragonScale 記憶擴展，這個擴展提供了多種功能，如折疊滾動、確定性頁面地址等，進一步增強了知識庫的功能。安裝過程簡單，只需透過 `git clone` 和 `bash bin/setup-vault.sh` 指令即可完成初始設置，並且可以在 Obsidian 中直接使用。這個工具的賣點在於其自動化和持久性，能夠為需要長期管理知識的使用者提供便利。
+claude-obsidian 是一個結合 Claude 和 Obsidian 的知識管理工具，旨在自動化筆記的組織和維護。用戶可以透過 `/wiki` 命令開始，Claude 將讀取並整合用戶輸入的資料，生成結構化的 wiki 頁面，並在每次會話中保持熱快取以便於後續查詢。這個工具的賣點在於它的自動化能力，能夠在用戶不需手動整理的情況下，持續增強知識庫的內容和結構。技術上，claude-obsidian 使用 Python 和 Shell 腳本來實現其功能，並依賴於 Obsidian 的插件架構來提供額外的功能，如 DragonScale 記憶層，這使得知識的增長更為高效。與其他類似工具相比，claude-obsidian 不僅僅是回答問題的聊天介面，而是能夠主動創建和組織筆記，這在 Smart Connections 和 Copilot 等工具中並不具備。
+
+這使得它在需要自動化知識管理的場景中，特別適合用於個人知識管理或研究項目。使用者在使用過程中可能會遇到一些常見的問題，如命令未被發現或插件安裝問題，但這些問題在社群中已有討論和解決方案。這個專案目前處於穩定階段，適合希望將知識管理自動化的開發者或研究人員。未來幾個月，預計會持續更新以增強功能和修復已知問題。
 
 **技術棧**：`Python` · `Shell` · `Makefile`
 
 ## 重點功能
 
-- 自動整合資料 — 每次新增資料都會自動整合進知識庫，無需手動整理。
-- DragonScale 記憶擴展 — 提供折疊滾動、確定性頁面地址等功能以增強知識庫的使用體驗。
-- 多代理支持 — 允許多個代理同時使用，增強協作能力。
-- 即時查詢 — 使用 `/wiki` 指令可快速查詢已讀取的內容。
-- 簡單安裝 — 只需幾個指令即可完成設置，快速上手。
+- 自動化筆記組織 — 透過 `/wiki` 命令自動生成和維護 wiki 頁面。
+- 熱快取功能 — 在每次會話中保持最近的上下文，無需重複回顧。
+- 多來源資料整合 — 支援批量處理多個資料來源，並自動更新索引。
+- DragonScale 記憶層 — 提供可選的記憶功能，增強知識庫的持久性和可擴展性。
+- 健康檢查 — 使用 `lint the wiki` 命令檢查孤立頁面、死鏈接和內容缺口。
 
 ## 快速開始
 
-1. 克隆專案並設置知識庫
+1. 克隆專案作為 vault
 ```bash
-git clone https://github.com/AgriciDaniel/claude-obsidian && cd claude-obsidian && bash bin/setup-vault.sh
+git clone https://github.com/AgriciDaniel/claude-obsidian
 ```
-2. 在 Obsidian 中打開資料夾
+2. 進入專案資料夾
 ```bash
-Manage Vaults → Open folder as vault → select 'claude-obsidian/'
+cd claude-obsidian
 ```
-3. 在 Claude Code 中使用
+3. 執行設置腳本
 ```bash
-claude plugin install claude-obsidian@claude-obsidian-marketplace
+bash bin/setup-vault.sh
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 31 天內累積 4552 stars（147/天），forks 510（11.2%），顯示出強勁的增長潛力。作者 AgriciDaniel 過去在知識管理和 AI 領域有豐富的經驗，這個專案解決了傳統筆記工具無法自動整合資料的痛點。之前的工具多依賴手動整理，效率低下，這個專案的出現讓知識管理變得更為高效。社群的反饋也顯示出使用者對於自動化功能的需求，特別是在知識增長的過程中。這個工具的設計使得使用者能夠輕鬆地管理和查詢資料，符合現代知識工作者的需求。
+> 建立 32 天就累積 4625 stars（145/天），forks 520（11.2%），這顯示出穩定的增長和社群的參與。作者 AgriciDaniel 在知識管理和 AI 領域有豐富的經驗，這個工具解決了傳統筆記管理的痛點，特別是在自動化和知識整合方面。最近的發佈和社群討論也促進了其曝光率，並且在技術生態中，AI 和知識管理的結合越來越受到重視，這使得該工具的需求上升。forks/stars 比率為 11.2%，顯示出有相當比例的用戶在實際修改和使用該工具。
 
 ## 適合誰使用
 
-**目標受眾**：需要自動化知識管理的研究人員和學生。
+**目標受眾**：希望自動化個人知識管理的研究人員和開發者。
 
 > [!example] 使用場景
-> - 研究人員用它來自動整理和查詢文獻資料，因為這樣可以節省大量手動整理的時間。
-> - 學生用它來記錄和管理課堂筆記，因為自動整合功能可以幫助他們快速找到所需資訊。
-> - 寫作者用它來構建故事大綱，因為持久的知識庫能夠隨時查詢靈感和資料。
+> - 研究人員用它來自動整理文獻資料，因為它能夠持續更新和維護知識庫，減少手動整理的時間。
+> - 學生用它來記錄課堂筆記，因為它能夠自動生成和組織筆記，讓學習過程更高效。
+> - 自由工作者用它來管理客戶專案，因為它能夠整合多個資料來源，並提供即時的知識查詢功能。
 
 ## 架構分析
 
-這個專案採用模組化設計，核心功能由 Claude 和 Obsidian 組成，並透過 DragonScale 擴展進一步增強。資料流方面，使用者透過指令與系統互動，系統則將資料整合進知識庫，並在查詢時提供即時回應。選擇這種設計是為了提高使用者的便利性和系統的擴展性，但也可能導致初學者在設置時遇到困難。擴展性方面，DragonScale 的設計使得未來可以輕鬆添加更多功能，但目前仍需解決穩定性問題。
+claude-obsidian 採用插件架構，與 Obsidian 緊密整合，設計目的是為了實現零手動整理的知識管理。資料流從用戶輸入開始，Claude 讀取資料並生成 wiki 頁面，然後將這些頁面整合到熱快取中。這種設計使得用戶能夠隨時查詢最新的知識，而不需要重複回顧先前的內容。選擇使用 Python 和 Shell 使得開發和維護相對簡單，但也可能導致在大型資料集上的性能瓶頸。整體架構的擴展性良好，但在高並發使用時可能會遇到效能問題。
 
 ## 技術深入分析
 
-這個專案的核心技術在於結合了 Claude 的 AI 能力與 Obsidian 的知識管理功能，使用者可以透過簡單的指令來管理和查詢資料。DragonScale 擴展進一步增強了這個功能，提供了多種記憶機制以支持知識的持久性和增長。效能方面，這個系統能夠處理大量資料，並且在查詢時能夠提供即時回應。選擇 Python 作為主要開發語言使得這個專案在資料處理和 AI 整合上具備良好的性能，但也可能導致較高的學習曲線。設計上，這個專案的模組化架構使得未來的擴展變得更加容易，但也需要注意穩定性和兼容性問題。整合到現有的工具鏈中，使用者只需簡單的指令即可完成設置，降低了使用門檻。
+claude-obsidian 的核心技術機制是基於 Claude 的 AI 能力，結合 Obsidian 的筆記管理功能，實現了自動化的知識整合。它使用 Python 來處理資料流和命令執行，並透過 Shell 腳本進行環境設置，這使得整個系統的配置和使用相對簡單。效能方面，對於中小型資料集，系統能夠快速響應用戶查詢，但在處理大型資料集時，可能會出現延遲。選擇 Python 作為主要開發語言使得開發過程更為靈活，但也可能導致在高效能需求下的瓶頸。技術風險方面，隨著資料量的增加，系統可能會面臨性能下降的問題，特別是在高並發的情況下。整合方面，claude-obsidian 能夠與多個 Obsidian 插件無縫協作，並且支持 REST API 的擴展，這使得它在現有的技術生態中具有良好的相容性。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和範例，安裝過程相對順暢。雖然有些功能需要額外配置，但整體上對新手友好。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
+> README 文件清晰且包含詳細的安裝步驟，安裝過程相對順暢。提供了良好的入門指南，讓新手能夠快速上手。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化資料整合，節省時間和精力。
-> - 簡單的安裝過程，快速上手。
-> - 支持多種功能擴展，靈活性高。
+> - 自動化知識管理，減少手動整理的時間。
+> - 持續增強的知識庫，隨著使用而增長。
+> - 強大的社群支持和活躍的開發更新。
 
 > [!danger] 缺點
-> - 目前僅支援特定操作系統，使用範圍有限。
-> - 部分功能仍在開發中，可能不夠穩定。
-> - 初學者可能在設置上遇到困難。
+> - 對於大型資料庫，性能可能會受到影響。
+> - 需要一定的學習曲線來熟悉命令和功能。
+> - 目前不支援 Windows 系統的完整功能。
 
 > [!warning] 注意事項
-> - 目前僅支援 Linux 和 macOS，Windows 用戶需額外配置。
-> - DragonScale 記憶擴展需要額外的設置，初學者可能會感到困難。
-> - 部分功能仍在開發中，可能存在穩定性問題。
+> - 需要安裝 Obsidian 和 Local REST API 插件。
+> - 對於大型資料庫，性能可能會受到影響。
+> - 目前不支援 Windows 系統的完整功能。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的知識管理功能，但不具備自動整合資料的能力，適合需要手動管理的使用者。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | 專注於 AI 生成內容，缺乏持久的知識庫功能，適合需要即時生成的場景。 |
-| [AlpinDale/parsync](https://github.com/AlpinDale/parsync) | 主要用於資料同步，無法提供自動化的知識管理功能，適合需要資料備份的使用者。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 主要專注於靜態筆記管理，而 claude-obsidian 提供自動化的知識整合和維護功能。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | gpt2api 是一個 API 介面，主要用於生成文本，而 claude-obsidian 則是針對知識管理的綜合解決方案。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | codeburn 專注於代碼片段管理，而 claude-obsidian 提供更廣泛的知識管理功能，適合各種資料來源。 |
 
 ## 替代方案決策
 
@@ -201,64 +202,61 @@ claude plugin install claude-obsidian@claude-obsidian-marketplace
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於知識管理，但不具備自動化整合功能，使用者需手動管理資料。 | 如果需要更靈活的手動管理功能，且不介意花時間整理資料。 | medium，因為需要重新設置資料結構。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | 專注於 AI 生成內容，無法提供持久的知識庫功能。 | 如果主要需求是即時生成內容而非長期知識管理。 | low，因為主要使用 API 進行互動。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 專注於靜態筆記管理，而 claude-obsidian 提供自動化的知識整合和維護功能。 | 如果你需要一個簡單的靜態筆記管理工具，而不需要自動化功能，boneyard 會是更好的選擇。 | low，因為 boneyard 的結構和功能相對簡單，容易上手。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | gpt2api 是一個 API 介面，主要用於生成文本，而 claude-obsidian 則是針對知識管理的綜合解決方案。 | 如果你的主要需求是文本生成而非知識管理，gpt2api 會更合適。 | medium，因為需要重新設計資料流和結構。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **claude-obsidian** | **agent-sprite-forge** | **gpt2api** |
+> | 維度 | **claude-obsidian** | **boneyard** | **gpt2api** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於知識管理，但不具備自動化整合功能，使用者需手動管理資料。 | 專注於 AI 生成內容，無法提供持久的知識庫功能。 |
-> | 遷移成本 | - | medium，因為需要重新設置資料結構。 | low，因為主要使用 API 進行互動。 |
-> | 適用場景 | 主要場景 | 如果需要更靈活的手動管理功能，且不介意花時間整理資料。 | 如果主要需求是即時生成內容而非長期知識管理。 |
+> | 技術路線 | 本專案 | boneyard 專注於靜態筆記管理，而 claude-obsidian 提供自動化的知識整合和維護功能。 | gpt2api 是一個 API 介面，主要用於生成文本，而 claude-obsidian 則是針對知識管理的綜合解決方案。 |
+> | 遷移成本 | - | low，因為 boneyard 的結構和功能相對簡單，容易上手。 | medium，因為需要重新設計資料流和結構。 |
+> | 適用場景 | 主要場景 | 如果你需要一個簡單的靜態筆記管理工具，而不需要自動化功能，b | 如果你的主要需求是文本生成而非知識管理，gpt2api 會更 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| 開發階段 | Stable |
+| 生產環境就緒 | Yes |
+| Breaking Change 風險 | low |
 
 > [!tip] 採用建議
-> 適合個人或小型團隊試用，但不建議用於生產環境的核心功能。
+> 適合用於個人或小型團隊的知識管理，特別是在需要自動化的場景中。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 使用 git clone 後，部分指令無法自動發現
-  - 解法：需手動運行設定腳本以解決問題
-- [MEDIUM] 在使用 Obsidian Web Clipper 時可能遇到保存失敗
-  - 解法：檢查 API 設定是否正確
-- [MEDIUM] 某些提示類型的鉤子可能會失敗
-  - 解法：確保正確配置 ToolUseContext
+- **[HIGH]** 使用 git clone 後，命令未被發現
+  - 解法：執行 `bash bin/setup-vault.sh` 以配置環境
+- [MEDIUM] 在使用過程中可能會遇到性能下降
+  - 解法：定期清理熱快取以提升性能
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 自動化資料整合能提高團隊效率。 |
-| 大型研究機構的知識管理系統 | 適合 | 能夠處理大量資料並提供即時查詢。 |
-| 個人使用的筆記工具 | 非常適合 | 簡單的安裝和使用流程，適合個人知識管理。 |
-| 需要高穩定性的生產環境 | 不適合 | 目前仍在 beta 階段，穩定性不足。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 自動化的知識管理能夠提升團隊的工作效率。 |
+| 大型研究團隊 | 普通 | 雖然能夠處理資料，但在高並發下可能會出現性能瓶頸。 |
+| 個人知識管理 | 非常適合 | 能夠自動化整理和維護筆記，提升學習效率。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
-| 綁定風險 | medium |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習、1 小時整合，得到高效的知識管理工具，值得一試。
+> 花 5 小時學習，3 小時整合，得到自動化的知識管理效果，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，並且不存取敏感資料。依賴的庫和插件需定期檢查以確保安全性。
+> 低風險：該工具不需要高權限運行，並且不會存取敏感資料。依賴鏈的信任程度良好，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -323,7 +321,7 @@ claude plugin install claude-obsidian@claude-obsidian-marketplace
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 510 |
+| Forks | 520 |
 | Open Issues | 25 |
 | Issue 解決率 | 14% (4 closed) |
 | 最後推送 | 2026-04-24 |
@@ -396,10 +394,10 @@ claude plugin install claude-obsidian@claude-obsidian-marketplace
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#2](https://github.com/AgriciDaniel/claude-obsidian/issues/2) | Commands (/wiki, /save) not discovered out of box when using | 9 | 2 |
+> | [#29](https://github.com/AgriciDaniel/claude-obsidian/issues/29) | SessionStart prompt-type hook fails with 'ToolUseContext is  | 2 | 5 |
 > | [#36](https://github.com/AgriciDaniel/claude-obsidian/issues/36) | How to using Obsidian Web Clipper save to Obsidian | 1 | 0 |
-> | [#29](https://github.com/AgriciDaniel/claude-obsidian/issues/29) | SessionStart prompt-type hook fails with 'ToolUseContext is  | 1 | 3 |
+> | [#32](https://github.com/AgriciDaniel/claude-obsidian/issues/32) | How to change an existing vault into wiki? | 1 | 0 |
 > | [#7](https://github.com/AgriciDaniel/claude-obsidian/issues/7) | SessionStart:resume and PostCompact prompt-type hooks fail w | 1 | 3 |
-> | [#37](https://github.com/AgriciDaniel/claude-obsidian/issues/37) | Question on real-world ingestion friction | 0 | 0 |
 
 ## README 摘錄
 
@@ -622,9 +620,9 @@ claude plugin install claude-obsidian@claude-obsidian-marketplace
 
 ## 延伸閱讀
 
-相關概念：[[知識管理]] · [[自動化]] · [[第二大腦]]
+相關概念：[[知識管理]] · [[自動化]] · [[AI 助手]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[nashsu--llm_wiki|nashsu/llm_wiki]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[nashsu--llm_wiki|nashsu/llm_wiki]]
 
 [GitHub](https://github.com/AgriciDaniel/claude-obsidian) · [官方網站](https://agricidaniel.com/blog/claude-obsidian-ai-second-brain)
 
@@ -666,7 +664,7 @@ claude plugin install claude-obsidian@claude-obsidian-marketplace
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["知識管理","自動化","第二大腦"];
+> const concepts = ["知識管理","自動化","AI 助手"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "AgriciDaniel--claude-obsidian" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

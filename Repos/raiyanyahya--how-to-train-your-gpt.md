@@ -570,7 +570,7 @@ open chapters/00_overview.md
 
 相關概念：[[Transformer]] · [[深度學習]] · [[自然語言處理]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[mattpocock--dictionary-of-ai-coding|mattpocock/dictionary-of-ai-coding]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[MoonshotAI--Attention-Residuals|MoonshotAI/Attention-Residuals]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[mattpocock--dictionary-of-ai-coding|mattpocock/dictionary-of-ai-coding]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[MoonshotAI--Attention-Residuals|MoonshotAI/Attention-Residuals]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]]
 
 [GitHub](https://github.com/raiyanyahya/how-to-train-your-gpt)
 

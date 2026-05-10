@@ -7,7 +7,7 @@ language: Python
 license: MIT
 description: "Diagnose RKN/TSPU internet blocks layer by layer (DNS, TCP, TLS, HTTP)"
 homepage: ""
-stars: 969
+stars: 971
 stars_per_day: 162
 forks: 45
 open_issues: 2
@@ -18,7 +18,7 @@ week: "2026-W19"
 month: "2026-05"
 category: "CLI 工具"
 subcategory: "網路診斷"
-release_tag: "v0.4.0"
+release_tag: "v0.5.0"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-09
-use_case: "診斷 RKN/TSPU 網路封鎖，逐層分析問題來源。"
+use_case: "診斷 RKN/TSPU 網路封鎖的工具，逐層分析 DNS、TCP、TLS 和 HTTP。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-05-17"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 67
-repo_size_kb: 104
+repo_size_kb: 116
 readme_length: 10000
 bus_factor: 1
-last_release_days: 2
+last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-09"
-star_history: "2026-05-09:796,2026-05-09:800,2026-05-10:969"
+star_history: "2026-05-09:796,2026-05-09:800,2026-05-10:969,2026-05-10:971"
 tags:
   - github
   - "category/cli_工具"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "rkn-block-checker"
   - "MayersScott/rkn-block-checker"
-  - "診斷 RKN/TSPU 網路封鎖，逐層分析問題來源。"
+  - "診斷 RKN/TSPU 網路封鎖的工具，逐層分析 DNS、TCP、TLS 和 HTTP。"
 ---
 
 # rkn-block-checker
 
-**800** stars · **160** stars/天 · 建立 5 天前 · Python · MIT
+**971** stars · **162** stars/天 · 建立 6 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/MayersScott--rkn-block-checker");
@@ -74,18 +74,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v0.4.0` `easy-install`
+`v0.5.0` `easy-install`
 
 `censorship` `cli` `dns` `dpi` `network-diagnostics` `networking` `python` `rkn` `tls` `tspu`
 
 > [!summary] 一句話摘要
-> 診斷 RKN/TSPU 網路封鎖，逐層分析問題來源。
+> 診斷 RKN/TSPU 網路封鎖的工具，逐層分析 DNS、TCP、TLS 和 HTTP。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (160 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 3 人 · **參與度** Low
-> **適合** 需要在 RKN 封鎖環境中進行網路診斷的網路工程師和研究人員。
-> **一句話重點** 這個工具不僅告訴你網站是否可用，還告訴你為什麼不可用，這對於解決網路問題至關重要。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (162 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Low
+> **適合** 需要在高監控環境下進行網路診斷的獨立開發者或網路安全專家。
+> **一句話重點** 這個工具不僅能告訴你網站是否可訪問，更能告訴你封鎖的具體原因，這對於解決網路問題至關重要。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -109,26 +109,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到精確的網路診斷效果，值得採用。
+> **結論** 花 2 小時學習，1 小時整合，得到強大的網路診斷能力，值得投入。
 
 > [!abstract] 核心創新
-> 逐層檢查網路封鎖的診斷工具，提供具體的封鎖類型識別。
+> 這個專案的創新之處在於其逐層分析網路封鎖的能力，能夠提供具體的封鎖類型診斷。
 
 ## 專案簡介
 
-這個工具的核心機制是透過檢查 DNS、TCP、TLS 和 HTTP 層來確定連線是否受到 RKN/TSPU 的封鎖，並且具體指出是哪一層出現問題。使用者只需執行 `rkn-check`，工具會自動探測一組預設網站，並根據每一層的回應來分類失敗的原因，提供清晰的診斷結果。這樣的設計讓使用者能夠更精確地了解網路問題，而不僅僅是看到「無法連接」的錯誤訊息。技術上，該工具使用 Python 實作，依賴 `requests` 庫來進行網路請求，並且支援 Docker 部署，這意味著它可以在任何支持 Docker 的環境中運行，降低了部署的複雜度。與其他類似工具相比，如 `dnsdiag` 和 `mtr`，這個工具專注於層級分析，提供更具體的封鎖類型識別，而不是僅僅提供連線狀態。
+這個 CLI 工具的核心功能是檢測當前網路環境是否受到 RKN/TSPU 的封鎖，並具體指出封鎖的類型。使用者只需執行 `rkn-check`，工具會自動探測一組預設網站，並根據每一層的連接狀態（DNS、TCP、TLS、HTTP）報告失敗的原因。這樣的設計讓使用者能夠更清楚地了解網路問題的根源，而不僅僅是「無法訪問某個網站」。該工具的賣點在於其層級分析能力，能夠提供更具體的封鎖類型，例如 DNS 中毒、TCP 重置或 TLS DPI。技術上，它使用 Python 3.10+，並依賴 `requests` 套件進行網路請求，整體依賴樹相對輕量。
 
-實際使用中，該工具能夠處理多達 21 個控制網站和 15 個 RKN 限制網站，並能夠生成 JSON 格式的輸出，方便進一步分析。使用者可能會遇到的問題包括需要手動更新目標網站列表，或是某些封鎖類型的識別不夠精確。這個專案目前處於穩定階段，適合需要進行網路診斷的開發者或研究人員。未來可能會增加更多的封鎖類型識別功能，或是擴展到其他國家的網路封鎖診斷。建議在需要快速了解網路封鎖情況的情境下使用，但如果只是單純的網站可用性檢查，則可能不需要這麼複雜的工具。
+與其他工具相比，如 `ping` 或 `traceroute`，這個工具提供了更深入的封鎖診斷，而不僅僅是連通性測試。實際使用中，使用者可以透過簡單的命令行選項來自定義檢查的目標，並且支持 JSON 輸出，方便進一步處理數據。這個工具的設計考量了不同的封鎖機制，並能夠針對性地提供解決方案或進一步的調查建議。對於需要在高監控環境下進行網路診斷的用戶，這是一個非常實用的工具。
 
 **技術棧**：`Python 3.10` · `requests>=2.31`
 
 ## 重點功能
 
-- 逐層檢查 — 檢查 DNS、TCP、TLS 和 HTTP 層，並報告具體的封鎖類型。
-- 內建網站列表 — 自動探測 21 個控制網站和 15 個 RKN 限制網站，無需額外配置。
-- JSON 輸出 — 支援以 JSON 格式輸出結果，方便進一步分析和處理。
-- 自定義目標列表 — 允許用戶使用自定義的白名單和黑名單文件進行檢查。
-- 多執行緒檢查 — 支援並行檢查，預設使用 10 個工作線程以提高效率。
+- 逐層檢查 — 根據 DNS、TCP、TLS 和 HTTP 四個層級分析網路連接狀態。
+- 自動探測 — 內建多個網站進行檢查，無需額外配置。
+- 詳細報告 — 提供每個網站的檢查結果，包括延遲和狀態碼。
+- 自定義目標 — 支持使用者自定義檢查的網站列表。
+- JSON 輸出 — 支持將結果以 JSON 格式輸出，便於後續數據處理。
 
 ## 快速開始
 
@@ -140,7 +140,7 @@ pip install rkn-block-checker
 ```bash
 rkn-check
 ```
-3. 檢查單一 URL
+3. 檢查特定網址
 ```bash
 rkn-check --url https://example.com
 ```
@@ -148,65 +148,74 @@ rkn-check --url https://example.com
 ## 程式碼範例
 
 ```python
-{
-  "前置條件": "已安裝 rkn-block-checker",
-  "指令": "rkn-check",
-  "預期輸出": "診斷結果，顯示每個網站的檢查狀態和封鎖類型。"
-}
+# 前置條件（安裝 rkn-block-checker）
+rkn-check
+# 預期輸出（顯示檢查結果）
+======================================================================
+  RKN Block Checker
+======================================================================
+  IP:       95.165.xxx.xxx
+  ISP:      AS12389 Rostelecom
+  Location: Moscow, Moscow, RU
+----------------------------------------------------------------------
+
+Whitelist (should always work)
+  name          verdict                    TCP     TLS     PLT  status
+  --------------------------------------------------------------------
+  gosuslugi     ✓ OK                      18ms    42ms   380ms  200
+  ...
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天內累積 800 stars（160/天），forks 32（4.0%），顯示出穩定的增長。作者 MayersScott 之前在網路診斷工具方面有過經驗，這個工具解決了用戶在面對 RKN/TSPU 封鎖時無法精確診斷問題的痛點。社群對於封鎖類型的需求增加，尤其是在網路自由受到威脅的地區，這使得該工具的實用性大幅提升。最近的推廣活動和討論也促進了其曝光率，讓更多人注意到這個工具的潛力。
+> 建立 6 天內累積 971 stars（162/天），forks 45（4.6%），顯示出穩定的增長趨勢。作者 MayersScott 之前在網路診斷工具領域有過相關經驗，這個專案解決了在高監控環境下，使用者無法清楚了解封鎖原因的痛點。之前的工具多數只能提供連通性測試，而無法深入分析封鎖類型，這使得使用者在面對網路問題時無法做出有效的應對。這個工具的出現正好填補了這一空白，並且在社群中引起了廣泛的討論。最近的推廣活動和社群的反饋也促進了其快速增長。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 RKN 封鎖環境中進行網路診斷的網路工程師和研究人員。
+**目標受眾**：需要在高監控環境下進行網路診斷的獨立開發者或網路安全專家。
 
 > [!example] 使用場景
-> - 網路工程師用它來檢查公司網路是否受到 RKN 封鎖，因為這可以幫助他們快速定位問題並採取相應措施。
-> - 研究人員用它來分析特定網站在不同地區的可訪問性，因為這樣可以提供有關網路封鎖的實證數據。
-> - 開發者用它來測試他們的應用程式在 RKN 封鎖環境下的行為，因為這有助於改進應用的穩定性和用戶體驗。
+> - 網路工程師用它來檢查公司網路是否受到 RKN/TSPU 封鎖，因為這能幫助他們快速定位問題並採取相應措施。
+> - 自由工作者用它來確保自己在外地的網路連接不會受到限制，因為這樣可以避免影響工作效率。
+> - 研究人員用它來分析特定網站在不同地區的可訪問性，因為這能提供有關網路審查的實證數據。
 
 ## 架構分析
 
-該工具採用 Python 實作，設計上以 CLI 形式運行，降低了使用門檻。資料流從 DNS 開始，依序檢查 TCP、TLS 和 HTTP 層，每一層失敗即停止檢查，這樣的設計可以快速定位問題所在。選擇 Python 使得開發和維護相對簡單，但也可能在高併發情況下面臨性能瓶頸。整體架構輕量，依賴 `requests` 庫進行網路請求，這使得工具能夠在多種環境中輕鬆部署。
+這個專案採用簡單的 CLI 架構，使用 Python 作為主要開發語言，並利用 `requests` 套件進行網路請求。資料流從 DNS 開始，依序檢查 TCP、TLS 和 HTTP，每一層的檢查都是獨立的，這樣的設計讓使用者能夠快速定位問題。選擇 Python 的原因是其簡單易用和強大的網路庫，這使得開發和維護變得更加高效。這種架構的代價是可能在處理大量請求時效能下降，但對於一般的使用場景來說，這樣的設計是足夠的。擴展性方面，未來可以考慮增加更多的檢查層或支持更多的協議。
 
 ## 技術深入分析
 
-這個工具的核心技術機制是逐層檢查網路封鎖，使用 DNS、TCP、TLS 和 HTTP 層的獨立檢查來確定問題。每一層的檢查都使用不同的技術手段，例如 DNS 檢查使用系統解析器與 Cloudflare 的 DoH 進行比較，以識別 DNS 中的封鎖。TCP 層則通過簡單的握手來檢查連接是否被重置，而 TLS 層則檢查 SNI 擴展來確定是否受到 DPI 的影響。這樣的設計使得工具能夠快速定位問題，並提供高信心的診斷結果。
-
-該工具的效能在於能夠同時檢查多個網站，並在每一層失敗時立即停止，這樣可以節省時間並提高效率。選擇 Python 作為開發語言使得開發和維護變得簡單，但在高併發情況下可能會面臨性能瓶頸。整體架構輕量，依賴於少量的外部庫，這降低了維護的複雜度。對於未來的發展，可能需要考慮增加更多的封鎖類型識別功能，並改善對於某些封鎖類型的識別精度。
+這個工具的核心技術機制是逐層檢查網路連接，使用 DNS、TCP、TLS 和 HTTP 四個層級進行分析。每一層的檢查都是獨立的，這樣的設計使得使用者能夠快速定位問題來源。效能上，該工具能夠在短時間內完成多個網站的檢查，具體的延遲時間會根據網路狀況而異。選擇 Python 作為開發語言的原因在於其強大的網路庫和易於維護的特性，這使得開發者能夠快速實現功能。技術風險方面，對於某些複雜的封鎖機制，該工具可能無法提供準確的診斷，這需要使用者具備一定的網路知識來判斷。整合方面，該工具可以輕鬆與現有的 CI/CD 流程結合，並且支持 JSON 輸出，方便進行數據分析。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和使用說明，並附有範例輸出。安裝過程順暢，無明顯坑點。雖然沒有專門的入門指南，但基本的使用說明已經足夠讓新手快速上手。
+> README 文件清晰且提供了詳細的使用範例，安裝過程順暢，無明顯坑點。文件中有簡單的使用指南，適合新手快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供逐層的網路診斷，能夠精確識別封鎖類型。
-> - 簡單易用，無需複雜的配置或設定。
-> - 支援自定義目標列表，靈活性高。
+> - 逐層分析封鎖原因，提供更具體的診斷。
+> - 簡單易用，無需複雜配置。
+> - 支持自定義檢查目標，靈活性高。
 
 > [!danger] 缺點
-> - 僅支援 Python 3.10+，對於舊版本的兼容性差。
-> - 對於某些封鎖類型的識別可能不夠精確，需進一步改進。
-> - 需要手動更新目標網站列表，增加了使用成本。
+> - 僅支援 Linux 和 macOS，Windows 用戶無法使用。
+> - 對於某些複雜的封鎖機制，可能無法提供準確的診斷。
+> - 需要 Python 環境，對於不熟悉的用戶有一定學習成本。
 
 > [!warning] 注意事項
 > - 僅支援 Python 3.10+。
-> - 需要手動更新自定義的目標網站列表。
-> - 對於某些封鎖類型的識別可能不夠精確。
+> - 不支持 Windows 環境，需在 Linux 或 macOS 上運行。
+> - 對於某些複雜的封鎖機制，可能無法提供準確的診斷。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [dnsdiag/dnsdiag](https://github.com/dnsdiag/dnsdiag) | 專注於 DNS 診斷，但不提供層級分析，無法識別 TCP 或 TLS 層的問題。 |
-| [mtr/mtr](https://github.com/mtr/mtr) | 結合了 ping 和 traceroute 的功能，但無法提供封鎖類型的詳細診斷。 |
+| [MayersScott/rkn-block-checker](https://github.com/MayersScott/rkn-block-checker) | 這個工具專注於逐層分析網路封鎖，而其他工具如 `ping` 僅提供連通性測試。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具主要用於代理伺服器的管理，而本專案專注於封鎖診斷。 |
 
 ## 替代方案決策
 
@@ -214,16 +223,16 @@ rkn-check --url https://example.com
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [dnsdiag/dnsdiag](https://github.com/dnsdiag/dnsdiag) | 專注於 DNS 診斷，無法提供層級分析。 | 如果你的主要需求是檢查 DNS 解析問題，而不需要進一步的層級分析。 | low，因為兩者的使用方式相似。 |
-| [mtr/mtr](https://github.com/mtr/mtr) | 結合了 ping 和 traceroute 的功能，但不提供封鎖類型的詳細診斷。 | 如果你需要了解網路延遲和路由情況，而不僅僅是封鎖診斷。 | medium，因為需要調整使用習慣和命令參數。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於代理伺服器的管理，而本專案專注於封鎖診斷。 | 如果你的需求是管理和配置代理伺服器，而不僅僅是檢查封鎖，則應選擇它。 | medium，因為需要重新學習不同的工具和流程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具提供了更廣泛的網路監控功能，而本專案專注於特定的封鎖診斷。 | 如果你需要一個全面的網路監控解決方案，而不僅僅是封鎖檢查，則應選擇它。 | high，因為需要重新設置監控環境和學習新工具的使用。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **rkn-block-checker** | **dnsdiag** | **mtr** |
+> | 維度 | **rkn-block-checker** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 DNS 診斷，無法提供層級分析。 | 結合了 ping 和 traceroute 的功能，但不提供封鎖類型的詳細診斷。 |
-> | 遷移成本 | - | low，因為兩者的使用方式相似。 | medium，因為需要調整使用習慣和命令參數。 |
-> | 適用場景 | 主要場景 | 如果你的主要需求是檢查 DNS 解析問題，而不需要進一步的層 | 如果你需要了解網路延遲和路由情況，而不僅僅是封鎖診斷。 |
+> | 技術路線 | 本專案 | 這個工具專注於代理伺服器的管理，而本專案專注於封鎖診斷。 | 這個工具提供了更廣泛的網路監控功能，而本專案專注於特定的封鎖診斷。 |
+> | 遷移成本 | - | medium，因為需要重新學習不同的工具和流程。 | high，因為需要重新設置監控環境和學習新工具的使用。 |
+> | 適用場景 | 主要場景 | 如果你的需求是管理和配置代理伺服器，而不僅僅是檢查封鎖，則應 | 如果你需要一個全面的網路監控解決方案，而不僅僅是封鎖檢查，則 |
 
 ## 成熟度評估
 
@@ -234,27 +243,25 @@ rkn-check --url https://example.com
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合用於個人或小型專案的網路診斷，但不建議用於生產環境的核心路徑上。
+> 適合個人或小型團隊的網路診斷工具，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 某些封鎖類型的識別不夠精確，可能導致誤判。
-  - 解法：結合其他工具進行多重檢查。
-- [low] 自定義目標列表需要手動更新，增加了使用成本。
-  - 解法：定期檢查和更新目標列表。
-- **[HIGH]** 在高併發情況下可能會面臨性能瓶頸。
-  - 解法：考慮使用更高效的語言或框架進行重構。
+- [MEDIUM] 在某些網路環境下，可能會出現假陽性結果，特別是對於大型網站的檢查。
+  - 解法：可以通過多次檢查來確認結果。
+- **[HIGH]** 對於某些特定的封鎖機制，可能無法提供準確的診斷。
+  - 解法：使用者需具備一定的網路知識來判斷。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要檢查 RKN 封鎖的企業網路 | 非常適合 | 能夠精確識別封鎖類型，幫助快速定位問題。 |
-| 個人用戶檢查特定網站的可訪問性 | 適合 | 簡單易用，能快速獲得診斷結果。 |
-| 大型企業需要進行網路監控 | 普通 | 雖然功能強大，但可能需要更多的自動化和擴展性。 |
-| 開發者需要測試應用在封鎖環境下的行為 | 非常適合 | 能夠提供具體的封鎖類型識別，幫助改進應用的穩定性。 |
+| 需要檢查公司網路是否受到封鎖的 IT 團隊 | 非常適合 | 提供逐層分析，能快速定位問題來源。 |
+| 自由工作者在外地使用公共 Wi-Fi | 適合 | 能夠確保連接的安全性和可用性。 |
+| 研究人員進行網路審查研究 | 非常適合 | 提供具體的封鎖類型和數據支持。 |
+| 小型企業的網路管理 | 普通 | 雖然功能強大，但可能需要更多的技術支持。 |
 
 ## 採用成本分析
 
@@ -266,12 +273,12 @@ rkn-check --url https://example.com
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到精確的網路診斷效果，值得採用。
+> 花 2 小時學習，1 小時整合，得到強大的網路診斷能力，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，且不會存取敏感資料。依賴鏈的信任程度良好，沒有已知的供應鏈風險。
+> 低風險：該工具不需要高權限運行，且不存取敏感資料。使用時需注意網路環境的安全性。
 
 ## 健康度儀表板
 
@@ -336,12 +343,12 @@ rkn-check --url https://example.com
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 32 |
+| Forks | 45 |
 | Open Issues | 2 |
 | Issue 解決率 | 67% (4 closed) |
-| 最後推送 | 2026-05-07 |
+| 最後推送 | 2026-05-09 |
 | 建立日期 | 2026-05-03 |
-| Repo 大小 | 104 KB |
+| Repo 大小 | 116 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/MayersScott/rkn-block-checker) |
 | Topics | `censorship` `cli` `dns` `dpi` `network-diagnostics` `networking` `python` `rkn` |
 
@@ -359,38 +366,32 @@ rkn-check --url https://example.com
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@MayersScott](https://github.com/MayersScott) | 48 |
+> | [@MayersScott](https://github.com/MayersScott) | 51 |
 > | [@tagantank](https://github.com/tagantank) | 2 |
 > | [@vladon](https://github.com/vladon) | 1 |
 
-**最新版本**：v0.4.0 (2026-05-07)
+**最新版本**：v0.5.0 (2026-05-09)
 
 > [!info]- Release Notes
-> ## What's Changed
-> * feat: Run in Docker by @tagantank in https://github.com/MayersScott/rkn-block-checker/pull/3
-> 
-> ## New Contributors
-> * @tagantank made their first contribution in https://github.com/MayersScott/rkn-block-checker/pull/3
-> 
-> **Full Changelog**: https://github.com/MayersScott/rkn-block-checker/compare/v0.3.3...v0.4.0
+> **Full Changelog**: https://github.com/MayersScott/rkn-block-checker/compare/v0.4.0...v0.5.0
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者回應速度尚可。
+**社群活躍度**：社群活躍度中等，開發者定期更新並回應問題。
 **連結**：[文件](https://github.com/MayersScott/rkn-block-checker)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-07 ~ 2026-05-07）
-> **活躍天數** 1 天 · **最新 commit** chore: bump version to 0.4.0
+> [!abstract] 最近 10 次 commit（2026-05-07 ~ 2026-05-09）
+> **活躍天數** 2 天 · **最新 commit** chore: bump version to 0.5.0
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#7](https://github.com/MayersScott/rkn-block-checker/issues/7) | [feature] Proxy support (Socks5, http) | 1 | 0 |
-> | [#8](https://github.com/MayersScott/rkn-block-checker/issues/8) | FakeIP support | 0 | 0 |
+> | [#7](https://github.com/MayersScott/rkn-block-checker/issues/7) | [feature] Proxy support (Socks5, http) | 3 | 1 |
+> | [#8](https://github.com/MayersScott/rkn-block-checker/issues/8) | FakeIP support | 0 | 1 |
 
 ## README 摘錄
 
@@ -636,9 +637,9 @@ rkn-check --url https://example.com
 
 ## 延伸閱讀
 
-相關概念：[[網路封鎖]] · [[DNS]] · [[TLS]] · [[HTTP]] · [[網路診斷]]
+相關概念：[[網路診斷]] · [[DPI]] · [[DNS 中毒]]
 
-相關專案：[[Narcooo--inkos|Narcooo/inkos]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[jackwener--opencli|jackwener/opencli]] · [[jackwener--twitter-cli|jackwener/twitter-cli]] · [[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[larksuite--cli|larksuite/cli]]
+相關專案：[[MayersScott--rkn-block-checker|MayersScott/rkn-block-checker]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[Narcooo--inkos|Narcooo/inkos]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[jackwener--opencli|jackwener/opencli]] · [[jackwener--twitter-cli|jackwener/twitter-cli]]
 
 [GitHub](https://github.com/MayersScott/rkn-block-checker)
 
@@ -680,7 +681,7 @@ rkn-check --url https://example.com
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["網路封鎖","DNS","TLS","HTTP","網路診斷"];
+> const concepts = ["網路診斷","DPI","DNS 中毒"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "MayersScott--rkn-block-checker" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

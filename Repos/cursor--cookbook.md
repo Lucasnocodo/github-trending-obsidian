@@ -7,12 +7,12 @@ language: TypeScript
 license: N/A
 description: ""
 homepage: ""
-stars: 3694
-stars_per_day: 336
-forks: 420
-open_issues: 25
+stars: 3710
+stars_per_day: 309
+forks: 421
+open_issues: 26
 created: 2026-04-27
-pushed_at: 2026-05-07
+pushed_at: 2026-05-09
 first_seen: 2026-04-30
 week: "2026-W18"
 month: "2026-04"
@@ -35,14 +35,14 @@ next_review: "2026-05-07"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 4
-repo_size_kb: 2694
+repo_size_kb: 2687
 readme_length: 1636
 bus_factor: 2
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-30"
-star_history: "2026-04-30:1427,2026-04-30:1501,2026-05-01:2631,2026-05-01:2639,2026-05-02:2965,2026-05-02:2966,2026-05-03:3137,2026-05-03:3139,2026-05-04:3279,2026-05-04:3279,2026-05-05:3412,2026-05-06:3532,2026-05-07:3652,2026-05-08:3672,2026-05-09:3694"
+star_history: "2026-04-30:1427,2026-04-30:1501,2026-05-01:2631,2026-05-01:2639,2026-05-02:2965,2026-05-02:2966,2026-05-03:3137,2026-05-03:3139,2026-05-04:3279,2026-05-04:3279,2026-05-05:3412,2026-05-06:3532,2026-05-07:3652,2026-05-08:3672,2026-05-09:3694,2026-05-10:3710"
 tags:
   - github
   - "category/開發工具"
@@ -57,7 +57,7 @@ aliases:
 
 # cookbook
 
-**3.7k** stars · **336** stars/天 · 建立 11 天前 · TypeScript · 未標註授權
+**3.7k** stars · **309** stars/天 · 建立 12 天前 · TypeScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/cursor--cookbook");
@@ -76,10 +76,10 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 提供小範例以便於使用 Cursor SDK 建立應用程式。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (336 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要快速集成 Cursor SDK 以開發應用的全端開發者。
-> **一句話重點** Cursor SDK 的設計讓開發者能夠快速集成編碼代理，並在多種環境中靈活運用。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (309 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 希望在 TypeScript 環境中快速整合 AI 代理的開發者。
+> **一句話重點** Cursor SDK 的即時串流功能讓開發者能夠在開發過程中即時查看代理的狀態和回應，這在快速迭代的開發環境中尤為重要。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -103,30 +103,30 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到快速開發的能力，值得一試。
+> **結論** 花 5 小時學、2 小時整合，得到快速原型開發的能力，值得一試。
 
 > [!abstract] 核心創新
-> Cursor SDK 提供了一個統一的 API 來管理多環境下的編碼代理，並支持即時流式傳輸事件。
+> Cursor SDK 提供了即時串流功能，讓開發者能夠在開發過程中即時查看代理的狀態和回應。
 
 ## 專案簡介
 
-Cursor Cookbook 是一個針對 Cursor SDK 的範例集，主要用於展示如何在應用程式、腳本和工作流程中運行 Cursor 的編碼代理。使用者需要先從 Cursor 的整合儀表板獲取 API 金鑰，並設置為環境變數 `CURSOR_API_KEY`。這個 SDK 支持在本地工作區和雲端運行相同的代理，並能夠流式傳輸代理事件，讓用戶能夠管理提示、模型、取消請求、工件和對話狀態。核心賣點在於其簡化的 API 設計，讓開發者能夠快速集成 Cursor 的功能。技術上，這個專案使用 TypeScript 作為主要語言，並且提供了多個範例，包括最小的 Node.js 範例、網頁應用程式、看板、CLI 和 DAG 任務執行器。
+Cursor Cookbook 提供了一系列小範例，幫助開發者使用 Cursor SDK 來建立應用程式。核心機制是利用 Cursor SDK 的 TypeScript API，讓使用者可以在自己的應用、腳本和工作流中運行 Cursor 的編碼代理。使用者需先從 Cursor 的整合儀表板創建 API 金鑰，並設置為 `CURSOR_API_KEY`。這樣就可以運行 SDK 範例，像是創建本地代理、發送提示並串流回應。這個工具的賣點在於其簡易性和靈活性，特別適合快速原型開發和迭代。技術上，Cursor SDK 支持在本地和雲端運行相同的代理，並能夠管理提示、模型、取消請求、工件和對話狀態。
 
-這些範例展示了如何利用 JSON DAG 將任務分解並在本地子代理中並行處理，並將狀態實時流式傳輸到 Cursor Canvas。與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，Cursor SDK 提供了一個更為統一的開發體驗，特別是在多種環境下的兼容性和即時反饋方面。實際使用中，開發者可能會遇到環境設定的問題，特別是在 Windows 上的兼容性。這個專案目前仍在活躍開發中，適合需要快速原型開發的團隊，未來可能會增加更多功能和範例以擴展其應用範圍。
+與其他工具相比，Cursor SDK 的優勢在於其即時串流功能，這使得開發者能夠在開發過程中即時查看代理的狀態和回應。這在需要快速反饋的開發環境中尤為重要。實際使用中，開發者可以利用 CLI 來快速生成代理，或使用網頁應用來在沙盒環境中快速迭代想法。這些功能使得 Cursor SDK 成為一個強大的開發工具，尤其適合需要快速原型開發的團隊。隨著社群的活躍度提升，未來可能會有更多範例和功能加入。對於小型團隊或個人開發者來說，這是一個值得考慮的選擇，但對於大型專案可能需要更深入的整合和測試。
 
-**技術棧**：`TypeScript` · `Node.js` · `CSS` · `JavaScript` · `Shell`
+**技術棧**：`TypeScript` · `Node.js` · `CSS` · `JavaScript`
 
 ## 重點功能
 
-- Cursor SDK — 提供 TypeScript API 以運行 Cursor 編碼代理，支持本地和雲端環境。
-- 最小 Node.js 範例 — 使用簡單的指令創建本地代理並發送提示，快速上手。
-- DAG 任務執行器 — 將任務分解為 JSON DAG，並在本地子代理中並行處理，實時流式傳輸狀態。
-- 看板 — 用於查看 Cursor Cloud Agents，按狀態或存儲庫分組，並預覽工件。
-- CLI 工具 — 提供命令行界面以從終端啟動 Cursor 代理，方便開發者使用。
+- Cursor SDK — 提供 TypeScript API 來運行 Cursor 的編碼代理，支持本地和雲端環境。
+- 即時串流 — 能夠在運行過程中串流代理事件，讓開發者即時查看狀態。
+- CLI 工具 — 提供命令行介面來快速生成和管理 Cursor 代理。
+- 原型工具 — 網頁應用可用於快速建立和測試新項目。
+- DAG 任務運行器 — 支持將任務分解為 JSON DAG，並串流狀態更新。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 安裝依賴包
 ```bash
 npm install
 ```
@@ -134,7 +134,7 @@ npm install
 ```bash
 export CURSOR_API_KEY=你的金鑰
 ```
-3. 運行最小範例
+3. 運行範例
 ```bash
 node sdk/quickstart.js
 ```
@@ -143,64 +143,63 @@ node sdk/quickstart.js
 
 ```ts
 {
-  "前置條件": "需要安裝 Node.js 和設置 CURSOR_API_KEY。",
+  "前置條件": "需要安裝 Node.js 和 Cursor SDK。",
   "指令": "node sdk/quickstart.js",
-  "預期輸出": "應該能看到代理的回應結果。"
+  "預期輸出": "代理的回應將被串流到控制台。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 11 天內累積 3694 stars（336/天），forks 420（11.4%），這顯示出相對高的參與度。主要貢獻者包括 cursoragent 和 leerob，他們在開源社區有一定的影響力。這個專案解決了開發者在整合 Cursor 編碼代理時的需求，特別是提供了多種範例以便於快速上手。近期的推廣活動和社群討論也可能促進了其快速增長。高達 11.4% 的 forks/stars 比率顯示出不少開發者對這個專案進行了實際修改和使用，這通常代表著活躍的社群參與。
+> 建立 12 天就累積 3710 stars（309/天），forks 421（11.3%），這顯示出相對高的社群參與度。作者 Cursor 是一個專注於開發 AI 代理的團隊，過去的專案中有類似的 SDK 和工具，這使得他們在這個領域有一定的經驗。Cursor SDK 解決了開發者在整合 AI 代理時的複雜性，之前的方案往往需要繁瑣的設置和配置，這使得開發者在使用時感到困難。近期的推廣活動和社群討論也可能促進了這個專案的曝光率。這個工具的高 forks/stars 比率（11.3%）顯示出許多人正在實際修改和使用它，這是對其實用性的一個強烈信號。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速集成 Cursor SDK 以開發應用的全端開發者。
+**目標受眾**：希望在 TypeScript 環境中快速整合 AI 代理的開發者。
 
 > [!example] 使用場景
-> - 前端工程師用它來快速建立與 Cursor SDK 的整合，因為可以利用範例快速上手，節省了大量的開發時間。
-> - 後端開發者用它來在 Node.js 環境中運行 Cursor 代理，因為提供了簡單的 API 來管理代理的狀態和事件。
-> - 產品經理用它來原型設計新功能，因為可以在雲端環境中快速迭代和測試想法。
+> - 前端工程師用它來快速建立一個與 Cursor 代理互動的網頁應用，因為它的快速原型開發能力能讓他們在幾分鐘內看到結果。
+> - 後端開發者用它來整合 Cursor SDK 進入現有的 Node.js 應用，因為這樣可以簡化與 AI 代理的互動流程，節省開發時間。
+> - 數據科學家用它來在雲端環境中測試不同的模型和提示，因為它提供了即時的狀態更新，讓他們能夠快速迭代和調整。
 
 ## 架構分析
 
-Cursor Cookbook 的架構基於 TypeScript SDK，設計上強調簡單易用和高效能。它的資料流從用戶輸入的提示開始，通過 SDK 進行處理，並將結果以流式方式返回。這種設計使得開發者能夠輕鬆集成和擴展功能。
-
-選擇 TypeScript 使得開發過程中能夠享受靜態類型檢查的好處，降低了錯誤率。儘管這樣的選擇增加了初期的學習成本，但長期來看能夠提高維護性。擴展性方面，由於依賴於 Node.js 的生態系統，未來可以輕鬆整合更多的庫和工具，但也可能面臨 Node.js 更新帶來的兼容性問題。
+Cursor Cookbook 的架構設計以簡化開發者的使用流程為核心，選擇了 TypeScript 作為主要語言，因為它提供了靜態類型檢查，能夠減少錯誤。資料流方面，開發者可以通過 API 金鑰來認證，然後使用 SDK 提供的各種功能來創建和管理代理。這種設計使得開發者能夠快速上手，並且能夠在本地和雲端環境中無縫運行。選擇使用 Node.js 使得整個流程能夠在 JavaScript 生態系中輕鬆整合，但可能會限制對其他語言的支持。未來擴展性方面，若要支持更多語言或平台，可能需要重構部分架構以適應不同的環境。
 
 ## 技術深入分析
 
-Cursor Cookbook 的核心技術機制是基於 TypeScript 的 SDK，這使得開發者能夠在靜態類型的環境中進行開發，減少了錯誤和維護成本。它的資料流設計允許用戶從提示開始，通過 SDK 進行處理，並實時返回結果，這在開發過程中提供了即時反饋。效能方面，這個 SDK 能夠處理多個並行請求，並且由於使用 Node.js，能夠在高併發的情況下保持穩定。選擇 TypeScript 而非 JavaScript 的主要原因在於其靜態類型的優勢，這能夠提高代碼的可維護性和可讀性。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在高併發請求的情況下。此外，對於外部 API 的依賴程度較高，未來可能需要考慮如何減少這方面的風險。整合方面，Cursor SDK 能夠輕鬆與主流的 CI/CD 工具鏈整合，並且可以在現有的開發環境中無縫使用，這降低了導入的摩擦點。
+Cursor Cookbook 的核心技術機制基於 TypeScript SDK，這使得開發者能夠在 JavaScript 生態系中輕鬆使用。SDK 透過 API 金鑰進行身份驗證，並提供多種功能來管理代理的生命週期。效能方面，因為 SDK 是基於 Node.js，能夠處理大量的請求，但在高並發情況下可能會遇到瓶頸。設計上選擇 TypeScript 主要是為了提高開發效率和代碼的可維護性，但這也意味著對於不熟悉 TypeScript 的開發者來說，學習曲線會稍微陡峭。技術風險方面，若未來需要支持更多語言或平台，可能需要重構部分架構，這可能會帶來額外的技術債。整合方面，Cursor SDK 與現有的 Node.js 工具鏈相容性良好，但對於其他語言的整合可能需要額外的適配層。整體來看，Cursor SDK 提供了一個強大的開發工具，特別適合需要快速原型開發的團隊。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的指導和範例，讓新手能夠快速上手。安裝過程相對簡單，主要是設置環境變數和安裝依賴。整體來說，文檔質量良好，對於新手來說，花 30 分鐘應該能夠成功運行起來。
+> README 文件提供了清晰的指導和範例，安裝過程相對順暢，但需要注意 API 金鑰的設置。整體上，對於新手來說，能在 30 分鐘內跑起來是可行的。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速上手 — 提供多個範例，降低了學習曲線。
-> - 即時反饋 — 支持流式傳輸代理事件，方便開發者即時查看結果。
-> - 多環境支持 — 能夠在本地和雲端環境中運行，增加了靈活性。
+> - 快速原型開發 — 提供即時回饋，適合快速迭代。
+> - 簡單易用 — 低學習曲線，適合新手開發者。
+> - 靈活性高 — 支持多種應用場景，從 CLI 到網頁應用。
 
 > [!danger] 缺點
-> - Windows 兼容性問題 — 在某些環境下可能會遇到錯誤。
-> - API 穩定性 — 由於仍在開發中，可能會有不穩定的變更。
-> - 依賴於 Node.js 生態系統，未來可能面臨版本更新的兼容性挑戰。
+> - 目前僅支援 Node.js，對其他語言的支持有限。
+> - 在 Windows 環境中可能會遇到特定的錯誤，需注意相關 Issues。
+> - API 金鑰的需求可能對新手造成障礙。
 
 > [!warning] 注意事項
-> - 目前僅支持 Node.js 環境，對於其他環境的支持尚未明確。
-> - 在 Windows 環境下可能會遇到兼容性問題，特別是與某些依賴的整合。
-> - API 目前處於活躍開發中，可能會有不穩定的變更。
+> - 目前僅支援 Node.js 環境，對於其他語言的支持尚未開發。
+> - 需要有效的 API 金鑰才能運行範例，這可能對新手造成障礙。
+> - 在 Windows 環境中可能會遇到一些特定的錯誤，需注意相關 Issues。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建和管理代理，而 Cursor 更加強調在多環境下的即時反饋和整合。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了一個更為基礎的 API，而 Cursor SDK 則提供了更高級的功能和範例，適合快速原型開發。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的代理生成工具，但專注於遊戲開發，適合需要遊戲 AI 的開發者。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 專注於語音合成和自然語言處理的代理，適合需要高性能 AI 的應用。 |
+| [OpenCoworkAI/open-codesign](https://github.com/OpenCoworkAI/open-codesign) | 提供設計協作的 AI 代理，適合需要團隊合作的設計項目。 |
 
 ## 替代方案決策
 
@@ -208,16 +207,16 @@ Cursor Cookbook 的核心技術機制是基於 TypeScript 的 SDK，這使得開
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建和管理代理，提供的 API 相對基礎。 | 如果需要一個簡單的代理管理工具而不需要 Cursor 的即時反饋功能。 | medium，因為需要重新學習 API 的使用方式。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供了更為基礎的 API，適合對 API 有更高自定義需求的開發者。 | 當需要更高的自定義能力，且不介意較低的開發效率時。 | high，因為需要重新設計整個應用的架構。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發的代理生成工具，提供的功能更針對遊戲場景。 | 如果你的專案是遊戲開發，並且需要專門的 AI 代理，這個工具會更合適。 | medium — 需要重新學習其 API 和設計模式。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 專注於語音合成和自然語言處理的代理，提供高性能的 AI 解決方案。 | 如果你的應用需要高效的語音處理或自然語言理解，這個工具會更適合。 | high — 需要重構整個應用以適應不同的架構。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **cookbook** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **cookbook** | **agent-sprite-forge** | **NemoClaw** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於創建和管理代理，提供的 API 相對基礎。 | 提供了更為基礎的 API，適合對 API 有更高自定義需求的開發者。 |
-> | 遷移成本 | - | medium，因為需要重新學習 API 的使用方式。 | high，因為需要重新設計整個應用的架構。 |
-> | 適用場景 | 主要場景 | 如果需要一個簡單的代理管理工具而不需要 Cursor 的即時 | 當需要更高的自定義能力，且不介意較低的開發效率時。 |
+> | 技術路線 | 本專案 | 專注於遊戲開發的代理生成工具，提供的功能更針對遊戲場景。 | 專注於語音合成和自然語言處理的代理，提供高性能的 AI 解決方案。 |
+> | 遷移成本 | - | medium — 需要重新學習其 API 和設計模式。 | high — 需要重構整個應用以適應不同的架構。 |
+> | 適用場景 | 主要場景 | 如果你的專案是遊戲開發，並且需要專門的 AI 代理，這個工具 | 如果你的應用需要高效的語音處理或自然語言理解，這個工具會更適 |
 
 ## 成熟度評估
 
@@ -228,44 +227,49 @@ Cursor Cookbook 的核心技術機制是基於 TypeScript 的 SDK，這使得開
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和探索，但不建議在生產環境中使用。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Windows 環境下可能會遇到與 Ripgrep 相關的錯誤
-  - 解法：檢查依賴版本，或在其他環境中運行
-- [MEDIUM] API 金鑰設置不當可能導致無法運行範例
-  - 解法：確保環境變數設置正確
-- [MEDIUM] 某些範例在特定 Node.js 版本下無法正常運行
-  - 解法：使用建議的 Node.js 版本
+- **[HIGH]** 在 Windows 環境中可能會遇到特定的錯誤，需注意相關 Issues。
+  - 解法：檢查 Issues 並尋找解決方案。
+- [MEDIUM] API 金鑰設置不當會導致無法運行範例。
+  - 解法：確保正確設置環境變數。
+- [MEDIUM] 在高並發情況下可能會遇到性能瓶頸。
+  - 解法：考慮使用負載均衡或分散式架構。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊開發新產品原型 | 非常適合 | 提供快速迭代和即時反饋的能力。 |
-| 大型企業的核心系統開發 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
-| 開發者學習如何使用 Cursor SDK | 非常適合 | 提供了豐富的範例和文檔。 |
-| 需要高效能的生產環境 | 不適合 | 尚未達到穩定的生產準備階段。 |
+| 小型團隊的原型開發 | 非常適合 | 快速原型開發和即時反饋非常符合小型團隊的需求。 |
+| 大型企業的核心應用 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
+| 教育用途的 AI 實驗 | 適合 | 簡單易用，適合學生和新手開發者。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
 | 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到快速開發的能力，值得一試。
+> 花 5 小時學、2 小時整合，得到快速原型開發的能力，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，主要依賴於 API 金鑰，需妥善管理。對於 CI/CD 使用安全性良好，但需注意 API 金鑰的保護。
+> 低風險：不需要高權限，且不存取敏感資料，但需注意 API 金鑰的安全性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Cursor SDK 最常與 Node.js 和其他 JavaScript 生態系工具搭配使用，通常在開發和測試階段使用。在一個用 Node.js 開發的應用中，可以使用 Cursor SDK 來快速生成和管理代理，具體做法是通過 CLI 命令 `node sdk/coding-agent-cli.js` 來啟動代理。與主流 CI 工具（如 GitHub Actions）相容性良好，但對於其他語言的整合可能需要額外的適配層。整合時，最常見的問題是 API 金鑰的設置不當，這可能會導致無法運行範例。
 
 ## 健康度儀表板
 
@@ -330,10 +334,10 @@ Cursor Cookbook 的核心技術機制是基於 TypeScript 的 SDK，這使得開
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 420 |
-| Open Issues | 25 |
+| Forks | 421 |
+| Open Issues | 26 |
 | Issue 解決率 | 4% (1 closed) |
-| 最後推送 | 2026-05-07 |
+| 最後推送 | 2026-05-09 |
 | 建立日期 | 2026-04-27 |
 | Repo 大小 | 2.6 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cursor/cookbook) |
@@ -357,7 +361,7 @@ Cursor Cookbook 的核心技術機制是基於 TypeScript 的 SDK，這使得開
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者對於問題的回應速度尚可。
+**社群活躍度**：社群活躍度中等，有定期的更新和回應。
 **連結**：[文件](https://cursor.com/docs/api/sdk/typescript)
 
 ## 開發動態
@@ -411,9 +415,9 @@ Cursor Cookbook 的核心技術機制是基於 TypeScript 的 SDK，這使得開
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化]] · [[API 設計]]
+相關概念：[[Agent 框架]] · [[CLI/TUI]] · [[自動化測試]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[TianyiDataScience--openclaw-control-center|TianyiDataScience/openclaw-control-center]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[OpenCoworkAI--open-codesign|OpenCoworkAI/open-codesign]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[AgentSeal--codeburn|AgentSeal/codeburn]]
 
 [GitHub](https://github.com/cursor/cookbook)
 
@@ -455,7 +459,7 @@ Cursor Cookbook 的核心技術機制是基於 TypeScript 的 SDK，這使得開
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化","API 設計"];
+> const concepts = ["Agent 框架","CLI/TUI","自動化測試"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "cursor--cookbook" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
