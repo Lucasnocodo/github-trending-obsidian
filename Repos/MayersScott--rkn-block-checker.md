@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Diagnose RKN/TSPU internet blocks layer by layer (DNS, TCP, TLS, HTTP)"
 homepage: ""
-stars: 800
-stars_per_day: 160
-forks: 32
+stars: 969
+stars_per_day: 162
+forks: 45
 open_issues: 2
 created: 2026-05-03
-pushed_at: 2026-05-07
+pushed_at: 2026-05-09
 first_seen: 2026-05-09
 week: "2026-W19"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "診斷 RKN/TSPU 網路封鎖，逐層分析問題來源。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-16"
+appearances: 2
+next_review: "2026-05-17"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 67
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-09"
-star_history: "2026-05-09:796,2026-05-09:800"
+star_history: "2026-05-09:796,2026-05-09:800,2026-05-10:969"
 tags:
   - github
   - "category/cli_工具"
@@ -638,7 +638,7 @@ rkn-check --url https://example.com
 
 相關概念：[[網路封鎖]] · [[DNS]] · [[TLS]] · [[HTTP]] · [[網路診斷]]
 
-相關專案：[[Narcooo--inkos|Narcooo/inkos]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[jackwener--opencli|jackwener/opencli]] · [[jackwener--twitter-cli|jackwener/twitter-cli]]
+相關專案：[[Narcooo--inkos|Narcooo/inkos]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]] · [[jackwener--opencli|jackwener/opencli]] · [[jackwener--twitter-cli|jackwener/twitter-cli]] · [[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[larksuite--cli|larksuite/cli]]
 
 [GitHub](https://github.com/MayersScott/rkn-block-checker)
 
@@ -934,4 +934,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-10|2026-05-10]] — 再次上榜，969 stars
 - [[2026-05-09|2026-05-09]] — 首次收錄，796 stars

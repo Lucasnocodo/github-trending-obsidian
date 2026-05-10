@@ -7,12 +7,12 @@ language: C
 license: MIT
 description: "DeepSeek 4 Flash local inference engine for Metal"
 homepage: ""
-stars: 2460
-stars_per_day: 1230
-forks: 146
-open_issues: 6
+stars: 4506
+stars_per_day: 1502
+forks: 314
+open_issues: 19
 created: 2026-05-06
-pushed_at: 2026-05-08
+pushed_at: 2026-05-09
 first_seen: 2026-05-09
 week: "2026-W19"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "提供針對 DeepSeek V4 Flash 模型的本地推理引擎，專為 M
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-12"
+appearances: 2
+next_review: "2026-05-13"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 54
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-09"
-star_history: "2026-05-09:2460"
+star_history: "2026-05-09:2460,2026-05-10:4506"
 tags:
   - github
   - "category/ai_ml"
@@ -870,4 +870,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-10|2026-05-10]] — 再次上榜，4.5k stars
 - [[2026-05-09|2026-05-09]] — 首次收錄，2.5k stars

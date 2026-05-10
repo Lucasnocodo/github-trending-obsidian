@@ -7,12 +7,12 @@ language: C
 license: N/A
 description: ""
 homepage: ""
-stars: 2898
-stars_per_day: 2898
-forks: 448
-open_issues: 42
+stars: 3645
+stars_per_day: 1823
+forks: 554
+open_issues: 50
 created: 2026-05-07
-pushed_at: 2026-05-08
+pushed_at: 2026-05-09
 first_seen: 2026-05-09
 week: "2026-W19"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "利用 Dirty Frag 漏洞在主要 Linux 發行版上獲得 root 權�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-12"
+appearances: 2
+next_review: "2026-05-13"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 13
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-09"
-star_history: "2026-05-09:2889,2026-05-09:2898"
+star_history: "2026-05-09:2889,2026-05-09:2898,2026-05-10:3645"
 tags:
   - github
   - "category/安全"
@@ -420,7 +420,7 @@ Dirty Frag 通常與 Linux 系統安全測試工具搭配使用，處於安全�
 
 相關概念：[[安全漏洞]] · [[本地特權提升]] · [[漏洞利用]]
 
-相關專案：[[Nightmare-Eclipse--RedSun|Nightmare-Eclipse/RedSun]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[opa334--darksword-kexploit|opa334/darksword-kexploit]] · [[DanOps-1--Gpt-Agreement-Payment|DanOps-1/Gpt-Agreement-Payment]] · [[dazzyddos--PrivHound|dazzyddos/PrivHound]] · [[denuitt1--mhr-cfw|denuitt1/mhr-cfw]]
+相關專案：[[Nightmare-Eclipse--RedSun|Nightmare-Eclipse/RedSun]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[opa334--darksword-kexploit|opa334/darksword-kexploit]] · [[DanOps-1--Gpt-Agreement-Payment|DanOps-1/Gpt-Agreement-Payment]] · [[dazzyddos--PrivHound|dazzyddos/PrivHound]] · [[denuitt1--mhr-cfw|denuitt1/mhr-cfw]] · [[imbue-bit--OpenClaw-PwnKit|imbue-bit/OpenClaw-PwnKit]] · [[masterking32--MasterHttpRelayVPN|masterking32/MasterHttpRelayVPN]]
 
 [GitHub](https://github.com/V4bel/dirtyfrag)
 
@@ -716,4 +716,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-10|2026-05-10]] — 再次上榜，3.6k stars
 - [[2026-05-09|2026-05-09]] — 首次收錄，2.9k stars

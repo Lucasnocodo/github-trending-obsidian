@@ -1506,10 +1506,10 @@
   },
   "aattaran/deepclaude": {
     "first_seen": "2026-05-05",
-    "last_seen": "2026-05-09",
-    "times_seen": 5,
+    "last_seen": "2026-05-10",
+    "times_seen": 6,
     "stars_first": 1036,
-    "stars_last": 1642
+    "stars_last": 1676
   },
   "vercel-labs/deepsec": {
     "first_seen": "2026-05-06",
@@ -1534,10 +1534,10 @@
   },
   "XBuilderLAB/cheat-on-content": {
     "first_seen": "2026-05-07",
-    "last_seen": "2026-05-09",
-    "times_seen": 3,
+    "last_seen": "2026-05-10",
+    "times_seen": 4,
     "stars_first": 778,
-    "stars_last": 1214
+    "stars_last": 1426
   },
   "jherrodthomas/automotive-skills-suite": {
     "first_seen": "2026-05-07",
@@ -1562,44 +1562,58 @@
   },
   "yaojingang/yao-open-prompts": {
     "first_seen": "2026-05-08",
-    "last_seen": "2026-05-09",
-    "times_seen": 2,
+    "last_seen": "2026-05-10",
+    "times_seen": 3,
     "stars_first": 1131,
-    "stars_last": 1374
+    "stars_last": 1490
   },
   "strukto-ai/mirage": {
     "first_seen": "2026-05-08",
-    "last_seen": "2026-05-09",
-    "times_seen": 2,
+    "last_seen": "2026-05-10",
+    "times_seen": 3,
     "stars_first": 1003,
-    "stars_last": 1447
+    "stars_last": 1632
   },
   "V4bel/dirtyfrag": {
     "first_seen": "2026-05-09",
-    "last_seen": "2026-05-09",
-    "times_seen": 1,
+    "last_seen": "2026-05-10",
+    "times_seen": 2,
     "stars_first": 2889,
-    "stars_last": 2889
+    "stars_last": 3645
   },
   "antirez/ds4": {
     "first_seen": "2026-05-09",
-    "last_seen": "2026-05-09",
-    "times_seen": 1,
+    "last_seen": "2026-05-10",
+    "times_seen": 2,
     "stars_first": 2460,
-    "stars_last": 2460
+    "stars_last": 4506
   },
   "MayersScott/rkn-block-checker": {
     "first_seen": "2026-05-09",
-    "last_seen": "2026-05-09",
-    "times_seen": 1,
+    "last_seen": "2026-05-10",
+    "times_seen": 2,
     "stars_first": 796,
-    "stars_last": 796
+    "stars_last": 969
   },
   "lightseekorg/tokenspeed": {
     "first_seen": "2026-05-09",
-    "last_seen": "2026-05-09",
-    "times_seen": 1,
+    "last_seen": "2026-05-10",
+    "times_seen": 2,
     "stars_first": 785,
-    "stars_last": 785
+    "stars_last": 858
+  },
+  "vercel-labs/zero-native": {
+    "first_seen": "2026-05-10",
+    "last_seen": "2026-05-10",
+    "times_seen": 1,
+    "stars_first": 1650,
+    "stars_last": 1650
+  },
+  "raiyanyahya/how-to-train-your-gpt": {
+    "first_seen": "2026-05-10",
+    "last_seen": "2026-05-10",
+    "times_seen": 1,
+    "stars_first": 790,
+    "stars_last": 790
   }
 }

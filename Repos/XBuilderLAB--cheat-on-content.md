@@ -7,10 +7,10 @@ language: Shell
 license: MIT
 description: "You're reading this. The skill predicted it. A workflow that turns every post into a calibrated experiment—score, blind-predict, retro, evolve. The future doesn't reward effort, it rewards those who see the pattern first. 1M followers in a month — not luck, system."
 homepage: ""
-stars: 1219
-stars_per_day: 406
-forks: 254
-open_issues: 6
+stars: 1426
+stars_per_day: 357
+forks: 296
+open_issues: 3
 created: 2026-05-05
 pushed_at: 2026-05-08
 first_seen: 2026-05-07
@@ -30,8 +30,8 @@ use_case: "將每個內容創作轉化為可校準的實驗，幫助創作者透
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-05-12"
+appearances: 4
+next_review: "2026-05-13"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 14
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-07"
-star_history: "2026-05-07:778,2026-05-07:780,2026-05-08:1022,2026-05-08:1031,2026-05-09:1214,2026-05-09:1219"
+star_history: "2026-05-07:778,2026-05-07:780,2026-05-08:1022,2026-05-08:1031,2026-05-09:1214,2026-05-09:1219,2026-05-10:1426"
 tags:
   - github
   - "category/開發工具"
@@ -832,6 +832,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-10|2026-05-10]] — 再次上榜，1.4k stars
 - [[2026-05-09|2026-05-09]] — 再次上榜，1.2k stars
 - [[2026-05-08|2026-05-08]] — 再次上榜，1.0k stars
 - [[2026-05-07|2026-05-07]] — 首次收錄，778 stars

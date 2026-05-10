@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "TokenSpeed is a speed-of-light LLM inference engine."
 homepage: "https://lightseek.org/blog/lightseek-tokenspeed.html"
-stars: 785
-stars_per_day: 393
-forks: 48
-open_issues: 14
+stars: 858
+stars_per_day: 286
+forks: 60
+open_issues: 9
 created: 2026-05-06
-pushed_at: 2026-05-09
+pushed_at: 2026-05-10
 first_seen: 2026-05-09
 week: "2026-W19"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "提供高效能的 LLM 推論引擎，專為代理工作負載設計�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-12"
+appearances: 2
+next_review: "2026-05-13"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 13
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-09"
-star_history: "2026-05-09:785"
+star_history: "2026-05-09:785,2026-05-10:858"
 tags:
   - github
   - "category/ai_ml"
@@ -753,4 +753,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-10|2026-05-10]] — 再次上榜，858 stars
 - [[2026-05-09|2026-05-09]] — 首次收錄，785 stars
