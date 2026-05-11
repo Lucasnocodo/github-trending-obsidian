@@ -7,12 +7,12 @@ language: C
 license: N/A
 description: ""
 homepage: ""
-stars: 3648
-stars_per_day: 1824
-forks: 554
-open_issues: 50
+stars: 4025
+stars_per_day: 1342
+forks: 601
+open_issues: 52
 created: 2026-05-07
-pushed_at: 2026-05-09
+pushed_at: 2026-05-10
 first_seen: 2026-05-09
 week: "2026-W19"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "透過 Dirty Frag 漏洞在主要 Linux 發行版上獲取 root 權�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-05-13"
+appearances: 3
+next_review: "2026-05-14"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 11
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-09"
-star_history: "2026-05-09:2889,2026-05-09:2898,2026-05-10:3645,2026-05-10:3648"
+star_history: "2026-05-09:2889,2026-05-09:2898,2026-05-10:3645,2026-05-10:3648,2026-05-11:4025"
 tags:
   - github
   - "category/安全"
@@ -727,5 +727,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-11|2026-05-11]] — 再次上榜，4.0k stars
 - [[2026-05-10|2026-05-10]] — 再次上榜，3.6k stars
 - [[2026-05-09|2026-05-09]] — 首次收錄，2.9k stars

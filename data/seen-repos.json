@@ -1534,10 +1534,10 @@
   },
   "XBuilderLAB/cheat-on-content": {
     "first_seen": "2026-05-07",
-    "last_seen": "2026-05-10",
-    "times_seen": 4,
+    "last_seen": "2026-05-11",
+    "times_seen": 5,
     "stars_first": 778,
-    "stars_last": 1426
+    "stars_last": 1556
   },
   "jherrodthomas/automotive-skills-suite": {
     "first_seen": "2026-05-07",
@@ -1562,31 +1562,31 @@
   },
   "yaojingang/yao-open-prompts": {
     "first_seen": "2026-05-08",
-    "last_seen": "2026-05-10",
-    "times_seen": 3,
+    "last_seen": "2026-05-11",
+    "times_seen": 4,
     "stars_first": 1131,
-    "stars_last": 1490
+    "stars_last": 1555
   },
   "strukto-ai/mirage": {
     "first_seen": "2026-05-08",
-    "last_seen": "2026-05-10",
-    "times_seen": 3,
+    "last_seen": "2026-05-11",
+    "times_seen": 4,
     "stars_first": 1003,
-    "stars_last": 1632
+    "stars_last": 1795
   },
   "V4bel/dirtyfrag": {
     "first_seen": "2026-05-09",
-    "last_seen": "2026-05-10",
-    "times_seen": 2,
+    "last_seen": "2026-05-11",
+    "times_seen": 3,
     "stars_first": 2889,
-    "stars_last": 3645
+    "stars_last": 4025
   },
   "antirez/ds4": {
     "first_seen": "2026-05-09",
-    "last_seen": "2026-05-10",
-    "times_seen": 2,
+    "last_seen": "2026-05-11",
+    "times_seen": 3,
     "stars_first": 2460,
-    "stars_last": 4506
+    "stars_last": 6219
   },
   "MayersScott/rkn-block-checker": {
     "first_seen": "2026-05-09",
@@ -1597,17 +1597,17 @@
   },
   "lightseekorg/tokenspeed": {
     "first_seen": "2026-05-09",
-    "last_seen": "2026-05-10",
-    "times_seen": 2,
+    "last_seen": "2026-05-11",
+    "times_seen": 3,
     "stars_first": 785,
-    "stars_last": 858
+    "stars_last": 907
   },
   "vercel-labs/zero-native": {
     "first_seen": "2026-05-10",
-    "last_seen": "2026-05-10",
-    "times_seen": 1,
+    "last_seen": "2026-05-11",
+    "times_seen": 2,
     "stars_first": 1650,
-    "stars_last": 1650
+    "stars_last": 2308
   },
   "raiyanyahya/how-to-train-your-gpt": {
     "first_seen": "2026-05-10",
@@ -1615,5 +1615,26 @@
     "times_seen": 1,
     "stars_first": 790,
     "stars_last": 790
+  },
+  "huangserva/3DCellForge": {
+    "first_seen": "2026-05-11",
+    "last_seen": "2026-05-11",
+    "times_seen": 1,
+    "stars_first": 757,
+    "stars_last": 757
+  },
+  "WenyuChiou/awesome-agentic-ai-zh": {
+    "first_seen": "2026-05-11",
+    "last_seen": "2026-05-11",
+    "times_seen": 1,
+    "stars_first": 736,
+    "stars_last": 736
+  },
+  "zarazhangrui/beautiful-html-templates": {
+    "first_seen": "2026-05-11",
+    "last_seen": "2026-05-11",
+    "times_seen": 1,
+    "stars_first": 730,
+    "stars_last": 730
   }
 }
