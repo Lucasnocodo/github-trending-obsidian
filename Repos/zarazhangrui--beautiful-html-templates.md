@@ -7,9 +7,9 @@ language: HTML
 license: MIT
 description: "A library of HTML slide templates designed so any coding agent can pick the right one and produce a beautiful deck on the user's behalf, automatically."
 homepage: ""
-stars: 730
-stars_per_day: 146
-forks: 67
+stars: 863
+stars_per_day: 144
+forks: 80
 open_issues: 0
 created: 2026-05-05
 pushed_at: 2026-05-06
@@ -30,8 +30,8 @@ use_case: "提供一系列可重用的 HTML 幻燈片模板，讓任何編碼代
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-18"
+appearances: 2
+next_review: "2026-05-19"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-11"
-star_history: "2026-05-11:730"
+star_history: "2026-05-11:730,2026-05-12:863"
 tags:
   - github
   - "category/開發工具"
@@ -928,4 +928,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-12|2026-05-12]] — 再次上榜，863 stars
 - [[2026-05-11|2026-05-11]] — 首次收錄，730 stars
