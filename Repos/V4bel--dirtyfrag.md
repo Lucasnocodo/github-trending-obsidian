@@ -7,8 +7,8 @@ language: C
 license: N/A
 description: ""
 homepage: ""
-stars: 4201
-stars_per_day: 1050
+stars: 4203
+stars_per_day: 1051
 forks: 625
 open_issues: 52
 created: 2026-05-07
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-09
-use_case: "利用 Dirty Frag 漏洞在主要 Linux 發行版上獲取 root 權限。"
+use_case: "透過鏈接兩個 Linux 漏洞，實現獲取系統 root 權限的攻擊手法。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 4
 next_review: "2026-05-15"
 contributor_count: 2
 engagement: "medium"
-issue_close_rate: 10
+issue_close_rate: 12
 repo_size_kb: 5934
 readme_length: 5262
 bus_factor: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-09"
-star_history: "2026-05-09:2889,2026-05-09:2898,2026-05-10:3645,2026-05-10:3648,2026-05-11:4025,2026-05-11:4026,2026-05-12:4201"
+star_history: "2026-05-09:2889,2026-05-09:2898,2026-05-10:3645,2026-05-10:3648,2026-05-11:4025,2026-05-11:4026,2026-05-12:4201,2026-05-12:4203"
 tags:
   - github
   - "category/安全"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "dirtyfrag"
   - "V4bel/dirtyfrag"
-  - "利用 Dirty Frag 漏洞在主要 Linux 發行版上獲取 root 權限。"
+  - "透過鏈接兩個 Linux 漏洞，實現獲取系統 root 權限的攻擊手法。"
 ---
 
 # dirtyfrag
 
-**4.0k** stars · **1.3k** stars/天 · 建立 3 天前 · C · 未標註授權
+**4.2k** stars · **1.1k** stars/天 · 建立 4 天前 · C · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/V4bel--dirtyfrag");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `easy-install`
 
 > [!summary] 一句話摘要
-> 利用 Dirty Frag 漏洞在主要 Linux 發行版上獲取 root 權限。
+> 透過鏈接兩個 Linux 漏洞，實現獲取系統 root 權限的攻擊手法。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (1.3k stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Medium
-> **適合** 對 Linux 系統安全性有深入研究需求的安全專家和研究人員。
-> **一句話重點** Dirty Frag 漏洞利用工具的成功在於其高效的設計和在多個 Linux 發行版上的適用性。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (1.1k stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** 2 人 · **參與度** Medium
+> **適合** 需要在 Linux 系統上進行安全測試的安全研究員和系統管理員。
+> **一句話重點** 這個專案展示了如何通過鏈接現有漏洞來實現新的攻擊方式，並強調了 Linux 系統安全的重要性。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,26 +102,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，能快速驗證 Linux 系統的安全性，值得使用。
+> **結論** 花 2 小時學習，1 小時整合，得到高效的漏洞利用工具，值得在安全測試中使用。
 
 > [!abstract] 核心創新
-> Dirty Frag 是一個獨特的漏洞利用工具，能在多個主要 Linux 發行版上獲取 root 權限，且不依賴於競爭條件。
+> Dirty Frag 是一種新的漏洞利用方式，通過鏈接兩個漏洞實現高成功率的本地特權提升。
 
 ## 專案簡介
 
-Dirty Frag 是一個針對 Linux 的漏洞利用工具，通過鏈接 `xfrm-ESP Page-Cache Write (CVE-2026-43284)` 和 `RxRPC Page-Cache Write (CVE-2026-43500)` 漏洞來獲取 root 權限。這個工具的核心機制是利用這兩個漏洞的特性，無需競爭條件，且成功率極高。用戶只需執行一行命令 `git clone https://github.com/V4bel/dirtyfrag.git && cd dirtyfrag && gcc -O0 -Wall -o exp exp.c -lutil && ./exp` 即可運行該漏洞利用程式。這個工具的賣點在於其高效的漏洞利用方式，能在多個主要 Linux 發行版上運作。技術上，它依賴於 Linux 核心的特定漏洞，這些漏洞在多個版本中存在，且在 9 年的有效期內未被修補。
+Dirty Frag 是一種新的 Linux 本地特權提升漏洞，通過鏈接 `xfrm-ESP Page-Cache Write (CVE-2026-43284)` 和 `RxRPC Page-Cache Write (CVE-2026-43500)` 來獲取 root 權限。使用者只需執行一行命令 `git clone https://github.com/V4bel/dirtyfrag.git && cd dirtyfrag && gcc -O0 -Wall -o exp exp.c -lutil && ./exp`，即可啟動攻擊。這種方法的賣點在於其高成功率，因為它不依賴於競爭條件，且內核在攻擊失敗時不會崩潰。技術上，這兩個漏洞的鏈接使得即使在某些環境中無法觸發一個漏洞時，另一個漏洞仍然可以被利用。這使得攻擊者能夠在大多數主要 Linux 發行版上獲得 root 權限。
 
-與其他漏洞利用工具相比，Dirty Frag 的獨特之處在於它不依賴於時間窗口，這使得它在實際應用中更為穩定。使用此工具後，必須清理頁面快取以確保系統穩定，這是其使用的一個重要注意事項。實際使用中，這個工具的有效性和穩定性受到廣泛關注，並且社群對於其修補和緩解措施的討論也相當活躍。這使得它在安全研究和漏洞利用領域中佔有一席之地。對於安全專家和研究人員來說，Dirty Frag 提供了一個強大的工具來測試和驗證 Linux 系統的安全性。
+這個專案的依賴性相對較低，主要依賴於 GCC 和標準 C 函式庫，適合快速測試和實驗。與其他類似工具相比，Dirty Frag 的獨特之處在於它不需要特權來創建命名空間，這使得它在某些安全配置下仍然有效。使用者在運行攻擊後需要清理頁面快取，以確保系統穩定，這可以通過 `echo 3 > /proc/sys/vm/drop_caches` 命令完成。這個專案的社群活躍度高，開放問題數量也顯示出使用者對於漏洞的關注和實驗需求。
 
 **技術棧**：`C`
 
 ## 重點功能
 
-- 高成功率 — 利用 Dirty Frag 漏洞獲取 root 權限，無需競爭條件。
-- 多發行版支持 — 在多個主要 Linux 發行版上有效，包括 Ubuntu、RHEL 和 Fedora。
-- 簡單的使用方式 — 只需一行命令即可運行漏洞利用程式。
-- 頁面快取清理 — 提供清理污染頁面快取的指令以確保系統穩定。
-- 詳細的技術文檔 — 提供漏洞的技術細節和修補建議。
+- 一鍵執行 — 只需一行命令即可克隆並編譯漏洞利用程式。
+- 高成功率 — 不依賴於競爭條件，內核不會因失敗而崩潰。
+- 多發行版支持 — 在多個主要 Linux 發行版上均可有效利用。
+- 清理頁面快取 — 提供清理污染頁面快取的指令，確保系統穩定性。
+- 詳細的漏洞說明 — 包含對於每個漏洞的詳細解釋和影響範圍。
 
 ## 快速開始
 
@@ -129,7 +129,7 @@ Dirty Frag 是一個針對 Linux 的漏洞利用工具，通過鏈接 `xfrm-ESP 
 ```bash
 git clone https://github.com/V4bel/dirtyfrag.git && cd dirtyfrag && gcc -O0 -Wall -o exp exp.c -lutil
 ```
-2. 運行漏洞利用程式
+2. 執行漏洞利用程式
 ```bash
 ./exp
 ```
@@ -142,7 +142,7 @@ echo 3 > /proc/sys/vm/drop_caches
 
 ```c
 {
-  "前置條件": "需要在 Linux 環境中執行",
+  "前置條件": "已安裝 GCC 和相關依賴",
   "指令": "git clone https://github.com/V4bel/dirtyfrag.git && cd dirtyfrag && gcc -O0 -Wall -o exp exp.c -lutil && ./exp",
   "預期輸出": "獲取 root 權限（具體輸出依環境而異）"
 }
@@ -151,46 +151,46 @@ echo 3 > /proc/sys/vm/drop_caches
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 4026 stars（1342/天），forks 601（14.9%），這顯示出極高的關注度。作者 V4bel 是漏洞研究領域的活躍人物，之前的 Dirty Pipe 和 Copy Fail 漏洞也引起了廣泛的討論。這個工具解決了在 Linux 系統上獲取 root 權限的難題，尤其是在多個主要發行版中都能有效運作。最近的社群討論和外部因素促成了其快速曝光，並引發了安全研究者的興趣。這些因素共同推動了其在 GitHub 上的快速增長。
+> 建立 4 天就累積 4203 stars（1051/天），forks 625（14.9%），這顯示出極高的關注度。作者 V4bel 是知名的安全研究者，之前發現過多個漏洞，這次的 Dirty Frag 提供了一種新的攻擊方式，解決了以往無法有效利用的漏洞。社群對於這個專案的熱烈反應，反映了對於 Linux 安全性的高度關注。最近的討論和反應也顯示出使用者對於漏洞的實際應用和修補的迫切需求。
 
 ## 適合誰使用
 
-**目標受眾**：對 Linux 系統安全性有深入研究需求的安全專家和研究人員。
+**目標受眾**：需要在 Linux 系統上進行安全測試的安全研究員和系統管理員。
 
 > [!example] 使用場景
-> - 安全研究員用它來測試 Linux 系統的安全性，因為它能快速驗證系統是否受到 Dirty Frag 漏洞影響。
-> - 系統管理員用它來檢查自家伺服器的漏洞，因為這可以幫助他們及早修補潛在的安全風險。
-> - 開發者用它來理解和學習 Linux 漏洞利用技術，因為這對於提升他們的安全意識和技能非常有幫助。
+> - 安全研究員用它來測試 Linux 系統的安全性，因為它提供了一種簡單而有效的本地特權提升方法。
+> - 系統管理員用它來檢查自家伺服器是否受到 Dirty Frag 漏洞影響，因為這能幫助他們及時修補安全漏洞，避免潛在的攻擊。
+> - 滲透測試者用它來模擬攻擊，評估系統的防禦能力，因為這樣可以驗證現有安全措施的有效性。
 
 ## 架構分析
 
-Dirty Frag 的架構設計基於兩個已知的漏洞，通過鏈接這些漏洞來實現權限提升。這種設計使得漏洞利用不需要依賴於時間窗口，從而提高了穩定性和成功率。資料流方面，首先利用 `xfrm-ESP Page-Cache Write` 漏洞來獲取寫入權限，然後通過 `RxRPC Page-Cache Write` 進一步提升權限。這種設計的取捨在於，雖然需要同時存在兩個漏洞，但這樣的鏈接方式能夠覆蓋彼此的盲點，從而在多個發行版上都能成功利用。擴展性方面，這種方法在未來可能會受到新漏洞的影響，但目前的設計在當前的 Linux 環境中是有效的。
+Dirty Frag 的架構基於對兩個已知漏洞的鏈接，通過利用 xfrm-ESP 和 RxRPC 的頁面快取寫入漏洞來獲取 root 權限。這種設計的優勢在於不需要依賴於競爭條件，這使得攻擊的成功率顯著提高。資料流方面，漏洞利用程式會首先檢查系統環境，然後利用漏洞進行攻擊。這種方法的取捨在於它的高成功率，但也需要使用者在攻擊後進行手動清理，以避免系統不穩定。擴展性方面，這種方法在不同的 Linux 發行版中均可適用，但需注意各版本的安全補丁狀態。
 
 ## 技術深入分析
 
-Dirty Frag 利用的核心技術是基於兩個漏洞的鏈接，這使得它能夠在不依賴於時間窗口的情況下獲取權限。這種設計模式使得漏洞利用的成功率大大提高，並且在實際應用中不會因為競爭條件而失敗。效能上，這個工具能夠在多個 Linux 發行版上運行，並且在測試中表現出色。設計選擇上，使用 C 語言實現能夠直接與 Linux 核心交互，這樣的選擇雖然增加了開發的複雜性，但也提高了工具的效能和靈活性。技術風險方面，未來可能會因為 Linux 核心的更新而影響工具的有效性，這是使用者需要注意的地方。整合方面，這個工具可以輕鬆地與現有的安全測試流程結合，並且對於熟悉 Linux 系統的開發者來說，學習成本相對較低。
+Dirty Frag 利用兩個已知的 Linux 漏洞，通過頁面快取寫入來實現本地特權提升。這種方法的核心在於其不依賴於競爭條件，這使得攻擊者能夠在多數環境中穩定地獲取 root 權限。效能上，這種攻擊的成功率極高，且在多個 Linux 發行版上均可有效運行。設計上，選擇 C 語言實現使得程式碼簡潔且執行效率高，但也可能帶來安全風險。由於依賴於特定的內核漏洞，這種方法在未來的安全更新中可能會失效。整合方面，這個工具可以與現有的安全測試流程相結合，但使用者需謹慎對待其潛在的系統穩定性影響。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的指導，並包含了具體的使用範例。安裝過程相對簡單，沒有明顯的坑。文件目前僅有英文版本，對於非英語使用者可能會有一定的學習障礙。
+> README 文件提供了清晰的指令和範例，安裝過程相對簡單，使用者只需執行一行命令即可開始。整體上，對於有一定技術背景的使用者來說，30 分鐘內可以順利運行。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 高成功率，無需競爭條件。
-> - 支援多個主要 Linux 發行版。
-> - 使用簡單，便於快速測試。
+> - 高成功率的漏洞利用方式
+> - 簡單易用，只需一行命令
+> - 支持多個主要 Linux 發行版
 
 > [!danger] 缺點
-> - 僅限於特定版本的 Linux 系統。
-> - 需要清理頁面快取以避免系統不穩定。
-> - 可能會受到未來安全更新的影響。
+> - 僅限於特定版本的 Linux 系統
+> - 需要手動清理系統快取
+> - 可能會對系統穩定性造成影響
 
 > [!warning] 注意事項
-> - 僅支援特定版本的 Linux 發行版。
-> - 需要在具有相應權限的環境中運行。
-> - 執行後必須清理頁面快取以避免系統不穩定。
+> - 僅適用於特定版本的 Linux 發行版
+> - 需要在具有相應權限的環境中運行
+> - 可能需要手動清理系統快取以確保穩定性
 
 ## 成熟度評估
 
@@ -201,26 +201,27 @@ Dirty Frag 利用的核心技術是基於兩個漏洞的鏈接，這使得它能
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合安全研究和測試，但不建議在生產環境中使用。
+> 不建議在生產環境中使用，適合用於安全測試和研究。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 執行後系統可能不穩定，需要清理頁面快取
-  - 解法：執行 'echo 3 > /proc/sys/vm/drop_caches' 或重啟系統
-- [MEDIUM] 僅在特定版本的 Linux 上有效，其他版本可能無法利用
-  - 解法：確認系統版本符合要求
-- [MEDIUM] 可能會因為未來的安全更新而失效
-  - 解法：定期檢查系統更新和漏洞修補
+- **[HIGH]** 在某些發行版中，可能需要特權才能運行漏洞利用程式
+  - 解法：確保使用者擁有適當的權限
+- [MEDIUM] 執行後系統可能不穩定
+  - 解法：執行清理命令以恢復系統穩定性
+- **[HIGH]** 未來的內核更新可能會修補這些漏洞
+  - 解法：定期檢查並更新系統以防止漏洞被利用
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 安全研究團隊進行漏洞測試 | 非常適合 | 因為它能有效驗證系統的安全性。 |
-| 小型企業的伺服器安全檢查 | 適合 | 能夠快速檢測潛在的安全風險。 |
-| 大型企業的生產環境 | 不適合 | 因為可能導致系統不穩定。 |
+| 小型企業的 Linux 伺服器安全測試 | 非常適合 | 能夠快速評估伺服器的安全性，並提供實用的漏洞利用方法。 |
+| 大型企業的安全審計 | 適合 | 雖然有一定的風險，但可以用於測試系統的防禦能力。 |
+| 個人開發者的安全研究 | 非常適合 | 提供了一個簡單的工具來探索和理解 Linux 漏洞。 |
+| 生產環境的核心應用 | 不適合 | 存在高風險，不建議在生產環境中使用。 |
 
 ## 採用成本分析
 
@@ -232,12 +233,24 @@ Dirty Frag 利用的核心技術是基於兩個漏洞的鏈接，這使得它能
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，能快速驗證 Linux 系統的安全性，值得使用。
+> 花 2 小時學習，1 小時整合，得到高效的漏洞利用工具，值得在安全測試中使用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具本身不需要高權限，但執行後可能會影響系統穩定性，使用時需謹慎。
+> 低風險：該工具本身不需要高權限，但執行後可能會影響系統穩定性。使用時需謹慎，並確保在受控環境中進行測試。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Dirty Frag 可以與現有的安全測試工具鏈相結合，特別是在滲透測試和漏洞評估中。它可以與 Metasploit 等工具配合使用，提供更全面的安全測試方案。在實際應用中，使用者可以在一個使用 Ubuntu 的測試環境中，運行 Dirty Frag 來評估系統的安全性，具體做法是將其與其他安全工具結合，形成一個完整的測試流程。整合時，需注意可能的系統穩定性問題，並確保在測試後進行必要的清理工作。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 Dirty Frag 出現之前，Linux 系統的本地特權提升漏洞主要依賴於競爭條件和時間窗口，這使得攻擊的成功率受到限制。隨著對 Linux 核心的深入研究，發現了新的漏洞鏈接方式，使得這些漏洞的利用變得更加高效。Dirty Frag 代表了一種新的攻擊趨勢，未來可能會有更多類似的漏洞被發現和利用，這對於 Linux 系統的安全性提出了新的挑戰。
 
 ## 健康度儀表板
 
@@ -302,9 +315,9 @@ Dirty Frag 利用的核心技術是基於兩個漏洞的鏈接，這使得它能
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 601 |
+| Forks | 625 |
 | Open Issues | 52 |
-| Issue 解決率 | 10% (6 closed) |
+| Issue 解決率 | 12% (7 closed) |
 | 最後推送 | 2026-05-10 |
 | 建立日期 | 2026-05-07 |
 | Repo 大小 | 5.8 MB |
@@ -318,7 +331,7 @@ Dirty Frag 利用的核心技術是基於兩個漏洞的鏈接，這使得它能
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，討論熱烈，特別是在熱門 Issues 上。
+**社群活躍度**：社群活躍，討論熱烈，特別是在熱門問題上
 
 ## 開發動態
 
@@ -330,9 +343,9 @@ Dirty Frag 利用的核心技術是基於兩個漏洞的鏈接，這使得它能
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#28](https://github.com/V4bel/dirtyfrag/issues/28) | Please delay this until monday | 103 | 11 |
+> | [#28](https://github.com/V4bel/dirtyfrag/issues/28) | Please delay this until monday | 104 | 11 |
+> | [#38](https://github.com/V4bel/dirtyfrag/issues/38) | Meme collection about dirtyfrag | 11 | 4 |
 > | [#4](https://github.com/V4bel/dirtyfrag/issues/4) | Please clarify whether this bug allows escaping from contain | 11 | 6 |
-> | [#38](https://github.com/V4bel/dirtyfrag/issues/38) | Meme collection about dirtyfrag | 10 | 4 |
 > | [#18](https://github.com/V4bel/dirtyfrag/issues/18) | [Discussion] Anthropic, stop digging, wait for your operatio | 9 | 6 |
 > | [#1](https://github.com/V4bel/dirtyfrag/issues/1) | Mitigation doesn't stop exploit | 6 | 23 |
 
@@ -427,7 +440,7 @@ Dirty Frag 利用的核心技術是基於兩個漏洞的鏈接，這使得它能
 
 ## 延伸閱讀
 
-相關概念：[[安全漏洞]] · [[漏洞利用]] · [[Linux 安全]]
+相關概念：[[安全漏洞]] · [[本地特權提升]] · [[漏洞利用]]
 
 相關專案：[[Nightmare-Eclipse--RedSun|Nightmare-Eclipse/RedSun]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[opa334--darksword-kexploit|opa334/darksword-kexploit]] · [[DanOps-1--Gpt-Agreement-Payment|DanOps-1/Gpt-Agreement-Payment]] · [[dazzyddos--PrivHound|dazzyddos/PrivHound]] · [[denuitt1--mhr-cfw|denuitt1/mhr-cfw]] · [[imbue-bit--OpenClaw-PwnKit|imbue-bit/OpenClaw-PwnKit]] · [[masterking32--MasterHttpRelayVPN|masterking32/MasterHttpRelayVPN]]
 
@@ -471,7 +484,7 @@ Dirty Frag 利用的核心技術是基於兩個漏洞的鏈接，這使得它能
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["安全漏洞","漏洞利用","Linux 安全"];
+> const concepts = ["安全漏洞","本地特權提升","漏洞利用"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "V4bel--dirtyfrag" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
