@@ -1562,31 +1562,31 @@
   },
   "yaojingang/yao-open-prompts": {
     "first_seen": "2026-05-08",
-    "last_seen": "2026-05-12",
-    "times_seen": 5,
+    "last_seen": "2026-05-13",
+    "times_seen": 6,
     "stars_first": 1131,
-    "stars_last": 1628
+    "stars_last": 1834
   },
   "strukto-ai/mirage": {
     "first_seen": "2026-05-08",
-    "last_seen": "2026-05-12",
-    "times_seen": 5,
+    "last_seen": "2026-05-13",
+    "times_seen": 6,
     "stars_first": 1003,
-    "stars_last": 1941
+    "stars_last": 2065
   },
   "V4bel/dirtyfrag": {
     "first_seen": "2026-05-09",
-    "last_seen": "2026-05-12",
-    "times_seen": 4,
+    "last_seen": "2026-05-13",
+    "times_seen": 5,
     "stars_first": 2889,
-    "stars_last": 4201
+    "stars_last": 4331
   },
   "antirez/ds4": {
     "first_seen": "2026-05-09",
-    "last_seen": "2026-05-12",
-    "times_seen": 4,
+    "last_seen": "2026-05-13",
+    "times_seen": 5,
     "stars_first": 2460,
-    "stars_last": 7402
+    "stars_last": 8080
   },
   "MayersScott/rkn-block-checker": {
     "first_seen": "2026-05-09",
@@ -1597,17 +1597,17 @@
   },
   "lightseekorg/tokenspeed": {
     "first_seen": "2026-05-09",
-    "last_seen": "2026-05-12",
-    "times_seen": 4,
+    "last_seen": "2026-05-13",
+    "times_seen": 5,
     "stars_first": 785,
-    "stars_last": 945
+    "stars_last": 976
   },
   "vercel-labs/zero-native": {
     "first_seen": "2026-05-10",
-    "last_seen": "2026-05-12",
-    "times_seen": 3,
+    "last_seen": "2026-05-13",
+    "times_seen": 4,
     "stars_first": 1650,
-    "stars_last": 2649
+    "stars_last": 2953
   },
   "raiyanyahya/how-to-train-your-gpt": {
     "first_seen": "2026-05-10",
@@ -1618,10 +1618,10 @@
   },
   "huangserva/3DCellForge": {
     "first_seen": "2026-05-11",
-    "last_seen": "2026-05-12",
-    "times_seen": 2,
+    "last_seen": "2026-05-13",
+    "times_seen": 3,
     "stars_first": 757,
-    "stars_last": 1405
+    "stars_last": 1711
   },
   "WenyuChiou/awesome-agentic-ai-zh": {
     "first_seen": "2026-05-11",
@@ -1639,9 +1639,23 @@
   },
   "BigPizzaV3/CodexPlusPlus": {
     "first_seen": "2026-05-12",
-    "last_seen": "2026-05-12",
-    "times_seen": 1,
+    "last_seen": "2026-05-13",
+    "times_seen": 2,
     "stars_first": 1040,
-    "stars_last": 1040
+    "stars_last": 1526
+  },
+  "FULU-Foundation/OrcaSlicer-bambulab": {
+    "first_seen": "2026-05-13",
+    "last_seen": "2026-05-13",
+    "times_seen": 1,
+    "stars_first": 1168,
+    "stars_last": 1168
+  },
+  "pixel-point/media-downloader": {
+    "first_seen": "2026-05-13",
+    "last_seen": "2026-05-13",
+    "times_seen": 1,
+    "stars_first": 596,
+    "stars_last": 596
   }
 }

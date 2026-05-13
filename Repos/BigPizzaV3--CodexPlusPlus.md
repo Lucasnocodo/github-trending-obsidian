@@ -7,12 +7,12 @@ language: Python
 license: N/A
 description: "一个CodexApp的增强工具"
 homepage: ""
-stars: 1044
-stars_per_day: 209
-forks: 68
-open_issues: 18
+stars: 1526
+stars_per_day: 254
+forks: 93
+open_issues: 32
 created: 2026-05-06
-pushed_at: 2026-05-11
+pushed_at: 2026-05-12
 first_seen: 2026-05-12
 week: "2026-W20"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "一個增強 Codex App 功能的外部啟動器，無需修改原始�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-15"
+appearances: 2
+next_review: "2026-05-16"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 40
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-12"
-star_history: "2026-05-12:1040,2026-05-12:1044"
+star_history: "2026-05-12:1040,2026-05-12:1044,2026-05-13:1526"
 tags:
   - github
   - "category/開發工具"
@@ -1063,4 +1063,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-13|2026-05-13]] — 再次上榜，1.5k stars
 - [[2026-05-12|2026-05-12]] — 首次收錄，1.0k stars
