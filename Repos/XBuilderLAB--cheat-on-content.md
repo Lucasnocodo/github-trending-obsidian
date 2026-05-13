@@ -7,12 +7,12 @@ language: Shell
 license: MIT
 description: "You're reading this. The skill predicted it. A workflow that turns every post into a calibrated experiment—score, blind-predict, retro, evolve. The future doesn't reward effort, it rewards those who see the pattern first. 1M followers in a month — not luck, system."
 homepage: ""
-stars: 1665
-stars_per_day: 278
-forks: 334
-open_issues: 6
+stars: 1815
+stars_per_day: 259
+forks: 346
+open_issues: 5
 created: 2026-05-05
-pushed_at: 2026-05-11
+pushed_at: 2026-05-12
 first_seen: 2026-05-07
 week: "2026-W19"
 month: "2026-05"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-07
-use_case: "將每個內容創作轉化為經過校準的實驗，幫助創作者更精準地預測和評估作品表現。"
+use_case: "將每個內容創作轉化為可校準的實驗，幫助創作者精準預測和評估效果。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 6
 next_review: "2026-05-15"
 contributor_count: 3
 engagement: "medium"
-issue_close_rate: 40
-repo_size_kb: 361
-readme_length: 5690
+issue_close_rate: 44
+repo_size_kb: 377
+readme_length: 6084
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-07"
-star_history: "2026-05-07:778,2026-05-07:780,2026-05-08:1022,2026-05-08:1031,2026-05-09:1214,2026-05-09:1219,2026-05-10:1426,2026-05-10:1426,2026-05-11:1556,2026-05-11:1559,2026-05-12:1665,2026-05-12:1665"
+star_history: "2026-05-07:778,2026-05-07:780,2026-05-08:1022,2026-05-08:1031,2026-05-09:1214,2026-05-09:1219,2026-05-10:1426,2026-05-10:1426,2026-05-11:1556,2026-05-11:1559,2026-05-12:1665,2026-05-12:1665,2026-05-13:1815"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "cheat-on-content"
   - "XBuilderLAB/cheat-on-content"
-  - "將每個內容創作轉化為經過校準的實驗，幫助創作者更精準地預測和評估作品表現。"
+  - "將每個內容創作轉化為可校準的實驗，幫助創作者精準預測和評估效果。"
 ---
 
 # cheat-on-content
 
-**1.7k** stars · **278** stars/天 · 建立 6 天前 · Shell · MIT
+**1.8k** stars · **259** stars/天 · 建立 7 天前 · Shell · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/XBuilderLAB--cheat-on-content");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 將每個內容創作轉化為經過校準的實驗，幫助創作者更精準地預測和評估作品表現。
+> 將每個內容創作轉化為可校準的實驗，幫助創作者精準預測和評估效果。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (278 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (259 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Medium
-> **適合** 希望在內容創作中進行數據驅動決策的專業創作者。
-> **一句話重點** 這個工具不僅幫助創作者發佈更多內容，更重要的是提升他們的判斷力和數據分析能力。
+> **適合** 希望在社交媒體上快速增長影響力的內容創作者和市場行銷專業人士。
+> **一句話重點** 這個專案不僅僅是幫助創作者產出更多內容，而是幫助他們更精準地評估和調整內容策略。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,26 +102,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到更精準的內容創作分析，值得嘗試。
+> **結論** 花 5 小時學、3 小時整合，得到更精準的內容評估，值得投資。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於將內容創作轉化為一個可量化的實驗流程，並根據創作者的歷史數據進行個性化的評估。
+> 這個專案的創新在於將內容創作轉化為可校準的實驗，並且能夠根據個人歷史數據自我學習和進化。
 
 ## 專案簡介
 
-這個工具的核心機制是將內容創作的過程轉變為一個可量化的實驗流程，具體步驟為：首先，創作者為每個作品打分並進行盲預測，然後發佈作品，接著在三天後進行回顧，最後根據結果進行調整。這樣的設計讓創作者能夠持續進化自己的評估標準，避免了傳統創作中常見的隨機性和不確定性。使用者只需在內容專案目錄中初始化工具，並回答幾個問題，即可開始使用。這個工具的賣點在於，它不僅幫助創作者發佈更多內容，還能讓他們的判斷力變得更加敏銳。技術上，它使用了 Shell 和 Python，並且支援多種代理，能夠自動記錄每個作品的表現，並在數據支持下進行調整。
+這個專案的核心在於將內容創作過程轉變為一個有系統的實驗流程，具體來說，創作者可以透過打分、盲預測、發佈和回顧來不斷進化自己的內容策略。使用者在每次發佈後，能夠在三天內回顧數據，了解哪些內容表現良好，哪些則需要改進。這種方法不僅僅是依賴直覺，而是基於數據的反饋來調整策略，最終形成一套屬於自己的成功公式。關鍵指令如 `score this scripts/.md` 和 `retro videos//` 使得整個流程自動化且高效。技術上，這個工具使用了 Shell 和 Python，並且設計上強調了數據的持續記錄和分析，讓每一次的創作都能在未來的決策中發揮作用。
 
-與傳統的創作工具相比，這個工具的獨特之處在於它能夠根據創作者的歷史數據進行個性化的評估，而不是依賴於普遍的平均值。這意味著，隨著使用時間的增加，工具的預測準確性會逐漸提高，三個月後的判斷準確度將比剛開始時提升十倍。實際使用中，創作者需要注意的是，工具的學習曲線可能會影響初期的使用體驗，但長期來看，這種投入將會帶來顯著的回報。這個工具適合那些希望在內容創作上進行深入分析和持續改進的創作者，尤其是那些已經有一定基礎並希望進一步提升自己能力的人。
+與其他創作工具相比，這個專案不僅僅是幫助創作者產出更多內容，而是幫助他們更精準地評估和調整內容策略，從而提升整體創作效率。這種方法特別適合需要快速迭代和優化內容的創作者，尤其是在社交媒體平台上。使用者在三個月內能夠顯著提升內容的質量和影響力。由於這是一個相對新穎的工具，社群活躍度和問題解決率尚在發展中，適合對數據驅動的內容創作有興趣的團隊或個人。
 
 **技術棧**：`Shell` · `Python`
 
 ## 重點功能
 
-- 自動化評分 — 在發佈前為每個作品打分，並記錄預測結果。
-- 盲預測功能 — 讓創作者在未發佈前進行預測，避免偏見影響判斷。
-- 三天後回顧 — 自動生成回顧報告，幫助創作者分析表現。
-- 個性化評估 — 根據創作者的歷史數據調整評分公式，提升準確性。
-- 支持多種代理 — 可與不同的內容創作代理整合，靈活使用。
+- 數據驅動的內容評估 — 每次發佈後自動記錄和分析數據。
+- 盲預測功能 — 在發佈前進行預測，幫助創作者保持客觀。
+- 三天後回顧 — 提供具體的數據回顧，幫助創作者了解表現。
+- 自我學習的評分公式 — 隨著使用時間的增加，預測準確性逐漸提升。
+- 支持多種代理 — 可與不同的 AI 代理整合，提升功能靈活性。
 
 ## 快速開始
 
@@ -129,7 +129,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 git clone https://github.com/XBuilderLAB/cheat-on-content.git && cd cheat-on-content && bash install.sh
 ```
-2. 初始化工具
+2. 初始化技能
 ```bash
 初始化 cheat-on-content
 ```
@@ -141,64 +141,64 @@ score this scripts/.md
 ## 程式碼範例
 
 ```bash
-# 前置條件：在內容專案目錄中
-score this scripts/.md       # 評分僅此腳本
-start prediction scripts/.md # 盲預測 + 決策日誌
-shot scripts/.md             # 創建視頻文件夾 + 緩衝 +1
-shipped https://...          # 緩衝 -1
-retro videos//               # T+3d 數據 + 回顧
+{
+  "前置條件": "在內容專案目錄中，開啟相容的代理。",
+  "指令": "初始化 cheat-on-content",
+  "預期輸出": "完成五個是/否問題以完成入門。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天內累積 1665 stars（278/天），forks 334（20.1%），顯示出強烈的社群興趣。作者 Jooonnn 及其團隊過去在內容創作領域有豐富經驗，這個工具解決了創作者在數據分析和預測準確性上的痛點，讓創作者能夠更有效地學習和調整創作策略。近期的推廣活動和社群互動也可能促進了這一增長。
+> 建立 7 天內累積 1815 stars（259/天），forks 346（19.1%），顯示出強烈的市場需求。作者 Jooonnn 和團隊在內容創作和數據分析領域有豐富的經驗，這個工具解決了創作者在內容發佈後缺乏有效回饋和調整的痛點。傳統的創作工具往往無法提供個性化的分析，而這個工具通過自我學習和數據記錄，能夠不斷提升預測準確性。近期的推廣活動和社群討論也促進了其快速增長，顯示出對此類工具的需求正在上升。
 
 ## 適合誰使用
 
-**目標受眾**：希望在內容創作中進行數據驅動決策的專業創作者。
+**目標受眾**：希望在社交媒體上快速增長影響力的內容創作者和市場行銷專業人士。
 
 > [!example] 使用場景
-> - 內容創作者用它來分析每篇文章的表現，因為這樣可以在短時間內提升內容的質量和影響力。
-> - 社交媒體經營者用它來預測哪些帖子會引起更高的互動率，因為這樣能夠更精準地制定發佈策略。
-> - 視頻製作人用它來評估每個視頻的潛在流行度，因為這樣可以在內容創作上做出更有根據的決策。
+> - 內容創作者用它來分析每篇文章的表現，因為能夠在三天內獲得具體數據，從而快速調整策略。
+> - 社交媒體經營者用它來預測哪些內容會引起更高的互動率，因為它能根據過去的數據提供個性化的預測。
+> - 市場行銷團隊用它來評估廣告內容的效果，因為它提供了詳細的回顧和數據分析，幫助團隊做出更明智的決策。
 
 ## 架構分析
 
-這個工具採用模組化架構，將各種功能分為不同的子技能，便於擴展和維護。數據流從創作者的內容輸入開始，經過評分、預測和回顧的過程，最終生成可操作的改進建議。這種設計使得每次創作都能夠累積經驗，並在未來的創作中得到應用。選擇這種架構的代價在於需要持續的數據管理和分析，這對於小型團隊可能會造成一定的負擔。擴展性方面，由於工具的模組化設計，未來可以輕鬆添加新的功能或改進現有功能。
+這個專案採用模組化的架構，將內容評估和預測功能分開，以便於擴展和維護。數據流從創作者發佈內容開始，經過評分、預測、發佈和回顧的流程，最終形成一個完整的反饋循環。選擇使用 Shell 和 Python 使得安裝和使用都相對簡單，但也要求使用者具備一定的技術背景。這種設計使得工具能夠快速適應不同的內容創作需求，但在擴展性上可能面臨一定的挑戰，特別是在處理大量數據時。
 
 ## 技術深入分析
 
-這個工具的核心技術機制在於將內容創作的每個步驟進行數據化，使用者在發佈前進行評分和預測，並在發佈後進行回顧，這樣的流程讓每次創作都能夠累積經驗。效能方面，這個工具能夠處理大量的內容數據，並在三個月內提升預測準確度十倍。選擇使用 Shell 和 Python 的原因在於這兩種語言的靈活性和廣泛應用，依賴樹相對簡單，便於維護和擴展。技術風險方面，若數據輸入不穩定，可能會影響預測的準確性，這需要使用者在使用過程中保持數據的連貫性。整合方面，這個工具能夠與多種內容創作代理進行整合，並且支持自動化的工作流程，降低了使用者的學習成本。
+這個工具的核心在於將內容創作過程轉化為一個有系統的實驗流程，使用者可以透過打分、盲預測、發佈和回顧來不斷進化自己的內容策略。技術上，這個工具使用了 Shell 和 Python，並且設計上強調了數據的持續記錄和分析，讓每一次的創作都能在未來的決策中發揮作用。與其他創作工具相比，這個專案不僅僅是幫助創作者產出更多內容，而是幫助他們更精準地評估和調整內容策略，從而提升整體創作效率。這種方法特別適合需要快速迭代和優化內容的創作者，尤其是在社交媒體平台上。使用者在三個月內能夠顯著提升內容的質量和影響力。由於這是一個相對新穎的工具，社群活躍度和問題解決率尚在發展中，適合對數據驅動的內容創作有興趣的團隊或個人。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，包含詳細的安裝和使用說明。安裝過程相對順暢，但對於新手來說，可能需要一些時間來熟悉工具的功能。文件目前僅提供英文和簡體中文版本，可能對某些使用者造成障礙。
+> README 文件清晰且提供了安裝和使用的詳細步驟，讓新手能夠順利上手。安裝過程相對順暢，但需要注意版本升級的注意事項。文件中有提供初始使用的指導，讓使用者能夠快速開始使用。文件目前僅提供英文和簡體中文，對於非英語使用者可能會有一定的障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠根據歷史數據提供個性化的預測和評估。
-> - 幫助創作者在內容創作中建立數據驅動的決策流程。
-> - 具備自我進化的能力，隨著使用時間的增加，準確性不斷提高。
+> - 數據驅動的決策支持，能夠幫助創作者快速調整策略。
+> - 自我學習的能力使得預測準確性隨著使用時間增加而提升。
+> - 模組化設計便於擴展和維護。
 
 > [!danger] 缺點
-> - 初期使用時可能需要較長的學習時間來熟悉工具。
-> - 對於新手創作者，數據驅動的方式可能會感到壓力。
-> - 需要穩定的數據輸入，以確保預測的準確性。
+> - 對於新用戶，初期預測準確性可能較低，需要時間來收集數據。
+> - 需要持續的數據輸入以提升預測準確性，否則效果有限。
+> - 學習曲線較陡峭，對於不熟悉技術的用戶可能有挑戰。
 
 > [!warning] 注意事項
-> - 需要一定的學習曲線來熟悉工具的使用流程。
-> - 初期預測準確度可能較低，建議導入基準帳號以提高準確性。
-> - 對於新手創作者，可能需要額外的時間來適應數據驅動的創作方式。
+> - 需要持續的數據輸入以提升預測準確性。
+> - 對於新用戶，初期預測準確性可能較低。
+> - 需要一定的學習曲線來熟悉工具的使用。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
 | [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建和管理多個代理，而本專案則專注於內容創作的數據分析和預測。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供內容管理功能，但缺乏本專案的個性化預測和評估能力。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供內容創作的靈感，而本專案則強調基於數據的評估和調整。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | GPT-2 API 提供文本生成，而本專案則專注於內容的效果評估和優化。 |
 
 ## 替代方案決策
 
@@ -206,16 +206,16 @@ retro videos//               # T+3d 數據 + 回顧
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| ChatGPT | ChatGPT 是一個通用的對話式 AI，提供廣泛的回答，但不針對個別創作者的數據進行分析。 | 如果你需要一個通用的助手來解決各種問題，而不僅僅是內容創作的預測。 | low，因為 ChatGPT 的使用方式相對簡單，無需特定的數據輸入。 |
-| DeepSeek | DeepSeek 提供內容分析功能，但缺乏本專案的自我學習和進化能力。 | 如果你需要一個專注於內容分析的工具，但不需要個性化的預測。 | medium，因為需要將數據從本專案轉移到 DeepSeek。 |
+| ChatGPT | ChatGPT 是一個通用的對話式 AI，提供廣泛的知識和建議，而本專案專注於內容創作的數據分析和預測，提供個性化的評估。 | 如果需要一個通用的助手來回答各種問題，ChatGPT 是更好的選擇，但如果專注於內容創作的數據分析，則應選擇本專案。 | low，因為兩者的使用場景不同，無需直接遷移。 |
+| DeepSeek | DeepSeek 提供內容的靈感和建議，而本專案則強調基於數據的評估和調整，幫助創作者更精準地預測內容表現。 | 如果需要靈感和創意的支持，DeepSeek 可能更合適，但若需要數據驅動的評估，則應選擇本專案。 | medium，因為需要重新調整創作流程以適應數據分析的模式。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **cheat-on-content** | **ChatGPT** | **DeepSeek** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | ChatGPT 是一個通用的對話式 AI，提供廣泛的回答，但不針對個別創作者的數據進行分析。 | DeepSeek 提供內容分析功能，但缺乏本專案的自我學習和進化能力。 |
-> | 遷移成本 | - | low，因為 ChatGPT 的使用方式相對簡單，無需特定的數據輸入。 | medium，因為需要將數據從本專案轉移到 DeepSeek。 |
-> | 適用場景 | 主要場景 | 如果你需要一個通用的助手來解決各種問題，而不僅僅是內容創作的 | 如果你需要一個專注於內容分析的工具，但不需要個性化的預測。 |
+> | 技術路線 | 本專案 | ChatGPT 是一個通用的對話式 AI，提供廣泛的知識和建議，而本專案專注於內容創作的數據分析和預測，提供個性化的評估。 | DeepSeek 提供內容的靈感和建議，而本專案則強調基於數據的評估和調整，幫助創作者更精準地預測內容表現。 |
+> | 遷移成本 | - | low，因為兩者的使用場景不同，無需直接遷移。 | medium，因為需要重新調整創作流程以適應數據分析的模式。 |
+> | 適用場景 | 主要場景 | 如果需要一個通用的助手來回答各種問題，ChatGPT 是更好 | 如果需要靈感和創意的支持，DeepSeek 可能更合適，但若 |
 
 ## 成熟度評估
 
@@ -226,27 +226,27 @@ retro videos//               # T+3d 數據 + 回顧
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用，但不建議用於生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 初期預測準確度低，可能影響創作者的信心
-  - 解法：建議導入基準帳號以提高準確性
-- [MEDIUM] 對於新手創作者，數據驅動的方式可能會感到壓力
-  - 解法：可以先從簡單的內容開始，逐步適應工具的使用
-- **[HIGH]** 需要穩定的數據輸入以確保預測的準確性
-  - 解法：保持內容創作的連貫性，定期更新數據
+- [MEDIUM] 對於新用戶，初期預測準確性較低，可能需要時間來收集數據。
+  - 解法：建議在初期導入時使用基準帳號以提高預測準確性。
+- **[HIGH]** 升級版本後需要執行遷移步驟，否則可能導致數據不一致。
+  - 解法：務必遵循 README 中的升級指導進行遷移。
+- [MEDIUM] 使用過程中可能會遇到記錄不完整的情況。
+  - 解法：定期檢查和更新數據記錄，確保每次發佈都能正確記錄。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司內容團隊 | 非常適合 | 能夠幫助小型團隊在資源有限的情況下提升內容質量。 |
-| 大型媒體公司內容創作部門 | 普通 | 雖然可以提升判斷力，但大型團隊可能需要更複雜的工具來處理多樣化的內容需求。 |
-| 個人內容創作者 | 非常適合 | 能夠幫助個人創作者在內容創作上進行深入分析和持續改進。 |
-| 教育機構的內容開發團隊 | 不適合 | 教育機構可能需要更具結構化的內容開發流程，而這個工具較為靈活。 |
+| 10 人以下的新創公司後端 API | 適合 | 這個工具能夠幫助小型團隊快速迭代和優化內容策略。 |
+| 大型企業的內容創作團隊 | 普通 | 雖然可以使用，但可能需要更多的自定義和整合。 |
+| 自由職業者的社交媒體經營 | 非常適合 | 能夠快速提升內容的質量和影響力，特別是在社交媒體上。 |
+| 傳統行業的內容創作 | 不適合 | 這些行業可能不需要如此高頻率的數據分析和調整。 |
 
 ## 採用成本分析
 
@@ -258,18 +258,12 @@ retro videos//               # T+3d 數據 + 回顧
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到更精準的內容創作分析，值得嘗試。
+> 花 5 小時學、3 小時整合，得到更精準的內容評估，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，使用過程中不會暴露用戶的私人信息。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-這個工具最常與內容創作代理搭配使用，處於內容創作的分析環節。實際整合範例：在使用 Claude Code 的內容專案中，可以通過初始化工具來自動化評分和預測，具體做法是運行 `初始化 cheat-on-content`。這個工具支持與多種 CI/CD 工具的整合，降低了使用者的學習成本。整合摩擦點主要在於需要穩定的數據輸入，並且對於新手來說，可能需要一些時間來適應工具的使用。
+> 低風險：該工具不需要高權限，並且不會存取敏感資料。依賴的庫和工具經過審核，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -334,37 +328,37 @@ retro videos//               # T+3d 數據 + 回顧
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 334 |
-| Open Issues | 6 |
-| Issue 解決率 | 40% (4 closed) |
-| 最後推送 | 2026-05-11 |
+| Forks | 346 |
+| Open Issues | 5 |
+| Issue 解決率 | 44% (4 closed) |
+| 最後推送 | 2026-05-12 |
 | 建立日期 | 2026-05-05 |
-| Repo 大小 | 361 KB |
+| Repo 大小 | 377 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/XBuilderLAB/cheat-on-content) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Shell" : 51
->     "Python" : 49
+>     "Shell" : 52
+>     "Python" : 48
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Jooonnn](https://github.com/Jooonnn) | 8 |
+> | [@Jooonnn](https://github.com/Jooonnn) | 10 |
 > | [@woniuxuezhang](https://github.com/woniuxuezhang) | 6 |
 > | [@songth1ef](https://github.com/songth1ef) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，近期有持續的更新和互動。
+**社群活躍度**：社群活躍度中等，近期有多個問題被提出和解決。
 **連結**：[文件](https://github.com/XBuilderLAB/cheat-on-content)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-05 ~ 2026-05-08）
-> **活躍天數** 3 天 · **最新 commit** README: clarify target audience in hero description
+> [!abstract] 最近 10 次 commit（2026-05-07 ~ 2026-05-12）
+> **活躍天數** 3 天 · **最新 commit** fix: seal blind-channel actuals-leak via rubric_notes/rubric-memo split (#13)
 
 ## 熱門議題
 
@@ -374,6 +368,7 @@ retro videos//               # T+3d 數據 + 回顧
 > | [#10](https://github.com/XBuilderLAB/cheat-on-content/issues/10) | 能不能加上文字类平台的  比如 公众号等 | 0 | 1 |
 > | [#9](https://github.com/XBuilderLAB/cheat-on-content/issues/9) | 预测一下这个 Issue 能 Open 多久 | 0 | 2 |
 > | [#3](https://github.com/XBuilderLAB/cheat-on-content/issues/3) | 这个skill希望也能够支持cursor | 0 | 1 |
+> | [#2](https://github.com/XBuilderLAB/cheat-on-content/issues/2) | 请问能不能添加 tiktok 的支持？ | 0 | 1 |
 
 ## README 摘錄
 
@@ -478,7 +473,9 @@ retro videos//               # T+3d 數據 + 回顧
 > bash install.sh
 > ```
 > 
-> 13 sub-skills are symlinked into your agent's skill directory. One install, every content project gets it.
+> > ⚠️ **Upgrading from v0.x?** Run `/cheat-migrate` in your content project after `git pull`. The 1.3 → 1.4 migration is **BREAKING for blind-channel integrity** — it splits `rubric_notes.md` so the blind sub-agent can't leak actuals. Without migrate, blind scoring will keep flagging `non_blind_warning`. See [CHANGELOG](CHANGELOG.md) and [migrations/1.3-to-1.4.md](migrations/1.3-to-1.4.md).
+> 
+> 14 sub-skills are symlinked into your agent's skill directory. One install, every content project gets it.
 > 
 > **Supported agents**: Claude Code (default) · Codex (`bash install.sh --codex`) · Both (`bash install.sh --all`)
 > 
@@ -540,7 +537,7 @@ retro videos//               # T+3d 數據 + 回顧
 
 相關概念：[[自動化測試]] · [[資料視覺化]] · [[機器學習]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[AgentSeal--codeburn|AgentSeal/codeburn]]
 
 [GitHub](https://github.com/XBuilderLAB/cheat-on-content)
 

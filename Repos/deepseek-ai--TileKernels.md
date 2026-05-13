@@ -7,8 +7,8 @@ language: Python
 license: MIT
 description: "A kernel library written in tilelang"
 homepage: ""
-stars: 1499
-stars_per_day: 79
+stars: 1510
+stars_per_day: 76
 forks: 122
 open_issues: 12
 created: 2026-04-22
@@ -17,16 +17,16 @@ first_seen: 2026-04-25
 week: "2026-W17"
 month: "2026-04"
 category: "AI/ML"
-subcategory: "LLM 訓練"
+subcategory: "LLM 推論"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-25
-use_case: "提供針對 LLM 操作的優化 GPU 核心庫，使用 TileLang 實現。"
+use_case: "提供針對 LLM 操作的優化 GPU 核心庫，使用 TileLang 開發。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,21 +42,22 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-25"
-star_history: "2026-04-25:1072,2026-04-26:1160,2026-04-27:1219,2026-04-28:1281,2026-04-28:1282,2026-04-29:1320,2026-04-29:1320,2026-04-30:1351,2026-05-03:1414,2026-05-04:1418,2026-05-05:1431,2026-05-06:1443,2026-05-07:1462,2026-05-09:1487,2026-05-10:1491,2026-05-11:1494,2026-05-12:1499"
+star_history: "2026-04-25:1072,2026-04-26:1160,2026-04-27:1219,2026-04-28:1281,2026-04-28:1282,2026-04-29:1320,2026-04-29:1320,2026-04-30:1351,2026-05-03:1414,2026-05-04:1418,2026-05-05:1431,2026-05-06:1443,2026-05-07:1462,2026-05-09:1487,2026-05-10:1491,2026-05-11:1494,2026-05-12:1499,2026-05-13:1510"
 tags:
   - github
   - "category/ai_ml"
   - "lang/python"
   - org
+  - easy_install
 aliases:
   - "TileKernels"
   - "deepseek-ai/TileKernels"
-  - "提供針對 LLM 操作的優化 GPU 核心庫，使用 TileLang 實現。"
+  - "提供針對 LLM 操作的優化 GPU 核心庫，使用 TileLang 開發。"
 ---
 
 # TileKernels
 
-**1.5k** stars · **79** stars/天 · 建立 19 天前 · Python · MIT
+**1.5k** stars · **76** stars/天 · 建立 20 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/deepseek-ai--TileKernels");
@@ -69,23 +70,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`ORG`
+`ORG` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供針對 LLM 操作的優化 GPU 核心庫，使用 TileLang 實現。
+> 提供針對 LLM 操作的優化 GPU 核心庫，使用 TileLang 開發。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (79 stars/day)
-> **授權** MIT (商業友好) · **維護** Moderate (最後推送 18 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要在 NVIDIA GPU 上進行 LLM 訓練和推理的深度學習開發者。
-> **一句話重點** TileKernels 提供了一個專為 LLM 設計的 GPU 核心庫，能夠顯著提升運算效能，特別適合需要高效能計算的深度學習應用。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (76 stars/day)
+> **授權** MIT (商業友好) · **維護** Moderate (最後推送 19 天前) · **貢獻者** 2 人 · **參與度** Low
+> **適合** 需要優化 LLM 操作的研究人員和開發者，尤其是在高效能計算環境中。
+> **一句話重點** TileKernels 的創新在於使用 TileLang 來簡化 GPU 核心的開發，這對於需要高效能計算的 LLM 領域尤其重要。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/deepseek-ai--TileKernels");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "LLM 訓練" && p.file.name !== "deepseek-ai--TileKernels" && p.status !== "archived")
+>     .where(p => p.subcategory === "LLM 推論" && p.file.name !== "deepseek-ai--TileKernels" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,102 +97,110 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 LLM 訓練 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 LLM 推論 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習、15 小時整合，能夠獲得高效能的 LLM 訓練支持，值得考慮。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~10h · **綁定風險** medium
+> **結論** 花 10 小時學習，5 小時整合，得到高效能的 GPU 核心，值得投入。
 
 > [!abstract] 核心創新
-> 使用 TileLang 實現高效能的 GPU 核心，專為 LLM 操作優化。
+> 使用 TileLang 開發的高效能 GPU 核心，專為 LLM 操作優化。
 
 ## 專案簡介
 
-TileKernels 是一個專為大規模語言模型（LLM）操作設計的 GPU 核心庫，使用 TileLang 這個專門的語言來表達高效能的 GPU 核心。用戶可以透過簡單的 Python 語法來調用這些核心，並在內部訓練和推理場景中獲得接近硬體性能極限的運算效能。主要功能包括 Gating、MoE Routing、量化、轉置等，這些功能能夠有效地處理複雜的模型運算。核心庫的設計考量了計算強度和記憶體帶寬的最佳化，並且支持 NVIDIA SM90 或 SM100 架構的 GPU，這使得它在高效能計算上具備優勢。
+TileKernels 是一個針對大型語言模型（LLM）操作的優化 GPU 核心庫，使用 TileLang 這個專為高效能 GPU 核心設計的領域特定語言。用戶可以透過簡單的 Python 語法來表達複雜的 GPU 核心，並享受自動優化的好處。這個庫的核心功能包括 Gating、MoE Routing 和 Quantization，這些功能能夠有效地處理模型的計算強度和記憶體帶寬限制。使用者只需安裝必要的依賴，便可透過 `pip install tile-kernels` 來輕鬆獲取。技術上，TileKernels 依賴於 PyTorch 和 TileLang，並要求 NVIDIA SM90 或 SM100 架構的 GPU，這使得它在性能上能夠接近硬體極限。
 
-使用者可以透過 `torch.autograd.Function` 來將低層核心組合成可訓練的層，這樣的設計使得開發者能夠快速構建和測試新模型。這個庫的開發仍在進行中，並不代表最佳實踐，未來會持續改進代碼質量和文檔。相較於其他 GPU 核心庫，TileKernels 的優勢在於其專注於 LLM 特有的運算需求，並提供了針對性的優化。對於需要高效能 LLM 訓練的團隊，這是一個值得考慮的選擇。
+與其他類似工具相比，如 NVIDIA 的 cuDNN 或 TensorFlow 的 XLA，TileKernels 提供了更高層次的抽象，讓開發者能夠專注於模型設計而非底層優化。這個庫的設計理念是希望能夠簡化 GPU 核心的開發流程，並且在未來會持續改進代碼質量和文檔。使用者在實際應用中可能會遇到測試和文檔不足的問題，這是目前的主要痛點。整體來看，TileKernels 處於 alpha 階段，適合對 GPU 核心開發有興趣的開發者，但不建議用於生產環境的核心路徑上。
 
-**技術棧**：`TileLang` · `PyTorch 2.10` · `Python 3.10`
+**技術棧**：`TileLang` · `PyTorch 2.10` · `CUDA Toolkit 13.1`
 
 ## 重點功能
 
-- Gating — 提供 Top-k 專家選擇和評分功能，支持 Mixture of Experts 路由。
-- MoE Routing — 實現 Token-to-expert 映射，融合擴展/縮減和權重正規化。
-- Quantization — 支持 FP8/FP4/E5M6 的每個 Token、每個區塊和每個通道的量化操作。
-- Transpose — 支持批量轉置操作，提升數據處理效率。
-- Engram — 提供融合 RMSNorm 的 Engram gating 核心，支持前向/反向傳播和權重梯度縮減。
-- Manifold HyperConnection — 包含 Sinkhorn 正規化和混合拆分/應用的超連接核心。
-- Modeling — 高層次的 `torch.autograd.Function` 包裝器，將低層核心組合成可訓練的層。
+- Gating — 提供 Top-k 專家選擇和評分功能，適用於 Mixture of Experts 路由。
+- MoE Routing — 支持 token-to-expert 映射，融合擴展/縮減及權重正規化。
+- Quantization — 支持 FP8/FP4/E5M6 的每 token、每區塊和每通道量化。
+- Transpose — 提供批量轉置操作的高效能實現。
+- Engram — 包含融合 RMSNorm 的 Engram gating 核心，支持前向/反向傳播及權重梯度減少。
+- Manifold HyperConnection — 提供包括 Sinkhorn 正規化和混合分割/應用的超連接核心。
+- Modeling — 提供高層次的 `torch.autograd.Function` 包裝，將低層次核心組合成可訓練的層。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 安裝開發版本
 ```bash
-pip install tile_kernels
+pip install -e '.[dev]'
 ```
-2. 導入庫
+2. 安裝發行版本
 ```bash
-import tile_kernels
+pip install tile-kernels
 ```
-3. 使用核心進行計算
+3. 執行單元測試
 ```bash
-# 基於文件推測
-result = tile_kernels.some_function(input_data) # 預期輸出：計算結果
+pytest tests/transpose/test_transpose.py -n 4
+```
+
+## 程式碼範例
+
+```python
+[
+  "# 測試單個測試文件",
+  "pytest tests/transpose/test_transpose.py -n 4 # 只進行正確性測試",
+  "# 預期輸出：測試結果"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 19 天內累積 1499 stars（79/天），forks 122（8.1%），顯示出不錯的社群關注度。這個專案的主要貢獻者來自 DeepSeek 團隊，專注於 AI 和高效能計算，解決了在 GPU 上運行 LLM 時的性能瓶頸，提供了針對性的優化方案。隨著 AI 應用的增長，對於高效能計算的需求也在上升，這使得專案的實用性大幅提升。社群的反饋和需求驅動了這個專案的快速發展，並且在 GitHub 上的活躍度也顯示出其潛力。
+> 建立 20 天就累積 1510 stars（76/天），forks 122（8.1%），這顯示出相對活躍的社群參與。這個專案的主要貢獻者來自 DeepSeek 團隊，專注於高效能計算領域，解決了在 LLM 操作中對 GPU 核心優化的需求。之前的解決方案如 cuDNN 雖然功能強大，但在特定場景下缺乏靈活性。最近的推廣活動和社群討論可能促進了這個專案的曝光度。技術上，TileLang 的出現使得這種高效能 GPU 核心的開發變得更為可行，並且能夠簡化開發流程。forks/stars 比率在 8.1% 的範圍內，顯示出不少開發者對這個專案進行了實際的修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 NVIDIA GPU 上進行 LLM 訓練和推理的深度學習開發者。
+**目標受眾**：需要優化 LLM 操作的研究人員和開發者，尤其是在高效能計算環境中。
 
 > [!example] 使用場景
-> - AI 研究員用它來優化 LLM 訓練過程，因為其專為 GPU 設計的核心能顯著提升計算效能。
-> - 資料科學家用它來進行大規模數據處理，因為 TileKernels 提供了高效的量化和轉置功能，能加速模型推理。
-> - 開發者用它來構建新的深度學習模型，因為其簡單的 API 和高效的性能使得實驗更為便捷。
+> - 機器學習工程師用它來優化 LLM 的訓練過程，因為 TileKernels 提供了針對 GPU 的高效能核心，能顯著提升訓練速度。
+> - 研究人員用它來開發新的量化技術，因為其支持多種量化方法，能夠在保持精度的同時減少模型大小。
+> - 開發者用它來構建 Mixture of Experts 模型，因為其內建的 MoE Routing 功能能簡化專家選擇和映射的流程。
 
 ## 架構分析
 
-TileKernels 的架構基於 TileLang，這是一種專為 GPU 核心設計的領域特定語言。這種設計使得開發者能夠用 Python 語法輕鬆編寫高效能的 GPU 核心，並且能夠自動優化性能。資料流方面，使用者的輸入經過 TileLang 編譯後，轉換為 GPU 可執行的核心，這樣的設計能夠充分發揮硬體性能。選擇 TileLang 而非傳統的 CUDA 或 OpenCL，能夠降低開發難度，但可能在性能上有所妥協。這個架構的擴展性良好，但在處理極大規模的模型時，仍需考慮 GPU 記憶體的限制。
+TileKernels 採用模組化設計，將不同的核心功能分為多個子模組，如 MoE、量化和轉置等，這樣的設計使得開發者可以根據需求選擇性地使用。每個模組內部使用 TileLang 來實現高效能的 GPU 核心，並且通過 PyTorch 的 autograd 系統進行整合。這樣的架構選擇使得使用者能夠在高層次上進行模型設計，而不需深入底層實現，降低了開發門檻。選擇 TileLang 而非傳統的 CUDA 寫法，能夠提升開發效率，但可能在性能上略有折衷。整體上，這種模組化的設計使得未來的擴展和維護變得更加容易，尤其是在面對快速變化的 AI 領域時。
 
 ## 技術深入分析
 
-TileKernels 的核心技術機制是基於 TileLang，這是一種專為 GPU 核心設計的語言，能夠簡化高效能計算的開發過程。這個專案的設計選擇使得開發者可以用 Python 語法來編寫 GPU 核心，並且能夠自動優化性能。效能方面，這些核心已經在內部訓練和推理中使用，接近硬體性能的極限，但仍需進一步優化。選擇 TileLang 而非傳統的 CUDA，能夠降低開發門檻，但可能在性能上有所妥協。這個專案的依賴樹相對簡單，主要依賴 PyTorch 和 TileLang，這使得整體架構較為輕量。技術風險方面，隨著模型規模的擴大，可能會遇到記憶體瓶頸，特別是在使用大型模型時。整合方面，TileKernels 可以與現有的 PyTorch 生態系統無縫整合，並且能夠輕鬆地與 CI/CD pipeline 兼容，這使得在團隊中採用變得更加容易。
+TileKernels 的核心技術機制在於使用 TileLang 來編寫高效能的 GPU 核心，這種領域特定語言使得開發者能夠以更高層次的抽象來表達計算邏輯。這些核心功能如 Gating 和 MoE Routing，能夠在處理大規模數據時，最大化 GPU 的計算效能。效能方面，這些核心的設計能夠接近硬體的性能極限，特別是在 NVIDIA 的最新架構上。設計上選擇 TileLang 而非傳統的 CUDA，雖然可能在某些情況下性能略有損失，但卻大幅提升了開發效率和可維護性。這種選擇也降低了對開發者的技術要求，讓更多人能夠參與到高效能計算的開發中。技術風險方面，隨著專案的發展，可能會面臨 API 穩定性和文檔不足的問題，這需要社群的持續投入來解決。整合方面，TileKernels 與 PyTorch 的兼容性良好，能夠輕鬆融入現有的深度學習工作流中，並且支持 CI/CD 的集成，這使得它在團隊合作中表現出色。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了基本的介紹，但缺乏詳細的範例和使用指導。安裝過程相對順暢，但仍需注意 Python 和 GPU 的版本相容性。文件目前僅提供英文，對於非英語使用者可能會造成困難。
+> README 文件提供了清晰的安裝和使用指導，並包含了測試範例。安裝過程相對順暢，但對於新手來說，可能需要一些時間來理解 TileLang 的概念。文件目前僅提供英文版本，對於非英語使用者可能會造成障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 專為 LLM 設計的高效能 GPU 核心，能顯著提升計算速度。
-> - 使用 TileLang 降低了 GPU 核心開發的門檻。
-> - 提供多種先進的功能，如量化和 Gating，適合複雜模型的需求。
+> - 提供高效能的 GPU 核心，適合 LLM 操作
+> - 模組化設計，便於擴展和維護
+> - 使用 TileLang 降低了開發難度
 
 > [!danger] 缺點
-> - 目前仍在 alpha 階段，穩定性不足。
-> - 文檔和測試不夠完善，使用者需自行摸索。
-> - 僅支援特定的 NVIDIA GPU 架構，限制了使用範圍。
+> - 目前處於 alpha 階段，API 可能不穩定
+> - 文檔和測試尚不完善
+> - 僅支持特定的 GPU 架構
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.10 以上版本。
-> - 需要 NVIDIA SM90 或 SM100 架構的 GPU。
-> - 目前仍在 alpha 階段，API 可能不穩定。
-> - 文檔和測試尚未完善，使用時需自行探索。
+> - 僅支援 Python 3.10 以上版本
+> - 需要 NVIDIA SM90 或 SM100 架構的 GPU
+> - 目前處於 alpha 階段，API 可能不穩定
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於多代理系統的開發，而 TileKernels 專注於 LLM 的 GPU 核心優化。 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | NemoClaw 提供了更全面的 AI 模型訓練框架，而 TileKernels 更專注於性能優化的核心實現。 |
+| [NVIDIA/cudnn](https://github.com/NVIDIA/cudnn) | cuDNN 提供了針對深度學習的 GPU 加速，但缺乏 TileKernels 的高層次抽象，開發者需要更多底層優化的知識。 |
+| [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow) | TensorFlow 提供了完整的深度學習框架，但在針對特定 GPU 核心的優化上不如 TileKernels 靈活。 |
 
 ## 替代方案決策
 
@@ -199,16 +208,16 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專為 GPU 核
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 AI 模型的訓練和推理，使用 TensorFlow 實現，而 TileKernels 使用 PyTorch 和 TileLang，專注於 GPU 核心優化。 | 如果你的團隊已經在使用 TensorFlow 進行模型開發，並且需要一個完整的訓練框架。 | medium，因為需要轉換到不同的框架和語言。 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 提供了更全面的 AI 模型訓練框架，並且支持多種硬體，而 TileKernels 更專注於性能優化的核心實現。 | 如果需要一個全面的訓練框架，並且希望支持多種硬體架構。 | high，因為需要重新設計模型架構以適應不同的框架。 |
+| [NVIDIA/cudnn](https://github.com/NVIDIA/cudnn) | cuDNN 提供了針對深度學習的 GPU 加速，專注於性能優化，但缺乏高層次的抽象。 | 如果你的團隊已經在使用 NVIDIA 的生態系統，並需要極致的性能優化。 | medium，因為需要重新設計部分核心邏輯。 |
+| [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow) | TensorFlow 提供完整的深度學習框架，支持多種後端，但在特定 GPU 核心的優化上不如 TileKernels 靈活。 | 如果你的專案需要一個全面的深度學習解決方案，並且不需要專門針對 GPU 核心的優化。 | high，因為需要重構整個模型架構。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **TileKernels** | **boneyard** | **NemoClaw** |
+> | 維度 | **TileKernels** | **cudnn** | **tensorflow** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 AI 模型的訓練和推理，使用 TensorFlow 實現，而 TileKernels 使用 PyTorch 和 TileLang，專注於 GPU 核心優化。 | 提供了更全面的 AI 模型訓練框架，並且支持多種硬體，而 TileKernels 更專注於性能優化的核心實現。 |
-> | 遷移成本 | - | medium，因為需要轉換到不同的框架和語言。 | high，因為需要重新設計模型架構以適應不同的框架。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 TensorFlow 進行模型開發， | 如果需要一個全面的訓練框架，並且希望支持多種硬體架構。 |
+> | 技術路線 | 本專案 | cuDNN 提供了針對深度學習的 GPU 加速，專注於性能優化，但缺乏高層次的抽象。 | TensorFlow 提供完整的深度學習框架，支持多種後端，但在特定 GPU 核心的優化上不如 TileKernels 靈活。 |
+> | 遷移成本 | - | medium，因為需要重新設計部分核心邏輯。 | high，因為需要重構整個模型架構。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 NVIDIA 的生態系統，並需要極致 | 如果你的專案需要一個全面的深度學習解決方案，並且不需要專門針 |
 
 ## 成熟度評估
 
@@ -219,43 +228,56 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專為 GPU 核
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和探索，但不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在使用 Gating 功能時，可能會遇到性能不穩定的情況，特別是在大規模數據上運行時。
-  - 解法：減少同時處理的數據量，或調整 Gating 參數以獲得更穩定的性能。
-- [MEDIUM] 文檔不完整，可能導致使用者在使用過程中遇到困難。
-  - 解法：參考 GitHub Issues 中的討論，或聯繫開發者以獲取幫助。
-- **[HIGH]** 在特定的 NVIDIA GPU 上，可能會遇到不兼容的情況。
-  - 解法：確保使用符合要求的 GPU 架構，並更新驅動程式。
+- [MEDIUM] 測試時可能會遇到隨機性問題，導致測試結果不一致
+  - 解法：使用 --seed 參數來固定隨機種子
+- **[HIGH]** 文檔不完整，某些功能的使用方法不明確
+  - 解法：參考源碼或社群討論以獲得更多信息
+- **[HIGH]** 對於非 NVIDIA GPU 的支持有限，可能無法運行
+  - 解法：確保使用符合要求的 NVIDIA GPU
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 大型 AI 團隊進行 LLM 訓練 | 非常適合 | 專為 LLM 設計的高效能 GPU 核心，能顯著提升計算速度。 |
-| 小型團隊進行深度學習實驗 | 適合 | 簡單的 API 和高效的性能使得實驗更為便捷。 |
-| 非專業開發者進行 AI 開發 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
+| 10 人以下的新創公司開發 LLM 應用 | 非常適合 | 提供了針對 LLM 的優化核心，能夠提升開發效率和性能。 |
+| 大型企業的生產環境 | 不適合 | 目前處於 alpha 階段，API 穩定性不足。 |
+| 學術研究團隊進行 GPU 核心開發 | 適合 | 提供了高效能的 GPU 核心，並且使用 TileLang 降低了開發難度。 |
+| 需要快速原型開發的個人開發者 | 非常適合 | 簡化了 GPU 核心的開發流程，適合快速迭代。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~10 小時 |
-| 整合時間 | ~15 小時 |
+| 整合時間 | ~5 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習、15 小時整合，能夠獲得高效能的 LLM 訓練支持，值得考慮。
+> 花 10 小時學習，5 小時整合，得到高效能的 GPU 核心，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，主要依賴於 PyTorch 和 TileLang，並不存取敏感資料。
+> 低風險：該工具不需要高權限，且不會存取敏感資料，但需注意依賴的庫是否存在已知漏洞。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+TileKernels 通常與 PyTorch 搭配使用，作為深度學習模型的 GPU 核心。在一個使用 PyTorch 的專案中，開發者可以通過 `import tile_kernels` 來引入這些優化的核心，並在模型訓練過程中使用。該工具支持與 GitHub Actions 等 CI 工具整合，方便自動化測試和部署。與主流 IDE 如 VS Code 的整合良好，能夠提供即時的錯誤檢查和補全功能。整合過程中，開發者可能需要調整一些配置，以確保與現有工具鏈的兼容性。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 TileKernels 出現之前，開發者主要依賴於 NVIDIA 的 cuDNN 和 TensorFlow 來進行 GPU 加速，但這些工具的使用門檻較高，且缺乏針對特定應用的靈活性。隨著 TileLang 的發展，這種高效能 GPU 核心的開發變得更加可行，並且能夠簡化開發流程。TileKernels 代表了在 AI 領域中對於開發效率和性能優化的追求，未來可能會隨著社群的發展而持續演進。
 
 ## 健康度儀表板
 
@@ -336,7 +358,7 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專為 GPU 核
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有合併請求和問題回應。
+**社群活躍度**：社群活躍度中等，仍在積極開發中。
 **連結**：[文件](https://github.com/deepseek-ai/TileKernels)
 
 ## 開發動態
@@ -445,7 +467,7 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專為 GPU 核
 
 ## 延伸閱讀
 
-相關概念：[[GPU 優化]] · [[深度學習]] · [[量化技術]]
+相關概念：[[深度學習]] · [[GPU 加速]] · [[量化技術]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[432539--gpt2api|432539/gpt2api]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[0xGF--boneyard|0xGF/boneyard]] · [[kyegomez--OpenMythos|kyegomez/OpenMythos]] · [[tanishqkumar--ssd|tanishqkumar/ssd]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]]
 
@@ -453,11 +475,11 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專為 GPU 核
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：LLM 訓練）
+> [!note]- 直接競品（同子分類：LLM 推論）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "LLM 訓練" AND file.name != "deepseek-ai--TileKernels"
+> WHERE subcategory = "LLM 推論" AND file.name != "deepseek-ai--TileKernels"
 > SORT stars DESC
 > ```
 
@@ -489,7 +511,7 @@ TileKernels 的核心技術機制是基於 TileLang，這是一種專為 GPU 核
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["GPU 優化","深度學習","量化技術"];
+> const concepts = ["深度學習","GPU 加速","量化技術"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "deepseek-ai--TileKernels" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
