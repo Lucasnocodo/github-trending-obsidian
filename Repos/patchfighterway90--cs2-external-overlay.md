@@ -410,7 +410,7 @@ cs2-external-overlay 的核心技術機制基於 Python 和 ImGui，這使得它
 
 相關概念：[[遊戲開發]] · [[外部工具]] · [[即時通訊]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]]
 
 [GitHub](https://github.com/patchfighterway90/cs2-external-overlay)
 
