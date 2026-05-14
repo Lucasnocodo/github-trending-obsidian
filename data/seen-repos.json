@@ -1576,10 +1576,10 @@
   },
   "V4bel/dirtyfrag": {
     "first_seen": "2026-05-09",
-    "last_seen": "2026-05-13",
-    "times_seen": 5,
+    "last_seen": "2026-05-14",
+    "times_seen": 6,
     "stars_first": 2889,
-    "stars_last": 4331
+    "stars_last": 4421
   },
   "antirez/ds4": {
     "first_seen": "2026-05-09",
@@ -1604,10 +1604,10 @@
   },
   "vercel-labs/zero-native": {
     "first_seen": "2026-05-10",
-    "last_seen": "2026-05-13",
-    "times_seen": 4,
+    "last_seen": "2026-05-14",
+    "times_seen": 5,
     "stars_first": 1650,
-    "stars_last": 2953
+    "stars_last": 3289
   },
   "raiyanyahya/how-to-train-your-gpt": {
     "first_seen": "2026-05-10",
@@ -1618,10 +1618,10 @@
   },
   "huangserva/3DCellForge": {
     "first_seen": "2026-05-11",
-    "last_seen": "2026-05-13",
-    "times_seen": 3,
+    "last_seen": "2026-05-14",
+    "times_seen": 4,
     "stars_first": 757,
-    "stars_last": 1711
+    "stars_last": 1809
   },
   "WenyuChiou/awesome-agentic-ai-zh": {
     "first_seen": "2026-05-11",
@@ -1646,10 +1646,10 @@
   },
   "FULU-Foundation/OrcaSlicer-bambulab": {
     "first_seen": "2026-05-13",
-    "last_seen": "2026-05-13",
-    "times_seen": 1,
+    "last_seen": "2026-05-14",
+    "times_seen": 2,
     "stars_first": 1168,
-    "stars_last": 1168
+    "stars_last": 2955
   },
   "pixel-point/media-downloader": {
     "first_seen": "2026-05-13",
@@ -1657,5 +1657,47 @@
     "times_seen": 1,
     "stars_first": 596,
     "stars_last": 596
+  },
+  "Nightmare-Eclipse/YellowKey": {
+    "first_seen": "2026-05-14",
+    "last_seen": "2026-05-14",
+    "times_seen": 1,
+    "stars_first": 1000,
+    "stars_last": 1000
+  },
+  "ywnd1144/Gopay_plus_automatic": {
+    "first_seen": "2026-05-14",
+    "last_seen": "2026-05-14",
+    "times_seen": 1,
+    "stars_first": 712,
+    "stars_last": 712
+  },
+  "HermannBjorgvin/Clawdmeter": {
+    "first_seen": "2026-05-14",
+    "last_seen": "2026-05-14",
+    "times_seen": 1,
+    "stars_first": 683,
+    "stars_last": 683
+  },
+  "haydenbleasel/files-sdk": {
+    "first_seen": "2026-05-14",
+    "last_seen": "2026-05-14",
+    "times_seen": 1,
+    "stars_first": 645,
+    "stars_last": 645
+  },
+  "thakur-works/DarkGPT": {
+    "first_seen": "2026-05-14",
+    "last_seen": "2026-05-14",
+    "times_seen": 1,
+    "stars_first": 534,
+    "stars_last": 534
+  },
+  "patchfighterway90/cs2-external-overlay": {
+    "first_seen": "2026-05-14",
+    "last_seen": "2026-05-14",
+    "times_seen": 1,
+    "stars_first": 533,
+    "stars_last": 533
   }
 }
