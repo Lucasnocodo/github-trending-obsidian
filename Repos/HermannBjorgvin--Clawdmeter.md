@@ -7,12 +7,12 @@ language: C
 license: N/A
 description: "ESP32 desk dashboard that shows Claude Code usage"
 homepage: ""
-stars: 685
-stars_per_day: 343
-forks: 41
-open_issues: 1
+stars: 869
+stars_per_day: 290
+forks: 62
+open_issues: 2
 created: 2026-05-11
-pushed_at: 2026-05-12
+pushed_at: 2026-05-14
 first_seen: 2026-05-14
 week: "2026-W20"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "提供一個 ESP32 儀表板，實時監控 Claude Code 的使用情�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-17"
+appearances: 2
+next_review: "2026-05-18"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-14"
-star_history: "2026-05-14:683,2026-05-14:685"
+star_history: "2026-05-14:683,2026-05-14:685,2026-05-15:869"
 tags:
   - github
   - "category/開發工具"
@@ -842,4 +842,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-15|2026-05-15]] — 再次上榜，869 stars
 - [[2026-05-14|2026-05-14]] — 首次收錄，683 stars

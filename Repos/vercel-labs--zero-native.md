@@ -7,10 +7,10 @@ language: Zig
 license: Apache-2.0
 description: "Build desktop + mobile apps with Zig and web UI"
 homepage: "https://zero-native.dev"
-stars: 3289
-stars_per_day: 658
-forks: 139
-open_issues: 30
+stars: 3496
+stars_per_day: 583
+forks: 143
+open_issues: 31
 created: 2026-05-08
 pushed_at: 2026-05-13
 first_seen: 2026-05-10
@@ -30,8 +30,8 @@ use_case: "用 Zig 和網頁 UI 構建桌面和移動應用，實現小型二進
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-05-17"
+appearances: 6
+next_review: "2026-05-18"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-10"
-star_history: "2026-05-10:1650,2026-05-11:2308,2026-05-12:2649,2026-05-13:2953,2026-05-14:3289"
+star_history: "2026-05-10:1650,2026-05-11:2308,2026-05-12:2649,2026-05-13:2953,2026-05-14:3289,2026-05-15:3496"
 tags:
   - github
   - "category/開發工具"
@@ -831,6 +831,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-15|2026-05-15]] — 再次上榜，3.5k stars
 - [[2026-05-14|2026-05-14]] — 再次上榜，3.3k stars
 - [[2026-05-13|2026-05-13]] — 再次上榜，3.0k stars
 - [[2026-05-12|2026-05-12]] — 再次上榜，2.6k stars

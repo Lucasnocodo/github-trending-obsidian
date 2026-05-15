@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "AI-powered interactive 3D cell generation and exploration studio."
 homepage: ""
-stars: 1809
-stars_per_day: 603
-forks: 309
+stars: 2011
+stars_per_day: 503
+forks: 336
 open_issues: 1
 created: 2026-05-10
-pushed_at: 2026-05-13
+pushed_at: 2026-05-14
 first_seen: 2026-05-11
 week: "2026-W20"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "提供 AI 驅動的互動式 3D 細胞生成與探索平台。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-05-17"
+appearances: 5
+next_review: "2026-05-18"
 contributor_count: 0
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-11"
-star_history: "2026-05-11:757,2026-05-12:1405,2026-05-13:1711,2026-05-14:1809"
+star_history: "2026-05-11:757,2026-05-12:1405,2026-05-13:1711,2026-05-14:1809,2026-05-15:2011"
 tags:
   - github
   - "category/其他"
@@ -787,6 +787,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-15|2026-05-15]] — 再次上榜，2.0k stars
 - [[2026-05-14|2026-05-14]] — 再次上榜，1.8k stars
 - [[2026-05-13|2026-05-13]] — 再次上榜，1.7k stars
 - [[2026-05-12|2026-05-12]] — 再次上榜，1.4k stars

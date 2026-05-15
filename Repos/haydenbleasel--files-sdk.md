@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "A unified storage SDK for object and blob backends. One small, honest API. Web-standards I/O."
 homepage: "https://files-sdk.dev/"
-stars: 645
-stars_per_day: 129
-forks: 15
-open_issues: 6
+stars: 667
+stars_per_day: 111
+forks: 16
+open_issues: 3
 created: 2026-05-08
-pushed_at: 2026-05-10
+pushed_at: 2026-05-15
 first_seen: 2026-05-14
 week: "2026-W20"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "提供統一的物件和 blob 存儲 SDK，簡化不同後端的操�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-21"
+appearances: 2
+next_review: "2026-05-22"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-14"
-star_history: "2026-05-14:645"
+star_history: "2026-05-14:645,2026-05-15:667"
 tags:
   - github
   - "category/開發工具"
@@ -741,4 +741,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-15|2026-05-15]] — 再次上榜，667 stars
 - [[2026-05-14|2026-05-14]] — 首次收錄，645 stars
