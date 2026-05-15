@@ -7,9 +7,9 @@ language: N/A
 license: MIT
 description: "YellowKey Bitlocker Bypass Vulnerability"
 homepage: ""
-stars: 1756
-stars_per_day: 878
-forks: 415
+stars: 1759
+stars_per_day: 880
+forks: 416
 open_issues: 12
 created: 2026-05-12
 pushed_at: 2026-05-12
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-14
-use_case: "利用 YellowKey 漏洞繞過 Bitlocker 加密保護。"
+use_case: "繞過 Bitlocker 保護的漏洞，讓攻擊者能夠獲取未經授權的存取權限。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-14"
-star_history: "2026-05-14:1000,2026-05-14:1002,2026-05-15:1756"
+star_history: "2026-05-14:1000,2026-05-14:1002,2026-05-15:1756,2026-05-15:1759"
 tags:
   - github
   - "category/安全"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "YellowKey"
   - "Nightmare-Eclipse/YellowKey"
-  - "利用 YellowKey 漏洞繞過 Bitlocker 加密保護。"
+  - "繞過 Bitlocker 保護的漏洞，讓攻擊者能夠獲取未經授權的存取權限。"
 ---
 
 # YellowKey
 
-**1.0k** stars · **1.0k** stars/天 · 建立 1 天前 · N/A · MIT
+**1.8k** stars · **880** stars/天 · 建立 2 天前 · N/A · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Nightmare-Eclipse--YellowKey");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 利用 YellowKey 漏洞繞過 Bitlocker 加密保護。
+> 繞過 Bitlocker 保護的漏洞，讓攻擊者能夠獲取未經授權的存取權限。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (1.0k stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要評估 Windows Bitlocker 安全性且具備一定技術背景的安全專業人士。
-> **一句話重點** YellowKey 漏洞的存在揭示了 Windows 系統在安全設計上的重大缺陷，特別是在處理加密保護時。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (880 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 專注於 Windows 安全性測試的安全研究者和滲透測試工程師。
+> **一句話重點** 這個專案揭示了 Windows 11 中一個嚴重的 Bitlocker 繞過漏洞，對於安全研究者來說，這是值得關注的安全議題。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,108 +101,93 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，得到快速評估 Bitlocker 安全性的工具，值得考慮。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，1 小時整合，能快速評估系統安全性，值得一試。
 
 > [!abstract] 核心創新
-> 這個專案揭示了一個針對 Windows Bitlocker 的重大安全漏洞，可能是設計上的後門。
+> 這個專案揭示了一個在 Windows Recovery Environment 中的 Bitlocker 繞過漏洞，顯示出其潛在的安全風險。
 
 ## 專案簡介
 
-YellowKey 是一個針對 Windows Bitlocker 的安全漏洞，允許使用者繞過加密保護。使用者只需將特定的 FsTx 文件夾複製到 USB 隨身碟的系統卷資訊中，然後重啟進入 Windows Recovery Environment，便可獲得對 Bitlocker 保護磁碟的完全訪問權限。這個漏洞的設計似乎暗示著某種後門，因為相關組件僅存在於 WinRE 映像中，而在正常的 Windows 安裝中則缺乏這種功能。這種設計的原因尚不明確，可能是故意為之。此漏洞僅影響 Windows 11 和 Server 2022/2025，Windows 10 不受影響。使用者在實際操作中需注意，這個漏洞的利用過程相對簡單，但其潛在風險極高，因為它可能被用於未經授權的數據訪問。這個專案的賣點在於其簡易的利用方式和對 Bitlocker 的直接威脅。
+YellowKey 是一個針對 Windows 11 的 Bitlocker 繞過漏洞，能讓使用者在不需要輸入密碼的情況下，獲取對加密磁碟的完全存取權。這個漏洞的核心在於一個特殊的組件，該組件僅存在於 Windows Recovery Environment (WinRE) 中，透過特定的步驟，使用者可以在開機時進入一個未受限的 shell，從而繞過 Bitlocker 的保護。具體步驟包括將特定檔案複製到 USB 隨身碟，然後在目標電腦上進入 WinRE，並透過鍵盤組合啟動 shell。這樣的設計使得攻擊者可以在不需要物理接觸的情況下，利用這個漏洞進行攻擊，顯示出其潛在的危險性。這個漏洞的存在引發了對於 Windows 安全性的質疑，尤其是為何這個組件在正常的 Windows 安裝中並不具備相同的功能。
 
-技術上，這個漏洞的存在揭示了 Windows 系統在安全設計上的重大缺陷，特別是在處理加密保護時。與其他安全工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，YellowKey 專注於特定的 Bitlocker 繞過，而不是一般的安全檢測或防護。這使得它在特定情境下的威脅性更高，但也意味著使用者需具備一定的技術背景來進行操作。社群活躍度不高，目前僅有 5 個開放的問題，顯示出使用者在實際應用中可能遇到的困難和不確定性。這個專案的成熟度尚未確定，因為它剛剛建立，未來的發展方向仍需觀察。對於需要進行安全測試的專業人員來說，YellowKey 提供了一個有趣的工具，但在使用時必須謹慎考量其潛在的法律與道德風險。
+相較於其他 Bitlocker 繞過工具，YellowKey 的操作過程簡單且不需要複雜的設置，這使得它在攻擊者中具有吸引力。使用者需要注意的是，這個漏洞僅影響 Windows 11 和 Server 2022/2025，而 Windows 10 則不受影響。由於這個工具的潛在危險性，建議對於安全性有高要求的環境應該立即進行評估和修補。這個專案目前仍在活躍開發中，並且有著活躍的社群反饋，顯示出其在安全研究領域的影響力。
 
 ## 重點功能
 
-- Bitlocker 繞過 — 透過簡單的文件複製和重啟流程，獲得對加密磁碟的完全訪問權限。
-- 無需外部設備 — 只需在系統內部操作，降低了利用的複雜性。
-- 專注於 Windows 11 — 針對最新版本的 Windows 系統，顯示出其針對性。
-- 簡易重現 — 提供清晰的步驟，讓使用者能快速重現漏洞。
-- 社群互動 — 開放的問題和討論區域，讓使用者能分享經驗和解決方案。
+- Bitlocker 繞過 — 透過特定步驟獲取對加密磁碟的完全存取權。
+- 簡單操作 — 只需將檔案複製到 USB 隨身碟並進入 WinRE。
+- 針對 Windows 11 — 僅影響 Windows 11 和 Server 2022/2025，Windows 10 不受影響。
+- 無需外部設備 — 可以直接從 EFI 分區複製檔案，不需要外部存儲。
+- 社群反饋 — 有活躍的社群討論和問題回報，幫助改進工具。
 
 ## 快速開始
 
-1. 複製 FsTx 文件夾
+1. 將 FsTx 資料夾複製到 USB 隨身碟
 ```bash
-將 FsTx 複製到 "YourUSBStick:\System Volume Information\FsTx"
+Copy FsTx to YourUSBStick:\System Volume Information\FsTx
 ```
-2. 插入 USB 隨身碟
+2. 將 USB 隨身碟插入目標電腦
 ```bash
-將 USB 隨身碟插入目標 Windows 電腦
+Plug USB into target Windows computer
 ```
-3. 重啟進入 Windows Recovery Environment
+3. 重啟並進入 Windows Recovery Environment
 ```bash
-按住 SHIFT 並點擊重啟
+Hold SHIFT and click Restart
+```
+4. 在重啟時按住 CTRL 鍵
+```bash
+Hold CTRL while clicking Restart
+```
+5. 確認 shell 成功啟動
+```bash
+Check for unrestricted access to Bitlocker volume
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 1002 stars（1002/天），forks 229（22.9%），這顯示出極高的興趣和關注。作者 Nightmare-Eclipse 似乎在安全領域有一定的影響力，這個專案解決了 Bitlocker 繞過的痛點，之前的工具無法提供這樣的簡易性和直接性。此漏洞的曝光引起了社群的廣泛討論，尤其是對於安全性和隱私的關注。技術生態中，Windows 系統的安全性問題一直是熱門話題，這使得相關工具的需求持續上升。高達 22.9% 的 forks/stars 比率顯示許多人在實際修改和使用這個工具，反映出其實用性和潛在威脅。
+> 建立 2 天就累積 1759 stars（879.5/天），forks 416（23.6%），這顯示出這是一個受到廣泛關注的安全漏洞。作者 Nightmare-Eclipse 是一位知名的安全研究者，過去也有多個相關的漏洞發現。這個工具解決了 Bitlocker 繞過的痛點，之前的解決方案往往需要複雜的環境設置或不夠直觀。近期的安全討論和社群反饋也促進了這個工具的曝光。技術生態的變化，如對於 Windows 安全性漏洞的重視，也讓這個工具的需求上升。Forks/stars 比率為 23.6%，顯示出許多人在實際修改和使用這個工具。
 
 ## 適合誰使用
 
-**目標受眾**：需要評估 Windows Bitlocker 安全性且具備一定技術背景的安全專業人士。
+**目標受眾**：專注於 Windows 安全性測試的安全研究者和滲透測試工程師。
 
 > [!example] 使用場景
-> - 安全研究員用它來測試 Bitlocker 的安全性，因為這能快速驗證加密的有效性和潛在漏洞。
-> - 滲透測試者用它來評估企業環境中的資料保護措施，因為這能揭示加密系統的弱點。
-> - IT 支援人員用它來檢查和修復被鎖定的 Bitlocker 磁碟，因為這能快速恢復對資料的訪問。
+> - 安全研究員用它來測試 Windows 11 的 Bitlocker 安全性，因為這個漏洞能快速驗證系統的防護能力。
+> - 滲透測試工程師用它來評估客戶的資料保護措施，因為這能揭示出潛在的安全風險。
+> - 系統管理員用它來檢查自家系統的安全性，因為這樣可以確保沒有未經授權的存取風險。
 
 ## 架構分析
 
-這個專案的架構相對簡單，主要依賴於將特定文件複製到 USB 隨身碟中，然後透過 Windows Recovery Environment 進行操作。這種設計使得利用過程不需要複雜的配置，但也意味著使用者必須具備一定的技術知識來執行。資料流方面，使用者需將文件放置在特定位置，然後透過重啟進入特定環境來觸發漏洞。這種方法的優勢在於其簡易性，但也可能帶來安全風險，因為不當使用可能導致資料洩露或法律問題。擴展性方面，這個工具的使用範圍相對有限，主要針對特定的 Windows 版本和環境。
+這個專案的架構主要依賴於 Windows Recovery Environment 的特殊組件，這個組件在正常的 Windows 安裝中並不存在。透過將特定檔案複製到 USB 隨身碟，使用者可以在啟動過程中進入一個未受限的 shell。這樣的設計使得攻擊者能夠在不需要物理接觸的情況下，繞過 Bitlocker 的保護。這種方法的代價是需要對 WinRE 有一定的了解，並且在某些環境中可能會受到限制。擴展性方面，這個漏洞僅影響特定版本的 Windows，未來可能會隨著系統更新而被修補。
 
 ## 技術深入分析
 
-YellowKey 利用了一個特定的漏洞，允許使用者在 Windows Recovery Environment 中獲得對 Bitlocker 磁碟的完全訪問權限。這個漏洞的核心在於特定組件的存在，該組件僅在 WinRE 中可用，而在正常的 Windows 環境中則缺乏這種功能。這種設計的背後可能隱含著安全性考量，但目前尚無法確定其意圖。從效能上來看，這個漏洞的利用過程相對簡單，並不需要大量資源，但其潛在風險卻極高，因為它可能被用於未經授權的數據訪問。設計上，選擇將漏洞利用過程簡化，使得更多使用者能夠輕鬆重現，但這也意味著安全性可能受到威脅。技術風險方面，這個漏洞的存在可能在未來的 Windows 更新中被修補，導致目前的利用方式失效。整合方面，這個工具的使用與主流安全工具的整合度不高，因為它主要針對特定的漏洞，而不是一般的安全檢測。
+YellowKey 的核心技術機制在於利用 Windows Recovery Environment 中的特殊組件，這個組件能在特定情境下繞過 Bitlocker 的保護。透過將檔案複製到 USB 隨身碟，使用者可以在重啟過程中進入未受限的 shell，這樣的設計使得攻擊者能夠在不需要物理接觸的情況下，獲取對加密磁碟的存取權。這個漏洞的效能特性在於其操作簡單，且不需要複雜的設置，能在短時間內完成繞過。設計取捨方面，這個工具的依賴性較低，僅需對 WinRE 有一定的了解。技術風險評估方面，這個漏洞可能在未來的系統更新中被修補，使用者需注意更新後的安全性。整合分析方面，這個工具主要針對 Windows 環境，與其他主流安全工具的整合性較低，但能有效地用於滲透測試和安全評估。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的步驟和操作說明，讓使用者能夠快速上手。安裝過程相對簡單，無需複雜的配置。文件中未提供多語言支持，可能對非英語使用者造成困難。
+> README 文件清晰，提供了詳細的操作步驟和預期結果。安裝過程相對順暢，無需複雜的配置。文件中未提供多語言支持，但內容簡潔易懂，適合有一定技術背景的使用者。整體而言，花 30 分鐘應該能夠順利運行。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用，能快速獲得對 Bitlocker 磁碟的訪問權限。
-> - 不需要額外的硬體設備，降低了使用門檻。
-> - 針對最新的 Windows 版本，顯示出其時效性。
+> - 操作簡單，無需複雜設置。
+> - 能快速獲取對 Bitlocker 磁碟的存取權。
+> - 針對特定版本的 Windows，能有效測試系統安全性。
 
 > [!danger] 缺點
-> - 僅限於特定的 Windows 版本，使用範圍有限。
-> - 可能違反法律和道德規範，需謹慎使用。
-> - 社群活躍度不高，問題解決率低。
+> - 僅限於 Windows 11 和 Server 2022/2025，適用範圍有限。
+> - 存在被檢測的風險，使用時需謹慎。
+> - 可能受到系統安全政策的限制，無法在某些環境中使用。
 
 > [!warning] 注意事項
-> - 僅影響 Windows 11 和 Server 2022/2025，Windows 10 不受影響。
-> - 需要一定的技術背景來執行漏洞利用過程。
-> - 可能違反法律和道德規範，使用時需謹慎。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於更廣泛的安全測試，而 YellowKey 專注於特定的 Bitlocker 繞過。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供一般的安全檢測工具，而 YellowKey 針對特定漏洞進行繞過。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於更廣泛的安全測試，而 YellowKey 專注於特定的 Bitlocker 繞過。 | 如果需要進行全面的安全測試，而不僅僅是針對 Bitlocker 的繞過。 | medium，因為需要重新學習不同的工具和流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供一般的安全檢測工具，而 YellowKey 針對特定漏洞進行繞過。 | 如果需要更全面的安全檢測，而不僅僅是針對 Bitlocker 的漏洞利用。 | medium，因為需要適應不同的操作方式和工具特性。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **YellowKey** | **agent-sprite-forge** | **boneyard** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於更廣泛的安全測試，而 YellowKey 專注於特定的 Bitlocker 繞過。 | 提供一般的安全檢測工具，而 YellowKey 針對特定漏洞進行繞過。 |
-> | 遷移成本 | - | medium，因為需要重新學習不同的工具和流程。 | medium，因為需要適應不同的操作方式和工具特性。 |
-> | 適用場景 | 主要場景 | 如果需要進行全面的安全測試，而不僅僅是針對 Bitlocke | 如果需要更全面的安全檢測，而不僅僅是針對 Bitlocker |
+> - 僅支援 Windows 11 和 Server 2022/2025，Windows 10 不受影響。
+> - 需要對 Windows Recovery Environment 有一定的操作經驗。
+> - 可能受到系統安全政策的限制，無法在某些環境中使用。
+> - 存在被檢測的風險，使用時需謹慎。
 
 ## 成熟度評估
 
@@ -213,27 +198,27 @@ YellowKey 利用了一個特定的漏洞，允許使用者在 Windows Recovery E
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合安全研究和測試，但不建議用於生產環境。
+> 適合安全研究和滲透測試，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些系統上可能無法重現漏洞，特別是非標準的 Windows 安裝。
-  - 解法：確保使用標準的 Windows 11 安裝，並遵循所有步驟。
-- **[HIGH]** 使用過程中可能會導致資料損失或系統不穩定。
-  - 解法：在使用前備份重要資料。
-- [MEDIUM] 社群支持有限，問題解決速度慢。
-  - 解法：尋找其他資源或社群進行協助。
+- **[HIGH]** 在某些系統上可能無法正常啟動 WinRE，導致無法繞過 Bitlocker。
+  - 解法：確保系統設置允許進入 WinRE。
+- [MEDIUM] 如果 USB 隨身碟未正確格式化，可能導致操作失敗。
+  - 解法：使用 NTFS 格式化 USB 隨身碟。
+- **[HIGH]** 某些安全政策可能會阻止此操作，導致無法使用。
+  - 解法：在測試環境中進行，避免使用在生產系統上。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 企業內部安全測試團隊 | 非常適合 | 能快速評估 Bitlocker 的安全性和潛在漏洞。 |
-| 個人安全研究者 | 適合 | 提供簡單的工具來測試加密保護的有效性。 |
-| 一般使用者 | 不適合 | 缺乏必要的技術背景來安全使用此工具。 |
-| 法務部門進行資料保護合規性檢查 | 普通 | 雖然能提供一些見解，但法律風險需謹慎考量。  |
+| 大型企業的安全測試團隊 | 非常適合 | 能快速評估 Windows 11 系統的安全性，發現潛在風險。 |
+| 個人開發者進行安全研究 | 適合 | 操作簡單，能快速驗證系統的防護能力。 |
+| 小型企業的 IT 支援團隊 | 普通 | 可能受到安全政策限制，使用時需謹慎。 |
+| 教育機構的安全課程 | 不適合 | 不建議在生產環境中使用，風險較高。 |
 
 ## 採用成本分析
 
@@ -241,28 +226,28 @@ YellowKey 利用了一個特定的漏洞，允許使用者在 Windows Recovery E
 | --- | --- |
 | 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
-| 維護負擔 | medium |
-| 綁定風險 | medium |
+| 維護負擔 | low |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到快速評估 Bitlocker 安全性的工具，值得考慮。
+> 花 2 小時學習，1 小時整合，能快速評估系統安全性，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 此工具本身不需要高權限，但其使用過程可能涉及敏感資料的訪問，需謹慎操作。依賴鏈的信任程度尚不明確，使用時需注意潛在的安全風險。
+> 低風險：不需要高權限操作，但需謹慎處理，避免在生產環境中使用。依賴於 Windows 環境的安全性，需注意更新後的風險。
 
 ## 生態系整合
 
 > [!abstract] 如何融入你的工具鏈
 
-YellowKey 主要與 Windows 系統環境整合，特別是 Windows Recovery Environment。在一個標準的 Windows 11 環境中，使用者可以輕鬆地將其與其他安全測試工具結合使用。整合過程中，使用者需確保遵循正確的步驟來避免系統不穩定。與主流安全工具的相容性較低，因為它專注於特定的漏洞而非一般的安全檢測。常見的整合問題包括需要特定的 Windows 環境來重現漏洞，這可能會限制其使用範圍。
+YellowKey 主要用於 Windows 環境，常與滲透測試工具搭配使用。在一個用於安全測試的環境中，使用者可以將此工具與其他安全評估工具結合，進行全面的系統安全性測試。與主流 CI/CD 工具的整合性較低，但能有效用於安全研究和測試。整合過程中，最常見的問題是系統安全政策的限制，使用者需確保在合適的環境中進行測試。
 
 ## 歷史脈絡
 
 > [!info] 這個工具為什麼現在出現？
 
-在 YellowKey 出現之前，Bitlocker 的繞過主要依賴於複雜的技術手段和工具，這使得許多安全測試者無法輕易進行測試。隨著 Windows 系統的安全性需求上升，這個漏洞的發現顯示出在加密保護設計上的重大缺陷。這個工具的出現代表了對 Windows 系統安全性的新挑戰，未來可能會引發更多的安全研究和討論。
+在 YellowKey 出現之前，Bitlocker 繞過的解決方案往往需要複雜的設置或不夠直觀。隨著 Windows 11 的推出，對於安全漏洞的關注也逐漸增加，這使得這個工具的出現成為可能。這個工具代表了對於 Windows 安全性的新挑戰，未來可能會隨著系統更新而演變，持續影響安全研究的方向。
 
 ## 健康度儀表板
 
@@ -327,8 +312,8 @@ YellowKey 主要與 Windows 系統環境整合，特別是 Windows Recovery Envi
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 229 |
-| Open Issues | 5 |
+| Forks | 416 |
+| Open Issues | 12 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-05-12 |
 | 建立日期 | 2026-05-12 |
@@ -342,7 +327,7 @@ YellowKey 主要與 Windows 系統環境整合，特別是 Windows Recovery Envi
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度不高，目前僅有 5 個開放的問題。
+**社群活躍度**：社群活躍度高，持續有問題回報和討論。
 
 ## 開發動態
 
@@ -354,11 +339,11 @@ YellowKey 主要與 Windows 系統環境整合，特別是 Windows Recovery Envi
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#5](https://github.com/Nightmare-Eclipse/YellowKey/issues/5) | Will this work on a bitlockered usb drive? | 0 | 0 |
-> | [#4](https://github.com/Nightmare-Eclipse/YellowKey/issues/4) | Mitigation | 0 | 13 |
-> | [#3](https://github.com/Nightmare-Eclipse/YellowKey/issues/3) | Blog Post link | 0 | 1 |
-> | [#2](https://github.com/Nightmare-Eclipse/YellowKey/issues/2) | Q: Does it work with anything other than TPM-only key protec | 0 | 5 |
-> | [#1](https://github.com/Nightmare-Eclipse/YellowKey/issues/1) | Not work usually | 0 | 5 |
+> | [#11](https://github.com/Nightmare-Eclipse/YellowKey/issues/11) | TPM+PIN mitigation blocked by default Group Policy on consum | 3 | 0 |
+> | [#2](https://github.com/Nightmare-Eclipse/YellowKey/issues/2) | Q: Does it work with anything other than TPM-only key protec | 1 | 8 |
+> | [#12](https://github.com/Nightmare-Eclipse/YellowKey/issues/12) | It's a HOAX | 0 | 1 |
+> | [#10](https://github.com/Nightmare-Eclipse/YellowKey/issues/10) | Shift to Ctrl does not throw the prompt | 0 | 3 |
+> | [#9](https://github.com/Nightmare-Eclipse/YellowKey/issues/9) | Will this work on already bitlocked original hard drive | 0 | 1 |
 
 ## README 摘錄
 
@@ -383,7 +368,7 @@ YellowKey 主要與 Windows 系統環境整合，特別是 Windows Recovery Envi
 
 ## 延伸閱讀
 
-相關概念：[[安全漏洞]] · [[滲透測試]] · [[資料保護]]
+相關概念：[[安全漏洞]] · [[滲透測試]] · [[Bitlocker]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Nightmare-Eclipse--RedSun|Nightmare-Eclipse/RedSun]] · [[V4bel--dirtyfrag|V4bel/dirtyfrag]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[dazzyddos--PrivHound|dazzyddos/PrivHound]] · [[opa334--darksword-kexploit|opa334/darksword-kexploit]] · [[imbue-bit--OpenClaw-PwnKit|imbue-bit/OpenClaw-PwnKit]]
 
@@ -427,7 +412,7 @@ YellowKey 主要與 Windows 系統環境整合，特別是 Windows Recovery Envi
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["安全漏洞","滲透測試","資料保護"];
+> const concepts = ["安全漏洞","滲透測試","Bitlocker"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Nightmare-Eclipse--YellowKey" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

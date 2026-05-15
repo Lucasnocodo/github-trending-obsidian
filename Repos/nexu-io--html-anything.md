@@ -526,7 +526,7 @@ pnpm dev
 
 相關概念：[[AI 編輯器]] · [[本地運行]] · [[即時預覽]]
 
-相關專案：[[nexu-io--open-design|nexu-io/open-design]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]]
+相關專案：[[nexu-io--open-design|nexu-io/open-design]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[432539--gpt2api|432539/gpt2api]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]]
 
 [GitHub](https://github.com/nexu-io/html-anything)
 

@@ -7,18 +7,18 @@ language: Python
 license: N/A
 description: "An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒服"
 homepage: ""
-stars: 1898
-stars_per_day: 271
-forks: 120
-open_issues: 32
+stars: 2194
+stars_per_day: 274
+forks: 142
+open_issues: 42
 created: 2026-05-06
 pushed_at: 2026-05-14
 first_seen: 2026-05-12
 week: "2026-W20"
 month: "2026-05"
 category: "開發工具"
-subcategory: "增強工具"
-release_tag: "v1.0.6"
+subcategory: "插件工具"
+release_tag: "v1.0.7"
 install_complexity: "medium"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-12
-use_case: "讓 Codex App 更好用的外部增強工具，無需修改原始安裝文件。"
+use_case: "為 CodexApp 提供增強功能，讓使用體驗更流暢。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 2
 next_review: "2026-05-16"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 41
-repo_size_kb: 1927
-readme_length: 7000
+issue_close_rate: 42
+repo_size_kb: 3581
+readme_length: 4061
 bus_factor: 1
 last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-12"
-star_history: "2026-05-12:1040,2026-05-12:1044,2026-05-13:1526,2026-05-13:1529,2026-05-14:1898"
+star_history: "2026-05-12:1040,2026-05-12:1044,2026-05-13:1526,2026-05-13:1529,2026-05-14:1898,2026-05-15:2194"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "CodexPlusPlus"
   - "BigPizzaV3/CodexPlusPlus"
-  - "讓 Codex App 更好用的外部增強工具，無需修改原始安裝文件。"
+  - "為 CodexApp 提供增強功能，讓使用體驗更流暢。"
 ---
 
 # CodexPlusPlus
 
-**1.9k** stars · **271** stars/天 · 建立 7 天前 · Python · 未標註授權
+**2.2k** stars · **274** stars/天 · 建立 8 天前 · Python · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/BigPizzaV3--CodexPlusPlus");
@@ -68,23 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v1.0.6`
+`v1.0.7`
 
 > [!summary] 一句話摘要
-> 讓 Codex App 更好用的外部增強工具，無需修改原始安裝文件。
+> 為 CodexApp 提供增強功能，讓使用體驗更流暢。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (271 stars/day)
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (274 stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要在 Codex App 上使用增強功能但不想修改原始安裝的開發者和用戶。
-> **一句話重點** Codex++ 的設計理念在於提供一個靈活且不干擾原始應用的增強方案，這對於需要持續使用 Codex 的用戶來說非常重要。
+> **適合** 需要在 Codex App 上進行高效工作的開發者和使用者。
+> **一句話重點** Codex++ 讓使用者能在不修改原始應用的情況下，享受更靈活的功能擴展。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/BigPizzaV3--CodexPlusPlus");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "增強工具" && p.file.name !== "BigPizzaV3--CodexPlusPlus" && p.status !== "archived")
+>     .where(p => p.subcategory === "插件工具" && p.file.name !== "BigPizzaV3--CodexPlusPlus" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,107 +95,110 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 增強工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 插件工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，3 小時整合，得到靈活的增強功能，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，3 小時整合，得到更靈活的 Codex 使用體驗，值得投資。
 
 > [!abstract] 核心創新
-> Codex++ 透過外部啟動器和注入腳本的方式，無需修改 Codex App 原始文件，提供了靈活的增強功能。
+> Codex++ 透過 CDP 注入增強腳本，無需修改原始 Codex 安裝文件，提供靈活的功能擴展。
 
 ## 專案簡介
 
-Codex++ 是一個專為 Codex App 設計的外部增強啟動器，通過 Chromium DevTools Protocol 注入增強腳本，提供額外功能而不改動原始安裝。用戶只需執行 `python -m codex_session_delete setup` 來安裝，然後通過 `python -m codex_session_delete launch` 啟動，便可享受增強的使用體驗。這種設計避免了對 Codex 的原始文件進行修改，降低了更新時的兼容性問題，並且能夠在不影響 Codex 運行的情況下，提供會話刪除、Markdown 導出等功能。其核心賣點在於提供了一個集中管理增強功能的界面，並且能夠在不同的模型供應商之間無縫切換，保持歷史會話的可見性。這樣的設計使得用戶在使用不同的 API 提供者時，不會丟失過去的對話記錄，提升了使用的流暢性和便利性。
+Codex++ 是一個針對 Codex App 的外部增強工具，透過 Chromium DevTools Protocol (CDP) 注入增強腳本，無需修改原始安裝文件。使用者可以透過簡單的命令行指令安裝和啟動，像是 `python -m codex_session_delete setup` 和 `python -m codex_session_delete launch`。這個工具的賣點在於它能解鎖 Codex 原生插件入口，並提供會話刪除、Markdown 導出等功能，讓使用者能更方便地管理會話。技術上，Codex++ 依賴 Python 和 JavaScript，並使用 SQLite 來管理會話數據，這使得它在性能上相對輕量。與其他工具相比，如 Codex 原生插件，Codex++ 提供了更靈活的功能，特別是在會話管理和插件使用上，讓使用者不再受限於原生應用的設計。
 
-**技術棧**：`Python 3.11` · `requests` · `websocket-client`
+實際使用中，Codex++ 能夠在不改變 Codex 的情況下，提供更好的用戶體驗，並且能夠在多種操作系統上運行。這個工具的社群活躍度不錯，開發者們定期更新，解決使用者提出的問題。對於需要在 Codex 上進行高效工作的開發者來說，Codex++ 是一個值得考慮的選擇。隨著未來的功能增強，預期會吸引更多使用者的關注。
+
+**技術棧**：`Python 3.11` · `JavaScript` · `SQLite`
 
 ## 重點功能
 
-- 增強功能管理 — 在頂部菜單集中管理所有增強功能。
-- 插件選項解鎖 — 允許 API Key 模式下顯示插件入口。
-- 會話刪除功能 — 懸停顯示刪除按鈕，並支持撤銷操作。
-- Markdown 導出 — 將會話導出為帶時間戳的 Markdown 格式。
-- Provider 同步 — 切換模型供應商時保持歷史會話可見性。
-- 自動更新 — 啟動時檢查最新版本並提示更新。
+- Codex++ 菜單 — 集中管理增強功能，方便使用者快速訪問。
+- 插件入口解鎖 — 在 API Key 模式下顯示並啟用插件入口。
+- 會話刪除 — 懸停顯示刪除按鈕，支持撤銷操作。
+- Markdown 導出 — 導出帶時間戳的會話 Markdown，便於記錄和分享。
+- Provider 同步 — 切換模型供應商時不丟失歷史會話，提升使用體驗。
+- Windows 快捷方式 — 自動生成桌面快捷方式，方便啟動。
+- macOS 支援 — 生成應用包，方便在 macOS 上使用。
 
 ## 快速開始
 
-1. 安裝 Codex++
+1. 安裝依賴
 ```bash
-python -m codex_session_delete setup
+python -m pip install -e .
 ```
 2. 啟動 Codex++
 ```bash
 python -m codex_session_delete launch
 ```
-3. 檢查更新
+3. 安裝快捷方式
 ```bash
-python -m codex_session_delete check-update
+python -m codex_session_delete setup
 ```
 
 ## 程式碼範例
 
 ```python
-{
-  "前置條件": "需要安裝 Codex App 和 Python 3.11+",
-  "指令": "python -m codex_session_delete launch --app-dir '/Applications/OpenAI Codex.app' --debug-port 9229 --helper-port 57321",
-  "預期輸出": "啟動 Codex++ 並注入增強功能。"
-}
+[
+  "# 前置條件：安裝 Python 和 pip",
+  "python -m pip install -e .",
+  "# 預期輸出：安裝依賴成功，無錯誤信息。"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 7 天內累積 1898 stars（271/天），forks 120（6.3%），顯示出穩定的增長。作者 BigPizzaV3 和其他貢獻者在開源社群中活躍，提供了一個解決 Codex App 使用不便的痛點，特別是在插件管理和會話操作上。這個工具的出現是因為 Codex App 本身的功能限制，許多用戶需要更靈活的操作方式。社群的反饋和需求促進了這個工具的快速發展，並且其設計理念符合當前對於增強型應用的需求。forks/stars 比率顯示出用戶對於這個工具的實際修改和使用意圖，反映出其潛在的實用性。
+> 建立 8 天就累積 2194 stars（274/天），forks 142（6.5%），顯示出強勁的增長潛力。作者 BigPizzaV3 和其他貢獻者在開源社群中有一定的影響力，過去的項目也獲得了良好的反響。Codex++ 解決了 Codex 原生插件在使用上的限制，特別是會話管理和插件使用的靈活性，這在之前的工具中並不常見。近期的社群討論和需求推動了這個工具的快速發展，並且技術的成熟使得這個增強工具成為可能。forks/stars 比率顯示出使用者對這個工具的實際修改和使用意圖，這是相對健康的指標。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Codex App 上使用增強功能但不想修改原始安裝的開發者和用戶。
+**目標受眾**：需要在 Codex App 上進行高效工作的開發者和使用者。
 
 > [!example] 使用場景
-> - 開發者用它來快速啟動 Codex App 並使用增強功能，因為它能解鎖插件選項並提供會話管理功能。
-> - 產品經理用它來導出會話記錄為 Markdown 格式，因為這樣可以方便地整理和分享會議記錄。
-> - 技術支持人員用它來刪除不必要的會話，因為它提供了簡單的刪除和撤銷功能，提升了工作效率。
+> - 開發者用它來管理 Codex 的會話，因為 Codex++ 提供了會話刪除和導出功能，讓會話管理變得更方便。
+> - 產品經理用它來收集和整理 Codex 的使用數據，因為能夠輕鬆導出 Markdown 格式的會話記錄，方便後續分析。
+> - 系統管理員用它來監控 Codex 的運行狀態，因為 Codex++ 提供了健康檢查的功能，能夠及時發現問題。
 
 ## 架構分析
 
-Codex++ 採用外部啟動的架構模式，這樣的設計使得它不需要修改 Codex 的原始安裝文件，降低了更新時的兼容性風險。具體來說，Codex++ 在啟動 Codex App 時，通過 CDP 注入增強腳本，並在本地啟動一個 helper 服務來處理增強功能的請求。這樣的設計使得用戶可以在不影響 Codex 正常運行的情況下，享受增強的功能。選擇這種架構的代價是可能需要額外的配置和依賴管理，但優勢在於靈活性和可擴展性。擴展性方面，Codex++ 可以隨著 Codex 的更新而進行調整，無需重構整個系統。
+Codex++ 採用外部增強工具的架構，透過 CDP 來注入增強功能，這樣的設計使得它不需要修改 Codex 的原始文件，降低了更新的風險。資料流方面，Codex++ 首先啟動 Codex App，然後通過 CDP 連接本地的 helper 服務，進行健康檢查和功能操作。這種設計的代價是需要依賴 CDP 的穩定性，若 Codex 的結構發生變化，可能會影響功能的正常運作。擴展性方面，Codex++ 可以輕鬆地添加新的增強功能，但在高並發的情況下，可能會出現性能瓶頸，特別是在同步大量會話時。
 
 ## 技術深入分析
 
-Codex++ 的核心技術機制是通過外部啟動方式運行 Codex，並利用 Chromium DevTools Protocol (CDP) 進行增強功能的注入。這種方式使得 Codex++ 能夠在不改變 Codex 原始文件的情況下，提供額外的功能，如會話刪除和插件管理。效能方面，Codex++ 需要在啟動時保持與 Codex 的連接，這可能會增加啟動時間，但在正常運行中不會造成明顯的延遲。設計取捨方面，選擇 Python 作為開發語言使得開發過程相對簡單，但也可能導致在性能要求較高的場景下出現瓶頸。技術風險方面，Codex++ 依賴於 Codex App 的穩定性，若 Codex 更新導致結構變化，可能需要對注入腳本進行調整。整合分析方面，Codex++ 與主流的開發工具鏈（如 VS Code）整合良好，但在 CI/CD pipeline 的友善度上還有提升空間，特別是在自動化測試方面。整體上，Codex++ 提供了一個靈活的增強方案，適合需要在 Codex 上進行擴展的用戶。
+Codex++ 的核心技術機制是通過 CDP 來注入增強腳本，這使得它能夠在不改變 Codex 原始文件的情況下，提供額外的功能。使用 SQLite 作為數據存儲，能夠有效管理會話數據，並支持快速查詢和操作。這個工具的效能在於其輕量設計，能夠在多種操作系統上運行，對系統資源的需求相對較低。選擇 Python 和 JavaScript 作為開發語言，能夠利用這兩種語言的生態系統和庫，降低開發成本。設計上，Codex++ 需要依賴 CDP 的穩定性，若 Codex 的結構發生變化，可能會影響功能的正常運作。技術風險方面，若未來 Codex 更新頻繁，可能會導致 Codex++ 需要不斷調整以適應新版本，這會增加維護成本。整合方面，Codex++ 能夠與現有的開發工具鏈相容，並且能夠輕鬆集成到 CI/CD pipeline 中，這使得它在團隊協作中具備良好的適應性。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和使用指南。安裝過程相對順暢，但對於新手可能需要一些額外的配置。文件沒有提供多語言版本，僅有中文和英文。整體來說，花 30 分鐘能夠順利運行起來。
+> README 文件清晰，包含安裝和使用範例。安裝過程對於熟悉 Python 的使用者來說相對順暢，但對新手可能有一定挑戰。提供了良好的快速入門指導，並且文件有多語言版本，方便不同使用者理解。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 不修改原始 Codex 安裝文件，降低了更新風險。
-> - 提供多種增強功能，提升使用體驗。
-> - 支持插件管理和會話操作，方便用戶使用。
+> - 靈活性高，無需修改原始應用，便於更新。
+> - 提供多種增強功能，提升使用者體驗。
+> - 社群活躍，定期更新和修復問題。
 
 > [!danger] 缺點
-> - 需要額外的安裝和配置步驟，對新手不太友好。
-> - 依賴於 Codex App 的穩定性，若 Codex 更新可能影響功能。
-> - 在某些系統上可能需要額外的權限設置。
+> - 對 Codex 的結構變化敏感，可能需要頻繁更新。
+> - 安裝過程對新手來說可能有一定難度。
+> - 在某些情況下，可能需要手動配置代理。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.11 以上版本。
+> - 僅支援 Python 3.11+
 > - 需要 Codex App 已安裝，否則無法啟動。
-> - Windows 系統需要額外設置以確保自動接管功能正常運作。
+> - 在某些情況下，可能需要手動設置代理環境變數。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的增強功能，但專注於不同的應用場景，Codex++ 更加專注於 Codex App 的使用體驗。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | 主要針對 GPT-2 的 API 接口，Codex++ 提供更全面的增強功能和用戶界面管理。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的增強功能，但專注於不同的應用場景，可能不如 Codex++ 靈活。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於數據管理，而 Codex++ 則提供更全面的會話管理和插件功能。 |
 
 ## 替代方案決策
 
@@ -203,16 +206,16 @@ Codex++ 的核心技術機制是通過外部啟動方式運行 Codex，並利用
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於特定功能的增強，而 Codex++ 提供全面的增強和管理功能。 | 如果需要針對特定功能進行增強，且不需要全面的管理界面。 | medium，因為需要重新配置增強功能。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 提供類似的增強功能，但不支持會話管理，Codex++ 在這方面更具優勢。 | 如果需要一個輕量級的增強工具，且不需要會話管理功能。 | low，因為功能相似，轉移成本較低。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於增強特定功能，而 Codex++ 提供更全面的功能擴展。 | 如果你的需求是針對特定功能的增強，這個工具可能更合適。 | medium，因為需要重新適應新的功能和使用方式。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供數據管理功能，但不如 Codex++ 靈活，特別是在會話管理上。 | 如果你的重點是數據管理而非增強功能，這個工具可能更合適。 | low，因為功能相對簡單，容易上手。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **CodexPlusPlus** | **boneyard** | **codeburn** |
+> | 維度 | **CodexPlusPlus** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於特定功能的增強，而 Codex++ 提供全面的增強和管理功能。 | 提供類似的增強功能，但不支持會話管理，Codex++ 在這方面更具優勢。 |
-> | 遷移成本 | - | medium，因為需要重新配置增強功能。 | low，因為功能相似，轉移成本較低。 |
-> | 適用場景 | 主要場景 | 如果需要針對特定功能進行增強，且不需要全面的管理界面。 | 如果需要一個輕量級的增強工具，且不需要會話管理功能。 |
+> | 技術路線 | 本專案 | 專注於增強特定功能，而 Codex++ 提供更全面的功能擴展。 | 提供數據管理功能，但不如 Codex++ 靈活，特別是在會話管理上。 |
+> | 遷移成本 | - | medium，因為需要重新適應新的功能和使用方式。 | low，因為功能相對簡單，容易上手。 |
+> | 適用場景 | 主要場景 | 如果你的需求是針對特定功能的增強，這個工具可能更合適。 | 如果你的重點是數據管理而非增強功能，這個工具可能更合適。 |
 
 ## 成熟度評估
 
@@ -223,43 +226,44 @@ Codex++ 的核心技術機制是通過外部啟動方式運行 Codex，並利用
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人項目或小型團隊試用，但不建議在生產環境中使用。
+> 適合開發者試用，尚未建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些系統上啟動後無法連接會話
-  - 解法：檢查 Codex App 是否正確安裝，並確保 CDP 端口未被占用。
-- [MEDIUM] 插件未能正常顯示
-  - 解法：確保從 Codex++ 快捷方式啟動，而非直接啟動原版 Codex。
-- [MEDIUM] 更新後功能失效
-  - 解法：檢查是否需要更新注入腳本，並重新啟動 Codex++。
+- **[HIGH]** 在某些系統上啟動時可能會出現閃退問題
+  - 解法：檢查 Codex App 是否正確安裝，並確保端口未被占用
+- [MEDIUM] 插件未能正常加載，顯示需要登錄提示
+  - 解法：確保使用 API Key 模式啟動 Codex++
+- [MEDIUM] 會話刪除功能在某些情況下無法正常工作
+  - 解法：確認 Codex++ 是否正確啟動，並檢查日誌以獲取詳細錯誤信息
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊使用 Codex 進行項目開發 | 非常適合 | 提供了增強的功能管理和會話操作，提升了開發效率。 |
-| 個人用戶需要靈活的 Codex 使用體驗 | 適合 | 能夠在不修改原始文件的情況下，享受增強功能。 |
-| 大型企業需要穩定的增強工具 | 不適合 | 目前仍在 beta 階段，可能存在不穩定性。 |
+| 10 人以下的新創公司使用 Codex 進行開發 | 非常適合 | Codex++ 提供的增強功能能顯著提升小型團隊的工作效率。 |
+| 大型企業的 Codex 使用者 | 普通 | 雖然功能強大，但可能需要更多的支持和培訓。 |
+| 對 Codex 的使用不熟悉的開發者 | 不適合 | 安裝和使用過程對新手來說可能有一定挑戰。 |
+| 需要在多平台上使用 Codex 的開發者 | 非常適合 | Codex++ 支援 Windows 和 macOS，方便跨平台使用。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
+| 學習時間 | ~5 小時 |
 | 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，3 小時整合，得到靈活的增強功能，值得投入。
+> 花 5 小時學習，3 小時整合，得到更靈活的 Codex 使用體驗，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：Codex++ 不需要高權限運行，並且不存取敏感資料。依賴於 Codex App 的安全性，若 Codex 本身存在漏洞，可能會影響到 Codex++ 的安全性。
+> 安全性評估相對較低，因為 Codex++ 不需要高權限運行，且不會存取敏感資料。依賴鏈中未發現已知的供應鏈風險，使用時可放心。
 
 ## 健康度儀表板
 
@@ -324,64 +328,64 @@ Codex++ 的核心技術機制是通過外部啟動方式運行 Codex，並利用
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 120 |
-| Open Issues | 32 |
-| Issue 解決率 | 41% (22 closed) |
+| Forks | 142 |
+| Open Issues | 42 |
+| Issue 解決率 | 42% (30 closed) |
 | 最後推送 | 2026-05-14 |
 | 建立日期 | 2026-05-06 |
-| Repo 大小 | 1.9 MB |
+| Repo 大小 | 3.5 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/BigPizzaV3/CodexPlusPlus) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
 >     "Python" : 67
->     "JavaScript" : 32
+>     "JavaScript" : 33
 >     "Batchfile" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@BigPizzaV3](https://github.com/BigPizzaV3) | 63 |
+> | [@BigPizzaV3](https://github.com/BigPizzaV3) | 76 |
 > | [@wanpan11](https://github.com/wanpan11) | 4 |
+> | [@shallFun4Learning](https://github.com/shallFun4Learning) | 4 |
 > | [@Z1rconium](https://github.com/Z1rconium) | 2 |
 > | [@waangzh](https://github.com/waangzh) | 1 |
-> | [@codex](https://github.com/codex) | 1 |
 
-**最新版本**：v1.0.6 (2026-05-13)
+**最新版本**：v1.0.7 (2026-05-14)
 
 > [!info]- Release Notes
 > ## What's Changed
-> * Fix settings modal overflow and add scrolling by @shallFun4Learning in https://github.com/BigPizzaV3/CodexPlusPlus/pull/58
-> * fix(ui): make Codex++ modal close button reliably clickable by @codeOct in https://github.com/BigPizzaV3/CodexPlusPlus/pull/67
-> * refactor: 标题、操作确认样式优化 by @wanpan11 in https://github.com/BigPizzaV3/CodexPlusPlus/pull/61
+> * Fix floating Codex++ menu overlapping long thread titles by @shallFun4Learning in https://github.com/BigPizzaV3/CodexPlusPlus/pull/75
+> * Fix provider sync ghost workspace roots by @shallFun4Learning in https://github.com/BigPizzaV3/CodexPlusPlus/pull/92
+> * [codex] Improve conversation timeline by @hanhan3344 in https://github.com/BigPizzaV3/CodexPlusPlus/pull/87
 > 
 > ## New Contributors
-> * @codeOct made their first contribution in https://github.com/BigPizzaV3/CodexPlusPlus/pull/67
-> * @wanpan11 made their first contribution in https://github.com/BigPizzaV3/CodexPlusPlus/pull/61
+> * @hanhan3344 made their first contribution in https://github.com/BigPizzaV3/CodexPlusPlus/pull/87
 > 
-> **Full Changelog**: https://github.com/BigPizzaV3/CodexPlusPlus/compare/v1.0.5.1...v1.0.6
+> **Full Changelog**: https://github.com/BigPizzaV3/CodexPlusPlus/compare/v1.0.6...v1.0.7
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和修復問題。
+**社群活躍度**：社群活躍，定期有貢獻和更新。
 **連結**：[文件](https://github.com/BigPizzaV3/CodexPlusPlus)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-13 ~ 2026-05-14）
-> **活躍天數** 2 天 · **最新 commit** 更新交流群二维码
+> [!abstract] 最近 10 次 commit（2026-05-14 ~ 2026-05-14）
+> **活躍天數** 1 天 · **最新 commit** 发布 1.0.7 并恢复 README 简版
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#78](https://github.com/BigPizzaV3/CodexPlusPlus/issues/78) | 使用 code++ 启动后 会话无法连接 | 0 | 0 |
-> | [#77](https://github.com/BigPizzaV3/CodexPlusPlus/issues/77) | 更新 0.1.7后出现bug | 0 | 0 |
-> | [#74](https://github.com/BigPizzaV3/CodexPlusPlus/issues/74) | 插件问题 | 0 | 0 |
-> | [#73](https://github.com/BigPizzaV3/CodexPlusPlus/issues/73) | 可以合并codex-plusplus这个库吗 | 0 | 0 |
+> | [#51](https://github.com/BigPizzaV3/CodexPlusPlus/issues/51) | 可以适配fast模式的开关么 | 1 | 6 |
+> | [#101](https://github.com/BigPizzaV3/CodexPlusPlus/issues/101) | 兄弟，抓紧搞定 codex 移动端链接 | 0 | 1 |
+> | [#100](https://github.com/BigPizzaV3/CodexPlusPlus/issues/100) | 使用插件后，今天出现了设置codex移动端，但是无法设置 | 0 | 0 |
+> | [#99](https://github.com/BigPizzaV3/CodexPlusPlus/issues/99) | 重启电脑后打不开，闪退 | 0 | 0 |
+> | [#98](https://github.com/BigPizzaV3/CodexPlusPlus/issues/98) | 想赠加切换供应商MCP不会丢失的功能！ | 0 | 0 |
 
 ## README 摘錄
 
@@ -390,67 +394,26 @@ Codex++ 的核心技術機制是通過外部啟動方式運行 Codex，並利用
 > 
 >   
 > 
->   中文 | [English](README_EN.md)
+>   中文 | English
 > 
 >   
 >   
 >   
 >   
 > 
-> Codex++ 是面向 Codex App 的外部增强启动器。它不修改 Codex App 原始安装文件，而是通过外部 launcher 启动 Codex，并使用 Chromium DevTools Protocol 注入增强脚本。
-> 
-> ## 目录
-> 
-> - [讨论交流](#讨论交流)
-> - [赞赏支持](#赞赏支持)
-> - [快速使用](#快速使用)
-> - [功能亮点](#功能亮点)
-> - [界面预览](#界面预览)
-> - [Provider 同步](#provider-同步)
-> - [友情链接](#友情链接)
-> - [工作方式](#工作方式)
-> - [环境要求](#环境要求)
-> - [Windows 使用](#windows-使用)
->   - [图形菜单安装/卸载](#图形菜单安装卸载)
->   - [命令行安装](#命令行安装)
->   - [命令行卸载](#命令行卸载)
->   - [Windows 自动接管（可选）](#windows-自动接管可选)
-> - [自动更新](#自动更新)
-> - [macOS 使用](#macos-使用)
-> - [直接启动](#直接启动)
-> - [数据与备份](#数据与备份)
-> - [常见问题](#常见问题)
-> - [贡献者与 Star](#贡献者与-star)
-> - [开发](#开发)
-> 
-> ## 讨论交流
-> 
-> 欢迎扫码加入 Codex++ 交流群，反馈问题、交流使用体验或提出新功能建议：
-> 
-> ## 赞赏支持
-> 
-> 如果 Codex++ 帮到了你，可以请我喝杯咖啡，或者随手赞赏支持一下继续维护。
-> 
->   
->   
+> Codex++ 是面向 Codex App 的外部增强启动器：不修改原始安装文件，通过 Chromium DevTools Protocol 注入增强脚本。
 > 
 > ## 快速使用
 > 
-> Windows 用户可以直接双击项目根目录的：
-> 
-> ```text
-> setup.bat
-> ```
-> 
-> 然后选择：
+> Windows 用户双击项目根目录的 `setup.bat`，选择：
 > 
 > ```text
 > [1] Install Codex++
 > ```
 > 
-> 安装后桌面会生成 `Codex++.lnk`，双击即可启动带增强功能的 Codex。
+> 安装后双击桌面 `Codex++.lnk` 启动。
 > 
-> 也可以在项目目录通过命令行安装和启动：
+> 命令行安装/启动：
 > 
 > ```bash
 > python -m pip install -e .
@@ -458,7 +421,7 @@ Codex++ 的核心技術機制是通過外部啟動方式運行 Codex，並利用
 > python -m codex_session_delete launch
 > ```
 > 
-> macOS 用户可以执行：
+> macOS：
 > 
 > ```bash
 > python -m codex_session_delete setup
@@ -466,20 +429,38 @@ Codex++ 的核心技術機制是通過外部啟動方式運行 Codex，並利用
 > 
 > 安装后会生成 `/Applications/Codex++.app`。
 > 
+> ## 交流与支持
+> 
+> 欢迎扫码加入 Codex++ 交流群，反馈问题、交流使用体验或提出新功能建议：
+> 
+> 如果 Codex++ 帮到了你，可以请我喝杯咖啡，或者随手赞赏支持一下继续维护。
+> 
+>   
+>   
+> 
+> ## 赞助商
+> 
+>   
+>     🏆 赞助商 🏆
+>   
+>   
+>     👉 RawChat｜Codex 中转站 老牌中转站，支持包月套餐。低倍率调用，高缓存命中，Pro/Plus 号池，全天专人维护。
+>   
+> 
 > ## 功能亮点
 > 
-> - 顶部菜单栏加入 `Codex++` 菜单，可集中管理增强功能。
-> - 插件选项解锁：让 API Key 模式显示并启用插件入口。
+> - 顶部 `Codex++` 菜单：集中管理增强功能。
+> - 插件入口解锁：API Key 模式下显示并启用插件入口。
 > - 特殊插件强制安装：解除 App unavailable / 应用不可用导致的前端安装禁用。
-> - 会话删除：在会话列表悬停显示删除按钮，删除前确认并支持撤销。
+> - 会话删除：悬停显示删除按钮，删除前确认并支持撤销。
 > - Markdown 导出：按本地 rollout 导出带时间戳的会话 Markdown。
 > - 会话项目移动：把会话移动到普通对话或其他本地项目。
-> - 对话 Timeline：在对话右侧显示用户提问时间线，悬停查看摘要并快速跳转。
+> - 对话 Timeline：右侧显示用户提问时间线，悬停摘要，点击跳转。
 > - Provider 同步：切换 model_provider 或供应商时不丢历史会话。
-> - Windows 快捷方式安装/卸载、常驻 watcher 自动接管、GitHub Release 自动更新。
-> - macOS 生成 `/Applications/Codex++.app`。
+> - Windows 快捷方式、卸载项、可选 watcher 自动接管、GitHub Release 更新。
+> - macOS `/Applications/Codex++.app` 生成。
 > 
-> ## 界面预览
+> ## 痛点与解决
 > 
 > API Key 登录模式下，Codex 原生插件入口会提示需要登录 ChatGPT，导致插件功能无法正常使用：
 > 
@@ -489,208 +470,54 @@ Codex++ 的核心技術機制是通過外部啟動方式運行 Codex，並利用
 > 
 > 顶部菜单栏会出现 `Codex++`，可以查看后端状态并打开设置面板：
 > 
-> ## Provider 同步
-> 
-> 启用 `Provider 同步` 后，Codex++ 会在启动 Codex 前同步本地会话 metadata。它会把 rollout 文件、SQLite 线程记录和项目路径缓存同步到当前 `model_provider`，让你切换供应商时不丢历史会话。
-> 
-> 适合这些场景：
-> 
-> - 从 OpenAI 切换到第三方 provider 后，旧会话在 Desktop 或 `/resume` 中不可见。
-> - 切回其他 provider 后，希望历史对话继续出现在原项目下。
-> - Windows 路径带有 `\\?\` 前缀导致 Desktop 项目列表匹配不到旧会话。
-> 
-> 同步只修复会话可见性相关 metadata，不改写对话内容；如果 Codex 正在占用某个会话文件或 SQLite 忙碌，Codex++ 会跳过并继续启动，避免阻塞 Codex。
-> 
-> ## 友情链接
-> 
-> - [LINUX DO](https://linux.do)
-> 
 > ## 工作方式
 > 
-> Codex++ 使用外部启动方式运行 Codex：
-> 
-> 1. 启动 Codex App，并附加：
+> 1. 外部启动 Codex App，并附加 CDP 参数：
 >    - `--remote-debugging-port=9229`
 >    - `--remote-allow-origins=http://127.0.0.1:9229`
-> 2. 如果启用了 Provider 同步，启动 Codex 前先同步历史会话 metadata。
-> 3. 启动本地 helper 服务，保留健康检查和运行生命周期。
-> 4. 通过 CDP 注入 `renderer-inject.js`。
-> 5. 渲染端通过 CDP bridge 调用本地服务；默认不开放 HTTP 删除/撤销入口，避免本机其他页面误触发删除类操作。
-> 6. 启动 Codex 时继承现有 `HTTP_PROXY` / `HTTPS_PROXY` / `ALL_PROXY`；如果这些环境变量未设置，会自动探测常见本地代理端口（如 `127.0.0.1:7897`），帮助 Codex 加载需要访问 GitHub 的技能资源。
+> 2. 启动本地 helper 服务，用于健康检查、设置、导出、移动、删除等操作。
+> 3. 通过 CDP 注入 `renderer-inject.js`。
+> 4. 渲染端通过 CDP bridge 调用本地服务；默认不开放 HTTP 删除/撤销入口，避免本机其他页面误触发。
+> 5. 启动时继承现有代理环境变量；若未设置，会自动探测常见本地代理端口帮助加载 GitHub 资源。
 > 
 > 这种方式不会修改 Codex 的 `app.asar`，也不需要往 Codex 安装目录写 DLL。
 > 
-> ## 环境要求
+> ## Provider 同步
 > 
-> - Python 3.11+
-> - Windows 或 macOS
-> - 已安装 Codex App
+> 启用 `Provider 同步` 后，Codex++ 会在启动前同步本地会话 metadata，让切换供应商后历史会话仍能在 Desktop 和 `/resume` 中显示。
 > 
-> 安装依赖：
+> 同步范围包括 rollout 文件、SQLite 线程记录和项目路径缓存；只修复会话可见性 metadata，不改写消息内容。遇到文件锁或 SQLite 忙碌时会跳过并继续启动。
+> 
+> ## 常用命令
 > 
 > ```bash
+> # 安装依赖
 > python -m pip install -e .
-> ```
 > 
-> 如需运行测试：
+> # 启动
+> python -m codex_session_delete launch
 > 
-> ```bash
-> python -m pip install -e .[test]
-> python -m pytest -q
-> ```
-> 
-> ## Windows 使用
-> 
-> ### 图形菜单安装/卸载
-> 
-> 双击项目根目录的：
-> 
-> ```text
-> setup.bat
-> ```
-> 
-> 然后按菜单选择：
-> 
-> ```text
-> [1] Install Codex++
-> [2] Uninstall Codex++
-> [3] Update Codex++
-> [4] Exit
-> ```
-> 
-> ### 命令行安装
-> 
-> 在项目目录执行：
-> 
-> ```bash
+> # 安装快捷方式 / app bundle
 > python -m codex_session_delete setup
-> ```
 > 
-> 安装后会在桌面生成：
-> 
-> ```text
-> Codex++.lnk
-> ```
-> 
-> 双击该快捷方式启动 Codex++。
-> 
-> ### 命令行卸载
-> 
-> 可以在系统“设置 → 应用 → 已安装的应用”里卸载 `Codex++`。
-> 
-> 也可以在项目目录执行：
-> 
-> ```bash
+> # 卸载
 > python -m codex_session_delete remove
-> ```
 > 
-> 如需同时删除 Codex++ 自己的日志和备份数据：
-> 
-> ```bash
+> # 同时删除日志和备份
 > python -m codex_session_delete remove --remove-data
-> ```
 > 
-> ### Windows 自动接管（可选）
+> # 检查更新 / 更新
+> python -m codex_session_delete check-update
+> python -m codex_session_delete update
 > 
-> 默认情况下 Codex++ 只在你从 `Codex++` 快捷方式启动时生效。如果你从开始菜单、任务栏或系统原生入口直接启动 Codex，那一次不会有注入，`Codex++` 菜单和插件解锁都不会出现。
-> 
-> Windows 可以注册一个常驻 watcher 解决这个问题。它会每 3 秒探测一次本机 CDP 端口，发现 Codex 在跑但 CDP 没起来，会先短暂等待并二次确认，确认仍没有 CDP 后再把 Codex Desktop App 进程重拉为带注入的版本。
-> 
-> 安装：
-> 
-> ```bash
+> # Windows watcher 自动接管
 > python -m codex_session_delete watch-install
-> ```
-> 
-> 卸载：
-> 
-> ```bash
 > python -m codex_session_delete watch-remove
-> ```
-> 
-> 临时开关：
-> 
-> ```bash
 > python -m codex_session_delete watch-disable
 > python -m codex_session_delete watch-enable
 > ```
 > 
-> 日志：
-> 
-> ```text
-> %USERPROFILE%\.codex-session-delete\watcher.log
-> ```
-> 
-> ## 自动更新
-> 
-> Codex++ 会在启动时检查 GitHub Release。如果发现比本地版本更新的 Release，会在控制台提示版本号、Release 地址和更新命令；检查失败不会影响 Codex++ 启动。
-> 
-> 手动检查更新：
-> 
-> ```bash
-> python -m codex_session_delete check-update
-> ```
-> 
-> 从最新 GitHub Release 更新：
-> 
-> ```bash
-> python -m codex_session_delete update
-> ```
-> 
-> 更新流程：
-> 
-> 1. 请求 `https://api.github.com/repos/BigPizzaV3/CodexPlusPlus/releases/latest`。
-> 2. 比较最新 Release tag 与本地版本。
-> 3. 优先下载 Release 中的 `.whl` asset。
-> 4. 执行 `python -m pip install --upgrade `。
-> 5. 自动重新执行 `python -m codex_session_delete setup`，刷新快捷方式、Windows 卸载项或 macOS app bundle。
-> 
-> 发布新版本时，请在 GitHub Release 里附加 wheel 文件，例如：
-> 
-> ```bash
-> python -m build
-> ```
-> 
-> 然后把 `dist/codex_session_delete--py3-none-any.whl` 上传到对应 Release。
-> 
-> ## macOS 使用
-> 
-> ### 安装
-> 
-> ```bash
-> python -m codex_session_delete setup
-> ```
-> 
-> 默认会自动查找 `/Applications/Codex.app`、`/Applications/OpenAI Codex.app` 或用户 Applications 目录下的 Codex 应用，并生成：
-> 
-> ```text
-> /Applications/Codex++.app
-> ```
-> 
-> ### 卸载
-> 
-> ```bash
-> python -m codex_session_delete remove
-> ```
-> 
-> ## 直接启动
-> 
-> 不安装快捷方式时，也可以直接运行：
-> 
-> ```bash
-> python -m codex_session_delete launch
-> ```
-> 
-> 常用参数：
-> 
-> ```bash
-> python -m codex_session_delete launch \
->   --app-dir "/Applications/OpenAI Codex.app" \
->   --debug-port 9229 \
->   --helper-port 57321
-> ```
-> 
-> Windows 也可以手动指定 Codex 安装目录：
+> 直接指定 Codex 安装目录：
 > 
 > ```bash
 > python -m codex_session_delete launch \
@@ -699,51 +526,29 @@ Codex++ 的核心技術機制是通過外部啟動方式運行 Codex，並利用
 >   --helper-port 57321
 > ```
 > 
-> ## 数据与备份
+> ## 数据位置
 > 
-> Codex++ 默认读取 Codex 本地数据库：
-> 
-> ```text
-> ~/.codex/state_5.sqlite
-> ```
-> 
-> 删除前会把相关记录备份到：
-> 
-> ```text
-> ~/.codex-session-delete/backups
-> ```
-> 
-> Provider 同步会把同步前状态备份到：
-> 
-> ```text
-> ~/.codex/backups_state/provider-sync
-> ```
-> 
-> 隐藏启动失败日志位于：
-> 
-> ```text
-> ~/.codex-session-delete/launcher.log
-> ```
+> - Codex 本地数据库：`~/.codex/state_5.sqlite`
+> - 删除备份：`~/.codex-session-delete/backups`
+> - Provider 同步备份：`~/.codex/backups_state/provider-sync`
+> - 启动失败日志：`~/.codex-session-delete/launcher.log`
+> - watcher 日志：`%USERPROFILE%\.codex-session-delete\watcher.log`
 > 
 > ## 常见问题
 > 
 > ### 双击 Codex++ 没反应
 > 
-> 先查看日志：
+> 查看日志：`%USERPROFILE%\.codex-session-delete\launcher.log`
 > 
-> ```text
-> %USERPROFILE%\.codex-session-delete\launcher.log
-> ```
+> 常见原因：Codex App 未安装或路径变化、9229 端口被占用、Python 环境不可用。
 > 
-> 常见原因：
+> ### Codex++ 菜单没出现
 > 
-> - Codex App 没有安装或路径变化
-> - 9229 端口被占用
-> - Python 环境不可用
+> 确认是从 `Codex++` 快捷方式启动，而不是原版 Codex。也可以检查 Codex 是否带有 `--remote-debugging-port=9229`。
 > 
 > ### 技能推荐加载失败
 > 
-> 如果技能页提示 `git fetch failed`、`unable to access 'https://github.com/openai/skills.git/'` 或无法连接 GitHub，通常是本机网络不能直连 GitHub。Codex++ 启动时会优先继承现有代理环境变量；如果未设置，会自动探测常见本地代理端口。也可以手动指定：
+> 如果提示 `git fetch failed` 或无法连接 GitHub，通常是网络无法直连 GitHub。Codex++ 会继承代理环境变量，也会自动探测常见本地代理端口。也可以手动指定：
 > 
 > ```powershell
 > $env:HTTP_PROXY="http://127.0.0.1:7897"
@@ -751,47 +556,18 @@ Codex++ 的核心技術機制是通過外部啟動方式運行 Codex，並利用
 > python -m codex_session_delete launch
 > ```
 > 
-> ### Codex++ 菜单没出现
-> 
-> 确认是从 `Codex++` 快捷方式启动，而不是直接启动原版 Codex。
-> 
-> 也可以检查 Codex 是否带了 CDP 参数：
-> 
-> ```text
-> --remote-debugging-port=9229
-> ```
-> 
 > ### 切换供应商后旧会话不见了
 > 
-> 打开 `Codex++` 设置面板，启用 `Provider 同步` 后重新启动 Codex++。它会在启动 Codex 前同步当前 `model_provider`，让历史会话重新匹配当前供应商。
-> 
-> ### Windows 系统卸载失败
-> 
-> 请先更新到当前版本后重新安装一次：
-> 
-> ```bash
-> python -m codex_session_delete setup
-> ```
-> 
-> 新版会写入稳定的系统卸载项，并使用绝对 Python 路径执行卸载。
-> 
-> ## 贡献者与 Star
-> 
->   
-> 
->   
->   
->   
+> 打开 `Codex++` 设置面板，启用 `Provider 同步` 后重启 Codex++。
 > 
 > ## 开发
 > 
-> 运行测试：
-> 
 > ```bash
+> python -m pip install -e .[test]
 > python -m pytest -q
 > ```
 > 
-> 项目结构：
+> 主要结构：
 > 
 > ```text
 > codex_session_delete/
@@ -804,11 +580,23 @@ Codex++ 的核心技術機制是通過外部啟動方式運行 Codex，並利用
 >   settings_store.py      Codex++ 后端设置
 >   windows_installer.py   Windows 快捷方式与卸载项
 >   macos_installer.py     macOS app bundle 安装
->   watcher.py             Windows 常驻 watcher（可选，原生启动接管）
+>   watcher.py             Windows watcher（可选）
 >   inject/renderer-inject.js
 > 
 > tests/                   自动化测试
 > ```
+> 
+> ## 友情链接
+> 
+> - [LINUX DO](https://linux.do)
+> 
+> ## 贡献者与 Star
+> 
+>   
+> 
+>   
+>   
+>   
 > 
 > ## 说明
 > 
@@ -816,19 +604,19 @@ Codex++ 的核心技術機制是通過外部啟動方式運行 Codex，並利用
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化]] · [[增強型應用]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[插件架構]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/BigPizzaV3/CodexPlusPlus)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：增強工具）
+> [!note]- 直接競品（同子分類：插件工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "增強工具" AND file.name != "BigPizzaV3--CodexPlusPlus"
+> WHERE subcategory = "插件工具" AND file.name != "BigPizzaV3--CodexPlusPlus"
 > SORT stars DESC
 > ```
 
@@ -860,7 +648,7 @@ Codex++ 的核心技術機制是通過外部啟動方式運行 Codex，並利用
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化","增強型應用"];
+> const concepts = ["CLI/TUI","自動化","插件架構"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "BigPizzaV3--CodexPlusPlus" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

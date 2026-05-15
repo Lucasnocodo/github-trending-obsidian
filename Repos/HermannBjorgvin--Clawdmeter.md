@@ -9,7 +9,7 @@ description: "ESP32 desk dashboard that shows Claude Code usage"
 homepage: ""
 stars: 869
 stars_per_day: 290
-forks: 62
+forks: 63
 open_issues: 2
 created: 2026-05-11
 pushed_at: 2026-05-14
@@ -17,7 +17,7 @@ first_seen: 2026-05-14
 week: "2026-W20"
 month: "2026-05"
 category: "開發工具"
-subcategory: "硬體監控"
+subcategory: "監控"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,23 +26,23 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-14
-use_case: "提供一個 ESP32 儀表板，實時監控 Claude Code 的使用情況。"
+use_case: "提供一個 ESP32 儀表板來監控 Claude Code 的使用情況。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 2
 next_review: "2026-05-18"
-contributor_count: 1
+contributor_count: 2
 engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 11365
-readme_length: 9501
+issue_close_rate: 33
+repo_size_kb: 11362
+readme_length: 9753
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-14"
-star_history: "2026-05-14:683,2026-05-14:685,2026-05-15:869"
+star_history: "2026-05-14:683,2026-05-14:685,2026-05-15:869,2026-05-15:869"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "Clawdmeter"
   - "HermannBjorgvin/Clawdmeter"
-  - "提供一個 ESP32 儀表板，實時監控 Claude Code 的使用情況。"
+  - "提供一個 ESP32 儀表板來監控 Claude Code 的使用情況。"
 ---
 
 # Clawdmeter
 
-**685** stars · **343** stars/天 · 建立 2 天前 · C · 未標註授權
+**869** stars · **290** stars/天 · 建立 3 天前 · C · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/HermannBjorgvin--Clawdmeter");
@@ -68,23 +68,21 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案`
-
 > [!summary] 一句話摘要
-> 提供一個 ESP32 儀表板，實時監控 Claude Code 的使用情況。
+> 提供一個 ESP32 儀表板來監控 Claude Code 的使用情況。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (343 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 希望在桌面環境中實時監控 Claude Code 使用情況的開發者。
-> **一句話重點** Clawdmeter 不僅是一個監控工具，更是一個結合硬體和軟體的創新實驗，展示了 ESP32 的潛力。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (290 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Low
+> **適合** 需要實時監控 Claude Code 使用情況的開發者和創作者。
+> **一句話重點** Clawdmeter 不僅是一個工具，更是一個趣味的使用監控儀表板，讓開發者在工作時也能享受使用的樂趣。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/HermannBjorgvin--Clawdmeter");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "硬體監控" && p.file.name !== "HermannBjorgvin--Clawdmeter" && p.status !== "archived")
+>     .where(p => p.subcategory === "監控" && p.file.name !== "HermannBjorgvin--Clawdmeter" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,110 +93,98 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 硬體監控 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 監控 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
-> **結論** 花 3 小時學習，2 小時整合，得到即時監控功能，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，3 小時整合，能夠獲得即時的使用監控，值得投入。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個獨特的 ESP32 儀表板，能夠即時顯示 Claude Code 的使用情況，並透過動畫反饋提升互動性。
+> 這個專案的創新點在於將 Claude Code 使用數據以可視化的方式呈現在 ESP32 顯示屏上。
 
 ## 專案簡介
 
-Clawdmeter 是一個專為 ESP32 設計的桌面儀表板，能夠實時顯示 Claude Code 的使用情況。它透過藍牙與電腦連接，並在 OLED 顯示屏上顯示使用率和動畫。使用者可以透過兩個側邊按鈕快速發送指令，這些指令能夠觸發 Claude Code 的語音模式和模式切換。這個工具的賣點在於其即時性和可視化，讓使用者能夠隨時掌握自己的使用情況。其核心機制包括一個後台守護進程，每60秒從 Claude Code API 獲取使用數據，並將其傳送至 ESP32 顯示器。這樣的設計不僅提高了使用者的互動性，還能讓使用者根據使用情況調整工作方式。
+Clawdmeter 是一個專為 ESP32 設計的桌面儀表板，能夠實時顯示 Claude Code 的使用情況。它透過藍牙與筆記型電腦連接，並每 60 秒從 Claude 的 API 獲取使用數據，這些數據會顯示在 2.16 吋的 AMOLED 顯示屏上。使用者可以透過側邊按鈕發送快捷鍵來控制 Claude 的語音模式和模式切換，這樣的設計讓使用者能夠輕鬆地在工作時監控其使用情況。這個工具的賣點在於其即時性和可視化的使用數據，讓使用者能夠快速了解自己的使用狀況。技術上，Clawdmeter 使用了 ESP32-S3 和 LVGL 作為顯示框架，並透過 BLE HID 協議來傳輸數據。
 
-使用者需要具備 Linux 環境和 PlatformIO CLI 來進行安裝和配置，這使得開發者能夠輕鬆上手。這個專案的技術實作使用了 C/C++ 來開發固件，並利用 BLE 進行設備間的通信，這樣的選擇使得設備能夠輕量且高效地運行。相較於其他類似工具，如 0x0funky/agent-sprite-forge 和 432539/gpt2api，Clawdmeter 提供了更為直觀的使用介面和即時反饋，這對於需要隨時監控使用情況的開發者來說是非常有幫助的。使用者在使用過程中可能會遇到藍牙配對的問題，這需要手動進行設置，且目前僅支援 Linux 和 MacOS，Windows 用戶則需要額外的配置。這個專案目前處於活躍開發階段，未來可能會增加更多功能，如多設備支持或更精細的使用分析。對於希望在桌面環境中實現 Claude Code 使用監控的開發者來說，Clawdmeter 是一個值得嘗試的工具。
+這種設計使得它能夠在不干擾使用者的情況下，提供即時的反饋。與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 HKUDS/ClawTeam，Clawdmeter 提供了更直觀的使用介面和即時的數據更新，特別適合需要頻繁監控使用情況的開發者。實際使用中，這個儀表板能夠有效地幫助使用者管理其 Claude Code 的使用，並且在長時間使用時，會自動切換顯示的動畫，增加趣味性。儘管如此，使用者需要注意其依賴的藍牙連接穩定性，並確保設備的電量充足。整體而言，Clawdmeter 是一個有趣且實用的工具，特別適合需要長時間使用 Claude Code 的開發者和創作者。
 
-**技術棧**：`C` · `C++` · `Shell` · `JavaScript`
+**技術棧**：`ESP32-S3` · `LVGL` · `Python`
 
 ## 重點功能
 
-- 實時使用監控 — 每60秒從 Claude Code API 獲取使用數據並顯示。
-- 藍牙連接 — 藉由 BLE 與電腦連接，支持即時指令發送。
-- 動畫反饋 — 使用率上升時，顯示不同的 Clawd 動畫以增加互動性。
-- 多屏幕切換 — 透過按鈕切換使用率和藍牙連接狀態的顯示。
-- 簡易安裝 — 提供清晰的安裝指令和需求，支持 Linux 和 MacOS。
+- 即時使用監控 — 每 60 秒從 Claude API 獲取使用數據並顯示。
+- 藍牙連接 — 透過 BLE HID 協議與筆記型電腦進行無線連接。
+- 可視化動畫 — 使用 Clawd 動畫來顯示使用狀況，增加趣味性。
+- 簡單的安裝過程 — 提供 Linux 和 macOS 的安裝腳本，方便用戶快速上手。
+- 多種按鈕功能 — 透過側邊按鈕發送快捷鍵，提升使用效率。
 
 ## 快速開始
 
-1. 下載專案並進入 firmware 目錄
+1. 安裝依賴
 ```bash
-git clone https://github.com/HermannBjorgvin/Clawdmeter.git && cd Clawdmeter/firmware
+sudo apt install curl bluetoothctl busctl
 ```
-2. 編譯並上傳固件
+2. 安裝 daemon
 ```bash
-pio run -t upload --upload-port /dev/ttyACM0
+./install.sh
 ```
-3. 啟動使用狀態守護進程
+3. 啟動 daemon
 ```bash
-./install.sh && systemctl --user start claude-usage-daemon
-```
-
-## 程式碼範例
-
-```c
-{
-  "前置條件": "已經安裝 PlatformIO 並連接 ESP32",
-  "指令": "pio run -t upload --upload-port /dev/ttyACM0",
-  "預期輸出": "固件成功上傳至 ESP32，設備開始運行。"
-}
+systemctl --user start claude-usage-daemon
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天就累積 685 stars（342.5/天），forks 41（6.0%），顯示出不錯的增長潛力。這個專案的作者 HermannBjorgvin 之前在開源社群中活躍，這次專案解決了使用者對於 Claude Code 使用情況的即時監控需求，之前的解決方案往往缺乏可視化和互動性。此專案的推出引起了社群的關注，特別是在相關論壇和社交媒體上獲得了討論。技術上，ESP32 的普及和 BLE 的成熟使得這個工具的實現變得可行，並且 forks/stars 比率顯示出使用者對於這個工具的興趣和實際修改的意願。
+> 建立 3 天內累積 869 stars（290/天），forks 63（7.2%），顯示出相當的關注度。這位開發者 HermannBjorgvin 之前有其他相關專案，這次的 Clawdmeter 解決了使用者無法直觀監控 Claude Code 使用情況的痛點，讓使用者能夠隨時掌握自己的使用狀況。社群的反應也相當熱烈，顯示出這個工具的實用性和趣味性。
 
 ## 適合誰使用
 
-**目標受眾**：希望在桌面環境中實時監控 Claude Code 使用情況的開發者。
+**目標受眾**：需要實時監控 Claude Code 使用情況的開發者和創作者。
 
 > [!example] 使用場景
-> - 開發者用它來監控 Claude Code 的使用情況，因為可以即時獲得使用率和動畫反饋，提升工作效率。
-> - 設計師用它來展示 Claude Code 的使用情況，因為其可視化的界面能吸引觀眾的注意力。
-> - 技術愛好者用它來探索 ESP32 的應用，因為這個專案提供了實際的硬體與軟體整合範例。
+> - 自由職業者用它來監控 Claude Code 的使用率，因為這樣可以避免超出訂閱限制，確保不會產生額外費用。
+> - 開發者用它來在開發過程中快速檢查 Claude Code 的使用情況，因為即時的數據顯示能幫助他們調整使用策略。
+> - 學生用它來追蹤自己的 Claude Code 使用時間，因為這樣可以更好地管理學習進度，避免過度依賴 AI 助手。
 
 ## 架構分析
 
-Clawdmeter 採用 ESP32 作為核心硬體，結合 OLED 顯示屏和 BLE 通信。這樣的設計使得設備能夠在低功耗下運行，同時提供即時的使用數據顯示。資料流方面，後台守護進程定期從 Claude Code API 獲取數據，並將其傳送至 ESP32 的 GATT 服務。
-
-這樣的架構選擇使得使用者能夠透過簡單的按鈕操作來切換顯示內容。選擇 ESP32 而非其他微控制器的原因在於其內建的藍牙功能和強大的處理能力，這使得整個系統能夠在小型設備上高效運行。擴展性方面，未來可以考慮增加更多的顯示功能或支援多設備連接，這可能需要進一步的硬體設計和軟體調整。
+Clawdmeter 的架構基於 ESP32-S3，使用 LVGL 作為顯示框架，並透過 BLE HID 協議與筆記型電腦進行連接。這樣的設計使得用戶能夠在不干擾工作的情況下，隨時監控 Claude Code 的使用情況。數據流從 Claude API 獲取使用數據，然後通過 BLE 傳輸到 ESP32，最終在 AMOLED 顯示屏上呈現。這種設計的代價是需要穩定的藍牙連接，否則將影響數據的及時更新。擴展性方面，若未來需要增加更多功能，可能需要進一步優化 BLE 的傳輸效率。
 
 ## 技術深入分析
 
-Clawdmeter 的核心技術機制包括使用 ESP32 作為主控，並利用 BLE 協議進行數據傳輸。這樣的設計使得設備能夠在低功耗的情況下，實現即時的數據更新和顯示。守護進程每60秒從 Claude Code API 獲取使用數據，這樣的頻率能夠保證使用者獲得最新的使用情況，而不會造成過多的 API 請求負擔。固件使用 C/C++ 開發，這樣的選擇使得系統能夠高效運行，並且能夠充分利用 ESP32 的硬體資源。設計上，選擇 BLE 而非 Wi-Fi 進行通信，這樣能夠降低功耗，延長設備的使用壽命。技術風險方面，隨著使用者數量的增加，可能會對 API 的請求頻率造成影響，這需要在設計上進行考量。整合方面，Clawdmeter 能夠輕鬆與現有的 Linux 環境結合，並且能夠在多種開發工具中進行配置，這使得其在開發者社群中具有良好的適應性。
+Clawdmeter 的核心技術機制是基於 ESP32-S3，這是一個功能強大的微控制器，能夠支持藍牙和 Wi-Fi 通訊。它使用 LVGL 作為顯示框架，這是一個輕量級的圖形庫，專為嵌入式設備設計，能夠高效地渲染圖形。這個工具能夠處理每分鐘的使用數據更新，並且在顯示屏上以動畫的形式呈現，這對於用戶來說是一個直觀的反饋。設計上，選擇 ESP32 是因為其低功耗和高效能的特性，這使得 Clawdmeter 能夠長時間運行而不需要頻繁充電。技術上，這個專案的依賴樹相對簡單，主要依賴於 ESP32 SDK 和 LVGL，這使得維護和擴展都相對容易。對於未來的擴展，可能需要考慮 BLE 的傳輸效率，特別是在多設備連接的情況下，這可能會成為性能瓶頸。整合方面，Clawdmeter 可以輕鬆與現有的開發環境結合，特別是對於已經在使用 Claude Code 的開發者來說，這是一個無縫的增強工具。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了詳細的安裝指令和使用說明，對於新手來說相對友好。安裝過程中需要配置藍牙，這可能對某些使用者造成困難。整體來說，文件清晰，能夠幫助使用者在30分鐘內完成設置並運行。多語言支持方面，目前僅提供英文文件。
+> README 文件提供了詳細的安裝步驟和使用說明，對於新手來說相對友好。安裝過程中，Linux 和 macOS 用戶都有清晰的指引，且提供了必要的命令。整體來說，花 30 分鐘內能夠順利運行。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 實時監控使用情況，讓使用者能夠隨時調整工作方式。
-> - 可視化的動畫反饋提升了使用者的互動體驗。
-> - 簡單的安裝流程，適合開發者快速上手。
+> - 即時監控使用情況，幫助用戶管理使用率。
+> - 趣味性強，透過動畫增強用戶體驗。
+> - 簡單的安裝和配置過程，降低了使用門檻。
 
 > [!danger] 缺點
-> - 目前僅支援 Linux 和 MacOS，Windows 用戶需要額外配置。
-> - 社群參與度較低，可能影響未來的支持和更新。
-> - 藍牙配對過程對於新手來說可能較為繁瑣。
+> - 僅支援特定操作系統，限制了用戶範圍。
+> - 依賴藍牙連接，若連接不穩定會影響使用。
+> - 需要有效的 Claude Code 訂閱，無法免費使用。
 
 > [!warning] 注意事項
-> - 僅支援 Linux 和 MacOS，Windows 用戶需要額外配置。
-> - 目前僅有一個開放的 Issue，顯示出社群參與度可能不足。
-> - 需要手動藍牙配對，對於新手來說可能有一定的學習曲線。
+> - 僅支援 Linux 和 macOS，Windows 用戶無法使用。
+> - 需要持續的藍牙連接，若連接不穩定可能影響數據更新。
+> - 需要 Claude Code 的有效訂閱，否則無法獲取使用數據。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的動畫功能，但不具備即時使用監控的能力，適合需要創建自定義動畫的開發者。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | 專注於 API 的使用，缺乏硬體整合的功能，適合需要直接調用 GPT-2 的開發者。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的動畫顯示，但不具備即時使用監控功能，適合需要創建動畫的開發者。 |
+| [HKUDS/ClawTeam](https://github.com/HKUDS/ClawTeam) | 雖然也針對 Claude Code，但 Clawdmeter 提供了更直觀的使用介面和即時數據更新。 |
 
 ## 替代方案決策
 
@@ -206,64 +192,95 @@ Clawdmeter 的核心技術機制包括使用 ESP32 作為主控，並利用 BLE 
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建和管理動畫精靈，並不提供即時監控功能。 | 如果你的需求是創建自定義動畫而非監控使用情況，這個工具會更合適。 | low，因為兩者的功能重疊不大，遷移過程相對簡單。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | 專注於 API 的直接調用，缺乏硬體整合的功能。 | 如果你需要直接與 GPT-2 進行交互，而不需要硬體支持，這個工具會更適合。 | medium，因為需要重構整個工作流程以適應 API 的使用。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建和管理動畫，而非即時監控使用情況，適合需要創建自定義動畫的開發者。 | 如果你的需求是創建獨特的動畫而非監控使用，這個工具會更合適。 | medium，因為需要重新設計整個使用流程。 |
+| [HKUDS/ClawTeam](https://github.com/HKUDS/ClawTeam) | 提供類似的功能，但缺乏 Clawdmeter 的即時數據更新和可視化效果。 | 如果你的需求是簡單的使用監控而不需要動畫，HKUDS/ClawTeam 會是更簡單的選擇。 | low，因為功能上有相似之處。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **Clawdmeter** | **agent-sprite-forge** | **gpt2api** |
+> | 維度 | **Clawdmeter** | **agent-sprite-forge** | **ClawTeam** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於創建和管理動畫精靈，並不提供即時監控功能。 | 專注於 API 的直接調用，缺乏硬體整合的功能。 |
-> | 遷移成本 | - | low，因為兩者的功能重疊不大，遷移過程相對簡單。 | medium，因為需要重構整個工作流程以適應 API 的使用。 |
-> | 適用場景 | 主要場景 | 如果你的需求是創建自定義動畫而非監控使用情況，這個工具會更合 | 如果你需要直接與 GPT-2 進行交互，而不需要硬體支持，這 |
+> | 技術路線 | 本專案 | 專注於創建和管理動畫，而非即時監控使用情況，適合需要創建自定義動畫的開發者。 | 提供類似的功能，但缺乏 Clawdmeter 的即時數據更新和可視化效果。 |
+> | 遷移成本 | - | medium，因為需要重新設計整個使用流程。 | low，因為功能上有相似之處。 |
+> | 適用場景 | 主要場景 | 如果你的需求是創建獨特的動畫而非監控使用，這個工具會更合適。 | 如果你的需求是簡單的使用監控而不需要動畫，HKUDS/Cla |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人項目試用，不建議在生產環境中使用。
+> 適合開發者在個人項目中試用，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 藍牙配對過程可能會失敗，特別是在多設備環境中。
-  - 解法：確保設備在配對模式下，並重啟藍牙服務。
-- [MEDIUM] 在某些 Linux 發行版上，安裝過程可能會遇到依賴問題。
-  - 解法：提前安裝所有必要的依賴，並檢查版本兼容性。
-- [MEDIUM] 固件更新後，可能需要重新配對藍牙設備。
-  - 解法：在更新後重新執行配對步驟。
+- **[HIGH]** 藍牙連接不穩定可能導致數據更新延遲
+  - 解法：確保設備在有效範圍內，並檢查藍牙設定。
+- [MEDIUM] 安裝過程中可能需要額外的系統權限
+  - 解法：根據提示授予必要的權限。
+- [MEDIUM] 對於某些 Linux 發行版，安裝依賴可能會出現問題
+  - 解法：參考官方文檔，手動安裝缺失的依賴。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊需要監控使用情況 | 非常適合 | 即時監控功能能有效提升團隊效率。 |
-| 個人開發者希望探索 ESP32 應用 | 適合 | 提供了良好的硬體整合範例，適合學習。 |
-| 大型企業需要高效的使用監控系統 | 不適合 | 目前功能較為簡單，無法滿足複雜需求。 |
-| 需要在 Windows 環境中運行的開發者 | 不適合 | 目前僅支援 Linux 和 MacOS。 |
+| 需要長時間使用 Claude Code 的開發者 | 非常適合 | 能夠實時監控使用情況，避免超出訂閱限制。 |
+| 偶爾使用 Claude Code 的學生 | 普通 | 雖然可以監控使用，但可能不需要這麼高頻的數據更新。 |
+| 小型團隊開發者 | 適合 | 能夠幫助團隊成員了解整體使用情況，促進合作。 |
+| 不使用 Claude Code 的開發者 | 不適合 | 這個工具的功能完全依賴於 Claude Code 的使用。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~3 小時 |
-| 整合時間 | ~2 小時 |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，2 小時整合，得到即時監控功能，值得一試。
+> 花 2 小時學習，3 小時整合，能夠獲得即時的使用監控，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，僅需訪問用戶的 Claude Code 賬戶信息。依賴鏈中無已知的安全漏洞，適合在 CI/CD 中使用。
+> 低風險：Clawdmeter 本身不需要高權限運行，僅需訪問 Claude Code 的 API，且不存取敏感資料。藍牙連接的安全性取決於使用者的設備設定，建議使用者定期檢查連接的安全性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Clawdmeter 最常與 Claude Code 和 ESP32 開發環境搭配使用，處於開發和監控的環節。在一個使用 Claude Code 的開發環境中，Clawdmeter 可以作為即時監控工具，幫助開發者隨時掌握使用情況。它能夠與 GitHub Actions 等 CI 工具整合，並且可以在 VS Code 等 IDE 中使用，提升開發效率。整合的摩擦點主要在於藍牙連接的穩定性，使用者需要確保設備在有效範圍內。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 Clawdmeter 出現之前，開發者通常依賴於手動檢查使用情況，這不僅繁瑣且容易出錯。隨著 Claude Code 的普及，對於即時監控使用情況的需求逐漸增強。技術的進步使得 ESP32 成為一個理想的解決方案，因為它具備低功耗和高效能的特性。
+
+Clawdmeter 代表了物聯網設備在開發者工具中的應用趨勢，未來可能會有更多類似的工具出現，進一步提升開發者的工作效率。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-3 人的小型團隊
+
+**前置技能**：
+- 熟悉 ESP32 開發
+- 了解 BLE 通訊
+- 有使用 Claude Code 的經驗
+
+> [!tip] 導入策略
+> 第一週：在個人項目中試用 Clawdmeter。第二週：在團隊內部分享使用經驗，收集反饋。第三週：根據反饋進行調整，並考慮在更大範圍內推廣使用。
+
+**成功指標**：能夠實時監控 Claude Code 的使用情況，並減少超出訂閱限制的情況。
+
+> [!warning] 退出計畫
+> 若需退出，所有設定和數據都可導出為 JSON 格式，方便轉移至其他工具。
 
 ## 健康度儀表板
 
@@ -328,10 +345,10 @@ Clawdmeter 的核心技術機制包括使用 ESP32 作為主控，並利用 BLE 
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 41 |
-| Open Issues | 1 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-05-12 |
+| Forks | 63 |
+| Open Issues | 2 |
+| Issue 解決率 | 33% (1 closed) |
+| 最後推送 | 2026-05-14 |
 | 建立日期 | 2026-05-11 |
 | Repo 大小 | 11.1 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/HermannBjorgvin/Clawdmeter) |
@@ -339,32 +356,28 @@ Clawdmeter 的核心技術機制包括使用 ESP32 作為主控，並利用 BLE 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "C" : 96
+>     "C" : 95
 >     "C++" : 3
 >     "Shell" : 1
 >     "JavaScript" : 1
+>     "Python" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@HermannBjorgvin](https://github.com/HermannBjorgvin) | 38 |
+> | [@HermannBjorgvin](https://github.com/HermannBjorgvin) | 44 |
+> | [@BlockedPath](https://github.com/BlockedPath) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：最近兩天內有活躍的提交和更新，顯示出開發者對專案的持續關注。
+**社群活躍度**：社群活躍，最近有多次提交和問題回應。
+**連結**：[文件](https://github.com/HermannBjorgvin/Clawdmeter)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-11 ~ 2026-05-12）
-> **活躍天數** 2 天 · **最新 commit** Update README to reflect changes in demo and animations
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#3](https://github.com/HermannBjorgvin/Clawdmeter/issues/3) | hvar fær maður esp32 device??? | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-05-11 ~ 2026-05-14）
+> **活躍天數** 3 天 · **最新 commit** Update README.md
 
 ## README 摘錄
 
@@ -373,7 +386,7 @@ Clawdmeter 的核心技術機制包括使用 ESP32 作為主控，並利用 BLE 
 > 
 > A small ESP32 dashboard I made for my desk to keep an eye on Claude Code usage.
 > 
-> It runs on a [Waveshare ESP32-S3-Touch-AMOLED-2.16](https://docs.waveshare.com/ESP32-S3-Touch-AMOLED-2.16) and pairs with my laptop over Bluetooth, and the splash screen plays pixel-art Clawd animations that get
+> It runs on a [Waveshare ESP32-S3-Touch-AMOLED-2.16](https://www.waveshare.com/esp32-s3-touch-amoled-2.16.htm?&aff_id=149786) and pairs with my laptop over Bluetooth, the splash screen plays pixel-art Clawd animations that get
 > busier when your usage rate climbs. The two side buttons send Space and
 > Shift+Tab over BLE HID for Claude Code's voice mode and mode-toggle shortcuts.
 > 
@@ -383,59 +396,45 @@ Clawdmeter 的核心技術機制包括使用 ESP32 作為主控，並利用 BLE 
 > 
 > The Clawd animations come from [claudepix](https://claudepix.vercel.app), [@amaanbuilds](https://x.com/amaanbuilds)'s library of pixel-art Clawd sprites, check it out, it's lovely.
 > 
-> ## Screens
-> 
-> The device boots into the splash and stays there until you press the middle (PWR) button, which cycles between Usage and Bluetooth. Tap the screen anywhere (except the Reset zone on the Bluetooth screen) to flip back to the splash; tap again to dismiss it.
-> 
-> |              Splash               |              Usage              |                Bluetooth                |
-> | :-------------------------------: | :-----------------------------: | :-------------------------------------: |
-> |  |  |  |
-> |   Splash; touch-toggle anytime    | Session and weekly utilization  |    Connection status and bond reset     |
-> 
-> While the splash is up, the middle button cycles animations instead of screens. The firmware also auto-rotates every 20 s within the current usage-rate group, so a long stretch on the splash isn't just one Clawd on loop.
-> 
-> ## Hardware
-> 
-> - [Waveshare ESP32-S3-Touch-AMOLED-2.16](https://docs.waveshare.com/ESP32-S3-Touch-AMOLED-2.16) — ESP32-S3R8, 2.16" 480×480 AMOLED (CO5300 QSPI), CST9220 cap touch, AXP2101 PMU + Li-Po battery, QMI8658 IMU
-> - USB-C cable for flashing firmware and charging
-> - 3.7V Li-Po battery (MX1.25 2-pin connector, optional)
 > 
 > ## Prerequisites
 > 
-> - Linux (tested on Ubuntu)
+> - Linux (tested on Ubuntu) or macOS
 > - [PlatformIO CLI](https://docs.platformio.org/en/latest/core/installation/index.html)
-> - `curl`, `bluetoothctl`, `busctl` (BlueZ Bluetooth stack)
+> - Linux: `curl`, `bluetoothctl`, `busctl` (BlueZ Bluetooth stack)
+> - macOS: `python3` (the installer sets up a venv with `bleak` and `httpx`)
 > - Claude Code with an active subscription
 > 
-> ## MacOS support
 > 
-> MacOS is fully supported, that is as soon as you prompt it and create a pull request for it!
+> ## macOS installation
 > 
-> I run Linux myself so it's harder for me to test this but anyone who wants MacOS support is welcome to contribute.
+> The macOS host pieces — Python daemon, LaunchAgent, and flash helper — were ported by [Chris Davidson (@lorddavidson)](https://github.com/lorddavidson). Thanks Chris!
 > 
-> ## Flash the firmware
 > 
-> ```bash
-> cd firmware
-> pio run -t upload --upload-port /dev/ttyACM0
-> ```
+> ### Install the daemon
 > 
-> ## Bluetooth pairing
-> 
-> After flashing, the device advertises as "Claude Controller". Pair it once:
+> The daemon reads your Claude OAuth token from the macOS Keychain (service `Claude Code-credentials`), polls usage every 60 s, and pushes it to the display over BLE.
 > 
 > ```bash
-> # Scan for the device
-> bluetoothctl scan le
-> 
-> # When "Claude Controller" appears, pair and trust it
-> bluetoothctl pair F4:12:FA:C0:8F:E5    # use your device's MAC
-> bluetoothctl trust F4:12:FA:C0:8F:E5
+> ./install-mac.sh
 > ```
 > 
-> The MAC address is shown on the Bluetooth screen — press the middle (PWR) button to cycle to it.
+> The installer creates a Python venv in `daemon/.venv/`, installs `bleak` and `httpx`, renders a LaunchAgent into `~/Library/LaunchAgents/com.user.claude-usage-daemon.plist`, and loads it. The first run is launched interactively so macOS prompts for Bluetooth permission.
 > 
-> ## Install the daemon
+> Useful commands:
+> 
+> ```bash
+> launchctl list | grep claude-usage                                          # check it's running
+> tail -F ~/Library/Logs/claude-usage-daemon.out.log                          # live logs
+> launchctl unload ~/Library/LaunchAgents/com.user.claude-usage-daemon.plist  # stop
+> launchctl load -w ~/Library/LaunchAgents/com.user.claude-usage-daemon.plist # start
+> ```
+> 
+> 
+> ## Linux installation
+> 
+> 
+> ### Install the daemon
 > 
 > The daemon polls your Claude usage every 60 seconds and sends it to the display over BLE.
 > 
@@ -448,6 +447,65 @@ Clawdmeter 的核心技術機制包括使用 ESP32 作為主控，並利用 BLE 
 > 
 > View logs: `journalctl --user -u claude-usage-daemon -f`
 > 
+> 
+> ## Screens
+> 
+> The device boots into the splash and stays there until you press the middle (PWR) button, which cycles between Usage and Bluetooth. Tap the screen anywhere (except the Reset zone on the Bluetooth screen) to flip back to the splash; tap again to dismiss it.
+> 
+> |              Splash               |              Usage              |                Bluetooth                |
+> | :-------------------------------: | :-----------------------------: | :-------------------------------------: |
+> |  |  |  |
+> |   Splash; touch-toggle anytime    | Session and weekly utilization  |    Connection status and bond reset     |
+> 
+> While the splash is up, the middle button cycles animations instead of screens. The firmware also auto-rotates every 20 s within the current usage-rate group, so a long stretch on the splash isn't just one Clawd on loop.
+> 
+> 
+> ## Hardware
+> 
+> - [Waveshare ESP32-S3-Touch-AMOLED-2.16](https://www.waveshare.com/esp32-s3-touch-amoled-2.16.htm?&aff_id=149786) - ESP32-S3R8, 2.16" 480×480 AMOLED (CO5300 QSPI), CST9220 cap touch, AXP2101 PMU + Li-Po battery, QMI8658 IMU
+> - USB-C cable for flashing firmware and charging
+> - 3.7V Li-Po battery (MX1.25 2-pin connector, optional)
+> 
+> 
+> ### Flash the firmware
+> 
+> ```bash
+> ./flash-mac.sh                       # auto-detects /dev/cu.usbmodem*
+> ./flash-mac.sh /dev/cu.usbmodem1101  # or pass an explicit USB serial port
+> ```
+> 
+> 
+> ### Pair the device
+> 
+> After flashing, open **System Settings → Bluetooth** and click *Connect* next to "Clawdmeter". The daemon will discover it on its next scan (~30 s).
+> 
+> 
+> ### Flash the firmware
+> 
+> ```bash
+> cd firmware
+> pio run -t upload --upload-port /dev/ttyACM0
+> ```
+> 
+> 
+> ### Pair the device
+> 
+> After flashing, the device advertises as "Claudemeter". Pair it once:
+> 
+> ```bash
+> 
+> # Scan for the device
+> bluetoothctl scan le
+> 
+> 
+> # When "Claude Controller" appears, pair and trust it
+> bluetoothctl pair F4:12:FA:C0:8F:E5    # use your device's MAC
+> bluetoothctl trust F4:12:FA:C0:8F:E5
+> ```
+> 
+> The MAC address is shown on the Bluetooth screen — press the middle (PWR) button to cycle to it.
+> 
+> 
 > ## How it works
 > 
 > 1. The daemon reads your Claude Code OAuth token from `~/.claude/.credentials.json`.
@@ -457,6 +515,7 @@ Clawdmeter 的核心技術機制包括使用 ESP32 作為主控，並利用 BLE 
 > 5. The firmware parses it and updates the LVGL dashboard.
 > 6. The firmware also tracks the rate of change of session % over a 5-minute window and picks splash animations from the matching mood group.
 > 7. The two side buttons are independent of all of this — they send Space and Shift+Tab as BLE HID keyboard input to the paired host directly.
+> 
 > 
 > ## Physical buttons
 > 
@@ -469,6 +528,7 @@ Clawdmeter 的核心技術機制包括使用 ESP32 作為主控，並利用 BLE 
 > | **Right**        | GPIO 18      | Press to send Shift+Tab (Claude Code mode toggle)              |
 > 
 > Space and Shift+Tab go out as standard BLE HID keyboard reports, so they trigger in whatever window has focus on the paired host — not just Claude Code.
+> 
 > 
 > ## BLE protocol
 > 
@@ -489,11 +549,10 @@ Clawdmeter 的核心技術機制包括使用 ESP32 作為主控，並利用 BLE 
 > 
 > Fields: `s` = session %, `sr` = session reset (minutes), `w` = weekly %, `wr` = weekly reset (minutes), `st` = status, `ok` = success flag.
 > 
+> 
 > ## Recompiling fonts
 > 
-> The `firmware/src/font_*.c` files are pre-compiled LVGL bitmap fonts. Sizes
-> are roughly 1.9× larger than the Panlee 165 PPI panel this project started on,
-> to match the 314 PPI of the 2.16" AMOLED.
+> The `firmware/src/font_*.c` files are pre-compiled LVGL bitmap fonts.
 > 
 > ```bash
 > npm install -g lv_font_conv
@@ -502,10 +561,12 @@ Clawdmeter 的核心技術機制包括使用 ESP32 作為主控，並利用 BLE 
 > Generate each one (one at a time — `lv_font_conv` doesn't like loop-driven invocations) with `--no-compress` (required for LVGL 9):
 > 
 > ```bash
+> 
 > # Tiempos Text (titles, 56px)
 > lv_font_conv --font assets/TiemposText-400-Regular.otf -r 0x20-0x7E \
 >   --size 56 --format lvgl --bpp 4 --no-compress \
 >   -o firmware/src/font_tiempos_56.c --lv-include "lvgl.h"
+> 
 > 
 > # Styrene B (large numbers 48, panel labels 28, small text 24, minimal 20)
 > for size in 48 28 24 20; do
@@ -514,49 +575,28 @@ Clawdmeter 的核心技術機制包括使用 ESP32 作為主控，並利用 BLE 
 >     -o firmware/src/font_styrene_${size}.c --lv-include "lvgl.h"
 > done
 > 
+> 
 > # DejaVu Sans Mono (32px, with spinner Unicode chars)
 > lv_font_conv --font assets/DejaVuSansMono.ttf \
 >   -r 0x20-0x7E,0xB7,0x2026,0x2722,0x2733,0x2736,0x273B,0x273D \
 >   --size 32 --format lvgl --bpp 4 --no-compress \
->   -o firmware/src/font_mono_32.c --lv-include "lvgl.h"
-> ```
-> 
-> **Important:** `lv_font_conv` v1.5.3 outputs LVGL 8 format. Each generated file must be patched for LVGL 9 compatibility:
-> 
-> 1. Remove `#if LVGL_VERSION_MAJOR >= 8` guards around `font_dsc` and the font struct
-> 2. Remove the `.cache` field from `font_dsc`
-> 3. Add `.release_glyph = NULL`, `.kerning = 0`, `.static_bitmap = 0` to the font struct
-> 4. Add `.fallback = NULL`, `.user_data = NULL` to the font struct
-> 
-> Without these patches, fonts compile but render as invisible.
-> 
-> ## Converting Lucide icons
-> 
-> The UI uses a small set of [Lucide](https://lucide.dev) icons (bluetooth + battery states) converted to RGB565 / RGB565A8 C arrays for LVGL.
-> 
-> ```bash
-> node tools/png_to_lvgl.js assets/icon_bluetooth_48.png icon_bluetooth_data ICON_BLUETOOTH_WIDTH ICON_BLUETOOTH_HEIGHT
-> ```
-> 
-> Default tint is white (`0xFFFFFF`); Lucide PNGs ship as black-on-transparent and would render invisible against the dark UI without it. Pass `--no-tint` for pre-coloured artwork like the logo. Battery icons use RGB565A8 (alpha plane) so they blend cleanly over the splash; the rest are baked RGB565 over the panel colour. Paste the converter output into `firmware/src/icons.h`.
-> 
-> ## Splash animati
+>   -
 
 ## 延伸閱讀
 
-相關概念：[[BLE]] · [[ESP32]] · [[硬體監控]]
+相關概念：[[BLE HID]] · [[物聯網]] · [[即時通訊]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[NawfalMotii79--PLFM_RADAR|NawfalMotii79/PLFM_RADAR]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[432539--gpt2api|432539/gpt2api]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[NawfalMotii79--PLFM_RADAR|NawfalMotii79/PLFM_RADAR]] · [[0xGF--boneyard|0xGF/boneyard]]
 
 [GitHub](https://github.com/HermannBjorgvin/Clawdmeter)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：硬體監控）
+> [!note]- 直接競品（同子分類：監控）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "硬體監控" AND file.name != "HermannBjorgvin--Clawdmeter"
+> WHERE subcategory = "監控" AND file.name != "HermannBjorgvin--Clawdmeter"
 > SORT stars DESC
 > ```
 
@@ -588,7 +628,7 @@ Clawdmeter 的核心技術機制包括使用 ESP32 作為主控，並利用 BLE 
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["BLE","ESP32","硬體監控"];
+> const concepts = ["BLE HID","物聯網","即時通訊"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "HermannBjorgvin--Clawdmeter" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
