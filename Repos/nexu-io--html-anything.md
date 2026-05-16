@@ -7,12 +7,12 @@ language: HTML
 license: Apache-2.0
 description: "✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it. 🚀 75 Skills × 9 Surfaces (magazine · deck · poster · XHS / tweet · prototype · data report · Hyperframes) 🛡️ Sandboxed preview · 📤 1-click to WeChat / X / Zhihu / HTML / PNG 🔑 Zero API key — Claude Code / Cursor / Codex / Gemini / Copilot / OpenCode / Qwen / Aider."
 homepage: ""
-stars: 930
-stars_per_day: 310
-forks: 94
-open_issues: 5
+stars: 1989
+stars_per_day: 497
+forks: 226
+open_issues: 21
 created: 2026-05-11
-pushed_at: 2026-05-14
+pushed_at: 2026-05-15
 first_seen: 2026-05-15
 week: "2026-W20"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "讓你的本地 AI 代理自動生成 HTML，無需手動編輯，快
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-18"
+appearances: 2
+next_review: "2026-05-19"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 29
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-15"
-star_history: "2026-05-15:930"
+star_history: "2026-05-15:930,2026-05-16:1989"
 tags:
   - github
   - "category/開發工具"
@@ -526,7 +526,7 @@ pnpm dev
 
 相關概念：[[AI 編輯器]] · [[本地運行]] · [[即時預覽]]
 
-相關專案：[[nexu-io--open-design|nexu-io/open-design]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[432539--gpt2api|432539/gpt2api]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]]
+相關專案：[[nexu-io--open-design|nexu-io/open-design]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[432539--gpt2api|432539/gpt2api]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]]
 
 [GitHub](https://github.com/nexu-io/html-anything)
 
@@ -822,4 +822,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-16|2026-05-16]] — 再次上榜，2.0k stars
 - [[2026-05-15|2026-05-15]] — 首次收錄，930 stars

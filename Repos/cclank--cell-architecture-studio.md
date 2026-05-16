@@ -1,23 +1,23 @@
 ---
-repo: huangserva/3DCellForge
-url: https://github.com/huangserva/3DCellForge
-owner: huangserva
+repo: cclank/cell-architecture-studio
+url: https://github.com/cclank/cell-architecture-studio
+owner: cclank
 owner_type: User
-language: JavaScript
+language: TypeScript
 license: MIT
-description: "AI-powered interactive 3D cell generation and exploration studio."
-homepage: ""
-stars: 2059
-stars_per_day: 412
-forks: 345
+description: "Interactive 3D cell architecture gallery built with React and Three.js"
+homepage: "https://cell-architecture-studio-inky.vercel.app"
+stars: 610
+stars_per_day: 122
+forks: 133
 open_issues: 2
 created: 2026-05-10
-pushed_at: 2026-05-15
-first_seen: 2026-05-11
+pushed_at: 2026-05-11
+first_seen: 2026-05-16
 week: "2026-W20"
 month: "2026-05"
-category: "其他"
-subcategory: "3D 模型生成"
+category: "教育資源"
+subcategory: "生物學學習"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -25,41 +25,41 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-05-11
-use_case: "提供 AI 驅動的互動式 3D 細胞生成與探索平台。"
-priority: high
+last_reviewed: 2026-05-16
+use_case: "提供互動式的細胞結構畫廊，讓使用者深入了解各種細胞類型及其組織。"
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
-next_review: "2026-05-19"
-contributor_count: 0
+appearances: 1
+next_review: "2026-05-23"
+contributor_count: 1
 engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 133037
-readme_length: 3465
-bus_factor: 0
+issue_close_rate: 0
+repo_size_kb: 98246
+readme_length: 4091
+bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-05-11"
-star_history: "2026-05-11:757,2026-05-12:1405,2026-05-13:1711,2026-05-14:1809,2026-05-15:2011,2026-05-16:2059"
+ring_history: "assess@2026-05-16"
+star_history: "2026-05-16:610"
 tags:
   - github
-  - "category/其他"
-  - "lang/javascript"
+  - "category/教育資源"
+  - "lang/typescript"
   - easy_install
 aliases:
-  - "3DCellForge"
-  - "huangserva/3DCellForge"
-  - "提供 AI 驅動的互動式 3D 細胞生成與探索平台。"
+  - "cell-architecture-studio"
+  - "cclank/cell-architecture-studio"
+  - "提供互動式的細胞結構畫廊，讓使用者深入了解各種細胞類型及其組織。"
 ---
 
-# 3DCellForge
+# cell-architecture-studio
 
-**757** stars · **757** stars/天 · 建立 1 天前 · JavaScript · MIT
+**610** stars · **122** stars/天 · 建立 5 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/huangserva--3DCellForge");
+const me = dv.page("Repos/cclank--cell-architecture-studio");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`easy-install`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供 AI 驅動的互動式 3D 細胞生成與探索平台。
+> 提供互動式的細胞結構畫廊，讓使用者深入了解各種細胞類型及其組織。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (757 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要在瀏覽器中進行 3D 細胞模型探索的生物學研究人員和開發者。
-> **一句話重點** 這個專案不僅提供了 3D 模型生成的能力，還強調了用戶的互動體驗，這在生物學領域是相對少見的。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (122 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 對生物學有興趣的教育工作者和學生，特別是需要互動學習工具的使用者。
+> **一句話重點** 這個專案不僅是3D細胞模型的展示，更是結合了教育和互動學習的創新工具。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/cclank--cell-architecture-studio");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "3D 模型生成" && p.file.name !== "huangserva--3DCellForge" && p.status !== "archived")
+>     .where(p => p.subcategory === "生物學學習" && p.file.name !== "cclank--cell-architecture-studio" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,32 +96,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 3D 模型生成 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 生物學學習 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到靈活的 3D 模型生成能力，值得考慮。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學、3 小時整合，得到高互動的學習工具，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供即時的 3D 細胞生成與探索功能，並支持多種生成模式。
+> 提供高保真的細胞3D模型和互動學習體驗，結合 AI 教學面板。
 
 ## 專案簡介
 
-3DCellForge 是一個基於 React 和 Three.js 的原型，專為探索生物細胞模型而設計，提供了一個精緻的瀏覽器界面。用戶可以透過拖動來旋轉視圖、滾動來縮放，並切換 3D 證明模式，這些功能使得細胞的探索變得直觀而互動。該工具支持從上傳的參考圖像生成真實的 3D 模型，並提供了 GLB 格式的導出，這對於需要將細胞模型整合到其他應用中的研究者來說非常實用。核心賣點在於其即時的 WebGL 控制和多種生成模式，包括雲端生成和本地備份模式，這使得用戶在不同情境下都能靈活選擇生成方式。使用者只需運行 `npm run dev` 即可啟動開發環境，並透過 Vite 獲取即時的開發預覽。
+Cell Architecture Studio 是一個互動式的細胞結構畫廊，使用者可以透過選擇不同的細胞類型來探索細胞的組織和器官。這個專案的核心機制是利用 React 和 Three.js，將 GLB 格式的3D模型渲染到網頁上，並提供可視化的細胞比較模式。使用者可以透過簡單的指令 `npm run dev` 啟動本地開發伺服器，並在瀏覽器中查看細胞模型的細節。這個工具的賣點在於其高保真的細胞模型和 AI 教學面板，讓學習生物的過程變得更有趣和互動性。
 
-這個工具的技術棧包括 React、Vite 和 Three.js，這些選擇不僅提升了開發效率，也確保了良好的性能和可擴展性。相較於其他類似工具，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，3DCellForge 提供了更為豐富的互動功能和多樣的生成選項，特別是在細胞模型的視覺化和操作上更具優勢。實際使用中，該工具能夠處理多達數百個細胞模型，並且支持多種 API 整合，這使得它在生物醫學研究中具有廣泛的應用潛力。對於需要在前端進行 3D 模型探索的開發者來說，這是一個值得考慮的選擇。未來 6 個月內，隨著使用者社群的擴大和功能的持續增強，這個專案有望成為生物模型探索的主流工具之一。
+專案的技術堆疊包括 React 19、TypeScript 和 Vite，並使用 Three.js 進行3D渲染，這樣的選擇使得專案在性能上表現優異，並且能夠快速加載大型模型。相較於其他類似工具，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，Cell Architecture Studio 提供了更高的細節和互動性，特別是在教育用途上。使用者在使用過程中可能會遇到 Vercel 部署問題，這是目前的熱門問題之一。這個專案目前仍在開發階段，未來計劃增加更多的細胞模型和功能，適合對生物學有興趣的教育工作者和學生使用。
 
-**技術棧**：`React 19.2.5` · `Vite 8.0.10` · `Three.js 0.184.0`
+**技術棧**：`React 19` · `TypeScript` · `Vite` · `Three.js` · `React Three Fiber`
 
 ## 重點功能
 
-- 互動式細胞查看器 — 使用 React Three Fiber 實現，支持拖動旋轉和縮放。
-- 多種生成模式 — 包括 Tripo 雲端生成、本地 Hunyuan3D 生成和 GLB 導入。
-- 細胞器詳細卡片 — 提供細胞結構的深入信息和比較面板。
-- 即時 API 整合 — API 密鑰僅在伺服器端處理，提升安全性。
-- 快取生成模型 — 生成的 GLB 模型被快取，支持離線使用。
+- 七種細胞樣本視圖 — 包括植物細胞、白血球、神經元等，讓使用者能夠選擇不同細胞進行學習。
+- 高保真度的 GLB 渲染 — 使用原生紋理保留技術，提供真實的細胞視覺效果。
+- AI 教學面板 — 提供學習提示、課程重點和掌握追蹤，增強學習體驗。
+- 模型加載覆蓋 — 在較慢的網路上顯示大型 GLB 資產的加載進度。
+- 響應式佈局 — 支援桌面、緊湊和移動版的瀏覽，確保在各種設備上的可用性。
 
 ## 快速開始
 
@@ -129,77 +129,75 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 npm install
 ```
-2. 啟動開發伺服器
+2. 啟動本地開發伺服器
 ```bash
 npm run dev
 ```
-3. 訪問 Vite 提供的 URL
+3. 在瀏覽器中打開應用
 ```bash
-打開瀏覽器並輸入顯示的 URL
+http://127.0.0.1:5173/
 ```
 
 ## 程式碼範例
 
-```js
+```ts
 {
-  "前置條件": "需要安裝 Node.js 和 npm。",
+  "前置條件": "確保已安裝 Node.js 和 npm。",
   "指令": "npm run dev",
-  "預期輸出": "啟動開發伺服器並顯示 Vite 提供的 URL。"
+  "預期輸出": "應用會在 http://127.0.0.1:5173/ 上運行。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 757 stars（757/天），forks 131（17.3%），這顯示出強烈的初期興趣。專案的作者是 Huang Serva，過去在生物資訊和前端開發領域有一定的經驗。這個工具解決了生物學家在細胞模型可視化上的需求，之前的工具往往缺乏互動性和靈活性。近期的推廣活動和社群討論也為這個專案帶來了關注。技術上，WebGL 和 React 的結合使得這個工具能夠在瀏覽器中實現高效的 3D 渲染，這在目前的生態中是相對少見的。forks/stars 比率為 17.3%，顯示出許多用戶不僅在觀望，還在積極修改和使用這個專案。
+> 建立 5 天內累積 610 stars（122/天），forks 133（21.8%），這顯示出相對活躍的社群參與。作者 cclank 之前有過相關的開發經驗，這個專案解決了在網頁上呈現細胞結構的需求，之前的工具多數缺乏互動性和高保真度。最近的推文和社群討論也引起了關注，讓這個專案迅速成為焦點。技術上，使用 React 和 Three.js 的組合使得這個工具能夠在瀏覽器中流暢運行，這在過去是難以實現的。forks/stars 比率高達 21.8%，顯示出許多人對這個專案的實際修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要在瀏覽器中進行 3D 細胞模型探索的生物學研究人員和開發者。
+**目標受眾**：對生物學有興趣的教育工作者和學生，特別是需要互動學習工具的使用者。
 
 > [!example] 使用場景
-> - 生物學研究人員用它來生成和探索細胞模型，因為它支持從圖像生成 3D 模型，省去手動建模的時間。
-> - 教育工作者用它來展示細胞結構，因為其互動性使學生能夠更直觀地理解細胞組成。
-> - 開發者用它來整合細胞模型到其他應用中，因為提供的 GLB 格式導出功能便於與其他 3D 引擎兼容。
+> - 生物教師用它來展示細胞結構，因為其高保真的3D模型能幫助學生更好理解細胞組織。
+> - 學生用它來準備生物學考試，因為互動式的學習方式能提高學習效率和記憶力。
+> - 研究人員用它來比較不同細胞類型的特徵，因為其詳細的器官面板能提供豐富的資料支持。
 
 ## 架構分析
 
-3DCellForge 採用單頁應用架構，前端使用 React 和 Vite 進行構建，後端則使用 Node.js 提供 API 支持。這種設計使得開發過程中能夠快速迭代和部署。資料流方面，前端通過 API 請求與後端進行交互，實現細胞模型的生成和展示。
-
-選擇 React Three Fiber 作為 3D 渲染框架，因為它能夠簡化與 Three.js 的整合，並提供更高的開發效率。這樣的架構使得應用在性能上能夠保持良好，特別是在處理複雜的 3D 模型時。未來擴展性方面，隨著功能的增強，可能需要考慮如何優化後端的 API 性能，以支持更高的請求負載。
+這個專案採用現代的前端架構，利用 React 和 Vite 進行快速開發和構建。資料流主要透過 React 的狀態管理來控制3D模型的加載和顯示，使用 Three.js 進行3D渲染，這樣的設計使得開發者能夠快速迭代和測試。選擇 Vite 作為開發工具，能夠提供即時的熱重載功能，提升開發效率。專案的擴展性良好，未來可以輕鬆加入新的細胞模型或功能，但目前的依賴樹相對較重，可能會影響性能。整體而言，這個架構能夠支持高效的開發流程，但在處理大型模型時仍需注意性能瓶頸。
 
 ## 技術深入分析
 
-3DCellForge 的核心技術機制是基於 React 和 Three.js 的結合，利用 React Three Fiber 來簡化 3D 渲染的過程。這種設計使得開發者能夠專注於應用邏輯，而不必深入底層的 WebGL 操作。效能方面，該工具能夠處理多達數百個細胞模型，並且支持即時的 3D 渲染，這對於需要高效能的生物醫學應用來說是至關重要的。選擇 Vite 作為構建工具，因為它提供了快速的開發環境和即時的熱重載功能，這對於開發者來說大大提升了開發效率。技術取捨方面，選擇 Node.js 作為後端服務，雖然可能會增加一些維護成本，但卻能提供靈活的 API 支持。隨著使用者數量的增加，可能需要考慮如何擴展後端服務以應對更高的請求負載，這是未來的一個潛在風險。整合方面，該工具能夠與主流的 CI/CD 流程無縫對接，並且支持多種 IDE 的開發環境，這使得團隊能夠輕鬆地將其納入現有的開發流程中。
+Cell Architecture Studio 的核心技術機制在於使用 React 和 Three.js 進行3D渲染，這使得使用者能夠在瀏覽器中流暢地互動。專案能夠處理大型GLB模型，並透過模型加載覆蓋來改善使用者體驗，特別是在網速較慢的情況下。選擇 TypeScript 提供了靜態類型檢查，這對於大型專案的維護和擴展非常重要。依賴於 React Three Fiber 和 Drei，這些工具簡化了3D模型的處理，讓開發者能夠專注於功能實現而非底層細節。設計上的取捨在於選擇了高保真度的模型渲染，這雖然提升了視覺效果，但也增加了加載時間和性能需求。隨著使用者數量的增加，如何優化性能和資源使用將成為未來的挑戰。整合方面，這個專案能夠與主流的 CI/CD 工具如 GitHub Actions 無縫整合，並且在開發過程中能夠輕鬆進行測試和驗證。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和使用說明。安裝過程相對順暢，但需要注意 API 密鑰的配置。文件中有英文和中文版本，方便不同語言的用戶使用。
+> README 文件清晰且包含安裝和使用範例，讓新手能夠快速上手。安裝過程順暢，無明顯的坑。提供的 getting started guide 使得使用者能夠在短時間內啟動專案。文件目前僅提供英文版本，可能對非英語使用者造成一些困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供多種 3D 模型生成選項，靈活應對不同需求。
-> - 互動性強，提升用戶體驗和學習效果。
-> - 安全性設計良好，API 密鑰不會暴露在前端。
+> - 高保真的3D細胞模型，增強學習體驗。
+> - 互動式的AI教學面板，提升學習動機。
+> - 響應式設計，適用於各種設備。
 
 > [!danger] 缺點
-> - 需要一定的計算資源來處理大型模型。
-> - 依賴於外部 API，可能會受到服務器性能影響。
-> - 對於新手用戶，初始設置可能有一定的學習曲線。
+> - 目前僅有部分細胞模型，尚未完全開發。
+> - Vercel 部署存在問題，影響線上可用性。
+> - 依賴較重，可能影響性能。
 
 > [!warning] 注意事項
-> - 僅支援最新版本的 Node.js。
-> - 需要安裝特定的 API 服務以啟用完整功能。
-> - 對於大型模型的處理可能需要較高的計算資源。
+> - 目前僅支援 GLB 格式的3D模型。
+> - Vercel 部署存在問題，可能影響線上使用。
+> - 尚未提供完整的細胞模型，部分細胞仍在開發中。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成 2D 精靈圖像，而 3DCellForge 提供 3D 模型生成，適合不同的應用場景。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要用於生物數據的視覺化，而 3DCellForge 更加專注於細胞模型的交互探索。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成角色精靈，缺乏細胞學習的互動性和教育功能。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要用於3D模型的管理，無法提供細胞結構的詳細視覺化和學習體驗。 |
 
 ## 替代方案決策
 
@@ -207,16 +205,16 @@ npm run dev
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 2D 精靈生成，而本專案則提供 3D 模型生成，適合需要 3D 視覺化的場景。 | 如果你的專案主要是針對 2D 遊戲開發，則選擇它會更合適。 | medium，因為需要重新設計用戶界面和交互邏輯。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要用於生物數據的視覺化，而 3DCellForge 提供了更為豐富的細胞模型探索功能。 | 如果你的需求是專注於數據視覺化而非細胞模型生成，則選擇它會更合適。 | high，因為需要全面重構數據處理和視覺化邏輯。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成角色精靈，缺乏細胞學習的互動性和教育功能。 | 如果你的專案需要專注於角色生成而非細胞學習，這個工具會更合適。 | medium，因為需要重新設計界面和功能。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要用於3D模型的管理，無法提供細胞結構的詳細視覺化和學習體驗。 | 如果你的需求是管理3D模型而非互動學習，這個工具會更適合。 | low，因為功能和界面相似。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **3DCellForge** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **cell-architecture-studio** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 2D 精靈生成，而本專案則提供 3D 模型生成，適合需要 3D 視覺化的場景。 | 主要用於生物數據的視覺化，而 3DCellForge 提供了更為豐富的細胞模型探索功能。 |
-> | 遷移成本 | - | medium，因為需要重新設計用戶界面和交互邏輯。 | high，因為需要全面重構數據處理和視覺化邏輯。 |
-> | 適用場景 | 主要場景 | 如果你的專案主要是針對 2D 遊戲開發，則選擇它會更合適。 | 如果你的需求是專注於數據視覺化而非細胞模型生成，則選擇它會更 |
+> | 技術路線 | 本專案 | 專注於生成角色精靈，缺乏細胞學習的互動性和教育功能。 | 主要用於3D模型的管理，無法提供細胞結構的詳細視覺化和學習體驗。 |
+> | 遷移成本 | - | medium，因為需要重新設計界面和功能。 | low，因為功能和界面相似。 |
+> | 適用場景 | 主要場景 | 如果你的專案需要專注於角色生成而非細胞學習，這個工具會更合適 | 如果你的需求是管理3D模型而非互動學習，這個工具會更適合。 |
 
 ## 成熟度評估
 
@@ -227,47 +225,56 @@ npm run dev
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人項目試用，但不建議用於生產環境的核心功能。
+> 適合個人側項目試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在使用 Tripo API 時，可能會遇到網絡延遲導致生成模型的時間變長。
-  - 解法：考慮使用本地 Hunyuan3D 生成作為備選方案。
-- **[HIGH]** 初次設置時，環境變數配置不當可能導致後端無法啟動。
-  - 解法：仔細檢查 `.env.local` 文件中的配置，確保 API 密鑰正確。
+- **[HIGH]** Vercel 部署不穩定，可能導致應用無法正常運行
+  - 解法：考慮使用本地開發環境進行測試
+- [MEDIUM] 大型 GLB 模型加載時間較長，影響使用體驗
+  - 解法：使用較小的模型進行測試，或優化模型大小
+- [MEDIUM] 某些細胞模型尚未完成，可能導致部分功能無法使用
+  - 解法：定期檢查更新，使用已完成的模型
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 生物醫學研究團隊進行細胞模型探索 | 非常適合 | 提供了靈活的 3D 模型生成和探索功能，符合研究需求。 |
-| 教育機構用於教學展示 | 適合 | 互動性強，能夠提升學生的學習體驗。 |
-| 小型開發團隊進行原型設計 | 普通 | 雖然功能強大，但可能需要較高的學習成本。 |
+| 生物學課程的教學工具 | 非常適合 | 高保真的3D模型能有效輔助教學。 |
+| 個人學習生物的學生 | 適合 | 互動式的學習方式能提高學習動機。 |
+| 需要展示細胞結構的科學研究 | 普通 | 目前模型數量有限，可能無法滿足所有需求。 |
+| 專業生物學研究的團隊 | 不適合 | 尚在開發階段，穩定性不足。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到靈活的 3D 模型生成能力，值得考慮。
+> 花 2 小時學、3 小時整合，得到高互動的學習工具，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，API 密鑰僅在伺服器端處理，對敏感資料的存取有良好的控制。
+> 低風險：不需要高權限，且不存取敏感資料，適合在 CI/CD 環境中使用。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個工具最常與 React 和 Vite 搭配使用，適合在開發過程中進行3D模型的展示和互動。在一個使用 React 的專案中，你可以通過 `npm install` 安裝依賴，然後使用 `npm run dev` 啟動應用，這樣就能在瀏覽器中查看細胞模型。整合方面，支援 GitHub Actions 進行 CI/CD，並且可以與 VS Code 等 IDE 進行良好的整合。常見的整合問題包括依賴版本不一致，建議使用鎖定版本來避免。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/cclank--cell-architecture-studio");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -302,7 +309,7 @@ npm run dev
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/cclank--cell-architecture-studio");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -326,182 +333,206 @@ npm run dev
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 131 |
-| Open Issues | 0 |
+| Forks | 133 |
+| Open Issues | 2 |
+| Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-05-11 |
 | 建立日期 | 2026-05-10 |
-| Repo 大小 | 129.9 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/huangserva/3DCellForge) |
+| 官方網站 | [Link](https://cell-architecture-studio-inky.vercel.app) |
+| Repo 大小 | 95.9 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cclank/cell-architecture-studio) |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `@react-three/drei` `@react-three/fiber` `@react-three/postprocessing` `framer-motion` `lucide-react` `postprocessing` `react` `react-dom` `three` `undici` `@eslint/js` `@types/react` `@types/react-dom` `@vitejs/plugin-react` `eslint`
+> `@react-three/drei` `@react-three/fiber` `lucide-react` `react` `react-dom` `three` `@types/node` `@types/pngjs` `@types/react` `@types/react-dom` `@vitejs/plugin-react` `playwright-core` `pngjs` `typescript` `vite`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 79
->     "CSS" : 21
+>     "TypeScript" : 68
+>     "CSS" : 24
+>     "JavaScript" : 8
 > ```
+
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@cclank](https://github.com/cclank) | 6 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有多次提交和更新。
-**連結**：[文件](https://github.com/huangserva/3DCellForge/blob/main/README.md)
+**社群活躍度**：社群活動較為活躍，近期有多次提交和討論。
+**連結**：[文件](https://github.com/cclank/cell-architecture-studio#readme)
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-05-10 ~ 2026-05-11）
-> **活躍天數** 2 天 · **最新 commit** Rework cinematic mode as layered PNG composer
+> **活躍天數** 2 天 · **最新 commit** Add AI tutor learning layer
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#1](https://github.com/cclank/cell-architecture-studio/issues/1) | The vercel deployment is not working | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 3DCellForge
+> # Cell Architecture Studio
 > 
-> [English](README.md) | [中文](README.zh-CN.md)
+> [](https://cell-architecture-studio-inky.vercel.app)
 > 
-> AI-powered interactive 3D cell generation and exploration studio.
+> An interactive cell architecture gallery built with React, Vite, Three.js, and staged GLB or procedural 3D cell assets. The project recreates a premium educational biology interface with selectable cell types, organelle details, comparison mode, responsive layout, and visual verification coverage.
 > 
-> 3DCellForge is a React + Three.js prototype for exploring biological cell models in a polished browser UI. It supports live WebGL orbit controls, organelle panels, screenshots, GLB export, and optional image-to-3D providers for generating real 3D models from uploaded reference images.
+> ## Live Demo
 > 
-> ## Demo
+> [Open the live Vercel deployment](https://cell-architecture-studio-inky.vercel.app)
 > 
-> [](docs/demo/3DCellForge-demo-2026-05-10.mp4)
+> [](https://cell-architecture-studio-inky.vercel.app)
 > 
-> Open the demo video: [3DCellForge-demo-2026-05-10.mp4](docs/demo/3DCellForge-demo-2026-05-10.mp4)
+> [View the MP4 demo file](docs/media/cell-architecture-studio-demo.mp4)
 > 
-> ## Features
+> ## Highlights
 > 
-> - Interactive cell viewer built with React Three Fiber.
-> - Drag to rotate, scroll to zoom, and toggle 3D proof mode.
-> - Organelle detail cards, microscope references, comparison panel, notes, and gallery actions.
-> - Tripo cloud image-to-3D pipeline through a local Node backend.
-> - Hunyuan3D local provider support as a backup generation path.
-> - Cached demo GLB models for offline-friendly screenshots and demos.
-> - API key stays server-side in `.env.local`; it is never exposed to the frontend bundle.
+> - Seven specimen views: plant cell, white blood cell, neuron, epithelial cell, bacteria cell, animal cell, and muscle cell.
+> - High fidelity Plant Cell and White Blood Cell GLB rendering with native texture preservation.
+> - Mesh first experience with 3D canvas rendering as the default view.
+> - AI Tutor panel with learning prompts, lesson focus, and mastery tracking.
+> - Model loading overlay for large GLB assets on slower networks.
+> - Procedural fallback geometry for specimens that do not yet have production GLB assets.
+> - Detail panel for organelles, microscope modes, specimen metadata, and comparison workflow.
+> - Responsive desktop, compact, and mobile layouts with browser screenshot verification.
+> 
+> ## Preview Modes
+> 
+> | Mode | Purpose |
+> | --- | --- |
+> | Mesh | Loads available GLB models or procedural Three.js geometry. |
+> | Focus | Emphasizes selected organelles and supporting biological details. |
 > 
 > ## Tech Stack
 > 
-> - React
-> - Vite
-> - Three.js
-> - React Three Fiber
-> - Drei
-> - Framer Motion
-> - Tripo API optional backend
-> - Hunyuan3D local API optional backend
+> | Layer | Tools |
+> | --- | --- |
+> | App | React 19, TypeScript, Vite |
+> | 3D | Three.js, React Three Fiber, Drei |
+> | UI | CSS modules in `src/styles.css`, Lucide icons |
+> | Assets | GLB models, transparent PNG thumbnails, NIH previews |
+> | Verification | Playwright Core, PNG pixel metrics |
 > 
-> ## Quick Start
+> ## Project Structure
+> 
+> ```text
+> .
+> |-- docs/
+> |   |-- media/
+> |   `-- ASSETS.md
+> |-- public/
+> |   |-- cell-renders/
+> |   |-- cell-renders-transparent/
+> |   |-- models/
+> |   `-- nih-previews/
+> |-- scripts/
+> |   `-- verify.mjs
+> `-- src/
+>     |-- App.tsx
+>     |-- components/
+>     |-- data/
+>     `-- styles.css
+> ```
+> 
+> ## Getting Started
+> 
+> Install dependencies:
 > 
 > ```bash
 > npm install
-> npm run dev
 > ```
 > 
-> Open the Vite URL shown in the terminal.
-> 
-> ## Optional Image-to-3D Backend
-> 
-> To enable image-to-3D generation, create `.env.local`:
-> 
-> ```bash
-> cp .env.example .env.local
-> ```
-> 
-> Then set:
-> 
-> ```bash
-> TRIPO_API_KEY=your_tripo_key
-> ```
-> 
-> For Hunyuan3D local backup mode, start your local Hunyuan3D API server and set:
-> 
-> ```bash
-> HUNYUAN_API_BASE=http://127.0.0.1:8081
-> HUNYUAN_CREATE_PATH=/send
-> HUNYUAN_STATUS_PATH=/status
-> ```
-> 
-> The 3D generation backend supports these provider paths:
-> 
-> ```text
-> Tripo   Cloud generation only (default)
-> Auto    Tripo first, Hunyuan backup
-> Hunyuan Local Hunyuan3D generation only
-> ```
-> 
-> The upload panel exposes the full generation mode choice before picking a file:
-> 
-> ```text
-> Tripo       Cloud GLB generation
-> Hunyuan     Local Hunyuan3D GLB generation
-> Cinematic   Layered transparent PNG composition for high-quality demos
-> Auto        Tripo, then Hunyuan, then Cinematic fallback
-> Local GLB   Import an existing .glb or self-contained .gltf
-> ```
-> 
-> Tripo uploads use the current STS object-storage flow (`/upload/sts/token`) before creating an `image_to_model` task.
-> Generated GLBs are cached by the Node backend under `.generated-models/`, so later views use the local copy instead of the temporary Tripo URL.
-> 
-> You can also import a local `.glb` or self-contained `.gltf` from the Microscope View add button. Imported models become custom Cell Types and are served from the same local cache.
-> 
-> Expected Hunyuan3D local API shape:
-> 
-> ```text
-> POST /send
-> GET  /status/:uid
-> ```
-> 
-> The status response can return either a remote model URL or a base64 GLB field such as `model_base64` / `glb_base64`. Base64 GLBs are cached under `.generated-models/` and served by the Node backend.
-> 
-> Start the backend:
-> 
-> ```bash
-> npm run dev:api
-> ```
-> 
-> Then start the frontend:
+> Run the local development server:
 > 
 > ```bash
 > npm run dev
 > ```
 > 
-> The frontend talks to the local Node backend at `http://127.0.0.1:8787` by default.
-> 
-> ## Demo Models
-> 
-> The repository includes cached generated GLB files under:
+> Open the app:
 > 
 > ```text
-> public/generated-models/
+> http://127.0.0.1:5173/
 > ```
 > 
-> These make the demo usable without spending API credits on every run.
+> Build for production:
 > 
-> ## Security
+> ```bash
+> npm run build
+> ```
 > 
-> Do not put real API keys in frontend code. Keep secrets in `.env.local`, which is ignored by git.
+> Run visual verification:
+> 
+> ```bash
+> npm run verify
+> ```
+> 
+> ## Asset Notes
+> 
+> The highest fidelity specimens are loaded from `public/models/` and configured in `src/data/cells.ts`.
+> 
+> | Specimen | Current asset |
+> | --- | --- |
+> | Plant Cell | `public/models/plant-cell-first001.glb` |
+> | White Blood Cell | `public/models/white-blood-cell-user.glb` |
+> | Animal Cell | `public/models/animal-cell-nih.glb` |
+> | Neuron | `public/models/neuron-nih.glb` |
+> | Bacteria Wall | `public/models/bacteria-wall-nih.glb` |
+> 
+> Transparent PNG references in `public/cell-renders-transparent/` are used for thumbnails and model previews. Detailed provenance is tracked in `docs/ASSETS.md`.
+> 
+> ## Verification
+> 
+> `npm run verify` launches the local app, captures desktop, compact, mobile, and interaction screenshots, then checks canvas pixel metrics to catch blank renders or major layout regressions.
+> 
+> Current coverage includes:
+> 
+> - Desktop, compact, and mobile smoke checks.
+> - Plant Cell GLB render check.
+> - White Blood Cell GLB render check.
+> - Bacteria mesh interaction check.
+> - Comparison modal check.
+> 
+> ## Roadmap
+> 
+> - Add production quality GLB models for the remaining specimens.
+> - Add lazy loading and route level code splitting for 3D bundles.
+> - Expand educational annotations for each organelle.
+> - Add screenshot export and 3D export workflows.
+> - Add asset license metadata directly into the UI.
 > 
 > ## License
 > 
-> MIT
+> The application code is licensed under the MIT License. Included GLB models and image assets retain their documented provenance in `docs/ASSETS.md`.
+> 
+> ## Credits
+> 
+> Special thanks to the original creator [@DilumSanjaya](https://x.com/DilumSanjaya) for the source inspiration and visual direction.
+> 
+> Additional 3D model provenance is documented in `docs/ASSETS.md`.
 
 ## 延伸閱讀
 
-相關概念：[[3D 模型生成]] · [[生物資訊]] · [[互動式視覺化]]
+相關概念：[[3D 渲染]] · [[互動學習]] · [[生物學模擬]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[XBuilderLAB--cheat-on-content|XBuilderLAB/cheat-on-content]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]]
 
-[GitHub](https://github.com/huangserva/3DCellForge)
+[GitHub](https://github.com/cclank/cell-architecture-studio) · [官方網站](https://cell-architecture-studio-inky.vercel.app)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：3D 模型生成）
+> [!note]- 直接競品（同子分類：生物學學習）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "3D 模型生成" AND file.name != "huangserva--3DCellForge"
+> WHERE subcategory = "生物學學習" AND file.name != "cclank--cell-architecture-studio"
 > SORT stars DESC
 > ```
 
@@ -509,7 +540,7 @@ npm run dev
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "huangserva--3DCellForge"
+> WHERE category = "教育資源" AND file.name != "cclank--cell-architecture-studio"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -518,7 +549,7 @@ npm run dev
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "huangserva--3DCellForge" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "cclank--cell-architecture-studio" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -527,15 +558,15 @@ npm run dev
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W20" AND file.name != "huangserva--3DCellForge"
+> WHERE week = "2026-W20" AND file.name != "cclank--cell-architecture-studio"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["3D 模型生成","生物資訊","互動式視覺化"];
+> const concepts = ["3D 渲染","互動學習","生物學模擬"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "huangserva--3DCellForge" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "cclank--cell-architecture-studio" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -548,12 +579,12 @@ npm run dev
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/cclank--cell-architecture-studio");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "huangserva--3DCellForge" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "cclank--cell-architecture-studio" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -569,7 +600,7 @@ npm run dev
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "huangserva" AND file.name != "huangserva--3DCellForge"
+> WHERE owner = "cclank" AND file.name != "cclank--cell-architecture-studio"
 > SORT stars DESC
 > ```
 
@@ -577,7 +608,7 @@ npm run dev
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/cclank--cell-architecture-studio");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -594,7 +625,7 @@ npm run dev
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/cclank--cell-architecture-studio");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -627,7 +658,7 @@ npm run dev
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/cclank--cell-architecture-studio");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -651,7 +682,7 @@ npm run dev
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/cclank--cell-architecture-studio");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -688,7 +719,7 @@ npm run dev
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/cclank--cell-architecture-studio");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -771,7 +802,7 @@ npm run dev
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-05-11** — 首次收錄
+> **2026-05-16** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -787,9 +818,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-05-16|2026-05-16]] — 再次上榜，2.1k stars
-- [[2026-05-15|2026-05-15]] — 再次上榜，2.0k stars
-- [[2026-05-14|2026-05-14]] — 再次上榜，1.8k stars
-- [[2026-05-13|2026-05-13]] — 再次上榜，1.7k stars
-- [[2026-05-12|2026-05-12]] — 再次上榜，1.4k stars
-- [[2026-05-11|2026-05-11]] — 首次收錄，757 stars
+- [[2026-05-16|2026-05-16]] — 首次收錄，610 stars

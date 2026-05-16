@@ -7,12 +7,12 @@ language: Python
 license: NOASSERTION
 description: "[SIGGRAPH 2026] Pixal3D: Pixel-Aligned 3D Generation from Images"
 homepage: "https://ldyang694.github.io/projects/pixal3d/"
-stars: 640
-stars_per_day: 160
-forks: 48
-open_issues: 8
+stars: 732
+stars_per_day: 146
+forks: 56
+open_issues: 11
 created: 2026-05-10
-pushed_at: 2026-05-12
+pushed_at: 2026-05-15
 first_seen: 2026-05-15
 week: "2026-W20"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "從單一圖像生成高保真 3D 資產，提供精確的像素對�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-22"
+appearances: 2
+next_review: "2026-05-23"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 11
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-15"
-star_history: "2026-05-15:640,2026-05-15:640"
+star_history: "2026-05-15:640,2026-05-15:640,2026-05-16:732"
 tags:
   - github
   - "category/ai_ml"
@@ -790,4 +790,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-16|2026-05-16]] — 再次上榜，732 stars
 - [[2026-05-15|2026-05-15]] — 首次收錄，640 stars
