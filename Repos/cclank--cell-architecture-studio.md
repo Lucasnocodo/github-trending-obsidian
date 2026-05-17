@@ -7,17 +7,17 @@ language: TypeScript
 license: MIT
 description: "Interactive 3D cell architecture gallery built with React and Three.js"
 homepage: "https://cell-architecture-studio-inky.vercel.app"
-stars: 610
-stars_per_day: 122
-forks: 133
+stars: 621
+stars_per_day: 104
+forks: 142
 open_issues: 2
 created: 2026-05-10
 pushed_at: 2026-05-11
 first_seen: 2026-05-16
 week: "2026-W20"
 month: "2026-05"
-category: "教育資源"
-subcategory: "生物學工具"
+category: "其他"
+subcategory: "教育工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-16
-use_case: "提供互動式的細胞架構畫廊，讓使用者探索不同細胞類型及其細節。"
+use_case: "提供互動式的3D細胞架構展示，讓使用者能夠深入了解細胞結構與功能。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,21 +42,21 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-16"
-star_history: "2026-05-16:610,2026-05-16:610"
+star_history: "2026-05-16:610,2026-05-16:610,2026-05-17:621"
 tags:
   - github
-  - "category/教育資源"
+  - "category/其他"
   - "lang/typescript"
   - easy_install
 aliases:
   - "cell-architecture-studio"
   - "cclank/cell-architecture-studio"
-  - "提供互動式的細胞架構畫廊，讓使用者探索不同細胞類型及其細節。"
+  - "提供互動式的3D細胞架構展示，讓使用者能夠深入了解細胞結構與功能。"
 ---
 
 # cell-architecture-studio
 
-**610** stars · **122** stars/天 · 建立 5 天前 · TypeScript · MIT
+**621** stars · **104** stars/天 · 建立 6 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/cclank--cell-architecture-studio");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供互動式的細胞架構畫廊，讓使用者探索不同細胞類型及其細節。
+> 提供互動式的3D細胞架構展示，讓使用者能夠深入了解細胞結構與功能。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (122 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要一個互動式工具來學習和教學細胞生物學的教育工作者和學生。
-> **一句話重點** 這個專案不僅是一個學習工具，更是探索細胞結構的互動式平台，讓生物學的學習變得生動有趣。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (104 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 6 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要互動式學習工具以增強生物學教學效果的教育工作者和學生。
+> **一句話重點** 這個專案不僅是3D細胞展示工具，更是一個結合教育科技的互動學習平台。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/cclank--cell-architecture-studio");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "生物學工具" && p.file.name !== "cclank--cell-architecture-studio" && p.status !== "archived")
+>     .where(p => p.subcategory === "教育工具" && p.file.name !== "cclank--cell-architecture-studio" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,32 +96,31 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 生物學工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 教育工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，3 小時整合，得到互動式學習工具，值得一試。
+> **安裝** Easy (一行搞定)
 
 > [!abstract] 核心創新
-> 提供高保真度的細胞模型渲染和互動式學習體驗。
+> 提供高保真度的3D細胞模型，並結合AI導師面板以增強學習體驗。
 
 ## 專案簡介
 
-這個專案是一個互動式的細胞架構畫廊，使用 React 和 Three.js 建立，讓使用者可以選擇不同的細胞類型並查看其細節。使用者可以透過選擇細胞類型來獲取相關的生物學知識，並在 3D 環境中進行比較。核心賣點在於其高保真度的 GLB 模型渲染，並且支援多種顯示模式，如 Mesh 和 Focus 模式，以便強調特定的細胞器和生物細節。使用者可以透過 `npm run dev` 指令啟動本地開發伺服器，並在 http://127.0.0.1:5173/ 上查看應用程式。
+Cell Architecture Studio 是一個互動式的3D細胞架構畫廊，使用 React 和 Three.js 建立，讓使用者能夠選擇不同的細胞類型並查看其細節。使用者可以透過網頁介面選擇植物細胞、白血球、神經元等七種細胞樣本，並在高保真度的GLB模型中查看細胞內部結構。這個專案的賣點在於其可視化的學習體驗，結合AI導師面板提供學習提示和掌握追蹤，讓學習變得更有趣。使用者只需執行 `npm install` 安裝依賴，然後用 `npm run dev` 啟動本地開發伺服器，即可在 http://127.0.0.1:5173/ 上訪問應用。這個專案的技術棧包括 React 19、TypeScript、Vite、Three.js 和 React Three Fiber，這些選擇使得專案能夠高效渲染3D模型並保持良好的性能。
 
-這個專案的技術棧包括 React 19、TypeScript 和 Vite，並使用了 Three.js 和 React Three Fiber 來處理 3D 渲染。相較於其他類似工具，如 0x0funky/agent-sprite-forge，這個專案專注於教育用途，提供更高的細節和互動性。使用者在使用時可能會遇到 Vercel 部署問題，這是目前的熱門問題之一。整體來說，這是一個適合教育機構或生物學研究者的工具，特別是對於需要視覺化細胞結構的情境。
+相較於其他同類工具，Cell Architecture Studio 提供了更高的互動性和教育性，特別是在細胞學習和比較方面。它的設計考量了不同設備的響應式布局，確保在桌面和移動設備上都有良好的使用體驗。使用者在使用過程中可能會遇到 Vercel 部署問題，這是目前的熱門問題之一，顯示出專案在部署方面的挑戰。整體來說，這是一個適合教育用途的專案，特別是針對生物學的學習者和教育者。
 
 **技術棧**：`React 19` · `TypeScript` · `Vite` · `Three.js` · `React Three Fiber`
 
 ## 重點功能
 
-- 七種細胞樣本視圖 — 包括植物細胞、白血球、神經元等，提供多樣化的學習資源。
-- 高保真度 GLB 渲染 — 使用 Three.js 渲染細胞模型，保留原生紋理。
-- AI 教學面板 — 提供學習提示、課程重點和掌握追蹤功能。
-- 模型加載覆蓋層 — 在較慢的網路上加載大型 GLB 資產時顯示進度。
-- 響應式佈局 — 支援桌面、緊湊和移動版佈局，確保在不同設備上的良好體驗。
+- 七種細胞樣本 — 包括植物細胞、白血球、神經元等，提供多樣化的學習選擇。
+- 高保真GLB渲染 — 確保細胞模型的真實性和細節保留。
+- AI導師面板 — 提供學習提示和掌握追蹤，增強學習互動性。
+- 響應式布局 — 支援桌面和移動設備，確保良好的使用體驗。
+- 視覺驗證 — 使用 Playwright 進行視覺驗證，確保應用的穩定性和可用性。
 
 ## 快速開始
 
@@ -133,126 +132,64 @@ npm install
 ```bash
 npm run dev
 ```
-3. 在瀏覽器中打開應用
+3. 打開應用
 ```bash
 http://127.0.0.1:5173/
+```
+
+## 程式碼範例
+
+```ts
+{
+  "前置條件": "需要安裝 Node.js 和 npm。",
+  "指令": "npm run dev",
+  "預期輸出": "應用將在 http://127.0.0.1:5173/ 上可用。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天內累積 610 stars（122/天），forks 133（21.8%），顯示出強烈的社群興趣。作者 cclank 是一位專注於開發互動式學習工具的開發者，這個專案解決了傳統生物學教學中缺乏互動性和視覺化的痛點。這個工具的推出恰逢教育界對於數位學習資源需求的上升，並且提供了一個全新的學習方式來探索細胞結構。forks/stars 比率高達 21.8%，顯示出許多人對這個專案的實際修改和使用，這是值得注意的社群活躍度指標。
+> 建立 6 天就累積 621 stars（104/天），forks 142（22.9%），這顯示出高達 22.9% 的使用者對此專案進行了實際修改。作者 cclank 在開源社群中活躍，專注於教育性質的互動式應用。這個專案解決了傳統生物學教學中缺乏互動性和視覺化的痛點，讓學習變得更具吸引力。最近的推文和討論可能促進了這個專案的曝光度，並吸引了更多的使用者。技術上，這個專案的成功也反映了使用 Three.js 和 React 結合的趨勢，讓3D渲染變得更為普及。高達 22.9% 的 forks/stars 比率顯示出使用者對專案的高度參與和修改意願。
 
 ## 適合誰使用
 
-**目標受眾**：需要一個互動式工具來學習和教學細胞生物學的教育工作者和學生。
+**目標受眾**：需要互動式學習工具以增強生物學教學效果的教育工作者和學生。
 
 > [!example] 使用場景
-> - 生物學教師用它來展示細胞結構，因為可以提供互動式的學習體驗，讓學生更容易理解複雜的生物學概念。
-> - 學生用它來準備生物學考試，因為可以在 3D 環境中探索細胞的細節，增強記憶效果。
-> - 研究人員用它來比較不同細胞類型的特徵，因為能夠在一個平台上獲得多種細胞的視覺化資料，方便進行分析。
+> - 生物學教師用它來展示細胞結構，因為互動式3D模型能夠幫助學生更好地理解細胞的功能和組成。
+> - 學生用它來準備生物學考試，因為能夠在3D環境中探索細胞，增強記憶和理解。
+> - 科學研究人員用它來展示研究成果，因為高保真度的細胞模型能夠有效傳達複雜的生物學概念。
 
 ## 架構分析
 
-這個專案採用現代的前端架構，主要使用 React 和 Vite 來提供快速的開發體驗。資料流方面，使用 Three.js 和 React Three Fiber 來處理 3D 渲染，這樣的選擇使得開發者可以輕鬆地在 React 組件中使用 3D 模型。選擇 Vite 作為建置工具，能夠提供快速的熱重載和優化的生產構建，這對於開發過程中的效率至關重要。整體架構的設計考量了可擴展性，未來可以輕鬆加入更多細胞模型和功能。由於使用了多個依賴，可能會增加學習曲線，但整體而言，這是一個輕量級的專案，適合快速開發和迭代。
+這個專案採用現代的前端架構，使用 React 和 Vite 來構建應用，這樣的選擇使得開發過程快速且高效。資料流方面，使用 Three.js 和 React Three Fiber 來渲染3D模型，這樣的組合能夠充分利用 React 的組件化優勢，讓3D渲染與UI邏輯分離。專案中使用的GLB模型和程序生成的幾何體確保了在不同情境下的靈活性，這樣的設計使得即使在網路速度較慢的情況下，使用者也能獲得良好的體驗。選擇使用 Playwright 進行視覺驗證，這樣的決策使得專案在穩定性上有了額外的保障，但也增加了開發的複雜度。整體而言，這個架構設計在性能和可擴展性上都有良好的表現，適合未來進一步的功能擴展。
 
 ## 技術深入分析
 
-專案核心使用 React 和 TypeScript 來構建前端應用，並利用 Vite 作為建置工具，這樣的組合使得開發過程快速且高效。Three.js 和 React Three Fiber 的使用，讓 3D 渲染變得簡單且直觀，開發者可以在 React 組件中輕鬆管理 3D 模型。效能方面，專案能夠處理高達數百 MB 的 GLB 模型，但在網路不穩定的情況下可能會影響加載速度。設計選擇上，選擇了高保真度的 GLB 模型來提升學習體驗，但這也意味著需要更多的資源來加載這些模型。未來擴展性方面，專案設計考量了未來可能加入更多細胞模型和功能的需求，這使得專案在長期使用中依然具備可持續發展的潛力。整體而言，這是一個適合教育用途的工具，能夠有效地幫助學生理解細胞結構。
+Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js 的結合，這使得3D渲染與前端邏輯能夠無縫整合。專案的資料結構設計允許使用者在不同的細胞模型之間快速切換，並且能夠在不同的設備上保持良好的性能。效能上，這個專案能夠處理大型GLB模型，但在網路速度較慢的情況下，可能會影響加載時間。選擇 TypeScript 進行開發，這不僅提高了代碼的可維護性，也降低了潛在的錯誤率。依賴樹方面，專案的依賴相對輕量，主要集中在 React 和 Three.js 的生態系統中，這使得整體的學習曲線較為平緩。技術風險方面，Vercel 部署問題可能會在未來影響使用者體驗，這需要持續關注和修復。整合方面，這個專案與主流的前端工具鏈（如 Vite 和 Playwright）相容良好，能夠輕鬆融入現有的開發流程。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了詳細的安裝步驟和使用範例。安裝過程相對順暢，沒有明顯的坑。文件中有提供 live demo 的連結，方便新手快速上手。
+> README 文件提供了清晰的安裝步驟和使用說明，對新手友好。安裝過程相對順暢，但目前在 Vercel 的部署存在問題，可能會讓新手感到困惑。整體而言，花 30 分鐘能夠成功啟動本地開發環境，但在部署時可能需要額外的調試。文件目前僅提供英文版本，可能對非英語使用者造成障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 互動性強，能夠吸引學生的注意力。
-> - 高保真度的 3D 渲染，提供真實的視覺體驗。
-> - 支援多種顯示模式，適應不同的學習需求。
+> - 互動性強，能夠吸引學生的注意力並提高學習效果。
+> - 高保真度的3D模型，能夠真實呈現細胞結構。
+> - 響應式設計，適合各種設備使用。
 
 > [!danger] 缺點
-> - 目前存在 Vercel 部署問題，影響線上可用性。
-> - 尚未提供所有細胞的高質量模型，限制了學習內容的完整性。
-> - 需要穩定的網路連接以加載大型 3D 模型，可能影響使用體驗。
+> - 目前在Vercel的部署存在問題，影響可用性。
+> - 尚未完成所有細胞樣本的GLB模型，限制了展示內容。
+> - 需要穩定的網路環境以確保良好的使用體驗。
 
 > [!warning] 注意事項
-> - 目前 Vercel 部署存在問題，可能影響線上使用。
-> - 尚未提供所有細胞樣本的生產質量 GLB 模型。
-> - 需要穩定的網路連接以加載大型 3D 模型。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 2D 角色生成，而本專案專注於 3D 細胞模型的教育用途，提供更高的細節和互動性。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要用於遊戲開發中的資產管理，而本專案則是針對生物學教育的互動式工具。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 2D 角色生成，而本專案專注於 3D 細胞模型的教育用途，提供更高的細節和互動性。 | 如果你的專案需要創建 2D 角色而非 3D 模型，則應選擇此工具。 | low，因為兩者的技術棧有明顯差異，但功能需求不同。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要用於遊戲開發中的資產管理，而本專案則是針對生物學教育的互動式工具。 | 如果你的專案需要管理遊戲資產而非專注於教育用途，則應選擇此工具。 | medium，由於功能和需求的不同，遷移過程需考量不同的技術需求。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **cell-architecture-studio** | **agent-sprite-forge** | **boneyard** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 2D 角色生成，而本專案專注於 3D 細胞模型的教育用途，提供更高的細節和互動性。 | 主要用於遊戲開發中的資產管理，而本專案則是針對生物學教育的互動式工具。 |
-> | 遷移成本 | - | low，因為兩者的技術棧有明顯差異，但功能需求不同。 | medium，由於功能和需求的不同，遷移過程需考量不同的技術需求。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要創建 2D 角色而非 3D 模型，則應選擇此 | 如果你的專案需要管理遊戲資產而非專注於教育用途，則應選擇此工 |
-
-## 成熟度評估
-
-| 項目 | 評估 |
-| --- | --- |
-| 開發階段 | Alpha |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | high |
-
-> [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
-
-## 已知陷阱
-
-> [!bug] 踩坑才知道的問題
-
-- **[HIGH]** Vercel 部署存在問題，可能導致應用無法正常運行。
-  - 解法：考慮使用本地開發環境進行測試。
-- [MEDIUM] 大型 GLB 模型加載時間長，可能影響使用體驗。
-  - 解法：在穩定的網路環境下使用，或考慮使用較小的模型進行測試。
-- [MEDIUM] 尚未提供所有細胞樣本的高質量模型，限制學習內容。
-  - 解法：關注未來更新，並參與社群討論以了解進展。
-
-## 使用情境適合度
-
-| 情境 | 適合度 | 說明 |
-| --- | --- | --- |
-| 生物學課程的互動式教學 | 非常適合 | 提供高保真度的細胞模型和互動性，能夠提升學生的學習興趣和效果。 |
-| 研究機構的細胞結構分析 | 適合 | 能夠在一個平台上獲得多種細胞的視覺化資料，方便進行分析。 |
-| 個人學習生物學的學生 | 普通 | 雖然提供互動性，但對於初學者可能需要額外的指導。 |
-| 遊戲開發中的細胞模型使用 | 不適合 | 專案專注於教育用途，缺乏遊戲開發所需的資產管理功能。 |
-
-## 採用成本分析
-
-| 項目 | 評估 |
-| --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~3 小時 |
-| 維護負擔 | low |
-| 綁定風險 | low |
-
-> [!tip] 投入 vs 回報
-> 花 2 小時學習，3 小時整合，得到互動式學習工具，值得一試。
-
-## 安全性評估
-
-> [!warning] 安全性快速掃描
-> 低風險：不需要高權限，且不存取敏感資料。依賴的庫和資源均為開源，無已知的供應鏈風險。
+> - 目前部署在 Vercel 的版本存在問題，可能無法正常運行。
+> - 尚未提供所有細胞樣本的生產質量GLB模型，部分模型仍在開發中。
+> - 需要穩定的網路連接以加載大型GLB資產，否則可能影響使用體驗。
 
 ## 健康度儀表板
 
@@ -317,7 +254,7 @@ http://127.0.0.1:5173/
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 133 |
+| Forks | 142 |
 | Open Issues | 2 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-05-11 |
@@ -345,7 +282,7 @@ http://127.0.0.1:5173/
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有 2 個開放問題，尚未解決。
+**社群活躍度**：社群活躍度中等，最近有更新但問題解決率低。
 **連結**：[文件](https://github.com/cclank/cell-architecture-studio#readme)
 
 ## 開發動態
@@ -504,19 +441,19 @@ http://127.0.0.1:5173/
 
 ## 延伸閱讀
 
-相關概念：[[3D 渲染]] · [[互動式學習]] · [[生物學教育]]
+相關概念：[[3D 渲染]] · [[互動式學習]] · [[教育科技]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]]
 
 [GitHub](https://github.com/cclank/cell-architecture-studio) · [官方網站](https://cell-architecture-studio-inky.vercel.app)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：生物學工具）
+> [!note]- 直接競品（同子分類：教育工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "生物學工具" AND file.name != "cclank--cell-architecture-studio"
+> WHERE subcategory = "教育工具" AND file.name != "cclank--cell-architecture-studio"
 > SORT stars DESC
 > ```
 
@@ -524,7 +461,7 @@ http://127.0.0.1:5173/
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "教育資源" AND file.name != "cclank--cell-architecture-studio"
+> WHERE category = "其他" AND file.name != "cclank--cell-architecture-studio"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -548,7 +485,7 @@ http://127.0.0.1:5173/
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["3D 渲染","互動式學習","生物學教育"];
+> const concepts = ["3D 渲染","互動式學習","教育科技"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "cclank--cell-architecture-studio" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

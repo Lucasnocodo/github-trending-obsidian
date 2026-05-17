@@ -5,14 +5,14 @@ owner: earthtojake
 owner_type: User
 language: JavaScript
 license: MIT
-description: "Open source CAD skills and harnesses for generating 3D models with your favorite coding agent"
-homepage: "https://demo.cadskills.xyz"
-stars: 2420
-stars_per_day: 121
-forks: 282
-open_issues: 3
+description: "A collection of agent skills for CAD, robotics and hardware design"
+homepage: "https://www.cadskills.xyz"
+stars: 2912
+stars_per_day: 116
+forks: 349
+open_issues: 4
 created: 2026-04-22
-pushed_at: 2026-05-11
+pushed_at: 2026-05-16
 first_seen: 2026-04-28
 week: "2026-W18"
 month: "2026-04"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-28
-use_case: "透過編碼代理生成 3D CAD 模型的開源工具。"
+use_case: "提供 CAD、機器人和硬體設計的代理技能集合。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 2
 next_review: "2026-05-06"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 61437
-readme_length: 9046
+issue_close_rate: 20
+repo_size_kb: 63577
+readme_length: 9387
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-28"
-star_history: "2026-04-28:952,2026-04-29:1094,2026-04-29:1095,2026-05-03:1279,2026-05-04:1481,2026-05-05:1869,2026-05-06:1963,2026-05-08:2132,2026-05-12:2420"
+star_history: "2026-04-28:952,2026-04-29:1094,2026-04-29:1095,2026-05-03:1279,2026-05-04:1481,2026-05-05:1869,2026-05-06:1963,2026-05-08:2132,2026-05-12:2420,2026-05-17:2912"
 tags:
   - github
   - "category/開發工具"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "text-to-cad"
   - "earthtojake/text-to-cad"
-  - "透過編碼代理生成 3D CAD 模型的開源工具。"
+  - "提供 CAD、機器人和硬體設計的代理技能集合。"
 ---
 
 # text-to-cad
 
-**2.4k** stars · **121** stars/天 · 建立 20 天前 · JavaScript · MIT
+**2.9k** stars · **116** stars/天 · 建立 25 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/earthtojake--text-to-cad");
@@ -78,13 +78,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `3mf` `agents` `ai` `ai-agents` `build123d` `cad` `cad-skill` `dxf` `glb` `mechanical-engineering` `opencascade` `robotics` `sdf` `srdf` `step` `stl` `stp` `text-to-cad` `urdf` `wasm`
 
 > [!summary] 一句話摘要
-> 透過編碼代理生成 3D CAD 模型的開源工具。
+> 提供 CAD、機器人和硬體設計的代理技能集合。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (121 stars/day)
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (116 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 希望透過編碼代理自動生成 CAD 模型的機械工程師和設計師。
-> **一句話重點** 這個專案展示了如何利用 AI 和編碼代理自動化 CAD 模型的生成，為設計過程帶來了革命性的變化。
+> **適合** 需要快速生成和修改 CAD 模型的工程師，特別是在機器人和硬體設計領域。
+> **一句話重點** 這個專案的最大亮點是其 AI 驅動的自動化設計能力，能顯著提升 CAD 模型的生成效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -107,33 +107,35 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習，10 小時整合，能夠實現 CAD 模型的自動生成，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~8h · **綁定風險** medium
+> **結論** 花 8 小時學習，12 小時整合，能夠快速生成 CAD 模型，值得考慮。
 
 > [!abstract] 核心創新
-> 這個專案的創新點在於將編碼代理與 CAD 模型生成過程結合，實現自動化設計。
+> 這個專案的創新點在於利用 AI 代理自動生成和管理 CAD 模型，顯著提升設計效率。
 
 ## 專案簡介
 
-這個專案提供了一個開源的 CAD 技能和工具，讓使用者能夠透過編碼代理（如 Codex 和 Claude Code）生成 3D 模型。使用者只需描述想要的部件或機構，然後編碼代理會更新本地的 CAD 源文件，接著生成各種格式的 CAD 文件（如 STEP、STL、DXF 等）。這樣的設計使得 CAD 模型的生成過程變得自動化且可重複，特別適合需要快速迭代設計的工程師。主要的 CLI 指令包括 `./scripts/codex-install.sh` 來安裝 Codex 的技能，並且可以透過 `npx agent-skills-cli add earthtojake/text-to-cad` 來自動安裝技能。這個工具的賣點在於它能夠將 CAD 生成過程與編碼代理的能力結合，從而提高設計的效率和精確度。
+這個專案的核心在於利用 AI 代理生成和管理 CAD 模型，讓設計過程更加自動化和高效。使用者可以透過描述所需的零件或機構，然後由代理自動編輯本地 CAD 源文件，最後生成各種格式的 CAD 文件（如 STEP、STL、DXF 等）。例如，使用者只需描述一個 '100 x 60 x 20 mm 的方形塊'，代理便會生成相應的 CAD 模型，並可在 CAD Explorer 中進行檢查。這樣的設計使得 CAD 模型的生成過程不再依賴手動操作，提升了設計的靈活性和精確性。
 
-技術上，這個專案使用 JavaScript 和 Python，並依賴於 Git LFS 來管理大型資產。這樣的選擇使得專案在處理大型 CAD 文件時能夠保持輕量，並且易於版本控制。
+技術上，這個專案使用 JavaScript 和 Python 來實現各種技能，並依賴 Git LFS 來管理大型資產。它的架構設計允許用戶在本地運行所有功能，無需依賴後端服務，這對於需要快速迭代的設計環境非常有利。與傳統的 CAD 軟體相比，這個工具的優勢在於它能夠自動生成和更新模型，並且支持多種文件格式的輸出，這在設計流程中大大減少了時間成本。
 
-相較於傳統的 CAD 工具，這個專案提供了更高的自動化和靈活性，特別是在需要快速生成和修改模型的場景下。
 
-與其他 CAD 工具相比，如 AutoCAD 和 SolidWorks，這個專案的優勢在於其開源性和與編碼代理的整合能力，讓使用者能夠在設計過程中利用 AI 的強大能力。對於小型團隊或個人開發者來說，這是一個非常適合的選擇，因為它不需要昂貴的授權費用。
 
-然而，使用者需要注意的是，這個專案目前仍在活躍開發中，可能會遇到一些未解決的問題，且社群的支持度尚未完全成熟。對於希望在 CAD 領域實現自動化的團隊，這個工具提供了一個值得探索的方向。未來幾個月，隨著功能的增強和社群的擴大，這個專案有潛力成為 CAD 自動化的主流選擇。
+與其他 CAD 工具相比，如 AutoCAD 或 SolidWorks，這個專案的特點在於其 AI 驅動的自動化能力。傳統工具通常需要手動操作，而這個專案能夠通過簡單的描述來生成複雜的模型，適合需要快速原型設計的團隊。在大型項目中，這樣的自動化能顯著提高效率，尤其是在需要頻繁修改設計的情況下。
 
-**技術棧**：`JavaScript` · `Python` · `Shell`
+不過，使用者需要注意的是，這個專案目前仍在活躍開發中，可能會遇到一些穩定性問題，特別是在處理大型或複雜模型時。社群的活躍度也相對較高，開發者在不斷更新和修復問題，這對於未來的使用體驗是個正面信號。
+
+總體來說，這個專案適合需要快速生成和修改 CAD 模型的工程師，尤其是在機器人和硬體設計領域。對於小型團隊或新創公司，這是一個值得考慮的工具，能夠幫助他們在設計過程中節省時間和資源。
+
+**技術棧**：`JavaScript` · `Python` · `CSS` · `Shell` · `HTML`
 
 ## 重點功能
 
-- 生成 CAD 模型 — 支持 STEP、STL、3MF、DXF、GLB 等格式的自動生成。
-- 編碼代理整合 — 可與 Codex 和 Claude Code 等編碼代理無縫整合，提升設計效率。
-- 本地運行 — 可在本地環境中運行，無需後端服務，方便開發和測試。
-- 幫助文檔 — 提供詳細的安裝和使用說明，幫助使用者快速上手。
-- 版本控制 — 支持源碼控制，方便團隊協作和版本管理。
+- 生成 CAD 模型 — 使用 AI 代理自動生成 STEP、STL、DXF 等格式的 CAD 模型。
+- 導出多種格式 — 支持 STEP、STL、3MF、DXF、GLB 等多種 CAD 文件格式的導出。
+- CAD Explorer — 提供可視化檢查生成的 CAD 模型和文件的功能。
+- 穩定引用 — 支持穩定的 `@cad[...]` 引用，方便後續精確編輯。
+- 本地運行 — 可在本地環境中運行所有功能，無需依賴後端服務。
 
 ## 快速開始
 
@@ -145,7 +147,7 @@ git clone https://github.com/earthtojake/text-to-cad.git
 ```bash
 cd text-to-cad
 ```
-3. 安裝 Codex 技能
+3. 安裝 Codex 代理
 ```bash
 ./scripts/codex-install.sh
 ```
@@ -153,65 +155,69 @@ cd text-to-cad
 ## 程式碼範例
 
 ```js
-{
-  "前置條件": "已安裝 Python 和相關依賴",
-  "指令": "python3.11 -m venv .venv\n./.venv/bin/python -m pip install --upgrade pip\n./.venv/bin/pip install -r skills/cad/requirements.txt",
-  "預期輸出": "安裝所需的 CAD 依賴，準備好進行 CAD 模型生成。"
-}
+# 前置條件
+# 使用者需要在本地環境中安裝 Python 依賴
+# 安裝 CAD 依賴
+python3.11 -m venv .venv
+./.venv/bin/python -m pip install --upgrade pip
+./.venv/bin/pip install -r skills/cad/requirements.txt
+# 預期輸出
+# 安裝完成後，使用者可以開始使用 CAD 生成工具。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 20 天內累積 2420 stars（121/天），forks 282（11.7%），顯示出強烈的社群興趣。專案的主要貢獻者 earthtojake 在開源社群中有一定的影響力，過去參與了多個 CAD 相關的專案。這個工具解決了 CAD 模型生成過程中的自動化需求，過去需要手動操作的步驟現在可以透過編碼代理實現，提升了設計效率。社群的討論和需求也促進了這個專案的快速成長，特別是在機器人和機械工程領域。這種自動化的需求在當前的技術環境中愈加明顯，讓這個工具的出現正好契合了市場的需求。
+> 建立 25 天內累積 2912 stars（116/天），forks 349（12.0%），顯示出良好的社群反響。這個專案由 earthtojake 開發，他在 CAD 和機器人領域有豐富的經驗。它解決了傳統 CAD 工具在自動化和靈活性上的不足，特別是在需要快速迭代的設計環境中。近期的推廣活動和社群討論也可能促進了其知名度的提升。高比例的 forks 表示許多人對這個專案感興趣並進行了實際的修改和應用。
 
 ## 適合誰使用
 
-**目標受眾**：希望透過編碼代理自動生成 CAD 模型的機械工程師和設計師。
+**目標受眾**：需要快速生成和修改 CAD 模型的工程師，特別是在機器人和硬體設計領域。
 
 > [!example] 使用場景
-> - 機械工程師用它來自動生成機械零件的 CAD 模型，因為這樣可以節省手動設計的時間，並且能夠快速迭代設計。
-> - 機器人開發者用它來創建機器人模型的 URDF 文件，因為這樣可以更方便地進行模擬和測試，減少了手動編寫 XML 的錯誤。
-> - 設計師用它來生成產品的 3D 模型，因為可以直接從描述中生成 CAD 文件，提升了設計的效率和準確性。
+> - 機械工程師用它來自動生成機械零件的 CAD 模型，因為手動設計耗時且容易出錯。
+> - 機器人設計師用它來快速迭代機器人部件，因為能夠即時生成和檢查模型，加快設計流程。
+> - 新創公司的產品設計師用它來開發原型，因為可以在短時間內生成多種設計選項，提升創新能力。
 
 ## 架構分析
 
-這個專案採用模組化的架構設計，將 CAD 生成技能和工具分為多個子模組。這樣的設計使得使用者可以根據需求選擇安裝特定的技能，降低了整體的安裝複雜度。資料流方面，使用者首先描述想要的模型，然後編碼代理根據描述更新本地的 CAD 源文件，接著生成各種格式的 CAD 文件。
-
-選擇使用 Git LFS 來管理大型資產，這樣可以避免在普通 Git 操作中拉取過多不必要的數據，提升了效率。這種設計的代價在於需要使用者具備一定的 Git 和 CAD 知識，否則可能會在使用過程中遇到困難。擴展性方面，專案的模組化設計使得未來可以輕鬆添加新的技能和功能，滿足不斷變化的需求。
+這個專案採用了模組化的架構，將不同的 CAD 技能封裝在各自的模組中，這樣的設計使得擴展和維護變得更加容易。資料流方面，使用者的描述會被 AI 代理處理，生成的 CAD 模型會被存儲在本地，並可通過 CAD Explorer 進行檢查。選擇本地運行的架構使得使用者能夠快速迭代，而不需要依賴外部服務，這對於需要快速反饋的設計過程非常重要。這樣的設計雖然減少了對網路的依賴，但也意味著使用者需要自行管理所有依賴和資源，這可能會增加初次設置的複雜度。整體而言，這種架構設計在靈活性和可擴展性上有良好的表現，但在資源管理上則可能面臨挑戰。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於將 CAD 模型生成與編碼代理的能力結合。使用者可以通過簡單的描述來生成複雜的 3D 模型，這是傳統 CAD 工具無法實現的。專案使用 JavaScript 和 Python 來實現前端和後端的功能，並利用 Git LFS 來管理大型資產，這樣可以保持輕量且易於版本控制。效能方面，專案能夠處理相對較大的 CAD 文件，但在處理極大型的模型時可能會遇到性能瓶頸。選擇使用開源技術而非商業解決方案，這樣的選擇使得專案能夠保持靈活性和可擴展性，但也可能帶來一定的技術負擔。技術風險方面，隨著使用者數量的增加，可能會出現性能和穩定性問題，特別是在高負載的情況下。整合方面，專案與主流的 CAD 工具鏈（如 AutoCAD 和 SolidWorks）整合的難度相對較高，需要使用者具備一定的技術背景才能順利使用。
+這個專案的核心技術在於利用 AI 代理生成 CAD 模型，並通過多種技能來支持不同的 CAD 文件格式。具體來說，使用者可以通過簡單的描述來生成複雜的 CAD 模型，這是基於自然語言處理技術的應用。效能方面，專案使用 Git LFS 來管理大型資產，這意味著在處理大型模型時可能會面臨性能瓶頸，尤其是在初次克隆時。選擇 JavaScript 和 Python 作為主要開發語言，使得專案在前端和後端都能有良好的表現，但也增加了依賴的複雜度。
+
+這樣的選擇使得專案能夠充分利用現有的生態系統，但也可能導致未來的維護挑戰。技術風險方面，隨著使用者數量的增加，如何保持系統的穩定性和性能將是未來的一大挑戰。整合方面，這個專案能夠與現有的 CAD 工具鏈良好協作，但在某些情況下可能需要額外的適配器或包裝。整體而言，這個專案在技術上具有很高的潛力，但也需要持續的關注和改進。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用說明，並包含了必要的範例。安裝過程相對順暢，但對於新手來說，可能需要一些額外的學習時間來理解 CAD 和 Git 的基本概念。整體來說，花 30 分鐘應該能夠成功運行起來，但對於完全沒有背景的使用者來說，可能會遇到一些挑戰。
+> README 文件提供了清晰的安裝步驟和使用說明，並包含了範例。安裝過程相對順暢，但需要安裝多種依賴，初次設置可能會有些繁瑣。文件主要以英文撰寫，缺乏多語言支持，但對於熟悉技術的使用者來說，應該不會造成太大困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開源且免費，適合預算有限的團隊。
-> - 與編碼代理的整合提高了設計效率，特別是在快速迭代的情況下。
-> - 支持多種 CAD 文件格式，方便與其他工具鏈整合。
+> - AI 驅動的自動生成 CAD 模型，提升設計效率。
+> - 支持多種 CAD 文件格式，方便與其他工具整合。
+> - 可在本地運行，無需依賴後端服務，適合快速迭代。
 
 > [!danger] 缺點
-> - 目前仍在開發中，可能會遇到未解決的問題。
-> - 社群支持尚未成熟，可能缺乏即時的幫助。
-> - 對於大型專案，可能需要額外的配置和調整。
+> - 仍在開發中，可能會遇到穩定性問題。
+> - 對於大型模型的處理可能存在性能瓶頸。
+> - 初次設置需要安裝多種依賴，可能較為繁瑣。
 
 > [!warning] 注意事項
-> - 目前仍在活躍開發中，可能會遇到未解決的問題。
-> - 對於大型專案，可能需要額外的配置和調整。
-> - 社群支持尚未完全成熟，可能缺乏即時的幫助和資源。
+> - 仍在開發中，可能會遇到穩定性問題。
+> - 對於大型或複雜模型的處理可能存在性能瓶頸。
+> - 需要安裝多種依賴，初次設置可能較為繁瑣。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成 3D 角色模型，而本專案則是針對 CAD 模型生成，適用範圍不同。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供 CAD 模型的版本控制，但不具備自動生成的功能，適合需要手動編輯的使用者。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成 3D 模型的工具，但不具備 CAD 文件格式的廣泛支持。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供機器人設計的功能，但缺乏 CAD 自動生成的能力。 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 專注於機器學習和 AI 代理，但不專注於 CAD 模型的生成和管理。 |
 
 ## 替代方案決策
 
@@ -219,16 +225,16 @@ cd text-to-cad
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| AutoCAD | 商業軟體，提供完整的 CAD 解決方案，但不具備自動生成的功能。 | 如果需要一個成熟穩定的商業解決方案，並且預算充足，AutoCAD 是不錯的選擇。 | medium，因為需要將現有的設計轉換為 AutoCAD 格式。 |
-| FreeCAD | 開源 CAD 軟體，支持多種格式，但不具備與編碼代理的整合。 | 如果需要一個開源的替代方案，並且不需要自動化功能，FreeCAD 是合適的選擇。 | low，因為大多數 CAD 文件格式都是相容的。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成 3D 模型的工具，但不具備 CAD 文件格式的廣泛支持。 | 如果你需要一個專注於 3D 模型生成的工具，而不是 CAD 文件格式的支持。 | medium，因為需要重新適應不同的工具和工作流程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供機器人設計的功能，但缺乏 CAD 自動生成的能力。 | 如果你的專案主要集中在機器人設計，而不需要 CAD 模型的自動生成。 | low，因為功能上有部分重疊。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **text-to-cad** | **AutoCAD** | **FreeCAD** |
+> | 維度 | **text-to-cad** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 商業軟體，提供完整的 CAD 解決方案，但不具備自動生成的功能。 | 開源 CAD 軟體，支持多種格式，但不具備與編碼代理的整合。 |
-> | 遷移成本 | - | medium，因為需要將現有的設計轉換為 AutoCAD 格式。 | low，因為大多數 CAD 文件格式都是相容的。 |
-> | 適用場景 | 主要場景 | 如果需要一個成熟穩定的商業解決方案，並且預算充足，AutoC | 如果需要一個開源的替代方案，並且不需要自動化功能，FreeC |
+> | 技術路線 | 本專案 | 專注於生成 3D 模型的工具，但不具備 CAD 文件格式的廣泛支持。 | 提供機器人設計的功能，但缺乏 CAD 自動生成的能力。 |
+> | 遷移成本 | - | medium，因為需要重新適應不同的工具和工作流程。 | low，因為功能上有部分重疊。 |
+> | 適用場景 | 主要場景 | 如果你需要一個專注於 3D 模型生成的工具，而不是 CAD  | 如果你的專案主要集中在機器人設計，而不需要 CAD 模型的自 |
 
 ## 成熟度評估
 
@@ -239,44 +245,43 @@ cd text-to-cad
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人試用和小型專案，不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些環境中安裝依賴可能會失敗，特別是 Python 版本不相容的情況下。
-  - 解法：確保使用 Python 3.11 版本，並檢查依賴的相容性。
-- [MEDIUM] 生成的 CAD 文件在某些 CAD 軟體中可能無法正確顯示。
-  - 解法：使用 CAD Explorer 進行檢查，並根據需要調整生成參數。
-- [MEDIUM] 對於大型模型，生成過程可能會耗時較長。
-  - 解法：考慮將模型拆分為較小的部分進行生成。
+- **[HIGH]** 在大型模型生成過程中可能會遇到性能瓶頸，導致生成時間過長。
+  - 解法：考慮將模型拆分為更小的部分進行生成。
+- [MEDIUM] 某些 CAD 格式的導出可能會出現兼容性問題。
+  - 解法：在導出前檢查格式支持列表，並進行必要的轉換。
+- [MEDIUM] 初次設置過程中可能會遇到依賴安裝的問題。
+  - 解法：仔細按照 README 中的步驟進行安裝，並檢查依賴版本。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型設計團隊的 CAD 模型生成 | 非常適合 | 自動化生成和編碼代理的整合能顯著提高設計效率。 |
-| 大型企業的核心 CAD 設計流程 | 不適合 | 目前仍在開發中，穩定性和支持度不足。 |
-| 個人開發者的 CAD 項目 | 適合 | 開源且免費，適合預算有限的個人使用。 |
-| 需要快速迭代的產品設計 | 非常適合 | 能夠快速生成和修改 CAD 模型，適合快速變化的需求。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠快速生成和修改 CAD 模型，適合快速迭代的設計需求。 |
+| 大型機械設計團隊 | 普通 | 雖然具備自動生成能力，但在處理大型模型時可能存在性能瓶頸。 |
+| 學術研究機構進行機器人設計 | 非常適合 | 能夠快速生成和檢查機器人部件，提升研究效率。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 學習時間 | ~8 小時 |
+| 整合時間 | ~12 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，能夠實現 CAD 模型的自動生成，值得一試。
+> 花 8 小時學習，12 小時整合，能夠快速生成 CAD 模型，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：專案本身不需要高權限運行，且不存取敏感資料。依賴的庫和工具均為開源，無已知的供應鏈風險。
+> 低風險：這個工具本身不需要高權限運行，且不會存取敏感資料。依賴鏈中未發現已知的供應鏈風險，適合在 CI/CD pipeline 中使用。
 
 ## 健康度儀表板
 
@@ -341,46 +346,53 @@ cd text-to-cad
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 282 |
-| Open Issues | 3 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-05-11 |
+| Forks | 349 |
+| Open Issues | 4 |
+| Issue 解決率 | 20% (1 closed) |
+| 最後推送 | 2026-05-16 |
 | 建立日期 | 2026-04-22 |
-| 官方網站 | [Link](https://demo.cadskills.xyz) |
-| Repo 大小 | 60.0 MB |
+| 官方網站 | [Link](https://www.cadskills.xyz) |
+| Repo 大小 | 62.1 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/earthtojake/text-to-cad) |
 | Topics | `3mf` `agents` `ai` `ai-agents` `build123d` `cad` `cad-skill` `dxf` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 52
+>     "JavaScript" : 51
 >     "Python" : 48
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@earthtojake](https://github.com/earthtojake) | 18 |
+> | [@earthtojake](https://github.com/earthtojake) | 26 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者定期更新和維護專案。
-**連結**：[文件](https://demo.cadskills.xyz)
+**社群活躍度**：社群活躍度良好，開發者定期更新和修復問題。
+**連結**：[文件](https://www.cadskills.xyz)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-24 ~ 2026-05-11）
-> **活躍天數** 5 天 · **最新 commit** Prepare bundled CAD skills release
+> [!abstract] 最近 10 次 commit（2026-05-04 ~ 2026-05-16）
+> **活躍天數** 5 天 · **最新 commit** Update docs header theme and GitHub button
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#10](https://github.com/earthtojake/text-to-cad/issues/10) | URDF Generation | 0 | 12 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # ⚙ Open Source CAD Skills And Harnesses ⚙
+> # CAD Skills
 > 
-> Open source CAD skills and harnesses for generating 3D models with your favorite coding agent
+> A collection of agent skills for CAD, robotics and hardware design
 > 
-> [Demo Explorer](https://demo.cadskills.xyz)
+> [Docs](https://www.cadskills.xyz) | [Demo](https://demo.cadskills.xyz)
 > 
 > [](https://github.com/earthtojake/text-to-cad/stargazers)
 > [](https://github.com/earthtojake/text-to-cad/network/members)
@@ -401,16 +413,16 @@ cd text-to-cad
 > - **Generate** - Create source-controlled CAD models with coding agents like Codex and Claude Code.
 > - **Export** - Produce STEP, STL, 3MF, DXF, GLB, topology data, and URDF/SDF/SRDF robot descriptions.
 > - **Browse** - Inspect generated geometry, flat patterns, and robot-description files in CAD Explorer.
+> - **Source** - Find and download off-the-shelf STEP parts from the hosted step.parts catalog.
 > - **Reference** - Copy stable `@cad[...]` references so agents can make precise follow-up edits.
 > - **Review** - Render quick review images for fast checks during an iteration loop.
 > - **Reproduce** - Edit source files first, then regenerate explicit targets.
-> - **Local** - Run the harness and CAD Explorer locally with no backend to host.
+> - **Local** - Run harness, skills and explorer locally with no backend to host.
 > 
 > ## 🧰 Skills
 > 
-> This harness vendors file-targeted skills for CAD, URDF, SDF, SRDF/MoveIt2, and manufacturing-preflight work. Use the bundled copies here for local CAD projects, or use the dedicated repositories when installing the skills outside this harness.
-> 
 > - **CAD Skill** - STEP, STL, 3MF, DXF, GLB/topology, render images, and `@cad[...]` geometry references. [Bundled skill](skills/cad/SKILL.md) · [Standalone repo](https://github.com/earthtojake/cad-skill)
+> - **step.parts Skill** - Find, evaluate, and download common off-the-shelf STEP models from step.parts, including screws, nuts, washers, bearings, standoffs, electronics parts, motors, and connectors. [Bundled skill](skills/step-parts/SKILL.md)
 > - **CAD Explorer Skill** - Start or reuse CAD Explorer and return visual review links for generated `.step`, `.stp`, `.stl`, `.3mf`, `.dxf`, `.urdf`, `.srdf`, and `.sdf` files. [Bundled skill](skills/cad-explorer/SKILL.md)
 > - **URDF Skill** - Generated URDF XML, robot links, joints, limits, validation, mesh references, and CAD Explorer URDF visualization. [Bundled skill](skills/urdf/SKILL.md)
 > - **SDF Skill** - Generated SDFormat/SDF XML, simulator model/world structure, validation, mesh URIs, plugins, and simulator-specific metadata. [Bundled skill](skills/sdf/SKILL.md)
@@ -587,18 +599,15 @@ cd text-to-cad
 > 
 > ## 🛠️ Local Development
 > 
-> Clone the repo:
-> 
-> ```bash
-> git clone https://github.com/earthtojake/text-
+> Clone th
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[機器學習]] · [[CAD]]
+相關概念：[[自動化]] · [[機器學習]] · [[CAD]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[alchaincyf--hermes-agent-orange-book|alchaincyf/hermes-agent-orange-book]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]]
 
-[GitHub](https://github.com/earthtojake/text-to-cad) · [官方網站](https://demo.cadskills.xyz)
+[GitHub](https://github.com/earthtojake/text-to-cad) · [官方網站](https://www.cadskills.xyz)
 
 ## 相關收錄
 
@@ -638,7 +647,7 @@ cd text-to-cad
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化測試","機器學習","CAD"];
+> const concepts = ["自動化","機器學習","CAD"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "earthtojake--text-to-cad" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
