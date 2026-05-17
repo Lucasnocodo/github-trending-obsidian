@@ -7,9 +7,9 @@ language: N/A
 license: MIT
 description: "An Agent Skill for designing cross-platform desktop apps that feel native — distilled from Raycast's 2.0 deep-dive and reverse engineering of Raycast Beta.app. Eight architectural tenets, four-layer architecture, WebKit/WebView2 survival guide, 75-item ship audit."
 homepage: ""
-stars: 1066
-stars_per_day: 1066
-forks: 46
+stars: 1230
+stars_per_day: 615
+forks: 56
 open_issues: 0
 created: 2026-05-14
 pushed_at: 2026-05-15
@@ -30,8 +30,8 @@ use_case: "設計跨平台桌面應用程式，實現近乎原生的使用體驗
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-19"
+appearances: 2
+next_review: "2026-05-20"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-16"
-star_history: "2026-05-16:1066"
+star_history: "2026-05-16:1066,2026-05-17:1230"
 tags:
   - github
   - "category/開發工具"
@@ -421,7 +421,7 @@ ls ~/.claude/skills/native-feel-cross-platform-desktop
 
 相關概念：[[跨平台開發]] · [[WebView]] · [[性能優化]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
 
 [GitHub](https://github.com/yetone/native-feel-skill)
 
@@ -717,4 +717,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-17|2026-05-17]] — 再次上榜，1.2k stars
 - [[2026-05-16|2026-05-16]] — 首次收錄，1.1k stars

@@ -1618,10 +1618,10 @@
   },
   "huangserva/3DCellForge": {
     "first_seen": "2026-05-11",
-    "last_seen": "2026-05-16",
-    "times_seen": 6,
+    "last_seen": "2026-05-17",
+    "times_seen": 7,
     "stars_first": 757,
-    "stars_last": 2059
+    "stars_last": 2091
   },
   "WenyuChiou/awesome-agentic-ai-zh": {
     "first_seen": "2026-05-11",
@@ -1646,10 +1646,10 @@
   },
   "FULU-Foundation/OrcaSlicer-bambulab": {
     "first_seen": "2026-05-13",
-    "last_seen": "2026-05-16",
-    "times_seen": 4,
+    "last_seen": "2026-05-17",
+    "times_seen": 5,
     "stars_first": 1168,
-    "stars_last": 4668
+    "stars_last": 5361
   },
   "pixel-point/media-downloader": {
     "first_seen": "2026-05-13",
@@ -1660,24 +1660,24 @@
   },
   "Nightmare-Eclipse/YellowKey": {
     "first_seen": "2026-05-14",
-    "last_seen": "2026-05-16",
-    "times_seen": 3,
+    "last_seen": "2026-05-17",
+    "times_seen": 4,
     "stars_first": 1000,
-    "stars_last": 2435
+    "stars_last": 2851
   },
   "ywnd1144/Gopay_plus_automatic": {
     "first_seen": "2026-05-14",
-    "last_seen": "2026-05-16",
-    "times_seen": 3,
+    "last_seen": "2026-05-17",
+    "times_seen": 4,
     "stars_first": 712,
-    "stars_last": 876
+    "stars_last": 902
   },
   "HermannBjorgvin/Clawdmeter": {
     "first_seen": "2026-05-14",
-    "last_seen": "2026-05-16",
-    "times_seen": 3,
+    "last_seen": "2026-05-17",
+    "times_seen": 4,
     "stars_first": 683,
-    "stars_last": 1004
+    "stars_last": 1086
   },
   "haydenbleasel/files-sdk": {
     "first_seen": "2026-05-14",
@@ -1702,31 +1702,31 @@
   },
   "nexu-io/html-anything": {
     "first_seen": "2026-05-15",
-    "last_seen": "2026-05-16",
-    "times_seen": 2,
+    "last_seen": "2026-05-17",
+    "times_seen": 3,
     "stars_first": 930,
-    "stars_last": 1989
+    "stars_last": 2456
   },
   "simonlin1212/a-stock-data": {
     "first_seen": "2026-05-15",
-    "last_seen": "2026-05-16",
-    "times_seen": 2,
+    "last_seen": "2026-05-17",
+    "times_seen": 3,
     "stars_first": 706,
-    "stars_last": 882
+    "stars_last": 991
   },
   "TencentARC/Pixal3D": {
     "first_seen": "2026-05-15",
-    "last_seen": "2026-05-16",
-    "times_seen": 2,
+    "last_seen": "2026-05-17",
+    "times_seen": 3,
     "stars_first": 640,
-    "stars_last": 732
+    "stars_last": 799
   },
   "yetone/native-feel-skill": {
     "first_seen": "2026-05-16",
-    "last_seen": "2026-05-16",
-    "times_seen": 1,
+    "last_seen": "2026-05-17",
+    "times_seen": 2,
     "stars_first": 1066,
-    "stars_last": 1066
+    "stars_last": 1230
   },
   "cclank/cell-architecture-studio": {
     "first_seen": "2026-05-16",
@@ -1734,5 +1734,12 @@
     "times_seen": 1,
     "stars_first": 610,
     "stars_last": 610
+  },
+  "vercel-labs/zero": {
+    "first_seen": "2026-05-17",
+    "last_seen": "2026-05-17",
+    "times_seen": 1,
+    "stars_first": 1030,
+    "stars_last": 1030
   }
 }

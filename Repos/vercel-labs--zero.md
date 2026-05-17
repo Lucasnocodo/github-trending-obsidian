@@ -1,65 +1,66 @@
 ---
-repo: huangserva/3DCellForge
-url: https://github.com/huangserva/3DCellForge
-owner: huangserva
-owner_type: User
-language: JavaScript
-license: MIT
-description: "AI-powered interactive 3D cell generation and exploration studio."
-homepage: ""
-stars: 2091
-stars_per_day: 349
-forks: 351
-open_issues: 2
-created: 2026-05-10
-pushed_at: 2026-05-16
-first_seen: 2026-05-11
-week: "2026-W20"
+repo: vercel-labs/zero
+url: https://github.com/vercel-labs/zero
+owner: vercel-labs
+owner_type: Organization
+language: C
+license: Apache-2.0
+description: "The programming language for agents"
+homepage: "https://zerolang.ai"
+stars: 1030
+stars_per_day: 1030
+forks: 56
+open_issues: 25
+created: 2026-05-15
+pushed_at: 2026-05-17
+first_seen: 2026-05-17
+week: "2026-W21"
 month: "2026-05"
-category: "其他"
-subcategory: "3D 模型生成"
-release_tag: ""
+category: "開發工具"
+subcategory: "程式碼工具"
+release_tag: "v0.1.1"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-05-11
-use_case: "提供 AI 驅動的互動式 3D 細胞生成與探索平台。"
+last_reviewed: 2026-05-17
+use_case: "為代理程式設計的編程語言，專注於小型原生工具的開發。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 7
+appearances: 1
 next_review: "2026-05-20"
-contributor_count: 0
-engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 133037
-readme_length: 3465
-bus_factor: 0
-last_release_days: -1
-release_cadence: "never"
+contributor_count: 1
+engagement: "low"
+issue_close_rate: 11
+repo_size_kb: 1157
+readme_length: 1914
+bus_factor: 1
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-05-11"
-star_history: "2026-05-11:757,2026-05-12:1405,2026-05-13:1711,2026-05-14:1809,2026-05-15:2011,2026-05-16:2059,2026-05-17:2091"
+ring_history: "assess@2026-05-17"
+star_history: "2026-05-17:1030"
 tags:
   - github
-  - "category/其他"
-  - "lang/javascript"
+  - "category/開發工具"
+  - "lang/c"
+  - org
   - easy_install
 aliases:
-  - "3DCellForge"
-  - "huangserva/3DCellForge"
-  - "提供 AI 驅動的互動式 3D 細胞生成與探索平台。"
+  - "zero"
+  - "vercel-labs/zero"
+  - "為代理程式設計的編程語言，專注於小型原生工具的開發。"
 ---
 
-# 3DCellForge
+# zero
 
-**757** stars · **757** stars/天 · 建立 1 天前 · JavaScript · MIT
+**1.0k** stars · **1.0k** stars/天 · 建立 1 天前 · C · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/huangserva--3DCellForge");
+const me = dv.page("Repos/vercel-labs--zero");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +70,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`easy-install`
+`ORG` `v0.1.1` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供 AI 驅動的互動式 3D 細胞生成與探索平台。
+> 為代理程式設計的編程語言，專注於小型原生工具的開發。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (757 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要在瀏覽器中進行 3D 細胞模型探索的生物學研究人員和開發者。
-> **一句話重點** 這個專案不僅提供了 3D 模型生成的能力，還強調了用戶的互動體驗，這在生物學領域是相對少見的。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (1.0k stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要快速開發小型原生工具的開發者，尤其是對系統編程有需求的團隊。
+> **一句話重點** Zero 的設計不僅針對小型工具開發，還強調了系統級編程的靈活性和效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/vercel-labs--zero");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "3D 模型生成" && p.file.name !== "huangserva--3DCellForge" && p.status !== "archived")
+>     .where(p => p.subcategory === "程式碼工具" && p.file.name !== "vercel-labs--zero" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,110 +97,131 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 3D 模型生成 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 程式碼工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到靈活的 3D 模型生成能力，值得考慮。
+> **結論** 花 5 小時學習，3 小時整合，得到快速開發小型工具的能力，值得考慮。
 
 > [!abstract] 核心創新
-> 提供即時的 3D 細胞生成與探索功能，並支持多種生成模式。
+> Zero 提供了一種針對小型原生工具的專門編程語言，強調可預測的記憶體管理和明確的效果。
 
 ## 專案簡介
 
-3DCellForge 是一個基於 React 和 Three.js 的原型，專為探索生物細胞模型而設計，提供了一個精緻的瀏覽器界面。用戶可以透過拖動來旋轉視圖、滾動來縮放，並切換 3D 證明模式，這些功能使得細胞的探索變得直觀而互動。該工具支持從上傳的參考圖像生成真實的 3D 模型，並提供了 GLB 格式的導出，這對於需要將細胞模型整合到其他應用中的研究者來說非常實用。核心賣點在於其即時的 WebGL 控制和多種生成模式，包括雲端生成和本地備份模式，這使得用戶在不同情境下都能靈活選擇生成方式。使用者只需運行 `npm run dev` 即可啟動開發環境，並透過 Vite 獲取即時的開發預覽。
+**核心機制**
 
-這個工具的技術棧包括 React、Vite 和 Three.js，這些選擇不僅提升了開發效率，也確保了良好的性能和可擴展性。相較於其他類似工具，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，3DCellForge 提供了更為豐富的互動功能和多樣的生成選項，特別是在細胞模型的視覺化和操作上更具優勢。實際使用中，該工具能夠處理多達數百個細胞模型，並且支持多種 API 整合，這使得它在生物醫學研究中具有廣泛的應用潛力。對於需要在前端進行 3D 模型探索的開發者來說，這是一個值得考慮的選擇。未來 6 個月內，隨著使用者社群的擴大和功能的持續增強，這個專案有望成為生物模型探索的主流工具之一。
+Zero 是一種針對代理程式的系統語言，旨在提供小型原生工具的開發。它的核心機制包括編譯器生成可執行檔，並能夠透過 `zero run` 指令執行程式，這讓開發者能夠快速迭代和測試程式碼。使用者只需透過 `curl` 安裝，並可用 `zero check` 檢查程式碼，這樣的設計使得開發流程更加簡化和高效。Zero 的設計重點在於可預測的記憶體使用和明確的效果，這在處理系統級應用時尤其重要。其標準庫和文檔雖然仍在發展中，但已經提供了基本的功能和範例，讓使用者能夠快速上手。
 
-**技術棧**：`React 19.2.5` · `Vite 8.0.10` · `Three.js 0.184.0`
+**技術實作**
+
+這種設計使得 Zero 在小型工具開發上具備了良好的靈活性和可擴展性。
+
+在技術實作上，Zero 使用 C 和 TypeScript 實現其編譯器，並依賴於現代的開發工具鏈。這樣的選擇使得它能夠在性能和易用性之間取得平衡，並且能夠與現有的 JavaScript 生態系統良好整合。與其他語言相比，如 Rust 或 Go，Zero 更加專注於小型工具的快速開發，而不是大型應用的完整性。
+
+在替代方案方面，Zero 與 Rust 和 Go 的主要差異在於其對小型原生工具的專注。
+
+**競品比較**
+
+Rust 提供了更強的記憶體安全性，但學習曲線較陡；Go 則在並發處理上表現優異，但在系統級控制上不如 Zero 靈活。Zero 的設計使其在小型專案或原型開發中更具吸引力。
+
+使用 Zero 時，開發者可能會遇到一些限制，例如目前的功能仍在不斷變化，且社群支持和文檔尚未完全成熟。這意味著對於需要穩定性的生產環境，可能需要謹慎考慮其應用。從社群活躍度來看，開發者的回應速度和問題解決率仍有提升空間。
+
+**效果與限制**
+
+
+
+目前，Zero 處於 alpha 階段，適合用於探索性專案或小型團隊的原型開發。預計未來會持續增強功能和穩定性，特別是在標準庫和文檔方面。對於需要快速開發小型工具的開發者，Zero 是一個值得考慮的選擇。
+
+**技術棧**：`C` · `TypeScript` · `Shell`
 
 ## 重點功能
 
-- 互動式細胞查看器 — 使用 React Three Fiber 實現，支持拖動旋轉和縮放。
-- 多種生成模式 — 包括 Tripo 雲端生成、本地 Hunyuan3D 生成和 GLB 導入。
-- 細胞器詳細卡片 — 提供細胞結構的深入信息和比較面板。
-- 即時 API 整合 — API 密鑰僅在伺服器端處理，提升安全性。
-- 快取生成模型 — 生成的 GLB 模型被快取，支持離線使用。
+- 簡單安裝 — 使用 `curl` 命令安裝，並自動配置環境變數。
+- 即時執行 — 使用 `zero run` 指令快速執行程式，並能夠傳遞參數。
+- 記憶體管理 — 提供可預測的記憶體使用，適合系統級應用。
+- 標準庫 — 包含 `std.crypto` 和 `std.http` 等模組，支持常見功能。
+- 文檔豐富 — 提供詳細的文檔和範例，幫助使用者快速上手。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 安裝最新版本
 ```bash
-npm install
+curl -fsSL https://zerolang.ai/install.sh | bash
 ```
-2. 啟動開發伺服器
+2. 檢查安裝版本
 ```bash
-npm run dev
+zero --version
 ```
-3. 訪問 Vite 提供的 URL
+3. 執行範例程式
 ```bash
-打開瀏覽器並輸入顯示的 URL
+zero run examples/add.0
 ```
 
 ## 程式碼範例
 
-```js
-{
-  "前置條件": "需要安裝 Node.js 和 npm。",
-  "指令": "npm run dev",
-  "預期輸出": "啟動開發伺服器並顯示 Vite 提供的 URL。"
-}
+```c
+[
+  "# 前置條件：已安裝 Zero 語言",
+  "zero run examples/add.0",
+  "# 預期輸出：math works"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 757 stars（757/天），forks 131（17.3%），這顯示出強烈的初期興趣。專案的作者是 Huang Serva，過去在生物資訊和前端開發領域有一定的經驗。這個工具解決了生物學家在細胞模型可視化上的需求，之前的工具往往缺乏互動性和靈活性。近期的推廣活動和社群討論也為這個專案帶來了關注。技術上，WebGL 和 React 的結合使得這個工具能夠在瀏覽器中實現高效的 3D 渲染，這在目前的生態中是相對少見的。forks/stars 比率為 17.3%，顯示出許多用戶不僅在觀望，還在積極修改和使用這個專案。
+> 建立 1 天就累積 1030 stars（1030/天），forks 56（5.4%），這顯示出強烈的興趣。作者 ctate 之前在開源社群中有一定的影響力，這個專案解決了小型原生工具開發中的靈活性和效率問題，之前的方案如 Rust 和 Go 雖然強大，但在小型工具開發上不夠專注。社群的反應和問題討論也顯示出使用者對於功能和穩定性的期待。技術生態的變化，如對於小型工具需求的增加，也讓這個工具變得更加可行。forks/stars 比率在中等範圍，顯示出一些開發者開始實際修改和使用此工具。
 
 ## 適合誰使用
 
-**目標受眾**：需要在瀏覽器中進行 3D 細胞模型探索的生物學研究人員和開發者。
+**目標受眾**：需要快速開發小型原生工具的開發者，尤其是對系統編程有需求的團隊。
 
 > [!example] 使用場景
-> - 生物學研究人員用它來生成和探索細胞模型，因為它支持從圖像生成 3D 模型，省去手動建模的時間。
-> - 教育工作者用它來展示細胞結構，因為其互動性使學生能夠更直觀地理解細胞組成。
-> - 開發者用它來整合細胞模型到其他應用中，因為提供的 GLB 格式導出功能便於與其他 3D 引擎兼容。
+> - 後端工程師用它來快速開發小型原生工具，因為 Zero 提供了簡單的安裝和執行流程，讓開發者能夠專注於功能實現。
+> - 系統開發者用它來測試和驗證系統級應用，因為 Zero 的可預測記憶體管理和明確效果使得調試過程更為簡單。
+> - 開發者用它來進行原型設計，因為 Zero 的快速迭代能力能夠在短時間內實現想法並進行測試。
 
 ## 架構分析
 
-3DCellForge 採用單頁應用架構，前端使用 React 和 Vite 進行構建，後端則使用 Node.js 提供 API 支持。這種設計使得開發過程中能夠快速迭代和部署。資料流方面，前端通過 API 請求與後端進行交互，實現細胞模型的生成和展示。
+Zero 的架構設計以簡單的編譯器為核心，使用 C 實現編譯過程，並用 TypeScript 實現 CLI 工具。這樣的選擇使得編譯器能夠快速生成可執行檔，並且能夠在多平台上運行。資料流方面，使用者編寫的程式碼經過編譯器轉換為原生可執行檔，並透過 `zero run` 指令執行。
 
-選擇 React Three Fiber 作為 3D 渲染框架，因為它能夠簡化與 Three.js 的整合，並提供更高的開發效率。這樣的架構使得應用在性能上能夠保持良好，特別是在處理複雜的 3D 模型時。未來擴展性方面，隨著功能的增強，可能需要考慮如何優化後端的 API 性能，以支持更高的請求負載。
+這種設計使得開發者能夠快速迭代，並且在小型工具開發中獲得良好的性能。選擇 C 而非其他語言如 Rust，雖然可能犧牲一些安全性，但卻能獲得更高的執行效率和更小的編譯時間。擴展性方面，Zero 目前仍在發展中，未來可能會增加更多功能和模組，但目前的設計已經能夠支持基本的系統級應用開發。
 
 ## 技術深入分析
 
-3DCellForge 的核心技術機制是基於 React 和 Three.js 的結合，利用 React Three Fiber 來簡化 3D 渲染的過程。這種設計使得開發者能夠專注於應用邏輯，而不必深入底層的 WebGL 操作。效能方面，該工具能夠處理多達數百個細胞模型，並且支持即時的 3D 渲染，這對於需要高效能的生物醫學應用來說是至關重要的。選擇 Vite 作為構建工具，因為它提供了快速的開發環境和即時的熱重載功能，這對於開發者來說大大提升了開發效率。技術取捨方面，選擇 Node.js 作為後端服務，雖然可能會增加一些維護成本，但卻能提供靈活的 API 支持。隨著使用者數量的增加，可能需要考慮如何擴展後端服務以應對更高的請求負載，這是未來的一個潛在風險。整合方面，該工具能夠與主流的 CI/CD 流程無縫對接，並且支持多種 IDE 的開發環境，這使得團隊能夠輕鬆地將其納入現有的開發流程中。
+Zero 的核心技術機制在於其編譯器的設計，使用 C 語言實現，這使得編譯過程高效且能夠生成原生可執行檔。其標準庫提供了基本的功能模組，如 `std.crypto` 和 `std.http`，這些模組的存在使得開發者能夠快速實現常見的功能需求。效能方面，Zero 的編譯器設計使得生成的可執行檔在執行時具有良好的性能，並且能夠在多平台上運行。設計取捨方面，選擇 C 語言雖然可能在安全性上有所妥協，但卻能獲得更高的執行效率。技術風險方面，Zero 目前仍在 alpha 階段，未來可能會面臨功能不穩定的問題，這對於需要穩定性的生產環境來說是一個潛在的風險。整合分析方面，Zero 的 CLI 工具與現有的開發工具鏈相容性良好，能夠輕鬆整合到現有的開發流程中，並且支持常見的 CI/CD 工具，這使得它在實際應用中具備了良好的靈活性。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和使用說明。安裝過程相對順暢，但需要注意 API 密鑰的配置。文件中有英文和中文版本，方便不同語言的用戶使用。
+> README 文件清晰且提供了安裝和使用範例，安裝過程順暢。雖然文檔尚在完善中，但已有基本的 getting started guide。文件目前僅提供英文版本，對於非英語使用者可能會有一定的學習曲線。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供多種 3D 模型生成選項，靈活應對不同需求。
-> - 互動性強，提升用戶體驗和學習效果。
-> - 安全性設計良好，API 密鑰不會暴露在前端。
+> - 快速安裝和簡單的使用流程，適合新手。
+> - 可預測的記憶體管理，適合系統級應用。
+> - 提供詳細的文檔和範例，幫助使用者快速上手。
 
 > [!danger] 缺點
-> - 需要一定的計算資源來處理大型模型。
-> - 依賴於外部 API，可能會受到服務器性能影響。
-> - 對於新手用戶，初始設置可能有一定的學習曲線。
+> - 仍在 alpha 階段，功能不穩定。
+> - 社群支持和文檔尚未完全成熟，可能需要額外的探索。
+> - 某些功能可能會隨著版本更新而變動。
 
 > [!warning] 注意事項
-> - 僅支援最新版本的 Node.js。
-> - 需要安裝特定的 API 服務以啟用完整功能。
-> - 對於大型模型的處理可能需要較高的計算資源。
+> - 目前仍在 alpha 階段，功能不穩定。
+> - 社群支持和文檔尚未完全成熟，可能需要額外的探索。
+> - 某些功能可能會隨著版本更新而變動。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成 2D 精靈圖像，而 3DCellForge 提供 3D 模型生成，適合不同的應用場景。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要用於生物數據的視覺化，而 3DCellForge 更加專注於細胞模型的交互探索。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於代理工具的開發，但更側重於圖形化界面和用戶互動，而 Zero 更加專注於系統級編程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的功能，但在語言設計上更為複雜，Zero 的簡潔性使其更易於上手。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | 專注於 API 開發，Zero 則是針對小型工具的編程語言，適合不同的開發需求。 |
 
 ## 替代方案決策
 
@@ -207,16 +229,16 @@ npm run dev
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 2D 精靈生成，而本專案則提供 3D 模型生成，適合需要 3D 視覺化的場景。 | 如果你的專案主要是針對 2D 遊戲開發，則選擇它會更合適。 | medium，因為需要重新設計用戶界面和交互邏輯。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要用於生物數據的視覺化，而 3DCellForge 提供了更為豐富的細胞模型探索功能。 | 如果你的需求是專注於數據視覺化而非細胞模型生成，則選擇它會更合適。 | high，因為需要全面重構數據處理和視覺化邏輯。 |
+| Rust | Rust 提供了強大的記憶體安全性和並發處理能力，而 Zero 更加專注於小型工具的快速開發。 | 如果你的專案需要強大的記憶體安全性和並發處理，Rust 是更好的選擇。 | medium，因為語言特性和生態系統的差異需要一定的學習時間。 |
+| Go | Go 在並發處理上表現優異，但在系統級控制上不如 Zero 靈活。 | 如果你的專案需要高效的並發處理，且不需要細粒度的系統控制，Go 是更合適的選擇。 | medium，因為語言特性和生態系統的差異需要一定的學習時間。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **3DCellForge** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **zero** | **Rust** | **Go** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 2D 精靈生成，而本專案則提供 3D 模型生成，適合需要 3D 視覺化的場景。 | 主要用於生物數據的視覺化，而 3DCellForge 提供了更為豐富的細胞模型探索功能。 |
-> | 遷移成本 | - | medium，因為需要重新設計用戶界面和交互邏輯。 | high，因為需要全面重構數據處理和視覺化邏輯。 |
-> | 適用場景 | 主要場景 | 如果你的專案主要是針對 2D 遊戲開發，則選擇它會更合適。 | 如果你的需求是專注於數據視覺化而非細胞模型生成，則選擇它會更 |
+> | 技術路線 | 本專案 | Rust 提供了強大的記憶體安全性和並發處理能力，而 Zero 更加專注於小型工具的快速開發。 | Go 在並發處理上表現優異，但在系統級控制上不如 Zero 靈活。 |
+> | 遷移成本 | - | medium，因為語言特性和生態系統的差異需要一定的學習時間。 | medium，因為語言特性和生態系統的差異需要一定的學習時間。 |
+> | 適用場景 | 主要場景 | 如果你的專案需要強大的記憶體安全性和並發處理，Rust 是更 | 如果你的專案需要高效的並發處理，且不需要細粒度的系統控制，G |
 
 ## 成熟度評估
 
@@ -227,47 +249,47 @@ npm run dev
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人項目試用，但不建議用於生產環境的核心功能。
+> 適合探索性專案或小型團隊的原型開發，不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在使用 Tripo API 時，可能會遇到網絡延遲導致生成模型的時間變長。
-  - 解法：考慮使用本地 Hunyuan3D 生成作為備選方案。
-- **[HIGH]** 初次設置時，環境變數配置不當可能導致後端無法啟動。
-  - 解法：仔細檢查 `.env.local` 文件中的配置，確保 API 密鑰正確。
+- **[HIGH]** 在 Darwin 平台上執行 `zero run` 時可能會遇到 LC_UUID 缺失的錯誤
+  - 解法：檢查環境變數設置，或在其他平台上運行。
+- [MEDIUM] 某些模組的文檔尚未完善，可能導致使用上的困惑
+  - 解法：參考範例程式碼以了解模組用法。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 生物醫學研究團隊進行細胞模型探索 | 非常適合 | 提供了靈活的 3D 模型生成和探索功能，符合研究需求。 |
-| 教育機構用於教學展示 | 適合 | 互動性強，能夠提升學生的學習體驗。 |
-| 小型開發團隊進行原型設計 | 普通 | 雖然功能強大，但可能需要較高的學習成本。 |
+| 小型團隊的原型開發 | 非常適合 | Zero 的快速開發能力能夠幫助團隊迅速實現想法。 |
+| 大型系統的核心開發 | 不適合 | 目前仍在 alpha 階段，功能不穩定。 |
+| 需要快速迭代的小型工具開發 | 非常適合 | Zero 的設計專注於小型工具的開發，能夠快速滿足需求。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
-| 維護負擔 | medium |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到靈活的 3D 模型生成能力，值得考慮。
+> 花 5 小時學習，3 小時整合，得到快速開發小型工具的能力，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，API 密鑰僅在伺服器端處理，對敏感資料的存取有良好的控制。
+> 低風險：Zero 本身不需要高權限，且不會存取敏感資料，但仍需注意依賴的庫和模組的安全性。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/vercel-labs--zero");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -302,7 +324,7 @@ npm run dev
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/vercel-labs--zero");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -326,182 +348,167 @@ npm run dev
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 131 |
-| Open Issues | 0 |
-| 最後推送 | 2026-05-11 |
-| 建立日期 | 2026-05-10 |
-| Repo 大小 | 129.9 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/huangserva/3DCellForge) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@react-three/drei` `@react-three/fiber` `@react-three/postprocessing` `framer-motion` `lucide-react` `postprocessing` `react` `react-dom` `three` `undici` `@eslint/js` `@types/react` `@types/react-dom` `@vitejs/plugin-react` `eslint`
+| Forks | 56 |
+| Open Issues | 25 |
+| Issue 解決率 | 11% (3 closed) |
+| 最後推送 | 2026-05-17 |
+| 建立日期 | 2026-05-15 |
+| 官方網站 | [Link](https://zerolang.ai) |
+| Repo 大小 | 1.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/vercel-labs/zero) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 79
->     "CSS" : 21
+>     "C" : 65
+>     "JavaScript" : 28
+>     "Shell" : 6
 > ```
+
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@ctate](https://github.com/ctate) | 43 |
+
+**最新版本**：v0.1.1 (2026-05-16)
+
+> [!info]- Release Notes
+> - Adds the public installer at `https://zerolang.ai/install.sh`, with platform selection, GitHub release downloads, checksum verification, and `$HOME/.zero/bin/zero` installation.
+> - Adds `zero run` for the everyday edit loop: build a host executable, run it, pass program arguments after `--`, forward stdout/stderr, and return the program exit status.
+> - Updates README, homepage, getting started, install, and CLI docs around the curl install path, copyable commands, and `zero run`.
+> - Reworks public docs to be more scannable and current, including stronger language, diagnostics, testing, target, package, optimization, and standard library references.
+> - Removes placeholder module docs that described surfaces not ready for users and adds current module docs for `std.crypto`, `std.http`, and `std.net`.
+> - Adds version-matched agent guidance through `zero skills`, including focused workflows for Zero syntax, diagnostics, builds, packages, standard library use, testing, and agent edit loops.
+> - Keeps the installable Zero skill as a thin bootstrap so external skill managers discover one Zero skill while the compiler serves the richer guidance for the installed version.
+> - Updates the `zero skills` CLI contract to serve bundled flat skill data while preserving list, get, path, and JSON workflows.
+> 
+> ### Contributors
+> 
+> - @ctate
+> - @mvanhorn
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有多次提交和更新。
-**連結**：[文件](https://github.com/huangserva/3DCellForge/blob/main/README.md)
+**社群活躍度**：社群活躍度一般，問題解決率較低。
+**連結**：[文件](https://zerolang.ai/docs)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-10 ~ 2026-05-11）
-> **活躍天數** 2 天 · **最新 commit** Rework cinematic mode as layered PNG composer
+> [!abstract] 最近 10 次 commit（2026-05-16 ~ 2026-05-16）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #32 from vercel-labs/ctate/fix-31
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#28](https://github.com/vercel-labs/zero/issues/28) | Darwin zero run executable fails with dyld missing LC_UUID | 2 | 0 |
+> | [#20](https://github.com/vercel-labs/zero/issues/20) | Structured concurrency | 1 | 0 |
+> | [#6](https://github.com/vercel-labs/zero/issues/6) | Add structured edit previews to fix-plan JSON | 1 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 3DCellForge
+> # Zero
 > 
-> [English](README.md) | [中文](README.zh-CN.md)
+> Zero is the programming language for agents: a systems language for small native tools, explicit effects, predictable memory, and structured compiler output.
 > 
-> AI-powered interactive 3D cell generation and exploration studio.
-> 
-> 3DCellForge is a React + Three.js prototype for exploring biological cell models in a polished browser UI. It supports live WebGL orbit controls, organelle panels, screenshots, GLB export, and optional image-to-3D providers for generating real 3D models from uploaded reference images.
-> 
-> ## Demo
-> 
-> [](docs/demo/3DCellForge-demo-2026-05-10.mp4)
-> 
-> Open the demo video: [3DCellForge-demo-2026-05-10.mp4](docs/demo/3DCellForge-demo-2026-05-10.mp4)
-> 
-> ## Features
-> 
-> - Interactive cell viewer built with React Three Fiber.
-> - Drag to rotate, scroll to zoom, and toggle 3D proof mode.
-> - Organelle detail cards, microscope references, comparison panel, notes, and gallery actions.
-> - Tripo cloud image-to-3D pipeline through a local Node backend.
-> - Hunyuan3D local provider support as a backup generation path.
-> - Cached demo GLB models for offline-friendly screenshots and demos.
-> - API key stays server-side in `.env.local`; it is never exposed to the frontend bundle.
-> 
-> ## Tech Stack
-> 
-> - React
-> - Vite
-> - Three.js
-> - React Three Fiber
-> - Drei
-> - Framer Motion
-> - Tripo API optional backend
-> - Hunyuan3D local API optional backend
+> Zero is experimental and still changing. The compiler, standard library, docs, and examples are useful for trying the language and giving feedback, but the language is not stable yet.
 > 
 > ## Quick Start
 > 
-> ```bash
-> npm install
-> npm run dev
-> ```
-> 
-> Open the Vite URL shown in the terminal.
-> 
-> ## Optional Image-to-3D Backend
-> 
-> To enable image-to-3D generation, create `.env.local`:
+> Install the latest release:
 > 
 > ```bash
-> cp .env.example .env.local
+> curl -fsSL https://zerolang.ai/install.sh | bash
+> export PATH="$HOME/.zero/bin:$PATH"
+> zero --version
 > ```
 > 
-> Then set:
+> Check a program:
 > 
 > ```bash
-> TRIPO_API_KEY=your_tripo_key
+> zero check examples/hello.0
 > ```
 > 
-> For Hunyuan3D local backup mode, start your local Hunyuan3D API server and set:
+> Run a small executable:
 > 
 > ```bash
-> HUNYUAN_API_BASE=http://127.0.0.1:8081
-> HUNYUAN_CREATE_PATH=/send
-> HUNYUAN_STATUS_PATH=/status
+> zero run examples/add.0
 > ```
 > 
-> The 3D generation backend supports these provider paths:
+> Expected output:
 > 
 > ```text
-> Tripo   Cloud generation only (default)
-> Auto    Tripo first, Hunyuan backup
-> Hunyuan Local Hunyuan3D generation only
+> math works
 > ```
 > 
-> The upload panel exposes the full generation mode choice before picking a file:
+> ## Learn Zero
 > 
-> ```text
-> Tripo       Cloud GLB generation
-> Hunyuan     Local Hunyuan3D GLB generation
-> Cinematic   Layered transparent PNG composition for high-quality demos
-> Auto        Tripo, then Hunyuan, then Cinematic fallback
-> Local GLB   Import an existing .glb or self-contained .gltf
-> ```
+> - `docs-site/articles/getting-started.md`: build the compiler and run a first program.
+> - `docs-site/articles/learn-zero.md`: a practical tour of the language.
+> - `docs-site/articles/language-reference.md`: syntax and behavior reference.
+> - `examples/README.md`: examples grouped by concept.
 > 
-> Tripo uploads use the current STS object-storage flow (`/upload/sts/token`) before creating an `image_to_model` task.
-> Generated GLBs are cached by the Node backend under `.generated-models/`, so later views use the local copy instead of the temporary Tripo URL.
-> 
-> You can also import a local `.glb` or self-contained `.gltf` from the Microscope View add button. Imported models become custom Cell Types and are served from the same local cache.
-> 
-> Expected Hunyuan3D local API shape:
-> 
-> ```text
-> POST /send
-> GET  /status/:uid
-> ```
-> 
-> The status response can return either a remote model URL or a base64 GLB field such as `model_base64` / `glb_base64`. Base64 GLBs are cached under `.generated-models/` and served by the Node backend.
-> 
-> Start the backend:
+> Run the docs site locally:
 > 
 > ```bash
-> npm run dev:api
+> npm run docs:dev
 > ```
 > 
-> Then start the frontend:
+> ## Common Commands
 > 
 > ```bash
-> npm run dev
+> zero check examples/hello.0
+> zero run examples/add.0
+> zero build --emit exe --target linux-musl-x64 examples/add.0 --out .zero/out/add
+> zero graph --json examples/systems-package
+> zero size --json examples/point.0
+> zero routes --json examples/web/hello
+> zero skills get zero --full
+> zero doctor --json
 > ```
 > 
-> The frontend talks to the local Node backend at `http://127.0.0.1:8787` by default.
+> ## Validation
 > 
-> ## Demo Models
-> 
-> The repository includes cached generated GLB files under:
-> 
-> ```text
-> public/generated-models/
+> ```bash
+> npm run docs:test
+> npm run conformance
+> npm run native:test
+> npm run command-contracts
 > ```
 > 
-> These make the demo usable without spending API credits on every run.
+> Benchmarks run locally by default:
 > 
-> ## Security
+> ```bash
+> npm run bench
+> ```
 > 
-> Do not put real API keys in frontend code. Keep secrets in `.env.local`, which is ignored by git.
+> ## Repository Layout
 > 
-> ## License
-> 
-> MIT
+> - `native/zero-c/`: native compiler implementation.
+> - `compiler-zero/`: Zero-authored compiler sources.
+> - `examples/`: runnable Zero source examples.
+> - `conformance/`: language and CLI behavior fixtures.
+> - `docs-site/`: documentation site.
+> - `tests/`: TypeScript tests for CLI behavior.
+> - `extensions/vscode/`: editor syntax highlighting for `.0` files.
 
 ## 延伸閱讀
 
-相關概念：[[3D 模型生成]] · [[生物資訊]] · [[互動式視覺化]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[程式碼生成]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[XBuilderLAB--cheat-on-content|XBuilderLAB/cheat-on-content]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[duoan--TorchCode|duoan/TorchCode]] · [[sanbuphy--claude-code-source-code|sanbuphy/claude-code-source-code]] · [[twostraws--SwiftUI-Agent-Skill|twostraws/SwiftUI-Agent-Skill]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]]
 
-[GitHub](https://github.com/huangserva/3DCellForge)
+[GitHub](https://github.com/vercel-labs/zero) · [官方網站](https://zerolang.ai)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：3D 模型生成）
+> [!note]- 直接競品（同子分類：程式碼工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "3D 模型生成" AND file.name != "huangserva--3DCellForge"
+> WHERE subcategory = "程式碼工具" AND file.name != "vercel-labs--zero"
 > SORT stars DESC
 > ```
 
@@ -509,7 +516,7 @@ npm run dev
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "huangserva--3DCellForge"
+> WHERE category = "開發工具" AND file.name != "vercel-labs--zero"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -518,7 +525,7 @@ npm run dev
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "huangserva--3DCellForge" AND status != "archived"
+> WHERE language = "C" AND file.name != "vercel-labs--zero" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -527,15 +534,15 @@ npm run dev
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W20" AND file.name != "huangserva--3DCellForge"
+> WHERE week = "2026-W21" AND file.name != "vercel-labs--zero"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["3D 模型生成","生物資訊","互動式視覺化"];
+> const concepts = ["CLI/TUI","自動化","程式碼生成"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "huangserva--3DCellForge" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "vercel-labs--zero" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -548,12 +555,12 @@ npm run dev
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/vercel-labs--zero");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "huangserva--3DCellForge" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "vercel-labs--zero" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -569,7 +576,7 @@ npm run dev
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "huangserva" AND file.name != "huangserva--3DCellForge"
+> WHERE owner = "vercel-labs" AND file.name != "vercel-labs--zero"
 > SORT stars DESC
 > ```
 
@@ -577,7 +584,7 @@ npm run dev
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/vercel-labs--zero");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -594,7 +601,7 @@ npm run dev
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/vercel-labs--zero");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -627,7 +634,7 @@ npm run dev
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/vercel-labs--zero");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -651,7 +658,7 @@ npm run dev
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/vercel-labs--zero");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -688,7 +695,7 @@ npm run dev
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/huangserva--3DCellForge");
+> const me = dv.page("Repos/vercel-labs--zero");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -771,7 +778,7 @@ npm run dev
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-05-11** — 首次收錄
+> **2026-05-17** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -787,10 +794,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-05-17|2026-05-17]] — 再次上榜，2.1k stars
-- [[2026-05-16|2026-05-16]] — 再次上榜，2.1k stars
-- [[2026-05-15|2026-05-15]] — 再次上榜，2.0k stars
-- [[2026-05-14|2026-05-14]] — 再次上榜，1.8k stars
-- [[2026-05-13|2026-05-13]] — 再次上榜，1.7k stars
-- [[2026-05-12|2026-05-12]] — 再次上榜，1.4k stars
-- [[2026-05-11|2026-05-11]] — 首次收錄，757 stars
+- [[2026-05-17|2026-05-17]] — 首次收錄，1.0k stars

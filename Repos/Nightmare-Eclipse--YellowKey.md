@@ -7,10 +7,10 @@ language: N/A
 license: MIT
 description: "YellowKey Bitlocker Bypass Vulnerability"
 homepage: ""
-stars: 2441
-stars_per_day: 814
-forks: 523
-open_issues: 17
+stars: 2851
+stars_per_day: 713
+forks: 598
+open_issues: 22
 created: 2026-05-12
 pushed_at: 2026-05-12
 first_seen: 2026-05-14
@@ -30,8 +30,8 @@ use_case: "繞過 Bitlocker 保護的漏洞利用工具。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-05-19"
+appearances: 4
+next_review: "2026-05-20"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 6
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-14"
-star_history: "2026-05-14:1000,2026-05-14:1002,2026-05-15:1756,2026-05-15:1759,2026-05-16:2435,2026-05-16:2441"
+star_history: "2026-05-14:1000,2026-05-14:1002,2026-05-15:1756,2026-05-15:1759,2026-05-16:2435,2026-05-16:2441,2026-05-17:2851"
 tags:
   - github
   - "category/安全"
@@ -652,6 +652,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-17|2026-05-17]] — 再次上榜，2.9k stars
 - [[2026-05-16|2026-05-16]] — 再次上榜，2.4k stars
 - [[2026-05-15|2026-05-15]] — 再次上榜，1.8k stars
 - [[2026-05-14|2026-05-14]] — 首次收錄，1.0k stars
