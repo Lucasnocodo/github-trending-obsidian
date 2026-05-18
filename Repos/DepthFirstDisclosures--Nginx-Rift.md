@@ -1,65 +1,64 @@
 ---
-repo: cclank/cell-architecture-studio
-url: https://github.com/cclank/cell-architecture-studio
-owner: cclank
+repo: DepthFirstDisclosures/Nginx-Rift
+url: https://github.com/DepthFirstDisclosures/Nginx-Rift
+owner: DepthFirstDisclosures
 owner_type: User
-language: TypeScript
-license: MIT
-description: "Interactive 3D cell architecture gallery built with React and Three.js"
-homepage: "https://cell-architecture-studio-inky.vercel.app"
-stars: 621
-stars_per_day: 104
-forks: 142
-open_issues: 2
-created: 2026-05-10
-pushed_at: 2026-05-11
-first_seen: 2026-05-16
-week: "2026-W20"
+language: Python
+license: N/A
+description: "exploit for CVE-2026-42945"
+homepage: ""
+stars: 674
+stars_per_day: 135
+forks: 113
+open_issues: 4
+created: 2026-05-12
+pushed_at: 2026-05-13
+first_seen: 2026-05-18
+week: "2026-W21"
 month: "2026-05"
-category: "其他"
-subcategory: "教育工具"
+category: "安全"
+subcategory: "漏洞利用"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-05-16
-use_case: "提供互動式的3D細胞架構展示，讓使用者能夠深入了解細胞結構與功能。"
+last_reviewed: 2026-05-18
+use_case: "針對 CVE-2026-42945 的遠端代碼執行漏洞利用工具。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 1
-next_review: "2026-05-23"
+next_review: "2026-05-25"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 98246
-readme_length: 4091
+repo_size_kb: 7
+readme_length: 2007
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-05-16"
-star_history: "2026-05-16:610,2026-05-16:610,2026-05-17:621"
+ring_history: "assess@2026-05-18"
+star_history: "2026-05-18:674"
 tags:
   - github
-  - "category/其他"
-  - "lang/typescript"
-  - easy_install
+  - "category/安全"
+  - "lang/python"
 aliases:
-  - "cell-architecture-studio"
-  - "cclank/cell-architecture-studio"
-  - "提供互動式的3D細胞架構展示，讓使用者能夠深入了解細胞結構與功能。"
+  - "Nginx-Rift"
+  - "DepthFirstDisclosures/Nginx-Rift"
+  - "針對 CVE-2026-42945 的遠端代碼執行漏洞利用工具。"
 ---
 
-# cell-architecture-studio
+# Nginx-Rift
 
-**621** stars · **104** stars/天 · 建立 6 天前 · TypeScript · MIT
+**674** stars · **135** stars/天 · 建立 5 天前 · Python · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/cclank--cell-architecture-studio");
+const me = dv.page("Repos/DepthFirstDisclosures--Nginx-Rift");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `easy-install`
+`個人專案`
 
 > [!summary] 一句話摘要
-> 提供互動式的3D細胞架構展示，讓使用者能夠深入了解細胞結構與功能。
+> 針對 CVE-2026-42945 的遠端代碼執行漏洞利用工具。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (104 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 6 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要互動式學習工具以增強生物學教學效果的教育工作者和學生。
-> **一句話重點** 這個專案不僅是3D細胞展示工具，更是一個結合教育科技的互動學習平台。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (135 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 4 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 專注於 NGINX 安全性測試的安全研究人員和滲透測試工程師。
+> **一句話重點** 這個專案的設計讓安全研究人員能夠快速驗證 NGINX 的漏洞，但在實際使用中可能會遇到不少挑戰。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--cell-architecture-studio");
+> const me = dv.page("Repos/DepthFirstDisclosures--Nginx-Rift");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "教育工具" && p.file.name !== "cclank--cell-architecture-studio" && p.status !== "archived")
+>     .where(p => p.subcategory === "漏洞利用" && p.file.name !== "DepthFirstDisclosures--Nginx-Rift" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,106 +95,111 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 教育工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 漏洞利用 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **安裝** Easy (一行搞定)
+> **安裝** Medium (需設定)
 
 > [!abstract] 核心創新
-> 提供高保真度的3D細胞模型，並結合AI導師面板以增強學習體驗。
+> 這個專案提供了一個針對 NGINX 的特定漏洞的遠端代碼執行利用工具，並且使用了深度學習的安全分析系統來發現漏洞。
 
 ## 專案簡介
 
-Cell Architecture Studio 是一個互動式的3D細胞架構畫廊，使用 React 和 Three.js 建立，讓使用者能夠選擇不同的細胞類型並查看其細節。使用者可以透過網頁介面選擇植物細胞、白血球、神經元等七種細胞樣本，並在高保真度的GLB模型中查看細胞內部結構。這個專案的賣點在於其可視化的學習體驗，結合AI導師面板提供學習提示和掌握追蹤，讓學習變得更有趣。使用者只需執行 `npm install` 安裝依賴，然後用 `npm run dev` 啟動本地開發伺服器，即可在 http://127.0.0.1:5173/ 上訪問應用。這個專案的技術棧包括 React 19、TypeScript、Vite、Three.js 和 React Three Fiber，這些選擇使得專案能夠高效渲染3D模型並保持良好的性能。
+這個專案是針對 NGINX 的 CVE-2026-42945 漏洞的利用工具，該漏洞是一個關鍵的堆緩衝區溢出問題，允許未經身份驗證的遠端代碼執行。利用過程中，攻擊者可以透過 NGINX 的 `rewrite` 和 `set` 指令來觸發這個漏洞。具體而言，NGINX 的腳本引擎在計算緩衝區大小和複製數據時存在不一致，導致在複製過程中溢出。使用者只需執行 `python3 poc.py --shell` 指令即可彈出 shell，這是其最大的賣點。該專案使用 Python 和 Shell 實作，並在 Ubuntu 24.04.3 LTS 上進行測試，依賴 Docker 來啟動易受攻擊的 NGINX 伺服器。
 
-相較於其他同類工具，Cell Architecture Studio 提供了更高的互動性和教育性，特別是在細胞學習和比較方面。它的設計考量了不同設備的響應式布局，確保在桌面和移動設備上都有良好的使用體驗。使用者在使用過程中可能會遇到 Vercel 部署問題，這是目前的熱門問題之一，顯示出專案在部署方面的挑戰。整體來說，這是一個適合教育用途的專案，特別是針對生物學的學習者和教育者。
+相較於其他漏洞利用工具，這個專案的特點在於其針對特定漏洞的專注，並且提供了簡單的使用流程。與其他類似工具相比，這個專案的優勢在於其針對 NGINX 的特定版本進行了優化，並且提供了清晰的使用說明。使用者在使用過程中可能會遇到一些問題，例如硬編碼的參數不適用於所有機器，這在熱門問題中有所反映。該專案的社群活躍度不高，開放問題解決率為 0%，顯示出使用者在實際操作中可能會遇到困難。整體來看，這個專案適合安全研究人員和漏洞利用開發者，但在生產環境中使用時需謹慎考量其穩定性和可靠性。
 
-**技術棧**：`React 19` · `TypeScript` · `Vite` · `Three.js` · `React Three Fiber`
+**技術棧**：`Python` · `Shell` · `Docker`
 
 ## 重點功能
 
-- 七種細胞樣本 — 包括植物細胞、白血球、神經元等，提供多樣化的學習選擇。
-- 高保真GLB渲染 — 確保細胞模型的真實性和細節保留。
-- AI導師面板 — 提供學習提示和掌握追蹤，增強學習互動性。
-- 響應式布局 — 支援桌面和移動設備，確保良好的使用體驗。
-- 視覺驗證 — 使用 Playwright 進行視覺驗證，確保應用的穩定性和可用性。
+- 遠端代碼執行 — 利用 CVE-2026-42945 漏洞，執行未經授權的代碼。
+- 簡單的使用流程 — 只需執行 `python3 poc.py --shell` 即可彈出 shell。
+- Docker 支援 — 提供 Docker 環境以便快速啟動易受攻擊的 NGINX 伺服器。
+- 針對特定版本 — 專注於 NGINX 的特定版本，提供精確的漏洞利用。
+- 活躍的社群 — 雖然開放問題解決率低，但仍有一定的使用者基礎。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 建立容器
 ```bash
-npm install
+./setup.sh
 ```
-2. 啟動本地開發伺服器
+2. 啟動 NGINX 伺服器
 ```bash
-npm run dev
+docker compose -f env/docker-compose.yml up
 ```
-3. 打開應用
+3. 執行漏洞利用
 ```bash
-http://127.0.0.1:5173/
+python3 poc.py --shell
 ```
 
 ## 程式碼範例
 
-```ts
+```python
 {
-  "前置條件": "需要安裝 Node.js 和 npm。",
-  "指令": "npm run dev",
-  "預期輸出": "應用將在 http://127.0.0.1:5173/ 上可用。"
+  "前置條件": "需要在 Ubuntu 24.04.3 LTS 上運行",
+  "指令": "python3 poc.py --shell",
+  "預期輸出": "彈出 shell"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 621 stars（104/天），forks 142（22.9%），這顯示出高達 22.9% 的使用者對此專案進行了實際修改。作者 cclank 在開源社群中活躍，專注於教育性質的互動式應用。這個專案解決了傳統生物學教學中缺乏互動性和視覺化的痛點，讓學習變得更具吸引力。最近的推文和討論可能促進了這個專案的曝光度，並吸引了更多的使用者。技術上，這個專案的成功也反映了使用 Three.js 和 React 結合的趨勢，讓3D渲染變得更為普及。高達 22.9% 的 forks/stars 比率顯示出使用者對專案的高度參與和修改意願。
+> 建立 5 天內累積 674 stars（135/天），forks 113（16.8%），這顯示出相對高的活躍度。作者 Markakd 是安全領域的貢獻者，這個專案解決了 NGINX 中一個長期存在的漏洞，之前的解決方案多數無法有效利用此漏洞。該專案的推出引起了社群的關注，尤其是在安全研究者中。技術上，這個漏洞的發現和利用是基於深度學習的安全分析系統，這使得該工具的可行性大大提高。forks/stars 比率為 16.8%，顯示出許多使用者對此專案有實際的修改和使用需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要互動式學習工具以增強生物學教學效果的教育工作者和學生。
+**目標受眾**：專注於 NGINX 安全性測試的安全研究人員和滲透測試工程師。
 
 > [!example] 使用場景
-> - 生物學教師用它來展示細胞結構，因為互動式3D模型能夠幫助學生更好地理解細胞的功能和組成。
-> - 學生用它來準備生物學考試，因為能夠在3D環境中探索細胞，增強記憶和理解。
-> - 科學研究人員用它來展示研究成果，因為高保真度的細胞模型能夠有效傳達複雜的生物學概念。
+> - 安全研究人員用它來測試 NGINX 伺服器的安全性，因為可以快速驗證 CVE-2026-42945 漏洞的存在。
+> - 滲透測試工程師用它來模擬攻擊，因為能有效地展示 NGINX 的漏洞利用情境。
+> - 開發者用它來學習漏洞利用技術，因為提供了簡單的 PoC 實作範例，易於理解和操作。
 
 ## 架構分析
 
-這個專案採用現代的前端架構，使用 React 和 Vite 來構建應用，這樣的選擇使得開發過程快速且高效。資料流方面，使用 Three.js 和 React Three Fiber 來渲染3D模型，這樣的組合能夠充分利用 React 的組件化優勢，讓3D渲染與UI邏輯分離。專案中使用的GLB模型和程序生成的幾何體確保了在不同情境下的靈活性，這樣的設計使得即使在網路速度較慢的情況下，使用者也能獲得良好的體驗。選擇使用 Playwright 進行視覺驗證，這樣的決策使得專案在穩定性上有了額外的保障，但也增加了開發的複雜度。整體而言，這個架構設計在性能和可擴展性上都有良好的表現，適合未來進一步的功能擴展。
+該專案使用 Docker 來建立一個易受攻擊的 NGINX 環境，並透過 Python 腳本來執行漏洞利用。這樣的設計使得使用者能夠快速部署和測試，而不需要在本地環境中進行複雜的配置。資料流中，使用者首先執行 `setup.sh` 來建立容器，然後啟動 NGINX 伺服器，最後透過 Python 腳本來觸發漏洞。這種設計的代價在於需要 Docker 環境，對於不熟悉 Docker 的使用者來說，可能會增加學習成本。整體架構的擴展性良好，但依賴於 NGINX 的特定版本，未來若有版本更新，可能需要調整相關配置。
 
 ## 技術深入分析
 
-Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js 的結合，這使得3D渲染與前端邏輯能夠無縫整合。專案的資料結構設計允許使用者在不同的細胞模型之間快速切換，並且能夠在不同的設備上保持良好的性能。效能上，這個專案能夠處理大型GLB模型，但在網路速度較慢的情況下，可能會影響加載時間。選擇 TypeScript 進行開發，這不僅提高了代碼的可維護性，也降低了潛在的錯誤率。依賴樹方面，專案的依賴相對輕量，主要集中在 React 和 Three.js 的生態系統中，這使得整體的學習曲線較為平緩。技術風險方面，Vercel 部署問題可能會在未來影響使用者體驗，這需要持續關注和修復。整合方面，這個專案與主流的前端工具鏈（如 Vite 和 Playwright）相容良好，能夠輕鬆融入現有的開發流程。
+該專案的核心技術機制是利用 NGINX 的堆緩衝區溢出漏洞，這個漏洞源於 NGINX 的腳本引擎在處理 `rewrite` 指令時的兩次過程不一致。具體來說，第一個過程計算所需的緩衝區大小，而第二個過程則複製數據。這種設計使得攻擊者可以利用不一致的狀態來觸發溢出。該專案能夠處理的資料量取決於 NGINX 的配置和請求大小，具體的效能數據未提供，但理論上可以處理大量的請求。
+
+選擇 Python 和 Shell 作為開發語言，使得該工具能夠快速開發和部署，並且易於使用。依賴於 Docker 的設計使得該工具能夠在不同環境中保持一致性，但也增加了使用者的學習成本。技術風險方面，這個專案的設計決策可能在未來的 NGINX 更新中出現問題，特別是當 NGINX 的內部實現發生變化時。整合方面，該工具與現有的安全測試工具鏈相容性良好，但對於不熟悉 Docker 的使用者來說，可能需要額外的學習時間。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用說明，對新手友好。安裝過程相對順暢，但目前在 Vercel 的部署存在問題，可能會讓新手感到困惑。整體而言，花 30 分鐘能夠成功啟動本地開發環境，但在部署時可能需要額外的調試。文件目前僅提供英文版本，可能對非英語使用者造成障礙。
+> README 文件清晰，提供了使用範例和安裝步驟。安裝過程相對順暢，但需要 Docker 環境，對於不熟悉 Docker 的使用者來說可能會有些挑戰。文件沒有提供多語言支持，僅有英文版本，可能對非英語使用者造成困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 互動性強，能夠吸引學生的注意力並提高學習效果。
-> - 高保真度的3D模型，能夠真實呈現細胞結構。
-> - 響應式設計，適合各種設備使用。
+> - 提供針對特定漏洞的利用工具，精確性高。
+> - 簡單的使用流程，易於上手。
+> - 支援 Docker，方便快速部署。
+> - 活躍的社群基礎，儘管問題解決率低。
 
 > [!danger] 缺點
-> - 目前在Vercel的部署存在問題，影響可用性。
-> - 尚未完成所有細胞樣本的GLB模型，限制了展示內容。
-> - 需要穩定的網路環境以確保良好的使用體驗。
+> - 僅支援特定版本的 NGINX，限制使用範圍。
+> - 開放問題解決率為 0%，顯示出使用者在實際操作中可能會遇到困難。
+> - 需要 Docker 環境，對於不熟悉 Docker 的使用者來說，可能會增加學習成本。
+> - 存在硬編碼參數，可能不適用於所有機器。
 
 > [!warning] 注意事項
-> - 目前部署在 Vercel 的版本存在問題，可能無法正常運行。
-> - 尚未提供所有細胞樣本的生產質量GLB模型，部分模型仍在開發中。
-> - 需要穩定的網路連接以加載大型GLB資產，否則可能影響使用體驗。
+> - 僅支援特定版本的 NGINX。
+> - 需要 Docker 環境來運行。
+> - 存在硬編碼參數，可能不適用於所有機器。
+> - 開放問題解決率為 0%，顯示出使用者在實際操作中可能會遇到困難。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--cell-architecture-studio");
+> const me = dv.page("Repos/DepthFirstDisclosures--Nginx-Rift");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -230,7 +234,7 @@ Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--cell-architecture-studio");
+> const me = dv.page("Repos/DepthFirstDisclosures--Nginx-Rift");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -254,206 +258,99 @@ Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 142 |
-| Open Issues | 2 |
+| Forks | 113 |
+| Open Issues | 4 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-05-11 |
-| 建立日期 | 2026-05-10 |
-| 官方網站 | [Link](https://cell-architecture-studio-inky.vercel.app) |
-| Repo 大小 | 95.9 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cclank/cell-architecture-studio) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@react-three/drei` `@react-three/fiber` `lucide-react` `react` `react-dom` `three` `@types/node` `@types/pngjs` `@types/react` `@types/react-dom` `@vitejs/plugin-react` `playwright-core` `pngjs` `typescript` `vite`
+| 最後推送 | 2026-05-13 |
+| 建立日期 | 2026-05-12 |
+| Repo 大小 | 7 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/DepthFirstDisclosures/Nginx-Rift) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 68
->     "CSS" : 24
->     "JavaScript" : 8
+>     "Python" : 93
+>     "Shell" : 7
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@cclank](https://github.com/cclank) | 6 |
+> | [@Markakd](https://github.com/Markakd) | 3 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有更新但問題解決率低。
-**連結**：[文件](https://github.com/cclank/cell-architecture-studio#readme)
+**社群活躍度**：社群活躍度不高，開放問題解決率為 0%。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-10 ~ 2026-05-11）
-> **活躍天數** 2 天 · **最新 commit** Add AI tutor learning layer
+> [!abstract] 最近 10 次 commit（2026-05-12 ~ 2026-05-13）
+> **活躍天數** 2 天 · **最新 commit** update readme
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#1](https://github.com/cclank/cell-architecture-studio/issues/1) | The vercel deployment is not working | 0 | 0 |
+> | [#4](https://github.com/DepthFirstDisclosures/Nginx-Rift/issues/4) | Hardcoded HEAP_BASE, LIBC_BASE, and PREREAD_HEAP_OFFSET do n | 1 | 0 |
+> | [#3](https://github.com/DepthFirstDisclosures/Nginx-Rift/issues/3) | wont work its fake | 0 | 0 |
+> | [#2](https://github.com/DepthFirstDisclosures/Nginx-Rift/issues/2) | PoC isn't working | 0 | 1 |
+> | [#1](https://github.com/DepthFirstDisclosures/Nginx-Rift/issues/1) | shell弹不出来 | 0 | 2 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Cell Architecture Studio
+> # NGINX Rift
 > 
-> [](https://cell-architecture-studio-inky.vercel.app)
+> RCE Proof of concept for **CVE-2026-42945**, a critical heap buffer overflow in NGINX's `ngx_http_rewrite_module` introduced in 2008. The bug enables unauthenticated remote code execution against servers using `rewrite` and `set` directives.
 > 
-> An interactive cell architecture gallery built with React, Vite, Three.js, and staged GLB or procedural 3D cell assets. The project recreates a premium educational biology interface with selectable cell types, organelle details, comparison mode, responsive layout, and visual verification coverage.
+> This vulnerability — along with three other memory corruption issues (CVE-2026-42946, CVE-2026-40701, CVE-2026-42934) — was autonomously discovered by [depthfirst](https://depthfirst.com)'s security analysis system after a single click of onboarding the NGINX source.
 > 
-> ## Live Demo
+> > Want to find issues like this in your own code? Try the same system at ****.
 > 
-> [Open the live Vercel deployment](https://cell-architecture-studio-inky.vercel.app)
+> ## The Bug (TL;DR)
 > 
-> [](https://cell-architecture-studio-inky.vercel.app)
+> NGINX's script engine uses a two-pass process: first compute the required buffer size, then copy data in. The `is_args` flag is set on the main engine when a `rewrite` replacement contains `?`, but the length-calculation pass runs on a freshly zeroed sub-engine. So:
 > 
-> [View the MP4 demo file](docs/media/cell-architecture-studio-demo.mp4)
+> - **Length pass** sees `is_args = 0` → returns raw capture length.
+> - **Copy pass** sees `is_args = 1` → calls `ngx_escape_uri` with `NGX_ESCAPE_ARGS`, expanding each escapable byte to 3 bytes.
 > 
-> ## Highlights
+> The copy overflows the undersized heap buffer with attacker-controlled URI data. Exploitation uses cross-request heap feng shui to corrupt an adjacent `ngx_pool_t`'s `cleanup` pointer (sprayed via POST bodies, since URI bytes can't contain null bytes), redirecting it to a fake `ngx_pool_cleanup_s` invoking `system()` on pool destruction.
 > 
-> - Seven specimen views: plant cell, white blood cell, neuron, epithelial cell, bacteria cell, animal cell, and muscle cell.
-> - High fidelity Plant Cell and White Blood Cell GLB rendering with native texture preservation.
-> - Mesh first experience with 3D canvas rendering as the default view.
-> - AI Tutor panel with learning prompts, lesson focus, and mastery tracking.
-> - Model loading overlay for large GLB assets on slower networks.
-> - Procedural fallback geometry for specimens that do not yet have production GLB assets.
-> - Detail panel for organelles, microscope modes, specimen metadata, and comparison workflow.
-> - Responsive desktop, compact, and mobile layouts with browser screenshot verification.
+> Read more about this bug in our [technical write-up](https://depthfirst.com/research/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability).
 > 
-> ## Preview Modes
+> ## Affected & Fixed Versions
 > 
-> | Mode | Purpose |
-> | --- | --- |
-> | Mesh | Loads available GLB models or procedural Three.js geometry. |
-> | Focus | Emphasizes selected organelles and supporting biological details. |
+> | Product | Affected | Fixed in |
+> | --- | --- | --- |
+> | NGINX Open Source | 0.6.27 – 1.30.0 | 1.31.0, 1.30.1 |
+> | NGINX Plus | R32 – R36 | R36 P4, R35 P2, R32 P6 |
 > 
-> ## Tech Stack
+> Full vendor advisory: 
 > 
-> | Layer | Tools |
-> | --- | --- |
-> | App | React 19, TypeScript, Vite |
-> | 3D | Three.js, React Three Fiber, Drei |
-> | UI | CSS modules in `src/styles.css`, Lucide icons |
-> | Assets | GLB models, transparent PNG thumbnails, NIH previews |
-> | Verification | Playwright Core, PNG pixel metrics |
+> ## Usage
 > 
-> ## Project Structure
+> Tested on Ubuntu 24.04.3 LTS.
 > 
-> ```text
-> .
-> |-- docs/
-> |   |-- media/
-> |   `-- ASSETS.md
-> |-- public/
-> |   |-- cell-renders/
-> |   |-- cell-renders-transparent/
-> |   |-- models/
-> |   `-- nih-previews/
-> |-- scripts/
-> |   `-- verify.mjs
-> `-- src/
->     |-- App.tsx
->     |-- components/
->     |-- data/
->     `-- styles.css
-> ```
-> 
-> ## Getting Started
-> 
-> Install dependencies:
-> 
-> ```bash
-> npm install
-> ```
-> 
-> Run the local development server:
-> 
-> ```bash
-> npm run dev
-> ```
-> 
-> Open the app:
-> 
-> ```text
-> http://127.0.0.1:5173/
-> ```
-> 
-> Build for production:
-> 
-> ```bash
-> npm run build
-> ```
-> 
-> Run visual verification:
-> 
-> ```bash
-> npm run verify
-> ```
-> 
-> ## Asset Notes
-> 
-> The highest fidelity specimens are loaded from `public/models/` and configured in `src/data/cells.ts`.
-> 
-> | Specimen | Current asset |
-> | --- | --- |
-> | Plant Cell | `public/models/plant-cell-first001.glb` |
-> | White Blood Cell | `public/models/white-blood-cell-user.glb` |
-> | Animal Cell | `public/models/animal-cell-nih.glb` |
-> | Neuron | `public/models/neuron-nih.glb` |
-> | Bacteria Wall | `public/models/bacteria-wall-nih.glb` |
-> 
-> Transparent PNG references in `public/cell-renders-transparent/` are used for thumbnails and model previews. Detailed provenance is tracked in `docs/ASSETS.md`.
-> 
-> ## Verification
-> 
-> `npm run verify` launches the local app, captures desktop, compact, mobile, and interaction screenshots, then checks canvas pixel metrics to catch blank renders or major layout regressions.
-> 
-> Current coverage includes:
-> 
-> - Desktop, compact, and mobile smoke checks.
-> - Plant Cell GLB render check.
-> - White Blood Cell GLB render check.
-> - Bacteria mesh interaction check.
-> - Comparison modal check.
-> 
-> ## Roadmap
-> 
-> - Add production quality GLB models for the remaining specimens.
-> - Add lazy loading and route level code splitting for 3D bundles.
-> - Expand educational annotations for each organelle.
-> - Add screenshot export and 3D export workflows.
-> - Add asset license metadata directly into the UI.
-> 
-> ## License
-> 
-> The application code is licensed under the MIT License. Included GLB models and image assets retain their documented provenance in `docs/ASSETS.md`.
-> 
-> ## Credits
-> 
-> Special thanks to the original creator [@DilumSanjaya](https://x.com/DilumSanjaya) for the source inspiration and visual direction.
-> 
-> Additional 3D model provenance is documented in `docs/ASSETS.md`.
+> 1. `./setup.sh` — build the container.
+> 2. `docker compose -f env/docker-compose.yml up` — start the vulnerable NGINX server.
+> 3. `python3 poc.py --shell` — pop a shell.
 
 ## 延伸閱讀
 
-相關概念：[[3D 渲染]] · [[互動式學習]] · [[教育科技]]
+相關概念：[[安全漏洞]] · [[遠端代碼執行]] · [[滲透測試]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[XBuilderLAB--cheat-on-content|XBuilderLAB/cheat-on-content]]
+相關專案：[[Nightmare-Eclipse--RedSun|Nightmare-Eclipse/RedSun]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[opa334--darksword-kexploit|opa334/darksword-kexploit]] · [[Nightmare-Eclipse--YellowKey|Nightmare-Eclipse/YellowKey]]
 
-[GitHub](https://github.com/cclank/cell-architecture-studio) · [官方網站](https://cell-architecture-studio-inky.vercel.app)
+[GitHub](https://github.com/DepthFirstDisclosures/Nginx-Rift)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：教育工具）
+> [!note]- 直接競品（同子分類：漏洞利用）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "教育工具" AND file.name != "cclank--cell-architecture-studio"
+> WHERE subcategory = "漏洞利用" AND file.name != "DepthFirstDisclosures--Nginx-Rift"
 > SORT stars DESC
 > ```
 
@@ -461,7 +358,7 @@ Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "cclank--cell-architecture-studio"
+> WHERE category = "安全" AND file.name != "DepthFirstDisclosures--Nginx-Rift"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -470,7 +367,7 @@ Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "cclank--cell-architecture-studio" AND status != "archived"
+> WHERE language = "Python" AND file.name != "DepthFirstDisclosures--Nginx-Rift" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -479,15 +376,15 @@ Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W20" AND file.name != "cclank--cell-architecture-studio"
+> WHERE week = "2026-W21" AND file.name != "DepthFirstDisclosures--Nginx-Rift"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["3D 渲染","互動式學習","教育科技"];
+> const concepts = ["安全漏洞","遠端代碼執行","滲透測試"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "cclank--cell-architecture-studio" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "DepthFirstDisclosures--Nginx-Rift" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -500,12 +397,12 @@ Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--cell-architecture-studio");
+> const me = dv.page("Repos/DepthFirstDisclosures--Nginx-Rift");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "cclank--cell-architecture-studio" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "DepthFirstDisclosures--Nginx-Rift" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -521,7 +418,7 @@ Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "cclank" AND file.name != "cclank--cell-architecture-studio"
+> WHERE owner = "DepthFirstDisclosures" AND file.name != "DepthFirstDisclosures--Nginx-Rift"
 > SORT stars DESC
 > ```
 
@@ -529,7 +426,7 @@ Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--cell-architecture-studio");
+> const me = dv.page("Repos/DepthFirstDisclosures--Nginx-Rift");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -546,7 +443,7 @@ Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--cell-architecture-studio");
+> const me = dv.page("Repos/DepthFirstDisclosures--Nginx-Rift");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -579,7 +476,7 @@ Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--cell-architecture-studio");
+> const me = dv.page("Repos/DepthFirstDisclosures--Nginx-Rift");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -603,7 +500,7 @@ Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--cell-architecture-studio");
+> const me = dv.page("Repos/DepthFirstDisclosures--Nginx-Rift");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -640,7 +537,7 @@ Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--cell-architecture-studio");
+> const me = dv.page("Repos/DepthFirstDisclosures--Nginx-Rift");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -723,7 +620,7 @@ Cell Architecture Studio 的核心技術機制在於其使用 React 和 Three.js
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-05-16** — 首次收錄
+> **2026-05-18** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -739,4 +636,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-05-16|2026-05-16]] — 首次收錄，610 stars
+- [[2026-05-18|2026-05-18]] — 首次收錄，674 stars

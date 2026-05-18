@@ -7,12 +7,12 @@ language: N/A
 license: Apache-2.0
 description: "A 股全栈数据工具包 — 6层架构 · 15个端点 · 7个数据源 | AI Skill for China A-Share Market Data"
 homepage: ""
-stars: 991
-stars_per_day: 165
-forks: 232
-open_issues: 2
+stars: 1105
+stars_per_day: 158
+forks: 259
+open_issues: 1
 created: 2026-05-11
-pushed_at: 2026-05-12
+pushed_at: 2026-05-17
 first_seen: 2026-05-15
 week: "2026-W20"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "整合多個數據源的 A 股市場數據工具包，提供即時數
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-05-24"
+appearances: 4
+next_review: "2026-05-25"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-15"
-star_history: "2026-05-15:706,2026-05-16:882,2026-05-17:991"
+star_history: "2026-05-15:706,2026-05-16:882,2026-05-17:991,2026-05-18:1105"
 tags:
   - github
   - "category/資料科學"
@@ -998,6 +998,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-18|2026-05-18]] — 再次上榜，1.1k stars
 - [[2026-05-17|2026-05-17]] — 再次上榜，991 stars
 - [[2026-05-16|2026-05-16]] — 再次上榜，882 stars
 - [[2026-05-15|2026-05-15]] — 首次收錄，706 stars

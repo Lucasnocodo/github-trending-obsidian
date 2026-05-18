@@ -7,9 +7,9 @@ language: Python
 license: N/A
 description: ""
 homepage: ""
-stars: 902
-stars_per_day: 226
-forks: 535
+stars: 921
+stars_per_day: 184
+forks: 539
 open_issues: 5
 created: 2026-05-12
 pushed_at: 2026-05-13
@@ -30,8 +30,8 @@ use_case: "自動化 ChatGPT Plus 訂閱工具，透過 GoPay 完成支付。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-05-20"
+appearances: 5
+next_review: "2026-05-25"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 20
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-14"
-star_history: "2026-05-14:712,2026-05-15:793,2026-05-16:876,2026-05-17:902"
+star_history: "2026-05-14:712,2026-05-15:793,2026-05-16:876,2026-05-17:902,2026-05-18:921"
 tags:
   - github
   - "category/開發工具"
@@ -1066,6 +1066,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-18|2026-05-18]] — 再次上榜，921 stars
 - [[2026-05-17|2026-05-17]] — 再次上榜，902 stars
 - [[2026-05-16|2026-05-16]] — 再次上榜，876 stars
 - [[2026-05-15|2026-05-15]] — 再次上榜，793 stars

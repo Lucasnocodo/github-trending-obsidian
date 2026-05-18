@@ -1646,10 +1646,10 @@
   },
   "FULU-Foundation/OrcaSlicer-bambulab": {
     "first_seen": "2026-05-13",
-    "last_seen": "2026-05-17",
-    "times_seen": 5,
+    "last_seen": "2026-05-18",
+    "times_seen": 6,
     "stars_first": 1168,
-    "stars_last": 5361
+    "stars_last": 5724
   },
   "pixel-point/media-downloader": {
     "first_seen": "2026-05-13",
@@ -1660,24 +1660,24 @@
   },
   "Nightmare-Eclipse/YellowKey": {
     "first_seen": "2026-05-14",
-    "last_seen": "2026-05-17",
-    "times_seen": 4,
+    "last_seen": "2026-05-18",
+    "times_seen": 5,
     "stars_first": 1000,
-    "stars_last": 2851
+    "stars_last": 3157
   },
   "ywnd1144/Gopay_plus_automatic": {
     "first_seen": "2026-05-14",
-    "last_seen": "2026-05-17",
-    "times_seen": 4,
+    "last_seen": "2026-05-18",
+    "times_seen": 5,
     "stars_first": 712,
-    "stars_last": 902
+    "stars_last": 921
   },
   "HermannBjorgvin/Clawdmeter": {
     "first_seen": "2026-05-14",
-    "last_seen": "2026-05-17",
-    "times_seen": 4,
+    "last_seen": "2026-05-18",
+    "times_seen": 5,
     "stars_first": 683,
-    "stars_last": 1086
+    "stars_last": 1136
   },
   "haydenbleasel/files-sdk": {
     "first_seen": "2026-05-14",
@@ -1702,17 +1702,17 @@
   },
   "nexu-io/html-anything": {
     "first_seen": "2026-05-15",
-    "last_seen": "2026-05-17",
-    "times_seen": 3,
+    "last_seen": "2026-05-18",
+    "times_seen": 4,
     "stars_first": 930,
-    "stars_last": 2456
+    "stars_last": 2805
   },
   "simonlin1212/a-stock-data": {
     "first_seen": "2026-05-15",
-    "last_seen": "2026-05-17",
-    "times_seen": 3,
+    "last_seen": "2026-05-18",
+    "times_seen": 4,
     "stars_first": 706,
-    "stars_last": 991
+    "stars_last": 1105
   },
   "TencentARC/Pixal3D": {
     "first_seen": "2026-05-15",
@@ -1723,10 +1723,10 @@
   },
   "yetone/native-feel-skill": {
     "first_seen": "2026-05-16",
-    "last_seen": "2026-05-17",
-    "times_seen": 2,
+    "last_seen": "2026-05-18",
+    "times_seen": 3,
     "stars_first": 1066,
-    "stars_last": 1230
+    "stars_last": 1276
   },
   "cclank/cell-architecture-studio": {
     "first_seen": "2026-05-16",
@@ -1737,9 +1737,23 @@
   },
   "vercel-labs/zero": {
     "first_seen": "2026-05-17",
-    "last_seen": "2026-05-17",
-    "times_seen": 1,
+    "last_seen": "2026-05-18",
+    "times_seen": 2,
     "stars_first": 1030,
-    "stars_last": 1030
+    "stars_last": 1697
+  },
+  "DenisSergeevitch/agents-best-practices": {
+    "first_seen": "2026-05-18",
+    "last_seen": "2026-05-18",
+    "times_seen": 1,
+    "stars_first": 721,
+    "stars_last": 721
+  },
+  "DepthFirstDisclosures/Nginx-Rift": {
+    "first_seen": "2026-05-18",
+    "last_seen": "2026-05-18",
+    "times_seen": 1,
+    "stars_first": 674,
+    "stars_last": 674
   }
 }

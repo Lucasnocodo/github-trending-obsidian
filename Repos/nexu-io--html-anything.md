@@ -7,12 +7,12 @@ language: HTML
 license: Apache-2.0
 description: "✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it. 🚀 75 Skills × 9 Surfaces (magazine · deck · poster · XHS / tweet · prototype · data report · Hyperframes) 🛡️ Sandboxed preview · 📤 1-click to WeChat / X / Zhihu / HTML / PNG 🔑 Zero API key — Claude Code / Cursor / Codex / Gemini / Copilot / OpenCode / Qwen / Aider."
 homepage: ""
-stars: 2456
-stars_per_day: 491
-forks: 287
-open_issues: 26
+stars: 2805
+stars_per_day: 468
+forks: 334
+open_issues: 25
 created: 2026-05-11
-pushed_at: 2026-05-16
+pushed_at: 2026-05-17
 first_seen: 2026-05-15
 week: "2026-W20"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "讓你的本地 AI 代理自動生成 HTML，無需手動編輯，快
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-05-20"
+appearances: 4
+next_review: "2026-05-21"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 29
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-15"
-star_history: "2026-05-15:930,2026-05-16:1989,2026-05-17:2456"
+star_history: "2026-05-15:930,2026-05-16:1989,2026-05-17:2456,2026-05-18:2805"
 tags:
   - github
   - "category/開發工具"
@@ -822,6 +822,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-18|2026-05-18]] — 再次上榜，2.8k stars
 - [[2026-05-17|2026-05-17]] — 再次上榜，2.5k stars
 - [[2026-05-16|2026-05-16]] — 再次上榜，2.0k stars
 - [[2026-05-15|2026-05-15]] — 首次收錄，930 stars
