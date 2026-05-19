@@ -7,9 +7,9 @@ language: N/A
 license: MIT
 description: "Provider-neutral Agent Skill for Codex, Claude Code, and agentic harness design."
 homepage: ""
-stars: 721
-stars_per_day: 361
-forks: 60
+stars: 816
+stars_per_day: 272
+forks: 71
 open_issues: 4
 created: 2026-05-15
 pushed_at: 2026-05-15
@@ -30,8 +30,8 @@ use_case: "提供一個中立的代理技能，設計、生成 MVP 藍圖，並�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-21"
+appearances: 2
+next_review: "2026-05-22"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-18"
-star_history: "2026-05-18:721,2026-05-18:721"
+star_history: "2026-05-18:721,2026-05-18:721,2026-05-19:816"
 tags:
   - github
   - "category/ai_ml"
@@ -850,4 +850,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-19|2026-05-19]] — 再次上榜，816 stars
 - [[2026-05-18|2026-05-18]] — 首次收錄，721 stars

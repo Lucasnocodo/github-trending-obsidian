@@ -1660,17 +1660,17 @@
   },
   "Nightmare-Eclipse/YellowKey": {
     "first_seen": "2026-05-14",
-    "last_seen": "2026-05-18",
-    "times_seen": 5,
+    "last_seen": "2026-05-19",
+    "times_seen": 6,
     "stars_first": 1000,
-    "stars_last": 3157
+    "stars_last": 3419
   },
   "ywnd1144/Gopay_plus_automatic": {
     "first_seen": "2026-05-14",
-    "last_seen": "2026-05-18",
-    "times_seen": 5,
+    "last_seen": "2026-05-19",
+    "times_seen": 6,
     "stars_first": 712,
-    "stars_last": 921
+    "stars_last": 934
   },
   "HermannBjorgvin/Clawdmeter": {
     "first_seen": "2026-05-14",
@@ -1723,10 +1723,10 @@
   },
   "yetone/native-feel-skill": {
     "first_seen": "2026-05-16",
-    "last_seen": "2026-05-18",
-    "times_seen": 3,
+    "last_seen": "2026-05-19",
+    "times_seen": 4,
     "stars_first": 1066,
-    "stars_last": 1276
+    "stars_last": 1310
   },
   "cclank/cell-architecture-studio": {
     "first_seen": "2026-05-16",
@@ -1737,17 +1737,17 @@
   },
   "vercel-labs/zero": {
     "first_seen": "2026-05-17",
-    "last_seen": "2026-05-18",
-    "times_seen": 2,
+    "last_seen": "2026-05-19",
+    "times_seen": 3,
     "stars_first": 1030,
-    "stars_last": 1697
+    "stars_last": 2302
   },
   "DenisSergeevitch/agents-best-practices": {
     "first_seen": "2026-05-18",
-    "last_seen": "2026-05-18",
-    "times_seen": 1,
+    "last_seen": "2026-05-19",
+    "times_seen": 2,
     "stars_first": 721,
-    "stars_last": 721
+    "stars_last": 816
   },
   "DepthFirstDisclosures/Nginx-Rift": {
     "first_seen": "2026-05-18",
@@ -1755,5 +1755,40 @@
     "times_seen": 1,
     "stars_first": 674,
     "stars_last": 674
+  },
+  "facebookresearch/vggt-omega": {
+    "first_seen": "2026-05-19",
+    "last_seen": "2026-05-19",
+    "times_seen": 1,
+    "stars_first": 984,
+    "stars_last": 984
+  },
+  "TriangleFalcon/KMS-Tools-Portable-2026-Last-Version": {
+    "first_seen": "2026-05-19",
+    "last_seen": "2026-05-19",
+    "times_seen": 1,
+    "stars_first": 778,
+    "stars_last": 778
+  },
+  "DuskMosquito/Lossless-Scaling-Desktop-2026": {
+    "first_seen": "2026-05-19",
+    "last_seen": "2026-05-19",
+    "times_seen": 1,
+    "stars_first": 776,
+    "stars_last": 776
+  },
+  "Kappaemme-git/codex-complexity-optimizer": {
+    "first_seen": "2026-05-19",
+    "last_seen": "2026-05-19",
+    "times_seen": 1,
+    "stars_first": 749,
+    "stars_last": 749
+  },
+  "gi-dellav/zerostack": {
+    "first_seen": "2026-05-19",
+    "last_seen": "2026-05-19",
+    "times_seen": 1,
+    "stars_first": 726,
+    "stars_last": 726
   }
 }
