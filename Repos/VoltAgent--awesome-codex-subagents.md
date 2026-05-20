@@ -7,26 +7,26 @@ language: N/A
 license: MIT
 description: "A collection of 130+ specialized Codex subagents covering a wide range of development use cases."
 homepage: "https://github.com/VoltAgent/voltagent"
-stars: 4750
-stars_per_day: 77
-forks: 543
+stars: 4781
+stars_per_day: 76
+forks: 544
 open_issues: 11
 created: 2026-03-17
 pushed_at: 2026-03-20
 first_seen: 2026-03-20
 week: "2026-W12"
 month: "2026-03"
-category: "AI/ML"
-subcategory: "Codex 子代理"
+category: "開發工具"
+subcategory: "AI 助手"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-03-20
-use_case: "提供 130 多個專門的 Codex 子代理，涵蓋各種開發使用案例。"
+use_case: "提供 130 多個專門的 Codex 子代理，涵蓋廣泛的開發用例。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,12 +42,13 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-03-20"
-star_history: "2026-03-20:1509,2026-03-20:1514,2026-03-21:1841,2026-03-21:1843,2026-03-22:1981,2026-03-22:1982,2026-03-23:2071,2026-03-23:2074,2026-03-24:2275,2026-03-24:2282,2026-03-25:2447,2026-03-26:2669,2026-03-27:2843,2026-03-28:2941,2026-03-29:3000,2026-03-30:3056,2026-03-31:3119,2026-04-01:3246,2026-04-02:3368,2026-04-03:3434,2026-04-04:3469,2026-04-05:3501,2026-04-06:3530,2026-04-07:3566,2026-04-08:3601,2026-04-09:3686,2026-04-10:3757,2026-04-11:3800,2026-04-12:3827,2026-04-13:3853,2026-04-14:3892,2026-04-15:3933,2026-04-16:3973,2026-04-17:4020,2026-04-18:4044,2026-04-19:4063,2026-04-20:4093,2026-04-21:4113,2026-04-22:4148,2026-04-23:4175,2026-04-24:4209,2026-04-25:4229,2026-04-26:4247,2026-04-27:4270,2026-04-28:4296,2026-04-29:4321,2026-04-30:4352,2026-05-01:4375,2026-05-02:4392,2026-05-03:4409,2026-05-04:4424,2026-05-05:4439,2026-05-06:4456,2026-05-07:4471,2026-05-08:4487,2026-05-09:4506,2026-05-10:4532,2026-05-11:4549,2026-05-12:4571,2026-05-13:4589,2026-05-14:4635,2026-05-15:4669,2026-05-16:4690,2026-05-17:4712,2026-05-18:4734,2026-05-19:4750"
+star_history: "2026-03-20:1509,2026-03-20:1514,2026-03-21:1841,2026-03-21:1843,2026-03-22:1981,2026-03-22:1982,2026-03-23:2071,2026-03-23:2074,2026-03-24:2275,2026-03-24:2282,2026-03-25:2447,2026-03-26:2669,2026-03-27:2843,2026-03-28:2941,2026-03-29:3000,2026-03-30:3056,2026-03-31:3119,2026-04-01:3246,2026-04-02:3368,2026-04-03:3434,2026-04-04:3469,2026-04-05:3501,2026-04-06:3530,2026-04-07:3566,2026-04-08:3601,2026-04-09:3686,2026-04-10:3757,2026-04-11:3800,2026-04-12:3827,2026-04-13:3853,2026-04-14:3892,2026-04-15:3933,2026-04-16:3973,2026-04-17:4020,2026-04-18:4044,2026-04-19:4063,2026-04-20:4093,2026-04-21:4113,2026-04-22:4148,2026-04-23:4175,2026-04-24:4209,2026-04-25:4229,2026-04-26:4247,2026-04-27:4270,2026-04-28:4296,2026-04-29:4321,2026-04-30:4352,2026-05-01:4375,2026-05-02:4392,2026-05-03:4409,2026-05-04:4424,2026-05-05:4439,2026-05-06:4456,2026-05-07:4471,2026-05-08:4487,2026-05-09:4506,2026-05-10:4532,2026-05-11:4549,2026-05-12:4571,2026-05-13:4589,2026-05-14:4635,2026-05-15:4669,2026-05-16:4690,2026-05-17:4712,2026-05-18:4734,2026-05-19:4750,2026-05-20:4781"
 tags:
   - github
-  - "category/ai_ml"
+  - "category/開發工具"
   - "lang/other"
   - org
+  - easy_install
   - "topic/ai_agents"
   - "topic/awesome_list"
   - "topic/chatgpt"
@@ -56,12 +57,12 @@ tags:
 aliases:
   - "awesome-codex-subagents"
   - "VoltAgent/awesome-codex-subagents"
-  - "提供 130 多個專門的 Codex 子代理，涵蓋各種開發使用案例。"
+  - "提供 130 多個專門的 Codex 子代理，涵蓋廣泛的開發用例。"
 ---
 
 # awesome-codex-subagents
 
-**4.8k** stars · **77** stars/天 · 建立 62 天前 · N/A · MIT
+**4.8k** stars · **76** stars/天 · 建立 63 天前 · N/A · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/VoltAgent--awesome-codex-subagents");
@@ -74,25 +75,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`ORG`
+`ORG` `easy-install`
 
 `ai-agents` `awesome-list` `chatgpt` `codex` `codex-skills` `codex-subagents` `subagents`
 
 > [!summary] 一句話摘要
-> 提供 130 多個專門的 Codex 子代理，涵蓋各種開發使用案例。
+> 提供 130 多個專門的 Codex 子代理，涵蓋廣泛的開發用例。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Growing · **熱度** Growing (77 stars/day)
-> **授權** MIT (商業友好) · **維護** Slow (最後推送 59 天前) · **貢獻者** 2 人 · **參與度** Medium
-> **適合** 需要在開發過程中使用專業 AI 助手來提升效率的軟體開發團隊。
-> **一句話重點** 這個專案提供了針對開發者需求的專業化 AI 助手，顯著提升開發效率。
+> **安裝難度** Easy · **專案狀態** Growing · **熱度** Growing (76 stars/day)
+> **授權** MIT (商業友好) · **維護** Slow (最後推送 60 天前) · **貢獻者** 2 人 · **參與度** Medium
+> **適合** 需要高效開發流程並希望利用 AI 助手提升工作效率的中大型開發團隊。
+> **一句話重點** 這個專案的價值在於提供了一個專業化的 Codex 子代理集合，能夠顯著提升開發效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/VoltAgent--awesome-codex-subagents");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "Codex 子代理" && p.file.name !== "VoltAgent--awesome-codex-subagents" && p.status !== "archived")
+>     .where(p => p.subcategory === "AI 助手" && p.file.name !== "VoltAgent--awesome-codex-subagents" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,163 +104,99 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 Codex 子代理 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 AI 助手 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到針對開發任務的專業 AI 支援，值得一試。
+> **安裝** Easy (一行搞定)
 
 > [!abstract] 核心創新
-> 這個專案的創新在於提供了一個專門針對 Codex 的子代理集合，能夠針對特定開發任務提供專業的 AI 支援。
+> 這個專案提供了一個全面的 Codex 子代理集合，專為特定開發任務設計，提升了開發效率。
 
 ## 專案簡介
 
-這個專案是一個專門為 Codex 設計的子代理集合，包含超過 130 種針對特定開發任務的 AI 助手。用戶可以通過將 `.toml` 格式的子代理文件複製到指定的目錄，來擴展 Codex 的功能。這些子代理可以在不同的開發場景中被調用，例如 PR 審查、錯誤調查和代碼規劃等，提供專業的知識和建議。每個子代理都包含一個 `model` 字段，根據任務的需求自動選擇合適的模型，這樣可以在質量和成本之間取得平衡。
+這個專案是 Codex 子代理的集合，專為特定開發任務設計，包含超過 130 種不同的子代理，分為 10 個類別。用戶可以透過將 `.toml` 配置文件放入指定的目錄來安裝這些子代理，並在 Codex 中使用它們進行特定任務，例如 PR 審查或錯誤調查。這些子代理的設計考量了不同的使用場景，並且可以根據任務的需求自動選擇合適的模型，像是 `gpt-5.4` 用於深度推理，而 `gpt-5.3-codex-spark` 則適合快速掃描和輕量研究。這樣的設計使得開發者能夠更有效率地完成工作，並且減少了手動配置的需求。與其他工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，這個專案提供了更為專業的子代理，能夠針對特定的開發任務進行優化，並且支持更廣泛的開發語言和框架。
 
-這種設計使得開發者能夠快速獲得針對特定問題的解決方案，而不必每次都從頭開始。與其他通用的 AI 工具相比，這些專門的子代理能夠提供更高的準確性和效率，特別是在需要深度專業知識的情況下。這個專案的結構清晰，並且提供了多種範例工作流程，讓開發者能夠輕鬆上手。整體來說，這是一個針對開發者需求量身打造的工具，能夠顯著提升開發效率。
+使用者可以在多個專案中重複使用全局子代理，並且在遇到命名衝突時，專案特定的子代理會優先使用。這樣的靈活性使得它在大型專案中尤為有用，特別是在需要多個開發人員協作的情況下。社群活躍度不錯，開放問題數量相對較少，顯示出維護者對專案的投入。整體來說，這是一個值得考慮的工具，特別是對於需要高效開發流程的團隊。
 
 ## 重點功能
 
-- 多種專業子代理 — 包含針對 API 設計、後端開發、前端開發等多個領域的子代理。
-- 自動模型路由 — 根據任務自動選擇合適的 Codex 模型，平衡質量和成本。
-- 靈活的子代理配置 — 使用 `.toml` 格式，易於管理和擴展。
-- 範例工作流程 — 提供多種實際的工作流程範例，幫助用戶快速上手。
-- 沙盒模式 — 控制子代理的檔案系統存取，確保安全性。
+- 多種專業子代理 — 超過 130 種子代理，涵蓋核心開發、語言專家和研究分析等多個領域。
+- 靈活的安裝方式 — 透過簡單的 `.toml` 配置文件，輕鬆在專案中安裝和使用子代理。
+- 智能模型路由 — 根據任務自動選擇合適的模型，提升效率和準確性。
+- 沙盒模式控制 — 子代理可設定為只讀或可寫，根據任務需求調整權限。
+- 多種工作流程範例 — 提供實際的工作流程範例，幫助用戶快速上手。
 
 ## 快速開始
 
-1. 克隆此倉庫
+1. 克隆這個倉庫
 ```bash
 git clone https://github.com/VoltAgent/awesome-codex-subagents.git
 ```
-2. 將所需的子代理文件複製到指定目錄
+2. 將所需的子代理配置文件複製到全局或專案目錄
 ```bash
 cp categories/01-core-development/backend-developer.toml ~/.codex/agents/
 ```
 3. 重啟或刷新 Codex 會話
 ```bash
-# 依據需要重啟 Codex
+# 依據需要進行操作
+```
+4. 在提示中明確指定使用的子代理
+```bash
+# 例如：使用 'backend-developer' 進行開發
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 62 天內累積 4750 stars（77/天），forks 543（11.4%），這顯示出強勁的增長潛力。專案的主要貢獻者有過往的開發經驗，並且解決了開發者在使用 Codex 時缺乏專業子代理的痛點。這些子代理能夠針對特定任務提供更高效的解決方案，之前的工具往往無法滿足這種需求。此外，社群的活躍度也反映在開放的問題和合併請求上，顯示出使用者對這個專案的關注和參與。
+> 建立 63 天內累積 4781 stars（每天 76），forks 544（11.4%），顯示出相對穩定的增長。這個專案的主要貢獻者 necatiozmen 和 haoxianhan 在 AI 和開發工具領域有豐富的經驗，之前的專案也受到廣泛關注。該專案解決了開發過程中對於專業化子代理的需求，之前的解決方案往往缺乏針對性和靈活性。社群的活躍度和開放問題的數量也顯示出這個專案在實際使用中的有效性。這些因素共同促成了它的快速成長。
 
 ## 適合誰使用
 
-**目標受眾**：需要在開發過程中使用專業 AI 助手來提升效率的軟體開發團隊。
+**目標受眾**：需要高效開發流程並希望利用 AI 助手提升工作效率的中大型開發團隊。
 
 > [!example] 使用場景
-> - 後端工程師用它來自動化 PR 審查流程，因為可以同時調用多個子代理來檢查代碼的正確性和安全性。
-> - 前端開發者用它來快速定位和修復 UI 問題，因為子代理能夠提供針對特定問題的最小修補建議。
-> - 項目經理用它來規劃代碼重構，因為能夠快速獲得關於現有設計的總結和改進建議。
+> - 後端工程師用它來進行 PR 審查，因為可以利用專門的 reviewer 子代理來檢查正確性和安全性，提升審查效率。
+> - 前端開發者用它來調查錯誤，因為可以同時使用 code_mapper 和 frontend_developer 子代理，快速定位問題並提出修復方案。
+> - 產品經理用它來進行代碼規劃，因為可以利用 search_specialist 和 knowledge_synthesizer 來快速了解現有設計並制定行動計畫。
 
 ## 架構分析
 
-這個專案的架構基於 Codex 的子代理系統，允許開發者通過 `.toml` 文件定義專業的子代理。每個子代理都包含特定的模型和指令集，這樣可以在不同的開發任務中靈活調用。選擇使用 `.toml` 格式的好處在於其易於閱讀和編輯，代價是需要用戶對配置有一定的了解。這種設計使得開發者可以快速擴展和定制自己的開發環境，但也可能導致配置錯誤的風險。整體而言，這個架構能夠支援多種開發場景，但在大型專案中可能會面臨管理上的挑戰。
+這個專案的架構基於 Codex 的子代理設計，使用 `.toml` 格式來定義每個子代理的屬性和行為。每個子代理都可以根據任務自動選擇合適的模型，這樣的設計使得開發者能夠在不同的開發環境中靈活使用。子代理的沙盒模式設計確保了安全性，根據任務需求可以選擇只讀或可寫模式。這樣的架構使得專案在功能擴展上具備良好的靈活性，但也可能因為過多的子代理而導致管理上的複雜性。整體而言，這個架構設計使得開發者能夠快速適應不同的開發需求，並且在使用上保持高效。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於使用 Codex 的子代理系統，這些子代理被設計為專門針對特定任務的 AI 助手。每個子代理都使用 `.toml` 格式來定義其行為和特性，這樣的設計使得用戶能夠靈活地配置和擴展。效能方面，這些子代理能夠在不同的開發場景中快速調用，並且通過自動模型路由來平衡質量和成本。選擇使用 Codex 作為基礎架構的好處在於其強大的自然語言處理能力，但這也意味著對 Codex 的版本更新有一定的依賴性。技術風險方面，隨著專案的擴展，管理多個子代理可能會導致配置錯誤，並且需要定期維護以確保其有效性。整合方面，這個專案可以與主流的開發工具鏈（如 GitHub）無縫整合，但對於不熟悉 Codex 的開發者來說，學習成本可能較高。
+這個專案的核心技術機制是基於 Codex 的子代理設計，使用 `.toml` 格式來定義每個子代理的行為和屬性。每個子代理都能根據特定任務自動選擇合適的模型，這樣的設計使得開發者能夠在不同的開發環境中靈活使用。效能方面，這些子代理的設計考量了不同的使用場景，能夠快速處理各種開發任務。設計上，選擇使用 Codex 作為基礎，這樣的選擇使得專案能夠充分利用 Codex 的強大能力，但也可能因為依賴於外部模型而帶來一定的風險。整體而言，這個專案在技術上具備良好的擴展性，能夠隨著開發需求的變化而調整。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝指引和範例，讓新手能夠快速理解如何使用。安裝過程相對順暢，但需要用戶對 Codex 有基本的了解。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
+> README 文件清晰，提供了詳細的安裝步驟和範例；安裝過程相對順暢，沒有明顯的坑；有良好的入門指南，幫助用戶快速上手；文件目前僅提供英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供多種專業子代理，能夠針對特定任務提供精準的支援。
-> - 自動模型路由功能，提升了使用效率和準確性。
-> - 範例工作流程幫助用戶快速上手，降低學習成本。
+> - 提供多樣化的專業子代理，能夠針對不同開發任務進行優化。
+> - 靈活的配置和安裝方式，易於集成到現有工作流中。
+> - 智能模型路由提升了任務處理的效率和準確性。
 
 > [!danger] 缺點
-> - 需要手動配置子代理，對新手不太友好。
-> - 對 Codex 的依賴使得未來的更新可能影響使用體驗。
-> - 在大型專案中管理多個子代理可能會變得複雜。
+> - 對於不熟悉 Codex 的用戶，初始配置可能需要學習時間。
+> - 某些子代理可能不支持特定的開發環境或框架。
+> - 不支援自動生成子代理，需手動指定。
 
 > [!warning] 注意事項
-> - 需要手動配置子代理，Codex 不會自動生成。
-> - 對於不熟悉 Codex 的開發者，初期學習曲線可能較陡。
-> - 僅支援特定的 Codex 版本，可能不兼容未來的更新。
+> - 不支援自動生成子代理，必須手動指定使用的子代理。
+> - 對於不熟悉 Codex 的用戶，初始配置可能需要一些學習成本。
+> - 某些子代理可能不支持特定的開發環境或框架。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的子代理功能，但專注於遊戲開發領域，適合遊戲開發者使用。 |
-| [BigPizzaV3/CodexPlusPlus](https://github.com/BigPizzaV3/CodexPlusPlus) | 提供更廣泛的 AI 助手功能，但缺乏專業化的子代理設計，可能不如本專案針對特定任務有效。 |
-| [DenisSergeevitch/agents-best-practices](https://github.com/DenisSergeevitch/agents-best-practices) | 專注於最佳實踐的分享，而非提供具體的子代理，適合需要指導的開發者。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發的子代理，提供針對遊戲開發的專業支持。 | 如果你的專案是遊戲開發，這個工具能提供更針對性的功能。 | medium，因為需要重新調整開發流程以符合遊戲開發的需求。 |
-| [BigPizzaV3/CodexPlusPlus](https://github.com/BigPizzaV3/CodexPlusPlus) | 提供更廣泛的 AI 助手功能，但缺乏專業化的子代理設計。 | 如果需要一個通用的 AI 助手，這個工具可能更適合。 | low，因為它的使用方式與 Codex 相似。 |
-| [DenisSergeevitch/agents-best-practices](https://github.com/DenisSergeevitch/agents-best-practices) | 專注於最佳實踐的分享，而非提供具體的子代理。 | 如果需要指導和最佳實踐的建議，而不是具體的子代理功能。 | low，因為這是一個輔助性質的工具，無需重構現有流程。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **awesome-codex-subagents** | **agent-sprite-forge** | **CodexPlusPlus** | **agents-best-practices** |
-> | --- | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於遊戲開發的子代理，提供針對遊戲開發的專業支持。 | 提供更廣泛的 AI 助手功能，但缺乏專業化的子代理設計。 | 專注於最佳實踐的分享，而非提供具體的子代理。 |
-> | 遷移成本 | - | medium，因為需要重新調整開發流程以符合遊戲開發的需求。 | low，因為它的使用方式與 Codex 相似。 | low，因為這是一個輔助性質的工具，無需重構現有流程。 |
-> | 適用場景 | 主要場景 | 如果你的專案是遊戲開發，這個工具能提供更針對性的功能。 | 如果需要一個通用的 AI 助手，這個工具可能更適合。 | 如果需要指導和最佳實踐的建議，而不是具體的子代理功能。 |
-
-## 成熟度評估
-
-| 項目 | 評估 |
-| --- | --- |
-| 開發階段 | Beta |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
-
-> [!tip] 採用建議
-> 適合開發者在非關鍵項目中試用，但不建議在生產環境中使用。
-
-## 已知陷阱
-
-> [!bug] 踩坑才知道的問題
-
-- **[HIGH]** 需要手動配置子代理，容易出現配置錯誤
-  - 解法：仔細檢查每個 `.toml` 文件的格式和內容
-- [MEDIUM] 對 Codex 的版本更新有依賴，可能導致不兼容
-  - 解法：定期檢查 Codex 的更新日誌，及時調整子代理配置
-- [MEDIUM] 在大型專案中管理多個子代理可能會變得複雜
-  - 解法：使用版本控制來管理子代理的變更，並保持良好的文檔
-
-## 使用情境適合度
-
-| 情境 | 適合度 | 說明 |
-| --- | --- | --- |
-| 小型開發團隊進行 API 開發 | 非常適合 | 提供針對 API 設計的專業子代理，能夠提升開發效率。 |
-| 大型企業的代碼審查流程 | 適合 | 能夠同時調用多個子代理進行全面的代碼檢查。 |
-| 個人開發者的學習項目 | 普通 | 雖然有助於學習，但配置過程可能對新手造成困難。 |
-| 需要快速迭代的創業公司 | 不適合 | 在快速變化的環境中，手動配置可能會成為負擔。 |
-
-## 採用成本分析
-
-| 項目 | 評估 |
-| --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
-| 維護負擔 | medium |
-| 綁定風險 | medium |
-
-> [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到針對開發任務的專業 AI 支援，值得一試。
-
-## 安全性評估
-
-> [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，並且不存取敏感資料。依賴鏈的信任程度相對較高，適合在 CI/CD 流程中使用。
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供了一些通用的 AI 助手，但缺乏針對特定開發任務的專業化子代理。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於低層次的 AI 助手，功能範圍較窄，不如本專案全面。 |
 
 ## 健康度儀表板
 
@@ -324,7 +261,7 @@ cp categories/01-core-development/backend-developer.toml ~/.codex/agents/
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 543 |
+| Forks | 544 |
 | Open Issues | 11 |
 | Issue 解決率 | 15% (2 closed) |
 | 最後推送 | 2026-03-20 |
@@ -342,8 +279,8 @@ cp categories/01-core-development/backend-developer.toml ~/.codex/agents/
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有合併請求和問題的回應。
-**連結**：[文件](https://github.com/VoltAgent/awesome-codex-subagents) · [Discord](https://s.voltagent.dev/discord)
+**社群活躍度**：社群活躍度不錯，開放問題數量相對較少。
+**連結**：[文件](https://github.com/VoltAgent/awesome-codex-subagents)
 
 ## 開發動態
 
@@ -517,19 +454,19 @@ cp categories/01-core-development/backend-developer.toml ~/.codex/agents/
 
 ## 延伸閱讀
 
-相關概念：[[AI Agents]] · [[Codex]] · [[Subagents]] · [[自動化]] · [[開發工具]]
+相關概念：[[AI 助手]] · [[Codex]] · [[自動化]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[432539--gpt2api|432539/gpt2api]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[432539--gpt2api|432539/gpt2api]]
 
 [GitHub](https://github.com/VoltAgent/awesome-codex-subagents) · [官方網站](https://github.com/VoltAgent/voltagent)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：Codex 子代理）
+> [!note]- 直接競品（同子分類：AI 助手）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "Codex 子代理" AND file.name != "VoltAgent--awesome-codex-subagents"
+> WHERE subcategory = "AI 助手" AND file.name != "VoltAgent--awesome-codex-subagents"
 > SORT stars DESC
 > ```
 
@@ -537,7 +474,7 @@ cp categories/01-core-development/backend-developer.toml ~/.codex/agents/
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "AI/ML" AND file.name != "VoltAgent--awesome-codex-subagents"
+> WHERE category = "開發工具" AND file.name != "VoltAgent--awesome-codex-subagents"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -561,7 +498,7 @@ cp categories/01-core-development/backend-developer.toml ~/.codex/agents/
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["AI Agents","Codex","Subagents","自動化","開發工具"];
+> const concepts = ["AI 助手","Codex","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "VoltAgent--awesome-codex-subagents" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

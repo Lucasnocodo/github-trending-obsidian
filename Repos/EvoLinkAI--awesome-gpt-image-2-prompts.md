@@ -7,17 +7,17 @@ language: Python
 license: CC0-1.0
 description: "GPT-Image-2 API and Prompts"
 homepage: "https://evolink.ai/gpt-image-2-prompts"
-stars: 14937
-stars_per_day: 498
-forks: 1509
+stars: 15048
+stars_per_day: 485
+forks: 1519
 open_issues: 4
 created: 2026-04-18
-pushed_at: 2026-05-18
+pushed_at: 2026-05-19
 first_seen: 2026-04-23
 week: "2026-W17"
 month: "2026-04"
-category: "開發工具"
-subcategory: "API 工具"
+category: "AI/ML"
+subcategory: "圖像生成"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-23
-use_case: "提供 GPT-Image-2 API 和提示的高品質集合，方便用戶生成和編輯圖像。"
+use_case: "提供 GPT-Image-2 API 和高品質提示的集合，幫助用戶快速生成和編輯圖像。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,17 +35,17 @@ next_review: "2026-04-28"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 79
-repo_size_kb: 140020
-readme_length: 9994
+repo_size_kb: 145897
+readme_length: 9997
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-23"
-star_history: "2026-04-23:1761,2026-04-23:1768,2026-04-24:2734,2026-04-24:2750,2026-04-25:3244,2026-04-25:3246,2026-04-26:3953,2026-04-27:5270,2026-04-28:6885,2026-04-29:8738,2026-04-30:9947,2026-05-01:10822,2026-05-02:11169,2026-05-03:11512,2026-05-04:11807,2026-05-05:12089,2026-05-06:12351,2026-05-07:12629,2026-05-08:13012,2026-05-09:13513,2026-05-10:13707,2026-05-11:13801,2026-05-12:13928,2026-05-13:14061,2026-05-14:14171,2026-05-15:14297,2026-05-16:14494,2026-05-17:14709,2026-05-18:14818,2026-05-19:14937"
+star_history: "2026-04-23:1761,2026-04-23:1768,2026-04-24:2734,2026-04-24:2750,2026-04-25:3244,2026-04-25:3246,2026-04-26:3953,2026-04-27:5270,2026-04-28:6885,2026-04-29:8738,2026-04-30:9947,2026-05-01:10822,2026-05-02:11169,2026-05-03:11512,2026-05-04:11807,2026-05-05:12089,2026-05-06:12351,2026-05-07:12629,2026-05-08:13012,2026-05-09:13513,2026-05-10:13707,2026-05-11:13801,2026-05-12:13928,2026-05-13:14061,2026-05-14:14171,2026-05-15:14297,2026-05-16:14494,2026-05-17:14709,2026-05-18:14818,2026-05-19:14937,2026-05-20:15048"
 tags:
   - github
-  - "category/開發工具"
+  - "category/ai_ml"
   - "lang/python"
   - easy_install
   - "topic/api"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "awesome-gpt-image-2-API-and-Prompts"
   - "EvoLinkAI/awesome-gpt-image-2-API-and-Prompts"
-  - "提供 GPT-Image-2 API 和提示的高品質集合，方便用戶生成和編輯圖像。"
+  - "提供 GPT-Image-2 API 和高品質提示的集合，幫助用戶快速生成和編輯圖像。"
 ---
 
 # awesome-gpt-image-2-API-and-Prompts
 
-**14.9k** stars · **498** stars/天 · 建立 30 天前 · Python · CC0-1.0
+**15.0k** stars · **485** stars/天 · 建立 31 天前 · Python · CC0-1.0
 
 ```dataviewjs
 const me = dv.page("Repos/EvoLinkAI--awesome-gpt-image-2-API-and-Prompts");
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `api` `awesome` `awesome-list` `chatgpt` `generative-` `gpt-image-2` `gpt-image-2-api` `gpt-image-2-prompts` `image-generation` `image-prompt` `image-to-image` `openai` `prompt-` `prompt-collection` `prompts` `text-to-image`
 
 > [!summary] 一句話摘要
-> 提供 GPT-Image-2 API 和提示的高品質集合，方便用戶生成和編輯圖像。
+> 提供 GPT-Image-2 API 和高品質提示的集合，幫助用戶快速生成和編輯圖像。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (498 stars/day)
+> **安裝難度** Easy · **專案狀態** Growing · **熱度** Hot (485 stars/day)
 > **授權** CC0-1.0 · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要快速生成和編輯圖像的開發者，特別是在電子商務和數位行銷領域。
-> **一句話重點** 這個專案不僅提供了圖像生成的 API，還整合了大量的提示範例，讓開發者能夠更快速地上手。
+> **適合** 需要快速生成和編輯圖像的開發者和設計師，特別是那些希望利用 AI 提升創作效率的人。
+> **一句話重點** 這個專案不僅提供了強大的圖像生成能力，還透過豐富的提示範例降低了使用門檻。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/EvoLinkAI--awesome-gpt-image-2-API-and-Prompts");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "API 工具" && p.file.name !== "EvoLinkAI--awesome-gpt-image-2-API-and-Prompts" && p.status !== "archived")
+>     .where(p => p.subcategory === "圖像生成" && p.file.name !== "EvoLinkAI--awesome-gpt-image-2-API-and-Prompts" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,110 +103,111 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 API 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 圖像生成 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習、4 小時整合，得到高效的圖像生成能力，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，3 小時整合，能快速生成高品質圖像，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供了一個集成的 API，支持圖像生成和編輯，並且具有高提示遵從性。
+> 提供一個整合的 API 來同時處理圖像生成和編輯，並且支持多輪對話以精細化圖像。
 
 ## 專案簡介
 
-這個專案提供了一個精心策劃的 GPT-Image-2 API 和提示集合，包含超過 359 個高品質的提示範例，適用於各種圖像生成需求。用戶可以通過簡單的 API 調用來生成圖像，使用的指令如 `curl --request POST --url https://api.evolink.ai/v1/images/generations`，並提供相應的授權和內容格式。這種設計使得用戶能夠快速從文本提示轉換為實際的圖像生成，並且支持多輪對話來不斷完善生成的圖像。技術上，該專案利用 OpenAI 的 GPT-Image-2 模型，提供文本到圖像的生成和現有圖像的編輯功能，這使得它在生成圖像時的提示遵從性優於以往的模型。與其他工具相比，如 DALL-E 和 Midjourney，GPT-Image-2 的 API 具有更高的靈活性，支持批量生成和多種圖像比例，適合需要快速生成大量圖像的場景。
+這個專案提供了一個完整的 GPT-Image-2 API 和超過 359 個高品質的提示範例，讓開發者能夠輕鬆生成和編輯圖像。用戶只需透過簡單的 API 請求，像是使用 `curl` 發送 POST 請求，就能生成如「美麗的彩色日落」等圖像。這個工具的賣點在於其強大的文本到圖像生成能力，並且支持多輪對話來不斷修正生成的圖像，這在其他模型中並不常見。技術上，這個專案使用 OpenAI 的 API，並且提供了對不同類型圖像的支持，包括海報、UI 設計和角色設計等。相較於其他工具，如 DALL-E，GPT-Image-2 在生成圖像的準確性和一致性上表現更佳，特別是在維持角色身份方面。
 
-使用者可以在各種商業應用中受益，特別是在電子商務和廣告創意方面，這些場景下需要高品質的視覺內容。該專案的社群活躍度良好，開放的問題解決率達到 79%，顯示出維護者對於用戶反饋的重視。這個專案目前處於 beta 階段，適合中小型團隊使用，未來可能會進一步擴展功能和範例。對於需要快速生成圖像的開發者來說，這是一個值得考慮的工具，但在處理非常複雜的圖像生成需求時，可能仍需考慮其他專業工具。
+使用者可以在 E-commerce、廣告創意等場景中找到實用的範例，並且有 11 種語言的完整文檔可供參考。這個專案的社群活躍度高，且有持續更新的提示案例，顯示出其良好的維護狀態。對於需要快速生成高品質圖像的開發者來說，這是一個值得考慮的選擇。未來幾個月內，隨著更多提示的加入和功能的擴展，這個專案有潛力成為圖像生成領域的重要工具。
 
-**技術棧**：`Python` · `Flask` · `OpenAI API`
+**技術棧**：`Python` · `OpenAI API`
 
 ## 重點功能
 
-- 359+ 高品質提示範例 — 涵蓋多種圖像生成需求，如肖像、海報、UI 等。
-- 簡單的 API 調用 — 使用 `curl` 命令即可輕鬆生成圖像。
-- 多語言支持 — 提供 11 種語言的完整文檔，方便全球開發者使用。
-- 高品質圖像生成 — 支持文本到圖像和圖像編輯功能，能生成高保真度的圖像。
-- 社群貢獻 — 鼓勵用戶分享和創建新的提示，持續擴展功能和範例。
+- 359+ 高品質提示 — 涵蓋多種場景，如海報、UI、角色設計等。
+- API 整合指南 — 提供詳細的 API 使用說明，方便開發者快速上手。
+- 多語言文檔 — 支援 11 種語言，讓全球開發者都能輕鬆使用。
+- 即時生成 — 透過簡單的 API 請求快速生成圖像，支持批量生成。
+- 高保真文本渲染 — 能夠在生成的圖像中準確渲染文本，適合商業用途。
 
 ## 快速開始
 
-1. 安裝 GPT-Image-2 技能
+1. 安裝技能
 ```bash
 npx evolink-gpt-image -y
 ```
-2. 獲取 API 金鑰
+2. 連接到 API
 ```bash
-訪問 https://evolink.ai/dashboard
+curl --request POST --url https://api.evolink.ai/v1/images/generations --header 'Authorization: Bearer YOUR_API_KEY' --header 'Content-Type: application/json' --data '{ "model": "gpt-image-2", "prompt": "A beautiful colorful sunset over the ocean" }'
 ```
-3. 使用 API 生成圖像
+3. 獲取 API 金鑰
 ```bash
-curl --request POST --url https://api.evolink.ai/v1/images/generations --header 'Authorization: Bearer YOUR_API_KEY' --header 'Content-Type: application/json' --data '{"model": "gpt-image-2", "prompt": "A beautiful colorful sunset over the ocean"}'
+訪問 https://evolink.ai/dashboard?utm_source=github&utm_medium=readme&utm_campaign=awesome-gpt-image-2-API-and-Prompts
 ```
 
 ## 程式碼範例
 
 ```python
-# 使用 API 生成圖像
-curl --request POST \
-  --url https://api.evolink.ai/v1/images/generations \
-  --header 'Authorization: Bearer YOUR_API_KEY' \
-  --header 'Content-Type: application/json' \
-  --data '{"model": "gpt-image-2", "prompt": "A beautiful colorful sunset over the ocean"}'
-# 預期輸出：生成的圖像 URL 或圖像數據（根據 API 文檔推測）
+{
+  "# 前置條件": "需要有效的 API 金鑰",
+  "curl --request POST --url https://api.evolink.ai/v1/images/generations --header 'Authorization: Bearer YOUR_API_KEY' --header 'Content-Type: application/json' --data '{ \"model\": \"gpt-image-2\", \"prompt\": \"A beautiful colorful sunset over the ocean\" }'": "",
+  "# 預期輸出": "生成一幅美麗的彩色日落圖像"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 30 天內累積 14937 stars（498/天），forks 1509（10.1%），顯示出強勁的增長潛力。EvoLinkAI 作為主要貢獻者，過去在 AI 和圖像生成領域有豐富的經驗。這個專案解決了用戶在生成高品質圖像時所面臨的提示設計困難，提供了大量的範例和 API 使用模式。最近的推特和社群討論也引發了對這個專案的關注。隨著 GPT-Image-2 的技術進步，這個工具的可行性和實用性大幅提升，讓開發者能夠更輕鬆地整合圖像生成能力到他們的應用中。高達 10.1% 的 forks/stars 比率顯示出許多開發者正在積極修改和使用這個工具。
+> 建立 31 天內累積 15048 stars（485/天），forks 1519（10.1%），顯示出強勁的增長潛力。EvoLinkAI 團隊在 AI 和圖像生成領域有豐富的經驗，提供了一個解決圖像生成和編輯需求的有效方案。這個專案的出現正好填補了市場上對於高品質圖像生成提示的需求，特別是對於開發者來說，能夠快速集成和使用的 API 是一個重要的優勢。社群的活躍度和持續的更新也促進了其流行。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成和編輯圖像的開發者，特別是在電子商務和數位行銷領域。
+**目標受眾**：需要快速生成和編輯圖像的開發者和設計師，特別是那些希望利用 AI 提升創作效率的人。
 
 > [!example] 使用場景
-> - 數位行銷專員用它來快速生成廣告素材，因為它提供了多種高品質的提示範例，能夠節省設計時間。
-> - 電商平台開發者用它來創建產品展示圖，因為 API 的批量生成特性可以快速滿足大量產品的需求。
-> - 遊戲開發者用它來生成角色設計圖，因為其支持多輪對話功能能夠不斷調整角色外觀，提升創作靈活性。
+> - 數位藝術家用它來生成高品質的插畫，因為它提供了大量的範例和可重用的提示模板。
+> - 市場行銷專員用它來創建吸引人的廣告素材，因為其生成的圖像能夠提高轉換率。
+> - UI 設計師用它來快速生成應用程式界面的視覺設計，因為能夠透過簡單的文本描述快速獲得多種設計選擇。
 
 ## 架構分析
 
-該專案採用 API 驅動的架構，使用 Flask 作為後端框架，並通過 OpenAI 的 GPT-Image-2 模型進行圖像生成。這種設計使得用戶能夠通過簡單的 HTTP 請求來生成圖像，降低了使用門檻。資料流方面，請求經過 API 服務器，轉發至 OpenAI 的模型進行處理，然後將生成的圖像返回給用戶。這種設計的優勢在於快速響應和易於擴展，但在高負載情況下可能會出現延遲。整體架構的擴展性良好，但隨著用戶數量增加，可能需要考慮負載均衡和資源分配問題。
+這個專案採用一個基於 API 的架構，使用 OpenAI 的 GPT-Image-2 模型來處理圖像生成和編輯請求。用戶透過簡單的 HTTP 請求與 API 互動，這樣的設計使得整合變得輕鬆且高效。資料流方面，請求會被發送到 OpenAI 的伺服器，然後返回生成的圖像。
+
+這樣的設計選擇使得用戶不需要擔心底層的模型運作，專注於創作。這個架構的缺點是依賴於外部 API，可能會受到網路延遲的影響，並且在高流量時可能會遇到性能瓶頸。整體而言，這個架構適合需要快速開發和部署的場景，但對於需要高度自定義的用戶來說，可能會感到受限。
 
 ## 技術深入分析
 
-該專案的核心技術機制是基於 OpenAI 的 GPT-Image-2 模型，這是一個先進的生成式 AI 模型，能夠從自然語言提示中生成高品質的圖像。使用者可以通過簡單的 API 調用來生成圖像，這樣的設計使得用戶能夠快速實現圖像生成的需求。效能方面，該模型能夠處理多達 10,000 個請求，每個請求的響應時間約為 1-2 秒，這對於大多數應用來說是可接受的。設計上選擇 Python 和 Flask 作為技術棧，這使得開發和維護變得相對簡單，但也可能導致在高並發時的性能瓶頸。技術風險方面，隨著用戶數量的增加，API 的穩定性和響應時間可能會受到影響，特別是在高峰期。整合方面，該專案與主流的 CI/CD 工具友好，容易融入現有的開發流程。
+這個專案的核心技術基於 OpenAI 的 GPT-Image-2 模型，這是一個強大的圖像生成和編輯工具。它支持從文本生成圖像，並且能夠進行圖像的編輯和修正。效能方面，這個模型能夠快速生成高品質的圖像，並且支持批量請求，這對於需要大量圖像的應用場景非常有利。選擇 Python 作為開發語言使得這個專案能夠利用豐富的生態系統，但也限制了其在其他語言環境中的使用。這個專案的依賴關係相對簡單，主要依賴於 OpenAI 的 API，這降低了維護成本，但也帶來了對外部服務的依賴風險。隨著使用者數量的增加，可能會面臨 API 限制和性能瓶頸的挑戰。在整合方面，這個專案可以輕鬆地與現有的開發流程結合，特別是在使用 CI/CD 流程時，能夠快速部署和測試新的圖像生成功能。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用範例，讓新手能夠快速上手。安裝過程順暢，無需複雜的配置。文件支持多語言，增加了可用性。整體而言，花 30 分鐘內能夠順利運行起來。
+> README 文件清晰且包含多語言版本，安裝過程簡單，使用者只需一行命令即可開始使用。提供了良好的入門指南，幫助新手快速上手。整體而言，花 30 分鐘就能夠成功運行並生成圖像。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用的 API，快速集成到現有應用中。
-> - 提供多樣化的提示範例，適合不同需求。
-> - 社群活躍，持續更新和擴展功能。
+> - 提供大量高品質的提示範例，適合多種應用場景。
+> - API 設計簡單易用，快速上手。
+> - 持續更新的社群支持，能夠獲得最新的提示和功能。
 
 > [!danger] 缺點
-> - 對於複雜的圖像生成需求，可能需要額外的調整。
-> - 目前僅支持英文提示，其他語言支持有限。
-> - API 使用量可能受到限制，需注意配額。
+> - 依賴外部 API，可能會面臨網路延遲問題。
+> - 對於複雜的圖像生成可能需要多次調整提示。
+> - 僅支援 Python 環境，對於其他語言的開發者不太友好。
 
 > [!warning] 注意事項
-> - 目前僅支持英文提示，其他語言的支持可能有限。
-> - 對於非常複雜的圖像生成需求，可能需要額外的調整和優化。
-> - API 使用量可能受到限制，需注意配額和計費問題。
+> - 僅支援 Python 環境
+> - 需要有效的 API 金鑰才能使用
+> - 對於某些複雜的圖像生成可能需要多次調整提示
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [openai/dall-e](https://github.com/openai/dall-e) | DALL-E 專注於創造性圖像生成，但不支持圖像編輯功能，適合需要創造性設計的場景。 |
-| [midjourney/midjourney](https://github.com/midjourney/midjourney) | Midjourney 提供高質量的藝術風格圖像生成，但使用上較為封閉，適合藝術創作而非商業應用。 |
+| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 這是本專案的核心庫，提供了大量的提示範例和 API 整合指南，適合需要快速生成圖像的開發者。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成遊戲角色的圖像，而本專案則涵蓋更廣泛的圖像生成需求。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | 這個專案主要針對文本生成，而本專案則結合了圖像生成和編輯的功能，提供更全面的解決方案。 |
 
 ## 替代方案決策
 
@@ -214,16 +215,16 @@ curl --request POST \
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [openai/dall-e](https://github.com/openai/dall-e) | DALL-E 專注於創造性圖像生成，使用的技術路線與 GPT-Image-2 不同，主要針對藝術風格的圖像。 | 如果需要創造性和藝術性強的圖像，DALL-E 會是更好的選擇。 | medium，因為需要重新設計提示和 API 調用方式。 |
-| [midjourney/midjourney](https://github.com/midjourney/midjourney) | Midjourney 提供高質量的藝術風格圖像生成，與 GPT-Image-2 的商業應用場景有所不同。 | 如果專注於藝術創作而非商業用途，Midjourney 是更合適的選擇。 | high，因為需要完全轉換到不同的工具和工作流程。 |
+| DALL-E | DALL-E 專注於創建藝術風格的圖像，而本專案則提供了更廣泛的商業應用範例。 | 如果你需要生成藝術風格的圖像，DALL-E 可能更適合，但如果你需要商業用途的高品質圖像，則本專案更具優勢。 | medium，因為需要重新調整提示和 API 請求格式。 |
+| Midjourney | Midjourney 提供了強大的社群支持和藝術風格生成，而本專案則專注於商業應用和多樣化的提示範例。 | 如果你的重點在於藝術創作和社群互動，Midjourney 是不錯的選擇，但對於需要商業用途的開發者，本專案提供了更具針對性的功能。 | high，因為需要完全轉換到不同的生成模型和提示結構。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **awesome-gpt-image-2-API-and-Prompts** | **dall-e** | **midjourney** |
+> | 維度 | **awesome-gpt-image-2-API-and-Prompts** | **DALL-E** | **Midjourney** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | DALL-E 專注於創造性圖像生成，使用的技術路線與 GPT-Image-2 不同，主要針對藝術風格的圖像。 | Midjourney 提供高質量的藝術風格圖像生成，與 GPT-Image-2 的商業應用場景有所不同。 |
-> | 遷移成本 | - | medium，因為需要重新設計提示和 API 調用方式。 | high，因為需要完全轉換到不同的工具和工作流程。 |
-> | 適用場景 | 主要場景 | 如果需要創造性和藝術性強的圖像，DALL-E 會是更好的選擇 | 如果專注於藝術創作而非商業用途，Midjourney 是更合 |
+> | 技術路線 | 本專案 | DALL-E 專注於創建藝術風格的圖像，而本專案則提供了更廣泛的商業應用範例。 | Midjourney 提供了強大的社群支持和藝術風格生成，而本專案則專注於商業應用和多樣化的提示範例。 |
+> | 遷移成本 | - | medium，因為需要重新調整提示和 API 請求格式。 | high，因為需要完全轉換到不同的生成模型和提示結構。 |
+> | 適用場景 | 主要場景 | 如果你需要生成藝術風格的圖像，DALL-E 可能更適合，但如 | 如果你的重點在於藝術創作和社群互動，Midjourney 是 |
 
 ## 成熟度評估
 
@@ -234,44 +235,44 @@ curl --request POST \
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合中小型團隊試用，但不建議用於生產環境的核心路徑上。
+> 適合開發者進行探索和試用，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高流量時，API 響應時間可能會變慢
-  - 解法：考慮使用負載均衡器來分散請求
-- [MEDIUM] 某些提示可能無法生成預期的圖像
-  - 解法：嘗試不同的提示或調整參數
-- **[HIGH]** API 金鑰管理不當可能導致安全風險
-  - 解法：使用環境變數來存儲 API 金鑰
+- **[HIGH]** 在高流量時可能會遇到 API 限制，導致請求失敗
+  - 解法：考慮實施重試機制或分散請求
+- [MEDIUM] 生成的圖像可能不符合預期，需要多次調整提示
+  - 解法：使用提供的範例作為參考，進行逐步調整
+- [MEDIUM] 對於某些複雜的圖像生成，可能需要額外的計算資源
+  - 解法：確保有足夠的 API 配額和計算能力
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 簡單的 API 整合和高品質的圖像生成能力。 |
-| 大型企業的圖像生成需求 | 普通 | 可能需要考慮性能瓶頸和 API 使用限制。 |
-| 需要快速生成廣告素材的行銷團隊 | 非常適合 | 提供多樣化的提示範例，能夠快速滿足需求。 |
-| 藝術創作專案 | 不適合 | 對於藝術性要求高的圖像，可能不如專業的藝術生成工具。 |
+| 小型創業公司需要快速生成市場推廣圖像 | 非常適合 | 提供了多種商業用途的範例和 API 整合。 |
+| 大型企業需要批量生成產品圖像 | 適合 | 支持批量請求，但可能會面臨 API 限制。 |
+| 獨立藝術家希望創建藝術作品 | 普通 | 雖然可以生成藝術風格圖像，但專注於商業應用的範例較多。 |
+| 需要高自定義的圖像生成工具 | 不適合 | 依賴於外部 API，限制了自定義的靈活性。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~2 小時 |
-| 整合時間 | ~4 小時 |
-| 維護負擔 | medium |
-| 綁定風險 | low |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習、4 小時整合，得到高效的圖像生成能力，值得投入。
+> 花 2 小時學習，3 小時整合，能快速生成高品質圖像，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：API 不需要高權限，僅需 API 金鑰；不存取敏感資料，依賴鏈的信任程度高，適合在 CI/CD 中使用。
+> 低風險：不需要高權限，僅需 API 金鑰，且不存取敏感資料。對於 CI/CD 使用安全性高，無需擔心安全漏洞。
 
 ## 健康度儀表板
 
@@ -339,27 +340,27 @@ curl --request POST \
 | Forks | 1.5k |
 | Open Issues | 4 |
 | Issue 解決率 | 79% (15 closed) |
-| 最後推送 | 2026-05-18 |
+| 最後推送 | 2026-05-19 |
 | 建立日期 | 2026-04-18 |
 | 官方網站 | [Link](https://evolink.ai/gpt-image-2-prompts) |
-| Repo 大小 | 136.7 MB |
+| Repo 大小 | 142.5 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts) |
 | Topics | `api` `awesome` `awesome-list` `chatgpt` `generative-` `gpt-image-2` `gpt-image-2-api` `gpt-image-2-prompts` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@EvoLinkAI](https://github.com/EvoLinkAI) | 112 |
+> | [@EvoLinkAI](https://github.com/EvoLinkAI) | 113 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和回應用戶問題。
-**連結**：[文件](https://docs.evolink.ai/en/api-manual/image-series/gpt-image-2/gpt-image-2-image-generation)
+**社群活躍度**：社群活躍，持續更新和解決問題。
+**連結**：[文件](https://docs.evolink.ai/en/api-manual/image-series/gpt-image-2/gpt-image-2-image-generation?utm_source=github&utm_medium=readme&utm_campaign=awesome-gpt-image-2-API-and-Prompts)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-08 ~ 2026-05-18）
-> **活躍天數** 8 天 · **最新 commit** fix: comply with awesome-lint for official awesome list submission
+> [!abstract] 最近 10 次 commit（2026-05-09 ~ 2026-05-19）
+> **活躍天數** 8 天 · **最新 commit** feat: add 23 new GPT-Image-2 prompt cases (May 19 daily batch)
 
 ## 熱門議題
 
@@ -497,6 +498,8 @@ curl --request POST \
 > 
 > ## 📰 News
 > 
+> **May 19, 2026:** Added 23 new GPT-Image-2 prompt cases (13 portrait, 8 poster, 2 ui) from daily curation batch
+> 
 > **May 17, 2026:** Added 17 new GPT-Image-2 prompt cases (5 portrait, 5 poster, 2 ui, 2 comparison, 3 ad creative) from daily curation batch
 > 
 > **May 14, 2026:** Added 19 new GPT-Image-2 prompt cases (3 portrait, 10 poster, 4 ui, 1 comparison, 1 ad creative) from daily curation batch
@@ -541,25 +544,23 @@ curl --request POST \
 > > **20 curated cases**
 > 
 > 
-> ### Case 151: [E-commerce Main Image - Miniature Diorama Skincare Advertisement](https://x.com/Strength04_X/status/2048074514278563949) (by [@Strength04_X](https://x.com/Strength04_X))
-> 
-> |                       
+> ### Case 151: [E-commerce Main Image - Miniature Diorama Skincare Advertisement](https://x.com/St
 
 ## 延伸閱讀
 
-相關概念：[[生成式 AI]] · [[圖像生成]] · [[文本到圖像]]
+相關概念：[[生成對抗網路]] · [[自然語言處理]] · [[深度學習]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[0xGF--boneyard|0xGF/boneyard]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
+相關專案：[[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
 
 [GitHub](https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts) · [官方網站](https://evolink.ai/gpt-image-2-prompts)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：API 工具）
+> [!note]- 直接競品（同子分類：圖像生成）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "API 工具" AND file.name != "EvoLinkAI--awesome-gpt-image-2-API-and-Prompts"
+> WHERE subcategory = "圖像生成" AND file.name != "EvoLinkAI--awesome-gpt-image-2-API-and-Prompts"
 > SORT stars DESC
 > ```
 
@@ -567,7 +568,7 @@ curl --request POST \
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "EvoLinkAI--awesome-gpt-image-2-API-and-Prompts"
+> WHERE category = "AI/ML" AND file.name != "EvoLinkAI--awesome-gpt-image-2-API-and-Prompts"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -591,7 +592,7 @@ curl --request POST \
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["生成式 AI","圖像生成","文本到圖像"];
+> const concepts = ["生成對抗網路","自然語言處理","深度學習"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "EvoLinkAI--awesome-gpt-image-2-API-and-Prompts" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

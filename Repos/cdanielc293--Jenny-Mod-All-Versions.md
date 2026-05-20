@@ -7,7 +7,7 @@ language: C#
 license: MIT
 description: "Jenny Mod: Minecraft 1.12.2 Java download, Bedrock addon, Pocket Edition PE mcpack, Android APK. SchnuriTV original, Ellie companion, Slime Girl. Forge loader setup, Fabric port, custom animations, interactive skins. Installation guide, dependency files, .jar download, crash fix, portable."
 homepage: ""
-stars: 669
+stars: 670
 stars_per_day: 223
 forks: 1
 open_issues: 1
@@ -42,7 +42,7 @@ last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-20"
-star_history: "2026-05-20:669"
+star_history: "2026-05-20:669,2026-05-20:670"
 tags:
   - github
   - "category/其他"
@@ -60,7 +60,7 @@ aliases:
 
 # Jenny-Mod-All-Versions
 
-**669** stars · **223** stars/天 · 建立 3 天前 · C# · MIT
+**670** stars · **223** stars/天 · 建立 3 天前 · C# · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/cdanielc293--Jenny-Mod-All-Versions");
@@ -83,8 +83,8 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (223 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 對成人內容有興趣的 Minecraft 玩家，特別是希望增添互動角色的使用者。
-> **一句話重點** 這個模組不僅提供了成人內容，還在互動性和動畫上做了大量的優化，讓玩家能夠享受更豐富的遊戲體驗。
+> **適合** 尋找成人內容的 Minecraft 玩家，特別是希望增加角色互動的玩家。
+> **一句話重點** 這個模組不僅提供了成人內容，還強調了角色互動的豐富性，讓玩家在 Minecraft 中獲得全新的體驗。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,89 +108,113 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，得到獨特的成人互動體驗，值得對成人內容有興趣的玩家嘗試。
+> **結論** 花 2 小時學習，1 小時整合，得到豐富的角色互動體驗，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供高品質的成人互動角色與動畫，填補 Minecraft 成人內容的市場空白。
+> 這個專案的創新點在於提供一個高互動性的成人角色，並且整合了多種動畫和聲音效果。
 
 ## 專案簡介
 
-Jenny Mod 是一款針對 Minecraft 的成人模組，主要增添了一個名為 Jenny 的角色，擁有高品質的 3D 模型和詳細的動畫。使用者只需將下載的模組檔案放入 `mods` 資料夾，並確保安裝正確版本的 Forge 或 Fabric，即可啟動遊戲。這個模組的賣點在於其獨特的互動功能與聲音效果，讓玩家能夠享受更豐富的遊戲體驗。技術上，這個模組兼容 Forge 和 Fabric，這意味著它能夠在多種 Minecraft 環境中運行，並且提供了所有版本的集中管理。
-
-與其他成人模組相比，Jenny Mod 的特色在於其高品質的動畫和多樣的互動方式，這些都是許多其他模組所不具備的。雖然目前只有一個開放的問題，但社群的活躍度相對較低，這可能影響到未來的更新和支持。對於想要在 Minecraft 中增添成人內容的玩家來說，這個模組是個不錯的選擇，但需注意其成人內容的性質。整體來看，這個專案在技術上成熟，適合對成人內容有需求的玩家使用，但可能不適合尋求輕鬆遊玩的玩家。
+Jenny Mod 是一個針對 Minecraft 的成人模組，專為 18 歲以上玩家設計，加入了名為 Jenny 的角色，並提供高品質的 3D 模型、流暢的動畫和互動功能。安裝過程中，使用者需先安裝 Forge 或 Fabric，然後將模組檔案放入 `mods` 資料夾，啟動遊戲即可使用。這個模組的賣點在於其獨特的角色互動，包含多種姿勢和自定義的聲音，讓玩家能夠享受更豐富的遊戲體驗。技術上，模組支援 Forge 和 Fabric 兩種載入器，這使得它能夠在不同的 Minecraft 環境中運行，並且能夠隨著遊戲版本的更新而持續更新。相較於其他成人模組，如 0x0funky/agent-sprite-forge，Jenny Mod 提供了更為豐富的互動性和動畫效果，而不僅僅是靜態角色。此模組的使用者需注意，若遇到遊戲崩潰或載入問題，需檢查模組與其他模組的相容性，並確保所有依賴項都已安裝。整體而言，這個模組適合希望在 Minecraft 中增加成人內容的玩家，但需謹慎處理相關的法律和倫理問題。
 
 **技術棧**：`C#`
 
 ## 重點功能
 
-- 高品質 3D 模型 — 提供流暢的動畫和細緻的角色設計。
-- 多樣互動方式 — 支持多種互動姿勢和行為。
-- 自定義聲音效果 — 增加遊戲的沉浸感。
-- 兼容 Forge 和 Fabric — 可在多種 Minecraft 環境中使用。
-- 集中管理所有版本 — 方便用戶下載和更新模組。
+- 高品質 3D 模型 — 提供細緻的角色設計，增強遊戲沉浸感。
+- 多種互動姿勢 — 角色可進行多種互動，提升遊戲趣味性。
+- 自定義聲音 — 包含角色的聲音線路，增強角色的個性。
+- 支援 Forge 和 Fabric — 兼容多種 Minecraft 載入器，方便玩家選擇。
+- 所有版本集中管理 — 提供所有版本的下載，方便玩家選擇適合的版本。
+- 定期更新 — 持續推出新內容，保持模組的新鮮感。
 
 ## 快速開始
 
 1. 下載模組檔案
 ```bash
-下載 `JennyMod.zip`
+Download `JennyMod.zip` from the releases.
 ```
 2. 安裝 Forge 或 Fabric
 ```bash
-根據 Minecraft 版本安裝相應的模組載入器
+Install the correct version of Forge or Fabric for your Minecraft.
 ```
-3. 將模組檔案放入 mods 資料夾
+3. 放置模組檔案
 ```bash
-將 `JennyMod.zip` 解壓並放入 `mods` 資料夾
+Place the mod file in the `mods` folder.
 ```
 4. 啟動遊戲
 ```bash
-啟動 Minecraft 並享受模組
+Launch the game and enjoy.
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 669 stars（223/天），forks 僅 1（0.1%），顯示出相對較低的實際使用情況。該專案由 cdanielc293 發起，專注於提供成人內容的 Minecraft 模組，這在遊戲社群中有其特定需求。雖然目前的 stars 數量看似不錯，但低 forks 比率顯示出大部分用戶仍在觀望階段，未必會進行實際修改或使用。這個模組的出現滿足了對成人內容的需求，尤其是在 Minecraft 這個平台上，這類模組的選擇相對有限。
+> 建立 3 天內累積 670 stars（223/天），forks 僅 1（0.1%），顯示出初期的關注度。作者 cdanielc293 似乎專注於成人內容的 Minecraft 模組開發，解決了玩家對於更具互動性和個性化角色的需求。這個模組的推出可能因為社群對於成人內容的需求增加而受到關注，特別是在 Minecraft 這個平台上。stars 和 forks 的比例顯示出使用者對於這個模組的興趣仍在觀望階段。
 
 ## 適合誰使用
 
-**目標受眾**：對成人內容有興趣的 Minecraft 玩家，特別是希望增添互動角色的使用者。
+**目標受眾**：尋找成人內容的 Minecraft 玩家，特別是希望增加角色互動的玩家。
 
 > [!example] 使用場景
-> - 成人玩家用它來增添 Minecraft 的互動性和趣味性，因為這個模組提供了獨特的角色和動畫，提升了遊戲體驗。
-> - 模組開發者用它來學習如何整合高品質的 3D 模型和動畫，因為這個專案展示了如何在 Minecraft 中實現複雜的互動功能。
-> - 對成人內容感興趣的玩家用它來探索 Minecraft 的新玩法，因為這個模組提供了許多其他模組無法提供的獨特體驗。
+> - 成人玩家用它來在 Minecraft 中增添互動角色，因為這樣可以享受更豐富的遊戲體驗和角色互動。
+> - 模組開發者用它來學習如何在 Minecraft 中實現高品質的 3D 模型和動畫，因為這可以幫助他們提升自己的開發技能。
+> - 社群創作者用它來製作成人內容的遊戲影片，因為這樣可以吸引特定觀眾群體並增加觀看次數。
 
 ## 架構分析
 
-這個模組的架構主要依賴於 Minecraft 的模組化設計，使用 Forge 或 Fabric 作為載入器，讓用戶能夠輕鬆地將自定義內容整合進遊戲。模組內部使用 C# 編寫，並透過高品質的 3D 模型和動畫來增強遊戲體驗。由於這個模組的設計目的是為了提供成人內容，因此在互動性和動畫上做了大量的優化，這使得它在同類模組中脫穎而出。這樣的設計選擇雖然提升了用戶體驗，但也可能帶來與其他模組的兼容性問題，特別是在多模組環境下運行時。整體而言，這個模組的架構設計是以用戶友好為導向，並且考慮到了成人內容的特殊需求。
+Jenny Mod 採用模組化架構，允許玩家透過 Forge 或 Fabric 載入不同版本的模組。這樣的設計使得模組能夠隨著 Minecraft 的更新而持續更新，並且能夠與其他模組共存。資料流方面，模組依賴於 Minecraft 的核心 API 進行角色渲染和互動，這樣的設計使得模組能夠在遊戲中無縫運行。選擇 Forge 和 Fabric 作為載入器，能夠提供更大的靈活性，但也可能導致相容性問題，特別是在與其他模組一起使用時。整體而言，這個架構設計的擴展性良好，但在使用過程中需注意與其他模組的相容性。
 
 ## 技術深入分析
 
-Jenny Mod 的核心技術機制在於其高品質的 3D 模型和動畫，這些都是使用 C# 編寫並整合進 Minecraft 的模組化架構中。這個模組能夠處理多種互動方式，並且提供自定義的聲音效果，這在其他成人模組中並不常見。由於這個模組的設計是為了提供成人內容，因此在性能上可能會面臨挑戰，特別是在大型模組環境中運行時，可能會導致遊戲性能下降。選擇 C# 作為開發語言使得模組能夠利用 Minecraft 的現有架構，但也可能帶來與其他語言開發的模組之間的兼容性問題。這個模組的依賴性相對較低，主要依賴於 Forge 或 Fabric 作為載入器，這使得它在安裝和使用上相對簡單。技術風險方面，由於其內容的特殊性，可能會面臨法律和社群的挑戰，這在未來的發展中需要特別注意。整合方面，這個模組與主流的 Minecraft 開發工具鏈相容性良好，但在與其他模組的整合上可能會遇到一些摩擦點，特別是在多模組環境中。
+Jenny Mod 的核心技術機制在於其高品質的 3D 模型和動畫，這些都是透過 C# 編寫的，並利用 Minecraft 的模組 API 進行整合。模組能夠支持多種互動姿勢和聲音，這使得角色的表現更加生動。效能方面，由於模組需要加載大量的資源，建議玩家在啟動遊戲時分配更多的 RAM，以避免性能瓶頸。設計上，選擇 Forge 和 Fabric 作為載入器，這樣的選擇使得模組能夠在不同的環境中運行，但也帶來了相容性問題的風險。技術上，這個模組的依賴樹相對簡單，主要依賴於 Minecraft 的核心庫，這降低了維護的複雜度。從整合的角度來看，這個模組可以與其他常見的 Minecraft 模組一起使用，但需要注意相容性問題，特別是在大型模組包中使用時可能會遇到衝突。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝指導，但缺乏具體的範例。安裝過程相對順暢，但需注意安裝正確版本的 Forge 或 Fabric。文件沒有提供多語言支持，僅以英文為主，這可能對非英語使用者造成一定困難。
+> README 文件品質尚可，提供了清晰的安裝步驟和故障排除建議。安裝過程相對順暢，但可能需要注意與防毒軟體的衝突。文件未提供多語言支持，可能對非英語使用者造成困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供獨特的成人互動體驗，吸引特定玩家群體。
-> - 高品質的動畫和聲音效果，增強遊戲沉浸感。
-> - 集中管理所有版本，方便用戶下載和更新。
+> - 提供高品質的角色模型和動畫，增強遊戲體驗。
+> - 支援多種載入器，方便不同玩家使用。
+> - 定期更新，保持內容的新鮮感。
 
 > [!danger] 缺點
-> - 僅適合成人玩家，限制了潛在用戶群。
-> - 可能與其他模組不兼容，需謹慎使用。
-> - 社群活躍度低，未來支持和更新不確定。
+> - 僅適用於成人玩家，限制了使用者範圍。
+> - 可能與其他模組不相容，需謹慎選擇。
+> - 安裝過程中可能需要額外的依賴項，增加了複雜度。
 
 > [!warning] 注意事項
 > - 僅適用於 18 歲以上玩家。
-> - 可能會與其他模組不兼容，需檢查相容性。
-> - 安裝過程中可能會出現防毒軟體警告。
+> - 可能與其他模組不相容，需檢查相容性。
+> - 安裝過程中可能需要額外的依賴項。
+> - 可能會因為防毒軟體誤報而無法正常運行。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的成人角色互動，但可能缺乏 Jenny Mod 的動畫和聲音效果。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於不同的角色設計和互動，適合尋找多樣化內容的玩家。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個模組專注於成人角色的互動，但可能缺乏 Jenny Mod 的動畫和聲音效果。 | 如果你需要一個更簡單的成人角色模組，且不在意動畫效果。 | low，因為兩者的安裝流程相似。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供不同的角色設計和互動，適合尋找多樣化內容的玩家。 | 如果你希望探索不同的角色和互動方式，而不僅僅是 Jenny。 | medium，因為可能需要重新配置模組環境。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **Jenny-Mod-All-Versions** | **agent-sprite-forge** | **boneyard** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 這個模組專注於成人角色的互動，但可能缺乏 Jenny Mod 的動畫和聲音效果。 | 提供不同的角色設計和互動，適合尋找多樣化內容的玩家。 |
+> | 遷移成本 | - | low，因為兩者的安裝流程相似。 | medium，因為可能需要重新配置模組環境。 |
+> | 適用場景 | 主要場景 | 如果你需要一個更簡單的成人角色模組，且不在意動畫效果。 | 如果你希望探索不同的角色和互動方式，而不僅僅是 Jenny。 |
 
 ## 成熟度評估
 
@@ -198,30 +222,30 @@ Jenny Mod 的核心技術機制在於其高品質的 3D 模型和動畫，這些
 | --- | --- |
 | 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合對成人內容有興趣的玩家試用，但不建議用於生產環境。
+> 適合個人試用，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 安裝後模組無法加載，可能是因為未安裝正確的 Forge/Fabric 版本。
-  - 解法：檢查並安裝正確的模組載入器版本。
-- **[HIGH]** 遊戲崩潰，可能是與其他模組不兼容。
-  - 解法：逐一禁用其他模組以找出衝突。
-- [MEDIUM] 防毒軟體誤報，導致安裝失敗。
-  - 解法：將模組資料夾添加至防毒軟體的例外清單。
+- **[HIGH]** 安裝後模組無法加載，可能是因為 Forge/Fabric 版本不正確。
+  - 解法：確認安裝的 Forge/Fabric 版本與模組相容。
+- **[HIGH]** 遊戲崩潰，可能是與其他模組不相容。
+  - 解法：檢查其他模組的相容性，並嘗試禁用其他模組。
+- [MEDIUM] 防毒軟體誤報模組檔案，導致無法啟動。
+  - 解法：將模組資料夾添加到防毒軟體的例外清單。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 成人玩家希望在 Minecraft 中增添互動性 | 非常適合 | 模組提供了獨特的角色和互動功能，滿足成人內容需求。 |
-| 尋求輕鬆遊玩的玩家 | 不適合 | 模組內容為成人向，可能不符合輕鬆遊玩的需求。 |
-| 模組開發者希望學習如何整合 3D 模型 | 適合 | 模組展示了如何在 Minecraft 中實現複雜的互動功能。 |
-| 希望在多人伺服器上使用的玩家 | 普通 | 需考慮伺服器的內容政策，可能不被允許。 |
+| 成人玩家希望在 Minecraft 中增添互動角色 | 非常適合 | 提供了豐富的角色互動和動畫效果，滿足成人內容需求。 |
+| 開發者希望學習如何製作 Minecraft 模組 | 適合 | 提供了實用的安裝指南和模組開發的基礎知識。 |
+| 尋找適合兒童的 Minecraft 模組 | 不適合 | 此模組專為成人設計，包含不適合未成年人的內容。 |
+| 希望在大型模組包中使用此模組 | 普通 | 可能會遇到與其他模組的相容性問題。 |
 
 ## 採用成本分析
 
@@ -233,12 +257,12 @@ Jenny Mod 的核心技術機制在於其高品質的 3D 模型和動畫，這些
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到獨特的成人互動體驗，值得對成人內容有興趣的玩家嘗試。
+> 花 2 小時學習，1 小時整合，得到豐富的角色互動體驗，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：模組本身不需要高權限，但需注意其成人內容的性質，並確保不在未成年人面前使用。依賴鏈的信任程度需謹慎評估，特別是對於成人內容的法律風險。
+> 低風險：此模組不需要高權限，僅在遊戲內部運行，不存取敏感資料。
 
 ## 健康度儀表板
 
@@ -321,7 +345,7 @@ Jenny Mod 的核心技術機制在於其高品質的 3D 模型和動畫，這些
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度較低，目前只有一個開放的問題，解決率為 0%。
+**社群活躍度**：社群活躍度中等，僅有一個開放問題，顯示出初期的關注度。
 
 ## 開發動態
 
@@ -387,7 +411,9 @@ Jenny Mod 的核心技術機制在於其高品質的 3D 模型和動畫，這些
 
 ## 延伸閱讀
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]]
+相關概念：[[成人內容]] · [[Minecraft 模組]] · [[互動角色]]
+
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[TriangleFalcon--KMS-Tools-Portable-2026-Last-Version|TriangleFalcon/KMS-Tools-Portable-2026-Last-Version]]
 
 [GitHub](https://github.com/cdanielc293/Jenny-Mod-All-Versions)
 
@@ -425,6 +451,21 @@ Jenny Mod 的核心技術機制在於其高品質的 3D 模型和動畫，這些
 > FROM "Repos"
 > WHERE week = "2026-W21" AND file.name != "cdanielc293--Jenny-Mod-All-Versions"
 > SORT stars DESC
+> ```
+
+> [!note]- 共用概念的相關專案
+> ```dataviewjs
+> const concepts = ["成人內容","Minecraft 模組","互動角色"];
+> const pages = dv.pages('"Repos"')
+>   .where(p => p.file.name !== "cdanielc293--Jenny-Mod-All-Versions" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .sort(p => p.stars, "desc")
+>   .limit(5);
+> if (pages.length > 0) {
+>   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
+>     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
+>     return [p.file.link, p.stars, p.category, shared.join(", ")];
+>   }));
+> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
 > ```
 
 > [!note]- Ring 更高的同類競品
