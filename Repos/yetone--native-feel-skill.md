@@ -7,10 +7,10 @@ language: N/A
 license: MIT
 description: "An Agent Skill for designing cross-platform desktop apps that feel native — distilled from Raycast's 2.0 deep-dive and reverse engineering of Raycast Beta.app. Eight architectural tenets, four-layer architecture, WebKit/WebView2 survival guide, 75-item ship audit."
 homepage: ""
-stars: 1310
-stars_per_day: 328
-forks: 61
-open_issues: 0
+stars: 1335
+stars_per_day: 267
+forks: 60
+open_issues: 1
 created: 2026-05-14
 pushed_at: 2026-05-15
 first_seen: 2026-05-16
@@ -30,8 +30,8 @@ use_case: "設計跨平台桌面應用程式，實現近乎原生的使用體驗
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-05-22"
+appearances: 5
+next_review: "2026-05-23"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-16"
-star_history: "2026-05-16:1066,2026-05-17:1230,2026-05-18:1276,2026-05-19:1310"
+star_history: "2026-05-16:1066,2026-05-17:1230,2026-05-18:1276,2026-05-19:1310,2026-05-20:1335"
 tags:
   - github
   - "category/開發工具"
@@ -717,6 +717,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-20|2026-05-20]] — 再次上榜，1.3k stars
 - [[2026-05-19|2026-05-19]] — 再次上榜，1.3k stars
 - [[2026-05-18|2026-05-18]] — 再次上榜，1.3k stars
 - [[2026-05-17|2026-05-17]] — 再次上榜，1.2k stars

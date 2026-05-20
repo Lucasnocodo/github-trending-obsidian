@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "Codex skill for safe codebase complexity analysis and performance optimization reports"
 homepage: ""
-stars: 750
-stars_per_day: 250
-forks: 40
+stars: 788
+stars_per_day: 197
+forks: 46
 open_issues: 0
 created: 2026-05-15
 pushed_at: 2026-05-15
@@ -30,8 +30,8 @@ use_case: "分析代碼庫的複雜度並生成性能優化報告的 Codex 技�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-22"
+appearances: 2
+next_review: "2026-05-27"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-19"
-star_history: "2026-05-19:749,2026-05-19:750"
+star_history: "2026-05-19:749,2026-05-19:750,2026-05-20:788"
 tags:
   - github
   - "category/開發工具"
@@ -697,4 +697,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-20|2026-05-20]] — 再次上榜，788 stars
 - [[2026-05-19|2026-05-19]] — 首次收錄，749 stars
