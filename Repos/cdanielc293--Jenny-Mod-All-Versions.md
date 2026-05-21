@@ -20,7 +20,7 @@ category: "其他"
 subcategory: "Minecraft 模組"
 release_tag: "Minecraft"
 install_complexity: "medium"
-status: to-review
+status: archived
 my_rating: 0
 score_confidence: 0
 score_interest: 0

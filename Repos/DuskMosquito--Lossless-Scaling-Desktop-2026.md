@@ -20,7 +20,7 @@ category: "其他"
 subcategory: "遊戲增強"
 release_tag: "lossless-scaling"
 install_complexity: "easy"
-status: to-review
+status: archived
 my_rating: 0
 score_confidence: 0
 score_interest: 0

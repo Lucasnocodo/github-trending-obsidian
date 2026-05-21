@@ -26,23 +26,23 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-20
-use_case: "針對小型 LLM 優化的 AI 編碼代理，能有效利用本地模型進行編程。"
+use_case: "針對小型 LLM 優化的 AI 編碼代理，提供高達 87% 的基準性能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 2
 next_review: "2026-05-24"
-contributor_count: 3
+contributor_count: 4
 engagement: "low"
-issue_close_rate: 91
-repo_size_kb: 711
+issue_close_rate: 71
+repo_size_kb: 11503
 readme_length: 3874
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-20"
-star_history: "2026-05-20:728,2026-05-20:727,2026-05-21:842"
+star_history: "2026-05-20:728,2026-05-20:727,2026-05-21:842,2026-05-21:842"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "smallcode"
   - "Doorman11991/smallcode"
-  - "針對小型 LLM 優化的 AI 編碼代理，能有效利用本地模型進行編程。"
+  - "針對小型 LLM 優化的 AI 編碼代理，提供高達 87% 的基準性能。"
 ---
 
 # smallcode
 
-**727** stars · **727** stars/天 · 建立 1 天前 · JavaScript · MIT
+**842** stars · **421** stars/天 · 建立 2 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Doorman11991--smallcode");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `easy-install`
 
 > [!summary] 一句話摘要
-> 針對小型 LLM 優化的 AI 編碼代理，能有效利用本地模型進行編程。
+> 針對小型 LLM 優化的 AI 編碼代理，提供高達 87% 的基準性能。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (727 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Low
-> **適合** 需要在本地環境中使用小型 LLM 進行編碼的獨立開發者或小型團隊。
-> **一句話重點** SmallCode 透過針對小型 LLM 的優化設計，提供了一個高效的本地編碼解決方案。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (421 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Low
+> **適合** 需要在本地環境中使用小型 LLM 進行編碼任務的開發者和小型團隊。
+> **一句話重點** SmallCode 提供了一個針對小型 LLM 的高效編碼解決方案，特別適合資源有限的環境。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,31 +101,31 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、3 小時整合，得到高效的本地編碼解決方案，值得嘗試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學、3 小時整合，得到高效的編碼代理，值得採用。
 
 > [!abstract] 核心創新
-> SmallCode 是一個專為小型 LLM 設計的編碼代理，能在本地環境中高效運行。
+> SmallCode 是專為小型 LLM 設計的編碼代理，提供本地運行的解決方案，強調隱私和資源管理。
 
 ## 專案簡介
 
-SmallCode 是一個專為小型 LLM（≤20B 參數）設計的 AI 編碼代理，旨在從本地模型中提取有用的工作。它的核心機制是通過智能架構來彌補小型模型的限制，提供更高效的編碼體驗。用戶可以使用 `smallcode` 命令啟動代理，並通過簡單的指令來執行任務，例如 `smallcode --eval classify_accuracy` 來評估分類器的準確性。這個工具的賣點在於它能在不需要網絡的情況下運行，並且能夠處理多種格式的輸入，這在隱私和安全性上提供了額外的保障。技術上，SmallCode 使用了 Node.js 作為運行環境，並依賴於 Express 框架來處理請求，這使得它在性能上相對輕量。
+SmallCode 是一個專為小型 LLM（最多 20B 參數）設計的終端編碼代理，旨在從本地模型中提取有效工作。它的設計考量了小型模型的限制，透過智能架構來補償這些缺陷。用戶可以透過 `smallcode` 命令啟動代理，並使用簡單的指令來執行編碼任務，例如 `smallcode --eval classify_accuracy` 來測試分類準確性。這個工具的賣點在於它能在不依賴雲端的情況下，充分利用本地模型的能力，並提供靈活的工具調用和編輯功能。技術上，SmallCode 使用 Node.js 作為基礎，並依賴多個輕量級庫，如 Express 和 Chalk，確保了良好的性能和可擴展性。
 
-與其他工具如 OpenCode 相比，SmallCode 更加專注於小型模型，並且在工具調用和編輯方面提供了更靈活的解決方案，這使得它在小型開發環境中表現更佳。實際使用中，SmallCode 能夠處理的資料量相對較小，但在本地環境下的運行效率卻相對較高，適合需要快速迭代的開發者。這個專案目前處於 alpha 階段，雖然功能尚不完善，但其設計理念和實現方式值得關注。對於小型團隊或個人開發者來說，這是一個值得嘗試的工具，特別是在需要本地運行的情境下。
+與其他工具如 OpenCode 相比，SmallCode 更適合於資源有限的環境，因為它不需要高性能的前沿模型，而是針對小型模型進行了優化。這使得它在處理小型專案或個人開發時，能夠提供更快的反應和更低的資源消耗。實際使用中，SmallCode 能夠處理多種編碼任務，並提供即時的錯誤回報和工具調用記錄，這對於開發者來說是非常有幫助的。儘管目前仍在活躍開發中，但其功能已經足夠穩定，適合個人或小型團隊使用。未來幾個月，預計將會有更多功能和改進推出，特別是在多模態支持和工具整合方面。
 
-**技術棧**：`Node.js >=18.0.0` · `Express 5.2.1`
+**技術棧**：`Node.js >=18.0.0` · `Express 5.2.1` · `Chalk 4.1.2`
 
 ## 重點功能
 
-- 本地運行 — 完全不需要網絡，保護用戶隱私。
-- 多格式解析 — 支持多種輸入格式的解析，提升靈活性。
-- 智能架構 — 針對小型模型進行優化，提供高效的編碼體驗。
-- CLI 界面 — 簡單的命令行操作，易於上手。
-- 事件訂閱 — 支持事件監聽，方便用戶獲取運行狀態。
+- 本地運行 — 完全不依賴雲端，確保數據隱私。
+- 多格式解析 — 支持多種輸入格式，提升工具調用的靈活性。
+- 即時錯誤回報 — 提供詳細的錯誤信息，幫助用戶快速修正問題。
+- 簡單的 CLI 指令 — 透過 `smallcode` 命令輕鬆啟動和管理任務。
+- 支持多種編程語言 — 包括 JavaScript、TypeScript、Shell 等，滿足不同開發需求。
 
 ## 快速開始
 
-1. 全域安裝 SmallCode
+1. 全局安裝 SmallCode
 ```bash
 npm install -g smallcode
 ```
@@ -141,65 +141,76 @@ smallcode
 ## 程式碼範例
 
 ```js
-{
-  "前置條件": "已安裝 SmallCode",
-  "指令": "const { SmallCode } = require('smallcode');\nconst agent = new SmallCode({ model: 'gemma-4-e4b', baseUrl: 'http://localhost:1234/v1' });\nconst result = await agent.run('create hello.py that prints hello world');\nconsole.log(result.filesCreated);  // ['hello.py']\nconsole.log(result.toolCalls.length);  // 1\nconsole.log(result.success);  // true",
-  "預期輸出": "['hello.py']"
-}
+[
+  "# 前置條件：已安裝 SmallCode",
+  "const { SmallCode } = require('smallcode');",
+  "const agent = new SmallCode({ model: 'gemma-4-e4b', baseUrl: 'http://localhost:1234/v1' });",
+  "const result = await agent.run('create hello.py that prints hello world');",
+  "console.log(result.filesCreated);  // ['hello.py']",
+  "console.log(result.toolCalls.length);  // 1",
+  "console.log(result.success);  // true",
+  "# 預期輸出：生成一個名為 hello.py 的文件，並成功執行。"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 727 stars（727/天），forks 42（5.8%），顯示出一定的關注度。作者 Doorman11991 及其團隊針對小型 LLM 的需求開發了這個工具，解決了在本地環境中使用小型模型的痛點，特別是在隱私和安全性方面。這個工具的推出正好滿足了開發者對於高效編碼的需求，並且在社群中引起了討論。由於目前只有一個開放的 Issue，顯示出這個專案的穩定性和活躍度。
+> 建立 2 天就累積 842 stars（421/天），forks 55（6.5%），這顯示出相對穩定的增長。作者 Doorman11991 及其團隊在開源社群中已有一定的影響力，之前也有其他相關專案。SmallCode 解決了小型 LLM 在編碼任務中的實用性問題，之前的工具往往依賴於大型模型，導致資源浪費。這個專案的推出正好填補了這一空白，並且其設計考量了使用者的隱私需求，完全本地運行。社群的反應也表明，對於小型模型的需求正在增加，尤其是在個人開發者和小型團隊中。
 
 ## 適合誰使用
 
-**目標受眾**：需要在本地環境中使用小型 LLM 進行編碼的獨立開發者或小型團隊。
+**目標受眾**：需要在本地環境中使用小型 LLM 進行編碼任務的開發者和小型團隊。
 
 > [!example] 使用場景
-> - 獨立開發者用它來在本地環境中快速生成 Python 腳本，因為它能夠在不依賴雲端的情況下運行，提升了開發效率。
-> - 小型團隊用它來進行快速原型開發，因為它支持多種編程語言並且能夠快速評估代碼的準確性。
-> - 教育工作者用它來教學編程，因為它的 CLI 界面簡單易用，適合初學者快速上手。
+> - 獨立開發者用它來在本地環境中生成 Python 程式碼，因為它能在不依賴雲端的情況下快速響應，提升開發效率。
+> - 小型團隊用它來自動化日常的編碼任務，因為其能夠有效管理小型 LLM 的資源，降低成本。
+> - 學術研究者用它來測試小型模型的編碼能力，因為其提供了簡單的 API 和即時的錯誤回報，方便快速迭代。
 
 ## 架構分析
 
-SmallCode 採用 Node.js 作為主要運行環境，這使得其在性能上相對輕量且易於部署。架構上，SmallCode 使用了 Express 框架來處理請求，並且通過 CLI 提供用戶友好的操作介面。資料流方面，使用者的請求會被解析並交由小型 LLM 處理，最終返回結構化的結果。
+SmallCode 採用 Node.js 作為後端架構，這使得它能夠快速啟動並提供高效的 I/O 操作。其核心是基於事件驅動的架構，允許用戶在執行任務時即時接收回饋。資料流方面，使用者的請求經過多層處理，最終由小型 LLM 生成結果。
 
-這樣的設計使得 SmallCode 能夠在本地環境中運行，並且不依賴於外部 API，這在隱私和安全性上提供了保障。選擇 Node.js 的原因在於其非同步處理能力和豐富的生態系統，這使得開發者能夠快速迭代功能。整體而言，SmallCode 的架構設計是為了提供高效的編碼體驗，但在處理大型資料集時可能會面臨性能瓶頸。
+這種設計使得系統能夠在本地環境中運行，降低了對網路的依賴。選擇 Node.js 的原因在於其非同步特性，能夠有效處理多個請求。這也意味著在高負載情況下，系統仍能保持穩定。
+
+擴展性方面，SmallCode 的設計考慮到未來可能的功能擴展，並且能夠輕鬆整合其他工具和庫。
 
 ## 技術深入分析
 
-SmallCode 的核心技術機制是基於小型 LLM 的運行，並且通過 Node.js 提供的非同步處理能力來提升性能。它使用 Express 框架來處理用戶請求，這使得其能夠快速響應用戶操作。效能上，SmallCode 能夠在本地環境中運行，這對於需要快速迭代的開發者來說是非常有利的。設計取捨上，選擇 Node.js 而非其他語言是因為其生態系統豐富，能夠快速實現各種功能，但這也可能導致在處理大型資料集時性能下降。技術風險方面，隨著用戶數量的增加，可能會面臨性能瓶頸，尤其是在高並發的情況下。整合方面，SmallCode 能夠輕鬆與現有的 Node.js 生態系統整合，但對於其他語言的支持可能需要額外的適配。
+SmallCode 的核心技術機制是基於 Node.js 的事件驅動架構，這使得它能夠在本地環境中高效運行。它使用了多種輕量級的庫，如 Express 和 Chalk，以確保良好的性能和可擴展性。效能方面，SmallCode 能夠處理多達 20B 參數的模型，並且在本地運行時的冷啟動時間相對較短。設計上，選擇 Node.js 是因為其非同步特性能夠有效處理多個請求，這對於開發者來說是非常重要的。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在高負載情況下。整合方面，SmallCode 可以輕鬆與現有的工具鏈整合，特別是在 CI/CD pipeline 中，這對於開發團隊來說是一個重要的優勢。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含範例，安裝過程順暢，沒有明顯的坑。文件有簡體中文和英文版本，對於不同語言的用戶友好。
+> README 文件提供了清晰的安裝指導和範例，讓新手能夠快速上手。安裝過程順暢，無需複雜的配置。文件中有多語言支持，方便不同語言的使用者理解。整體而言，花 30 分鐘就能成功運行。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 本地運行，無需依賴雲端，提升隱私性。
+> - 本地運行，確保數據隱私。
+> - 針對小型 LLM 進行優化，資源消耗低。
+> - 提供即時的錯誤回報，提升開發效率。
 > - 支持多種編程語言，靈活性高。
-> - CLI 界面簡單易用，適合初學者。
 
 > [!danger] 缺點
-> - 僅支援小型 LLM，對於大型模型的需求無法滿足。
-> - 目前功能尚不完善，可能存在 bug。
-> - 需要 Node.js 環境，對於不熟悉的用戶可能有學習曲線。
+> - 僅支持小型 LLM，無法處理大型模型。
+> - 仍在開發中，功能可能不穩定。
+> - 對於複雜任務，可能需要額外調整。
+> - 不支持 Windows 原生安裝，需使用 WSL。
 
 > [!warning] 注意事項
-> - 僅支援小型 LLM（≤20B 參數）
-> - 需要 Node.js 環境，對於不熟悉的用戶可能有學習曲線
-> - 目前處於 alpha 階段，功能尚不完善
+> - 僅支持小型 LLM（≤20B 參數），不適合大型模型。
+> - 目前仍在開發中，可能存在不穩定的功能。
+> - 對於複雜的編碼任務，可能需要額外的手動調整。
+> - 不支持 Windows 系統的原生安裝，需使用 WSL。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於大型 LLM，適合需要高性能的應用場景，而 SmallCode 更適合小型模型的使用。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | 提供 GPT-2 的 API 接口，適合需要雲端解決方案的用戶，而 SmallCode 則是本地運行的選擇。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於大型 LLM 的編碼代理，適合需要高性能的用戶，但資源消耗較高。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更廣泛的編碼支持，但依賴於雲端服務，對隱私要求較高的用戶不太適合。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | 專注於 GPT-2 模型的 API 接口，功能較為單一，不如 SmallCode 多樣化。 |
 
 ## 替代方案決策
 
@@ -207,24 +218,24 @@ SmallCode 的核心技術機制是基於小型 LLM 的運行，並且通過 Node
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於大型 LLM，適合需要高性能的應用場景，而 SmallCode 更適合小型模型的使用。 | 如果需要處理大型模型並且有雲端資源的情況下，選擇這個工具會更合適。 | medium，因為需要重新調整架構以適應大型模型的需求。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | 提供 GPT-2 的 API 接口，適合需要雲端解決方案的用戶，而 SmallCode 則是本地運行的選擇。 | 如果需要雲端運行且希望使用 GPT-2 的功能，這個工具會是更好的選擇。 | low，因為 API 接口的使用相對簡單。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於大型 LLM 的編碼代理，適合需要高性能的用戶，但資源消耗較高。 | 如果你的團隊已經在用大型 LLM 且需要處理複雜的編碼任務。 | medium，因為需要重新調整編碼邏輯以適應大型模型的特性。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更廣泛的編碼支持，但依賴於雲端服務，對隱私要求較高的用戶不太適合。 | 如果你的團隊需要雲端協作和更高的編碼靈活性。 | low，因為其 API 設計相對簡單，容易上手。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **smallcode** | **agent-sprite-forge** | **gpt2api** |
+> | 維度 | **smallcode** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於大型 LLM，適合需要高性能的應用場景，而 SmallCode 更適合小型模型的使用。 | 提供 GPT-2 的 API 接口，適合需要雲端解決方案的用戶，而 SmallCode 則是本地運行的選擇。 |
-> | 遷移成本 | - | medium，因為需要重新調整架構以適應大型模型的需求。 | low，因為 API 接口的使用相對簡單。 |
-> | 適用場景 | 主要場景 | 如果需要處理大型模型並且有雲端資源的情況下，選擇這個工具會更 | 如果需要雲端運行且希望使用 GPT-2 的功能，這個工具會是 |
+> | 技術路線 | 本專案 | 專注於大型 LLM 的編碼代理，適合需要高性能的用戶，但資源消耗較高。 | 提供更廣泛的編碼支持，但依賴於雲端服務，對隱私要求較高的用戶不太適合。 |
+> | 遷移成本 | - | medium，因為需要重新調整編碼邏輯以適應大型模型的特性。 | low，因為其 API 設計相對簡單，容易上手。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在用大型 LLM 且需要處理複雜的編碼任務。 | 如果你的團隊需要雲端協作和更高的編碼靈活性。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
 > 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
@@ -233,37 +244,43 @@ SmallCode 的核心技術機制是基於小型 LLM 的運行，並且通過 Node
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些環境下安裝可能會遇到 Node.js 版本不兼容的問題
-  - 解法：確保使用 Node.js >= 18.0.0
-- [MEDIUM] CLI 命令在不同平台上可能有差異
-  - 解法：參考 README 中的安裝指引進行調整
-- [MEDIUM] 部分功能尚未實現，可能會導致預期行為不符
-  - 解法：定期檢查更新以獲取最新功能
+- **[HIGH]** 在某些環境下啟動時可能會出現依賴錯誤
+  - 解法：確保所有依賴都已正確安裝
+- [MEDIUM] 使用過程中可能會遇到性能瓶頸
+  - 解法：減少同時執行的任務數量
+- [low] 某些工具的功能尚未完全實現
+  - 解法：查看官方文檔以獲取最新功能更新
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 1-3 人的小型開發團隊 | 非常適合 | 能夠快速生成代碼並進行本地測試，提升開發效率。 |
-| 需要在本地環境中進行編碼的獨立開發者 | 非常適合 | 提供了高效的本地運行環境，無需依賴雲端。 |
-| 大型企業的核心系統開發 | 不適合 | 目前功能尚不完善，無法滿足高穩定性的需求。 |
+| 3-5 人的小型開發團隊 | 非常適合 | 能夠有效利用小型 LLM，降低開發成本。 |
+| 個人開發者進行小型專案 | 適合 | 提供本地運行的解決方案，確保隱私。 |
+| 大型企業的核心系統 | 不適合 | 僅支持小型 LLM，無法滿足大型系統的需求。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
+| 學習時間 | ~2 小時 |
 | 整合時間 | ~3 小時 |
 | 維護負擔 | low |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、3 小時整合，得到高效的本地編碼解決方案，值得嘗試。
+> 花 2 小時學、3 小時整合，得到高效的編碼代理，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：本工具在本地運行，不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：SmallCode 在本地運行，不需要高權限，也不存取敏感資料，適合在 CI/CD pipeline 中使用。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+SmallCode 可以與多種開發工具和 CI/CD 系統整合，特別是 Node.js 環境下的工具鏈。它能夠與 GitHub Actions 和 GitLab CI 無縫整合，並且可以在 VS Code 中使用。實際整合範例包括在一個使用 Node.js 的專案中，通過 `npm install` 安裝 SmallCode，然後在 CI pipeline 中調用 `smallcode` 命令來執行自動化測試。常見的整合問題包括依賴版本不匹配，建議使用最新版本的 Node.js 和相關庫來避免。
 
 ## 健康度儀表板
 
@@ -328,12 +345,12 @@ SmallCode 的核心技術機制是基於小型 LLM 的運行，並且通過 Node
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 42 |
-| Open Issues | 1 |
-| Issue 解決率 | 91% (10 closed) |
-| 最後推送 | 2026-05-19 |
+| Forks | 55 |
+| Open Issues | 4 |
+| Issue 解決率 | 71% (10 closed) |
+| 最後推送 | 2026-05-20 |
 | 建立日期 | 2026-05-18 |
-| Repo 大小 | 711 KB |
+| Repo 大小 | 11.2 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Doorman11991/smallcode) |
 
 > [!info]- 主要依賴
@@ -351,25 +368,29 @@ SmallCode 的核心技術機制是基於小型 LLM 的運行，並且通過 Node
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Doorman11991](https://github.com/Doorman11991) | 98 |
-> | [@Zireael](https://github.com/Zireael) | 8 |
+> | [@Doorman11991](https://github.com/Doorman11991) | 100 |
+> | [@Zireael](https://github.com/Zireael) | 11 |
 > | [@giveen](https://github.com/giveen) | 1 |
+> | [@radare](https://github.com/radare) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放的 Issue 數量少，顯示出穩定性。
+**社群活躍度**：社群活躍度中等，開發者對問題回應速度尚可。
 **連結**：[文件](https://www.npmjs.com/package/smallcode)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-19 ~ 2026-05-19）
-> **活躍天數** 1 天 · **最新 commit** v0.6.14: RTK (Rust Token Killer) integration — auto-rewrite bash commands for 60-90%% token savings
+> [!abstract] 最近 10 次 commit（2026-05-19 ~ 2026-05-20）
+> **活躍天數** 2 天 · **最新 commit** Merge pull request #16 from Zireael/pr/branch-fix
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
+> | [#20](https://github.com/Doorman11991/smallcode/issues/20) | ACP (Agent Client Protocol) support | 0 | 0 |
+> | [#18](https://github.com/Doorman11991/smallcode/issues/18) | Crash again | 0 | 0 |
+> | [#17](https://github.com/Doorman11991/smallcode/issues/17) | Please automate the updatation of the version number showing | 0 | 1 |
 > | [#10](https://github.com/Doorman11991/smallcode/issues/10) | Unable to scroll up | 0 | 6 |
 
 ## README 摘錄
@@ -490,9 +511,9 @@ SmallCode 的核心技術機制是基於小型 LLM 的運行，並且通過 Node
 
 ## 延伸閱讀
 
-相關概念：[[LLM 推論]] · [[CLI/TUI]] · [[自動化]]
+相關概念：[[LLM 推論]] · [[CLI/TUI]] · [[自動化測試]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[kyegomez--OpenMythos|kyegomez/OpenMythos]] · [[lightseekorg--tokenspeed|lightseekorg/tokenspeed]] · [[tanishqkumar--ssd|tanishqkumar/ssd]] · [[Infatoshi--OpenSquirrel|Infatoshi/OpenSquirrel]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]] · [[future-agi--future-agi|future-agi/future-agi]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[kyegomez--OpenMythos|kyegomez/OpenMythos]] · [[lightseekorg--tokenspeed|lightseekorg/tokenspeed]] · [[tanishqkumar--ssd|tanishqkumar/ssd]] · [[Infatoshi--OpenSquirrel|Infatoshi/OpenSquirrel]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]]
 
 [GitHub](https://github.com/Doorman11991/smallcode)
 
@@ -534,7 +555,7 @@ SmallCode 的核心技術機制是基於小型 LLM 的運行，並且通過 Node
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["LLM 推論","CLI/TUI","自動化"];
+> const concepts = ["LLM 推論","CLI/TUI","自動化測試"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Doorman11991--smallcode" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
