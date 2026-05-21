@@ -7,9 +7,9 @@ language: N/A
 license: MIT
 description: "Provider-neutral Agent Skill for Codex, Claude Code, and agentic harness design."
 homepage: ""
-stars: 853
-stars_per_day: 213
-forks: 78
+stars: 902
+stars_per_day: 180
+forks: 83
 open_issues: 4
 created: 2026-05-15
 pushed_at: 2026-05-15
@@ -30,8 +30,8 @@ use_case: "提供中立的代理技能設計，適用於 Codex、Claude Code 和
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-05-23"
+appearances: 4
+next_review: "2026-05-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-18"
-star_history: "2026-05-18:721,2026-05-18:721,2026-05-19:816,2026-05-19:816,2026-05-20:853,2026-05-20:853"
+star_history: "2026-05-18:721,2026-05-18:721,2026-05-19:816,2026-05-19:816,2026-05-20:853,2026-05-20:853,2026-05-21:902"
 tags:
   - github
   - "category/開發工具"
@@ -867,6 +867,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-21|2026-05-21]] — 再次上榜，902 stars
 - [[2026-05-20|2026-05-20]] — 再次上榜，853 stars
 - [[2026-05-19|2026-05-19]] — 再次上榜，816 stars
 - [[2026-05-18|2026-05-18]] — 首次收錄，721 stars

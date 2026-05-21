@@ -7,8 +7,8 @@ language: C++
 license: MIT
 description: "Subnautica 2: Early Access release, Have Multiplayer 4-player co-op multiplayer, Planet Zazura exploration, DNA BioMod system, Tadpole modular submersible, new Leviathans list, CICADA crash site lore. Xbox Game Pass, Steam preload, base building blueprints, ocean currents, crafting recipes"
 homepage: ""
-stars: 644
-stars_per_day: 129
+stars: 669
+stars_per_day: 112
 forks: 0
 open_issues: 0
 created: 2026-05-14
@@ -30,8 +30,8 @@ use_case: "提供多人合作的水下生存冒險遊戲 Subnautica 2，探索�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-27"
+appearances: 2
+next_review: "2026-05-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: 6
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-20"
-star_history: "2026-05-20:644,2026-05-20:644"
+star_history: "2026-05-20:644,2026-05-20:644,2026-05-21:669"
 tags:
   - github
   - "category/遊戲"
@@ -669,4 +669,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-21|2026-05-21]] — 再次上榜，669 stars
 - [[2026-05-20|2026-05-20]] — 首次收錄，644 stars

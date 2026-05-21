@@ -7,12 +7,12 @@ language: C
 license: Apache-2.0
 description: "The programming language for agents"
 homepage: "https://zerolang.ai"
-stars: 3242
-stars_per_day: 811
-forks: 193
-open_issues: 72
+stars: 3980
+stars_per_day: 796
+forks: 238
+open_issues: 84
 created: 2026-05-15
-pushed_at: 2026-05-20
+pushed_at: 2026-05-21
 first_seen: 2026-05-20
 week: "2026-W21"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "為代理人設計的編程語言，專注於快速學習和結構化
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-23"
+appearances: 2
+next_review: "2026-05-24"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 8
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-20"
-star_history: "2026-05-20:3242"
+star_history: "2026-05-20:3242,2026-05-21:3980"
 tags:
   - github
   - "category/開發工具"
@@ -779,4 +779,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-21|2026-05-21]] — 再次上榜，4.0k stars
 - [[2026-05-20|2026-05-20]] — 首次收錄，3.2k stars

@@ -7,9 +7,9 @@ language: JavaScript
 license: MIT
 description: "A browser-based isometric island builder with the soft, sun-bleached look of Mykonos. Vanilla ES modules, no bundler, mobile-friendly."
 homepage: "https://mykonos-island-voxels.netlify.app"
-stars: 663
-stars_per_day: 133
-forks: 158
+stars: 679
+stars_per_day: 113
+forks: 160
 open_issues: 1
 created: 2026-05-14
 pushed_at: 2026-05-14
@@ -30,8 +30,8 @@ use_case: "一個基於瀏覽器的等角島嶼建設者，讓你隨意創建美
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-27"
+appearances: 2
+next_review: "2026-05-28"
 contributor_count: 0
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-20"
-star_history: "2026-05-20:661,2026-05-20:663"
+star_history: "2026-05-20:661,2026-05-20:663,2026-05-21:679"
 tags:
   - github
   - "category/遊戲"
@@ -866,4 +866,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-21|2026-05-21]] — 再次上榜，679 stars
 - [[2026-05-20|2026-05-20]] — 首次收錄，661 stars

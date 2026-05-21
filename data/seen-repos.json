@@ -1723,10 +1723,10 @@
   },
   "yetone/native-feel-skill": {
     "first_seen": "2026-05-16",
-    "last_seen": "2026-05-20",
-    "times_seen": 5,
+    "last_seen": "2026-05-21",
+    "times_seen": 6,
     "stars_first": 1066,
-    "stars_last": 1335
+    "stars_last": 1353
   },
   "cclank/cell-architecture-studio": {
     "first_seen": "2026-05-16",
@@ -1744,10 +1744,10 @@
   },
   "DenisSergeevitch/agents-best-practices": {
     "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20",
-    "times_seen": 3,
+    "last_seen": "2026-05-21",
+    "times_seen": 4,
     "stars_first": 721,
-    "stars_last": 853
+    "stars_last": 902
   },
   "DepthFirstDisclosures/Nginx-Rift": {
     "first_seen": "2026-05-18",
@@ -1758,10 +1758,10 @@
   },
   "facebookresearch/vggt-omega": {
     "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20",
-    "times_seen": 2,
+    "last_seen": "2026-05-21",
+    "times_seen": 3,
     "stars_first": 984,
-    "stars_last": 1219
+    "stars_last": 1351
   },
   "TriangleFalcon/KMS-Tools-Portable-2026-Last-Version": {
     "first_seen": "2026-05-19",
@@ -1779,10 +1779,10 @@
   },
   "Kappaemme-git/codex-complexity-optimizer": {
     "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20",
-    "times_seen": 2,
+    "last_seen": "2026-05-21",
+    "times_seen": 3,
     "stars_first": 749,
-    "stars_last": 788
+    "stars_last": 805
   },
   "gi-dellav/zerostack": {
     "first_seen": "2026-05-19",
@@ -1793,17 +1793,17 @@
   },
   "vercel-labs/zerolang": {
     "first_seen": "2026-05-20",
-    "last_seen": "2026-05-20",
-    "times_seen": 1,
+    "last_seen": "2026-05-21",
+    "times_seen": 2,
     "stars_first": 3242,
-    "stars_last": 3242
+    "stars_last": 3980
   },
   "Doorman11991/smallcode": {
     "first_seen": "2026-05-20",
-    "last_seen": "2026-05-20",
-    "times_seen": 1,
+    "last_seen": "2026-05-21",
+    "times_seen": 2,
     "stars_first": 728,
-    "stars_last": 728
+    "stars_last": 842
   },
   "cdanielc293/Jenny-Mod-All-Versions": {
     "first_seen": "2026-05-20",
@@ -1814,16 +1814,30 @@
   },
   "boona13/mykonos-island-voxels": {
     "first_seen": "2026-05-20",
-    "last_seen": "2026-05-20",
-    "times_seen": 1,
+    "last_seen": "2026-05-21",
+    "times_seen": 2,
     "stars_first": 661,
-    "stars_last": 661
+    "stars_last": 679
   },
   "Juwluuu/Subnautica-2-Release": {
     "first_seen": "2026-05-20",
-    "last_seen": "2026-05-20",
-    "times_seen": 1,
+    "last_seen": "2026-05-21",
+    "times_seen": 2,
     "stars_first": 644,
-    "stars_last": 644
+    "stars_last": 669
+  },
+  "FoundZiGu/GuJumpgate": {
+    "first_seen": "2026-05-21",
+    "last_seen": "2026-05-21",
+    "times_seen": 1,
+    "stars_first": 957,
+    "stars_last": 957
+  },
+  "thananon/9arm-skills": {
+    "first_seen": "2026-05-21",
+    "last_seen": "2026-05-21",
+    "times_seen": 1,
+    "stars_first": 890,
+    "stars_last": 890
   }
 }
