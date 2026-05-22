@@ -7,10 +7,10 @@ language: Python
 license: N/A
 description: "exploit for CVE-2026-42945"
 homepage: ""
-stars: 753
-stars_per_day: 94
-forks: 133
-open_issues: 7
+stars: 782
+stars_per_day: 87
+forks: 136
+open_issues: 8
 created: 2026-05-12
 pushed_at: 2026-05-13
 first_seen: 2026-05-18
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-18
-use_case: "針對 CVE-2026-42945 的漏洞利用工具，能夠實現對 NGINX 的遠程代碼執行。"
+use_case: "針對 CVE-2026-42945 的遠端代碼執行漏洞利用工具。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-18"
-star_history: "2026-05-18:674,2026-05-18:674,2026-05-19:711,2026-05-20:732,2026-05-21:753"
+star_history: "2026-05-18:674,2026-05-18:674,2026-05-19:711,2026-05-20:732,2026-05-21:753,2026-05-22:782"
 tags:
   - github
   - "category/安全"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "Nginx-Rift"
   - "DepthFirstDisclosures/Nginx-Rift"
-  - "針對 CVE-2026-42945 的漏洞利用工具，能夠實現對 NGINX 的遠程代碼執行。"
+  - "針對 CVE-2026-42945 的遠端代碼執行漏洞利用工具。"
 ---
 
 # Nginx-Rift
 
-**753** stars · **94** stars/天 · 建立 8 天前 · Python · 未標註授權
+**782** stars · **87** stars/天 · 建立 9 天前 · Python · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/DepthFirstDisclosures--Nginx-Rift");
@@ -71,13 +71,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> 針對 CVE-2026-42945 的漏洞利用工具，能夠實現對 NGINX 的遠程代碼執行。
+> 針對 CVE-2026-42945 的遠端代碼執行漏洞利用工具。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (94 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 7 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要測試 NGINX 安全性但不想影響生產環境的安全研究人員。
-> **一句話重點** 這個專案讓安全研究人員能夠快速利用 NGINX 的漏洞，進行安全測試。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (87 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 8 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要針對 NGINX 伺服器進行安全測試的滲透測試人員和安全研究者。
+> **一句話重點** 這個專案展示了如何針對特定漏洞提供簡單易用的利用工具，對安全研究者非常有價值。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -100,41 +100,31 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、3 小時整合，得到快速驗證 NGINX 安全性的效果，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，1 小時整合，得到快速驗證 NGINX 漏洞的效果，值得安全研究者使用。
 
 > [!abstract] 核心創新
-> 提供了一個針對 NGINX 的遠程代碼執行漏洞的簡單利用工具。
+> 提供針對 NGINX 的特定漏洞利用工具，簡化了 RCE 攻擊的過程。
 
 ## 專案簡介
 
-這個專案提供了一個針對 NGINX 的遠程代碼執行漏洞（CVE-2026-42945）的利用工具。該漏洞源於 NGINX 的 `ngx_http_rewrite_module`，利用了堆緩衝區溢出。具體來說，當 `rewrite` 和 `set` 指令被使用時，攻擊者可以通過操控 URI 數據來觸發溢出，進而執行任意代碼。使用者只需執行 `python3 poc.py --shell` 指令，即可在受影響的伺服器上獲得 shell 訪問。這個工具的賣點在於其簡單易用的利用流程，讓安全研究人員可以快速驗證 NGINX 的安全性。
+這個專案提供了一個針對 NGINX 的 CVE-2026-42945 漏洞的遠端代碼執行（RCE）概念驗證工具。該漏洞源於 NGINX 的 `ngx_http_rewrite_module` 中的堆緩衝區溢出，攻擊者可以利用此漏洞在未經身份驗證的情況下執行任意代碼。具體流程為：首先，使用者執行 `setup.sh` 來構建容器，然後啟動一個易受攻擊的 NGINX 伺服器，最後運行 `poc.py` 來觸發漏洞並獲取 shell。這個工具的賣點在於其簡單的使用流程和針對特定漏洞的專注性。技術上，該工具利用了 NGINX 的兩次處理過程，通過不當的長度計算和數據複製導致堆緩衝區溢出，進而實現代碼執行。
 
-技術上，該專案使用 Python 和 Shell 實現，並依賴 Docker 來啟動一個易受攻擊的 NGINX 環境。這種設計使得使用者可以在隔離的環境中進行測試，避免對生產環境造成影響。該專案的依賴相對輕量，主要集中在 Docker 和 Python 環境。
-
-
-
-與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，Nginx-Rift 專注於特定的 NGINX 漏洞，並提供了直接的利用方式，而不是僅僅是漏洞掃描或報告工具。這使得它在針對 NGINX 的安全測試中更具針對性。
-
-使用者在實際操作中可能會遇到一些問題，例如在不同版本的 NGINX 上可能無法正常工作，這在熱門 Issues 中有提到。社群活躍度不高，開放的問題數量顯示出尚未有足夠的使用者回饋來解決這些問題。
-
-總體而言，這個專案目前處於 alpha 階段，對於安全研究者來說，值得一試，但不建議在生產環境中使用。預計未來會有更多的改進和修復，特別是在兼容性方面。
-
-建議使用情境包括：安全測試人員在測試 NGINX 部署時，或是開發者需要驗證其應用的安全性時；不建議用於生產環境的直接攻擊，因為可能會導致服務中斷或數據損失。
+這種設計使得攻擊者能夠控制 URI 數據，並通過跨請求的堆 feng shui 技術來破壞相鄰的內存結構。與其他漏洞利用工具相比，如 Metasploit，這個專案專注於特定的 NGINX 漏洞，並提供了更簡單的操作界面。使用者在實際操作中可能會遇到 ASLR 繞過的需求，這在熱門問題中有提及。該專案的社群活躍度不高，開放問題未解決率為 0%，可能影響使用者的實際體驗。整體來看，這是一個針對特定漏洞的專用工具，適合安全研究人員和滲透測試者使用。
 
 **技術棧**：`Python` · `Shell` · `Docker`
 
 ## 重點功能
 
-- 漏洞利用 — 針對 CVE-2026-42945 的遠程代碼執行利用工具，簡單易用。
-- Docker 支援 — 通過 Docker 快速啟動易受攻擊的 NGINX 環境，避免對生產系統的影響。
-- Python 實現 — 使用 Python 編寫，便於修改和擴展。
-- Shell 訪問 — 透過 `python3 poc.py --shell` 指令獲得 shell 訪問。
-- 兼容性 — 已在 Ubuntu 24.04.3 LTS 上測試，提供了具體的使用環境。
+- 漏洞概念驗證 — 提供針對 CVE-2026-42945 的 RCE 利用工具。
+- 簡單的使用流程 — 只需三個步驟即可獲取 shell。
+- 容器化環境 — 使用 Docker 快速搭建易受攻擊的 NGINX 伺服器。
+- 支援多版本 NGINX — 可在多個版本的 NGINX 上測試該漏洞。
+- 社群支持 — 提供熱門問題的討論，幫助用戶解決使用過程中的問題。
 
 ## 快速開始
 
-1. 建立容器
+1. 構建容器
 ```bash
 ./setup.sh
 ```
@@ -151,64 +141,62 @@ python3 poc.py --shell
 
 ```python
 {
-  "前置條件": "需要在 Docker 環境中運行",
+  "前置條件": "在 Ubuntu 24.04.3 LTS 上執行",
   "指令": "python3 poc.py --shell",
-  "預期輸出": "獲得 shell 訪問"
+  "預期輸出": "獲取 shell"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 8 天就累積 753 stars（94/天），forks 133（17.7%），這顯示出對於這個漏洞的高度關注。主要貢獻者 Markakd 在安全領域有一定的背景，這使得專案更具可信度。這個工具解決了 NGINX 遠程代碼執行的需求，之前的解決方案往往缺乏針對性，無法直接利用此漏洞。社群對於如何有效利用這個漏洞的討論也促進了專案的曝光度。最近的推文和討論可能進一步推動了這個專案的流行。forks/stars 比率為 17.7%，顯示出有相當一部分使用者在進行實際修改和使用。
+> 建立 9 天就累積 782 stars（87/天），forks 136（17.4%），這顯示出相對較高的社群參與度。這個專案由 Markakd 貢獻，專注於一個關鍵的安全漏洞，解決了 NGINX 中長期存在的堆緩衝區溢出問題。這個漏洞之前的利用方式較為複雜，並且缺乏針對性工具。最近的安全討論和漏洞披露可能也促進了這個專案的關注。forks/stars 比率為 17.4%，顯示出有相當比例的用戶在進行實際修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要測試 NGINX 安全性但不想影響生產環境的安全研究人員。
+**目標受眾**：需要針對 NGINX 伺服器進行安全測試的滲透測試人員和安全研究者。
 
 > [!example] 使用場景
-> - 安全測試人員用它來驗證 NGINX 部署的安全性，因為它能快速利用 CVE-2026-42945 漏洞，讓測試更具針對性。
-> - 開發者用它來測試自己的應用是否受到 NGINX 漏洞影響，因為它提供了簡單的利用方式，能迅速確認安全性。
-> - 系統管理員用它來檢查現有 NGINX 配置的安全性，因為它能在隔離環境中進行測試，避免影響生產系統。
+> - 安全研究人員用它來測試 NGINX 伺服器的安全性，因為它能快速驗證 CVE-2026-42945 漏洞的存在。
+> - 滲透測試者用它來模擬攻擊，因為這個工具提供了簡單的步驟來獲取 shell，幫助評估系統的防禦能力。
+> - 開發者用它來檢查自家 NGINX 部署的安全性，因為能夠快速驗證是否受到該漏洞影響，並及時修補。
 
 ## 架構分析
 
-這個專案的架構主要基於 Docker 容器化技術，目的是為了提供一個隔離的測試環境。使用者可以通過 `setup.sh` 腳本快速建立容器，並在其中運行易受攻擊的 NGINX 伺服器。這樣的設計使得測試過程不會影響到生產環境，降低了風險。
-
-資料流方面，使用者的請求經過 NGINX 伺服器，觸發漏洞，最終導致遠程代碼執行。選擇 Docker 作為環境的原因是其便捷性和可攜性，但這也意味著使用者需要具備一定的 Docker 知識。擴展性方面，未來可以考慮增加對其他版本 NGINX 的支持，以提高工具的通用性。
+該專案採用容器化架構，利用 Docker 環境來模擬易受攻擊的 NGINX 伺服器。使用者首先執行 `setup.sh` 來構建環境，然後啟動 NGINX 伺服器，最後運行 Python 腳本來觸發漏洞。這種設計使得使用者能夠在隔離的環境中安全地測試漏洞，降低了對本地環境的影響。選擇 Docker 的好處在於其可攜性和一致性，但也帶來了對 Docker 環境的依賴。擴展性方面，該架構能夠輕鬆地在不同版本的 NGINX 上進行測試，但對於特定配置的支持可能有限。
 
 ## 技術深入分析
 
-該專案的核心技術機制是針對 NGINX 的堆緩衝區溢出漏洞進行利用。利用過程中，攻擊者通過操控 URI 數據來觸發溢出，最終實現遠程代碼執行。這種設計的優勢在於其簡單性，使用者只需執行一條命令即可獲得 shell 訪問。效能方面，由於其依賴 Docker，啟動速度相對較快，但在資源使用上可能會受到 Docker 容器的限制。設計取捨方面，選擇 Docker 作為環境的原因是為了提供隔離性，但這也要求使用者具備 Docker 的基本知識。技術風險方面，若未來 NGINX 更新，可能會導致此工具失效，需持續關注 NGINX 的版本變化。整合分析方面，該工具與主流的 CI/CD 流程整合難度較高，因為其主要用於手動測試而非自動化流程。
+該專案的核心技術機制是利用 NGINX 的兩次處理過程，通過不當的長度計算和數據複製導致堆緩衝區溢出。具體來說，當 `rewrite` 指令中包含 `?` 時，主引擎的 `is_args` 標誌會被設置，但長度計算過程在一個新初始化的子引擎中進行，導致溢出。這種設計使得攻擊者能夠控制 URI 數據，並通過跨請求的堆 feng shui 技術來破壞相鄰的內存結構。效能方面，該工具的冷啟動時間取決於 Docker 容器的啟動速度，通常在幾秒鐘內完成。設計選擇上，使用 Python 和 Shell 進行開發，這使得工具的可讀性和可維護性較高，但也帶來了對 Python 環境的依賴。技術風險方面，該工具在未來可能面臨 NGINX 更新導致的兼容性問題，特別是對於新版本的支持。整合方面，該工具可以與現有的安全測試流程相結合，但需要注意 Docker 的配置和依賴問題。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的使用指引，並包含了具體的安裝步驟。安裝過程相對順暢，但需要使用者具備 Docker 知識。文件中未提供多語言支持，可能對非英語使用者造成一定障礙。整體來說，花 30 分鐘能夠順利跑起來，但對於不熟悉 Docker 的使用者可能需要更多時間。
+> README 文件清晰，並提供了具體的使用範例。安裝過程順暢，但需要 Docker 環境。沒有提供多語言支持，主要以英文為主。整體來說，花 30 分鐘能夠順利運行。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用，能快速驗證 NGINX 的安全性。
-> - 提供隔離的測試環境，避免影響生產系統。
-> - 針對特定漏洞進行設計，具有高度針對性。
+> - 針對特定漏洞的專用工具，簡化了測試流程。
+> - 容器化設計，易於搭建和使用。
+> - 活躍的社群討論，能夠獲得即時幫助。
 
 > [!danger] 缺點
-> - 僅支援特定版本的 NGINX，可能無法廣泛應用。
-> - 需要 Docker 環境，對於不熟悉的使用者有學習曲線。
-> - 社群活躍度不高，開放問題未解決。
+> - 僅支援特定版本的 NGINX，使用範圍有限。
+> - 對於 ASLR 繞過的需求未明確說明，可能影響使用效果。
+> - 社群活躍度不高，解決問題的速度可能較慢。
 
 > [!warning] 注意事項
-> - 僅支援特定版本的 NGINX，可能不適用於所有環境。
-> - 需要 Docker 環境，對於不熟悉 Docker 的使用者可能會有學習曲線。
-> - 目前存在多個開放的問題，可能影響使用體驗。
+> - 僅支援 NGINX 版本 0.6.27 – 1.30.0。
+> - 需要 Docker 環境來運行。
+> - 對於 ASLR 繞過的需求未明確說明，可能影響某些環境的使用。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供了針對多種漏洞的利用工具，但不專注於 NGINX，因此在針對性上不如本專案。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 同樣是一個漏洞利用工具，但其範圍更廣泛，並不專注於特定的 NGINX 漏洞。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於不同的漏洞利用，但不針對 NGINX，適合更廣泛的安全測試。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供多種漏洞利用工具，但相對於 NGINX-Rift，缺乏針對特定漏洞的深度。 |
 
 ## 替代方案決策
 
@@ -216,16 +204,16 @@ python3 poc.py --shell
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供多種漏洞的利用工具，並不專注於特定的 NGINX 漏洞，因此在針對性上不如本專案。 | 如果需要一個通用的漏洞利用工具，並且不僅限於 NGINX 的話，可以選擇它。 | medium，因為需要重新學習其使用方式和配置。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 同樣是一個漏洞利用工具，但其範圍更廣泛，並不專注於特定的 NGINX 漏洞。 | 如果需要針對多種漏洞進行測試，而不僅限於 NGINX，則可以考慮使用它。 | medium，因為需要適應不同的工具使用方式。 |
+| Metasploit | 提供多種漏洞利用模組，涵蓋範圍更廣，但不專注於特定的 NGINX 漏洞。 | 如果需要針對多種漏洞進行測試，Metasploit 是更好的選擇。 | medium，因為需要學習 Metasploit 的使用方式和模組結構。 |
+| CVE-2026-42945-Exploit | 專注於 CVE-2026-42945 的利用，但缺乏容器化設計，使用上較為繁瑣。 | 如果需要在不使用 Docker 的環境中測試，這個工具可能更合適。 | low，因為功能相似，轉移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **Nginx-Rift** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **Nginx-Rift** | **Metasploit** | **CVE-2026-42945-Exploit** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供多種漏洞的利用工具，並不專注於特定的 NGINX 漏洞，因此在針對性上不如本專案。 | 同樣是一個漏洞利用工具，但其範圍更廣泛，並不專注於特定的 NGINX 漏洞。 |
-> | 遷移成本 | - | medium，因為需要重新學習其使用方式和配置。 | medium，因為需要適應不同的工具使用方式。 |
-> | 適用場景 | 主要場景 | 如果需要一個通用的漏洞利用工具，並且不僅限於 NGINX 的 | 如果需要針對多種漏洞進行測試，而不僅限於 NGINX，則可以 |
+> | 技術路線 | 本專案 | 提供多種漏洞利用模組，涵蓋範圍更廣，但不專注於特定的 NGINX 漏洞。 | 專注於 CVE-2026-42945 的利用，但缺乏容器化設計，使用上較為繁瑣。 |
+> | 遷移成本 | - | medium，因為需要學習 Metasploit 的使用方式和模組結構。 | low，因為功能相似，轉移成本較低。 |
+> | 適用場景 | 主要場景 | 如果需要針對多種漏洞進行測試，Metasploit 是更好的 | 如果需要在不使用 Docker 的環境中測試，這個工具可能更 |
 
 ## 成熟度評估
 
@@ -236,44 +224,44 @@ python3 poc.py --shell
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合安全研究人員進行測試，但不建議用於生產環境。
+> 適合安全研究人員進行漏洞測試，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在不同版本的 NGINX 上可能無法正常工作，特別是較新版本的兼容性問題。
-  - 解法：確認 NGINX 版本並使用相應的修補工具。
-- [MEDIUM] 需要手動配置 Docker 環境，對於不熟悉的使用者可能會遇到困難。
-  - 解法：參考 Docker 官方文檔進行配置。
-- [MEDIUM] 目前存在多個開放的問題，可能影響使用體驗。
-  - 解法：關注社群更新，並嘗試尋找解決方案。
+- **[HIGH]** 在某些系統上，poc.py 可能無法正常工作，特別是 NGINX 版本不兼容時。
+  - 解法：檢查 NGINX 版本並確保使用正確的配置。
+- [MEDIUM] 需要 ASLR 繞過，未明確說明如何操作。
+  - 解法：考慮使用其他工具或手動配置 ASLR 繞過。
+- [MEDIUM] 開放問題未解決率高，可能影響使用者的實際體驗。
+  - 解法：參與社群討論，尋求幫助。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊進行 NGINX 安全測試 | 非常適合 | 專案專注於 NGINX 漏洞，能快速驗證安全性。 |
-| 大型企業的生產環境 | 不適合 | 目前處於 alpha 階段，存在安全風險。 |
-| 安全研究人員進行漏洞研究 | 適合 | 提供了針對性強的漏洞利用工具，便於研究。 |
-| 不熟悉 Docker 的使用者 | 普通 | 需要一定的 Docker 知識，可能會增加學習成本。 |
+| 大型企業的安全測試團隊 | 適合 | 能夠快速驗證 NGINX 的安全性，並提供具體的漏洞利用工具。 |
+| 小型開發團隊 | 普通 | 可能需要額外的安全知識來有效使用該工具。 |
+| 個人安全研究者 | 非常適合 | 提供簡單易用的工具來測試特定漏洞。 |
+| 運營商的生產環境 | 不適合 | 不建議在生產環境中使用，因為存在安全風險。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
-| 維護負擔 | medium |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~1 小時 |
+| 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、3 小時整合，得到快速驗證 NGINX 安全性的效果，值得一試。
+> 花 2 小時學習，1 小時整合，得到快速驗證 NGINX 漏洞的效果，值得安全研究者使用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具本身不需要高權限，但在使用過程中可能會接觸到敏感資料。依賴的 Docker 環境需保持安全，避免未經授權的訪問。
+> 該工具本身不需要高權限，但可能需要訪問敏感資料（如 NGINX 配置）。依賴鏈的信任程度尚可，因為主要依賴於 Python 和 Docker，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -338,8 +326,8 @@ python3 poc.py --shell
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 133 |
-| Open Issues | 7 |
+| Forks | 136 |
+| Open Issues | 8 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-05-13 |
 | 建立日期 | 2026-05-12 |
@@ -360,7 +348,7 @@ python3 poc.py --shell
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度不高，開放問題數量顯示尚未有足夠的使用者回饋。
+**社群活躍度**：社群活躍度不高，開放問題未解決率為 0%。
 
 ## 開發動態
 
@@ -372,10 +360,9 @@ python3 poc.py --shell
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#4](https://github.com/DepthFirstDisclosures/Nginx-Rift/issues/4) | Hardcoded HEAP_BASE, LIBC_BASE, and PREREAD_HEAP_OFFSET do n | 1 | 1 |
+> | [#4](https://github.com/DepthFirstDisclosures/Nginx-Rift/issues/4) | Hardcoded HEAP_BASE, LIBC_BASE, and PREREAD_HEAP_OFFSET do n | 2 | 1 |
 > | [#7](https://github.com/DepthFirstDisclosures/Nginx-Rift/issues/7) | Might be worth making the need for an ASLR bypass more visib | 0 | 1 |
 > | [#6](https://github.com/DepthFirstDisclosures/Nginx-Rift/issues/6) | poc.py isn't working, my Nginx version: 1.26.3, please see m | 0 | 2 |
-> | [#3](https://github.com/DepthFirstDisclosures/Nginx-Rift/issues/3) | wont work its fake | 0 | 0 |
 
 ## README 摘錄
 
@@ -418,7 +405,7 @@ python3 poc.py --shell
 
 ## 延伸閱讀
 
-相關概念：[[安全漏洞]] · [[遠程代碼執行]] · [[堆緩衝區溢出]]
+相關概念：[[安全漏洞]] · [[滲透測試]] · [[遠端代碼執行]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Nightmare-Eclipse--RedSun|Nightmare-Eclipse/RedSun]] · [[hicode002--qualcomm_gbl_exploit_poc|hicode002/qualcomm_gbl_exploit_poc]] · [[opa334--darksword-kexploit|opa334/darksword-kexploit]] · [[Nightmare-Eclipse--YellowKey|Nightmare-Eclipse/YellowKey]] · [[V4bel--dirtyfrag|V4bel/dirtyfrag]] · [[dazzyddos--PrivHound|dazzyddos/PrivHound]]
 
@@ -462,7 +449,7 @@ python3 poc.py --shell
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["安全漏洞","遠程代碼執行","堆緩衝區溢出"];
+> const concepts = ["安全漏洞","滲透測試","遠端代碼執行"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "DepthFirstDisclosures--Nginx-Rift" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

@@ -417,7 +417,7 @@ Wallpaper Engine 最常與 Windows 桌面環境搭配使用，特別是在遊戲
 
 相關概念：[[桌面自訂]] · [[動畫壁紙]] · [[社群創作]]
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]]
 
 [GitHub](https://github.com/xw7872081123/wallpaper-engine-steam)
 
