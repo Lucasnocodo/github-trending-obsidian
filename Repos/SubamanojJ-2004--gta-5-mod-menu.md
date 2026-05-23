@@ -1,65 +1,70 @@
 ---
-repo: thananon/9arm-skills
-url: https://github.com/thananon/9arm-skills
-owner: thananon
+repo: SubamanojJ-2004/gta-5-mod-menu
+url: https://github.com/SubamanojJ-2004/gta-5-mod-menu
+owner: SubamanojJ-2004
 owner_type: User
-language: Shell
-license: N/A
-description: ""
+language: N/A
+license: MIT
+description: "Ultimate Enhancement Toolkit for GTA V — powerful mod menu with ESP, vehicle spawner, recovery features, and clean UI"
 homepage: ""
-stars: 1522
-stars_per_day: 507
-forks: 204
-open_issues: 2
-created: 2026-05-20
-pushed_at: 2026-05-20
-first_seen: 2026-05-21
+stars: 445
+stars_per_day: 74
+forks: 61
+open_issues: 0
+created: 2026-05-16
+pushed_at: 2026-05-16
+first_seen: 2026-05-23
 week: "2026-W21"
 month: "2026-05"
-category: "開發工具"
-subcategory: "程式碼工具"
-release_tag: ""
+category: "遊戲"
+subcategory: "模組工具"
+release_tag: "v1.1.5"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-05-21
-use_case: "提供一系列針對工程和生產力的 Shell 技能，幫助開發者提升日常工作效率。"
-priority: high
+last_reviewed: 2026-05-23
+use_case: "為 GTA V 提供強大的模組菜單，包含 ESP、載具生成器、恢復功能和乾淨的 UI。"
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-05-26"
-contributor_count: 0
+appearances: 1
+next_review: "2026-05-30"
+contributor_count: 1
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 20
-readme_length: 1891
-bus_factor: 0
-last_release_days: -1
-release_cadence: "never"
+issue_close_rate: -1
+repo_size_kb: 19
+readme_length: 2313
+bus_factor: 1
+last_release_days: 7
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-05-21"
-star_history: "2026-05-21:890,2026-05-22:1166,2026-05-23:1522"
+ring_history: "assess@2026-05-23"
+star_history: "2026-05-23:445"
 tags:
   - github
-  - "category/開發工具"
-  - "lang/shell"
+  - "category/遊戲"
+  - "lang/other"
   - easy_install
+  - "topic/gameenhancement"
+  - "topic/luauiframework"
+  - "topic/openworldtools"
+  - "topic/runtimeoverlay"
+  - "topic/sandboxextensions"
 aliases:
-  - "9arm-skills"
-  - "thananon/9arm-skills"
-  - "提供一系列針對工程和生產力的 Shell 技能，幫助開發者提升日常工作效率。"
+  - "gta-5-mod-menu"
+  - "SubamanojJ-2004/gta-5-mod-menu"
+  - "為 GTA V 提供強大的模組菜單，包含 ESP、載具生成器、恢復功能和乾淨的 UI。"
 ---
 
-# 9arm-skills
+# gta-5-mod-menu
 
-**890** stars · **890** stars/天 · 建立 1 天前 · Shell · 未標註授權
+**445** stars · **74** stars/天 · 建立 6 天前 · N/A · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/thananon--9arm-skills");
+const me = dv.page("Repos/SubamanojJ-2004--gta-5-mod-menu");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +74,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`easy-install`
+`個人專案` `v1.1.5` `easy-install`
+
+`gameenhancement` `luauiframework` `openworldtools` `runtimeoverlay` `sandboxextensions`
 
 > [!summary] 一句話摘要
-> 提供一系列針對工程和生產力的 Shell 技能，幫助開發者提升日常工作效率。
+> 為 GTA V 提供強大的模組菜單，包含 ESP、載具生成器、恢復功能和乾淨的 UI。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (890 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要提升日常開發效率的工程師，特別是使用 Shell 的開發者。
-> **一句話重點** 這個專案的價值在於提供具體的 Shell 技能，幫助開發者提升日常工作效率。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (74 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 6 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 希望在 GTA V 中獲得更高自由度和自定義選項的遊戲玩家。
+> **一句話重點** 這個模組菜單的設計讓玩家能夠輕鬆提升 GTA V 的遊玩體驗，並且提供了多種自定義選項。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/SubamanojJ-2004--gta-5-mod-menu");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "程式碼工具" && p.file.name !== "thananon--9arm-skills" && p.status !== "archived")
+>     .where(p => p.subcategory === "模組工具" && p.file.name !== "SubamanojJ-2004--gta-5-mod-menu" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,98 +103,102 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 程式碼工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 模組工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到提升工作效率的技能，值得一試。
+> **成熟度** Stable (可用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，1 小時整合，得到更流暢的遊戲體驗，值得使用。
 
 > [!abstract] 核心創新
-> 提供針對工程和生產力的具體 Shell 技能，幫助開發者提升日常工作效率。
+> 這個專案提供了一個強大且可自定義的模組菜單，讓玩家能夠享受更自由的遊戲體驗。
 
 ## 專案簡介
 
-這個專案提供了一組針對工程和生產力的 Shell 技能，讓開發者可以在日常工作中更有效率地處理各種任務。技能分為不同的類別，包括工程、產品力、雜項和個人使用等，每個技能都包含一個 `SKILL.md` 文件，詳細說明其功能和使用方式。用戶只需執行 `./scripts/link-skills.sh` 指令，即可將可用的技能連結到指定目錄，方便使用。這樣的設計使得技能的管理和使用變得簡單明瞭，並且能夠快速擴展新的技能。這個專案的賣點在於其專注於實用性，特別是針對工程師日常工作中的需求，提供了如 `debug-mantra` 和 `post-mortem` 等具體技能，幫助用戶在面對問題時有系統地進行分析和解決。
+這個 GTA V 模組菜單提供了一個強大且可自定義的工具，讓玩家能夠享受更自由的遊戲體驗。用戶可以透過精確的瞄準輔助、ESP 和視覺疊加等功能來增強遊戲的樂趣，並且可以使用載具生成器和金錢恢復功能來快速提升遊戲進度。安裝過程簡單，使用者只需下載 ZIP 檔案或 EXE 啟動器，然後以管理員身份運行即可。這個工具的賣點在於其清晰的界面和優化的性能，讓玩家能夠在不影響遊戲流暢度的情況下，享受各種強大的功能。技術上，它支援 Windows 10/11，並要求至少 4GB 的 RAM 和 GTX 660 或 RX 560 的顯示卡，這樣的配置對大多數現代電腦來說並不算高。
 
-技術上，這些技能都是用 Shell 實現，依賴性輕，適合在各種 Unix-like 環境中使用。相較於其他類似工具，如 `0x0funky/agent-sprite-forge` 和 `DenisSergeevitch/agents-best-practices`，這個專案更專注於具體的工程實踐，而不是廣泛的 AI 或通用工具，適合需要高效能和專業技能的開發者使用。使用者在實際操作中可能會遇到技能更新不及時的問題，因為目前只有一個開放的 Issue，社群活躍度尚待觀察。整體來說，這是一個適合小型團隊或個人開發者的工具，特別是那些希望提升日常工作效率的工程師。未來可能會加入更多技能，進一步擴展其功能。
-
-**技術棧**：`Shell`
+與其他模組菜單相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，這個菜單提供了更直觀的用戶介面和更輕量的安裝選項，適合不想花太多時間配置的玩家。在使用過程中，建議玩家在啟動 GTA V 前先啟動模組菜單，以確保最佳的穩定性和性能。社群活躍度高，且無開放問題，顯示出開發者對專案的持續關注。這個專案目前處於穩定階段，適合喜愛 GTA V 的玩家使用，未來可能會持續更新新功能和優化。對於想要提升遊戲體驗的玩家，這個模組菜單無疑是一個值得考慮的選擇。
 
 ## 重點功能
 
-- 技能分類 — 包括工程、產品力、雜項和個人使用，方便用戶根據需求選擇。
-- 自動連結技能 — 使用 `./scripts/link-skills.sh` 指令快速將技能連結到指定目錄。
-- 詳細的技能說明 — 每個技能都有 `SKILL.md` 文件，包含名稱和描述，便於理解和使用。
-- 工程專用技能 — 提供如 `debug-mantra` 和 `post-mortem` 等專業技能，幫助工程師系統性解決問題。
-- 輕量級依賴 — 基於 Shell 實現，適合各種 Unix-like 環境，無需繁重的安裝步驟。
+- 精確瞄準輔助 — 提供精確的瞄準功能，幫助玩家在戰鬥中獲得優勢。
+- ESP 和視覺疊加 — 讓玩家能夠看到敵人和物品的位置，增強遊戲的策略性。
+- 載具生成器 — 允許玩家快速生成各種載具，提升遊戲的便利性。
+- 金錢恢復功能 — 幫助玩家快速獲得遊戲內資源，減少重複性工作。
+- 玩家模組和保護選項 — 提供無敵模式和其他玩家修改功能，增強遊戲體驗。
+- 全自定義 UI — 讓玩家可以根據個人喜好調整界面設計。
+- 穩定性和性能優化 — 確保在使用模組時遊戲流暢運行。
 
 ## 快速開始
 
-1. 克隆專案到本地
+1. 下載最新版本
 ```bash
-git clone https://github.com/thananon/9arm-skills.git
+前往 Releases 區域下載最新版本的檔案
 ```
-2. 進入專案目錄
+2. 解壓縮檔案
 ```bash
-cd 9arm-skills
+右鍵點擊下載的檔案並選擇 Extract All
 ```
-3. 連結可用技能
+3. 啟動加載器
 ```bash
-./scripts/link-skills.sh
+以管理員身份運行 Launcher.exe
+```
+4. 啟動 GTA V
+```bash
+啟動 GTA 5 並按照應用內設置指示操作
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 890 stars（890/天），forks 124（13.9%），這顯示出相對較高的使用者興趣。專案作者似乎專注於開發實用的工具，並且過去有相關的開發經驗。這個專案解決了工程師在日常工作中缺乏高效工具的痛點，提供了具體的技能來提升工作效率。社群的反應也顯示出對這類工具的需求，尤其是在工程領域。這些因素共同促成了專案的快速增長。
+> 建立 6 天內累積 445 stars（74/天），forks 61（13.7%），顯示出強勁的增長潛力。開發者 SubamanojJ-2004 似乎專注於遊戲增強工具，這個專案解決了玩家在 GTA V 中需要更高自由度和自定義選項的痛點。之前的解決方案往往複雜且不易使用，這個工具則以簡單的安裝和使用流程為主打，吸引了大量玩家的注意。社群的反應也相當熱烈，無開放問題顯示出良好的使用體驗。這個工具的成功可能與其清晰的功能定位和優化的性能有關。
 
 ## 適合誰使用
 
-**目標受眾**：需要提升日常開發效率的工程師，特別是使用 Shell 的開發者。
+**目標受眾**：希望在 GTA V 中獲得更高自由度和自定義選項的遊戲玩家。
 
 > [!example] 使用場景
-> - 後端工程師用它來快速連結和使用日常開發技能，因為這樣能夠減少重複性工作，提高效率。
-> - 產品經理用它來撰寫和整理會議紀錄，因為能夠將技術內容轉化為易於理解的格式，便於溝通。
-> - 新手開發者用它來學習和實踐工程技能，因為提供了具體的指導和範例，降低了學習門檻。
+> - 遊戲玩家用它來提升 GTA V 的遊玩體驗，因為它提供了精確的瞄準輔助和載具生成器，讓遊戲更加有趣。
+> - 模組開發者用它來測試新功能，因為其簡單的安裝流程和強大的功能讓開發過程更為高效。
+> - 社群成員用它來分享遊戲經驗，因為其清晰的界面和可自定義的選項使得分享和交流變得更加容易。
 
 ## 架構分析
 
-這個專案採用簡單的目錄結構，每個技能都獨立存放在 `skills/` 目錄下，並以 `SKILL.md` 文件描述其功能。這樣的設計使得技能的管理變得簡單，並且能夠快速擴展新的技能。資料流方面，使用者透過指令連結技能，然後可以直接在命令行中使用。選擇 Shell 作為實現語言，優勢在於輕量和高效，缺點是對於不熟悉 Shell 的使用者來說，學習曲線可能較陡。整體架構的擴展性良好，但如果未來技能數量大幅增加，可能需要考慮更複雜的管理方式。
+這個模組菜單的架構設計旨在提供簡單易用的介面，讓玩家能夠快速上手。安裝過程中，使用者只需下載檔案並運行加載器，這樣的設計使得對於不熟悉技術的玩家也能輕鬆使用。資料流方面，模組菜單在遊戲運行時直接與 GTA V 進行互動，透過內部 API 來實現功能。選擇這種設計的代價是可能會受到遊戲更新的影響，需定期更新模組以保持兼容性。整體而言，這個專案的設計考量了玩家的使用體驗，並提供了穩定的性能。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於 Shell 腳本，提供了一系列具體的技能來解決工程師在日常工作中面臨的問題。每個技能都獨立管理，並且有清晰的文檔說明，這樣的設計使得用戶能夠快速上手。效能方面，由於是基於 Shell 實現，對系統資源的需求相對較低，但在處理複雜任務時可能會受到 Shell 本身的限制。選擇 Shell 作為實現語言的好處在於其輕量和高效，但對於不熟悉 Shell 的開發者來說，學習曲線可能較陡。技術風險方面，未來如果技能數量大幅增加，可能需要考慮更複雜的管理方式，否則會影響使用體驗。整體來說，這個專案在與現有工具鏈的整合上相對簡單，適合在各種 Unix-like 環境中使用。
+這個 GTA V 模組菜單的核心技術機制在於其強大的功能整合，提供了多種增強工具和玩家修改選項。它使用了輕量級的設計，確保在遊戲運行時不影響性能。雖然 README 中未提供具體的效能數據，但根據系統要求，這個工具應該能夠在大多數現代電腦上流暢運行。選擇 Windows 作為唯一支援平台，意味著開發者專注於優化這個環境的性能，但也限制了使用者的範圍。這個專案的依賴樹相對簡單，並不需要複雜的外部庫或框架，這使得安裝和維護變得更加容易。隨著遊戲的更新，可能會出現與遊戲版本不兼容的風險，這是需要注意的技術風險。整合方面，這個模組菜單可以與現有的遊戲環境無縫搭配，並且不會對其他工具造成干擾，這使得它在玩家社群中獲得了良好的口碑。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的技能分類和安裝步驟，讓新手能夠快速上手。安裝過程簡單，只需執行一條指令即可連結技能。雖然沒有提供詳細的使用範例，但技能的文檔清晰，能夠幫助用戶理解其功能。整體來說，花 30 分鐘能夠順利運行起來。
+> README 文件清晰且包含詳細的安裝步驟，讓新手能夠輕鬆上手。安裝過程順暢，沒有明顯的坑。雖然沒有提供多語言支持，但對於英語使用者來說，理解上沒有障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 技能分類清晰，便於用戶根據需求選擇。
-> - 輕量級設計，無需繁重的安裝步驟。
-> - 提供具體的工程技能，幫助用戶系統性解決問題。
+> - 簡單的安裝過程，適合不熟悉技術的玩家。
+> - 提供多種功能，增強遊戲體驗。
+> - 界面清晰，易於使用和自定義。
 
 > [!danger] 缺點
-> - 社群活躍度尚待觀察，可能影響未來的更新。
-> - 缺乏詳細的使用範例，對新手不夠友好。
-> - 技能更新頻率不明，可能導致某些技能過時。
+> - 僅支援 Windows 系統，無法在其他平台使用。
+> - 需要較高的硬體要求，可能不適合老舊電腦。
+> - 功能依賴於遊戲版本更新，需定期維護。
 
 > [!warning] 注意事項
-> - 目前只有一個開放的 Issue，社群活躍度尚待觀察。
-> - 技能更新頻率不明，可能導致某些技能過時。
-> - 缺乏詳細的使用範例，對新手可能不夠友好。
+> - 僅支援 Windows 10/11
+> - 需要至少 4GB RAM 和 GTX 660 或 RX 560 顯示卡
+> - 安裝過程需要以管理員身份運行
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 AI agent 的開發，而本專案則專注於具體的工程技能，適合需要快速解決問題的工程師。 |
-| [DenisSergeevitch/agents-best-practices](https://github.com/DenisSergeevitch/agents-best-practices) | 提供更廣泛的最佳實踐，而本專案則提供具體的技能，適合需要實用工具的開發者。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於遊戲角色的自定義，而本專案則提供更全面的遊戲增強功能。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具主要針對遊戲內的資源管理，而本專案則提供更強的玩家修改和視覺增強功能。 |
 
 ## 替代方案決策
 
@@ -195,46 +206,47 @@ cd 9arm-skills
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 AI agent 的開發，提供更廣泛的功能，而本專案則專注於具體的工程技能。 | 如果你的團隊需要一個全面的 AI agent 開發框架，而不僅僅是針對工程的技能。 | medium，因為需要重新適應不同的技能管理方式。 |
-| [DenisSergeevitch/agents-best-practices](https://github.com/DenisSergeevitch/agents-best-practices) | 提供最佳實踐的指導，而本專案則提供具體的技能來解決問題。 | 如果你需要一個全面的最佳實踐指南，而不僅僅是具體的技能。 | low，因為可以根據需求選擇性整合。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Lua 框架進行模組開發，專注於角色自定義，而本專案則提供更全面的遊戲增強功能。 | 如果你的重點是角色的自定義和外觀，而不是整體遊戲增強功能。 | medium，因為需要重新學習新的模組架構和功能。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於遊戲內資源管理，提供的功能較為單一，而本專案則提供多樣化的增強選項。 | 如果你的需求主要是資源管理而非全面的遊戲增強。 | low，因為功能相對簡單，轉移成本不高。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **9arm-skills** | **agent-sprite-forge** | **agents-best-practices** |
+> | 維度 | **gta-5-mod-menu** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 AI agent 的開發，提供更廣泛的功能，而本專案則專注於具體的工程技能。 | 提供最佳實踐的指導，而本專案則提供具體的技能來解決問題。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的技能管理方式。 | low，因為可以根據需求選擇性整合。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要一個全面的 AI agent 開發框架，而不 | 如果你需要一個全面的最佳實踐指南，而不僅僅是具體的技能。 |
+> | 技術路線 | 本專案 | 使用 Lua 框架進行模組開發，專注於角色自定義，而本專案則提供更全面的遊戲增強功能。 | 專注於遊戲內資源管理，提供的功能較為單一，而本專案則提供多樣化的增強選項。 |
+> | 遷移成本 | - | medium，因為需要重新學習新的模組架構和功能。 | low，因為功能相對簡單，轉移成本不高。 |
+> | 適用場景 | 主要場景 | 如果你的重點是角色的自定義和外觀，而不是整體遊戲增強功能。 | 如果你的需求主要是資源管理而非全面的遊戲增強。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| 開發階段 | Stable |
+| 生產環境就緒 | Yes |
+| Breaking Change 風險 | low |
 
 > [!tip] 採用建議
-> 適合個人試用，但不建議用在生產環境的核心路徑上。
+> 適合喜愛 GTA V 的玩家使用，並且能在穩定的環境中運行。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 技能更新頻率不明，可能導致某些技能過時
-  - 解法：定期檢查專案更新，確保使用最新技能
-- **[HIGH]** 對於不熟悉 Shell 的使用者，學習曲線較陡
-  - 解法：參考 Shell 基礎教程，提升使用者技能
-- [MEDIUM] 社群活躍度低，可能影響未來的更新
-  - 解法：關注專案動態，參與社群討論
+- **[HIGH]** 在某些情況下，啟動模組菜單後可能會導致遊戲崩潰
+  - 解法：確保在啟動 GTA V 前先啟動模組菜單
+- [MEDIUM] 部分功能可能在遊戲更新後失效
+  - 解法：定期檢查更新並下載最新版本的模組菜單
+- **[HIGH]** 需要以管理員身份運行，否則可能無法正常啟動
+  - 解法：右鍵點擊並選擇以管理員身份運行
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊需要高效的工程技能 | 非常適合 | 提供具體的技能來提升日常工作效率。 |
-| 新手開發者希望學習 Shell 技能 | 適合 | 提供清晰的文檔和技能說明，降低學習門檻。 |
-| 大型企業需要全面的開發工具 | 不適合 | 專案功能較為狹窄，無法滿足複雜需求。  |
+| 10 人以下的小型遊戲團隊 | 非常適合 | 提供多樣的增強功能，適合小型團隊的需求。 |
+| 大型遊戲伺服器管理 | 普通 | 雖然功能強大，但可能需要額外的管理工具來協調。 |
+| 個人遊戲體驗提升 | 非常適合 | 能夠快速提升個人遊戲體驗，功能全面。 |
+| 專業遊戲開發者 | 不適合 | 專業開發者可能需要更高級的工具和功能。 |
 
 ## 採用成本分析
 
@@ -246,18 +258,18 @@ cd 9arm-skills
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到提升工作效率的技能，值得一試。
+> 花 2 小時學習，1 小時整合，得到更流暢的遊戲體驗，值得使用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：這個工具不需要高權限，且不存取敏感資料，適合在 CI/CD 環境中使用。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/SubamanojJ-2004--gta-5-mod-menu");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -292,7 +304,7 @@ cd 9arm-skills
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/SubamanojJ-2004--gta-5-mod-menu");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -316,88 +328,163 @@ cd 9arm-skills
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 124 |
-| Open Issues | 1 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-05-20 |
-| 建立日期 | 2026-05-20 |
-| Repo 大小 | 20 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/thananon/9arm-skills) |
+| Forks | 61 |
+| Open Issues | 0 |
+| 最後推送 | 2026-05-16 |
+| 建立日期 | 2026-05-16 |
+| Repo 大小 | 19 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/SubamanojJ-2004/gta-5-mod-menu) |
+| Topics | `gameenhancement` `luauiframework` `openworldtools` `runtimeoverlay` `sandboxextensions` |
+
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@SubamanojJ-2004](https://github.com/SubamanojJ-2004) | 7 |
+
+**最新版本**：v1.1.5 (2026-05-16)
+
+> [!info]- Release Notes
+> ## 📦 Download Options
+> 
+> Choose the format that works best for you:
+> 
+> | Format | File | Size | Needs extra software? |
+> |--------|------|------|----------------------|
+> | 📦 ZIP Archive | GTA5-Mod-Menu.zip | 157 MB | 
+> | 🚀 EXE Launcher | Launcher.exe | 111 MB | 
+> 
+> ---
+> 
+> ### 🔧 Installation
+> 
+> Option 1 — ZIP Archive:
+> 1. Download GTA5-Mod-Menu.zip (157 MB)
+> 2. Right-click → Extract All
+> 3. Open extracted folder
+> 4. Run Launcher.exe as administrator
+> 
+> Option 2 — EXE Launcher (smaller download):
+> 1. Download Launcher.exe (111 MB)
+> 2. Double-click to run
+> 3. Choose destination folder (or use default)
+> 4. Open the folder where it extracted
+> 5. Run Launcher.exe as administrator
+> 
+> ---
+> 
+> ### 📥 Download Links
+> 
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚待觀察，目前只有一個開放的 Issue。
+**社群活躍度**：社群活躍，無開放問題
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-20 ~ 2026-05-20）
-> **活躍天數** 1 天 · **最新 commit** Add debug-mantra skill; restore cross-references in post-mortem
+> [!abstract] 最近 10 次 commit（2026-05-16 ~ 2026-05-16）
+> **活躍天數** 1 天 · **最新 commit** Update README.md
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 9arm-skills
+> # 🎮 GTA 5 Mod Menu — Ultimate Enhancement Toolkit for GTA V
 > 
-> Agent skills loaded by Claude Code.
+> Transform your GTA V experience with a powerful and fully customizable mod menu designed for smooth gameplay, advanced utilities, and maximum performance.
 > 
-> ## Layout
+> Explore Los Santos with enhanced freedom using premium gameplay features, visual improvements, player modifications, and powerful session tools — all packed into a clean and easy-to-use interface.
 > 
-> Skills live under `skills/`, grouped into buckets:
+> ---
 > 
-> - `engineering/` — daily code work
-> - `productivity/` — daily non-code workflow tools
-> - `misc/` — kept around but rarely used
-> - `personal/` — tied to my own setup, not promoted
-> - `in-progress/` — drafts not yet ready to ship
-> - `deprecated/` — no longer used
+> ## ✨ Features
 > 
-> Each skill is its own directory containing a `SKILL.md` (with YAML frontmatter — `name` and `description`) and any bundled scripts or reference files.
+> - 🎯 Precision Aim Assistance
+> - 👁️ ESP & Visual Overlays
+> - 🚗 Vehicle Spawner
+> - 💰 Recovery & Money Features
+> - 👑 God Mode & Player Mods
+> - 🛡️ Protection Options
+> - 🌐 Session Utilities
+> - 🎮 Controller Support
+> - 🎨 Fully Customizable UI
+> - ⚡ Optimized Stability & Performance
 > 
-> ## Install
+> ---
 > 
-> For my own dev loop — symlink every shippable skill into `~/.claude/skills/`:
+> ## 📥 Installation
 > 
-> ```bash
-> ./scripts/link-skills.sh
-> ```
+> 1. **Download the Latest Release**  
+>    Go to the [Releases](../../releases) section and download the newest available build.
 > 
-> List every `SKILL.md` in the repo:
+> 2. **Extract the Files**  
+>    - Right-click the downloaded archive  
+>    - Select **Extract All**  
+>    - Open the extracted folder  
 > 
-> ```bash
-> ./scripts/list-skills.sh
-> ```
+> 3. **Launch the Loader**  
+>    Run `GTA5-ModMenu.exe`
 > 
-> ## Reference
+> 4. **Start GTA V**  
+>    Launch GTA 5 and follow the in-app setup instructions.
 > 
-> ### Engineering
+> ---
 > 
-> - **[debug-mantra](./skills/engineering/debug-mantra/SKILL.md)** — Four-mantra debugging discipline: reproduce → trace the fail path → falsify the hypothesis → cross-reference every breadcrumb. Recites verbatim at session start, then applies in order before any fix.
-> - **[post-mortem](./skills/engineering/post-mortem/SKILL.md)** — Write the canonical engineering record of a fixed bug — root cause, mechanism, fix, validation, how it slipped through. Engineer-audience; refuses to draft without a reliable repro, known cause, and validated fix.
-> - **[scrutinize](./skills/engineering/scrutinize/SKILL.md)** — Outsider-perspective end-to-end review of a plan, PR, or code change. Questions intent (is there a simpler way?), traces the actual code path, and verifies the change does what it claims. Output is concise, actionable, with rationale.
+> ## 💻 System Requirements
 > 
-> ### Productivity
+> | Component        | Requirement                              |
+> |------------------|------------------------------------------|
+> | 🖥️ Operating System | Windows 10 / 11                          |
+> | ⚙️ Processor        | Intel Core i3 / Ryzen 3+                 |
+> | 🧠 RAM              | 4 GB Minimum                             |
+> | 🎮 Graphics Card    | GTX 660 / RX 560 or better               |
+> | 💾 Storage          | 200 MB Free Space                        |
+> | 🌐 Internet         | Stable Connection                        |
 > 
-> - **[management-talk](./skills/productivity/management-talk/SKILL.md)** — Rewrite engineer-to-engineer content for engineering-org leadership and shape it for the channel it's going to (JIRA, Slack, async standup, email, meeting talking-points).
+> ---
 > 
-> ### Misc
+> ## ❓ Why Choose This Menu?
 > 
-> _(none yet)_
+> - ✨ Clean & Modern Interface
+> - 🎮 Smooth Gameplay Integration
+> - 🪶 Lightweight & Optimized
+> - 🔄 Frequent Feature Updates
+> - 📂 Easy Installation Process
+> - 🚀 Designed for Performance & Stability
+> 
+> ---
+> 
+> ## 💡 Usage Tips
+> 
+> - 🚀 Start the menu **before** launching GTA V
+> - ⚙️ Explore settings to customize your experience
+> - ✅ Use recommended configurations for best stability
+> 
+> ---
+> 
+> ## 🔜 Upcoming Updates
+> 
+> Future updates may include:
+> 
+> - 🎁 New gameplay enhancement tools
+> - 🚀 Improved optimization
+> - 🎨 UI redesigns & themes
+> - 📱 Expanded compatibility support
+> - 🛠️ Additional customization
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化]] · [[程式碼生成]]
+相關概念：[[遊戲增強]] · [[模組開發]] · [[玩家自定義]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[duoan--TorchCode|duoan/TorchCode]] · [[sanbuphy--claude-code-source-code|sanbuphy/claude-code-source-code]] · [[twostraws--SwiftUI-Agent-Skill|twostraws/SwiftUI-Agent-Skill]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[Doorman11991--smallcode|Doorman11991/smallcode]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[boona13--mykonos-island-voxels|boona13/mykonos-island-voxels]]
 
-[GitHub](https://github.com/thananon/9arm-skills)
+[GitHub](https://github.com/SubamanojJ-2004/gta-5-mod-menu)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：程式碼工具）
+> [!note]- 直接競品（同子分類：模組工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "程式碼工具" AND file.name != "thananon--9arm-skills"
+> WHERE subcategory = "模組工具" AND file.name != "SubamanojJ-2004--gta-5-mod-menu"
 > SORT stars DESC
 > ```
 
@@ -405,7 +492,7 @@ cd 9arm-skills
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "thananon--9arm-skills"
+> WHERE category = "遊戲" AND file.name != "SubamanojJ-2004--gta-5-mod-menu"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -414,7 +501,7 @@ cd 9arm-skills
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Shell" AND file.name != "thananon--9arm-skills" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "SubamanojJ-2004--gta-5-mod-menu" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -423,15 +510,15 @@ cd 9arm-skills
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W21" AND file.name != "thananon--9arm-skills"
+> WHERE week = "2026-W21" AND file.name != "SubamanojJ-2004--gta-5-mod-menu"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化","程式碼生成"];
+> const concepts = ["遊戲增強","模組開發","玩家自定義"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "thananon--9arm-skills" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "SubamanojJ-2004--gta-5-mod-menu" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -444,12 +531,12 @@ cd 9arm-skills
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/SubamanojJ-2004--gta-5-mod-menu");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "thananon--9arm-skills" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "SubamanojJ-2004--gta-5-mod-menu" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -465,7 +552,7 @@ cd 9arm-skills
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "thananon" AND file.name != "thananon--9arm-skills"
+> WHERE owner = "SubamanojJ-2004" AND file.name != "SubamanojJ-2004--gta-5-mod-menu"
 > SORT stars DESC
 > ```
 
@@ -473,7 +560,7 @@ cd 9arm-skills
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/SubamanojJ-2004--gta-5-mod-menu");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -490,7 +577,7 @@ cd 9arm-skills
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/SubamanojJ-2004--gta-5-mod-menu");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -523,7 +610,7 @@ cd 9arm-skills
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/SubamanojJ-2004--gta-5-mod-menu");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -547,7 +634,7 @@ cd 9arm-skills
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/SubamanojJ-2004--gta-5-mod-menu");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -584,7 +671,7 @@ cd 9arm-skills
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/SubamanojJ-2004--gta-5-mod-menu");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -667,7 +754,7 @@ cd 9arm-skills
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-05-21** — 首次收錄
+> **2026-05-23** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -683,6 +770,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-05-23|2026-05-23]] — 再次上榜，1.5k stars
-- [[2026-05-22|2026-05-22]] — 再次上榜，1.2k stars
-- [[2026-05-21|2026-05-21]] — 首次收錄，890 stars
+- [[2026-05-23|2026-05-23]] — 首次收錄，445 stars

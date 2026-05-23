@@ -7,12 +7,12 @@ language: Python
 license: Apache-2.0
 description: "HRM-Text is a 1B text generation model based on the HRM architecture, strengthened by task completion and latent space reasoning."
 homepage: ""
-stars: 631
-stars_per_day: 210
-forks: 58
+stars: 650
+stars_per_day: 163
+forks: 59
 open_issues: 5
 created: 2026-05-18
-pushed_at: 2026-05-21
+pushed_at: 2026-05-22
 first_seen: 2026-05-22
 week: "2026-W21"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "提供一個高效的文本生成模型，讓使用者以更少的計
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-25"
+appearances: 2
+next_review: "2026-05-30"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-22"
-star_history: "2026-05-22:631"
+star_history: "2026-05-22:631,2026-05-23:650"
 tags:
   - github
   - "category/ai_ml"
@@ -925,4 +925,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-23|2026-05-23]] — 再次上榜，650 stars
 - [[2026-05-22|2026-05-22]] — 首次收錄，631 stars

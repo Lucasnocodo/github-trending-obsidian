@@ -475,7 +475,7 @@ cat stages/00-foundations.md
 
 相關概念：[[MCP Protocol]] · [[Prompt Engineering]] · [[多模態]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[datawhalechina--Agent-Learning-Hub|datawhalechina/Agent-Learning-Hub]]
 
 [GitHub](https://github.com/WenyuChiou/awesome-agentic-ai-zh) · [官方網站](https://wenyuchiou.github.io/awesome-agentic-ai-zh/)
 

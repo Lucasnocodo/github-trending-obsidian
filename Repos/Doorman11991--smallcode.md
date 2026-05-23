@@ -7,10 +7,10 @@ language: JavaScript
 license: MIT
 description: "AI coding agent optimized for small LLMs. 87% benchmark with 4B-active model."
 homepage: ""
-stars: 1085
-stars_per_day: 362
-forks: 75
-open_issues: 2
+stars: 1226
+stars_per_day: 307
+forks: 88
+open_issues: 3
 created: 2026-05-18
 pushed_at: 2026-05-22
 first_seen: 2026-05-20
@@ -30,8 +30,8 @@ use_case: "針對小型 LLM 優化的 AI 編程代理，能有效處理小型模
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-05-25"
+appearances: 4
+next_review: "2026-05-26"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 91
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-20"
-star_history: "2026-05-20:728,2026-05-20:727,2026-05-21:842,2026-05-21:842,2026-05-22:1082,2026-05-22:1085"
+star_history: "2026-05-20:728,2026-05-20:727,2026-05-21:842,2026-05-21:842,2026-05-22:1082,2026-05-22:1085,2026-05-23:1226"
 tags:
   - github
   - "category/開發工具"
@@ -825,6 +825,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-23|2026-05-23]] — 再次上榜，1.2k stars
 - [[2026-05-22|2026-05-22]] — 再次上榜，1.1k stars
 - [[2026-05-21|2026-05-21]] — 再次上榜，842 stars
 - [[2026-05-20|2026-05-20]] — 首次收錄，728 stars
