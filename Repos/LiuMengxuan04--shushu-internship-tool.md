@@ -16,8 +16,8 @@ pushed_at: 2026-05-21
 first_seen: 2026-05-23
 week: "2026-W21"
 month: "2026-05"
-category: "開發工具"
-subcategory: "面試準備"
+category: "其他"
+subcategory: "求職工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-23
-use_case: "幫助候選人將職位描述轉化為可投遞的項目和面試材料。"
+use_case: "幫助候選人從崗位描述快速生成可投遞的項目和面試材料。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,10 +42,10 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-23"
-star_history: "2026-05-23:437"
+star_history: "2026-05-23:437,2026-05-23:437"
 tags:
   - github
-  - "category/開發工具"
+  - "category/其他"
   - "lang/python"
   - easy_install
   - "topic/ai"
@@ -54,7 +54,7 @@ tags:
 aliases:
   - "shushu-internship-tool"
   - "LiuMengxuan04/shushu-internship-tool"
-  - "幫助候選人將職位描述轉化為可投遞的項目和面試材料。"
+  - "幫助候選人從崗位描述快速生成可投遞的項目和面試材料。"
 ---
 
 # shushu-internship-tool
@@ -77,20 +77,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ai` `ai-agents` `skills`
 
 > [!summary] 一句話摘要
-> 幫助候選人將職位描述轉化為可投遞的項目和面試材料。
+> 幫助候選人從崗位描述快速生成可投遞的項目和面試材料。
 
 > [!info] 速覽
 > **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (87 stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 希望快速準備技術面試的計算機科學學生或剛入行的求職者。
-> **一句話重點** 這個工具最厲害的地方在於它能將職位描述轉化為具體的項目和面試材料，形成一個完整的求職準備流程。
+> **適合** 需要快速準備面試材料和項目的計算機專業學生或求職者。
+> **一句話重點** 這個專案展示了如何利用 AI 技術幫助求職者在競爭激烈的市場中脫穎而出。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/LiuMengxuan04--shushu-internship-tool");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "面試準備" && p.file.name !== "LiuMengxuan04--shushu-internship-tool" && p.status !== "archived")
+>     .where(p => p.subcategory === "求職工具" && p.file.name !== "LiuMengxuan04--shushu-internship-tool" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -101,111 +101,108 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 面試準備 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 求職工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習、3 小時整合，得到快速準備面試的效果，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，3 小時整合，得到快速生成面試材料的效果，值得一試。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於將職位描述轉化為具體的項目和面試材料，形成一個閉環的求職準備流程。
+> 該專案能夠將崗位描述轉化為具體的實習項目，並生成相應的面試材料，填補了求職過程中的空白。
 
 ## 專案簡介
 
-鼠鼠實習妙妙工具是一個 AI 驅動的實習項目準備工具，旨在將職位描述（JD）轉化為可用於簡歷和面試的項目素材。用戶只需提供 JD，工具會詢問用戶的技術水平、時間預算等，然後推薦合適的 GitHub 項目，並生成審計報告和面試材料包。關鍵指令包括 `shushu-repo-audit` 用於審計項目，`shushu-candidate-score` 用於根據 JD 評分候選項目，`shushu-interview-pack` 用於生成面試材料。這個工具的賣點在於其快速轉換能力，幫助低經驗候選人迅速準備面試。技術上，它使用 Python 實現，並依賴於標準庫，沒有額外的依賴，這使得安裝和使用都相對簡單。與其他工具相比，如 ProjectProof，這個工具更專注於從 JD 到項目的轉換，而不是僅僅提供面試問題。
+這個專案的核心機制是將崗位描述（JD）轉換為可行的實習項目，並生成相應的簡歷和面試材料。用戶只需提供 JD，工具會詢問一些基本問題（如技術栈、時間預算等），然後自動生成適合的項目素材。這樣的設計使得即使是零經驗的候選人也能快速上手，並在面試中表現出色。關鍵指令如 `shushu-repo-audit` 用於審計本地項目，`shushu-candidate-score` 用於根據 JD 評分候選項目，`shushu-interview-pack` 用於生成面試材料包。這些功能使得整個流程高效且自動化，減少了候選人準備的時間和精力。技術上，該工具使用 Python 開發，並依賴於標準庫，無需額外的依賴，這降低了使用門檻。
 
-它的設計考慮到了實習生的需求，特別是那些缺乏經驗的候選人，提供了一個清晰的流程來提升他們的求職效率。使用者可以選擇不同的運行深度，如 `interview-only` 或 `remote-full-run`，以適應不同的需求。這個工具的社群活躍度不高，但在短時間內獲得了不錯的關注，顯示出其潛在的市場需求。適合希望快速準備面試的學生或剛入行的求職者，尤其是在技術領域。總體來說，這是一個值得嘗試的工具，特別是對於那些需要在短時間內提升求職競爭力的候選人。
+與其他類似工具相比，如 [ProjectProof](https://github.com/YingaoWang-casia/shushu-ProjectProof)，本專案更專注於從崗位描述到項目的轉換，而不是僅僅提供面試問題或簡歷模板。這使得它在實習生的準備過程中更具針對性和實用性。使用者在實際操作中可能會遇到的問題包括如何選擇合適的項目，這可以通過工具的排序功能來解決。該專案目前處於 beta 階段，適合需要快速準備面試的候選人，尤其是那些缺乏實習經驗的學生。未來可能會加入更多的自動化功能以提升使用體驗。
 
 **技術棧**：`Python 3.10` · `setuptools` · `pytest`
 
 ## 重點功能
 
-- 根據 JD 找項目 — 自動推薦 2-3 個合適的 GitHub 項目，並根據匹配度排序。
-- 項目審計功能 — 生成 `audit.json` 和報告，幫助用戶快速理解項目結構。
-- 生成面試材料包 — 包含 STAR 簡歷、面試問答和 PPT 提示詞。
-- 支持多種運行深度 — 用戶可選擇 `interview-only`、`smoke-test`、`local-full-run` 或 `remote-full-run`。
-- 簡單的命令行介面 — 使用者可以透過簡單的命令執行各項功能。
+- 崗位描述轉項目 — 根據 JD 自動生成 2-3 個合適的 GitHub 項目，並按匹配度排序。
+- 項目審計 — 使用 `shushu-repo-audit` 指令生成項目的結構和依賴報告。
+- 面試材料生成 — 使用 `shushu-interview-pack` 指令生成完整的面試材料包，包括問題和提示。
+- 候選項目評分 — 使用 `shushu-candidate-score` 指令根據 JD 評分候選項目。
+- 運行深度選擇 — 提供多種運行深度選擇，從簡單的 smoke test 到完整的遠程運行。
 
 ## 快速開始
 
-1. 克隆專案並安裝依賴
+1. 克隆專案並建立虛擬環境
 ```bash
-cd shushu-internship-tool
-python3 -m venv .venv
-. .venv/bin/activate
+git clone https://github.com/LiuMengxuan04/shushu-internship-tool.git && cd shushu-internship-tool && python3 -m venv .venv && . .venv/bin/activate
+```
+2. 安裝依賴
+```bash
 python -m pip install -e '.[dev]'
 ```
-2. 審計本地項目
+3. 使用項目審計指令
 ```bash
-python -m shushu_internship_tool.repo_audit --repo /path/to/repo --out reports/audit --name my-project
-```
-3. 給候選項目排序
-```bash
-python -m shushu_internship_tool.candidate_score --jd jd.txt --candidates candidates.json --out reports/ranking
+shushu-repo-audit --repo /path/to/repo --out reports/audit --name my-project
 ```
 
 ## 程式碼範例
 
 ```python
 {
-  "前置條件": "使用者已安裝並設定好環境。",
-  "指令": "shushu-repo-audit --repo /path/to/repo --out reports/audit --name my-project",
-  "預期輸出": "生成審計報告，包含項目結構和依賴信息。"
+  "前置條件": "安裝並設定好虛擬環境",
+  "指令": "shushu-candidate-score --jd jd.txt --candidates candidates.json --out reports/ranking",
+  "預期輸出": "生成候選項目的排名報告"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天就累積 437 stars（87/天），forks 18（4.1%），顯示出初期的良好增長。作者 LiuMengxuan04 之前的開源經歷可能為這個專案的推廣奠定了基礎。這個工具解決了求職者在面試準備過程中的痛點，特別是對於缺乏經驗的候選人，提供了一個系統化的流程來提升他們的面試表現。最近的社交媒體討論和求職者的需求也可能推動了這個工具的關注度。這個工具的設計正好符合當前求職市場的需求，特別是在技術領域，這使得它的可行性和實用性得到了驗證。
+> 建立 5 天就累積 437 stars（87/天），forks 18（4.1%），這顯示出一定的社群關注度。作者 LiuMengxuan04 之前在 AI 和技能相關的專案上有過貢獻，這使得該工具能夠針對實習生的需求進行優化。這個專案解決了傳統求職過程中，候選人難以將崗位需求轉化為具體項目的痛點，特別是對於經驗不足的候選人來說。社群的反饋和需求驅動了這個工具的發展，並且在短時間內獲得了不少關注。
 
 ## 適合誰使用
 
-**目標受眾**：希望快速準備技術面試的計算機科學學生或剛入行的求職者。
+**目標受眾**：需要快速準備面試材料和項目的計算機專業學生或求職者。
 
 > [!example] 使用場景
-> - 大學應屆畢業生用它來根據目標 JD 規劃實習項目，因為它能快速生成符合面試要求的項目素材。
-> - 轉職者用它來審計過去的項目，生成面試材料，因為它能幫助他們清晰表達過去的經驗。
-> - 自學者用它來選擇合適的開源項目進行實踐，因為它能根據自己的技術水平推薦合適的項目。
+> - 大學應屆畢業生用它來根據崗位描述生成實習項目，因為這樣能夠快速提升自己的面試競爭力。
+> - 轉職者用它來審計過去的項目，並生成針對新崗位的面試材料，因為這樣能夠更好地展示自己的技能轉換能力。
+> - 職業規劃師用它來幫助客戶選擇合適的實習項目，因為這樣能夠提高客戶的求職成功率。
 
 ## 架構分析
 
-這個工具的架構以 Python 為核心，使用 setuptools 進行包管理，並透過命令行介面提供功能。資料流方面，使用者提供 JD，工具根據用戶的需求生成相應的項目和面試材料。選擇 Python 的原因在於其簡單易用和廣泛的生態系統，這使得開發和維護變得容易。由於沒有複雜的依賴，這個工具的安裝和使用都相對輕量。擴展性方面，未來可以考慮加入更多的功能模組，如自動化測試或更深入的面試準備材料生成。
+該專案採用模組化設計，主要功能分為三個模組：項目審計、候選項目評分和面試材料生成。這樣的設計使得每個模組可以獨立開發和測試，降低了整體維護成本。資料流方面，使用者提供的 JD 會經過一系列的處理，最終生成可用的項目和面試材料。選擇 Python 作為開發語言是因為其在數據處理和自動化方面的強大能力，且社群支持良好。這種設計雖然增加了初期的學習成本，但長期來看能夠提高開發效率和可維護性。
 
 ## 技術深入分析
 
-鼠鼠實習妙妙工具的核心技術機制是將職位描述轉化為具體的項目素材，這涉及到自然語言處理和資料匹配的技術。它能夠根據用戶提供的 JD，自動推薦合適的 GitHub 項目，並生成審計報告和面試材料。效能方面，由於工具主要依賴於 Python 的標準庫，對於小型項目來說，運行效率良好，冷啟動時間短。設計上選擇 Python 是因為其簡單易用，並且擁有豐富的庫支持，這使得開發者能夠快速迭代功能。這個工具的依賴樹相對簡單，沒有過多的外部依賴，降低了維護成本。技術風險方面，未來可能會面臨擴展性問題，特別是在處理更複雜的 JD 時，如何保持推薦的準確性和有效性是個挑戰。整合方面，這個工具可以輕鬆與其他 Python 工具鏈結合，但目前缺乏與主流 IDE 的深度整合，可能會影響使用體驗。
+該專案的核心技術機制是將崗位描述轉化為可行的實習項目，這涉及到自然語言處理和資料匹配技術。使用者提供的 JD 會被解析，並根據關鍵字匹配相關的 GitHub 項目。效能方面，該工具能夠快速生成報告，通常在幾秒鐘內完成。由於使用 Python 開發，這使得工具在處理文本和數據時具有良好的性能。設計上選擇了模組化架構，這有助於未來功能的擴展和維護。技術風險方面，若用戶提供的 JD 不夠清晰，可能會導致生成的項目不符合預期。整合方面，該工具能夠與現有的開發環境無縫對接，並且支持常見的 CI/CD 流程，降低了使用的摩擦點。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的功能介紹和使用範例，安裝過程相對順暢，沒有特別的坑。雖然沒有專門的入門指南，但使用者可以透過 README 快速上手。文件目前僅提供英文版本，可能對部分用戶造成障礙。
+> README 文件清晰且包含範例，安裝過程順暢，沒有明顯的坑。提供了良好的入門指南，適合新手快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 快速將 JD 轉化為具體項目，節省時間。
-> - 提供完整的面試準備材料，提升求職競爭力。
-> - 簡單易用的命令行介面，適合各種技術水平的用戶。
+> - 能快速將崗位描述轉化為具體項目，節省準備時間。
+> - 提供自動化的面試材料生成，提升面試準備效率。
+> - 適合零經驗候選人，降低了進入門檻。
 
 > [!danger] 缺點
-> - 目前僅支援特定的 Python 版本，限制了使用範圍。
-> - 缺乏詳細的文檔，可能對新手不友好。
-> - 社群活躍度不高，問題解決可能較慢。
+> - 目前僅支援計算機相關崗位，對其他領域的支持有限。
+> - 需要用戶提供足夠的背景信息，否則生成的項目可能不夠精準。
+> - 功能仍在開發中，可能存在不穩定性。
 
 > [!warning] 注意事項
-> - 目前僅支援 Python 3.10 以上版本。
-> - 不支援 Windows 環境，僅在 Unix-like 系統上測試通過。
-> - 缺乏詳細的使用文檔，可能需要用戶自行探索功能。
+> - 僅支援 Python 3.10 以上版本
+> - 不支援 Windows 環境，需在 Linux 或 macOS 上運行
+> - 目前功能主要針對計算機相關崗位，對其他領域支持有限
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [Sunanzhe2004/shushu-internship-resume-optimizer](https://github.com/Sunanzhe2004/shushu-internship-resume-optimizer) | 專注於簡歷優化，而非項目準備，適合已經有項目經驗的候選人。 |
-| [YingaoWang-casia/shushu-ProjectProof](https://github.com/YingaoWang-casia/shushu-ProjectProof) | 主要針對實習經歷的證據化，而本工具專注於從 JD 到項目的轉換。 |
+| [YingaoWang-casia/shushu-ProjectProof](https://github.com/YingaoWang-casia/shushu-ProjectProof) | 該工具專注於面試問題和簡歷優化，而本專案則將崗位描述轉化為具體項目，適合需要實習項目的候選人。 |
+| [Sunanzhe2004/shushu-internship-resume-optimizer](https://github.com/Sunanzhe2004/shushu-internship-resume-optimizer) | 這個工具專注於簡歷優化，而本專案則提供從崗位描述到項目的完整流程，適合需要全面準備的候選人。 |
 
 ## 替代方案決策
 
@@ -213,24 +210,24 @@ python -m shushu_internship_tool.candidate_score --jd jd.txt --candidates candid
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [Sunanzhe2004/shushu-internship-resume-optimizer](https://github.com/Sunanzhe2004/shushu-internship-resume-optimizer) | 專注於簡歷優化，提供針對性建議，而本專案則是從 JD 到項目的全面轉換。 | 如果你的主要需求是優化簡歷而非項目準備，這個工具會更適合。 | low，因為兩者的功能有一定重疊，易於轉換。 |
-| [YingaoWang-casia/shushu-ProjectProof](https://github.com/YingaoWang-casia/shushu-ProjectProof) | 專注於實習經歷的證據化，而本工具專注於從 JD 到項目的轉換，功能範圍不同。 | 如果你需要針對實習經歷進行深入分析和證據化，這個工具會更合適。 | medium，因為需要重新適應不同的工作流程。 |
+| [YingaoWang-casia/shushu-ProjectProof](https://github.com/YingaoWang-casia/shushu-ProjectProof) | 專注於面試問題和簡歷優化，而本專案則將崗位描述轉化為具體項目。 | 如果你的需求主要是針對面試問題的準備，而不是項目的生成。 | medium，因為需要重新適應不同的工作流。 |
+| [Sunanzhe2004/shushu-internship-resume-optimizer](https://github.com/Sunanzhe2004/shushu-internship-resume-optimizer) | 專注於簡歷優化，而本專案則提供從崗位描述到項目的完整流程。 | 如果你已經有了項目，但需要專注於簡歷的優化。 | low，因為功能上有一定的重疊。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **shushu-internship-tool** | **shushu-internship-resume-optimizer** | **shushu-ProjectProof** |
+> | 維度 | **shushu-internship-tool** | **shushu-ProjectProof** | **shushu-internship-resume-optimizer** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於簡歷優化，提供針對性建議，而本專案則是從 JD 到項目的全面轉換。 | 專注於實習經歷的證據化，而本工具專注於從 JD 到項目的轉換，功能範圍不同。 |
-> | 遷移成本 | - | low，因為兩者的功能有一定重疊，易於轉換。 | medium，因為需要重新適應不同的工作流程。 |
-> | 適用場景 | 主要場景 | 如果你的主要需求是優化簡歷而非項目準備，這個工具會更適合。 | 如果你需要針對實習經歷進行深入分析和證據化，這個工具會更合適 |
+> | 技術路線 | 本專案 | 專注於面試問題和簡歷優化，而本專案則將崗位描述轉化為具體項目。 | 專注於簡歷優化，而本專案則提供從崗位描述到項目的完整流程。 |
+> | 遷移成本 | - | medium，因為需要重新適應不同的工作流。 | low，因為功能上有一定的重疊。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是針對面試問題的準備，而不是項目的生成。 | 如果你已經有了項目，但需要專注於簡歷的優化。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
 > 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
@@ -239,21 +236,21 @@ python -m shushu_internship_tool.candidate_score --jd jd.txt --candidates candid
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Windows 環境下安裝可能會遇到兼容性問題。
-  - 解法：建議在 Unix-like 系統上運行。
-- [MEDIUM] 缺乏詳細的使用文檔，可能導致使用困難。
-  - 解法：建議參考 README 中的範例進行操作。
-- [MEDIUM] 在處理複雜 JD 時，推薦的準確性可能下降。
-  - 解法：建議用戶在使用前進行多次測試和調整。
+- [MEDIUM] 用戶提供的 JD 不夠詳細，生成的項目可能不符合預期
+  - 解法：建議用戶在提供 JD 時盡量詳細描述需求
+- **[HIGH]** 在某些環境下可能會遇到依賴問題
+  - 解法：確保使用 Python 3.10 以上版本，並安裝必要的依賴
+- [low] 生成的面試材料可能需要進一步調整以符合個人風格
+  - 解法：用戶可根據自身需求對生成的材料進行修改
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 大學應屆畢業生準備技術面試 | 非常適合 | 能快速生成符合面試要求的項目素材，提升競爭力。 |
-| 轉職者需要審計過去的項目經驗 | 適合 | 能幫助清晰表達過去的經驗，增加面試成功率。 |
-| 自學者尋找合適的開源項目進行實踐 | 普通 | 雖然能推薦項目，但可能不夠深入。 |
-| 需要完整的面試準備流程的候選人 | 非常適合 | 提供全面的面試材料和準備建議。 |
+| 大學應屆畢業生準備實習面試 | 非常適合 | 能快速生成針對 JD 的項目和面試材料，提升競爭力。 |
+| 轉職者需要展示過去經驗 | 適合 | 能幫助整理過去項目，生成面試材料。 |
+| 職業規劃師幫助客戶準備面試 | 普通 | 雖然功能強大，但可能需要根據客戶需求進行調整。 |
+| 需要針對非計算機領域的崗位準備 | 不適合 | 目前功能主要針對計算機相關崗位，對其他領域支持有限。 |
 
 ## 採用成本分析
 
@@ -265,12 +262,41 @@ python -m shushu_internship_tool.candidate_score --jd jd.txt --candidates candid
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習、3 小時整合，得到快速準備面試的效果，值得一試。
+> 花 2 小時學習，3 小時整合，得到快速生成面試材料的效果，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：該工具不需要高權限運行，且不存取敏感資料，適合在 CI/CD 中使用。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+該工具最常與 GitHub 和 CI/CD 流程搭配使用，通常在開發和部署階段進行項目審計和材料生成。在一個用 GitHub 管理的專案中，你可以使用 `shushu-repo-audit` 指令來審計項目，並生成報告。該工具支持與 GitHub Actions 整合，能夠自動化生成面試材料的流程。整合時最常見的問題是依賴版本不匹配，建議在使用前檢查環境配置。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在這個工具出現之前，候選人通常依賴手動整理崗位描述和項目經驗，這樣的過程繁瑣且容易出錯。隨著 AI 技術的進步，將崗位描述自動轉化為具體項目變得可行，這使得該工具的出現恰逢其時。該工具代表了求職準備過程中的一個新趨勢，未來可能會隨著更多自動化功能的加入而進一步發展。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-3 人的小型團隊
+
+**前置技能**：
+- 熟悉 Python
+- 了解 GitHub 使用
+- 有基本的面試準備經驗
+
+> [!tip] 導入策略
+> 第一週：在個人項目中試用。第二週：在團隊內部分享使用經驗。第三週：根據反饋進行調整，並在小型專案中導入。第四週：撰寫使用手冊，分享最佳實踐。
+
+**成功指標**：面試通過率提高 30%。
+
+> [!warning] 退出計畫
+> 所有設定和生成的材料均為標準格式，易於轉換為其他工具或手動整理。
 
 ## 健康度儀表板
 
@@ -350,7 +376,8 @@ python -m shushu_internship_tool.candidate_score --jd jd.txt --candidates candid
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度不高，主要依賴於作者的維護。
+**社群活躍度**：社群活躍度中等，近期有更新和維護。
+**連結**：[文件](https://github.com/LiuMengxuan04/shushu-internship-tool/blob/main/README.md)
 
 ## 開發動態
 
@@ -514,19 +541,19 @@ python -m shushu_internship_tool.candidate_score --jd jd.txt --candidates candid
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[面試準備]] · [[簡歷優化]]
+相關概念：[[自動化測試]] · [[面試準備]] · [[簡歷設計]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]]
 
 [GitHub](https://github.com/LiuMengxuan04/shushu-internship-tool)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：面試準備）
+> [!note]- 直接競品（同子分類：求職工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "面試準備" AND file.name != "LiuMengxuan04--shushu-internship-tool"
+> WHERE subcategory = "求職工具" AND file.name != "LiuMengxuan04--shushu-internship-tool"
 > SORT stars DESC
 > ```
 
@@ -534,7 +561,7 @@ python -m shushu_internship_tool.candidate_score --jd jd.txt --candidates candid
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "LiuMengxuan04--shushu-internship-tool"
+> WHERE category = "其他" AND file.name != "LiuMengxuan04--shushu-internship-tool"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -558,7 +585,7 @@ python -m shushu_internship_tool.candidate_score --jd jd.txt --candidates candid
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化測試","面試準備","簡歷優化"];
+> const concepts = ["自動化測試","面試準備","簡歷設計"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "LiuMengxuan04--shushu-internship-tool" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

@@ -7,9 +7,9 @@ language: N/A
 license: MIT
 description: "Provider-neutral Agent Skill for Codex, Claude Code, and agentic harness design."
 homepage: ""
-stars: 944
-stars_per_day: 157
-forks: 84
+stars: 969
+stars_per_day: 138
+forks: 86
 open_issues: 4
 created: 2026-05-15
 pushed_at: 2026-05-15
@@ -19,14 +19,14 @@ month: "2026-05"
 category: "AI/ML"
 subcategory: "代理技能"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-18
-use_case: "提供一個中立的代理技能設計框架，適用於多種 AI 代理。"
+use_case: "提供中立的代理技能設計，適用於 Codex、Claude Code 和代理框架設計。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,11 +42,12 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-18"
-star_history: "2026-05-18:721,2026-05-18:721,2026-05-19:816,2026-05-19:816,2026-05-20:853,2026-05-20:853,2026-05-21:902,2026-05-21:902,2026-05-22:944,2026-05-22:944"
+star_history: "2026-05-18:721,2026-05-18:721,2026-05-19:816,2026-05-19:816,2026-05-20:853,2026-05-20:853,2026-05-21:902,2026-05-21:902,2026-05-22:944,2026-05-22:944,2026-05-23:969"
 tags:
   - github
   - "category/ai_ml"
   - "lang/other"
+  - easy_install
   - "topic/agent_skill"
   - "topic/agent_skills"
   - "topic/agentic_workflows"
@@ -55,12 +56,12 @@ tags:
 aliases:
   - "agents-best-practices"
   - "DenisSergeevitch/agents-best-practices"
-  - "提供一個中立的代理技能設計框架，適用於多種 AI 代理。"
+  - "提供中立的代理技能設計，適用於 Codex、Claude Code 和代理框架設計。"
 ---
 
 # agents-best-practices
 
-**944** stars · **157** stars/天 · 建立 6 天前 · N/A · MIT
+**969** stars · **138** stars/天 · 建立 7 天前 · N/A · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/DenisSergeevitch--agents-best-practices");
@@ -73,18 +74,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案`
+`個人專案` `easy-install`
 
 `agent-skill` `agent-skills` `agentic-workflows` `agents` `ai-agents` `anthropic` `claude` `claude-code` `codex` `codex-skill` `mcp` `prompt-engineering`
 
 > [!summary] 一句話摘要
-> 提供一個中立的代理技能設計框架，適用於多種 AI 代理。
+> 提供中立的代理技能設計，適用於 Codex、Claude Code 和代理框架設計。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (157 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 6 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要設計和實現 AI 代理的開發者和產品經理，尤其是在多業務場景下。
-> **一句話重點** 這個專案的設計理念在於提供一個可重用的代理技能框架，讓開發者能夠快速構建符合需求的代理。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (138 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 7 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要設計和實施代理系統的開發者和產品經理，尤其是在多種業務流程中。
+> **一句話重點** 這個專案提供了一個中立的代理技能設計框架，能夠靈活應用於多種業務流程。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -107,111 +108,93 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習、3 小時整合，得到靈活的代理設計能力，值得考慮。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，3 小時整合，得到靈活的代理技能設計，值得採用。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於提供一個中立的代理技能設計框架，適用於多種 AI 代理。
+> 提供了一個中立的代理技能設計框架，能夠靈活應用於多種業務流程。
 
 ## 專案簡介
 
-這個專案提供了一個中立的代理技能設計框架，旨在幫助開發者設計、生成 MVP 藍圖、審核、重構和解釋代理的架構。使用者可以通過簡單的 CLI 指令安裝這個技能，並在與 AI 代理進行對話時啟用它，從而生成針對特定需求的代理設計。其核心賣點在於提供一個可重用的知識包，讓兼容的代理能夠在需要時加載和應用工作流程。這個專案不僅限於編碼代理，還適用於研究、支持、運營等多個領域，顯示出其廣泛的應用潛力。
+這個專案提供了一個中立的代理技能設計框架，旨在幫助開發者設計、生成 MVP 藍圖、審核、重構和解釋代理框架。使用者只需提供一個簡單的指令，便可安裝此技能，並在與代理架構、工具權限、計畫模式等相關的對話中啟用該技能。核心機制是通過一個嚴謹的運行時循環，從指令生成上下文，然後進行模型調用，再到工具提議、驗證和執行，最終返回觀察結果。這樣的設計使得代理能夠在多個領域（如研究、支持、運營等）中運行，並且能夠處理複雜的工作流。
 
-技術上，這個專案使用了 `SKILL.md` 作為入口點，並且能夠與 Codex 和 Claude Code 等多種代理兼容運行。這意味著它能夠在多種環境中靈活運用，並且不依賴於特定的供應商。相較於其他同類工具，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，這個專案的優勢在於其提供的藍圖生成能力，能夠快速構建出符合生產要求的代理架構。
-
-
-
-在實際使用中，這個工具能夠處理多種業務需求，並且支持多種工作流程的自動化。使用者可能會遇到的問題包括安裝過程中的路徑配置問題，這需要用戶確保正確的技能目錄設定。社群的活躍度相對較低，目前只有 4 個開放的問題，顯示出使用者對於這個專案的需求還在探索階段。
-
-這個專案目前處於 beta 階段，適合對代理設計有需求的開發者和團隊使用。未來可能會增加更多的功能和支持，特別是在與其他 AI 代理的整合方面。對於需要快速構建代理的團隊來說，這是一個值得考慮的選擇。
+使用者可以透過 `npx skills add` 指令輕鬆安裝，或是手動克隆到指定的技能目錄。這個工具的賣點在於其靈活性和可擴展性，能夠適應不同的代理需求和環境，並且提供了多種使用案例，從生成 MVP 藍圖到審核現有代理框架，甚至設計工具和權限。技術上，這個專案依賴於一個結構化的工具和結果模型，並提供了多種參考文檔以支持使用者的需求。與其他類似工具相比，這個專案不僅限於編碼代理，還能應用於更廣泛的業務流程，這使得它在多種應用場景中都具有優勢。
 
 ## 重點功能
 
-- 藍圖生成 — 能夠根據業務需求生成符合生產要求的代理藍圖。
-- 多場景應用 — 支持多種業務領域的代理設計，如金融、法律、醫療等。
-- 安裝靈活性 — 提供多種安裝方式，包括 CLI 和手動安裝。
-- 可重用性 — 代理技能包可被多個兼容代理發現和使用。
-- 文檔清晰 — 提供詳細的使用說明和範例，幫助用戶快速上手。
+- 中立的代理技能設計 — 支持多種代理環境，如 Codex 和 Claude Code，並能夠靈活應用於不同的業務流程。
+- 生成 MVP 藍圖 — 透過簡單的對話生成針對特定需求的代理藍圖，快速構建可行的代理架構。
+- 審核現有代理框架 — 提供具體的審核建議，幫助識別和修正現有代理的問題。
+- 設計工具和權限 — 確保代理在與真實系統交互時的安全性，避免不必要的風險。
+- 多種參考文檔 — 提供詳細的參考資料，幫助使用者理解和實施代理技能。
 
 ## 快速開始
 
-1. 全局安裝技能
+1. 全局安裝代理技能
 ```bash
 npx skills add DenisSergeevitch/agents-best-practices -g
 ```
-2. 手動安裝到 Codex
+2. 手動克隆到 Codex 技能目錄
 ```bash
 git clone https://github.com/DenisSergeevitch/agents-best-practices.git ~/.codex/skills/agents-best-practices
 ```
-3. 手動安裝到 Claude Code
+3. 手動克隆到 Claude Code 技能目錄
 ```bash
 git clone https://github.com/DenisSergeevitch/agents-best-practices.git ~/.claude/skills/agents-best-practices
-```
-
-## 程式碼範例
-
-```bash
-# 前置條件
-# 安裝到 Codex 的指令
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-git clone https://github.com/DenisSergeevitch/agents-best-practices.git 
-  "${CODEX_HOME:-$HOME/.codex}/skills/agents-best-practices"
-# 預期輸出
-技能將被安裝到指定的技能目錄中，並可供 Codex 使用。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 944 stars（157/天），forks 84（8.9%），顯示出一定的關注度。作者 DenisSergeevitch 之前在 AI 代理領域有過其他貢獻，這個專案解決了在多種業務場景下快速構建代理的需求，之前的方案往往缺乏通用性和靈活性。社群的反饋和需求可能是推動這個專案快速增長的原因之一。
+> 建立 7 天內累積 969 stars（138/天），forks 86（8.9%），顯示出強勁的增長潛力。作者 DenisSergeevitch 在代理技能設計方面有豐富的經驗，這個專案解決了在多種業務流程中缺乏統一代理技能設計的痛點。之前的解決方案往往缺乏靈活性和可擴展性，無法滿足多樣化的需求。社群的反應顯示出對這種中立設計的需求，並且在 GitHub 上的討論也逐漸增多。這個工具的出現正好填補了這一空白，並且其設計理念符合當前對於代理系統的需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要設計和實現 AI 代理的開發者和產品經理，尤其是在多業務場景下。
+**目標受眾**：需要設計和實施代理系統的開發者和產品經理，尤其是在多種業務流程中。
 
 > [!example] 使用場景
-> - 產品經理用它來生成針對特定業務需求的 MVP 代理藍圖，因為這樣能夠快速驗證想法並降低開發風險。
-> - 數據分析師用它來設計自動化數據處理代理，因為這樣能夠節省手動處理的時間，並提高數據準確性。
-> - 法律顧問用它來創建合規性檢查代理，因為這樣能夠確保業務流程符合相關法律法規，降低法律風險。
+> - 產品經理用它來生成針對客戶續約風險的 MVP 代理藍圖，因為這樣可以快速獲得一個可行的代理架構，避免了繁瑣的手動設計。
+> - 開發者用它來審核現有的研究代理框架，因為它能夠識別出運行時的失敗點，並提供具體的改進建議。
+> - 運營專員用它來設計與 Slack、Google Drive 等工具的連接，因為這樣能夠確保工具的安全性和有效性，避免了廣泛權限的風險。
 
 ## 架構分析
 
-這個專案採用了一個模組化的設計，允許用戶根據需求選擇安裝方式。使用者可以選擇全局安裝或手動安裝到特定的代理環境中。資料流方面，當用戶啟用技能時，代理會根據 SKILL.md 的定義加載相應的工作流程。
+該專案採用中立的代理技能設計，旨在提供一個可重用的工作流框架。其架構包括一個指令生成上下文的流程，並通過模型調用和工具提議進行驗證和執行。這樣的設計使得代理能夠在多種業務場景中運行，並且能夠靈活應對不同的需求。
 
-這種設計使得技能可以在多個環境中重用，降低了重複開發的成本。選擇這種模組化設計的代價是需要用戶手動配置路徑，對於不熟悉的用戶來說可能會造成困惑。擴展性方面，未來可以考慮增加對更多代理的支持，以擴大應用範圍。
+具體來說，該架構支持狹窄類型的工具和結構化的工具結果，並在模型之外進行運行時權限檢查。這樣的設計選擇使得系統能夠保持靈活性，但也可能導致在某些情況下的性能瓶頸，特別是在處理大量數據時。整體來說，這個架構的設計是為了提供一個簡單而嚴謹的運行時環境，並且能夠隨著需求的變化進行擴展。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於使用 SKILL.md 作為入口點，這使得代理能夠根據定義的工作流程加載相應的技能。這種設計模式允許用戶在多種環境中靈活使用，並且能夠快速生成符合需求的代理藍圖。效能上，這個工具能夠處理多種業務需求，但具體的效能數據尚未提供。設計上選擇了模組化的架構，這樣的選擇帶來了靈活性，但也需要用戶手動配置路徑，這對於不熟悉的用戶來說可能會造成困難。技術風險方面，未來可能會面臨擴展性問題，尤其是在支持更多代理的過程中。整合方面，這個工具的整合難度相對較低，但對於不熟悉 CLI 的用戶來說，仍然需要一定的學習成本。
+該專案的核心技術機制是基於一個中立的代理技能設計，旨在提供一個可重用的工作流框架。其運行時循環包括指令生成、上下文構建、模型調用、工具提議、驗證和執行，這樣的設計使得代理能夠靈活應對不同的業務需求。效能方面，該系統能夠處理多種業務場景，但在數據量大時可能會出現性能瓶頸。設計上選擇了狹窄類型的工具和結構化的工具結果，這樣的選擇能夠提高安全性，但也可能限制某些功能的靈活性。技術風險方面，該系統在擴展時可能會面臨性能下降的問題，特別是在處理大量數據時。整合方面，該專案能夠輕鬆與現有的代理系統進行整合，但對於新手來說，可能需要一定的學習曲線。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝指導和使用範例，對於新手來說相對友好。安裝過程中可能會遇到路徑配置的問題，但整體流程還算順暢。文件目前僅提供英文版本，可能對非英語使用者造成一定的障礙。
+> README 文件提供了清晰的安裝指導和使用範例，安裝過程相對順暢。雖然沒有專門的入門指南，但使用者可以透過參考文檔快速上手。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供靈活的安裝選項，適合不同用戶需求。
-> - 支持多種業務場景的代理設計，應用範圍廣泛。
-> - 文檔詳細，易於上手，適合新手使用。
+> - 靈活的設計，適用於多種業務流程。
+> - 提供詳細的參考文檔，幫助使用者快速上手。
+> - 能夠生成針對特定需求的代理藍圖，節省設計時間。
 
 > [!danger] 缺點
-> - 目前僅支持 Codex 和 Claude Code，對其他代理的支持尚不明確。
-> - 安裝過程需要手動配置路徑，對新手不太友好。
-> - 社群活躍度較低，可能缺乏及時的技術支持。
+> - 對於新手來說，可能需要一定的學習曲線。
+> - 不支持多代理框架的完整功能。
+> - 在某些情況下可能存在性能瓶頸。
 
 > [!warning] 注意事項
-> - 目前僅支持 Codex 和 Claude Code，對其他代理的支持尚不明確。
-> - 安裝過程需要用戶手動配置路徑，對新手可能不太友好。
-> - 社群活躍度較低，可能缺乏及時的技術支持。
+> - 不僅限於編碼代理，對於多代理框架的支持有限。
+> - 不提供運行時授權、沙箱或審計日誌的替代方案。
+> - 需要使用者具備一定的代理設計基礎，否則可能難以充分利用其功能。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的代理藍圖生成能力，但專注於遊戲開發場景，對於商業應用的支持較少。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資料處理的代理設計，而本專案則涵蓋更廣泛的業務場景。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供了一個更專注於遊戲開發的代理框架，而本專案則更廣泛地應用於各種業務流程。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 專注於與 Claude 相關的工具集成，而本專案則提供了中立的設計，適用於多種代理環境。 |
 
 ## 替代方案決策
 
@@ -219,47 +202,47 @@ git clone https://github.com/DenisSergeevitch/agents-best-practices.git
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發場景的代理設計，而本專案則涵蓋更廣泛的業務應用。 | 如果你的專案主要集中在遊戲開發，這個工具可能更適合。 | medium，因為需要重新適應不同的設計理念。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資料處理的代理設計，而本專案則提供更全面的業務場景支持。 | 如果你的需求主要集中在資料處理，這個工具可能更合適。 | low，因為兩者的設計理念相似。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發的代理框架，提供了針對遊戲場景的特定功能，而本專案則更廣泛地應用於各種業務流程。 | 如果你的專案主要集中在遊戲開發，且需要針對遊戲場景的特定功能，則應選擇此工具。 | medium，因為需要重新設計部分功能以適應遊戲開發的需求。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 專注於與 Claude 相關的工具集成，提供了針對 Claude 的專用功能，而本專案則提供了中立的設計。 | 如果你的專案已經在使用 Claude 並需要專用的集成功能，則應選擇此工具。 | low，因為可以直接使用 Claude 的 API 進行整合。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **agents-best-practices** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **agents-best-practices** | **agent-sprite-forge** | **claude-obsidian** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於遊戲開發場景的代理設計，而本專案則涵蓋更廣泛的業務應用。 | 專注於資料處理的代理設計，而本專案則提供更全面的業務場景支持。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的設計理念。 | low，因為兩者的設計理念相似。 |
-> | 適用場景 | 主要場景 | 如果你的專案主要集中在遊戲開發，這個工具可能更適合。 | 如果你的需求主要集中在資料處理，這個工具可能更合適。 |
+> | 技術路線 | 本專案 | 專注於遊戲開發的代理框架，提供了針對遊戲場景的特定功能，而本專案則更廣泛地應用於各種業務流程。 | 專注於與 Claude 相關的工具集成，提供了針對 Claude 的專用功能，而本專案則提供了中立的設計。 |
+> | 遷移成本 | - | medium，因為需要重新設計部分功能以適應遊戲開發的需求。 | low，因為可以直接使用 Claude 的 API 進行整合。 |
+> | 適用場景 | 主要場景 | 如果你的專案主要集中在遊戲開發，且需要針對遊戲場景的特定功能 | 如果你的專案已經在使用 Claude 並需要專用的集成功能， |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合對代理設計有需求的開發者和團隊使用，但不建議用在生產環境的核心路徑上。
+> 適合個人試用和探索，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 安裝過程中可能需要手動配置路徑，對新手不太友好。
-  - 解法：仔細參考 README 中的安裝指導。
-- [MEDIUM] 社群活躍度低，可能缺乏及時的技術支持。
-  - 解法：考慮在 GitHub 上尋求幫助或查閱相關文檔。
-- **[HIGH]** 目前僅支持 Codex 和 Claude Code，對其他代理的支持尚不明確。
-  - 解法：在選擇工具時考慮這一限制。
+- **[HIGH]** 安裝過程中可能會遇到權限問題，特別是在 Linux 系統上
+  - 解法：確保使用者有足夠的權限進行安裝
+- [MEDIUM] 在某些情況下，代理可能無法正確識別工具的權限
+  - 解法：檢查工具的設置和權限配置
+- **[HIGH]** 使用過程中可能會遇到性能瓶頸，特別是在處理大量數據時
+  - 解法：考慮對代理進行優化，減少數據量
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要快速構建代理的初創公司 | 非常適合 | 提供靈活的藍圖生成能力，能夠快速響應市場需求。 |
-| 大型企業的複雜業務流程自動化 | 適合 | 支持多種業務場景的代理設計，能夠滿足不同需求。 |
-| 對代理設計不熟悉的小型團隊 | 普通 | 安裝過程需要手動配置，對新手不太友好。 |
-| 需要高效能的資料處理代理 | 不適合 | 目前主要針對業務場景，對資料處理的支持有限。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 該專案提供了靈活的設計，能夠快速生成所需的代理藍圖。 |
+| 大型企業的複雜業務流程 | 普通 | 雖然功能強大，但可能需要較高的學習曲線。 |
+| 教育機構的自動化工作流 | 適合 | 能夠應用於多種業務流程，並提供詳細的參考文檔。 |
+| 需要高安全性的金融系統 | 不適合 | 目前的設計可能不符合金融系統的安全要求。 |
 
 ## 採用成本分析
 
@@ -268,15 +251,15 @@ git clone https://github.com/DenisSergeevitch/agents-best-practices.git
 | 學習時間 | ~5 小時 |
 | 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習、3 小時整合，得到靈活的代理設計能力，值得考慮。
+> 花 5 小時學習，3 小時整合，得到靈活的代理技能設計，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料。依賴鏈的信任程度尚可，但需注意未經審計的依賴項。
+> 該工具不需要高權限，但在使用過程中可能會存取敏感資料。依賴鏈的信任程度尚可，但仍需注意可能的供應鏈風險。在 CI/CD 中使用相對安全，但建議進行充分的測試。
 
 ## 健康度儀表板
 
@@ -341,7 +324,7 @@ git clone https://github.com/DenisSergeevitch/agents-best-practices.git
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 84 |
+| Forks | 86 |
 | Open Issues | 4 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-05-15 |
@@ -357,7 +340,8 @@ git clone https://github.com/DenisSergeevitch/agents-best-practices.git
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度較低，只有 4 個開放的問題。
+**社群活躍度**：社群活躍度中等，開放問題尚未解決。
+**連結**：[文件](https://github.com/DenisSergeevitch/agents-best-practices)
 
 ## 開發動態
 
@@ -567,9 +551,9 @@ git clone https://github.com/DenisSergeevitch/agents-best-practices.git
 
 ## 延伸閱讀
 
-相關概念：[[Prompt Engineering]] · [[Agent 框架]] · [[自動化]]
+相關概念：[[MCP Protocol]] · [[Prompt Engineering]] · [[自動化測試]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[alchaincyf--hermes-agent-orange-book|alchaincyf/hermes-agent-orange-book]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[alchaincyf--hermes-agent-orange-book|alchaincyf/hermes-agent-orange-book]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]]
 
 [GitHub](https://github.com/DenisSergeevitch/agents-best-practices)
 
@@ -611,7 +595,7 @@ git clone https://github.com/DenisSergeevitch/agents-best-practices.git
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["Prompt Engineering","Agent 框架","自動化"];
+> const concepts = ["MCP Protocol","Prompt Engineering","自動化測試"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "DenisSergeevitch--agents-best-practices" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

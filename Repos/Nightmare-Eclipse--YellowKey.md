@@ -20,7 +20,7 @@ category: "安全"
 subcategory: "漏洞利用"
 release_tag: ""
 install_complexity: "easy"
-status: to-review
+status: archived
 my_rating: 0
 score_confidence: 0
 score_interest: 0

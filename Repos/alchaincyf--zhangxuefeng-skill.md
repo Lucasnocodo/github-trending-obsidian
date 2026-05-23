@@ -7,17 +7,17 @@ language: N/A
 license: MIT
 description: "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。"
 homepage: ""
-stars: 7246
-stars_per_day: 161
-forks: 2321
+stars: 7280
+stars_per_day: 155
+forks: 2324
 open_issues: 11
 created: 2026-04-05
-pushed_at: 2026-04-21
+pushed_at: 2026-05-22
 first_seen: 2026-04-10
 week: "2026-W15"
 month: "2026-04"
 category: "其他"
-subcategory: "职业规划"
+subcategory: "職業規劃"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-10
-use_case: "提供高考志愿、考研及职业规划的实战思维框架。"
+use_case: "提供高考志愿、考研和职业规划的实战思维框架。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-04-15"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 76
-repo_size_kb: 5145
-readme_length: 7620
+repo_size_kb: 5116
+readme_length: 8645
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-10"
-star_history: "2026-04-10:2017,2026-04-10:2057,2026-04-11:3106,2026-04-11:3109,2026-04-12:4310,2026-04-12:4333,2026-04-13:5301,2026-04-14:5548,2026-04-15:5765,2026-04-16:5923,2026-04-17:6038,2026-04-18:6107,2026-04-19:6161,2026-04-20:6188,2026-04-21:6256,2026-04-22:6343,2026-04-23:6420,2026-04-24:6479,2026-04-25:6519,2026-04-26:6550,2026-04-27:6587,2026-04-28:6640,2026-04-29:6687,2026-04-30:6725,2026-05-01:6756,2026-05-02:6773,2026-05-03:6812,2026-05-04:6826,2026-05-05:6846,2026-05-06:6877,2026-05-07:6906,2026-05-08:6933,2026-05-09:6969,2026-05-10:7001,2026-05-11:7033,2026-05-12:7060,2026-05-13:7075,2026-05-14:7095,2026-05-15:7119,2026-05-16:7148,2026-05-17:7160,2026-05-18:7185,2026-05-19:7210,2026-05-20:7235,2026-05-21:7246"
+star_history: "2026-04-10:2017,2026-04-10:2057,2026-04-11:3106,2026-04-11:3109,2026-04-12:4310,2026-04-12:4333,2026-04-13:5301,2026-04-14:5548,2026-04-15:5765,2026-04-16:5923,2026-04-17:6038,2026-04-18:6107,2026-04-19:6161,2026-04-20:6188,2026-04-21:6256,2026-04-22:6343,2026-04-23:6420,2026-04-24:6479,2026-04-25:6519,2026-04-26:6550,2026-04-27:6587,2026-04-28:6640,2026-04-29:6687,2026-04-30:6725,2026-05-01:6756,2026-05-02:6773,2026-05-03:6812,2026-05-04:6826,2026-05-05:6846,2026-05-06:6877,2026-05-07:6906,2026-05-08:6933,2026-05-09:6969,2026-05-10:7001,2026-05-11:7033,2026-05-12:7060,2026-05-13:7075,2026-05-14:7095,2026-05-15:7119,2026-05-16:7148,2026-05-17:7160,2026-05-18:7185,2026-05-19:7210,2026-05-20:7235,2026-05-21:7246,2026-05-23:7280"
 tags:
   - github
   - "category/其他"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "zhangxuefeng-skill"
   - "alchaincyf/zhangxuefeng-skill"
-  - "提供高考志愿、考研及职业规划的实战思维框架。"
+  - "提供高考志愿、考研和职业规划的实战思维框架。"
 ---
 
 # zhangxuefeng-skill
 
-**7.2k** stars · **161** stars/天 · 建立 45 天前 · N/A · MIT
+**7.3k** stars · **155** stars/天 · 建立 47 天前 · N/A · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/alchaincyf--zhangxuefeng-skill");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供高考志愿、考研及职业规划的实战思维框架。
+> 提供高考志愿、考研和职业规划的实战思维框架。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Growing · **熱度** Hot (161 stars/day)
-> **授權** MIT (商業友好) · **維護** Moderate (最後推送 29 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 希望在高考志愿、考研或职业规划上获得深度指导的学生和职场新人。
-> **一句話重點** 这个项目不仅是工具，更是一个思维框架，帮助用户在职业规划上做出更明智的选择。
+> **安裝難度** Easy · **專案狀態** Growing · **熱度** Hot (155 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
+> **適合** 希望在高考和考研中獲得具體建議的學生及其家長。
+> **一句話重點** 這個工具不僅是職業建議的集合，而是基於深度調研的思維框架，能夠幫助用戶在複雜的職業選擇中做出明智決策。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/alchaincyf--zhangxuefeng-skill");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "职业规划" && p.file.name !== "alchaincyf--zhangxuefeng-skill" && p.status !== "archived")
+>     .where(p => p.subcategory === "職業規劃" && p.file.name !== "alchaincyf--zhangxuefeng-skill" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,43 +96,44 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 职业规划 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 職業規劃 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **安裝** Easy (一行搞定)
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學、1 小時整合，得到具體的職業建議，值得嘗試。
 
 > [!abstract] 核心創新
-> 通过张雪峰的心智模型，提供个性化的职业规划建议，而非简单的语录集合。
+> 提供基於張雪峰的思維框架的職業規劃工具，結合數據分析和個人背景。
 
 ## 專案簡介
 
-张雪峰.skill 是一个基于张雪峰的思维模型构建的认知操作系统，旨在帮助用户在高考志愿、考研及职业规划中做出更明智的决策。用户可以通过输入具体问题，获得基于张雪峰的思维框架的分析和建议，例如如何选择专业或职业方向。核心机制包括运用就业倒推法、家庭背景分流等心智模型，帮助用户从中位数的就业数据和家庭条件出发，制定合理的职业规划。安装后，用户可以通过简单的命令与系统进行互动，如 `> 用张雪峰的视角帮我分析这个专业选择`，获取针对性的建议。该项目的卖点在于其不是简单的语录集合，而是一个可运行的思维框架，能够提供实用的决策启发。
+张雪峰.skill 是一个基于张雪峰的认知操作系统，旨在帮助用户进行高考志愿、考研和职业规划的决策。用户可以通过与 AI agent 的对话，获得基于张雪峰的思维框架的建议。核心机制是通过提问引导用户思考，结合社会背景和个人情况来分析职业选择。例如，用户询问关于高考志愿时，张雪峰会首先了解家庭背景，再根据行业现状和就业数据给出建议。此工具的卖点在于其深度调研和提炼的心智模型，能够提供更具针对性的职业规划建议。技术上，该项目基于开放的 Agent Skills 协议，支持多种 AI agent runtime，用户只需一行命令即可安装，极大简化了使用流程。
 
-技术实现上，项目使用了 npx 进行安装，依赖于 Claude AI 的能力进行对话生成，确保了高效的用户体验。与传统的职业咨询工具相比，该工具更注重实战思维和个性化分析，适合需要快速决策的用户。使用过程中，用户可能会发现某些建议受限于特定的社会背景和行业现状，因此在不同的社会环境下，建议的适用性可能有所不同。该项目目前处于活跃开发阶段，社区反馈积极，适合希望在职业规划上获得深度指导的用户。
+与传统的职业咨询工具相比，张雪峰.skill 提供的是基于数据和经验的实战思维，而非简单的建议。相较于其他工具如 Career Coach 或 Pathway，张雪峰.skill 更加注重个体背景和行业现状的结合，适合需要具体分析和建议的用户。使用时，用户可能会遇到对话不够灵活的问题，建议在提问时尽量具体。该项目目前处于活跃开发阶段，适合个人或小团队使用，预计未来会继续扩展更多的职业规划模型和案例。对于希望在职业选择上获得深入分析的用户，张雪峰.skill 是一个值得尝试的工具。
 
-**技術棧**：`Claude AI`
+**技術棧**：`Node.js` · `Agent Skills`
 
 ## 重點功能
 
-- 思维框架 — 基于张雪峰的心智模型，提供实用的决策启发。
-- 就业倒推法 — 通过分析中位数就业数据，帮助用户选择专业。
-- 家庭背景分流 — 根据用户家庭条件提供个性化建议。
-- 快速互动 — 用户可以通过简单的命令与系统对话，获取针对性建议。
-- 多样化示例 — 提供多种实际对话示例，帮助用户理解如何使用。
+- 思維框架 — 提供基於張雪峰的心智模型和決策啟發式。
+- 多場景應用 — 可用於高考志願、考研及職業規劃分析。
+- 數據驅動 — 基於大量調研和數據分析，提供具體建議。
+- 易於安裝 — 支持一行命令安裝，兼容多種 AI agent runtime。
+- 實戰案例 — 提供多個實際對話示例，幫助用戶理解如何提問。
 
 ## 快速開始
 
-1. 安装技能
+1. 安裝 skill
 ```bash
 npx skills add alchaincyf/zhangxuefeng-skill
 ```
-2. 启动对话
+2. 告訴 agent 分析問題
 ```bash
 > 用张雪峰的视角帮我分析这个专业选择
 ```
-3. 获取建议
+3. 獲取建議
 ```bash
 > 张雪峰会怎么看这个职业方向？
 ```
@@ -140,46 +141,118 @@ npx skills add alchaincyf/zhangxuefeng-skill
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 45 天內累積 7246 stars（161/天），forks 2321（32.0%），顯示出高活躍度和用戶參與度。作者 alchaincyf 是一名獨立開發者，過去專注於 AI 和教育領域，這個專案填補了高考和職業規劃領域的需求，提供了更具體的思維框架。該工具的出現正好符合了當前社會對於教育和職業規劃的重視，並且其獨特的思維模型吸引了大量用戶的關注。社群中活躍的討論和反饋進一步推動了其流行。forks/stars 比率為 32.0%，顯示出許多用戶在積極修改和使用這個工具。
+> 建立 47 天就累積 7280 stars（155/天），forks 2324（31.9%），顯示出強烈的社群參與。作者 alchaincyf 是一位獨立開發者，過去的作品包括多個 AI 相關工具，這個專案解決了傳統職業規劃工具缺乏個性化和數據支持的痛點。近期的社交媒體討論和用戶反饋也促進了其快速增長，顯示出對於職業規劃的需求在上升。此工具的設計和實現正好契合了當前社會對於職業選擇的重視，尤其是在高考和考研的背景下。
 
 ## 適合誰使用
 
-**目標受眾**：希望在高考志愿、考研或职业规划上获得深度指导的学生和职场新人。
+**目標受眾**：希望在高考和考研中獲得具體建議的學生及其家長。
 
 > [!example] 使用場景
-> - 高中生用它來分析适合的大学专业选择，预期结果是能够根据自身条件和社会需求做出更明智的决策，因为它提供了基于数据的职业建议。
-> - 大学生用它来评估考研的必要性，预期结果是能够明确是否继续深造，避免不必要的时间浪费，因为它结合了就业市场的实际情况。
-> - 职场新人用它来规划职业发展路径，预期结果是能够找到更符合自身背景和市场需求的职业方向，因为它运用了家庭背景和行业现状分析。
+> - 學生用它來分析高考志願選擇，因為它能根據家庭背景和行業現狀提供具體建議。
+> - 職場新人用它來決定是否考研，因為它能幫助評估行業需求和個人能力。
+> - 家長用它來了解孩子的職業規劃，因為它提供了基於數據的分析框架，避免了盲目跟風。
 
 ## 架構分析
 
-该项目采用了基于 Claude AI 的对话生成架构，用户通过 npx 安装后，可以直接与系统进行交互。数据流从用户输入问题开始，Claude AI 解析问题并根据张雪峰的思维框架生成回答。这样的设计使得用户能够快速获取个性化建议，降低了使用门槛。选择 Claude AI 作为核心技术，确保了高效的对话生成能力，但也依赖于其稳定性和准确性。整体架构轻量，便于快速部署和使用，适合需要快速决策的用户群体。
+該專案採用模組化設計，核心是基於 Agent Skills 協議的技能框架。用戶通過簡單的 CLI 指令安裝，並可在多種 AI agent runtime 中運行。資料流從用戶輸入問題開始，經過張雪峰的心智模型分析，最終輸出具體建議。選擇這種設計是為了降低使用門檻，讓更多用戶能夠輕鬆獲取建議。這種模組化的架構也使得未來擴展其他人物的技能變得更加容易。
 
 ## 技術深入分析
 
-张雪峰.skill 的核心技术机制在于其基于 Claude AI 的对话生成能力，结合了张雪峰的思维模型，提供个性化的职业规划建议。该工具通过分析用户的具体问题，运用就业倒推法、家庭背景分流等模型，帮助用户从中位数就业数据出发，制定合理的职业规划。该项目的设计选择了轻量级的架构，确保了快速的响应时间和良好的用户体验。由于依赖于 Claude AI 的能力，整体性能和准确性在一定程度上受到其影响。设计上，项目避免了复杂的依赖关系，降低了用户的学习成本。然而，随着用户数量的增加，可能会面临性能瓶颈，尤其是在高并发情况下。整体来看，该项目在技术实现上具有较高的灵活性和扩展性，适合快速迭代和更新。
+張雪峰.skill 的核心技術機制是基於深度調研和數據分析，提煉出多個心智模型，這些模型幫助用戶在職業選擇上做出更明智的決策。該工具能夠處理多種職業相關問題，並提供具體的建議，這使得它在職業規劃工具中具有獨特性。選擇 Node.js 作為開發語言，因為其在處理 I/O 密集型應用時的高效性。這個選擇使得整個系統能夠快速響應用戶的請求，並且易於擴展。相較於其他職業規劃工具，張雪峰.skill 更加注重個體背景和行業現狀的結合，這使得它在提供建議時的針對性更強。使用者在使用過程中可能會遇到對話不夠靈活的問題，建議在提問時儘量具體，以獲得更準確的建議。整體來看，這個工具在職業規劃領域的發展潛力巨大，未來可能會擴展更多的職業模型和案例，進一步提升其實用性。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了详细的安装步骤和使用示例。安装过程顺畅，没有明显的坑。文档中包含了丰富的示例，帮助新手快速上手。
+> README 文件清晰，提供了安裝和使用的詳細說明。安裝過程順暢，沒有明顯的坑。提供了實際的使用範例，幫助新手快速上手。文件目前僅支持中文，對於非中文用戶可能需要額外的翻譯支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供基于数据的职业建议，帮助用户做出明智决策。
-> - 使用简单，用户只需通过命令与系统互动即可获取建议。
-> - 结合了多种思维模型，提供全面的分析视角。
+> - 提供基於數據的具體建議，避免了傳統職業規劃的盲目性。
+> - 安裝簡單，易於使用，適合各類用戶。
+> - 結合了多個心智模型，提供深度思考框架。
 
 > [!danger] 缺點
-> - 建议可能不够个性化，需结合用户实际情况。
-> - 依赖于 Claude AI 的稳定性，可能存在不确定性。
-> - 某些复杂问题可能无法得到满意的解答。
+> - 對於某些行業的具體建議可能不夠深入。
+> - 需要用戶提供詳細背景信息，否則建議可能不準確。
+> - 目前僅支持中文，對於非中文用戶不友好。
 
 > [!warning] 注意事項
-> - 建议可能受限于特定的社会背景和行业现状。
-> - 不适合完全依赖于工具做决策，仍需结合个人实际情况。
-> - 某些建议可能缺乏针对性，需用户自行判断。
+> - 不支持非中文的對話，主要針對中文用戶設計。
+> - 對於某些行業的具體細節可能不夠深入，建議結合其他資源使用。
+> - 需要用戶提供具體背景信息，否則建議可能不夠準確。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [career-coach/career-coach](https://github.com/career-coach/career-coach) | career-coach 提供一般的職業建議，但缺乏張雪峰.skill 的個性化和數據支持。 |
+| [pathway/pathway](https://github.com/pathway/pathway) | pathway 側重於職業路徑規劃，而張雪峰.skill 更注重具體的行業分析和個人背景。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| career-coach | career-coach 提供一般的職業建議，但缺乏張雪峰.skill 的個性化和數據支持。 | 如果需要更廣泛的職業建議而不需要個性化分析，career-coach 是不錯的選擇。 | medium，因為需要重新評估職業選擇的框架。 |
+| pathway | pathway 側重於職業路徑規劃，而張雪峰.skill 更注重具體的行業分析和個人背景。 | 如果需要針對特定職業路徑的深入分析，pathway 可能更合適。 | high，因為需要重新適應不同的分析方式。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **zhangxuefeng-skill** | **career-coach** | **pathway** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | career-coach 提供一般的職業建議，但缺乏張雪峰.skill 的個性化和數據支持。 | pathway 側重於職業路徑規劃，而張雪峰.skill 更注重具體的行業分析和個人背景。 |
+> | 遷移成本 | - | medium，因為需要重新評估職業選擇的框架。 | high，因為需要重新適應不同的分析方式。 |
+> | 適用場景 | 主要場景 | 如果需要更廣泛的職業建議而不需要個性化分析，career-c | 如果需要針對特定職業路徑的深入分析，pathway 可能更合 |
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Beta |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | medium |
+
+> [!tip] 採用建議
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+
+## 已知陷阱
+
+> [!bug] 踩坑才知道的問題
+
+- [MEDIUM] 對話不夠靈活，可能無法理解某些非標準問題。
+  - 解法：建議用戶在提問時儘量具體。
+- [MEDIUM] 某些行業的具體建議可能不夠深入。
+  - 解法：建議結合其他資源使用。
+- **[HIGH]** 目前僅支持中文，對於非中文用戶不友好。
+  - 解法：需要額外的翻譯支持。
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 高考志願選擇的學生 | 非常適合 | 提供具體的行業分析和建議，幫助學生做出明智的選擇。 |
+| 考研的本科生 | 適合 | 能夠根據個人背景提供考研建議，幫助學生評估是否考研。 |
+| 職場新人 | 普通 | 雖然提供職業建議，但對於某些行業的具體分析可能不夠深入。 |
+| 家長希望了解孩子的職業規劃 | 非常適合 | 能夠提供基於數據的分析框架，幫助家長理解職業選擇。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~1 小時 |
+| 維護負擔 | low |
+| 綁定風險 | low |
+
+> [!tip] 投入 vs 回報
+> 花 2 小時學、1 小時整合，得到具體的職業建議，值得嘗試。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 低風險：該工具不需要高權限，僅需用戶提供背景信息，不存取敏感資料。依賴鏈的信任程度高，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -247,7 +320,7 @@ npx skills add alchaincyf/zhangxuefeng-skill
 | Forks | 2.3k |
 | Open Issues | 11 |
 | Issue 解決率 | 76% (35 closed) |
-| 最後推送 | 2026-04-21 |
+| 最後推送 | 2026-05-22 |
 | 建立日期 | 2026-04-05 |
 | Repo 大小 | 5.0 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/alchaincyf/zhangxuefeng-skill) |
@@ -255,16 +328,17 @@ npx skills add alchaincyf/zhangxuefeng-skill
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@alchaincyf](https://github.com/alchaincyf) | 7 |
+> | [@alchaincyf](https://github.com/alchaincyf) | 8 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，討論熱烈，回應速度快。
+**社群活躍度**：社群活躍，定期更新和回應用戶問題。
+**連結**：[文件](https://agentskills.io)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-04-05 ~ 2026-04-21）
-> **活躍天數** 6 天 · **最新 commit** docs: add hero animation to README
+> [!abstract] 最近 10 次 commit（2026-04-05 ~ 2026-05-22）
+> **活躍天數** 7 天 · **最新 commit** docs: make README runtime-neutral (Agent Skills standard)
 
 ## 熱門議題
 
@@ -289,7 +363,9 @@ npx skills add alchaincyf/zhangxuefeng-skill
 > > *「社会就是一个大筛子，用学历筛孩子，用房子筛父母，用工作筛家庭。」*
 > 
 > [](LICENSE)
-> [](https://claude.ai/code)
+> [](https://agentskills.io)
+> [](https://skills.sh)
+> [](#安装)
 > [](https://github.com/alchaincyf/nuwa-skill)
 > 
 > **张雪峰的认知操作系统。不是语录合集，是可运行的思维框架。**
@@ -449,12 +525,39 @@ npx skills add alchaincyf/zhangxuefeng-skill
 > 
 > ## 安装
 > 
+> 本 skill 基于开放的 [Agent Skills](https://agentskills.io) 协议，可在任何 skills-compatible 的 AI agent runtime 中运行（Claude Code、Codex、Cursor、OpenClaw、Hermes Agent、CodeBuddy、Workbuddy、Gemini CLI、OpenCode 等 50+ runtime）。
+> 
+> ### 方式一：一行命令（推荐，跨 runtime 自动检测）
+> 
 > ```bash
 > npx skills add alchaincyf/zhangxuefeng-skill
 > ```
 > 
-> 然后在 Claude Code 里：
+> 通用 CLI 安装器（[vercel-labs/skills](https://github.com/vercel-labs/skills)，支持 55+ runtime）会自动识别当前 runtime 并把 skill 放到正确目录。需要指定 runtime 时加 `-a claude-code` / `-a codex` / `-a cursor` / `-a openclaw` 等参数。
 > 
+> ### 方式二：手动安装
+> 
+> 展开查看各 runtime 的 skills 目录
+> 
+> | Runtime | 安装路径 |
+> |---|---|
+> | Claude Code | `~/.claude/skills/zhangxuefeng-skill/` |
+> | Codex CLI | `~/.codex/skills/zhangxuefeng-skill/` |
+> | Cursor | `~/.cursor/skills/zhangxuefeng-skill/` |
+> | OpenClaw | `~/.openclaw/workspace/skills/zhangxuefeng-skill/` |
+> | Hermes Agent | 跑该 runtime 的 install 脚本或 clone 到其 skills 目录 |
+> 
+> ```bash
+> git clone https://github.com/alchaincyf/zhangxuefeng-skill 
+> ```
+> 
+> ### 方式三：作为参考资料使用
+> 
+> 即使 runtime 不支持 Agent Skills 自动加载，你也可以把 `SKILL.md` 的内容粘贴进对话——它本质就是一份 markdown + YAML frontmatter。
+> 
+> ### 使用
+> 
+> 装好后，告诉你的 agent：
 > ```
 > > 用张雪峰的视角帮我分析这个专业选择
 > > 张雪峰会怎么看这个职业方向？
@@ -584,34 +687,11 @@ npx skills add alchaincyf/zhangxuefeng-skill
 > 
 > ## 许可证
 > 
-> MIT — 随便用，随便改，随便蒸馏。
-> 
-> ---
-> 
-> ---
-> 
-> ## 关于作者
-> 
-> **花叔 Huashu** — AI Native Coder，独立开发者，代表作：小猫补光灯（AppStore 付费榜 Top1）
-> 
-> | 平台 | 链接 |
-> |------|------|
-> | 🌐 官网 | [bookai.top](https://bookai.top) · [huasheng.ai](https://www.huasheng.ai) |
-> | 𝕏 Twitter | [@AlchainHust](https://x.com/AlchainHust) |
-> | 📺 B站 | [花叔](https://space.bilibili.com/14097567) |
-> | ▶️ YouTube | [@Alchain](https://www.youtube.com/@Alchain) |
-> | 📕 小红书 | [花叔](https://www.xiaohongshu.com/user/profile/5abc6f17e8ac2b109179dfdf) |
-> | 💬 公众号 | 微信搜「花叔」或扫码关注 ↓ |
-> 
-> *人生真好玩儿，下辈子还来。*
-> 
-> MIT License © [花叔 Huashu](https://github.com/alchaincyf)
-> 
-> Made with [女娲.skill](https://github.com/alchaincyf/nuwa-skill)
+> MIT
 
 ## 延伸閱讀
 
-相關概念：[[职业规划]] · [[教育咨询]] · [[决策分析]]
+相關概念：[[職業規劃]] · [[數據分析]] · [[心智模型]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[alchaincyf--nuwa-skill|alchaincyf/nuwa-skill]] · [[alvinunreal--awesome-opensource-ai|alvinunreal/awesome-opensource-ai]]
 
@@ -619,11 +699,11 @@ npx skills add alchaincyf/zhangxuefeng-skill
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：职业规划）
+> [!note]- 直接競品（同子分類：職業規劃）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "职业规划" AND file.name != "alchaincyf--zhangxuefeng-skill"
+> WHERE subcategory = "職業規劃" AND file.name != "alchaincyf--zhangxuefeng-skill"
 > SORT stars DESC
 > ```
 
@@ -655,7 +735,7 @@ npx skills add alchaincyf/zhangxuefeng-skill
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["职业规划","教育咨询","决策分析"];
+> const concepts = ["職業規劃","數據分析","心智模型"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "alchaincyf--zhangxuefeng-skill" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
