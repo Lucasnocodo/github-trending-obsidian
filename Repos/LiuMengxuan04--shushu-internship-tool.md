@@ -7,8 +7,8 @@ language: Python
 license: NOASSERTION
 description: "把岗位描述变项目，把项目变简历，把简历变面试。"
 homepage: ""
-stars: 437
-stars_per_day: 87
+stars: 463
+stars_per_day: 77
 forks: 18
 open_issues: 0
 created: 2026-05-17
@@ -30,8 +30,8 @@ use_case: "幫助候選人從崗位描述快速生成可投遞的項目和面試
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-30"
+appearances: 2
+next_review: "2026-05-31"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-23"
-star_history: "2026-05-23:437,2026-05-23:437"
+star_history: "2026-05-23:437,2026-05-23:437,2026-05-24:463"
 tags:
   - github
   - "category/其他"
@@ -543,7 +543,7 @@ shushu-repo-audit --repo /path/to/repo --out reports/audit --name my-project
 
 相關概念：[[自動化測試]] · [[面試準備]] · [[簡歷設計]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]]
 
 [GitHub](https://github.com/LiuMengxuan04/shushu-internship-tool)
 
@@ -839,4 +839,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-24|2026-05-24]] — 再次上榜，463 stars
 - [[2026-05-23|2026-05-23]] — 首次收錄，437 stars
