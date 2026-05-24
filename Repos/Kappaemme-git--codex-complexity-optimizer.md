@@ -7,8 +7,8 @@ language: Python
 license: MIT
 description: "Codex skill for safe codebase complexity analysis and performance optimization reports"
 homepage: ""
-stars: 831
-stars_per_day: 119
+stars: 836
+stars_per_day: 105
 forks: 52
 open_issues: 0
 created: 2026-05-15
@@ -17,7 +17,7 @@ first_seen: 2026-05-19
 week: "2026-W21"
 month: "2026-05"
 category: "開發工具"
-subcategory: "代碼分析"
+subcategory: "性能優化"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-19
-use_case: "提供安全的代碼庫複雜度分析和性能優化報告的工具。"
+use_case: "分析代碼庫的複雜度並提供安全的性能優化報告。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-19"
-star_history: "2026-05-19:749,2026-05-19:750,2026-05-20:788,2026-05-20:788,2026-05-21:805,2026-05-21:805,2026-05-22:819,2026-05-22:821,2026-05-23:831"
+star_history: "2026-05-19:749,2026-05-19:750,2026-05-20:788,2026-05-20:788,2026-05-21:805,2026-05-21:805,2026-05-22:819,2026-05-22:821,2026-05-23:831,2026-05-24:836"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "codex-complexity-optimizer"
   - "Kappaemme-git/codex-complexity-optimizer"
-  - "提供安全的代碼庫複雜度分析和性能優化報告的工具。"
+  - "分析代碼庫的複雜度並提供安全的性能優化報告。"
 ---
 
 # codex-complexity-optimizer
 
-**831** stars · **119** stars/天 · 建立 7 天前 · Python · MIT
+**836** stars · **105** stars/天 · 建立 8 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Kappaemme-git--codex-complexity-optimizer");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供安全的代碼庫複雜度分析和性能優化報告的工具。
+> 分析代碼庫的複雜度並提供安全的性能優化報告。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (119 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 7 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要進行代碼優化但又不想冒險直接修改代碼的開發者。
-> **一句話重點** 這個工具的設計讓開發者能夠在不直接改動代碼的情況下，獲得優化建議，降低了風險。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (105 stars/day)
+> **授權** MIT (商業友好) · **維護** Moderate (最後推送 8 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要優化代碼性能但不想冒險直接修改代碼的開發者。
+> **一句話重點** 這個工具讓代碼性能優化變得更安全和高效，特別適合大型代碼庫的開發者使用。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Kappaemme-git--codex-complexity-optimizer");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "代碼分析" && p.file.name !== "Kappaemme-git--codex-complexity-optimizer" && p.status !== "archived")
+>     .where(p => p.subcategory === "性能優化" && p.file.name !== "Kappaemme-git--codex-complexity-optimizer" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,98 +96,111 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 代碼分析 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 性能優化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，得到安全的代碼優化建議，值得使用。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習、1 小時整合，得到快速的代碼性能優化建議，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供安全的代碼庫複雜度分析和性能優化報告的工具。
+> 提供安全的代碼複雜度分析和性能優化報告，降低了直接修改代碼的風險。
 
 ## 專案簡介
 
-Codex Complexity Optimizer 是一個用於分析代碼庫的工具，能夠找出算法複雜度和性能瓶頸，並生成安全的優化報告。使用者只需在 Codex 中輸入指令 `$complexity-optimizer`，即可獲得報告，該報告會列出文件/行號、當前複雜度、建議變更、預期變更後的複雜度、風險級別及所需的測試或基準。若要應用建議的變更，則需明確要求。這種設計讓使用者能夠在不直接修改代碼的情況下，獲得優化建議，降低了風險。其安裝方式也相當簡單，僅需執行 `npm install -g codex-complexity-optimizer` 或 `npx codex-complexity-optimizer` 即可。這個工具的賣點在於它的安全性和可控性，因為預設情況下不會自動修改文件，使用者可以選擇何時實施變更。
+Codex Complexity Optimizer 是一個用於分析代碼庫的工具，專注於發現算法複雜度和性能瓶頸，並生成安全的優化報告。使用者可以透過簡單的指令，如 `$complexity-optimizer`，來獲取代碼的複雜度報告，該報告包含當前複雜度、建議的更改、預期的複雜度變化、風險等級及所需的測試或基準。這樣的設計使得開發者能夠在不直接修改代碼的情況下獲得優化建議，降低了潛在的風險。若要實施建議的更改，使用者需明確要求執行最低風險的優化並運行相關測試，這樣的流程確保了代碼的穩定性和安全性。
 
-技術上，它依賴於 Codex 的能力來進行代碼分析，這意味著它能夠利用 AI 的強大計算能力來評估代碼的性能。相比於其他類似工具，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，Codex Complexity Optimizer 提供了更為安全的操作模式，因為它不會在未經確認的情況下修改代碼。這在大型代碼庫中尤為重要，因為小的變更可能會引發連鎖反應。使用者在使用過程中，可能會發現需要額外的測試來驗證建議的變更，這是因為每個代碼庫的上下文都不同。這個工具目前處於初始階段，未來可能會加入更多的功能，如自動測試生成或更深入的性能分析。對於需要進行代碼優化但又不想冒險直接修改代碼的開發者來說，這是一個值得考慮的選擇。
+這個工具的賣點在於它能夠自動化複雜度分析，並提供具體的優化建議，讓開發者專注於核心業務邏輯，而不是繁瑣的性能調整。技術上，這個工具是基於 Codex 的技能，利用其強大的代碼理解能力來進行分析，並且安裝過程簡單，只需執行 `npm install -g codex-complexity-optimizer`。相較於其他代碼分析工具，Codex Complexity Optimizer 提供了即時的優化建議，並且能夠在不改動代碼的情況下進行分析，這使得它在實際開發中更具靈活性和安全性。使用者可以在任何需要代碼優化的場景中使用這個工具，特別是在大型代碼庫中，能夠有效識別性能瓶頸和複雜度問題，從而提高整體開發效率。
 
-**技術棧**：`Python` · `JavaScript`
+**技術棧**：`Node.js`
 
 ## 重點功能
 
-- 代碼複雜度分析 — 提供當前複雜度和建議變更。
-- 性能瓶頸識別 — 找出代碼中的性能熱點。
-- 安全報告生成 — 預設不修改文件，降低風險。
-- 建議變更的風險評估 — 提供每個建議的風險級別。
-- 測試建議 — 提供所需的測試或基準建議。
+- 複雜度分析 — 自動分析代碼庫的算法複雜度，提供詳細報告。
+- 安全優化建議 — 生成的報告不會直接修改代碼，降低風險。
+- 風險評估 — 對每個建議的更改提供風險等級，幫助開發者做出明智決策。
+- 測試建議 — 提供實施建議後所需的測試或基準，確保代碼穩定性。
+- 簡單安裝 — 透過 `npm install -g codex-complexity-optimizer` 進行安裝，方便快捷。
 
 ## 快速開始
 
-1. 安裝工具
+1. 安裝 Codex Complexity Optimizer
 ```bash
 npm install -g codex-complexity-optimizer
 ```
-2. 執行分析
+2. 使用工具分析代碼庫
 ```bash
 Use $complexity-optimizer to analyze this codebase and give me a report.
 ```
-3. 應用變更
+3. 實施建議的優化
 ```bash
 Use $complexity-optimizer to implement the lowest-risk optimization from the report and run the relevant tests.
+```
+
+## 程式碼範例
+
+```python
+{
+  "前置條件": "已安裝 Codex Complexity Optimizer",
+  "指令": "Use $complexity-optimizer to analyze this codebase and give me a report.",
+  "預期輸出": "報告包含文件/行、當前複雜度、建議更改、預期複雜度、風險等級及所需測試。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 7 天就累積 831 stars（119/天），forks 52（6.3%），這顯示出一定的市場需求。作者 Kappaemme-git 在開源社群中活躍，這個工具解決了代碼複雜度分析和優化報告生成的痛點，之前的工具往往缺乏安全性，容易導致代碼錯誤。這個工具的出現正好填補了這一空白。社群的反饋也顯示出對於代碼安全性和可控性的強烈需求。這個工具的設計使得開發者能夠在不直接改動代碼的情況下，獲得優化建議，這在當前的開發環境中尤為重要。
+> 建立 8 天就累積 836 stars（104.5/天），forks 52（6.2%），這顯示出一定的社群關注度。作者 Kappaemme-git 是一位活躍的開發者，這個工具解決了代碼複雜度分析和性能優化的痛點，之前的解決方案往往需要手動分析，效率低下。這個工具的出現讓開發者能夠快速獲得優化建議，並且降低了實施風險。社群的反應良好，顯示出對這類工具的需求。forks/stars 比率在中等範圍，表示有一定的使用者在進行實際修改和應用。
 
 ## 適合誰使用
 
-**目標受眾**：需要進行代碼優化但又不想冒險直接修改代碼的開發者。
+**目標受眾**：需要優化代碼性能但不想冒險直接修改代碼的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來分析大型代碼庫的複雜度，因為這樣可以在不影響現有功能的情況下，找到潛在的性能瓶頸。
-> - DevOps 工程師用它來生成代碼優化報告，因為這樣能夠在部署前確保代碼的性能和安全性。
-> - 測試工程師用它來確認代碼變更的風險，因為這樣可以在實施變更前，獲得詳細的風險評估和測試建議。
+> - 後端工程師用它來分析大型代碼庫的複雜度，因為這樣可以快速定位性能瓶頸，提升整體系統效能。
+> - 前端開發者用它來獲取代碼優化建議，因為這樣能在不影響現有功能的情況下提升用戶體驗。
+> - DevOps 工程師用它來生成性能優化報告，因為這樣可以在部署前確保代碼的穩定性和效能。
 
 ## 架構分析
 
-這個工具的架構基於 Codex 的能力，利用 AI 進行代碼分析。其設計選擇了不直接修改代碼的方式，以降低風險。資料流方面，使用者輸入分析指令，Codex 進行分析後返回報告，這樣的設計使得使用者能夠在獲得建議的同時，保持對代碼的控制。這種設計的代價在於，使用者需要手動確認變更，這可能會增加操作的複雜性。擴展性方面，未來可能會加入更多功能，如自動測試生成，這將進一步提升其實用性。
+Codex Complexity Optimizer 採用模組化設計，主要由一個 Node.js 應用組成，透過 Codex API 進行代碼分析。這樣的設計使得工具能夠快速集成到現有的開發環境中，並且能夠利用 Codex 的強大能力進行代碼理解。資料流方面，工具首先接收代碼庫的輸入，然後進行複雜度分析，最後生成報告。
+
+選擇 Node.js 作為開發語言的原因在於其非同步處理能力，能夠有效處理大型代碼庫的分析。這樣的架構設計使得工具在性能上具有良好的擴展性，但在處理極大規模的代碼庫時可能會面臨記憶體使用的挑戰。整體而言，這個工具的架構設計旨在提供快速、可靠的代碼分析，並且能夠輕鬆整合到現有的開發流程中。
 
 ## 技術深入分析
 
-Codex Complexity Optimizer 利用 AI 進行代碼分析，主要依賴於 Codex 的能力來評估代碼的性能和複雜度。其核心技術機制包括對代碼的靜態分析，能夠識別出複雜度高的區域和潛在的性能瓶頸。這個工具能夠處理中等規模的代碼庫，具體的性能數據尚未提供，但基於 Codex 的能力，預期能夠在合理的時間內完成分析。設計上選擇了不直接修改代碼的方式，這樣的選擇雖然降低了風險，但也增加了使用者的操作負擔。依賴樹方面，這個工具的依賴相對簡單，主要依賴於 Codex 的運行環境，這樣的設計使得其安裝和使用都相對簡單。技術風險方面，未來可能會面臨功能擴展的挑戰，特別是在自動化測試生成方面。整合方面，這個工具與 Codex 的整合非常緊密，使用者可以在 Codex 的環境中輕鬆使用，並且能夠與其他 Codex 工具鏈無縫協作。
+Codex Complexity Optimizer 的核心技術機制是基於 Codex 的代碼理解能力，利用其強大的分析演算法來評估代碼的複雜度。該工具能夠處理大型代碼庫，並提供詳細的性能瓶頸分析，這使得開發者能夠在短時間內獲得有價值的優化建議。設計上，選擇 Node.js 作為開發語言，這不僅能夠利用其非同步處理能力，還能夠輕鬆整合到現有的開發環境中。這樣的選擇雖然提高了開發效率，但在處理極大規模的代碼庫時可能會面臨記憶體使用的挑戰。技術風險方面，若未來 Codex 的 API 發生變更，可能會影響到工具的穩定性和功能。整合分析方面，這個工具與主流的開發框架（如 React、Node.js）相容性良好，能夠輕鬆融入現有的 CI/CD 流程中，降低了使用門檻。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝和使用說明，並且有範例指令。安裝過程相對順暢，沒有明顯的坑。雖然沒有專門的入門指南，但使用者可以通過 README 獲得足夠的資訊。文件目前僅提供英文版本。
+> README 文件清晰，包含安裝和使用範例；安裝過程順暢，無明顯坑；缺乏詳細的入門指南，沒有多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 安全性高，預設不會自動修改代碼。
-> - 能夠提供詳細的複雜度分析報告。
-> - 使用簡單，安裝過程流暢。
+> - 提供詳細的複雜度分析報告，幫助開發者快速定位問題。
+> - 安全性高，報告不會直接修改代碼，降低風險。
+> - 安裝和使用流程簡單，適合快速上手。
 
 > [!danger] 缺點
-> - 目前功能較為初步，未來可能需要更多更新。
-> - 需要手動確認變更，增加了操作的複雜性。
-> - 僅支援 Codex 環境，限制了使用範圍。
+> - 目前僅針對性能優化，對其他代碼問題無法提供建議。
+> - 需要手動實施建議的更改，增加了操作的複雜度。
+> - 僅支援 Codex 環境，無法在其他 IDE 中使用。
 
 > [!warning] 注意事項
-> - 僅支援 Codex 環境運行。
-> - 需要手動確認變更，無法自動應用。
-> - 目前功能較為初步，未來可能會有更多功能更新。
+> - 僅支援 Codex 環境，無法在其他 IDE 中使用。
+> - 報告僅提供建議，不會自動修改代碼，需手動實施。
+> - 目前僅針對性能優化，對代碼風格或安全性問題無法提供建議。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供代碼生成和優化，但缺乏安全性，可能會直接修改代碼。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於代碼清理，但不提供複雜度分析功能。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成代碼的工具，而 Codex Complexity Optimizer 專注於分析和優化現有代碼的性能。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供代碼清理功能，而 Codex Complexity Optimizer 專注於性能優化和複雜度分析。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 針對代碼的安全性分析，而 Codex Complexity Optimizer 專注於性能和複雜度的優化建議。 |
 
 ## 替代方案決策
 
@@ -195,16 +208,16 @@ Codex Complexity Optimizer 利用 AI 進行代碼分析，主要依賴於 Codex 
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 AI 生成代碼，但不提供複雜度分析，重點在於代碼生成。 | 如果需要自動生成代碼而不是分析現有代碼，這個工具會更合適。 | low，因為兩者的使用方式相似。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於代碼清理，並不提供複雜度分析功能。 | 如果主要需求是代碼清理而非性能分析，這個工具會更適合。 | medium，因為需要調整使用流程。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成代碼的工具，而 Codex Complexity Optimizer 專注於分析和優化現有代碼的性能。 | 如果需要生成新代碼而不是分析現有代碼，則應選擇此工具。 | low，因為兩者的使用方式相似。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供代碼清理功能，而 Codex Complexity Optimizer 專注於性能優化和複雜度分析。 | 如果需要清理冗餘代碼而不是專注於性能，則應選擇此工具。 | medium，因為功能和目標不同。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **codex-complexity-optimizer** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 AI 生成代碼，但不提供複雜度分析，重點在於代碼生成。 | 專注於代碼清理，並不提供複雜度分析功能。 |
-> | 遷移成本 | - | low，因為兩者的使用方式相似。 | medium，因為需要調整使用流程。 |
-> | 適用場景 | 主要場景 | 如果需要自動生成代碼而不是分析現有代碼，這個工具會更合適。 | 如果主要需求是代碼清理而非性能分析，這個工具會更適合。 |
+> | 技術路線 | 本專案 | 專注於生成代碼的工具，而 Codex Complexity Optimizer 專注於分析和優化現有代碼的性能。 | 提供代碼清理功能，而 Codex Complexity Optimizer 專注於性能優化和複雜度分析。 |
+> | 遷移成本 | - | low，因為兩者的使用方式相似。 | medium，因為功能和目標不同。 |
+> | 適用場景 | 主要場景 | 如果需要生成新代碼而不是分析現有代碼，則應選擇此工具。 | 如果需要清理冗餘代碼而不是專注於性能，則應選擇此工具。 |
 
 ## 成熟度評估
 
@@ -215,27 +228,24 @@ Codex Complexity Optimizer 利用 AI 進行代碼分析，主要依賴於 Codex 
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用，但不建議在生產環境中使用。
+> 適合個人試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在大型代碼庫中，分析可能需要較長時間。
-  - 解法：考慮分批分析代碼庫。
-- **[HIGH]** 某些複雜度計算可能不完全準確。
-  - 解法：手動驗證建議的變更。
-- **[HIGH]** 目前僅支援 Codex 環境，無法在其他環境使用。
-  - 解法：確保在 Codex 環境中運行。
+- [MEDIUM] 在大型代碼庫中，分析時間可能較長，影響開發效率。
+  - 解法：在非高峰時間進行分析。
+- [MEDIUM] 報告中提供的建議可能不適用於所有情況。
+  - 解法：開發者需根據具體情況判斷是否實施建議。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠提供安全的代碼優化建議，降低風險。 |
-| 大型企業的代碼庫維護 | 適合 | 能夠識別性能瓶頸，但需要手動確認變更。 |
-| 個人開發者的 side project | 非常適合 | 簡單易用，能夠快速獲得優化建議。 |
-| 需要自動化測試的團隊 | 不適合 | 目前不支持自動化測試生成。 |
+| 10 人以下的新創公司後端 API | 適合 | 能快速定位性能瓶頸，提升開發效率。 |
+| 大型企業的代碼庫維護 | 普通 | 雖然能提供分析，但在實施建議上需謹慎。 |
+| 個人開發者的 side project | 非常適合 | 能快速獲得優化建議，降低實施風險。 |
 
 ## 採用成本分析
 
@@ -244,15 +254,15 @@ Codex Complexity Optimizer 利用 AI 進行代碼分析，主要依賴於 Codex 
 | 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到安全的代碼優化建議，值得使用。
+> 花 2 小時學習、1 小時整合，得到快速的代碼性能優化建議，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限運行，且不會存取敏感資料，但依賴於 Codex 環境的安全性。
+> 低風險：工具本身不需要高權限，僅存取代碼庫資料，無敏感資料存取。
 
 ## 健康度儀表板
 
@@ -338,7 +348,7 @@ Codex Complexity Optimizer 利用 AI 進行代碼分析，主要依賴於 Codex 
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有更新。
+**社群活躍度**：社群活躍度中等，無開放的討論平台。
 
 ## 開發動態
 
@@ -388,19 +398,19 @@ Codex Complexity Optimizer 利用 AI 進行代碼分析，主要依賴於 Codex 
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[代碼生成]] · [[性能優化]]
+相關概念：[[性能優化]] · [[代碼分析]] · [[自動化測試]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]]
 
 [GitHub](https://github.com/Kappaemme-git/codex-complexity-optimizer)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：代碼分析）
+> [!note]- 直接競品（同子分類：性能優化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "代碼分析" AND file.name != "Kappaemme-git--codex-complexity-optimizer"
+> WHERE subcategory = "性能優化" AND file.name != "Kappaemme-git--codex-complexity-optimizer"
 > SORT stars DESC
 > ```
 
@@ -432,7 +442,7 @@ Codex Complexity Optimizer 利用 AI 進行代碼分析，主要依賴於 Codex 
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化測試","代碼生成","性能優化"];
+> const concepts = ["性能優化","代碼分析","自動化測試"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Kappaemme-git--codex-complexity-optimizer" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
