@@ -7,12 +7,12 @@ language: Go
 license: Apache-2.0
 description: "Read-only developer endpoint scanner for on-disk package, extension, and developer-tool metadata, built to check exposure to known software supply-chain compromises."
 homepage: ""
-stars: 1288
-stars_per_day: 429
-forks: 102
-open_issues: 11
+stars: 2168
+stars_per_day: 542
+forks: 166
+open_issues: 13
 created: 2026-05-20
-pushed_at: 2026-05-23
+pushed_at: 2026-05-24
 first_seen: 2026-05-24
 week: "2026-W22"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "檢查開發者端點的已知軟體供應鏈漏洞，提供只讀的
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-27"
+appearances: 2
+next_review: "2026-05-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 15
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-24"
-star_history: "2026-05-24:1288"
+star_history: "2026-05-24:1288,2026-05-25:2168"
 tags:
   - github
   - "category/安全"
@@ -893,4 +893,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-25|2026-05-25]] — 再次上榜，2.2k stars
 - [[2026-05-24|2026-05-24]] — 首次收錄，1.3k stars

@@ -2,14 +2,14 @@
 tags:
   - concept
 aliases:
-  - "開放世界遊戲"
+  - "context-engineering"
 ---
 
-# 開放世界遊戲
+# context-engineering
 
 ## 是什麼
 
-開放世界遊戲是一種讓玩家在廣大虛擬世界中自由探索和互動的遊戲類型。這種設計提供了更高的自由度和沉浸感，像是《GTA V》和《The Legend of Zelda: Breath of the Wild》都是經典例子。
+Context-engineering 是一種設計方法，專注於理解和利用使用者的上下文來改善產品體驗。這對於創造更具針對性的應用程式和服務至關重要，像是 Google Maps 和 Spotify 都會根據使用者的地理位置和喜好來調整內容。
 
 ## 快速統計
 

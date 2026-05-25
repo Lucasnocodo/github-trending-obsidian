@@ -2,14 +2,14 @@
 tags:
   - concept
 aliases:
-  - "開放世界遊戲"
+  - "spec-driven-development"
 ---
 
-# 開放世界遊戲
+# spec-driven-development
 
 ## 是什麼
 
-開放世界遊戲是一種讓玩家在廣大虛擬世界中自由探索和互動的遊戲類型。這種設計提供了更高的自由度和沉浸感，像是《GTA V》和《The Legend of Zelda: Breath of the Wild》都是經典例子。
+Spec-driven-development 是一種開發方法，強調在開始編碼之前先明確定義規格。這樣可以減少錯誤和重工，確保產品符合需求，常見的工具有 Swagger 和 Postman 用於 API 規格的定義。
 
 ## 快速統計
 

@@ -1,65 +1,64 @@
 ---
-repo: thananon/9arm-skills
-url: https://github.com/thananon/9arm-skills
-owner: thananon
+repo: Tong89/smartNode
+url: https://github.com/Tong89/smartNode
+owner: Tong89
 owner_type: User
-language: Shell
-license: N/A
+language: Python
+license: MIT
 description: ""
 homepage: ""
-stars: 1994
-stars_per_day: 399
-forks: 266
-open_issues: 3
-created: 2026-05-20
-pushed_at: 2026-05-20
-first_seen: 2026-05-21
-week: "2026-W21"
+stars: 510
+stars_per_day: 170
+forks: 47
+open_issues: 0
+created: 2026-05-21
+pushed_at: 2026-05-22
+first_seen: 2026-05-25
+week: "2026-W22"
 month: "2026-05"
 category: "開發工具"
-subcategory: "程式碼工具"
+subcategory: "API 工具"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-05-21
-use_case: "提供一系列針對工程和生產力的 Shell 技能，幫助開發者提升日常工作效率。"
-priority: high
+last_reviewed: 2026-05-25
+use_case: "提供天基數據回傳的可視化仿真平台，展示衛星與地面站的協同關係。"
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-05-28"
-contributor_count: 0
-engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 20
-readme_length: 1891
-bus_factor: 0
+appearances: 1
+next_review: "2026-06-01"
+contributor_count: 3
+engagement: "low"
+issue_close_rate: -1
+repo_size_kb: 15811
+readme_length: 1625
+bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-05-21"
-star_history: "2026-05-21:890,2026-05-22:1166,2026-05-23:1522,2026-05-24:1863,2026-05-25:1994"
+ring_history: "assess@2026-05-25"
+star_history: "2026-05-25:510"
 tags:
   - github
   - "category/開發工具"
-  - "lang/shell"
-  - easy_install
+  - "lang/python"
 aliases:
-  - "9arm-skills"
-  - "thananon/9arm-skills"
-  - "提供一系列針對工程和生產力的 Shell 技能，幫助開發者提升日常工作效率。"
+  - "smartNode"
+  - "Tong89/smartNode"
+  - "提供天基數據回傳的可視化仿真平台，展示衛星與地面站的協同關係。"
 ---
 
-# 9arm-skills
+# smartNode
 
-**890** stars · **890** stars/天 · 建立 1 天前 · Shell · 未標註授權
+**510** stars · **170** stars/天 · 建立 3 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/thananon--9arm-skills");
+const me = dv.page("Repos/Tong89--smartNode");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +68,21 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`easy-install`
-
 > [!summary] 一句話摘要
-> 提供一系列針對工程和生產力的 Shell 技能，幫助開發者提升日常工作效率。
+> 提供天基數據回傳的可視化仿真平台，展示衛星與地面站的協同關係。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (890 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要提升日常開發效率的工程師，特別是使用 Shell 的開發者。
-> **一句話重點** 這個專案的價值在於提供具體的 Shell 技能，幫助開發者提升日常工作效率。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (170 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** 3 人 · **參與度** Low
+> **適合** 需要進行衛星數據回傳模擬的工程師和教育機構。
+> **一句話重點** 這個專案的最大價值在於其針對衛星數據回傳的可視化能力，能夠幫助用戶更好地理解和管理複雜的系統。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/Tong89--smartNode");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "程式碼工具" && p.file.name !== "thananon--9arm-skills" && p.status !== "archived")
+>     .where(p => p.subcategory === "API 工具" && p.file.name !== "Tong89--smartNode" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,98 +93,120 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 程式碼工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 API 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到提升工作效率的技能，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學、10 小時整合，得到可視化衛星數據回傳的效果，值得考慮。
 
 > [!abstract] 核心創新
-> 提供針對工程和生產力的具體 Shell 技能，幫助開發者提升日常工作效率。
+> 提供針對天基數據回傳的可視化仿真平台，專注於衛星與地面站的協同作業。
 
 ## 專案簡介
 
-這個專案提供了一組針對工程和生產力的 Shell 技能，讓開發者可以在日常工作中更有效率地處理各種任務。技能分為不同的類別，包括工程、產品力、雜項和個人使用等，每個技能都包含一個 `SKILL.md` 文件，詳細說明其功能和使用方式。用戶只需執行 `./scripts/link-skills.sh` 指令，即可將可用的技能連結到指定目錄，方便使用。這樣的設計使得技能的管理和使用變得簡單明瞭，並且能夠快速擴展新的技能。這個專案的賣點在於其專注於實用性，特別是針對工程師日常工作中的需求，提供了如 `debug-mantra` 和 `post-mortem` 等具體技能，幫助用戶在面對問題時有系統地進行分析和解決。
+SmartNode 是一個針對天基數據回傳的可視化仿真平台，專注於展示衛星、地面站和中繼鏈路之間的協同作業。用戶可以透過這個平台提交數據回傳任務，並實時監控資源狀態與利用率。核心功能包括三維空間態勢展示和開放 API，方便用戶進行自定義開發。後端使用 Flask 框架，並且以前後端分離的架構設計，這樣的設計使得前端可以獨立於後端進行開發，提升了開發效率。這個平台的 API 提供了健康檢查、仿真態勢數據和資源狀態等多種功能，讓用戶能夠靈活地進行數據操作。
 
-技術上，這些技能都是用 Shell 實現，依賴性輕，適合在各種 Unix-like 環境中使用。相較於其他類似工具，如 `0x0funky/agent-sprite-forge` 和 `DenisSergeevitch/agents-best-practices`，這個專案更專注於具體的工程實踐，而不是廣泛的 AI 或通用工具，適合需要高效能和專業技能的開發者使用。使用者在實際操作中可能會遇到技能更新不及時的問題，因為目前只有一個開放的 Issue，社群活躍度尚待觀察。整體來說，這是一個適合小型團隊或個人開發者的工具，特別是那些希望提升日常工作效率的工程師。未來可能會加入更多技能，進一步擴展其功能。
+與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 432539/gpt2api，SmartNode 提供了更專注於天基數據的功能，並且支持即時資源利用率的統計，這在進行衛星任務調度時尤為重要。實際使用中，這個平台適合用於本地仿真和教學展示，但在進行公網部署時需要額外考慮安全性問題。這個專案目前仍在快速發展中，未來可能會增加更多的功能和擴展性。對於小型團隊或教育機構來說，這是一個值得考慮的工具，特別是在需要進行衛星數據回傳的情境下。
 
-**技術棧**：`Shell`
+**技術棧**：`Flask>=3.0,<4.0` · `JavaScript` · `HTML` · `CSS`
 
 ## 重點功能
 
-- 技能分類 — 包括工程、產品力、雜項和個人使用，方便用戶根據需求選擇。
-- 自動連結技能 — 使用 `./scripts/link-skills.sh` 指令快速將技能連結到指定目錄。
-- 詳細的技能說明 — 每個技能都有 `SKILL.md` 文件，包含名稱和描述，便於理解和使用。
-- 工程專用技能 — 提供如 `debug-mantra` 和 `post-mortem` 等專業技能，幫助工程師系統性解決問題。
-- 輕量級依賴 — 基於 Shell 實現，適合各種 Unix-like 環境，無需繁重的安裝步驟。
+- 三維空間態勢展示 — 直觀顯示衛星、地面站和中繼鏈路的協同關係。
+- 數據回傳任務提交 — 透過 API 提交和管理數據回傳任務。
+- 資源狀態監測 — 實時監控衛星和地面站的資源狀態。
+- 開放 API — 無需密碼即可訪問，方便二次開發。
+- 前後端分離架構 — 提高開發效率，前端可獨立於後端進行開發。
 
 ## 快速開始
 
-1. 克隆專案到本地
+1. 克隆專案
 ```bash
-git clone https://github.com/thananon/9arm-skills.git
+git clone https://github.com/Tong89/smartNode.git
 ```
 2. 進入專案目錄
 ```bash
-cd 9arm-skills
+cd smartNode
 ```
-3. 連結可用技能
+3. 建立虛擬環境
 ```bash
-./scripts/link-skills.sh
+python -m venv .venv
+```
+4. 啟動虛擬環境並安裝依賴
+```bash
+.\.venv\Scripts\activate & pip install -r requirements.txt
+```
+5. 啟動後端服務
+```bash
+python backend/app.py
+```
+
+## 程式碼範例
+
+```python
+{
+  "前置條件": "已安裝 Flask 並啟動後端服務",
+  "指令": "curl http://127.0.0.1:5000/api/health",
+  "預期輸出": "健康檢查成功，返回狀態碼 200"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 890 stars（890/天），forks 124（13.9%），這顯示出相對較高的使用者興趣。專案作者似乎專注於開發實用的工具，並且過去有相關的開發經驗。這個專案解決了工程師在日常工作中缺乏高效工具的痛點，提供了具體的技能來提升工作效率。社群的反應也顯示出對這類工具的需求，尤其是在工程領域。這些因素共同促成了專案的快速增長。
+> 建立 3 天就累積 510 stars（170/天），forks 47（9.2%），這顯示出不錯的增長潛力。作者團隊由多位貢獻者組成，顯示出良好的合作基礎。這個專案解決了衛星數據回傳的可視化需求，以往的工具往往缺乏針對性，無法有效展示衛星與地面站的協同作業。最近的推廣活動和社群討論也可能促進了其曝光度。技術上，這個工具的開放 API 設計使得用戶能夠進行二次開發，這在目前的開發生態中是非常受歡迎的。forks/stars 比率在 9.2% 的範圍內，顯示出用戶對這個工具的實際修改和使用意願較高。
 
 ## 適合誰使用
 
-**目標受眾**：需要提升日常開發效率的工程師，特別是使用 Shell 的開發者。
+**目標受眾**：需要進行衛星數據回傳模擬的工程師和教育機構。
 
 > [!example] 使用場景
-> - 後端工程師用它來快速連結和使用日常開發技能，因為這樣能夠減少重複性工作，提高效率。
-> - 產品經理用它來撰寫和整理會議紀錄，因為能夠將技術內容轉化為易於理解的格式，便於溝通。
-> - 新手開發者用它來學習和實踐工程技能，因為提供了具體的指導和範例，降低了學習門檻。
+> - 衛星工程師用它來模擬衛星與地面站的數據回傳任務，因為可以即時監控資源利用率，提升任務效率。
+> - 教學機構使用它來展示天基數據回傳的運作原理，因為其可視化界面能夠幫助學生更好地理解複雜的系統。
+> - 開發者利用其開放 API 進行二次開發，因為這樣可以快速整合到現有的數據處理流程中。
 
 ## 架構分析
 
-這個專案採用簡單的目錄結構，每個技能都獨立存放在 `skills/` 目錄下，並以 `SKILL.md` 文件描述其功能。這樣的設計使得技能的管理變得簡單，並且能夠快速擴展新的技能。資料流方面，使用者透過指令連結技能，然後可以直接在命令行中使用。選擇 Shell 作為實現語言，優勢在於輕量和高效，缺點是對於不熟悉 Shell 的使用者來說，學習曲線可能較陡。整體架構的擴展性良好，但如果未來技能數量大幅增加，可能需要考慮更複雜的管理方式。
+SmartNode 採用前後端分離的架構，後端使用 Flask 框架處理 API 請求，前端則使用 JavaScript 和 HTML/CSS 進行可視化展示。這樣的設計使得前端開發可以獨立於後端進行，提升了開發效率。資料流從用戶提交請求開始，後端根據請求處理數據並返回結果，前端再將結果可視化。
+
+選擇 Flask 作為後端框架的原因在於其輕量且易於擴展，適合快速開發。這個架構的代價在於需要處理前後端的溝通，可能會增加一些複雜性。擴展性方面，隨著用戶需求的增加，可能需要增加更多的 API 端點和前端功能。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於 Shell 腳本，提供了一系列具體的技能來解決工程師在日常工作中面臨的問題。每個技能都獨立管理，並且有清晰的文檔說明，這樣的設計使得用戶能夠快速上手。效能方面，由於是基於 Shell 實現，對系統資源的需求相對較低，但在處理複雜任務時可能會受到 Shell 本身的限制。選擇 Shell 作為實現語言的好處在於其輕量和高效，但對於不熟悉 Shell 的開發者來說，學習曲線可能較陡。技術風險方面，未來如果技能數量大幅增加，可能需要考慮更複雜的管理方式，否則會影響使用體驗。整體來說，這個專案在與現有工具鏈的整合上相對簡單，適合在各種 Unix-like 環境中使用。
+SmartNode 的核心技術機制是基於 Flask 框架構建的 RESTful API，這使得後端能夠快速響應用戶請求並提供數據。前端使用 JavaScript 進行交互式展示，並且能夠即時更新數據。這樣的設計使得整體系統能夠在不同平台上運行，並且具備良好的擴展性。效能方面，因為是針對本地仿真設計，對於資源的需求相對較低，但在處理大量數據時可能會出現瓶頸。
+
+設計上選擇 Flask 而非其他框架，如 Django，是因為 Flask 更加輕量，適合快速開發和迭代。這個選擇雖然帶來了開發的靈活性，但在功能擴展上可能會受到限制。技術風險方面，若未來用戶需求大幅增加，可能需要重新考慮架構的擴展性和性能優化。整合方面，這個工具能夠與主流的 CI/CD 工具鏈良好配合，但對於大型團隊的協作可能需要額外的管理和規範。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的技能分類和安裝步驟，讓新手能夠快速上手。安裝過程簡單，只需執行一條指令即可連結技能。雖然沒有提供詳細的使用範例，但技能的文檔清晰，能夠幫助用戶理解其功能。整體來說，花 30 分鐘能夠順利運行起來。
+> README 文件提供了清晰的安裝步驟和使用範例，對新手友好。安裝過程相對順暢，但需注意虛擬環境的啟動。文件中未提供多語言支持，但結構清晰，易於理解。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 技能分類清晰，便於用戶根據需求選擇。
-> - 輕量級設計，無需繁重的安裝步驟。
-> - 提供具體的工程技能，幫助用戶系統性解決問題。
+> - 可視化界面直觀易用，適合展示複雜的衛星數據回傳系統。
+> - 開放 API 設計，便於二次開發和整合。
+> - 支持多種平台，無論是 Windows 還是 macOS/Linux 都能輕鬆啟動。
 
 > [!danger] 缺點
-> - 社群活躍度尚待觀察，可能影響未來的更新。
-> - 缺乏詳細的使用範例，對新手不夠友好。
-> - 技能更新頻率不明，可能導致某些技能過時。
+> - 功能較為基礎，可能不適合大型商業應用。
+> - 公網部署需額外考慮安全性，增加了使用成本。
+> - 對於不熟悉 Flask 的開發者來說，學習曲線可能較陡。
 
 > [!warning] 注意事項
-> - 目前只有一個開放的 Issue，社群活躍度尚待觀察。
-> - 技能更新頻率不明，可能導致某些技能過時。
-> - 缺乏詳細的使用範例，對新手可能不夠友好。
+> - 僅適用於本地仿真，公網部署需額外考慮安全性。
+> - 目前功能較為基礎，可能不適合大型商業應用。
+> - 依賴於 Flask，對於不熟悉該框架的開發者可能有學習曲線。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 AI agent 的開發，而本專案則專注於具體的工程技能，適合需要快速解決問題的工程師。 |
-| [DenisSergeevitch/agents-best-practices](https://github.com/DenisSergeevitch/agents-best-practices) | 提供更廣泛的最佳實踐，而本專案則提供具體的技能，適合需要實用工具的開發者。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於代理和智能體的模擬，而 SmartNode 更加專注於衛星數據回傳的可視化。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | 主要用於文本生成，與 SmartNode 的數據回傳模擬功能無法直接比較。 |
 
 ## 替代方案決策
 
@@ -195,16 +214,16 @@ cd 9arm-skills
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 AI agent 的開發，提供更廣泛的功能，而本專案則專注於具體的工程技能。 | 如果你的團隊需要一個全面的 AI agent 開發框架，而不僅僅是針對工程的技能。 | medium，因為需要重新適應不同的技能管理方式。 |
-| [DenisSergeevitch/agents-best-practices](https://github.com/DenisSergeevitch/agents-best-practices) | 提供最佳實踐的指導，而本專案則提供具體的技能來解決問題。 | 如果你需要一個全面的最佳實踐指南，而不僅僅是具體的技能。 | low，因為可以根據需求選擇性整合。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於代理和智能體的模擬，而 SmartNode 更加專注於衛星數據回傳的可視化。 | 如果你的專案需要更強的智能體模擬功能，而不僅僅是數據回傳的可視化。 | medium，因為需要重新設計數據流和交互邏輯。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | 主要用於文本生成，與 SmartNode 的數據回傳模擬功能無法直接比較。 | 如果你的需求是進行文本生成而非數據回傳模擬。 | high，因為兩者的功能和架構差異較大。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **9arm-skills** | **agent-sprite-forge** | **agents-best-practices** |
+> | 維度 | **smartNode** | **agent-sprite-forge** | **gpt2api** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 AI agent 的開發，提供更廣泛的功能，而本專案則專注於具體的工程技能。 | 提供最佳實踐的指導，而本專案則提供具體的技能來解決問題。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的技能管理方式。 | low，因為可以根據需求選擇性整合。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要一個全面的 AI agent 開發框架，而不 | 如果你需要一個全面的最佳實踐指南，而不僅僅是具體的技能。 |
+> | 技術路線 | 本專案 | 專注於代理和智能體的模擬，而 SmartNode 更加專注於衛星數據回傳的可視化。 | 主要用於文本生成，與 SmartNode 的數據回傳模擬功能無法直接比較。 |
+> | 遷移成本 | - | medium，因為需要重新設計數據流和交互邏輯。 | high，因為兩者的功能和架構差異較大。 |
+> | 適用場景 | 主要場景 | 如果你的專案需要更強的智能體模擬功能，而不僅僅是數據回傳的可 | 如果你的需求是進行文本生成而非數據回傳模擬。 |
 
 ## 成熟度評估
 
@@ -215,49 +234,56 @@ cd 9arm-skills
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用，但不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 技能更新頻率不明，可能導致某些技能過時
-  - 解法：定期檢查專案更新，確保使用最新技能
-- **[HIGH]** 對於不熟悉 Shell 的使用者，學習曲線較陡
-  - 解法：參考 Shell 基礎教程，提升使用者技能
-- [MEDIUM] 社群活躍度低，可能影響未來的更新
-  - 解法：關注專案動態，參與社群討論
+- [MEDIUM] 在 Windows 環境下啟動服務時可能需要特別注意環境變數設定
+  - 解法：確保在啟動前正確配置環境變數
+- **[HIGH]** API 請求的返回格式可能會隨版本更新而改變
+  - 解法：定期檢查文檔以獲取最新的 API 變更
+- **[HIGH]** 在高負載情況下，後端可能會出現性能瓶頸
+  - 解法：考慮進行性能測試並優化後端邏輯
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊需要高效的工程技能 | 非常適合 | 提供具體的技能來提升日常工作效率。 |
-| 新手開發者希望學習 Shell 技能 | 適合 | 提供清晰的文檔和技能說明，降低學習門檻。 |
-| 大型企業需要全面的開發工具 | 不適合 | 專案功能較為狹窄，無法滿足複雜需求。  |
+| 小型團隊進行衛星數據回傳模擬 | 非常適合 | 功能設計專注於衛星數據回傳，能夠滿足小型團隊的需求。 |
+| 大型企業的商業應用 | 不適合 | 目前功能較為基礎，無法滿足大型企業的需求。 |
+| 教育機構進行教學展示 | 適合 | 可視化界面能夠幫助學生理解複雜的系統。 |
+| 需要進行公網部署的應用 | 普通 | 需要額外考慮安全性，增加了使用成本。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
-| 綁定風險 | low |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
+| 維護負擔 | medium |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到提升工作效率的技能，值得一試。
+> 花 5 小時學、10 小時整合，得到可視化衛星數據回傳的效果，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：不需要高權限，且不存取敏感資料，但公網部署需考慮安全性和訪問控制。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+SmartNode 最常與衛星數據處理工具搭配使用，通常在開發和展示階段進行整合。在一個用 Flask 開發的後端系統中，可以通過 API 調用 SmartNode 來展示衛星數據，具體做法是使用 POST 請求提交數據回傳任務。支援 GitHub Actions 進行 CI/CD 流程，但對於大型團隊的協作可能需要額外的管理和規範。整合的摩擦點主要在於 API 的版本更新可能導致不兼容的情況。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/Tong89--smartNode");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -292,7 +318,7 @@ cd 9arm-skills
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/Tong89--smartNode");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -316,88 +342,161 @@ cd 9arm-skills
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 124 |
-| Open Issues | 1 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-05-20 |
-| 建立日期 | 2026-05-20 |
-| Repo 大小 | 20 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/thananon/9arm-skills) |
+| Forks | 47 |
+| Open Issues | 0 |
+| 最後推送 | 2026-05-22 |
+| 建立日期 | 2026-05-21 |
+| Repo 大小 | 15.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Tong89/smartNode) |
+
+> [!info]- 主要依賴
+> `requirements.txt` 中的核心套件：
+> `Flask`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 81
+>     "JavaScript" : 9
+>     "CSS" : 6
+>     "HTML" : 5
+> ```
+
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@lws1227](https://github.com/lws1227) | 5 |
+> | [@1144539618](https://github.com/1144539618) | 2 |
+> | [@Tong89](https://github.com/Tong89) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚待觀察，目前只有一個開放的 Issue。
+**社群活躍度**：社群活躍度良好，最近有多次提交和更新。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-20 ~ 2026-05-20）
-> **活躍天數** 1 天 · **最新 commit** Add debug-mantra skill; restore cross-references in post-mortem
+> [!abstract] 最近 10 次 commit（2026-05-21 ~ 2026-05-22）
+> **活躍天數** 2 天 · **最新 commit** Remove warning about exposing development server
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 9arm-skills
+> # 天基智枢 SmartNode
 > 
-> Agent skills loaded by Claude Code.
+> > Space-Based Intelligent Relay Simulation Platform
 > 
-> ## Layout
+> 天基智枢 SmartNode 是一个面向天基数据回传场景的可视化仿真平台，用于展示卫星、地面站、中继链路和内容驱动任务调度之间的协同关系。
 > 
-> Skills live under `skills/`, grouped into buckets:
+> ## 功能
 > 
-> - `engineering/` — daily code work
-> - `productivity/` — daily non-code workflow tools
-> - `misc/` — kept around but rarely used
-> - `personal/` — tied to my own setup, not promoted
-> - `in-progress/` — drafts not yet ready to ship
-> - `deprecated/` — no longer used
+> - 三维空间态势展示
+> - 数据回传任务提交
+> - 卫星、地面站、中继资源状态监测
+> - 实时资源利用率统计
+> - 前后端分离结构
+> - 开放 API，无密码登录依赖
 > 
-> Each skill is its own directory containing a `SKILL.md` (with YAML frontmatter — `name` and `description`) and any bundled scripts or reference files.
+> ## 目录结构
 > 
-> ## Install
-> 
-> For my own dev loop — symlink every shippable skill into `~/.claude/skills/`:
-> 
-> ```bash
-> ./scripts/link-skills.sh
+> ```text
+> smartNode/
+> ├─ backend/
+> │  ├─ __init__.py
+> │  ├─ app.py          # 后端启动入口
+> │  ├─ api.py          # Flask API 和静态页面托管
+> │  └─ core.py         # 仿真模型、配置和调度引擎
+> ├─ frontend/
+> │  ├─ assets/
+> │  ├─ app.js
+> │  ├─ index.html
+> │  └─ styles.css
+> ├─ main.py            # 兼容入口
+> ├─ run_server.bat     # Windows 快速启动脚本
+> ├─ requirements.txt
+> ├─ LICENSE
+> └─ README.md
 > ```
 > 
-> List every `SKILL.md` in the repo:
+> ## 快速开始
 > 
 > ```bash
-> ./scripts/list-skills.sh
+> git clone https://github.com/Tong89/smartNode.git
+> cd smartNode
+> python -m venv .venv
 > ```
 > 
-> ## Reference
+> Windows:
 > 
-> ### Engineering
+> ```powershell
+> .\.venv\Scripts\activate
+> pip install -r requirements.txt
+> python backend/app.py
+> ```
 > 
-> - **[debug-mantra](./skills/engineering/debug-mantra/SKILL.md)** — Four-mantra debugging discipline: reproduce → trace the fail path → falsify the hypothesis → cross-reference every breadcrumb. Recites verbatim at session start, then applies in order before any fix.
-> - **[post-mortem](./skills/engineering/post-mortem/SKILL.md)** — Write the canonical engineering record of a fixed bug — root cause, mechanism, fix, validation, how it slipped through. Engineer-audience; refuses to draft without a reliable repro, known cause, and validated fix.
-> - **[scrutinize](./skills/engineering/scrutinize/SKILL.md)** — Outsider-perspective end-to-end review of a plan, PR, or code change. Questions intent (is there a simpler way?), traces the actual code path, and verifies the change does what it claims. Output is concise, actionable, with rationale.
+> macOS / Linux:
 > 
-> ### Productivity
+> ```bash
+> source .venv/bin/activate
+> pip install -r requirements.txt
+> python backend/app.py
+> ```
 > 
-> - **[management-talk](./skills/productivity/management-talk/SKILL.md)** — Rewrite engineer-to-engineer content for engineering-org leadership and shape it for the channel it's going to (JIRA, Slack, async standup, email, meeting talking-points).
+> 访问：
 > 
-> ### Misc
+> ```text
+> http://127.0.0.1:5000/frontend/
+> ```
 > 
-> _(none yet)_
+> Windows 也可以直接双击：
+> 
+> ```text
+> run_server.bat
+> ```
+> 
+> ## 常用 API
+> 
+> | 方法 | 地址 | 说明 |
+> | --- | --- | --- |
+> | GET | `/api/health` | 健康检查 |
+> | GET | `/api/data` | 仿真态势数据 |
+> | GET | `/api/system_info` | 系统配置和数据类型 |
+> | GET | `/api/resource_status` | 实时资源状态 |
+> | GET | `/api/resource_utilization` | 资源利用率统计 |
+> | POST | `/api/request` | 提交数据回传任务 |
+> | POST | `/api/update_ground_stations` | 调整地面站数量 |
+> | POST | `/api/update_leo_satellites` | 调整 LEO 卫星数量 |
+> 
+> ## 开发检查
+> 
+> ```bash
+> python -m py_compile main.py backend/app.py backend/api.py backend/core.py
+> node --check frontend/app.js
+> ```
+> 
+> ## 说明
+> 
+> - 当前版本适合本地仿真、教学展示和二次开发。
+> - 如需公网部署，请在网关层增加认证、限流和访问控制。
+> 
+> ## License
+> 
+> MIT License. See [LICENSE](LICENSE).
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化]] · [[程式碼生成]]
+相關概念：[[自動化測試]] · [[API 設計]] · [[資料視覺化]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[duoan--TorchCode|duoan/TorchCode]] · [[sanbuphy--claude-code-source-code|sanbuphy/claude-code-source-code]] · [[twostraws--SwiftUI-Agent-Skill|twostraws/SwiftUI-Agent-Skill]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[Doorman11991--smallcode|Doorman11991/smallcode]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[TianyiDataScience--openclaw-control-center|TianyiDataScience/openclaw-control-center]] · [[Lum1104--Understand-Anything|Lum1104/Understand-Anything]] · [[MiniMax-AI--skills|MiniMax-AI/skills]] · [[WUBING2023--PaperSpine|WUBING2023/PaperSpine]]
 
-[GitHub](https://github.com/thananon/9arm-skills)
+[GitHub](https://github.com/Tong89/smartNode)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：程式碼工具）
+> [!note]- 直接競品（同子分類：API 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "程式碼工具" AND file.name != "thananon--9arm-skills"
+> WHERE subcategory = "API 工具" AND file.name != "Tong89--smartNode"
 > SORT stars DESC
 > ```
 
@@ -405,7 +504,7 @@ cd 9arm-skills
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "thananon--9arm-skills"
+> WHERE category = "開發工具" AND file.name != "Tong89--smartNode"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -414,7 +513,7 @@ cd 9arm-skills
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Shell" AND file.name != "thananon--9arm-skills" AND status != "archived"
+> WHERE language = "Python" AND file.name != "Tong89--smartNode" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -423,15 +522,15 @@ cd 9arm-skills
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W21" AND file.name != "thananon--9arm-skills"
+> WHERE week = "2026-W22" AND file.name != "Tong89--smartNode"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化","程式碼生成"];
+> const concepts = ["自動化測試","API 設計","資料視覺化"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "thananon--9arm-skills" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "Tong89--smartNode" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -444,12 +543,12 @@ cd 9arm-skills
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/Tong89--smartNode");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "thananon--9arm-skills" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Tong89--smartNode" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -465,7 +564,7 @@ cd 9arm-skills
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "thananon" AND file.name != "thananon--9arm-skills"
+> WHERE owner = "Tong89" AND file.name != "Tong89--smartNode"
 > SORT stars DESC
 > ```
 
@@ -473,7 +572,7 @@ cd 9arm-skills
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/Tong89--smartNode");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -490,7 +589,7 @@ cd 9arm-skills
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/Tong89--smartNode");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -523,7 +622,7 @@ cd 9arm-skills
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/Tong89--smartNode");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -547,7 +646,7 @@ cd 9arm-skills
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/Tong89--smartNode");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -584,7 +683,7 @@ cd 9arm-skills
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/thananon--9arm-skills");
+> const me = dv.page("Repos/Tong89--smartNode");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -667,7 +766,7 @@ cd 9arm-skills
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-05-21** — 首次收錄
+> **2026-05-25** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -683,8 +782,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-05-25|2026-05-25]] — 再次上榜，2.0k stars
-- [[2026-05-24|2026-05-24]] — 再次上榜，1.9k stars
-- [[2026-05-23|2026-05-23]] — 再次上榜，1.5k stars
-- [[2026-05-22|2026-05-22]] — 再次上榜，1.2k stars
-- [[2026-05-21|2026-05-21]] — 首次收錄，890 stars
+- [[2026-05-25|2026-05-25]] — 首次收錄，510 stars

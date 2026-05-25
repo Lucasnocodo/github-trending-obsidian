@@ -2,14 +2,14 @@
 tags:
   - concept
 aliases:
-  - "開放世界遊戲"
+  - "meta-prompting"
 ---
 
-# 開放世界遊戲
+# meta-prompting
 
 ## 是什麼
 
-開放世界遊戲是一種讓玩家在廣大虛擬世界中自由探索和互動的遊戲類型。這種設計提供了更高的自由度和沉浸感，像是《GTA V》和《The Legend of Zelda: Breath of the Wild》都是經典例子。
+Meta-prompting 是一種提升 AI 生成內容質量的技術，透過設計更有效的提示來引導 AI 產生更符合需求的回應。這在自然語言處理和聊天機器人中非常重要，像是 OpenAI 的 GPT 系列就常使用這種方法來改善對話流暢度。
 
 ## 快速統計
 

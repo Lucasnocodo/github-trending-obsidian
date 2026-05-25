@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "Free open-source AI text humanizer to convert AI-generated content into undetectable, human-like writing. Bypass Turnitin, GPTZero, and all major AI detectors. No sign-up required. Try our unlimited free online tool"
 homepage: "https://lynote.ai/ai-humanizer"
-stars: 557
-stars_per_day: 111
-forks: 41
-open_issues: 4
+stars: 688
+stars_per_day: 115
+forks: 45
+open_issues: 5
 created: 2026-05-18
 pushed_at: 2026-05-22
 first_seen: 2026-05-23
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-23
 use_case: "將 AI 生成的內容轉換為無法檢測的人類寫作，繞過各大 AI 檢測工具。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-05-31"
+appearances: 3
+next_review: "2026-06-01"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-23"
-star_history: "2026-05-23:453,2026-05-24:557"
+star_history: "2026-05-23:453,2026-05-24:557,2026-05-25:688"
 tags:
   - github
   - "category/ai_ml"
@@ -918,5 +918,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-25|2026-05-25]] — 再次上榜，688 stars
 - [[2026-05-24|2026-05-24]] — 再次上榜，557 stars
 - [[2026-05-23|2026-05-23]] — 首次收錄，453 stars
