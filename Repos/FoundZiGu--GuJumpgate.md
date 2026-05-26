@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: ""
 homepage: ""
-stars: 2339
-stars_per_day: 468
-forks: 651
-open_issues: 24
+stars: 2544
+stars_per_day: 424
+forks: 699
+open_issues: 18
 created: 2026-05-19
-pushed_at: 2026-05-24
+pushed_at: 2026-05-25
 first_seen: 2026-05-21
 week: "2026-W21"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "自動化 GPT Plus 註冊流程，讓用戶輕鬆獲取服務。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-05-28"
+appearances: 6
+next_review: "2026-05-29"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 92
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-21"
-star_history: "2026-05-21:957,2026-05-21:964,2026-05-22:1448,2026-05-22:1458,2026-05-23:1764,2026-05-23:1769,2026-05-24:2055,2026-05-25:2339"
+star_history: "2026-05-21:957,2026-05-21:964,2026-05-22:1448,2026-05-22:1458,2026-05-23:1764,2026-05-23:1769,2026-05-24:2055,2026-05-25:2339,2026-05-26:2544"
 tags:
   - github
   - "category/開發工具"
@@ -883,6 +883,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-26|2026-05-26]] — 再次上榜，2.5k stars
 - [[2026-05-25|2026-05-25]] — 再次上榜，2.3k stars
 - [[2026-05-24|2026-05-24]] — 再次上榜，2.1k stars
 - [[2026-05-23|2026-05-23]] — 再次上榜，1.8k stars

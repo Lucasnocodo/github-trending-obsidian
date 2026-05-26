@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "Getting Shit Done, the Aftermath"
 homepage: "https://github.com/gsd-redux/get-shit-done-redux/discussions/109"
-stars: 566
-stars_per_day: 283
-forks: 42
-open_issues: 90
+stars: 857
+stars_per_day: 286
+forks: 57
+open_issues: 94
 created: 2026-05-22
-pushed_at: 2026-05-25
+pushed_at: 2026-05-26
 first_seen: 2026-05-25
 week: "2026-W22"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "幫助獨立開發者和小團隊高效地管理 AI 開發流程，�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-05-28"
+appearances: 2
+next_review: "2026-05-29"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 46
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-25"
-star_history: "2026-05-25:566"
+star_history: "2026-05-25:566,2026-05-26:857"
 tags:
   - github
   - "category/開發工具"
@@ -862,4 +862,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-26|2026-05-26]] — 再次上榜，857 stars
 - [[2026-05-25|2026-05-25]] — 首次收錄，566 stars
