@@ -17,7 +17,7 @@ first_seen: 2026-05-26
 week: "2026-W22"
 month: "2026-05"
 category: "開發工具"
-subcategory: "API 工具"
+subcategory: "模型整合"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-26
-use_case: "讓 Codex Desktop 能夠使用自訂的 BYOK 模型，並可選擇透過 ChatGPT GPT-5.5 進行傳遞。"
+use_case: "讓 Codex Desktop 支援任何 BYOK 模型，並可選擇性地透過 ChatGPT GPT-5.5 進行通訊。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-26"
-star_history: "2026-05-26:593"
+star_history: "2026-05-26:593,2026-05-26:593"
 tags:
   - github
   - "category/開發工具"
@@ -50,7 +50,7 @@ tags:
 aliases:
   - "codex-shim"
   - "0xSero/codex-shim"
-  - "讓 Codex Desktop 能夠使用自訂的 BYOK 模型，並可選擇透過 ChatGPT GPT-5.5 進行傳遞。"
+  - "讓 Codex Desktop 支援任何 BYOK 模型，並可選擇性地透過 ChatGPT GPT-5.5 進行通訊。"
 ---
 
 # codex-shim
@@ -69,20 +69,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```
 
 > [!summary] 一句話摘要
-> 讓 Codex Desktop 能夠使用自訂的 BYOK 模型，並可選擇透過 ChatGPT GPT-5.5 進行傳遞。
+> 讓 Codex Desktop 支援任何 BYOK 模型，並可選擇性地透過 ChatGPT GPT-5.5 進行通訊。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (198 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要在 Codex Desktop 中使用自訂 AI 模型的開發者和研究人員。
-> **一句話重點** codex-shim 讓開發者能夠輕鬆地在 Codex Desktop 中使用自訂模型，並且保持原有的使用體驗。
+> **適合** 需要在 Codex Desktop 中使用多種 BYOK 模型的開發者。
+> **一句話重點** codex-shim 讓開發者能夠在 Codex Desktop 中靈活使用多種 AI 模型，這在當前的開發環境中是非常有價值的。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/0xSero--codex-shim");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "API 工具" && p.file.name !== "0xSero--codex-shim" && p.status !== "archived")
+>     .where(p => p.subcategory === "模型整合" && p.file.name !== "0xSero--codex-shim" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -93,32 +93,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 API 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 模型整合 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習、3 小時整合，得到靈活的模型接入功能，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學習，2 小時整合，得到靈活的模型整合能力，值得一試。
 
 > [!abstract] 核心創新
-> 這個專案的創新點在於能夠無縫地將多個 BYOK 模型集成到 Codex Desktop 中，並支持 ChatGPT 的 passthrough 功能。
+> 這個專案的創新點在於能夠無縫整合多種 BYOK 模型到 Codex Desktop 中，而不需要重建 Codex。
 
 ## 專案簡介
 
-codex-shim 是一個本地的 Python/aiohttp 伺服器，能夠將 Codex Desktop 連接到任何 BYOK 模型，並可選擇透過 ChatGPT 的 GPT-5.5 進行請求處理。使用者只需在 `~/.codex-shim/models.json` 中描述模型，shim 會自動將請求路由到相應的上游 API，並將回應格式轉換為 Codex 所需的格式。這樣的設計使得使用者無需重建 Codex，便能夠在原有的使用者介面中使用自訂模型。最關鍵的指令包括 `codex-shim generate` 用於生成模型目錄，和 `codex-shim start` 啟動伺服器。
+Codex-shim 是一個本地的 Python/aiohttp 伺服器，能讓 Codex Desktop 使用任何 BYOK 模型，並可選擇性地將請求傳遞至 ChatGPT 的 GPT-5.5 模型。使用者只需在 `~/.codex-shim/models.json` 中描述模型，shim 會將請求路由至相應的上游 API，並將回應格式轉換為 Codex 所需的格式。這樣的設計使得 Codex 能夠在不重建的情況下，直接使用本地模型，提升了使用的靈活性和效率。關鍵指令如 `codex-shim generate` 和 `codex-shim start` 可用於生成模型目錄並啟動 shim 伺服器，讓使用者能夠在本地環境中輕鬆運行。這個工具的賣點在於它能夠無縫整合多種模型，並保持 Codex 的原生用戶體驗。
 
-技術上，這個專案使用了 aiohttp 作為非同步 HTTP 客戶端，能夠高效處理請求和回應，並且支持多平台運行，包括 Windows、macOS 和 Linux。與其他類似工具相比，如 0xGF/boneyard 和 BigPizzaV3/CodexPlusPlus，codex-shim 提供了更靈活的模型路由選擇，並且能夠保持 Codex 的原生使用體驗。實際使用中，使用者可能會遇到模型未正確顯示的問題，這在熱門 Issue 中已有反映。這個專案目前處於 alpha 階段，適合對 Codex 有一定了解的開發者進行試用，未來可能會隨著社群的反饋而持續改進。
+技術上，該專案依賴於 aiohttp 來處理 HTTP 請求，並支援 Windows、macOS 和 Linux 等多個平台，這使得它具有良好的跨平台兼容性。與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 432539/gpt2api，codex-shim 提供了更靈活的模型路由選擇，並且能夠在不改變 Codex 的情況下，輕鬆添加新的模型。實際使用中，使用者可能會遇到如模型未顯示的問題，這在熱門問題中已被提及，顯示出社群對此工具的關注。總體來說，codex-shim 是一個仍在開發中的 alpha 階段專案，適合需要在 Codex 中使用多種模型的開發者，未來可能會進一步增強功能和穩定性。
 
 **技術棧**：`Python 3.11` · `aiohttp`
 
 ## 重點功能
 
-- 本地伺服器架構 — 使用 Python/aiohttp 提供 OpenAI Responses 兼容的端點。
-- 支持多種模型 — 能夠配置多個 BYOK 模型，並在 Codex 中顯示。
-- ChatGPT passthrough — 允許將請求轉發至 ChatGPT 的 GPT-5.5 模型。
-- 簡單的 CLI 指令 — 使用 `codex-shim generate` 和 `codex-shim start` 來快速啟動服務。
-- 靈活的配置選項 — 支持自定義的 JSON 配置文件，並保護 API 密鑰的安全。
+- 支持多種模型 — 可在 `~/.codex-shim/models.json` 中配置多個 BYOK 模型。
+- 本地伺服器 — 使用 aiohttp 提供 OpenAI Responses 兼容的端點，支持跨平台運行。
+- ChatGPT passthrough — 可選擇性地將請求路由至 ChatGPT GPT-5.5 模型。
+- CLI 支援 — 提供簡單的命令行介面，使用者可快速執行模型請求。
+- 模型生成與管理 — 自動生成模型目錄，並提供模型狀態檢查功能。
 
 ## 快速開始
 
@@ -134,67 +134,73 @@ codex-shim generate
 ```bash
 codex-shim start
 ```
+4. 檢查模型狀態
+```bash
+codex-shim status
+```
 
 ## 程式碼範例
 
 ```python
-[
-  "# 前置條件：已安裝 codex-shim 並生成模型目錄",
-  "codex-shim codex -- \"inspect this repo and summarize the architecture\"",
-  "# 預期輸出：Codex 將返回有關該存儲庫架構的摘要。"
-]
+{
+  "前置條件": "需要在 `~/.codex-shim/models.json` 中配置模型。",
+  "指令": "codex-shim codex -- \"inspect this repo and summarize the architecture\"",
+  "預期輸出": "將返回對指定 repo 的架構摘要。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 593 stars（198/天），forks 51（8.6%），顯示出強勁的增長潛力。作者 0xSero 及 OnlyTerp 在開源社群中有一定的影響力，之前的專案也獲得過良好的反響。這個工具解決了 Codex Desktop 使用自訂模型的痛點，之前需要重建 Codex 或使用繁瑣的配置，現在只需簡單的設定檔即可。近期在社交媒體上有關於此工具的討論也引起了開發者的注意，進一步推動了其流行。forks/stars 比率為 8.6%，顯示出有不少人對此專案進行了實際的修改和使用。
+> 建立 3 天內累積 593 stars（198/天），forks 51（8.6%），這顯示出該專案的快速增長。作者 0xSero 之前參與過多個開源專案，這次專案解決了 Codex Desktop 無法直接使用 BYOK 模型的痛點，讓開發者能夠更靈活地使用不同的 AI 模型。社群對於這個工具的需求和關注，可能來自於對於 AI 模型整合的迫切需求，尤其是在多模型環境下的應用。這個工具的出現，正好填補了這一市場空白。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Codex Desktop 中使用自訂 AI 模型的開發者和研究人員。
+**目標受眾**：需要在 Codex Desktop 中使用多種 BYOK 模型的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來在 Codex Desktop 中快速接入自訂的 BYOK 模型，因為這樣可以避免重建 Codex 的繁瑣流程。
-> - AI 開發者用它來測試不同的模型輸出，因為它能夠輕鬆地將請求路由到多個上游 API，並保持原生的 Codex 使用體驗。
-> - 產品經理用它來評估 ChatGPT 的性能，因為它提供了簡單的方式來比較不同模型的回應速度和準確性。
+> - 後端工程師用它來在本地環境中運行 Codex Desktop，因為這樣可以靈活地使用多種 AI 模型，而不需要重建 Codex。
+> - AI 研究人員用它來測試不同的 BYOK 模型，因為它能夠快速切換模型並比較性能，節省了大量的測試時間。
+> - 開發者用它來整合 ChatGPT 的功能到 Codex 中，因為這樣可以利用 ChatGPT 的強大能力，提升 Codex 的應用範圍。
 
 ## 架構分析
 
-codex-shim 採用本地伺服器架構，使用 Python 和 aiohttp 來處理請求，並將其轉發至相應的上游 API。這種設計使得使用者能夠在不重建 Codex 的情況下，快速接入多個模型。資料流的每個節點都經過精心設計，以確保請求和回應的格式轉換正確，並且能夠支持多種 API。選擇 aiohttp 作為非同步框架，能夠有效處理高併發請求，這在處理多個模型時尤為重要。擴展性方面，這種架構能夠支持未來更多模型的接入，但在大量請求時可能會遇到性能瓶頸，特別是在資源有限的環境下。
+codex-shim 採用本地伺服器架構，使用 aiohttp 處理 HTTP 請求，並將請求路由至相應的上游 API。這樣的設計使得模型的整合變得靈活且高效。伺服器運行在本地環境中，並不面向互聯網，這降低了安全風險。
+
+選擇 aiohttp 是因為它輕量且易於使用，適合快速開發和部署。這種設計的代價在於需要使用者自行管理模型的配置和路由。擴展性方面，這個架構可以輕鬆添加新的模型，但可能會面臨配置文件管理的複雜性。
 
 ## 技術深入分析
 
-codex-shim 的核心技術機制是基於 aiohttp 的本地伺服器，這使得它能夠高效地處理請求並轉發至不同的上游 API。這種設計不僅提高了請求的處理速度，還能夠支持多種模型的接入。效能方面，這個工具能夠在多個平台上運行，並且在高併發請求下仍能保持穩定的性能。選擇 Python 作為開發語言，能夠快速迭代和開發，但在性能上可能不如某些編譯語言。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在資源有限的環境下。整合方面，這個工具能夠與現有的 Codex 環境無縫對接，並且支持多種操作系統，這使得它在開發者社群中具有良好的接受度。
+codex-shim 的核心技術在於使用 aiohttp 作為 HTTP 請求的處理框架，這使得它能夠快速響應並處理來自 Codex 的請求。該工具能夠支持多種模型，並根據用戶的配置文件動態路由請求。效能方面，由於它是本地運行的伺服器，對於小型到中型的請求量能夠輕鬆應對，但在高負載情況下可能會出現瓶頸。選擇 Python 作為開發語言的好處在於其生態系統豐富，能夠快速開發和迭代，但也可能導致性能上的劣勢。技術風險方面，依賴於外部 API 的穩定性和可用性，若上游服務出現問題，將直接影響到使用者的體驗。整合方面，codex-shim 可以與現有的 CI/CD 流程相容，但需要額外的配置來確保無縫運行。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含詳細的安裝步驟和範例，安裝過程相對順暢，但需要注意 Python 版本要求。文件中有針對不同平台的安裝指導，讓新手能夠快速上手。整體而言，花 30 分鐘應該能夠成功運行起來。
+> README 文件清晰且提供了詳細的安裝步驟，對於新手來說相對友好。安裝過程在 macOS 和 Linux 上較為順暢，但在 Windows 上可能會遇到一些問題。文件中有針對不同平台的說明，幫助使用者快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 靈活的模型配置，能夠快速接入多個 BYOK 模型。
-> - 保持 Codex 的原生使用體驗，無需重建。
-> - 支持 ChatGPT 的 passthrough，擴展了功能範圍。
+> - 靈活的模型整合能力，支持多種 BYOK 模型。
+> - 本地伺服器架構，降低了安全風險。
+> - 無需重建 Codex，保持原生用戶體驗。
 
 > [!danger] 缺點
-> - 目前處於 alpha 階段，穩定性有待提高。
-> - 需要一定的技術背景來配置和使用。
-> - 在某些平台上可能存在兼容性問題。
+> - 仍在 alpha 階段，穩定性可能不足。
+> - 需要手動配置模型，對新手不友好。
+> - 在 Windows 上的安裝過程較為繁瑣。
 
 > [!warning] 注意事項
 > - 僅支援 Python 3.11+。
-> - 在某些情況下，模型可能不會正確顯示，需檢查配置。
-> - 目前處於 alpha 階段，可能存在未解決的 bug。
+> - 需要 Codex CLI/Desktop 已安裝並認證。
+> - 在 Windows 上需要使用 PowerShell/cmd 進行安裝。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的模型路由功能，但不支持 ChatGPT passthrough，適合需要簡單模型接入的使用者。 |
-| [BigPizzaV3/CodexPlusPlus](https://github.com/BigPizzaV3/CodexPlusPlus) | 專注於增強 Codex 的功能，但缺乏靈活的模型配置選項，適合對功能擴展有需求的使用者。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的模型整合功能，但主要針對特定的代理模型，而 codex-shim 更加通用，支持多種模型的靈活配置。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | 專注於 GPT-2 模型的 API 接入，而 codex-shim 支援更廣泛的模型和本地運行的能力。 |
 
 ## 替代方案決策
 
@@ -202,16 +208,16 @@ codex-shim 的核心技術機制是基於 aiohttp 的本地伺服器，這使得
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體用量較低，但缺乏 Python 的靈活性。 | 如果你的團隊對性能有極高要求，且能接受 Rust 的學習曲線。 | medium，因為需要重寫部分邏輯以適應 Rust 的語言特性。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | 基於 Flask 的簡單 API，適合小型專案，但不支持多模型路由。 | 如果你的需求只是簡單的 GPT-2 接入，且不需要複雜的模型管理。 | low，因為 API 接口相對簡單，容易上手。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於特定的代理模型整合，而 codex-shim 提供更廣泛的模型支持。 | 如果你的需求主要是針對特定代理模型的整合，則可以選擇 agent-sprite-forge。 | medium，因為需要重新配置模型和路由。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | 專注於 GPT-2 模型的 API 接入，而 codex-shim 支援多種模型的靈活配置。 | 如果你的專案主要使用 GPT-2 模型，則 gpt2api 可能更合適。 | low，因為 API 接入相對簡單。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **codex-shim** | **agent-sprite-forge** | **gpt2api** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量較低，但缺乏 Python 的靈活性。 | 基於 Flask 的簡單 API，適合小型專案，但不支持多模型路由。 |
-> | 遷移成本 | - | medium，因為需要重寫部分邏輯以適應 Rust 的語言特性。 | low，因為 API 接口相對簡單，容易上手。 |
-> | 適用場景 | 主要場景 | 如果你的團隊對性能有極高要求，且能接受 Rust 的學習曲線 | 如果你的需求只是簡單的 GPT-2 接入，且不需要複雜的模型 |
+> | 技術路線 | 本專案 | 專注於特定的代理模型整合，而 codex-shim 提供更廣泛的模型支持。 | 專注於 GPT-2 模型的 API 接入，而 codex-shim 支援多種模型的靈活配置。 |
+> | 遷移成本 | - | medium，因為需要重新配置模型和路由。 | low，因為 API 接入相對簡單。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是針對特定代理模型的整合，則可以選擇 age | 如果你的專案主要使用 GPT-2 模型，則 gpt2api  |
 
 ## 成熟度評估
 
@@ -222,42 +228,75 @@ codex-shim 的核心技術機制是基於 aiohttp 的本地伺服器，這使得
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人側項目試用，不建議用在生產環境的核心路徑上。
+> 適合對 Codex Desktop 有需求的開發者進行試用，但不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些平台上，模型可能不會正確顯示，需檢查配置文件。
-  - 解法：確保 `~/.codex-shim/models.json` 文件存在且格式正確。
-- [MEDIUM] 啟動伺服器後，可能需要重新啟動 Codex Desktop 才能看到新模型。
-  - 解法：使用 `codex-app` 指令重新啟動。
+- **[HIGH]** 安裝後模型未顯示在 Codex 中，可能是配置錯誤。
+  - 解法：檢查 `~/.codex-shim/models.json` 的配置是否正確。
+- [MEDIUM] 在 Windows 上安裝過程可能會遇到權限問題。
+  - 解法：確保以管理員身份運行 PowerShell。
+- [MEDIUM] 伺服器啟動後無法訪問，可能是防火牆設置問題。
+  - 解法：檢查防火牆設置，確保允許 127.0.0.1:8765 的訪問。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊需要快速接入多個 AI 模型 | 非常適合 | 靈活的模型配置和簡單的使用方式使得團隊能夠快速上手。 |
-| 大型企業需要穩定的生產環境 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
-| 個人開發者希望在本地測試不同的 AI 模型 | 適合 | 本地伺服器架構使得測試變得方便。 |
-| 需要與現有的 Codex 環境整合的專案 | 非常適合 | 能夠無縫對接 Codex，保持原有的使用體驗。 |
+| 小型開發團隊需要在 Codex 中使用多種模型 | 非常適合 | 因為它能夠靈活地整合多種模型，提升開發效率。 |
+| 大型企業需要穩定的 AI 模型服務 | 不適合 | 因為目前仍在 alpha 階段，穩定性不足。 |
+| 個人開發者希望快速測試新模型 | 適合 | 因為安裝和使用都相對簡單，適合快速迭代。 |
+| 需要在生產環境中使用的核心功能 | 不適合 | 因為 API 穩定性和功能尚未成熟。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習、3 小時整合，得到靈活的模型接入功能，值得嘗試。
+> 花 3 小時學習，2 小時整合，得到靈活的模型整合能力，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，並且 API 密鑰僅在本地配置文件中存儲，不會被複製。整體依賴鏈的信任程度良好，適合在 CI/CD 環境中使用。
+> 低風險：該工具不需要高權限運行，並且不會存取敏感資料。依賴的外部 API 需確保安全性，並在 CI/CD 中使用時需謹慎配置。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+codex-shim 可以與 Codex Desktop 和 CLI 工具無縫整合，適合在開發過程中使用。實際整合範例包括在使用 Next.js 的專案中，開發者可以使用 codex-shim 來快速測試和集成不同的 AI 模型。該工具支援 GitHub Actions 等 CI 工具，並可與 VS Code 等 IDE 整合，提升開發效率。整合過程中，最常見的問題是模型配置錯誤，使用者需仔細檢查配置文件。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 codex-shim 出現之前，開發者需要手動重建 Codex 或使用固定的模型配置，這樣的方式不夠靈活且效率低下。隨著多種 AI 模型的興起，開發者對於能夠靈活整合不同模型的需求越來越強烈。codex-shim 的出現正好滿足了這一需求，並且在技術上實現了更高的靈活性和效率。
+
+未來，隨著 AI 技術的進步，這類工具將會越來越普及。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-5 人的小型團隊
+
+**前置技能**：
+- 熟悉 Python
+- 了解基本的 API 設計
+- 有使用 Codex 的經驗
+
+> [!tip] 導入策略
+> 第一週：在個人專案中試用。第二週：在小型團隊內部工具中導入。第三週：撰寫使用文檔和最佳實踐。第四週：在主產品中進行實驗性使用。
+
+**成功指標**：測試和集成新模型的時間減少 30%。
+
+> [!warning] 退出計畫
+> 所有配置文件均為標準 JSON 格式，能夠輕鬆轉換為其他工具的格式。
 
 ## 健康度儀表板
 
@@ -345,7 +384,7 @@ codex-shim 的核心技術機制是基於 aiohttp 的本地伺服器，這使得
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有幾個問題被解決。
+**社群活躍度**：社群活躍度中等，最近有持續的提交和問題回應。
 **連結**：[文件](https://github.com/0xSero/codex-shim)
 
 ## 開發動態
@@ -613,19 +652,19 @@ codex-shim 的核心技術機制是基於 aiohttp 的本地伺服器，這使得
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[API 設計]] · [[自動化測試]]
+相關概念：[[API 設計]] · [[多模態]] · [[容器化]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[432539--gpt2api|432539/gpt2api]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[TianyiDataScience--openclaw-control-center|TianyiDataScience/openclaw-control-center]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[Infatoshi--OpenSquirrel|Infatoshi/OpenSquirrel]] · [[Lum1104--Understand-Anything|Lum1104/Understand-Anything]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[TianyiDataScience--openclaw-control-center|TianyiDataScience/openclaw-control-center]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[Infatoshi--OpenSquirrel|Infatoshi/OpenSquirrel]]
 
 [GitHub](https://github.com/0xSero/codex-shim)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：API 工具）
+> [!note]- 直接競品（同子分類：模型整合）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "API 工具" AND file.name != "0xSero--codex-shim"
+> WHERE subcategory = "模型整合" AND file.name != "0xSero--codex-shim"
 > SORT stars DESC
 > ```
 
@@ -657,7 +696,7 @@ codex-shim 的核心技術機制是基於 aiohttp 的本地伺服器，這使得
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","API 設計","自動化測試"];
+> const concepts = ["API 設計","多模態","容器化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "0xSero--codex-shim" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
