@@ -1835,10 +1835,10 @@
   },
   "thananon/9arm-skills": {
     "first_seen": "2026-05-21",
-    "last_seen": "2026-05-26",
-    "times_seen": 6,
+    "last_seen": "2026-05-27",
+    "times_seen": 7,
     "stars_first": 890,
-    "stars_last": 2167
+    "stars_last": 2356
   },
   "bytedance/Lance": {
     "first_seen": "2026-05-22",
@@ -1877,10 +1877,10 @@
   },
   "kageroumado/phosphene": {
     "first_seen": "2026-05-23",
-    "last_seen": "2026-05-26",
-    "times_seen": 4,
+    "last_seen": "2026-05-27",
+    "times_seen": 5,
     "stars_first": 597,
-    "stars_last": 673
+    "stars_last": 686
   },
   "lynote-ai/humanize-text": {
     "first_seen": "2026-05-23",
@@ -1905,10 +1905,10 @@
   },
   "perplexityai/bumblebee": {
     "first_seen": "2026-05-24",
-    "last_seen": "2026-05-26",
-    "times_seen": 3,
+    "last_seen": "2026-05-27",
+    "times_seen": 4,
     "stars_first": 1288,
-    "stars_last": 2586
+    "stars_last": 3196
   },
   "WUBING2023/PaperSpine": {
     "first_seen": "2026-05-24",
@@ -1919,17 +1919,17 @@
   },
   "open-gsd/get-shit-done-redux": {
     "first_seen": "2026-05-25",
-    "last_seen": "2026-05-26",
-    "times_seen": 2,
+    "last_seen": "2026-05-27",
+    "times_seen": 3,
     "stars_first": 566,
-    "stars_last": 857
+    "stars_last": 1102
   },
   "Tong89/smartNode": {
     "first_seen": "2026-05-25",
-    "last_seen": "2026-05-26",
-    "times_seen": 2,
+    "last_seen": "2026-05-27",
+    "times_seen": 3,
     "stars_first": 510,
-    "stars_last": 703
+    "stars_last": 1128
   },
   "basketikun/infinite-canvas": {
     "first_seen": "2026-05-25",
@@ -1940,30 +1940,37 @@
   },
   "0xSero/codex-shim": {
     "first_seen": "2026-05-26",
-    "last_seen": "2026-05-26",
-    "times_seen": 1,
+    "last_seen": "2026-05-27",
+    "times_seen": 2,
     "stars_first": 593,
-    "stars_last": 593
+    "stars_last": 635
   },
   "run-liyi/wechatpay": {
     "first_seen": "2026-05-26",
-    "last_seen": "2026-05-26",
-    "times_seen": 1,
+    "last_seen": "2026-05-27",
+    "times_seen": 2,
     "stars_first": 536,
-    "stars_last": 536
+    "stars_last": 802
   },
   "MoonshotAI/kimi-code": {
     "first_seen": "2026-05-26",
-    "last_seen": "2026-05-26",
-    "times_seen": 1,
+    "last_seen": "2026-05-27",
+    "times_seen": 2,
     "stars_first": 500,
-    "stars_last": 500
+    "stars_last": 724
   },
   "zhaoyue4810/pianke": {
     "first_seen": "2026-05-26",
-    "last_seen": "2026-05-26",
-    "times_seen": 1,
+    "last_seen": "2026-05-27",
+    "times_seen": 2,
     "stars_first": 400,
-    "stars_last": 400
+    "stars_last": 438
+  },
+  "KNG7-P/Se7en-Pro": {
+    "first_seen": "2026-05-27",
+    "last_seen": "2026-05-27",
+    "times_seen": 1,
+    "stars_first": 378,
+    "stars_last": 378
   }
 }

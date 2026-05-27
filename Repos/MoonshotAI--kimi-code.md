@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "The Starting Point for Next-Gen Agents"
 homepage: "https://moonshotai.github.io/kimi-code/"
-stars: 511
-stars_per_day: 170
-forks: 31
-open_issues: 15
+stars: 724
+stars_per_day: 181
+forks: 50
+open_issues: 23
 created: 2026-05-22
-pushed_at: 2026-05-25
+pushed_at: 2026-05-26
 first_seen: 2026-05-26
 week: "2026-W22"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "提供一個 AI 編碼代理，能在終端機中讀取和編輯程�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-02"
+appearances: 2
+next_review: "2026-06-03"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 6
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-26"
-star_history: "2026-05-26:500,2026-05-26:511"
+star_history: "2026-05-26:500,2026-05-26:511,2026-05-27:724"
 tags:
   - github
   - "category/開發工具"
@@ -778,4 +778,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-27|2026-05-27]] — 再次上榜，724 stars
 - [[2026-05-26|2026-05-26]] — 首次收錄，500 stars
