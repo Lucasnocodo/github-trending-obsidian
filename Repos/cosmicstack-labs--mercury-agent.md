@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram."
 homepage: "https://mercuryagent.sh/"
-stars: 2449
-stars_per_day: 70
-forks: 250
+stars: 2455
+stars_per_day: 68
+forks: 252
 open_issues: 36
 created: 2026-04-20
 pushed_at: 2026-05-25
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-26
-use_case: "提供一個有靈魂的 AI 助手，具備權限強化工具、代幣預算和多通道存取功能，隨時運行於 CLI 或 Telegram。"
+use_case: "提供一個持續運行的 AI 助手，具備權限管理和多通道訪問功能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,11 +38,11 @@ issue_close_rate: 8
 repo_size_kb: 4995
 readme_length: 9920
 bus_factor: 1
-last_release_days: 7
-release_cadence: "weekly"
+last_release_days: 8
+release_cadence: "monthly"
 verdict: ""
 ring_history: "assess@2026-04-26"
-star_history: "2026-04-26:1117,2026-04-26:1124,2026-04-27:1416,2026-04-27:1422,2026-04-28:1549,2026-04-29:1649,2026-04-30:1774,2026-05-01:1837,2026-05-02:1880,2026-05-03:1910,2026-05-04:1946,2026-05-05:1962,2026-05-06:1974,2026-05-07:2008,2026-05-08:2020,2026-05-09:2034,2026-05-10:2053,2026-05-11:2069,2026-05-12:2112,2026-05-13:2142,2026-05-14:2169,2026-05-15:2194,2026-05-16:2210,2026-05-17:2230,2026-05-18:2245,2026-05-19:2272,2026-05-20:2336,2026-05-21:2392,2026-05-24:2417,2026-05-26:2449"
+star_history: "2026-04-26:1117,2026-04-26:1124,2026-04-27:1416,2026-04-27:1422,2026-04-28:1549,2026-04-29:1649,2026-04-30:1774,2026-05-01:1837,2026-05-02:1880,2026-05-03:1910,2026-05-04:1946,2026-05-05:1962,2026-05-06:1974,2026-05-07:2008,2026-05-08:2020,2026-05-09:2034,2026-05-10:2053,2026-05-11:2069,2026-05-12:2112,2026-05-13:2142,2026-05-14:2169,2026-05-15:2194,2026-05-16:2210,2026-05-17:2230,2026-05-18:2245,2026-05-19:2272,2026-05-20:2336,2026-05-21:2392,2026-05-24:2417,2026-05-26:2449,2026-05-27:2455"
 tags:
   - github
   - "category/ai_ml"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "mercury-agent"
   - "cosmicstack-labs/mercury-agent"
-  - "提供一個有靈魂的 AI 助手，具備權限強化工具、代幣預算和多通道存取功能，隨時運行於 CLI 或 Telegram。"
+  - "提供一個持續運行的 AI 助手，具備權限管理和多通道訪問功能。"
 ---
 
 # mercury-agent
 
-**2.4k** stars · **70** stars/天 · 建立 35 天前 · TypeScript · MIT
+**2.5k** stars · **68** stars/天 · 建立 36 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/cosmicstack-labs--mercury-agent");
@@ -78,13 +78,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ai-agent` `ai-assistant` `llm`
 
 > [!summary] 一句話摘要
-> 提供一個有靈魂的 AI 助手，具備權限強化工具、代幣預算和多通道存取功能，隨時運行於 CLI 或 Telegram。
+> 提供一個持續運行的 AI 助手，具備權限管理和多通道訪問功能。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Growing · **熱度** Growing (70 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要高安全性和個性化 AI 助手的開發者，特別是在處理敏感資訊的情境中。
-> **一句話重點** Mercury Agent 的設計讓用戶在使用 AI 助手時能夠保持對操作的控制，這在當前的 AI 生態中是非常重要的。
+> **安裝難度** Easy · **專案狀態** Growing · **熱度** Growing (68 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 需要一個安全且可擴展的 AI 助手，並希望在多個平台上進行管理的開發者和團隊。
+> **一句話重點** Mercury 的設計不僅是為了提供功能，更是為了讓用戶在使用 AI 助手時能夠感受到安全與控制。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,105 +108,103 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習、3 小時整合，得到高安全性和靈活性的 AI 助手，值得投入。
+> **結論** 花 5 小時學習、3 小時整合，得到一個靈活且安全的 AI 助手，值得投入。
 
 > [!abstract] 核心創新
-> Mercury Agent 的獨特之處在於其權限強化的設計，讓用戶在使用 AI 助手時能夠保持控制和安全。
+> Mercury 的獨特之處在於其靈魂驅動設計和權限加固功能，讓用戶能夠完全控制 AI 助手的行為。
 
 ## 專案簡介
 
-Mercury Agent 是一個靈魂驅動的 AI 助手，設計上強調用戶的控制與安全性。它能夠在 CLI、Telegram 或 Web 上運行，並擁有 31 種內建工具和可擴展的技能系統。用戶可以透過簡單的指令，如 `mercury up`，啟動持續運行的背景守護進程，並透過 `mercury skills` 指令來安裝和管理社群貢獻的技能。這個設計使得 Mercury 不僅能夠記住用戶的偏好，還能在執行任務前先詢問用戶的許可，避免意外行為。其核心的「第二大腦」功能，利用 SQLite 進行結構化記憶，並支持全文本搜索，讓用戶能夠輕鬆檢索過去的對話和資訊。這樣的設計不僅提升了使用的安全性，也讓用戶能夠更好地管理和利用 AI 助手的能力。
-
-相較於其他 AI 助手，Mercury 的權限強化和記憶管理功能使其在安全性和用戶控制上更具優勢。使用者可以在多種環境中靈活運用，特別是在需要長時間運行的情境下，如自動化任務或持續監控。這個工具特別適合需要高安全性和個性化的用戶，尤其是在處理敏感資訊時。隨著社群技能的增長，Mercury 的功能將持續擴展，未來可能會有更多的集成和自動化選項。對於希望在多通道中使用 AI 助手的開發者來說，這是一個值得考慮的選擇。
+Mercury 是一個以「靈魂驅動」為概念的 AI 助手，設計上強調用戶的控制權和記憶功能。用戶可以透過 CLI、Telegram 或 Web 介面與其互動，並且 Mercury 會在執行任何操作前詢問用戶的許可。這個工具內建 31 種工具，並且支持 Kanban 板和擴展技能，所有數據都存儲在本地的 SQLite 數據庫中。安裝過程簡單，使用者只需執行 `curl -fsSL https://mercuryagent.sh/install.sh | sh` 即可完成安裝。其核心賣點在於「權限加固」，確保不會執行危險的命令，並且能夠根據用戶的需求進行個性化設置。這種設計不僅提高了安全性，還能讓用戶更好地管理其 AI 助手的行為。Mercury 也具備實時流媒體功能，能夠在 CLI 和 Telegram 中即時更新狀態，這對於需要持續監控的用戶來說非常有用。
 
 **技術棧**：`TypeScript` · `React` · `SQLite`
 
 ## 重點功能
 
-- 權限強化 — Mercury 在執行命令前會詢問用戶許可，避免意外行為。
-- 第二大腦記憶 — 使用 SQLite 進行結構化記憶，支持全文本搜索。
-- 多通道存取 — 同時支持 CLI、Telegram 和 Web 界面，方便用戶隨時隨地使用。
-- 社群技能安裝 — 透過 `mercury skills` 指令安裝社群貢獻的技能，擴展功能。
-- 持續運行守護進程 — 使用 `mercury up` 命令可將 Mercury 設置為背景守護進程，實現 24/7 運行。
+- 靈魂驅動設計 — 透過個性化的 markdown 文件定義助手的性格與行為。
+- 權限加固 — 嚴格的命令執行控制，防止危險操作如 `sudo` 和 `rm -rf /`。
+- 持續運行 — 可以作為後台守護進程運行，並在崩潰時自動重啟。
+- 多通道訪問 — 支持 CLI、Telegram 和 Web 介面，方便用戶隨時隨地訪問。
+- 實時流媒體 — 在 CLI 和 Telegram 中實現即時狀態更新，提升用戶互動體驗。
 
 ## 快速開始
 
-1. 安裝 Mercury Agent
+1. 安裝 Mercury
 ```bash
 curl -fsSL https://mercuryagent.sh/install.sh | sh
 ```
-2. 啟動 Mercury Agent
+2. 啟動 Mercury
 ```bash
 mercury up
 ```
-3. 安裝社群技能
+3. 查看狀態
 ```bash
-mercury skills install ai-ml/prompt-engineering
+mercury status
 ```
 
 ## 程式碼範例
 
 ```ts
 {
-  "前置條件": "安裝並啟動 Mercury Agent",
+  "前置條件": "已安裝 Mercury",
   "指令": "mercury skills install ai-ml/prompt-engineering",
-  "預期輸出": "安裝成功，技能將在下次啟動時加載。"
+  "預期輸出": "安裝成功，技能將在下次啟動時被加載。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 35 天內累積 2449 stars（70/天），forks 250（10.2%），顯示出活躍的開發者關注。作者 Cosmic Stack 團隊擁有多年的開發經驗，致力於創造安全且可擴展的 AI 解決方案。Mercury 解決了許多現有 AI 助手在安全性和用戶控制上的不足，特別是對於需要高權限操作的情境。近期的推廣活動和社群討論也促進了其曝光率，讓更多開發者注意到這個工具的潛力。這個工具的設計理念符合當前對於 AI 安全性和可控性的需求，讓它在技術生態中具備了獨特的價值。
+> 建立 36 天內累積 2455 stars（68/天），forks 252（10.3%），顯示出穩定的增長趨勢。作者 Cosmic Stack 團隊擁有多位活躍貢獻者，解決了許多 AI 助手在使用過程中缺乏用戶控制和安全性的痛點。這個工具的出現正好填補了市場上對於安全且可擴展的 AI 助手的需求。社群對於其功能的討論和需求也促進了其快速發展，尤其是對於多通道訪問和權限管理的支持。
 
 ## 適合誰使用
 
-**目標受眾**：需要高安全性和個性化 AI 助手的開發者，特別是在處理敏感資訊的情境中。
+**目標受眾**：需要一個安全且可擴展的 AI 助手，並希望在多個平台上進行管理的開發者和團隊。
 
 > [!example] 使用場景
-> - 後端工程師用它來自動化定期任務，因為 Mercury 的計劃任務功能可以輕鬆設置和管理。
-> - 產品經理用它來追蹤團隊的工作進度，因為其內建的看板系統能夠視覺化任務狀態。
-> - 獨立開發者用它來管理個人專案的記憶和知識，因為其第二大腦功能能夠有效整理和檢索資訊。
+> - 獨立開發者用它來建立一個個性化的 AI 助手，因為它的靈魂驅動設計讓助手能夠記住用戶的偏好和需求。
+> - 小型團隊用它來管理日常任務和溝通，因為其 Kanban 板和多通道訪問功能能夠提高團隊的協作效率。
+> - 企業用戶用它來進行自動化的客戶支持，因為它的權限管理和安全性設計能夠確保敏感信息不被濫用。
 
 ## 架構分析
 
-Mercury Agent 採用模組化的架構，核心功能由 TypeScript 實現，並使用 SQLite 作為記憶存儲。這樣的設計使得應用能夠在多種環境中運行，並且具備良好的擴展性。資料流中，所有的用戶交互和命令都經過權限檢查，確保安全性。選擇 SQLite 作為記憶存儲的優勢在於其輕量和高效能，但在處理大量資料時可能會遇到性能瓶頸。整體而言，這種架構設計使得 Mercury 能夠快速啟動並提供即時反應，適合需要長時間運行的應用場景。
+Mercury 採用單一的 TypeScript 應用架構，並使用 SQLite 作為後端數據存儲。這種設計使得應用可以在多個平台上無縫運行，並且便於擴展。資料流方面，所有用戶的配置和記憶都存儲在本地，這樣可以確保數據的安全性和隱私性。
+
+選擇 SQLite 作為數據庫的原因在於其輕量級和易於管理的特性，這使得 Mercury 在資源使用上非常高效。擴展性方面，社群貢獻的技能可以輕鬆安裝，這樣用戶可以根據需求快速增強功能。整體而言，這種架構設計使得 Mercury 能夠在保持安全性的同時，提供靈活的使用體驗。
 
 ## 技術深入分析
 
-Mercury Agent 的核心技術機制是基於 TypeScript 的模組化架構，並使用 SQLite 作為記憶存儲。這使得應用能夠在多種平台上運行，並且具備良好的擴展性。其效能特性在於能夠快速啟動並即時反應，特別適合需要長時間運行的應用場景。選擇 SQLite 作為記憶存儲的好處在於其輕量和高效能，但在處理大量資料時可能會遇到性能瓶頸。
-
-設計上，Mercury 強調用戶的控制權，所有的命令執行都經過權限檢查，這樣的設計能夠有效防止意外行為。技術風險方面，隨著使用者數量的增加，可能會對系統資源造成壓力，特別是在高並發的情況下。整合方面，Mercury 能夠與多種現有工具鏈相容，特別是在 CI/CD 流程中，能夠輕鬆集成到開發環境中。整體而言，Mercury Agent 提供了一個靈活且安全的 AI 助手解決方案，適合各種需求的用戶。
+Mercury 的核心技術機制在於其靈魂驅動設計和權限加固功能。靈魂驅動設計使得用戶能夠透過 markdown 文件定義助手的性格，這樣的設計不僅提升了用戶的參與感，也讓助手的行為更加符合用戶的需求。權限加固則是透過嚴格的命令執行控制來實現，這樣可以防止助手執行潛在的危險操作。效能方面，Mercury 依賴 SQLite 作為數據存儲，這使得它在處理用戶數據時非常高效，並且能夠快速響應用戶的請求。設計取捨方面，選擇 TypeScript 和 React 使得開發過程更加高效，但也增加了一定的學習曲線。技術風險方面，社群貢獻的技能可能會引入安全風險，因此用戶在使用時需謹慎選擇。整合方面，Mercury 可以與多種平台無縫對接，並且支持多種通道的訪問，這使得它在實際應用中非常靈活。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含必要的範例，安裝過程順暢，沒有明顯的坑。提供了良好的入門指南，讓新手能夠快速上手。文件目前僅提供英文和簡體中文版本。
+> README 文件清晰且提供了詳細的安裝步驟，讓新手能夠快速上手。安裝過程相對順暢，但需要注意 Node.js 的版本要求。文檔中包含了多種語言的支持，這對於不同背景的用戶非常友好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 靈活的多通道存取，支持 CLI、Telegram 和 Web。
-> - 強大的記憶管理功能，能夠自動提取和整理資訊。
-> - 社群技能擴展，能夠快速增加功能。
+> - 靈魂驅動設計提供高度的個性化和用戶控制。
+> - 權限加固功能提高了安全性，減少了誤操作的風險。
+> - 支持多通道訪問，方便用戶隨時隨地使用。
 
 > [!danger] 缺點
-> - 需要一定的技術背景來配置和使用。
-> - 社群技能的質量參差不齊，需自行評估。
-> - 在某些環境下可能會遇到中文輸入的問題。
+> - 社群貢獻的技能可能存在安全風險，需謹慎使用。
+> - 對於某些語言的支持不夠完善，可能影響使用體驗。
+> - 需要 Node.js 環境，對於不熟悉的用戶可能增加學習成本。
 
 > [!warning] 注意事項
-> - 需要 Node.js 20 以上版本。
-> - 社群技能未經審核，使用前需自行檢查。
-> - 在某些環境下，CLI 可能無法正常處理中文輸入。
+> - 需要 Node.js ≥ 20 進行構建。
+> - 社群貢獻的技能未經審核，使用前需仔細檢查。
+> - 目前對於 CJK 輸入的支持存在問題，可能影響使用體驗。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 助手功能，但缺乏 Mercury 的權限管理和記憶功能。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於簡單的任務自動化，但不具備 Mercury 的多通道存取和社群技能擴展。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | 主要用於 GPT-2 的 API 接入，缺乏 Mercury 的個性化和持續運行能力。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供更為簡單的 AI 助手功能，但缺乏 Mercury 的權限管理和個性化設計。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於自動化任務，但不具備 Mercury 的多通道訪問和持續運行特性。 |
+| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | 提供類似的 AI 助手功能，但在安全性和權限管理上不如 Mercury 完善。 |
 
 ## 替代方案決策
 
@@ -214,16 +212,16 @@ Mercury Agent 的核心技術機制是基於 TypeScript 的模組化架構，並
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 助手功能，但缺乏 Mercury 的權限管理和記憶功能。 | 如果需要一個簡單的 AI 助手，且不需要複雜的權限控制，則可以選擇此工具。 | medium，因為需要重新配置許多功能。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於簡單的任務自動化，但不具備 Mercury 的多通道存取和社群技能擴展。 | 如果主要需求是任務自動化，且不需要 AI 助手的交互能力，則可以考慮此工具。 | low，因為功能較為單一，遷移成本低。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體用量少 10 倍，但功能相對簡單。 | 如果你的團隊需要高效能且資源有限的 AI 助手，這是更好的選擇。 | medium，因為需要重新學習新的 API 和功能。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於任務自動化，但不具備 Mercury 的多通道訪問和持續運行特性。 | 如果你的需求主要集中在自動化任務，而非持續的對話交互，這是一個不錯的選擇。 | low，因為功能相似，轉移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **mercury-agent** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供類似的 AI 助手功能，但缺乏 Mercury 的權限管理和記憶功能。 | 專注於簡單的任務自動化，但不具備 Mercury 的多通道存取和社群技能擴展。 |
-> | 遷移成本 | - | medium，因為需要重新配置許多功能。 | low，因為功能較為單一，遷移成本低。 |
-> | 適用場景 | 主要場景 | 如果需要一個簡單的 AI 助手，且不需要複雜的權限控制，則可 | 如果主要需求是任務自動化，且不需要 AI 助手的交互能力，則 |
+> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量少 10 倍，但功能相對簡單。 | 專注於任務自動化，但不具備 Mercury 的多通道訪問和持續運行特性。 |
+> | 遷移成本 | - | medium，因為需要重新學習新的 API 和功能。 | low，因為功能相似，轉移成本較低。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要高效能且資源有限的 AI 助手，這是更好的選 | 如果你的需求主要集中在自動化任務，而非持續的對話交互，這是一 |
 
 ## 成熟度評估
 
@@ -234,24 +232,26 @@ Mercury Agent 的核心技術機制是基於 TypeScript 的模組化架構，並
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人試用和小型專案，但不建議在生產環境的核心路徑上使用。
+> 適合個人或小團隊的試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Windows 環境下，安裝過程可能會因為 GitHub 步驟而崩潰
-  - 解法：嘗試使用 WSL 或在其他環境中安裝。
-- [MEDIUM] 社群技能的質量參差不齊，可能導致不穩定的行為
-  - 解法：在安裝前查看技能的評價和使用情況。
+- **[HIGH]** 在 Windows 環境下安裝時可能會出現安靜崩潰的情況
+  - 解法：嘗試使用 WSL 或在安裝前檢查 Node 版本
+- [MEDIUM] 社群技能可能存在安全風險
+  - 解法：在安裝前查看技能的詳細信息，並謹慎選擇
+- [MEDIUM] CJK 輸入在 CLI 模式下不支持
+  - 解法：使用 Telegram 或 Web 介面進行輸入
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 具備靈活的多通道存取和安全性設計，適合小型團隊使用。 |
-| 大型企業的任務自動化系統 | 普通 | 雖然具備強大的功能，但可能過於複雜，不符合大型企業的需求。 |
-| 需要高安全性的個人專案 | 非常適合 | 權限強化設計能夠有效保護敏感資訊。 |
+| 小型團隊的日常任務管理 | 非常適合 | 其 Kanban 板和多通道訪問功能能夠提高團隊的協作效率。 |
+| 個人開發者的 AI 助手 | 非常適合 | 靈魂驅動設計讓助手能夠記住用戶的偏好和需求。 |
+| 大型企業的自動化客戶支持 | 普通 | 雖然具備多通道訪問，但可能需要更多的企業級功能。 |
 
 ## 採用成本分析
 
@@ -263,12 +263,12 @@ Mercury Agent 的核心技術機制是基於 TypeScript 的模組化架構，並
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習、3 小時整合，得到高安全性和靈活性的 AI 助手，值得投入。
+> 花 5 小時學習、3 小時整合，得到一個靈活且安全的 AI 助手，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：Mercury Agent 不需要高權限操作，且不會存取敏感資料。依賴鏈的信任程度高，沒有已知的供應鏈風險。
+> 低風險：Mercury 本身不需要高權限運行，且不會存取敏感資料。依賴鏈的信任程度高，沒有已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -333,7 +333,7 @@ Mercury Agent 的核心技術機制是基於 TypeScript 的模組化架構，並
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 250 |
+| Forks | 252 |
 | Open Issues | 36 |
 | Issue 解決率 | 8% (3 closed) |
 | 最後推送 | 2026-05-25 |
@@ -382,7 +382,7 @@ Mercury Agent 的核心技術機制是基於 TypeScript 的模組化架構，並
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和回應問題。
+**社群活躍度**：社群活躍，開發者定期更新和回應問題。
 **連結**：[文件](https://mercuryagent.sh/docs)
 
 ## 開發動態
@@ -614,9 +614,9 @@ Mercury Agent 的核心技術機制是基於 TypeScript 的模組化架構，並
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[AI 助手]] · [[記憶管理]]
+相關概念：[[自動化]] · [[AI 助手]] · [[權限管理]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[VoltAgent--awesome-claude-design|VoltAgent/awesome-claude-design]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[432539--gpt2api|432539/gpt2api]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[VoltAgent--awesome-claude-design|VoltAgent/awesome-claude-design]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]]
 
 [GitHub](https://github.com/cosmicstack-labs/mercury-agent) · [官方網站](https://mercuryagent.sh/)
 
@@ -658,7 +658,7 @@ Mercury Agent 的核心技術機制是基於 TypeScript 的模組化架構，並
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","AI 助手","記憶管理"];
+> const concepts = ["自動化","AI 助手","權限管理"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "cosmicstack-labs--mercury-agent" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
