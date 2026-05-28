@@ -7,12 +7,12 @@ language: JavaScript
 license: N/A
 description: "微信账单分析工具 - 基于Electron的可视化账单分析应用"
 homepage: ""
-stars: 802
-stars_per_day: 160
-forks: 67
-open_issues: 0
+stars: 1057
+stars_per_day: 176
+forks: 89
+open_issues: 1
 created: 2026-05-21
-pushed_at: 2026-05-21
+pushed_at: 2026-05-27
 first_seen: 2026-05-26
 week: "2026-W22"
 month: "2026-05"
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-26
 use_case: "一個基於 Electron 的微信帳單可視化分析工具，幫助用戶深入了解個人財務狀況。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-06-03"
+appearances: 3
+next_review: "2026-06-04"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-26"
-star_history: "2026-05-26:536,2026-05-27:802"
+star_history: "2026-05-26:536,2026-05-27:802,2026-05-28:1057"
 tags:
   - github
   - "category/開發工具"
@@ -940,5 +940,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-28|2026-05-28]] — 再次上榜，1.1k stars
 - [[2026-05-27|2026-05-27]] — 再次上榜，802 stars
 - [[2026-05-26|2026-05-26]] — 首次收錄，536 stars

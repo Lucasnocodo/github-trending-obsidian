@@ -1919,17 +1919,17 @@
   },
   "open-gsd/get-shit-done-redux": {
     "first_seen": "2026-05-25",
-    "last_seen": "2026-05-27",
-    "times_seen": 3,
+    "last_seen": "2026-05-28",
+    "times_seen": 4,
     "stars_first": 566,
-    "stars_last": 1102
+    "stars_last": 1344
   },
   "Tong89/smartNode": {
     "first_seen": "2026-05-25",
-    "last_seen": "2026-05-27",
-    "times_seen": 3,
+    "last_seen": "2026-05-28",
+    "times_seen": 4,
     "stars_first": 510,
-    "stars_last": 1128
+    "stars_last": 1581
   },
   "basketikun/infinite-canvas": {
     "first_seen": "2026-05-25",
@@ -1940,31 +1940,31 @@
   },
   "0xSero/codex-shim": {
     "first_seen": "2026-05-26",
-    "last_seen": "2026-05-27",
-    "times_seen": 2,
+    "last_seen": "2026-05-28",
+    "times_seen": 3,
     "stars_first": 593,
-    "stars_last": 635
+    "stars_last": 659
   },
   "run-liyi/wechatpay": {
     "first_seen": "2026-05-26",
-    "last_seen": "2026-05-27",
-    "times_seen": 2,
+    "last_seen": "2026-05-28",
+    "times_seen": 3,
     "stars_first": 536,
-    "stars_last": 802
+    "stars_last": 1057
   },
   "MoonshotAI/kimi-code": {
     "first_seen": "2026-05-26",
-    "last_seen": "2026-05-27",
-    "times_seen": 2,
+    "last_seen": "2026-05-28",
+    "times_seen": 3,
     "stars_first": 500,
-    "stars_last": 724
+    "stars_last": 889
   },
   "zhaoyue4810/pianke": {
     "first_seen": "2026-05-26",
-    "last_seen": "2026-05-27",
-    "times_seen": 2,
+    "last_seen": "2026-05-28",
+    "times_seen": 3,
     "stars_first": 400,
-    "stars_last": 438
+    "stars_last": 502
   },
   "KNG7-P/Se7en-Pro": {
     "first_seen": "2026-05-27",
@@ -1972,5 +1972,33 @@
     "times_seen": 1,
     "stars_first": 378,
     "stars_last": 378
+  },
+  "study8677/awesome-architecture": {
+    "first_seen": "2026-05-28",
+    "last_seen": "2026-05-28",
+    "times_seen": 1,
+    "stars_first": 569,
+    "stars_last": 569
+  },
+  "XingYu-Zhong/DeepSeek-GUI": {
+    "first_seen": "2026-05-28",
+    "last_seen": "2026-05-28",
+    "times_seen": 1,
+    "stars_first": 421,
+    "stars_last": 421
+  },
+  "nv-tlabs/PiD": {
+    "first_seen": "2026-05-28",
+    "last_seen": "2026-05-28",
+    "times_seen": 1,
+    "stars_first": 371,
+    "stars_last": 371
+  },
+  "UditAkhourii/adhd": {
+    "first_seen": "2026-05-28",
+    "last_seen": "2026-05-28",
+    "times_seen": 1,
+    "stars_first": 354,
+    "stars_last": 354
   }
 }
