@@ -7,8 +7,8 @@ language: TypeScript
 license: MIT
 description: "ADHD — a skill for coding agents. Tree-of-thought with pruning, built on the Claude Agent SDK. Fans out parallel divergent thoughts under different cognitive frames, scores, prunes traps, deepens the survivors. The no-brainer skill for creative and interdisciplinary work."
 homepage: "https://uditakhourii.github.io/adhd/"
-stars: 354
-stars_per_day: 177
+stars: 357
+stars_per_day: 179
 forks: 16
 open_issues: 15
 created: 2026-05-25
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-28
-use_case: "提供一種創新的思維技能，幫助編碼代理進行多元思考與創意發想。"
+use_case: "提供一種創意發想的技能，幫助編碼代理進行多元思考與選擇。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-28"
-star_history: "2026-05-28:354"
+star_history: "2026-05-28:354,2026-05-28:357"
 tags:
   - github
   - "category/ai_ml"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "adhd"
   - "UditAkhourii/adhd"
-  - "提供一種創新的思維技能，幫助編碼代理進行多元思考與創意發想。"
+  - "提供一種創意發想的技能，幫助編碼代理進行多元思考與選擇。"
 ---
 
 # adhd
 
-**354** stars · **177** stars/天 · 建立 2 天前 · TypeScript · MIT
+**357** stars · **179** stars/天 · 建立 2 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/UditAkhourii--adhd");
@@ -79,13 +79,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `adhd` `agents` `ai` `ai-agents` `brainstorm` `chain-of-thought` `claude` `claude-agent-sdk` `creativity` `divergent-thinking` `ideation` `interdisciplinary` `llm` `llm-tools` `nodejs` `prompt-engineering` `tree-of-thought` `typescript`
 
 > [!summary] 一句話摘要
-> 提供一種創新的思維技能，幫助編碼代理進行多元思考與創意發想。
+> 提供一種創意發想的技能，幫助編碼代理進行多元思考與選擇。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (177 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (179 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要在創意發想過程中避免早期收斂的開發者和設計師。
-> **一句話重點** ADHD 的創新在於它能夠透過多元思考和後期評估，顯著提升創意生成的質量。
+> **適合** 需要在創意和跨領域工作中尋求多樣化解決方案的開發者和產品經理。
+> **一句話重點** ADHD 不僅是創意生成工具，更是一種全新的思考架構，能夠有效避免過早收斂。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,105 +108,103 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，3 小時整合，得到高效的創意生成工具，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，3 小時整合，得到多元的創意解決方案，值得嘗試。
 
 > [!abstract] 核心創新
-> ADHD 將多個獨立的推理過程結合在一起，並在後期進行評估，從而避免了傳統生成模型的早期收斂問題。
+> ADHD 提供了一種全新的思考架構，通過多元思考和評分機制來避免過早收斂。
 
 ## 專案簡介
 
-ADHD 是一個用於編碼代理的技能，專注於創造性和跨學科的工作。它透過生成多個獨立的思考過程，避免了傳統自回歸推理中常見的早期收斂問題。使用者可以透過 CLI 指令 `adhd '設計一個生存領導選舉的速率限制器'`，啟動這個技能，讓系統在不同的認知框架下生成多個想法，然後再進行評分、聚類和修剪，最終選出最佳想法。這種設計不僅提高了創意的多樣性，還能有效避免因為共享上下文而導致的思維限制。ADHD 使用了 Claude Agent SDK，並且支持 Node.js 和 TypeScript，讓開發者能夠輕鬆整合到現有的應用中。
+ADHD 是一個為編碼代理設計的技能，旨在解決自回歸推理中的過早收斂問題。它通過生成多個獨立的推理過程，並在不同的認知框架下進行思考，來擴展創意的範疇。使用者可以通過 CLI 指令 `adhd 'your problem here'` 來啟動這個技能，並獲得多樣化的解決方案。ADHD 的核心機制是將問題分解成多個獨立的思考過程，這樣每個過程都不會受到其他過程的影響，從而避免了傳統思考模式中的「錨定效應」。
 
-這個工具的獨特之處在於它的雙階段流程：第一階段是多元思考，第二階段是專注評估，這樣的設計能夠促進更具創造性的解決方案。與其他工具相比，ADHD 的多框架思考方式能夠更好地應對複雜問題，特別是在需要跨領域知識的情境下。使用者可以根據具體需求調整參數，如 `framesPerRun` 和 `ideasPerFrame`，以獲得最佳的創意結果。這使得 ADHD 成為一個靈活且強大的創意工具，適合於設計決策、模糊調試等多種場景。
+在技術實作上，ADHD 使用了 Claude Agent SDK，並依賴 TypeScript 和 Node.js，這使得它能夠在多種代理環境中運行。與其他工具相比，如 0xGF/boneyard 和 0x0funky/agent-sprite-forge，ADHD 提供了更高的創意多樣性，因為它不僅僅依賴於單一的生成模型，而是通過多個獨立的思考過程來生成想法。使用者在實際操作中可能會遇到的問題包括如何選擇合適的認知框架，以及如何有效地整合生成的想法。這個專案目前處於 beta 階段，建議在小型團隊或個人專案中試用，未來可能會進一步擴展其功能和穩定性。
 
-**技術棧**：`@anthropic-ai/claude-agent-sdk` · `TypeScript 5.6.0` · `Node.js >=18`
+**技術棧**：`TypeScript` · `Node.js`
 
 ## 重點功能
 
-- 多元思考 — 在不同的認知框架下生成多個獨立的思考過程，避免共享上下文的限制。
-- 雙階段流程 — 第一階段進行多元思考，第二階段專注評估，提升創意質量。
-- 靈活的參數設置 — 使用者可以調整 `framesPerRun` 和 `ideasPerFrame` 來獲得最佳結果。
-- CLI 和庫支持 — 可作為 CLI 工具或 Node.js/TypeScript 庫使用，方便整合到現有應用中。
-- 聚類和修剪 — 對生成的想法進行評分、聚類和修剪，幫助使用者選出最佳方案。
+- 多元思考 — 生成多個獨立的推理過程，避免錨定效應。
+- CLI 支持 — 使用 `adhd 'your problem here'` 指令輕鬆啟動。
+- 框架選擇 — 提供多種認知框架供使用者選擇，提升創意多樣性。
+- 評分與修剪 — 對生成的想法進行評分和修剪，確保質量。
+- 結構化輸出 — 提供清晰的結構化結果，便於後續處理和整合。
 
 ## 快速開始
 
-1. 全域安裝 ADHD 工具
+1. 安裝 ADHD CLI
 ```bash
 npm install -g adhd-agent
 ```
 2. 使用 CLI 生成想法
 ```bash
-adhd '設計一個生存領導選舉的速率限制器'
+adhd '設計一個能夠承受領導者選舉的速率限制器'
 ```
-3. 在程式中使用 ADHD 庫
+3. 在程式碼中使用 ADHD 庫
 ```bash
-npm install adhd-agent
+import { run } from 'adhd-agent'; const result = await run({ problem: '...' });
 ```
 
 ## 程式碼範例
 
 ```ts
 {
-  "前置條件": "已安裝 adhd-agent 庫",
-  "指令": "import { run } from 'adhd-agent'; const result = await run({ problem: '如何在突發負載下分片這個隊列？', framesPerRun: 6, ideasPerFrame: 8, topK: 3 });",
-  "預期輸出": "result 將包含聚類、評分的想法，以及可能的陷阱和深度化的草圖。"
+  "前置條件": "安裝了 adhd-agent 庫",
+  "程式碼": "import { run } from 'adhd-agent'; const result = await run({ problem: '如何在高峰負載下分片這個隊列？', framesPerRun: 6, ideasPerFrame: 8, topK: 3 });",
+  "預期輸出": "result 將包含多個生成的想法和評分。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天內累積 354 stars（177/天），forks 16（4.5%），顯示出強勁的增長潛力。作者 Udit Akhouri 之前在 AI 代理領域有過多項研究，這個專案解決了傳統推理模型在創意生成過程中的收斂問題，讓使用者能夠在多元思維中找到最佳解決方案。近期的推廣活動和社群討論也使得這個專案受到關注，特別是在創意和跨學科合作的需求上。高達 4.5% 的 forks/stars 比率顯示出使用者對這個工具的實際修改和應用意願。
+> 建立 2 天內累積 357 stars（179/天），forks 16（4.5%），顯示出相對穩定的興趣增長。作者 Udit Akhouri 之前在 AI 代理領域有過多次貢獻，這次專案解決了創意發想過程中常見的過早收斂問題，這在現有工具中並未有良好的解決方案。近期的推廣和討論可能也促進了這個專案的曝光率。由於 forks/stars 比率為 4.5%，顯示出使用者對這個專案的實際修改和應用有一定的興趣。
 
 ## 適合誰使用
 
-**目標受眾**：需要在創意發想過程中避免早期收斂的開發者和設計師。
+**目標受眾**：需要在創意和跨領域工作中尋求多樣化解決方案的開發者和產品經理。
 
 > [!example] 使用場景
-> - 產品經理用它來設計一個新的 API 接口，因為它能提供多元的設計思路，避免陷入熟悉的解決方案。
-> - 軟體開發者用它來進行模糊調試，因為它能生成多個可能的解決方案，幫助快速找到問題根源。
-> - 設計師用它來進行創意發想，因為它的多框架思考能夠激發出意想不到的設計靈感。
+> - 產品經理用它來設計一個新的 API，因為它能提供多種創意解決方案，避免傳統思考的局限。
+> - 開發者用它來進行模組重構，因為 ADHD 能夠生成多元的設計選項，幫助他們找到最佳解決方案。
+> - 創意工作者用它來進行頭腦風暴，因為它能夠在不同的認知框架下產生多樣化的想法，激發靈感。
 
 ## 架構分析
 
-ADHD 的架構設計為雙階段流程，第一階段是多元思考，第二階段是專注評估。這種設計避免了思考過程中的相互影響，讓每個分支都能獨立生成想法。資料流中，每個分支都使用不同的認知框架進行生成，然後在第二階段進行評分和聚類。
-
-這樣的設計使得 ADHD 能夠在創意生成中提供更高的多樣性和質量。選擇這種架構的代價在於需要更多的計算資源來處理多個並行的推理過程，但這也使得最終的結果更加豐富和有深度。擴展性方面，這種架構能夠輕鬆應對不同規模的問題，適合於各種創意和設計需求。
+ADHD 的架構設計分為兩個主要階段：第一階段是多元思考，通過選擇多個認知框架來生成獨立的推理過程，這樣每個過程都不會受到其他過程的影響，避免了傳統思考中的錨定效應。第二階段是評分與修剪，通過對生成的想法進行評分、聚類和深化，最終輸出結構化的結果。這種設計使得 ADHD 能夠在創意工作中提供更高的靈活性和多樣性，但也需要更多的計算資源來處理多個並行的推理過程。整體架構的擴展性良好，但在高併發情況下可能會面臨性能瓶頸。
 
 ## 技術深入分析
 
-ADHD 的核心技術機制在於它的雙階段推理流程，第一階段進行多元思考，第二階段則是評估和聚類。這種設計使得每個思考過程都能獨立運行，避免了相互影響的問題。效能上，ADHD 能夠處理複雜的創意生成任務，並且在多個並行推理過程中保持高效。選擇 TypeScript 和 Node.js 作為技術棧，能夠提供良好的開發體驗和高效的執行性能。這樣的選擇帶來了良好的可維護性和擴展性，但也需要注意對計算資源的需求。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在處理大量並行請求時。整合方面，ADHD 與現有的 AI 代理生態系統相容性良好，能夠輕鬆整合到各種應用中，並且支持多種 CI/CD 流程。
+ADHD 的核心技術機制是通過多元思考來生成創意，這是通過選擇多個認知框架來實現的。在第一階段，ADHD 生成多個獨立的推理過程，每個過程都在不同的認知框架下進行，這樣可以避免傳統思考中的錨定效應。第二階段則是評分與修剪，通過對生成的想法進行評分、聚類和深化，最終輸出結構化的結果。這種設計使得 ADHD 在創意工作中提供更高的靈活性和多樣性，但也需要更多的計算資源來處理多個並行的推理過程。從技術風險評估來看，ADHD 可能在高併發情況下面臨性能瓶頸，這需要在實際應用中進行測試和優化。整合到現有的開發流程中相對容易，因為它支持 CLI 和 Node.js 庫，並且可以與多種代理環境兼容。整體來說，ADHD 是一個具有潛力的創意生成工具，值得在小型團隊和個人專案中試用。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝和使用指導，並包含了多個範例。安裝過程相對順暢，但需要注意 Node.js 的版本要求。整體上，對於新手來說，能夠在 30 分鐘內完成基本的設置和使用。
+> README 文件清晰且提供了多個範例，安裝過程相對順暢，但需要設置環境變數。提供了良好的快速入門指南，文件目前僅有英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠生成多元化的創意解決方案，特別適合複雜問題。
-> - 避免了傳統生成模型的早期收斂問題，提升了創意質量。
-> - 靈活的參數設置，能夠根據需求調整生成過程。
+> - 能夠生成多元的創意解決方案，避免傳統思考的局限。
+> - 結構化的輸出便於後續處理和整合。
+> - 支持多種認知框架，提升創意的多樣性。
 
 > [!danger] 缺點
-> - 對於簡單問題，可能會產生過度複雜的解決方案。
-> - 需要一定的計算資源來支持多個並行推理過程。
-> - 目前的社群和文檔仍在發展中，可能會遇到一些使用上的挑戰。
+> - 需要設置環境變數進行身份驗證，增加了使用的複雜性。
+> - 在高併發情況下可能會遇到性能瓶頸。
+> - 目前仍在 beta 階段，可能存在不穩定性。
 
 > [!warning] 注意事項
-> - 僅支援 Node.js 18 以上版本。
-> - 需要有效的 ANTHROPIC_API_KEY 環境變數。
-> - 對於非常簡單的問題，可能會產生過度複雜的解決方案。
+> - 目前僅支援 Node.js 18 以上版本。
+> - 需要設置 ANTHROPIC_API_KEY 環境變數以進行身份驗證。
+> - 在高併發情況下可能會遇到性能瓶頸。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建和管理代理，而 ADHD 更專注於創意生成和思考過程的多樣性。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了不同的思考框架，但 ADHD 的多元思考和修剪機制更為先進。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的創意生成，但主要依賴於單一的生成模型，缺乏 ADHD 的多元思考能力。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建代理，但不具備 ADHD 的多重認知框架和評分機制。 |
 
 ## 替代方案決策
 
@@ -214,47 +212,47 @@ ADHD 的核心技術機制在於它的雙階段推理流程，第一階段進行
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建和管理代理，並不專注於創意生成的多樣性。 | 如果你的需求主要是管理代理而非創意生成，則可以選擇這個工具。 | low，因為兩者的使用場景有明顯區別。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供不同的思考框架，但不具備 ADHD 的多元思考和修剪機制。 | 如果需要一個簡單的框架來進行思考，但不需要複雜的生成和評估過程，則可以考慮這個工具。 | medium，因為需要調整思考流程以適應不同的框架。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要依賴於單一的生成模型，缺乏 ADHD 的多元思考能力。 | 如果你的團隊需要一個簡單的生成工具，而不需要多元的思考過程。 | low，因為接口相對簡單，容易上手。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建代理，但不具備 ADHD 的多重認知框架和評分機制。 | 如果你的專案需要針對特定任務的代理生成，而不需要廣泛的創意生成。 | medium，因為需要調整現有的代理架構以適應新的工具。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **adhd** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **adhd** | **boneyard** | **agent-sprite-forge** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於創建和管理代理，並不專注於創意生成的多樣性。 | 提供不同的思考框架，但不具備 ADHD 的多元思考和修剪機制。 |
-> | 遷移成本 | - | low，因為兩者的使用場景有明顯區別。 | medium，因為需要調整思考流程以適應不同的框架。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是管理代理而非創意生成，則可以選擇這個工具。 | 如果需要一個簡單的框架來進行思考，但不需要複雜的生成和評估過 |
+> | 技術路線 | 本專案 | 主要依賴於單一的生成模型，缺乏 ADHD 的多元思考能力。 | 專注於創建代理，但不具備 ADHD 的多重認知框架和評分機制。 |
+> | 遷移成本 | - | low，因為接口相對簡單，容易上手。 | medium，因為需要調整現有的代理架構以適應新的工具。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要一個簡單的生成工具，而不需要多元的思考過程。 | 如果你的專案需要針對特定任務的代理生成，而不需要廣泛的創意生 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人試用和探索，但不建議在生產環境中使用。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高並發情況下可能出現性能瓶頸，導致反應變慢
-  - 解法：考慮限制同時請求的數量或優化生成過程
-- [MEDIUM] 對於簡單問題，生成的解決方案可能過於複雜
-  - 解法：在使用時適當調整參數以簡化生成過程
-- [MEDIUM] 目前的文檔和社群支持仍在發展中，可能會遇到使用上的挑戰
-  - 解法：參考官方文檔並積極參與社群討論以獲得幫助
+- **[HIGH]** 在高併發情況下可能會遇到性能瓶頸
+  - 解法：減少同時運行的請求數量
+- [MEDIUM] 需要設置 ANTHROPIC_API_KEY 環境變數
+  - 解法：確保環境變數正確配置
+- [MEDIUM] 可能存在不穩定性，因為仍在 beta 階段
+  - 解法：在非關鍵專案中進行測試
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 大型跨學科團隊的創意發想會議 | 非常適合 | 能夠生成多元化的創意解決方案，特別適合複雜問題。 |
-| 小型專案的簡單問題解決 | 不適合 | 對於簡單問題，可能會產生過度複雜的解決方案。 |
-| 需要快速迭代的設計決策 | 適合 | 能夠在短時間內生成多個設計方案，幫助快速決策。 |
-| 個人開發者的創意探索 | 非常適合 | 提供靈活的參數設置，能夠根據需求調整生成過程。 |
+| 小型創業團隊進行產品設計 | 非常適合 | ADHD 能夠提供多元的創意解決方案，幫助團隊突破思考限制。 |
+| 大型企業的核心產品開發 | 不適合 | 目前仍在 beta 階段，可能存在不穩定性。 |
+| 個人開發者進行創意頭腦風暴 | 非常適合 | ADHD 能夠激發多樣化的想法，適合個人使用。 |
+| 學術研究團隊進行跨領域合作 | 適合 | ADHD 的多元框架能夠促進不同領域的思考。 |
 
 ## 採用成本分析
 
@@ -263,15 +261,15 @@ ADHD 的核心技術機制在於它的雙階段推理流程，第一階段進行
 | 學習時間 | ~2 小時 |
 | 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，3 小時整合，得到高效的創意生成工具，值得一試。
+> 花 2 小時學習，3 小時整合，得到多元的創意解決方案，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，且不存取敏感資料。依賴的庫和工具都來自於知名的開源社群，信任度高。
+> 低風險：不需要高權限，僅存取環境變數，依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -365,7 +363,7 @@ ADHD 的核心技術機制在於它的雙階段推理流程，第一階段進行
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，持續有新功能和修正更新。
+**社群活躍度**：社群活躍度中等，開放問題尚有 15 個未解決。
 **連結**：[文件](https://uditakhourii.github.io/adhd/)
 
 ## 開發動態
@@ -603,9 +601,9 @@ ADHD 的核心技術機制在於它的雙階段推理流程，第一階段進行
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[創造性思維]] · [[自動化思考]]
+相關概念：[[多模態]] · [[創造力]] · [[思維導圖]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]] · [[MemPalace--mempalace|MemPalace/mempalace]]
 
 [GitHub](https://github.com/UditAkhourii/adhd) · [官方網站](https://uditakhourii.github.io/adhd/)
 
@@ -647,7 +645,7 @@ ADHD 的核心技術機制在於它的雙階段推理流程，第一階段進行
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["多模態","創造性思維","自動化思考"];
+> const concepts = ["多模態","創造力","思維導圖"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "UditAkhourii--adhd" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

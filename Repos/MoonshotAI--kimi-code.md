@@ -10,7 +10,7 @@ homepage: "https://moonshotai.github.io/kimi-code/"
 stars: 889
 stars_per_day: 178
 forks: 74
-open_issues: 32
+open_issues: 33
 created: 2026-05-22
 pushed_at: 2026-05-27
 first_seen: 2026-05-26
@@ -18,7 +18,7 @@ week: "2026-W22"
 month: "2026-05"
 category: "開發工具"
 subcategory: "CLI 工具"
-release_tag: "@moonshot-ai/kimi-code@0.3.0"
+release_tag: "@moonshot-ai/kimi-code@0.4.0"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-26
-use_case: "提供一個終端機的 AI 編碼代理，能夠讀取和編輯程式碼、執行指令等。"
+use_case: "提供一個在終端運行的 AI 編碼代理，能夠讀取和編輯代碼、執行命令和搜尋文件。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 3
 next_review: "2026-06-04"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 36
-repo_size_kb: 6271
+issue_close_rate: 34
+repo_size_kb: 6136
 readme_length: 3517
 bus_factor: 2
 last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-26"
-star_history: "2026-05-26:500,2026-05-26:511,2026-05-27:724,2026-05-27:729,2026-05-28:889"
+star_history: "2026-05-26:500,2026-05-26:511,2026-05-27:724,2026-05-27:729,2026-05-28:889,2026-05-28:889"
 tags:
   - github
   - "category/開發工具"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "kimi-code"
   - "MoonshotAI/kimi-code"
-  - "提供一個終端機的 AI 編碼代理，能夠讀取和編輯程式碼、執行指令等。"
+  - "提供一個在終端運行的 AI 編碼代理，能夠讀取和編輯代碼、執行命令和搜尋文件。"
 ---
 
 # kimi-code
 
-**729** stars · **182** stars/天 · 建立 4 天前 · TypeScript · MIT
+**889** stars · **178** stars/天 · 建立 5 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/MoonshotAI--kimi-code");
@@ -70,16 +70,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`ORG` `@moonshot-ai/kimi-code@0.3.0` `easy-install`
+`ORG` `@moonshot-ai/kimi-code@0.4.0` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供一個終端機的 AI 編碼代理，能夠讀取和編輯程式碼、執行指令等。
+> 提供一個在終端運行的 AI 編碼代理，能夠讀取和編輯代碼、執行命令和搜尋文件。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (182 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (178 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要在終端機中進行編碼和自動化的開發者，尤其是對 AI 助手有需求的工程師。
-> **一句話重點** Kimi Code CLI 的設計專注於終端機環境，提供即時反饋和簡化的安裝流程，適合需要高效開發的用戶。
+> **適合** 希望在終端中使用 AI 助手進行編碼的開發者，尤其是對於不想處理 Node.js 環境的使用者。
+> **一句話重點** Kimi Code CLI 的設計讓終端編碼變得更高效，特別是對於希望簡化安裝流程的開發者。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -103,26 +103,24 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習、1 小時整合，得到即時反饋的 AI 編碼助手，值得一試。
+> **結論** 花 2 小時學習，1 小時整合，得到高效的編碼工具，值得嘗試。
 
 > [!abstract] 核心創新
-> Kimi Code CLI 提供即時反饋的 AI 編碼助手，專為終端機環境設計。
+> Kimi Code CLI 是一款專為終端設計的 AI 編碼代理，能夠即時反饋並支持視頻輸入。
 
 ## 專案簡介
 
-Kimi Code CLI 是一個 AI 編碼代理，設計用於終端機環境，能夠讀取和編輯程式碼、執行 shell 指令、搜尋檔案及根據反饋選擇下一步行動。用戶只需透過簡單的指令 `kimi` 啟動，並在首次啟動時使用 `/login` 登入，便可開始與代理互動。這個工具的賣點在於其單一二進位分發，無需 Node.js 環境，並且啟動速度極快，幾乎是即時的。技術上，它使用 TypeScript 和多種現代開發工具，如 pnpm 和 vitest，確保開發過程的高效與可靠。與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，Kimi Code CLI 提供了更快的啟動時間和專注的 TUI 界面，適合長時間的代理會話。
+Kimi Code CLI 是一款在終端中運行的 AI 編碼代理，能夠讀取和編輯代碼、執行 shell 命令、搜尋文件，並根據反饋選擇下一步行動。用戶只需執行 `kimi` 指令即可啟動，並在首次啟動時透過 `/login` 指令進行身份驗證。這個工具的設計重點在於快速啟動和專為長時間會話優化的用戶介面，讓使用者能夠專注於編碼任務。它支持視頻輸入，能夠處理用戶上傳的屏幕錄影，並提供了多個子代理以便於並行處理不同任務。這些設計使得 Kimi Code CLI 在處理複雜的編碼任務時，能夠保持高效和靈活。其核心賣點在於單一二進制分發，無需 Node.js 環境設置，這對於希望簡化安裝流程的開發者來說是個巨大的優勢。
 
-它的設計考量了用戶的工作流程，提供了視頻輸入功能，讓代理能夠理解難以用文字表達的內容。雖然目前還在開發中，但其社群活躍度尚可，解決率約 36%。對於需要在終端機中進行編碼和自動化的開發者來說，這是一個值得關注的工具。未來幾個月內，隨著功能的增強和社群的擴大，Kimi Code CLI 有潛力成為更為成熟的解決方案。
-
-**技術棧**：`TypeScript 6.0.2` · `pnpm 10.33.0` · `vitest 4.1.4`
+**技術棧**：`TypeScript 6.0.2` · `pnpm 10.33.0`
 
 ## 重點功能
 
-- 單一二進位分發 — 只需一條指令安裝，無需 Node.js 環境。
+- 單一二進制分發 — 只需一條命令安裝，無需 Node.js 環境設置。
 - 快速啟動 — TUI 在毫秒內準備就緒，無需等待。
-- 專為長時間會話設計的 TUI — 提供專注的界面，適合長時間使用。
-- 視頻輸入功能 — 支持將屏幕錄影或演示片段放入聊天中，讓代理理解難以描述的內容。
-- AI 原生 MCP 配置 — 透過 `/mcp-config` 命令輕鬆配置 Model Context Protocol 伺服器。
+- 專為長時間會話設計的 TUI — 提供專注的介面以支持長時間的編碼任務。
+- 視頻輸入支持 — 允許用戶上傳屏幕錄影，讓代理理解難以用語言描述的內容。
+- AI 原生 MCP 配置 — 透過 `/mcp-config` 指令輕鬆管理模型上下文協議伺服器。
 
 ## 快速開始
 
@@ -134,7 +132,7 @@ curl -fsSL https://code.kimi.com/kimi-code/install.sh | bash
 ```bash
 cd your-project && kimi
 ```
-3. 登入並開始互動
+3. 首次登錄
 ```bash
 /login
 ```
@@ -142,65 +140,66 @@ cd your-project && kimi
 ## 程式碼範例
 
 ```ts
-{
-  "前置條件": "已安裝 Kimi Code CLI",
-  "指令": "kimi",
-  "預期輸出": "啟動 Kimi Code CLI 的互動界面"
-}
+[
+  "# 前置條件：已安裝 Kimi Code CLI",
+  "kimi --version",
+  "# 預期輸出：顯示 Kimi Code CLI 的版本號"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 729 stars（182/天），forks 50（6.9%），顯示出強勁的增長潛力。開發者 MoonshotAI 的背景在於推動 AI 技術的應用，這個專案解決了終端機環境中缺乏高效 AI 編碼助手的痛點。之前的解決方案多數依賴於繁瑣的安裝過程或不夠靈活，Kimi Code CLI 透過簡化安裝和提供即時反饋的能力，吸引了開發者的注意。社群的活躍度和開放的問題討論也促進了其快速成長。
+> 建立 5 天內累積 889 stars（178/天），forks 74（8.3%），這顯示出強烈的社群興趣。作者 MoonshotAI 團隊擁有豐富的 AI 和編程背景，過去的專案也獲得了良好反響。Kimi Code 解決了傳統編碼工具在互動性和即時反饋上的不足，特別是在 AI 代理的應用場景中。社群對於其功能的需求和討論也在 GitHub Issues 中顯示出來，特別是對於記憶體支持和技能管理的需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要在終端機中進行編碼和自動化的開發者，尤其是對 AI 助手有需求的工程師。
+**目標受眾**：希望在終端中使用 AI 助手進行編碼的開發者，尤其是對於不想處理 Node.js 環境的使用者。
 
 > [!example] 使用場景
-> - 全端工程師用它來在終端機中快速編輯和執行代碼，因為它能夠即時反饋並簡化開發流程。
-> - DevOps 工程師用它來自動化日常任務，因為其支持 shell 指令和視頻輸入功能，能夠處理複雜的操作。
-> - 新手開發者用它來學習程式碼結構和命令行操作，因為它提供了即時的指導和反饋。
+> - 後端工程師用它來在終端中快速編輯和執行代碼，因為它能夠即時反饋和處理複雜的命令。
+> - 產品經理用它來快速查詢和解釋代碼庫的結構，因為它能夠理解並解釋代碼的主要目錄。
+> - DevOps 工程師用它來自動化日常任務，因為它支持生命周期鉤子，能在關鍵時刻執行本地命令。
 
 ## 架構分析
 
-Kimi Code CLI 採用單一二進位架構，這樣的設計使得安裝過程極為簡便，無需額外的 Node.js 環境。其內部架構使用 TypeScript 編寫，並依賴 pnpm 進行包管理，確保開發過程的高效。資料流方面，使用者透過 CLI 發出指令，代理則根據反饋進行即時處理，並能夠調用本地命令。
+Kimi Code CLI 採用單一二進制架構，這樣的設計使得安裝過程簡化，無需繁瑣的 Node.js 環境配置。其資料流從用戶輸入開始，經由內部的 AI 模型進行處理，並根據反饋生成輸出。這樣的設計使得使用者能夠快速啟動並進行編碼任務，而不必擔心環境問題。
 
-這種設計使得用戶能夠靈活地與代理互動，並在需要時進行本地操作。選擇 TypeScript 而非 JavaScript，能夠提供更好的型別檢查和開發體驗，但也增加了學習曲線。整體而言，這種架構適合需要快速部署和高效開發的環境，但在處理大型專案時可能會遇到性能瓶頸。
+選擇 TypeScript 作為開發語言，提供了靜態類型檢查的優勢，減少了潛在的錯誤。這種設計雖然降低了對環境的依賴，但在大型專案中可能會面臨性能瓶頸，特別是在處理大量文件時。整體來說，這種架構模式適合快速開發和部署，但在擴展性上可能需要進一步考量。
 
 ## 技術深入分析
 
-Kimi Code CLI 的核心技術機制在於其使用 TypeScript 來實現一個高效的終端機用戶介面，並透過 pnpm 管理依賴。這使得開發者能夠在不需要 Node.js 環境的情況下快速部署，並且啟動速度極快。該工具能夠處理多種指令，並根據用戶的反饋進行即時調整，這對於需要快速迭代的開發過程至關重要。設計上，選擇 TypeScript 而非 JavaScript 提供了更好的型別檢查，但也意味著開發者需要具備一定的 TypeScript 知識。對於大型專案，可能會出現性能瓶頸，特別是在處理大量檔案時。整合方面，Kimi Code CLI 能夠與現有的 CI/CD 流程無縫對接，並且支持多種命令行工具，這使得它在現有的開發環境中能夠輕鬆融入。整體而言，這個工具在提升開發效率的同時，也需要注意其在大型專案中的性能表現。
+Kimi Code CLI 的核心技術機制是基於 TypeScript 開發的 AI 編碼代理，利用內部的 AI 模型來理解和處理用戶的指令。其使用的 TUI 界面設計專為長時間會話而優化，確保用戶在編碼過程中不會感到繁瑣。效能方面，該工具在啟動時能夠在毫秒內準備就緒，這對於需要快速反饋的開發者來說是個重要優勢。選擇 TypeScript 作為開發語言，提供了靜態類型檢查的優勢，減少了潛在的錯誤。這種設計雖然降低了對環境的依賴，但在大型專案中可能會面臨性能瓶頸，特別是在處理大量文件時。整體來說，這種架構模式適合快速開發和部署，但在擴展性上可能需要進一步考量。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含安裝和使用範例，安裝過程順暢，無明顯坑點。提供了良好的入門指南，幫助用戶快速上手。文件目前僅有英文版本，缺乏多語言支持。
+> README 文件清晰，提供了詳細的安裝和使用指導。安裝過程順暢，沒有明顯的坑。提供了良好的入門指南，幫助新手快速上手。文件目前僅提供英文版本，缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 安裝簡單，無需 Node.js 環境，適合快速上手。
-> - 啟動速度快，能夠即時反饋用戶操作。
-> - 專為終端機設計的界面，提升使用體驗。
+> - 安裝流程簡單，無需 Node.js 環境設置。
+> - 快速啟動，適合長時間的編碼會話。
+> - 支持視頻輸入，增強了用戶互動性。
 
 > [!danger] 缺點
-> - 目前僅支援 macOS 和 Linux，Windows 用戶需另行處理。
-> - 對於大型專案的支持可能有限，性能可能下降。
-> - 社群支持尚在發展中，問題解決速度可能較慢。
+> - 目前僅支援 macOS 和 Linux，Windows 用戶需使用 PowerShell。
+> - 對於大型專案，性能可能會受到影響。
+> - 需要穩定的網路連接以進行 API 認證。
 
 > [!warning] 注意事項
 > - 目前僅支援 macOS 和 Linux，Windows 用戶需使用 PowerShell。
-> - 對於大型專案，可能會出現性能瓶頸，特別是在處理大量文件時。
-> - 社群支持尚在發展中，解決問題的速度可能不如成熟工具。
+> - 對於大型專案，可能會有性能瓶頸，特別是在處理大量文件時。
+> - 需要穩定的網路連接以進行 API 認證和模型交互。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 編碼助手功能，但安裝過程較為繁瑣，且啟動速度較慢。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 雖然也針對終端機環境，但缺乏 Kimi Code 的即時反饋和視頻輸入功能。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 代理功能，但更專注於圖形界面而非終端操作。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於代碼分析和重構，缺乏 Kimi Code 的即時反饋能力。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 提供 API 介面，但不具備 Kimi Code 的終端交互功能。 |
 
 ## 替代方案決策
 
@@ -208,16 +207,16 @@ Kimi Code CLI 的核心技術機制在於其使用 TypeScript 來實現一個高
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 編碼助手功能，但安裝過程較為繁瑣，且啟動速度較慢。 | 如果需要一個功能全面的 AI 編碼助手，但不介意較長的安裝過程。 | medium，因為需要重新配置環境和依賴。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 雖然也針對終端機環境，但缺乏 Kimi Code 的即時反饋和視頻輸入功能。 | 如果需要一個簡單的 CLI 工具，但不需要高級功能。 | low，因為其設計較為簡單，易於上手。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 代理功能，但更專注於圖形界面而非終端操作。 | 如果你需要一個更具視覺化的界面來進行編碼，這個工具會更適合。 | medium，因為需要重新適應新的界面和操作流程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於代碼分析和重構，缺乏 Kimi Code 的即時反饋能力。 | 如果你的主要需求是代碼的靜態分析，這個工具會更合適。 | low，因為功能相對單一，轉換成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **kimi-code** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供類似的 AI 編碼助手功能，但安裝過程較為繁瑣，且啟動速度較慢。 | 雖然也針對終端機環境，但缺乏 Kimi Code 的即時反饋和視頻輸入功能。 |
-> | 遷移成本 | - | medium，因為需要重新配置環境和依賴。 | low，因為其設計較為簡單，易於上手。 |
-> | 適用場景 | 主要場景 | 如果需要一個功能全面的 AI 編碼助手，但不介意較長的安裝過 | 如果需要一個簡單的 CLI 工具，但不需要高級功能。 |
+> | 技術路線 | 本專案 | 提供類似的 AI 代理功能，但更專注於圖形界面而非終端操作。 | 專注於代碼分析和重構，缺乏 Kimi Code 的即時反饋能力。 |
+> | 遷移成本 | - | medium，因為需要重新適應新的界面和操作流程。 | low，因為功能相對單一，轉換成本較低。 |
+> | 適用場景 | 主要場景 | 如果你需要一個更具視覺化的界面來進行編碼，這個工具會更適合。 | 如果你的主要需求是代碼的靜態分析，這個工具會更合適。 |
 
 ## 成熟度評估
 
@@ -234,21 +233,18 @@ Kimi Code CLI 的核心技術機制在於其使用 TypeScript 來實現一個高
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在大型專案中性能可能下降，特別是處理大量檔案時。
-  - 解法：考慮將專案拆分為小型模組以減少負擔。
-- [MEDIUM] Windows 平台的支持尚未完善，可能會遇到兼容性問題。
-  - 解法：使用 WSL 或在 Linux 環境中運行。
-- [MEDIUM] 社群支持尚在發展中，問題解決速度可能較慢。
-  - 解法：積極參與社群討論，尋求幫助。
+- [MEDIUM] 在大型專案中，啟動速度可能會變慢，影響使用體驗。
+  - 解法：考慮將專案拆分為小型模組以提高性能。
+- [MEDIUM] 某些命令在不同的操作系統上可能表現不一致。
+  - 解法：在使用前檢查官方文檔以獲取最佳實踐。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 簡化的安裝和即時反饋功能非常符合小型團隊的需求。 |
-| 大型企業的核心系統開發 | 不適合 | 性能瓶頸可能影響開發效率。 |
-| 需要快速原型開發的個人開發者 | 適合 | 快速啟動和簡單的使用流程非常適合原型開發。 |
-| 需要長期支持的商業應用 | 普通 | 目前處於 alpha 階段，穩定性尚待觀察。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 簡化的安裝和快速啟動流程非常適合小型團隊的需求。 |
+| 大型企業的核心產品開發 | 不適合 | 目前處於 alpha 階段，穩定性和性能尚未達到生產環境的要求。 |
+| 需要快速原型開發的個人開發者 | 適合 | 快速啟動和即時反饋能夠加速開發過程。 |
 
 ## 採用成本分析
 
@@ -260,18 +256,12 @@ Kimi Code CLI 的核心技術機制在於其使用 TypeScript 來實現一個高
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習、1 小時整合，得到即時反饋的 AI 編碼助手，值得一試。
+> 花 2 小時學習，1 小時整合，得到高效的編碼工具，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料。依賴鏈的信任程度較高，適合在 CI/CD 中使用。安全性考量良好，無已知的重大漏洞。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-Kimi Code CLI 最常與終端機環境搭配使用，特別是在開發和測試階段。用戶可以在使用 Next.js 開發的專案中，通過 `kimi` 指令快速啟動代理，並在終端中進行即時的代碼編輯和執行。它與 GitHub Actions 等 CI 工具相容，能夠輕鬆集成到現有的開發流程中。整合過程中，最常見的問題是環境配置，特別是在不同操作系統之間的兼容性問題。
+> 低風險：該工具不需要高權限，且不存取敏感資料。依賴鏈的信任程度高，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -336,69 +326,68 @@ Kimi Code CLI 最常與終端機環境搭配使用，特別是在開發和測試
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 50 |
-| Open Issues | 23 |
-| Issue 解決率 | 36% (13 closed) |
-| 最後推送 | 2026-05-26 |
+| Forks | 74 |
+| Open Issues | 33 |
+| Issue 解決率 | 34% (17 closed) |
+| 最後推送 | 2026-05-27 |
 | 建立日期 | 2026-05-22 |
 | 官方網站 | [Link](https://moonshotai.github.io/kimi-code/) |
-| Repo 大小 | 6.1 MB |
+| Repo 大小 | 6.0 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/MoonshotAI/kimi-code) |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `@arethetypeswrong/cli` `@changesets/changelog-github` `@changesets/cli` `@microsoft/api-extractor` `@types/node` `@vitest/coverage-v8` `lint-staged` `oxlint` `oxlint-tsgolint` `publint` `sherif` `simple-git-hooks` `tsdown` `tsx` `typescript`
+> `@arethetypeswrong/cli` `@changesets/changelog-github` `@changesets/cli` `@microsoft/api-extractor` `@types/node` `@vitest/coverage-v8` `lint-staged` `oxlint` `oxlint-tsgolint` `pkg-pr-new` `publint` `sherif` `simple-git-hooks` `tsdown` `tsx`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 98
+>     "TypeScript" : 97
 >     "JavaScript" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@liruifengv](https://github.com/liruifengv) | 13 |
+> | [@liruifengv](https://github.com/liruifengv) | 21 |
+> | [@kermanx](https://github.com/kermanx) | 13 |
 > | [@7Sageer](https://github.com/7Sageer) | 7 |
-> | [@kermanx](https://github.com/kermanx) | 6 |
-> | [@wbxl2000](https://github.com/wbxl2000) | 5 |
-> | [@sailist](https://github.com/sailist) | 3 |
+> | [@wbxl2000](https://github.com/wbxl2000) | 7 |
+> | [@github-actions[bot]](https://github.com/github-actions[bot]) | 3 |
 
-**最新版本**：@moonshot-ai/kimi-code@0.3.0 (2026-05-26)
+**最新版本**：@moonshot-ai/kimi-code@0.4.0 (2026-05-27)
 
 > [!info]- Release Notes
 > ### Minor Changes
 > 
-> -   [#76](https://github.com/MoonshotAI/kimi-code/pull/76) [`6f22ae4`](https://github.com/MoonshotAI/kimi-code/commit/6f22ae48f84a062a65dcaa9510ffe96f40ab503b) - /logout now opens a picker so you can choose which provider to log out of, instead of always logging out the one tied to the current model. The current provider is highlighted by default, so pressing Enter matches the previous behavior. The command is also available as /disconnect.
+> -   [#116](https://github.com/MoonshotAI/kimi-code/pull/116) [`2c7a8cc`](https://github.com/MoonshotAI/kimi-code/commit/2c7a8cc010a7b8134c5f16185e031a6de4585165) - Expand folded paste markers on second paste. When the cursor is on a paste marker (e.g. `[paste [#1](https://github.com/MoonshotAI/kimi-code/issues/1) +15 lines]`) and the user pastes again, the marker expands back to the original content instead of inserting new clipboard data.
 > 
-> ### Patch Changes
+> -   [#26](https://github.com/MoonshotAI/kimi-code/pull/26) [`2b74025`](https://github.com/MoonshotAI/kimi-code/commit/2b74025302be9b42e68a15f33333c55d64a6c9e7) - Rework tool permissions: reads outside cwd no longer prompt, session approvals match the exact call, and path-based rules are case-insensitive.
 > 
-> -   [#62](https://github.com/MoonshotAI/kimi-code/pull/62) [`e2b2b46`](https://github.com/MoonshotAI/kimi-code/commit/e2b2b46fc9c1d6a0ada67c590b8aa56e77c9c513) - Make `AgentRecords` hold the `Agent` instance directly and inline the restore dispatch logic.
+> -   [#119](https://github.com/MoonshotAI/kimi-code/pull/119) [`ebf6e81`](https://github.com/MoonshotAI/kimi-code/commit/ebf6e8181ea20a0fcf6a609195ccf5b6cc2a665a) - Add user-global plugin installation, interactive plugin management, plugin-provided skills, and plugin-owned MCP servers.
 > 
-> -   [#73](https://github.com/MoonshotAI/kimi-code/pull/73) [`bddc60f`](https://github.com/MoonshotAI/kimi-code/commit/bddc60f0e9af44d326dc0759a60bce93187f8a7b) - Prevent running the `/model` and `/sessions` slash commands while streaming or compacting context.
-> 
-> -   [#70](https://github.com/MoonshotAI/kimi-code/pull/70) [`d95b013`](https://github.com/MoonshotAI/kimi-code/commit/d95b01342a7921f0863ceb37abad7984d0245509) - Preserve catalog-declared interleaved reasoning fields for OpenAI-compatible models configured through `/connect`.
+> -   [#112](https://github.com/MoonshotAI/kimi-code/pull/112) [`d03f6f4`](https://github.com/MoonshotAI/kimi-code/commit/d03f6f4fa582314a4330d0049fed6a0baae7271a) - Add `/export-debug-zip` slash command to export the current session as a debug ZIP archive directly from the TUI.
 > 
 > ...（完整內容見 GitHub）
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，解決率約 36%。
+**社群活躍度**：社群活躍度中等，開放問題數量為 33，解決率為 34%。
 **連結**：[文件](https://moonshotai.github.io/kimi-code/en/)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-26 ~ 2026-05-26）
-> **活躍天數** 1 天 · **最新 commit** ci: release packages (#65)
+> [!abstract] 最近 10 次 commit（2026-05-27 ~ 2026-05-27）
+> **活躍天數** 1 天 · **最新 commit** docs(changelog): sync 0.4.0 from apps/kimi-code/CHANGELOG.md (#125)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#37](https://github.com/MoonshotAI/kimi-code/issues/37) | 想问下 kimi 团队为什么还是决定放弃 python 版的 kimi-cli 转而重新起一个 ts 的 kimi-co | 4 | 3 |
-> | [#39](https://github.com/MoonshotAI/kimi-code/issues/39) | Support kimi web `enhancement` | 2 | 0 |
+> | [#39](https://github.com/MoonshotAI/kimi-code/issues/39) | Support kimi web `enhancement` | 6 | 0 |
+> | [#37](https://github.com/MoonshotAI/kimi-code/issues/37) | 想问下 kimi 团队为什么还是决定放弃 python 版的 kimi-cli 转而重新起一个 ts 的 kimi-co | 5 | 9 |
+> | [#60](https://github.com/MoonshotAI/kimi-code/issues/60) | feat: 增加 Skills 可见性和管理入口 | 2 | 0 |
 > | [#21](https://github.com/MoonshotAI/kimi-code/issues/21) | 什么时候支持Memory `enhancement` | 2 | 0 |
 
 ## README 摘錄
@@ -505,9 +494,9 @@ Kimi Code CLI 最常與終端機環境搭配使用，特別是在開發和測試
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化]] · [[AI 編碼助手]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[模型上下文協議]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[Doorman11991--smallcode|Doorman11991/smallcode]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]]
 
 [GitHub](https://github.com/MoonshotAI/kimi-code) · [官方網站](https://moonshotai.github.io/kimi-code/)
 
@@ -549,7 +538,7 @@ Kimi Code CLI 最常與終端機環境搭配使用，特別是在開發和測試
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化","AI 編碼助手"];
+> const concepts = ["CLI/TUI","自動化","模型上下文協議"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "MoonshotAI--kimi-code" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

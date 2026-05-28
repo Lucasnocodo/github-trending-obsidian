@@ -7,10 +7,10 @@ language: Rust
 license: N/A
 description: "An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒服"
 homepage: ""
-stars: 6364
-stars_per_day: 318
-forks: 418
-open_issues: 144
+stars: 7155
+stars_per_day: 341
+forks: 473
+open_issues: 164
 created: 2026-05-06
 pushed_at: 2026-05-27
 first_seen: 2026-05-12
@@ -34,15 +34,15 @@ appearances: 2
 next_review: "2026-05-16"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 50
-repo_size_kb: 7865
+issue_close_rate: 47
+repo_size_kb: 8165
 readme_length: 6182
 bus_factor: 1
-last_release_days: 5
+last_release_days: 6
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-12"
-star_history: "2026-05-12:1040,2026-05-12:1044,2026-05-13:1526,2026-05-13:1529,2026-05-14:1898,2026-05-15:2194,2026-05-16:2415,2026-05-17:2591,2026-05-18:2763,2026-05-19:2985,2026-05-20:3192,2026-05-21:3568,2026-05-22:3970,2026-05-23:4363,2026-05-24:4742,2026-05-25:5125,2026-05-26:5744,2026-05-27:6364"
+star_history: "2026-05-12:1040,2026-05-12:1044,2026-05-13:1526,2026-05-13:1529,2026-05-14:1898,2026-05-15:2194,2026-05-16:2415,2026-05-17:2591,2026-05-18:2763,2026-05-19:2985,2026-05-20:3192,2026-05-21:3568,2026-05-22:3970,2026-05-23:4363,2026-05-24:4742,2026-05-25:5125,2026-05-26:5744,2026-05-27:6364,2026-05-28:7155"
 tags:
   - github
   - "category/開發工具"
@@ -55,7 +55,7 @@ aliases:
 
 # CodexPlusPlus
 
-**6.4k** stars · **318** stars/天 · 建立 20 天前 · Rust · 未標註授權
+**7.2k** stars · **341** stars/天 · 建立 21 天前 · Rust · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/BigPizzaV3--CodexPlusPlus");
@@ -74,10 +74,10 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 為 CodexApp 提供增強功能的外部啟動器和管理工具。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (318 stars/day)
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (341 stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要增強 Codex 功能並希望靈活切換 API 供應商的開發者。
-> **一句話重點** Codex++ 的設計讓用戶能夠在不干擾原始應用的情況下，靈活地增強 Codex 的功能。
+> **適合** 希望提升 Codex App 使用體驗的開發者和團隊。
+> **一句話重點** Codex++ 的設計讓用戶能夠在不影響原始應用的情況下，享受靈活的增強功能。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -100,103 +100,105 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習、3 小時整合，得到靈活的增強功能，值得嘗試。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，3 小時整合，得到靈活的增強功能，值得嘗試。
 
 > [!abstract] 核心創新
-> Codex++ 提供了靈活的中轉注入模式，讓用戶能夠在不同 API 供應商之間自由切換。
+> Codex++ 透過外部啟動器和管理工具，無需修改原始 Codex App 文件，提供靈活的增強功能。
 
 ## 專案簡介
 
-Codex++ 是一款專為 Codex App 設計的增強啟動器，旨在提升使用體驗而不修改原始安裝文件。用戶可以通過外部啟動器啟動 Codex，並利用 Chromium DevTools Protocol 注入增強腳本，實現自定義功能。安裝後，使用者可選擇靜默啟動或使用管理工具進行配置和管理，這樣的設計使得用戶能夠靈活地控制增強功能的開啟與關閉。Codex++ 支援多種中轉配置，並能在啟動時同步會話 metadata，這樣用戶在切換 API 供應商時不會丟失舊會話。這個工具的賣點在於其不會對 Codex 的原始安裝造成任何影響，並且提供了豐富的增強功能，如會話刪除、Markdown 導出等。
+Codex++ 是一個針對 Codex App 的外部增強工具，旨在改善使用體驗而不修改原始安裝文件。它透過外部啟動器啟動 Codex，並利用 Chromium DevTools Protocol 注入增強腳本，讓用戶能夠在不影響原始應用的情況下，享受額外功能。安裝後，用戶可以選擇靜默啟動或使用管理工具來配置和管理增強功能。關鍵指令包括從 GitHub Releases 下載安裝包，並使用 `Codex++` 入口啟動。這個工具的賣點在於它的靈活性和擴展性，支持多種增強模式和用戶自定義腳本的注入。
 
-其後端使用 Rust 實現，並搭配 Tauri 和 React 提供管理界面，這樣的技術選型使得應用在性能和用戶界面上都能達到較高的水準。與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，Codex++ 提供了更靈活的中轉注入模式，這使得用戶可以在不同的 API 之間自由切換。實際使用中，Codex++ 的自動更新功能和靜默啟動設計大大提升了用戶的便利性，但也可能因為未簽名的安裝包在 macOS 上遭遇安全性問題。總體來看，Codex++ 是一個成熟的工具，適合需要增強 Codex 功能的開發者使用。
+技術上，Codex++ 使用 Rust 作為後端，並結合 Tauri 和 React 來構建管理界面，這樣的選擇使得應用輕量且不依賴額外的運行時。與其他增強工具相比，如 0xGF/boneyard 和 0xSero/codex-shim，Codex++ 提供了更靈活的中轉注入模式，讓用戶能夠輕鬆切換 API 提供者。使用上，Codex++ 能夠處理多個中轉配置，並在啟動時自動同步會話 metadata，這在大型團隊或需要頻繁切換 API 的情境下特別有用。儘管功能強大，但用戶仍需注意可能的兼容性問題，特別是在 Codex 更新後，注入腳本可能需要隨之調整。整體而言，Codex++ 是一個穩定且功能豐富的增強工具，適合希望提升 Codex 使用體驗的開發者。
 
 **技術棧**：`Rust` · `Tauri` · `React`
 
 ## 重點功能
 
-- 靜默啟動 — 使用 Rust 實現的後端啟動器，無需額外運行時。
-- Tauri + React 管理工具 — 提供深色/淺色主題切換，增強用戶體驗。
-- 外部 CDP 注入 — 不改動 Codex 原始安裝文件，確保安全性。
-- 中轉注入模式 — 支持多個 API 配置，靈活切換供應商。
-- 用戶腳本管理 — 可在啟動時注入自定義腳本，提升功能擴展性。
+- 靜默啟動 — 透過外部啟動器啟動 Codex，無需顯示管理界面。
+- 多種增強模式 — 支持中轉注入和傳統增強模式，靈活應對不同需求。
+- 用戶腳本管理 — 允許用戶在啟動時注入自定義腳本，提升個性化體驗。
+- 自動更新 — 透過 GitHub Release 自動檢查和更新，保持工具最新。
+- 多平台支持 — 提供 Windows 和 macOS 的安裝包，滿足不同用戶需求。
 
 ## 快速開始
 
 1. 下載安裝包
 ```bash
-從 GitHub Releases 下載最新版本
+從 GitHub Releases 下載最新版本的安裝包。
 ```
-2. 安裝應用
+2. 安裝 Codex++
 ```bash
-運行 CodexPlusPlus-*-windows-x64-setup.exe
+執行下載的安裝包，根據提示完成安裝。
 ```
-3. 啟動管理工具
+3. 啟動 Codex++
 ```bash
-運行 Codex++ 管理工具進行配置
+使用 `Codex++` 入口啟動應用。
 ```
 
 ## 程式碼範例
 
 ```rust
 {
-  "前置條件": "已安裝 Codex++ 並啟動管理工具",
-  "指令": "在管理工具中添加 API 配置並啟用中轉注入模式",
-  "預期輸出": "Codex++ 將開始使用新的 API 配置進行請求"
+  "前置條件": "已安裝 Codex++ 並配置好 API。",
+  "指令": "codex-plus --start",
+  "預期輸出": "啟動 Codex 並注入增強功能。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 20 天內累積 6364 stars（318/天），forks 418（6.6%），顯示出穩定的增長。這個專案的主要貢獻者包括多位活躍的開發者，並且解決了 Codex App 在插件使用上的痛點，如無法正常使用插件功能的問題。Codex++ 的出現填補了這一需求，並且其靈活的中轉注入模式使得用戶能夠更方便地切換 API 供應商。社群的活躍度也反映在開放的 Issues 上，許多用戶積極反饋和討論功能需求。
+> 建立 21 天內累積 7155 stars（341/天），forks 473（6.6%），顯示出穩定的增長趨勢。這個專案由 BigPizzaV3 和其他幾位貢獻者共同開發，解決了 Codex App 使用中的多個痛點，如插件管理和 API 切換。之前用戶在 Codex 中遇到的問題主要是插件功能受限，Codex++ 則提供了更靈活的解決方案。社群的活躍度也反映在開放的 Issues 和快速的回應上，這使得用戶能夠在遇到問題時獲得支持。
 
 ## 適合誰使用
 
-**目標受眾**：需要增強 Codex 功能並希望靈活切換 API 供應商的開發者。
+**目標受眾**：希望提升 Codex App 使用體驗的開發者和團隊。
 
 > [!example] 使用場景
-> - 後端開發者用它來啟動 Codex 並注入自定義增強腳本，因為這樣可以在不修改原始應用的情況下提升開發效率。
-> - DevOps 工程師用它來管理多個 API 供應商的切換，因為中轉注入模式可以靈活應對不同的開發需求。
-> - 產品經理用它來檢查 Codex 的後端狀態和增強功能，因為管理工具提供了直觀的界面來進行配置和更新。
+> - 後端工程師用它來快速啟動 Codex 並注入自定義增強功能，因為這樣可以節省時間並提高工作效率。
+> - 開發團隊用它來管理多個 API 提供者的切換，因為 Codex++ 支持中轉注入，讓他們能夠靈活應對不同的開發需求。
+> - 系統管理員用它來監控 Codex 的後端狀態，因為管理工具提供了詳細的診斷和日誌功能，便於排查問題。
 
 ## 架構分析
 
-Codex++ 採用 Tauri 框架構建管理工具，這使得它能夠在前端使用 React 提供豐富的用戶界面。後端使用 Rust 實現，確保高效能和低資源消耗。資料流方面，Codex++ 透過 Chromium DevTools Protocol 注入增強腳本，這樣的設計使得用戶能夠在不改動原始應用的情況下進行功能擴展。選擇 Rust 作為後端語言是因為其高效能和安全性，然而這也意味著需要一定的學習曲線。整體架構的設計使得 Codex++ 能夠在多平台上運行，並且具備良好的擴展性，但在某些情況下，可能會因為未簽名的安裝包而在 macOS 上遇到問題。
+Codex++ 採用 Rust 作為後端，並使用 Tauri 和 React 構建管理工具，這樣的架構設計使得應用輕量且不依賴額外的運行時。資料流方面，Codex++ 透過外部啟動器啟動 Codex，並利用 Chromium DevTools Protocol 注入增強腳本。這樣的設計使得用戶能夠在不影響原始應用的情況下，享受額外功能。
+
+選擇 Rust 提供了高效能和安全性，而 Tauri 則使得跨平台支持變得簡單。這種架構的取捨在於，雖然開發成本較高，但最終用戶獲得了更好的使用體驗。擴展性方面，Codex++ 能夠支持多個中轉配置，這對於需要頻繁切換 API 的用戶來說是非常有價值的。
 
 ## 技術深入分析
 
-Codex++ 的核心技術機制在於其使用 Rust 作為後端語言，這使得應用在性能和安全性上都有所保障。透過 Tauri 框架，Codex++ 能夠提供一個現代化的用戶界面，並且支持深色/淺色主題切換。資料流方面，Codex++ 利用 Chromium DevTools Protocol 進行增強腳本的注入，這樣的設計使得用戶能夠在不修改原始應用的情況下進行功能擴展。效能方面，Codex++ 能夠在多平台上運行，並且在啟動時不依賴額外的運行時，這樣的設計降低了資源消耗。選擇 Rust 而非其他語言的原因在於其高效能和安全性，但這也意味著需要一定的學習曲線。技術風險方面，Codex++ 可能在未來的版本中因為 Codex 的更新而需要不斷調整增強腳本，這可能會帶來維護上的挑戰。整合方面，Codex++ 能夠與現有的開發工具鏈良好配合，並且提供了自動更新功能，這使得用戶能夠輕鬆保持最新版本。
+Codex++ 的核心技術機制在於使用 Rust 作為後端，這提供了高效能和安全性，並且使用 Tauri 和 React 構建管理工具，讓用戶界面友好且跨平台。這種架構選擇使得應用能夠在不依賴額外運行時的情況下運行，降低了使用門檻。效能方面，Codex++ 能夠快速啟動並注入增強功能，具體的性能數據未提供，但從用戶反饋來看，啟動速度和穩定性都表現良好。設計上，Codex++ 允許用戶在啟動時注入自定義腳本，這使得用戶能夠根據自己的需求進行擴展。技術風險方面，Codex++ 依賴於 Chromium DevTools Protocol，這意味著如果未來該協議發生變化，可能會影響到工具的正常運作。整合方面，Codex++ 能夠與現有的開發工具鏈無縫對接，特別是在使用 Git 進行版本控制的環境中，能夠提供額外的功能支持。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝指導和功能介紹，安裝過程相對順暢，但在 macOS 上可能會遇到安全性問題。管理工具的使用也有良好的引導，讓用戶能夠快速上手。整體來說，花 30 分鐘就能夠順利運行起來。
+> README 文件清晰且提供了詳細的安裝步驟和使用指引，讓新手能夠快速上手。安裝過程相對順暢，但 macOS 用戶需注意安全警告。文件目前僅提供英文版本，可能對非英語用戶造成一定障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 靈活的中轉注入模式，支持多個 API 供應商。
-> - 不修改原始 Codex 安裝文件，確保安全性。
-> - 提供直觀的管理工具，便於用戶配置和管理增強功能。
+> - 靈活的增強功能，支持多種增強模式。
+> - 無需修改原始 Codex App 文件，避免了更新後的兼容性問題。
+> - 提供詳細的診斷和日誌功能，便於排查問題。
 
 > [!danger] 缺點
-> - 在 macOS 上可能因未簽名的安裝包遭遇安全性問題。
-> - 部分功能仍在開發中，存在未解決的 Issues。
-> - 需要一定的學習曲線以充分利用其功能。
+> - 在 Codex 更新後可能需要調整注入腳本。
+> - macOS 用戶可能面臨未簽名的安全警告。
+> - 對於某些插件，可能需要額外配置才能正常使用。
 
 > [!warning] 注意事項
-> - 僅支援 Windows 和 macOS 系統。
-> - 在 macOS 上可能因未簽名的安裝包遭遇安全性問題。
-> - 目前存在一些未解決的 Issues，影響使用體驗。
+> - 可能需要在 Codex 更新後調整注入腳本以保持兼容性。
+> - 在某些情況下，macOS 可能會提示應用未經簽名，需手動允許。
+> - 對於某些插件，可能需要額外配置才能正常使用。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的增強功能，但不支持中轉注入模式，適合單一 API 使用場景。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於插件管理，但缺乏 Codex++ 的靈活性和多供應商支持。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的增強功能，但不支持中轉注入，適合單一 API 使用場景。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 專注於簡化 Codex 的使用，但功能較為單一，缺乏靈活性。 |
 
 ## 替代方案決策
 
@@ -204,16 +206,16 @@ Codex++ 的核心技術機制在於其使用 Rust 作為後端語言，這使得
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供增強功能，但不支持中轉注入模式，適合單一 API 使用場景。 | 如果你的團隊只需要使用單一 API，且不需要靈活切換供應商，則可以選擇此工具。 | low，因為功能相似，且不需要重新配置多個 API。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於插件管理，但缺乏 Codex++ 的靈活性和多供應商支持。 | 如果你的團隊需要強大的插件管理功能，而不需要 API 切換，則可以考慮此工具。 | medium，需要重新適應其插件管理方式。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的增強功能，但不支持中轉注入，適合單一 API 使用場景。 | 如果你的團隊只需要簡單的增強功能而不需要頻繁切換 API，則可以選擇這個工具。 | medium，因為需要重新配置增強功能。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 專注於簡化 Codex 的使用，但功能較為單一，缺乏靈活性。 | 如果你只需要基本的功能增強，而不需要複雜的配置，則可以考慮這個工具。 | low，因為功能相似，遷移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **CodexPlusPlus** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **CodexPlusPlus** | **boneyard** | **codex-shim** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供增強功能，但不支持中轉注入模式，適合單一 API 使用場景。 | 專注於插件管理，但缺乏 Codex++ 的靈活性和多供應商支持。 |
-> | 遷移成本 | - | low，因為功能相似，且不需要重新配置多個 API。 | medium，需要重新適應其插件管理方式。 |
-> | 適用場景 | 主要場景 | 如果你的團隊只需要使用單一 API，且不需要靈活切換供應商， | 如果你的團隊需要強大的插件管理功能，而不需要 API 切換， |
+> | 技術路線 | 本專案 | 提供類似的增強功能，但不支持中轉注入，適合單一 API 使用場景。 | 專注於簡化 Codex 的使用，但功能較為單一，缺乏靈活性。 |
+> | 遷移成本 | - | medium，因為需要重新配置增強功能。 | low，因為功能相似，遷移成本較低。 |
+> | 適用場景 | 主要場景 | 如果你的團隊只需要簡單的增強功能而不需要頻繁切換 API，則 | 如果你只需要基本的功能增強，而不需要複雜的配置，則可以考慮這 |
 
 ## 成熟度評估
 
@@ -224,43 +226,44 @@ Codex++ 的核心技術機制在於其使用 Rust 作為後端語言，這使得
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合開發者進行試用，但不建議在生產環境中使用。
+> 適合個人試用和小型團隊，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 macOS 上安裝時可能因未簽名的安裝包遭遇安全性問題
-  - 解法：在系統設置中允許打開未簽名的應用
-- [MEDIUM] Codex++ 菜單未出現，可能是從原版 Codex 啟動
-  - 解法：確認從 Codex++ 啟動，而非原版 Codex
-- [MEDIUM] 插件內顯示後端連不上，可能是 CDP bridge 問題
-  - 解法：重啟 Codex++ 或查看管理工具中的日誌
+- **[HIGH]** macOS 提示無法打開或已損壞，可能因未簽名的安裝包造成。
+  - 解法：在系統設定中允許打開未簽名的應用。
+- [MEDIUM] Codex++ 菜單未出現，可能是從原版 Codex 啟動。
+  - 解法：確認從 `Codex++` 入口啟動。
+- [MEDIUM] 插件內顯示後端連不上，可能是 CDP bridge 問題。
+  - 解法：重啟 Codex++ 或檢查日誌。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊使用 Codex 進行 API 開發 | 非常適合 | 提供靈活的 API 切換和增強功能，提升開發效率。 |
-| 個人開發者希望自定義 Codex 功能 | 適合 | 能夠輕鬆注入自定義腳本，滿足個性化需求。 |
-| 大型企業需要穩定的 API 服務 | 普通 | 雖然提供多供應商支持，但仍在 beta 階段，穩定性需進一步觀察。  |
+| 10 人以下的新創公司後端 API | 非常適合 | Codex++ 提供了靈活的增強功能，能夠快速適應不同的開發需求。 |
+| 大型開發團隊需要頻繁切換 API | 非常適合 | 中轉注入功能使得 API 切換變得簡單高效。 |
+| 個人開發者使用 Codex 進行小型專案 | 適合 | Codex++ 提供的增強功能能夠提升開發效率，但可能不需要所有功能。 |
+| 需要在生產環境中使用的關鍵應用 | 不適合 | 目前仍處於 beta 階段，穩定性和兼容性尚需觀察。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
+| 學習時間 | ~2 小時 |
 | 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習、3 小時整合，得到靈活的增強功能，值得嘗試。
+> 花 2 小時學習，3 小時整合，得到靈活的增強功能，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> Codex++ 本身不需要高權限，但在安裝過程中可能需要允許未簽名的應用。它不會存取敏感資料，且依賴鏈的信任程度較高，整體使用在 CI/CD 中是安全的。
+> 低風險：Codex++ 本身不需要高權限，且不存取敏感資料，但需注意依賴的第三方 API 的安全性。
 
 ## 健康度儀表板
 
@@ -325,12 +328,12 @@ Codex++ 的核心技術機制在於其使用 Rust 作為後端語言，這使得
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 418 |
-| Open Issues | 144 |
-| Issue 解決率 | 50% (142 closed) |
+| Forks | 473 |
+| Open Issues | 164 |
+| Issue 解決率 | 47% (148 closed) |
 | 最後推送 | 2026-05-27 |
 | 建立日期 | 2026-05-06 |
-| Repo 大小 | 7.7 MB |
+| Repo 大小 | 8.0 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/BigPizzaV3/CodexPlusPlus) |
 
 > [!info]- 主要依賴
@@ -349,7 +352,7 @@ Codex++ 的核心技術機制在於其使用 Rust 作為後端語言，這使得
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@BigPizzaV3](https://github.com/BigPizzaV3) | 183 |
+> | [@BigPizzaV3](https://github.com/BigPizzaV3) | 185 |
 > | [@szcascsa](https://github.com/szcascsa) | 7 |
 > | [@yangchuansheng](https://github.com/yangchuansheng) | 4 |
 > | [@wanpan11](https://github.com/wanpan11) | 4 |
@@ -364,23 +367,24 @@ Codex++ 的核心技術機制在於其使用 Rust 作為後端語言，這使得
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放的 Issues 提供用戶反饋和討論平台。
+**社群活躍度**：社群活躍，開放的 Issues 和快速的回應。
 **連結**：[文件](https://github.com/BigPizzaV3/CodexPlusPlus)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-25 ~ 2026-05-27）
-> **活躍天數** 3 天 · **最新 commit** docs: update discussion group QR code
+> [!abstract] 最近 10 次 commit（2026-05-26 ~ 2026-05-27）
+> **活躍天數** 3 天 · **最新 commit** Add files via upload
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#327](https://github.com/BigPizzaV3/CodexPlusPlus/issues/327) | 对话经常报错：{"error":{"message":"An assistant message with 'tool_ | 2 | 6 |
+> | [#377](https://github.com/BigPizzaV3/CodexPlusPlus/issues/377) | [Bug]:mac升级系统后,无法安装,没有仍要打开的选项 `needs triage` `type: bug` `area: provider-config` | 2 | 4 |
+> | [#340](https://github.com/BigPizzaV3/CodexPlusPlus/issues/340) | codex 移动端设置 | 2 | 1 |
+> | [#327](https://github.com/BigPizzaV3/CodexPlusPlus/issues/327) | 对话经常报错：{"error":{"message":"An assistant message with 'tool_ | 2 | 10 |
 > | [#278](https://github.com/BigPizzaV3/CodexPlusPlus/issues/278) | 请求增加多个官方账号切换功能。 | 2 | 1 |
-> | [#288](https://github.com/BigPizzaV3/CodexPlusPlus/issues/288) | v1.1.7 无法切换配置好的模型 | 1 | 6 |
-> | [#256](https://github.com/BigPizzaV3/CodexPlusPlus/issues/256) | 悬停没有删除 | 1 | 5 |
+> | [#302](https://github.com/BigPizzaV3/CodexPlusPlus/issues/302) | codex移动版功能无法使用 | 1 | 1 |
 
 ## README 摘錄
 
@@ -663,7 +667,7 @@ Codex++ 的核心技術機制在於其使用 Rust 作為後端語言，這使得
 
 相關概念：[[CLI/TUI]] · [[自動化]] · [[API 設計]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]]
 
 [GitHub](https://github.com/BigPizzaV3/CodexPlusPlus)
 
