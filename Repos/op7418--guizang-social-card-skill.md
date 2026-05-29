@@ -621,7 +621,7 @@ Guizang Social Card Skill 可以與 Claude Code 和 Codex 等 AI Agent 無縫整
 
 相關概念：[[自動化]] · [[社交媒體]] · [[圖像生成]]
 
-相關專案：[[op7418--guizang-ppt-skill|op7418/guizang-ppt-skill]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[jackwener--twitter-cli|jackwener/twitter-cli]] · [[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[0xGF--boneyard|0xGF/boneyard]]
+相關專案：[[op7418--guizang-ppt-skill|op7418/guizang-ppt-skill]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[jackwener--twitter-cli|jackwener/twitter-cli]] · [[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]]
 
 [GitHub](https://github.com/op7418/guizang-social-card-skill) · [官方網站](https://github.com/op7418/guizang-social-card-skill)
 

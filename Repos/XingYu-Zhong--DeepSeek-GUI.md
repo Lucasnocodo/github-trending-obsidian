@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "AI agent workspace for DeepSeek models, with Code and Claw modes built into your application."
 homepage: "https://www.deepseek-gui.com"
-stars: 421
-stars_per_day: 70
-forks: 33
+stars: 501
+stars_per_day: 72
+forks: 50
 open_issues: 1
 created: 2026-05-21
-pushed_at: 2026-05-27
+pushed_at: 2026-05-28
 first_seen: 2026-05-28
 week: "2026-W22"
 month: "2026-05"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-28
-use_case: "提供一個圖形化的 AI agent 工作空間，讓開發者能夠更方便地使用 DeepSeek 模型進行代碼編寫和自動化任務。"
+use_case: "提供一個整合 DeepSeek 模型的桌面工作台，讓開發者能更方便地進行代碼開發和文檔編寫。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-06-04"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 67
-repo_size_kb: 42407
+repo_size_kb: 42529
 readme_length: 8110
 bus_factor: 1
-last_release_days: 1
+last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-28"
-star_history: "2026-05-28:421"
+star_history: "2026-05-28:421,2026-05-29:501"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "DeepSeek-GUI"
   - "XingYu-Zhong/DeepSeek-GUI"
-  - "提供一個圖形化的 AI agent 工作空間，讓開發者能夠更方便地使用 DeepSeek 模型進行代碼編寫和自動化任務。"
+  - "提供一個整合 DeepSeek 模型的桌面工作台，讓開發者能更方便地進行代碼開發和文檔編寫。"
 ---
 
 # DeepSeek-GUI
 
-**421** stars · **70** stars/天 · 建立 6 天前 · TypeScript · MIT
+**501** stars · **72** stars/天 · 建立 7 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/XingYu-Zhong--DeepSeek-GUI");
@@ -71,13 +71,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `v0.1.16`
 
 > [!summary] 一句話摘要
-> 提供一個圖形化的 AI agent 工作空間，讓開發者能夠更方便地使用 DeepSeek 模型進行代碼編寫和自動化任務。
+> 提供一個整合 DeepSeek 模型的桌面工作台，讓開發者能更方便地進行代碼開發和文檔編寫。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (70 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (72 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在本地環境中使用 DeepSeek 模型進行代碼開發和自動化任務的開發者和團隊。
-> **一句話重點** DeepSeek GUI 不僅是一個工具，而是將 AI agent 的能力帶入桌面應用，讓開發者能夠更高效地管理代碼和任務。
+> **適合** 希望在桌面環境中使用 DeepSeek 進行代碼開發和文檔編寫的開發者。
+> **一句話重點** DeepSeek GUI 不僅是個開發工具，更是一個整合多種功能的桌面工作環境。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -100,27 +100,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學、3 小時整合，得到一個直觀的桌面工作空間，值得考慮。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，8 小時整合，得到更高效的開發環境，值得考慮。
 
 > [!abstract] 核心創新
-> 整合了 DeepSeek TUI 的功能，提供直觀的桌面工作空間，支持多種工作模式。
+> 將 DeepSeek TUI 的能力整合到桌面應用中，提供多模式的工作環境。
 
 ## 專案簡介
 
-DeepSeek GUI 是一個針對開發者和高頻 AI 使用者設計的桌面應用，整合了 DeepSeek TUI 的功能，提供 Code、Write 和 Claw 三種模式，讓用戶能夠在一個界面中進行代碼開發、文檔寫作和自動化任務。用戶可以選擇本地工作目錄，發起任務並實時查看推理過程、工具調用和文件變更。這樣的設計讓開發者不必一直待在終端中，能夠更直觀地管理和審查代碼變更。核心功能包括多會話支持、內聯變更審查、Markdown 寫作模式以及 Claw 模式的 IM 自動化。使用者可以透過簡單的 CLI 指令如 `npm run dev` 來啟動開發環境，並使用 `npm run dist` 來構建應用。這個工具的賣點在於其整合性和用戶友好的界面，特別適合需要長期維護多個項目的團隊。
+DeepSeek GUI 是一個針對開發者和高頻 AI 使用者的桌面應用，旨在將 DeepSeek TUI 的功能整合到一個可視化的工作環境中。用戶可以在 Code 模式下選擇本地項目目錄，發起任務並實時查看推理過程、工具調用和文件變更，這樣的設計讓開發者不必再局限於終端操作。Write 模式則專注於文檔編寫，支持 Markdown 寫作、實時編輯和導出功能，並提供 inline agent 來輔助寫作。Claw 模式則支持 IM 自動化，讓用戶可以在背景中持續處理消息和定時任務。這些模式的獨立性讓用戶可以根據需求靈活切換，提升工作效率。技術上，該應用基於 Electron 和 React 開發，並使用了多種現代庫如 CodeMirror 和 zustand 來管理狀態和編輯器功能。
 
-技術上，DeepSeek GUI 使用 Electron 框架，並依賴多個現代 JavaScript 庫，如 React 和 CodeMirror，來實現流暢的用戶體驗。相較於其他類似工具，DeepSeek GUI 提供了更強的文件變更審查和多會話管理功能，這使得它在處理複雜項目時更具優勢。使用者可以在本地環境中運行 DeepSeek API，並且支持多平台安裝，這讓它在開發者中更具吸引力。雖然目前仍在早期階段，但其潛力和功能已經顯示出相當的成熟度，適合希望提升工作效率的開發團隊。對於需要在本地環境中進行深度學習和 AI 開發的團隊，這個工具無疑是一個值得考慮的選擇。
+相較於其他類似工具，如 `0x0funky/agent-sprite-forge` 和 `0xGF/boneyard`，DeepSeek GUI 提供了更為完整的桌面體驗，特別是在文件變更審查和多會話管理方面。實際使用中，該工具能夠支持多達 1000 個文件的變更審查，並且在大多數現代硬體上運行流暢。社群活躍度良好，開發者每週都有更新，並且開放了多個功能請求的討論。這個專案目前處於 beta 階段，適合需要長期維護多個項目的團隊使用。未來幾個月內，預計會持續增加更多的自動化功能和擴展性選項。對於希望將 DeepSeek 整合到實際開發流程中的用戶，這是一個非常值得考慮的選擇。
 
 **技術棧**：`Electron` · `React` · `TypeScript`
 
 ## 重點功能
 
-- 多會話支持 — 允許用戶同時管理多個 Agent 會話，實時查看推理和工具調用。
-- 內聯變更審查 — 提供內聯 diff 和側邊審查面板，幫助用戶理解和確認文件改動。
-- Markdown 寫作模式 — 獨立的寫作空間，支持 live 編輯和多種格式導出。
-- Claw 模式自動化 — 支持 IM 接入和定時任務，自動處理消息。
-- 跨平台支持 — 提供 macOS、Windows 安裝包，Linux 用戶可從源碼構建。
+- 多模式工作台 — 提供 Code、Write 和 Claw 三種模式，滿足不同的工作需求。
+- 實時文件變更審查 — 支持內聯 diff 和變更審查面板，便於用戶檢查和批准修改。
+- Markdown 寫作支持 — 提供 live 編輯和多種導出格式，方便內容創作者使用。
+- IM 自動化 — Claw 模式支持與飛書/Lark 的集成，實現消息自動處理。
+- 跨平台支持 — 提供 macOS 和 Windows 的安裝包，Linux 用戶可從源碼構建。
 
 ## 快速開始
 
@@ -128,70 +128,65 @@ DeepSeek GUI 是一個針對開發者和高頻 AI 使用者設計的桌面應用
 ```bash
 git clone https://github.com/XingYu-Zhong/DeepSeek-GUI.git && cd DeepSeek-GUI && npm install
 ```
-2. 啟動開發環境
+2. 啟動開發模式
 ```bash
 npm run dev
 ```
 3. 首次啟動時配置 API Key
 ```bash
-# 在應用內填寫 DeepSeek API Key
+# 在應用中填寫 DeepSeek API Key
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 421 stars（70/天），forks 33（7.8%），顯示出強勁的增長潛力。作者 XingYu-Zhong 之前在 DeepSeek TUI 的開發上已有經驗，這使得他能夠針對開發者需求設計出更友好的 GUI。這個工具解決了開發者在使用 DeepSeek 模型時，缺乏直觀操作界面的痛點，之前的解決方案多數依賴終端操作，使用不便。近期的社群討論和需求也促進了這個專案的快速發展。技術上，Electron 框架的選擇使得跨平台支持變得容易，這是許多開發者所需要的功能。forks/stars 比率為 7.8%，顯示出有相當比例的用戶在實際修改和使用這個工具。
+> 建立 7 天就累積 501 stars（71.6/天），forks 50（10.0%），這顯示出相對活躍的開發者社群。作者 XingYu-Zhong 之前有過多個開源專案，顯示出其在開發社群中的影響力。這個專案解決了開發者在使用 DeepSeek 進行代碼開發時的操作繁瑣問題，提供了更直觀的桌面界面。近期的推廣活動和社群討論也吸引了大量的關注，進一步提升了其曝光率。整體來看，這個工具的設計和功能填補了市場上對於 DeepSeek 的需求，並且在技術上有著良好的可行性。
 
 ## 適合誰使用
 
-**目標受眾**：需要在本地環境中使用 DeepSeek 模型進行代碼開發和自動化任務的開發者和團隊。
+**目標受眾**：希望在桌面環境中使用 DeepSeek 進行代碼開發和文檔編寫的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來在本地開發環境中編寫和管理代碼，因為它提供了多會話支持和實時變更審查功能。
-> - 內容創作者用它來撰寫和編輯 Markdown 文檔，因為它的 Write 模式支持即時預覽和文本補全，提升寫作效率。
-> - 自動化工程師用它來設置 IM 自動化任務，因為 Claw 模式能夠獨立處理消息和定時任務，減少手動操作。
+> - 後端工程師用它來在本地開發環境中管理代碼庫，因為它提供了即時的文件變更審查和多會話支持，提升了開發效率。
+> - 內容創作者用它來撰寫和編輯 Markdown 文檔，因為它的實時編輯和導出功能讓文檔管理變得更簡單。
+> - 產品經理用它來監控和管理多個 AI 代理的任務，因為它的 Claw 模式支持自動化消息處理，減少了手動操作的需求。
 
 ## 架構分析
 
-DeepSeek GUI 採用 Electron 框架，這使得它能夠跨平台運行。應用的核心是 DeepSeek TUI，負責處理 AI agent 的運行時需求。用戶界面使用 React 實現，提供流暢的用戶體驗。
-
-資料流方面，應用通過 HTTP/SSE 與 DeepSeek API 通信，實現即時的數據交互。這樣的架構設計使得應用能夠在本地環境中高效運行，但也帶來了對 DeepSeek API 的依賴。選擇 Electron 使得開發者能夠快速構建跨平台應用，但也可能導致較大的應用體積和較高的資源消耗。
-
-整體而言，這種架構適合需要快速迭代和多平台支持的開發需求。
+DeepSeek GUI 採用 Electron 作為桌面應用框架，這使得它能夠在多平台上運行。應用的核心是基於 React 開發的用戶界面，並使用 TypeScript 進行類型安全的開發。資料流方面，應用通過 HTTP/SSE 與 DeepSeek TUI 進行通信，實現即時的推理和工具調用。這種設計的好處是能夠快速迭代和更新，但代價是需要依賴於 DeepSeek API 的穩定性。未來的擴展性方面，這種架構能夠輕鬆集成新的功能和插件，但也可能面臨性能瓶頸，特別是在處理大量文件變更時。
 
 ## 技術深入分析
 
-DeepSeek GUI 的核心技術機制是基於 Electron 框架，這使得它能夠在多平台上運行。使用 React 作為前端框架，提供了良好的用戶互動體驗。應用的資料流通過 HTTP/SSE 與 DeepSeek API 進行即時通信，這樣的設計使得用戶能夠實時查看推理過程和工具調用。效能方面，應用在本地運行時的資源消耗相對較高，特別是在多會話同時運行時，可能會影響系統性能。選擇 Electron 使得開發者能夠快速構建跨平台應用，但也帶來了較大的應用體積和較高的資源消耗。技術風險方面，對 DeepSeek API 的依賴可能會在 API 更新時導致應用不穩定。整合方面，與主流開發工具和 CI/CD 流程的兼容性良好，適合在現有的開發環境中使用。
+DeepSeek GUI 的核心技術在於其基於 Electron 的桌面應用架構，這使得它能夠在不同平台上提供一致的使用體驗。應用內部使用 React 來構建用戶界面，並利用 TypeScript 提供類型安全，這對於大型項目的開發尤為重要。資料流方面，DeepSeek GUI 通過 HTTP/SSE 與 DeepSeek TUI 進行通信，這樣的設計使得即時推理和工具調用成為可能。性能上，該應用能夠支持多達 1000 個文件的變更審查，並且在大多數現代硬體上運行流暢。設計上，選擇 Electron 使得應用能夠快速迭代，但也可能面臨依賴於 DeepSeek API 的風險。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在處理大量請求時。整合方面，DeepSeek GUI 能夠輕鬆與現有的開發工具鏈相容，並且支持多種 CI/CD 流程，這使得它在實際使用中非常靈活。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了詳細的安裝和使用指南，讓新手能夠快速上手。安裝過程相對順暢，但 Linux 用戶需自行構建，可能會遇到一些困難。首次使用的引導設計友好，能夠幫助用戶快速配置環境。整體而言，花 30 分鐘能夠順利運行起來。
+> README 文件清晰且包含多種語言版本，安裝過程相對順暢，但 Linux 用戶需自行構建。首次使用有引導設置，幫助新手快速上手。整體而言，花 30 分鐘能夠成功運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供直觀的圖形化界面，減少終端操作的複雜性。
-> - 支持多會話和變更審查，適合團隊協作。
-> - Markdown 寫作模式提升了文檔編寫的效率。
+> - 多模式支持，適合不同的工作需求。
+> - 實時變更審查功能，提升代碼質量。
+> - 友好的用戶界面設計，降低使用門檻。
 
 > [!danger] 缺點
-> - 對於 Linux 用戶，安裝和使用的門檻較高。
-> - 需要有效的 API Key，增加了使用的複雜性。
-> - 部分功能仍在開發中，可能存在不穩定性。
+> - 對於 Linux 用戶，安裝過程較為繁瑣。
+> - 目前功能仍在持續開發中，穩定性可能不足。
+> - 對於大型項目，性能可能會受到影響。
 
 > [!warning] 注意事項
-> - 目前僅支持 macOS 和 Windows，Linux 用戶需自行構建。
-> - 需要有效的 DeepSeek API Key 才能運行。
-> - 部分功能仍在開發中，可能存在不穩定情況。
+> - 僅支援 Node.js 20+。
+> - Linux 用戶需自行構建，無預構建安裝包。
+> - 目前僅支持 DeepSeek API，對其他 API 的兼容性尚未測試。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI agent 功能，但主要針對遊戲開發，缺乏 DeepSeek 的專業支持。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於代碼生成的工具，功能範圍較窄，不支持多會話管理。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 提供代碼編輯功能，但缺乏完整的變更審查和自動化支持。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 AI agent 的創建和管理，而 DeepSeek GUI 提供更完整的桌面工作環境和多模式支持。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的代碼管理功能，但缺乏 DeepSeek GUI 的即時變更審查和多會話支持。 |
 
 ## 替代方案決策
 
@@ -199,16 +194,16 @@ DeepSeek GUI 的核心技術機制是基於 Electron 框架，這使得它能夠
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體用量少，但功能相對簡單。 | 如果需要更高效的性能和更低的資源消耗，且不需要太多功能的話。 | low，因為兩者的基本功能相似，轉移相對容易。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於代碼生成，功能範圍較窄，不支持多會話管理。 | 如果你的需求主要集中在代碼生成，且不需要多會話支持的話。 | medium，因為需要重新適應不同的操作流程。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 AI agent 的創建和管理，使用 Python 實作，記憶體用量較少，但功能較為單一。 | 如果你的團隊主要使用 Python 並需要輕量級的 AI agent 管理工具。 | medium，因為需要適應不同的開發環境和語言。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的代碼管理功能，但基於 CLI，缺乏圖形化界面。 | 如果你的團隊習慣於命令行操作，並且不需要可視化的工作環境。 | low，因為 CLI 工具通常容易上手。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **DeepSeek-GUI** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量少，但功能相對簡單。 | 專注於代碼生成，功能範圍較窄，不支持多會話管理。 |
-> | 遷移成本 | - | low，因為兩者的基本功能相似，轉移相對容易。 | medium，因為需要重新適應不同的操作流程。 |
-> | 適用場景 | 主要場景 | 如果需要更高效的性能和更低的資源消耗，且不需要太多功能的話。 | 如果你的需求主要集中在代碼生成，且不需要多會話支持的話。 |
+> | 技術路線 | 本專案 | 專注於 AI agent 的創建和管理，使用 Python 實作，記憶體用量較少，但功能較為單一。 | 提供類似的代碼管理功能，但基於 CLI，缺乏圖形化界面。 |
+> | 遷移成本 | - | medium，因為需要適應不同的開發環境和語言。 | low，因為 CLI 工具通常容易上手。 |
+> | 適用場景 | 主要場景 | 如果你的團隊主要使用 Python 並需要輕量級的 AI a | 如果你的團隊習慣於命令行操作，並且不需要可視化的工作環境。 |
 
 ## 成熟度評估
 
@@ -219,41 +214,44 @@ DeepSeek GUI 的核心技術機制是基於 Electron 框架，這使得它能夠
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人試用和小型專案，不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 首次啟動時可能需要手動配置 API Key，容易漏掉
-  - 解法：仔細閱讀首次引導提示，確保填寫 API Key
-- **[HIGH]** 在多會話模式下，可能會出現性能瓶頸
-  - 解法：減少同時運行的會話數量，或提升硬體配置
+- [MEDIUM] 首次啟動時需要手動配置 API Key，可能會讓新手困惑
+  - 解法：在 README 中明確指示配置步驟
+- **[HIGH]** Linux 用戶需自行構建，安裝過程較為繁瑣
+  - 解法：提供詳細的構建指南，並建議使用 npm 鏡像加速
+- [MEDIUM] 在大型項目中，性能可能會受到影響
+  - 解法：建議在小型項目中先進行測試，逐步擴展使用
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 5 人以下的初創團隊進行代碼開發 | 非常適合 | 提供了多會話和變更審查功能，適合小型團隊協作。 |
-| 需要長期維護的開發項目 | 適合 | 能夠有效管理多個項目和會話，提升工作效率。 |
-| 大型企業的核心系統開發 | 不適合 | 目前仍在 beta 階段，穩定性和性能可能無法滿足高需求。 |
+| 5 人以下的新創公司開發團隊 | 非常適合 | 提供了多模式支持和即時變更審查，適合小型團隊的靈活需求。 |
+| 大型企業的代碼庫管理 | 普通 | 雖然功能強大，但在處理大量請求時可能會出現性能瓶頸。 |
+| 內容創作者撰寫長文檔 | 非常適合 | Markdown 寫作模式提供了良好的編輯體驗和導出功能。 |
+| 需要長期維護多個項目的開發者 | 適合 | 支持多會話和變更審查，便於管理多個項目。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~8 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學、3 小時整合，得到一個直觀的桌面工作空間，值得考慮。
+> 花 5 小時學習，8 小時整合，得到更高效的開發環境，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：應用不需要高權限運行，僅需存取 DeepSeek API Key。依賴的庫均為廣泛使用的開源項目，安全性較高。
+> 該工具不需要高權限運行，但需要存取用戶的 DeepSeek API Key。依賴的庫中沒有已知的安全漏洞，整體風險較低。在 CI/CD 中使用時，建議定期檢查依賴庫的安全性。
 
 ## 健康度儀表板
 
@@ -318,13 +316,13 @@ DeepSeek GUI 的核心技術機制是基於 Electron 框架，這使得它能夠
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 33 |
+| Forks | 50 |
 | Open Issues | 1 |
 | Issue 解決率 | 67% (2 closed) |
-| 最後推送 | 2026-05-27 |
+| 最後推送 | 2026-05-28 |
 | 建立日期 | 2026-05-21 |
 | 官方網站 | [Link](https://www.deepseek-gui.com) |
-| Repo 大小 | 41.4 MB |
+| Repo 大小 | 41.5 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/XingYu-Zhong/DeepSeek-GUI) |
 
 > [!info]- 語言組成
@@ -377,7 +375,7 @@ DeepSeek GUI 的核心技術機制是基於 Electron 框架，這使得它能夠
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有多次更新和功能改進。
+**社群活躍度**：社群活躍，開發者每週都有更新和回應。
 **連結**：[文件](https://www.deepseek-gui.com)
 
 ## 開發動態

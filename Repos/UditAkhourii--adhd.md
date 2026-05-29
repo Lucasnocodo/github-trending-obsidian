@@ -7,8 +7,8 @@ language: TypeScript
 license: MIT
 description: "ADHD — a skill for coding agents. Tree-of-thought with pruning, built on the Claude Agent SDK. Fans out parallel divergent thoughts under different cognitive frames, scores, prunes traps, deepens the survivors. The no-brainer skill for creative and interdisciplinary work."
 homepage: "https://uditakhourii.github.io/adhd/"
-stars: 468
-stars_per_day: 156
+stars: 471
+stars_per_day: 157
 forks: 23
 open_issues: 15
 created: 2026-05-25
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-28
-use_case: "提供一種創意發想的技能，幫助編碼代理進行多元思考與選擇。"
+use_case: "提供一種創造性思考的技能，幫助編碼代理進行多元思考和評估。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-06-05"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 1836
-readme_length: 10000
+repo_size_kb: 1856
+readme_length: 8052
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-28"
-star_history: "2026-05-28:354,2026-05-28:357,2026-05-29:468"
+star_history: "2026-05-28:354,2026-05-28:357,2026-05-29:468,2026-05-29:471"
 tags:
   - github
   - "category/ai_ml"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "adhd"
   - "UditAkhourii/adhd"
-  - "提供一種創意發想的技能，幫助編碼代理進行多元思考與選擇。"
+  - "提供一種創造性思考的技能，幫助編碼代理進行多元思考和評估。"
 ---
 
 # adhd
 
-**357** stars · **179** stars/天 · 建立 2 天前 · TypeScript · MIT
+**471** stars · **157** stars/天 · 建立 3 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/UditAkhourii--adhd");
@@ -79,13 +79,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `adhd` `agents` `ai` `ai-agents` `brainstorm` `chain-of-thought` `claude` `claude-agent-sdk` `creativity` `divergent-thinking` `ideation` `interdisciplinary` `llm` `llm-tools` `nodejs` `prompt-engineering` `tree-of-thought` `typescript`
 
 > [!summary] 一句話摘要
-> 提供一種創意發想的技能，幫助編碼代理進行多元思考與選擇。
+> 提供一種創造性思考的技能，幫助編碼代理進行多元思考和評估。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (179 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (157 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要在創意和跨領域工作中尋求多樣化解決方案的開發者和產品經理。
-> **一句話重點** ADHD 不僅是創意生成工具，更是一種全新的思考架構，能夠有效避免過早收斂。
+> **適合** 需要在創意和跨學科工作中進行多元思考的開發者和研究人員。
+> **一句話重點** ADHD 提供了一種全新的思考方式，能夠有效避免傳統推理中的固定模式。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,103 +108,94 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，3 小時整合，得到多元的創意解決方案，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，3 小時整合，得到提升創造力的效果，值得探索。
 
 > [!abstract] 核心創新
-> ADHD 提供了一種全新的思考架構，通過多元思考和評分機制來避免過早收斂。
+> ADHD 將推理過程視為架構問題，通過生成多個獨立的推理過程來避免過早收斂。
 
 ## 專案簡介
 
-ADHD 是一個為編碼代理設計的技能，旨在解決自回歸推理中的過早收斂問題。它通過生成多個獨立的推理過程，並在不同的認知框架下進行思考，來擴展創意的範疇。使用者可以通過 CLI 指令 `adhd 'your problem here'` 來啟動這個技能，並獲得多樣化的解決方案。ADHD 的核心機制是將問題分解成多個獨立的思考過程，這樣每個過程都不會受到其他過程的影響，從而避免了傳統思考模式中的「錨定效應」。
+ADHD 是一個為編碼代理設計的技能，專注於創造性思考和多元思考的過程。它的核心機制是通過生成多個獨立的推理過程，並在不同的認知框架下進行思考，從而避免過早收斂的問題。使用者可以透過 CLI 指令 `adhd` 來啟動這個過程，並利用 `evals` 指令進行評估，從而選擇最佳的思考路徑。這種設計使得 ADHD 不僅僅依賴於提示，而是從架構上解決了推理過程中的共享上下文問題，讓每個推理過程都能獨立運行。技術上，ADHD 基於 Claude Agent SDK，並使用 TypeScript 實現，這使得它能夠在 Node.js 環境中運行，並且依賴於 `p-limit` 和 `zod` 等輕量級庫，保持了整體的輕量性和高效性。
 
-在技術實作上，ADHD 使用了 Claude Agent SDK，並依賴 TypeScript 和 Node.js，這使得它能夠在多種代理環境中運行。與其他工具相比，如 0xGF/boneyard 和 0x0funky/agent-sprite-forge，ADHD 提供了更高的創意多樣性，因為它不僅僅依賴於單一的生成模型，而是通過多個獨立的思考過程來生成想法。使用者在實際操作中可能會遇到的問題包括如何選擇合適的認知框架，以及如何有效地整合生成的想法。這個專案目前處於 beta 階段，建議在小型團隊或個人專案中試用，未來可能會進一步擴展其功能和穩定性。
+與其他工具相比，ADHD 的獨特之處在於它的樹狀思考結構，這與傳統的線性思考方式形成鮮明對比，能夠更好地處理創造性和跨學科的工作。實際使用中，ADHD 目前仍在活躍開發中，社群的參與度和問題解決率較低，這可能影響到使用者的體驗和支持。儘管如此，對於需要進行多元思考和創意發想的團隊，ADHD 提供了一個有趣的解決方案，特別是在需要快速生成和評估多個想法的情境下。未來六個月內，隨著社群的增長和功能的完善，ADHD 有潛力成為創意工作中的一個重要工具。
 
-**技術棧**：`TypeScript` · `Node.js`
+**技術棧**：`TypeScript 5.6.0` · `Node.js >=18` · `@anthropic-ai/claude-agent-sdk ^0.1.0`
 
 ## 重點功能
 
-- 多元思考 — 生成多個獨立的推理過程，避免錨定效應。
-- CLI 支持 — 使用 `adhd 'your problem here'` 指令輕鬆啟動。
-- 框架選擇 — 提供多種認知框架供使用者選擇，提升創意多樣性。
-- 評分與修剪 — 對生成的想法進行評分和修剪，確保質量。
-- 結構化輸出 — 提供清晰的結構化結果，便於後續處理和整合。
+- 多元思考生成 — 生成多個獨立的推理過程，避免過早收斂。
+- 樹狀思考結構 — 在不同的認知框架下進行思考，提升創造力。
+- CLI 操作 — 使用 `adhd` 指令啟動思考過程，並可用 `evals` 進行評估。
+- 基於 Claude Agent SDK — 利用現有的 AI 代理技術，提升整體效能。
+- 輕量依賴 — 依賴於 `p-limit` 和 `zod` 等輕量級庫，保持高效運行。
 
 ## 快速開始
 
-1. 安裝 ADHD CLI
+1. 安裝依賴
 ```bash
-npm install -g adhd-agent
+npm install
 ```
-2. 使用 CLI 生成想法
+2. 啟動 ADHD
 ```bash
-adhd '設計一個能夠承受領導者選舉的速率限制器'
+npx adhd
 ```
-3. 在程式碼中使用 ADHD 庫
+3. 執行評估
 ```bash
-import { run } from 'adhd-agent'; const result = await run({ problem: '...' });
-```
-
-## 程式碼範例
-
-```ts
-{
-  "前置條件": "安裝了 adhd-agent 庫",
-  "程式碼": "import { run } from 'adhd-agent'; const result = await run({ problem: '如何在高峰負載下分片這個隊列？', framesPerRun: 6, ideasPerFrame: 8, topK: 3 });",
-  "預期輸出": "result 將包含多個生成的想法和評分。"
-}
+npx adhd evals
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天內累積 357 stars（179/天），forks 16（4.5%），顯示出相對穩定的興趣增長。作者 Udit Akhouri 之前在 AI 代理領域有過多次貢獻，這次專案解決了創意發想過程中常見的過早收斂問題，這在現有工具中並未有良好的解決方案。近期的推廣和討論可能也促進了這個專案的曝光率。由於 forks/stars 比率為 4.5%，顯示出使用者對這個專案的實際修改和應用有一定的興趣。
+> 建立 3 天內累積 471 stars（157/天），forks 23（4.9%），顯示出一定的關注度。作者 Udit Akhouri 是一位專注於 AI 代理的開發者，這個專案解決了傳統推理過程中的收斂問題，提供了一種新的思考方式。近期的媒體報導和社群測試也引起了更多人的注意，顯示出這個工具在創意發想方面的潛力。forks/stars 比率為 4.9%，顯示出使用者對於修改和實驗的興趣，這是社群活躍度的指標。
 
 ## 適合誰使用
 
-**目標受眾**：需要在創意和跨領域工作中尋求多樣化解決方案的開發者和產品經理。
+**目標受眾**：需要在創意和跨學科工作中進行多元思考的開發者和研究人員。
 
 > [!example] 使用場景
-> - 產品經理用它來設計一個新的 API，因為它能提供多種創意解決方案，避免傳統思考的局限。
-> - 開發者用它來進行模組重構，因為 ADHD 能夠生成多元的設計選項，幫助他們找到最佳解決方案。
-> - 創意工作者用它來進行頭腦風暴，因為它能夠在不同的認知框架下產生多樣化的想法，激發靈感。
+> - AI 研究員用它來生成多個創意解決方案，因為傳統的思考方式容易陷入固定模式。
+> - 軟體開發者用它來快速評估不同的設計決策，因為能夠在多個認知框架下進行思考，避免了思維的局限性。
+> - 創意團隊用它來進行頭腦風暴，因為它能夠同時生成多個想法並進行評估，提升了創造力的輸出。
 
 ## 架構分析
 
-ADHD 的架構設計分為兩個主要階段：第一階段是多元思考，通過選擇多個認知框架來生成獨立的推理過程，這樣每個過程都不會受到其他過程的影響，避免了傳統思考中的錨定效應。第二階段是評分與修剪，通過對生成的想法進行評分、聚類和深化，最終輸出結構化的結果。這種設計使得 ADHD 能夠在創意工作中提供更高的靈活性和多樣性，但也需要更多的計算資源來處理多個並行的推理過程。整體架構的擴展性良好，但在高併發情況下可能會面臨性能瓶頸。
+ADHD 採用樹狀思考結構，這種設計使得每個推理過程都能獨立運行，避免了傳統推理方式中的上下文共享問題。資料流從用戶輸入開始，經過多個獨立的推理過程，最終由評估器進行打分和篩選。這種設計的代價在於需要更多的計算資源來支持多個推理過程的並行運行，但這也大大提升了創造力的輸出。擴展性方面，ADHD 的輕量依賴使得它能夠在多種環境中運行，但在處理大量資料時可能會遇到性能瓶頸。
 
 ## 技術深入分析
 
-ADHD 的核心技術機制是通過多元思考來生成創意，這是通過選擇多個認知框架來實現的。在第一階段，ADHD 生成多個獨立的推理過程，每個過程都在不同的認知框架下進行，這樣可以避免傳統思考中的錨定效應。第二階段則是評分與修剪，通過對生成的想法進行評分、聚類和深化，最終輸出結構化的結果。這種設計使得 ADHD 在創意工作中提供更高的靈活性和多樣性，但也需要更多的計算資源來處理多個並行的推理過程。從技術風險評估來看，ADHD 可能在高併發情況下面臨性能瓶頸，這需要在實際應用中進行測試和優化。整合到現有的開發流程中相對容易，因為它支持 CLI 和 Node.js 庫，並且可以與多種代理環境兼容。整體來說，ADHD 是一個具有潛力的創意生成工具，值得在小型團隊和個人專案中試用。
+ADHD 的核心技術機制是樹狀思考結構，這使得它能夠在多個獨立的推理過程中進行思考，避免了過早收斂的問題。這種設計使用了 Claude Agent SDK，能夠充分利用現有的 AI 代理技術。效能方面，ADHD 能夠處理多個並行的推理過程，但在資源需求上會有所增加，特別是在處理大量資料時。設計取捨上，選擇 TypeScript 和 Node.js 使得它能夠在多種環境中運行，但也可能限制了某些功能的實現。技術風險方面，社群支持的不足可能導致使用者在遇到問題時無法獲得及時的幫助。整合方面，ADHD 可以與多種 Node.js 工具鏈相容，但在與主流框架的整合上仍需進一步測試。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了多個範例，安裝過程相對順暢，但需要設置環境變數。提供了良好的快速入門指南，文件目前僅有英文版本。
+> README 文件提供了基本的安裝和使用說明，但缺乏詳細的範例。安裝過程相對順暢，但對於新手來說，可能需要額外的學習時間。文件目前僅提供英文版本，對於非英語使用者可能造成障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠生成多元的創意解決方案，避免傳統思考的局限。
-> - 結構化的輸出便於後續處理和整合。
-> - 支持多種認知框架，提升創意的多樣性。
+> - 提供多元思考的能力，適合創意工作。
+> - 基於現有的 Claude Agent SDK，技術成熟。
+> - 輕量依賴，易於安裝和使用。
 
 > [!danger] 缺點
-> - 需要設置環境變數進行身份驗證，增加了使用的複雜性。
-> - 在高併發情況下可能會遇到性能瓶頸。
-> - 目前仍在 beta 階段，可能存在不穩定性。
+> - 社群支持和問題解決率較低。
+> - 文檔和示例不夠完善，學習曲線較陡。
+> - 仍在開發中，可能存在不穩定性。
 
 > [!warning] 注意事項
-> - 目前僅支援 Node.js 18 以上版本。
-> - 需要設置 ANTHROPIC_API_KEY 環境變數以進行身份驗證。
-> - 在高併發情況下可能會遇到性能瓶頸。
+> - 目前仍在活躍開發中，社群支持和問題解決率較低。
+> - 需要 Node.js 18 以上版本，對於舊版本不兼容。
+> - 尚未有完整的文檔和示例，可能對新手造成學習障礙。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的創意生成，但主要依賴於單一的生成模型，缺乏 ADHD 的多元思考能力。 |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建代理，但不具備 ADHD 的多重認知框架和評分機制。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於代理的生成和管理，而 ADHD 更著重於思考過程的多元化。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更為簡單的思考工具，而 ADHD 則提供更複雜的樹狀思考結構。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 專注於代碼生成，而 ADHD 更加關注創意和思考過程的多元性。 |
 
 ## 替代方案決策
 
@@ -212,64 +203,75 @@ ADHD 的核心技術機制是通過多元思考來生成創意，這是通過選
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要依賴於單一的生成模型，缺乏 ADHD 的多元思考能力。 | 如果你的團隊需要一個簡單的生成工具，而不需要多元的思考過程。 | low，因為接口相對簡單，容易上手。 |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建代理，但不具備 ADHD 的多重認知框架和評分機制。 | 如果你的專案需要針對特定任務的代理生成，而不需要廣泛的創意生成。 | medium，因為需要調整現有的代理架構以適應新的工具。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於代理的生成和管理，而 ADHD 更著重於思考過程的多元化。 | 如果你的專案需要強調代理的管理和生成，而不僅僅是思考過程，則可以選擇此工具。 | medium - 需要重新設計思考過程的架構。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更為簡單的思考工具，而 ADHD 則提供更複雜的樹狀思考結構。 | 如果你的團隊需要快速上手的簡單工具，則可以考慮此選擇。 | low - 轉移到更簡單的工具相對容易。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **adhd** | **boneyard** | **agent-sprite-forge** |
+> | 維度 | **adhd** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 主要依賴於單一的生成模型，缺乏 ADHD 的多元思考能力。 | 專注於創建代理，但不具備 ADHD 的多重認知框架和評分機制。 |
-> | 遷移成本 | - | low，因為接口相對簡單，容易上手。 | medium，因為需要調整現有的代理架構以適應新的工具。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要一個簡單的生成工具，而不需要多元的思考過程。 | 如果你的專案需要針對特定任務的代理生成，而不需要廣泛的創意生 |
+> | 技術路線 | 本專案 | 專注於代理的生成和管理，而 ADHD 更著重於思考過程的多元化。 | 提供更為簡單的思考工具，而 ADHD 則提供更複雜的樹狀思考結構。 |
+> | 遷移成本 | - | medium - 需要重新設計思考過程的架構。 | low - 轉移到更簡單的工具相對容易。 |
+> | 適用場景 | 主要場景 | 如果你的專案需要強調代理的管理和生成，而不僅僅是思考過程，則 | 如果你的團隊需要快速上手的簡單工具，則可以考慮此選擇。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人試用和探索，但不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高併發情況下可能會遇到性能瓶頸
-  - 解法：減少同時運行的請求數量
-- [MEDIUM] 需要設置 ANTHROPIC_API_KEY 環境變數
-  - 解法：確保環境變數正確配置
-- [MEDIUM] 可能存在不穩定性，因為仍在 beta 階段
-  - 解法：在非關鍵專案中進行測試
+- **[HIGH]** 社群支持不足，遇到問題時可能無法獲得幫助
+  - 解法：參考官方文檔和 GitHub issues
+- [MEDIUM] 文檔不夠詳細，學習曲線較陡
+  - 解法：尋找其他使用者的經驗分享
+- [MEDIUM] 在處理大量資料時可能會遇到性能瓶頸
+  - 解法：優化推理過程的設計
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型創業團隊進行產品設計 | 非常適合 | ADHD 能夠提供多元的創意解決方案，幫助團隊突破思考限制。 |
-| 大型企業的核心產品開發 | 不適合 | 目前仍在 beta 階段，可能存在不穩定性。 |
-| 個人開發者進行創意頭腦風暴 | 非常適合 | ADHD 能夠激發多樣化的想法，適合個人使用。 |
-| 學術研究團隊進行跨領域合作 | 適合 | ADHD 的多元框架能夠促進不同領域的思考。 |
+| 需要進行創意發想的團隊 | 非常適合 | ADHD 提供多元思考的能力，能夠提升創造力的輸出。 |
+| 小型專案的開發者 | 適合 | 輕量依賴和易於安裝使其適合小型專案。 |
+| 大型企業的核心系統 | 不適合 | 目前仍在開發中，穩定性不足，無法用於生產環境。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
+| 學習時間 | ~5 小時 |
 | 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，3 小時整合，得到多元的創意解決方案，值得嘗試。
+> 花 5 小時學習，3 小時整合，得到提升創造力的效果，值得探索。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，僅存取環境變數，依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
+> 低風險：不需要高權限，且不存取敏感資料，但需注意依賴的庫是否有安全性問題。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+ADHD 最常與 Node.js 生態系統中的其他工具搭配使用，特別是在開發和測試階段。實際整合範例包括在一個使用 Express 的專案中，將 ADHD 用於生成多個 API 設計方案，具體做法是使用 `npx adhd` 指令啟動。ADHD 支援與 GitHub Actions 等 CI 工具的整合，但在與某些 IDE 的整合上可能需要額外的配置。最常見的整合問題是需要確保 Node.js 環境的版本符合要求，否則可能會導致運行錯誤。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 ADHD 出現之前，許多創意發想工具主要依賴於線性思考和提示，這導致了思考過程的局限性。隨著 AI 技術的進步，特別是 Claude Agent SDK 的出現，讓這種多元思考的工具變得可行。ADHD 代表了一種新的思考趨勢，未來可能會在創意和跨學科工作中扮演重要角色。
 
 ## 健康度儀表板
 
@@ -334,10 +336,10 @@ ADHD 的核心技術機制是通過多元思考來生成創意，這是通過選
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 16 |
+| Forks | 23 |
 | Open Issues | 15 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-05-27 |
+| 最後推送 | 2026-05-28 |
 | 建立日期 | 2026-05-25 |
 | 官方網站 | [Link](https://uditakhourii.github.io/adhd/) |
 | Repo 大小 | 1.8 MB |
@@ -363,13 +365,13 @@ ADHD 的核心技術機制是通過多元思考來生成創意，這是通過選
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放問題尚有 15 個未解決。
+**社群活躍度**：社群活躍度較低，問題解決率為 0%。
 **連結**：[文件](https://uditakhourii.github.io/adhd/)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-26 ~ 2026-05-27）
-> **活躍天數** 2 天 · **最新 commit** Add External reviews section linking mxriverlynn's analysis
+> [!abstract] 最近 10 次 commit（2026-05-27 ~ 2026-05-28）
+> **活躍天數** 2 天 · **最新 commit** Add Early adopters section; repowire is the first entry
 
 ## 熱門議題
 
@@ -379,8 +381,8 @@ ADHD 的核心技術機制是通過多元思考來生成創意，這是通過選
 > | [#18](https://github.com/UditAkhourii/adhd/issues/18) | Run evals at K=10 and K=20 to bridge K=5 (ours) vs K=100 (li `evals` `paper` `methodology` | 1 | 0 |
 > | [#17](https://github.com/UditAkhourii/adhd/issues/17) | Distinguish ADHD frames from personas (A5) and from domain s `documentation` `paper` `methodology` | 1 | 0 |
 > | [#16](https://github.com/UditAkhourii/adhd/issues/16) | Address A7 (CHI 2025) human-in-loop counter-evidence in pape `documentation` `paper` `methodology` | 1 | 0 |
+> | [#14](https://github.com/UditAkhourii/adhd/issues/14) | Run head-to-head evals vs MoA, Self-Consistency, GPT-5 Pro,  `evals` `paper` `methodology` | 1 | 0 |
 > | [#15](https://github.com/UditAkhourii/adhd/issues/15) | Cluster-level narrowing instead of idea-level deepening `enhancement` `architecture` | 0 | 0 |
-> | [#14](https://github.com/UditAkhourii/adhd/issues/14) | Run head-to-head evals vs MoA, Self-Consistency, GPT-5 Pro,  `evals` `paper` `methodology` | 0 | 0 |
 
 ## README 摘錄
 
@@ -390,220 +392,153 @@ ADHD 的核心技術機制是通過多元思考來生成創意，這是通過選
 > [](https://github.com/UditAkhourii/adhd/actions/workflows/ci.yml)
 > [](https://www.npmjs.com/package/adhd-agent)
 > [](./LICENSE)
-> [](#install)
+> [](./documentation/install.md)
 > [](https://adhdstack.github.io/)
+> [](https://thenewstack.io/claude-code-adhd/)
 > 
 > > **An architectural fix for premature convergence in autoregressive reasoning.**
 > 
-> 📄 **Preprint:** [ADHD: Parallel Divergent Ideation for Coding Agents](https://adhdstack.github.io/)
-> 👤 **Author:** Udit Akhouri — [@akhouriudit](https://x.com/akhouriudit) · [LinkedIn](https://www.linkedin.com/in/udit-akhouri-10160a168/) · researchudit@gmail.com
+> Linear Chain-of-Thought anchors on whatever it says first. Tree-of-Thought widens the search but still walks a single shared context, so the anchoring persists across branches. **ADHD treats this as an architectural problem, not a prompting one** — it spawns N isolated reasoning processes under deliberately distorted cognitive frames, with zero shared context during divergence, then runs a separate critic pass to score, cluster, prune traps, and deepen the survivors.
 > 
-> Linear Chain-of-Thought gets trapped in local minima: each generated token conditions the next, so the model anchors on whatever it said first. Tree-of-Thought widens the search but still walks a single shared context, so anchoring persists across branches. **ADHD treats this as an architectural problem, not a prompting one** — it spawns N isolated reasoning processes under deliberately distorted cognitive frames, with zero shared context during divergence, then runs a separate critic pass to score, cluster, prune traps, and deepen survivors.
+> Reach for it on **design decisions, fuzzy debugging, naming, API surface design, strategy, and any prompt of the shape *"give me a few ways to…"***.
 > 
-> Like Steve Jobs' *connecting the dots* — but the dots get generated under deliberate cognitive distortion first, in parallel, with the critic switched off, before any of them are evaluated.
-> 
-> It is the no-brainer skill to reach for on **creative work, interdisciplinary work, design decisions, fuzzy debugging, naming, API surface design, strategy, positioning, and any prompt of the shape *"give me a few ways to…"***.
-> 
-> Ships three ways: as an **agent skill** ([`skills/adhd/SKILL.md`](./skills/adhd/SKILL.md), drop-in via `npx skills add UditAkhourii/adhd`, works in Claude Code, Cursor, Antigravity, Codex, and ~50 more), as a **Node/TS library** ([`adhd-agent`](https://www.npmjs.com/package/adhd-agent) on npm), and as a **CLI** (`adhd "your problem here"`). The library and CLI are built on the [Claude Agent SDK](https://docs.claude.com/en/api/agent-sdk).
+> 📄 **Preprint:** [ADHD: Parallel Divergent Ideation for Coding Agents](https://adhdstack.github.io/) · 👤 **Author:** Udit Akhouri — [@akhouriudit](https://x.com/akhouriudit) · [LinkedIn](https://www.linkedin.com/in/udit-akhouri-10160a168/)
 > 
 > ---
 > 
+> ## Featured
+> 
+> - 🔌 **Adopted by [repowire](https://github.com/prassanna-ravishankar/repowire)** — the first OSS project to officially ship ADHD. Its maintainer ported the framework onto repowire's mesh-orchestrator primitives in [PR #313](https://github.com/prassanna-ravishankar/repowire/pull/313) (merged): frames become frame-shifted temp peers, the generator/critic split maps onto separate peers vs. the orchestrator's own turn, attribution via `metadata.based-on` (MIT).
+> - 📰 **[The New Stack](https://thenewstack.io/claude-code-adhd/)** ran a feature story on ADHD for Claude Code.
+> - 💬 **OpenClaw / multi-agent community** is independently testing it across agents. One tester: *"I read it, installed it on two different agents… I actually love it. This is great. I thought this was gonna be another useless post. But no, it wasn't."*
+> - 🔬 An independent **[evidence-based research review](https://github.com/testdouble/han/blob/adhd-swarm-research/docs/research/adhd-application-to-han.md)** (11 sources, 8 validation rounds) was published against the method — findings tracked openly as [issues #16–#18](https://github.com/UditAkhourii/adhd/issues).
+> 
+> ---
+> 
+> ## Early adopters
+> 
+> Projects that officially ship or integrate ADHD:
+> 
+> | Project | What they did | Status |
+> |---|---|---|
+> | [**repowire**](https://github.com/prassanna-ravishankar/repowire) | Ported ADHD onto repowire's mesh-orchestrator primitives — frames become frame-shifted temp peers, generator/critic split maps to separate peers vs. the orchestrator's turn. Ships in the default orchestrator template. ([PR #313](https://github.com/prassanna-ravishankar/repowire/pull/313)) | ✅ Merged · MIT attribution |
+> 
+> Shipping ADHD in your project? Open a PR adding it here, or [open an issue](https://github.com/UditAkhourii/adhd/issues/new) and we'll add you.
+> 
+> ---
 > 
 > ## Install
 > 
-> 
-> ### Manual install (if you do not have npx)
-> 
-> The skill file is at [`skills/adhd/SKILL.md`](./skills/adhd/SKILL.md). Curl it into your agent's skill directory:
-> 
-> ```bash
-> 
-> ### Programmatic install (Agent SDK)
-> 
-> ```ts
-> import { query } from "@anthropic-ai/claude-agent-sdk";
-> import { readFileSync } from "node:fs";
-> 
-> const skill = readFileSync("./skills/adhd/SKILL.md", "utf8");
-> 
-> for await (const m of query({
->   prompt: "design a retry strategy for a CLI whose LLM hangs for 90s",
->   options: {
->     systemPrompt: { type: "preset", preset: "claude_code", append: skill },
->     allowedTools: ["Task"],
->   },
-> })) {
->   // …
-> }
-> ```
-> 
-> 
-> ## Quickstart
-> 
-> 
-> ### As a CLI (terminal usage, no agent needed)
-> 
-> ```bash
-> npm install -g adhd-agent
-> adhd "design a rate limiter that survives a leader election"
-> ```
-> 
-> Auth: picks up `ANTHROPIC_API_KEY` from the environment, or inherits auth from a local Claude Code install.
-> 
-> 
-> ## Library API (TypeScript)
-> 
-> ```ts
-> import { run, renderText, FRAMES, selectFrames } from "adhd-agent";
-> import type {
->   RunOptions, RunResult, Idea, Branch, Cluster,
->   DeepenedIdea, Score, RunEvent,
-> } from "adhd-agent";
-> 
-> type RunOptions = {
->   problem: string;
->   context?: string;
->   framesPerRun?: number;   // default 5
->   ideasPerFrame?: number;  // default 6
->   topK?: number;           // default 3
->   concurrency?: number;    // default 4
->   codeMode?: boolean;      // default true
->   model?: string;
->   onEvent?: (e: RunEvent) => void;
-> };
-> ```
-> 
-> Everything in `RunResult` is structured — clusters, scored ideas with `novelty / viability / fit`, trap reasons, deepened sketches with child ideas. You can route it into your own renderer, downstream agent, or planning loop.
-> 
-> ---
-> 
-> 
-> ## Why this is the no-brainer skill for creative and interdisciplinary work
-> 
-> Creative and cross-domain work is exactly the regime where premature convergence costs the most.
-> 
-> - The right answer is often **not in any one domain's playbook** — you need to *transplant* a mechanism. ADHD's cross-domain frames (biology, logistics, game design, markets) do this on purpose.
-> - The textbook answer is usually a **trap** — it looks right because it's familiar. ADHD's separate critic pass flags traps with named reasons, not just "could be risky."
-> - The interesting ideas live in the **awkward middle** — past the first 3, before the absurd. Single-pass generation never gets there because each token is biased by the previous one. Parallel isolated branches do.
-> - You don't always know **what good looks like** yet. ADHD's cluster pass surfaces the *shape* of the design space so you can argue at the angle level, not idea-by-idea.
-> 
-> In one line: **ADHD is what to reach for the moment a single-pass agent would give you a competent, forgettable answer.**
-> 
-> ---
-> 
-> 
-> ### One command, every agent
+> One command, auto-detects your agent (Claude Code, Cursor, Antigravity, Codex, Cline, Gemini CLI, Windsurf, and ~50 more):
 > 
 > ```bash
 > npx skills add UditAkhourii/adhd
 > ```
 > 
-> That is it. The [`skills`](https://github.com/vercel-labs/skills) CLI detects which agent you are using and drops [`skills/adhd/SKILL.md`](./skills/adhd/SKILL.md) into the right place. Supports **Claude Code, Claude.ai, Antigravity, Cursor, Codex, Cline, Continue, Aider, Gemini CLI, Windsurf, Cody, Roo, Augment, OpenCode, Kilo, Kimi, Qwen, Trae, Replit, Warp**, and ~40 more.
-> 
-> Restart your agent. The skill auto-triggers on brainstorm, ideate, design, naming, refactor, and "give me a few ways to" intents. Or invoke it explicitly: `/adhd "design a rate limiter that survives a leader election"`.
-> 
-> Useful flags:
+> Then invoke explicitly with `/adhd "your problem"`, or let it auto-trigger on ideation intents. CLI and library installs, manual curl, and per-platform paths are in **[documentation/install.md](./documentation/install.md)**.
 > 
 > ```bash
-> npx skills add UditAkhourii/adhd -g            # install globally instead of per-project
-> npx skills add UditAkhourii/adhd -a claude-code -a cursor   # target specific agents
-> npx skills add UditAkhourii/adhd --copy        # copy files instead of symlinking
-> npx skills add UditAkhourii/adhd --list        # see what skills the repo offers
-> ```
-> 
-> 
-> # Claude Code (global)
-> mkdir -p ~/.claude/skills/adhd
-> curl -fsSL https://raw.githubusercontent.com/UditAkhourii/adhd/main/skills/adhd/SKILL.md \
->   -o ~/.claude/skills/adhd/SKILL.md
-> 
-> 
-> # Claude Code (per-project)
-> mkdir -p .claude/skills/adhd
-> curl -fsSL https://raw.githubusercontent.com/UditAkhourii/adhd/main/skills/adhd/SKILL.md \
->   -o .claude/skills/adhd/SKILL.md
-> 
-> 
-> # Cursor (project rules)
-> curl -fsSL https://raw.githubusercontent.com/UditAkhourii/adhd/main/skills/adhd/SKILL.md >> .cursorrules
-> ```
-> 
-> For **Claude.ai web/desktop**: open project settings → **Skills** → **Add skill** → upload [`skills/adhd/SKILL.md`](./skills/adhd/SKILL.md).
-> 
-> For **Cline, Continue, Aider, Roo Code, and other agents**: paste the body of [`SKILL.md`](./skills/adhd/SKILL.md) (skip the YAML frontmatter) into your agent's system prompt or rules field.
-> 
-> 
-> ### As a library (inside your own agent)
-> 
-> ```bash
-> npm install adhd-agent
-> ```
-> 
-> ```ts
-> import { run } from "adhd-agent";
-> const result = await run({ problem: "...", framesPerRun: 5, topK: 3 });
-> ```
-> 
-> 
-> ### From source
-> 
-> ```bash
-> git clone https://github.com/UditAkhourii/adhd.git
-> cd adhd && npm install && npm run build
+> npm install -g adhd-agent     # CLI
+> npm install adhd-agent        # library
 > ```
 > 
 > ---
 > 
-> 
-> ### CLI
+> ## Quickstart
 > 
 > ```bash
 > adhd "design a rate limiter that survives a leader election"
-> 
 > adhd "name this function" --frames 3 --ideas 8 --top 2
-> 
-> adhd "we have a CLI that hangs for 90s on LLM calls. what's the right retry/UX?" \
->     --frames 5 --ideas 6 --top 3 --context ./client.ts
-> 
-> adhd "..." --json > result.json
 > ```
-> 
-> 
-> ### Library
 > 
 > ```ts
 > import { run, renderText } from "adhd-agent";
 > 
-> const result = await run({
->   problem: "How should we shard this queue under bursty load?",
->   context: readFileSync("./queue.ts", "utf8"),
->   framesPerRun: 6,
->   ideasPerFrame: 8,
->   topK: 3,
->   onEvent: (e) => console.error(e),
-> });
-> 
+> const result = await run({ problem: "How should we shard this queue under bursty load?", framesPerRun: 5, topK: 3 });
 > console.log(renderText(result));
-> // or operate on:
-> //   result.shortlist        → 2–4 most promising ideas with scores
-> //   result.nonObviousPick   → the highest-novelty viable one
-> //   result.traps            → "looks good but isn't" list, with reasons
-> //   result.deepened         → top-K expanded: sketch + risk + first step + child ideas
-> //   result.clusters         → the SHAPE of the idea space
+> // result.shortlist · result.nonObviousPick · result.traps · result.deepened · result.clusters
 > ```
+> 
+> Full reference: **[documentation/api.md](./documentation/api.md)**.
 > 
 > ---
 > 
+> ## How it works
 > 
-> ## What ADHD actually is
+> A two-phase loop with a hard wall between the phases.
 > 
-> A two-phase loop with a hard wall between the pha
+> 1. **Diverge.** Pick N cognitive frames. Spawn N parallel, **isolated** Agent calls — each sees the problem plus one frame's vantage prompt, and a system prompt that forbids evaluation. Branches never see each other, so no anchoring.
+> 2. **Focus.** A separate critic call scores every idea (`novelty / viability / fit`), flags traps with reasons, clusters by underlying angle, and deepens the top-K survivors into sketches with risks and first steps.
+> 
+> The generator-critic split is **mechanical** — separate LLM calls with opposite system prompts — not promised in one prompt. Deep dive: **[documentation/how-it-works.md](./documentation/how-it-works.md)**. How it differs from CoT and ToT: **[documentation/vs-cot-and-tot.md](./documentation/vs-cot-and-tot.md)**.
+> 
+> ---
+> 
+> ## Results
+> 
+> Mean scores across 6 open-ended engineering problems (0–10), ADHD vs a single-shot baseline at the same model, judged by an independent LLM with a skeptical-staff-engineer prompt, A/B order randomized.
+> 
+> | Dimension          | ADHD     | Baseline | Δ         | Ratio |
+> | ------------------ | -------: | -------: | --------: | ----: |
+> | breadth            | **9.00** | 4.83     | **+4.17** | 1.9×  |
+> | novelty            | **7.83** | 2.67     | **+5.17** | 2.9×  |
+> | trap detection     | **9.50** | 1.83     | **+7.67** | 5.2×  |
+> | actionability      | **9.50** | 6.50     | **+3.00** | 1.5×  |
+> | builder usefulness | **7.67** | 6.83     | **+0.83** | 1.1×  |
+> 
+> **ADHD wins 5 of 6 problems.** Biggest gap is trap detection — baselines rarely name the seductive-but-broken ideas. Methodology, limitations, and how to reproduce: **[documentation/evals.md](./documentation/evals.md)**.
+> 
+> ---
+> 
+> ## Documentation
+> 
+> | Page | What's in it |
+> |---|---|
+> | [Install](./documentation/install.md) | Every install path — skill, CLI, library, Agent SDK, per-platform |
+> | [How it works](./documentation/how-it-works.md) | The two-phase loop + architecture (context, pruning, orchestration) |
+> | [vs CoT & ToT](./documentation/vs-cot-and-tot.md) | Structural comparison, the three load-bearing differences, frames vs personas |
+> | [Frames](./documentation/frames.md) | The 15 cognitive frames, how selection works, how to author your own |
+> | [When to use](./documentation/when-to-use.md) | Use / don't use, why it shines on creative work, cost & speed |
+> | [CLI & API](./documentation/api.md) | CLI flags, library types, using ADHD inside your own agent |
+> | [Evals](./documentation/evals.md) | Methodology, headline numbers, limitations, roadmap |
+> 
+> Also: [SKILL.md](./skills/adhd/SKILL.md) (the runnable skill) · [SOURCE-SPEC.md](./SOURCE-SPEC.md) (original spec) · [CONTRIBUTING.md](./CONTRIBUTING.md) · [the preprint](https://adhdstack.github.io/).
+> 
+> ---
+> 
+> ## Star History
+> 
+>   
+> 
+> ---
+> 
+> ## External reviews
+> 
+> - [**Han plugin compatibility analysis**](https://github.com/testdouble/han/blob/adhd-swarm-research/docs/research/adhd-application-to-han.md) by [@mxriverlynn](https://www.reddit.com/user/mxriverlynn) — evidence-based review using Han's own `/research` skill, 11 sources, 8 validation rounds. Findings tracked as issues [#16](https://github.com/UditAkhourii/adhd/issues/16), [#17](https://github.com/UditAkhourii/adhd/issues/17), [#18](https://github.com/UditAkhourii/adhd/issues/18).
+> 
+> ---
+> 
+> ## License
+> 
+> MIT License.
+> 
+> ADHD operationalizes the *Divergent Ideation* source spec ([SOURCE-SPEC.md](./SOURCE-SPEC.md)). The runnable skill is at [`skills/adhd/SKILL.md`](./skills/adhd/SKILL.md).
+> 
+> ---
+> 
+> ## Contact
+> 
+> **Udit Akhouri** — author of the preprint and maintainer.
+> 
+> [adhdstack.github.io](https://adhdstack.github.io/) · [@akhouriudit](https://x.com/akhouriudit) · [LinkedIn](https://www.linkedin.com/in/udit-akhouri-10160a168/) · [researchudit@gmail.com](mailto:researchudit@gmail.com) · [@UditAkhourii](https://github.com/UditAkhourii)
+> 
+> Open to collaboration with research labs and applied-AI teams 
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[創造力]] · [[思維導圖]]
+相關概念：[[多模態]] · [[創造力]] · [[思考框架]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]] · [[MemPalace--mempalace|MemPalace/mempalace]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]]
 
 [GitHub](https://github.com/UditAkhourii/adhd) · [官方網站](https://uditakhourii.github.io/adhd/)
 
@@ -645,7 +580,7 @@ ADHD 的核心技術機制是通過多元思考來生成創意，這是通過選
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["多模態","創造力","思維導圖"];
+> const concepts = ["多模態","創造力","思考框架"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "UditAkhourii--adhd" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
