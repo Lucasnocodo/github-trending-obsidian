@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Local Responses-API shim that exposes Factory BYOK models (and optional ChatGPT GPT-5.5 passthrough) to Codex Desktop."
 homepage: ""
-stars: 659
-stars_per_day: 132
-forks: 57
-open_issues: 0
+stars: 703
+stars_per_day: 117
+forks: 59
+open_issues: 1
 created: 2026-05-22
-pushed_at: 2026-05-27
+pushed_at: 2026-05-28
 first_seen: 2026-05-26
 week: "2026-W22"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "讓 Codex Desktop 支援任何 BYOK 模型，並可選擇性地透過
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-06-04"
+appearances: 4
+next_review: "2026-06-05"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 60
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-26"
-star_history: "2026-05-26:593,2026-05-26:593,2026-05-27:635,2026-05-28:659"
+star_history: "2026-05-26:593,2026-05-26:593,2026-05-27:635,2026-05-28:659,2026-05-29:703"
 tags:
   - github
   - "category/開發工具"
@@ -950,6 +950,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-29|2026-05-29]] — 再次上榜，703 stars
 - [[2026-05-28|2026-05-28]] — 再次上榜，659 stars
 - [[2026-05-27|2026-05-27]] — 再次上榜，635 stars
 - [[2026-05-26|2026-05-26]] — 首次收錄，593 stars

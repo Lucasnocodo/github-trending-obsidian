@@ -7,12 +7,12 @@ language: Vue
 license: MIT
 description: "🗺️ Think like a software architect, not just a coder — 21 architecture maps (incl. AI gateway, RAG, agents, inference serving, vector DB) + a language-agnostic system-design tutorial. Every template links to real open-source prototypes. 中英文双语。"
 homepage: ""
-stars: 569
-stars_per_day: 142
-forks: 55
+stars: 727
+stars_per_day: 145
+forks: 75
 open_issues: 0
 created: 2026-05-23
-pushed_at: 2026-05-27
+pushed_at: 2026-05-28
 first_seen: 2026-05-28
 week: "2026-W22"
 month: "2026-05"
@@ -30,10 +30,10 @@ use_case: "幫助開發者從架構思維出發，設計高效系統的開源知
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-04"
+appearances: 2
+next_review: "2026-06-05"
 contributor_count: 1
-engagement: "low"
+engagement: "medium"
 issue_close_rate: -1
 repo_size_kb: 1286
 readme_length: 7057
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-28"
-star_history: "2026-05-28:569"
+star_history: "2026-05-28:569,2026-05-29:727"
 tags:
   - github
   - "category/開發工具"
@@ -556,7 +556,7 @@ npm run docs:dev
 
 相關概念：[[架構決策記錄]] · [[微服務]] · [[系統設計面試]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]]
 
 [GitHub](https://github.com/study8677/awesome-architecture)
 
@@ -852,4 +852,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-29|2026-05-29]] — 再次上榜，727 stars
 - [[2026-05-28|2026-05-28]] — 首次收錄，569 stars

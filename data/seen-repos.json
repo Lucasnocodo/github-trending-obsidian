@@ -1919,10 +1919,10 @@
   },
   "open-gsd/get-shit-done-redux": {
     "first_seen": "2026-05-25",
-    "last_seen": "2026-05-28",
-    "times_seen": 4,
+    "last_seen": "2026-05-29",
+    "times_seen": 5,
     "stars_first": 566,
-    "stars_last": 1344
+    "stars_last": 1576
   },
   "Tong89/smartNode": {
     "first_seen": "2026-05-25",
@@ -1940,10 +1940,10 @@
   },
   "0xSero/codex-shim": {
     "first_seen": "2026-05-26",
-    "last_seen": "2026-05-28",
-    "times_seen": 3,
+    "last_seen": "2026-05-29",
+    "times_seen": 4,
     "stars_first": 593,
-    "stars_last": 659
+    "stars_last": 703
   },
   "run-liyi/wechatpay": {
     "first_seen": "2026-05-26",
@@ -1954,17 +1954,17 @@
   },
   "MoonshotAI/kimi-code": {
     "first_seen": "2026-05-26",
-    "last_seen": "2026-05-28",
-    "times_seen": 3,
+    "last_seen": "2026-05-29",
+    "times_seen": 4,
     "stars_first": 500,
-    "stars_last": 889
+    "stars_last": 1245
   },
   "zhaoyue4810/pianke": {
     "first_seen": "2026-05-26",
-    "last_seen": "2026-05-28",
-    "times_seen": 3,
+    "last_seen": "2026-05-29",
+    "times_seen": 4,
     "stars_first": 400,
-    "stars_last": 502
+    "stars_last": 525
   },
   "KNG7-P/Se7en-Pro": {
     "first_seen": "2026-05-27",
@@ -1975,10 +1975,10 @@
   },
   "study8677/awesome-architecture": {
     "first_seen": "2026-05-28",
-    "last_seen": "2026-05-28",
-    "times_seen": 1,
+    "last_seen": "2026-05-29",
+    "times_seen": 2,
     "stars_first": 569,
-    "stars_last": 569
+    "stars_last": 727
   },
   "XingYu-Zhong/DeepSeek-GUI": {
     "first_seen": "2026-05-28",
@@ -1996,9 +1996,37 @@
   },
   "UditAkhourii/adhd": {
     "first_seen": "2026-05-28",
-    "last_seen": "2026-05-28",
-    "times_seen": 1,
+    "last_seen": "2026-05-29",
+    "times_seen": 2,
     "stars_first": 354,
-    "stars_last": 354
+    "stars_last": 468
+  },
+  "OpenBMB/PilotDeck": {
+    "first_seen": "2026-05-29",
+    "last_seen": "2026-05-29",
+    "times_seen": 1,
+    "stars_first": 1524,
+    "stars_last": 1524
+  },
+  "op7418/guizang-social-card-skill": {
+    "first_seen": "2026-05-29",
+    "last_seen": "2026-05-29",
+    "times_seen": 1,
+    "stars_first": 783,
+    "stars_last": 783
+  },
+  "harrietteehisqu7759383/kms-pico-latest-april-2026": {
+    "first_seen": "2026-05-29",
+    "last_seen": "2026-05-29",
+    "times_seen": 1,
+    "stars_first": 447,
+    "stars_last": 447
+  },
+  "alfiyahkamilah1239298/WallpaperDownloader-26": {
+    "first_seen": "2026-05-29",
+    "last_seen": "2026-05-29",
+    "times_seen": 1,
+    "stars_first": 398,
+    "stars_last": 398
   }
 }
