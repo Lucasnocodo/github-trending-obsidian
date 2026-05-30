@@ -7,9 +7,9 @@ language: HTML
 license: AGPL-3.0
 description: "🪧 Claude Code / Codex skill — generate Xiaohongshu carousels & WeChat 21:9+1:1 cover pairs. Editorial × Swiss visual systems, 28 layouts, 10 themes, single-file HTML → PNG. 小红书图文 + 公众号封面对"
 homepage: "https://github.com/op7418/guizang-social-card-skill"
-stars: 783
-stars_per_day: 783
-forks: 101
+stars: 1168
+stars_per_day: 584
+forks: 134
 open_issues: 0
 created: 2026-05-27
 pushed_at: 2026-05-27
@@ -30,8 +30,8 @@ use_case: "生成小紅書和微信封面的圖文卡片，適合多種社交媒
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-01"
+appearances: 2
+next_review: "2026-06-02"
 contributor_count: 0
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-29"
-star_history: "2026-05-29:783"
+star_history: "2026-05-29:783,2026-05-30:1168"
 tags:
   - github
   - "category/開發工具"
@@ -917,4 +917,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-30|2026-05-30]] — 再次上榜，1.2k stars
 - [[2026-05-29|2026-05-29]] — 首次收錄，783 stars

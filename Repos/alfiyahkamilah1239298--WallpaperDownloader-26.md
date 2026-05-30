@@ -7,10 +7,10 @@ language: TypeScript
 license: Apache-2.0
 description: "A comprehensive community toolkit for organizing, creating, and managing dynamic wallpaper projects and assets, enhancing your Wallpaper Engine experience."
 homepage: ""
-stars: 398
-stars_per_day: 398
+stars: 400
+stars_per_day: 400
 forks: 0
-open_issues: 0
+open_issues: 1
 created: 2026-05-28
 pushed_at: 2026-05-28
 first_seen: 2026-05-29
@@ -30,8 +30,8 @@ use_case: "提供一個社群工具包，用於組織、創建和管理動態桌
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-01"
+appearances: 2
+next_review: "2026-06-02"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-29"
-star_history: "2026-05-29:398,2026-05-29:398"
+star_history: "2026-05-29:398,2026-05-29:398,2026-05-30:400"
 tags:
   - github
   - "category/開發工具"
@@ -710,4 +710,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-30|2026-05-30]] — 再次上榜，400 stars
 - [[2026-05-29|2026-05-29]] — 首次收錄，398 stars

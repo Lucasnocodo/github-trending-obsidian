@@ -7,9 +7,9 @@ language: Vue
 license: MIT
 description: "🗺️ Think like a software architect, not just a coder — 21 architecture maps (incl. AI gateway, RAG, agents, inference serving, vector DB) + a language-agnostic system-design tutorial. Every template links to real open-source prototypes. 中英文双语。"
 homepage: ""
-stars: 727
-stars_per_day: 145
-forks: 75
+stars: 817
+stars_per_day: 136
+forks: 83
 open_issues: 0
 created: 2026-05-23
 pushed_at: 2026-05-28
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-28
 use_case: "幫助開發者從架構思維出發，設計高效系統的開源知識庫。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-06-05"
+appearances: 3
+next_review: "2026-06-06"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-28"
-star_history: "2026-05-28:569,2026-05-29:727"
+star_history: "2026-05-28:569,2026-05-29:727,2026-05-30:817"
 tags:
   - github
   - "category/開發工具"
@@ -852,5 +852,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-30|2026-05-30]] — 再次上榜，817 stars
 - [[2026-05-29|2026-05-29]] — 再次上榜，727 stars
 - [[2026-05-28|2026-05-28]] — 首次收錄，569 stars

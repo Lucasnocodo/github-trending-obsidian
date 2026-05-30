@@ -1975,10 +1975,10 @@
   },
   "study8677/awesome-architecture": {
     "first_seen": "2026-05-28",
-    "last_seen": "2026-05-29",
-    "times_seen": 2,
+    "last_seen": "2026-05-30",
+    "times_seen": 3,
     "stars_first": 569,
-    "stars_last": 727
+    "stars_last": 817
   },
   "XingYu-Zhong/DeepSeek-GUI": {
     "first_seen": "2026-05-28",
@@ -1996,10 +1996,10 @@
   },
   "UditAkhourii/adhd": {
     "first_seen": "2026-05-28",
-    "last_seen": "2026-05-29",
-    "times_seen": 2,
+    "last_seen": "2026-05-30",
+    "times_seen": 3,
     "stars_first": 354,
-    "stars_last": 468
+    "stars_last": 516
   },
   "OpenBMB/PilotDeck": {
     "first_seen": "2026-05-29",
@@ -2010,23 +2010,58 @@
   },
   "op7418/guizang-social-card-skill": {
     "first_seen": "2026-05-29",
-    "last_seen": "2026-05-29",
-    "times_seen": 1,
+    "last_seen": "2026-05-30",
+    "times_seen": 2,
     "stars_first": 783,
-    "stars_last": 783
+    "stars_last": 1168
   },
   "harrietteehisqu7759383/kms-pico-latest-april-2026": {
     "first_seen": "2026-05-29",
-    "last_seen": "2026-05-29",
-    "times_seen": 1,
+    "last_seen": "2026-05-30",
+    "times_seen": 2,
     "stars_first": 447,
-    "stars_last": 447
+    "stars_last": 449
   },
   "alfiyahkamilah1239298/WallpaperDownloader-26": {
     "first_seen": "2026-05-29",
-    "last_seen": "2026-05-29",
-    "times_seen": 1,
+    "last_seen": "2026-05-30",
+    "times_seen": 2,
     "stars_first": 398,
-    "stars_last": 398
+    "stars_last": 400
+  },
+  "helloianneo/ian-xiaohei-illustrations": {
+    "first_seen": "2026-05-30",
+    "last_seen": "2026-05-30",
+    "times_seen": 1,
+    "stars_first": 817,
+    "stars_last": 817
+  },
+  "withkynam/vibecode-pro-max-kit": {
+    "first_seen": "2026-05-30",
+    "last_seen": "2026-05-30",
+    "times_seen": 1,
+    "stars_first": 507,
+    "stars_last": 507
+  },
+  "Michaelliv/pi-dynamic-workflows": {
+    "first_seen": "2026-05-30",
+    "last_seen": "2026-05-30",
+    "times_seen": 1,
+    "stars_first": 436,
+    "stars_last": 436
+  },
+  "baoweise-bot/aimili-vpngate": {
+    "first_seen": "2026-05-30",
+    "last_seen": "2026-05-30",
+    "times_seen": 1,
+    "stars_first": 401,
+    "stars_last": 401
+  },
+  "FlashML-org/flashlib": {
+    "first_seen": "2026-05-30",
+    "last_seen": "2026-05-30",
+    "times_seen": 1,
+    "stars_first": 392,
+    "stars_last": 392
   }
 }
