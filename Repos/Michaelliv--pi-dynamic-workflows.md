@@ -7,10 +7,10 @@ language: TypeScript
 license: N/A
 description: ""
 homepage: ""
-stars: 437
-stars_per_day: 437
-forks: 19
-open_issues: 12
+stars: 576
+stars_per_day: 288
+forks: 29
+open_issues: 18
 created: 2026-05-28
 pushed_at: 2026-05-28
 first_seen: 2026-05-30
@@ -30,8 +30,8 @@ use_case: "為 Pi 提供 Claude-Code 風格的動態工作流程編排，讓多�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-02"
+appearances: 2
+next_review: "2026-06-03"
 contributor_count: 0
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-30"
-star_history: "2026-05-30:436,2026-05-30:437"
+star_history: "2026-05-30:436,2026-05-30:437,2026-05-31:576"
 tags:
   - github
   - "category/開發工具"
@@ -836,4 +836,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-05-31|2026-05-31]] — 再次上榜，576 stars
 - [[2026-05-30|2026-05-30]] — 首次收錄，436 stars

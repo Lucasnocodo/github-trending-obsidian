@@ -1996,10 +1996,10 @@
   },
   "UditAkhourii/adhd": {
     "first_seen": "2026-05-28",
-    "last_seen": "2026-05-30",
-    "times_seen": 3,
+    "last_seen": "2026-05-31",
+    "times_seen": 4,
     "stars_first": 354,
-    "stars_last": 516
+    "stars_last": 602
   },
   "OpenBMB/PilotDeck": {
     "first_seen": "2026-05-29",
@@ -2010,10 +2010,10 @@
   },
   "op7418/guizang-social-card-skill": {
     "first_seen": "2026-05-29",
-    "last_seen": "2026-05-30",
-    "times_seen": 2,
+    "last_seen": "2026-05-31",
+    "times_seen": 3,
     "stars_first": 783,
-    "stars_last": 1168
+    "stars_last": 1625
   },
   "harrietteehisqu7759383/kms-pico-latest-april-2026": {
     "first_seen": "2026-05-29",
@@ -2031,31 +2031,31 @@
   },
   "helloianneo/ian-xiaohei-illustrations": {
     "first_seen": "2026-05-30",
-    "last_seen": "2026-05-30",
-    "times_seen": 1,
+    "last_seen": "2026-05-31",
+    "times_seen": 2,
     "stars_first": 817,
-    "stars_last": 817
+    "stars_last": 1133
   },
   "withkynam/vibecode-pro-max-kit": {
     "first_seen": "2026-05-30",
-    "last_seen": "2026-05-30",
-    "times_seen": 1,
+    "last_seen": "2026-05-31",
+    "times_seen": 2,
     "stars_first": 507,
-    "stars_last": 507
+    "stars_last": 594
   },
   "Michaelliv/pi-dynamic-workflows": {
     "first_seen": "2026-05-30",
-    "last_seen": "2026-05-30",
-    "times_seen": 1,
+    "last_seen": "2026-05-31",
+    "times_seen": 2,
     "stars_first": 436,
-    "stars_last": 436
+    "stars_last": 576
   },
   "baoweise-bot/aimili-vpngate": {
     "first_seen": "2026-05-30",
-    "last_seen": "2026-05-30",
-    "times_seen": 1,
+    "last_seen": "2026-05-31",
+    "times_seen": 2,
     "stars_first": 401,
-    "stars_last": 401
+    "stars_last": 512
   },
   "FlashML-org/flashlib": {
     "first_seen": "2026-05-30",
@@ -2063,5 +2063,33 @@
     "times_seen": 1,
     "stars_first": 392,
     "stars_last": 392
+  },
+  "MatinSenPai/SenPaiScanner": {
+    "first_seen": "2026-05-31",
+    "last_seen": "2026-05-31",
+    "times_seen": 1,
+    "stars_first": 595,
+    "stars_last": 595
+  },
+  "Sophomoresty/gemini-web2api": {
+    "first_seen": "2026-05-31",
+    "last_seen": "2026-05-31",
+    "times_seen": 1,
+    "stars_first": 519,
+    "stars_last": 519
+  },
+  "2aronS/Duel-Agents": {
+    "first_seen": "2026-05-31",
+    "last_seen": "2026-05-31",
+    "times_seen": 1,
+    "stars_first": 459,
+    "stars_last": 459
+  },
+  "nv-tlabs/Gamma-World": {
+    "first_seen": "2026-05-31",
+    "last_seen": "2026-05-31",
+    "times_seen": 1,
+    "stars_first": 430,
+    "stars_last": 430
   }
 }
