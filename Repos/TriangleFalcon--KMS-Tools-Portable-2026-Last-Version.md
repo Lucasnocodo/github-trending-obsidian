@@ -20,7 +20,7 @@ category: "其他"
 subcategory: "激活工具"
 release_tag: "KMS-Tools-Portable"
 install_complexity: "easy"
-status: to-review
+status: archived
 my_rating: 0
 score_confidence: 0
 score_interest: 0

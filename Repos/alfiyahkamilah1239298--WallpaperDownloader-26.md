@@ -20,7 +20,7 @@ category: "開發工具"
 subcategory: "桌布工具"
 release_tag: "Release"
 install_complexity: "medium"
-status: to-review
+status: archived
 my_rating: 0
 score_confidence: 0
 score_interest: 0
