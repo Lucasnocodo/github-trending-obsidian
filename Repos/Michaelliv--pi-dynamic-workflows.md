@@ -17,8 +17,8 @@ first_seen: 2026-05-30
 week: "2026-W22"
 month: "2026-05"
 category: "開發工具"
-subcategory: "工作流管理"
-release_tag: "v1.0.0"
+subcategory: "工作流程管理"
+release_tag: "v1.0.1"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
@@ -26,23 +26,23 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-30
-use_case: "為 Pi 提供動態工作流的擴展，允許多個子代理協同處理任務。"
+use_case: "提供 Claude-Code 風格的動態工作流程，讓多個子代理協同工作。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 3
 next_review: "2026-06-04"
-contributor_count: 0
+contributor_count: 3
 engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 101
-readme_length: 5164
-bus_factor: 0
-last_release_days: 3
+issue_close_rate: 19
+repo_size_kb: 179
+readme_length: 5741
+bus_factor: 1
+last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-30"
-star_history: "2026-05-30:436,2026-05-30:437,2026-05-31:576,2026-05-31:576,2026-06-01:633"
+star_history: "2026-05-30:436,2026-05-30:437,2026-05-31:576,2026-05-31:576,2026-06-01:633,2026-06-01:633"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "pi-dynamic-workflows"
   - "Michaelliv/pi-dynamic-workflows"
-  - "為 Pi 提供動態工作流的擴展，允許多個子代理協同處理任務。"
+  - "提供 Claude-Code 風格的動態工作流程，讓多個子代理協同工作。"
 ---
 
 # pi-dynamic-workflows
 
-**576** stars · **288** stars/天 · 建立 2 天前 · TypeScript · 未標註授權
+**633** stars · **211** stars/天 · 建立 3 天前 · TypeScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/Michaelliv--pi-dynamic-workflows");
@@ -69,23 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v1.0.0` `easy-install`
+`v1.0.1` `easy-install`
 
 > [!summary] 一句話摘要
-> 為 Pi 提供動態工作流的擴展，允許多個子代理協同處理任務。
+> 提供 Claude-Code 風格的動態工作流程，讓多個子代理協同工作。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (288 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在 Pi 環境中進行動態工作流管理的開發者。
-> **一句話重點** 這個專案展示了如何在 Pi 環境中靈活地管理多任務，特別是在需要快速反應的開發場景中。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (211 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Low
+> **適合** 需要在 Pi 環境中實現動態工作流程的開發者，尤其是涉及多任務處理的場景。
+> **一句話重點** 這個專案展示了如何在 Pi 環境中實現動態工作流程，並且讓用戶能夠通過自然語言請求來生成和管理工作流程。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Michaelliv--pi-dynamic-workflows");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "工作流管理" && p.file.name !== "Michaelliv--pi-dynamic-workflows" && p.status !== "archived")
+>     .where(p => p.subcategory === "工作流程管理" && p.file.name !== "Michaelliv--pi-dynamic-workflows" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,32 +96,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 工作流管理 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 工作流程管理 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** medium
-> **結論** 花 3 小時學習，2 小時整合，得到動態工作流的靈活性，值得一試。
+> **結論** 花 3 小時學、2 小時整合，得到靈活的動態工作流程功能，值得一試。
 
 > [!abstract] 核心創新
-> 提供了一種動態生成工作流的方式，允許用戶在 Pi 環境中靈活地管理多個子代理的任務。
+> 提供 Claude-Code 風格的動態工作流程，允許用戶通過自然語言請求生成並行處理的工作流程。
 
 ## 專案簡介
 
-這個專案是 Pi 的一個擴展，旨在提供動態工作流的功能，讓用戶能夠將任務分配給多個子代理。用戶只需用自然語言請求工作流，系統會自動生成 JavaScript 腳本，並在沙盒環境中執行，從而實現並行處理。這樣的設計使得在進行代碼庫審核、大型重構或多角度評估時，能夠更高效地利用資源。工作流的結構化輸出允許用戶定義 JSON Schema，以便獲得驗證過的結果。
+這個專案是 Pi 的一個擴展，旨在提供動態工作流程的功能，允許用戶通過簡單的自然語言請求來創建工作流程。用戶輸入一個請求後，系統會自動生成 JavaScript 腳本，並使用 `agent()`、`parallel()` 和 `pipeline()` 等功能來並行處理任務，最終將結果合併回來。這種設計使得工作流程能夠在運行時動態發現階段，避免了空的進度行顯示，並且能夠清楚地報告未等待的 Promise 錯誤。此工具的賣點在於其靈活性和可擴展性，特別適合於代碼審計、大型重構和多角度評估等場景。技術上，這個專案使用 TypeScript 開發，並依賴於 Node.js 的虛擬機來執行工作流程腳本，這樣可以確保腳本的可重現性和安全性。
 
-這個工具的核心在於其能夠將任務分散到多個子代理，並且在進行過程中提供即時的進度更新。使用者可以通過簡單的命令來啟動工作流，並在需要時取消正在進行的任務。這樣的設計不僅提升了工作效率，也減少了單一代理的負擔。整體來說，這個專案的賣點在於其動態的工作流生成和多任務處理能力，特別適合需要快速反應和多任務並行的開發環境。
+與其他工作流程工具相比，如 `0x0funky/agent-sprite-forge` 和 `2aronS/Duel-Agents`，本專案的優勢在於其動態階段發現和結構化輸出功能，這使得用戶能夠更靈活地處理複雜的任務。使用者可以在 Pi 環境中輕鬆集成此工具，並通過簡單的命令來啟動工作流程。這個專案目前處於原型階段，尚未實現持久化或可恢復的運行，但核心功能已經穩定可用。適合對動態工作流有需求的開發者，尤其是那些需要快速迭代和多任務處理的場景。
 
 **技術棧**：`TypeScript` · `Node.js`
 
 ## 重點功能
 
-- 動態工作流生成 — 用戶可以用自然語言請求工作流，系統自動生成相應的 JavaScript 腳本。
-- 多子代理協作 — 任務可以分配給多個子代理進行並行處理，提升效率。
-- 即時進度更新 — 在工作流執行過程中，提供即時的進度反饋，讓用戶隨時掌握狀態。
-- 結構化輸出 — 支持 JSON Schema 驗證，確保子代理返回的結果符合預期格式。
-- 沙盒執行環境 — 工作流腳本在 Node.js 沙盒中執行，確保安全性和可重現性。
+- 動態運行階段 — 隨著工作流程的運行自動發現階段，避免顯示空的進度行。
+- 結構化子代理輸出 — 支持 JSON Schema 驗證，確保子代理返回的結果符合預期格式。
+- 並行處理 — 使用 `parallel()` 函數同時執行多個任務，結果按輸入順序返回。
+- 簡單的自然語言請求 — 用戶可以通過自然語言請求來生成工作流程，降低使用門檻。
+- 強大的錯誤處理 — 提供清晰的錯誤信息，幫助開發者快速定位未等待的 Promise 錯誤。
 
 ## 快速開始
 
@@ -133,7 +133,7 @@ pi install npm:pi-dynamic-workflows
 ```bash
 /reload
 ```
-3. 請求一個工作流
+3. 請求一個工作流程
 ```bash
 Run a workflow to inspect this repository and summarize the main modules.
 ```
@@ -142,67 +142,64 @@ Run a workflow to inspect this repository and summarize the main modules.
 
 ```ts
 {
-  "前置條件": "在 Pi 環境中執行以下腳本。",
+  "前置條件": "用戶已經在 Pi 環境中安裝並啟用此擴展。",
   "程式碼": "export const meta = {\n  name: 'inspect_project',\n  description: 'Inspect a repository and summarize the main modules',\n  phases: [\n    { title: 'Scan' },\n    { title: 'Analyze' },\n  ],\n}\n\nphase('Scan')\nconst inventory = await agent('Inspect the repository structure.', {\n  label: 'repo inventory',\n})\n\nphase('Analyze')\nconst summary = await agent(\n  'Summarize the main modules from this inventory:\\n' + inventory,\n  { label: 'module summary' },\n)\n\nreturn { inventory, summary }",
-  "預期輸出": "返回一個包含庫存和摘要的物件。"
+  "預期輸出": "工作流程的進度和最終的結果將顯示在 Pi 的界面中。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天內累積 576 stars（288/天），forks 29（5.0%），顯示出良好的初期關注度。作者 Michaelliv 之前在開源社區活躍，這個專案提供了一個在 Pi 環境中進行動態工作流的解決方案，填補了在多代理協作方面的空白。這個工具的出現可能與使用者對於更靈活的工作流需求有關，尤其是在代碼審核和重構方面。高比例的 forks/stars 表示使用者對於這個專案有實際的修改需求，顯示出其潛在的實用性。
+> 建立 3 天內累積 633 stars（211/天），forks 37（5.8%），這顯示出相對穩定的增長。作者 Michaelliv 之前在開發 Pi 生態系統中有豐富經驗，這個專案解決了傳統工作流程工具在處理複雜任務時的靈活性不足的問題。特別是動態工作流程的概念，讓用戶能夠在運行時根據需求調整工作流程，這在過去的工具中並不常見。社群對於這種新型工作流的需求逐漸上升，尤其是在代碼審計和多角度評估的場景中。這個工具的出現正好填補了這一空白，並且在 GitHub 上的討論和反饋也顯示出使用者對其功能的期待。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Pi 環境中進行動態工作流管理的開發者。
+**目標受眾**：需要在 Pi 環境中實現動態工作流程的開發者，尤其是涉及多任務處理的場景。
 
 > [!example] 使用場景
-> - 後端工程師用它來自動化代碼庫審核，因為可以快速分配任務給多個子代理，提升審核效率。
-> - 開發團隊用它來進行大型重構，因為能夠並行處理多個模組，減少重構時間。
-> - 研究人員用它來進行多角度評估，因為可以快速生成不同的工作流以獲得多樣化的結果。
+> - 後端工程師用它來自動化代碼庫審計，因為可以快速生成多個子代理來並行處理不同模組的檢查，節省了手動審計的時間。
+> - 產品經理用它來進行多角度評估，因為能夠快速整合來自不同子代理的意見，提升決策效率。
+> - DevOps 工程師用它來執行大型重構，因為可以動態生成工作流程，並在運行時調整，避免了靜態腳本的限制。
 
 ## 架構分析
 
-這個專案採用模組化的架構，核心功能是動態生成工作流腳本並在 Node.js 沙盒中執行。用戶的請求經由 Pi 模型轉換為 JavaScript 腳本，然後在沙盒中解析和執行。這樣的設計使得用戶能夠在不直接接觸底層代碼的情況下，靈活地管理任務。
+這個專案採用模組化的架構設計，主要由工作流程解析器和執行環境組成。工作流程腳本在 Node.js 的虛擬機中運行，這樣可以確保安全性和可重現性。每個子代理在獨立的內存會話中運行，這樣可以避免狀態污染。
 
-每個子代理在獨立的內存會話中運行，這樣可以確保它們的執行環境不會互相干擾。這種設計的代價在於無法使用某些 Node.js 的功能，這可能會限制腳本的靈活性和功能。整體而言，這個架構的可擴展性取決於 Pi 的性能和資源管理能力。
+選擇使用虛擬機的原因是為了提供一個隔離的執行環境，這樣可以防止外部影響和安全問題。這種設計的代價是可能會增加一些性能開銷，特別是在高頻率的子代理調用中。整體來說，這種架構使得工具能夠靈活應對複雜的工作流程需求，但在擴展性上可能會遇到瓶頸，特別是在需要長時間運行的工作流程中。
 
 ## 技術深入分析
 
-這個專案的核心技術在於其動態工作流生成和多代理協作。使用 TypeScript 和 Node.js，這個工具能夠在沙盒環境中執行 JavaScript 腳本，並且支持多個子代理的並行處理。這樣的設計使得用戶可以在不直接接觸底層代碼的情況下，靈活地管理任務。效能方面，因為每個子代理在獨立的內存會話中運行，所以能夠有效利用資源，但同時也可能導致內存使用的增加。
-
-選擇 TypeScript 提供了靜態類型檢查的優勢，減少了潛在的錯誤。這個專案的依賴樹相對簡單，主要依賴於 TypeScript 和一些輔助庫，這降低了維護的複雜度。風險方面，因為目前仍為原型，未來可能會面臨功能擴展和性能優化的挑戰。整合方面，這個工具能夠與現有的 Pi 環境無縫對接，但對於其他框架的整合可能需要額外的適配工作。
+這個專案的核心技術機制是基於 JavaScript 腳本的動態工作流程，使用 Node.js 的虛擬機來執行腳本，這樣可以確保安全性和可重現性。工作流程腳本的每個階段都可以動態發現，這使得用戶能夠根據實際情況調整工作流。效能方面，因為每個子代理在獨立的內存會話中運行，這可能會導致一定的性能開銷，特別是在需要頻繁調用子代理的情況下。設計上選擇使用虛擬機而非直接執行 JavaScript 代碼，這樣可以避免安全問題，但也使得某些 Node.js API 無法使用。這樣的選擇雖然增加了安全性，但也限制了腳本的靈活性。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在高頻率的工作流程執行中。整合方面，這個工具與 Pi 生態系統的其他部分整合良好，但對於非 Pi 環境的整合可能會有挑戰。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝和使用說明，並包含範例。安裝過程相對順暢，沒有明顯的坑。文件目前僅提供英文版本，對於非英語使用者可能會有一定的學習障礙。
+> README 文件提供了清晰的安裝和使用指南，並且包含了範例代碼。安裝過程相對順暢，沒有明顯的坑。文件目前僅提供英文版本，對於非英語使用者可能會有一定的學習障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 動態生成工作流，提升了使用的靈活性。
-> - 支持多子代理並行處理，顯著提高了效率。
-> - 即時進度更新，讓用戶能夠隨時掌握任務狀態。
+> - 動態階段發現，提升了工作流程的靈活性。
+> - 結構化輸出功能，減少了結果處理的複雜性。
+> - 簡單的自然語言請求，降低了使用門檻。
 
 > [!danger] 缺點
-> - 仍處於原型階段，功能不夠完善。
+> - 目前處於原型階段，功能尚不完善。
 > - 不支持某些 Node.js API，限制了腳本的功能。
-> - 需要在 Pi 環境中運行，無法獨立使用。
+> - 需要在 Pi 環境中使用，對環境有依賴。
 
 > [!warning] 注意事項
-> - 目前仍為原型，尚未實現持久化或可恢復的運行。
-> - 不支持某些 Node.js API，如 `require` 和 `fs`，限制了腳本的功能。
-> - 需要在 Pi 環境中運行，無法獨立使用。
+> - 目前處於原型階段，尚未實現持久化或可恢復的運行。
+> - 不支持在工作流程中使用某些 Node.js API，如 `require` 和 `fs`。
+> - 不支持在 `meta` 中使用動態生成的值，必須使用靜態字面量。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的多代理協作功能，但專注於遊戲開發場景，適合需要即時反應的應用。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於代碼分析和重構，但不支持動態工作流生成，適合靜態分析需求。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 提供多代理協作，但缺乏即時進度更新功能，適合對進度不敏感的場景。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 此工具專注於創建和管理多個代理，但不支持動態階段發現，限制了靈活性。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 此工具提供了多代理的協作，但缺乏結構化輸出功能，使用者需要手動處理結果格式。 |
 
 ## 替代方案決策
 
@@ -210,16 +207,16 @@ Run a workflow to inspect this repository and summarize the main modules.
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發中的多代理協作，而本專案則針對代碼審核和重構。 | 如果你的專案涉及即時互動和遊戲開發，這個工具會更合適。 | medium，因為需要調整工作流的邏輯和結構。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於靜態代碼分析，而本專案提供動態工作流生成。 | 如果你的需求主要是靜態分析，這個工具會更合適。 | low，因為功能上有一定的重疊。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 此工具專注於創建和管理多個代理，但不支持動態階段發現，限制了靈活性。 | 如果需要一個穩定的多代理管理工具，而不需要動態調整工作流程的能力。 | medium，因為需要重新設計工作流程的結構。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 此工具提供了多代理的協作，但缺乏結構化輸出功能，使用者需要手動處理結果格式。 | 如果需要更細粒度的控制和自定義的結果處理，而不依賴於結構化輸出。 | high，因為需要重寫整個工作流程的邏輯。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **pi-dynamic-workflows** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **pi-dynamic-workflows** | **agent-sprite-forge** | **Duel-Agents** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於遊戲開發中的多代理協作，而本專案則針對代碼審核和重構。 | 專注於靜態代碼分析，而本專案提供動態工作流生成。 |
-> | 遷移成本 | - | medium，因為需要調整工作流的邏輯和結構。 | low，因為功能上有一定的重疊。 |
-> | 適用場景 | 主要場景 | 如果你的專案涉及即時互動和遊戲開發，這個工具會更合適。 | 如果你的需求主要是靜態分析，這個工具會更合適。 |
+> | 技術路線 | 本專案 | 此工具專注於創建和管理多個代理，但不支持動態階段發現，限制了靈活性。 | 此工具提供了多代理的協作，但缺乏結構化輸出功能，使用者需要手動處理結果格式。 |
+> | 遷移成本 | - | medium，因為需要重新設計工作流程的結構。 | high，因為需要重寫整個工作流程的邏輯。 |
+> | 適用場景 | 主要場景 | 如果需要一個穩定的多代理管理工具，而不需要動態調整工作流程的 | 如果需要更細粒度的控制和自定義的結果處理，而不依賴於結構化輸 |
 
 ## 成熟度評估
 
@@ -230,25 +227,27 @@ Run a workflow to inspect this repository and summarize the main modules.
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和探索，但不建議在生產環境中使用。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些情況下，工作流腳本可能無法正確解析，導致執行失敗。
-  - 解法：檢查腳本的語法和結構，確保符合要求。
-- [MEDIUM] 子代理的執行時間可能會受到內存限制影響，導致性能下降。
-  - 解法：優化腳本以減少內存使用，或增加可用資源。
+- [MEDIUM] 在某些情況下，動態階段可能無法正確顯示，導致用戶混淆。
+  - 解法：確保腳本中的階段標記正確，並檢查控制台日誌以獲取詳細信息。
+- **[HIGH]** 未等待的 Promise 可能導致腳本崩潰，錯誤信息不夠明確。
+  - 解法：使用 `await` 確保所有 Promise 都被正確處理。
+- [MEDIUM] 在高負載情況下，子代理的性能可能下降。
+  - 解法：減少同時運行的子代理數量，或優化工作流程腳本。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 5 人以下的初創團隊進行代碼審核 | 非常適合 | 能夠快速分配任務並提高審核效率。 |
-| 大型開發團隊進行代碼重構 | 適合 | 支持多任務並行處理，能夠減少重構時間。 |
-| 個人開發者進行小型專案的代碼檢查 | 普通 | 功能上能滿足需求，但可能過於複雜。 |
-| 需要長期穩定運行的生產環境 | 不適合 | 目前仍為原型，功能不夠完善。 |
+| 10 人以下的新創公司進行代碼審計 | 非常適合 | 能夠快速生成工作流程，並行處理多個模組的檢查，節省時間。 |
+| 大型企業的多角度評估團隊 | 適合 | 支持多任務並行處理，提升評估效率。 |
+| 需要長期運行的工作流程 | 不適合 | 目前不支持持久化或可恢復的運行，可能導致數據丟失。 |
+| 對動態工作流有需求的開發者 | 非常適合 | 提供靈活的工作流程設計，能夠快速適應變化。 |
 
 ## 採用成本分析
 
@@ -260,12 +259,43 @@ Run a workflow to inspect this repository and summarize the main modules.
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，2 小時整合，得到動態工作流的靈活性，值得一試。
+> 花 3 小時學、2 小時整合，得到靈活的動態工作流程功能，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具在沙盒環境中執行，不需要高權限，且不存取敏感資料。
+> 低風險：該工具不需要高權限，且運行在安全的虛擬機中，不會直接存取敏感資料。依賴的庫需定期檢查以避免供應鏈風險。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個工具主要與 Pi 生態系統中的其他工具搭配使用，特別是在開發和測試階段。用戶可以在 Pi 環境中使用此工具來自動化工作流程，並通過簡單的命令來啟動和管理工作流程。與主流 CI/CD 工具的整合尚未明確，但可以通過自定義腳本來實現。整合的摩擦點主要在於需要用戶熟悉 Pi 環境的操作，對於新用戶可能需要一些學習成本。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在這個工具出現之前，開發者通常使用靜態工作流程工具來管理任務，這些工具在處理複雜任務時靈活性不足。隨著多任務處理需求的增加，動態工作流程的概念開始受到關注。技術上，Node.js 的虛擬機提供了一個安全的執行環境，使得動態工作流程的實現成為可能。
+
+這個工具代表了工作流程管理的未來趨勢，未來可能會看到更多類似的工具出現，尤其是在自動化和多任務處理方面。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-5 人的小型團隊
+
+**前置技能**：
+- 熟悉 JavaScript
+- 了解 Node.js 環境
+- 有基本的工作流程管理經驗
+
+> [!tip] 導入策略
+> 第一週：在個人項目中試用。第二週：在小型團隊的內部工具中導入。第三週：編寫最佳實踐文檔，分享使用經驗。
+
+**成功指標**：工作流程的執行時間減少 30%，並且用戶滿意度提高。
+
+> [!warning] 退出計畫
+> 所有設定以標準 JSON 格式存儲，可以輕鬆轉換為其他工作流程工具的格式。
 
 ## 健康度儀表板
 
@@ -330,33 +360,53 @@ Run a workflow to inspect this repository and summarize the main modules.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 29 |
-| Open Issues | 18 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-05-28 |
+| Forks | 37 |
+| Open Issues | 13 |
+| Issue 解決率 | 19% (3 closed) |
+| 最後推送 | 2026-05-31 |
 | 建立日期 | 2026-05-28 |
-| Repo 大小 | 101 KB |
+| Repo 大小 | 179 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Michaelliv/pi-dynamic-workflows) |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `acorn` `@biomejs/biome` `@mariozechner/pi-coding-agent` `@mariozechner/pi-tui` `tsx` `typebox` `typescript`
+> `acorn` `@biomejs/biome` `@earendil-works/pi-ai` `@earendil-works/pi-coding-agent` `@earendil-works/pi-tui` `tsx` `typebox` `typescript`
 
-**最新版本**：v1.0.0 (2026-05-28)
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@Michaelliv](https://github.com/Michaelliv) | 5 |
+> | [@kky42](https://github.com/kky42) | 1 |
+> | [@Paul-Yuchao-Dong](https://github.com/Paul-Yuchao-Dong) | 1 |
+
+**最新版本**：v1.0.1 (2026-05-31)
 
 > [!info]- Release Notes
-> **Full Changelog**: https://github.com/Michaelliv/pi-dynamic-workflows/commits/v1.0.0
+> ## v1.0.1
 > 
-> **Full Changelog**: https://github.com/Michaelliv/pi-dynamic-workflows/commits/v1.0.0
+> This release is a reliability and authoring polish pass for dynamic workflows. It makes progress output more faithful to what actually ran, fixes a crash path around unawaited subagent promises, adds editor types for workflow scripts, and improves the determinism checker so prompts can safely talk about nondeterministic APIs without being rejected.
+> 
+> ### Highlights
+> 
+> - **Dynamic runtime phases** - phases are now discovered as the workflow runs, so skipped conditional branches no longer show up as empty progress rows.
+> - **Clear unawaited-promise failures** - workflows that accidentally return an unawaited `agent()`, `parallel()`, or `pipeline()` promise now fail with a targeted “did you forget to await” error instead of surfacing `#<Promise> could not be cloned` or crashing Pi. Fixes #12.
+> - **Workflow authoring types** - reusable workflow files can opt into editor IntelliSense with `/// <reference types="pi-dynamic-workflows/workflow" />`. Fixes #14.
+> - **Prompt-safe determinism checks** - prompts, metadata, comments, and string literals can now mention `Date.now()`, `Math.random()`, and `new Date()`; executable usage is still blocked by an AST-aware checker. Fixes #17.
+> - **Subagent model forwarding** - workflow subagents now receive model/modelRegistry configuration correctly.
+> - **Pi package namespace update** - dependencies now use the `@earendil-works` package namespace.
+> 
+> ### Contributors
+> 
+> ...（完整內容見 GitHub）
 
 ## 社群與生態
 
-**社群活躍度**：最近活躍，持續更新中。
+**社群活躍度**：社群活躍度中等，開放問題數量適中，解決率約 19%。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-28 ~ 2026-05-28）
-> **活躍天數** 1 天 · **最新 commit** Rewrite README
+> [!abstract] 最近 10 次 commit（2026-05-28 ~ 2026-05-31）
+> **活躍天數** 2 天 · **最新 commit** Release v1.0.1
 
 ## 熱門議題
 
@@ -364,7 +414,9 @@ Run a workflow to inspect this repository and summarize the main modules.
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#9](https://github.com/Michaelliv/pi-dynamic-workflows/issues/9) | Support per-agent model selection in workflow scripts | 2 | 0 |
-> | [#17](https://github.com/Michaelliv/pi-dynamic-workflows/issues/17) | Mentioning sources of randomness in agent prompts triggers t | 0 | 0 |
+> | [#13](https://github.com/Michaelliv/pi-dynamic-workflows/issues/13) | Support strong/medium/weak model configuration for workflow  | 0 | 1 |
+> | [#11](https://github.com/Michaelliv/pi-dynamic-workflows/issues/11) | Audit: faithfulness gaps vs Claude Code's integrated Workflo | 0 | 0 |
+> | [#10](https://github.com/Michaelliv/pi-dynamic-workflows/issues/10) | Support forked agents (fan-out from a shared parent context) | 0 | 0 |
 
 ## README 摘錄
 
@@ -418,7 +470,7 @@ Run a workflow to inspect this repository and summarize the main modules.
 > 
 > ## Workflow script shape
 > 
-> A workflow is plain JavaScript. The first statement must export literal metadata:
+> A workflow is plain JavaScript. The first statement must export literal metadata. `name` and `description` are required; `phases` is optional documentation for an expected outline. The live progress view is driven by `phase(...)` calls at runtime:
 > 
 > ```js
 > export const meta = {
@@ -443,6 +495,18 @@ Run a workflow to inspect this repository and summarize the main modules.
 > 
 > return { inventory, summary }
 > ```
+> 
+> Phases are discovered as the script runs, so conditional and loop-created phases work naturally. If a branch is skipped, its phase does not show up as an empty progress row.
+> 
+> ### Editor IntelliSense
+> 
+> Reusable workflow files can opt into editor hints for workflow globals:
+> 
+> ```js
+> /// 
+> ```
+> 
+> This declares `agent`, `parallel`, `pipeline`, `phase`, `log`, `args`, `cwd`, and `budget` for TypeScript-aware editors.
 > 
 > ### Available globals
 > 
@@ -533,19 +597,19 @@ Run a workflow to inspect this repository and summarize the main modules.
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[自動化]] · [[程式碼生成]]
+相關概念：[[自動化測試]] · [[多模態]] · [[微服務]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[ConardLi--garden-skills|ConardLi/garden-skills]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[ConardLi--garden-skills|ConardLi/garden-skills]]
 
 [GitHub](https://github.com/Michaelliv/pi-dynamic-workflows)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：工作流管理）
+> [!note]- 直接競品（同子分類：工作流程管理）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "工作流管理" AND file.name != "Michaelliv--pi-dynamic-workflows"
+> WHERE subcategory = "工作流程管理" AND file.name != "Michaelliv--pi-dynamic-workflows"
 > SORT stars DESC
 > ```
 
@@ -577,7 +641,7 @@ Run a workflow to inspect this repository and summarize the main modules.
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["多模態","自動化","程式碼生成"];
+> const concepts = ["自動化測試","多模態","微服務"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Michaelliv--pi-dynamic-workflows" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
