@@ -7,12 +7,12 @@ language: Python
 license: NOASSERTION
 description: "aimili-vpngate是一个借助vpngate.net让Linux用干净ip出站的代理工具。"
 homepage: ""
-stars: 512
-stars_per_day: 102
-forks: 207
-open_issues: 8
+stars: 655
+stars_per_day: 109
+forks: 239
+open_issues: 9
 created: 2026-05-25
-pushed_at: 2026-05-30
+pushed_at: 2026-05-31
 first_seen: 2026-05-30
 week: "2026-W22"
 month: "2026-05"
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-30
 use_case: "透過 vpngate.net 提供的開放節點，讓 Linux VPS 使用乾淨 IP 出站的代理工具。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-06-07"
+appearances: 3
+next_review: "2026-06-08"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-30"
-star_history: "2026-05-30:401,2026-05-30:413,2026-05-31:512,2026-05-31:512"
+star_history: "2026-05-30:401,2026-05-30:413,2026-05-31:512,2026-05-31:512,2026-06-01:655"
 tags:
   - github
   - "category/基礎設施"
@@ -769,5 +769,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-01|2026-06-01]] — 再次上榜，655 stars
 - [[2026-05-31|2026-05-31]] — 再次上榜，512 stars
 - [[2026-05-30|2026-05-30]] — 首次收錄，401 stars

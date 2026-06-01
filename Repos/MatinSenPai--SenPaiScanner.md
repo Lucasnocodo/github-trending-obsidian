@@ -7,10 +7,10 @@ language: Go
 license: MIT
 description: "A light-weight scanner for Cloudflare IPs, written in Golang"
 homepage: ""
-stars: 595
-stars_per_day: 298
-forks: 41
-open_issues: 10
+stars: 802
+stars_per_day: 267
+forks: 55
+open_issues: 21
 created: 2026-05-28
 pushed_at: 2026-05-30
 first_seen: 2026-05-31
@@ -30,8 +30,8 @@ use_case: "一個輕量級的 Cloudflare IP 掃描器，幫助用戶快速找到
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-03"
+appearances: 2
+next_review: "2026-06-04"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 72
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-31"
-star_history: "2026-05-31:595,2026-05-31:595"
+star_history: "2026-05-31:595,2026-05-31:595,2026-06-01:802"
 tags:
   - github
   - "category/開發工具"
@@ -915,4 +915,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-01|2026-06-01]] — 再次上榜，802 stars
 - [[2026-05-31|2026-05-31]] — 首次收錄，595 stars

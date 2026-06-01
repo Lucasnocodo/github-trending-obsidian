@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "ADHD — a skill for coding agents. Tree-of-thought with pruning, built on the Claude & Codex Agent SDK. Fans out parallel divergent thoughts under different cognitive frames, scores, prunes traps, deepens the survivors. The no-brainer skill for creative and interdisciplinary work."
 homepage: "https://uditakhourii.github.io/adhd/"
-stars: 603
-stars_per_day: 121
-forks: 27
+stars: 660
+stars_per_day: 110
+forks: 29
 open_issues: 15
 created: 2026-05-25
 pushed_at: 2026-05-30
@@ -30,8 +30,8 @@ use_case: "提供一個創造性思考的技能，幫助編碼代理進行多元
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-06-07"
+appearances: 5
+next_review: "2026-06-08"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-28"
-star_history: "2026-05-28:354,2026-05-28:357,2026-05-29:468,2026-05-29:471,2026-05-30:516,2026-05-30:516,2026-05-31:602,2026-05-31:603"
+star_history: "2026-05-28:354,2026-05-28:357,2026-05-29:468,2026-05-29:471,2026-05-30:516,2026-05-30:516,2026-05-31:602,2026-05-31:603,2026-06-01:660"
 tags:
   - github
   - "category/ai_ml"
@@ -879,6 +879,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-01|2026-06-01]] — 再次上榜，660 stars
 - [[2026-05-31|2026-05-31]] — 再次上榜，602 stars
 - [[2026-05-30|2026-05-30]] — 再次上榜，516 stars
 - [[2026-05-29|2026-05-29]] — 再次上榜，468 stars
