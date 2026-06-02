@@ -7,18 +7,18 @@ language: Rust
 license: N/A
 description: "An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒服"
 homepage: ""
-stars: 9596
-stars_per_day: 384
-forks: 645
-open_issues: 216
+stars: 10667
+stars_per_day: 410
+forks: 692
+open_issues: 236
 created: 2026-05-06
-pushed_at: 2026-05-31
+pushed_at: 2026-06-01
 first_seen: 2026-05-12
 week: "2026-W20"
 month: "2026-05"
 category: "開發工具"
-subcategory: "增強工具"
-release_tag: "v1.1.7"
+subcategory: "插件管理"
+release_tag: "v1.1.9-alpha.2"
 install_complexity: "medium"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-12
-use_case: "讓 Codex App 更好用的增強工具，提升使用體驗與功能。"
+use_case: "為 CodexApp 提供增強功能的外部啟動器和管理工具。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 2
 next_review: "2026-05-16"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 45
-repo_size_kb: 10297
-readme_length: 6833
+issue_close_rate: 46
+repo_size_kb: 10874
+readme_length: 7015
 bus_factor: 1
-last_release_days: 10
-release_cadence: "monthly"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-12"
-star_history: "2026-05-12:1040,2026-05-12:1044,2026-05-13:1526,2026-05-13:1529,2026-05-14:1898,2026-05-15:2194,2026-05-16:2415,2026-05-17:2591,2026-05-18:2763,2026-05-19:2985,2026-05-20:3192,2026-05-21:3568,2026-05-22:3970,2026-05-23:4363,2026-05-24:4742,2026-05-25:5125,2026-05-26:5744,2026-05-27:6364,2026-05-28:7155,2026-05-29:7822,2026-05-30:8380,2026-05-31:8904,2026-06-01:9596"
+star_history: "2026-05-12:1040,2026-05-12:1044,2026-05-13:1526,2026-05-13:1529,2026-05-14:1898,2026-05-15:2194,2026-05-16:2415,2026-05-17:2591,2026-05-18:2763,2026-05-19:2985,2026-05-20:3192,2026-05-21:3568,2026-05-22:3970,2026-05-23:4363,2026-05-24:4742,2026-05-25:5125,2026-05-26:5744,2026-05-27:6364,2026-05-28:7155,2026-05-29:7822,2026-05-30:8380,2026-05-31:8904,2026-06-01:9596,2026-06-02:10667"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "CodexPlusPlus"
   - "BigPizzaV3/CodexPlusPlus"
-  - "讓 Codex App 更好用的增強工具，提升使用體驗與功能。"
+  - "為 CodexApp 提供增強功能的外部啟動器和管理工具。"
 ---
 
 # CodexPlusPlus
 
-**9.6k** stars · **384** stars/天 · 建立 25 天前 · Rust · 未標註授權
+**10.7k** stars · **410** stars/天 · 建立 26 天前 · Rust · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/BigPizzaV3--CodexPlusPlus");
@@ -68,23 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v1.1.7`
+`v1.1.9-alpha.2`
 
 > [!summary] 一句話摘要
-> 讓 Codex App 更好用的增強工具，提升使用體驗與功能。
+> 為 CodexApp 提供增強功能的外部啟動器和管理工具。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (384 stars/day)
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (410 stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要提升 Codex App 功能和使用體驗的開發者和工程師。
-> **一句話重點** Codex++ 的設計理念在於提供靈活的增強功能，同時不干擾原始應用的運行。
+> **適合** 希望在 Codex 上擴展功能並自定義使用體驗的開發者和團隊。
+> **一句話重點** Codex++ 透過不修改原始文件的方式，為 Codex 帶來了靈活的增強功能，解決了許多用戶的痛點。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/BigPizzaV3--CodexPlusPlus");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "增強工具" && p.file.name !== "BigPizzaV3--CodexPlusPlus" && p.status !== "archived")
+>     .where(p => p.subcategory === "插件管理" && p.file.name !== "BigPizzaV3--CodexPlusPlus" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,109 +95,110 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 增強工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 插件管理 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到靈活的增強功能，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，3 小時整合，得到靈活的增強功能，值得一試。
 
 > [!abstract] 核心創新
-> Codex++ 透過外部注入而不修改原始應用，提供靈活的增強功能。
+> Codex++ 是一個不修改 Codex App 原始文件的外部增強工具，提供靈活的中轉注入模式。
 
 ## 專案簡介
 
-Codex++ 是一個針對 Codex App 的外部增強啟動器和管理工具，旨在提升使用者體驗。它不修改 Codex 的原始安裝，而是透過外部啟動器來啟動 Codex，並使用 Chromium DevTools Protocol 來注入增強腳本。用戶可以從 GitHub Releases 下載安裝包，安裝後會有兩個入口：靜默啟動的 Codex++ 和管理工具，後者提供了配置、更新和管理增強功能的界面。這種設計使得 Codex++ 能夠在不干擾原始應用的情況下，提供額外的功能和靈活性。其核心技術使用 Rust 和 Tauri，後者提供了一個輕量級的桌面應用框架，並且支持深色/淺色主題切換。
+Codex++ 是一個專為 Codex App 設計的外部增強工具，通過外部啟動器啟動 Codex，並利用 Chromium DevTools Protocol 注入增強腳本。用戶可以透過 `Codex++` 靜默啟動 Codex，或使用 `Codex++ 管理工具` 進行配置和管理。這個工具的賣點在於不修改 Codex 的原始安裝文件，從而避免了更新後的兼容性問題。Codex++ 支持多種增強功能，包括插件入口解鎖、會話管理、Markdown 導出等，並且可以在啟動時注入用戶自定義腳本。技術上，Codex++ 使用 Rust 作為後端，並結合 Tauri 和 React 開發管理工具，這樣的選擇使得應用輕量且高效。
 
-Codex++ 的增強功能包括插件入口解鎖、Markdown 導出、會話管理等，這些功能在傳統的 Codex 中並不提供。與其他增強工具相比，Codex++ 的中轉注入模式允許用戶在不需要重新登錄的情況下，將請求轉發到自定義 API，這在需要使用不同模型的場景中特別有用。使用者在使用中可能會遇到一些問題，例如 API Key 登錄模式下的插件功能限制，但這些都可以通過 Codex++ 的管理工具來解決。這個專案目前處於活躍開發中，社群的回應速度和問題解決率也顯示出其健康度。整體而言，Codex++ 是一個值得嘗試的工具，特別適合需要靈活配置和增強功能的 Codex 使用者。
+相比於其他工具如 `0xGF/boneyard` 和 `0xSero/codex-shim`，Codex++ 提供了更靈活的中轉注入模式，能夠支持多個 API 配置並保持會話同步。使用者在面對 Codex 原生插件的限制時，Codex++ 提供了更好的解決方案，特別是在會話管理和插件使用上。儘管目前有 236 個開放問題，但其解決率為 46%，顯示出社群的活躍度和對問題的回應。這個專案目前處於 alpha 階段，適合對 Codex 有需求的開發者和希望自定義功能的用戶。未來幾個月，隨著功能的穩定和社群的增長，Codex++ 可能會成為 Codex 生態系統中不可或缺的一部分。
 
-**技術棧**：`Rust` · `Tauri` · `React`
+**技術棧**：`Rust 1.62` · `Tauri 1.0` · `React 17`
 
 ## 重點功能
 
-- 靜默啟動 — 透過外部 launcher 啟動 Codex，無需修改原始安裝。
-- 多種增強功能 — 解鎖插件入口、Markdown 導出、會話管理等。
-- 中轉注入模式 — 支持多個中轉配置，方便使用自定義 API。
-- 自定義腳本管理 — 用戶可以在啟動時注入自定義腳本。
-- 自動更新 — 透過 GitHub Release 自動檢查和更新到最新版本。
+- 靜默啟動 — 使用 `Codex++` 靜默啟動 Codex，無需顯示管理界面。
+- 會話同步 — 支持在啟動前同步本地會話 metadata，切換供應商後舊會話仍可見。
+- 中轉注入模式 — 支持多個中轉配置，並可切回官方 ChatGPT 登錄態。
+- 用戶腳本管理 — 可在啟動時注入自定義腳本，提升靈活性。
+- 自動更新 — 管理工具會檢測可用更新，保持工具的最新狀態。
 
 ## 快速開始
 
-1. 下載安裝包
+1. 下載最新安裝包
 ```bash
-從 GitHub Releases 下載最新版本的安裝包。
+從 GitHub Releases 下載對應平台的安裝包
 ```
 2. 安裝 Codex++
 ```bash
-運行安裝包，根據提示完成安裝。
+運行安裝包並按照提示完成安裝
 ```
-3. 啟動管理工具
+3. 啟動 Codex++
 ```bash
-打開 `Codex++ 管理工具`，配置增強功能。
+使用桌面快捷方式啟動 Codex++ 或 Codex++ 管理工具
 ```
 
 ## 程式碼範例
 
 ```rust
 {
-  "前置條件": "已安裝 Codex++ 並啟動管理工具。",
-  "指令": "在管理工具中添加中轉配置，填寫 Base URL 和 Key。",
-  "預期輸出": "Codex++ 將在 `~/.codex/config.toml` 中寫入配置，並啟用中轉注入。"
+  "前置條件": "已安裝 Codex++ 並配置好中轉注入",
+  "指令": "model_provider = \"CodexPlusPlus\"\n\n[model_providers.CodexPlusPlus]\nname = \"CodexPlusPlus\"\nwire_api = \"responses\"\nrequires_openai_auth = true\nbase_url = \"https://example.com/v1\"\nexperimental_bearer_token = \"sk-...\"",
+  "預期輸出": "將配置寫入 ~/.codex/config.toml，並啟用中轉注入模式。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 25 天就累積 9596 stars（384/天），forks 645（6.7%），顯示出其快速增長的潛力。作者 BigPizzaV3 和其他貢獻者在開源社群中有一定的影響力，之前的項目也獲得了良好的反響。Codex++ 解決了 Codex App 原生插件功能不足的問題，特別是在 API Key 登錄模式下的限制，這使得它在使用者中獲得了廣泛的關注。社群中對於增強功能的需求也促進了這個工具的快速發展。最近的討論和問題反映了使用者對於功能的期待和改進的需求，這也進一步推動了專案的活躍度。
+> 建立 26 天就累積 10667 stars（410/天），forks 692（6.5%），這顯示出強勁的增長勢頭。這個專案由 BigPizzaV3 等多位貢獻者共同開發，解決了 Codex 原生插件功能受限的問題，特別是在會話管理和插件使用上。之前用戶只能依賴 Codex 的原生功能，這限制了使用的靈活性和效率。這個工具的推出正好填補了這一空白，使得用戶能夠更方便地使用 Codex。社群的活躍度和問題解決的速度也促進了其受歡迎程度。
 
 ## 適合誰使用
 
-**目標受眾**：需要提升 Codex App 功能和使用體驗的開發者和工程師。
+**目標受眾**：希望在 Codex 上擴展功能並自定義使用體驗的開發者和團隊。
 
 > [!example] 使用場景
-> - 後端工程師用它來靈活配置 Codex 的 API 請求，因為它支持多個中轉配置，方便在不同環境下使用。
-> - 開發者用它來管理 Codex 的插件和增強功能，因為管理工具提供了直觀的界面來啟用和禁用功能。
-> - 產品經理用它來收集使用者反饋，因為 Codex++ 提供了會話管理和導出功能，便於分析使用情況。
+> - 軟體開發者用它來啟動 Codex 並注入自定義腳本，因為這樣可以提升開發效率，避免重複的手動配置。
+> - 團隊協作的工程師用它來管理 Codex 的會話和插件，因為這樣能夠更好地協調團隊的開發流程，減少插件衝突。
+> - 獨立開發者用它來解鎖 Codex 的插件功能，因為這樣可以擴展 Codex 的功能，提升編程體驗。
 
 ## 架構分析
 
-Codex++ 採用 Rust 作為後端，提供高效能和靈活性，並使用 Tauri 框架構建桌面應用。這種設計使得應用可以在不依賴額外運行時的情況下啟動，降低了安裝和運行的複雜度。資料流方面，Codex++ 透過 Chromium DevTools Protocol 來注入增強腳本，這樣可以在不修改原始應用的情況下，實現功能擴展。選擇 Rust 是因為其高效能和安全性，而 Tauri 則提供了輕量級的桌面應用開發框架，這樣的選擇使得 Codex++ 在性能和使用體驗上達到平衡。這樣的架構設計也使得未來的擴展性更強，能夠輕鬆加入新的功能和支持新的平台。
+Codex++ 採用 Rust 作為後端語言，這使得其性能優越且資源佔用低。前端則使用 Tauri 和 React，提供了良好的用戶界面和使用體驗。通過 Chromium DevTools Protocol，Codex++ 能夠在不修改 Codex 原始文件的情況下，注入增強腳本，這樣的設計使得工具在 Codex 更新後仍然保持兼容性。這種架構的代價在於需要用戶手動配置中轉注入，並且對於某些插件的支持可能不如直接修改原始文件來得方便。整體而言，Codex++ 的架構設計旨在提供高效的增強功能，同時保持對 Codex 的最小干預。
 
 ## 技術深入分析
 
-Codex++ 的核心技術基於 Rust 和 Tauri，這使得它在性能和安全性上具有優勢。Rust 提供了高效的記憶體管理和執行效率，適合用於需要高性能的應用。而 Tauri 則是針對桌面應用開發的輕量級框架，能夠快速構建跨平台的應用。Codex++ 能夠處理的資料量相對較小，主要集中在用戶的配置和會話數據上，這使得其效能表現良好。設計上，Codex++ 透過外部注入的方式來擴展功能，這樣的選擇避免了對 Codex 原始文件的修改，降低了更新帶來的風險。這種設計也意味著未來可以更靈活地添加新功能，而不會受到原始應用更新的限制。對於依賴於 Codex 的開發者來說，Codex++ 提供了一個穩定的增強環境，並且在使用過程中能夠快速適應新的需求和變化。
+Codex++ 的核心技術機制在於使用 Rust 作為後端語言，這使得其在性能和資源使用上都表現優異。前端則利用 Tauri 和 React，提供了一個現代化的管理界面。這樣的架構設計使得 Codex++ 能夠在不干擾 Codex 原始安裝的情況下，注入增強功能，這是其最大的優勢之一。Codex++ 能夠處理的資料量取決於用戶的配置和所使用的插件，對於大型項目來說，可能需要更多的資源來支持其運行。
+
+設計上，Codex++ 需要用戶手動配置中轉注入，這在一定程度上增加了使用的複雜性，但也提供了更大的靈活性。選擇 Rust 作為開發語言的好處在於其高效的性能和安全性，但這也使得開發過程中需要考慮更多的底層細節。Codex++ 的依賴樹相對簡單，主要依賴於 Rust 的生態系統，這降低了維護的難度。整體來看，Codex++ 在設計上兼顧了性能和靈活性，是一個值得關注的增強工具。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用指南，對於新手來說相對友好。安裝過程順暢，沒有明顯的坑。管理工具的功能也有詳細說明，方便用戶快速上手。文件目前僅提供英文版本，對於非英語使用者可能會有一定的障礙。
+> README 文件提供了清晰的安裝步驟和功能介紹，對於新手來說相對友好。安裝過程順暢，沒有明顯的坑。提供了良好的 getting started guide，幫助用戶快速上手。文件目前僅提供英文版本，可能對非英語用戶造成一定障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 靈活的增強功能，能夠滿足不同使用者的需求。
-> - 不修改原始應用，減少了更新帶來的兼容性問題。
-> - 提供直觀的管理工具，方便用戶配置和管理增強功能。
+> - 靈活的增強功能，支持多種插件和用戶自定義腳本。
+> - 不修改原始 Codex 文件，避免了更新後的兼容性問題。
+> - 良好的用戶界面，易於管理和配置增強功能。
 
 > [!danger] 缺點
-> - 對於不熟悉的用戶，配置過程可能有一定難度。
-> - 需要定期更新以保持與 Codex 的兼容性。
-> - 在某些情況下，可能會遇到安裝和啟動的問題。
+> - 仍在 alpha 階段，可能存在不穩定的功能。
+> - 對於某些插件，可能需要手動配置才能正常使用。
+> - macOS 可能會因為未簽名的安裝包而出現安全提示。
 
 > [!warning] 注意事項
-> - 需要手動配置中轉注入，對於不熟悉的用戶可能有學習曲線。
-> - 在某些情況下，Codex 的更新可能導致增強腳本失效，需要隨時更新。
-> - macOS 可能因未簽名的安裝包而無法直接安裝，需手動允許。
+> - 目前仍在 alpha 階段，可能存在不穩定的功能。
+> - 對於某些插件，可能需要手動配置才能正常使用。
+> - macOS 可能會因為未簽名的安裝包而出現安全提示。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的增強功能，但可能不支持中轉注入模式，適合對插件管理有需求的用戶。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 Codex 的插件生態，但缺乏 Codex++ 的靈活性和多樣性。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 提供 Codex 的兼容層，但不具備 Codex++ 的增強功能和管理工具。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的增強功能，但不支持中轉注入模式，對於需要多個 API 配置的用戶不夠靈活。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 專注於 Codex 的兼容性，但功能較為單一，無法提供 Codex++ 的多樣化增強選項。 |
 
 ## 替代方案決策
 
@@ -205,45 +206,47 @@ Codex++ 的核心技術基於 Rust 和 Tauri，這使得它在性能和安全性
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的增強功能，但可能不支持中轉注入模式，適合對插件管理有需求的用戶。 | 如果你需要一個專注於插件管理的工具，而不需要中轉功能。 | medium，因為需要重新配置插件和功能。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 Codex 的插件生態，但缺乏 Codex++ 的靈活性和多樣性。 | 如果你的需求主要集中在插件的使用，而不需要額外的增強功能。 | low，因為插件的配置相似。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的增強功能，但不支持中轉注入模式，對於需要多個 API 配置的用戶不夠靈活。 | 如果你的團隊不需要多個 API 配置，且希望使用一個簡單的增強工具。 | medium，因為需要重新配置插件和功能。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 專注於 Codex 的兼容性，但功能較為單一，無法提供 Codex++ 的多樣化增強選項。 | 如果你的主要需求是兼容性，且不需要額外的增強功能。 | low，因為功能相似，遷移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **CodexPlusPlus** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **CodexPlusPlus** | **boneyard** | **codex-shim** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供類似的增強功能，但可能不支持中轉注入模式，適合對插件管理有需求的用戶。 | 專注於 Codex 的插件生態，但缺乏 Codex++ 的靈活性和多樣性。 |
-> | 遷移成本 | - | medium，因為需要重新配置插件和功能。 | low，因為插件的配置相似。 |
-> | 適用場景 | 主要場景 | 如果你需要一個專注於插件管理的工具，而不需要中轉功能。 | 如果你的需求主要集中在插件的使用，而不需要額外的增強功能。 |
+> | 技術路線 | 本專案 | 提供類似的增強功能，但不支持中轉注入模式，對於需要多個 API 配置的用戶不夠靈活。 | 專注於 Codex 的兼容性，但功能較為單一，無法提供 Codex++ 的多樣化增強選項。 |
+> | 遷移成本 | - | medium，因為需要重新配置插件和功能。 | low，因為功能相似，遷移成本較低。 |
+> | 適用場景 | 主要場景 | 如果你的團隊不需要多個 API 配置，且希望使用一個簡單的增 | 如果你的主要需求是兼容性，且不需要額外的增強功能。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和開發環境，但不建議在生產環境中使用。
+> 適合個人試用和探索，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些系統上安裝後無法啟動，可能需要手動調整安全設置。
-  - 解法：在系統設置中允許未簽名的應用啟動。
-- [MEDIUM] 中轉注入模式下，某些插件可能無法正常工作。
-  - 解法：確認插件兼容性，必要時禁用中轉模式。
+- **[HIGH]** macOS 提示無法打開或已損壞
+  - 解法：執行終端命令解除安全隔離限制。
+- [MEDIUM] Codex++ 菜單未出現
+  - 解法：確認是從 Codex++ 入口啟動，而非原版 Codex。
+- [MEDIUM] 插件內顯示後端連不上
+  - 解法：重啟 Codex++ 或檢查 CDP bridge 問題。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司使用 Codex 進行開發 | 非常適合 | Codex++ 提供的增強功能能夠顯著提升開發效率。 |
-| 大型團隊需要穩定的 Codex 使用環境 | 適合 | 雖然功能強大，但可能需要定期更新以保持穩定性。 |
-| 對 Codex 功能有特殊需求的個人開發者 | 非常適合 | Codex++ 的靈活性能夠滿足個性化需求。 |
-| 不熟悉配置的用戶 | 不適合 | 配置過程可能對新手造成困難。 |
+| 小型開發團隊使用 Codex 進行項目開發 | 非常適合 | 提供靈活的增強功能和會話管理，能提升開發效率。 |
+| 個人開發者希望自定義 Codex 的功能 | 非常適合 | 支持用戶腳本和多種增強模式，滿足個性化需求。 |
+| 大型企業需要穩定的 Codex 使用環境 | 不適合 | 目前仍在 alpha 階段，可能不夠穩定。 |
+| 教育機構希望使用 Codex 進行教學 | 適合 | 能夠提供增強的學習工具，提升教學效果。 |
 
 ## 採用成本分析
 
@@ -255,12 +258,26 @@ Codex++ 的核心技術基於 Rust 和 Tauri，這使得它在性能和安全性
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到靈活的增強功能，值得嘗試。
+> 花 5 小時學習，3 小時整合，得到靈活的增強功能，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 安全性評估顯示，Codex++ 不需要高權限運行，但會存取用戶的配置和會話數據。依賴的庫和框架經過審計，整體風險較低。
+> 安全性評估為中等，因為該工具需要訪問用戶的 Codex 配置和登錄狀態，但不需要高權限。依賴的庫中未發現已知的安全漏洞，整體風險可控。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Codex++ 最常與 Codex App 搭配使用，作為其增強工具。在開發流程中，Codex++ 可以作為啟動器和管理工具，幫助用戶更好地管理 Codex 的功能。實際整合範例包括在使用 Codex 進行編程時，通過 Codex++ 管理工具來配置插件和增強功能。Codex++ 支援與 GitHub Actions 整合，便於在 CI/CD 流程中使用。整合的摩擦點主要在於需要用戶手動配置中轉注入，對於不熟悉的用戶可能會造成困擾。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 Codex++ 出現之前，Codex 用戶只能依賴原生功能，這限制了使用的靈活性和效率。用戶面臨著插件功能受限和會話管理困難的問題。隨著開發者對增強功能需求的增加，Codex++ 的出現填補了這一空白。
+
+技術上，Chromium DevTools Protocol 的進步使得這種不修改原始文件的增強方式成為可能。Codex++ 代表了對 Codex 生態系統的進一步擴展，未來可能會有更多類似的增強工具出現。
 
 ## 健康度儀表板
 
@@ -325,12 +342,12 @@ Codex++ 的核心技術基於 Rust 和 Tauri，這使得它在性能和安全性
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 645 |
-| Open Issues | 216 |
-| Issue 解決率 | 45% (175 closed) |
-| 最後推送 | 2026-05-31 |
+| Forks | 692 |
+| Open Issues | 236 |
+| Issue 解決率 | 46% (203 closed) |
+| 最後推送 | 2026-06-01 |
 | 建立日期 | 2026-05-06 |
-| Repo 大小 | 10.1 MB |
+| Repo 大小 | 10.6 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/BigPizzaV3/CodexPlusPlus) |
 
 > [!info]- 主要依賴
@@ -340,8 +357,8 @@ Codex++ 的核心技術基於 Rust 和 Tauri，這使得它在性能和安全性
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Rust" : 65
->     "JavaScript" : 21
+>     "Rust" : 66
+>     "JavaScript" : 20
 >     "TypeScript" : 11
 >     "CSS" : 2
 > ```
@@ -349,39 +366,41 @@ Codex++ 的核心技術基於 Rust 和 Tauri，這使得它在性能和安全性
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@BigPizzaV3](https://github.com/BigPizzaV3) | 205 |
+> | [@BigPizzaV3](https://github.com/BigPizzaV3) | 219 |
 > | [@szcascsa](https://github.com/szcascsa) | 7 |
 > | [@yangchuansheng](https://github.com/yangchuansheng) | 4 |
 > | [@wanpan11](https://github.com/wanpan11) | 4 |
 > | [@shallFun4Learning](https://github.com/shallFun4Learning) | 4 |
 
-**最新版本**：v1.1.7 (2026-05-22)
+**最新版本**：v1.1.9-alpha.2 (2026-06-01)
 
 > [!info]- Release Notes
-> 优化协议转换
-> 优化插件市场功能
-> 优化 baseurl 配置的 v1 自动检测
+> 1. 修复会话同步功能在官方模式的 bug
+> 2. 修复 mcp 提取后回写错误的 bug
+> 3. 增加会话同步的进度条显示
+> 
+> **Full Changelog**: https://github.com/BigPizzaV3/CodexPlusPlus/compare/v1.1.9-alpha.1...v1.1.9-alpha.2
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和回應使用者問題。
+**社群活躍度**：社群活躍，定期更新和回應問題。
 **連結**：[文件](https://github.com/BigPizzaV3/CodexPlusPlus)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-29 ~ 2026-05-31）
-> **活躍天數** 3 天 · **最新 commit** Add files via upload
+> [!abstract] 最近 10 次 commit（2026-06-01 ~ 2026-06-01）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #494 from crimsondhaks/fix/dialog-plugin-capability-345
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#327](https://github.com/BigPizzaV3/CodexPlusPlus/issues/327) | 对话经常报错：{"error":{"message":"An assistant message with 'tool_ | 3 | 18 |
+> | [#327](https://github.com/BigPizzaV3/CodexPlusPlus/issues/327) | 对话经常报错：{"error":{"message":"An assistant message with 'tool_ | 3 | 19 |
 > | [#257](https://github.com/BigPizzaV3/CodexPlusPlus/issues/257) | DEEPSEEK v4 PRO  无法使用CODEX插件的原因。希望作者优化一下 | 3 | 7 |
 > | [#377](https://github.com/BigPizzaV3/CodexPlusPlus/issues/377) | [Bug]:mac升级系统后,无法安装,没有仍要打开的选项 `needs triage` `type: bug` `area: provider-config` | 2 | 8 |
 > | [#340](https://github.com/BigPizzaV3/CodexPlusPlus/issues/340) | codex 移动端设置 | 2 | 2 |
-> | [#278](https://github.com/BigPizzaV3/CodexPlusPlus/issues/278) | 请求增加多个官方账号切换功能。 | 2 | 1 |
+> | [#302](https://github.com/BigPizzaV3/CodexPlusPlus/issues/302) | codex移动版功能无法使用 | 2 | 1 |
 
 ## README 摘錄
 
@@ -525,6 +544,8 @@ Codex++ 的核心技術基於 Rust 和 Tauri，這使得它在性能和安全性
 > 
 > 下方微信群二维码如果已满人，可以点击这里获取最新微信群二维码。
 > 
+> Telegram 频道：
+> 
 > 如果 Codex++ 帮到了你，可以请我喝杯咖啡，或者随手赞赏支持一下继续维护。
 > 
 >   
@@ -640,7 +661,16 @@ Codex++ 的核心技術基於 Rust 和 Tauri，這使得它在性能和安全性
 > 
 > ### macOS 提示无法打开或已损坏
 > 
-> 当前安装包未签名/未公证时，macOS Gatekeeper 可能拦截。可以在“系统设置 - 隐私与安全性”中允许打开。正式分发建议配置 Apple Developer ID 签名和 notarization。
+> 当前安装包未签名/未公证时，macOS Gatekeeper 可能拦截，出现“已损坏，无法打开”的提示：
+> 
+> 如果遇到该提示，可以在终端执行下面两条命令，解除苹果系统的安全隔离限制：
+> 
+> ```bash
+> sudo xattr -rd com.apple.quarantine /Applications/Codex++\ 管理工具.app
+> sudo xattr -rd com.apple.quarantine /Applications/Codex++.app
+> ```
+> 
+> 执行后重新打开 `Codex++` 或 `Codex++ 管理工具` 即可。
 > 
 > ### macOS Intel 能用吗
 > 
@@ -690,17 +720,17 @@ Codex++ 的核心技術基於 Rust 和 Tauri，這使得它在性能和安全性
 
 相關概念：[[CLI/TUI]] · [[自動化]] · [[API 設計]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]]
 
 [GitHub](https://github.com/BigPizzaV3/CodexPlusPlus)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：增強工具）
+> [!note]- 直接競品（同子分類：插件管理）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "增強工具" AND file.name != "BigPizzaV3--CodexPlusPlus"
+> WHERE subcategory = "插件管理" AND file.name != "BigPizzaV3--CodexPlusPlus"
 > SORT stars DESC
 > ```
 

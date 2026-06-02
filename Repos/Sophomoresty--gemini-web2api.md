@@ -7,7 +7,7 @@ language: Python
 license: MIT
 description: "Convert Google Gemini web into OpenAI-compatible API. Zero auth, cross-platform, single file."
 homepage: ""
-stars: 1060
+stars: 1061
 stars_per_day: 265
 forks: 283
 open_issues: 7
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-31
-use_case: "將 Google Gemini 網頁介面轉換為 OpenAI 兼容的 API，無需身份驗證，跨平台，單檔案運行。"
+use_case: "將 Google Gemini 網頁轉換為 OpenAI 兼容的 API，無需身份驗證，跨平台，單檔案運行。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 3
 next_review: "2026-06-05"
 contributor_count: 4
 engagement: "medium"
-issue_close_rate: 25
+issue_close_rate: 22
 repo_size_kb: 188
 readme_length: 8291
 bus_factor: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-31"
-star_history: "2026-05-31:519,2026-05-31:523,2026-06-01:899,2026-06-01:902,2026-06-02:1060"
+star_history: "2026-05-31:519,2026-05-31:523,2026-06-01:899,2026-06-01:902,2026-06-02:1060,2026-06-02:1061"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "gemini-web2api"
   - "Sophomoresty/gemini-web2api"
-  - "將 Google Gemini 網頁介面轉換為 OpenAI 兼容的 API，無需身份驗證，跨平台，單檔案運行。"
+  - "將 Google Gemini 網頁轉換為 OpenAI 兼容的 API，無需身份驗證，跨平台，單檔案運行。"
 ---
 
 # gemini-web2api
 
-**902** stars · **301** stars/天 · 建立 3 天前 · Python · MIT
+**1.1k** stars · **265** stars/天 · 建立 4 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Sophomoresty--gemini-web2api");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `easy-install`
 
 > [!summary] 一句話摘要
-> 將 Google Gemini 網頁介面轉換為 OpenAI 兼容的 API，無需身份驗證，跨平台，單檔案運行。
+> 將 Google Gemini 網頁轉換為 OpenAI 兼容的 API，無需身份驗證，跨平台，單檔案運行。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (301 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Medium
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (265 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 4+ 人 · **參與度** Medium
 > **適合** 需要快速接入 Google Gemini 功能但不想處理身份驗證的開發者。
-> **一句話重點** 這個專案提供了一個簡單的解決方案，讓開發者能夠無需身份驗證地接入 Google Gemini 的功能。
+> **一句話重點** 這個專案讓開發者能夠以極低的成本接入 Google Gemini 的強大功能，無需繁瑣的身份驗證流程。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,44 +102,52 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，3 小時整合，得到快速接入 Google Gemini 的能力，值得嘗試。
+> **結論** 花 2 小時學、1 小時整合，得到快速接入 Google Gemini 功能的效果，值得嘗試。
 
 > [!abstract] 核心創新
-> 無需身份驗證的 OpenAI 兼容 API，簡化了接入流程。
+> 這個專案的核心創新在於無需身份驗證的方式，讓開發者能夠輕鬆接入 Google Gemini 的功能。
 
 ## 專案簡介
 
-這個工具的核心機制是將 Google Gemini 的網頁介面轉換為 OpenAI 兼容的 API，實現無需身份驗證的訪問。用戶只需運行 `python gemini_web2api.py`，服務器即會啟動，並通過 `http://localhost:8081/v1` 提供 API 端點。此工具支持多種模型，包括 `gemini-3.5-flash-thinking`，並可調整思考深度，使用者可以透過 `@think=N` 參數來控制思考深度，從而獲得不同的輸出長度。技術上，這個專案使用 Python 實現，並依賴 `httpx` 進行 HTTP 請求，無需其他外部依賴，這使得它在不同平台上都能輕鬆運行。相比於其他類似工具，這個專案的特點在於其無需身份驗證的設計，這讓使用者能夠快速上手，而不必擔心繁瑣的授權流程。
+這個專案的核心機制是將 Google Gemini 的網頁介面轉換成 OpenAI 兼容的 API，使用者只需透過簡單的 HTTP 請求即可獲得 Gemini 的功能。使用者可以選擇不同的模型，如 `gemini-3.5-flash` 和 `gemini-3.5-flash-thinking`，並透過 `@think=N` 參數調整思考深度，這樣的設計使得用戶能夠根據需求靈活調整輸出。主要的 CLI 指令是 `python gemini_web2api.py`，啟動後服務會在 `http://localhost:8081/v1` 提供 API 端點。這個工具的賣點在於它的零成本和零身份驗證，讓開發者能夠輕鬆接入 Google 的 AI 功能，而不需要繁瑣的設置過程。
 
-與 OpenAI 的 API 直接對比，這個工具提供了更高的靈活性，因為用戶可以自由選擇是否使用 API 金鑰，並且支持多種模型的選擇。實際使用中，使用者可能會遇到 SSL 證書驗證失敗的問題，這是目前的熱門問題之一。這個專案目前處於早期階段，建議對於需要快速實現 OpenAI 兼容 API 的開發者使用，但對於生產環境的穩定性仍需謹慎評估。未來可能會加入更多功能以增強其穩定性和功能性。
+技術實作方面，專案使用 Python 開發，並且不依賴任何外部庫，僅需標準庫即可運行，這使得它的部署非常輕量。專案支持 SSE 流式傳輸，並且能夠處理多種模型的請求，這在功能上與 OpenAI 的 API 相似，但提供了更靈活的模型選擇和思考深度調整。與其他替代品相比，如 `0x0funky/agent-sprite-forge`，這個專案的優勢在於其簡單的設置和無需身份驗證的特性，適合需要快速集成 AI 功能的開發者。
 
-**技術棧**：`Python 3.8+` · `httpx>=0.25`
+
+
+使用效果上，這個工具能夠處理多達 20,000 字元的輸出，並且支持內建的網路搜索功能，這在需要即時查詢的場景下非常有用。然而，使用者需要注意的是，這個工具不支持圖像或多模態輸入，且每次請求都是獨立的，無法維持上下文。
+
+對於團隊來說，這個專案目前處於 alpha 階段，雖然功能強大，但在生產環境中使用時需要謹慎，特別是考慮到 Google 可能會對高頻請求進行限流。未來六個月內，這個專案可能會持續增強其功能，特別是在模型選擇和性能優化方面。
+
+建議在小型專案或個人實驗中使用，對於需要高頻請求或穩定性的生產環境則不太適合。整合的成本相對較低，學習時間約 2 小時，整合時間約 1 小時，總體上是一個值得嘗試的工具。
+
+**技術棧**：`Python 3.8+`
 
 ## 重點功能
 
 - 無需身份驗證 — 當 `api_keys` 為空時，無需身份驗證即可使用。
-- OpenAI 兼容 — 提供 `/v1/chat/completions` 和 `/v1/models` 的替代端點。
-- 多模型支持 — 包括 Flash、Pro、Auto 等多種模型選擇，輸出長度可達 20k 字元。
-- 思考深度調整 — 使用 `@think=N` 參數可調整思考深度，從最深到最淺。
-- 內建網路搜尋 — 利用 Gemini 的原生搜尋功能，提供即時資訊。
-- 流式傳輸支持 — 支援 SSE 流式傳輸，適合即時應用。
-- CLI 支持 — 提供 Google 原生 API 的兼容性，方便開發者使用。
+- OpenAI 兼容 — 可作為 `/v1/chat/completions` 和 `/v1/models` 的替代品。
+- 多模型支持 — 包括 Flash、Pro 和 Auto 模型，滿足不同需求。
+- 思考深度調整 — 使用 `@think=N` 參數調整思考深度，0=最深，4=最淺。
+- 內建網路搜索 — 直接從 Gemini 獲取最新信息，無需額外配置。
+- 流式傳輸支持 — 支持 SSE 流式傳輸，適合即時應用。
+- CLI 支持 — 提供 Codex 和 Gemini CLI 兼容的 API 端點。
 
 ## 快速開始
 
-1. 啟動服務器
+1. 啟動伺服器
 ```bash
 python gemini_web2api.py
 ```
-2. 訪問 API 端點
+2. 配置客戶端
 ```bash
-curl http://localhost:8081/v1/chat/completions -H 'Content-Type: application/json' -d '{"model":"gemini-3.5-flash","messages":[{"role":"user","content":"Hello!"}]}'
+curl http://localhost:8081/v1/chat/completions -H "Content-Type: application/json" -H "Authorization: Bearer sk-your-key" -d '{"model":"gemini-3.5-flash","messages":[{"role":"user","content":"Hello!"}]}'
 ```
 3. 使用 OpenAI Python SDK
 ```bash
 from openai import OpenAI
-client = OpenAI(base_url='http://localhost:8081/v1', api_key='sk-your-key')
-resp = client.chat.completions.create(model='gemini-3.5-flash-thinking', messages=[{"role": "user", "content": "Explain quantum computing"}])
+client = OpenAI(base_url="http://localhost:8081/v1", api_key="sk-your-key")
+resp = client.chat.completions.create(model="gemini-3.5-flash-thinking", messages=[{"role": "user", "content": "Explain quantum computing"}])
 print(resp.choices[0].message.content)
 ```
 
@@ -147,64 +155,63 @@ print(resp.choices[0].message.content)
 
 ```python
 {
-  "前置條件": "啟動服務器後，使用 curl 調用 API。",
-  "指令": "curl http://localhost:8081/v1/chat/completions -H 'Content-Type: application/json' -H 'Authorization: Bearer sk-your-key' -d '{\"model\":\"gemini-3.5-flash\",\"messages\":[{\"role\":\"user\",\"content\":\"Hello!\"}]}'",
-  "預期輸出": "返回一個 JSON 對象，包含模型生成的回應。"
+  "前置條件": "確保伺服器已啟動並運行。",
+  "指令": "curl http://localhost:8081/v1/chat/completions -H \"Content-Type: application/json\" -H \"Authorization: Bearer sk-your-key\" -d '{\"model\":\"gemini-3.5-flash\",\"messages\":[{\"role\":\"user\",\"content\":\"Hello!\"}]}'",
+  "預期輸出": "Gemini 的回應內容。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天就累積 902 stars（300/天），forks 234（25.9%），顯示出強烈的社群興趣。這位開發者 Sophomoresty 之前在開源領域有過其他貢獻，這次專案解決了無需身份驗證的 OpenAI 兼容 API 的需求，讓開發者能夠更輕鬆地接入 Google Gemini 的功能。此工具的出現正好滿足了對於簡化 API 使用流程的需求，並且在社群中引起了廣泛的討論和關注。高比例的 forks 也顯示出許多開發者對於這個工具的實際修改和使用意圖。
+> 建立 4 天內累積 1061 stars（265/天），forks 283（26.7%），顯示出強烈的社群興趣。作者 Sophomoresty 和其他貢獻者在開源社群中有一定的影響力，這個專案解決了開發者在接入 Google Gemini 時的身份驗證和成本問題，提供了一個簡單的解決方案。最近的推特和 Hacker News 討論也可能促進了這個專案的曝光度。高 forks/stars 比率顯示出許多人對這個工具的實際修改和使用，這是社群活躍度的良好指標。
 
 ## 適合誰使用
 
 **目標受眾**：需要快速接入 Google Gemini 功能但不想處理身份驗證的開發者。
 
 > [!example] 使用場景
-> - 獨立開發者用它來快速接入 Google Gemini 的功能，因為無需身份驗證，能迅速啟動開發。
-> - 小型團隊用它來構建聊天機器人，因為兼容 OpenAI API 的設計讓他們能夠輕鬆整合到現有系統中。
-> - 教育工作者用它來展示 AI 模型的應用，因為簡單的配置和無需身份驗證的特性讓學生能快速上手。
+> - 後端工程師用它來將 Google Gemini 的功能整合到現有的 API 中，因為它無需身份驗證且易於部署。
+> - 獨立開發者用它來快速測試不同的 AI 模型，因為它支持多種模型和思考深度調整，能夠靈活應對不同需求。
+> - 資料科學家用它來進行網路搜索和數據分析，因為內建的網路訪問功能可以即時獲取最新信息。
 
 ## 架構分析
 
-這個專案採用純 Python 實現，設計上追求零依賴，這意味著它可以在任何支持 Python 的環境中運行。資料流方面，請求被發送到 Gemini 的內部 API，並轉換為 OpenAI 的格式，這樣的設計使得使用者可以無縫切換到 Gemini 的功能。選擇 Python 是因為其廣泛的使用和簡單的語法，這降低了開發和維護的成本。這個工具的擴展性相對有限，因為它依賴於 Google 的 API，未來若 Google 改變其 API 結構，可能會影響到這個工具的穩定性。整體而言，這個專案提供了一個簡單的解決方案，但在面對大型應用時，可能需要考慮其可擴展性和穩定性。
+這個專案採用單一 Python 檔案架構，因為其設計目標是簡化使用者的部署流程。資料流從用戶的 HTTP 請求開始，經過轉換後發送到 Google Gemini 的內部 API，然後將回應轉換回 OpenAI 的格式。這樣的設計使得開發者能夠無縫接入 Gemini 的功能，並且避免了複雜的身份驗證過程。選擇 Python 作為開發語言的代價是可能在性能上不如某些編譯型語言，但這樣的選擇使得專案的可維護性和可讀性更高。由於是純 Python 實作，對於依賴的管理也相對簡單，這降低了使用者的入門門檻。
 
 ## 技術深入分析
 
-這個專案的核心技術在於其對 Google Gemini 網頁 StreamGenerate 協議的逆向工程，通過將請求轉換為 OpenAI 的 API 格式來實現功能。使用 `httpx` 進行 HTTP 請求，這使得它在性能上保持輕量級，並且能夠在不同的環境中運行。效能方面，由於沒有外部依賴，這個工具的啟動和運行速度都相對較快，但在高頻請求的情況下，可能會受到 Google 的速率限制。選擇 Python 作為開發語言，讓這個工具能夠快速迭代和維護，但也可能在處理大規模請求時出現性能瓶頸。這個專案的設計考量了使用者的便利性，但在面對未來可能的 API 變更時，可能需要持續的維護和更新。整合到現有的工具鏈中相對簡單，因為它只需配置端點和 API 金鑰，並且支持主流的開發環境和 CI/CD 流程。
+這個專案的核心技術機制是逆向工程 Google Gemini 的網頁 StreamGenerate 協議，通過 HTTP 請求與 Gemini 的內部 API 進行交互。使用者的請求會被轉換成 Gemini 的 protobuf 格式，然後再轉換回 OpenAI 的 API 格式，這樣的設計使得開發者能夠無縫接入 Gemini 的功能。效能方面，這個工具能夠處理多達 20,000 字元的輸出，並且支持流式傳輸，適合即時應用。選擇 Python 作為開發語言的好處在於其簡單易用，但可能在高並發場景下性能表現不如其他編譯型語言。技術風險方面，這個專案依賴於 Google 的 API，未來如果 Google 改變其 API 結構，可能會影響到這個工具的運作。整合方面，這個工具可以輕鬆與現有的 Python 環境整合，但在 CI/CD 流程中可能需要額外的配置來處理依賴和環境變數。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的指導和範例，讓新手能夠快速上手。安裝過程相對順暢，無需複雜的配置。文件中有多語言支持，但中文文檔的內容可能不夠完整，建議使用者參考英文版本以獲得更詳細的資訊。
+> README 文件清晰且包含多個範例，能夠幫助新手快速上手。安裝過程相對順暢，無需複雜的配置。提供了良好的入門指南，並且有中文文檔可供參考。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 無需身份驗證，快速上手。
-> - 支持多種模型，靈活性高。
-> - 純 Python 實現，無需額外依賴，易於部署。
+> - 無需身份驗證，降低了使用門檻。
+> - 支持多種模型和思考深度調整，靈活性高。
+> - 內建網路搜索功能，能夠即時獲取信息。
 
 > [!danger] 缺點
-> - 不支持圖片/多模態輸入，功能受限。
-> - 僅支持單輪對話，無法保持上下文。
-> - 可能受到 Google 的速率限制，影響使用體驗。
+> - 不支持圖像或多模態輸入，功能有限。
+> - 高頻請求可能會受到 Google 的限流影響。
+> - 每次請求為獨立對話，無法維持上下文。
 
 > [!warning] 注意事項
-> - 不支持圖片/多模態輸入，因為 Gemini 的圖片上傳需要專有的 RPC 協議。
-> - 無法實現真正的 Pro/Ultra 模型，因為未提供付費訂閱的 cookie。
-> - 僅支持單輪對話，每次請求都是獨立的，無法保持上下文。
-> - 可能會受到 Google 的速率限制，高頻請求可能會被阻擋。
+> - 不支持圖像或多模態輸入，僅能處理文本請求。
+> - 無法實現真正的 Pro/Ultra 模型，需提供有效的 cookie 才能獲得真實路由。
+> - 每次請求為獨立對話，無法維持上下文。
+> - 高頻請求可能會受到 Google 的限流影響。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 API 轉換功能，但可能需要更複雜的設置和身份驗證流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於多模態輸入的處理，適合需要圖像生成的應用場景。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 專為 OpenAI Codex 設計，功能更專一，適合需要代碼生成的開發者。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具提供了更為全面的代理功能，但需要更多的配置和身份驗證，適合需要高自定義的開發者。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於多模態輸入，適合需要處理圖像的應用場景，但部署和使用上相對複雜。 |
 
 ## 替代方案決策
 
@@ -212,16 +219,16 @@ print(resp.choices[0].message.content)
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體用量更少，但生態系統不如 Python 豐富。 | 如果你的團隊需要更高的性能和記憶體效率，且願意使用 Rust。 | medium，因為需要重新學習 Rust 語言和生態系統。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於多模態輸入的處理，適合需要圖像生成的應用場景。 | 如果你的應用需要處理圖片或多模態數據，這個工具會更合適。 | high，因為需要重構應用邏輯以支持多模態功能。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具使用 Rust 實作，記憶體用量較少，但需要更多的配置和身份驗證。 | 如果你的團隊已經在用 Rust 並需要高效能的代理功能，這個工具會是更好的選擇。 | medium，因為需要重新設計 API 請求的格式。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於多模態輸入，使用 Python 開發，但功能上較為複雜。 | 如果你的應用需要處理圖像或其他多模態數據，這個工具會是更合適的選擇。 | high，因為需要重新設計整個請求和回應的流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **gemini-web2api** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量更少，但生態系統不如 Python 豐富。 | 專注於多模態輸入的處理，適合需要圖像生成的應用場景。 |
-> | 遷移成本 | - | medium，因為需要重新學習 Rust 語言和生態系統。 | high，因為需要重構應用邏輯以支持多模態功能。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要更高的性能和記憶體效率，且願意使用 Rust | 如果你的應用需要處理圖片或多模態數據，這個工具會更合適。 |
+> | 技術路線 | 本專案 | 這個工具使用 Rust 實作，記憶體用量較少，但需要更多的配置和身份驗證。 | 這個工具專注於多模態輸入，使用 Python 開發，但功能上較為複雜。 |
+> | 遷移成本 | - | medium，因為需要重新設計 API 請求的格式。 | high，因為需要重新設計整個請求和回應的流程。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在用 Rust 並需要高效能的代理功能，這個 | 如果你的應用需要處理圖像或其他多模態數據，這個工具會是更合適 |
 
 ## 成熟度評估
 
@@ -232,53 +239,44 @@ print(resp.choices[0].message.content)
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人項目試用，但不建議用於生產環境的核心功能。
+> 適合個人實驗和小型專案，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高頻請求時可能會遭遇 Google 的速率限制，導致請求失敗。
-  - 解法：建議在請求之間加入延遲，或減少請求頻率。
-- [MEDIUM] 使用 Pro 模型時，未提供正確的 cookie 可能導致路由錯誤。
-  - 解法：確保提供正確的 cookie 文件以獲得正確的模型路由。
+- **[HIGH]** 高頻請求可能會導致 Google 限流，影響使用體驗。
+  - 解法：減少請求頻率，或考慮使用代理。
+- [MEDIUM] 使用 Pro 模型時，未提供有效的 cookie 會導致路由錯誤。
+  - 解法：確保提供正確的 cookie 文件。
+- [MEDIUM] 每次請求為獨立對話，無法維持上下文。
+  - 解法：在請求中手動包含之前的消息。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的聊天機器人開發 | 非常適合 | 無需身份驗證，快速集成到現有系統中。 |
-| 教育機構的 AI 教學 | 適合 | 簡單的配置和使用方式讓學生能快速上手。 |
-| 大型企業的生產環境 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
+| 小型開發團隊的內部工具 | 非常適合 | 無需身份驗證，快速集成。 |
+| 需要高頻請求的生產環境 | 不適合 | 可能會受到 Google 的限流影響。 |
+| 個人開發者的實驗專案 | 適合 | 簡單易用，無需複雜配置。 |
+| 需要多模態輸入的應用 | 不適合 | 不支持圖像或多模態請求。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~2 小時 |
-| 整合時間 | ~3 小時 |
+| 整合時間 | ~1 小時 |
 | 維護負擔 | low |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，3 小時整合，得到快速接入 Google Gemini 的能力，值得嘗試。
+> 花 2 小時學、1 小時整合，得到快速接入 Google Gemini 功能的效果，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，使用時無需擔心安全性問題。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-這個工具最常與 Python 開發環境搭配使用，適合在開發和測試階段進行集成。在一個使用 Flask 的應用中，可以將這個工具作為一個服務來調用，具體做法是將 API 端點配置為 Flask 的路由。支援 GitHub Actions 進行 CI/CD 流程，但與其他主流工具的整合可能需要額外的適配層，特別是在處理高頻請求時。
-
-## 歷史脈絡
-
-> [!info] 這個工具為什麼現在出現？
-
-在這個工具出現之前，開發者通常需要依賴 Google 的官方 API，這些 API 通常需要身份驗證並且使用繁瑣。隨著開源社群對於簡化 API 使用的需求增加，這個專案應運而生。技術上，Google Gemini 的 API 設計和開放性使得這個工具的實現成為可能，未來可能會出現更多類似的解決方案來滿足開發者的需求。
+> 低風險：該工具不需要高權限，僅需訪問 Google Gemini 的 API，且不存取敏感資料。
 
 ## 健康度儀表板
 
@@ -343,9 +341,9 @@ print(resp.choices[0].message.content)
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 234 |
-| Open Issues | 6 |
-| Issue 解決率 | 25% (2 closed) |
+| Forks | 283 |
+| Open Issues | 7 |
+| Issue 解決率 | 22% (2 closed) |
 | 最後推送 | 2026-05-31 |
 | 建立日期 | 2026-05-28 |
 | Repo 大小 | 188 KB |
@@ -365,8 +363,8 @@ print(resp.choices[0].message.content)
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，近期有數個問題被提出和回應。
-**連結**：[文件](README_CN.md)
+**社群活躍度**：社群活躍度中等，近期有多次提交和問題回應。
+**連結**：[文件](https://github.com/Sophomoresty/gemini-web2api/blob/main/README_CN.md)
 
 ## 開發動態
 
@@ -378,10 +376,10 @@ print(resp.choices[0].message.content)
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
+> | [#20](https://github.com/Sophomoresty/gemini-web2api/issues/20) | Firefox Playwright cookie automation | 0 | 1 |
 > | [#19](https://github.com/Sophomoresty/gemini-web2api/issues/19) | [Bug] 调用 /v1/chat/completions 接口时出现上游 SSL 证书验证失败 (CERTIFICAT | 0 | 0 |
 > | [#18](https://github.com/Sophomoresty/gemini-web2api/issues/18) | 更加强大的仓库 | 0 | 0 |
 > | [#13](https://github.com/Sophomoresty/gemini-web2api/issues/13) | 如何验证 cookie 是否真正生效？Pro 模型无 thinking 延迟 | 0 | 1 |
-> | [#12](https://github.com/Sophomoresty/gemini-web2api/issues/12) | 不支持图片/多模态输入 | 0 | 1 |
 
 ## README 摘錄
 
@@ -637,7 +635,7 @@ print(resp.choices[0].message.content)
 
 ## 延伸閱讀
 
-相關概念：[[API 設計]] · [[自動化測試]] · [[CLI/TUI]]
+相關概念：[[API 設計]] · [[自動化]] · [[CLI/TUI]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[HenryXiaoYang--wechat-access-unqclawed|HenryXiaoYang/wechat-access-unqclawed]] · [[TianyiDataScience--openclaw-control-center|TianyiDataScience/openclaw-control-center]] · [[Infatoshi--OpenSquirrel|Infatoshi/OpenSquirrel]]
 
@@ -681,7 +679,7 @@ print(resp.choices[0].message.content)
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["API 設計","自動化測試","CLI/TUI"];
+> const concepts = ["API 設計","自動化","CLI/TUI"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Sophomoresty--gemini-web2api" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
