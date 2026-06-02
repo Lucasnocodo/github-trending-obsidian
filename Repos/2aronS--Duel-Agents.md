@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "CLI, SDK, and IDE plugins for Duel Agents"
 homepage: "https://duelagents.com"
-stars: 574
-stars_per_day: 191
-forks: 16
+stars: 639
+stars_per_day: 160
+forks: 17
 open_issues: 1
 created: 2026-05-28
 pushed_at: 2026-05-28
@@ -30,8 +30,8 @@ use_case: "提供 CLI、SDK 和 IDE 插件，讓開發者能夠輕鬆整合多�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-03"
+appearances: 2
+next_review: "2026-06-09"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-05-31"
-star_history: "2026-05-31:459,2026-05-31:460,2026-06-01:574"
+star_history: "2026-05-31:459,2026-05-31:460,2026-06-01:574,2026-06-02:639"
 tags:
   - github
   - "category/開發工具"
@@ -854,4 +854,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-02|2026-06-02]] — 再次上榜，639 stars
 - [[2026-05-31|2026-05-31]] — 首次收錄，459 stars

@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "Self-hosted AI workspace. "
 homepage: ""
-stars: 8074
-stars_per_day: 8074
-forks: 1151
-open_issues: 133
+stars: 21283
+stars_per_day: 21283
+forks: 2599
+open_issues: 427
 created: 2026-05-31
-pushed_at: 2026-06-01
+pushed_at: 2026-06-02
 first_seen: 2026-06-01
 week: "2026-W23"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "提供自我托管的 AI 工作區，讓用戶在本地運行各種 A
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-04"
+appearances: 2
+next_review: "2026-06-05"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 33
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-01"
-star_history: "2026-06-01:8074"
+star_history: "2026-06-01:8074,2026-06-02:21283"
 tags:
   - github
   - "category/ai_ml"
@@ -849,4 +849,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-02|2026-06-02]] — 再次上榜，21.3k stars
 - [[2026-06-01|2026-06-01]] — 首次收錄，8.1k stars

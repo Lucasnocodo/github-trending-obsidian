@@ -7,12 +7,12 @@ language: Python
 license: NOASSERTION
 description: "AI-friendly PPT builder skill: 17 hand-polished Chinese PPTX templates + non-destructive text-only editing tools (python-pptx based). Pick a template, write edits.json, build a real .pptx with the layout intact. Personal/research use only."
 homepage: ""
-stars: 874
-stars_per_day: 219
-forks: 88
-open_issues: 1
+stars: 1423
+stars_per_day: 285
+forks: 128
+open_issues: 0
 created: 2026-05-27
-pushed_at: 2026-05-31
+pushed_at: 2026-06-01
 first_seen: 2026-06-01
 week: "2026-W23"
 month: "2026-06"
@@ -30,10 +30,10 @@ use_case: "提供 AI 友好的 PPT 建構工具，包含 17 種精美的中文 P
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-04"
+appearances: 2
+next_review: "2026-06-05"
 contributor_count: 1
-engagement: "medium"
+engagement: "low"
 issue_close_rate: 50
 repo_size_kb: 85403
 readme_length: 2013
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-01"
-star_history: "2026-06-01:874"
+star_history: "2026-06-01:874,2026-06-02:1423"
 tags:
   - github
   - "category/生產力"
@@ -775,4 +775,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-02|2026-06-02]] — 再次上榜，1.4k stars
 - [[2026-06-01|2026-06-01]] — 首次收錄，874 stars

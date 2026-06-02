@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "Your AI forgets. This remembers. Spec-driven coding harness for vibecoders, product owners, CEOs and real builders — self-improving context memory, 12 agents, 32 skills. Kills context rot, ships features, not spaghetti. Claude Code & Codex. Any stack. 30 seconds"
 homepage: ""
-stars: 668
-stars_per_day: 167
-forks: 160
+stars: 700
+stars_per_day: 140
+forks: 169
 open_issues: 16
 created: 2026-05-27
-pushed_at: 2026-05-31
+pushed_at: 2026-06-01
 first_seen: 2026-05-30
 week: "2026-W22"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "提供 AI 編碼代理的上下文記憶，幫助開發者自動化�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-06-08"
+appearances: 4
+next_review: "2026-06-09"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-30"
-star_history: "2026-05-30:507,2026-05-31:594,2026-06-01:668"
+star_history: "2026-05-30:507,2026-05-31:594,2026-06-01:668,2026-06-02:700"
 tags:
   - github
   - "category/開發工具"
@@ -904,6 +904,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-02|2026-06-02]] — 再次上榜，700 stars
 - [[2026-06-01|2026-06-01]] — 再次上榜，668 stars
 - [[2026-05-31|2026-05-31]] — 再次上榜，594 stars
 - [[2026-05-30|2026-05-30]] — 首次收錄，507 stars
