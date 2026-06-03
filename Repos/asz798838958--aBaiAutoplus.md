@@ -7,10 +7,10 @@ language: Python
 license: AGPL-3.0
 description: "多平台 AI 账号自动注册与管理 · 协议化付款一键开通 ChatGPT Plus"
 homepage: ""
-stars: 660
-stars_per_day: 660
-forks: 399
-open_issues: 3
+stars: 1049
+stars_per_day: 525
+forks: 546
+open_issues: 4
 created: 2026-05-31
 pushed_at: 2026-06-02
 first_seen: 2026-06-02
@@ -30,8 +30,8 @@ use_case: "自動化管理多平台 AI 帳號及一鍵開通 ChatGPT Plus 服務
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-05"
+appearances: 2
+next_review: "2026-06-06"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 40
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-02"
-star_history: "2026-06-02:652,2026-06-02:660"
+star_history: "2026-06-02:652,2026-06-02:660,2026-06-03:1049"
 tags:
   - github
   - "category/開發工具"
@@ -998,4 +998,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-03|2026-06-03]] — 再次上榜，1.0k stars
 - [[2026-06-02|2026-06-02]] — 首次收錄，652 stars

@@ -2010,10 +2010,10 @@
   },
   "op7418/guizang-social-card-skill": {
     "first_seen": "2026-05-29",
-    "last_seen": "2026-06-02",
-    "times_seen": 5,
+    "last_seen": "2026-06-03",
+    "times_seen": 6,
     "stars_first": 783,
-    "stars_last": 2423
+    "stars_last": 2588
   },
   "harrietteehisqu7759383/kms-pico-latest-april-2026": {
     "first_seen": "2026-05-29",
@@ -2031,10 +2031,10 @@
   },
   "helloianneo/ian-xiaohei-illustrations": {
     "first_seen": "2026-05-30",
-    "last_seen": "2026-06-02",
-    "times_seen": 4,
+    "last_seen": "2026-06-03",
+    "times_seen": 5,
     "stars_first": 817,
-    "stars_last": 1627
+    "stars_last": 1744
   },
   "withkynam/vibecode-pro-max-kit": {
     "first_seen": "2026-05-30",
@@ -2045,10 +2045,10 @@
   },
   "Michaelliv/pi-dynamic-workflows": {
     "first_seen": "2026-05-30",
-    "last_seen": "2026-06-02",
-    "times_seen": 4,
+    "last_seen": "2026-06-03",
+    "times_seen": 5,
     "stars_first": 436,
-    "stars_last": 703
+    "stars_last": 739
   },
   "baoweise-bot/aimili-vpngate": {
     "first_seen": "2026-05-30",
@@ -2066,17 +2066,17 @@
   },
   "MatinSenPai/SenPaiScanner": {
     "first_seen": "2026-05-31",
-    "last_seen": "2026-06-02",
-    "times_seen": 3,
+    "last_seen": "2026-06-03",
+    "times_seen": 4,
     "stars_first": 595,
-    "stars_last": 857
+    "stars_last": 905
   },
   "Sophomoresty/gemini-web2api": {
     "first_seen": "2026-05-31",
-    "last_seen": "2026-06-02",
-    "times_seen": 3,
+    "last_seen": "2026-06-03",
+    "times_seen": 4,
     "stars_first": 519,
-    "stars_last": 1060
+    "stars_last": 1253
   },
   "2aronS/Duel-Agents": {
     "first_seen": "2026-05-31",
@@ -2094,23 +2094,37 @@
   },
   "pewdiepie-archdaemon/odysseus": {
     "first_seen": "2026-06-01",
-    "last_seen": "2026-06-02",
-    "times_seen": 2,
+    "last_seen": "2026-06-03",
+    "times_seen": 3,
     "stars_first": 8074,
-    "stars_last": 21283
+    "stars_last": 33559
   },
   "GordenSun/GordenPPTSkill": {
     "first_seen": "2026-06-01",
-    "last_seen": "2026-06-02",
-    "times_seen": 2,
+    "last_seen": "2026-06-03",
+    "times_seen": 3,
     "stars_first": 874,
-    "stars_last": 1423
+    "stars_last": 1560
   },
   "asz798838958/aBaiAutoplus": {
     "first_seen": "2026-06-02",
-    "last_seen": "2026-06-02",
-    "times_seen": 1,
+    "last_seen": "2026-06-03",
+    "times_seen": 2,
     "stars_first": 652,
-    "stars_last": 652
+    "stars_last": 1049
+  },
+  "Gloridust/WechatOnCloud": {
+    "first_seen": "2026-06-03",
+    "last_seen": "2026-06-03",
+    "times_seen": 1,
+    "stars_first": 1468,
+    "stars_last": 1468
+  },
+  "b-nnett/goose": {
+    "first_seen": "2026-06-03",
+    "last_seen": "2026-06-03",
+    "times_seen": 1,
+    "stars_first": 752,
+    "stars_last": 752
   }
 }

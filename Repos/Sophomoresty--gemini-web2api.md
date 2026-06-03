@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Convert Google Gemini web into OpenAI-compatible API. Zero auth, cross-platform, single file."
 homepage: ""
-stars: 1061
-stars_per_day: 265
-forks: 283
-open_issues: 7
+stars: 1253
+stars_per_day: 251
+forks: 323
+open_issues: 10
 created: 2026-05-28
-pushed_at: 2026-05-31
+pushed_at: 2026-06-02
 first_seen: 2026-05-31
 week: "2026-W23"
 month: "2026-05"
@@ -30,8 +30,8 @@ use_case: "將 Google Gemini 網頁轉換為 OpenAI 兼容的 API，無需身份
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-06-05"
+appearances: 4
+next_review: "2026-06-06"
 contributor_count: 4
 engagement: "medium"
 issue_close_rate: 22
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-31"
-star_history: "2026-05-31:519,2026-05-31:523,2026-06-01:899,2026-06-01:902,2026-06-02:1060,2026-06-02:1061"
+star_history: "2026-05-31:519,2026-05-31:523,2026-06-01:899,2026-06-01:902,2026-06-02:1060,2026-06-02:1061,2026-06-03:1253"
 tags:
   - github
   - "category/開發工具"
@@ -933,6 +933,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-03|2026-06-03]] — 再次上榜，1.3k stars
 - [[2026-06-02|2026-06-02]] — 再次上榜，1.1k stars
 - [[2026-06-01|2026-06-01]] — 再次上榜，899 stars
 - [[2026-05-31|2026-05-31]] — 首次收錄，519 stars
