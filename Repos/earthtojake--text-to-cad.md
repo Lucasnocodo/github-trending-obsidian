@@ -7,19 +7,19 @@ language: JavaScript
 license: MIT
 description: "A collection of agent skills for CAD, robotics and hardware design"
 homepage: "https://www.cadskills.xyz"
-stars: 5443
-stars_per_day: 133
-forks: 644
-open_issues: 10
+stars: 5518
+stars_per_day: 131
+forks: 654
+open_issues: 17
 created: 2026-04-22
-pushed_at: 2026-06-01
+pushed_at: 2026-06-02
 first_seen: 2026-04-28
 week: "2026-W18"
 month: "2026-04"
 category: "開發工具"
 subcategory: "CAD 工具"
 release_tag: "0.2.0"
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
@@ -34,20 +34,19 @@ appearances: 2
 next_review: "2026-05-06"
 contributor_count: 3
 engagement: "medium"
-issue_close_rate: 33
-repo_size_kb: 76994
+issue_close_rate: 23
+repo_size_kb: 76146
 readme_length: 7916
 bus_factor: 1
-last_release_days: 2
+last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-04-28"
-star_history: "2026-04-28:952,2026-04-29:1094,2026-04-29:1095,2026-05-03:1279,2026-05-04:1481,2026-05-05:1869,2026-05-06:1963,2026-05-08:2132,2026-05-12:2420,2026-05-17:2912,2026-05-29:5159,2026-06-02:5443"
+star_history: "2026-04-28:952,2026-04-29:1094,2026-04-29:1095,2026-05-03:1279,2026-05-04:1481,2026-05-05:1869,2026-05-06:1963,2026-05-08:2132,2026-05-12:2420,2026-05-17:2912,2026-05-29:5159,2026-06-02:5443,2026-06-03:5518"
 tags:
   - github
   - "category/開發工具"
   - "lang/javascript"
-  - easy_install
   - "topic/3mf"
   - "topic/agents"
   - "topic/ai_agents"
@@ -61,7 +60,7 @@ aliases:
 
 # text-to-cad
 
-**5.4k** stars · **133** stars/天 · 建立 41 天前 · JavaScript · MIT
+**5.5k** stars · **131** stars/天 · 建立 42 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/earthtojake--text-to-cad");
@@ -74,7 +73,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`0.2.0` `easy-install`
+`0.2.0`
 
 `3mf` `agents` `ai-agents` `build123d` `cad` `dxf` `glb` `mechanical-engineering` `opencascade` `robotics` `sdf` `srdf` `step` `stl` `stp` `text-to-cad` `urdf` `wasm`
 
@@ -82,10 +81,10 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 提供 CAD、機器人和硬體設計的代理技能庫。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Growing · **熱度** Hot (133 stars/day)
+> **安裝難度** Medium · **專案狀態** Growing · **熱度** Hot (131 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Medium
-> **適合** 需要自動化 CAD 和機器人設計流程的工程師和開發者。
-> **一句話重點** 這個專案的自動化能力能顯著提升 CAD 和機器人設計的效率。
+> **適合** 需要快速生成和處理 CAD 模型的工程師和設計師。
+> **一句話重點** 這個專案的設計理念是讓 CAD 和機器人設計變得更容易，特別是對於非專業用戶。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,105 +107,103 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到自動化 CAD 設計的效果，值得考慮。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到快速生成 CAD 模型的能力，值得考慮。
 
 > [!abstract] 核心創新
-> 提供了一個自動化的 CAD 和機器人設計技能庫，能夠快速生成和處理設計文件。
+> 提供了一個專注於 CAD 和機器人設計的代理技能庫，簡化了設計流程。
 
 ## 專案簡介
 
-這個專案提供了一個技能庫，專注於 CAD、機器人和硬體設計的自動化工作流程。用戶可以透過簡單的自然語言或圖像請求來生成和編輯 CAD 模型，主要輸出格式為 STEP，並支持 STL、3MF 和 GLB 格式的導出。安裝方式非常簡單，只需執行 `npx skills install earthtojake/text-to-cad` 即可。這個工具的賣點在於它能夠將複雜的 CAD 和機器人描述文件的生成過程自動化，從而節省大量的手動操作時間。技術上，這個專案使用 JavaScript 和 Python，並依賴於 Git LFS 來處理大型資產，這使得它在處理重資源時能保持輕量級的克隆。
+這個專案是一個針對 CAD、機器人和硬體設計的技能庫，旨在幫助用戶生成、檢查、採購、切片和處理 CAD 及機器人描述檔案。用戶可以透過簡單的自然語言或圖像請求來創建和編輯 CAD 模型，主要輸出格式為 STEP，並支援 STL、3MF 和 GLB 等格式的導出。關鍵指令如 `cad.create` 和 `cad.viewer` 使得用戶能夠快速進行模型的生成和預覽。這個工具的賣點在於其專注於簡化 CAD 和機器人設計流程，讓非專業人士也能輕鬆使用。技術上，這個專案使用了 JavaScript 和 Python，並且依賴於多個開源庫來實現 CAD 模型的生成和視覺化，這使得它在功能上相對輕量且易於擴展。
 
-與其他 CAD 工具相比，如 FreeCAD 或 AutoCAD，這個專案的優勢在於其自動化程度和集成能力，特別適合需要快速原型設計的開發者。使用者可以在本地環境中快速預覽 CAD 文件，並且能夠輕鬆地將其整合到現有的工作流中。這個專案的社群活躍度中等，開放問題的解決率為 33%，顯示出一定的維護狀況。對於小型團隊或個人開發者來說，這是一個值得考慮的選擇，特別是當他們需要快速生成 CAD 模型時。未來幾個月，這個專案可能會進一步增強其與其他 CAD 工具的集成能力。
+與其他工具相比，如 `0x0funky/agent-sprite-forge` 和 `0xGF/boneyard`，這個專案提供了更專注於 CAD 和機器人描述的功能，並且在用戶友好性上有明顯優勢。實際使用中，這個工具能夠處理複雜的 CAD 模型，並且支援多種文件格式，適合需要快速原型設計的工程師和設計師。社群活躍度良好，開發者定期更新，並且開放的問題解決率為 23%。這個專案目前處於 beta 階段，適合小型團隊或個人使用，但在大規模商業應用上可能需要進一步的穩定性測試。對於需要快速生成和處理 CAD 模型的用戶，這是一個值得考慮的選擇。
 
 **技術棧**：`JavaScript` · `Python` · `Shell` · `CSS` · `HTML`
 
 ## 重點功能
 
-- CAD 模型生成 — 從自然語言或圖像請求生成 CAD 模型，支持 STEP、STL、3MF 和 GLB 格式。
-- CAD 瀏覽器 — 提供本地 CAD、G-code 和機器人文件的預覽功能。
-- STEP 零件查找 — 自動查找現成的 STEP 零件，如螺絲、軸承和電機。
-- URDF 文件生成 — 自動生成機器人結構文件，包含鏈接、關節和限制。
-- G-code 切片 — 將支持的網格文件切片為經過驗證的 G-code，並支持實際的切片 CLI。
+- CAD 模型生成 — 支援從自然語言或圖像請求生成 CAD 模型，主要輸出為 STEP 格式。
+- CAD Viewer — 提供本地瀏覽器預覽功能，支援 CAD、G-code 和機器人文件的顯示。
+- STEP 零件查找 — 能夠找到現成的 STEP 零件，如螺絲、軸承和馬達。
+- URDF 文件撰寫 — 提供撰寫機器人結構文件的功能，包括連接、關節和質量。
+- SRDF 和 SDF 支援 — 能夠為機器人添加 MoveIt 計畫組和模擬模型的創建。
 
 ## 快速開始
 
-1. 安裝 CAD Skills
+1. 克隆專案
 ```bash
-npx skills install earthtojake/text-to-cad
+git clone https://github.com/earthtojake/text-to-cad.git
 ```
-2. 為 Codex 安裝插件
+2. 安裝依賴
 ```bash
-codex plugin marketplace add earthtojake/text-to-cad
+pip install -r skills/cad/requirements.txt
 ```
-3. 為 Claude Code 安裝插件
+3. 啟動 CAD Viewer
 ```bash
-claude plugin marketplace add earthtojake/text-to-cad
+python viewer.py
 ```
 
 ## 程式碼範例
 
 ```js
 {
-  "前置條件": "已安裝 CAD Skills",
-  "指令": "npx skills install earthtojake/text-to-cad",
-  "預期輸出": "安裝成功，顯示可用技能列表。"
+  "前置條件": "安裝了必要的依賴",
+  "指令": "cad.create('Create a simple cube')",
+  "預期輸出": "生成一個簡單的立方體 CAD 模型"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 41 天內累積 5443 stars（133/天），forks 644（11.8%），顯示出不錯的增長潛力。作者 earthtojake 在 CAD 和機器人領域有豐富的經驗，之前的專案也受到廣泛關注。這個專案解決了 CAD 和機器人設計中自動化生成的需求，特別是在需要快速迭代的開發環境中。社群對於集成 OpenCode 和 Text2CAD 模型的需求也反映了市場對於這類工具的期待。技術上，隨著 AI 和自動化技術的進步，這個工具的可行性大幅提升。forks/stars 比率 11.8% 表示許多用戶對其進行了實際修改和使用。
+> 建立 42 天內累積 5518 stars（131/天），forks 654（11.9%），顯示出不錯的增長潛力。作者 earthtojake 在 CAD 和機器人領域有豐富經驗，這個專案填補了市場上對於簡化 CAD 設計流程的需求。社群對於 CAD 工具的需求逐漸上升，特別是在自動化和機器人設計方面。此專案的功能和易用性吸引了許多開發者的注意，並且在社交媒體上獲得了良好的反響。forks/stars 比率為 11.9%，表示有相當比例的用戶在實際修改和使用這個工具。
 
 ## 適合誰使用
 
-**目標受眾**：需要自動化 CAD 和機器人設計流程的工程師和開發者。
+**目標受眾**：需要快速生成和處理 CAD 模型的工程師和設計師。
 
 > [!example] 使用場景
-> - 機械工程師用它來自動生成 CAD 模型，因為手動設計過程繁瑣且耗時。
-> - 機器人開發者用它來快速創建 URDF 文件，因為這樣可以節省大量的手動編碼時間。
-> - 製造業設計師用它來檢查和驗證 DXF 文件，因為這樣可以在上傳之前確保文件的正確性。
+> - 機械工程師用它來快速生成 CAD 模型，因為可以直接從自然語言請求生成模型，節省了手動設計的時間。
+> - 機器人開發者用它來撰寫 URDF 文件，因為它提供了簡單的接口來定義機器人的結構和運動學。
+> - 設計師用它來檢查和預覽 CAD 文件，因為內建的 CAD Viewer 能夠快速顯示模型，提升了設計檢查的效率。
 
 ## 架構分析
 
-這個專案採用模組化的架構設計，將不同的技能分為獨立的模組以便於維護和擴展。每個技能模組都可以獨立安裝和使用，這樣用戶可以根據需求選擇所需的功能。資料流方面，使用者的請求會通過技能庫進行處理，生成相應的 CAD 模型或機器人描述文件。
-
-選擇這種設計的原因在於能夠提供靈活性和可擴展性，讓開發者可以根據需求進行自定義。這種模組化設計的代價是需要用戶對各個技能的使用有一定的了解，否則可能會面臨學習曲線。擴展性方面，隨著新技能的加入，整體架構仍然能夠保持穩定，但在處理大量請求時可能會出現性能瓶頸。
+這個專案採用模組化設計，將不同的技能分散到各個子模組中，這樣的設計使得功能擴展變得容易。資料流方面，使用者的請求會經過解析，然後轉換為相應的 CAD 操作，最終生成模型並提供預覽。選擇這種架構的原因在於能夠快速迭代和增加新功能，但代價是需要維護多個模組之間的相依性。擴展性方面，由於使用了輕量級的 JavaScript 和 Python，對於小型專案來說非常友好，但在處理大型 CAD 模型時可能會遇到性能瓶頸。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是通過自然語言處理來解析用戶的請求，並生成相應的 CAD 模型。使用 JavaScript 和 Python 作為主要開發語言，這使得它能夠在多種環境中運行。效能方面，對於小型 CAD 模型的生成速度非常快，但在處理大型模型時可能會出現延遲，尤其是在資源有限的環境中。選擇這種技術棧的原因在於其廣泛的社群支持和豐富的庫可供使用，這樣可以加速開發進程。技術風險方面，隨著用戶數量的增加，系統可能會面臨性能瓶頸，特別是在高並發請求的情況下。整合方面，這個專案能夠與主流的開發工具鏈良好協作，並且支持 CI/CD 流程的集成，這對於團隊協作非常友好。
+這個專案的核心技術機制在於使用自然語言處理來解析用戶的請求，並將其轉換為 CAD 操作。使用的演算法包括文本解析和模型生成，這使得用戶能夠以簡單的語言來描述他們的需求。效能特性方面，專案能夠處理中小型的 CAD 模型，但在生成大型模型時可能會遇到延遲。選擇 JavaScript 和 Python 作為主要語言，這樣的選擇使得開發過程中能夠快速迭代，但也可能導致性能上的折衷。依賴樹相對簡單，主要依賴於幾個開源庫，降低了維護成本。技術風險方面，隨著用戶數量的增加，伺服器負擔可能會增加，這需要進一步的性能優化。整合方面，與主流的 CAD 工具鏈（如 AutoCAD）整合的難度中等，因為需要處理格式轉換和數據兼容性問題。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了安裝和使用的詳細說明。安裝過程相對順暢，但 Windows 用戶可能會遇到一些兼容性問題。文件中有連結到官方文檔，對於新手來說非常友好。
+> README 文件提供了清晰的安裝步驟和範例，讓新手能夠快速上手。安裝過程相對順暢，但 Windows 用戶可能會遇到一些兼容性問題。文件中有良好的 getting started guide，並且有多語言支持，提升了可用性。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化程度高，能夠快速生成 CAD 模型。
-> - 支持多種輸出格式，靈活性強。
-> - 模組化設計，便於擴展和維護。
+> - 簡化的 CAD 和機器人設計流程，適合非專業人士使用。
+> - 模組化設計，易於擴展和維護。
+> - 活躍的社群和定期更新，能夠快速解決問題。
 
 > [!danger] 缺點
-> - 對於大型模型性能可能不佳。
-> - 文檔尚不完善，部分功能需要自行探索。
-> - Windows 支援不佳，可能影響使用者體驗。
+> - 目前僅支援 Linux 和 macOS，Windows 用戶需額外處理兼容性問題。
+> - 對於複雜模型的生成速度較慢，可能影響使用體驗。
+> - 功能集中於 CAD 和機器人設計，對其他領域的支援有限。
 
 > [!warning] 注意事項
-> - 目前僅支持 Linux 和 macOS，Windows 用戶可能會遇到兼容性問題。
-> - 對於大型 CAD 模型，性能可能會受到影響，特別是在低配硬體上。
-> - 某些技能的文檔尚不完善，可能需要用戶自行探索。
+> - 目前僅支援 Linux 和 macOS，Windows 用戶可能會遇到兼容性問題。
+> - 對於非常複雜的 CAD 模型，生成時間可能較長。
+> - 目前的功能主要集中在 CAD 和機器人描述，對於其他設計領域的支援有限。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成 3D 角色和場景的工具，與本專案的 CAD 專注有所不同，適合遊戲開發者使用。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供一個更為簡單的 CAD 生成工具，適合初學者，但功能不如本專案全面。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發的代理技能，與本專案的 CAD 和機器人設計無關，適合遊戲開發者使用。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更廣泛的設計工具，但缺乏針對 CAD 和機器人設計的專門技能，適合需要多功能設計工具的用戶。 |
 
 ## 替代方案決策
 
@@ -214,16 +211,16 @@ claude plugin marketplace add earthtojake/text-to-cad
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| FreeCAD | 開源 CAD 軟體，功能強大，但學習曲線陡峭，與本專案相比，使用上需要更多的手動操作。 | 如果需要一個功能全面的 CAD 工具，並且不介意較長的學習時間。 | medium，因為需要將手動設計轉換為自動化流程。 |
-| AutoCAD | 商業 CAD 軟體，功能強大且穩定，但價格昂貴，且不支持自動化生成。 | 如果需要專業的 CAD 解決方案，並且預算充足。 | high，因為需要重新適應商業軟體的操作流程。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發的代理技能，與本專案的 CAD 和機器人設計無關。 | 如果你的團隊專注於遊戲開發，且需要一個針對遊戲設計的工具。 | low，因為兩者的使用場景和功能差異較大。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更廣泛的設計工具，但缺乏針對 CAD 和機器人設計的專門技能。 | 如果需要多功能的設計工具，並且不專注於 CAD 或機器人設計。 | medium，因為需要重新學習工具的使用方式。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **text-to-cad** | **FreeCAD** | **AutoCAD** |
+> | 維度 | **text-to-cad** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 開源 CAD 軟體，功能強大，但學習曲線陡峭，與本專案相比，使用上需要更多的手動操作。 | 商業 CAD 軟體，功能強大且穩定，但價格昂貴，且不支持自動化生成。 |
-> | 遷移成本 | - | medium，因為需要將手動設計轉換為自動化流程。 | high，因為需要重新適應商業軟體的操作流程。 |
-> | 適用場景 | 主要場景 | 如果需要一個功能全面的 CAD 工具，並且不介意較長的學習時 | 如果需要專業的 CAD 解決方案，並且預算充足。 |
+> | 技術路線 | 本專案 | 專注於遊戲開發的代理技能，與本專案的 CAD 和機器人設計無關。 | 提供更廣泛的設計工具，但缺乏針對 CAD 和機器人設計的專門技能。 |
+> | 遷移成本 | - | low，因為兩者的使用場景和功能差異較大。 | medium，因為需要重新學習工具的使用方式。 |
+> | 適用場景 | 主要場景 | 如果你的團隊專注於遊戲開發，且需要一個針對遊戲設計的工具。 | 如果需要多功能的設計工具，並且不專注於 CAD 或機器人設計 |
 
 ## 成熟度評估
 
@@ -234,41 +231,44 @@ claude plugin marketplace add earthtojake/text-to-cad
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人或小型團隊的實驗性專案，不建議在生產環境中使用。
+> 適合個人或小型團隊的試用，但不建議用於生產環境的核心路徑。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Windows 上安裝時可能會遇到兼容性問題。
-  - 解法：建議使用 WSL 或在 Linux/macOS 環境中運行。
-- [MEDIUM] 某些技能的文檔不完整，導致使用困難。
-  - 解法：建議參考 GitHub Issues 或社群討論以獲取幫助。
+- **[HIGH]** Windows 用戶可能會遇到 CAD Viewer 啟動失敗的問題。
+  - 解法：使用 WSL 或在 Linux/macOS 環境中運行。
+- [MEDIUM] 生成複雜模型時可能會導致性能下降。
+  - 解法：簡化模型或分步生成。
+- [MEDIUM] 某些 CAD 格式的導入可能會遇到兼容性問題。
+  - 解法：確認文件格式是否受支援，必要時轉換格式。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型創業團隊的 CAD 設計需求 | 非常適合 | 自動化功能能夠顯著提高設計效率，減少人力成本。 |
-| 大型企業的 CAD 設計流程 | 不適合 | 在高並發情況下可能會出現性能瓶頸，且不支持 Windows 環境。 |
-| 個人開發者的機器人設計 | 適合 | 能夠快速生成 URDF 文件，適合快速原型開發。 |
+| 10 人以下的新創公司後端 CAD 設計 | 非常適合 | 專案的功能能夠滿足小型團隊的 CAD 設計需求，並且易於上手。 |
+| 大型企業的 CAD 設計部門 | 不適合 | 在處理複雜模型和高負載需求時，可能會遇到性能瓶頸。 |
+| 機器人開發團隊 | 適合 | 提供了針對機器人設計的專門功能，能夠快速撰寫 URDF 文件。 |
+| 教育機構的 CAD 課程 | 非常適合 | 簡單易用的界面適合學生學習 CAD 設計。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
-| 維護負擔 | medium |
+| 整合時間 | ~10 小時 |
+| 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到自動化 CAD 設計的效果，值得考慮。
+> 花 5 小時學習，10 小時整合，得到快速生成 CAD 模型的能力，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，且不會存取敏感資料。依賴的庫和框架均為開源，無已知的供應鏈風險。
+> 低風險：該工具不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
 
 ## 健康度儀表板
 
@@ -333,13 +333,13 @@ claude plugin marketplace add earthtojake/text-to-cad
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 644 |
-| Open Issues | 10 |
-| Issue 解決率 | 33% (5 closed) |
-| 最後推送 | 2026-06-01 |
+| Forks | 654 |
+| Open Issues | 17 |
+| Issue 解決率 | 23% (5 closed) |
+| 最後推送 | 2026-06-02 |
 | 建立日期 | 2026-04-22 |
 | 官方網站 | [Link](https://www.cadskills.xyz) |
-| Repo 大小 | 75.2 MB |
+| Repo 大小 | 74.4 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/earthtojake/text-to-cad) |
 | Topics | `3mf` `agents` `ai-agents` `build123d` `cad` `dxf` `glb` `mechanical-engineering` |
 
@@ -381,22 +381,13 @@ claude plugin marketplace add earthtojake/text-to-cad
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放問題解決率為 33%。
+**社群活躍度**：社群活躍，定期更新和回應問題。
 **連結**：[文件](https://www.cadskills.xyz)
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-05-31 ~ 2026-06-01）
 > **活躍天數** 2 天 · **最新 commit** Publish 0.2.1 from develop to main
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#45](https://github.com/earthtojake/text-to-cad/issues/45) | Any plans for integration into OpenCode? | 0 | 0 |
-> | [#42](https://github.com/earthtojake/text-to-cad/issues/42) | Integration with Text2CAD model | 0 | 0 |
-> | [#41](https://github.com/earthtojake/text-to-cad/issues/41) | Can it be integrated with freeacd? | 0 | 3 |
 
 ## README 摘錄
 
@@ -595,7 +586,7 @@ claude plugin marketplace add earthtojake/text-to-cad
 
 ## 延伸閱讀
 
-相關概念：[[CAD]] · [[機器人描述文件]] · [[自動化設計]]
+相關概念：[[機器人描述]] · [[CAD 模型生成]] · [[自動化設計]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]]
 
@@ -639,7 +630,7 @@ claude plugin marketplace add earthtojake/text-to-cad
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CAD","機器人描述文件","自動化設計"];
+> const concepts = ["機器人描述","CAD 模型生成","自動化設計"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "earthtojake--text-to-cad" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
