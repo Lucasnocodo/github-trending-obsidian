@@ -7,10 +7,10 @@ language: TypeScript
 license: N/A
 description: "云微WOC，云微信，自由连接"
 homepage: ""
-stars: 1480
-stars_per_day: 370
-forks: 426
-open_issues: 11
+stars: 1941
+stars_per_day: 388
+forks: 536
+open_issues: 10
 created: 2026-05-29
 pushed_at: 2026-06-02
 first_seen: 2026-06-03
@@ -30,8 +30,8 @@ use_case: "在自己的伺服器上運行多個獨立的微信實例，實現跨
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-06"
+appearances: 2
+next_review: "2026-06-07"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 21
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-03"
-star_history: "2026-06-03:1468,2026-06-03:1480"
+star_history: "2026-06-03:1468,2026-06-03:1480,2026-06-04:1941"
 tags:
   - github
   - "category/開發工具"
@@ -883,4 +883,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-04|2026-06-04]] — 再次上榜，1.9k stars
 - [[2026-06-03|2026-06-03]] — 首次收錄，1.5k stars

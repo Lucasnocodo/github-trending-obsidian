@@ -2045,10 +2045,10 @@
   },
   "Michaelliv/pi-dynamic-workflows": {
     "first_seen": "2026-05-30",
-    "last_seen": "2026-06-03",
-    "times_seen": 5,
+    "last_seen": "2026-06-04",
+    "times_seen": 6,
     "stars_first": 436,
-    "stars_last": 739
+    "stars_last": 772
   },
   "baoweise-bot/aimili-vpngate": {
     "first_seen": "2026-05-30",
@@ -2066,17 +2066,17 @@
   },
   "MatinSenPai/SenPaiScanner": {
     "first_seen": "2026-05-31",
-    "last_seen": "2026-06-03",
-    "times_seen": 4,
+    "last_seen": "2026-06-04",
+    "times_seen": 5,
     "stars_first": 595,
-    "stars_last": 905
+    "stars_last": 1032
   },
   "Sophomoresty/gemini-web2api": {
     "first_seen": "2026-05-31",
-    "last_seen": "2026-06-03",
-    "times_seen": 4,
+    "last_seen": "2026-06-04",
+    "times_seen": 5,
     "stars_first": 519,
-    "stars_last": 1253
+    "stars_last": 1351
   },
   "2aronS/Duel-Agents": {
     "first_seen": "2026-05-31",
@@ -2094,10 +2094,10 @@
   },
   "pewdiepie-archdaemon/odysseus": {
     "first_seen": "2026-06-01",
-    "last_seen": "2026-06-03",
-    "times_seen": 3,
+    "last_seen": "2026-06-04",
+    "times_seen": 4,
     "stars_first": 8074,
-    "stars_last": 33559
+    "stars_last": 43988
   },
   "GordenSun/GordenPPTSkill": {
     "first_seen": "2026-06-01",
@@ -2108,23 +2108,44 @@
   },
   "asz798838958/aBaiAutoplus": {
     "first_seen": "2026-06-02",
-    "last_seen": "2026-06-03",
-    "times_seen": 2,
+    "last_seen": "2026-06-04",
+    "times_seen": 3,
     "stars_first": 652,
-    "stars_last": 1049
+    "stars_last": 1398
   },
   "Gloridust/WechatOnCloud": {
     "first_seen": "2026-06-03",
-    "last_seen": "2026-06-03",
-    "times_seen": 1,
+    "last_seen": "2026-06-04",
+    "times_seen": 2,
     "stars_first": 1468,
-    "stars_last": 1468
+    "stars_last": 1941
   },
   "b-nnett/goose": {
     "first_seen": "2026-06-03",
-    "last_seen": "2026-06-03",
-    "times_seen": 1,
+    "last_seen": "2026-06-04",
+    "times_seen": 2,
     "stars_first": 752,
-    "stars_last": 752
+    "stars_last": 1470
+  },
+  "zgwl/chinese-buy-us-stock-guide": {
+    "first_seen": "2026-06-04",
+    "last_seen": "2026-06-04",
+    "times_seen": 1,
+    "stars_first": 1068,
+    "stars_last": 1068
+  },
+  "cpaczek/skylight": {
+    "first_seen": "2026-06-04",
+    "last_seen": "2026-06-04",
+    "times_seen": 1,
+    "stars_first": 795,
+    "stars_last": 795
+  },
+  "ClaudioDrews/memory-os": {
+    "first_seen": "2026-06-04",
+    "last_seen": "2026-06-04",
+    "times_seen": 1,
+    "stars_first": 756,
+    "stars_last": 756
   }
 }
