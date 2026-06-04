@@ -7,12 +7,12 @@ language: TypeScript
 license: AGPL-3.0
 description: "Task-oriented AI Agent productivity platform"
 homepage: "https://pilotdeck.openbmb.cn"
-stars: 2850
-stars_per_day: 259
-forks: 284
-open_issues: 68
+stars: 2914
+stars_per_day: 243
+forks: 297
+open_issues: 93
 created: 2026-05-22
-pushed_at: 2026-06-02
+pushed_at: 2026-06-03
 first_seen: 2026-05-29
 week: "2026-W22"
 month: "2026-05"
@@ -33,16 +33,16 @@ discovered_via: "GitHub Trending"
 appearances: 1
 next_review: "2026-06-01"
 contributor_count: 5
-engagement: "low"
-issue_close_rate: 14
-repo_size_kb: 18678
+engagement: "medium"
+issue_close_rate: 13
+repo_size_kb: 18509
 readme_length: 9950
 bus_factor: 2
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-29"
-star_history: "2026-05-29:1524,2026-05-29:1540,2026-05-30:1980,2026-05-31:2262,2026-06-01:2545,2026-06-02:2738,2026-06-03:2850"
+star_history: "2026-05-29:1524,2026-05-29:1540,2026-05-30:1980,2026-05-31:2262,2026-06-01:2545,2026-06-02:2738,2026-06-03:2850,2026-06-04:2914"
 tags:
   - github
   - "category/生產力"
@@ -57,7 +57,7 @@ aliases:
 
 # PilotDeck
 
-**2.9k** stars · **259** stars/天 · 建立 11 天前 · TypeScript · AGPL-3.0
+**2.9k** stars · **243** stars/天 · 建立 12 天前 · TypeScript · AGPL-3.0
 
 ```dataviewjs
 const me = dv.page("Repos/OpenBMB--PilotDeck");
@@ -76,10 +76,10 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 一個以任務為導向的 AI 代理生產力平台，重新定義操作邊界和記憶演進。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (259 stars/day)
-> **授權** AGPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要在多專案環境中高效管理任務的中小型團隊。
-> **一句話重點** PilotDeck 的白盒記憶編輯功能讓用戶能夠更精確地控制 AI 行為，這在多任務環境中尤其重要。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (243 stars/day)
+> **授權** AGPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 需要高效管理多專案並追蹤記憶的開發團隊或產品經理。
+> **一句話重點** PilotDeck 的白盒記憶和智能路由設計，讓多專案管理變得前所未有的高效。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,35 +102,29 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~4h · **綁定風險** medium
-> **結論** 花 4 小時學習，6 小時整合，得到高效的多任務管理工具，值得試用。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，10 小時整合，得到高效的多專案管理，值得投資。
 
 > [!abstract] 核心創新
-> PilotDeck 提供可追蹤的白盒記憶編輯功能，讓用戶能夠直接編輯記憶條目。
+> PilotDeck 提供了可追蹤的白盒記憶和智能路由，讓多專案管理變得更高效。
 
 ## 專案簡介
 
-PilotDeck 是一個開源的代理操作系統，專注於「工作空間」的概念，旨在提升多任務生產力。用戶可以透過簡單的 CLI 指令，如 `pilotdeck` 來啟動伺服器，並使用 `pilotdeck status` 檢查運行狀態。這個平台的核心在於能夠管理多個並行專案，並提供可追蹤的記憶編輯功能，讓用戶能夠直接編輯記憶條目，而不必重新開始對話。PilotDeck 的設計考量了經濟性，能夠根據任務的難易度自動匹配不同的模型，並且能夠在用戶離開鍵盤時持續運作，主動發現重要任務並報告進度。這樣的設計使得 AI 代理在長期運行的多專案環境中更具實用性和效率。
+PilotDeck 是一個開源的 AI 代理操作系統，專注於「工作空間」的概念，旨在提升多任務生產力。使用者可以透過簡單的 CLI 指令，如 `pilotdeck` 啟動伺服器，並利用 `pilotdeck status` 檢查運行狀態。這個平台的核心在於工作空間的隔離，讓每個專案擁有獨立的檔案系統、記憶存儲和技能集，避免不同專案之間的干擾。PilotDeck 提供了可追蹤的白盒記憶，使用者可以清楚地看到記憶的生成、提取和存儲過程，並能夠直接編輯或刪除記憶條目。其智能路由功能能自動識別任務難度，將複雜的請求指派給高效能模型，從而顯著降低成本。這些設計使得 PilotDeck 能夠在長期運行的多專案環境中，保持高效且經濟的運作。整體而言，PilotDeck 是一個針對 AI 代理時代的生產力工具，旨在解決多專案管理中的記憶污染和成本問題。
 
-技術上，PilotDeck 使用 TypeScript 和 Node.js，並依賴多個現代化的開發工具，如 Playwright 和 React。
-
-這些選擇使得開發過程中能夠快速迭代，並提供良好的用戶體驗。與其他類似工具相比，如 Claude Cowork 和 WorkBuddy，PilotDeck 更加注重記憶的可追蹤性和任務的經濟性，這使得它在多任務環境中更具優勢。
-
-在實際使用中，PilotDeck 能夠處理多達數百個並行任務，並且設計上考量了資源的有效利用，確保在高負載下仍能保持穩定性。社群活躍度中等，解決問題的速度稍慢，這可能影響新用戶的採用體驗。整體來看，PilotDeck 目前處於 beta 階段，適合中小型團隊進行實驗和開發，但在生產環境中使用時需謹慎考量其穩定性。
-
-**技術棧**：`TypeScript` · `Node.js 22` · `React`
+**技術棧**：`TypeScript` · `JavaScript` · `Python` · `Docker`
 
 ## 重點功能
 
-- 工作空間管理 — 提供完整的多專案管理界面，支持任務的白盒記憶編輯。
-- 自動模型匹配 — 根據任務難度自動選擇合適的 AI 模型，節省運算資源。
-- 持續運作能力 — 能夠在用戶離開時持續執行任務，主動發現和報告進度。
-- CLI 支持 — 提供簡單的命令行介面，使用者可透過指令快速啟動和管理服務。
-- 經濟性追蹤 — 能夠追蹤每個任務的 token 成本，讓長期運行的代理變得可行。
+- 工作空間隔離 — 每個專案擁有獨立的檔案系統和記憶存儲，避免信息干擾。
+- 可追蹤的白盒記憶 — 使用者可以查看和編輯記憶條目，確保準確性。
+- 智能路由 — 自動識別任務難度，將複雜請求指派給高效能模型，降低成本。
+- 持續運行的背景執行 — 代理能在使用者離開時自動執行任務，並生成報告。
+- 開放的插件架構 — 支持自定義工具和技能，方便擴展功能。
 
 ## 快速開始
 
-1. 安裝 PilotDeck
+1. 一鍵安裝
 ```bash
 curl -fsSL https://raw.githubusercontent.com/OpenBMB/PilotDeck/main/install.sh | bash
 ```
@@ -146,64 +140,63 @@ pilotdeck status
 ## 程式碼範例
 
 ```ts
-{
-  "前置條件": "已安裝 PilotDeck",
-  "指令": "pilotdeck",
-  "預期輸出": "伺服器啟動，訪問 http://localhost:3001"
-}
+[
+  "# 前置條件：已安裝 Node.js 22",
+  "curl -fsSL https://raw.githubusercontent.com/OpenBMB/PilotDeck/main/install.sh | bash",
+  "# 預期輸出：伺服器啟動於 http://localhost:3001"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 11 天就累積 2850 stars（259/天），forks 284（10.0%），顯示出強勁的增長潛力。開發者 Mingwwww 和團隊來自知名學術機構，專注於 AI 代理的生產力工具，填補了市場上對於多任務管理和記憶可追蹤性的需求。PilotDeck 的開源發布吸引了許多開發者的注意，尤其是在 AI 代理日益普及的背景下。這個專案的高 fork 比率（10%）顯示出社群對其功能的興趣和實際修改的潛力。
+> 建立 12 天就累積 2914 stars（243/天），forks 297（10.2%），顯示出強勁的增長勢頭。開發者 Mingwwww 和團隊來自清華大學，專注於 AI 代理的生產力提升，解決了多專案管理中記憶污染和成本過高的痛點。這個平台的開源性質吸引了社群的參與和關注，並且在多個社交媒體上引發了討論。技術上，PilotDeck 的設計理念與現有的 AI 代理工具相比，提供了更為細緻的記憶管理和任務路由，這使得它在市場中具有獨特的競爭優勢。
 
 ## 適合誰使用
 
-**目標受眾**：需要在多專案環境中高效管理任務的中小型團隊。
+**目標受眾**：需要高效管理多專案並追蹤記憶的開發團隊或產品經理。
 
 > [!example] 使用場景
-> - 產品經理用它來管理多個專案的進度，因為它能夠追蹤每個任務的記憶和成本，避免重複工作。
-> - 開發者用它來在不同的工作空間中切換，因為它的白盒記憶編輯功能讓他們能夠快速修正錯誤。
-> - AI 研究者用它來測試不同的模型在多任務環境中的表現，因為它能自動匹配任務難度和模型，節省資源。
+> - 產品經理用它來管理多個專案的進度，因為每個專案的記憶和資源都是獨立的，避免了信息混淆。
+> - 開發者用它來生成和編輯工作文檔，因為它能夠追蹤每次修改的歷史，方便回溯。
+> - 社群經理用它來進行社交媒體操作，因為智能路由能夠自動將簡單任務分配給輕量模型，節省成本。
 
 ## 架構分析
 
-PilotDeck 採用微服務架構，將各個功能模組獨立開發，這樣的設計使得擴展性更佳。資料流方面，使用 WebSocket 進行即時通訊，確保用戶操作的即時反饋。選擇 TypeScript 和 Node.js 作為開發語言，能夠快速迭代和維護，並且依賴的庫相對輕量，降低了整體的依賴複雜度。這樣的架構雖然在初期開發上可能需要較高的學習成本，但長期來看能夠提高開發效率和系統穩定性。擴展性方面，隨著用戶數量的增加，可能需要考慮資料庫的性能優化，以避免在高負載下出現瓶頸。
+PilotDeck 採用模組化的架構設計，核心功能包括工作空間管理、記憶處理和任務路由。每個工作空間擁有獨立的檔案系統和記憶存儲，這樣的設計使得不同專案間不會互相干擾。記憶的生成和提取過程是透明的，使用者可以隨時查看和編輯。智能路由系統能根據任務的難度自動選擇合適的模型，這樣的設計不僅提高了效率，還降低了運行成本。整體架構的模組化使得擴展和維護變得更加簡單，未來可以根據需求進行功能擴展。
 
 ## 技術深入分析
 
-PilotDeck 的核心技術機制是基於微服務架構，使用 TypeScript 和 Node.js 開發，這使得系統能夠快速迭代和擴展。其資料流設計上，使用 WebSocket 進行即時通訊，確保用戶操作的即時反饋。PilotDeck 能夠處理多達數百個並行任務，並且設計上考量了資源的有效利用，確保在高負載下仍能保持穩定性。選擇 TypeScript 和 Node.js 的好處在於其生態系統豐富，能夠快速整合各種庫和工具，但也帶來了一定的學習曲線。技術風險方面，隨著用戶數量的增加，可能需要考慮資料庫的性能優化，以避免在高負載下出現瓶頸。整合方面，PilotDeck 與主流的 CI/CD 工具相容性良好，能夠輕鬆整合到現有的開發流程中。
+PilotDeck 的核心技術機制包括工作空間的獨立性和可追蹤的白盒記憶。每個工作空間都擁有自己的檔案系統和記憶存儲，這樣的設計讓多專案之間不會互相干擾，並且使用者可以隨時查看和編輯記憶條目。智能路由系統能夠根據任務的難度自動選擇合適的模型，這不僅提高了效率，還降低了運行成本。根據實際數據，啟用智能路由後，社交媒體工作負載的成本可節省約 70%。在設計取捨上，PilotDeck 選擇了開源的路線，這使得社群能夠參與貢獻，但也可能導致某些商業功能的缺失。技術風險方面，隨著使用者數量的增加，系統的擴展性和穩定性將面臨挑戰。整合方面，PilotDeck 與主流的 CI/CD 工具相容性良好，能夠輕鬆融入現有的開發流程。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了安裝和快速開始的指導；安裝過程順暢，無明顯坑；有良好的入門指南，但文件目前僅提供英文和簡體中文。
+> README 文件清晰，包含安裝和使用範例。安裝過程順暢，無明顯坑點。提供了良好的快速入門指南，但目前僅有英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 多任務管理能力強，適合需要同時處理多個專案的用戶。
-> - 白盒記憶編輯功能提高了用戶對 AI 行為的控制。
-> - CLI 介面簡單易用，降低了使用門檻。
+> - 高效的多專案管理，避免記憶污染。
+> - 透明的記憶管理，使用者可隨時編輯。
+> - 智能路由降低運行成本，提升效率。
 
 > [!danger] 缺點
-> - 目前僅支援 macOS 和 Linux，Windows 用戶需額外配置。
-> - 社群支持尚不成熟，解決問題的速度較慢。
-> - 在高負載下可能會出現性能瓶頸。
+> - 目前僅支援 Linux 和 macOS，Windows 用戶需自行配置。
+> - 開源版本可能缺乏某些商業支持的功能。
+> - 需要 Git LFS 來處理大型媒體資產。
 
 > [!warning] 注意事項
-> - 目前僅支援 macOS 和 Linux，Windows 用戶需額外配置。
-> - 在高負載下可能會出現性能瓶頸，特別是在多任務同時運行時。
-> - 社群支持尚不成熟，解決問題的速度較慢。
+> - 目前僅支援 Linux 和 macOS，Windows 用戶需自行配置。
+> - 開源版本可能缺乏某些商業支持的功能。
+> - 需要 Git LFS 來處理大型媒體資產。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 專注於簡化 AI 代理的開發流程，而 PilotDeck 更加注重多任務管理和記憶可追蹤性。 |
-| WorkBuddy | WorkBuddy 主要連接 IM 生態系統，而 PilotDeck 提供更全面的工作空間管理功能。 |
-| Claude Cowork | Claude Cowork 提供專案級別的隔離，但 PilotDeck 在記憶編輯和經濟性追蹤上更具優勢。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建和管理 AI 代理的工具，而 PilotDeck 更注重於多專案的生產力和記憶管理。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 提供競爭性 AI 代理的框架，但缺乏 PilotDeck 的工作空間隔離和白盒記憶功能。 |
 
 ## 替代方案決策
 
@@ -211,16 +204,16 @@ PilotDeck 的核心技術機制是基於微服務架構，使用 TypeScript 和 
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | Agent Sprite Forge 專注於簡化代理的創建和管理，而 PilotDeck 提供更全面的工作空間管理功能。 | 如果你的團隊需要快速創建和管理多個代理，Agent Sprite Forge 可能更合適。 | low，因為兩者的基本概念相似。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | Duel-Agents 提供了競爭性代理的框架，而 PilotDeck 更加注重多任務和記憶管理。 | 如果你的專案需要競爭性代理的功能，Duel-Agents 會是更好的選擇。 | medium，因為需要重新設計任務管理邏輯。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 AI 代理的記憶管理，但缺乏 PilotDeck 的工作空間隔離功能。 | 如果你的專案主要集中在記憶管理而非多專案管理，則可以選擇它。 | medium，因為需要重新設計記憶管理的邏輯。 |
+| [ClaudioDrews/memory-os](https://github.com/ClaudioDrews/memory-os) | 提供了類似的記憶管理功能，但沒有 PilotDeck 的智能路由和成本優化。 | 如果你的需求主要是簡單的記憶管理，而不需要高效的任務路由，則可以考慮它。 | low，因為兩者在記憶管理上有相似的設計。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **PilotDeck** | **agent-sprite-forge** | **Duel-Agents** |
+> | 維度 | **PilotDeck** | **boneyard** | **memory-os** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Agent Sprite Forge 專注於簡化代理的創建和管理，而 PilotDeck 提供更全面的工作空間管理功能。 | Duel-Agents 提供了競爭性代理的框架，而 PilotDeck 更加注重多任務和記憶管理。 |
-> | 遷移成本 | - | low，因為兩者的基本概念相似。 | medium，因為需要重新設計任務管理邏輯。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要快速創建和管理多個代理，Agent Spri | 如果你的專案需要競爭性代理的功能，Duel-Agents 會 |
+> | 技術路線 | 本專案 | 專注於 AI 代理的記憶管理，但缺乏 PilotDeck 的工作空間隔離功能。 | 提供了類似的記憶管理功能，但沒有 PilotDeck 的智能路由和成本優化。 |
+> | 遷移成本 | - | medium，因為需要重新設計記憶管理的邏輯。 | low，因為兩者在記憶管理上有相似的設計。 |
+> | 適用場景 | 主要場景 | 如果你的專案主要集中在記憶管理而非多專案管理，則可以選擇它。 | 如果你的需求主要是簡單的記憶管理，而不需要高效的任務路由，則 |
 
 ## 成熟度評估
 
@@ -231,44 +224,41 @@ PilotDeck 的核心技術機制是基於微服務架構，使用 TypeScript 和 
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合中小型團隊進行實驗和開發，但在生產環境中使用時需謹慎考量其穩定性。
+> 適合在內部測試和小型專案中使用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高負載下，可能會出現 SQLite 資料庫鎖定問題，導致服務中斷。
-  - 解法：定期重啟服務以釋放鎖定，或考慮使用其他資料庫。
-- [MEDIUM] CLI 指令在某些環境下可能無法正常運行，特別是 Windows。
-  - 解法：使用 WSL 或在 Linux 環境中運行。
-- [MEDIUM] 社群支持尚不成熟，解決問題的速度較慢。
-  - 解法：參考官方文檔和示例，或在 GitHub 提出問題。
+- [MEDIUM] 在某些情況下，記憶更新可能無法即時反映。
+  - 解法：手動檢查記憶狀態，必要時重啟服務。
+- **[HIGH]** 在高負載下，智能路由可能會出現延遲。
+  - 解法：優化模型配置，減少同時請求數量。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | PilotDeck 的多任務管理和記憶編輯功能能有效提升小團隊的工作效率。 |
-| 大型企業的複雜專案管理 | 普通 | 雖然 PilotDeck 提供多任務管理，但在高負載下可能會出現性能瓶頸。 |
-| AI 研究團隊進行多模型測試 | 非常適合 | PilotDeck 能夠根據任務難度自動匹配模型，適合進行多樣化的測試。 |
-| 需要高穩定性的生產環境 | 不適合 | 目前處於 beta 階段，穩定性尚需加強。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠有效管理多專案，避免記憶污染，提升生產力。 |
+| 大型企業的多專案管理 | 適合 | 提供的工作空間隔離和智能路由能夠降低成本。 |
+| 單一專案的簡單記憶管理 | 普通 | 雖然功能強大，但對於單一專案可能過於複雜。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~4 小時 |
-| 整合時間 | ~6 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 4 小時學習，6 小時整合，得到高效的多任務管理工具，值得試用。
+> 花 5 小時學習，10 小時整合，得到高效的多專案管理，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：PilotDeck 本身不需要高權限，且不存取敏感資料，但需注意依賴庫的安全性。
+> 低風險：PilotDeck 本身不需要高權限，僅需存取使用者的檔案系統，依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -333,13 +323,13 @@ PilotDeck 的核心技術機制是基於微服務架構，使用 TypeScript 和 
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 284 |
-| Open Issues | 68 |
-| Issue 解決率 | 14% (11 closed) |
-| 最後推送 | 2026-06-02 |
+| Forks | 297 |
+| Open Issues | 93 |
+| Issue 解決率 | 13% (14 closed) |
+| 最後推送 | 2026-06-03 |
 | 建立日期 | 2026-05-22 |
 | 官方網站 | [Link](https://pilotdeck.openbmb.cn) |
-| Repo 大小 | 18.2 MB |
+| Repo 大小 | 18.1 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/OpenBMB/PilotDeck) |
 
 > [!info]- 主要依賴
@@ -360,7 +350,7 @@ PilotDeck 的核心技術機制是基於微服務架構，使用 TypeScript 和 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Mingwwww](https://github.com/Mingwwww) | 211 |
+> | [@Mingwwww](https://github.com/Mingwwww) | 213 |
 > | [@Kaguya-19](https://github.com/Kaguya-19) | 196 |
 > | [@Gucc111](https://github.com/Gucc111) | 183 |
 > | [@mmrdmn](https://github.com/mmrdmn) | 53 |
@@ -368,20 +358,13 @@ PilotDeck 的核心技術機制是基於微服務架構，使用 TypeScript 和 
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，解決問題的速度稍慢。
+**社群活躍度**：社群活躍，有多個渠道可供交流。
 **連結**：[文件](https://pilotdeck.openbmb.cn)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-01 ~ 2026-06-02）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #112 from OpenBMB/fix/ask-user-question-answer-display
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#121](https://github.com/OpenBMB/PilotDeck/issues/121) | EdgeClaw Memory scheduled maintenance 偶发 SQLite database is  | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-06-01 ~ 2026-06-03）
+> **活躍天數** 3 天 · **最新 commit** Merge pull request #120 from xiaohongrsx/fix-empty-tool-name
 
 ## README 摘錄
 
@@ -615,9 +598,9 @@ PilotDeck 的核心技術機制是基於微服務架構，使用 TypeScript 和 
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[自動化]] · [[機器學習]]
+相關概念：[[MCP Protocol]] · [[多模態]] · [[自動化]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[XBuilderLAB--cheat-on-content|XBuilderLAB/cheat-on-content]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[Doorman11991--smallcode|Doorman11991/smallcode]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[XBuilderLAB--cheat-on-content|XBuilderLAB/cheat-on-content]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[Doorman11991--smallcode|Doorman11991/smallcode]]
 
 [GitHub](https://github.com/OpenBMB/PilotDeck) · [官方網站](https://pilotdeck.openbmb.cn)
 
@@ -659,7 +642,7 @@ PilotDeck 的核心技術機制是基於微服務架構，使用 TypeScript 和 
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["多模態","自動化","機器學習"];
+> const concepts = ["MCP Protocol","多模態","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "OpenBMB--PilotDeck" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

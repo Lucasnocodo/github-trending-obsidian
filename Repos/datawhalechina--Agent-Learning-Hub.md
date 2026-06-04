@@ -7,9 +7,9 @@ language: HTML
 license: MIT
 description: "AI Agent 学习路线与资料库收集"
 homepage: "https://datawhalechina.github.io/Agent-Learning-Hub/"
-stars: 2279
-stars_per_day: 142
-forks: 233
+stars: 2456
+stars_per_day: 144
+forks: 248
 open_issues: 1
 created: 2026-05-17
 pushed_at: 2026-06-02
@@ -17,7 +17,7 @@ first_seen: 2026-05-23
 week: "2026-W21"
 month: "2026-05"
 category: "教學資源"
-subcategory: "AI Agent 學習"
+subcategory: "AI Agent 開發"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-23
-use_case: "提供 AI Agent 的學習路線與資源，幫助開發者建立實用的智能體。"
+use_case: "提供一個系統化的 AI Agent 學習路線圖，幫助開發者建立可靠的智能代理。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-23"
-star_history: "2026-05-23:1092,2026-05-24:1217,2026-05-24:1219,2026-05-27:1646,2026-05-29:1859,2026-05-30:1939,2026-05-31:1998,2026-06-01:2071,2026-06-02:2188,2026-06-03:2279"
+star_history: "2026-05-23:1092,2026-05-24:1217,2026-05-24:1219,2026-05-27:1646,2026-05-29:1859,2026-05-30:1939,2026-05-31:1998,2026-06-01:2071,2026-06-02:2188,2026-06-03:2279,2026-06-04:2456"
 tags:
   - github
   - "category/教學資源"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "Agent-Learning-Hub"
   - "datawhalechina/Agent-Learning-Hub"
-  - "提供 AI Agent 的學習路線與資源，幫助開發者建立實用的智能體。"
+  - "提供一個系統化的 AI Agent 學習路線圖，幫助開發者建立可靠的智能代理。"
 ---
 
 # Agent-Learning-Hub
 
-**2.3k** stars · **142** stars/天 · 建立 16 天前 · HTML · MIT
+**2.5k** stars · **144** stars/天 · 建立 17 天前 · HTML · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/datawhalechina--Agent-Learning-Hub");
@@ -73,20 +73,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供 AI Agent 的學習路線與資源，幫助開發者建立實用的智能體。
+> 提供一個系統化的 AI Agent 學習路線圖，幫助開發者建立可靠的智能代理。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (142 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Medium
-> **適合** 希望學習和開發 AI Agent 的開發者，特別是新手和中級工程師。
-> **一句話重點** 這個專案不僅是學習資源的集合，更是一個系統化的學習平台，幫助開發者掌握 AI Agent 技術。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (144 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 4+ 人 · **參與度** Medium
+> **適合** 希望系統性學習 AI Agent 開發的開發者，尤其是新手和有一定基礎的技術人員。
+> **一句話重點** 這個專案的價值在於提供了一個系統化的學習路徑，讓開發者能夠有效地掌握 AI Agent 的開發技能。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/datawhalechina--Agent-Learning-Hub");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "AI Agent 學習" && p.file.name !== "datawhalechina--Agent-Learning-Hub" && p.status !== "archived")
+>     .where(p => p.subcategory === "AI Agent 開發" && p.file.name !== "datawhalechina--Agent-Learning-Hub" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -97,32 +97,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 AI Agent 學習 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 AI Agent 開發 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~10h · **綁定風險** low
-> **結論** 花 10 小時學習，2 小時整合，得到清晰的學習路徑和資源，值得。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，2 小時整合，得到系統化的 AI Agent 開發知識，值得。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個結構化的學習路線圖，專注於 AI Agent 的實用技能和資源整合。
+> 這個專案提供了一個系統化的 AI Agent 學習路線圖，幫助開發者建立可靠的智能代理。
 
 ## 專案簡介
 
-這個專案的核心機制是提供一個結構化的學習路線圖，讓使用者能夠從基礎到進階逐步學習如何構建 AI Agent。使用者可以從「Learning Todo List」開始，逐步完成各項任務，最終能夠建立一個可運行的 AI Agent。這個工具的賣點在於其清晰的學習階段劃分，從理解智能體的基本概念到實作多智能體系統，涵蓋了實用的項目和資源。技術上，這個專案使用了 HTML 作為展示介面，並且整合了多個開源項目和文獻作為學習資源，這樣的設計使得學習過程不僅系統化，還能夠接觸到最新的技術和方法。與其他類似工具相比，如 LangChain 和 CrewAI，這個專案更專注於實用的學習路徑，而不是僅僅提供框架或工具的介紹。
+這個專案的核心是提供一個結構化的學習路線圖，幫助開發者從基礎到進階逐步掌握 AI Agent 的開發。使用者可以根據自己的水平選擇不同的學習階段，例如新手可以從 Stage 0 開始學習 agent 的基本概念，而有經驗的開發者則可以直接進入 Stage 2 或 Stage 3，專注於工具使用和工程化。這樣的設計使得學習過程不再是隨意的鏈接收集，而是有系統的知識積累。專案中還提供了多個開源項目作為學習參考，這些項目涵蓋了從基本的 agent loop 到多 agent 系統的各種應用，讓學習者能夠在實踐中加深理解。此專案的賣點在於其清晰的學習路徑和實用的資源整合，讓開發者能夠有效地掌握 AI Agent 的開發技能。
 
-這意味著使用者能夠更快地掌握實際應用的技能，而不會迷失在繁雜的理論中。實際使用中，這個專案的效果取決於使用者的學習進度和投入程度，對於新手來說，從零開始的學習曲線可能會稍微陡峭，但提供的資源和指導能夠有效降低這種困難。這個專案目前處於活躍開發中，社群的貢獻和維護也顯示出其健康度。總體來看，這個專案非常適合希望深入了解 AI Agent 開發的開發者，特別是那些希望在實際項目中應用這些技術的人。
+技術上，這個專案主要使用 HTML 作為展示格式，並且依賴於社群的貢獻來持續更新和完善學習內容。相較於其他類似的學習資源，如 LangChain 和 AutoGen，這個專案更注重於實用性和系統性，避免了過時的框架和方法。使用者在學習過程中可能會遇到的挑戰包括如何選擇合適的學習階段和資源，特別是在快速變化的 AI 領域中。這個專案的成熟度尚在 alpha 階段，適合對 AI Agent 開發有興趣的開發者，尤其是那些希望在短時間內快速掌握技能的人。未來幾個月內，專案可能會進一步擴展學習資源和實際案例，以應對不斷變化的技術需求。
 
 **技術棧**：`HTML`
 
 ## 重點功能
 
-- 學習路線圖 — 提供從基礎到進階的學習階段，幫助使用者系統性掌握 AI Agent 技術。
-- 任務清單 — 每個學習階段都有明確的任務，使用者可以逐步完成，提升學習效果。
-- 資源整合 — 整合多個開源項目和文獻，提供最新的技術和方法。
-- 項目建議 — 提供多個實作項目，幫助使用者將學習轉化為實際應用。
-- 社群支持 — 開放的貢獻模式和活躍的社群，使用者可以獲得幫助和反饋。
+- 學習路線圖 — 提供從基礎到進階的系統化學習路徑，幫助開發者逐步掌握技能。
+- 多階段學習 — 包含多個學習階段，針對不同水平的開發者提供相應的學習內容。
+- 開源項目參考 — 整理了多個相關的開源項目，幫助學習者在實踐中理解概念。
+- 社群貢獻 — 鼓勵社群成員分享資源和經驗，持續更新學習內容。
+- 專案梯度 — 提供不同難度的專案，讓學習者能夠在實踐中加深理解。
 
 ## 快速開始
 
@@ -130,69 +130,67 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 git clone https://github.com/datawhalechina/Agent-Learning-Hub.git
 ```
-2. 打開 README 文件
+2. 進入專案目錄
 ```bash
-cd Agent-Learning-Hub && open README.md
+cd Agent-Learning-Hub
 ```
-3. 開始學習
+3. 打開 README 文件
 ```bash
-按照 Learning Todo List 開始逐步學習
+open README.md
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 16 天內累積 2279 stars（142/天），forks 233（10.2%），顯示出良好的增長潛力。作者團隊來自 Datawhale，專注於 AI 和開源社群，之前有多個成功的開源專案。這個專案解決了 AI Agent 學習資源分散的問題，提供了一個集中式的學習平台。社群的活躍度和開放的貢獻模式吸引了許多開發者參與，這也促進了專案的快速成長。技術生態的變化，如 AI Agent 應用的興起，使得這個專案的需求更為迫切。forks/stars 比率為 10.2%，顯示出許多人正在積極修改和使用這個專案。
+> 建立 17 天就累積 2456 stars（144/天），forks 248（10.1%），顯示出強勁的增長潛力。作者是 Datawhale 的成員，這個團隊在 AI 和數據科學領域有著豐富的經驗。這個專案解決了許多開發者在學習 AI Agent 時面臨的資源分散和缺乏系統性的問題，之前的學習方式往往是隨意的鏈接收集，缺乏清晰的路徑。此專案的出現正好填補了這一空白，提供了一個全面的學習框架。社群的活躍度和開放的貢獻模式也促進了這個專案的快速發展，讓更多開發者能夠參與進來。forks/stars 比率為 10.1%，顯示出許多人在實際修改和使用這個專案，這是一個良好的社群參與指標。
 
 ## 適合誰使用
 
-**目標受眾**：希望學習和開發 AI Agent 的開發者，特別是新手和中級工程師。
+**目標受眾**：希望系統性學習 AI Agent 開發的開發者，尤其是新手和有一定基礎的技術人員。
 
 > [!example] 使用場景
-> - 新手開發者用它來建立自己的第一個 AI Agent，因為它提供了清晰的學習路徑和實作指導。
-> - 經驗豐富的工程師用它來快速了解最新的 AI Agent 技術，因為它整合了多個開源項目和文獻，節省了搜尋時間。
-> - 團隊成員用它來制定 AI Agent 的開發計畫，因為它提供了詳細的任務清單和項目建議，幫助團隊協作。
+> - 新手開發者用它來建立 AI Agent 的基礎知識，因為這個專案提供了清晰的學習路線和豐富的資源。
+> - 有經驗的開發者用它來補充 AI Agent 的工具使用和工程化技能，因為它涵蓋了最新的技術和實踐。
+> - 研究人員用它來尋找相關的開源項目和資料，因為這個專案整理了大量的資源，方便快速查找。
 
 ## 架構分析
 
-這個專案的架構主要是基於 HTML 的靜態頁面，目的是提供一個清晰的學習路徑和資源展示。這樣的設計使得使用者能夠方便地瀏覽和使用資源，並且不需要複雜的安裝過程。資料流方面，使用者從首頁進入 README，然後根據學習路線圖逐步學習。
+這個專案主要由一個核心的 README 文件組成，作為學習的主要展示面。其架構選擇了 HTML 格式，以便於快速展示和更新內容。資料流主要是從社群貢獻的資源中整理出來，形成一個清晰的學習路徑。
 
-這種結構化的方式能夠有效引導使用者，避免資訊過載。選擇 HTML 作為展示介面，雖然簡單，但也限制了互動性和動態內容的呈現。整體上，這個專案的擴展性較低，因為它主要依賴於靜態內容的更新。
+這樣的設計使得使用者能夠快速找到所需的學習資源，並且能夠在實踐中加深理解。選擇 HTML 作為展示格式的代價是缺乏動態交互性，但這在學習資源的情境下並不構成太大問題。整體上，這個專案的架構簡單明瞭，適合快速上手和學習。
 
 ## 技術深入分析
 
-這個專案的核心在於提供一個結構化的學習路線圖，讓使用者能夠從基礎到進階逐步學習如何構建 AI Agent。使用者可以根據自己的需求選擇不同的學習階段，這種靈活性使得專案適合不同背景的開發者。技術上，這個專案使用 HTML 作為展示介面，這樣的選擇雖然簡單，但也限制了互動性和動態內容的呈現。資料流方面，使用者從首頁進入 README，然後根據學習路線圖逐步學習。
-
-這種結構化的方式能夠有效引導使用者，避免資訊過載。設計上，這個專案的優勢在於其清晰的任務劃分和資源整合，這讓使用者能夠專注於實際應用的技能，而不會迷失在繁雜的理論中。整體上，這個專案的擴展性較低，因為它主要依賴於靜態內容的更新，但這也使得維護變得相對簡單。對於希望深入了解 AI Agent 開發的開發者來說，這是一個非常有價值的資源。
+這個專案的核心技術機制是通過整理社群貢獻的資料來建立一個系統化的學習路徑。使用者可以根據自己的需求選擇不同的學習階段，從基礎概念到實際應用，涵蓋了 AI Agent 開發的各個方面。效能和規模特性上，這個專案並不涉及複雜的計算或資料處理，而是專注於知識的整理和展示。這樣的設計使得使用者能夠快速上手，並在實踐中加深理解。選擇 HTML 作為展示格式的好處在於其易於訪問和更新，但缺乏動態交互性可能會影響某些使用者的體驗。整體上，這個專案的設計取捨是合理的，適合快速學習和掌握 AI Agent 開發的基本技能。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的學習路線和任務清單。安裝過程非常簡單，只需克隆專案即可開始使用。雖然沒有專門的入門指南，但學習路線圖本身就是一個很好的指導。文件目前僅提供英文版本，可能對某些使用者造成障礙。
+> README 文件清晰且結構良好，提供了良好的學習指引；安裝過程簡單，無需複雜配置；缺乏多語言支持，但內容易於理解。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供清晰的學習路線，適合新手逐步學習。
-> - 整合多個開源資源，節省使用者搜尋時間。
-> - 活躍的社群支持，使用者可以獲得幫助和反饋。
+> - 提供系統化的學習路徑，適合不同水平的開發者。
+> - 整合了大量的開源資源，方便學習者查找。
+> - 社群貢獻模式促進了內容的持續更新和完善。
 
 > [!danger] 缺點
-> - 僅限於 HTML 環境，無法直接運行代碼。
-> - 對於完全新手來說，可能需要額外的學習支持。
-> - 部分資源可能隨著時間變化而過時。
+> - 目前僅支援 HTML 格式，缺乏其他格式的支持。
+> - 學習內容可能依賴社群貢獻，更新不及時。
+> - 對於完全沒有基礎的使用者，可能需要額外的背景知識。
 
 > [!warning] 注意事項
-> - 僅支援 HTML 環境，無法直接運行其他語言的代碼。
-> - 需要使用者具備一定的自學能力，對於完全的新手可能有些挑戰。
-> - 部分資源可能隨著時間變化而過時，需要使用者自行篩選。
+> - 目前僅支援 HTML 格式展示，缺乏其他格式的支持。
+> - 學習內容依賴社群貢獻，可能存在更新不及時的情況。
+> - 對於完全沒有基礎的使用者，可能需要額外的背景知識來理解部分概念。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | LangChain 提供了一個強大的框架來構建多種 AI 應用，但不如本專案專注於學習路徑和資源整合。 |
-| [CrewAI/crewai](https://github.com/CrewAI/crewai) | CrewAI 提供了多智能體的框架，但本專案更適合新手學習和實作。 |
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | LangChain 提供了更全面的框架和工具，但缺乏這個專案的系統性學習路徑。 |
+| [microsoft/autogen](https://github.com/microsoft/autogen) | AutoGen 是多 agent 對話框架的經典項目，適合了解歷史，但不如本專案聚焦於實用性和當前技術。 |
 
 ## 替代方案決策
 
@@ -200,16 +198,16 @@ cd Agent-Learning-Hub && open README.md
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | LangChain 提供了一個強大的框架來構建多種 AI 應用，但不如本專案專注於學習路徑和資源整合。 | 如果你需要一個功能強大的框架來構建複雜的 AI 應用，LangChain 是更好的選擇。 | medium，因為需要重新學習框架的 API 和概念。 |
-| [CrewAI/crewai](https://github.com/CrewAI/crewai) | CrewAI 提供了多智能體的框架，但本專案更適合新手學習和實作。 | 如果你的團隊已經在使用 CrewAI，並需要構建多智能體系統，那麼 CrewAI 是更合適的選擇。 | high，因為需要重新設計系統架構以適應 CrewAI 的框架。 |
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | LangChain 提供了更全面的框架和工具，適合進階開發者，但學習曲線較陡。 | 如果你的團隊已經在使用 LangChain 並需要更深層次的功能擴展。 | medium，因為需要重新適應新的框架和工具。 |
+| [microsoft/autogen](https://github.com/microsoft/autogen) | AutoGen 是多 agent 對話框架的經典項目，適合了解歷史，但不如本專案聚焦於實用性和當前技術。 | 如果你需要一個成熟的多 agent 框架，並且不介意學習歷史背景。 | low，因為概念相似，但功能和實作方式有所不同。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **Agent-Learning-Hub** | **langchain** | **crewai** |
+> | 維度 | **Agent-Learning-Hub** | **langchain** | **autogen** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | LangChain 提供了一個強大的框架來構建多種 AI 應用，但不如本專案專注於學習路徑和資源整合。 | CrewAI 提供了多智能體的框架，但本專案更適合新手學習和實作。 |
-> | 遷移成本 | - | medium，因為需要重新學習框架的 API 和概念。 | high，因為需要重新設計系統架構以適應 CrewAI 的框架。 |
-> | 適用場景 | 主要場景 | 如果你需要一個功能強大的框架來構建複雜的 AI 應用，Lan | 如果你的團隊已經在使用 CrewAI，並需要構建多智能體系統 |
+> | 技術路線 | 本專案 | LangChain 提供了更全面的框架和工具，適合進階開發者，但學習曲線較陡。 | AutoGen 是多 agent 對話框架的經典項目，適合了解歷史，但不如本專案聚焦於實用性和當前技術。 |
+> | 遷移成本 | - | medium，因為需要重新適應新的框架和工具。 | low，因為概念相似，但功能和實作方式有所不同。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 LangChain 並需要更深層次的 | 如果你需要一個成熟的多 agent 框架，並且不介意學習歷史 |
 
 ## 成熟度評估
 
@@ -220,44 +218,50 @@ cd Agent-Learning-Hub && open README.md
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合個人學習和探索，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 部分資源可能隨著時間變化而過時，影響學習效果
-  - 解法：定期檢查資源更新，並尋找最新的資料
-- **[HIGH]** 對於完全新手來說，可能需要額外的學習支持
-  - 解法：尋找社群或導師的幫助
-- **[HIGH]** 僅限於 HTML 環境，無法直接運行代碼
-  - 解法：使用其他語言或框架進行實作
+- [MEDIUM] 學習內容可能因社群貢獻不及時而過時
+  - 解法：定期檢查更新，參考其他資源補充知識
+- **[HIGH]** 對於完全沒有基礎的使用者，部分概念可能難以理解
+  - 解法：尋找額外的背景知識或參考資料
+- [low] HTML 格式的限制可能影響某些使用者的體驗
+  - 解法：使用瀏覽器擴展或工具改善閱讀體驗
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 初學者希望學習 AI Agent 開發 | 非常適合 | 提供清晰的學習路徑和資源整合，適合新手逐步學習。 |
-| 經驗豐富的開發者希望快速了解最新技術 | 適合 | 整合了多個開源資源，能快速掌握最新技術。 |
-| 團隊需要制定 AI Agent 開發計畫 | 非常適合 | 提供詳細的任務清單和項目建議，幫助團隊協作。 |
-| 希望在生產環境中使用 AI Agent | 不適合 | 目前處於 alpha 階段，不建議用於生產環境的核心路徑。 |
+| 新手開發者希望學習 AI Agent 開發 | 非常適合 | 提供了清晰的學習路徑和豐富的資源。 |
+| 有經驗的開發者想補充工具使用和工程化技能 | 適合 | 涵蓋了最新的技術和實踐。 |
+| 研究人員尋找相關的開源項目和資料 | 非常適合 | 整理了大量的資源，方便快速查找。 |
+| 完全沒有基礎的使用者希望學習 AI 技術 | 不適合 | 可能需要額外的背景知識來理解部分概念。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
+| 學習時間 | ~5 小時 |
 | 整合時間 | ~2 小時 |
 | 維護負擔 | low |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習，2 小時整合，得到清晰的學習路徑和資源，值得。
+> 花 5 小時學習，2 小時整合，得到系統化的 AI Agent 開發知識，值得。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個專案本身不需要高權限，並且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：該專案不需要高權限，且不存取敏感資料，適合在安全環境中使用。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個專案主要作為學習資源，與其他開發工具的整合性較低，但可以作為補充資料使用。在使用過程中，開發者可以將其與現有的 AI 開發框架（如 LangChain）結合，進一步擴展學習效果。整合的摩擦點主要在於不同框架之間的概念和實作差異，可能需要額外的學習時間來適應。
 
 ## 健康度儀表板
 
@@ -322,7 +326,7 @@ cd Agent-Learning-Hub && open README.md
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 233 |
+| Forks | 248 |
 | Open Issues | 1 |
 | Issue 解決率 | 67% (2 closed) |
 | 最後推送 | 2026-06-02 |
@@ -341,7 +345,7 @@ cd Agent-Learning-Hub && open README.md
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期有更新和貢獻。
+**社群活躍度**：社群活躍，持續有貢獻和更新。
 **連結**：[文件](https://datawhalechina.github.io/Agent-Learning-Hub/)
 
 ## 開發動態
@@ -554,7 +558,7 @@ cd Agent-Learning-Hub && open README.md
 
 ## 延伸閱讀
 
-相關概念：[[Agent 框架]] · [[學習路線圖]] · [[開源資源整合]]
+相關概念：[[Agent 框架]] · [[機器學習]] · [[資料科學]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[WenyuChiou--awesome-agentic-ai-zh|WenyuChiou/awesome-agentic-ai-zh]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]]
 
@@ -562,11 +566,11 @@ cd Agent-Learning-Hub && open README.md
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：AI Agent 學習）
+> [!note]- 直接競品（同子分類：AI Agent 開發）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "AI Agent 學習" AND file.name != "datawhalechina--Agent-Learning-Hub"
+> WHERE subcategory = "AI Agent 開發" AND file.name != "datawhalechina--Agent-Learning-Hub"
 > SORT stars DESC
 > ```
 
@@ -598,7 +602,7 @@ cd Agent-Learning-Hub && open README.md
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["Agent 框架","學習路線圖","開源資源整合"];
+> const concepts = ["Agent 框架","機器學習","資料科學"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "datawhalechina--Agent-Learning-Hub" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

