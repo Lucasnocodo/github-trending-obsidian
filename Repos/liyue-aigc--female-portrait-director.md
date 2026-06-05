@@ -547,7 +547,7 @@ $female-portrait-director
 
 相關概念：[[圖像生成]] · [[提示工程]] · [[AI 藝術]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[inspatio--worldfm|inspatio/worldfm]] · [[nv-tlabs--PiD|nv-tlabs/PiD]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[inspatio--worldfm|inspatio/worldfm]] · [[nv-tlabs--PiD|nv-tlabs/PiD]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[FlashML-org--flashlib|FlashML-org/flashlib]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]]
 
 [GitHub](https://github.com/liyue-aigc/female-portrait-director)
 
