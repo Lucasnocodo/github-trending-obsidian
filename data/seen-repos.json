@@ -2094,10 +2094,10 @@
   },
   "pewdiepie-archdaemon/odysseus": {
     "first_seen": "2026-06-01",
-    "last_seen": "2026-06-04",
-    "times_seen": 4,
+    "last_seen": "2026-06-05",
+    "times_seen": 5,
     "stars_first": 8074,
-    "stars_last": 43988
+    "stars_last": 51366
   },
   "GordenSun/GordenPPTSkill": {
     "first_seen": "2026-06-01",
@@ -2108,44 +2108,65 @@
   },
   "asz798838958/aBaiAutoplus": {
     "first_seen": "2026-06-02",
-    "last_seen": "2026-06-04",
-    "times_seen": 3,
+    "last_seen": "2026-06-05",
+    "times_seen": 4,
     "stars_first": 652,
-    "stars_last": 1398
+    "stars_last": 1484
   },
   "Gloridust/WechatOnCloud": {
     "first_seen": "2026-06-03",
-    "last_seen": "2026-06-04",
-    "times_seen": 2,
+    "last_seen": "2026-06-05",
+    "times_seen": 3,
     "stars_first": 1468,
-    "stars_last": 1941
+    "stars_last": 2054
   },
   "b-nnett/goose": {
     "first_seen": "2026-06-03",
-    "last_seen": "2026-06-04",
-    "times_seen": 2,
+    "last_seen": "2026-06-05",
+    "times_seen": 3,
     "stars_first": 752,
-    "stars_last": 1470
+    "stars_last": 1869
   },
   "zgwl/chinese-buy-us-stock-guide": {
     "first_seen": "2026-06-04",
-    "last_seen": "2026-06-04",
-    "times_seen": 1,
+    "last_seen": "2026-06-05",
+    "times_seen": 2,
     "stars_first": 1068,
-    "stars_last": 1068
+    "stars_last": 2759
   },
   "cpaczek/skylight": {
     "first_seen": "2026-06-04",
-    "last_seen": "2026-06-04",
-    "times_seen": 1,
+    "last_seen": "2026-06-05",
+    "times_seen": 2,
     "stars_first": 795,
-    "stars_last": 795
+    "stars_last": 1222
   },
   "ClaudioDrews/memory-os": {
     "first_seen": "2026-06-04",
-    "last_seen": "2026-06-04",
-    "times_seen": 1,
+    "last_seen": "2026-06-05",
+    "times_seen": 2,
     "stars_first": 756,
-    "stars_last": 756
+    "stars_last": 828
+  },
+  "qiuqiubuchongle-cloud/chokepoint-atlas": {
+    "first_seen": "2026-06-05",
+    "last_seen": "2026-06-05",
+    "times_seen": 1,
+    "stars_first": 559,
+    "stars_last": 559
+  },
+  "jdevalk/specification.website": {
+    "first_seen": "2026-06-05",
+    "last_seen": "2026-06-05",
+    "times_seen": 1,
+    "stars_first": 524,
+    "stars_last": 524
+  },
+  "liyue-aigc/female-portrait-director": {
+    "first_seen": "2026-06-05",
+    "last_seen": "2026-06-05",
+    "times_seen": 1,
+    "stars_first": 510,
+    "stars_last": 510
   }
 }

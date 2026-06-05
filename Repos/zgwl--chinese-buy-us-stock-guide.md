@@ -7,12 +7,12 @@ language: N/A
 license: N/A
 description: "美股指南"
 homepage: ""
-stars: 1068
-stars_per_day: 267
-forks: 168
-open_issues: 3
+stars: 2759
+stars_per_day: 552
+forks: 426
+open_issues: 10
 created: 2026-05-30
-pushed_at: 2026-05-31
+pushed_at: 2026-06-04
 first_seen: 2026-06-04
 week: "2026-W23"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "提供中國投資者全面的美股投資指南，涵蓋開戶、稅
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-07"
+appearances: 2
+next_review: "2026-06-08"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-04"
-star_history: "2026-06-04:1068"
+star_history: "2026-06-04:1068,2026-06-05:2759"
 tags:
   - github
   - "category/其他"
@@ -362,7 +362,7 @@ open 美股指南（二）税务.md
 
 ## 延伸閱讀
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[LiuMengxuan04--shushu-internship-tool|LiuMengxuan04/shushu-internship-tool]] · [[Tong89--smartNode|Tong89/smartNode]]
 
 [GitHub](https://github.com/zgwl/chinese-buy-us-stock-guide)
 
@@ -643,4 +643,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-05|2026-06-05]] — 再次上榜，2.8k stars
 - [[2026-06-04|2026-06-04]] — 首次收錄，1.1k stars
