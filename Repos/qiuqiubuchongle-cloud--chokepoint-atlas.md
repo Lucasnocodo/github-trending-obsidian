@@ -7,9 +7,9 @@ language: Python
 license: N/A
 description: ""
 homepage: ""
-stars: 559
-stars_per_day: 186
-forks: 118
+stars: 582
+stars_per_day: 146
+forks: 125
 open_issues: 1
 created: 2026-06-01
 pushed_at: 2026-06-03
@@ -30,8 +30,8 @@ use_case: "幫助研究 AI 產業鏈中的瓶頸，提供結構化的美股研�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-12"
+appearances: 2
+next_review: "2026-06-13"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-05"
-star_history: "2026-06-05:559"
+star_history: "2026-06-05:559,2026-06-06:582"
 tags:
   - github
   - "category/開發工具"
@@ -794,4 +794,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-06|2026-06-06]] — 再次上榜，582 stars
 - [[2026-06-05|2026-06-05]] — 首次收錄，559 stars
