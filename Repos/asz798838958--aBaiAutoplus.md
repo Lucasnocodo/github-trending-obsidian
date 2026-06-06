@@ -35,14 +35,14 @@ next_review: "2026-06-09"
 contributor_count: 2
 engagement: "high"
 issue_close_rate: 40
-repo_size_kb: 10308
+repo_size_kb: 10603
 readme_length: 10000
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-02"
-star_history: "2026-06-02:652,2026-06-02:660,2026-06-03:1049,2026-06-03:1057,2026-06-04:1398,2026-06-04:1401,2026-06-05:1484,2026-06-05:1485,2026-06-06:1533"
+star_history: "2026-06-02:652,2026-06-02:660,2026-06-03:1049,2026-06-03:1057,2026-06-04:1398,2026-06-04:1401,2026-06-05:1484,2026-06-05:1485,2026-06-06:1533,2026-06-06:1533"
 tags:
   - github
   - "category/開發工具"
@@ -55,7 +55,7 @@ aliases:
 
 # aBaiAutoplus
 
-**1.5k** stars · **371** stars/天 · 建立 4 天前 · Python · AGPL-3.0
+**1.5k** stars · **307** stars/天 · 建立 5 天前 · Python · AGPL-3.0
 
 ```dataviewjs
 const me = dv.page("Repos/asz798838958--aBaiAutoplus");
@@ -72,10 +72,10 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 多平台 AI 账号自动注册与管理，支持协议化付款一键开通 ChatGPT Plus。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (371 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (307 stars/day)
 > **授權** AGPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** High
-> **適合** 需要自動化管理多個 AI 账号並進行付款的開發者或團隊。
-> **一句話重點** 這個專案的核心在於自動化管理和付款，特別適合需要快速註冊多個 AI 服務的開發者。
+> **適合** 需要批量管理 AI 账号並希望自動化註冊流程的開發者和團隊。
+> **一句話重點** 這個專案不僅提供了自動註冊的功能，還針對特定市場的支付需求進行了深入的設計。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -98,39 +98,39 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到自動化管理多個 AI 账号的效果，值得投入。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學、10 小時整合，得到高效的自動註冊和管理功能，值得嘗試。
 
 > [!abstract] 核心創新
-> 支持通过 GoPay 协议化付款，自动完成 ChatGPT Plus 订阅的全链路。
+> 支持通过 GoPay 协议化付款一键开通 ChatGPT Plus。
 
 ## 專案簡介
 
-aBaiAutoplus 是一個多平台的 AI 账号自动注册与管理工具，支持通过 PayPal 和 GoPay 进行 ChatGPT Plus 的自动付款。用戶可以通过 API 或浏览器模式进行账号注册，系统会自动管理账号的生命周期，包括有效性检测和 token 续期。其核心卖点在于通过协议化的方式实现自动化付款，简化了用户的操作流程，尤其适合需要频繁注册和管理多个 AI 账号的用户。该项目基于 `any-auto-register` 进行二次开发，扩展了多种付款方式和接码服务，支持多平台的账号注册。使用者只需配置 `any2api_url`，便可将注册成功的账号自动推送到指定的网关，进一步简化了账号管理的流程。
+aBaiAutoplus 是一個多平台的 AI 账号自动注册与管理工具，支持通过 PayPal 和 GoPay 协议化付款一键开通 ChatGPT Plus。用戶可以通過 API 或浏览器模式進行注册，並自動將成功注册的账号推送到 Any2API 网关。其核心功能包括多平台支持、并发注册、实时日志、账号生命周期管理等，特別適合需要批量管理 AI 账号的開發者。技術上，後端使用 FastAPI 和 SQLite，前端則基於 React 和 TypeScript，並且支持 Docker 部署，這使得其在不同環境下的安裝和運行都相對簡單。
 
-该工具的后端使用 FastAPI 和 SQLite，前端则采用 React 和 TypeScript，确保了良好的性能和用户体验。整体架构设计上，采用了插件化的方式，使得用户可以根据需求扩展功能，灵活性较高。与其他同类工具相比，aBaiAutoplus 提供了更全面的付款方式和接码服务，尤其是 GoPay 的集成，使其在印尼市场具备独特优势。使用过程中，用户可能会遇到接码服务的稳定性问题，建议提前测试所选的接码渠道。该项目目前处于活跃开发阶段，适合需要自动化管理多个 AI 账号的开发者和团队。
+與其他類似工具相比，如 lxf746/any-auto-register，aBaiAutoplus 在支付方式和接码渠道上提供了更豐富的選擇，特別是針對印尼市場的 GoPay 支持。這使得它在需要快速註冊和管理多個帳戶的場景中表現優異。使用者可以透過 Web UI 或 API 進行操作，並且可以自定義插件擴展功能，這對於需要特定功能的用戶來說非常重要。整體而言，這是一個功能強大且靈活的工具，適合需要自動化註冊和管理 AI 服務的開發者和團隊。
 
 **技術棧**：`FastAPI` · `SQLite` · `React` · `TypeScript` · `Playwright`
 
 ## 重點功能
 
-- 多平台支持 — 支持 ChatGPT、Cursor、Kiro 等多個平台的账号注册与管理。
-- 协议化付款 — 支持 PayPal 和 GoPay 的自动付款流程，简化用户操作。
-- 接码服务扩展 — 支持多种接码服务，如 SMS-Activate 和 HeroSMS，确保注册成功率。
-- 账号生命周期管理 — 提供定时有效性检测和 token 自动续期功能，确保账号正常使用。
-- 实时日志 — 实时推送注册日志到前端，便于用户追踪注册状态。
+- 多平台支持 — 支持 ChatGPT、Cursor、Kiro、Grok 等多個平台的自动注册。
+- 并发注册 — 可配置并发数，支持同时注册多个账号，提升效率。
+- 实时日志 — SSE 实时推送注册日志到前端，便于监控和调试。
+- 账号生命周期管理 — 定时有效性检测、token 自动续期、trial 过期预警。
+- Any2API 联动 — 注册完成后自动推送账号到 Any2API 网关，实现即用。
 
 ## 快速開始
 
-1. 克隆项目并进入目录
+1. 克隆项目
 ```bash
-git clone https://github.com/asz798838958/aBaiAutoplus.git && cd aBaiAutoplus
+git clone https://github.com/asz798838958/aBaiAutoplus.git
 ```
 2. 创建虚拟环境并安装依赖
 ```bash
 python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
 ```
-3. 启动后端服务
+3. 启动服务
 ```bash
 .venv/bin/python3 -m uvicorn main:app --port 8000
 ```
@@ -138,65 +138,66 @@ python3 -m venv .venv && source .venv/bin/activate && pip install -r requirement
 ## 程式碼範例
 
 ```python
+# 前置條件：安裝依賴並啟動服務
+POST /api/tasks/gopay-pay-chatgpt
 {
-  "前置條件": "已安裝 FastAPI 和相關依賴",
-  "指令": "curl -X POST http://localhost:8000/api/tasks/gopay-pay-chatgpt -H 'Content-Type: application/json' -d '{\"chatgpt_account_ids\": [\"1\", \"2\"], \"gopay_account_id\": \"your_gopay_id\"}'",
-  "預期輸出": "成功創建付款任務，返回任務 ID。"
+  "chatgpt_account_ids": ["1", "2"],
+  "gopay_account_id": "your_gopay_id",
+  "register_count": 1
 }
+# 預期輸出：成功創建付款任務，返回任務 ID。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天就累積 1485 stars（371/天），forks 685（46.1%），這顯示出強烈的社群參與度。作者 asz798838958 和 ayearofficial 之前在開源社群中有過其他貢獻，這次的專案解決了多平台 AI 账号管理的痛點，特別是在付款自動化方面，這在過去的工具中並不常見。最近的討論和推廣也促進了這個專案的曝光率，尤其是在需要快速註冊和管理 AI 账号的開發者中。這個工具的出現正好滿足了市場上對於簡化 AI 服務接入的需求，並且其高 fork 比率顯示出許多開發者對於擴展和修改的興趣。
+> 建立 5 天內累積 1533 stars（307/天），forks 695（45.3%），這顯示出極高的使用興趣。作者 asz798838958 和 P0me1oo 在開源社群中有一定的影響力，並且這個專案解決了在多平台上自動註冊和管理 AI 账号的需求，特別是針對 ChatGPT Plus 的付款問題。之前的解決方案往往缺乏針對特定市場的支付支持，這使得 aBaiAutoplus 成為一個受歡迎的選擇。社群的活躍度也反映在開發者對於功能擴展和問題解決的積極參與上。
 
 ## 適合誰使用
 
-**目標受眾**：需要自動化管理多個 AI 账号並進行付款的開發者或團隊。
+**目標受眾**：需要批量管理 AI 账号並希望自動化註冊流程的開發者和團隊。
 
 > [!example] 使用場景
-> - 後端工程師用它來自動化註冊多個 ChatGPT 账号，因為手動註冊耗時且容易出錯。
-> - 產品經理用它來快速測試不同平台的 AI 服務，因為可以一鍵開通 Plus 服務，節省時間。
-> - 獨立開發者用它來管理自己的 AI 账号，因為它支持多種付款方式，降低了使用成本。
+> - 後端工程師用它來自動註冊多個 ChatGPT 账号，因為手動註冊耗時且容易出錯。
+> - 產品經理用它來測試不同平台的 AI 服務，因為它支持多平台的快速註冊和管理。
+> - DevOps 工程師用它來整合 AI 服務到 CI/CD 流程中，因為它提供 API 接口和自動化功能。
 
 ## 架構分析
 
-aBaiAutoplus 的架構基於 FastAPI 和 SQLite，後端使用 FastAPI 提供 RESTful API，前端則使用 React 和 TypeScript。這樣的設計使得系統能夠快速響應用戶請求，並且能夠輕鬆擴展功能。數據存儲使用 SQLite，適合小型到中型應用，但在高併發情況下可能會成為瓶頸。
-
-系統支持插件化架構，允許用戶根據需求添加新的平台支持。選擇 FastAPI 是因為其高性能和易用性，而使用 SQLite 則是為了簡化部署和維護。整體而言，這種架構設計在靈活性和性能之間取得了良好的平衡。
+aBaiAutoplus 採用微服務架構，後端使用 FastAPI 提供 RESTful API，前端則使用 React 進行用戶界面構建。數據存儲使用 SQLite，這使得部署和維護都相對簡單。整體架構支持插件化擴展，允許用戶根據需求添加新的平台支持。這種設計使得系統具有良好的擴展性，但在高並發場景下可能會遇到性能瓶頸，特別是在數據庫操作上。使用 Docker 部署可以簡化環境配置，但需要注意容器間的網路配置和數據持久化問題。
 
 ## 技術深入分析
 
-aBaiAutoplus 的核心技術機制是基於 FastAPI 和 SQLite，這使得後端能夠快速響應用戶請求並提供 RESTful API。使用 Playwright 進行瀏覽器自動化，能夠有效地處理各種網頁交互，這對於需要自動化付款的場景尤為重要。系統的效能在於其支持多執行模式，無論是 API 协议模式還是浏览器模式，都能夠根據需求靈活選擇。設計上，選擇 FastAPI 是因為其高性能和易用性，而 SQLite 則適合小型應用，但在高併發情況下可能會成為瓶頸。技術風險方面，依賴於外部接碼服務和支付接口，可能會導致系統在某些情況下不穩定。整合方面，與主流的 CI/CD 工具如 GitHub Actions 整合良好，能夠方便地進行自動化部署和測試。
+aBaiAutoplus 的核心技術機制基於 FastAPI 和 SQLite，這使得其在處理 RESTful API 請求時具備高效能和靈活性。使用 Playwright 進行瀏覽器自動化，能夠有效地處理複雜的註冊流程，特別是在需要人機交互的場景中。該專案的設計考慮到了多平台的兼容性，並且支持插件化擴展，這意味著用戶可以根據需求添加新的功能。性能方面，SQLite 在小型專案中表現良好，但在高並發的情況下可能會成為瓶頸，特別是在數據寫入操作上。選擇 FastAPI 而非 Django 等框架，主要是因為其輕量級和高效能的特性，這使得開發和部署都更加靈活。整體而言，這個專案在技術選型上做出了合理的取捨，能夠在多種環境下運行，但在面對大規模用戶時仍需注意性能優化。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了詳細的安裝步驟和配置說明，對於新手來說相對友好。安裝過程中需要注意環境變數的配置，否則可能會遇到問題。整體上，花 30 分鐘應該能夠成功運行起來。
+> README 文件清晰，提供了詳細的安裝步驟和使用範例。安裝過程相對順暢，但對於新手來說，可能需要一些額外的配置。整體來說，花 30 分鐘能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 多平台支持，能夠快速註冊和管理不同的 AI 账号。
-> - 自动化付款流程，节省用户时间和精力。
-> - 插件化架构，便于扩展和定制功能。
+> - 支持多平台的自动注册和管理，适合需要批量处理的场景。
+> - 提供实时日志和注册成功率仪表盘，便于监控和调试。
+> - 支持多种支付方式，特别是针对印尼市场的 GoPay 支持。
 
 > [!danger] 缺點
-> - 依赖于外部接码服务，可能会影响注册成功率。
-> - 需要一定的技术背景才能配置和使用。
-> - 在高并发情况下，SQLite 可能成为性能瓶颈。
+> - 对接码服务依赖较大，可能导致注册失败率上升。
+> - 需要一定的技术背景才能进行配置和使用。
+> - 在高并发场景下可能会遇到性能瓶颈。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.11+。
-> - 需要有效的印尼手機號碼進行 GoPay 账号注册。
-> - 依賴於外部接碼服務，可能會遇到服務不穩定的情況。
+> - 僅支援 Python 3.11+ 和 Node.js 18+。
+> - 需要印尼手机号接码进行 GoPay 账号注册。
+> - 使用 Docker 部署时需配置安全组放行特定端口。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的自動化註冊功能，但不支持多種付款方式，適合只需簡單註冊的場景。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於多代理管理，而 aBaiAutoplus 更加注重於自動註冊和付款流程，適合需要快速註冊的用戶。 |
+| [lxf746/any-auto-register](https://github.com/lxf746/any-auto-register) | 本專案在支付方式和接码渠道上提供了更多選擇，特別是針對印尼市場的 GoPay 支持。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 該工具專注於 AI agent 的生成，而本專案則重點在於帳號的自動註冊和管理。 |
 
 ## 替代方案決策
 
@@ -204,44 +205,44 @@ aBaiAutoplus 的核心技術機制是基於 FastAPI 和 SQLite，這使得後端
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Python 實作，但不支持自動付款功能，主要集中在代理管理上。 | 如果你的需求主要是代理管理而非自動註冊和付款，則可以選擇此工具。 | medium，因為需要重新配置和調整使用流程。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於多代理管理，與 aBaiAutoplus 的自動註冊功能不同。 | 如果你的團隊已經在使用多代理管理工具，則可以選擇此方案。 | low，因為兩者的使用場景有一定重疊。 |
+| [lxf746/any-auto-register](https://github.com/lxf746/any-auto-register) | 主要專注於自動註冊功能，而本專案在支付和多平台支持上有更全面的設計。 | 如果只需要基本的自動註冊功能，而不需要支付集成，則可以選擇它。 | medium，因為需要重新配置支付和平台支持。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 AI agent 的生成，而本專案則重點在於帳號的自動註冊和管理。 | 如果你的需求主要是生成 AI agent，而不是註冊帳號，則可以選擇它。 | low，因為功能範圍不同，遷移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **aBaiAutoplus** | **agent-sprite-forge** | **Duel-Agents** |
+> | 維度 | **aBaiAutoplus** | **any-auto-register** | **agent-sprite-forge** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Python 實作，但不支持自動付款功能，主要集中在代理管理上。 | 專注於多代理管理，與 aBaiAutoplus 的自動註冊功能不同。 |
-> | 遷移成本 | - | medium，因為需要重新配置和調整使用流程。 | low，因為兩者的使用場景有一定重疊。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是代理管理而非自動註冊和付款，則可以選擇此工 | 如果你的團隊已經在使用多代理管理工具，則可以選擇此方案。 |
+> | 技術路線 | 本專案 | 主要專注於自動註冊功能，而本專案在支付和多平台支持上有更全面的設計。 | 專注於 AI agent 的生成，而本專案則重點在於帳號的自動註冊和管理。 |
+> | 遷移成本 | - | medium，因為需要重新配置支付和平台支持。 | low，因為功能範圍不同，遷移成本較低。 |
+> | 適用場景 | 主要場景 | 如果只需要基本的自動註冊功能，而不需要支付集成，則可以選擇它 | 如果你的需求主要是生成 AI agent，而不是註冊帳號，則 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人或小團隊進行測試，不建議在生產環境中使用。
+> 適合個人試用和學習，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 使用 GoPay 付款時，可能會遇到接码服务不稳定的问题。
-  - 解法：提前测试所选的接码渠道，确保其稳定性。
-- [MEDIUM] 在高并发情况下，SQLite 可能成为性能瓶颈。
-  - 解法：考虑使用更强大的数据库系统，如 PostgreSQL。
+- **[HIGH]** GoPay 付款時可能因接码服务不稳定导致注册失败
+  - 解法：使用多个接码渠道进行轮换
+- [MEDIUM] 在高并发情况下，SQLite 可能成为性能瓶颈
+  - 解法：考虑使用更强大的数据库如 PostgreSQL
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠快速註冊和管理多個 AI 账号，提升開發效率。 |
-| 大型企業的 AI 服務集成 | 普通 | 雖然功能強大，但在高併發情況下可能會遇到性能問題。 |
-| 需要快速測試不同平台的 AI 服務的開發者 | 非常適合 | 自動化註冊和付款流程能夠節省大量時間。 |
+| 需要批量注册 ChatGPT 账号的团队 | 非常适合 | 具备高效的自动注册和管理功能，支持并发操作。 |
+| 小型开发者希望快速测试多个 AI 服务 | 适合 | 支持多平台注册，便于快速迭代。 |
+| 大型企业需要稳定的账号管理系统 | 不适合 | 目前仍处于 alpha 阶段，稳定性不足。 |
 
 ## 採用成本分析
 
@@ -253,12 +254,12 @@ aBaiAutoplus 的核心技術機制是基於 FastAPI 和 SQLite，這使得後端
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到自動化管理多個 AI 账号的效果，值得投入。
+> 花 5 小時學、10 小時整合，得到高效的自動註冊和管理功能，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 該工具本身不需要高權限，但需要配置外部 API 密鑰，使用時需注意保護這些敏感資料。整體來說，安全性風險相對較低，但仍需謹慎處理 API 密鑰和接碼服務的配置。
+> 該工具不需要高權限運行，但需要配置多個 API key，使用時需注意保護這些敏感信息。整體來說，將其集成到 CI/CD 流程中是安全的，但需確保 API key 的安全性。
 
 ## 健康度儀表板
 
@@ -323,12 +324,12 @@ aBaiAutoplus 的核心技術機制是基於 FastAPI 和 SQLite，這使得後端
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 685 |
+| Forks | 695 |
 | Open Issues | 3 |
 | Issue 解決率 | 40% (2 closed) |
-| 最後推送 | 2026-06-04 |
+| 最後推送 | 2026-06-05 |
 | 建立日期 | 2026-05-31 |
-| Repo 大小 | 10.1 MB |
+| Repo 大小 | 10.4 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/asz798838958/aBaiAutoplus) |
 
 > [!info]- 主要依賴
@@ -338,7 +339,7 @@ aBaiAutoplus 的核心技術機制是基於 FastAPI 和 SQLite，這使得後端
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 52
+>     "Python" : 53
 >     "HTML" : 39
 >     "TypeScript" : 7
 >     "JavaScript" : 1
@@ -347,18 +348,18 @@ aBaiAutoplus 的核心技術機制是基於 FastAPI 和 SQLite，這使得後端
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@asz798838958](https://github.com/asz798838958) | 14 |
-> | [@ayearofficial](https://github.com/ayearofficial) | 2 |
+> | [@asz798838958](https://github.com/asz798838958) | 17 |
+> | [@P0me1oo](https://github.com/P0me1oo) | 2 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，定期更新和維護。
-**連結**：[文件](https://github.com/asz798838958/aBaiAutoplus/wiki)
+**社群活躍度**：社群活躍度高，開發者積極參與問題解決和功能擴展。
+**連結**：[文件](https://github.com/asz798838958/aBaiAutoplus#readme)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-01 ~ 2026-06-04）
-> **活躍天數** 3 天 · **最新 commit** Update README.md
+> [!abstract] 最近 10 次 commit（2026-06-01 ~ 2026-06-05）
+> **活躍天數** 4 天 · **最新 commit** Update README.md
 
 ## 熱門議題
 
@@ -492,6 +493,8 @@ aBaiAutoplus 的核心技術機制是基於 FastAPI 和 SQLite，這使得後端
 > ## 界面预览
 > 
 > > 📸 _截图将随版本迭代持续更新。_
+> 
+> ### 交流联系方式
 > 
 > 
 > ### gopay注册生成gptplus
@@ -706,13 +709,13 @@ aBaiAutoplus 的核心技術機制是基於 FastAPI 和 SQLite，這使得後端
 > 
 > 1. **协议** — 调用 `generate_plus_link(country=ID, currency=IDR)` 拿到 ChatGPT 的 `cashier_url`（Stripe hosted checkout）
 > 2. **浏览器** — 打开 `cashier_url`，等页面跳转到 Midtrans 收银台域，抓取 `midtrans_url`
-> 3. **协议** — 用 GoPay 账号调用 `GoPayPayment.pay(midtrans_url, account)` 完成 
+> 3. **协议** — 用 GoPay 账号调用 `GoPayPayment.pay(midtrans_url, a
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[API 設計]] · [[接碼服務]]
+相關概念：[[自動化]] · [[API 設計]] · [[多模態]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[lxf746--any-auto-register|lxf746/any-auto-register]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[Fokkyp--SoftwareCopyright-Skill|Fokkyp/SoftwareCopyright-Skill]] · [[FoundZiGu--GuJumpgate|FoundZiGu/GuJumpgate]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[lxf746--any-auto-register|lxf746/any-auto-register]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[Fokkyp--SoftwareCopyright-Skill|Fokkyp/SoftwareCopyright-Skill]] · [[FoundZiGu--GuJumpgate|FoundZiGu/GuJumpgate]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/asz798838958/aBaiAutoplus)
 
@@ -754,7 +757,7 @@ aBaiAutoplus 的核心技術機制是基於 FastAPI 和 SQLite，這使得後端
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","API 設計","接碼服務"];
+> const concepts = ["自動化","API 設計","多模態"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "asz798838958--aBaiAutoplus" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
