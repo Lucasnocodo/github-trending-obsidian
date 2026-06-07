@@ -7,17 +7,17 @@ language: Python
 license: NOASSERTION
 description: "[CVPR 2026 Oral] VGGT Omega"
 homepage: ""
-stars: 1351
-stars_per_day: 225
-forks: 42
-open_issues: 12
+stars: 2614
+stars_per_day: 114
+forks: 107
+open_issues: 24
 created: 2026-05-14
 pushed_at: 2026-05-18
 first_seen: 2026-05-19
 week: "2026-W21"
 month: "2026-05"
 category: "AI/ML"
-subcategory: "深度學習"
+subcategory: "計算機視覺"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-19
-use_case: "提供高效的相機姿態估計和深度推斷模型，適用於多視角影像處理。"
+use_case: "提供高效的相機姿態和深度推斷模型，適合計算機視覺應用。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 3
 next_review: "2026-05-24"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: 40
+issue_close_rate: 35
 repo_size_kb: 40622
 readme_length: 4799
 bus_factor: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-19"
-star_history: "2026-05-19:984,2026-05-20:1219,2026-05-21:1351"
+star_history: "2026-05-19:984,2026-05-20:1219,2026-05-21:1351,2026-06-07:2614"
 tags:
   - github
   - "category/ai_ml"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "vggt-omega"
   - "facebookresearch/vggt-omega"
-  - "提供高效的相機姿態估計和深度推斷模型，適用於多視角影像處理。"
+  - "提供高效的相機姿態和深度推斷模型，適合計算機視覺應用。"
 ---
 
 # vggt-omega
 
-**984** stars · **246** stars/天 · 建立 4 天前 · Python · NOASSERTION
+**2.6k** stars · **114** stars/天 · 建立 23 天前 · Python · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/facebookresearch--vggt-omega");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供高效的相機姿態估計和深度推斷模型，適用於多視角影像處理。
+> 提供高效的相機姿態和深度推斷模型，適合計算機視覺應用。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (246 stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要進行相機姿態估計和深度推斷的研究團隊或開發者，尤其是在自駕車或虛擬現實領域工作的人。
-> **一句話重點** VGGT Omega 的設計使得相機姿態估計和深度推斷變得更加高效，特別適合需要處理多視角影像的應用場景。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (114 stars/day)
+> **授權** NOASSERTION · **維護** Moderate (最後推送 19 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要高效相機姿態和深度推斷的計算機視覺研究者或開發者。
+> **一句話重點** VGGT Omega 的高效相機姿態推斷能力使其在計算機視覺領域中具備競爭力。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/facebookresearch--vggt-omega");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "深度學習" && p.file.name !== "facebookresearch--vggt-omega" && p.status !== "archived")
+>     .where(p => p.subcategory === "計算機視覺" && p.file.name !== "facebookresearch--vggt-omega" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,32 +96,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 深度學習 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 計算機視覺 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習，15 小時整合，得到高效的相機姿態估計和深度推斷，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到高效的相機推斷能力，值得投資。
 
 > [!abstract] 核心創新
-> VGGT Omega 提供了高效的相機姿態估計和深度推斷能力，特別適合多視角影像處理。
+> 提供高效的相機姿態和深度推斷，能夠處理多達 500 幅影像，並且記憶體需求相對較低。
 
 ## 專案簡介
 
-VGGT Omega 是一個專為相機姿態估計和深度推斷設計的深度學習模型，支持從多視角影像中提取相機內外參數。用戶只需提供影像路徑，模型會自動處理並輸出相機姿態和深度資訊。核心賣點在於其高效的推斷能力，能在單個 NVIDIA A100 GPU 上處理多達 500 幅影像，並且對於每幅影像的峰值 GPU 記憶體需求不超過 43.15 GB。技術上，VGGT Omega 使用 PyTorch 框架，並依賴於 einops 和 opencv-python 等庫來進行影像處理和數據加載。這使得模型在處理複雜的影像數據時能夠保持高效性。與其他同類工具相比，如 Meta 的其他視覺模型，VGGT Omega 提供了更精確的相機姿態估計，尤其在多視角環境下的表現更為突出。
+VGGT Omega 是一個用於相機姿態和深度推斷的深度學習模型，能夠處理多張輸入影像並輸出相應的相機參數和深度圖。使用者只需提供影像路徑，模型會自動加載權重並進行推斷，最終輸出包括相機內外參數和深度資訊的字典。核心賣點在於其高效的 GPU 記憶體使用，能在 NVIDIA A100 上處理多達 500 幅影像，並且記憶體需求隨著輸入影像數量的增加而線性增長。具體來說，對於 1 幅影像，峰值記憶體需求為 6.02 GB，而處理 500 幅影像時需求為 43.15 GB。
 
-使用者可以透過簡單的 Python 代碼來加載模型並進行推斷，這降低了使用門檻。實際使用中，模型的記憶體需求隨著輸入影像數量的增加而增加，這意味著在大規模應用時需要考慮硬體配置。該專案目前處於活躍開發階段，社群回應速度良好，並且有持續的更新和問題解決。未來幾個月，預期會有更多功能和改進，特別是在多視角影像處理的精度上。適合需要進行相機姿態估計和深度推斷的研究團隊或開發者，尤其是那些在自駕車或虛擬現實領域工作的團隊。
+此模型使用 PyTorch 框架，並依賴於多個輔助庫如 torchvision 和 opencv-python，這使得它在深度學習社群中具有良好的兼容性和擴展性。與其他相似工具相比，如 0x0funky/agent-sprite-forge 和 2aronS/Duel-Agents，VGGT Omega 提供了更高的解析度和更精確的相機姿態推斷，特別是在需要處理大量影像的應用場景中。使用者在實際應用中可能會遇到權重下載的困難，因為需要通過申請才能獲得模型檔案，這可能會影響開發效率。這個專案目前處於活躍開發階段，社群回應相對迅速，適合需要高效相機推斷的研究團隊或開發者。
 
-**技術棧**：`PyTorch` · `torchvision` · `numpy` · `opencv-python`
+**技術棧**：`PyTorch 2.3` · `torchvision 0.18` · `numpy` · `opencv-python`
 
 ## 重點功能
 
-- 相機姿態估計 — 能從多視角影像中準確推斷相機的內外參數。
-- 深度推斷 — 提供深度資訊，支持多達 500 幅影像的處理。
-- 簡單的 API — 透過幾行 Python 代碼即可使用，降低使用門檻。
-- 高效的記憶體管理 — 在單個 NVIDIA A100 GPU 上，峰值記憶體需求不超過 43.15 GB。
-- 支持文本對齊 — 提供文本對齊的檢查點，適用於需要文本資訊的應用場景。
+- 高效的相機姿態推斷 — 支持多達 500 幅影像的處理，峰值記憶體需求為 43.15 GB。
+- 深度圖生成 — 提供準確的深度資訊，適合於各種計算機視覺應用。
+- 多解析度支持 — 提供 512 和 256 的影像解析度選擇，適應不同需求。
+- 簡單的模型加載 — 使用 `model.load_state_dict(torch.load(checkpoint_path))` 輕鬆加載模型權重。
+- 互動式演示 — 提供 Gradio demo，可視化深度點雲和預測相機。
 
 ## 快速開始
 
@@ -131,79 +131,77 @@ git clone git@github.com:facebookresearch/vggt-omega.git && cd vggt-omega && pip
 ```
 2. 加載模型並進行推斷
 ```bash
-import torch
-from vggt_omega.models import VGGTOmega
 model = VGGTOmega().to('cuda').eval()
 ```
-3. 執行推斷並獲取結果
+3. 運行 Gradio demo
 ```bash
-predictions = model(images)
+python demo_gradio.py --checkpoint checkpoints/VGGT-Omega-1B-512/model.pt --image-resolution 512
 ```
 
 ## 程式碼範例
 
 ```python
 [
-  "# 前置條件：已安裝 PyTorch 和相關依賴",
-  "import torch\nfrom vggt_omega.models import VGGTOmega\nfrom vggt_omega.utils.load_fn import load_and_preprocess_images\ncheckpoint_path = 'path/to/vggt_omega_1b_512.pt'\nimage_names = ['path/to/imageA.png', 'path/to/imageB.png', 'path/to/imageC.png']\nmodel = VGGTOmega().to('cuda').eval()\nmodel.load_state_dict(torch.load(checkpoint_path, map_location='cpu'))\nimages = load_and_preprocess_images(image_names, image_resolution=512).to('cuda')\nwith torch.inference_mode():\n    predictions = model(images)",
-  "# 預期輸出：predictions 包含相機姿態和深度資訊"
+  "# 前置條件：已加載模型權重；",
+  "import torch",
+  "from vggt_omega.models import VGGTOmega",
+  "checkpoint_path = 'path/to/vggt_omega_1b_512.pt'",
+  "model = VGGTOmega().to('cuda').eval()",
+  "model.load_state_dict(torch.load(checkpoint_path, map_location='cpu'))",
+  "# 預期輸出：模型已成功加載並準備進行推斷。"
 ]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 984 stars（246/天），forks 23（2.3%），這顯示出社群對於其功能的高度興趣。作者 Jianyuan Wang 等人來自於牛津大學的視覺幾何組和 Meta AI，這樣的背景為專案提供了強大的技術支持。VGGT Omega 解決了多視角影像處理中相機姿態估計的準確性問題，之前的解決方案往往無法有效處理不同視角的影像。此專案的推出正好填補了這一空白，特別是在自駕車和虛擬現實等應用場景中。社群的活躍度和問題解決率也反映了其實用性和需求。
+> 建立 23 天內累積 2614 stars（114/天），forks 107（4.1%），顯示出穩定的增長趨勢。這個專案由 Facebook Research 團隊開發，該團隊在計算機視覺領域有著豐富的經驗，之前也推出過多個成功的模型。VGGT Omega 解決了在多影像處理時的高效性問題，之前的模型往往在記憶體使用上表現不佳，無法滿足高解析度影像的需求。近期的 CVPR 2026 會議也可能為這個專案帶來了更多的曝光。forks/stars 比率為 4.1%，顯示出使用者對這個專案的實際修改和應用需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要進行相機姿態估計和深度推斷的研究團隊或開發者，尤其是在自駕車或虛擬現實領域工作的人。
+**目標受眾**：需要高效相機姿態和深度推斷的計算機視覺研究者或開發者。
 
 > [!example] 使用場景
-> - 自駕車工程師用它來從多視角影像中推斷相機姿態，因為其高效的推斷能力能夠在短時間內處理大量影像。
-> - 虛擬現實開發者用它來生成深度圖，因為模型能夠提供準確的深度資訊，提升使用者的沉浸感。
-> - 研究人員用它來進行相機內外參數的估計，因為其簡單的 API 使得實驗設計變得更加靈活和高效。
+> - 計算機視覺研究人員用它來進行相機姿態推斷，因為它能處理多達 500 幅影像，並且記憶體需求相對較低。
+> - 遊戲開發者用它來生成真實感的深度圖，因為其高解析度和準確性能提升遊戲畫面的真實感。
+> - 機器人技術工程師用它來進行環境感知，因為能快速獲取相機參數和深度資訊，幫助機器人導航。
 
 ## 架構分析
 
-VGGT Omega 採用模組化設計，主要由模型架構和數據處理模組組成。模型部分使用 PyTorch 框架，便於擴展和修改。數據處理模組負責影像的加載和預處理，確保輸入數據符合模型要求。
-
-這種設計使得模型能夠靈活應對不同的影像格式和解析度。選擇 PyTorch 而非其他框架，因為其在深度學習社群中的廣泛應用和支持。這樣的選擇雖然增加了學習曲線，但也帶來了更強的社群支持和資源。
-
-整體架構的擴展性良好，但在處理大規模數據時，可能會面臨記憶體瓶頸，特別是在高解析度影像的情況下。
+VGGT Omega 採用 PyTorch 框架，設計上強調高效的記憶體使用和快速推斷。模型的核心是基於卷積神經網絡（CNN），能夠從輸入影像中提取特徵並進行相機姿態推斷。資料流中，影像經過 `load_and_preprocess_images` 函數進行預處理，然後進入模型進行推斷，最終輸出相機參數和深度圖。選擇 PyTorch 而非 TensorFlow 是因為其動態計算圖的特性，使得模型調試和開發更為靈活。這種設計使得 VGGT Omega 能夠在高解析度影像上保持良好的效能，但在處理極大規模影像時，記憶體需求會迅速增加，可能成為瓶頸。
 
 ## 技術深入分析
 
-VGGT Omega 的核心技術機制在於其深度學習模型，使用了先進的卷積神經網絡來進行相機姿態估計和深度推斷。模型的設計考慮到了多視角影像的特性，能夠有效提取影像中的空間信息。效能方面，模型在單個 NVIDIA A100 GPU 上的峰值記憶體需求為 43.15 GB，這使得其在高解析度影像處理時仍能保持高效。選擇 PyTorch 作為開發框架，因為其在深度學習領域的廣泛應用和強大的社群支持，這樣的選擇雖然增加了學習曲線，但也帶來了更多的資源和工具。技術風險方面，隨著數據量的增加，記憶體需求可能成為一個瓶頸，特別是在大規模應用時需要謹慎考量。與主流框架的整合難度較低，因為其設計上已考慮到與其他工具的兼容性，並且支持常見的 CI/CD 流程。
+VGGT Omega 的核心技術基於卷積神經網絡（CNN），專注於從影像中提取特徵以進行相機姿態推斷和深度圖生成。該模型在 NVIDIA A100 GPU 上進行優化，能夠處理高達 500 幅影像，並在峰值記憶體使用上達到 43.15 GB。選擇 PyTorch 作為開發框架，因為其動態計算圖特性使得模型的調試和開發更為靈活。這樣的選擇雖然提高了開發效率，但在處理極大規模影像時，記憶體需求可能會迅速增加，成為潛在的瓶頸。VGGT Omega 依賴於多個輔助庫，如 torchvision 和 opencv-python，這使得它在深度學習社群中具有良好的兼容性。與主流框架的整合難度較低，能夠方便地融入現有的 CI/CD pipeline 中，並且對於開發者的學習曲線相對友好。整體而言，VGGT Omega 在計算機視覺領域提供了一個高效且靈活的解決方案，適合需要高效相機推斷的研究團隊或開發者。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和使用範例。安裝過程相對順暢，但需要注意 GPU 的要求。文件目前僅提供英文版本，對於非英語使用者可能會有一定的學習成本。
+> README 文件清晰且提供了完整的使用範例，安裝過程相對順暢，但需要注意權重申請的步驟。提供了良好的入門指南，並且文件有多語言支持，適合新手快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 高效的相機姿態估計和深度推斷能力，適合多視角影像處理。
-> - 簡單的 API 設計，降低了使用門檻。
-> - 良好的社群支持和活躍的開發進度。
+> - 高效的記憶體使用，能處理多達 500 幅影像。
+> - 提供準確的相機姿態和深度推斷。
+> - 簡單易用的 API，方便開發者快速上手。
 
 > [!danger] 缺點
-> - 需要高效能的 GPU，對硬體要求較高。
-> - 目前僅支持特定格式的影像輸入，靈活性不足。
-> - 在大規模影像處理時，記憶體需求可能成為瓶頸。
+> - 需要申請才能獲得模型權重，影響開發進度。
+> - 僅支援 NVIDIA GPU，對其他硬體兼容性未知。
+> - 對於超過 500 幅影像的處理，記憶體需求可能會大幅增加。
 
 > [!warning] 注意事項
-> - 需要高效能 GPU 進行推斷，建議使用 NVIDIA A100 或同等效能的顯示卡。
-> - 目前僅支持特定格式的影像輸入，需確保影像符合要求。
-> - 對於大規模影像處理，需考慮記憶體需求，可能需要進行分批處理。
+> - 需要通過申請才能獲得模型權重，可能影響開發效率。
+> - 目前僅支援 NVIDIA GPU，對於其他硬體的兼容性未知。
+> - 對於超過 500 幅影像的處理，記憶體需求可能會大幅增加。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供了相似的相機姿態估計功能，但主要針對遊戲開發場景，並不專注於深度推斷。 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 專注於深度學習模型的訓練和推斷，功能範圍更廣，但在相機姿態估計上不如 VGGT Omega 精確。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的相機姿態推斷功能，但在解析度和記憶體使用上不如 VGGT Omega 高效。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於多代理系統的相機推斷，適合特定應用場景，但不具備 VGGT Omega 的深度圖生成能力。 |
 
 ## 替代方案決策
 
@@ -211,70 +209,64 @@ VGGT Omega 的核心技術機制在於其深度學習模型，使用了先進的
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發的相機姿態估計，並不專注於深度推斷。 | 如果你的主要需求是遊戲開發中的相機控制，而非深度推斷，則應選擇此工具。 | low，因為 API 設計相似，且功能重疊。 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | 專注於深度學習模型的訓練和推斷，功能範圍更廣，但在相機姿態估計上不如 VGGT Omega 精確。 | 如果需要更廣泛的深度學習功能，而不僅僅是相機姿態估計，則應選擇此工具。 | medium，因為需要適應不同的 API 和功能範圍。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用類似的相機姿態推斷技術，但在解析度和記憶體使用上不如 VGGT Omega 高效。 | 如果需要較低的記憶體需求且不需要高解析度的相機推斷。 | medium，因為需要調整部分 API 調用。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於多代理系統的相機推斷，適合特定應用場景，但不具備 VGGT Omega 的深度圖生成能力。 | 如果你的應用場景涉及多代理系統，並且不需要深度圖生成。 | high，因為需要重構整個推斷流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **vggt-omega** | **agent-sprite-forge** | **NemoClaw** |
+> | 維度 | **vggt-omega** | **agent-sprite-forge** | **Duel-Agents** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於遊戲開發的相機姿態估計，並不專注於深度推斷。 | 專注於深度學習模型的訓練和推斷，功能範圍更廣，但在相機姿態估計上不如 VGGT Omega 精確。 |
-> | 遷移成本 | - | low，因為 API 設計相似，且功能重疊。 | medium，因為需要適應不同的 API 和功能範圍。 |
-> | 適用場景 | 主要場景 | 如果你的主要需求是遊戲開發中的相機控制，而非深度推斷，則應選 | 如果需要更廣泛的深度學習功能，而不僅僅是相機姿態估計，則應選 |
+> | 技術路線 | 本專案 | 使用類似的相機姿態推斷技術，但在解析度和記憶體使用上不如 VGGT Omega 高效。 | 專注於多代理系統的相機推斷，適合特定應用場景，但不具備 VGGT Omega 的深度圖生成能力。 |
+> | 遷移成本 | - | medium，因為需要調整部分 API 調用。 | high，因為需要重構整個推斷流程。 |
+> | 適用場景 | 主要場景 | 如果需要較低的記憶體需求且不需要高解析度的相機推斷。 | 如果你的應用場景涉及多代理系統，並且不需要深度圖生成。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人或小型專案試用，不建議用在生產環境的核心路徑上。
+> 適合用於研究和開發，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 下載檢查點時可能會遇到拒絕問題，無法直接下載。
-  - 解法：需先提交請求並等待審核。
-- [MEDIUM] 對於不同視角的影像支持有限，可能無法處理所有類型的影像。
-  - 解法：需確保影像符合要求，或進行預處理。
-- [MEDIUM] 記憶體需求隨著輸入影像數量增加而增加，可能導致性能下降。
-  - 解法：建議分批處理影像以降低記憶體壓力。
+- **[HIGH]** 權重下載過程中可能會遇到申請被拒的情況
+  - 解法：確保提供完整的申請信息以提高通過率
+- [MEDIUM] 對於超過 500 幅影像的處理，記憶體需求可能會大幅增加
+  - 解法：考慮減少同時處理的影像數量以降低記憶體使用
+- **[HIGH]** 在非 NVIDIA 硬體上運行可能會遇到性能問題
+  - 解法：建議使用支持 CUDA 的 NVIDIA GPU 以獲得最佳性能
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 自駕車影像處理系統 | 非常適合 | 能夠準確推斷相機姿態和深度，提升系統的安全性和可靠性。 |
-| 虛擬現實應用開發 | 適合 | 提供深度資訊，增強使用者的沉浸感。 |
-| 小型研究團隊的相機姿態估計 | 普通 | 雖然功能強大，但對硬體要求較高，可能不適合資源有限的團隊。 |
-| 大型影像處理任務 | 不適合 | 記憶體需求高，可能導致性能瓶頸。 |
+| 10 人以下的新創公司進行計算機視覺研究 | 非常適合 | 提供高效的相機推斷能力，適合小型團隊的資源配置。 |
+| 大型企業的生產環境 | 不適合 | 目前尚未達到生產環境的穩定性和成熟度。 |
+| 學術研究團隊進行深度學習實驗 | 適合 | 提供高效的推斷能力，適合研究用途。 |
+| 需要快速原型開發的開發者 | 非常適合 | 簡單易用的 API 使得快速開發成為可能。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~15 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習，15 小時整合，得到高效的相機姿態估計和深度推斷，值得投入。
+> 花 5 小時學習，10 小時整合，得到高效的相機推斷能力，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具本身不需要高權限，主要依賴於影像數據，並不存取敏感資料。依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-VGGT Omega 最常與深度學習框架如 PyTorch 搭配使用，通常在模型訓練和推斷的環節中發揮作用。在一個使用 PyTorch 的專案中，可以通過簡單的 import 語句來整合 VGGT Omega，並利用其 API 進行相機姿態估計和深度推斷。該工具支持與 GitHub Actions 等 CI 工具的整合，並且與 VS Code 等 IDE 兼容良好。整合過程中，最常見的問題是記憶體不足，特別是在處理高解析度影像時，建議提前進行測試以確保性能。
+> 低風險：該工具不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
 
 ## 健康度儀表板
 
@@ -339,9 +331,9 @@ VGGT Omega 最常與深度學習框架如 PyTorch 搭配使用，通常在模型
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 23 |
-| Open Issues | 6 |
-| Issue 解決率 | 40% (4 closed) |
+| Forks | 107 |
+| Open Issues | 24 |
+| Issue 解決率 | 35% (13 closed) |
 | 最後推送 | 2026-05-18 |
 | 建立日期 | 2026-05-14 |
 | Repo 大小 | 39.7 MB |
@@ -358,7 +350,7 @@ VGGT Omega 最常與深度學習框架如 PyTorch 搭配使用，通常在模型
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，問題解決率達到 40%。
+**社群活躍度**：社群活躍，回應速度較快，解決率為 35%。
 **連結**：[文件](https://huggingface.co/facebook/VGGT-Omega)
 
 ## 開發動態
@@ -371,11 +363,11 @@ VGGT Omega 最常與深度學習框架如 PyTorch 搭配使用，通常在模型
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#7](https://github.com/facebookresearch/vggt-omega/issues/7) | How can I obtain a downloadable CKPT file? My application is | 2 | 3 |
-> | [#14](https://github.com/facebookresearch/vggt-omega/issues/14) | About dynamic sequences | 0 | 0 |
-> | [#13](https://github.com/facebookresearch/vggt-omega/issues/13) | About the matching loss | 0 | 0 |
-> | [#11](https://github.com/facebookresearch/vggt-omega/issues/11) | The storation of camera extrinsic information | 0 | 1 |
-> | [#8](https://github.com/facebookresearch/vggt-omega/issues/8) | Does vggt-omega currently support inference from different F | 0 | 2 |
+> | [#29](https://github.com/facebookresearch/vggt-omega/issues/29) | Inquire about the availability of the 10B model | 2 | 2 |
+> | [#7](https://github.com/facebookresearch/vggt-omega/issues/7) | How can I obtain a downloadable CKPT file? My application is | 2 | 4 |
+> | [#35](https://github.com/facebookresearch/vggt-omega/issues/35) | RopePositionEmbedding: base=100 is miscalibrated for normali | 1 | 2 |
+> | [#42](https://github.com/facebookresearch/vggt-omega/issues/42) | About loss and auxiliary inputs | 0 | 1 |
+> | [#41](https://github.com/facebookresearch/vggt-omega/issues/41) | Model weights | 0 | 1 |
 
 ## README 摘錄
 
@@ -514,19 +506,19 @@ VGGT Omega 最常與深度學習框架如 PyTorch 搭配使用，通常在模型
 
 ## 延伸閱讀
 
-相關概念：[[深度學習]] · [[相機姿態估計]] · [[多視角影像處理]]
+相關概念：[[電腦視覺]] · [[深度學習]] · [[相機姿態推斷]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]]
 
 [GitHub](https://github.com/facebookresearch/vggt-omega)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：深度學習）
+> [!note]- 直接競品（同子分類：計算機視覺）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "深度學習" AND file.name != "facebookresearch--vggt-omega"
+> WHERE subcategory = "計算機視覺" AND file.name != "facebookresearch--vggt-omega"
 > SORT stars DESC
 > ```
 
@@ -558,7 +550,7 @@ VGGT Omega 最常與深度學習框架如 PyTorch 搭配使用，通常在模型
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["深度學習","相機姿態估計","多視角影像處理"];
+> const concepts = ["電腦視覺","深度學習","相機姿態推斷"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "facebookresearch--vggt-omega" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
