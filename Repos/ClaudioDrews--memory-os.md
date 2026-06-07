@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "A 7-layer memory operating system for Hermes Agent — persistent memory with Qdrant, structured facts, fabric recall, auto-curated wiki, and surgical context injection. Runs locally, any LLM provider."
 homepage: ""
-stars: 882
-stars_per_day: 176
-forks: 87
-open_issues: 4
+stars: 951
+stars_per_day: 159
+forks: 92
+open_issues: 6
 created: 2026-05-31
 pushed_at: 2026-06-05
 first_seen: 2026-06-04
@@ -30,8 +30,8 @@ use_case: "為 Hermes Agent 提供持久記憶的操作系統，具備自動化�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-06-13"
+appearances: 4
+next_review: "2026-06-14"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 64
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-04"
-star_history: "2026-06-04:756,2026-06-04:757,2026-06-05:828,2026-06-05:828,2026-06-06:882,2026-06-06:882"
+star_history: "2026-06-04:756,2026-06-04:757,2026-06-05:828,2026-06-05:828,2026-06-06:882,2026-06-06:882,2026-06-07:951"
 tags:
   - github
   - "category/ai_ml"
@@ -842,6 +842,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-07|2026-06-07]] — 再次上榜，951 stars
 - [[2026-06-06|2026-06-06]] — 再次上榜，882 stars
 - [[2026-06-05|2026-06-05]] — 再次上榜，828 stars
 - [[2026-06-04|2026-06-04]] — 首次收錄，756 stars

@@ -7,8 +7,8 @@ language: Rust
 license: N/A
 description: ""
 homepage: ""
-stars: 532
-stars_per_day: 106
+stars: 548
+stars_per_day: 91
 forks: 9
 open_issues: 0
 created: 2026-05-31
@@ -30,8 +30,8 @@ use_case: "提供更好的 git worktrees 替代方案，透過複製寫入技術
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-13"
+appearances: 2
+next_review: "2026-06-14"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-06"
-star_history: "2026-06-06:532,2026-06-06:532"
+star_history: "2026-06-06:532,2026-06-06:532,2026-06-07:548"
 tags:
   - github
   - "category/開發工具"
@@ -891,4 +891,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-07|2026-06-07]] — 再次上榜，548 stars
 - [[2026-06-06|2026-06-06]] — 首次收錄，532 stars

@@ -2094,10 +2094,10 @@
   },
   "pewdiepie-archdaemon/odysseus": {
     "first_seen": "2026-06-01",
-    "last_seen": "2026-06-06",
-    "times_seen": 6,
+    "last_seen": "2026-06-07",
+    "times_seen": 7,
     "stars_first": 8074,
-    "stars_last": 55778
+    "stars_last": 59117
   },
   "GordenSun/GordenPPTSkill": {
     "first_seen": "2026-06-01",
@@ -2108,10 +2108,10 @@
   },
   "asz798838958/aBaiAutoplus": {
     "first_seen": "2026-06-02",
-    "last_seen": "2026-06-06",
-    "times_seen": 5,
+    "last_seen": "2026-06-07",
+    "times_seen": 6,
     "stars_first": 652,
-    "stars_last": 1533
+    "stars_last": 1558
   },
   "Gloridust/WechatOnCloud": {
     "first_seen": "2026-06-03",
@@ -2122,10 +2122,10 @@
   },
   "b-nnett/goose": {
     "first_seen": "2026-06-03",
-    "last_seen": "2026-06-06",
-    "times_seen": 4,
+    "last_seen": "2026-06-07",
+    "times_seen": 5,
     "stars_first": 752,
-    "stars_last": 2120
+    "stars_last": 2168
   },
   "zgwl/chinese-buy-us-stock-guide": {
     "first_seen": "2026-06-04",
@@ -2136,24 +2136,24 @@
   },
   "cpaczek/skylight": {
     "first_seen": "2026-06-04",
-    "last_seen": "2026-06-06",
-    "times_seen": 3,
+    "last_seen": "2026-06-07",
+    "times_seen": 4,
     "stars_first": 795,
-    "stars_last": 1680
+    "stars_last": 2083
   },
   "ClaudioDrews/memory-os": {
     "first_seen": "2026-06-04",
-    "last_seen": "2026-06-06",
-    "times_seen": 3,
+    "last_seen": "2026-06-07",
+    "times_seen": 4,
     "stars_first": 756,
-    "stars_last": 882
+    "stars_last": 951
   },
   "qiuqiubuchongle-cloud/chokepoint-atlas": {
     "first_seen": "2026-06-05",
-    "last_seen": "2026-06-06",
-    "times_seen": 2,
+    "last_seen": "2026-06-07",
+    "times_seen": 3,
     "stars_first": 559,
-    "stars_last": 582
+    "stars_last": 590
   },
   "jdevalk/specification.website": {
     "first_seen": "2026-06-05",
@@ -2178,16 +2178,30 @@
   },
   "jd-opensource/JoyAI-Echo": {
     "first_seen": "2026-06-06",
-    "last_seen": "2026-06-06",
-    "times_seen": 1,
+    "last_seen": "2026-06-07",
+    "times_seen": 2,
     "stars_first": 572,
-    "stars_last": 572
+    "stars_last": 716
   },
   "anomalyco/rift": {
     "first_seen": "2026-06-06",
-    "last_seen": "2026-06-06",
-    "times_seen": 1,
+    "last_seen": "2026-06-07",
+    "times_seen": 2,
     "stars_first": 532,
-    "stars_last": 532
+    "stars_last": 548
+  },
+  "VAST-AI-Research/TripoSplat": {
+    "first_seen": "2026-06-07",
+    "last_seen": "2026-06-07",
+    "times_seen": 1,
+    "stars_first": 494,
+    "stars_last": 494
+  },
+  "tastyeffectco/sandboxes": {
+    "first_seen": "2026-06-07",
+    "last_seen": "2026-06-07",
+    "times_seen": 1,
+    "stars_first": 471,
+    "stars_last": 471
   }
 }
