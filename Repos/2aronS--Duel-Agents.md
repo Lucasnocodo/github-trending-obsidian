@@ -8,7 +8,7 @@ license: MIT
 description: "CLI, SDK, and IDE plugins for Duel Agents"
 homepage: "https://duelagents.com"
 stars: 739
-stars_per_day: 82
+stars_per_day: 74
 forks: 19
 open_issues: 1
 created: 2026-05-28
@@ -19,14 +19,14 @@ month: "2026-05"
 category: "開發工具"
 subcategory: "CLI 工具"
 release_tag: "v0.1.0"
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-31
-use_case: "提供 CLI、SDK 和 IDE 插件，讓開發者能夠高效整合多個 LLM 模型並選擇最佳答案。"
+use_case: "提供 CLI、SDK 和 IDE 插件，讓開發者能夠輕鬆整合多個 AI 模型並選擇最佳答案。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,15 +38,16 @@ issue_close_rate: 0
 repo_size_kb: 73
 readme_length: 5576
 bus_factor: 1
-last_release_days: 10
+last_release_days: 11
 release_cadence: "monthly"
 verdict: ""
 ring_history: "assess@2026-05-31"
-star_history: "2026-05-31:459,2026-05-31:460,2026-06-01:574,2026-06-02:639,2026-06-02:639,2026-06-03:682,2026-06-04:701,2026-06-05:713,2026-06-06:729,2026-06-07:739"
+star_history: "2026-05-31:459,2026-05-31:460,2026-06-01:574,2026-06-02:639,2026-06-02:639,2026-06-03:682,2026-06-04:701,2026-06-05:713,2026-06-06:729,2026-06-07:739,2026-06-08:739"
 tags:
   - github
   - "category/開發工具"
   - "lang/typescript"
+  - easy_install
   - "topic/ai_agents"
   - "topic/anthropic"
   - "topic/claude_code"
@@ -55,12 +56,12 @@ tags:
 aliases:
   - "Duel-Agents"
   - "2aronS/Duel-Agents"
-  - "提供 CLI、SDK 和 IDE 插件，讓開發者能夠高效整合多個 LLM 模型並選擇最佳答案。"
+  - "提供 CLI、SDK 和 IDE 插件，讓開發者能夠輕鬆整合多個 AI 模型並選擇最佳答案。"
 ---
 
 # Duel-Agents
 
-**739** stars · **82** stars/天 · 建立 9 天前 · TypeScript · MIT
+**739** stars · **74** stars/天 · 建立 10 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/2aronS--Duel-Agents");
@@ -73,18 +74,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `v0.1.0`
+`個人專案` `v0.1.0` `easy-install`
 
 `ai-agents` `anthropic` `claude-code` `cli` `cursor` `duel-agents` `llm` `npm` `openai-compatible` `openclaw` `sdk` `typescript`
 
 > [!summary] 一句話摘要
-> 提供 CLI、SDK 和 IDE 插件，讓開發者能夠高效整合多個 LLM 模型並選擇最佳答案。
+> 提供 CLI、SDK 和 IDE 插件，讓開發者能夠輕鬆整合多個 AI 模型並選擇最佳答案。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (82 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要整合多個 LLM 模型並進行成本效益分析的開發者和研究人員。
-> **一句話重點** Duel Agents 的最大優勢在於其多模型整合能力，讓開發者能夠更靈活地選擇最佳的 LLM 解決方案。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (74 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 希望整合多個 AI 模型但不想處理複雜 API 的開發者。
+> **一句話重點** Duel Agents 讓開發者能夠輕鬆整合多個 AI 模型，並自動選擇最佳回應，顯著降低開發成本。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -107,25 +108,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，能快速獲得多模型整合的能力，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，3 小時整合，得到簡化的多模型整合，值得嘗試。
 
 > [!abstract] 核心創新
-> 能夠自動路由 LLM 請求並選擇最具成本效益的回應。
+> Duel Agents 提供了一個 IDE 原生的路由層，能夠自動選擇成本最低的 AI 模型回應。
 
 ## 專案簡介
 
-Duel Agents 是一個整合多個大型語言模型（LLM）的工具，通過 CLI 和 SDK 讓開發者能夠輕鬆使用和擴展。用戶需要先從官方網站獲取 API 金鑰，然後可以使用 `npx @duel-agents/install all` 指令安裝所有必要的工具，並透過 `npx @duel-agents/install doctor` 來驗證安裝是否成功。這個工具的核心賣點在於它能夠自動路由 LLM 請求，並選擇最具成本效益的回應，這對於需要多模型比較的應用場景特別有用。技術上，它使用 TypeScript 和 Python 開發，並依賴 Node.js 20 以上的環境，這使得它在現代 JavaScript 生態中具有良好的兼容性。與其他 LLM 整合工具相比，如 0xGF/boneyard 和 432539/gpt2api，Duel Agents 的獨特之處在於它能夠同時支持多個模型的請求，並且提供了針對不同工具的安裝指令，讓開發者能夠快速上手。實際使用中，開發者可能會遇到 API 金鑰格式錯誤或連接問題，這些都可以通過官方文檔中的故障排除指導來解決。這個專案目前處於 v0.1.0 的早期階段，適合有意於探索多模型整合的開發者，未來可能會進一步擴展功能和穩定性。
+Duel Agents 是一個集成多個 AI 模型的工具，能夠根據成本效益選擇最佳的回應。用戶需要首先從官方網站獲取 API 金鑰，然後通過 CLI 安裝所需的工具，如 Claude Code 或 Cursor。這個工具的核心在於它的路由層，所有的 LLM 請求都經由 `https://duelagents.com/v1` 進行，這樣的設計使得開發者無需直接處理不同模型的 API，簡化了整合過程。使用者只需設置環境變數 `DUEL_API_KEY`，然後可以使用 `npx @duel-agents/install` 指令安裝所需的插件，並進行驗證。這個工具的賣點在於其能夠自動選擇最便宜的模型來處理請求，從而降低成本。
 
-**技術棧**：`TypeScript` · `Python` · `Node.js 20+`
+技術上，Duel Agents 使用 TypeScript 和 Python，並且與 Node.js 20 和 22 兼容，這意味著它能夠在現代 JavaScript 環境中運行，並且可以輕鬆集成到現有的開發流程中。相較於其他工具，如 `0x0funky/agent-sprite-forge` 和 `0xGF/boneyard`，Duel Agents 提供了更為直觀的 CLI 和 SDK，讓開發者能夠更快上手。實際使用中，Duel Agents 的效能依賴於其後端的 API 服務，若服務不穩定，則可能影響整體的回應時間。這個專案目前處於早期階段，僅有 1 個開放的 Issue，顯示出社群活躍度尚可，但未來的發展仍需觀察。對於小型團隊或個人開發者來說，這是一個值得嘗試的工具，但在大規模應用前需要進一步測試其穩定性和效能。
+
+**技術棧**：`TypeScript` · `Python` · `Node.js 20/22`
 
 ## 重點功能
 
-- 多模型路由 — 自動選擇成本最低的模型回應，通過 `https://duelagents.com/v1` 進行請求。
-- CLI 安裝工具 — 使用 `npx @duel-agents/install` 指令安裝各種工具，簡化整合過程。
-- TypeScript SDK — 提供 `@duel-agents/sdk`，方便開發者在應用中調用 LLM。
-- 環境變數配置 — 透過 `.env` 文件管理 API 金鑰和模型設置。
-- 故障排除指導 — 提供常見問題的解決方案，幫助用戶快速定位問題。
+- 多模型路由 — 根據成本選擇最佳模型，簡化開發流程。
+- CLI 安裝 — 使用 `npx @duel-agents/install` 指令安裝所需工具，快速上手。
+- TypeScript SDK — 提供 TypeScript 客戶端，方便開發者在應用中使用。
+- 環境變數配置 — 只需設置 `DUEL_API_KEY` 環境變數即可使用。
+- 與主流框架兼容 — 支援 LangChain 和 LlamaIndex 等 Python 框架的整合。
 
 ## 快速開始
 
@@ -146,62 +149,62 @@ npx @duel-agents/install doctor
 
 ```ts
 {
-  "前置條件": "需要安裝 @duel-agents/sdk 並設定 API 金鑰。",
-  "指令": "const duel = new DuelClient({ apiKey: process.env.DUEL_API_KEY! });\nconst chat = await duel.chat.completions.create({ model: 'duel-auto', messages: [{ role: 'user', content: 'Explain concurrent agents briefly.' }] });",
-  "預期輸出": "返回模型生成的回應，解釋並描述並發代理的概念。"
+  "前置條件": "需要設置 DUEL_API_KEY 環境變數。",
+  "程式碼": "import { DuelClient } from \"@duel-agents/sdk\";\n\nconst duel = new DuelClient({\n  apiKey: process.env.DUEL_API_KEY!, // required (from dashboard)\n});\n\nconst chat = await duel.chat.completions.create({\n  model: \"duel-auto\",\n  messages: [{ role: \"user\", content: \"Explain concurrent agents briefly.\" }],\n});",
+  "預期輸出": "返回模型對於問題的回應。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 9 天內累積 739 stars（82/天），forks 19（2.6%），顯示出一定的社群關注度。作者 2aronS 先前在 AI 相關技術上有過多次貢獻，這個專案解決了多模型整合的需求，特別是在需要成本效益考量的情境下。雖然目前的使用者反饋還在初步階段，但這種整合能力在開發者中引起了興趣。社群的活躍度相對較低，只有 1 個開放問題，顯示出專案的穩定性尚待觀察。
+> 建立 10 天就累積 739 stars（74/天），forks 19（2.6%），顯示出一定的關注度。作者 2aronS 是該專案的主要貢獻者，專注於提供多模型整合的解決方案，解決了開發者在使用不同 LLM 時的繁瑣流程。這個專案的出現正好填補了市場上對於簡化 AI 模型整合的需求，特別是在使用 OpenAI 和 Anthropic 模型時。社群的反應和討論也在推動其成長，顯示出這個工具的潛力。
 
 ## 適合誰使用
 
-**目標受眾**：需要整合多個 LLM 模型並進行成本效益分析的開發者和研究人員。
+**目標受眾**：希望整合多個 AI 模型但不想處理複雜 API 的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來整合多個 LLM 模型進行文本生成，因為這樣可以自動選擇最佳回應，節省時間和成本。
-> - AI 研究人員用它來比較不同模型的表現，因為它能夠快速切換模型並獲得即時反饋。
-> - DevOps 工程師用它來自動化 CI/CD 流程中的 LLM 測試，因為它的 CLI 工具能輕鬆整合到現有的工作流中。
+> - 後端工程師用它來整合多個 LLM 模型，因為可以自動選擇成本最低的模型處理請求，降低開發成本。
+> - 資料科學家用它來快速測試不同模型的表現，因為可以輕鬆切換和比較多個模型的回應。
+> - 獨立開發者用它來構建 AI 驅動的應用，因為不需要深入了解每個模型的 API，簡化了開發流程。
 
 ## 架構分析
 
-Duel Agents 採用 monorepo 架構，將 CLI、SDK 和插件整合在同一個專案中，這樣的設計使得不同工具之間的依賴管理和版本控制變得更加簡單。資料流方面，所有 LLM 請求都通過 `https://duelagents.com/v1` 進行路由，並使用 API 金鑰進行身份驗證。這樣的設計選擇使得開發者不需要直接處理不同模型的 API，而是通過統一的接口進行交互。這樣的整合雖然提高了使用便利性，但也可能導致在某些情況下的性能瓶頸，特別是在高並發請求的情境下。擴展性方面，這個架構能夠輕鬆添加新的模型支持，但需要注意 API 的變更可能會影響到現有的整合。
+Duel Agents 採用 monorepo 架構，將不同的功能模組分為多個包，這樣的設計使得每個模組可以獨立開發和維護。核心模組 `@duel-agents/core` 負責驗證和連接檢查，`@duel-agents/install` 提供 CLI 安裝功能，而 `@duel-agents/sdk` 則是 TypeScript 客戶端，這樣的分離使得整體架構更為清晰。資料流方面，所有請求都經由 `https://duelagents.com/v1` 路由，這樣的設計確保了 API 的一致性和安全性。選擇 Node.js 作為執行環境，因為它對於 I/O 密集型應用有良好的性能表現，但這也意味著對於 CPU 密集型任務可能會有性能瓶頸。整體而言，這個架構在可擴展性和維護性上都有不錯的表現，但在大規模使用時，可能需要考慮 API 服務的穩定性和延遲問題。
 
 ## 技術深入分析
 
-Duel Agents 的核心技術機制在於其 API 路由能力，能夠將請求發送到不同的 LLM 模型並選擇最佳回應。這個過程中，使用了 TypeScript 和 Node.js 來構建 CLI 和 SDK，確保了良好的性能和可擴展性。根據 README，這個工具能夠處理高並發請求，但具體的性能數據尚未提供。設計上選擇了 monorepo 架構，這樣能夠簡化依賴管理，但可能在大型專案中導致管理複雜度上升。從技術風險評估來看，API 的穩定性和性能可能會隨著使用量的增加而受到影響，特別是在高負載情況下。整合方面，這個工具能夠與主流的 JavaScript 生態系統無縫對接，並且支援與 Python 的主要框架（如 LangChain 和 LlamaIndex）的整合，這使得它在多種開發環境中都能夠輕鬆使用。
+Duel Agents 的核心技術機制在於其多模型路由系統，使用 TypeScript 和 Python 開發，並通過 Node.js 環境運行。這個系統能夠根據成本自動選擇最佳的 AI 模型，從而提高效率。效能方面，Duel Agents 依賴於其後端 API 的穩定性，若服務不穩定，則可能影響整體回應時間。設計上，選擇 Node.js 是因為其對於 I/O 密集型應用的良好支持，但這也意味著在處理 CPU 密集型任務時可能會遇到瓶頸。技術選型上，Duel Agents 的依賴樹相對簡單，主要集中在核心功能模組上，這降低了維護的複雜度。技術風險方面，若未來 API 服務不穩定，將直接影響到整體的使用體驗。整合方面，Duel Agents 可以輕鬆與主流的開發框架（如 React、Express）進行整合，並且提供了良好的 CI/CD 支援，讓團隊能夠快速部署和測試。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用範例，讓新手能夠快速上手。安裝過程相對順暢，但需要注意 API 金鑰的獲取。文件中有針對常見問題的故障排除指導，對於新手非常友好。整體來說，花 30 分鐘能夠順利跑起來。
+> README 文件清晰且提供了詳細的安裝步驟和範例，讓新手能夠快速上手。安裝過程相對順暢，只需設置環境變數和運行幾個指令即可。整體上，這個專案的上手難度較低，適合新手和有經驗的開發者。文件目前僅提供英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 多模型整合 — 能夠同時支持多個 LLM 模型的請求，提升靈活性。
-> - CLI 工具友好 — 提供簡單的命令行安裝和配置流程，降低上手難度。
-> - 活躍的開發 — 目前正在不斷更新和增強功能，未來潛力大。
+> - 簡化多模型整合過程，降低開發成本。
+> - 提供 CLI 和 SDK，方便開發者使用。
+> - 支持主流的 Python 框架，擴展性強。
 
 > [!danger] 缺點
-> - 穩定性未知 — 目前處於早期階段，功能和性能可能不穩定。
-> - 依賴於 API 金鑰 — 使用者必須獲取並管理 API 金鑰，增加了一定的門檻。
-> - 社群活躍度低 — 目前只有 1 個開放問題，社群支持可能不足。
+> - 目前社群活躍度尚可，未來發展需觀察。
+> - 需要有效的 API 金鑰，限制使用範圍。
+> - 僅支持特定版本的 Node.js，限制了兼容性。
 
 > [!warning] 注意事項
-> - 僅支援 Node.js 20 以上版本。
-> - 目前功能仍在開發中，穩定性和性能可能會有所變化。
-> - 需要有效的 Duel API 金鑰，無法使用原始的 Anthropic 或 OpenAI 金鑰。
+> - 僅支援 Node.js 20 和 22。
+> - 需要有效的 Duel API 金鑰，無法使用原生的 OpenAI 或 Anthropic 金鑰。
+> - 目前僅有 1 個開放的 Issue，顯示出社群活躍度尚可，但未來的發展仍需觀察。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 LLM 整合，但主要專注於單一模型的使用，缺乏多模型路由的能力。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | 針對 GPT-2 模型的專用 API，無法支持多模型的比較和選擇。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的多模型整合，但缺乏直觀的 CLI 和 SDK，可能需要更多的手動配置。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於特定模型的整合，而 Duel Agents 提供更廣泛的模型選擇和自動選擇功能。 |
 
 ## 替代方案決策
 
@@ -209,16 +212,16 @@ Duel Agents 的核心技術機制在於其 API 路由能力，能夠將請求發
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於單一模型的使用，不支持多模型路由。 | 如果你的專案只需要使用單一 LLM 模型，並且不需要成本效益分析。 | low — 只需調整 API 調用即可。 |
-| [432539/gpt2api](https://github.com/432539/gpt2api) | 專為 GPT-2 模型設計，無法支持多模型的比較和選擇。 | 如果你的應用僅依賴 GPT-2，並且不需要其他模型的支持。 | low — 只需修改模型調用的 API。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供多模型整合，但缺乏直觀的 CLI 和 SDK，使用上較為繁瑣。 | 如果需要更靈活的模型選擇和配置，且不介意較高的學習成本。 | medium，因為需要重新配置和適應不同的 API 接口。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於特定模型的整合，功能較為單一。 | 如果只需要與特定模型進行整合，且不需要多模型路由功能。 | low，因為功能較為簡單，遷移成本低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **Duel-Agents** | **boneyard** | **gpt2api** |
+> | 維度 | **Duel-Agents** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於單一模型的使用，不支持多模型路由。 | 專為 GPT-2 模型設計，無法支持多模型的比較和選擇。 |
-> | 遷移成本 | - | low — 只需調整 API 調用即可。 | low — 只需修改模型調用的 API。 |
-> | 適用場景 | 主要場景 | 如果你的專案只需要使用單一 LLM 模型，並且不需要成本效益 | 如果你的應用僅依賴 GPT-2，並且不需要其他模型的支持。 |
+> | 技術路線 | 本專案 | 提供多模型整合，但缺乏直觀的 CLI 和 SDK，使用上較為繁瑣。 | 專注於特定模型的整合，功能較為單一。 |
+> | 遷移成本 | - | medium，因為需要重新配置和適應不同的 API 接口。 | low，因為功能較為簡單，遷移成本低。 |
+> | 適用場景 | 主要場景 | 如果需要更靈活的模型選擇和配置，且不介意較高的學習成本。 | 如果只需要與特定模型進行整合，且不需要多模型路由功能。 |
 
 ## 成熟度評估
 
@@ -229,44 +232,44 @@ Duel Agents 的核心技術機制在於其 API 路由能力，能夠將請求發
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合探索多模型整合的開發者，但不建議在生產環境中使用。
+> 適合個人或小型專案試用，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** API 金鑰格式錯誤，導致無法連接
-  - 解法：確保金鑰格式為 'duel_' + 8 字元 + '_' + 32 字元。
-- [MEDIUM] 安裝過程中出現技能複製失敗
-  - 解法：重新運行 `npm run build`，或重新安裝 `@duel-agents/install`。
-- [MEDIUM] OpenClaw 無法啟動
-  - 解法：運行 `openclaw config validate` 來檢查配置。
+- **[HIGH]** 安裝後 OpenClaw 無法啟動
+  - 解法：運行 `openclaw config validate` 以檢查配置
+- [MEDIUM] Cursor 仍使用 OpenAI 模型
+  - 解法：確認模型覆蓋 URL 和 API 金鑰設置正確
+- **[HIGH]** API 金鑰格式錯誤
+  - 解法：確保金鑰格式為 `duel_` + 8 字元 + `_` + 32 字元
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠靈活整合多個 LLM，提升開發效率。 |
-| 大型企業的生產環境 | 不適合 | 目前處於 alpha 階段，穩定性無法保證。 |
-| AI 研究團隊進行模型比較 | 適合 | 提供多模型路由功能，方便進行性能評估。 |
-| 個人開發者的實驗性專案 | 非常適合 | 簡單的安裝和使用流程，適合快速迭代。 |
+| 小型團隊開發 AI 應用 | 非常適合 | 簡化多模型整合，降低開發成本。 |
+| 大型企業需要穩定的 AI 解決方案 | 不適合 | 目前處於 alpha 階段，穩定性尚需觀察。 |
+| 獨立開發者測試不同 AI 模型 | 適合 | 快速上手且支持多種模型。 |
+| 需要高效能的 AI 服務 | 普通 | 依賴後端 API 的穩定性，可能影響效能。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
+| 學習時間 | ~2 小時 |
 | 整合時間 | ~3 小時 |
-| 維護負擔 | medium |
+| 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，能快速獲得多模型整合的能力，值得一試。
+> 花 2 小時學習，3 小時整合，得到簡化的多模型整合，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限操作，僅需管理 API 金鑰。依賴鏈的信任程度尚可，但需注意 API 金鑰的安全性。
+> 低風險：不需要高權限，僅需訪問 API 金鑰，且不存取敏感資料。依賴鏈的信任程度尚可，需注意 API 服務的安全性。
 
 ## 健康度儀表板
 
@@ -379,7 +382,7 @@ Duel Agents 的核心技術機制在於其 API 路由能力，能夠將請求發
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度相對較低，目前只有 1 個開放問題。
+**社群活躍度**：社群活躍度尚可，只有 1 個開放的 Issue。
 **連結**：[文件](https://duelagents.com)
 
 ## 開發動態
@@ -599,9 +602,9 @@ Duel Agents 的核心技術機制在於其 API 路由能力，能夠將請求發
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[API 設計]] · [[自動化]]
+相關概念：[[API 設計]] · [[自動化測試]] · [[機器學習]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[GitFrog1111--badclaude|GitFrog1111/badclaude]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[HKUDS--CLI-Anything|HKUDS/CLI-Anything]]
 
 [GitHub](https://github.com/2aronS/Duel-Agents) · [官方網站](https://duelagents.com)
 
@@ -643,7 +646,7 @@ Duel Agents 的核心技術機制在於其 API 路由能力，能夠將請求發
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["多模態","API 設計","自動化"];
+> const concepts = ["API 設計","自動化測試","機器學習"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "2aronS--Duel-Agents" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

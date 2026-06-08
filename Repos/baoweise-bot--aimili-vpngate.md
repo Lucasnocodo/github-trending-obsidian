@@ -7,17 +7,17 @@ language: Python
 license: NOASSERTION
 description: "aimili-vpngate是一个借助vpngate.net让Linux用干净ip出站的代理工具。"
 homepage: ""
-stars: 911
-stars_per_day: 76
-forks: 319
+stars: 928
+stars_per_day: 71
+forks: 326
 open_issues: 12
 created: 2026-05-25
-pushed_at: 2026-06-05
+pushed_at: 2026-06-07
 first_seen: 2026-05-30
 week: "2026-W22"
 month: "2026-05"
 category: "基礎設施"
-subcategory: "VPN 工具"
+subcategory: "VPN 代理"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-30
-use_case: "透過 vpngate.net 提供乾淨 IP 的 Linux 代理工具。"
+use_case: "提供基於 VPNGate 的高性能代理服務，讓 Linux 用戶能夠使用乾淨的 IP 出站。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-06-08"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 0
-repo_size_kb: 318
+repo_size_kb: 446
 readme_length: 7844
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-30"
-star_history: "2026-05-30:401,2026-05-30:413,2026-05-31:512,2026-05-31:512,2026-06-01:655,2026-06-01:656,2026-06-02:702,2026-06-03:742,2026-06-04:798,2026-06-05:832,2026-06-06:870,2026-06-07:911"
+star_history: "2026-05-30:401,2026-05-30:413,2026-05-31:512,2026-05-31:512,2026-06-01:655,2026-06-01:656,2026-06-02:702,2026-06-03:742,2026-06-04:798,2026-06-05:832,2026-06-06:870,2026-06-07:911,2026-06-08:928"
 tags:
   - github
   - "category/基礎設施"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "aimili-vpngate"
   - "baoweise-bot/aimili-vpngate"
-  - "透過 vpngate.net 提供乾淨 IP 的 Linux 代理工具。"
+  - "提供基於 VPNGate 的高性能代理服務，讓 Linux 用戶能夠使用乾淨的 IP 出站。"
 ---
 
 # aimili-vpngate
 
-**911** stars · **76** stars/天 · 建立 12 天前 · Python · NOASSERTION
+**928** stars · **71** stars/天 · 建立 13 天前 · Python · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/baoweise-bot--aimili-vpngate");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 透過 vpngate.net 提供乾淨 IP 的 Linux 代理工具。
+> 提供基於 VPNGate 的高性能代理服務，讓 Linux 用戶能夠使用乾淨的 IP 出站。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (76 stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 需要在 Linux 環境中快速部署 VPN 代理的系統管理員或開發者。
-> **一句話重點** AimiliVPN 的設計使得 VPN 使用變得簡單，特別是對於不熟悉技術的用戶。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (71 stars/day)
+> **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
+> **適合** 需要在 Linux VPS 上快速部署高性能代理服務的開發者或系統管理員。
+> **一句話重點** AimiliVPN 的設計讓 VPN 使用變得前所未有的簡單，特別適合新手和需要快速部署的用戶。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/baoweise-bot--aimili-vpngate");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "VPN 工具" && p.file.name !== "baoweise-bot--aimili-vpngate" && p.status !== "archived")
+>     .where(p => p.subcategory === "VPN 代理" && p.file.name !== "baoweise-bot--aimili-vpngate" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,36 +96,36 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 VPN 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 VPN 代理 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到穩定的 VPN 代理效果，值得嘗試。
+> **結論** 花 2 小時學習和 1 小時整合，得到一個簡單易用的代理工具，值得嘗試。
 
 > [!abstract] 核心創新
-> AimiliVPN 是一款基於 VPNGate 開放協議的高性能、零依賴 VPN 代理網關。
+> 這個專案提供了一個零依賴的高性能 VPN 代理解決方案，簡化了用戶的配置流程。
 
 ## 專案簡介
 
-AimiliVPN 是一款基於 VPNGate 開放協議的高性能 VPN 代理工具，完全使用 Python 標準庫編寫。它的核心流程是通過自動化測試從 VPNGate 獲取可用節點，並提供 HTTP/SOCKS5 代理服務。用戶在 Linux VPS 上執行簡單的安裝命令後，便可透過 Web 管理界面進行節點選擇和連接模式設定。其「智能自動配置」功能能在連接失效時自動切換至其他健康節點，這樣的設計大幅提升了使用的便捷性和穩定性。技術上，AimiliVPN 使用多線程並發測試來篩選節點，這使得延遲最低的節點能夠快速被選中，並且支持多種路由模式。
+AimiliVPN 是一款基於 VPNGate 的高性能、零依賴 VPN 代理工具，完全用 Python 標準庫編寫。用戶在 Linux VPS 上執行簡單的安裝命令後，可以快速部署一個代理服務，並透過網頁管理介面進行操作。用戶可以選擇不同的出站路由模式，包括智能自動配置、固定國家或固定 IP，並且系統會自動測試和選擇延遲最低的節點。這個工具的賣點在於其簡單易用的界面和高效的節點管理。技術上，AimiliVPN 使用了多線程來實現節點的快速測試與切換，並且支持 SOCKS5 和 HTTP 協議，默認綁定在本地回環地址以確保安全。
 
-與其他類似工具相比，如 Shadowsocks 和 OpenVPN，AimiliVPN 的優勢在於其零依賴安裝和簡易的管理界面，特別適合對於不熟悉命令行的用戶。使用者可透過簡單的 Python 或 Shell 指令來設定代理，這使得其在開發環境中的整合變得非常容易。儘管目前存在一些開放的問題，如 IP 數量的多樣性和 Docker 支援，但社群活躍度高，且有持續的更新和維護。整體來看，AimiliVPN 是一個適合需要穩定 VPN 連接的開發者和普通用戶的工具，尤其是在需要快速部署和簡單管理的情境下。
+與其他類似工具相比，如 Shadowsocks 或 V2Ray，AimiliVPN 的優勢在於其無需額外配置和依賴，並且提供了更直觀的管理界面。使用者可以輕鬆地在 Python 或 Shell 環境中設置代理，並且能夠即時檢查代理的連通性和性能。這個工具適合需要快速部署代理服務的開發者或需要隱私保護的用戶，但在使用過程中，若未正確設置防火牆或 DNS，可能會遇到連接問題。整體而言，AimiliVPN 是一個穩定且易於使用的選擇，特別適合小型團隊或個人使用。
 
-**技術棧**：`Python 3` · `Shell`
+**技術棧**：`Python 3.x`
 
 ## 重點功能
 
-- 一鍵安裝 — 在 Debian/Ubuntu/CentOS/Alpine 等 Linux 系統上以 root 用戶執行簡單命令進行安裝。
-- 智能自動配置 — 自動切換至健康節點，無需手動干預，提升連接穩定性。
-- 多路由模式 — 支持智能自動、固定國家和固定 IP 節點的選擇，滿足不同需求。
-- 內建 Web 管理界面 — 提供美觀的管理介面，方便用戶監控和管理 VPN 連接。
-- 實時日誌追蹤 — 支持分類過濾和實時滾動查看日誌，便於故障排查。
+- 一鍵安裝 — 支持 Debian/Ubuntu/CentOS/Alpine 等 Linux 系統的快速部署。
+- 多路由模式 — 提供智能自動配置、固定國家和固定 IP 的選擇。
+- 內建管理界面 — 直觀的網頁管理介面，方便用戶操作和監控。
+- 多線程節點測試 — 自動測試和選擇延遲最低的 VPNGate 節點。
+- 雙協議支持 — 同時支持 SOCKS5 和 HTTP 協議，靈活應用於不同場景。
 
 ## 快速開始
 
-1. 安裝 AimiliVPN
+1. 在 Linux VPS 上安裝 AimiliVPN
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/baoweise-bot/aimili-vpngate/main/install.sh)
 ```
@@ -133,71 +133,76 @@ bash <(curl -s https://raw.githubusercontent.com/baoweise-bot/aimili-vpngate/mai
 ```bash
 在瀏覽器中打開 http://your_vps_ip:8787
 ```
-3. 配置代理
+3. 設置代理
 ```bash
-export http_proxy="http://127.0.0.1:7928" && export https_proxy="http://127.0.0.1:7928"
+export http_proxy='http://127.0.0.1:7928' && export https_proxy='http://127.0.0.1:7928'
 ```
 
 ## 程式碼範例
 
 ```python
-{
-  "前置條件": "已安裝 AimiliVPN 並啟動代理服務。",
-  "指令": "import requests\nproxies = {\n    \"http\": \"http://127.0.0.1:7928\",\n    \"https\": \"http://127.0.0.1:7928\",\n}\nresponse = requests.get(\"https://www.google.com\", proxies=proxies)",
-  "預期輸出": "返回 Google 的首頁內容。"
-}
+[
+  "# Python 使用代理的範例",
+  "import requests",
+  "proxies = {",
+  "    'http': 'http://127.0.0.1:7928',",
+  "    'https': 'http://127.0.0.1:7928',",
+  "}",
+  "response = requests.get('https://www.google.com', proxies=proxies)",
+  "# 預期輸出：返回 Google 的首頁內容"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 12 天內累積 911 stars（76 stars/天），forks 319（35.0%），顯示出強烈的社群興趣。作者 baoweise-bot 似乎專注於開發簡單易用的網路工具，這個專案解決了許多用戶在使用 VPN 時的複雜性問題，特別是對於 Linux 環境的友好性。最近的推廣活動和社群討論可能也促進了其快速增長。
+> 建立 13 天就累積 928 stars（71/天），forks 326（35.1%），這顯示出相對高的使用與修改意願。作者 baoweise-bot 在開源社群中活躍，專注於提供簡單易用的 VPN 解決方案。這個專案解決了許多用戶在使用 VPN 時面臨的複雜配置問題，並且提供了一個直觀的管理界面。近期的推廣活動和社群反饋也促進了其快速增長。整體來看，這個工具的設計滿足了對簡單且高效 VPN 解決方案的需求，特別是在 Linux 環境中。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Linux 環境中快速部署 VPN 代理的系統管理員或開發者。
+**目標受眾**：需要在 Linux VPS 上快速部署高性能代理服務的開發者或系統管理員。
 
 > [!example] 使用場景
-> - 系統管理員用它來快速部署 VPN 代理，因為只需簡單的命令即可在多種 Linux 系統上安裝。
-> - 開發者用它來在本地測試網路應用，因為可以輕鬆配置代理並避免 IP 被封鎖。
-> - 普通用戶用它來訪問被限制的網站，因為其智能節點切換功能能自動選擇最佳連接。
+> - 系統管理員用它來快速部署一個安全的代理服務，因為其一鍵安裝和簡單配置能節省大量時間。
+> - 開發者用它來測試 API 請求的不同地區響應，因為它可以輕鬆切換不同的出站 IP。
+> - 隱私意識強的用戶用它來保護上網隱私，因為它提供了多種出站路由模式和即時性能檢測。
 
 ## 架構分析
 
-AimiliVPN 採用單一 Python 應用架構，無需外部依賴，這使得安裝和運行變得非常簡單。其核心功能是通過 VPNGate 的 API 獲取可用節點，並使用多線程技術進行延遲測試，以選擇最佳節點。資料流方面，所有的流量都經過本地的 HTTP/SOCKS5 代理，這樣的設計避免了外部掃描和濫用的風險。選擇 Python 使得開發和維護成本低，但可能在性能上不如 C/C++ 實現的工具。整體架構的擴展性良好，但在高並發的情況下可能會出現性能瓶頸，特別是在節點數量增多時。
+AimiliVPN 採用單一 Python 應用架構，所有功能均在一個應用中實現，這樣的設計使得部署和維護變得簡單。資料流方面，使用者的請求經過內建的 HTTP/SOCKS5 代理，並通過多線程技術實現對 VPNGate 節點的快速測試和切換。這種架構的優勢在於簡化了用戶的操作流程，但也意味著在高流量情況下可能會出現性能瓶頸。整體而言，這種設計適合小型到中型的使用場景，但在大規模使用時可能需要考慮擴展性問題。
 
 ## 技術深入分析
 
-AimiliVPN 的核心技術在於使用 Python 標準庫來實現 VPN 代理功能，這使得其安裝和運行都非常簡單。它通過解析 VPNGate 的 API 獲取可用的 VPN 節點，並使用多線程技術來進行延遲測試，這樣能夠快速篩選出最佳節點。對於性能而言，因為是用 Python 實現，可能在高並發場景下會出現性能瓶頸，特別是當節點數量增加時。設計上，AimiliVPN 選擇了 HTTP/SOCKS5 代理協議，這樣的選擇使得其能夠兼容多種應用場景，但也意味著需要處理更多的安全性問題。由於依賴於 VPNGate 的服務，若其服務出現問題，AimiliVPN 的功能也會受到影響。整合方面，因為是基於 Python 的應用，與其他 Python 工具的整合相對容易，但對於非 Python 環境的整合則可能需要額外的適配。
+AimiliVPN 的核心技術機制是基於 Python 標準庫，這使得它不需要額外的依賴，降低了安裝和維護的複雜度。其使用的多線程技術能夠在短時間內對多個 VPNGate 節點進行延遲測試，並自動選擇最佳節點。這樣的設計使得用戶能夠在不同的網絡環境中獲得最佳的連接體驗。效能方面，AimiliVPN 能夠處理中等流量的請求，但在高流量情況下，可能會出現延遲或連接問題。選擇 Python 作為開發語言的優勢在於其簡單性和可讀性，但在性能需求較高的場景下，可能會受到限制。整體而言，AimiliVPN 在設計上考慮了用戶的易用性和安全性，特別是在默認綁定本地回環地址的設計上，這樣能有效防止未經授權的訪問。與主流框架的整合難度較低，適合快速上手的開發者。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了詳細的安裝和使用指南，並有清晰的範例。安裝過程相對順暢，但需要注意 VPS 的 TUN/TAP 設置。文件目前僅提供英文和中文，對於新手來說，整體體驗良好。
+> README 文件清晰且包含詳細的安裝步驟和使用範例，安裝過程相對順暢。提供了良好的快速入門指南，適合新手使用。文件目前僅提供英文和中文版本，對於多語言支持尚可進一步提升。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 安裝簡單，無需複雜配置。
-> - 提供多種路由模式，靈活應對不同需求。
-> - 內建 Web 管理界面，易於使用和監控。
+> - 快速部署，適合需要即時上線的場景。
+> - 簡單易用的管理界面，降低了使用門檻。
+> - 支持多種出站路由模式，靈活應用。
 
 > [!danger] 缺點
-> - 目前開放的問題數量較多，解決率低。
 > - 僅支援 Linux 環境，對於其他操作系統不適用。
-> - 性能在高並發情況下可能會有瓶頸。
+> - 對於高流量需求的場景可能存在性能瓶頸。
+> - 需要 VPS 提供商支持 TUN/TAP 設備，否則無法正常運行。
 
 > [!warning] 注意事項
 > - 僅支援 Linux 環境，對於其他操作系統不適用。
-> - 需要 VPS 提供 TUN/TAP 支持，否則無法正常運行。
-> - 目前開放的 Issues 數量較多，解決率為 0%。
+> - 需要 VPS 提供商支持 TUN/TAP 設備，否則無法正常運行。
+> - 默認僅綁定在本地回環地址，需手動設置才能對外提供代理服務。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [shadowsocks/shadowsocks](https://github.com/shadowsocks/shadowsocks) | Shadowsocks 提供了更廣泛的協議支持和社群生態，但安裝和配置相對複雜。 |
-| [openvpn/openvpn](https://github.com/openvpn/openvpn) | OpenVPN 提供了強大的安全性和靈活性，但需要更多的配置和依賴。 |
+| [shadowsocks/shadowsocks](https://github.com/shadowsocks/shadowsocks) | Shadowsocks 是一個更為成熟的代理工具，支持多種加密方式，但配置相對複雜。 |
+| [v2ray/v2ray-core](https://github.com/v2ray/v2ray-core) | V2Ray 提供了更高的靈活性和功能，但需要較高的學習曲線和配置時間。 |
 
 ## 替代方案決策
 
@@ -205,16 +210,16 @@ AimiliVPN 的核心技術在於使用 Python 標準庫來實現 VPN 代理功能
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [shadowsocks/shadowsocks](https://github.com/shadowsocks/shadowsocks) | Shadowsocks 提供了更廣泛的協議支持和社群生態，但安裝和配置相對複雜。 | 如果需要更強的安全性和靈活性，且團隊對配置有經驗。 | medium，因為需要重新配置和設置服務。 |
-| [openvpn/openvpn](https://github.com/openvpn/openvpn) | OpenVPN 提供了強大的安全性和靈活性，但需要更多的配置和依賴。 | 如果需要企業級的安全性和穩定性，且能接受較高的配置成本。 | high，因為需要重新設置和配置整個 VPN 環境。 |
+| [shadowsocks/shadowsocks](https://github.com/shadowsocks/shadowsocks) | Shadowsocks 使用了更複雜的加密技術，提供了更高的安全性，但需要額外的配置和管理。 | 如果需要更高的安全性和靈活性，並且團隊能夠接受較高的配置成本，則應選擇 Shadowsocks。 | medium，因為需要重新配置和學習新的用法。 |
+| [v2ray/v2ray-core](https://github.com/v2ray/v2ray-core) | V2Ray 提供了更高的靈活性和功能，支持多種協議和路由，但配置相對複雜。 | 如果需要多協議支持和更高的靈活性，且團隊有能力處理複雜配置，則應選擇 V2Ray。 | high，因為需要全面重構配置和學習新工具的使用。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **aimili-vpngate** | **shadowsocks** | **openvpn** |
+> | 維度 | **aimili-vpngate** | **shadowsocks** | **v2ray-core** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Shadowsocks 提供了更廣泛的協議支持和社群生態，但安裝和配置相對複雜。 | OpenVPN 提供了強大的安全性和靈活性，但需要更多的配置和依賴。 |
-> | 遷移成本 | - | medium，因為需要重新配置和設置服務。 | high，因為需要重新設置和配置整個 VPN 環境。 |
-> | 適用場景 | 主要場景 | 如果需要更強的安全性和靈活性，且團隊對配置有經驗。 | 如果需要企業級的安全性和穩定性，且能接受較高的配置成本。 |
+> | 技術路線 | 本專案 | Shadowsocks 使用了更複雜的加密技術，提供了更高的安全性，但需要額外的配置和管理。 | V2Ray 提供了更高的靈活性和功能，支持多種協議和路由，但配置相對複雜。 |
+> | 遷移成本 | - | medium，因為需要重新配置和學習新的用法。 | high，因為需要全面重構配置和學習新工具的使用。 |
+> | 適用場景 | 主要場景 | 如果需要更高的安全性和靈活性，並且團隊能夠接受較高的配置成本 | 如果需要多協議支持和更高的靈活性，且團隊有能力處理複雜配置， |
 
 ## 成熟度評估
 
@@ -225,27 +230,27 @@ AimiliVPN 的核心技術在於使用 Python 標準庫來實現 VPN 代理功能
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和學習，不建議用在生產環境的核心路徑上。
+> 適合個人試用或小型專案，不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些 VPS 上可能無法啟用 TUN/TAP，導致無法正常運行。
-  - 解法：聯繫 VPS 提供商以啟用 TUN/TAP。
-- [MEDIUM] 如果防火牆未放行管理端口，將無法訪問 Web 管理界面。
-  - 解法：在防火牆中放行相應的端口。
-- [MEDIUM] DNS 解析問題可能導致無法獲取節點列表。
-  - 解法：配置公共 DNS 伺服器。
+- **[HIGH]** 在某些 VPS 環境中，可能無法啟用 TUN/TAP 設備
+  - 解法：需要聯繫 VPS 提供商啟用此功能
+- [MEDIUM] 默認防火牆設置可能阻止管理界面訪問
+  - 解法：需要手動開放 8787 和 7928 端口
+- [MEDIUM] DNS 解析問題可能導致無法獲取節點
+  - 解法：可更改 DNS 設置為公共 DNS 服務
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的開發環境 | 非常適合 | 安裝簡單且無需複雜配置，適合快速部署。 |
-| 需要高安全性的企業環境 | 不適合 | 目前處於 alpha 階段，穩定性和安全性尚未經過充分測試。 |
-| 個人用戶需要訪問被限制的網站 | 適合 | 提供了簡單的代理設置和多種連接模式。 |
-| 大型企業的生產環境 | 不適合 | 尚未達到生產環境的穩定性要求。 |
+| 小型團隊的內部工具代理服務 | 非常適合 | AimiliVPN 提供了簡單的安裝和管理界面，適合快速部署。 |
+| 需要高安全性的商業應用 | 不適合 | 目前仍處於 alpha 階段，安全性和穩定性尚未完全驗證。 |
+| 個人使用的隱私保護工具 | 非常適合 | AimiliVPN 提供了靈活的出站路由選擇，適合個人隱私需求。 |
+| 大規模流量的商業代理服務 | 不適合 | 在高流量情況下可能會出現性能瓶頸。 |
 
 ## 採用成本分析
 
@@ -257,12 +262,12 @@ AimiliVPN 的核心技術在於使用 Python 標準庫來實現 VPN 代理功能
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到穩定的 VPN 代理效果，值得嘗試。
+> 花 2 小時學習和 1 小時整合，得到一個簡單易用的代理工具，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：AimiliVPN 本身不需要高權限運行，但需要注意防火牆和端口的設置，避免未經授權的訪問。
+> AimiliVPN 本身不需要高權限運行，但在使用過程中可能需要開放特定端口。它不會存取敏感資料，但用戶需注意防火牆和安全組設置，以防未經授權的訪問。整體來看，使用 AimiliVPN 在 CI/CD 中是安全的，前提是正確配置。
 
 ## 健康度儀表板
 
@@ -327,12 +332,12 @@ AimiliVPN 的核心技術在於使用 Python 標準庫來實現 VPN 代理功能
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 319 |
+| Forks | 326 |
 | Open Issues | 12 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-06-05 |
+| 最後推送 | 2026-06-07 |
 | 建立日期 | 2026-05-25 |
-| Repo 大小 | 318 KB |
+| Repo 大小 | 446 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/baoweise-bot/aimili-vpngate) |
 
 > [!info]- 語言組成
@@ -345,23 +350,24 @@ AimiliVPN 的核心技術在於使用 Python 標準庫來實現 VPN 代理功能
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@baoweise-bot](https://github.com/baoweise-bot) | 51 |
+> | [@baoweise-bot](https://github.com/baoweise-bot) | 53 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，持續有更新和討論。
+**社群活躍度**：社群活躍度中等，開發者定期更新並回應問題。
+**連結**：[文件](https://github.com/baoweise-bot/aimili-vpngate)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-05 ~ 2026-06-05）
-> **活躍天數** 1 天 · **最新 commit** refactor: rename ad-related UI components and styles to vps-recommend naming convention
+> [!abstract] 最近 10 次 commit（2026-06-05 ~ 2026-06-07）
+> **活躍天數** 2 天 · **最新 commit** feat: add proxy authentication, limit concurrent connections, and allow configurable proxy port.
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#16](https://github.com/baoweise-bot/aimili-vpngate/issues/16) | more different ips | 0 | 0 |
+> | [#16](https://github.com/baoweise-bot/aimili-vpngate/issues/16) | more different ips | 0 | 1 |
 > | [#13](https://github.com/baoweise-bot/aimili-vpngate/issues/13) | 可以docker一键安装吗 | 0 | 1 |
 > | [#12](https://github.com/baoweise-bot/aimili-vpngate/issues/12) | IP 出站路由模式固定地区能否配置只连接住宅IP? | 0 | 0 |
 > | [#11](https://github.com/baoweise-bot/aimili-vpngate/issues/11) | 建议 | 0 | 0 |
@@ -576,7 +582,7 @@ AimiliVPN 的核心技術在於使用 Python 標準庫來實現 VPN 代理功能
 
 ## 延伸閱讀
 
-相關概念：[[VPN]] · [[代理服務]] · [[多路由]]
+相關概念：[[VPN]] · [[代理服務]] · [[多線程]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[NawfalMotii79--PLFM_RADAR|NawfalMotii79/PLFM_RADAR]] · [[denuitt1--mhr-cfw|denuitt1/mhr-cfw]]
 
@@ -584,11 +590,11 @@ AimiliVPN 的核心技術在於使用 Python 標準庫來實現 VPN 代理功能
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：VPN 工具）
+> [!note]- 直接競品（同子分類：VPN 代理）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "VPN 工具" AND file.name != "baoweise-bot--aimili-vpngate"
+> WHERE subcategory = "VPN 代理" AND file.name != "baoweise-bot--aimili-vpngate"
 > SORT stars DESC
 > ```
 
@@ -620,7 +626,7 @@ AimiliVPN 的核心技術在於使用 Python 標準庫來實現 VPN 代理功能
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["VPN","代理服務","多路由"];
+> const concepts = ["VPN","代理服務","多線程"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "baoweise-bot--aimili-vpngate" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

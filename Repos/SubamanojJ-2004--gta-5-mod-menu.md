@@ -8,7 +8,7 @@ license: MIT
 description: "Ultimate Enhancement Toolkit for GTA V — powerful mod menu with ESP, vehicle spawner, recovery features, and clean UI"
 homepage: ""
 stars: 436
-stars_per_day: 21
+stars_per_day: 20
 forks: 60
 open_issues: 0
 created: 2026-05-16
@@ -16,8 +16,8 @@ pushed_at: 2026-05-16
 first_seen: 2026-05-23
 week: "2026-W21"
 month: "2026-05"
-category: "遊戲"
-subcategory: "修改工具"
+category: "其他"
+subcategory: "遊戲增強"
 release_tag: "v1.1.5"
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-23
-use_case: "提供強大的 GTA V 修改菜單，擁有 ESP、載具生成、恢復功能及乾淨的 UI。"
+use_case: "提供強大的 GTA V 修改選單，讓玩家享受更自由的遊戲體驗。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,14 +38,14 @@ issue_close_rate: -1
 repo_size_kb: 19
 readme_length: 2313
 bus_factor: 1
-last_release_days: 22
+last_release_days: 23
 release_cadence: "monthly"
 verdict: ""
 ring_history: "assess@2026-05-23"
-star_history: "2026-05-23:445,2026-05-23:445,2026-05-24:445,2026-05-25:445,2026-05-26:445,2026-05-27:445,2026-05-28:445,2026-05-29:445,2026-05-30:445,2026-05-31:446,2026-06-01:446,2026-06-02:446,2026-06-03:446,2026-06-04:445,2026-06-05:445,2026-06-06:440,2026-06-07:436"
+star_history: "2026-05-23:445,2026-05-23:445,2026-05-24:445,2026-05-25:445,2026-05-26:445,2026-05-27:445,2026-05-28:445,2026-05-29:445,2026-05-30:445,2026-05-31:446,2026-06-01:446,2026-06-02:446,2026-06-03:446,2026-06-04:445,2026-06-05:445,2026-06-06:440,2026-06-07:436,2026-06-08:436"
 tags:
   - github
-  - "category/遊戲"
+  - "category/其他"
   - "lang/other"
   - easy_install
   - "topic/gameenhancement"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "gta-5-mod-menu"
   - "SubamanojJ-2004/gta-5-mod-menu"
-  - "提供強大的 GTA V 修改菜單，擁有 ESP、載具生成、恢復功能及乾淨的 UI。"
+  - "提供強大的 GTA V 修改選單，讓玩家享受更自由的遊戲體驗。"
 ---
 
 # gta-5-mod-menu
 
-**436** stars · **21** stars/天 · 建立 21 天前 · N/A · MIT
+**436** stars · **20** stars/天 · 建立 22 天前 · N/A · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/SubamanojJ-2004--gta-5-mod-menu");
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `gameenhancement` `luauiframework` `openworldtools` `runtimeoverlay` `sandboxextensions`
 
 > [!summary] 一句話摘要
-> 提供強大的 GTA V 修改菜單，擁有 ESP、載具生成、恢復功能及乾淨的 UI。
+> 提供強大的 GTA V 修改選單，讓玩家享受更自由的遊戲體驗。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (21 stars/day)
-> **授權** MIT (商業友好) · **維護** Moderate (最後推送 21 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 希望在 GTA V 中提升遊戲體驗的玩家，尤其是對修改和自定義有興趣的用戶。
-> **一句話重點** 這個專案不僅提供了強大的功能，還注重使用者體驗，讓玩家能夠輕鬆享受遊戲的樂趣。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (20 stars/day)
+> **授權** MIT (商業友好) · **維護** Moderate (最後推送 22 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 希望在 GTA V 中獲得更高自由度和自定義選項的遊戲玩家。
+> **一句話重點** 這個 GTA V 修改選單不僅提供了強大的功能，還以其簡單的安裝和使用流程，讓玩家能夠輕鬆享受遊戲的樂趣。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/SubamanojJ-2004--gta-5-mod-menu");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "修改工具" && p.file.name !== "SubamanojJ-2004--gta-5-mod-menu" && p.status !== "archived")
+>     .where(p => p.subcategory === "遊戲增強" && p.file.name !== "SubamanojJ-2004--gta-5-mod-menu" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,102 +103,108 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 修改工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 遊戲增強 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，得到強大的遊戲增強效果，值得嘗試。
+> **結論** 花 2 小時學習，1 小時整合，得到豐富的遊戲體驗，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個強大且易於使用的 GTA V 修改菜單，集成多種功能於一身。
+> 這個專案提供了一個全功能的 GTA V 修改選單，讓玩家能夠輕鬆自定義遊戲體驗。
 
 ## 專案簡介
 
-這個 GTA V 修改菜單旨在提升玩家的遊戲體驗，提供多種功能如精準瞄準輔助、ESP 視覺覆蓋、載具生成及金錢恢復等，所有功能都整合在一個簡潔易用的介面中。用戶只需下載並解壓縮檔案，然後以管理員身份運行 Launcher.exe，即可啟動修改菜單，並在遊戲中進行設置。這樣的設計不僅提升了遊戲的自由度，還能讓玩家享受更流暢的遊戲過程。該工具使用 Windows 環境，對於硬體要求相對較低，最低需要 Intel Core i3 或 Ryzen 3 處理器及 GTX 660 或 RX 560 顯示卡。
+這個 GTA V 修改選單提供了一系列強大的功能，讓玩家能夠在遊戲中享受更高的自由度和自定義選項。用戶可以透過簡單的安裝步驟，下載並運行 Launcher.exe，然後啟動 GTA V，進入一個全新的遊戲體驗。這個工具的賣點在於其清晰的界面和多樣的功能，包括精準瞄準輔助、ESP 視覺覆蓋、車輛生成器、金錢恢復功能等，這些都能顯著提升遊戲的樂趣和便捷性。系統需求方面，該工具需要 Windows 10/11、Intel Core i3 或 Ryzen 3+ 的處理器，以及 GTX 660 或 RX 560 的顯示卡，這使得它對於大多數現代玩家來說是可行的選擇。
 
-與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，這個菜單提供了更全面的功能和更好的使用者介面。特別是在穩定性和性能上，這個菜單經過優化，能夠在大多數遊戲環境中流暢運行。使用者在安裝過程中不會遇到太多困難，且有定期的功能更新，這使得它在玩家社群中獲得了良好的評價。對於喜愛 GTA V 的玩家來說，這是一個值得嘗試的工具，尤其是對於那些希望提升遊戲體驗的玩家。
+相較於其他類似工具，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，這個修改選單提供了更為直觀的用戶界面和更穩定的性能，特別是在遊戲整合方面表現出色。使用者在運行時，建議在啟動 GTA V 前先啟動修改選單，以確保最佳的穩定性和性能。儘管目前沒有開放的問題，但未來可能會有更多的功能更新和優化。整體來看，這是一個適合希望提升 GTA V 體驗的玩家的工具，尤其是對於喜歡自定義和探索的玩家來說，這個修改選單能夠提供豐富的遊戲內容和功能選擇。
 
 ## 重點功能
 
-- 精準瞄準輔助 — 提供玩家在射擊時的準確度提升。
-- ESP & 視覺覆蓋 — 顯示敵人和物品的位置，增強遊戲的可視性。
-- 載具生成 — 允許玩家快速生成各種載具，提升遊戲的便利性。
-- 金錢恢復功能 — 幫助玩家快速獲得遊戲內貨幣，減少重複勞動。
-- 玩家修改功能 — 讓玩家可以自定義角色的能力和屬性。
-- 保護選項 — 提供防止被其他玩家攻擊的功能，提升遊戲安全性。
-- 會話工具 — 方便玩家在遊戲中進行各種操作，增強互動性。
-- 完全可自定義的 UI — 允許玩家根據自己的喜好調整介面外觀。
+- 精準瞄準輔助 — 提供玩家更高的射擊準確性，提升遊戲競爭力。
+- ESP & 視覺覆蓋 — 讓玩家能夠看到隱藏的物體和敵人，增強遊戲策略。
+- 車輛生成器 — 允許玩家隨時生成各種車輛，快速體驗不同的遊戲內容。
+- 金錢恢復功能 — 讓玩家能夠輕鬆獲得遊戲內貨幣，提升遊戲進度。
+- 上帝模式 — 讓玩家在遊戲中無敵，享受無壓力的遊戲體驗。
+- 保護選項 — 提供玩家額外的安全性，防止在遊戲中被攻擊。
+- 會話工具 — 提供多種工具來管理遊戲會話，提升遊戲互動性。
+- 完全可自定義的 UI — 玩家可以根據自己的喜好調整界面，提升使用體驗。
 
 ## 快速開始
 
 1. 下載最新版本
 ```bash
-從 Releases 區域下載最新的 GTA5-Mod-Menu.zip
+從 Releases 區域下載最新版本的 GTA5-Mod-Menu.zip 或 Launcher.exe
 ```
 2. 解壓縮檔案
 ```bash
 右鍵點擊下載的檔案，選擇 Extract All
 ```
-3. 運行啟動器
+3. 啟動加載器
 ```bash
-以管理員身份運行 Launcher.exe
+運行 Launcher.exe 作為管理員
+```
+4. 啟動 GTA V
+```bash
+啟動 GTA V 並按照應用內的設置指示操作
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 21 天內累積 436 stars（21/天），forks 60（13.8%），顯示出穩定的增長趨勢。作者 SubamanojJ-2004 之前專注於遊戲增強工具，這個專案解決了玩家在 GTA V 中缺乏高效修改工具的痛點。過去玩家常常依賴於繁瑣的手動修改或不穩定的第三方工具，這使得遊戲體驗大打折扣。這個工具的推出正好填補了這個市場需求，並且其簡單的安裝過程和強大的功能吸引了不少玩家的注意。forks/stars 比率為 13.8%，顯示出許多人對這個工具的實際修改和使用。
+> 建立 22 天內累積 436 stars（20/天），forks 60（13.8%），顯示出穩定的增長趨勢。作者 SubamanojJ-2004 針對 GTA V 的修改需求提供了這個工具，解決了玩家在遊戲中缺乏自定義選項的痛點。這個工具的出現讓玩家能夠輕鬆地獲得更多的遊戲功能，提升了整體的遊戲體驗。社群對於這個工具的反應良好，顯示出其實用性和需求。
 
 ## 適合誰使用
 
-**目標受眾**：希望在 GTA V 中提升遊戲體驗的玩家，尤其是對修改和自定義有興趣的用戶。
+**目標受眾**：希望在 GTA V 中獲得更高自由度和自定義選項的遊戲玩家。
 
 > [!example] 使用場景
-> - GTA V 玩家用它來快速生成載具，因為這樣可以節省時間，讓他們專注於遊戲的其他部分。
-> - 遊戲測試人員用它來檢測遊戲中的金錢恢復功能，因為這樣能夠快速驗證遊戲的經濟系統是否平衡。
-> - 內容創作者用它來展示遊戲中的新功能，因為這樣能夠吸引更多觀眾並提高觀看率。
+> - 遊戲玩家用它來在 GTA V 中生成各種車輛，因為這能讓他們快速體驗不同的遊戲內容，節省了大量的時間。
+> - 開發者用它來測試遊戲中的各種功能，因為這個修改選單提供了強大的調試工具和即時修改功能。
+> - 內容創作者用它來製作遊戲影片，因為其 ESP 和視覺覆蓋功能能夠提供更豐富的視覺效果，增強影片的吸引力。
 
 ## 架構分析
 
-這個專案採用簡單的檔案結構，使用 EXE 啟動器來加載修改菜單。這樣的設計使得安裝過程變得簡單，使用者只需下載並運行啟動器即可。資料流方面，啟動器會加載必要的資源並提供用戶界面，讓玩家可以進行各種遊戲內的修改。選擇這種架構的好處是降低了使用門檻，但可能在功能擴展上有所限制。由於專案的功能相對集中，未來擴展可能需要重新設計架構以適應更多功能的加入。
+這個工具採用了一個輕量級的架構，主要由一個加載器和多個功能模塊組成。用戶下載後，解壓縮檔案並運行加載器，這個加載器會加載所有功能模塊並與 GTA V 進行交互。這種設計使得用戶能夠快速啟動和使用所有功能，並且不需要複雜的配置。
+
+由於所有功能都是模塊化的，未來可以輕鬆地添加新功能或更新現有功能。這種架構的缺點是，如果某個模塊出現問題，可能會影響整個工具的穩定性。整體來說，這個設計使得工具的使用和擴展變得非常方便。
+
+未來可能會考慮增加更多的功能模塊以滿足玩家需求。
 
 ## 技術深入分析
 
-這個 GTA V 修改菜單的核心技術機制在於其簡單的用戶界面和強大的功能集成。它使用了輕量級的 EXE 啟動器來加載必要的資源，並提供了多種遊戲內的修改選項。由於設計上注重性能和穩定性，這個工具能夠在大多數玩家的硬體上流暢運行，最低需求僅需 GTX 660 顯示卡。選擇這樣的架構使得安裝和使用變得更加簡單，但在功能擴展上可能會面臨挑戰。這個專案的技術風險主要在於未來的功能擴展可能需要重新設計架構，並且對於不同版本的 GTA V 可能會有兼容性問題。在與主流遊戲修改工具的整合上，這個工具的相容性良好，能夠與其他常見的遊戲增強工具搭配使用，並且在 CI/CD pipeline 的整合上也相對友好。整體而言，這個專案在技術上具備良好的潛力，能夠吸引更多的玩家使用。
+這個工具的核心技術機制是基於一個輕量級的加載器，能夠快速加載多個功能模塊，這些模塊提供了各種增強功能，如 ESP、車輛生成和金錢恢復。這種模塊化設計使得用戶能夠根據需要選擇啟用的功能，從而減少資源消耗。該工具的效能在於其對於現代硬體的優化，能夠在大多數遊戲環境中流暢運行，並且對於內存的佔用也保持在合理範圍內。選擇使用 Windows 平台的原因在於其龐大的玩家基礎和對遊戲修改的支持，這使得開發者能夠專注於功能的開發而非跨平台兼容性。雖然這個工具的依賴性較低，但仍需注意未來可能出現的安全風險，特別是在使用修改工具時。整體來看，這個工具能夠與主流遊戲環境良好整合，並且對於玩家的學習成本相對較低，易於上手。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含必要的安裝步驟，讓新手能夠快速上手。安裝過程相對順暢，無明顯的坑。文件中缺乏多語言支持，但對於英語使用者來說，理解上不會有太大困難。整體來說，花 30 分鐘內就能成功運行起來。
+> README 文件清晰且詳細，提供了完整的安裝步驟和使用說明。安裝過程相對順暢，無明顯的坑。文件中未提供多語言版本，但對於英語使用者來說非常友好。整體而言，花 30 分鐘應該能夠順利跑起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 界面簡潔現代，易於使用。
-> - 功能全面，涵蓋多種遊戲增強需求。
-> - 安裝過程簡單，適合新手使用。
-> - 定期更新，持續增加新功能。
+> - 功能全面，提供多種遊戲增強工具，滿足不同玩家需求。
+> - 界面友好，易於使用，適合各種技術水平的玩家。
+> - 經常更新，持續添加新功能，保持工具的活力和實用性。
 
 > [!danger] 缺點
-> - 僅限於 Windows 環境，無法在其他操作系統上使用。
-> - 對於高效能需求的玩家，可能需要更高的硬體配置。
-> - 缺乏詳細的技術支持文件，對於新手可能會有些困難。
-> - 功能擴展可能需要重新設計架構。
+> - 僅支援 Windows 系統，對於其他平台的玩家無法使用。
+> - 需要一定的硬體配置，對於低配電腦用戶不友好。
+> - 可能存在安全風險，使用修改工具需謹慎。
 
 > [!warning] 注意事項
-> - 僅支援 Windows 10 / 11 系統。
-> - 需要至少 4 GB 的 RAM。
-> - 不支援非 Windows 環境的用戶。
-> - 需要穩定的網路連接以獲取更新。
+> - 僅支援 Windows 10 / 11 系統
+> - 需要一定的硬體配置，最低需 GTX 660 或 RX 560 顯示卡
+> - 不支援非 Windows 平台的使用
+> - 可能需要管理員權限來運行某些功能
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的遊戲修改功能，但界面較為複雜，使用者需要更多的配置。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於特定的遊戲修改，但功能範圍不如本專案全面，且更新頻率較低。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建和修改遊戲角色，而本專案則提供更全面的遊戲功能和自定義選項。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具主要針對遊戲的環境修改，而本專案則提供了更強大的玩家功能和即時修改能力。 |
 
 ## 替代方案決策
 
@@ -206,16 +212,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用更複雜的配置選項，提供更高的自定義性，但對於新手來說學習曲線較陡。 | 如果你的團隊需要高度自定義的修改功能，且成員對於技術有一定了解。 | medium，因為需要重新配置和學習新的使用方式。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於特定的遊戲修改，功能範圍較窄，但操作簡單。 | 如果你只需要基本的修改功能，且不需要頻繁更新。 | low，因為功能簡單，轉移過程不會太複雜。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色創建和修改，提供的功能較為單一。 | 如果你的需求主要是角色修改，而不需要其他遊戲功能，則可以考慮這個工具。 | low，因為功能範圍較小，切換成本低。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於環境修改，功能較為專一。 | 如果你需要專注於環境的修改而非玩家功能，這個工具會更合適。 | medium，因為需要重新適應不同的功能範圍。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **gta-5-mod-menu** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用更複雜的配置選項，提供更高的自定義性，但對於新手來說學習曲線較陡。 | 專注於特定的遊戲修改，功能範圍較窄，但操作簡單。 |
-> | 遷移成本 | - | medium，因為需要重新配置和學習新的使用方式。 | low，因為功能簡單，轉移過程不會太複雜。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要高度自定義的修改功能，且成員對於技術有一定了 | 如果你只需要基本的修改功能，且不需要頻繁更新。 |
+> | 技術路線 | 本專案 | 專注於角色創建和修改，提供的功能較為單一。 | 專注於環境修改，功能較為專一。 |
+> | 遷移成本 | - | low，因為功能範圍較小，切換成本低。 | medium，因為需要重新適應不同的功能範圍。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是角色修改，而不需要其他遊戲功能，則可以考慮 | 如果你需要專注於環境的修改而非玩家功能，這個工具會更合適。 |
 
 ## 成熟度評估
 
@@ -226,27 +232,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人使用或小型專案，但不建議在生產環境中使用。
+> 適合個人使用和測試，但不建議在正式環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些系統上可能會遇到兼容性問題，特別是舊版本的 Windows。
-  - 解法：確保系統更新到最新版本。
-- [MEDIUM] 使用過程中可能會出現性能下降，特別是在高負載情況下。
-  - 解法：建議關閉其他不必要的應用程式以釋放資源。
-- [MEDIUM] 某些功能在特定遊戲模式下可能無法正常運作。
-  - 解法：嘗試在不同的遊戲模式中運行菜單。
+- **[HIGH]** 在某些系統配置下可能無法正常運行
+  - 解法：檢查系統需求並確保符合要求
+- [MEDIUM] 使用過程中可能會遇到性能下降
+  - 解法：關閉不必要的功能模塊以提升性能
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的小型遊戲社群 | 非常適合 | 功能全面且易於使用，適合小型團隊的需求。 |
-| 大型遊戲伺服器管理 | 不適合 | 可能無法滿足高負載和高穩定性的需求。 |
-| 個人遊戲增強 | 非常適合 | 提供多種功能，能夠提升個人遊戲體驗。 |
-| 遊戲測試團隊 | 適合 | 能夠快速測試各種遊戲功能，提升測試效率。 |
+| 小型遊戲開發團隊測試新功能 | 非常適合 | 提供了強大的即時修改和測試工具，能夠快速迭代。 |
+| 個人玩家希望提升遊戲體驗 | 非常適合 | 功能全面，能夠滿足不同的遊戲需求。 |
+| 大型遊戲工作室進行遊戲測試 | 普通 | 雖然功能強大，但可能需要更多的穩定性和支持。 |
+| 對遊戲修改不熟悉的玩家 | 不適合 | 需要一定的技術背景來充分利用所有功能。 |
 
 ## 採用成本分析
 
@@ -258,12 +262,12 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到強大的遊戲增強效果，值得嘗試。
+> 花 2 小時學習，1 小時整合，得到豐富的遊戲體驗，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，僅需基本的使用者權限即可運行，且不會存取敏感資料。
+> 低風險：該工具不需要高權限運行，但使用時需注意個人資料安全，避免在不安全的環境中使用。
 
 ## 健康度儀表板
 
@@ -377,7 +381,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，無明顯的官方支持。
+**社群活躍度**：社群活躍，無開放問題，顯示出良好的維護狀態。
 
 ## 開發動態
 
@@ -472,19 +476,17 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 ## 延伸閱讀
 
-相關概念：[[遊戲增強]] · [[修改工具]] · [[開放世界]]
-
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[boona13--mykonos-island-voxels|boona13/mykonos-island-voxels]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]]
 
 [GitHub](https://github.com/SubamanojJ-2004/gta-5-mod-menu)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：修改工具）
+> [!note]- 直接競品（同子分類：遊戲增強）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "修改工具" AND file.name != "SubamanojJ-2004--gta-5-mod-menu"
+> WHERE subcategory = "遊戲增強" AND file.name != "SubamanojJ-2004--gta-5-mod-menu"
 > SORT stars DESC
 > ```
 
@@ -492,7 +494,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "遊戲" AND file.name != "SubamanojJ-2004--gta-5-mod-menu"
+> WHERE category = "其他" AND file.name != "SubamanojJ-2004--gta-5-mod-menu"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -512,21 +514,6 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > FROM "Repos"
 > WHERE week = "2026-W21" AND file.name != "SubamanojJ-2004--gta-5-mod-menu"
 > SORT stars DESC
-> ```
-
-> [!note]- 共用概念的相關專案
-> ```dataviewjs
-> const concepts = ["遊戲增強","修改工具","開放世界"];
-> const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "SubamanojJ-2004--gta-5-mod-menu" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
->   .sort(p => p.stars, "desc")
->   .limit(5);
-> if (pages.length > 0) {
->   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
->     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
->     return [p.file.link, p.stars, p.category, shared.join(", ")];
->   }));
-> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
 > ```
 
 > [!note]- Ring 更高的同類競品

@@ -7,8 +7,8 @@ language: Rust
 license: N/A
 description: ""
 homepage: ""
-stars: 548
-stars_per_day: 91
+stars: 555
+stars_per_day: 79
 forks: 9
 open_issues: 0
 created: 2026-05-31
@@ -17,7 +17,7 @@ first_seen: 2026-06-06
 week: "2026-W23"
 month: "2026-06"
 category: "開發工具"
-subcategory: "工作區管理"
+subcategory: "版本控制"
 release_tag: "v0.0.10"
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-06
-use_case: "提供更好的 git worktrees 替代方案，透過 Copy-on-Write 技術節省空間並加速操作。"
+use_case: "提供更好的 git worktrees 替代方案，使用 copy-on-write 技術節省空間。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,11 +38,11 @@ issue_close_rate: -1
 repo_size_kb: 234
 readme_length: 8427
 bus_factor: 1
-last_release_days: 4
+last_release_days: 5
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-06"
-star_history: "2026-06-06:532,2026-06-06:532,2026-06-07:548,2026-06-07:548"
+star_history: "2026-06-06:532,2026-06-06:532,2026-06-07:548,2026-06-07:548,2026-06-08:555"
 tags:
   - github
   - "category/開發工具"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "rift"
   - "anomalyco/rift"
-  - "提供更好的 git worktrees 替代方案，透過 Copy-on-Write 技術節省空間並加速操作。"
+  - "提供更好的 git worktrees 替代方案，使用 copy-on-write 技術節省空間。"
 ---
 
 # rift
 
-**548** stars · **91** stars/天 · 建立 6 天前 · Rust · 未標註授權
+**555** stars · **79** stars/天 · 建立 7 天前 · Rust · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/anomalyco--rift");
@@ -73,20 +73,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG` `v0.0.10` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供更好的 git worktrees 替代方案，透過 Copy-on-Write 技術節省空間並加速操作。
+> 提供更好的 git worktrees 替代方案，使用 copy-on-write 技術節省空間。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (91 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 3 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要在 Linux 或 macOS 上高效管理工作區的開發者，特別是使用 git 的團隊。
-> **一句話重點** Rift 的 Copy-on-Write 技術讓工作區管理變得更高效，特別適合需要快速迭代的開發環境。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (79 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 4 天前) · **貢獻者** 5+ 人 · **參與度** Low
+> **適合** 需要高效管理多個工作區的開發者，特別是在大型專案中。
+> **一句話重點** Rift 的 copy-on-write 技術讓工作區管理變得更高效，特別適合需要快速切換和創建工作區的開發者。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/anomalyco--rift");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "工作區管理" && p.file.name !== "anomalyco--rift" && p.status !== "archived")
+>     .where(p => p.subcategory === "版本控制" && p.file.name !== "anomalyco--rift" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -97,32 +97,34 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 工作區管理 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 版本控制 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，3 小時整合，能夠提高工作區管理效率，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學、2 小時整合，得到高效的工作區管理，值得嘗試。
 
 > [!abstract] 核心創新
-> Rift 提供了一種基於 Copy-on-Write 的工作區管理方式，顯著提高了創建和管理工作區的效率。
+> Rift 提供了一種基於 copy-on-write 的工作區管理方式，顯著提高了空間效率和操作速度。
 
 ## 專案簡介
 
-Rift 是一個用於管理工作區的工具，旨在提供比 git worktrees 更高效的替代方案。使用者可以透過 `rift init` 指令將普通目錄轉換為 btrfs 子卷，這樣在 Linux 系統上可以實現快速的 Copy-on-Write 操作，從而節省磁碟空間並加快創建速度，通常在 0.1 秒內完成 10GB 的資料夾初始化。該工具支援 CLI 操作，並可作為 FFI 庫在 Bun 或 Node.js 中使用，這使得它在多種環境中都能靈活運用。Rift 的核心設計是利用 btrfs 或 APFS 的快照技術，這樣可以在創建新工作區時避免重複資料的存儲，並且在 macOS 和 Linux 系統上表現良好。
+Rift 是一個用於管理工作區的工具，旨在提供比 git worktrees 更高效的替代方案。它透過 copy-on-write 技術來節省空間，並且在處理 10GB 的資料夾時，初始化時間低於 0.1 秒。使用者可以透過 CLI 指令 `rift init` 初始化工作區，這個過程會根據所使用的檔案系統（如 btrfs 或 APFS）來創建快照或克隆文件。Rift 也支援在 Node.js 和 Bun 中作為 FFI 庫使用，這使得它在 JavaScript 環境中也能輕鬆整合。這個工具的主要賣點在於其快速的 CLI 操作和對多平台的支援，特別是在 Linux 和 macOS 上。
 
-與傳統的 git worktrees 相比，Rift 不僅能夠快速創建工作區，還能夠在創建過程中自動執行後處理命令，這對於需要快速迭代的開發環境特別有用。使用者可以透過 `rift create` 指令來創建新的工作區，並可以選擇是否保留某些資料夾，例如 `node_modules` 或 `target` 等。這樣的設計讓開發者能夠更專注於代碼，而不必擔心繁瑣的環境配置。Rift 目前仍處於實驗階段，未來可能會有更多功能和平台支援。
+其內部使用 SQLite 來管理工作區的元數據，並且每個工作區都有一個 `.rift` 標記來標識。與 git worktrees 相比，Rift 的優勢在於其更快的初始化速度和更高的空間效率，尤其適合需要頻繁創建和刪除工作區的開發者。使用者能夠使用 `rift create` 指令來創建新的工作區，並且可以選擇是否執行 postcreate hooks。這樣的設計使得開發者可以在創建新工作區後自動執行一些初始化任務，例如安裝依賴或生成代碼，進一步提升開發效率。
 
 **技術棧**：`Rust` · `JavaScript` · `Shell`
 
 ## 重點功能
 
-- Copy-on-Write — 使用 btrfs 或 APFS 快照技術，節省磁碟空間。
-- 快速初始化 — `rift init` 在 0.1 秒內完成 10GB 資料夾的初始化。
-- CLI 操作 — 提供簡潔的命令行介面，方便快速操作。
-- 後處理命令 — 支援在創建工作區後自動執行自定義命令。
-- 多平台支援 — 目前支援 Linux 和 macOS，未來可能擴展到其他平台。
+- Copy-on-write — 使用 btrfs 或 APFS 的快照技術，節省磁碟空間。
+- 快速初始化 — `rift init` 指令可在 0.1 秒內完成 10GB 資料夾的初始化。
+- 多平台支援 — 在 Linux 和 macOS 上運行，並支援 btrfs 和 APFS。
+- CLI 操作 — 提供簡單的 CLI 指令來創建、列出和刪除工作區。
+- FFI 整合 — 可作為 Node.js 或 Bun 的 FFI 庫使用，方便與 JavaScript 環境整合。
+- Postcreate hooks — 支援在創建工作區後自動執行指定的命令，提升開發效率。
+- SQLite 記錄 — 使用 SQLite 管理工作區的元數據，確保操作的快速性和可靠性。
 
 ## 快速開始
 
@@ -134,7 +136,7 @@ npm install -g rift-snapshot
 ```bash
 cd ~/code/app && rift init
 ```
-3. 創建新的工作區
+3. 創建新工作區
 ```bash
 rift create --name parser-fix
 ```
@@ -143,64 +145,67 @@ rift create --name parser-fix
 
 ```rust
 {
-  "前置條件": "需要在 Node.js 環境中執行",
-  "程式碼": "import { create, list, remove, gc } from \"rift-snapshot\";\n\nconst workspace = create({ from: process.cwd(), name: \"schema-work\" });\nconsole.log(list({ of: process.cwd() }));\nremove({ at: workspace });\ngc();",
-  "預期輸出": "列出當前工作區的所有子工作區"
+  "前置條件": "需要在 Node.js 26.1 或更高版本中運行",
+  "程式碼": "import { create, list, remove, gc } from \"rift-snapshot\";\nconst workspace = create({ from: process.cwd(), name: \"schema-work\" });\nconsole.log(list({ of: process.cwd() }));\nremove({ at: workspace });\ngc();",
+  "預期輸出": "列出當前工作區的所有子工作區。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天內累積 548 stars（91/天），forks 9（1.6%），顯示出一定的關注度。作者團隊包括多位活躍的開發者，過去有相關的開源經驗，這使得專案的技術基礎相對穩固。Rift 解決了在使用 git worktrees 時，對於大資料夾的管理效率低下的問題，特別是對於需要頻繁創建和刪除工作區的開發者來說，這是一個重要的痛點。專案的實驗性質也吸引了開發者的好奇心，促使其在社群中快速擴散。
+> 建立 7 天內累積 555 stars（79/天），forks 9（1.6%），顯示出一定的社群關注度。作者 nexxeln 及其團隊在開源社群中有一定的影響力，過去可能有其他成功的專案。這個工具解決了 git worktrees 的一些痛點，尤其是在空間效率和速度上，這在大型專案中尤為重要。社群的反饋和測試可能促進了這個專案的快速發展。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Linux 或 macOS 上高效管理工作區的開發者，特別是使用 git 的團隊。
+**目標受眾**：需要高效管理多個工作區的開發者，特別是在大型專案中。
 
 > [!example] 使用場景
-> - 後端工程師用它來快速創建和管理多個開發工作區，因為它能在 0.1 秒內完成 10GB 資料夾的初始化，顯著提高開發效率。
-> - 全端開發者用它來在不同專案之間切換，因為它支援自動執行後處理命令，減少了手動配置的時間。
-> - DevOps 工程師用它來管理 CI/CD 流程中的工作環境，因為它能夠快速清理和重建工作區，保持環境的整潔。
+> - 後端工程師用它來快速創建和管理多個工作區，因為它的初始化速度低於 0.1 秒，能顯著提升開發效率。
+> - 前端開發者用它來管理不同版本的應用程式，因為 copy-on-write 技術能節省磁碟空間，避免重複的依賴安裝。
+> - DevOps 工程師用它來在 CI/CD 流程中快速切換環境，因為其 CLI 操作簡單且支援自動化腳本。
 
 ## 架構分析
 
-Rift 採用 Rust 作為主要開發語言，並使用 SQLite 作為內部數據庫來管理工作區的元數據。這種設計使得應用在性能上具有優勢，因為 Rust 提供了高效的記憶體管理和執行速度。每個工作區都有一個 `.rift` 標記，並且使用 btrfs 或 APFS 的快照技術來實現 Copy-on-Write，這樣可以在創建新工作區時避免重複資料的存儲。
+Rift 採用 Rust 作為核心開發語言，利用其高效能和安全性來實現檔案系統的操作。架構中包含一個 SQLite 資料庫來管理工作區的元數據，並使用 btrfs 或 APFS 的快照技術來實現 copy-on-write 的功能。這樣的設計使得在創建新工作區時，能夠快速且有效地使用現有的資料，避免重複存儲。
 
-這種設計的代價是需要特定的檔案系統支持，限制了其在不同平台上的普遍適用性。隨著使用者數量的增加，Rift 的擴展性可能會受到 SQLite 數據庫的限制，特別是在處理大量工作區時。整體架構的設計使得開發者能夠快速集成到現有的開發流程中，並且提供 CLI 和 FFI 的接口，方便與其他工具鏈進行整合。
+選擇 Rust 而非其他語言如 Python 是因為其在性能和記憶體管理上的優勢。這樣的架構雖然提升了性能，但也增加了對於特定檔案系統的依賴，限制了其跨平台的靈活性。整體來看，Rift 在性能和資源使用上有顯著的優勢，但在擴展性上可能會受到檔案系統的限制。
 
 ## 技術深入分析
 
-Rift 的核心技術機制是基於 Rust 語言實現的 Copy-on-Write 檔案系統快照，這使得在創建新工作區時能夠避免重複資料的存儲。使用者可以通過 CLI 指令快速初始化和創建工作區，這些操作在性能上非常優越，特別是在處理大型資料夾時。Rift 的設計選擇使其能夠在 Linux 和 macOS 上運行，但對於 Windows 的支援仍在開發中，這可能會限制其使用範圍。整體架構中，SQLite 被用來管理工作區的元數據，這在小型專案中表現良好，但隨著工作區數量的增加，可能會出現性能瓶頸。Rift 的設計考量了開發者的使用習慣，提供了 CLI 和 FFI 接口，這使得整合到現有的開發流程中變得更加容易。未來，隨著使用者的增長，Rift 可能需要考慮如何擴展其數據管理能力，以支持更大規模的專案。
+Rift 的核心技術在於其使用的 copy-on-write 機制，這使得在創建新工作區時，能夠快速地利用現有的檔案系統快照。這種方式不僅節省了磁碟空間，還能在瞬間完成初始化。Rift 在性能上表現出色，能夠在 10GB 的資料夾上實現低於 0.1 秒的初始化時間。這樣的設計選擇使得開發者能夠在大型專案中快速創建和管理工作區，而不必擔心資源的浪費。
+
+Rust 的選擇使得整個系統在性能和安全性上都有所保證，依賴的 SQLite 資料庫也確保了操作的快速性和可靠性。設計上，Rift 需要依賴特定的檔案系統（如 btrfs 和 APFS），這在某種程度上限制了其跨平台的靈活性。未來，隨著更多檔案系統的支援，Rift 的應用場景將會更加廣泛。整合到現有的開發流程中相對簡單，尤其是對於已經使用 Node.js 或 Bun 的開發者來說，學習成本較低。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝和使用指導，包含詳細的 CLI 指令和範例。安裝過程相對順暢，但需注意目前僅支援特定檔案系統。文件中沒有多語言支援，但英文內容足夠清晰，能夠幫助新手快速上手。
+> README 文件提供了清晰的安裝和使用指引，並包含多個範例。安裝過程相對順暢，沒有明顯的坑。整體上，對於新手來說，花 30 分鐘能夠成功運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 高效的工作區管理，能夠快速創建和刪除工作區。
-> - 使用 Copy-on-Write 技術，節省磁碟空間。
-> - 支援自動執行後處理命令，提升開發效率。
+> - 快速的工作區初始化，能顯著提升開發效率。
+> - 使用 copy-on-write 技術，節省磁碟空間。
+> - 支援多種檔案系統，靈活性高。
 
 > [!danger] 缺點
-> - 目前僅支援特定的檔案系統，限制了使用範圍。
-> - 仍處於實驗階段，可能存在不穩定性。
-> - 對於 Windows 使用者的支援尚未完善。
+> - 目前僅支援 Linux 和 macOS，Windows 功能尚未完善。
+> - 處於實驗階段，接口和行為可能隨時改變。
+> - 對於非 btrfs 或 APFS 的檔案系統支援有限。
 
 > [!warning] 注意事項
 > - 目前僅支援 Linux 和 macOS，Windows 尚未實現完整功能。
-> - 仍處於實驗階段，接口和行為可能會隨時變更。
-> - 對於非 btrfs 或 APFS 的檔案系統支持有限。
+> - 需要 btrfs 或 APFS 支援，對於其他檔案系統的支援有限。
+> - 目前處於實驗階段，接口和行為可能會隨時變更。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建和管理 AI agent 的工作區，與 Rift 的開發環境管理不同。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的工作區管理功能，但不支援 Copy-on-Write 技術，效率較低。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的工作區管理功能，但主要針對 AI agent 的開發，並不專注於檔案系統的快照技術。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資源的清理和管理，並不具備 Rift 的快速初始化和 copy-on-write 特性。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 主要用於代碼生成，與 Rift 的工作區管理功能有所不同，無法直接替代。 |
 
 ## 替代方案決策
 
@@ -208,16 +213,16 @@ Rift 的核心技術機制是基於 Rust 語言實現的 Copy-on-Write 檔案系
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 AI agent 的工作區管理，使用 Python 實現，適合需要 AI 整合的開發者。 | 如果你的專案需要結合 AI agent 的功能，這個工具會更合適。 | medium，因為需要重新學習其特定的 API 和功能。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供基本的工作區管理功能，但不支援 Copy-on-Write，性能較差。 | 如果你的專案不需要高效的工作區管理，這個工具可以作為簡單的替代方案。 | low，因為其使用方式與 git worktrees 相似，學習成本低。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 AI agent 的開發，提供類似的工作區管理功能，但不專注於檔案系統的快照技術。 | 如果你的專案主要集中在 AI agent 的開發上，這個工具可能更合適。 | medium，因為需要重新適應其特定的工作流程和功能。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資源的清理和管理，並不具備 Rift 的快速初始化和 copy-on-write 特性。 | 如果你的需求主要是資源管理而非工作區創建，這個工具會更合適。 | low，因為功能上有明顯的區別，轉換成本不高。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **rift** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 AI agent 的工作區管理，使用 Python 實現，適合需要 AI 整合的開發者。 | 提供基本的工作區管理功能，但不支援 Copy-on-Write，性能較差。 |
-> | 遷移成本 | - | medium，因為需要重新學習其特定的 API 和功能。 | low，因為其使用方式與 git worktrees 相似，學習成本低。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要結合 AI agent 的功能，這個工具會更 | 如果你的專案不需要高效的工作區管理，這個工具可以作為簡單的替 |
+> | 技術路線 | 本專案 | 專注於 AI agent 的開發，提供類似的工作區管理功能，但不專注於檔案系統的快照技術。 | 專注於資源的清理和管理，並不具備 Rift 的快速初始化和 copy-on-write 特性。 |
+> | 遷移成本 | - | medium，因為需要重新適應其特定的工作流程和功能。 | low，因為功能上有明顯的區別，轉換成本不高。 |
+> | 適用場景 | 主要場景 | 如果你的專案主要集中在 AI agent 的開發上，這個工具 | 如果你的需求主要是資源管理而非工作區創建，這個工具會更合適。 |
 
 ## 成熟度評估
 
@@ -228,41 +233,50 @@ Rift 的核心技術機制是基於 Rust 語言實現的 Copy-on-Write 檔案系
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 目前不建議在生產環境中使用，適合個人或小型專案的試用。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在非 btrfs 檔案系統上初始化可能會失敗，因為缺乏對 reflink 的支持。
-  - 解法：確保使用 btrfs 或 APFS 檔案系統，或在支援的環境中運行。
-- [MEDIUM] 在創建工作區時，若後處理命令失敗，可能會導致工作區未正確註冊。
-  - 解法：使用 `--no-hooks` 參數來跳過後處理命令，確保工作區能夠成功創建。
+- **[HIGH]** 在非 btrfs 檔案系統上，初始化過程可能會失敗
+  - 解法：確保使用的檔案系統支援 reflink 或考慮使用 btrfs。
+- [MEDIUM] postcreate hooks 失敗會導致工作區無法正常使用
+  - 解法：在創建工作區時使用 --no-hooks 參數以避免此問題。
+- **[HIGH]** Windows 平台功能尚未完善，可能無法使用
+  - 解法：考慮在 Linux 或 macOS 上進行開發。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊的專案管理 | 非常適合 | Rift 提供了高效的工作區管理，能夠快速創建和刪除工作區，適合快速迭代的開發環境。 |
-| 需要在 Windows 環境下進行開發的團隊 | 不適合 | 目前 Rift 尚未支援 Windows 平台，無法滿足該情境的需求。 |
-| 大型專案的持續集成環境 | 普通 | 雖然 Rift 提供了高效的工作區管理，但在大型專案中可能會遇到性能瓶頸。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 快速的工作區初始化和管理能顯著提升開發效率。 |
+| 大型企業的多專案管理 | 普通 | 雖然支援多工作區，但對於檔案系統的依賴可能造成限制。 |
+| 需要頻繁切換環境的 DevOps 團隊 | 非常適合 | CLI 操作簡單且支援自動化，能提升工作效率。 |
+| Windows 環境的開發者 | 不適合 | 目前 Windows 尚未實現完整功能。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
 | 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，3 小時整合，能夠提高工作區管理效率，值得嘗試。
+> 花 3 小時學、2 小時整合，得到高效的工作區管理，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：Rift 本身不需要高權限，且不會存取敏感資料，但需注意依賴的外部庫的安全性。
+> 低風險：不需要高權限，並且不存取敏感資料，但需注意依賴的庫的安全性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Rift 最常與 Node.js 和 Bun 搭配使用，特別是在 JavaScript 開發環境中。典型的工作流中，開發者可以在使用 Rift 來管理工作區的同時，使用 npm 或 pnpm 來管理依賴。整合過程中，使用者可以透過 `rift init` 指令來初始化工作區，然後使用 `rift create` 來創建新的工作區，這樣的流程與現有的開發工具鏈相容性良好。常見的整合問題包括檔案系統的支援，特定檔案系統的需求可能會造成使用上的摩擦。
 
 ## 健康度儀表板
 
@@ -372,7 +386,7 @@ Rift 的核心技術機制是基於 Rust 語言實現的 Copy-on-Write 檔案系
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者持續更新和維護專案。
+**社群活躍度**：社群活躍度中等，近期有多次提交和更新。
 **連結**：[文件](https://github.com/anomalyco/rift)
 
 ## 開發動態
@@ -583,19 +597,19 @@ Rift 的核心技術機制是基於 Rust 語言實現的 Copy-on-Write 檔案系
 
 ## 延伸閱讀
 
-相關概念：[[Copy-on-Write]] · [[檔案系統快照]] · [[CLI/TUI]]
+相關概念：[[copy-on-write]] · [[檔案系統快照]] · [[CLI/TUI]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[Doorman11991--smallcode|Doorman11991/smallcode]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[Doorman11991--smallcode|Doorman11991/smallcode]]
 
 [GitHub](https://github.com/anomalyco/rift)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：工作區管理）
+> [!note]- 直接競品（同子分類：版本控制）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "工作區管理" AND file.name != "anomalyco--rift"
+> WHERE subcategory = "版本控制" AND file.name != "anomalyco--rift"
 > SORT stars DESC
 > ```
 
@@ -627,7 +641,7 @@ Rift 的核心技術機制是基於 Rust 語言實現的 Copy-on-Write 檔案系
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["Copy-on-Write","檔案系統快照","CLI/TUI"];
+> const concepts = ["copy-on-write","檔案系統快照","CLI/TUI"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "anomalyco--rift" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
