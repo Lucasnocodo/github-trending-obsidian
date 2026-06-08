@@ -2122,10 +2122,10 @@
   },
   "b-nnett/goose": {
     "first_seen": "2026-06-03",
-    "last_seen": "2026-06-07",
-    "times_seen": 5,
+    "last_seen": "2026-06-08",
+    "times_seen": 6,
     "stars_first": 752,
-    "stars_last": 2168
+    "stars_last": 2253
   },
   "zgwl/chinese-buy-us-stock-guide": {
     "first_seen": "2026-06-04",
@@ -2136,10 +2136,10 @@
   },
   "cpaczek/skylight": {
     "first_seen": "2026-06-04",
-    "last_seen": "2026-06-07",
-    "times_seen": 4,
+    "last_seen": "2026-06-08",
+    "times_seen": 5,
     "stars_first": 795,
-    "stars_last": 2083
+    "stars_last": 2265
   },
   "ClaudioDrews/memory-os": {
     "first_seen": "2026-06-04",
@@ -2150,10 +2150,10 @@
   },
   "qiuqiubuchongle-cloud/chokepoint-atlas": {
     "first_seen": "2026-06-05",
-    "last_seen": "2026-06-07",
-    "times_seen": 3,
+    "last_seen": "2026-06-08",
+    "times_seen": 4,
     "stars_first": 559,
-    "stars_last": 590
+    "stars_last": 602
   },
   "jdevalk/specification.website": {
     "first_seen": "2026-06-05",
@@ -2178,10 +2178,10 @@
   },
   "jd-opensource/JoyAI-Echo": {
     "first_seen": "2026-06-06",
-    "last_seen": "2026-06-07",
-    "times_seen": 2,
+    "last_seen": "2026-06-08",
+    "times_seen": 3,
     "stars_first": 572,
-    "stars_last": 716
+    "stars_last": 854
   },
   "anomalyco/rift": {
     "first_seen": "2026-06-06",
@@ -2192,10 +2192,10 @@
   },
   "VAST-AI-Research/TripoSplat": {
     "first_seen": "2026-06-07",
-    "last_seen": "2026-06-07",
-    "times_seen": 1,
+    "last_seen": "2026-06-08",
+    "times_seen": 2,
     "stars_first": 494,
-    "stars_last": 494
+    "stars_last": 526
   },
   "tastyeffectco/sandboxes": {
     "first_seen": "2026-06-07",
@@ -2203,5 +2203,40 @@
     "times_seen": 1,
     "stars_first": 471,
     "stars_last": 471
+  },
+  "tastyeffectco/sandboxd": {
+    "first_seen": "2026-06-08",
+    "last_seen": "2026-06-08",
+    "times_seen": 1,
+    "stars_first": 497,
+    "stars_last": 497
+  },
+  "tiantianGPU/reg-factory": {
+    "first_seen": "2026-06-08",
+    "last_seen": "2026-06-08",
+    "times_seen": 1,
+    "stars_first": 478,
+    "stars_last": 478
+  },
+  "Jane-xiaoer/xiaoer-videolab": {
+    "first_seen": "2026-06-08",
+    "last_seen": "2026-06-08",
+    "times_seen": 1,
+    "stars_first": 467,
+    "stars_last": 467
+  },
+  "S-Sigdel/vimhjkl": {
+    "first_seen": "2026-06-08",
+    "last_seen": "2026-06-08",
+    "times_seen": 1,
+    "stars_first": 403,
+    "stars_last": 403
+  },
+  "zenhosta/9drive": {
+    "first_seen": "2026-06-08",
+    "last_seen": "2026-06-08",
+    "times_seen": 1,
+    "stars_first": 398,
+    "stars_last": 398
   }
 }

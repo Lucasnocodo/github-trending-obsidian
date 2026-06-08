@@ -7,10 +7,10 @@ language: Rust
 license: N/A
 description: "Goose Swift proof-of-concept README"
 homepage: ""
-stars: 2168
-stars_per_day: 542
-forks: 505
-open_issues: 26
+stars: 2253
+stars_per_day: 451
+forks: 530
+open_issues: 27
 created: 2026-06-02
 pushed_at: 2026-06-02
 first_seen: 2026-06-03
@@ -30,8 +30,8 @@ use_case: "提供 WHOOP 5.0 健康數據的本地化應用程式原型。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-06-10"
+appearances: 6
+next_review: "2026-06-11"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-03"
-star_history: "2026-06-03:752,2026-06-03:757,2026-06-04:1470,2026-06-04:1472,2026-06-05:1869,2026-06-05:1872,2026-06-06:2120,2026-06-06:2120,2026-06-07:2168,2026-06-07:2168"
+star_history: "2026-06-03:752,2026-06-03:757,2026-06-04:1470,2026-06-04:1472,2026-06-05:1869,2026-06-05:1872,2026-06-06:2120,2026-06-06:2120,2026-06-07:2168,2026-06-07:2168,2026-06-08:2253"
 tags:
   - github
   - "category/開發工具"
@@ -874,6 +874,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-08|2026-06-08]] — 再次上榜，2.3k stars
 - [[2026-06-07|2026-06-07]] — 再次上榜，2.2k stars
 - [[2026-06-06|2026-06-06]] — 再次上榜，2.1k stars
 - [[2026-06-05|2026-06-05]] — 再次上榜，1.9k stars
