@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Project the aircraft passing overhead onto your ceiling in real time, from an RTL-SDR — with a live sky layer (sun, moon, stars, ISS) and where each plane is headed."
 homepage: ""
-stars: 2265
-stars_per_day: 453
-forks: 226
-open_issues: 11
+stars: 2391
+stars_per_day: 399
+forks: 236
+open_issues: 2
 created: 2026-06-02
-pushed_at: 2026-06-07
+pushed_at: 2026-06-08
 first_seen: 2026-06-04
 week: "2026-W23"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "將飛機實時投影到天花板，讓你在家中也能觀察飛行
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-06-11"
+appearances: 6
+next_review: "2026-06-12"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-04"
-star_history: "2026-06-04:795,2026-06-04:804,2026-06-05:1222,2026-06-06:1680,2026-06-07:2083,2026-06-08:2265"
+star_history: "2026-06-04:795,2026-06-04:804,2026-06-05:1222,2026-06-06:1680,2026-06-07:2083,2026-06-08:2265,2026-06-09:2391"
 tags:
   - github
   - "category/其他"
@@ -878,6 +878,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-09|2026-06-09]] — 再次上榜，2.4k stars
 - [[2026-06-08|2026-06-08]] — 再次上榜，2.3k stars
 - [[2026-06-07|2026-06-07]] — 再次上榜，2.1k stars
 - [[2026-06-06|2026-06-06]] — 再次上榜，1.7k stars

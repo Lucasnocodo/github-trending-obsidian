@@ -7,10 +7,10 @@ language: Go
 license: MIT
 description: "Self-hosted dev sandboxes with preview URLs. One command. No Kubernetes, perfect for coding agents and Saas factories"
 homepage: "https://upilote.com"
-stars: 497
-stars_per_day: 124
-forks: 12
-open_issues: 5
+stars: 514
+stars_per_day: 103
+forks: 13
+open_issues: 6
 created: 2026-06-03
 pushed_at: 2026-06-07
 first_seen: 2026-06-08
@@ -30,8 +30,8 @@ use_case: "提供自我托管的開發沙盒，讓每位用戶擁有隔離的雲
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-15"
+appearances: 2
+next_review: "2026-06-16"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 17
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-08"
-star_history: "2026-06-08:497"
+star_history: "2026-06-08:497,2026-06-09:514"
 tags:
   - github
   - "category/開發工具"
@@ -905,4 +905,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-09|2026-06-09]] — 再次上榜，514 stars
 - [[2026-06-08|2026-06-08]] — 首次收錄，497 stars

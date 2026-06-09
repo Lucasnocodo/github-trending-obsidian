@@ -7,12 +7,12 @@ language: Python
 license: NOASSERTION
 description: "JoyAI-Echo: Pushing the Frontier of Long Audio-Visual Generation"
 homepage: "https://echo-team-joy-future-academy-jd.github.io/Echo-LongVideo-Page/"
-stars: 854
-stars_per_day: 171
-forks: 54
-open_issues: 4
+stars: 1100
+stars_per_day: 183
+forks: 85
+open_issues: 5
 created: 2026-06-02
-pushed_at: 2026-06-07
+pushed_at: 2026-06-08
 first_seen: 2026-06-06
 week: "2026-W23"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "實現長時間音視訊生成的框架，讓用戶能夠生成連貫
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-06-15"
+appearances: 4
+next_review: "2026-06-16"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 33
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-06"
-star_history: "2026-06-06:572,2026-06-07:716,2026-06-08:854"
+star_history: "2026-06-06:572,2026-06-07:716,2026-06-08:854,2026-06-09:1100"
 tags:
   - github
   - "category/ai_ml"
@@ -879,6 +879,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-09|2026-06-09]] — 再次上榜，1.1k stars
 - [[2026-06-08|2026-06-08]] — 再次上榜，854 stars
 - [[2026-06-07|2026-06-07]] — 再次上榜，716 stars
 - [[2026-06-06|2026-06-06]] — 首次收錄，572 stars

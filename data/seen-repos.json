@@ -2122,10 +2122,10 @@
   },
   "b-nnett/goose": {
     "first_seen": "2026-06-03",
-    "last_seen": "2026-06-08",
-    "times_seen": 6,
+    "last_seen": "2026-06-09",
+    "times_seen": 7,
     "stars_first": 752,
-    "stars_last": 2253
+    "stars_last": 2322
   },
   "zgwl/chinese-buy-us-stock-guide": {
     "first_seen": "2026-06-04",
@@ -2136,10 +2136,10 @@
   },
   "cpaczek/skylight": {
     "first_seen": "2026-06-04",
-    "last_seen": "2026-06-08",
-    "times_seen": 5,
+    "last_seen": "2026-06-09",
+    "times_seen": 6,
     "stars_first": 795,
-    "stars_last": 2265
+    "stars_last": 2391
   },
   "ClaudioDrews/memory-os": {
     "first_seen": "2026-06-04",
@@ -2178,10 +2178,10 @@
   },
   "jd-opensource/JoyAI-Echo": {
     "first_seen": "2026-06-06",
-    "last_seen": "2026-06-08",
-    "times_seen": 3,
+    "last_seen": "2026-06-09",
+    "times_seen": 4,
     "stars_first": 572,
-    "stars_last": 854
+    "stars_last": 1100
   },
   "anomalyco/rift": {
     "first_seen": "2026-06-06",
@@ -2206,10 +2206,10 @@
   },
   "tastyeffectco/sandboxd": {
     "first_seen": "2026-06-08",
-    "last_seen": "2026-06-08",
-    "times_seen": 1,
+    "last_seen": "2026-06-09",
+    "times_seen": 2,
     "stars_first": 497,
-    "stars_last": 497
+    "stars_last": 514
   },
   "tiantianGPU/reg-factory": {
     "first_seen": "2026-06-08",
@@ -2220,10 +2220,10 @@
   },
   "Jane-xiaoer/xiaoer-videolab": {
     "first_seen": "2026-06-08",
-    "last_seen": "2026-06-08",
-    "times_seen": 1,
+    "last_seen": "2026-06-09",
+    "times_seen": 2,
     "stars_first": 467,
-    "stars_last": 467
+    "stars_last": 482
   },
   "S-Sigdel/vimhjkl": {
     "first_seen": "2026-06-08",
@@ -2234,9 +2234,37 @@
   },
   "zenhosta/9drive": {
     "first_seen": "2026-06-08",
-    "last_seen": "2026-06-08",
-    "times_seen": 1,
+    "last_seen": "2026-06-09",
+    "times_seen": 2,
     "stars_first": 398,
-    "stars_last": 398
+    "stars_last": 449
+  },
+  "NoopApp/noop": {
+    "first_seen": "2026-06-09",
+    "last_seen": "2026-06-09",
+    "times_seen": 1,
+    "stars_first": 532,
+    "stars_last": 532
+  },
+  "JimLiu/baoyu-design": {
+    "first_seen": "2026-06-09",
+    "last_seen": "2026-06-09",
+    "times_seen": 1,
+    "stars_first": 522,
+    "stars_last": 522
+  },
+  "diffusionstudio/lottie": {
+    "first_seen": "2026-06-09",
+    "last_seen": "2026-06-09",
+    "times_seen": 1,
+    "stars_first": 513,
+    "stars_last": 513
+  },
+  "amElnagdy/guard-skills": {
+    "first_seen": "2026-06-09",
+    "last_seen": "2026-06-09",
+    "times_seen": 1,
+    "stars_first": 470,
+    "stars_last": 470
   }
 }
