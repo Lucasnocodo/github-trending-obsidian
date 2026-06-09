@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "learn vim from your terminal with spaced repetition"
 homepage: ""
-stars: 403
-stars_per_day: 67
-forks: 6
-open_issues: 2
+stars: 423
+stars_per_day: 60
+forks: 7
+open_issues: 3
 created: 2026-06-01
 pushed_at: 2026-06-07
 first_seen: 2026-06-08
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-08
-use_case: "讓你在終端機上透過間隔重複學習 Vim 技巧。"
+use_case: "透過真實的 Vim 環境進行間隔重複學習，提升你的 Vim 技巧。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 1
 next_review: "2026-06-15"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: 67
+issue_close_rate: 57
 repo_size_kb: 673
 readme_length: 5636
 bus_factor: 1
-last_release_days: 1
+last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-08"
-star_history: "2026-06-08:403,2026-06-08:403"
+star_history: "2026-06-08:403,2026-06-08:403,2026-06-09:423"
 tags:
   - github
   - "category/其他"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "vimhjkl"
   - "S-Sigdel/vimhjkl"
-  - "讓你在終端機上透過間隔重複學習 Vim 技巧。"
+  - "透過真實的 Vim 環境進行間隔重複學習，提升你的 Vim 技巧。"
 ---
 
 # vimhjkl
 
-**403** stars · **67** stars/天 · 建立 6 天前 · Python · MIT
+**423** stars · **60** stars/天 · 建立 7 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/S-Sigdel--vimhjkl");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `v0.4.1` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓你在終端機上透過間隔重複學習 Vim 技巧。
+> 透過真實的 Vim 環境進行間隔重複學習，提升你的 Vim 技巧。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (67 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 希望透過實際操作提升 Vim 技能的開發者。
-> **一句話重點** 這個專案讓學習 Vim 的過程變得更加互動和高效，特別適合希望提升編輯技巧的開發者。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (60 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 希望在終端中有效學習 Vim 技巧的開發者，特別是那些已經有一定基礎但想要進一步提升的人。
+> **一句話重點** 這個專案的設計理念是讓學習 Vim 技巧變得更有效率，透過真實操作和即時反饋來提升學習體驗。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -104,23 +104,21 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > **安裝** Easy (一行搞定)
 
 > [!abstract] 核心創新
-> 這個專案提供了在真實 Vim 環境中進行的即時練習和評分系統，讓學習過程更具互動性。
+> 這個專案提供了一種基於實際操作的 Vim 技巧學習方式，並結合了間隔重複的學習方法。
 
 ## 專案簡介
 
-vimhjkl 是一個專為 Vim 使用者設計的終端訓練工具，透過 61 課程和 222 個經過驗證的挑戰，幫助用戶在真實的 Vim 環境中練習和掌握進階技巧。使用者可以透過命令 `vimhjkl --drill` 進行練習，系統會在編輯器旁邊顯示目標，讓用戶專注於實際操作而非記憶。這種設計使得學習過程更具互動性和實用性，並且每次練習都會根據用戶的正確性和效率進行評分，進而提升學習效果。技術上，這個工具依賴於 Vim 或 Neovim，並且不需要其他外部依賴，這使得它的安裝和使用都相對簡單。與其他 Vim 學習工具相比，vimhjkl 的獨特之處在於它的實時練習和即時反饋機制，這讓用戶能夠在實際編輯中學習，而不是僅僅依賴於靜態的教學資料。
-
-這種方法不僅能提高學習效率，還能幫助用戶在實際工作中更快地掌握 Vim 的高效操作。使用者在學習過程中可以選擇不同的模式，如 `--blind` 模式，強調記憶和回憶技巧，或是 `--practice` 模式，專注於重複練習薄弱的技能。這種靈活的學習方式使得 vimhjkl 適合各種程度的 Vim 使用者，從初學者到進階用戶都能找到合適的學習路徑。整體而言，這是一個針對 Vim 使用者的高效學習工具，值得在日常開發中使用。
+vimhjkl 是一個專為 Vim 使用者設計的終端訓練工具，透過 222 個經過驗證的挑戰來強化使用者的 Vim 技巧。使用者在編輯時，目標會顯示在緩衝區旁邊，讓他們能夠專注於實踐而非記憶。這個工具不僅提供了學習模式，還有盲測、練習和回顧等多種模式，讓使用者能夠根據自己的需求進行訓練。所有的挑戰都是基於真實的 Vim 環境進行，並且會根據使用者的按鍵輸入進行評分，這樣的設計使得學習過程更具互動性和實用性。使用者可以使用 `vimhjkl --drill` 來進行技能訓練，並且可以透過 `--reps` 參數來重複練習特定技能，這樣的設計使得學習過程不會感到單調。這個工具的核心賣點在於其針對性強的練習模式和實時反饋，讓使用者能夠在真實的編輯環境中不斷提升技能。
 
 **技術棧**：`Python 3.11` · `Ruby` · `Shell`
 
 ## 重點功能
 
-- 61 課程和 222 個挑戰 — 每個挑戰都經過驗證，確保學習內容的質量。
-- 即時反饋 — 用戶的每次操作都會被記錄並根據正確性和效率進行評分。
-- 多種練習模式 — 包括 `--drill`、`--blind`、`--practice` 等，滿足不同學習需求。
-- 靈活的設定 — 用戶可以在菜單中隨時開啟或關閉課程，並重新映射按鍵。
-- 無需額外依賴 — 僅需 Vim 或 Neovim，安裝簡單。
+- 222 個挑戰 — 每個挑戰都經過驗證，確保其有效性和實用性。
+- 多種練習模式 — 包括學習、盲測、練習和回顧，滿足不同學習需求。
+- 即時反饋 — 根據使用者的按鍵輸入進行評分，幫助使用者了解自己的進步。
+- Leitner 間隔重複 — 根據使用者的掌握情況調整挑戰的難度，確保學習效果。
+- 自定義設置 — 使用者可以根據自己的需求調整挑戰的內容和難度。
 
 ## 快速開始
 
@@ -132,54 +130,64 @@ brew install S-Sigdel/tap/vimhjkl
 ```bash
 vimhjkl
 ```
-3. 開始練習技巧
+3. 開始練習技能
 ```bash
 vimhjkl --drill
+```
+
+## 程式碼範例
+
+```python
+{
+  "前置條件": "需要安裝 vim 或 nvim 並在 PATH 中可用",
+  "指令": "vimhjkl --drill --mode blind",
+  "預期輸出": "進入盲測模式，開始練習 Vim 技巧"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 403 stars（67/天），forks 6（1.5%），這顯示出不錯的初期關注度。作者 S-Sigdel 在 Vim 社群中有一定的知名度，之前也有其他 Vim 相關的項目。這個專案解決了許多使用者在學習 Vim 時面臨的問題，特別是缺乏有效的實踐機會。社群對於這種實時練習的需求使得這個工具迅速受到關注。技術上，這個工具的設計充分利用了 Vim 的強大功能，並且提供了一個簡單的安裝過程，這使得它在技術生態中顯得格外吸引人。forks/stars 比率較低，顯示出大部分使用者對此專案的興趣仍然停留在觀望階段。
+> 建立 7 天內累積 423 stars（60/天），forks 7（1.7%），顯示出穩定的增長。作者 S-Sigdel 在 Vim 社群中有一定的影響力，並且這個工具解決了許多使用者在學習 Vim 時遇到的實際問題，例如缺乏有效的練習方式。這個工具的出現恰好填補了這一空白，並且在社群中引起了廣泛的關注。使用者對於這種基於實際操作的學習方式反應熱烈，這也促進了其快速增長。
 
 ## 適合誰使用
 
-**目標受眾**：希望透過實際操作提升 Vim 技能的開發者。
+**目標受眾**：希望在終端中有效學習 Vim 技巧的開發者，特別是那些已經有一定基礎但想要進一步提升的人。
 
 > [!example] 使用場景
-> - 新手開發者用它來學習基本的 Vim 操作，因為它提供了即時反饋和實際操作的機會，能有效提升學習效率。
-> - 經驗豐富的開發者用它來精進進階的 Vim 技巧，因為它的挑戰設計能幫助他們在實際編輯中練習高效操作。
-> - 教學者用它來輔助教學 Vim 課程，因為它的課程結構清晰，並且能夠跟蹤學習進度。
+> - 新手開發者用它來學習 Vim 的基本操作，因為它提供了即時反饋和針對性的挑戰，讓學習過程更有效率。
+> - 資深開發者用它來精進高級 Vim 技巧，因為它的挑戰是基於真實的編輯環境，能夠幫助他們在日常工作中提升效率。
+> - 教學者用它來輔助 Vim 課程，因為它的結構化挑戰能夠幫助學生在實踐中鞏固所學知識。
 
 ## 架構分析
 
-vimhjkl 採用純 Python 實作，並依賴 Vim 或 Neovim 作為編輯器。這種設計使得使用者能夠在真實環境中進行練習，而不是依賴模擬器。資料流方面，使用者的每次操作都會被記錄並評分，這些數據用於跟蹤學習進度和掌握程度。選擇這種架構的好處是簡化了安裝過程，因為不需要額外的依賴，代價是無法提供更複雜的功能。擴展性方面，由於專案依賴於 Vim 的功能，未來的擴展可能會受到 Vim 本身的限制。
+這個工具的架構設計為一個終端應用，使用者透過命令行介面進行互動。所有的挑戰和練習都是在真實的 Vim 環境中進行，這樣的設計使得學習過程更具真實感。資料流方面，使用者的每一次輸入都會被記錄並評分，這些數據用於調整後續的挑戰難度。選擇使用 Python 作為主要開發語言，因為它的標準庫足夠強大，且不需要額外的依賴，這樣可以降低使用者的安裝成本。整體架構的設計使得工具的維護和擴展變得相對簡單，並且能夠快速適應使用者的需求。
 
 ## 技術深入分析
 
-vimhjkl 的核心技術機制在於其即時反饋和練習模式，這使得用戶能夠在真實的 Vim 環境中進行有效的學習。它利用了 Vim 的命令和操作，並將這些操作轉化為可練習的挑戰，這樣的設計使得學習過程不僅僅是記憶，而是實際操作。效能方面，因為它依賴於 Vim 的執行效率，理論上可以處理相當大的資料集，但具體效能會受到用戶機器性能的影響。設計上，選擇 Python 作為主要開發語言，這使得開發過程相對簡單，但也可能導致性能瓶頸，特別是在處理大量用戶輸入時。技術風險方面，若 Vim 的更新影響到此工具的運作，可能會導致使用者體驗不佳。此外，因為它依賴於用戶的編輯器環境，這在某些情況下可能會造成不便。整合方面，這個工具可以輕鬆融入現有的 Vim 使用者工作流，但對於不熟悉終端的使用者來說，學習成本可能會較高。
+vimhjkl 的核心技術機制在於其基於真實 Vim 環境的學習方式，使用者在編輯時會看到目標，這樣的設計讓學習過程更具互動性。效能方面，因為所有挑戰都是在真實環境中進行，所以能夠準確評估使用者的技能水平。這個工具的設計選擇了 Python 作為主要開發語言，這使得開發過程相對簡單，且不需要外部依賴，降低了使用者的安裝成本。技術風險方面，這個工具依賴於使用者的 Vim 環境，因此在不同的系統上可能會遇到兼容性問題。整合方面，這個工具可以輕鬆地與現有的 Vim 工作流結合，並且不會對使用者的日常操作造成干擾。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了詳細的安裝和使用說明，包含了多個範例。安裝過程相對順暢，僅需安裝 Vim 或 Neovim。文件目前僅提供英文版本，對於非英語使用者可能會有障礙。
+> README 文件清晰且包含安裝和使用範例，安裝過程相對順暢，但需要確保 Vim 環境可用。整體來說，新手在 30 分鐘內能夠順利上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 即時反饋機制提升學習效率。
-> - 課程內容經過驗證，質量高。
-> - 多種練習模式滿足不同需求。
+> - 提供即時反饋，幫助使用者快速掌握技巧
+> - 結合間隔重複學習法，提升學習效果
+> - 挑戰內容經過驗證，確保實用性
 
 > [!danger] 缺點
-> - 不支援 Windows 系統，限制了使用者範圍。
-> - 僅支援 Python 3.11+，對於舊版本不友好。
-> - 缺乏 GUI，對於不熟悉終端的使用者可能有學習曲線。
+> - 僅支援特定版本的 Python
+> - 需要使用者具備基本的 Vim 知識
+> - 不支援 Windows 系統，限制了使用者範圍
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.11+。
-> - 需要在 PATH 中有 vim 或 nvim 的可執行檔。
-> - 不支援 Windows 系統。
+> - 僅支援 Python 3.11 以上版本
+> - 需要安裝 vim 或 nvim 並確保其在 PATH 中可用
+> - 不支援 Windows 系統
 
 ## 健康度儀表板
 
@@ -244,9 +252,9 @@ vimhjkl 的核心技術機制在於其即時反饋和練習模式，這使得用
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 6 |
-| Open Issues | 2 |
-| Issue 解決率 | 67% (4 closed) |
+| Forks | 7 |
+| Open Issues | 3 |
+| Issue 解決率 | 57% (4 closed) |
 | 最後推送 | 2026-06-07 |
 | 建立日期 | 2026-06-01 |
 | Repo 大小 | 673 KB |
@@ -277,7 +285,7 @@ vimhjkl 的核心技術機制在於其即時反饋和練習模式，這使得用
 ## 社群與生態
 
 **社群活躍度**：社群活躍度中等，開發者定期更新和回應問題。
-**連結**：[文件](https://github.com/S-Sigdel/vimhjkl)
+**連結**：[文件](https://github.com/S-Sigdel/vimhjkl#readme)
 
 ## 開發動態
 
@@ -289,6 +297,7 @@ vimhjkl 的核心技術機制在於其即時反饋和練習模式，這使得用
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
+> | [#9](https://github.com/S-Sigdel/vimhjkl/issues/9) | "Set a mark and snap back" challenge evaluation error | 0 | 0 |
 > | [#2](https://github.com/S-Sigdel/vimhjkl/issues/2) | No clear way to handle transferring keymaps. | 0 | 3 |
 > | [#1](https://github.com/S-Sigdel/vimhjkl/issues/1) | chinese please | 0 | 1 |
 
@@ -440,7 +449,7 @@ vimhjkl 的核心技術機制在於其即時反饋和練習模式，這使得用
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化測試]] · [[程式碼生成]]
+相關概念：[[CLI/TUI]] · [[自動化測試]] · [[學習工具]]
 
 相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Infatoshi--OpenSquirrel|Infatoshi/OpenSquirrel]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[jackwener--xiaohongshu-cli|jackwener/xiaohongshu-cli]] · [[knowsuchagency--mcp2cli|knowsuchagency/mcp2cli]] · [[sanbuphy--claude-code-source-code|sanbuphy/claude-code-source-code]]
 
@@ -484,7 +493,7 @@ vimhjkl 的核心技術機制在於其即時反饋和練習模式，這使得用
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化測試","程式碼生成"];
+> const concepts = ["CLI/TUI","自動化測試","學習工具"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "S-Sigdel--vimhjkl" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

@@ -20,7 +20,7 @@ category: "遊戲"
 subcategory: "水下生存"
 release_tag: "Games"
 install_complexity: "easy"
-status: to-review
+status: archived
 my_rating: 0
 score_confidence: 0
 score_interest: 0
