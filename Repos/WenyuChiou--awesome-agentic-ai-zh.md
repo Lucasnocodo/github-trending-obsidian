@@ -7,17 +7,17 @@ language: Python
 license: MIT
 description: "A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples. 中文 AI agent 學習地圖。"
 homepage: "https://wenyuchiou.github.io/awesome-agentic-ai-zh/"
-stars: 2069
-stars_per_day: 59
-forks: 254
+stars: 2313
+stars_per_day: 64
+forks: 297
 open_issues: 1
 created: 2026-05-04
-pushed_at: 2026-06-08
+pushed_at: 2026-06-09
 first_seen: 2026-05-11
 week: "2026-W20"
 month: "2026-05"
 category: "教學資源"
-subcategory: "AI agent 學習"
+subcategory: "學習路線圖"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-11
-use_case: "提供三語學習路線圖，從 LLM 基礎到多代理系統，包含 240+ 精選資源與實作範例。"
+use_case: "提供從 LLM 基礎到多代理系統的三語學習路線圖，包含 240+ 精選資源與實作範例。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-05-18"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 89
-repo_size_kb: 114258
+repo_size_kb: 114568
 readme_length: 9974
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-11"
-star_history: "2026-05-11:736,2026-05-11:744,2026-05-12:855,2026-05-13:1071,2026-05-14:1255,2026-05-15:1359,2026-05-16:1418,2026-05-17:1466,2026-05-18:1512,2026-05-19:1543,2026-05-20:1574,2026-05-21:1604,2026-05-23:1649,2026-05-24:1688,2026-05-25:1704,2026-05-26:1723,2026-05-27:1738,2026-05-29:1791,2026-05-30:1806,2026-05-31:1812,2026-06-01:1822,2026-06-02:1846,2026-06-03:1860,2026-06-04:1875,2026-06-05:1884,2026-06-06:1892,2026-06-07:1900,2026-06-08:1904,2026-06-09:2069"
+star_history: "2026-05-11:736,2026-05-11:744,2026-05-12:855,2026-05-13:1071,2026-05-14:1255,2026-05-15:1359,2026-05-16:1418,2026-05-17:1466,2026-05-18:1512,2026-05-19:1543,2026-05-20:1574,2026-05-21:1604,2026-05-23:1649,2026-05-24:1688,2026-05-25:1704,2026-05-26:1723,2026-05-27:1738,2026-05-29:1791,2026-05-30:1806,2026-05-31:1812,2026-06-01:1822,2026-06-02:1846,2026-06-03:1860,2026-06-04:1875,2026-06-05:1884,2026-06-06:1892,2026-06-07:1900,2026-06-08:1904,2026-06-09:2069,2026-06-10:2313"
 tags:
   - github
   - "category/教學資源"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "awesome-agentic-ai-zh"
   - "WenyuChiou/awesome-agentic-ai-zh"
-  - "提供三語學習路線圖，從 LLM 基礎到多代理系統，包含 240+ 精選資源與實作範例。"
+  - "提供從 LLM 基礎到多代理系統的三語學習路線圖，包含 240+ 精選資源與實作範例。"
 ---
 
 # awesome-agentic-ai-zh
 
-**2.1k** stars · **59** stars/天 · 建立 35 天前 · Python · MIT
+**2.3k** stars · **64** stars/天 · 建立 36 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/WenyuChiou--awesome-agentic-ai-zh");
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `agentic-ai` `agentic-workflows` `ai-agent` `ai-agents` `awesome-list` `chinese-llm` `claude-code` `claude-skills` `cli` `learning-roadmap` `llm` `llm-agents` `mcp` `model-context-protocol` `multi-agent-systems` `prompt-engineering` `rag` `trilingual` `tutorial`
 
 > [!summary] 一句話摘要
-> 提供三語學習路線圖，從 LLM 基礎到多代理系統，包含 240+ 精選資源與實作範例。
+> 提供從 LLM 基礎到多代理系統的三語學習路線圖，包含 240+ 精選資源與實作範例。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Growing · **熱度** Growing (59 stars/day)
+> **安裝難度** Easy · **專案狀態** Growing · **熱度** Growing (64 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 希望從零開始學習 AI agent 的開發者和研究者，特別是具備基本 Python 能力的人。
-> **一句話重點** 這個專案不僅提供了學習資源，還幫助使用者建立 AI agent 的實作能力，讓學習者能夠從理論進入實踐。
+> **適合** 希望學習 AI agent 開發的開發者和研究者，特別是對中文資源有需求的人。
+> **一句話重點** 這個專案不僅提供了理論知識，還強調實作和實際應用，特別適合希望深入理解 AI agent 的開發者和研究者。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/WenyuChiou--awesome-agentic-ai-zh");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "AI agent 學習" && p.file.name !== "WenyuChiou--awesome-agentic-ai-zh" && p.status !== "archived")
+>     .where(p => p.subcategory === "學習路線圖" && p.file.name !== "WenyuChiou--awesome-agentic-ai-zh" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,7 +103,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 AI agent 學習 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 學習路線圖 類工具_"); }
 > }
 > ```
 
@@ -111,25 +111,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > **安裝** Easy (一行搞定)
 
 > [!abstract] 核心創新
-> 這個專案提供了一個系統性的 AI agent 學習路線圖，結合了多語言資源和實作練習。
+> 這個專案提供了一個三語的 AI agent 學習路線圖，結合了大量的資源和實作範例，填補了市場上對於中文學習資源的需求。
 
 ## 專案簡介
 
-這個專案是一個針對 AI agent 的學習路線圖，涵蓋從 LLM 基礎到多代理系統的完整過程，並提供240多個精選資源和實作範例。使用者可以透過八個階段的學習路徑，從「LLM 是什麼」逐步進階到能設計多代理系統。每個階段都附有基礎練習，讓學習者能夠動手實作，並理解背後的概念。其設計考量了不同學習者的需求，提供了兩條學習路徑：CLI Power User 和 Agent Builder，適合不同程度的使用者。專案中還保留了 AI agent 領域的常見英文術語，幫助使用者更好地融入英文生態。這樣的設計不僅有助於學習者快速上手，還能讓他們在未來的學習中，無縫對接最新的技術和資源。整體而言，這是個結合了理論與實作的全面學習資源，適合希望深入了解 AI agent 的開發者和研究者。
+這個專案提供了一個全面的 AI agent 學習路線圖，涵蓋從 LLM 基礎到多代理系統的所有知識，並結合 240 多個精選資源和實作範例。學習者可以透過 8 個階段的結構化內容，從「LLM 是什麼」開始，逐步深入到多代理協作的設計與實作。每個階段都附有基礎練習，幫助學習者實際動手，並且提供了雙路徑的學習選擇，讓使用者可以選擇成為 CLI Power User 或 Agent Builder。技術上，專案使用 Python 和 Shell，並且結合了多種流行的 AI 框架和工具，這樣的設計讓學習者能夠在實際應用中獲得經驗。
+
+這個路線圖的獨特之處在於其三語支持，讓不同語言背景的學習者都能輕鬆理解並參與進來。與其他學習資源相比，這個專案不僅提供了理論知識，還強調實作和實際應用，特別適合希望深入理解 AI agent 的開發者和研究者。使用者在學習過程中可能會遇到的挑戰包括對於某些概念的理解和實作的困難，但專案提供的資源和範例能夠有效降低這些障礙。整體來看，這是一個非常成熟且有潛力的學習資源，適合各種背景的學習者，尤其是對 AI agent 開發有興趣的開發者和研究者。
 
 **技術棧**：`Python` · `Shell`
 
 ## 重點功能
 
-- 八個階段的學習路線圖 — 從 LLM 基礎到多代理系統的完整學習過程。
-- 240+ 精選資源 — 每個階段都有精選的專案和教材，並附上適合對象和教學內容。
-- 雙語學習支援 — 提供繁體中文、簡體中文和英文的內容，方便不同語言背景的學習者。
-- 基礎練習 — 每個階段都有 1-5 個實作練習，讓學習者能夠動手實作，鞏固所學知識。
-- 兩條學習路徑 — CLI Power User 和 Agent Builder，滿足不同學習者的需求。
+- 三語支持 — 提供繁體中文、簡體中文和英文的學習資源，方便不同語言背景的學習者使用。
+- 240+ 精選資源 — 每個階段都包含大量的高品質專案和教材，幫助學習者循序漸進。
+- 結構化學習路徑 — 8 個階段的學習內容，從 LLM 基礎到多代理系統的設計，涵蓋全面。
+- 實作練習 — 每個階段附有 1-5 個基礎練習，幫助學習者動手實作，增強理解。
+- 雙路徑選擇 — 提供 CLI Power User 和 Agent Builder 兩條學習路徑，滿足不同需求的學習者。
 
 ## 快速開始
 
-1. 克隆專案
+1. 克隆專案到本地
 ```bash
 git clone https://github.com/WenyuChiou/awesome-agentic-ai-zh.git
 ```
@@ -139,54 +141,54 @@ cd awesome-agentic-ai-zh
 ```
 3. 從基礎準備開始學習
 ```bash
-cat stages/00-foundations.md
+# 參考 stages/00-foundations.md
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 35 天內累積 2069 stars（59/天），forks 254（12.3%），顯示出穩定的增長趨勢。專案的主要貢獻者 WenyuChiou 在 AI 領域有豐富的經驗，並且針對 AI agent 的學習需求提供了系統性的資源，填補了市場上缺乏的學習路線圖。這個專案的出現正好符合了對 AI agent 教學資源的需求，特別是在中文社群中。社群的活躍度和高效的問題解決率（89%）也顯示出使用者對這個專案的支持和參與程度。
+> 建立 36 天就累積 2313 stars（64/天），forks 297（12.8%），顯示出強烈的社群興趣。專案的主要貢獻者 WenyuChiou 在 AI 領域有豐富的經驗，並且這個專案填補了市場上對於 AI agent 學習資源的需求，特別是在中文社群中。之前的學習資源多數集中在英文，這個專案的三語設計讓更多人能夠參與進來。社群的快速增長也可能受到社交媒體的推廣影響，尤其是在 AI 技術日益受到關注的背景下。forks/stars 比率達到 12.8%，顯示出許多開發者對於這個專案的實際應用和修改有興趣。
 
 ## 適合誰使用
 
-**目標受眾**：希望從零開始學習 AI agent 的開發者和研究者，特別是具備基本 Python 能力的人。
+**目標受眾**：希望學習 AI agent 開發的開發者和研究者，特別是對中文資源有需求的人。
 
 > [!example] 使用場景
-> - 學生用它來學習 AI agent 的基本概念，因為這個路線圖提供了循序漸進的學習方式，讓他們能夠在短時間內掌握基礎知識。
-> - 軟體工程師用它來設計自己的 AI agent，因為提供的實作範例和練習能幫助他們快速上手，並理解複雜的概念。
-> - 研究人員用它來整理文獻和撰寫論文，因為它包含了相關資源和工具的清單，能夠提升研究效率。
+> - 新手開發者用它來快速上手 AI agent 開發，因為提供了結構化的學習路徑和實作範例，能在 8-10 週內掌握基本技能。
+> - 研究生用它來深入理解 AI agent 的運作原理，因為路線圖中包含了大量的資源和實作練習，能夠幫助他們在學術研究中應用這些技術。
+> - 企業內部培訓師用它來設計 AI agent 的培訓課程，因為專案提供的多語言支持和實作範例能夠滿足不同背景學員的需求。
 
 ## 架構分析
 
-這個專案的架構以學習路線圖為核心，將 AI agent 的學習內容分為八個階段，並針對每個階段提供精選資源和實作練習。這樣的設計使得學習者能夠循序漸進地掌握知識，並在實作中鞏固學習成果。每個階段的資源都經過精心挑選，確保學習者能夠接觸到高品質的內容。這種結構化的學習方式有助於降低學習的難度，並提高學習的效率。整體而言，這個架構不僅能夠滿足初學者的需求，也能夠為有經驗的開發者提供進一步的學習資源。
+這個專案的架構以學習路線圖為核心，將資源和實作練習整合在一起。每個階段的內容都經過精心設計，確保學習者能夠循序漸進地掌握知識。專案的資料流從基礎概念開始，逐步引導學習者進入更複雜的主題，並在每個階段提供實作練習以加強理解。
+
+這樣的設計使得學習者能夠在實際應用中獲得經驗，並且能夠在未來的學習中建立堅實的基礎。選擇這種架構的代價在於需要持續更新內容以保持其時效性，尤其是在快速變化的 AI 領域。整體而言，這個架構能夠有效地支持學習者的需求，並且能夠隨著技術的進步而不斷演進。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是將 AI agent 的學習內容結構化為八個階段，並針對每個階段提供精選資源和實作練習。這樣的設計使得學習者能夠循序漸進地掌握知識，從 LLM 基礎到多代理系統的設計。效能上，這種結構化的學習方式能夠提高學習效率，並降低學習的難度。選擇 Python 作為主要語言，因為它在 AI 和機器學習領域的廣泛應用和豐富的資源。
-
-這個選擇帶來了良好的生態系統支持，但也限制了對其他語言使用者的友好度。技術風險方面，隨著 AI agent 領域的快速發展，部分資源可能會迅速過時，這需要使用者具備一定的篩選能力。整合方面，這個專案可以與主流的 AI 框架和工具鏈相容，但對於非 Python 使用者可能需要額外的適配層。整體而言，這個專案提供了一個全面的學習資源，適合希望深入了解 AI agent 的開發者和研究者。
+這個專案的核心技術機制是透過結構化的學習路線圖來引導學習者，涵蓋從 LLM 基礎到多代理系統的各個方面。每個階段的內容都經過精心策劃，並且附有實作練習，這樣的設計不僅幫助學習者理解理論，還能在實際操作中獲得經驗。專案的效能和規模特性在於其能夠支持不同背景的學習者，並且能夠隨著技術的進步而不斷更新。選擇 Python 和 Shell 作為技術棧的原因在於這些語言的廣泛應用和社群支持，使得學習者能夠輕鬆找到資源和範例。這個專案的設計取捨在於平衡理論與實作，雖然需要持續更新內容，但這樣的設計能夠有效地支持學習者的需求。技術風險方面，隨著 AI 領域的快速變化，某些內容可能會過時，因此需要定期檢查和更新。整合方面，這個專案能夠與主流的 AI 框架和工具良好整合，並且能夠在 CI/CD pipeline 中使用，這樣的特性使得它在實際應用中具有很高的價值。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的指導和範例，安裝過程相對順暢，沒有明顯的坑。文件中有詳細的快速開始指南，適合新手使用。
+> README 文件清晰，包含多語言版本和範例；安裝過程順暢，無明顯坑；有良好的快速開始指導，適合新手使用。文件目前僅提供英文和中文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供系統性的學習路線圖，適合不同程度的學習者。
-> - 包含大量精選資源，方便使用者快速找到所需內容。
-> - 支持多語言，讓不同語言背景的學習者都能受益。
+> - 提供結構化的學習路徑，讓學習者能夠循序漸進。
+> - 三語支持，滿足不同語言背景的學習者需求。
+> - 包含大量的實作練習，增強學習效果。
 
 > [!danger] 缺點
-> - 對於完全不會編程的人來說，學習曲線較陡峭。
-> - 部分資源可能隨著時間變得過時，需要使用者自行篩選。
-> - 僅支援 Python 環境，對於其他語言的使用者可能不友好。
+> - 對於完全新手可能有一定的學習曲線。
+> - 部分資源可能隨著時間更新而變動，需定期檢查最新內容。
+> - 對於不熟悉 CLI 的使用者，可能需要額外的學習時間來適應。
 
 > [!warning] 注意事項
-> - 僅支援 Python 環境，對於其他語言的使用者可能不友好。
-> - 需要一定的編程基礎，完全不會寫程式的人可能會感到困難。
-> - 部分資源可能隨著時間更新而變得過時，需要使用者自行篩選。
+> - 需要基本的 Python 和 git 知識，對於完全新手可能有一定的學習曲線。
+> - 部分資源可能隨著時間更新而變動，需定期檢查最新內容。
+> - 對於不熟悉 CLI 的使用者，可能需要額外的學習時間來適應。
 
 ## 健康度儀表板
 
@@ -251,13 +253,13 @@ cat stages/00-foundations.md
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 254 |
+| Forks | 297 |
 | Open Issues | 1 |
 | Issue 解決率 | 89% (8 closed) |
-| 最後推送 | 2026-06-08 |
+| 最後推送 | 2026-06-09 |
 | 建立日期 | 2026-05-04 |
 | 官方網站 | [Link](https://wenyuchiou.github.io/awesome-agentic-ai-zh/) |
-| Repo 大小 | 111.6 MB |
+| Repo 大小 | 111.9 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/WenyuChiou/awesome-agentic-ai-zh) |
 | Topics | `agentic-ai` `agentic-workflows` `ai-agent` `ai-agents` `awesome-list` `chinese-llm` `claude-code` `claude-skills` |
 
@@ -271,7 +273,7 @@ cat stages/00-foundations.md
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@WenyuChiou](https://github.com/WenyuChiou) | 402 |
+> | [@WenyuChiou](https://github.com/WenyuChiou) | 405 |
 > | [@github-actions[bot]](https://github.com/github-actions[bot]) | 6 |
 > | [@scott0127](https://github.com/scott0127) | 3 |
 > | [@JunLin-Bobby](https://github.com/JunLin-Bobby) | 1 |
@@ -279,13 +281,13 @@ cat stages/00-foundations.md
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，問題解決率達 89%。
+**社群活躍度**：社群活躍，問題解決率高達 89%。
 **連結**：[文件](https://wenyuchiou.github.io/awesome-agentic-ai-zh/)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-31 ~ 2026-06-08）
-> **活躍天數** 5 天 · **最新 commit** docs(outreach): add send-day packages playbook; point overlapping drafts to it
+> [!abstract] 最近 10 次 commit（2026-06-01 ~ 2026-06-09）
+> **活躍天數** 5 天 · **最新 commit** docs(models): add Claude Fable 5 (Mythos-class) across the trilingual roadmap
 
 ## README 摘錄
 
@@ -388,7 +390,7 @@ cat stages/00-foundations.md
 > 走完 **Stage 0-2（共用基礎）** 之後，依你的目的選一條學習路徑：
 > 
 > - **Track A — CLI Power User**：你想**用**現成的 CLI agent（Claude Code、Codex、OpenCode、Gemini CLI 等）把工作做順、效率拉高，不打算自己從零寫 agent。3 個 sub-stage（A1-A3）。
-> - **Track B — Agent Builder**：你想**從零打造**自己的 agent——學 framework、寫 ReAct、設計 multi-agent。Stage 3-7 是主路線。
+> - **Track B — Agent Builder**：你想**從零打造**自己的 agent——學 framework、寫 ReAct、設計 multi-agent。Stage 3-8 是主路線。
 > 
 > 兩條學習路徑**不互斥**——多數人是先走 A 把 CLI 用起來，再回到 B 學內部運作；或反過來也行。Stage 5（Claude Code 生態）兩條路徑都會用到。
 > 
@@ -474,7 +476,7 @@ cat stages/00-foundations.md
 
 ## 延伸閱讀
 
-相關概念：[[RAG]] · [[Prompt Engineering]] · [[多模態]]
+相關概念：[[MCP Protocol]] · [[Prompt Engineering]] · [[多模態]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[432539--gpt2api|432539/gpt2api]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[datawhalechina--Agent-Learning-Hub|datawhalechina/Agent-Learning-Hub]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[elder-plinius--G0DM0D3|elder-plinius/G0DM0D3]]
 
@@ -482,11 +484,11 @@ cat stages/00-foundations.md
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：AI agent 學習）
+> [!note]- 直接競品（同子分類：學習路線圖）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "AI agent 學習" AND file.name != "WenyuChiou--awesome-agentic-ai-zh"
+> WHERE subcategory = "學習路線圖" AND file.name != "WenyuChiou--awesome-agentic-ai-zh"
 > SORT stars DESC
 > ```
 
@@ -518,7 +520,7 @@ cat stages/00-foundations.md
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["RAG","Prompt Engineering","多模態"];
+> const concepts = ["MCP Protocol","Prompt Engineering","多模態"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "WenyuChiou--awesome-agentic-ai-zh" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
