@@ -7,9 +7,9 @@ language: TypeScript
 license: N/A
 description: "9Drive is a storage gateway web app for connecting multiple Google Drive accounts into one virtual storage dashboard. Users can connect Google Drive accounts, track quota, upload files, organize files with virtual folders, preview files, and let the backend route uploads to the Drive account with enough free space."
 homepage: "https://9drive.zenhosta.com"
-stars: 449
-stars_per_day: 112
-forks: 156
+stars: 473
+stars_per_day: 95
+forks: 160
 open_issues: 1
 created: 2026-06-04
 pushed_at: 2026-06-05
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-08
 use_case: "將多個 Google Drive 帳號整合到一個虛擬儲存儀表板的存儲網關應用。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-06-16"
+appearances: 3
+next_review: "2026-06-17"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-08"
-star_history: "2026-06-08:398,2026-06-09:449"
+star_history: "2026-06-08:398,2026-06-09:449,2026-06-10:473"
 tags:
   - github
   - "category/生產力"
@@ -1086,5 +1086,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-10|2026-06-10]] — 再次上榜，473 stars
 - [[2026-06-09|2026-06-09]] — 再次上榜，449 stars
 - [[2026-06-08|2026-06-08]] — 首次收錄，398 stars

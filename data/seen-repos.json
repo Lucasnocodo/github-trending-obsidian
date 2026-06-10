@@ -2206,10 +2206,10 @@
   },
   "tastyeffectco/sandboxd": {
     "first_seen": "2026-06-08",
-    "last_seen": "2026-06-09",
-    "times_seen": 2,
+    "last_seen": "2026-06-10",
+    "times_seen": 3,
     "stars_first": 497,
-    "stars_last": 514
+    "stars_last": 538
   },
   "tiantianGPU/reg-factory": {
     "first_seen": "2026-06-08",
@@ -2220,10 +2220,10 @@
   },
   "Jane-xiaoer/xiaoer-videolab": {
     "first_seen": "2026-06-08",
-    "last_seen": "2026-06-09",
-    "times_seen": 2,
+    "last_seen": "2026-06-10",
+    "times_seen": 3,
     "stars_first": 467,
-    "stars_last": 482
+    "stars_last": 493
   },
   "S-Sigdel/vimhjkl": {
     "first_seen": "2026-06-08",
@@ -2234,37 +2234,58 @@
   },
   "zenhosta/9drive": {
     "first_seen": "2026-06-08",
-    "last_seen": "2026-06-09",
-    "times_seen": 2,
+    "last_seen": "2026-06-10",
+    "times_seen": 3,
     "stars_first": 398,
-    "stars_last": 449
+    "stars_last": 473
   },
   "NoopApp/noop": {
     "first_seen": "2026-06-09",
-    "last_seen": "2026-06-09",
-    "times_seen": 1,
+    "last_seen": "2026-06-10",
+    "times_seen": 2,
     "stars_first": 532,
-    "stars_last": 532
+    "stars_last": 1029
   },
   "JimLiu/baoyu-design": {
     "first_seen": "2026-06-09",
-    "last_seen": "2026-06-09",
-    "times_seen": 1,
+    "last_seen": "2026-06-10",
+    "times_seen": 2,
     "stars_first": 522,
-    "stars_last": 522
+    "stars_last": 638
   },
   "diffusionstudio/lottie": {
     "first_seen": "2026-06-09",
-    "last_seen": "2026-06-09",
-    "times_seen": 1,
+    "last_seen": "2026-06-10",
+    "times_seen": 2,
     "stars_first": 513,
-    "stars_last": 513
+    "stars_last": 1501
   },
   "amElnagdy/guard-skills": {
     "first_seen": "2026-06-09",
-    "last_seen": "2026-06-09",
-    "times_seen": 1,
+    "last_seen": "2026-06-10",
+    "times_seen": 2,
     "stars_first": 470,
-    "stars_last": 470
+    "stars_last": 517
+  },
+  "nevertoday/zhongguo-traditional-colors": {
+    "first_seen": "2026-06-10",
+    "last_seen": "2026-06-10",
+    "times_seen": 1,
+    "stars_first": 668,
+    "stars_last": 668
+  },
+  "GordenSun/GordenSuperPPTSkills": {
+    "first_seen": "2026-06-10",
+    "last_seen": "2026-06-10",
+    "times_seen": 1,
+    "stars_first": 614,
+    "stars_last": 614
+  },
+  "vorpus/performativeUI": {
+    "first_seen": "2026-06-10",
+    "last_seen": "2026-06-10",
+    "times_seen": 1,
+    "stars_first": 521,
+    "stars_last": 521
   }
 }

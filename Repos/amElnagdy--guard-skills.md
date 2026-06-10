@@ -7,9 +7,9 @@ language: N/A
 license: MIT
 description: "Guard skills for coding agents, quality gates that catch AI-generated failure modes in code, tests, and docs"
 homepage: "https://skills.sh/amElnagdy/guard-skills"
-stars: 470
-stars_per_day: 235
-forks: 55
+stars: 517
+stars_per_day: 172
+forks: 59
 open_issues: 0
 created: 2026-06-06
 pushed_at: 2026-06-07
@@ -30,8 +30,8 @@ use_case: "為編碼代理提供質量檢查技能，捕捉 AI 生成代碼、�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-12"
+appearances: 2
+next_review: "2026-06-17"
 contributor_count: 0
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-09"
-star_history: "2026-06-09:470,2026-06-09:470"
+star_history: "2026-06-09:470,2026-06-09:470,2026-06-10:517"
 tags:
   - github
   - "category/開發工具"
@@ -818,4 +818,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-10|2026-06-10]] — 再次上榜，517 stars
 - [[2026-06-09|2026-06-09]] — 首次收錄，470 stars

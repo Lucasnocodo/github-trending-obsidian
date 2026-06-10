@@ -7,8 +7,8 @@ language: JavaScript
 license: MIT
 description: "One click on the toolbar grabs the current page's video into ~/Downloads — local yt-dlp daemon, 1800+ sites. 小耳抓视频：一键把当前页视频抓到本地。"
 homepage: ""
-stars: 482
-stars_per_day: 121
+stars: 493
+stars_per_day: 99
 forks: 76
 open_issues: 1
 created: 2026-06-04
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-08
 use_case: "一鍵將當前頁面的視頻下載到本地，支持1800多個網站。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-06-16"
+appearances: 3
+next_review: "2026-06-17"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: 5
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-08"
-star_history: "2026-06-08:467,2026-06-08:467,2026-06-09:482,2026-06-09:482"
+star_history: "2026-06-08:467,2026-06-08:467,2026-06-09:482,2026-06-09:482,2026-06-10:493"
 tags:
   - github
   - "category/開發工具"
@@ -893,5 +893,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-10|2026-06-10]] — 再次上榜，493 stars
 - [[2026-06-09|2026-06-09]] — 再次上榜，482 stars
 - [[2026-06-08|2026-06-08]] — 首次收錄，467 stars
