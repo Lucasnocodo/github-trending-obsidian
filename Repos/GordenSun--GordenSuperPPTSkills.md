@@ -7,9 +7,9 @@ language: Python
 license: N/A
 description: "AI PPT赛道终结者，史上最最最强 PPT Skill！！！  使用GPT生成豪华的图片格式PPT，然后转换为完全可编辑的PPTX文件。"
 homepage: ""
-stars: 614
-stars_per_day: 307
-forks: 69
+stars: 730
+stars_per_day: 243
+forks: 78
 open_issues: 0
 created: 2026-06-07
 pushed_at: 2026-06-07
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-13"
+appearances: 2
+next_review: "2026-06-14"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-10"
-star_history: "2026-06-10:614"
+star_history: "2026-06-10:614,2026-06-11:730"
 tags:
   - github
   - "category/other"
@@ -530,4 +530,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-11|2026-06-11]] — 再次上榜，730 stars
 - [[2026-06-10|2026-06-10]] — 首次收錄，614 stars
