@@ -790,7 +790,7 @@ cd ../frontend && npm install
 
 相關概念：[[雲端儲存]] · [[API 設計]] · [[OAuth 認證]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[GordenSun--GordenPPTSkill|GordenSun/GordenPPTSkill]] · [[OpenBMB--PilotDeck|OpenBMB/PilotDeck]] · [[XBuilderLAB--cheat-on-content|XBuilderLAB/cheat-on-content]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[GordenSun--GordenPPTSkill|GordenSun/GordenPPTSkill]] · [[OpenBMB--PilotDeck|OpenBMB/PilotDeck]] · [[XBuilderLAB--cheat-on-content|XBuilderLAB/cheat-on-content]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]]
 
 [GitHub](https://github.com/zenhosta/9drive) · [官方網站](https://9drive.zenhosta.com)
 

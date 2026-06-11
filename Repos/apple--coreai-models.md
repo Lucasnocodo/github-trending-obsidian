@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-11
-use_case: "提供用於在設備上運行 AI 的模型導出配方、Python 基本元件和 Swift 運行時工具。"
+use_case: "提供模型導出配方、Python 基本元件和 Swift 運行時工具，方便在設備上進行 AI 開發。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-11"
-star_history: "2026-06-11:618"
+star_history: "2026-06-11:618,2026-06-11:618"
 tags:
   - github
   - "category/ai_ml"
@@ -51,7 +51,7 @@ tags:
 aliases:
   - "coreai-models"
   - "apple/coreai-models"
-  - "提供用於在設備上運行 AI 的模型導出配方、Python 基本元件和 Swift 運行時工具。"
+  - "提供模型導出配方、Python 基本元件和 Swift 運行時工具，方便在設備上進行 AI 開發。"
 ---
 
 # coreai-models
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供用於在設備上運行 AI 的模型導出配方、Python 基本元件和 Swift 運行時工具。
+> 提供模型導出配方、Python 基本元件和 Swift 運行時工具，方便在設備上進行 AI 開發。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (309 stars/day)
 > **授權** BSD-3-Clause (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Low
-> **適合** 希望在 Apple 硬體上運行 AI 模型的開發者和團隊。
-> **一句話重點** 這個專案展示了如何將流行的開源模型無縫集成到 Apple 生態系統中，並充分利用其硬體優勢。
+> **適合** 專注於 Apple 生態系統的開發者，特別是需要在 iOS 和 macOS 上運行 AI 模型的工程師。
+> **一句話重點** 這個專案讓開發者能夠在 Apple 設備上輕鬆運行 AI 模型，充分發揮 Apple 硬體的性能。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,27 +101,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到優化的 Apple 硬體支持，值得考慮。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學、10 小時整合，得到在 Apple 設備上運行 AI 模型的能力，值得一試。
 
 > [!abstract] 核心創新
-> 提供針對 Apple 硬體的專用模型導出和運行時工具。
+> 提供針對 Apple 硬體優化的模型導出和運行時工具，讓開發者能夠輕鬆在 iOS 和 macOS 上運行 AI 模型。
 
 ## 專案簡介
 
-這個專案的核心機制是提供一系列工具和配方，讓開發者能夠將流行的開源模型（如 Hugging Face 的模型）導出為 Core AI 格式，並在 macOS 和 iOS 上運行。使用者可以透過 CLI 指令 `uv run coreai.model.registry --list-models` 來探索支持的模型，並根據 README 中的指示進行導出和集成。這個工具的賣點在於它的跨平台支持和針對 Apple 硬體的優化，特別是針對 Apple Silicon 的性能提升。技術上，專案使用 Python 和 Swift 進行開發，並依賴於 `uv` 工具來管理環境和依賴，這使得開發者能夠輕鬆地導出和運行模型。與其他類似工具相比，如 `0x0funky/agent-sprite-forge` 和 `0xGF/boneyard`，這個專案專注於 Apple 生態系統，提供針對 Apple 硬體的優化和集成，這在性能上有明顯的優勢。
+Core AI Models 提供了一套完整的工具，讓開發者能夠將流行的開源模型從 Hugging Face 等來源導出為 Core AI 格式，並在 macOS 和 iOS 上運行。使用者可以透過 `uv` 工具安裝和運行模型，並利用 CLI 指令如 `uv run coreai.model.registry --list-models` 獲取支援的模型列表。這個專案的賣點在於其高度整合的生態系統，結合了 Python 和 Swift，讓開發者能夠輕鬆地將 AI 模型嵌入到 Apple 的生態系統中。技術上，這個專案使用了 Python 來實現模型的導出和處理，而 Swift 則負責在 Apple 設備上運行這些模型，提供了高效的運行時環境。與其他工具相比，如 Hugging Face 的 `transformers`，Core AI Models 提供了針對 Apple 硬體的優化，能夠更好地利用 Apple Silicon 的性能。
 
-實際使用中，開發者可能會遇到模型導出過程中的資源需求問題，特別是對於需要額外資源的語言模型。維護者的活躍度相對較高，但目前不接受外部貢獻，這可能會限制社群的參與度。這個專案目前處於 beta 階段，對於需要在 Apple 硬體上運行 AI 模型的開發者來說，值得考慮使用。適合的使用場景包括需要將 PyTorch 模型導出到 Apple 生態系統的開發者，或是希望利用 Core AI 進行應用開發的團隊。
+這個專案的依賴相對輕量，主要依賴於 `uv` 和一些測試工具。使用者在實際應用中可能會遇到模型導出過程中的資源需求問題，特別是對於需要額外資源的模型，如語言模型和擴散模型。這個專案目前處於早期階段，但已經有活躍的社群和開發者參與，未來可能會持續增強其功能和支援的模型範圍。對於小型團隊或個人開發者來說，這是一個值得關注的工具，特別是那些專注於 Apple 生態系統的開發者。
 
 **技術棧**：`Python` · `Swift` · `C++` · `C`
 
 ## 重點功能
 
-- 模型導出配方 — 提供將 Hugging Face 模型導出為 Core AI 格式的詳細步驟。
-- Python 基本元件 — 用於創建自定義 Core AI 模型的可重用 Python 元件。
-- Swift 運行時工具 — 集成 Core AI 模型到 macOS 和 iOS 應用的工具包。
-- CLI 工具 — 直接在 Mac 上運行導出的模型，支持 Xcode 27.0+。
-- 插件技能 — 幫助編碼代理有效利用 Core AI 的技能插件。
+- 模型導出 — 提供從 Hugging Face 等來源導出模型的配方，生成可在 Core AI 上運行的 `.aimodel` 文件。
+- Python 基本元件 — 提供用於自定義 Core AI 模型的 Python 建構塊，方便開發者進行模型設計。
+- Swift 運行時工具 — 專為 macOS 和 iOS 應用設計的運行時工具，支持將 AI 模型整合到應用中。
+- CLI 工具 — 提供命令行工具來直接在 Mac 上運行導出的模型，簡化測試和調試流程。
+- 插件技能 — 包含幫助編碼代理有效利用 Core AI 的插件技能，提升開發效率。
 
 ## 快速開始
 
@@ -129,75 +129,80 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 brew install uv
 ```
-2. 克隆專案並列出支持的模型
+2. 克隆專案並進入目錄
 ```bash
-git clone https://github.com/apple/coreai-models.git && cd coreai-models && uv run coreai.model.registry --list-models
+git clone https://github.com/apple/coreai-models.git && cd coreai-models
 ```
-3. 查看每個模型的 README 獲取導出配方
+3. 列出支援的模型
 ```bash
-# README 未提供程式碼範例
+uv run coreai.model.registry --list-models
 ```
 
 ## 程式碼範例
 
 ```python
 {
-  "前置條件": "需要安裝 uv 工具和 Xcode 27.0+",
+  "前置條件": "已安裝 uv 工具",
   "指令": "uv run coreai.model.registry --list-models",
-  "預期輸出": "列出支持的模型清單"
+  "預期輸出": "列出所有支援的模型"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天就累積 618 stars（309/天），forks 36（5.8%），顯示出相對穩定的關注度。主要貢獻者來自 Apple 的開發團隊，這些人對於 Apple 生態系統有深厚的理解。這個專案解決了將流行開源模型導出到 Apple 硬體的需求，過去開發者通常需要手動處理模型轉換，這樣的過程繁瑣且容易出錯。隨著 Apple 硬體性能的提升，對於高效能 AI 應用的需求也隨之增加，這使得這個工具的出現正好滿足了市場需求。forks/stars 比率顯示出一定的實際使用情況，這意味著有開發者在進行實際的修改和使用。
+> 建立 2 天就累積 618 stars（309/天），forks 36（5.8%），顯示出對於 Apple 生態系統開發者的強烈興趣。這個專案的主要貢獻者來自 Apple，過去有豐富的開發經驗，能夠針對 Apple 硬體進行優化。它解決了在 Apple 設備上運行 AI 模型的需求，之前開發者需要依賴其他平台的工具，無法充分利用 Apple 硬體的性能。社群的反饋也顯示出對於特定模型支援的需求，如 Qwen 3.6 的請求，這反映出使用者對於擴展性的期待。這個工具的出現是因為 Apple 在 AI 領域的努力，尤其是針對其硬體的優化，使得這個工具的實用性大幅提升。
 
 ## 適合誰使用
 
-**目標受眾**：希望在 Apple 硬體上運行 AI 模型的開發者和團隊。
+**目標受眾**：專注於 Apple 生態系統的開發者，特別是需要在 iOS 和 macOS 上運行 AI 模型的工程師。
 
 > [!example] 使用場景
-> - AI 開發者用它來將 Hugging Face 模型導出為 Core AI 格式，因為這樣能夠在 Apple 硬體上獲得更好的性能和兼容性。
-> - iOS 開發者用它來集成 AI 模型到自己的應用中，因為它提供了簡單的 Swift 工具來進行模型的運行和管理。
-> - 數據科學家用它來探索不同的模型壓縮技術，因為這可以幫助他們在 Apple 設備上運行更高效的模型。
+> - iOS 開發者用它來將 Hugging Face 模型導出為 Core AI 格式，因為這樣可以在 Apple 設備上高效運行，充分利用 Apple Silicon 的性能。
+> - 機器學習工程師用它來快速測試和部署自定義的 PyTorch 模型，因為它提供了簡單的 CLI 工具來導出和運行模型。
+> - 獨立開發者用它來整合 AI 功能到自己的應用中，因為它的 Swift 運行時工具能夠無縫嵌入到 iOS 應用中。
 
 ## 架構分析
 
-這個專案的架構設計專注於提供一個簡單的模型導出和運行時集成流程。使用 Python 實現模型導出配方，並通過 Swift 提供運行時工具，這樣的設計使得開發者能夠在 Apple 硬體上高效運行 AI 模型。資料流上，模型首先在 Python 中被導出為 `.aimodel` 格式，然後通過 Swift 工具進行集成。這樣的選擇帶來了高效的性能，但也限制了跨平台的靈活性。未來擴展性方面，隨著 Apple 硬體的進一步發展，可能需要考慮支持更多的模型格式和資源管理策略。
+Core AI Models 的架構設計旨在提供一個無縫的開發體驗，結合 Python 和 Swift 兩種語言。Python 負責模型的導出和處理，使用者可以透過簡單的 CLI 指令來操作，而 Swift 則提供了運行時環境，讓模型能夠在 Apple 設備上運行。這種設計使得開發者能夠專注於模型的開發，而不必擔心底層的細節。
+
+選擇 Python 作為主要開發語言是因為其在機器學習領域的廣泛應用，而 Swift 的選擇則是為了充分利用 Apple 硬體的性能。這樣的架構雖然增加了學習成本，但卻能提供更好的性能和整合性。未來的擴展性將依賴於社群的參與和對新模型的支援，這可能成為一個瓶頸。
+
+整體而言，這個架構適合小型到中型的開發團隊，特別是那些專注於 Apple 生態系統的團隊。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是將流行的開源模型轉換為 Core AI 格式，使用 Python 實現導出配方，並利用 Swift 提供運行時工具。這樣的設計使得開發者能夠在 Apple 硬體上高效運行 AI 模型。效能上，專案能夠處理多種模型類型，並支持在 Apple Silicon 上的優化運行。設計上選擇 Python 和 Swift 的組合，帶來了良好的開發體驗，但也限制了跨平台的靈活性。技術風險方面，隨著模型數量的增加，可能會面臨資源管理的挑戰。整合上，這個專案與 Apple 的開發工具鏈（如 Xcode）有良好的相容性，但對於其他平台的支持則較弱。
+Core AI Models 的核心技術機制在於其模型導出和運行時工具的整合。使用 Python 來處理模型的導出，並利用 Swift 提供運行時環境，這樣的選擇使得開發者能夠在 Apple 硬體上獲得最佳性能。專案的效能特性尚未明確，但由於其針對 Apple 硬體的優化，預期能夠處理中小型的模型，並在 Apple Silicon 上達到較低的延遲和高效能。設計上，選擇 Python 作為主要開發語言是因為其在機器學習領域的廣泛應用，而 Swift 的選擇則是為了充分利用 Apple 硬體的性能。這樣的架構雖然增加了學習成本，但卻能提供更好的性能和整合性。未來的擴展性將依賴於社群的參與和對新模型的支援，這可能成為一個瓶頸。整體而言，這個架構適合小型到中型的開發團隊，特別是那些專注於 Apple 生態系統的團隊。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了安裝步驟和使用範例，安裝過程順暢，無明顯坑。提供了良好的入門指南，但目前僅有英文文件，缺乏多語言支持。
+> README 文件清晰，提供了安裝和使用的詳細步驟。安裝過程相對順暢，但需要注意 Xcode 的版本要求。文件中有針對每個模型的 README，讓使用者能夠快速上手。多語言支持方面，僅提供英文文件。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 針對 Apple 硬體的優化，性能優越。
-> - 提供詳細的模型導出配方，簡化開發流程。
-> - 支持多種模型類型，靈活性高。
+> - 針對 Apple 硬體的優化，能夠充分發揮性能。
+> - 提供簡單的 CLI 工具，方便開發者快速上手。
+> - 結合 Python 和 Swift，讓開發者能夠利用兩者的優勢。
 
 > [!danger] 缺點
-> - 僅限於 Apple 生態系統，缺乏跨平台支持。
-> - 不接受外部貢獻，社群參與度有限。
-> - 某些模型導出過程中可能需要額外資源，增加複雜性。
+> - 目前僅支援 macOS 和 iOS，限制了使用範圍。
+> - 需要 Xcode 環境，增加了安裝的複雜性。
+> - 某些模型的導出過程需要額外的資源，可能會增加開發負擔。
 
 > [!warning] 注意事項
-> - 僅支援 macOS 和 iOS 27.0+。
-> - 需要 Xcode 27.0+ 來編譯和運行模型。
-> - 某些模型需要額外的資源，如 tokenizer 或多個模型的資源文件。
+> - 僅支援 macOS 和 iOS 27.0+
+> - 需要 Xcode 27.0+ 進行編譯和運行
+> - 某些模型需要額外資源，如 tokenizer 和多個模型的資源文件
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於多平台的 AI 代理，而本專案專注於 Apple 生態系統的模型導出和集成。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更廣泛的模型支持，但缺乏針對 Apple 硬體的優化。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供了不同的 AI 模型整合方案，但不專注於 Apple 生態系統，適合跨平台使用。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於多代理系統的開發，與本專案的單一模型導出功能有所不同。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 提供了更廣泛的模型支援，但缺乏針對 Apple 硬體的優化。 |
 
 ## 替代方案決策
 
@@ -205,46 +210,47 @@ git clone https://github.com/apple/coreai-models.git && cd coreai-models && uv r
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體用量少，但生態系統支持不如 Python。 | 如果你的團隊需要跨平台支持且對性能要求不高，這是個不錯的選擇。 | medium，因為需要重新適應 Rust 的開發環境。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更廣泛的模型支持，但缺乏針對 Apple 硬體的優化。 | 如果你需要更多的模型選擇且不在乎性能，這是更好的選擇。 | low，因為大多數模型的導出過程相似。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供了不同的 AI 模型整合方案，但不專注於 Apple 生態系統，適合跨平台使用。 | 如果你的團隊需要在多平台上運行 AI 模型，而不僅限於 Apple 硬體。 | medium，因為需要重新調整模型導出和運行的流程。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 提供了更廣泛的模型支援，但缺乏針對 Apple 硬體的優化。 | 如果你的團隊需要支援多種模型，而不僅限於 Apple 硬體的優化。 | high，因為需要重新適應不同的模型導出和運行環境。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **coreai-models** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **coreai-models** | **agent-sprite-forge** | **claude-obsidian** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量少，但生態系統支持不如 Python。 | 提供更廣泛的模型支持，但缺乏針對 Apple 硬體的優化。 |
-> | 遷移成本 | - | medium，因為需要重新適應 Rust 的開發環境。 | low，因為大多數模型的導出過程相似。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要跨平台支持且對性能要求不高，這是個不錯的選擇 | 如果你需要更多的模型選擇且不在乎性能，這是更好的選擇。 |
+> | 技術路線 | 本專案 | 提供了不同的 AI 模型整合方案，但不專注於 Apple 生態系統，適合跨平台使用。 | 提供了更廣泛的模型支援，但缺乏針對 Apple 硬體的優化。 |
+> | 遷移成本 | - | medium，因為需要重新調整模型導出和運行的流程。 | high，因為需要重新適應不同的模型導出和運行環境。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要在多平台上運行 AI 模型，而不僅限於 Ap | 如果你的團隊需要支援多種模型，而不僅限於 Apple 硬體的 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合開發者試用，但不建議在生產環境中使用。
+> 適合個人 side project 試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 某些模型在導出時需要額外的資源，可能導致失敗
-  - 解法：確保所有依賴資源都已準備好再進行導出
-- [MEDIUM] 在不同版本的 Xcode 中可能會遇到兼容性問題
-  - 解法：使用最新版本的 Xcode 以避免問題
-- [MEDIUM] 導出過程中可能會出現性能瓶頸
-  - 解法：在高性能的 Apple Silicon 硬體上運行導出過程
+- **[HIGH]** 某些模型的導出過程中可能會缺少必要的資源文件
+  - 解法：仔細檢查每個模型的 README，確保所有資源都已正確導出
+- [MEDIUM] 在特定版本的 Xcode 上可能會遇到編譯錯誤
+  - 解法：確保使用最新版本的 Xcode，並查看 GitHub 上的相關問題
+- [MEDIUM] 對於大型模型，導出過程可能會耗時較長
+  - 解法：提前規劃導出時間，避免在緊急情況下進行導出
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要在 Apple 硬體上運行 AI 模型的開發團隊 | 非常適合 | 專案專注於 Apple 生態系統，提供優化的運行時支持。 |
-| 希望將 PyTorch 模型導出到 Apple 應用的開發者 | 非常適合 | 提供詳細的導出配方和工具。 |
-| 需要跨平台支持的 AI 開發者 | 不適合 | 僅支持 Apple 生態系統，缺乏跨平台功能。  |
+| 小型團隊開發 iOS 應用 | 非常適合 | 提供了針對 Apple 硬體的優化，能夠充分發揮性能。 |
+| 需要在多平台上運行的 AI 模型 | 不適合 | 目前僅支援 macOS 和 iOS，限制了使用範圍。 |
+| 個人開發者進行 AI 原型開發 | 適合 | 提供了簡單的 CLI 工具，方便快速上手。 |
+| 大型企業的生產環境 | 普通 | 目前處於 alpha 階段，穩定性和支援性尚未完全驗證。 |
 
 ## 採用成本分析
 
@@ -256,12 +262,12 @@ git clone https://github.com/apple/coreai-models.git && cd coreai-models && uv r
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到優化的 Apple 硬體支持，值得考慮。
+> 花 5 小時學、10 小時整合，得到在 Apple 設備上運行 AI 模型的能力，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：專案不需要高權限，且不存取敏感資料，但需要注意依賴鏈的安全性。
+> 低風險：該工具不需要高權限運行，且不會存取敏感資料。依賴鏈的信任程度較高，主要依賴於 Python 和 Swift 的標準庫。
 
 ## 健康度儀表板
 
@@ -352,7 +358,7 @@ git clone https://github.com/apple/coreai-models.git && cd coreai-models && uv r
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，主要集中在問題回報和功能請求上。
+**社群活躍度**：社群活躍，最近有多個提交和問題回覆。
 **連結**：[文件](https://github.com/apple/coreai-models)
 
 ## 開發動態
@@ -528,9 +534,9 @@ git clone https://github.com/apple/coreai-models.git && cd coreai-models && uv r
 
 ## 延伸閱讀
 
-相關概念：[[模型導出]] · [[AI 在移動設備上的應用]] · [[Apple 硬體優化]]
+相關概念：[[模型導出]] · [[AI 在移動設備上的應用]] · [[Swift 開發]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]]
 
 [GitHub](https://github.com/apple/coreai-models)
 
@@ -572,7 +578,7 @@ git clone https://github.com/apple/coreai-models.git && cd coreai-models && uv r
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["模型導出","AI 在移動設備上的應用","Apple 硬體優化"];
+> const concepts = ["模型導出","AI 在移動設備上的應用","Swift 開發"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "apple--coreai-models" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

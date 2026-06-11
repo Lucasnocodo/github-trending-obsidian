@@ -7,8 +7,8 @@ language: JavaScript
 license: MIT
 description: "One click on the toolbar grabs the current page's video into ~/Downloads — local yt-dlp daemon, 1800+ sites. 小耳抓视频：一键把当前页视频抓到本地。"
 homepage: ""
-stars: 493
-stars_per_day: 99
+stars: 504
+stars_per_day: 84
 forks: 76
 open_issues: 1
 created: 2026-06-04
@@ -16,7 +16,7 @@ pushed_at: 2026-06-07
 first_seen: 2026-06-08
 week: "2026-W24"
 month: "2026-06"
-category: "其他"
+category: "開發工具"
 subcategory: "視頻下載工具"
 release_tag: "v1.0.1"
 install_complexity: "medium"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-08
-use_case: "一鍵將當前頁面視頻下載到本地，支持1800+個網站。"
+use_case: "一鍵將當前頁面的視頻下載到本地，支持1800多個網站。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,14 +38,14 @@ issue_close_rate: 50
 repo_size_kb: 849
 readme_length: 9998
 bus_factor: 1
-last_release_days: 6
+last_release_days: 7
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-08"
-star_history: "2026-06-08:467,2026-06-08:467,2026-06-09:482,2026-06-09:482,2026-06-10:493,2026-06-10:493"
+star_history: "2026-06-08:467,2026-06-08:467,2026-06-09:482,2026-06-09:482,2026-06-10:493,2026-06-10:493,2026-06-11:504"
 tags:
   - github
-  - "category/其他"
+  - "category/開發工具"
   - "lang/javascript"
   - "topic/bilibili"
   - "topic/chrome_extension"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "xiaoer-videolab"
   - "Jane-xiaoer/xiaoer-videolab"
-  - "一鍵將當前頁面視頻下載到本地，支持1800+個網站。"
+  - "一鍵將當前頁面的視頻下載到本地，支持1800多個網站。"
 ---
 
 # xiaoer-videolab
 
-**493** stars · **99** stars/天 · 建立 5 天前 · JavaScript · MIT
+**504** stars · **84** stars/天 · 建立 6 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Jane-xiaoer--xiaoer-videolab");
@@ -78,13 +78,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `bilibili` `chrome-extension` `launchd` `macos` `manifest-v3` `privacy-friendly` `video-downloader` `youtube-dl` `yt-dlp`
 
 > [!summary] 一句話摘要
-> 一鍵將當前頁面視頻下載到本地，支持1800+個網站。
+> 一鍵將當前頁面的視頻下載到本地，支持1800多個網站。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (99 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** 3 人 · **參與度** Medium
-> **適合** 需要快速、安全地下載視頻的 macOS 用戶，尤其是開發者和內容創作者。
-> **一句話重點** Xiaoer VideoLab 的最大優勢在於其本地化的視頻下載方式，讓用戶在享受便利的同時也能保障隱私。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (84 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** 3 人 · **參與度** Medium
+> **適合** 希望安全下載網頁視頻的普通用戶和開發者。
+> **一句話重點** Xiaoer VideoLab 的本地運行設計不僅提升了安全性，還簡化了用戶的下載流程。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -107,33 +107,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到快速下載視頻的效果，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，1 小時整合，得到一個安全且功能強大的視頻下載工具，值得採用。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於將視頻下載的過程完全本地化，避免了許多擴展面臨的隱私問題。
+> 本工具的創新之處在於其本地運行的設計，確保用戶的隱私和安全。
 
 ## 專案簡介
 
-Xiaoer VideoLab 是一個基於 `yt-dlp` 的本地視頻下載工具，使用者只需點擊工具欄按鈕，即可將當前頁面上的視頻下載到本地的 `~/Downloads` 目錄。其核心流程是：擴展從瀏覽器獲取當前頁面的 URL，然後通過本地運行的 Python daemon 將該 URL 發送給 `yt-dlp` 進行下載。這種設計的好處在於，所有的下載操作都是在本地進行，避免了許多網頁擴展常見的隱私問題，並且用戶可以完全控制下載過程。關鍵指令包括安裝 `yt-dlp` 和 `ffmpeg`，以及運行安裝腳本 `./scripts/install.sh`。
+Xiaoer VideoLab 是一個簡單的工具，透過一個瀏覽器擴展按鈕，將當前頁面的視頻下載到本地。用戶只需點擊工具欄按鈕，該擴展會將當前標籤的 URL 發送到本地運行的 Python daemon，然後由 yt-dlp 下載視頻，最終將文件保存在用戶的下載資料夾中。這種設計的優勢在於，所有的下載過程都在用戶的本地機器上進行，避免了許多網頁擴展的安全風險。用戶可以透過簡單的命令行安裝 yt-dlp 和 ffmpeg，並設定一些可選參數，如最大視頻高度和文件名前綴。核心賣點是支持超過1800個網站，包括 YouTube、Bilibili 和 TikTok 等，並且可以在 macOS 和 Windows 環境下運行。關鍵指令包括 `brew install yt-dlp ffmpeg` 和 `./scripts/install.sh`，這使得安裝過程相對簡單且直觀。
 
-技術上，Xiaoer VideoLab 使用 Python 標準庫的 `http.server` 作為 daemon，並利用 `launchd` 在 macOS 上自動啟動。
-
-這使得它在啟動時能夠保持輕量且高效，並且支持多達 1800 多個視頻網站的下載，這是通過 `yt-dlp` 的強大提取器實現的。與其他下載工具相比，如 `youtube-dl`，Xiaoer VideoLab 的優勢在於其簡單的用戶界面和本地化的操作，減少了對網絡的依賴。
-
-在使用上，這個工具的限制主要在於不支持某些需要登錄的視頻網站，如 VIP 內容的 Youku 和 iQiyi，此外，對於 Weibo 和 Zhihu 等網站的支持也不推薦，因為這些網站的視頻地址不易獲取。維護方面，社群活躍度良好，開發者定期更新，並且有 GitHub Actions 進行 CI/CD，確保代碼質量和安全性。
-
-總體來看，Xiaoer VideoLab 是一個穩定的工具，適合需要快速下載視頻的用戶，特別是對於經常使用 macOS 的開發者來說，這個工具的設計理念和實現方式都非常友好。
-
-**技術棧**：`Python 3.11` · `JavaScript` · `Shell` · `HTML` · `CSS`
+**技術棧**：`Python` · `JavaScript` · `Shell`
 
 ## 重點功能
 
-- 一鍵下載 — 點擊工具欄按鈕即可將當前頁面視頻下載到本地。
-- 支持1800+網站 — 包括 YouTube、Bilibili、TikTok 等主流視頻平台。
-- 本地化操作 — 所有下載過程在本地進行，無需依賴外部伺服器。
-- 自動更新 — `yt-dlp` 每週自動更新，保持對新網站的支持。
-- 簡單配置 — 透過環境變數自定義下載參數，如視頻高度和文件前綴。
+- 一鍵下載 — 點擊工具欄按鈕即可將當前頁視頻下載到本地。
+- 支持1800多個網站 — 包括 YouTube、Bilibili、TikTok 等主流視頻平台。
+- 本地運行的 Python daemon — 所有下載過程在本地進行，避免安全風險。
+- 可配置參數 — 用戶可以設定最大視頻高度、文件名前綴等。
+- 自動更新 — yt-dlp 每週自動更新，確保持續支持新網站。
 
 ## 快速開始
 
@@ -154,7 +146,7 @@ git clone https://github.com/Jane-xiaoer/xiaoer-videolab.git && cd xiaoer-videol
 
 ```js
 {
-  "前置條件": "已安裝 Homebrew 和 yt-dlp",
+  "前置條件": "用戶已安裝 Homebrew、yt-dlp 和 ffmpeg。",
   "指令": "VIDEOLAB_MAX_HEIGHT=2160 VIDEOLAB_COOKIES_BROWSER=chrome VIDEOLAB_PREFIX=\"小耳-\" ./scripts/install.sh",
   "預期輸出": "Daemon running at http://127.0.0.1:7788"
 }
@@ -163,74 +155,48 @@ git clone https://github.com/Jane-xiaoer/xiaoer-videolab.git && cd xiaoer-videol
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 在建立的 5 天內，Xiaoer VideoLab 累積了 493 stars（每天約 99 stars），forks 數量為 76（15.4%），顯示出不錯的社群關注度。這個專案由 Jane-xiaoer 和其他貢獻者共同開發，解決了許多視頻下載工具的隱私問題，因為它不需要遠端伺服器或過多的權限請求。這個工具的出現正好填補了市場上對於輕量、安全的本地視頻下載解決方案的需求，並且在 GitHub 上的活躍度和更新頻率也顯示出其潛在的長期發展性。
+> 建立 6 天就累積 504 stars（84/天），forks 76（15.1%），這顯示出不錯的社群反響。作者 Jane-xiaoer 之前的開源專案有良好的評價，這個專案解決了許多視頻下載工具的安全性問題，特別是針對惡意網站的防護。最近的 GitHub Actions 更新和安全強化也吸引了開發者的注意。這個工具的出現是因為用戶對於隱私和安全的需求越來越高，尤其是在使用網頁擴展時。高達15.1%的 forks/stars 比率顯示出許多人在實際修改和使用這個工具，而不僅僅是觀望。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速、安全地下載視頻的 macOS 用戶，尤其是開發者和內容創作者。
+**目標受眾**：希望安全下載網頁視頻的普通用戶和開發者。
 
 > [!example] 使用場景
-> - 學生用它來下載教學視頻，因為可以快速獲取所需的學習資源，避免了網絡不穩定的問題。
-> - 內容創作者用它來抓取靈感來源的視頻，因為它支持多達1800個網站，方便多樣化的內容收集。
-> - 開發者用它來測試視頻下載功能，因為可以在本地環境中快速驗證下載流程，提升開發效率。
+> - 學生用它來快速下載網上課程的視頻，因為這樣可以離線學習，避免網路不穩定的問題。
+> - 內容創作者用它來收集靈感，快速抓取各大平台的視頻素材，因為它支持1800多個網站，節省了大量時間。
+> - 技術愛好者用它來測試視頻下載的功能，因為它的本地運行方式讓他們可以更好地控制下載過程和安全性。
 
 ## 架構分析
 
-Xiaoer VideoLab 的架構由一個本地 Python daemon 和一個 Chrome 擴展組成。daemon 使用 Python 標準庫的 `http.server`，在本地端口 7788 上運行，負責接收來自擴展的請求並調用 `yt-dlp` 進行視頻下載。這種設計使得所有的數據處理都在本地進行，減少了對網絡的依賴和潛在的隱私風險。
+Xiaoer VideoLab 的架構主要由一個 Python daemon 和一個 Chrome 擴展組成。daemon 使用 Python 標準庫的 http.server 來監聽本地請求，並通過 POST 請求接收 URL，然後將其傳遞給 yt-dlp 進行下載。這種設計使得所有的下載過程都在本地進行，避免了許多網頁擴展的安全風險。
 
-選擇 Python 作為後端語言是因為其簡單易用且有豐富的庫支持，然而這也意味著對於高並發下載的支持可能有限。擴展則是基於 Chrome MV3，僅在用戶點擊時發送當前頁面的 URL，這樣的設計使得擴展本身的功能非常輕量，並且不需要過多的權限。整體架構的可擴展性取決於 `yt-dlp` 的更新頻率和功能擴展能力，未來可能會面臨對新網站支持的挑戰。
+選擇 Python 作為後端語言的原因在於其簡單性和強大的庫支持，特別是對於處理 HTTP 請求和文件操作。這種架構的代價在於需要用戶手動安裝和配置，但這也讓用戶能夠完全控制下載過程。擴展的相容性良好，能夠與主流瀏覽器無縫整合，但對於某些特定網站的支持仍然有限，這可能影響用戶體驗。
 
 ## 技術深入分析
 
-Xiaoer VideoLab 的核心技術機制是基於 `yt-dlp` 的視頻下載能力，這是一個開源的命令行工具，支持多種視頻網站的下載。其架構中，Python daemon 使用標準庫的 `http.server` 來處理請求，這樣的設計使得它在啟動時能夠保持輕量且高效。效能方面，這個工具能夠快速處理用戶請求，並且由於所有操作都是在本地進行，因此不會受到網絡延遲的影響。選擇 Python 作為後端語言的好處在於其簡單易用和豐富的庫支持，但在高並發下載的情況下可能會遇到性能瓶頸。技術風險方面，隨著網站的變化，可能需要不斷更新 `yt-dlp` 以保持對新網站的支持，這對於維護者來說是一個持續的挑戰。整合方面，這個工具可以輕鬆地與現有的瀏覽器擴展生態系統相容，並且不需要過多的配置，這使得它在開發和使用上都非常方便。
+Xiaoer VideoLab 的核心技術機制是基於 Python 的 HTTP 伺服器，這使得它能夠快速處理來自瀏覽器的請求。當用戶點擊擴展按鈕時，擴展會將當前頁面的 URL 發送到本地 daemon，daemon 再將這個請求轉交給 yt-dlp 進行下載。這種設計的效能表現在能夠支持多達1800個網站的視頻下載，並且下載速度取決於網絡帶寬和視頻大小。選擇 Python 作為後端語言的好處在於其簡單易用和強大的庫支持，但也帶來了一定的內存占用。設計上，這個工具避免了許多網頁擴展常見的安全風險，因為所有的操作都在本地進行，沒有外部請求。技術風險方面，未來可能會面臨某些網站的下載支持不穩定的問題，這需要定期更新 yt-dlp 來解決。整合到現有的開發流程中相對簡單，因為它只需安裝幾個依賴並配置環境，對於熟悉命令行的用戶來說，學習成本較低。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含詳細的安裝步驟，對於新手來說非常友好。安裝過程順暢，並且有明確的指令提示。雖然沒有多語言支持，但中文用戶可以輕鬆理解。整體來說，花 30 分鐘應該能夠順利運行起來。
+> README 文件提供了詳細的安裝步驟和配置說明，對於新手來說相對友好。安裝過程順暢，沒有明顯的坑。文件中有清晰的範例和配置選項，幫助用戶快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用的用戶界面，適合非技術用戶。
-> - 支持多達1800個網站，功能強大。
-> - 所有操作在本地進行，保障用戶隱私。
+> - 簡單易用的界面，快速下載視頻。
+> - 支持多個主流視頻平台，功能強大。
+> - 本地運行，保障用戶隱私和安全。
 
 > [!danger] 缺點
-> - 對於某些網站的支持有限，特別是需要登錄的內容。
-> - 僅支持 macOS 和 Windows，對於其他系統的兼容性差。
-> - 安裝過程需要一定的命令行操作，對新手不友好。
+> - 安裝過程需要用戶手動配置，對新手不太友好。
+> - 某些網站不支持，限制了使用場景。
+> - 依賴於外部工具（yt-dlp 和 ffmpeg），增加了維護成本。
 
 > [!warning] 注意事項
-> - 僅支持公開視頻，無法下載 VIP 內容或 DRM 保護的視頻。
-> - 對於 Weibo 和 Zhihu 等網站不推薦使用，因為無法獲取乾淨的視頻地址。
-> - 需要在 macOS 或 Windows 10/11 上運行，對於其他操作系統的支持有限。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) | yt-dlp 是核心下載引擎，提供更強大的命令行選項和靈活性，但缺乏圖形界面。 |
-| [youtube-dl/youtube-dl](https://github.com/youtube-dl/youtube-dl) | youtube-dl 是 yt-dlp 的前身，功能相似但更新頻率較低，且對某些網站的支持不如 yt-dlp。 |
-| [4kdownload/4k-video-downloader](https://github.com/4kdownload/4k-video-downloader) | 4K Video Downloader 提供 GUI 界面，適合不熟悉命令行的用戶，但功能和靈活性不如 Xiaoer VideoLab。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) | yt-dlp 是一個命令行工具，提供更強大的選項和靈活性，但缺乏圖形界面，使用門檻較高。 | 如果你需要更高的自定義選項和命令行操作的靈活性，選擇 yt-dlp 會更合適。 | medium，因為需要學習命令行操作和參數設置。 |
-| [youtube-dl/youtube-dl](https://github.com/youtube-dl/youtube-dl) | youtube-dl 是 yt-dlp 的前身，功能相似但更新頻率較低，且對某些網站的支持不如 yt-dlp。 | 如果你已經熟悉 youtube-dl 的使用，並且不需要最新的功能，可以選擇它。 | low，因為兩者命令行參數相似。 |
-| [4kdownload/4k-video-downloader](https://github.com/4kdownload/4k-video-downloader) | 4K Video Downloader 提供 GUI 界面，適合不熟悉命令行的用戶，但功能和靈活性不如 Xiaoer VideoLab。 | 如果你更喜歡圖形界面而不是命令行操作，4K Video Downloader 會是更好的選擇。 | low，因為使用方式完全不同。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **xiaoer-videolab** | **yt-dlp** | **youtube-dl** | **4k-video-downloader** |
-> | --- | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | yt-dlp 是一個命令行工具，提供更強大的選項和靈活性，但缺乏圖形界面，使用門檻較高。 | youtube-dl 是 yt-dlp 的前身，功能相似但更新頻率較低，且對某些網站的支持不如 yt-dlp。 | 4K Video Downloader 提供 GUI 界面，適合不熟悉命令行的用戶，但功能和靈活性不如 Xiaoer VideoLab。 |
-> | 遷移成本 | - | medium，因為需要學習命令行操作和參數設置。 | low，因為兩者命令行參數相似。 | low，因為使用方式完全不同。 |
-> | 適用場景 | 主要場景 | 如果你需要更高的自定義選項和命令行操作的靈活性，選擇 yt- | 如果你已經熟悉 youtube-dl 的使用，並且不需要最新 | 如果你更喜歡圖形界面而不是命令行操作，4K Video Do |
+> - 不支持 DRM 保護的視頻下載。
+> - 某些網站（如微博、知乎）不推薦使用，因為無法獲取單一視頻的 URL。
+> - 需要在 macOS 或 Windows 環境下運行，對於其他系統可能不兼容。
 
 ## 成熟度評估
 
@@ -241,27 +207,27 @@ Xiaoer VideoLab 的核心技術機制是基於 `yt-dlp` 的視頻下載能力，
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人使用和小型項目，尚不建議用於生產環境。
+> 適合個人使用和小型專案，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 安裝過程中可能會遇到權限問題，特別是在 macOS 上需要授予 Terminal 訪問權限。
-  - 解法：確保 Terminal 擁有必要的訪問權限，並在系統偏好設置中檢查。
-- [MEDIUM] 對於某些網站（如 Weibo），無法獲取有效的視頻地址，導致下載失敗。
-  - 解法：避免使用不推薦的網站，選擇其他支持的網站進行下載。
-- [MEDIUM] 在 Windows 上安裝時可能會遇到 PowerShell 執行策略限制。
-  - 解法：使用 `-ExecutionPolicy Bypass` 參數來繞過限制。
+- **[HIGH]** 在某些網站上無法獲取單一視頻的 URL，導致下載失敗。
+  - 解法：使用其他工具或網站進行下載。
+- [MEDIUM] 安裝過程中可能會遇到權限問題，特別是在 macOS 上。
+  - 解法：確保使用者有足夠的權限執行安裝腳本。
+- [MEDIUM] 某些視頻下載速度較慢，特別是在高峰時段。
+  - 解法：嘗試在非高峰時段進行下載。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要定期下載教學視頻的學生 | 非常適合 | 簡單的操作流程和支持多個網站使得學生能夠輕鬆獲取學習資源。 |
-| 內容創作者需要抓取靈感來源的視頻 | 適合 | 支持多達1800個網站，方便多樣化的內容收集。 |
-| 開發者需要測試視頻下載功能 | 非常適合 | 本地化的操作和簡單的配置使得開發者能夠快速驗證下載流程。 |
-| 需要下載 VIP 內容的用戶 | 不適合 | 不支持需要登錄的視頻網站，無法獲取 VIP 內容。 |
+| 個人使用的視頻下載工具 | 非常適合 | 簡單易用，支持多個平台，適合日常需求。 |
+| 需要批量下載視頻的內容創作者 | 適合 | 功能強大，但安裝過程可能需要一些學習。 |
+| 大型企業的視頻下載需求 | 不適合 | 缺乏企業級支持和穩定性。 |
+| 開發者需要集成視頻下載功能的應用 | 普通 | 需要額外的開發和維護工作。 |
 
 ## 採用成本分析
 
@@ -270,15 +236,15 @@ Xiaoer VideoLab 的核心技術機制是基於 `yt-dlp` 的視頻下載能力，
 | 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到快速下載視頻的效果，值得一試。
+> 花 2 小時學習，1 小時整合，得到一個安全且功能強大的視頻下載工具，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 這個工具本身不需要高權限，所有操作都是在本地進行，並且不會存取敏感資料。依賴鏈的信任程度較高，因為主要依賴開源工具 `yt-dlp`。在 CI/CD 中使用是安全的，因為不涉及敏感操作。
+> 安全性評估良好：該工具不需要高權限運行，所有操作在本地進行，並且依賴的庫有良好的安全記錄。使用過程中不會存取敏感資料，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -395,7 +361,7 @@ Xiaoer VideoLab 的核心技術機制是基於 `yt-dlp` 的視頻下載能力，
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新，並有 CI/CD 支持。
+**社群活躍度**：社群活躍，最近有多次提交和更新。
 **連結**：[文件](https://github.com/Jane-xiaoer/xiaoer-videolab)
 
 ## 開發動態
@@ -408,7 +374,7 @@ Xiaoer VideoLab 的核心技術機制是基於 `yt-dlp` 的視頻下載能力，
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#5](https://github.com/Jane-xiaoer/xiaoer-videolab/issues/5) | 安装报错 | 0 | 0 |
+> | [#5](https://github.com/Jane-xiaoer/xiaoer-videolab/issues/5) | 安装报错 | 0 | 1 |
 
 ## README 摘錄
 
@@ -605,7 +571,7 @@ Xiaoer VideoLab 的核心技術機制是基於 `yt-dlp` 的視頻下載能力，
 
 ## 延伸閱讀
 
-相關概念：[[自動化下載]] · [[視頻流處理]] · [[隱私保護]]
+相關概念：[[自動化]] · [[隱私保護]] · [[視頻下載]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[Kuberwastaken--claude-code|Kuberwastaken/claude-code]] · [[Kuberwastaken--claurst|Kuberwastaken/claurst]] · [[momenbasel--PureMac|momenbasel/PureMac]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]]
 
@@ -625,7 +591,7 @@ Xiaoer VideoLab 的核心技術機制是基於 `yt-dlp` 的視頻下載能力，
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "Jane-xiaoer--xiaoer-videolab"
+> WHERE category = "開發工具" AND file.name != "Jane-xiaoer--xiaoer-videolab"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -649,7 +615,7 @@ Xiaoer VideoLab 的核心技術機制是基於 `yt-dlp` 的視頻下載能力，
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化下載","視頻流處理","隱私保護"];
+> const concepts = ["自動化","隱私保護","視頻下載"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Jane-xiaoer--xiaoer-videolab" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
