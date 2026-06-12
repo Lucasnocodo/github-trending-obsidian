@@ -7,8 +7,8 @@ language: JavaScript
 license: MIT
 description: "A browser-based isometric island builder with the soft, sun-bleached look of Mykonos. Vanilla ES modules, no bundler, mobile-friendly."
 homepage: "https://mykonos-island-voxels.netlify.app"
-stars: 802
-stars_per_day: 30
+stars: 803
+stars_per_day: 29
 forks: 189
 open_issues: 1
 created: 2026-05-14
@@ -17,7 +17,7 @@ first_seen: 2026-05-20
 week: "2026-W21"
 month: "2026-05"
 category: "遊戲"
-subcategory: "建設類遊戲"
+subcategory: "建造遊戲"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-20
-use_case: "一個基於瀏覽器的等角島嶼建設者，讓你輕鬆創造美麗的島嶼景觀。"
+use_case: "一個基於瀏覽器的等角島嶼建造工具，讓你輕鬆創建美麗的島嶼景觀。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-05-20"
-star_history: "2026-05-20:661,2026-05-20:663,2026-05-21:679,2026-05-21:679,2026-05-23:704,2026-05-24:733,2026-05-25:753,2026-05-26:757,2026-05-27:757,2026-05-29:767,2026-05-30:775,2026-05-31:777,2026-06-01:778,2026-06-02:782,2026-06-03:788,2026-06-04:790,2026-06-05:790,2026-06-06:791,2026-06-07:792,2026-06-08:800,2026-06-09:800,2026-06-10:801,2026-06-11:802"
+star_history: "2026-05-20:661,2026-05-20:663,2026-05-21:679,2026-05-21:679,2026-05-23:704,2026-05-24:733,2026-05-25:753,2026-05-26:757,2026-05-27:757,2026-05-29:767,2026-05-30:775,2026-05-31:777,2026-06-01:778,2026-06-02:782,2026-06-03:788,2026-06-04:790,2026-06-05:790,2026-06-06:791,2026-06-07:792,2026-06-08:800,2026-06-09:800,2026-06-10:801,2026-06-11:802,2026-06-12:803"
 tags:
   - github
   - "category/遊戲"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "mykonos-island-voxels"
   - "boona13/mykonos-island-voxels"
-  - "一個基於瀏覽器的等角島嶼建設者，讓你輕鬆創造美麗的島嶼景觀。"
+  - "一個基於瀏覽器的等角島嶼建造工具，讓你輕鬆創建美麗的島嶼景觀。"
 ---
 
 # mykonos-island-voxels
 
-**802** stars · **30** stars/天 · 建立 27 天前 · JavaScript · MIT
+**803** stars · **29** stars/天 · 建立 28 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/boona13--mykonos-island-voxels");
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `canvas2d` `city-builder` `html5-game` `isometric-game` `mobile-friendly` `open-source` `vanilla-js`
 
 > [!summary] 一句話摘要
-> 一個基於瀏覽器的等角島嶼建設者，讓你輕鬆創造美麗的島嶼景觀。
+> 一個基於瀏覽器的等角島嶼建造工具，讓你輕鬆創建美麗的島嶼景觀。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (30 stars/day)
-> **授權** MIT (商業友好) · **維護** Moderate (最後推送 27 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 想要輕鬆創建虛擬島嶼的遊戲愛好者，尤其是對於無需安裝的簡單工具有需求的玩家。
-> **一句話重點** 這個專案展示了如何用簡單的技術創造出富有創意的遊戲體驗，特別適合想要快速上手的玩家。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (29 stars/day)
+> **授權** MIT (商業友好) · **維護** Moderate (最後推送 28 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 希望在瀏覽器中輕鬆創建島嶼的遊戲開發者和愛好者。
+> **一句話重點** 這個專案讓任何人都能輕鬆創建美麗的島嶼，無需繁瑣的遊戲機制，專注於創意。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/boona13--mykonos-island-voxels");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "建設類遊戲" && p.file.name !== "boona13--mykonos-island-voxels" && p.status !== "archived")
+>     .where(p => p.subcategory === "建造遊戲" && p.file.name !== "boona13--mykonos-island-voxels" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,111 +103,105 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 建設類遊戲 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 建造遊戲 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到輕鬆創作的效果，值得嘗試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，1 小時整合，得到輕鬆創建島嶼的效果，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於其無需打包的純 ES 模組架構，讓開發和使用變得極其簡單。
+> 這個專案的創新點在於其純 ES 模組架構，無需任何打包工具，直接在瀏覽器中運行。
 
 ## 專案簡介
 
-Mykonos Island Voxels 是一款瀏覽器遊戲，讓玩家在 14x14 的格子上自由放置建築物和自然元素，創造出獨特的島嶼景觀。用戶只需從右側的資產面板選擇物件，點擊格子即可放置，並享受流暢的動畫效果。這款遊戲的設計理念是提供一個無壓力的創作空間，沒有得分或資源管理的負擔，讓玩家可以隨心所欲地排列元素。它支持高解析度的資產渲染，並且在移動設備上也能流暢運行，適合各種屏幕尺寸。使用者的創作會自動保存到 localStorage，方便下次繼續。
+Mykonos Island Voxels 是一個瀏覽器基於的等角島嶼建造工具，使用者可以在 14x14 的網格上隨意放置建築物和自然元素，創造出獨特的島嶼景觀。這個工具的核心機制是點擊建造，選擇右側資產面板中的物件，點擊網格中的單元格即可放置，並且有彈性動畫效果。使用者無需擔心資源管理或得分，專注於創造的樂趣。它支援 75 種以上的藝術資產，包括教堂、風車、別墅等，並且具有觸控友好的介面，適合各種設備。
 
-遊戲還提供了精緻的音效設計，增強了沉浸感。核心技術上，這個專案完全基於 ES 模組，無需任何打包工具，直接開啟 HTML 文件即可運行，這使得開發和部署變得簡單。這種設計選擇讓開發者可以專注於創作，而不必處理繁瑣的環境配置。整體而言，Mykonos Island Voxels 提供了一個簡單而富有創意的遊戲體驗，適合所有年齡層的玩家。
+透過高解析度的資產管道，確保在不同螢幕密度下都能保持清晰的畫面。使用者的島嶼會自動保存到 localStorage，方便下次訪問時繼續創作。這個專案的賣點在於其簡單易用的介面和無需任何打包工具的純 ES 模組架構，讓開發者能夠輕鬆上手和修改。使用者可以透過簡單的指令啟動本地伺服器來運行此專案，無需繁瑣的安裝過程。
 
 **技術棧**：`JavaScript` · `CSS` · `HTML` · `Python`
 
 ## 重點功能
 
-- 點擊建設等角格子 — 從右側面板選擇資產，點擊格子即可放置，並享受彈性動畫效果。
-- 一鍵填充草地 — 使用一鍵功能快速鋪滿島嶼，節省時間。
-- 75+ 繪畫風格資產 — 包括教堂、風車、別墅等，讓創作更加多樣化。
-- 觸控優先的移動 UI — 支援點擊放置、長按刪除、兩指縮放等手勢，適合手機使用。
-- 高解析度資產管道 — 資產在載入時以 6 倍解析度預渲染，確保每個畫面都清晰。
-- 自動保存功能 — 使用 localStorage 保存玩家的創作，方便下次繼續。
-- 精緻的音效設計 — 為不同的放置行為提供獨特的音效，增強遊戲體驗。
-- 純 ES 模組 — 無需打包工具，直接開啟 HTML 文件即可運行。
+- 點擊建造等角網格 — 從右側資產面板選擇物件，點擊網格單元格放置，並有彈性動畫效果。
+- 一鍵填充草地 — 使用者可以快速用草地覆蓋整個島嶼，方便開始佈局。
+- 75+ 種藝術資產 — 包括教堂、風車、別墅等，讓使用者自由組合。
+- 觸控友好的介面 — 支援手勢操作，適合各種設備，從桌面到手機。
+- 高解析度資產管道 — 確保在不同螢幕密度下保持清晰畫面。
+- 自動保存功能 — 島嶼會保存到 localStorage，方便下次訪問。
+- 精緻的音效設計 — 為不同材質的放置提供獨特音效，增強沉浸感。
+- 純 ES 模組架構 — 無需打包工具，直接在瀏覽器中運行。
 
 ## 快速開始
 
-1. 在本地啟動伺服器
+1. 啟動本地伺服器
 ```bash
 python3 -m http.server 8000
 ```
-2. 打開瀏覽器訪問
+2. 在瀏覽器中打開
 ```bash
 http://localhost:8000
 ```
-3. 開始創建你的島嶼
+3. 開始建造你的島嶼
 ```bash
-# 在瀏覽器中使用點擊和拖動操作
-```
-
-## 程式碼範例
-
-```js
-{
-  "前置條件": "確保已經啟動伺服器並在瀏覽器中打開。",
-  "指令": "npx serve .",
-  "預期輸出": "伺服器啟動，並在瀏覽器中顯示遊戲界面。"
-}
+使用滑鼠或觸控操作放置資產
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 在短短 27 天內累積了 802 stars（每天約 30 stars），forks 數量達到 189（23.6%），顯示出相對活躍的社群參與。專案的作者 boona13 以開源項目為主，這個專案解決了以往島嶼建設遊戲需要複雜安裝的痛點，提供了一個即時可用的瀏覽器解決方案。這種無需安裝的特性使得任何人都能輕鬆上手，並且在社交媒體上引發了不少討論，進一步推動了其流行。這個專案的成功也反映了對於簡單、直觀的創作工具的需求，尤其是在移動設備上。
+> 建立 28 天內累積 803 stars（29/天），forks 189（23.5%），顯示出強烈的社群興趣。專案的作者 boona13 是一位開發者，專注於創造簡單易用的網頁遊戲，這個工具解決了傳統建造遊戲中繁瑣的資源管理問題，讓使用者能夠專注於創意發揮。這個專案的出現正好填補了市場上對於輕鬆創建島嶼的需求，並且無需額外安裝，直接在瀏覽器中運行，這使得它在開發者和玩家中都受到歡迎。forks/stars 比率為 23.5%，顯示出許多使用者對於此專案有實際修改和使用的需求。
 
 ## 適合誰使用
 
-**目標受眾**：想要輕鬆創建虛擬島嶼的遊戲愛好者，尤其是對於無需安裝的簡單工具有需求的玩家。
+**目標受眾**：希望在瀏覽器中輕鬆創建島嶼的遊戲開發者和愛好者。
 
 > [!example] 使用場景
-> - 休閒玩家用它來隨意創建夢想中的島嶼，因為它不需要任何遊戲目標，讓創作過程變得輕鬆愉快。
-> - 教育工作者用它來教導學生關於城市規劃和設計，因為它的直觀界面和無壓力的環境適合各種年齡層的學習。
-> - 開發者用它來快速原型設計遊戲概念，因為它的開源特性和簡單的架構使得修改和擴展變得容易。
+> - 遊戲開發者用它來快速創建島嶼場景，因為它的簡單介面和豐富資產能夠節省設計時間。
+> - 教育工作者用它來教導學生關於城市規劃和設計，因為它的無壓力環境讓學生能夠自由探索創意。
+> - 業餘愛好者用它來放鬆心情，隨意建造夢想中的島嶼，因為它不需要任何遊戲目標，純粹享受創作過程。
 
 ## 架構分析
 
-Mykonos Island Voxels 採用純 HTML/CSS/JavaScript 的架構，無需任何打包工具，這使得開發者可以輕鬆地修改和擴展功能。資料流方面，使用者的操作會通過 InputManager.js 處理，然後更新 Game.js 的遊戲狀態，最後由 Renderer.js 負責渲染畫面。這種分層設計讓每個模組的責任明確，便於維護。選擇高解析度的資產管道意味著即使在不同的顯示器上，畫面質量也能保持一致，但這也增加了初始載入的資源需求。整體架構的輕量化設計使得它在移動設備上表現良好，但在處理大型場景時可能會遇到性能瓶頸。
+Mykonos Island Voxels 採用純前端架構，使用 ES 模組來組織代碼，這樣的設計使得專案無需任何打包工具，降低了開發和部署的複雜度。資料流方面，使用者的操作通過 DOM 事件觸發，並直接更新畫布上的渲染，這樣可以實現即時反饋。選擇純前端架構的代價是無法利用伺服器端的計算資源，但這也使得專案能夠輕鬆部署和訪問。擴展性方面，隨著資產的增加，可能會影響加載時間和性能，但目前的設計已經針對高解析度資產進行了優化，確保在不同設備上都能流暢運行。
 
 ## 技術深入分析
 
-Mykonos Island Voxels 的核心技術機制是基於 ES 模組的架構，這使得它無需任何打包工具，開發者可以直接在瀏覽器中運行和修改。渲染方面，使用了高解析度的資產管道，確保即使在不同的顯示器上，畫面質量也能保持一致。這種設計選擇雖然增加了初始載入的資源需求，但卻能在使用過程中提供更好的視覺體驗。性能方面，遊戲能夠在移動設備上流暢運行，但在處理大型場景時可能會遇到性能瓶頸，這是由於其渲染機制的複雜性所致。設計上，選擇了分層渲染的方式，這使得每個畫面都能夠快速更新，但也要求開發者在擴展功能時保持性能的平衡。整體來看，這個專案在技術上展示了如何結合簡單的工具和創意的設計，為玩家提供了一個輕鬆愉快的創作環境。
+Mykonos Island Voxels 的核心技術機制是基於 HTML5 Canvas 的即時渲染，使用者的每一次點擊都會直接影響畫布的狀態，這樣的設計使得操作直觀且反饋迅速。效能方面，專案在資產加載時進行了高解析度的預渲染，確保了即使在高 DPI 顯示器上也能保持清晰度。選擇 JavaScript 和 CSS 作為主要技術棧，這樣的選擇使得專案能夠在各種瀏覽器上運行，但也意味著依賴於使用者的設備性能。設計上，專案並未考慮到伺服器端的計算，這使得它在功能上較為簡單，但也降低了維護的複雜度。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在資產加載和渲染方面。整合分析上，這個專案與主流的開發工具鏈相容性良好，能夠輕鬆融入現有的網頁開發流程。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含了詳細的使用說明和範例，讓新手能夠快速上手。安裝過程非常順暢，只需啟動伺服器即可運行，沒有複雜的配置需求。文件目前僅提供英文版本，可能對非英語使用者造成一定的障礙。
+> README 文件清晰且詳細，提供了完整的使用說明和範例。安裝過程非常順暢，使用者只需啟動本地伺服器即可運行。文件目前僅提供英文版本，缺乏多語言支援，對於非英語使用者可能會有些困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 無需安裝，直接在瀏覽器中運行，方便快捷。
-> - 提供多樣化的資產選擇，激發創意。
-> - 自動保存功能，讓玩家不必擔心丟失進度。
+> - 簡單易用的介面，適合所有年齡層的使用者。
+> - 無需安裝，直接在瀏覽器中運行，降低了使用門檻。
+> - 高解析度資產確保了視覺效果的清晰度。
+> - 自動保存功能讓使用者不必擔心資料丟失。
 
 > [!danger] 缺點
-> - 性能在大型場景時可能會下降，影響使用體驗。
-> - 缺乏多人合作功能，限制了社交互動。
-> - 目前只有單一的遊戲模式，缺乏挑戰性。
+> - 資產數量有限，可能無法滿足所有創作需求。
+> - 不支援離線使用，需連網才能運行。
+> - 缺乏多語言支援，對非英語使用者不太友好。
+> - 目前功能較為簡單，對於尋求複雜遊戲機制的開發者可能不夠。
 
 > [!warning] 注意事項
 > - 僅支援現代瀏覽器，舊版瀏覽器可能無法正常運行。
-> - 對於大型島嶼，可能會出現性能下降的情況。
-> - 不支援多人合作模式，目前僅限單人創作。
+> - 不支援離線模式，需連網才能使用。
+> - 目前僅有英文介面，缺乏多語言支援。
+> - 資產數量有限，可能無法滿足所有使用者的需求。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這是一個專注於角色精靈創建的工具，適合需要精細控制角色設計的開發者，而 Mykonos Island Voxels 更加注重環境建設和創意自由。 |
-| [BuilderPulse/BuilderPulse](https://github.com/BuilderPulse/BuilderPulse) | BuilderPulse 提供了更複雜的建設機制和資源管理功能，適合需要更深度遊戲機制的玩家，而 Mykonos Island Voxels 則是輕鬆的創作工具。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色精靈創建，而本專案專注於島嶼建造，適合不同的遊戲開發需求。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更複雜的建造機制，但學習曲線較陡，適合需要更高自由度的開發者。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 主要針對對戰遊戲，而本專案則是創造性建造，適合不同的遊戲類型。 |
 
 ## 替代方案決策
 
@@ -215,47 +209,44 @@ Mykonos Island Voxels 的核心技術機制是基於 ES 模組的架構，這使
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色精靈的創建，提供更細緻的角色設計工具，而 Mykonos Island Voxels 則是針對環境建設。 | 如果你的專案需要專注於角色設計而非環境建設，則應選擇這個工具。 | medium，因為需要重新調整設計思路。 |
-| [BuilderPulse/BuilderPulse](https://github.com/BuilderPulse/BuilderPulse) | 提供更複雜的建設機制和資源管理，而 Mykonos Island Voxels 則是輕鬆的創作工具。 | 如果你需要一個更具挑戰性的建設遊戲，則應選擇 BuilderPulse。 | high，因為需要重新學習其複雜的機制。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色精靈的創建，而 Mykonos Island Voxels 專注於島嶼建造，適合不同的遊戲開發需求。 | 如果你的專案需要更多角色設計而非環境建造，則選擇它會更合適。 | medium，因為需要重新設計資產和場景。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更複雜的建造機制，但學習曲線較陡，適合需要更高自由度的開發者。 | 如果你的團隊需要更高的自由度和複雜的建造功能，則選擇它會更合適。 | high，因為需要重新學習和適應新的建造邏輯。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **mykonos-island-voxels** | **agent-sprite-forge** | **BuilderPulse** |
+> | 維度 | **mykonos-island-voxels** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於角色精靈的創建，提供更細緻的角色設計工具，而 Mykonos Island Voxels 則是針對環境建設。 | 提供更複雜的建設機制和資源管理，而 Mykonos Island Voxels 則是輕鬆的創作工具。 |
-> | 遷移成本 | - | medium，因為需要重新調整設計思路。 | high，因為需要重新學習其複雜的機制。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要專注於角色設計而非環境建設，則應選擇這個工具 | 如果你需要一個更具挑戰性的建設遊戲，則應選擇 Builder |
+> | 技術路線 | 本專案 | 專注於角色精靈的創建，而 Mykonos Island Voxels 專注於島嶼建造，適合不同的遊戲開發需求。 | 提供更複雜的建造機制，但學習曲線較陡，適合需要更高自由度的開發者。 |
+> | 遷移成本 | - | medium，因為需要重新設計資產和場景。 | high，因為需要重新學習和適應新的建造邏輯。 |
+> | 適用場景 | 主要場景 | 如果你的專案需要更多角色設計而非環境建造，則選擇它會更合適。 | 如果你的團隊需要更高的自由度和複雜的建造功能，則選擇它會更合 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人側項目試用，但不建議用在生產環境的核心路徑上。
+> 適合個人項目和小型實驗，不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些移動設備上，觸控操作可能不夠靈敏
-  - 解法：嘗試使用不同的瀏覽器或更新設備系統
-- **[HIGH]** 大型島嶼的載入時間較長
-  - 解法：盡量減少使用的資產數量
-- [MEDIUM] 某些瀏覽器可能無法正確顯示高解析度資產
-  - 解法：確保使用最新版本的瀏覽器
+- **[HIGH]** 在某些舊版瀏覽器中可能無法正常運行
+  - 解法：建議使用最新版本的 Chrome 或 Firefox
+- [MEDIUM] 在移動設備上，某些手勢可能不夠靈敏
+  - 解法：嘗試調整觸控靈敏度設置
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的遊戲原型設計 | 非常適合 | 簡單的架構和無需安裝的特性使得快速原型變得容易。 |
-| 教育機構的創意課程 | 適合 | 無壓力的創作環境適合學生進行創作。 |
-| 大型遊戲開發團隊的核心遊戲開發 | 不適合 | 缺乏複雜的遊戲機制和多人合作功能。 |
-| 個人休閒創作 | 非常適合 | 輕鬆的創作過程適合休閒玩家。 |
+| 小型團隊開發休閒遊戲 | 非常適合 | 簡單易用的介面和無需安裝的特性非常適合小型團隊。 |
+| 教育機構用於教學 | 適合 | 無壓力的創作環境適合學生探索創意。 |
+| 大型遊戲開發公司用於核心遊戲 | 不適合 | 功能較為簡單，無法滿足複雜遊戲需求。 |
 
 ## 採用成本分析
 
@@ -267,12 +258,24 @@ Mykonos Island Voxels 的核心技術機制是基於 ES 模組的架構，這使
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到輕鬆創作的效果，值得嘗試。
+> 花 2 小時學習，1 小時整合，得到輕鬆創建島嶼的效果，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，適合在 CI/CD 中使用。
+> 低風險：這個工具不需要高權限運行，並且不存取敏感資料，適合在 CI/CD 中安全使用。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Mykonos Island Voxels 最常與 HTML5 和 CSS3 搭配使用，通常在開發階段作為創意工具。實際整合範例是，在一個使用 Next.js 的專案中，可以將這個工具嵌入到頁面中，讓使用者在網頁上直接創建島嶼。這個專案與主流的 CI 工具如 GitHub Actions 兼容，但在 IDE 整合方面目前沒有官方插件。整合的摩擦點主要在於需要手動配置本地伺服器，對於不熟悉的使用者可能會有些困難。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 Mykonos Island Voxels 出現之前，許多建造遊戲都需要複雜的資源管理和得分系統，這使得新手玩家難以入門。隨著 HTML5 和瀏覽器技術的進步，這種輕量級的創意工具變得可行。這個工具代表了遊戲設計中對於簡化和創意自由的趨勢，未來可能會有更多類似的工具出現，讓更多人能夠輕鬆創造。
 
 ## 健康度儀表板
 
@@ -358,7 +361,7 @@ Mykonos Island Voxels 的核心技術機制是基於 ES 模組的架構，這使
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者對於問題回應速度尚可。
+**社群活躍度**：社群活躍度中等，有持續的使用者反饋和問題追蹤。
 **連結**：[文件](https://mykonos-island-voxels.netlify.app)
 
 ## 開發動態
@@ -556,19 +559,19 @@ Mykonos Island Voxels 的核心技術機制是基於 ES 模組的架構，這使
 
 ## 延伸閱讀
 
-相關概念：[[遊戲設計]] · [[2D 渲染]] · [[開放世界]]
+相關概念：[[遊戲設計]] · [[城市規劃]] · [[創意工具]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[calesthio--Crucix|calesthio/Crucix]] · [[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[calesthio--Crucix|calesthio/Crucix]]
 
 [GitHub](https://github.com/boona13/mykonos-island-voxels) · [官方網站](https://mykonos-island-voxels.netlify.app)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：建設類遊戲）
+> [!note]- 直接競品（同子分類：建造遊戲）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "建設類遊戲" AND file.name != "boona13--mykonos-island-voxels"
+> WHERE subcategory = "建造遊戲" AND file.name != "boona13--mykonos-island-voxels"
 > SORT stars DESC
 > ```
 
@@ -600,7 +603,7 @@ Mykonos Island Voxels 的核心技術機制是基於 ES 模組的架構，這使
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["遊戲設計","2D 渲染","開放世界"];
+> const concepts = ["遊戲設計","城市規劃","創意工具"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "boona13--mykonos-island-voxels" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

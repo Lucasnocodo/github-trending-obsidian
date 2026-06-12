@@ -17,7 +17,7 @@ first_seen: 2026-06-09
 week: "2026-W24"
 month: "2026-06"
 category: "開發工具"
-subcategory: "代碼檢查"
+subcategory: "自動化"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-09
-use_case: "提供針對 AI 生成代碼、測試和文檔的質量檢查技能，防止常見錯誤。"
+use_case: "為編碼代理提供質量檢查，捕捉 AI 生成的代碼、測試和文檔中的失敗模式。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-09"
-star_history: "2026-06-09:470,2026-06-09:470,2026-06-10:517,2026-06-10:517,2026-06-11:553,2026-06-11:553,2026-06-12:571"
+star_history: "2026-06-09:470,2026-06-09:470,2026-06-10:517,2026-06-10:517,2026-06-11:553,2026-06-11:553,2026-06-12:571,2026-06-12:571"
 tags:
   - github
   - "category/開發工具"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "guard-skills"
   - "amElnagdy/guard-skills"
-  - "提供針對 AI 生成代碼、測試和文檔的質量檢查技能，防止常見錯誤。"
+  - "為編碼代理提供質量檢查，捕捉 AI 生成的代碼、測試和文檔中的失敗模式。"
 ---
 
 # guard-skills
 
-**553** stars · **138** stars/天 · 建立 4 天前 · N/A · MIT
+**571** stars · **114** stars/天 · 建立 5 天前 · N/A · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/amElnagdy--guard-skills");
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `agent-skills` `ai` `claude` `claude-code` `code-review` `codex` `skills-sh` `woocommerce` `wordpress`
 
 > [!summary] 一句話摘要
-> 提供針對 AI 生成代碼、測試和文檔的質量檢查技能，防止常見錯誤。
+> 為編碼代理提供質量檢查，捕捉 AI 生成的代碼、測試和文檔中的失敗模式。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (138 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要提升 AI 生成代碼質量的開發團隊，特別是在大型專案中。
-> **一句話重點** 這個專案提供了一個針對 AI 生成代碼的質量檢查解決方案，能夠有效降低錯誤率。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (114 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 4 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要在 AI 生成代碼中引入質量檢查的開發團隊，特別是使用 Claude Code 和 Codex 的團隊。
+> **一句話重點** 這個專案的價值在於它專注於 AI 生成內容的質量檢查，能夠有效捕捉常見錯誤，提升開發效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/amElnagdy--guard-skills");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "代碼檢查" && p.file.name !== "amElnagdy--guard-skills" && p.status !== "archived")
+>     .where(p => p.subcategory === "自動化" && p.file.name !== "amElnagdy--guard-skills" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,36 +103,36 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 代碼檢查 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習、1 小時整合，得到提升代碼質量的效果，值得採用。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，1 小時整合，得到自動化代碼質量檢查，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供針對 AI 生成代碼的專門質量檢查技能，填補了市場需求。
+> 這個專案提供了針對 AI 生成內容的專門質量檢查技能，填補了市場上對於自動化代碼審查的需求。
 
 ## 專案簡介
 
-這個專案提供了一系列針對編碼代理的質量檢查技能，旨在捕捉 AI 生成代碼、測試和文檔中的系統性錯誤。在代理生成代碼後，使用者可以運行相應的 guard 來檢查 diff，確保代碼在提交或合併前符合質量標準。這些技能包括 clean-code-guard、test-guard、docs-guard、wp-guard 和 woo-guard，分別針對不同的代碼類型和需求進行檢查。這樣的設計使得使用者能夠在生成過程中即時獲得反饋，從而提高代碼質量。技術上，這些技能依賴於 Markdown 格式的文檔和輕量級的 agent metadata，確保了靈活性和可擴展性。
+這個專案提供了一組專注於編碼代理的 guard skills，作為質量檢查的第二道防線，能夠在 AI 生成的代碼、測試和文檔發佈前捕捉系統性失敗模式。使用者可以在代理完成工作後，針對變更的代碼執行相應的 guard，例如使用 `$clean-code-guard` 檢查生產代碼，或 `$test-guard` 檢查測試代碼。這些技能的設計重點在於反應式檢查，確保生成的內容符合清晰代碼原則和文檔準確性。技術上，這些技能使用了 Markdown 格式的輕量級元數據，並且不依賴於可執行腳本或網絡調用，這使得它們在使用時更加安全和可檢查。與其他類似工具相比，如 WordPress/agent-skills，guard-skills 更加專注於在生成工作後進行質量檢查，而不是提供全面的流程框架。
 
-相較於其他工具如 WordPress/agent-skills，guard-skills 更專注於質量檢查，而非整體流程管理，因此在捕捉 AI 生成代碼的常見失誤方面更具針對性。使用這些技能時，開發者可以避免常見的 AI 生成問題，如代碼異常、測試重複和文檔不一致等。這些技能的使用效果顯著，能夠在代碼提交前進行有效的質量把關，從而降低後期維護成本。這個專案目前處於初始階段，但已經顯示出良好的潛力，適合需要提高代碼質量的開發團隊使用。使用者應該考慮在 AI 生成代碼的工作流中引入這些技能，特別是在大型專案中，能夠有效減少錯誤和提升效率。
+使用者可以選擇安裝特定的 guard，例如 `$wp-guard` 用於 WordPress 相關的代碼，這樣能夠針對特定平台的需求進行檢查。實際使用中，這些 guard 能夠有效捕捉 AI 生成內容中的常見問題，如代碼氣味、測試冗餘和文檔不一致等。維護者在發佈前會進行檢查，確保技能的質量和準確性，因此使用者可以信賴這些工具的有效性。整體來看，這是一個針對 AI 生成代碼質量控制的專案，適合需要在代碼審查過程中引入自動化檢查的開發團隊。
 
-**技術棧**：`Node.js`
+**技術棧**：`Node.js` · `Markdown`
 
 ## 重點功能
 
-- clean-code-guard — 檢查生成或更改的代碼，捕捉 LLM 代碼異常、過度抽象等問題。
-- test-guard — 專注於測試代碼，檢查重複測試和無效測試的情況。
+- clean-code-guard — 檢查生產代碼中的代碼氣味和設計原則違反，適用於任何語言。
+- test-guard — 檢查測試代碼的有效性，避免冗餘和錯誤的測試邏輯。
 - docs-guard — 驗證文檔的準確性，確保文檔與代碼一致。
-- wp-guard — 針對 WordPress 代碼進行安全檢查，確保符合最佳實踐。
-- woo-guard — 針對 WooCommerce 代碼進行特定的質量檢查，確保支付和訂單處理的正確性。
+- wp-guard — 專為 WordPress 代碼檢查設計，確保安全性和性能最佳實踐。
+- woo-guard — 專為 WooCommerce 擴展檢查設計，確保交易和數據處理的正確性。
 
 ## 快速開始
 
-1. 安裝 guard-skills
+1. 安裝 guard skills 包
 ```bash
 npx skills add amElnagdy/guard-skills
 ```
@@ -140,62 +140,71 @@ npx skills add amElnagdy/guard-skills
 ```bash
 npx skills add amElnagdy/guard-skills --skill clean-code-guard
 ```
-3. 運行 guard 檢查生成的代碼
+3. 在代理生成工作後運行 guard
 ```bash
 Use $clean-code-guard on the diff you just produced.
+```
+
+## 程式碼範例
+
+```bash
+{
+  "前置條件": "已安裝 guard skills 包",
+  "指令": "npx skills add amElnagdy/guard-skills --skill clean-code-guard",
+  "預期輸出": "安裝 clean-code-guard 成功，準備進行代碼質量檢查。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 553 stars（138/天），forks 61（11.0%），顯示出強烈的興趣和需求。作者 amElnagdy 具備相關技術背景，專注於提升 AI 生成代碼的質量，填補了市場上對於 AI 代碼質量檢查的需求。這個工具的出現正好解決了開發者在使用 AI 生成代碼時面臨的質量問題，讓開發者能夠在提交前進行有效的檢查。社群對於這個工具的反應熱烈，顯示出對於提升代碼質量的迫切需求。forks/stars 比率為 11.0%，代表著相對較高的實際使用和修改意圖。
+> 建立 5 天內累積 571 stars（114/天），forks 63（11.0%），顯示出強勁的增長勢頭。專案的作者在 AI 和編碼代理領域有豐富經驗，這個工具解決了 AI 生成代碼質量控制的痛點，之前的工具往往缺乏針對性和深度。近期的社群討論和需求也促使了這個專案的快速發展，尤其是在自動化代碼審查的需求上。這個工具的出現正好填補了市場上對於 AI 生成內容質量檢查的空白，並且其設計使得使用者能夠輕鬆整合到現有的開發流程中。
 
 ## 適合誰使用
 
-**目標受眾**：需要提升 AI 生成代碼質量的開發團隊，特別是在大型專案中。
+**目標受眾**：需要在 AI 生成代碼中引入質量檢查的開發團隊，特別是使用 Claude Code 和 Codex 的團隊。
 
 > [!example] 使用場景
-> - 後端工程師用它來檢查 AI 生成的 REST API 代碼，因為這樣可以確保代碼符合安全和性能標準。
-> - 測試工程師用它來驗證 AI 生成的測試代碼，因為這樣能夠避免重複測試和無效測試的問題。
-> - 文檔編輯者用它來檢查 README 和 API 文檔的準確性，因為這樣可以確保文檔與代碼保持一致，降低維護成本。
+> - 後端工程師用它來檢查 AI 生成的 REST API 代碼，因為這樣可以確保代碼符合安全性和性能最佳實踐。
+> - 測試工程師用它來驗證 AI 生成的測試代碼，因為這樣能夠避免冗餘和無效的測試，提升測試的有效性。
+> - 文檔編輯者用它來檢查 README 更新的準確性，因為這樣可以確保文檔與實際代碼保持一致，減少用戶混淆。
 
 ## 架構分析
 
-這個專案的架構設計為每個技能獨立的文件夾，包含輕量級的 agent metadata 和 Markdown 格式的文檔。這樣的設計使得每個技能能夠快速加載，並根據需要動態加載更深層的指導資料。選擇這種結構的原因是為了提高靈活性和可擴展性，讓使用者能夠根據實際需求選擇合適的技能。這種設計的代價是需要使用者對每個技能的具體功能有一定的了解，以便能夠有效運用。擴展性方面，這種結構允許未來添加更多的技能，而不會影響現有的功能。
+這個專案的架構由多個獨立的技能組成，每個技能都包含輕量級的元數據和參考資料。這樣的設計使得每個技能可以獨立運行，並且在需要時加載相關的參考資料，降低了資源消耗。每個技能的核心邏輯都以 Markdown 格式存儲，這樣便於檢查和維護。選擇這種架構的代價是無法提供全面的開發流程支持，但能夠專注於質量檢查的深度。整體設計使得這些技能可以輕鬆整合到現有的開發流程中，並且能夠快速響應不同的檢查需求。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是針對 AI 生成代碼的質量檢查，使用了多種 guard 技能來捕捉常見的錯誤和問題。每個 guard 都有其專門的檢查規則，並且能夠根據不同的代碼類型進行調整。效能方面，這些技能的設計使得檢查過程快速且高效，能夠在生成代碼後即時提供反饋。設計取捨上，選擇使用 Markdown 格式和輕量級的 metadata 來提高靈活性，但這也要求使用者對每個技能的功能有一定的了解。技術風險方面，隨著使用者數量的增加，可能會面臨擴展性和維護性的挑戰。整合方面，這些技能能夠與現有的開發流程無縫對接，特別是在 CI/CD pipeline 中，能夠有效提升代碼質量。
+這個專案的核心技術機制是針對 AI 生成內容的質量檢查，使用了多個獨立的 guard skills，每個技能都專注於特定的檢查領域，如代碼、測試和文檔。這些技能的設計考慮到了 AI 生成內容的特性，能夠捕捉到傳統檢查工具可能忽略的問題。效能方面，由於每個技能都是輕量級的，能夠快速響應檢查請求，並且不會對系統性能造成顯著影響。設計選擇上，使用 Markdown 格式存儲技能邏輯，使得檢查過程透明且易於維護，但這也意味著無法提供更複雜的檢查邏輯。技術風險方面，隨著 AI 技術的發展，這些技能可能需要不斷更新以適應新的生成模式。整合方面，這些技能可以輕鬆嵌入到現有的開發流程中，並且與主流的 CI/CD 工具兼容，降低了使用門檻。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和使用說明。安裝過程順暢，沒有明顯的坑。文件中包含了基本的使用範例，對於新手來說容易上手。
+> README 文件清晰，提供了詳細的安裝和使用說明。安裝過程順暢，沒有明顯的坑。文件中沒有多語言支持，但提供了良好的入門指南，適合新手快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 針對 AI 生成代碼的質量檢查，能有效捕捉常見錯誤。
-> - 使用簡單，安裝和運行都很方便。
-> - 提供多種專門的 guard，適用於不同的代碼類型和需求。
+> - 針對 AI 生成內容的專門質量檢查，能夠捕捉常見的錯誤和問題。
+> - 輕量級架構，安裝和使用都非常簡單。
+> - 支持多種編程語言和平台，靈活性高。
 
 > [!danger] 缺點
-> - 目前僅支持特定的編碼代理，限制了使用範圍。
-> - 對於複雜代碼的檢查可能不夠全面。
-> - 需要使用者具備一定的 AI 生成代碼的理解能力。
+> - 目前僅支援特定的 AI 代理，限制了使用範圍。
+> - 不提供完整的開發流程框架，使用者需要自行整合。
+> - 需要一定的 CLI 操作能力，對新手不太友好。
 
 > [!warning] 注意事項
-> - 目前僅支持特定的編碼代理，可能不適用於所有開發環境。
-> - 需要使用者具備一定的 AI 生成代碼的理解能力，以便有效運用這些技能。
-> - 對於非常複雜的代碼結構，可能無法完全捕捉所有潛在問題。
+> - 目前僅支援特定的 AI 代理，如 Claude Code 和 Codex。
+> - 不提供完整的開發流程框架，僅針對質量檢查。
+> - 需要使用者具備基本的 CLI 操作能力。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [WordPress/agent-skills](https://github.com/WordPress/agent-skills) | 提供更全面的代理技能，但不專注於質量檢查，適合需要全方位技能的開發者。 |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成代理的技能，與 guard-skills 的質量檢查功能有所不同。 |
-| [ConardLi/garden-skills](https://github.com/ConardLi/garden-skills) | 提供針對特定應用的技能，與 guard-skills 的通用性相比，功能範圍更窄。 |
+| [WordPress/agent-skills](https://github.com/WordPress/agent-skills) | 提供全面的 WordPress 生態系統支持，而 guard-skills 專注於質量檢查。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成代理的技能，而 guard-skills 主要針對生成內容的質量控制。 |
 
 ## 替代方案決策
 
@@ -203,16 +212,16 @@ Use $clean-code-guard on the diff you just produced.
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成代理的技能，與 guard-skills 的質量檢查功能有所不同。 | 如果你需要一個更全面的代理生成工具，而不僅僅是質量檢查。 | medium，因為需要重新調整工作流程以適應新的工具。 |
-| [ConardLi/garden-skills](https://github.com/ConardLi/garden-skills) | 提供針對特定應用的技能，與 guard-skills 的通用性相比，功能範圍更窄。 | 如果你的專案需求非常特定，且不需要廣泛的質量檢查功能。 | low，因為功能相似，遷移成本較低。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成代理的技能，而 guard-skills 主要針對生成內容的質量控制。 | 如果你的團隊需要一個全面的代理生成框架，而不僅僅是質量檢查。 | medium，因為需要重新設計生成流程。 |
+| [WordPress/agent-skills](https://github.com/WordPress/agent-skills) | 提供全面的 WordPress 生態系統支持，而 guard-skills 專注於質量檢查。 | 如果你的專案主要集中在 WordPress 生態系統中，並需要更廣泛的功能支持。 | high，因為需要重新整合多個功能模組。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **guard-skills** | **agent-sprite-forge** | **garden-skills** |
+> | 維度 | **guard-skills** | **agent-sprite-forge** | **agent-skills** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於生成代理的技能，與 guard-skills 的質量檢查功能有所不同。 | 提供針對特定應用的技能，與 guard-skills 的通用性相比，功能範圍更窄。 |
-> | 遷移成本 | - | medium，因為需要重新調整工作流程以適應新的工具。 | low，因為功能相似，遷移成本較低。 |
-> | 適用場景 | 主要場景 | 如果你需要一個更全面的代理生成工具，而不僅僅是質量檢查。 | 如果你的專案需求非常特定，且不需要廣泛的質量檢查功能。 |
+> | 技術路線 | 本專案 | 專注於生成代理的技能，而 guard-skills 主要針對生成內容的質量控制。 | 提供全面的 WordPress 生態系統支持，而 guard-skills 專注於質量檢查。 |
+> | 遷移成本 | - | medium，因為需要重新設計生成流程。 | high，因為需要重新整合多個功能模組。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要一個全面的代理生成框架，而不僅僅是質量檢查。 | 如果你的專案主要集中在 WordPress 生態系統中，並需 |
 
 ## 成熟度評估
 
@@ -223,27 +232,27 @@ Use $clean-code-guard on the diff you just produced.
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合開發者試用，但不建議在生產環境中使用。
+> 適合個人試用和探索，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在特定代理下可能無法完全運行所有 guard，導致檢查不全面。
-  - 解法：確認所使用的代理是否支持所有需要的 guard。
-- **[HIGH]** 對於非常複雜的代碼結構，可能無法捕捉所有潛在問題。
-  - 解法：在使用前進行手動檢查，確保代碼質量。
-- [MEDIUM] 需要使用者對 AI 生成代碼有一定的理解，否則可能無法有效運用這些技能。
-  - 解法：提供相關的培訓或資源，幫助使用者熟悉 AI 生成代碼的特性。
+- **[HIGH]** 在特定環境下，安裝過程可能會出現權限問題。
+  - 解法：使用 sudo 或者確認使用者有足夠的權限。
+- [MEDIUM] 某些 guard 在特定語言下可能無法正常運行。
+  - 解法：檢查文檔確認支援的語言範圍。
+- [MEDIUM] 使用過程中可能會遇到性能瓶頸，特別是在大型代碼庫中。
+  - 解法：分批檢查代碼，避免一次性檢查過多變更。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠有效捕捉 AI 生成代碼中的常見錯誤，提升代碼質量。 |
-| 大型企業的多團隊協作專案 | 適合 | 能夠在多個團隊之間提供一致的質量檢查標準。 |
-| 小型專案或個人開發者的簡單應用 | 普通 | 對於簡單應用來說，可能不需要這麼多的質量檢查。 |
-| 需要高安全性和穩定性的金融應用 | 不適合 | 目前處於 alpha 階段，可能不夠穩定。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠自動化代碼質量檢查，提升開發效率。 |
+| 大型企業的多團隊協作專案 | 普通 | 需要更全面的流程支持，可能不完全符合需求。 |
+| 個人開發者的 AI 專案 | 非常適合 | 簡單易用，能夠快速集成到個人專案中。 |
+| 需要高安全性的金融系統 | 不適合 | 目前的功能可能無法滿足高安全性要求。 |
 
 ## 採用成本分析
 
@@ -252,15 +261,15 @@ Use $clean-code-guard on the diff you just produced.
 | 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習、1 小時整合，得到提升代碼質量的效果，值得採用。
+> 花 2 小時學習，1 小時整合，得到自動化代碼質量檢查，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：不需要高權限，且不存取敏感資料，依賴鏈簡單，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -325,7 +334,7 @@ Use $clean-code-guard on the diff you just produced.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 61 |
+| Forks | 63 |
 | Open Issues | 0 |
 | 最後推送 | 2026-06-07 |
 | 建立日期 | 2026-06-06 |
@@ -336,7 +345,7 @@ Use $clean-code-guard on the diff you just produced.
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度良好，持續更新中。
+**社群活躍度**：社群活躍度高，持續更新和維護。
 **連結**：[文件](https://skills.sh/amElnagdy/guard-skills)
 
 ## 開發動態
@@ -523,7 +532,7 @@ Use $clean-code-guard on the diff you just produced.
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[程式碼生成]] · [[CI/CD]]
+相關概念：[[自動化]] · [[程式碼生成]] · [[CI/CD]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[Fokkyp--SoftwareCopyright-Skill|Fokkyp/SoftwareCopyright-Skill]] · [[FoundZiGu--GuJumpgate|FoundZiGu/GuJumpgate]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]]
 
@@ -531,11 +540,11 @@ Use $clean-code-guard on the diff you just produced.
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：代碼檢查）
+> [!note]- 直接競品（同子分類：自動化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "代碼檢查" AND file.name != "amElnagdy--guard-skills"
+> WHERE subcategory = "自動化" AND file.name != "amElnagdy--guard-skills"
 > SORT stars DESC
 > ```
 
@@ -567,7 +576,7 @@ Use $clean-code-guard on the diff you just produced.
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化測試","程式碼生成","CI/CD"];
+> const concepts = ["自動化","程式碼生成","CI/CD"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "amElnagdy--guard-skills" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
