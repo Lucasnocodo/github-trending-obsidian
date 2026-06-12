@@ -7,9 +7,9 @@ language: TypeScript
 license: N/A
 description: ""
 homepage: ""
-stars: 573
-stars_per_day: 191
-forks: 14
+stars: 605
+stars_per_day: 151
+forks: 15
 open_issues: 2
 created: 2026-06-07
 pushed_at: 2026-06-10
@@ -30,8 +30,8 @@ use_case: "提供 AI 原生的 React 元件，顯示資金募集的超額情況�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-06-18"
+appearances: 3
+next_review: "2026-06-19"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-10"
-star_history: "2026-06-10:521,2026-06-11:573"
+star_history: "2026-06-10:521,2026-06-11:573,2026-06-12:605"
 tags:
   - github
   - "category/開發工具"
@@ -730,5 +730,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-12|2026-06-12]] — 再次上榜，605 stars
 - [[2026-06-11|2026-06-11]] — 再次上榜，573 stars
 - [[2026-06-10|2026-06-10]] — 首次收錄，521 stars
