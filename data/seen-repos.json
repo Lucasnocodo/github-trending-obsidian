@@ -2241,17 +2241,17 @@
   },
   "NoopApp/noop": {
     "first_seen": "2026-06-09",
-    "last_seen": "2026-06-12",
-    "times_seen": 4,
+    "last_seen": "2026-06-13",
+    "times_seen": 5,
     "stars_first": 532,
-    "stars_last": 1482
+    "stars_last": 1544
   },
   "JimLiu/baoyu-design": {
     "first_seen": "2026-06-09",
-    "last_seen": "2026-06-12",
-    "times_seen": 4,
+    "last_seen": "2026-06-13",
+    "times_seen": 5,
     "stars_first": 522,
-    "stars_last": 772
+    "stars_last": 830
   },
   "diffusionstudio/lottie": {
     "first_seen": "2026-06-09",
@@ -2262,10 +2262,10 @@
   },
   "amElnagdy/guard-skills": {
     "first_seen": "2026-06-09",
-    "last_seen": "2026-06-12",
-    "times_seen": 4,
+    "last_seen": "2026-06-13",
+    "times_seen": 5,
     "stars_first": 470,
-    "stars_last": 571
+    "stars_last": 601
   },
   "nevertoday/zhongguo-traditional-colors": {
     "first_seen": "2026-06-10",
@@ -2276,45 +2276,45 @@
   },
   "GordenSun/GordenSuperPPTSkills": {
     "first_seen": "2026-06-10",
-    "last_seen": "2026-06-12",
-    "times_seen": 3,
+    "last_seen": "2026-06-13",
+    "times_seen": 4,
     "stars_first": 614,
-    "stars_last": 788
+    "stars_last": 846
   },
   "vorpus/performativeUI": {
     "first_seen": "2026-06-10",
-    "last_seen": "2026-06-12",
-    "times_seen": 3,
+    "last_seen": "2026-06-13",
+    "times_seen": 4,
     "stars_first": 521,
-    "stars_last": 605
+    "stars_last": 661
   },
   "MSNightmare/RoguePlanet": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-12",
-    "times_seen": 2,
+    "last_seen": "2026-06-13",
+    "times_seen": 3,
     "stars_first": 913,
-    "stars_last": 1119
+    "stars_last": 1218
   },
   "shadcn/improve": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-12",
-    "times_seen": 2,
+    "last_seen": "2026-06-13",
+    "times_seen": 3,
     "stars_first": 876,
-    "stars_last": 1851
+    "stars_last": 2445
   },
   "XiaomiMiMo/MiMo-Code": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-12",
-    "times_seen": 2,
+    "last_seen": "2026-06-13",
+    "times_seen": 3,
     "stars_first": 681,
-    "stars_last": 4740
+    "stars_last": 6887
   },
   "apple/coreai-models": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-12",
-    "times_seen": 2,
+    "last_seen": "2026-06-13",
+    "times_seen": 3,
     "stars_first": 618,
-    "stars_last": 742
+    "stars_last": 834
   },
   "Tencent-Hunyuan/UniRL": {
     "first_seen": "2026-06-12",
@@ -2322,5 +2322,12 @@
     "times_seen": 1,
     "stars_first": 524,
     "stars_last": 524
+  },
+  "DietrichGebert/ponytail": {
+    "first_seen": "2026-06-13",
+    "last_seen": "2026-06-13",
+    "times_seen": 1,
+    "stars_first": 939,
+    "stars_last": 939
   }
 }

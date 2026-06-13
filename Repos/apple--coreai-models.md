@@ -7,12 +7,12 @@ language: Python
 license: BSD-3-Clause
 description: "Model export recipes, Python primitives, and Swift runtime utilities for on-device AI"
 homepage: ""
-stars: 744
-stars_per_day: 248
-forks: 50
-open_issues: 10
+stars: 834
+stars_per_day: 209
+forks: 61
+open_issues: 11
 created: 2026-06-08
-pushed_at: 2026-06-11
+pushed_at: 2026-06-13
 first_seen: 2026-06-11
 week: "2026-W24"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "提供用於在設備上執行 AI 的模型匯出配方、Python 原�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-06-15"
+appearances: 3
+next_review: "2026-06-16"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 29
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-11"
-star_history: "2026-06-11:618,2026-06-11:618,2026-06-12:742,2026-06-12:744"
+star_history: "2026-06-11:618,2026-06-11:618,2026-06-12:742,2026-06-12:744,2026-06-13:834"
 tags:
   - github
   - "category/ai_ml"
@@ -857,5 +857,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-13|2026-06-13]] — 再次上榜，834 stars
 - [[2026-06-12|2026-06-12]] — 再次上榜，742 stars
 - [[2026-06-11|2026-06-11]] — 首次收錄，618 stars

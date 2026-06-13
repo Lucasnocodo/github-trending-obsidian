@@ -7,12 +7,12 @@ language: N/A
 license: MIT
 description: "Use your most capable model to audit your codebase and write plans for cheaper models to execute."
 homepage: ""
-stars: 1851
-stars_per_day: 1851
-forks: 63
-open_issues: 5
+stars: 2445
+stars_per_day: 1223
+forks: 87
+open_issues: 6
 created: 2026-06-10
-pushed_at: 2026-06-10
+pushed_at: 2026-06-12
 first_seen: 2026-06-11
 week: "2026-W24"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "利用最強大的模型審核代碼庫，並為較便宜的模型撰
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-06-15"
+appearances: 3
+next_review: "2026-06-16"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-11"
-star_history: "2026-06-11:876,2026-06-12:1851"
+star_history: "2026-06-11:876,2026-06-12:1851,2026-06-13:2445"
 tags:
   - github
   - "category/開發工具"
@@ -762,5 +762,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-13|2026-06-13]] — 再次上榜，2.4k stars
 - [[2026-06-12|2026-06-12]] — 再次上榜，1.9k stars
 - [[2026-06-11|2026-06-11]] — 首次收錄，876 stars
