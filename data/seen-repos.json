@@ -2241,17 +2241,17 @@
   },
   "NoopApp/noop": {
     "first_seen": "2026-06-09",
-    "last_seen": "2026-06-13",
-    "times_seen": 5,
+    "last_seen": "2026-06-14",
+    "times_seen": 6,
     "stars_first": 532,
-    "stars_last": 1544
+    "stars_last": 1605
   },
   "JimLiu/baoyu-design": {
     "first_seen": "2026-06-09",
-    "last_seen": "2026-06-13",
-    "times_seen": 5,
+    "last_seen": "2026-06-14",
+    "times_seen": 6,
     "stars_first": 522,
-    "stars_last": 830
+    "stars_last": 943
   },
   "diffusionstudio/lottie": {
     "first_seen": "2026-06-09",
@@ -2276,10 +2276,10 @@
   },
   "GordenSun/GordenSuperPPTSkills": {
     "first_seen": "2026-06-10",
-    "last_seen": "2026-06-13",
-    "times_seen": 4,
+    "last_seen": "2026-06-14",
+    "times_seen": 5,
     "stars_first": 614,
-    "stars_last": 846
+    "stars_last": 885
   },
   "vorpus/performativeUI": {
     "first_seen": "2026-06-10",
@@ -2290,31 +2290,31 @@
   },
   "MSNightmare/RoguePlanet": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-13",
-    "times_seen": 3,
+    "last_seen": "2026-06-14",
+    "times_seen": 4,
     "stars_first": 913,
-    "stars_last": 1218
+    "stars_last": 1252
   },
   "shadcn/improve": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-13",
-    "times_seen": 3,
+    "last_seen": "2026-06-14",
+    "times_seen": 4,
     "stars_first": 876,
-    "stars_last": 2445
+    "stars_last": 3424
   },
   "XiaomiMiMo/MiMo-Code": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-13",
-    "times_seen": 3,
+    "last_seen": "2026-06-14",
+    "times_seen": 4,
     "stars_first": 681,
-    "stars_last": 6887
+    "stars_last": 7947
   },
   "apple/coreai-models": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-13",
-    "times_seen": 3,
+    "last_seen": "2026-06-14",
+    "times_seen": 4,
     "stars_first": 618,
-    "stars_last": 834
+    "stars_last": 872
   },
   "Tencent-Hunyuan/UniRL": {
     "first_seen": "2026-06-12",
@@ -2325,9 +2325,23 @@
   },
   "DietrichGebert/ponytail": {
     "first_seen": "2026-06-13",
-    "last_seen": "2026-06-13",
-    "times_seen": 1,
+    "last_seen": "2026-06-14",
+    "times_seen": 2,
     "stars_first": 939,
-    "stars_last": 939
+    "stars_last": 1541
+  },
+  "SkyBlue997/enableMacosAI": {
+    "first_seen": "2026-06-14",
+    "last_seen": "2026-06-14",
+    "times_seen": 1,
+    "stars_first": 996,
+    "stars_last": 996
+  },
+  "plannotator/effective-html": {
+    "first_seen": "2026-06-14",
+    "last_seen": "2026-06-14",
+    "times_seen": 1,
+    "stars_first": 753,
+    "stars_last": 753
   }
 }

@@ -7,9 +7,9 @@ language: JavaScript
 license: MIT
 description: "Run Claude Design locally as an Agent Skill — Cursor, Claude Code & more. Produce polished UI mockups, prototypes, decks & wireframes as self-contained HTML, without claude.ai/design. Best with Opus 4.8."
 homepage: ""
-stars: 830
-stars_per_day: 138
-forks: 65
+stars: 943
+stars_per_day: 135
+forks: 70
 open_issues: 0
 created: 2026-06-07
 pushed_at: 2026-06-11
@@ -30,8 +30,8 @@ use_case: "讓你在本地運行 Claude Design，生成精美的 UI 模擬圖、
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-06-20"
+appearances: 6
+next_review: "2026-06-21"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-09"
-star_history: "2026-06-09:522,2026-06-09:523,2026-06-10:638,2026-06-10:640,2026-06-11:692,2026-06-12:772,2026-06-13:830"
+star_history: "2026-06-09:522,2026-06-09:523,2026-06-10:638,2026-06-10:640,2026-06-11:692,2026-06-12:772,2026-06-13:830,2026-06-14:943"
 tags:
   - github
   - "category/開發工具"
@@ -882,6 +882,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-14|2026-06-14]] — 再次上榜，943 stars
 - [[2026-06-13|2026-06-13]] — 再次上榜，830 stars
 - [[2026-06-12|2026-06-12]] — 再次上榜，772 stars
 - [[2026-06-11|2026-06-11]] — 再次上榜，692 stars

@@ -7,12 +7,12 @@ language: Swift
 license: NOASSERTION
 description: "Offline WHOOP companion — pair your strap over Bluetooth, keep all data on your own device. No cloud, no account, no subscription."
 homepage: ""
-stars: 1544
-stars_per_day: 309
-forks: 691
-open_issues: 12
+stars: 1605
+stars_per_day: 268
+forks: 700
+open_issues: 5
 created: 2026-06-07
-pushed_at: 2026-06-12
+pushed_at: 2026-06-14
 first_seen: 2026-06-09
 week: "2026-W24"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "離線的 WHOOP 伴侶，透過藍牙配對，所有數據保留在�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-06-16"
+appearances: 6
+next_review: "2026-06-17"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 90
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-09"
-star_history: "2026-06-09:532,2026-06-09:534,2026-06-10:1029,2026-06-10:1033,2026-06-11:1395,2026-06-11:1395,2026-06-12:1482,2026-06-12:1484,2026-06-13:1544,2026-06-13:1544"
+star_history: "2026-06-09:532,2026-06-09:534,2026-06-10:1029,2026-06-10:1033,2026-06-11:1395,2026-06-11:1395,2026-06-12:1482,2026-06-12:1484,2026-06-13:1544,2026-06-13:1544,2026-06-14:1605"
 tags:
   - github
   - "category/開發工具"
@@ -785,6 +785,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-14|2026-06-14]] — 再次上榜，1.6k stars
 - [[2026-06-13|2026-06-13]] — 再次上榜，1.5k stars
 - [[2026-06-12|2026-06-12]] — 再次上榜，1.5k stars
 - [[2026-06-11|2026-06-11]] — 再次上榜，1.4k stars

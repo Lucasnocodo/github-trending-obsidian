@@ -7,9 +7,9 @@ language: JavaScript
 license: MIT
 description: "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
 homepage: ""
-stars: 940
-stars_per_day: 940
-forks: 42
+stars: 1541
+stars_per_day: 771
+forks: 70
 open_issues: 0
 created: 2026-06-12
 pushed_at: 2026-06-13
@@ -30,8 +30,8 @@ use_case: "讓 AI 代理像最懶的資深開發者一樣思考，最好的程�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-16"
+appearances: 2
+next_review: "2026-06-17"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-13"
-star_history: "2026-06-13:939,2026-06-13:940"
+star_history: "2026-06-13:939,2026-06-13:940,2026-06-14:1541"
 tags:
   - github
   - "category/開發工具"
@@ -812,4 +812,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-14|2026-06-14]] — 再次上榜，1.5k stars
 - [[2026-06-13|2026-06-13]] — 首次收錄，939 stars
