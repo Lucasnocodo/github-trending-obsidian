@@ -7,17 +7,17 @@ language: TypeScript
 license: MIT
 description: ""
 homepage: ""
-stars: 8469
-stars_per_day: 2117
-forks: 719
-open_issues: 586
+stars: 8478
+stars_per_day: 2120
+forks: 720
+open_issues: 585
 created: 2026-06-10
 pushed_at: 2026-06-11
 first_seen: 2026-06-11
 week: "2026-W24"
 month: "2026-06"
 category: "開發工具"
-subcategory: "AI 工具"
+subcategory: "AI 助手"
 release_tag: "v0.1.0"
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-11
-use_case: "提供跨會話記憶的 AI 編碼助手，能夠讀寫代碼、管理 Git 並執行命令。"
+use_case: "提供跨會話記憶的 AI 編程助手，能夠讀寫代碼、管理 Git，並持續自我改進。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,11 +38,11 @@ issue_close_rate: 7
 repo_size_kb: 46477
 readme_length: 5426
 bus_factor: 1
-last_release_days: 4
+last_release_days: 5
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-11"
-star_history: "2026-06-11:681,2026-06-11:794,2026-06-12:4740,2026-06-12:4782,2026-06-13:6887,2026-06-13:6905,2026-06-14:7947,2026-06-14:7958,2026-06-15:8469"
+star_history: "2026-06-11:681,2026-06-11:794,2026-06-12:4740,2026-06-12:4782,2026-06-13:6887,2026-06-13:6905,2026-06-14:7947,2026-06-14:7958,2026-06-15:8469,2026-06-15:8478"
 tags:
   - github
   - "category/開發工具"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "MiMo-Code"
   - "XiaomiMiMo/MiMo-Code"
-  - "提供跨會話記憶的 AI 編碼助手，能夠讀寫代碼、管理 Git 並執行命令。"
+  - "提供跨會話記憶的 AI 編程助手，能夠讀寫代碼、管理 Git，並持續自我改進。"
 ---
 
 # MiMo-Code
 
-**8.0k** stars · **2.7k** stars/天 · 建立 3 天前 · TypeScript · MIT
+**8.5k** stars · **2.1k** stars/天 · 建立 4 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/XiaomiMiMo--MiMo-Code");
@@ -73,20 +73,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG` `v0.1.0` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供跨會話記憶的 AI 編碼助手，能夠讀寫代碼、管理 Git 並執行命令。
+> 提供跨會話記憶的 AI 編程助手，能夠讀寫代碼、管理 Git，並持續自我改進。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (2.7k stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** 3 人 · **參與度** Low
-> **適合** 需要高效管理大型專案並希望減少重複學習的開發者。
-> **一句話重點** MiMoCode 的持久記憶功能能夠顯著提高開發者的工作效率，特別是在長期專案中。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (2.1k stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** 3 人 · **參與度** Low
+> **適合** 需要高效開發和上下文管理的團隊，特別是正在尋求 AI 助手來提升工作流的開發者。
+> **一句話重點** MiMoCode 的持久記憶和智能上下文管理功能能夠顯著提升開發者的工作效率，特別是在多會話的開發環境中。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/XiaomiMiMo--MiMo-Code");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "AI 工具" && p.file.name !== "XiaomiMiMo--MiMo-Code" && p.status !== "archived")
+>     .where(p => p.subcategory === "AI 助手" && p.file.name !== "XiaomiMiMo--MiMo-Code" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -97,36 +97,36 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 AI 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 AI 助手 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、3 小時整合，得到高效的開發體驗，值得嘗試。
+> **結論** 花 5 小時學、3 小時整合，得到高效的開發助手，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供跨會話記憶的 AI 編碼助手，能夠讀寫代碼、管理 Git 並執行命令。
+> 具備跨會話記憶的 AI 編程助手，能夠持續自我改進。
 
 ## 專案簡介
 
-MiMoCode 是一款終端原生的 AI 編碼助手，能夠讀寫代碼、執行命令和管理 Git，並利用 SQLite FTS5 提供的持久記憶系統，保持對專案的深刻理解。用戶可以透過簡單的指令 `curl -fsSL https://mimo.xiaomi.com/install | bash` 安裝，並在首次啟動時自動引導配置。核心功能包括多個代理模式（如 `build`、`plan` 和 `compose`），以及自動檢查點和智能上下文管理，這使得在會話之間的記憶得以持續。技術上，MiMoCode 使用 TypeScript 和 Bun 作為主要開發環境，並依賴 SQLite 來實現高效的記憶管理。
+MiMoCode 是一個開源的 AI 編程助手，旨在提升開發者的工作效率。它可以讀取和寫入代碼、執行命令並管理 Git，並且具備持久記憶系統，能夠在不同會話間保持對專案的深刻理解。使用者可以透過簡單的安裝指令 `curl -fsSL https://mimo.xiaomi.com/install | bash` 或 `npm install -g @mimo-ai/cli` 來快速啟動。其核心賣點在於跨會話記憶，這意味著即使在不同的開發會話中，MiMoCode 也能記住專案的上下文，減少重複學習的時間。技術上，它使用 SQLite FTS5 來實現持久記憶，並透過智能上下文管理來優化記憶的使用，這樣可以在需要時自動重建上下文。
 
-與其他工具相比，MiMoCode 提供了更強的跨會話記憶功能，這在使用過程中能夠減少重複學習的時間，特別適合長期專案開發。相較於同類工具如 AgentSpriteForge 和 Claude Code，MiMoCode 的記憶管理和上下文重建能力更為強大，能夠在多次會話中保持一致性。使用者在處理大規模專案時，能夠利用這些功能來提高開發效率，但目前仍有 474 個開放問題，顯示出其穩定性可能有待加強。整體來說，這是一個具有潛力的工具，特別適合需要長期維護的專案，但在使用時需注意其當前的穩定性和社群支持情況。
+與其他工具相比，MiMoCode 在功能上不僅支持多個代理模式，還能夠創建子代理以並行處理任務，這在傳統的編程助手中並不常見。此外，MiMoCode 還提供了語音輸入功能，讓使用者能夠以更自然的方式與系統互動。這些設計使得 MiMoCode 在大型專案中表現優異，特別是在需要多任務處理和上下文保持的情況下。這個工具目前仍在快速發展中，社群活躍度高，但也存在一些未解決的問題，例如文件刪除錯誤和粘貼功能的限制。總體來說，MiMoCode 適合需要高效開發和上下文管理的團隊，特別是那些正在尋求 AI 助手來提升工作流的開發者。
 
-**技術棧**：`TypeScript` · `Bun` · `SQLite`
+**技術棧**：`TypeScript` · `CSS` · `JavaScript` · `Shell` · `HTML` · `Nix` · `Dockerfile` · `PowerShell`
 
 ## 重點功能
 
-- 多代理模式 — 提供 `build`、`plan` 和 `compose` 三種不同的開發模式，根據需求切換。
-- 持久記憶 — 利用 SQLite FTS5 保存專案知識和會話檢查點，減少重複學習。
-- 智能上下文管理 — 自動決定何時保存會話狀態，並在上下文接近限制時重建。
-- 任務追蹤系統 — 樹狀任務系統自動與檢查點系統整合，保持任務進度。
-- 子代理系統 — 主代理可根據需求創建子代理，並共享當前會話上下文。
+- 持久記憶 — 使用 SQLite FTS5 來實現跨會話記憶，減少重複學習時間。
+- 多代理模式 — 提供不同的代理模式如 `build`、`plan` 和 `compose`，以適應不同的開發需求。
+- 智能上下文管理 — 自動保存會話狀態，並在需要時重建上下文。
+- 任務追蹤系統 — 提供樹狀任務系統，能夠保持任務進度。
+- 語音輸入功能 — 支持即時語音輸入，提升使用者互動體驗。
 
 ## 快速開始
 
-1. 一行安裝
+1. 一鍵安裝
 ```bash
 curl -fsSL https://mimo.xiaomi.com/install | bash
 ```
@@ -134,72 +134,72 @@ curl -fsSL https://mimo.xiaomi.com/install | bash
 ```bash
 npm install -g @mimo-ai/cli
 ```
-3. 首次啟動自動配置
+3. 啟動配置向導
 ```bash
-啟動後根據提示完成配置
+執行安裝後自動配置
 ```
 
 ## 程式碼範例
 
 ```ts
 {
-  "前置條件": "安裝完成後",
-  "指令": "mimocode",
-  "預期輸出": "啟動 MiMoCode 介面，並開始使用"
+  "前置條件": "需要安裝 MiMoCode",
+  "指令": "curl -fsSL https://mimo.xiaomi.com/install | bash",
+  "預期輸出": "安裝完成後，啟動配置向導"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 7958 stars（2653/天），forks 658（8.3%），顯示出強勁的增長潛力。作者團隊來自小米，具備強大的技術背景，並且這個工具解決了長期以來開發者在多會話中記憶和上下文管理的痛點。之前的工具往往無法有效保持上下文，導致重複工作，而 MiMoCode 的設計正是針對這一需求。社群活躍度高，且有多個熱門問題反映出使用者的實際需求和痛點。
+> 建立 4 天就累積 8478 stars（2120/天），forks 720（8.5%），顯示出強烈的社群興趣。作者是 Xiaomi 團隊，過去在 AI 和開發工具領域有豐富經驗。這個工具解決了開發者在多會話中記憶和上下文管理的痛點，之前的工具如 OpenCode 雖然功能強大，但缺乏持久記憶的能力。近期的社群討論和需求促進了這個工具的快速成長。隨著 AI 助手的普及，這個工具的需求也隨之上升，特別是在需要高效開發的場景中。forks/stars 比率為 8.5%，顯示出許多使用者對其進行實際修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效管理大型專案並希望減少重複學習的開發者。
+**目標受眾**：需要高效開發和上下文管理的團隊，特別是正在尋求 AI 助手來提升工作流的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來管理大型專案的代碼版本，因為其持久記憶功能能夠減少重複學習的時間。
-> - 全端開發者用它來快速生成和測試新功能，因為其多代理模式能夠在不同開發階段提供專業建議。
-> - DevOps 工程師用它來自動化 CI/CD 流程，因為其能夠與 Git 整合，並在多次會話中保持上下文。
+> - 後端工程師用它來自動化代碼生成和管理 Git，因為它的持久記憶功能能夠減少重複學習的時間。
+> - 全端開發者用它來協調多個任務和代理，因為它的子代理系統可以並行處理多個開發任務，提升工作效率。
+> - AI 研究人員用它來測試和調整模型，因為它能夠持續記錄會話狀態，並在不同會話中保持上下文。
 
 ## 架構分析
 
-MiMoCode 採用模組化架構，主要由多個包組成，使用 Bun 作為包管理工具。其核心功能透過 SQLite 實現持久記憶，並利用 TypeScript 提供強型別支持。資料流方面，使用者的輸入會經過多個代理進行處理，並在每次會話結束時自動保存狀態。選擇 SQLite 作為記憶管理的後端，能夠提供高效的查詢性能，但在處理大量數據時可能會遇到瓶頸。整體架構設計上，MiMoCode 旨在提供高效的開發體驗，但在擴展性方面可能需要進一步考慮。
+MiMoCode 採用模組化架構，核心功能由多個子模組組成，這樣的設計使得各個功能可以獨立開發和測試。它的持久記憶系統使用 SQLite FTS5 來管理跨會話的上下文，這樣可以快速檢索和重建會話狀態。每個代理模式（如 `build`、`plan` 和 `compose`）都能根據需求調整其行為，這樣的靈活性使得 MiMoCode 能夠適應不同的開發場景。選擇 SQLite 作為記憶存儲的代價是需要額外的學習成本，但這樣的選擇能夠提供高效的查詢性能。隨著使用者數量的增加，可能會出現性能瓶頸，特別是在大型專案中，這需要進一步的優化和測試。
 
 ## 技術深入分析
 
-MiMoCode 的核心技術機制是基於 TypeScript 和 SQLite 的模組化架構，這使得它能夠提供高效的記憶管理和代碼處理能力。使用 SQLite FTS5 來實現持久記憶，能夠快速查詢和更新專案狀態，這在大型專案中尤為重要。設計上，MiMoCode 的多代理系統允許用戶根據需求切換不同的開發模式，這樣的靈活性使得它能夠適應各種開發場景。效能方面，MiMoCode 在處理小型專案時表現優異，但在大型專案中，記憶管理的效能可能會受到影響。選擇 TypeScript 作為開發語言，提供了強型別支持，減少了潛在的錯誤，但也增加了學習成本。技術風險方面，隨著使用者數量的增加，可能會面臨性能瓶頸，特別是在記憶管理和上下文重建方面。整合方面，MiMoCode 能夠與主流的 LLM 提供者 API 兼容，這使得它在現有的開發生態中具有良好的適應性。
+MiMoCode 的核心技術機制在於其持久記憶系統，這是通過 SQLite FTS5 實現的，能夠快速檢索和重建會話狀態。它的任務追蹤系統使用樹狀結構來管理任務，這樣可以保持任務進度並在會話間持續追蹤。設計上，MiMoCode 採用模組化架構，這使得各個功能可以獨立開發和測試，並且能夠靈活地調整代理的行為。選擇 SQLite 作為記憶存儲的好處在於其高效的查詢性能，但也帶來了額外的學習成本。隨著使用者數量的增加，可能會出現性能瓶頸，特別是在大型專案中，這需要進一步的優化和測試。與主流開發框架的整合相對簡單，因為它支持多種 API 和插件，但在 CI/CD 流程中的整合仍需進一步探索。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含安裝指令，安裝過程相對順暢，無明顯坑點。首次啟動時有自動配置引導，對新手友好。文件目前僅提供英文，可能對某些使用者造成障礙。
+> README 文件提供了清晰的安裝和使用指導，並包含範例。安裝過程相對順暢，但仍需注意某些功能的已知問題。文件目前僅提供英文版本，未來可能需要多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供持久記憶功能，減少重複學習的時間。
-> - 多代理模式靈活應對不同開發需求。
-> - 自動檢查點功能提高會話的連貫性。
+> - 持久記憶系統減少重複學習時間，提升開發效率。
+> - 多代理模式提供靈活的開發選擇，適應不同需求。
+> - 智能上下文管理能夠自動保存和重建會話狀態，減少手動干預。
 
 > [!danger] 缺點
-> - 目前仍有較多開放問題，穩定性有待觀察。
-> - 對於大型專案的記憶管理效能可能不足。
-> - 需要持續的網路連接以使用 LLM 提供者的 API。
+> - 目前仍在開發中，存在未解決的錯誤。
+> - 對於大型專案的性能表現尚未經過充分測試。
+> - 某些功能如粘貼文本和文件存在已知問題。
 
 > [!warning] 注意事項
-> - 目前仍有 474 個開放問題，顯示出穩定性可能有待加強。
-> - 對於大型專案，記憶管理的效能可能會受到影響。
-> - 需要持續的網路連接以使用 LLM 提供者的 API。
+> - 目前仍在開發中，可能存在未解決的錯誤。
+> - 對於大型專案的性能表現尚未經過充分測試。
+> - 某些功能如粘貼文本和文件存在已知問題。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 助手功能，但缺乏 MiMoCode 的持久記憶和上下文重建能力，適合短期專案使用。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於代碼生成，但不具備 MiMoCode 的多代理模式和任務追蹤系統，適合簡單的代碼生成需求。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 提供 LLM 接口，但缺少 MiMoCode 的智能上下文管理功能，適合需要簡單 LLM 整合的場景。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 助手功能，但不具備持久記憶系統，適合簡單的代碼生成任務。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於代碼分析和重構，缺乏 MiMoCode 的上下文管理和多代理功能。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 支持多代理系統，但不具備 MiMoCode 的持久記憶和智能上下文管理。 |
 
 ## 替代方案決策
 
@@ -207,17 +207,17 @@ MiMoCode 的核心技術機制是基於 TypeScript 和 SQLite 的模組化架構
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 助手功能，但缺乏 MiMoCode 的持久記憶和上下文重建能力。 | 如果需要簡單的 AI 助手而不需要持久記憶功能。 | medium，因為需要重新配置上下文管理。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於代碼生成，但不具備 MiMoCode 的多代理模式和任務追蹤系統。 | 如果只需要簡單的代碼生成而不需要複雜的上下文管理。 | low，因為功能簡單，容易上手。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 提供 LLM 接口，但缺少 MiMoCode 的智能上下文管理功能。 | 如果需要簡單的 LLM 整合而不需要複雜的記憶管理。 | medium，因為需要重新配置 API 接入。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 助手功能，但不具備持久記憶系統，適合簡單的代碼生成任務。 | 如果你的專案不需要持久記憶，且希望快速生成代碼。 | low，因為功能相似且接口簡單。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於代碼分析和重構，缺乏 MiMoCode 的上下文管理和多代理功能。 | 如果你的需求主要是代碼重構和分析，而不是整體開發助手。 | medium，因為需要調整工作流程以適應不同的功能。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 支持多代理系統，但不具備 MiMoCode 的持久記憶和智能上下文管理。 | 如果你的專案需要多代理協作，但不需要持久記憶功能。 | medium，因為需要重新配置代理的行為。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **MiMo-Code** | **agent-sprite-forge** | **boneyard** | **codex-shim** |
+> | 維度 | **MiMo-Code** | **agent-sprite-forge** | **boneyard** | **Duel-Agents** |
 > | --- | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供類似的 AI 助手功能，但缺乏 MiMoCode 的持久記憶和上下文重建能力。 | 專注於代碼生成，但不具備 MiMoCode 的多代理模式和任務追蹤系統。 | 提供 LLM 接口，但缺少 MiMoCode 的智能上下文管理功能。 |
-> | 遷移成本 | - | medium，因為需要重新配置上下文管理。 | low，因為功能簡單，容易上手。 | medium，因為需要重新配置 API 接入。 |
-> | 適用場景 | 主要場景 | 如果需要簡單的 AI 助手而不需要持久記憶功能。 | 如果只需要簡單的代碼生成而不需要複雜的上下文管理。 | 如果需要簡單的 LLM 整合而不需要複雜的記憶管理。 |
+> | 技術路線 | 本專案 | 提供類似的 AI 助手功能，但不具備持久記憶系統，適合簡單的代碼生成任務。 | 專注於代碼分析和重構，缺乏 MiMoCode 的上下文管理和多代理功能。 | 支持多代理系統，但不具備 MiMoCode 的持久記憶和智能上下文管理。 |
+> | 遷移成本 | - | low，因為功能相似且接口簡單。 | medium，因為需要調整工作流程以適應不同的功能。 | medium，因為需要重新配置代理的行為。 |
+> | 適用場景 | 主要場景 | 如果你的專案不需要持久記憶，且希望快速生成代碼。 | 如果你的需求主要是代碼重構和分析，而不是整體開發助手。 | 如果你的專案需要多代理協作，但不需要持久記憶功能。 |
 
 ## 成熟度評估
 
@@ -234,20 +234,21 @@ MiMoCode 的核心技術機制是基於 TypeScript 和 SQLite 的模組化架構
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在大型專案中，記憶管理可能會導致性能下降。
-  - 解法：定期清理不必要的記憶內容以減少負擔。
-- [MEDIUM] 某些 LLM 提供者的 API 可能不完全兼容。
-  - 解法：在使用前檢查 API 文檔以確認兼容性。
-- [MEDIUM] 安裝過程中可能會遇到網路問題，導致安裝失敗。
-  - 解法：確保網路連接穩定，並重試安裝。
+- **[HIGH]** 在某些情況下，會出現文件被錯誤刪除的問題。
+  - 解法：定期備份專案文件以防遺失。
+- [MEDIUM] 粘貼文本和文件功能存在已知問題，可能導致操作失敗。
+  - 解法：使用命令行手動處理文件。
+- [MEDIUM] 在高負載情況下，性能可能下降。
+  - 解法：減少同時運行的任務數量。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 提供持久記憶功能，能夠減少重複學習的時間。 |
-| 大型企業的長期專案開發 | 適合 | 能夠保持上下文，但需注意性能問題。 |
-| 需要快速生成代碼的小型專案 | 普通 | 雖然功能強大，但可能過於複雜。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 持久記憶和上下文管理能夠提升開發效率。 |
+| 大型企業的多團隊協作專案 | 適合 | 多代理系統能夠支持多任務並行處理。 |
+| 個人開發者的簡單專案 | 普通 | 功能過於複雜，可能不需要所有特性。 |
+| 需要快速迭代的 AI 研究專案 | 不適合 | 目前仍在開發中，穩定性不足。 |
 
 ## 採用成本分析
 
@@ -259,12 +260,12 @@ MiMoCode 的核心技術機制是基於 TypeScript 和 SQLite 的模組化架構
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、3 小時整合，得到高效的開發體驗，值得嘗試。
+> 花 5 小時學、3 小時整合，得到高效的開發助手，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，僅存取專案相關資料，依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
+> 低風險：不需要高權限，且不存取敏感資料。依賴鏈中有少量未審計的依賴，建議定期檢查安全性。
 
 ## 健康度儀表板
 
@@ -329,9 +330,9 @@ MiMoCode 的核心技術機制是基於 TypeScript 和 SQLite 的模組化架構
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 658 |
-| Open Issues | 474 |
-| Issue 解決率 | 7% (38 closed) |
+| Forks | 720 |
+| Open Issues | 585 |
+| Issue 解決率 | 7% (41 closed) |
 | 最後推送 | 2026-06-11 |
 | 建立日期 | 2026-06-10 |
 | Repo 大小 | 45.4 MB |
@@ -358,8 +359,7 @@ MiMoCode 的核心技術機制是基於 TypeScript 和 SQLite 的模組化架構
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和回應使用者問題。
-**連結**：[文件](https://mimo.xiaomi.com/docs) · [Discord](https://discord.gg/mimo)
+**社群活躍度**：社群活躍度高，近期有多個討論和需求反饋。
 
 ## 開發動態
 
@@ -374,7 +374,8 @@ MiMoCode 的核心技術機制是基於 TypeScript 和 SQLite 的模組化架構
 > | [#460](https://github.com/XiaomiMiMo/MiMo-Code/issues/460) | [BUG] 睿智的模型会乱删文件 `bug` | 8 | 4 |
 > | [#182](https://github.com/XiaomiMiMo/MiMo-Code/issues/182) | 无法粘贴文本及文件 `bug` | 4 | 2 |
 > | [#125](https://github.com/XiaomiMiMo/MiMo-Code/issues/125) | [FEATURE]:希望支持从opencode切换到mimo code | 4 | 0 |
-> | [#75](https://github.com/XiaomiMiMo/MiMo-Code/issues/75) | [FEATURE]:希望支持homebrew安装 | 4 | 0 |
+> | [#75](https://github.com/XiaomiMiMo/MiMo-Code/issues/75) | [FEATURE]:希望支持homebrew安装 | 4 | 1 |
+> | [#542](https://github.com/XiaomiMiMo/MiMo-Code/issues/542) | [FEATURE]: 增加选项让 AI 每次修改前自动读取最新代码 | 3 | 1 |
 
 ## README 摘錄
 
@@ -521,19 +522,19 @@ MiMoCode 的核心技術機制是基於 TypeScript 和 SQLite 的模組化架構
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[AI 助手]] · [[持久記憶]]
+相關概念：[[AI 助手]] · [[上下文工程]] · [[持久記憶]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[GammaLabTechnologies--harmonist|GammaLabTechnologies/harmonist]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[GammaLabTechnologies--harmonist|GammaLabTechnologies/harmonist]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]]
 
 [GitHub](https://github.com/XiaomiMiMo/MiMo-Code)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：AI 工具）
+> [!note]- 直接競品（同子分類：AI 助手）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "AI 工具" AND file.name != "XiaomiMiMo--MiMo-Code"
+> WHERE subcategory = "AI 助手" AND file.name != "XiaomiMiMo--MiMo-Code"
 > SORT stars DESC
 > ```
 
@@ -565,7 +566,7 @@ MiMoCode 的核心技術機制是基於 TypeScript 和 SQLite 的模組化架構
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","AI 助手","持久記憶"];
+> const concepts = ["AI 助手","上下文工程","持久記憶"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "XiaomiMiMo--MiMo-Code" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

@@ -7,8 +7,8 @@ language: Shell
 license: N/A
 description: "国行 Mac 一键开启完整 Apple 智能(端侧 + Private Cloud Compute 云端)· macOS 27 / Apple Silicon"
 homepage: ""
-stars: 1189
-stars_per_day: 297
+stars: 1192
+stars_per_day: 298
 forks: 63
 open_issues: 16
 created: 2026-06-10
@@ -16,17 +16,17 @@ pushed_at: 2026-06-13
 first_seen: 2026-06-14
 week: "2026-W25"
 month: "2026-06"
-category: "其他"
-subcategory: "Apple 智能工具"
+category: "開發工具"
+subcategory: "系統工具"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-14
-use_case: "讓國行 Mac 一鍵啟用完整 Apple 智能功能，無需繁瑣設定。"
+use_case: "讓國行 Mac 一鍵開啟完整的 Apple 智能功能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 2
 next_review: "2026-06-18"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: 52
+issue_close_rate: 45
 repo_size_kb: 29
 readme_length: 6122
 bus_factor: 1
@@ -42,22 +42,21 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-14"
-star_history: "2026-06-14:996,2026-06-14:999,2026-06-15:1189"
+star_history: "2026-06-14:996,2026-06-14:999,2026-06-15:1189,2026-06-15:1192"
 tags:
   - github
-  - "category/其他"
+  - "category/開發工具"
   - "lang/shell"
-  - easy_install
   - "topic/apple_intelligence"
 aliases:
   - "enableMacosAI"
   - "SkyBlue997/enableMacosAI"
-  - "讓國行 Mac 一鍵啟用完整 Apple 智能功能，無需繁瑣設定。"
+  - "讓國行 Mac 一鍵開啟完整的 Apple 智能功能。"
 ---
 
 # enableMacosAI
 
-**999** stars · **333** stars/天 · 建立 3 天前 · Shell · 未標註授權
+**1.2k** stars · **298** stars/天 · 建立 4 天前 · Shell · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/SkyBlue997--enableMacosAI");
@@ -70,25 +69,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `easy-install`
+`個人專案`
 
 `apple-intelligence`
 
 > [!summary] 一句話摘要
-> 讓國行 Mac 一鍵啟用完整 Apple 智能功能，無需繁瑣設定。
+> 讓國行 Mac 一鍵開啟完整的 Apple 智能功能。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (333 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 希望在國行 Mac 上啟用完整 Apple 智能功能的技術用戶。
-> **一句話重點** 這個專案讓國行 Mac 用戶能夠輕鬆啟用完整的 Apple 智能功能，解決了過去的使用限制。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (298 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 希望在國行 Mac 上無縫使用 Apple 智能功能的技術用戶。
+> **一句話重點** 這個專案讓國行 Mac 用戶能夠輕鬆啟用 Apple 智能功能，解決了長期以來的區域限制問題。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/SkyBlue997--enableMacosAI");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "Apple 智能工具" && p.file.name !== "SkyBlue997--enableMacosAI" && p.status !== "archived")
+>     .where(p => p.subcategory === "系統工具" && p.file.name !== "SkyBlue997--enableMacosAI" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -99,110 +98,98 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 Apple 智能工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 系統工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學、1 小時整合，得到快速啟用 Apple 智能的效果，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學習，2 小時整合，能夠解鎖 Apple 智能功能，值得嘗試。
 
 > [!abstract] 核心創新
-> 通過修改 IORegistry 的區域碼，實現了在國行 Mac 上啟用完整 Apple 智能的功能。
+> 透過簡單的 kext 修改系統區域碼，無需逐進程注入即可啟用完整 Apple 智能功能。
 
 ## 專案簡介
 
-這個專案提供了一個簡單的 Shell 腳本，通過修改 Mac 的區域碼來啟用 Apple 智能功能，包含端側和雲端計算。用戶只需執行 `sudo ./install.sh`，腳本會自動檢查系統設置並安裝必要的內核擴展，確保 Apple 智能功能正常運行。這樣的設計避免了繁瑣的手動配置，讓用戶能輕鬆享受完整的 Apple 智能體驗。該工具的核心是通過修改 `IORegistry` 中的 `region-info` 屬性，將其從 `CH/A` 變更為 `LL/A`，使得系統能夠識別為美版，從而啟用所有功能。這種方法比起傳統的 plist 修改更為穩定，因為它直接影響到系統的根源設置。
+這個專案透過一個簡單的內核擴展(kext)，將國行 Mac 的區域碼從 `CH/A` 轉換為 `LL/A`，使得系統能夠啟用完整的 Apple 智能功能，包括端側和雲端計算。使用者只需執行 `sudo ./install.sh`，即可自動檢查系統狀態並安裝所需的 kext，並在首次啟動後需要手動允許擴展。這樣的設計能夠避免逐進程注入的繁瑣，直接從源頭修改區域碼，讓所有進程都能讀取美版的資格設置。技術上，這個 kext 直接與 `IOPlatformExpertDevice` 交互，並在啟動時設置相應的屬性，這樣不僅簡化了過程，還提高了穩定性。
 
-使用者需要注意，該工具要求 SIP 必須關閉，這意味著在安全性上可能會有一定的風險，尤其是在使用雲端功能時。與其他類似工具相比，如 `0x0funky/agent-sprite-forge`，這個專案提供了更簡單的安裝過程，並且不需要複雜的配置，適合希望快速啟用 Apple 智能的用戶。實際使用中，若遇到問題，腳本也提供了診斷功能，能幫助用戶快速定位問題。這個專案目前處於初期階段，社群活躍度尚可，但仍需注意潛在的問題和限制。適合個人用戶或小型團隊，尤其是對 Apple 智能功能有需求的開發者或創作者。
+與其他類似工具相比，如 `0x0funky/agent-sprite-forge`，這個專案的優勢在於其一鍵安裝的便利性和對 Apple 智能的全面支持。使用者需要注意，該工具要求 SIP 必須關閉，並且需要在系統設置中允許第三方 kext，這可能會對某些用戶造成困擾。此工具的效能在於能夠無縫啟用 Apple 的各種智能功能，然而，對於不熟悉系統設置的用戶來說，初次安裝可能會遇到一些挑戰。從目前的開發活動來看，這個專案在短時間內獲得了相當多的關注，顯示出其潛在的需求和使用者基礎。
 
 **技術棧**：`Shell` · `C++` · `C`
 
 ## 重點功能
 
-- 一鍵安裝 — 使用 `sudo ./install.sh` 自動完成所有設定。
-- 系統檢查 — `sudo ./install.sh status` 提供 SIP、AMFI、區域碼等狀態檢查。
-- 一鍵診斷 — `sudo ./install.sh diagnose` 生成關鍵狀態的純文本報告，便於問題排查。
-- 自動加載 — 使用 LaunchDaemon 自動加載 kext，確保系統啟動時功能正常。
-- 簡單卸載 — `sudo ./install.sh uninstall` 可以輕鬆恢復原始區域設定。
+- 一鍵安裝 — 使用 `sudo ./install.sh` 自動完成所有設置，簡化安裝過程。
+- 系統狀態檢查 — `sudo ./install.sh status` 提供 SIP、AMFI、區域等狀態的詳細報告。
+- 一鍵診斷 — `sudo ./install.sh diagnose` 生成關鍵狀態的純文本，便於報告問題。
+- 自動加載 kext — 在啟動時自動加載 kext 並刷新 AI 守護進程，無需手動操作。
+- 簡易卸載 — `sudo ./install.sh uninstall` 可快速恢復原始區域設置。
 
 ## 快速開始
 
-1. 下載並解壓專案
-```bash
-git clone https://github.com/SkyBlue997/enableMacosAI.git
-```
-2. 進入專案目錄
-```bash
-cd enableMacosAI
-```
-3. 執行安裝腳本
+1. 下載並執行安裝腳本
 ```bash
 sudo ./install.sh
 ```
-
-## 程式碼範例
-
+2. 檢查系統狀態
 ```bash
-{
-  "前置條件": "確保 SIP 已關閉",
-  "指令": "sudo ./install.sh",
-  "預期輸出": "腳本將檢查系統狀態並安裝必要的 kext。"
-}
+sudo ./install.sh status
+```
+3. 診斷系統問題
+```bash
+sudo ./install.sh diagnose
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天就累積 999 stars（333/天），forks 51（5.1%），這顯示出快速增長的潛力。作者 SkyBlue997 似乎專注於 Apple 生態系統的開發，解決了國行 Mac 用戶無法使用完整 Apple 智能的痛點，這在過去是個難題。這個專案的出現正好填補了這一空白，讓用戶能夠輕鬆啟用這些功能。社群的反應熱烈，特別是對於安裝和使用的簡便性有很高的評價。
+> 建立 4 天就累積 1192 stars（298/天），forks 63（5.3%），這顯示出強烈的用戶興趣。作者 SkyBlue997 似乎專注於 Apple 生態系統，這個專案解決了國行 Mac 用戶無法使用 Apple 智能的痛點，之前用戶只能依賴繁瑣的手動設置或不完整的替代方案。此專案的出現正好填補了這一空白，並且在社群中引發了討論，尤其是在 GitHub Issues 中的活躍互動，顯示出用戶對於功能的需求和改進的期待。
 
 ## 適合誰使用
 
-**目標受眾**：希望在國行 Mac 上啟用完整 Apple 智能功能的技術用戶。
+**目標受眾**：希望在國行 Mac 上無縫使用 Apple 智能功能的技術用戶。
 
 > [!example] 使用場景
-> - 國行 Mac 用戶用它來啟用完整的 Apple 智能功能，因為這樣可以無需繁瑣的手動配置，快速享受最新的 AI 工具。
-> - 開發者用它來測試 Apple 智能功能，因為這樣能夠在本地環境中快速驗證功能，而不需要更改設備或地區設定。
-> - 小型團隊用它來提升工作效率，因為能夠利用 Apple 智能的寫作工具和雲端計算功能，改善團隊的協作效果。
+> - 開發者用它來在國行 Mac 上啟用 Apple 智能功能，因為這樣可以直接使用各種 AI 工具而無需繁瑣的手動設置。
+> - 普通用戶用它來解鎖 Apple 智能的完整功能，因為這樣能夠提升使用體驗，享受更流暢的系統功能。
+> - 技術愛好者用它來研究和測試 Apple 智能的各種功能，因為這樣可以在本地環境中輕鬆進行實驗。
 
 ## 架構分析
 
-該專案的架構以簡單的 Shell 腳本為核心，通過調用內核擴展來實現區域碼的修改。這種設計使得安裝過程簡單明瞭，使用者只需執行一條命令即可完成所有設定。資料流方面，腳本會檢查系統狀態，然後自動修改內核參數，確保 Apple 智能功能能夠正常運行。
-
-選擇使用 Shell 腳本的原因在於其跨平台的兼容性和易於使用的特性，代價是對於不熟悉命令行的用戶來說，可能需要額外的學習。整體而言，這個架構在簡單性和功能性之間取得了良好的平衡，但在安全性上則需要用戶自行承擔風險，特別是在關閉 SIP 的情況下。擴展性方面，未來可能需要考慮如何在不同版本的 macOS 中保持兼容性。
+該專案採用內核擴展(kext)的架構，這樣的設計使得系統能夠在不影響其他進程的情況下，直接從源頭修改區域碼。這樣的方式避免了逐進程的注入，提升了穩定性和效率。資料流方面，kext 在啟動時與 `IOPlatformExpertDevice` 交互，設置相應的屬性，確保所有進程都能讀取到正確的區域碼。這種設計的代價在於需要用戶具備一定的系統知識來關閉 SIP 和允許 kext，對於不熟悉的用戶來說，可能會造成困擾。擴展性方面，這個架構在未來可以進一步支持更多的 Apple 智能功能，但也可能面臨系統更新帶來的兼容性問題。
 
 ## 技術深入分析
 
-該專案的核心技術機制在於通過內核擴展來修改 IORegistry 的 `region-info` 屬性，這樣的設計使得系統能夠識別為美版，從而啟用 Apple 智能功能。這種方法比起傳統的 plist 修改更為穩定，因為它直接影響到系統的根源設置。效能方面，該工具在安裝後能夠快速啟用功能，並且不會對系統性能造成明顯影響。設計取捨方面，選擇使用 Shell 腳本的原因在於其跨平台的兼容性和易於使用的特性，代價是對於不熟悉命令行的用戶來說，可能需要額外的學習。技術風險方面，由於需要關閉 SIP，這可能會導致系統安全性降低，特別是在使用雲端功能時。整合方面，該工具可以輕鬆與現有的 macOS 環境集成，但對於不熟悉命令行的用戶來說，可能會有一定的學習曲線。
+該專案的核心技術在於通過內核擴展(kext)來修改系統的區域碼，這樣的設計使得所有進程都能夠無縫地訪問 Apple 智能功能。使用的資料結構主要是 `IOPlatformExpertDevice`，這樣的選擇使得修改能夠在系統層面進行，而不需要逐一處理每個進程。效能方面，這種方法能夠快速響應用戶的需求，並且在系統啟動時自動加載，減少了手動操作的需要。設計取捨上，選擇 kext 的方式雖然能夠提供強大的功能，但也要求用戶具備一定的技術知識，這可能會限制其普及。技術風險方面，未來的系統更新可能會影響 kext 的兼容性，這是需要注意的潛在問題。整合方面，這個工具與 macOS 的整體架構相容性良好，但在 CI/CD pipeline 的使用上可能需要進一步的測試和調整。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用說明，並且包含了故障排查的指引。安裝過程相對順暢，但需要注意關閉 SIP 的步驟。文件目前僅提供英文版本，可能對非英文用戶造成一定困難。
+> README 文件提供了清晰的安裝指引和使用說明，安裝過程相對順暢，但對於不熟悉系統設置的用戶可能會有一定的挑戰。文件中有詳細的步驟說明，但缺乏多語言支持。整體來說，花 30 分鐘應該能夠成功運行起來，但需要用戶具備一定的技術背景。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 安裝過程簡單，只需一條命令即可完成。
-> - 提供診斷功能，方便用戶快速排查問題。
-> - 能夠啟用完整的 Apple 智能功能，提升使用體驗。
+> - 一鍵安裝，簡化了繁瑣的設置過程。
+> - 能夠全面啟用 Apple 智能功能，提升使用體驗。
+> - 直接修改系統區域碼，避免了逐進程注入的複雜性。
 
 > [!danger] 缺點
 > - 需要關閉 SIP，可能影響系統安全性。
-> - 僅支援 Apple Silicon 設備，對於 Intel 用戶無法使用。
-> - 雲端功能依賴於 AMFI 開啟，配置較為複雜。
+> - 安裝過程對普通用戶不夠友好，需手動設置。
+> - 依賴於 Apple 帳戶的地區設置，限制使用範圍。
 
 > [!warning] 注意事項
-> - 僅支援 Apple Silicon 設備。
-> - 需要關閉 SIP，可能影響系統安全性。
-> - 雲端功能依賴於 AMFI 開啟，必須小心配置。
+> - 必須關閉 SIP 才能運行，這可能會影響系統安全性。
+> - 需要在系統設置中手動允許第三方 kext，對於普通用戶來說可能不夠友好。
+> - Apple 帳戶必須在支持 Apple 智能的地區，否則無法啟用相關功能。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具也針對 Apple 智能，但安裝過程較為複雜，需要更多手動配置。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 此工具提供類似功能，但不支持一鍵安裝，使用者需要自行編譯和配置。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 此工具也針對 Apple 智能，但主要集中在代理功能，而本專案則直接修改系統區域碼以啟用完整功能。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具提供了類似的功能，但安裝過程較為繁瑣，缺乏一鍵安裝的便利性。 |
 
 ## 替代方案決策
 
@@ -210,16 +197,16 @@ sudo ./install.sh
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具也針對 Apple 智能，但安裝過程較為複雜，需要更多手動配置。 | 如果你需要更高的自定義選項，並且不介意手動配置。 | medium，因為需要重新配置和調整設置。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 此工具提供類似功能，但不支持一鍵安裝，使用者需要自行編譯和配置。 | 如果你有編程背景並希望深入了解內部工作原理。 | high，因為需要重新編譯和配置環境。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 此工具專注於代理功能，並不直接修改系統區域碼，因此在功能上有所限制。 | 如果需要更靈活的代理功能而非直接修改系統設置，可以考慮此工具。 | medium，因為需要重新配置相關的代理設置。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 此工具提供了類似的功能，但安裝過程較為繁瑣，缺乏一鍵安裝的便利性。 | 如果需要更高的自定義性和控制權，可以考慮此工具。 | high，因為需要手動處理多個配置步驟。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **enableMacosAI** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這個工具也針對 Apple 智能，但安裝過程較為複雜，需要更多手動配置。 | 此工具提供類似功能，但不支持一鍵安裝，使用者需要自行編譯和配置。 |
-> | 遷移成本 | - | medium，因為需要重新配置和調整設置。 | high，因為需要重新編譯和配置環境。 |
-> | 適用場景 | 主要場景 | 如果你需要更高的自定義選項，並且不介意手動配置。 | 如果你有編程背景並希望深入了解內部工作原理。 |
+> | 技術路線 | 本專案 | 此工具專注於代理功能，並不直接修改系統區域碼，因此在功能上有所限制。 | 此工具提供了類似的功能，但安裝過程較為繁瑣，缺乏一鍵安裝的便利性。 |
+> | 遷移成本 | - | medium，因為需要重新配置相關的代理設置。 | high，因為需要手動處理多個配置步驟。 |
+> | 適用場景 | 主要場景 | 如果需要更靈活的代理功能而非直接修改系統設置，可以考慮此工具 | 如果需要更高的自定義性和控制權，可以考慮此工具。 |
 
 ## 成熟度評估
 
@@ -230,43 +217,44 @@ sudo ./install.sh
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用，但不建議用在生產環境的核心路徑上。
+> 目前適合技術愛好者試用，不建議用於生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 安裝後仍然無法啟用 Apple 智能功能，可能是因為未關閉 SIP。
-  - 解法：確保在恢復模式下執行 `csrutil disable`。
-- **[HIGH]** 雲端功能無法使用，可能是因為 AMFI 被關閉。
-  - 解法：檢查 `nvram boot-args`，確保沒有 `amfi_get_out_of_my_way=1`。
-- [MEDIUM] 安裝過程中出現錯誤，可能是因為系統版本不兼容。
-  - 解法：參考 `BUILD.md` 進行重新編譯。
+- **[HIGH]** 安裝後仍然無法啟用 Apple 智能功能，可能是因為帳戶地區設置不正確。
+  - 解法：確保 Apple 帳戶的媒體與購買項目地區設置為支持 Apple 智能的地區。
+- [MEDIUM] 首次加載 kext 時需要手動允許，這對於不熟悉的用戶來說可能造成困擾。
+  - 解法：在系統設置中找到隱私與安全性，手動允許該 kext。
+- **[HIGH]** SIP 未關閉可能導致安裝失敗。
+  - 解法：在恢復模式下使用 `csrutil disable` 關閉 SIP。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊需要使用 Apple 智能功能的寫作工具 | 非常適合 | 安裝簡單，能快速啟用所需功能。 |
-| 個人開發者希望在 Mac 上測試 Apple 智能功能 | 適合 | 提供一鍵安裝和診斷功能，方便快速測試。 |
-| 大型企業需要穩定的 Apple 智能功能 | 不適合 | 目前處於 alpha 階段，存在不穩定性風險。 |
+| 國行 Mac 用戶希望使用 Apple 智能功能 | 非常適合 | 這個工具專門設計用於啟用 Apple 智能，能夠解決區域限制問題。 |
+| 技術愛好者想要研究 Apple 智能的功能 | 適合 | 提供了完整的功能啟用，適合進行深入研究。 |
+| 普通用戶希望簡單使用 Apple 智能 | 普通 | 安裝過程對於不熟悉系統設置的用戶來說可能會有挑戰。 |
+| 希望在生產環境中使用 Apple 智能 | 不適合 | 目前仍處於 alpha 階段，穩定性和兼容性尚未得到保證。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學、1 小時整合，得到快速啟用 Apple 智能的效果，值得嘗試。
+> 花 3 小時學習，2 小時整合，能夠解鎖 Apple 智能功能，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 該工具需要關閉 SIP，這可能會影響系統的安全性，特別是在使用雲端功能時。使用者需謹慎考慮安全風險，並確保系統的其他安全設置得當。
+> 此工具需要關閉 SIP，這可能會影響系統的安全性。此外，安裝過程中需要允許第三方 kext，這也可能帶來潛在的安全風險。整體來說，使用時需謹慎考量安全性。
 
 ## 健康度儀表板
 
@@ -331,9 +319,9 @@ sudo ./install.sh
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 51 |
-| Open Issues | 10 |
-| Issue 解決率 | 52% (11 closed) |
+| Forks | 63 |
+| Open Issues | 16 |
+| Issue 解決率 | 45% (13 closed) |
 | 最後推送 | 2026-06-13 |
 | 建立日期 | 2026-06-10 |
 | Repo 大小 | 29 KB |
@@ -355,8 +343,7 @@ sudo ./install.sh
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，最近有持續的更新和問題回應。
-**連結**：[文件](https://github.com/SkyBlue997/enableMacosAI)
+**社群活躍度**：最近 3 天有活躍的開發和問題回覆。
 
 ## 開發動態
 
@@ -370,9 +357,9 @@ sudo ./install.sh
 > | --- | --- | --- | --- |
 > | [#6](https://github.com/SkyBlue997/enableMacosAI/issues/6) | 关闭失败csrutil: Failed to update security configurationfor "Mac | 2 | 4 |
 > | [#3](https://github.com/SkyBlue997/enableMacosAI/issues/3) | Feature Request: 外置系统启用Apple Intelligence | 1 | 0 |
-> | [#21](https://github.com/SkyBlue997/enableMacosAI/issues/21) | [问题] 重启电脑会恢复到原来的SIRI `question` | 0 | 1 |
-> | [#19](https://github.com/SkyBlue997/enableMacosAI/issues/19) | [问题] `question` | 0 | 4 |
-> | [#17](https://github.com/SkyBlue997/enableMacosAI/issues/17) | csrutil | 0 | 3 |
+> | [#29](https://github.com/SkyBlue997/enableMacosAI/issues/29) | 🤖 Code Audit: 3 potential issue(s) found | 0 | 0 |
+> | [#28](https://github.com/SkyBlue997/enableMacosAI/issues/28) | 🤖 Code Audit: 3 potential issue(s) found | 0 | 0 |
+> | [#26](https://github.com/SkyBlue997/enableMacosAI/issues/26) | [问题] 无论怎么改一直OS_ELIGIBILITY_INPUT_COUNTRY_BILLING = 2, OS_ELI `question` | 0 | 1 |
 
 ## README 摘錄
 
@@ -546,7 +533,7 @@ sudo ./install.sh
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[CLI/TUI]] · [[安全漏洞]]
+相關概念：[[微服務]] · [[容器化]] · [[自動化]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[ps5-linux--ps5-linux-loader|ps5-linux/ps5-linux-loader]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]]
 
@@ -554,11 +541,11 @@ sudo ./install.sh
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：Apple 智能工具）
+> [!note]- 直接競品（同子分類：系統工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "Apple 智能工具" AND file.name != "SkyBlue997--enableMacosAI"
+> WHERE subcategory = "系統工具" AND file.name != "SkyBlue997--enableMacosAI"
 > SORT stars DESC
 > ```
 
@@ -566,7 +553,7 @@ sudo ./install.sh
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "SkyBlue997--enableMacosAI"
+> WHERE category = "開發工具" AND file.name != "SkyBlue997--enableMacosAI"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -590,7 +577,7 @@ sudo ./install.sh
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","CLI/TUI","安全漏洞"];
+> const concepts = ["微服務","容器化","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "SkyBlue997--enableMacosAI" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
