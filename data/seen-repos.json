@@ -2290,31 +2290,31 @@
   },
   "MSNightmare/RoguePlanet": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-14",
-    "times_seen": 4,
+    "last_seen": "2026-06-15",
+    "times_seen": 5,
     "stars_first": 913,
-    "stars_last": 1252
+    "stars_last": 1275
   },
   "shadcn/improve": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-14",
-    "times_seen": 4,
+    "last_seen": "2026-06-15",
+    "times_seen": 5,
     "stars_first": 876,
-    "stars_last": 3424
+    "stars_last": 4353
   },
   "XiaomiMiMo/MiMo-Code": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-14",
-    "times_seen": 4,
+    "last_seen": "2026-06-15",
+    "times_seen": 5,
     "stars_first": 681,
-    "stars_last": 7947
+    "stars_last": 8469
   },
   "apple/coreai-models": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-14",
-    "times_seen": 4,
+    "last_seen": "2026-06-15",
+    "times_seen": 5,
     "stars_first": 618,
-    "stars_last": 872
+    "stars_last": 907
   },
   "Tencent-Hunyuan/UniRL": {
     "first_seen": "2026-06-12",
@@ -2325,23 +2325,44 @@
   },
   "DietrichGebert/ponytail": {
     "first_seen": "2026-06-13",
-    "last_seen": "2026-06-14",
-    "times_seen": 2,
+    "last_seen": "2026-06-15",
+    "times_seen": 3,
     "stars_first": 939,
-    "stars_last": 1541
+    "stars_last": 8281
   },
   "SkyBlue997/enableMacosAI": {
     "first_seen": "2026-06-14",
-    "last_seen": "2026-06-14",
-    "times_seen": 1,
+    "last_seen": "2026-06-15",
+    "times_seen": 2,
     "stars_first": 996,
-    "stars_last": 996
+    "stars_last": 1189
   },
   "plannotator/effective-html": {
     "first_seen": "2026-06-14",
-    "last_seen": "2026-06-14",
-    "times_seen": 1,
+    "last_seen": "2026-06-15",
+    "times_seen": 2,
     "stars_first": 753,
-    "stars_last": 753
+    "stars_last": 834
+  },
+  "omnigent-ai/omnigent": {
+    "first_seen": "2026-06-15",
+    "last_seen": "2026-06-15",
+    "times_seen": 1,
+    "stars_first": 1220,
+    "stars_last": 1220
+  },
+  "lenucksi/aur-malware-check": {
+    "first_seen": "2026-06-15",
+    "last_seen": "2026-06-15",
+    "times_seen": 1,
+    "stars_first": 890,
+    "stars_last": 890
+  },
+  "levy-street/world-of-claudecraft": {
+    "first_seen": "2026-06-15",
+    "last_seen": "2026-06-15",
+    "times_seen": 1,
+    "stars_first": 701,
+    "stars_last": 701
   }
 }

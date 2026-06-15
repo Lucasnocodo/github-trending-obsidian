@@ -7,10 +7,10 @@ language: Shell
 license: N/A
 description: "国行 Mac 一键开启完整 Apple 智能(端侧 + Private Cloud Compute 云端)· macOS 27 / Apple Silicon"
 homepage: ""
-stars: 999
-stars_per_day: 333
-forks: 51
-open_issues: 10
+stars: 1189
+stars_per_day: 297
+forks: 63
+open_issues: 16
 created: 2026-06-10
 pushed_at: 2026-06-13
 first_seen: 2026-06-14
@@ -30,8 +30,8 @@ use_case: "讓國行 Mac 一鍵啟用完整 Apple 智能功能，無需繁瑣設
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-17"
+appearances: 2
+next_review: "2026-06-18"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 52
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-14"
-star_history: "2026-06-14:996,2026-06-14:999"
+star_history: "2026-06-14:996,2026-06-14:999,2026-06-15:1189"
 tags:
   - github
   - "category/其他"
@@ -844,4 +844,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-15|2026-06-15]] — 再次上榜，1.2k stars
 - [[2026-06-14|2026-06-14]] — 首次收錄，996 stars

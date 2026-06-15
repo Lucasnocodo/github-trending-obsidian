@@ -7,9 +7,9 @@ language: HTML
 license: MIT
 description: "Agent skill for elegant and simple html plans, architecture diagrams, or whatever else you can think of."
 homepage: "https://plannotator.ai"
-stars: 753
-stars_per_day: 188
-forks: 48
+stars: 834
+stars_per_day: 167
+forks: 57
 open_issues: 2
 created: 2026-06-09
 pushed_at: 2026-06-13
@@ -30,8 +30,8 @@ use_case: "生成優雅且簡單的 HTML 計畫、架構圖或其他視覺化文
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-21"
+appearances: 2
+next_review: "2026-06-22"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-14"
-star_history: "2026-06-14:753"
+star_history: "2026-06-14:753,2026-06-15:834"
 tags:
   - github
   - "category/開發工具"
@@ -730,4 +730,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-15|2026-06-15]] — 再次上榜，834 stars
 - [[2026-06-14|2026-06-14]] — 首次收錄，753 stars
