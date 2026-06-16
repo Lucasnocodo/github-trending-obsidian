@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: ""
 homepage: ""
-stars: 701
-stars_per_day: 175
-forks: 180
-open_issues: 132
+stars: 795
+stars_per_day: 159
+forks: 215
+open_issues: 117
 created: 2026-06-10
-pushed_at: 2026-06-15
+pushed_at: 2026-06-16
 first_seen: 2026-06-15
 week: "2026-W25"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "提供一個可線上或離線遊玩的微型 MMO 遊戲環境，模�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-22"
+appearances: 2
+next_review: "2026-06-23"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 14
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-15"
-star_history: "2026-06-15:701"
+star_history: "2026-06-15:701,2026-06-16:795"
 tags:
   - github
   - "category/遊戲"
@@ -891,4 +891,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-16|2026-06-16]] — 再次上榜，795 stars
 - [[2026-06-15|2026-06-15]] — 首次收錄，701 stars

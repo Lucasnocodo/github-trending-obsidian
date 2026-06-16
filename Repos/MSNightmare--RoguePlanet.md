@@ -7,9 +7,9 @@ language: C++
 license: MIT
 description: "RoguePlanet Windows Defender Vulnerability"
 homepage: ""
-stars: 1275
-stars_per_day: 255
-forks: 527
+stars: 1292
+stars_per_day: 215
+forks: 536
 open_issues: 6
 created: 2026-06-09
 pushed_at: 2026-06-09
@@ -30,8 +30,8 @@ use_case: "利用 Windows Defender 漏洞，實現系統權限的提升。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-06-18"
+appearances: 6
+next_review: "2026-06-19"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 33
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-11"
-star_history: "2026-06-11:913,2026-06-11:914,2026-06-12:1119,2026-06-12:1119,2026-06-13:1218,2026-06-13:1218,2026-06-14:1252,2026-06-14:1253,2026-06-15:1275,2026-06-15:1275"
+star_history: "2026-06-11:913,2026-06-11:914,2026-06-12:1119,2026-06-12:1119,2026-06-13:1218,2026-06-13:1218,2026-06-14:1252,2026-06-14:1253,2026-06-15:1275,2026-06-15:1275,2026-06-16:1292"
 tags:
   - github
   - "category/安全"
@@ -667,6 +667,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-16|2026-06-16]] — 再次上榜，1.3k stars
 - [[2026-06-15|2026-06-15]] — 再次上榜，1.3k stars
 - [[2026-06-14|2026-06-14]] — 再次上榜，1.3k stars
 - [[2026-06-13|2026-06-13]] — 再次上榜，1.2k stars

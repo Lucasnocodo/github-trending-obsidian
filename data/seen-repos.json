@@ -2290,24 +2290,24 @@
   },
   "MSNightmare/RoguePlanet": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-15",
-    "times_seen": 5,
+    "last_seen": "2026-06-16",
+    "times_seen": 6,
     "stars_first": 913,
-    "stars_last": 1275
+    "stars_last": 1292
   },
   "shadcn/improve": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-15",
-    "times_seen": 5,
+    "last_seen": "2026-06-16",
+    "times_seen": 6,
     "stars_first": 876,
-    "stars_last": 4353
+    "stars_last": 4878
   },
   "XiaomiMiMo/MiMo-Code": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-15",
-    "times_seen": 5,
+    "last_seen": "2026-06-16",
+    "times_seen": 6,
     "stars_first": 681,
-    "stars_last": 8469
+    "stars_last": 9041
   },
   "apple/coreai-models": {
     "first_seen": "2026-06-11",
@@ -2325,44 +2325,51 @@
   },
   "DietrichGebert/ponytail": {
     "first_seen": "2026-06-13",
-    "last_seen": "2026-06-15",
-    "times_seen": 3,
+    "last_seen": "2026-06-16",
+    "times_seen": 4,
     "stars_first": 939,
-    "stars_last": 8281
+    "stars_last": 16706
   },
   "SkyBlue997/enableMacosAI": {
     "first_seen": "2026-06-14",
-    "last_seen": "2026-06-15",
-    "times_seen": 2,
+    "last_seen": "2026-06-16",
+    "times_seen": 3,
     "stars_first": 996,
-    "stars_last": 1189
+    "stars_last": 1284
   },
   "plannotator/effective-html": {
     "first_seen": "2026-06-14",
-    "last_seen": "2026-06-15",
-    "times_seen": 2,
+    "last_seen": "2026-06-16",
+    "times_seen": 3,
     "stars_first": 753,
-    "stars_last": 834
+    "stars_last": 921
   },
   "omnigent-ai/omnigent": {
     "first_seen": "2026-06-15",
-    "last_seen": "2026-06-15",
-    "times_seen": 1,
+    "last_seen": "2026-06-16",
+    "times_seen": 2,
     "stars_first": 1220,
-    "stars_last": 1220
+    "stars_last": 1944
   },
   "lenucksi/aur-malware-check": {
     "first_seen": "2026-06-15",
-    "last_seen": "2026-06-15",
-    "times_seen": 1,
+    "last_seen": "2026-06-16",
+    "times_seen": 2,
     "stars_first": 890,
-    "stars_last": 890
+    "stars_last": 1181
   },
   "levy-street/world-of-claudecraft": {
     "first_seen": "2026-06-15",
-    "last_seen": "2026-06-15",
-    "times_seen": 1,
+    "last_seen": "2026-06-16",
+    "times_seen": 2,
     "stars_first": 701,
-    "stars_last": 701
+    "stars_last": 795
+  },
+  "tamnd/kage": {
+    "first_seen": "2026-06-16",
+    "last_seen": "2026-06-16",
+    "times_seen": 1,
+    "stars_first": 1546,
+    "stars_last": 1546
   }
 }
