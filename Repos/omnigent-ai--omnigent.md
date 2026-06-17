@@ -7,12 +7,12 @@ language: Python
 license: Apache-2.0
 description: "A meta-harness for all your AI agents.  Omnigent provides a common layer over Claude Code, Codex, Pi, and the agents you write yourself: swap or combine harnesses without rewriting, keep them in check with policies and sandboxing, and collaborate in real time on the same live session, from any device."
 homepage: "https://omnigent.ai"
-stars: 1944
-stars_per_day: 486
-forks: 238
-open_issues: 95
+stars: 2826
+stars_per_day: 565
+forks: 330
+open_issues: 132
 created: 2026-06-11
-pushed_at: 2026-06-16
+pushed_at: 2026-06-17
 first_seen: 2026-06-15
 week: "2026-W25"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "提供一個統一的層級來管理和協作多個 AI 代理，無�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-06-19"
+appearances: 3
+next_review: "2026-06-20"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 10
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-15"
-star_history: "2026-06-15:1220,2026-06-16:1944"
+star_history: "2026-06-15:1220,2026-06-16:1944,2026-06-17:2826"
 tags:
   - github
   - "category/開發工具"
@@ -883,5 +883,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-17|2026-06-17]] — 再次上榜，2.8k stars
 - [[2026-06-16|2026-06-16]] — 再次上榜，1.9k stars
 - [[2026-06-15|2026-06-15]] — 首次收錄，1.2k stars

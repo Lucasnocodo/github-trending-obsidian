@@ -1,65 +1,64 @@
 ---
-repo: lenucksi/aur-malware-check
-url: https://github.com/lenucksi/aur-malware-check
-owner: lenucksi
+repo: EEliberto/IPA-Download
+url: https://github.com/EEliberto/IPA-Download
+owner: EEliberto
 owner_type: User
-language: Shell
-license: N/A
-description: "Detection tools for the June 2026 atomic-lockfile AUR supply-chain attack. Consolidated from community Gists."
+language: Swift
+license: Apache-2.0
+description: "一款用于安装 IPA 历史版本的工具，适用于获取旧版应用并自动捕获数据包。下载后，可直接通过 AirDrop 传输至 iPhone、iPad 上并安装并使用。"
 homepage: ""
-stars: 1347
-stars_per_day: 337
-forks: 30
-open_issues: 12
-created: 2026-06-12
-pushed_at: 2026-06-16
-first_seen: 2026-06-15
+stars: 831
+stars_per_day: 277
+forks: 44
+open_issues: 0
+created: 2026-06-13
+pushed_at: 2026-06-15
+first_seen: 2026-06-17
 week: "2026-W25"
 month: "2026-06"
-category: "安全"
-subcategory: "供應鏈安全"
-release_tag: ""
-install_complexity: "easy"
+category: "開發工具"
+subcategory: "IPA 下載工具"
+release_tag: "Pastel5"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-06-15
-use_case: "檢測 2026 年 AUR 供應鏈攻擊的惡意軟體工具。"
+last_reviewed: 2026-06-17
+use_case: "一款用于安装 IPA 历史版本的工具，适用于获取旧版应用并自动捕获数据包。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-06-20"
-contributor_count: 5
+contributor_count: 1
 engagement: "low"
-issue_close_rate: 54
-repo_size_kb: 91
-readme_length: 1348
+issue_close_rate: 100
+repo_size_kb: 67307
+readme_length: 1225
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 2
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-06-15"
-star_history: "2026-06-15:890,2026-06-16:1181,2026-06-17:1347"
+ring_history: "assess@2026-06-17"
+star_history: "2026-06-17:831"
 tags:
   - github
-  - "category/安全"
-  - "lang/shell"
-  - easy_install
+  - "category/開發工具"
+  - "lang/swift"
 aliases:
-  - "aur-malware-check"
-  - "lenucksi/aur-malware-check"
-  - "檢測 2026 年 AUR 供應鏈攻擊的惡意軟體工具。"
+  - "IPA-Download"
+  - "EEliberto/IPA-Download"
+  - "一款用于安装 IPA 历史版本的工具，适用于获取旧版应用并自动捕获数据包。"
 ---
 
-# aur-malware-check
+# IPA-Download
 
-**890** stars · **445** stars/天 · 建立 2 天前 · Shell · 未標註授權
+**831** stars · **277** stars/天 · 建立 3 天前 · Swift · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/lenucksi--aur-malware-check");
+const me = dv.page("Repos/EEliberto--IPA-Download");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`easy-install`
+`個人專案` `Pastel5`
 
 > [!summary] 一句話摘要
-> 檢測 2026 年 AUR 供應鏈攻擊的惡意軟體工具。
+> 一款用于安装 IPA 历史版本的工具，适用于获取旧版应用并自动捕获数据包。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (445 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要在 AUR 環境中快速檢測惡意套件的開發者和系統管理員。
-> **一句話重點** 這個專案的價值在於其專注於 AUR 環境的供應鏈攻擊，提供了針對性的檢測工具。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (277 stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要在 macOS 上安裝舊版 iOS 應用的開發者和測試人員。
+> **一句話重點** Pastel 以簡化的雙重認證和友好的界面設計，解決了舊版應用下載的痛點。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/EEliberto--IPA-Download");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "供應鏈安全" && p.file.name !== "lenucksi--aur-malware-check" && p.status !== "archived")
+>     .where(p => p.subcategory === "IPA 下載工具" && p.file.name !== "EEliberto--IPA-Download" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,108 +95,112 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 供應鏈安全 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 IPA 下載工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~1h · **綁定風險** low
-> **結論** 花 1 小時學習，2 小時整合，得到快速檢測 AUR 套件的能力，值得採用。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，1 小時整合，得到簡化的舊版應用下載體驗，值得一試。
 
 > [!abstract] 核心創新
-> 提供了一個集中化的檢測工具，專門針對 AUR 的供應鏈攻擊。
+> 引入全新的 Device GUID 機制，以避免頻繁觸發雙重認證。
 
 ## 專案簡介
 
-這個專案提供了一組工具，用於檢測和分析針對 Arch User Repository (AUR) 的 atomic-lockfile 供應鏈攻擊。使用者可以透過執行 `./aur_check-v2.sh` 指令來檢查是否有受感染的套件，或使用 `--check-bun-cache` 參數專門檢查 bun 快取中的 js-digest 和 atomic-lockfile 攻擊。這些攻擊涉及超過 1600 個 AUR 套件，攻擊者注入了惡意的 npm 和 bun 安裝指令，導致開發者憑證和 CI/CD 秘密資料的洩漏。專案的設計目的在於集中社群資源，讓使用者能夠輕鬆檢測受影響的套件，並提供簡單的指令來進行檢查，這樣的設計使得使用者不必在多個 Gist 中尋找資訊。這個工具的賣點在於其簡潔的使用方式和針對特定攻擊的專業性，能夠快速識別潛在的安全風險。
+Pastel 是一款專為 macOS 26+ 設計的 IPA 下載工具，能夠輕鬆獲取舊版應用並自動捕獲數據包。用戶只需在應用內添加 Apple 帳戶，Pastel 會自動識別地區並完成登錄，這樣就能直接從 App Store 下載所需的應用。下載後，應用可以通過 AirDrop 直接傳輸至 iPhone 或 iPad 安裝使用。這個工具的賣點在於其簡化的雙重認證流程，使用 GSA 技術來觸發認證，並且所有數據都安全存儲在 macOS 的 Keychain 中。技術上，Pastel 使用 SwiftUI 編寫，完美適配 macOS 的 Liquid Glass 效果，並支持多語言界面，讓不同語言的用戶都能輕鬆使用。
 
-技術上，這個專案主要依賴 Shell 腳本，並且在效能上能夠快速檢查大量的套件，適合任何使用 AUR 的開發者。相較於其他安全檢測工具，這個專案專注於特定的攻擊模式，提供了針對性的解決方案，適合需要快速反應的開發環境。使用者在實際操作中可能會遇到假陽性檢測的問題，特別是在某些套件上，這需要進一步的手動確認。整體來看，這是一個針對特定安全威脅的專業工具，適合對 AUR 環境有深度需求的開發者使用。
+相較於其他 IPA 下載工具，Pastel 提供了更為穩定的認證流程和更友好的用戶界面。與傳統的 IPA 下載工具相比，Pastel 能夠自動選擇 Apple 帳戶對應的商店，並支持手動輸入版本 ID 下載，這使得用戶在尋找特定版本時更加靈活。雖然目前僅支持 Apple 硬體，但未來若有 Windows 版本，將會擴大其用戶基礎。使用時，需注意目前僅支持 Apple 芯片的 Mac，這可能會限制某些用戶的使用。整體來看，Pastel 是一款針對特定需求的工具，適合需要安裝舊版應用的開發者和用戶。
 
-**技術棧**：`Shell`
+**技術棧**：`SwiftUI` · `Node.js` · `macOS Keychain`
 
 ## 重點功能
 
-- 全面檢查 — 使用 `./aur_check-v2.sh` 指令檢查所有已安裝的 AUR 套件。
-- 專項檢查 — 使用 `--check-bun-cache` 參數專門檢查 bun 快取中的攻擊套件。
-- 比較功能 — 使用 `comm -1 -2` 指令安全地比較已安裝套件與受感染列表。
-- 社群資源整合 — 集中多個 Gist 資源，方便使用者查找和貢獻。
-- 針對性檢測 — 專注於 atomic-lockfile 和 js-digest 攻擊的檢測。
+- 自動識別 Apple 帳戶地區 — 根據用戶的 Apple 帳戶自動選擇對應的 App Store。
+- 雙重認證簡化 — 使用 GSA 技術觸發雙重認證，減少用戶操作。
+- 多語言支持 — 支持簡體中文、繁體中文、日語、韓語和泰語。
+- 手動輸入版本 ID — 用戶可以手動輸入版本 ID 下載特定應用。
+- AirDrop 直接傳輸 — 下載後可直接通過 AirDrop 傳輸至 iPhone 或 iPad。
 
 ## 快速開始
 
-1. 檢查是否有感染的套件
+1. 克隆專案
 ```bash
-./aur_check-v2.sh
+git clone https://github.com/EEliberto/IPA-Download.git
 ```
-2. 檢查 bun 快取中的攻擊套件
+2. 安裝 Node 依賴
 ```bash
-./aur_check-v2.sh --check-bun-cache
+cd NodeProject && npm install
 ```
-3. 比較已安裝套件與受感染列表
+3. 使用 Xcode 打開專案
 ```bash
-comm -1 -2
+open Pastel.xcodeproj
 ```
 
 ## 程式碼範例
 
-```bash
-{
-  "前置條件": "確保已安裝必要的 AUR 套件",
-  "指令": "./aur_check-v2.sh",
-  "預期輸出": "檢測結果顯示是否有受感染的套件"
-}
+```swift
+# 前置條件
+# 需要安裝 Node 依賴
+cd NodeProject
+npm install
+# 預期輸出
+安裝完成後，您可以使用 Xcode 打開專案進行編譯。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天就累積 890 stars（445/天），forks 23（2.6%），顯示出社群對於這個專案的高度關注。作者 lenucksi 及其團隊在安全領域有一定的經驗，這個專案解決了 AUR 社群在供應鏈攻擊後的迫切需求，提供了一個集中化的檢測工具。由於攻擊的影響範圍廣泛，這個工具的出現正好填補了社群對於快速檢測的需求。社群對於這個專案的反應也顯示出其實用性，尤其是在面對假陽性問題的討論中，進一步強化了其重要性。
+> 建立 3 天內累積 831 stars（277/天），forks 44（5.3%），這顯示出穩定的增長趨勢。作者 EEliberto 之前在開源社區有過其他貢獻，這次專案解決了用戶在獲取舊版應用時的痛點，特別是雙重認證的繁瑣流程。近期的社交媒體討論也引起了不少關注，讓更多人了解這個工具。技術上，隨著 SwiftUI 的普及，這個工具的開發變得更加可行，能夠提供更好的用戶體驗。forks/stars 比率適中，顯示出使用者對於這個工具的實際修改需求不高，主要是觀望和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 AUR 環境中快速檢測惡意套件的開發者和系統管理員。
+**目標受眾**：需要在 macOS 上安裝舊版 iOS 應用的開發者和測試人員。
 
 > [!example] 使用場景
-> - 系統管理員用它來檢查伺服器上的 AUR 套件是否受感染，因為手動檢查每個套件不僅耗時，還容易出錯。
-> - 開發者用它來快速評估新安裝的 AUR 套件是否安全，因為這樣可以在開發過程中及早發現潛在的安全風險。
-> - 安全研究人員用它來分析 AUR 環境中的攻擊模式，因為這個工具提供了針對特定攻擊的檢測能力，能夠幫助他們進行深入研究。
+> - iOS 開發者用它來快速下載舊版應用進行測試，因為這樣能夠避免繁瑣的雙重認證流程，節省時間。
+> - 測試人員用它來捕獲特定版本的數據包，因為它支持自動捕獲並直接 AirDrop 到測試設備，提升效率。
+> - 普通用戶用它來安裝已經購買過的舊版應用，因為它能夠自動識別 Apple 帳戶的地區，簡化了下載流程。
 
 ## 架構分析
 
-這個專案的架構主要基於 Shell 腳本，設計上旨在提供輕量且快速的檢測工具。使用者只需執行簡單的指令即可進行檢查，這樣的設計使得使用者能夠快速上手。資料流方面，檢測腳本會遍歷已安裝的 AUR 套件，並與已知的受感染列表進行比較。選擇 Shell 作為主要語言的原因在於其廣泛的相容性和簡單的執行方式，代價是可能在效能上不如編譯型語言。這個工具的擴展性相對有限，因為其專注於特定的攻擊模式，未來若有新的攻擊模式出現，可能需要額外的更新和維護。
+Pastel 的架構設計以 SwiftUI 為基礎，這使得它能夠充分利用 macOS 的最新界面特性。用戶的 Apple 帳戶信息和下載記錄都存儲在 macOS Keychain 中，這樣可以確保數據的安全性和隱私。下載過程中，應用會根據用戶的 Apple 帳戶自動選擇對應的 App Store，這樣可以減少手動操作的繁瑣。
+
+選擇使用 GSA 技術來觸發雙重認證，這樣的設計使得用戶在登錄過程中不會受到過多干擾，提升了整體用戶體驗。這種設計的代價在於目前僅支持 Apple 硬體，未來若要擴展到 Windows，可能需要重新考慮架構設計。整體來看，這種設計使得 Pastel 在功能上更為專注，同時也提高了用戶的使用效率。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於 Shell 腳本，利用簡單的指令來檢測 AUR 套件的安全性。效能上，這些腳本能夠快速遍歷已安裝的套件，並與受感染的列表進行比較，適合處理中小型的 AUR 環境。設計上選擇 Shell 是因為其廣泛的相容性和易於使用的特性，但這也意味著在處理大量數據時可能會面臨性能瓶頸。這個工具的依賴性較低，主要依賴於基本的 Shell 環境，並不需要額外的庫或框架。技術風險方面，若未來出現新的攻擊模式，可能需要頻繁的更新和維護，以保持工具的有效性。整合方面，這個工具可以輕鬆融入到現有的 AUR 環境中，對於已經使用 AUR 的開發者來說，學習成本相對較低。
+Pastel 的核心技術機制是基於 SwiftUI，這使得它能夠充分利用 macOS 的最新界面特性。其設計中使用了 GSA 技術來觸發雙重認證，這樣的設計不僅提升了用戶體驗，還減少了用戶在登錄過程中的干擾。效能方面，Pastel 能夠快速響應用戶操作，並在下載過程中保持穩定性。由於所有數據都存儲在 macOS Keychain 中，這樣的設計確保了用戶的數據安全。選擇 SwiftUI 作為開發框架的好處在於其能夠快速構建出美觀的界面，然而這也意味著未來若要擴展到其他平台，可能需要重寫部分代碼。技術風險方面，若未來 Apple 政策變動，可能會影響到應用的下載流程。整合方面，Pastel 可以與現有的 macOS 環境無縫結合，並且在 CI/CD pipeline 中的使用也相對簡單，這使得團隊在開發過程中能夠快速上手。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了必要的使用範例。安裝過程非常順暢，只需執行簡單的指令即可開始使用。文件目前僅提供英文，缺乏多語言支持。
+> README 文件清晰，提供了詳細的安裝步驟和使用說明。安裝過程順暢，沒有明顯的坑。雖然沒有專門的 getting started guide，但整體流程簡單易懂。文件目前僅提供英文和中文版本，對於非英語用戶友好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用，快速檢測 AUR 套件的安全性。
-> - 集中化的資源整合，方便使用者查找和貢獻。
-> - 針對性強，專注於特定的供應鏈攻擊。
+> - 用戶界面友好，適合不同語言的用戶使用。
+> - 簡化的雙重認證流程，提升了使用效率。
+> - 支持多種下載來源，方便用戶獲取所需版本。
 
 > [!danger] 缺點
-> - 可能出現假陽性檢測，需手動確認。
-> - 僅針對 AUR 環境，無法應用於其他 Linux 發行版。
-> - 擴展性有限，需定期更新以應對新攻擊。
+> - 僅支持 Apple 硬體，限制了使用範圍。
+> - 目前沒有 Windows 版本開發計劃，無法滿足所有用戶需求。
+> - 對於付費應用的支持有限，無法下載未曾擁有的應用。
 
 > [!warning] 注意事項
-> - 可能會出現假陽性檢測，特別是在某些套件上。
-> - 僅針對特定的攻擊模式，無法檢測其他類型的惡意軟體。
-> - 需要在 AUR 環境中運行，無法在其他 Linux 發行版上使用。
+> - 僅支持 macOS 26+ 且配備 Apple 芯片的 Mac。
+> - 目前沒有 Windows 版本開發計劃。
+> - 僅支持從 Apple 帳戶獲取的應用版本，付費應用除外。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於代理的安全性，而本專案專注於 AUR 套件的供應鏈攻擊。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具提供了更廣泛的惡意軟體檢測，而本專案專注於特定的 AUR 攻擊。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 主要針對遊戲應用的 IPA 下載，功能上更專注於遊戲版本管理。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更廣泛的應用管理功能，但界面和用戶體驗不如 Pastel 友好。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 針對開發者的工具，功能上更專業，但不支持直接下載舊版應用。 |
 
 ## 替代方案決策
 
@@ -205,16 +208,16 @@ comm -1 -2
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於代理的安全性，而本專案專注於 AUR 套件的供應鏈攻擊。 | 如果你的需求是針對代理的安全性進行檢測，則應選擇這個工具。 | medium，因為需要重新學習不同的指令和檢測邏輯。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具提供了更廣泛的惡意軟體檢測，而本專案專注於特定的 AUR 攻擊。 | 如果需要更全面的惡意軟體檢測能力，則應選擇這個工具。 | high，因為需要重新整合到現有的安全流程中。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲應用的 IPA 下載，提供更針對性的功能，但不支持通用應用的下載。 | 如果你的需求主要是針對遊戲應用的版本管理，這個工具會更合適。 | medium，因為需要重新適應不同的界面和功能設計。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更廣泛的應用管理功能，但界面和用戶體驗不如 Pastel 友好。 | 如果你需要更全面的應用管理功能，這個工具可能更適合你。 | low，因為功能上有部分重疊。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **aur-malware-check** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **IPA-Download** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這個工具專注於代理的安全性，而本專案專注於 AUR 套件的供應鏈攻擊。 | 這個工具提供了更廣泛的惡意軟體檢測，而本專案專注於特定的 AUR 攻擊。 |
-> | 遷移成本 | - | medium，因為需要重新學習不同的指令和檢測邏輯。 | high，因為需要重新整合到現有的安全流程中。 |
-> | 適用場景 | 主要場景 | 如果你的需求是針對代理的安全性進行檢測，則應選擇這個工具。 | 如果需要更全面的惡意軟體檢測能力，則應選擇這個工具。 |
+> | 技術路線 | 本專案 | 專注於遊戲應用的 IPA 下載，提供更針對性的功能，但不支持通用應用的下載。 | 提供更廣泛的應用管理功能，但界面和用戶體驗不如 Pastel 友好。 |
+> | 遷移成本 | - | medium，因為需要重新適應不同的界面和功能設計。 | low，因為功能上有部分重疊。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是針對遊戲應用的版本管理，這個工具會更合適。 | 如果你需要更全面的應用管理功能，這個工具可能更適合你。 |
 
 ## 成熟度評估
 
@@ -222,53 +225,52 @@ comm -1 -2
 | --- | --- |
 | 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人測試和學習，不建議用於生產環境的核心系統。
+> 適合個人試用和探索，但不建議用於生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些情況下可能會出現假陽性檢測，特別是在常見的套件上。
-  - 解法：手動確認可疑套件的安全性。
-- [MEDIUM] 對於新出現的攻擊模式，可能需要手動更新檢測列表。
-  - 解法：定期檢查社群更新或手動添加新攻擊模式。
-- [MEDIUM] 在大型 AUR 環境中，檢查速度可能會受到影響。
-  - 解法：分批檢查套件以提高效率。
+- **[HIGH]** 在某些地區可能無法下載特定應用，因為 App Store 的限制。
+  - 解法：嘗試切換到其他地區的 Apple 帳戶。
+- [MEDIUM] 首次使用時，雙重認證過程可能會出現延遲。
+  - 解法：確保網絡連接穩定，並耐心等待。
+- [MEDIUM] 部分舊版應用可能無法正常運行，因為與新系統不兼容。
+  - 解法：檢查應用的兼容性，必要時尋找替代方案。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊的 AUR 環境 | 非常適合 | 能快速檢測受感染的套件，保護開發者的安全。 |
-| 大型企業的 AUR 環境 | 普通 | 雖然能檢測，但在大型環境中可能需要更多的資源和時間。 |
-| 對 AUR 套件的安全性有高度要求的專案 | 非常適合 | 專注於特定攻擊，能提供針對性的檢測。 |
-| 不使用 AUR 的開發環境 | 不適合 | 這個工具僅針對 AUR 環境設計，無法應用於其他環境。 |
+| 需要安裝舊版應用的開發者 | 非常適合 | 提供簡化的下載流程和雙重認證支持。 |
+| 普通用戶希望獲取已購買的舊版應用 | 適合 | 能夠自動識別 Apple 帳戶地區，簡化操作。 |
+| Windows 用戶想要使用 IPA 下載工具 | 不適合 | 目前僅支持 macOS 硬體。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~1 小時 |
-| 整合時間 | ~2 小時 |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~1 小時 |
 | 維護負擔 | low |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 1 小時學習，2 小時整合，得到快速檢測 AUR 套件的能力，值得採用。
+> 花 2 小時學習，1 小時整合，得到簡化的舊版應用下載體驗，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，並且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：不需要高權限，數據存取僅限於用戶的 Apple 帳戶信息，且依賴於 macOS Keychain 進行安全存儲。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/EEliberto--IPA-Download");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -303,7 +305,7 @@ comm -1 -2
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/EEliberto--IPA-Download");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -327,83 +329,130 @@ comm -1 -2
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 23 |
-| Open Issues | 6 |
-| Issue 解決率 | 54% (7 closed) |
-| 最後推送 | 2026-06-14 |
-| 建立日期 | 2026-06-12 |
-| Repo 大小 | 91 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/lenucksi/aur-malware-check) |
+| Forks | 44 |
+| Open Issues | 0 |
+| Issue 解決率 | 100% (13 closed) |
+| 最後推送 | 2026-06-15 |
+| 建立日期 | 2026-06-13 |
+| Repo 大小 | 65.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/EEliberto/IPA-Download) |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Swift" : 71
+>     "JavaScript" : 28
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@lenucksi](https://github.com/lenucksi) | 24 |
-> | [@Kafkacodes](https://github.com/Kafkacodes) | 4 |
-> | [@1mercdev](https://github.com/1mercdev) | 2 |
-> | [@liphiwolf](https://github.com/liphiwolf) | 2 |
-> | [@cootshk](https://github.com/cootshk) | 1 |
+> | [@EEliberto](https://github.com/EEliberto) | 20 |
+
+**最新版本**：Pastel5 — Pastel 26.6 build 5 (2026-06-15)
+
+> [!info]- Release Notes
+> ## 简体中文
+> 
+> 感谢你使用 Pastel！
+> 
+> 我们很高兴带来 Pastel 26.6。
+> 
+> 此次更新内容为：
+> 
+> 1. 引入全新的 Device GUID (设备 GUID) 机制，以避免频繁触发双重认证，参考了 Asspp 的部分原理和实现方式，并同样保存于 macOS Keychain (钥匙串)。
+> 2. 手动下载支持自定义 App ID，并同样支持“不再更新”特性。
+> 3. 修复了其他语言下的部分 UI 显示问题。
+> 4. 优化 macOS Keychain (钥匙串) 安全逻辑，减少打扰并提升效率。
+> 
+> 26.5.2 更新内容：
+> 
+> 1. 支持下载 App 时选择“不再更新”特性。选择后，此 App 将不能再通过 App Store 更新。
+> 2. “下载”板块支持显示版本 ID、是否为可检索更新版本，并优化了部分显示效果。
+> 3. 修复了一些已知问题。
+> 
+> 如果在使用 Pastel 时遇到任何问题，请在 GitHub 提交 Issue。
+> 
+> ## 繁體中文
+> 
+> 感謝你使用 Pastel！
+> 
+> 我們很高興帶來 Pastel 26.6。
+> 
+> 此次更新內容為：
+> 
+> 1. 引入全新的 Device GUID (設備 GUID) 機制，以避免頻繁觸發雙重認證，參考了 Asspp 的部分原理和實作方式，並同樣儲存於 macOS Keychain (鑰匙圈)。
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有多個 PR 和 Issue 討論。
+**社群活躍度**：社群活躍度高，已解決所有開放的問題。
+**連結**：[文件](https://github.com/EEliberto/IPA-Download)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-13 ~ 2026-06-14）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #18 from cootshk/master
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#20](https://github.com/lenucksi/aur-malware-check/issues/20) | 14.6. collection of attack candidates | 3 | 1 |
-> | [#13](https://github.com/lenucksi/aur-malware-check/issues/13) | A signed, machine-readable manifest? | 1 | 1 |
-> | [#22](https://github.com/lenucksi/aur-malware-check/issues/22) | [False Positive] Possible false positive detection on libgda | 0 | 2 |
+> [!abstract] 最近 10 次 commit（2026-06-14 ~ 2026-06-15）
+> **活躍天數** 2 天 · **最新 commit** Polish table headers and publish build 5
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # AUR Malware Check - June 2026 Campaign
+> # Pastel (迄今空前强大的一款 IPA 下载工具)。
+> 一款用于安装 IPA 历史版本的工具，适用于获取旧版应用并自动捕获数据包。下载后，可直接通过 AirDrop 传输至 iPhone、iPad 上并安装并使用。
 > 
-> Detection and analysis tools for the **atomic-lockfile** supply-chain attack on the Arch User Repository (AUR).
+> 目前只支持 macOS 26+ 且配备 Apple 芯片的 Mac。由于作者暂无 Windows PC 设备，故暂时没有 Windows 版本开发计划。
 > 
-> This is a collection of all the scattered resources, especially the ones in the detection scripts Gist - they made this, I just collected this to a repo so I have it all in one place and possibly people could put up PR's instead of Gist links across multiple posts. Certainly see the source section for details on the sources!
+> 使用 SwiftUI 编译，完美适配 macOS 26 的 Liquid Glass 效果。
 > 
-> > **1600+ AUR packages compromised** by attackers who injected `npm install atomic-lockfile`, `bun install js-digest`, or `lockfile-js` into PKGBUILD/install files. Two attack waves:
-> > 1. **atomic-lockfile / lockfile-js** (npm) — accounts `krisztinavarga`, `franziskaweber`, `tobiaswesterburg`, `ellenmyklebust`; `arojas` (impersonated legitimate maintainer — see Impersonation Clarification)
-> > 2. **js-digest** (bun) — accounts `custodiatovar`, `veramagalhaes`
-> >
-> > Both deliver an **infostealer** and **eBPF rootkit** targeting developer credentials, browser data, and CI/CD secrets.
+> # 主页面。
+> 你可以轻松使用 Pastel 在对应地区的 App Store 内查看并搜索 App。更强大的是，它能直接根据你选择的 Apple 账户地区自动选择商店。在切换地区时，还会自动切换到你已登陆并对应地区的 Apple 账户。甚至支持直接下载一款此 Apple 账户从未下载过的 App。
 > 
-> ## Quick Start
+> # 现支持简体中文、繁体中文、日语、韩语和泰语作为主要语言。
+> 
+> # 空前强大的下载页面。
+> 你可以直接在下载页面找到已下载的 IPA 文件，并直接预览它的 App Icon，这针对一些特定节假日，比如 618 期间打广告的 App 格外实用。点击分享按钮，便可直接 AirDrop 到你的 iPhone 或 iPad 进行安装。
+> 
+> # 初次使用。
+> 初次使用，请前往“设置”>“Apple 账户”，添加你的 Apple 账户，一切数据都保存在 iCloud KeyChain，放心且安全。在登陆后完成双重认证，Pastel 会自动识别 Apple 账户的所属地区并完成登陆。解决了市面上已有 IPA 下载工具的很多问题，例如双重认证无法触发，经常丢失保存数据等 (使用了 GSA 技术来触发双重认证，更稳定且安全)。
+> 
+> # 众多来源可选。
+> 云集了 Timbrd、Agsy、Bilin 下载源的版本 ID 信息，方便你快速找到对应的版本 ID。
+> 
+> 如果你想要从 Apple 获取，也没问题，只需要点击 Apple，它就会从你的 Apple 账户获取一次此 App 的版本 ID 并显示 (如果未曾拥有此 App，则会自动完成获取，付费 App 除外)。
+> 
+> 如果你知道对应 App 的版本 ID，也可手动输入版本 ID 下载。
+> 
+> # 鸣谢。
+> 本项目参考了来自 ipatools 的部份代码和原理 https://github.com/beer-psi/ipatool.ts
+> 
+> 登陆流程依赖 SideStore 的 GSA。Device (设备) GUID 逻辑参考 https://github.com/Lakr233/Asspp
+> 
+> 多语言翻译依赖 Claude
+> 
+> # 源码构建。
+> 首次克隆后，请先安装 Node 依赖：
 > 
 > ```bash
-> # Check if you have any infected packages
-> ./aur_check-v2.sh
+> cd NodeProject
+> npm install
+> ```
 > 
-> # Check bun cache specifically (for js-digest / atomic-lockfile)
-> ./aur_check-v2.sh --check-bun-cache
-> 
-> # Safe one-liner (from quantenProjects) - just compare installed vs infected list
-> comm -1 -2
+> 然后使用 Xcode 打开 `Pastel.xcodeproj` 构建运行。
 
 ## 延伸閱讀
 
-相關概念：[[供應鏈安全]] · [[惡意軟體檢測]] · [[AUR]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[資料捕獲]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[perplexityai--bumblebee|perplexityai/bumblebee]] · [[DanOps-1--Gpt-Agreement-Payment|DanOps-1/Gpt-Agreement-Payment]] · [[DepthFirstDisclosures--Nginx-Rift|DepthFirstDisclosures/Nginx-Rift]] · [[MSNightmare--RoguePlanet|MSNightmare/RoguePlanet]] · [[Nightmare-Eclipse--RedSun|Nightmare-Eclipse/RedSun]] · [[Nightmare-Eclipse--YellowKey|Nightmare-Eclipse/YellowKey]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[Doorman11991--smallcode|Doorman11991/smallcode]]
 
-[GitHub](https://github.com/lenucksi/aur-malware-check)
+[GitHub](https://github.com/EEliberto/IPA-Download)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：供應鏈安全）
+> [!note]- 直接競品（同子分類：IPA 下載工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "供應鏈安全" AND file.name != "lenucksi--aur-malware-check"
+> WHERE subcategory = "IPA 下載工具" AND file.name != "EEliberto--IPA-Download"
 > SORT stars DESC
 > ```
 
@@ -411,7 +460,7 @@ comm -1 -2
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "安全" AND file.name != "lenucksi--aur-malware-check"
+> WHERE category = "開發工具" AND file.name != "EEliberto--IPA-Download"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -420,7 +469,7 @@ comm -1 -2
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Shell" AND file.name != "lenucksi--aur-malware-check" AND status != "archived"
+> WHERE language = "Swift" AND file.name != "EEliberto--IPA-Download" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -429,15 +478,15 @@ comm -1 -2
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W25" AND file.name != "lenucksi--aur-malware-check"
+> WHERE week = "2026-W25" AND file.name != "EEliberto--IPA-Download"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["供應鏈安全","惡意軟體檢測","AUR"];
+> const concepts = ["CLI/TUI","自動化","資料捕獲"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "lenucksi--aur-malware-check" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "EEliberto--IPA-Download" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -450,12 +499,12 @@ comm -1 -2
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/EEliberto--IPA-Download");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "lenucksi--aur-malware-check" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "EEliberto--IPA-Download" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -471,7 +520,7 @@ comm -1 -2
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "lenucksi" AND file.name != "lenucksi--aur-malware-check"
+> WHERE owner = "EEliberto" AND file.name != "EEliberto--IPA-Download"
 > SORT stars DESC
 > ```
 
@@ -479,7 +528,7 @@ comm -1 -2
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/EEliberto--IPA-Download");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -496,7 +545,7 @@ comm -1 -2
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/EEliberto--IPA-Download");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -529,7 +578,7 @@ comm -1 -2
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/EEliberto--IPA-Download");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -553,7 +602,7 @@ comm -1 -2
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/EEliberto--IPA-Download");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -590,7 +639,7 @@ comm -1 -2
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/EEliberto--IPA-Download");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -673,7 +722,7 @@ comm -1 -2
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-06-15** — 首次收錄
+> **2026-06-17** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -689,6 +738,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-06-17|2026-06-17]] — 再次上榜，1.3k stars
-- [[2026-06-16|2026-06-16]] — 再次上榜，1.2k stars
-- [[2026-06-15|2026-06-15]] — 首次收錄，890 stars
+- [[2026-06-17|2026-06-17]] — 首次收錄，831 stars

@@ -2297,17 +2297,17 @@
   },
   "shadcn/improve": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-16",
-    "times_seen": 6,
+    "last_seen": "2026-06-17",
+    "times_seen": 7,
     "stars_first": 876,
-    "stars_last": 4878
+    "stars_last": 5016
   },
   "XiaomiMiMo/MiMo-Code": {
     "first_seen": "2026-06-11",
-    "last_seen": "2026-06-16",
-    "times_seen": 6,
+    "last_seen": "2026-06-17",
+    "times_seen": 7,
     "stars_first": 681,
-    "stars_last": 9041
+    "stars_last": 9378
   },
   "apple/coreai-models": {
     "first_seen": "2026-06-11",
@@ -2325,17 +2325,17 @@
   },
   "DietrichGebert/ponytail": {
     "first_seen": "2026-06-13",
-    "last_seen": "2026-06-16",
-    "times_seen": 4,
+    "last_seen": "2026-06-17",
+    "times_seen": 5,
     "stars_first": 939,
-    "stars_last": 16706
+    "stars_last": 25328
   },
   "SkyBlue997/enableMacosAI": {
     "first_seen": "2026-06-14",
-    "last_seen": "2026-06-16",
-    "times_seen": 3,
+    "last_seen": "2026-06-17",
+    "times_seen": 4,
     "stars_first": 996,
-    "stars_last": 1284
+    "stars_last": 1338
   },
   "plannotator/effective-html": {
     "first_seen": "2026-06-14",
@@ -2346,30 +2346,44 @@
   },
   "omnigent-ai/omnigent": {
     "first_seen": "2026-06-15",
-    "last_seen": "2026-06-16",
-    "times_seen": 2,
+    "last_seen": "2026-06-17",
+    "times_seen": 3,
     "stars_first": 1220,
-    "stars_last": 1944
+    "stars_last": 2826
   },
   "lenucksi/aur-malware-check": {
     "first_seen": "2026-06-15",
-    "last_seen": "2026-06-16",
-    "times_seen": 2,
+    "last_seen": "2026-06-17",
+    "times_seen": 3,
     "stars_first": 890,
-    "stars_last": 1181
+    "stars_last": 1347
   },
   "levy-street/world-of-claudecraft": {
     "first_seen": "2026-06-15",
-    "last_seen": "2026-06-16",
-    "times_seen": 2,
+    "last_seen": "2026-06-17",
+    "times_seen": 3,
     "stars_first": 701,
-    "stars_last": 795
+    "stars_last": 878
   },
   "tamnd/kage": {
     "first_seen": "2026-06-16",
-    "last_seen": "2026-06-16",
-    "times_seen": 1,
+    "last_seen": "2026-06-17",
+    "times_seen": 2,
     "stars_first": 1546,
-    "stars_last": 1546
+    "stars_last": 1762
+  },
+  "EEliberto/IPA-Download": {
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17",
+    "times_seen": 1,
+    "stars_first": 831,
+    "stars_last": 831
+  },
+  "loc567/loc567": {
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17",
+    "times_seen": 1,
+    "stars_first": 781,
+    "stars_last": 781
   }
 }
