@@ -7,9 +7,9 @@ language: Rust
 license: N/A
 description: "Goose Swift proof-of-concept README"
 homepage: ""
-stars: 2530
-stars_per_day: 195
-forks: 617
+stars: 2540
+stars_per_day: 181
+forks: 621
 open_issues: 35
 created: 2026-06-02
 pushed_at: 2026-06-02
@@ -17,7 +17,7 @@ first_seen: 2026-06-03
 week: "2026-W23"
 month: "2026-06"
 category: "開發工具"
-subcategory: "健康數據處理"
+subcategory: "健康追蹤"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-03
-use_case: "提供 WHOOP 5.0 健康數據的本地應用原型，尚未準備好用於個人健康數據追蹤。"
+use_case: "提供 WHOOP 5.0 健康數據的本地應用程式原型。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-03"
-star_history: "2026-06-03:752,2026-06-03:757,2026-06-04:1470,2026-06-04:1472,2026-06-05:1869,2026-06-05:1872,2026-06-06:2120,2026-06-06:2120,2026-06-07:2168,2026-06-07:2168,2026-06-08:2253,2026-06-08:2255,2026-06-09:2322,2026-06-09:2322,2026-06-10:2361,2026-06-11:2414,2026-06-12:2458,2026-06-13:2480,2026-06-14:2500,2026-06-15:2513,2026-06-16:2530"
+star_history: "2026-06-03:752,2026-06-03:757,2026-06-04:1470,2026-06-04:1472,2026-06-05:1869,2026-06-05:1872,2026-06-06:2120,2026-06-06:2120,2026-06-07:2168,2026-06-07:2168,2026-06-08:2253,2026-06-08:2255,2026-06-09:2322,2026-06-09:2322,2026-06-10:2361,2026-06-11:2414,2026-06-12:2458,2026-06-13:2480,2026-06-14:2500,2026-06-15:2513,2026-06-16:2530,2026-06-17:2540"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "goose"
   - "b-nnett/goose"
-  - "提供 WHOOP 5.0 健康數據的本地應用原型，尚未準備好用於個人健康數據追蹤。"
+  - "提供 WHOOP 5.0 健康數據的本地應用程式原型。"
 ---
 
 # goose
 
-**2.5k** stars · **195** stars/天 · 建立 13 天前 · Rust · 未標註授權
+**2.5k** stars · **181** stars/天 · 建立 14 天前 · Rust · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/b-nnett--goose");
@@ -68,23 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案`
+`個人專案` `ARCHIVED`
 
 > [!summary] 一句話摘要
-> 提供 WHOOP 5.0 健康數據的本地應用原型，尚未準備好用於個人健康數據追蹤。
+> 提供 WHOOP 5.0 健康數據的本地應用程式原型。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (195 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 13 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 對 WHOOP 5.0 健康數據有需求的開發者和健身愛好者。
-> **一句話重點** Goose 提供了一個本地處理 WHOOP 5.0 健康數據的原型，強調用戶隱私和數據安全。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (181 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 14 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 具備 Xcode 和 Rust 開發經驗的 iOS 開發者，對健康數據追蹤應用有興趣。
+> **一句話重點** Goose 的本地數據處理能力為健康數據追蹤提供了一個新的解決方案，特別是針對 WHOOP 5.0 用戶。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/b-nnett--goose");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "健康數據處理" && p.file.name !== "b-nnett--goose" && p.status !== "archived")
+>     .where(p => p.subcategory === "健康追蹤" && p.file.name !== "b-nnett--goose" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,48 +95,44 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 健康數據處理 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 健康追蹤 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到本地處理健康數據的能力，值得探索。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
+> **結論** 花 10 小時學習，15 小時整合，得到一個有潛力的健康數據處理工具，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供本地處理 WHOOP 5.0 健康數據的解決方案，強調用戶隱私。
+> Goose 提供了一個本地化的 WHOOP 5.0 數據處理解決方案，填補了現有工具的空白。
 
 ## 專案簡介
 
-Goose 是一個針對 WHOOP 5.0 的本地健康數據應用原型，旨在將 WHOOP 5.0 手環的數據通過 Rust 核心進行處理，並顯示每日健康、恢復、睡眠等指標。用戶需要在 iOS 設備上安裝應用，並通過藍牙連接手環，然後應用會將數據轉換為可視化的健康指標。這個工具的賣點在於它的本地數據處理能力，避免了將敏感健康數據上傳到雲端，從而提高了用戶隱私。核心技術使用 SwiftUI 作為前端框架，並通過 JSON-over-C 橋接入 Rust 實現的後端邏輯，這樣的設計使得應用能夠快速響應用戶操作。由於目前仍處於原型階段，性能尚未優化，可能會出現延遲，這也是開發者歡迎性能改進貢獻的原因。
+Goose 是一個針對 WHOOP 5.0 健康追蹤器的本地應用程式，旨在將數據通過 Rust 核心處理並顯示健康指標。用戶透過 iOS 應用連接 WHOOP 5.0 手環，並將數據轉換為每日健康、恢復、睡眠等指標的視圖。該應用目前仍處於 Alpha 階段，性能尚未優化，開發者可透過 Xcode 編譯和測試。核心功能包括 SwiftUI 應用框架、CoreBluetooth 連接、JSON-over-C 橋接 Rust 核心等，並提供健康指標的可視化界面。
 
-與其他健康數據應用相比，Goose 專注於 WHOOP 5.0，並不支持其他版本，這使得它在功能上有明確的限制。使用者可能會發現某些健康指標在數據來源缺失時顯示為空，這是因為數據管道仍在發展中。這個專案的成熟度為 alpha，尚不建議在生產環境中使用，但對於開發者來說，這是一個探索 WHOOP 數據處理的良好起點。對於需要本地數據處理的健康追蹤應用，Goose 提供了一個有趣的解決方案，但在功能和性能上仍需進一步完善。
+Goose 的設計靈感來自 Bevel，並且是獨立於 WHOOP 的項目，未包含任何 WHOOP 的源代碼。這個工具的賣點在於它的本地數據處理能力，並且可以在未來擴展到更多健康追蹤功能。使用者需要具備一定的開發經驗，因為該應用尚未準備好作為個人健康數據追蹤的正式應用。對於有意參與開發的用戶，該項目歡迎性能優化的 PR。
 
-**技術棧**：`Rust` · `Swift` · `Xcode`
+**技術棧**：`Rust` · `Swift` · `Python` · `Shell` · `C`
 
 ## 重點功能
 
-- 本地數據處理 — 通過 Rust 核心處理 WHOOP 5.0 數據，保護用戶隱私。
-- 健康指標視圖 — 提供每日健康、恢復、睡眠等多種指標的可視化。
-- SwiftUI 前端 — 使用 SwiftUI 框架構建，提供流暢的用戶體驗。
-- 藍牙連接 — 支持與 WHOOP 5.0 手環的藍牙連接，實現數據同步。
-- 開發者友好 — 提供詳細的文檔和開發指南，鼓勵社群貢獻。
+- SwiftUI 應用框架 — 提供現代化的用戶界面，支持 Home、Health、Coach 和 More 標籤。
+- CoreBluetooth 連接 — 能夠與 WHOOP 5.0 設備進行藍牙連接，實現數據同步。
+- JSON-over-C 橋接 — 透過 Rust 核心處理數據，並將其轉換為健康指標。
+- 健康指標視圖 — 顯示睡眠、恢復、壓力等多種健康數據，並支持數據的可視化。
+- 開發者友好 — 提供詳細的構建指令和開發文檔，方便開發者參與貢獻。
 
 ## 快速開始
 
-1. 克隆專案
+1. 克隆項目
 ```bash
 git clone https://github.com/b-nnett/goose.git
 ```
-2. 安裝依賴
-```bash
-rustup target add aarch64-apple-ios aarch64-apple-ios-sim x86_64-apple-ios
-```
-3. 在 Xcode 中打開專案
+2. 在 Xcode 中打開專案
 ```bash
 open GooseSwift.xcodeproj
 ```
-4. 構建應用
+3. 構建應用
 ```bash
 xcodebuild -project GooseSwift.xcodeproj -scheme GooseSwift -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath /tmp/goose-swift-deriveddata build
 ```
@@ -145,67 +141,65 @@ xcodebuild -project GooseSwift.xcodeproj -scheme GooseSwift -configuration Debug
 
 ```rust
 {
-  "前置條件": "需要在 Xcode 中構建應用",
+  "前置條件": "需要安裝 Xcode 和 Rust。",
   "指令": "xcodebuild -project GooseSwift.xcodeproj -scheme GooseSwift -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath /tmp/goose-swift-deriveddata build",
-  "預期輸出": "構建成功，生成應用程序。"
+  "預期輸出": "成功構建 GooseSwift 應用。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 13 天內累積 2530 stars（195/天），forks 617（24.4%），顯示出強烈的社群關注。作者 b-nnett 之前在健康數據領域有過經驗，這個專案填補了市場上對於 WHOOP 5.0 數據本地處理的需求。當前的健康數據應用多數依賴雲端服務，這使得用戶的隱私受到威脅，而 Goose 提供了一個本地解決方案，這正是其吸引力所在。社群的反饋也顯示出對於性能和功能擴展的期待，這進一步推動了專案的關注度。
+> 建立 14 天內累積 2540 stars（181/天），forks 621（24.4%），顯示出強勁的社群參與度。項目由 b-nnett 開發，專注於提供 WHOOP 5.0 的本地數據處理解決方案，填補了現有健康數據追蹤工具的空白。該項目尚在開發初期，吸引了開發者的注意，尤其是對健康科技感興趣的社群。近期的討論和 PR 也顯示出對該項目的活躍關注，特別是對於性能和擴展性的需求。
 
 ## 適合誰使用
 
-**目標受眾**：對 WHOOP 5.0 健康數據有需求的開發者和健身愛好者。
+**目標受眾**：具備 Xcode 和 Rust 開發經驗的 iOS 開發者，對健康數據追蹤應用有興趣。
 
 > [!example] 使用場景
-> - 健身教練用它來追蹤客戶的健康數據，因為它提供了本地數據處理，避免了隱私問題。
-> - 開發者用它來測試 WHOOP 5.0 數據的解析和顯示，因為它的 Rust 核心能夠高效處理數據。
-> - 健康追蹤愛好者用它來分析自己的健康指標，因為它能夠提供每日的健康回顧和趨勢分析。
+> - iOS 開發者用它來測試 WHOOP 5.0 數據連接，因為它提供了本地數據處理的能力，能夠快速迭代和優化功能。
+> - 健康科技創業者用它來評估 WHOOP 5.0 數據的可用性，因為它能夠在本地處理數據，並提供即時的健康指標視圖。
+> - 數據科學家用它來分析健康數據流，因為它的 Rust 核心能夠高效處理大量數據，並提供可視化的健康指標。
 
 ## 架構分析
 
-Goose 的架構由前端 SwiftUI 應用和後端 Rust 核心組成，這樣的設計使得應用能夠快速響應用戶操作。前端負責用戶界面和數據顯示，後端則處理數據的解析和存儲。這種分離的架構使得開發者可以獨立優化前端和後端，但也帶來了需要處理的跨語言接口問題。
+Goose 採用 SwiftUI 作為前端框架，並使用 Rust 作為後端數據處理核心。這樣的設計使得應用能夠在 iOS 設備上高效運行，並提供即時的健康數據視圖。數據流從 WHOOP 5.0 設備通過藍牙傳輸至應用，然後通過 Rust 核心進行處理，最終顯示在用戶界面上。
 
-選擇 Rust 作為後端語言是因為其性能和安全性，這對於健康數據的處理至關重要。隨著用戶數據量的增加，可能會面臨性能瓶頸，尤其是在數據解析和顯示的過程中。整體而言，這種架構適合快速開發和迭代，但在擴展性上可能需要進一步考量。
+這樣的架構使得應用能夠快速迭代和擴展，但也帶來了性能優化的挑戰，因為目前的實現尚未針對性能進行調整。隨著用戶數據量的增加，應用可能會面臨性能瓶頸，特別是在數據處理和顯示的即時性上。整體而言，這種架構設計使得應用在功能上具有高度的靈活性，但在性能上仍需進一步的優化和調整。
 
 ## 技術深入分析
 
-Goose 的核心技術機制是將 WHOOP 5.0 的數據通過 Rust 核心進行處理，這樣的設計使得數據處理效率高且安全。前端使用 SwiftUI 框架，這使得應用能夠提供現代化的用戶界面和流暢的用戶體驗。由於目前仍在原型階段，性能尚未優化，可能會出現延遲，這也是開發者歡迎性能改進貢獻的原因。選擇 Rust 作為後端語言是因為其性能和安全性，這對於健康數據的處理至關重要。
-
-隨著用戶數據量的增加，可能會面臨性能瓶頸，尤其是在數據解析和顯示的過程中。整體而言，這種架構適合快速開發和迭代，但在擴展性上可能需要進一步考量。與其他健康數據應用相比，Goose 專注於 WHOOP 5.0，這使得它在功能上有明確的限制，但也讓它在特定用戶群中更具吸引力。社群的反饋也顯示出對於性能和功能擴展的期待，這進一步推動了專案的關注度。
+Goose 的核心技術在於其 Rust 核心，這使得應用能夠高效處理來自 WHOOP 5.0 的數據。數據通過 CoreBluetooth 連接，並使用 JSON-over-C 橋接進行處理，這樣的設計使得數據流動更加靈活。性能方面，由於目前尚未優化，應用在處理大量數據時可能會出現延遲，這對用戶體驗造成影響。選擇 Rust 作為核心處理語言的原因在於其高效能和安全性，但這也帶來了更高的學習曲線和開發成本。依賴樹方面，該項目相對輕量，主要依賴於 Rust 和 Swift 的標準庫，這使得整體架構較為簡單。隨著用戶數據量的增加，應用可能會面臨性能瓶頸，特別是在數據處理和顯示的即時性上。整合到現有技術生態中，Goose 可以與其他 SwiftUI 應用無縫協作，但在 CI/CD 流程中可能需要額外的配置和調整。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的指導和構建步驟，對於熟悉 Xcode 和 Rust 的開發者來說，安裝過程相對順暢。文件中有詳細的構建指令和依賴要求，但對於新手來說，可能需要一些背景知識。整體而言，花 30 分鐘能夠成功構建並運行應用的可能性較高。
+> README 文件提供了詳細的構建指令和開發文檔，對於有經驗的開發者來說，安裝過程相對順暢。需要注意的是，對於不熟悉 Xcode 或 Rust 的用戶，可能會遇到一些困難。整體來說，對於有開發背景的用戶，花 30 分鐘應該能夠成功構建並運行應用。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 本地數據處理，保護用戶隱私。
-> - 使用 SwiftUI 提供現代化的用戶界面。
-> - 支持藍牙連接，方便與 WHOOP 5.0 手環互動。
+> - 本地數據處理，能夠提高數據隱私性。
+> - 使用現代化的 SwiftUI 框架，提供良好的用戶體驗。
+> - 開發者友好，提供詳細的構建和開發文檔。
 
 > [!danger] 缺點
-> - 目前僅支持 WHOOP 5.0，功能有限。
-> - 性能尚未優化，可能影響用戶體驗。
-> - 數據管道仍在發展中，某些指標可能顯示為空。
+> - 性能尚未優化，使用時可能會有延遲。
+> - 目前僅支持 WHOOP 5.0，限制了用戶群體。
+> - 仍在 Alpha 階段，功能不完整，可能會出現錯誤。
 
 > [!warning] 注意事項
 > - 目前僅支持 WHOOP 5.0，其他版本不兼容。
-> - 性能尚未優化，應用可能會出現延遲。
-> - 數據管道仍在發展中，某些指標可能顯示為空。
+> - 性能尚未優化，使用時可能會有顯著延遲。
+> - 仍在 Alpha 階段，功能不完整，數據可能會顯示為空或不可用。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於健康數據的處理和可視化，但不支持 WHOOP 5.0，適合需要廣泛健康數據整合的用戶。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的健康數據追蹤功能，但依賴雲端服務，可能不如 Goose 安全。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 雖然也處理健康數據，但主要針對多種設備的數據整合，適合需要跨平台支持的用戶。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於健康數據的即時處理，但不支持 WHOOP 5.0。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供健康數據的可視化，但不具備本地數據處理能力。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 針對多種健康追蹤設備，但不專注於 WHOOP 5.0 的數據。 |
 
 ## 替代方案決策
 
@@ -213,16 +207,17 @@ Goose 的核心技術機制是將 WHOOP 5.0 的數據通過 Rust 核心進行處
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於健康數據的處理和可視化，但不支持 WHOOP 5.0，適合需要廣泛健康數據整合的用戶。 | 如果你的團隊需要支持多種健康設備的數據整合，而不僅僅是 WHOOP 5.0。 | medium，因為需要重新設計數據流和界面。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的健康數據追蹤功能，但依賴雲端服務，可能不如 Goose 安全。 | 如果你的團隊更傾向於雲端解決方案，並且不太擔心數據隱私問題。 | low，因為功能類似，數據結構可能相容。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於健康數據的即時處理，但不支持 WHOOP 5.0。 | 如果你的團隊需要支持多種健康追蹤設備，而不僅僅是 WHOOP 5.0。 | medium，因為需要重新設計數據處理流程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供健康數據的可視化，但不具備本地數據處理能力。 | 如果你的需求主要是數據可視化，而不需要本地處理。 | low，因為可以直接使用現有的數據源。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 針對多種健康追蹤設備，但不專注於 WHOOP 5.0 的數據。 | 如果你的團隊已經在使用多種健康追蹤設備，並需要一個通用的解決方案。 | high，因為需要整合多個數據源。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **goose** | **agent-sprite-forge** | **boneyard** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於健康數據的處理和可視化，但不支持 WHOOP 5.0，適合需要廣泛健康數據整合的用戶。 | 提供類似的健康數據追蹤功能，但依賴雲端服務，可能不如 Goose 安全。 |
-> | 遷移成本 | - | medium，因為需要重新設計數據流和界面。 | low，因為功能類似，數據結構可能相容。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要支持多種健康設備的數據整合，而不僅僅是 WH | 如果你的團隊更傾向於雲端解決方案，並且不太擔心數據隱私問題。 |
+> | 維度 | **goose** | **agent-sprite-forge** | **boneyard** | **Duel-Agents** |
+> | --- | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 專注於健康數據的即時處理，但不支持 WHOOP 5.0。 | 提供健康數據的可視化，但不具備本地數據處理能力。 | 針對多種健康追蹤設備，但不專注於 WHOOP 5.0 的數據。 |
+> | 遷移成本 | - | medium，因為需要重新設計數據處理流程。 | low，因為可以直接使用現有的數據源。 | high，因為需要整合多個數據源。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要支持多種健康追蹤設備，而不僅僅是 WHOOP | 如果你的需求主要是數據可視化，而不需要本地處理。 | 如果你的團隊已經在使用多種健康追蹤設備，並需要一個通用的解決 |
 
 ## 成熟度評估
 
@@ -233,43 +228,43 @@ Goose 的核心技術機制是將 WHOOP 5.0 的數據通過 Rust 核心進行處
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合開發者進行測試和貢獻，但不建議用於生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 某些健康指標在數據來源缺失時顯示為空
-  - 解法：等待數據管道完善，或手動檢查數據來源
-- **[HIGH]** 性能尚未優化，應用可能會出現延遲
-  - 解法：開發者可貢獻性能改進的 PR
-- [MEDIUM] 僅支持 WHOOP 5.0，未來版本的支持尚不明確
-  - 解法：關注未來的版本更新
+- **[HIGH]** 在 iOS 模擬器中可能無法正確連接到 WHOOP 5.0 設備
+  - 解法：使用實體設備進行測試
+- [MEDIUM] 數據顯示可能不完整或為空
+  - 解法：確保已連接到 WHOOP 5.0 並且數據源可用
+- [MEDIUM] 性能可能不佳，尤其在數據量大時
+  - 解法：等待性能優化的更新
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 健身教練用於客戶健康數據追蹤 | 非常適合 | 提供本地數據處理，保護客戶隱私 |
-| 開發者用於測試健康數據解析 | 適合 | 提供詳細的開發文檔和指導 |
-| 普通用戶用於日常健康數據追蹤 | 普通 | 目前功能有限，僅支持特定設備 |
+| 小型健康科技團隊開發新應用 | 非常適合 | 因為該項目提供了本地數據處理的能力，能夠快速迭代。 |
+| 個人開發者測試健康數據應用 | 適合 | 因為需要一定的開發背景來處理安裝和構建過程。 |
+| 大型企業需要穩定的健康數據解決方案 | 不適合 | 因為該項目仍在 Alpha 階段，功能不完整且性能不佳。  |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 學習時間 | ~10 小時 |
+| 整合時間 | ~15 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到本地處理健康數據的能力，值得探索。
+> 花 10 小時學習，15 小時整合，得到一個有潛力的健康數據處理工具，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：本工具主要在本地處理數據，不需要高權限，且不存取敏感資料。
+> 低風險：該工具不需要高權限操作，並且所有數據處理均在本地完成，不會存取敏感資料。
 
 ## 健康度儀表板
 
@@ -334,7 +329,7 @@ Goose 的核心技術機制是將 WHOOP 5.0 的數據通過 Rust 核心進行處
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 617 |
+| Forks | 621 |
 | Open Issues | 35 |
 | Issue 解決率 | 34% (18 closed) |
 | 最後推送 | 2026-06-02 |
@@ -357,7 +352,7 @@ Goose 的核心技術機制是將 WHOOP 5.0 的數據通過 Rust 核心進行處
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，開發者鼓勵貢獻和反饋。
+**社群活躍度**：社群活躍，近期有多個 PR 和 Issue 討論。
 **連結**：[文件](https://github.com/b-nnett/goose)
 
 ## 開發動態
@@ -578,7 +573,7 @@ Goose 的核心技術機制是將 WHOOP 5.0 的數據通過 Rust 核心進行處
 
 ## 延伸閱讀
 
-相關概念：[[健康數據處理]] · [[本地數據存儲]] · [[藍牙通訊]]
+相關概念：[[健康數據追蹤]] · [[本地數據處理]] · [[SwiftUI]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[432539--gpt2api|432539/gpt2api]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]]
 
@@ -586,11 +581,11 @@ Goose 的核心技術機制是將 WHOOP 5.0 的數據通過 Rust 核心進行處
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：健康數據處理）
+> [!note]- 直接競品（同子分類：健康追蹤）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "健康數據處理" AND file.name != "b-nnett--goose"
+> WHERE subcategory = "健康追蹤" AND file.name != "b-nnett--goose"
 > SORT stars DESC
 > ```
 
@@ -622,7 +617,7 @@ Goose 的核心技術機制是將 WHOOP 5.0 的數據通過 Rust 核心進行處
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["健康數據處理","本地數據存儲","藍牙通訊"];
+> const concepts = ["健康數據追蹤","本地數據處理","SwiftUI"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "b-nnett--goose" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
