@@ -5,14 +5,14 @@ owner: freestylefly
 owner_type: User
 language: JavaScript
 license: MIT
-description: "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，20+ 套工业级模板，持续更新中"
+description: "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中"
 homepage: "https://gpt-image2.canghe.ai"
-stars: 3664
-stars_per_day: 407
-forks: 516
-open_issues: 5
+stars: 7667
+stars_per_day: 145
+forks: 998
+open_issues: 6
 created: 2026-04-25
-pushed_at: 2026-05-04
+pushed_at: 2026-06-10
 first_seen: 2026-04-28
 week: "2026-W18"
 month: "2026-04"
@@ -26,23 +26,23 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-28
-use_case: "提供370+個案例和20+套工業級模板的GPT-Image2提示詞引擎，幫助用戶高效生成圖像。"
+use_case: "提供工業級的提示詞引擎與模板庫，幫助用戶生成可重用的 AI 圖像生成提示。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 5
 next_review: "2026-05-05"
-contributor_count: 1
+contributor_count: 4
 engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 139226
-readme_length: 9527
+repo_size_kb: 185850
+readme_length: 9936
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-28"
-star_history: "2026-04-28:1274,2026-04-29:1716,2026-04-30:2149,2026-05-01:2562,2026-05-02:2989,2026-05-04:3434,2026-05-05:3664"
+star_history: "2026-04-28:1274,2026-04-29:1716,2026-04-30:2149,2026-05-01:2562,2026-05-02:2989,2026-05-04:3434,2026-05-05:3664,2026-06-18:7667"
 tags:
   - github
   - "category/ai_ml"
@@ -50,18 +50,18 @@ tags:
   - easy_install
   - "topic/agents"
   - "topic/ai_image_generation"
+  - "topic/chatgpt"
   - "topic/gpt_image_2"
   - "topic/image_prompts"
-  - "topic/prompt_as_code"
 aliases:
   - "awesome-gpt-image-2"
   - "freestylefly/awesome-gpt-image-2"
-  - "提供370+個案例和20+套工業級模板的GPT-Image2提示詞引擎，幫助用戶高效生成圖像。"
+  - "提供工業級的提示詞引擎與模板庫，幫助用戶生成可重用的 AI 圖像生成提示。"
 ---
 
 # awesome-gpt-image-2
 
-**3.7k** stars · **407** stars/天 · 建立 9 天前 · JavaScript · MIT
+**7.7k** stars · **145** stars/天 · 建立 53 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/freestylefly--awesome-gpt-image-2");
@@ -74,18 +74,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `easy-install`
+`easy-install`
 
-`agents` `ai-image-generation` `gpt-image-2` `image-prompts` `prompt-as-code` `prompt-engineering` `workflow-automation`
+`agents` `ai-image-generation` `chatgpt` `gpt-image-2` `image-prompts` `prompt-as-code` `prompt-engineering` `skills` `workflow-automation`
 
 > [!summary] 一句話摘要
-> 提供370+個案例和20+套工業級模板的GPT-Image2提示詞引擎，幫助用戶高效生成圖像。
+> 提供工業級的提示詞引擎與模板庫，幫助用戶生成可重用的 AI 圖像生成提示。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (407 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要高效生成圖像並希望使用結構化提示詞的設計師和開發者。
-> **一句話重點** 這個專案的價值在於將提示詞結構化，讓AI圖像生成變得更加高效和可控。
+> **安裝難度** Easy · **專案狀態** Growing · **熱度** Hot (145 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 7 天前) · **貢獻者** 4+ 人 · **參與度** Medium
+> **適合** 需要生成高品質 AI 圖像但缺乏設計經驗的開發者和設計師。
+> **一句話重點** 這個專案不僅提供了生成圖像的工具，更重要的是它讓用戶能夠以結構化的方式重用提示詞，提升了生成的效率和穩定性。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,93 +108,95 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花5小時學習、3小時整合，得到高效的圖像生成工具，值得嘗試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習、3 小時整合，得到高效的圖像生成能力，值得投入。
 
 > [!abstract] 核心創新
-> 將提示詞轉化為結構化的可重用模板，提升AI圖像生成的可控性和效率。
+> 將提示詞轉化為結構化的代碼資產，便於重用和自動化。
 
 ## 專案簡介
 
-這個專案的核心機制是將散亂的AI圖像生成提示詞轉化為結構化的可重用模板，讓用戶能夠更方便地生成穩定且可控的圖像。用戶可以從案例庫中選擇想要模仿的輸出類型，然後根據提供的模板填入業務變數，這樣的設計使得批量生成和自動化工作流程變得更加簡單。專案使用JavaScript和Vite框架，並依賴React進行前端展示，這樣的選擇使得開發過程中能夠快速迭代和構建高效的用戶界面。與其他類似工具相比，如EvoLinkAI/awesome-gpt-image-2-prompts，這個專案提供了更為詳細的工業級模板和案例，讓用戶能夠更精確地控制生成的圖像內容。
+這個專案的核心機制是將提示詞結構化，使得用戶可以更容易地生成穩定且可重用的 AI 圖像。用戶可以從 400 多個逆向工程的案例中選擇，然後根據需求填入變數，最終生成所需的圖像。關鍵指令包括 `npx skills add freestylefly/awesome-gpt-image-2 --skill gpt-image-2-style-library`，這能快速將技能安裝到支持的本地代理中。這個工具的賣點在於將散落的社群範例轉化為可重用的 Prompt-as-Code 資產，特別適合需要批量生成或自動化工作流的場景。技術上，它使用 JavaScript 和 Vite 作為前端框架，並整合了 Google Analytics 和 Supabase 進行數據追蹤和後端支持。
 
-專案的設計特別適合需要高效生成圖像的團隊，尤其是在需要大量生成相似風格圖像的場景中。使用者可能會遇到的問題包括模板不夠靈活或不符合特定需求，這時需要根據實際情況進行調整。整體來看，這個專案目前處於早期階段，適合對AI圖像生成有需求的開發者和設計師，未來可能會持續更新和擴展模板庫。建議在小型專案或內部工具中試用，避免在關鍵生產環境中使用。
+這樣的選擇使得專案在性能上相對輕量，並且易於擴展。與其他工具相比，如 `0x0funky/agent-sprite-forge` 和 `EvoLinkAI/awesome-gpt-image-2-prompts`，這個專案提供了更為結構化的提示詞模板，並且專注於工業級的應用場景，讓用戶能夠更精確地控制生成的圖像內容。使用者在實際操作中可能會遇到的問題包括依賴於 Google 登入進行生成，這可能會影響某些用戶的使用體驗。這個專案目前處於穩定階段，適合中小型團隊進行實驗和開發，未來可能會進一步擴展到更多的模板和案例。對於需要快速生成高質量圖像的設計師或開發者，這是一個值得考慮的工具，但對於只需偶爾生成圖像的用戶，可能會覺得學習曲線稍陡。
 
-**技術棧**：`JavaScript` · `Vite` · `React`
+**技術棧**：`JavaScript` · `CSS` · `PLpgSQL` · `HTML` · `Vite`
 
 ## 重點功能
 
-- 370+個案例 — 提供多種風格的圖像生成範例，幫助用戶快速找到靈感。
-- 20+套工業級模板 — 針對不同需求的模板，支持快速生成和重用。
-- 結構化提示詞 — 將提示詞分解為可組合的部分，提升生成的可控性。
-- 支持批量生成 — 適合需要大量圖像的商業應用場景。
-- 持續更新 — 專案會定期更新新的模板和案例，保持內容的新鮮感。
+- 400+ 逆向工程案例 — 提供多樣化的圖像生成範例，幫助用戶快速找到靈感。
+- 20+ 工業級模板 — 讓用戶能夠填入變數生成特定需求的圖像。
+- Prompt-as-Code 結構 — 將提示詞轉化為可重用的代碼，便於自動化工作流。
+- 支持多種代理 — 兼容 Claude Code、Codex 等多個工具，提升靈活性。
+- 即時生成測試 — 用戶可在網站上直接測試生成效果，提升使用體驗。
 
 ## 快速開始
 
-1. 克隆專案
+1. 安裝技能到全局代理
 ```bash
-git clone https://github.com/freestylefly/awesome-gpt-image-2.git
+npx skills add freestylefly/awesome-gpt-image-2 --global --all --copy
 ```
-2. 安裝依賴
+2. 選擇案例並複製結構
 ```bash
-npm install
+無
 ```
-3. 啟動開發伺服器
+3. 填入業務變數生成圖像
 ```bash
-npm run dev
+無
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立9天內累積3664 stars（407/天），forks 516（14.1%），顯示出強勁的增長潛力。作者freestylefly在AI領域有一定的經驗，這個專案解決了AI圖像生成中缺乏結構化提示詞的痛點，讓用戶能夠更方便地生成可重用的圖像。近期的推廣活動和社群討論也可能促進了這個專案的曝光度。技術上，隨著AI圖像生成技術的成熟，這個工具的需求也隨之上升，特別是在商業應用中。forks/stars比率14.1%顯示出許多用戶對其進行了實際修改和使用，這是相對活躍的社群信號。
+> 建立 53 天內累積 7667 stars（145/天），forks 998（13.0%），這顯示出強勁的社群關注度。專案的主要貢獻者包括多位活躍的開發者，顯示出穩定的維護能力。這個工具解決了以往生成圖像時缺乏結構化提示的問題，讓用戶可以更有效率地生成所需的圖像。最近的推廣活動和社群互動也可能促進了其快速增長。技術上，專案的設計使得它能夠輕鬆整合到現有的 AI 工作流中，這是其受歡迎的原因之一。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效生成圖像並希望使用結構化提示詞的設計師和開發者。
+**目標受眾**：需要生成高品質 AI 圖像但缺乏設計經驗的開發者和設計師。
 
 > [!example] 使用場景
-> - 設計師用它來生成高品質的產品展示圖，因為可以快速從370+個案例中找到靈感並生成符合需求的圖像。
-> - 開發者用它來自動化生成社交媒體內容，因為結構化的模板可以大幅減少手動編輯的時間。
-> - 市場營銷團隊用它來創建廣告素材，因為提供的工業級模板能夠保持品牌一致性並提高效率。
+> - 設計師用它來快速生成產品展示圖，因為可以從 400+ 個案例中找到靈感並快速調整參數。
+> - 開發者用它來在 CI/CD 流程中自動生成圖像，因為其結構化的提示詞讓批量生成變得簡單。
+> - 內容創作者用它來製作社交媒體圖像，因為可以直接從模板中提取樣式，節省設計時間。
 
 ## 架構分析
 
-專案採用Vite作為構建工具，結合React進行前端開發，這樣的選擇使得開發過程中能夠快速迭代和構建高效的用戶界面。資料流方面，使用者從案例庫中選擇案例，然後根據模板填入變數，這樣的設計使得用戶能夠快速生成所需的圖像。選擇JavaScript作為開發語言，能夠更好地與前端技術棧整合，但也可能導致在大型專案中出現性能瓶頸。整體架構設計上，專案的擴展性良好，未來可以根據需求增加更多的模板和案例。
+這個專案採用模組化的架構設計，主要使用 JavaScript 和 Vite 來構建前端。資料流方面，使用者可以從案例中選擇並複製結構，然後填入變數生成圖像。這樣的設計使得用戶能夠快速上手，並且降低了生成圖像的門檻。
+
+選擇 Vite 作為構建工具，因為它提供了快速的開發體驗和即時反饋，這對於需要頻繁調整的設計工作流非常重要。這個架構的代價在於對 JavaScript 環境的依賴，對於不熟悉此語言的用戶可能會增加學習成本。整體來說，這個架構適合中小型團隊進行快速開發，但在擴展性上可能會受到限制，特別是在需要處理大量資料時。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是將提示詞轉化為結構化的模板，這樣的設計使得用戶在生成圖像時能夠更好地控制內容。使用Vite作為構建工具，能夠快速啟動開發伺服器，並且支持熱重載，提升開發效率。專案的效能特性尚未明確，但由於使用JavaScript，可能在處理大量數據時出現性能瓶頸。選擇React進行前端開發，能夠與現有的生態系統良好整合，但也可能增加學習成本。技術風險方面，若未來需求增長，可能需要重新考慮架構以支持更高的並發量。整合方面，與主流的CI/CD工具相容性良好，能夠方便地融入現有的開發流程。
+該專案的核心技術機制是將提示詞結構化，這樣用戶可以更容易地生成所需的圖像。它使用 JavaScript 和 Vite 作為主要技術棧，這使得開發過程中能夠快速迭代和測試。專案的設計考慮到了用戶的需求，提供了多種模板和案例，讓用戶能夠根據自己的需求進行調整。效能上，該專案能夠快速響應用戶的請求，並且在生成圖像時保持較低的延遲。選擇 Vite 作為構建工具，因為它能夠提供即時的反饋和快速的開發體驗，這對於需要頻繁調整的設計工作流非常重要。技術風險方面，依賴於外部 API 可能會導致穩定性問題，特別是在高流量時期。整合方面，該專案能夠輕鬆融入現有的 AI 工作流中，並且與主流的開發工具有良好的相容性，這使得它在實際應用中非常方便。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README文件清晰且提供了使用範例，安裝過程順暢，無明顯坑點。文件目前僅提供英文，對於非英語使用者可能會有一定的學習障礙。
+> README 文件提供了清晰的安裝指導和使用範例，讓新手能夠快速上手。安裝過程相對順暢，但需要注意 Google 登入的要求。文件中有多語言支持，這對於不同語言的用戶非常友好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供大量的案例和模板，方便用戶快速上手。
-> - 結構化的提示詞提高了生成圖像的可控性。
-> - 持續更新的內容保持了專案的新鮮感。
+> - 提供大量的逆向工程案例，幫助用戶快速找到靈感。
+> - 結構化的提示詞設計，便於重用和自動化。
+> - 支持多種代理，提升靈活性和適用性。
 
 > [!danger] 缺點
-> - 目前僅支援JavaScript環境，對其他語言的支援有限。
-> - 模板的靈活性可能不足，需根據具體需求進行調整。
-> - 社群活躍度尚在建立階段，可能存在未解決的問題。
+> - 需要 Google 登入進行生成，可能影響使用體驗。
+> - 對於非 JavaScript 用戶的學習曲線較陡。
+> - 依賴外部 API，可能會影響穩定性。
 
 > [!warning] 注意事項
-> - 目前僅支援 JavaScript 環境，對於其他語言的支援尚未實現。
-> - 模板的靈活性可能不足，需根據具體需求進行調整。
-> - 社群活躍度尚在建立階段，可能存在未解決的問題。
+> - 需要 Google 登入以測試生成圖像。
+> - 目前僅支持 JavaScript 環境，對其他語言支持有限。
+> - 依賴於外部 API，可能會受到服務器穩定性的影響。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 提供了大量的提示詞，但缺乏結構化的模板系統，適合需要快速生成單一圖像的場景。 |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成角色圖像，功能較為專一，適合遊戲開發者，而本專案則更廣泛適用於各類圖像生成。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的代理技能，但更專注於遊戲開發場景，適合需要圖像生成的遊戲開發者。 |
+| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 專注於圖像生成的提示詞，但缺乏結構化的模板系統，對於需要批量生成的用戶不夠友好。 |
 
 ## 替代方案決策
 
@@ -202,45 +204,47 @@ npm run dev
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 提供大量的提示詞，但缺乏結構化的模板系統，適合需要快速生成單一圖像的場景。 | 如果你的需求是快速生成單一圖像而不需要模板系統，則這個選擇更合適。 | low，因為兩者都使用類似的提示詞結構。 |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成角色圖像，功能較為專一，適合遊戲開發者，而本專案則更廣泛適用於各類圖像生成。 | 如果你的專案主要集中在角色設計上，則這個工具會更合適。 | medium，因為需要調整生成的提示詞以符合不同的需求。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發場景，提供專門的圖像生成工具。 | 如果你的團隊專注於遊戲開發，並需要針對遊戲場景生成圖像。 | medium，因為需要重新調整生成邏輯以適應遊戲需求。 |
+| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 提供大量的圖像生成提示，但缺乏結構化的模板系統。 | 如果你只需要簡單的圖像生成提示，而不需要複雜的結構化功能。 | low，因為使用方式相似，容易上手。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **awesome-gpt-image-2** | **awesome-gpt-image-2-prompts** | **agent-sprite-forge** |
+> | 維度 | **awesome-gpt-image-2** | **agent-sprite-forge** | **awesome-gpt-image-2-prompts** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供大量的提示詞，但缺乏結構化的模板系統，適合需要快速生成單一圖像的場景。 | 專注於生成角色圖像，功能較為專一，適合遊戲開發者，而本專案則更廣泛適用於各類圖像生成。 |
-> | 遷移成本 | - | low，因為兩者都使用類似的提示詞結構。 | medium，因為需要調整生成的提示詞以符合不同的需求。 |
-> | 適用場景 | 主要場景 | 如果你的需求是快速生成單一圖像而不需要模板系統，則這個選擇更 | 如果你的專案主要集中在角色設計上，則這個工具會更合適。 |
+> | 技術路線 | 本專案 | 專注於遊戲開發場景，提供專門的圖像生成工具。 | 提供大量的圖像生成提示，但缺乏結構化的模板系統。 |
+> | 遷移成本 | - | medium，因為需要重新調整生成邏輯以適應遊戲需求。 | low，因為使用方式相似，容易上手。 |
+> | 適用場景 | 主要場景 | 如果你的團隊專注於遊戲開發，並需要針對遊戲場景生成圖像。 | 如果你只需要簡單的圖像生成提示，而不需要複雜的結構化功能。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人side project試用，不建議用在生產環境的核心路徑上。
+> 適合小型團隊進行實驗和開發，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 模板不夠靈活，可能無法滿足特定需求
-  - 解法：根據實際情況進行調整
-- [MEDIUM] 社群活躍度尚在建立階段，可能存在未解決的問題
-  - 解法：定期檢查GitHub上的issues以獲取最新狀況
+- **[HIGH]** 使用 Google 登入時可能會遇到驗證問題
+  - 解法：確保使用最新的瀏覽器版本，並清除緩存。
+- [MEDIUM] 在某些環境下可能無法正確生成圖像
+  - 解法：檢查網路連接並確保 API 可用。
+- [MEDIUM] 依賴於外部 API，可能會導致延遲
+  - 解法：在高流量時段避免使用，或考慮本地化部署。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10人以下的新創公司後端API | 適合 | 提供的模板和案例能夠快速滿足小型團隊的需求。 |
-| 大型企業的生產環境 | 不適合 | 目前處於alpha階段，穩定性不足。 |
-| 設計團隊的內部工具 | 非常適合 | 能夠提高圖像生成的效率，符合團隊需求。 |
-| 需要高頻率生成圖像的商業應用 | 普通 | 雖然有模板，但可能需要進一步調整以符合具體需求。 |
+| 小型設計團隊需要快速生成產品圖像 | 非常適合 | 結構化的提示詞設計能夠快速滿足需求。 |
+| 大型企業需要穩定的圖像生成工具 | 普通 | 雖然功能強大，但可能不夠成熟。 |
+| 個人開發者偶爾需要生成圖像 | 適合 | 安裝簡單，使用方便。 |
+| 需要高頻率生成圖像的商業應用 | 不適合 | 依賴外部 API 可能會影響穩定性。 |
 
 ## 採用成本分析
 
@@ -252,12 +256,12 @@ npm run dev
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花5小時學習、3小時整合，得到高效的圖像生成工具，值得嘗試。
+> 花 5 小時學習、3 小時整合，得到高效的圖像生成能力，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：專案本身不需要高權限，且不存取敏感資料，適合在CI/CD中使用。
+> 低風險：該工具不需要高權限，僅需存取 Google 登入資料，依賴鏈的信任程度良好，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -322,66 +326,84 @@ npm run dev
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 516 |
-| Open Issues | 5 |
+| Forks | 998 |
+| Open Issues | 6 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-05-04 |
+| 最後推送 | 2026-06-10 |
 | 建立日期 | 2026-04-25 |
 | 官方網站 | [Link](https://gpt-image2.canghe.ai) |
-| Repo 大小 | 136.0 MB |
+| Repo 大小 | 181.5 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/freestylefly/awesome-gpt-image-2) |
-| Topics | `agents` `ai-image-generation` `gpt-image-2` `image-prompts` `prompt-as-code` `prompt-engineering` `workflow-automation` |
+| Topics | `agents` `ai-image-generation` `chatgpt` `gpt-image-2` `image-prompts` `prompt-as-code` `prompt-engineering` `skills` |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `@vitejs/plugin-react` `vite` `react` `react-dom` `lucide-react`
+> `@google-analytics/data` `@supabase/supabase-js` `@vitejs/plugin-react` `google-auth-library` `lucide-react` `react` `react-dom` `stripe` `vite`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
 >     "JavaScript" : 69
->     "CSS" : 31
->     "HTML" : 1
+>     "CSS" : 18
+>     "PLpgSQL" : 13
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@freestylefly](https://github.com/freestylefly) | 38 |
+> | [@freestylefly](https://github.com/freestylefly) | 131 |
+> | [@ImgBotApp](https://github.com/ImgBotApp) | 1 |
+> | [@sscodeai](https://github.com/sscodeai) | 1 |
+> | [@LengShangbai](https://github.com/LengShangbai) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚在建立階段，開發者回應速度中等。
+**社群活躍度**：社群活躍度中等，定期更新與維護。
 **連結**：[文件](https://gpt-image2.canghe.ai)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-03 ~ 2026-05-04）
-> **活躍天數** 2 天 · **最新 commit** Use representative case covers for templates
+> [!abstract] 最近 10 次 commit（2026-06-05 ~ 2026-06-10）
+> **活躍天數** 3 天 · **最新 commit** Update nav API sponsor link
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#2](https://github.com/freestylefly/awesome-gpt-image-2/issues/2) | 在线可视化展示站点 | 2 | 3 |
-> | [#4](https://github.com/freestylefly/awesome-gpt-image-2/issues/4) | 666 | 0 | 0 |
-> | [#3](https://github.com/freestylefly/awesome-gpt-image-2/issues/3) | 例 326：红蓝撞色高跟诱惑 明显和提供的提示词不一致 | 0 | 1 |
+> | [#2](https://github.com/freestylefly/awesome-gpt-image-2/issues/2) | 在线可视化展示站点 | 3 | 4 |
+> | [#4](https://github.com/freestylefly/awesome-gpt-image-2/issues/4) | 666 | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> Prompt as Code | GPT-Image2 Industrial Prompt Engine & Template Library, 370+ Reverse-Engineered Cases, 20+ Industrial Templates
+> Prompt as Code | GPT-Image2 Industrial Prompt Engine & Template Library, 400+ Reverse-Engineered Cases, 20+ Industrial Templates
 > 
 >   
 >   
 >   
 >   
+>   
 > 
->   English | 简体中文
+>   English | 简体中文 | 日本語
 > 
 > > Updated irregularly with new workflows. Stars are welcome.
 > > This project is sponsored by [Ciyuan API](https://ciyuan.today/), an AI aggregation platform for cost-effective GPT Image 2 access.
+> 
+> 
+> ### Quick Install for Agent Skills
+> 
+> Recommended for Claude Code, Codex, Cursor, and other tools supported by [`skills`](https://www.npmjs.com/package/skills):
+> 
+> ```bash
+> npx skills add freestylefly/awesome-gpt-image-2 --skill gpt-image-2-style-library --agent claude-code codex --global --yes --copy
+> ```
+> 
+> Install to every supported local agent:
+> 
+> ```bash
+> npx skills add freestylefly/awesome-gpt-image-2 --global --all --copy
+> ```
 > 
 > 
 > ## 🚀 How To Use This Repository
@@ -399,6 +421,22 @@ npm run dev
 > ## 🖼️ Featured Cases
 > 
 > 
+> ## 🌐 Visual Website
+> 
+> Use the live site at [gpt-image2.canghe.ai](https://gpt-image2.canghe.ai/) to browse the gallery as a product experience: open large previews, copy full prompts, filter by style or scenario, test generation after Google sign-in, and jump back to the source case on GitHub.
+> 
+>   
+>     
+>   
+> 
+> 
+> ## WeChat Official Account
+> 
+> Search **苍何** on WeChat or scan the QR card below. To join the GPT-Image2 community group, follow the account and reply with **gpt-image-2交流群**.
+> 
+>   
+> 
+> 
 > ## ⚡️ Project Vision
 > 
 > After GPT-Image2 became widely available, AI image generation moved from "can it make an image?" to "can it make stable, controllable, reusable images?" This project turns scattered community examples into Prompt-as-Code assets that are easier for agents and automation workflows to reuse.
@@ -414,8 +452,9 @@ npm run dev
 > 
 > - [Full case gallery](docs/gallery.md)
 > - [Gallery Part 1: cases 1-165](docs/gallery-part-1.md)
-> - [Gallery Part 2: cases 166-385](docs/gallery-part-2.md)
+> - [Gallery Part 2: cases 166-506](docs/gallery-part-2.md)
 > - [Industrial prompt templates and pitfalls guide](docs/templates.md)
+> - [Agent skill: GPT-Image2 Style Library](agents/skills/gpt-image-2-style-library/SKILL.md)
 > - [MIT License](LICENSE)
 > - [Full disclaimer](docs/disclaimer.md#section-disclaimer)
 > 
@@ -424,19 +463,19 @@ npm run dev
 > 
 >   
 >     
->       🧩 UI & Interfaces68 cases
+>       🧩 UI & Interfaces73 cases
 >       
 >       Apps, websites, dashboards, social screenshots, and product interfaces.
 >       View Cases
 >     
 >     
->       📊 Charts & Infographics56 cases
+>       📊 Charts & Infographics52 cases
 >       
 >       Infographics, knowledge maps, technical explainers, and structured diagrams.
 >       View Cases
 >     
 >     
->       📰 Posters & Typography71 cases
+>       📰 Posters & Typography80 cases
 >       
 >       Event posters, covers, type-driven visuals, and strong layout compositions.
 >       View Cases
@@ -444,19 +483,19 @@ npm run dev
 >   
 >   
 >     
->       🛍️ Products & E-commerce25 cases
+>       🛍️ Products & E-commerce38 cases
 >       
 >       Product shots, detail pages, packaging, selling points, and ads.
 >       View Cases
 >     
 >     
->       🏷️ Brand & Logos20 cases
+>       🏷️ Brand & Logos25 cases
 >       
 >       Logos, identity systems, brand touchpoints, and campaign visuals.
 >       View Cases
 >     
 >     
->       🏛️ Architecture & Spaces25 cases
+>       🏛️ Architecture & Spaces12 cases
 >       
 >       Architecture renders, interiors, city maps, and spatial concepts.
 >       View Cases
@@ -464,19 +503,19 @@ npm run dev
 >   
 >   
 >     
->       📷 Photography & Realism36 cases
+>       📷 Photography & Realism72 cases
 >       
 >       Portraits, phone photography, film texture, and commercial photography.
 >       View Cases
 >     
 >     
->       🎨 Illustration & Art25 cases
+>       🎨 Illustration & Art53 cases
 >       
 >       Illustration, art styles, material experiments, and decorative images.
 >       View Cases
 >     
 >     
->       🧍 Characters & People15 cases
+>       🧍 Characters & People24 cases
 >       
 >       Character design, pose references, cards, and 3D toys.
 >       View Cases
@@ -484,19 +523,19 @@ npm run dev
 >   
 >   
 >     
->       🎬 Scenes & Storytelling8 cases
+>       🎬 Scenes & Storytelling20 cases
 >       
 >       Storyboards, narrative scenes, livestream frames, and worldbuilding.
 >       View Cases
 >     
 >     
->       🏮 History & Classical Chinese Themes9 cases
+>       🏮 History & Classical Chinese Themes16 cases
 >       
 >       Classical scrolls, historical figures, traditional themes, and poetry visuals.
 >       View Cases
 >     
 >     
->       📚 Documents & Publishing7 cases
+>       📚 Documents & Publishing10 cases
 >       
 >       White papers, manuals, encyclopedic plates, and publishing layouts.
 >       View Cases
@@ -504,7 +543,7 @@ npm run dev
 >   
 >   
 >     
->       🧪 Other Use Cases20 cases
+>       🧪 Other Use Cases28 cases
 >       
 >       Creative experiments, special tasks, mixed workflows, and practical cases.
 >       View Cases
@@ -512,13 +551,13 @@ npm run dev
 >     
 >       🖼️ Full Gallery
 >       
->       Browse all 385 cases by gallery part and category.
+>       Browse all 506 cases by gallery part and category.
 >       Open Gallery
 >     
 >     
 >       ⭐ Latest Additions
 >       
->       The newest X community cases and workflows collected in the repo.
+>       The newest community cases and workflows collected in the repo.
 >       View Latest
 >     
 >   
@@ -562,67 +601,29 @@ npm run dev
 > | 🧪 Other Use Cases | [View Prompts](docs/templates.md#tpl-other) | Mixed tasks, experimental workflows, special outputs |
 > 
 > 
-> ### Case 1: Infographic Visualization
+> ## 🤖 Agent Skill
 > 
-> [](docs/gallery-part-1.md#case-1)
+> This repository includes an agent skill for choosing GPT-Image2 styles, templates, categories, and scene tags from the same data used by the website.
 > 
-> An engineering-whitepaper-style infographic case for studying modular structure, information hierarchy, and bilingual labels.
-> [View full case](docs/gallery-part-1.md#case-1)
-> 
-> 
-> ### Case 2: Social Media Interface Screenshot
-> 
-> [](docs/gallery-part-1.md#case-2)
-> 
-> A mixed "product interface + social content screenshot" case for controlling text blocks, UI frames, and content cards.
-> [View full case](docs/gallery-part-1.md#case-2)
-> 
-> 
-> ### Case 6: Illustration Art
-> 
-> [](docs/gallery-part-1.md#case-6)
-> 
-> A Japanese fantasy illustration example for studying atmosphere, color, and large-scene composition.
-> [View full case](docs/gallery-part-1.md#case-6)
-> 
-> 
-> ### Case 17: Interaction Design Diagram
-> 
-> [](docs/gallery-part-1.md#case-17)
-> 
-> A classic "structured breakdown + explanatory layout" case for product diagrams and poster-like technical explainers.
-> [View full case](docs/gallery-part-1.md#case-17)
-> 
-> 
-> ### Case 166: Twelve Gold Saints Card Set
-> 
-> [](docs/gallery-part-2.md#case-166)
-> 
-> A multi-card, unified-style case for studying batch generation and series design.
-> [View full case](docs/gallery-part-2.md#case-166)
-> 
-> 
-> ### Case 310: Snack Brand Technical Breakdown
-> 
-> [](docs/gallery-part-2.md#case-310)
-> 
-> A strong hybrid of brand narrative, structural breakdown, and commercial presentation. Useful as an "infographic + brand visual" reference.
-> [View full case](docs/gallery-part-2.md#case-310)
-> 
-> 
-> ### Canghe Original Tests
+> Package links: [npm](https://www.npmjs.com/package/gpt-image-2-style-library) / [GitHub Packages](https://github.com/freestylefly/awesome-gpt-image-2/pkgs/npm/gpt-image-2-style-library)
 > 
 >   
->     
->       Case 330: Moonlit Livestream Scene
->       
->       A high-fidelity livestream screenshot
+> 
+> Example output from a city-life-system-map request using the style library skill.
+> 
+> 
+> ### Claude Code Plugin Marketplace
+> 
+> Run these commands inside Claude Code:
+> 
+> ```text
+> /plugin marketplace add freestyle
 
 ## 延伸閱讀
 
-相關概念：[[提示工程]] · [[AI圖像生成]] · [[工作流程自動化]]
+相關概念：[[Prompt Engineering]] · [[AI 圖像生成]] · [[工作流自動化]]
 
-相關專案：[[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[cathrynlavery--diagram-design|cathrynlavery/diagram-design]] · [[jxnxts--mcp-brasil|jxnxts/mcp-brasil]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[cathrynlavery--diagram-design|cathrynlavery/diagram-design]] · [[jxnxts--mcp-brasil|jxnxts/mcp-brasil]]
 
 [GitHub](https://github.com/freestylefly/awesome-gpt-image-2) · [官方網站](https://gpt-image2.canghe.ai)
 
@@ -664,7 +665,7 @@ npm run dev
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["提示工程","AI圖像生成","工作流程自動化"];
+> const concepts = ["Prompt Engineering","AI 圖像生成","工作流自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "freestylefly--awesome-gpt-image-2" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

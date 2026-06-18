@@ -20,7 +20,7 @@ category: "其他"
 subcategory: "健康數據管理"
 release_tag: "v4.4.0"
 install_complexity: "medium"
-status: to-review
+status: archived
 my_rating: 0
 score_confidence: 0
 score_interest: 0
