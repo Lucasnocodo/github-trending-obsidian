@@ -7,12 +7,12 @@ language: Go
 license: MIT
 description: "Shadow any website for offline viewing, with the JavaScript stripped out"
 homepage: "https://kage.tamnd.com"
-stars: 1762
-stars_per_day: 881
-forks: 50
-open_issues: 9
+stars: 1863
+stars_per_day: 621
+forks: 57
+open_issues: 7
 created: 2026-06-14
-pushed_at: 2026-06-16
+pushed_at: 2026-06-17
 first_seen: 2026-06-16
 week: "2026-W25"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "讓網站離線瀏覽，並去除所有 JavaScript 代碼。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-06-20"
+appearances: 3
+next_review: "2026-06-21"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 42
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-16"
-star_history: "2026-06-16:1546,2026-06-17:1762"
+star_history: "2026-06-16:1546,2026-06-17:1762,2026-06-18:1863"
 tags:
   - github
   - "category/其他"
@@ -875,5 +875,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-18|2026-06-18]] — 再次上榜，1.9k stars
 - [[2026-06-17|2026-06-17]] — 再次上榜，1.8k stars
 - [[2026-06-16|2026-06-16]] — 首次收錄，1.5k stars

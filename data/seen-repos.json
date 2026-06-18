@@ -2325,10 +2325,10 @@
   },
   "DietrichGebert/ponytail": {
     "first_seen": "2026-06-13",
-    "last_seen": "2026-06-17",
-    "times_seen": 5,
+    "last_seen": "2026-06-18",
+    "times_seen": 6,
     "stars_first": 939,
-    "stars_last": 25328
+    "stars_last": 31942
   },
   "SkyBlue997/enableMacosAI": {
     "first_seen": "2026-06-14",
@@ -2346,17 +2346,17 @@
   },
   "omnigent-ai/omnigent": {
     "first_seen": "2026-06-15",
-    "last_seen": "2026-06-17",
-    "times_seen": 3,
+    "last_seen": "2026-06-18",
+    "times_seen": 4,
     "stars_first": 1220,
-    "stars_last": 2826
+    "stars_last": 3526
   },
   "lenucksi/aur-malware-check": {
     "first_seen": "2026-06-15",
-    "last_seen": "2026-06-17",
-    "times_seen": 3,
+    "last_seen": "2026-06-18",
+    "times_seen": 4,
     "stars_first": 890,
-    "stars_last": 1347
+    "stars_last": 1462
   },
   "levy-street/world-of-claudecraft": {
     "first_seen": "2026-06-15",
@@ -2367,23 +2367,51 @@
   },
   "tamnd/kage": {
     "first_seen": "2026-06-16",
-    "last_seen": "2026-06-17",
-    "times_seen": 2,
+    "last_seen": "2026-06-18",
+    "times_seen": 3,
     "stars_first": 1546,
-    "stars_last": 1762
+    "stars_last": 1863
   },
   "EEliberto/IPA-Download": {
     "first_seen": "2026-06-17",
-    "last_seen": "2026-06-17",
-    "times_seen": 1,
+    "last_seen": "2026-06-18",
+    "times_seen": 2,
     "stars_first": 831,
-    "stars_last": 831
+    "stars_last": 1012
   },
   "loc567/loc567": {
     "first_seen": "2026-06-17",
-    "last_seen": "2026-06-17",
-    "times_seen": 1,
+    "last_seen": "2026-06-18",
+    "times_seen": 2,
     "stars_first": 781,
-    "stars_last": 781
+    "stars_last": 1007
+  },
+  "orange2ai/renwei-writing": {
+    "first_seen": "2026-06-18",
+    "last_seen": "2026-06-18",
+    "times_seen": 1,
+    "stars_first": 769,
+    "stars_last": 769
+  },
+  "nolangz/pixel2motion": {
+    "first_seen": "2026-06-18",
+    "last_seen": "2026-06-18",
+    "times_seen": 1,
+    "stars_first": 718,
+    "stars_last": 718
+  },
+  "vercel/eve": {
+    "first_seen": "2026-06-18",
+    "last_seen": "2026-06-18",
+    "times_seen": 1,
+    "stars_first": 693,
+    "stars_last": 693
+  },
+  "joeseesun/qiaomu-goal-meta-skill": {
+    "first_seen": "2026-06-18",
+    "last_seen": "2026-06-18",
+    "times_seen": 1,
+    "stars_first": 648,
+    "stars_last": 648
   }
 }
