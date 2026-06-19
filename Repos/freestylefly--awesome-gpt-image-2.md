@@ -7,17 +7,17 @@ language: JavaScript
 license: MIT
 description: "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中"
 homepage: "https://gpt-image2.canghe.ai"
-stars: 7667
-stars_per_day: 145
-forks: 998
+stars: 7701
+stars_per_day: 143
+forks: 1001
 open_issues: 6
 created: 2026-04-25
-pushed_at: 2026-06-10
+pushed_at: 2026-06-18
 first_seen: 2026-04-28
 week: "2026-W18"
 month: "2026-04"
 category: "AI/ML"
-subcategory: "提示工程"
+subcategory: "圖像生成"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-04-28
-use_case: "提供工業級的提示詞引擎與模板庫，幫助用戶生成可重用的 AI 圖像生成提示。"
+use_case: "提供工業級的提示詞引擎與模板庫，幫助用戶生成高品質的 AI 圖像。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 5
 next_review: "2026-05-05"
 contributor_count: 4
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 185850
+issue_close_rate: 14
+repo_size_kb: 186465
 readme_length: 9936
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-04-28"
-star_history: "2026-04-28:1274,2026-04-29:1716,2026-04-30:2149,2026-05-01:2562,2026-05-02:2989,2026-05-04:3434,2026-05-05:3664,2026-06-18:7667"
+star_history: "2026-04-28:1274,2026-04-29:1716,2026-04-30:2149,2026-05-01:2562,2026-05-02:2989,2026-05-04:3434,2026-05-05:3664,2026-06-18:7667,2026-06-19:7701"
 tags:
   - github
   - "category/ai_ml"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "awesome-gpt-image-2"
   - "freestylefly/awesome-gpt-image-2"
-  - "提供工業級的提示詞引擎與模板庫，幫助用戶生成可重用的 AI 圖像生成提示。"
+  - "提供工業級的提示詞引擎與模板庫，幫助用戶生成高品質的 AI 圖像。"
 ---
 
 # awesome-gpt-image-2
 
-**7.7k** stars · **145** stars/天 · 建立 53 天前 · JavaScript · MIT
+**7.7k** stars · **143** stars/天 · 建立 54 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/freestylefly--awesome-gpt-image-2");
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `agents` `ai-image-generation` `chatgpt` `gpt-image-2` `image-prompts` `prompt-as-code` `prompt-engineering` `skills` `workflow-automation`
 
 > [!summary] 一句話摘要
-> 提供工業級的提示詞引擎與模板庫，幫助用戶生成可重用的 AI 圖像生成提示。
+> 提供工業級的提示詞引擎與模板庫，幫助用戶生成高品質的 AI 圖像。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Growing · **熱度** Hot (145 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 7 天前) · **貢獻者** 4+ 人 · **參與度** Medium
-> **適合** 需要生成高品質 AI 圖像但缺乏設計經驗的開發者和設計師。
-> **一句話重點** 這個專案不僅提供了生成圖像的工具，更重要的是它讓用戶能夠以結構化的方式重用提示詞，提升了生成的效率和穩定性。
+> **安裝難度** Easy · **專案狀態** Growing · **熱度** Hot (143 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Medium
+> **適合** 需要在 AI 圖像生成中尋求高效、可重用解決方案的設計師和開發者。
+> **一句話重點** 這個專案不僅是工具，更是提升 AI 圖像生成效率的全新工作流。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/freestylefly--awesome-gpt-image-2");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "提示工程" && p.file.name !== "freestylefly--awesome-gpt-image-2" && p.status !== "archived")
+>     .where(p => p.subcategory === "圖像生成" && p.file.name !== "freestylefly--awesome-gpt-image-2" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,100 +103,100 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 提示工程 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 圖像生成 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習、3 小時整合，得到高效的圖像生成能力，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，3 小時整合，得到高效的圖像生成工具，值得投資。
 
 > [!abstract] 核心創新
-> 將提示詞轉化為結構化的代碼資產，便於重用和自動化。
+> 將提示詞轉化為可重用的結構化格式，提升生成圖像的效率和可控性。
 
 ## 專案簡介
 
-這個專案的核心機制是將提示詞結構化，使得用戶可以更容易地生成穩定且可重用的 AI 圖像。用戶可以從 400 多個逆向工程的案例中選擇，然後根據需求填入變數，最終生成所需的圖像。關鍵指令包括 `npx skills add freestylefly/awesome-gpt-image-2 --skill gpt-image-2-style-library`，這能快速將技能安裝到支持的本地代理中。這個工具的賣點在於將散落的社群範例轉化為可重用的 Prompt-as-Code 資產，特別適合需要批量生成或自動化工作流的場景。技術上，它使用 JavaScript 和 Vite 作為前端框架，並整合了 Google Analytics 和 Supabase 進行數據追蹤和後端支持。
+這個專案的核心在於將提示詞轉化為可重用的結構化格式，讓用戶能夠更有效率地生成 AI 圖像。用戶可以從 400 多個逆向工程的案例中選擇，並利用 20 多個工業級模板來生成所需的圖像。使用者只需透過簡單的指令，如 `npx skills add freestylefly/awesome-gpt-image-2 --skill gpt-image-2-style-library`，即可將技能安裝到支持的本地代理中。這個工具的設計考量了工作流的友好性，特別適合自動化系統和腳本使用，並且能夠提升對圖像生成的控制力。專案使用 JavaScript 和 Vite 作為主要技術棧，並依賴於多個現代庫，如 React 和 Supabase，這使得整體架構相對輕量。
 
-這樣的選擇使得專案在性能上相對輕量，並且易於擴展。與其他工具相比，如 `0x0funky/agent-sprite-forge` 和 `EvoLinkAI/awesome-gpt-image-2-prompts`，這個專案提供了更為結構化的提示詞模板，並且專注於工業級的應用場景，讓用戶能夠更精確地控制生成的圖像內容。使用者在實際操作中可能會遇到的問題包括依賴於 Google 登入進行生成，這可能會影響某些用戶的使用體驗。這個專案目前處於穩定階段，適合中小型團隊進行實驗和開發，未來可能會進一步擴展到更多的模板和案例。對於需要快速生成高質量圖像的設計師或開發者，這是一個值得考慮的工具，但對於只需偶爾生成圖像的用戶，可能會覺得學習曲線稍陡。
+與其他類似工具相比，如 `0x0funky/agent-sprite-forge` 和 `EvoLinkAI/awesome-gpt-image-2-prompts`，本專案提供了更為結構化的提示詞設計，並且更注重於可重用性和自動化的整合。使用者在實際應用中可能會遇到的限制包括需要一定的技術背景來充分利用其功能，並且在使用過程中可能需要處理一些 API 限制。這個專案目前處於活躍開發階段，未來可能會持續更新和擴展功能，特別是在模板和案例的數量上。對於需要批量生成圖像或希望在商業環境中使用 AI 圖像生成的團隊來說，這是一個值得考慮的選擇。
 
-**技術棧**：`JavaScript` · `CSS` · `PLpgSQL` · `HTML` · `Vite`
+**技術棧**：`JavaScript` · `Vite` · `React`
 
 ## 重點功能
 
-- 400+ 逆向工程案例 — 提供多樣化的圖像生成範例，幫助用戶快速找到靈感。
-- 20+ 工業級模板 — 讓用戶能夠填入變數生成特定需求的圖像。
-- Prompt-as-Code 結構 — 將提示詞轉化為可重用的代碼，便於自動化工作流。
-- 支持多種代理 — 兼容 Claude Code、Codex 等多個工具，提升靈活性。
-- 即時生成測試 — 用戶可在網站上直接測試生成效果，提升使用體驗。
+- 400+ 逆向工程案例 — 提供多種實際應用的提示詞範例，幫助用戶快速上手。
+- 20+ 工業級模板 — 用戶可直接使用或修改模板來滿足特定需求。
+- 結構化提示詞 — 將提示詞分解為可組合的部分，提升生成圖像的可控性。
+- 支持多種代理 — 兼容 Claude Code、Codex 等多種工具，方便整合。
+- 即時生成 — 用戶可在瀏覽器中直接測試生成效果，提升使用體驗。
 
 ## 快速開始
 
-1. 安裝技能到全局代理
+1. 安裝技能庫
 ```bash
-npx skills add freestylefly/awesome-gpt-image-2 --global --all --copy
+npx skills add freestylefly/awesome-gpt-image-2 --skill gpt-image-2-style-library --agent claude-code codex --global --yes --copy
 ```
-2. 選擇案例並複製結構
+2. 選擇案例
 ```bash
-無
+訪問 gpt-image2.canghe.ai 瀏覽案例
 ```
-3. 填入業務變數生成圖像
+3. 生成圖像
 ```bash
-無
+使用選定的模板和案例填寫變數
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 53 天內累積 7667 stars（145/天），forks 998（13.0%），這顯示出強勁的社群關注度。專案的主要貢獻者包括多位活躍的開發者，顯示出穩定的維護能力。這個工具解決了以往生成圖像時缺乏結構化提示的問題，讓用戶可以更有效率地生成所需的圖像。最近的推廣活動和社群互動也可能促進了其快速增長。技術上，專案的設計使得它能夠輕鬆整合到現有的 AI 工作流中，這是其受歡迎的原因之一。
+> 建立 54 天內累積 7701 stars（143/天），forks 1001（13%），顯示出強勁的社群參與度。專案的主要貢獻者包括多位在 AI 和開源領域活躍的開發者，這為專案的發展提供了穩定的支持。它解決了許多用戶在生成 AI 圖像時面臨的可重用性和控制力不足的問題，之前用戶通常需要手動調整提示詞，效率低下。這個專案的出現恰好填補了這一空白，並且其設計理念也與當前 AI 圖像生成技術的發展趨勢相符。社群中的討論和反饋也促進了專案的快速迭代和改進。
 
 ## 適合誰使用
 
-**目標受眾**：需要生成高品質 AI 圖像但缺乏設計經驗的開發者和設計師。
+**目標受眾**：需要在 AI 圖像生成中尋求高效、可重用解決方案的設計師和開發者。
 
 > [!example] 使用場景
-> - 設計師用它來快速生成產品展示圖，因為可以從 400+ 個案例中找到靈感並快速調整參數。
-> - 開發者用它來在 CI/CD 流程中自動生成圖像，因為其結構化的提示詞讓批量生成變得簡單。
-> - 內容創作者用它來製作社交媒體圖像，因為可以直接從模板中提取樣式，節省設計時間。
+> - 設計師用它來生成社交媒體的視覺內容，因為可以快速從模板中選擇並調整，節省了 50% 的設計時間。
+> - 產品經理用它來創建產品展示圖，因為它提供了多種模板和案例，讓他們能夠更快地實現產品概念。
+> - 開發者用它來自動化生成報告中的圖像，因為其結構化的提示詞設計使得批量生成變得簡單高效。
 
 ## 架構分析
 
-這個專案採用模組化的架構設計，主要使用 JavaScript 和 Vite 來構建前端。資料流方面，使用者可以從案例中選擇並複製結構，然後填入變數生成圖像。這樣的設計使得用戶能夠快速上手，並且降低了生成圖像的門檻。
+這個專案採用模組化設計，將提示詞結構化為可重用的模板，便於用戶在不同場景中使用。資料流從用戶輸入的提示詞開始，經過模板解析和生成過程，最終輸出所需的圖像。這樣的設計使得用戶能夠快速調整和重用提示詞，提升了工作效率。
 
-選擇 Vite 作為構建工具，因為它提供了快速的開發體驗和即時反饋，這對於需要頻繁調整的設計工作流非常重要。這個架構的代價在於對 JavaScript 環境的依賴，對於不熟悉此語言的用戶可能會增加學習成本。整體來說，這個架構適合中小型團隊進行快速開發，但在擴展性上可能會受到限制，特別是在需要處理大量資料時。
+選擇 JavaScript 和 Vite 作為技術棧，因為它們能夠快速構建和部署前端應用，並且有良好的社群支持。這種架構的代價在於需要用戶具備一定的技術背景來進行自定義和擴展。整體來說，這個架構在可擴展性上表現良好，能夠隨著用戶需求的變化而進行調整。
 
 ## 技術深入分析
 
-該專案的核心技術機制是將提示詞結構化，這樣用戶可以更容易地生成所需的圖像。它使用 JavaScript 和 Vite 作為主要技術棧，這使得開發過程中能夠快速迭代和測試。專案的設計考慮到了用戶的需求，提供了多種模板和案例，讓用戶能夠根據自己的需求進行調整。效能上，該專案能夠快速響應用戶的請求，並且在生成圖像時保持較低的延遲。選擇 Vite 作為構建工具，因為它能夠提供即時的反饋和快速的開發體驗，這對於需要頻繁調整的設計工作流非常重要。技術風險方面，依賴於外部 API 可能會導致穩定性問題，特別是在高流量時期。整合方面，該專案能夠輕鬆融入現有的 AI 工作流中，並且與主流的開發工具有良好的相容性，這使得它在實際應用中非常方便。
+這個專案的核心技術機制在於將提示詞結構化為可重用的模板，這樣的設計使得用戶能夠更靈活地生成所需的圖像。使用 JavaScript 和 Vite 作為主要技術棧，這使得專案在性能和開發效率上都有良好的表現。專案能夠處理多種圖像生成需求，並且能夠在不同的場景中進行快速調整。選擇這些技術的好處在於其社群支持和生態系統的豐富性，然而，這也帶來了一定的學習成本。技術風險方面，隨著用戶需求的增長，可能會面臨性能瓶頸，特別是在高並發的情況下。整合方面，這個工具能夠與多種現有的開發環境和工具鏈相容，並且支持 CI/CD 流程的集成，這使得團隊能夠更有效地使用這個工具。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝指導和使用範例，讓新手能夠快速上手。安裝過程相對順暢，但需要注意 Google 登入的要求。文件中有多語言支持，這對於不同語言的用戶非常友好。
+> README 文件提供了清晰的安裝指導和使用範例，讓新手能夠快速上手。安裝過程相對簡單，無需複雜的配置。文件中有多語言支持，增加了可讀性和易用性。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供大量的逆向工程案例，幫助用戶快速找到靈感。
-> - 結構化的提示詞設計，便於重用和自動化。
-> - 支持多種代理，提升靈活性和適用性。
+> - 結構化的提示詞設計，提升生成圖像的可控性。
+> - 豐富的案例和模板，幫助用戶快速上手。
+> - 良好的社群支持和持續更新，確保工具的實用性。
 
 > [!danger] 缺點
-> - 需要 Google 登入進行生成，可能影響使用體驗。
-> - 對於非 JavaScript 用戶的學習曲線較陡。
-> - 依賴外部 API，可能會影響穩定性。
+> - 需要一定的技術背景來充分利用其功能。
+> - 生成的圖像可能不符合預期，需要手動調整提示詞。
+> - 對於非技術用戶來說，學習曲線可能較陡。
 
 > [!warning] 注意事項
-> - 需要 Google 登入以測試生成圖像。
-> - 目前僅支持 JavaScript 環境，對其他語言支持有限。
-> - 依賴於外部 API，可能會受到服務器穩定性的影響。
+> - 需要一定的技術背景來充分利用其功能。
+> - 在某些情況下，生成的圖像可能不符合預期，需要手動調整提示詞。
+> - 依賴於外部 API，可能會受到調用限制。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的代理技能，但更專注於遊戲開發場景，適合需要圖像生成的遊戲開發者。 |
-| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 專注於圖像生成的提示詞，但缺乏結構化的模板系統，對於需要批量生成的用戶不夠友好。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建角色和場景的生成，與本專案的圖像生成範疇有所不同，適合遊戲開發者。 |
+| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 提供更多的提示詞範例，但缺乏結構化的模板設計，適合需要靈感的用戶。 |
 
 ## 替代方案決策
 
@@ -204,16 +204,16 @@ npx skills add freestylefly/awesome-gpt-image-2 --global --all --copy
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發場景，提供專門的圖像生成工具。 | 如果你的團隊專注於遊戲開發，並需要針對遊戲場景生成圖像。 | medium，因為需要重新調整生成邏輯以適應遊戲需求。 |
-| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 提供大量的圖像生成提示，但缺乏結構化的模板系統。 | 如果你只需要簡單的圖像生成提示，而不需要複雜的結構化功能。 | low，因為使用方式相似，容易上手。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色和場景生成，使用不同的提示詞設計方法，適合遊戲開發者。 | 如果你的專案需要專注於角色設計或遊戲場景生成，這個工具會更合適。 | medium，因為需要重新學習提示詞結構。 |
+| [EvoLinkAI/awesome-gpt-image-2-prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts) | 提供大量提示詞範例，但缺乏結構化的模板設計，適合需要靈感的用戶。 | 如果你需要靈感或範例而不需要結構化的提示詞，這個工具會更合適。 | low，因為提示詞的使用方式相似。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **awesome-gpt-image-2** | **agent-sprite-forge** | **awesome-gpt-image-2-prompts** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於遊戲開發場景，提供專門的圖像生成工具。 | 提供大量的圖像生成提示，但缺乏結構化的模板系統。 |
-> | 遷移成本 | - | medium，因為需要重新調整生成邏輯以適應遊戲需求。 | low，因為使用方式相似，容易上手。 |
-> | 適用場景 | 主要場景 | 如果你的團隊專注於遊戲開發，並需要針對遊戲場景生成圖像。 | 如果你只需要簡單的圖像生成提示，而不需要複雜的結構化功能。 |
+> | 技術路線 | 本專案 | 專注於角色和場景生成，使用不同的提示詞設計方法，適合遊戲開發者。 | 提供大量提示詞範例，但缺乏結構化的模板設計，適合需要靈感的用戶。 |
+> | 遷移成本 | - | medium，因為需要重新學習提示詞結構。 | low，因為提示詞的使用方式相似。 |
+> | 適用場景 | 主要場景 | 如果你的專案需要專注於角色設計或遊戲場景生成，這個工具會更合 | 如果你需要靈感或範例而不需要結構化的提示詞，這個工具會更合適 |
 
 ## 成熟度評估
 
@@ -224,27 +224,27 @@ npx skills add freestylefly/awesome-gpt-image-2 --global --all --copy
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合小型團隊進行實驗和開發，但不建議用於生產環境的核心路徑上。
+> 適合小型專案和個人使用，不建議用於生產環境的核心應用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 使用 Google 登入時可能會遇到驗證問題
-  - 解法：確保使用最新的瀏覽器版本，並清除緩存。
-- [MEDIUM] 在某些環境下可能無法正確生成圖像
-  - 解法：檢查網路連接並確保 API 可用。
-- [MEDIUM] 依賴於外部 API，可能會導致延遲
-  - 解法：在高流量時段避免使用，或考慮本地化部署。
+- **[HIGH]** 在某些情況下，生成的圖像可能不符合預期，特別是對於複雜的提示詞。
+  - 解法：需要手動調整提示詞以獲得更好的結果。
+- [MEDIUM] 安裝過程中可能會遇到依賴問題，特別是在不同的環境中。
+  - 解法：確保所有依賴都已正確安裝，並參考官方文檔。
+- [MEDIUM] 對於非技術用戶來說，學習曲線可能較陡。
+  - 解法：建議提供更多的範例和教學資源。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型設計團隊需要快速生成產品圖像 | 非常適合 | 結構化的提示詞設計能夠快速滿足需求。 |
-| 大型企業需要穩定的圖像生成工具 | 普通 | 雖然功能強大，但可能不夠成熟。 |
-| 個人開發者偶爾需要生成圖像 | 適合 | 安裝簡單，使用方便。 |
-| 需要高頻率生成圖像的商業應用 | 不適合 | 依賴外部 API 可能會影響穩定性。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 結構化的提示詞設計能夠提升開發效率，快速生成所需圖像。 |
+| 大型企業的圖像生成需求 | 普通 | 雖然功能強大，但可能需要更多的定制和調整。 |
+| 個人開發者的創意項目 | 非常適合 | 簡單易用的模板和案例能夠快速實現創意。 |
+| 需要高並發的商業應用 | 不適合 | 可能面臨性能瓶頸，需考慮其他解決方案。 |
 
 ## 採用成本分析
 
@@ -252,16 +252,16 @@ npx skills add freestylefly/awesome-gpt-image-2 --global --all --copy
 | --- | --- |
 | 學習時間 | ~5 小時 |
 | 整合時間 | ~3 小時 |
-| 維護負擔 | low |
-| 綁定風險 | medium |
+| 維護負擔 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習、3 小時整合，得到高效的圖像生成能力，值得投入。
+> 花 5 小時學習，3 小時整合，得到高效的圖像生成工具，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，僅需存取 Google 登入資料，依賴鏈的信任程度良好，適合在 CI/CD 中使用。
+> 低風險：專案本身不需要高權限，且不存取敏感資料。依賴鏈的信任程度良好，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -326,13 +326,13 @@ npx skills add freestylefly/awesome-gpt-image-2 --global --all --copy
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 998 |
+| Forks | 1.0k |
 | Open Issues | 6 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-06-10 |
+| Issue 解決率 | 14% (1 closed) |
+| 最後推送 | 2026-06-18 |
 | 建立日期 | 2026-04-25 |
 | 官方網站 | [Link](https://gpt-image2.canghe.ai) |
-| Repo 大小 | 181.5 MB |
+| Repo 大小 | 182.1 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/freestylefly/awesome-gpt-image-2) |
 | Topics | `agents` `ai-image-generation` `chatgpt` `gpt-image-2` `image-prompts` `prompt-as-code` `prompt-engineering` `skills` |
 
@@ -351,20 +351,20 @@ npx skills add freestylefly/awesome-gpt-image-2 --global --all --copy
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@freestylefly](https://github.com/freestylefly) | 131 |
+> | [@freestylefly](https://github.com/freestylefly) | 132 |
 > | [@ImgBotApp](https://github.com/ImgBotApp) | 1 |
 > | [@sscodeai](https://github.com/sscodeai) | 1 |
 > | [@LengShangbai](https://github.com/LengShangbai) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，定期更新與維護。
+**社群活躍度**：社群活躍，定期更新和回應用戶反饋。
 **連結**：[文件](https://gpt-image2.canghe.ai)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-05 ~ 2026-06-10）
-> **活躍天數** 3 天 · **最新 commit** Update nav API sponsor link
+> [!abstract] 最近 10 次 commit（2026-06-06 ~ 2026-06-18）
+> **活躍天數** 3 天 · **最新 commit** Add hiapi sponsor
 
 ## 熱門議題
 
@@ -372,7 +372,7 @@ npx skills add freestylefly/awesome-gpt-image-2 --global --all --copy
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#2](https://github.com/freestylefly/awesome-gpt-image-2/issues/2) | 在线可视化展示站点 | 3 | 4 |
-> | [#4](https://github.com/freestylefly/awesome-gpt-image-2/issues/4) | 666 | 0 | 1 |
+> | [#13](https://github.com/freestylefly/awesome-gpt-image-2/issues/13) | 一个人的造假，整个社区买单（过来人的忠告） | 0 | 0 |
 
 ## README 摘錄
 
@@ -621,7 +621,7 @@ npx skills add freestylefly/awesome-gpt-image-2 --global --all --copy
 
 ## 延伸閱讀
 
-相關概念：[[Prompt Engineering]] · [[AI 圖像生成]] · [[工作流自動化]]
+相關概念：[[Prompt Engineering]] · [[AI 圖像生成]] · [[自動化工作流]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[cathrynlavery--diagram-design|cathrynlavery/diagram-design]] · [[jxnxts--mcp-brasil|jxnxts/mcp-brasil]]
 
@@ -629,11 +629,11 @@ npx skills add freestylefly/awesome-gpt-image-2 --global --all --copy
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：提示工程）
+> [!note]- 直接競品（同子分類：圖像生成）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "提示工程" AND file.name != "freestylefly--awesome-gpt-image-2"
+> WHERE subcategory = "圖像生成" AND file.name != "freestylefly--awesome-gpt-image-2"
 > SORT stars DESC
 > ```
 
@@ -665,7 +665,7 @@ npx skills add freestylefly/awesome-gpt-image-2 --global --all --copy
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["Prompt Engineering","AI 圖像生成","工作流自動化"];
+> const concepts = ["Prompt Engineering","AI 圖像生成","自動化工作流"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "freestylefly--awesome-gpt-image-2" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

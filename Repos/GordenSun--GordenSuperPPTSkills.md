@@ -7,17 +7,17 @@ language: Python
 license: N/A
 description: "AI PPT赛道终结者，史上最最最强 PPT Skill！！！  使用GPT生成豪华的图片格式PPT，然后转换为完全可编辑的PPTX文件。"
 homepage: ""
-stars: 955
-stars_per_day: 119
-forks: 91
-open_issues: 2
+stars: 1067
+stars_per_day: 97
+forks: 101
+open_issues: 1
 created: 2026-06-07
 pushed_at: 2026-06-07
 first_seen: 2026-06-10
 week: "2026-W24"
 month: "2026-06"
-category: "開發工具"
-subcategory: "自動化"
+category: "生產力"
+subcategory: "PPT 工具"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-10
-use_case: "自動生成豪華圖片格式PPT並轉換為可編輯的PPTX文件。"
+use_case: "讓 AI 自動生成豪華的 PPT，並轉換為可編輯的 PPTX 文件。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 5
 next_review: "2026-06-21"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: 33
+issue_close_rate: 67
 repo_size_kb: 19531
 readme_length: 2409
 bus_factor: 1
@@ -42,20 +42,20 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-10"
-star_history: "2026-06-10:614,2026-06-11:730,2026-06-12:788,2026-06-13:846,2026-06-14:885,2026-06-16:955"
+star_history: "2026-06-10:614,2026-06-11:730,2026-06-12:788,2026-06-13:846,2026-06-14:885,2026-06-16:955,2026-06-19:1067"
 tags:
   - github
-  - "category/開發工具"
+  - "category/生產力"
   - "lang/python"
 aliases:
   - "GordenSuperPPTSkills"
   - "GordenSun/GordenSuperPPTSkills"
-  - "自動生成豪華圖片格式PPT並轉換為可編輯的PPTX文件。"
+  - "讓 AI 自動生成豪華的 PPT，並轉換為可編輯的 PPTX 文件。"
 ---
 
 # GordenSuperPPTSkills
 
-**955** stars · **119** stars/天 · 建立 8 天前 · Python · 未標註授權
+**1.1k** stars · **97** stars/天 · 建立 11 天前 · Python · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/GordenSun--GordenSuperPPTSkills");
@@ -71,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> 自動生成豪華圖片格式PPT並轉換為可編輯的PPTX文件。
+> 讓 AI 自動生成豪華的 PPT，並轉換為可編輯的 PPTX 文件。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (119 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 8 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要快速生成高品質PPT但不想手動設計的專業人士。
-> **一句話重點** 這個專案的獨特之處在於其利用GPT技術實現PPT的自動生成和轉換，顯著提高了工作效率。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (97 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 11 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要快速生成和編輯 PPT 的創意團隊或個人。
+> **一句話重點** 這個專案展示了 AI 在 PPT 生成和轉換方面的潛力，能夠顯著提升工作效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/GordenSun--GordenSuperPPTSkills");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "自動化" && p.file.name !== "GordenSun--GordenSuperPPTSkills" && p.status !== "archived")
+>     .where(p => p.subcategory === "PPT 工具" && p.file.name !== "GordenSun--GordenSuperPPTSkills" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,163 +95,104 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 PPT 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
-> **結論** 花 3 小時學習，2 小時整合，得到高效的PPT生成和轉換功能，值得投入。
+> **安裝** Medium (需設定)
 
 > [!abstract] 核心創新
-> 核心使用GPT的生圖能力和視覺解析能力，實現高質量PPT的自動生成和轉換。
+> 本專案利用 GPT 的生圖能力和視覺解析能力，實現高效的 PPT 生成和轉換。
 
 ## 專案簡介
 
-GordenSuperPPTSkills 是一個專為生成和轉換PPT而設計的工具，核心流程包括三個獨立技能：GordenImagePPTGen 用於生成圖片格式的PPT，GordenImage2PPTX 將圖片轉換為可編輯的PPTX，而 GordenSuperPPTSkill 則是將前兩者串聯起來的整合方案。用戶只需提供主題或內容，便可生成高質量的圖片PPT，或將現有的圖片PPT轉換為可編輯格式。這樣的設計使得用戶可以根據需求選擇最合適的技能，提供了靈活性和高效性。技術上，該工具依賴於 Python 及其相關庫（如 python-pptx 和 pillow），並利用 GPT 的生成和解析能力來處理圖片和文本。這種方法的優勢在於能夠生成視覺效果極佳的PPT，並且保持可編輯性，這是許多傳統工具無法做到的。
+Gorden Super PPT Skills 是一個專注於生成和轉換 PPT 的工具，核心流程分為三個技能：生成圖片格式的 PPT、將圖片轉換為可編輯的 PPTX，以及整合這兩者的全流程。用戶只需提供主題或內容，工具便能生成高質量的圖片格式 PPT，然後將其轉換為可編輯的 PPTX，這一過程完全依賴 GPT 的生成和解析能力。關鍵指令包括使用 GordenImagePPTGen 生成 PPT 和 GordenImage2PPTX 進行轉換，這樣的設計使得用戶可以靈活選擇所需的功能。技術上，該工具使用 Python 實現，並依賴 GPT 的生圖和視覺解析能力，這樣的選擇使得生成的 PPT 在視覺效果上更具吸引力。
 
-與其他工具相比，如 PowerPoint 或 Google Slides，這個專案的優勢在於其自動化程度和生成的內容質量，特別適合需要快速生成高品質PPT的用戶。使用過程中，對於圖片轉換的資源消耗需謹慎考量，因為每張圖片的轉換會消耗一定的計算資源。這個專案目前仍在快速發展中，未來可能會增加更多功能或優化現有流程。對於小型團隊或個人使用者，這個工具能顯著提高工作效率，尤其是在需要大量製作PPT的情境下。
+與其他 PPT 工具相比，如 Canva 或 PowerPoint，Gorden Super PPT Skills 提供了更強的自動化和生成能力，尤其在需要快速生成大量 PPT 時表現突出。實際使用中，轉換圖片為可編輯 PPTX 的過程可能會消耗較多的計算資源，特別是對於高解析度的圖片。這個工具目前處於 alpha 階段，適合對 AI 生成內容有需求的團隊，尤其是需要快速製作演示文稿的創意團隊。未來幾個月，隨著 GPT 技術的進步，該工具的功能可能會進一步增強，特別是在生成質量和轉換效率上。
 
-**技術棧**：`Python` · `python-pptx` · `pillow` · `numpy`
+**技術棧**：`Python`
 
 ## 重點功能
 
-- GordenImagePPTGen — 生成圖片格式的PPT，輸入主題/內容，輸出每頁 .png 和圖片型 .pptx。
-- GordenImage2PPTX — 將圖片轉換為可編輯的PPTX，支持背景、框架、圖標和文本的分層還原。
-- GordenSuperPPTSkill — 一鍵執行前兩者，無需手動操作，提升工作效率。
-- 支持高質量的圖片生成，使用 GPT 的生圖能力，確保內容的視覺效果。
-- 自包含的技能設計，方便用戶按需安裝和使用，降低學習成本。
+- GordenImagePPTGen — 生成圖片格式的 PPT，輸入主題/內容，輸出每頁 .png 和圖片型 .pptx。
+- GordenImage2PPTX — 將圖片轉換為可編輯的 PPTX 文件，支持背景、框架、圖標和文本的提取。
+- GordenSuperPPTSkill — 整合前兩者的功能，一鍵生成圖片型 PPT 並轉換為可編輯的 PPTX。
+- 高質量生成 — 利用 GPT 的生圖能力，生成豪華且信息密度高的 PPT。
+- 靈活使用 — 用戶可以根據需求選擇單獨的技能或整合使用，提升工作效率。
 
 ## 快速開始
 
-1. 安裝技能
+1. 安裝 GordenImagePPTGen
 ```bash
-cp -R GordenImagePPTGen "${CODEX_HOME:-$HOME/.codex}/skills/GordenImagePPTGen"
+cp -R GordenImagePPTGen "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
-2. 安裝第二個技能
+2. 使用 GordenImagePPTGen 生成 PPT
 ```bash
-cp -R GordenImage2PPTX "${CODEX_HOME:-$HOME/.codex}/skills/GordenImage2PPTX"
+使用GordenImagePPTGen技能，生成一个N页的PPT，内容为XXX，要求PPT要求豪华、信息密度高、排版复杂
 ```
-3. 安裝整合技能
+3. 使用 GordenImage2PPTX 轉換圖片
 ```bash
-cp -R GordenSuperPPTSkill "${CODEX_HOME:-$HOME/.codex}/skills/GordenSuperPPTSkill"
+把当前文件夹里的XXX.png，使用GordenImage2PPTX，还原成可编辑的PPT，必须严格遵循技能步骤
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 8 天內累積 955 stars（119/天），forks 91（9.5%），顯示出強勁的增長勢頭。作者 GordenSun 在 PPT 生成領域有豐富經驗，這個專案解決了傳統PPT工具在自動化和生成質量上的不足，特別是在需要快速生成高質量內容的場景中。社群對於這個工具的需求和反饋也促進了其快速發展。技術上，GPT 的進步使得這種自動化生成成為可能，並且能夠提供更高的靈活性和質量。高達 9.5% 的 forks/stars 比率顯示出許多用戶在實際修改和使用這個工具，反映出其實用性。
+> 建立 11 天就累積 1067 stars（97/天），forks 101（9.5%），這顯示出其在短時間內獲得了相當的關注。作者 GordenSun 在 AI 和自動化領域有豐富的經驗，這個工具解決了傳統 PPT 製作過程中效率低下的痛點，特別是對於需要大量視覺內容的商業演示。社群的反饋和使用情況也顯示出對於這類工具的需求正在上升，尤其是在教育和商業領域。技術上，GPT 的生成能力和視覺解析能力的進步使得這個工具的實現成為可能，這在過去是難以想像的。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成高品質PPT但不想手動設計的專業人士。
+**目標受眾**：需要快速生成和編輯 PPT 的創意團隊或個人。
 
 > [!example] 使用場景
-> - 市場行銷專員用它來快速生成產品介紹PPT，因為手動製作PPT耗時且容易出錯，這樣能節省50%的時間。
-> - 教育工作者用它來製作教學PPT，因為生成的內容信息密度高且排版美觀，能提高學生的學習興趣。
-> - 自由職業者用它來為客戶提供PPT設計服務，因為能夠在短時間內交付高質量的作品，提升專業形象。
+> - 市場行銷專員用它來快速生成產品推廣的 PPT，因為能夠自動化設計流程，節省了 50% 的時間。
+> - 教育工作者用它來製作教學簡報，因為可以輕鬆將文本內容轉換為視覺化的 PPT，提升學生的學習興趣。
+> - 自由職業者用它來為客戶提供高質量的報告，因為能夠快速生成和編輯 PPT，提升了工作效率。
 
 ## 架構分析
 
-該專案採用模組化設計，將功能拆分為三個獨立技能，這樣的設計使得用戶可以根據需求靈活選擇。每個技能都自包含，便於安裝和使用。資料流方面，GordenImagePPTGen 生成圖片後，GordenImage2PPTX 將其轉換為可編輯格式，這樣的流程確保了生成的內容質量和可編輯性。選擇這種設計的代價在於需要用戶理解每個技能的功能和使用方式，但這也提升了工具的靈活性。未來擴展性方面，這種模組化設計便於增加新功能或優化現有流程。
+Gorden Super PPT Skills 的架構由三個獨立的技能組成，分別處理不同的任務。首先，GordenImagePPTGen 負責生成圖片格式的 PPT，這一過程依賴 GPT 的生圖能力，將文本內容轉換為視覺化的圖片。接著，GordenImage2PPTX 將生成的圖片轉換為可編輯的 PPTX，這一過程涉及到對圖片的解析和內容重組。
+
+最後，GordenSuperPPTSkill 將這兩者整合，提供一鍵式的操作流程。這樣的設計使得用戶能夠根據需求靈活選擇使用的功能，並且在效率上有顯著提升。選擇 Python 作為開發語言，因為其在 AI 和數據處理方面的強大生態系統，這樣的選擇也使得未來的擴展性更強。
+
+整體架構的輕量化設計使得用戶能夠快速上手，但也可能在生成過程中面臨計算資源的挑戰。
 
 ## 技術深入分析
 
-GordenSuperPPTSkills 的核心技術機制是利用 GPT 的生成和解析能力，通過三個獨立的技能來實現PPT的生成和轉換。這些技能分別處理圖片生成和格式轉換，確保了用戶能夠獲得高質量的輸出。效能方面，該工具能夠快速生成圖片PPT，並在轉換過程中保持良好的質量，但對於資源的需求較高，特別是在處理大量圖片時。設計取捨方面，選擇 Python 作為開發語言，依賴於 python-pptx 和 pillow 這些輕量級庫，這使得整體架構相對簡單，但也限制了某些高級功能的實現。技術風險方面，隨著使用者數量的增加，可能會面臨性能瓶頸，特別是在高並發的情況下。整合分析方面，該工具能夠與現有的PPT製作流程無縫對接，但對於非Codex環境的支持仍需改進。
+Gorden Super PPT Skills 的核心技術機制是基於 GPT 的生圖和視覺解析能力，這使得它能夠從文本生成高質量的圖片格式 PPT。具體來說，GordenImagePPTGen 使用 GPT 模型生成每一頁的圖片，並將其保存為 PNG 格式，這一過程中涉及到對內容的理解和視覺化的設計。接著，GordenImage2PPTX 解析這些圖片，提取背景、框架、圖標和文本，並將其重組為可編輯的 PPTX 文件。這一過程需要大量的計算資源，特別是在處理高解析度圖片時，可能會影響轉換的速度和效率。
+
+設計上選擇 Python 是因為其在 AI 和數據處理方面的強大生態系統，這使得未來的擴展性更強。依賴於 GPT 的生成能力，這個工具的效能和效果在很大程度上取決於模型的性能和配置。隨著技術的進步，未來可能會出現更高效的生成和轉換算法，進一步提升使用體驗。整合方面，這個工具可以與其他 AI 生成工具搭配使用，但目前僅限於 Codex 環境，這限制了其在更廣泛的開發環境中的應用。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的使用說明和安裝步驟，對於新手來說易於理解。安裝過程相對順暢，但需注意資源消耗的問題。文件中沒有多語言支持，僅提供英文說明，可能對非英語使用者造成一定困難。
+> README 文件清晰，提供了使用範例和安裝指令。安裝過程相對順暢，但僅限於 Codex 使用，這可能對新手造成一定的困難。文件缺乏多語言支持，可能影響非中文用戶的理解。整體而言，花 30 分鐘能夠基本上手並運行。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動生成高質量PPT，節省時間和精力。
-> - 模組化設計，靈活性高，適合不同需求。
-> - 支持圖片轉換為可編輯格式，提升使用價值。
+> - 自動化生成高質量的 PPT，節省時間。
+> - 靈活的功能選擇，適應不同需求。
+> - 依賴 GPT 的最新技術，生成效果出色。
 
 > [!danger] 缺點
-> - 僅限於Codex使用，限制了使用場景。
-> - 圖片轉換過程資源消耗高，可能影響使用體驗。
-> - 對於非圖片格式的PPT不支持，功能範圍有限。
+> - 僅限於 Codex 使用，限制了使用範圍。
+> - 轉換過程消耗計算資源，可能影響效率。
+> - 生成的內容可能需要手動調整以達到最佳效果。
 
 > [!warning] 注意事項
-> - 僅限於Codex使用，無法在其他環境中運行。
-> - 圖片轉可編輯PPTX文件過程中，資源消耗較高，需謹慎使用。
-> - 目前僅支持圖片格式的PPT轉換，對於其他格式不支持。
+> - 僅限於 Codex 使用，無法在其他環境運行。
+> - 轉換圖片為可編輯 PPTX 文件的過程消耗較多的計算資源。
+> - 生成的 PPT 可能需要手動調整以達到最佳效果。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [GordenSun/GordenPPTSkill](https://github.com/GordenSun/GordenPPTSkill) | 這個專案專注於生成PPT，而 GordenSuperPPTSkills 提供了更完整的轉換功能，能將圖片轉為可編輯格式。 |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具主要用於生成圖像，並不專注於PPT的生成和編輯，適合不同的使用場景。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 這個專案提供了多種AI代理，但不專注於PPT生成，適合需要多功能AI的用戶。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| [GordenSun/GordenPPTSkill](https://github.com/GordenSun/GordenPPTSkill) | 專注於生成PPT，而本專案提供了圖片轉換功能，能夠滿足更廣泛的需求。 | 如果只需要生成PPT而不需要轉換功能，則選擇此工具更為合適。 | low，因為兩者的使用方式相似，僅需調整功能選擇。 |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 主要用於生成圖像，並不專注於PPT的生成，適合不同的使用場景。 | 如果需要生成多種格式的圖像而非專注於PPT，則選擇此工具。 | medium，因為需要重新調整工作流程以適應不同的工具。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **GordenSuperPPTSkills** | **GordenPPTSkill** | **agent-sprite-forge** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於生成PPT，而本專案提供了圖片轉換功能，能夠滿足更廣泛的需求。 | 主要用於生成圖像，並不專注於PPT的生成，適合不同的使用場景。 |
-> | 遷移成本 | - | low，因為兩者的使用方式相似，僅需調整功能選擇。 | medium，因為需要重新調整工作流程以適應不同的工具。 |
-> | 適用場景 | 主要場景 | 如果只需要生成PPT而不需要轉換功能，則選擇此工具更為合適。 | 如果需要生成多種格式的圖像而非專注於PPT，則選擇此工具。 |
-
-## 成熟度評估
-
-| 項目 | 評估 |
-| --- | --- |
-| 開發階段 | Alpha |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | high |
-
-> [!tip] 採用建議
-> 適合個人試用或小型專案，但不建議用於生產環境的核心路徑上。
-
-## 已知陷阱
-
-> [!bug] 踩坑才知道的問題
-
-- **[HIGH]** 轉換過程中可能出現資源消耗過高的情況，導致性能下降。
-  - 解法：建議在資源充足的環境中運行，或分批處理圖片。
-- [MEDIUM] 僅限於Codex使用，無法在其他環境中運行。
-  - 解法：在Codex環境中進行測試和使用。
-- [MEDIUM] 對於非圖片格式的PPT不支持，功能範圍有限。
-  - 解法：考慮使用其他工具來處理非圖片格式的需求。
-
-## 使用情境適合度
-
-| 情境 | 適合度 | 說明 |
-| --- | --- | --- |
-| 需要快速生成高質量PPT的市場行銷團隊 | 非常適合 | 能夠自動生成並轉換PPT，顯著提高效率。 |
-| 教育機構需要製作教學PPT | 適合 | 生成的內容信息密度高，能夠吸引學生注意。 |
-| 自由職業者需要為客戶提供PPT設計服務 | 普通 | 雖然能快速生成PPT，但對於特定需求的靈活性不足。 |
-
-## 採用成本分析
-
-| 項目 | 評估 |
-| --- | --- |
-| 學習時間 | ~3 小時 |
-| 整合時間 | ~2 小時 |
-| 維護負擔 | medium |
-| 綁定風險 | medium |
-
-> [!tip] 投入 vs 回報
-> 花 3 小時學習，2 小時整合，得到高效的PPT生成和轉換功能，值得投入。
-
-## 安全性評估
-
-> [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，且不存取敏感資料，但需注意依賴庫的安全性。
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供了類似的自動化生成能力，但專注於不同的內容類型，適合需要多樣化內容的用戶。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於多代理協作，適合需要多角色互動的場景，而本專案專注於 PPT 的生成和轉換。 |
+| [BigPizzaV3/CodexPlusPlus](https://github.com/BigPizzaV3/CodexPlusPlus) | 提供了更廣泛的 AI 生成工具，但不專注於 PPT 的特定需求，適合需要多功能的用戶。 |
 
 ## 健康度儀表板
 
@@ -316,9 +257,9 @@ GordenSuperPPTSkills 的核心技術機制是利用 GPT 的生成和解析能力
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 91 |
-| Open Issues | 2 |
-| Issue 解決率 | 33% (1 closed) |
+| Forks | 101 |
+| Open Issues | 1 |
+| Issue 解決率 | 67% (2 closed) |
 | 最後推送 | 2026-06-07 |
 | 建立日期 | 2026-06-07 |
 | Repo 大小 | 19.1 MB |
@@ -331,19 +272,12 @@ GordenSuperPPTSkills 的核心技術機制是利用 GPT 的生成和解析能力
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放問題數量少，回應速度尚可。
+**社群活躍度**：社群活躍度中等，解決率 67%。
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-06-07 ~ 2026-06-07）
 > **活躍天數** 1 天 · **最新 commit** Update README.md
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#3](https://github.com/GordenSun/GordenSuperPPTSkills/issues/3) | 🤖 Code Audit: 8 potential issue(s) found | 0 | 0 |
 
 ## README 摘錄
 
@@ -445,19 +379,19 @@ GordenSuperPPTSkills 的核心技術機制是利用 GPT 的生成和解析能力
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[機器學習]] · [[自然語言處理]]
+相關概念：[[自動化]] · [[AI 生成]] · [[視覺解析]]
 
-相關專案：[[GordenSun--GordenPPTSkill|GordenSun/GordenPPTSkill]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[DietrichGebert--ponytail|DietrichGebert/ponytail]] · [[Fokkyp--SoftwareCopyright-Skill|Fokkyp/SoftwareCopyright-Skill]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[GordenSun--GordenPPTSkill|GordenSun/GordenPPTSkill]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[DietrichGebert--ponytail|DietrichGebert/ponytail]] · [[Fokkyp--SoftwareCopyright-Skill|Fokkyp/SoftwareCopyright-Skill]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]]
 
 [GitHub](https://github.com/GordenSun/GordenSuperPPTSkills)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：自動化）
+> [!note]- 直接競品（同子分類：PPT 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "自動化" AND file.name != "GordenSun--GordenSuperPPTSkills"
+> WHERE subcategory = "PPT 工具" AND file.name != "GordenSun--GordenSuperPPTSkills"
 > SORT stars DESC
 > ```
 
@@ -465,7 +399,7 @@ GordenSuperPPTSkills 的核心技術機制是利用 GPT 的生成和解析能力
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "GordenSun--GordenSuperPPTSkills"
+> WHERE category = "生產力" AND file.name != "GordenSun--GordenSuperPPTSkills"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -489,7 +423,7 @@ GordenSuperPPTSkills 的核心技術機制是利用 GPT 的生成和解析能力
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","機器學習","自然語言處理"];
+> const concepts = ["自動化","AI 生成","視覺解析"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "GordenSun--GordenSuperPPTSkills" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

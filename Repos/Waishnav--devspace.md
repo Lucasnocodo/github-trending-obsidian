@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "Turn ChatGPT into Codex"
 homepage: ""
-stars: 870
-stars_per_day: 218
-forks: 80
+stars: 876
+stars_per_day: 219
+forks: 82
 open_issues: 9
 created: 2026-06-14
 pushed_at: 2026-06-17
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-19
-use_case: "讓 ChatGPT 直接在本地專案中讀取、編輯和執行代碼，無需上傳到第三方。"
+use_case: "讓 ChatGPT 直接在本地專案中讀寫程式碼，無需上傳到第三方。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-19"
-star_history: "2026-06-19:870"
+star_history: "2026-06-19:870,2026-06-19:876"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "devspace"
   - "Waishnav/devspace"
-  - "讓 ChatGPT 直接在本地專案中讀取、編輯和執行代碼，無需上傳到第三方。"
+  - "讓 ChatGPT 直接在本地專案中讀寫程式碼，無需上傳到第三方。"
 ---
 
 # devspace
 
-**870** stars · **218** stars/天 · 建立 4 天前 · TypeScript · MIT
+**876** stars · **219** stars/天 · 建立 4 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Waishnav--devspace");
@@ -71,13 +71,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `v1.0.0`
 
 > [!summary] 一句話摘要
-> 讓 ChatGPT 直接在本地專案中讀取、編輯和執行代碼，無需上傳到第三方。
+> 讓 ChatGPT 直接在本地專案中讀寫程式碼，無需上傳到第三方。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (218 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (219 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在本地環境中安全使用 ChatGPT 進行代碼編輯和執行的開發者。
-> **一句話重點** DevSpace 讓 ChatGPT 成為開發者的本地編碼助手，提升了開發效率和安全性。
+> **適合** 需要在本地環境中安全地使用 ChatGPT 進行編碼的開發者。
+> **一句話重點** DevSpace 讓 ChatGPT 能夠在本地專案中安全地進行編碼，這在隱私和安全性方面提供了全新的解決方案。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -100,39 +100,39 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到安全的本地開發環境，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學、3 小時整合，得到安全的本地編碼環境，值得嘗試。
 
 > [!abstract] 核心創新
-> DevSpace 是一個自托管的 MCP 伺服器，讓 ChatGPT 可以在本地專案中直接執行代碼，無需上傳至雲端。
+> DevSpace 提供了一個安全的本地編碼環境，讓 ChatGPT 能夠直接與本地專案互動。
 
 ## 專案簡介
 
-DevSpace 是一個自托管的 MCP 伺服器，允許 ChatGPT 在本地專案中進行代碼的讀取、編輯和執行，無需將任何資料上傳至第三方伺服器。用戶可以透過 `devspace init` 和 `devspace serve` 指令來啟動伺服器，並設置允許的本地專案資料夾和 HTTPS 隧道。這樣的設計使得開發者能夠在安全的環境中使用 ChatGPT 進行代碼操作，並且能夠利用 ChatGPT 的自然語言處理能力來進行代碼的搜索和修改。DevSpace 支援多種平台，包括 Linux、macOS 和 Windows，並且可以使用 Git 進行版本控制，這樣的設計使得它非常適合需要在本地環境中進行開發的團隊。與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，DevSpace 提供了更強大的本地操作能力，因為它不僅支持代碼編輯，還能執行 shell 命令和使用 Git 工作樹進行並行編碼會話。
+DevSpace 是一個自我托管的 MCP 伺服器，讓 ChatGPT 能夠在本地專案中進行讀取、編輯、搜索和執行程式碼。用戶只需在本機運行 DevSpace，並透過安全的隧道連接，確保不會將任何資料上傳到第三方。安裝後，使用 `devspace init` 和 `devspace serve` 指令來初始化和啟動伺服器，並設定允許的本地專案資料夾與 HTTPS 基本 URL。這樣，ChatGPT 就能在經過授權的工作空間中進行檔案操作、執行 shell 命令以及使用 Git 工作樹進行平行編碼。這個工具的賣點在於它提供了一個安全的環境，讓 ChatGPT 能夠直接與本地檔案互動，而不需要擔心資料洩漏。技術上，DevSpace 使用 Node.js 作為伺服器環境，並依賴多個庫來實現功能，如 Express 和 React。
 
-這樣的功能使得開發者能夠在一個環境中完成多個任務，提升了工作效率。使用 DevSpace 時，開發者需要注意其安全性，因為它允許 ChatGPT 直接訪問本地文件系統，這意味著需要謹慎設置允許的資料夾和密碼保護。這個專案目前處於穩定的 alpha 階段，適合希望將 ChatGPT 整合到本地開發流程中的團隊，特別是那些需要快速迭代和測試的開發者。未來幾個月，隨著功能的增強和社群的擴展，DevSpace 有潛力成為開發者日常工作流中不可或缺的工具。
+與其他類似工具相比，DevSpace 提供了更高的安全性，因為它不需要將資料上傳到雲端，而是直接在本地環境中操作。這使得它特別適合需要保護敏感資料的開發者。使用者可能會遇到的問題包括需要配置 HTTPS 隧道和管理授權密碼，這些都需要一定的技術知識。這個專案目前處於 v1.0.0 的初始階段，未來可能會增加更多功能和改進。對於小型團隊或個人開發者來說，這是一個值得考慮的工具，尤其是在需要與 ChatGPT 進行深度整合的情況下。
 
-**技術棧**：`TypeScript` · `Node.js >=20.12 <27` · `Express`
+**技術棧**：`Node.js >=20.12 <27` · `Express` · `React`
 
 ## 重點功能
 
-- 安全的本地編碼環境 — 允許 ChatGPT 在本地專案中讀取和編輯代碼，無需上傳至雲端。
-- 支持多平台 — 可在 Linux、macOS 和 Windows 上運行，並支持 Git 進行版本控制。
-- 隧道連接 — 使用 HTTPS 隧道連接，確保數據傳輸的安全性。
-- Git 工作樹支持 — 允許在獨立的工作樹中進行並行編碼會話，提升開發靈活性。
-- 自然語言指令 — ChatGPT 能夠理解和執行自然語言指令，簡化開發流程。
+- 安全的本地編碼環境 — 讓 ChatGPT 在不上傳資料的情況下直接操作本地專案。
+- 支援多種命令 — 包括讀取、寫入、編輯檔案及執行 shell 命令。
+- Git 工作樹模式 — 允許用戶在隔離的環境中進行平行編碼。
+- 自定義工具命名和設定 — 用戶可以根據需求調整工具的行為和名稱。
+- 跨平台支援 — 在 Linux、macOS 和 Windows 環境中運行。
 
 ## 快速開始
 
-1. 全局安裝 DevSpace CLI
+1. 安裝 DevSpace CLI
 ```bash
 npm install -g @waishnav/devspace
 ```
-2. 初始化 DevSpace 伺服器
+2. 初始化伺服器
 ```bash
 devspace init
 ```
-3. 啟動 DevSpace 伺服器
+3. 啟動伺服器
 ```bash
 devspace serve
 ```
@@ -141,65 +141,63 @@ devspace serve
 
 ```ts
 {
-  "前置條件": "已安裝 DevSpace CLI",
-  "指令": "devspace serve",
-  "預期輸出": "DevSpace 伺服器啟動，並顯示可用的本地端點。"
+  "前置條件": "已安裝 Node.js 和 DevSpace CLI",
+  "指令": "devspace init\n devspace serve",
+  "預期輸出": "伺服器啟動並等待連接"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 870 stars（217.5/天），forks 80（9.2%），顯示出相對活躍的社群參與。作者 Waishnav 過去創建了 GitCMS，這是一個基於 Git 的內容管理系統，顯示了他在開發工具方面的專業知識。DevSpace 解決了開發者在使用 ChatGPT 進行代碼編輯時的安全性問題，因為它允許在本地環境中進行操作，而不是將代碼上傳至雲端。這樣的設計在目前的開發生態中是相對少見的，特別是在需要保護敏感資料的情況下。社群對於這個工具的需求和興趣也在快速增長，特別是在開發者尋求更安全的 AI 整合方案時。
+> 建立 4 天就累積 876 stars（219/天），forks 82（9.4%），顯示出強勁的增長潛力。作者 Waishnav 之前創建過 GitCMS，這次推出 DevSpace 是針對開發者在使用 ChatGPT 進行編碼時的需求，提供了一個安全的本地環境。這個工具解決了開發者在使用 AI 助手時的隱私問題，讓他們能夠直接在本地專案中進行操作，而不必擔心資料外洩。社群的反應也表明，許多人對於這種安全的編碼工作流感到興趣，這可能是其快速增長的原因之一。
 
 ## 適合誰使用
 
-**目標受眾**：需要在本地環境中安全使用 ChatGPT 進行代碼編輯和執行的開發者。
+**目標受眾**：需要在本地環境中安全地使用 ChatGPT 進行編碼的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來在本地專案中直接編輯代碼，因為這樣可以避免將敏感資料上傳至雲端，並且能夠利用 ChatGPT 的智能提示功能。
-> - 全端開發者用它來快速測試和執行代碼片段，因為它支持直接在本地運行 shell 命令，提升了開發效率。
-> - DevOps 工程師用它來管理和監控本地服務，因為它能夠透過 ChatGPT 進行即時的代碼檢查和問題排查。
+> - 後端工程師用它來在本地專案中直接編輯程式碼，因為這樣可以避免將敏感資料上傳到雲端。
+> - 全端開發者用它來快速測試和執行 shell 命令，因為可以在 ChatGPT 的幫助下進行即時調試。
+> - 新手開發者用它來學習如何在本地環境中使用 ChatGPT 進行編碼，因為提供了安全的實驗環境。
 
 ## 架構分析
 
-DevSpace 採用自托管的 MCP 伺服器架構，這樣的設計使得開發者能夠在本地環境中安全地使用 ChatGPT。資料流方面，使用者透過 HTTPS 隧道連接到 DevSpace 伺服器，並獲得對指定資料夾的訪問權限。這樣的設計使得使用者能夠在不暴露敏感資料的情況下，利用 ChatGPT 進行代碼操作。
-
-選擇 MCP 協議的原因在於其能夠提供安全的遠程訪問，而不需要將資料上傳至雲端。這樣的選擇雖然增加了設置的複雜性，但卻大幅提升了安全性。擴展性方面，DevSpace 能夠支持多種平台，並且能夠與 Git 進行整合，這使得它在大型專案中也能保持良好的性能。
+DevSpace 的架構是基於 Node.js 的伺服器，並使用 Express 框架來處理 HTTP 請求。這種設計使得伺服器能夠快速響應來自 MCP 客戶端的請求，並提供必要的檔案操作功能。資料流方面，當用戶啟動伺服器並連接隧道後，ChatGPT 可以通過指定的端點與本地檔案系統進行互動。選擇 Node.js 作為伺服器環境的好處在於其非同步處理能力，但這也意味著需要一定的資源來維持伺服器的運行。擴展性方面，隨著用戶數量的增加，伺服器的性能可能會受到影響，特別是在高並發的情況下。
 
 ## 技術深入分析
 
-DevSpace 的核心技術機制是基於 MCP 協議的自托管伺服器，這使得開發者能夠在本地環境中安全地使用 ChatGPT 進行代碼操作。它使用 Node.js 和 Express 框架來構建伺服器，並且支持多種平台，包括 Linux、macOS 和 Windows。效能方面，DevSpace 能夠處理多個並行的代碼編輯請求，並且支持 Git 工作樹進行版本控制，這樣的設計使得它在大型專案中能夠保持良好的性能。選擇 Node.js 作為後端語言的原因在於其非同步處理能力，這使得伺服器能夠高效地處理多個請求。依賴樹方面，DevSpace 使用了多個輕量級的依賴，這樣的設計使得整體架構保持輕量，並且降低了潛在的安全風險。技術風險方面，DevSpace 需要依賴 HTTPS 隧道來確保數據的安全性，這在某些情況下可能會成為性能瓶頸。整合方面，DevSpace 能夠與主流的 CI/CD 工具進行整合，但在某些情況下可能需要額外的配置。
+DevSpace 的核心技術機制是基於 Node.js 和 Express 框架，這使得它能夠快速處理來自 MCP 客戶端的請求。伺服器的設計考慮到了安全性，使用者可以設定哪些本地資料夾可以被 ChatGPT 存取，並透過密碼保護連接。效能方面，DevSpace 能夠處理多個並發請求，但隨著使用者數量增加，伺服器的響應時間可能會受到影響。選擇 Node.js 的好處在於其非同步處理能力和豐富的生態系統，但這也可能導致在高負載情況下出現性能瓶頸。技術風險方面，若未妥善管理隧道和密碼，可能會導致安全漏洞。與主流框架的整合難度相對較低，但對於新手來說，學習曲線仍然存在。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和使用步驟；安裝過程相對順暢，但新手可能需要一些時間來理解 HTTPS 隧道的設置；有良好的入門指南和文檔支持；文件主要為英文，缺乏多語言支持。
+> README 文件清晰且包含安裝步驟和範例，安裝過程相對順暢，但對於新手來說可能需要額外的學習時間。文件目前僅提供英文版本，缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供安全的本地編碼環境，避免敏感資料上傳至雲端。
-> - 支持多平台，能夠在不同操作系統上運行。
-> - 集成 Git 工作樹功能，提升開發靈活性。
+> - 提供安全的本地環境，無需上傳資料。
+> - 支援多種編碼和測試命令，提升開發效率。
+> - 允許使用 Git 工作樹進行平行開發，方便團隊協作。
 
 > [!danger] 缺點
-> - 安裝和設置過程對新手來說可能較為複雜。
-> - 目前不支援 Windows 的某些終端，限制了使用範圍。
-> - 需要手動設置 HTTPS 隧道，增加了使用的門檻。
+> - 安裝和配置過程對新手來說可能較為複雜。
+> - 目前不支援某些 Windows 環境，限制了使用者範圍。
+> - 需要額外配置 HTTPS 隧道，增加了初期設置的難度。
 
 > [!warning] 注意事項
-> - 僅支援 Node 版本 >=20.12 <27。
-> - 目前不支援 Windows PowerShell 或 cmd.exe，需使用 Git Bash 或 WSL。
-> - 需要手動設置 HTTPS 隧道，對於新手可能有一定的學習曲線。
+> - 需要 Node.js 版本在 20.12 到 27 之間。
+> - 目前不支援 Windows PowerShell 或 cmd.exe，必須使用 Git Bash 或 WSL。
+> - 需要配置 HTTPS 隧道，對於新手可能有一定的學習曲線。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的本地編碼環境，但不支持 Git 工作樹功能，適合簡單的代碼編輯。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於代碼片段的管理，缺乏 DevSpace 的完整工作流集成。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 提供 API 接口，但不具備本地操作的能力，適合需要遠程調用的場景。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的編碼助手功能，但不專注於本地環境的安全性。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 AI 助手的整合，但缺乏 DevSpace 的本地檔案操作能力。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 提供 Codex 風格的編碼體驗，但不具備 DevSpace 的安全隧道功能。 |
 
 ## 替代方案決策
 
@@ -207,17 +205,16 @@ DevSpace 的核心技術機制是基於 MCP 協議的自托管伺服器，這使
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供本地編碼環境，但不支持 Git 工作樹功能，適合簡單的代碼編輯。 | 如果只需要基本的代碼編輯功能，而不需要複雜的版本控制。 | low，因為功能相似，遷移成本較低。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於代碼片段的管理，缺乏 DevSpace 的完整工作流集成。 | 如果需要專注於代碼片段的管理，而不需要完整的編碼環境。 | medium，因為需要調整工作流以適應新的工具。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 提供 API 接口，但不具備本地操作的能力，適合需要遠程調用的場景。 | 如果需要遠程調用功能，而不需要本地代碼編輯。 | high，因為需要重新設計整個工作流。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的編碼助手功能，但不專注於本地環境的安全性。 | 如果需要更靈活的雲端整合，而不太在意資料安全問題。 | medium，因為需要重新配置雲端環境。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 AI 助手的整合，但缺乏 DevSpace 的本地檔案操作能力。 | 如果需要更強大的 AI 整合功能，但不需要本地操作。 | low，因為可以直接使用現有的雲端服務。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **devspace** | **agent-sprite-forge** | **boneyard** | **codex-shim** |
-> | --- | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供本地編碼環境，但不支持 Git 工作樹功能，適合簡單的代碼編輯。 | 專注於代碼片段的管理，缺乏 DevSpace 的完整工作流集成。 | 提供 API 接口，但不具備本地操作的能力，適合需要遠程調用的場景。 |
-> | 遷移成本 | - | low，因為功能相似，遷移成本較低。 | medium，因為需要調整工作流以適應新的工具。 | high，因為需要重新設計整個工作流。 |
-> | 適用場景 | 主要場景 | 如果只需要基本的代碼編輯功能，而不需要複雜的版本控制。 | 如果需要專注於代碼片段的管理，而不需要完整的編碼環境。 | 如果需要遠程調用功能，而不需要本地代碼編輯。 |
+> | 維度 | **devspace** | **agent-sprite-forge** | **boneyard** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 提供類似的編碼助手功能，但不專注於本地環境的安全性。 | 專注於 AI 助手的整合，但缺乏 DevSpace 的本地檔案操作能力。 |
+> | 遷移成本 | - | medium，因為需要重新配置雲端環境。 | low，因為可以直接使用現有的雲端服務。 |
+> | 適用場景 | 主要場景 | 如果需要更靈活的雲端整合，而不太在意資料安全問題。 | 如果需要更強大的 AI 整合功能，但不需要本地操作。 |
 
 ## 成熟度評估
 
@@ -228,27 +225,26 @@ DevSpace 的核心技術機制是基於 MCP 協議的自托管伺服器，這使
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人側項目試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Windows PowerShell 中無法啟動 DevSpace，需使用 Git Bash 或 WSL。
-  - 解法：使用 Git Bash 或 WSL 來啟動 DevSpace。
-- [MEDIUM] HTTPS 隧道設置不當可能導致連接失敗。
-  - 解法：確保隧道設置正確，並使用正確的公網 URL。
-- [MEDIUM] 初次設置時可能會遇到權限問題。
-  - 解法：確保以管理員身份運行命令，並檢查資料夾權限。
+- **[HIGH]** 需要配置 HTTPS 隧道，對於新手來說可能有困難
+  - 解法：參考官方文檔中的隧道設置指南
+- [MEDIUM] 安裝過程中可能會遇到 Node.js 版本不兼容的問題
+  - 解法：確保使用推薦的 Node.js 版本
+- [MEDIUM] 在 Windows 環境下，僅支援 Git Bash，其他終端可能無法正常運行
+  - 解法：使用 Git Bash 或 WSL 進行安裝
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠安全地在本地環境中進行開發，並利用 ChatGPT 的智能提示。 |
-| 大型企業的開發團隊 | 普通 | 雖然功能強大，但設置過程可能對新手不友好。 |
-| 個人開發者的 side project | 非常適合 | 能夠快速搭建並測試代碼，提升開發效率。 |
-| 需要高安全性的金融科技公司 | 不適合 | 目前仍在 alpha 階段，穩定性和安全性尚未完全驗證。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 提供安全的本地環境，適合處理敏感資料. |
+| 大型企業的開發團隊 | 普通 | 需要更高的安全性和穩定性，可能不適合 alpha 階段的工具. |
+| 個人開發者的側項目 | 非常適合 | 能夠快速實現 ChatGPT 的編碼輔助功能. |
 
 ## 採用成本分析
 
@@ -257,15 +253,15 @@ DevSpace 的核心技術機制是基於 MCP 協議的自托管伺服器，這使
 | 學習時間 | ~5 小時 |
 | 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到安全的本地開發環境，值得一試。
+> 花 5 小時學、3 小時整合，得到安全的本地編碼環境，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：需要本地權限來訪問文件系統，且需妥善管理 Owner 密碼以防止未經授權的訪問。依賴 HTTPS 隧道來確保數據安全，需確保隧道設置正確。
+> 低風險：工具本身不需要高權限，僅需配置 HTTPS 隧道，並且不會存取敏感資料。依賴鏈的信任程度高，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -330,7 +326,7 @@ DevSpace 的核心技術機制是基於 MCP 協議的自托管伺服器，這使
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 80 |
+| Forks | 82 |
 | Open Issues | 9 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-06-17 |
@@ -371,7 +367,7 @@ DevSpace 的核心技術機制是基於 MCP 協議的自托管伺服器，這使
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者積極回應 Issues。
+**社群活躍度**：社群活躍度中等，開放問題尚未解決。
 **連結**：[文件](https://github.com/Waishnav/devspace/docs)
 
 ## 開發動態
@@ -565,7 +561,7 @@ DevSpace 的核心技術機制是基於 MCP 協議的自托管伺服器，這使
 
 ## 延伸閱讀
 
-相關概念：[[MCP Protocol]] · [[CLI/TUI]] · [[自動化]]
+相關概念：[[CLI/TUI]] · [[自動化]] · [[安全漏洞]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[DietrichGebert--ponytail|DietrichGebert/ponytail]] · [[Fokkyp--SoftwareCopyright-Skill|Fokkyp/SoftwareCopyright-Skill]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]]
 
@@ -609,7 +605,7 @@ DevSpace 的核心技術機制是基於 MCP 協議的自托管伺服器，這使
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["MCP Protocol","CLI/TUI","自動化"];
+> const concepts = ["CLI/TUI","自動化","安全漏洞"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Waishnav--devspace" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
