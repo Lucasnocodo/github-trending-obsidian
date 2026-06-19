@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "AI logo animation skill: turn raster logos into smooth SVG animation, animated HTML demos, GIF/video previews, and motion QA evidence."
 homepage: "https://nolangz.github.io/pixel2motion/"
-stars: 718
-stars_per_day: 144
-forks: 68
+stars: 798
+stars_per_day: 133
+forks: 73
 open_issues: 4
 created: 2026-06-12
-pushed_at: 2026-06-13
+pushed_at: 2026-06-18
 first_seen: 2026-06-18
 week: "2026-W25"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "將光柵 logo 轉換為平滑的 SVG 動畫，並生成互動式 HTM
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-25"
+appearances: 2
+next_review: "2026-06-26"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-18"
-star_history: "2026-06-18:718"
+star_history: "2026-06-18:718,2026-06-19:798"
 tags:
   - github
   - "category/開發工具"
@@ -889,4 +889,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-19|2026-06-19]] — 再次上榜，798 stars
 - [[2026-06-18|2026-06-18]] — 首次收錄，718 stars

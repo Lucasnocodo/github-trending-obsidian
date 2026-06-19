@@ -1,23 +1,23 @@
 ---
-repo: lenucksi/aur-malware-check
-url: https://github.com/lenucksi/aur-malware-check
-owner: lenucksi
+repo: alchaincyf/loop-engineering-orange-book
+url: https://github.com/alchaincyf/loop-engineering-orange-book
+owner: alchaincyf
 owner_type: User
-language: Shell
-license: N/A
-description: "Detection tools for the June 2026 atomic-lockfile AUR supply-chain attack. Consolidated from community Gists."
+language: N/A
+license: NOASSERTION
+description: "别再问我什么是 Loop Engineering — 橙皮书系列。A plain-language guide to loop engineering (中文 + English PDF). Free."
 homepage: ""
-stars: 1540
-stars_per_day: 257
-forks: 31
-open_issues: 15
-created: 2026-06-12
-pushed_at: 2026-06-16
-first_seen: 2026-06-15
+stars: 672
+stars_per_day: 224
+forks: 57
+open_issues: 0
+created: 2026-06-15
+pushed_at: 2026-06-15
+first_seen: 2026-06-19
 week: "2026-W25"
 month: "2026-06"
-category: "安全"
-subcategory: "供應鏈安全"
+category: "其他"
+subcategory: "AI 工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -25,41 +25,41 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-06-15
-use_case: "檢測 2026 年 AUR 供應鏈攻擊的惡意軟體工具。"
+last_reviewed: 2026-06-19
+use_case: "提供一個清晰的 Loop Engineering 指導，幫助開發者設計自動化系統。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
+appearances: 1
 next_review: "2026-06-22"
-contributor_count: 5
+contributor_count: 1
 engagement: "low"
-issue_close_rate: 54
-repo_size_kb: 91
-readme_length: 1348
+issue_close_rate: -1
+repo_size_kb: 5103
+readme_length: 3898
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-06-15"
-star_history: "2026-06-15:890,2026-06-16:1181,2026-06-17:1347,2026-06-18:1462,2026-06-19:1540"
+ring_history: "assess@2026-06-19"
+star_history: "2026-06-19:672"
 tags:
   - github
-  - "category/安全"
-  - "lang/shell"
+  - "category/其他"
+  - "lang/other"
   - easy_install
 aliases:
-  - "aur-malware-check"
-  - "lenucksi/aur-malware-check"
-  - "檢測 2026 年 AUR 供應鏈攻擊的惡意軟體工具。"
+  - "loop-engineering-orange-book"
+  - "alchaincyf/loop-engineering-orange-book"
+  - "提供一個清晰的 Loop Engineering 指導，幫助開發者設計自動化系統。"
 ---
 
-# aur-malware-check
+# loop-engineering-orange-book
 
-**890** stars · **445** stars/天 · 建立 2 天前 · Shell · 未標註授權
+**672** stars · **224** stars/天 · 建立 3 天前 · N/A · NOASSERTION
 
 ```dataviewjs
-const me = dv.page("Repos/lenucksi--aur-malware-check");
+const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`easy-install`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 檢測 2026 年 AUR 供應鏈攻擊的惡意軟體工具。
+> 提供一個清晰的 Loop Engineering 指導，幫助開發者設計自動化系統。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (445 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要在 AUR 環境中快速檢測惡意套件的開發者和系統管理員。
-> **一句話重點** 這個專案的價值在於其專注於 AUR 環境的供應鏈攻擊，提供了針對性的檢測工具。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (224 stars/day)
+> **授權** NOASSERTION · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 希望提升 AI 開發自動化程度的開發者和產品經理。
+> **一句話重點** 這本書不僅是理論的介紹，更是實作的指南，幫助開發者設計自動化的 AI 系統。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "供應鏈安全" && p.file.name !== "lenucksi--aur-malware-check" && p.status !== "archived")
+>     .where(p => p.subcategory === "AI 工具" && p.file.name !== "alchaincyf--loop-engineering-orange-book" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,125 +96,89 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 供應鏈安全 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 AI 工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~1h · **綁定風險** low
-> **結論** 花 1 小時學習，2 小時整合，得到快速檢測 AUR 套件的能力，值得採用。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，2 小時整合，獲得自動化設計的能力，值得一試。
 
 > [!abstract] 核心創新
-> 提供了一個集中化的檢測工具，專門針對 AUR 的供應鏈攻擊。
+> 這本書提供了一個全新的視角，幫助開發者設計能夠自主運行的 AI 系統。
 
 ## 專案簡介
 
-這個專案提供了一組工具，用於檢測和分析針對 Arch User Repository (AUR) 的 atomic-lockfile 供應鏈攻擊。使用者可以透過執行 `./aur_check-v2.sh` 指令來檢查是否有受感染的套件，或使用 `--check-bun-cache` 參數專門檢查 bun 快取中的 js-digest 和 atomic-lockfile 攻擊。這些攻擊涉及超過 1600 個 AUR 套件，攻擊者注入了惡意的 npm 和 bun 安裝指令，導致開發者憑證和 CI/CD 秘密資料的洩漏。專案的設計目的在於集中社群資源，讓使用者能夠輕鬆檢測受影響的套件，並提供簡單的指令來進行檢查，這樣的設計使得使用者不必在多個 Gist 中尋找資訊。這個工具的賣點在於其簡潔的使用方式和針對特定攻擊的專業性，能夠快速識別潛在的安全風險。
+這本《橙皮書》專注於 Loop Engineering，旨在幫助開發者設計自動化系統，讓系統能夠自主運行，而不需要開發者逐步提示。核心流程是建立一個外部系統，這個系統能夠定時啟動、生成輔助工具、驗證工作並決定後續行動。這樣的設計讓開發者能夠專注於系統的架構，而不是每次都要手動操作。書中包含九個章節，涵蓋了 Loop Engineering 的定義、實作步驟及其成本分析，並提供實際案例幫助讀者理解如何應用這些概念。這本書的賣點在於其簡單易懂的語言，適合希望提升自動化程度的開發者。
 
-技術上，這個專案主要依賴 Shell 腳本，並且在效能上能夠快速檢查大量的套件，適合任何使用 AUR 的開發者。相較於其他安全檢測工具，這個專案專注於特定的攻擊模式，提供了針對性的解決方案，適合需要快速反應的開發環境。使用者在實際操作中可能會遇到假陽性檢測的問題，特別是在某些套件上，這需要進一步的手動確認。整體來看，這是一個針對特定安全威脅的專業工具，適合對 AUR 環境有深度需求的開發者使用。
-
-**技術棧**：`Shell`
+技術上，Loop Engineering 的設計比 Harness Engineering 更進一步，後者主要聚焦於單一代理的運行，而前者則是整體系統的設計。與其他類似書籍相比，這本書不僅提供理論，還有實際的建議和步驟，讓讀者能夠立即開始實作。使用者在實作過程中可能會遇到驗證債務和認知衰退等問題，這些都是設計 Loop 時需要考量的因素。這本書的成熟度尚在初期，但對於希望在 AI 開發中提升效率的團隊來說，無疑是一本值得參考的資源。適合那些已經在使用 Claude Code 或 Codex 的開發者，並希望進一步提升自動化程度的使用者。
 
 ## 重點功能
 
-- 全面檢查 — 使用 `./aur_check-v2.sh` 指令檢查所有已安裝的 AUR 套件。
-- 專項檢查 — 使用 `--check-bun-cache` 參數專門檢查 bun 快取中的攻擊套件。
-- 比較功能 — 使用 `comm -1 -2` 指令安全地比較已安裝套件與受感染列表。
-- 社群資源整合 — 集中多個 Gist 資源，方便使用者查找和貢獻。
-- 針對性檢測 — 專注於 atomic-lockfile 和 js-digest 攻擊的檢測。
+- 簡明定義 — 清楚解釋 Loop Engineering 的概念和起源。
+- 實作指南 — 提供如何設計和實作 Loop 的具體步驟。
+- 案例分析 — 包含多個實際案例，幫助讀者理解 Loop 的應用。
+- 成本分析 — 討論在實作 Loop 時可能面臨的各種成本。
+- 雙語支持 — 提供中英文版本，方便不同語言的讀者使用。
 
 ## 快速開始
 
-1. 檢查是否有感染的套件
+1. 下載 PDF
 ```bash
-./aur_check-v2.sh
+wget https://github.com/alchaincyf/loop-engineering-orange-book/raw/main/Loop-Engineering橙皮书-v260615.pdf
 ```
-2. 檢查 bun 快取中的攻擊套件
+2. 閱讀第一部分
 ```bash
-./aur_check-v2.sh --check-bun-cache
+開啟 PDF 並閱讀第一部分以了解 Loop Engineering 的定義。
 ```
-3. 比較已安裝套件與受感染列表
+3. 實作第一個 Loop
 ```bash
-comm -1 -2
-```
-
-## 程式碼範例
-
-```bash
-{
-  "前置條件": "確保已安裝必要的 AUR 套件",
-  "指令": "./aur_check-v2.sh",
-  "預期輸出": "檢測結果顯示是否有受感染的套件"
-}
+根據書中提供的步驟開始設計你的第一個 Loop。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天就累積 890 stars（445/天），forks 23（2.6%），顯示出社群對於這個專案的高度關注。作者 lenucksi 及其團隊在安全領域有一定的經驗，這個專案解決了 AUR 社群在供應鏈攻擊後的迫切需求，提供了一個集中化的檢測工具。由於攻擊的影響範圍廣泛，這個工具的出現正好填補了社群對於快速檢測的需求。社群對於這個專案的反應也顯示出其實用性，尤其是在面對假陽性問題的討論中，進一步強化了其重要性。
+> 建立 3 天內累積 672 stars（224/天），forks 57（8.5%），顯示出強烈的社群興趣。這本書的作者 HuaShu 是知名的 AI 內容創作者，擁有超過 50 萬的追隨者，並且在 AI 工具的開發上有豐富的經驗。Loop Engineering 的概念在短時間內受到廣泛關注，因為它解決了開發者在使用 AI 代理時的痛點，特別是如何減少手動提示的需求。這本書的發表正值多位業界領袖對 Loop Engineering 的討論熱潮，進一步推動了其流行。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 AUR 環境中快速檢測惡意套件的開發者和系統管理員。
+**目標受眾**：希望提升 AI 開發自動化程度的開發者和產品經理。
 
 > [!example] 使用場景
-> - 系統管理員用它來檢查伺服器上的 AUR 套件是否受感染，因為手動檢查每個套件不僅耗時，還容易出錯。
-> - 開發者用它來快速評估新安裝的 AUR 套件是否安全，因為這樣可以在開發過程中及早發現潛在的安全風險。
-> - 安全研究人員用它來分析 AUR 環境中的攻擊模式，因為這個工具提供了針對特定攻擊的檢測能力，能夠幫助他們進行深入研究。
+> - AI 開發者用它來設計自動化的工作流，因為這樣可以減少手動干預，提高效率。
+> - 產品經理用它來理解如何優化團隊的 AI 工具使用，因為這能幫助他們更好地分配資源和時間。
+> - 教育工作者用它來教導學生如何使用 Loop Engineering 的概念，因為這樣的知識對未來的 AI 開發至關重要。
 
 ## 架構分析
 
-這個專案的架構主要基於 Shell 腳本，設計上旨在提供輕量且快速的檢測工具。使用者只需執行簡單的指令即可進行檢查，這樣的設計使得使用者能夠快速上手。資料流方面，檢測腳本會遍歷已安裝的 AUR 套件，並與已知的受感染列表進行比較。選擇 Shell 作為主要語言的原因在於其廣泛的相容性和簡單的執行方式，代價是可能在效能上不如編譯型語言。這個工具的擴展性相對有限，因為其專注於特定的攻擊模式，未來若有新的攻擊模式出現，可能需要額外的更新和維護。
+這本書的架構設計以簡單易懂為主，分為四個部分，涵蓋了 Loop Engineering 的定義、實作步驟、成本分析和實際案例。這樣的設計讓讀者能夠循序漸進地理解和實作 Loop Engineering。每個部分都針對特定主題進行深入探討，並提供實際的建議和步驟，讓讀者能夠立即開始實作。這種分層的架構設計使得內容不會過於冗長，讀者可以快速找到自己需要的資訊，並根據自己的需求進行實作。整體而言，這本書的架構設計旨在降低學習門檻，讓更多的開發者能夠輕鬆上手。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於 Shell 腳本，利用簡單的指令來檢測 AUR 套件的安全性。效能上，這些腳本能夠快速遍歷已安裝的套件，並與受感染的列表進行比較，適合處理中小型的 AUR 環境。設計上選擇 Shell 是因為其廣泛的相容性和易於使用的特性，但這也意味著在處理大量數據時可能會面臨性能瓶頸。這個工具的依賴性較低，主要依賴於基本的 Shell 環境，並不需要額外的庫或框架。技術風險方面，若未來出現新的攻擊模式，可能需要頻繁的更新和維護，以保持工具的有效性。整合方面，這個工具可以輕鬆融入到現有的 AUR 環境中，對於已經使用 AUR 的開發者來說，學習成本相對較低。
+這本書的核心技術機制在於 Loop Engineering 的概念，強調設計一個能夠自主運行的系統。這種設計模式使得開發者不再需要手動提示 AI 代理，而是通過設計外部系統來自動化這一過程。書中提到的實際案例，如 Addy Osmani 的早晨整理和 Stripe 的 Minions，展示了 Loop Engineering 在現實中的應用。這些案例不僅提供了實作的靈感，還幫助讀者理解在設計 Loop 時可能面臨的挑戰和成本。設計取捨方面，選擇 Loop Engineering 而非傳統的 Harness Engineering，能夠提高系統的自動化程度，但也需要考慮到驗證債務和認知衰退等問題。這本書的整體架構設計旨在降低學習門檻，讓讀者能夠快速上手，並在實作中獲得實際的經驗。整體而言，這本書是對 Loop Engineering 的全面介紹，適合希望提升 AI 開發效率的開發者。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了必要的使用範例。安裝過程非常順暢，只需執行簡單的指令即可開始使用。文件目前僅提供英文，缺乏多語言支持。
+> README 文件清晰，提供中英文版本，對於新手來說友好。安裝過程簡單，只需下載 PDF。雖然缺乏互動性，但內容結構合理，易於理解。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用，快速檢測 AUR 套件的安全性。
-> - 集中化的資源整合，方便使用者查找和貢獻。
-> - 針對性強，專注於特定的供應鏈攻擊。
+> - 內容簡明易懂，適合各種背景的讀者。
+> - 提供實際案例，幫助讀者理解如何應用 Loop Engineering。
+> - 雙語版本，方便不同語言的讀者使用。
 
 > [!danger] 缺點
-> - 可能出現假陽性檢測，需手動確認。
-> - 僅針對 AUR 環境，無法應用於其他 Linux 發行版。
-> - 擴展性有限，需定期更新以應對新攻擊。
+> - 缺乏互動性，僅提供靜態的 PDF 格式。
+> - 可能需要額外的背景知識，對於新手來說有一定的學習曲線。
+> - 內容更新速度可能跟不上快速變化的 AI 工具。
 
 > [!warning] 注意事項
-> - 可能會出現假陽性檢測，特別是在某些套件上。
-> - 僅針對特定的攻擊模式，無法檢測其他類型的惡意軟體。
-> - 需要在 AUR 環境中運行，無法在其他 Linux 發行版上使用。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於代理的安全性，而本專案專注於 AUR 套件的供應鏈攻擊。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具提供了更廣泛的惡意軟體檢測，而本專案專注於特定的 AUR 攻擊。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於代理的安全性，而本專案專注於 AUR 套件的供應鏈攻擊。 | 如果你的需求是針對代理的安全性進行檢測，則應選擇這個工具。 | medium，因為需要重新學習不同的指令和檢測邏輯。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具提供了更廣泛的惡意軟體檢測，而本專案專注於特定的 AUR 攻擊。 | 如果需要更全面的惡意軟體檢測能力，則應選擇這個工具。 | high，因為需要重新整合到現有的安全流程中。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **aur-malware-check** | **agent-sprite-forge** | **boneyard** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這個工具專注於代理的安全性，而本專案專注於 AUR 套件的供應鏈攻擊。 | 這個工具提供了更廣泛的惡意軟體檢測，而本專案專注於特定的 AUR 攻擊。 |
-> | 遷移成本 | - | medium，因為需要重新學習不同的指令和檢測邏輯。 | high，因為需要重新整合到現有的安全流程中。 |
-> | 適用場景 | 主要場景 | 如果你的需求是針對代理的安全性進行檢測，則應選擇這個工具。 | 如果需要更全面的惡意軟體檢測能力，則應選擇這個工具。 |
+> - 目前僅提供 PDF 格式，缺乏其他格式的支持。
+> - 內容更新速度可能跟不上 AI 工具的快速變化。
+> - 對於完全沒有 AI 背景的讀者，可能需要額外的背景知識。
 
 ## 成熟度評估
 
@@ -222,53 +186,56 @@ comm -1 -2
 | --- | --- |
 | 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人測試和學習，不建議用於生產環境的核心系統。
-
-## 已知陷阱
-
-> [!bug] 踩坑才知道的問題
-
-- **[HIGH]** 在某些情況下可能會出現假陽性檢測，特別是在常見的套件上。
-  - 解法：手動確認可疑套件的安全性。
-- [MEDIUM] 對於新出現的攻擊模式，可能需要手動更新檢測列表。
-  - 解法：定期檢查社群更新或手動添加新攻擊模式。
-- [MEDIUM] 在大型 AUR 環境中，檢查速度可能會受到影響。
-  - 解法：分批檢查套件以提高效率。
+> 適合個人學習和實驗，不建議用於生產環境的核心系統。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊的 AUR 環境 | 非常適合 | 能快速檢測受感染的套件，保護開發者的安全。 |
-| 大型企業的 AUR 環境 | 普通 | 雖然能檢測，但在大型環境中可能需要更多的資源和時間。 |
-| 對 AUR 套件的安全性有高度要求的專案 | 非常適合 | 專注於特定攻擊，能提供針對性的檢測。 |
-| 不使用 AUR 的開發環境 | 不適合 | 這個工具僅針對 AUR 環境設計，無法應用於其他環境。 |
+| 已經在使用 AI 工具的開發團隊 | 非常適合 | 這本書提供了提升自動化的具體方法和案例。 |
+| 對 AI 工具完全不熟悉的初學者 | 不適合 | 需要一定的背景知識才能理解 Loop Engineering 的概念。 |
+| 希望優化 AI 工作流的產品經理 | 適合 | 這本書提供了實用的建議，幫助他們設計更高效的工作流。 |
+| 對 Loop Engineering 有興趣的研究者 | 非常適合 | 這本書深入探討了 Loop Engineering 的理論和實作。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~1 小時 |
+| 學習時間 | ~5 小時 |
 | 整合時間 | ~2 小時 |
 | 維護負擔 | low |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 1 小時學習，2 小時整合，得到快速檢測 AUR 套件的能力，值得採用。
+> 花 5 小時學習，2 小時整合，獲得自動化設計的能力，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，並且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：本書不需要高權限，僅提供理論和實作指南，不存取敏感資料。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這本書的內容可以與現有的 AI 工具和開發流程無縫整合，特別是對於已經在使用 Claude Code 或 Codex 的開發者。在典型的工作流中，讀者可以將 Loop Engineering 的概念應用於現有的 AI 工具，提升自動化程度。舉例來說，在一個使用 Claude Code 的專案中，開發者可以根據書中的指導設計一個 Loop，讓系統自動處理日常任務。整合過程中，讀者可能需要調整現有的工作流程，以適應 Loop Engineering 的設計理念。整體而言，這本書的內容對於希望提升 AI 工具使用效率的團隊來說，是一個有價值的資源。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 Loop Engineering 出現之前，開發者主要依賴手動提示 AI 代理，這樣的方式效率低且容易出錯。隨著 AI 工具的進步，開發者開始尋求更高效的自動化解決方案。Loop Engineering 的興起正是基於這種需求，提供了一種全新的設計思路，讓開發者能夠設計出自主運行的系統。
+
+這本書代表了 AI 工具發展的一個重要趨勢，未來可能會有更多類似的資源出現，幫助開發者更好地利用 AI 技術。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -303,7 +270,7 @@ comm -1 -2
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -327,83 +294,121 @@ comm -1 -2
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 23 |
-| Open Issues | 6 |
-| Issue 解決率 | 54% (7 closed) |
-| 最後推送 | 2026-06-14 |
-| 建立日期 | 2026-06-12 |
-| Repo 大小 | 91 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/lenucksi/aur-malware-check) |
+| Forks | 57 |
+| Open Issues | 0 |
+| 最後推送 | 2026-06-15 |
+| 建立日期 | 2026-06-15 |
+| Repo 大小 | 5.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/alchaincyf/loop-engineering-orange-book) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@lenucksi](https://github.com/lenucksi) | 24 |
-> | [@Kafkacodes](https://github.com/Kafkacodes) | 4 |
-> | [@1mercdev](https://github.com/1mercdev) | 2 |
-> | [@liphiwolf](https://github.com/liphiwolf) | 2 |
-> | [@cootshk](https://github.com/cootshk) | 1 |
+> | [@alchaincyf](https://github.com/alchaincyf) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有多個 PR 和 Issue 討論。
+**社群活躍度**：社群活躍度高，持續吸引讀者關注。
+**連結**：[文件](https://www.huasheng.ai/orange-books)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-13 ~ 2026-06-14）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #18 from cootshk/master
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#20](https://github.com/lenucksi/aur-malware-check/issues/20) | 14.6. collection of attack candidates | 3 | 1 |
-> | [#13](https://github.com/lenucksi/aur-malware-check/issues/13) | A signed, machine-readable manifest? | 1 | 1 |
-> | [#22](https://github.com/lenucksi/aur-malware-check/issues/22) | [False Positive] Possible false positive detection on libgda | 0 | 2 |
+> [!abstract] 最近 10 次 commit（2026-06-15）
+> **活躍天數** 1 天 · **最新 commit** Loop Engineering Orange Book v260615
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # AUR Malware Check - June 2026 Campaign
+> **English** | [中文版 README](README_zh.md)
 > 
-> Detection and analysis tools for the **atomic-lockfile** supply-chain attack on the Arch User Repository (AUR).
+>   
 > 
-> This is a collection of all the scattered resources, especially the ones in the detection scripts Gist - they made this, I just collected this to a repo so I have it all in one place and possibly people could put up PR's instead of Gist links across multiple posts. Certainly see the source section for details on the sources!
+> # Loop Engineering: Stop Asking Me What It Is
 > 
-> > **1600+ AUR packages compromised** by attackers who injected `npm install atomic-lockfile`, `bun install js-digest`, or `lockfile-js` into PKGBUILD/install files. Two attack waves:
-> > 1. **atomic-lockfile / lockfile-js** (npm) — accounts `krisztinavarga`, `franziskaweber`, `tobiaswesterburg`, `ellenmyklebust`; `arojas` (impersonated legitimate maintainer — see Impersonation Clarification)
-> > 2. **js-digest** (bun) — accounts `custodiatovar`, `veramagalhaes`
-> >
-> > Both deliver an **infostealer** and **eBPF rootkit** targeting developer credentials, browser data, and CI/CD secrets.
+> > 橙皮书 (Orange Book) Series · by HuaShu (花叔)
 > 
-> ## Quick Start
+> A plain-language field guide to **loop engineering** — the term that blew up in a single week of June 2026, when [Peter Steinberger](https://x.com/steipete/status/2063697162748260627), Boris Cherny (head of Claude Code at Anthropic), and Google's [Addy Osmani](https://addyosmani.com/blog/loop-engineering/) all pointed at the same shift and gave it a name.
 > 
-> ```bash
-> # Check if you have any infected packages
-> ./aur_check-v2.sh
+> The one-line version: **stop being the person who prompts the agent. Design the system that does it for you.**
 > 
-> # Check bun cache specifically (for js-digest / atomic-lockfile)
-> ./aur_check-v2.sh --check-bun-cache
+>   
+>   
 > 
-> # Safe one-liner (from quantenProjects) - just compare installed vs infected list
-> comm -1 -2
+> ## Download
+> 
+> | Edition | PDF |
+> |---------|-----|
+> | 中文版 (Chinese) | **[PDF Download](https://github.com/alchaincyf/loop-engineering-orange-book/raw/main/Loop-Engineering橙皮书-v260615.pdf)** |
+> | English | **[PDF Download](https://github.com/alchaincyf/loop-engineering-orange-book/raw/main/Loop-Engineering-The-Complete-Guide-v260615.pdf)** |
+> 
+> ## What This Book Covers
+> 
+> Loop engineering sits **one floor above the harness**. If harness engineering equips a single agent run — which tools it gets, what counts as "done" — loop engineering is the outer system that runs on a timer, spawns its own helpers, verifies the work, remembers what it did, and decides what to do next. You build it once and let it poke the agents instead of you.
+> 
+> If you've read the **Harness Engineering** Orange Book, this is the next floor up. It stands on its own — you don't need the previous one.
+> 
+> **9 sections across 4 parts:**
+> 
+> | Part | Content | Sections |
+> |------|---------|----------|
+> | 1. What It Is | The definition, the one-week origin story, and the prompt → context → harness → loop stack | §01–02 |
+> | 2. How It Turns | The five moves of one loop, the six parts you build it from, and why an AI can't grade its own code | §03–05 |
+> | 3. Where It Runs, What It Costs | Three real loops (Addy's morning triage, Stripe's Minions, the scheduling reality) and the four costs — verification debt, comprehension rot, token blowout, cognitive surrender | §06–07 |
+> | 4. How You Start | Staying the engineer, and building your first loop today | §08–09 |
+> 
+>   
+>   
+> 
+> ## Who Is This For
+> 
+> - Developers already using Claude Code / Codex / Cursor who still drive the agent prompt by prompt, and want to climb one level up
+> - AI power users curious why "you shouldn't be prompting your agents anymore" went viral
+> - Anyone who read the Harness Engineering Orange Book and wants the outer loop
+> 
+> All sources are public and first-hand: Addy Osmani's founding post, Anthropic's harness-design engineering blog, Stripe's Minions, and the official Claude Code / Codex docs.
+> 
+> ## 橙皮书 (Orange Book) Series
+> 
+> Part of the 橙皮书 series — free, practical guides on AI tools. Other titles include Claude Code, Harness Engineering, Agent Skills, OpenClaw, and more.
+> 
+> All books free to download: **[huasheng.ai/orange-books](https://www.huasheng.ai/orange-books)**
+> 
+> ## About the Author
+> 
+> **HuaShu (花叔)** · AI Native Coder · Indie Developer
+> 
+> An AI content creator with 500K+ followers across platforms. Built every product — including an App Store #1 paid iOS app — entirely with AI tools, never writing a line of code by hand. Open-sourced Nuwa.skill, huashu-design, and more.
+> 
+> - X/Twitter: [@AlchainHust](https://x.com/AlchainHust)
+> - YouTube: [@Alchain](https://www.youtube.com/@Alchain)
+> - Bilibili: [花叔v](https://space.bilibili.com/14097567/)
+> - WeChat Official Account: 花叔
+> - Website: [huasheng.ai](https://www.huasheng.ai/)
+> 
+> ## Version
+> 
+> - **v260615** — First edition, written the week loop engineering emerged (June 2026), based on Addy Osmani's founding post and the official Claude Code / Codex docs.
+> - AI tools evolve fast — refer to each product's official documentation for the latest.
+> 
+> ## License
+> 
+> [MIT License](LICENSE) — free to use, copy, modify, and distribute, including commercially. Attribution appreciated but not required.
 
 ## 延伸閱讀
 
-相關概念：[[供應鏈安全]] · [[惡意軟體檢測]] · [[AUR]]
+相關概念：[[自動化]] · [[AI 工具]] · [[系統設計]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[perplexityai--bumblebee|perplexityai/bumblebee]] · [[DanOps-1--Gpt-Agreement-Payment|DanOps-1/Gpt-Agreement-Payment]] · [[DepthFirstDisclosures--Nginx-Rift|DepthFirstDisclosures/Nginx-Rift]] · [[MSNightmare--RoguePlanet|MSNightmare/RoguePlanet]] · [[Nightmare-Eclipse--RedSun|Nightmare-Eclipse/RedSun]] · [[Nightmare-Eclipse--YellowKey|Nightmare-Eclipse/YellowKey]]
+相關專案：[[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[KKKKhazix--khazix-skills|KKKKhazix/khazix-skills]] · [[XiaomiMiMo--MiMo-Code|XiaomiMiMo/MiMo-Code]]
 
-[GitHub](https://github.com/lenucksi/aur-malware-check)
+[GitHub](https://github.com/alchaincyf/loop-engineering-orange-book)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：供應鏈安全）
+> [!note]- 直接競品（同子分類：AI 工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "供應鏈安全" AND file.name != "lenucksi--aur-malware-check"
+> WHERE subcategory = "AI 工具" AND file.name != "alchaincyf--loop-engineering-orange-book"
 > SORT stars DESC
 > ```
 
@@ -411,7 +416,7 @@ comm -1 -2
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "安全" AND file.name != "lenucksi--aur-malware-check"
+> WHERE category = "其他" AND file.name != "alchaincyf--loop-engineering-orange-book"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -420,7 +425,7 @@ comm -1 -2
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Shell" AND file.name != "lenucksi--aur-malware-check" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "alchaincyf--loop-engineering-orange-book" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -429,15 +434,15 @@ comm -1 -2
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W25" AND file.name != "lenucksi--aur-malware-check"
+> WHERE week = "2026-W25" AND file.name != "alchaincyf--loop-engineering-orange-book"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["供應鏈安全","惡意軟體檢測","AUR"];
+> const concepts = ["自動化","AI 工具","系統設計"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "lenucksi--aur-malware-check" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "alchaincyf--loop-engineering-orange-book" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -450,12 +455,12 @@ comm -1 -2
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "lenucksi--aur-malware-check" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "alchaincyf--loop-engineering-orange-book" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -471,7 +476,7 @@ comm -1 -2
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "lenucksi" AND file.name != "lenucksi--aur-malware-check"
+> WHERE owner = "alchaincyf" AND file.name != "alchaincyf--loop-engineering-orange-book"
 > SORT stars DESC
 > ```
 
@@ -479,7 +484,7 @@ comm -1 -2
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -496,7 +501,7 @@ comm -1 -2
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -529,7 +534,7 @@ comm -1 -2
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -553,7 +558,7 @@ comm -1 -2
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -590,7 +595,7 @@ comm -1 -2
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/lenucksi--aur-malware-check");
+> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -673,7 +678,7 @@ comm -1 -2
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-06-15** — 首次收錄
+> **2026-06-19** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -689,8 +694,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-06-19|2026-06-19]] — 再次上榜，1.5k stars
-- [[2026-06-18|2026-06-18]] — 再次上榜，1.5k stars
-- [[2026-06-17|2026-06-17]] — 再次上榜，1.3k stars
-- [[2026-06-16|2026-06-16]] — 再次上榜，1.2k stars
-- [[2026-06-15|2026-06-15]] — 首次收錄，890 stars
+- [[2026-06-19|2026-06-19]] — 首次收錄，672 stars

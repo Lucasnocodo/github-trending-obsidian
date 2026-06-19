@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
 homepage: ""
-stars: 31942
-stars_per_day: 5324
-forks: 1443
-open_issues: 42
+stars: 36916
+stars_per_day: 5274
+forks: 1717
+open_issues: 29
 created: 2026-06-12
-pushed_at: 2026-06-17
+pushed_at: 2026-06-19
 first_seen: 2026-06-13
 week: "2026-W24"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "讓 AI 代理像最懶的資深開發者一樣思考，最好的程�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
-next_review: "2026-06-21"
+appearances: 7
+next_review: "2026-06-22"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 68
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-13"
-star_history: "2026-06-13:939,2026-06-13:940,2026-06-14:1541,2026-06-14:1548,2026-06-15:8281,2026-06-15:8304,2026-06-16:16706,2026-06-16:16748,2026-06-17:25328,2026-06-18:31942"
+star_history: "2026-06-13:939,2026-06-13:940,2026-06-14:1541,2026-06-14:1548,2026-06-15:8281,2026-06-15:8304,2026-06-16:16706,2026-06-16:16748,2026-06-17:25328,2026-06-18:31942,2026-06-19:36916"
 tags:
   - github
   - "category/開發工具"
@@ -936,6 +936,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-19|2026-06-19]] — 再次上榜，36.9k stars
 - [[2026-06-18|2026-06-18]] — 再次上榜，31.9k stars
 - [[2026-06-17|2026-06-17]] — 再次上榜，25.3k stars
 - [[2026-06-16|2026-06-16]] — 再次上榜，16.7k stars

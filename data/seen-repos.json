@@ -2325,10 +2325,10 @@
   },
   "DietrichGebert/ponytail": {
     "first_seen": "2026-06-13",
-    "last_seen": "2026-06-18",
-    "times_seen": 6,
+    "last_seen": "2026-06-19",
+    "times_seen": 7,
     "stars_first": 939,
-    "stars_last": 31942
+    "stars_last": 36916
   },
   "SkyBlue997/enableMacosAI": {
     "first_seen": "2026-06-14",
@@ -2353,10 +2353,10 @@
   },
   "lenucksi/aur-malware-check": {
     "first_seen": "2026-06-15",
-    "last_seen": "2026-06-18",
-    "times_seen": 4,
+    "last_seen": "2026-06-19",
+    "times_seen": 5,
     "stars_first": 890,
-    "stars_last": 1462
+    "stars_last": 1540
   },
   "levy-street/world-of-claudecraft": {
     "first_seen": "2026-06-15",
@@ -2367,17 +2367,17 @@
   },
   "tamnd/kage": {
     "first_seen": "2026-06-16",
-    "last_seen": "2026-06-18",
-    "times_seen": 3,
+    "last_seen": "2026-06-19",
+    "times_seen": 4,
     "stars_first": 1546,
-    "stars_last": 1863
+    "stars_last": 2010
   },
   "EEliberto/IPA-Download": {
     "first_seen": "2026-06-17",
-    "last_seen": "2026-06-18",
-    "times_seen": 2,
+    "last_seen": "2026-06-19",
+    "times_seen": 3,
     "stars_first": 831,
-    "stars_last": 1012
+    "stars_last": 1072
   },
   "loc567/loc567": {
     "first_seen": "2026-06-17",
@@ -2388,24 +2388,24 @@
   },
   "orange2ai/renwei-writing": {
     "first_seen": "2026-06-18",
-    "last_seen": "2026-06-18",
-    "times_seen": 1,
+    "last_seen": "2026-06-19",
+    "times_seen": 2,
     "stars_first": 769,
-    "stars_last": 769
+    "stars_last": 814
   },
   "nolangz/pixel2motion": {
     "first_seen": "2026-06-18",
-    "last_seen": "2026-06-18",
-    "times_seen": 1,
+    "last_seen": "2026-06-19",
+    "times_seen": 2,
     "stars_first": 718,
-    "stars_last": 718
+    "stars_last": 798
   },
   "vercel/eve": {
     "first_seen": "2026-06-18",
-    "last_seen": "2026-06-18",
-    "times_seen": 1,
+    "last_seen": "2026-06-19",
+    "times_seen": 2,
     "stars_first": 693,
-    "stars_last": 693
+    "stars_last": 1375
   },
   "joeseesun/qiaomu-goal-meta-skill": {
     "first_seen": "2026-06-18",
@@ -2413,5 +2413,26 @@
     "times_seen": 1,
     "stars_first": 648,
     "stars_last": 648
+  },
+  "Waishnav/devspace": {
+    "first_seen": "2026-06-19",
+    "last_seen": "2026-06-19",
+    "times_seen": 1,
+    "stars_first": 870,
+    "stars_last": 870
+  },
+  "alchaincyf/loop-engineering-orange-book": {
+    "first_seen": "2026-06-19",
+    "last_seen": "2026-06-19",
+    "times_seen": 1,
+    "stars_first": 672,
+    "stars_last": 672
+  },
+  "vorssaint/vorssaint-utils": {
+    "first_seen": "2026-06-19",
+    "last_seen": "2026-06-19",
+    "times_seen": 1,
+    "stars_first": 668,
+    "stars_last": 668
   }
 }

@@ -7,8 +7,8 @@ language: N/A
 license: NOASSERTION
 description: "人味儿写作 · An AI agent skill: edit people's words without erasing the person behind them"
 homepage: ""
-stars: 769
-stars_per_day: 154
+stars: 814
+stars_per_day: 136
 forks: 77
 open_issues: 0
 created: 2026-06-12
@@ -30,10 +30,10 @@ use_case: "讓 AI 編輯文字時保留人味，避免失去背後的存在感�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-25"
+appearances: 2
+next_review: "2026-06-26"
 contributor_count: 1
-engagement: "medium"
+engagement: "low"
 issue_close_rate: -1
 repo_size_kb: 25
 readme_length: 989
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-18"
-star_history: "2026-06-18:769"
+star_history: "2026-06-18:769,2026-06-19:814"
 tags:
   - github
   - "category/其他"
@@ -349,7 +349,7 @@ git clone https://github.com/orange2ai/renwei-writing.git ~/.cola/skills/renwei-
 
 相關概念：[[自然語言處理]] · [[AI 編輯]] · [[寫作輔助]]
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Jane-xiaoer--xiaoer-videolab|Jane-xiaoer/xiaoer-videolab]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Jane-xiaoer--xiaoer-videolab|Jane-xiaoer/xiaoer-videolab]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[LiuMengxuan04--shushu-internship-tool|LiuMengxuan04/shushu-internship-tool]] · [[NoopApp--noop|NoopApp/noop]]
 
 [GitHub](https://github.com/orange2ai/renwei-writing)
 
@@ -645,4 +645,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-19|2026-06-19]] — 再次上榜，814 stars
 - [[2026-06-18|2026-06-18]] — 首次收錄，769 stars
