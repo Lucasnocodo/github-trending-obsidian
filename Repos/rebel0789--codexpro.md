@@ -634,7 +634,7 @@ CodexPro 的核心技術機制是透過 MCP 協議將 ChatGPT 與本地開發環
 
 相關概念：[[MCP Protocol]] · [[本地開發]] · [[自動化測試]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
 
 [GitHub](https://github.com/rebel0789/codexpro) · [官方網站](https://rebel0789.github.io/codexpro/)
 
