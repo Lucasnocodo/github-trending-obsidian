@@ -2367,17 +2367,17 @@
   },
   "tamnd/kage": {
     "first_seen": "2026-06-16",
-    "last_seen": "2026-06-19",
-    "times_seen": 4,
+    "last_seen": "2026-06-20",
+    "times_seen": 5,
     "stars_first": 1546,
-    "stars_last": 2010
+    "stars_last": 2098
   },
   "EEliberto/IPA-Download": {
     "first_seen": "2026-06-17",
-    "last_seen": "2026-06-19",
-    "times_seen": 3,
+    "last_seen": "2026-06-20",
+    "times_seen": 4,
     "stars_first": 831,
-    "stars_last": 1072
+    "stars_last": 1117
   },
   "loc567/loc567": {
     "first_seen": "2026-06-17",
@@ -2402,10 +2402,10 @@
   },
   "vercel/eve": {
     "first_seen": "2026-06-18",
-    "last_seen": "2026-06-19",
-    "times_seen": 2,
+    "last_seen": "2026-06-20",
+    "times_seen": 3,
     "stars_first": 693,
-    "stars_last": 1375
+    "stars_last": 1646
   },
   "joeseesun/qiaomu-goal-meta-skill": {
     "first_seen": "2026-06-18",
@@ -2416,17 +2416,17 @@
   },
   "Waishnav/devspace": {
     "first_seen": "2026-06-19",
-    "last_seen": "2026-06-19",
-    "times_seen": 1,
+    "last_seen": "2026-06-20",
+    "times_seen": 2,
     "stars_first": 870,
-    "stars_last": 870
+    "stars_last": 1405
   },
   "alchaincyf/loop-engineering-orange-book": {
     "first_seen": "2026-06-19",
-    "last_seen": "2026-06-19",
-    "times_seen": 1,
+    "last_seen": "2026-06-20",
+    "times_seen": 2,
     "stars_first": 672,
-    "stars_last": 672
+    "stars_last": 702
   },
   "vorssaint/vorssaint-utils": {
     "first_seen": "2026-06-19",
@@ -2434,5 +2434,40 @@
     "times_seen": 1,
     "stars_first": 668,
     "stars_last": 668
+  },
+  "mrtooher/fable-mode": {
+    "first_seen": "2026-06-20",
+    "last_seen": "2026-06-20",
+    "times_seen": 1,
+    "stars_first": 519,
+    "stars_last": 519
+  },
+  "Plaer1/junction": {
+    "first_seen": "2026-06-20",
+    "last_seen": "2026-06-20",
+    "times_seen": 1,
+    "stars_first": 513,
+    "stars_last": 513
+  },
+  "fivetaku/fablize": {
+    "first_seen": "2026-06-20",
+    "last_seen": "2026-06-20",
+    "times_seen": 1,
+    "stars_first": 504,
+    "stars_last": 504
+  },
+  "royalbhati/sqltoerdiagram": {
+    "first_seen": "2026-06-20",
+    "last_seen": "2026-06-20",
+    "times_seen": 1,
+    "stars_first": 483,
+    "stars_last": 483
+  },
+  "rebel0789/codexpro": {
+    "first_seen": "2026-06-20",
+    "last_seen": "2026-06-20",
+    "times_seen": 1,
+    "stars_first": 446,
+    "stars_last": 446
   }
 }

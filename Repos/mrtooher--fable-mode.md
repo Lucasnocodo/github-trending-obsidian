@@ -1,65 +1,64 @@
 ---
-repo: alchaincyf/loop-engineering-orange-book
-url: https://github.com/alchaincyf/loop-engineering-orange-book
-owner: alchaincyf
+repo: mrtooher/fable-mode
+url: https://github.com/mrtooher/fable-mode
+owner: mrtooher
 owner_type: User
 language: N/A
-license: NOASSERTION
-description: "别再问我什么是 Loop Engineering — 橙皮书系列。A plain-language guide to loop engineering (中文 + English PDF). Free."
+license: N/A
+description: "A Claude skill that activates Fable-style agentic behavior: explicit multi-stage planning, sub-agent delegation, and self-verification."
 homepage: ""
-stars: 702
-stars_per_day: 176
-forks: 60
+stars: 519
+stars_per_day: 87
+forks: 58
 open_issues: 0
-created: 2026-06-15
-pushed_at: 2026-06-15
-first_seen: 2026-06-19
+created: 2026-06-13
+pushed_at: 2026-06-19
+first_seen: 2026-06-20
 week: "2026-W25"
 month: "2026-06"
-category: "其他"
-subcategory: "AI 工具"
-release_tag: ""
-install_complexity: "easy"
+category: "AI/ML"
+subcategory: "Agent 框架"
+release_tag: "v1-original"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-06-19
-use_case: "提供一個簡明易懂的 Loop Engineering 指南，幫助開發者設計自動化系統。"
-priority: high
+last_reviewed: 2026-06-20
+use_case: "讓 Claude 具備多階段計劃、子代理委派和自我驗證的能力，適合處理複雜任務。"
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-06-27"
-contributor_count: 1
-engagement: "low"
-issue_close_rate: -1
-repo_size_kb: 5103
-readme_length: 3898
+contributor_count: 3
+engagement: "medium"
+issue_close_rate: 100
+repo_size_kb: 30
+readme_length: 2716
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 3
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-06-19"
-star_history: "2026-06-19:672,2026-06-19:673,2026-06-20:702"
+ring_history: "assess@2026-06-20"
+star_history: "2026-06-20:519"
 tags:
   - github
-  - "category/其他"
+  - "category/ai_ml"
   - "lang/other"
-  - easy_install
 aliases:
-  - "loop-engineering-orange-book"
-  - "alchaincyf/loop-engineering-orange-book"
-  - "提供一個簡明易懂的 Loop Engineering 指南，幫助開發者設計自動化系統。"
+  - "fable-mode"
+  - "mrtooher/fable-mode"
+  - "讓 Claude 具備多階段計劃、子代理委派和自我驗證的能力，適合處理複雜任務。"
 ---
 
-# loop-engineering-orange-book
+# fable-mode
 
-**673** stars · **224** stars/天 · 建立 3 天前 · N/A · NOASSERTION
+**519** stars · **87** stars/天 · 建立 6 天前 · N/A · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
+const me = dv.page("Repos/mrtooher--fable-mode");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `easy-install`
+`v1-original`
 
 > [!summary] 一句話摘要
-> 提供一個簡明易懂的 Loop Engineering 指南，幫助開發者設計自動化系統。
+> 讓 Claude 具備多階段計劃、子代理委派和自我驗證的能力，適合處理複雜任務。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (224 stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 希望提升 AI 工具使用效率的開發者和團隊。
-> **一句話重點** 這本書提供了一個全新的視角，幫助開發者從手動提示轉向設計自動化系統。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (87 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Medium
+> **適合** 需要在複雜任務中強化執行流程的 AI 開發者和項目管理者。
+> **一句話重點** 這個專案展示了如何透過結構化的執行流程來提升 AI 模型在複雜任務中的表現。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
+> const me = dv.page("Repos/mrtooher--fable-mode");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "AI 工具" && p.file.name !== "alchaincyf--loop-engineering-orange-book" && p.status !== "archived")
+>     .where(p => p.subcategory === "Agent 框架" && p.file.name !== "mrtooher--fable-mode" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,98 +95,97 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 AI 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 Agent 框架 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** low
-> **結論** 花 3 小時學習，1 小時整合，得到自動化系統設計的基本概念，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~4h · **綁定風險** medium
+> **結論** 花 4 小時學、3 小時整合，得到更高的任務執行效率，值得嘗試。
 
 > [!abstract] 核心創新
-> 這本書是 Loop Engineering 概念的首個全面指南，幫助開發者設計自動化系統。
+> 這個專案的創新點在於提供了一個結構化的多階段執行流程，強化了模型在複雜任務中的執行能力。
 
 ## 專案簡介
 
-這本《橙皮書》專注於 Loop Engineering，旨在幫助開發者從手動提示轉向設計自動化系統。核心機制是建立一個能夠定時運行、生成幫手、驗證工作並決定下一步的系統，開發者只需設計一次，未來的操作由系統自動處理。這種設計理念能夠減少人為干預，提高效率，特別適合已經使用 AI 工具如 Claude Code 的開發者。書中分為四個部分，涵蓋 Loop Engineering 的定義、運作方式、實際案例及如何開始建設自己的 Loop。技術上，這本書並未深入到具體的程式碼或框架，而是提供了一個高層次的概念框架，讓開發者能夠理解如何構建這樣的系統。
+這個專案的核心在於強化 Claude 模型在處理複雜任務時的執行流程，透過多階段計劃、子代理委派和自我驗證來提升任務的質量。使用者可以透過 `fable-mode` 來啟動這個技能，模型會在執行前先進行任務分解，並在每個階段進行可失敗的驗證，最終進行自我檢討，這樣的設計能夠確保輸出結果的可靠性。這個技能不會改變模型的基本能力，而是提供一個結構化的檢查清單，幫助模型在執行時不遺漏重要步驟。具體來說，當你面對需要跨多個文件或來源的任務時，這個技能能夠幫助你系統性地執行，而不會在簡單任務上浪費資源。
 
-與傳統的 Harness Engineering 相比，Loop Engineering 更加關注系統的自動化和持續運行，這使得開發者能夠專注於更高層次的問題而非逐步提示。實際使用中，開發者可能會面臨如何驗證系統運行的挑戰，這本書提供了相關的思考框架。這本書適合對 AI 工具有一定了解的開發者，特別是那些希望提升工作效率的團隊。預計未來六個月內，Loop Engineering 的概念將會被更多開發者接受和實踐，成為 AI 開發中的一個重要方向。
+技術上，這個技能的實作依賴於 Claude 的子代理工具，並且提供了多個變體，如 `fable-sonnet` 和 `fable-haiku`，以適應不同的計算需求和成本考量。這些變體在執行流程上保持一致，但在模型選擇上有所不同，讓使用者可以根據具體需求進行選擇。使用者在實際操作中可能會發現，這個技能在處理大型任務時能顯著提高效率，尤其是在需要多次檢查和驗證的情況下。整體來看，這個專案適合需要高結構化執行的團隊，尤其是對於複雜的專案管理和任務分配有需求的情境。
 
 ## 重點功能
 
-- 簡明定義 — 提供 Loop Engineering 的清晰定義和背景故事。
-- 實際案例 — 包含三個真實的 Loop 實作案例，幫助讀者理解如何應用。
-- 分步驟指南 — 提供如何開始設計自己的 Loop 的具體步驟。
-- 中英雙語 — 提供中文版和英文版的 PDF 下載，方便不同語言的讀者。
-- 免費下載 — 所有內容均可免費下載，無需付費。
+- 多階段計劃 — 讓模型在執行前先進行任務分解，確保每個步驟都經過檢查。
+- 子代理委派 — 在適用的情況下，將獨立的子任務委派給子代理，提升效率。
+- 可失敗的驗證 — 每個階段都有可失敗的驗證步驟，確保輸出質量。
+- 自我檢討 — 在任務完成前，模型會對自己的輸出進行批判性評估。
+- 變體選擇 — 提供多個變體（如 fable-sonnet 和 fable-haiku），以適應不同的計算需求。
 
 ## 快速開始
 
-1. 下載 PDF
+1. 安裝 fable-mode
 ```bash
-訪問 https://github.com/alchaincyf/loop-engineering-orange-book/raw/main/Loop-Engineering橙皮书-v260615.pdf
+將 fable-mode 目錄放置於 Claude 環境的技能加載路徑中
 ```
-2. 閱讀第一部分
+2. 啟用技能
 ```bash
-從 PDF 中找到第一部分，了解 Loop Engineering 的定義和背景。
+在 Claude 環境中調用 fable-mode 或讓其在符合條件的任務中自動觸發
 ```
-3. 實作案例學習
+3. 使用變體
 ```bash
-參考書中提供的實際案例，思考如何應用在自己的項目中。
+根據需求選擇 fable-sonnet 或 fable-haiku 進行特定任務
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 673 stars（224/天），forks 57（8.5%），顯示出強烈的興趣和需求。作者 HuaShu 是一位知名的 AI 開發者，擁有超過 50 萬的追隨者，這本書的出現正好填補了開發者對 Loop Engineering 的需求，特別是在 AI 工具快速演進的背景下。這本書的流行也與社群中對於如何有效利用 AI 工具的熱烈討論有關，尤其是來自知名開發者的推廣。這些因素共同推動了這本書的快速增長。
+> 建立 6 天內累積 519 stars（87/天），forks 58（11.2%），顯示出相對穩定的增長。這個專案的作者 mrtooher 及其團隊在 Claude 生態系統中有一定的影響力，之前的專案也多數聚焦於提升 AI 的執行能力。這個技能解決了在處理複雜任務時，模型容易出現的無序和不一致問題，提供了一個結構化的執行流程，這在過去的 AI 工具中並不常見。社群對於這種多階段執行的需求逐漸上升，特別是在需要高可靠性的商業應用中。
 
 ## 適合誰使用
 
-**目標受眾**：希望提升 AI 工具使用效率的開發者和團隊。
+**目標受眾**：需要在複雜任務中強化執行流程的 AI 開發者和項目管理者。
 
 > [!example] 使用場景
-> - AI 開發者用它來設計自動化的系統，因為這樣可以減少手動提示的需求，提升工作效率。
-> - 團隊領導用它來培訓新成員，因為書中提供了清晰的步驟和實際案例，讓新手能快速上手。
-> - 產品經理用它來理解 Loop Engineering 的概念，因為這能幫助他們在產品設計中考慮自動化的可能性。
+> - 項目經理用它來系統性地分配任務給團隊成員，因為這樣能確保每個階段都有明確的驗證，避免錯誤累積。
+> - 開發者用它來處理需要多個 API 調用的複雜功能，因為這樣可以在每個階段檢查 API 的回應，減少調試時間。
+> - 研究人員用它來整理多個資料來源的分析，因為這樣能確保每個分析步驟都經過驗證，提升研究的可靠性。
 
 ## 架構分析
 
-這本書的架構設計以簡單易懂為主，分為四個部分，逐步引導讀者理解 Loop Engineering 的概念。每個部分都圍繞著核心主題展開，從定義到實作案例，最後提供實際的建議。這種設計使得讀者能夠在短時間內掌握 Loop Engineering 的基本概念，並能夠立即應用於實際工作中。整體架構的選擇旨在降低學習曲線，讓更多開發者能夠快速上手。由於這本書並不涉及具體的程式碼實作，擴展性主要依賴於讀者的創意和實踐能力。
+這個專案的架構設計基於多階段執行的理念，主要由一個主控制流程和多個子代理組成。主控制流程負責任務的分解和驗證，而子代理則在適用的情況下執行獨立任務。這樣的設計使得整體執行過程更加有序，但也要求 Claude 環境必須支持子代理的運行。選擇這種架構的代價在於需要額外的資源來管理子代理的運行，可能導致在資源有限的情況下出現性能瓶頸。整體的擴展性良好，但在高負載情況下可能會影響到執行效率。
 
 ## 技術深入分析
 
-這本書的核心技術機制在於 Loop Engineering 的概念，強調如何設計一個能夠自動運行的系統。書中提到的 Loop 包含多個組件，這些組件協同工作以實現自動化。雖然書中並未提供具體的程式碼，但讀者可以根據提供的概念自行實作。效能和規模特性方面，這本書的設計使得開發者能夠快速建立自己的 Loop，並在實際應用中進行調整。設計取捨方面，選擇以概念為主的方式，讓更多開發者能夠理解，但也犧牲了具體的技術細節。這本書的技術風險主要在於讀者的實作能力，若無法將概念轉化為實際操作，則可能無法達到預期效果。整合方面，這本書的概念可以與多種 AI 工具搭配使用，但具體的整合方式需要讀者自行探索。
+fable-mode 的核心技術在於其多階段執行的設計，這使得 Claude 模型在處理複雜任務時能夠更有條理。具體來說，這個技能會將任務分解為多個可管理的階段，並在每個階段進行驗證，這樣的設計有助於減少錯誤的累積。雖然這個技能不會提高模型的基本推理能力，但它提供了一個檢查清單，讓模型在執行時不會遺漏重要步驟。這樣的設計使得整體的執行效率提升，尤其是在需要多次檢查和驗證的情況下。選擇使用這個技能的代價在於需要 Claude 環境支持子代理工具，這可能會增加資源的需求。在技術風險方面，若模型的基本能力不足，這個技能可能無法發揮其應有的效果。整合方面，這個技能可以與現有的 Claude 環境無縫結合，但在高負載情況下，可能會影響到整體的執行效率。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了中英文版本，方便不同語言的讀者。安裝過程非常簡單，只需下載 PDF 文件即可。書中有明確的開始指南，適合新手閱讀。整體而言，花 30 分鐘能夠快速上手並理解 Loop Engineering 的基本概念。
+> README 文件清晰，提供了詳細的使用說明和範例；安裝過程相對順暢，但需要確保 Claude 環境支持子代理；有良好的入門指導，適合新手快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供清晰的 Loop Engineering 定義，適合初學者。
-> - 包含實際案例，幫助讀者理解應用場景。
-> - 免費下載，降低了學習成本。
-> - 雙語版本，擴大了受眾範圍。
+> - 強化複雜任務的執行流程，避免錯誤累積。
+> - 提供多個變體選擇，適應不同的計算需求。
+> - 結構化的自我檢查機制，提升輸出質量。
 
 > [!danger] 缺點
-> - 缺乏具體的程式碼實作，對於需要技術細節的讀者不夠深入。
-> - 需要一定的 AI 工具使用經驗，否則可能難以理解概念。
-> - 不適合完全新手，可能需要搭配其他資源學習。
+> - 不會提高模型的基本推理能力。
+> - 不適合單一明確的任務，會浪費資源。
+> - 需要 Claude 環境支持子代理，限制了使用範圍。
 
 > [!warning] 注意事項
-> - 未提供具體的程式碼實作，僅為概念性指導。
-> - 需要讀者具備一定的 AI 工具使用經驗，否則可能難以理解。
-> - 不包含詳細的技術實作細節，對於尋求具體技術解決方案的開發者可能不夠深入。
+> - 不會提高模型的基本推理能力，僅提供結構化的執行流程。
+> - 不適合用於單一明確的任務，因為這樣會浪費資源。
+> - 需要 Claude 環境支持子代理工具，否則無法使用變體功能。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建和管理 AI 代理，而本專案則提供 Loop Engineering 的概念框架，適合希望自動化整個系統的開發者。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了一個更具體的 AI 代理管理工具，而 Loop Engineering 更加關注系統設計的高層次概念。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | Codex Shim 主要是針對 Codex 的擴展，而本專案則提供了 Loop Engineering 的全面指南，適合想要深入理解自動化系統的開發者。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的多階段執行能力，但更專注於創建和管理代理，而非執行檢查和驗證。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於多代理協作，但不具備 fable-mode 的自我檢查和驗證機制。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 提供任務管理功能，但缺乏多階段驗證的結構化流程。 |
 
 ## 替代方案決策
 
@@ -195,16 +193,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建和管理 AI 代理，而本專案則提供 Loop Engineering 的概念框架。 | 如果需要具體的 AI 代理管理工具，而不僅僅是概念指導。 | medium - 需要重新學習代理管理的具體實作。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供一個更具體的 AI 代理管理工具，而 Loop Engineering 更加關注系統設計的高層次概念。 | 如果需要具體的工具來管理 AI 代理，而非概念性指導。 | medium - 需要重新適應新的工具和流程。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建和管理代理，提供的功能更偏向於代理的協作而非執行檢查。 | 如果你的需求是強調代理的創建和管理，而非執行檢查，則應選擇此工具。 | medium，因為需要重新調整任務管理的方式。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於多代理協作，缺乏 fable-mode 的自我檢查和驗證機制。 | 如果你的工作重點在於多代理之間的協作，而不是單一任務的執行，則可以考慮此工具。 | high，因為需要重新設計任務的執行流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **loop-engineering-orange-book** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **fable-mode** | **agent-sprite-forge** | **Duel-Agents** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於創建和管理 AI 代理，而本專案則提供 Loop Engineering 的概念框架。 | 提供一個更具體的 AI 代理管理工具，而 Loop Engineering 更加關注系統設計的高層次概念。 |
-> | 遷移成本 | - | medium - 需要重新學習代理管理的具體實作。 | medium - 需要重新適應新的工具和流程。 |
-> | 適用場景 | 主要場景 | 如果需要具體的 AI 代理管理工具，而不僅僅是概念指導。 | 如果需要具體的工具來管理 AI 代理，而非概念性指導。 |
+> | 技術路線 | 本專案 | 專注於創建和管理代理，提供的功能更偏向於代理的協作而非執行檢查。 | 專注於多代理協作，缺乏 fable-mode 的自我檢查和驗證機制。 |
+> | 遷移成本 | - | medium，因為需要重新調整任務管理的方式。 | high，因為需要重新設計任務的執行流程。 |
+> | 適用場景 | 主要場景 | 如果你的需求是強調代理的創建和管理，而非執行檢查，則應選擇此 | 如果你的工作重點在於多代理之間的協作，而不是單一任務的執行， |
 
 ## 成熟度評估
 
@@ -215,48 +213,47 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人學習和探索，但不建議在生產環境中使用。
+> 適合個人試用，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 對於完全新手來說，概念可能難以理解。
-  - 解法：建議搭配其他資源學習。
-- [MEDIUM] 缺乏具體的程式碼實作，可能無法直接應用。
-  - 解法：需要自行實作，根據概念進行調整。
+- **[HIGH]** 在高負載情況下，子代理可能無法正常運行
+  - 解法：減少同時執行的任務數量
+- [MEDIUM] 如果模型的基本能力不足，可能無法發揮預期效果
+  - 解法：確保使用的模型具備足夠的推理能力
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的 AI 開發專案 | 非常適合 | 能夠幫助團隊設計自動化系統，提高效率。 |
-| 大型企業的 AI 工具整合 | 普通 | 雖然概念有用，但缺乏具體的實作細節。 |
-| 個人學習 AI 工具的開發者 | 非常適合 | 提供了清晰的指導，適合新手學習。 |
-| 需要具體技術解決方案的開發者 | 不適合 | 缺乏具體的程式碼和技術細節。 |
+| 大型專案的任務管理 | 非常適合 | 能夠有效地分解和驗證任務，提升執行效率。 |
+| 單一明確的任務執行 | 不適合 | 會在簡單任務上浪費資源。 |
+| 需要高結構化執行的團隊 | 非常適合 | 提供了系統化的執行流程，適合複雜任務。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~3 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
-| 綁定風險 | low |
+| 學習時間 | ~4 小時 |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | medium |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，1 小時整合，得到自動化系統設計的基本概念，值得一試。
+> 花 4 小時學、3 小時整合，得到更高的任務執行效率，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這本書本身不需要高權限，也不會存取敏感資料。
+> 低風險：這個工具本身不需要高權限，且不會存取敏感資料，適合在 CI/CD 環境中使用。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
+> const me = dv.page("Repos/mrtooher--fable-mode");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -291,7 +288,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
+> const me = dv.page("Repos/mrtooher--fable-mode");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -315,121 +312,117 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 57 |
+| Forks | 58 |
 | Open Issues | 0 |
-| 最後推送 | 2026-06-15 |
-| 建立日期 | 2026-06-15 |
-| Repo 大小 | 5.0 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/alchaincyf/loop-engineering-orange-book) |
+| Issue 解決率 | 100% (1 closed) |
+| 最後推送 | 2026-06-19 |
+| 建立日期 | 2026-06-13 |
+| Repo 大小 | 30 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/mrtooher/fable-mode) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@alchaincyf](https://github.com/alchaincyf) | 1 |
+> | [@mrtooher](https://github.com/mrtooher) | 9 |
+> | [@claude](https://github.com/claude) | 2 |
+> | [@Lagunaswift](https://github.com/Lagunaswift) | 1 |
+
+**最新版本**：v1-original — v1-original — original Fable 5 draft (2026-06-17)
+
+> [!info]- Release Notes
+> Archival tag. The original Fable 5 SKILL.md as first uploaded (Opus-only wording, assumes the Agent tool always exists, non-failable verify step). Preserved before the model-neutral / runtime-aware rewrite. Not the latest release.
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，持續更新相關資源。
-**連結**：[文件](https://www.huasheng.ai/orange-books)
+**社群活躍度**：社群活躍度高，已解決所有開放問題。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-15）
-> **活躍天數** 1 天 · **最新 commit** Loop Engineering Orange Book v260615
+> [!abstract] 最近 10 次 commit（2026-06-13 ~ 2026-06-19）
+> **活躍天數** 3 天 · **最新 commit** Delete writing-jokes/SKILL.md
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> **English** | [中文版 README](README_zh.md)
+> # fable-mode
 > 
->   
+> A Claude skill that enforces staged execution discipline on large tasks:
+> a written stage plan, parallel delegation where the runtime allows, a
+> verification check at each stage that can actually fail, and a skeptical
+> self-review before delivery.
 > 
-> # Loop Engineering: Stop Asking Me What It Is
+> ## What it does
 > 
-> > 橙皮书 (Orange Book) Series · by HuaShu (花叔)
+> The skill shapes the *procedure* a model follows on complex work. It makes
+> the model decompose before acting, delegate independent sub-work where
+> subagent tooling exists, verify each stage against a failable check rather
+> than a feeling, and critique its own output before delivering it.
 > 
-> A plain-language field guide to **loop engineering** — the term that blew up in a single week of June 2026, when [Peter Steinberger](https://x.com/steipete/status/2063697162748260627), Boris Cherny (head of Claude Code at Anthropic), and Google's [Addy Osmani](https://addyosmani.com/blog/loop-engineering/) all pointed at the same shift and gave it a name.
+> ## What it does not do
 > 
-> The one-line version: **stop being the person who prompts the agent. Design the system that does it for you.**
+> It does not change the underlying model's capability. Coherence across
+> long tasks and genuine self-correction live in the model's weights, not
+> in a prompt. On a model that already does these well, the skill
+> reinforces good habits. On a weaker model, it imposes structure the model
+> would otherwise skip, but it cannot raise the reasoning ceiling. Treat it as
+> a checklist, not a capability transplant.
 > 
->   
->   
+> ## When to use it
 > 
-> ## Download
+> Trigger on tasks that span multiple files, multiple sources, or multiple
+> sessions, or when you explicitly ask for systematic execution. Do not use it
+> on tasks with one obvious approach that fit in a single pass. Staging a
+> trivial task wastes effort and buries the answer.
 > 
-> | Edition | PDF |
-> |---------|-----|
-> | 中文版 (Chinese) | **[PDF Download](https://github.com/alchaincyf/loop-engineering-orange-book/raw/main/Loop-Engineering橙皮书-v260615.pdf)** |
-> | English | **[PDF Download](https://github.com/alchaincyf/loop-engineering-orange-book/raw/main/Loop-Engineering-The-Complete-Guide-v260615.pdf)** |
+> ## Variants
 > 
-> ## What This Book Covers
+> Three skills share the same core loop. Pick by how you want the work run:
 > 
-> Loop engineering sits **one floor above the harness**. If harness engineering equips a single agent run — which tools it gets, what counts as "done" — loop engineering is the outer system that runs on a timer, spawns its own helpers, verifies the work, remembers what it did, and decides what to do next. You build it once and let it poke the agents instead of you.
+> - `fable-mode` - the default. Runs the loop inline on the current model (Opus
+>   when that is the host). Use this unless you want the work pinned to a
+>   specific model.
+> - `fable-sonnet` - spawns a subagent pinned to Claude Sonnet. The balanced
+>   choice: strong reasoning at lower cost than Opus. Requires a runtime with
+>   the Agent tool.
+> - `fable-haiku` - spawns a subagent pinned to Claude Haiku. For high-volume or
+>   cost-sensitive work where structure matters more than peak synthesis.
+>   Requires a runtime with the Agent tool.
 > 
-> If you've read the **Harness Engineering** Orange Book, this is the next floor up. It stands on its own — you don't need the previous one.
+> The variants pass the same stage map, failable verification, self-critique,
+> warning threshold, and find-and-replace safety rules down to their subagent.
+> They do not raise the chosen model's reasoning ceiling.
 > 
-> **9 sections across 4 parts:**
+> ## Files
 > 
-> | Part | Content | Sections |
-> |------|---------|----------|
-> | 1. What It Is | The definition, the one-week origin story, and the prompt → context → harness → loop stack | §01–02 |
-> | 2. How It Turns | The five moves of one loop, the six parts you build it from, and why an AI can't grade its own code | §03–05 |
-> | 3. Where It Runs, What It Costs | Three real loops (Addy's morning triage, Stripe's Minions, the scheduling reality) and the four costs — verification debt, comprehension rot, token blowout, cognitive surrender | §06–07 |
-> | 4. How You Start | Staying the engineer, and building your first loop today | §08–09 |
+> - `SKILL.md` - the skill itself
+> - `EXAMPLE.md` - a worked before/after showing the verification check catching
+>   an error that a one-shot attempt ships
+> - `fable-sonnet/SKILL.md` - the Sonnet variant
+> - `fable-haiku/SKILL.md` - the Haiku variant
 > 
->   
->   
+> ## Installation
 > 
-> ## Who Is This For
-> 
-> - Developers already using Claude Code / Codex / Cursor who still drive the agent prompt by prompt, and want to climb one level up
-> - AI power users curious why "you shouldn't be prompting your agents anymore" went viral
-> - Anyone who read the Harness Engineering Orange Book and wants the outer loop
-> 
-> All sources are public and first-hand: Addy Osmani's founding post, Anthropic's harness-design engineering blog, Stripe's Minions, and the official Claude Code / Codex docs.
-> 
-> ## 橙皮书 (Orange Book) Series
-> 
-> Part of the 橙皮书 series — free, practical guides on AI tools. Other titles include Claude Code, Harness Engineering, Agent Skills, OpenClaw, and more.
-> 
-> All books free to download: **[huasheng.ai/orange-books](https://www.huasheng.ai/orange-books)**
-> 
-> ## About the Author
-> 
-> **HuaShu (花叔)** · AI Native Coder · Indie Developer
-> 
-> An AI content creator with 500K+ followers across platforms. Built every product — including an App Store #1 paid iOS app — entirely with AI tools, never writing a line of code by hand. Open-sourced Nuwa.skill, huashu-design, and more.
-> 
-> - X/Twitter: [@AlchainHust](https://x.com/AlchainHust)
-> - YouTube: [@Alchain](https://www.youtube.com/@Alchain)
-> - Bilibili: [花叔v](https://space.bilibili.com/14097567/)
-> - WeChat Official Account: 花叔
-> - Website: [huasheng.ai](https://www.huasheng.ai/)
-> 
-> ## Version
-> 
-> - **v260615** — First edition, written the week loop engineering emerged (June 2026), based on Addy Osmani's founding post and the official Claude Code / Codex docs.
-> - AI tools evolve fast — refer to each product's official documentation for the latest.
-> 
-> ## License
-> 
-> [MIT License](LICENSE) — free to use, copy, modify, and distribute, including commercially. Attribution appreciated but not required.
+> Place each skill directory (`fable-mode`, and optionally `fable-sonnet` /
+> `fable-haiku`) wherever your Claude environment loads skills from (for example,
+> a skills directory read by Claude Code), then invoke it by name or let it
+> trigger on a qualifying task. Each variant's folder name must match the `name:`
+> field in its frontmatter.
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[AI 工具]] · [[系統設計]]
+相關概念：[[Agent 框架]] · [[多模態]] · [[自動化]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[CoderLuii--HolyClaude|CoderLuii/HolyClaude]] · [[KKKKhazix--khazix-skills|KKKKhazix/khazix-skills]] · [[XiaomiMiMo--MiMo-Code|XiaomiMiMo/MiMo-Code]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[alchaincyf--hermes-agent-orange-book|alchaincyf/hermes-agent-orange-book]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]]
 
-[GitHub](https://github.com/alchaincyf/loop-engineering-orange-book)
+[GitHub](https://github.com/mrtooher/fable-mode)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：AI 工具）
+> [!note]- 直接競品（同子分類：Agent 框架）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "AI 工具" AND file.name != "alchaincyf--loop-engineering-orange-book"
+> WHERE subcategory = "Agent 框架" AND file.name != "mrtooher--fable-mode"
 > SORT stars DESC
 > ```
 
@@ -437,7 +430,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "alchaincyf--loop-engineering-orange-book"
+> WHERE category = "AI/ML" AND file.name != "mrtooher--fable-mode"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -446,7 +439,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "alchaincyf--loop-engineering-orange-book" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "mrtooher--fable-mode" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -455,15 +448,15 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W25" AND file.name != "alchaincyf--loop-engineering-orange-book"
+> WHERE week = "2026-W25" AND file.name != "mrtooher--fable-mode"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","AI 工具","系統設計"];
+> const concepts = ["Agent 框架","多模態","自動化"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "alchaincyf--loop-engineering-orange-book" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "mrtooher--fable-mode" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -476,12 +469,12 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
+> const me = dv.page("Repos/mrtooher--fable-mode");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "alchaincyf--loop-engineering-orange-book" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "mrtooher--fable-mode" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -497,7 +490,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "alchaincyf" AND file.name != "alchaincyf--loop-engineering-orange-book"
+> WHERE owner = "mrtooher" AND file.name != "mrtooher--fable-mode"
 > SORT stars DESC
 > ```
 
@@ -505,7 +498,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
+> const me = dv.page("Repos/mrtooher--fable-mode");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -522,7 +515,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
+> const me = dv.page("Repos/mrtooher--fable-mode");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -555,7 +548,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
+> const me = dv.page("Repos/mrtooher--fable-mode");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -579,7 +572,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
+> const me = dv.page("Repos/mrtooher--fable-mode");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -616,7 +609,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
+> const me = dv.page("Repos/mrtooher--fable-mode");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -699,7 +692,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-06-19** — 首次收錄
+> **2026-06-20** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -715,5 +708,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-06-20|2026-06-20]] — 再次上榜，702 stars
-- [[2026-06-19|2026-06-19]] — 首次收錄，672 stars
+- [[2026-06-20|2026-06-20]] — 首次收錄，519 stars
