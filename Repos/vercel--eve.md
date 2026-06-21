@@ -7,12 +7,12 @@ language: TypeScript
 license: Apache-2.0
 description: "The Framework for Building Agents"
 homepage: "https://vercel.com/eve"
-stars: 1646
-stars_per_day: 549
-forks: 106
-open_issues: 59
+stars: 1868
+stars_per_day: 467
+forks: 121
+open_issues: 66
 created: 2026-06-16
-pushed_at: 2026-06-20
+pushed_at: 2026-06-21
 first_seen: 2026-06-18
 week: "2026-W25"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "提供一個基於檔案系統的框架來構建持久的 AI 代理�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-06-23"
+appearances: 4
+next_review: "2026-06-24"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 13
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-18"
-star_history: "2026-06-18:693,2026-06-19:1375,2026-06-20:1646"
+star_history: "2026-06-18:693,2026-06-19:1375,2026-06-20:1646,2026-06-21:1868"
 tags:
   - github
   - "category/開發工具"
@@ -814,6 +814,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-21|2026-06-21]] — 再次上榜，1.9k stars
 - [[2026-06-20|2026-06-20]] — 再次上榜，1.6k stars
 - [[2026-06-19|2026-06-19]] — 再次上榜，1.4k stars
 - [[2026-06-18|2026-06-18]] — 首次收錄，693 stars

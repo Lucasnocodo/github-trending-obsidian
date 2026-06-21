@@ -7,9 +7,9 @@ language: Python
 license: N/A
 description: "A Claude Code plugin that makes Opus behave like Fable — completion, evidence, and verification enforced as procedure. Ships only what a Fable-vs-Opus comparison proved transferable."
 homepage: ""
-stars: 505
-stars_per_day: 101
-forks: 73
+stars: 533
+stars_per_day: 89
+forks: 76
 open_issues: 2
 created: 2026-06-14
 pushed_at: 2026-06-19
@@ -30,8 +30,8 @@ use_case: "讓 Opus 像 Fable 一樣執行任務，強調程序的完成、證�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-27"
+appearances: 2
+next_review: "2026-06-28"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-20"
-star_history: "2026-06-20:504,2026-06-20:505"
+star_history: "2026-06-20:504,2026-06-20:505,2026-06-21:533"
 tags:
   - github
   - "category/開發工具"
@@ -755,4 +755,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-21|2026-06-21]] — 再次上榜，533 stars
 - [[2026-06-20|2026-06-20]] — 首次收錄，504 stars

@@ -7,10 +7,10 @@ language: HTML
 license: MIT
 description: "ER diagram generator. Paste CREATE TABLE statements and get a clean, interactive ERD — runs 100% in your browser, nothing uploaded"
 homepage: "https://sqltoerdiagram.com."
-stars: 483
-stars_per_day: 97
-forks: 39
-open_issues: 3
+stars: 494
+stars_per_day: 82
+forks: 41
+open_issues: 1
 created: 2026-06-14
 pushed_at: 2026-06-20
 first_seen: 2026-06-20
@@ -30,8 +30,8 @@ use_case: "將 SQL 表結構轉換為互動式 ER 圖，完全在瀏覽器中運
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-27"
+appearances: 2
+next_review: "2026-06-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 57
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-20"
-star_history: "2026-06-20:483"
+star_history: "2026-06-20:483,2026-06-21:494"
 tags:
   - github
   - "category/開發工具"
@@ -807,4 +807,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-21|2026-06-21]] — 再次上榜，494 stars
 - [[2026-06-20|2026-06-20]] — 首次收錄，483 stars

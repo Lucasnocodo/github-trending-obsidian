@@ -2367,10 +2367,10 @@
   },
   "tamnd/kage": {
     "first_seen": "2026-06-16",
-    "last_seen": "2026-06-20",
-    "times_seen": 5,
+    "last_seen": "2026-06-21",
+    "times_seen": 6,
     "stars_first": 1546,
-    "stars_last": 2098
+    "stars_last": 2166
   },
   "EEliberto/IPA-Download": {
     "first_seen": "2026-06-17",
@@ -2402,10 +2402,10 @@
   },
   "vercel/eve": {
     "first_seen": "2026-06-18",
-    "last_seen": "2026-06-20",
-    "times_seen": 3,
+    "last_seen": "2026-06-21",
+    "times_seen": 4,
     "stars_first": 693,
-    "stars_last": 1646
+    "stars_last": 1868
   },
   "joeseesun/qiaomu-goal-meta-skill": {
     "first_seen": "2026-06-18",
@@ -2416,17 +2416,17 @@
   },
   "Waishnav/devspace": {
     "first_seen": "2026-06-19",
-    "last_seen": "2026-06-20",
-    "times_seen": 2,
+    "last_seen": "2026-06-21",
+    "times_seen": 3,
     "stars_first": 870,
-    "stars_last": 1405
+    "stars_last": 1632
   },
   "alchaincyf/loop-engineering-orange-book": {
     "first_seen": "2026-06-19",
-    "last_seen": "2026-06-20",
-    "times_seen": 2,
+    "last_seen": "2026-06-21",
+    "times_seen": 3,
     "stars_first": 672,
-    "stars_last": 702
+    "stars_last": 716
   },
   "vorssaint/vorssaint-utils": {
     "first_seen": "2026-06-19",
@@ -2444,30 +2444,44 @@
   },
   "Plaer1/junction": {
     "first_seen": "2026-06-20",
-    "last_seen": "2026-06-20",
-    "times_seen": 1,
+    "last_seen": "2026-06-21",
+    "times_seen": 2,
     "stars_first": 513,
-    "stars_last": 513
+    "stars_last": 516
   },
   "fivetaku/fablize": {
     "first_seen": "2026-06-20",
-    "last_seen": "2026-06-20",
-    "times_seen": 1,
+    "last_seen": "2026-06-21",
+    "times_seen": 2,
     "stars_first": 504,
-    "stars_last": 504
+    "stars_last": 533
   },
   "royalbhati/sqltoerdiagram": {
     "first_seen": "2026-06-20",
-    "last_seen": "2026-06-20",
-    "times_seen": 1,
+    "last_seen": "2026-06-21",
+    "times_seen": 2,
     "stars_first": 483,
-    "stars_last": 483
+    "stars_last": 494
   },
   "rebel0789/codexpro": {
     "first_seen": "2026-06-20",
-    "last_seen": "2026-06-20",
-    "times_seen": 1,
+    "last_seen": "2026-06-21",
+    "times_seen": 2,
     "stars_first": 446,
-    "stars_last": 446
+    "stars_last": 542
+  },
+  "Forsy-AI/agent-apprenticeship": {
+    "first_seen": "2026-06-21",
+    "last_seen": "2026-06-21",
+    "times_seen": 1,
+    "stars_first": 529,
+    "stars_last": 529
+  },
+  "dongshuyan/compass-skills": {
+    "first_seen": "2026-06-21",
+    "last_seen": "2026-06-21",
+    "times_seen": 1,
+    "stars_first": 397,
+    "stars_last": 397
   }
 }

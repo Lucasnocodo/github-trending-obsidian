@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "VS Code chat sidebar for local AI coding agents"
 homepage: ""
-stars: 513
-stars_per_day: 257
-forks: 6
+stars: 516
+stars_per_day: 172
+forks: 7
 open_issues: 0
 created: 2026-06-17
 pushed_at: 2026-06-17
@@ -30,8 +30,8 @@ use_case: "提供 VS Code 的聊天側邊欄，連接本地 AI 編碼代理。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-23"
+appearances: 2
+next_review: "2026-06-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-20"
-star_history: "2026-06-20:513,2026-06-20:513"
+star_history: "2026-06-20:513,2026-06-20:513,2026-06-21:516"
 tags:
   - github
   - "category/開發工具"
@@ -773,4 +773,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-21|2026-06-21]] — 再次上榜，516 stars
 - [[2026-06-20|2026-06-20]] — 首次收錄，513 stars

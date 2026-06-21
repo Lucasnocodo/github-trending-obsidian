@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "Turn ChatGPT into Codex"
 homepage: ""
-stars: 1409
-stars_per_day: 282
-forks: 126
-open_issues: 12
+stars: 1632
+stars_per_day: 272
+forks: 147
+open_issues: 20
 created: 2026-06-14
 pushed_at: 2026-06-17
 first_seen: 2026-06-19
@@ -30,8 +30,8 @@ use_case: "讓 ChatGPT 直接在本地專案中讀取和編輯代碼，無需上
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-06-23"
+appearances: 3
+next_review: "2026-06-24"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-19"
-star_history: "2026-06-19:870,2026-06-19:876,2026-06-20:1405,2026-06-20:1409"
+star_history: "2026-06-19:870,2026-06-19:876,2026-06-20:1405,2026-06-20:1409,2026-06-21:1632"
 tags:
   - github
   - "category/開發工具"
@@ -861,5 +861,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-21|2026-06-21]] — 再次上榜，1.6k stars
 - [[2026-06-20|2026-06-20]] — 再次上榜，1.4k stars
 - [[2026-06-19|2026-06-19]] — 首次收錄，870 stars
