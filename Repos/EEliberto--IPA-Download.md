@@ -7,18 +7,18 @@ language: Swift
 license: Apache-2.0
 description: "一款用于安装 IPA 历史版本的工具，适用于获取旧版应用并自动捕获数据包。下载后，可直接通过 AirDrop 传输至 iPhone、iPad 上并安装并使用。"
 homepage: ""
-stars: 1117
-stars_per_day: 186
-forks: 61
+stars: 1139
+stars_per_day: 163
+forks: 63
 open_issues: 1
 created: 2026-06-13
-pushed_at: 2026-06-15
+pushed_at: 2026-06-20
 first_seen: 2026-06-17
 week: "2026-W25"
 month: "2026-06"
 category: "開發工具"
 subcategory: "IPA 下載工具"
-release_tag: "Pastel5"
+release_tag: "Pastel6"
 install_complexity: "medium"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-17
-use_case: "一款用于安装 IPA 历史版本的工具，适用于获取旧版应用并自动捕获数据包。"
+use_case: "幫助用戶安裝歷史版本的 IPA 應用，並支持自動捕獲數據包。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-06-27"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 94
-repo_size_kb: 67307
+repo_size_kb: 67409
 readme_length: 1225
 bus_factor: 1
-last_release_days: 5
+last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-17"
-star_history: "2026-06-17:831,2026-06-17:834,2026-06-18:1012,2026-06-18:1015,2026-06-19:1072,2026-06-19:1072,2026-06-20:1117,2026-06-20:1117"
+star_history: "2026-06-17:831,2026-06-17:834,2026-06-18:1012,2026-06-18:1015,2026-06-19:1072,2026-06-19:1072,2026-06-20:1117,2026-06-20:1117,2026-06-21:1139"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "IPA-Download"
   - "EEliberto/IPA-Download"
-  - "一款用于安装 IPA 历史版本的工具，适用于获取旧版应用并自动捕获数据包。"
+  - "幫助用戶安裝歷史版本的 IPA 應用，並支持自動捕獲數據包。"
 ---
 
 # IPA-Download
 
-**1.1k** stars · **186** stars/天 · 建立 6 天前 · Swift · Apache-2.0
+**1.1k** stars · **163** stars/天 · 建立 7 天前 · Swift · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/EEliberto--IPA-Download");
@@ -68,16 +68,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `Pastel5`
+`個人專案` `Pastel6`
 
 > [!summary] 一句話摘要
-> 一款用于安装 IPA 历史版本的工具，适用于获取旧版应用并自动捕获数据包。
+> 幫助用戶安裝歷史版本的 IPA 應用，並支持自動捕獲數據包。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (186 stars/day)
-> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 4 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在 macOS 上快速獲取舊版 iOS 應用的開發者和測試人員。
-> **一句話重點** Pastel 透過創新的 Device GUID 機制，顯著提升了 IPA 下載的安全性和穩定性。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (163 stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要在 macOS 上安裝舊版 IPA 應用的開發者和測試人員。
+> **一句話重點** Pastel 讓安裝舊版 IPA 應用變得簡單而高效，特別是在 Apple 生態系統中。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,30 +101,30 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，3 小時整合，得到快速獲取舊版應用的效果，值得考慮。
+> **結論** 花 2 小時學習，3 小時整合，得到高效的舊版應用下載功能，值得投入。
 
 > [!abstract] 核心創新
-> 引入全新的 Device GUID 機制，以避免頻繁觸發雙重認證。
+> Pastel 使用 GSA 技術來穩定觸發雙重認證，解決了市面上其他 IPA 下載工具的痛點。
 
 ## 專案簡介
 
-Pastel 是一款專為 macOS 26+ 設計的 IPA 下載工具，能夠輕鬆獲取舊版應用並自動捕獲數據包。用戶只需在應用中添加 Apple 帳戶，Pastel 會自動識別並切換到對應的 App Store，下載後可通過 AirDrop 直接傳輸至 iOS 設備。其核心賣點在於引入了 Device GUID 機制，減少雙重認證的干擾，並且支持自定義 App ID 下載。技術上，Pastel 使用 SwiftUI 編寫，完美適配 macOS 26 的 Liquid Glass 效果，並依賴於 GSA 技術來觸發雙重認證，提升穩定性和安全性。與其他 IPA 下載工具相比，Pastel 允許用戶手動輸入版本 ID，並提供多種下載源，這使得用戶能夠快速找到所需的應用版本。
+Pastel 是一款專為 macOS 設計的 IPA 下載工具，能夠輕鬆獲取歷史版本的應用。用戶可以通過 Apple ID 登錄，選擇所需的應用版本進行下載，並直接透過 AirDrop 安裝到 iPhone 或 iPad。這個工具的賣點在於其自動化的數據捕獲能力，並且支持多語言界面，讓不同語言的用戶都能輕鬆使用。技術上，Pastel 使用 SwiftUI 開發，完全適配 macOS 26 的 Liquid Glass 效果，並依賴 GSA 技術來觸發雙重認證，這在其他工具中常常會出現問題。與其他 IPA 下載工具相比，Pastel 提供了更穩定的雙重認證流程，並且能夠自動識別 Apple 帳戶的地區，這使得用戶在切換地區時無需手動調整設置。
 
-實際使用中，Pastel 目前僅支持 Apple 硬體，這限制了其用戶群。社群活躍度高，開發者對於問題的回應速度也相當快，顯示出良好的維護狀態。這個專案在未來可能會擴展至更多功能，並提升對於不同語言的支持。對於需要獲取舊版應用的開發者或測試人員來說，Pastel 是一個值得考慮的工具，但如果你的環境不支持 macOS 26+，則無法使用。
+這款工具的設計考慮到了用戶的便利性，並且在 UI 上進行了多次優化，提升了使用體驗。使用者在下載過程中可以直接預覽應用圖標，這對於特定節日的應用尤為實用。雖然目前僅支持 Apple 硬體，但未來若有 Windows 版本的計劃，將會擴大其用戶基礎。整體來看，Pastel 是一款針對特定需求的工具，適合需要安裝舊版應用的用戶，尤其是在 Apple 生態系統中工作的人。
 
 **技術棧**：`SwiftUI` · `Node.js` · `Xcode`
 
 ## 重點功能
 
-- Device GUID 機制 — 減少雙重認證干擾，提升用戶體驗。
-- 支持自定義 App ID 下載 — 用戶可手動輸入版本 ID 進行下載。
+- 多版本下載 — 支持選擇多個應用版本進行下載，只需按住 Command 鍵。
+- 自動識別 Apple 帳戶地區 — 登錄後自動切換至對應地區的 App Store。
+- 數據包捕獲 — 下載過程中自動捕獲應用數據包，方便進行分析。
+- AirDrop 安裝 — 下載後可直接透過 AirDrop 安裝到 iPhone 或 iPad。
 - 多語言支持 — 支持簡體中文、繁體中文、日語、韓語和泰語。
-- AirDrop 傳輸 — 下載後可直接通過 AirDrop 傳輸至 iPhone 或 iPad。
-- 多來源版本 ID — 整合多個下載源，方便用戶快速找到所需版本。
 
 ## 快速開始
 
-1. 安裝 Node 依賴
+1. 克隆專案並安裝依賴
 ```bash
 cd NodeProject && npm install
 ```
@@ -132,61 +132,72 @@ cd NodeProject && npm install
 ```bash
 open Pastel.xcodeproj
 ```
-3. 運行應用
+3. 運行專案
 ```bash
 在 Xcode 中點擊運行按鈕
+```
+
+## 程式碼範例
+
+```swift
+{
+  "前置條件": "需要安裝 Node 依賴和 Xcode。",
+  "指令": "cd NodeProject && npm install",
+  "預期輸出": "安裝完成後可在 NodeProject 中找到所有依賴。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 1117 stars（186/天），forks 61（5.5%），這顯示出穩定的增長。作者 EEliberto 之前有開發其他相關工具，這次針對 IPA 下載的需求填補了市場空白。此工具解決了許多現有 IPA 下載工具的痛點，如雙重認證問題和數據丟失。社群的反饋和需求推動了這個專案的快速成長，特別是在開發者社群中引發了討論。技術上，隨著 macOS 的更新，這個工具的可行性也隨之提升，讓用戶能夠更方便地獲取舊版應用。
+> 建立 7 天內累積 1139 stars（163/天），forks 63（5.5%），顯示出穩定的增長潛力。作者 EEliberto 之前在開源社區活躍，這個工具解決了用戶在獲取舊版應用時的多重困難，特別是雙重認證和地區切換的問題。社群對此工具的需求明顯，尤其是在需要安裝舊版應用的開發者中。隨著 Apple 生態系統的用戶增長，這款工具的實用性和需求也隨之上升。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 macOS 上快速獲取舊版 iOS 應用的開發者和測試人員。
+**目標受眾**：需要在 macOS 上安裝舊版 IPA 應用的開發者和測試人員。
 
 > [!example] 使用場景
-> - iOS 開發者用它來快速獲取舊版應用進行測試，因為手動下載舊版應用過程繁瑣且容易出錯。
-> - 測試人員用它來捕獲應用的數據包，因為自動化捕獲過程能節省大量時間。
-> - 普通用戶用它來安裝不再更新的舊版應用，因為這樣可以避免新版本帶來的問題。
+> - iOS 開發者用它來下載舊版應用進行測試，因為手動尋找舊版應用非常耗時且不可靠。
+> - 測試工程師用它來捕獲舊版應用的數據包，因為這樣可以更方便地進行回歸測試和性能分析。
+> - 普通用戶用它來安裝不再支持的舊版應用，因為這樣可以避免因新版本不兼容而導致的使用困難。
 
 ## 架構分析
 
-Pastel 的架構基於 SwiftUI，利用 macOS 的 Liquid Glass 效果來提升用戶界面。資料流方面，應用通過 Apple 的 API 獲取應用版本信息，並使用 GSA 技術來觸發雙重認證，這樣設計的好處在於提升了安全性和穩定性，但也限制了其在非 Apple 硬體上的運行。選擇 SwiftUI 而非其他框架，能夠更好地適配 macOS 的最新特性，但也意味著對於其他平台的支持受到限制。整體來說，這樣的架構設計使得 Pastel 在 macOS 環境中表現出色，但在跨平台擴展上面臨挑戰。
+Pastel 採用 SwiftUI 作為前端框架，提供流暢的用戶界面和良好的用戶體驗。資料流從用戶登錄開始，經過 GSA 技術進行雙重認證，然後用戶可以選擇所需的應用版本進行下載。下載過程中，應用的數據包會自動捕獲，這一設計使得用戶能夠在安裝舊版應用的同時進行數據分析。選擇 SwiftUI 的原因在於其能夠提供現代化的 UI 效果，但這也意味著對於非 Apple 硬體的支持有限，未來可能會影響其擴展性。整體架構輕量且高效，但在 Windows 環境下的兼容性仍然是未來的挑戰。
 
 ## 技術深入分析
 
-Pastel 的核心技術機制是基於 SwiftUI 和 Node.js，這使得應用在 macOS 環境中能夠充分利用最新的 UI 特性。資料流方面，應用通過 Apple 的 API 獲取應用版本信息，並使用 GSA 技術來觸發雙重認證，這樣的設計不僅提升了用戶體驗，也增強了安全性。效能方面，Pastel 能夠快速響應用戶請求，並在下載過程中保持穩定，適合處理多個同時下載的請求。選擇 SwiftUI 而非其他框架的好處在於能夠更好地適配 macOS 的最新特性，但也意味著對於其他平台的支持受到限制。技術風險方面，未來 Apple 的 API 變更可能會影響到應用的穩定性，這是需要注意的潛在風險。整體來說，Pastel 在 macOS 環境中表現出色，但在跨平台擴展上面臨挑戰。
+Pastel 的核心技術機制在於其使用 SwiftUI 開發，這使得其界面能夠充分利用 macOS 的最新特性，如 Liquid Glass 效果。資料流從用戶登錄開始，經過 GSA 技術進行雙重認證，這一過程的設計旨在提高安全性和穩定性。下載過程中，應用的數據包會自動捕獲，這一功能在其他類似工具中並不常見，為用戶提供了額外的數據分析能力。效能方面，Pastel 在處理小型應用時表現良好，但在下載大型應用時可能會遇到網絡延遲的問題。選擇 SwiftUI 的優勢在於其現代化的 UI 設計，但這也限制了其在非 Apple 硬體上的運行。技術風險方面，GSA 技術的依賴可能在未來的版本中帶來不穩定性，特別是在 Apple 政策變更的情況下。整合方面，Pastel 與其他 Apple 生態系統的工具（如 Xcode）相容性良好，但在 CI/CD 流程中的整合仍需進一步探索。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了安裝步驟和使用指南。安裝過程順暢，沒有明顯的坑。文件中包含多語言支持，對於不同語言的用戶友好。
+> README 文件清晰，提供了安裝和使用的詳細步驟；安裝過程順暢，無明顯坑；有良好的入門指南，支持多語言；整體上，花 30 分鐘就能順利運行。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 用戶界面友好，適合新手使用。
-> - 支持多種語言，便於不同地區用戶使用。
-> - 自動化的雙重認證流程，提升了安全性。
+> - 用戶界面友好，適合各類型用戶。
+> - 支持多語言，擴大了使用範圍。
+> - 自動捕獲數據包，方便進行後續分析。
 
 > [!danger] 缺點
-> - 僅限於 macOS 26+ 設備，限制了用戶群。
-> - 缺乏 Windows 版本，無法滿足所有用戶需求。
-> - 依賴於 Apple 的 API，可能面臨未來的兼容性問題。
+> - 僅支持 Apple 硬體，限制了用戶群。
+> - 不支持 Windows，未來擴展性有限。
+> - 依賴 GSA 技術，可能存在穩定性問題。
 
 > [!warning] 注意事項
-> - 僅支持 macOS 26+ 且配備 Apple 芯片的設備。
-> - 目前沒有 Windows 版本的開發計劃。
-> - 可能在某些地區的 App Store 中無法獲取所有應用版本。
+> - 僅支持 macOS 26+ 且配備 Apple 芯片的 Mac。
+> - 不支持 Windows 系統，未來無開發計劃。
+> - 依賴 GSA 技術進行雙重認證，可能在某些情況下不穩定。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 iOS 應用的測試和模擬，但不支持 IPA 下載功能。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供應用版本管理，但無法直接下載 IPA 檔案。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 IPA 下載功能，但不支持自動捕獲數據包。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於舊版應用的管理，缺乏 UI 友好性和自動化功能。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 提供 API 下載功能，但不支持直接從 Apple 下載應用。 |
 
 ## 替代方案決策
 
@@ -194,16 +205,16 @@ Pastel 的核心技術機制是基於 SwiftUI 和 Node.js，這使得應用在 m
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 iOS 應用的測試和模擬，但不支持 IPA 下載功能。 | 如果需要進行應用的測試和模擬，而不僅僅是下載舊版應用。 | medium，因為需要重新適應不同的工作流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供應用版本管理，但無法直接下載 IPA 檔案。 | 如果需要管理應用版本而不需要下載功能。 | low，因為功能相似，轉換成本較低。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 IPA 下載功能，但缺乏自動捕獲數據包的能力。 | 如果需要一個簡單的 IPA 下載工具，而不需要數據分析功能。 | low，因為界面和功能相似，轉換成本低。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於舊版應用的管理，缺乏 UI 友好性和自動化功能。 | 如果需要管理大量舊版應用的版本，但不需要自動化下載。 | medium，因為需要重新適應其管理方式。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **IPA-Download** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於 iOS 應用的測試和模擬，但不支持 IPA 下載功能。 | 提供應用版本管理，但無法直接下載 IPA 檔案。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的工作流程。 | low，因為功能相似，轉換成本較低。 |
-> | 適用場景 | 主要場景 | 如果需要進行應用的測試和模擬，而不僅僅是下載舊版應用。 | 如果需要管理應用版本而不需要下載功能。 |
+> | 技術路線 | 本專案 | 提供類似的 IPA 下載功能，但缺乏自動捕獲數據包的能力。 | 專注於舊版應用的管理，缺乏 UI 友好性和自動化功能。 |
+> | 遷移成本 | - | low，因為界面和功能相似，轉換成本低。 | medium，因為需要重新適應其管理方式。 |
+> | 適用場景 | 主要場景 | 如果需要一個簡單的 IPA 下載工具，而不需要數據分析功能。 | 如果需要管理大量舊版應用的版本，但不需要自動化下載。 |
 
 ## 成熟度評估
 
@@ -214,26 +225,24 @@ Pastel 的核心技術機制是基於 SwiftUI 和 Node.js，這使得應用在 m
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合個人使用和小型專案，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些地區無法獲取特定應用版本
-  - 解法：嘗試切換 Apple 帳戶地區
-- **[HIGH]** 雙重認證過程可能偶爾失敗
-  - 解法：重啟應用並重新登錄
-- [MEDIUM] 某些舊版應用可能無法下載
-  - 解法：確認應用是否仍在 App Store 中
+- **[HIGH]** 在某些情況下，雙重認證可能無法觸發。
+  - 解法：確保 Apple ID 設置正確，並重新嘗試登錄。
+- [MEDIUM] 下載大型應用時可能會遇到網絡延遲。
+  - 解法：在網絡穩定的環境下進行下載。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 能夠快速獲取舊版應用進行測試，提升開發效率。 |
-| 大型企業的應用測試團隊 | 適合 | 能夠自動化下載流程，節省時間。 |
-| 需要在 Windows 環境下工作的開發者 | 不適合 | 目前僅支持 macOS 26+ 設備。  |
+| 10 人以下的新創公司後端開發 | 非常適合 | 能夠快速下載和測試舊版應用，提升開發效率。 |
+| 大型企業的應用測試團隊 | 適合 | 能夠捕獲數據包，方便進行性能分析。 |
+| 需要在 Windows 環境下工作的開發者 | 不適合 | 僅支持 macOS，無法在 Windows 上運行。 |
 
 ## 採用成本分析
 
@@ -245,12 +254,12 @@ Pastel 的核心技術機制是基於 SwiftUI 和 Node.js，這使得應用在 m
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，3 小時整合，得到快速獲取舊版應用的效果，值得考慮。
+> 花 2 小時學習，3 小時整合，得到高效的舊版應用下載功能，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：應用需要訪問 Apple 帳戶的敏感信息，並依賴於 Apple 的 API，需注意未來的兼容性問題。
+> 低風險：不需要高權限，僅存取 Apple ID 資訊，依賴鏈的信任程度高，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -315,69 +324,68 @@ Pastel 的核心技術機制是基於 SwiftUI 和 Node.js，這使得應用在 m
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 61 |
+| Forks | 63 |
 | Open Issues | 1 |
 | Issue 解決率 | 94% (16 closed) |
-| 最後推送 | 2026-06-15 |
+| 最後推送 | 2026-06-20 |
 | 建立日期 | 2026-06-13 |
-| Repo 大小 | 65.7 MB |
+| Repo 大小 | 65.8 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/EEliberto/IPA-Download) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Swift" : 71
->     "JavaScript" : 28
+>     "Swift" : 72
+>     "JavaScript" : 27
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@EEliberto](https://github.com/EEliberto) | 20 |
+> | [@EEliberto](https://github.com/EEliberto) | 21 |
 
-**最新版本**：Pastel5 — Pastel 26.6 build 5 (2026-06-15)
+**最新版本**：Pastel6 — Pastel 26.6.1 (2026-06-20)
 
 > [!info]- Release Notes
 > ## 简体中文
 > 
 > 感谢你使用 Pastel！
 > 
-> 我们很高兴带来 Pastel 26.6。
+> 我们很高兴带来 Pastel 26.6.1。
 > 
 > 此次更新内容为：
 > 
-> 1. 引入全新的 Device GUID (设备 GUID) 机制，以避免频繁触发双重认证，参考了 Asspp 的部分原理和实现方式，并同样保存于 macOS Keychain (钥匙串)。
-> 2. 手动下载支持自定义 App ID，并同样支持“不再更新”特性。
-> 3. 修复了其他语言下的部分 UI 显示问题。
-> 4. 优化 macOS Keychain (钥匙串) 安全逻辑，减少打扰并提升效率。
-> 
-> 26.5.2 更新内容：
-> 
-> 1. 支持下载 App 时选择“不再更新”特性。选择后，此 App 将不能再通过 App Store 更新。
-> 2. “下载”板块支持显示版本 ID、是否为可检索更新版本，并优化了部分显示效果。
-> 3. 修复了一些已知问题。
-> 
-> 如果在使用 Pastel 时遇到任何问题，请在 GitHub 提交 Issue。
+> 1. 修复部份 UI 显示效果。
+> 2. 支持多选 App 版本进行下载（按 Command 即可）。
+> 3. 从 Apple 获取来源时检测到从未获取的 App，会进行二次确认。
 > 
 > ## 繁體中文
 > 
 > 感謝你使用 Pastel！
 > 
-> 我們很高興帶來 Pastel 26.6。
+> 我們很高興帶來 Pastel 26.6.1。
 > 
 > 此次更新內容為：
 > 
-> 1. 引入全新的 Device GUID (設備 GUID) 機制，以避免頻繁觸發雙重認證，參考了 Asspp 的部分原理和實作方式，並同樣儲存於 macOS Keychain (鑰匙圈)。
+> 1. 修復部分 UI 顯示效果。
+> 2. 支援多選 App 版本進行下載（按 Command 即可）。
+> 3. 從 Apple 取得來源時偵測到從未取得的 App，會進行二次確認。
+> 
+> ## English
+> 
+> Thank you for using Pastel!
+> 
+> We are happy to bring you Pastel 26.6.1.
+> 
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，開發者對問題的回應速度快。
-**連結**：[文件](https://github.com/EEliberto/IPA-Download)
+**社群活躍度**：社群活躍度中等，回應速度尚可。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-14 ~ 2026-06-15）
-> **活躍天數** 2 天 · **最新 commit** Polish table headers and publish build 5
+> [!abstract] 最近 10 次 commit（2026-06-14 ~ 2026-06-20）
+> **活躍天數** 3 天 · **最新 commit** Release Pastel 26.6.1
 
 ## README 摘錄
 
@@ -426,7 +434,7 @@ Pastel 的核心技術機制是基於 SwiftUI 和 Node.js，這使得應用在 m
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化]] · [[資料捕獲]]
+相關概念：[[自動化測試]] · [[API 設計]] · [[資料捕獲]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[Doorman11991--smallcode|Doorman11991/smallcode]]
 
@@ -470,7 +478,7 @@ Pastel 的核心技術機制是基於 SwiftUI 和 Node.js，這使得應用在 m
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化","資料捕獲"];
+> const concepts = ["自動化測試","API 設計","資料捕獲"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "EEliberto--IPA-Download" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
