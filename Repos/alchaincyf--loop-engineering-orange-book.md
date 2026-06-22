@@ -7,7 +7,7 @@ language: N/A
 license: NOASSERTION
 description: "别再问我什么是 Loop Engineering — 橙皮书系列。A plain-language guide to loop engineering (中文 + English PDF). Free."
 homepage: ""
-stars: 726
+stars: 725
 stars_per_day: 121
 forks: 63
 open_issues: 0
@@ -17,7 +17,7 @@ first_seen: 2026-06-19
 week: "2026-W25"
 month: "2026-06"
 category: "其他"
-subcategory: "AI 工具"
+subcategory: "AI 工具指南"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-19
-use_case: "提供一個清晰易懂的 Loop Engineering 指導，幫助開發者設計自動化系統。"
+use_case: "提供一個清晰易懂的 Loop Engineering 指南，幫助開發者設計自動化系統。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-19"
-star_history: "2026-06-19:672,2026-06-19:673,2026-06-20:702,2026-06-20:702,2026-06-21:716,2026-06-21:716,2026-06-22:726"
+star_history: "2026-06-19:672,2026-06-19:673,2026-06-20:702,2026-06-20:702,2026-06-21:716,2026-06-21:716,2026-06-22:726,2026-06-22:725"
 tags:
   - github
   - "category/其他"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "loop-engineering-orange-book"
   - "alchaincyf/loop-engineering-orange-book"
-  - "提供一個清晰易懂的 Loop Engineering 指導，幫助開發者設計自動化系統。"
+  - "提供一個清晰易懂的 Loop Engineering 指南，幫助開發者設計自動化系統。"
 ---
 
 # loop-engineering-orange-book
 
-**716** stars · **143** stars/天 · 建立 5 天前 · N/A · NOASSERTION
+**725** stars · **121** stars/天 · 建立 6 天前 · N/A · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供一個清晰易懂的 Loop Engineering 指導，幫助開發者設計自動化系統。
+> 提供一個清晰易懂的 Loop Engineering 指南，幫助開發者設計自動化系統。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (143 stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 5 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 希望提升 AI 自動化程度的開發者，特別是已經在使用 Claude Code 或 Codex 的人。
-> **一句話重點** 這本書不僅是對 Loop Engineering 的介紹，更是對於如何設計自動化系統的實用指導。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (121 stars/day)
+> **授權** NOASSERTION · **維護** Active (最後推送 6 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 希望提升 AI 使用效率的開發者，特別是已經在使用 Claude Code 或 Codex 的人。
+> **一句話重點** 這本書不僅是 Loop Engineering 的指南，更是對於如何高效使用 AI 工具的一次深刻反思。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/alchaincyf--loop-engineering-orange-book");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "AI 工具" && p.file.name !== "alchaincyf--loop-engineering-orange-book" && p.status !== "archived")
+>     .where(p => p.subcategory === "AI 工具指南" && p.file.name !== "alchaincyf--loop-engineering-orange-book" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,30 +96,30 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 AI 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 AI 工具指南 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到提升自動化的效果，值得一試。
+> **結論** 花 2 小時學習，1 小時整合，能夠快速理解 Loop Engineering 概念，值得一試。
 
 > [!abstract] 核心創新
-> 這本書提供了 Loop Engineering 的清晰定義和實用指導，幫助開發者設計自動化系統。
+> 這本書首次系統性地介紹了 Loop Engineering 的概念，並強調不再手動提示的必要性。
 
 ## 專案簡介
 
-這本書的核心在於 Loop Engineering，旨在幫助開發者設計一個能自動驅動 AI 代理的系統，而不是手動逐步提示。具體來說，使用者可以透過建立一個外部系統，這個系統能夠定時運行、生成輔助工具、驗證工作並記錄過程，最終決定下一步行動。這樣的設計不僅提高了效率，還減少了人為干預的需要。書中包含了九個章節，涵蓋了 Loop Engineering 的定義、運作方式、實際案例及如何開始構建自己的循環系統。技術上，這本書基於 Addy Osmani 的文章和 Claude Code 的官方文檔，提供了實用的參考資料。
+這本《橙皮書》提供了一個關於 Loop Engineering 的平易近人的指南，旨在幫助開發者理解如何設計一個自動化的系統來取代手動提示代理。核心機制是建立一個外部系統，這個系統能夠定時運行、生成輔助工具、驗證工作並決定下一步行動。這樣，開發者不再需要逐步提示代理，而是設計一個能自動運行的系統。這本書分為四個部分，涵蓋了 Loop Engineering 的定義、運作方式、實際案例及如何開始建設自己的 Loop。技術上，它不依賴於特定的編程語言或框架，而是提供了一個概念性的框架，讓開發者能夠在多種環境中應用。
 
-與傳統的 Harness Engineering 相比，Loop Engineering 更加關注整體系統的設計，這使得開發者能夠在更高的層次上進行自動化。這本書特別適合那些已經在使用 Claude Code 或 Codex 的開發者，並希望進一步提升自動化程度。實際使用中，開發者可能會發現，建立這樣的系統需要一定的學習曲線，但一旦掌握，將顯著提升工作效率。這本書的成熟度為 alpha 階段，適合對 AI 工具有一定了解的開發者閱讀。未來幾個月，隨著 Loop Engineering 概念的進一步普及，這本書可能會成為相關領域的重要參考資料。
+與其他類似的資源相比，這本書的獨特之處在於它強調了「不再手動提示」的理念，這在當前的 AI 開發中是個重要的轉變。使用這本書的開發者將能夠更高效地利用 AI 工具，並減少人為錯誤的可能性。這本書的作者 HuaShu 是一位知名的 AI 開發者，擁有豐富的實踐經驗，並且這本書是基於他對當前 AI 工具的深入理解而寫成的。整體來看，這本書適合那些希望提升 AI 使用效率的開發者，尤其是已經在使用 Claude Code 或 Codex 的人。未來六個月，隨著 AI 工具的快速發展，這本書可能會持續更新，以反映最新的技術變化。
 
 ## 重點功能
 
-- 清晰的 Loop Engineering 定義 — 解釋了 Loop Engineering 的起源及其重要性。
-- 實用的案例分析 — 包含 Addy Osmani 的早晨篩選、Stripe 的 Minions 等實際應用案例。
-- 分步驟的指導 — 提供如何開始構建自己的循環系統的具體步驟。
-- 多語言支持 — 提供中文和英文版本的 PDF 下載。
-- 免費下載 — 所有內容均可免費使用，無需付費。
+- 平易近人的解釋 — 將 Loop Engineering 的概念以簡單的語言呈現，讓開發者易於理解。
+- 實際案例分析 — 提供多個真實的 Loop Engineering 實例，幫助讀者理解如何應用。
+- 分步驟指南 — 指導讀者如何從零開始構建自己的 Loop 系統。
+- 多語言支持 — 提供中英文版本，方便不同語言的讀者使用。
+- 開放獲取 — 免費下載，鼓勵分享和修改，促進社群合作。
 
 ## 快速開始
 
@@ -127,86 +127,58 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 wget https://github.com/alchaincyf/loop-engineering-orange-book/raw/main/Loop-Engineering橙皮书-v260615.pdf
 ```
-2. 閱讀第一部分
+2. 閱讀第一部分以了解基本概念
 ```bash
-# 開始了解 Loop Engineering 的定義和背景
+# 直接翻閱 PDF 文件
 ```
-3. 實踐構建自己的循環系統
+3. 開始構建自己的 Loop 系統
 ```bash
-# 根據書中指導開始設計自己的系統
+# 參考書中第八章的指導
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天內累積 716 stars（143/天），forks 62（8.7%），顯示出強烈的社群興趣。這本書的作者 HuaShu 是一位知名的 AI 開發者，擁有超過 50 萬的追隨者，並且在 AI 工具的開發上有豐富的經驗。Loop Engineering 概念的興起正好填補了開發者在自動化系統設計上的需求，尤其是當前許多開發者仍在手動提示 AI 代理。社群中對於這一概念的討論和分享也促進了其快速傳播。這本書的出現正好契合了當前對於 AI 自動化的需求，並且提供了具體的實作指導。
+> 建立 6 天就累積 725 stars（121/天），forks 63（8.7%），顯示出強烈的興趣。作者 HuaShu 是一位知名的 AI 開發者，過去在社群中有著良好的聲譽。他針對當前開發者在使用 AI 工具時的痛點，提出了 Loop Engineering 的概念，這一點在社群中引起了廣泛的討論和關注。這本書的出現正好填補了市場上對於如何更有效使用 AI 工具的需求，特別是在不再依賴手動提示的情境下。這一轉變在當前的技術生態中是非常重要的，因為它能夠顯著提高開發效率。forks/stars 比率為 8.7%，顯示出許多人對這本書的內容感興趣，並且可能在實際使用中進行修改或擴展。
 
 ## 適合誰使用
 
-**目標受眾**：希望提升 AI 自動化程度的開發者，特別是已經在使用 Claude Code 或 Codex 的人。
+**目標受眾**：希望提升 AI 使用效率的開發者，特別是已經在使用 Claude Code 或 Codex 的人。
 
 > [!example] 使用場景
-> - AI 開發者用它來設計自動化的 AI 代理系統，因為這樣可以減少手動提示的時間，提升工作效率。
-> - 產品經理用它來理解 Loop Engineering 的概念，因為這能幫助他們在產品開發中更好地利用 AI 工具。
-> - 技術寫作者用它來撰寫關於 Loop Engineering 的文章，因為這本書提供了豐富的案例和參考資料。
+> - AI 開發者用它來設計一個自動化的系統，取代手動提示代理，因為這樣可以提高工作效率，減少錯誤。
+> - 產品經理用它來理解 Loop Engineering 的概念，幫助團隊更好地利用 AI 工具，因為這樣能夠提升產品開發的速度。
+> - 初學者用它來快速入門 Loop Engineering，因為這本書以平易近人的語言解釋了複雜的概念。
 
 ## 架構分析
 
-這本書的架構設計以循環系統為核心，強調自動化的設計思路。每個章節都圍繞著如何構建和運行這樣的系統。設計上選擇了簡單易懂的語言，讓開發者能夠快速上手。
-
-這樣的設計使得讀者能夠在短時間內理解 Loop Engineering 的概念，並應用於實際工作中。整體架構的優勢在於其可擴展性，讀者可以根據自己的需求進行調整和擴展。這種設計的代價是可能需要一定的背景知識，特別是對於 AI 工具的理解。
-
-未來在擴展性方面，可能會面臨新的技術挑戰，特別是在 AI 工具快速發展的背景下。
+這本書的架構設計以概念為主，並不涉及具體的技術架構。它分為四個部分，從基本定義到實際應用，逐步引導讀者理解 Loop Engineering 的重要性。每一部分都包含具體的案例和步驟，讓讀者能夠在實際操作中學習。這種設計使得即使是初學者也能夠快速上手，但也可能使得對於有經驗的開發者來說，缺乏深度的技術細節。整體來看，這本書的架構是為了讓讀者能夠輕鬆理解和應用 Loop Engineering，而非深入探討技術細節。
 
 ## 技術深入分析
 
-這本書的核心在於 Loop Engineering，這是一種設計自動化系統的思維方式。書中詳細介紹了如何構建一個能夠自動驅動 AI 代理的系統，這樣的系統能夠在不需要人為干預的情況下運行。這本書的內容基於 Addy Osmani 的文章和 Claude Code 的官方文檔，這使得其技術基礎相當穩固。雖然書中沒有提供具體的程式碼範例，但其概念和架構設計對於開發者來說是非常有價值的。這本書的設計考慮到了讀者的需求，提供了清晰的指導和實用的案例，這使得讀者能夠快速上手。未來，隨著 AI 工具的快速發展，這本書可能會面臨更新的挑戰，但其核心概念仍然具有長期的實用價值。
+這本書的核心在於 Loop Engineering，這是一種設計理念，旨在幫助開發者從手動提示轉向自動化系統。書中詳細解釋了 Loop 的運作方式，強調了如何設計一個能夠自動運行的系統，並提供了多個實際案例來說明其應用。這種設計理念的出現，正是因為當前 AI 工具的快速發展，開發者需要更高效的方式來利用這些工具。書中提到的成本分析，如驗證債務和認知衰退，讓讀者能夠更清楚地理解在設計系統時需要考慮的因素。整體來看，這本書不僅是對 Loop Engineering 的介紹，更是對於未來 AI 開發的一次深刻思考，讓讀者能夠在這個快速變化的領域中保持競爭力。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的指導，並且有多語言版本可供選擇。安裝過程相對簡單，只需下載 PDF 文件即可。書中提供了良好的入門指導，適合新手閱讀。整體來說，花 30 分鐘能夠快速理解 Loop Engineering 的基本概念。
+> README 文件清晰，提供中英文版本，適合不同語言的讀者。安裝過程非常簡單，只需下載 PDF 文件即可。雖然沒有詳細的入門指南，但書中的結構已經足夠引導讀者進入主題。整體來說，花 30 分鐘能夠輕鬆上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供清晰的 Loop Engineering 定義，幫助開發者理解概念。
-> - 包含實用的案例分析，讓讀者能夠看到理論的實際應用。
-> - 免費下載，降低了學習門檻。
+> - 以簡單的語言解釋複雜概念，適合廣泛讀者。
+> - 提供實際案例，幫助讀者理解如何應用 Loop Engineering。
+> - 免費下載，促進知識分享和社群合作。
 
 > [!danger] 缺點
-> - 內容更新速度可能無法跟上 AI 工具的快速變化。
-> - 對於完全沒有 AI 背景的讀者，可能需要額外的學習資源。
-> - 目前僅提供 PDF 格式，無法直接在網頁上瀏覽。
+> - 缺乏具體的程式碼範例，對於需要實作的開發者不夠友好。
+> - 對於完全不熟悉 AI 工具的讀者，可能需要額外的背景知識。
+> - 沒有針對特定編程語言的詳細說明，可能不適合需要具體代碼的開發者。
 
 > [!warning] 注意事項
-> - 目前僅提供 PDF 格式，無法直接在網頁上瀏覽。
-> - 內容更新速度可能無法跟上 AI 工具的快速變化。
-> - 對於完全沒有 AI 背景的讀者，可能需要額外的學習資源。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成和管理多個 AI 代理，而本專案則專注於設計自動化系統的整體架構。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了對於 AI 代理的管理工具，而 Loop Engineering 更加關注於如何自動化這些代理的運作。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成和管理多個 AI 代理，提供了更細緻的代理管理功能。 | 如果你的需求是管理多個 AI 代理，並需要更細緻的控制，則應選擇此工具。 | medium，因為需要重新設計代理的管理方式。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供了對於 AI 代理的管理工具，與 Loop Engineering 的自動化設計形成對比。 | 如果你需要一個專注於代理管理的工具，而不是整體系統設計，則應選擇此工具。 | low，因為兩者的核心概念相似。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **loop-engineering-orange-book** | **agent-sprite-forge** | **boneyard** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於生成和管理多個 AI 代理，提供了更細緻的代理管理功能。 | 提供了對於 AI 代理的管理工具，與 Loop Engineering 的自動化設計形成對比。 |
-> | 遷移成本 | - | medium，因為需要重新設計代理的管理方式。 | low，因為兩者的核心概念相似。 |
-> | 適用場景 | 主要場景 | 如果你的需求是管理多個 AI 代理，並需要更細緻的控制，則應 | 如果你需要一個專注於代理管理的工具，而不是整體系統設計，則應 |
+> - 不提供具體的編程實作範例，僅有概念性指導。
+> - 對於完全不熟悉 AI 工具的讀者，可能需要額外的背景知識。
+> - 沒有針對特定編程語言的詳細說明，可能不適合需要具體代碼的開發者。
 
 ## 成熟度評估
 
@@ -214,30 +186,30 @@ wget https://github.com/alchaincyf/loop-engineering-orange-book/raw/main/Loop-En
 | --- | --- |
 | 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | low |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合對 Loop Engineering 感興趣的開發者閱讀，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 對於沒有 AI 背景的讀者，可能會感到內容難以理解
-  - 解法：建議先閱讀相關的 AI 基礎知識
-- **[HIGH]** 書中未提供具體的程式碼範例，可能會影響實作
-  - 解法：參考其他相關資源進行實作
-- [low] PDF 格式的閱讀體驗不佳
-  - 解法：建議使用支持 PDF 的閱讀器進行閱讀
+- [MEDIUM] 書中未提供具體的程式碼範例，可能讓開發者感到困惑
+  - 解法：參考其他資源或書籍以獲取實作範例
+- [MEDIUM] 對於完全不熟悉 AI 工具的讀者，可能需要額外的背景知識
+  - 解法：建議先閱讀相關的 AI 工具入門書籍
+- [low] 書中案例的適用性可能因行業而異
+  - 解法：根據自身行業特性調整案例應用
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 適合 | 能夠幫助小型團隊快速實現自動化。 |
-| 大型企業的 AI 工具整合 | 普通 | 可能需要更專業的系統設計能力。 |
-| 個人開發者的 side project | 非常適合 | 提供了清晰的指導，適合快速上手。 |
-| 教育機構的 AI 課程 | 不適合 | 內容較為進階，可能不適合初學者。 |
+| 小型團隊希望提升 AI 工具的使用效率 | 非常適合 | 書中提供了清晰的指導和實際案例，適合小型團隊快速上手。 |
+| 大型企業需要建立自動化的 AI 系統 | 適合 | 雖然書中不提供具體的技術細節，但概念性指導對於大型企業的設計思路仍有幫助。 |
+| 完全不熟悉 AI 工具的初學者 | 普通 | 需要額外的背景知識，但書中提供的平易近人解釋有助於理解。 |
+| 希望深入技術細節的資深開發者 | 不適合 | 缺乏具體的程式碼範例和深入的技術分析，可能無法滿足資深開發者的需求。 |
 
 ## 採用成本分析
 
@@ -249,18 +221,42 @@ wget https://github.com/alchaincyf/loop-engineering-orange-book/raw/main/Loop-En
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到提升自動化的效果，值得一試。
+> 花 2 小時學習，1 小時整合，能夠快速理解 Loop Engineering 概念，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這本書本身不需要高權限，也不會存取敏感資料，適合在 CI/CD pipeline 中安全使用。
+> 低風險：這本書本身不需要高權限，也不存取敏感資料，適合在各種環境中安全使用。
 
 ## 生態系整合
 
 > [!abstract] 如何融入你的工具鏈
 
-這本書的內容可以與現有的 AI 工具鏈結合使用，特別是與 Claude Code 和 Codex 的整合。開發者可以在使用這些工具時，應用書中的概念來設計自動化系統。實際上，在一個使用 Claude Code 的專案中，開發者可以根據書中的指導，設計一個自動化的工作流程，具體做法是使用 Claude Code 的 API 來觸發自動化任務。這本書的概念與主流工具鏈相容，並且可以輕鬆整合到現有的 CI/CD 流程中。整合的摩擦點主要在於需要理解 Loop Engineering 的概念，對於初學者來說可能需要一些時間來適應。
+這本書的內容可以與多種 AI 工具和框架結合使用，特別是 Claude Code 和 Codex。在一個使用 Claude Code 的專案中，開發者可以根據書中的指導設計自動化的 Loop 系統。這樣的設計能夠提升開發效率，減少手動操作的需求。書中提到的概念可以輕鬆融入現有的技術生態，並且不會對現有的工具鏈造成摩擦。整體來看，這本書的內容能夠與當前流行的 AI 工具無縫整合，幫助開發者更好地利用這些資源。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 Loop Engineering 出現之前，開發者通常依賴手動提示來操作 AI 工具，這樣的方式效率低下且容易出錯。隨著 AI 技術的快速發展，開發者需要更高效的解決方案來利用這些工具。Loop Engineering 的出現正是為了解決這一問題，提供了一種新的設計理念，幫助開發者自動化這一過程。
+
+這本書代表了 AI 開發的一個重要趨勢，未來可能會有更多類似的資源出現，幫助開發者更好地適應這一變化。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-5 人的小型團隊
+
+**前置技能**：
+- 基本的 AI 工具使用經驗
+- 理解自動化概念
+
+> [!tip] 導入策略
+> 第一週：團隊成員閱讀書籍。第二週：在小型專案中實驗 Loop Engineering 概念。第三週：根據實驗結果調整設計思路。第四週：在主要專案中實施自動化系統。
+
+**成功指標**：開發效率提升 30%，錯誤率降低 20%。
+
+> [!warning] 退出計畫
+> 如果要退出這個工具，可以將設計文檔轉換為標準格式，方便未來的系統重構。
 
 ## 健康度儀表板
 
@@ -325,7 +321,7 @@ wget https://github.com/alchaincyf/loop-engineering-orange-book/raw/main/Loop-En
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 62 |
+| Forks | 63 |
 | Open Issues | 0 |
 | 最後推送 | 2026-06-15 |
 | 建立日期 | 2026-06-15 |
@@ -339,7 +335,7 @@ wget https://github.com/alchaincyf/loop-engineering-orange-book/raw/main/Loop-En
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，持續有關於 Loop Engineering 的討論和分享。
+**社群活躍度**：社群活躍度高，定期更新和分享相關資源。
 **連結**：[文件](https://www.huasheng.ai/orange-books)
 
 ## 開發動態
@@ -435,11 +431,11 @@ wget https://github.com/alchaincyf/loop-engineering-orange-book/raw/main/Loop-En
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：AI 工具）
+> [!note]- 直接競品（同子分類：AI 工具指南）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "AI 工具" AND file.name != "alchaincyf--loop-engineering-orange-book"
+> WHERE subcategory = "AI 工具指南" AND file.name != "alchaincyf--loop-engineering-orange-book"
 > SORT stars DESC
 > ```
 
