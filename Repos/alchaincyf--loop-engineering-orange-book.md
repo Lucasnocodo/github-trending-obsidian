@@ -7,9 +7,9 @@ language: N/A
 license: NOASSERTION
 description: "别再问我什么是 Loop Engineering — 橙皮书系列。A plain-language guide to loop engineering (中文 + English PDF). Free."
 homepage: ""
-stars: 716
-stars_per_day: 143
-forks: 62
+stars: 726
+stars_per_day: 121
+forks: 63
 open_issues: 0
 created: 2026-06-15
 pushed_at: 2026-06-15
@@ -30,8 +30,8 @@ use_case: "提供一個清晰易懂的 Loop Engineering 指導，幫助開發者
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-06-28"
+appearances: 4
+next_review: "2026-06-29"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-19"
-star_history: "2026-06-19:672,2026-06-19:673,2026-06-20:702,2026-06-20:702,2026-06-21:716,2026-06-21:716"
+star_history: "2026-06-19:672,2026-06-19:673,2026-06-20:702,2026-06-20:702,2026-06-21:716,2026-06-21:716,2026-06-22:726"
 tags:
   - github
   - "category/其他"
@@ -725,6 +725,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-22|2026-06-22]] — 再次上榜，726 stars
 - [[2026-06-21|2026-06-21]] — 再次上榜，716 stars
 - [[2026-06-20|2026-06-20]] — 再次上榜，702 stars
 - [[2026-06-19|2026-06-19]] — 首次收錄，672 stars

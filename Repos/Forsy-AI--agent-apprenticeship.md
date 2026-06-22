@@ -7,10 +7,10 @@ language: N/A
 license: MIT
 description: "The living ecosystem where AI agents learn from real-world work through iterative workflow loops, reusable experience, and collective training signal exchange."
 homepage: "https://agentapprenticeship.org/"
-stars: 529
-stars_per_day: 529
-forks: 0
-open_issues: 0
+stars: 609
+stars_per_day: 305
+forks: 1
+open_issues: 1
 created: 2026-06-19
 pushed_at: 2026-06-20
 first_seen: 2026-06-21
@@ -30,8 +30,8 @@ use_case: "讓 AI 代理透過真實工作學習，實現可重複的經驗與�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-24"
+appearances: 2
+next_review: "2026-06-25"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-21"
-star_history: "2026-06-21:529,2026-06-21:529"
+star_history: "2026-06-21:529,2026-06-21:529,2026-06-22:609"
 tags:
   - github
   - "category/ai_ml"
@@ -993,4 +993,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-22|2026-06-22]] — 再次上榜，609 stars
 - [[2026-06-21|2026-06-21]] — 首次收錄，529 stars

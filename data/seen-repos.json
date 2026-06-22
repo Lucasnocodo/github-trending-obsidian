@@ -2402,10 +2402,10 @@
   },
   "vercel/eve": {
     "first_seen": "2026-06-18",
-    "last_seen": "2026-06-21",
-    "times_seen": 4,
+    "last_seen": "2026-06-22",
+    "times_seen": 5,
     "stars_first": 693,
-    "stars_last": 1868
+    "stars_last": 2083
   },
   "joeseesun/qiaomu-goal-meta-skill": {
     "first_seen": "2026-06-18",
@@ -2423,10 +2423,10 @@
   },
   "alchaincyf/loop-engineering-orange-book": {
     "first_seen": "2026-06-19",
-    "last_seen": "2026-06-21",
-    "times_seen": 3,
+    "last_seen": "2026-06-22",
+    "times_seen": 4,
     "stars_first": 672,
-    "stars_last": 716
+    "stars_last": 726
   },
   "vorssaint/vorssaint-utils": {
     "first_seen": "2026-06-19",
@@ -2444,10 +2444,10 @@
   },
   "Plaer1/junction": {
     "first_seen": "2026-06-20",
-    "last_seen": "2026-06-21",
-    "times_seen": 2,
+    "last_seen": "2026-06-22",
+    "times_seen": 3,
     "stars_first": 513,
-    "stars_last": 516
+    "stars_last": 517
   },
   "fivetaku/fablize": {
     "first_seen": "2026-06-20",
@@ -2465,23 +2465,51 @@
   },
   "rebel0789/codexpro": {
     "first_seen": "2026-06-20",
-    "last_seen": "2026-06-21",
-    "times_seen": 2,
+    "last_seen": "2026-06-22",
+    "times_seen": 3,
     "stars_first": 446,
-    "stars_last": 542
+    "stars_last": 625
   },
   "Forsy-AI/agent-apprenticeship": {
     "first_seen": "2026-06-21",
-    "last_seen": "2026-06-21",
-    "times_seen": 1,
+    "last_seen": "2026-06-22",
+    "times_seen": 2,
     "stars_first": 529,
-    "stars_last": 529
+    "stars_last": 609
   },
   "dongshuyan/compass-skills": {
     "first_seen": "2026-06-21",
-    "last_seen": "2026-06-21",
-    "times_seen": 1,
+    "last_seen": "2026-06-22",
+    "times_seen": 2,
     "stars_first": 397,
-    "stars_last": 397
+    "stars_last": 429
+  },
+  "zhongerxin/Cowart": {
+    "first_seen": "2026-06-22",
+    "last_seen": "2026-06-22",
+    "times_seen": 1,
+    "stars_first": 1227,
+    "stars_last": 1227
+  },
+  "ngrok/webernetes": {
+    "first_seen": "2026-06-22",
+    "last_seen": "2026-06-22",
+    "times_seen": 1,
+    "stars_first": 482,
+    "stars_last": 482
+  },
+  "boogu-project/Boogu-Image": {
+    "first_seen": "2026-06-22",
+    "last_seen": "2026-06-22",
+    "times_seen": 1,
+    "stars_first": 392,
+    "stars_last": 392
+  },
+  "MstKail/polymarket-trading-bot-services-polyedge365": {
+    "first_seen": "2026-06-22",
+    "last_seen": "2026-06-22",
+    "times_seen": 1,
+    "stars_first": 378,
+    "stars_last": 378
   }
 }

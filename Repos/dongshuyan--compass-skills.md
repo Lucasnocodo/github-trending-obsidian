@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "司南：个性化 AI 任务总控 Skills 系统 /COMPASS: Personal Alignment Skills OS for AI Agents"
 homepage: ""
-stars: 397
-stars_per_day: 79
-forks: 34
+stars: 429
+stars_per_day: 72
+forks: 35
 open_issues: 0
 created: 2026-06-15
-pushed_at: 2026-06-20
+pushed_at: 2026-06-21
 first_seen: 2026-06-21
 week: "2026-W26"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "提供個性化 AI 任務管理的技能系統，幫助 AI 更有效�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-28"
+appearances: 2
+next_review: "2026-06-29"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: 5
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-21"
-star_history: "2026-06-21:397,2026-06-21:397"
+star_history: "2026-06-21:397,2026-06-21:397,2026-06-22:429"
 tags:
   - github
   - "category/開發工具"
@@ -895,4 +895,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-22|2026-06-22]] — 再次上榜，429 stars
 - [[2026-06-21|2026-06-21]] — 首次收錄，397 stars
