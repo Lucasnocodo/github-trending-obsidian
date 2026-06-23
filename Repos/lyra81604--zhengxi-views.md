@@ -526,7 +526,7 @@ mkdir -p "$HOME/.claude/skills/zhengxi-views" && cp -R SKILL.md README.md refere
 
 相關概念：[[Agent 框架]] · [[投資方法論]] · [[資料視覺化]]
 
-相關專案：[[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[alchaincyf--hermes-agent-orange-book|alchaincyf/hermes-agent-orange-book]] · [[mrtooher--fable-mode|mrtooher/fable-mode]] · [[garrytan--gbrain|garrytan/gbrain]]
+相關專案：[[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[alchaincyf--hermes-agent-orange-book|alchaincyf/hermes-agent-orange-book]] · [[mrtooher--fable-mode|mrtooher/fable-mode]] · [[garrytan--gbrain|garrytan/gbrain]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]]
 
 [GitHub](https://github.com/lyra81604/zhengxi-views) · [官方網站](https://www.efunds.com.cn/manager/462.shtml)
 
