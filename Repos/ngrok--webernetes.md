@@ -7,9 +7,9 @@ language: TypeScript
 license: Apache-2.0
 description: "Kubernetes in the browser."
 homepage: ""
-stars: 482
-stars_per_day: 96
-forks: 38
+stars: 541
+stars_per_day: 90
+forks: 42
 open_issues: 4
 created: 2026-06-16
 pushed_at: 2026-06-18
@@ -30,8 +30,8 @@ use_case: "在瀏覽器中運行的 Kubernetes 模擬器。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-29"
+appearances: 2
+next_review: "2026-06-30"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-22"
-star_history: "2026-06-22:482"
+star_history: "2026-06-22:482,2026-06-23:541"
 tags:
   - github
   - "category/開發工具"
@@ -909,4 +909,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-23|2026-06-23]] — 再次上榜，541 stars
 - [[2026-06-22|2026-06-22]] — 首次收錄，482 stars

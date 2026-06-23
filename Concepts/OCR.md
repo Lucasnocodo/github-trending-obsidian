@@ -2,14 +2,14 @@
 tags:
   - concept
 aliases:
-  - "agent-learning"
+  - "OCR"
 ---
 
-# agent-learning
+# OCR
 
 ## 是什麼
 
-Agent-learning 是一種機器學習方法，讓智能體（agent）在環境中學習如何做出最佳決策。這種技術在自動駕駛、遊戲 AI 和機器人控制等領域非常重要，能夠提高系統的自主性和效率。
+OCR（光學字符識別）是一種技術，可以將印刷或手寫的文字轉換成可編輯的數位文本。這項技術在文檔數位化、資料擷取和自動化處理中非常重要，像是 Adobe Acrobat 和 Tesseract 都是常見的 OCR 工具。
 
 ## 快速統計
 

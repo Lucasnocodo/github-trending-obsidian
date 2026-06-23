@@ -1,70 +1,65 @@
 ---
-repo: Juwluuu/Subnautica-2-Release
-url: https://github.com/Juwluuu/Subnautica-2-Release
-owner: Juwluuu
+repo: kanavtwtgg/birds.cafe
+url: https://github.com/kanavtwtgg/birds.cafe
+owner: kanavtwtgg
 owner_type: User
-language: C++
-license: MIT
-description: "Subnautica 2: Early Access release, Have Multiplayer 4-player co-op multiplayer, Planet Zazura exploration, DNA BioMod system, Tadpole modular submersible, new Leviathans list, CICADA crash site lore. Xbox Game Pass, Steam preload, base building blueprints, ocean currents, crafting recipes"
+language: JavaScript
+license: N/A
+description: ""
 homepage: ""
-stars: 97
-stars_per_day: 4
+stars: 550
+stars_per_day: 550
 forks: 0
 open_issues: 0
-created: 2026-05-14
-pushed_at: 2026-05-14
-first_seen: 2026-05-20
-week: "2026-W21"
-month: "2026-05"
+created: 2026-06-21
+pushed_at: 2026-06-21
+first_seen: 2026-06-23
+week: "2026-W26"
+month: "2026-06"
 category: "遊戲"
-subcategory: "水下生存"
-release_tag: "Games"
+subcategory: "模擬"
+release_tag: ""
 install_complexity: "easy"
-status: archived
+status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-05-20
-use_case: "提供多人合作的水下生存冒險遊戲 Subnautica 2，探索新星球 Zazura。"
-priority: medium
+last_reviewed: 2026-06-23
+use_case: "提供一個放鬆的鳥類模擬體驗，讓你在瀕臨海岸的天空中駕駛海鷗群。"
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-05-28"
+appearances: 1
+next_review: "2026-06-26"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
-repo_size_kb: 62
-readme_length: 1934
+repo_size_kb: 79
+readme_length: 961
 bus_factor: 1
-last_release_days: 25
-release_cadence: "monthly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-05-20"
-star_history: "2026-05-20:644,2026-05-20:644,2026-05-21:669,2026-05-21:669,2026-05-22:599,2026-05-23:460,2026-05-24:461,2026-05-25:459,2026-05-26:404,2026-05-27:401,2026-05-28:401,2026-05-29:401,2026-05-30:400,2026-05-31:399,2026-06-01:399,2026-06-02:396,2026-06-03:127,2026-06-04:126,2026-06-05:108,2026-06-06:98,2026-06-07:98,2026-06-08:97"
+ring_history: "assess@2026-06-23"
+star_history: "2026-06-23:550"
 tags:
   - github
   - "category/遊戲"
-  - "lang/c++"
+  - "lang/javascript"
   - easy_install
-  - "topic/early_access_subnautica_2"
-  - "topic/nitrox_pirate"
-  - "topic/pc_ports"
-  - "topic/playstation_5"
-  - "topic/porting_game"
 aliases:
-  - "Subnautica-2-Release"
-  - "Juwluuu/Subnautica-2-Release"
-  - "提供多人合作的水下生存冒險遊戲 Subnautica 2，探索新星球 Zazura。"
+  - "birds.cafe"
+  - "kanavtwtgg/birds.cafe"
+  - "提供一個放鬆的鳥類模擬體驗，讓你在瀕臨海岸的天空中駕駛海鷗群。"
 ---
 
-# Subnautica-2-Release
+# birds.cafe
 
-**97** stars · **4** stars/天 · 建立 24 天前 · C++ · MIT
+**550** stars · **550** stars/天 · 建立 1 天前 · JavaScript · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/Juwluuu--Subnautica-2-Release");
+const me = dv.page("Repos/kanavtwtgg--birds.cafe");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -74,25 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `Games` `easy-install`
-
-`early-access-subnautica-2` `nitrox-pirate` `pc-ports` `playstation-5` `porting-game` `ps5-bot` `ps5-stock` `subnautica` `subnautica-2` `subnautica-2-coming-to-ps5` `subnautica-2-multiplayer` `subnautica-2-on-ps5` `subnautica-2-release` `subnautica-2-release-date-ps5` `subnautica-2-steam` `subnautica-2-xbox` `subnautica-multiplayer` `unknown-worlds`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供多人合作的水下生存冒險遊戲 Subnautica 2，探索新星球 Zazura。
+> 提供一個放鬆的鳥類模擬體驗，讓你在瀕臨海岸的天空中駕駛海鷗群。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Steady (4 stars/day)
-> **授權** MIT (商業友好) · **維護** Moderate (最後推送 24 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 對水下生存冒險遊戲感興趣並希望與朋友一起遊玩的玩家。
-> **一句話重點** Subnautica 2 將水下生存遊戲的多人合作模式帶入全新層次，讓玩家可以一起探索和生存。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (550 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 喜歡放鬆和自然體驗的玩家，尤其是對飛行模擬有興趣的人。
+> **一句話重點** 這個專案展示了如何透過簡單的設計來創造出放鬆的體驗，讓用戶能夠享受飛行的樂趣。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/Juwluuu--Subnautica-2-Release");
+> const me = dv.page("Repos/kanavtwtgg--birds.cafe");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "水下生存" && p.file.name !== "Juwluuu--Subnautica-2-Release" && p.status !== "archived")
+>     .where(p => p.subcategory === "模擬" && p.file.name !== "kanavtwtgg--birds.cafe" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,7 +96,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 水下生存 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 模擬 類工具_"); }
 > }
 > ```
 
@@ -111,92 +104,90 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > **安裝** Easy (一行搞定)
 
 > [!abstract] 核心創新
-> 引入了多人合作模式，讓最多四名玩家可以一起探索新星球。
+> 這個專案提供了一個無壓力的鳥類飛行模擬體驗，讓用戶能夠隨意探索。
 
 ## 專案簡介
 
-Subnautica 2 是一款全新的水下生存冒險遊戲，玩家可以在全新的外星海洋中探索、建造基地、製作裝備，並與危險的生物搏鬥。遊戲的核心機制是讓玩家在探索過程中收集資源，建造基地來保護自己，並解開海洋深處的秘密。安裝後，玩家可以透過 `Subnautica2.exe` 開始冒險，並根據自己的電腦調整畫面設定。這款遊戲的賣點在於其精美的水下視覺效果和深度故事情節，並且支持全控制器和鍵盤操作。技術上，這款遊戲使用 C++ 開發，並建議在高效能的 PC 上運行以獲得最佳體驗。
+這個專案是一個瀏覽器基於的鳥類模擬，讓用戶可以在沒有壓力的環境中，駕駛一群海鷗在海洋上空飛行。用戶可以使用鍵盤的方向鍵來操控飛行，並透過 `+` 和 `-` 鍵來調整速度，還能透過空白鍵切換 V 形隊形。這樣的設計讓用戶能夠享受飛行的樂趣，並體驗不同的天氣變化，如白天、夜晚、暴風雨等。這種物理驅動的飛行模擬不僅有趣，還能帶來放鬆的感受。使用 Three.js 和 WebGL 技術，這個專案能夠在瀏覽器中流暢運行，並且在移動設備上也有良好的觸控控制體驗。這個專案的賣點在於它提供了一個無壓力的環境，讓用戶可以隨意探索，而不是傳統遊戲中的競爭和分數系統。
 
-遊戲的生存機制經過改進，並引入了新的生物和生態系統，讓玩家面對更多挑戰。與前作相比，這款遊戲的基地建設系統更加先進，並且增加了多人合作模式，最多可支持四名玩家一起遊玩。這使得玩家可以與朋友一起探索這個新世界，增強了遊戲的互動性和樂趣。值得注意的是，遊戲目前仍在早期訪問階段，可能會有一些未解決的問題和錯誤。對於喜歡水下探險和生存遊戲的玩家來說，這款遊戲無疑是值得期待的作品。
+與其他遊戲相比，這個專案不需要完成任務或達成目標，讓用戶能夠完全沉浸在飛行的過程中。這種設計使得它更像是一種藝術體驗，而非傳統意義上的遊戲。由於沒有開放的問題，這個專案的社群活躍度目前看起來良好，未來可能會吸引更多用戶來體驗這種獨特的模擬。整體而言，這是一個適合任何想要放鬆心情的人使用的工具，特別是對於喜歡自然和飛行的人來說。使用者可以在任何時候進入這個模擬，享受平靜的飛行體驗。
 
-**技術棧**：`C++`
+**技術棧**：`JavaScript` · `HTML` · `CSS` · `Three.js`
 
 ## 重點功能
 
-- 全新外星海洋探索 — 玩家可以在全新的星球 Zazura 中探索廣闊的海洋。
-- 先進的基地建設系統 — 提供多樣的建設選項，讓玩家可以自由設計自己的基地。
-- 新增生物和生態系統 — 遊戲中引入了新的生物，增加了生存挑戰。
-- 改進的生存機制 — 玩家需要管理資源以生存，面對更具挑戰性的環境。
-- 支持多種控制方式 — 完全支持控制器和鍵盤操作，方便玩家選擇。
+- 瀏覽器運行 — 完全在瀏覽器中運行，無需安裝任何額外軟體。
+- 物理基礎飛行 — 使用物理引擎實現的飛行體驗，讓飛行更真實。
+- 動態天氣 — 支援白天、夜晚、暴風雨等多種天氣變化。
+- 環境音樂 — 提供舒緩的背景音樂，增強沉浸感。
+- 移動設備友好 — 在手機上也能流暢運行，並支援觸控操作。
 
 ## 快速開始
 
-1. 下載並解壓縮檔案
+1. 下載專案並解壓
 ```bash
-Download Subnautica2-Installer.zip
+git clone https://github.com/kanavtwtgg/birds.cafe.git
 ```
-2. 以管理員身份運行遊戲
+2. 啟動靜態檔案伺服器
 ```bash
-Run Subnautica2.exe as Administrator
+python -m http.server 8000
 ```
-3. 根據電腦調整圖形設定
+3. 在瀏覽器中打開
 ```bash
-Adjust graphics settings according to your PC
-```
-4. 開始遊戲
-```bash
-Begin your new underwater adventure
+http://localhost:8000
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 24 天就累積 97 stars（約 4 stars/天），forks 為 0，顯示出目前的關注度較低。這款遊戲由 Juwluuu 開發，可能是因為其前作的成功而受到期待。此遊戲解決了多人合作水下生存遊戲的需求，之前的 Subnautica 雖然受歡迎，但並不支持多人模式。遊戲的早期訪問釋出可能吸引了部分玩家的注意，但仍需時間建立更大的社群和使用者基礎。
+> 建立 1 天就累積 550 stars（550/天），forks 0（0.0%），這顯示出其初期的吸引力。作者 kanavtwtgg 似乎是個新興開發者，這個專案提供了一個獨特的放鬆體驗，解決了傳統遊戲中的壓力問題。沒有明顯的觸發事件，但這種無壓力的模擬遊戲在當前的遊戲市場中是相對少見的。這個工具的成功可能與人們對於放鬆和簡單娛樂的需求有關。由於目前沒有 forks，顯示出用戶對於修改或擴展的興趣尚未形成。
 
 ## 適合誰使用
 
-**目標受眾**：對水下生存冒險遊戲感興趣並希望與朋友一起遊玩的玩家。
+**目標受眾**：喜歡放鬆和自然體驗的玩家，尤其是對飛行模擬有興趣的人。
 
 > [!example] 使用場景
-> - 遊戲開發者用它來測試多人合作的遊戲機制，因為這是目前水下生存遊戲中少數支持多人模式的選擇。
-> - 水下探險愛好者用它來體驗全新的外星海洋，因為其精美的視覺效果和深度故事情節讓人沉浸其中。
-> - 玩家用它來與朋友一起探索新星球，因為最多可支持四人合作，增強了遊戲的互動性。
+> - 休閒玩家用它來放鬆心情，因為它提供了一個無壓力的飛行體驗，讓人能夠暫時逃離日常生活的壓力。
+> - 學生用它來減壓，因為在學習期間能夠透過這種簡單的模擬來放鬆大腦，提升專注力。
+> - 藝術愛好者用它來尋找靈感，因為其獨特的視覺效果和音樂能夠激發創意。
 
 ## 架構分析
 
-遊戲採用 C++ 開發，這使得其在性能上有較好的表現，特別是在處理複雜的水下物理和生物行為時。遊戲的資料流主要是通過直接的檔案讀取和即時渲染來實現，這樣的設計使得玩家能夠即時看到環境變化。選擇 C++ 而非其他高層次語言，主要是為了獲得更高的性能和更細緻的控制，但這也意味著開發過程中可能需要更多的時間來處理記憶體管理和效能優化。遊戲的擴展性在於其基於模組化的設計，未來可能會透過 DLC 或更新來增加新內容。
+這個專案採用瀏覽器端的架構，利用 Three.js 和 WebGL 技術實現3D 渲染。這樣的設計使得用戶無需安裝任何軟體，直接在瀏覽器中即可體驗。資料流方面，使用者的輸入（如方向鍵和速度調整）會即時影響飛行的物理狀態，並透過動畫呈現出來。
+
+這種設計的優勢在於降低了使用門檻，但可能在高負載情況下影響效能。由於專案目前沒有依賴其他大型框架，整體架構相對輕量，易於維護和擴展。未來若要增加更多功能（如多人模式），可能需要重新考量架構設計以支援更複雜的資料流和伺服器端邏輯。
 
 ## 技術深入分析
 
-Subnautica 2 的核心技術機制基於 C++，這使得遊戲在處理複雜的水下物理和生物行為時能夠達到高效能。遊戲的資料流主要依賴即時渲染和檔案讀取，這樣的設計讓玩家能夠即時體驗到環境的變化。由於選擇 C++，開發團隊需要面對記憶體管理的挑戰，但這也使得遊戲在效能上有更大的潛力。設計上，遊戲的擴展性良好，未來可透過更新或 DLC 增加新內容。技術風險方面，若遊戲在擴展時未能妥善管理記憶體，可能會導致性能下降。整合方面，遊戲的安裝和運行相對簡單，但對於硬體的要求較高，可能會限制一些玩家的體驗。
+專案的核心技術機制是基於 Three.js 的 3D 渲染，利用 WebGL 提供的硬體加速來實現流暢的動畫效果。這種技術選擇使得專案能夠在現代瀏覽器中運行，並且支援各種設備。效能方面，由於專案主要依賴於瀏覽器的渲染能力，因此在高性能設備上能夠提供更佳的體驗，但在低性能設備上可能會出現卡頓現象。設計上選擇了輕量級的 JavaScript 框架，這樣的選擇使得專案易於維護，但在未來若要擴展功能，可能需要考慮更複雜的架構。技術風險方面，隨著使用者數量的增加，可能會對伺服器的負載造成壓力，尤其是在未來考慮增加多人模式時。整合方面，由於專案是獨立運行的，與主流框架的整合難度較低，但若要與其他工具鏈結合，可能需要額外的適配工作。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和故障排除建議，讓新手能夠順利上手。安裝過程相對順暢，但需要以管理員身份運行，這可能對某些用戶造成困擾。文件中沒有提供多語言支持，僅以英文為主，這對非英語使用者可能會造成障礙。
+> README 文件清晰且提供了簡單的運行指令，讓新手能夠快速上手。安裝過程順暢，無需複雜的配置。雖然沒有詳細的入門指南，但基本的使用說明已經足夠讓用戶開始體驗。文件目前僅提供英文版本，可能對非英語使用者造成一些障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 精美的水下視覺效果，提供沉浸式體驗。
-> - 先進的基地建設系統，讓玩家自由發揮創意。
-> - 支持多人合作，增強遊戲的互動性。
+> - 無壓力的遊戲體驗，適合放鬆心情。
+> - 簡單易用，無需安裝即可運行。
+> - 動態天氣和環境音樂增強沉浸感。
 
 > [!danger] 缺點
-> - 目前仍在早期訪問階段，可能存在錯誤。
-> - 對硬體要求較高，需高效能 PC。
-> - 缺乏社群支持，可能影響遊戲的長期發展。
+> - 功能較為單一，缺乏競爭性元素。
+> - 不支援多人遊玩，限制了社交互動。
+> - 對於低性能設備的支援不足，可能影響體驗。
 
 > [!warning] 注意事項
-> - 目前僅支援 Windows 10 和 Windows 11。
-> - 遊戲仍在早期訪問階段，可能存在未解決的錯誤。
-> - 需要高效能的 PC 以獲得最佳遊玩體驗。
+> - 僅支援現代瀏覽器，舊版瀏覽器可能無法正常運行。
+> - 對於低性能設備，可能會影響流暢度。
+> - 不支援多玩家模式，僅限單人體驗。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/Juwluuu--Subnautica-2-Release");
+> const me = dv.page("Repos/kanavtwtgg--birds.cafe");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -231,7 +222,7 @@ Subnautica 2 的核心技術機制基於 C++，這使得遊戲在處理複雜的
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/Juwluuu--Subnautica-2-Release");
+> const me = dv.page("Repos/kanavtwtgg--birds.cafe");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -257,91 +248,92 @@ Subnautica 2 的核心技術機制基於 C++，這使得遊戲在處理複雜的
 | --- | --- |
 | Forks | 0 |
 | Open Issues | 0 |
-| 最後推送 | 2026-05-14 |
-| 建立日期 | 2026-05-14 |
-| Repo 大小 | 62 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Juwluuu/Subnautica-2-Release) |
-| Topics | `early-access-subnautica-2` `nitrox-pirate` `pc-ports` `playstation-5` `porting-game` `ps5-bot` `ps5-stock` `subnautica` |
+| 最後推送 | 2026-06-21 |
+| 建立日期 | 2026-06-21 |
+| Repo 大小 | 79 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/kanavtwtgg/birds.cafe) |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "JavaScript" : 92
+>     "HTML" : 4
+>     "CSS" : 4
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Juwluuu](https://github.com/Juwluuu) | 7 |
+> | [@kanavtwtgg](https://github.com/kanavtwtgg) | 2 |
 
-**最新版本**：Games — Subnautica 2 Release (2026-05-14)
+## 社群與生態
+
+**社群活躍度**：目前社群活躍度良好，無開放問題。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-05-14 ~ 2026-05-14）
-> **活躍天數** 1 天 · **最新 commit** Update README.md
+> [!abstract] 最近 10 次 commit（2026-06-21 ~ 2026-06-21）
+> **活躍天數** 1 天 · **最新 commit** Add files via upload
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Subnautica 2 + Multiplayer
+> # birds.cafe ☕️🦜
 > 
-> [](https://github.com/Juwluuu/Subnautica-2-Release/stargazers)
-> [](https://github.com/Juwluuu/Subnautica-2-Release/network)
-> [](https://github.com/Juwluuu/Subnautica-2-Release/releases)
-> [](LICENSE)
+> **Imagine if you could just fly like a bird.**
 > 
-> > **Subnautica 2** — Epic underwater survival adventure in a new alien ocean full of wonder, danger, and mystery.
+> No missions. No scores. No stress.
 > 
-> ## Overview
-> **Subnautica 2** is the highly anticipated sequel to the beloved underwater survival game. Explore a brand new alien planet, build bases, craft equipment, survive dangerous creatures, and uncover the secrets hidden beneath the waves.
+> A relaxing, browser-based bird sim where you steer a flock of seagulls in V-formation over the ocean — through day, night, storms, rain, and lightning.
 > 
-> > [!Important]
-> > This is the PC version of the game. High-end PC recommended for the best experience.
+> **Live:** [birds.cafe](http://birds.cafe)
 > 
-> ## Key Features
-> - Vast new alien ocean to explore
-> - Advanced base building system
-> - New creatures and ecosystems
-> - Improved survival mechanics
-> - Stunning underwater visuals
-> - Deep story and exploration
-> - Full controller and keyboard support
+> It's not really a "game." It's a quiet, soothing experience.
 > 
-> # Screenshot:
+> ## Features
 > 
-> ---
-> ## Install
-> [Download `Subnautica2-Installer.zip`](https://github.com/Juwluuu/Subnautica-2-Release/releases/download/Games/Subnautica2-Installer.zip)
-> ---
-> > Optimized for Windows 10 and Windows 11.
+> - Runs fully in the browser (WebGL / Three.js)
+> - Physics-based flight with flock V-formation
+> - Dynamic weather: day, night, storm, rain, lightning
+> - Ambient music
+> - Smooth on mobile with touch controls
 > 
-> ## Installation
-> ### For Regular Users
-> 1. Download and extract the archive
-> 2. Run `Subnautica2.exe` as Administrator
-> 3. Adjust graphics settings according to your PC
-> 4. Begin your new underwater adventure
+> ## Controls
 > 
-> ---
-> ## Troubleshooting
-> | Problem                    | Solution                                      |
-> |----------------------------|-----------------------------------------------|
-> | Game doesn't start         | Run as Administrator                          |
-> | Low FPS                    | Lower graphics settings or resolution         |
-> | Black screen               | Switch to Borderless Windowed mode            |
-> | Antivirus warning          | Add the folder to exclusions                  |
-> | Crashes on startup         | Update GPU drivers (NVIDIA/AMD)               |
+> | Input | Action |
+> |-------|--------|
+> | Arrow keys | Steer |
+> | `+` / `-` | Speed up / slow down |
+> | Space | Toggle V-formation |
+> | Weather buttons | Day / Night / Storm |
 > 
-> --
+> On mobile, use the on-screen buttons.
+> 
+> ## Run locally
+> 
+> Serve the folder with any static file server:
+> 
+> ```bash
+> python -m http.server 8000
+> ```
+> 
+> Then open [http://localhost:8000](http://localhost:8000).
 
 ## 延伸閱讀
 
-相關專案：[[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[boona13--mykonos-island-voxels|boona13/mykonos-island-voxels]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]] · [[levy-street--world-of-claudecraft|levy-street/world-of-claudecraft]] · [[kanavtwtgg--birds.cafe|kanavtwtgg/birds.cafe]]
+相關概念：[[遊戲設計]] · [[模擬]] · [[WebGL]]
 
-[GitHub](https://github.com/Juwluuu/Subnautica-2-Release)
+相關專案：[[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]]
+
+[GitHub](https://github.com/kanavtwtgg/birds.cafe)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：水下生存）
+> [!note]- 直接競品（同子分類：模擬）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "水下生存" AND file.name != "Juwluuu--Subnautica-2-Release"
+> WHERE subcategory = "模擬" AND file.name != "kanavtwtgg--birds.cafe"
 > SORT stars DESC
 > ```
 
@@ -349,7 +341,7 @@ Subnautica 2 的核心技術機制基於 C++，這使得遊戲在處理複雜的
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "遊戲" AND file.name != "Juwluuu--Subnautica-2-Release"
+> WHERE category = "遊戲" AND file.name != "kanavtwtgg--birds.cafe"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -358,7 +350,7 @@ Subnautica 2 的核心技術機制基於 C++，這使得遊戲在處理複雜的
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C++" AND file.name != "Juwluuu--Subnautica-2-Release" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "kanavtwtgg--birds.cafe" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -367,18 +359,33 @@ Subnautica 2 的核心技術機制基於 C++，這使得遊戲在處理複雜的
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W21" AND file.name != "Juwluuu--Subnautica-2-Release"
+> WHERE week = "2026-W26" AND file.name != "kanavtwtgg--birds.cafe"
 > SORT stars DESC
+> ```
+
+> [!note]- 共用概念的相關專案
+> ```dataviewjs
+> const concepts = ["遊戲設計","模擬","WebGL"];
+> const pages = dv.pages('"Repos"')
+>   .where(p => p.file.name !== "kanavtwtgg--birds.cafe" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .sort(p => p.stars, "desc")
+>   .limit(5);
+> if (pages.length > 0) {
+>   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
+>     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
+>     return [p.file.link, p.stars, p.category, shared.join(", ")];
+>   }));
+> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/Juwluuu--Subnautica-2-Release");
+> const me = dv.page("Repos/kanavtwtgg--birds.cafe");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "Juwluuu--Subnautica-2-Release" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "kanavtwtgg--birds.cafe" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -394,7 +401,7 @@ Subnautica 2 的核心技術機制基於 C++，這使得遊戲在處理複雜的
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "Juwluuu" AND file.name != "Juwluuu--Subnautica-2-Release"
+> WHERE owner = "kanavtwtgg" AND file.name != "kanavtwtgg--birds.cafe"
 > SORT stars DESC
 > ```
 
@@ -402,7 +409,7 @@ Subnautica 2 的核心技術機制基於 C++，這使得遊戲在處理複雜的
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/Juwluuu--Subnautica-2-Release");
+> const me = dv.page("Repos/kanavtwtgg--birds.cafe");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -419,7 +426,7 @@ Subnautica 2 的核心技術機制基於 C++，這使得遊戲在處理複雜的
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/Juwluuu--Subnautica-2-Release");
+> const me = dv.page("Repos/kanavtwtgg--birds.cafe");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -452,7 +459,7 @@ Subnautica 2 的核心技術機制基於 C++，這使得遊戲在處理複雜的
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/Juwluuu--Subnautica-2-Release");
+> const me = dv.page("Repos/kanavtwtgg--birds.cafe");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -476,7 +483,7 @@ Subnautica 2 的核心技術機制基於 C++，這使得遊戲在處理複雜的
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/Juwluuu--Subnautica-2-Release");
+> const me = dv.page("Repos/kanavtwtgg--birds.cafe");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -513,7 +520,7 @@ Subnautica 2 的核心技術機制基於 C++，這使得遊戲在處理複雜的
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/Juwluuu--Subnautica-2-Release");
+> const me = dv.page("Repos/kanavtwtgg--birds.cafe");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -596,7 +603,7 @@ Subnautica 2 的核心技術機制基於 C++，這使得遊戲在處理複雜的
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-05-20** — 首次收錄
+> **2026-06-23** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -612,5 +619,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-05-21|2026-05-21]] — 再次上榜，669 stars
-- [[2026-05-20|2026-05-20]] — 首次收錄，644 stars
+- [[2026-06-23|2026-06-23]] — 首次收錄，550 stars

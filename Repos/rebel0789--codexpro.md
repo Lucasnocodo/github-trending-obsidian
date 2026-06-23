@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Use ChatGPT Developer Mode as a local coding agent for your repo through MCP."
 homepage: "https://rebel0789.github.io/codexpro/"
-stars: 625
-stars_per_day: 125
-forks: 57
-open_issues: 5
+stars: 716
+stars_per_day: 119
+forks: 63
+open_issues: 7
 created: 2026-06-16
-pushed_at: 2026-06-20
+pushed_at: 2026-06-22
 first_seen: 2026-06-20
 week: "2026-W25"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "讓 ChatGPT 成為你的本地編碼代理，輕鬆操作你的代碼
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-06-29"
+appearances: 4
+next_review: "2026-06-30"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 83
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-20"
-star_history: "2026-06-20:446,2026-06-21:542,2026-06-22:625"
+star_history: "2026-06-20:446,2026-06-21:542,2026-06-22:625,2026-06-23:716"
 tags:
   - github
   - "category/開發工具"
@@ -930,6 +930,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-23|2026-06-23]] — 再次上榜，716 stars
 - [[2026-06-22|2026-06-22]] — 再次上榜，625 stars
 - [[2026-06-21|2026-06-21]] — 再次上榜，542 stars
 - [[2026-06-20|2026-06-20]] — 首次收錄，446 stars
