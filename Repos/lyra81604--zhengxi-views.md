@@ -7,12 +7,12 @@ language: Python
 license: NOASSERTION
 description: "可溯源的郑希(易方达基金经理)投研 Agent Skill——基于他全部公开观点原文 + 有原话佐证的投资方法 + 全市场基金真实数据，能溯源问答、按他框架给基金打分，绝不杜撰。⚠️仅研究学习辅助，不构成投资建议‼️website是郑希主页！"
 homepage: "https://www.efunds.com.cn/manager/462.shtml"
-stars: 673
-stars_per_day: 337
-forks: 84
+stars: 919
+stars_per_day: 306
+forks: 114
 open_issues: 0
 created: 2026-06-20
-pushed_at: 2026-06-21
+pushed_at: 2026-06-23
 first_seen: 2026-06-23
 week: "2026-W26"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "提供可溯源的郑希投资观点与方法，辅助研究学习。
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-26"
+appearances: 2
+next_review: "2026-06-27"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-23"
-star_history: "2026-06-23:673"
+star_history: "2026-06-23:673,2026-06-24:919"
 tags:
   - github
   - "category/ai_ml"
@@ -526,7 +526,7 @@ mkdir -p "$HOME/.claude/skills/zhengxi-views" && cp -R SKILL.md README.md refere
 
 相關概念：[[Agent 框架]] · [[投資方法論]] · [[資料視覺化]]
 
-相關專案：[[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[alchaincyf--hermes-agent-orange-book|alchaincyf/hermes-agent-orange-book]] · [[mrtooher--fable-mode|mrtooher/fable-mode]] · [[garrytan--gbrain|garrytan/gbrain]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]]
+相關專案：[[HKUDS--OpenSpace|HKUDS/OpenSpace]] · [[alchaincyf--hermes-agent-orange-book|alchaincyf/hermes-agent-orange-book]] · [[mrtooher--fable-mode|mrtooher/fable-mode]] · [[garrytan--gbrain|garrytan/gbrain]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]] · [[Forsy-AI--agent-apprenticeship|Forsy-AI/agent-apprenticeship]]
 
 [GitHub](https://github.com/lyra81604/zhengxi-views) · [官方網站](https://www.efunds.com.cn/manager/462.shtml)
 
@@ -822,4 +822,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-24|2026-06-24]] — 再次上榜，919 stars
 - [[2026-06-23|2026-06-23]] — 首次收錄，673 stars

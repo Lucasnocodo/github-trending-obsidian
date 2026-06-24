@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing."
 homepage: ""
-stars: 496
-stars_per_day: 124
-forks: 42
-open_issues: 4
+stars: 3692
+stars_per_day: 738
+forks: 237
+open_issues: 8
 created: 2026-06-18
-pushed_at: 2026-06-22
+pushed_at: 2026-06-23
 first_seen: 2026-06-23
 week: "2026-W26"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "提供一個強大的 OCR 解決方案，支持多頁文檔的長距�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-30"
+appearances: 2
+next_review: "2026-06-27"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-23"
-star_history: "2026-06-23:481,2026-06-23:496"
+star_history: "2026-06-23:481,2026-06-23:496,2026-06-24:3692"
 tags:
   - github
   - "category/開發工具"
@@ -636,7 +636,7 @@ Unlimited-OCR 最常與 Hugging Face Transformers 和 PyTorch 搭配使用，通
 
 相關概念：[[OCR]] · [[PDF 解析]] · [[深度學習]]
 
-相關專案：[[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]] · [[raiyanyahya--how-to-train-your-gpt|raiyanyahya/how-to-train-your-gpt]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]]
+相關專案：[[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]] · [[raiyanyahya--how-to-train-your-gpt|raiyanyahya/how-to-train-your-gpt]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]]
 
 [GitHub](https://github.com/baidu/Unlimited-OCR)
 
@@ -932,4 +932,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-24|2026-06-24]] — 再次上榜，3.7k stars
 - [[2026-06-23|2026-06-23]] — 首次收錄，481 stars

@@ -7,10 +7,10 @@ language: TypeScript
 license: NOASSERTION
 description: "Fast drop in replacement for `cn`"
 homepage: ""
-stars: 665
-stars_per_day: 222
-forks: 7
-open_issues: 4
+stars: 790
+stars_per_day: 198
+forks: 8
+open_issues: 5
 created: 2026-06-19
 pushed_at: 2026-06-22
 first_seen: 2026-06-23
@@ -30,8 +30,8 @@ use_case: "提供一個快速的 `cn` 替代方案，提升 Tailwind CSS 的性�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-26"
+appearances: 2
+next_review: "2026-07-01"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 20
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-23"
-star_history: "2026-06-23:664,2026-06-23:665"
+star_history: "2026-06-23:664,2026-06-23:665,2026-06-24:790"
 tags:
   - github
   - "category/開發工具"
@@ -493,7 +493,7 @@ cnfast 可以與現有的 Tailwind CSS 生態系統無縫整合，特別是在 R
 
 相關概念：[[CSS 優化]] · [[性能優化]] · [[Tailwind CSS]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]]
 
 [GitHub](https://github.com/aidenybai/cnfast)
 
@@ -789,4 +789,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-24|2026-06-24]] — 再次上榜，790 stars
 - [[2026-06-23|2026-06-23]] — 首次收錄，664 stars
