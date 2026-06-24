@@ -7,9 +7,9 @@ language: JavaScript
 license: MIT
 description: "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings"
 homepage: ""
-stars: 491
-stars_per_day: 98
-forks: 41
+stars: 495
+stars_per_day: 99
+forks: 42
 open_issues: 0
 created: 2026-06-18
 pushed_at: 2026-06-18
@@ -17,7 +17,7 @@ first_seen: 2026-06-24
 week: "2026-W26"
 month: "2026-06"
 category: "安全"
-subcategory: "安全審計"
+subcategory: "安全審核"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-24
-use_case: "讓你的代碼代理變成安全審計員，進行多階段的安全審計，並生成可機器讀取的結果。"
+use_case: "讓你的程式代理變成安全審核員，進行多階段的安全性審核。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-24"
-star_history: "2026-06-24:491"
+star_history: "2026-06-24:491,2026-06-24:495"
 tags:
   - github
   - "category/安全"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "security-audit-skill"
   - "cloudflare/security-audit-skill"
-  - "讓你的代碼代理變成安全審計員，進行多階段的安全審計，並生成可機器讀取的結果。"
+  - "讓你的程式代理變成安全審核員，進行多階段的安全性審核。"
 ---
 
 # security-audit-skill
 
-**491** stars · **98** stars/天 · 建立 5 天前 · JavaScript · MIT
+**495** stars · **99** stars/天 · 建立 5 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/cloudflare--security-audit-skill");
@@ -73,20 +73,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓你的代碼代理變成安全審計員，進行多階段的安全審計，並生成可機器讀取的結果。
+> 讓你的程式代理變成安全審核員，進行多階段的安全性審核。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (98 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (99 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在代碼庫中進行安全審計的安全工程師和開發團隊。
-> **一句話重點** 這個專案不僅提供了一個安全審計工具，更是一個自動化的安全測試框架，能夠大幅提升漏洞發現的效率。
+> **適合** 需要進行安全性審核但希望自動化流程的開發團隊。
+> **一句話重點** 這個專案不僅提供了安全審核的工具，還系統化了整個過程，讓開發者能夠更有效地發現漏洞。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/cloudflare--security-audit-skill");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "安全審計" && p.file.name !== "cloudflare--security-audit-skill" && p.status !== "archived")
+>     .where(p => p.subcategory === "安全審核" && p.file.name !== "cloudflare--security-audit-skill" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -97,107 +97,99 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 安全審計 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 安全審核 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** medium
-> **結論** 花 3 小時學、2 小時整合，得到自動化的安全審計效果，值得投入。
+> **結論** 花 3 小時學習，2 小時整合，得到自動化安全審核的效果，值得一試。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於其六階段的安全審計流程，並且每個發現都必須有具體的攻擊場景。
+> 這個專案的創新點在於其多階段的安全審核流程，能夠系統化地發現和驗證漏洞。
 
 ## 專案簡介
 
-這個專案的核心機制是將代碼代理轉變為安全審計工具，通過六個階段的管道進行全面的安全檢查：首先，使用並行的研究代理進行應用架構的偵查，生成 `architecture.md`；接著，從不同角度攻擊代碼庫，並可派生子代理深入挖掘；然後，獨立的驗證代理對每個發現進行反駁，確保結果的準確性；隨後，生成可讀的報告和詳細的發現記錄；接下來，輸出結構化的 JSON 文件，並進行驗證；最後，獨立代理再次確認所有事實聲明。這樣的設計確保了每個發現都有具體的攻擊場景，並且多次運行能夠提高覆蓋率，這是其他工具所不具備的優勢。使用者只需簡單的 CLI 指令，例如 `security audit this codebase`，即可啟動審計過程，並自動生成報告。
+這個專案提供了一個安全審核技能，能夠將你的程式代理轉變為安全審核員，透過六個階段的流程來發現可利用的漏洞。首先，在 Recon 階段，並行的研究代理會映射應用程式的架構和信任邊界，生成 `architecture.md`。接著，在 Hunt 階段，代理會從多個角度攻擊代碼庫，涵蓋注入、存取控制等多種攻擊方式。然後，Validate 階段的代理會試圖反駁每一個發現，以消除假陽性。隨後，Report 階段會生成可讀的報告 `REPORT.md` 和詳細的 `FINDINGS-DETAIL.md`。
+
+Structured output 階段會產生符合 `report-schema.json` 的 `findings.json`，並由 `validate-findings.cjs` 驗證。最後，Independent verification 階段會用新代理驗證每個事實聲明。這種設計的賣點在於其多階段的審核過程，能夠有效發現並驗證漏洞，並且每次運行都能累積先前的發現，避免重複檢查已知問題。這樣的設計不僅提高了效率，也增強了漏洞發現的準確性。
 
 **技術棧**：`Node.js`
 
 ## 重點功能
 
-- 六階段審計流程 — 包括偵查、攻擊、驗證、報告、結構化輸出和獨立驗證。
-- 並行代理運行 — 多個代理同時進行不同的攻擊測試，提升效率。
-- 可生成詳細報告 — 產出 `REPORT.md` 和 `FINDINGS-DETAIL.md`，便於人類閱讀和分析。
-- 結構化輸出 — 生成符合 `report-schema.json` 的 `findings.json`，便於機器處理。
-- 對發現的驗證 — 確保每個漏洞都有具體的攻擊場景，避免虛假報告。
+- 六階段審核流程 — 包括 Recon、Hunt、Validate、Report、Structured output 和 Independent verification，確保全面的漏洞檢查。
+- 並行代理運行 — 在 Hunt 階段，能夠同時進行多種攻擊方式的檢查，提升效率。
+- 生成詳細報告 — 產出 `REPORT.md` 和 `FINDINGS-DETAIL.md`，方便人員理解和處理發現的問題。
+- 結構化輸出 — 生成符合 `report-schema.json` 的 `findings.json`，便於後續處理和分析。
+- 假陽性消除 — Validate 階段專門針對每一個發現進行反駁，降低誤報率。
 
 ## 快速開始
 
-1. 安裝安全審計技能
+1. 安裝安全審核技能
 ```bash
 npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit
 ```
-2. 啟動代碼代理並指向代碼庫
+2. 啟動你的程式代理
 ```bash
 security audit this codebase
 ```
-3. 指定輸出目錄
+3. 查看生成的報告
 ```bash
-do a security review, output to ~/audits/my-project
-```
-
-## 程式碼範例
-
-```js
-{
-  "前置條件": "需要安裝 Node.js 和 Skills CLI",
-  "指令": "security audit this codebase",
-  "預期輸出": "生成安全審計報告和發現的 JSON 文件"
-}
+cat REPORT.md
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天就累積 491 stars（98/天），forks 41（8.4%），這顯示出強勁的增長潛力。作者 literally-dan 在安全領域有豐富經驗，這個專案解決了傳統安全審計工具缺乏自動化和可重複性的痛點。之前的工具往往只能提供靜態分析，無法進行動態測試和多角度攻擊，這使得發現漏洞的效率低下。社群對於這個工具的需求和興趣明顯，尤其是在安全性越來越受到重視的背景下。這個工具的設計理念和實作方式都反映了當前安全測試的需求，特別是在 CI/CD 流程中的整合。
+> 建立 5 天就累積 495 stars（99/天），forks 42（8.5%），顯示出相對活躍的社群參與。這個專案由 Cloudflare 的工程師 literally-dan 開發，他們在安全領域有豐富的經驗。這個工具解決了傳統安全審核過程中效率低下和假陽性率高的問題，以往的工具往往無法有效整合多個檢查階段。這個專案的推出可能受到社群對於安全性需求提升的影響，尤其是在開源軟體的安全性越來越受到重視的背景下。forks/stars 比率為 8.5%，顯示出有不少開發者對此專案進行實際修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要在代碼庫中進行安全審計的安全工程師和開發團隊。
+**目標受眾**：需要進行安全性審核但希望自動化流程的開發團隊。
 
 > [!example] 使用場景
-> - 安全工程師用它來自動化代碼庫的安全審計，因為手動檢查容易漏掉細節，這個工具能夠在多個角度進行全面測試。
-> - DevOps 團隊用它來在 CI/CD 流程中集成安全測試，因為它能夠自動生成報告，減少人工介入的需求。
-> - 開發人員用它來在提交代碼前進行自我審計，因為它能快速找出潛在的安全漏洞，提升代碼質量。
+> - 安全工程師用它來自動化代碼庫的安全審核，因為手動檢查容易漏掉漏洞，這個工具能夠系統化地發現問題。
+> - DevOps 團隊用它來定期檢查應用程式的安全性，因為它的多階段流程能夠有效降低假陽性率，提升審核準確性。
+> - 開發者用它來驗證新功能的安全性，因為它能夠針對特定代碼路徑進行深度檢查，確保不引入新漏洞。
 
 ## 架構分析
 
-這個專案採用模組化的架構，透過六個階段的處理流程來進行安全審計。每個階段都由不同的代理負責，這樣的設計使得每個代理可以專注於特定任務，提升了整體效率。資料流從偵查到驗證，每個階段的輸出都為下一階段提供了必要的上下文，這樣的設計使得整個流程具備高度的可擴展性。選擇 Node.js 作為主要技術棧，因為它能夠輕鬆處理並行任務，但這也意味著對於大型應用可能需要更多的資源來維持性能。整體架構的設計考量了安全性和效率，確保每個發現都經過嚴格的驗證。
+這個專案採用模組化的設計，將安全審核過程分為六個階段，每個階段都有獨立的代理負責特定任務。這種設計使得整個流程能夠並行運行，提升效率。資料流方面，從 Recon 階段開始，代理會收集應用程式的架構資訊，接著在 Hunt 階段進行攻擊，然後在 Validate 階段進行反駁，最終生成報告。選擇 Node.js 作為技術棧，因為其非同步特性能夠有效處理並行任務，但這也可能導致對於大型代碼庫的性能瓶頸。整體來說，這種設計使得安全審核過程更加靈活，但在處理複雜應用時可能需要調整策略以避免性能下降。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是通過六個階段的審計流程來進行安全測試，使用並行代理來提高效率。每個階段的設計都考慮到了漏洞發現的完整性和準確性，特別是在驗證階段，使用獨立代理來檢查每個發現，這樣的設計有效降低了虛假報告的風險。效能方面，這個工具能夠處理中小型代碼庫，並且在多次運行中能夠逐步發現更多的漏洞。選擇 Node.js 作為技術棧，帶來了良好的並行處理能力，但也可能在處理大型應用時面臨性能瓶頸。技術風險方面，隨著代碼庫的增長，可能會出現性能下降的問題，特別是在多代理同時運行時。整合方面，這個工具能夠輕鬆與現有的 CI/CD 流程結合，並且支持多種開發環境，降低了導入的摩擦。
+這個專案的核心技術機制在於其六階段的安全審核流程，使用 Node.js 作為開發語言，並利用其非同步特性來實現並行的代理運行。每個階段的代理負責不同的任務，從收集架構資訊到執行攻擊，再到驗證結果，形成一個完整的審核循環。效能方面，這個工具能夠處理中小型代碼庫，但在面對大型應用時，可能會遇到性能瓶頸，尤其是在 Hunt 階段的多重攻擊上。選擇 Node.js 的好處在於其生態系統豐富，易於整合，但也帶來了對於 JavaScript 環境的依賴。這個專案的設計考量了可擴展性，能夠通過多次運行來累積發現，這在傳統的安全審核工具中是較少見的。技術風險方面，若未來代碼庫結構發生變化，可能會影響到 Recon 階段的準確性，這需要持續的維護和更新。整合方面，這個工具可以與 CI/CD 流程無縫對接，提升整體的開發效率。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且詳細，提供了安裝和使用的具體指導。安裝過程相對順暢，沒有明顯的坑。文件中包含了基本的使用範例，對於新手來說，能夠在短時間內上手。
+> README 文件提供了清晰的安裝和使用說明，並包含範例指令。安裝過程相對順暢，沒有明顯的坑。文件目前僅提供英文，可能對非英語使用者造成一定的障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 多階段的審計流程，能夠全面覆蓋潛在漏洞。
-> - 並行代理運行，提升測試效率。
-> - 生成詳細的報告和結構化輸出，便於後續處理。
+> - 多階段審核流程，能夠全面檢查應用程式的安全性。
+> - 假陽性消除機制，提升審核結果的準確性。
+> - 支持並行運行，提升審核效率。
 
 > [!danger] 缺點
-> - 需要 Node.js 環境，對於不熟悉的開發者可能有學習曲線。
-> - 對於複雜的應用架構需要額外的配置和調整。
-> - 目前仍在早期階段，可能存在不穩定性。
+> - 目前僅支援 JavaScript 環境，限制了使用範圍。
+> - 對於大型代碼庫，執行時間可能較長。
+> - 需要一定的配置和理解才能有效使用。
 
 > [!warning] 注意事項
-> - 需要 Node.js 環境支持
-> - 僅適用於支援工具使用和並行子代理的代碼代理
-> - 對於複雜的應用架構可能需要進一步的配置
+> - 目前僅支援 JavaScript 環境。
+> - 需要對應的代碼庫結構，否則可能無法正確映射架構。
+> - 對於大型代碼庫，執行時間可能較長，需考慮效能問題。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成多種代理，但不具備安全審計的專業功能。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 此工具主要用於靜態代碼分析，而本專案提供動態測試和多階段驗證。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | Duel-Agents 提供多代理協作，但缺乏針對安全漏洞的專門設計。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建和管理多個代理，而本專案專注於安全審核的具體流程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供靜態分析功能，而本專案提供多階段的動態審核流程，能夠更全面地發現漏洞。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | Duel-Agents 主要針對對抗性測試，而本專案則是針對一般的安全審核，適用範圍更廣。 |
 
 ## 替代方案決策
 
@@ -205,16 +197,16 @@ do a security review, output to ~/audits/my-project
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成多種代理，缺乏針對安全漏洞的專業設計。 | 如果需要多種代理協作而不專注於安全審計，這個工具會更合適。 | medium，因為需要重新設計審計流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要用於靜態代碼分析，無法進行動態測試。 | 如果只需要靜態分析而不需要動態測試，這個工具會更合適。 | low，因為靜態分析的流程相對簡單。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建和管理多個代理，提供靈活的代理配置，而本專案則專注於安全審核的具體流程。 | 如果需要靈活配置多個代理以進行不同任務，則應選擇此工具。 | medium，因為需要重新配置代理的運行方式。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供靜態分析功能，專注於代碼的靜態檢查，而本專案則提供動態的安全審核流程。 | 如果需要靜態代碼分析以發現潛在的安全問題，則應選擇此工具。 | low，因為靜態分析工具通常易於整合。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **security-audit-skill** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於生成多種代理，缺乏針對安全漏洞的專業設計。 | 主要用於靜態代碼分析，無法進行動態測試。 |
-> | 遷移成本 | - | medium，因為需要重新設計審計流程。 | low，因為靜態分析的流程相對簡單。 |
-> | 適用場景 | 主要場景 | 如果需要多種代理協作而不專注於安全審計，這個工具會更合適。 | 如果只需要靜態分析而不需要動態測試，這個工具會更合適。 |
+> | 技術路線 | 本專案 | 專注於創建和管理多個代理，提供靈活的代理配置，而本專案則專注於安全審核的具體流程。 | 提供靜態分析功能，專注於代碼的靜態檢查，而本專案則提供動態的安全審核流程。 |
+> | 遷移成本 | - | medium，因為需要重新配置代理的運行方式。 | low，因為靜態分析工具通常易於整合。 |
+> | 適用場景 | 主要場景 | 如果需要靈活配置多個代理以進行不同任務，則應選擇此工具。 | 如果需要靜態代碼分析以發現潛在的安全問題，則應選擇此工具。 |
 
 ## 成熟度評估
 
@@ -225,27 +217,25 @@ do a security review, output to ~/audits/my-project
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和小型專案，不建議用在生產環境的核心路徑上。
+> 適合個人實驗和小型專案，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在大型代碼庫中，可能會出現性能瓶頸，導致審計速度變慢
-  - 解法：分批進行審計，減少每次處理的代碼量
-- [MEDIUM] 對於複雜的應用架構，可能需要額外的配置
-  - 解法：參考 `SKILL.md` 中的設置指導
-- [MEDIUM] 在某些情況下，可能會出現虛假報告
-  - 解法：多次運行以驗證發現的準確性
+- [MEDIUM] 在大型代碼庫中，Hunt 階段可能需要較長時間才能完成
+  - 解法：可以考慮分批檢查代碼庫以減少每次運行的負擔
+- **[HIGH]** 對於特定代碼結構，Recon 階段可能無法準確映射
+  - 解法：需要手動調整配置以適應特定的代碼庫結構
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 中小型企業的代碼庫安全審計 | 非常適合 | 具備全面的審計流程和自動化能力，能夠快速發現漏洞。 |
-| 大型企業的複雜應用安全測試 | 普通 | 可能需要額外的配置和調整，性能可能成為瓶頸。 |
-| 個人開發者的安全測試 | 非常適合 | 簡單易用，能夠快速上手，適合小型專案。 |
-| 需要靜態分析的專案 | 不適合 | 這個工具專注於動態測試，靜態分析需求無法滿足。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠自動化安全審核，減少人力成本。 |
+| 大型企業的多個應用程式 | 不適合 | 在大型代碼庫中可能面臨性能瓶頸。 |
+| 開發團隊需要定期進行安全檢查 | 適合 | 能夠系統化地進行安全審核，提升效率。 |
+| 單一開發者的個人專案 | 非常適合 | 簡單易用，能快速上手。 |
 
 ## 採用成本分析
 
@@ -253,16 +243,16 @@ do a security review, output to ~/audits/my-project
 | --- | --- |
 | 學習時間 | ~3 小時 |
 | 整合時間 | ~2 小時 |
-| 維護負擔 | low |
+| 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學、2 小時整合，得到自動化的安全審計效果，值得投入。
+> 花 3 小時學習，2 小時整合，得到自動化安全審核的效果，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限運行，且不存取敏感資料。依賴鏈的信任程度高，無已知的供應鏈風險，適合在 CI/CD 中使用。
+> 低風險：該工具不需要高權限，並且不存取敏感資料。依賴鏈的信任程度良好，沒有已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -327,7 +317,7 @@ do a security review, output to ~/audits/my-project
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 41 |
+| Forks | 42 |
 | Open Issues | 0 |
 | 最後推送 | 2026-06-18 |
 | 建立日期 | 2026-06-18 |
@@ -342,7 +332,7 @@ do a security review, output to ~/audits/my-project
 ## 社群與生態
 
 **社群活躍度**：社群活躍度高，最近有持續的提交和更新。
-**連結**：[文件](https://github.com/cloudflare/security-audit-skill)
+**連結**：[文件](https://github.com/cloudflare/security-audit-skill#readme)
 
 ## 開發動態
 
@@ -451,11 +441,11 @@ do a security review, output to ~/audits/my-project
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：安全審計）
+> [!note]- 直接競品（同子分類：安全審核）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "安全審計" AND file.name != "cloudflare--security-audit-skill"
+> WHERE subcategory = "安全審核" AND file.name != "cloudflare--security-audit-skill"
 > SORT stars DESC
 > ```
 
