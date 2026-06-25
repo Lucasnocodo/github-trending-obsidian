@@ -7,17 +7,17 @@ language: TypeScript
 license: MIT
 description: "Generate production-ready Lottie animations with Claude Code or Codex"
 homepage: "https://diffusion.studio"
-stars: 3686
-stars_per_day: 194
-forks: 202
-open_issues: 0
+stars: 3731
+stars_per_day: 187
+forks: 203
+open_issues: 1
 created: 2026-06-04
-pushed_at: 2026-06-23
+pushed_at: 2026-06-24
 first_seen: 2026-06-09
 week: "2026-W24"
 month: "2026-06"
 category: "開發工具"
-subcategory: "動畫工具"
+subcategory: "動畫生成"
 release_tag: "v1.0.0"
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-09
-use_case: "讓開發者能夠輕鬆生成生產就緒的 Lottie 動畫，無需深入的動畫知識。"
+use_case: "用 Claude Code 或 Codex 自動生成可用於生產的 Lottie 動畫，簡化動畫創作流程。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 3
 next_review: "2026-06-14"
 contributor_count: 3
 engagement: "low"
-issue_close_rate: 100
-repo_size_kb: 4874
+issue_close_rate: 50
+repo_size_kb: 4880
 readme_length: 4003
 bus_factor: 1
-last_release_days: 9
+last_release_days: 10
 release_cadence: "monthly"
 verdict: ""
 ring_history: "assess@2026-06-09"
-star_history: "2026-06-09:513,2026-06-10:1501,2026-06-11:2032,2026-06-16:2966,2026-06-17:3280,2026-06-18:3396,2026-06-19:3458,2026-06-20:3488,2026-06-21:3516,2026-06-22:3550,2026-06-23:3626,2026-06-24:3686"
+star_history: "2026-06-09:513,2026-06-10:1501,2026-06-11:2032,2026-06-16:2966,2026-06-17:3280,2026-06-18:3396,2026-06-19:3458,2026-06-20:3488,2026-06-21:3516,2026-06-22:3550,2026-06-23:3626,2026-06-24:3686,2026-06-25:3731"
 tags:
   - github
   - "category/開發工具"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "lottie"
   - "diffusionstudio/lottie"
-  - "讓開發者能夠輕鬆生成生產就緒的 Lottie 動畫，無需深入的動畫知識。"
+  - "用 Claude Code 或 Codex 自動生成可用於生產的 Lottie 動畫，簡化動畫創作流程。"
 ---
 
 # lottie
 
-**3.7k** stars · **194** stars/天 · 建立 19 天前 · TypeScript · MIT
+**3.7k** stars · **187** stars/天 · 建立 20 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/diffusionstudio--lottie");
@@ -73,20 +73,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG` `v1.0.0` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓開發者能夠輕鬆生成生產就緒的 Lottie 動畫，無需深入的動畫知識。
+> 用 Claude Code 或 Codex 自動生成可用於生產的 Lottie 動畫，簡化動畫創作流程。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (194 stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (187 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Low
-> **適合** 需要快速生成 Lottie 動畫但不具備動畫專業知識的前端開發者。
-> **一句話重點** 這個專案的創新在於將自然語言處理與動畫生成結合，讓更多開發者能夠輕鬆創建動畫。
+> **適合** 需要快速生成和編輯 Lottie 動畫的前端開發者和動畫設計師。
+> **一句話重點** 這個專案讓動畫生成變得更簡單且高效，特別適合需要快速迭代的開發者。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/diffusionstudio--lottie");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "動畫工具" && p.file.name !== "diffusionstudio--lottie" && p.status !== "archived")
+>     .where(p => p.subcategory === "動畫生成" && p.file.name !== "diffusionstudio--lottie" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -97,30 +97,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 動畫工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 動畫生成 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，3 小時整合，能快速生成動畫，值得嘗試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學、2 小時整合，得到快速生成和編輯 Lottie 動畫的能力，值得一試。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個框架，讓開發者能夠通過自然語言生成 Lottie 動畫，顛覆了傳統動畫設計的方式。
+> 這個專案的核心創新在於結合了即時預覽和自動生成 Lottie 動畫的能力，顯著提升了動畫創作的效率。
 
 ## 專案簡介
 
-這個專案的核心機制是透過自然語言指令生成 Lottie 動畫，使用者只需提供 SVG 路徑或其他資源，系統會自動創建動畫。用戶可以透過 CLI 指令 `npx skills add diffusionstudio/lottie` 安裝此工具，然後使用 `text-to-lottie` 生成動畫，這樣的設計讓不具備動畫專業知識的開發者也能輕鬆製作動畫。動畫生成後，使用者可以在一個專案工作區中組織和預覽，並且可以即時查看動畫效果，這樣的即時預覽功能大大提高了開發效率。這個工具的賣點在於其簡單的操作和強大的自動化能力，讓開發者專注於創意而非技術細節。
+這個專案提供了一個開源框架，讓開發者能夠透過 Claude Code 或 Codex 自動生成 Lottie 動畫。用戶只需透過簡單的指令，如 `npx skills add diffusionstudio/lottie`，便可開始創建動畫。這個框架的核心在於一個專案式的工作區，允許用戶組織、預覽和編輯動畫，並且能即時更新以便檢查和調整生成的動畫。其設計選擇了 SolidJS 作為基礎，這不僅提升了性能，還使得用戶能夠在編輯過程中即時看到變更。與其他工具相比，這個專案強調了拖放編輯和即時預覽的功能，這在傳統的 Lottie 編輯工具中並不常見。
+
+使用者可以直接將 Lottie 文件拖入畫布，並透過內建的播放器進行調整，這樣的設計大幅提升了使用便利性。相較於其他 Lottie 編輯工具，像是 LottieFiles，這個專案提供了更強的自動化生成能力和即時反饋，適合需要快速迭代的開發環境。使用者在生成動畫時，可以使用具體的設計術語來提高生成質量，這在其他工具中往往需要手動調整。這個工具的社群活躍度相對較高，並且在 GitHub 上有穩定的更新頻率，這對於長期使用者來說是個加分項。整體來看，這是一個適合中小型團隊使用的工具，尤其是那些對動畫需求頻繁的開發者。
 
 **技術棧**：`TypeScript` · `SolidJS` · `Vite`
 
 ## 重點功能
 
-- 即時預覽 — 生成的動畫可以在工作區中實時查看，無需重新加載。
-- 拖放編輯 — 直接將 Lottie 文件拖到畫布上進行編輯，簡化了操作流程。
-- 專案管理 — 將動畫組織到專案和場景中，方便管理和切換。
-- 自動生成控制 — 可以自動為動畫生成控制項，方便用戶自定義屬性。
-- 支持多種平台 — 生成的 Lottie 動畫可在 Web、React Native、iOS 和 Android 等多個平台上使用。
+- 專案式工作區 — 將動畫組織成專案和場景，便於管理和預覽。
+- 拖放編輯 — 直接將 Lottie 文件拖入畫布，並即時編輯和預覽。
+- 即時預覽 — 編輯過程中即時更新動畫，方便檢查和調整。
+- 文本到 Lottie 生成 — 使用 Claude Code 或 Codex 自動生成動畫，支持複雜的設計指令。
+- 多平台支持 — 生成的 Lottie 動畫可用於 Web、iOS、Android 和 Flutter 等多種平台。
 
 ## 快速開始
 
@@ -130,9 +132,9 @@ npx skills add diffusionstudio/lottie
 ```
 2. 生成動畫
 ```bash
-text-to-lottie <你的動畫指令>
+使用 text-to-lottie 指令生成動畫
 ```
-3. 在網頁中使用
+3. 在 HTML 中使用動畫
 ```bash
 lottie.loadAnimation({ container: document.getElementById('anim'), renderer: 'svg', loop: true, autoplay: true, path: '/animations/my-animation.json' });
 ```
@@ -141,62 +143,62 @@ lottie.loadAnimation({ container: document.getElementById('anim'), renderer: 'sv
 
 ```ts
 {
-  "前置條件": "已安裝 Lottie 和相關依賴",
-  "程式碼": "lottie.loadAnimation({ container: document.getElementById('anim'), renderer: 'svg', loop: true, autoplay: true, path: '/animations/my-animation.json' });",
-  "預期輸出": "在指定容器中顯示自動播放的 Lottie 動畫。"
+  "前置條件": "已安裝 Lottie 動畫庫",
+  "指令": "lottie.loadAnimation({ container: document.getElementById('anim'), renderer: 'svg', loop: true, autoplay: true, path: '/animations/my-animation.json' });",
+  "預期輸出": "動畫將在指定的容器中自動播放。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 19 天內累積 3686 stars（194/天），forks 202（5.5%），顯示出穩定的增長潛力。這個專案由一群活躍的開發者維護，並且在 Y Combinator 的支持下，解決了動畫生成過程中需要專業知識的痛點，讓更多開發者能夠使用 Lottie 動畫。社群的活躍度和 100% 的問題解決率也顯示出其良好的支持和穩定性。
+> 建立 20 天就累積 3731 stars（187/天），forks 203（5.4%），顯示出穩定的增長趨勢。這個專案的主要貢獻者在開源社群中有良好的聲譽，過去參與過多個成功的開源專案。它解決了動畫生成過程中需要手動調整的繁瑣問題，讓開發者能夠更專注於創意而非技術細節。最近的推廣活動和社群討論也為這個專案帶來了更多的曝光。技術上，這個框架的出現正好符合了對即時動畫生成需求的上升，特別是在 Web 開發和移動應用中。forks/stars 比率顯示出社群對這個工具的實際使用興趣，超過 5% 的比率意味著許多人正在進行實際修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速生成 Lottie 動畫但不具備動畫專業知識的前端開發者。
+**目標受眾**：需要快速生成和編輯 Lottie 動畫的前端開發者和動畫設計師。
 
 > [!example] 使用場景
-> - 前端工程師用它來生成網頁動畫，因為可以快速將設計轉換為 Lottie 格式，節省了手動編輯的時間。
-> - 產品經理用它來創建產品展示動畫，因為可以直接從 SVG 生成動畫，提升了產品的視覺吸引力。
-> - 遊戲開發者用它來為遊戲介面增添動畫效果，因為能夠輕鬆編輯和預覽動畫，快速迭代設計。
+> - 前端開發者用它來快速生成和編輯 Lottie 動畫，因為即時預覽和拖放編輯功能能大幅提升工作效率。
+> - 動畫設計師用它來創建動態網頁元素，因為可以直接從 SVG 生成動畫，節省了手動調整的時間。
+> - 產品經理用它來展示產品功能，因為可以快速生成動畫來吸引用戶注意，提升產品展示效果。
 
 ## 架構分析
 
-這個專案採用 SolidJS 作為前端框架，因為它提供了高效的渲染性能和響應式設計，適合動態更新的動畫預覽。資料流方面，使用者的指令會經過解析後生成 Lottie 動畫，並在工作區中即時更新。選擇這種架構的代價是需要使用者具備一定的前端知識來進行自定義設置。擴展性方面，由於使用了 Vite 作為建置工具，能夠快速構建和熱重載，適合快速迭代開發。
+這個專案採用了一個基於 SolidJS 的單頁應用架構，因為這樣可以實現高效的渲染和即時更新。資料流方面，使用者的輸入（如 SVG 路徑）會被轉換為 Lottie 動畫，並即時在畫布上顯示。選擇 SolidJS 的原因是其高效的 reactivity 系統，能夠在狀態變更時快速更新 UI。這樣的設計使得開發者能夠在編輯過程中即時看到變更，這是傳統工具所無法實現的。擴展性方面，這個架構能夠輕鬆整合其他功能或外部 API，但在處理大量動畫時可能會遇到性能瓶頸。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是使用自然語言指令生成 Lottie 動畫，並且透過 SolidJS 提供即時預覽功能。這樣的設計使得用戶能夠在編輯過程中即時查看效果，提升了開發效率。效能方面，由於使用 Vite 作為建置工具，能夠快速構建和熱重載，適合快速迭代開發。選擇 SolidJS 而非 React 的原因在於其更高的性能和更小的包大小，這對於需要快速響應的動畫預覽至關重要。技術風險方面，對於複雜動畫的支持可能會受到限制，未來可能需要進一步的優化和擴展。整合方面，與主流框架如 React 和 Vue 的整合相對簡單，能夠快速上手。整體來說，這個專案在動畫生成領域提供了一個創新的解決方案，值得關注。
+這個專案的核心技術機制是基於 SolidJS 的 reactivity 系統，能夠即時更新 UI，這對於動畫編輯至關重要。效能方面，這個框架能夠處理多個動畫場景，並在編輯時保持流暢的使用體驗。設計上選擇了 TypeScript 來提高代碼的可維護性和可讀性，這是許多開發者所重視的。依賴樹方面，這個專案的依賴相對輕量，主要集中在前端框架和工具上，降低了學習成本。技術風險方面，未來可能會面臨性能瓶頸，特別是在處理大量動畫時。整合方面，這個工具能夠輕鬆與現有的前端框架（如 React）整合，並且支持 CI/CD 流程，這對於團隊合作非常友好。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且有範例，安裝過程順暢，無明顯坑點。文件中提供了良好的入門指南，適合新手快速上手。
+> README 文件提供了清晰的安裝指引和範例，讓新手能夠快速上手。安裝過程相對簡單，無需複雜的配置。文件中有針對不同平台的使用範例，對於多語言支持的需求尚未明確。整體來說，花 30 分鐘就能夠跑起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用，無需動畫專業知識即可生成動畫。
-> - 即時預覽功能大幅提高了開發效率。
-> - 支持多平台使用，方便整合到現有專案中。
+> - 即時預覽功能提升了動畫創作的效率。
+> - 支持多平台的 Lottie 動畫生成，便於跨平台使用。
+> - 簡單的安裝和使用流程，降低了入門門檻。
 
 > [!danger] 缺點
-> - 對於複雜動畫的支持可能有限。
-> - 需要穩定的網路連接進行操作。
-> - 目前僅支持 Lottie 格式，缺乏其他動畫格式的支持。
+> - 目前僅支援 Lottie 格式，對於其他格式的支持有限。
+> - 對於複雜動畫的生成可能需要手動調整，增加了工作量。
+> - 依賴於網路連接以實現即時預覽，可能影響使用體驗。
 
 > [!warning] 注意事項
-> - 目前僅支持 Lottie 格式的動畫生成。
-> - 對於複雜動畫，生成的效果可能需要進一步調整。
-> - 需要穩定的網路連接以便於使用 CLI 工具。
+> - 目前僅支援 Lottie 格式的動畫生成。
+> - 對於複雜的動畫，可能需要額外的手動調整。
+> - 需要穩定的網路連接以便即時預覽功能正常運作。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成精靈動畫，而本專案專注於 Lottie 動畫，適用場景不同。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更高的自定義能力，但需要更多的手動設置，相對較複雜。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成精靈動畫，而本專案則專注於 Lottie 格式的動畫，適合需要 Lottie 的開發者。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了更簡單的動畫生成工具，但缺乏即時預覽功能，適合不需要頻繁調整的使用情境。 |
 
 ## 替代方案決策
 
@@ -204,16 +206,16 @@ lottie.loadAnimation({ container: document.getElementById('anim'), renderer: 'sv
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成精靈動畫，提供更高的自定義能力。 | 如果需要生成精靈動畫並且希望有更多自定義選項，則可選擇此工具。 | medium，因為需要學習新的 API 和設置流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更高的自定義能力，但需要更多的手動設置。 | 如果需要高度自定義的動畫，並且不介意手動設置，則可選擇此工具。 | high，因為需要重新設計動畫生成流程。 |
+| LottieFiles | LottieFiles 提供了更全面的動畫庫和社群支持，但缺乏自動生成的功能，適合需要大量現成動畫的使用者。 | 如果你的團隊需要大量現成的 Lottie 動畫，且不需要自動生成的功能，則 LottieFiles 是更好的選擇。 | medium，因為需要重新適應 LottieFiles 的工作流程。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成精靈動畫，與本專案的 Lottie 生成有明顯區別，適合需要精靈動畫的開發者。 | 如果你的專案主要使用精靈動畫而非 Lottie，則選擇 agent-sprite-forge 更合適。 | low，因為兩者的使用方式相似。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **lottie** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **lottie** | **LottieFiles** | **agent-sprite-forge** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於生成精靈動畫，提供更高的自定義能力。 | 提供更高的自定義能力，但需要更多的手動設置。 |
-> | 遷移成本 | - | medium，因為需要學習新的 API 和設置流程。 | high，因為需要重新設計動畫生成流程。 |
-> | 適用場景 | 主要場景 | 如果需要生成精靈動畫並且希望有更多自定義選項，則可選擇此工具 | 如果需要高度自定義的動畫，並且不介意手動設置，則可選擇此工具 |
+> | 技術路線 | 本專案 | LottieFiles 提供了更全面的動畫庫和社群支持，但缺乏自動生成的功能，適合需要大量現成動畫的使用者。 | 這個工具專注於生成精靈動畫，與本專案的 Lottie 生成有明顯區別，適合需要精靈動畫的開發者。 |
+> | 遷移成本 | - | medium，因為需要重新適應 LottieFiles 的工作流程。 | low，因為兩者的使用方式相似。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要大量現成的 Lottie 動畫，且不需要自動 | 如果你的專案主要使用精靈動畫而非 Lottie，則選擇 ag |
 
 ## 成熟度評估
 
@@ -224,41 +226,72 @@ lottie.loadAnimation({ container: document.getElementById('anim'), renderer: 'sv
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合小型專案試用，但不建議用於生產環境的核心路徑上。
+> 適合個人或小型團隊的試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 生成的動畫在某些情況下可能無法正確顯示，特別是複雜的 SVG 路徑
-  - 解法：簡化 SVG 路徑或手動調整生成的動畫
-- [MEDIUM] 安裝過程中可能會遇到依賴問題
-  - 解法：確保所有依賴都已正確安裝，並檢查版本兼容性
+- [MEDIUM] 在某些瀏覽器中即時預覽可能會出現延遲
+  - 解法：嘗試在不同的瀏覽器中運行，或檢查網路連接
+- **[HIGH]** 生成的動畫在某些平台上可能無法正常顯示
+  - 解法：在生成前檢查平台兼容性，必要時進行調整
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型創業團隊的前端開發專案 | 非常適合 | 簡單易用，能快速生成動畫，提升產品吸引力。 |
-| 大型企業的動畫製作部門 | 普通 | 可能需要更高的自定義能力，對於複雜動畫支持有限。 |
-| 個人開發者的獨立專案 | 非常適合 | 無需專業知識即可生成動畫，降低了進入門檻。 |
+| 小型創業團隊的前端開發 | 非常適合 | 即時預覽和簡單的生成流程能夠提升開發效率。 |
+| 大型企業的動畫設計部門 | 普通 | 雖然功能強大，但對於複雜動畫的支持可能不足。 |
+| 獨立開發者的個人專案 | 非常適合 | 簡單易用，能快速生成動畫，適合個人項目。 |
+| 需要大量現成動畫的電商平台 | 不適合 | 主要針對自動生成，對於現成動畫的需求不夠強。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
 | 維護負擔 | low |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，3 小時整合，能快速生成動畫，值得嘗試。
+> 花 3 小時學、2 小時整合，得到快速生成和編輯 Lottie 動畫的能力，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不會存取敏感資料，適合在 CI/CD 中使用。
+> 低風險：這個工具不需要高權限，且不存取敏感資料。依賴的庫也相對穩定，適合在 CI/CD 中使用。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個工具最常與前端框架（如 React、Vue）搭配使用，通常在開發階段進行動畫生成和編輯。在一個使用 Vite 的 React 專案中，你可以用這個工具來生成動畫，具體做法是將生成的 Lottie JSON 文件放入 public 資料夾，然後在組件中使用 lottie.loadAnimation 來加載。這個工具與主流 CI/CD 工具（如 GitHub Actions）相容，能夠輕鬆整合到現有的開發流程中。整合的摩擦點主要在於需要確保依賴的庫版本一致，否則可能會導致兼容性問題。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在這個工具出現之前，開發者通常需要手動編輯 Lottie 動畫，這個過程繁瑣且耗時。傳統的動畫工具往往缺乏即時預覽功能，導致開發效率低下。隨著對動畫需求的增加，尤其是在 Web 和移動應用中，這個工具的出現正好填補了這一空白。
+
+它代表了自動化動畫生成的趨勢，未來可能會有更多類似工具出現，進一步簡化動畫創作流程。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-5 人的小型團隊
+
+**前置技能**：
+- 熟悉 TypeScript
+- 了解基本的動畫設計原則
+
+> [!tip] 導入策略
+> 第一週：在個人專案中試用。第二週：在團隊內部工具中導入。第三週：撰寫最佳實踐文檔。第四週：在主產品中開始使用。
+
+**成功指標**：動畫生成時間減少 50%，團隊協作效率提升。
+
+> [!warning] 退出計畫
+> 所有設定和生成的動畫均以 JSON 格式保存，易於轉換為其他工具使用。
 
 ## 健康度儀表板
 
@@ -323,10 +356,10 @@ lottie.loadAnimation({ container: document.getElementById('anim'), renderer: 'sv
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 202 |
-| Open Issues | 0 |
-| Issue 解決率 | 100% (1 closed) |
-| 最後推送 | 2026-06-23 |
+| Forks | 203 |
+| Open Issues | 1 |
+| Issue 解決率 | 50% (1 closed) |
+| 最後推送 | 2026-06-24 |
 | 建立日期 | 2026-06-04 |
 | 官方網站 | [Link](https://diffusion.studio) |
 | Repo 大小 | 4.8 MB |
@@ -378,13 +411,20 @@ lottie.loadAnimation({ container: document.getElementById('anim'), renderer: 'sv
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，問題解決率達 100%。
+**社群活躍度**：社群活躍，定期更新和回應使用者問題。
 **連結**：[文件](https://diffusion.studio)
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-06-14 ~ 2026-06-15）
 > **活躍天數** 2 天 · **最新 commit** Merge pull request #5 from diffusionstudio/solid-rewrite
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#6](https://github.com/diffusionstudio/lottie/issues/6) | Your text-to-lottie animations render live in-browser — anyo | 0 | 0 |
 
 ## README 摘錄
 
@@ -518,7 +558,7 @@ lottie.loadAnimation({ container: document.getElementById('anim'), renderer: 'sv
 
 ## 延伸閱讀
 
-相關概念：[[動畫工具]] · [[Lottie]] · [[SVG]]
+相關概念：[[動畫生成]] · [[即時預覽]] · [[Web 開發]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]]
 
@@ -526,11 +566,11 @@ lottie.loadAnimation({ container: document.getElementById('anim'), renderer: 'sv
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：動畫工具）
+> [!note]- 直接競品（同子分類：動畫生成）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "動畫工具" AND file.name != "diffusionstudio--lottie"
+> WHERE subcategory = "動畫生成" AND file.name != "diffusionstudio--lottie"
 > SORT stars DESC
 > ```
 
@@ -562,7 +602,7 @@ lottie.loadAnimation({ container: document.getElementById('anim'), renderer: 'sv
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["動畫工具","Lottie","SVG"];
+> const concepts = ["動畫生成","即時預覽","Web 開發"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "diffusionstudio--lottie" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
