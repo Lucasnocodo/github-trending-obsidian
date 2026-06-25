@@ -7,8 +7,8 @@ language: JavaScript
 license: N/A
 description: ""
 homepage: ""
-stars: 717
-stars_per_day: 359
+stars: 767
+stars_per_day: 256
 forks: 1
 open_issues: 0
 created: 2026-06-21
@@ -30,8 +30,8 @@ use_case: "提供一個放鬆的鳥類模擬體驗，讓你在瀕臨海岸的天
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-06-27"
+appearances: 3
+next_review: "2026-06-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-23"
-star_history: "2026-06-23:550,2026-06-24:717"
+star_history: "2026-06-23:550,2026-06-24:717,2026-06-25:767"
 tags:
   - github
   - "category/遊戲"
@@ -619,5 +619,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-25|2026-06-25]] — 再次上榜，767 stars
 - [[2026-06-24|2026-06-24]] — 再次上榜，717 stars
 - [[2026-06-23|2026-06-23]] — 首次收錄，550 stars

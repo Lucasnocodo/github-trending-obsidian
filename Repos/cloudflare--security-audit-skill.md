@@ -7,10 +7,10 @@ language: JavaScript
 license: MIT
 description: "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings"
 homepage: ""
-stars: 495
-stars_per_day: 99
-forks: 42
-open_issues: 0
+stars: 726
+stars_per_day: 121
+forks: 56
+open_issues: 2
 created: 2026-06-18
 pushed_at: 2026-06-18
 first_seen: 2026-06-24
@@ -30,8 +30,8 @@ use_case: "讓你的程式代理變成安全審核員，進行多階段的安全
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-01"
+appearances: 2
+next_review: "2026-07-02"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-24"
-star_history: "2026-06-24:491,2026-06-24:495"
+star_history: "2026-06-24:491,2026-06-24:495,2026-06-25:726"
 tags:
   - github
   - "category/安全"
@@ -731,4 +731,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-25|2026-06-25]] — 再次上榜，726 stars
 - [[2026-06-24|2026-06-24]] — 首次收錄，491 stars

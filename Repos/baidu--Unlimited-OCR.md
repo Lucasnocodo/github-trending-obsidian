@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing."
 homepage: ""
-stars: 3758
-stars_per_day: 752
-forks: 246
-open_issues: 8
+stars: 6459
+stars_per_day: 1077
+forks: 505
+open_issues: 19
 created: 2026-06-18
-pushed_at: 2026-06-23
+pushed_at: 2026-06-24
 first_seen: 2026-06-23
 week: "2026-W26"
 month: "2026-06"
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-23
 use_case: "提供強大的 OCR 解決方案，支持單次長文本解析。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-06-27"
+appearances: 3
+next_review: "2026-06-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 20
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-23"
-star_history: "2026-06-23:481,2026-06-23:496,2026-06-24:3692,2026-06-24:3758"
+star_history: "2026-06-23:481,2026-06-23:496,2026-06-24:3692,2026-06-24:3758,2026-06-25:6459"
 tags:
   - github
   - "category/ai_ml"
@@ -937,5 +937,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-25|2026-06-25]] — 再次上榜，6.5k stars
 - [[2026-06-24|2026-06-24]] — 再次上榜，3.7k stars
 - [[2026-06-23|2026-06-23]] — 首次收錄，481 stars
