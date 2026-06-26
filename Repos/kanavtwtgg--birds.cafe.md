@@ -7,9 +7,9 @@ language: JavaScript
 license: N/A
 description: ""
 homepage: ""
-stars: 767
-stars_per_day: 256
-forks: 1
+stars: 788
+stars_per_day: 197
+forks: 2
 open_issues: 0
 created: 2026-06-21
 pushed_at: 2026-06-23
@@ -30,8 +30,8 @@ use_case: "提供一個放鬆的鳥類模擬體驗，讓你在瀕臨海岸的天
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-06-28"
+appearances: 4
+next_review: "2026-07-03"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-23"
-star_history: "2026-06-23:550,2026-06-24:717,2026-06-25:767"
+star_history: "2026-06-23:550,2026-06-24:717,2026-06-25:767,2026-06-26:788"
 tags:
   - github
   - "category/遊戲"
@@ -323,7 +323,7 @@ http://localhost:8000
 
 相關概念：[[遊戲設計]] · [[模擬]] · [[WebGL]]
 
-相關專案：[[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]] · [[boona13--mykonos-island-voxels|boona13/mykonos-island-voxels]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[levy-street--world-of-claudecraft|levy-street/world-of-claudecraft]]
+相關專案：[[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]] · [[boona13--mykonos-island-voxels|boona13/mykonos-island-voxels]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[levy-street--world-of-claudecraft|levy-street/world-of-claudecraft]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]]
 
 [GitHub](https://github.com/kanavtwtgg/birds.cafe)
 
@@ -619,6 +619,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-26|2026-06-26]] — 再次上榜，788 stars
 - [[2026-06-25|2026-06-25]] — 再次上榜，767 stars
 - [[2026-06-24|2026-06-24]] — 再次上榜，717 stars
 - [[2026-06-23|2026-06-23]] — 首次收錄，550 stars

@@ -2472,10 +2472,10 @@
   },
   "Forsy-AI/agent-apprenticeship": {
     "first_seen": "2026-06-21",
-    "last_seen": "2026-06-25",
-    "times_seen": 5,
+    "last_seen": "2026-06-26",
+    "times_seen": 6,
     "stars_first": 529,
-    "stars_last": 909
+    "stars_last": 941
   },
   "dongshuyan/compass-skills": {
     "first_seen": "2026-06-21",
@@ -2514,24 +2514,24 @@
   },
   "lyra81604/zhengxi-views": {
     "first_seen": "2026-06-23",
-    "last_seen": "2026-06-25",
-    "times_seen": 3,
+    "last_seen": "2026-06-26",
+    "times_seen": 4,
     "stars_first": 673,
-    "stars_last": 989
+    "stars_last": 1037
   },
   "aidenybai/cnfast": {
     "first_seen": "2026-06-23",
-    "last_seen": "2026-06-25",
-    "times_seen": 3,
+    "last_seen": "2026-06-26",
+    "times_seen": 4,
     "stars_first": 664,
-    "stars_last": 880
+    "stars_last": 933
   },
   "kanavtwtgg/birds.cafe": {
     "first_seen": "2026-06-23",
-    "last_seen": "2026-06-25",
-    "times_seen": 3,
+    "last_seen": "2026-06-26",
+    "times_seen": 4,
     "stars_first": 550,
-    "stars_last": 767
+    "stars_last": 788
   },
   "baidu/Unlimited-OCR": {
     "first_seen": "2026-06-23",
@@ -2542,17 +2542,17 @@
   },
   "sums001/Windows-Copilot-API": {
     "first_seen": "2026-06-24",
-    "last_seen": "2026-06-25",
-    "times_seen": 2,
+    "last_seen": "2026-06-26",
+    "times_seen": 3,
     "stars_first": 534,
-    "stars_last": 664
+    "stars_last": 745
   },
   "bozhouDev/codex-orange-book": {
     "first_seen": "2026-06-24",
-    "last_seen": "2026-06-25",
-    "times_seen": 2,
+    "last_seen": "2026-06-26",
+    "times_seen": 3,
     "stars_first": 528,
-    "stars_last": 1453
+    "stars_last": 1963
   },
   "cloudflare/security-audit-skill": {
     "first_seen": "2026-06-24",
@@ -2563,9 +2563,30 @@
   },
   "yo-WASSUP/Good-Badminton": {
     "first_seen": "2026-06-25",
-    "last_seen": "2026-06-25",
-    "times_seen": 1,
+    "last_seen": "2026-06-26",
+    "times_seen": 2,
     "stars_first": 479,
-    "stars_last": 479
+    "stars_last": 517
+  },
+  "raiyanyahya/recall": {
+    "first_seen": "2026-06-26",
+    "last_seen": "2026-06-26",
+    "times_seen": 1,
+    "stars_first": 543,
+    "stars_last": 543
+  },
+  "BohemiaInteractive/CWR": {
+    "first_seen": "2026-06-26",
+    "last_seen": "2026-06-26",
+    "times_seen": 1,
+    "stars_first": 494,
+    "stars_last": 494
+  },
+  "QwenLM/Qwen-AgentWorld": {
+    "first_seen": "2026-06-26",
+    "last_seen": "2026-06-26",
+    "times_seen": 1,
+    "stars_first": 488,
+    "stars_last": 488
   }
 }

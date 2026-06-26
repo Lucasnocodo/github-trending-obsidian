@@ -7,9 +7,9 @@ language: Python
 license: Apache-2.0
 description: "🏸  AI Badminton Hawk-Eye System"
 homepage: ""
-stars: 479
-stars_per_day: 120
-forks: 150
+stars: 517
+stars_per_day: 103
+forks: 161
 open_issues: 5
 created: 2026-06-20
 pushed_at: 2026-06-23
@@ -30,8 +30,8 @@ use_case: "提供基於計算機視覺的羽毛球比賽視頻分析工具，實
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-02"
+appearances: 2
+next_review: "2026-07-03"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 44
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-25"
-star_history: "2026-06-25:479"
+star_history: "2026-06-25:479,2026-06-26:517"
 tags:
   - github
   - "category/其他"
@@ -931,4 +931,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-26|2026-06-26]] — 再次上榜，517 stars
 - [[2026-06-25|2026-06-25]] — 首次收錄，479 stars

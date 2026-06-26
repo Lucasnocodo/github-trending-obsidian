@@ -7,8 +7,8 @@ language: TypeScript
 license: NOASSERTION
 description: "Fast drop in replacement for `cn`"
 homepage: ""
-stars: 881
-stars_per_day: 176
+stars: 933
+stars_per_day: 156
 forks: 8
 open_issues: 6
 created: 2026-06-19
@@ -30,8 +30,8 @@ use_case: "提供一個快速的 `cn` 替代方案，提升 Tailwind CSS 的性�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-07-02"
+appearances: 4
+next_review: "2026-07-03"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 14
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-23"
-star_history: "2026-06-23:664,2026-06-23:665,2026-06-24:790,2026-06-24:792,2026-06-25:880,2026-06-25:881"
+star_history: "2026-06-23:664,2026-06-23:665,2026-06-24:790,2026-06-24:792,2026-06-25:880,2026-06-25:881,2026-06-26:933"
 tags:
   - github
   - "category/開發工具"
@@ -784,6 +784,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-26|2026-06-26]] — 再次上榜，933 stars
 - [[2026-06-25|2026-06-25]] — 再次上榜，880 stars
 - [[2026-06-24|2026-06-24]] — 再次上榜，790 stars
 - [[2026-06-23|2026-06-23]] — 首次收錄，664 stars

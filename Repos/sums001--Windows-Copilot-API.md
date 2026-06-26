@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "Reverse engineered Windows Copilot into an OpenAI-compatible API. Access GPT-4 and GPT-5 models through a simple REST interface without API keys or billing."
 homepage: ""
-stars: 664
-stars_per_day: 133
-forks: 238
-open_issues: 2
+stars: 745
+stars_per_day: 124
+forks: 263
+open_issues: 3
 created: 2026-06-19
 pushed_at: 2026-06-24
 first_seen: 2026-06-24
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-24
 use_case: "將 Windows Copilot 反向工程成 OpenAI 兼容的 API，無需 API 金鑰或計費即可訪問 GPT-4 和 GPT-5 模型。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-02"
+appearances: 3
+next_review: "2026-07-03"
 contributor_count: 2
 engagement: "high"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-24"
-star_history: "2026-06-24:534,2026-06-25:664"
+star_history: "2026-06-24:534,2026-06-25:664,2026-06-26:745"
 tags:
   - github
   - "category/ai_ml"
@@ -920,5 +920,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-26|2026-06-26]] — 再次上榜，745 stars
 - [[2026-06-25|2026-06-25]] — 再次上榜，664 stars
 - [[2026-06-24|2026-06-24]] — 首次收錄，534 stars
