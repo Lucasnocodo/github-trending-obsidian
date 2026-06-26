@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing."
 homepage: ""
-stars: 6484
-stars_per_day: 1081
-forks: 509
-open_issues: 19
+stars: 8724
+stars_per_day: 1246
+forks: 683
+open_issues: 29
 created: 2026-06-18
 pushed_at: 2026-06-24
 first_seen: 2026-06-23
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-23
-use_case: "提供高效的長距離文檔解析，支持單張及多頁面圖像的OCR處理。"
+use_case: "提供一個高效的 OCR 解決方案，支持長文檔的解析和多頁 PDF 處理。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 3
 next_review: "2026-06-28"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: 14
+issue_close_rate: 12
 repo_size_kb: 91733
 readme_length: 8082
 bus_factor: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-23"
-star_history: "2026-06-23:481,2026-06-23:496,2026-06-24:3692,2026-06-24:3758,2026-06-25:6459,2026-06-25:6484"
+star_history: "2026-06-23:481,2026-06-23:496,2026-06-24:3692,2026-06-24:3758,2026-06-25:6459,2026-06-25:6484,2026-06-26:8724"
 tags:
   - github
   - "category/ai_ml"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "Unlimited-OCR"
   - "baidu/Unlimited-OCR"
-  - "提供高效的長距離文檔解析，支持單張及多頁面圖像的OCR處理。"
+  - "提供一個高效的 OCR 解決方案，支持長文檔的解析和多頁 PDF 處理。"
 ---
 
 # Unlimited-OCR
 
-**6.5k** stars · **1.1k** stars/天 · 建立 6 天前 · Python · MIT
+**8.7k** stars · **1.2k** stars/天 · 建立 7 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/baidu--Unlimited-OCR");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供高效的長距離文檔解析，支持單張及多頁面圖像的OCR處理。
+> 提供一個高效的 OCR 解決方案，支持長文檔的解析和多頁 PDF 處理。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (1.1k stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要高效文檔解析的開發者，尤其是處理長文本和多頁面資料的專業人士。
-> **一句話重點** Unlimited-OCR 在長文本和多頁面文檔解析上具有顯著優勢，適合需要高效文檔處理的開發者。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (1.2k stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要高效處理長文本和多頁 PDF 的研究人員和開發者。
+> **一句話重點** Unlimited OCR 的設計使其在長文本和多頁文檔處理上具備優勢，適合需要高效 OCR 解決方案的用戶。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,104 +101,105 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、10 小時整合，得到高效的文檔解析效果，值得投入。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~4h · **綁定風險** medium
+> **結論** 花 4 小時學、8 小時整合，得到高效的 OCR 解決方案，值得投資。
 
 > [!abstract] 核心創新
-> 支持高達32768字元的長文本解析，並能有效處理多頁PDF文檔。
+> Unlimited OCR 提供了一種高效的長文本解析解決方案，能夠處理多頁 PDF 文件，並支持自定義的解析參數。
 
 ## 專案簡介
 
-Unlimited-OCR 是一個基於深度學習的OCR工具，專注於長距離文檔解析。用戶可以透過簡單的指令將圖像或PDF轉換為可編輯的文本。其核心機制是利用 Hugging Face 的 transformers 庫，並在 NVIDIA GPU 上進行推理。用戶只需提供圖像檔案和一些配置參數，如 `base_size` 和 `image_size`，便可獲得解析結果。這個工具的賣點在於支持高達32768的文本長度，並且能夠處理多頁面文檔，這在傳統OCR工具中是相對少見的。技術上，該專案使用了 PyTorch 和多種依賴庫，如 `torchvision` 和 `transformers`，確保了高效的運算性能。
+Unlimited OCR 是一個基於深度學習的光學字符識別工具，專注於長文本的解析。用戶可以透過簡單的 Python 指令，將圖像或 PDF 文件轉換為可編輯的文本，支持單頁和多頁解析。這個工具的核心賣點在於其高效的模型設計，能夠處理長達 32768 個 token 的文本，並且支持自定義的 n-gram 參數來提高解析精度。使用者只需指定圖像路徑、解析模式和輸出路徑，即可輕鬆獲得結果。其技術實作基於 Hugging Face 的 Transformers 框架，並且要求使用 CUDA 支持的 NVIDIA GPU，這使得其在性能上有顯著優勢。與其他 OCR 工具相比，如 PaddleOCR 和 Tesseract，Unlimited OCR 提供了更高的靈活性和精度，特別是在處理多頁文檔時。
 
-與其他OCR工具相比，如 Tesseract，Unlimited-OCR 在長文本處理和多頁面支持上具有明顯優勢，後者在處理大文件時可能會遇到性能瓶頸。實際使用中，該工具的效能表現良好，但對於大規模資料處理，仍需注意資源的配置和管理。社群活躍度尚可，但開發者需密切關注開放的問題和功能請求。總體來看，這是一個值得關注的專案，尤其對於需要高效文檔解析的開發者來說。未來六個月內，預計會持續優化模型性能和擴展功能，特別是在多語言支持方面。
+這使得它非常適合需要高效處理大量文檔的企業或研究機構。儘管如此，使用者需要注意其對硬體的要求，特別是 GPU 的配置。社群活躍度中等，解決問題的速度較慢，可能會影響使用者的體驗。這個專案目前處於早期階段，適合對 OCR 有需求的開發者和研究者，但不建議用於生產環境的核心應用。未來幾個月，預期將會有更多功能和穩定性改進。適合需要處理大量文檔的團隊，尤其是那些已經在使用深度學習技術的團隊。
 
-**技術棧**：`Python 3.12` · `PyTorch 2.10.0` · `transformers 4.57.1` · `CUDA 12.9`
+**技術棧**：`Python 3.12` · `Torch 2.10.0` · `Transformers 4.57.1`
 
 ## 重點功能
 
-- 長文本支持 — 能處理高達32768字元的文本，適合長篇文檔解析。
-- 多頁面解析 — 支持一次性解析多頁PDF，簡化處理流程。
-- GPU加速推理 — 在NVIDIA GPU上運行，提供高效的推理性能。
-- 靈活的配置選項 — 提供多種參數設置，如 `base_size` 和 `image_size`，滿足不同需求。
-- 簡單的API接口 — 使用 Hugging Face transformers 進行模型加載和推理，易於集成。
+- 長文本解析 — 支持最多 32768 個 token 的文本解析，適合處理長文檔。
+- 多頁 PDF 支持 — 透過自動將 PDF 轉換為圖像來處理多頁文檔，簡化工作流程。
+- 自定義 n-gram 參數 — 允許用戶設置 n-gram 參數以提高解析精度，適合特定需求。
+- GPU 加速 — 基於 NVIDIA GPU 的設計，顯著提高推理速度，適合大規模應用。
+- 簡單的 API — 提供易於使用的 Python API，快速集成到現有工作流中。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 安裝必要的依賴
 ```bash
 pip install torch torchvision transformers Pillow matplotlib einops addict easydict pymupdf psutil
 ```
-2. 加載模型
+2. 載入模型
 ```bash
 tokenizer = AutoTokenizer.from_pretrained('baidu/Unlimited-OCR')
 ```
-3. 執行推理
+3. 執行單頁解析
 ```bash
-model.infer(tokenizer, prompt='document parsing.', image_file='your_image.jpg', output_path='your/output/dir')
+model.infer(tokenizer, prompt='document parsing.', image_file='your_image.jpg', output_path='your/output/dir', base_size=1024, image_size=640, crop_mode=True, max_length=32768, no_repeat_ngram_size=35, ngram_window=128, save_results=True)
 ```
 
 ## 程式碼範例
 
 ```python
 {
-  "前置條件": "需要安裝 PyTorch 和 transformers 庫。",
-  "程式碼": "model.infer(\n    tokenizer,\n    prompt='document parsing.',\n    image_file='your_image.jpg',\n    output_path='your/output/dir',\n    base_size=1024, image_size=640, crop_mode=True,\n    max_length=32768,\n    no_repeat_ngram_size=35, ngram_window=128,\n    save_results=True,\n)",
-  "預期輸出": "解析結果將保存至指定的輸出目錄。"
+  "前置條件": "需要安裝 Hugging Face Transformers 和其他依賴。",
+  "指令": "model.infer(tokenizer, prompt='document parsing.', image_file='your_image.jpg', output_path='your/output/dir', base_size=1024, image_size=640, crop_mode=True, max_length=32768, no_repeat_ngram_size=35, ngram_window=128, save_results=True)",
+  "預期輸出": "解析後的文本將保存在指定的輸出目錄中。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 6484 stars（1081/天），forks 509（7.9%），這顯示出強烈的使用者興趣。作者 MurphyYin 來自百度，擁有豐富的深度學習背景，過去參與過多個OCR相關專案。此專案解決了傳統OCR工具在長文本處理上的不足，特別是在多頁面文檔的解析上，這在市場上是相對缺乏的。近期的推廣活動和社群支持也促進了其快速增長。技術上，隨著深度學習模型的進步，這類工具的可行性大幅提升，特別是在推理速度和準確性方面。forks/stars 比率為 7.9%，顯示出有相當比例的使用者在進行實際修改和應用。
+> 建立 7 天內累積 8724 stars（1246/天），forks 683（7.8%），顯示出強烈的社群關注。這位主要貢獻者 MurphyYin 之前在 OCR 領域有相關經驗，解決了傳統 OCR 工具在處理長文本和多頁文件時的性能瓶頸。此專案的推出正好填補了市場上對高效 OCR 解決方案的需求，並且在社群中引發了討論和實驗，進一步推動了其流行。技術上，NVIDIA GPU 的普及和深度學習模型的進步使得這類工具的實現成為可能。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效文檔解析的開發者，尤其是處理長文本和多頁面資料的專業人士。
+**目標受眾**：需要高效處理長文本和多頁 PDF 的研究人員和開發者。
 
 > [!example] 使用場景
-> - 資料科學家用它來快速解析多頁PDF報告，因為傳統工具在處理長文本時效率低下。
-> - 後端工程師用它來自動化文檔數據提取，因為手動操作繁瑣且容易出錯。
-> - 學術研究者用它來分析長篇論文的內容，因為需要高精度的文本轉換以進行後續分析。
+> - 資料科學家用它來從多頁 PDF 中提取數據，因為傳統工具無法有效處理長文本，這樣可以節省大量手動輸入的時間。
+> - 開發者用它來自動化文檔解析，因為它支持自定義 n-gram 參數，能夠提高解析精度，這對於需要高準確度的應用至關重要。
+> - 企業用它來批量處理掃描的文檔，因為其高效的多頁處理能力可以顯著提高工作效率，特別是在需要處理大量文檔的情況下。
 
 ## 架構分析
 
-Unlimited-OCR 採用基於 PyTorch 的深度學習架構，設計目標是高效處理長文本和多頁面文檔。資料流中，圖像首先被轉換為張量，然後通過訓練好的模型進行推理，最後生成文本輸出。選擇 PyTorch 是因為其在深度學習領域的廣泛應用和活躍的社群支持。這種設計使得模型能夠快速適應不同的輸入格式，但可能在處理極大規模資料時面臨記憶體瓶頸。整體架構的擴展性良好，適合未來進一步的功能擴展和性能優化。
+Unlimited OCR 採用基於 Hugging Face Transformers 的架構，這使得其在模型訓練和推理上具有良好的擴展性。資料流從圖像輸入開始，經過模型推理後生成文本輸出。選擇使用 CUDA 加速的原因在於其能顯著提升推理速度，特別是在處理長文本時。
+
+這種設計的代價是對硬體的要求較高，可能會限制某些用戶的使用。擴展性方面，該工具能夠處理多頁文檔，但在極大文件的處理上可能會遇到記憶體瓶頸。整體而言，這個架構在性能和靈活性上取得了良好的平衡。
 
 ## 技術深入分析
 
-Unlimited-OCR 的核心技術基於深度學習模型，特別是使用了 transformers 框架來進行文本生成。該模型能夠處理的文本長度高達32768字元，這在市場上是相對少見的。效能方面，該工具在 NVIDIA GPU 上運行，能夠提供快速的推理速度，適合大規模文檔的處理。選擇 PyTorch 作為技術棧的主要原因在於其靈活性和強大的社群支持，這使得開發者能夠快速迭代和優化模型。設計上，該工具的依賴關係相對簡單，主要依賴於 PyTorch 和 transformers，這降低了維護成本。技術風險方面，隨著使用者數量的增加，可能會面臨性能瓶頸，特別是在處理極大規模的資料時。整合方面，該工具能夠輕鬆與現有的深度學習框架和CI/CD流程集成，適合在現有的開發環境中使用。
+Unlimited OCR 的核心技術基於 Hugging Face 的 Transformers 框架，利用深度學習模型進行光學字符識別。這使得其在處理長文本時能夠保持高精度，並且支持自定義的 n-gram 參數以適應不同的應用場景。效能上，該工具能夠處理長達 32768 個 token 的文本，並且在多頁文檔的處理上表現良好，特別是在使用 NVIDIA GPU 時。設計上選擇了 CUDA 加速，這雖然提高了性能，但也增加了對硬體的依賴，可能會影響某些用戶的使用體驗。技術風險方面，對於極大文件的處理可能會遇到記憶體不足的問題，這需要用戶在部署前進行評估。整合方面，該工具能夠輕鬆與現有的 Python 環境結合，並且支持多種圖像格式，這使得其在實際應用中非常靈活。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝和使用說明，並包含了範例程式碼。安裝過程相對順暢，但需要注意依賴版本的匹配。整體上，對於新手來說，能在30分鐘內完成基本的設置和測試。
+> README 文件提供了詳細的安裝步驟和範例，對於新手來說相對友好。安裝過程中需要注意 CUDA 和 GPU 的配置，這可能會對某些用戶造成困難。整體而言，花 30 分鐘應該能夠順利運行起來，尤其是對於有深度學習背景的用戶。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 高效的長文本解析能力，適合文檔密集型的應用場景。
-> - 支持多頁面文檔，簡化了用戶的操作流程。
-> - 靈活的配置選項，能夠滿足不同用戶的需求。
+> - 高效的長文本解析能力，支持多頁文檔。
+> - 靈活的自定義 n-gram 參數設置，提高解析精度。
+> - 基於深度學習的架構，能夠持續改進和擴展。
 
 > [!danger] 缺點
-> - 對硬體要求較高，需要 NVIDIA GPU 支持。
-> - 目前對於語言的支持範圍有限，主要集中在英語。
-> - 社群活躍度尚可，但開放問題解決率較低。
+> - 對硬體要求高，需配備 NVIDIA GPU。
+> - 目前僅支持 Python 3.12 及以上版本，兼容性差。
+> - 社群活躍度中等，問題解決速度較慢。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.12+。
-> - 需要 NVIDIA GPU 以獲得最佳性能。
-> - 對於超大文件，可能需要額外的記憶體配置。
-> - 目前僅支持英語和部分其他語言的解析。
+> - 需要 NVIDIA GPU 支持，對於沒有 GPU 的用戶使用體驗差。
+> - 目前僅支持 Python 3.12 及以上版本，對於舊版本的兼容性差。
+> - 在處理極大文件時，可能會遇到記憶體不足的問題，需注意硬體配置。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR) | DeepSeek-OCR 提供基本的OCR功能，但在長文本和多頁面支持上不如 Unlimited-OCR 強大。 |
-| [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | PaddleOCR 是一個全面的OCR解決方案，但在長文本處理上可能不如 Unlimited-OCR 高效。 |
+| [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | PaddleOCR 提供了多種語言的支持和更廣泛的功能，但在長文本解析的精度上可能不如 Unlimited OCR。 |
+| [Tesseract-OCR/tesseract](https://github.com/Tesseract-OCR/tesseract) | Tesseract 是一個成熟的 OCR 工具，但在處理多頁文檔時的效率和靈活性不及 Unlimited OCR。 |
 
 ## 替代方案決策
 
@@ -206,64 +207,63 @@ Unlimited-OCR 的核心技術基於深度學習模型，特別是使用了 trans
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Tesseract | Tesseract 是一個成熟的OCR工具，主要基於傳統的圖像處理技術，而 Unlimited-OCR 則利用深度學習模型進行解析。 | 如果你的需求是簡單的OCR任務，且不需要處理長文本，Tesseract 可能會更合適。 | medium，因為需要重新設計數據流和處理邏輯。 |
-| PaddleOCR | PaddleOCR 提供了一個全面的OCR解決方案，但在長文本處理上不如 Unlimited-OCR 高效。 | 如果需要一個多語言支持的OCR解決方案，PaddleOCR 可能更合適。 | medium，因為需要調整模型和數據處理流程。 |
+| PaddleOCR | PaddleOCR 提供了多語言支持和多種 OCR 模型，但在長文本解析的精度上可能不如 Unlimited OCR。 | 如果需要多語言支持或更廣泛的功能，PaddleOCR 會是更好的選擇。 | medium，因為需要重新調整代碼以適應不同的 API。 |
+| Tesseract-OCR | Tesseract 是一個成熟的 OCR 工具，適合一般的 OCR 任務，但在長文本和多頁處理上效率較低。 | 如果只需要基本的 OCR 功能且不需要處理長文本，Tesseract 是不錯的選擇。 | low，因為 Tesseract 的 API 使用相對簡單。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **Unlimited-OCR** | **Tesseract** | **PaddleOCR** |
+> | 維度 | **Unlimited-OCR** | **PaddleOCR** | **Tesseract-OCR** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Tesseract 是一個成熟的OCR工具，主要基於傳統的圖像處理技術，而 Unlimited-OCR 則利用深度學習模型進行解析。 | PaddleOCR 提供了一個全面的OCR解決方案，但在長文本處理上不如 Unlimited-OCR 高效。 |
-> | 遷移成本 | - | medium，因為需要重新設計數據流和處理邏輯。 | medium，因為需要調整模型和數據處理流程。 |
-> | 適用場景 | 主要場景 | 如果你的需求是簡單的OCR任務，且不需要處理長文本，Tess | 如果需要一個多語言支持的OCR解決方案，PaddleOCR  |
+> | 技術路線 | 本專案 | PaddleOCR 提供了多語言支持和多種 OCR 模型，但在長文本解析的精度上可能不如 Unlimited OCR。 | Tesseract 是一個成熟的 OCR 工具，適合一般的 OCR 任務，但在長文本和多頁處理上效率較低。 |
+> | 遷移成本 | - | medium，因為需要重新調整代碼以適應不同的 API。 | low，因為 Tesseract 的 API 使用相對簡單。 |
+> | 適用場景 | 主要場景 | 如果需要多語言支持或更廣泛的功能，PaddleOCR 會是更 | 如果只需要基本的 OCR 功能且不需要處理長文本，Tesse |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人或小型專案試用，但不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在處理特定格式的PDF時，可能會出現解析錯誤。
-  - 解法：確保PDF格式符合標準，或將PDF轉換為圖像後再進行處理。
-- [MEDIUM] 對於極大文件，可能會導致記憶體溢出。
-  - 解法：分割文件為小部分進行處理。
-- [MEDIUM] 某些配置參數可能會影響推理結果的準確性。
-  - 解法：參考文檔調整參數，進行多次測試以獲得最佳效果。
+- **[HIGH]** 在處理極大文件時可能會遇到記憶體不足的問題
+  - 解法：確保有足夠的 GPU 記憶體，或分割文件進行處理
+- [MEDIUM] 對於不支持的圖像格式，可能會導致解析失敗
+  - 解法：確保圖像格式為 JPEG 或 PNG
+- [MEDIUM] 在多頁處理時，可能會出現結果不一致的情況
+  - 解法：檢查 PDF 文件的質量，並確保轉換過程中沒有錯誤
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 大型企業的文檔自動化處理 | 非常適合 | 具備高效的長文本解析能力，能夠處理大量文檔。 |
-| 學術研究中的文獻分析 | 適合 | 能夠快速提取和分析長篇論文的內容。 |
-| 小型專案的簡單OCR需求 | 不適合 | 對於簡單的OCR任務，可能過於複雜。 |
-| 需要多語言支持的應用 | 普通 | 目前主要支持英語，對其他語言支持有限。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠高效處理文檔，減少手動輸入的時間。 |
+| 大型企業的文檔處理系統 | 適合 | 支持多頁 PDF 和長文本解析，能夠提升工作效率。 |
+| 個人研究項目 | 普通 | 雖然功能強大，但對硬體要求較高，可能不適合所有用戶。  |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 學習時間 | ~4 小時 |
+| 整合時間 | ~8 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、10 小時整合，得到高效的文檔解析效果，值得投入。
+> 花 4 小時學、8 小時整合，得到高效的 OCR 解決方案，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具本身不需要高權限操作，但在處理敏感資料時需謹慎，確保環境安全。依賴的庫需定期更新以防止安全漏洞。
+> 該工具本身不需要高權限，但在使用過程中可能會存取圖像文件。依賴的庫需注意其安全性，特別是在處理敏感資料時。整體來說，使用於 CI/CD pipeline 時需謹慎評估其安全性。
 
 ## 健康度儀表板
 
@@ -328,9 +328,9 @@ Unlimited-OCR 的核心技術基於深度學習模型，特別是使用了 trans
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 509 |
-| Open Issues | 19 |
-| Issue 解決率 | 14% (3 closed) |
+| Forks | 683 |
+| Open Issues | 29 |
+| Issue 解決率 | 12% (4 closed) |
 | 最後推送 | 2026-06-24 |
 | 建立日期 | 2026-06-18 |
 | Repo 大小 | 89.6 MB |
@@ -343,7 +343,7 @@ Unlimited-OCR 的核心技術基於深度學習模型，特別是使用了 trans
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放問題解決率約14%。
+**社群活躍度**：社群活躍度中等，解決問題的速度較慢。
 **連結**：[文件](https://github.com/baidu/Unlimited-OCR)
 
 ## 開發動態
@@ -357,8 +357,8 @@ Unlimited-OCR 的核心技術基於深度學習模型，特別是使用了 trans
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#1](https://github.com/baidu/Unlimited-OCR/issues/1) | 关于 Table 1 精度提升归因的消融实验问题 | 4 | 1 |
-> | [#17](https://github.com/baidu/Unlimited-OCR/issues/17) | [bug+feature] infer.py: hardcoded ngram params, no --resume, | 1 | 0 |
-> | [#15](https://github.com/baidu/Unlimited-OCR/issues/15) | [feat] container image to run unlimited-ocr | 1 | 0 |
+> | [#17](https://github.com/baidu/Unlimited-OCR/issues/17) | [bug+feature] infer.py: hardcoded ngram params, no --resume, | 1 | 1 |
+> | [#15](https://github.com/baidu/Unlimited-OCR/issues/15) | [feat] container image to run unlimited-ocr | 1 | 1 |
 > | [#2](https://github.com/baidu/Unlimited-OCR/issues/2) | 给 Unlimited-OCR 做了个插件 | 1 | 0 |
 
 ## README 摘錄
@@ -633,7 +633,7 @@ Unlimited-OCR 的核心技術基於深度學習模型，特別是使用了 trans
 
 ## 延伸閱讀
 
-相關概念：[[深度學習]] · [[自然語言處理]] · [[OCR]]
+相關概念：[[深度學習]] · [[光學字符識別]] · [[自然語言處理]]
 
 相關專案：[[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]] · [[raiyanyahya--how-to-train-your-gpt|raiyanyahya/how-to-train-your-gpt]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]]
 
@@ -677,7 +677,7 @@ Unlimited-OCR 的核心技術基於深度學習模型，特別是使用了 trans
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["深度學習","自然語言處理","OCR"];
+> const concepts = ["深度學習","光學字符識別","自然語言處理"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "baidu--Unlimited-OCR" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

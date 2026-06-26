@@ -7,18 +7,18 @@ language: Swift
 license: NOASSERTION
 description: "Offline WHOOP companion — pair your strap over Bluetooth, keep all data on your own device. No cloud, no account, no subscription."
 homepage: ""
-stars: 1987
-stars_per_day: 117
-forks: 783
-open_issues: 19
+stars: 2015
+stars_per_day: 112
+forks: 790
+open_issues: 33
 created: 2026-06-07
-pushed_at: 2026-06-24
+pushed_at: 2026-06-25
 first_seen: 2026-06-09
 week: "2026-W24"
 month: "2026-06"
 category: "其他"
 subcategory: "健康追蹤"
-release_tag: "v7.2.0"
+release_tag: "v7.2.3"
 install_complexity: "medium"
 status: archived
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-09
-use_case: "離線的 WHOOP 伴侶，透過藍牙配對你的帶子，所有數據都保存在自己的設備上，無需雲端、帳號或訂閱。"
+use_case: "離線的 WHOOP 伴侶，透過藍牙配對你的帶子，所有數據保留在你的設備上，無需雲端、帳號或訂閱。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 6
 next_review: "2026-06-17"
 contributor_count: 1
 engagement: "high"
-issue_close_rate: 95
-repo_size_kb: 117483
+issue_close_rate: 91
+repo_size_kb: 118125
 readme_length: 10000
 bus_factor: 1
 last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-09"
-star_history: "2026-06-09:532,2026-06-09:534,2026-06-10:1029,2026-06-10:1033,2026-06-11:1395,2026-06-11:1395,2026-06-12:1482,2026-06-12:1484,2026-06-13:1544,2026-06-13:1544,2026-06-14:1605,2026-06-14:1605,2026-06-15:1653,2026-06-16:1689,2026-06-17:1720,2026-06-21:1748,2026-06-22:1818,2026-06-23:1876,2026-06-24:1949,2026-06-25:1987"
+star_history: "2026-06-09:532,2026-06-09:534,2026-06-10:1029,2026-06-10:1033,2026-06-11:1395,2026-06-11:1395,2026-06-12:1482,2026-06-12:1484,2026-06-13:1544,2026-06-13:1544,2026-06-14:1605,2026-06-14:1605,2026-06-15:1653,2026-06-16:1689,2026-06-17:1720,2026-06-21:1748,2026-06-22:1818,2026-06-23:1876,2026-06-24:1949,2026-06-25:1987,2026-06-26:2015"
 tags:
   - github
   - "category/其他"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "noop"
   - "NoopApp/noop"
-  - "離線的 WHOOP 伴侶，透過藍牙配對你的帶子，所有數據都保存在自己的設備上，無需雲端、帳號或訂閱。"
+  - "離線的 WHOOP 伴侶，透過藍牙配對你的帶子，所有數據保留在你的設備上，無需雲端、帳號或訂閱。"
 ---
 
 # noop
 
-**2.0k** stars · **117** stars/天 · 建立 17 天前 · Swift · NOASSERTION
+**2.0k** stars · **112** stars/天 · 建立 18 天前 · Swift · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/NoopApp--noop");
@@ -68,16 +68,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `v7.2.0`
+`個人專案` `v7.2.3`
 
 > [!summary] 一句話摘要
-> 離線的 WHOOP 伴侶，透過藍牙配對你的帶子，所有數據都保存在自己的設備上，無需雲端、帳號或訂閱。
+> 離線的 WHOOP 伴侶，透過藍牙配對你的帶子，所有數據保留在你的設備上，無需雲端、帳號或訂閱。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (117 stars/day)
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (112 stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 希望在不依賴雲端的情況下追蹤健康數據的 WHOOP 帶子使用者。
-> **一句話重點** NOOP 的最大亮點在於它的數據隱私設計，讓用戶能夠完全掌控自己的健康數據。
+> **適合** 希望在不依賴雲端的情況下管理 WHOOP 數據的健康追蹤者。
+> **一句話重點** NOOP 的設計理念是將用戶的健康數據完全保留在本地，這對於重視隱私的用戶來說是一個重要的賣點。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -100,30 +100,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~4h · **綁定風險** low
-> **結論** 花 4 小時學習、2 小時整合，得到高隱私的健康數據追蹤，值得。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，10 小時整合，得到強大的健康數據管理功能，值得投入。
 
 > [!abstract] 核心創新
-> NOOP 是一個完全離線的健康數據追蹤工具，讓用戶在不依賴雲端的情況下掌控自己的數據。
+> NOOP 是一個完全離線的 WHOOP 數據管理應用，無需雲端服務。
 
 ## 專案簡介
 
-NOOP 是一個專注於用戶隱私的健康數據追蹤工具，允許用戶透過藍牙連接自己的 WHOOP 帶子，並在本地設備上保存所有數據。它的核心功能包括實時心率監測、恢復狀態評估及睡眠分析，所有數據處理均在設備上進行，避免了雲端存儲的隱私風險。使用者可以透過簡單的 CLI 指令來安裝和運行應用，例如 `git clone NOOP` 和 `xcodegen gen`。NOOP 的設計理念是讓用戶完全掌控自己的健康數據，並且不需要註冊帳號或支付訂閱費用，這在當前市場上是相當獨特的。技術上，NOOP 使用 Swift、Kotlin 和 Python，並且依賴於 XcodeGen 來生成 Xcode 專案，這使得它在 macOS 上的整合非常流暢。
-
-相較於其他健康追蹤應用，如 Fitbit 或 WHOOP 的官方應用，NOOP 提供了更高的數據隱私性和靈活性，因為它不依賴於雲端服務。使用者可以在本地生成報告，並透過 Apple Health 整合數據，這對於重視隱私的用戶來說是一大優勢。NOOP 目前仍在開發中，存在一些功能不穩定的情況，但社群活躍度高，開發者持續更新和修復問題。這個專案適合那些希望在不依賴雲端的情況下追蹤健康數據的用戶，尤其是對於已經擁有 WHOOP 帶子的使用者。
+NOOP 是一款專為 WHOOP 使用者設計的離線應用程式，旨在讓用戶能夠透過藍牙配對他們的 WHOOP 帶子，並將所有數據保留在本地設備上。用戶可以即時查看心率、恢復狀態、睡眠質量等數據，並且所有數據處理均在設備內完成，確保隱私和安全。這款應用支持 iPhone、Android 和 Mac，並且提供多種功能，如即時心率監測、睡眠分析、運動數據追蹤等。用戶可以透過簡單的指令，如 `git clone NOOP` 和 `xcodegen gen` 來快速開始使用，這使得開發者能夠輕鬆上手並進行自定義開發。NOOP 的賣點在於它完全不依賴雲端服務，這對於重視隱私的用戶來說是一大優勢。
 
 **技術棧**：`Swift` · `Kotlin` · `Python` · `Shell` · `HTML`
 
 ## 重點功能
 
-- 完全離線 — 所有數據都保存在本地，無需雲端存儲。
-- Apple Watch 支援 — 現在可以使用 Apple Watch 作為替代的健康追蹤設備。
-- 實時心率監測 — 透過藍牙連接，實時顯示心率數據。
-- 恢復狀態評估 — 提供基於用戶歷史數據的恢復建議。
-- 詳細的睡眠分析 — 包含睡眠階段、效率和心率變化的分析。
-- 自定義通知 — 用戶可以設置本地通知以提醒健康狀態。
-- 數據導入功能 — 支援從 Apple Health 和 WHOOP CSV 文件導入數據。
-- AI 教練 — 提供基於用戶數據的個性化建議，並可選擇使用本地模型。
+- 離線數據存儲 — 所有數據保留在本地設備上，無需雲端。
+- 即時心率監測 — 透過藍牙連接實時顯示心率數據。
+- 睡眠分析 — 提供詳細的睡眠質量報告，包括各階段的時間和效率。
+- 運動數據追蹤 — 記錄運動過程中的心率變化和運動強度。
+- 自定義報告生成 — 生成可分享的 PDF 報告，包含恢復、睡眠和心率數據。
 
 ## 快速開始
 
@@ -137,7 +132,7 @@ cd NOOP
 ```
 3. 生成 Xcode 專案
 ```bash
-brew install xcodegen && xcodegen gen
+brew install xcodegen; xcodegen gen
 ```
 
 ## 程式碼範例
@@ -145,63 +140,61 @@ brew install xcodegen && xcodegen gen
 ```swift
 {
   "前置條件": "需要 macOS 13+ 和 Xcode 15+。",
-  "指令": "git clone NOOP && cd NOOP && brew install xcodegen && xcodegen gen",
-  "預期輸出": "生成 Xcode 專案以便於開發和測試。"
+  "指令": "git clone NOOP\ncd NOOP\nbrew install xcodegen\nxcodegen gen",
+  "預期輸出": "生成 Xcode 專案以便進一步開發。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 17 天內累積 1987 stars（117/天），forks 783（39.4%），顯示出強烈的社群參與。這個專案由 NoopApp 團隊主導，解決了用戶對於健康數據隱私的需求，尤其是在 WHOOP 帶子使用者中。之前的解決方案如 WHOOP 官方應用需要雲端存儲，這對於隱私敏感的用戶來說並不理想。社群的活躍度和開發者的持續更新使得這個專案在短時間內獲得了大量關注。
+> 建立 18 天內累積 2015 stars（112/天），forks 790（39.2%），這顯示出強烈的社群參與度。這個專案由 NoopApp 團隊開發，解決了用戶對於 WHOOP 數據隱私的需求，因為傳統的 WHOOP 應用需要雲端存儲和帳號。近期的推廣活動和社群反饋也促進了其快速增長，特別是在 Reddit 和 Discord 上的討論。這表明用戶對於無需雲端的解決方案有著強烈的需求，尤其是在健康數據管理方面。
 
 ## 適合誰使用
 
-**目標受眾**：希望在不依賴雲端的情況下追蹤健康數據的 WHOOP 帶子使用者。
+**目標受眾**：希望在不依賴雲端的情況下管理 WHOOP 數據的健康追蹤者。
 
 > [!example] 使用場景
-> - 健身愛好者用它來追蹤自己的恢復狀態和心率變化，因為它提供了即時的數據分析和本地存儲，避免了雲端數據洩漏的風險。
-> - 健康數據分析師用它來分析自己的睡眠質量和日常活動，因為它能夠生成詳細的報告並提供長期趨勢分析。
-> - 隨著 Apple Watch 支援的推出，使用者可以用它來替代 WHOOP 帶子，因為這樣可以減少額外的硬體成本，並且仍然保持數據的私密性。
+> - 健身愛好者用它來追蹤自己的運動數據，因為它能夠提供即時的心率和恢復狀態，幫助他們調整訓練計畫。
+> - 數據分析師用它來分析自己的健康數據，因為所有數據都保存在本地，無需擔心隱私問題。
+> - 開發者用它來進行 WHOOP 數據的自定義開發，因為它的開源特性讓他們能夠輕鬆修改和擴展功能。
 
 ## 架構分析
 
-NOOP 採用跨平台架構設計，使用 Swift 和 Kotlin 來支援 macOS 和 Android。數據處理完全在本地進行，這樣設計的目的是為了保護用戶隱私，避免雲端存儲的風險。資料流從藍牙設備接收數據，經過本地計算後生成報告和視覺化圖表。
-
-這樣的設計雖然提高了用戶隱私，但也使得應用的功能在不同平台之間的整合變得複雜。由於依賴於本地計算，可能會面臨性能瓶頸，尤其是在數據量大的情況下。整體架構的擴展性需要進一步評估，特別是在未來支援更多設備時。
+NOOP 採用跨平台架構，主要使用 Swift 和 Kotlin 來支持 iOS 和 Android，並使用 Python 和 Shell 進行後端數據處理。這樣的設計使得應用能夠在不同平台上保持一致的功能體驗。數據流從藍牙設備獲取心率數據，然後在本地進行處理，最終顯示在用戶界面上。選擇本地處理而非雲端計算，雖然提高了用戶的數據隱私，但也限制了某些即時數據分析功能。整體架構的擴展性良好，但在處理大量歷史數據時可能會遇到性能瓶頸，特別是在低端設備上。
 
 ## 技術深入分析
 
-NOOP 的核心技術機制是基於本地數據處理，這意味著所有的健康數據都不會上傳到雲端。這樣的設計使用了 Swift 和 Kotlin 來實現跨平台的應用，並且依賴於藍牙技術來連接健康追蹤設備。效能方面，NOOP 可以實時處理來自設備的數據流，但在高負載情況下可能會面臨延遲。設計取捨上，選擇本地處理而非雲端計算，雖然提高了隱私性，但也限制了某些即時數據分析功能。技術風險方面，隨著用戶數據量的增加，可能會出現性能瓶頸，特別是在運行多個設備時。整合分析方面，NOOP 目前與 Apple Health 的整合良好，但對於其他主流健康應用的支援仍需加強，這可能會影響用戶的整體體驗。
+NOOP 的核心技術機制是使用藍牙連接來實時獲取 WHOOP 帶子的數據，並在本地進行處理。這樣的設計使得用戶能夠在無需網路的情況下，隨時查看自己的健康數據。應用的性能在於其能夠快速響應用戶的操作，並且在數據同步時不會影響界面的流暢度。選擇 Swift 和 Kotlin 作為主要開發語言，這使得應用在 iOS 和 Android 上都能有良好的性能表現。依賴樹相對簡單，主要依賴於藍牙和本地數據存儲，這降低了應用的複雜性。技術風險主要在於未來可能的硬體兼容性問題，特別是對於新型號的 WHOOP 帶子。整合到現有的健康應用生態系統中，NOOP 需要與 Apple Health 等應用進行數據交互，這可能會帶來一些整合上的挑戰。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，包含安裝指引和功能介紹。安裝過程相對順暢，但需要用戶具備一定的技術背景。沒有提供多語言支持，主要以英語為主。整體來說，花 30 分鐘能夠順利跑起來。
+> README 文件清晰，提供了詳細的安裝步驟和使用說明。安裝過程相對順暢，但需要確保有合適的開發環境。沒有提供多語言支持，主要以英文為主。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 用戶數據完全離線存儲，保障隱私。
-> - 支援多種設備，靈活性高。
-> - 持續更新，社群活躍，問題解決率高。
+> - 完全離線，保障用戶數據隱私。
+> - 多平台支持，提供一致的用戶體驗。
+> - 即時數據顯示，適合運動追蹤。
 
 > [!danger] 缺點
-> - 功能尚不穩定，可能會有 bug。
-> - 僅限於特定平台，對於其他設備的支援有限。
-> - 需要用戶擁有自己的健康追蹤設備。
+> - 僅限於特定平台，無法在 Windows 上使用。
+> - 需要藍牙設備，對於某些用戶來說可能不方便。
+> - 功能依賴於用戶的帶子，無法獨立運作。
 
 > [!warning] 注意事項
-> - 目前仍在開發中，功能不穩定。
-> - 僅支援 macOS，對於其他平台的支援尚未完善。
-> - 需要使用者擁有自己的 WHOOP 帶子或 Apple Watch。
+> - 僅支援 macOS 13+ 和 Xcode 15+。
+> - 需要藍牙設備來進行數據同步。
+> - 不支持 Windows 或其他操作系統。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的健康數據追蹤功能，但不專注於離線數據存儲，且需要雲端服務。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於多模態數據整合，適合需要跨平台數據分析的用戶，但不具備 NOOP 的隱私保護特性。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於 AI 代理的開發，而 NOOP 專注於健康數據的本地管理。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | gpt2api 提供雲端 API 接口，而 NOOP 完全離線運作，無需網路連接。 |
 
 ## 替代方案決策
 
@@ -209,63 +202,64 @@ NOOP 的核心技術機制是基於本地數據處理，這意味著所有的健
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| WHOOP | WHOOP 依賴雲端服務來存儲和分析數據，這使得用戶的數據隱私受到影響。 | 如果你的團隊已經在使用 WHOOP 且需要雲端分析功能，則應選擇 WHOOP。 | medium，因為需要將數據從 WHOOP 轉移到 NOOP。 |
-| Fitbit | Fitbit 提供了完整的健康追蹤生態系統，但同樣依賴於雲端服務。 | 如果你需要一個成熟的生態系統和多種設備選擇，Fitbit 是更好的選擇。 | high，因為需要重新設置所有健康數據和設備。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 AI 代理的開發，提供雲端解決方案，而 NOOP 則是完全離線的健康數據管理工具。 | 如果你的團隊需要雲端功能和 AI 整合，則可以選擇 agent-sprite-forge。 | medium，因為需要重新設計數據流和存儲方式。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | 提供雲端 API 接口以便於數據訪問，而 NOOP 完全依賴於本地數據存儲。 | 如果需要即時的雲端數據訪問和分析，則 gpt2api 更合適。 | high，因為需要重構整個應用的數據處理邏輯。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **noop** | **WHOOP** | **Fitbit** |
+> | 維度 | **noop** | **agent-sprite-forge** | **gpt2api** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | WHOOP 依賴雲端服務來存儲和分析數據，這使得用戶的數據隱私受到影響。 | Fitbit 提供了完整的健康追蹤生態系統，但同樣依賴於雲端服務。 |
-> | 遷移成本 | - | medium，因為需要將數據從 WHOOP 轉移到 NOOP。 | high，因為需要重新設置所有健康數據和設備。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 WHOOP 且需要雲端分析功能，則應 | 如果你需要一個成熟的生態系統和多種設備選擇，Fitbit 是 |
+> | 技術路線 | 本專案 | 專注於 AI 代理的開發，提供雲端解決方案，而 NOOP 則是完全離線的健康數據管理工具。 | 提供雲端 API 接口以便於數據訪問，而 NOOP 完全依賴於本地數據存儲。 |
+> | 遷移成本 | - | medium，因為需要重新設計數據流和存儲方式。 | high，因為需要重構整個應用的數據處理邏輯。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要雲端功能和 AI 整合，則可以選擇 agen | 如果需要即時的雲端數據訪問和分析，則 gpt2api 更合適 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人側項目試用，不建議用在生產環境的核心路徑上。
+> 適合個人使用和小型團隊的健康數據管理，但不建議用於生產環境的核心應用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 某些設備的數據無法正確顯示，特別是在連接不穩定時。
-  - 解法：確保設備在良好的藍牙範圍內，並重啟應用。
-- [MEDIUM] 應用在高負載情況下可能會出現延遲。
-  - 解法：減少同時連接的設備數量。
-- [MEDIUM] 部分功能仍在開發中，可能會不穩定。
-  - 解法：定期檢查更新，並參與社群討論。
+- **[HIGH]** 在某些低端設備上，數據同步可能會導致應用卡頓
+  - 解法：避免在大量數據同步時進行其他操作
+- [MEDIUM] 藍牙連接不穩定可能導致數據丟失
+  - 解法：確保設備在良好的藍牙範圍內
+- [MEDIUM] 某些功能在不同平台上表現不一致
+  - 解法：查看相應平台的使用說明以獲得最佳體驗
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 健身房的私人教練使用 NOOP 來追蹤客戶的恢復狀態 | 非常適合 | 因為它提供了即時的數據分析和本地存儲，保障客戶隱私。 |
-| 小型健身工作室希望提供健康追蹤服務 | 適合 | NOOP 的免費和無需帳號的特性使其適合小型企業使用。 |
-| 大型健身連鎖企業需要雲端數據分析 | 不適合 | NOOP 不依賴雲端服務，無法滿足大規模數據分析需求。 |
+| 10 人以下的新創公司後端 API | 非常適合 | NOOP 的離線特性和數據隱私非常符合小型團隊的需求。 |
+| 大型企業的健康數據管理系統 | 不適合 | 大型企業可能需要雲端解決方案以便於數據共享和分析。 |
+| 個人健康追蹤應用 | 非常適合 | NOOP 提供了豐富的健康數據分析功能，適合個人使用。 |
+| 需要即時數據分析的運動團隊 | 普通 | 雖然 NOOP 提供即時數據，但可能不如雲端解決方案靈活。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~4 小時 |
-| 整合時間 | ~2 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 4 小時學習、2 小時整合，得到高隱私的健康數據追蹤，值得。
+> 花 5 小時學習，10 小時整合，得到強大的健康數據管理功能，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> NOOP 本身不需要高權限運行，所有數據都在本地處理，降低了安全風險。依賴鏈的信任程度較高，因為使用了開源技術。
+> NOOP 本身不需要高權限，所有數據都在本地處理，降低了安全風險。依賴鏈的信任程度較高，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -330,12 +324,12 @@ NOOP 的核心技術機制是基於本地數據處理，這意味著所有的健
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 783 |
-| Open Issues | 19 |
-| Issue 解決率 | 95% (348 closed) |
-| 最後推送 | 2026-06-24 |
+| Forks | 790 |
+| Open Issues | 33 |
+| Issue 解決率 | 91% (353 closed) |
+| 最後推送 | 2026-06-25 |
 | 建立日期 | 2026-06-07 |
-| Repo 大小 | 114.7 MB |
+| Repo 大小 | 115.4 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/NoopApp/noop) |
 
 > [!info]- 語言組成
@@ -349,43 +343,28 @@ NOOP 的核心技術機制是基於本地數據處理，這意味著所有的健
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@NoopApp](https://github.com/NoopApp) | 597 |
+> | [@NoopApp](https://github.com/NoopApp) | 607 |
 
-**最新版本**：v7.2.0 — NOOP v7.2.0 (2026-06-24)
+**最新版本**：v7.2.3 — NOOP v7.2.3 (2026-06-25)
 
 > [!info]- Release Notes
-> ## NOOP v7.2 — Apple Watch support, and every device NOOP works with
+> ## NOOP v7.2.3
 > 
-> The headline: **NOOP now works with your Apple Watch.** No WHOOP needed. Strap on the watch you already own, and NOOP turns it into a recovery-and-strain tracker, on your wrist and on your phone, fully offline.
+> - **Dashboard stays responsive while your strap syncs (iPhone + Mac).** If you've imported a big history (a WHOOP export plus Apple Health), the Today screen could freeze for several seconds on open / tab-return and stutter when scrolling, while the strap offloaded its history in the background. It now paints the day's data instantly and does the heavy history reads without fighting the sync. (#755)
+> - **"Smart Alarm" no longer appears twice under different meanings.** The strap's silent wake alarm keeps the name Smart Alarm; the evening reminder is now "Wind-Down" (iPhone/Mac) and the phone-based smart wake is "Wake Window" (Android). (#730)
+> - **In-app "What's New" is up to date again.** It had quietly stopped updating after 7.0.1.
 > 
-> But honestly, the bigger story is everything NOOP *already* talks to. So this release lays it all out: every single device we support today, and exactly what each one can do right now. Scroll down for the full list.
-> 
-> ---
-> 
-> ### ⚠️ Read this first, it matters
-> 
-> **NOOP is not a finished product. You're basically running a test app.**
-> 
-> This is a one-person community project in its very early days. We ship changes nearly every day. Things break, get rebuilt, and change shape from one version to the next. Some devices are rock solid, others are clearly labelled experimental and are best-effort. **If you want something polished and commercial that "just works" forever, this isn't it (yet).**
-> 
-> What it *is*: free, fully offline, no account, no cloud, no subscription, every feature unlocked, and completely in the open. If you're the kind of person who likes being early, kicking the tyres, and helping shape where it goes, you're exactly who this is for. 💚
-> 
-> ---
-> 
-> ### ⌚ New: Apple Watch as a device (iOS)
-> 
-> - See your **Charge / Effort / Rest** rings + live heart rate right on your wrist, plus breathing, a workout, and a silent-haptic interval timer that all run on the watch itself.
-> ...（完整內容見 GitHub）
+> Thanks to everyone reporting these with logs.
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，經常有更新和問題解決。
-**連結**：[文件](https://noop.fans)
+**社群活躍度**：社群活躍，經常有問題和功能請求的討論。
+**連結**：[文件](https://github.com/NoopApp/noop) · [Discord](https://discord.gg/noopapp)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-23 ~ 2026-06-24）
-> **活躍天數** 2 天 · **最新 commit** Release v7.2.0: AltStore source + Homebrew cask + Info.plist
+> [!abstract] 最近 10 次 commit（2026-06-25 ~ 2026-06-25）
+> **活躍天數** 1 天 · **最新 commit** Release v7.2.3: AltStore source + Homebrew cask
 
 ## 熱門議題
 
@@ -393,8 +372,10 @@ NOOP 的核心技術機制是基於本地數據處理，這意味著所有的健
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#132](https://github.com/NoopApp/noop/issues/132) | 🙏 Roadmap & help wanted — specific things we need (grab one `help wanted` `roadmap` | 4 | 15 |
-> | [#746](https://github.com/NoopApp/noop/issues/746) | Reopen #617, #711 `bug` | 0 | 0 |
-> | [#745](https://github.com/NoopApp/noop/issues/745) | Charge data is not displayed even after having charge data i `bug` | 0 | 0 |
+> | [#769](https://github.com/NoopApp/noop/issues/769) | WHOOP 5.0: Haptics become permanently stuck after interrupte `bug` | 0 | 0 |
+> | [#768](https://github.com/NoopApp/noop/issues/768) | More sports `enhancement` | 0 | 0 |
+> | [#767](https://github.com/NoopApp/noop/issues/767) | No history after repeated troubleshooting attempts `bug` | 0 | 0 |
+> | [#766](https://github.com/NoopApp/noop/issues/766) | #730 Was not fixed - Alarm Functionality at two places `bug` | 0 | 0 |
 
 ## README 摘錄
 
@@ -511,9 +492,9 @@ NOOP 的核心技術機制是基於本地數據處理，這意味著所有的健
 
 ## 延伸閱讀
 
-相關概念：[[健康追蹤]] · [[數據隱私]] · [[本地存儲]]
+相關概念：[[健康追蹤]] · [[數據隱私]] · [[離線應用]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]]
 
 [GitHub](https://github.com/NoopApp/noop)
 
@@ -555,7 +536,7 @@ NOOP 的核心技術機制是基於本地數據處理，這意味著所有的健
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["健康追蹤","數據隱私","本地存儲"];
+> const concepts = ["健康追蹤","數據隱私","離線應用"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "NoopApp--noop" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
