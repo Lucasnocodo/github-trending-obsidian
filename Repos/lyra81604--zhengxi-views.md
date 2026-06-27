@@ -7,9 +7,9 @@ language: Python
 license: NOASSERTION
 description: "可溯源的郑希(易方达基金经理)投研 Agent Skill——基于他全部公开观点原文 + 有原话佐证的投资方法 + 全市场基金真实数据，能溯源问答、按他框架给基金打分，绝不杜撰。⚠️仅研究学习辅助，不构成投资建议‼️website是郑希主页！"
 homepage: "https://www.efunds.com.cn/manager/462.shtml"
-stars: 1037
-stars_per_day: 207
-forks: 124
+stars: 1061
+stars_per_day: 177
+forks: 125
 open_issues: 0
 created: 2026-06-20
 pushed_at: 2026-06-23
@@ -30,8 +30,8 @@ use_case: "提供可溯源的郑希投资观点与方法，辅助研究学习。
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-06-29"
+appearances: 5
+next_review: "2026-07-04"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-23"
-star_history: "2026-06-23:673,2026-06-24:919,2026-06-25:989,2026-06-26:1037"
+star_history: "2026-06-23:673,2026-06-24:919,2026-06-25:989,2026-06-26:1037,2026-06-27:1061"
 tags:
   - github
   - "category/ai_ml"
@@ -822,6 +822,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-27|2026-06-27]] — 再次上榜，1.1k stars
 - [[2026-06-26|2026-06-26]] — 再次上榜，1.0k stars
 - [[2026-06-25|2026-06-25]] — 再次上榜，989 stars
 - [[2026-06-24|2026-06-24]] — 再次上榜，919 stars
