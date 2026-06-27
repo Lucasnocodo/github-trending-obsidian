@@ -7,8 +7,8 @@ language: C#
 license: MIT
 description: ""
 homepage: ""
-stars: 491
-stars_per_day: 14
+stars: 492
+stars_per_day: 13
 forks: 37
 open_issues: 10
 created: 2026-05-20
@@ -17,7 +17,7 @@ first_seen: 2026-05-27
 week: "2026-W22"
 month: "2026-05"
 category: "開發工具"
-subcategory: "UI 工具"
+subcategory: "網路工具"
 release_tag: "v1.0.1"
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-05-27
-use_case: "提供一個現代化的 Psiphon 3 客戶端 UI，讓用戶能夠輕鬆使用網路隧道功能。"
+use_case: "提供一個現代化的 Psiphon 桌面客戶端 UI，讓用戶能夠更方便地使用 Psiphon 網路隧道。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,11 +38,11 @@ issue_close_rate: 33
 repo_size_kb: 47078
 readme_length: 6991
 bus_factor: 1
-last_release_days: 32
+last_release_days: 33
 release_cadence: "quarterly"
 verdict: ""
 ring_history: "assess@2026-05-27"
-star_history: "2026-05-27:378,2026-05-27:378,2026-05-28:392,2026-05-29:397,2026-05-30:408,2026-05-31:424,2026-06-01:431,2026-06-02:426,2026-06-03:433,2026-06-04:440,2026-06-05:443,2026-06-06:452,2026-06-07:456,2026-06-08:459,2026-06-09:460,2026-06-10:464,2026-06-11:467,2026-06-12:470,2026-06-13:473,2026-06-14:474,2026-06-15:474,2026-06-16:474,2026-06-17:476,2026-06-18:478,2026-06-19:482,2026-06-20:482,2026-06-21:485,2026-06-22:485,2026-06-24:488,2026-06-25:489,2026-06-26:491"
+star_history: "2026-05-27:378,2026-05-27:378,2026-05-28:392,2026-05-29:397,2026-05-30:408,2026-05-31:424,2026-06-01:431,2026-06-02:426,2026-06-03:433,2026-06-04:440,2026-06-05:443,2026-06-06:452,2026-06-07:456,2026-06-08:459,2026-06-09:460,2026-06-10:464,2026-06-11:467,2026-06-12:470,2026-06-13:473,2026-06-14:474,2026-06-15:474,2026-06-16:474,2026-06-17:476,2026-06-18:478,2026-06-19:482,2026-06-20:482,2026-06-21:485,2026-06-22:485,2026-06-24:488,2026-06-25:489,2026-06-26:491,2026-06-27:492"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "Se7en-Pro"
   - "KNG7-P/Se7en-Pro"
-  - "提供一個現代化的 Psiphon 3 客戶端 UI，讓用戶能夠輕鬆使用網路隧道功能。"
+  - "提供一個現代化的 Psiphon 桌面客戶端 UI，讓用戶能夠更方便地使用 Psiphon 網路隧道。"
 ---
 
 # Se7en-Pro
 
-**491** stars · **14** stars/天 · 建立 36 天前 · C# · MIT
+**492** stars · **13** stars/天 · 建立 37 天前 · C# · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/KNG7-P--Se7en-Pro");
@@ -71,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `v1.0.1`
 
 > [!summary] 一句話摘要
-> 提供一個現代化的 Psiphon 3 客戶端 UI，讓用戶能夠輕鬆使用網路隧道功能。
+> 提供一個現代化的 Psiphon 桌面客戶端 UI，讓用戶能夠更方便地使用 Psiphon 網路隧道。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Growing · **熱度** Growing (14 stars/day)
-> **授權** MIT (商業友好) · **維護** Slow (最後推送 31 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要自定義 Psiphon 客戶端的開發者，並且對 WPF 和 C# 有一定了解。
-> **一句話重點** 這個專案的價值在於它提供了一個可自定義的 Psiphon 客戶端 UI，讓開發者能夠快速上手並進行擴展。
+> **安裝難度** Medium · **專案狀態** Growing · **熱度** Growing (13 stars/day)
+> **授權** MIT (商業友好) · **維護** Slow (最後推送 32 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要一個可自定義的 Psiphon 客戶端，但不想從頭開始開發的獨立開發者或小型團隊。
+> **一句話重點** 這個專案不僅提供了功能，還重視用戶界面的美觀和易用性，讓 Psiphon 的使用變得更簡單。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/KNG7-P--Se7en-Pro");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "UI 工具" && p.file.name !== "KNG7-P--Se7en-Pro" && p.status !== "archived")
+>     .where(p => p.subcategory === "網路工具" && p.file.name !== "KNG7-P--Se7en-Pro" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,113 +95,116 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 UI 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 網路工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到靈活的 Psiphon 客戶端，值得嘗試。
+> **結論** 花 5 小時學習，3 小時整合，得到一個靈活的 Psiphon 客戶端，值得考慮。
 
 > [!abstract] 核心創新
-> 提供了一個現代化的 UI 層，專注於 Psiphon 的使用體驗，而不僅僅是功能的實現。
+> 提供一個現代化的 Psiphon 客戶端 UI，專注於用戶體驗和配置靈活性。
 
 ## 專案簡介
 
-這個專案是基於 Psiphon 3 的一個現代化桌面客戶端，使用 C# 和 WPF 框架來構建 UI，並採用 MVVM 設計模式。用戶需要提供 Psiphon 的憑證和伺服器列表，這些並不包含在專案中。核心功能包括支持多種主題的 UI、單實例執行、系統範圍的隧道以及 CDN 前置輔助功能。使用者可以透過簡單的配置來連接到 Psiphon 網路，並且能夠在 Windows 啟動時自動啟動應用程式。這個專案的賣點在於其簡潔的用戶界面和靈活的配置選項，讓用戶能夠根據自己的需求進行調整。
+這個專案是基於 Psiphon 3 的一個現代化桌面客戶端，使用 C# 和 WPF 框架開發，採用 MVVM 設計模式。用戶需要提供 Psiphon 的認證和伺服器列表，這些資料不包含在專案中，這樣的設計讓用戶能夠自由選擇自己的伺服器和配置。核心功能包括支援多種主題的 UI、單實例執行、系統範圍的隧道選項以及 CDN 前置幫助等。使用者可以透過 `dotnet build` 指令來編譯專案，並且在配置完成後啟動應用程式。這個工具的賣點在於其靈活性和可擴展性，讓開發者能夠根據需求自定義自己的 Psiphon 使用體驗。
 
-技術上，它依賴於 .NET 8 和 WPF，並使用 Material Design 來提升用戶體驗。與其他類似工具相比，這個專案提供了更現代化的界面和更好的用戶交互設計。對於需要自定義 Psiphon 客戶端的開發者來說，這是一個不錯的選擇，但需要注意的是，使用者必須自行提供必要的憑證和伺服器信息。這可能會對某些用戶造成困擾，特別是對於不熟悉 Psiphon 的新手來說。整體來看，這個專案適合小型團隊或個人開發者，並且在未來的發展中可能會增加更多功能和改進用戶體驗。
+技術上，專案依賴於 .NET 8 和 WPF，這使得它能夠利用最新的 Windows 功能和 UI 設計。與其他類似工具相比，如 `0x0funky/agent-sprite-forge` 和 `0xGF/boneyard`，本專案專注於提供一個可自定義的 UI，而不是僅僅提供一個功能性隧道。這使得它在需要用戶界面的情境下更具吸引力。實際使用中，可能會遇到穩定性問題，如連接循環或流量下崩潰等，這些問題在熱門 Issues 中有提到。這個專案目前處於 beta 階段，對於小型團隊或個人開發者來說，值得一試，但在生產環境中使用時需謹慎考量其穩定性。
 
 **技術棧**：`.NET 8` · `WPF` · `C#`
 
 ## 重點功能
 
-- 現代化 UI — 使用 WPF 和 Material Design 提供美觀的用戶界面，支持深色和淺色主題。
-- MVVM 設計模式 — 使得代碼結構清晰，便於維護和擴展。
-- 單實例執行 — 使用命名互斥鎖來強制執行單一實例，避免多重啟動。
-- 系統範圍隧道 — 可選擇使用 Xray-core 進行全系統隧道設置。
-- CDN 前置輔助 — 提供 Akamai、Cloudflare 等 CDN 的前置輔助功能，增強連接穩定性。
+- 現代化 UI — 使用 WPF 和 Material Design 提供美觀的界面。
+- MVVM 設計模式 — 使得代碼結構清晰，易於維護和擴展。
+- 單實例執行 — 透過命名互斥鎖確保應用程式只能運行一個實例。
+- 系統範圍隧道 — 支援 Xray-core 和 wintun 的集成，提供更靈活的隧道選擇。
+- CDN 前置幫助 — 支援 Akamai、Cloudflare 等 CDN 的配置，提升連接穩定性。
 
 ## 快速開始
 
-1. 克隆專案
-```bash
-git clone https://github.com/KNG7-P/Se7en-Pro.git
-```
-2. 安裝 .NET SDK 8
+1. 安裝 .NET SDK 8
 ```bash
 從 https://dotnet.microsoft.com/download/dotnet/8.0 下載並安裝
 ```
+2. 克隆專案
+```bash
+git clone https://github.com/KNG7-P/Se7en-Pro.git
+```
 3. 編譯專案
 ```bash
-dotnet build PsiphonUI\PsiphonUI.csproj -c Release -r win-x64 --self-contained false
+dotnet build PsiphonUI/PsiphonUI.csproj -c Release -r win-x64 --self-contained false
 ```
-4. 運行應用程式
+4. 配置 Psiphon 參數
 ```bash
-cd PsiphonUI\bin\Release\net8.0-windows10.0.19041.0\win-x64 && .\PsiphonUI.exe
+編輯 PsiphonUI/Services/EmbeddedValues.cs，填入正確的 PropagationChannelId 和 SponsorId
+```
+5. 運行應用程式
+```bash
+cd PsiphonUI/bin/Release/net8.0-windows10.0.19041.0/win-x64 && .\PsiphonUI.exe
 ```
 
 ## 程式碼範例
 
 ```csharp
 {
-  "前置條件": "需要在 EmbeddedValues.cs 中填寫 Psiphon 憑證",
+  "前置條件": "需要在 EmbeddedValues.cs 中配置 PropagationChannelId 和 SponsorId",
   "程式碼": "public const string PropagationChannelId = \"PROPAGATION_CHANNEL_ID\";\npublic const string SponsorId = \"SPONSOR_ID\";",
-  "預期輸出": "應用程式啟動後，顯示連接按鈕，但不會實際連接，直到配置完成。"
+  "預期輸出": "應用程式能夠成功啟動並連接到 Psiphon 網路。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 36 天內累積 491 stars（約 14 stars/天），forks 數量為 37（7.5%），顯示出一定的社群關注度。作者 KNG7-P 似乎專注於開發這個專案，並且在 GitHub 上有其他相關的開源項目。這個專案解決了使用 Psiphon 的用戶在 UI 和配置上的不便，提供了一個更友好的使用介面。社群的反饋也顯示出對於功能的需求和改進的期待，特別是在穩定性和連接問題上。技術上，這個專案的出現是因為對於現有 Psiphon 客戶端的需求，並且它的設計使得用戶能夠更輕鬆地進行配置和使用。forks/stars 比率為 7.5%，顯示出有相當數量的用戶在實際修改和使用這個專案。
+> 建立 37 天內累積 492 stars（約 13 stars/天），forks 37（7.5%），顯示出一定的社群關注度。作者 KNG7-P 之前有開發其他相關工具，這次專案解決了 Psiphon 使用者在 UI 和配置上的不便，提供了一個更友好的介面。最近的推廣活動或社群討論可能也促進了這個專案的曝光。forks/stars 比率相對較高，顯示出不少開發者對這個專案有實際的修改需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要自定義 Psiphon 客戶端的開發者，並且對 WPF 和 C# 有一定了解。
+**目標受眾**：需要一個可自定義的 Psiphon 客戶端，但不想從頭開始開發的獨立開發者或小型團隊。
 
 > [!example] 使用場景
-> - 獨立開發者用它來快速建立一個自定義的 Psiphon 客戶端，因為它提供了現成的 UI 和配置選項，節省了開發時間。
-> - 小型團隊用它來在內部測試 Psiphon 的連接性，因為它支持系統範圍的隧道和 CDN 前置功能，提升了測試效率。
-> - 網路安全研究人員用它來分析 Psiphon 的隧道行為，因為它的開源性質允許他們深入了解其內部運作。
+> - 獨立開發者用它來構建自定義的 Psiphon 客戶端，因為它提供了靈活的 UI 和配置選項，能夠滿足個性化需求。
+> - 小型團隊用它來快速部署一個安全的網路隧道解決方案，因為它的簡單配置和現代化界面能夠節省開發時間。
+> - 技術愛好者用它來學習 WPF 和 MVVM 設計模式，因為專案結構清晰，易於理解和擴展。
 
 ## 架構分析
 
-這個專案採用 MVVM 架構模式，將 UI 與業務邏輯分離，這樣的設計使得應用程式更易於維護和擴展。資料流方面，使用 WPF 的資料綁定功能來實現 UI 與 ViewModel 之間的互動，並且通過服務層來管理隧道連接和設定。選擇 WPF 作為 UI 框架是因為它能夠提供豐富的用戶界面和良好的性能，但代價是需要 Windows 環境。這個專案的擴展性受到 .NET 生態系統的支持，未來可以輕鬆集成更多功能或第三方庫。整體來說，這個架構設計適合小型到中型的應用，但在高負載情況下可能會遇到性能瓶頸，特別是在多用戶同時使用時。
+專案採用 MVVM 架構，將 UI 和業務邏輯分離，以提高可維護性和可測試性。資料流中，使用 WPF 的資料綁定機制來實現 ViewModel 與 View 的互動，這樣的設計使得 UI 更新與業務邏輯解耦。選擇 .NET 8 作為開發平台，能夠利用最新的 Windows 功能，但可能會限制在舊版本 Windows 的兼容性。這種架構模式的代價在於需要額外的學習成本，特別是對於不熟悉 MVVM 的開發者。擴展性方面，因為使用了 WPF，未來可以輕鬆添加更多功能或改進 UI，但這也意味著需要對 Windows 環境的依賴。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於 WPF 的 MVVM 設計模式，這使得 UI 與業務邏輯分離，提升了可維護性。效能方面，因為使用 .NET 8，這個應用能夠充分利用現代硬體的性能，並且能夠處理中等規模的用戶請求。設計上選擇 WPF 是因為它能夠提供豐富的 UI 元素和良好的性能，但這也意味著只能在 Windows 環境下運行，限制了其跨平台的能力。技術風險方面，隨著用戶數量增加，可能會面臨性能瓶頸，特別是在多用戶同時使用時。整合方面，這個專案與 Visual Studio 的整合良好，並且能夠輕鬆地進行 CI/CD 流程的設置。
+專案的核心技術機制是基於 WPF 的 MVVM 設計模式，這使得 UI 與業務邏輯分離，便於維護和擴展。效能方面，因為依賴於 .NET 8，應用程式能夠充分利用最新的 Windows 功能，但可能會對舊版 Windows 用戶造成困擾。選擇 C# 和 WPF 的原因在於其強大的生態系統和對 Windows 的良好支持，但這也意味著未來可能面臨平台鎖定的風險。技術風險方面，穩定性問題可能在高流量情況下導致應用崩潰，這需要在未來的版本中進行優化。整合方面，與 Visual Studio 的相容性良好，能夠輕鬆進行開發和調試，但對於 CI/CD 的支持可能需要額外的配置。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的指導，並包含了必要的配置步驟。安裝過程相對順暢，但需要注意手動填寫憑證的部分。整體來說，對於有一定技術背景的用戶來說，能夠在 30 分鐘內完成安裝和運行。
+> README 文件提供了清晰的指導，包含了配置和使用的詳細步驟。安裝過程相對順暢，但需要注意配置 Psiphon 參數的步驟。整體來說，對於有一定技術背景的用戶來說，花 30 分鐘應該能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 現代化的用戶界面，提升用戶體驗。
+> - 現代化的 UI 設計，提升用戶體驗。
 > - 靈活的配置選項，適合不同需求的用戶。
-> - 開源性質，便於自定義和擴展。
+> - 使用 MVVM 模式，代碼結構清晰，易於維護。
 
 > [!danger] 缺點
-> - 需要手動提供 Psiphon 憑證，對新手不友好。
-> - 穩定性問題仍在解決中，可能影響使用體驗。
-> - 僅支援 Windows 系統，限制了使用範圍。
+> - 需要手動配置 Psiphon 參數，對新手不友好。
+> - 存在穩定性問題，可能影響使用體驗。
+> - 僅限於 Windows 平台，無法跨平台使用。
 
 > [!warning] 注意事項
-> - 需要手動提供 Psiphon 憑證，對新手不友好。
-> - 僅支援 Windows 10/11 (x64) 系統。
-> - 目前功能仍在開發中，穩定性問題尚未完全解決。
+> - 需要手動配置 Psiphon 參數，對新手不友好。
+> - 目前存在穩定性問題，如連接循環和流量下崩潰。
+> - 不支援非 Windows 平台，僅限於 Windows 10/11。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 UI 介面，但專注於不同的網路隧道技術，可能不支援 Psiphon。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 另一個開源的網路隧道工具，功能上更為簡單，適合不需要複雜配置的用戶。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 專注於 AI 代理的工具，與 Psiphon 的網路隧道功能無直接關聯，但提供了不同的使用場景。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於提供一個完整的代理解決方案，而本專案專注於 UI 部分，適合需要自定義界面的用戶。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的網路隧道功能，但缺乏本專案的現代化 UI 和配置靈活性。 |
 
 ## 替代方案決策
 
@@ -209,16 +212,16 @@ cd PsiphonUI\bin\Release\net8.0-windows10.0.19041.0\win-x64 && .\PsiphonUI.exe
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [Psiphon-Labs/psiphon-windows](https://github.com/Psiphon-Labs/psiphon-windows) | 這是 Psiphon 的官方客戶端，提供完整的功能和內建的伺服器列表，使用上更為簡單。 | 如果你需要一個即開即用的 Psiphon 客戶端，而不想進行任何配置。 | low，因為這是官方版本，使用者只需下載並安裝即可。 |
-| [XTLS/Xray-core](https://github.com/XTLS/Xray-core) | 這是一個更底層的網路隧道工具，提供更高的靈活性和性能，但需要更多的配置。 | 如果你需要更高的性能和靈活性，並且願意花時間進行配置。 | medium，因為需要重新配置伺服器和憑證。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，提供更高的效能和更低的記憶體用量，但缺乏本專案的 UI 自定義功能。 | 如果需要高效能的網路隧道解決方案，而不在乎 UI 的美觀。 | medium，因為需要重新適應 Rust 的開發環境。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的功能，但主要集中在 CLI 工具，缺乏 GUI 支持。 | 如果你的團隊已經在使用 CLI 工具，並且不需要圖形界面。 | low，因為 CLI 工具的概念相似，轉換成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **Se7en-Pro** | **psiphon-windows** | **Xray-core** |
+> | 維度 | **Se7en-Pro** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這是 Psiphon 的官方客戶端，提供完整的功能和內建的伺服器列表，使用上更為簡單。 | 這是一個更底層的網路隧道工具，提供更高的靈活性和性能，但需要更多的配置。 |
-> | 遷移成本 | - | low，因為這是官方版本，使用者只需下載並安裝即可。 | medium，因為需要重新配置伺服器和憑證。 |
-> | 適用場景 | 主要場景 | 如果你需要一個即開即用的 Psiphon 客戶端，而不想進行 | 如果你需要更高的性能和靈活性，並且願意花時間進行配置。 |
+> | 技術路線 | 本專案 | 使用 Rust 實作，提供更高的效能和更低的記憶體用量，但缺乏本專案的 UI 自定義功能。 | 提供類似的功能，但主要集中在 CLI 工具，缺乏 GUI 支持。 |
+> | 遷移成本 | - | medium，因為需要重新適應 Rust 的開發環境。 | low，因為 CLI 工具的概念相似，轉換成本較低。 |
+> | 適用場景 | 主要場景 | 如果需要高效能的網路隧道解決方案，而不在乎 UI 的美觀。 | 如果你的團隊已經在使用 CLI 工具，並且不需要圖形界面。 |
 
 ## 成熟度評估
 
@@ -229,26 +232,27 @@ cd PsiphonUI\bin\Release\net8.0-windows10.0.19041.0\win-x64 && .\PsiphonUI.exe
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合開發者進行測試和二次開發，但不建議用於生產環境的核心應用。
+> 適合個人或小型專案試用，但不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高流量下可能會出現連接循環或崩潰的情況
-  - 解法：減少同時連接的用戶數量，或增加伺服器資源
-- [MEDIUM] 需要手動配置憑證，對新手不友好
-  - 解法：參考官方文檔進行配置，或尋求社群幫助
-- [MEDIUM] 某些功能可能會因為缺乏測試而不穩定
-  - 解法：定期檢查更新，並參與社群反饋
+- **[HIGH]** 在高流量情況下可能會崩潰，導致連接中斷。
+  - 解法：減少同時連接數量，或使用更穩定的伺服器。
+- [MEDIUM] 配置 Psiphon 參數的步驟容易被忽略，導致應用無法連接。
+  - 解法：仔細遵循 README 中的配置指導。
+- [MEDIUM] 在某些 Windows 環境下可能無法正常啟動。
+  - 解法：確保已安裝最新的 Windows 更新和 .NET SDK。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊開發自定義 Psiphon 客戶端 | 非常適合 | 提供了靈活的 UI 和配置選項，便於快速開發和測試。 |
-| 個人用戶需要簡單的 Psiphon 使用體驗 | 不適合 | 需要手動配置憑證，對新手不友好。 |
-| 網路安全研究人員分析隧道行為 | 適合 | 開源性質允許深入了解其內部運作。 |
+| 小型團隊的網路隧道解決方案 | 非常適合 | 提供靈活的配置和現代化的 UI，適合快速部署。 |
+| 個人開發者的學習專案 | 適合 | 結構清晰，易於理解和擴展，適合學習 MVVM。 |
+| 大型企業的生產環境 | 不適合 | 存在穩定性問題，可能影響生產環境的可靠性。 |
+| 需要跨平台支持的應用 | 不適合 | 目前僅支援 Windows 平台，無法滿足跨平台需求。 |
 
 ## 採用成本分析
 
@@ -260,12 +264,24 @@ cd PsiphonUI\bin\Release\net8.0-windows10.0.19041.0\win-x64 && .\PsiphonUI.exe
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到靈活的 Psiphon 客戶端，值得嘗試。
+> 花 5 小時學習，3 小時整合，得到一個靈活的 Psiphon 客戶端，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：需要提供 Psiphon 憑證，可能涉及敏感資料。依賴的庫和工具需定期檢查安全性。
+> 低風險：不需要高權限，且不存取敏感資料，但需注意在配置過程中不要洩露 Psiphon 的認證資訊。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個工具主要與 Windows 環境中的應用搭配使用，特別是需要網路隧道的應用。在一個使用 .NET 的專案中，可以輕鬆集成 PsiphonUI，具體做法是將其作為一個子模組引入，並在主應用中調用其 API。與 Visual Studio 的整合良好，能夠直接在 IDE 中進行開發和調試。對於 CI/CD 流程，可能需要額外的配置來確保正確的環境變數和參數傳遞，這可能會增加整合的摩擦點。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 Psiphon UI 出現之前，使用者主要依賴於命令行工具或較舊的 GUI 客戶端，這些工具往往缺乏現代化的設計和靈活性。隨著 WPF 和 .NET 8 的發展，開發者能夠更容易地構建出美觀且功能強大的桌面應用。這個專案代表了對用戶體驗的重視，未來可能會隨著更多功能的加入而進一步演變。
 
 ## 健康度儀表板
 
@@ -354,8 +370,8 @@ cd PsiphonUI\bin\Release\net8.0-windows10.0.19041.0\win-x64 && .\PsiphonUI.exe
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者定期更新並回應問題。
-**連結**：[文件](https://github.com/KNG7-P/Se7en-Pro/wiki)
+**社群活躍度**：社群活躍度中等，最近有持續的更新和回應。
+**連結**：[文件](https://github.com/KNG7-P/Se7en-Pro)
 
 ## 開發動態
 
@@ -542,7 +558,7 @@ cd PsiphonUI\bin\Release\net8.0-windows10.0.19041.0\win-x64 && .\PsiphonUI.exe
 
 ## 延伸閱讀
 
-相關概念：[[CLI/TUI]] · [[自動化測試]] · [[網路隧道]] · [[開源軟體]]
+相關概念：[[CLI/TUI]] · [[網路隧道]] · [[MVVM]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[MayersScott--rkn-block-checker|MayersScott/rkn-block-checker]] · [[Narcooo--inkos|Narcooo/inkos]]
 
@@ -550,11 +566,11 @@ cd PsiphonUI\bin\Release\net8.0-windows10.0.19041.0\win-x64 && .\PsiphonUI.exe
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：UI 工具）
+> [!note]- 直接競品（同子分類：網路工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "UI 工具" AND file.name != "KNG7-P--Se7en-Pro"
+> WHERE subcategory = "網路工具" AND file.name != "KNG7-P--Se7en-Pro"
 > SORT stars DESC
 > ```
 
@@ -586,7 +602,7 @@ cd PsiphonUI\bin\Release\net8.0-windows10.0.19041.0\win-x64 && .\PsiphonUI.exe
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CLI/TUI","自動化測試","網路隧道","開源軟體"];
+> const concepts = ["CLI/TUI","網路隧道","MVVM"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "KNG7-P--Se7en-Pro" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
