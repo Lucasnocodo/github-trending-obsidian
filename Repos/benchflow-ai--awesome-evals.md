@@ -7,12 +7,12 @@ language: N/A
 license: NOASSERTION
 description: "A curated, non-BS library of the best resources for building and evaluating AI agents — papers, blogs, talks, tools, benchmarks. Maintained by BenchFlow."
 homepage: ""
-stars: 465
-stars_per_day: 233
-forks: 33
-open_issues: 0
+stars: 532
+stars_per_day: 177
+forks: 39
+open_issues: 4
 created: 2026-06-24
-pushed_at: 2026-06-26
+pushed_at: 2026-06-27
 first_seen: 2026-06-27
 week: "2026-W26"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "提供建立和評估 AI 代理的最佳資源，包含論文、部�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-06-30"
+appearances: 2
+next_review: "2026-07-05"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-27"
-star_history: "2026-06-27:464,2026-06-27:465"
+star_history: "2026-06-27:464,2026-06-27:465,2026-06-28:532"
 tags:
   - github
   - "category/其他"
@@ -346,7 +346,7 @@ cd awesome-evals && cat README.md
 
 相關概念：[[評估基準]] · [[AI 代理]] · [[錯誤分析]]
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Jane-xiaoer--xiaoer-videolab|Jane-xiaoer/xiaoer-videolab]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Jane-xiaoer--xiaoer-videolab|Jane-xiaoer/xiaoer-videolab]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[LiuMengxuan04--shushu-internship-tool|LiuMengxuan04/shushu-internship-tool]]
 
 [GitHub](https://github.com/benchflow-ai/awesome-evals)
 
@@ -642,4 +642,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-28|2026-06-28]] — 再次上榜，532 stars
 - [[2026-06-27|2026-06-27]] — 首次收錄，464 stars

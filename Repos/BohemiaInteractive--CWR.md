@@ -7,9 +7,9 @@ language: C++
 license: NOASSERTION
 description: "Arma: Cold War Assault Remastered Source Code Repository."
 homepage: ""
-stars: 624
-stars_per_day: 156
-forks: 71
+stars: 662
+stars_per_day: 132
+forks: 77
 open_issues: 4
 created: 2026-06-22
 pushed_at: 2026-06-22
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-26
 use_case: "提供《Arma: Cold War Assault》的重製版引擎和遊戲源碼，讓社群能夠學習、修改和創建。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-04"
+appearances: 3
+next_review: "2026-07-05"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-26"
-star_history: "2026-06-26:494,2026-06-26:494,2026-06-27:624,2026-06-27:624"
+star_history: "2026-06-26:494,2026-06-26:494,2026-06-27:624,2026-06-27:624,2026-06-28:662"
 tags:
   - github
   - "category/其他"
@@ -732,5 +732,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-28|2026-06-28]] — 再次上榜，662 stars
 - [[2026-06-27|2026-06-27]] — 再次上榜，624 stars
 - [[2026-06-26|2026-06-26]] — 首次收錄，494 stars
