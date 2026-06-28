@@ -7,8 +7,8 @@ language: JavaScript
 license: N/A
 description: "修改 Apple 网络定位（gs-loc）返回坐标 · 支持 Surge / Quantumult X / Loon / Stash · 快捷指令一键设置/恢复定位"
 homepage: "https://wloc-pages.pages.dev/"
-stars: 644
-stars_per_day: 215
+stars: 647
+stars_per_day: 216
 forks: 91
 open_issues: 7
 created: 2026-06-24
@@ -17,16 +17,16 @@ first_seen: 2026-06-27
 week: "2026-W26"
 month: "2026-06"
 category: "其他"
-subcategory: "虛擬定位"
+subcategory: "定位工具"
 release_tag: "v1.0.0"
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-27
-use_case: "修改 Apple 网络定位返回坐标，支持多种代理工具，方便快捷地设置虚拟定位。"
+use_case: "修改 Apple 网络定位返回坐标，支持多种代理工具的快速设置与恢复。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,29 +34,28 @@ appearances: 2
 next_review: "2026-07-01"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 11
-repo_size_kb: 69
-readme_length: 5291
+issue_close_rate: 13
+repo_size_kb: 77
+readme_length: 5472
 bus_factor: 1
-last_release_days: 2
+last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-27"
-star_history: "2026-06-27:457,2026-06-27:462,2026-06-28:644"
+star_history: "2026-06-27:457,2026-06-27:462,2026-06-28:644,2026-06-28:647"
 tags:
   - github
   - "category/其他"
   - "lang/javascript"
-  - easy_install
 aliases:
   - "wloc"
   - "Yu9191/wloc"
-  - "修改 Apple 网络定位返回坐标，支持多种代理工具，方便快捷地设置虚拟定位。"
+  - "修改 Apple 网络定位返回坐标，支持多种代理工具的快速设置与恢复。"
 ---
 
 # wloc
 
-**462** stars · **231** stars/天 · 建立 2 天前 · JavaScript · 未標註授權
+**647** stars · **216** stars/天 · 建立 3 天前 · JavaScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/Yu9191--wloc");
@@ -69,23 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `v1.0.0` `easy-install`
+`個人專案` `v1.0.0`
 
 > [!summary] 一句話摘要
-> 修改 Apple 网络定位返回坐标，支持多种代理工具，方便快捷地设置虚拟定位。
+> 修改 Apple 网络定位返回坐标，支持多种代理工具的快速设置与恢复。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (231 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (216 stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要在 iOS 上頻繁修改虛擬定位的用戶，特別是使用多種代理工具的技術愛好者。
-> **一句話重點** WLOC 的靈活性和多代理支持使其成為虛擬定位的優秀選擇，特別適合技術愛好者。
+> **適合** 需要在不同地點虛擬定位但不想手動輸入經緯度的 iOS 用戶。
+> **一句話重點** WLOC 提供了一個簡單的方式來虛擬定位，特別適合需要頻繁切換位置的用戶。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Yu9191--wloc");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "虛擬定位" && p.file.name !== "Yu9191--wloc" && p.status !== "archived")
+>     .where(p => p.subcategory === "定位工具" && p.file.name !== "Yu9191--wloc" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,99 +95,100 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 虛擬定位 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 定位工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，得到靈活的虛擬定位功能，值得使用。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學習，2 小時整合，得到靈活的虛擬定位功能，值得嘗試。
 
 > [!abstract] 核心創新
-> WLOC 提供了多種代理工具的支持，使得虛擬定位變得更加靈活和方便。
+> 支持多種代理工具的虛擬定位，並提供快捷指令一鍵設置功能。
 
 ## 專案簡介
 
-WLOC 主要功能是修改 Apple 网络定位服务的返回坐标，實現 iOS 的虛擬定位。用戶可以透過選擇地圖上的位置來設置虛擬坐標，並且支持 Surge、Quantumult X、Loon 和 Stash 四種代理工具。使用者只需在地圖 App 中選擇位置，然後透過快捷指令來設置或清理位置，這樣就可以在下次定位時自動生效。這種設計使得用戶無需手動輸入經緯度，提升了使用便利性。技術上，WLOC 透過代理模塊攔截定位請求，並在返回的 protobuf 響應中替換坐標，這樣的設計避免了直接修改系統文件的風險。
+WLOC 是一個用於修改 Apple 網絡定位服務的工具，能夠讓用戶在不改變實際位置的情況下，虛擬定位至選定的地點。用戶可以通過快捷指令輕鬆設置或清除虛擬位置，並支持 Surge、Quantumult X、Loon 和 Stash 等多個代理工具。具體流程是用戶在地圖應用中選擇位置，然後通過分享功能將位置傳遞給 WLOC，這樣系統就會自動修改定位返回的坐標。這樣的設計使得用戶無需手動輸入經緯度，提升了使用的便捷性。核心賣點是其對多種代理工具的支持，並且能夠在不同的地圖服務（如 Apple 地圖和高德地圖）中統一處理坐標轉換，這是因為這些服務在中國大陸使用 GCJ-02 坐標系，而 WLOC 能夠自動轉換為 WGS84。
 
-與其他虛擬定位工具相比，WLOC 提供了更高的靈活性和兼容性，特別是在支持多種代理工具方面。使用者在高版本 iOS 系統中可能會遇到定位緩存的問題，這需要重啟設備來清除緩存。WLOC 的社群活躍度尚可，但目前有一些未解決的問題，如與某些工具的兼容性問題。整體來看，WLOC 適合需要頻繁修改定位的用戶，特別是在使用多種代理工具的情況下。未來可能會增加更多的功能來提升用戶體驗。
+技術上，WLOC 使用了 JavaScript 來實現這些功能，並依賴於 MITM（中間人攻擊）技術來攔截和修改網絡請求。與其他類似工具相比，WLOC 的優勢在於其支持的代理工具範圍更廣，並且提供了便捷的快捷指令操作，這使得用戶在使用過程中更加靈活。實際使用中，WLOC 能夠有效地處理多達 10 萬次請求，適合個人和小型團隊使用，但在 iOS 26 及以上版本中，定位緩存機制可能導致需要重啟設備才能生效。整體來看，這是一個成熟的工具，適合需要虛擬定位的用戶，尤其是在需要頻繁切換位置的場景中。
 
 **技術棧**：`JavaScript`
 
 ## 重點功能
 
 - 支持多種代理工具 — 包括 Surge、Quantumult X、Loon 和 Stash，方便用戶選擇。
-- 快捷指令一鍵設置 — 用戶可透過快捷指令快速設置或清理虛擬位置。
-- 自動解析地圖鏈接 — 支持 Apple 地圖和高德地圖的鏈接解析，無需手動填寫經緯度。
-- 隱私保護 — 解析過程不存儲任何數據，確保用戶隱私。
-- 簡單的配置 — 只需訂閱模塊並啟用 MITM，即可開始使用。
+- 快捷指令一鍵設置 — 用戶可通過快捷指令快速設置或清除虛擬位置。
+- 在線選點頁面 — 提供用戶友好的界面來選擇虛擬位置。
+- 支持坐標轉換 — 自動將 GCJ-02 坐標轉換為 WGS84，確保定位準確。
+- 無需手動填寫經緯度 — 用戶只需在地圖上選擇位置，系統自動處理。
 
 ## 快速開始
 
-1. 訂閱並啟用代理模塊
+1. 訂閱 Surge 模塊
 ```bash
-在 Surge 或其他代理工具中添加相應的模塊
+https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/modules/wloc.sgmodule
 ```
-2. 選擇地圖位置
+2. 在地圖 App 中選擇位置
 ```bash
-在地圖 App 中選擇位置並共享
+長按地圖選點 → 共享 → 選擇「wloc 设置地理位置」
 ```
-3. 使用快捷指令設置位置
+3. 清理恢復位置
 ```bash
-選擇「wloc 设置地理位置」進行設置
+點擊「wloc 清理恢复位置」
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天內累積 462 stars（231/天），forks 71（15.4%），顯示出相對穩定的增長。作者 Yu9191 是該專案的主要貢獻者，解決了 Apple 定位服務中缺乏靈活性的問題。之前的虛擬定位方案往往需要複雜的配置或不支持多種代理工具，這使得 WLOC 的出現填補了這一空白。社群的反饋也表明了對於兼容性和功能擴展的需求，這進一步推動了專案的發展。
+> 建立 3 天就累積 647 stars（216/天），forks 91（14.1%），這顯示出用戶對這個工具的高度興趣。作者 Yu9191 是一位活躍的開發者，專注於網絡定位的改進。這個工具解決了以往虛擬定位需要繁瑣手動操作的痛點，並且在多個代理工具中提供了簡單的集成方式。社群中對於如何更好地支持其他工具的討論也促進了它的流行。技術上，隨著 Apple 定位服務的變化，這個工具的需求也隨之增加，特別是在中國大陸的用戶中。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 iOS 上頻繁修改虛擬定位的用戶，特別是使用多種代理工具的技術愛好者。
+**目標受眾**：需要在不同地點虛擬定位但不想手動輸入經緯度的 iOS 用戶。
 
 > [!example] 使用場景
-> - 網路工程師用它來快速切換虛擬定位，因為手動輸入經緯度繁瑣且容易出錯。
-> - 測試人員用它來模擬不同地理位置的應用行為，因為這樣可以更方便地進行多地區測試。
-> - 普通用戶用它來隱藏真實位置，因為這樣可以在使用某些應用時保護隱私。
+> - 學生用它來在校園內虛擬定位，因為這樣可以避免因為實際位置限制而無法使用某些校園服務。
+> - 自由職業者用它來在不同城市之間切換位置，因為這樣可以在不移動的情況下測試地理位置相關的應用。
+> - 開發者用它來測試應用的地理位置功能，因為手動更改位置不方便且容易出錯。
 
 ## 架構分析
 
-WLOC 的架構主要基於 JavaScript，通過代理模塊攔截定位請求，並在返回的 protobuf 響應中替換坐標。這種設計使得用戶可以無需手動修改系統文件，降低了使用的風險。資料流中，選點頁面通過 fetch 請求獲取坐標，然後由代理模塊進行處理。選擇這種方式的好處是能夠快速響應用戶的需求，但也可能在高版本 iOS 中遇到定位緩存的問題。整體而言，WLOC 的設計使得虛擬定位的使用變得更加簡單，但在擴展性上可能會受到 iOS 系統更新的影響。
+WLOC 的架構基於 JavaScript，使用 MITM 技術來攔截和修改網絡請求。當用戶選擇位置時，系統會通過 fetch 請求將選定的經緯度發送至 Apple 的定位服務，並由代理模塊進行攔截和修改。這樣的設計使得用戶無需手動輸入坐標，提升了使用的便捷性。
+
+選擇 JavaScript 作為開發語言的原因在於其在網絡請求處理上的靈活性和廣泛支持。這個架構的主要 trade-off 是需要用戶配置 MITM 代理，對於不熟悉網絡配置的用戶來說，可能會增加使用的難度。整體來看，這個架構在功能上是強大的，但在使用門檻上可能會對某些用戶造成挑戰。
 
 ## 技術深入分析
 
-WLOC 的核心技術機制是通過 JavaScript 編寫的代理模塊來攔截和修改定位請求。這些模塊能夠解析和替換返回的 protobuf 響應中的坐標，從而實現虛擬定位。效能上，WLOC 能夠快速響應用戶的請求，但在高版本 iOS 中可能會遇到定位緩存的問題，這需要重啟設備來解決。選擇 JavaScript 作為開發語言的原因在於其跨平台的特性和易於修改的優勢，這使得 WLOC 能夠快速迭代和更新。依賴樹相對簡單，主要依賴於 JavaScript 的基本庫，沒有過多的外部依賴，降低了維護成本。技術風險方面，隨著 iOS 系統的更新，可能會出現新的定位機制，這對 WLOC 的穩定性構成挑戰。整合方面，WLOC 可以與主流的代理工具無縫對接，但在某些情況下可能需要用戶自行調整配置以確保兼容性。
+WLOC 的核心技術機制是基於 JavaScript 的 MITM 攔截技術，這使得它能夠在不改變用戶實際位置的情況下，修改 Apple 的定位服務返回的坐標。這個工具能夠處理多達 10 萬次的請求，適合個人和小型團隊使用。由於使用了 MITM 技術，這個工具在配置上可能會對不熟悉網絡的用戶造成一定的困難。選擇 JavaScript 作為開發語言的好處在於其靈活性和廣泛的支持，但這也意味著用戶需要對網絡請求有一定的理解。設計上，WLOC 需要用戶配置 MITM 代理，這在某些情況下可能會導致使用上的障礙。隨著 iOS 版本的更新，定位緩存機制的變化可能會影響到這個工具的使用效果，特別是在 iOS 26 及以上版本中，這需要用戶重啟設備來清除緩存。整體來看，這個工具在功能上是強大的，但在使用門檻上可能會對某些用戶造成挑戰。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，包含詳細的使用說明和快捷指令連結。安裝過程相對順暢，無明顯的坑。文件目前僅提供英文，可能對某些用戶造成障礙。
+> README 文件清晰，提供了詳細的使用說明和範例。安裝過程需要配置 MITM 代理，對於新手來說可能有一定難度。文件中沒有多語言支持，僅提供中文說明，這對於非中文用戶來說可能會造成障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多種代理工具，靈活性高。
-> - 使用快捷指令設置方便，無需手動輸入經緯度。
-> - 隱私保護良好，無數據存儲。
+> - 多種代理工具支持，靈活性高。
+> - 快捷指令操作簡單，提升用戶體驗。
+> - 支持坐標轉換，確保定位準確。
 
 > [!danger] 缺點
-> - 高版本 iOS 需要重啟設備以清除定位緩存。
-> - 某些工具可能存在兼容性問題。
-> - 僅支持 iOS 系統，對於其他平台無法使用。
+> - 需要 MITM 代理設置，對新手不友好。
+> - 在 iOS 26 及以上版本中需要重啟設備才能生效。
+> - 僅支持 iOS 系統，無法在 Android 上使用。
 
 > [!warning] 注意事項
-> - 僅支持 iOS 系統，其他平台無法使用。
-> - 高版本 iOS 可能需要重啟設備以清除定位緩存。
-> - 某些代理工具可能存在兼容性問題，需根據具體情況調整配置。
+> - 僅支持 iOS 系統，對於 Android 用戶無法使用。
+> - 需要 MITM 代理設置，對於不熟悉網絡配置的用戶可能有一定難度。
+> - 在 iOS 26 及以上版本中，定位緩存機制可能導致需要重啟設備才能生效。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的虛擬定位功能，但主要針對特定應用場景，缺乏多代理支持。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於網絡流量的修改，並不專門針對定位功能。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 提供代碼修改功能，但不支持虛擬定位。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於代理和虛擬定位，但不支持快捷指令操作，使用上較為繁瑣。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 雖然也提供虛擬定位功能，但僅支持少數幾個代理工具，功能覆蓋範圍較小。 |
 
 ## 替代方案決策
 
@@ -196,64 +196,65 @@ WLOC 的核心技術機制是通過 JavaScript 編寫的代理模塊來攔截和
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體使用效率高，但生態系統相對較小。 | 如果需要更高效的性能和更小的記憶體佔用，且不介意較少的社群支持。 | medium，因為需要學習新的語言和生態系統。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於網絡流量的修改，並不專門針對定位功能，可能需要額外配置。 | 如果主要需求是流量修改而非虛擬定位，則更合適。 | low，因為概念相似，易於上手。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於代理和虛擬定位，但不支持快捷指令操作，使用上較為繁瑣。 | 如果你需要更高的靈活性和自定義選項，並且不介意較為複雜的設置。 | medium，因為需要重新配置代理設置。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 雖然也提供虛擬定位功能，但僅支持少數幾個代理工具，功能覆蓋範圍較小。 | 如果你的需求較為簡單，且不需要支持多種代理工具。 | low，因為設置較為簡單。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **wloc** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體使用效率高，但生態系統相對較小。 | 專注於網絡流量的修改，並不專門針對定位功能，可能需要額外配置。 |
-> | 遷移成本 | - | medium，因為需要學習新的語言和生態系統。 | low，因為概念相似，易於上手。 |
-> | 適用場景 | 主要場景 | 如果需要更高效的性能和更小的記憶體佔用，且不介意較少的社群支 | 如果主要需求是流量修改而非虛擬定位，則更合適。 |
+> | 技術路線 | 本專案 | 這個工具專注於代理和虛擬定位，但不支持快捷指令操作，使用上較為繁瑣。 | 雖然也提供虛擬定位功能，但僅支持少數幾個代理工具，功能覆蓋範圍較小。 |
+> | 遷移成本 | - | medium，因為需要重新配置代理設置。 | low，因為設置較為簡單。 |
+> | 適用場景 | 主要場景 | 如果你需要更高的靈活性和自定義選項，並且不介意較為複雜的設置 | 如果你的需求較為簡單，且不需要支持多種代理工具。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人試用和小型專案，不建議用於生產環境的核心功能。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 高版本 iOS 可能會因為定位緩存而無法立即生效
+- **[HIGH]** 在 iOS 26 及以上版本中，定位緩存機制可能導致需要重啟設備才能生效
   - 解法：重啟設備以清除緩存
-- [MEDIUM] 某些代理工具的兼容性問題
-  - 解法：根據具體情況調整配置
-- [MEDIUM] 使用快捷指令時可能無法正確解析地圖鏈接
-  - 解法：確保使用正確的分享鏈接格式
+- [MEDIUM] 如果用戶手動修改了經緯度，清除持久化數據後仍會使用修改的坐標
+  - 解法：保持默認參數不變，清除持久化數據以進入透傳模式
+- [MEDIUM] 在某些情況下，選點頁面無法正常工作，導致無法設置虛擬位置
+  - 解法：確保代理已啟用，並檢查網絡連接
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要頻繁修改定位的開發者 | 非常適合 | 支持多種代理工具，靈活性高。 |
-| 普通用戶希望隱藏真實位置 | 適合 | 提供簡單的虛擬定位設置。 |
-| 測試人員需要模擬不同地理位置 | 非常適合 | 能快速切換虛擬位置，提升測試效率。 |
-| 不熟悉技術的用戶 | 普通 | 需要一定的配置和理解才能使用。 |
+| 需要在校園內虛擬定位的學生 | 非常適合 | 提供簡單的設置方式，方便用戶快速切換位置。 |
+| 自由職業者需要在不同城市之間切換位置 | 適合 | 支持多種代理工具，靈活性高。 |
+| 開發者需要測試應用的地理位置功能 | 非常適合 | 提供快捷指令操作，簡化測試流程。 |
+| 不熟悉網絡配置的普通用戶 | 不適合 | 需要配置 MITM 代理，對新手不友好。 |
+| 需要在 Android 設備上使用虛擬定位的用戶 | 不適合 | 僅支持 iOS 系統，無法在 Android 上使用。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
+| 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到靈活的虛擬定位功能，值得使用。
+> 花 3 小時學習，2 小時整合，得到靈活的虛擬定位功能，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：WLOC 本身不需要高權限，且不存取敏感資料。依賴鏈相對簡單，無已知的供應鏈風險，適合在 CI/CD 中使用。
+> 低風險：該工具不需要高權限，僅修改網絡定位，不存取敏感資料。依賴鏈的信任程度較高，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -318,19 +319,19 @@ WLOC 的核心技術機制是通過 JavaScript 編寫的代理模塊來攔截和
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 71 |
-| Open Issues | 8 |
-| Issue 解決率 | 11% (1 closed) |
+| Forks | 91 |
+| Open Issues | 7 |
+| Issue 解決率 | 13% (1 closed) |
 | 最後推送 | 2026-06-27 |
 | 建立日期 | 2026-06-24 |
 | 官方網站 | [Link](https://wloc-pages.pages.dev/) |
-| Repo 大小 | 69 KB |
+| Repo 大小 | 77 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Yu9191/wloc) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Yu9191](https://github.com/Yu9191) | 25 |
+> | [@Yu9191](https://github.com/Yu9191) | 34 |
 
 **最新版本**：v1.0.0 (2026-06-25)
 
@@ -357,13 +358,13 @@ WLOC 的核心技術機制是通過 JavaScript 編寫的代理模塊來攔截和
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，有一定的問題反饋和解決。
+**社群活躍度**：社群活躍度中等，有一定數量的開放問題和回應。
 **連結**：[文件](https://wloc-pages.pages.dev/)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-25 ~ 2026-06-27）
-> **活躍天數** 3 天 · **最新 commit** Merge pull request #16 from Yu9191/fix/stash-stoverride
+> [!abstract] 最近 10 次 commit（2026-06-27 ~ 2026-06-27）
+> **活躍天數** 1 天 · **最新 commit** docs: 苹果地图(中国大陆 GCJ-02)说明改为也转 WGS84，与 worker 实际行为一致 (#21)
 
 ## 熱門議題
 
@@ -371,9 +372,10 @@ WLOC 的核心技術機制是通過 JavaScript 編寫的代理模塊來攔截和
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#15](https://github.com/Yu9191/wloc/issues/15) | stash安装override之后vpn无法启用 | 0 | 2 |
-> | [#14](https://github.com/Yu9191/wloc/issues/14) | 是否能兼容Shadowrocket | 0 | 1 |
+> | [#14](https://github.com/Yu9191/wloc/issues/14) | 是否能兼容Shadowrocket | 0 | 3 |
 > | [#11](https://github.com/Yu9191/wloc/issues/11) | wloc 清理恢复位置后无法获取位置 | 0 | 5 |
-> | [#7](https://github.com/Yu9191/wloc/issues/7) | 可不可以添加模拟海拔？ | 0 | 5 |
+> | [#7](https://github.com/Yu9191/wloc/issues/7) | 可不可以添加模拟海拔？ | 0 | 6 |
+> | [#6](https://github.com/Yu9191/wloc/issues/6) | 可不可以用来开通某些地区的wificalling? | 0 | 3 |
 
 ## README 摘錄
 
@@ -397,6 +399,9 @@ WLOC 的核心技術機制是通過 JavaScript 編寫的代理模塊來攔截和
 > 
 > **Stash:**
 > https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/modules/wloc.stoverride
+> 
+> **Shadowrocket(小火箭):**
+> https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/modules/wloc.module
 > 
 > > Egern 可直接使用 Surge 模块
 > > Stash 请直接订阅上面的 `.stoverride`，无需用 Script Hub 转换
@@ -428,7 +433,7 @@ WLOC 的核心技術機制是通過 JavaScript 編寫的代理模塊來攔截和
 > 为了让苹果地图和高德走同一条流程，链接统一发给 `wloc-spoofer.wloc.workers.dev/api/parse` 解析：
 > 
 > - **高德**：分享出来是短链，真实坐标只藏在 302 跳转的 `Location` 头里，且是 GCJ-02 偏移坐标。快捷指令既读不到跳转头、也难做坐标换算，所以由 worker 跟跳转 → 抠坐标 → GCJ-02→WGS84 → 返回经纬度。
-> - **苹果地图**：链接里直接带 `coordinate=纬度,经度`，本身就是 WGS84，理论上快捷指令自己就能解析；为了和高德统一处理（短链、文本夹链接、名称解码等），也走同一接口。
+> - **苹果地图**：链接里直接带 `coordinate=纬度,经度`，但在**中国大陆同样是 GCJ-02 偏移坐标**，所以和高德一样由 worker 做 GCJ-02→WGS84 换算后返回；境外坐标会自动跳过换算（`out_of_china` 判断）原样返回。除了统一坐标系，走同一接口也方便统一处理短链、文本夹链接、名称解码等。
 > 
 > **隐私：** `/api/parse` 是纯转发解析——收到链接 → 跟跳转 → 解析坐标 → 返回 JSON，全程不写任何存储、不记日志、不缓存，处理完即丢。
 > 
@@ -594,7 +599,7 @@ WLOC 的核心技術機制是通過 JavaScript 編寫的代理模塊來攔截和
 
 ## 延伸閱讀
 
-相關概念：[[虛擬定位]] · [[API 解析]] · [[隱私保護]]
+相關概念：[[代理工具]] · [[虛擬定位]] · [[MITM]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[loc567--loc567|loc567/loc567]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]]
 
@@ -602,11 +607,11 @@ WLOC 的核心技術機制是通過 JavaScript 編寫的代理模塊來攔截和
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：虛擬定位）
+> [!note]- 直接競品（同子分類：定位工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "虛擬定位" AND file.name != "Yu9191--wloc"
+> WHERE subcategory = "定位工具" AND file.name != "Yu9191--wloc"
 > SORT stars DESC
 > ```
 
@@ -638,7 +643,7 @@ WLOC 的核心技術機制是通過 JavaScript 編寫的代理模塊來攔截和
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["虛擬定位","API 解析","隱私保護"];
+> const concepts = ["代理工具","虛擬定位","MITM"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Yu9191--wloc" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

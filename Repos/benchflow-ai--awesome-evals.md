@@ -7,8 +7,8 @@ language: N/A
 license: NOASSERTION
 description: "A curated, non-BS library of the best resources for building and evaluating AI agents — papers, blogs, talks, tools, benchmarks. Maintained by BenchFlow."
 homepage: ""
-stars: 532
-stars_per_day: 177
+stars: 533
+stars_per_day: 178
 forks: 39
 open_issues: 4
 created: 2026-06-24
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-27
-use_case: "提供建立和評估 AI 代理的最佳資源，包含論文、部落格、工具和基準。"
+use_case: "提供最佳資源以建立和評估 AI 代理的精選庫，包括論文、部落格、工具和基準。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 2
 next_review: "2026-07-05"
 contributor_count: 4
 engagement: "low"
-issue_close_rate: 100
-repo_size_kb: 1388
+issue_close_rate: 64
+repo_size_kb: 1467
 readme_length: 9986
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-27"
-star_history: "2026-06-27:464,2026-06-27:465,2026-06-28:532"
+star_history: "2026-06-27:464,2026-06-27:465,2026-06-28:532,2026-06-28:533"
 tags:
   - github
   - "category/其他"
@@ -57,12 +57,12 @@ tags:
 aliases:
   - "awesome-evals"
   - "benchflow-ai/awesome-evals"
-  - "提供建立和評估 AI 代理的最佳資源，包含論文、部落格、工具和基準。"
+  - "提供最佳資源以建立和評估 AI 代理的精選庫，包括論文、部落格、工具和基準。"
 ---
 
 # awesome-evals
 
-**465** stars · **233** stars/天 · 建立 2 天前 · N/A · NOASSERTION
+**533** stars · **178** stars/天 · 建立 3 天前 · N/A · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/benchflow-ai--awesome-evals");
@@ -80,13 +80,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `agent-evaluation` `ai-agents` `awesome` `awesome-list` `benchmarks` `evals` `llm` `llm-evaluation` `rl-environments`
 
 > [!summary] 一句話摘要
-> 提供建立和評估 AI 代理的最佳資源，包含論文、部落格、工具和基準。
+> 提供最佳資源以建立和評估 AI 代理的精選庫，包括論文、部落格、工具和基準。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (233 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (178 stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Low
-> **適合** 需要在 AI 產品開發中進行評估和改進的工程師和研究人員。
-> **一句話重點** 這個專案最有價值的地方在於它提供了一個經過驗證的資源庫，專注於 AI 代理的評估和改進。
+> **適合** 需要快速獲取高質量 AI 代理評估資源的開發者和研究者。
+> **一句話重點** 這個專案提供了一個經過篩選和驗證的資源庫，讓 AI 代理的評估變得更加高效和可靠。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -112,82 +112,65 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > **安裝** Easy (一行搞定)
 
 > [!abstract] 核心創新
-> 這個專案提供了一個經過驗證的資源庫，專注於 AI 代理的建立和評估，並附有詳細註解。
+> 這個專案的核心創新在於提供一個經過篩選和驗證的非傳統資源庫，專注於 AI 代理的評估。
 
 ## 專案簡介
 
-這個專案是一個精心策劃的資源庫，專注於建立和評估 AI 代理的各種資料，包括論文、部落格文章、工具和基準。它的核心機制是透過深度的引用爬蟲和針對性的網路發現，來整理出最具價值的資源，並且每個條目都有詳細的註解，說明其重要性。這樣的設計使得使用者不僅能找到資源，還能理解為什麼這些資源值得參考。專案中包含超過 443 條經過驗證的鏈接和 146 條深入閱讀筆記，這些資料的整理過程確保了其質量和可靠性。使用者可以透過 `PATTERNS.md` 獲得實際的代碼示例和工作範例，這對於想要實作 LLM 評估的開發者來說非常有幫助。
+這個專案是一個精心策劃的資源庫，專注於 AI 代理的建立與評估，包含論文、部落格、工具和基準等資料。它的核心機制是透過深度引用爬蟲和針對性網路發現，收集並驗證來自學術界和業界的資源，確保每個條目都有清晰的標註和來源。使用者可以透過這個庫快速找到高品質的評估工具和方法，並且所有連結都經過驗證，避免了死鏈接的問題。這個專案的賣點在於其非傳統的「無 BS」方式，提供經過篩選和註解的資料，讓使用者能夠更有效率地進行 AI 產品的評估。技術上，這個庫並不依賴於特定的語言或框架，而是聚焦於資料的質量和來源。
 
-與一般的資源庫不同，這個專案不僅僅是鏈接的堆砌，而是經過精心篩選和驗證的資料集，讓使用者能夠快速找到高質量的參考資料。這樣的設計使得在 AI 產品開發過程中，能夠有效地進行錯誤分析和評估，從而提升產品質量。相較於其他資源庫，這個專案的優勢在於其對資料的深度分析和實用性，特別適合需要快速獲取高質量資料的開發者和研究人員。使用者在實際應用中可能會發現，這些資源能夠幫助他們更好地理解 AI 代理的評估過程，並在實作中避免常見的錯誤。整體來說，這是一個對於 AI 產品開發者和研究者來說非常有價值的資源庫，值得一試。
+與其他類似的資源庫相比，這個專案的獨特之處在於其對資料的深度分析和驗證，並且強調了評估在 AI 開發過程中的重要性。實際使用中，這個庫的資料量龐大，包含超過 443 條經過篩選的連結和 146 條深入閱讀筆記，適合需要快速獲取高質量資源的開發者和研究者。這個專案目前仍在活躍開發中，社群參與度高，對於想要深入了解 AI 代理評估的使用者來說，這是一個非常值得參考的資源。未來幾個月，預計會持續更新和擴充資料庫，增強其實用性和覆蓋範圍。
 
 ## 重點功能
 
-- 深度驗證的資源鏈接 — 每個條目都有詳細的註解，說明其重要性和用途。
-- 涵蓋多種資源類型 — 包括論文、部落格、工具和基準，滿足不同需求。
-- 實用的代碼示例 — `PATTERNS.md` 提供實際的代碼和工作範例，便於實作。
-- 定期更新 — 持續添加新資源，確保資料的時效性和相關性。
-- 社群貢獻 — 鼓勵使用者參與貢獻，提升資源庫的多樣性和深度。
-
-## 快速開始
-
-1. 克隆專案
-```bash
-git clone https://github.com/benchflow-ai/awesome-evals.git
-```
-2. 查看資源
-```bash
-cd awesome-evals && cat README.md
-```
-3. 參與貢獻
-```bash
-查看 CONTRIBUTING.md 了解如何貢獻
-```
+- 精選資源 — 包含超過 443 條經過篩選的連結，涵蓋論文、工具和部落格。
+- 深度閱讀筆記 — 提供 146 條深入的閱讀筆記，幫助使用者快速理解每個資源的價值。
+- 資料驗證 — 所有連結均經過驗證，避免死鏈接和過時的資源。
+- 非傳統的無 BS 方法 — 每個條目都有清晰的標註和來源，提供透明的資訊。
+- 持續更新 — 項目活躍，定期更新和擴充資料庫，保持資源的時效性。
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天就累積 465 stars（232.5/天），forks 33（7.1%），這顯示出相對活躍的興趣。這個專案由 BenchFlow 維護，該團隊在 AI 代理評估領域有著豐富的經驗。它解決了以往資源庫中鏈接過多但缺乏質量篩選的痛點，提供了一個經過驗證的資料集。近期的推廣活動和社群討論也可能促進了它的曝光率。這個專案的設計理念與當前 AI 產品開發的需求相吻合，特別是在評估和改進 AI 代理的過程中。
+> 建立 3 天就累積 533 stars（178/天），forks 39（7.3%），顯示出強烈的社群需求。這個專案由 BenchFlow 維護，該團隊在 AI 代理領域有豐富的經驗。它解決了許多資源庫缺乏質量控制和篩選的痛點，讓使用者能夠快速找到可靠的評估工具和方法。近期的推廣活動和社群討論也提升了它的曝光率。這個工具的出現正好迎合了 AI 開發者對於高效評估工具的需求，並且在技術生態中填補了這個空白。forks/stars 比率為 7.3%，顯示出有相當比例的使用者在實際修改和使用這個庫。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 AI 產品開發中進行評估和改進的工程師和研究人員。
+**目標受眾**：需要快速獲取高質量 AI 代理評估資源的開發者和研究者。
 
 > [!example] 使用場景
-> - AI 產品經理用它來快速找到高質量的評估資源，因為這些資源經過驗證且附有詳細註解，能夠節省大量搜尋時間。
-> - 研究人員用它來獲取最新的 AI 評估工具和基準，因為這些資料能幫助他們在研究中保持前沿。
-> - 開發者用它來參考最佳實踐和錯誤分析，因為這些實用的資源能夠幫助他們避免常見的開發錯誤。
+> - AI 產品經理用它來快速找到高品質的評估工具，因為這能節省大量時間，並且確保選擇的工具經過驗證。
+> - 研究人員用它來查閱最新的 AI 評估論文和工具，因為這能幫助他們保持在該領域的前沿，並加快研究進度。
+> - 開發者用它來獲取實用的評估方法和範例代碼，因為這能有效提升他們在 AI 代理開發中的效率和質量。
 
 ## 架構分析
 
-這個專案採用了一個集中式的資源庫架構，所有資料都經過精心篩選和驗證。資料流從各種來源（如論文、部落格、工具）進入，經過深度的引用爬蟲和針對性發現，最終整理成易於使用的鏈接和註解。這樣的設計使得使用者能夠快速找到所需的資源，並理解其重要性。
-
-選擇這種架構的代價在於需要持續的維護和更新，以確保資料的時效性和準確性。擴展性方面，隨著社群的貢獻，資源庫可以不斷增長，但也可能面臨資料過多而導致的篩選困難。整體而言，這是一個針對 AI 代理評估需求而設計的資源庫，旨在提供高質量的資料支持。
+這個專案的架構基於一個精選的資源庫，並不依賴於特定的技術棧。資料的收集和驗證過程使用了深度引用爬蟲和針對性網路發現，確保資源的質量和可靠性。每個資源都經過審核，並附上清晰的標註，這樣的設計使得使用者能夠快速找到所需的資料。這種方法的代價在於需要持續的維護和更新，以確保資料的時效性和準確性。整體而言，這個專案的擴展性良好，能夠隨著 AI 領域的發展而不斷更新和擴充。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是透過深度引用爬蟲和針對性網路發現，來整理出最具價值的資源。資料來源包括學術論文、業界部落格和工具，這些資料經過驗證後進入資源庫。這樣的設計使得使用者能夠快速找到高質量的參考資料，並理解其重要性。效能和規模特性方面，這個專案能夠處理大量的資料來源，並且能夠隨著社群的貢獻不斷擴展。設計取捨方面，選擇集中式資源庫的優勢在於易於維護和更新，但也可能面臨資料過多而導致的篩選困難。技術風險方面，隨著資料量的增加，可能需要更有效的篩選機制來保持資料的質量。整合分析方面，這個專案能夠與現有的 AI 產品開發流程無縫整合，特別是在評估和改進過程中，能夠提供實用的參考資料。
+這個專案的核心技術機制在於其資料收集和驗證過程，使用了深度引用爬蟲來確保資料的質量。透過分析學術界和業界的資源，這個庫能夠提供高品質的評估工具和方法。效能方面，這個庫的資料量龐大，能夠支持多種不同的評估需求。設計上，這個專案選擇了非傳統的資料驗證方式，這樣的選擇使得使用者能夠快速找到所需的資源，但也需要持續的維護和更新。技術風險方面，隨著 AI 領域的快速發展，部分資源可能會迅速過時，因此需要定期檢查和更新資料。整合方面，這個庫的設計使得它能夠輕鬆融入現有的開發流程，但對於新手使用者來說，缺乏具體的實作範例可能會造成一定的學習曲線。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的資源鏈接和註解；安裝過程非常簡單，只需克隆專案；文件中缺乏多語言支持，但內容對於英語使用者來說非常友好。
+> README 文件清晰，提供了專案的背景和目的，但缺乏具體的使用範例。安裝過程非常簡單，只需訪問鏈接即可使用。沒有提供多語言支持，主要以英文為主。整體來說，對於熟悉 AI 領域的使用者來說，花 30 分鐘能夠快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供經過驗證的高質量資源，節省搜尋時間。
-> - 涵蓋多種資源類型，滿足不同需求。
-> - 實用的代碼示例，便於開發者實作。
+> - 提供經過篩選和驗證的高品質資源，節省使用者查找時間。
+> - 深度閱讀筆記幫助使用者快速理解資源的價值。
+> - 持續更新，保持資源的時效性和相關性。
 
 > [!danger] 缺點
-> - 不支援特定語言或框架，資源主要是鏈接和文獻。
-> - 對於初學者來說，可能需要額外的背景知識。
-> - 更新頻率依賴於社群貢獻者的活躍度。
+> - 不支持特定語言或框架的整合，使用者需自行查閱資源。
+> - 部分資源可能隨時間過時，需定期檢查更新。
+> - 缺乏具體的實作範例，對於新手使用者可能不夠友好。
 
 > [!warning] 注意事項
-> - 不支援特定語言或框架，因為資源庫主要是鏈接和文獻。
-> - 對於初學者來說，可能需要額外的背景知識來理解某些資源。
-> - 更新頻率取決於社群貢獻者的活躍度，可能會有延遲。
+> - 不支持特定語言或框架的整合，僅提供資源鏈接。
+> - 部分資源可能隨時間過時，需定期檢查更新。
+> - 沒有提供具體的實作範例，使用者需自行查閱相關資源。
 
 ## 健康度儀表板
 
@@ -252,10 +235,10 @@ cd awesome-evals && cat README.md
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 33 |
-| Open Issues | 0 |
-| Issue 解決率 | 100% (1 closed) |
-| 最後推送 | 2026-06-26 |
+| Forks | 39 |
+| Open Issues | 4 |
+| Issue 解決率 | 64% (7 closed) |
+| 最後推送 | 2026-06-27 |
 | 建立日期 | 2026-06-24 |
 | Repo 大小 | 1.4 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/benchflow-ai/awesome-evals) |
@@ -264,20 +247,19 @@ cd awesome-evals && cat README.md
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@xdotli](https://github.com/xdotli) | 33 |
+> | [@xdotli](https://github.com/xdotli) | 34 |
 > | [@arafatkatze](https://github.com/arafatkatze) | 1 |
 > | [@jxi5410](https://github.com/jxi5410) | 1 |
 > | [@claude[bot]](https://github.com/claude[bot]) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，所有問題都已解決。
-**連結**：[文件](https://github.com/benchflow-ai/awesome-evals)
+**社群活躍度**：社群活躍，定期更新和維護。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-26 ~ 2026-06-26）
-> **活躍天數** 1 天 · **最新 commit** Scan 2026-06-26: 3 new eval finds (#11)
+> [!abstract] 最近 10 次 commit（2026-06-26 ~ 2026-06-27）
+> **活躍天數** 2 天 · **最新 commit** Harden responder: verify-every-number gate + no off-topic debugging (#27)
 
 ## README 摘錄
 
@@ -344,8 +326,6 @@ cd awesome-evals && cat README.md
 
 ## 延伸閱讀
 
-相關概念：[[評估基準]] · [[AI 代理]] · [[錯誤分析]]
-
 相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Jane-xiaoer--xiaoer-videolab|Jane-xiaoer/xiaoer-videolab]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[LiuMengxuan04--shushu-internship-tool|LiuMengxuan04/shushu-internship-tool]]
 
 [GitHub](https://github.com/benchflow-ai/awesome-evals)
@@ -384,21 +364,6 @@ cd awesome-evals && cat README.md
 > FROM "Repos"
 > WHERE week = "2026-W26" AND file.name != "benchflow-ai--awesome-evals"
 > SORT stars DESC
-> ```
-
-> [!note]- 共用概念的相關專案
-> ```dataviewjs
-> const concepts = ["評估基準","AI 代理","錯誤分析"];
-> const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "benchflow-ai--awesome-evals" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
->   .sort(p => p.stars, "desc")
->   .limit(5);
-> if (pages.length > 0) {
->   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
->     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
->     return [p.file.link, p.stars, p.category, shared.join(", ")];
->   }));
-> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
 > ```
 
 > [!note]- Ring 更高的同類競品
