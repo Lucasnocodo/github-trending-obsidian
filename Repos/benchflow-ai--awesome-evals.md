@@ -7,12 +7,12 @@ language: N/A
 license: NOASSERTION
 description: "A curated, non-BS library of the best resources for building and evaluating AI agents — papers, blogs, talks, tools, benchmarks. Maintained by BenchFlow."
 homepage: ""
-stars: 533
-stars_per_day: 178
-forks: 39
-open_issues: 4
+stars: 564
+stars_per_day: 141
+forks: 42
+open_issues: 1
 created: 2026-06-24
-pushed_at: 2026-06-27
+pushed_at: 2026-06-28
 first_seen: 2026-06-27
 week: "2026-W26"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "提供最佳資源以建立和評估 AI 代理的精選庫，包括�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-05"
+appearances: 3
+next_review: "2026-07-06"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 64
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-27"
-star_history: "2026-06-27:464,2026-06-27:465,2026-06-28:532,2026-06-28:533"
+star_history: "2026-06-27:464,2026-06-27:465,2026-06-28:532,2026-06-28:533,2026-06-29:564"
 tags:
   - github
   - "category/其他"
@@ -607,5 +607,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-29|2026-06-29]] — 再次上榜，564 stars
 - [[2026-06-28|2026-06-28]] — 再次上榜，532 stars
 - [[2026-06-27|2026-06-27]] — 首次收錄，464 stars

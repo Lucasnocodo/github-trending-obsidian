@@ -7,9 +7,9 @@ language: Python
 license: Apache-2.0
 description: "Qwen-AgentWorld: Language World Models for General Agents"
 homepage: "https://arxiv.org/abs/2606.24597"
-stars: 595
-stars_per_day: 119
-forks: 53
+stars: 627
+stars_per_day: 105
+forks: 57
 open_issues: 1
 created: 2026-06-22
 pushed_at: 2026-06-25
@@ -30,8 +30,8 @@ use_case: "提供一個原生的語言世界模型，模擬多種代理環境，
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-07-05"
+appearances: 4
+next_review: "2026-07-06"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-26"
-star_history: "2026-06-26:488,2026-06-26:489,2026-06-27:568,2026-06-27:568,2026-06-28:595,2026-06-28:595"
+star_history: "2026-06-26:488,2026-06-26:489,2026-06-27:568,2026-06-27:568,2026-06-28:595,2026-06-28:595,2026-06-29:627"
 tags:
   - github
   - "category/ai_ml"
@@ -808,6 +808,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-29|2026-06-29]] — 再次上榜，627 stars
 - [[2026-06-28|2026-06-28]] — 再次上榜，595 stars
 - [[2026-06-27|2026-06-27]] — 再次上榜，568 stars
 - [[2026-06-26|2026-06-26]] — 首次收錄，488 stars

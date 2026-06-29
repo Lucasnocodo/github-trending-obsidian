@@ -7,8 +7,8 @@ language: TypeScript
 license: MIT
 description: "Eleven autonomous AI agents open live football prop markets on X Layer — custom Uniswap v4 hook, gasless USDT0 staking."
 homepage: "https://regista11.xyz"
-stars: 641
-stars_per_day: 321
+stars: 695
+stars_per_day: 232
 forks: 2
 open_issues: 0
 created: 2026-06-25
@@ -30,8 +30,8 @@ use_case: "透過 AI 代理人即時開啟足球賽事的預測市場，無需�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-01"
+appearances: 3
+next_review: "2026-07-02"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-27"
-star_history: "2026-06-27:457,2026-06-28:641"
+star_history: "2026-06-27:457,2026-06-28:641,2026-06-29:695"
 tags:
   - github
   - "category/defi"
@@ -845,5 +845,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-29|2026-06-29]] — 再次上榜，695 stars
 - [[2026-06-28|2026-06-28]] — 再次上榜，641 stars
 - [[2026-06-27|2026-06-27]] — 首次收錄，457 stars

@@ -7,10 +7,10 @@ language: TypeScript
 license: Apache-2.0
 description: "\"AgentSpace: Human + Agents. One Team. One Workspace\""
 homepage: "https://hire-an-agent.online/"
-stars: 479
-stars_per_day: 96
-forks: 53
-open_issues: 6
+stars: 524
+stars_per_day: 87
+forks: 62
+open_issues: 7
 created: 2026-06-22
 pushed_at: 2026-06-27
 first_seen: 2026-06-27
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-27
 use_case: "提供一個人類與代理協作的工作空間，讓團隊能夠高效合作。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-05"
+appearances: 3
+next_review: "2026-07-06"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 25
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-27"
-star_history: "2026-06-27:453,2026-06-27:453,2026-06-28:479,2026-06-28:479"
+star_history: "2026-06-27:453,2026-06-27:453,2026-06-28:479,2026-06-28:479,2026-06-29:524"
 tags:
   - github
   - "category/開發工具"
@@ -841,5 +841,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-06-29|2026-06-29]] — 再次上榜，524 stars
 - [[2026-06-28|2026-06-28]] — 再次上榜，479 stars
 - [[2026-06-27|2026-06-27]] — 首次收錄，453 stars

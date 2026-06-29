@@ -2549,10 +2549,10 @@
   },
   "bozhouDev/codex-orange-book": {
     "first_seen": "2026-06-24",
-    "last_seen": "2026-06-28",
-    "times_seen": 5,
+    "last_seen": "2026-06-29",
+    "times_seen": 6,
     "stars_first": 528,
-    "stars_last": 2215
+    "stars_last": 2284
   },
   "cloudflare/security-audit-skill": {
     "first_seen": "2026-06-24",
@@ -2577,58 +2577,65 @@
   },
   "BohemiaInteractive/CWR": {
     "first_seen": "2026-06-26",
-    "last_seen": "2026-06-28",
-    "times_seen": 3,
+    "last_seen": "2026-06-29",
+    "times_seen": 4,
     "stars_first": 494,
-    "stars_last": 662
+    "stars_last": 688
   },
   "QwenLM/Qwen-AgentWorld": {
     "first_seen": "2026-06-26",
-    "last_seen": "2026-06-28",
-    "times_seen": 3,
+    "last_seen": "2026-06-29",
+    "times_seen": 4,
     "stars_first": 488,
-    "stars_last": 595
+    "stars_last": 627
   },
   "benchflow-ai/awesome-evals": {
     "first_seen": "2026-06-27",
-    "last_seen": "2026-06-28",
-    "times_seen": 2,
+    "last_seen": "2026-06-29",
+    "times_seen": 3,
     "stars_first": 464,
-    "stars_last": 532
+    "stars_last": 564
   },
   "Yu9191/wloc": {
     "first_seen": "2026-06-27",
-    "last_seen": "2026-06-28",
-    "times_seen": 2,
+    "last_seen": "2026-06-29",
+    "times_seen": 3,
     "stars_first": 457,
-    "stars_last": 644
+    "stars_last": 1092
   },
   "winsznx/theeleven": {
     "first_seen": "2026-06-27",
-    "last_seen": "2026-06-28",
-    "times_seen": 2,
+    "last_seen": "2026-06-29",
+    "times_seen": 3,
     "stars_first": 457,
-    "stars_last": 641
+    "stars_last": 695
   },
   "HKUDS/AgentSpace": {
     "first_seen": "2026-06-27",
-    "last_seen": "2026-06-28",
-    "times_seen": 2,
+    "last_seen": "2026-06-29",
+    "times_seen": 3,
     "stars_first": 453,
-    "stars_last": 479
+    "stars_last": 524
   },
   "deepseek-ai/DeepSpec": {
     "first_seen": "2026-06-28",
-    "last_seen": "2026-06-28",
-    "times_seen": 1,
+    "last_seen": "2026-06-29",
+    "times_seen": 2,
     "stars_first": 1343,
-    "stars_last": 1343
+    "stars_last": 2226
   },
   "bikini/exploitarium": {
     "first_seen": "2026-06-28",
-    "last_seen": "2026-06-28",
-    "times_seen": 1,
+    "last_seen": "2026-06-29",
+    "times_seen": 2,
     "stars_first": 1216,
-    "stars_last": 1216
+    "stars_last": 2165
+  },
+  "AlexandrosGounis/pdfx": {
+    "first_seen": "2026-06-29",
+    "last_seen": "2026-06-29",
+    "times_seen": 1,
+    "stars_first": 489,
+    "stars_last": 489
   }
 }

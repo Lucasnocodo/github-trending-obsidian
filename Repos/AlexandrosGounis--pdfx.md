@@ -1,23 +1,23 @@
 ---
-repo: BohemiaInteractive/CWR
-url: https://github.com/BohemiaInteractive/CWR
-owner: BohemiaInteractive
-owner_type: Organization
-language: C++
-license: NOASSERTION
-description: "Arma: Cold War Assault Remastered Source Code Repository."
+repo: AlexandrosGounis/pdfx
+url: https://github.com/AlexandrosGounis/pdfx
+owner: AlexandrosGounis
+owner_type: User
+language: TypeScript
+license: MIT
+description: "An extension of the traditional PDF standard, allowing multiple files to be stored in a single file via metadata"
 homepage: ""
-stars: 688
-stars_per_day: 115
-forks: 83
-open_issues: 4
-created: 2026-06-22
-pushed_at: 2026-06-22
-first_seen: 2026-06-26
-week: "2026-W26"
+stars: 489
+stars_per_day: 122
+forks: 52
+open_issues: 0
+created: 2026-06-24
+pushed_at: 2026-06-28
+first_seen: 2026-06-29
+week: "2026-W27"
 month: "2026-06"
-category: "遊戲"
-subcategory: "遊戲引擎"
+category: "開發工具"
+subcategory: "文件處理"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -25,41 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-06-26
-use_case: "提供《Arma: Cold War Assault》的重製版引擎與遊戲源碼，讓社群能夠學習、修改與創造。"
-priority: high
+last_reviewed: 2026-06-29
+use_case: "讓多個文件以單一 PDF 檔案儲存，並具備簡易的檢視器。"
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-07-06"
-contributor_count: 2
+contributor_count: 4
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 5320
-readme_length: 4621
+issue_close_rate: -1
+repo_size_kb: 3214
+readme_length: 1304
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-06-26"
-star_history: "2026-06-26:494,2026-06-26:494,2026-06-27:624,2026-06-27:624,2026-06-28:662,2026-06-28:662,2026-06-29:688"
+ring_history: "assess@2026-06-29"
+star_history: "2026-06-29:489"
 tags:
   - github
-  - "category/遊戲"
-  - "lang/c++"
-  - org
+  - "category/開發工具"
+  - "lang/typescript"
 aliases:
-  - "CWR"
-  - "BohemiaInteractive/CWR"
-  - "提供《Arma: Cold War Assault》的重製版引擎與遊戲源碼，讓社群能夠學習、修改與創造。"
+  - "pdfx"
+  - "AlexandrosGounis/pdfx"
+  - "讓多個文件以單一 PDF 檔案儲存，並具備簡易的檢視器。"
 ---
 
-# CWR
+# pdfx
 
-**662** stars · **132** stars/天 · 建立 5 天前 · C++ · NOASSERTION
+**489** stars · **122** stars/天 · 建立 4 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/BohemiaInteractive--CWR");
+const me = dv.page("Repos/AlexandrosGounis--pdfx");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +68,21 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`ORG`
-
 > [!summary] 一句話摘要
-> 提供《Arma: Cold War Assault》的重製版引擎與遊戲源碼，讓社群能夠學習、修改與創造。
+> 讓多個文件以單一 PDF 檔案儲存，並具備簡易的檢視器。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (132 stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 5 天前) · **貢獻者** 2 人 · **參與度** Medium
-> **適合** 希望重製或學習經典遊戲開發的獨立開發者和學生。
-> **一句話重點** 這個專案不僅是源碼的釋出，更是對於經典遊戲的重生，讓開發者能夠重新探索舊有技術。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (122 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Medium
+> **適合** 需要將多個 PDF 文件整合成一個文件的專業人士和學生。
+> **一句話重點** PDFx 讓多個 PDF 文件的管理變得簡單而高效，特別適合需要整合多文件的用戶。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/BohemiaInteractive--CWR");
+> const me = dv.page("Repos/AlexandrosGounis--pdfx");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "遊戲引擎" && p.file.name !== "BohemiaInteractive--CWR" && p.status !== "archived")
+>     .where(p => p.subcategory === "文件處理" && p.file.name !== "AlexandrosGounis--pdfx" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,103 +93,138 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 遊戲引擎 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 文件處理 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習，20 小時整合，得到對於經典遊戲的重製能力，值得投入。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，3 小時整合，得到簡便的多文件管理效果，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案提供了《Arma: Cold War Assault》的完整源碼，讓開發者能夠自由修改和擴展。
+> PDFx 是一個向後相容的 PDF 擴展，允許將多個文件打包成一個單一的 PDF 檔案。
 
 ## 專案簡介
 
-這個專案的核心機制是提供《Arma: Cold War Assault》的引擎和遊戲源碼，讓開發者能夠在 C++20 和 CMake 的環境下進行修改和擴展。使用者首先需要透過 `cmake --preset win-x64-clang-rwdi` 指令來配置建置環境，然後使用 `cmake --build build/win-x64-clang-rwdi` 來編譯專案。這樣的設計讓開發者能夠在 Windows 和 Linux 平台上進行跨平台開發，並且保持了對於舊有技術的兼容性。專案的主要特點是它的開源性質，根據 GPL-3.0 授權條款，使用者可以自由修改和分發源碼，但必須遵循相應的條款。這使得社群能夠持續對遊戲進行改進，並且吸引了許多對於老遊戲有情感的開發者參與進來。
+PDFx 是一個向後相容的 PDF 擴展，允許將多個文件打包成一個單一的 PDF 檔案。用戶可以將 `.pdf` 或 `.pdfx` 文件拖放到應用程式中，這些文件將以水平頁面條的形式顯示，並且可以重新排序或刪除。最終，用戶可以選擇「Export PDF」來將整個集合保存為一個文件。這樣的設計使得 PDFx 能夠兼容傳統 PDF 檔案，無需改變現有的 PDF 瀏覽器或應用程式。核心技術使用 Electron、Vite、TypeScript 和 React，並依賴 pdf.js 進行 PDF 渲染以及 pdf-lib 進行文件組合。這樣的架構選擇提供了跨平台的支持，涵蓋 macOS、Windows 和 Linux。
 
-與其他遊戲引擎相比，如 Unity 或 Unreal Engine，這個專案的優勢在於它的開源性和對於舊有遊戲的支持，讓開發者能夠深入理解遊戲的底層邏輯。實際使用中，開發者可能會遇到複雜的建置過程，尤其是在 Linux 環境下，這需要更好的文檔支持。社群活躍度相對較高，儘管目前有一些未解決的問題，但這也顯示出開發者對於這個專案的熱情。總體來說，這是一個值得關注的專案，特別適合對於遊戲開發有興趣的開發者，並且希望深入了解舊有遊戲技術的人士。
+與傳統 PDF 工具相比，PDFx 提供了更靈活的文件管理功能，特別適合需要處理多文件的用戶。相較於 Adobe Acrobat 等工具，PDFx 的使用門檻更低，並且不需要昂貴的授權費用。使用者可以在開發過程中輕鬆進行測試和調試，因為它支持即時開發模式。雖然目前仍在早期階段，但其設計理念和功能已經顯示出潛力，特別是在需要多文檔管理的場景中。對於小型團隊或個人使用者，PDFx 是一個值得考慮的選擇，尤其是在需要快速整合多個 PDF 文件的情況下。
 
-**技術棧**：`C++ 20` · `CMake` · `Clang`
+**技術棧**：`Electron 38.4.0` · `Vite 7.3.5` · `TypeScript 5.9.3` · `React 19.2.7`
 
 ## 重點功能
 
-- 跨平台支持 — 支持 Windows x64 和 Linux x64 的編譯和運行。
-- 現代化的 C++20 語言特性 — 使用最新的 C++20 語言標準進行開發。
-- 完整的源碼 — 提供遊戲引擎和遊戲執行檔的完整源碼，供開發者自由修改。
-- CMake 支持 — 使用 CMake 進行建置，簡化了編譯過程。
-- 社群支持 — 活躍的社群提供了許多資源和幫助，特別是在建置過程中。
+- 多文件整合 — 支持將多個 PDF 文件合併為一個 `.pdfx` 文件，方便管理。
+- 跨平台支持 — 可在 macOS、Windows 和 Linux 上運行，無需額外配置。
+- 即時預覽 — 拖放文件後即時顯示，並可進行排序和刪除。
+- 簡易導出 — 一鍵導出整合後的 PDF 文件，保持原有格式。
+- 開放標準 — 使用嵌入的 JSON 清單來管理文件，兼容傳統 PDF。
 
 ## 快速開始
 
-1. 配置建置環境
+1. 安裝依賴
 ```bash
-cmake --preset win-x64-clang-rwdi
+yarn
 ```
-2. 編譯專案
+2. 啟動開發模式
 ```bash
-cmake --build build/win-x64-clang-rwdi
+yarn dev
 ```
-3. 在 Linux 上使用相應的 preset
+3. 為 macOS 打包
 ```bash
-cmake --preset linux-x64-clang-rwdi
+yarn build:mac
+```
+4. 為 Windows 打包
+```bash
+yarn build:win
+```
+5. 為 Linux 打包
+```bash
+yarn build:linux
 ```
 
 ## 程式碼範例
 
-```cpp
+```ts
 {
-  "前置條件": "已安裝 CMake 和 Clang",
-  "指令": "cmake --preset win-x64-clang-rwdi",
-  "預期輸出": "配置成功，準備編譯專案"
+  "前置條件": "需要安裝 Yarn 和 Node.js。",
+  "指令": "yarn dev",
+  "預期輸出": "啟動開發伺服器，並在瀏覽器中顯示應用程式。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天內累積 662 stars（132/天），forks 77（11.6%），顯示出強烈的社群興趣。這個專案是由 Bohemia Interactive 提供，該公司在遊戲開發領域有著豐富的經驗，並且這個專案填補了對於老遊戲重製的需求。社群對於這個專案的熱情反映在熱門 Issues 上，特別是對於建置過程的關注，顯示出許多開發者希望能夠參與進來。這個專案的開源性質和對於舊遊戲的支持，使得它在當前的遊戲開發環境中顯得特別有價值。
+> 建立 4 天就累積 489 stars（122/天），forks 52（10.6%），顯示出穩定的增長趨勢。這個專案由 Alexandros Gounis 主導，他在開源社區有一定的知名度，並且解決了傳統 PDF 檔案管理中的一個痛點：多文件的整合。過去，使用者通常需要依賴昂貴的商業軟體來處理多個 PDF 文件，而 PDFx 提供了一個免費且開放的解決方案。最近的推廣活動和社群討論也可能促進了這個專案的曝光率。其設計的靈活性和易用性使得它在多文件處理的需求中顯得尤為重要，特別是在教育和商業環境中。
 
 ## 適合誰使用
 
-**目標受眾**：希望重製或學習經典遊戲開發的獨立開發者和學生。
+**目標受眾**：需要將多個 PDF 文件整合成一個文件的專業人士和學生。
 
 > [!example] 使用場景
-> - 遊戲開發者用它來重製經典遊戲，因為這個專案提供了完整的源碼和引擎，讓他們能夠自由修改。
-> - 學生用它來學習遊戲引擎的設計與實作，因為這個專案的開源性質讓他們能夠深入研究底層邏輯。
-> - 社群貢獻者用它來修復遊戲中的bug，因為這個專案的活躍社群提供了良好的支持和資源。
+> - 行政助理用它來將多個報告合併成一個 PDF，因為這樣可以更方便地分享和存檔。
+> - 設計師用它來整理多個設計草稿，因為可以在一個文件中快速檢視和修改。
+> - 學生用它來整合課堂筆記和參考資料，因為這樣可以減少文件管理的麻煩。
+> - 法律專業人士用它來將多份合約合併，因為這樣可以提高文件的可讀性和整體性。
 
 ## 架構分析
 
-這個專案採用 CMake 作為建置系統，這使得跨平台開發變得更加簡單。引擎和遊戲邏輯分開設計，讓開發者可以專注於不同的模組。使用 C++20 的現代化語言特性，能夠提高程式碼的可讀性和維護性。
-
-專案的依賴性主要集中在 CMake 和 Clang，這使得整體架構相對輕量。選擇 CMake 而非其他建置系統是為了提高跨平台的兼容性，但這也使得新手在配置環境時可能會遇到困難。整體而言，這個設計使得專案在可擴展性和維護性上有良好的表現。
+PDFx 的架構基於 Electron，這使得它能夠在多個平台上運行。核心功能是將多個 PDF 文件透過 JSON 清單進行整合，這樣的設計使得每個 PDF 文件仍然可以獨立打開。使用 pdf.js 來渲染 PDF，這意味著它可以利用現有的 PDF 渲染技術，並且能夠快速顯示內容。選擇 Electron 的代價是需要較大的應用包大小，但這樣的選擇使得開發者能夠使用現有的 Web 技術進行開發。擴展性方面，PDFx 目前的設計能夠支持未來的功能添加，例如對其他文件格式的支持，但這需要進一步的開發和測試。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於 C++20 的引擎設計，使用 CMake 進行跨平台建置。專案能夠支持 Windows 和 Linux 平台，這使得開發者可以在不同環境下進行開發。效能方面，專案的設計考慮到了現代硬體的特性，能夠有效利用多核心處理器。選擇 CMake 而非其他建置系統的原因在於其廣泛的支持和靈活性，這對於希望在不同平台上進行開發的團隊來說是非常重要的。技術風險方面，專案的依賴性主要集中在 CMake 和 Clang，這可能在未來的版本中帶來兼容性問題。整合方面，這個專案能夠與主流的 IDE 和 CI/CD 工具良好整合，但在初次配置時可能會遇到一些摩擦點。
+PDFx 的核心技術機制是使用 Electron 框架來構建桌面應用，這使得它能夠利用 Web 技術進行開發。它的資料流主要是透過 JSON 清單來管理多個 PDF 文件，這樣的設計不僅簡化了文件的整合過程，還保持了 PDF 文件的獨立性。效能方面，雖然尚未有具體的數據，但由於使用了 pdf.js 進行渲染，預計在處理小型和中型文件時會有良好的表現。選擇 Electron 的好處是能夠快速開發和跨平台支持，但代價是應用包的大小會相對較大，這可能對某些用戶造成困擾。技術風險方面，PDFx 目前的設計在面對大型文件時可能會出現性能瓶頸，特別是在內存管理上。整合方面，由於使用了主流的 Web 技術，與現有的開發工具鏈（如 VS Code 和 GitHub Actions）整合應該不會有太大困難。整體而言，PDFx 在多文件管理的需求上提供了一個創新的解決方案，未來可能會隨著功能的擴展而變得更加成熟。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了基本的使用指引，但缺乏詳細的範例。安裝過程相對順暢，但新手可能會在配置環境時遇到困難。整體來說，對於有一定經驗的開發者來說，花 30 分鐘能夠順利跑起來，但對於新手來說可能需要更多時間。
+> README 文件提供了基本的安裝和使用說明，但缺乏詳細的範例。安裝過程相對順暢，但需要用戶具備 Node.js 和 Yarn 的基本知識。沒有提供多語言支持，可能對非英語使用者造成困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開源性質，允許自由修改和學習。
-> - 現代化的 C++20 語言特性，提高程式碼質量。
-> - 活躍的社群支持，提供資源和幫助。
+> - 支持多文件整合，方便用戶管理多個 PDF。
+> - 跨平台支持，無需額外配置即可在多個操作系統上運行。
+> - 開放標準，使用 JSON 清單進行文件管理，兼容傳統 PDF。
+> - 即時預覽和導出功能，提升用戶體驗。
 
 > [!danger] 缺點
-> - 建置過程複雜，特別是對於新手。
-> - 缺乏詳細的文檔，可能影響使用體驗。
-> - 不接受社群的直接貢獻，限制了發展潛力。
+> - 對於大型文件的性能尚未經過充分測試，可能存在性能瓶頸。
+> - 目前缺乏詳細的使用文檔，對新手不夠友好。
+> - 需要安裝 Node.js 和 Yarn，可能對某些用戶造成困擾。
+> - 尚未有廣泛的社群支持，可能影響問題解決速度。
 
 > [!warning] 注意事項
-> - 建置過程複雜，特別是在 Linux 環境下。
-> - 缺乏詳細的文檔，可能會讓新手感到困惑。
-> - 不接受 pull requests，限制了社群的直接貢獻。
+> - 目前僅支持 PDF 文件，對其他格式的支持有限。
+> - 對於大型 PDF 文件的處理性能尚未經過充分測試。
+> - 需要安裝 Node.js 和 Yarn，對於不熟悉的用戶可能有一定的學習曲線。
+> - 目前缺乏詳細的使用文檔和範例，可能影響新手使用。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成多種格式的文件，而 PDFx 專注於 PDF 文件的整合和管理。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了文件版本控制功能，而 PDFx 更加專注於文件的合併和簡單的視覺化。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | Codex Shim 主要用於代碼生成，而 PDFx 是針對 PDF 文件的管理和整合。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| Adobe Acrobat | Adobe Acrobat 提供全面的 PDF 編輯和管理功能，而 PDFx 專注於多文件的整合，功能範圍較窄。 | 如果需要高級的 PDF 編輯功能和企業級支持，Adobe Acrobat 是更好的選擇。 | medium，因為需要重新適應不同的工作流程和功能。 |
+| Foxit PDF Editor | Foxit 提供類似的 PDF 編輯功能，但 PDFx 在多文件整合上更具優勢。 | 如果需要輕量級的 PDF 編輯工具，Foxit 是不錯的選擇，但對於多文件管理，PDFx 更加方便。 | low，因為兩者的基本操作相似。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **pdfx** | **Adobe Acrobat** | **Foxit PDF Editor** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | Adobe Acrobat 提供全面的 PDF 編輯和管理功能，而 PDFx 專注於多文件的整合，功能範圍較窄。 | Foxit 提供類似的 PDF 編輯功能，但 PDFx 在多文件整合上更具優勢。 |
+> | 遷移成本 | - | medium，因為需要重新適應不同的工作流程和功能。 | low，因為兩者的基本操作相似。 |
+> | 適用場景 | 主要場景 | 如果需要高級的 PDF 編輯功能和企業級支持，Adobe A | 如果需要輕量級的 PDF 編輯工具，Foxit 是不錯的選擇 |
 
 ## 成熟度評估
 
@@ -203,56 +235,50 @@ cmake --preset linux-x64-clang-rwdi
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人學習和實驗，但不建議用於生產環境。
+> 適合個人側項目試用，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Linux 環境下的建置過程可能會遇到許多問題，特別是依賴的配置。
-  - 解法：參考社群提供的解決方案，或尋求社群幫助。
-- [MEDIUM] 缺乏詳細的文檔，可能會讓新手感到困惑。
-  - 解法：查閱社群討論或尋找其他資源。
-- [MEDIUM] 不接受 pull requests，限制了社群的貢獻。
-  - 解法：可以自行 fork 專案進行修改。
+- **[HIGH]** 在大型 PDF 文件中可能出現性能問題，導致加載緩慢。
+  - 解法：將大型文件分割成多個小文件再進行整合。
+- [MEDIUM] 某些 PDF 文件在導出時可能無法正確顯示格式。
+  - 解法：在導出前檢查文件格式，必要時進行調整。
+- [MEDIUM] 缺乏詳細的使用文檔，可能導致使用困難。
+  - 解法：參考社群討論或 GitHub issue 獲取幫助。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型獨立遊戲開發團隊 | 非常適合 | 提供完整的源碼和引擎，適合進行創新和實驗。 |
-| 學生學習遊戲開發 | 適合 | 開源性質讓學生能夠深入了解遊戲技術。 |
-| 大型遊戲開發公司 | 普通 | 雖然有潛力，但可能需要大量的修改和適應。 |
-| 對於經典遊戲的重製專案 | 非常適合 | 專案專注於重製經典遊戲，提供了良好的基礎。 |
+| 小型團隊的文件管理系統 | 非常適合 | PDFx 的多文件整合功能能有效提升文件管理效率。 |
+| 大型企業的 PDF 編輯需求 | 不適合 | 目前功能尚不夠全面，無法滿足高級編輯需求。 |
+| 教育機構的課程資料整理 | 適合 | 能夠將多份課程資料整合為一個文件，方便學生使用。 |
+| 個人使用的文件整理工具 | 非常適合 | 簡單易用，適合個人用戶進行多文件管理。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~20 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習，20 小時整合，得到對於經典遊戲的重製能力，值得投入。
+> 花 5 小時學習，3 小時整合，得到簡便的多文件管理效果，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：專案本身不需要高權限，且不會存取敏感資料。依賴鏈的信任程度較高，適合在 CI/CD 環境中使用。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-這個專案最常與 CMake 和 Clang 搭配使用，通常在開發和建置階段進行整合。在一個使用 CMake 的專案中，可以輕鬆地將這個專案的源碼納入，具體做法是將其作為子模組引入。支援的 CI 工具包括 GitHub Actions 和 GitLab CI，能夠輕鬆地進行自動化測試和部署。整合的摩擦點主要在於初次配置時的依賴問題，這可能需要一些額外的設定。
+> 低風險：PDFx 本身不需要高權限，且不存取敏感資料。依賴的庫都來自於知名的開源社區，信任度較高。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/BohemiaInteractive--CWR");
+> const me = dv.page("Repos/AlexandrosGounis--pdfx");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -287,7 +313,7 @@ cmake --preset linux-x64-clang-rwdi
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/BohemiaInteractive--CWR");
+> const me = dv.page("Repos/AlexandrosGounis--pdfx");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -311,157 +337,102 @@ cmake --preset linux-x64-clang-rwdi
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 77 |
-| Open Issues | 4 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-06-22 |
-| 建立日期 | 2026-06-22 |
-| Repo 大小 | 5.2 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/BohemiaInteractive/CWR) |
+| Forks | 52 |
+| Open Issues | 0 |
+| 最後推送 | 2026-06-28 |
+| 建立日期 | 2026-06-24 |
+| Repo 大小 | 3.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/AlexandrosGounis/pdfx) |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@electron-toolkit/preload` `@electron-toolkit/utils` `@electron-toolkit/tsconfig` `@types/node` `@types/react` `@types/react-dom` `@types/d3-selection` `@types/d3-zoom` `@vitejs/plugin-react` `d3-selection` `d3-zoom` `electron` `electron-builder` `electron-vite` `fflate`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "C++" : 95
->     "Rust" : 3
->     "CMake" : 1
->     "SQF" : 1
+>     "TypeScript" : 85
+>     "CSS" : 10
+>     "Objective-C++" : 3
+>     "Shell" : 1
+>     "JavaScript" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@BohemiaOwner](https://github.com/BohemiaOwner) | 1 |
-> | [@simi](https://github.com/simi) | 1 |
+> | [@AlexandrosGounis](https://github.com/AlexandrosGounis) | 10 |
+> | [@ArcanConsulting](https://github.com/ArcanConsulting) | 1 |
+> | [@ShreySavsani](https://github.com/ShreySavsani) | 1 |
+> | [@mauitaxes](https://github.com/mauitaxes) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，特別是在熱門 Issues 中有不少回應。
+**社群活躍度**：社群活躍度尚可，最近有幾個提交和問題回應。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-22 ~ 2026-06-22）
-> **活躍天數** 1 天 · **最新 commit** Update issue templates
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#2](https://github.com/BohemiaInteractive/CWR/issues/2) | Thank you! | 46 | 4 |
-> | [#1](https://github.com/BohemiaInteractive/CWR/issues/1) | We were expecting Cold War Crisis remaster in Arma Reforger  | 36 | 3 |
-> | [#4](https://github.com/BohemiaInteractive/CWR/issues/4) | [Linux] Complicated build process and maybe better documenta | 0 | 4 |
-> | [#3](https://github.com/BohemiaInteractive/CWR/issues/3) | Setting up a correct build environment | 0 | 8 |
+> [!abstract] 最近 10 次 commit（2026-06-17 ~ 2026-06-28）
+> **活躍天數** 6 天 · **最新 commit** Cleans up labels (#4)
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Arma: Cold War Assault - Remastered
+> # PDFx
 > 
-> This repository holds the engine and game source code (codename *Poseidon*) behind *Arma: Cold War Assault* — the game first released in 2001 as *Operation Flashpoint: Cold War Crisis*. That release launched Bohemia Interactive and began the technology lineage that later grew into Real Virtuality, Arma, and Enfusion. The code has been modernized to C++20, built with CMake and Clang, with cross-platform support for Windows x64 and Linux x64.
-> Bohemia Interactive is releasing it to the community that has kept this game alive for more than two decades — to study it, build on it, fix it, and create from it. Three things are worth keeping separate:
+> **One file. Many documents. Still a PDF.**
 > 
-> **Source code (this repository)**
+>   
 > 
-> The engine and game executables, licensed under GPL-3.0-or-later with additional terms under Section 7. You may use, study, modify, and redistribute it, provided it stays GPL and you follow those terms.
+> [](LICENSE)
+> &nbsp;
+> [](#)
+> &nbsp;
+> [](SPEC.md)
 > 
-> **The name and brand**
+> ## What it is
 > 
-> "ARMA", "Operation Flashpoint", and the logos are *not* granted. The trademarks stay with their owners ("ARMA" is Bohemia Interactive's). A fork must be renamed and must not present itself as "Arma" or as an official Bohemia Interactive product.
+> PDFx is an open, backwards compatible extension of PDF that bundles many documents into a single file, plus a minimal desktop viewer for macOS, Windows, and Linux.
 > 
-> **Game data (separate)**
+> A `.pdfx` file is a fully valid PDF: open it anywhere and every page shows in sequence. Open it in PDFx and it splits back into the original documents. Plain single PDFs work as they are.
 > 
-> Models, textures, sounds, missions, and voices. These are not in this repository and are not GPL; they ship separately under the APL-SA license. A free Demo is available on Steam.
+> Drag and drop `.pdf` or `.pdfx` files anywhere in the window. Each document renders as a horizontal strip of pages, and documents stack vertically. Reorder or remove them, then **Export PDF** to save the whole collection as one file.
 > 
-> In short: the code is free software, the name is not, and the game data comes separately. This license covers the source code only and grants no rights to the trademarks.
+> See [SPEC.md](SPEC.md) for the format. It is short: the entire trick is one embedded JSON manifest.
 > 
-> ## Quick Start
+> ## How to run
 > 
-> ```sh
-> cmake --preset win-x64-clang-rwdi
-> cmake --build build/win-x64-clang-rwdi
+> Built with Electron, Vite, TypeScript, and React. PDF rendering by [pdf.js](https://mozilla.github.io/pdf.js/), assembly by [pdf-lib](https://pdf-lib.js.org/).
+> 
+> ```bash
+> yarn              # install
+> yarn dev          # run in development
+> yarn build:mac    # package for macOS
+> yarn build:win    # package for Windows
+> yarn build:linux  # package for Linux
 > ```
 > 
-> On GNU/Linux, use the matching `linux-x64-clang-rwdi` preset.
-> 
-> ## Layout
-> 
-> - [Apps](apps/README.md) - executable targets
-> - [Engine](engine/README.md) - engine libraries and Rust Trident tooling
-> - [Master server tools](mserver/README.md) - Rust service and CLI crates
-> - [Tests](tests/README.md) - test source trees; CI currently compiles them only
-> - `cmake/` - presets, toolchains, vcpkg triplets, and overlay ports
-> - `docker/` - container support for service and runtime environments
-> - `packages/` - ignored local game data staging area
-> - `resources/` - application icon resources
-> - `thirdparty/` - vendored third-party headers and sources
-> 
-> ## Project Notes
-> 
-> - [Contributing](CONTRIBUTING.md)
-> - [Credits](CREDITS.md)
-> - [Third-party notices](THIRD_PARTY_NOTICES.md)
-> - [Vendored dependencies](thirdparty/README.md)
+> *Linux packaging notes (formats, Flatpak, prerequisites) live in [docs/LINUX_SETUP.md](docs/LINUX_SETUP.md).*
 > 
 > ## License
 > 
-> The source in this repository is licensed under the **GNU General Public License
-> v3.0 *or later***, with additional terms under **Section 7** of the GPL. See [`LICENSE`](LICENSE) for the
-> full text.
-> This license does not grant you any right to use "ARMA" or any other Bohemia Interactive trademark.
-> 
-> The [`thirdparty/`](thirdparty) directory is **excluded** from the project's GPL
-> license: it contains vendored third-party code (glad, the RenderDoc API header)
-> under their own respective licenses — see [`thirdparty/README.md`](thirdparty/README.md).
-> Dependencies pulled in via vcpkg ([`vcpkg.json`](vcpkg.json)) likewise remain under
-> their own licenses.
-> 
-> *"ARMA" is a registered trademark of BOHEMIA INTERACTIVE a.s. "OPERATION FLASHPOINT" is a registered trademark of Electronic Arts Inc.
-> See [`LICENSE`](LICENSE) for information concerning trademarks. This credits file is
-> informational and does not constitute any grant and/or waiver of rights.*
-> 
-> ### Game data / assets — Arma Public License Share Alike (APL-SA)
-> 
-> Game data and assets (models, textures, sounds, missions, etc.) are **not part of
-> this repository** and are **not** covered by the GPL. They are released separately
-> by Bohemia Interactive under the **Arma Public License Share Alike (APL-SA)**:
-> 
-> - APL-SA license text: 
-> 
-> ### Getting game data to run what you build
-> 
-> The compiled binaries need game data to run. You can obtain the **free Demo game
-> data** on Steam:
-> 
-> - *Arma: Cold War Assault Remastered* Demo on Steam: 
-> 
-> The full game data ships with the retail game. Whatever you do with assets is
-> governed by the APL-SA linked above; whatever you do with this source is governed by
-> the GPL with additional terms per Section 7 in [`LICENSE`](LICENSE).
-> 
-> ## Contributing
-> 
-> This is a **locked** repository: pull requests are not accepted here, and this
-> repository will not be continuously updated.
-> Issues are only for bugs in official Bohemia Interactive builds distributed on
-> Steam. For ideas, development builds, ports, and community work, fork the code or
-> join the community continuation. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for more information.
+> MIT
 
 ## 延伸閱讀
 
-相關概念：[[遊戲引擎]] · [[開源]] · [[CMake]]
+相關概念：[[文件管理]] · [[PDF 擴展]] · [[跨平台應用]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]] · [[leigest519--OpenGame|leigest519/OpenGame]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]]
 
-[GitHub](https://github.com/BohemiaInteractive/CWR)
+[GitHub](https://github.com/AlexandrosGounis/pdfx)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：遊戲引擎）
+> [!note]- 直接競品（同子分類：文件處理）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "遊戲引擎" AND file.name != "BohemiaInteractive--CWR"
+> WHERE subcategory = "文件處理" AND file.name != "AlexandrosGounis--pdfx"
 > SORT stars DESC
 > ```
 
@@ -469,7 +440,7 @@ cmake --preset linux-x64-clang-rwdi
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "遊戲" AND file.name != "BohemiaInteractive--CWR"
+> WHERE category = "開發工具" AND file.name != "AlexandrosGounis--pdfx"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -478,7 +449,7 @@ cmake --preset linux-x64-clang-rwdi
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C++" AND file.name != "BohemiaInteractive--CWR" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "AlexandrosGounis--pdfx" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -487,15 +458,15 @@ cmake --preset linux-x64-clang-rwdi
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W26" AND file.name != "BohemiaInteractive--CWR"
+> WHERE week = "2026-W27" AND file.name != "AlexandrosGounis--pdfx"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["遊戲引擎","開源","CMake"];
+> const concepts = ["文件管理","PDF 擴展","跨平台應用"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "BohemiaInteractive--CWR" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "AlexandrosGounis--pdfx" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -508,12 +479,12 @@ cmake --preset linux-x64-clang-rwdi
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/BohemiaInteractive--CWR");
+> const me = dv.page("Repos/AlexandrosGounis--pdfx");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "BohemiaInteractive--CWR" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "AlexandrosGounis--pdfx" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -529,7 +500,7 @@ cmake --preset linux-x64-clang-rwdi
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "BohemiaInteractive" AND file.name != "BohemiaInteractive--CWR"
+> WHERE owner = "AlexandrosGounis" AND file.name != "AlexandrosGounis--pdfx"
 > SORT stars DESC
 > ```
 
@@ -537,7 +508,7 @@ cmake --preset linux-x64-clang-rwdi
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/BohemiaInteractive--CWR");
+> const me = dv.page("Repos/AlexandrosGounis--pdfx");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -554,7 +525,7 @@ cmake --preset linux-x64-clang-rwdi
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/BohemiaInteractive--CWR");
+> const me = dv.page("Repos/AlexandrosGounis--pdfx");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -587,7 +558,7 @@ cmake --preset linux-x64-clang-rwdi
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/BohemiaInteractive--CWR");
+> const me = dv.page("Repos/AlexandrosGounis--pdfx");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -611,7 +582,7 @@ cmake --preset linux-x64-clang-rwdi
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/BohemiaInteractive--CWR");
+> const me = dv.page("Repos/AlexandrosGounis--pdfx");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -648,7 +619,7 @@ cmake --preset linux-x64-clang-rwdi
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/BohemiaInteractive--CWR");
+> const me = dv.page("Repos/AlexandrosGounis--pdfx");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -731,7 +702,7 @@ cmake --preset linux-x64-clang-rwdi
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-06-26** — 首次收錄
+> **2026-06-29** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -747,7 +718,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-06-29|2026-06-29]] — 再次上榜，688 stars
-- [[2026-06-28|2026-06-28]] — 再次上榜，662 stars
-- [[2026-06-27|2026-06-27]] — 再次上榜，624 stars
-- [[2026-06-26|2026-06-26]] — 首次收錄，494 stars
+- [[2026-06-29|2026-06-29]] — 首次收錄，489 stars
