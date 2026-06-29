@@ -8,7 +8,7 @@ license: MIT
 description: "VS Code chat sidebar for local AI coding agents"
 homepage: ""
 stars: 648
-stars_per_day: 65
+stars_per_day: 59
 forks: 10
 open_issues: 0
 created: 2026-06-17
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-20
-use_case: "提供 VS Code 聊天側邊欄，連接本地 AI 編碼代理。"
+use_case: "提供 VS Code 側邊欄的本地 AI 編碼代理連接介面。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-20"
-star_history: "2026-06-20:513,2026-06-20:513,2026-06-21:516,2026-06-21:516,2026-06-22:517,2026-06-22:518,2026-06-23:525,2026-06-23:526,2026-06-24:532,2026-06-24:532,2026-06-25:534,2026-06-26:650,2026-06-27:648,2026-06-28:648"
+star_history: "2026-06-20:513,2026-06-20:513,2026-06-21:516,2026-06-21:516,2026-06-22:517,2026-06-22:518,2026-06-23:525,2026-06-23:526,2026-06-24:532,2026-06-24:532,2026-06-25:534,2026-06-26:650,2026-06-27:648,2026-06-28:648,2026-06-29:648"
 tags:
   - github
   - "category/ai"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "junction"
   - "Plaer1/junction"
-  - "提供 VS Code 聊天側邊欄，連接本地 AI 編碼代理。"
+  - "提供 VS Code 側邊欄的本地 AI 編碼代理連接介面。"
 ---
 
 # junction
 
-**648** stars · **65** stars/天 · 建立 10 天前 · TypeScript · MIT
+**648** stars · **59** stars/天 · 建立 11 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Plaer1--junction");
@@ -69,13 +69,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```
 
 > [!summary] 一句話摘要
-> 提供 VS Code 聊天側邊欄，連接本地 AI 編碼代理。
+> 提供 VS Code 側邊欄的本地 AI 編碼代理連接介面。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (65 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要在 VS Code 中使用本地 AI 編碼代理的開發者。
-> **一句話重點** Junction 透過統一的界面連接多個本地 AI 代理，讓開發者的編碼過程更加高效。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (59 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** 2 人 · **參與度** Low
+> **適合** 需要在 VS Code 中與本地 AI 編碼代理互動的開發者。
+> **一句話重點** Junction 的多後端支援設計讓開發者能夠更靈活地與 AI 代理互動，提升了開發效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -98,107 +98,93 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，能夠提升開發效率，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學習，2 小時整合，得到即時的 AI 互動效果，值得嘗試。
 
 > [!abstract] 核心創新
-> Junction 提供了一個統一的界面來連接多個本地 AI 編碼代理，提升了開發者的工作效率。
+> 提供統一的接口來管理多個本地 AI 編碼代理，簡化開發者的工作流程。
 
 ## 專案簡介
 
-Junction 是一個 VS Code 擴展，旨在將編輯器與本地 AI 編碼代理連接，透過統一的界面與多個代理後端進行互動。用戶可以在側邊欄中與活躍的代理進行對話，並可通過命令面板輕鬆打開側邊欄（指令：`Junction: Open Sidebar`）。它支持多種後端，包括 OpenClaw、Hermes 和 Souveraine，這些後端各自提供不同的連接方式和功能，讓用戶可以靈活選擇。Junction 的設計考量了用戶的工作流程，支持拖放文件到聊天輸入框，並可將文件或選擇的內容添加到當前對話線程中。這樣的設計使得用戶能夠更高效地進行編碼和調試。
+Junction 是一個 VS Code 的聊天側邊欄，能夠連接本地 AI 編碼代理，讓開發者在編輯器中與多個代理進行互動。使用者可以透過 Command Palette 開啟側邊欄，並且將檔案拖放到聊天輸入框中，或是右鍵選擇檔案來添加到當前對話中。這個工具支援多達七種後端，包括 OpenClaw、Hermes 和 Souveraine，提供了統一的接口來管理這些代理，讓開發者無需改變工作流程。其設計的賣點在於簡化了與不同 AI 代理的互動，並提供了即時的回應和上下文感知的功能。Junction 還具備多種聊天佈局選擇，使用者可以在緊湊模式和時間線模式之間切換，並且支援 Markdown 渲染來提升回應的可讀性。自動重連功能確保了即使連接中斷也能自動恢復，提升了使用體驗。這些功能使得 Junction 成為一個強大的工具，特別適合需要頻繁與 AI 代理互動的開發者。
 
-技術上，它使用 TypeScript 和 JavaScript 開發，並依賴 VS Code 的 WebSocket 和 REST API 進行後端通信，這樣的選擇使得它能夠快速響應用戶的請求。相較於其他類似工具，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，Junction 提供了更為直觀的界面和多樣的後端支持，特別適合需要多種 AI 代理的開發者。使用者在使用過程中可能會遇到的問題包括需要確保本地代理運行正常，並且可能需要進行一些配置以適應不同的後端。整體而言，這是一個適合小型團隊和個人開發者的工具，特別是那些需要在本地環境中進行 AI 編碼的使用者。
-
-**技術棧**：`TypeScript` · `JavaScript` · `CSS` · `HTML`
+**技術棧**：`TypeScript` · `JavaScript` · `CSS` · `HTML` · `Shell`
 
 ## 重點功能
 
-- 多後端支持 — 連接 OpenClaw、Hermes、Souveraine 等多個本地代理。
-- 聊天側邊欄 — 可通過命令面板快速打開，方便即時對話。
-- 工作區上下文 — 支持拖放文件到聊天輸入，提升交互效率。
-- Markdown 渲染 — 助手回應和工具調用卡片支持語法高亮。
-- 主題切換 — 提供緊湊模式和時間線模式，適應不同使用需求。
-- 自動重連 — 連接中斷時自動重連，無需手動操作。
-- 動畫設置 — 自定義開場動畫和退出動畫，增強用戶體驗。
+- 多後端支援 — 支援 OpenClaw、Hermes、Souveraine 等七種本地代理。
+- 聊天側邊欄 — 透過 Command Palette 開啟，方便與 AI 代理互動。
+- 上下文感知 — 可以拖放檔案到聊天輸入框，或右鍵選擇檔案添加到對話中。
+- Markdown 渲染 — 助手回應和工具調用卡片支援 Markdown 語法，提升可讀性。
+- 多種聊天佈局 — 提供緊湊模式和時間線模式，根據需求切換顯示方式。
+- 自動重連 — 連接中斷時自動恢復，無需手動重啟。
 
 ## 快速開始
 
-1. 安裝依賴並編譯
+1. 安裝依賴
 ```bash
-npm install && ./compile-and-install.sh
+npm install
 ```
-2. 在 VS Code 中重載窗口
+2. 編譯並安裝
+```bash
+./compile-and-install.sh
+```
+3. 重新載入 VS Code
 ```bash
 Ctrl+Shift+P → Developer: Reload Window
-```
-3. 打開側邊欄
-```bash
-Ctrl+Shift+P → Junction: Open Sidebar
-```
-
-## 程式碼範例
-
-```ts
-[
-  "# 前置條件：已安裝 Junction 擴展",
-  "npm install && ./compile-and-install.sh",
-  "# 預期輸出：安裝完成後，使用者可以在 VS Code 中看到 Junction 側邊欄。"
-]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 10 天內累積 648 stars（65/天），forks 10（1.5%），這顯示出一定的關注度。作者 Plaer1 和 xiaomi-mimo 之前的項目經驗可能為此專案的開發提供了基礎。Junction 解決了在 VS Code 中與多個本地 AI 代理交互的需求，這在現有工具中並不常見，特別是對於需要多樣化編碼支援的開發者。社群的反應和活躍度也可能促進了這個專案的快速增長。
+> 建立 11 天就累積 648 stars（59/天），forks 10（1.5%），這顯示出該專案的初期增長潛力。主要貢獻者 Plaer1 和 xiaomi-mimo 在開源社群中有一定的影響力，提供了一個在本地運行 AI 代理的解決方案，這在過去是較少見的。之前的解決方案通常需要複雜的設定或無法提供統一的接口，Junction 的出現填補了這一空白。社群的反饋和需求也促進了這個工具的快速發展，特別是在 AI 編碼助手日益普及的背景下。Forks/stars 比率相對較低，顯示出目前使用者對於這個工具的觀望態度。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 VS Code 中使用本地 AI 編碼代理的開發者。
+**目標受眾**：需要在 VS Code 中與本地 AI 編碼代理互動的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來在 VS Code 中與本地 AI 代理進行即時對話，因為這樣可以快速獲得代碼建議和錯誤排查。
-> - 獨立開發者用它來連接不同的 AI 模型，因為可以根據需求靈活切換後端，提升開發效率。
-> - 資料科學家用它來在編碼過程中即時獲取數據處理建議，因為能夠直接在編輯器中與 AI 互動，節省時間。
+> - 後端工程師用它來在 VS Code 中與本地 AI 編碼代理互動，因為這樣可以快速獲取代碼建議而不需切換到其他應用。
+> - 前端開發者用它來將設計檔案拖放到聊天中，因為這樣可以直接與 AI 代理討論設計細節，提升工作效率。
+> - 數據科學家用它來在編寫代碼時即時查詢 AI 代理的建議，因為這樣可以減少查詢資料的時間，專注於數據分析。
 
 ## 架構分析
 
-Junction 採用多後端架構設計，通過 WebSocket 和 REST API 與不同的 AI 代理進行通信。這種設計使得用戶可以在不改變工作流程的情況下，靈活切換不同的代理後端。每個後端都能提供特定的功能，如 OpenClaw 的會話管理和 Hermes 的原生儀表板支持。
-
-這樣的架構選擇使得系統能夠快速響應用戶請求，但也需要用戶確保本地代理的正確配置和運行。選擇這種架構的代價在於，對於不熟悉本地代理配置的用戶來說，可能需要額外的學習成本。整體而言，這種設計在小型團隊和個人開發者中表現良好，能夠滿足多樣化的需求。
+Junction 採用多後端架構設計，能夠同時支援多種本地 AI 代理。這樣的設計使得開發者可以在不改變工作流程的情況下，靈活切換不同的代理。資料流方面，使用 WebSocket 和 REST API 與後端代理進行通訊，並透過統一的 UI 來呈現結果。這樣的設計雖然提升了使用的便利性，但也增加了系統的複雜度，特別是在處理多個代理的狀態管理時。擴展性方面，隨著更多代理的加入，可能會面臨性能瓶頸，尤其是在同時處理多個請求時。
 
 ## 技術深入分析
 
-Junction 的核心技術機制在於其多後端架構，使用 WebSocket 和 REST API 來與不同的 AI 代理進行通信。這樣的設計允許用戶在 VS Code 中無縫切換不同的代理，並且能夠即時獲得回應。效能上，Junction 能夠快速響應用戶的請求，並且在連接中斷時自動重連，提升了使用體驗。選擇 TypeScript 和 JavaScript 作為開發語言，使得擴展和維護變得更加方便，但也可能增加了學習成本。由於依賴於多個後端，使用者需要確保這些代理的正確配置，否則可能會影響整體體驗。整合到現有的開發工具鏈中相對簡單，尤其是對於已經在使用 VS Code 的開發者，但對於不熟悉 WebSocket 和 REST API 的用戶來說，可能需要額外的學習時間。整體而言，這是一個設計良好的工具，能夠有效提升開發者的工作效率。
+Junction 的核心技術機制在於其多後端架構，這使得開發者可以同時與多個本地 AI 代理進行互動。使用 WebSocket 和 REST API 來與後端代理通訊，這樣的設計不僅提高了反應速度，還能夠在不同的代理之間靈活切換。效能方面，Junction 能夠處理多達七種代理的請求，但在高負載情況下可能會出現延遲。選擇 TypeScript 和 JavaScript 作為開發語言，能夠提升開發效率並減少錯誤，但也可能導致較大的依賴樹。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在多代理同時運行的情況下。整合方面，與 VS Code 的相容性良好，但對於不熟悉 VS Code 的使用者來說，可能需要一些時間來適應其工作流程。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和功能介紹，讓新手能夠快速上手。安裝過程相對順暢，但需要注意本地代理的配置。文件中有詳細的使用範例，幫助用戶理解如何使用各項功能。整體而言，花 30 分鐘內應該能夠成功運行。
+> README 文件提供了清晰的安裝步驟和功能介紹，安裝過程相對順暢，但需要注意 VS Code 版本要求。文件中有示範如何使用，對於新手來說有一定的引導性。整體而言，花 30 分鐘應該能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 多後端支持，靈活性高。
-> - 即時交互，提升開發效率。
-> - 自定義動畫增強用戶體驗。
+> - 提供多後端支援，靈活性高。
+> - 即時聊天功能提升開發效率。
+> - 自動重連功能減少使用者干擾。
 
 > [!danger] 缺點
-> - 需要本地代理運行，配置較為複雜。
-> - 僅支持特定版本的 VS Code。
-> - 對於新手用戶，學習曲線較陡。
+> - 目前僅支援特定的七種後端，擴展性有限。
+> - 安裝過程相對複雜，需要手動編譯。
+> - 對於不熟悉 VS Code 的使用者可能有學習曲線。
 
 > [!warning] 注意事項
-> - 需要 VS Code 1.120.0 或更高版本。
-> - 必須在本地運行至少一個代理後端。
-> - 目前僅支持特定的代理後端，無法擴展至其他未列出的後端。
+> - 僅支援 VS Code 1.120.0 或更高版本。
+> - 需要本地代理運行，否則無法使用。
+> - 目前僅支援指定的七種後端，其他後端可能無法兼容。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 代理整合，但主要針對遊戲開發，功能較為專一。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 AI 模型的訓練和管理，而 Junction 更加注重即時交互和多後端支持。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 代理互動功能，但主要針對遊戲開發場景，功能範圍較窄。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 AI 代理的數據管理，缺乏即時聊天功能，適合需要數據處理的開發者。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 提供 API 介面與 Codex 互動，但不具備側邊欄的即時聊天功能，適合需要 API 整合的場景。 |
 
 ## 替代方案決策
 
@@ -206,16 +192,16 @@ Junction 的核心技術機制在於其多後端架構，使用 WebSocket 和 RE
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發的 AI 代理整合，功能較為專一。 | 如果你的專案主要是遊戲開發，且需要針對遊戲特定的 AI 支援。 | medium，因為需要重新適應不同的 API 和功能。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 AI 模型的訓練和管理，與 Junction 的即時交互有所不同。 | 如果你的需求主要集中在 AI 模型的訓練和管理，而非即時對話。 | high，因為需要重新設計整個工作流程。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發的 AI 代理互動，功能較為專一。 | 如果你的專案是遊戲開發，且需要特定的 AI 代理功能，則可以考慮這個工具。 | low，因為功能範圍相似，轉移過程相對簡單。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於數據管理，缺乏即時聊天功能，適合數據處理需求。 | 如果你的工作重點在於數據管理而非即時互動，則這個工具更為合適。 | medium，因為需要調整工作流程以適應不同的功能。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **junction** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於遊戲開發的 AI 代理整合，功能較為專一。 | 專注於 AI 模型的訓練和管理，與 Junction 的即時交互有所不同。 |
-> | 遷移成本 | - | medium，因為需要重新適應不同的 API 和功能。 | high，因為需要重新設計整個工作流程。 |
-> | 適用場景 | 主要場景 | 如果你的專案主要是遊戲開發，且需要針對遊戲特定的 AI 支援 | 如果你的需求主要集中在 AI 模型的訓練和管理，而非即時對話 |
+> | 技術路線 | 本專案 | 專注於遊戲開發的 AI 代理互動，功能較為專一。 | 專注於數據管理，缺乏即時聊天功能，適合數據處理需求。 |
+> | 遷移成本 | - | low，因為功能範圍相似，轉移過程相對簡單。 | medium，因為需要調整工作流程以適應不同的功能。 |
+> | 適用場景 | 主要場景 | 如果你的專案是遊戲開發，且需要特定的 AI 代理功能，則可以 | 如果你的工作重點在於數據管理而非即時互動，則這個工具更為合適 |
 
 ## 成熟度評估
 
@@ -223,45 +209,44 @@ Junction 的核心技術機制在於其多後端架構，使用 WebSocket 和 RE
 | --- | --- |
 | 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和小型專案，但不建議用於生產環境的核心路徑上。
+> 適合個人試用或小型專案，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些情況下，無法正確連接到後端代理
-  - 解法：檢查代理配置和網絡連接
-- [MEDIUM] 使用過程中可能會出現性能瓶頸
-  - 解法：減少同時開啟的代理數量
+- **[HIGH]** 在某些環境下可能無法正確連接到後端代理。
+  - 解法：檢查網絡設置和代理配置。
+- [MEDIUM] 安裝過程中可能會遇到依賴問題。
+  - 解法：確保所有依賴都已正確安裝。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的開發環境 | 非常適合 | 支持多個本地代理，靈活性高。 |
-| 大型企業的生產環境 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
-| 個人開發者的側邊專案 | 適合 | 簡單易用，能快速上手。 |
-| 需要高可用性的商業應用 | 不適合 | 目前尚未達到生產就緒的標準。 |
+| 5 人以下的初創團隊開發工具 | 非常適合 | 簡化了與 AI 代理的互動，提升了開發效率。 |
+| 大型企業的核心系統開發 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
+| 需要快速原型開發的開發者 | 適合 | 提供即時的 AI 互動，能夠快速獲得建議。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，能夠提升開發效率，值得嘗試。
+> 花 3 小時學習，2 小時整合，得到即時的 AI 互動效果，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限運行，僅存取本地代理的資料，依賴鏈相對簡單，適合在 CI/CD 中使用。
+> 低風險：不需要高權限，主要存取本地代理的資料，依賴鏈的風險相對較低。
 
 ## 健康度儀表板
 
@@ -350,8 +335,8 @@ Junction 的核心技術機制在於其多後端架構，使用 WebSocket 和 RE
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有更新和問題回應。
-**連結**：[文件](https://github.com/Plaer1/junction#readme)
+**社群活躍度**：社群活躍度中等，最近有持續的更新和維護。
+**連結**：[文件](https://github.com/Plaer1/junction)
 
 ## 開發動態
 
@@ -478,9 +463,9 @@ Junction 的核心技術機制在於其多後端架構，使用 WebSocket 和 RE
 
 ## 延伸閱讀
 
-相關概念：[[AI]] · [[編碼助手]] · [[WebSocket]]
+相關概念：[[AI 編碼助手]] · [[多代理架構]] · [[即時通訊]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[Doorman11991--smallcode|Doorman11991/smallcode]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[Doorman11991--smallcode|Doorman11991/smallcode]]
 
 [GitHub](https://github.com/Plaer1/junction)
 
@@ -522,7 +507,7 @@ Junction 的核心技術機制在於其多後端架構，使用 WebSocket 和 RE
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["AI","編碼助手","WebSocket"];
+> const concepts = ["AI 編碼助手","多代理架構","即時通訊"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Plaer1--junction" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
