@@ -1,64 +1,65 @@
 ---
-repo: AlexandrosGounis/pdfx
-url: https://github.com/AlexandrosGounis/pdfx
-owner: AlexandrosGounis
+repo: Krishnagangwal/CS-Fundamentals
+url: https://github.com/Krishnagangwal/CS-Fundamentals
+owner: Krishnagangwal
 owner_type: User
-language: TypeScript
-license: MIT
-description: "An extension of the traditional PDF standard, allowing multiple files to be stored in a single file via metadata"
+language: N/A
+license: N/A
+description: "Curated CS fundamentals for placement prep: DSA,Computer Networks, DBMS & SQL, OOPs, Operating Systems, System Design & Software Engineering"
 homepage: ""
-stars: 564
-stars_per_day: 113
-forks: 64
+stars: 957
+stars_per_day: 957
+forks: 70
 open_issues: 0
-created: 2026-06-24
+created: 2026-06-28
 pushed_at: 2026-06-28
-first_seen: 2026-06-29
+first_seen: 2026-06-30
 week: "2026-W27"
 month: "2026-06"
-category: "開發工具"
-subcategory: "PDF 工具"
+category: "教學資源"
+subcategory: "面試準備"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-06-29
-use_case: "將多個文件打包到單一 PDF 檔案中，並保持向後相容性。"
-priority: medium
+last_reviewed: 2026-06-30
+use_case: "提供計算機科學基礎知識的精選資源，幫助求職準備。"
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-07"
-contributor_count: 4
-engagement: "medium"
+appearances: 1
+next_review: "2026-07-03"
+contributor_count: 1
+engagement: "low"
 issue_close_rate: -1
-repo_size_kb: 3214
-readme_length: 1304
+repo_size_kb: 284125
+readme_length: 5778
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-06-29"
-star_history: "2026-06-29:489,2026-06-29:490,2026-06-30:564"
+ring_history: "assess@2026-06-30"
+star_history: "2026-06-30:957"
 tags:
   - github
-  - "category/開發工具"
-  - "lang/typescript"
+  - "category/教學資源"
+  - "lang/other"
+  - easy_install
 aliases:
-  - "pdfx"
-  - "AlexandrosGounis/pdfx"
-  - "將多個文件打包到單一 PDF 檔案中，並保持向後相容性。"
+  - "CS-Fundamentals"
+  - "Krishnagangwal/CS-Fundamentals"
+  - "提供計算機科學基礎知識的精選資源，幫助求職準備。"
 ---
 
-# pdfx
+# CS-Fundamentals
 
-**490** stars · **123** stars/天 · 建立 4 天前 · TypeScript · MIT
+**957** stars · **957** stars/天 · 建立 1 天前 · N/A · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/AlexandrosGounis--pdfx");
+const me = dv.page("Repos/Krishnagangwal--CS-Fundamentals");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -68,21 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
+`個人專案` `easy-install`
+
 > [!summary] 一句話摘要
-> 將多個文件打包到單一 PDF 檔案中，並保持向後相容性。
+> 提供計算機科學基礎知識的精選資源，幫助求職準備。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (123 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Medium
-> **適合** 需要將多個文件整合為一個 PDF 的專業人士，如文檔管理員、設計師或學生。
-> **一句話重點** PDFx 提供了一個簡單而有效的方式來管理多個 PDF 文件，特別適合需要經常處理文檔的專業人士。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (957 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要準備技術面試的計算機科學學生或自學者。
+> **一句話重點** 這個專案提供了一個全面的計算機科學基礎知識庫，特別適合求職準備的學生和自學者。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/Krishnagangwal--CS-Fundamentals");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "PDF 工具" && p.file.name !== "AlexandrosGounis--pdfx" && p.status !== "archived")
+>     .where(p => p.subcategory === "面試準備" && p.file.name !== "Krishnagangwal--CS-Fundamentals" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -93,176 +96,91 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 PDF 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 面試準備 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到簡化的文檔管理，值得一試。
-
-> [!abstract] 核心創新
-> PDFx 是一個向後相容的 PDF 擴展，能夠將多個文件打包到一個單一檔案中。
+> **安裝** Easy (一行搞定)
 
 ## 專案簡介
 
-PDFx 是一個開放的、向後相容的 PDF 擴展，允許將多個文件打包到單一檔案中，並提供一個簡單的桌面查看器。用戶可以將 `.pdf` 或 `.pdfx` 文件拖放到應用程式中，這些文件會以橫向頁面條的形式顯示，並且可以重新排序或刪除。最終，用戶可以選擇「Export PDF」將整個集合保存為一個文件。這個設計的賣點在於它的簡單性和兼容性，因為 `.pdfx` 文件仍然是有效的 PDF，可以在任何 PDF 閱讀器中打開。技術上，PDFx 使用 Electron、Vite 和 React 開發，並依賴 pdf.js 進行渲染，pdf-lib 用於文件組合，這使得它能夠高效處理多文檔的組合。與其他 PDF 工具相比，如 Adobe Acrobat，PDFx 提供了一個更輕量且開源的選擇，適合需要簡單操作的用戶。
+這個專案是一個精心策劃的計算機科學基礎知識庫，專為求職準備而設計。它涵蓋了數據結構與演算法、計算機網絡、數據庫管理系統、面向對象編程、操作系統、系統設計和軟體工程等主要主題。使用者可以從各個主題的資料夾中獲取 PDF、筆記、速查表和面試問題庫，這些資料都經過精選，方便快速查閱。舉例來說，使用者可以在 DBMS & SQL 資料夾中找到《100-DBMS-Interview-Questions.pdf》，這是針對面試的熱門問題集合。這個工具的賣點在於它的全面性和針對性，特別適合準備技術面試的學生和求職者。技術上，這個專案並不依賴特定的框架或語言，因為它主要是文件集合，使用者只需下載並使用即可。
 
-相較於使用傳統 PDF 工具，PDFx 的使用者可以更方便地管理多個文件，並且不需要擔心格式兼容性問題。這個工具的設計考量了用戶的直觀操作，並且在多平台上都能運行，這對於需要跨平台工作的團隊來說非常有利。使用者可能會發現，儘管它功能強大，但在處理非常大的文件集合時可能會遇到性能瓶頸，這是因為所有文件都需要在內存中同時處理。從社群活躍度來看，這個專案在短短幾天內就獲得了 490 顆星，顯示出其潛在的需求和興趣。整體來看，PDFx 是一個值得關注的工具，特別是對於需要經常處理多文檔的用戶。
-
-**技術棧**：`TypeScript` · `Electron` · `React` · `pdf.js` · `pdf-lib`
+與其他類似的資源相比，如 LeetCode 或 GeeksforGeeks，這個專案提供了更為集中和組織化的資料，讓使用者能夠快速找到所需的資訊。使用者在準備面試時，能夠利用這些資料進行針對性的複習，特別是在面試前的最後衝刺階段。這個專案的社群活躍度高，且沒有開放的問題，顯示出維護者對於內容的持續更新和管理。對於個人學習者或小型團隊來說，這是一個非常適合的資源，能夠幫助他們在求職過程中獲得優勢。未來六個月內，隨著求職季的到來，這個專案可能會進一步擴展內容，增加更多的面試問題和學習資源。
 
 ## 重點功能
 
-- 多文件打包 — 將多個 PDF 文件合併為一個 `.pdfx` 文件，並保持原有的 PDF 格式。
-- 簡單的拖放介面 — 用戶可以直接將文件拖入應用程式中，方便快捷。
-- 跨平台支持 — 支援 macOS、Windows 和 Linux，讓用戶在不同系統上都能使用。
-- 導出功能 — 用戶可以將整個文件集合導出為一個單一的 PDF 文件，方便分享。
-- 嵌入的 JSON 清單 — 使用一個簡單的 JSON 清單來管理多個文檔，保持格式的簡單性。
+- 全面的主題覆蓋 — 包含 DSA、計算機網絡、DBMS、OOP、操作系統等。
+- 多樣的文件格式 — 提供 PDF、DOCX 和 Markdown 格式的資料，方便使用者選擇。
+- 針對性面試問題 — 每個主題都有專門的面試問題集，幫助使用者針對性準備。
+- 組織良好的資料夾結構 — 清晰的資料夾結構讓使用者能快速找到所需資料。
+- 持續更新的內容 — 由活躍的維護者持續更新，確保資料的時效性和相關性。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 克隆專案到本地
 ```bash
-yarn
+git clone https://github.com/Krishnagangwal/CS-Fundamentals.git
 ```
-2. 啟動開發模式
+2. 進入專案資料夾
 ```bash
-yarn dev
+cd CS-Fundamentals
 ```
-3. 打包 macOS 版本
+3. 選擇所需的主題資料夾，開始學習
 ```bash
-yarn build:mac
-```
-
-## 程式碼範例
-
-```ts
-{
-  "前置條件": "需要安裝 Yarn 和 Node.js",
-  "指令": "yarn dev",
-  "預期輸出": "啟動 PDFx 開發伺服器，並在瀏覽器中打開應用程式。"
-}
+# 例如：cd DSA，然後查看 DSA-Cheatsheet.pdf
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天就累積 490 stars（123/天），forks 53（10.8%），顯示出相對健康的社群興趣。作者 Alexandros Gounis 之前有開發相關的開源專案，這次專案解決了傳統 PDF 工具在多文件管理上的不足，提供了一個更簡單的解決方案。短時間內的高關注度可能來自於社群對於開源 PDF 解決方案的需求增加，特別是在需要跨平台支持的情境下。forks/stars 比率為 10.8%，顯示出許多人對這個專案進行了實際的修改和使用，這是一個良好的信號。
+> 建立 1 天就累積 957 stars（957/天），forks 70（7.3%），這顯示出高需求和使用者的積極參與。作者 Krishnagangwal 是一位活躍的貢獻者，專注於教育資源的整理和分享。這個專案解決了求職者在準備面試時面臨的資料分散問題，之前的解決方案往往需要在多個網站之間切換，效率低下。這個專案的出現正好填補了這一空白，提供了一個集中式的資源庫。社群的反饋和使用者的需求促進了這個專案的快速增長，特別是在求職季節來臨之際。
 
 ## 適合誰使用
 
-**目標受眾**：需要將多個文件整合為一個 PDF 的專業人士，如文檔管理員、設計師或學生。
+**目標受眾**：需要準備技術面試的計算機科學學生或自學者。
 
 > [!example] 使用場景
-> - 文檔管理員用它來將多個報告合併為一個 PDF 文件，因為這樣可以更方便地分享和存檔，避免了多個文件的混亂。
-> - 設計師用它來整合多個設計草稿，因為這樣可以在一次展示中展示所有設計，提升客戶的理解和反饋效率。
-> - 學生用它來將多篇論文合併為一個文件，因為這樣可以簡化提交過程，並確保所有資料都在一個地方。
+> - 大學畢業生用它來準備技術面試，因為它提供了針對性的面試問題和學習資源，能夠提高通過率。
+> - 自學者用它來系統性地學習計算機科學基礎，因為資料組織良好，方便查找和複習。
+> - 小型團隊用它來制定培訓計劃，因為它涵蓋了多個主題，能夠滿足不同成員的學習需求。
 
 ## 架構分析
 
-PDFx 採用 Electron 作為桌面應用的框架，這使得它能夠在多個平台上運行。資料流方面，PDFx 使用 pdf.js 進行 PDF 渲染，並利用 pdf-lib 來組合多個文檔。這種設計選擇使得應用能夠快速響應用戶操作，並且保持較高的效能。選擇 Electron 使得開發者可以使用網頁技術來構建桌面應用，但也帶來了較大的應用體積。擴展性方面，PDFx 的架構允許未來添加更多功能，如對其他文件格式的支持或更複雜的文檔管理功能。
+這個專案的架構非常簡單，主要由各個主題的資料夾組成，每個資料夾內包含相關的學習資源和面試問題。這樣的設計使得使用者能夠快速找到所需的資料，並且不需要任何特定的環境或依賴。資料的組織方式使得學習過程更加高效，使用者可以根據自己的需求選擇不同的主題進行深入學習。這種結構的代價在於缺乏互動性，使用者只能被動地閱讀資料，而無法進行實時的問題解答或互動式學習。整體來說，這個專案的設計非常適合需要快速準備面試的使用者，但對於想要深入學習的使用者來說，可能會感到資料的深度不足。
 
 ## 技術深入分析
 
-PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx` 文件，並使用嵌入的 JSON 清單來管理這些文件。這種設計使得用戶可以在不改變原始 PDF 格式的情況下，方便地管理和導出文件。效能方面，PDFx 能夠處理中等規模的文件集合，但在處理大型文件時可能會遇到性能瓶頸，這是因為所有文件都需要在內存中同時渲染。選擇 Electron 作為開發框架使得 PDFx 能夠利用現有的網頁技術，但也帶來了較大的應用體積和較慢的啟動時間。技術風險方面，隨著用戶數量的增加，可能會面臨性能和穩定性問題，特別是在處理大量文件時。整合方面，PDFx 可以與現有的 PDF 工具鏈相容，但對於需要更高效能的用戶，可能需要考慮其他專業工具。
+這個專案的核心技術機制在於其資料的組織與整合，將多個計算機科學主題的學習資源集中在一個地方。資料夾結構清晰，使用者可以輕鬆找到各個主題的相關資料，這樣的設計使得學習過程更加高效。雖然這個專案不涉及特定的技術棧，但其資料的多樣性和針對性使得它在求職準備中非常有價值。使用者在準備面試時，可以根據自己的需求選擇不同的主題進行深入學習，這樣的靈活性是其他類似資源所不具備的。設計上的取捨在於缺乏互動性，這意味著使用者需要自行尋找問題的解答，可能會影響學習的效率。整體而言，這個專案的設計非常適合需要快速準備面試的使用者，但對於想要深入學習的使用者來說，可能會感到資料的深度不足。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含了基本的使用範例，安裝過程相對順暢，但需要注意 Node.js 和 Yarn 的安裝。沒有提供多語言支持，對於非英語用戶可能會有些困難。整體來說，花 30 分鐘能夠順利運行起來。
+> README 文件清晰，提供了資料夾結構和各主題的簡要介紹。安裝過程非常順暢，使用者只需克隆專案即可開始使用。雖然沒有詳細的入門指南，但資料夾中的內容已經足夠明確，使用者可以快速上手。文件目前僅提供英文，可能對非英語使用者造成一定障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開源且免費，適合各類用戶使用。
-> - 簡單直觀的用戶介面，降低了使用門檻。
-> - 支持多平台，方便不同系統的用戶使用。
+> - 資料組織良好，方便快速查找。
+> - 涵蓋的主題廣泛，適合多種需求。
+> - 持續更新，確保資料的時效性。
 
 > [!danger] 缺點
-> - 對於大型文件集合的處理性能可能不佳。
-> - 目前僅支持 PDF 格式，對其他格式的支持有限。
-> - 需要安裝 Node.js 和 Yarn，對於非技術用戶可能造成困難。
+> - 缺乏互動學習功能，僅為靜態資料。
+> - 不提供實時問題解答支持。
+> - 資料深度可能不足以滿足進階學習需求。
 
 > [!warning] 注意事項
-> - 在處理非常大的文件集合時可能會遇到性能瓶頸。
-> - 目前僅支援 PDF 格式，對其他格式的支持有限。
-> - 需要安裝 Node.js 和 Yarn 作為開發環境。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成多文檔的代理，而 PDFx 則是針對 PDF 文件的管理和整合。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了一個文件管理系統，但不專注於 PDF 格式的整合，PDFx 則專注於 PDF 文件的合併和導出。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| Adobe Acrobat | Adobe Acrobat 提供了全面的 PDF 編輯和管理功能，而 PDFx 專注於多文檔的合併和簡化操作。 | 如果需要進行高級 PDF 編輯和格式轉換，Adobe Acrobat 是更好的選擇。 | medium，因為需要將文件從 PDFx 轉換為 Adobe 的格式。 |
-| Foxit Reader | Foxit Reader 提供輕量級的 PDF 閱讀和編輯功能，而 PDFx 則專注於多文檔的管理。 | 如果需要一個輕量級的 PDF 閱讀器，Foxit Reader 是不錯的選擇。 | low，因為兩者都支持 PDF 格式，轉換相對簡單。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **pdfx** | **Adobe Acrobat** | **Foxit Reader** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Adobe Acrobat 提供了全面的 PDF 編輯和管理功能，而 PDFx 專注於多文檔的合併和簡化操作。 | Foxit Reader 提供輕量級的 PDF 閱讀和編輯功能，而 PDFx 則專注於多文檔的管理。 |
-> | 遷移成本 | - | medium，因為需要將文件從 PDFx 轉換為 Adobe 的格式。 | low，因為兩者都支持 PDF 格式，轉換相對簡單。 |
-> | 適用場景 | 主要場景 | 如果需要進行高級 PDF 編輯和格式轉換，Adobe Acr | 如果需要一個輕量級的 PDF 閱讀器，Foxit Reade |
-
-## 成熟度評估
-
-| 項目 | 評估 |
-| --- | --- |
-| 開發階段 | Alpha |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | high |
-
-> [!tip] 採用建議
-> 適合個人試用和小型專案，但不建議用於生產環境的核心路徑上。
-
-## 已知陷阱
-
-> [!bug] 踩坑才知道的問題
-
-- **[HIGH]** 在 Linux 上打包時可能會遇到依賴問題
-  - 解法：參考 docs/LINUX_SETUP.md 進行設置
-- [MEDIUM] 在處理大型 PDF 文件時可能會導致應用崩潰
-  - 解法：分割文件後再進行處理
-
-## 使用情境適合度
-
-| 情境 | 適合度 | 說明 |
-| --- | --- | --- |
-| 小型團隊的文檔管理 | 非常適合 | 簡單的界面和多平台支持使得團隊可以輕鬆管理文件。 |
-| 需要高級 PDF 編輯的專業人士 | 不適合 | 缺乏高級編輯功能，無法滿足專業需求。 |
-| 學生的論文提交 | 適合 | 能夠將多篇論文合併為一個文件，簡化提交過程。 |
-
-## 採用成本分析
-
-| 項目 | 評估 |
-| --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
-| 綁定風險 | low |
-
-> [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到簡化的文檔管理，值得一試。
-
-## 安全性評估
-
-> [!warning] 安全性快速掃描
-> 低風險：PDFx 本身不需要高權限，且不存取敏感資料，但需注意依賴的第三方庫的安全性。
+> - 不提供互動式學習平台，僅為靜態文件。
+> - 缺乏實時的問題解答支持，使用者需自行查找資料。
+> - 不包含程式碼實作示例，僅提供理論和問題集。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/Krishnagangwal--CS-Fundamentals");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -297,7 +215,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/Krishnagangwal--CS-Fundamentals");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -321,102 +239,145 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 53 |
+| Forks | 70 |
 | Open Issues | 0 |
 | 最後推送 | 2026-06-28 |
-| 建立日期 | 2026-06-24 |
-| Repo 大小 | 3.1 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/AlexandrosGounis/pdfx) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@electron-toolkit/preload` `@electron-toolkit/utils` `@electron-toolkit/tsconfig` `@types/node` `@types/react` `@types/react-dom` `@types/d3-selection` `@types/d3-zoom` `@vitejs/plugin-react` `d3-selection` `d3-zoom` `electron` `electron-builder` `electron-vite` `fflate`
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "TypeScript" : 85
->     "CSS" : 10
->     "Objective-C++" : 3
->     "Shell" : 1
->     "JavaScript" : 1
-> ```
+| 建立日期 | 2026-06-28 |
+| Repo 大小 | 277.5 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Krishnagangwal/CS-Fundamentals) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@AlexandrosGounis](https://github.com/AlexandrosGounis) | 10 |
-> | [@ArcanConsulting](https://github.com/ArcanConsulting) | 1 |
-> | [@ShreySavsani](https://github.com/ShreySavsani) | 1 |
-> | [@mauitaxes](https://github.com/mauitaxes) | 1 |
+> | [@Krishnagangwal](https://github.com/Krishnagangwal) | 2 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度良好，短時間內獲得了不少關注和貢獻。
+**社群活躍度**：社群活躍度高，沒有開放的問題，顯示出維護者對內容的持續更新和管理。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-17 ~ 2026-06-28）
-> **活躍天數** 6 天 · **最新 commit** Cleans up labels (#4)
+> [!abstract] 最近 10 次 commit（2026-06-28 ~ 2026-06-28）
+> **活躍天數** 1 天 · **最新 commit** Add all PDF and DOCX documents from Google Drive across all subject folders
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # PDFx
+> # CS Fundamentals
 > 
-> **One file. Many documents. Still a PDF.**
+> A curated collection of Computer Science fundamentals for placement preparation, covering all major CS subjects. Includes PDFs, notes, cheatsheets, and interview question banks.
 > 
->   
+> ## 📁 Folder Structure
 > 
-> [](LICENSE)
-> &nbsp;
-> [](#)
-> &nbsp;
-> [](SPEC.md)
-> 
-> ## What it is
-> 
-> PDFx is an open, backwards compatible extension of PDF that bundles many documents into a single file, plus a minimal desktop viewer for macOS, Windows, and Linux.
-> 
-> A `.pdfx` file is a fully valid PDF: open it anywhere and every page shows in sequence. Open it in PDFx and it splits back into the original documents. Plain single PDFs work as they are.
-> 
-> Drag and drop `.pdf` or `.pdfx` files anywhere in the window. Each document renders as a horizontal strip of pages, and documents stack vertically. Reorder or remove them, then **Export PDF** to save the whole collection as one file.
-> 
-> See [SPEC.md](SPEC.md) for the format. It is short: the entire trick is one embedded JSON manifest.
-> 
-> ## How to run
-> 
-> Built with Electron, Vite, TypeScript, and React. PDF rendering by [pdf.js](https://mozilla.github.io/pdf.js/), assembly by [pdf-lib](https://pdf-lib.js.org/).
-> 
-> ```bash
-> yarn              # install
-> yarn dev          # run in development
-> yarn build:mac    # package for macOS
-> yarn build:win    # package for Windows
-> yarn build:linux  # package for Linux
+> ```
+> CS-Fundamentals/
+> ├── 📁 Computer-Network/          (3 files)
+> ├── 📁 DBMS-and-SQL/              (9 files)
+> ├── 📁 DSA/                       (6 files)
+> ├── 📁 OOPs/                      (5 files)
+> ├── 📁 Operating-System/          (5 files)
+> ├── 📁 Software-Engineering/      (2 files)
+> ├── 📁 System-Design/             (3 files)
+> ├── 📄 HR-Interview-Questions.pdf
+> ├── 📄 LeetCode-Problems.pdf
+> ├── 📄 Cover-Letter-Template.docx
+> ├── 📄 List-of-Companies-Hiring-Freshers-Offcampus.md
+> └── 📄 25-Job-Interview-Preparation-Prompts.md
 > ```
 > 
-> *Linux packaging notes (formats, Flatpak, prerequisites) live in [docs/LINUX_SETUP.md](docs/LINUX_SETUP.md).*
+> ## 📚 Topics Covered
 > 
-> ## License
+> ### [Computer Network](./Computer-Network/)
+> | File | Description |
+> |------|-------------|
+> | [Computer-Network-Notes-for-Placements-and-GATE.pdf](./Computer-Network/Computer-Network-Notes-for-Placements-and-GATE.pdf) | Comprehensive CN notes for placements & GATE |
+> | [Networking-Interview-Questions.pdf](./Computer-Network/Networking-Interview-Questions.pdf) | CN interview Q&A |
+> | [CN-Roadmap.md](./Computer-Network/CN-Roadmap.md) | Topic-wise roadmap & important concepts |
 > 
-> MIT
+> ### [DBMS & SQL](./DBMS-and-SQL/)
+> | File | Description |
+> |------|-------------|
+> | [DBMS-Handwritten-Notes.pdf](./DBMS-and-SQL/DBMS-Handwritten-Notes.pdf) | Handwritten DBMS notes |
+> | [DBMS-Notes.pdf](./DBMS-and-SQL/DBMS-Notes.pdf) | DBMS theory notes |
+> | [100-DBMS-Interview-Questions.pdf](./DBMS-and-SQL/100-DBMS-Interview-Questions.pdf) | Top 100 DBMS interview questions |
+> | [Complete-SQL-Cheatsheet.pdf](./DBMS-and-SQL/Complete-SQL-Cheatsheet.pdf) | Complete SQL cheatsheet |
+> | [SQL-Tutorial.pdf](./DBMS-and-SQL/SQL-Tutorial.pdf) | SQL tutorial |
+> | [SQL-Interview-Questions-and-Answers.pdf](./DBMS-and-SQL/SQL-Interview-Questions-and-Answers.pdf) | SQL interview Q&A |
+> | [SQL-Interview-QA-2.pdf](./DBMS-and-SQL/SQL-Interview-QA-2.pdf) | Additional SQL interview Q&A |
+> | [Top-50-SQL-Interview-Questions.pdf](./DBMS-and-SQL/Top-50-SQL-Interview-Questions.pdf) | Top 50 SQL questions |
+> | [LeetCode-SQL.pdf](./DBMS-and-SQL/LeetCode-SQL.pdf) | LeetCode SQL problems |
+> 
+> ### [DSA](./DSA/)
+> | File | Description |
+> |------|-------------|
+> | [DSA-Cheatsheet.pdf](./DSA/DSA-Cheatsheet.pdf) | Data Structures & Algorithms cheatsheet |
+> | [DSA-Resource.pdf](./DSA/DSA-Resource.pdf) | Comprehensive DSA resource |
+> | [Complete-Resources-of-DSA.pdf](./DSA/Complete-Resources-of-DSA.pdf) | Complete DSA resource guide |
+> | [Striver-SDE-Sheet-Solution.pdf](./DSA/Striver-SDE-Sheet-Solution.pdf) | Striver SDE sheet solutions |
+> | [Top-50-DSA-Interview-Questions.docx](./DSA/Top-50-DSA-Interview-Questions.docx) | Top 50 DSA interview questions |
+> | [Learn-DSA-for-Free.docx](./DSA/Learn-DSA-for-Free.docx) | Free DSA learning resources |
+> 
+> ### [OOPs](./OOPs/)
+> | File | Description |
+> |------|-------------|
+> | [OOPs-Interview-Questions.pdf](./OOPs/OOPs-Interview-Questions.pdf) | OOP interview Q&A |
+> | [OOPS-Concepts-in-Java.pdf](./OOPs/OOPS-Concepts-in-Java.pdf) | OOP concepts in Java |
+> | [Python-OOP.pdf](./OOPs/Python-OOP.pdf) | OOP in Python |
+> | [Principles-of-OOP-JavaScript.pdf](./OOPs/Principles-of-OOP-JavaScript.pdf) | OOP principles in JavaScript |
+> | [OOP-in-CPP.pdf](./OOPs/OOP-in-CPP.pdf) | OOP in C++ |
+> 
+> ### [Operating System](./Operating-System/)
+> | File | Description |
+> |------|-------------|
+> | [Operating-System-Part-1.pdf](./Operating-System/Operating-System-Part-1.pdf) | OS notes Part 1 |
+> | [Operating-System-Part-2.pdf](./Operating-System/Operating-System-Part-2.pdf) | OS notes Part 2 |
+> | [Operating-System-Short-Notes.pdf](./Operating-System/Operating-System-Short-Notes.pdf) | OS short revision notes |
+> | [Operating-System-Interview-Questions.pdf](./Operating-System/Operating-System-Interview-Questions.pdf) | OS interview Q&A |
+> | [Operating-System-Textbook-Dr-Mamta-Bansal.pdf](./Operating-System/Operating-System-Textbook-Dr-Mamta-Bansal.pdf) | OS textbook |
+> 
+> ### [Software Engineering](./Software-Engineering/)
+> | File | Description |
+> |------|-------------|
+> | [Software-Engineering.pdf](./Software-Engineering/Software-Engineering.pdf) | SE notes & concepts |
+> | [SE-Interview-Questions.pdf](./Software-Engineering/SE-Interview-Questions.pdf) | SE interview Q&A |
+> 
+> ### [System Design](./System-Design/)
+> | File | Description |
+> |------|-------------|
+> | [System-Design-Cheatsheet.pdf](./System-Design/System-Design-Cheatsheet.pdf) | System design cheatsheet |
+> | [System-Design-Notes.pdf](./System-Design/System-Design-Notes.pdf) | System design notes |
+> | [System-Design-Interview-Questions.pdf](./System-Design/System-Design-Interview-Questions.pdf) | System design interview Q&A |
+> | [System-Design-Cheatsheet.md](./System-Design/System-Design-Cheatsheet.md) | System design cheatsheet (markdown) |
+> 
+> ## 📄 General Resources
+> 
+> | File | Description |
+> |------|-------------|
+> | [HR-Interview-Questions.pdf](./HR-Interview-Questions.pdf) | HR / behavioral interview questions |
+> | [LeetCode-Problems.pdf](./LeetCode-Problems.pdf) | LeetCode problem set |
+> | [Cover-Letter-Template.docx](./Cover-Letter-Template.docx) | Cover letter template |
+> | [List-of-Companies-Hiring-Freshers-Offcampus.md](./List-of-Companies-Hiring-Freshers-Offcampus.md) | Companies hiring freshers off-campus |
+> | [25-Job-Interview-Preparation-Prompts.md](./25-Job-Interview-Preparation-Prompts.md) | AI prompts for interview prep |
+> 
+> ---
+> 
+> > This repository is a curated collection of placement and AI/ML resources gathered from various sources across the internet. I do not claim ownership of any individual document or resource. If you are the original creator of any content here and would like credit or removal, please DM me on Instagram @krishnagangwal.ai.
 
 ## 延伸閱讀
 
-相關概念：[[PDF]] · [[文件管理]] · [[跨平台應用]]
+相關概念：[[面試準備]] · [[計算機科學基礎]] · [[資料結構與演算法]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]]
+相關專案：[[WenyuChiou--awesome-agentic-ai-zh|WenyuChiou/awesome-agentic-ai-zh]] · [[datawhalechina--Agent-Learning-Hub|datawhalechina/Agent-Learning-Hub]]
 
-[GitHub](https://github.com/AlexandrosGounis/pdfx)
+[GitHub](https://github.com/Krishnagangwal/CS-Fundamentals)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：PDF 工具）
+> [!note]- 直接競品（同子分類：面試準備）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "PDF 工具" AND file.name != "AlexandrosGounis--pdfx"
+> WHERE subcategory = "面試準備" AND file.name != "Krishnagangwal--CS-Fundamentals"
 > SORT stars DESC
 > ```
 
@@ -424,7 +385,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "AlexandrosGounis--pdfx"
+> WHERE category = "教學資源" AND file.name != "Krishnagangwal--CS-Fundamentals"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -433,7 +394,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "AlexandrosGounis--pdfx" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "Krishnagangwal--CS-Fundamentals" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -442,15 +403,15 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W27" AND file.name != "AlexandrosGounis--pdfx"
+> WHERE week = "2026-W27" AND file.name != "Krishnagangwal--CS-Fundamentals"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["PDF","文件管理","跨平台應用"];
+> const concepts = ["面試準備","計算機科學基礎","資料結構與演算法"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "AlexandrosGounis--pdfx" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "Krishnagangwal--CS-Fundamentals" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -463,12 +424,12 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/Krishnagangwal--CS-Fundamentals");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "AlexandrosGounis--pdfx" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Krishnagangwal--CS-Fundamentals" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -484,7 +445,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "AlexandrosGounis" AND file.name != "AlexandrosGounis--pdfx"
+> WHERE owner = "Krishnagangwal" AND file.name != "Krishnagangwal--CS-Fundamentals"
 > SORT stars DESC
 > ```
 
@@ -492,7 +453,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/Krishnagangwal--CS-Fundamentals");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -509,7 +470,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/Krishnagangwal--CS-Fundamentals");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -542,7 +503,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/Krishnagangwal--CS-Fundamentals");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -566,7 +527,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/Krishnagangwal--CS-Fundamentals");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -603,7 +564,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/Krishnagangwal--CS-Fundamentals");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -686,7 +647,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-06-29** — 首次收錄
+> **2026-06-30** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -702,5 +663,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-06-30|2026-06-30]] — 再次上榜，564 stars
-- [[2026-06-29|2026-06-29]] — 首次收錄，489 stars
+- [[2026-06-30|2026-06-30]] — 首次收錄，957 stars

@@ -2549,10 +2549,10 @@
   },
   "bozhouDev/codex-orange-book": {
     "first_seen": "2026-06-24",
-    "last_seen": "2026-06-29",
-    "times_seen": 6,
+    "last_seen": "2026-06-30",
+    "times_seen": 7,
     "stars_first": 528,
-    "stars_last": 2284
+    "stars_last": 2362
   },
   "cloudflare/security-audit-skill": {
     "first_seen": "2026-06-24",
@@ -2591,24 +2591,24 @@
   },
   "benchflow-ai/awesome-evals": {
     "first_seen": "2026-06-27",
-    "last_seen": "2026-06-29",
-    "times_seen": 3,
+    "last_seen": "2026-06-30",
+    "times_seen": 4,
     "stars_first": 464,
-    "stars_last": 564
+    "stars_last": 589
   },
   "Yu9191/wloc": {
     "first_seen": "2026-06-27",
-    "last_seen": "2026-06-29",
-    "times_seen": 3,
+    "last_seen": "2026-06-30",
+    "times_seen": 4,
     "stars_first": 457,
-    "stars_last": 1092
+    "stars_last": 1508
   },
   "winsznx/theeleven": {
     "first_seen": "2026-06-27",
-    "last_seen": "2026-06-29",
-    "times_seen": 3,
+    "last_seen": "2026-06-30",
+    "times_seen": 4,
     "stars_first": 457,
-    "stars_last": 695
+    "stars_last": 714
   },
   "HKUDS/AgentSpace": {
     "first_seen": "2026-06-27",
@@ -2619,10 +2619,10 @@
   },
   "deepseek-ai/DeepSpec": {
     "first_seen": "2026-06-28",
-    "last_seen": "2026-06-29",
-    "times_seen": 2,
+    "last_seen": "2026-06-30",
+    "times_seen": 3,
     "stars_first": 1343,
-    "stars_last": 2226
+    "stars_last": 3876
   },
   "bikini/exploitarium": {
     "first_seen": "2026-06-28",
@@ -2633,9 +2633,37 @@
   },
   "AlexandrosGounis/pdfx": {
     "first_seen": "2026-06-29",
-    "last_seen": "2026-06-29",
-    "times_seen": 1,
+    "last_seen": "2026-06-30",
+    "times_seen": 2,
     "stars_first": 489,
-    "stars_last": 489
+    "stars_last": 564
+  },
+  "Krishnagangwal/CS-Fundamentals": {
+    "first_seen": "2026-06-30",
+    "last_seen": "2026-06-30",
+    "times_seen": 1,
+    "stars_first": 957,
+    "stars_last": 957
+  },
+  "baairon/torlink": {
+    "first_seen": "2026-06-30",
+    "last_seen": "2026-06-30",
+    "times_seen": 1,
+    "stars_first": 659,
+    "stars_last": 659
+  },
+  "yynxxxxx/Codex-5.5-codex-instruct-5.5": {
+    "first_seen": "2026-06-30",
+    "last_seen": "2026-06-30",
+    "times_seen": 1,
+    "stars_first": 507,
+    "stars_last": 507
+  },
+  "Pluviobyte/video-production-skills": {
+    "first_seen": "2026-06-30",
+    "last_seen": "2026-06-30",
+    "times_seen": 1,
+    "stars_first": 444,
+    "stars_last": 444
   }
 }

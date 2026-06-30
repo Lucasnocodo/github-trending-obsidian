@@ -1,64 +1,70 @@
 ---
-repo: AlexandrosGounis/pdfx
-url: https://github.com/AlexandrosGounis/pdfx
-owner: AlexandrosGounis
+repo: baairon/torlink
+url: https://github.com/baairon/torlink
+owner: baairon
 owner_type: User
 language: TypeScript
 license: MIT
-description: "An extension of the traditional PDF standard, allowing multiple files to be stored in a single file via metadata"
-homepage: ""
-stars: 564
-stars_per_day: 113
-forks: 64
-open_issues: 0
-created: 2026-06-24
-pushed_at: 2026-06-28
-first_seen: 2026-06-29
+description: "A sleek, zero-setup torrent finder and downloader that lives right in your terminal."
+homepage: "https://www.npmjs.com/package/torlnk"
+stars: 659
+stars_per_day: 165
+forks: 38
+open_issues: 9
+created: 2026-06-25
+pushed_at: 2026-06-29
+first_seen: 2026-06-30
 week: "2026-W27"
 month: "2026-06"
-category: "開發工具"
-subcategory: "PDF 工具"
+category: "CLI 工具"
+subcategory: "下載工具"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-06-29
-use_case: "將多個文件打包到單一 PDF 檔案中，並保持向後相容性。"
+last_reviewed: 2026-06-30
+use_case: "在終端機中無需設置即可找到和下載 torrent。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-07-07"
 contributor_count: 4
-engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 3214
-readme_length: 1304
+engagement: "low"
+issue_close_rate: 0
+repo_size_kb: 176
+readme_length: 3325
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-06-29"
-star_history: "2026-06-29:489,2026-06-29:490,2026-06-30:564"
+ring_history: "assess@2026-06-30"
+star_history: "2026-06-30:659"
 tags:
   - github
-  - "category/開發工具"
+  - "category/cli_工具"
   - "lang/typescript"
+  - easy_install
+  - "topic/downloader"
+  - "topic/magnet_links"
+  - "topic/p2p"
+  - "topic/torrent"
+  - "topic/torrent_client"
 aliases:
-  - "pdfx"
-  - "AlexandrosGounis/pdfx"
-  - "將多個文件打包到單一 PDF 檔案中，並保持向後相容性。"
+  - "torlink"
+  - "baairon/torlink"
+  - "在終端機中無需設置即可找到和下載 torrent。"
 ---
 
-# pdfx
+# torlink
 
-**490** stars · **123** stars/天 · 建立 4 天前 · TypeScript · MIT
+**659** stars · **165** stars/天 · 建立 4 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/AlexandrosGounis--pdfx");
+const me = dv.page("Repos/baairon--torlink");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -68,21 +74,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
+`easy-install`
+
+`downloader` `magnet-links` `p2p` `torrent` `torrent-client` `zero-configuration`
+
 > [!summary] 一句話摘要
-> 將多個文件打包到單一 PDF 檔案中，並保持向後相容性。
+> 在終端機中無需設置即可找到和下載 torrent。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (123 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Medium
-> **適合** 需要將多個文件整合為一個 PDF 的專業人士，如文檔管理員、設計師或學生。
-> **一句話重點** PDFx 提供了一個簡單而有效的方式來管理多個 PDF 文件，特別適合需要經常處理文檔的專業人士。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (165 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Low
+> **適合** 需要在終端機中快速查找和下載 torrent 的開發者或技術愛好者。
+> **一句話重點** torlink 讓 torrent 的查找和下載變得前所未有的簡單，特別適合不想進行繁瑣設置的用戶。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/baairon--torlink");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "PDF 工具" && p.file.name !== "AlexandrosGounis--pdfx" && p.status !== "archived")
+>     .where(p => p.subcategory === "下載工具" && p.file.name !== "baairon--torlink" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -93,108 +103,104 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 PDF 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 下載工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到簡化的文檔管理，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~1h · **綁定風險** low
+> **結論** 花 1 小時學習和 1 小時整合，能夠快速獲得 torrent 下載的便利，值得一試。
 
 > [!abstract] 核心創新
-> PDFx 是一個向後相容的 PDF 擴展，能夠將多個文件打包到一個單一檔案中。
+> torlink 提供了一個無需設置的終端 torrent 查找和下載解決方案。
 
 ## 專案簡介
 
-PDFx 是一個開放的、向後相容的 PDF 擴展，允許將多個文件打包到單一檔案中，並提供一個簡單的桌面查看器。用戶可以將 `.pdf` 或 `.pdfx` 文件拖放到應用程式中，這些文件會以橫向頁面條的形式顯示，並且可以重新排序或刪除。最終，用戶可以選擇「Export PDF」將整個集合保存為一個文件。這個設計的賣點在於它的簡單性和兼容性，因為 `.pdfx` 文件仍然是有效的 PDF，可以在任何 PDF 閱讀器中打開。技術上，PDFx 使用 Electron、Vite 和 React 開發，並依賴 pdf.js 進行渲染，pdf-lib 用於文件組合，這使得它能夠高效處理多文檔的組合。與其他 PDF 工具相比，如 Adobe Acrobat，PDFx 提供了一個更輕量且開源的選擇，適合需要簡單操作的用戶。
+torlink 是一個在終端機中運行的 torrent 查找和下載工具，設計上強調零設置和簡易使用。用戶只需輸入要查找的內容，torlink 會從一個經過篩選的可信來源列表中檢索結果，並允許用戶直接下載選定的 torrent 文件。關鍵指令是 `npx torlnk`，啟動後用戶可以直接在搜索框中輸入查詢或粘貼磁鏈，並通過簡單的鍵盤操作選擇下載。這種設計使得 torrent 的查找和下載過程變得直觀且高效，避免了傳統網站上的繁瑣操作和假下載按鈕的困擾。
 
-相較於使用傳統 PDF 工具，PDFx 的使用者可以更方便地管理多個文件，並且不需要擔心格式兼容性問題。這個工具的設計考量了用戶的直觀操作，並且在多平台上都能運行，這對於需要跨平台工作的團隊來說非常有利。使用者可能會發現，儘管它功能強大，但在處理非常大的文件集合時可能會遇到性能瓶頸，這是因為所有文件都需要在內存中同時處理。從社群活躍度來看，這個專案在短短幾天內就獲得了 490 顆星，顯示出其潛在的需求和興趣。整體來看，PDFx 是一個值得關注的工具，特別是對於需要經常處理多文檔的用戶。
+技術上，torlink 使用 TypeScript 和 JavaScript 開發，依賴於 `webtorrent` 進行 P2P 下載，並使用 `ink` 來構建終端用戶界面。這樣的選擇使得它在性能上能夠快速響應，且能夠在背景中進行多個下載，並在用戶返回時保持下載狀態。相較於其他 torrent 客戶端，torlink 的優勢在於其簡單性和即時性，特別適合不想進行繁瑣設置的用戶。
 
-**技術棧**：`TypeScript` · `Electron` · `React` · `pdf.js` · `pdf-lib`
+
+
+與其他 torrent 工具相比，如 qBittorrent 和 Transmission，torlink 的優勢在於其無需安裝和配置的特性，並且直接在終端中操作，這對於喜歡命令行的用戶來說非常便利。qBittorrent 雖然功能強大，但需要用戶進行較多的設置，而 Transmission 的界面則不如 torlink 直觀。
+
+在使用效果上，torlink 能夠有效地處理多個下載，並在下載完成後自動開始分享，這樣不僅提高了下載速度，也促進了 P2P 網絡的健康運行。使用者可以隨時查看下載進度和速度，並根據需要暫停或停止分享。社群活躍度方面，目前有 9 個開放的問題，顯示出仍有改進空間，但整體功能已經穩定。
+
+這個專案目前處於 beta 階段，適合個人或小型團隊使用，特別是對於那些需要快速下載 torrent 的開發者或技術愛好者。未來 6 個月內，隨著功能的增強和社群的活躍，torlink 有潛力成為更受歡迎的工具。
+
+**技術棧**：`TypeScript 6.0.3` · `JavaScript` · `webtorrent 2.4.1` · `ink 7.0.5`
 
 ## 重點功能
 
-- 多文件打包 — 將多個 PDF 文件合併為一個 `.pdfx` 文件，並保持原有的 PDF 格式。
-- 簡單的拖放介面 — 用戶可以直接將文件拖入應用程式中，方便快捷。
-- 跨平台支持 — 支援 macOS、Windows 和 Linux，讓用戶在不同系統上都能使用。
-- 導出功能 — 用戶可以將整個文件集合導出為一個單一的 PDF 文件，方便分享。
-- 嵌入的 JSON 清單 — 使用一個簡單的 JSON 清單來管理多個文檔，保持格式的簡單性。
+- 零設置 — 用戶只需執行 `npx torlnk` 即可開始使用，無需任何配置。
+- 多來源搜索 — 同時從多個可信來源檢索結果，確保下載的安全性和有效性。
+- 背景下載 — 下載過程在背景中運行，允許用戶繼續搜索其他內容。
+- 自動分享 — 下載完成後自動開始分享，促進 P2P 網絡的健康運行。
+- 簡單的鍵盤操作 — 用戶可以通過簡單的鍵盤操作選擇下載，無需記憶複雜指令。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 安裝 Node.js
 ```bash
-yarn
+從 https://nodejs.org 下載並安裝 Node.js
 ```
-2. 啟動開發模式
+2. 啟動 torlink
 ```bash
-yarn dev
-```
-3. 打包 macOS 版本
-```bash
-yarn build:mac
-```
-
-## 程式碼範例
-
-```ts
-{
-  "前置條件": "需要安裝 Yarn 和 Node.js",
-  "指令": "yarn dev",
-  "預期輸出": "啟動 PDFx 開發伺服器，並在瀏覽器中打開應用程式。"
-}
+npx torlnk
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天就累積 490 stars（123/天），forks 53（10.8%），顯示出相對健康的社群興趣。作者 Alexandros Gounis 之前有開發相關的開源專案，這次專案解決了傳統 PDF 工具在多文件管理上的不足，提供了一個更簡單的解決方案。短時間內的高關注度可能來自於社群對於開源 PDF 解決方案的需求增加，特別是在需要跨平台支持的情境下。forks/stars 比率為 10.8%，顯示出許多人對這個專案進行了實際的修改和使用，這是一個良好的信號。
+> 建立 4 天就累積 659 stars（165/天），forks 38（5.8%），這顯示出用戶對於這個簡單易用的 torrent 工具的需求。作者 baairon 是一位活躍的開發者，過去在開源社區有多個貢獻。這個工具解決了用戶在尋找和下載 torrent 時的繁瑣流程，尤其是針對那些對於傳統 torrent 客戶端感到困惑的用戶。近期的推廣和社群的討論也促進了其曝光度，吸引了更多用戶的關注。這個工具的出現正好符合了對於簡化下載流程的需求，並且在技術上也能夠有效運行，這使得它在短時間內獲得了大量的關注。
 
 ## 適合誰使用
 
-**目標受眾**：需要將多個文件整合為一個 PDF 的專業人士，如文檔管理員、設計師或學生。
+**目標受眾**：需要在終端機中快速查找和下載 torrent 的開發者或技術愛好者。
 
 > [!example] 使用場景
-> - 文檔管理員用它來將多個報告合併為一個 PDF 文件，因為這樣可以更方便地分享和存檔，避免了多個文件的混亂。
-> - 設計師用它來整合多個設計草稿，因為這樣可以在一次展示中展示所有設計，提升客戶的理解和反饋效率。
-> - 學生用它來將多篇論文合併為一個文件，因為這樣可以簡化提交過程，並確保所有資料都在一個地方。
+> - 獨立開發者用它來快速下載開發所需的資源，因為它能夠在終端中直接搜索和下載，節省了時間。
+> - 小型團隊的成員用它來共享大型文件，因為它支持多個下載並自動分享，提升了團隊協作效率。
+> - 技術愛好者用它來探索各類 torrent 資源，因為其簡單的命令行介面讓他們能夠快速上手，無需繁瑣設置。
 
 ## 架構分析
 
-PDFx 採用 Electron 作為桌面應用的框架，這使得它能夠在多個平台上運行。資料流方面，PDFx 使用 pdf.js 進行 PDF 渲染，並利用 pdf-lib 來組合多個文檔。這種設計選擇使得應用能夠快速響應用戶操作，並且保持較高的效能。選擇 Electron 使得開發者可以使用網頁技術來構建桌面應用，但也帶來了較大的應用體積。擴展性方面，PDFx 的架構允許未來添加更多功能，如對其他文件格式的支持或更複雜的文檔管理功能。
+torlink 的架構設計以簡單性為核心，使用 TypeScript 和 JavaScript 開發，並依賴於 `webtorrent` 進行 P2P 下載。這種設計使得用戶可以在終端中快速啟動並使用，無需繁瑣的安裝過程。資料流方面，使用者的查詢會直接發送到多個可信來源，並根據回應顯示結果，這樣的設計避免了中間伺服器的延遲。
+
+選擇使用 `ink` 來構建終端介面，讓整個操作過程更加直觀。這樣的架構雖然簡單，但在高並發下載時可能會面臨性能瓶頸，特別是在來源伺服器響應較慢的情況下。整體而言，這個設計是為了讓使用者能夠快速上手，並在不影響性能的情況下提供良好的使用體驗。
 
 ## 技術深入分析
 
-PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx` 文件，並使用嵌入的 JSON 清單來管理這些文件。這種設計使得用戶可以在不改變原始 PDF 格式的情況下，方便地管理和導出文件。效能方面，PDFx 能夠處理中等規模的文件集合，但在處理大型文件時可能會遇到性能瓶頸，這是因為所有文件都需要在內存中同時渲染。選擇 Electron 作為開發框架使得 PDFx 能夠利用現有的網頁技術，但也帶來了較大的應用體積和較慢的啟動時間。技術風險方面，隨著用戶數量的增加，可能會面臨性能和穩定性問題，特別是在處理大量文件時。整合方面，PDFx 可以與現有的 PDF 工具鏈相容，但對於需要更高效能的用戶，可能需要考慮其他專業工具。
+torlink 的核心技術機制是基於 `webtorrent`，這使得它能夠直接與 P2P 網絡進行交互，無需依賴中央伺服器。這種設計不僅提高了下載速度，還增強了用戶的隱私保護。效能方面，torlink 能夠同時處理多個下載，並在用戶返回時保持下載狀態，這對於需要快速獲取資源的用戶來說非常重要。設計上選擇 TypeScript 和 JavaScript，這使得開發過程中能夠利用靜態類型檢查來減少錯誤，並且 `ink` 的使用讓終端介面更加友好。這些選擇雖然簡化了開發流程，但在高負載情況下可能會導致性能瓶頸，特別是在多個來源同時響應時。對於未來的擴展，torlink 可能需要考慮如何優化其網絡請求和資料處理流程，以應對更高的使用需求。整合方面，torlink 可以輕鬆地與現有的命令行工具鏈搭配使用，並且不需要額外的依賴，這使得它在開發和測試環境中非常方便。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含了基本的使用範例，安裝過程相對順暢，但需要注意 Node.js 和 Yarn 的安裝。沒有提供多語言支持，對於非英語用戶可能會有些困難。整體來說，花 30 分鐘能夠順利運行起來。
+> README 文件清晰且包含必要的安裝步驟，安裝過程順暢，無明顯坑。提供的指令簡潔易懂，適合新手快速上手。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開源且免費，適合各類用戶使用。
-> - 簡單直觀的用戶介面，降低了使用門檻。
-> - 支持多平台，方便不同系統的用戶使用。
+> - 使用簡單，無需設置，適合新手。
+> - 支持多來源下載，確保資源的可靠性。
+> - 能夠在背景中運行多個下載，提升效率。
 
 > [!danger] 缺點
-> - 對於大型文件集合的處理性能可能不佳。
-> - 目前僅支持 PDF 格式，對其他格式的支持有限。
-> - 需要安裝 Node.js 和 Yarn，對於非技術用戶可能造成困難。
+> - 功能相對簡單，無法滿足高級用戶的需求。
+> - 依賴於特定的 torrent 來源，可能導致資源不全。
+> - 目前社群活躍度較低，問題解決速度可能較慢。
 
 > [!warning] 注意事項
-> - 在處理非常大的文件集合時可能會遇到性能瓶頸。
-> - 目前僅支援 PDF 格式，對其他格式的支持有限。
-> - 需要安裝 Node.js 和 Yarn 作為開發環境。
+> - 僅支援 Node.js 22 以上版本。
+> - 目前僅支持特定的 torrent 來源，可能無法找到所有類型的資源。
+> - 對於需要高級功能的用戶，可能不如傳統的 torrent 客戶端全面。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成多文檔的代理，而 PDFx 則是針對 PDF 文件的管理和整合。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了一個文件管理系統，但不專注於 PDF 格式的整合，PDFx 則專注於 PDF 文件的合併和導出。 |
+| [qbittorrent/qbittorrent](https://github.com/qbittorrent/qbittorrent) | qBittorrent 提供了更全面的功能和圖形界面，但需要較多的設置和配置，適合需要高級功能的用戶。 |
+| [transmission/transmission](https://github.com/transmission/transmission) | Transmission 是一個輕量級的 torrent 客戶端，雖然簡單易用，但不如 torlink 直接在終端中操作方便。 |
 
 ## 替代方案決策
 
@@ -202,24 +208,24 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Adobe Acrobat | Adobe Acrobat 提供了全面的 PDF 編輯和管理功能，而 PDFx 專注於多文檔的合併和簡化操作。 | 如果需要進行高級 PDF 編輯和格式轉換，Adobe Acrobat 是更好的選擇。 | medium，因為需要將文件從 PDFx 轉換為 Adobe 的格式。 |
-| Foxit Reader | Foxit Reader 提供輕量級的 PDF 閱讀和編輯功能，而 PDFx 則專注於多文檔的管理。 | 如果需要一個輕量級的 PDF 閱讀器，Foxit Reader 是不錯的選擇。 | low，因為兩者都支持 PDF 格式，轉換相對簡單。 |
+| [qbittorrent/qbittorrent](https://github.com/qbittorrent/qbittorrent) | qBittorrent 提供了完整的圖形用戶界面和多種高級功能，適合需要全面管理 torrent 的用戶。 | 如果需要高級功能如 RSS 訂閱和遠端控制，qBittorrent 是更好的選擇。 | medium，因為需要重新學習界面和功能。 |
+| [transmission/transmission](https://github.com/transmission/transmission) | Transmission 是一個輕量級的 torrent 客戶端，雖然簡單易用，但不如 torlink 直接在終端中操作方便。 | 如果需要一個輕量級的桌面應用，Transmission 是不錯的選擇。 | low，因為界面簡單，易於上手。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **pdfx** | **Adobe Acrobat** | **Foxit Reader** |
+> | 維度 | **torlink** | **qbittorrent** | **transmission** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Adobe Acrobat 提供了全面的 PDF 編輯和管理功能，而 PDFx 專注於多文檔的合併和簡化操作。 | Foxit Reader 提供輕量級的 PDF 閱讀和編輯功能，而 PDFx 則專注於多文檔的管理。 |
-> | 遷移成本 | - | medium，因為需要將文件從 PDFx 轉換為 Adobe 的格式。 | low，因為兩者都支持 PDF 格式，轉換相對簡單。 |
-> | 適用場景 | 主要場景 | 如果需要進行高級 PDF 編輯和格式轉換，Adobe Acr | 如果需要一個輕量級的 PDF 閱讀器，Foxit Reade |
+> | 技術路線 | 本專案 | qBittorrent 提供了完整的圖形用戶界面和多種高級功能，適合需要全面管理 torrent 的用戶。 | Transmission 是一個輕量級的 torrent 客戶端，雖然簡單易用，但不如 torlink 直接在終端中操作方便。 |
+> | 遷移成本 | - | medium，因為需要重新學習界面和功能。 | low，因為界面簡單，易於上手。 |
+> | 適用場景 | 主要場景 | 如果需要高級功能如 RSS 訂閱和遠端控制，qBittorr | 如果需要一個輕量級的桌面應用，Transmission 是不 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
 > 適合個人試用和小型專案，但不建議用於生產環境的核心路徑上。
@@ -228,41 +234,44 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Linux 上打包時可能會遇到依賴問題
-  - 解法：參考 docs/LINUX_SETUP.md 進行設置
-- [MEDIUM] 在處理大型 PDF 文件時可能會導致應用崩潰
-  - 解法：分割文件後再進行處理
+- [MEDIUM] 某些來源可能會不穩定，導致搜索結果不全
+  - 解法：可以手動檢查來源的可用性
+- [MEDIUM] 下載過程中可能會遇到速度波動
+  - 解法：建議在網絡穩定的環境下使用
+- [low] 對於某些大型文件，下載可能會較慢
+  - 解法：可以考慮使用其他工具進行分段下載
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的文檔管理 | 非常適合 | 簡單的界面和多平台支持使得團隊可以輕鬆管理文件。 |
-| 需要高級 PDF 編輯的專業人士 | 不適合 | 缺乏高級編輯功能，無法滿足專業需求。 |
-| 學生的論文提交 | 適合 | 能夠將多篇論文合併為一個文件，簡化提交過程。 |
+| 小型團隊的文件共享 | 非常適合 | 支持多個同時下載，方便團隊協作。 |
+| 個人開發者的資源獲取 | 適合 | 簡單易用，能快速獲取所需資源。 |
+| 需要高級 torrent 功能的用戶 | 不適合 | 功能較為簡單，無法滿足高級需求。 |
+| 對於不熟悉終端的用戶 | 普通 | 雖然簡單，但仍需一定的命令行基礎。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
+| 學習時間 | ~1 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到簡化的文檔管理，值得一試。
+> 花 1 小時學習和 1 小時整合，能夠快速獲得 torrent 下載的便利，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：PDFx 本身不需要高權限，且不存取敏感資料，但需注意依賴的第三方庫的安全性。
+> 低風險：torlink 不需要高權限，且所有下載都直接通過 P2P 網絡進行，不會存取敏感資料。依賴鏈的信任程度相對較高，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/baairon--torlink");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -297,7 +306,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/baairon--torlink");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -321,102 +330,135 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 53 |
-| Open Issues | 0 |
-| 最後推送 | 2026-06-28 |
-| 建立日期 | 2026-06-24 |
-| Repo 大小 | 3.1 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/AlexandrosGounis/pdfx) |
+| Forks | 38 |
+| Open Issues | 9 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-06-29 |
+| 建立日期 | 2026-06-25 |
+| 官方網站 | [Link](https://www.npmjs.com/package/torlnk) |
+| Repo 大小 | 176 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/baairon/torlink) |
+| Topics | `downloader` `magnet-links` `p2p` `torrent` `torrent-client` `zero-configuration` |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `@electron-toolkit/preload` `@electron-toolkit/utils` `@electron-toolkit/tsconfig` `@types/node` `@types/react` `@types/react-dom` `@types/d3-selection` `@types/d3-zoom` `@vitejs/plugin-react` `d3-selection` `d3-zoom` `electron` `electron-builder` `electron-vite` `fflate`
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "TypeScript" : 85
->     "CSS" : 10
->     "Objective-C++" : 3
->     "Shell" : 1
->     "JavaScript" : 1
-> ```
+> `env-paths` `ink` `parse-torrent` `react` `webtorrent` `@types/node` `@types/react` `ink-testing-library` `tsup` `tsx` `typescript` `vitest`
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@AlexandrosGounis](https://github.com/AlexandrosGounis) | 10 |
-> | [@ArcanConsulting](https://github.com/ArcanConsulting) | 1 |
-> | [@ShreySavsani](https://github.com/ShreySavsani) | 1 |
-> | [@mauitaxes](https://github.com/mauitaxes) | 1 |
+> | [@baairon](https://github.com/baairon) | 15 |
+> | [@pirafrank](https://github.com/pirafrank) | 1 |
+> | [@LeBaronDeCharlus](https://github.com/LeBaronDeCharlus) | 1 |
+> | [@oskarkrawczyk](https://github.com/oskarkrawczyk) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度良好，短時間內獲得了不少關注和貢獻。
+**社群活躍度**：社群活躍度一般，開放的問題數量為 9，顯示出仍有改進空間。
+**連結**：[文件](https://github.com/baairon/torlink#readme)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-17 ~ 2026-06-28）
-> **活躍天數** 6 天 · **最新 commit** Cleans up labels (#4)
+> [!abstract] 最近 10 次 commit（2026-06-29 ~ 2026-06-29）
+> **活躍天數** 1 天 · **最新 commit** chore: switch funding to github sponsors
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#13](https://github.com/baairon/torlink/issues/13) | Branding. Nothing to do with Tor | 0 | 0 |
+> | [#11](https://github.com/baairon/torlink/issues/11) | Docker Container Support | 0 | 0 |
+> | [#10](https://github.com/baairon/torlink/issues/10) | VPN Support | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # PDFx
+> Finding a torrent these days sucks. One site is a minefield of fake download buttons. Another hides the real link under a popup that spawns two more tabs. And after all that, half the results are dead, zero seeders.
 > 
-> **One file. Many documents. Still a PDF.**
+> torlink is a torrent finder that lives in your terminal, with zero setup and nothing to configure. One search checks a short, curated list of reputable sources at once, and whatever you pick downloads straight to your computer. The files are yours, saved to your downloads folder.
+> 
+> ## Get started
+> 
+> 1. **Install Node** (from [nodejs.org](https://nodejs.org)), it's all torlink needs.
+> 2. **Open your terminal.**
+> 3. **Start it:**
+> 
+>    ```sh
+>    npx torlnk
+>    ```
+> 
+> That's the only thing you'll type. torlink opens straight to a search bar: search for what you want, paste in a magnet link, or just press Enter on an empty box to browse the curated library. From there it's all keypresses, nothing to memorize, and `?` brings up the full list anytime.
+> 
+> ## Finding something
+> 
+> Type what you're looking for and press Enter. Results stream in from every source as they answer, tagged with size and how many people are sharing each one, so you can see what'll come down fast. Arrow to what you want and press `d` to save it.
 > 
 >   
 > 
-> [](LICENSE)
-> &nbsp;
-> [](#)
-> &nbsp;
-> [](SPEC.md)
+> ## Your downloads
 > 
-> ## What it is
+> Active downloads sit up top with their progress, speed, and time left; when one finishes it drops into Recently downloaded just below, so the list stays tidy. Everything's still there when you come back, and anything interrupted picks up where it left off.
 > 
-> PDFx is an open, backwards compatible extension of PDF that bundles many documents into a single file, plus a minimal desktop viewer for macOS, Windows, and Linux.
+> Downloads run in the background while you keep searching, so you can queue up as many as you want. They save to your downloads folder, and the Downloads pane keeps tabs on each one. When something finishes it keeps seeding automatically so the next person can find it too, and the Seeding tab lets you pause or stop that anytime.
 > 
-> A `.pdfx` file is a fully valid PDF: open it anywhere and every page shows in sequence. Open it in PDFx and it splits back into the original documents. Plain single PDFs work as they are.
+>   
 > 
-> Drag and drop `.pdf` or `.pdfx` files anywhere in the window. Each document renders as a horizontal strip of pages, and documents stack vertically. Reorder or remove them, then **Export PDF** to save the whole collection as one file.
+> ## What it searches
 > 
-> See [SPEC.md](SPEC.md) for the format. It is short: the entire trick is one embedded JSON manifest.
+> A short, hand-picked list of trusted sources:
 > 
-> ## How to run
+> | Category | Sources |
+> | --- | --- |
+> | Games | FitGirl |
+> | Movies | YTS, The Pirate Bay, 1337x |
+> | TV | EZTV, SolidTorrents, The Pirate Bay, 1337x |
+> | Anime | Nyaa, SubsPlease |
 > 
-> Built with Electron, Vite, TypeScript, and React. PDF rendering by [pdf.js](https://mozilla.github.io/pdf.js/), assembly by [pdf-lib](https://pdf-lib.js.org/).
+> Games are the only category that can run code, so they come from FitGirl alone, a repacker with a long, trusted track record; everything else is plain video and subtitles. If a source is down, the search carries on without it, and torlink tells you which one is offline.
 > 
-> ```bash
-> yarn              # install
-> yarn dev          # run in development
-> yarn build:mac    # package for macOS
-> yarn build:win    # package for Windows
-> yarn build:linux  # package for Linux
-> ```
+> ## Contributing
 > 
-> *Linux packaging notes (formats, Flatpak, prerequisites) live in [docs/LINUX_SETUP.md](docs/LINUX_SETUP.md).*
+> To run or work on torlink locally:
 > 
-> ## License
+> 1. Clone the repository and open the folder.
+> 2. Install dependencies:
+>    ```sh
+>    npm install
+>    ```
+> 3. Run the development version:
+>    ```sh
+>    npm run dev
+>    ```
+>    Or build it and run the bundled version:
+>    ```sh
+>    npm run build
+>    npx torlnk
+>    ```
 > 
-> MIT
+> Before opening a PR, skim [CONTRIBUTING.md](CONTRIBUTING.md); it lays out the bar with examples from real merged PRs.
+> 
+> ## Privacy
+> 
+> Your files stay on your disk, and nothing routes through a central server; torlink only talks to the torrent network directly. Once a download finishes it keeps seeding by default, sharing it back so the next person can find it just as easily. The network only works because people pass things along, and even a few minutes makes a real difference. If you'd rather not, opt out anytime: open the Seeding tab, press `p` to pause or stop any item, and press it again to pick it back up. Always your call.
+> 
+> ## Star History
 
 ## 延伸閱讀
 
-相關概念：[[PDF]] · [[文件管理]] · [[跨平台應用]]
+相關概念：[[P2P]] · [[CLI/TUI]] · [[下載管理]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]]
+相關專案：[[pixel-point--media-downloader|pixel-point/media-downloader]] · [[MayersScott--rkn-block-checker|MayersScott/rkn-block-checker]] · [[Narcooo--inkos|Narcooo/inkos]]
 
-[GitHub](https://github.com/AlexandrosGounis/pdfx)
+[GitHub](https://github.com/baairon/torlink) · [官方網站](https://www.npmjs.com/package/torlnk)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：PDF 工具）
+> [!note]- 直接競品（同子分類：下載工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "PDF 工具" AND file.name != "AlexandrosGounis--pdfx"
+> WHERE subcategory = "下載工具" AND file.name != "baairon--torlink"
 > SORT stars DESC
 > ```
 
@@ -424,7 +466,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "AlexandrosGounis--pdfx"
+> WHERE category = "CLI 工具" AND file.name != "baairon--torlink"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -433,7 +475,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "AlexandrosGounis--pdfx" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "baairon--torlink" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -442,15 +484,15 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W27" AND file.name != "AlexandrosGounis--pdfx"
+> WHERE week = "2026-W27" AND file.name != "baairon--torlink"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["PDF","文件管理","跨平台應用"];
+> const concepts = ["P2P","CLI/TUI","下載管理"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "AlexandrosGounis--pdfx" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "baairon--torlink" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -463,12 +505,12 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/baairon--torlink");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "AlexandrosGounis--pdfx" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "baairon--torlink" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -484,7 +526,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "AlexandrosGounis" AND file.name != "AlexandrosGounis--pdfx"
+> WHERE owner = "baairon" AND file.name != "baairon--torlink"
 > SORT stars DESC
 > ```
 
@@ -492,7 +534,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/baairon--torlink");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -509,7 +551,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/baairon--torlink");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -542,7 +584,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/baairon--torlink");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -566,7 +608,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/baairon--torlink");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -603,7 +645,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/AlexandrosGounis--pdfx");
+> const me = dv.page("Repos/baairon--torlink");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -686,7 +728,7 @@ PDFx 的核心技術機制是將多個 PDF 文件整合為一個單一的 `.pdfx
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-06-29** — 首次收錄
+> **2026-06-30** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -702,5 +744,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-06-30|2026-06-30]] — 再次上榜，564 stars
-- [[2026-06-29|2026-06-29]] — 首次收錄，489 stars
+- [[2026-06-30|2026-06-30]] — 首次收錄，659 stars
