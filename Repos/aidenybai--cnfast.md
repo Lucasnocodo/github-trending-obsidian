@@ -7,10 +7,10 @@ language: TypeScript
 license: NOASSERTION
 description: "Fast drop in replacement for `cn`"
 homepage: ""
-stars: 1002
-stars_per_day: 111
+stars: 1029
+stars_per_day: 103
 forks: 10
-open_issues: 8
+open_issues: 9
 created: 2026-06-19
 pushed_at: 2026-06-22
 first_seen: 2026-06-23
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-23
-use_case: "提供一個快速的 `cn` 替代方案，提升 Tailwind CSS 的類別合併效能。"
+use_case: "提供 `cn` 的快速替代方案，提升 Tailwind CSS 的性能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 4
 next_review: "2026-07-03"
 contributor_count: 3
 engagement: "low"
-issue_close_rate: 11
+issue_close_rate: 10
 repo_size_kb: 2320
 readme_length: 3440
 bus_factor: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-23"
-star_history: "2026-06-23:664,2026-06-23:665,2026-06-24:790,2026-06-24:792,2026-06-25:880,2026-06-25:881,2026-06-26:933,2026-06-26:934,2026-06-27:964,2026-06-28:984,2026-06-29:1002"
+star_history: "2026-06-23:664,2026-06-23:665,2026-06-24:790,2026-06-24:792,2026-06-25:880,2026-06-25:881,2026-06-26:933,2026-06-26:934,2026-06-27:964,2026-06-28:984,2026-06-29:1002,2026-06-30:1029"
 tags:
   - github
   - "category/開發工具"
@@ -54,12 +54,12 @@ tags:
 aliases:
   - "cnfast"
   - "aidenybai/cnfast"
-  - "提供一個快速的 `cn` 替代方案，提升 Tailwind CSS 的類別合併效能。"
+  - "提供 `cn` 的快速替代方案，提升 Tailwind CSS 的性能。"
 ---
 
 # cnfast
 
-**1.0k** stars · **111** stars/天 · 建立 9 天前 · TypeScript · NOASSERTION
+**1.0k** stars · **103** stars/天 · 建立 10 天前 · TypeScript · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/aidenybai--cnfast");
@@ -77,13 +77,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `clsx` `cn` `tailwindcss`
 
 > [!summary] 一句話摘要
-> 提供一個快速的 `cn` 替代方案，提升 Tailwind CSS 的類別合併效能。
+> 提供 `cn` 的快速替代方案，提升 Tailwind CSS 的性能。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (111 stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 6 天前) · **貢獻者** 3 人 · **參與度** Low
-> **適合** 需要提升 Tailwind CSS 類別合併性能的前端開發者，特別是在大型或動態更新的應用中。
-> **一句話重點** cnfast 的性能優化使其成為需要高效能的 Tailwind CSS 使用者的理想選擇。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (103 stars/day)
+> **授權** NOASSERTION · **維護** Active (最後推送 7 天前) · **貢獻者** 3 人 · **參與度** Low
+> **適合** 需要在大型 Tailwind CSS 專案中提升性能的前端開發者。
+> **一句話重點** cnfast 的性能優化設計讓它在大型 Tailwind CSS 專案中成為不可或缺的工具。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -106,27 +106,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到顯著的性能提升，值得採用。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，1 小時整合，得到顯著的性能提升，值得嘗試。
 
 > [!abstract] 核心創新
-> cnfast 提供了比現有解決方案更快的類別合併性能，特別是在重渲染的場景中。
+> cnfast 在性能上比 tailwind-merge 快 3.8 倍，並且提供相同的輸出結果。
 
 ## 專案簡介
 
-cnfast 是一個針對 Tailwind CSS 的類別合併工具，設計為 `cn` 的快速替代品。它的核心機制是透過優化的演算法來加速類別合併過程，實現平均 3.8 倍的速度提升，對於組件密集的代碼，速度提升可達 7 倍。使用者只需將 `cn` 的引用替換為 `cnfast`，即可享受相同的 API 並獲得更快的性能。安裝過程簡單，只需執行 `npm install cnfast`，並可透過 `npx cnfast migrate` 一鍵遷移現有的 `clsx` 或 `tailwind-merge` 專案。技術上，cnfast 使用了 V8 引擎的優化特性，對於重複調用的情況，能夠顯著減少運算時間，特別是在需要頻繁重渲染的應用中。
+cnfast 是一個快速的 `cn` 替代方案，專為 Tailwind CSS 設計，能在不改變 API 的情況下，提供高達 7 倍的性能提升。使用者只需將原有的 `cn` 替換為 `cnfast`，即可享受更快的運算速度，特別是在重組件的情況下，cnfast 在 V8 引擎上表現出色，能達到 8,709 ops/s 的性能。這個工具的核心機制是透過優化的緩存機制，減少重複計算，並且在多次渲染相同類別時，顯著降低性能損耗。使用者可以透過 `npx cnfast migrate` 一鍵遷移現有的 `clsx` 或 `tailwind-merge` 專案，簡化過渡過程。cnfast 的設計選擇使其在大型應用中表現優異，尤其是在需要頻繁渲染的情境下。
 
-與 `tailwind-merge` 相比，cnfast 在多個性能基準測試中表現更佳，尤其是在處理大量重複類別時，能夠顯著降低渲染延遲。這使得它特別適合用於需要高效能的前端應用，如數據網格或即時更新的儀表板。雖然目前的安裝包大小為 9.43 KB，略大於基準的 8.45 KB，但其性能優勢明顯。使用者在選擇時應考慮到這些性能提升是否符合他們的需求，尤其是在大型應用中。整體而言，cnfast 是一個成熟且值得考慮的選擇，特別是對於需要高效能的 Tailwind CSS 使用者。
+與其他同類工具相比，cnfast 的性能提升顯著，特別是在重渲染時，這使得它在需要高效能的前端應用中更具吸引力。雖然目前存在一些開發者反映的安裝大小問題，但整體來說，cnfast 提供了更佳的性能和相容性。這個專案仍在快速發展中，未來可能會進一步優化配置和擴展功能。適合需要高效能 Tailwind CSS 解決方案的開發者，尤其是大型專案或頻繁更新的應用。
 
-**技術棧**：`TypeScript` · `Shell` · `JavaScript`
+**技術棧**：`TypeScript` · `Node.js >=22` · `pnpm >=8`
 
 ## 重點功能
 
-- 性能優化 — cnfast 平均速度提升 3.8 倍，對於重複調用可達 7 倍。
-- 簡單遷移 — 透過 `npx cnfast migrate` 一鍵遷移現有專案。
-- 相容性 — 提供與 `clsx` 和 `tailwind-merge` 相同的 API，無需修改現有代碼。
-- 標記模板支持 — 作為標記模板使用時，能夠在穩定的調用位置上進一步提升性能。
-- 無錯誤輸出 — 生成的類別輸出與 `tailwind-merge` 完全相同，確保兼容性。
+- 性能提升 — cnfast 在多次渲染相同類別時，能達到最高 7 倍的性能提升。
+- 簡單遷移 — 使用 `npx cnfast migrate` 一鍵遷移現有的 clsx 或 tailwind-merge 專案。
+- API 相容性 — 與原有的 `cn` API 完全相容，無需修改現有代碼。
+- 緩存機制 — 透過緩存重複計算的結果，提升渲染速度。
+- 可擴展性 — 支援自定義 Tailwind 配置，適合不同專案需求。
 
 ## 快速開始
 
@@ -138,7 +138,7 @@ npm install cnfast
 ```bash
 npx cnfast migrate
 ```
-3. 在代碼中替換 cn 的引用
+3. 使用 cnfast 替換 cn
 ```bash
 export { cn } from 'cnfast';
 ```
@@ -146,63 +146,64 @@ export { cn } from 'cnfast';
 ## 程式碼範例
 
 ```ts
-{
-  "前置條件": "已安裝 cnfast",
-  "指令": "import { cn } from 'cnfast';\ncn('px-2 py-1', isActive && 'px-4', { 'text-red-500': hasError });",
-  "預期輸出": "\"py-1 px-4 text-red-500\""
-}
+[
+  "# 使用 cnfast 替代 cn 的範例",
+  "import { cn } from 'cnfast';",
+  "cn('px-2 py-1', isActive && 'px-4', { 'text-red-500': hasError });",
+  "# 預期輸出：'py-1 px-4 text-red-500'"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 9 天內累積 1002 stars（111/天），forks 10（1.0%），顯示出穩定的增長趨勢。作者 aidenybai 之前在開源社群有活躍貢獻，這個專案解決了現有 `tailwind-merge` 性能不足的痛點，特別是在需要頻繁更新的前端應用中。社群對於性能的需求加上這個工具的優化，使得它迅速受到關注。近期的社群討論集中在安裝大小和自定義配置的支持上，顯示出使用者對於性能和靈活性的重視。
+> 建立 10 天就累積 1029 stars（103/天），forks 10（1.0%），這顯示出穩定的增長趨勢。作者 aidenybai 之前在開源社群中活躍，這次推出的 cnfast 解決了 tailwind-merge 性能不足的痛點，特別是在大型應用中，這類性能優化的需求非常迫切。社群對於性能的關注和需求，促使了這個專案的快速成長。
 
 ## 適合誰使用
 
-**目標受眾**：需要提升 Tailwind CSS 類別合併性能的前端開發者，特別是在大型或動態更新的應用中。
+**目標受眾**：需要在大型 Tailwind CSS 專案中提升性能的前端開發者。
 
 > [!example] 使用場景
-> - 前端工程師用它來加速大型應用中的 Tailwind CSS 類別合併，因為 cnfast 在重渲染時的性能提升可達 7 倍，顯著減少了頁面延遲。
-> - 開發者用它來簡化現有的 `clsx` 或 `tailwind-merge` 專案，因為只需一條命令 `npx cnfast migrate` 即可完成遷移，節省了大量的重構時間。
-> - UI 設計師用它來提升設計系統的性能，因為 cnfast 在處理大量組件時能保持流暢的用戶體驗，特別是在數據驅動的界面中。
+> - 前端工程師用它來提升大型應用的渲染性能，因為 cnfast 在重渲染時的速度提升可達 4.3 倍，顯著改善用戶體驗。
+> - 開發者用它來簡化 Tailwind CSS 的類別合併，因為一鍵遷移功能讓從 clsx 或 tailwind-merge 過渡變得輕鬆。
+> - UI 設計師用它來優化設計系統的性能，因為 cnfast 在多次渲染相同組件時能有效減少性能損耗。
 
 ## 架構分析
 
-cnfast 的架構設計以性能為核心，使用了 V8 引擎的優化特性來加速類別合併過程。它的資料流從用戶輸入的類別開始，經過優化的合併算法，最終生成合併後的類別字串。這種設計使得在重複調用的情況下，能夠顯著減少計算時間，特別適合用於需要頻繁更新的前端應用。選擇使用 TypeScript 和現有的 clsx、tailwind-merge 代碼基礎，降低了開發成本，但也帶來了安裝包大小的增加。整體而言，cnfast 在性能和可用性之間取得了良好的平衡，適合大多數前端開發場景。
+cnfast 採用模組化設計，主要由 TypeScript 實作，並使用 pnpm 作為包管理工具。其架構設計重點在於性能優化，通過緩存機制來減少重複計算，從而提升渲染速度。資料流上，cnfast 會在每次調用時檢查輸入類別，並根據緩存結果進行快速合併，這樣的設計使得在重渲染的情境下能夠顯著降低性能損耗。選擇 TypeScript 使得代碼更具可維護性和可擴展性，但也增加了學習成本。整體而言，cnfast 的設計使其在大型應用中表現優異，但在小型專案中可能無法充分發揮其優勢。
 
 ## 技術深入分析
 
-cnfast 的核心技術機制是基於 V8 引擎的優化，透過改進的類別合併算法來提升性能。它能夠在多個性能基準測試中表現出色，特別是在處理重複類別的情況下，顯示出 3.8 倍的速度提升。這些性能優勢使得 cnfast 特別適合用於需要頻繁更新的前端應用，如數據網格或即時更新的儀表板。選擇 TypeScript 作為開發語言，讓開發過程更為順暢，但也增加了安裝包的大小。技術風險方面，cnfast 目前的安裝包大小可能會影響某些使用者的選擇，特別是在對性能有高要求的應用中。整合方面，cnfast 與現有的前端工具鏈相容性良好，能夠輕鬆融入現有的開發流程，無需重構大量代碼。整體而言，cnfast 是一個值得考慮的高效能類別合併工具，特別適合大型或動態更新的應用。
+cnfast 的核心技術機制在於其優化的緩存策略，這使得在多次渲染相同類別時能夠顯著提升性能。它使用了 TypeScript 進行開發，這不僅提高了代碼的可讀性，也使得未來的擴展變得更加容易。根據測試數據，cnfast 在 V8 引擎上能達到 8,709 ops/s 的性能，這對於需要頻繁渲染的應用來說是個巨大的優勢。設計上，cnfast 透過緩存重複計算的結果，降低了性能損耗，這在大型應用中尤為明顯。雖然使用 TypeScript 增加了一定的學習曲線，但這也使得代碼在長期維護上更具優勢。未來的擴展可能會集中在進一步減少安裝大小和增強配置靈活性上。整體而言，cnfast 提供了一個高效能的解決方案，特別適合需要高頻渲染的前端應用。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了安裝和使用範例，讓新手能夠快速上手。安裝過程相對順暢，無明顯的坑。文件中有詳細的遷移指南，對於從其他工具轉換的使用者非常友好。
+> README 文件清晰，提供了安裝和使用範例；安裝過程順暢，無明顯坑；有良好的入門指南，適合新手快速上手；文件目前僅提供英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 性能顯著提升，特別是在重渲染的場景中。
+> - 性能顯著提升，特別是在重渲染情境下。
 > - 簡單的遷移過程，降低了使用門檻。
-> - 與現有工具的相容性高，無需大幅修改代碼。
+> - API 相容性高，無需大幅修改現有代碼。
 
 > [!danger] 缺點
-> - 安裝包大小較大，可能影響某些使用者的選擇。
-> - 尚未支持自定義的 tailwind-merge 配置。
-> - 對於小型應用，性能提升可能不明顯。
+> - 安裝大小較大，可能影響初次下載時間。
+> - 對於小型專案，性能提升不明顯。
+> - 目前社群活躍度較低，解決問題的資源有限。
 
 > [!warning] 注意事項
-> - 目前尚未支持自定義的 tailwind-merge 配置。
-> - 安裝包大小較大，可能影響某些使用者的選擇。
-> - 對於小型或不頻繁更新的頁面，性能提升可能不明顯。
+> - 安裝大小較大，約為 tailwind-merge 的兩倍。
+> - 目前不支援自定義 tailwind-merge 配置。
+> - 對於小型專案，性能提升不明顯。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [dcastil/tailwind-merge](https://github.com/dcastil/tailwind-merge) | tailwind-merge 是一個成熟的類別合併工具，但在性能上不如 cnfast，特別是在重複調用的情況下。 |
-| [lukeed/clsx](https://github.com/lukeed/clsx) | clsx 提供類別合併功能，但缺乏 cnfast 的性能優化，對於需要高效能的應用來說，cnfast 是更好的選擇。 |
+| [dcastil/tailwind-merge](https://github.com/dcastil/tailwind-merge) | tailwind-merge 使用傳統的合併方式，性能較低，特別是在重渲染時，cnfast 提供更快的速度和更好的性能。 |
+| [lukeed/clsx](https://github.com/lukeed/clsx) | clsx 主要用於類別合併，但在性能上不如 cnfast，特別是在大型應用中。 |
 
 ## 替代方案決策
 
@@ -210,47 +211,47 @@ cnfast 的核心技術機制是基於 V8 引擎的優化，透過改進的類別
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [dcastil/tailwind-merge](https://github.com/dcastil/tailwind-merge) | tailwind-merge 使用傳統的類別合併算法，性能上不如 cnfast，特別是在重複調用的情況下。 | 如果你的專案不需要高頻率的類別合併，tailwind-merge 仍然是一個穩定的選擇。 | low，因為 tailwind-merge 的 API 與 cnfast 相似，遷移成本低。 |
-| [lukeed/clsx](https://github.com/lukeed/clsx) | clsx 提供了基本的類別合併功能，但缺乏 cnfast 的性能優化，對於需要高效能的應用來說，cnfast 是更好的選擇。 | 如果你的專案對性能要求不高，clsx 仍然是一個簡單易用的選擇。 | medium，因為需要重構現有的類別合併邏輯。 |
+| [dcastil/tailwind-merge](https://github.com/dcastil/tailwind-merge) | tailwind-merge 使用傳統的合併方式，性能較低，特別是在重渲染時。 | 如果你的專案不需要高頻渲染，tailwind-merge 可能已經足夠。 | low，因為兩者 API 相似。 |
+| [lukeed/clsx](https://github.com/lukeed/clsx) | clsx 主要用於類別合併，但在性能上不如 cnfast，特別是在大型應用中。 | 如果你的專案需要簡單的類別合併，clsx 是個不錯的選擇。 | medium，因為需要重構部分代碼。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **cnfast** | **tailwind-merge** | **clsx** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | tailwind-merge 使用傳統的類別合併算法，性能上不如 cnfast，特別是在重複調用的情況下。 | clsx 提供了基本的類別合併功能，但缺乏 cnfast 的性能優化，對於需要高效能的應用來說，cnfast 是更好的選擇。 |
-> | 遷移成本 | - | low，因為 tailwind-merge 的 API 與 cnfast 相似，遷移成本低。 | medium，因為需要重構現有的類別合併邏輯。 |
-> | 適用場景 | 主要場景 | 如果你的專案不需要高頻率的類別合併，tailwind-mer | 如果你的專案對性能要求不高，clsx 仍然是一個簡單易用的選 |
+> | 技術路線 | 本專案 | tailwind-merge 使用傳統的合併方式，性能較低，特別是在重渲染時。 | clsx 主要用於類別合併，但在性能上不如 cnfast，特別是在大型應用中。 |
+> | 遷移成本 | - | low，因為兩者 API 相似。 | medium，因為需要重構部分代碼。 |
+> | 適用場景 | 主要場景 | 如果你的專案不需要高頻渲染，tailwind-merge 可 | 如果你的專案需要簡單的類別合併，clsx 是個不錯的選擇。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人專案試用，尚未建議用於生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 安裝包大小較大，可能影響某些使用者的選擇
-  - 解法：考慮使用更小的替代方案，如 clsx 或 tailwind-merge
-- **[HIGH]** 尚未支持自定義的 tailwind-merge 配置
-  - 解法：等待未來版本更新，或考慮使用其他工具
-- [low] 對於小型應用，性能提升可能不明顯
-  - 解法：在大型或動態更新的應用中使用 cnfast，以獲得最佳效果
+- **[HIGH]** 安裝大小過大，可能影響初次下載時間
+  - 解法：考慮使用更小的替代方案，如 tailwind-merge
+- [MEDIUM] 對於小型專案，性能提升不明顯
+  - 解法：在小型專案中使用 clsx 可能更合適
+- [MEDIUM] 社群活躍度低，解決問題的資源有限
+  - 解法：參考官方文檔和 GitHub Issues 尋找解決方案
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 大型前端應用的類別合併 | 非常適合 | cnfast 提供了顯著的性能提升，特別是在重渲染的場景中。 |
-| 小型靜態網站 | 不適合 | 對於小型應用，性能提升可能不明顯，且安裝包大小較大。 |
-| 需要頻繁更新的數據驅動應用 | 非常適合 | cnfast 在重複調用的情況下能顯著提升性能，保持流暢的用戶體驗。 |
-| 現有使用 clsx 的專案 | 適合 | 透過簡單的遷移過程，能夠快速提升性能。 |
+| 大型前端應用，需頻繁渲染的資料表 | 非常適合 | cnfast 在重渲染時性能優越，能顯著提升用戶體驗。 |
+| 小型專案，偶爾更新的靜態頁面 | 不適合 | 性能提升不明顯，使用 clsx 更為合適。 |
+| 需要快速遷移現有 Tailwind 專案 | 適合 | 提供一鍵遷移功能，簡化過渡過程。 |
+| 需要高性能的 UI 設計系統 | 非常適合 | cnfast 的性能優化設計能滿足高效能需求。 |
 
 ## 採用成本分析
 
@@ -259,15 +260,27 @@ cnfast 的核心技術機制是基於 V8 引擎的優化，透過改進的類別
 | 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到顯著的性能提升，值得採用。
+> 花 2 小時學習，1 小時整合，得到顯著的性能提升，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：cnfast 本身不需要高權限，且不存取敏感資料，適合在 CI/CD 中使用。
+> 低風險：cnfast 本身不需要高權限，且不存取敏感資料，依賴鏈信任程度高，適合在 CI/CD 中使用。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+cnfast 通常與 Tailwind CSS 一起使用，作為類別合併的工具。在一個使用 Next.js 的專案中，開發者可以將 cnfast 作為類別合併的解決方案，具體做法是將 `cn` 替換為 `cnfast`。它與主流的 CI 工具（如 GitHub Actions）相容，並且可以輕鬆整合到現有的開發流程中。整合的摩擦點主要在於安裝大小和配置的靈活性，這可能需要一些額外的調整。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 cnfast 出現之前，開發者主要依賴 clsx 和 tailwind-merge 來處理 Tailwind CSS 的類別合併，但這些工具在性能上存在瓶頸。隨著前端應用對性能的需求不斷上升，cnfast 的出現正好填補了這一空白。這個工具代表了前端性能優化的趨勢，未來可能會有更多類似的解決方案出現。
 
 ## 健康度儀表板
 
@@ -333,8 +346,8 @@ cnfast 的核心技術機制是基於 V8 引擎的優化，透過改進的類別
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 10 |
-| Open Issues | 8 |
-| Issue 解決率 | 11% (1 closed) |
+| Open Issues | 9 |
+| Issue 解決率 | 10% (1 closed) |
 | 最後推送 | 2026-06-22 |
 | 建立日期 | 2026-06-19 |
 | Repo 大小 | 2.3 MB |
@@ -361,7 +374,7 @@ cnfast 的核心技術機制是基於 V8 引擎的優化，透過改進的類別
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者持續回應問題與更新。
+**社群活躍度**：社群活躍度中等，最近有更新，但開放問題解決率低。
 **連結**：[文件](https://npmjs.com/package/cnfast)
 
 ## 開發動態
@@ -374,9 +387,10 @@ cnfast 的核心技術機制是基於 V8 引擎的優化，透過改進的類別
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#5](https://github.com/aidenybai/cnfast/issues/5) | Big install size (2x of tailwind-merge + clsx) | 41 | 0 |
-> | [#6](https://github.com/aidenybai/cnfast/issues/6) | Support for custom tailwind-merge configuration | 13 | 1 |
+> | [#5](https://github.com/aidenybai/cnfast/issues/5) | Big install size (2x of tailwind-merge + clsx) | 45 | 0 |
+> | [#6](https://github.com/aidenybai/cnfast/issues/6) | Support for custom tailwind-merge configuration | 15 | 1 |
 > | [#8](https://github.com/aidenybai/cnfast/issues/8) | Expose config extension (custom classGroups) for projects wi | 4 | 1 |
+> | [#12](https://github.com/aidenybai/cnfast/issues/12) | Is it compatible with UnoCSS? | 0 | 0 |
 
 ## README 摘錄
 
@@ -477,7 +491,7 @@ cnfast 的核心技術機制是基於 V8 引擎的優化，透過改進的類別
 
 ## 延伸閱讀
 
-相關概念：[[CSS 工具]] · [[性能優化]] · [[前端開發]]
+相關概念：[[性能優化]] · [[CSS-in-JS]] · [[前端框架]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlpinDale--parsync|AlpinDale/parsync]]
 
@@ -521,7 +535,7 @@ cnfast 的核心技術機制是基於 V8 引擎的優化，透過改進的類別
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["CSS 工具","性能優化","前端開發"];
+> const concepts = ["性能優化","CSS-in-JS","前端框架"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "aidenybai--cnfast" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
