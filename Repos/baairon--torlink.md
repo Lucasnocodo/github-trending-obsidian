@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "A sleek, zero-setup torrent finder and downloader that lives right in your terminal."
 homepage: "https://www.npmjs.com/package/torlnk"
-stars: 672
-stars_per_day: 168
-forks: 38
-open_issues: 10
+stars: 1693
+stars_per_day: 339
+forks: 105
+open_issues: 14
 created: 2026-06-25
-pushed_at: 2026-06-29
+pushed_at: 2026-06-30
 first_seen: 2026-06-30
 week: "2026-W27"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "在終端機中無需設置即可找到和下載 torrent。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-07"
+appearances: 2
+next_review: "2026-07-04"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-30"
-star_history: "2026-06-30:659,2026-06-30:672"
+star_history: "2026-06-30:659,2026-06-30:672,2026-07-01:1693"
 tags:
   - github
   - "category/cli_工具"
@@ -439,7 +439,7 @@ torlink 的核心技術機制是基於 Node.js 和 TypeScript 開發，使用 `w
 
 相關概念：[[P2P]] · [[torrent]] · [[CLI/TUI]]
 
-相關專案：[[pixel-point--media-downloader|pixel-point/media-downloader]] · [[MayersScott--rkn-block-checker|MayersScott/rkn-block-checker]] · [[Narcooo--inkos|Narcooo/inkos]] · [[KNG7-P--Se7en-Pro|KNG7-P/Se7en-Pro]] · [[V0id-v2--Void-Tools-v2.0|V0id-v2/Void-Tools-v2.0]] · [[ahmadawais--chartli|ahmadawais/chartli]]
+相關專案：[[pixel-point--media-downloader|pixel-point/media-downloader]] · [[MayersScott--rkn-block-checker|MayersScott/rkn-block-checker]] · [[Narcooo--inkos|Narcooo/inkos]] · [[KNG7-P--Se7en-Pro|KNG7-P/Se7en-Pro]] · [[V0id-v2--Void-Tools-v2.0|V0id-v2/Void-Tools-v2.0]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]]
 
 [GitHub](https://github.com/baairon/torlink) · [官方網站](https://www.npmjs.com/package/torlnk)
 
@@ -735,4 +735,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-01|2026-07-01]] — 再次上榜，1.7k stars
 - [[2026-06-30|2026-06-30]] — 首次收錄，659 stars

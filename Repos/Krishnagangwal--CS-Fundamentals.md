@@ -7,9 +7,9 @@ language: N/A
 license: N/A
 description: "Curated CS fundamentals for placement prep: DSA,Computer Networks, DBMS & SQL, OOPs, Operating Systems, System Design & Software Engineering"
 homepage: ""
-stars: 959
-stars_per_day: 959
-forks: 70
+stars: 1215
+stars_per_day: 608
+forks: 95
 open_issues: 0
 created: 2026-06-28
 pushed_at: 2026-06-28
@@ -30,8 +30,8 @@ use_case: "提供計算機科學基礎知識的精選資源，幫助求職準備
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-03"
+appearances: 2
+next_review: "2026-07-04"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-30"
-star_history: "2026-06-30:957,2026-06-30:959"
+star_history: "2026-06-30:957,2026-06-30:959,2026-07-01:1215"
 tags:
   - github
   - "category/教學資源"
@@ -665,4 +665,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-01|2026-07-01]] — 再次上榜，1.2k stars
 - [[2026-06-30|2026-06-30]] — 首次收錄，957 stars

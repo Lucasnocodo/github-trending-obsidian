@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "An extension of the traditional PDF standard, allowing multiple files to be stored in a single file via metadata"
 homepage: ""
-stars: 564
-stars_per_day: 113
-forks: 64
-open_issues: 0
+stars: 611
+stars_per_day: 102
+forks: 72
+open_issues: 1
 created: 2026-06-24
 pushed_at: 2026-06-28
 first_seen: 2026-06-29
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-29
 use_case: "將多個文件打包到單一 PDF 文件中，並保持向後兼容性。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-07"
+appearances: 3
+next_review: "2026-07-08"
 contributor_count: 4
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-29"
-star_history: "2026-06-29:489,2026-06-29:490,2026-06-30:564,2026-06-30:564"
+star_history: "2026-06-29:489,2026-06-29:490,2026-06-30:564,2026-06-30:564,2026-07-01:611"
 tags:
   - github
   - "category/開發工具"
@@ -713,5 +713,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-01|2026-07-01]] — 再次上榜，611 stars
 - [[2026-06-30|2026-06-30]] — 再次上榜，564 stars
 - [[2026-06-29|2026-06-29]] — 首次收錄，489 stars

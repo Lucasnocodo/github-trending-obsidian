@@ -7,12 +7,12 @@ language: Python
 license: N/A
 description: "Reusable AI video production skills library for creation, recreation, motion design, openers, and QA."
 homepage: ""
-stars: 445
-stars_per_day: 148
-forks: 54
+stars: 483
+stars_per_day: 121
+forks: 58
 open_issues: 0
 created: 2026-06-26
-pushed_at: 2026-06-26
+pushed_at: 2026-06-30
 first_seen: 2026-06-30
 week: "2026-W27"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "提供可重用的 AI 影片製作技能庫，涵蓋創作、復刻�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-07"
+appearances: 2
+next_review: "2026-07-08"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-30"
-star_history: "2026-06-30:444,2026-06-30:445"
+star_history: "2026-06-30:444,2026-06-30:445,2026-07-01:483"
 tags:
   - github
   - "category/其他"
@@ -762,4 +762,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-01|2026-07-01]] — 再次上榜，483 stars
 - [[2026-06-30|2026-06-30]] — 首次收錄，444 stars
