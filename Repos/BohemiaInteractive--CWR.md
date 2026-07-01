@@ -7,12 +7,12 @@ language: C++
 license: NOASSERTION
 description: "Arma: Cold War Assault Remastered Source Code Repository."
 homepage: ""
-stars: 714
-stars_per_day: 102
-forks: 89
+stars: 728
+stars_per_day: 91
+forks: 96
 open_issues: 4
 created: 2026-06-22
-pushed_at: 2026-06-22
+pushed_at: 2026-06-30
 first_seen: 2026-06-26
 week: "2026-W26"
 month: "2026-06"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-26
-use_case: "提供 Arma: Cold War Assault 的重製版引擎和遊戲源碼。"
+use_case: "提供 Arma: Cold War Assault 的重製版引擎與遊戲源碼，支持社群開發與修改。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 4
 next_review: "2026-07-06"
 contributor_count: 2
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 5320
+issue_close_rate: 20
+repo_size_kb: 5157
 readme_length: 4621
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-26"
-star_history: "2026-06-26:494,2026-06-26:494,2026-06-27:624,2026-06-27:624,2026-06-28:662,2026-06-28:662,2026-06-29:688,2026-06-29:689,2026-06-30:714"
+star_history: "2026-06-26:494,2026-06-26:494,2026-06-27:624,2026-06-27:624,2026-06-28:662,2026-06-28:662,2026-06-29:688,2026-06-29:689,2026-06-30:714,2026-07-01:728"
 tags:
   - github
   - "category/遊戲"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "CWR"
   - "BohemiaInteractive/CWR"
-  - "提供 Arma: Cold War Assault 的重製版引擎和遊戲源碼。"
+  - "提供 Arma: Cold War Assault 的重製版引擎與遊戲源碼，支持社群開發與修改。"
 ---
 
 # CWR
 
-**714** stars · **102** stars/天 · 建立 7 天前 · C++ · NOASSERTION
+**728** stars · **91** stars/天 · 建立 8 天前 · C++ · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/BohemiaInteractive--CWR");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供 Arma: Cold War Assault 的重製版引擎和遊戲源碼。
+> 提供 Arma: Cold War Assault 的重製版引擎與遊戲源碼，支持社群開發與修改。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (102 stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 7 天前) · **貢獻者** 2 人 · **參與度** Medium
-> **適合** 希望重製舊遊戲或開發新模組的遊戲開發者和愛好者。
-> **一句話重點** 這個專案不僅是源碼的釋出，更是對於遊戲開發社群的一次重啟，讓開發者能夠在現代環境中探索舊遊戲的潛力。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (91 stars/day)
+> **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Medium
+> **適合** 對遊戲開發有興趣且希望深入研究引擎架構的開發者。
+> **一句話重點** 這個專案不僅是遊戲的重製，更是對開源社群的一次回饋，讓玩家能夠參與到遊戲的開發中。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,173 +101,93 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習，20 小時整合，得到一個可重製的遊戲引擎，值得探索。
+> **安裝** Medium (需設定)
 
 > [!abstract] 核心創新
-> 這個專案將 Arma: Cold War Assault 的源碼現代化，並釋出給社群進行開發和研究。
+> 這個專案的核心創新在於將經典遊戲的源碼開放給社群，促進二次開發和學習。
 
 ## 專案簡介
 
-這個專案是 Arma: Cold War Assault 的重製版源碼，包含了名為 Poseidon 的遊戲引擎。用戶可以透過 CMake 進行跨平台編譯，支援 Windows 和 Linux。核心機制是將原有的遊戲代碼現代化，轉換為 C++20，並提供了清晰的編譯指令，如 `cmake --preset win-x64-clang-rwdi`。這樣的設計使得開發者能夠在現代環境中進行開發和修改，並且能夠利用現代 C++ 的特性來提升效能和可維護性。專案的依賴性相對輕量，主要使用 CMake 進行構建，並且有明確的預設檔案來簡化配置過程。
+這個專案是 Arma: Cold War Assault 的重製版源碼，包含了引擎和遊戲執行檔，使用 C++20 和 CMake 進行現代化改造，並支持 Windows 和 Linux 平台。用戶可以透過 `cmake --preset win-x64-clang-rwdi` 指令來構建專案，這樣的設計使得跨平台開發變得簡單。這個專案的核心賣點在於它讓玩家和開發者能夠研究和修改遊戲代碼，並且保持開源的特性，符合 GPL-3.0-or-later 授權。技術上，專案使用了 Clang 編譯器，並且設計上考慮到了不同平台的特性，像是 Windows 和 Linux 的編譯選項有所不同。與其他遊戲引擎相比，這個專案的獨特之處在於它的開源性質，讓社群能夠自由地進行修改和擴展，而不是僅限於官方的更新。
 
-與其他類似專案相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，CWR 提供了一個完整的遊戲引擎，而不僅僅是單一的遊戲模組，這使得它在遊戲開發中更具彈性和擴展性。實際使用中，開發者可能會遇到編譯環境設置的挑戰，尤其是在 Linux 上，這在熱門 Issues 中有提到。社群活躍度尚可，但目前只有 4 個開放的 Issues，顯示出使用者對此專案的關注和需求。這個專案目前處於 alpha 階段，適合對遊戲開發有興趣的開發者，尤其是希望在開源環境中探索舊遊戲的重製和擴展的團隊。未來六個月內，隨著社群的參與，可能會出現更多的功能擴展和改進。
+相較於 Unity 或 Unreal Engine，這個專案的學習曲線較高，因為需要理解底層的 C++ 和遊戲引擎架構。實際使用中，開發者可能會面臨複雜的構建過程，特別是在 Linux 環境下，這在熱門問題中有提到。這個專案目前仍在活躍開發中，未來可能會有更多的功能和改進。對於小型團隊或獨立開發者來說，這是一個值得探索的選擇，但需要投入時間學習和配置環境。
 
-**技術棧**：`C++20` · `CMake` · `Clang`
+**技術棧**：`C++ 20` · `CMake` · `Clang`
 
 ## 重點功能
 
-- 跨平台支援 — 可在 Windows 和 Linux 上編譯和運行。
-- 現代化 C++20 — 引擎代碼已更新為 C++20，提升效能和可維護性。
-- CMake 支援 — 使用 CMake 進行構建，簡化編譯過程。
-- 開源授權 — 源碼在 GPL-3.0-or-later 授權下釋出，允許修改和再分發。
-- 社群參與 — 鼓勵開發者參與和貢獻，雖然目前不接受 PR，但可進行 fork。
+- 跨平台支持 — 支持 Windows 和 Linux，使用 CMake 進行構建。
+- 現代化代碼 — 使用 C++20 進行重構，提升性能和可讀性。
+- 開源授權 — 根據 GPL-3.0-or-later 授權，允許用戶自由修改和分發。
+- 社群支持 — 鼓勵社群參與開發，提供問題追蹤和討論平臺。
+- 完整的遊戲引擎 — 包含引擎和遊戲執行檔，方便用戶進行二次開發。
 
 ## 快速開始
 
-1. 克隆專案
+1. 安裝 CMake 和 Clang
+```bash
+sudo apt install cmake clang
+```
+2. 克隆專案
 ```bash
 git clone https://github.com/BohemiaInteractive/CWR.git
 ```
-2. 進入專案目錄
+3. 進入專案目錄並構建
 ```bash
-cd CWR
-```
-3. 執行 CMake 構建
-```bash
-cmake --preset win-x64-clang-rwdi
-```
-4. 編譯專案
-```bash
-cmake --build build/win-x64-clang-rwdi
+cd CWR && cmake --preset win-x64-clang-rwdi && cmake --build build/win-x64-clang-rwdi
 ```
 
 ## 程式碼範例
 
 ```cpp
-{
-  "前置條件": "已安裝 CMake 和 Clang",
-  "指令": "cmake --preset win-x64-clang-rwdi",
-  "預期輸出": "構建過程中生成的二進制檔案"
-}
+[
+  "# 前置條件\n# 安裝 CMake 和 Clang\ncmake --preset win-x64-clang-rwdi\ncmake --build build/win-x64-clang-rwdi\n# 預期輸出\n成功構建 Arma: Cold War Assault 重製版的執行檔。"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 7 天內累積 714 stars（102/天），forks 89（12.5%），顯示出強烈的社群興趣。這個專案由 Bohemia Interactive 發起，旨在釋放過去的遊戲技術，並讓社群能夠進行研究和開發。之前的遊戲引擎往往缺乏現代化的支持，這使得開發者在使用舊代碼時面臨許多挑戰。這個專案的推出正好填補了這一空白，並吸引了許多開發者的注意。社群的反饋也顯示出對於編譯過程和文檔的需求，這可能促使未來的改進。
+> 建立 8 天內累積 728 stars（91/天），forks 96（13.2%），顯示出穩定的增長。這個專案由 Bohemia Interactive 發起，旨在回饋社群，讓玩家能夠深入了解和修改遊戲代碼。之前，玩家只能依賴官方更新，這個專案提供了一個開放的平臺來探索和創造。社群對於這個重製版的期待也促進了討論，特別是在 Reddit 和 Discord 等平台上。這樣的開源策略讓更多開發者能夠參與進來，進一步擴展了遊戲的生態系統。
 
 ## 適合誰使用
 
-**目標受眾**：希望重製舊遊戲或開發新模組的遊戲開發者和愛好者。
+**目標受眾**：對遊戲開發有興趣且希望深入研究引擎架構的開發者。
 
 > [!example] 使用場景
-> - 遊戲開發者用它來重製舊版遊戲，因為它提供了現代化的引擎和源碼，能夠快速進行修改和擴展。
-> - 模組開發者用它來創建新的遊戲內容，因為源碼的開放性讓他們能夠自由地修改和添加功能。
-> - 學術研究者用它來研究遊戲引擎架構，因為這個專案的開源性質讓他們能夠深入分析和學習。
+> - 遊戲開發者用它來修改 Arma: Cold War Assault 的遊戲邏輯，因為開源代碼讓他們能夠自由實驗和創新。
+> - 學術研究者用它來研究遊戲引擎的架構和性能，因為這個專案提供了完整的源碼和文檔。
+> - 獨立開發者用它來創建自己的遊戲模組，因為重製版的代碼基礎讓他們能夠快速上手和修改。
 
 ## 架構分析
 
-CWR 使用 CMake 作為構建系統，這使得跨平台編譯變得簡單。引擎代碼被重構為 C++20，這樣的選擇不僅提高了效能，還使得代碼更易於維護。資料流方面，遊戲邏輯和引擎功能被分離，這樣的設計使得開發者能夠專注於特定模組的開發。
-
-選擇 CMake 而非其他構建系統的原因在於其廣泛的支援和靈活性，這對於多平台開發至關重要。未來的擴展性方面，雖然目前的設計已經相對成熟，但隨著社群的參與，可能會出現更多的功能需求和改進。整體而言，這個架構設計能夠支持多樣化的開發需求，並且在社群的推動下持續演進。
+這個專案採用 CMake 作為構建系統，支持跨平台編譯，這樣的設計使得開發者能夠在不同操作系統上輕鬆構建和測試。資料流方面，源碼被組織為多個模組，包括引擎、應用程式和測試，這樣的結構有助於維護和擴展。選擇 C++ 作為主要語言是因為其性能優越，適合開發高效能的遊戲引擎，但這也意味著開發者需要具備較高的 C++ 技能。擴展性方面，這個專案的依賴關係相對簡單，主要依賴 CMake 和 Clang，這降低了學習曲線，但也限制了某些高級功能的實現。
 
 ## 技術深入分析
 
-CWR 的核心技術機制是將舊有的遊戲引擎代碼現代化，使用 C++20 來提升效能和可維護性。這樣的選擇不僅使得代碼更符合現代開發標準，還能利用新特性來優化性能。專案的架構基於 CMake，這使得跨平台編譯變得簡單，並且能夠在 Windows 和 Linux 上運行。效能方面，由於使用了現代的 C++ 標準，這使得引擎在運行時能夠更有效率地管理資源。設計上，選擇 CMake 而非其他構建工具的原因在於其靈活性和廣泛的社群支持，這對於多平台開發至關重要。技術風險方面，隨著社群的參與，未來可能會出現更多的功能需求，這需要持續的維護和更新。整合方面，CWR 能夠與現有的遊戲開發工具鏈相容，並且在 CI/CD pipeline 中也能夠順利運作，這對於團隊的開發效率有很大幫助。
+這個專案的核心技術機制是使用 C++20 和 CMake 進行重構，這使得代碼更加現代化，並且能夠利用最新的語言特性來提升性能。專案設計上考慮到跨平台的需求，使用 Clang 編譯器來支持 Windows 和 Linux，這樣的選擇讓開發者能夠在不同環境中輕鬆構建。效能方面，由於使用了現代化的 C++ 特性，預期能夠在性能上有顯著提升，但具體數據尚未提供。設計取捨方面，選擇 CMake 作為構建工具，雖然簡化了構建過程，但對於某些特定功能可能不如專用工具靈活。技術風險方面，隨著社群的參與，可能會出現代碼質量不均的問題，特別是在缺乏正式的審核機制下。整合方面，這個專案的設計使得與現有的遊戲開發工具鏈相容性良好，特別是在使用 CMake 的環境中，能夠輕鬆整合到 CI/CD pipeline 中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的指導和範例，安裝過程相對順暢，但對於新手來說可能需要一些時間來適應。整體上，文件的品質良好，能夠幫助使用者快速上手。
+> README 文件清晰且包含快速入門指南，安裝過程需要一些配置，但整體順暢。文件中提供了必要的指令和範例，讓新手能夠快速上手。多語言支持有限，主要以英文為主。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開源且現代化的引擎，開發者可以自由修改和擴展。
-> - 跨平台支援，能夠在多種操作系統上運行。
-> - 活躍的社群支持，能夠獲得反饋和建議。
+> - 開源且自由修改，促進社群參與。
+> - 現代化的 C++20 代碼，提升性能和可讀性。
+> - 跨平台支持，方便不同操作系統的開發者使用。
 
 > [!danger] 缺點
-> - 編譯過程可能對新手不友好，特別是在 Linux 環境下。
-> - 不接受直接的貢獻，限制了社群的參與方式。
-> - 遊戲數據需要單獨獲取，增加了使用的複雜性。
+> - 構建過程複雜，對新手不友好。
+> - 不包含遊戲數據，需額外獲取資源。
+> - 目前為鎖定的存儲庫，限制了社群貢獻。
 
 > [!warning] 注意事項
-> - 編譯過程在 Linux 上可能較為複雜，需要額外的文檔支持。
-> - 不接受 PR，對於想要直接貢獻的開發者來說可能會有些限制。
-> - 遊戲數據和資產不包含在內，需要單獨獲取。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲角色的創建和管理，而 CWR 提供完整的遊戲引擎和源碼。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於遊戲數據的管理，CWR 則是針對遊戲引擎的重製。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲角色的創建和管理，而 CWR 提供完整的遊戲引擎和源碼。 | 如果你的專案主要集中在角色管理和創建上，而不需要完整的遊戲引擎。 | low，因為兩者的功能範圍有明顯不同。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於遊戲數據的管理，CWR 則是針對遊戲引擎的重製。 | 如果你的需求主要是針對遊戲數據的處理，而不是引擎的重製。 | medium，因為需要重新設計部分架構以適應不同的工具。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **CWR** | **agent-sprite-forge** | **boneyard** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於遊戲角色的創建和管理，而 CWR 提供完整的遊戲引擎和源碼。 | 專注於遊戲數據的管理，CWR 則是針對遊戲引擎的重製。 |
-> | 遷移成本 | - | low，因為兩者的功能範圍有明顯不同。 | medium，因為需要重新設計部分架構以適應不同的工具。 |
-> | 適用場景 | 主要場景 | 如果你的專案主要集中在角色管理和創建上，而不需要完整的遊戲引 | 如果你的需求主要是針對遊戲數據的處理，而不是引擎的重製。 |
-
-## 成熟度評估
-
-| 項目 | 評估 |
-| --- | --- |
-| 開發階段 | Alpha |
-| 生產環境就緒 | No |
-| Breaking Change 風險 | high |
-
-> [!tip] 採用建議
-> 適合對遊戲開發有興趣的開發者進行實驗，不建議在生產環境中使用。
-
-## 已知陷阱
-
-> [!bug] 踩坑才知道的問題
-
-- **[HIGH]** 編譯過程在 Linux 上可能會遇到環境配置問題
-  - 解法：參考文檔中的環境設置指南
-- [MEDIUM] 不接受 PR，對於想要貢獻的開發者來說可能會感到沮喪
-  - 解法：可以 fork 專案進行個人開發
-- [MEDIUM] 遊戲數據需要單獨獲取，可能會造成使用上的不便
-  - 解法：從 Steam 獲取免費的 Demo 遊戲數據
-
-## 使用情境適合度
-
-| 情境 | 適合度 | 說明 |
-| --- | --- | --- |
-| 小型遊戲開發團隊希望重製舊遊戲 | 非常適合 | 提供了完整的引擎和源碼，能夠快速進行開發和修改。 |
-| 獨立開發者想要創建新的遊戲模組 | 適合 | 開源性質讓他們能夠自由修改和擴展功能。 |
-| 大型遊戲公司進行商業產品開發 | 不適合 | 目前處於 alpha 階段，不建議用於生產環境。 |
-
-## 採用成本分析
-
-| 項目 | 評估 |
-| --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~20 小時 |
-| 維護負擔 | medium |
-| 綁定風險 | medium |
-
-> [!tip] 投入 vs 回報
-> 花 10 小時學習，20 小時整合，得到一個可重製的遊戲引擎，值得探索。
-
-## 安全性評估
-
-> [!warning] 安全性快速掃描
-> 低風險：專案本身不需要高權限運行，且不存取敏感資料。依賴鏈的信任程度尚可，沒有已知的供應鏈風險。
+> - 構建過程複雜，特別是在 Linux 環境下可能需要額外的配置。
+> - 不包含遊戲數據，需另外獲取遊戲資源來運行編譯的遊戲。
+> - 目前為鎖定的存儲庫，不接受拉取請求，限制了社群的貢獻。
 
 ## 健康度儀表板
 
@@ -332,12 +252,12 @@ CWR 的核心技術機制是將舊有的遊戲引擎代碼現代化，使用 C++
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 89 |
+| Forks | 96 |
 | Open Issues | 4 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-06-22 |
+| Issue 解決率 | 20% (1 closed) |
+| 最後推送 | 2026-06-30 |
 | 建立日期 | 2026-06-22 |
-| Repo 大小 | 5.2 MB |
+| Repo 大小 | 5.0 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/BohemiaInteractive/CWR) |
 
 > [!info]- 語言組成
@@ -352,18 +272,18 @@ CWR 的核心技術機制是將舊有的遊戲引擎代碼現代化，使用 C++
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
+> | [@simi](https://github.com/simi) | 2 |
 > | [@BohemiaOwner](https://github.com/BohemiaOwner) | 1 |
-> | [@simi](https://github.com/simi) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，近期有更新和討論。
+**社群活躍度**：社群活躍，定期有問題討論和回應。
 **連結**：[文件](https://github.com/BohemiaInteractive/CWR)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-22 ~ 2026-06-22）
-> **活躍天數** 1 天 · **最新 commit** Update issue templates
+> [!abstract] 最近 10 次 commit（2026-06-22 ~ 2026-06-23）
+> **活躍天數** 2 天 · **最新 commit** 3.01
 
 ## 熱門議題
 
@@ -471,7 +391,7 @@ CWR 的核心技術機制是將舊有的遊戲引擎代碼現代化，使用 C++
 
 ## 延伸閱讀
 
-相關概念：[[遊戲引擎]] · [[開源]] · [[C++]]
+相關概念：[[遊戲引擎]] · [[開源軟體]] · [[C++]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]] · [[leigest519--OpenGame|leigest519/OpenGame]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]]
 
@@ -515,7 +435,7 @@ CWR 的核心技術機制是將舊有的遊戲引擎代碼現代化，使用 C++
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["遊戲引擎","開源","C++"];
+> const concepts = ["遊戲引擎","開源軟體","C++"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "BohemiaInteractive--CWR" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
