@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "A sleek, zero-setup torrent finder and downloader that lives right in your terminal."
 homepage: "https://www.npmjs.com/package/torlnk"
-stars: 1704
-stars_per_day: 341
-forks: 105
+stars: 2315
+stars_per_day: 386
+forks: 152
 open_issues: 14
 created: 2026-06-25
-pushed_at: 2026-06-30
+pushed_at: 2026-07-01
 first_seen: 2026-06-30
 week: "2026-W27"
 month: "2026-06"
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-30
 use_case: "在終端機中輕鬆找到和下載 torrent，無需任何設置。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-04"
+appearances: 3
+next_review: "2026-07-05"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 13
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-30"
-star_history: "2026-06-30:659,2026-06-30:672,2026-07-01:1693,2026-07-01:1704"
+star_history: "2026-06-30:659,2026-06-30:672,2026-07-01:1693,2026-07-01:1704,2026-07-02:2315"
 tags:
   - github
   - "category/cli_工具"
@@ -749,5 +749,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-02|2026-07-02]] — 再次上榜，2.3k stars
 - [[2026-07-01|2026-07-01]] — 再次上榜，1.7k stars
 - [[2026-06-30|2026-06-30]] — 首次收錄，659 stars

@@ -2619,10 +2619,10 @@
   },
   "deepseek-ai/DeepSpec": {
     "first_seen": "2026-06-28",
-    "last_seen": "2026-07-01",
-    "times_seen": 4,
+    "last_seen": "2026-07-02",
+    "times_seen": 5,
     "stars_first": 1343,
-    "stars_last": 5300
+    "stars_last": 5750
   },
   "bikini/exploitarium": {
     "first_seen": "2026-06-28",
@@ -2640,37 +2640,65 @@
   },
   "Krishnagangwal/CS-Fundamentals": {
     "first_seen": "2026-06-30",
-    "last_seen": "2026-07-01",
-    "times_seen": 2,
+    "last_seen": "2026-07-02",
+    "times_seen": 3,
     "stars_first": 957,
-    "stars_last": 1215
+    "stars_last": 1331
   },
   "baairon/torlink": {
     "first_seen": "2026-06-30",
-    "last_seen": "2026-07-01",
-    "times_seen": 2,
+    "last_seen": "2026-07-02",
+    "times_seen": 3,
     "stars_first": 659,
-    "stars_last": 1693
+    "stars_last": 2315
   },
   "yynxxxxx/Codex-5.5-codex-instruct-5.5": {
     "first_seen": "2026-06-30",
-    "last_seen": "2026-07-01",
-    "times_seen": 2,
+    "last_seen": "2026-07-02",
+    "times_seen": 3,
     "stars_first": 507,
-    "stars_last": 810
+    "stars_last": 1013
   },
   "Pluviobyte/video-production-skills": {
     "first_seen": "2026-06-30",
-    "last_seen": "2026-07-01",
-    "times_seen": 2,
+    "last_seen": "2026-07-02",
+    "times_seen": 3,
     "stars_first": 444,
-    "stars_last": 483
+    "stars_last": 492
   },
   "TianhangZhuzth/Fundamental-Ava": {
     "first_seen": "2026-07-01",
-    "last_seen": "2026-07-01",
-    "times_seen": 1,
+    "last_seen": "2026-07-02",
+    "times_seen": 2,
     "stars_first": 599,
-    "stars_last": 599
+    "stars_last": 718
+  },
+  "Kulaxyz/self-learning-skills": {
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02",
+    "times_seen": 1,
+    "stars_first": 748,
+    "stars_last": 748
+  },
+  "winsznx/bull-rush": {
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02",
+    "times_seen": 1,
+    "stars_first": 681,
+    "stars_last": 681
+  },
+  "mekos2772/ios-location-spoofer": {
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02",
+    "times_seen": 1,
+    "stars_first": 670,
+    "stars_last": 670
+  },
+  "aquace/CVE-2026-41940-PoC": {
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02",
+    "times_seen": 1,
+    "stars_first": 571,
+    "stars_last": 571
   }
 }

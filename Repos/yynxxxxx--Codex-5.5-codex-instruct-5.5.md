@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: ""
 homepage: ""
-stars: 810
-stars_per_day: 405
-forks: 251
-open_issues: 3
+stars: 1013
+stars_per_day: 338
+forks: 313
+open_issues: 1
 created: 2026-06-28
-pushed_at: 2026-06-28
+pushed_at: 2026-07-01
 first_seen: 2026-06-30
 week: "2026-W27"
 month: "2026-06"
@@ -30,8 +30,8 @@ use_case: "一鍵注入 GPT-5.5 Codex CLI 的無限制模式指令，突破內�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-04"
+appearances: 3
+next_review: "2026-07-05"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-30"
-star_history: "2026-06-30:507,2026-07-01:810"
+star_history: "2026-06-30:507,2026-07-01:810,2026-07-02:1013"
 tags:
   - github
   - "category/其他"
@@ -733,5 +733,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-02|2026-07-02]] — 再次上榜，1.0k stars
 - [[2026-07-01|2026-07-01]] — 再次上榜，810 stars
 - [[2026-06-30|2026-06-30]] — 首次收錄，507 stars

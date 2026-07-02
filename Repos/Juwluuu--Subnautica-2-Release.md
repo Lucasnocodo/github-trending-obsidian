@@ -331,7 +331,7 @@ Subnautica 2 的核心技術機制基於 C++，這使得遊戲在處理複雜的
 
 ## 延伸閱讀
 
-相關專案：[[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[boona13--mykonos-island-voxels|boona13/mykonos-island-voxels]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]] · [[levy-street--world-of-claudecraft|levy-street/world-of-claudecraft]] · [[kanavtwtgg--birds.cafe|kanavtwtgg/birds.cafe]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]]
+相關專案：[[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[boona13--mykonos-island-voxels|boona13/mykonos-island-voxels]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]] · [[levy-street--world-of-claudecraft|levy-street/world-of-claudecraft]] · [[kanavtwtgg--birds.cafe|kanavtwtgg/birds.cafe]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[winsznx--bull-rush|winsznx/bull-rush]]
 
 [GitHub](https://github.com/Juwluuu/Subnautica-2-Release)
 
