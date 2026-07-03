@@ -7,9 +7,9 @@ language: N/A
 license: MIT
 description: "A self-improving skill for AI coding agents (Claude Code, Cursor, AGENTS.md): recognize a hard-won golden path in a session and harvest it into a reusable skill/rule for next time."
 homepage: ""
-stars: 748
-stars_per_day: 249
-forks: 7
+stars: 902
+stars_per_day: 226
+forks: 15
 open_issues: 1
 created: 2026-06-28
 pushed_at: 2026-07-01
@@ -30,8 +30,8 @@ use_case: "讓 AI 編碼代理自動學習和重用成功的工作流程，避�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-05"
+appearances: 2
+next_review: "2026-07-06"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-02"
-star_history: "2026-07-02:748,2026-07-02:748"
+star_history: "2026-07-02:748,2026-07-02:748,2026-07-03:902"
 tags:
   - github
   - "category/開發工具"
@@ -792,4 +792,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-03|2026-07-03]] — 再次上榜，902 stars
 - [[2026-07-02|2026-07-02]] — 首次收錄，748 stars

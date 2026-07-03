@@ -2619,10 +2619,10 @@
   },
   "deepseek-ai/DeepSpec": {
     "first_seen": "2026-06-28",
-    "last_seen": "2026-07-02",
-    "times_seen": 5,
+    "last_seen": "2026-07-03",
+    "times_seen": 6,
     "stars_first": 1343,
-    "stars_last": 5750
+    "stars_last": 5895
   },
   "bikini/exploitarium": {
     "first_seen": "2026-06-28",
@@ -2640,10 +2640,10 @@
   },
   "Krishnagangwal/CS-Fundamentals": {
     "first_seen": "2026-06-30",
-    "last_seen": "2026-07-02",
-    "times_seen": 3,
+    "last_seen": "2026-07-03",
+    "times_seen": 4,
     "stars_first": 957,
-    "stars_last": 1331
+    "stars_last": 1444
   },
   "baairon/torlink": {
     "first_seen": "2026-06-30",
@@ -2654,10 +2654,10 @@
   },
   "yynxxxxx/Codex-5.5-codex-instruct-5.5": {
     "first_seen": "2026-06-30",
-    "last_seen": "2026-07-02",
-    "times_seen": 3,
+    "last_seen": "2026-07-03",
+    "times_seen": 4,
     "stars_first": 507,
-    "stars_last": 1013
+    "stars_last": 1127
   },
   "Pluviobyte/video-production-skills": {
     "first_seen": "2026-06-30",
@@ -2668,17 +2668,17 @@
   },
   "TianhangZhuzth/Fundamental-Ava": {
     "first_seen": "2026-07-01",
-    "last_seen": "2026-07-02",
-    "times_seen": 2,
+    "last_seen": "2026-07-03",
+    "times_seen": 3,
     "stars_first": 599,
-    "stars_last": 718
+    "stars_last": 756
   },
   "Kulaxyz/self-learning-skills": {
     "first_seen": "2026-07-02",
-    "last_seen": "2026-07-02",
-    "times_seen": 1,
+    "last_seen": "2026-07-03",
+    "times_seen": 2,
     "stars_first": 748,
-    "stars_last": 748
+    "stars_last": 902
   },
   "winsznx/bull-rush": {
     "first_seen": "2026-07-02",
@@ -2689,16 +2689,37 @@
   },
   "mekos2772/ios-location-spoofer": {
     "first_seen": "2026-07-02",
-    "last_seen": "2026-07-02",
-    "times_seen": 1,
+    "last_seen": "2026-07-03",
+    "times_seen": 2,
     "stars_first": 670,
-    "stars_last": 670
+    "stars_last": 1148
   },
   "aquace/CVE-2026-41940-PoC": {
     "first_seen": "2026-07-02",
-    "last_seen": "2026-07-02",
-    "times_seen": 1,
+    "last_seen": "2026-07-03",
+    "times_seen": 2,
     "stars_first": 571,
-    "stars_last": 571
+    "stars_last": 572
+  },
+  "tryOpenRAM/OpenRAM": {
+    "first_seen": "2026-07-03",
+    "last_seen": "2026-07-03",
+    "times_seen": 1,
+    "stars_first": 566,
+    "stars_last": 566
+  },
+  "CopilotKit/OpenTag": {
+    "first_seen": "2026-07-03",
+    "last_seen": "2026-07-03",
+    "times_seen": 1,
+    "stars_first": 521,
+    "stars_last": 521
+  },
+  "diinki/linux-antiquity": {
+    "first_seen": "2026-07-03",
+    "last_seen": "2026-07-03",
+    "times_seen": 1,
+    "stars_first": 505,
+    "stars_last": 505
   }
 }

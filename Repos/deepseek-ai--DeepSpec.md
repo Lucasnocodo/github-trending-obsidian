@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms"
 homepage: ""
-stars: 5750
-stars_per_day: 1150
-forks: 461
-open_issues: 31
+stars: 5895
+stars_per_day: 983
+forks: 482
+open_issues: 33
 created: 2026-06-26
 pushed_at: 2026-06-30
 first_seen: 2026-06-28
@@ -30,8 +30,8 @@ use_case: "提供訓練和評估推測解碼算法的完整代碼庫。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-07-05"
+appearances: 6
+next_review: "2026-07-06"
 contributor_count: 0
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-28"
-star_history: "2026-06-28:1343,2026-06-29:2226,2026-06-30:3876,2026-07-01:5300,2026-07-02:5750"
+star_history: "2026-06-28:1343,2026-06-29:2226,2026-06-30:3876,2026-07-01:5300,2026-07-02:5750,2026-07-03:5895"
 tags:
   - github
   - "category/ai_ml"
@@ -737,6 +737,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-03|2026-07-03]] — 再次上榜，5.9k stars
 - [[2026-07-02|2026-07-02]] — 再次上榜，5.8k stars
 - [[2026-07-01|2026-07-01]] — 再次上榜，5.3k stars
 - [[2026-06-30|2026-06-30]] — 再次上榜，3.9k stars

@@ -7,9 +7,9 @@ language: Python
 license: Apache-2.0
 description: "Build digital human beings — autonomous, collaborative, and socially intelligent agents. FNzgGxU31RWiDgLr3GvxxSa42nRntvZNSG6aBMQ1pump"
 homepage: "https://fundamentalresearchlabs.com"
-stars: 720
-stars_per_day: 360
-forks: 69
+stars: 756
+stars_per_day: 252
+forks: 78
 open_issues: 0
 created: 2026-06-30
 pushed_at: 2026-07-01
@@ -30,10 +30,10 @@ use_case: "構建自主、協作且具社交智能的數位人類代理。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-05"
+appearances: 3
+next_review: "2026-07-06"
 contributor_count: 1
-engagement: "low"
+engagement: "medium"
 issue_close_rate: -1
 repo_size_kb: 461
 readme_length: 9892
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-01"
-star_history: "2026-07-01:599,2026-07-01:602,2026-07-02:718,2026-07-02:720"
+star_history: "2026-07-01:599,2026-07-01:602,2026-07-02:718,2026-07-02:720,2026-07-03:756"
 tags:
   - github
   - "category/ai_ml"
@@ -875,5 +875,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-03|2026-07-03]] — 再次上榜，756 stars
 - [[2026-07-02|2026-07-02]] — 再次上榜，718 stars
 - [[2026-07-01|2026-07-01]] — 首次收錄，599 stars

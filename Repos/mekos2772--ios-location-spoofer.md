@@ -7,12 +7,12 @@ language: JavaScript
 license: AGPL-3.0
 description: "Standalone iOS app to spoof GPS location without jailbreak. Includes Shadowrocket/Surge/Loon/QX/Stash module."
 homepage: ""
-stars: 670
-stars_per_day: 670
-forks: 98
-open_issues: 5
+stars: 1148
+stars_per_day: 574
+forks: 164
+open_issues: 1
 created: 2026-06-30
-pushed_at: 2026-07-01
+pushed_at: 2026-07-02
 first_seen: 2026-07-02
 week: "2026-W27"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "無需越獄即可偽造 iOS GPS 位置的獨立應用，支持多種
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-05"
+appearances: 2
+next_review: "2026-07-06"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-02"
-star_history: "2026-07-02:670"
+star_history: "2026-07-02:670,2026-07-03:1148"
 tags:
   - github
   - "category/其他"
@@ -497,7 +497,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 相關概念：[[MITM]] · [[HTTPS 解密]] · [[定位偽造]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[loc567--loc567|loc567/loc567]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Yu9191--wloc|Yu9191/wloc]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[loc567--loc567|loc567/loc567]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Yu9191--wloc|Yu9191/wloc]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]]
 
 [GitHub](https://github.com/mekos2772/ios-location-spoofer)
 
@@ -793,4 +793,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-03|2026-07-03]] — 再次上榜，1.1k stars
 - [[2026-07-02|2026-07-02]] — 首次收錄，670 stars
