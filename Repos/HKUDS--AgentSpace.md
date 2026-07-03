@@ -7,12 +7,12 @@ language: TypeScript
 license: Apache-2.0
 description: "\"AgentSpace: Human + Agents. One Team. One Workspace\""
 homepage: "https://hire-an-agent.online/"
-stars: 595
-stars_per_day: 66
-forks: 71
+stars: 605
+stars_per_day: 55
+forks: 74
 open_issues: 6
 created: 2026-06-22
-pushed_at: 2026-07-01
+pushed_at: 2026-07-02
 first_seen: 2026-06-27
 week: "2026-W26"
 month: "2026-06"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-27
-use_case: "提供人類與代理的協作工作空間，讓團隊能夠高效合作。"
+use_case: "提供人類與代理人協作的工作空間，讓團隊能夠高效運作。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -36,13 +36,13 @@ contributor_count: 4
 engagement: "medium"
 issue_close_rate: 25
 repo_size_kb: 15719
-readme_length: 9713
+readme_length: 9827
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-27"
-star_history: "2026-06-27:453,2026-06-27:453,2026-06-28:479,2026-06-28:479,2026-06-29:524,2026-06-29:524,2026-06-30:563,2026-07-01:580,2026-07-02:595"
+star_history: "2026-06-27:453,2026-06-27:453,2026-06-28:479,2026-06-28:479,2026-06-29:524,2026-06-29:524,2026-06-30:563,2026-07-01:580,2026-07-02:595,2026-07-03:605"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "AgentSpace"
   - "HKUDS/AgentSpace"
-  - "提供人類與代理的協作工作空間，讓團隊能夠高效合作。"
+  - "提供人類與代理人協作的工作空間，讓團隊能夠高效運作。"
 ---
 
 # AgentSpace
 
-**595** stars · **66** stars/天 · 建立 9 天前 · TypeScript · Apache-2.0
+**605** stars · **55** stars/天 · 建立 11 天前 · TypeScript · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/HKUDS--AgentSpace");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供人類與代理的協作工作空間，讓團隊能夠高效合作。
+> 提供人類與代理人協作的工作空間，讓團隊能夠高效運作。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (66 stars/day)
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (55 stars/day)
 > **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Medium
-> **適合** 需要在團隊中協作使用多個代理的中小型企業和開發團隊。
-> **一句話重點** AgentSpace 不僅是工具，更是人類與代理協作的新模式，讓團隊能夠在同一平台上高效運作。
+> **適合** 需要在多團隊環境中協作並管理代理人的中大型企業團隊。
+> **一句話重點** AgentSpace 的設計理念是將代理人視為團隊成員，這改變了傳統代理人工具的使用方式。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,105 +101,97 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習，15 小時整合，得到高效的團隊協作效果，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到高效的團隊協作效果，值得投入。
 
 > [!abstract] 核心創新
-> AgentSpace 將人類與代理的協作提升到一個新的層次，讓代理成為團隊中的第一級成員。
+> AgentSpace 提供了一個專為人類與代理人協作設計的工作空間，強調治理與協作。
 
 ## 專案簡介
 
-AgentSpace 是一個為人類和代理團隊設計的協作工作空間，旨在解決當前代理框架多數只適用於個人使用的問題。這個工具允許用戶在同一平台上管理和協調多個代理，並為每個代理定義角色和責任。使用者可以透過 `npm run setup && npm run dev:web` 指令快速啟動開發環境，並開始使用這個平台。技術上，AgentSpace 結合了 TypeScript 和 Node.js，並利用 AgentRouter 來統一不同代理的執行路徑，這樣可以減少上下文切換的成本。
+AgentSpace 是一個專為人類與代理人團隊設計的協作工作空間，解決了當前代理人框架多數只適用於單人使用的問題。使用者可以透過 `npm run setup && npm run dev:web` 指令快速啟動專案，並在共享的工作空間中協調多個代理人的工作。這個工具的核心在於將代理人視為團隊成員，具備定義的角色與責任，並且能夠進行協作。技術上，AgentSpace 使用 TypeScript 和 Node.js，並提供了兩種部署模式：雲端平台和自我託管，無論選擇哪一種都不會有功能上的差異。
 
-與其他工具相比，如 0x0funky/agent-sprite-forge 和 2aronS/Duel-Agents，AgentSpace 提供了一個更完整的治理和協作框架，能夠讓團隊在一個共享的工作空間中進行多代理協作。這種設計使得敏感操作可以透過明確的權限和審核流程來管理，從而提高了安全性和可追溯性。使用者可以在一個地方查看所有代理的行為和決策，這在傳統的代理工具中是難以實現的。這個專案目前仍在快速發展中，社群活躍度高，且有明確的發展路線圖，適合希望提升團隊協作效率的中小型企業使用。
+與其他工具相比，如 0x0funky/agent-sprite-forge，AgentSpace 提供了更強的治理功能，能夠對每個代理人的行為進行審計和管理，這在多團隊協作中尤為重要。使用者可以在一個統一的控制平面上管理權限，這樣能夠避免權限散落在不同工具中的問題。這個專案的設計旨在促進團隊的快速運作，同時保持對代理人行為的可控性。適合需要高效協作的中大型團隊，尤其是那些需要在多個系統間協調工作的情境。
 
-**技術棧**：`TypeScript` · `Node.js` · `PostgreSQL`
+**技術棧**：`TypeScript` · `Node.js` · `CSS` · `JavaScript`
 
 ## 重點功能
 
-- 招聘與指派代理 — 快速創建具有明確角色和擁有者的代理。
-- 協調多代理工作流 — 代理在共享工作空間中協作。
-- 排程代理工作 — 自動化代理執行任務的時間和方式。
+- 招聘與分配代理人 — 快速建立具有明確角色和擁有者的代理人。
+- 協調多代理人工作流程 — 代理人在共享工作空間中協作。
+- 排程代理人工作 — 自動化代理人執行任務的時間與方式。
 - 強制執行權限與批准 — 確保敏感操作在治理邊界內進行。
-- 全面審計 — 完整可見代理行為、決策和輸出。
+- 全面審計 — 完整可見代理人的行動、決策和輸出。
 
 ## 快速開始
 
-1. 安裝依賴並啟動開發環境
+1. 安裝依賴並啟動開發伺服器
 ```bash
 npm run setup && npm run dev:web
-```
-2. 檢查代理狀態
-```bash
-node --experimental-strip-types packages/db/src/postgres-cli.ts status
-```
-3. 初始化資料庫
-```bash
-node --experimental-strip-types packages/db/src/postgres-cli.ts init
 ```
 
 ## 程式碼範例
 
 ```ts
-{
-  "前置條件": "已安裝 Node.js 和 npm。",
-  "指令": "npm run setup && npm run dev:web",
-  "預期輸出": "啟動 AgentSpace 開發環境，並在本地伺服器上運行。"
-}
+[
+  "# 前置條件：已安裝 Node.js 和 npm",
+  "npm run setup && npm run dev:web",
+  "# 預期輸出：開發伺服器啟動，並可在瀏覽器中訪問 AgentSpace 界面"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 9 天內累積 595 stars（66/天），forks 71（11.9%），顯示出良好的社群反響。主要貢獻者 TianyuFan0504 和其他人員在開源社群中有過往的貢獻紀錄，這為專案的信任度加分。AgentSpace 解決了多數代理工具無法有效協作的痛點，特別是在團隊環境中，這在過去的工具中往往缺乏。社群的活躍討論和開發進度也吸引了更多開發者的注意，尤其是在 GitHub 和社交媒體上的分享。這些因素共同促成了其快速增長的趨勢。
+> 建立 11 天就累積 605 stars（55/天），forks 74（12.2%），顯示出良好的社群關注度。這個專案的主要貢獻者有多位活躍開發者，且在 GitHub 上的開發活動頻繁，顯示出穩定的更新與維護。AgentSpace 解決了當前代理人協作中的痛點，特別是多團隊協作的治理問題，這在市場上是相對少見的。最近的功能更新如 Feishu 整合也引起了使用者的興趣，進一步提升了其實用性。這些因素共同促成了專案的快速增長。
 
 ## 適合誰使用
 
-**目標受眾**：需要在團隊中協作使用多個代理的中小型企業和開發團隊。
+**目標受眾**：需要在多團隊環境中協作並管理代理人的中大型企業團隊。
 
 > [!example] 使用場景
-> - 專案經理用它來協調多個代理的工作流，因為可以在同一平台上管理所有代理的角色和責任，提升了團隊的透明度和效率。
-> - 開發者用它來快速部署和測試代理，因為能夠利用 `npm run setup` 指令快速搭建開發環境，節省了設置時間。
-> - 安全專員用它來監控代理的行為和審核過程，因為提供了完整的審計追蹤功能，確保敏感操作的合規性。
+> - 專案經理用它來協調多個代理人的工作，因為可以在一個共享空間中管理所有任務和進度，避免了信息孤島。
+> - 開發團隊用它來自動化測試流程，因為能夠調度代理人執行測試並自動生成報告，提升了效率。
+> - 運營團隊用它來管理客戶支持代理，因為可以輕鬆地調整代理人的角色和權限，確保服務質量。
 
 ## 架構分析
 
-AgentSpace 採用微服務架構，將不同的功能模組分開，這樣可以提高可維護性和擴展性。使用 AgentRouter 來統一不同代理的執行路徑，這樣可以減少上下文切換的成本。每個代理都有明確的角色和責任，並且可以在共享工作空間中協作。這種設計使得敏感操作可以透過明確的權限和審核流程來管理，從而提高了安全性和可追溯性。這種架構的代價是需要更多的資源來管理和維護多個服務，但在團隊協作的情境下，這種代價是值得的。
+AgentSpace 採用微服務架構，將不同功能模組分開，這樣可以實現更高的可維護性和擴展性。每個代理人作為獨立的服務運行，並通過 AgentRouter 進行調度和管理。這樣的設計使得在需要更改執行環境時，僅需更換調度器而不影響代理人的其他屬性。
+
+這種架構的代價在於需要更多的初始設置和配置，但長期來看能夠提供更好的靈活性和可擴展性。擴展性方面，隨著團隊規模的增長，可能需要考慮數據庫的性能和代理人數量的管理。整體而言，這種設計使得 AgentSpace 能夠適應不同規模的團隊需求。
 
 ## 技術深入分析
 
-AgentSpace 的核心技術機制是基於微服務架構，使用 TypeScript 和 Node.js 來構建。這種架構使得每個功能模組都能獨立開發和部署，並且能夠快速擴展。效能方面，AgentSpace 能夠處理多個代理的協作，但在高負載情況下可能需要進行優化。選擇 TypeScript 的原因在於其靜態類型檢查能夠提高開發效率和代碼質量。
-
-依賴樹相對簡單，主要依賴於 Node.js 生態系統，這降低了維護的複雜度。技術風險方面，隨著團隊規模的擴大，可能會出現協作和治理上的挑戰，特別是在權限管理和審計方面。整合方面，AgentSpace 可以與主流的 CI/CD 工具鏈相容，但需要一定的配置來確保無縫整合。整體來看，AgentSpace 是一個具潛力的工具，特別適合需要多代理協作的團隊。
+AgentSpace 的核心技術機制是將代理人與人類團隊結合，形成一個協作的工作空間。這個設計使得代理人不再是孤立的工具，而是具備角色和責任的數位員工。使用 TypeScript 和 Node.js，AgentSpace 提供了高效的開發環境，並且能夠支持多種部署模式。效能方面，該系統能夠處理多個代理人同時執行的任務，並且在高負載下仍能保持穩定。設計上選擇微服務架構，這樣能夠在不同的執行環境中靈活調度代理人，但也需要更多的初始配置。技術風險方面，隨著使用者數量的增加，可能會面臨性能瓶頸，特別是在數據庫的管理上。整合方面，AgentSpace 能夠與多種現有工具鏈相容，並且支持 CI/CD 流程的集成，這使得團隊能夠輕鬆地將其納入現有的工作流程中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含快速啟動指令，安裝過程順暢，無明顯坑。提供了良好的入門指南，但目前僅有英文版本，對於非英語使用者可能有些挑戰。
+> README 文件提供了清晰的安裝步驟和功能介紹，讓新手能夠快速上手。安裝過程相對順暢，但自我託管的設置可能對非技術用戶造成挑戰。文件中有基本的使用範例，幫助使用者理解如何啟動專案。整體來說，花 30 分鐘應該能夠完成基本的設置並啟動。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供完整的多代理協作框架，適合團隊使用。
-> - 強調治理和審計，確保敏感操作的安全性。
-> - 快速啟動開發環境，降低了使用門檻。
+> - 強大的治理功能，能夠對代理人的行為進行全面審計。
+> - 靈活的部署選擇，適合不同需求的團隊。
+> - 良好的多代理人協作支持，提升團隊效率。
 
 > [!danger] 缺點
-> - 對於小型專案可能過於複雜。
-> - 需要一定的學習曲線來熟悉 TypeScript 和 Node.js。
-> - 在高負載情況下性能可能會下降。
+> - 對於非技術用戶來說，自我託管的設置可能較為複雜。
+> - 目前的功能可能不適合小型團隊或單人使用。
+> - 需要穩定的網絡環境以確保代理人之間的協作。
 
 > [!warning] 注意事項
-> - 目前僅支援 Node.js 環境。
-> - 需要對 TypeScript 有基本了解以便進行自定義。
-> - 在高負載情況下，性能可能會受到影響，需進行優化。
+> - 目前僅支援 Node.js 環境，對於其他環境的支援尚未實現。
+> - 需要一定的技術背景來進行自我託管的設置。
+> - 在高負載情況下，可能需要額外的資源來確保性能。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的代理管理功能，但缺乏 AgentSpace 的多代理協作和治理框架。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於代理的競爭和性能測試，而 AgentSpace 更加強調團隊協作和治理。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | AgentSpriteForge 提供了更簡單的代理人管理，但缺乏 AgentSpace 的治理功能，適合小型專案。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 專注於代理人的開發，而 AgentSpace 更加重視團隊協作和治理，適合需要多方協作的情境。 |
 
 ## 替代方案決策
 
@@ -207,61 +199,62 @@ AgentSpace 的核心技術機制是基於微服務架構，使用 TypeScript 和
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體用量少，但功能較為單一。 | 如果需要更高效能的代理管理，且團隊對 Rust 有經驗。 | medium，因為需要重寫部分功能以適應 Rust 環境。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於代理的競爭和性能測試，功能較為專一。 | 如果需要專注於性能測試和代理競爭的場景。 | low，因為功能相似，遷移成本較低。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | AgentSpriteForge 提供了簡單的代理人管理，但缺乏治理功能，適合小型專案。 | 如果你的團隊需要快速上手且不需要複雜的治理功能，AgentSpriteForge 會是更好的選擇。 | low，因為其 API 和功能較為簡單，遷移成本低。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 專注於代理人的開發，而 AgentSpace 更加重視團隊協作和治理。 | 如果你的團隊已經在使用 Boneyard 並需要更強的治理功能，則考慮轉向 AgentSpace。 | medium，因為需要重新設計部分工作流程以適應新的治理架構。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **AgentSpace** | **agent-sprite-forge** | **Duel-Agents** |
+> | 維度 | **AgentSpace** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量少，但功能較為單一。 | 專注於代理的競爭和性能測試，功能較為專一。 |
-> | 遷移成本 | - | medium，因為需要重寫部分功能以適應 Rust 環境。 | low，因為功能相似，遷移成本較低。 |
-> | 適用場景 | 主要場景 | 如果需要更高效能的代理管理，且團隊對 Rust 有經驗。 | 如果需要專注於性能測試和代理競爭的場景。 |
+> | 技術路線 | 本專案 | AgentSpriteForge 提供了簡單的代理人管理，但缺乏治理功能，適合小型專案。 | Boneyard 專注於代理人的開發，而 AgentSpace 更加重視團隊協作和治理。 |
+> | 遷移成本 | - | low，因為其 API 和功能較為簡單，遷移成本低。 | medium，因為需要重新設計部分工作流程以適應新的治理架構。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要快速上手且不需要複雜的治理功能，AgentS | 如果你的團隊已經在使用 Boneyard 並需要更強的治理功 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合小型團隊試用，但不建議用於生產環境的核心路徑上。
+> 適合中小型團隊試用，但不建議用於生產環境的核心業務。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在高負載情況下，代理的反應時間可能會變慢。
-  - 解法：考慮增加伺服器資源或優化代理的執行邏輯。
-- [MEDIUM] 某些 CLI 指令在不同環境下可能會出現不一致的行為。
-  - 解法：確保在相同的 Node.js 環境中運行，並檢查依賴版本。
+- **[HIGH]** 在高負載情況下，代理人可能無法及時執行任務
+  - 解法：考慮增加伺服器資源以應對高流量
+- [MEDIUM] 自我託管的設置過程中可能會遇到依賴問題
+  - 解法：確保所有依賴都已正確安裝，並參考文檔進行設置
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 5 人以下的創業團隊需要協作使用多個代理 | 非常適合 | AgentSpace 提供了清晰的角色分配和治理框架，適合小型團隊使用。 |
-| 大型企業的多部門協作 | 適合 | 能夠有效管理多個代理的角色和責任，並提供審計功能。 |
-| 個人開發者的單一代理使用 | 不適合 | 對於單一代理使用來說，功能過於複雜，學習成本高。 |
+| 10 人以上的中型企業團隊 | 非常適合 | 能夠有效管理多個代理人的協作與治理。 |
+| 小型創業團隊 | 不適合 | 功能過於複雜，且治理需求不高。 |
+| 需要高效協作的開發團隊 | 適合 | 能夠自動化任務並提升團隊效率。 |
+| 單人使用的開發者 | 普通 | 雖然可以使用，但功能過於龐大，未必能發揮效用。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~15 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習，15 小時整合，得到高效的團隊協作效果，值得投入。
+> 花 5 小時學習，10 小時整合，得到高效的團隊協作效果，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：需要管理敏感資料和權限，必須確保適當的治理和審計流程。依賴鏈的信任程度需定期檢查，特別是在 CI/CD 環境中使用時。
+> 中等風險：需要適當的權限管理，並且可能存取敏感資料。依賴鏈的信任程度需進行評估，特別是在自我託管的情況下。
 
 ## 健康度儀表板
 
@@ -326,10 +319,10 @@ AgentSpace 的核心技術機制是基於微服務架構，使用 TypeScript 和
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 71 |
+| Forks | 74 |
 | Open Issues | 6 |
 | Issue 解決率 | 25% (2 closed) |
-| 最後推送 | 2026-07-01 |
+| 最後推送 | 2026-07-02 |
 | 建立日期 | 2026-06-22 |
 | 官方網站 | [Link](https://hire-an-agent.online/) |
 | Repo 大小 | 15.4 MB |
@@ -345,20 +338,20 @@ AgentSpace 的核心技術機制是基於微服務架構，使用 TypeScript 和
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@TianyuFan0504](https://github.com/TianyuFan0504) | 118 |
+> | [@TianyuFan0504](https://github.com/TianyuFan0504) | 119 |
 > | [@chaohuang-ai](https://github.com/chaohuang-ai) | 5 |
 > | [@hobostay](https://github.com/hobostay) | 2 |
 > | [@SEUWanglibo](https://github.com/SEUWanglibo) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和回應問題。
+**社群活躍度**：社群活躍度中等，最近有多次更新和功能增強。
 **連結**：[文件](https://hire-an-agent.online/)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-27 ~ 2026-07-01）
-> **活躍天數** 3 天 · **最新 commit** fix(feishu): finalize integration merge
+> [!abstract] 最近 10 次 commit（2026-06-27 ~ 2026-07-02）
+> **活躍天數** 4 天 · **最新 commit** docs: note feishu merge to main
 
 ## 熱門議題
 
@@ -467,6 +460,8 @@ AgentSpace 的核心技術機制是基於微服務架構，使用 TypeScript 和
 > 
 > ## News
 > 
+> - **2026-07-02** — The Feishu functionality has fully passed testing and has been merged into the `main` branch.
+> 
 > - **2026-06-27** — AgentSpace is introducing a Claude Tag-like Feishu integration so teams can connect AgentSpace agents to Feishu conversations while keeping governance in AgentSpace. The implementation branch is `codex/feishu-integration`.
 > 
 > - **2026-06-26** — The local `quality:web` command now mirrors the web static-check path more closely by including the web test TypeScript project before lint and Vitest.
@@ -549,14 +544,13 @@ AgentSpace 的核心技術機制是基於微服務架構，使用 TypeScript 和
 > As agents take on more execution, governance can't be an afterthought.
 > 
 > - Govern workspace roles, channels, documents, skills, knowledge, runtimes, daemon tokens, and Google credentials — all from one place.
-> - Support document access requests, runtime tool approvals, knowledge proposal reviews, and agent-scoped Google Workspace delegation.
-> - Inspect permissions by res
+> - Support document access requests, runtime tool
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[微服務]] · [[自動化]]
+相關概念：[[微服務]] · [[自動化]] · [[即時通訊]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[432539--gpt2api|432539/gpt2api]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[anomalyco--rift|anomalyco/rift]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[432539--gpt2api|432539/gpt2api]] · [[JohnRiceML--clawport-ui|JohnRiceML/clawport-ui]] · [[OasAIStudio--symphony-ts|OasAIStudio/symphony-ts]] · [[anomalyco--rift|anomalyco/rift]]
 
 [GitHub](https://github.com/HKUDS/AgentSpace) · [官方網站](https://hire-an-agent.online/)
 
@@ -598,7 +592,7 @@ AgentSpace 的核心技術機制是基於微服務架構，使用 TypeScript 和
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["多模態","微服務","自動化"];
+> const concepts = ["微服務","自動化","即時通訊"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "HKUDS--AgentSpace" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

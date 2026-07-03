@@ -577,7 +577,7 @@ Open RAM 可以與多種開發工具和框架整合，特別是與使用 JavaScr
 
 相關概念：[[區塊鏈]] · [[去中心化]] · [[AI 計算資源]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[NawfalMotii79--PLFM_RADAR|NawfalMotii79/PLFM_RADAR]]
 
 [GitHub](https://github.com/tryOpenRAM/OpenRAM) · [官方網站](https://tryopenram.app/)
 

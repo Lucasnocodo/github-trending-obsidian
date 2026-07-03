@@ -7,17 +7,17 @@ language: Python
 license: N/A
 description: "Python terminal multitool — OSINT, Discord, web & network utilities. Rich TUI, 13 themes, remote updates. Educational use only."
 homepage: ""
-stars: 3736
-stars_per_day: 117
-forks: 47
-open_issues: 10
+stars: 3819
+stars_per_day: 116
+forks: 48
+open_issues: 11
 created: 2026-05-30
 pushed_at: 2026-06-20
 first_seen: 2026-06-06
 week: "2026-W23"
 month: "2026-06"
 category: "開發工具"
-subcategory: "多工具"
+subcategory: "多功能工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-06
-use_case: "一個 Python 終端多工具，提供 OSINT、Discord、網路和社交媒體工具。"
+use_case: "提供多功能的 Python 終端工具，專注於 OSINT、Discord 和網路實用工具。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-06"
-star_history: "2026-06-06:656,2026-06-06:657,2026-06-07:880,2026-06-08:1175,2026-06-09:1413,2026-06-10:1614,2026-06-11:1795,2026-06-12:1906,2026-06-13:2011,2026-06-14:2101,2026-06-15:2161,2026-06-16:2212,2026-06-17:2183,2026-06-18:2235,2026-06-19:2318,2026-06-20:2404,2026-06-21:2479,2026-06-22:2628,2026-06-23:2840,2026-06-24:2974,2026-06-25:3087,2026-06-26:3173,2026-06-27:3254,2026-06-28:3360,2026-06-29:3447,2026-06-30:3502,2026-07-01:3610,2026-07-02:3736"
+star_history: "2026-06-06:656,2026-06-06:657,2026-06-07:880,2026-06-08:1175,2026-06-09:1413,2026-06-10:1614,2026-06-11:1795,2026-06-12:1906,2026-06-13:2011,2026-06-14:2101,2026-06-15:2161,2026-06-16:2212,2026-06-17:2183,2026-06-18:2235,2026-06-19:2318,2026-06-20:2404,2026-06-21:2479,2026-06-22:2628,2026-06-23:2840,2026-06-24:2974,2026-06-25:3087,2026-06-26:3173,2026-06-27:3254,2026-06-28:3360,2026-06-29:3447,2026-06-30:3502,2026-07-01:3610,2026-07-02:3736,2026-07-03:3819"
 tags:
   - github
   - "category/開發工具"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "Void-Tools-v2.0"
   - "V0id-v2/Void-Tools-v2.0"
-  - "一個 Python 終端多工具，提供 OSINT、Discord、網路和社交媒體工具。"
+  - "提供多功能的 Python 終端工具，專注於 OSINT、Discord 和網路實用工具。"
 ---
 
 # Void-Tools-v2.0
 
-**3.7k** stars · **117** stars/天 · 建立 32 天前 · Python · 未標註授權
+**3.8k** stars · **116** stars/天 · 建立 33 天前 · Python · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/V0id-v2--Void-Tools-v2.0");
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `discord-joiner` `discord-multi-tool` `discord-multitool` `discord-multitools` `discord-nuke-bot` `discord-nuker` `discord-nukers` `discord-raid` `discord-raid-tool` `discord-raider` `discord-token-gen` `discord-token-generator` `discord-tool` `discord-tools` `multi-tools` `multitool` `token-generator` `token-joiner` `token-nuker`
 
 > [!summary] 一句話摘要
-> 一個 Python 終端多工具，提供 OSINT、Discord、網路和社交媒體工具。
+> 提供多功能的 Python 終端工具，專注於 OSINT、Discord 和網路實用工具。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Growing · **熱度** Hot (117 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 11 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要進行社交媒體管理和 OSINT 研究的開發者和研究人員。
-> **一句話重點** 這個專案不僅提供多種工具，還透過友好的用戶界面和模組化設計，讓使用者能夠輕鬆擴展和自定義功能。
+> **安裝難度** Easy · **專案狀態** Growing · **熱度** Hot (116 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 12 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要一個多功能終端工具來進行 OSINT 和 Discord 管理的開發者。
+> **一句話重點** 這個專案的強大在於其多功能性和易用性，但使用時需注意安全性和合法性。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/V0id-v2--Void-Tools-v2.0");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "多工具" && p.file.name !== "V0id-v2--Void-Tools-v2.0" && p.status !== "archived")
+>     .where(p => p.subcategory === "多功能工具" && p.file.name !== "V0id-v2--Void-Tools-v2.0" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,102 +103,98 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 多工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 多功能工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，2 小時整合，得到全面的社交媒體和網路工具，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學、1 小時整合，得到多功能的終端工具，值得試用。
 
 > [!abstract] 核心創新
-> 提供一個模組化的終端多工具，整合了多種社交媒體和網路工具，並具備豐富的用戶界面。
+> 提供一個集成多種工具的終端界面，並支持即時更新和多主題選擇。
 
 ## 專案簡介
 
-VOID-TOOLS v2.5 是一款以 Python 和 Rich 框架構建的終端多工具，專為 OSINT、Discord 管理及網路工具而設計。使用者可以透過一個統一的儀表板來存取超過 150 種工具，這些工具依據類別進行整理，並且提供免費和付費模組的區分。安裝過程簡單，只需執行 `setup.bat` 和 `start.bat`，即可完成設置並啟動應用。這個工具的賣點在於其豐富的用戶界面和多主題支持，使用者可以選擇 13 種主題來自定義界面。技術上，這個專案使用了模組化架構，便於擴展和維護，並且支援遠端更新，讓使用者能夠隨時獲得最新的功能和修補。
+Void-Tools v2.6 是一款基於 Python 的多功能終端工具，專為 OSINT、Discord 和網路實用工具設計。用戶可以透過一個統一的儀表板訪問超過 150 種工具，這些工具依據類別進行整理，並支持多種主題和語言。安裝過程簡單，只需運行 `setup.bat` 來安裝依賴，然後用 `start.bat` 啟動應用。這款工具的賣點在於其豐富的用戶界面和即時更新功能，讓用戶能夠輕鬆訪問所需的工具。技術上，這個專案使用了 Rich 庫來構建終端界面，提供了流暢的用戶體驗。
 
-相較於其他類似工具如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，VOID-TOOLS 提供更直觀的用戶界面和更豐富的功能選擇，特別是在 Discord 管理方面。實際使用中，這個工具能夠處理各種社交媒體和網路查詢，對於需要進行 OSINT 研究的使用者來說，十分方便。儘管如此，使用者必須注意，這些工具僅限於教育和授權使用，否則可能違反相關法規。整體來看，這是一個適合小型團隊或個人開發者的工具，特別是那些需要進行社交媒體和網路調查的使用者。
+與其他工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，Void-Tools 提供了更全面的功能集，特別是在 Discord 工具的整合上。這使得它在需要多樣化工具的場景中更具優勢。儘管如此，該專案的使用應限於合法的教育目的，並且存在一些潛在的安全風險。社群活躍度不高，開放的問題數量顯示出維護的挑戰。總體來看，這是一個適合對 OSINT 和 Discord 工具有需求的開發者，但在生產環境中使用需謹慎考量。
 
-**技術棧**：`Python 3.11+` · `Rich`
+**技術棧**：`Python` · `Batchfile` · `Rich`
 
 ## 重點功能
 
-- 150+ 工具 — 涵蓋 OSINT、Discord 管理、網路工具等多種功能。
-- 13 種主題 — 使用者可以自定義界面風格，提升使用體驗。
-- 遠端更新 — 工具和配置可透過 manifest 自動更新，無需重新安裝。
-- 模組化架構 — 方便擴展和維護，使用者可添加自定義腳本。
-- 雙語支持 — 完整的法語和英語設置向導，適合不同語言使用者。
+- 150+ 種工具 — 包含 OSINT、Discord 和網路實用工具，滿足多樣需求。
+- 13 種主題 — 用戶可選擇不同的主題來自定義界面。
+- 即時更新 — 工具和配置可透過 manifest 遠端更新，保持最新狀態。
+- 雙語界面 — 支援法語和英語，方便不同語言的用戶使用。
+- 智能搜索 — 提供模糊查找功能，快速定位所需工具。
 
 ## 快速開始
 
-1. 下載並解壓縮 ZIP 檔
+1. 下載專案
 ```bash
-下載 ZIP 檔
+git clone https://github.com/V0id-v2/Void-Tools-v2.0.git
 ```
-2. 執行安裝腳本
+2. 安裝依賴
 ```bash
-setup.bat
+cd Void-Tools-v2.0 && setup.bat
 ```
 3. 啟動工具
 ```bash
 start.bat
 ```
-4. 完成設置向導
-```bash
-選擇語言、主題和用戶名
-```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 32 天內累積 3736 stars（117/天），forks 47（1.3%），顯示出一定的社群關注度。作者 V0id-v2 似乎專注於開發 Discord 相關的工具，這個專案解決了許多使用者在 Discord 管理和 OSINT 研究上的需求，之前的工具往往功能單一或界面不友好。最近的推廣活動和社群互動可能也促進了這個專案的曝光率。forks/stars 比率較低，顯示出使用者對於這個工具的實際修改需求不高，可能是因為它已經提供了足夠的功能。
+> 建立 33 天內累積 3819 stars（116/天），forks 48（1.3%），這顯示出一定的關注度。這個專案的作者 V0id-v2 似乎專注於開發 Discord 相關工具，解決了用戶在使用 Discord 時對多功能工具的需求。近期的熱門問題顯示出用戶對於安全性和工具功能的疑慮，這可能影響其未來的採用率。技術上，Python 的普及和 Rich 庫的應用使得這個工具的開發變得可行，並且能夠提供良好的用戶體驗。forks/stars 比率較低，顯示出大多數用戶仍在觀望。
 
 ## 適合誰使用
 
-**目標受眾**：需要進行社交媒體管理和 OSINT 研究的開發者和研究人員。
+**目標受眾**：需要一個多功能終端工具來進行 OSINT 和 Discord 管理的開發者。
 
 > [!example] 使用場景
-> - 社群管理員用它來管理 Discord 伺服器，因為內建的管理工具和指令可以快速處理用戶和頻道設定。
-> - OSINT 研究人員用它來查詢社交媒體資料，因為它提供了多種查詢工具，能夠快速獲取所需資訊。
-> - 網路安全專家用它來進行網路掃描和安全檢查，因為其多樣的網路工具能夠有效地識別潛在的安全漏洞。
+> - 資安研究員用它來進行 OSINT 調查，因為它提供了多種公共數據查詢工具，能快速獲取所需資訊。
+> - Discord 管理員用它來管理伺服器，因為它整合了多種 Discord 工具，能有效提升管理效率。
+> - 開發者用它來測試網路工具，因為其簡單的安裝和使用流程能快速上手，節省時間。
 
 ## 架構分析
 
-VOID-TOOLS 採用模組化架構，所有工具均以 Python 實現，並使用 Rich 框架提供豐富的用戶界面。資料流方面，使用者透過一個主儀表板進行操作，所有工具按類別整理，並可透過模糊搜尋快速找到所需功能。這種設計使得擴展和維護變得簡單，使用者可以輕鬆添加自定義模組。選擇 Python 作為開發語言的好處在於其豐富的庫和社群支持，但相對於 C++ 等語言，性能可能稍遜。整體而言，這種架構非常適合小型工具集的開發，但在處理大量資料時可能會遇到性能瓶頸。
+Void-Tools 的架構基於 Python 和 Rich 庫，這使得它能夠提供豐富的終端用戶界面。工具被模組化，使用者可以根據需求選擇不同的功能模組，並且透過簡單的批處理腳本來安裝和啟動。這種設計使得用戶能夠快速上手，然而，模組化的設計也可能導致在某些情況下功能整合不夠緊密。擴展性方面，使用者可以通過自定義腳本來擴展功能，但這需要一定的技術背景。
 
 ## 技術深入分析
 
-VOID-TOOLS 的核心技術機制在於其模組化架構，所有工具均以 Python 實現，並使用 Rich 框架來提供豐富的用戶界面。這樣的設計使得使用者可以透過一個統一的儀表板來存取各種功能，並且支援模糊搜尋來快速找到需要的工具。效能方面，由於使用 Python，對於小型資料集的處理非常流暢，但在面對大量資料時可能會出現性能瓶頸。設計上選擇 Python 主要是因為其生態系統豐富，易於開發和維護，但這也意味著在某些高效能需求的場景下可能不如 C++ 等語言。技術風險方面，若未來需要處理更大規模的資料，可能需要考慮重構或使用更高效的語言。整合方面，這個工具與主流的開發環境和 CI/CD 流程相容性良好，使用者可以輕鬆地將其納入現有的工作流中。
+Void-Tools 的核心技術在於使用 Python 和 Rich 庫來構建終端界面，這使得它能夠提供豐富的用戶體驗和即時反饋。該工具支持多種功能模組，並且用戶可以透過簡單的批處理腳本來安裝和啟動，這降低了使用門檻。效能方面，因為是基於 Python，對於大量資料的處理可能會有瓶頸，尤其是在高並發的情況下。設計上，選擇 Python 使得開發過程相對簡單，但也可能導致性能不如其他編譯語言。技術風險方面，使用者需注意安全性，特別是在進行 OSINT 調查時，可能會涉及敏感資料。整合方面，該工具可以與現有的 Discord 環境無縫對接，但在與其他工具鏈的整合上可能需要額外的適配工作。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和功能介紹。安裝過程相對順暢，但需要確保有正確的 Python 環境。文件目前僅提供英文版本，可能對非英語使用者造成一定的障礙。
+> README 文件提供了清晰的安裝指引和使用說明，讓新手能夠快速上手。安裝過程相對順暢，僅需運行批處理腳本即可完成。雖然文件沒有多語言支持，但提供了雙語界面，對於法語和英語用戶友好。整體來說，花 30 分鐘能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 界面友好，提供多主題選擇，提升使用體驗。
-> - 功能豐富，涵蓋多種社交媒體和網路工具，適合多種使用情境。
-> - 模組化設計，便於擴展和維護，支持自定義腳本。
+> - 多功能集成，滿足多樣化需求。
+> - 界面友好，易於使用。
+> - 支持即時更新，保持工具的最新狀態。
 
 > [!danger] 缺點
-> - 僅限於 Windows 作業系統，對於其他平台的使用者不友好。
-> - 部分功能為 premium，需額外支付，可能影響使用者體驗。
-> - 安裝需要 Python 環境，對於不熟悉的使用者有學習曲線。
+> - 社群活躍度低，問題解決率不高。
+> - 部分功能需付費，限制使用。
+> - 安全性問題需謹慎考量。
 
 > [!warning] 注意事項
-> - 僅限於 Windows 10/11 使用，未提供其他作業系統的支持。
-> - 需要 Python 3.11+ 環境，對於不熟悉 Python 的使用者可能有學習曲線。
-> - 部分功能標記為 premium，需額外支付才能使用。
+> - 僅供教育和授權使用，違規使用可能導致法律問題。
+> - 社群活躍度不高，問題解決率低，可能影響使用體驗。
+> - 部分功能標記為 premium，需額外付費獲取。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 Discord 管理功能，但界面較為簡單，缺乏多主題支持。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於網路安全工具，但功能較為單一，無法提供綜合的社交媒體管理。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 Discord 代理的開發，功能較為專一，適合需要特定功能的用戶。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 OSINT 工具，但界面和功能整合度不及 Void-Tools。 |
 
 ## 替代方案決策
 
@@ -206,16 +202,16 @@ VOID-TOOLS 的核心技術機制在於其模組化架構，所有工具均以 Py
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，提供更高的性能，但功能相對較少。 | 如果需要更高效能的工具，且不介意較少的功能選擇。 | medium，因為需要重新學習新的語言和工具。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於網路安全，功能較為單一，但性能優越。 | 如果主要需求是網路安全檢查，而不需要社交媒體管理功能。 | low，因為功能相似，轉移成本較低。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 Discord 代理的開發，功能較為專一，適合需要特定功能的用戶。 | 如果你的需求主要集中在 Discord 代理功能上，這個工具會更合適。 | low，因為功能專一，轉移過程相對簡單。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的 OSINT 工具，但界面和功能整合度不及 Void-Tools。 | 如果你需要一個簡單的 OSINT 工具，且不需要多功能性，這個工具會更適合。 | medium，因為功能和界面差異可能需要重新適應。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **Void-Tools-v2.0** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Rust 實作，提供更高的性能，但功能相對較少。 | 專注於網路安全，功能較為單一，但性能優越。 |
-> | 遷移成本 | - | medium，因為需要重新學習新的語言和工具。 | low，因為功能相似，轉移成本較低。 |
-> | 適用場景 | 主要場景 | 如果需要更高效能的工具，且不介意較少的功能選擇。 | 如果主要需求是網路安全檢查，而不需要社交媒體管理功能。 |
+> | 技術路線 | 本專案 | 專注於 Discord 代理的開發，功能較為專一，適合需要特定功能的用戶。 | 提供類似的 OSINT 工具，但界面和功能整合度不及 Void-Tools。 |
+> | 遷移成本 | - | low，因為功能專一，轉移過程相對簡單。 | medium，因為功能和界面差異可能需要重新適應。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要集中在 Discord 代理功能上，這個工具 | 如果你需要一個簡單的 OSINT 工具，且不需要多功能性，這 |
 
 ## 成熟度評估
 
@@ -226,44 +222,44 @@ VOID-TOOLS 的核心技術機制在於其模組化架構，所有工具均以 Py
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和學習，但不建議用於生產環境的核心功能。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 部分 premium 功能無法使用，需額外支付才能解鎖
-  - 解法：確認購買後再嘗試使用
-- **[HIGH]** 安裝過程中可能遇到 Python 環境問題
-  - 解法：確保安裝正確版本的 Python
-- [MEDIUM] 某些工具可能在 Discord 伺服器上無法正常運作
-  - 解法：確保擁有足夠的權限
+- **[HIGH]** 使用過程中可能會遇到安全性問題，特別是在進行 OSINT 調查時。
+  - 解法：確保只在合法範圍內使用，並遵循當地法律。
+- [MEDIUM] 社群活躍度低，問題解決速度慢。
+  - 解法：主動參與社群，尋求幫助或提供貢獻。
+- [MEDIUM] 部分功能需付費，可能影響使用體驗。
+  - 解法：評估是否需要付費功能，選擇合適的工具使用。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的社交媒體管理 | 非常適合 | 提供多種社交媒體管理工具，功能全面。 |
-| 大型企業的網路安全檢查 | 普通 | 雖然有網路工具，但不如專業安全工具全面。 |
-| 個人學習和實驗 | 非常適合 | 界面友好，適合新手使用。 |
-| 需要高效能的資料處理 | 不適合 | Python 性能可能無法滿足高效能需求。 |
+| 小型團隊進行 OSINT 調查 | 非常適合 | 提供多種工具，能快速獲取所需資訊。 |
+| 大型 Discord 伺服器管理 | 適合 | 整合多種 Discord 工具，提升管理效率。 |
+| 個人學習 Python 和終端工具 | 非常適合 | 易於上手，適合新手學習。 |
+| 企業級應用 | 不適合 | 安全性和穩定性不足，風險較高。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~2 小時 |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~1 小時 |
 | 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，2 小時整合，得到全面的社交媒體和網路工具，值得一試。
+> 花 2 小時學、1 小時整合，得到多功能的終端工具，值得試用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，主要操作在使用者的系統上進行，但使用者需確保遵守相關法規。
+> 中等風險：該工具需要訪問網路資源，並可能涉及敏感數據，使用時需謹慎。
 
 ## 健康度儀表板
 
@@ -328,8 +324,8 @@ VOID-TOOLS 的核心技術機制在於其模組化架構，所有工具均以 Py
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 47 |
-| Open Issues | 10 |
+| Forks | 48 |
+| Open Issues | 11 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-06-20 |
 | 建立日期 | 2026-05-30 |
@@ -344,8 +340,8 @@ VOID-TOOLS 的核心技術機制在於其模組化架構，所有工具均以 Py
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，有 Telegram 和 Discord 群組支持。
-**連結**：[文件](https://github.com/V0id-v2/Void-Tools-v2.0) · [Discord](https://discord.gg/voidv2)
+**社群活躍度**：社群活躍度不高，開放問題數量顯示出維護挑戰。
+**連結**：[Discord](https://discord.gg/voidv2)
 
 ## 開發動態
 
@@ -357,10 +353,10 @@ VOID-TOOLS 的核心技術機制在於其模組化架構，所有工具均以 Py
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
+> | [#17](https://github.com/V0id-v2/Void-Tools-v2.0/issues/17) | DO NOT DOWNLOAD THIS REPOSITORY!!!!!! | 0 | 1 |
 > | [#16](https://github.com/V0id-v2/Void-Tools-v2.0/issues/16) | What the hell is this? | 0 | 1 |
 > | [#15](https://github.com/V0id-v2/Void-Tools-v2.0/issues/15) | stealer .. DONT USE THIS | 0 | 0 |
 > | [#13](https://github.com/V0id-v2/Void-Tools-v2.0/issues/13) | the srar for acces dosent work | 0 | 0 |
-> | [#12](https://github.com/V0id-v2/Void-Tools-v2.0/issues/12) | I starred the repo but CANT get access to premium | 0 | 0 |
 
 ## README 摘錄
 
@@ -627,7 +623,7 @@ VOID-TOOLS 的核心技術機制在於其模組化架構，所有工具均以 Py
 
 ## 延伸閱讀
 
-相關概念：[[OSINT]] · [[Discord 管理]] · [[社交媒體工具]]
+相關概念：[[OSINT]] · [[Discord]] · [[自動化]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[calesthio--Crucix|calesthio/Crucix]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
 
@@ -635,11 +631,11 @@ VOID-TOOLS 的核心技術機制在於其模組化架構，所有工具均以 Py
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：多工具）
+> [!note]- 直接競品（同子分類：多功能工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "多工具" AND file.name != "V0id-v2--Void-Tools-v2.0"
+> WHERE subcategory = "多功能工具" AND file.name != "V0id-v2--Void-Tools-v2.0"
 > SORT stars DESC
 > ```
 
@@ -671,7 +667,7 @@ VOID-TOOLS 的核心技術機制在於其模組化架構，所有工具均以 Py
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["OSINT","Discord 管理","社交媒體工具"];
+> const concepts = ["OSINT","Discord","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "V0id-v2--Void-Tools-v2.0" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
