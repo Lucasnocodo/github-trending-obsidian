@@ -2640,10 +2640,10 @@
   },
   "Krishnagangwal/CS-Fundamentals": {
     "first_seen": "2026-06-30",
-    "last_seen": "2026-07-03",
-    "times_seen": 4,
+    "last_seen": "2026-07-04",
+    "times_seen": 5,
     "stars_first": 957,
-    "stars_last": 1444
+    "stars_last": 1517
   },
   "baairon/torlink": {
     "first_seen": "2026-06-30",
@@ -2654,10 +2654,10 @@
   },
   "yynxxxxx/Codex-5.5-codex-instruct-5.5": {
     "first_seen": "2026-06-30",
-    "last_seen": "2026-07-03",
-    "times_seen": 4,
+    "last_seen": "2026-07-04",
+    "times_seen": 5,
     "stars_first": 507,
-    "stars_last": 1127
+    "stars_last": 1304
   },
   "Pluviobyte/video-production-skills": {
     "first_seen": "2026-06-30",
@@ -2668,17 +2668,17 @@
   },
   "TianhangZhuzth/Fundamental-Ava": {
     "first_seen": "2026-07-01",
-    "last_seen": "2026-07-03",
-    "times_seen": 3,
+    "last_seen": "2026-07-04",
+    "times_seen": 4,
     "stars_first": 599,
-    "stars_last": 756
+    "stars_last": 520
   },
   "Kulaxyz/self-learning-skills": {
     "first_seen": "2026-07-02",
-    "last_seen": "2026-07-03",
-    "times_seen": 2,
+    "last_seen": "2026-07-04",
+    "times_seen": 3,
     "stars_first": 748,
-    "stars_last": 902
+    "stars_last": 806
   },
   "winsznx/bull-rush": {
     "first_seen": "2026-07-02",
@@ -2689,10 +2689,10 @@
   },
   "mekos2772/ios-location-spoofer": {
     "first_seen": "2026-07-02",
-    "last_seen": "2026-07-03",
-    "times_seen": 2,
+    "last_seen": "2026-07-04",
+    "times_seen": 3,
     "stars_first": 670,
-    "stars_last": 1148
+    "stars_last": 1266
   },
   "aquace/CVE-2026-41940-PoC": {
     "first_seen": "2026-07-02",
@@ -2717,9 +2717,37 @@
   },
   "diinki/linux-antiquity": {
     "first_seen": "2026-07-03",
-    "last_seen": "2026-07-03",
-    "times_seen": 1,
+    "last_seen": "2026-07-04",
+    "times_seen": 2,
     "stars_first": 505,
-    "stars_last": 505
+    "stars_last": 571
+  },
+  "HUANGCHIHHUNGLeo/claude-real-video": {
+    "first_seen": "2026-07-04",
+    "last_seen": "2026-07-04",
+    "times_seen": 1,
+    "stars_first": 569,
+    "stars_last": 569
+  },
+  "xuchonglang/investing-for-beginners": {
+    "first_seen": "2026-07-04",
+    "last_seen": "2026-07-04",
+    "times_seen": 1,
+    "stars_first": 506,
+    "stars_last": 506
+  },
+  "uzairansaruzi/hermex": {
+    "first_seen": "2026-07-04",
+    "last_seen": "2026-07-04",
+    "times_seen": 1,
+    "stars_first": 455,
+    "stars_last": 455
+  },
+  "wlzh/dji-4g-vohive-mac": {
+    "first_seen": "2026-07-04",
+    "last_seen": "2026-07-04",
+    "times_seen": 1,
+    "stars_first": 443,
+    "stars_last": 443
   }
 }

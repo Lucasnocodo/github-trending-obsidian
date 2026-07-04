@@ -7,9 +7,9 @@ language: QML
 license: MIT
 description: "A highly tasteful Linux-theme, reminiscent of art-nouveau and old drawings related to astronomy, science, and mythology."
 homepage: ""
-stars: 505
-stars_per_day: 101
-forks: 10
+stars: 571
+stars_per_day: 95
+forks: 12
 open_issues: 1
 created: 2026-06-27
 pushed_at: 2026-06-30
@@ -30,8 +30,8 @@ use_case: "提供一個藝術風格的 Linux 主題，靈感來自於藝術新�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-10"
+appearances: 2
+next_review: "2026-07-11"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 5
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-03"
-star_history: "2026-07-03:505"
+star_history: "2026-07-03:505,2026-07-04:571"
 tags:
   - github
   - "category/其他"
@@ -815,4 +815,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-04|2026-07-04]] — 再次上榜，571 stars
 - [[2026-07-03|2026-07-03]] — 首次收錄，505 stars
