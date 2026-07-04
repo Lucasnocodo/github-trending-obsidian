@@ -628,7 +628,7 @@ echo 'AT+QCFG="usbcfg",0x2C7C,0x0125,1,1,1,1,1,0,0' | socat - /dev/ttyUSB2,crnl
 
 相關概念：[[虛擬化]] · [[USB 直通]] · [[Linux]]
 
-相關專案：[[zerobootdev--zeroboot|zerobootdev/zeroboot]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]]
+相關專案：[[zerobootdev--zeroboot|zerobootdev/zeroboot]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[NawfalMotii79--PLFM_RADAR|NawfalMotii79/PLFM_RADAR]] · [[baoweise-bot--aimili-vpngate|baoweise-bot/aimili-vpngate]] · [[ps5-linux--ps5-linux-loader|ps5-linux/ps5-linux-loader]] · [[tryOpenRAM--OpenRAM|tryOpenRAM/OpenRAM]]
 
 [GitHub](https://github.com/wlzh/dji-4g-vohive-mac)
 
