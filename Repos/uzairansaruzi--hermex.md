@@ -7,12 +7,12 @@ language: Swift
 license: MIT
 description: "Native iPhone app for your Hermes agent"
 homepage: "https://hermexapp.com/"
-stars: 455
-stars_per_day: 455
-forks: 52
-open_issues: 32
+stars: 562
+stars_per_day: 281
+forks: 56
+open_issues: 33
 created: 2026-07-02
-pushed_at: 2026-07-04
+pushed_at: 2026-07-05
 first_seen: 2026-07-04
 week: "2026-W27"
 month: "2026-07"
@@ -30,10 +30,10 @@ use_case: "讓你從 iPhone 控制自己的 Hermes AI 代理，無需中介。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-07"
+appearances: 2
+next_review: "2026-07-08"
 contributor_count: 2
-engagement: "medium"
+engagement: "low"
 issue_close_rate: 11
 repo_size_kb: 10300
 readme_length: 7642
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-04"
-star_history: "2026-07-04:455"
+star_history: "2026-07-04:455,2026-07-05:562"
 tags:
   - github
   - "category/開發工具"
@@ -787,4 +787,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-05|2026-07-05]] — 再次上榜，562 stars
 - [[2026-07-04|2026-07-04]] — 首次收錄，455 stars

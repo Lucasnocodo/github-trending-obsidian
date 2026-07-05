@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Let Claude (or any LLM) actually watch a video — scene-aware, deduplicated frames + transcript, from a URL or local file. Runs locally, MIT."
 homepage: ""
-stars: 572
-stars_per_day: 191
-forks: 22
+stars: 768
+stars_per_day: 192
+forks: 38
 open_issues: 0
 created: 2026-06-30
-pushed_at: 2026-07-03
+pushed_at: 2026-07-04
 first_seen: 2026-07-04
 week: "2026-W27"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "讓 Claude（或任何 LLM）實際觀看視頻，提供場景感知�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-11"
+appearances: 2
+next_review: "2026-07-12"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-04"
-star_history: "2026-07-04:569,2026-07-04:572"
+star_history: "2026-07-04:569,2026-07-04:572,2026-07-05:768"
 tags:
   - github
   - "category/開發工具"
@@ -873,4 +873,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-05|2026-07-05]] — 再次上榜，768 stars
 - [[2026-07-04|2026-07-04]] — 首次收錄，569 stars
