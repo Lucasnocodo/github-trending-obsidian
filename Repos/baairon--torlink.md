@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "A sleek, zero-setup torrent finder and downloader that lives right in your terminal."
 homepage: "https://www.npmjs.com/package/torlnk"
-stars: 2861
-stars_per_day: 358
-forks: 188
-open_issues: 9
+stars: 2979
+stars_per_day: 331
+forks: 199
+open_issues: 14
 created: 2026-06-25
 pushed_at: 2026-07-03
 first_seen: 2026-06-30
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-30
-use_case: "一個無需設置的終端 Torrent 下載器，讓你輕鬆找到和下載 Torrent 檔案。"
+use_case: "在終端機中輕鬆找到和下載 torrent，無需任何設置。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 3
 next_review: "2026-07-05"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 61
+issue_close_rate: 50
 repo_size_kb: 167
 readme_length: 3329
 bus_factor: 1
-last_release_days: 2
+last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-30"
-star_history: "2026-06-30:659,2026-06-30:672,2026-07-01:1693,2026-07-01:1704,2026-07-02:2315,2026-07-02:2315,2026-07-03:2597,2026-07-04:2861"
+star_history: "2026-06-30:659,2026-06-30:672,2026-07-01:1693,2026-07-01:1704,2026-07-02:2315,2026-07-02:2315,2026-07-03:2597,2026-07-04:2861,2026-07-05:2979"
 tags:
   - github
   - "category/cli_工具"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "torlink"
   - "baairon/torlink"
-  - "一個無需設置的終端 Torrent 下載器，讓你輕鬆找到和下載 Torrent 檔案。"
+  - "在終端機中輕鬆找到和下載 torrent，無需任何設置。"
 ---
 
 # torlink
 
-**2.9k** stars · **358** stars/天 · 建立 8 天前 · TypeScript · MIT
+**3.0k** stars · **331** stars/天 · 建立 9 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/baairon--torlink");
@@ -79,13 +79,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `downloader` `magnet-links` `p2p` `torrent` `torrent-client` `zero-configuration`
 
 > [!summary] 一句話摘要
-> 一個無需設置的終端 Torrent 下載器，讓你輕鬆找到和下載 Torrent 檔案。
+> 在終端機中輕鬆找到和下載 torrent，無需任何設置。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (358 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要快速下載 Torrent 檔案但不想進行繁瑣設置的終端用戶。
-> **一句話重點** torlink 的設計讓 Torrent 下載變得前所未有的簡單，特別適合喜歡終端操作的用戶。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (331 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** 5+ 人 · **參與度** Low
+> **適合** 需要快速查找和下載 torrent 的終端用戶，尤其是不想安裝完整桌面應用的開發者和學生。
+> **一句話重點** 這個工具的最大優勢在於其零設置的使用體驗，讓 torrent 查找變得前所未有的簡單。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,93 +108,101 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到快速下載的效果，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~1h · **綁定風險** low
+> **結論** 花 1 小時學習和 1 小時整合，得到快速查找和下載的效果，值得使用。
 
 > [!abstract] 核心創新
-> torlink 提供了一個無需設置的終端 Torrent 下載體驗，讓用戶能快速找到和下載檔案。
+> 提供零設置的 torrent 查找和下載體驗，直接在終端中操作。
 
 ## 專案簡介
 
-torlink 是一個專為終端設計的 Torrent 下載工具，使用者只需安裝 Node.js，然後透過 `npx torlnk` 指令啟動，便可直接進入搜尋介面。它可以同時查詢多個受信任的 Torrent 來源，並即時顯示下載結果，包括檔案大小和分享者數量，讓使用者能快速選擇下載。下載過程在背景進行，並且會自動繼續分享已下載的檔案，這樣的設計促進了 Torrent 網路的健康運行。這個工具的賣點在於其零設置和簡單易用的介面，讓任何人都能輕鬆找到和下載 Torrent 檔案。技術上，torlink 使用 TypeScript 和 React，並依賴於 `webtorrent` 進行 P2P 下載，這使得它能夠在不依賴中央伺服器的情況下運行，確保了用戶的隱私。
+torlink 是一個在終端機中運行的 torrent 查找和下載工具，無需任何設置。用戶只需執行 `npx torlnk`，即可進入搜尋界面，輸入關鍵字或粘貼 magnet 連結，系統會從一系列經過篩選的來源中返回結果。用戶可以查看每個 torrent 的大小和分享者數量，選擇後按 `d` 下載，下載過程在背景中進行，並可隨時查看進度。這個工具的賣點在於其簡單性和高效性，特別適合不想花時間在繁瑣網站上的用戶。技術上，它使用 TypeScript 和 React，並依賴於 WebTorrent 進行下載，這使得它在處理 torrent 時非常輕量且快速。
 
-與其他 Torrent 客戶端相比，如 qBittorrent 和 Transmission，torlink 的優勢在於其簡化的使用流程和終端介面，適合喜歡命令行操作的用戶。對於需要快速下載而不想進行繁瑣設置的使用者，torlink 是一個理想的選擇。儘管如此，對於需要更高級功能（如完整的 Torrent 管理和多種下載選項）的用戶，傳統的 Torrent 客戶端可能更為合適。使用者在下載過程中可能會遇到某些來源無法訪問的情況，但這並不影響整體的使用體驗，因為 torlink 會自動跳過不可用的來源。整體而言，torlink 是一個穩定且易於使用的工具，適合個人用戶和小型團隊使用。
+相較於其他 torrent 客戶端，如 qBittorrent 和 Transmission，torlink 的優勢在於其零配置的使用體驗，適合快速查找和下載，而不需要安裝完整的桌面應用。這使得它在小型專案或臨時需求中非常有用。使用者可以在下載完成後選擇自動分享，這對於維護 torrent 生態系統尤為重要。儘管如此，對於需要更複雜功能的用戶，可能會覺得 torlink 的功能較為簡單。整體來看，這是一個適合個人使用的輕量級工具，特別是在需要快速查找和下載時。
 
-**技術棧**：`TypeScript 6.0.3` · `React 19.2.7` · `webtorrent 2.4.1`
+**技術棧**：`TypeScript` · `React` · `WebTorrent`
 
 ## 重點功能
 
-- 零設置 — 只需安裝 Node.js，透過 `npx torlnk` 開始使用。
-- 即時搜尋 — 同時查詢多個受信任的 Torrent 來源，顯示檔案大小和分享者數量。
-- 背景下載 — 下載過程在背景進行，使用者可繼續搜尋其他檔案。
-- 自動分享 — 下載完成後自動繼續分享檔案，促進 Torrent 網路的健康運行。
-- 簡單介面 — 使用者可透過鍵盤操作選擇下載，並隨時查看下載進度。
+- 零設置 — 用戶只需執行 `npx torlnk` 即可開始使用。
+- 多來源搜索 — 同時查詢多個可信來源，快速獲得結果。
+- 背景下載 — 下載過程在背景進行，允許用戶繼續搜索其他內容。
+- 自動分享 — 下載完成後自動開始分享，支持 torrent 生態系統。
+- 簡單的鍵盤操作 — 使用者可以通過簡單的鍵盤快捷鍵進行操作，無需記憶複雜指令。
 
 ## 快速開始
 
 1. 安裝 Node.js
 ```bash
-從 https://nodejs.org 下載並安裝
+從 https://nodejs.org 下載並安裝 Node.js
 ```
 2. 啟動 torlink
 ```bash
 npx torlnk
 ```
-3. 開始搜尋
-```bash
-在搜尋框中輸入關鍵字或磁鏈
+
+## 程式碼範例
+
+```ts
+{
+  "前置條件": "需要安裝 Node.js",
+  "指令": "npx torlnk",
+  "預期輸出": "進入搜尋界面，等待用戶輸入關鍵字或粘貼 magnet 連結。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 8 天內累積 2861 stars（358/天），forks 188（6.6%），這顯示出相當的用戶興趣。作者 baairon 是一位活躍的開發者，專注於簡化 Torrent 下載的過程，解決了傳統 Torrent 客戶端設置繁瑣的痛點。這個工具的出現正好符合了對於簡單、高效 Torrent 下載的需求，並且在社群中引發了討論，特別是在 Reddit 和 Hacker News 上。此工具的設計使得使用者能夠快速上手，這在當前的開發生態中是相當受歡迎的。forks/stars 比率為 6.6%，顯示出有不少用戶在實際修改和使用這個工具。
+> 建立 9 天內已累積 2979 stars（331/天），forks 199（6.7%），顯示出強勁的增長潛力。作者 baairon 之前有開發其他開源工具，這次專案解決了 torrent 查找過程中的繁瑣問題，提供了一個簡單的 CLI 解決方案。這個工具的出現正好滿足了用戶對於快速、無需設置的 torrent 下載需求，並且在社群中引起了討論，特別是關於其與 Tor 的品牌混淆問題。隨著 CLI 工具的流行，這樣的工具越來越受到開發者的青睞，尤其是在需要快速解決問題的場景中。
 
 ## 適合誰使用
 
-**目標受眾**：需要快速下載 Torrent 檔案但不想進行繁瑣設置的終端用戶。
+**目標受眾**：需要快速查找和下載 torrent 的終端用戶，尤其是不想安裝完整桌面應用的開發者和學生。
 
 > [!example] 使用場景
-> - 獨立開發者用它來快速下載開源軟體的 Torrent 檔案，因為它的零設置和簡單介面讓下載變得輕鬆。
-> - 學生用它來尋找和下載學術資源的 Torrent 檔案，因為它能快速找到多個來源並顯示下載速度。
-> - 小型團隊用它來分享大型檔案，因為它的自動分享功能能夠提高檔案的可用性和下載速度。
+> - 獨立開發者用它來快速下載開發所需的資料檔案，因為不需要繁瑣的設置和配置，直接在終端中操作即可。
+> - 學生用它來下載學術資源，因為能夠快速找到並下載需要的資料，節省了大量時間。
+> - 遊戲玩家用它來下載遊戲安裝檔，因為可以直接從信任的來源快速獲取遊戲，避免了繁瑣的網站導航。
 
 ## 架構分析
 
-torlink 採用 TypeScript 和 React 開發，使用 webtorrent 進行 P2P 下載，這使得它能夠在不依賴中央伺服器的情況下直接與 Torrent 網路交互。使用者的下載請求會被發送到多個受信任的來源，並且結果會即時回傳，這樣的設計確保了下載的效率和可靠性。選擇使用終端介面而非 GUI，讓工具更加輕量，適合喜歡命令行的開發者。這也意味著使用者需要對終端操作有一定的熟悉度，但這樣的設計能夠減少資源消耗，特別是在低配置的系統上。整體架構的選擇使得 torlink 在性能和使用便利性之間取得了良好的平衡。
+torlink 採用單一的 CLI 架構，因為這樣可以減少用戶的學習成本和設置時間。用戶輸入關鍵字後，系統會通過 WebTorrent 協議直接與 torrent 網絡進行交互，這樣設計的好處是簡化了下載流程，並且避免了中間伺服器的延遲。資料流從用戶輸入到搜尋結果，再到下載，整個過程都是即時的。
+
+選擇 CLI 而非 GUI 應用，能夠讓用戶在各種環境下輕鬆使用，尤其是在伺服器或無頭環境中。這樣的設計也使得工具的依賴性較低，僅需 Node.js 和一些輕量級的 npm 套件，利於快速部署和使用。整體來看，這樣的架構非常適合需要快速查找和下載的用戶，但對於需要更複雜功能的用戶可能會感到不足。
 
 ## 技術深入分析
 
-torlink 的核心技術機制是基於 TypeScript 和 React，這使得它能夠提供一個現代化的終端介面。它使用 webtorrent 進行 P2P 下載，這意味著所有的下載都是直接從 Torrent 網路中獲取，而不需要經過中央伺服器，這樣的設計確保了用戶的隱私和安全。效能上，torlink 能夠同時處理多個下載請求，並且即時顯示下載進度，這對於需要快速獲取檔案的使用者來說是非常重要的。設計上，選擇終端介面而非 GUI 使得工具更加輕量，適合在資源有限的環境中運行。這也意味著使用者需要對終端操作有一定的熟悉度，但這樣的設計能夠減少資源消耗，特別是在低配置的系統上。技術風險方面，隨著使用者數量的增加，可能會面臨更高的網路負載，這可能影響下載速度。整合方面，torlink 可以輕鬆地與其他 CLI 工具搭配使用，並且在 CI/CD pipeline 中也能夠發揮作用，這使得它在開發者社群中具有一定的吸引力。
+torlink 的核心技術機制是基於 TypeScript 和 React 實現的 CLI 工具，這使得它在開發上具有良好的可維護性和擴展性。它使用 WebTorrent 協議進行下載，這意味著用戶的資料不會經過中央伺服器，而是直接與 torrent 網絡交互，這樣的設計提高了下載的效率和安全性。效能方面，torlink 能夠快速處理用戶的請求，並且在下載過程中不會佔用過多的系統資源，適合在各種環境下運行。選擇 TypeScript 和 React 使得開發者能夠利用現有的生態系統，並且能夠快速迭代功能。這個選擇的代價是需要 Node.js 的支持，這對於某些用戶來說可能是一個障礙。技術風險方面，隨著用戶數量的增加，可能會面臨更高的網絡負載，這對於下載速度和穩定性會有影響。整合方面，torlink 可以輕鬆與其他 CLI 工具鏈結合，並且支持在 CI/CD 環境中使用，這使得它在開發流程中非常友好。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含了詳細的安裝和使用步驟，讓新手能夠快速上手。安裝過程順暢，只需安裝 Node.js 並執行一條命令即可啟動。文件中有提供基本的使用範例，對於新手來說非常友好。整體而言，花 30 分鐘內能夠順利運行起來。
+> README 文件清晰且包含詳細的使用說明，安裝過程簡單順暢。提供了良好的入門指南，讓新手能夠快速上手。文件目前僅有英文，可能對非英語使用者造成一定的障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用，無需繁瑣設置
-> - 支持多來源即時搜尋，提升下載效率
-> - 背景下載和自動分享功能，促進 Torrent 網路健康
+> - 簡單易用，無需設置，適合快速查找和下載。
+> - 支持多來源搜索，能夠快速獲得多個結果。
+> - 背景下載功能，允許用戶同時進行多個下載。
 
 > [!danger] 缺點
-> - 僅限於終端使用，對於不熟悉命令行的用戶不友好
-> - 缺乏高級 Torrent 管理功能
-> - 某些來源可能無法訪問，影響使用體驗
+> - 功能相對簡單，對於高級用戶可能不夠靈活。
+> - 僅支援 Node.js 22 以上版本，限制了使用者範圍。
+> - 不支援 Windows 環境下的某些功能，可能影響部分用戶。
 
 > [!warning] 注意事項
 > - 僅支援 Node.js 22 以上版本
-> - 對於需要高級 Torrent 管理功能的用戶可能不夠全面
-> - 某些來源可能無法訪問，影響搜尋結果
+> - 對於需要高級功能的用戶可能不夠靈活
+> - 不支援 Windows 環境下的某些功能
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [qbittorrent/qBittorrent](https://github.com/qbittorrent/qBittorrent) | qBittorrent 提供完整的 Torrent 管理功能和 GUI，適合需要高級功能的用戶，而 torlink 更專注於簡化下載流程。 |
-| [transmission/transmission](https://github.com/transmission/transmission) | Transmission 是一個輕量級的 Torrent 客戶端，適合桌面使用，而 torlink 則是命令行工具，適合喜歡終端操作的用戶。 |
+| [qbittorrent/qBittorrent](https://github.com/qbittorrent/qBittorrent) | qBittorrent 提供完整的桌面應用程式，支持更複雜的功能如 RSS 訂閱和遠端控制，而 torlink 則專注於簡單的 CLI 體驗。 |
+| [transmission/transmission](https://github.com/transmission/transmission) | Transmission 是一個輕量級的桌面 torrent 客戶端，支持多平台，但需要安裝和配置，而 torlink 則無需設置，直接在終端使用。 |
 
 ## 替代方案決策
 
@@ -202,16 +210,16 @@ torlink 的核心技術機制是基於 TypeScript 和 React，這使得它能夠
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [qbittorrent/qBittorrent](https://github.com/qbittorrent/qBittorrent) | qBittorrent 提供完整的 Torrent 管理功能和 GUI，適合需要高級功能的用戶，而 torlink 更專注於簡化下載流程。 | 如果你的團隊需要完整的 Torrent 管理功能和圖形介面，qBittorrent 是更好的選擇。 | medium，因為需要重新適應 GUI 環境和功能設置。 |
-| [transmission/transmission](https://github.com/transmission/transmission) | Transmission 是一個輕量級的 Torrent 客戶端，適合桌面使用，而 torlink 則是命令行工具，適合喜歡終端操作的用戶。 | 如果你需要一個簡單的桌面 Torrent 客戶端，Transmission 是不錯的選擇。 | low，因為兩者的基本 Torrent 功能相似，轉換相對容易。 |
+| [qbittorrent/qBittorrent](https://github.com/qbittorrent/qBittorrent) | qBittorrent 提供完整的桌面應用程式，支持更複雜的功能如 RSS 訂閱和遠端控制，而 torlink 則專注於簡單的 CLI 體驗。 | 如果需要更高級的功能和圖形界面來管理下載，qBittorrent 是更好的選擇。 | medium，因為需要重新適應 GUI 環境和功能。 |
+| [transmission/transmission](https://github.com/transmission/transmission) | Transmission 是一個輕量級的桌面 torrent 客戶端，支持多平台，但需要安裝和配置，而 torlink 則無需設置，直接在終端使用。 | 如果需要跨平台支持和更穩定的桌面應用，Transmission 是更合適的選擇。 | medium，因為需要適應不同的使用方式和界面。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **torlink** | **qBittorrent** | **transmission** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | qBittorrent 提供完整的 Torrent 管理功能和 GUI，適合需要高級功能的用戶，而 torlink 更專注於簡化下載流程。 | Transmission 是一個輕量級的 Torrent 客戶端，適合桌面使用，而 torlink 則是命令行工具，適合喜歡終端操作的用戶。 |
-> | 遷移成本 | - | medium，因為需要重新適應 GUI 環境和功能設置。 | low，因為兩者的基本 Torrent 功能相似，轉換相對容易。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要完整的 Torrent 管理功能和圖形介面， | 如果你需要一個簡單的桌面 Torrent 客戶端，Trans |
+> | 技術路線 | 本專案 | qBittorrent 提供完整的桌面應用程式，支持更複雜的功能如 RSS 訂閱和遠端控制，而 torlink 則專注於簡單的 CLI 體驗。 | Transmission 是一個輕量級的桌面 torrent 客戶端，支持多平台，但需要安裝和配置，而 torlink 則無需設置，直接在終端使用。 |
+> | 遷移成本 | - | medium，因為需要重新適應 GUI 環境和功能。 | medium，因為需要適應不同的使用方式和界面。 |
+> | 適用場景 | 主要場景 | 如果需要更高級的功能和圖形界面來管理下載，qBittorre | 如果需要跨平台支持和更穩定的桌面應用，Transmissio |
 
 ## 成熟度評估
 
@@ -222,44 +230,42 @@ torlink 的核心技術機制是基於 TypeScript 和 React，這使得它能夠
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人側項目試用，但不建議在生產環境的核心路徑上使用。
+> 適合個人使用和小型專案，但不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 某些 Torrent 來源可能無法訪問，導致搜尋結果不完整
-  - 解法：使用者可手動檢查來源的可用性
-- **[HIGH]** 對於不熟悉命令行的用戶，使用上可能會有困難
-  - 解法：建議提供更多的使用範例和指導
-- [MEDIUM] 下載過程中可能會遇到網路不穩定的情況
-  - 解法：使用穩定的網路連接以提高下載成功率
+- **[HIGH]** 在某些環境下執行時可能會遇到 'Segmentation fault' 錯誤
+  - 解法：確保 Node.js 版本符合要求，並檢查系統環境。
+- [MEDIUM] 某些來源可能會不穩定，導致查詢失敗
+  - 解法：使用其他來源進行查詢，或手動檢查來源狀態。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 適合 | 簡單易用，無需繁瑣設置，適合小型團隊快速上手使用。 |
-| 大型企業的 Torrent 管理系統 | 不適合 | 缺乏高級 Torrent 管理功能，無法滿足大型企業的需求。 |
-| 開發者需要快速下載開源軟體 | 非常適合 | 零設置和簡單介面讓開發者能快速找到和下載檔案。 |
-| 學生尋找學術資源 | 適合 | 能快速搜尋多個來源，適合學術研究的需求。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 簡單的 CLI 工具能快速集成，無需繁瑣的設置。 |
+| 大型團隊需要穩定的下載工具 | 不適合 | 功能較為簡單，無法滿足高級需求。 |
+| 學生需要快速下載學術資源 | 非常適合 | 快速查找和下載，無需安裝複雜的應用。 |
+| 需要高級功能的 torrent 用戶 | 不適合 | 缺乏高級功能和圖形界面，可能無法滿足需求。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
+| 學習時間 | ~1 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到快速下載的效果，值得一試。
+> 花 1 小時學習和 1 小時整合，得到快速查找和下載的效果，值得使用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：torlink 本身不需要高權限，所有檔案下載和分享都在用戶本地進行，不會存取敏感資料。
+> 低風險：該工具不需要高權限運行，並且不會存取敏感資料，僅與 torrent 網絡直接交互。
 
 ## 健康度儀表板
 
@@ -324,9 +330,9 @@ torlink 的核心技術機制是基於 TypeScript 和 React，這使得它能夠
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 188 |
-| Open Issues | 9 |
-| Issue 解決率 | 61% (14 closed) |
+| Forks | 199 |
+| Open Issues | 14 |
+| Issue 解決率 | 50% (14 closed) |
 | 最後推送 | 2026-07-03 |
 | 建立日期 | 2026-06-25 |
 | 官方網站 | [Link](https://www.npmjs.com/package/torlnk) |
@@ -378,7 +384,7 @@ torlink 的核心技術機制是基於 TypeScript 和 React，這使得它能夠
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有多個 PR 被合併，顯示出持續的開發和維護。
+**社群活躍度**：社群活躍度中等，最近有多次提交和問題回應。
 **連結**：[文件](https://github.com/baairon/torlink#readme)
 
 ## 開發動態
@@ -394,6 +400,7 @@ torlink 的核心技術機制是基於 TypeScript 和 React，這使得它能夠
 > | [#13](https://github.com/baairon/torlink/issues/13) | Branding. Nothing to do with Tor | 5 | 2 |
 > | [#40](https://github.com/baairon/torlink/issues/40) | feat: Add Music category with torrent sources | 2 | 0 |
 > | [#10](https://github.com/baairon/torlink/issues/10) | VPN Support | 2 | 1 |
+> | [#52](https://github.com/baairon/torlink/issues/52) | Got 'Segmentation fault (core dumped)' when executing 'npx t | 0 | 0 |
 
 ## README 摘錄
 
@@ -470,7 +477,7 @@ torlink 的核心技術機制是基於 TypeScript 和 React，這使得它能夠
 
 ## 延伸閱讀
 
-相關概念：[[P2P]] · [[Torrent]] · [[CLI/TUI]]
+相關概念：[[P2P]] · [[CLI/TUI]] · [[自動化]]
 
 相關專案：[[pixel-point--media-downloader|pixel-point/media-downloader]] · [[MayersScott--rkn-block-checker|MayersScott/rkn-block-checker]] · [[Narcooo--inkos|Narcooo/inkos]] · [[KNG7-P--Se7en-Pro|KNG7-P/Se7en-Pro]] · [[V0id-v2--Void-Tools-v2.0|V0id-v2/Void-Tools-v2.0]] · [[ahmadawais--chartli|ahmadawais/chartli]] · [[holysheep123--holysheep-cli|holysheep123/holysheep-cli]] · [[jackwener--bilibili-cli|jackwener/bilibili-cli]]
 
@@ -514,7 +521,7 @@ torlink 的核心技術機制是基於 TypeScript 和 React，這使得它能夠
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["P2P","Torrent","CLI/TUI"];
+> const concepts = ["P2P","CLI/TUI","自動化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "baairon--torlink" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

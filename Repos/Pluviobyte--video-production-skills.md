@@ -7,9 +7,9 @@ language: Python
 license: N/A
 description: "Reusable AI video production skills library for creation, recreation, motion design, openers, and QA."
 homepage: ""
-stars: 502
-stars_per_day: 72
-forks: 60
+stars: 508
+stars_per_day: 64
+forks: 61
 open_issues: 0
 created: 2026-06-26
 pushed_at: 2026-06-30
@@ -19,7 +19,7 @@ month: "2026-06"
 category: "開發工具"
 subcategory: "視頻製作"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
@@ -42,11 +42,12 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-30"
-star_history: "2026-06-30:444,2026-06-30:445,2026-07-01:483,2026-07-01:483,2026-07-02:492,2026-07-02:492,2026-07-03:498,2026-07-04:502"
+star_history: "2026-06-30:444,2026-06-30:445,2026-07-01:483,2026-07-01:483,2026-07-02:492,2026-07-02:492,2026-07-03:498,2026-07-04:502,2026-07-05:508"
 tags:
   - github
   - "category/開發工具"
   - "lang/python"
+  - easy_install
 aliases:
   - "video-production-skills"
   - "Pluviobyte/video-production-skills"
@@ -55,7 +56,7 @@ aliases:
 
 # video-production-skills
 
-**502** stars · **72** stars/天 · 建立 7 天前 · Python · 未標註授權
+**508** stars · **64** stars/天 · 建立 8 天前 · Python · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/Pluviobyte--video-production-skills");
@@ -68,16 +69,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
 > 提供可重用的 AI 視頻製作技能庫，幫助創建、復刻、動效設計等。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (72 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要提升視頻製作效率並希望重用技能的視頻編輯團隊。
-> **一句話重點** 這個專案的價值在於其模組化的技能庫設計，能夠顯著提高視頻製作的效率和質量。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (64 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 4 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要快速生成和復刻高質量視頻的內容創作者和視頻編輯師。
+> **一句話重點** 這個專案不僅是技能的集合，更是一個未來視頻製作的基礎架構，能夠隨著需求不斷演進。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -100,27 +101,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，能夠顯著提升視頻製作效率，值得採用。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，3 小時整合，得到高效的視頻製作能力，值得投入。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於將視頻製作過程中的技能進行組件化，實現重用和高效的視頻生成。
+> 這個專案的創新在於將視頻製作過程中的動效拆解為可重用的技術組件，實現更高效的視頻創作。
 
 ## 專案簡介
 
-這個專案是一個 AI 視頻製作技能庫，旨在收集可重用的技能以支持視頻創作、復刻、動效設計等過程。用戶可以透過提供的技能，如 `ai-motion-director`，來定義視頻的運動隱喻、節奏圖和素材需求，進而控制後續的視頻生成。每個技能都是獨立可安裝的，並且可以在 Codex、Claude Code 等 AI 編程代理中使用。這個庫的長期目標是將復刻的視頻元素轉化為可重用的技術組件，這樣未來的 AI 視頻生成不僅僅是靜態的幻燈片，而是能夠根據內容自動選擇合適的組件來生成更自然的視頻。
+這個專案是一個 AI 視頻製作技能庫，旨在收集可重用的技能以支持視頻創作、復刻、動效設計等。用戶可以透過 CLI 指令 `npx skills add https://github.com/Pluviobyte/video-production-skills --skill ai-motion-director` 安裝特定技能，這些技能包括 AI 動效導演、參考視頻復刻質檢等。核心機制是將視頻製作過程中的動效拆解成可重用的技術組件，這樣未來的 AI 生成視頻可以靈活選擇這些組件，而不是僅僅生成靜態的幻燈片式內容。這種設計不僅提高了視頻創作的效率，還能確保視頻質量，因為每個組件都有明確的使用場景和參數要求。
 
-技術上，這個專案使用 Python 開發，並且依賴於 HyperFrames 和 Remotion 等技術來實現動效的組件化。與傳統的視頻編輯工具相比，這個工具提供了一種更高效的方式來創建和管理視頻內容，特別適合需要快速迭代和高質量輸出的團隊。使用者在使用過程中可能會遇到技能安裝和組件整合的挑戰，但這些都是可以通過文檔和社群支持來解決的。整體來看，這是一個值得關注的專案，特別是對於那些希望提升視頻製作效率的團隊。
+技術上，這個庫使用 Python 實現，並依賴於 HyperFrames 和 Remotion 等技術來支持動效的組合與參數化。與傳統的視頻製作工具相比，這個庫的優勢在於其可重用性和靈活性，特別適合需要快速迭代和高質量視頻的團隊。使用者可能會遇到的問題包括如何選擇合適的技能，這在 README 中有詳細說明。這個專案目前處於早期階段，未來會持續擴展更多技能，適合對視頻製作有需求的開發者和設計師。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- AI 動效導演 — 定義視頻的運動隱喻和節奏圖，並控制後續視頻生成。
-- 參考視頻復刻 — 提供工具來精確復刻參考視頻，並驗證對齊程度。
-- 暗色 SaaS 短片 — 快速生成符合暗色風格的產品介紹視頻。
-- 黑底白字片頭 — 自動生成逐字打字效果的視頻開場，提升專業感。
-- 組件化技能 — 每個技能都可以獨立安裝和使用，支持靈活的視頻製作流程。
+- AI 動效導演 — 根據主題和腳本生成運動隱喻和組件計劃，使用 `ai-motion-director` 技能。
+- 參考視頻復刻質檢 — 拆解參考視頻並生成可重用的動效組件，使用 `reference-video-replica-qc` 技能。
+- 暗色 SaaS 短片生成 — 快速創建符合品牌風格的視頻，使用 `dark-saas-magic-video` 技能。
+- 黑底白字打字開場 — 生成逐字打字的視頻開場，使用 `black-white-text-opener` 技能。
+- 持續擴展的技能庫 — 隨著新技能的加入，庫的功能和應用場景不斷增強。
 
 ## 快速開始
 
@@ -140,7 +141,7 @@ npx skills add https://github.com/Pluviobyte/video-production-skills --skill ref
 ```bash
 npx skills add https://github.com/Pluviobyte/video-production-skills --skill dark-saas-magic-video
 ```
-5. 安裝黑底白字片頭技能
+5. 安裝黑底白字打字開場技能
 ```bash
 npx skills add https://github.com/Pluviobyte/video-production-skills --skill black-white-text-opener
 ```
@@ -149,62 +150,65 @@ npx skills add https://github.com/Pluviobyte/video-production-skills --skill bla
 
 ```python
 {
-  "前置條件": "需要安裝 Node.js 和 npx。",
+  "前置條件": "已安裝技能庫",
   "指令": "npx skills add https://github.com/Pluviobyte/video-production-skills --skill ai-motion-director",
-  "預期輸出": "成功安裝 ai-motion-director 技能，並可在後續視頻製作中使用。"
+  "預期輸出": "成功安裝 ai-motion-director 技能，準備開始使用。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 7 天內累積 502 stars（72/天），forks 60（12.0%），這顯示出這個專案在短時間內獲得了相當的關注。作者 Pluviobyte 在視頻製作領域有豐富的經驗，這個專案解決了傳統視頻製作過程中技能重複使用和效率低下的痛點。之前的解決方案往往依賴於手動編輯和重複性工作，這個工具通過自動化和組件化的方式來提高生產力。社群的活躍度和快速的迭代更新也為這個專案的成長提供了支持。
+> 建立 8 天就累積 508 stars（64/天），forks 61（12.0%），顯示出不錯的增長潛力。作者 Pluviobyte 在視頻製作領域有一定的經驗，這個專案解決了視頻製作過程中技能重用的痛點，之前的工具往往缺乏靈活性和可重用性。社群對於如何高效製作視頻的需求日益增加，這個工具正好滿足了這一需求。forks/stars 比率為 12.0%，顯示出使用者對於這個專案的實際應用有一定的興趣。
 
 ## 適合誰使用
 
-**目標受眾**：需要提升視頻製作效率並希望重用技能的視頻編輯團隊。
+**目標受眾**：需要快速生成和復刻高質量視頻的內容創作者和視頻編輯師。
 
 > [!example] 使用場景
-> - 視頻編輯師用它來快速生成視頻開場，因為它提供了現成的 `black-white-text-opener` 技能，能夠節省手動設計的時間。
-> - 內容創作者用它來復刻參考視頻，因為 `reference-video-replica-qc` 能夠幫助他們精確分析和重建視頻效果。
-> - 市場營銷團隊用它來創建暗色風格的產品介紹視頻，因為 `dark-saas-magic-video` 能夠快速生成符合品牌形象的視頻內容。
+> - 視頻編輯師用它來快速生成高質量的視頻開場，因為可以重用 `black-white-text-opener` 技能，節省了手動設計的時間。
+> - 產品經理用它來創建產品介紹視頻，因為 `dark-saas-magic-video` 技能能夠快速生成符合品牌風格的視頻。
+> - 內容創作者用它來復刻參考視頻，因為 `reference-video-replica-qc` 技能能夠幫助他們精確地拆解和重建視頻效果。
 
 ## 架構分析
 
-這個專案採用模組化架構，每個技能都是獨立的可安裝單元，這樣的設計使得用戶可以根據需求選擇安裝特定的技能。資料流方面，技能的使用流程是從主題和腳本開始，通過 `ai-motion-director` 進行運動隱喻和節奏圖的設計，然後將這些信息傳遞給具體的視頻生成技能。這樣的設計使得視頻製作過程更具彈性和可控性。選擇模組化架構的代價在於需要用戶對各個技能的整合有一定的理解，否則可能會導致使用上的困難。整體上，這個架構能夠支持未來的擴展，隨著新技能的加入，整體系統的功能也會不斷增強。
+這個專案採用模組化架構，每個技能都是獨立的目錄，便於管理和擴展。資料流從用戶輸入主題和腳本開始，然後由 AI 動效導演決定視頻的運動隱喻和組件調度，最後將任務交給具體的技能執行。這種設計使得技能之間的依賴性降低，便於未來擴展更多技能。
+
+選擇 Python 作為開發語言，因為其在數據處理和機器學習方面的強大生態系統。這樣的選擇雖然增加了對 Python 環境的依賴，但也使得開發者能夠快速利用現有的庫和工具。整體架構的擴展性良好，未來可以根據需求增加更多的技能和功能。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於將視頻製作過程中的各種技能進行模組化，每個技能都可以獨立安裝和使用。這種設計使得用戶可以根據具體需求選擇合適的技能，從而提高工作效率。效能方面，這些技能能夠快速生成高質量的視頻內容，特別是在需要快速迭代的環境中。設計上選擇 Python 作為開發語言，這使得專案在處理數據和視頻生成時具備了良好的靈活性和擴展性。相較於傳統的視頻編輯工具，這個專案提供了更高的自動化程度，能夠減少手動操作的需求。技術風險方面，模組化設計可能導致用戶在整合不同技能時遇到挑戰，特別是在技能之間的依賴性未明確時。整合方面，這個專案與主流的視頻編輯工具相容性良好，能夠在現有的工作流中輕鬆嵌入使用。
+這個專案的核心技術機制在於將視頻製作過程中的動效拆解為可重用的組件，這樣的設計使得未來的 AI 生成視頻能夠靈活選擇適合的組件。使用 Python 作為開發語言，這使得開發者能夠利用豐富的庫和工具來加速開發。效能方面，這個專案的設計能夠支持多種視頻風格和方法，適合不同需求的視頻製作。選擇模組化架構的好處在於能夠方便地擴展和維護，未來可以根據需求添加更多技能。技術風險方面，對於 HyperFrames 和 Remotion 的依賴可能在未來的擴展中帶來挑戰，特別是在新技能的整合上。整合方面，這個專案能夠與現有的視頻編輯工具鏈相容，但對於非 Python 使用者來說，整合的摩擦點可能會增加。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且詳細，提供了豐富的使用範例和安裝指令。安裝過程相對順暢，但對於不熟悉命令行的用戶可能會有一定的學習曲線。文檔中有針對技能的詳細介紹，幫助用戶快速上手。整體來說，花 30 分鐘應該能夠成功運行起來。
+> README 文件清晰，提供了詳細的安裝指令和技能選擇說明。安裝過程相對順暢，但對於不熟悉 CLI 的用戶可能會有些挑戰。沒有專門的入門指南，但 README 中的示例足夠幫助新手上手。文件目前僅提供英文版本，可能對非英語使用者造成一定障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 技能模組化設計，便於重用和擴展。
-> - 支持多種視頻製作需求，靈活性高。
-> - 提供詳細的技能文檔和使用範例，降低學習成本。
+> - 提供可重用的視頻製作技能，提高創作效率。
+> - 支持多種視頻風格和方法，靈活性高。
+> - 持續擴展的技能庫，未來可用性強。
 
 > [!danger] 缺點
-> - 初期安裝和配置可能需要一定的技術背景。
-> - 對於不熟悉 Python 的用戶來說，使用門檻較高。
-> - 目前技能數量有限，可能無法滿足所有需求。
+> - 目前僅支持 Python，對其他語言的開發者不友好。
+> - 需要一定的學習曲線，特別是對於 HyperFrames 和 Remotion 的理解。
+> - 技能之間的相互依賴可能導致使用上的困惑。
 
 > [!warning] 注意事項
-> - 僅支援 Python 環境，其他語言不兼容。
-> - 需要安裝 Node.js 以使用 npx 命令。
-> - 不支持 Windows 環境的某些功能，可能需要 WSL。
+> - 目前僅支持 Python 環境，對於其他語言的支持尚未實現。
+> - 需要對 HyperFrames 和 Remotion 有基本了解，否則可能無法充分利用技能的功能。
+> - 技能的效果依賴於參數的正確設置，錯誤的參數可能導致不理想的視頻效果。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的視頻生成能力，但專注於角色動畫，而本專案更注重於視頻的動效和組件化。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 雖然也提供視頻處理功能，但缺乏本專案的技能庫和組件化設計，使用上不夠靈活。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建動態角色和場景，而本專案更側重於視頻製作的動效和質檢。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供視頻編輯的基礎功能，但缺乏本專案的可重用技能庫和高級動效設計功能。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 主要用於代碼生成，與本專案的視頻製作技能無法直接比較。 |
 
 ## 替代方案決策
 
@@ -212,16 +216,16 @@ npx skills add https://github.com/Pluviobyte/video-production-skills --skill bla
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色動畫生成，而本專案則更注重於視頻的整體動效和組件化。 | 如果你的項目重點在於角色動畫的創建，而不是整體視頻製作，則可以選擇這個工具。 | medium，因為需要重新學習其特有的工作流和技能。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供基本的視頻處理功能，但缺乏本專案的技能庫和組件化設計。 | 如果你的需求非常基本，且不需要複雜的動效設計，則可以考慮這個工具。 | low，因為功能簡單，容易上手。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建動態角色和場景，而本專案更側重於視頻製作的動效和質檢。 | 如果你的專案需要強調角色動畫和互動，這個工具會更合適。 | medium，因為需要重新設計動效的實現方式。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供視頻編輯的基礎功能，但缺乏本專案的可重用技能庫和高級動效設計功能。 | 如果你的需求僅限於基本的視頻編輯，這個工具會更簡單易用。 | low，因為功能相似，轉移成本低。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **video-production-skills** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於角色動畫生成，而本專案則更注重於視頻的整體動效和組件化。 | 提供基本的視頻處理功能，但缺乏本專案的技能庫和組件化設計。 |
-> | 遷移成本 | - | medium，因為需要重新學習其特有的工作流和技能。 | low，因為功能簡單，容易上手。 |
-> | 適用場景 | 主要場景 | 如果你的項目重點在於角色動畫的創建，而不是整體視頻製作，則可 | 如果你的需求非常基本，且不需要複雜的動效設計，則可以考慮這個 |
+> | 技術路線 | 本專案 | 專注於創建動態角色和場景，而本專案更側重於視頻製作的動效和質檢。 | 提供視頻編輯的基礎功能，但缺乏本專案的可重用技能庫和高級動效設計功能。 |
+> | 遷移成本 | - | medium，因為需要重新設計動效的實現方式。 | low，因為功能相似，轉移成本低。 |
+> | 適用場景 | 主要場景 | 如果你的專案需要強調角色動畫和互動，這個工具會更合適。 | 如果你的需求僅限於基本的視頻編輯，這個工具會更簡單易用。 |
 
 ## 成熟度評估
 
@@ -232,27 +236,27 @@ npx skills add https://github.com/Pluviobyte/video-production-skills --skill bla
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人或小型團隊的試用，不建議在生產環境中使用。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 安裝時可能會遇到依賴問題，特別是在不同操作系統上。
-  - 解法：確保所有依賴都已正確安裝，並參考文檔中的安裝指南。
-- [MEDIUM] 某些技能在特定環境下可能無法正常運行。
-  - 解法：在虛擬環境中測試技能，確保兼容性。
-- [MEDIUM] 技能之間的依賴性未明確，可能導致使用上的困難。
-  - 解法：仔細閱讀文檔，了解每個技能的依賴關係。
+- **[HIGH]** 安裝過程中可能會遇到依賴問題，特別是在不同的 Python 環境中。
+  - 解法：確保使用虛擬環境來管理依賴。
+- [MEDIUM] 對於不熟悉 HyperFrames 和 Remotion 的用戶，理解技能的使用可能會有困難。
+  - 解法：參考 README 中的示例和文檔。
+- [MEDIUM] 技能之間的相互依賴可能導致使用上的混淆。
+  - 解法：仔細閱讀每個技能的文檔，了解其依賴關係。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型創業團隊的視頻內容創作 | 非常適合 | 技能模組化設計能夠快速滿足不同需求。 |
-| 大型企業的視頻製作流程 | 普通 | 可能需要更多的自定義和整合工作。 |
-| 個人內容創作者的視頻編輯 | 非常適合 | 提供了多種現成技能，能夠快速上手。 |
-| 需要高效復刻參考視頻的團隊 | 非常適合 | 專案提供了針對復刻的專用技能，能夠提高效率。 |
+| 小型創業團隊需要快速生成產品介紹視頻 | 非常適合 | 技能庫能夠快速提供符合需求的視頻模板和效果。 |
+| 大型企業需要高質量的市場推廣視頻 | 適合 | 雖然技能庫功能強大，但可能需要更多的定制化工作。 |
+| 個人內容創作者希望復刻熱門視頻 | 非常適合 | 技能提供了高效的復刻工具，能夠精確拆解和重建視頻效果。 |
+| 對視頻製作不熟悉的使用者 | 不適合 | 需要一定的技術背景來理解和使用這些技能。 |
 
 ## 採用成本分析
 
@@ -264,12 +268,12 @@ npx skills add https://github.com/Pluviobyte/video-production-skills --skill bla
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，能夠顯著提升視頻製作效率，值得採用。
+> 花 5 小時學習，3 小時整合，得到高效的視頻製作能力，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：這個工具不需要高權限，也不存取敏感資料，適合在 CI/CD pipeline 中使用。
 
 ## 健康度儀表板
 
@@ -334,7 +338,7 @@ npx skills add https://github.com/Pluviobyte/video-production-skills --skill bla
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 60 |
+| Forks | 61 |
 | Open Issues | 0 |
 | 最後推送 | 2026-06-30 |
 | 建立日期 | 2026-06-26 |
@@ -348,8 +352,8 @@ npx skills add https://github.com/Pluviobyte/video-production-skills --skill bla
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，持續更新和維護。
-**連結**：[文件](https://github.com/Pluviobyte/video-production-skills/docs)
+**社群活躍度**：社群活躍，持續更新和擴展技能。
+**連結**：[文件](https://github.com/Pluviobyte/video-production-skills)
 
 ## 開發動態
 
@@ -489,7 +493,7 @@ npx skills add https://github.com/Pluviobyte/video-production-skills --skill bla
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[視頻編輯]] · [[動效設計]]
+相關概念：[[自動化測試]] · [[多模態]] · [[資料視覺化]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[Jane-xiaoer--xiaoer-videolab|Jane-xiaoer/xiaoer-videolab]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[AlexandrosGounis--pdfx|AlexandrosGounis/pdfx]] · [[432539--gpt2api|432539/gpt2api]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]]
 
@@ -533,7 +537,7 @@ npx skills add https://github.com/Pluviobyte/video-production-skills --skill bla
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","視頻編輯","動效設計"];
+> const concepts = ["自動化測試","多模態","資料視覺化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Pluviobyte--video-production-skills" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
