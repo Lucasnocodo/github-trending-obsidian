@@ -7,9 +7,9 @@ language: N/A
 license: MIT
 description: "A self-improving skill for AI coding agents (Claude Code, Cursor, AGENTS.md): recognize a hard-won golden path in a session and harvest it into a reusable skill/rule for next time."
 homepage: ""
-stars: 827
-stars_per_day: 138
-forks: 24
+stars: 837
+stars_per_day: 120
+forks: 25
 open_issues: 2
 created: 2026-06-28
 pushed_at: 2026-07-01
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-02
-use_case: "讓 AI 編碼代理學會自我改進，記錄並重用過去的成功經驗。"
+use_case: "讓 AI 編程代理能夠自我學習並保存成功的操作流程，以便下次使用。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-02"
-star_history: "2026-07-02:748,2026-07-02:748,2026-07-03:902,2026-07-03:902,2026-07-04:806,2026-07-04:806,2026-07-05:827,2026-07-05:827"
+star_history: "2026-07-02:748,2026-07-02:748,2026-07-03:902,2026-07-03:902,2026-07-04:806,2026-07-04:806,2026-07-05:827,2026-07-05:827,2026-07-06:837"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "self-learning-skills"
   - "Kulaxyz/self-learning-skills"
-  - "讓 AI 編碼代理學會自我改進，記錄並重用過去的成功經驗。"
+  - "讓 AI 編程代理能夠自我學習並保存成功的操作流程，以便下次使用。"
 ---
 
 # self-learning-skills
 
-**827** stars · **138** stars/天 · 建立 6 天前 · N/A · MIT
+**837** stars · **120** stars/天 · 建立 7 天前 · N/A · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Kulaxyz--self-learning-skills");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓 AI 編碼代理學會自我改進，記錄並重用過去的成功經驗。
+> 讓 AI 編程代理能夠自我學習並保存成功的操作流程，以便下次使用。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (138 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 4 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要提升 AI 編碼代理工作效率的開發者，特別是經常面對重複性任務的團隊。
-> **一句話重點** 這個專案的最大價值在於它能夠讓 AI 編碼代理記住過去的成功經驗，從而提升未來的工作效率。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (120 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要在多個 AI 編程代理中共享和重用知識的開發者。
+> **一句話重點** 這個專案讓 AI 編程代理能夠自我學習，捕捉成功的操作流程，從而提升工作效率。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,26 +102,24 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，得到顯著的工作效率提升，值得一試。
+> **結論** 花 2 小時學習，1 小時整合，能夠提升重複性任務的效率，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案的創新點在於能夠自動捕捉和重用 AI 編碼代理的成功經驗。
+> 這個專案的創新在於自動捕捉和重用 AI 編程代理的操作流程，提升了工作效率。
 
 ## 專案簡介
 
-這個專案的核心機制是幫助 AI 編碼代理（如 Claude Code 和 Cursor）在每次會話中識別並記錄成功的操作路徑，這樣在下次使用時就能自動加載這些知識，而不必重新學習。具體來說，當代理完成一個任務後，它會自動捕捉這個過程，包括成功和失敗的經驗，並將這些信息保存到指定的文件中。這樣的設計使得代理能夠在面對類似問題時，快速回憶起之前的解決方案，從而提高效率。使用者只需執行 `npx skills add kulaxyz/self-learning-skills` 指令來安裝，並可選擇性地指定要安裝的代理。這個工具的賣點在於它的自學能力，能夠持續改進代理的工作效率。
+這個專案的核心機制是讓 AI 編程代理在每次會話中識別出成功的操作流程（稱為 golden path），並將其保存為可重用的技能或規則。具體來說，當代理完成一項任務後，它會自動捕捉這個過程，包括成功和失敗的經驗，並在下次會話中自動加載這些信息，避免重複學習。這樣的設計使得代理能夠在面對相似問題時，迅速找到解決方案，提升工作效率。使用者可以透過 `npx skills add kulaxyz/self-learning-skills` 指令來安裝，並且這個工具支持多種代理，包括 Claude Code 和 Cursor。技術上，它依賴於 AGENTS.md 標準來持久化和加載知識，這意味著它可以靈活適應不同的環境。
 
-技術上，它依賴於一個名為 `skills` 的 CLI 工具，這使得它能夠與多種代理進行整合。與其他工具相比，如 Agent Sprite Forge 和 Codex Shim，這個專案的獨特之處在於其自動捕捉和重用知識的能力，這在面對重複性任務時尤為重要。使用者在實際操作中可能會遇到需要手動設置的情況，但整體來說，這個專案的設計理念是為了減少重複學習的時間。對於小型團隊或個人開發者來說，這是一個非常適合的工具，因為它能夠顯著提升工作效率。未來六個月內，這個專案可能會進一步增強其與其他代理的兼容性，並改善用戶界面以提升使用體驗。
-
-**技術棧**：`Node.js` · `npx`
+與其他工具相比，如 0x0funky/agent-sprite-forge 和 2aronS/Duel-Agents，這個工具專注於捕捉過程而非單一的結果，這使得它在面對複雜的調試和工作流時更具優勢。實際使用中，這個工具的效能取決於用戶的操作習慣和代理的配置，對於經常需要重複性任務的開發者來說，能顯著減少時間浪費。這個專案目前處於早期階段，活躍度不高，社群反饋也有限，對於想要在生產環境中使用的團隊來說，可能需要謹慎評估。適合那些需要在多個代理間共享知識的開發者，尤其是面對頻繁變動的工作環境時。對於小型團隊或個人項目，這個工具能夠快速上手，但在大型專案中可能會遇到整合上的挑戰。
 
 ## 重點功能
 
-- 自動捕捉成功經驗 — 當代理完成任務後，自動記錄過程和失敗經驗。
-- 多代理支持 — 可與 Claude Code、Cursor 等多種代理整合。
-- 即時學習 — 無需提示，代理能夠自動識別並保存有用的操作路徑。
-- 簡單安裝 — 使用 `npx skills add kulaxyz/self-learning-skills` 指令輕鬆安裝。
-- 持久化知識 — 保存的知識能在下次會話中自動加載，提升工作效率。
+- 自動捕捉成功的工作流程 — 當代理完成任務後，自動記錄成功的操作過程。
+- 支持多種代理 — 兼容 Claude Code、Cursor 等多種編程代理，靈活適應不同環境。
+- 持久化知識 — 將捕捉到的知識保存到指定的文件中，便於下次自動加載。
+- 失敗記錄 — 不僅記錄成功的步驟，還記錄失敗的經驗，幫助避免重複錯誤。
+- 靈活的安裝方式 — 提供 `npx` 安裝和手動安裝的選項，方便用戶選擇。
 
 ## 快速開始
 
@@ -129,67 +127,65 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 npx skills add kulaxyz/self-learning-skills
 ```
-2. 為特定代理安裝
+2. 全局安裝
+```bash
+npx skills add kulaxyz/self-learning-skills -g
+```
+3. 為特定代理安裝
 ```bash
 npx skills add kulaxyz/self-learning-skills -a claude-code
-```
-3. 無需安裝直接使用
-```bash
-npx skills use kulaxyz/self-learning-skills --skill self-learning | claude
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 827 stars（138/天），forks 24（2.9%），這顯示出一定的關注度。作者 Kulaxyz 是一位專注於 AI 工具開發的開發者，這個專案解決了 AI 編碼代理在每次會話中無法記錄和重用知識的痛點，之前的解決方案往往無法有效捕捉失敗的經驗。沒有明顯的觸發事件，但這個工具的設計符合當前對於 AI 效率提升的需求。forks/stars 比率較低，顯示出使用者對於這個工具的實際修改需求不高，可能是因為它的功能已經能夠滿足大多數人的需求。
+> 建立 7 天內累積 837 stars（119.57/天），forks 25（3.0%），這顯示出一定的興趣和初步的社群參與。作者 Kulaxyz 似乎專注於 AI 編程工具的開發，這個專案解決了 AI 編程代理在會話中無法持久化學習的痛點，之前的工具往往只能記住當前會話的上下文，無法自動學習和重用。這個工具的出現正好填補了這一空白，特別是對於需要長期調試和重複性任務的開發者來說，能夠自動捕捉和重用知識是非常有價值的。社群的反饋和需求也促進了這個專案的發展。
 
 ## 適合誰使用
 
-**目標受眾**：需要提升 AI 編碼代理工作效率的開發者，特別是經常面對重複性任務的團隊。
+**目標受眾**：需要在多個 AI 編程代理中共享和重用知識的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來記錄和重用複雜的部署流程，因為這樣可以節省每次部署時的學習時間，提升效率。
-> - AI 開發者用它來捕捉調試過程中的成功經驗，因為這樣能夠避免重複犯錯，提升開發速度。
-> - 新手開發者用它來學習常用命令和操作，因為這樣可以快速上手，減少學習曲線。
+> - 後端工程師用它來自動記錄和重用調試過程，因為這樣能減少每次重複學習的時間，提升工作效率。
+> - 前端開發者用它來保存常用的部署命令，因為這樣能避免每次都查找文檔，快速上手。
+> - DevOps 工程師用它來捕捉和重用操作流程，因為這樣能確保團隊成員在執行相同任務時不會遺漏關鍵步驟。
 
 ## 架構分析
 
-這個專案的架構基於 Node.js，使用 npx CLI 工具來安裝和管理技能。其設計目的是為了簡化安裝過程，並能夠與多種 AI 編碼代理進行整合。資料流方面，當代理完成任務後，會自動識別並記錄成功的操作路徑，這些信息會被持久化到指定的文件中。
-
-選擇使用 Node.js 是因為它的生態系統支持多種工具，並且易於擴展。這樣的選擇雖然使得依賴樹相對簡單，但在高負載情況下可能會影響性能。整體來說，這個架構的設計旨在提升使用者的工作效率，並減少重複學習的時間。
+這個專案的架構基於 AGENTS.md 標準，設計上旨在讓 AI 編程代理能夠持久化學習。它的資料流包括：首先，代理在完成任務時識別成功的操作流程；接著，這些流程被自動捕捉並保存到指定的文件中；最後，在下次會話中，這些保存的流程會被自動加載。這樣的設計使得用戶能夠在不同的代理間共享知識，並且減少重複學習的時間。選擇 AGENTS.md 標準的好處在於其靈活性和可擴展性，但這也意味著需要用戶對於不同代理的配置有一定的了解。整體而言，這個架構在小型專案中表現良好，但在大型專案中可能會遇到整合上的挑戰。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於 Node.js 的 CLI 工具，能夠自動捕捉和重用 AI 編碼代理的成功經驗。它使用了一種簡單的資料流設計，當代理完成任務後，會自動識別成功的操作路徑並將其持久化。這樣的設計使得使用者在下次會話中能夠快速回憶起之前的解決方案，從而提升效率。效能方面，這個工具能夠處理多種代理的需求，但在高負載情況下可能會影響性能。選擇 Node.js 作為技術棧的原因在於其生態系統的靈活性和擴展性，這使得專案能夠快速適應不同的需求。這個專案的設計取捨在於，它強調了自動捕捉和重用知識的重要性，但在某些情況下可能需要用戶手動設置，這對於新手來說可能會造成一定的困難。整合方面，這個工具能夠與多種主流代理進行整合，並且在 CI/CD pipeline 中的使用也相對友好。
+這個專案的核心技術機制在於自動捕捉和持久化 AI 編程代理的操作流程。它使用 AGENTS.md 標準來實現知識的持久化，這意味著不同的代理可以共享相同的知識庫。效能上，這個工具能夠快速記錄和加載操作流程，但具體的效能數據尚未提供。設計上，選擇 AGENTS.md 標準的好處在於其靈活性和可擴展性，但這也意味著需要用戶對於不同代理的配置有一定的了解。技術風險方面，這個專案可能在面對大型專案時遇到整合上的挑戰，特別是在不同代理之間的知識共享。整合到現有的工具鏈中，這個工具能夠與多種代理協同工作，但對於不在支持列表中的代理則無法使用。整體而言，這個專案在小型專案中表現良好，但在大型專案中可能會遇到挑戰。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了安裝和使用的範例，讓新手能夠快速上手。安裝過程順暢，無明顯的坑。文件目前僅提供英文版本，可能對某些使用者造成障礙。
+> README 文件清晰，提供了安裝步驟和使用範例。安裝過程順暢，使用 `npx` 指令能夠快速上手。文件目前僅提供英文，缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠自動捕捉和重用知識，提升工作效率。
-> - 簡單的安裝過程，適合各種開發者使用。
-> - 支持多種 AI 編碼代理，靈活性高。
+> - 能夠自動捕捉和重用操作流程，提升工作效率。
+> - 支持多種 AI 編程代理，靈活性高。
+> - 記錄失敗經驗，幫助用戶避免重複錯誤。
 
 > [!danger] 缺點
-> - 對於不在支持列表中的代理無法使用。
-> - 需要用戶手動設置某些配置，對新手不太友好。
-> - 在高負載情況下，可能會影響性能。
+> - 目前僅支持特定的代理，限制了使用範圍。
+> - 需要用戶主動觸發捕捉過程，無法完全自動化。
+> - 社群活躍度不高，可能缺乏及時的支持和更新。
 
 > [!warning] 注意事項
-> - 目前僅支持特定的 AI 編碼代理，對於不在支持列表中的代理無法使用。
-> - 需要用戶手動設置某些配置，對於新手可能有一定的學習曲線。
-> - 在高負載情況下，可能會影響代理的性能，導致捕捉失敗。
+> - 目前僅支持特定的 AI 編程代理，對於不在支持列表中的代理無法使用。
+> - 需要用戶主動觸發捕捉過程，無法完全自動化。
+> - 社群活躍度不高，可能缺乏及時的支持和更新。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建和管理 AI 代理的技能，而本專案則專注於自學和知識重用。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供了一個更為靜態的知識庫，而本專案則強調動態學習和即時捕捉。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成和管理代理的技能，而 self-learning-skills 更加強調自動捕捉和重用過程中的知識。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | Duel-Agents 提供多代理協作的功能，但不具備自動學習和記錄的能力，這使得 self-learning-skills 更適合需要持久化知識的場景。 |
 
 ## 替代方案決策
 
@@ -197,16 +193,16 @@ npx skills use kulaxyz/self-learning-skills --skill self-learning | claude
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建和管理 AI 代理的技能，而本專案則專注於自學和知識重用。 | 如果你的團隊需要一個更靈活的代理管理系統，而不僅僅是知識重用。 | medium，因為需要重新設計知識管理流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供了一個靜態的知識庫，而本專案則強調動態學習和即時捕捉。 | 如果你的團隊需要一個穩定的知識庫，而不需要動態學習的功能。 | low，因為可以直接將靜態知識導入。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成和管理代理的技能，而 self-learning-skills 更加強調自動捕捉和重用過程中的知識。 | 如果你的團隊需要生成和管理多個代理的技能，而不僅僅是捕捉過程。 | medium，因為需要重新配置技能管理的方式。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 提供多代理協作的功能，但不具備自動學習和記錄的能力，這使得 self-learning-skills 更適合需要持久化知識的場景。 | 如果你的團隊需要強調多代理之間的協作，而不太關注自動學習。 | low，因為可以直接使用現有的代理配置。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **self-learning-skills** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **self-learning-skills** | **agent-sprite-forge** | **Duel-Agents** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於創建和管理 AI 代理的技能，而本專案則專注於自學和知識重用。 | 提供了一個靜態的知識庫，而本專案則強調動態學習和即時捕捉。 |
-> | 遷移成本 | - | medium，因為需要重新設計知識管理流程。 | low，因為可以直接將靜態知識導入。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要一個更靈活的代理管理系統，而不僅僅是知識重用 | 如果你的團隊需要一個穩定的知識庫，而不需要動態學習的功能。 |
+> | 技術路線 | 本專案 | 專注於生成和管理代理的技能，而 self-learning-skills 更加強調自動捕捉和重用過程中的知識。 | 提供多代理協作的功能，但不具備自動學習和記錄的能力，這使得 self-learning-skills 更適合需要持久化知識的場景。 |
+> | 遷移成本 | - | medium，因為需要重新配置技能管理的方式。 | low，因為可以直接使用現有的代理配置。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要生成和管理多個代理的技能，而不僅僅是捕捉過程 | 如果你的團隊需要強調多代理之間的協作，而不太關注自動學習。 |
 
 ## 成熟度評估
 
@@ -217,27 +213,27 @@ npx skills use kulaxyz/self-learning-skills --skill self-learning | claude
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人側項目試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些代理中，可能無法正確捕捉失敗的經驗
-  - 解法：手動記錄失敗的經驗以便下次參考
-- **[HIGH]** 安裝過程中可能會遇到版本不兼容的問題
-  - 解法：確保所有依賴的版本都是最新的
-- [MEDIUM] 在高負載情況下，捕捉過程可能會延遲
-  - 解法：在低負載時使用，或考慮升級硬體
+- **[HIGH]** 在特定代理中可能無法正確捕捉流程，導致知識丟失
+  - 解法：確保代理配置正確，並手動記錄重要步驟
+- [MEDIUM] 社群活躍度不高，可能無法獲得及時的支持
+  - 解法：參考文檔和 GitHub issues 自行解決問題
+- [MEDIUM] 需要用戶主動觸發捕捉過程，否則可能錯過重要的學習機會
+  - 解法：定期檢查和手動記錄重要的操作流程
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 5 人以下的新創團隊 | 非常適合 | 能夠快速提升團隊的工作效率，減少重複學習的時間。 |
-| 大型企業的核心開發團隊 | 不適合 | 目前處於 alpha 階段，穩定性不足，無法承擔生產環境的需求。 |
-| AI 開發者需要快速迭代的環境 | 適合 | 能夠自動捕捉和重用成功經驗，提升開發速度。 |
-| 新手開發者學習常用命令 | 非常適合 | 能夠幫助新手快速上手，減少學習曲線。 |
+| 小型開發團隊需要快速記錄和重用調試過程 | 非常適合 | 能夠自動捕捉和重用操作流程，提升效率。 |
+| 大型企業需要在多個代理間共享知識 | 普通 | 雖然支持多代理，但在整合上可能會遇到挑戰。 |
+| 個人開發者希望簡化重複性任務 | 非常適合 | 能夠快速上手並提升工作效率。 |
+| 需要高穩定性的生產環境 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
 
 ## 採用成本分析
 
@@ -249,18 +245,12 @@ npx skills use kulaxyz/self-learning-skills --skill self-learning | claude
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到顯著的工作效率提升，值得一試。
+> 花 2 小時學習，1 小時整合，能夠提升重複性任務的效率，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具不需要高權限，且不存取敏感資料，使用時相對安全。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-這個工具最常與 AI 編碼代理搭配使用，特別是在開發和調試階段。實際整合範例是，在使用 Claude Code 進行開發時，可以通過安裝這個工具來自動捕捉和重用成功的操作路徑。與主流 CI/CD 工具（如 GitHub Actions）相容，並且可以輕鬆整合到現有的開發流程中。常見的整合問題包括版本不兼容，建議在安裝前檢查依賴版本。
+> 低風險：不會寫入敏感信息，僅記錄如何找到秘密的方式，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -325,7 +315,7 @@ npx skills use kulaxyz/self-learning-skills --skill self-learning | claude
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 24 |
+| Forks | 25 |
 | Open Issues | 2 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-07-01 |
@@ -340,8 +330,7 @@ npx skills use kulaxyz/self-learning-skills --skill self-learning | claude
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者在最近幾天內有持續的更新。
-**連結**：[文件](https://github.com/kulaxyz/self-learning-skills)
+**社群活躍度**：社群活躍度不高，目前只有 2 個開放問題未解決。
 
 ## 開發動態
 
@@ -504,9 +493,9 @@ npx skills use kulaxyz/self-learning-skills --skill self-learning | claude
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[AI 編碼代理]] · [[知識管理]]
+相關概念：[[自動化]] · [[CLI/TUI]] · [[Agent 框架]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[DietrichGebert--ponytail|DietrichGebert/ponytail]] · [[Fokkyp--SoftwareCopyright-Skill|Fokkyp/SoftwareCopyright-Skill]] · [[alchaincyf--darwin-skill|alchaincyf/darwin-skill]] · [[FoundZiGu--GuJumpgate|FoundZiGu/GuJumpgate]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[DietrichGebert--ponytail|DietrichGebert/ponytail]] · [[Fokkyp--SoftwareCopyright-Skill|Fokkyp/SoftwareCopyright-Skill]] · [[alchaincyf--darwin-skill|alchaincyf/darwin-skill]]
 
 [GitHub](https://github.com/Kulaxyz/self-learning-skills)
 
@@ -548,7 +537,7 @@ npx skills use kulaxyz/self-learning-skills --skill self-learning | claude
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","AI 編碼代理","知識管理"];
+> const concepts = ["自動化","CLI/TUI","Agent 框架"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Kulaxyz--self-learning-skills" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
