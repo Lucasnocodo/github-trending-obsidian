@@ -20,7 +20,7 @@ category: "開發工具"
 subcategory: "自動化"
 release_tag: "Pastel9"
 install_complexity: "medium"
-status: to-review
+status: archived
 my_rating: 0
 score_confidence: 0
 score_interest: 0

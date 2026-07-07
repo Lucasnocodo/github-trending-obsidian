@@ -7,17 +7,17 @@ language: C++
 license: NOASSERTION
 description: "Arma: Cold War Assault Remastered Source Code Repository."
 homepage: ""
-stars: 774
-stars_per_day: 60
-forks: 103
+stars: 776
+stars_per_day: 55
+forks: 104
 open_issues: 4
 created: 2026-06-22
 pushed_at: 2026-06-30
 first_seen: 2026-06-26
 week: "2026-W26"
 month: "2026-06"
-category: "其他"
-subcategory: "遊戲開發"
+category: "遊戲"
+subcategory: "遊戲引擎"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-26
-use_case: "提供《Arma: Cold War Assault》的重製版引擎與遊戲源代碼。"
+use_case: "提供《Arma: Cold War Assault》的重製版引擎和遊戲源碼。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,21 +42,21 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-26"
-star_history: "2026-06-26:494,2026-06-26:494,2026-06-27:624,2026-06-27:624,2026-06-28:662,2026-06-28:662,2026-06-29:688,2026-06-29:689,2026-06-30:714,2026-07-01:728,2026-07-02:739,2026-07-03:751,2026-07-04:761,2026-07-05:768,2026-07-06:774"
+star_history: "2026-06-26:494,2026-06-26:494,2026-06-27:624,2026-06-27:624,2026-06-28:662,2026-06-28:662,2026-06-29:688,2026-06-29:689,2026-06-30:714,2026-07-01:728,2026-07-02:739,2026-07-03:751,2026-07-04:761,2026-07-05:768,2026-07-06:774,2026-07-07:776"
 tags:
   - github
-  - "category/其他"
+  - "category/遊戲"
   - "lang/c++"
   - org
 aliases:
   - "CWR"
   - "BohemiaInteractive/CWR"
-  - "提供《Arma: Cold War Assault》的重製版引擎與遊戲源代碼。"
+  - "提供《Arma: Cold War Assault》的重製版引擎和遊戲源碼。"
 ---
 
 # CWR
 
-**774** stars · **60** stars/天 · 建立 13 天前 · C++ · NOASSERTION
+**776** stars · **55** stars/天 · 建立 14 天前 · C++ · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/BohemiaInteractive--CWR");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供《Arma: Cold War Assault》的重製版引擎與遊戲源代碼。
+> 提供《Arma: Cold War Assault》的重製版引擎和遊戲源碼。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (60 stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 5 天前) · **貢獻者** 2 人 · **參與度** Medium
-> **適合** 對遊戲引擎開發感興趣的獨立開發者或學生，特別是希望學習C++和遊戲開發的使用者。
-> **一句話重點** 這個專案不僅是遊戲的重製，更是對開源社群的一次回饋，讓開發者能夠深入學習遊戲引擎的運作。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (55 stars/day)
+> **授權** NOASSERTION · **維護** Active (最後推送 6 天前) · **貢獻者** 2 人 · **參與度** Medium
+> **適合** 對於希望探索和修改經典遊戲引擎的開發者和學術研究者。
+> **一句話重點** 這個專案不僅是遊戲源碼的重製，更是對經典遊戲的致敬，並鼓勵社群參與和創新。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/BohemiaInteractive--CWR");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "遊戲開發" && p.file.name !== "BohemiaInteractive--CWR" && p.status !== "archived")
+>     .where(p => p.subcategory === "遊戲引擎" && p.file.name !== "BohemiaInteractive--CWR" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,36 +96,42 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 遊戲開發 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 遊戲引擎 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花10小時學習，20小時整合，得到開源遊戲引擎的學習機會，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
+> **結論** 花5小時學習，10小時整合，得到一個可修改的經典遊戲引擎，值得探索。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於開源重製一個經典遊戲的引擎，讓社群能夠自由學習和修改。
+> 這個專案將經典遊戲的源碼現代化，並開放給社群進行修改和擴展。
 
 ## 專案簡介
 
-這個專案是《Arma: Cold War Assault》的重製版源代碼，包含了名為Poseidon的引擎，旨在讓社群能夠學習、修改和創建。核心流程是使用CMake構建環境，支持Windows和Linux平台，並且代碼已現代化至C++20。使用者可以透過執行`cmake --preset win-x64-clang-rwdi`來構建專案，這樣的設計使得跨平台開發變得更加簡單。這個專案的賣點在於它不僅提供了源代碼，還鼓勵社群參與，這在遊戲開發中是相當少見的。技術上，專案使用了CMake和Clang，這使得編譯過程更為靈活，並且支持多種編譯選項，從而提高了代碼的可維護性。與其他遊戲引擎相比，如Unity或Unreal Engine，這個專案的重點在於開源和社群驅動的開發，讓開發者能夠深入理解底層架構。
+這個專案是《Arma: Cold War Assault》的重製版源碼，名為Poseidon，旨在讓社群能夠研究、修改和擴展這款經典遊戲。核心機制是將原始的遊戲引擎現代化，使用C++20和CMake進行編譯，並支持Windows和Linux平台。使用者可以透過執行`cmake --preset win-x64-clang-rwdi`來設定建置環境，然後使用`cmake --build build/win-x64-clang-rwdi`來編譯遊戲。這樣的設計讓開發者能夠輕鬆地在不同平台上構建和運行遊戲，並且能夠利用現代C++的特性來提升性能和可維護性。
 
-這樣的開放性使得它特別適合那些希望深入學習遊戲引擎內部運作的開發者。實際使用中，使用者可能會遇到複雜的構建過程，尤其是在Linux環境下，這需要良好的文檔支持。維護者的活躍度相對較高，社群也在積極回應問題與建議。這個專案目前處於alpha階段，適合開發者進行實驗和學習，但不建議在生產環境中使用。未來六個月內，隨著社群的增長，可能會出現更多的工具和擴展。對於想要學習遊戲開發的開發者來說，這是一個很好的起點，但對於尋求即時解決方案的團隊來說，可能會感到不便。
+技術上，這個專案使用了CMake作為建置系統，並且在Windows和Linux上進行了交叉編譯，這使得它能夠在多種環境中運行。相比於其他遊戲引擎，這個專案的重點在於開放性和社群參與，允許開發者自由修改源碼，這在商業遊戲中是相對少見的。
+
+與Unity或Unreal Engine相比，這個專案的依賴性較低，因為它主要依賴於CMake和標準C++庫。
+
+使用者可能會遇到的問題包括建置過程的複雜性，特別是在Linux環境下，這在熱門問題中有提到。社群的活躍度相對較高，儘管目前只有4個開放的問題，但有些問題已經引起了不少反應，顯示出社群對這個專案的興趣。
+
+這個專案目前處於alpha階段，對於想要探索舊遊戲引擎或進行遊戲開發的開發者來說，這是一個值得關注的選擇。未來幾個月內，隨著社群的參與和貢獻，這個專案可能會變得更加成熟和穩定。
 
 **技術棧**：`C++20` · `CMake` · `Clang`
 
 ## 重點功能
 
-- 跨平台支持 — 支持Windows和Linux的構建環境。
-- 現代化代碼 — 使用C++20進行重構，提升代碼可讀性和維護性。
-- CMake構建系統 — 透過CMake進行靈活的構建配置，支持多種編譯選項。
-- 社群驅動開發 — 鼓勵社群參與，提供源代碼供學習和修改。
-- 完整的引擎代碼 — 包含遊戲引擎和執行檔的源代碼，便於深入研究。
+- 跨平台支持 — 支持Windows和Linux平台的遊戲開發。
+- 現代化的C++20代碼 — 提升性能和可維護性，使用最新的C++特性。
+- CMake建置系統 — 使用CMake簡化建置過程，支持多種編譯環境。
+- 開放源碼 — 允許用戶自由修改和分發源碼，促進社群貢獻。
+- 詳細的建置說明 — 提供清晰的指令和環境設置步驟，降低入門門檻。
 
 ## 快速開始
 
-1. 在Windows上構建專案
+1. 設定建置環境
 ```bash
 cmake --preset win-x64-clang-rwdi
 ```
@@ -133,71 +139,68 @@ cmake --preset win-x64-clang-rwdi
 ```bash
 cmake --build build/win-x64-clang-rwdi
 ```
-3. 在Linux上構建專案
-```bash
-cmake --preset linux-x64-clang-rwdi
-```
 
 ## 程式碼範例
 
 ```cpp
 {
-  "前置條件": "需要安裝CMake和Clang",
+  "前置條件": "需要安裝CMake和相應的編譯器；",
   "指令": "cmake --preset win-x64-clang-rwdi",
-  "預期輸出": "構建成功，生成遊戲執行檔"
+  "預期輸出": "生成適合Windows x64的遊戲可執行檔。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 13 天就累積 774 stars（59.5/天），forks 103（13.3%），這顯示出社群對於這個開源重製專案的高度興趣。這個專案由Bohemia Interactive發起，旨在讓玩家和開發者能夠自由地學習和修改遊戲代碼，這在遊戲開發領域是相當少見的。之前，玩家只能依賴官方版本，而這個專案提供了開源的選擇，讓社群能夠參與進來。推特和遊戲論壇的討論也促進了這個專案的曝光。這樣的開放性和社群驅動的模式使得它在技術生態中獲得了良好的反響，特別是在開源遊戲開發的背景下。forks/stars 比率為 13.3%，顯示出有相當比例的用戶在實際修改和使用這個專案。
+> 建立 14 天內累積 776 stars（55/天），forks 104（13.4%），顯示出強烈的社群興趣。這個專案由Bohemia Interactive發起，旨在釋放經典遊戲的源碼，讓社群能夠進行修改和擴展，填補了對於老遊戲引擎開放的需求。之前，類似的遊戲引擎多數是封閉的，開發者無法自由修改。這個專案的開放性和社群參與度吸引了許多開發者的注意，並且在社交媒體上引發了討論。這樣的開放策略在遊戲開發領域相對少見，讓這個專案在技術生態中脫穎而出。
 
 ## 適合誰使用
 
-**目標受眾**：對遊戲引擎開發感興趣的獨立開發者或學生，特別是希望學習C++和遊戲開發的使用者。
+**目標受眾**：對於希望探索和修改經典遊戲引擎的開發者和學術研究者。
 
 > [!example] 使用場景
-> - 遊戲開發者用它來學習遊戲引擎的底層架構，因為這個專案提供了完整的源代碼，能深入理解遊戲運作原理。
-> - Linux 使用者用它來構建和運行《Arma: Cold War Assault》，因為專案支持跨平台，並提供了相應的構建指令。
-> - 社群貢獻者用它來進行遊戲模組開發，因為開源的特性允許他們自由修改和擴展遊戲功能。
+> - 遊戲開發者用它來重製經典遊戲，因為可以自由修改源碼並利用現代C++特性提升性能。
+> - 學術研究者用它來研究遊戲引擎架構，因為這個專案提供了開放的源碼和詳細的建置說明。
+> - 社群貢獻者用它來創建新的遊戲模組，因為這個專案鼓勵社群參與並提供了必要的工具和文檔。
 
 ## 架構分析
 
-這個專案採用CMake作為構建系統，這使得跨平台支持變得更加簡單。資料流方面，源代碼經過現代化處理，使用C++20進行重構，這不僅提高了代碼的可維護性，也使得開發者能夠利用最新的語言特性。選擇CMake的原因在於它的靈活性和廣泛支持，這樣的選擇使得專案能夠在多種平台上運行。這個架構的trade-off在於，雖然CMake提供了強大的功能，但對於新手來說，學習曲線可能較陡峭。擴展性方面，這個專案的設計使得未來可以輕鬆加入新的功能或模組，社群的參與也將進一步推動這一點。
+這個專案採用CMake作為建置系統，並使用C++20進行開發，這樣的選擇使得專案能夠利用現代C++的特性來提升性能和可維護性。資料流方面，源碼經過編譯後生成可執行檔，並支持在Windows和Linux上運行。選擇CMake而非其他建置系統的原因在於其跨平台的特性，雖然這可能增加了初學者的學習曲線。擴展性方面，由於專案的開放性，社群可以自由修改和擴展功能，但這也可能導致維護上的挑戰，特別是在多個貢獻者同時進行修改時。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於C++20的現代化代碼，並使用CMake進行構建，這使得專案能夠在Windows和Linux上運行。效能方面，專案的設計考慮到了跨平台的需求，並且在編譯過程中使用了Clang，這樣的選擇使得編譯速度和代碼優化都有所提升。設計上，選擇CMake的原因在於它的靈活性和廣泛的支持，但這也意味著對於不熟悉CMake的開發者來說，學習曲線可能較陡。技術風險方面，專案目前處於alpha階段，未來可能會面臨API不穩定的問題，這對於依賴於穩定API的開發者來說是一個潛在的風險。整合方面，這個專案與主流的遊戲開發工具鏈（如Unity或Unreal Engine）相比，提供了更大的自由度，但也需要開發者具備更高的技術能力來進行整合和使用。
+這個專案的核心技術機制是將經典遊戲的源碼現代化，使用C++20和CMake進行編譯，這使得開發者能夠利用最新的語言特性來提升性能和可維護性。專案能夠支持Windows和Linux平台，這樣的設計讓開發者可以在多種環境中進行開發和測試。效能方面，使用CMake的優勢在於其跨平台支持，雖然這可能會增加初學者的學習曲線，但對於經驗豐富的開發者來說，這是一個強大的工具。選擇CMake而非其他建置系統的原因在於其靈活性和廣泛的社群支持。技術風險方面，開放源碼的特性可能導致維護上的挑戰，特別是在多個貢獻者同時進行修改時。整合方面，這個專案與現有的遊戲開發工具鏈相容性良好，能夠輕鬆集成到現有的開發環境中，並且支持CI/CD流程。整體而言，這個專案的設計和實作都顯示出對於現代開發需求的考量，並且為未來的擴展和社群貢獻提供了良好的基礎。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README文件清晰，提供了構建指令和基本說明；安裝過程中可能會遇到一些配置問題，特別是在Linux上；有基本的快速入門指導，但缺乏詳細的步驟說明；文件主要為英文，沒有多語言支持。
+> README文件提供了清晰的建置指令和環境設置步驟，對於新手來說相對友好。安裝過程中可能會遇到Linux環境的配置問題，但整體上是順暢的。文件中缺乏多語言支持，目前僅提供英文版本。整體而言，花30分鐘應該能夠成功跑起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開源代碼，社群可以自由學習和修改。
-> - 支持多平台構建，方便不同環境的開發者使用。
-> - 現代化的代碼基礎，使用C++20提升了可維護性。
+> - 開放源碼，允許自由修改和分發。
+> - 支持多平台，方便開發者在不同環境下使用。
+> - 現代化的代碼基礎，提升性能和可維護性。
 
 > [!danger] 缺點
-> - 構建過程複雜，對新手不友好。
-> - 缺乏官方遊戲數據，使用者需自行獲取。
-> - 目前處於alpha階段，功能和API可能不穩定。
+> - 建置過程可能對新手不友好，特別是在Linux上。
+> - 缺乏遊戲數據，需額外從Steam獲取。
+> - 社群支持目前仍在發展中，可能遇到問題時無法獲得快速回應。
 
 > [!warning] 注意事項
-> - 構建過程複雜，特別是在Linux環境下可能需要額外的配置。
-> - 不支持官方的遊戲數據，使用者需要自行獲取遊戲數據。
-> - 目前處於alpha階段，API和功能可能不穩定。
+> - 建置過程在Linux上可能較為複雜，需額外配置環境。
+> - 不包含遊戲數據，需從Steam獲取免費Demo。
+> - 目前僅有少量的開放問題，社群支持可能有限。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲角色生成，與本專案的重製引擎不同，適合不同的開發需求。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 提供AI代理的框架，與本專案的遊戲引擎重製無關，適合需要AI功能的專案。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲角色的生成和管理，而本專案則是針對整個遊戲引擎的重製。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供一個遊戲開發框架，但不如本專案開放源碼和社群支持。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 針對特定遊戲類型的開發，而本專案則是針對經典遊戲的重製。 |
 
 ## 替代方案決策
 
@@ -205,16 +208,16 @@ cmake --preset linux-x64-clang-rwdi
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Unity | 使用C#作為主要開發語言，提供了完整的編輯器和資源管理系統，與本專案的開源引擎相比，Unity的生態系統更為成熟。 | 如果你的團隊需要快速開發並尋求豐富的資源和社群支持，Unity會是更好的選擇。 | medium，因為需要將代碼和資源轉換為Unity支持的格式。 |
-| Unreal Engine | 使用C++和藍圖系統，提供高效的圖形渲染和物理模擬，與本專案相比，Unreal Engine更適合大型項目。 | 如果你的專案需要高品質的圖形和物理效果，Unreal Engine是更合適的選擇。 | high，因為需要重新設計遊戲邏輯和資源管理。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲角色的生成和管理，而本專案則是針對整個遊戲引擎的重製。 | 如果需要專注於角色生成和管理的功能，這個工具會更合適。 | medium，因為需要重新設計遊戲的角色管理系統。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供一個遊戲開發框架，但不如本專案開放源碼和社群支持。 | 如果需要一個更完整的遊戲開發框架，而不僅僅是引擎，則可以考慮這個工具。 | high，因為需要重構整個遊戲架構。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **CWR** | **Unity** | **Unreal Engine** |
+> | 維度 | **CWR** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用C#作為主要開發語言，提供了完整的編輯器和資源管理系統，與本專案的開源引擎相比，Unity的生態系統更為成熟。 | 使用C++和藍圖系統，提供高效的圖形渲染和物理模擬，與本專案相比，Unreal Engine更適合大型項目。 |
-> | 遷移成本 | - | medium，因為需要將代碼和資源轉換為Unity支持的格式。 | high，因為需要重新設計遊戲邏輯和資源管理。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要快速開發並尋求豐富的資源和社群支持，Unit | 如果你的專案需要高品質的圖形和物理效果，Unreal Eng |
+> | 技術路線 | 本專案 | 專注於遊戲角色的生成和管理，而本專案則是針對整個遊戲引擎的重製。 | 提供一個遊戲開發框架，但不如本專案開放源碼和社群支持。 |
+> | 遷移成本 | - | medium，因為需要重新設計遊戲的角色管理系統。 | high，因為需要重構整個遊戲架構。 |
+> | 適用場景 | 主要場景 | 如果需要專注於角色生成和管理的功能，這個工具會更合適。 | 如果需要一個更完整的遊戲開發框架，而不僅僅是引擎，則可以考慮 |
 
 ## 成熟度評估
 
@@ -225,58 +228,41 @@ cmake --preset linux-x64-clang-rwdi
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人學習和實驗，不建議用於生產環境的核心開發。
+> 適合個人試用和探索，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在Linux上構建時可能遇到依賴問題，特別是缺少必要的庫
-  - 解法：確保安裝所有CMake和Clang所需的依賴
-- [MEDIUM] 構建過程複雜，可能需要多次嘗試才能成功
-  - 解法：參考社群提供的解決方案和建議
-- [MEDIUM] 缺乏詳細文檔，對於新手來說不夠友好
-  - 解法：尋找社群論壇或Discord獲取幫助
+- **[HIGH]** 在Linux上建置過程中可能會遇到依賴問題
+  - 解法：確保所有依賴都已安裝，並參考社群提供的解決方案
+- [MEDIUM] 缺乏遊戲數據，無法直接運行編譯後的遊戲
+  - 解法：從Steam獲取免費Demo以獲得必要的遊戲數據
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型遊戲開發團隊想要重製經典遊戲 | 非常適合 | 提供完整的源代碼，適合學習和修改。 |
-| 大型遊戲開發公司需要穩定的引擎 | 不適合 | 目前處於alpha階段，功能不穩定。 |
-| 獨立開發者希望學習C++和遊戲引擎開發 | 非常適合 | 開源代碼提供了學習的機會。 |
-| 需要快速開發商業遊戲的團隊 | 不適合 | 構建過程複雜，可能影響開發進度。 |
+| 小型遊戲開發團隊希望重製經典遊戲 | 非常適合 | 開放源碼和現代化的代碼基礎使得修改和擴展變得容易。 |
+| 學術研究者希望分析遊戲引擎架構 | 適合 | 提供了完整的源碼和建置說明，便於研究。 |
+| 大型遊戲開發公司希望使用成熟的引擎 | 不適合 | 目前仍在alpha階段，穩定性不足。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~20 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花10小時學習，20小時整合，得到開源遊戲引擎的學習機會，值得一試。
+> 花5小時學習，10小時整合，得到一個可修改的經典遊戲引擎，值得探索。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個專案不需要高權限運行，且不存取敏感資料。依賴鏈中有少量未審計的依賴，但整體風險可控。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-這個專案最常與CMake和Clang搭配使用，通常在開發和構建階段進行整合。在一個使用CMake的專案中，你可以透過`cmake --preset win-x64-clang-rwdi`來構建專案，這樣的整合方式使得使用者能夠快速上手。與主流的CI工具（如GitHub Actions）相容性良好，但對於不熟悉CMake的開發者來說，可能需要額外的學習。整合過程中最常見的問題是依賴管理，確保所有必要的庫都已安裝是成功的關鍵。
-
-## 歷史脈絡
-
-> [!info] 這個工具為什麼現在出現？
-
-在這個專案出現之前，玩家只能依賴官方版本的《Arma: Cold War Assault》，而且無法進行任何修改。這個專案的出現讓開源社群能夠參與進來，填補了這一空白。隨著開源文化的興起，越來越多的開發者開始重視社群的參與，這使得這個專案的出現成為可能。
-
-未來，隨著社群的增長和技術的進步，這個專案可能會成為開源遊戲開發的一個重要範例。
+> 低風險：這個專案不需要高權限，且不存取敏感資料。依賴鏈的信任程度良好，沒有已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -341,7 +327,7 @@ cmake --preset linux-x64-clang-rwdi
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 103 |
+| Forks | 104 |
 | Open Issues | 4 |
 | Issue 解決率 | 20% (1 closed) |
 | 最後推送 | 2026-06-30 |
@@ -366,7 +352,7 @@ cmake --preset linux-x64-clang-rwdi
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，回應問題的速度相對較快。
+**社群活躍度**：社群活躍度中等，開放問題和反應數量顯示出一定的興趣。
 **連結**：[文件](https://github.com/BohemiaInteractive/CWR)
 
 ## 開發動態
@@ -380,7 +366,7 @@ cmake --preset linux-x64-clang-rwdi
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
 > | [#2](https://github.com/BohemiaInteractive/CWR/issues/2) | Thank you! | 47 | 4 |
-> | [#1](https://github.com/BohemiaInteractive/CWR/issues/1) | We were expecting Cold War Crisis remaster in Arma Reforger  | 38 | 3 |
+> | [#1](https://github.com/BohemiaInteractive/CWR/issues/1) | We were expecting Cold War Crisis remaster in Arma Reforger  | 39 | 3 |
 > | [#4](https://github.com/BohemiaInteractive/CWR/issues/4) | [Linux] Complicated build process and maybe better documenta | 0 | 6 |
 > | [#3](https://github.com/BohemiaInteractive/CWR/issues/3) | Setting up a correct build environment | 0 | 8 |
 
@@ -480,19 +466,19 @@ cmake --preset linux-x64-clang-rwdi
 
 ## 延伸閱讀
 
-相關概念：[[遊戲開發]] · [[開源]] · [[C++]]
+相關概念：[[遊戲引擎]] · [[開放源碼]] · [[CMake]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]] · [[leigest519--OpenGame|leigest519/OpenGame]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]] · [[leigest519--OpenGame|leigest519/OpenGame]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]]
 
 [GitHub](https://github.com/BohemiaInteractive/CWR)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：遊戲開發）
+> [!note]- 直接競品（同子分類：遊戲引擎）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "遊戲開發" AND file.name != "BohemiaInteractive--CWR"
+> WHERE subcategory = "遊戲引擎" AND file.name != "BohemiaInteractive--CWR"
 > SORT stars DESC
 > ```
 
@@ -500,7 +486,7 @@ cmake --preset linux-x64-clang-rwdi
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "BohemiaInteractive--CWR"
+> WHERE category = "遊戲" AND file.name != "BohemiaInteractive--CWR"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -524,7 +510,7 @@ cmake --preset linux-x64-clang-rwdi
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["遊戲開發","開源","C++"];
+> const concepts = ["遊戲引擎","開放源碼","CMake"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "BohemiaInteractive--CWR" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

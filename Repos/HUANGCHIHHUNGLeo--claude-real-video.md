@@ -16,17 +16,17 @@ pushed_at: 2026-07-06
 first_seen: 2026-07-04
 week: "2026-W27"
 month: "2026-07"
-category: "開發工具"
-subcategory: "視頻處理"
-release_tag: "v0.5.2"
-install_complexity: "medium"
+category: "AI/ML"
+subcategory: "視頻分析"
+release_tag: "v0.5.4"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-04
-use_case: "讓 Claude（或任何 LLM）實際觀看視頻，提供場景感知、去重的幀和轉錄，支持 URL 或本地文件。"
+use_case: "讓 Claude（或任何 LLM）實際觀看視頻，提供場景感知、去重的幀和轉錄，支持從 URL 或本地文件導入。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,28 +34,29 @@ appearances: 4
 next_review: "2026-07-10"
 contributor_count: 2
 engagement: "low"
-issue_close_rate: -1
-repo_size_kb: 759
-readme_length: 8638
+issue_close_rate: 100
+repo_size_kb: 1125
+readme_length: 8923
 bus_factor: 1
 last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-04"
-star_history: "2026-07-04:569,2026-07-04:572,2026-07-05:768,2026-07-06:1029,2026-07-06:1034,2026-07-07:1276"
+star_history: "2026-07-04:569,2026-07-04:572,2026-07-05:768,2026-07-06:1029,2026-07-06:1034,2026-07-07:1276,2026-07-07:1276"
 tags:
   - github
-  - "category/開發工具"
+  - "category/ai_ml"
   - "lang/python"
+  - easy_install
 aliases:
   - "claude-real-video"
   - "HUANGCHIHHUNGLeo/claude-real-video"
-  - "讓 Claude（或任何 LLM）實際觀看視頻，提供場景感知、去重的幀和轉錄，支持 URL 或本地文件。"
+  - "讓 Claude（或任何 LLM）實際觀看視頻，提供場景感知、去重的幀和轉錄，支持從 URL 或本地文件導入。"
 ---
 
 # claude-real-video
 
-**1.0k** stars · **207** stars/天 · 建立 5 天前 · Python · MIT
+**1.3k** stars · **213** stars/天 · 建立 6 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/HUANGCHIHHUNGLeo--claude-real-video");
@@ -68,23 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v0.5.2`
+`v0.5.4` `easy-install`
 
 > [!summary] 一句話摘要
-> 讓 Claude（或任何 LLM）實際觀看視頻，提供場景感知、去重的幀和轉錄，支持 URL 或本地文件。
+> 讓 Claude（或任何 LLM）實際觀看視頻，提供場景感知、去重的幀和轉錄，支持從 URL 或本地文件導入。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (207 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (213 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要分析視頻內容並將其轉化為 LLM 可理解格式的開發者和研究人員。
-> **一句話重點** 這個專案展示了如何讓 LLM 實際觀看視頻，開創了視頻分析的新方向。
+> **適合** 需要在本地環境中分析視頻內容的開發者和研究人員。
+> **一句話重點** 這個專案讓 LLM 能夠真正理解視頻內容，開創了視頻分析的新局面。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/HUANGCHIHHUNGLeo--claude-real-video");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "視頻處理" && p.file.name !== "HUANGCHIHHUNGLeo--claude-real-video" && p.status !== "archived")
+>     .where(p => p.subcategory === "視頻分析" && p.file.name !== "HUANGCHIHHUNGLeo--claude-real-video" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,40 +96,40 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 視頻處理 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 視頻分析 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** low
-> **結論** 花 3 小時學習，2 小時整合，得到高效的視頻分析工具，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，3 小時整合，得到高效的視頻分析工具，值得投資。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於能夠讓 LLM 實際觀看視頻，而不是僅僅依賴文本轉錄。
+> 這個專案的創新在於能夠讓 LLM 實際觀看視頻，而不僅僅是讀取轉錄文本。
 
 ## 專案簡介
 
-這個專案的核心機制是讓 LLM 能夠實際觀看視頻，而不僅僅是讀取轉錄文本。用戶可以透過 `crv <video>` 指令，從 URL 或本地文件中提取視頻的關鍵幀，並生成一個包含去重幀和轉錄文本的資料夾。這種方法的優勢在於，它能夠捕捉到每個場景變化的幀，而不是固定時間間隔的幀，這樣可以避免快速剪輯的內容被忽略。這個工具的賣點在於它的本地處理能力，所有的數據處理都在用戶的機器上進行，確保了隱私和安全性。
+這個專案的核心機制是讓 LLM 能夠實際分析視頻內容，而不僅僅是依賴文字轉錄。用戶可以將視頻的 URL 或本地文件輸入，系統會自動提取出重要幀，去除重複的幀，並轉錄音訊，最終生成一個可供 LLM 使用的整潔資料夾。這樣的設計使得 LLM 能夠更有效地理解視頻的內容，特別是快節奏的剪輯，因為它不再依賴固定的幀抽樣，而是根據場景變化來選擇幀。關鍵指令 `crv <video_url>` 便可啟動這一過程，並生成所需的幀和轉錄文本。
 
-技術上，這個專案依賴於 `yt-dlp` 來下載視頻，並使用 `Pillow` 進行圖像處理，這樣的選擇使得它能夠高效地處理視頻幀。與其他工具相比，例如直接使用 ChatGPT 只讀取轉錄文本，或是 Gemini 需要將視頻上傳到雲端進行處理，這個專案提供了更快的反應時間和更高的隱私保護。
+技術上，這個工具使用 Python 實作，依賴於 `yt-dlp` 來下載視頻，`Pillow` 用於圖像處理，並可選擇性使用 `openai-whisper` 進行音訊轉錄。這樣的選擇使得整體架構輕量且高效，且無需外部依賴，能夠完全在本地運行。
 
 
 
-在實際使用中，這個工具能夠處理各種視頻格式，並且不需要依賴外部服務，這使得它在處理敏感內容時特別有用。使用者可能會遇到的問題包括需要安裝 FFmpeg 和其他依賴，但這些都是常見的開發環境配置。
+與其他視頻分析工具相比，這個專案的優勢在於其本地處理能力，避免了將視頻上傳到雲端的隱私風險。像是 OpenAI 的工具通常需要將視頻上傳並進行固定幀抽樣，這可能會導致重要信息的遺失，而 `claude-real-video` 則能夠保留每個場景的關鍵幀，並且生成的資料更為精簡。
 
-目前這個專案處於 beta 階段，適合對視頻分析和 LLM 整合有需求的開發者。未來幾個月，隨著功能的增強和社群的擴大，這個專案有潛力成為視頻處理領域的重要工具。
+在使用效果上，這個工具能夠處理各種格式的視頻，並且不受網路延遲影響，因為所有處理都是在本地進行。使用者可以期待快速的處理速度，尤其是在短視頻的情況下，並且能夠靈活地選擇需要提交給 LLM 的幀和文本。
 
-建議使用場景包括：需要分析 YouTube 影片內容的內容創作者，想要從視頻中提取關鍵信息的研究人員，以及需要將視頻內容轉化為文本的開發者。相對於其他工具，這個專案在處理速度和隱私保護上有顯著優勢。
+這個專案目前處於穩定狀態，適合需要視頻分析的開發者，尤其是那些希望在本地環境中進行數據處理的團隊。未來可能會進一步擴展功能，例如增加對更多視頻格式的支持或改進轉錄準確性。
 
 **技術棧**：`Python 3.10` · `yt-dlp` · `Pillow`
 
 ## 重點功能
 
-- 場景感知幀提取 — 自動識別和提取視頻中的關鍵幀，避免固定時間間隔的取樣。
-- 去重幀生成 — 僅保留實際不同的幀，減少不必要的數據處理。
-- 本地處理 — 所有數據處理在用戶機器上完成，確保數據隱私。
-- 轉錄生成 — 自動將視頻中的音頻轉錄為文本，便於 LLM 理解。
-- 簡單的 CLI 指令 — 使用 `crv <video>` 指令輕鬆啟動視頻分析。
+- 場景感知幀提取 — 根據場景變化提取幀，避免固定抽樣的限制。
+- 去重幀處理 — 自動去除重複幀，減少 LLM 處理的 token 數量。
+- 本地處理 — 所有處理在本地進行，保護用戶隱私。
+- 音訊轉錄 — 使用 `openai-whisper` 進行音訊轉錄，生成文本。
+- 支持多種視頻來源 — 可從 URL 或本地文件導入視頻進行處理。
 
 ## 快速開始
 
@@ -136,67 +137,77 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 pip install -r requirements.txt
 ```
-2. 運行視頻分析
+2. 運行視頻處理
 ```bash
-crv <video_url_or_file>
+crv <video_url>
 ```
-3. 查看生成的資料夾
+3. 查看生成的幀和轉錄
 ```bash
-ls output_directory
+在指定資料夾中查看幀和文本文件。
+```
+
+## 程式碼範例
+
+```python
+{
+  "前置條件": "確保已安裝所有依賴。",
+  "指令": "crv <video_url>",
+  "預期輸出": "生成幀和轉錄文本，存放在指定資料夾中。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天就累積 1034 stars（207/天），forks 62（6.0%），顯示出穩定的增長潛力。作者 HUANGCHIHHUNGLeo 之前的專案顯示了他在視頻處理和 AI 領域的專業知識。這個工具解決了許多 LLM 不能直接處理視頻的痛點，提供了一種本地化的解決方案，避免了上傳數據到雲端的風險。社群對於能夠直接從視頻中提取信息的需求日益增加，這促進了這個工具的快速擴散。
+> 建立 6 天就累積 1276 stars（213/天），forks 78（6.1%），這顯示出強烈的興趣和潛在的使用者基礎。作者 HUANGCHIHHUNGLeo 在開源社群中活躍，過去的專案也集中在 AI 和視頻處理領域，這使得他具備相關的技術背景。這個專案解決了現有 LLM 無法有效處理視頻的痛點，特別是在場景變化快速的情況下，提供了一個本地化的解決方案，避免了上傳視頻的隱私問題。社群的反饋和需求推動了這個工具的快速成長，並且在 HN 等平台上引起了討論。
 
 ## 適合誰使用
 
-**目標受眾**：需要分析視頻內容並將其轉化為 LLM 可理解格式的開發者和研究人員。
+**目標受眾**：需要在本地環境中分析視頻內容的開發者和研究人員。
 
 > [!example] 使用場景
-> - 內容創作者用它來從 YouTube 影片中提取關鍵幀和轉錄，因為這樣可以快速生成視頻摘要，提高內容創作效率。
-> - 研究人員用它來分析視頻中的非語言信息，如手勢和情緒變化，因為這能夠提供更全面的數據支持。
-> - 開發者用它來將視頻內容轉化為可供 LLM 處理的文本，因為這樣可以在不依賴雲服務的情況下進行本地分析。
+> - 數據科學家用它來分析 YouTube 教學視頻，因為能夠快速提取關鍵幀和轉錄文本，減少手動標註的時間。
+> - 內容創作者用它來生成視頻摘要，因為可以自動提取重要幀並生成文本，提升工作效率。
+> - AI 研究員用它來訓練模型，因為能夠提供更豐富的視頻數據，幫助模型學習場景變化和音訊特徵。
 
 ## 架構分析
 
-這個專案採用 Python 作為主要開發語言，並使用 `yt-dlp` 下載視頻，`Pillow` 處理圖像。這樣的架構設計使得工具能夠在本地環境中高效運行，並避免了對外部服務的依賴。資料流方面，視頻首先被下載並提取幀，然後進行去重處理，最後生成轉錄文本。
-
-選擇本地處理的設計使得用戶能夠保持對數據的控制，但也要求用戶具備一定的環境配置能力。這個設計的代價是需要用戶自行安裝必要的依賴，可能會對新手造成一定的學習曲線。整體而言，這個架構在隱私和性能上取得了良好的平衡。
+這個專案採用 Python 實作，架構上以模組化的方式設計，主要功能分為幀提取、音訊轉錄和資料輸出。幀提取部分使用 `yt-dlp` 下載視頻，然後利用 `Pillow` 進行圖像處理，確保只保留重要的幀。音訊轉錄則是可選的，使用 `openai-whisper` 進行音訊分析，這樣的設計使得整體運行效率高且無需依賴外部服務。選擇本地處理的方式，雖然增加了使用者的計算負擔，但卻大幅提升了隱私保護，因為所有數據都不會上傳。這樣的設計使得使用者能夠完全掌控自己的數據，並且在處理速度上也能夠獲得更好的體驗。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是基於視頻幀提取和轉錄技術。它使用 `yt-dlp` 下載視頻，並利用 `Pillow` 進行幀處理，這樣的選擇使得工具能夠高效地處理視頻資料。效能上，這個工具能夠快速提取視頻中的關鍵幀，並生成轉錄文本，這對於需要分析視頻內容的開發者來說非常有用。設計上，選擇本地處理的方式能夠提高數據隱私，但也要求用戶具備一定的技術能力來安裝和配置環境。這個工具在處理速度和隱私保護上有顯著優勢，特別適合需要處理敏感內容的場景。與主流工具相比，這個專案在功能上更專注於視頻分析，而非僅僅是轉錄文本，這使得它在市場上具有獨特的競爭力。
+這個專案的核心技術機制在於幀提取和音訊轉錄。幀提取使用 `yt-dlp` 下載視頻，然後利用 `Pillow` 進行圖像處理，確保提取的幀是根據場景變化而非固定時間間隔，這樣可以避免重要信息的遺失。音訊轉錄則是使用 `openai-whisper`，這使得音訊的轉錄準確性得以提升。整體效能方面，這個工具能夠處理多達數小時的視頻，但具體的處理時間會依賴於視頻的長度和複雜性。
+
+選擇 Python 作為開發語言使得這個工具在開發和維護上都相對簡單，但也可能在性能上略遜於 C++ 等低階語言。這個專案的依賴關係相對簡單，主要依賴於 `yt-dlp` 和 `Pillow`，這使得整體安裝和使用都相對容易。技術風險方面，隨著視頻文件的增大，處理時間和資源消耗會顯著增加，這可能會影響使用者的體驗。整合方面，這個工具可以輕鬆地與現有的 Python 生態系統整合，並且可以在 CI/CD pipeline 中使用，這使得它在開發流程中非常友好。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的指導和範例，安裝過程相對順暢，但需要用戶自行安裝 FFmpeg。文件沒有多語言支持，主要以英文為主。整體來說，花 30 分鐘能夠順利運行起來。
+> README 文件提供了清晰的安裝和使用指引，並且包含了範例指令。安裝過程相對順暢，不會遇到太多坑。整體來說，花 30 分鐘內能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠本地處理視頻，確保數據隱私
-> - 高效提取關鍵幀，避免冗餘數據
-> - 自動生成轉錄文本，便於 LLM 理解
+> - 本地處理，保護用戶隱私。
+> - 能夠有效提取重要幀，減少無用數據。
+> - 支持多種視頻來源，靈活性高。
 
 > [!danger] 缺點
-> - 需要用戶自行安裝 FFmpeg 和其他依賴
-> - 對於某些視頻格式的支持可能有限
-> - 新手使用時可能需要一定的學習時間
+> - 需要一定的計算資源來處理視頻。
+> - 不支持實時視頻流處理，僅限靜態視頻。
+> - 對於大型視頻文件，處理時間可能較長。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.10 以上版本
-> - 需要安裝 FFmpeg 以進行視頻處理
-> - 對於某些視頻格式可能無法正確提取幀
+> - 僅支持 Python 3.10 及以上版本。
+> - 需要安裝 `yt-dlp` 和 `Pillow` 作為依賴。
+> - 不支持實時視頻處理，僅能處理靜態視頻文件。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成視頻中的角色動作，而非提取幀和轉錄文本，適合不同的應用場景。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 此工具主要用於視頻編輯和剪輯，而不是分析視頻內容，功能範圍有所不同。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成視頻中的角色和物體，而非幀提取和轉錄，適合不同的應用場景。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供視頻編輯功能，但不具備場景感知的幀提取能力，適合需要編輯而非分析的用戶。 |
 
 ## 替代方案決策
 
@@ -204,16 +215,16 @@ ls output_directory
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成視頻中的角色動作，而非提取幀和轉錄文本，提供了不同的功能。 | 如果你的需求是分析角色動作而非視頻內容，這個工具會更合適。 | medium，因為需要重新設計數據處理流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要用於視頻編輯和剪輯，功能範圍不同。 | 如果你的需求是視頻編輯而非分析，這個工具會更合適。 | high，因為需要重新考慮整個工作流程。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成視頻中的角色和物體，而非幀提取和轉錄，適合不同的應用場景。 | 如果你的需求是生成視頻中的角色而非分析視頻內容，這個工具會更合適。 | medium，因為需要重新設計數據處理流程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供視頻編輯功能，但不具備場景感知的幀提取能力，適合需要編輯而非分析的用戶。 | 如果你的需求是對視頻進行編輯而非分析，這個工具會更合適。 | low，因為編輯和分析的需求有所不同，但數據格式可能需要調整。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **claude-real-video** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於生成視頻中的角色動作，而非提取幀和轉錄文本，提供了不同的功能。 | 主要用於視頻編輯和剪輯，功能範圍不同。 |
-> | 遷移成本 | - | medium，因為需要重新設計數據處理流程。 | high，因為需要重新考慮整個工作流程。 |
-> | 適用場景 | 主要場景 | 如果你的需求是分析角色動作而非視頻內容，這個工具會更合適。 | 如果你的需求是視頻編輯而非分析，這個工具會更合適。 |
+> | 技術路線 | 本專案 | 專注於生成視頻中的角色和物體，而非幀提取和轉錄，適合不同的應用場景。 | 提供視頻編輯功能，但不具備場景感知的幀提取能力，適合需要編輯而非分析的用戶。 |
+> | 遷移成本 | - | medium，因為需要重新設計數據處理流程。 | low，因為編輯和分析的需求有所不同，但數據格式可能需要調整。 |
+> | 適用場景 | 主要場景 | 如果你的需求是生成視頻中的角色而非分析視頻內容，這個工具會更 | 如果你的需求是對視頻進行編輯而非分析，這個工具會更合適。 |
 
 ## 成熟度評估
 
@@ -224,44 +235,41 @@ ls output_directory
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，但不建議用在生產環境的核心路徑上。
+> 適合個人或小型專案試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些操作系統上安裝 FFmpeg 可能會遇到困難
-  - 解法：參考官方文檔進行安裝
-- [MEDIUM] 對於某些視頻格式，幀提取可能不完全
-  - 解法：使用常見格式如 MP4 進行測試
-- [MEDIUM] 轉錄文本的準確性可能受到音質影響
-  - 解法：確保視頻音質良好以提高準確性
+- **[HIGH]** 處理大型視頻時可能會導致記憶體不足的問題。
+  - 解法：分段處理視頻，避免一次性加載過多數據。
+- [MEDIUM] 音訊轉錄的準確性可能受限於背景噪音。
+  - 解法：在安靜環境下錄製視頻以提高轉錄質量。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要分析 YouTube 影片內容的內容創作者 | 非常適合 | 能夠快速提取關鍵幀和轉錄，提升創作效率。 |
-| 研究人員需要從視頻中提取非語言信息 | 適合 | 提供全面的數據支持，便於深入分析。 |
-| 開發者需要將視頻內容轉化為文本 | 非常適合 | 本地處理確保數據隱私，適合敏感內容分析。 |
-| 小型團隊需要快速分析視頻內容 | 普通 | 雖然功能強大，但安裝和配置可能需要時間。 |
+| 10 人以下的新創公司後端視頻分析 | 非常適合 | 能夠在本地環境中快速處理視頻，保護數據隱私。 |
+| 大型企業的視頻內容管理系統 | 普通 | 雖然功能強大，但處理大型視頻的性能可能成為瓶頸。 |
+| 學術研究中的視頻數據分析 | 適合 | 能夠提供精確的幀和轉錄，適合需要高準確度的研究。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~3 小時 |
-| 整合時間 | ~2 小時 |
-| 維護負擔 | medium |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~3 小時 |
+| 維護負擔 | low |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，2 小時整合，得到高效的視頻分析工具，值得投入。
+> 花 2 小時學習，3 小時整合，得到高效的視頻分析工具，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：本工具在本地運行，不需要高權限，並且不會存取敏感資料。依賴鏈的信任程度高，沒有已知的供應鏈風險。
+> 這個工具本身不需要高權限運行，所有處理都在本地進行，並不存取敏感資料，整體安全性高。
 
 ## 健康度儀表板
 
@@ -326,37 +334,43 @@ ls output_directory
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 62 |
+| Forks | 78 |
 | Open Issues | 0 |
-| 最後推送 | 2026-07-05 |
+| Issue 解決率 | 100% (2 closed) |
+| 最後推送 | 2026-07-06 |
 | 建立日期 | 2026-06-30 |
-| Repo 大小 | 759 KB |
+| Repo 大小 | 1.1 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/HUANGCHIHHUNGLeo/claude-real-video) |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 74
+>     "HTML" : 26
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@HUANGCHIHHUNGLeo](https://github.com/HUANGCHIHHUNGLeo) | 20 |
+> | [@HUANGCHIHHUNGLeo](https://github.com/HUANGCHIHHUNGLeo) | 23 |
 > | [@yuanwaizhang](https://github.com/yuanwaizhang) | 1 |
 
-**最新版本**：v0.5.2 — v0.5.2 — --viewer: browse your analysis in one local page (2026-07-05)
+**最新版本**：v0.5.4 — v0.5.4 — --viewer lightbox: browse frames without leaving the page (2026-07-06)
 
 > [!info]- Release Notes
-> `crv <video> --viewer` now also writes a local `viewer.html` next to the analysis: the video, every kept keyframe as a browsable grid, and the transcript — one file, double-click to open, no network, no extra installs.
+> Clicking a keyframe thumbnail in `viewer.html` now opens an **in-page lightbox** instead of a new tab (#3): arrow keys or on-screen chevrons to move between frames, ESC / click-outside to close, filename + position caption. No dependencies, still works fully offline from `file://`.
 > 
-> Useful for eyeballing exactly what the model will see before you paste it into an LLM.
-> 
-> The [crv Pro](https://leoaido.com/crv-pro/) viewer builds on this with a clickable, playback-synced perception timeline (gestures, voice pitch, sound events, camera moves).
+> Thanks @rpakishore for the request.
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，最近有多次更新和修復。
+**社群活躍度**：社群活躍，問題解決率高，回應迅速。
 **連結**：[文件](https://github.com/HUANGCHIHHUNGLeo/claude-real-video)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-03 ~ 2026-07-05）
-> **活躍天數** 3 天 · **最新 commit** docs: what's new in crv Pro (July 2026) — capabilities only
+> [!abstract] 最近 10 次 commit（2026-07-05 ~ 2026-07-06）
+> **活躍天數** 2 天 · **最新 commit** README: tighten 'local' wording — processing is local, frames you share go to your LLM provider
 
 ## README 摘錄
 
@@ -376,7 +390,7 @@ ls output_directory
 > Even Gemini, which *can* read video natively, has to send it up to Google and
 > samples frames at a **fixed interval** (1 fps by default), so fast cuts slip past.
 > 
-> `claude-real-video` does it differently, and **locally**: point it at a URL or a
+> `claude-real-video` does it differently, and **the processing runs locally**: point it at a URL or a
 > file, and it pulls the frames that *actually matter* (every scene change, not a
 > fixed quota), throws away the near-duplicates, transcribes the audio, and hands
 > you a clean folder any LLM can read. All the processing happens on your own machine — what gets sent anywhere is only the frames/text *you* choose to paste into an LLM afterwards.
@@ -445,6 +459,8 @@ ls output_directory
 > Then drop the frames + `MANIFEST.txt` into Claude / ChatGPT / Gemini and ask away.
 > 
 > Want to eyeball what the model will see first? Add `--viewer` — it writes a local `viewer.html` (video + keyframe grid + transcript) you can double-click open. No network, no extra installs.
+> 
+> **Slow-changing content** (animation tutorials, gradual morphs, slow pans): add `--adaptive` — frames are picked against their rolling neighbourhood instead of a fixed threshold, so a 2-3s squash-and-stretch that never spikes any single frame still gets captured.
 > 
 > Not doing LLM work? It also works as a **general-purpose video keyframe extractor** —
 > scene-change detection + dedup, no ML models to download.
@@ -545,15 +561,11 @@ ls output_directory
 > 4. **Text** — if the video **already has subtitles** (a sidecar `.srt`/`.vtt` next to a
 >    local file, or an embedded subtitle track), those are used as the transcript —
 >    faster and more accurate than re-transcribing. Only when there are no subtitles
->    does it fall back to **Whisper** on the audio (skipped cleanly if there's no audio).
-> 5. **Audio** *(optional, `--keep-audio`)* — save the **full original soundtrack**
->    (`audio.m4a`: music + speech + effects, copied losslessly when possible). The
->    transcript only has the *words*; the audio file lets a model that can listen
->    (Gemini, 
+>    does it fall back to **Whisper** on the audio (skipped 
 
 ## 延伸閱讀
 
-相關概念：[[視頻處理]] · [[轉錄技術]] · [[AI 視覺]]
+相關概念：[[視頻分析]] · [[音訊轉錄]] · [[機器學習]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AlexandrosGounis--pdfx|AlexandrosGounis/pdfx]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[aiming-lab--AutoResearchClaw|aiming-lab/AutoResearchClaw]] · [[elder-plinius--OBLITERATUS|elder-plinius/OBLITERATUS]]
 
@@ -561,11 +573,11 @@ ls output_directory
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：視頻處理）
+> [!note]- 直接競品（同子分類：視頻分析）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "視頻處理" AND file.name != "HUANGCHIHHUNGLeo--claude-real-video"
+> WHERE subcategory = "視頻分析" AND file.name != "HUANGCHIHHUNGLeo--claude-real-video"
 > SORT stars DESC
 > ```
 
@@ -573,7 +585,7 @@ ls output_directory
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "HUANGCHIHHUNGLeo--claude-real-video"
+> WHERE category = "AI/ML" AND file.name != "HUANGCHIHHUNGLeo--claude-real-video"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -597,7 +609,7 @@ ls output_directory
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["視頻處理","轉錄技術","AI 視覺"];
+> const concepts = ["視頻分析","音訊轉錄","機器學習"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "HUANGCHIHHUNGLeo--claude-real-video" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
