@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: ""
 homepage: "https://fuck-claude.vercel.app"
-stars: 541
-stars_per_day: 180
-forks: 50
-open_issues: 7
+stars: 617
+stars_per_day: 154
+forks: 63
+open_issues: 6
 created: 2026-07-02
-pushed_at: 2026-07-05
+pushed_at: 2026-07-06
 first_seen: 2026-07-06
 week: "2026-W28"
 month: "2026-07"
@@ -30,10 +30,10 @@ use_case: "檢測你的瀏覽器環境，告訴你是否會被 Claude Code 標�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-13"
+appearances: 2
+next_review: "2026-07-14"
 contributor_count: 1
-engagement: "low"
+engagement: "medium"
 issue_close_rate: 30
 repo_size_kb: 723
 readme_length: 9999
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-06"
-star_history: "2026-07-06:536,2026-07-06:541"
+star_history: "2026-07-06:536,2026-07-06:541,2026-07-07:617"
 tags:
   - github
   - "category/開發工具"
@@ -866,4 +866,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-07|2026-07-07]] — 再次上榜，617 stars
 - [[2026-07-06|2026-07-06]] — 首次收錄，536 stars

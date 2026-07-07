@@ -7,12 +7,12 @@ language: JavaScript
 license: AGPL-3.0
 description: "Standalone iOS app to spoof GPS location without jailbreak. Includes Shadowrocket/Surge/Loon/QX/Stash module."
 homepage: ""
-stars: 1342
-stars_per_day: 268
-forks: 200
-open_issues: 1
+stars: 1458
+stars_per_day: 243
+forks: 226
+open_issues: 3
 created: 2026-06-30
-pushed_at: 2026-07-04
+pushed_at: 2026-07-06
 first_seen: 2026-07-02
 week: "2026-W27"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "無需越獄即可偽造 iOS GPS 位置的獨立應用，支持多種
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-07-09"
+appearances: 6
+next_review: "2026-07-10"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-02"
-star_history: "2026-07-02:670,2026-07-03:1148,2026-07-04:1266,2026-07-05:1291,2026-07-06:1342"
+star_history: "2026-07-02:670,2026-07-03:1148,2026-07-04:1266,2026-07-05:1291,2026-07-06:1342,2026-07-07:1458"
 tags:
   - github
   - "category/其他"
@@ -793,6 +793,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-07|2026-07-07]] — 再次上榜，1.5k stars
 - [[2026-07-06|2026-07-06]] — 再次上榜，1.3k stars
 - [[2026-07-05|2026-07-05]] — 再次上榜，1.3k stars
 - [[2026-07-04|2026-07-04]] — 再次上榜，1.3k stars

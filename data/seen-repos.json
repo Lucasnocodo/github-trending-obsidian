@@ -2689,10 +2689,10 @@
   },
   "mekos2772/ios-location-spoofer": {
     "first_seen": "2026-07-02",
-    "last_seen": "2026-07-06",
-    "times_seen": 5,
+    "last_seen": "2026-07-07",
+    "times_seen": 6,
     "stars_first": 670,
-    "stars_last": 1342
+    "stars_last": 1458
   },
   "aquace/CVE-2026-41940-PoC": {
     "first_seen": "2026-07-02",
@@ -2724,24 +2724,24 @@
   },
   "HUANGCHIHHUNGLeo/claude-real-video": {
     "first_seen": "2026-07-04",
-    "last_seen": "2026-07-06",
-    "times_seen": 3,
+    "last_seen": "2026-07-07",
+    "times_seen": 4,
     "stars_first": 569,
-    "stars_last": 1029
+    "stars_last": 1276
   },
   "xuchonglang/investing-for-beginners": {
     "first_seen": "2026-07-04",
-    "last_seen": "2026-07-06",
-    "times_seen": 3,
+    "last_seen": "2026-07-07",
+    "times_seen": 4,
     "stars_first": 506,
-    "stars_last": 718
+    "stars_last": 741
   },
   "uzairansaruzi/hermex": {
     "first_seen": "2026-07-04",
-    "last_seen": "2026-07-06",
-    "times_seen": 3,
+    "last_seen": "2026-07-07",
+    "times_seen": 4,
     "stars_first": 455,
-    "stars_last": 626
+    "stars_last": 661
   },
   "wlzh/dji-4g-vohive-mac": {
     "first_seen": "2026-07-04",
@@ -2752,31 +2752,31 @@
   },
   "jamesob/local-llm": {
     "first_seen": "2026-07-05",
-    "last_seen": "2026-07-06",
-    "times_seen": 2,
+    "last_seen": "2026-07-07",
+    "times_seen": 3,
     "stars_first": 785,
-    "stars_last": 934
+    "stars_last": 1085
   },
   "jmerelnyc/Talos": {
     "first_seen": "2026-07-05",
-    "last_seen": "2026-07-06",
-    "times_seen": 2,
+    "last_seen": "2026-07-07",
+    "times_seen": 3,
     "stars_first": 601,
-    "stars_last": 683
+    "stars_last": 722
   },
   "elder-plinius/T3MP3ST": {
     "first_seen": "2026-07-06",
-    "last_seen": "2026-07-06",
-    "times_seen": 1,
+    "last_seen": "2026-07-07",
+    "times_seen": 2,
     "stars_first": 1834,
-    "stars_last": 1834
+    "stars_last": 2729
   },
   "ammaarreshi/Generals-Mac-iOS-iPad": {
     "first_seen": "2026-07-06",
-    "last_seen": "2026-07-06",
-    "times_seen": 1,
+    "last_seen": "2026-07-07",
+    "times_seen": 2,
     "stars_first": 856,
-    "stars_last": 856
+    "stars_last": 1177
   },
   "Kulaxyz/token-diet": {
     "first_seen": "2026-07-06",
@@ -2787,9 +2787,16 @@
   },
   "LinXiaoTao/FuckClaude": {
     "first_seen": "2026-07-06",
-    "last_seen": "2026-07-06",
-    "times_seen": 1,
+    "last_seen": "2026-07-07",
+    "times_seen": 2,
     "stars_first": 536,
-    "stars_last": 536
+    "stars_last": 617
+  },
+  "synthetic-sciences/openscience": {
+    "first_seen": "2026-07-07",
+    "last_seen": "2026-07-07",
+    "times_seen": 1,
+    "stars_first": 852,
+    "stars_last": 852
   }
 }

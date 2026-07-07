@@ -7,10 +7,10 @@ language: C++
 license: NOASSERTION
 description: "Command & Conquer Generals: Zero Hour running natively on macOS, iPhone & iPad — real engine (EA GPL v3 source, via GeneralsX), DXVK/MoltenVK renderer, RTS touch controls. No game assets included."
 homepage: ""
-stars: 862
-stars_per_day: 431
-forks: 57
-open_issues: 1
+stars: 1177
+stars_per_day: 392
+forks: 85
+open_issues: 6
 created: 2026-07-04
 pushed_at: 2026-07-05
 first_seen: 2026-07-06
@@ -30,8 +30,8 @@ use_case: "讓 Command & Conquer Generals: Zero Hour 在 macOS、iPhone 和 iPad
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-09"
+appearances: 2
+next_review: "2026-07-10"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 67
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-06"
-star_history: "2026-07-06:856,2026-07-06:862"
+star_history: "2026-07-06:856,2026-07-06:862,2026-07-07:1177"
 tags:
   - github
   - "category/遊戲"
@@ -533,7 +533,7 @@ cd ~/GeneralsX/GeneralsZH && ./run.sh -win
 
 相關概念：[[遊戲移植]] · [[開源遊戲]] · [[觸控操作]] · [[Vulkan]] · [[Metal]]
 
-相關專案：[[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]] · [[boona13--mykonos-island-voxels|boona13/mykonos-island-voxels]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[kanavtwtgg--birds.cafe|kanavtwtgg/birds.cafe]]
+相關專案：[[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]] · [[boona13--mykonos-island-voxels|boona13/mykonos-island-voxels]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[kanavtwtgg--birds.cafe|kanavtwtgg/birds.cafe]] · [[levy-street--world-of-claudecraft|levy-street/world-of-claudecraft]] · [[winsznx--bull-rush|winsznx/bull-rush]]
 
 [GitHub](https://github.com/ammaarreshi/Generals-Mac-iOS-iPad)
 
@@ -829,4 +829,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-07|2026-07-07]] — 再次上榜，1.2k stars
 - [[2026-07-06|2026-07-06]] — 首次收錄，856 stars
