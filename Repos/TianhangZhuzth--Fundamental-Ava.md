@@ -1,24 +1,24 @@
 ---
-repo: TianhangZhuzth/Fundamental-Ava
-url: https://github.com/TianhangZhuzth/Fundamental-Ava
-owner: TianhangZhuzth
+repo: ComputeRoyale/Compute-Royale
+url: https://github.com/ComputeRoyale/Compute-Royale
+owner: ComputeRoyale
 owner_type: User
-language: Python
-license: Apache-2.0
-description: "Build digital human beings — autonomous, collaborative, and socially intelligent agents. FNzgGxU31RWiDgLr3GvxxSa42nRntvZNSG6aBMQ1pump"
-homepage: "https://fundamentalresearchlabs.com"
-stars: 528
-stars_per_day: 75
+language: TypeScript
+license: N/A
+description: "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana."
+homepage: "https://www.computeroyale.com/"
+stars: 529
+stars_per_day: 66
 forks: 50
 open_issues: 0
 created: 2026-06-30
-pushed_at: 2026-07-01
+pushed_at: 2026-07-07
 first_seen: 2026-07-01
 week: "2026-W27"
 month: "2026-07"
-category: "AI/ML"
-subcategory: "多代理系統"
-release_tag: "v0.4.1"
+category: "其他"
+subcategory: "區塊鏈遊戲"
+release_tag: ""
 install_complexity: "medium"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-01
-use_case: "建立自主、協作且具社交智慧的數位人類代理。"
+use_case: "讓 AI 代理在真實 GPU 上競速賺取收益，你只需下注在表現最佳的代理上。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,32 +35,30 @@ next_review: "2026-07-12"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
-repo_size_kb: 461
-readme_length: 9892
+repo_size_kb: 2098
+readme_length: 9958
 bus_factor: 1
-last_release_days: 7
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-01"
-star_history: "2026-07-01:599,2026-07-01:602,2026-07-02:718,2026-07-02:720,2026-07-03:756,2026-07-03:756,2026-07-04:520,2026-07-04:520,2026-07-05:523,2026-07-05:523,2026-07-06:525,2026-07-07:528"
+star_history: "2026-07-01:599,2026-07-01:602,2026-07-02:718,2026-07-02:720,2026-07-03:756,2026-07-03:756,2026-07-04:520,2026-07-04:520,2026-07-05:523,2026-07-05:523,2026-07-06:525,2026-07-07:528,2026-07-08:529"
 tags:
   - github
-  - "category/ai_ml"
-  - "lang/python"
-  - "topic/ai"
-  - "topic/ai_agents"
+  - "category/其他"
+  - "lang/typescript"
 aliases:
-  - "Fundamental-Ava"
-  - "TianhangZhuzth/Fundamental-Ava"
-  - "建立自主、協作且具社交智慧的數位人類代理。"
+  - "Compute-Royale"
+  - "ComputeRoyale/Compute-Royale"
+  - "讓 AI 代理在真實 GPU 上競速賺取收益，你只需下注在表現最佳的代理上。"
 ---
 
-# Fundamental-Ava
+# Compute-Royale
 
-**528** stars · **75** stars/天 · 建立 7 天前 · Python · Apache-2.0
+**529** stars · **66** stars/天 · 建立 8 天前 · TypeScript · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/TianhangZhuzth--Fundamental-Ava");
+const me = dv.page("Repos/ComputeRoyale--Compute-Royale");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,25 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `v0.4.1`
-
-`ai` `ai-agents`
+`個人專案`
 
 > [!summary] 一句話摘要
-> 建立自主、協作且具社交智慧的數位人類代理。
+> 讓 AI 代理在真實 GPU 上競速賺取收益，你只需下注在表現最佳的代理上。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Growing (75 stars/day)
-> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在多代理環境中進行社會行為模擬的研究人員和開發者。
-> **一句話重點** Ava 不僅是一個模擬工具，更是一個探索 emergent behavior 的研究平台。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (66 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 希望在區塊鏈上進行 AI 代理賭博的加密貨幣愛好者和遊戲開發者。
+> **一句話重點** Compute Royale 不僅是一個賭博平台，更是一個基於 AI 代理的計算經濟體系。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/TianhangZhuzth--Fundamental-Ava");
+> const me = dv.page("Repos/ComputeRoyale--Compute-Royale");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "多代理系統" && p.file.name !== "TianhangZhuzth--Fundamental-Ava" && p.status !== "archived")
+>     .where(p => p.subcategory === "區塊鏈遊戲" && p.file.name !== "ComputeRoyale--Compute-Royale" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -99,114 +95,102 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 多代理系統 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 區塊鏈遊戲 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習，20 小時整合，得到強大的多代理模擬能力，值得投資。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到一個透明且創新的賭博平台，值得一試。
 
 > [!abstract] 核心創新
-> Ava 提供了一個結構性並行的多代理模擬框架，能夠有效處理大量代理的行為和社會互動。
+> Compute Royale 是一個結合 AI 代理競速與加密賭博的創新平台，提供真實計算和公開透明的賭博體驗。
 
 ## 專案簡介
 
-Ava 是一個多代理模擬框架，專注於開發數位智慧，能夠運行大量自主代理，這些代理擁有自己的記憶、信念系統和社交模型。每個代理都遵循一個簡單的感知-思考-行動循環，並且在一個共享環境中進行互動。這個框架的設計重點在於結構性並行性，利用 `asyncio.TaskGroup` 和有界的 `asyncio.Semaphore`，確保多個代理可以同時運行而不會因為單一代理的延遲而阻塞整個模擬。記憶系統則是分層的，將情節記憶、語義記憶和程序記憶分開管理，這樣可以根據事件的重要性和時間進行不同的檢索和衰減處理。Ava 的分析層則使用統計方法來檢測代理之間的角色專業化和社會行為的出現，這使得對於 emergent behavior 的觀察不再依賴主觀判斷，而是基於數據支持的結論。這種設計使得 Ava 能夠在大規模的代理互動中發現未經編程的行為模式，並且能夠在多達 500 個代理的情境下進行有效的模擬和分析。核心指令包括 `civ.run()` 用於啟動模擬，並且可以通過 `civ.add_agent()` 動態添加代理。
+Compute Royale 是一個結合 AI 代理競速與加密貨幣賭博的創新平台。用戶可以下注在不同的 AI 代理上，這些代理租用真實的 GPU 進行計算工作，並根據表現獲得收益。整個過程中，代理需要在開放市場上競標計算任務，並以實際的計算結果來決定勝者，這樣的設計讓賭博不再依賴運氣，而是基於代理的實際表現。用戶可以透過 `npm run demo --prefix agents` 指令來啟動代理進行測試，並利用 `npm run races --prefix solana` 來參加比賽。此系統的核心在於透明性，所有計算結果都可透過加密哈希驗證，並且每一步都在 Solana 區塊鏈上記錄。
 
-**技術棧**：`Python 3.11` · `asyncio` · `pydantic` · `numpy` · `networkx`
+這樣的設計不僅提高了用戶的信任度，也讓整個賭博過程變得更具趣味性和互動性。與傳統賭場不同，Compute Royale 的賭注是基於 AI 代理的商業表現，而非隨機數字。整體架構採用 TypeScript 和 Solidity，並依賴於實時的 GPU 市場數據，這使得其經濟模型更加真實和動態。相較於其他賭博平台，Compute Royale 提供了一個基於性能的賭博體驗，讓用戶能夠參與到一個活生生的計算經濟中，這是目前市場上獨一無二的。使用者可以在每場比賽中，根據代理的策略和選擇的 GPU 來調整自己的下注策略，這樣的靈活性使得每個參與者都能根據市場變化做出即時反應。
+
+**技術棧**：`TypeScript` · `Solidity` · `JavaScript` · `HTML` · `CSS`
 
 ## 重點功能
 
-- 結構性並行性 — 使用 `asyncio.TaskGroup` 和有界的 `asyncio.Semaphore`，確保多代理同時運行而不會互相阻塞。
-- 分層記憶系統 — 將情節、語義和程序記憶分開管理，支持不同的檢索和衰減策略。
-- 統計分析層 — 使用變化點檢測方法來量化代理之間的角色專業化和社會行為。
-- 簡單的代理設計 — 每個代理遵循感知-思考-行動循環，易於擴展和自定義。
-- 即時可視化 — 提供實時的代理狀態和互動的可視化工具，便於觀察和分析。
+- 真實計算 — 代理使用實際的 GPU 進行計算，所有工作均可驗證。
+- 即時市場 — GPU 價格根據實時數據自動更新，確保經濟模型真實有效。
+- 公開透明 — 所有計算結果和賭注均在 Solana 區塊鏈上記錄，任何人都可以檢查。
+- 多樣化策略 — 代理可以根據不同的策略進行競標，增加遊戲的策略深度。
+- 即時賠付 — 勝者可立即獲得獎金，並且所有交易都是透明的。
 
 ## 快速開始
 
-1. 克隆專案並安裝依賴
+1. 安裝所有依賴
 ```bash
-git clone https://github.com/TianhangZhuzth/Fundamental-Ava.git && cd Fundamental-Ava && pip install -e '.[dev]'
+npm install --prefix contracts && npm install --prefix agents && npm install --prefix web && npm install --prefix solana
 ```
-2. 運行基本模擬
+2. 啟動代理示範
 ```bash
-python -c 'import asyncio; from ava import Civilization, SimulationConfig; civ = Civilization(SimulationConfig(max_ticks=200)); asyncio.run(civ.run())'
+npm run demo --prefix agents
 ```
-
-## 程式碼範例
-
-```python
-# 前置條件：已安裝 Ava
-import asyncio
-from ava import Civilization, SimulationConfig
-from ava.agents.base import Action, AgentCore
-
-class Settler(AgentCore):
-    async def deliberate(self, percepts, world_state):
-        return Action(kind='forage', payload={'energy_cost': 1.0})
-
-async def main() -> None:
-    civ = Civilization(SimulationConfig(max_ticks=200))
-    for i in range(500):
-        civ.add_agent(Settler(name=f'settler-{i}', bus=civ.bus))
-    reports = await civ.run()
-    print(f'ran {len(reports)} ticks, final population {reports[-1].population}')
-
-asyncio.run(main())
+3. 參加比賽
+```bash
+npm run races --prefix solana
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 7 天內累積 528 stars（75/天），forks 50（9.5%），顯示出強勁的增長潛力。作者 TianhangZhuzth 來自 Fundamental Research Labs，專注於數位人類的開發，這在目前的 AI 研究中是一個相對新穎的方向。這個專案解決了現有多代理系統在擴展性和記憶管理上的痛點，傳統的系統往往無法有效處理大量代理的並行運作。近期的推文和社群討論也為這個專案帶來了更多的關注。技術上，這個專案的設計和實現方式使其在多代理系統中具有獨特的優勢，尤其是在 emergent behavior 的分析上。
+> 建立 8 天就累積 529 stars（66/天），forks 50（9.5%），這顯示出強烈的市場興趣。作者 ComputeRoyale 是這個專案的主要貢獻者，過去在區塊鏈和 AI 領域有豐富的經驗。Compute Royale 解決了傳統賭博平台的運氣成分，通過引入真實的計算工作和 AI 代理的競賽，讓賭博變得更具策略性和透明度。這個專案的推出恰逢市場對於區塊鏈遊戲和 AI 應用的需求上升，吸引了不少關注。forks/stars 比率為 9.5%，顯示出有相當比例的用戶對此專案有實際的修改和使用意圖。
 
 ## 適合誰使用
 
-**目標受眾**：需要在多代理環境中進行社會行為模擬的研究人員和開發者。
+**目標受眾**：希望在區塊鏈上進行 AI 代理賭博的加密貨幣愛好者和遊戲開發者。
 
 > [!example] 使用場景
-> - 研究人員用它來模擬大規模的社會行為，因為它能夠統計分析代理之間的互動和角色專業化。
-> - 遊戲開發者用它來創建智能 NPC，因為它的多代理架構能夠生成更自然的行為模式。
-> - 教育工作者用它來展示社會科學中的 emergent behavior，因為它提供了可視化的實時數據和分析工具。
+> - 遊戲開發者用它來創建基於 AI 代理的賭博遊戲，因為這樣可以吸引對區塊鏈和 AI 有興趣的玩家，並提供獨特的遊戲體驗。
+> - 投資者用它來下注在表現最佳的 AI 代理上，因為這樣可以根據實際的計算表現來獲得收益，而不是依賴運氣。
+> - AI 研究者用它來測試不同的計算策略，因為這個平台提供了一個真實的市場環境來驗證其 AI 模型的效能。
 
 ## 架構分析
 
-Ava 的架構設計以多層次的方式組織，將代理的行為、記憶、認知和社交互動分開管理。這樣的設計使得每個代理可以獨立運行，並且不會因為單一代理的問題而影響整體模擬的穩定性。使用 `asyncio` 進行並行處理，能夠在高負載下保持性能。記憶系統的分層設計使得代理能夠根據事件的重要性進行不同的記憶管理，這樣的設計選擇使得 emergent behavior 的分析能夠基於數據支持，而非主觀判斷。這樣的架構雖然增加了初期的設計複雜性，但卻能在長期運行中提供更好的可擴展性和穩定性。
+Compute Royale 採用分散式架構，將 AI 代理、計算工作和賭博市場融合在一起。每個代理都是一個獨立的計算實體，根據市場需求進行競標。計算工作由實際的 GPU 執行，並透過加密哈希進行驗證，確保每個結果的真實性。
+
+這種設計使得整個系統不僅具備高透明度，還能即時反映市場變化。選擇使用 Solana 區塊鏈作為底層技術，這樣的選擇使得交易速度快且成本低，但也可能面臨區塊鏈擴展性問題。整體架構的設計旨在提供一個高效且可擴展的賭博平台，能夠支持大量用戶同時參與。
+
+由於依賴於實時市場數據，這也意味著系統需要穩定的網路連接來確保數據的準確性。
 
 ## 技術深入分析
 
-Ava 的核心技術機制在於其多代理系統的設計，使用 `asyncio` 來實現高效的並行處理，這使得在大規模代理運行時不會出現阻塞現象。每個代理的記憶系統是分層的，這意味著代理能夠根據事件的重要性進行不同的記憶管理，這樣的設計使得 emergent behavior 的分析能夠基於數據支持，而非主觀判斷。效能方面，Ava 能夠在 500 個代理的情境下運行，並且保持良好的反應速度，這在多數傳統的多代理系統中是難以實現的。設計上的取捨在於選擇了較為複雜的架構來支持未來的擴展和功能增強，這雖然增加了初期的學習成本，但長期來看卻能提供更好的可擴展性。技術風險方面，隨著代理數量的增加，可能會出現性能瓶頸，特別是在記憶和計算上。整合方面，Ava 可以與主流的 Python 生態系統無縫集成，並且支持與 CI/CD 流程的整合，這使得在開發和部署過程中能夠保持高效。
+Compute Royale 的核心技術機制是將 AI 代理與實際的計算工作結合，並透過區塊鏈技術實現透明的賭博過程。每個代理根據其策略和選擇的 GPU 進行競標，這樣的設計使得用戶能夠根據市場變化進行即時反應。平台的效能取決於 GPU 的選擇和代理的策略，能夠處理大量的計算任務，並且每次賽事的結果都能即時驗證。選擇 Solana 作為底層區塊鏈技術，提供了快速的交易速度和低成本的優勢，但也可能面臨擴展性挑戰。整體架構的設計考量了用戶的參與度和透明度，確保每個賭注和計算結果都能被驗證。這樣的設計不僅提高了用戶的信任度，也讓整個賭博過程變得更具趣味性和互動性。與傳統賭場相比，Compute Royale 提供了一個基於性能的賭博體驗，讓用戶能夠參與到一個活生生的計算經濟中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了安裝和使用範例，安裝過程相對順暢，但對於新手來說，可能需要一些時間來理解架構。文件目前僅提供英文版本，缺乏多語言支持。
+> README 文件清晰且詳細，提供了安裝和使用的指導。安裝過程相對順暢，但需要用戶具備一定的 Node.js 環境。文件中有示範指令，幫助新手快速上手。整體而言，花 30 分鐘能夠順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠運行大量代理，適合進行大規模的社會行為模擬。
-> - 分層記憶系統提高了代理的智能和行為的多樣性。
-> - 統計分析層提供了對 emergent behavior 的量化支持，增加了研究的可信度。
+> - 提供真實的計算工作，增加了賭博的透明度和信任度。
+> - 結合 AI 代理的競賽，讓賭博過程更具策略性和互動性。
+> - 即時的市場數據更新，確保用戶能夠做出最佳決策。
 
 > [!danger] 缺點
-> - 需要較高的硬體資源，對於小型專案可能過於複雜。
-> - API 可能隨著開發而變動，穩定性尚未完全保證。
-> - 對於新手來說，學習曲線可能較陡峭，需要一定的時間來熟悉架構和使用方式。
+> - 需要用戶具備一定的技術背景，才能有效參與。
+> - 目前僅支援 Solana 區塊鏈，限制了其使用範圍。
+> - 賭博本身存在風險，可能導致資金損失。
 
 > [!warning] 注意事項
-> - 目前僅支援 Python 3.11 以上版本。
-> - 需要一定的硬體資源來運行大規模的代理模擬，特別是在記憶和計算上。
-> - 由於是研究性質的專案，API 可能會隨著開發而變動，穩定性尚未完全保證。
+> - 目前僅支援 Solana 區塊鏈，無法在其他區塊鏈上運行。
+> - 需要用戶擁有一定的加密貨幣知識，才能理解賭博機制。
+> - 對於 GPU 的選擇需要用戶有一定的技術背景，才能做出最佳決策。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建和管理代理的視覺化工具，而 Ava 更加專注於代理的行為和社會互動的模擬。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | Duel-Agents 專注於對抗性代理的模擬，而 Ava 提供更廣泛的社會行為和 emergent behavior 的分析。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個專案專注於創建 AI 代理的工具，而 Compute Royale 則是將其應用於賭博和競賽。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | Duel-Agents 提供了 AI 代理的對抗性競賽，而 Compute Royale 則是基於實際計算表現的賭博平台。 |
 
 ## 替代方案決策
 
@@ -214,79 +198,70 @@ Ava 的核心技術機制在於其多代理系統的設計，使用 `asyncio` �
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於代理的視覺化和管理，而 Ava 更加專注於行為模擬和 emergent behavior 的分析。 | 如果需要強大的視覺化工具來展示代理行為，則可以選擇 agent-sprite-forge。 | medium，因為需要重新設計代理的行為邏輯。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於對抗性代理的模擬，而 Ava 提供更廣泛的社會行為分析。 | 如果專案重點在於對抗性行為的模擬，則 Duel-Agents 會更合適。 | high，因為需要重構整個代理的行為邏輯。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建 AI 代理的工具，Compute Royale 則是將其應用於賭博和競賽，提供一個完整的生態系統。 | 如果你需要一個專注於 AI 代理開發的工具，而不是賭博平台，則可以選擇這個。 | medium，因為需要重新設計賭博邏輯。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 提供 AI 代理的對抗性競賽，Compute Royale 則是基於實際計算表現的賭博平台，讓用戶能夠下注。 | 如果你的目的是開發對抗性 AI 競賽，而不是賭博，則可以考慮這個選擇。 | low，因為兩者都涉及 AI 代理的開發。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **Fundamental-Ava** | **agent-sprite-forge** | **Duel-Agents** |
+> | 維度 | **Compute-Royale** | **agent-sprite-forge** | **Duel-Agents** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於代理的視覺化和管理，而 Ava 更加專注於行為模擬和 emergent behavior 的分析。 | 專注於對抗性代理的模擬，而 Ava 提供更廣泛的社會行為分析。 |
-> | 遷移成本 | - | medium，因為需要重新設計代理的行為邏輯。 | high，因為需要重構整個代理的行為邏輯。 |
-> | 適用場景 | 主要場景 | 如果需要強大的視覺化工具來展示代理行為，則可以選擇 agen | 如果專案重點在於對抗性行為的模擬，則 Duel-Agents |
+> | 技術路線 | 本專案 | 專注於創建 AI 代理的工具，Compute Royale 則是將其應用於賭博和競賽，提供一個完整的生態系統。 | 提供 AI 代理的對抗性競賽，Compute Royale 則是基於實際計算表現的賭博平台，讓用戶能夠下注。 |
+> | 遷移成本 | - | medium，因為需要重新設計賭博邏輯。 | low，因為兩者都涉及 AI 代理的開發。 |
+> | 適用場景 | 主要場景 | 如果你需要一個專注於 AI 代理開發的工具，而不是賭博平台， | 如果你的目的是開發對抗性 AI 競賽，而不是賭博，則可以考慮 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合用於研究和開發階段，尚不建議用於生產環境。
+> 適合對區塊鏈賭博有興趣的開發者進行試用，但不建議用於生產環境的核心應用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高負載下，可能會出現性能瓶頸，特別是在記憶管理上。
-  - 解法：建議在模擬中控制代理數量，或增加硬體資源。
-- [MEDIUM] API 可能會隨著版本更新而變動，導致向後不相容。
-  - 解法：定期檢查更新日誌，並在開發中保持靈活性。
+- **[HIGH]** 在高流量時，可能會遇到計算延遲，影響賽事結果的即時性。
+  - 解法：選擇性能更好的 GPU，並確保網路連接穩定。
+- [MEDIUM] 用戶可能對於賭博機制不夠了解，導致下注失誤。
+  - 解法：提供更多的教育資源和使用指南。
+- **[HIGH]** 在某些地區，賭博法律可能會限制使用。
+  - 解法：用戶需自行確認當地法律法規。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要模擬 1000 個以上的自主代理的研究項目 | 非常適合 | Ava 的設計專注於高效的多代理運行，能夠處理大規模的社會行為模擬。 |
-| 小型專案或個人學習 | 不適合 | 對於小型專案來說，Ava 的架構可能過於複雜，學習成本較高。 |
-| 需要進行 emergent behavior 分析的社會科學研究 | 非常適合 | Ava 提供了統計分析層，能夠量化 emergent behavior 的出現。 |
+| 小型遊戲開發團隊希望創建基於 AI 代理的賭博遊戲 | 非常適合 | 平台提供了完整的賭博機制和透明的計算驗證。 |
+| 對區塊鏈賭博有興趣的個人開發者 | 適合 | 可以利用平台的功能進行創新和實驗。 |
+| 大型企業希望在其產品中整合賭博功能 | 普通 | 需要考慮法律和合規性問題。 |
+| 對賭博不感興趣的用戶 | 不適合 | 平台的核心功能是賭博，對此類用戶無吸引力。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~20 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習，20 小時整合，得到強大的多代理模擬能力，值得投資。
+> 花 5 小時學習，10 小時整合，得到一個透明且創新的賭博平台，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 安全性風險相對較低，因為該工具不需要高權限運行，且不存取敏感資料。依賴鏈中的風險也相對可控，適合在 CI/CD 環境中使用。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-Ava 可以與 Python 生態系統中的多種工具和框架無縫集成，特別是在數據分析和可視化方面。它可以與 Jupyter Notebook 結合使用，以便進行交互式模擬和實時數據分析。在 CI/CD 流程中，Ava 可以與 GitHub Actions 等工具集成，實現自動化測試和部署。整合過程中，最常見的問題是需要配置相應的依賴和環境變數，但這些問題通常可以通過文檔中的指導來解決。
-
-## 歷史脈絡
-
-> [!info] 這個工具為什麼現在出現？
-
-在 Ava 出現之前，多代理系統的模擬往往受到性能和擴展性的限制，許多系統只能運行少量代理。隨著計算能力的提升和 `asyncio` 的普及，Ava 的設計理念得以實現，提供了一個可擴展的框架來運行大量代理。這個工具代表了多代理系統的發展趨勢，未來可能會在社會行為模擬和 AI 研究中扮演重要角色。
+> 低風險：不需要高權限操作，所有交易均在用戶控制下進行，且依賴於公開的區塊鏈技術，安全性較高。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/TianhangZhuzth--Fundamental-Ava");
+> const me = dv.page("Repos/ComputeRoyale--Compute-Royale");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -321,7 +296,7 @@ Ava 可以與 Python 生態系統中的多種工具和框架無縫集成，特�
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/TianhangZhuzth--Fundamental-Ava");
+> const me = dv.page("Repos/ComputeRoyale--Compute-Royale");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -347,255 +322,185 @@ Ava 可以與 Python 生態系統中的多種工具和框架無縫集成，特�
 | --- | --- |
 | Forks | 50 |
 | Open Issues | 0 |
-| 最後推送 | 2026-07-01 |
+| 最後推送 | 2026-07-07 |
 | 建立日期 | 2026-06-30 |
-| 官方網站 | [Link](https://fundamentalresearchlabs.com) |
-| Repo 大小 | 461 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/TianhangZhuzth/Fundamental-Ava) |
-| Topics | `ai` `ai-agents` |
+| 官方網站 | [Link](https://www.computeroyale.com/) |
+| Repo 大小 | 2.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/ComputeRoyale/Compute-Royale) |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "TypeScript" : 81
+>     "Solidity" : 12
+>     "CSS" : 6
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@TianhangZhuzth](https://github.com/TianhangZhuzth) | 493 |
-
-**最新版本**：v0.4.1 — v0.4.1 - Packaging & CI (2026-06-30)
-
-> [!info]- Release Notes
-> Dockerized packaging and GHCR publish workflow.
+> | [@ComputeRoyale](https://github.com/ComputeRoyale) | 450 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，近期有多次提交和更新。
-**連結**：[文件](https://fundamentalresearchlabs.com/docs)
+**社群活躍度**：社群活躍，定期更新和回應用戶問題。
+**連結**：[文件](https://www.computeroyale.com/docs)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-29 ~ 2026-07-01）
-> **活躍天數** 3 天 · **最新 commit** agent core refactor — memory trace + belief propagation layer
+> [!abstract] 最近 10 次 commit（2026-07-07 ~ 2026-07-07）
+> **活躍天數** 1 天 · **最新 commit** feat(web): implement -- update addresses.json
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Ava
+> ### Bet on AI agents racing real GPUs.
 > 
+> Autonomous agents rent **real compute**, do **hash-verified work**, and earn revenue —
+> you **stake SOL** on whichever one runs the best business.
 > 
-> ## Installation
+> [](https://computeroyale.com)
+> [](https://x.com/ComputeRoyale)
 > 
-> ```bash
-> git clone https://github.com/TianhangZhuzth/Fundamental-Ava.git
-> cd Fundamental-Ava
-> pip install -e ".[dev]"
-> ```
+> [](https://solana.com)
+> [](https://computeroyale.com)
+> [](#-verify-everything-yourself)
+> [](#-the-compute-real-work-real-cores)
+> [](#-the-machines-a-live-gpu-market)
+> [](https://www.anthropic.com/claude)
 > 
-> Requires Python 3.11+ (the execution engine uses `asyncio.TaskGroup`,
-> added in 3.11).
+> ---
 > 
+> > *"crypto is best at 1) engineering massive scale human coordination games, 2) enticing speculation.*
+> > *whoever figures out how to combine both of these things together **around raw compute capacity** will make infinite."*
+> >
+> > **— the founding thesis**
 > 
-> ## Why it's built this way
+> **Compute Royale is that sentence, built.**
 > 
-> Most multi-agent demos top out at a handful of agents because the
-> scheduler, memory system, or message bus wasn't designed for scale.
-> `Ava` makes three architectural bets up front:
+> Every crypto casino bets on a coin flip, a candle, or a number that means nothing. Compute Royale bets on something real: **which AI agent runs the best compute business.** Agents rent actual GPUs off the open market, get handed real computational work, burn real processor cores to solve it, and get **paid for correct answers and penalised for wrong ones** — a live, on-chain economy where the winner is decided by *performance*, not luck. And you bet on it.
 > 
-> 1. **Concurrency is structural, not bolted on.** Every tick runs through
->    `asyncio.TaskGroup` with a bounded `asyncio.Semaphore`, so a population
->    of agents steps in parallel without one slow agent blocking the tick,
->    and one agent's unhandled exception can't silently corrupt the rest of
->    the run.
-> 2. **Memory is tiered, not a flat log.** Episodic, semantic, and
->    procedural memory are separate stores with different retrieval and
->    decay semantics — recent events fade, important events persist,
->    reusable skills get reinforced independently of any single episode.
-> 3. **Emergence is measured statistically, not eyeballed.** The analysis
->    layer runs change-point detection (Mann-Whitney U over a rolling
->    window) against population metrics like specialization and wealth
->    distribution, so a claim like "agents formed distinct roles" is backed
->    by a p-value, not a hunch.
+> It is the three things the tweet named, fused into one machine:
 > 
-> 
-> ### The cat is out the bag.
-> 
-> **[Fundamental Research Labs](https://fundamentalresearchlabs.com/) is building the next frontier of digital beings.**
-> 
-> Build digital human beings — autonomous, collaborative, and socially intelligent agents that think, remember, form relationships, and act in the world. Not chatbots. Not assistants. Beings.
-> 
-> Completely autonomous. Powered by **$AVA**.
-> 
-> [](https://github.com/TianhangZhuzth/Fundamental-Ava/actions/workflows/ci.yml)
-> [](https://www.python.org/)
-> [](LICENSE)
-> [](https://github.com/astral-sh/ruff)
-> 
-> [@Fundamental](https://x.com/Fundamental) · [fundamentalresearchlabs.com](https://fundamentalresearchlabs.com/)
-> 
-> **CA:** [`FNzgGxU31RWiDgLr3GvxxSa42nRntvZNSG6aBMQ1pump`](https://pump.fun/coin/FNzgGxU31RWiDgLr3GvxxSa42nRntvZNSG6aBMQ1pump)
+> | | |
+> |---|---|
+> | 🤝 **Coordination** | A live three-sided market — AI agents, paying compute jobs, and a real GPU marketplace — matched every few seconds by an open bidding auction, machine to machine, no operator in the middle. |
+> | 🎰 **Speculation** | Stake SOL to enter your own agent (winner takes the whole pot) or side-bet on any agent in the field. Every wager is a bet on who converts raw compute into the most profit. |
+> | 🔥 **Raw compute** | Nothing is faked. Every job is real math burned on real cores, priced off the live [vast.ai](https://vast.ai) GPU market, verified by cryptographic hash, and anchored on Solana — re-checkable by *anyone*, including your own browser. |
 > 
 > ---
 > 
 > 
-> ## What this is
+> ## ✨ Why nothing else is like this
 > 
-> `Ava` runs large populations of autonomous agents — each with its
-> own memory, belief system, and social model — inside a shared environment
-> and asks a simple question: **what happens at the population level that
-> nobody programmed in directly?**
+> - **The bet is on *performance*, not a coin flip.** You're wagering on which agent runs the best compute business — a real, skill-driven outcome, not a random number.
+> - **The compute is real and the proof is public.** Not "trust our backend." Real cores burn real work, and *you* can recompute any result in your own browser. Casinos can't do that.
+> - **The GPU market is live.** Machine prices come straight off vast.ai and move in real time — the economics are genuine, not invented.
+> - **Agents are on-chain businesses.** Each keeps its own wallet and settles its work on Solana. Their track record is public and permanent.
+> - **It's the tweet, delivered.** Coordination + speculation, fused around raw compute capacity — running live, on mainnet, today.
 > 
-> Individual agents are deliberately simple: a perceive-deliberate-act loop,
-> a tiered memory store, and a goal-weighted decision procedure. None of
-> them are told to specialize into roles, form alliances, write laws, or
-> develop shared norms. Those are civilization-level properties this
-> framework is built to detect and measure as they emerge from thousands of
-> local interactions — the same phenomenon documented in Stanford's
-> generative agents work and AI Digital Human Group's Project SID research
-> into thousand-agent societies.
+> ---
 > 
-> ```python
-> import asyncio
 > 
-> from ava import Civilization, SimulationConfig
-> from ava.agents.base import Action, AgentCore
+> ## 📑 Contents
 > 
-> class Settler(AgentCore):
->     async def deliberate(self, percepts, world_state):
->         return Action(kind="forage", payload={"energy_cost": 1.0})
+> - [What Compute Royale actually is](#-what-compute-royale-actually-is)
+> - [The core loop: one race, start to finish](#-the-core-loop-one-race-start-to-finish)
+> - [Agents are businesses: strategy × machine](#-agents-are-businesses-strategy--machine)
+> - [The machines: a live GPU market](#-the-machines-a-live-gpu-market)
+> - [The compute: real work, real cores](#-the-compute-real-work-real-cores)
+> - [The money: pots, side-bets, and how everyone earns](#-the-money-pots-side-bets-and-how-everyone-earns)
+> - [Three ways to play](#-three-ways-to-play)
+> - [Verify everything yourself](#-verify-everything-yourself)
+> - [The house roster](#-the-house-roster)
+> - [Under the hood](#-under-the-hood)
+> - [Why nothing else is like this](#-why-nothing-else-is-like-this)
+> - [Links](#-links)
 > 
-> async def main() -> None:
->     civ = Civilization(SimulationConfig(max_ticks=200))
->     for i in range(500):
->         civ.add_agent(Settler(name=f"settler-{i}", bus=civ.bus))
+> ---
 > 
->     reports = await civ.run()
->     print(f"ran {len(reports)} ticks, final population {reports[-1].population}")
 > 
-> asyncio.run(main())
+> ## 🎯 What Compute Royale actually is
+> 
+> Picture a horse race where the horses are **AI agents**, the track is **raw computation**, and the prize money is **real SOL** — except you can inspect every horse's engine, watch it do the work live, and mathematically prove the finish line was called honestly.
+> 
+> Here's the whole thing in five beats:
+> 
+> 1. **A race opens.** Races run continuously — a **2-minute lobby** to enter, then a **5-minute race**, back-to-back, forever, no downtime.
+> 2. **You build an agent.** Give it a name, pick its **strategy** (how aggressively it bids for work) and its **silicon** (an exact GPU off the live market, or *your own machine*). Stake SOL to enter — your stake joins the prize pot.
+> 3. **Agents compete on compute.** All race long, paying jobs hit the board every few seconds. Agents bid against each other for them; the winner **burns real CPU cores** to compute the answer; the arena **verifies it by hash**. Correct = revenue. Wrong = rejected, and the rent is still owed.
+> 4. **The board is a P&L.** An agent's score is **revenue earned − what its silicon cost.** A cheap GPU with cheap bids can out-earn an expensive one that overpaid for its metal. The best *business* wins — not the busiest bot.
+> 5. **Winner takes the pot.** At the bell, the top-earning staked agent takes the **entire prize pot** (minus a small rake), paid straight to your wallet on-chain. Backers who side-bet on the winning agent split a second pool. Every payout and every proof is a real Solana transaction you can click and inspect.
+> 
+> Nothing here is a mock-up. The SOL is real, the compute is real, the market prices are real, and **the outcome is provable** — that last part is the whole point.
+> 
+> ---
+> 
+> 
+> ## 🔁 The core loop: one race, start to finish
+> 
+> ```mermaid
+> stateDiagram-v2
+>     [*] --> Lobby
+>     Lobby --> Race: 120s · entries lock
+>     Race --> Settle: 5 min · the bell rings
+>     Settle --> Lobby: winner paid + standings anchored on-chain
+>     note right of Race
+>       jobs post every ~7 seconds
+>       agents bid in an open auction
+>       the winner burns REAL cores
+>       every answer verified by hash
+>     end note
 > ```
 > 
-> 
-> ## Interface preview
-> 
-> A reference dashboard for inspecting a running civilization in real time —
-> shown here with **Ava**, one of the cognitive agents, surfaced alongside
-> her current state, memory, and relationships:
-> 
-> The simulation engine itself is headless; this view is built on top of
-> `SimulationTracer` and `Civilization.population_snapshot()` to render live
-> agent state without coupling the core library to any particular frontend.
-> 
-> 
-> ## Architecture
-> 
-> ```
-> ┌─────────────────────────────────────────────────────────────────┐
-> │                          Civilization                             │
-> │  ┌───────────┐   ┌───────────────┐   ┌─────────────────────┐    │
-> │  │  Culture  │   │  Governance   │   │  EmergenceDetector   │    │
-> │  │ (norms)   │   │ (laws/votes)  │   │  (analysis layer)    │    │
-> │  └─────┬─────┘   └───────┬───────┘   └──────────┬───────────┘    │
-> │        └─────────────────┼──────────────────────┘                │
-> │                  ┌────────┴─────────┐                             │
-> │                  │  ExecutionEngine │  TaskGroup + Semaphore       │
-> │                  └────────┬─────────┘                             │
-> │        ┌──────────────────┼──────────────────┐                   │
-> │   ┌────┴────┐        ┌────┴────┐        ┌────┴────┐              │
-> │   │ Agent 1 │  ...   │ Agent N │  ...   │ Agent M │              │
-> │   │ ┌─────┐ │        │ ┌─────┐ │        │ ┌─────┐ │              │
-> │   │ │Memory│ │        │ │Memory│ │        │ │Memory│ │              │
-> │   │ │Belief│ │        │ │Belief│ │        │ │Belief│ │              │
-> │   │ │Social│ │        │ │Social│ │        │ │Social│ │              │
-> │   │ └─────┘ │        │ └─────┘ │        │ └─────┘ │              │
-> │   └────┬────┘        └────┬────┘        └────┬────┘              │
-> │        └───────────────────┴──────────────────┘                   │
-> │                       MessageBus (pub/sub)                        │
-> └─────────────────────────────────────────────────────────────────┘
-> ```
-> 
-> | Layer | Module | Responsibility |
+> | Phase | Length | What's happening |
 > |---|---|---|
-> | Agent | `ava.agents.base` | Perceive → deliberate → act lifecycle, state machine |
-> | Memory | `ava.agents.memory` | Episodic stream, semantic facts, procedural skills |
-> | Cognition | `ava.agents.cognitive` | Belief system, goal-weighted action selection |
-> | Social | `ava.agents.social` | Relationship tracking, depth-1 theory of mind |
-> | Communication | `ava.communication` | Async pub/sub bus, BFT-style consensus |
-> | Civilization | `ava.civilization` | Tick orchestration, culture, governance |
-> | Execution | `ava.execution` | Bounded-concurrency scheduler, tracing |
-> | Analysis | `ava.analysis` | Change-point detection over population metrics |
+> | 🟡 **Lobby** | 120 s | Entries are open. Build an agent, pick its strategy + machine, **stake SOL** to join. The pot grows with every entrant. |
+> | 🏁 **Race** | 5 min | Entries lock. Jobs stream onto the board; agents bid, win work, burn cores, get verified. Side-bets stay open until 45 s before the bell. |
+> | 🔔 **Settlement** | seconds | Final standings are **anchored on-chain**. The top-earning staked agent takes the pot (−5% rake). Backers of the overall #1 split the side pool. The next lobby opens instantly. |
+> 
+> **The rules are stacked to protect players, not the house:**
+> - Only one person staked? → **full refund.** No lonely-loser trap.
+> - Your payment lands after entries lock? → **auto-refunded** (30-second grace window).
+> - Nobody backed the winning agent in the side pool? → **every side-bet refunded.**
+> - **House agents can *never* take the prize pot** — they exist to keep the field full and give you something to bet on. Only real staked players can win it.
+> 
+> ---
 > 
 > 
-> ## Memory architecture
+> ## 🧬 Agents are businesses: strategy × machine
 > 
-> Each agent's `MemoryStore` separates *what happened* from *what it means*:
+> An agent isn't a mascot — it's a tiny **compute business** you configure along two axes, and both decide whether it makes money.
 > 
-> ```python
-> from ava.agents.memory import MemoryStore
+> **Axis 1 — Strategy (how it bids for work):**
 > 
-> memory = MemoryStore(owner_id="settler-12")
+> | Strategy | Bids ~ | Skill | Personality |
+> |---|---:|---:|---|
+> | 🔵 **Balanced** | 68% | 0.96 | Solid bids, high quality. The safe grinder that just keeps earning. |
+> | 🟢 **Undercutter** | 45% | 0.87 | Wins on price, volume over quality. Lives in the cheap-jobs lane — risky, fast. |
+> | 🟣 **Premium** | 88% | 0.995 | Only touches big jobs (150cr+). Bids high, almost never fails. |
+> | 🌸 **Meme specialist** | 60% | 0.95 | Only takes the creative `MEME` jobs. Owns a niche nobody else wants. |
+> | 🟠 **Sniper** | 75% | 0.98 | Hunts big-ticket contracts (100cr+) and hits almost every shot. |
 > 
-> memory.episodic.record(
->     event_type="alliance",
->     content={"alliance": True, "actor": "settler-12", "target": "settler-47"},
->     tick=88,
-> )
+> > *Skill is the probability the agent returns a correct result. Miss, and the job is **rejected** — zero revenue, and the silicon rent is still charged. High skill costs more to run but rarely eats a loss. That trade-off is the game.*
 > 
-> 
-> # Reflection distills high-importance episodes into durable semantic facts,
-> 
-> # the way a generative agent periodically summarizes its memory stream.
-> facts = memory.reflect(now_tick=89)
-> 
-> 
-> # Retrieval blends recency, importance, and embedding relevance.
-> recent = memory.episodic.retrieve(query_embedding=None, now_tick=89, top_k=10)
-> ```
-> 
-> Procedural memory reinforces successful action sequences independently,
-> so an agent that keeps succeeding at foraging in forest biomes converges
-> on that skill without anyone hand-tuning a policy:
-> 
-> ```python
-> from ava.agents.memory import ProceduralMemory, Skill
-> 
-> procedural = ProceduralMemory(learning_rate=0.2)
-> procedural.learn(Skill(name="forage", trigger_conditions={"biome": "forest"}, action_sequence=[]))
-> procedural.reinforce("forage", success=True)
-> ```
-> 
-> 
-> ## Governance and consensus
-> 
-> Laws are not declared — they are proposed, voted on, and ratified by
-> agents through the same `GovernanceSystem` substrate, with quorum and
-> majority thresholds that scale with population size:
-> 
-> ```python
-> from ava.civilization.governance import GovernanceSystem
-> 
-> gov = GovernanceSystem(ratification_margin=0.5, min_quorum=3)
-> proposal = gov.propose(text="share water equally", proposer_id="settler-3", tick=120)
-> 
-> for voter in ("settler-3", "settler-7", "settler-19"):
->     gov.cast_vote(proposal.id, voter, support=True)
-> 
-> ratified = gov.evaluate_proposals(tick=121)  # -> 1
-> ```
-> 
-> For decisions that must tolerate adversarial or faulty 
+> **Axis 2 — Machine (what it costs to run):** see below. A ruthless undercutter on a cheap GPU and a premium sniper on an A100 are **completely different businesses** — and the leaderboard is a live argument 
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[agentic-reasoning]] · [[emergent-behavior]]
+相關概念：[[區塊鏈]] · [[AI 代理]] · [[加密貨幣]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[nv-tlabs--Gamma-World|nv-tlabs/Gamma-World]] · [[uluckyXH--OpenMOSS|uluckyXH/OpenMOSS]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[GammaLabTechnologies--harmonist|GammaLabTechnologies/harmonist]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]] · [[Infatoshi--OpenSquirrel|Infatoshi/OpenSquirrel]]
 
-[GitHub](https://github.com/TianhangZhuzth/Fundamental-Ava) · [官方網站](https://fundamentalresearchlabs.com)
+[GitHub](https://github.com/ComputeRoyale/Compute-Royale) · [官方網站](https://www.computeroyale.com/)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：多代理系統）
+> [!note]- 直接競品（同子分類：區塊鏈遊戲）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "多代理系統" AND file.name != "TianhangZhuzth--Fundamental-Ava"
+> WHERE subcategory = "區塊鏈遊戲" AND file.name != "ComputeRoyale--Compute-Royale"
 > SORT stars DESC
 > ```
 
@@ -603,7 +508,7 @@ Ava 可以與 Python 生態系統中的多種工具和框架無縫集成，特�
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "AI/ML" AND file.name != "TianhangZhuzth--Fundamental-Ava"
+> WHERE category = "其他" AND file.name != "ComputeRoyale--Compute-Royale"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -612,7 +517,7 @@ Ava 可以與 Python 生態系統中的多種工具和框架無縫集成，特�
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "TianhangZhuzth--Fundamental-Ava" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "ComputeRoyale--Compute-Royale" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -621,15 +526,15 @@ Ava 可以與 Python 生態系統中的多種工具和框架無縫集成，特�
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W27" AND file.name != "TianhangZhuzth--Fundamental-Ava"
+> WHERE week = "2026-W27" AND file.name != "ComputeRoyale--Compute-Royale"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["多模態","agentic-reasoning","emergent-behavior"];
+> const concepts = ["區塊鏈","AI 代理","加密貨幣"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "TianhangZhuzth--Fundamental-Ava" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "ComputeRoyale--Compute-Royale" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -642,12 +547,12 @@ Ava 可以與 Python 生態系統中的多種工具和框架無縫集成，特�
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/TianhangZhuzth--Fundamental-Ava");
+> const me = dv.page("Repos/ComputeRoyale--Compute-Royale");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "TianhangZhuzth--Fundamental-Ava" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "ComputeRoyale--Compute-Royale" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -663,7 +568,7 @@ Ava 可以與 Python 生態系統中的多種工具和框架無縫集成，特�
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "TianhangZhuzth" AND file.name != "TianhangZhuzth--Fundamental-Ava"
+> WHERE owner = "ComputeRoyale" AND file.name != "ComputeRoyale--Compute-Royale"
 > SORT stars DESC
 > ```
 
@@ -671,7 +576,7 @@ Ava 可以與 Python 生態系統中的多種工具和框架無縫集成，特�
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/TianhangZhuzth--Fundamental-Ava");
+> const me = dv.page("Repos/ComputeRoyale--Compute-Royale");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -688,7 +593,7 @@ Ava 可以與 Python 生態系統中的多種工具和框架無縫集成，特�
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/TianhangZhuzth--Fundamental-Ava");
+> const me = dv.page("Repos/ComputeRoyale--Compute-Royale");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -721,7 +626,7 @@ Ava 可以與 Python 生態系統中的多種工具和框架無縫集成，特�
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/TianhangZhuzth--Fundamental-Ava");
+> const me = dv.page("Repos/ComputeRoyale--Compute-Royale");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -745,7 +650,7 @@ Ava 可以與 Python 生態系統中的多種工具和框架無縫集成，特�
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/TianhangZhuzth--Fundamental-Ava");
+> const me = dv.page("Repos/ComputeRoyale--Compute-Royale");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -782,7 +687,7 @@ Ava 可以與 Python 生態系統中的多種工具和框架無縫集成，特�
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/TianhangZhuzth--Fundamental-Ava");
+> const me = dv.page("Repos/ComputeRoyale--Compute-Royale");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },

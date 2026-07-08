@@ -441,7 +441,7 @@ X4G 最常與 Railway.app 搭配使用，作為快速部署的解決方案。在
 
 相關概念：[[網路隧道]] · [[HTTP Proxy]] · [[流量管理]]
 
-相關專案：[[KNG7-P--Se7en-Pro|KNG7-P/Se7en-Pro]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]]
+相關專案：[[KNG7-P--Se7en-Pro|KNG7-P/Se7en-Pro]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[NawfalMotii79--PLFM_RADAR|NawfalMotii79/PLFM_RADAR]] · [[baoweise-bot--aimili-vpngate|baoweise-bot/aimili-vpngate]]
 
 [GitHub](https://github.com/x4gKing/X4G)
 

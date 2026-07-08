@@ -7,9 +7,9 @@ language: Python
 license: Apache-2.0
 description: "Qwen-AgentWorld: Language World Models for General Agents"
 homepage: "https://arxiv.org/abs/2606.24597"
-stars: 784
-stars_per_day: 56
-forks: 72
+stars: 792
+stars_per_day: 53
+forks: 73
 open_issues: 3
 created: 2026-06-22
 pushed_at: 2026-06-25
@@ -17,7 +17,7 @@ first_seen: 2026-06-26
 week: "2026-W26"
 month: "2026-06"
 category: "AI/ML"
-subcategory: "代理模擬"
+subcategory: "代理模型"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-26
-use_case: "提供一個原生的語言世界模型，模擬多種代理環境，支持長鏈推理。"
+use_case: "提供一個原生的語言世界模型，模擬多種代理環境，並支持長鏈思考推理。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-26"
-star_history: "2026-06-26:488,2026-06-26:489,2026-06-27:568,2026-06-27:568,2026-06-28:595,2026-06-28:595,2026-06-29:627,2026-06-29:627,2026-06-30:663,2026-07-01:681,2026-07-02:699,2026-07-03:727,2026-07-04:751,2026-07-05:765,2026-07-06:773,2026-07-07:784"
+star_history: "2026-06-26:488,2026-06-26:489,2026-06-27:568,2026-06-27:568,2026-06-28:595,2026-06-28:595,2026-06-29:627,2026-06-29:627,2026-06-30:663,2026-07-01:681,2026-07-02:699,2026-07-03:727,2026-07-04:751,2026-07-05:765,2026-07-06:773,2026-07-07:784,2026-07-08:792"
 tags:
   - github
   - "category/ai_ml"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "Qwen-AgentWorld"
   - "QwenLM/Qwen-AgentWorld"
-  - "提供一個原生的語言世界模型，模擬多種代理環境，支持長鏈推理。"
+  - "提供一個原生的語言世界模型，模擬多種代理環境，並支持長鏈思考推理。"
 ---
 
 # Qwen-AgentWorld
 
-**784** stars · **56** stars/天 · 建立 14 天前 · Python · Apache-2.0
+**792** stars · **53** stars/天 · 建立 15 天前 · Python · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/QwenLM--Qwen-AgentWorld");
@@ -73,20 +73,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供一個原生的語言世界模型，模擬多種代理環境，支持長鏈推理。
+> 提供一個原生的語言世界模型，模擬多種代理環境，並支持長鏈思考推理。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (56 stars/day)
-> **授權** Apache-2.0 (商業友好) · **維護** Moderate (最後推送 11 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要在多種環境中進行代理模擬的 AI 研究者和開發者。
-> **一句話重點** Qwen-AgentWorld 的設計理念是從一開始就將環境建模作為訓練目標，這使得它在多種情境下的表現優於傳統模型。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (53 stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Moderate (最後推送 12 天前) · **貢獻者** 2 人 · **參與度** Low
+> **適合** 需要在多個領域中模擬代理行為的 AI 研究者和開發者。
+> **一句話重點** 這個專案的創新在於從一開始就將環境建模作為訓練目標，顯著提升了模擬的真實性。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/QwenLM--Qwen-AgentWorld");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "代理模擬" && p.file.name !== "QwenLM--Qwen-AgentWorld" && p.status !== "archived")
+>     .where(p => p.subcategory === "代理模型" && p.file.name !== "QwenLM--Qwen-AgentWorld" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -97,32 +97,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 代理模擬 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 代理模型 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習，20 小時整合，得到高效的環境模擬能力，值得投入。
+> **結論** 花 10 小時學習，15 小時整合，得到強大的模擬能力，值得投入。
 
 > [!abstract] 核心創新
-> Qwen-AgentWorld 是首個同時支持七個代理互動領域的原生語言世界模型。
+> Qwen-AgentWorld 是第一個同時涵蓋七個代理互動領域的語言世界模型。
 
 ## 專案簡介
 
-Qwen-AgentWorld 是一個原生的語言世界模型，專為模擬代理環境而設計，支持七個統一領域的長鏈推理。用戶可以通過安裝依賴包 `pip install openai` 開始使用。這個模型的核心在於其三階段訓練流程：CPT 階段注入環境知識，SFT 階段啟動下一狀態預測推理，RL 階段提升模擬的真實性。這樣的設計使得 Qwen-AgentWorld 能夠在多達 10M 的真實互動軌跡上進行訓練，並且在環境建模上不再是事後附加，而是從一開始就作為訓練目標。
+Qwen-AgentWorld 是一個專注於模擬代理環境的語言世界模型，涵蓋七個統一領域，包括 MCP、搜索、終端、SWE、Android、Web 和 OS。其核心機制是透過三階段的訓練流程來實現：首先，CPT 階段注入環境知識；接著，SFT 階段啟動下一狀態預測推理；最後，RL 階段提升模擬的真實性。這種設計使得 Qwen-AgentWorld 能夠在多種環境中進行零-shot 泛化，並且具備可控的擾動和虛構世界構建能力。使用者可以透過 `huggingface-cli download Qwen/AgentWorldBench` 下載評估基準，並利用 SGLang 或 vLLM 框架進行模型部署，指令如 `python -m sglang.launch_server --model-path Qwen/Qwen-AgentWorld-35B-A3B`。這個模型的賣點在於它不僅僅是後期適應的世界建模，而是從一開始就將環境建模作為訓練目標。
 
-這使得模型在面對 OOD 環境時具備零-shot 泛化能力，並能夠進行可控的擾動和虛構世界構建。與其他模型相比，Qwen-AgentWorld 在多個基準測試中表現出色，尤其在模擬 RL 環境和多輪任務上。實際使用中，模型的性能在多個領域中均有顯著提升，特別是在 MCP 和搜索任務上。這個模型的設計目的是為了提供一個可擴展且可控的模擬器，適合需要進行複雜環境模擬的開發者和研究者。
+技術上，Qwen-AgentWorld 使用了大規模的真實互動數據進行訓練，並且在性能上超越了多個前沿的專有模型，如 GPT-5.4。與其他模型相比，Qwen-AgentWorld 的設計使其在多任務和工具調用的代理任務上表現更佳，尤其在多輪對話和環境適應方面。使用者在實際應用中可能會遇到的挑戰包括對環境的準確建模需求和對資源的高效利用。這個專案目前處於活躍開發階段，值得關注其未來的發展方向。
 
 **技術棧**：`Python`
 
 ## 重點功能
 
-- 七個統一領域 — 同時支持 MCP、搜索、終端、SWE、Android、Web 和 OS 的模擬。
-- 原生世界模型 — 從 CPT 階段開始進行環境建模，無需後期調整。
-- 可擴展的模擬器 — 能夠對 OOD 環境進行零-shot 泛化。
-- 可控擾動 — 針對特定任務進行環境適應，揭示代理的弱點。
-- 多輪任務支持 — 能夠處理多輪的工具調用任務，提升代理的實用性。
+- 七個統一領域 — 同時涵蓋 MCP、搜索、終端、SWE、Android、Web 和 OS。
+- 原生世界模型 — 從 CPT 階段開始就進行環境建模，而非後期適應。
+- 可擴展的模擬器 — 支持零-shot 泛化到 OOD 環境，並能進行可控的擾動。
+- 代理基礎模型 — 在單回合非代理軌跡上進行 LWM RL 熱身，能夠轉移到多回合工具調用任務。
+- 高效的部署支持 — 支援 SGLang 和 vLLM 等多種推理框架。
 
 ## 快速開始
 
@@ -145,89 +145,65 @@ model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype='auto', dev
 ## 程式碼範例
 
 ```python
-# 前置條件
-# 使用 Transformers 進行推理
-from transformers import AutoModelForCausalLM, AutoTokenizer
-model_name = 'Qwen/Qwen-AgentWorld-35B-A3B'
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(
-    model_name,
-    torch_dtype='auto',
-    device_map='auto',
-)
-
-messages = [
-    {
-        'role': 'system',
-        'content': 'You are a language world model simulating a Linux terminal environment. Given the user's command, predict the terminal output.'
-    },
-    {
-        'role': 'user',
-        'content': 'Action: execute_bash\nCommand: ls -la /home/user/project/'
-    }
-]
-
-text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-inputs = tokenizer([text], return_tensors='pt').to(model.device)
-outputs = model.generate(**inputs, max_new_tokens=2048, temperature=0.6)
-response = tokenizer.decode(outputs[0][inputs.input_ids.shape[-1]:], skip_special_tokens=True)
-print(response)
-# 預期輸出
-# 模擬的終端輸出結果，顯示指定目錄的檔案清單。
+{
+  "前置條件": "安裝 transformers 套件",
+  "程式碼": "from transformers import AutoModelForCausalLM, AutoTokenizer\nmodel_name = 'Qwen/Qwen-AgentWorld-35B-A3B'\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForCausalLM.from_pretrained(\n    model_name,\n    torch_dtype='auto',\n    device_map='auto',\n)\n\nmessages = [\n    {\n        'role': 'system',\n        'content': 'You are a language world model simulating a Linux terminal environment. Given the user's command, predict the terminal output.'\n    },\n    {\n        'role': 'user',\n        'content': 'Action: execute_bash\\nCommand: ls -la /home/user/project/'\n    }\n]\n\ntext = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)\ninputs = tokenizer([text], return_tensors='pt').to(model.device)\noutputs = model.generate(**inputs, max_new_tokens=2048, temperature=0.6)\nresponse = tokenizer.decode(outputs[0][inputs.input_ids.shape[-1]:], skip_special_tokens=True)\nprint(response)",
+  "預期輸出": "模擬的 Linux 終端輸出，顯示指定目錄的檔案清單。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 14 天內累積 784 stars（56/天），forks 72（9.2%），顯示出穩定的增長潛力。這個專案由 hzhwcmhf 和 yuxinzuo 兩位貢獻者主導，解決了以往模型在環境模擬上的不足，特別是缺乏原生世界模型的問題。之前的模型多數是後期調整，無法有效應對多變的環境。近期的發布和社群討論也引起了不少關注，尤其是與 Qwen3.6 的比較。這些因素共同促進了其快速增長。
+> 建立 15 天就累積 792 stars（53/天），forks 73（9.2%），這顯示出穩定的增長。主要貢獻者 hzhwcmhf 和 yuxinzuo 在開源社群中有一定的影響力，並且這個專案解決了以往世界建模工具在多領域適應性不足的痛點。之前的工具往往需要後期調整，而 Qwen-AgentWorld 則從訓練開始就考慮環境建模，這使得它在模擬真實世界的能力上有了顯著提升。社群的活躍度和開放的討論平台也促進了用戶的參與和反饋。
 
 ## 適合誰使用
 
-**目標受眾**：需要在多種環境中進行代理模擬的 AI 研究者和開發者。
+**目標受眾**：需要在多個領域中模擬代理行為的 AI 研究者和開發者。
 
 > [!example] 使用場景
-> - AI 研究人員用它來模擬複雜的代理環境，因為它支持七個不同的領域，能夠進行多樣化的實驗。
-> - 遊戲開發者用它來創建虛構世界，因為其可控的擾動功能能夠幫助測試不同的遊戲機制。
-> - 數據科學家用它來進行 RL 模型的訓練，因為它的高效能和多輪任務支持能夠加速實驗過程。
+> - AI 研究人員用它來模擬複雜的代理環境，因為它支持長鏈思考推理，能夠在多個領域中進行有效的實驗。
+> - 遊戲開發者用它來創建虛構世界，因為其可控的擾動功能可以幫助測試不同的遊戲機制。
+> - 教育工作者用它來設計互動式學習環境，因為其多領域的適應性使得學習內容能夠更具吸引力和實用性。
 
 ## 架構分析
 
-Qwen-AgentWorld 採用三階段訓練流程，分別是 CPT、SFT 和 RL。CPT 階段專注於環境知識的注入，SFT 階段則啟動下一狀態的預測推理，最後 RL 階段提升模擬的真實性。這種設計使得模型能夠在多達 10M 的真實互動軌跡上進行訓練，並且在環境建模上不再是事後附加，而是從一開始就作為訓練目標。這樣的架構模式使得模型在面對多變的環境時具備更強的適應能力和泛化能力，特別是在 OOD 環境中。選擇這種架構的代價在於需要較高的計算資源，特別是在 RL 階段的訓練上，這可能會限制其在資源受限的環境中的應用。
+Qwen-AgentWorld 採用分層架構，將環境模擬與語言生成分開。這樣的設計使得模型能夠在多個領域中進行有效的推理和模擬。資料流從用戶輸入的指令開始，經過語言模型的處理，最終生成對應的環境反應。
+
+選擇這種架構的原因在於其可擴展性和靈活性，能夠支持多種不同的應用場景。這種設計的代價在於需要較高的計算資源來維持性能。隨著使用者需求的增加，模型的擴展性可能會成為一個瓶頸，特別是在處理更複雜的環境時。
 
 ## 技術深入分析
 
-Qwen-AgentWorld 的核心技術機制在於其三階段訓練流程，分別是 CPT、SFT 和 RL。CPT 階段專注於環境知識的注入，這使得模型能夠在訓練初期就具備一定的環境理解能力。SFT 階段則啟動下一狀態的預測推理，這對於後續的 RL 階段至關重要。RL 階段的設計使得模型能夠在模擬過程中進行自我優化，從而提升模擬的真實性。
-
-這樣的設計使得 Qwen-AgentWorld 能夠處理多達 10M 的真實互動軌跡，並在多個基準測試中表現出色。選擇這種訓練流程的代價在於需要較高的計算資源，特別是在 RL 階段的訓練上，這可能會限制其在資源受限的環境中的應用。技術風險方面，隨著模型的複雜度增加，可能會面臨過擬合的風險，特別是在處理 OOD 環境時。整合方面，Qwen-AgentWorld 與主流的深度學習框架（如 PyTorch）相容性良好，並且可以輕鬆地與 CI/CD pipeline 整合，這對於團隊的開發流程非常友好。
+Qwen-AgentWorld 的核心技術機制是基於強化學習和長鏈思考推理，使用了多種演算法來實現環境模擬。其設計模式結合了環境建模和語言生成，使得模型能夠在多種場景中進行有效的推理。性能方面，模型能夠處理超過 10M 的真實互動數據，並且在多個基準測試中表現出色。選擇 Python 作為開發語言的原因在於其生態系統的豐富性和對機器學習的良好支持。這種選擇的代價是需要較高的計算資源來維持性能。技術風險方面，隨著使用者需求的增加，模型的擴展性可能會成為一個瓶頸，特別是在處理更複雜的環境時。整合方面，與主流框架的相容性良好，能夠輕鬆地融入現有的開發流程。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝指示和範例，安裝過程相對順暢。雖然沒有專門的入門指南，但基本的使用說明已經足夠讓新手上手。文件目前僅提供英文版本，可能對非英語使用者造成一定的障礙。
+> README 文件提供了清晰的安裝步驟和範例，安裝過程相對順暢。雖然沒有專門的入門指南，但使用者可以透過範例快速上手。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
 > - 支持多種代理環境的模擬，適用範圍廣。
-> - 原生世界模型設計，提升了模擬的真實性。
+> - 原生的環境建模能力，提升了模擬的真實性。
 > - 可控的擾動功能，能夠針對特定任務進行調整。
 
 > [!danger] 缺點
-> - 需要較高的計算資源，對硬體要求較高。
-> - 目前僅支持 Python，對其他語言的支持有限。
-> - 對於某些特定的環境模擬，可能需要額外的調整和優化。
+> - 需要大量的計算資源，對硬體要求較高。
+> - 對於特定領域的適應性可能需要額外的微調。
+> - 學習曲線較陡，對於新手使用者可能不友好。
 
 > [!warning] 注意事項
-> - 目前僅支持 Python 環境。
-> - 需要較高的計算資源，建議使用 GPU 進行推理。
-> - 對於某些特定的環境模擬，可能需要額外的調整和優化。
+> - 需要大量的訓練數據以達到最佳性能。
+> - 對於特定領域的適應性可能需要進一步的微調。
+> - 在資源有限的環境中可能無法充分發揮其潛力。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
 | [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建虛擬代理的工具，而 Qwen-AgentWorld 提供更全面的環境模擬能力。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於對抗性代理的訓練，而 Qwen-AgentWorld 支持多種環境的長鏈推理。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 主要針對對抗性環境的模擬，而 Qwen-AgentWorld 則支持多種非對抗性任務。 |
 
 ## 替代方案決策
 
@@ -235,16 +211,16 @@ Qwen-AgentWorld 的核心技術機制在於其三階段訓練流程，分別是 
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建虛擬代理的工具，而 Qwen-AgentWorld 提供更全面的環境模擬能力。 | 如果你的專案主要集中在虛擬代理的開發上，這個工具可能更合適。 | medium，因為需要重新調整模型的訓練流程。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於對抗性代理的訓練，而 Qwen-AgentWorld 支持多種環境的長鏈推理。 | 如果你的應用場景需要強調對抗性學習，這個工具可能更適合。 | high，因為需要重新設計整個訓練架構。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建虛擬代理的工具，而 Qwen-AgentWorld 提供更全面的環境模擬能力。 | 如果你的專案主要集中在虛擬代理的開發，而非多領域的模擬。 | low，因為兩者的核心概念相似。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 主要針對對抗性環境的模擬，而 Qwen-AgentWorld 則支持多種非對抗性任務。 | 如果你的應用場景主要是對抗性測試，則 Duel-Agents 可能更合適。 | medium，因為需要調整模型的輸入和輸出格式。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **Qwen-AgentWorld** | **agent-sprite-forge** | **Duel-Agents** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於創建虛擬代理的工具，而 Qwen-AgentWorld 提供更全面的環境模擬能力。 | 專注於對抗性代理的訓練，而 Qwen-AgentWorld 支持多種環境的長鏈推理。 |
-> | 遷移成本 | - | medium，因為需要重新調整模型的訓練流程。 | high，因為需要重新設計整個訓練架構。 |
-> | 適用場景 | 主要場景 | 如果你的專案主要集中在虛擬代理的開發上，這個工具可能更合適。 | 如果你的應用場景需要強調對抗性學習，這個工具可能更適合。 |
+> | 技術路線 | 本專案 | 專注於創建虛擬代理的工具，而 Qwen-AgentWorld 提供更全面的環境模擬能力。 | 主要針對對抗性環境的模擬，而 Qwen-AgentWorld 則支持多種非對抗性任務。 |
+> | 遷移成本 | - | low，因為兩者的核心概念相似。 | medium，因為需要調整模型的輸入和輸出格式。 |
+> | 適用場景 | 主要場景 | 如果你的專案主要集中在虛擬代理的開發，而非多領域的模擬。 | 如果你的應用場景主要是對抗性測試，則 Duel-Agents |
 
 ## 成熟度評估
 
@@ -255,42 +231,44 @@ Qwen-AgentWorld 的核心技術機制在於其三階段訓練流程，分別是 
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合用於研究和實驗，但不建議在生產環境中使用。
+> 適合在研究環境中試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些環境下，模型可能無法正確處理特定指令，導致錯誤輸出。
-  - 解法：檢查輸入的指令格式，確保符合模型要求。
-- [MEDIUM] 對於大型模型的推理，可能需要較長的加載時間。
-  - 解法：確保使用高效的硬體資源，並考慮使用模型壓縮技術。
+- **[HIGH]** 在特定環境下，模型可能無法正確生成預期的輸出。
+  - 解法：調整模型的參數設置或使用不同的輸入格式。
+- [MEDIUM] 對於某些複雜的指令，模型的反應可能不夠準確。
+  - 解法：提供更具體的上下文信息以幫助模型理解。
+- [MEDIUM] 在資源有限的環境中，模型的性能可能會下降。
+  - 解法：考慮使用更輕量的模型或進行性能優化。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| AI 研究團隊進行多領域環境模擬 | 非常適合 | 模型支持多種領域的模擬，能夠滿足不同的研究需求。 |
-| 小型專案需要快速原型開發 | 普通 | 雖然安裝簡單，但可能需要較高的計算資源。 |
-| 大型企業進行複雜的環境模擬 | 非常適合 | 模型的高效能和可擴展性能夠支持大規模的模擬需求。 |
-| 個人開發者進行簡單的代理模擬 | 不適合 | 對於資源要求較高，可能不符合個人開發者的需求。 |
+| 大型 AI 研究團隊進行多領域代理模擬 | 非常適合 | 其廣泛的領域覆蓋和強大的模擬能力使其成為理想選擇。 |
+| 小型初創公司開發簡單的代理應用 | 普通 | 雖然功能強大，但可能對資源要求過高。 |
+| 教育機構設計互動式學習環境 | 適合 | 其可控的擾動功能能夠提供靈活的學習體驗。 |
+| 個人開發者進行小型專案 | 不適合 | 對於資源和學習曲線的要求可能超出個人能力。  |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~10 小時 |
-| 整合時間 | ~20 小時 |
+| 整合時間 | ~15 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習，20 小時整合，得到高效的環境模擬能力，值得投入。
+> 花 10 小時學習，15 小時整合，得到強大的模擬能力，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限操作，且不存取敏感資料。依賴鏈的信任程度較高，無已知的供應鏈風險。
+> 低風險：模型本身不需要高權限，且不會存取敏感資料。依賴鏈的信任程度良好，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -355,7 +333,7 @@ Qwen-AgentWorld 的核心技術機制在於其三階段訓練流程，分別是 
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 72 |
+| Forks | 73 |
 | Open Issues | 3 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-06-25 |
@@ -372,7 +350,7 @@ Qwen-AgentWorld 的核心技術機制在於其三階段訓練流程，分別是 
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放問題解決率較低。
+**社群活躍度**：社群活躍度中等，開放的討論平台促進用戶參與。
 **連結**：[文件](https://arxiv.org/abs/2606.24597)
 
 ## 開發動態
@@ -566,7 +544,7 @@ Qwen-AgentWorld 的核心技術機制在於其三階段訓練流程，分別是 
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[強化學習]] · [[代理框架]]
+相關概念：[[多模態]] · [[強化學習]] · [[自然語言處理]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[AlexandrosGounis--pdfx|AlexandrosGounis/pdfx]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[DepthFirstDisclosures--Nginx-Rift|DepthFirstDisclosures/Nginx-Rift]]
 
@@ -574,11 +552,11 @@ Qwen-AgentWorld 的核心技術機制在於其三階段訓練流程，分別是 
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：代理模擬）
+> [!note]- 直接競品（同子分類：代理模型）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "代理模擬" AND file.name != "QwenLM--Qwen-AgentWorld"
+> WHERE subcategory = "代理模型" AND file.name != "QwenLM--Qwen-AgentWorld"
 > SORT stars DESC
 > ```
 
@@ -610,7 +588,7 @@ Qwen-AgentWorld 的核心技術機制在於其三階段訓練流程，分別是 
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["多模態","強化學習","代理框架"];
+> const concepts = ["多模態","強化學習","自然語言處理"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "QwenLM--Qwen-AgentWorld" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

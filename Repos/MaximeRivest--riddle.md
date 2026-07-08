@@ -7,8 +7,8 @@ language: Rust
 license: MIT
 description: "The diary of Tom Riddle for the reMarkable Paper Pro — write with your pen, the page drinks your ink and answers in a flowing hand"
 homepage: ""
-stars: 1076
-stars_per_day: 538
+stars: 1077
+stars_per_day: 539
 forks: 76
 open_issues: 13
 created: 2026-07-05
@@ -17,7 +17,7 @@ first_seen: 2026-07-08
 week: "2026-W28"
 month: "2026-07"
 category: "其他"
-subcategory: "手寫工具"
+subcategory: "數位筆記"
 release_tag: "v0.3.0"
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-08
-use_case: "讓你在 reMarkable Paper Pro 上用筆寫日記，並且日記會以流暢的手寫回覆。"
+use_case: "讓 reMarkable Paper Pro 的使用者透過手寫與日記互動，實現流暢的對話體驗。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-08"
-star_history: "2026-07-08:1076"
+star_history: "2026-07-08:1076,2026-07-08:1077"
 tags:
   - github
   - "category/其他"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "riddle"
   - "MaximeRivest/riddle"
-  - "讓你在 reMarkable Paper Pro 上用筆寫日記，並且日記會以流暢的手寫回覆。"
+  - "讓 reMarkable Paper Pro 的使用者透過手寫與日記互動，實現流暢的對話體驗。"
 ---
 
 # riddle
 
-**1.1k** stars · **538** stars/天 · 建立 2 天前 · Rust · MIT
+**1.1k** stars · **539** stars/天 · 建立 2 天前 · Rust · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/MaximeRivest--riddle");
@@ -71,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `v0.3.0`
 
 > [!summary] 一句話摘要
-> 讓你在 reMarkable Paper Pro 上用筆寫日記，並且日記會以流暢的手寫回覆。
+> 讓 reMarkable Paper Pro 的使用者透過手寫與日記互動，實現流暢的對話體驗。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (538 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (539 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在 reMarkable Paper Pro 上進行手寫筆記並希望獲得即時回饋的創作者和學生。
-> **一句話重點** 這個專案不僅是手寫工具，更是一個能夠與用戶進行互動的智能日記。
+> **適合** 希望在 reMarkable Paper Pro 上實現手寫與 AI 互動的創作者和學生。
+> **一句話重點** 這個專案的魅力在於它將手寫和 AI 互動結合，創造出獨特的數位日記體驗。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/MaximeRivest--riddle");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "手寫工具" && p.file.name !== "MaximeRivest--riddle" && p.status !== "archived")
+>     .where(p => p.subcategory === "數位筆記" && p.file.name !== "MaximeRivest--riddle" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,102 +95,110 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 手寫工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 數位筆記 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
-> **結論** 花 3 小時學習，2 小時整合，得到即時手寫回覆的效果，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，3 小時整合，得到獨特的手寫 AI 互動體驗，值得一試。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於將手寫輸入和即時回覆結合，提供了一種全新的書寫體驗。
+> 這個專案的創新點在於將手寫與 AI 互動結合，提供無屏幕的書寫體驗。
 
 ## 專案簡介
 
-這個專案的核心機制是讓用戶在 reMarkable Paper Pro 上用筆寫字，然後日記會自動回覆，這個過程完全不需要屏幕或鍵盤。具體來說，用戶的筆跡會被轉換成 PNG 圖像，然後發送給一個 LLM（大型語言模型），該模型會生成回覆，並以手寫形式顯示在頁面上。這樣的設計讓用戶感受到更自然的書寫體驗，因為它模擬了傳統的書寫方式，而不是依賴於數位介面。最關鍵的指令是 `remagic install riddle`，這會自動安裝並配置日記應用。這個工具的賣點在於其即時性和高互動性，讓用戶能夠在寫作過程中獲得即時回饋。技術上，它使用 Rust 和 C++ 開發，並且依賴於 reMarkable 的 SDK 來實現低延遲的手寫回覆。
+這個專案提供了一個獨特的數位日記體驗，使用者可以在 reMarkable Paper Pro 上手寫內容，然後日記會自動生成回應，仿佛在與一個活生生的對話者交流。具體流程是：使用者寫下問題，日記會吸收這些文字，經過一段時間後，日記會以流暢的手寫字體回覆。這樣的設計讓使用者能夠享受無屏幕的書寫體驗，強調了手寫的自然感。安裝過程相對簡單，使用者只需透過 `remagic install riddle` 指令進行安裝，並可選擇設置 OpenAI API 來增強日記的智能回應能力。這個工具的賣點在於它的沉浸式體驗，讓人感覺自己在與一個有靈魂的日記互動。
 
-這意味著它能夠在用戶寫完字後，幾乎立即生成回覆，延遲時間約為 0.9 到 1.1 秒。與其他類似工具相比，這個專案的獨特之處在於它的即時性和手寫回覆的自然流暢性，而不是單純的文字輸入和輸出。實際使用中，這個工具能夠處理用戶的手寫輸入，並且能夠記住過去的對話，這使得用戶能夠隨時查詢之前的內容。這個專案目前仍在快速發展中，適合對手寫和自然語言處理有興趣的開發者。未來幾個月內，預計會有更多功能和改進，特別是在記憶和回憶功能方面。
+技術上，這個專案使用 Rust、C++、C 和 Shell，並且依賴於 OpenAI 的 API 來生成回應，這樣的選擇使得日記能夠快速且高效地處理用戶輸入。與其他類似工具相比，如 `0x0funky/agent-sprite-forge` 和 `432539/gpt2api`，riddle 的獨特之處在於其專為手寫互動設計，並且提供了更為直觀的用戶體驗。使用者在使用過程中可能會遇到需要重新編譯的設定問題，但整體來說，這個專案的設計理念和實現方式都非常吸引人。對於喜歡手寫記錄並希望與 AI 互動的用戶來說，這是一個值得嘗試的工具。
 
 **技術棧**：`Rust` · `C++` · `C` · `Shell`
 
 ## 重點功能
 
-- 即時手寫回覆 — 用戶寫下的內容會在 0.9-1.1 秒內生成手寫回覆。
-- 記憶功能 — 日記能夠記住過去的對話，讓用戶隨時查詢之前的內容。
-- 簡單安裝 — 使用 `remagic install riddle` 指令輕鬆安裝和配置。
-- 多種 API 支援 — 支援 OpenAI 兼容的 API，無需額外軟體。
-- 自定義設置 — 用戶可以根據需要調整 API 鍵和模型設置。
+- 手寫互動 — 使用者可以直接在頁面上手寫，日記會自動生成回應。
+- OpenAI API 整合 — 支持與任何 OpenAI 兼容的 API 進行交互，無需額外軟體。
+- 簡易安裝 — 透過 `remagic install riddle` 指令輕鬆安裝，快速上手。
+- 自定義設置 — 使用者可以通過環境變數自定義 API 鍵和模型。
+- 無屏幕體驗 — 提供沉浸式的書寫體驗，無需依賴屏幕或鍵盤。
 
 ## 快速開始
 
-1. 安裝 riddle
+1. 使用 remagic 安裝 riddle
 ```bash
 remagic install riddle
 ```
-2. 配置 riddle 設置
+2. 配置 riddle 設定
 ```bash
 remagic config riddle
 ```
-3. 在 AppLoad 中重載並啟動日記
+3. 在 AppLoad 中重新加載日記
 ```bash
-tap Reload in AppLoad
+tap Reload, then The Diary
+```
+
+## 程式碼範例
+
+```rust
+# 前置條件：安裝 riddle 並配置 API 鍵
+export RIDDLE_OPENAI_KEY="sk-..."  # required
+export RIDDLE_OPENAI_BASE="https://api.openai.com/v1"  # optional (default)
+export RIDDLE_OPENAI_MODEL="gpt-4o-mini"  # optional; must see images
+export RIDDLE_OPENAI_REASONING="low"  # thinking models only
+export RIDDLE_OPENAI_MAX_TOKENS="2000"  # runaway guard
+# 預期輸出：日記將能夠根據手寫內容生成回應。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天就累積 1076 stars（538/天），forks 76（7.1%），這顯示出強烈的興趣和參與度。作者 MaximeRivest 之前有開發過其他與 reMarkable 相關的工具，這使得他在這個領域有一定的知名度。這個專案解決了用戶在數位書寫中缺乏即時回饋的痛點，之前的解決方案通常需要依賴於屏幕或鍵盤，無法提供如此自然的書寫體驗。最近的推廣活動和社群討論也可能促進了這個專案的曝光度。技術上，這個工具的實現依賴於 reMarkable 的 SDK，這使得它能夠直接與設備的 e-ink 引擎互動，提供即時的手寫回覆。forks/stars 比率為 7.1%，顯示出許多人對這個專案的實際修改和使用。
+> 建立 2 天內累積 1077 stars（539/天），forks 76（7.1%），顯示出強烈的初期興趣。作者 MaximeRivest 之前在開源社群有一定的影響力，這個專案解決了手寫與 AI 互動的需求，讓用戶能夠在無屏幕的情況下享受智能對話的樂趣。近期的推廣和展示可能吸引了許多對於數位筆記有興趣的用戶，導致其快速增長。這個工具的獨特性和創新性使其在同類產品中脫穎而出，並且引發了社群的熱烈討論。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 reMarkable Paper Pro 上進行手寫筆記並希望獲得即時回饋的創作者和學生。
+**目標受眾**：希望在 reMarkable Paper Pro 上實現手寫與 AI 互動的創作者和學生。
 
 > [!example] 使用場景
-> - 學生用它來在 reMarkable Paper Pro 上記錄課堂筆記，因為它能夠即時生成回覆，讓筆記更具互動性。
-> - 作家用它來進行創作，因為它能夠記住之前的內容，幫助他們隨時回顧靈感。
-> - 研究人員用它來整理研究想法，因為它的手寫回覆讓思考過程更加自然流暢。
+> - 學生用它來記錄課堂筆記，因為可以隨時與日記互動，獲得即時的問題解答。
+> - 作家用它來進行創作，因為手寫的過程能激發靈感，並且日記會提供建議和反饋。
+> - 心理治療師用它來輔助治療，因為患者可以寫下情感，並獲得日記的理解與回應。
 
 ## 架構分析
 
-這個專案採用的是一個多層架構，主要分為手寫輸入層、處理層和顯示層。手寫輸入層使用原生的 evdev 事件來捕捉筆跡，然後將其轉換為 PNG 格式，這樣可以方便地發送給 LLM 進行處理。處理層使用 Rust 實現，負責與 LLM 進行通信並生成回覆，這樣的選擇使得它在性能上有很好的表現。
-
-顯示層則根據用戶的需求選擇不同的後端，能夠直接控制 e-ink 顯示，這樣可以實現最低的延遲。這樣的設計使得整個系統能夠快速響應用戶的輸入，並提供即時的回饋。選擇 Rust 和 C++ 的原因在於它們的性能和對底層硬體的控制能力，這樣可以更好地滿足即時性的需求。
-
-整體架構的設計使得這個工具在手寫識別和即時回覆上具有優越的性能。
+這個專案的架構主要由前端的手寫輸入和後端的 AI 回應組成。前端使用 reMarkable 的 API 來捕捉手寫輸入，然後將其轉換為文本，這個過程使用了 Rust 和 C++ 來確保性能和效率。後端則通過 OpenAI API 進行智能回應，這樣的設計使得整個系統能夠快速反應。選擇這種架構的原因是希望能夠在保持高效能的同時，提供良好的用戶體驗。由於依賴於 OpenAI 的 API，這也意味著在使用過程中需要穩定的網路連接，這可能會成為一個瓶頸。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是將手寫輸入轉換為圖像，然後通過 LLM 生成回覆。使用 Rust 進行開發使得它在性能上有很好的表現，特別是在處理手寫識別和即時回覆方面。整個系統的延遲時間控制在 0.9 到 1.1 秒之內，這對於用戶體驗至關重要。選擇 C++ 和 C 的原因在於它們能夠直接與硬體進行交互，這樣可以實現更低的延遲。設計上，這個專案在記憶功能上也做了優化，能夠記住用戶的過去對話，這使得用戶能夠隨時查詢之前的內容。技術風險方面，這個專案依賴於 reMarkable 的 SDK，這可能會在未來的版本更新中帶來不穩定性。整合方面，這個工具能夠與其他 OpenAI 兼容的 API 進行無縫對接，這使得它在功能上有很大的擴展性。
+riddle 的核心技術在於將手寫輸入轉換為文本，並通過 OpenAI API 生成回應。這個過程中，使用 Rust 和 C++ 來處理性能要求，確保在 reMarkable Paper Pro 上的流暢運行。系統能夠處理用戶的即時輸入，並在幾秒鐘內生成回應，這對於用戶體驗至關重要。選擇 OpenAI API 作為後端的理由在於其強大的自然語言處理能力，這使得日記能夠生成高質量的回應。依賴於外部 API 可能會帶來延遲風險，尤其在網路不穩定的情況下。整體架構設計上，riddle 將重心放在用戶的書寫體驗上，並且避免了傳統的屏幕介面，這一點在同類產品中是相對少見的。整合到現有的開發環境中相對簡單，因為它使用了標準的 API 調用，並且可以與多種開發工具兼容。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝指引和範例，安裝過程相對順暢，但需要用戶具備一定的技術背景。整體上，對於新手來說，花 30 分鐘能夠成功運行起來。
+> README 文件清晰且詳細，提供了安裝和配置的具體步驟。安裝過程相對順暢，但需要注意某些設定可能需要重新編譯。文件中有良好的入門指南，幫助新手快速上手。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供即時的手寫回覆，提升用戶體驗。
-> - 能夠記住過去的對話，增強互動性。
-> - 安裝和配置過程簡單，適合快速上手。
+> - 提供獨特的手寫與 AI 互動體驗，增強創作靈感。
+> - 安裝和配置過程相對簡單，適合大多數使用者。
+> - 無需依賴屏幕，提供沉浸式的書寫環境。
 
 > [!danger] 缺點
 > - 僅限於 reMarkable Paper Pro，無法在其他設備上使用。
-> - 需要在開發者模式下運行，對於普通用戶來說設置較為複雜。
-> - 目前對於非 OpenAI 模型的支援有限。
+> - 需要 OpenAI API 鍵，增加了使用門檻。
+> - 某些功能需要重新編譯，對新手不友好。
 
 > [!warning] 注意事項
-> - 僅支援 reMarkable Paper Pro，其他型號可能無法正常運行。
-> - 需要在開發者模式下運行，對於普通用戶來說設置較為複雜。
-> - 目前僅支持 OpenAI 兼容的 API，對於其他模型的支援可能有限。
+> - 僅支援 reMarkable Paper Pro，其他型號可能無法正常運作。
+> - 需要 OpenAI API 鍵才能使用智能回應功能，否則只能使用基本功能。
+> - 某些設定需要重新編譯，對於不熟悉的使用者可能造成困擾。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建 AI 代理，與 riddle 的手寫回覆功能不同，適合需要更複雜交互的場景。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供了一個更廣泛的文本生成平台，而 riddle 專注於手寫體驗，適合不同的使用需求。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建 AI 代理，而 riddle 則專注於手寫互動，提供更直觀的用戶體驗。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | gpt2api 提供 API 接口，而 riddle 則將其整合到手寫日記中，強調手寫的沉浸感。 |
 
 ## 替代方案決策
 
@@ -198,16 +206,16 @@ tap Reload in AppLoad
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建 AI 代理，而 riddle 則專注於手寫回覆，適合不同的使用需求。 | 如果需要更複雜的 AI 代理交互，則應選擇 agent-sprite-forge。 | medium，因為需要重新設計交互流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供了一個更廣泛的文本生成平台，而 riddle 專注於手寫體驗。 | 如果需要一個更通用的文本生成工具，則應選擇 boneyard。 | low，因為文本生成的 API 介面相似。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建 AI 代理，使用 Python 實作，提供更靈活的擴展性，但缺乏手寫互動的功能。 | 如果你的團隊需要一個靈活的 AI 代理系統，並且不需要手寫功能，則應選擇此工具。 | medium，因為需要重新設計用戶交互界面。 |
+| [432539/gpt2api](https://github.com/432539/gpt2api) | gpt2api 提供 API 接口，使用 Node.js 實作，適合需要快速集成的場景，但不提供手寫功能。 | 如果你的應用需要快速集成 GPT-2 API 而不需要手寫功能，則應選擇此工具。 | low，因為 API 調用方式相似。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **riddle** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **riddle** | **agent-sprite-forge** | **gpt2api** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這個工具專注於創建 AI 代理，而 riddle 則專注於手寫回覆，適合不同的使用需求。 | boneyard 提供了一個更廣泛的文本生成平台，而 riddle 專注於手寫體驗。 |
-> | 遷移成本 | - | medium，因為需要重新設計交互流程。 | low，因為文本生成的 API 介面相似。 |
-> | 適用場景 | 主要場景 | 如果需要更複雜的 AI 代理交互，則應選擇 agent-sp | 如果需要一個更通用的文本生成工具，則應選擇 boneyard |
+> | 技術路線 | 本專案 | 這個工具專注於創建 AI 代理，使用 Python 實作，提供更靈活的擴展性，但缺乏手寫互動的功能。 | gpt2api 提供 API 接口，使用 Node.js 實作，適合需要快速集成的場景，但不提供手寫功能。 |
+> | 遷移成本 | - | medium，因為需要重新設計用戶交互界面。 | low，因為 API 調用方式相似。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要一個靈活的 AI 代理系統，並且不需要手寫功 | 如果你的應用需要快速集成 GPT-2 API 而不需要手寫功 |
 
 ## 成熟度評估
 
@@ -218,43 +226,72 @@ tap Reload in AppLoad
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人項目試用，但不建議在生產環境中使用。
+> 適合個人試用和實驗，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在非 reMarkable Paper Pro 型號上無法運行
-  - 解法：僅限於 reMarkable Paper Pro 使用
-- [MEDIUM] 需要在開發者模式下運行，設置過程複雜
-  - 解法：參考 README 中的安裝指引
-- [MEDIUM] 對於非 OpenAI 模型的支援有限
-  - 解法：使用 OpenAI 兼容的 API
+- [MEDIUM] 某些設定需要重新編譯，對於不熟悉的使用者可能造成困擾。
+  - 解法：提供詳細的編譯指南，幫助使用者理解過程。
+- **[HIGH]** 在網路不穩定的情況下，可能會導致日記無法及時回應。
+  - 解法：確保網路連接穩定，或考慮使用本地伺服器。
+- **[HIGH]** 僅限於特定型號的設備，其他設備可能無法正常運作。
+  - 解法：在安裝前確認自己的設備型號。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要在 reMarkable Paper Pro 上進行手寫筆記的學生 | 非常適合 | 提供即時的手寫回覆，增強學習效果。 |
-| 作家需要一個能夠記住過去內容的創作工具 | 非常適合 | 能夠隨時查詢之前的靈感和內容。 |
-| 普通用戶希望在 reMarkable 上進行簡單的筆記 | 普通 | 雖然功能強大，但設置過程可能對於普通用戶來說較為複雜。 |
+| 在大學中使用的數位筆記工具 | 非常適合 | 手寫互動能夠提高學習效果，並且提供即時反饋。 |
+| 需要快速生成文本的創作者 | 適合 | 能夠快速生成回應，激發創作靈感。 |
+| 不熟悉技術的普通用戶 | 普通 | 安裝過程可能對新手造成困難。 |
+| 需要在商業環境中使用的專業工具 | 不適合 | 目前仍處於 alpha 階段，穩定性不足。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~3 小時 |
-| 整合時間 | ~2 小時 |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，2 小時整合，得到即時手寫回覆的效果，值得一試。
+> 花 2 小時學習，3 小時整合，得到獨特的手寫 AI 互動體驗，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具不需要高權限運行，但需要存取用戶的筆跡資料。對於依賴的 API 也需注意安全性，確保使用安全的 API 鍵。
+> 低風險：該工具需要 root 權限，但僅在 reMarkable Paper Pro 上運行，並不存取敏感資料。使用 OpenAI API 時需注意 API 金鑰的安全性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+riddle 最常與 reMarkable Paper Pro 搭配使用，主要在筆記和創作環節中發揮作用。在一個使用 reMarkable 的環境中，使用者可以直接在日記中手寫問題，日記會即時生成回應。這個工具可以與 GitHub Actions 等 CI 工具整合，方便開發者進行自動化測試。整合過程中，使用者可能會遇到需要重新編譯的問題，這可能會影響整體的使用體驗。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 riddle 出現之前，手寫與 AI 互動的工具大多依賴於屏幕和鍵盤，缺乏沉浸式的體驗。隨著 AI 技術的進步，特別是 OpenAI 的模型越來越強大，讓這種無屏幕的手寫互動成為可能。這個工具代表了數位筆記和 AI 互動的未來趨勢，未來可能會有更多類似的產品出現，進一步提升用戶的創作體驗。
+
+## 團隊採用指南
+
+**建議團隊規模**：1-3 人的小型團隊
+
+**前置技能**：
+- 熟悉 Linux 系統操作
+- 了解 OpenAI API 基本概念
+
+> [!tip] 導入策略
+> 第一週：在個人設備上試用。第二週：在小型團隊內部測試。第三週：收集反饋並進行改進。第四週：撰寫使用手冊並進行全員培訓。
+
+**成功指標**：用戶滿意度提高，手寫筆記的使用率增加。
+
+> [!warning] 退出計畫
+> 若需退出，所有設定均為標準格式，可輕鬆轉移至其他筆記工具。
 
 ## 健康度儀表板
 
@@ -348,8 +385,8 @@ tap Reload in AppLoad
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有多次提交和更新。
-**連結**：[文件](https://github.com/MaximeRivest/riddle)
+**社群活躍度**：社群活躍度中等，開放問題回應速度尚可。
+**連結**：[文件](https://github.com/MaximeRivest/riddle/wiki)
 
 ## 開發動態
 
@@ -545,19 +582,19 @@ tap Reload in AppLoad
 
 ## 延伸閱讀
 
-相關概念：[[自然語言處理]] · [[手寫識別]] · [[即時通訊]]
+相關概念：[[自然語言處理]] · [[數位筆記]] · [[AI 互動]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[farzaa--clicky|farzaa/clicky]] · [[yetone--voice-input-src|yetone/voice-input-src]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[432539--gpt2api|432539/gpt2api]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[farzaa--clicky|farzaa/clicky]] · [[yetone--voice-input-src|yetone/voice-input-src]]
 
 [GitHub](https://github.com/MaximeRivest/riddle)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：手寫工具）
+> [!note]- 直接競品（同子分類：數位筆記）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "手寫工具" AND file.name != "MaximeRivest--riddle"
+> WHERE subcategory = "數位筆記" AND file.name != "MaximeRivest--riddle"
 > SORT stars DESC
 > ```
 
@@ -589,7 +626,7 @@ tap Reload in AppLoad
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自然語言處理","手寫識別","即時通訊"];
+> const concepts = ["自然語言處理","數位筆記","AI 互動"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "MaximeRivest--riddle" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
