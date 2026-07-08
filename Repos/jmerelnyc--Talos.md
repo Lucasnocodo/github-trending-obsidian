@@ -7,8 +7,8 @@ language: Python
 license: MIT
 description: "GPU worker client for the Talos network. Pairs with your Talos account, serves open-model inference jobs over a WebSocket, and reports uptime for payouts."
 homepage: "https://usetalos.xyz"
-stars: 722
-stars_per_day: 181
+stars: 724
+stars_per_day: 145
 forks: 13
 open_issues: 0
 created: 2026-07-02
@@ -30,8 +30,8 @@ use_case: "讓你分享 GPU 資源並透過 Talos 網絡賺取收益。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-07-14"
+appearances: 4
+next_review: "2026-07-15"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-05"
-star_history: "2026-07-05:601,2026-07-06:683,2026-07-07:722"
+star_history: "2026-07-05:601,2026-07-06:683,2026-07-07:722,2026-07-08:724"
 tags:
   - github
   - "category/ai_ml"
@@ -778,6 +778,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-08|2026-07-08]] — 再次上榜，724 stars
 - [[2026-07-07|2026-07-07]] — 再次上榜，722 stars
 - [[2026-07-06|2026-07-06]] — 再次上榜，683 stars
 - [[2026-07-05|2026-07-05]] — 首次收錄，601 stars

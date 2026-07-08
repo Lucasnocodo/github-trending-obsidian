@@ -7,10 +7,10 @@ language: TypeScript
 license: Apache-2.0
 description: "The open-source AI workbench for scientific research"
 homepage: "https://openscience.sh"
-stars: 852
-stars_per_day: 284
-forks: 109
-open_issues: 10
+stars: 1431
+stars_per_day: 358
+forks: 199
+open_issues: 18
 created: 2026-07-03
 pushed_at: 2026-07-07
 first_seen: 2026-07-07
@@ -30,8 +30,8 @@ use_case: "提供一個 AI 工作平台，讓科學研究自動化進行文獻�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-10"
+appearances: 2
+next_review: "2026-07-11"
 contributor_count: 4
 engagement: "medium"
 issue_close_rate: 81
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-07"
-star_history: "2026-07-07:852"
+star_history: "2026-07-07:852,2026-07-08:1431"
 tags:
   - github
   - "category/開發工具"
@@ -822,4 +822,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-08|2026-07-08]] — 再次上榜，1.4k stars
 - [[2026-07-07|2026-07-07]] — 首次收錄，852 stars

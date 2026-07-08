@@ -2,14 +2,14 @@
 tags:
   - concept
 aliases:
-  - "音訊轉錄"
+  - "HTTP Proxy"
 ---
 
-# 音訊轉錄
+# HTTP Proxy
 
 ## 是什麼
 
-音訊轉錄是將語音內容轉換為文字的過程，常用於會議記錄和字幕生成。這項技術對於提高信息可訪問性和便捷性非常重要，常見的工具有 Google Speech-to-Text 和 Otter.ai。
+HTTP Proxy 是一種中介伺服器，負責在用戶端和網路之間轉發請求和回應。它可以用來提高安全性、隱藏用戶的真實 IP 地址，或是加速網頁載入速度。常見的工具有 Squid 和 Nginx。
 
 ## 快速統計
 

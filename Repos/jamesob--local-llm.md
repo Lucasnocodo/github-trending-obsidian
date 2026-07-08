@@ -7,9 +7,9 @@ language: Shell
 license: N/A
 description: "Everything I know about running LLMs locally"
 homepage: ""
-stars: 1085
-stars_per_day: 362
-forks: 64
+stars: 1199
+stars_per_day: 300
+forks: 72
 open_issues: 2
 created: 2026-07-03
 pushed_at: 2026-07-03
@@ -30,8 +30,8 @@ use_case: "提供在本地運行最新 LLM 的硬體配置與操作指南。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-07-10"
+appearances: 4
+next_review: "2026-07-11"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-05"
-star_history: "2026-07-05:785,2026-07-06:934,2026-07-07:1085"
+star_history: "2026-07-05:785,2026-07-06:934,2026-07-07:1085,2026-07-08:1199"
 tags:
   - github
   - "category/ai_ml"
@@ -865,6 +865,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-08|2026-07-08]] — 再次上榜，1.2k stars
 - [[2026-07-07|2026-07-07]] — 再次上榜，1.1k stars
 - [[2026-07-06|2026-07-06]] — 再次上榜，934 stars
 - [[2026-07-05|2026-07-05]] — 首次收錄，785 stars
