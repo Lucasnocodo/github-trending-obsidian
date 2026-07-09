@@ -7,10 +7,10 @@ language: Python
 license: N/A
 description: ""
 homepage: ""
-stars: 1005
-stars_per_day: 335
-forks: 2253
-open_issues: 5
+stars: 2519
+stars_per_day: 630
+forks: 4887
+open_issues: 6
 created: 2026-07-04
 pushed_at: 2026-07-04
 first_seen: 2026-07-08
@@ -30,8 +30,8 @@ use_case: "提供一個快速現代的 VLESS 隧道服務，支持 WebSocket 和
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-11"
+appearances: 2
+next_review: "2026-07-12"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-08"
-star_history: "2026-07-08:1005"
+star_history: "2026-07-08:1005,2026-07-09:2519"
 tags:
   - github
   - "category/基礎設施"
@@ -441,7 +441,7 @@ X4G 最常與 Railway.app 搭配使用，作為快速部署的解決方案。在
 
 相關概念：[[網路隧道]] · [[HTTP Proxy]] · [[流量管理]]
 
-相關專案：[[KNG7-P--Se7en-Pro|KNG7-P/Se7en-Pro]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[NawfalMotii79--PLFM_RADAR|NawfalMotii79/PLFM_RADAR]] · [[baoweise-bot--aimili-vpngate|baoweise-bot/aimili-vpngate]]
+相關專案：[[KNG7-P--Se7en-Pro|KNG7-P/Se7en-Pro]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[NawfalMotii79--PLFM_RADAR|NawfalMotii79/PLFM_RADAR]] · [[baoweise-bot--aimili-vpngate|baoweise-bot/aimili-vpngate]] · [[ps5-linux--ps5-linux-loader|ps5-linux/ps5-linux-loader]] · [[tryOpenRAM--OpenRAM|tryOpenRAM/OpenRAM]]
 
 [GitHub](https://github.com/x4gKing/X4G)
 
@@ -737,4 +737,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-09|2026-07-09]] — 再次上榜，2.5k stars
 - [[2026-07-08|2026-07-08]] — 首次收錄，1.0k stars
