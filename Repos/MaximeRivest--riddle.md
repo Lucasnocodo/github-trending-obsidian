@@ -7,10 +7,10 @@ language: Rust
 license: MIT
 description: "The diary of Tom Riddle for the reMarkable Paper Pro — write with your pen, the page drinks your ink and answers in a flowing hand"
 homepage: ""
-stars: 1215
-stars_per_day: 405
-forks: 92
-open_issues: 16
+stars: 1289
+stars_per_day: 322
+forks: 102
+open_issues: 17
 created: 2026-07-05
 pushed_at: 2026-07-07
 first_seen: 2026-07-08
@@ -30,8 +30,8 @@ use_case: "讓 reMarkable Paper Pro 的使用者透過手寫與日記互動，�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-12"
+appearances: 3
+next_review: "2026-07-13"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 7
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-08"
-star_history: "2026-07-08:1076,2026-07-08:1077,2026-07-09:1215"
+star_history: "2026-07-08:1076,2026-07-08:1077,2026-07-09:1215,2026-07-10:1289"
 tags:
   - github
   - "category/其他"
@@ -880,5 +880,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-10|2026-07-10]] — 再次上榜，1.3k stars
 - [[2026-07-09|2026-07-09]] — 再次上榜，1.2k stars
 - [[2026-07-08|2026-07-08]] — 首次收錄，1.1k stars

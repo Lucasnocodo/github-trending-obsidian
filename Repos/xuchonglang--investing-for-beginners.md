@@ -7,9 +7,9 @@ language: N/A
 license: NOASSERTION
 description: "小隐寺投资百科官方公开索引：美股、期权与加密货币知识框架"
 homepage: "https://xiaoyinsi.com/wiki"
-stars: 1328
-stars_per_day: 221
-forks: 85
+stars: 1658
+stars_per_day: 237
+forks: 99
 open_issues: 0
 created: 2026-07-03
 pushed_at: 2026-07-09
@@ -30,8 +30,8 @@ use_case: "提供中文投资者从零开始了解美股、期权与加密货币
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
-next_review: "2026-07-12"
+appearances: 7
+next_review: "2026-07-13"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-04"
-star_history: "2026-07-04:506,2026-07-05:665,2026-07-06:718,2026-07-07:741,2026-07-08:853,2026-07-09:1328"
+star_history: "2026-07-04:506,2026-07-05:665,2026-07-06:718,2026-07-07:741,2026-07-08:853,2026-07-09:1328,2026-07-10:1658"
 tags:
   - github
   - "category/教學資源"
@@ -715,6 +715,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-10|2026-07-10]] — 再次上榜，1.7k stars
 - [[2026-07-09|2026-07-09]] — 再次上榜，1.3k stars
 - [[2026-07-08|2026-07-08]] — 再次上榜，853 stars
 - [[2026-07-07|2026-07-07]] — 再次上榜，741 stars

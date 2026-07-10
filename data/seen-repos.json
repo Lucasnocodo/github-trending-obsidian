@@ -2731,10 +2731,10 @@
   },
   "xuchonglang/investing-for-beginners": {
     "first_seen": "2026-07-04",
-    "last_seen": "2026-07-09",
-    "times_seen": 6,
+    "last_seen": "2026-07-10",
+    "times_seen": 7,
     "stars_first": 506,
-    "stars_last": 1328
+    "stars_last": 1658
   },
   "uzairansaruzi/hermex": {
     "first_seen": "2026-07-04",
@@ -2752,10 +2752,10 @@
   },
   "jamesob/local-llm": {
     "first_seen": "2026-07-05",
-    "last_seen": "2026-07-09",
-    "times_seen": 5,
+    "last_seen": "2026-07-10",
+    "times_seen": 6,
     "stars_first": 785,
-    "stars_last": 1280
+    "stars_last": 1300
   },
   "jmerelnyc/Talos": {
     "first_seen": "2026-07-05",
@@ -2773,10 +2773,10 @@
   },
   "ammaarreshi/Generals-Mac-iOS-iPad": {
     "first_seen": "2026-07-06",
-    "last_seen": "2026-07-09",
-    "times_seen": 4,
+    "last_seen": "2026-07-10",
+    "times_seen": 5,
     "stars_first": 856,
-    "stars_last": 1369
+    "stars_last": 1395
   },
   "Kulaxyz/token-diet": {
     "first_seen": "2026-07-06",
@@ -2794,10 +2794,10 @@
   },
   "synthetic-sciences/openscience": {
     "first_seen": "2026-07-07",
-    "last_seen": "2026-07-09",
-    "times_seen": 3,
+    "last_seen": "2026-07-10",
+    "times_seen": 4,
     "stars_first": 852,
-    "stars_last": 1806
+    "stars_last": 1970
   },
   "isjiamu/gzh-design-skill": {
     "first_seen": "2026-07-08",
@@ -2808,24 +2808,24 @@
   },
   "Shpigford/knockoff": {
     "first_seen": "2026-07-08",
-    "last_seen": "2026-07-09",
-    "times_seen": 2,
+    "last_seen": "2026-07-10",
+    "times_seen": 3,
     "stars_first": 1078,
-    "stars_last": 1427
+    "stars_last": 1582
   },
   "MaximeRivest/riddle": {
     "first_seen": "2026-07-08",
-    "last_seen": "2026-07-09",
-    "times_seen": 2,
+    "last_seen": "2026-07-10",
+    "times_seen": 3,
     "stars_first": 1076,
-    "stars_last": 1215
+    "stars_last": 1289
   },
   "x4gKing/X4G": {
     "first_seen": "2026-07-08",
-    "last_seen": "2026-07-09",
-    "times_seen": 2,
+    "last_seen": "2026-07-10",
+    "times_seen": 3,
     "stars_first": 1005,
-    "stars_last": 2519
+    "stars_last": 3428
   },
   "anthropics/jacobian-lens": {
     "first_seen": "2026-07-09",
@@ -2833,5 +2833,26 @@
     "times_seen": 1,
     "stars_first": 891,
     "stars_last": 891
+  },
+  "withmarbleapp/os-taxonomy": {
+    "first_seen": "2026-07-10",
+    "last_seen": "2026-07-10",
+    "times_seen": 1,
+    "stars_first": 1542,
+    "stars_last": 1542
+  },
+  "514-labs/dnsglobe": {
+    "first_seen": "2026-07-10",
+    "last_seen": "2026-07-10",
+    "times_seen": 1,
+    "stars_first": 774,
+    "stars_last": 774
+  },
+  "wouterdebie/davit": {
+    "first_seen": "2026-07-10",
+    "last_seen": "2026-07-10",
+    "times_seen": 1,
+    "stars_first": 743,
+    "stars_last": 743
   }
 }
