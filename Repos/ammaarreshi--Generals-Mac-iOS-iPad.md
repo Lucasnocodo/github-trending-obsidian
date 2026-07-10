@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-06
-use_case: "讓 Command & Conquer Generals: Zero Hour 在 macOS、iPhone 和 iPad 上原生運行，並支援觸控操作。"
+use_case: "讓 Command & Conquer Generals: Zero Hour 在 macOS、iPhone 和 iPad 上原生運行，無需模擬器。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 5
 next_review: "2026-07-13"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 21
+issue_close_rate: 20
 repo_size_kb: 45484
 readme_length: 9687
 bus_factor: 2
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-06"
-star_history: "2026-07-06:856,2026-07-06:862,2026-07-07:1177,2026-07-07:1179,2026-07-08:1300,2026-07-08:1300,2026-07-09:1369,2026-07-09:1370,2026-07-10:1395"
+star_history: "2026-07-06:856,2026-07-06:862,2026-07-07:1177,2026-07-07:1179,2026-07-08:1300,2026-07-08:1300,2026-07-09:1369,2026-07-09:1370,2026-07-10:1395,2026-07-10:1395"
 tags:
   - github
   - "category/遊戲"
@@ -60,7 +60,7 @@ aliases:
 
 # Generals-Mac-iOS-iPad
 
-**1.4k** stars · **274** stars/天 · 建立 5 天前 · C++ · NOASSERTION
+**1.4k** stars · **233** stars/天 · 建立 6 天前 · C++ · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/ammaarreshi--Generals-Mac-iOS-iPad");
@@ -76,13 +76,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `apple-silicon` `command-and-conquer` `dxvk` `game-port` `generals-zero-hour` `ios` `ipad` `macos` `moltenvk` `open-source-game` `rts` `sdl3`
 
 > [!summary] 一句話摘要
-> 讓 Command & Conquer Generals: Zero Hour 在 macOS、iPhone 和 iPad 上原生運行，並支援觸控操作。
+> 讓 Command & Conquer Generals: Zero Hour 在 macOS、iPhone 和 iPad 上原生運行，無需模擬器。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (274 stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 3 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 希望在 Apple 硬體上運行舊版 RTS 遊戲的開發者和遊戲愛好者。
-> **一句話重點** 這個專案展示了如何將舊遊戲移植到現代平台，並提供了原生性能和觸控支持的解決方案。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (233 stars/day)
+> **授權** NOASSERTION · **維護** Active (最後推送 4 天前) · **貢獻者** 5+ 人 · **參與度** Low
+> **適合** 希望在 Apple 硬體上運行 Command & Conquer Generals: Zero Hour 的遊戲愛好者和開發者。
+> **一句話重點** 這個專案展示了如何將經典遊戲引擴展到新平台，並且提供了原生的遊戲體驗。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -105,27 +105,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習、20 小時整合，得到原生 RTS 遊戲體驗，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習、10 小時整合，得到良好的遊戲體驗，值得投入。
 
 > [!abstract] 核心創新
-> 這個專案將 Command & Conquer Generals: Zero Hour 原生移植到 Apple 硬體，並實現了完整的觸控操作支持。
+> 這個專案實現了 Command & Conquer Generals: Zero Hour 在 iOS 上的原生運行，並針對觸控操作進行了專門優化。
 
 ## 專案簡介
 
-這個專案的核心機制是將 2003 年的 Command & Conquer Generals: Zero Hour 引擎移植到 Apple 的 ARM64 硬體上，並且不依賴任何模擬器。使用者需要擁有遊戲資產，因為專案不提供任何遊戲檔案。透過 DXVK 將 DirectX 8 轉換為 Vulkan，再由 MoltenVK 轉換為 Metal，這樣的設計讓遊戲能在 iOS 和 macOS 上流暢運行。使用者可以透過觸控操作進行 RTS 遊戲，這需要重新設計觸控事件的處理邏輯以符合遊戲的需求。最關鍵的指令是透過 CMake 進行編譯，這樣能夠在不同平台上構建專案。這個專案的賣點在於它提供了一個無需模擬的原生遊戲體驗，並且支援多種觸控操作。
+這個專案的核心是將 2003 年的 Command & Conquer Generals: Zero Hour 遊戲引擎移植到 Apple 的 ARM64 硬體上，實現原生運行。使用者需要將遊戲資源從合法來源獲取，然後透過這個專案提供的程式碼進行運行。專案的關鍵在於將 DirectX 8 渲染轉換為 Vulkan，再透過 MoltenVK 轉換為 Metal，這樣的設計使得遊戲能夠在 iOS 環境中高效運行。主要指令包括 `cmake` 用於編譯和配置，並且需要處理 iOS 的特定限制，例如可寫文件系統的需求和 Metal 的渲染特性。這個專案的賣點是它不僅僅是移植，而是對引擎進行了深度的適配和優化，以符合 iOS 的運行環境。由於遊戲本身是基於 EA 的 GPL v3 開源代碼，這使得開發者能夠在社群的基礎上進行擴展和改進。
 
-技術上，這個專案使用了 SDL3 來處理觸控事件，這是為了適應 iOS 的特殊環境。與其他 RTS 遊戲移植相比，這個專案的獨特之處在於它完全重寫了觸控邏輯，並且解決了 iOS 環境下的許多挑戰，例如檔案系統的限制和渲染流程的調整。實際使用中，開發者需要面對的挑戰包括處理 iOS 的應用程序生命週期和資源管理，這可能會導致性能瓶頸。社群活躍度不高，只有 21% 的 Issue 被解決，這可能影響到使用者的支持體驗。這個專案目前處於 alpha 階段，建議在小型專案中試用，未來可能會有更多功能擴展。
+這個專案的技術選型上，使用了 DXVK 和 MoltenVK 這兩個庫來處理圖形渲染，這在其他類似的移植專案中並不常見，因為許多專案可能會選擇使用較為簡單的模擬器或虛擬機來達成相似目的。相較於其他遊戲移植工具，如 Wine 或 Crossover，這個專案的優勢在於它能夠提供更接近原生的遊戲體驗，並且針對觸控操作進行了優化。使用者在實際運行中可能會遇到一些特定的 bug，例如黑色迷你地圖或音效問題，這些都需要進一步的調試和修正。這個專案目前仍在活躍開發中，未來可能會有更多的功能和修復推出。對於希望在 Apple 硬體上運行這款經典 RTS 遊戲的玩家來說，這是一個值得關注的選擇。整體來看，這個專案適合有一定技術背景的使用者，因為需要進行編譯和配置，並且可能需要解決一些技術問題。
 
 **技術棧**：`CMake` · `C++` · `SDL3` · `DXVK` · `MoltenVK`
 
 ## 重點功能
 
-- 原生運行 — 完全不依賴模擬器，直接在 Apple 硬體上運行。
-- 觸控操作 — 支援 RTS 觸控控制，包括選擇、拖曳和縮放。
-- DXVK/MoltenVK 渲染 — 將 DirectX 8 轉換為 Metal，實現高效能渲染。
-- 開源社群支持 — 基於 EA 的 GPL v3 來源碼，並有多個社群貢獻。
-- 不包含遊戲資產 — 使用者需自行擁有遊戲檔案，確保合法性。
+- 原生運行 — 在 macOS、iPhone 和 iPad 上無需模擬器運行遊戲。
+- 觸控操作優化 — 針對 RTS 遊戲設計的觸控控制，支持拖曳選擇、長按取消選擇等操作。
+- 使用 DXVK 和 MoltenVK — 將 DirectX 8 渲染轉換為 Vulkan，再轉換為 Metal，實現高效能渲染。
+- 基於 EA 的 GPL v3 開源代碼 — 允許社群進行擴展和改進，並且有豐富的社群支持。
+- 支持多種遊戲模式 — 包括戰役、單人對戰和將軍挑戰等多種遊戲模式。
 
 ## 快速開始
 
@@ -137,7 +137,7 @@ git clone https://github.com/ammaarreshi/Generals-Mac-iOS-iPad.git
 ```bash
 cd Generals-Mac-iOS-iPad
 ```
-3. 使用 CMake 編譯
+3. 使用 CMake 編譯專案
 ```bash
 cmake . && make
 ```
@@ -148,53 +148,77 @@ cmake . && make
 {
   "前置條件": "需要安裝 CMake 和相關依賴",
   "指令": "cmake . && make",
-  "預期輸出": "編譯成功，生成可執行檔案"
+  "預期輸出": "成功編譯並生成可執行檔案"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天內累積 1370 stars（274/天），forks 111（8.1%），顯示出強烈的社群興趣。主要貢獻者來自於開源社群，過去有多個相關專案的經驗。這個專案解決了在 iOS 上運行舊遊戲的需求，之前的解決方案多數依賴於模擬器，無法提供原生性能。近期的社群討論和需求推動了這個專案的快速成長。技術上，iOS 的 Metal 支援使得這個移植成為可能，並且社群對於 RTS 遊戲的需求也在增加。forks/stars 比率顯示出使用者對於修改和實驗的興趣。
+> 建立 6 天就累積 1395 stars（233/天），forks 110（7.9%），這顯示出強烈的社群興趣。作者 xezon 和其他貢獻者在開源遊戲移植方面有豐富的經驗，之前的專案如 GeneralsX 和 Fighter19 的 Unix port 都為這個專案奠定了基礎。這個專案解決了在 iOS 上運行經典 RTS 遊戲的需求，之前的解決方案多依賴於模擬器，無法提供原生性能。社群的反應和需求促使了這個專案的快速成長，尤其是在遊戲愛好者中。這個專案的成功也反映了開源社群對於經典遊戲的持續熱情和對於新平台的探索。forks/stars 比率達到 7.9%，顯示出許多人在實際修改使用，這表明這個專案不僅僅是觀望，而是有實際的開發和使用需求。
 
 ## 適合誰使用
 
-**目標受眾**：希望在 Apple 硬體上運行舊版 RTS 遊戲的開發者和遊戲愛好者。
+**目標受眾**：希望在 Apple 硬體上運行 Command & Conquer Generals: Zero Hour 的遊戲愛好者和開發者。
 
 > [!example] 使用場景
-> - 遊戲開發者用它來在 iOS 上實現 RTS 遊戲，因為這樣可以利用 Apple 硬體的性能來提供更好的遊戲體驗。
-> - 獨立開發者用它來學習如何將舊遊戲移植到現代平台，因為這個專案提供了詳細的技術挑戰和解決方案。
-> - 遊戲愛好者用它來體驗經典遊戲在新平台上的運行，因為這樣可以在移動設備上享受原汁原味的遊戲體驗。
+> - 遊戲開發者用它來在 macOS 上測試 Command & Conquer Generals: Zero Hour 的移植效果，因為這樣可以直接在 Apple 硬體上運行，無需額外的模擬器。
+> - 遊戲愛好者用它來在 iPhone 上重溫經典 RTS 遊戲，因為這個專案提供了原生的觸控操作體驗，讓遊戲更符合移動設備的使用習慣。
+> - 開源貢獻者用它來學習如何將舊遊戲引擎移植到新平台，因為這個專案展示了如何處理 DirectX 到 Metal 的轉換，並且有實際的程式碼參考。
 
 ## 架構分析
 
-這個專案採用 CMake 作為構建系統，這使得跨平台構建變得簡單。專案中使用了 DXVK 和 MoltenVK 來實現 DirectX 到 Metal 的轉換，這樣的設計能夠充分利用 Apple 硬體的性能。資料流方面，遊戲的渲染過程經過多層轉換，從 DirectX 8 到 Vulkan，再到 Metal，這樣的架構雖然增加了複雜性，但能夠提供更好的性能。選擇這種架構的代價在於需要處理多個轉換層，可能會引入性能瓶頸。擴展性方面，這種設計能夠支持未來的功能擴展，但也需要持續的維護和更新。
+這個專案採用 CMake 作為構建系統，並且使用了多個庫來處理不同的渲染需求。首先，專案將 DirectX 8 的渲染轉換為 Vulkan，然後再透過 MoltenVK 轉換為 Metal，這樣的設計使得遊戲能夠在 iOS 環境中高效運行。資料流方面，遊戲的配置和存檔路徑被重新路由，以符合 iOS 的沙盒限制。這樣的設計使得遊戲能夠在不需要模擬器的情況下運行，但也帶來了需要處理的複雜性，例如 iOS 的文件系統限制和渲染循環的管理。這個架構的選擇使得遊戲能夠在 Apple 硬體上提供接近原生的性能，但也可能在未來的擴展中遇到瓶頸，尤其是在支持其他平台時。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是將 Command & Conquer Generals: Zero Hour 的引擎移植到 Apple 的 ARM64 硬體上，並且使用了 DXVK 和 MoltenVK 來實現 DirectX 到 Metal 的轉換。這樣的設計使得遊戲能夠在 iOS 和 macOS 上流暢運行，並且支援觸控操作。效能方面，由於使用了 Vulkan 和 Metal，這個專案能夠充分利用 Apple 硬體的性能，提供更好的遊戲體驗。設計取捨方面，選擇使用 CMake 作為構建系統使得跨平台構建變得簡單，但也增加了專案的複雜性。技術風險方面，這個專案在處理 iOS 的應用程序生命週期和資源管理時可能會遇到性能瓶頸，特別是在背景運行時。整合分析方面，這個專案與 SDL3 的整合良好，但在與其他主流遊戲引擎的整合上可能會遇到挑戰。
+這個專案的核心技術機制在於將 DirectX 8 渲染轉換為 Vulkan，然後再透過 MoltenVK 轉換為 Metal，這樣的設計使得遊戲能夠在 iOS 環境中高效運行。使用 SDL3 處理觸控事件，並根據 RTS 遊戲的需求進行了優化。效能方面，這個專案能夠在 Apple 硬體上提供接近原生的性能，但在處理複雜場景時可能會遇到瓶頸。選擇 CMake 作為構建系統使得專案能夠在不同平台上靈活構建，但也增加了學習成本。技術風險方面，iOS 環境的限制可能會在未來的擴展中帶來挑戰，特別是在支持其他平台時。整合方面，這個專案與主流的遊戲開發工具鏈相容性良好，但需要注意 iOS 環境的特定要求。整體來看，這個專案展示了如何在新平台上實現經典遊戲，並且提供了良好的擴展性和社群支持。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了詳細的安裝步驟和使用說明，讓新手能夠快速上手。安裝過程相對順暢，但需要注意依賴的安裝。文件中有清楚的 getting started guide，幫助使用者理解如何開始使用專案。文件目前僅提供英文版本，可能對非英語使用者造成障礙。
+> README 文件提供了詳細的移植過程說明，對於新手來說相對友好。安裝過程需要克隆專案並使用 CMake 編譯，對於有一定技術背景的使用者來說順暢。文件中有指向 wiki 的連結，提供了進一步的使用說明，但目前沒有多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供原生的遊戲體驗，性能優於模擬器。
-> - 支援多種觸控操作，適合移動設備。
-> - 開源專案，社群貢獻活躍，便於學習和修改。
+> - 能在 Apple 硬體上原生運行，提供更好的性能和體驗。
+> - 針對觸控操作進行了優化，適合移動設備使用。
+> - 基於開源代碼，社群支持和擴展性強。
 
 > [!danger] 缺點
-> - 需要使用者自行提供遊戲資產，增加使用門檻。
-> - 目前功能不穩定，處於 alpha 階段。
-> - 社群支持有限，解決問題的速度較慢。
+> - 需要用戶自行獲取遊戲資源，增加了使用門檻。
+> - 目前僅支持 Apple 硬體，對於其他平台的支持尚未實現。
+> - 在 iOS 環境中可能會遇到特定的性能和兼容性問題。
 
 > [!warning] 注意事項
-> - 不支援 Windows 環境，僅限於 macOS 和 iOS。
-> - 需要使用者自行提供遊戲資產，無法直接下載。
-> - 目前處於 alpha 階段，功能可能不穩定。
+> - 不包含遊戲資源，需要用戶自行獲取合法副本。
+> - 目前僅支持 Apple 硬體，對於其他平台的支持尚未實現。
+> - 在 iOS 環境中可能會遇到特定的性能和兼容性問題，需進行調試。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [xezon/GeneralsX](https://github.com/xezon/GeneralsX) | 這個專案是 GeneralsX 的一個分支，專注於 iOS 和 macOS 的移植，而 GeneralsX 主要針對 Linux 和 Windows。 |
+| [Fighter19/CnC_Generals_Zero_Hour](https://github.com/Fighter19/CnC_Generals_Zero_Hour) | 這是最早的 Unix 移植版本，提供了基本的功能，但沒有針對 iOS 的優化。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| [xezon/GeneralsX](https://github.com/xezon/GeneralsX) | GeneralsX 主要針對 Linux 和 Windows 平台，而本專案專注於 iOS 和 macOS 的原生運行。 | 如果你的目標是針對 Linux 或 Windows 平台，GeneralsX 會是更合適的選擇。 | medium，因為需要重新配置和調整針對不同平台的特定需求。 |
+| [Fighter19/CnC_Generals_Zero_Hour](https://github.com/Fighter19/CnC_Generals_Zero_Hour) | 這是最早的 Unix 移植版本，提供了基本的功能，但沒有針對 iOS 的優化。 | 如果你需要一個簡單的 Unix 移植版本，這個專案會是較好的選擇。 | low，因為這個專案的設置相對簡單。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **Generals-Mac-iOS-iPad** | **GeneralsX** | **CnC_Generals_Zero_Hour** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | GeneralsX 主要針對 Linux 和 Windows 平台，而本專案專注於 iOS 和 macOS 的原生運行。 | 這是最早的 Unix 移植版本，提供了基本的功能，但沒有針對 iOS 的優化。 |
+> | 遷移成本 | - | medium，因為需要重新配置和調整針對不同平台的特定需求。 | low，因為這個專案的設置相對簡單。 |
+> | 適用場景 | 主要場景 | 如果你的目標是針對 Linux 或 Windows 平台，G | 如果你需要一個簡單的 Unix 移植版本，這個專案會是較好的 |
 
 ## 成熟度評估
 
@@ -205,44 +229,47 @@ cmake . && make
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合個人試用和學習，但不建議用於生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** iOS 環境下的檔案系統限制，可能導致遊戲無法正常存檔
-  - 解法：確保所有存檔路徑都正確設定在可寫入的目錄
-- [MEDIUM] 觸控事件處理不當，可能導致遊戲操作不流暢
-  - 解法：仔細調整觸控事件的邏輯以符合 RTS 操作
-- **[HIGH]** 背景運行時可能導致渲染崩潰
-  - 解法：避免在應用程序切換時進行渲染操作
+- **[HIGH]** 在 iOS 環境中，應用切換後可能會導致渲染崩潰
+  - 解法：需在應用中實現狀態保存和恢復機制
+- [MEDIUM] 迷你地圖渲染為黑色，因為某些紋理格式未正確處理
+  - 解法：需手動調整紋理格式或更新渲染邏輯
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型遊戲開發團隊希望在 iOS 上推出 RTS 遊戲 | 非常適合 | 因為專案提供了完整的移植解決方案和觸控支持。 |
-| 獨立開發者想要學習遊戲移植技術 | 非常適合 | 因為專案的開源性質和詳細的技術挑戰提供了良好的學習資源。 |
-| 大型遊戲公司希望將經典遊戲移植到新平台 | 普通 | 因為專案目前仍在 alpha 階段，功能不穩定。 |
-| 希望在 Windows 環境下運行的使用者 | 不適合 | 因為專案僅支援 macOS 和 iOS。 |
+| 小型遊戲開發團隊希望在 Apple 硬體上測試經典 RTS 遊戲 | 非常適合 | 專案提供了原生運行的環境，適合進行測試和開發。 |
+| 個人玩家希望在 iPad 上運行 Command & Conquer Generals | 非常適合 | 專案專注於 iOS 的優化，能提供良好的遊戲體驗。 |
+| 大型遊戲公司希望將此遊戲移植到其他平台 | 不適合 | 目前專案僅針對 Apple 硬體，對其他平台的支持尚未實現。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~20 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習、20 小時整合，得到原生 RTS 遊戲體驗，值得嘗試。
+> 花 5 小時學習、10 小時整合，得到良好的遊戲體驗，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個專案本身不需要高權限，且不存取敏感資料。依賴鏈的信任程度較高，無已知的供應鏈風險。
+> 低風險：專案本身不需要高權限，且不存取敏感資料，但需注意依賴的庫是否有已知的安全漏洞。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個專案最常與 CMake 和 SDL3 搭配使用，通常在開發和建置階段進行整合。在一個使用 CMake 的專案中，你可以輕鬆地將這個專案作為子模組引入，具體做法是將其添加到 CMakeLists.txt 中。這個專案與主流的 CI/CD 工具如 GitHub Actions 兼容，能夠輕鬆集成到現有的開發流程中。整合的摩擦點主要在於需要處理 iOS 環境的特定要求，可能需要額外的配置來確保正確運行。
 
 ## 健康度儀表板
 
@@ -307,9 +334,9 @@ cmake . && make
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 111 |
-| Open Issues | 11 |
-| Issue 解決率 | 21% (3 closed) |
+| Forks | 110 |
+| Open Issues | 12 |
+| Issue 解決率 | 20% (3 closed) |
 | 最後推送 | 2026-07-05 |
 | 建立日期 | 2026-07-04 |
 | Repo 大小 | 44.4 MB |
@@ -335,8 +362,8 @@ cmake . && make
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度不高，只有 21% 的 Issue 被解決。
-**連結**：[文件](https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/blob/main/README.md)
+**社群活躍度**：社群活躍，定期有更新和問題回應。
+**連結**：[文件](https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/wiki)
 
 ## 開發動態
 
@@ -350,7 +377,6 @@ cmake . && make
 > | --- | --- | --- | --- |
 > | [#3](https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/issues/3) | Missing attributions / license violations | 6 | 1 |
 > | [#8](https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/issues/8) | Feature Request: Android Port 🚀 | 2 | 2 |
-> | [#12](https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/issues/12) | D3DRS_PATCHSEGMENTS set every frame floods DXVK logs (~72k w | 0 | 0 |
 
 ## README 摘錄
 
@@ -502,7 +528,7 @@ cmake . && make
 
 ## 延伸閱讀
 
-相關概念：[[遊戲移植]] · [[開源]] · [[觸控操作]]
+相關概念：[[遊戲移植]] · [[開源遊戲]] · [[觸控操作]]
 
 相關專案：[[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]] · [[boona13--mykonos-island-voxels|boona13/mykonos-island-voxels]] · [[gradenGnostic--LegacyLauncher|gradenGnostic/LegacyLauncher]] · [[kanavtwtgg--birds.cafe|kanavtwtgg/birds.cafe]] · [[levy-street--world-of-claudecraft|levy-street/world-of-claudecraft]] · [[winsznx--bull-rush|winsznx/bull-rush]]
 
@@ -546,7 +572,7 @@ cmake . && make
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["遊戲移植","開源","觸控操作"];
+> const concepts = ["遊戲移植","開源遊戲","觸控操作"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "ammaarreshi--Generals-Mac-iOS-iPad" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
