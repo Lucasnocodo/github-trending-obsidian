@@ -7,12 +7,12 @@ language: Rust
 license: MIT
 description: "Global DNS propagation checker TUI — watch a DNS record propagate across 34 public resolvers worldwide, on a world map in your terminal"
 homepage: ""
-stars: 774
-stars_per_day: 155
+stars: 798
+stars_per_day: 133
 forks: 20
-open_issues: 2
+open_issues: 3
 created: 2026-07-05
-pushed_at: 2026-07-07
+pushed_at: 2026-07-10
 first_seen: 2026-07-10
 week: "2026-W28"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "在終端機上檢查 DNS 記錄的全球傳播情況，並在世界�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-17"
+appearances: 2
+next_review: "2026-07-18"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-10"
-star_history: "2026-07-10:774,2026-07-10:774"
+star_history: "2026-07-10:774,2026-07-10:774,2026-07-11:798"
 tags:
   - github
   - "category/cli_工具"
@@ -866,4 +866,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-11|2026-07-11]] — 再次上榜，798 stars
 - [[2026-07-10|2026-07-10]] — 首次收錄，774 stars

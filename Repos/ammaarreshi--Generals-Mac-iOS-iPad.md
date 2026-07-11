@@ -7,10 +7,10 @@ language: C++
 license: NOASSERTION
 description: "Command & Conquer Generals: Zero Hour running natively on macOS, iPhone & iPad — real engine (EA GPL v3 source, via GeneralsX), DXVK/MoltenVK renderer, RTS touch controls. No game assets included."
 homepage: ""
-stars: 1395
-stars_per_day: 233
-forks: 110
-open_issues: 12
+stars: 1407
+stars_per_day: 201
+forks: 118
+open_issues: 13
 created: 2026-07-04
 pushed_at: 2026-07-05
 first_seen: 2026-07-06
@@ -30,8 +30,8 @@ use_case: "讓 Command & Conquer Generals: Zero Hour 在 macOS、iPhone 和 iPad
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-07-13"
+appearances: 6
+next_review: "2026-07-14"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 20
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-06"
-star_history: "2026-07-06:856,2026-07-06:862,2026-07-07:1177,2026-07-07:1179,2026-07-08:1300,2026-07-08:1300,2026-07-09:1369,2026-07-09:1370,2026-07-10:1395,2026-07-10:1395"
+star_history: "2026-07-06:856,2026-07-06:862,2026-07-07:1177,2026-07-07:1179,2026-07-08:1300,2026-07-08:1300,2026-07-09:1369,2026-07-09:1370,2026-07-10:1395,2026-07-10:1395,2026-07-11:1407"
 tags:
   - github
   - "category/遊戲"
@@ -826,6 +826,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-11|2026-07-11]] — 再次上榜，1.4k stars
 - [[2026-07-10|2026-07-10]] — 再次上榜，1.4k stars
 - [[2026-07-09|2026-07-09]] — 再次上榜，1.4k stars
 - [[2026-07-08|2026-07-08]] — 再次上榜，1.3k stars

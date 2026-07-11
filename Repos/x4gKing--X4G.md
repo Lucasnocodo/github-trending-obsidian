@@ -7,10 +7,10 @@ language: Python
 license: N/A
 description: ""
 homepage: ""
-stars: 3428
-stars_per_day: 686
-forks: 6509
-open_issues: 9
+stars: 4062
+stars_per_day: 677
+forks: 7700
+open_issues: 12
 created: 2026-07-04
 pushed_at: 2026-07-10
 first_seen: 2026-07-08
@@ -30,8 +30,8 @@ use_case: "提供一個快速現代的 VLESS 隧道服務，支持 WebSocket 和
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-07-13"
+appearances: 4
+next_review: "2026-07-14"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-08"
-star_history: "2026-07-08:1005,2026-07-09:2519,2026-07-10:3428"
+star_history: "2026-07-08:1005,2026-07-09:2519,2026-07-10:3428,2026-07-11:4062"
 tags:
   - github
   - "category/基礎設施"
@@ -737,6 +737,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-11|2026-07-11]] — 再次上榜，4.1k stars
 - [[2026-07-10|2026-07-10]] — 再次上榜，3.4k stars
 - [[2026-07-09|2026-07-09]] — 再次上榜，2.5k stars
 - [[2026-07-08|2026-07-08]] — 首次收錄，1.0k stars

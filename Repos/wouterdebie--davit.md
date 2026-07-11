@@ -7,12 +7,12 @@ language: Swift
 license: MIT
 description: "A native macOS UI for Apple's platform"
 homepage: ""
-stars: 743
-stars_per_day: 149
-forks: 9
-open_issues: 2
+stars: 814
+stars_per_day: 136
+forks: 12
+open_issues: 0
 created: 2026-07-04
-pushed_at: 2026-07-09
+pushed_at: 2026-07-10
 first_seen: 2026-07-10
 week: "2026-W28"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "提供一個原生的 macOS UI 來管理 Apple 的容器平台，讓�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-17"
+appearances: 2
+next_review: "2026-07-18"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 80
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-10"
-star_history: "2026-07-10:743"
+star_history: "2026-07-10:743,2026-07-11:814"
 tags:
   - github
   - "category/開發工具"
@@ -849,4 +849,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-11|2026-07-11]] — 再次上榜，814 stars
 - [[2026-07-10|2026-07-10]] — 首次收錄，743 stars

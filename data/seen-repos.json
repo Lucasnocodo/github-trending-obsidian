@@ -2773,10 +2773,10 @@
   },
   "ammaarreshi/Generals-Mac-iOS-iPad": {
     "first_seen": "2026-07-06",
-    "last_seen": "2026-07-10",
-    "times_seen": 5,
+    "last_seen": "2026-07-11",
+    "times_seen": 6,
     "stars_first": 856,
-    "stars_last": 1395
+    "stars_last": 1407
   },
   "Kulaxyz/token-diet": {
     "first_seen": "2026-07-06",
@@ -2808,24 +2808,24 @@
   },
   "Shpigford/knockoff": {
     "first_seen": "2026-07-08",
-    "last_seen": "2026-07-10",
-    "times_seen": 3,
+    "last_seen": "2026-07-11",
+    "times_seen": 4,
     "stars_first": 1078,
-    "stars_last": 1582
+    "stars_last": 1711
   },
   "MaximeRivest/riddle": {
     "first_seen": "2026-07-08",
-    "last_seen": "2026-07-10",
-    "times_seen": 3,
+    "last_seen": "2026-07-11",
+    "times_seen": 4,
     "stars_first": 1076,
-    "stars_last": 1289
+    "stars_last": 1346
   },
   "x4gKing/X4G": {
     "first_seen": "2026-07-08",
-    "last_seen": "2026-07-10",
-    "times_seen": 3,
+    "last_seen": "2026-07-11",
+    "times_seen": 4,
     "stars_first": 1005,
-    "stars_last": 3428
+    "stars_last": 4062
   },
   "anthropics/jacobian-lens": {
     "first_seen": "2026-07-09",
@@ -2836,23 +2836,44 @@
   },
   "withmarbleapp/os-taxonomy": {
     "first_seen": "2026-07-10",
-    "last_seen": "2026-07-10",
-    "times_seen": 1,
+    "last_seen": "2026-07-11",
+    "times_seen": 2,
     "stars_first": 1542,
-    "stars_last": 1542
+    "stars_last": 2181
   },
   "514-labs/dnsglobe": {
     "first_seen": "2026-07-10",
-    "last_seen": "2026-07-10",
-    "times_seen": 1,
+    "last_seen": "2026-07-11",
+    "times_seen": 2,
     "stars_first": 774,
-    "stars_last": 774
+    "stars_last": 798
   },
   "wouterdebie/davit": {
     "first_seen": "2026-07-10",
-    "last_seen": "2026-07-10",
-    "times_seen": 1,
+    "last_seen": "2026-07-11",
+    "times_seen": 2,
     "stars_first": 743,
-    "stars_last": 743
+    "stars_last": 814
+  },
+  "yynxxxxx/Codex-X": {
+    "first_seen": "2026-07-11",
+    "last_seen": "2026-07-11",
+    "times_seen": 1,
+    "stars_first": 760,
+    "stars_last": 760
+  },
+  "Robbyant/lingbot-world-v2": {
+    "first_seen": "2026-07-11",
+    "last_seen": "2026-07-11",
+    "times_seen": 1,
+    "stars_first": 709,
+    "stars_last": 709
+  },
+  "simonlin1212/Vibe-Research": {
+    "first_seen": "2026-07-11",
+    "last_seen": "2026-07-11",
+    "times_seen": 1,
+    "stars_first": 687,
+    "stars_last": 687
   }
 }

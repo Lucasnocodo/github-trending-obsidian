@@ -7,10 +7,10 @@ language: JavaScript
 license: ODbL-1.0
 description: ""
 homepage: ""
-stars: 1542
-stars_per_day: 1542
-forks: 284
-open_issues: 3
+stars: 2181
+stars_per_day: 1091
+forks: 393
+open_issues: 7
 created: 2026-07-08
 pushed_at: 2026-07-08
 first_seen: 2026-07-10
@@ -30,8 +30,8 @@ use_case: "提供一個開放的學習主題結構，幫助理解兒童在小學
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-13"
+appearances: 2
+next_review: "2026-07-14"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-10"
-star_history: "2026-07-10:1542"
+star_history: "2026-07-10:1542,2026-07-11:2181"
 tags:
   - github
   - "category/其他"
@@ -416,7 +416,7 @@ node scripts/validate.mjs
 
 相關概念：[[教育數據]] · [[課程設計]] · [[開放數據]]
 
-相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]]
+相關專案：[[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]] · [[Keychron--Keychron-Keyboards-Hardware-Design|Keychron/Keychron-Keyboards-Hardware-Design]] · [[LinXiaoTao--FuckClaude|LinXiaoTao/FuckClaude]]
 
 [GitHub](https://github.com/withmarbleapp/os-taxonomy)
 
@@ -712,4 +712,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-11|2026-07-11]] — 再次上榜，2.2k stars
 - [[2026-07-10|2026-07-10]] — 首次收錄，1.5k stars

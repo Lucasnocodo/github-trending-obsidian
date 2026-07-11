@@ -7,12 +7,12 @@ language: JavaScript
 license: NOASSERTION
 description: "Chrome extension that filters pseudo-brand junk out of Amazon. Buy from real, established brands."
 homepage: "https://knockoff.shopping"
-stars: 1583
-stars_per_day: 528
-forks: 50
-open_issues: 6
+stars: 1711
+stars_per_day: 428
+forks: 54
+open_issues: 7
 created: 2026-07-06
-pushed_at: 2026-07-09
+pushed_at: 2026-07-10
 first_seen: 2026-07-08
 week: "2026-W28"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "過濾亞馬遜上的偽品牌商品，讓你購買真正的知名品
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-07-13"
+appearances: 4
+next_review: "2026-07-14"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 75
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-08"
-star_history: "2026-07-08:1078,2026-07-08:1085,2026-07-09:1427,2026-07-09:1430,2026-07-10:1582,2026-07-10:1583"
+star_history: "2026-07-08:1078,2026-07-08:1085,2026-07-09:1427,2026-07-09:1430,2026-07-10:1582,2026-07-10:1583,2026-07-11:1711"
 tags:
   - github
   - "category/開發工具"
@@ -848,6 +848,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-11|2026-07-11]] — 再次上榜，1.7k stars
 - [[2026-07-10|2026-07-10]] — 再次上榜，1.6k stars
 - [[2026-07-09|2026-07-09]] — 再次上榜，1.4k stars
 - [[2026-07-08|2026-07-08]] — 首次收錄，1.1k stars
