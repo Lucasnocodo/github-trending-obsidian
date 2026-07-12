@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Vibe-Research: Your Personal Trading Research Agent · A股/美股/港股 的个人投研 Agent：每日复盘、资讯雷达、个股数据、板块中心、我的持仓、研究记录。Vibe-Research 把数据和功能配齐，由你自己的 AI 驱动投资研究。"
 homepage: "https://viberesearch.wiki"
-stars: 687
-stars_per_day: 137
-forks: 131
+stars: 731
+stars_per_day: 122
+forks: 145
 open_issues: 4
 created: 2026-07-05
-pushed_at: 2026-07-10
+pushed_at: 2026-07-11
 first_seen: 2026-07-11
 week: "2026-W28"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "提供 A 股、美股和港股的個人投研 Agent，整合數據與
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-18"
+appearances: 2
+next_review: "2026-07-19"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 67
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-11"
-star_history: "2026-07-11:687"
+star_history: "2026-07-11:687,2026-07-12:731"
 tags:
   - github
   - "category/其他"
@@ -869,4 +869,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-12|2026-07-12]] — 再次上榜，731 stars
 - [[2026-07-11|2026-07-11]] — 首次收錄，687 stars

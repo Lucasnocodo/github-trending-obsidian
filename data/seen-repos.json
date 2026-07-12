@@ -2808,17 +2808,17 @@
   },
   "Shpigford/knockoff": {
     "first_seen": "2026-07-08",
-    "last_seen": "2026-07-11",
-    "times_seen": 4,
+    "last_seen": "2026-07-12",
+    "times_seen": 5,
     "stars_first": 1078,
-    "stars_last": 1711
+    "stars_last": 1779
   },
   "MaximeRivest/riddle": {
     "first_seen": "2026-07-08",
-    "last_seen": "2026-07-11",
-    "times_seen": 4,
+    "last_seen": "2026-07-12",
+    "times_seen": 5,
     "stars_first": 1076,
-    "stars_last": 1346
+    "stars_last": 1414
   },
   "x4gKing/X4G": {
     "first_seen": "2026-07-08",
@@ -2836,17 +2836,17 @@
   },
   "withmarbleapp/os-taxonomy": {
     "first_seen": "2026-07-10",
-    "last_seen": "2026-07-11",
-    "times_seen": 2,
+    "last_seen": "2026-07-12",
+    "times_seen": 3,
     "stars_first": 1542,
-    "stars_last": 2181
+    "stars_last": 2458
   },
   "514-labs/dnsglobe": {
     "first_seen": "2026-07-10",
-    "last_seen": "2026-07-11",
-    "times_seen": 2,
+    "last_seen": "2026-07-12",
+    "times_seen": 3,
     "stars_first": 774,
-    "stars_last": 798
+    "stars_last": 818
   },
   "wouterdebie/davit": {
     "first_seen": "2026-07-10",
@@ -2864,16 +2864,44 @@
   },
   "Robbyant/lingbot-world-v2": {
     "first_seen": "2026-07-11",
-    "last_seen": "2026-07-11",
-    "times_seen": 1,
+    "last_seen": "2026-07-12",
+    "times_seen": 2,
     "stars_first": 709,
-    "stars_last": 709
+    "stars_last": 811
   },
   "simonlin1212/Vibe-Research": {
     "first_seen": "2026-07-11",
-    "last_seen": "2026-07-11",
-    "times_seen": 1,
+    "last_seen": "2026-07-12",
+    "times_seen": 2,
     "stars_first": 687,
-    "stars_last": 687
+    "stars_last": 731
+  },
+  "oso95/scroll-world": {
+    "first_seen": "2026-07-12",
+    "last_seen": "2026-07-12",
+    "times_seen": 1,
+    "stars_first": 916,
+    "stars_last": 916
+  },
+  "x4gKing/3x-ui-Upgrade": {
+    "first_seen": "2026-07-12",
+    "last_seen": "2026-07-12",
+    "times_seen": 1,
+    "stars_first": 803,
+    "stars_last": 803
+  },
+  "Robbyant/lingbot-video": {
+    "first_seen": "2026-07-12",
+    "last_seen": "2026-07-12",
+    "times_seen": 1,
+    "stars_first": 684,
+    "stars_last": 684
+  },
+  "Robbyant/lingbot-vision": {
+    "first_seen": "2026-07-12",
+    "last_seen": "2026-07-12",
+    "times_seen": 1,
+    "stars_first": 638,
+    "stars_last": 638
   }
 }
