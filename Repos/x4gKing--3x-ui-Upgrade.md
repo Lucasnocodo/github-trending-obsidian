@@ -7,9 +7,9 @@ language: HTML
 license: N/A
 description: ""
 homepage: ""
-stars: 803
-stars_per_day: 268
-forks: 1645
+stars: 894
+stars_per_day: 224
+forks: 1858
 open_issues: 1
 created: 2026-07-08
 pushed_at: 2026-07-11
@@ -30,8 +30,8 @@ use_case: "提供一個整合的 Heimdall 面板，透過單一端口在 Railway
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-15"
+appearances: 2
+next_review: "2026-07-16"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-12"
-star_history: "2026-07-12:803"
+star_history: "2026-07-12:803,2026-07-13:894"
 tags:
   - github
   - "category/基礎設施"
@@ -732,4 +732,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-13|2026-07-13]] — 再次上榜，894 stars
 - [[2026-07-12|2026-07-12]] — 首次收錄，803 stars

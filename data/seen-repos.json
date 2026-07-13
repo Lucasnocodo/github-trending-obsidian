@@ -2808,10 +2808,10 @@
   },
   "Shpigford/knockoff": {
     "first_seen": "2026-07-08",
-    "last_seen": "2026-07-12",
-    "times_seen": 5,
+    "last_seen": "2026-07-13",
+    "times_seen": 6,
     "stars_first": 1078,
-    "stars_last": 1779
+    "stars_last": 1827
   },
   "MaximeRivest/riddle": {
     "first_seen": "2026-07-08",
@@ -2836,10 +2836,10 @@
   },
   "withmarbleapp/os-taxonomy": {
     "first_seen": "2026-07-10",
-    "last_seen": "2026-07-12",
-    "times_seen": 3,
+    "last_seen": "2026-07-13",
+    "times_seen": 4,
     "stars_first": 1542,
-    "stars_last": 2458
+    "stars_last": 2749
   },
   "514-labs/dnsglobe": {
     "first_seen": "2026-07-10",
@@ -2864,10 +2864,10 @@
   },
   "Robbyant/lingbot-world-v2": {
     "first_seen": "2026-07-11",
-    "last_seen": "2026-07-12",
-    "times_seen": 2,
+    "last_seen": "2026-07-13",
+    "times_seen": 3,
     "stars_first": 709,
-    "stars_last": 811
+    "stars_last": 951
   },
   "simonlin1212/Vibe-Research": {
     "first_seen": "2026-07-11",
@@ -2878,30 +2878,51 @@
   },
   "oso95/scroll-world": {
     "first_seen": "2026-07-12",
-    "last_seen": "2026-07-12",
-    "times_seen": 1,
+    "last_seen": "2026-07-13",
+    "times_seen": 2,
     "stars_first": 916,
-    "stars_last": 916
+    "stars_last": 1319
   },
   "x4gKing/3x-ui-Upgrade": {
     "first_seen": "2026-07-12",
-    "last_seen": "2026-07-12",
-    "times_seen": 1,
+    "last_seen": "2026-07-13",
+    "times_seen": 2,
     "stars_first": 803,
-    "stars_last": 803
+    "stars_last": 894
   },
   "Robbyant/lingbot-video": {
     "first_seen": "2026-07-12",
-    "last_seen": "2026-07-12",
-    "times_seen": 1,
+    "last_seen": "2026-07-13",
+    "times_seen": 2,
     "stars_first": 684,
-    "stars_last": 684
+    "stars_last": 717
   },
   "Robbyant/lingbot-vision": {
     "first_seen": "2026-07-12",
-    "last_seen": "2026-07-12",
-    "times_seen": 1,
+    "last_seen": "2026-07-13",
+    "times_seen": 2,
     "stars_first": 638,
-    "stars_last": 638
+    "stars_last": 690
+  },
+  "vinhhien112/Three.js-Object-Sculptor-Codex-Plugin": {
+    "first_seen": "2026-07-13",
+    "last_seen": "2026-07-13",
+    "times_seen": 1,
+    "stars_first": 672,
+    "stars_last": 672
+  },
+  "mereyabdenbekuly-ctrl/clodex-ide": {
+    "first_seen": "2026-07-13",
+    "last_seen": "2026-07-13",
+    "times_seen": 1,
+    "stars_first": 641,
+    "stars_last": 641
+  },
+  "op7418/guizang-material-illustration": {
+    "first_seen": "2026-07-13",
+    "last_seen": "2026-07-13",
+    "times_seen": 1,
+    "stars_first": 598,
+    "stars_last": 598
   }
 }

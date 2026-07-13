@@ -7,9 +7,9 @@ language: JavaScript
 license: MIT
 description: "A skill that turn any brand into a scrollable 3D world"
 homepage: ""
-stars: 916
-stars_per_day: 183
-forks: 98
+stars: 1319
+stars_per_day: 220
+forks: 176
 open_issues: 1
 created: 2026-07-06
 pushed_at: 2026-07-10
@@ -30,8 +30,8 @@ use_case: "將任何品牌轉換為可滾動的 3D 世界，提供沉浸式體�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-19"
+appearances: 2
+next_review: "2026-07-16"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-12"
-star_history: "2026-07-12:916"
+star_history: "2026-07-12:916,2026-07-13:1319"
 tags:
   - github
   - "category/開發工具"
@@ -764,4 +764,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-13|2026-07-13]] — 再次上榜，1.3k stars
 - [[2026-07-12|2026-07-12]] — 首次收錄，916 stars

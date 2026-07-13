@@ -7,9 +7,9 @@ language: Python
 license: Apache-2.0
 description: "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence"
 homepage: "https://technology.robbyant.com/lingbot-video"
-stars: 685
-stars_per_day: 228
-forks: 24
+stars: 717
+stars_per_day: 179
+forks: 26
 open_issues: 7
 created: 2026-07-08
 pushed_at: 2026-07-10
@@ -30,8 +30,8 @@ use_case: "提供一個開源的大規模 Mixture-of-Experts 影片生成模型�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-15"
+appearances: 2
+next_review: "2026-07-20"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-12"
-star_history: "2026-07-12:684,2026-07-12:685"
+star_history: "2026-07-12:684,2026-07-12:685,2026-07-13:717"
 tags:
   - github
   - "category/ai_ml"
@@ -861,4 +861,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-13|2026-07-13]] — 再次上榜，717 stars
 - [[2026-07-12|2026-07-12]] — 首次收錄，684 stars
