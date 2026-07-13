@@ -7,8 +7,8 @@ language: C++
 license: NOASSERTION
 description: "Arma: Cold War Assault Remastered Source Code Repository."
 homepage: ""
-stars: 780
-stars_per_day: 41
+stars: 783
+stars_per_day: 39
 forks: 106
 open_issues: 4
 created: 2026-06-22
@@ -16,8 +16,8 @@ pushed_at: 2026-06-30
 first_seen: 2026-06-26
 week: "2026-W26"
 month: "2026-06"
-category: "其他"
-subcategory: "遊戲開發"
+category: "遊戲"
+subcategory: "遊戲引擎"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-26
-use_case: "提供 Arma: Cold War Assault 的重製版引擎與遊戲源代碼。"
+use_case: "提供《Arma: Cold War Assault》的重製版引擎和遊戲源代碼。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,21 +42,21 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-26"
-star_history: "2026-06-26:494,2026-06-26:494,2026-06-27:624,2026-06-27:624,2026-06-28:662,2026-06-28:662,2026-06-29:688,2026-06-29:689,2026-06-30:714,2026-07-01:728,2026-07-02:739,2026-07-03:751,2026-07-04:761,2026-07-05:768,2026-07-06:774,2026-07-07:776,2026-07-08:778,2026-07-09:778,2026-07-10:780,2026-07-11:780,2026-07-12:780"
+star_history: "2026-06-26:494,2026-06-26:494,2026-06-27:624,2026-06-27:624,2026-06-28:662,2026-06-28:662,2026-06-29:688,2026-06-29:689,2026-06-30:714,2026-07-01:728,2026-07-02:739,2026-07-03:751,2026-07-04:761,2026-07-05:768,2026-07-06:774,2026-07-07:776,2026-07-08:778,2026-07-09:778,2026-07-10:780,2026-07-11:780,2026-07-12:780,2026-07-13:783"
 tags:
   - github
-  - "category/其他"
+  - "category/遊戲"
   - "lang/c++"
   - org
 aliases:
   - "CWR"
   - "BohemiaInteractive/CWR"
-  - "提供 Arma: Cold War Assault 的重製版引擎與遊戲源代碼。"
+  - "提供《Arma: Cold War Assault》的重製版引擎和遊戲源代碼。"
 ---
 
 # CWR
 
-**780** stars · **41** stars/天 · 建立 19 天前 · C++ · NOASSERTION
+**783** stars · **39** stars/天 · 建立 20 天前 · C++ · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/BohemiaInteractive--CWR");
@@ -72,20 +72,19 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供 Arma: Cold War Assault 的重製版引擎與遊戲源代碼。
+> 提供《Arma: Cold War Assault》的重製版引擎和遊戲源代碼。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (41 stars/day)
-> **授權** NOASSERTION · **維護** Moderate (最後推送 11 天前) · **貢獻者** 2 人 · **參與度** Medium
-> **適合** 希望在經典遊戲上進行創新和開發的遊戲開發者和學生。
-> **一句話重點** 這個專案不僅提供了源代碼，還鼓勵社群進行創新和重建經典遊戲。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (39 stars/day)
+> **授權** NOASSERTION · **維護** Moderate (最後推送 12 天前) · **貢獻者** 2 人 · **參與度** Medium
+> **適合** 對於經典遊戲有熱情並希望在此基礎上進行創作的開發者。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/BohemiaInteractive--CWR");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "遊戲開發" && p.file.name !== "BohemiaInteractive--CWR" && p.status !== "archived")
+>     .where(p => p.subcategory === "遊戲引擎" && p.file.name !== "BohemiaInteractive--CWR" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,7 +95,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 遊戲開發 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 遊戲引擎 類工具_"); }
 > }
 > ```
 
@@ -104,35 +103,35 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > **安裝** Medium (需設定)
 
 > [!abstract] 核心創新
-> 這個專案提供了經典遊戲的源代碼，並鼓勵社群進行修改和重建。
+> 這個專案提供了經典遊戲的現代化源代碼，並鼓勵社群進行創作和修改。
 
 ## 專案簡介
 
-這個專案是 Arma: Cold War Assault 的重製版源代碼，旨在讓社群能夠學習、修改和重建這款經典遊戲。核心機制是將原始的遊戲引擎代碼現代化，使用 C++20 和 CMake 進行構建，並支援 Windows 和 Linux 平台。使用者可以透過 `cmake --preset win-x64-clang-rwdi` 指令來設定和構建專案，這樣的設計使得開發者能夠在多平台上進行開發，並且簡化了構建過程。這個專案的賣點在於它不僅提供了源代碼，還鼓勵社群進行二次開發，這在遊戲開發社群中是相當重要的。技術上，專案使用了 CMake 來管理構建，這意味著它能夠輕鬆地集成到現有的開發流程中，並且支持多種編譯器和平台。相比於其他遊戲引擎，這個專案的開放性和社群導向使其在開發者中更具吸引力。
+這個專案是《Arma: Cold War Assault》的重製版源代碼，包含了引擎和遊戲執行檔，旨在讓社群能夠研究、修改和擴展這款經典遊戲。核心機制是將原有的代碼現代化，使用 C++20 和 CMake 進行構建，並支持 Windows 和 Linux 平台。用戶可以透過 `cmake --preset win-x64-clang-rwdi` 指令來編譯代碼，這樣的設計使得跨平台開發變得更加簡單。這個專案的賣點在於其開放性，允許開發者自由使用和修改源代碼，但必須遵循 GPL-3.0 的條款。技術上，專案使用了現代的 C++ 標準，並且有良好的編譯選項設置，這使得代碼的可讀性和可維護性提高。
 
-與 Unreal Engine 和 Unity 等商業引擎相比，這個專案的自由度更高，開發者可以完全控制遊戲的各個方面。實際使用中，開發者可能會遇到構建環境設置的挑戰，特別是在 Linux 環境中，這需要一些額外的文檔和指導。這個專案目前處於 alpha 階段，雖然功能尚未完全穩定，但對於希望探索遊戲開發的開發者來說，這是一個值得嘗試的選擇。未來六個月內，隨著社群的參與和貢獻，這個專案有潛力進一步增強其功能和穩定性。適合那些對遊戲開發有興趣、希望參與開源項目的開發者，尤其是對於想要在經典遊戲上進行創新的人來說，這是一個理想的選擇。
+與其他遊戲引擎相比，如 Unreal Engine 或 Unity，這個專案的優勢在於其開放性和社群驅動的特性，適合喜歡深入研究舊遊戲技術的開發者。實際使用中，開發者可能會遇到構建環境設置的挑戰，特別是在 Linux 上，這是社群中一個熱門的問題。這個專案目前處於 alpha 階段，對於想要探索遊戲開發的開發者來說，這是一個值得嘗試的選擇。未來可能會有更多的社群貢獻和擴展，特別是在遊戲數據和資源方面。適合那些對經典遊戲有熱情並希望在此基礎上進行創作的開發者。
 
-**技術棧**：`C++20` · `CMake` · `Clang`
+**技術棧**：`C++ 20` · `CMake` · `Clang`
 
 ## 重點功能
 
-- 跨平台支持 — 支援 Windows 和 Linux 平台的構建。
-- 現代化代碼 — 使用 C++20 和 CMake 進行現代化的代碼結構。
-- 開放源碼 — 根據 GPL-3.0-or-later 許可證，允許用戶自由修改和分發代碼。
-- 社群導向 — 鼓勵社群參與開發和貢獻，提供開放的開發環境。
-- 詳細的構建指令 — 提供簡單的構建指令，方便開發者快速上手。
+- 跨平台支持 — 支持 Windows 和 Linux，方便不同環境的開發者使用。
+- 現代化的 C++20 代碼 — 提高了代碼的可讀性和可維護性。
+- CMake 構建系統 — 使用 CMake 進行構建，簡化了編譯過程。
+- 開放源碼 — 允許用戶自由使用、修改和再分發源代碼，遵循 GPL-3.0。
+- 社群驅動 — 鼓勵開發者參與和貢獻，推動專案的持續發展。
 
 ## 快速開始
 
-1. 設置構建環境
+1. 設置 CMake 預設
 ```bash
 cmake --preset win-x64-clang-rwdi
 ```
-2. 構建專案
+2. 編譯專案
 ```bash
 cmake --build build/win-x64-clang-rwdi
 ```
-3. 在 Linux 上使用相應的 preset
+3. 在 Linux 上使用相應預設
 ```bash
 cmake --preset linux-x64-clang-rwdi
 ```
@@ -141,57 +140,34 @@ cmake --preset linux-x64-clang-rwdi
 
 ```cpp
 {
-  "前置條件": "需要安裝 CMake 和相應的編譯器。",
+  "前置條件": "需要安裝 CMake 和相應的編譯工具。",
   "指令": "cmake --preset win-x64-clang-rwdi",
-  "預期輸出": "成功構建 Arma: Cold War Assault 的可執行檔。"
+  "預期輸出": "成功配置 CMake 項目，準備編譯。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 19 天內累積 780 stars（約 41 stars/天），forks 數量為 106（13.6%），顯示出穩定的社群關注度。這個專案由 Bohemia Interactive 發起，旨在釋放經典遊戲的源代碼，讓社群能夠進行修改和重建，這在遊戲開發領域是相當少見的。特別是對於那些希望進一步探索和修改經典遊戲的開發者來說，這是一個難得的機會。社群中對於重製版的期待和對於開源的支持，無疑是推動這個專案受關注的原因之一。這個專案的開放性和社群導向使其在開發者中更具吸引力，尤其是對於想要在經典遊戲上進行創新的人來說。
+> 建立 20 天就累積 783 stars（39/天），forks 106（13.5%），這顯示出社群對於這個經典遊戲重製的熱情。這個專案由 Bohemia Interactive 提供，過去他們在遊戲開發方面有豐富的經驗，這使得這個專案具備了良好的基礎。這個專案解決了許多玩家和開發者對於舊版遊戲的需求，讓他們能夠在現代環境中重新體驗和修改遊戲。社群對於這個專案的關注也反映出對於開放源碼和社群驅動開發的興趣。這個專案的成功也得益於 Bohemia Interactive 在遊戲開發界的影響力和過去的成功作品。
 
 ## 適合誰使用
 
-**目標受眾**：希望在經典遊戲上進行創新和開發的遊戲開發者和學生。
+**目標受眾**：對於經典遊戲有熱情並希望在此基礎上進行創作的開發者。
 
 > [!example] 使用場景
-> - 遊戲開發者用它來重製經典遊戲，因為這個專案提供了完整的源代碼，讓他們能夠自由修改和擴展功能。
-> - 學生用它來學習遊戲引擎的設計原理，因為源代碼的開放性使他們能夠深入理解遊戲開發的各個方面。
-> - 獨立開發者用它來創建自己的遊戲模組，因為這個專案的 GPL 許可證允許他們自由使用和分發修改後的代碼。
+> - 遊戲開發者用它來重製經典遊戲，因為它提供了完整的源代碼和現代化的開發環境。
+> - 學術研究者用它來分析遊戲引擎的演進，因為它的開放性允許深入研究源碼。
+> - 社群貢獻者用它來創建新的遊戲模組，因為它支持自由修改和擴展，促進了創意的實現。
 
 ## 架構分析
 
-這個專案採用 CMake 作為構建系統，這使得它能夠在不同平台上輕鬆構建。引擎代碼被現代化為 C++20，這意味著可以使用最新的語言特性來提高代碼的可讀性和維護性。專案的結構清晰，分為應用程序、引擎、測試和第三方依賴等部分，這樣的設計使得開發者能夠快速找到所需的資源。
-
-選擇 CMake 而非其他構建系統的原因在於它的跨平台特性和廣泛的社群支持。這樣的選擇雖然增加了學習曲線，但長期來看能夠提高專案的可維護性和可擴展性。擴展性方面，專案的設計考慮到了未來可能的功能擴展，並且能夠輕鬆集成新的模組和功能。
-
-## 技術深入分析
-
-這個專案的核心技術機制是將原始的遊戲引擎代碼現代化，使用 C++20 和 CMake 進行構建，這使得它能夠在多平台上運行。專案的設計考慮到了跨平台的需求，使用 CMake 來管理構建過程，這樣可以簡化開發者的工作流程。效能方面，由於使用了現代化的 C++ 語言特性，代碼的可讀性和維護性都有所提升。設計取捨方面，選擇 CMake 作為構建系統雖然增加了學習曲線，但長期來看能夠提高專案的可維護性和可擴展性。技術風險方面，專案目前處於 alpha 階段，未來可能會面臨穩定性和功能完善的挑戰。整合方面，專案能夠與主流的開發工具鏈良好兼容，對於希望在現有環境中進行開發的團隊來說，這是一個優勢。
-
-## 新手體驗
-
-> [!info] 上手難度評估
-> README 文件提供了清晰的構建指令和專案結構說明，但對於新手來說，構建過程可能較為複雜。安裝過程中需要配置 CMake 和編譯器，這可能會對新手造成困難。文件中缺乏詳細的入門指南，對於初學者來說可能需要額外的學習資源。文件目前僅有英文版本，缺乏多語言支持。
-
-## 優缺點分析
-
-> [!success] 優點
-> - 開放源碼，允許自由修改和分發。
-> - 現代化的代碼結構，使用最新的 C++20 語言特性。
-> - 跨平台支持，能夠在 Windows 和 Linux 上運行。
-
-> [!danger] 缺點
-> - 構建過程對新手來說可能較為複雜。
-> - 不包含遊戲數據，需要額外獲取。
-> - 目前處於 alpha 階段，功能尚未完全穩定。
+這個專案的架構基於 CMake 和 C++20，旨在提供跨平台的遊戲開發環境。使用 CMake 使得不同平台的構建過程標準化，降低了開發者的學習曲線。代碼結構清晰，分為應用程式、引擎和測試模組，這樣的設計使得開發者可以專注於各自的模組而不會互相干擾。選擇 C++20 是為了利用其現代特性來提升代碼的可讀性和性能，但這也意味著對於舊版編譯器的支持可能有限。整體來說，這個架構設計考慮到了未來的擴展性，並且能夠支持社群的貢獻。
 
 > [!warning] 注意事項
-> - 構建過程可能對新手來說較為複雜，需要額外的文檔支持。
-> - 不包含遊戲數據，必須從 Steam 獲取免費的 Demo 遊戲數據。
-> - 目前處於 alpha 階段，功能尚未完全穩定。
+> - 構建過程在 Linux 上可能較為複雜，需要額外的文檔支持。
+> - 不接受拉取請求，限制了社群的直接貢獻。
+> - 遊戲數據和資源不包含在此專案中，需要單獨獲取。
 
 ## 健康度儀表板
 
@@ -278,11 +254,6 @@ cmake --preset linux-x64-clang-rwdi
 > | --- | --- |
 > | [@simi](https://github.com/simi) | 2 |
 > | [@BohemiaOwner](https://github.com/BohemiaOwner) | 1 |
-
-## 社群與生態
-
-**社群活躍度**：社群活躍，定期有問題回應和討論。
-**連結**：[文件](https://github.com/BohemiaInteractive/CWR)
 
 ## 開發動態
 
@@ -395,7 +366,7 @@ cmake --preset linux-x64-clang-rwdi
 
 ## 延伸閱讀
 
-相關概念：[[遊戲開發]] · [[開放源碼]] · [[CMake]]
+相關概念：[[遊戲引擎]] · [[開放源碼]] · [[社群驅動]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[Juwluuu--Subnautica-2-Release|Juwluuu/Subnautica-2-Release]] · [[Minecraft-Community-Edition--client|Minecraft-Community-Edition/client]] · [[SubamanojJ-2004--gta-5-mod-menu|SubamanojJ-2004/gta-5-mod-menu]] · [[leigest519--OpenGame|leigest519/OpenGame]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]]
 
@@ -403,11 +374,11 @@ cmake --preset linux-x64-clang-rwdi
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：遊戲開發）
+> [!note]- 直接競品（同子分類：遊戲引擎）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "遊戲開發" AND file.name != "BohemiaInteractive--CWR"
+> WHERE subcategory = "遊戲引擎" AND file.name != "BohemiaInteractive--CWR"
 > SORT stars DESC
 > ```
 
@@ -415,7 +386,7 @@ cmake --preset linux-x64-clang-rwdi
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "BohemiaInteractive--CWR"
+> WHERE category = "遊戲" AND file.name != "BohemiaInteractive--CWR"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -439,7 +410,7 @@ cmake --preset linux-x64-clang-rwdi
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["遊戲開發","開放源碼","CMake"];
+> const concepts = ["遊戲引擎","開放源碼","社群驅動"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "BohemiaInteractive--CWR" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

@@ -17,7 +17,7 @@ first_seen: 2026-07-12
 week: "2026-W29"
 month: "2026-07"
 category: "AI/ML"
-subcategory: "視覺模型"
+subcategory: "深度學習"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-12
-use_case: "提供自我監督學習的視覺編碼器，專注於密集空間感知。"
+use_case: "提供自監督學習的視覺編碼器，專注於密集空間感知。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,7 +34,7 @@ appearances: 2
 next_review: "2026-07-20"
 contributor_count: 3
 engagement: "low"
-issue_close_rate: 83
+issue_close_rate: 71
 repo_size_kb: 11427
 readme_length: 8770
 bus_factor: 1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-12"
-star_history: "2026-07-12:638,2026-07-12:638,2026-07-13:690"
+star_history: "2026-07-12:638,2026-07-12:638,2026-07-13:690,2026-07-13:690"
 tags:
   - github
   - "category/ai_ml"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "lingbot-vision"
   - "Robbyant/lingbot-vision"
-  - "提供自我監督學習的視覺編碼器，專注於密集空間感知。"
+  - "提供自監督學習的視覺編碼器，專注於密集空間感知。"
 ---
 
 # lingbot-vision
 
-**638** stars · **128** stars/天 · 建立 5 天前 · Python · Apache-2.0
+**690** stars · **115** stars/天 · 建立 6 天前 · Python · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/Robbyant--lingbot-vision");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供自我監督學習的視覺編碼器，專注於密集空間感知。
+> 提供自監督學習的視覺編碼器，專注於密集空間感知。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (128 stars/day)
-> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** 3 人 · **參與度** Low
-> **適合** 需要高效能視覺編碼的研究團隊或開發者，特別是在自駕車和工業檢測領域。
-> **一句話重點** LingBot-Vision 的邊界中心遮蔽建模技術，讓無標註數據的視覺模型訓練成為可能。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (115 stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 4 天前) · **貢獻者** 3 人 · **參與度** Low
+> **適合** 需要進行密集空間感知研究並希望利用自監督學習的計算機視覺工程師。
+> **一句話重點** LingBot-Vision 的邊界中心建模策略讓它在空間感知任務中表現出色。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Robbyant--lingbot-vision");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "視覺模型" && p.file.name !== "Robbyant--lingbot-vision" && p.status !== "archived")
+>     .where(p => p.subcategory === "深度學習" && p.file.name !== "Robbyant--lingbot-vision" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,35 +96,36 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 視覺模型 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 深度學習 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **安裝** Medium (需設定)
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學、10 小時整合，得到高效的空間感知能力，值得投入。
 
 > [!abstract] 核心創新
-> LingBot-Vision 透過邊界中心的遮蔽建模，實現了密集空間感知的自我監督學習。
+> LingBot-Vision 提供了邊界中心的自監督學習模型，專注於密集空間感知的特徵學習。
 
 ## 專案簡介
 
-LingBot-Vision 是一個自我監督的視覺變壓器（ViT）架構，專為密集空間感知設計。它的核心機制是透過邊界中心的遮蔽建模，學習邊界、形狀和語義區域，這使得它能夠在多種下游任務中表現出色，如深度估計和語義分割。使用者可以透過 `load_pretrained_backbone` 指令輕鬆加載預訓練模型，並使用 `extract_patch_tokens` 來提取圖像的補丁特徵。這個工具的賣點在於其強大的語義表示能力和結構化特徵的捕捉。技術上，它使用 PyTorch 框架，並依賴於 CUDA 支援的 GPU 來加速推論，這對於處理大規模資料至關重要。LingBot-Vision 的設計考量了模型的可擴展性，從 1.1B 參數的 ViT-g/16 到小型的 ViT-S/16，滿足不同需求的使用者。
+LingBot-Vision 是一套自監督的 Vision Transformer（ViT）架構，專為密集空間感知而設計。用戶可以透過這個模型進行邊界建模，從而學習到物體的邊界、形狀和語義區域，並能夠應用於深度估算、語義分割等任務。使用者只需透過 `load_pretrained_backbone` 指令即可輕鬆載入預訓練模型，並使用 `extract_patch_tokens` 來提取圖像的補丁特徵。這個工具的賣點在於其邊界中心的建模方式，這使得模型在捕捉語義和幾何結構時，能夠同時保留強大的語義表示。技術上，LingBot-Vision 使用了多個 ViT 模型，從小型到大型（如 1.1B 參數的 ViT-g/16），並且能夠在不需要訓練的情況下進行標籤傳播和物體分割。
 
-與其他類似工具相比，如 DINOv2 和 DINOv3，LingBot-Vision 提供了更強的邊界感知能力，這使得它在需要精確邊界識別的應用中表現更佳。在實際使用中，LingBot-Vision 能夠處理高達 150M 的 RGB-D 訓練樣本，並在深度完成和視頻物體分割等任務中展現出色的性能。這個專案目前處於 beta 階段，對於需要高效能視覺編碼的團隊來說，值得考慮。未來六個月內，預期會有更多的模型和功能釋出，進一步擴展其應用範圍。適合的使用情境包括需要高精度深度估計的自駕車研究、需要語義分割的工業檢測等，而不適合的情境則是小型專案或對性能要求不高的應用。
+與其他工具相比，如 DINOv2 和 DINOv3，LingBot-Vision 更加專注於邊界的學習，這使得其在處理複雜場景時表現更佳。實際使用中，該模型能夠處理高達 150M 的 RGB-D 訓練樣本，並且在深度補全和視頻物體分割上表現出色。需要注意的是，該專案目前仍在活躍開發中，社群回應速度良好，且有少量開放的 issue 需要解決。整體來說，這是一個值得關注的專案，特別適合需要進行密集空間感知的研究者和開發者。
 
-**技術棧**：`Python 3.10` · `PyTorch 2.0` · `CUDA`
+**技術棧**：`Python 3.10` · `PyTorch` · `torchvision` · `opencv-python-headless` · `numpy`
 
 ## 重點功能
 
-- 邊界中心的遮蔽建模 — 透過邊界建模學習結構化特徵，提升語義表示能力。
-- 多種模型選擇 — 提供從 ViT-S/16 到 ViT-g/16 的多種模型，滿足不同性能需求。
-- 深度估計功能 — 輕量級的深度估計，支持高達 150M 的 RGB-D 訓練樣本。
-- 語義分割 — 精確對齊物體輪廓，提升分割準確度。
-- PCA 可視化 — 透過 PCA 映射補丁特徵，幫助用戶理解模型學習的特徵。
+- 邊界中心建模 — 透過邊界建模學習空間結構，提升模型的語義表示能力。
+- 多種模型選擇 — 提供從小型到大型的多個 ViT 模型，滿足不同需求。
+- 深度估算 — 能夠進行高效的深度估算，特別是在複雜場景中。
+- 語義分割 — 提供邊界忠實的特徵，能夠精確對齊物體輪廓。
+- 視頻物體分割 — 支持訓練免費的標籤傳播，提升分割準確性。
 
 ## 快速開始
 
-1. 克隆專案
+1. 克隆倉庫
 ```bash
 git clone https://github.com/robbyant/lingbot-vision.git
 ```
@@ -136,7 +137,7 @@ conda create -n lingbot-vision python=3.10 -y
 ```bash
 python -m pip install -r requirements.txt
 ```
-4. 安裝專案
+4. 安裝 lingbot-vision
 ```bash
 python -m pip install -e .
 ```
@@ -145,7 +146,7 @@ python -m pip install -e .
 
 ```python
 [
-  "# 前置條件：安裝 PyTorch 和 LingBot-Vision",
+  "# 前置條件：安裝了 PyTorch 和 LingBot-Vision",
   "import torch",
   "from lingbot_vision import load_pretrained_backbone, extract_patch_tokens, load_image",
   "device = 'cuda' if torch.cuda.is_available() else 'cpu'",
@@ -159,47 +160,119 @@ python -m pip install -e .
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天內累積 638 stars（128/天），forks 20（3.1%），顯示出穩定的增長趨勢。這個專案由多位貢獻者共同開發，主要解決了在密集空間感知中缺乏有效自我監督學習模型的問題。之前的解決方案多依賴於有標註的數據集，這使得模型的訓練成本高昂且不夠靈活。LingBot-Vision 的出現讓研究者能夠在無需大量標註數據的情況下，進行高效的視覺模型訓練。社群的反饋和討論也促進了其快速成長，特別是在 Hugging Face 和 ModelScope 的支持下。
+> 建立 6 天內累積 690 stars（115/天），forks 23（3.3%），顯示出穩定的增長潛力。主要貢獻者包括 cherubicXN 和 TakuLingFu，這些開發者在自監督學習和計算機視覺領域有豐富的經驗。LingBot-Vision 解決了傳統視覺模型在空間感知上的不足，特別是在邊界學習方面，這在以往的模型中並未得到充分重視。社群對於其未來的 Transformer 支持計畫也表現出興趣，這可能會進一步推動其使用率。依賴的技術生態如 PyTorch 和 Hugging Face 也為其提供了良好的支持環境，這使得這個工具在實際應用中更具可行性。
 
 ## 適合誰使用
 
-**目標受眾**：需要高效能視覺編碼的研究團隊或開發者，特別是在自駕車和工業檢測領域。
+**目標受眾**：需要進行密集空間感知研究並希望利用自監督學習的計算機視覺工程師。
 
 > [!example] 使用場景
-> - 自駕車工程師用它來進行高精度的深度估計，因為 LingBot-Vision 能夠處理複雜環境中的邊界識別，提升安全性。
-> - 工業檢測專家用它來進行物體分割，因為其強大的語義表示能力能夠精確識別產品缺陷。
-> - 學術研究者用它來探索自我監督學習的邊界建模，因為其開放的模型和文檔使得重現研究變得簡單。
+> - 計算機視覺研究人員用它來進行邊界建模，因為其能夠同時捕捉語義和幾何結構，從而提升模型的準確性。
+> - 深度學習工程師用它來進行深度估算，因為其在處理複雜場景時的表現優於傳統方法。
+> - 數據科學家用它來進行語義分割，因為其邊界忠實特徵能夠精確對齊物體輪廓，提升分割效果。
 
 ## 架構分析
 
-LingBot-Vision 採用 Vision Transformer 架構，設計上重點在於邊界中心的遮蔽建模。這種設計使得模型能夠同時學習語義和幾何結構，從而提升特徵的表現力。資料流方面，模型首先將輸入圖像分割為補丁，然後通過自我監督的方式學習這些補丁的邊界特徵。這種方法的優勢在於能夠在無需大量標註數據的情況下進行有效訓練，但代價是需要較高的計算資源。擴展性方面，LingBot-Vision 能夠支持從小型到大型的多種模型，這使得它在不同的應用場景中都能表現出色。
+LingBot-Vision 採用 Vision Transformer 架構，這使得模型能夠有效地處理圖像的空間特徵。每個模型的設計都是基於邊界建模的概念，這意味著模型在學習過程中會專注於物體的邊界和形狀。這種設計使得模型能夠在進行語義分割和深度估算時，提供更高的準確性。
+
+模型的資料流經過多層的自注意力機制，這使得其能夠捕捉到圖像中的長距離依賴關係。選擇 ViT 作為基礎架構的好處在於其能夠在大規模資料集上進行有效訓練，但代價是需要較高的計算資源。由於模型的大小和複雜性，對於資源的需求可能會成為擴展性的瓶頸。
 
 ## 技術深入分析
 
-LingBot-Vision 的核心技術在於使用自我監督學習來訓練 Vision Transformer 模型，特別是透過邊界中心的遮蔽建模來捕捉圖像的幾何和語義特徵。這種方法不僅能夠學習到物體的邊界，還能夠理解物體的結構，這在傳統的監督學習中是難以實現的。效能方面，LingBot-Vision 能夠處理高達 150M 的 RGB-D 訓練樣本，並在深度估計和語義分割等任務中展現出色的性能。設計上，選擇 PyTorch 作為框架使得模型的開發和訓練過程更加靈活，並且能夠充分利用 GPU 加速。這個選擇的代價是需要較高的計算資源，特別是在訓練大型模型時。技術風險方面，隨著模型的擴大，可能會面臨計算資源不足的問題，特別是在資源有限的環境中。整合方面，LingBot-Vision 能夠輕鬆與現有的深度學習框架整合，並且支持多種推論模式，這使得它在實際應用中非常靈活。
+LingBot-Vision 的核心技術在於其自監督學習的邊界建模機制，這使得模型能夠同時捕捉到物體的語義和幾何結構。使用了 Vision Transformer 架構，這意味著模型能夠在處理圖像時，利用自注意力機制來捕捉長距離的依賴關係。這種設計使得模型在進行語義分割和深度估算時，能夠提供更高的準確性。效能方面，模型能夠處理高達 150M 的 RGB-D 訓練樣本，並且在複雜場景中的表現優於傳統方法。選擇 PyTorch 作為主要框架的好處在於其靈活性和社群支持，但也帶來了對於計算資源的高需求。技術風險方面，模型的大小和複雜性可能會在擴展時造成瓶頸，特別是在資源有限的情況下。整合方面，LingBot-Vision 可以輕鬆與 Hugging Face 生態系統整合，這使得其在實際應用中更具可行性。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用範例，讓新手能夠快速上手。安裝過程相對順暢，但需要注意 CUDA 環境的配置。文件中有詳細的快速入門指南，對於初學者非常友好。文件尚未提供多語言支持。
+> README 文件清晰且提供了詳細的安裝步驟和範例，讓新手能夠順利上手。安裝過程相對簡單，但需要注意 CUDA 支援的 GPU。文件中提供了基本的使用範例，對於新手來說有助於快速理解如何使用。整體而言，花 30 分鐘應該能夠成功運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 強大的邊界感知能力，適合需要精確識別的應用。
-> - 多種模型選擇，滿足不同性能需求。
-> - 開放的模型和文檔，便於研究和重現。
+> - 高效的邊界學習能力，能夠提升語義表示的準確性。
+> - 多種模型選擇，適合不同的應用需求。
+> - 良好的社群支持和活躍的開發進度。
 
 > [!danger] 缺點
-> - 對於小型專案可能過於複雜，學習曲線較陡。
-> - 需要 CUDA 支援的 GPU，對硬體要求較高。
-> - 目前僅提供 backbone 模型，無法直接用於訓練完整模型。
+> - 需要高效能的 GPU 以獲得最佳效能。
+> - 目前僅提供 backbone 權重，無法直接用於訓練。
+> - 對於新手來說，學習曲線可能較陡峭。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.10 以上版本
-> - 需要 CUDA 支援的 GPU 進行推論
-> - 目前僅提供 backbone 模型，無法直接用於訓練完整模型
-> - 對於小型專案可能過於複雜，學習曲線較陡
+> - 僅支援 Python 3.10 及以上版本。
+> - 需要 CUDA 支援的 GPU 以獲得最佳效能。
+> - 目前僅提供 backbone 權重，無法直接使用於訓練。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於多模態學習，而 LingBot-Vision 更專注於視覺邊界學習，適合不同的應用場景。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供不同的自監督學習方法，但在空間感知方面的專注度不如 LingBot-Vision。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於多模態學習，而 LingBot-Vision 更專注於視覺邊界學習，適合不同的應用場景。 | 如果你的專案需要處理多模態資料，則 agent-sprite-forge 可能更適合。 | medium，因為需要重新設計資料流和模型架構。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供不同的自監督學習方法，但在空間感知方面的專注度不如 LingBot-Vision。 | 如果你的專案需要更廣泛的自監督學習方法，boneyard 可能更合適。 | high，因為需要全面評估和重構現有模型。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **lingbot-vision** | **agent-sprite-forge** | **boneyard** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 專注於多模態學習，而 LingBot-Vision 更專注於視覺邊界學習，適合不同的應用場景。 | 提供不同的自監督學習方法，但在空間感知方面的專注度不如 LingBot-Vision。 |
+> | 遷移成本 | - | medium，因為需要重新設計資料流和模型架構。 | high，因為需要全面評估和重構現有模型。 |
+> | 適用場景 | 主要場景 | 如果你的專案需要處理多模態資料，則 agent-sprite | 如果你的專案需要更廣泛的自監督學習方法，boneyard 可 |
+
+## 成熟度評估
+
+| 項目 | 評估 |
+| --- | --- |
+| 開發階段 | Alpha |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | high |
+
+> [!tip] 採用建議
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+
+## 已知陷阱
+
+> [!bug] 踩坑才知道的問題
+
+- **[HIGH]** 在某些環境下，CUDA 驅動可能無法正確識別 GPU，導致無法運行模型。
+  - 解法：確保安裝了正確版本的 CUDA 驅動和 PyTorch。
+- [MEDIUM] 模型在處理特定類型的圖像時可能會出現性能瓶頸。
+  - 解法：考慮使用較小的模型或進行圖像預處理。
+- [MEDIUM] 某些依賴庫版本不兼容，可能導致安裝失敗。
+  - 解法：檢查 requirements.txt 中的版本，並根據需要手動安裝。
+
+## 使用情境適合度
+
+| 情境 | 適合度 | 說明 |
+| --- | --- | --- |
+| 需要進行邊界建模的計算機視覺研究 | 非常適合 | 其專注於邊界學習的特性使其在此場景中表現優異。 |
+| 小型團隊進行深度估算專案 | 適合 | 模型能夠處理複雜場景，提供準確的深度估算。 |
+| 大型企業的核心產品開發 | 不適合 | 目前仍在 alpha 階段，穩定性和成熟度不足。 |
+
+## 採用成本分析
+
+| 項目 | 評估 |
+| --- | --- |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
+| 維護負擔 | medium |
+| 綁定風險 | medium |
+
+> [!tip] 投入 vs 回報
+> 花 5 小時學、10 小時整合，得到高效的空間感知能力，值得投入。
+
+## 安全性評估
+
+> [!warning] 安全性快速掃描
+> 低風險：該工具不需要高權限，且不會存取敏感資料。依賴的庫中無已知的供應鏈風險，適合在 CI/CD pipeline 中使用。
 
 ## 健康度儀表板
 
@@ -264,9 +337,9 @@ LingBot-Vision 的核心技術在於使用自我監督學習來訓練 Vision Tra
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 20 |
-| Open Issues | 1 |
-| Issue 解決率 | 83% (5 closed) |
+| Forks | 23 |
+| Open Issues | 2 |
+| Issue 解決率 | 71% (5 closed) |
 | 最後推送 | 2026-07-08 |
 | 建立日期 | 2026-07-06 |
 | Repo 大小 | 11.2 MB |
@@ -285,13 +358,20 @@ LingBot-Vision 的核心技術在於使用自我監督學習來訓練 Vision Tra
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，已解決 83% 的問題。
+**社群活躍度**：社群活躍，定期更新和解決問題。
 **連結**：[文件](https://github.com/Robbyant/lingbot-vision)
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-07-06 ~ 2026-07-08）
 > **活躍天數** 3 天 · **最新 commit** Update README.md
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#7](https://github.com/Robbyant/lingbot-vision/issues/7) | Plans for Transformers support? | 0 | 0 |
 
 ## README 摘錄
 
@@ -454,19 +534,19 @@ LingBot-Vision 的核心技術在於使用自我監督學習來訓練 Vision Tra
 
 ## 延伸閱讀
 
-相關概念：[[自我監督學習]] · [[深度學習]] · [[視覺變壓器]]
+相關概念：[[自動化測試]] · [[深度學習]] · [[電腦視覺]]
 
-相關專案：[[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]] · [[Robbyant--lingbot-map|Robbyant/lingbot-map]] · [[facebookresearch--vggt-omega|facebookresearch/vggt-omega]] · [[inspatio--worldfm|inspatio/worldfm]] · [[Forsy-AI--agent-apprenticeship|Forsy-AI/agent-apprenticeship]] · [[FreedomIntelligence--OpenClaw-Medical-Skills|FreedomIntelligence/OpenClaw-Medical-Skills]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]] · [[Robbyant--lingbot-map|Robbyant/lingbot-map]] · [[facebookresearch--vggt-omega|facebookresearch/vggt-omega]] · [[inspatio--worldfm|inspatio/worldfm]]
 
 [GitHub](https://github.com/Robbyant/lingbot-vision)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：視覺模型）
+> [!note]- 直接競品（同子分類：深度學習）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "視覺模型" AND file.name != "Robbyant--lingbot-vision"
+> WHERE subcategory = "深度學習" AND file.name != "Robbyant--lingbot-vision"
 > SORT stars DESC
 > ```
 
@@ -498,7 +578,7 @@ LingBot-Vision 的核心技術在於使用自我監督學習來訓練 Vision Tra
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自我監督學習","深度學習","視覺變壓器"];
+> const concepts = ["自動化測試","深度學習","電腦視覺"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Robbyant--lingbot-vision" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
