@@ -7,10 +7,10 @@ language: TypeScript
 license: AGPL-3.0
 description: "Local-first, zero-trust agentic IDE for verifiable autonomous software development."
 homepage: "https://ide.clodex.xyz"
-stars: 641
-stars_per_day: 641
-forks: 137
-open_issues: 0
+stars: 698
+stars_per_day: 698
+forks: 148
+open_issues: 2
 created: 2026-07-12
 pushed_at: 2026-07-13
 first_seen: 2026-07-13
@@ -30,8 +30,8 @@ use_case: "提供一個本地優先的零信任開發環境，專為可驗證的
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-16"
+appearances: 2
+next_review: "2026-07-17"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-13"
-star_history: "2026-07-13:641"
+star_history: "2026-07-13:641,2026-07-14:698"
 tags:
   - github
   - "category/開發工具"
@@ -869,4 +869,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-14|2026-07-14]] — 再次上榜，698 stars
 - [[2026-07-13|2026-07-13]] — 首次收錄，641 stars

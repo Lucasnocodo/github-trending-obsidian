@@ -2836,10 +2836,10 @@
   },
   "withmarbleapp/os-taxonomy": {
     "first_seen": "2026-07-10",
-    "last_seen": "2026-07-13",
-    "times_seen": 4,
+    "last_seen": "2026-07-14",
+    "times_seen": 5,
     "stars_first": 1542,
-    "stars_last": 2749
+    "stars_last": 2946
   },
   "514-labs/dnsglobe": {
     "first_seen": "2026-07-10",
@@ -2864,10 +2864,10 @@
   },
   "Robbyant/lingbot-world-v2": {
     "first_seen": "2026-07-11",
-    "last_seen": "2026-07-13",
-    "times_seen": 3,
+    "last_seen": "2026-07-14",
+    "times_seen": 4,
     "stars_first": 709,
-    "stars_last": 951
+    "stars_last": 1048
   },
   "simonlin1212/Vibe-Research": {
     "first_seen": "2026-07-11",
@@ -2885,17 +2885,17 @@
   },
   "x4gKing/3x-ui-Upgrade": {
     "first_seen": "2026-07-12",
-    "last_seen": "2026-07-13",
-    "times_seen": 2,
+    "last_seen": "2026-07-14",
+    "times_seen": 3,
     "stars_first": 803,
-    "stars_last": 894
+    "stars_last": 964
   },
   "Robbyant/lingbot-video": {
     "first_seen": "2026-07-12",
-    "last_seen": "2026-07-13",
-    "times_seen": 2,
+    "last_seen": "2026-07-14",
+    "times_seen": 3,
     "stars_first": 684,
-    "stars_last": 717
+    "stars_last": 765
   },
   "Robbyant/lingbot-vision": {
     "first_seen": "2026-07-12",
@@ -2906,23 +2906,44 @@
   },
   "vinhhien112/Three.js-Object-Sculptor-Codex-Plugin": {
     "first_seen": "2026-07-13",
-    "last_seen": "2026-07-13",
-    "times_seen": 1,
+    "last_seen": "2026-07-14",
+    "times_seen": 2,
     "stars_first": 672,
-    "stars_last": 672
+    "stars_last": 881
   },
   "mereyabdenbekuly-ctrl/clodex-ide": {
     "first_seen": "2026-07-13",
-    "last_seen": "2026-07-13",
-    "times_seen": 1,
+    "last_seen": "2026-07-14",
+    "times_seen": 2,
     "stars_first": 641,
-    "stars_last": 641
+    "stars_last": 698
   },
   "op7418/guizang-material-illustration": {
     "first_seen": "2026-07-13",
-    "last_seen": "2026-07-13",
-    "times_seen": 1,
+    "last_seen": "2026-07-14",
+    "times_seen": 2,
     "stars_first": 598,
-    "stars_last": 598
+    "stars_last": 637
+  },
+  "MDX-Tom/gpt-5.6-instruct": {
+    "first_seen": "2026-07-14",
+    "last_seen": "2026-07-14",
+    "times_seen": 1,
+    "stars_first": 743,
+    "stars_last": 743
+  },
+  "littledivy/mimic": {
+    "first_seen": "2026-07-14",
+    "last_seen": "2026-07-14",
+    "times_seen": 1,
+    "stars_first": 730,
+    "stars_last": 730
+  },
+  "William-Lu-stack/LuxyAI": {
+    "first_seen": "2026-07-14",
+    "last_seen": "2026-07-14",
+    "times_seen": 1,
+    "stars_first": 564,
+    "stars_last": 564
   }
 }

@@ -7,8 +7,8 @@ language: N/A
 license: N/A
 description: "归藏的材质插画 skill：生成带字解释图、图表美化和参考辅助配图。"
 homepage: ""
-stars: 598
-stars_per_day: 120
+stars: 637
+stars_per_day: 106
 forks: 64
 open_issues: 1
 created: 2026-07-07
@@ -30,8 +30,8 @@ use_case: "生成带中文标签的材质插画，解决社交卡片和文档中
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-20"
+appearances: 2
+next_review: "2026-07-21"
 contributor_count: 0
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-13"
-star_history: "2026-07-13:598"
+star_history: "2026-07-13:598,2026-07-14:637"
 tags:
   - github
   - "category/開發工具"
@@ -931,4 +931,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-14|2026-07-14]] — 再次上榜，637 stars
 - [[2026-07-13|2026-07-13]] — 首次收錄，598 stars

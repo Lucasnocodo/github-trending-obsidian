@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "Codex plugin that turns attached object images into code-only, animation-ready procedural Three.js models."
 homepage: ""
-stars: 672
-stars_per_day: 224
-forks: 83
+stars: 881
+stars_per_day: 220
+forks: 102
 open_issues: 0
 created: 2026-07-09
 pushed_at: 2026-07-11
@@ -30,8 +30,8 @@ use_case: "將附加的物件圖片轉換為僅包含代碼的、準備動畫的
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-16"
+appearances: 2
+next_review: "2026-07-17"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-13"
-star_history: "2026-07-13:672"
+star_history: "2026-07-13:672,2026-07-14:881"
 tags:
   - github
   - "category/開發工具"
@@ -851,4 +851,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-14|2026-07-14]] — 再次上榜，881 stars
 - [[2026-07-13|2026-07-13]] — 首次收錄，672 stars
