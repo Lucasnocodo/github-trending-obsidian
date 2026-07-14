@@ -7,7 +7,7 @@ language: Python
 license: NOASSERTION
 description: "Infinite Worlds with Versatile Interactions"
 homepage: "https://technology.robbyant.com/lingbot-world-v2"
-stars: 1048
+stars: 1050
 stars_per_day: 210
 forks: 60
 open_issues: 4
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-11
-use_case: "提供無限互動世界，讓用戶體驗多樣化的互動行為。"
+use_case: "提供無限互動世界的高效能 AI 模型，適合各種互動場景。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-07-17"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 9909
+repo_size_kb: 9910
 readme_length: 6409
 bus_factor: 2
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-11"
-star_history: "2026-07-11:709,2026-07-11:711,2026-07-12:811,2026-07-12:815,2026-07-13:951,2026-07-13:952,2026-07-14:1048"
+star_history: "2026-07-11:709,2026-07-11:711,2026-07-12:811,2026-07-12:815,2026-07-13:951,2026-07-13:952,2026-07-14:1048,2026-07-14:1050"
 tags:
   - github
   - "category/ai_ml"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "lingbot-world-v2"
   - "Robbyant/lingbot-world-v2"
-  - "提供無限互動世界，讓用戶體驗多樣化的互動行為。"
+  - "提供無限互動世界的高效能 AI 模型，適合各種互動場景。"
 ---
 
 # lingbot-world-v2
 
-**952** stars · **238** stars/天 · 建立 4 天前 · Python · NOASSERTION
+**1.1k** stars · **210** stars/天 · 建立 5 天前 · Python · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/Robbyant--lingbot-world-v2");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供無限互動世界，讓用戶體驗多樣化的互動行為。
+> 提供無限互動世界的高效能 AI 模型，適合各種互動場景。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (238 stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 1 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要創建高互動性虛擬世界的遊戲開發者和AI研究者。
-> **一句話重點** LingBot-World 2.0的設計讓互動變得無限可能，並且能夠在即時環境中運行，這對於遊戲開發者和AI研究者來說是個重大突破。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (210 stars/day)
+> **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
+> **適合** 需要在互動式應用中實現高效能 AI 模型的開發者。
+> **一句話重點** LingBot-World 2.0 的創新在於其代理式控制架構，讓互動環境變得更加靈活和多樣。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,30 +102,28 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~8h · **綁定風險** medium
-> **結論** 花 8 小時學習，12 小時整合，得到高互動性的應用，值得投入。
+> **結論** 花 8 小時學習，12 小時整合，得到一個高效能的互動模型，值得投入。
 
 > [!abstract] 核心創新
-> 引入了無限互動範圍和多樣化互動元素的世界建模系統。
+> 引入了代理式控制架構，提升了互動環境的創新性和多樣性。
 
 ## 專案簡介
 
-LingBot-World 2.0（或稱為LingBot-World-Infinity）是一個進階的世界建模系統，旨在提供無限的互動可能性。用戶可以透過這個系統進行多樣化的互動，例如攻擊、射箭、施法等，並且能夠在720p的視頻流中以60fps的速度進行即時反應。這是透過一個精心設計的因果預訓練範例來實現的，確保了輸出質量的穩定性。系統的核心是兩個代理：一個負責計劃角色行為的代理和一個負責合成環境元素的導演代理。
+LingBot-World 2.0（或稱 LingBot-World-Infinity）是一個進階的 AI 模型，專注於提供無限的互動世界。它的核心機制是利用因果預訓練的方式，讓模型能夠在互動中保持高品質的輸出，並且能夠快速響應，支持每秒 60 幀的 720p 視頻流。使用者可以透過 `generate.py` 指令進行因果推理，並且支持多 GPU 的運算，這樣的設計使得模型在處理複雜場景時能夠有效地分配資源。這個版本相比於前一代，新增了多樣化的互動元素，例如攻擊、射箭和施法等行為，讓使用者的體驗更加豐富。此外，模型引入了代理式控制架構，分為計劃代理和導演代理，這樣的設計使得環境元素能夠隨著場景的進展而不斷創新。整體而言，LingBot-World 2.0 的一句話賣點是：提供一個高效能且多樣化的互動世界，讓使用者能夠享受更真實的互動體驗。
 
-這樣的設計不僅提升了互動的多樣性，還能夠在場景進展中持續創造新元素。使用者可以透過`generate.py`進行因果推理，並且支持多GPU運行，這使得它在處理大規模數據時表現出色。這個工具的賣點在於其無限制的互動範圍和快速的反應時間，適合需要高互動性的應用場景。相較於其他類似工具，LingBot-World 2.0的多樣化互動元素和即時反應能力使其在遊戲開發和虛擬世界創建中具備優勢。
-
-**技術棧**：`Python` · `torch>=2.4.0` · `torchvision>=0.19.0` · `torchaudio` · `opencv-python>=4.9.0.80` · `diffusers>=0.31.0` · `transformers>=4.49.0,<=4.51.3`
+**技術棧**：`Python` · `Torch >= 2.4.0` · `OpenCV >= 4.9.0`
 
 ## 重點功能
 
-- 無限制互動範圍 — 提供多樣化的互動行為，包括攻擊、施法等。
-- 快速反應時間 — 支持720p視頻流以60fps運行，適合即時互動應用。
-- 多代理系統 — 整合計劃和環境合成的代理，提升互動的靈活性。
-- 因果推理 — 使用`generate.py`進行因果推理，支持多GPU運行。
-- 模型下載方便 — 提供多種模型下載選項，包括Hugging Face和ModelScope。
+- 無限互動範圍 — 模型支持多樣化的互動行為，如攻擊、施法等。
+- 快速響應時間 — 支持 720p 視頻流，每秒 60 幀。
+- 代理式控制架構 — 計劃代理和導演代理協同工作，提升環境互動的創新性。
+- 多 GPU 支持 — 使用 `torchrun` 指令可在多個 GPU 上運行，提升計算效率。
+- 因果推理 — 提供 `generate.py` 進行因果推理，支持 KV 緩存。
 
 ## 快速開始
 
-1. 克隆代碼庫
+1. 克隆專案
 ```bash
 git clone https://github.com/robbyant/lingbot-world-v2.git
 ```
@@ -143,71 +141,71 @@ huggingface-cli download robbyant/lingbot-world-v2-14b-causal-fast --local-dir .
 ```
 5. 運行推理
 ```bash
-torchrun --nproc_per_node=8 generate.py --task i2v-A14B --size 480*832 --ckpt_dir lingbot-world-v2-14b-causal-fast --image examples/03/image.jpg --action_path examples/03 --dit_fsdp --t5_fsdp --ulysses_size 8 --frame_num 361 --local_attn_size 18 --sink_size 6 --prompt 'A serene lakeside scene...' 
+torchrun --nproc_per_node=8 generate.py --task i2v-A14B --size 480*832 --ckpt_dir lingbot-world-v2-14b-causal-fast --image examples/03/image.jpg --action_path examples/03 --dit_fsdp --t5_fsdp --ulysses_size 8 --frame_num 361 --local_attn_size 18 --sink_size 6 --prompt 'A serene lakeside scene with a lone tree standing in calm water...' 
 ```
 
 ## 程式碼範例
 
 ```python
 {
-  "前置條件": "需要安裝torch和相關依賴",
-  "指令": "torchrun --nproc_per_node=8 generate.py --task i2v-A14B --size 480*832 --ckpt_dir lingbot-world-v2-14b-causal-fast --image examples/03/image.jpg --action_path examples/03 --dit_fsdp --t5_fsdp --ulysses_size 8 --frame_num 361 --local_attn_size 18 --sink_size 6 --prompt 'A serene lakeside scene...' ",
-  "預期輸出": "生成一個480P的視頻流，展示指定場景的互動效果。"
+  "前置條件": "需要安裝 PyTorch 和相關依賴",
+  "指令": "torchrun --nproc_per_node=8 generate.py --task i2v-A14B --size 480*832 --ckpt_dir lingbot-world-v2-14b-causal-fast --image examples/03/image.jpg --action_path examples/03 --dit_fsdp --t5_fsdp --ulysses_size 8 --frame_num 361 --local_attn_size 18 --sink_size 6 --prompt 'A serene lakeside scene with a lone tree standing in calm water...' ",
+  "預期輸出": "生成的視頻幀，展示指定場景的動態效果。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天就累積 952 stars（238/天），forks 49（5.1%），這顯示出強烈的興趣和潛在的使用者基礎。這個專案的主要貢獻者來自Robbyant團隊，他們在AI和互動系統方面有豐富的經驗。LingBot-World 2.0解決了以往互動模型在反應速度和多樣性上的不足，提供了一個更為靈活的解決方案。最近的技術報告和模型發布吸引了更多的開發者關注。該工具的設計使其能夠在多種平台上運行，這也是其受歡迎的原因之一。forks/stars比率為5.1%，顯示出有相當一部分用戶對其進行了實際的修改和使用。
+> 建立 5 天內累積 1050 stars（210/天），forks 60（5.7%），顯示出穩定的增長潛力。這個專案由 Robbyant 團隊開發，成員在 AI 和互動模型領域有豐富的背景。LingBot-World 2.0 解決了以往互動模型在反應速度和互動多樣性上的不足，提供了一個更為靈活的解決方案。近期的技術報告和模型發布引起了社群的注意，並且有計劃釋出更多功能，這些都為專案的成長提供了動力。
 
 ## 適合誰使用
 
-**目標受眾**：需要創建高互動性虛擬世界的遊戲開發者和AI研究者。
+**目標受眾**：需要在互動式應用中實現高效能 AI 模型的開發者。
 
 > [!example] 使用場景
-> - 遊戲開發者用它來創建一個互動式的虛擬世界，因為它支持多樣化的互動行為和即時反應，能夠提升玩家的沉浸感。
-> - AI 研究者用它來測試不同的互動模型，因為它的因果推理能力可以幫助分析模型在多種情境下的表現。
-> - 教育工作者用它來設計互動式學習環境，因為它的多樣化互動元素能夠吸引學生的注意力，提升學習效果。
+> - 遊戲開發者用它來創建一個動態的遊戲世界，因為它支持多樣化的互動行為和高效的響應時間，讓玩家的體驗更加真實。
+> - 教育工作者用它來設計互動式學習環境，因為它能夠生成多種情境和互動，提升學生的參與感。
+> - 研究人員用它來探索 AI 在模擬環境中的應用，因為它的代理式控制架構能夠提供深入的行為分析。
 
 ## 架構分析
 
-LingBot-World 2.0採用多代理架構，其中一個代理負責角色行為的計劃，另一個則負責環境元素的合成。這樣的設計使得系統能夠在互動過程中持續生成新元素，提升了用戶體驗。資料流中，模型使用因果推理進行視頻幀的逐塊處理，這樣可以有效管理記憶體使用。
-
-選擇Python和PyTorch作為核心技術棧，因為這些工具在AI和機器學習領域有著廣泛的應用和支持。這種選擇雖然在性能上可能不如某些低層語言，但其開發效率和生態系統的豐富性是主要考量。擴展性方面，系統的多GPU支持使其能夠處理更大的數據集，但在資源需求上也相對較高。
+LingBot-World 2.0 採用模組化的架構設計，核心是基於 PyTorch 的深度學習模型，並結合 OpenCV 處理視覺數據。模型的資料流從用戶輸入的場景描述開始，經過因果推理生成視頻幀，並透過代理式控制架構進行互動。這樣的設計使得模型能夠在保持高效能的同時，提供多樣化的互動選項。選擇 PyTorch 是因為其在深度學習領域的廣泛應用和社群支持，而使用 OpenCV 則是為了強化視覺處理能力。這樣的選擇雖然增加了依賴，但也提升了模型的靈活性和擴展性。
 
 ## 技術深入分析
 
-LingBot-World 2.0的核心技術機制在於其多代理架構，這使得系統能夠在互動過程中持續生成新元素。使用因果推理的設計讓模型能夠逐幀處理視頻，這在處理大規模數據時能有效管理記憶體使用。選擇Python和PyTorch的原因在於其生態系統的豐富性和開發效率，雖然在性能上可能不如某些低層語言，但這樣的選擇能加速開發過程。技術風險方面，隨著用戶數量的增加，系統可能面臨性能瓶頸，尤其是在多GPU運行時。整合方面，與現有的AI框架如Hugging Face的兼容性良好，但對於自定義模型的支持有限，這可能會影響某些用戶的使用體驗。整體而言，這個工具在互動性和即時反應上具有顯著優勢，但在資源需求和靈活性方面仍有改進空間。
+LingBot-World 2.0 的核心技術基於深度學習模型，使用 PyTorch 進行訓練和推理。模型的設計選擇了因果預訓練的方式，這使得它在生成互動內容時能夠保持一致性和高品質。效能方面，模型支持多 GPU 的運行，能夠在高負載下保持快速響應，這對於即時互動應用至關重要。設計上，選擇 PyTorch 是因為它的靈活性和廣泛的社群支持，而 OpenCV 的使用則是為了強化視覺數據的處理能力。這樣的選擇雖然增加了依賴，但也提升了模型的擴展性。技術風險方面，隨著使用者數量的增加，可能會面臨性能瓶頸，尤其是在高負載的情況下。整合方面，LingBot-World 2.0 可以與主流的 CI/CD 工具鏈相容，但在初期整合時可能會遇到一些摩擦點，特別是在依賴管理上。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README文件清晰，包含安裝步驟和範例；安裝過程相對順暢，但需要注意GPU要求；提供了快速入門指南，適合新手使用；文件目前僅有英文版本。這使得新手在30分鐘內能夠完成基本設置並運行起來。
+> README 文件清晰，包含安裝步驟和範例；安裝過程相對順暢，但需要注意依賴版本；提供的快速入門指南簡單易懂；文件目前僅有英文版本，缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多樣化的互動行為，提升用戶體驗。
-> - 快速的反應時間，適合即時互動應用。
-> - 多代理系統設計，靈活性高。
+> - 高效能的互動模型，支持多樣化的行為選擇。
+> - 快速響應時間，適合即時應用。
+> - 模組化設計，便於擴展和維護。
 
 > [!danger] 缺點
-> - 需要高性能的GPU支持，資源需求較高。
-> - 目前僅支持Linux環境，對Windows用戶不友好。
-> - 不支持自定義模型的直接部署，限制了靈活性。
+> - 安裝和配置過程相對複雜，需要高效能硬體支持。
+> - 目前功能尚未完全釋出，部分功能仍在開發中。
+> - 缺乏完整的部署指導，使用者需自行探索。
 
 > [!warning] 注意事項
-> - 目前僅支持Linux環境，Windows用戶需使用WSL。
-> - 需要較高的GPU資源以支持多GPU運行，建議使用NVIDIA顯卡。
-> - 不支持自定義模型的直接部署，需參考官方部署指南。
+> - 目前僅支持 Linux 環境，Windows 用戶需使用 WSL。
+> - 需要高效能的 GPU 支持，建議使用 NVIDIA 顯示卡。
+> - 尚未釋出完整的部署代碼，使用者需自行處理部署問題。
+> - 部分功能仍在開發中，未來可能會有變動。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色行為的生成，而LingBot-World 2.0則提供更廣泛的互動元素和即時反應能力。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 主要針對對戰場景設計，而LingBot-World 2.0則適用於更廣泛的互動場景。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供了更為簡化的代理模型，適合快速開發，但缺乏 LingBot-World 的多樣化互動元素。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於靜態環境的互動，而 LingBot-World 提供動態生成環境的能力，適合需要即時反應的應用。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於對抗性互動，而 LingBot-World 則支持更廣泛的互動行為，適合多樣化的應用場景。 |
 
 ## 替代方案決策
 
@@ -215,16 +213,16 @@ LingBot-World 2.0的核心技術機制在於其多代理架構，這使得系統
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色行為的生成，而LingBot-World 2.0則提供更廣泛的互動元素和即時反應能力。 | 如果需要專注於角色行為的生成而非整體互動體驗，則可以選擇此工具。 | medium，因為需要重新設計互動邏輯。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 主要針對對戰場景設計，而LingBot-World 2.0則適用於更廣泛的互動場景。 | 如果專注於對戰遊戲的開發，這個工具會更合適。 | high，因為需要重新構建整個互動框架。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用更簡化的代理模型，適合快速開發，但缺乏 LingBot-World 的多樣化互動元素。 | 如果你的團隊需要快速開發一個簡單的互動模型，這個工具會是更好的選擇。 | low，因為其 API 設計較為簡單，容易上手。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於靜態環境的互動，而 LingBot-World 提供動態生成環境的能力，適合需要即時反應的應用。 | 如果你的應用場景不需要動態生成，而是靜態的互動，這個工具會更合適。 | medium，因為需要重新設計部分互動邏輯。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **lingbot-world-v2** | **agent-sprite-forge** | **Duel-Agents** |
+> | 維度 | **lingbot-world-v2** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於角色行為的生成，而LingBot-World 2.0則提供更廣泛的互動元素和即時反應能力。 | 主要針對對戰場景設計，而LingBot-World 2.0則適用於更廣泛的互動場景。 |
-> | 遷移成本 | - | medium，因為需要重新設計互動邏輯。 | high，因為需要重新構建整個互動框架。 |
-> | 適用場景 | 主要場景 | 如果需要專注於角色行為的生成而非整體互動體驗，則可以選擇此工 | 如果專注於對戰遊戲的開發，這個工具會更合適。 |
+> | 技術路線 | 本專案 | 使用更簡化的代理模型，適合快速開發，但缺乏 LingBot-World 的多樣化互動元素。 | 專注於靜態環境的互動，而 LingBot-World 提供動態生成環境的能力，適合需要即時反應的應用。 |
+> | 遷移成本 | - | low，因為其 API 設計較為簡單，容易上手。 | medium，因為需要重新設計部分互動邏輯。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要快速開發一個簡單的互動模型，這個工具會是更好 | 如果你的應用場景不需要動態生成，而是靜態的互動，這個工具會更 |
 
 ## 成熟度評估
 
@@ -235,24 +233,26 @@ LingBot-World 2.0的核心技術機制在於其多代理架構，這使得系統
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人或小型專案試用，不建議用在生產環境的核心路徑上。
+> 適合個人試用和探索，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些GPU上可能會出現性能瓶頸，導致反應延遲。
-  - 解法：調整GPU配置或減少同時運行的實例數量。
-- [MEDIUM] 模型下載過程中可能會遇到網路問題，導致下載失敗。
-  - 解法：重試下載或使用不同的網路連接。
+- **[HIGH]** 在高負載情況下，模型可能會出現性能瓶頸，導致響應延遲。
+  - 解法：減少同時處理的請求數量，或增加硬體資源。
+- [MEDIUM] 安裝過程中可能會遇到依賴版本不匹配的問題。
+  - 解法：仔細檢查 requirements.txt 中的版本要求，確保安裝正確。
+- [MEDIUM] 部分功能尚未釋出，使用者可能會遇到缺乏文檔的情況。
+  - 解法：參考 LingBot-World 的文檔，尋找相似功能的使用方法。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 適合 | 能夠快速實現高互動性的功能，提升用戶體驗。 |
-| 大型遊戲開發團隊 | 普通 | 雖然具備強大的功能，但資源需求較高，可能不適合所有團隊。 |
-| 學術研究機構進行AI互動模型研究 | 非常適合 | 提供了多樣化的互動元素和即時反應能力，適合實驗和測試。 |
+| 10 人以下的新創公司開發互動遊戲 | 非常適合 | 模型支持多樣化的互動行為，能夠提升遊戲的趣味性和玩家的參與感。 |
+| 大型企業的教育培訓平台 | 適合 | 雖然模型性能強大，但可能需要更多的硬體資源來支持大規模的使用。 |
+| 個人開發者的 AI 互動應用 | 普通 | 對於小型應用來說，模型的安裝和配置過程可能過於複雜。 |
 
 ## 採用成本分析
 
@@ -264,12 +264,12 @@ LingBot-World 2.0的核心技術機制在於其多代理架構，這使得系統
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 8 小時學習，12 小時整合，得到高互動性的應用，值得投入。
+> 花 8 小時學習，12 小時整合，得到一個高效能的互動模型，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限運行，且不存取敏感資料。依賴鏈中未發現已知的供應鏈風險，適合在CI/CD中使用。
+> 低風險：該工具本身不需要高權限，且不存取敏感資料，但使用者需注意依賴鏈的安全性，特別是在 CI/CD 環境中使用時。
 
 ## 健康度儀表板
 
@@ -334,10 +334,10 @@ LingBot-World 2.0的核心技術機制在於其多代理架構，這使得系統
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 49 |
-| Open Issues | 2 |
+| Forks | 60 |
+| Open Issues | 4 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-07-11 |
+| 最後推送 | 2026-07-13 |
 | 建立日期 | 2026-07-08 |
 | 官方網站 | [Link](https://technology.robbyant.com/lingbot-world-v2) |
 | Repo 大小 | 9.7 MB |
@@ -351,26 +351,28 @@ LingBot-World 2.0的核心技術機制在於其多代理架構，這使得系統
 > | 貢獻者 | Commits |
 > | --- | --- |
 > | [@zelingao98](https://github.com/zelingao98) | 2 |
+> | [@pPetrichor](https://github.com/pPetrichor) | 1 |
 > | [@JingyeChen](https://github.com/JingyeChen) | 1 |
 > | [@zliucz](https://github.com/zliucz) | 1 |
 > | [@EzioBy](https://github.com/EzioBy) | 1 |
-> | [@YichongLu](https://github.com/YichongLu) | 1 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有更新但issue解決率為0%。
+**社群活躍度**：社群活躍度中等，開發者定期更新，但問題解決率較低。
 **連結**：[文件](https://technology.robbyant.com/lingbot-world-v2)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-08 ~ 2026-07-11）
-> **活躍天數** 4 天 · **最新 commit** Update .gitignore
+> [!abstract] 最近 10 次 commit（2026-07-08 ~ 2026-07-13）
+> **活躍天數** 5 天 · **最新 commit** Update .gitignore
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
+> | [#5](https://github.com/Robbyant/lingbot-world-v2/issues/5) | Any plan to release Agentic Harness code? | 0 | 0 |
+> | [#4](https://github.com/Robbyant/lingbot-world-v2/issues/4) | how many diffusion step after distillation?? | 0 | 0 |
 > | [#2](https://github.com/Robbyant/lingbot-world-v2/issues/2) | Black Screen issue | 0 | 0 |
 > | [#1](https://github.com/Robbyant/lingbot-world-v2/issues/1) | Release remaining LingBot-World-v2 models on Hugging Face | 0 | 0 |
 
@@ -498,9 +500,9 @@ LingBot-World 2.0的核心技術機制在於其多代理架構，這使得系統
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[Agent 框架]] · [[即時通訊]]
+相關概念：[[多模態]] · [[代理式控制]] · [[即時通訊]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[QwenLM--Qwen-AgentWorld|QwenLM/Qwen-AgentWorld]] · [[boogu-project--Boogu-Image|boogu-project/Boogu-Image]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]] · [[GAIR-NLP--daVinci-MagiHuman|GAIR-NLP/daVinci-MagiHuman]] · [[QwenLM--Qwen-AgentWorld|QwenLM/Qwen-AgentWorld]]
 
 [GitHub](https://github.com/Robbyant/lingbot-world-v2) · [官方網站](https://technology.robbyant.com/lingbot-world-v2)
 
@@ -542,7 +544,7 @@ LingBot-World 2.0的核心技術機制在於其多代理架構，這使得系統
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["多模態","Agent 框架","即時通訊"];
+> const concepts = ["多模態","代理式控制","即時通訊"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Robbyant--lingbot-world-v2" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

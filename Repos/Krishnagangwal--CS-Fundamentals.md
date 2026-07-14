@@ -7,17 +7,17 @@ language: N/A
 license: N/A
 description: "Curated CS fundamentals for placement prep: DSA,Computer Networks, DBMS & SQL, OOPs, Operating Systems, System Design & Software Engineering"
 homepage: ""
-stars: 2005
-stars_per_day: 143
-forks: 197
+stars: 2037
+stars_per_day: 136
+forks: 201
 open_issues: 3
 created: 2026-06-28
 pushed_at: 2026-06-28
 first_seen: 2026-06-30
 week: "2026-W27"
 month: "2026-06"
-category: "其他"
-subcategory: "學習資源"
+category: "教學資源"
+subcategory: "面試準備"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-30
-use_case: "提供計算機科學基礎知識的精選資源，幫助求職準備。"
+use_case: "提供計算機科學基礎知識的精選資源，幫助求職準備，包括資料結構、計算機網絡、DBMS、OOP、操作系統等。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,21 +42,21 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-06-30"
-star_history: "2026-06-30:957,2026-06-30:959,2026-07-01:1215,2026-07-01:1218,2026-07-02:1331,2026-07-02:1331,2026-07-03:1444,2026-07-03:1446,2026-07-04:1517,2026-07-04:1519,2026-07-05:1586,2026-07-05:1586,2026-07-06:1645,2026-07-07:1713,2026-07-08:1781,2026-07-09:1838,2026-07-10:1878,2026-07-11:1903,2026-07-12:1954,2026-07-13:2005"
+star_history: "2026-06-30:957,2026-06-30:959,2026-07-01:1215,2026-07-01:1218,2026-07-02:1331,2026-07-02:1331,2026-07-03:1444,2026-07-03:1446,2026-07-04:1517,2026-07-04:1519,2026-07-05:1586,2026-07-05:1586,2026-07-06:1645,2026-07-07:1713,2026-07-08:1781,2026-07-09:1838,2026-07-10:1878,2026-07-11:1903,2026-07-12:1954,2026-07-13:2005,2026-07-14:2037"
 tags:
   - github
-  - "category/其他"
+  - "category/教學資源"
   - "lang/other"
   - easy_install
 aliases:
   - "CS-Fundamentals"
   - "Krishnagangwal/CS-Fundamentals"
-  - "提供計算機科學基礎知識的精選資源，幫助求職準備。"
+  - "提供計算機科學基礎知識的精選資源，幫助求職準備，包括資料結構、計算機網絡、DBMS、OOP、操作系統等。"
 ---
 
 # CS-Fundamentals
 
-**2.0k** stars · **143** stars/天 · 建立 14 天前 · N/A · 未標註授權
+**2.0k** stars · **136** stars/天 · 建立 15 天前 · N/A · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/Krishnagangwal--CS-Fundamentals");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供計算機科學基礎知識的精選資源，幫助求職準備。
+> 提供計算機科學基礎知識的精選資源，幫助求職準備，包括資料結構、計算機網絡、DBMS、OOP、操作系統等。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (143 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 14 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 希望在求職面試中提升計算機科學基礎知識的學生和求職者。
-> **一句話重點** 這個專案提供了一個結構化的計算機科學學習資源，能夠幫助求職者高效準備面試。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (136 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 15 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 希望在技術面試中獲得優勢的求職者和計算機科學學生。
+> **一句話重點** 這個專案提供了一個集中式的計算機科學基礎知識庫，特別適合求職者在面試準備中使用。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Krishnagangwal--CS-Fundamentals");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "學習資源" && p.file.name !== "Krishnagangwal--CS-Fundamentals" && p.status !== "archived")
+>     .where(p => p.subcategory === "面試準備" && p.file.name !== "Krishnagangwal--CS-Fundamentals" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,29 +96,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 學習資源 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 面試準備 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **安裝** Easy (一行搞定)
 
-> [!abstract] 核心創新
-> 這個專案提供了一個全面且結構化的計算機科學基礎知識庫，專為求職準備而設計。
-
 ## 專案簡介
 
-這個專案是一個精心策劃的計算機科學基礎知識庫，專為求職準備而設計，涵蓋了資料結構與演算法、計算機網絡、資料庫管理系統、物件導向程式設計、作業系統、系統設計及軟體工程等主題。用戶可以通過訪問各個文件夾，獲取PDF、筆記、速查表和面試問題庫，這些都是針對求職面試的準備資料。核心賣點在於其全面性和針對性，能夠幫助求職者快速掌握關鍵知識。技術上，這個專案並不依賴特定的框架或語言，因為它主要是文件的集合，使用者只需下載並查閱即可。與其他資料庫相比，如 LeetCode 或 GeeksforGeeks，這個專案提供了更為結構化的學習路徑，並且專注於求職所需的特定知識點。
+這個專案是一個精選的計算機科學基礎知識庫，專為求職準備而設計，涵蓋資料結構與演算法、計算機網絡、資料庫管理系統（DBMS）、物件導向程式設計（OOP）、操作系統、系統設計及軟體工程等主題。使用者可以通過下載各種 PDF 和 DOCX 文件來獲取相關知識，這些文件包括筆記、面試問題集和學習資源。該專案的核心賣點在於其全面性和針對性，能夠幫助求職者在面試中準備各種技術問題。技術上，這些資源以文件形式提供，並且組織良好，便於使用者快速找到所需信息。與其他類似資源相比，如 LeetCode 或 GeeksforGeeks，這個專案的優勢在於其針對性強，特別是針對求職者的需求，並且提供了多種主題的綜合資料。
 
-使用者在面試準備過程中，能夠根據不同主題的文件進行針對性學習，這在時間有限的情況下尤為重要。儘管目前的開源社群活躍度不高，只有3個開放問題，但這也意味著使用者能夠在一個相對安靜的環境中進行學習。這個專案適合任何希望在求職過程中提升計算機科學基礎知識的學生或求職者，尤其是那些準備技術面試的人。未來6個月內，隨著求職季的來臨，這個專案可能會吸引更多的貢獻者和使用者。
+使用者在尋找特定主題的資料時，能夠更快地找到所需的文件，從而提高學習效率。這些資料的準確性和完整性取決於貢獻者的整理和更新，使用者需自行評估資料的可靠性。該專案目前處於早期階段，仍有許多改進空間，例如增加貢獻指南和開源許可證。對於希望在技術面試中獲得優勢的求職者來說，這是一個值得關注的資源。
 
 ## 重點功能
 
-- 全面的主題涵蓋 — 包含資料結構與演算法、計算機網絡、DBMS、OOP、作業系統、系統設計及軟體工程等。
-- 結構化的資料庫 — 所有資料按主題分類，方便快速查找和學習。
-- 面試問題庫 — 提供針對各主題的面試問題，幫助使用者針對性準備。
-- 速查表和筆記 — 包含多種速查表和筆記，方便快速回顧關鍵概念。
-- 開源社群 — 任何人都可以貢獻和改進資料庫，持續更新內容。
+- 全面的主題覆蓋 — 包括 DSA、計算機網絡、DBMS、OOP、操作系統等。
+- 多種文件格式 — 提供 PDF 和 DOCX 格式的筆記和問題集，方便下載和使用。
+- 精選的面試問題 — 包含針對各主題的面試問題和答案，幫助使用者針對性準備。
+- 組織良好的文件結構 — 便於使用者快速找到所需的資料。
+- 持續更新的資源 — 隨著新資料的添加，保持內容的相關性和時效性。
 
 ## 快速開始
 
@@ -126,58 +123,60 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 git clone https://github.com/Krishnagangwal/CS-Fundamentals.git
 ```
-2. 進入專案資料夾
+2. 導航到專案資料夾
 ```bash
 cd CS-Fundamentals
 ```
-3. 查閱所需資料
+3. 查看各主題資料
 ```bash
-打開相應的PDF或文檔
+ls -R
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立14天內累積2005 stars（143/天），forks 197（9.8%），顯示出穩定的增長。這個專案的作者Krishnagangwal專注於計算機科學教育，之前可能有相關的經驗或貢獻。它解決了求職者在準備面試時缺乏結構化資源的痛點，這在傳統的學習資源中往往難以找到。沒有明顯的觸發事件，但這個專案的存在恰好滿足了當前市場對於計算機科學基礎知識的需求。forks/stars 比率接近10%表示有不少人對這個專案進行了實際的修改和使用。
+> 建立 15 天內累積 2037 stars（136/天），forks 201（9.9%），這顯示出穩定的增長。作者 Krishnagangwal 似乎專注於求職準備領域，這個專案解決了求職者在準備面試時面臨的資料分散問題。之前，求職者通常需要在多個網站上尋找資料，這個專案將相關資源整合在一起，提供了一個集中式的學習平台。近期的推廣活動或社群討論可能也促進了這個專案的曝光度。forks/stars 比率接近 10%，顯示出使用者對該專案的實際修改和使用需求。
 
 ## 適合誰使用
 
-**目標受眾**：希望在求職面試中提升計算機科學基礎知識的學生和求職者。
+**目標受眾**：希望在技術面試中獲得優勢的求職者和計算機科學學生。
 
 > [!example] 使用場景
-> - 大學學生用它來準備計算機科學的面試，因為它提供了針對性的資料和問題庫，能夠快速提升面試通過率。
-> - 求職者用它來整理自己的學習資料，因為這個專案提供了結構化的筆記和速查表，能夠節省時間。
-> - 新手工程師用它來回顧計算機科學的基礎知識，因為資料涵蓋面廣且易於查找，能夠快速填補知識空白。
+> - 大學學生用它來準備計算機科學的面試，因為它提供了全面的面試問題和解答，能夠幫助他們快速掌握重點。
+> - 求職者用它來整理自己的學習資料，因為這些精選的筆記和資源能夠節省他們尋找資料的時間。
+> - 自學者用它來獲取各種計算機科學主題的基礎知識，因為它包含了多種主題的學習資源，便於系統化學習。
 
 ## 架構分析
 
-這個專案的架構非常簡單，主要由多個PDF和文檔組成，按主題分類存放。這樣的設計使得使用者能夠快速找到所需的資料，而不需要經過繁瑣的搜索過程。資料的流動主要是通過文件的下載和查閱，沒有複雜的後端或數據庫支持。選擇這種架構的代價是缺乏互動性和即時更新的能力，使用者只能依賴靜態資料。擴展性方面，由於是文件集合，未來可以通過增加新的資料夾和文件來擴展內容，但這需要社群的參與和貢獻。
+這個專案的架構是基於一個簡單的文件系統，所有資料以文件形式存儲在資料夾中。這種設計使得使用者能夠輕鬆地訪問和下載所需的資料。每個主題都有獨立的資料夾，方便使用者快速找到相關資料。
+
+這種組織方式的優點是簡單明瞭，使用者無需學習複雜的系統就能獲得所需的資訊。缺點是資料更新和維護的工作量較大，因為需要手動添加新資料和更新舊資料。整體來說，這種架構適合小型專案，但隨著資料量的增加，可能會面臨管理上的挑戰。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是將各種計算機科學主題的資料整合到一個集中式的資源庫中，這樣的設計使得使用者能夠快速找到所需的學習資料。資料的組織方式是按主題分類，這樣的結構使得學習更加有條理。儘管沒有具體的效能數據，但由於資料主要以PDF和文檔形式存在，使用者的記憶體佔用和冷啟動時間應該是相對較低的。選擇這種靜態資料的方式，雖然能夠降低維護成本，但也意味著缺乏即時更新和互動的能力。這個專案的依賴關係相對簡單，主要是文件的存取，並不涉及複雜的依賴樹。技術風險方面，由於缺乏社群活躍度，未來可能面臨資料更新不及時的問題，這會影響使用者的學習體驗。整合方面，這個專案可以與其他學習資源搭配使用，但缺乏與主流學習平台的直接整合，可能需要使用者自行管理資料。
+這個專案的核心技術機制是將計算機科學的基礎知識以文件形式整理和提供，使用者可以通過簡單的文件結構來訪問所需資料。這些資料涵蓋了多個主題，並且以 PDF 和 DOCX 格式提供，方便使用者下載和使用。資料的完整性和準確性取決於貢獻者的整理和更新，這意味著使用者需要自行評估資料的可靠性。由於資料是靜態的，這個專案無法提供互動式學習的功能，這可能會影響使用者的學習效果。整體來說，這個專案的設計適合初學者和求職者，但對於需要更深入學習的使用者來說，可能會感到不足。對於希望在技術面試中獲得優勢的求職者來說，這是一個值得關注的資源。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了資料夾結構和主題概述，但缺乏具體的使用範例。安裝過程非常順暢，只需克隆專案即可開始使用。沒有提供多語言支持，僅有英文資料。
+> README 文件清楚地列出了資料夾結構和主題內容，使用者能夠快速理解專案的目的。安裝過程非常簡單，只需克隆專案即可。雖然沒有提供詳細的入門指南，但使用者可以輕鬆找到所需的資料。文件主要以英文提供，可能對非英語使用者造成一定的障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 資料涵蓋面廣，適合多種計算機科學主題的學習。
-> - 結構化的資料庫設計，方便使用者快速查找。
-> - 開源社群，任何人都可以貢獻和改進內容。
+> - 資料整合性強，方便求職者集中準備。
+> - 涵蓋多個主題，適合不同需求的使用者。
+> - 文件格式多樣，便於下載和使用。
 
 > [!danger] 缺點
-> - 缺乏互動性，無法提供即時的問題解答。
-> - 社群活躍度低，開放問題未解決。
-> - 資料更新依賴於社群貢獻，可能不夠及時。
+> - 缺乏互動性，無法提供即時的學習反饋。
+> - 資料更新頻率不高，可能不包含最新資訊。
+> - 沒有明確的貢獻指南，對於希望參與的開發者不友好。
 
 > [!warning] 注意事項
-> - 缺乏互動性，僅提供靜態文檔。
-> - 目前社群活躍度不高，開放問題未解決。
-> - 沒有提供實時的問題解答或討論平台。
+> - 缺乏開源許可證，可能影響使用者的使用權限。
+> - 目前資料更新頻率不高，可能不包含最新的技術趨勢。
+> - 沒有提供互動式學習工具，僅限於靜態文件。
 
 ## 健康度儀表板
 
@@ -242,7 +241,7 @@ cd CS-Fundamentals
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 197 |
+| Forks | 201 |
 | Open Issues | 3 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-06-28 |
@@ -257,7 +256,7 @@ cd CS-Fundamentals
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度不高，開放問題未解決。
+**社群活躍度**：社群活躍度較低，目前只有少數開放的 Issues。
 
 ## 開發動態
 
@@ -378,17 +377,19 @@ cd CS-Fundamentals
 
 ## 延伸閱讀
 
+相關概念：[[面試準備]] · [[資料結構與演算法]] · [[計算機科學基礎]]
+
 相關專案：[[WenyuChiou--awesome-agentic-ai-zh|WenyuChiou/awesome-agentic-ai-zh]] · [[datawhalechina--Agent-Learning-Hub|datawhalechina/Agent-Learning-Hub]] · [[xuchonglang--investing-for-beginners|xuchonglang/investing-for-beginners]] · [[tvytlx--ai-agent-deep-dive|tvytlx/ai-agent-deep-dive]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]]
 
 [GitHub](https://github.com/Krishnagangwal/CS-Fundamentals)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：學習資源）
+> [!note]- 直接競品（同子分類：面試準備）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "學習資源" AND file.name != "Krishnagangwal--CS-Fundamentals"
+> WHERE subcategory = "面試準備" AND file.name != "Krishnagangwal--CS-Fundamentals"
 > SORT stars DESC
 > ```
 
@@ -396,7 +397,7 @@ cd CS-Fundamentals
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "Krishnagangwal--CS-Fundamentals"
+> WHERE category = "教學資源" AND file.name != "Krishnagangwal--CS-Fundamentals"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -416,6 +417,21 @@ cd CS-Fundamentals
 > FROM "Repos"
 > WHERE week = "2026-W27" AND file.name != "Krishnagangwal--CS-Fundamentals"
 > SORT stars DESC
+> ```
+
+> [!note]- 共用概念的相關專案
+> ```dataviewjs
+> const concepts = ["面試準備","資料結構與演算法","計算機科學基礎"];
+> const pages = dv.pages('"Repos"')
+>   .where(p => p.file.name !== "Krishnagangwal--CS-Fundamentals" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .sort(p => p.stars, "desc")
+>   .limit(5);
+> if (pages.length > 0) {
+>   dv.table(["專案", "Stars", "分類", "共用概念"], pages.map(p => {
+>     const shared = concepts.filter(c => p.file.outlinks?.some(l => l.path?.includes(c)));
+>     return [p.file.link, p.stars, p.category, shared.join(", ")];
+>   }));
+> } else { dv.paragraph("_目前沒有共用概念的相關專案_"); }
 > ```
 
 > [!note]- Ring 更高的同類競品

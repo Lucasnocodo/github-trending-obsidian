@@ -7,8 +7,8 @@ language: Python
 license: MIT
 description: "A Codex CLI jailbreak prompt and test pack for gpt-5.6-sol. 针对 gpt-5.6 系列的 Codex CLI 破甲提示词与测试包。"
 homepage: ""
-stars: 743
-stars_per_day: 372
+stars: 751
+stars_per_day: 376
 forks: 170
 open_issues: 1
 created: 2026-07-11
@@ -16,8 +16,8 @@ pushed_at: 2026-07-14
 first_seen: 2026-07-14
 week: "2026-W29"
 month: "2026-07"
-category: "其他"
-subcategory: "安全研究"
+category: "開發工具"
+subcategory: "測試"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-14
-use_case: "提供針對 gpt-5.6 系列的 Codex CLI 破甲提示詞與測試包，幫助進行安全研究與逆向工程。"
+use_case: "提供一套针对 gpt-5.6 系列的 Codex CLI 破甲提示词与测试包。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,28 +35,28 @@ next_review: "2026-07-17"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 50
-repo_size_kb: 727
+repo_size_kb: 730
 readme_length: 7547
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-14"
-star_history: "2026-07-14:743"
+star_history: "2026-07-14:743,2026-07-14:751"
 tags:
   - github
-  - "category/其他"
+  - "category/開發工具"
   - "lang/python"
   - easy_install
 aliases:
   - "gpt-5.6-instruct"
   - "MDX-Tom/gpt-5.6-instruct"
-  - "提供針對 gpt-5.6 系列的 Codex CLI 破甲提示詞與測試包，幫助進行安全研究與逆向工程。"
+  - "提供一套针对 gpt-5.6 系列的 Codex CLI 破甲提示词与测试包。"
 ---
 
 # gpt-5.6-instruct
 
-**743** stars · **372** stars/天 · 建立 2 天前 · Python · MIT
+**751** stars · **376** stars/天 · 建立 2 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/MDX-Tom--gpt-5.6-instruct");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供針對 gpt-5.6 系列的 Codex CLI 破甲提示詞與測試包，幫助進行安全研究與逆向工程。
+> 提供一套针对 gpt-5.6 系列的 Codex CLI 破甲提示词与测试包。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (372 stars/day)
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (376 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要進行安全研究和逆向工程的開發者，特別是使用 gpt-5.6 系列模型的研究人員。
-> **一句話重點** 這個專案的設計理念是提供一個高效、可靠的工具，幫助使用者在安全研究和逆向工程中達成目標。
+> **適合** 需要進行安全測試和逆向工程的開發者，特別是使用 gpt-5.6 系列模型的專業人士。
+> **一句話重點** 這個專案的設計不僅針對特定模型，還能有效提升模型在安全測試中的表現。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/MDX-Tom--gpt-5.6-instruct");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "安全研究" && p.file.name !== "MDX-Tom--gpt-5.6-instruct" && p.status !== "archived")
+>     .where(p => p.subcategory === "測試" && p.file.name !== "MDX-Tom--gpt-5.6-instruct" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,32 +96,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 安全研究 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 測試 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、3 小時整合，得到高效的安全研究工具，值得。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，3 小時整合，得到高效的測試工具，值得投入。
 
 > [!abstract] 核心創新
-> 提供了一套針對 gpt-5.6-sol 的 Codex CLI 破甲提示詞，顯著提升了安全研究的成功率。
+> 本專案提供的提示詞能有效壓制模型的拒絕回應，並在多種推理等級下達到高通過率。
 
 ## 專案簡介
 
-這個專案的核心機制是提供一套針對 gpt-5.6-sol 的 Codex CLI 破甲提示詞，旨在將安全研究、渗透測試、逆向工程等任務統一為本地沙箱任務，並壓制拒絕回應。使用者可以透過 `python3 codex-instruct.py` 指令來部署提示詞，並可選擇指定 Codex home 目錄。這樣的設計使得使用者能夠快速部署和測試提示詞，並在安全研究中獲得更高的成功率。專案的測試結果顯示，`v35` 在各種推理等級下均達到 120/120 的通過率，顯示出其在不同場景下的有效性。技術上，這個專案使用了 Python 作為主要語言，並依賴於 Codex CLI 的配置機制進行部署。
+這個專案的核心機制是提供一組針對 `gpt-5.6-sol` 的 Codex CLI 破甲提示詞，能將安全研究、渗透測試、逆向工程等任務明確化為本地沙箱任務，並壓制拒絕回應。使用者可以透過 `python3 codex-instruct.py` 指令來部署提示詞，並利用測試集進行效果評估。這裡的關鍵賣點在於其能在多種推理等級下達到高通過率，特別是 `v35` 版本在 low、medium、high 三檔均達到 120/120 的通過率，相較於前版本有顯著提升。技術上，這個專案使用了配置注入的方式來覆蓋模型指令，這樣的設計使得提示詞能夠更靈活地應對不同的請求。
 
-相較於其他類似工具，如 yynxxxxx/Codex-5.5-codex-instruct-5.5，這個專案在提示詞的優化上進行了顯著改進，特別是在低、中、高三個推理等級的表現上有明顯提升。使用者在測試過程中可以透過 `scripts/run_gpt56_sol_prompt_bank.py` 指令來執行測試，並根據測試結果進行迭代優化。這樣的設計不僅提高了測試效率，還能夠在多語言環境下進行有效的測試和評估。總體來說，這個專案的設計理念是提供一個高效、可靠的工具，幫助使用者在安全研究和逆向工程中達成目標。
+相較於其他類似工具，這個專案的優勢在於其針對性強，能有效處理多種複雜的請求，並且提供了詳細的測試和評估流程。使用者在實際運行中可能會遇到需要手動更新提示詞的情況，這需要一定的維護成本。整體來看，這是一個針對特定需求的高效工具，適合需要進行安全測試和逆向工程的開發者。未來可能會持續更新以適應新的模型版本和需求。
 
 **技術棧**：`Python 3`
 
 ## 重點功能
 
-- 高通過率測試集 — 在 120 條測試中，`v35` 在 low、medium、high 三檔均達到 120/120。
-- 多語言支持 — 提供中英文的提示詞設計，便於不同語言的使用者使用。
-- 易於部署 — 使用 `python3 codex-instruct.py` 指令快速部署提示詞。
-- 詳細的測試報告 — 每次測試都會記錄原始輸入、輸出和通過狀態，便於後續分析。
-- 版本迭代 — 提供了從 v24 到 v35 的版本更新，顯示出不斷優化的過程。
+- 高通過率測試集 — 在 low、medium、high 三檔均達到 120/120 的通過率。
+- 多語言支持 — 提供中英文的提示詞和測試集。
+- 靈活的部署方式 — 使用 `python3 codex-instruct.py` 指令進行部署，支持指定 Codex home。
+- 詳細的測試記錄 — 每條測試的原始輸入、輸出和通過狀態均有保存。
+- 版本迭代 — 提供從 v24 到 v35 的版本更新，並顯示性能提升。
 
 ## 快速開始
 
@@ -133,7 +133,7 @@ python3 codex-instruct.py --dry-run
 ```bash
 python3 codex-instruct.py
 ```
-3. 或指定 Codex home
+3. 指定 Codex home 進行部署
 ```bash
 python3 codex-instruct.py --codex-dir ~/.codex
 ```
@@ -141,63 +141,63 @@ python3 codex-instruct.py --codex-dir ~/.codex
 ## 程式碼範例
 
 ```python
-{
-  "前置條件": "需要安裝 Python 3",
-  "指令": "python3 codex-instruct.py --dry-run",
-  "預期輸出": "預覽部署的結果，無實際變更"
-}
+[
+  "# 预览部署",
+  "python3 codex-instruct.py --dry-run",
+  "# 预期输出：显示部署信息而不实际执行"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天內累積 743 stars（371.5/天），forks 170（22.9%），顯示出相對活躍的社群參與。作者 MDX-Tom 在開源社群中有一定的影響力，這個專案解決了在 gpt-5.6 系列中缺乏有效的破甲提示詞的痛點，特別是在安全研究和逆向工程領域。近期的社群討論和測試結果也引起了廣泛關注，促進了專案的快速成長。
+> 建立 2 天就累積 751 stars（375.5/天），forks 170（22.6%），這顯示出相對活躍的社群參與。作者 MDX-Tom 過去的貢獻可能為這個專案的快速成長奠定了基礎。這個專案解決了在使用 gpt-5.6 系列模型時，如何有效進行安全測試和逆向工程的痛點，之前的方案往往無法提供足夠的靈活性和效果。最近的推廣活動可能也促進了這個專案的曝光度，吸引了開發者的注意。整體來看，這個專案的增長主要是因為其針對性強且效果顯著，滿足了特定需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要進行安全研究和逆向工程的開發者，特別是使用 gpt-5.6 系列模型的研究人員。
+**目標受眾**：需要進行安全測試和逆向工程的開發者，特別是使用 gpt-5.6 系列模型的專業人士。
 
 > [!example] 使用場景
-> - 安全研究人員用它來測試 gpt-5.6 的安全性，因為它提供了高通過率的測試集，能有效評估模型的安全性。
-> - 逆向工程師用它來執行逆向任務，因為它的提示詞設計能夠有效壓制拒絕回應，提升任務成功率。
-> - 開發者用它來評估 Codex CLI 的性能，因為它提供了詳細的測試報告和評估流程，便於優化和迭代。
+> - 安全研究人員用它來測試 gpt-5.6 模型的安全性，因為它提供了高通過率的測試集，能有效評估模型的安全性。
+> - 逆向工程師用它來生成破解軟體的提示詞，因為它能明確化任務並壓制拒絕回應，提升工作效率。
+> - 開發者用它來進行渗透測試，因為它的測試流程能幫助快速評估模型在不同情境下的表現。
 
 ## 架構分析
 
-本專案採用 Python 作為主要開發語言，並利用 Codex CLI 的配置機制進行部署。架構上，專案的核心是提示詞的設計與測試，這樣的設計使得使用者能夠快速部署和測試提示詞。資料流方面，使用者透過指令部署提示詞，然後進行測試，測試結果會被記錄以便後續分析。選擇 Python 的原因在於其簡單易用，能夠快速開發和迭代。這樣的設計雖然降低了學習成本，但在性能上可能不如某些編譯語言，特別是在處理大量數據時的效率。
+本專案採用 Python 作為主要開發語言，整體架構設計為一個單一的部署腳本，方便用戶快速上手。資料流從使用者輸入提示詞開始，通過部署腳本將其寫入 Codex home，然後進行測試。這樣的設計使得使用者能夠輕鬆地進行測試和評估，代價是需要手動更新提示詞以保持最新效果。擴展性方面，該架構能夠支持未來版本的更新，但可能需要用戶手動調整配置。
 
 ## 技術深入分析
 
-專案的核心技術機制在於其提示詞的設計，這些提示詞被精心構建以適應 gpt-5.6-sol 的特性。使用者可以透過部署腳本快速上手，並在測試過程中獲得詳細的反饋。效能方面，專案在不同推理等級下的測試結果顯示出其優越性，特別是在低、中、高三個等級的通過率均達到 120/120。設計上選擇 Python 是因為其簡單易用，能夠快速開發和迭代，雖然這可能在性能上有所妥協。技術風險方面，專案依賴於 Codex CLI 的配置，若未來有重大變更，可能會影響到專案的穩定性。整合方面，專案與現有的 Codex 環境相容性良好，但對於非 Codex 使用者來說，整合可能會有一定的挑戰。
+這個專案的核心技術機制在於使用配置注入的方式來覆蓋模型指令，這使得提示詞能夠更靈活地應對不同的請求。效能方面，該專案能在多種推理等級下達到高通過率，特別是在 `gpt-5.6-sol` 模型下，通過率均達到 120/120。設計上選擇 Python 作為開發語言，這樣的選擇使得部署和使用都相對簡單，但也帶來了對於性能的依賴。技術風險方面，未來模型的更新可能會影響到提示詞的有效性，這需要持續的維護和更新。整合方面，該專案能夠與現有的 Codex 環境無縫對接，但在使用時仍需注意手動更新的需求。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件品質良好，提供了清晰的說明和範例；安裝過程相對順暢，但需要注意 Codex CLI 的配置；有良好的快速入門指南，幫助新手快速上手。
+> README 文件結構清晰，提供了詳細的使用說明和範例。安裝過程相對順暢，沒有明顯的坑。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 高通過率的測試集，能有效評估模型的安全性。
-> - 多語言支持，方便不同語言的使用者使用。
-> - 快速部署，使用者能夠迅速上手。
+> - 高通過率的測試集，能有效評估模型性能。
+> - 靈活的部署方式，適合不同環境的使用。
+> - 多語言支持，能滿足不同語言使用者的需求。
 
 > [!danger] 缺點
-> - 僅支援 Python 3 環境，限制了使用者的選擇。
-> - 需要 Codex CLI 的正確配置，對新手來說可能有一定的學習曲線。
-> - 不適用於非安全研究的場景，功能範圍有限。
+> - 需要手動更新提示詞，維護成本較高。
+> - 僅支持特定模型，對其他模型的兼容性差。
+> - 測試集的有效性依賴於模型的更新，可能隨著時間變化。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3 環境
-> - 需要 Codex CLI 的正確配置
-> - 不適用於非安全研究的場景
+> - 需要手動更新提示詞以保持最新效果。
+> - 僅支持 gpt-5.6 系列模型，對於其他模型可能無法正常運行。
+> - 測試集的有效性依賴於模型的更新，可能隨著模型版本的變化而變化。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [yynxxxxx/Codex-5.5-codex-instruct-5.5](https://github.com/yynxxxxx/Codex-5.5-codex-instruct-5.5) | 這個專案在提示詞的優化上進行了顯著改進，特別是在低、中、高三個推理等級的表現上有明顯提升。 |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 AI agent 的開發，而本專案專注於安全研究和逆向工程，功能範圍不同。 |
+| [yynxxxxx/Codex-5.5-codex-instruct-5.5](https://github.com/yynxxxxx/Codex-5.5-codex-instruct-5.5) | 這個工具是本專案的前身，主要針對 gpt-5.5 系列模型，性能和功能上不如本專案。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這是一個針對安全研究的工具，但缺乏本專案的測試集和評估流程，使用上不夠靈活。 |
 
 ## 替代方案決策
 
@@ -205,16 +205,16 @@ python3 codex-instruct.py --codex-dir ~/.codex
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [yynxxxxx/Codex-5.5-codex-instruct-5.5](https://github.com/yynxxxxx/Codex-5.5-codex-instruct-5.5) | 使用相似的提示詞設計，但在性能上不如本專案的 v35。 | 如果你需要一個較為成熟的版本，且不需要最新的性能提升。 | low，因為提示詞結構相似。 |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 AI agent 的開發，而本專案專注於安全研究和逆向工程，功能範圍不同。 | 如果你的目標是開發 AI agent，而非進行安全研究。 | medium，因為功能和目的差異較大。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於自動化生成代理，但缺乏本專案的針對性和測試集。 | 如果需要一個更通用的代理生成工具，而不僅僅是針對 gpt-5.6 的測試。 | medium，因為需要重新調整測試流程和提示詞結構。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 這是一個針對多代理的測試工具，但在功能上不如本專案全面。 | 如果需要針對多個模型進行測試，而不僅僅是 gpt-5.6。 | high，因為需要重新設計測試集和流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **gpt-5.6-instruct** | **Codex-5.5-codex-instruct-5.5** | **agent-sprite-forge** |
+> | 維度 | **gpt-5.6-instruct** | **agent-sprite-forge** | **Duel-Agents** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用相似的提示詞設計，但在性能上不如本專案的 v35。 | 專注於 AI agent 的開發，而本專案專注於安全研究和逆向工程，功能範圍不同。 |
-> | 遷移成本 | - | low，因為提示詞結構相似。 | medium，因為功能和目的差異較大。 |
-> | 適用場景 | 主要場景 | 如果你需要一個較為成熟的版本，且不需要最新的性能提升。 | 如果你的目標是開發 AI agent，而非進行安全研究。 |
+> | 技術路線 | 本專案 | 這個工具專注於自動化生成代理，但缺乏本專案的針對性和測試集。 | 這是一個針對多代理的測試工具，但在功能上不如本專案全面。 |
+> | 遷移成本 | - | medium，因為需要重新調整測試流程和提示詞結構。 | high，因為需要重新設計測試集和流程。 |
+> | 適用場景 | 主要場景 | 如果需要一個更通用的代理生成工具，而不僅僅是針對 gpt-5 | 如果需要針對多個模型進行測試，而不僅僅是 gpt-5.6。 |
 
 ## 成熟度評估
 
@@ -222,46 +222,46 @@ python3 codex-instruct.py --codex-dir ~/.codex
 | --- | --- |
 | 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，但不建議用在生產環境的核心路徑上。
+> 適合個人測試和研究，但不建議用於生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] README 標註 v35，但壓縮包仍是 v24，可能導致使用者混淆。
-  - 解法：確保下載最新的提示詞包，並檢查版本號。
-- **[HIGH]** 在某些環境下，Codex CLI 配置可能不正確，導致部署失敗。
-  - 解法：仔細檢查 Codex CLI 的安裝和配置，必要時重新安裝。
-- [MEDIUM] 測試結果可能因環境不同而有所差異，影響測試的可靠性。
-  - 解法：在相同環境下進行測試，以確保結果的一致性。
+- **[HIGH]** 測試集可能隨著模型更新而失效，需定期檢查。
+  - 解法：定期更新提示詞和測試集以保持有效性。
+- [MEDIUM] 手動更新提示詞可能導致版本不一致。
+  - 解法：建立版本控制流程以確保一致性。
+- [MEDIUM] 對於非 gpt-5.6 模型的支持不足。
+  - 解法：考慮使用其他工具或手動調整提示詞。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型安全研究團隊進行模型測試 | 非常適合 | 專案提供高通過率的測試集，能有效評估模型的安全性。 |
-| 大型企業的安全部門進行逆向工程 | 適合 | 提供了詳細的測試報告和評估流程，便於優化和迭代。 |
-| 個人開發者進行非安全研究的項目 | 不適合 | 專案主要針對安全研究和逆向工程，功能範圍有限。 |
+| 需要進行安全測試的企業團隊 | 非常適合 | 提供高效的測試集和評估流程，能快速評估模型的安全性。 |
+| 個人開發者進行逆向工程 | 適合 | 能夠生成針對性的提示詞，提升工作效率。 |
+| 大型企業的安全研究部門 | 普通 | 雖然功能強大，但維護成本較高，可能不符合大型團隊的需求。  |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
+| 學習時間 | ~2 小時 |
 | 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、3 小時整合，得到高效的安全研究工具，值得。
+> 花 2 小時學習，3 小時整合，得到高效的測試工具，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：專案本身不需要高權限，且不存取敏感資料；依賴鏈的信任程度良好，無已知的供應鏈風險。
+> 低風險：該工具不需要高權限，且不存取敏感資料，使用時需注意依賴鏈的安全性。
 
 ## 健康度儀表板
 
@@ -331,7 +331,7 @@ python3 codex-instruct.py --codex-dir ~/.codex
 | Issue 解決率 | 50% (1 closed) |
 | 最後推送 | 2026-07-14 |
 | 建立日期 | 2026-07-11 |
-| Repo 大小 | 727 KB |
+| Repo 大小 | 730 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/MDX-Tom/gpt-5.6-instruct) |
 
 > [!info]- 主要貢獻者
@@ -341,7 +341,7 @@ python3 codex-instruct.py --codex-dir ~/.codex
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，近期有持續的提交與討論。
+**社群活躍度**：社群活躍度中等，最近有 2 天的活躍提交。
 
 ## 開發動態
 
@@ -549,17 +549,17 @@ python3 codex-instruct.py --codex-dir ~/.codex
 
 相關概念：[[安全漏洞]] · [[逆向工程]] · [[自動化測試]]
 
-相關專案：[[yynxxxxx--Codex-5.5-codex-instruct-5.5|yynxxxxx/Codex-5.5-codex-instruct-5.5]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[DanOps-1--Gpt-Agreement-Payment|DanOps-1/Gpt-Agreement-Payment]] · [[Mouseww--anything-analyzer|Mouseww/anything-analyzer]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]]
+相關專案：[[yynxxxxx--Codex-5.5-codex-instruct-5.5|yynxxxxx/Codex-5.5-codex-instruct-5.5]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[DuskMosquito--Lossless-Scaling-Desktop-2026|DuskMosquito/Lossless-Scaling-Desktop-2026]] · [[DanOps-1--Gpt-Agreement-Payment|DanOps-1/Gpt-Agreement-Payment]] · [[Mouseww--anything-analyzer|Mouseww/anything-analyzer]]
 
 [GitHub](https://github.com/MDX-Tom/gpt-5.6-instruct)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：安全研究）
+> [!note]- 直接競品（同子分類：測試）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "安全研究" AND file.name != "MDX-Tom--gpt-5.6-instruct"
+> WHERE subcategory = "測試" AND file.name != "MDX-Tom--gpt-5.6-instruct"
 > SORT stars DESC
 > ```
 
@@ -567,7 +567,7 @@ python3 codex-instruct.py --codex-dir ~/.codex
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "MDX-Tom--gpt-5.6-instruct"
+> WHERE category = "開發工具" AND file.name != "MDX-Tom--gpt-5.6-instruct"
 > SORT stars DESC
 > LIMIT 8
 > ```
