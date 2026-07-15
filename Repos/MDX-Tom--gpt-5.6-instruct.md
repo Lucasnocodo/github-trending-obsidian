@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "A Codex CLI jailbreak prompt and test pack for gpt-5.6-sol. 针对 gpt-5.6 系列的 Codex CLI 破甲提示词与测试包。"
 homepage: ""
-stars: 751
-stars_per_day: 376
-forks: 170
-open_issues: 1
+stars: 1060
+stars_per_day: 353
+forks: 209
+open_issues: 3
 created: 2026-07-11
-pushed_at: 2026-07-14
+pushed_at: 2026-07-15
 first_seen: 2026-07-14
 week: "2026-W29"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "提供一套针对 gpt-5.6 系列的 Codex CLI 破甲提示词与测�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-17"
+appearances: 2
+next_review: "2026-07-18"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-14"
-star_history: "2026-07-14:743,2026-07-14:751"
+star_history: "2026-07-14:743,2026-07-14:751,2026-07-15:1060"
 tags:
   - github
   - "category/開發工具"
@@ -845,4 +845,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-15|2026-07-15]] — 再次上榜，1.1k stars
 - [[2026-07-14|2026-07-14]] — 首次收錄，743 stars

@@ -1,23 +1,23 @@
 ---
-repo: x4gKing/3x-ui-Upgrade
-url: https://github.com/x4gKing/3x-ui-Upgrade
+repo: x4gKing/Marzban-Panel
+url: https://github.com/x4gKing/Marzban-Panel
 owner: x4gKing
 owner_type: User
-language: HTML
+language: Dockerfile
 license: N/A
 description: ""
 homepage: ""
-stars: 1028
-stars_per_day: 171
-forks: 2102
+stars: 672
+stars_per_day: 336
+forks: 1174
 open_issues: 1
-created: 2026-07-08
-pushed_at: 2026-07-11
-first_seen: 2026-07-12
+created: 2026-07-12
+pushed_at: 2026-07-13
+first_seen: 2026-07-15
 week: "2026-W29"
 month: "2026-07"
 category: "基礎設施"
-subcategory: "容器化"
+subcategory: "部署工具"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -25,41 +25,41 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-07-12
-use_case: "提供一個整合的 Heimdall 面板，透過單一端口在 Railway 上運行。"
+last_reviewed: 2026-07-15
+use_case: "提供一個簡化的 Marzban 部署面板，透過 Docker 自動獲取最新源碼。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-07-22"
+appearances: 1
+next_review: "2026-07-18"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 0
-repo_size_kb: 24
-readme_length: 2483
+repo_size_kb: 7
+readme_length: 1498
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-07-12"
-star_history: "2026-07-12:803,2026-07-13:894,2026-07-14:964,2026-07-15:1028"
+ring_history: "assess@2026-07-15"
+star_history: "2026-07-15:672"
 tags:
   - github
   - "category/基礎設施"
-  - "lang/html"
+  - "lang/dockerfile"
   - easy_install
 aliases:
-  - "3x-ui-Upgrade"
-  - "x4gKing/3x-ui-Upgrade"
-  - "提供一個整合的 Heimdall 面板，透過單一端口在 Railway 上運行。"
+  - "Marzban-Panel"
+  - "x4gKing/Marzban-Panel"
+  - "提供一個簡化的 Marzban 部署面板，透過 Docker 自動獲取最新源碼。"
 ---
 
-# 3x-ui-Upgrade
+# Marzban-Panel
 
-**803** stars · **268** stars/天 · 建立 3 天前 · HTML · 未標註授權
+**672** stars · **336** stars/天 · 建立 2 天前 · Dockerfile · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/x4gKing--3x-ui-Upgrade");
+const me = dv.page("Repos/x4gKing--Marzban-Panel");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供一個整合的 Heimdall 面板，透過單一端口在 Railway 上運行。
+> 提供一個簡化的 Marzban 部署面板，透過 Docker 自動獲取最新源碼。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (268 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 需要在 Railway 上快速部署 Heimdall 面板的開發者和小型團隊。
-> **一句話重點** 這個專案的設計理念在於簡化 Heimdall 面板的部署，讓開發者能夠更快速地上手。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (336 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
+> **適合** 需要快速部署 Marzban 並希望自動獲取最新版本的開發者。
+> **一句話重點** 這個專案透過自動化的方式，讓 Marzban 的部署變得前所未有的簡單。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/x4gKing--3x-ui-Upgrade");
+> const me = dv.page("Repos/x4gKing--Marzban-Panel");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "容器化" && p.file.name !== "x4gKing--3x-ui-Upgrade" && p.status !== "archived")
+>     .where(p => p.subcategory === "部署工具" && p.file.name !== "x4gKing--Marzban-Panel" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,116 +96,113 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 容器化 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 部署工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、3 小時整合，得到簡單的 Heimdall 面板部署，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，1 小時整合，得到快速部署的效果，值得嘗試。
 
 > [!abstract] 核心創新
-> 透過單一端口在 Railway 上簡化 Heimdall 面板的部署流程。
+> 透過 Docker 自動獲取最新的 Marzban 源碼，簡化部署流程。
 
 ## 專案簡介
 
-這個專案是對 3x-ui 的一個改良版，主要用於在 Railway 上部署 Heimdall 面板，並通過 Nginx 反向代理來整合多個服務。使用者只需將 Dockerfile、nginx.conf.template 和 start.sh 放入新建的 GitHub 倉庫，然後在 Railway 上進行部署，系統會自動處理依賴和建置過程。這樣的設計讓使用者能夠在單一端口上訪問所有功能，簡化了配置和管理的複雜性。這個專案的賣點在於其簡單的部署流程和對 SQLite 的支持，適合小型用戶群體。技術上，它使用 Docker 來容器化應用，並利用 Nginx 作為反向代理，這樣可以有效管理流量和安全性。
+Marzban Panel 是一個基於 Docker 的應用，專門用來簡化 Marzban 的部署過程。用戶只需在 Railway 上創建新專案，系統會自動從 Gozargah/Marzban 克隆最新源碼，並構建出可用的面板。這種方法的優勢在於，使用者始終可以獲得最新版本的 Marzban，避免了手動更新的麻煩，並且保持了儲存庫的輕量化。安裝過程中，用戶可以選擇設置管理員帳號，並且可以輕鬆切換資料庫到 Postgres。這樣的設計使得部署過程簡單且高效，特別適合需要快速上線的開發者。
 
-與其他類似工具相比，如 0x0funky/agent-sprite-forge，這個專案的優勢在於其簡化的配置和單一端口的設計，適合不需要高負載的環境。對於需要更高用戶數的情況，則可考慮切換到 Postgres，但這需要額外的配置。使用者在使用過程中可能會遇到資料存儲在臨時文件系統的問題，這需要通過設置持久化卷來解決。整體來看，這個專案目前處於早期階段，適合小型團隊或個人使用，但在高負載情況下可能需要進一步的調整和優化。
+值得注意的是，這個專案的 Dockerfile 會在每次構建時自動拉取最新的 Marzban 源碼，這意味著用戶不需要擔心過時的代碼問題。相較於傳統的手動部署方式，這樣的自動化流程大大降低了出錯的風險。這個工具的賣點在於其簡單易用和自動更新的特性，特別適合小型團隊或個人開發者使用。使用者只需在 Railway 上進行簡單的設置，即可快速啟動服務，這使得它在快速迭代的開發環境中非常受歡迎。
 
-**技術棧**：`Docker` · `Nginx` · `SQLite`
+**技術棧**：`Docker` · `Shell`
 
 ## 重點功能
 
-- 單一端口訪問 — 透過 Nginx 反向代理，所有服務均可通過同一端口訪問，簡化配置。
-- SQLite 支持 — 預設使用 SQLite 作為資料庫，適合小型用戶群體，無需額外配置。
-- Docker 化部署 — 使用 Dockerfile 進行容器化，簡化了部署過程。
-- 自動化建置 — 在 Railway 上自動識別 Dockerfile 並進行建置，減少手動操作。
-- 簡單的 Inbound 配置 — 提供清晰的指導來設置 VLESS 協議的 Inbound，易於上手。
+- 自動克隆最新源碼 — 每次構建時自動從 Gozargah/Marzban 克隆最新版本。
+- 簡單的 Railway 部署 — 只需幾個步驟即可在 Railway 上完成部署。
+- 輕量化儲存庫 — 只需維護少量文件，避免了冗餘的源碼。
+- 可選的資料庫配置 — 支援 SQLite 和 Postgres，靈活滿足不同需求。
+- 自動管理員帳號創建 — 設置環境變數即可自動創建管理員帳號。
 
 ## 快速開始
 
-1. 建立 GitHub 倉庫並上傳必要文件
+1. Fork 這個專案到你的 GitHub
 ```bash
-將 Dockerfile、nginx.conf.template 和 start.sh 放入新建的 GitHub 倉庫
+N/A
 ```
-2. 在 Railway 上部署專案
+2. 在 Railway 上創建新專案並選擇 Fork 的專案
 ```bash
-選擇 'New Project → Deploy from GitHub repo' 並選擇該倉庫
+N/A
 ```
-3. 設置網絡配置
+3. 設置環境變數以創建管理員帳號
 ```bash
-在 Settings → Networking 中生成域名並確保 Target Port 設置為 3000
+N/A
+```
+4. 等待構建完成
+```bash
+N/A
 ```
 
 ## 程式碼範例
 
-```html
-# 前置條件
-# 使用者需在 Railway 上創建專案並部署
-
-# 設置 Inbound
-| 協議 | VLESS |
-|---|---|
-| **Listen Port** | **`8080`** |
-| Listen IP | 空或 `0.0.0.0` |
-| Network | ws |
-| Security | none |
-| Path | 任意路徑，例如 `/cdn` |
+```dockerfile
+{
+  "前置條件": "已在 Railway 上創建專案並選擇 Fork 的專案。",
+  "指令": "marzban-cli admin create --sudo",
+  "預期輸出": "創建成功的管理員帳號。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天內累積 803 stars（267.7/天），forks 1645（204.9%），這顯示出極高的使用興趣。作者 x4gKing 在這個領域有一定的經驗，這個專案解決了在 Railway 上部署 Heimdall 面板的需求，之前的解決方案往往需要多個端口或複雜的配置。這個專案的簡化流程和單一端口設計吸引了許多開發者的注意，尤其是在社群中引發了討論。技術上，Docker 和 Nginx 的組合使得這個工具在現有生態中非常實用，特別是對於需要快速部署的開發者來說。forks/stars 比率高達 204.9%，顯示出許多人在積極修改和使用這個專案。
+> 建立 2 天內累積 672 stars（336/天），forks 1174（174.7%），這顯示出極高的使用興趣。作者 x4gKing 以簡化部署流程為目標，解決了傳統手動更新的繁瑣問題，這在開發者社群中引起了廣泛關注。由於其自動獲取最新源碼的特性，讓許多開發者感受到便利，特別是在快速迭代的環境中。這個專案的成功也反映了現代開發中對於自動化和簡化流程的需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Railway 上快速部署 Heimdall 面板的開發者和小型團隊。
+**目標受眾**：需要快速部署 Marzban 並希望自動獲取最新版本的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來在 Railway 上快速部署 Heimdall 面板，因為這樣可以簡化配置過程，並且只需使用單一端口。
-> - 小型團隊用它來管理用戶訂閱和流量，因為它支持 SQLite，適合用戶數量不高的情況。
-> - DevOps 工程師用它來測試 Nginx 反向代理的配置，因為這個專案提供了現成的範例和配置文件，節省了時間。
+> - 後端工程師用它來在 Railway 上快速部署 Marzban，因為這樣可以省去手動更新的麻煩，並且保持系統的最新狀態。
+> - DevOps 工程師用它來簡化 Marzban 的安裝過程，因為只需幾個步驟就能完成部署，並且能夠輕鬆管理環境變數。
+> - 獨立開發者用它來測試 Marzban 的功能，因為這個工具的輕量化設計讓他們能夠快速上手，而不需要深入了解底層架構。
 
 ## 架構分析
 
-這個專案採用 Docker 和 Nginx 的組合來實現單一端口的服務訪問。Docker 負責容器化應用，確保環境的一致性，而 Nginx 則作為反向代理來管理流量。這樣的設計使得使用者能夠在 Railway 上輕鬆部署，並且能夠在同一端口上訪問多個服務。
-
-選擇 SQLite 作為資料庫的理由是其輕量和易於設置，但這也限制了用戶數量的擴展性。整體架構的擴展性在於可以隨時切換到 Postgres，但這需要額外的配置和調整。這樣的設計雖然簡化了初始部署，但在高負載情況下可能會面臨性能瓶頸。
+Marzban Panel 採用 Docker 作為主要架構，這意味著所有的依賴和應用都被封裝在容器中，方便部署和管理。資料流方面，使用者在 Railway 上創建專案後，系統會自動從 Gozargah/Marzban 克隆源碼，然後構建面板。這樣的設計使得用戶不需要手動更新源碼，降低了出錯的風險。選擇 Docker 的好處在於其可攜性和一致性，但代價是需要用戶具備一定的 Docker 知識。整體架構的擴展性良好，因為只需更新 Dockerfile 即可獲得最新功能。
 
 ## 技術深入分析
 
-這個專案的核心技術在於使用 Docker 來容器化應用，這樣可以確保在不同環境下的部署一致性。Nginx 作為反向代理，不僅能夠管理流量，還能提供 SSL 支持，這對於安全性至關重要。效能方面，這個專案在小型用戶群體中表現良好，但在高負載情況下可能會遇到瓶頸，特別是當使用 SQLite 作為資料庫時。設計上選擇 Docker 和 Nginx 是基於其廣泛的使用和社群支持，但這也意味著對於不熟悉這些技術的使用者來說，可能需要一定的學習成本。技術風險方面，若未來需要擴展到更多用戶，則需要重新考慮資料庫的選擇，這可能會引入額外的技術債。整合方面，這個專案與現有的 CI/CD 流程相容性良好，能夠輕鬆地融入到現有的開發工作流中。
+Marzban Panel 的核心技術機制是基於 Docker 的容器化部署，這使得應用的安裝和更新過程變得極為簡單。使用者只需在 Railway 上創建專案，系統會自動從 Gozargah/Marzban 克隆源碼，並構建出可用的面板。這樣的設計不僅降低了手動操作的錯誤率，還能確保用戶始終使用最新版本的 Marzban。效能方面，因為使用 Docker，冷啟動時間和資源佔用都相對較低，適合小型應用和快速部署的需求。選擇 Docker 作為主要技術棧的好處在於其可攜性和一致性，但也要求用戶具備一定的 Docker 知識。技術風險方面，若未來 Marzban 的更新頻繁，可能需要不斷調整 Dockerfile，以保持與最新版本的兼容性。整合方面，與主流的 CI/CD 工具如 GitHub Actions 的相容性良好，但在其他平台的整合可能會遇到挑戰。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的部署步驟和必要的配置，但缺乏詳細的範例。安裝過程相對順暢，但需要注意資料持久化的設置。沒有提供多語言支持，對於非英語使用者可能會造成障礙。
+> README 文件提供了基本的安裝步驟，但缺乏詳細的範例和說明。安裝過程相對簡單，無需複雜的配置。整體上，對於有基本 Docker 知識的用戶來說，能在 30 分鐘內完成部署。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡化的部署流程，適合初學者。
-> - 單一端口設計，減少了配置複雜性。
-> - 使用 Docker 化管理，確保環境一致性。
+> - 自動獲取最新源碼，避免過時問題。
+> - 簡化的部署流程，適合快速上線。
+> - 輕量化設計，減少儲存空間需求。
 
 > [!danger] 缺點
-> - 僅支持 SQLite，對於高用戶數不夠靈活。
-> - 資料存儲在臨時文件系統，需設置持久化卷。
-> - 對於其他協議的支持有限。
+> - 僅限於 Railway 平台，無法在其他環境使用。
+> - 對 Docker 知識有一定要求，可能對新手不友好。
+> - 目前支援的資料庫選擇有限。
 
 > [!warning] 注意事項
-> - 僅支持 SQLite，對於高用戶數需要手動切換到 Postgres。
-> - 資料存儲在臨時文件系統，需設置持久化卷以防止資料丟失。
-> - 目前僅支持 VLESS 協議，對於其他協議的支持需要額外配置。
+> - 僅支援 Railway 環境，無法在其他平台直接使用。
+> - 目前僅支援 SQLite 和 Postgres，對於其他資料庫的支援有限。
+> - 需要對 Docker 有基本了解，否則可能無法順利部署。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於代理服務的管理，但需要多個端口配置，對於小型用戶來說較為複雜。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具提供了更高級的用戶管理功能，但部署過程相對繁瑣，適合需要高級功能的用戶。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的自動化部署功能，但專注於不同的應用場景。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 針對特定需求的部署工具，功能上比 Marzban Panel 更為專一。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 提供多代理的管理功能，適合需要多實例管理的用戶。 |
 
 ## 替代方案決策
 
@@ -213,16 +210,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體用量少 10 倍，但配置過程較為複雜。 | 如果你的團隊已經在用 Rust 並需要高效能的代理服務。 | medium，因為需要重新學習 Rust 的相關知識。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更高級的用戶管理功能，但部署過程相對繁瑣。 | 如果需要更強大的用戶管理和分析功能。 | high，因為需要重新設計整個架構。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體用量較少，但生態系統不如 Docker 豐富。 | 如果你的團隊已經在使用 Rust 並希望減少資源消耗。 | medium，因為需要重新適應 Rust 的生態。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於特定功能的部署工具，提供更細緻的配置選項。 | 如果需要高度自定義的部署選項，而不僅僅是簡單的自動化。 | high，因為需要重新設計整個部署流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **3x-ui-Upgrade** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **Marzban-Panel** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量少 10 倍，但配置過程較為複雜。 | 提供更高級的用戶管理功能，但部署過程相對繁瑣。 |
-> | 遷移成本 | - | medium，因為需要重新學習 Rust 的相關知識。 | high，因為需要重新設計整個架構。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在用 Rust 並需要高效能的代理服務。 | 如果需要更強大的用戶管理和分析功能。 |
+> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量較少，但生態系統不如 Docker 豐富。 | 專注於特定功能的部署工具，提供更細緻的配置選項。 |
+> | 遷移成本 | - | medium，因為需要重新適應 Rust 的生態。 | high，因為需要重新設計整個部署流程。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Rust 並希望減少資源消耗。 | 如果需要高度自定義的部署選項，而不僅僅是簡單的自動化。 |
 
 ## 成熟度評估
 
@@ -233,50 +230,47 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人測試和小型專案，不建議用於生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 資料存儲在臨時文件系統，重新部署後會丟失設定
-  - 解法：設置持久化卷以保存資料
-- [MEDIUM] 未來需要切換到 Postgres 時需手動修改 Dockerfile
-  - 解法：提前規劃資料庫的選擇，避免後期修改
-- [MEDIUM] 對於不熟悉 Docker 和 Nginx 的使用者，可能會有學習曲線
-  - 解法：參考官方文檔和社群資源
+- [MEDIUM] 在 Railway 上部署時，可能會遇到 Docker build 時間過長的問題。
+  - 解法：確保使用最新的 Docker 版本，並檢查網路連接。
+- **[HIGH]** 環境變數未正確設置可能導致管理員帳號創建失敗。
+  - 解法：仔細檢查環境變數設置，確保 SUDO_USERNAME 和 SUDO_PASSWORD 正確配置。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的內部管理系統 | 非常適合 | 簡化的部署流程和單一端口設計使其易於管理。 |
-| 需要高用戶數的商業應用 | 不適合 | 目前僅支持 SQLite，無法滿足高負載需求。 |
-| 個人開發者的實驗性專案 | 非常適合 | 快速上手且配置簡單，適合測試新功能。 |
-| 大型企業的核心系統 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
+| 小型團隊的 Marzban 部署 | 非常適合 | 自動化的部署流程大大降低了上手難度。 |
+| 需要快速迭代的開發環境 | 非常適合 | 能夠隨時獲取最新版本，適合快速變化的需求。 |
+| 大型企業的生產環境 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
-| 維護負擔 | medium |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~1 小時 |
+| 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、3 小時整合，得到簡單的 Heimdall 面板部署，值得一試。
+> 花 2 小時學習，1 小時整合，得到快速部署的效果，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，僅在容器內部運行，且不存取敏感資料。依賴鏈的信任程度尚可，但需注意 Docker 的安全性。
+> 低風險：此工具不需要高權限，且不會存取敏感資料，適合在 CI/CD pipeline 中使用。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/x4gKing--3x-ui-Upgrade");
+> const me = dv.page("Repos/x4gKing--Marzban-Panel");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -311,7 +305,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/x4gKing--3x-ui-Upgrade");
+> const me = dv.page("Repos/x4gKing--Marzban-Panel");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -335,118 +329,89 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 1.6k |
+| Forks | 1.2k |
 | Open Issues | 1 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-07-11 |
-| 建立日期 | 2026-07-08 |
-| Repo 大小 | 24 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/x4gKing/3x-ui-Upgrade) |
+| 最後推送 | 2026-07-13 |
+| 建立日期 | 2026-07-12 |
+| Repo 大小 | 7 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/x4gKing/Marzban-Panel) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "HTML" : 93
->     "Dockerfile" : 4
->     "Shell" : 3
+>     "Dockerfile" : 67
+>     "Shell" : 33
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@x4gKing](https://github.com/x4gKing) | 6 |
+> | [@x4gKing](https://github.com/x4gKing) | 3 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放的 issue 數量顯示出使用者有實際的問題需要解決。
+**社群活躍度**：社群活躍度中等，目前有 1 個開放的 Issue。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-08 ~ 2026-07-11）
-> **活躍天數** 3 天 · **最新 commit** Update README.md
+> [!abstract] 最近 10 次 commit（2026-07-12 ~ 2026-07-13）
+> **活躍天數** 2 天 · **最新 commit** Update README.md
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> #  (3x-ui fork) روی Railway با یک پورت واحد
+> # 🚀 Marzban Panel روی Railway (روش PasarGuard)
 > 
-> این ریپازیتوری، پنل Heimdall (نسخه‌ی بهبودیافته‌ی 3x-ui از sh7CBAC) را به همراه یک nginx reverse proxy اجرا می‌کند که پنل، ساب‌اسکریپشن و اینباند VLESS/WebSocket را از طریق **یک پورت واحد** (همان پورتی که Railway اختصاص می‌دهد) در دسترس می‌گذارد — دقیقاً همون معماری که برای x4gKing/3x-ui-Upgrade ساختیم و تست شد.
+> این ریپازیتوری دقیقاً به همان روش ریپازیتوری `PasarGuard` ساخته شده:
+> به‌جای اینکه سورس Marzban را داخل ریپو کپی (vendor) کنیم، `Dockerfile` در
+> لحظه‌ی build خودش سورس رسمی را از
+> [`Gozargah/Marzban`](https://github.com/Gozargah/Marzban) کلون می‌کند،
+> داشبورد را می‌سازد، Xray را نصب می‌کند و ایمیج نهایی را می‌سازد.
 > 
-> ## درباره‌ی دیتابیس
+> مزیت این روش نسبت به کپی‌کردن سورس داخل ریپو:
+> - همیشه آخرین نسخه‌ی Marzban را می‌گیرید (هیچ فایلی "جا نمی‌ماند" یا قدیمی نمی‌شود).
+> - حجم ریپوی شما خیلی کوچک می‌ماند (فقط چند فایل دیپلوی).
+> - آپدیت گرفتن از آپستریم = فقط دوباره Deploy کردن روی Railway.
 > 
-> Heimdall به‌صورت پیش‌فرض از **SQLite** استفاده می‌کند (نیازی به Postgres نیست، مگر بخواهید تعداد کاربر خیلی بالایی داشته باشید). این نسخه با همان تنظیم پیش‌فرض ساده (SQLite) پیکربندی شده.
+> ## نصب
 > 
-> ## مراحل دیپلوی
+> 1. این ریپو را در گیت‌هاب خودتان Fork کنید.
+> 2. در Railway: **New Project → Deploy from GitHub Repo** و ریپوی فورک‌شده را انتخاب کنید.
+> 3. صبر کنید تا Build تمام شود (به‌خاطر build گرفتن از داشبورد، کمی طول می‌کشد).
+> 4. (اختیاری ولی پیشنهادی) در تب **Variables** این دو متغیر را اضافه کنید تا اولین ادمین
+>    به‌صورت خودکار ساخته شود:
+>    - `SUDO_USERNAME`
+>    - `SUDO_PASSWORD`
 > 
-> ### ۱. ریپازیتوری بسازید
-> یک ریپازیتوری جدید در گیت‌هاب بسازید و این سه فایل را در ریشه‌ی آن قرار دهید:
-> - `Dockerfile`
-> - `nginx.conf.template`
-> - `start.sh`
+>    اگر تنظیم نکنید، بعداً از Console سرویس همین دستور را بزنید:
+>    ```bash
+>    marzban-cli admin create --sudo
+>    ```
+> 5. دیتابیس پیش‌فرض SQLite است. اگر می‌خواهید از Postgres پلاگین Railway استفاده کنید،
+>    متغیر `SQLALCHEMY_DATABASE_URL` را در Variables ست کنید.
 > 
-> ### ۲. در Railway
-> 1. **New Project → Deploy from GitHub repo** و همین ریپازیتوری را انتخاب کنید
-> 2. Railway به‌طور خودکار `Dockerfile` را تشخیص و بیلد می‌کند (دانلود آخرین نسخه‌ی Heimdall از گیت‌هاب به‌صورت خودکار در زمان Build انجام می‌شود)
-> 3. بعد از اتمام دیپلوی، به **Settings → Networking** بروید و **Generate Domain** بزنید
-> 4. مطمئن شوید **Target Port روی 3000** تنظیم شده (چون nginx دقیقاً روی همین پورت گوش می‌دهد)
+> ## نکات
 > 
-> ### ۳. اولین ورود به پنل
-> ```
-> https://دامنه‌شما.up.railway.app/managepanel/
-> ```
-> یوزرنیم/پسورد پیش‌فرض `admin`/`admin` را وارد کنید و بلافاصله از تنظیمات پنل تغییرش دهید.
-> 
-> ### ۴. ساخت Inbound
-> 
-> | فیلد | مقدار |
-> |---|---|
-> | Protocol | VLESS |
-> | **Listen Port** | **`8080`** (این عدد ثابت است) |
-> | Listen IP | خالی یا `0.0.0.0` |
-> | Network | ws |
-> | Security | none |
-> | Path | هر مسیر دلخواه، مثلاً `/cdn` |
-> 
-> ### ۵. ساخت لینک کلاینت
-> 
-> ```
-> vless://UUID@دامنه‌شما.up.railway.app:443?encryption=none&security=tls&sni=دامنه‌شما.up.railway.app&fp=chrome&type=ws&host=دامنه‌شما.up.railway.app&path=%2Fcdn#MyConfig
-> ```
-> 
-> ### ۶. لینک ساب‌اسکریپشن
-> 
-> مسیر ساب به‌صورت خودکار زیر همین دامنه در دسترس است:
-> ```
-> https://دامنه‌شما.up.railway.app/sub/USER_SUB_ID
-> ```
-> 
-> ## تست سریع
-> 
-> ```
-> https://دامنه‌شما.up.railway.app/managepanel/   ← باید پنل را نشان دهد
-> https://دامنه‌شما.up.railway.app/cdn            ← باید "Bad Request" بدهد (یعنی به Xray رسیده)
-> ```
-> 
-> ## نکات مهم
-> 
-> - تنظیمات پنل (کاربران، اینباندها) روی فایل‌سیستم موقت کانتینر ذخیره می‌شود. برای جلوگیری از پاک شدن با هر Redeploy، از بخش **Volumes** در Railway یک Volume به مسیر `/etc/x-ui` وصل کنید.
-> - اگر خواستید بعداً به Postgres سوییچ کنید (برای تعداد کاربر بالا)، باید Dockerfile و start.sh را برای نصب/اتصال Postgres جداگانه اصلاح کنید — این نسخه فعلی فقط SQLite را پشتیبانی می‌کند.
+> - پورت را Railway خودش از طریق `$PORT` تزریق می‌کند؛ نیازی به تنظیم دستی نیست.
+> - برای تغییر نسخه‌ی Marzban که کلون می‌شود، آرگومان build به نام `MARZBAN_REF`
+>   را در `railway.toml` / تنظیمات Build اضافه کنید (پیش‌فرض: `master`).
 
 ## 延伸閱讀
 
-相關概念：[[容器化]] · [[反向代理]] · [[資料庫管理]]
+相關概念：[[容器化]] · [[自動化]] · [[CI/CD]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]] · [[NawfalMotii79--PLFM_RADAR|NawfalMotii79/PLFM_RADAR]] · [[baoweise-bot--aimili-vpngate|baoweise-bot/aimili-vpngate]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]] · [[HKUDS--AgentSpace|HKUDS/AgentSpace]]
 
-[GitHub](https://github.com/x4gKing/3x-ui-Upgrade)
+[GitHub](https://github.com/x4gKing/Marzban-Panel)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：容器化）
+> [!note]- 直接競品（同子分類：部署工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "容器化" AND file.name != "x4gKing--3x-ui-Upgrade"
+> WHERE subcategory = "部署工具" AND file.name != "x4gKing--Marzban-Panel"
 > SORT stars DESC
 > ```
 
@@ -454,7 +419,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "基礎設施" AND file.name != "x4gKing--3x-ui-Upgrade"
+> WHERE category = "基礎設施" AND file.name != "x4gKing--Marzban-Panel"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -463,7 +428,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "HTML" AND file.name != "x4gKing--3x-ui-Upgrade" AND status != "archived"
+> WHERE language = "Dockerfile" AND file.name != "x4gKing--Marzban-Panel" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -472,15 +437,15 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W29" AND file.name != "x4gKing--3x-ui-Upgrade"
+> WHERE week = "2026-W29" AND file.name != "x4gKing--Marzban-Panel"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["容器化","反向代理","資料庫管理"];
+> const concepts = ["容器化","自動化","CI/CD"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "x4gKing--3x-ui-Upgrade" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "x4gKing--Marzban-Panel" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -493,12 +458,12 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/x4gKing--3x-ui-Upgrade");
+> const me = dv.page("Repos/x4gKing--Marzban-Panel");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "x4gKing--3x-ui-Upgrade" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "x4gKing--Marzban-Panel" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -514,7 +479,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "x4gKing" AND file.name != "x4gKing--3x-ui-Upgrade"
+> WHERE owner = "x4gKing" AND file.name != "x4gKing--Marzban-Panel"
 > SORT stars DESC
 > ```
 
@@ -522,7 +487,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/x4gKing--3x-ui-Upgrade");
+> const me = dv.page("Repos/x4gKing--Marzban-Panel");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -539,7 +504,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/x4gKing--3x-ui-Upgrade");
+> const me = dv.page("Repos/x4gKing--Marzban-Panel");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -572,7 +537,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/x4gKing--3x-ui-Upgrade");
+> const me = dv.page("Repos/x4gKing--Marzban-Panel");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -596,7 +561,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/x4gKing--3x-ui-Upgrade");
+> const me = dv.page("Repos/x4gKing--Marzban-Panel");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -633,7 +598,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/x4gKing--3x-ui-Upgrade");
+> const me = dv.page("Repos/x4gKing--Marzban-Panel");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -716,7 +681,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-07-12** — 首次收錄
+> **2026-07-15** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -732,7 +697,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-07-15|2026-07-15]] — 再次上榜，1.0k stars
-- [[2026-07-14|2026-07-14]] — 再次上榜，964 stars
-- [[2026-07-13|2026-07-13]] — 再次上榜，894 stars
-- [[2026-07-12|2026-07-12]] — 首次收錄，803 stars
+- [[2026-07-15|2026-07-15]] — 首次收錄，672 stars

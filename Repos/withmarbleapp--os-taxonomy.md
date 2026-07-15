@@ -7,10 +7,10 @@ language: JavaScript
 license: ODbL-1.0
 description: ""
 homepage: ""
-stars: 2946
-stars_per_day: 589
-forks: 523
-open_issues: 12
+stars: 3060
+stars_per_day: 510
+forks: 532
+open_issues: 13
 created: 2026-07-08
 pushed_at: 2026-07-08
 first_seen: 2026-07-10
@@ -30,8 +30,8 @@ use_case: "提供一個開放的學習主題結構，幫助理解兒童在小學
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-07-17"
+appearances: 6
+next_review: "2026-07-18"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-10"
-star_history: "2026-07-10:1542,2026-07-11:2181,2026-07-12:2458,2026-07-13:2749,2026-07-14:2946"
+star_history: "2026-07-10:1542,2026-07-11:2181,2026-07-12:2458,2026-07-13:2749,2026-07-14:2946,2026-07-15:3060"
 tags:
   - github
   - "category/其他"
@@ -712,6 +712,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-15|2026-07-15]] — 再次上榜，3.1k stars
 - [[2026-07-14|2026-07-14]] — 再次上榜，2.9k stars
 - [[2026-07-13|2026-07-13]] — 再次上榜，2.7k stars
 - [[2026-07-12|2026-07-12]] — 再次上榜，2.5k stars
