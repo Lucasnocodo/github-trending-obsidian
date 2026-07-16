@@ -2906,17 +2906,17 @@
   },
   "vinhhien112/Three.js-Object-Sculptor-Codex-Plugin": {
     "first_seen": "2026-07-13",
-    "last_seen": "2026-07-15",
-    "times_seen": 3,
+    "last_seen": "2026-07-16",
+    "times_seen": 4,
     "stars_first": 672,
-    "stars_last": 971
+    "stars_last": 1020
   },
   "mereyabdenbekuly-ctrl/clodex-ide": {
     "first_seen": "2026-07-13",
-    "last_seen": "2026-07-15",
-    "times_seen": 3,
+    "last_seen": "2026-07-16",
+    "times_seen": 4,
     "stars_first": 641,
-    "stars_last": 801
+    "stars_last": 812
   },
   "op7418/guizang-material-illustration": {
     "first_seen": "2026-07-13",
@@ -2927,17 +2927,17 @@
   },
   "MDX-Tom/gpt-5.6-instruct": {
     "first_seen": "2026-07-14",
-    "last_seen": "2026-07-15",
-    "times_seen": 2,
+    "last_seen": "2026-07-16",
+    "times_seen": 3,
     "stars_first": 743,
-    "stars_last": 1060
+    "stars_last": 1407
   },
   "littledivy/mimic": {
     "first_seen": "2026-07-14",
-    "last_seen": "2026-07-15",
-    "times_seen": 2,
+    "last_seen": "2026-07-16",
+    "times_seen": 3,
     "stars_first": 730,
-    "stars_last": 912
+    "stars_last": 1034
   },
   "William-Lu-stack/LuxyAI": {
     "first_seen": "2026-07-14",
@@ -2948,16 +2948,44 @@
   },
   "AlephAITech/WorkBuddyGuide": {
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-15",
-    "times_seen": 1,
+    "last_seen": "2026-07-16",
+    "times_seen": 2,
     "stars_first": 720,
-    "stars_last": 720
+    "stars_last": 837
   },
   "x4gKing/Marzban-Panel": {
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-15",
-    "times_seen": 1,
+    "last_seen": "2026-07-16",
+    "times_seen": 2,
     "stars_first": 672,
-    "stars_last": 672
+    "stars_last": 776
+  },
+  "xai-org/grok-build": {
+    "first_seen": "2026-07-16",
+    "last_seen": "2026-07-16",
+    "times_seen": 1,
+    "stars_first": 5254,
+    "stars_last": 5254
+  },
+  "Kappaemme-git/codex-first-customer-finder-skill": {
+    "first_seen": "2026-07-16",
+    "last_seen": "2026-07-16",
+    "times_seen": 1,
+    "stars_first": 712,
+    "stars_last": 712
+  },
+  "cosmtrek/mindwalk": {
+    "first_seen": "2026-07-16",
+    "last_seen": "2026-07-16",
+    "times_seen": 1,
+    "stars_first": 706,
+    "stars_last": 706
+  },
+  "pengchujin/jzsub": {
+    "first_seen": "2026-07-16",
+    "last_seen": "2026-07-16",
+    "times_seen": 1,
+    "stars_first": 683,
+    "stars_last": 683
   }
 }

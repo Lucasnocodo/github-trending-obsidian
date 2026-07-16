@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "A practical, open-source guide to mastering WorkBuddy through real-world workflows.开源的 WorkBuddy 实战蓝皮书：教程、真实工作流、Skills、MCP、自动化与多智能体实践。"
 homepage: "https://workbuddy.homes/"
-stars: 720
-stars_per_day: 180
-forks: 100
+stars: 837
+stars_per_day: 167
+forks: 118
 open_issues: 2
 created: 2026-07-10
 pushed_at: 2026-07-15
@@ -30,8 +30,8 @@ use_case: "提供實用的開源指南，幫助用戶通過真實工作流掌握
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-22"
+appearances: 2
+next_review: "2026-07-23"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-15"
-star_history: "2026-07-15:720,2026-07-15:720"
+star_history: "2026-07-15:720,2026-07-15:720,2026-07-16:837"
 tags:
   - github
   - "category/開發工具"
@@ -784,4 +784,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-16|2026-07-16]] — 再次上榜，837 stars
 - [[2026-07-15|2026-07-15]] — 首次收錄，720 stars
