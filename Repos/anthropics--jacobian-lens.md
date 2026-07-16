@@ -7,9 +7,9 @@ language: Python
 license: Apache-2.0
 description: " Companion code for the global workspace interpretability paper"
 homepage: ""
-stars: 1332
-stars_per_day: 111
-forks: 189
+stars: 1376
+stars_per_day: 106
+forks: 193
 open_issues: 6
 created: 2026-07-02
 pushed_at: 2026-07-02
@@ -17,7 +17,7 @@ first_seen: 2026-07-09
 week: "2026-W28"
 month: "2026-07"
 category: "AI/ML"
-subcategory: "解釋性工具"
+subcategory: "NLP"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-09
-use_case: "提供一個解釋性工具，幫助理解語言模型內部激活對輸出結果的影響。"
+use_case: "提供語言模型內部激活的可解釋性工具，幫助理解模型的輸出。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-09"
-star_history: "2026-07-09:891,2026-07-09:894,2026-07-10:1006,2026-07-11:1062,2026-07-12:1146,2026-07-13:1226,2026-07-15:1332"
+star_history: "2026-07-09:891,2026-07-09:894,2026-07-10:1006,2026-07-11:1062,2026-07-12:1146,2026-07-13:1226,2026-07-15:1332,2026-07-16:1376"
 tags:
   - github
   - "category/ai_ml"
@@ -52,12 +52,12 @@ tags:
 aliases:
   - "jacobian-lens"
   - "anthropics/jacobian-lens"
-  - "提供一個解釋性工具，幫助理解語言模型內部激活對輸出結果的影響。"
+  - "提供語言模型內部激活的可解釋性工具，幫助理解模型的輸出。"
 ---
 
 # jacobian-lens
 
-**1.3k** stars · **111** stars/天 · 建立 12 天前 · Python · Apache-2.0
+**1.4k** stars · **106** stars/天 · 建立 13 天前 · Python · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/anthropics--jacobian-lens");
@@ -73,20 +73,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供一個解釋性工具，幫助理解語言模型內部激活對輸出結果的影響。
+> 提供語言模型內部激活的可解釋性工具，幫助理解模型的輸出。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (111 stars/day)
-> **授權** Apache-2.0 (商業友好) · **維護** Moderate (最後推送 12 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 希望深入理解語言模型內部運作的研究人員和開發者。
-> **一句話重點** Jacobian lens 是一個強大的工具，能夠深入解釋語言模型的內部運作，特別適合於研究和開發階段。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Hot (106 stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Moderate (最後推送 13 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
+> **適合** 需要深入理解語言模型內部運作的研究人員和開發者。
+> **一句話重點** Jacobian Lens 提供了一個強大的工具來解釋語言模型的內部運作，特別適合學術研究。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/anthropics--jacobian-lens");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "解釋性工具" && p.file.name !== "anthropics--jacobian-lens" && p.status !== "archived")
+>     .where(p => p.subcategory === "NLP" && p.file.name !== "anthropics--jacobian-lens" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -97,32 +97,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 解釋性工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 NLP 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、10 小時整合，得到深入的模型解釋效果，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學習，2 小時整合，得到強大的可解釋性工具，值得嘗試。
 
 > [!abstract] 核心創新
-> Jacobian lens 提供了一種新的方式來解釋語言模型的內部激活，透過雅可比矩陣的計算來預測模型的輸出。
+> 提供了一種新的方法來解釋語言模型的內部激活與輸出之間的關係。
 
 ## 專案簡介
 
-Jacobian lens 是一個用於解釋語言模型內部運作的工具，透過將特定層的激活向量轉換到最終層的基底，來預測模型的輸出。這個過程涉及計算輸入-輸出雅可比矩陣的平均值，並將其應用於模型的解碼過程。使用者可以透過 `jlens.JacobianLens.from_pretrained` 方法載入預訓練的 lens，並使用 `lens.apply` 方法來獲取特定層的輸出。這種設計使得使用者能夠直觀地理解模型在不同層次的決策過程，尤其是對於語言生成任務的解釋。技術上，這個工具依賴於 PyTorch 和 Hugging Face 的 Transformers 庫，並且需要 Python 3.10 以上的環境。
+Jacobian Lens 是一個用於解釋語言模型內部運作的工具，透過讀取模型的內部激活來預測其輸出。其核心機制是將任意層的殘差流向最終層進行線性轉換，並利用模型的解碼器將其轉換為詞彙的排名列表。這個過程依賴於對文本語料庫的平均輸入-輸出雅可比矩陣進行計算，具體公式為 `lens_l(h) = unembed( J_l @ h )`，其中 `J_l` 是對於不同提示和位置的雅可比矩陣的期望值。這樣的設計使得使用者能夠直觀地看到模型在各層的反應，並且能夠追蹤特定詞彙在不同層的表現。使用者可以透過 `jlens.JacobianLens.from_pretrained` 方法來加載預訓練的 lens，並使用 `lens.apply` 方法來應用於特定的模型和提示。這個工具的賣點在於它能夠提供對於模型內部狀態的可視化解釋，讓研究人員能夠更深入地理解模型的決策過程。
 
-相較於其他解釋性工具，如 LIME 或 SHAP，Jacobian lens 提供了更細緻的層級分析，能夠直接對應到模型的內部狀態，而不僅僅是輸出結果的解釋。這使得它在需要深入理解模型行為的研究環境中尤為有用。使用者需要注意，這個工具目前仍在開發中，並且存在一些已知的問題，例如在處理大型雅可比矩陣時可能會出現溢出情況。整體而言，這個工具適合那些希望深入探索語言模型內部運作的研究人員和開發者。
+該工具的實作依賴於 PyTorch 和 Hugging Face 的 Transformers，這使得它能夠與多種現有模型無縫整合。相比於其他解釋性工具，Jacobian Lens 提供了更細緻的層級分析，特別適合於需要深入理解模型行為的研究場景。使用者在使用時需要注意，該工具目前處於參考實作階段，並不進行維護，可能存在性能優化不足的問題。對於需要高效能的應用，建議在使用前進行充分的測試和評估。整體來說，Jacobian Lens 目前適合於學術研究和模型解釋的探索，但在生產環境中的應用需謹慎考量其穩定性和效能。
 
-**技術棧**：`Python 3.10` · `PyTorch` · `Transformers`
+**技術棧**：`PyTorch` · `Transformers` · `NumPy`
 
 ## 重點功能
 
-- 雅可比透鏡 — 透過計算輸入-輸出雅可比矩陣，來預測模型的輸出。
-- 層級分析 — 能夠針對模型的每一層進行詳細分析，提供直觀的可視化結果。
-- 預訓練模型支持 — 支援從 Hugging Face 載入預訓練模型，方便使用者快速上手。
-- 互動式可視化 — 提供可互動的界面來探索不同層的激活，幫助使用者理解模型行為。
-- 簡單的安裝 — 只需執行 `pip install -e .` 即可安裝，降低了使用門檻。
+- 層級可視化 — 提供模型在不同層的輸出解釋，幫助理解模型決策。
+- 雅可比矩陣計算 — 使用平均輸入-輸出雅可比矩陣來預測模型輸出。
+- 支持多模型 — 能夠與多種 Hugging Face 的解碼器模型無縫整合。
+- 交互式界面 — 透過可視化工具，使用者可以選擇特定層和位置進行分析。
+- 簡單安裝 — 只需一行命令即可安裝並開始使用。
 
 ## 快速開始
 
@@ -130,11 +130,11 @@ Jacobian lens 是一個用於解釋語言模型內部運作的工具，透過將
 ```bash
 pip install -e .
 ```
-2. 載入模型和透鏡
+2. 加載模型和 tokenizer
 ```bash
 hf = transformers.AutoModelForCausalLM.from_pretrained('org/model').cuda()
 ```
-3. 應用透鏡
+3. 應用預訓練的 lens
 ```bash
 lens_logits, model_logits, _ = lens.apply(model, 'Fact: The currency used in the country shaped like a boot is', positions=[-2])
 ```
@@ -142,83 +142,65 @@ lens_logits, model_logits, _ = lens.apply(model, 'Fact: The currency used in the
 ## 程式碼範例
 
 ```python
-{
-  "前置條件": "需要安裝 transformers 和 jlens 套件。",
-  "程式碼": "import transformers, jlens\n\nhf = transformers.AutoModelForCausalLM.from_pretrained('org/model').cuda()\ntok = transformers.AutoTokenizer.from_pretrained('org/model')\nmodel = jlens.from_hf(hf, tok)\n\nlens = jlens.JacobianLens.from_pretrained('org/lens-repo', filename='model/lens.pt')\nlens_logits, model_logits, _ = lens.apply(model, 'Fact: The currency used in the country shaped like a boot is', positions=[-2])\nfor layer, logits in sorted(lens_logits.items()):\n    print(layer, [tok.decode([t]) for t in logits[0].topk(5).indices])",
-  "預期輸出": "每層的 top-5 預測詞彙，幫助理解模型的內部決策過程。"
-}
+[
+  "# 加載模型和 tokenizer",
+  "import transformers, jlens",
+  "hf = transformers.AutoModelForCausalLM.from_pretrained('org/model').cuda()",
+  "tok = transformers.AutoTokenizer.from_pretrained('org/model')",
+  "model = jlens.from_hf(hf, tok)",
+  "# 應用預訓練的 lens",
+  "lens = jlens.JacobianLens.from_pretrained('org/lens-repo', filename='model/lens.pt')",
+  "lens_logits, model_logits, _ = lens.apply(model, 'Fact: The currency used in the country shaped like a boot is', positions=[-2])",
+  "# 預期輸出：各層的 logits 排名"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 12 天就累積 1332 stars（111/天），forks 189（14.2%），這顯示出強烈的社群關注。這個專案的作者 mntss 之前在解釋性 AI 方面有過相關研究，這次針對語言模型的內部表示提供了新的解決方案，填補了現有工具的不足。特別是針對如何從模型的內部激活推斷輸出，這在過去的工具中並不常見。社群的反應也顯示出對於這種解釋性工具的需求，尤其是在模型透明度日益受到重視的背景下。forks/stars 比率為 14.2%，顯示出有相當比例的使用者對此工具進行了實際的修改和應用。
+> 建立 13 天內累積 1376 stars（106/天），forks 193（14.0%），顯示出強烈的社群興趣。該專案由 mntss 貢獻，主要針對語言模型的可解釋性問題，填補了現有工具在這方面的不足。之前的解釋性工具多數無法提供細緻的層級分析，這使得 Jacobian Lens 成為一個有吸引力的選擇。社群的反饋和需求驅動了這個工具的快速成長，特別是在學術界的應用上。這個工具的出現也與語言模型解釋性研究的興起密切相關，顯示出對於模型內部運作理解的需求日益增加。
 
 ## 適合誰使用
 
-**目標受眾**：希望深入理解語言模型內部運作的研究人員和開發者。
+**目標受眾**：需要深入理解語言模型內部運作的研究人員和開發者。
 
 > [!example] 使用場景
-> - 研究人員用它來分析語言模型在生成特定句子時的內部激活，因為這能幫助他們理解模型的決策過程。
-> - 開發者用它來優化模型的輸出，透過觀察不同層的激活來調整模型參數，因為這樣可以提高生成文本的質量。
-> - 教育工作者用它來教導學生有關語言模型的內部運作，因為這個工具提供了直觀的可視化方式來展示模型的行為。
+> - 研究人員用它來分析語言模型在特定輸入下的內部決策過程，因為它能提供層級的可視化解釋，幫助理解模型行為。
+> - 開發者用它來調整模型的輸出，因為透過 Jacobian Lens 可以追蹤特定詞彙在不同層的影響，從而優化模型性能。
+> - 學生用它來學習語言模型的內部運作原理，因為它提供了直觀的可視化工具，幫助理解複雜的數學概念。
 
 ## 架構分析
 
-Jacobian lens 採用模組化設計，主要由三個部分組成：模型載入、透鏡應用和可視化。模型載入部分使用 Hugging Face 的 Transformers 庫，這使得使用者能夠輕鬆地載入各種預訓練模型。透鏡應用部分則是核心邏輯，透過計算雅可比矩陣來預測模型的輸出。
+Jacobian Lens 採用模組化設計，主要由數個 Python 模組組成，專注於模型的可解釋性。其核心是透過雅可比矩陣計算來預測模型的輸出，這使得使用者能夠在不同層級上進行分析。資料流從模型的輸入經過多層處理，最終輸出可視化的解釋結果。
 
-可視化部分則使用 d3.js 提供互動式的界面，讓使用者能夠直觀地探索模型的行為。這種設計的好處是易於擴展和維護，但在性能上可能會受到模型大小的影響，特別是在處理大型模型時，計算雅可比矩陣的時間成本會顯著增加。整體而言，這個架構適合研究和實驗，但在生產環境中可能需要進一步的優化。
+這樣的設計使得使用者能夠靈活地選擇不同的模型和提示進行測試。由於依賴於 PyTorch 和 Transformers，這使得整體架構相對輕量，但在性能上可能會受到大型模型的影響。整體架構的擴展性良好，但在處理極大規模的資料時，可能會遇到效能瓶頸。
 
 ## 技術深入分析
 
-Jacobian lens 的核心技術在於計算雅可比矩陣，這是一種描述模型輸出對於輸入變化敏感度的數學工具。透過這種方法，使用者可以獲得每一層的激活對最終輸出的貢獻度。這個工具的設計選擇了 PyTorch 作為底層框架，因為它提供了靈活的自動微分功能，這對於計算雅可比矩陣至關重要。性能方面，這個工具在處理小型模型時表現良好，但在大型模型上可能會遇到計算瓶頸，尤其是在進行多次反向傳播時。設計上，這個工具並未針對性能進行優化，因此在實際應用中可能需要考慮到計算資源的需求。技術風險方面，這個工具的依賴於 Hugging Face 的模型生態，若未來這些模型的更新導致不兼容，可能會影響到 Jacobian lens 的使用。整合方面，這個工具能夠與現有的深度學習框架無縫協作，但在 CI/CD 流程中可能需要額外的配置。
+Jacobian Lens 的核心技術在於使用雅可比矩陣來解釋模型的內部激活。這種方法能夠提供細緻的層級分析，幫助研究人員理解模型在不同層的反應。其效能特性主要取決於所使用的模型和資料集，對於大型模型的處理可能會面臨性能瓶頸。選擇 PyTorch 和 Transformers 作為技術棧的原因在於它們的廣泛應用和社群支持，這使得該工具能夠與多種模型無縫整合。由於該工具目前處於參考實作階段，可能存在技術債和未來的穩定性風險。整合到現有的開發流程中相對簡單，但在 CI/CD pipeline 中的友好度尚需進一步測試。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且提供了範例，安裝過程順暢，使用者可以快速上手。文件目前僅提供英文版本，對於非英語使用者可能會有一定的學習障礙。
+> README 文件提供了清晰的安裝和使用說明，包含範例程式碼。安裝過程順暢，無明顯坑點。提供的 walkthrough notebook 使得新手能夠快速上手，但缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供深入的模型內部解釋，幫助研究人員理解模型行為。
-> - 易於安裝和使用，降低了入門門檻。
-> - 支援多種 Hugging Face 模型，靈活性高。
+> - 提供直觀的可視化工具，幫助理解模型行為。
+> - 支持多種 Hugging Face 模型，靈活性高。
+> - 簡單的安裝和使用流程，降低了入門門檻。
 
 > [!danger] 缺點
-> - 目前不接受外部貢獻，未來可能無法持續更新。
-> - 在處理大型模型時性能可能不佳。
-> - 存在已知的溢出問題，使用時需謹慎。
+> - 維護不活躍，未來可能缺乏支持。
+> - 性能優化不足，對於大型模型可能不夠高效。
+> - 不接受外部貢獻，限制了功能擴展。
 
 > [!warning] 注意事項
-> - 目前僅支援 Python 3.10 以上版本。
-> - 在處理大型雅可比矩陣時可能會出現溢出問題。
-> - 這是一個參考實作，並未進行性能優化，可能在大型模型上運行緩慢。
-> - 目前不接受外部貢獻，未來可能無法持續更新。
-
-## 類似工具比較
-
-| 工具 | 差異 |
-| --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成代理的行為，而 Jacobian lens 則專注於解釋模型的內部激活。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了模型的可視化工具，但缺乏對內部激活的深入分析，這是 Jacobian lens 的強項。 |
-
-## 替代方案決策
-
-> [!question] 什麼時候該選別的工具？
-
-| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
-| --- | --- | --- | --- |
-| LIME | LIME 使用局部線性模型來解釋模型的預測，而 Jacobian lens 則直接計算雅可比矩陣，提供更細緻的層級分析。 | 如果需要針對特定預測進行局部解釋，LIME 可能更合適。 | medium，因為需要重新設計解釋流程。 |
-| SHAP | SHAP 基於博弈論的解釋方法，提供全局和局部解釋，而 Jacobian lens 專注於模型的內部激活。 | 如果需要全局解釋並考慮特徵重要性，SHAP 更為適合。 | medium，因為需要重新設計解釋流程。 |
-
-> [!abstract]- 功能對比矩陣
->
-> | 維度 | **jacobian-lens** | **LIME** | **SHAP** |
-> | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | LIME 使用局部線性模型來解釋模型的預測，而 Jacobian lens 則直接計算雅可比矩陣，提供更細緻的層級分析。 | SHAP 基於博弈論的解釋方法，提供全局和局部解釋，而 Jacobian lens 專注於模型的內部激活。 |
-> | 遷移成本 | - | medium，因為需要重新設計解釋流程。 | medium，因為需要重新設計解釋流程。 |
-> | 適用場景 | 主要場景 | 如果需要針對特定預測進行局部解釋，LIME 可能更合適。 | 如果需要全局解釋並考慮特徵重要性，SHAP 更為適合。 |
+> - 目前不接受貢獻，維護不活躍。
+> - 性能優化不足，可能在大型模型上運行緩慢。
+> - 依賴於 Hugging Face 的 Transformers，無法獨立使用。
+> - 僅支持 Python 3.10 及以上版本。
 
 ## 成熟度評估
 
@@ -229,41 +211,58 @@ Jacobian lens 的核心技術在於計算雅可比矩陣，這是一種描述模
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合研究和實驗，但不建議用於生產環境。
+> 適合用於學術研究和探索性項目，但不建議用於生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 使用 default float16 時，可能會導致大型雅可比矩陣溢出。
-  - 解法：考慮使用 float32 來避免溢出問題。
-- [MEDIUM] 在計算 apply() 輸出時，可能會遇到測量陷阱。
-  - 解法：仔細檢查輸入和輸出的一致性，避免誤解結果。
+- **[HIGH]** 使用 float16 時可能會導致大雅可比矩陣溢出為無窮大
+  - 解法：使用 float32 進行計算以避免溢出
+- [MEDIUM] 在讀取 apply() 輸出時可能會遇到測量陷阱
+  - 解法：仔細檢查輸出並進行多次測試以確認結果
+- [MEDIUM] 對於不同模型的適配性可能存在問題
+  - 解法：在使用前進行充分的測試以確保兼容性
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 學術研究團隊分析語言模型的內部運作 | 非常適合 | 提供深入的內部解釋，幫助理解模型行為。 |
-| 小型開發團隊探索模型的生成能力 | 適合 | 能夠快速上手並進行實驗。 |
-| 大型企業在生產環境中使用 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
+| 學術研究團隊進行語言模型解釋性研究 | 非常適合 | 提供了深入的可視化工具，幫助理解模型內部運作。 |
+| 需要快速原型的開發者 | 適合 | 簡單的安裝和使用流程，能夠快速上手。 |
+| 大型企業的生產環境 | 不適合 | 維護不活躍，可能存在穩定性問題。 |
+| 個人學習者探索語言模型 | 非常適合 | 提供直觀的可視化工具，幫助理解複雜概念。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
-| 維護負擔 | medium |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
+| 維護負擔 | low |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、10 小時整合，得到深入的模型解釋效果，值得嘗試。
+> 花 3 小時學習，2 小時整合，得到強大的可解釋性工具，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，並且不存取敏感資料。依賴的庫均為廣泛使用的開源項目，安全性較高。
+> 低風險：該工具不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Jacobian Lens 最常與 Hugging Face 的 Transformers 搭配使用，主要在模型解釋的階段進行應用。在一個使用 Transformers 的專案中，使用者可以透過 `from_hf` 方法輕鬆加載模型並應用 lens。支援 GitHub Actions 等 CI 工具，但與主流 IDE 的整合尚需進一步測試。整合過程中，最常見的問題是模型兼容性，建議在使用前進行充分的測試。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 Jacobian Lens 出現之前，語言模型的可解釋性主要依賴於較為簡單的可視化工具，這些工具無法提供細緻的層級分析。隨著語言模型的複雜性增加，對於內部運作的理解需求也隨之上升。Jacobian Lens 的出現正是為了解決這一需求，並提供了一種新的解釋性方法。
+
+未來，隨著模型和資料集的進一步發展，這類工具的需求將會持續增長。
 
 ## 健康度儀表板
 
@@ -328,7 +327,7 @@ Jacobian lens 的核心技術在於計算雅可比矩陣，這是一種描述模
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 189 |
+| Forks | 193 |
 | Open Issues | 6 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-07-02 |
@@ -351,7 +350,7 @@ Jacobian lens 的核心技術在於計算雅可比矩陣，這是一種描述模
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放問題數量較少，但尚未解決。
+**社群活躍度**：社群活躍度中等，開放問題尚未解決。
 **連結**：[文件](https://transformer-circuits.pub/2026/workspace/index.html)
 
 ## 開發動態
@@ -476,7 +475,7 @@ Jacobian lens 的核心技術在於計算雅可比矩陣，這是一種描述模
 
 ## 延伸閱讀
 
-相關概念：[[解釋性工具]] · [[深度學習]] · [[語言模型]]
+相關概念：[[NLP]] · [[機器學習]] · [[可解釋性]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]] · [[baidu--Unlimited-OCR|baidu/Unlimited-OCR]] · [[raiyanyahya--how-to-train-your-gpt|raiyanyahya/how-to-train-your-gpt]]
 
@@ -484,11 +483,11 @@ Jacobian lens 的核心技術在於計算雅可比矩陣，這是一種描述模
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：解釋性工具）
+> [!note]- 直接競品（同子分類：NLP）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "解釋性工具" AND file.name != "anthropics--jacobian-lens"
+> WHERE subcategory = "NLP" AND file.name != "anthropics--jacobian-lens"
 > SORT stars DESC
 > ```
 
@@ -520,7 +519,7 @@ Jacobian lens 的核心技術在於計算雅可比矩陣，這是一種描述模
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["解釋性工具","深度學習","語言模型"];
+> const concepts = ["NLP","機器學習","可解釋性"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "anthropics--jacobian-lens" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
