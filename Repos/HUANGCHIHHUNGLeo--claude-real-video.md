@@ -7,18 +7,18 @@ language: Python
 license: MIT
 description: "Let Claude (or any LLM) actually watch a video — scene-aware, deduplicated frames + transcript, from a URL or local file. Runs locally, MIT."
 homepage: ""
-stars: 1642
-stars_per_day: 109
-forks: 130
-open_issues: 0
+stars: 1693
+stars_per_day: 106
+forks: 137
+open_issues: 2
 created: 2026-06-30
-pushed_at: 2026-07-15
+pushed_at: 2026-07-17
 first_seen: 2026-07-04
 week: "2026-W27"
 month: "2026-07"
 category: "開發工具"
-subcategory: "影片分析"
-release_tag: "v0.7.8"
+subcategory: "影片處理"
+release_tag: "v0.7.11"
 install_complexity: "medium"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-04
-use_case: "讓 Claude（或任何 LLM）實際觀看影片，提供場景感知、去重的幀和文字稿，支持從 URL 或本地檔案分析。"
+use_case: "讓 Claude（或任何 LLM）實際觀看影片，提供場景感知、去重的幀和轉錄功能，支持從 URL 或本地文件導入。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 4
 next_review: "2026-07-10"
 contributor_count: 2
 engagement: "low"
-issue_close_rate: 100
-repo_size_kb: 2412
-readme_length: 9911
+issue_close_rate: 67
+repo_size_kb: 2467
+readme_length: 9971
 bus_factor: 1
-last_release_days: 1
+last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-04"
-star_history: "2026-07-04:569,2026-07-04:572,2026-07-05:768,2026-07-06:1029,2026-07-06:1034,2026-07-07:1276,2026-07-07:1276,2026-07-08:1370,2026-07-09:1424,2026-07-10:1458,2026-07-11:1479,2026-07-12:1519,2026-07-13:1565,2026-07-14:1585,2026-07-15:1617,2026-07-16:1642"
+star_history: "2026-07-04:569,2026-07-04:572,2026-07-05:768,2026-07-06:1029,2026-07-06:1034,2026-07-07:1276,2026-07-07:1276,2026-07-08:1370,2026-07-09:1424,2026-07-10:1458,2026-07-11:1479,2026-07-12:1519,2026-07-13:1565,2026-07-14:1585,2026-07-15:1617,2026-07-16:1642,2026-07-17:1693"
 tags:
   - github
   - "category/開發工具"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "claude-real-video"
   - "HUANGCHIHHUNGLeo/claude-real-video"
-  - "讓 Claude（或任何 LLM）實際觀看影片，提供場景感知、去重的幀和文字稿，支持從 URL 或本地檔案分析。"
+  - "讓 Claude（或任何 LLM）實際觀看影片，提供場景感知、去重的幀和轉錄功能，支持從 URL 或本地文件導入。"
 ---
 
 # claude-real-video
 
-**1.6k** stars · **109** stars/天 · 建立 15 天前 · Python · MIT
+**1.7k** stars · **106** stars/天 · 建立 16 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/HUANGCHIHHUNGLeo--claude-real-video");
@@ -68,23 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v0.7.8`
+`v0.7.11`
 
 > [!summary] 一句話摘要
-> 讓 Claude（或任何 LLM）實際觀看影片，提供場景感知、去重的幀和文字稿，支持從 URL 或本地檔案分析。
+> 讓 Claude（或任何 LLM）實際觀看影片，提供場景感知、去重的幀和轉錄功能，支持從 URL 或本地文件導入。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (109 stars/day)
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (106 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要讓 LLM 直接分析影片內容的開發者和研究者。
-> **一句話重點** 這個專案的創新在於讓 LLM 能夠真正理解影片內容，而不僅僅是依賴文字稿。
+> **適合** 需要在本地環境中處理和分析影片內容的開發者和研究者。
+> **一句話重點** 這個專案讓 LLM 能夠真正理解影片內容，開啟了影片分析的新可能性。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/HUANGCHIHHUNGLeo--claude-real-video");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "影片分析" && p.file.name !== "HUANGCHIHHUNGLeo--claude-real-video" && p.status !== "archived")
+>     .where(p => p.subcategory === "影片處理" && p.file.name !== "HUANGCHIHHUNGLeo--claude-real-video" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,108 +95,112 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 影片分析 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 影片處理 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Stable (可用) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** low
-> **結論** 花 3 小時學習，2 小時整合，得到高效的影片分析工具，值得投入。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** low
+> **結論** 花 3 小時學習、2 小時整合，得到高效的影片分析工具，值得投入。
 
 > [!abstract] 核心創新
-> 這個專案能讓 LLM 實際觀看影片，並提取有意義的幀和音訊轉文字，提供更好的分析能力。
+> 這個專案的創新點在於讓 LLM 能夠真正理解影片內容，而不僅僅是讀取轉錄文本。
 
 ## 專案簡介
 
-這個專案的核心機制是讓 LLM（如 Claude）能夠實際觀看影片，而不僅僅是讀取文字稿。用戶可以提供 YouTube 連結或本地影片檔案，工具會自動提取重要幀，去除重複幀，並生成音訊的文字稿。這樣的設計使得 LLM 能夠更好地理解影片內容，因為它只接收有意義的幀，而不是每秒一幀的固定取樣。使用者可以透過 `crv` 指令來啟動分析，並使用多種參數來調整分析的靈敏度和輸出格式。這個工具的賣點在於它的本地處理能力，讓用戶能夠控制哪些資料被上傳到 LLM，從而保護隱私。技術上，它依賴 `ffmpeg` 進行幀提取和音訊處理，並使用 `whisper` 進行語音轉文字，這些都能在本地運行，避免了雲端處理的延遲和隱私問題。
+這個專案的核心機制是讓 LLM（如 Claude）能夠真正理解影片內容，而不僅僅是讀取轉錄文本。用戶可以透過 CLI 指令 `crv "<video_url>"` 將影片進行處理，該工具會自動提取重要的幀，去除重複幀，並轉錄音訊，最終輸出一個整潔的資料夾，方便 LLM 使用。這樣的設計使得 LLM 能夠更有效地分析影片，因為它只關注場景變化而不是固定的幀率，這樣可以減少不必要的計算和資料傳輸。技術上，這個工具使用了 ffmpeg 進行影片處理，並且運行在本地，這意味著所有資料都不會上傳至雲端，增加了隱私性。
 
-與傳統的固定間隔取樣方法相比，這個工具能夠更智能地選擇幀，確保不會錯過快速剪接中的重要畫面。使用者可以選擇不同的參數來調整幀的選擇標準，這在處理不同類型的影片時非常有用。這個工具的使用效果在於能夠提供更精確的影片分析，並且支援多種輸出格式，方便用戶進一步處理。社群活躍度高，所有開放的問題都已解決，顯示出良好的維護狀態。這個專案目前處於穩定版本，適合需要進行影片分析的開發者和研究者。未來可能會加入更多的功能，例如更精細的幀選擇算法或更強大的語音識別能力。
+與其他工具相比，如 ChatGPT 只能讀取轉錄文本，或 Gemini 需要上傳影片進行處理，這個工具的本地運行和場景感知能力使其在效率和隱私上具備優勢。實際使用中，這個工具能夠處理的影片長度和幀數取決於用戶的硬體性能，但設計上已經考慮到效能優化，並且在處理上有零誤報的表現。這個專案目前處於穩定的 beta 階段，功能完整且持續更新，適合需要處理大量影片資料的開發者和研究者。使用者在選擇這個工具時，應考慮到其本地運行的特性，對於隱私和資料安全有較高需求的場景尤為適合。
 
-**技術棧**：`Python 3.10+` · `ffmpeg` · `whisper`
+**技術棧**：`Python 3.10` · `ffmpeg` · `whisper`
 
 ## 重點功能
 
-- 場景變化檢測 — 自動提取影片中的重要幀，避免固定間隔取樣的缺陷。
-- 去重幀處理 — 僅保留不同的幀，減少不必要的資料量，提升 LLM 的理解效率。
-- 音訊轉文字 — 使用 Whisper 進行語音轉文字，支持多種語言選擇。
-- 本地處理 — 所有分析在本地進行，保護用戶隱私，避免資料上傳。
-- 多種輸出格式 — 支持生成幀、文字稿和報告，方便用戶進行後續分析。
+- 場景感知分析 — 自動提取影片中的重要幀，去除重複幀，減少資料量。
+- 音訊轉錄功能 — 使用 `whisper` 模組進行準確的音訊轉錄，支持多種語言。
+- 本地運行 — 所有處理在本地完成，無需上傳影片，增強隱私性。
+- CLI 支援 — 提供簡單的命令行介面，方便集成到現有工作流中。
+- 可選擴展 — 支持額外安裝 `whisper` 和 `faster-whisper` 模組，以提升轉錄速度和準確性。
 
 ## 快速開始
 
-1. 安裝核心功能
+1. 安裝核心套件
 ```bash
-pip install claude-real-video
+pip install "claude-real-video[whisper]"
 ```
-2. 安裝完整功能（含語音轉文字）
+2. 使用 CLI 分析影片
 ```bash
-pip install 'claude-real-video[whisper]'
+crv "https://www.youtube.com/watch?v=..."
 ```
-3. 執行影片分析
+3. 查看輸出結果
 ```bash
-crv 'https://www.youtube.com/watch?v=...'
+ls crv-out
 ```
 
 ## 程式碼範例
 
 ```python
 {
-  "前置條件": "安裝了 ffmpeg 和 whisper",
-  "指令": "crv 'https://www.youtube.com/watch?v=...' --out crv-out --lang en",
-  "預期輸出": "生成 crv-out 目錄，包含提取的幀和文字稿。"
+  "前置條件": "已安裝 claude-real-video 套件。",
+  "指令": "crv \"https://www.youtube.com/watch?v=...\"",
+  "預期輸出": "提取的幀和轉錄文本將存儲在指定的輸出資料夾中。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 15 天就累積 1642 stars（109/天），forks 130（7.9%），這顯示出相對較高的使用興趣。這個專案的作者 HUANGCHIHHUNGLeo 之前有類似的開發經驗，解決了 LLM 在處理影片時無法直接觀看的痛點。傳統的影片分析工具往往只能依賴文字稿，無法捕捉影片中的細微變化，而這個專案提供了一個本地化的解決方案，讓用戶能夠控制資料的處理和分析。社群的反饋也顯示出對這種功能的需求，特別是在隱私和資料控制方面。這個工具的設計理念符合當前對於資料隱私的重視，並且在技術上能夠提供更好的使用體驗。
+> 建立 16 天內累積 1693 stars（106/天），forks 137（8.1%），顯示出強勁的增長潛力。作者 HUANGCHIHHUNGLeo 之前有其他開源專案經驗，這個工具解決了 LLM 無法直接分析影片的痛點，之前的方案多數只能處理轉錄文本，無法真正理解影片內容。近期的社群討論和需求增加使得這個工具受到關注，尤其是在 AI 影片分析的需求上升的背景下。高達 8.1% 的 forks/stars 比率顯示出許多開發者對這個工具的實際修改和使用，反映出其在社群中的活躍度。
 
 ## 適合誰使用
 
-**目標受眾**：需要讓 LLM 直接分析影片內容的開發者和研究者。
+**目標受眾**：需要在本地環境中處理和分析影片內容的開發者和研究者。
 
 > [!example] 使用場景
-> - 影片分析師用它來提取 YouTube 影片的關鍵幀和文字稿，因為這樣可以節省手動處理的時間，並且提高分析的準確性。
-> - 教育工作者用它來分析教學影片，提取重要的視覺內容和音訊，因為這樣可以幫助學生更好地理解課程內容。
-> - 數據科學家用它來從社交媒體影片中提取數據，因為這樣可以快速獲取有價值的視覺和聽覺信息，進行後續的數據分析。
+> - 影片編輯師用它來自動提取影片中的關鍵幀，因為這樣可以節省手動篩選的時間，並提高工作效率。
+> - 研究人員用它來分析社交媒體影片中的情感變化，因為它能夠提供更準確的場景轉換和音訊轉錄，幫助進行深入的數據分析。
+> - 教育工作者用它來從教學影片中提取重要內容，因為這樣可以快速生成學習資源，提升學生的學習效果。
 
 ## 架構分析
 
-這個專案採用本地處理的架構，所有的影片分析都在用戶的機器上進行，這樣設計的目的是為了保護用戶的隱私，並減少雲端處理的延遲。資料流中，影片首先由 `ffmpeg` 提取幀，然後進行去重處理，接著使用 `whisper` 進行音訊轉文字，最後生成的幀和文字稿會存儲在指定的輸出目錄。這樣的設計使得用戶能夠靈活控制輸出的內容，並且可以選擇性地將資料上傳至 LLM。選擇本地處理的代價是需要用戶自行安裝必要的依賴，並確保系統資源足夠。擴展性方面，這個工具可以輕鬆集成到現有的工作流中，但對於大型影片的處理可能會面臨性能瓶頸，特別是在高解析度的情況下。
+這個專案採用 Python 作為主要開發語言，並利用 ffmpeg 進行影片處理。架構上，使用者透過 CLI 指令與工具互動，工具會在本地環境中運行，提取影片中的重要幀並進行音訊轉錄。這樣的設計使得所有資料都不會上傳至雲端，增強了隱私性。選擇本地運行的代價是需要用戶擁有足夠的硬體資源來處理高解析度的影片。擴展性方面，這個工具可以輕鬆整合其他音訊處理模組，如 `whisper`，以提升轉錄的準確性和速度。
 
 ## 技術深入分析
 
-這個工具的核心技術在於使用 `ffmpeg` 進行幀提取和音訊處理，並利用 `whisper` 進行語音轉文字。這樣的設計使得整個過程能夠在本地運行，避免了雲端處理的延遲和隱私問題。效能方面，這個工具能夠處理高達 1080p 的影片，但在處理 4K 影片時可能會遇到性能瓶頸，特別是在內存和 CPU 資源有限的情況下。選擇 Python 作為主要開發語言是因為其強大的生態系統和易於使用的特性，但這也意味著在性能上可能不如一些編譯型語言。這個專案的依賴樹相對簡單，主要依賴於 `ffmpeg` 和 `whisper`，這降低了維護的複雜度。技術風險方面，隨著使用者數量的增加，可能會面臨更複雜的影片格式和編碼問題，這需要持續的更新和維護。整合方面，這個工具可以輕鬆與現有的工作流集成，但對於大型團隊的協作支持可能需要額外的文檔和指導。
+這個專案的核心技術機制是利用 ffmpeg 進行影片的幀提取和音訊轉錄，並使用 Python 作為主要開發語言。其設計模式是基於 CLI 的交互方式，允許用戶直接在本地環境中進行影片分析。效能方面，這個工具能夠處理高解析度影片，具體的處理速度取決於用戶的硬體配置。選擇本地運行的好處是能夠保護用戶的隱私，但代價是需要用戶擁有較強的計算能力。這個工具的依賴樹相對簡單，主要依賴於 ffmpeg 和其他 Python 套件，降低了維護的複雜度。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在處理極長影片時。整合方面，這個工具與主流的開發工具鏈相容性良好，能夠輕鬆集成到 CI/CD pipeline 中，並且對於團隊合作的支持也相對友好。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和使用說明，並包含範例指令。安裝過程相對順暢，但需要注意安裝 `ffmpeg` 的步驟。文件目前僅提供英文版本，可能對非英語使用者造成一定的障礙。
+> README 文件清晰且提供了安裝和使用範例，讓新手能夠快速上手。安裝過程相對順暢，但需要注意 ffmpeg 的配置。文件目前僅提供英文版本，可能對非英語使用者造成一定的障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 本地處理，保護用戶隱私。
-> - 智能的幀選擇，避免固定間隔取樣的缺陷。
-> - 支持多種輸出格式，方便用戶進行後續分析。
+> - 能夠有效提取影片中的重要幀，減少不必要的資料處理。
+> - 本地運行，增強隱私性，無需擔心資料上傳風險。
+> - CLI 支援，方便集成到現有的開發工作流中。
+> - 持續更新，社群活躍，問題解決率高。
 
 > [!danger] 缺點
-> - 需要安裝 ffmpeg，增加了安裝複雜度。
-> - 對於某些影片格式的支持可能有限。
-> - 在高解析度影片處理時，可能需要較高的系統資源。
+> - 需要安裝和配置 ffmpeg，對新手可能有一定的學習曲線。
+> - 處理長影片時可能需要較長時間，影響使用體驗。
+> - 不支持 Windows 環境下的某些功能，限制了使用者範圍。
+> - 對於音訊轉錄的準確性依賴於額外的模組安裝。
 
 > [!warning] 注意事項
-> - 需要安裝 ffmpeg，無法通過 pip 安裝。
-> - 對於某些影片格式可能無法正確處理，特別是未經授權的內容。
-> - 在處理高解析度影片時，可能需要較高的系統資源。
+> - 僅支援 Python 3.10 以上版本。
+> - 需要安裝 ffmpeg 作為依賴，可能需要額外配置。
+> - 對於長影片，處理時間可能較長，取決於硬體性能。
+> - 不支持 Windows 環境下的某些功能，需使用 WSL 或其他替代方案。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的影片分析功能，但主要針對遊戲影片，可能不適合一般影片分析。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於影片的元數據提取，而非幀的去重和分析，適用範圍較窄。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供影片分析功能，但主要集中在影片的元數據提取，而非幀的去重和音訊轉錄。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 專注於代碼生成和分析，與影片處理無關，適用場景不同。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 雖然也與 LLM 相關，但主要針對文本資料，無法處理影片內容。 |
 
 ## 替代方案決策
 
@@ -204,44 +208,47 @@ crv 'https://www.youtube.com/watch?v=...'
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲影片的分析，使用不同的幀選擇算法，可能不適合一般影片。 | 如果你的主要需求是分析遊戲影片，這個工具可能更適合。 | medium，因為需要調整分析邏輯和輸出格式。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於元數據提取，功能範圍較窄，無法提供幀去重和音訊轉文字的功能。 | 如果你的需求僅限於提取影片的元數據，這個工具會更簡單。 | low，因為功能簡單，易於整合。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成和處理多媒體內容，但不具備去重幀的功能。 | 如果需要生成多媒體內容而非分析現有影片，則應選擇此工具。 | medium，因為需要重新設計資料流和處理邏輯。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供影片分析功能，但主要集中在影片的元數據提取，而非幀的去重和音訊轉錄。 | 如果需要更詳細的影片元數據而非幀分析，則應選擇此工具。 | low，因為功能上有部分重疊。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **claude-real-video** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於遊戲影片的分析，使用不同的幀選擇算法，可能不適合一般影片。 | 專注於元數據提取，功能範圍較窄，無法提供幀去重和音訊轉文字的功能。 |
-> | 遷移成本 | - | medium，因為需要調整分析邏輯和輸出格式。 | low，因為功能簡單，易於整合。 |
-> | 適用場景 | 主要場景 | 如果你的主要需求是分析遊戲影片，這個工具可能更適合。 | 如果你的需求僅限於提取影片的元數據，這個工具會更簡單。 |
+> | 技術路線 | 本專案 | 專注於生成和處理多媒體內容，但不具備去重幀的功能。 | 提供影片分析功能，但主要集中在影片的元數據提取，而非幀的去重和音訊轉錄。 |
+> | 遷移成本 | - | medium，因為需要重新設計資料流和處理邏輯。 | low，因為功能上有部分重疊。 |
+> | 適用場景 | 主要場景 | 如果需要生成多媒體內容而非分析現有影片，則應選擇此工具。 | 如果需要更詳細的影片元數據而非幀分析，則應選擇此工具。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Stable |
-| 生產環境就緒 | Yes |
-| Breaking Change 風險 | low |
+| 開發階段 | Beta |
+| 生產環境就緒 | No |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合用於影片分析的生產環境，特別是在需要保護隱私的情況下。
+> 適合個人或小型專案試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些平台上，ffmpeg 的安裝可能會遇到問題，特別是在 Windows 環境下。
-  - 解法：建議使用 winget 或 choco 安裝，或手動下載並配置 PATH。
-- [MEDIUM] 對於某些影片格式，可能會無法正確提取音訊。
-  - 解法：確保使用的影片格式是常見的編碼格式，如 MP4。
+- [MEDIUM] 在高解析度影片中，處理時間可能過長，影響使用體驗。
+  - 解法：考慮使用較低解析度的影片進行測試。
+- **[HIGH]** 某些音訊轉錄可能不準確，尤其是在背景雜音較多的情況下。
+  - 解法：使用外部音訊處理工具進行預處理。
+- **[HIGH]** 在 Windows 環境下可能無法正常運行某些功能。
+  - 解法：使用 WSL 或考慮在 Linux 環境中運行。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要分析教育影片的教師 | 非常適合 | 能夠提取關鍵幀和音訊，幫助學生理解內容。 |
-| 小型團隊需要快速分析社交媒體影片 | 適合 | 本地處理的特性使得資料安全性高，且操作簡單。 |
-| 大型企業需要處理大量影片資料 | 普通 | 雖然功能強大，但在高解析度影片處理時可能需要更多資源。 |
+| 需要分析社交媒體影片的市場研究團隊 | 非常適合 | 能夠快速提取和分析影片中的重要信息，提升研究效率。 |
+| 小型創業團隊需要處理教學影片 | 適合 | 能夠自動化處理影片，節省時間和人力成本。 |
+| 大型企業需要進行影片內容的深入分析 | 普通 | 雖然功能強大，但可能需要額外的資源來處理長影片。 |
+| 個人開發者希望快速實驗影片分析技術 | 非常適合 | 本地運行且易於上手，適合快速實驗。 |
 
 ## 採用成本分析
 
@@ -253,18 +260,18 @@ crv 'https://www.youtube.com/watch?v=...'
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 3 小時學習，2 小時整合，得到高效的影片分析工具，值得投入。
+> 花 3 小時學習、2 小時整合，得到高效的影片分析工具，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：本工具在本地運行，無需高權限，並且不會存取敏感資料。使用者可以控制哪些資料被上傳至 LLM，降低了資料洩露的風險。
+> 低風險：本工具在本地運行，無需高權限，且不會存取敏感資料。依賴的套件也相對穩定，無已知的供應鏈風險。
 
 ## 生態系整合
 
 > [!abstract] 如何融入你的工具鏈
 
-這個工具最常與 Python 生態系統中的其他工具搭配使用，特別是在數據分析和機器學習的工作流中。用戶可以在使用 Jupyter Notebook 或其他 IDE 進行影片分析時，輕鬆調用這個工具。整合時，常見的問題是 ffmpeg 的安裝和配置，這需要用戶在使用前確保其環境已正確設置。
+這個工具最常與 Python 開發環境搭配使用，適合在資料處理和分析的工作流中進行集成。實際整合範例包括在一個使用 Flask 的應用中，透過 CLI 指令來分析上傳的影片，並將結果返回給用戶。與主流 CI 工具（如 GitHub Actions）相容，能夠輕鬆集成到自動化流程中。整合的摩擦點主要在於 ffmpeg 的配置，對於新手可能需要一些額外的學習。
 
 ## 健康度儀表板
 
@@ -329,10 +336,10 @@ crv 'https://www.youtube.com/watch?v=...'
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 130 |
-| Open Issues | 0 |
-| Issue 解決率 | 100% (4 closed) |
-| 最後推送 | 2026-07-15 |
+| Forks | 137 |
+| Open Issues | 2 |
+| Issue 解決率 | 67% (4 closed) |
+| 最後推送 | 2026-07-17 |
 | 建立日期 | 2026-06-30 |
 | Repo 大小 | 2.4 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/HUANGCHIHHUNGLeo/claude-real-video) |
@@ -340,31 +347,31 @@ crv 'https://www.youtube.com/watch?v=...'
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 77
->     "HTML" : 13
->     "Shell" : 11
+>     "Python" : 80
+>     "HTML" : 11
+>     "Shell" : 9
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@HUANGCHIHHUNGLeo](https://github.com/HUANGCHIHHUNGLeo) | 43 |
+> | [@HUANGCHIHHUNGLeo](https://github.com/HUANGCHIHHUNGLeo) | 50 |
 > | [@yuanwaizhang](https://github.com/yuanwaizhang) | 1 |
 
-**最新版本**：v0.7.8 — v0.7.8 — the Pro pointer now shows your video's real stats (2026-07-15)
+**最新版本**：v0.7.11 — v0.7.11 — simple temporal check (2026-07-17)
 
 > [!info]- Release Notes
-> The end-of-run Pro line now uses the run's own numbers (real visual changes + rate) when the video has them. Quiet one-liner otherwise. `CRV_NO_HINT=1` still disables it.
+> The MANIFEST now carries a one-line temporal hint when (and only when) the footage shows the fingerprint of padded slow motion — duplicate frames arranged in many short runs. Freeze-frames are recognized as editing and stay silent; interval-capture detection needs richer context and ships with crv Pro's multi-channel --speed-check. Calibrated and regressed on 53 labeled/wild clips: zero false positives.
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，所有開放的問題都已解決。
+**社群活躍度**：社群活躍，最近有多次更新和問題解決。
 **連結**：[文件](https://github.com/HUANGCHIHHUNGLeo/claude-real-video)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-10 ~ 2026-07-15）
-> **活躍天數** 5 天 · **最新 commit** 0.7.8: end-of-run Pro pointer uses this run's real visual-change stats
+> [!abstract] 最近 10 次 commit（2026-07-14 ~ 2026-07-17）
+> **活躍天數** 4 天 · **最新 commit** 0.7.11: simple temporal check (free tier) — padded slow-motion hint, pure ffmpeg
 
 ## README 摘錄
 
@@ -375,11 +382,18 @@ crv 'https://www.youtube.com/watch?v=...'
 > 
 > **Let Claude — or any LLM — actually watch a video.**
 > 
+> ```bash
+> pip install "claude-real-video[whisper]"
+> npx skills add HUANGCHIHHUNGLeo/claude-real-video   # one command, installs the skill into Claude Code, Cursor, Codex, Copilot, Gemini CLI & 50+ agent hosts
+> ```
+> 
+> Then paste a video link into your agent and ask about it. (CLI-only use? `crv ""` works with just the pip install.)
+> 
 > > **Naming:** crv is the short name for claude-real-video (the PyPI package). The paid add-on, **crv Pro**, is sold on Capafy under the listing name "llm-real-video Pro".
 > 
 > > Same 58-second clip: fixed 1 fps sampling = **58 frames**. crv keeps the **26 that actually differ** — and `--grid` packs them into **3 contact sheets**. Fewer tokens, nothing missed.
 > 
-> > **This free version lets your AI *see* the video.** [crv Pro](https://leoaido.com/crv-pro/) lets it *understand* it — how it was shot (cut rhythm, camera moves) plus a timestamped timeline of what frames can't show: gestures, expressions, voice pitch shifts, emotion, sound events. One-time founder price $19 — [get it on Capafy](https://capafy.ai/agent/llm-real-video-pro-let-any-llm-watch-videos/5451082151).
+> > **This free version lets your AI *see* the video.** [crv Pro](https://leoaido.com/crv-pro/) lets it *understand* it — how it was shot (cut rhythm, camera moves) plus a timestamped timeline of what frames can't show: gestures, expressions, voice pitch shifts, emotion, sound events. One-time founder price $19 through July 31 ($29 from August 1) — [get it on Capafy](https://capafy.ai/agent/llm-real-video-pro-let-any-llm-watch-videos/5451082151).
 > 
 > Most AI tools don't really *see* a video. Paste a YouTube link into ChatGPT and it
 > reads the **transcript**, not the picture. Claude won't take a video file at all.
@@ -420,6 +434,7 @@ crv 'https://www.youtube.com/watch?v=...'
 > | `--max-frames` | `150` | hard cap on total frames |
 > | `--adaptive` | off | adaptive scene detection: catches slow morphs (2-3s squash/stretch, gradual pans) a fixed threshold misses, by comparing each frame against its rolling neighbourhood |
 > | `--text-anchors` | off | force extra frames at subtitle-cue timestamps (sidecar `.srt`/`.vtt` or embedded track) — for videos where meaning changes faster than pixels; at most one forced frame per second |
+> | `--speakers` | off | label every transcript line with the speaker (`[SPEAKER_00]` …) via local diarization — needs `pip install "claude-real-video[speakers]"`, 45 MB model downloads once |
 > | `--lang` | `auto` | Whisper language (`en`, `zh`, `auto`, ...) |
 > | `--whisper-model` | `base` | Whisper model for transcription (`tiny`/`base`/`small`/`medium`/`large`/`turbo` — base is fast; **want sharper transcripts? `--whisper-model turbo` is one flag away**: close to large-v2 accuracy at ~8x the speed, one-time 1.6GB download, ~6GB memory) |
 > | `--dedup-threshold` | `8` | % of pixels that must change for a frame to count as new; higher = fewer frames (the settled-local detector's gate scales with it too) |
@@ -472,37 +487,23 @@ crv 'https://www.youtube.com/watch?v=...'
 > 
 > **Text-heavy content** (lecture slides, screen recordings, talking-head explainers): add `--text-anchors` — extra frames are forced at subtitle-cue timestamps, so each spoken segment gets a matching visual even when the scene barely changes. Needs a sidecar `.srt`/`.vtt` or an embedded subtitle track — captions burned into the pixels can't be detected. At most one forced frame per second; scene detection is untouched.
 > 
-> Not doing LLM work? It also works as a **general-purpose video keyframe extractor** —
-> scene-change detection + dedup, no ML models to download.
-> 
-> **Using Claude Code?** Install it as a skill so Claude watches videos on its own
-> (the `skills/` folder lives in the repo, not in the pip package — clone it first):
-> 
-> ```bash
-> pip install "claude-real-video[whisper]"
-> git clone https://github.com/HUANGCHIHHUNGLeo/claude-real-video.git
-> mkdir -p ~/.claude/skills && cp -r claude-real-video/skills/claude-real-video ~/.claude/skills/
-> ```
-> 
-> Then just paste a video link into Claude Code and ask about it.
-> 
-> **New in 0.3.0*
+> **Multi-speaker content** (interviews, podcasts, meet
 
 ## 延伸閱讀
 
-相關概念：[[影片分析]] · [[語音轉文字]] · [[隱私保護]]
+相關概念：[[影片分析]] · [[音訊轉錄]] · [[場景感知]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlexandrosGounis--pdfx|AlexandrosGounis/pdfx]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[aiming-lab--AutoResearchClaw|aiming-lab/AutoResearchClaw]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[AlexandrosGounis--pdfx|AlexandrosGounis/pdfx]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[aiming-lab--AutoResearchClaw|aiming-lab/AutoResearchClaw]]
 
 [GitHub](https://github.com/HUANGCHIHHUNGLeo/claude-real-video)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：影片分析）
+> [!note]- 直接競品（同子分類：影片處理）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "影片分析" AND file.name != "HUANGCHIHHUNGLeo--claude-real-video"
+> WHERE subcategory = "影片處理" AND file.name != "HUANGCHIHHUNGLeo--claude-real-video"
 > SORT stars DESC
 > ```
 
@@ -534,7 +535,7 @@ crv 'https://www.youtube.com/watch?v=...'
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["影片分析","語音轉文字","隱私保護"];
+> const concepts = ["影片分析","音訊轉錄","場景感知"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "HUANGCHIHHUNGLeo--claude-real-video" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

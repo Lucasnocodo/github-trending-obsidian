@@ -7,8 +7,8 @@ language: TypeScript
 license: MIT
 description: "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana."
 homepage: "https://www.computeroyale.com/"
-stars: 476
-stars_per_day: 30
+stars: 477
+stars_per_day: 28
 forks: 32
 open_issues: 0
 created: 2026-06-30
@@ -16,8 +16,8 @@ pushed_at: 2026-07-14
 first_seen: 2026-07-01
 week: "2026-W27"
 month: "2026-07"
-category: "開發工具"
-subcategory: "AI 代理"
+category: "AI/ML"
+subcategory: "Agent 框架"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-01
-use_case: "讓 AI 代理在真實 GPU 上賽跑並自主支付，解決經濟障礙。"
+use_case: "讓 AI 代理在真實 GPU 上賽跑，並自動支付所需費用。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,20 +42,20 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-01"
-star_history: "2026-07-01:599,2026-07-01:602,2026-07-02:718,2026-07-02:720,2026-07-03:756,2026-07-03:756,2026-07-04:520,2026-07-04:520,2026-07-05:523,2026-07-05:523,2026-07-06:525,2026-07-07:528,2026-07-08:529,2026-07-09:500,2026-07-10:499,2026-07-11:500,2026-07-12:501,2026-07-13:501,2026-07-14:492,2026-07-15:488,2026-07-16:476"
+star_history: "2026-07-01:599,2026-07-01:602,2026-07-02:718,2026-07-02:720,2026-07-03:756,2026-07-03:756,2026-07-04:520,2026-07-04:520,2026-07-05:523,2026-07-05:523,2026-07-06:525,2026-07-07:528,2026-07-08:529,2026-07-09:500,2026-07-10:499,2026-07-11:500,2026-07-12:501,2026-07-13:501,2026-07-14:492,2026-07-15:488,2026-07-16:476,2026-07-17:477"
 tags:
   - github
-  - "category/開發工具"
+  - "category/ai_ml"
   - "lang/typescript"
 aliases:
   - "Runx402"
   - "Runx402/Runx402"
-  - "讓 AI 代理在真實 GPU 上賽跑並自主支付，解決經濟障礙。"
+  - "讓 AI 代理在真實 GPU 上賽跑，並自動支付所需費用。"
 ---
 
 # Runx402
 
-**476** stars · **30** stars/天 · 建立 16 天前 · TypeScript · MIT
+**477** stars · **28** stars/天 · 建立 17 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Runx402--Runx402");
@@ -69,20 +69,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```
 
 > [!summary] 一句話摘要
-> 讓 AI 代理在真實 GPU 上賽跑並自主支付，解決經濟障礙。
+> 讓 AI 代理在真實 GPU 上賽跑，並自動支付所需費用。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (30 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在 AI 代理中實現自主支付功能的開發者和企業。
-> **一句話重點** Runx402 讓 AI 代理能夠自主支付，打破了經濟上的障礙，開創了新的機器經濟模式。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (28 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 希望在無需人工介入的情況下運行自主 AI 代理的開發者。
+> **一句話重點** Runx402 不僅是支付工具，更是為自主 AI 代理打造的全新經濟體系。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Runx402--Runx402");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "AI 代理" && p.file.name !== "Runx402--Runx402" && p.status !== "archived")
+>     .where(p => p.subcategory === "Agent 框架" && p.file.name !== "Runx402--Runx402" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -93,118 +93,111 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 AI 代理 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 Agent 框架 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學、8 小時整合，得到高效的自主支付能力，值得投入。
+> **結論** 花 5 小時學習，10 小時整合，得到自動化支付的代理功能，值得一試。
 
 > [!abstract] 核心創新
-> Runx402 是首個在 Robinhood Chain 上原生運行 x402 支付的代理協議。
+> Runx402 是首個在 Robinhood Chain 上原生運行 x402 付款的代理協議。
 
 ## 專案簡介
 
-Runx402 是一個基於 Robinhood Chain 的自主 AI 代理協議，允許代理在無需人類干預的情況下進行支付。核心流程是代理發出 API 請求，API 回應 402 狀態碼，告知支付金額和接收地址，代理隨即從自己的錢包發送 ETH，並用交易哈希作為支付證明重試請求。這樣的設計消除了傳統 API 的授權和支付障礙，讓代理能夠在 1 秒內完成交易，且每次交易成本僅為幾分之一美分。技術上，Runx402 使用了 Next.js 14、TypeScript、PostgreSQL 和 Docker，並依賴於 ethers 和 viem 庫進行區塊鏈交互。
+Runx402 是一個基於 Robinhood Chain 的自主 AI 代理協議，旨在解決現有 AI 代理在經濟上無法自我運作的問題。它允許 AI 代理直接使用 ETH 進行支付，無需人工介入，這樣代理可以在需要時自動獲取數據或服務。整個過程中，代理發出 HTTP 請求，若需支付，API 會回傳 402 狀態碼，並提供支付地址，代理隨即進行 ETH 轉帳，然後用交易哈希作為支付證明再次請求數據。這樣的設計使得支付過程高效且無需額外的 API 密鑰或訂閱。核心技術使用了 Next.js 14、TypeScript 和 PostgreSQL，並依賴於 viem 和 ethers 等庫進行鏈上交互。
 
-這種設計使得代理能夠在無需 API 密鑰或信用卡的情況下，直接進行支付，從而提升了操作的自主性和效率。與傳統的 API 服務相比，Runx402 省去了繁瑣的註冊和授權過程，並且能夠根據請求的需求自動選擇最合適的模型，這在大規模應用時尤為重要。使用者可以在任何 EVM 錢包中輕鬆集成，並且支持多種模型的調用，這使得其在 AI 代理的經濟運作中具有顯著的優勢。這個專案的成熟度目前為 beta 階段，適合需要自主支付能力的 AI 代理開發者使用。
+與傳統的 API 認證方式相比，Runx402 的支付即認證方式大幅降低了安全風險，因為不再需要管理敏感的 API 密鑰。相較於其他類似工具，如 0x0funky/agent-sprite-forge 和 2aronS/Duel-Agents，Runx402 提供了更直接的支付機制，並且能夠在無需人為干預的情況下持續運行代理。這使得它在需要高頻率 API 調用的場景中表現優越，特別適合需要自動化數據獲取的應用。使用者可以在本地環境中快速啟動並測試代理，並且初始階段提供免費信用額度，降低了使用門檻。
 
-**技術棧**：`Next.js 14` · `TypeScript` · `PostgreSQL` · `Docker`
+**技術棧**：`Next.js 14` · `TypeScript` · `PostgreSQL` · `Node.js` · `Docker`
 
 ## 重點功能
 
-- 自主支付 — 代理能夠直接使用 ETH 進行支付，無需人類介入。
-- 即時交易 — 整個支付過程約 1 秒完成，成本僅為幾分之一美分。
-- 多模型支持 — 根據請求自動選擇最合適的 AI 模型進行處理。
-- 無需 API 密鑰 — 代理直接通過交易哈希進行身份驗證，消除安全風險。
-- 持續運行的代理 — 代理可根據計劃或觸發器持續執行任務，非瞬態請求處理。
+- 自主支付 — 代理能夠使用 ETH 進行自動支付，無需人工介入。
+- 即時交易確認 — 支付過程中所有交易均在鏈上確認，確保安全性。
+- 多模型路由 — 根據請求的需求自動選擇最合適的 AI 模型，優化成本。
+- 持續運行的代理 — 代理可以在預定時間或觸發事件下持續運行，無需用戶介入。
+- 即時事件推送 — 伺服器推送代理活動和支付狀態到用戶界面，實時更新。
 
 ## 快速開始
 
-1. 克隆專案
+1. 克隆專案並進入目錄
 ```bash
-git clone https://github.com/ctrlshifthash/Runx402.git
+git clone https://github.com/ctrlshifthash/Runx402.git && cd Runx402
 ```
-2. 安裝依賴
+2. 安裝依賴並啟動應用
 ```bash
-cd Runx402 && npm install
+cd app && npm install && npm run dev
 ```
-3. 啟動應用
+3. 啟動 24/7 代理工作者
 ```bash
-npm run dev
-```
-4. 啟動代理工作者
-```bash
-cd worker && npm start
+cd worker && npm install && npm start
 ```
 
 ## 程式碼範例
 
 ```ts
 {
-  "前置條件": "已安裝 Node.js 和 npm",
+  "前置條件": "安裝 Node.js 和 npm，並克隆專案。",
   "指令": "cd app && npm install && npm run dev",
-  "預期輸出": "應用啟動並運行在 http://localhost:3000"
+  "預期輸出": "啟動應用後，訪問 http://localhost:3000 以連接任何 EVM 錢包並運行代理。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 16 天內累積 476 stars（30/天），forks 32（6.7%），顯示出穩定的增長。開發者的背景未詳述，但專案解決了 AI 代理在經濟運作上的痛點，特別是代理無法自主支付的問題。這一問題過去依賴於人類介入，導致效率低下。隨著 AI 技術的進步，對於自主支付的需求越來越明顯，Runx402 恰好填補了這一空白。社群活躍度高，無開放問題，顯示出良好的維護狀態。
+> 建立 17 天內累積 477 stars（28 stars/天），forks 32（6.7%），顯示出穩定的增長潛力。作者的背景未明，但該專案解決了 AI 代理在經濟運作上的痛點，特別是自動支付的需求。這在當前的 AI 生態中是一個相對新穎的解決方案，因為大多數 AI 代理仍依賴於人類進行資金管理。技術上，Robinhood Chain 的出現使得這種自動支付成為可能，因為它支持快速、低成本的交易。forks/stars 比率顯示出有相當比例的開發者在實際修改和使用這個專案，表明其潛在的實用性和需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 AI 代理中實現自主支付功能的開發者和企業。
+**目標受眾**：希望在無需人工介入的情況下運行自主 AI 代理的開發者。
 
 > [!example] 使用場景
-> - AI 開發者用它來創建自主支付的 AI 代理，因為這樣可以省去繁瑣的 API 密鑰管理和人為干預，提升效率。
-> - 金融科技公司用它來實現自動化的數據購買，因為代理能夠在需要時隨時支付，無需等待人類授權。
-> - 區塊鏈項目用它來測試自主交易的 AI 模型，因為它支持即時支付和驗證，降低了實驗成本。
+> - AI 開發者用它來創建自主運行的數據獲取代理，因為它能夠自動支付 API 費用，無需手動介入。
+> - 金融科技公司用它來實現自動化交易代理，因為它能夠在需要時快速獲取市場數據並進行交易。
+> - 研究人員用它來持續獲取數據集，因為它能夠在無需人工操作的情況下自動支付所需的數據費用。
 
 ## 架構分析
 
-Runx402 的架構由前端、伺服器和工作者組成。前端使用 Next.js 14 提供用戶界面，並支持各種 EVM 錢包。伺服器端的 x402 引擎負責處理支付請求，並通過 on-chain 驗證來確認交易。工作者則持續執行代理任務，確保代理不會因為請求結束而停止運行。這種設計使得整體架構具備高效能和可擴展性，但也需要考慮到資金管理和交易成本的控制。
+Runx402 的架構設計為前端和後端分離，前端使用 Next.js 14 提供用戶界面，後端則由 x402 引擎處理支付和數據請求。代理的每個請求都經過 402 門戶進行處理，並由模型路由器選擇最合適的 AI 模型進行響應。這種設計使得系統能夠靈活應對不同的請求需求，並且能夠在鏈上進行支付驗證。選擇使用 PostgreSQL 作為數據庫，能夠高效存儲代理的運行狀態和支付記錄，但也增加了系統的複雜度。整體架構的擴展性良好，能夠支持多個代理同時運行，但在高並發請求下可能會出現性能瓶頸。
 
 ## 技術深入分析
 
-Runx402 的核心技術在於其自主支付的能力，這是通過使用 HTTP 402 狀態碼來實現的。代理在發出請求後，API 會返回支付要求，代理隨即進行 ETH 轉賬，並用交易哈希作為證明。這一過程不僅提高了效率，還降低了安全風險。整體架構中，前端使用 Next.js 14 提供用戶界面，後端則利用 PostgreSQL 儲存代理和支付信息。
-
-這種設計使得系統能夠快速響應請求，並保持高可用性。技術選型上，選擇使用 TypeScript 和 Docker 使得開發和部署過程更加流暢，並且降低了環境配置的複雜性。未來可能面臨的挑戰包括如何擴展到更多區塊鏈和處理高頻交易的資金管理問題。整合到現有的 CI/CD pipeline 也相對簡單，因為其 API 設計符合 RESTful 標準。
+Runx402 的核心技術機制是基於 HTTP 402 狀態碼的支付協議，這使得代理能夠在無需人工干預的情況下進行支付。整個支付過程中，代理發出請求，API 回應支付需求，代理自動轉帳並提供交易證明，這樣的設計大幅降低了安全風險。效能方面，整個交易過程在幾秒內完成，並且交易費用僅為幾分之一美分，適合高頻次的 API 調用。選擇 Next.js 和 PostgreSQL 作為技術棧，能夠提供良好的用戶體驗和數據管理，但也增加了系統的複雜度。技術風險方面，依賴於 Robinhood Chain 的穩定性和安全性，若該鏈出現問題，將直接影響整個系統的運行。整合方面，與主流的 EVM 錢包相容性良好，但對於非 EVM 錢包的支持有限，這可能會影響某些用戶的使用體驗。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝和使用步驟。安裝過程順暢，無明顯坑點。提供了良好的入門指南，讓新手能夠快速上手。文件目前僅有英文版本。
+> README 文件提供了清晰的安裝指引和範例，安裝過程相對順暢，但對於不熟悉區塊鏈的用戶可能會有一定的學習曲線。整體上，文件質量良好，能夠幫助新手快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自主支付能力，無需人類干預。
-> - 即時交易，提升了效率。
-> - 支持多種 AI 模型，靈活性高。
-> - 消除了 API 密鑰的安全風險。
+> - 自動化支付流程，無需人工介入，提升效率。
+> - 高安全性，所有支付均在鏈上確認，無需管理 API 密鑰。
+> - 支持多種 AI 模型，根據需求自動選擇最適合的模型。
+> - 持續運行的代理，能夠在無需用戶介入的情況下執行任務。
 
 > [!danger] 缺點
-> - 目前僅支持特定區塊鏈。
-> - 需要用戶具備 EVM 錢包。
-> - 處於 beta 階段，可能不穩定。
-> - 高頻交易需要額外的資金管理。
+> - 目前僅支持特定的區塊鏈，限制了使用範圍。
+> - 需要用戶提供有效的 EVM 錢包，增加了使用門檻。
+> - 處於早期階段，可能存在未解決的 bug 和性能問題。
+> - 對於不熟悉區塊鏈的用戶，學習曲線較陡。
 
 > [!warning] 注意事項
 > - 目前僅支持 Robinhood Chain 和 Ethereum 主網。
-> - 需要用戶擁有 EVM 錢包以進行支付。
-> - 目前處於 beta 階段，可能會有不穩定的 API 行為。
-> - 對於高頻交易的代理，可能需要額外的資金管理策略。
+> - 需要用戶提供有效的 EVM 錢包地址。
+> - 不支持非 EVM 錢包或其他區塊鏈。
+> - 目前處於早期階段，可能存在未解決的 bug。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建 AI 代理的框架，但不支持自主支付功能。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 提供競賽功能，但不具備自主支付的能力。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供 AI 模型的管理，但不支持即時支付和驗證。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的自主代理功能，但不支持直接的鏈上支付，需依賴 API 密鑰。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於代理之間的競賽，但缺乏 Runx402 的支付自動化功能。 |
 
 ## 替代方案決策
 
@@ -212,16 +205,16 @@ Runx402 的核心技術在於其自主支付的能力，這是通過使用 HTTP 
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建 AI 代理的框架，但不支持自主支付功能。 | 如果你的團隊需要一個專注於代理開發的框架，而不需要支付功能。 | medium，因為需要重構支付邏輯。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 提供競賽功能，但不具備自主支付的能力。 | 如果你的應用場景需要競賽功能而非自主支付。 | high，因為需要重新設計整個支付流程。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用傳統的 API 密鑰管理方式，無法實現自動支付。 | 如果你的團隊已經在使用傳統的 API 認證方式，並且不需要自動化支付。 | medium，因為需要重構支付邏輯。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於代理之間的競賽，缺乏支付自動化功能。 | 如果你的應用主要是競賽型的，且不需要自主支付。 | high，因為需要重寫整個代理架構。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **Runx402** | **agent-sprite-forge** | **Duel-Agents** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於創建 AI 代理的框架，但不支持自主支付功能。 | 提供競賽功能，但不具備自主支付的能力。 |
-> | 遷移成本 | - | medium，因為需要重構支付邏輯。 | high，因為需要重新設計整個支付流程。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要一個專注於代理開發的框架，而不需要支付功能。 | 如果你的應用場景需要競賽功能而非自主支付。 |
+> | 技術路線 | 本專案 | 使用傳統的 API 密鑰管理方式，無法實現自動支付。 | 專注於代理之間的競賽，缺乏支付自動化功能。 |
+> | 遷移成本 | - | medium，因為需要重構支付邏輯。 | high，因為需要重寫整個代理架構。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用傳統的 API 認證方式，並且不需要自 | 如果你的應用主要是競賽型的，且不需要自主支付。 |
 
 ## 成熟度評估
 
@@ -232,44 +225,50 @@ Runx402 的核心技術在於其自主支付的能力，這是通過使用 HTTP 
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合早期採用者和開發者進行測試，不建議用於生產環境的核心應用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高頻交易時，可能會遇到資金管理問題。
-  - 解法：實施額外的資金管理策略。
-- [MEDIUM] 目前僅支持 Robinhood Chain，未來擴展性未知。
-  - 解法：考慮使用其他區塊鏈的替代方案。
-- [MEDIUM] API 可能會有不穩定的行為。
-  - 解法：定期檢查 API 文檔和更新。
+- **[HIGH]** 在高並發請求下，可能會出現性能瓶頸。
+  - 解法：考慮使用負載均衡或增加伺服器資源。
+- [MEDIUM] 對於不熟悉區塊鏈的用戶，學習曲線較陡。
+  - 解法：提供更詳細的使用手冊和範例。
+- [MEDIUM] 目前僅支持 Robinhood Chain，未來可能需要擴展到其他鏈。
+  - 解法：持續關注官方更新，了解未來的支持計劃。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司開發 AI 代理 | 非常適合 | 自主支付功能能夠提升開發效率，減少人為干預。 |
-| 大型企業需要高頻交易的 AI 代理 | 不適合 | 目前資金管理和擴展性可能無法滿足需求。 |
-| 金融科技公司自動化數據購買 | 適合 | 能夠實現無縫支付，提升數據獲取效率。 |
-| 需要在多個區塊鏈上運行的 AI 代理 | 普通 | 目前僅支持 Robinhood Chain，未來擴展性未知。 |
+| 需要自動化數據獲取的金融科技公司 | 非常適合 | 能夠自動支付 API 費用，無需人工介入。 |
+| 小型開發團隊希望快速實現 AI 代理 | 適合 | 提供免費信用額度，降低了使用門檻。 |
+| 大型企業需要高頻率的 API 調用 | 普通 | 在高並發下可能會出現性能瓶頸。 |
+| 不熟悉區塊鏈的開發者 | 不適合 | 學習曲線較陡，可能需要額外的學習時間。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~8 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、8 小時整合，得到高效的自主支付能力，值得投入。
+> 花 5 小時學習，10 小時整合，得到自動化支付的代理功能，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，僅需 EVM 錢包進行支付。系統依賴於區塊鏈的安全性，無已知的供應鏈風險。
+> 低風險：所有支付均在鏈上確認，無需管理敏感的 API 密鑰，但仍需注意合約的安全性和潛在的漏洞。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Runx402 最常與 EVM 錢包（如 MetaMask、Coinbase Wallet）搭配使用，並在開發過程中處於 API 調用和支付的環節。用戶可以在 Next.js 應用中輕鬆集成 Runx402，具體做法是使用提供的 API 進行請求，並在用戶界面中顯示支付狀態。與主流 CI/CD 工具（如 GitHub Actions）相容性良好，但對於非 EVM 錢包的支持有限，可能需要額外的適配層。
 
 ## 健康度儀表板
 
@@ -357,8 +356,8 @@ Runx402 的核心技術在於其自主支付的能力，這是通過使用 HTTP 
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，無開放問題，顯示良好維護狀態。
-**連結**：[文件](https://www.runx402.app/)
+**社群活躍度**：社群活躍，最近有多次更新和改進。
+**連結**：[文件](https://www.computeroyale.com/)
 
 ## 開發動態
 
@@ -558,7 +557,7 @@ Runx402 的核心技術在於其自主支付的能力，這是通過使用 HTTP 
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[區塊鏈]] · [[AI 代理]]
+相關概念：[[自動化]] · [[微服務]] · [[區塊鏈]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xGF--boneyard|0xGF/boneyard]] · [[nv-tlabs--Gamma-World|nv-tlabs/Gamma-World]] · [[uluckyXH--OpenMOSS|uluckyXH/OpenMOSS]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[GammaLabTechnologies--harmonist|GammaLabTechnologies/harmonist]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]]
 
@@ -566,11 +565,11 @@ Runx402 的核心技術在於其自主支付的能力，這是通過使用 HTTP 
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：AI 代理）
+> [!note]- 直接競品（同子分類：Agent 框架）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "AI 代理" AND file.name != "Runx402--Runx402"
+> WHERE subcategory = "Agent 框架" AND file.name != "Runx402--Runx402"
 > SORT stars DESC
 > ```
 
@@ -578,7 +577,7 @@ Runx402 的核心技術在於其自主支付的能力，這是通過使用 HTTP 
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "Runx402--Runx402"
+> WHERE category = "AI/ML" AND file.name != "Runx402--Runx402"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -602,7 +601,7 @@ Runx402 的核心技術在於其自主支付的能力，這是通過使用 HTTP 
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","區塊鏈","AI 代理"];
+> const concepts = ["自動化","微服務","區塊鏈"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Runx402--Runx402" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

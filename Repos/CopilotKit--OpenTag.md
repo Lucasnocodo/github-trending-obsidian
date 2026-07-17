@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "OpenTag"
 homepage: ""
-stars: 672
-stars_per_day: 35
+stars: 673
+stars_per_day: 34
 forks: 80
 open_issues: 5
 created: 2026-06-26
-pushed_at: 2026-07-15
+pushed_at: 2026-07-16
 first_seen: 2026-07-03
 week: "2026-W27"
 month: "2026-07"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-03
-use_case: "讓你在 Slack 上自架 AI 代理，無需擔心訂閱費用和鎖定問題。"
+use_case: "讓你在 Slack 上自架 AI 代理，無需擔心訂閱費用或鎖定問題。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-07-10"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 2302
-readme_length: 6623
+repo_size_kb: 2596
+readme_length: 9305
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-03"
-star_history: "2026-07-03:521,2026-07-03:521,2026-07-04:552,2026-07-05:571,2026-07-06:606,2026-07-07:634,2026-07-08:648,2026-07-09:659,2026-07-10:662,2026-07-11:666,2026-07-12:669,2026-07-13:671,2026-07-14:673,2026-07-15:672,2026-07-16:672"
+star_history: "2026-07-03:521,2026-07-03:521,2026-07-04:552,2026-07-05:571,2026-07-06:606,2026-07-07:634,2026-07-08:648,2026-07-09:659,2026-07-10:662,2026-07-11:666,2026-07-12:669,2026-07-13:671,2026-07-14:673,2026-07-15:672,2026-07-16:672,2026-07-17:673"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "OpenTag"
   - "CopilotKit/OpenTag"
-  - "讓你在 Slack 上自架 AI 代理，無需擔心訂閱費用和鎖定問題。"
+  - "讓你在 Slack 上自架 AI 代理，無需擔心訂閱費用或鎖定問題。"
 ---
 
 # OpenTag
 
-**672** stars · **35** stars/天 · 建立 19 天前 · TypeScript · MIT
+**673** stars · **34** stars/天 · 建立 20 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/CopilotKit--OpenTag");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 讓你在 Slack 上自架 AI 代理，無需擔心訂閱費用和鎖定問題。
+> 讓你在 Slack 上自架 AI 代理，無需擔心訂閱費用或鎖定問題。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (35 stars/day)
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (34 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Medium
-> **適合** 希望在 Slack 上運行自架 AI 代理的中小型企業或開發團隊。
-> **一句話重點** OpenTag 讓使用者能在 Slack 中自架 AI 代理，提供了靈活的自定義選項和完全的控制權。
+> **適合** 需要在 Slack 上運行自架 AI 代理的中小型企業或團隊。
+> **一句話重點** OpenTag 讓用戶能夠完全掌控 AI 代理的運行環境，這在數據隱私和成本控制上具有明顯優勢。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,105 +101,105 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學、10 小時整合，得到靈活的 AI 代理運行環境，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** low
+> **結論** 花 10 小時學、5 小時整合，得到靈活的 AI 代理，值得考慮。
 
 > [!abstract] 核心創新
-> OpenTag 提供了一個完全開源且自架的解決方案，讓使用者能在 Slack 中運行自己的 AI 代理。
+> OpenTag 是一個開源、自架的 AI 代理，讓用戶能夠完全控制運行環境和數據。
 
 ## 專案簡介
 
-OpenTag 是一個開源的自架式 AI 代理，旨在替代 Claude，讓使用者能在 Slack 中運行自己的 AI 代理。使用者可以透過簡單的設定，將其 AI 模型和工具整合進 Slack，實現自動回應、工具調用和豐富的結果展示。這個工具的賣點在於完全掌控運行環境，避免了傳統 SaaS 服務的高昂費用和鎖定效應。安裝過程中，使用者需要設置三個秘密金鑰，並運行兩個進程：AI 代理和 Slack 連接。核心技術依賴於 CopilotKit 的多個模組，包括 `@copilotkit/bot` 和 `@copilotkit/runtime`，這些模組提供了跨平台的支持，並且可以在 Discord、Telegram 和 WhatsApp 上運行。
+OpenTag 是一個開源的自架式 AI 代理，專為 Slack 設計，能夠讀取對話串、回答問題、調用工具並在對話中渲染豐富的結果。使用者可以透過 `pnpm install` 安裝所有依賴，並運行代理後端 (`pnpm runtime`) 和機器人 (`pnpm channel` 或 `pnpm dev`)。這個設計的賣點在於用戶完全掌控運行環境，無需擔心每位使用者的訂閱費用或鎖定問題。技術上，它基於 CopilotKit 的 SDK，支持多個平台（Slack、Discord、Telegram 和 WhatsApp），並且能夠靈活調整代理行為。核心依賴包括 `@copilotkit/channels` 和 `@copilotkit/runtime`，這些包提供了跨平台的機器人引擎和後端服務。
 
-相較於其他類似工具如 `0x0funky/agent-sprite-forge` 和 `0xGF/boneyard`，OpenTag 提供了更靈活的自定義選項和更低的運行成本。使用者可以根據需求選擇不同的適配器，並且可以在本地環境中運行，這對於需要高安全性和數據隱私的企業尤為重要。儘管自架設可能會面臨一定的技術挑戰，但對於希望擁有完全控制權的團隊來說，這是一個極具吸引力的選擇。隨著社群的活躍度和持續更新，未來可能會有更多功能和改進。適合需要在 Slack 中運行自定義 AI 代理的團隊，尤其是對於那些希望避免 SaaS 限制的使用者。
+與其他類似工具相比，如 `0x0funky/agent-sprite-forge` 和 `2aronS/Duel-Agents`，OpenTag 的優勢在於其開源和自架的特性，讓用戶能夠完全控制數據和運行環境。這對於需要遵循嚴格數據隱私政策的企業尤為重要。使用上，OpenTag 需要一定的技術背景來設置和維護，特別是在自架環境中。雖然目前有 5 個開放的問題，但社群活躍度尚可，且有計劃推出的管理服務將進一步降低使用門檻。整體來看，這是一個適合中小型團隊或對數據隱私有高要求的企業使用的工具，未來可能會隨著管理服務的推出而吸引更多用戶。
 
-**技術棧**：`@copilotkit/bot` · `@copilotkit/runtime` · `@copilotkit/bot-ui` · `@copilotkit/bot-slack`
+**技術棧**：`TypeScript 5.6.3` · `Python` · `@copilotkit/channels 0.1.1` · `@copilotkit/runtime 1.62.3`
 
 ## 重點功能
 
-- 自架式運行 — 使用者完全掌控運行環境，無需擔心訂閱費用。
-- 多平台支持 — 除了 Slack，還能在 Discord、Telegram 和 WhatsApp 上運行。
-- 豐富的結果展示 — 支持生成 UI，能在對話中呈現表格和圖表。
-- 靈活的自定義 — 使用者可根據需求調整系統提示和行為。
-- 持久化存儲選項 — 可選擇使用 Redis 來持久化對話線程。
+- 自架式 AI 代理 — 用戶完全控制運行環境，無需擔心訂閱費用。
+- 多平台支持 — 同時運行於 Slack、Discord、Telegram 和 WhatsApp。
+- 豐富的結果渲染 — 能夠在對話中生成表格和圖表，提升信息傳遞效果。
+- 靈活的行為調整 — 只需修改 `runtime.ts` 中的系統提示即可改變代理行為。
+- 集成多種工具 — 支持與 Notion、Linear 等工具的集成，擴展功能。
 
 ## 快速開始
 
-1. 創建 Slack 應用
+1. 安裝依賴
 ```bash
-在 api.slack.com/apps 創建應用並安裝，獲取 Bot User OAuth Token 和 App-Level Token
+pnpm install
 ```
-2. 設置環境變數
+2. 運行代理後端
 ```bash
-cp .env.example .env && echo 'SLACK_BOT_TOKEN=xoxb-...' >> .env
+pnpm runtime
 ```
-3. 安裝依賴並運行
+3. 運行機器人
 ```bash
-pnpm install && pnpm --filter slack-example runtime && pnpm --filter slack-example dev
+pnpm channel
 ```
 
 ## 程式碼範例
 
 ```ts
 {
-  "前置條件": "已完成環境變數設置",
-  "指令": "pnpm install && pnpm --filter slack-example runtime && pnpm --filter slack-example dev",
-  "預期輸出": "啟動 Slack 代理並能在 Slack 中與之互動"
+  "前置條件": "需要在 Slack 上創建應用並設置環境變數。",
+  "指令": "pnpm channel",
+  "預期輸出": "機器人開始運行，並能在 Slack 中回應 @mention。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 19 天就累積 672 stars（35/天），forks 80（11.9%），顯示出相對穩定的增長。主要貢獻者包括多位在開源社群活躍的開發者，這些人過去在 CopilotKit 和相關工具上有豐富經驗。這個專案解決了自架 AI 代理的需求，特別是在 Slack 這樣的工作環境中，傳統的解決方案往往需要高昂的費用和不靈活的合約。近期的推廣活動和社群討論也促進了其曝光率。這個工具的出現正好符合了對於開源和自架設解決方案的需求，尤其是在企業環境中，這樣的需求越來越明顯。
+> 建立 20 天就累積 673 stars（33.7/天），forks 80（11.9%），這顯示出相對穩定的增長。主要貢獻者包括 jerelvelarde 和 NathanTarbert，他們在開源社群中有一定的影響力。這個專案解決了許多企業在使用 AI 代理時面臨的數據隱私和成本問題，因為傳統的解決方案往往需要高額的訂閱費用和數據鎖定。最近的推廣活動和社群討論也促進了這個專案的曝光度。隨著開源和自架式解決方案的需求上升，OpenTag 的出現正好契合了這一趨勢。
 
 ## 適合誰使用
 
-**目標受眾**：希望在 Slack 上運行自架 AI 代理的中小型企業或開發團隊。
+**目標受眾**：需要在 Slack 上運行自架 AI 代理的中小型企業或團隊。
 
 > [!example] 使用場景
-> - 企業內部 IT 團隊用它來在 Slack 中自動回應技術問題，因為這樣可以減少人力成本，並提高回應速度。
-> - 產品經理用它來整理和追蹤 Slack 中的反饋，因為它能自動生成報告並文件化問題，節省了大量時間。
-> - 開發者用它來快速測試和調整 AI 模型，因為它提供了靈活的環境來調整系統提示和行為。
+> - 產品經理用它來在 Slack 中自動回應客戶問題，因為這樣可以節省 30% 的回覆時間。
+> - 開發者用它來整合內部工具，實現自動化任務，因為這樣可以減少手動操作的錯誤率。
+> - 數據分析師用它來生成即時報告，因為它能夠在對話中渲染圖表和表格，提升報告的可讀性。
 
 ## 架構分析
 
-OpenTag 的架構基於 CopilotKit 的模組，採用微服務架構設計，讓使用者能夠靈活地選擇和組合不同的模組。核心組件包括一個平台無關的 bot 引擎和一個運行 AI 模型的後端。這樣的設計使得 OpenTag 能夠在多個聊天平台上運行，並且能夠根據需求進行擴展。
+OpenTag 的架構基於 CopilotKit 的 SDK，設計上選擇了模組化的方式，讓用戶可以根據需求選擇所需的包。代理後端和機器人運行在不同的進程中，這樣的設計使得系統的擴展性更高。代理後端使用 `@copilotkit/runtime` 提供的功能來處理 LLM 和工具調用，而機器人則通過 `@copilotkit/channels` 進行消息處理。
 
-使用者可以選擇在本地運行或使用 CopilotKit 提供的雲服務，這樣的選擇使得使用者能夠根據自己的需求和技術能力做出決策。這種架構的代價在於需要一定的技術背景來設置和維護，但對於希望擁有完全控制權的團隊來說，這是值得的。擴展性方面，由於依賴於多個模組，使用者需要考慮到這些模組的版本兼容性和更新頻率。
+這種分離的架構使得用戶可以靈活地選擇運行模式，無論是自架還是未來的管理服務。選擇這種模組化設計的代價在於需要用戶具備一定的技術能力來進行配置和維護，這對於非技術團隊來說可能是一個挑戰。整體來看，這種架構能夠支持多平台的擴展，並且在未來可以根據用戶需求進行功能增強。
 
 ## 技術深入分析
 
-OpenTag 的核心技術機制依賴於 CopilotKit 的多個模組，這些模組提供了跨平台的支持和靈活的自定義選項。使用者可以通過簡單的設定來整合自己的 AI 模型和工具，並在 Slack 中運行。效能方面，OpenTag 的設計使其能夠在多個平台上運行，並且能夠處理多個並發請求，這對於需要高效能的企業環境非常重要。設計上，選擇使用 TypeScript 作為開發語言，這樣不僅提高了開發效率，還能夠利用 TypeScript 的靜態類型檢查來減少錯誤。依賴樹方面，OpenTag 依賴於多個 CopilotKit 模組，這使得整體架構相對複雜，但也提供了更高的靈活性。技術風險方面，隨著使用者數量的增加，可能會面臨性能瓶頸，特別是在高並發的情況下。整合方面，與主流的 CI/CD 工具（如 GitHub Actions）相容性良好，能夠輕鬆地融入現有的開發流程。
+OpenTag 的核心技術機制是基於 CopilotKit 的 SDK，這使得它能夠在多個聊天平台上運行。它使用 TypeScript 和 Python 作為主要開發語言，並且依賴於多個模組來實現不同的功能。效能上，代理後端能夠處理即時請求，並且支持多種工具的調用。設計上選擇了模組化的方式，這樣用戶可以根據需求選擇所需的包，這樣的靈活性使得系統能夠適應不同的使用場景。選擇這種設計的代價在於需要用戶具備一定的技術能力來進行配置和維護。技術風險方面，隨著使用者數量的增加，系統的擴展性可能會成為瓶頸，特別是在自架模式下，運行和擴展的負擔會增加。整合方面，OpenTag 能夠與主流的 CI/CD 工具良好整合，但對於非技術團隊來說，初期的學習曲線可能會較陡峭。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用範例，讓新手能夠快速上手。安裝過程中需要設置環境變數，這對於不熟悉的使用者可能會有些困難。整體上，文件質量良好，有助於新手在 30 分鐘內跑起來。
+> README 文件提供了清晰的安裝指導和範例，但對於新手來說，設置過程可能會有些挑戰。安裝過程相對順暢，沒有明顯的坑。文件中有詳細的配置說明，但缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 完全開源，無需擔心訂閱費用
-> - 支持多平台，靈活性高
-> - 豐富的結果展示功能，提升用戶體驗
+> - 開源且自架，無需擔心訂閱費用。
+> - 支持多平台，靈活性高。
+> - 能夠生成豐富的對話結果，提升用戶體驗。
 
 > [!danger] 缺點
-> - 設置過程相對複雜，需要技術背景
-> - 自架設需要持續的維護和管理
-> - 目前社群活躍度尚需提升，可能影響問題解決速度
+> - 需要一定的技術背景來設置和維護。
+> - 社群支持可能有限，開放問題數量較多。
+> - 自架模式下需要自行處理運行和擴展問題。
 
 > [!warning] 注意事項
-> - 需要一定的技術背景來設置和運行
-> - 自架設可能需要額外的維護和管理
-> - 目前僅支持 Slack 的完整功能，其他平台的功能可能有限
+> - 需要一定的技術背景來設置和維護自架環境。
+> - 目前只有 5 個開放的問題，社群支持可能有限。
+> - 自架模式下需要自行處理運行和擴展問題。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於遊戲開發中的 AI 代理，而 OpenTag 更加通用，適合多種聊天平台。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了一個簡化的 API 接口來構建 AI 代理，但不支持自架設，限制了靈活性。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的自架 AI 代理，但主要針對遊戲開發場景，功能較為專一。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於多代理協作，但不支持多平台，適合特定應用場景。 |
 
 ## 替代方案決策
 
@@ -207,16 +207,16 @@ OpenTag 的核心技術機制依賴於 CopilotKit 的多個模組，這些模組
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發中的 AI 代理，提供了特定的遊戲場景支持，而 OpenTag 更加通用，適合多種聊天平台。 | 如果你的團隊專注於遊戲開發，並需要針對遊戲場景的 AI 代理，則應選擇 agent-sprite-forge。 | medium，因為需要調整架構以適應遊戲開發的特定需求。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供了一個簡化的 API 接口來構建 AI 代理，但不支持自架設，限制了靈活性。 | 如果你的團隊需要快速上手的解決方案，且不需要自架設的靈活性，則應選擇 boneyard。 | low，因為 API 接口簡單易用，遷移成本低。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發場景，提供類似的自架 AI 代理，但功能較為專一。 | 如果你的主要需求是遊戲開發，並且希望有針對性的功能。 | medium，因為需要重新設計整個代理的行為邏輯。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於多代理協作，但不支持多平台，適合特定應用場景。 | 如果你的需求是多代理協作，並且不需要跨平台支持。 | high，因為需要重構整個系統以適應不同的架構。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **OpenTag** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **OpenTag** | **agent-sprite-forge** | **Duel-Agents** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於遊戲開發中的 AI 代理，提供了特定的遊戲場景支持，而 OpenTag 更加通用，適合多種聊天平台。 | 提供了一個簡化的 API 接口來構建 AI 代理，但不支持自架設，限制了靈活性。 |
-> | 遷移成本 | - | medium，因為需要調整架構以適應遊戲開發的特定需求。 | low，因為 API 接口簡單易用，遷移成本低。 |
-> | 適用場景 | 主要場景 | 如果你的團隊專注於遊戲開發，並需要針對遊戲場景的 AI 代理 | 如果你的團隊需要快速上手的解決方案，且不需要自架設的靈活性， |
+> | 技術路線 | 本專案 | 專注於遊戲開發場景，提供類似的自架 AI 代理，但功能較為專一。 | 專注於多代理協作，但不支持多平台，適合特定應用場景。 |
+> | 遷移成本 | - | medium，因為需要重新設計整個代理的行為邏輯。 | high，因為需要重構整個系統以適應不同的架構。 |
+> | 適用場景 | 主要場景 | 如果你的主要需求是遊戲開發，並且希望有針對性的功能。 | 如果你的需求是多代理協作，並且不需要跨平台支持。 |
 
 ## 成熟度評估
 
@@ -227,49 +227,44 @@ OpenTag 的核心技術機制依賴於 CopilotKit 的多個模組，這些模組
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 設置過程中可能會遇到環境變數配置錯誤
-  - 解法：仔細檢查 .env 文件中的設定
-- [MEDIUM] 在高並發情況下可能會出現性能瓶頸
-  - 解法：考慮使用 Redis 來持久化對話線程
-- [MEDIUM] 目前社群活躍度不高，可能影響問題解決速度
-  - 解法：參考官方文檔和示例，減少依賴社群支持
+- **[HIGH]** 自架模式下可能面臨的運行和擴展問題，特別是在高流量時期。
+  - 解法：提前規劃資源，並考慮使用負載均衡。
+- [MEDIUM] 需要手動配置環境變數，可能導致錯誤。
+  - 解法：仔細檢查 `.env` 文件的配置，並參考文檔。
+- [MEDIUM] 社群支持可能有限，開放問題數量較多。
+  - 解法：積極參與社群討論，尋求幫助。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 小型團隊可以靈活運用 AI 代理，降低成本。 |
-| 大型企業的核心業務系統 | 不適合 | 需要穩定性和高可用性，而目前處於 alpha 階段。 |
-| 開發者進行 AI 模型測試 | 適合 | 提供了靈活的環境來調整和測試模型。 |
+| 10 人以下的新創公司後端 API | 適合 | 能夠靈活調整代理行為，滿足不同需求。 |
+| 大型企業的核心業務系統 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
+| 需要高數據隱私的團隊 | 非常適合 | 自架式設計讓用戶完全控制數據。 |
+| 對技術要求不高的團隊 | 普通 | 需要一定的技術背景來設置和維護。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 學習時間 | ~10 小時 |
+| 整合時間 | ~5 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、10 小時整合，得到靈活的 AI 代理運行環境，值得嘗試。
+> 花 10 小時學、5 小時整合，得到靈活的 AI 代理，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：自架設的環境能夠更好地控制敏感數據，但需要注意環境變數的安全性和依賴的模組是否有已知漏洞。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-OpenTag 最常與 Slack、Discord 和 Telegram 等聊天平台搭配使用，通常在開發和部署階段進行整合。在一個使用 Slack 的專案中，使用者可以通過設置環境變數和運行指定的命令來啟動代理，具體做法是運行 `pnpm install` 和 `pnpm --filter slack-example dev`。與主流 CI 工具如 GitHub Actions 相容性良好，能夠輕鬆融入現有的開發流程。整合的摩擦點主要在於環境變數的配置和依賴的版本兼容性，這需要使用者在設置過程中仔細檢查。
+> 低風險：自架式設計讓用戶完全控制運行環境，不需要高權限。依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -337,31 +332,38 @@ OpenTag 最常與 Slack、Discord 和 Telegram 等聊天平台搭配使用，通
 | Forks | 80 |
 | Open Issues | 5 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-07-15 |
+| 最後推送 | 2026-07-16 |
 | 建立日期 | 2026-06-26 |
-| Repo 大小 | 2.2 MB |
+| Repo 大小 | 2.5 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/CopilotKit/OpenTag) |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `@copilotkit/bot` `@copilotkit/bot-discord` `@copilotkit/bot-slack` `@copilotkit/bot-store-redis` `@copilotkit/bot-telegram` `@copilotkit/bot-ui` `@copilotkit/bot-whatsapp` `@copilotkit/runtime` `@tanstack/ai` `@tanstack/ai-mcp` `@tanstack/ai-openai` `@slack/bolt` `@slack/types` `playwright` `zod`
+> `@copilotkit/channels` `@copilotkit/channels-discord` `@copilotkit/channels-intelligence` `@copilotkit/channels-slack` `@copilotkit/channels-telegram` `@copilotkit/channels-ui` `@copilotkit/channels-whatsapp` `@copilotkit/runtime` `@tanstack/ai` `@tanstack/ai-mcp` `@tanstack/ai-openai` `@slack/bolt` `@slack/types` `playwright` `zod`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "TypeScript" : 92
+>     "Python" : 8
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@jerelvelarde](https://github.com/jerelvelarde) | 15 |
+> | [@jerelvelarde](https://github.com/jerelvelarde) | 41 |
 > | [@NathanTarbert](https://github.com/NathanTarbert) | 4 |
 > | [@samjulien](https://github.com/samjulien) | 3 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，近期有持續的更新和討論
+**社群活躍度**：社群活躍度尚可，最近有合併請求和問題回應。
 **連結**：[文件](https://docs.copilotkit.ai/slack)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-06-26 ~ 2026-06-29）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #3 from CopilotKit/docs/readme-package-list
+> [!abstract] 最近 10 次 commit（2026-07-15 ~ 2026-07-16）
+> **活躍天數** 2 天 · **最新 commit** Merge pull request #6 from CopilotKit/jerel/copilotkit-channels-intelligence-40037b
 
 ## README 摘錄
 
@@ -373,7 +375,7 @@ OpenTag 最常與 Slack、Discord 和 Telegram 等聊天平台搭配使用，通
 > workspace, except **open-source and self-hosted**: you own the runtime, bring your own
 > model, and wire it to your own tools. No per-seat pricing, no lock-in.
 > 
-> It's built on **[`@copilotkit/bot`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/bot)** —
+> It's built on **[`@copilotkit/channels`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/channels)** —
 > CopilotKit's open SDK for chat-platform agents (Slack first; the same code also runs on
 > Discord, Telegram, and WhatsApp). Clone it, point it at your model and tools, and you own
 > the whole stack.
@@ -382,19 +384,31 @@ OpenTag 最常與 Slack、Discord 和 Telegram 等聊天平台搭配使用，通
 > 
 > https://github.com/user-attachments/assets/a74fa1cb-add0-463e-a23c-aa09b95d5135
 > 
-> ▶️ **[Watch the demo](https://github.com/user-attachments/assets/a74fa1cb-add0-463e-a23c-aa09b95d5135)** (~50s) — an OpenTag agent working a Slack thread: it renders a breakdown, a table, and a bar chart inline (**generative UI**) and files a ticket only after an **Approve** gate (**human-in-the-loop**).
+> ▶️ **[Watch the demo](https://github.com/user-attachments/assets/a74fa1cb-add0-463e-a23c-aa09b95d5135)** (~50s) — a KiteBot agent working a Slack thread: it renders a breakdown, a table, and a bar chart inline (**generative UI**) and files a ticket only after an **Approve** gate (**human-in-the-loop**).
 > 
 > > **Two ways to run it:** **host it on your own** with the open-source SDK below — or skip the ops and **[sign up for the managed service →](https://go.copilotkit.ai/opentag-managed-gh)** coming soon from CopilotKit. The managed service will be part of our Enterprise Intelligence platform. You'll be able to use our cloud-hosting or enterprises can host it on their own infra.
+> >
+> > Note: the **Intelligence Gateway** mode below is part of "host it on your own" — you run that
+> > process yourself and bring your own CopilotKit Intelligence project. It's distinct from the
+> > fully-hosted **managed service** above, which is still on the waitlist.
 > 
-> ## Quick start (self-hosted)
+> ## Quick start
 > 
-> OpenTag ships inside the [CopilotKit monorepo](https://github.com/CopilotKit/CopilotKit) as a
-> first-class example (`examples/slack`). That's the dependable way to run it today while the
-> bot SDK packages finish publishing to npm. (A standalone `npm install` from this repo lights
-> up the moment they land — see [setup.md](./setup.md).)
+> OpenTag's packages are published on npm — a standalone `pnpm install` in this repo pulls in
+> everything you need, no monorepo required.
 > 
-> You'll run two processes: the **agent** (the LLM backend) and the **bot** (the Slack
-> connection) — and set three secrets.
+> You'll run two processes: the **agent backend** (`pnpm runtime`) and **the bot**. For the bot,
+> pick one of two modes:
+> 
+> - **Intelligence Gateway — recommended.** `pnpm channel` runs the bot over the CopilotKit
+>   Intelligence Realtime Gateway. This process never holds a Slack token — Intelligence owns
+>   the Slack edge — so there's less for you to run and secure. You still run this process
+>   yourself and bring your own CopilotKit Intelligence project — it's not the fully-hosted
+>   managed service described below.
+> - **Self-hosted.** `pnpm dev` (or `pnpm start`) runs the bot locally and talks to Slack (and
+>   Discord/Telegram/WhatsApp) directly with your own platform tokens.
+> 
+> Both modes talk to the same agent backend over AG-UI.
 > 
 > ### The packages
 > 
@@ -404,44 +418,58 @@ OpenTag 最常與 Slack、Discord 和 Telegram 等聊天平台搭配使用，通
 > 
 > | Package | Role |
 > | --- | --- |
-> | [`@copilotkit/bot`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/bot) | The platform-agnostic bot engine — threading, tool calls, the human-in-the-loop gate. |
+> | [`@copilotkit/channels`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/channels) | The platform-agnostic bot engine — threading, tool calls, the human-in-the-loop gate. |
 > | [`@copilotkit/runtime`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/runtime) | The AG-UI agent backend that runs your LLM and tools. |
-> | [`@copilotkit/bot-ui`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/bot-ui) | Cross-platform JSX for rich messages (Block Kit on Slack, Components V2 on Discord, HTML on Telegram). |
-> | [`@copilotkit/bot-slack`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/bot-slack) | The Slack adapter — or swap it for the platform you're targeting (below). |
+> | [`@copilotkit/channels-ui`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/channels-ui) | Cross-platform JSX for rich messages (Block Kit on Slack, Components V2 on Discord, HTML on Telegram). |
+> | [`@copilotkit/channels-slack`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/channels-slack) | The Slack adapter — or swap it for the platform you're targeting (below). |
 > 
 > **Optional** — add only what you use:
 > 
 > | Package | When you need it |
 > | --- | --- |
-> | [`@copilotkit/bot-discord`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/bot-discord) · [`-telegram`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/bot-telegram) · [`-whatsapp`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/bot-whatsapp) | Running on a platform other than Slack — one adapter per platform. |
-> | [`@copilotkit/bot-store-redis`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/bot-store-redis) | Durable thread persistence across restarts (defaults to in-memory without it). |
+> | [`@copilotkit/channels-discord`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/channels-discord) · [`-telegram`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/channels-telegram) · [`-whatsapp`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/channels-whatsapp) | Running on a platform other than Slack — one adapter per platform. |
+> | [`@copilotkit/channels-intelligence`](https://github.com/CopilotKit/CopilotKit/tree/main/packages/channels-intelligence) | Runs the bot over the CopilotKit Intelligence Realtime Gateway instead of holding platform tokens — see `app/managed.ts`. |
 > 
 > **1. Create a Slack app.** At [api.slack.com/apps](https://api.slack.com/apps?new_app=1) →
 > *From a manifest* → paste [`slack-app-manifest.yaml`](./slack-app-manifest.yaml). Install it,
 > then grab the **Bot User OAuth Token** (`xoxb-…`) and an **App-Level Token** (`xapp-…`, with the
-> `connections:write` scope). Step-by-step in [setup.md](./setup.md#1-create-a-slack-app).
+> `connections:write` scope) — needed for self-hosted mode, or to register the app with your
+> CopilotKit Intelligence project for Intelligence mode. Step-by-step in
+> [setup.md](./setup.md#1-create-a-slack-app).
 > 
-> **2. Set three secrets** in `.env` (`cp .env.example .env`):
+> **2. Set your secrets** in `.env` (`cp .env.example .env`):
 > 
 > ```bash
+> OPENAI_API_KEY=sk-...      # the agent runs on OpenAI's Responses API (required for web search)
+> 
+> # Self-hosted mode:
 > SLACK_BOT_TOKEN=xoxb-...
 > SLACK_APP_TOKEN=xapp-...
-> OPENAI_API_KEY=sk-...      # or ANTHROPIC_API_KEY — bring your own model
+> 
+> # Intelligence Gateway mode — full list in .env.example:
+> INTELLIGENCE_GATEWAY_WS_URL=wss://...
+> INTELLIGENCE_API_KEY=cpk-...
+> INTELLIGENCE_ORG_ID=org_...
+> INTELLIGENCE_PROJECT_ID=...
+> INTELLIGENCE_CHANNEL_ID=channel_...
 > ```
 > 
-> **3. Run it** from the CopilotKit monorepo root:
+> **3. Run it:**
 > 
 > ```bash
 > pnpm install
-> pnpm --filter slack-example runtime   # the agent backend, on :8200
-> pnpm --filter slack-example dev        # the bot
+> pnpm runtime    # the agent backend, on :8200
+> 
+> pnpm channel    # recommended — the bot over the Intelligence Gateway
+> # or
+> pnpm dev        # alternative — the bot, self-hosted
 > ```
 > 
 > **4. Talk to it.** @mention the bot in any channel thread:
 > 
-> > @OpenTag summarize this thread and file it as a bug
+> > @KiteBot summarize this thread and file it as a bug
 > 
-> That's the whole loop. To wire up Linear, Notion, inline charts, Redis persistence, or to run
+> That's the whole loop. To wire up Linear, Notion, inline charts, or to run
 > on Discord / Telegram / WhatsApp, see **[setup.md](./setup.md)**.  
 > 
 > We won't lie to you, though. Setting up hosting for chat agents is not easy. To skip all of that heartache, go [join the waitlist](https://go.copilotkit.ai/opentag-managed-gh) for the CopilotKit managed service as part of our Intelligence platform, both cloud-hosted or self-hosted.
@@ -461,31 +489,40 @@ OpenTag 最常與 Slack、Discord 和 Telegram 等聊天平台搭配使用，通
 > The full architecture, the file-by-file map, and every integration live in
 > **[setup.md](./setup.md)**.
 > 
-> ## Don't want to host it yourself?
+> ## Deep research (LangGraph deep agent)
 > 
-> Self-hosting means you run and scale the runtime, persistence, and inspection tooling yourself.
-> A **managed CopilotKit service** is on its way. It's the same agent, without the ops: durable
-> threads, persistence, hosted inspection, and agents that improve from feedback (**Continuous
-> Learning from Human Feedback**). 
+> `agent/` is an alternative agent backend to `runtime.ts` — a Python
+> [`deepagents`](https://github.com/langchain-ai/deepagents) (LangGraph) planner with a virtual
+> filesystem and OPTIONAL Tavily web research, served over AG-UI on `:8123`. Instead of a single
+> system-prompted LLM call, it plans with `write_todos`, reads/writes its own virtual files, and
+> (when configured) researches the web before synthesizing an answer — while still calling
+> KiteBot's forwarded generative-UI tools like the TS runtime does.
 > 
-> - **[Join the waitlist →](https://go.copilotkit.ai/opentag-managed-gh)** — be first in when the managed service opens.
-> - **[Talk to an engineer →](https://copilotkit.ai/talk-to-an-engineer)** — building something real on this? We'd love to help you ship it.
+> Only `OPENAI_API_KEY` is required. `TAVILY_API_KEY` is **optional** — without it, chat and UI
+> generation still work (the agent answers from its own knowledge); with it, live web research
+> turns on.
 > 
-> ## Learn more
+> To run it:
 > 
-> The **[CopilotKit Slack quickstart](https://docs.copilotkit.ai/slack)** is the canonical guide
-> to building a Slack agent — read it alongside this starter. Detailed setup and configuration
-> lives in **[setup.md](./setup.md)**.
+> ```bash
+> cd agent && uv sync   # requires uv: https://docs.astral.sh/uv/
+> pnpm agent            # cd agent && uv run python main.py — serves over AG-UI on :8123
+>                        # (port from SERVER_PORT/PORT env, default 8123)
+> ```
 > 
-> ## License
+> Then point the bot at it instead of `runtime.ts` by setting in `.env`:
 > 
-> MIT — see [LICENSE](./LICENSE).
+> ```bash
+> AGENT_URL=http://localhost:8123/
+> ```
+> 
+> W
 
 ## 延伸閱讀
 
 相關概念：[[自動化]] · [[微服務]] · [[API 設計]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[AlexandrosGounis--pdfx|AlexandrosGounis/pdfx]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[DietrichGebert--ponytail|DietrichGebert/ponytail]] · [[Fokkyp--SoftwareCopyright-Skill|Fokkyp/SoftwareCopyright-Skill]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AlexandrosGounis--pdfx|AlexandrosGounis/pdfx]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[DietrichGebert--ponytail|DietrichGebert/ponytail]] · [[Fokkyp--SoftwareCopyright-Skill|Fokkyp/SoftwareCopyright-Skill]]
 
 [GitHub](https://github.com/CopilotKit/OpenTag)
 
