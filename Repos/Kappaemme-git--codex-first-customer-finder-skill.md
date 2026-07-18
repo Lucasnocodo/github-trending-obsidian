@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "A Codex skill that finds evidence-backed potential first customers from recent public signals."
 homepage: ""
-stars: 762
-stars_per_day: 191
-forks: 79
+stars: 792
+stars_per_day: 158
+forks: 81
 open_issues: 3
 created: 2026-07-12
 pushed_at: 2026-07-13
@@ -30,8 +30,8 @@ use_case: "透過公開信號找到潛在的首位客戶，幫助新創公司進
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-24"
+appearances: 3
+next_review: "2026-07-25"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-16"
-star_history: "2026-07-16:712,2026-07-16:712,2026-07-17:761,2026-07-17:762"
+star_history: "2026-07-16:712,2026-07-16:712,2026-07-17:761,2026-07-17:762,2026-07-18:792"
 tags:
   - github
   - "category/開發工具"
@@ -766,5 +766,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-18|2026-07-18]] — 再次上榜，792 stars
 - [[2026-07-17|2026-07-17]] — 再次上榜，761 stars
 - [[2026-07-16|2026-07-16]] — 首次收錄，712 stars

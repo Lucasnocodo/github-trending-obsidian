@@ -2913,10 +2913,10 @@
   },
   "mereyabdenbekuly-ctrl/clodex-ide": {
     "first_seen": "2026-07-13",
-    "last_seen": "2026-07-17",
-    "times_seen": 5,
+    "last_seen": "2026-07-18",
+    "times_seen": 6,
     "stars_first": 641,
-    "stars_last": 829
+    "stars_last": 833
   },
   "op7418/guizang-material-illustration": {
     "first_seen": "2026-07-13",
@@ -2927,17 +2927,17 @@
   },
   "MDX-Tom/gpt-5.6-instruct": {
     "first_seen": "2026-07-14",
-    "last_seen": "2026-07-17",
-    "times_seen": 4,
+    "last_seen": "2026-07-18",
+    "times_seen": 5,
     "stars_first": 743,
-    "stars_last": 1718
+    "stars_last": 1900
   },
   "littledivy/mimic": {
     "first_seen": "2026-07-14",
-    "last_seen": "2026-07-17",
-    "times_seen": 4,
+    "last_seen": "2026-07-18",
+    "times_seen": 5,
     "stars_first": 730,
-    "stars_last": 1108
+    "stars_last": 1149
   },
   "William-Lu-stack/LuxyAI": {
     "first_seen": "2026-07-14",
@@ -2955,24 +2955,24 @@
   },
   "x4gKing/Marzban-Panel": {
     "first_seen": "2026-07-15",
-    "last_seen": "2026-07-17",
-    "times_seen": 3,
+    "last_seen": "2026-07-18",
+    "times_seen": 4,
     "stars_first": 672,
-    "stars_last": 847
+    "stars_last": 910
   },
   "xai-org/grok-build": {
     "first_seen": "2026-07-16",
-    "last_seen": "2026-07-17",
-    "times_seen": 2,
+    "last_seen": "2026-07-18",
+    "times_seen": 3,
     "stars_first": 5254,
-    "stars_last": 12986
+    "stars_last": 16802
   },
   "Kappaemme-git/codex-first-customer-finder-skill": {
     "first_seen": "2026-07-16",
-    "last_seen": "2026-07-17",
-    "times_seen": 2,
+    "last_seen": "2026-07-18",
+    "times_seen": 3,
     "stars_first": 712,
-    "stars_last": 761
+    "stars_last": 792
   },
   "cosmtrek/mindwalk": {
     "first_seen": "2026-07-16",
@@ -2990,23 +2990,30 @@
   },
   "Fei-Away/Codex-Dream-Skin": {
     "first_seen": "2026-07-17",
-    "last_seen": "2026-07-17",
-    "times_seen": 1,
+    "last_seen": "2026-07-18",
+    "times_seen": 2,
     "stars_first": 6371,
-    "stars_last": 6371
+    "stars_last": 8857
   },
   "pixel-point/aval": {
     "first_seen": "2026-07-17",
-    "last_seen": "2026-07-17",
-    "times_seen": 1,
+    "last_seen": "2026-07-18",
+    "times_seen": 2,
     "stars_first": 1069,
-    "stars_last": 1069
+    "stars_last": 1170
   },
   "CluvexStudio/Aether": {
     "first_seen": "2026-07-17",
-    "last_seen": "2026-07-17",
-    "times_seen": 1,
+    "last_seen": "2026-07-18",
+    "times_seen": 2,
     "stars_first": 941,
-    "stars_last": 941
+    "stars_last": 1146
+  },
+  "tandpfun/wardrobe": {
+    "first_seen": "2026-07-18",
+    "last_seen": "2026-07-18",
+    "times_seen": 1,
+    "stars_first": 909,
+    "stars_last": 909
   }
 }

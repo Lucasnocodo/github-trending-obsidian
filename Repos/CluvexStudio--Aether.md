@@ -7,10 +7,10 @@ language: Rust
 license: AGPL-3.0
 description: ""
 homepage: ""
-stars: 942
-stars_per_day: 471
-forks: 45
-open_issues: 0
+stars: 1146
+stars_per_day: 382
+forks: 65
+open_issues: 4
 created: 2026-07-14
 pushed_at: 2026-07-16
 first_seen: 2026-07-17
@@ -30,8 +30,8 @@ use_case: "提供一個用於繞過網路審查的用戶空間代理客戶端。
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-20"
+appearances: 2
+next_review: "2026-07-21"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-17"
-star_history: "2026-07-17:941,2026-07-17:942"
+star_history: "2026-07-17:941,2026-07-17:942,2026-07-18:1146"
 tags:
   - github
   - "category/安全"
@@ -864,4 +864,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-18|2026-07-18]] — 再次上榜，1.1k stars
 - [[2026-07-17|2026-07-17]] — 首次收錄，941 stars

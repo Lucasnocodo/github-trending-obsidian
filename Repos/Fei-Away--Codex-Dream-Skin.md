@@ -7,10 +7,10 @@ language: JavaScript
 license: N/A
 description: "Codex Dream Skin"
 homepage: ""
-stars: 6404
-stars_per_day: 6404
-forks: 734
-open_issues: 52
+stars: 8857
+stars_per_day: 4429
+forks: 938
+open_issues: 86
 created: 2026-07-15
 pushed_at: 2026-07-17
 first_seen: 2026-07-17
@@ -30,8 +30,8 @@ use_case: "為 Codex 桌面端提供可自定義的主題換膚工具。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-20"
+appearances: 2
+next_review: "2026-07-21"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 20
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-17"
-star_history: "2026-07-17:6371,2026-07-17:6404"
+star_history: "2026-07-17:6371,2026-07-17:6404,2026-07-18:8857"
 tags:
   - github
   - "category/開發工具"
@@ -817,4 +817,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-18|2026-07-18]] — 再次上榜，8.9k stars
 - [[2026-07-17|2026-07-17]] — 首次收錄，6.4k stars
