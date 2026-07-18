@@ -419,7 +419,7 @@ https://xiaoyinsi.com/wiki
 
 相關概念：[[投資教育]] · [[風險管理]] · [[金融市場]]
 
-相關專案：[[Krishnagangwal--CS-Fundamentals|Krishnagangwal/CS-Fundamentals]] · [[WenyuChiou--awesome-agentic-ai-zh|WenyuChiou/awesome-agentic-ai-zh]] · [[datawhalechina--Agent-Learning-Hub|datawhalechina/Agent-Learning-Hub]]
+相關專案：[[Krishnagangwal--CS-Fundamentals|Krishnagangwal/CS-Fundamentals]] · [[WenyuChiou--awesome-agentic-ai-zh|WenyuChiou/awesome-agentic-ai-zh]] · [[datawhalechina--Agent-Learning-Hub|datawhalechina/Agent-Learning-Hub]] · [[AlephAITech--WorkBuddyGuide|AlephAITech/WorkBuddyGuide]]
 
 [GitHub](https://github.com/xuchonglang/investing-for-beginners) · [官方網站](https://xiaoyinsi.com/wiki)
 

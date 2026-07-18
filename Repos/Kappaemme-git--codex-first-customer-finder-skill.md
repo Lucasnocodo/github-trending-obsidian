@@ -17,7 +17,7 @@ first_seen: 2026-07-16
 week: "2026-W29"
 month: "2026-07"
 category: "開發工具"
-subcategory: "客戶發掘"
+subcategory: "客戶開發"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-16
-use_case: "透過公開信號找到潛在的首位客戶，幫助新創公司進行客戶發掘。"
+use_case: "透過公開信號找出潛在的第一批客戶，幫助初創企業進行客戶開發。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-16"
-star_history: "2026-07-16:712,2026-07-16:712,2026-07-17:761,2026-07-17:762,2026-07-18:792"
+star_history: "2026-07-16:712,2026-07-16:712,2026-07-17:761,2026-07-17:762,2026-07-18:792,2026-07-18:792"
 tags:
   - github
   - "category/開發工具"
@@ -56,12 +56,12 @@ tags:
 aliases:
   - "codex-first-customer-finder-skill"
   - "Kappaemme-git/codex-first-customer-finder-skill"
-  - "透過公開信號找到潛在的首位客戶，幫助新創公司進行客戶發掘。"
+  - "透過公開信號找出潛在的第一批客戶，幫助初創企業進行客戶開發。"
 ---
 
 # codex-first-customer-finder-skill
 
-**762** stars · **191** stars/天 · 建立 4 天前 · Python · MIT
+**792** stars · **158** stars/天 · 建立 5 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Kappaemme-git--codex-first-customer-finder-skill");
@@ -79,20 +79,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `codex` `codex-skill` `customer-discovery` `early-adopters` `prospecting` `startup`
 
 > [!summary] 一句話摘要
-> 透過公開信號找到潛在的首位客戶，幫助新創公司進行客戶發掘。
+> 透過公開信號找出潛在的第一批客戶，幫助初創企業進行客戶開發。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (191 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** 2 人 · **參與度** Medium
-> **適合** 希望在新創階段快速找到早期客戶的創業團隊。
-> **一句話重點** 這個工具不僅提供潛在客戶名單，還鏈接了每個客戶的來源，這使得聯繫更具針對性。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (158 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 4 天前) · **貢獻者** 2 人 · **參與度** Medium
+> **適合** 需要精準客戶開發的初創企業創始人或市場研究人員。
+> **一句話重點** 這個專案的獨特之處在於它將公開信號轉化為具體的客戶開發行動，並強調手動外聯的重要性。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Kappaemme-git--codex-first-customer-finder-skill");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "客戶發掘" && p.file.name !== "Kappaemme-git--codex-first-customer-finder-skill" && p.status !== "archived")
+>     .where(p => p.subcategory === "客戶開發" && p.file.name !== "Kappaemme-git--codex-first-customer-finder-skill" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,109 +103,110 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 客戶發掘 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 客戶開發 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到快速生成潛在客戶名單的效果，值得一試。
+> **結論** 花 2 小時學習，1 小時整合，得到精準的客戶開發工具，值得一試。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於使用公開信號來生成基於證據的潛在客戶名單。
+> 這個專案提供了一種基於公開信號的證據驅動客戶篩選方法，並生成手動外聯的開場白。
 
 ## 專案簡介
 
-這個專案是一個 Codex 技能，能將新創公司的 URL 或產品想法轉換為合格的潛在首位客戶名單，透過分析公開的需求、痛點和時機信號。使用者只需提供一個 URL，系統會定義理想客戶輪廓，從公共來源中研究並鏈接每個潛在客戶的證據，並根據適合度和時機進行排名。最終會生成一份 HTML 報告，包含客戶評估、潛在客戶名單及個性化的聯繫開場白。這個工具的賣點在於它不會自動發送任何聯繫請求，保持所有聯繫手動進行，並避免使用私人聯繫資料。使用者可以透過 `$first-customer-finder` 指令來尋找潛在客戶，並根據不同模式（如設計夥伴、B2B 研究等）進行調整。
+這個 Codex 技能的核心機制是將初創企業的 URL 或產品概念轉換為一個合格的潛在客戶名單，依賴於最近的公開信號來評估需求和時機。使用者只需提供一個 URL，系統會分析該 URL，定義理想客戶輪廓，並從公共來源中尋找明確的需求和痛點信號。最終，系統會生成一份 HTML 報告，包含潛在客戶的證據鏈接、評分和個性化的開場白。這個工具的賣點在於其證據驅動的客戶篩選過程，並且不會自動發送任何外聯。技術上，這個工具使用 Python 和 JavaScript，並依賴於公共數據來源進行分析，這樣的設計使得它能夠避免涉及敏感的個人數據。
 
-技術上，這個專案使用 Python 和 JavaScript，並依賴於公共信號的分析，對於新創公司來說，這是一個低成本的客戶發掘工具，尤其適合初創階段的團隊。與其他客戶發掘工具相比，它不僅提供了潛在客戶的名單，還鏈接了每個潛在客戶的來源，這使得使用者能夠更有針對性地進行聯繫。此工具的使用限制在於，所有的潛在客戶都是基於假設，並非確認的客戶，這可能會影響實際的轉換率。整體來看，這個工具適合需要快速找到早期客戶的創業團隊，特別是那些希望在市場上獲得反饋的團隊。
+與其他客戶開發工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，這個工具提供了更為細緻的證據鏈接和手動外聯的選項，適合需要精確客戶開發的初創企業。使用者可以選擇不同的模式，如 `quick`、`standard` 或 `deep`，以滿足不同的需求。這個工具的輸出報告不僅包含潛在客戶的名單，還有針對每個客戶的具體開場白，這對於初創企業在尋找早期用戶時非常有幫助。雖然這個工具的使用需要一定的手動操作，但它的證據驅動方法能夠提供更高的客戶質量。整體來看，這個工具適合需要精準客戶開發的初創企業，尤其是在尋找早期用戶或設計夥伴的情境下。
 
 **技術棧**：`Python` · `JavaScript`
 
 ## 重點功能
 
-- 潛在客戶分析 — 根據提供的 URL 分析並定義理想客戶輪廓。
-- 證據鏈接 — 每個潛在客戶都鏈接到其公開來源，提供透明的證據支持。
-- 多種模式 — 支援 quick、standard、deep、design-partners 和 b2b 模式，以滿足不同需求。
-- 手動聯繫 — 所有的聯繫開場白都是手動生成，避免自動發送，保持聯繫的個性化。
-- HTML 報告生成 — 生成包含潛在客戶名單、評估和開場白的響應式 HTML 報告。
+- 證據驅動的潛在客戶篩選 — 根據公開信號評估潛在客戶的需求和時機。
+- 多種模式選擇 — 提供 `quick`、`standard`、`deep`、`design-partners` 和 `b2b` 模式以滿足不同需求。
+- 手動外聯開場白 — 自動生成的開場白基於公開來源，避免敏感數據的使用。
+- HTML 報告生成 — 生成包含潛在客戶名單和證據鏈接的響應式報告。
+- 客戶輪廓定義 — 定義主要和相鄰的理想客戶輪廓，幫助精準定位。
 
 ## 快速開始
 
-1. 安裝 Codex 技能
+1. 安裝技能
 ```bash
 npx --yes codex-first-customer-finder-skill@latest
 ```
-2. 使用技能尋找潛在客戶
+2. 找到潛在客戶
 ```bash
-$first-customer-finder https://example.com
+Use $first-customer-finder to find ten evidence-backed potential first customers for https://example.com and create the final HTML report.
 ```
-3. 以設計夥伴模式使用
+3. 使用設計夥伴模式
 ```bash
-$first-customer-finder in design-partners mode for https://example.com
+Use $first-customer-finder in design-partners mode for this startup: [URL].
 ```
 
 ## 程式碼範例
 
 ```python
-[
-  "# 前置條件（安裝完成後）",
-  "$first-customer-finder https://example.com",
-  "# 預期輸出（生成的報告將包含潛在客戶名單和評估）"
-]
+{
+  "前置條件": "安裝 Codex First Customer Finder Skill。",
+  "指令": "Use $first-customer-finder to find ten evidence-backed potential first customers for https://example.com and create the final HTML report.",
+  "預期輸出": "生成一份包含潛在客戶名單的 HTML 報告，並附上證據鏈接和開場白。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 762 stars（191/天），forks 79（10.4%），顯示出強烈的市場需求。作者 Kappaemme-git 是一位專注於 Codex 技能開發的開發者，這個專案解決了新創公司在客戶發掘過程中缺乏有效工具的痛點，之前的解決方案往往依賴於手動搜尋和篩選，效率低下。此專案的推出引起了關注，特別是在創業社群中，因為它提供了一個系統化的方法來識別潛在客戶。技術上，這個工具的實現依賴於公共信號的分析，這在當前的市場環境中變得越來越可行，因為許多企業開始在網上分享他們的需求和痛點。forks/stars 比率為 10.4%，顯示出有相當比例的用戶對此工具進行了實際的修改和使用，這是社群活躍度的良好指標。
+> 建立 5 天內累積 792 stars（158/天），forks 81（10.2%），顯示出相對活躍的社群關注。這個專案的作者 Kappaemme-git 以開發 Codex 技能為主，解決了初創企業在客戶開發過程中缺乏有效工具的痛點，之前的方案往往無法提供具體的證據鏈接和手動外聯的選項。這個專案的推出恰逢初創企業對於精準客戶開發的需求上升，並且在社群中引發了討論。這個工具的設計充分考慮了用戶的需求，避免了自動化的外聯方式，讓使用者能夠更好地控制客戶開發的過程。
 
 ## 適合誰使用
 
-**目標受眾**：希望在新創階段快速找到早期客戶的創業團隊。
+**目標受眾**：需要精準客戶開發的初創企業創始人或市場研究人員。
 
 > [!example] 使用場景
-> - 創業者用它來快速找到潛在的早期客戶，因為它能基於公開信號提供有根據的客戶名單。
-> - 市場研究員用它來分析競爭對手的客戶需求，因為它能夠鏈接每個潛在客戶的來源，提供深入的市場洞察。
-> - 產品經理用它來尋找設計夥伴，因為它能優先考慮那些公開表達需求的潛在客戶，從而獲得有價值的反饋。
+> - 初創企業創始人用它來找到第一批潛在客戶，因為它能提供基於公開信號的證據支持，幫助他們更快進入市場。
+> - 市場研究員用它來分析競爭對手的客戶群，因為它能夠提供詳細的客戶輪廓和需求信號，幫助他們制定策略。
+> - 產品經理用它來尋找設計夥伴，因為它能夠優先考慮那些公開描述問題並可能給予產品反饋的人。
 
 ## 架構分析
 
-這個專案採用模組化設計，將客戶發掘過程分為多個步驟，包括定義客戶輪廓、信號分析和報告生成。資料流從用戶提供的 URL 開始，經過分析和評估，最終生成一份 HTML 報告。這種設計使得使用者能夠靈活選擇不同的模式來滿足需求，並保持手動聯繫的靈活性。選擇手動聯繫而非自動化發送的代價是需要更多的時間和精力，但這樣能提高聯繫的個性化程度。擴展性方面，該工具的設計允許未來增加更多的客戶分析模式和報告格式，這使得它能夠適應不斷變化的市場需求。
+這個專案採用模組化的設計，將客戶篩選和報告生成分開。使用者輸入 URL，系統會通過公共數據來源進行分析，並生成報告。這樣的設計使得系統能夠靈活應對不同的客戶需求。
+
+資料流從用戶輸入開始，經過數據分析和篩選，最終生成 HTML 報告。選擇這種設計的代價是需要依賴公共數據的可用性，若數據不足，報告的質量會受到影響。擴展性方面，若未來需要增加更多的數據來源，可能需要進一步調整資料處理的邏輯。
 
 ## 技術深入分析
 
-這個專案的核心技術機制在於分析公開信號，利用 Python 和 JavaScript 進行資料處理和報告生成。它使用了資料庫查詢和網路爬蟲技術來獲取潛在客戶的公開資料，並根據定義的客戶輪廓進行篩選。效能方面，該工具能夠快速處理多個 URL 的分析，並生成報告，具體的處理時間依賴於資料的量和複雜度。設計上選擇了手動聯繫的方式，這樣雖然增加了使用者的工作量，但能提高聯繫的個性化和針對性。這個選擇也降低了對自動化系統的依賴，減少了潛在的錯誤和風險。技術風險方面，未來在擴大使用範圍時，可能會遇到資料來源的可靠性問題，這需要持續的監控和更新。整合方面，該工具可以與現有的開發環境無縫結合，特別是在使用 Codex 的情境下，能夠輕鬆嵌入到現有的工作流程中。
+這個專案的核心技術機制是通過分析公開數據來篩選潛在客戶，使用 Python 和 JavaScript 進行實作。它利用了網路爬蟲和數據分析技術，從不同的公共來源收集信號，並根據這些信號評估客戶的需求和時機。這樣的設計使得工具能夠靈活應對不同的客戶需求，並且能夠生成詳細的報告。然而，這也帶來了對公共數據的依賴，若數據不足，報告的質量會受到影響。設計上選擇了手動外聯的方式，這樣可以避免自動化過程中可能出現的誤發問題，但也增加了使用者的操作負擔。這個工具在與其他主流框架的整合上相對簡單，使用者只需安裝並配置即可開始使用。整體來看，這個專案在客戶開發領域提供了一個創新的解決方案，未來可能會隨著數據來源的增加而進一步擴展功能。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝和使用指導，包含具體的範例。安裝過程相對順暢，使用者只需執行簡單的命令即可完成安裝。文件中沒有多語言支持，但內容簡潔易懂，適合快速上手。
+> README 文件提供了清晰的安裝和使用指引，並包含範例。安裝過程相對順暢，沒有明顯的坑。文件目前僅提供英文版本，可能對非英語使用者造成一定障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 基於公開信號的證據鏈接，提供透明的客戶分析。
-> - 支援多種模式，靈活滿足不同需求。
-> - 生成的報告格式化良好，易於分享和理解。
+> - 提供證據驅動的客戶篩選，增加潛在客戶的質量。
+> - 手動外聯方式讓使用者能夠更好地控制客戶開發過程。
+> - 生成的 HTML 報告易於分享和展示。
 
 > [!danger] 缺點
-> - 所有潛在客戶僅基於假設，實際轉換率不保證。
-> - 不支援自動發送聯繫請求，增加了手動工作量。
-> - 對於某些行業的公開信號可能不足，影響結果的準確性。
+> - 僅依賴公開信號，無法保證客戶的實際購買意願。
+> - 所有外聯需手動進行，增加了操作的複雜度。
+> - 報告生成的質量依賴於公共數據的可用性和準確性。
 
 > [!warning] 注意事項
-> - 所有潛在客戶僅基於公開信號，並非確認的客戶。
-> - 不支援自動發送聯繫請求，所有聯繫需手動進行。
-> - 對於某些特定行業的公開信號可能不足，影響結果的準確性。
+> - 僅基於公開信號，無法保證客戶的實際購買意願。
+> - 不支持自動發送外聯，所有外聯需手動進行。
+> - 報告生成的質量依賴於公共數據的可用性和準確性。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 此工具專注於自動化客戶發掘過程，而本專案則強調手動聯繫和證據鏈接。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了更廣泛的客戶數據庫，但缺乏本專案的證據鏈接功能。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | Codex-shim 提供了更靈活的 API 接口，但不專注於客戶發掘，適用場景不同。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的客戶開發功能，但更專注於自動化過程，可能不如本專案精確。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這是一個針對市場研究的工具，雖然功能相似，但缺乏本專案的證據鏈接和手動外聯選項。 |
 
 ## 替代方案決策
 
@@ -213,16 +214,16 @@ $first-customer-finder in design-partners mode for https://example.com
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於自動化客戶發掘過程，而本專案則強調手動聯繫和證據鏈接。 | 如果需要快速自動化客戶發掘，且不介意失去個性化聯繫。 | medium，因為需要重新調整客戶發掘的流程和策略。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供了更廣泛的客戶數據庫，但缺乏本專案的證據鏈接功能。 | 如果需要更全面的客戶數據，並且不需要證據鏈接的透明度。 | low，因為數據格式和使用方式相似。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於自動化客戶開發過程，而本專案則強調手動外聯和證據鏈接的生成。 | 如果你的團隊需要快速自動化客戶開發流程，這個工具可能更合適。 | medium，因為需要重新設計客戶開發的流程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具提供市場研究功能，但缺乏本專案的證據鏈接和手動外聯選項。 | 如果你的需求主要是市場研究而非客戶開發，這個工具可能更合適。 | low，因為功能相似，轉移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **codex-first-customer-finder-skill** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於自動化客戶發掘過程，而本專案則強調手動聯繫和證據鏈接。 | 提供了更廣泛的客戶數據庫，但缺乏本專案的證據鏈接功能。 |
-> | 遷移成本 | - | medium，因為需要重新調整客戶發掘的流程和策略。 | low，因為數據格式和使用方式相似。 |
-> | 適用場景 | 主要場景 | 如果需要快速自動化客戶發掘，且不介意失去個性化聯繫。 | 如果需要更全面的客戶數據，並且不需要證據鏈接的透明度。 |
+> | 技術路線 | 本專案 | 這個工具專注於自動化客戶開發過程，而本專案則強調手動外聯和證據鏈接的生成。 | 這個工具提供市場研究功能，但缺乏本專案的證據鏈接和手動外聯選項。 |
+> | 遷移成本 | - | medium，因為需要重新設計客戶開發的流程。 | low，因為功能相似，轉移成本較低。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要快速自動化客戶開發流程，這個工具可能更合適。 | 如果你的需求主要是市場研究而非客戶開發，這個工具可能更合適。 |
 
 ## 成熟度評估
 
@@ -239,18 +240,21 @@ $first-customer-finder in design-partners mode for https://example.com
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 潛在客戶名單可能不夠準確，因為基於公開信號的分析可能存在偏差。
-  - 解法：建議交叉驗證潛在客戶資料，並結合其他來源的資訊。
-- [MEDIUM] 手動聯繫可能導致聯繫效率低下。
-  - 解法：建立一個聯繫模板以提高效率。
+- **[HIGH]** 在某些情況下，公共數據可能不完整，導致報告質量下降。
+  - 解法：使用多個數據來源進行交叉驗證。
+- [MEDIUM] 手動外聯過程中可能會漏掉潛在客戶。
+  - 解法：制定明確的外聯計畫，逐步跟進。
+- [low] 報告生成時間可能因數據量而異。
+  - 解法：在數據量較小的情況下進行測試。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 5 人以下的新創團隊尋找早期客戶 | 非常適合 | 能快速生成潛在客戶名單，並提供具體的聯繫開場白。 |
-| 大型企業的市場研究部門 | 普通 | 雖然可以使用，但可能需要更多的數據來源來支援分析。 |
-| 需要自動化客戶發掘的團隊 | 不適合 | 該工具強調手動聯繫，與自動化需求不符。 |
+| 10 人以下的新創公司尋找早期用戶 | 非常適合 | 能夠提供精準的客戶篩選和手動外聯的選項，適合小型團隊。 |
+| 大型企業進行市場調研 | 普通 | 雖然有市場調研功能，但不如專門的市場調研工具全面。 |
+| 需要快速自動化客戶開發的團隊 | 不適合 | 強調手動外聯，與自動化需求不符。 |
+| 產品經理尋找設計夥伴 | 非常適合 | 能夠優先考慮公開描述問題的潛在客戶，適合尋找反饋。 |
 
 ## 採用成本分析
 
@@ -262,12 +266,12 @@ $first-customer-finder in design-partners mode for https://example.com
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到快速生成潛在客戶名單的效果，值得一試。
+> 花 2 小時學習，1 小時整合，得到精準的客戶開發工具，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，適合在 CI/CD 流程中使用。
+> 低風險：這個工具不需要高權限，且不存取敏感資料，使用過程中不涉及個人數據。
 
 ## 健康度儀表板
 
@@ -332,7 +336,7 @@ $first-customer-finder in design-partners mode for https://example.com
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 79 |
+| Forks | 81 |
 | Open Issues | 3 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-07-13 |
@@ -356,8 +360,7 @@ $first-customer-finder in design-partners mode for https://example.com
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有合併請求和問題未解決。
-**連結**：[文件](https://github.com/Kappaemme-git/codex-first-customer-finder-skill)
+**社群活躍度**：社群活躍度中等，最近有合併請求和開放問題。
 
 ## 開發動態
 
@@ -468,7 +471,7 @@ $first-customer-finder in design-partners mode for https://example.com
 
 ## 延伸閱讀
 
-相關概念：[[客戶發掘]] · [[市場研究]] · [[需求分析]]
+相關概念：[[客戶開發]] · [[市場研究]] · [[證據驅動]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlephAITech--WorkBuddyGuide|AlephAITech/WorkBuddyGuide]]
 
@@ -476,11 +479,11 @@ $first-customer-finder in design-partners mode for https://example.com
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：客戶發掘）
+> [!note]- 直接競品（同子分類：客戶開發）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "客戶發掘" AND file.name != "Kappaemme-git--codex-first-customer-finder-skill"
+> WHERE subcategory = "客戶開發" AND file.name != "Kappaemme-git--codex-first-customer-finder-skill"
 > SORT stars DESC
 > ```
 
@@ -512,7 +515,7 @@ $first-customer-finder in design-partners mode for https://example.com
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["客戶發掘","市場研究","需求分析"];
+> const concepts = ["客戶開發","市場研究","證據驅動"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Kappaemme-git--codex-first-customer-finder-skill" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
