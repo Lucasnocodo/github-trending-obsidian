@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "An extension of the traditional PDF standard, allowing multiple files to be stored in a single file via metadata"
 homepage: ""
-stars: 757
-stars_per_day: 33
-forks: 87
+stars: 760
+stars_per_day: 32
+forks: 88
 open_issues: 3
 created: 2026-06-24
-pushed_at: 2026-07-18
+pushed_at: 2026-07-19
 first_seen: 2026-06-29
 week: "2026-W27"
 month: "2026-06"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-29
-use_case: "將多個文件打包到單一 PDF 文件中，並保持向後兼容性。"
+use_case: "將多個文件存儲在單一 PDF 文件中的擴展，並透過元數據進行管理。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-07-08"
 contributor_count: 4
 engagement: "medium"
 issue_close_rate: 40
-repo_size_kb: 3303
-readme_length: 1304
+repo_size_kb: 3314
+readme_length: 1352
 bus_factor: 1
-last_release_days: 16
+last_release_days: 17
 release_cadence: "monthly"
 verdict: ""
 ring_history: "assess@2026-06-29"
-star_history: "2026-06-29:489,2026-06-29:490,2026-06-30:564,2026-06-30:564,2026-07-01:611,2026-07-01:611,2026-07-02:635,2026-07-03:661,2026-07-04:687,2026-07-05:707,2026-07-06:716,2026-07-07:720,2026-07-08:726,2026-07-09:729,2026-07-10:734,2026-07-11:738,2026-07-12:741,2026-07-13:741,2026-07-14:743,2026-07-15:743,2026-07-16:745,2026-07-17:750,2026-07-18:757"
+star_history: "2026-06-29:489,2026-06-29:490,2026-06-30:564,2026-06-30:564,2026-07-01:611,2026-07-01:611,2026-07-02:635,2026-07-03:661,2026-07-04:687,2026-07-05:707,2026-07-06:716,2026-07-07:720,2026-07-08:726,2026-07-09:729,2026-07-10:734,2026-07-11:738,2026-07-12:741,2026-07-13:741,2026-07-14:743,2026-07-15:743,2026-07-16:745,2026-07-17:750,2026-07-18:757,2026-07-19:760"
 tags:
   - github
   - "category/開發工具"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "pdfx"
   - "AlexandrosGounis/pdfx"
-  - "將多個文件打包到單一 PDF 文件中，並保持向後兼容性。"
+  - "將多個文件存儲在單一 PDF 文件中的擴展，並透過元數據進行管理。"
 ---
 
 # pdfx
 
-**757** stars · **33** stars/天 · 建立 23 天前 · TypeScript · MIT
+**760** stars · **32** stars/天 · 建立 24 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/AlexandrosGounis--pdfx");
@@ -78,13 +78,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `electron` `electron-app` `electronjs` `liquid-glass` `macos-app` `open-source` `pdf` `pdf-generator` `pdf-parser` `pdf-processing` `pdf-tools` `pdf-viewer` `react` `spec` `typescript`
 
 > [!summary] 一句話摘要
-> 將多個文件打包到單一 PDF 文件中，並保持向後兼容性。
+> 將多個文件存儲在單一 PDF 文件中的擴展，並透過元數據進行管理。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (33 stars/day)
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (32 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 4+ 人 · **參與度** Medium
-> **適合** 需要在多平台上處理多個 PDF 文件的設計師和開發者。
-> **一句話重點** PDFx 的創新在於將多個 PDF 文件合併為一個單一文件，並保持向後兼容性，這在傳統 PDF 工具中並不常見。
+> **適合** 需要將多個 PDF 文件整合為一個文件的設計師或文檔管理員。
+> **一句話重點** PDFx 不僅僅是 PDF 的擴展，它重新定義了如何管理和處理多個文檔，讓用戶能夠更靈活地使用 PDF 文件。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,46 +108,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，4 小時整合，得到更靈活的文檔管理，值得嘗試。
+> **結論** 花 2 小時學習，3 小時整合，得到靈活的多文檔管理功能，值得考慮。
 
 > [!abstract] 核心創新
-> PDFx 是一個向後兼容的 PDF 擴展，能夠將多個文件打包成一個單一的 PDF 文件。
+> PDFx 提供了一種新的方式來將多個文檔打包成單一的 PDF 文件，同時保持與傳統 PDF 的兼容性。
 
 ## 專案簡介
 
-**核心機制**
+PDFx 是一個開放的、向後兼容的 PDF 擴展，允許將多個文檔打包成單一文件，並提供一個簡單的桌面查看器，支持 macOS、Windows 和 Linux。用戶可以將 PDF 文件、圖片或文件夾拖放到應用中，這些文檔會以水平頁面條帶的形式顯示，並且可以重新排序或移除，最後通過「Export PDF」功能將整個集合保存為一個文件。這種設計使得用戶能夠在不改變原始 PDF 的情況下，靈活地管理多個文檔。PDFx 的核心在於一個嵌入的 JSON 清單，這使得它能夠保持與傳統 PDF 的兼容性。主要的技術棧包括 Electron、Vite、TypeScript 和 React，並使用 pdf.js 進行 PDF 渲染，pdf-lib 進行文檔組合。
 
-PDFx 是一個開放且向後兼容的 PDF 擴展，能夠將多個文件打包成一個單一的 `.pdfx` 文件，並提供一個簡易的桌面查看器，支持 macOS、Windows 和 Linux。用戶可以將 `.pdf` 或 `.pdfx` 文件拖放到應用中，這些文件會以水平頁面條的形式顯示，並且可以垂直堆疊。用戶可以重新排序或刪除文件，然後通過「Export PDF」功能將整個集合保存為一個文件。這種設計的核心在於一個嵌入的 JSON 清單，這使得原始文件能夠在 PDFx 中被分離和重新組合，這樣的處理方式比傳統的 PDF 方式更靈活。關鍵的 CLI 指令包括 `yarn dev` 用於開發模式，和 `yarn build:mac` 用於打包 macOS 應用。
+這樣的選擇使得開發者能夠快速構建跨平台應用，並且在性能上也能保持良好的表現。與傳統 PDF 編輯工具相比，PDFx 提供了更靈活的多文檔管理功能，而不僅僅是單一文檔的編輯。對於需要處理多個 PDF 文件的用戶來說，這是一個非常有用的工具，特別是在需要將多個文件合併為一個文件的情況下。使用者可能會遇到 OCR 功能導致的文本損壞問題，這在熱門問題中已被提及。這個專案目前處於 beta 階段，適合小型團隊或個人開發者使用，未來可能會進一步增強功能和穩定性。
 
-**技術實作**
-
-PDFx 的一句話賣點是「一個文件，多個文檔，仍然是 PDF」。
-
-技術上，PDFx 使用 Electron、Vite、TypeScript 和 React 來構建，PDF 渲染由 pdf.js 提供，文件組合則使用 pdf-lib。這樣的技術選擇使得應用能夠在多平台上運行，並且具有良好的性能。依賴樹相對輕量，主要依賴於 Electron 和一些 PDF 處理庫，這使得開發和維護成本較低。
-
-與其他 PDF 處理工具相比，PDFx 的獨特之處在於它的多文件支持，這使得它在需要處理多個文檔的情境下，能夠提供更好的用戶體驗。
-
-**競品比較**
-
-相比於 Adobe Acrobat 等傳統工具，PDFx 提供了更簡單的界面和操作流程，特別適合需要快速組合和管理多個 PDF 文件的用戶。對於需要處理大量文件的用戶，PDFx 的操作效率和靈活性將大大提升工作效率。
-
-然而，PDFx 目前仍在 beta 階段，社群活躍度中等，開放問題數量不多，但解決率僅為 40%。這意味著在使用過程中可能會遇到一些未解決的問題，使用者需謹慎評估。
-
-總的來說，PDFx 適合需要在多平台上處理多個 PDF 文檔的開發者和設計師，尤其是在需要快速組合和導出文檔的情境下。
-
-**效果與限制**
-
-對於小型團隊或個人用戶來說，PDFx 是一個值得嘗試的工具，但在生產環境中使用時需謹慎考量其穩定性。
-
-**技術棧**：`Electron` · `Vite` · `TypeScript` · `React`
+**技術棧**：`Electron` · `Vite` · `TypeScript` · `React` · `pdf.js` · `pdf-lib`
 
 ## 重點功能
 
-- 多文件支持 — 能夠將多個 PDF 文件合併為一個 `.pdfx` 文件，並在 PDFx 中分離。
-- 嵌入 JSON 清單 — 利用一個簡單的 JSON 清單來管理多個文檔的結構。
-- 跨平台支持 — 支援 macOS、Windows 和 Linux 系統，方便不同環境的使用。
-- 簡易的導出功能 — 透過「Export PDF」按鈕輕鬆將合併的文件導出為單一 PDF。
-- OCR 和搜索索引 — 提供離線的 OCR 功能，提升文件的可搜索性。
+- 多文檔合併 — 支持將多個 PDF 文件、圖片或文件夾合併為一個 PDF 文件，並保持原始格式。
+- 拖放功能 — 用戶可以直接將文件拖放到應用中，簡化操作流程。
+- 嵌入式 JSON 清單 — 使用 JSON 清單來管理文檔，保持與傳統 PDF 的兼容性。
+- 跨平台支持 — 支持 Windows、macOS 和 Linux 系統，方便不同環境的用戶使用。
+- 簡單的導出功能 — 提供「Export PDF」按鈕，方便用戶將合併的文檔保存為一個文件。
 
 ## 快速開始
 
@@ -159,7 +139,7 @@ yarn
 ```bash
 yarn dev
 ```
-3. 打包 macOS 應用
+3. 在 macOS 上構建
 ```bash
 yarn build:mac
 ```
@@ -168,63 +148,64 @@ yarn build:mac
 
 ```ts
 {
-  "前置條件": "需要安裝 Yarn 和 Node.js",
+  "前置條件": "已安裝 yarn 和 Node.js",
   "指令": "yarn dev",
-  "預期輸出": "啟動 PDFx 開發環境，並在瀏覽器中開啟應用。"
+  "預期輸出": "啟動開發伺服器，並在瀏覽器中顯示 PDFx 應用"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 在建立 23 天內累積 757 stars（33 stars/天），forks 數量為 87（11.5%），顯示出相對較高的使用者興趣。作者 Alexandros Gounis 之前有開發過其他開源項目，這次的 PDFx 解決了多文件管理的痛點，特別是在需要將多個 PDF 文件合併的場景中，傳統工具往往不夠靈活。這個工具的出現正好填補了這一空白。社群的反饋和活躍度也顯示出使用者對於這個工具的期待，特別是針對 OCR 和搜索索引功能的需求。
+> 建立 24 天內累積 760 stars（31.7/天），forks 88（11.6%），顯示出一定的社群關注度。作者 Alexandros Gounis 之前有開發其他開源工具，這個專案解決了傳統 PDF 編輯工具無法有效管理多文檔的痛點。近期的推廣活動和社群討論可能也促進了其曝光率。相對於其他 PDF 工具，PDFx 提供了更靈活的多文檔處理能力，這在當前市場中是相對獨特的。
 
 ## 適合誰使用
 
-**目標受眾**：需要在多平台上處理多個 PDF 文件的設計師和開發者。
+**目標受眾**：需要將多個 PDF 文件整合為一個文件的設計師或文檔管理員。
 
 > [!example] 使用場景
-> - 設計師用它來將多個設計稿合併成一個 PDF 文件，因為這樣可以更方便地分享給客戶，避免了多個文件的混亂。
-> - 後端工程師用它來生成 API 文檔，將多個文檔合併成一個 PDF，因為這樣可以提高文檔的可讀性和整體性。
-> - 學術研究者用它來整理多篇論文，將其合併為一個 PDF 文件，因為這樣可以方便地進行引用和分享。
+> - 文檔管理員用它來將多個 PDF 文件合併為一個文件，因為這樣可以減少文件管理的複雜性，並且方便分享。
+> - 設計師用它來將設計稿和參考資料整合到一個 PDF 中，因為這樣可以更方便地展示給客戶。
+> - 學術研究者用它來整理多篇研究論文，因為這樣可以在一個文件中快速查閱所有資料，提升工作效率。
 
 ## 架構分析
 
-PDFx 採用 Electron 作為桌面應用框架，這使得它能夠在多平台上運行，並且利用 Vite 加速開發和構建過程。應用的核心是 TypeScript 和 React，這使得前端開發更加高效。資料流方面，PDF 渲染由 pdf.js 負責，文件組合則使用 pdf-lib，這樣的設計使得應用能夠快速響應用戶操作。選擇 Electron 的代價在於應用體積較大，但這樣的選擇使得開發者能夠利用 Web 技術快速開發桌面應用。擴展性方面，PDFx 目前的架構能夠支持未來的功能擴展，但在處理大型 PDF 文件時可能會遇到性能瓶頸。
+PDFx 的架構基於 Electron，這使得它能夠跨平台運行。應用的主要功能由 Vite 和 React 提供，這樣的選擇使得開發過程中能夠快速迭代和測試。PDF 渲染使用 pdf.js，這是一個成熟的庫，能夠高效地處理 PDF 文件的顯示和交互。
+
+組合文檔的功能則由 pdf-lib 提供，這樣的設計使得應用能夠在處理多文檔時保持高效。選擇 Electron 也意味著應用的體積會相對較大，但這樣的代價是能夠獲得更好的跨平台支持。整體來看，這樣的架構設計適合需要快速開發和部署的場景，但在性能上可能會受到 Electron 的影響，特別是在處理大型文件時。
 
 ## 技術深入分析
 
-PDFx 的核心技術機制在於它的文件合併能力，通過嵌入 JSON 清單來管理多個文檔。這種設計使得用戶可以在不影響原始 PDF 文件的情況下，靈活地組合和管理文檔。效能方面，PDFx 能夠處理一般大小的 PDF 文件，但在面對大型文件時，可能會出現性能瓶頸。選擇 Electron 作為開發框架的好處在於能夠快速構建跨平台應用，但這也導致了應用的體積較大。技術風險方面，OCR 功能的穩定性和準確性仍需進一步提升，特別是在處理含有圖片的文本時。整合分析方面，PDFx 與主流的 PDF 處理工具相比，提供了更靈活的文件管理方式，但在與現有工具鏈的整合上，可能會遇到一些挑戰。
+PDFx 的核心技術機制在於它的多文檔合併能力，這是通過一個嵌入的 JSON 清單來實現的。這種設計不僅保持了與傳統 PDF 的兼容性，還使得用戶能夠在不改變原始文件的情況下進行靈活的文檔管理。效能方面，PDFx 能夠處理多達數百頁的 PDF 文件，但在大型文件的處理上可能會遇到性能瓶頸，特別是在低性能設備上。選擇 Electron 作為開發平台使得 PDFx 能夠快速迭代和跨平台部署，但同時也帶來了應用體積較大的問題。這種設計選擇使得 PDFx 在功能上具備了強大的靈活性，但在性能上可能會受到影響。技術風險方面，OCR 功能的實現可能會導致文本損壞，這在實際使用中需要特別注意。整體來看，PDFx 在現有 PDF 工具中提供了一個獨特的解決方案，特別適合需要處理多文檔的用戶。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝和使用指導，並包含了必要的範例。安裝過程相對順暢，但需要注意依賴的安裝。文件中沒有多語言支持，僅提供英文版本。整體而言，花 30 分鐘應該能夠順利啟動。
+> README 文件清晰，包含了安裝和使用的基本指令。安裝過程順暢，沒有明顯的坑。提供了簡單的入門指南，但缺乏多語言支持，可能對非英語使用者造成困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 支持多文件合併，提升文檔管理效率。
-> - 跨平台支持，適合多種操作系統。
-> - 簡單易用的界面，適合非技術用戶。
+> - 支持多文檔合併，方便用戶管理多個 PDF 文件。
+> - 跨平台支持，適合不同操作系統的用戶。
+> - 簡單易用的界面設計，降低了使用門檻。
 
 > [!danger] 缺點
-> - 仍在 beta 階段，功能可能不穩定。
-> - 對於大型文件的處理速度可能較慢。
-> - OCR 功能在某些情況下可能導致文本損壞。
+> - 仍在 beta 階段，可能存在不穩定的功能。
+> - 對於大型 PDF 文件的處理速度可能較慢。
+> - OCR 功能存在文本損壞的風險。
 
 > [!warning] 注意事項
 > - 目前仍在 beta 階段，可能存在不穩定的功能。
-> - OCR 功能在某些情況下可能會導致文本損壞。
-> - 對於大型 PDF 文件的處理速度可能較慢。
+> - OCR 功能可能導致文本損壞，特別是在包含圖像的頁面上。
+> - 對於大型 PDF 文件的處理速度可能較慢，特別是在低性能設備上。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成和管理多個 sprite 文件，而 PDFx 專注於 PDF 文件的合併和管理。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供 PDF 文件的版本控制功能，而 PDFx 更加專注於文件的合併和導出。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 專注於代碼生成，而 PDFx 是針對 PDF 文件的處理工具。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成和處理 AI 代理的工具，而 PDFx 專注於 PDF 文件的管理和合併。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供文件版本控制功能，而 PDFx 更加專注於多文檔合併和簡化的查看器。 |
 
 ## 替代方案決策
 
@@ -232,16 +213,16 @@ PDFx 的核心技術機制在於它的文件合併能力，通過嵌入 JSON 清
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Adobe Acrobat | 使用專有技術處理 PDF 文件，而 PDFx 是開源的，並且支持多文件合併。 | 如果需要更強大的編輯功能和專業支持，Adobe Acrobat 是更好的選擇。 | medium，因為需要重新學習工具的使用方式。 |
-| Foxit PDF Editor | 提供類似的 PDF 編輯功能，但不支持多文件合併。 | 如果需要輕量級的 PDF 編輯工具，而不需要合併功能，Foxit 是不錯的選擇。 | low，因為界面相似，容易上手。 |
+| [pdf-lib/pdf-lib](https://github.com/pdf-lib/pdf-lib) | 專注於 PDF 文件的生成和編輯，而 PDFx 專注於多文檔的合併和管理。 | 如果你的需求主要是生成和編輯 PDF 文件，而不是合併多個文件，則 pdf-lib 更合適。 | low，因為兩者都使用 JavaScript 進行開發，轉換相對簡單。 |
+| [pdf.js/pdf.js](https://github.com/pdf.js/pdf.js) | 專注於 PDF 文件的渲染，而 PDFx 提供了多文檔的合併功能。 | 如果你的需求主要是高效渲染 PDF 文件，則 pdf.js 是更好的選擇。 | medium，因為需要重新設計應用的架構以適應不同的功能需求。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **pdfx** | **Adobe Acrobat** | **Foxit PDF Editor** |
+> | 維度 | **pdfx** | **pdf-lib** | **pdf.js** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用專有技術處理 PDF 文件，而 PDFx 是開源的，並且支持多文件合併。 | 提供類似的 PDF 編輯功能，但不支持多文件合併。 |
-> | 遷移成本 | - | medium，因為需要重新學習工具的使用方式。 | low，因為界面相似，容易上手。 |
-> | 適用場景 | 主要場景 | 如果需要更強大的編輯功能和專業支持，Adobe Acroba | 如果需要輕量級的 PDF 編輯工具，而不需要合併功能，Fox |
+> | 技術路線 | 本專案 | 專注於 PDF 文件的生成和編輯，而 PDFx 專注於多文檔的合併和管理。 | 專注於 PDF 文件的渲染，而 PDFx 提供了多文檔的合併功能。 |
+> | 遷移成本 | - | low，因為兩者都使用 JavaScript 進行開發，轉換相對簡單。 | medium，因為需要重新設計應用的架構以適應不同的功能需求。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是生成和編輯 PDF 文件，而不是合併多個文 | 如果你的需求主要是高效渲染 PDF 文件，則 pdf.js  |
 
 ## 成熟度評估
 
@@ -252,41 +233,41 @@ PDFx 的核心技術機制在於它的文件合併能力，通過嵌入 JSON 清
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合個人項目或小型團隊試用，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** OCR 功能在處理圖片文本時可能導致文本損壞
-  - 解法：避免在 OCR 文本中使用圖片，或手動校正文本
-- [MEDIUM] 大型 PDF 文件的處理速度較慢
-  - 解法：將大型文件拆分為多個小文件再進行處理
+- **[HIGH]** OCR 功能在某些情況下會導致文本損壞，特別是在包含圖像的頁面上。
+  - 解法：避免在含有圖像的頁面上使用 OCR 功能。
+- [MEDIUM] 在某些操作系統上，安裝過程可能會遇到依賴問題。
+  - 解法：確保安裝所有必要的依賴，並參考官方文檔。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型設計團隊需要合併多個設計稿 | 非常適合 | PDFx 提供了簡單的合併功能，適合快速分享設計稿。 |
-| 需要在學術研究中整理多篇論文的研究者 | 適合 | PDFx 能夠輕鬆合併和管理多篇論文。 |
-| 大型企業的文檔管理系統 | 不適合 | PDFx 目前仍在 beta 階段，穩定性不足。 |
+| 需要合併多個 PDF 文件的設計團隊 | 非常適合 | PDFx 提供了靈活的多文檔管理功能，適合設計團隊的需求。 |
+| 個人用戶需要簡單的 PDF 編輯功能 | 普通 | 雖然 PDFx 提供了一些編輯功能，但主要還是針對多文檔合併。 |
+| 大型企業需要穩定的 PDF 解決方案 | 不適合 | 目前仍在 beta 階段，功能不夠穩定。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~2 小時 |
-| 整合時間 | ~4 小時 |
+| 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，4 小時整合，得到更靈活的文檔管理，值得嘗試。
+> 花 2 小時學習，3 小時整合，得到靈活的多文檔管理功能，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：PDFx 本身不需要高權限，且不存取敏感資料。依賴的庫經過審計，但仍需注意 OCR 功能的準確性。
+> PDFx 本身不需要高權限，但在處理文檔時可能會存取用戶的文件系統。依賴鏈的信任程度較高，沒有已知的供應鏈風險。在 CI/CD 中使用時，需注意文檔的安全性和隱私保護。
 
 ## 健康度儀表板
 
@@ -351,10 +332,10 @@ PDFx 的核心技術機制在於它的文件合併能力，通過嵌入 JSON 清
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 87 |
+| Forks | 88 |
 | Open Issues | 3 |
 | Issue 解決率 | 40% (2 closed) |
-| 最後推送 | 2026-07-18 |
+| 最後推送 | 2026-07-19 |
 | 建立日期 | 2026-06-24 |
 | Repo 大小 | 3.2 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/AlexandrosGounis/pdfx) |
@@ -367,7 +348,7 @@ PDFx 的核心技術機制在於它的文件合併能力，通過嵌入 JSON 清
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 88
+>     "TypeScript" : 89
 >     "CSS" : 8
 >     "Objective-C++" : 2
 >     "JavaScript" : 1
@@ -376,7 +357,7 @@ PDFx 的核心技術機制在於它的文件合併能力，通過嵌入 JSON 清
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@AlexandrosGounis](https://github.com/AlexandrosGounis) | 16 |
+> | [@AlexandrosGounis](https://github.com/AlexandrosGounis) | 17 |
 > | [@ArcanConsulting](https://github.com/ArcanConsulting) | 1 |
 > | [@ShreySavsani](https://github.com/ShreySavsani) | 1 |
 > | [@mauitaxes](https://github.com/mauitaxes) | 1 |
@@ -399,12 +380,13 @@ PDFx 的核心技術機制在於它的文件合併能力，通過嵌入 JSON 清
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放問題數量不多。
+**社群活躍度**：社群活躍度中等，最近有數個合併請求和問題回應。
+**連結**：[文件](https://pdfx.zip)
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-06-28 ~ 2026-07-18）
-> **活躍天數** 6 天 · **最新 commit** implements reductions (#14)
+> **活躍天數** 6 天 · **最新 commit** Implements Forms v1 (#15)
 
 ## 熱門議題
 
@@ -421,6 +403,8 @@ PDFx 的核心技術機制在於它的文件合併能力，通過嵌入 JSON 清
 > 
 > **One file. Many documents. Still a PDF.**
 > 
+> Web Demo: [https://pdfx.zip](https://pdfx.zip)
+> 
 >   
 > 
 > [](LICENSE)
@@ -433,9 +417,9 @@ PDFx 的核心技術機制在於它的文件合併能力，通過嵌入 JSON 清
 > 
 > PDFx is an open, backwards compatible extension of PDF that bundles many documents into a single file, plus a minimal desktop viewer for macOS, Windows, and Linux.
 > 
-> A `.pdfx` file is a fully valid PDF: open it anywhere and every page shows in sequence. Open it in PDFx and it splits back into the original documents. Plain single PDFs work as they are.
+> The files produced are fully valid PDFs: open them anywhere and every page shows in sequence. Open them in PDFx and it splits back into the original documents. Plain single PDFs work as they are.
 > 
-> Drag and drop `.pdf` or `.pdfx` files anywhere in the window. Each document renders as a horizontal strip of pages, and documents stack vertically. Reorder or remove them, then **Export PDF** to save the whole collection as one file.
+> Drag and drop `.pdf` files, images or folders anywhere in the window. Each document renders as a horizontal strip of pages, and documents stack vertically. Reorder or remove them, then **Export PDF** to save the whole collection as one file.
 > 
 > See [SPEC.md](SPEC.md) for the format. It is short: the entire trick is one embedded JSON manifest.
 > 
@@ -446,9 +430,8 @@ PDFx 的核心技術機制在於它的文件合併能力，通過嵌入 JSON 清
 > ```bash
 > yarn              # install
 > yarn dev          # run in development
-> yarn build:mac    # package for macOS
-> yarn build:win    # package for Windows
-> yarn build:linux  # package for Linux
+> yarn dev:web      # run on the web
+> yarn build:mac    # build:win for windows, build:linux for linux
 > ```
 > 
 > *Linux packaging notes (formats, Flatpak, prerequisites) live in [docs/LINUX_SETUP.md](docs/LINUX_SETUP.md).*
@@ -459,7 +442,7 @@ PDFx 的核心技術機制在於它的文件合併能力，通過嵌入 JSON 清
 
 ## 延伸閱讀
 
-相關概念：[[PDF 處理]] · [[OCR]] · [[文件管理]]
+相關概念：[[PDF 處理]] · [[文件管理]] · [[跨平台應用]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[AlexandrosGounis--pdfx|AlexandrosGounis/pdfx]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
 
@@ -503,7 +486,7 @@ PDFx 的核心技術機制在於它的文件合併能力，通過嵌入 JSON 清
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["PDF 處理","OCR","文件管理"];
+> const concepts = ["PDF 處理","文件管理","跨平台應用"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "AlexandrosGounis--pdfx" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

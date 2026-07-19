@@ -7,26 +7,26 @@ language: Python
 license: MIT
 description: "A practical, open-source guide to mastering WorkBuddy through real-world workflows.开源的 WorkBuddy 实战蓝皮书：教程、真实工作流、Skills、MCP、自动化与多智能体实践。"
 homepage: "https://workbuddy.homes/"
-stars: 1055
-stars_per_day: 151
-forks: 142
-open_issues: 5
+stars: 1086
+stars_per_day: 121
+forks: 146
+open_issues: 6
 created: 2026-07-10
 pushed_at: 2026-07-15
 first_seen: 2026-07-15
 week: "2026-W29"
 month: "2026-07"
-category: "教學資源"
-subcategory: "實戰指南"
+category: "開發工具"
+subcategory: "自動化"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-15
-use_case: "提供實用的開源指南，幫助用戶通過真實工作流程掌握 WorkBuddy。"
+use_case: "提供實戰工作流程的開源指南，幫助用戶掌握 WorkBuddy 的使用。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,13 +42,12 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-15"
-star_history: "2026-07-15:720,2026-07-15:720,2026-07-16:837,2026-07-16:839,2026-07-17:1010,2026-07-17:1010,2026-07-18:1055"
+star_history: "2026-07-15:720,2026-07-15:720,2026-07-16:837,2026-07-16:839,2026-07-17:1010,2026-07-17:1010,2026-07-18:1055,2026-07-19:1086"
 tags:
   - github
-  - "category/教學資源"
+  - "category/開發工具"
   - "lang/python"
   - org
-  - easy_install
   - "topic/codex"
   - "topic/guide"
   - "topic/llm"
@@ -56,12 +55,12 @@ tags:
 aliases:
   - "WorkBuddyGuide"
   - "AlephAITech/WorkBuddyGuide"
-  - "提供實用的開源指南，幫助用戶通過真實工作流程掌握 WorkBuddy。"
+  - "提供實戰工作流程的開源指南，幫助用戶掌握 WorkBuddy 的使用。"
 ---
 
 # WorkBuddyGuide
 
-**1.1k** stars · **151** stars/天 · 建立 7 天前 · Python · MIT
+**1.1k** stars · **121** stars/天 · 建立 9 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/AlephAITech--WorkBuddyGuide");
@@ -74,25 +73,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`ORG` `easy-install`
+`ORG`
 
 `codex` `guide` `llm` `workbuddy`
 
 > [!summary] 一句話摘要
-> 提供實用的開源指南，幫助用戶通過真實工作流程掌握 WorkBuddy。
+> 提供實戰工作流程的開源指南，幫助用戶掌握 WorkBuddy 的使用。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (151 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 希望在工作中應用 WorkBuddy 的開發者和產品經理。
-> **一句話重點** 這本指南不僅是工具的使用說明，更是實戰經驗的分享，讓用戶能夠在真實場景中應用 WorkBuddy。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Hot (121 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 需要在團隊中實現高效協作的專業人士和開發者。
+> **一句話重點** 這本指南不僅是學習工具，更是社群合作的成果，隨著用戶的參與而不斷豐富。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/AlephAITech--WorkBuddyGuide");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "實戰指南" && p.file.name !== "AlephAITech--WorkBuddyGuide" && p.status !== "archived")
+>     .where(p => p.subcategory === "自動化" && p.file.name !== "AlephAITech--WorkBuddyGuide" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -103,100 +102,109 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 實戰指南 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學、3 小時整合，得到實用的工作流指南，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學、3 小時整合，得到高效的工作流程設計，值得採用。
 
 > [!abstract] 核心創新
-> 這本指南提供了基於真實工作流的實用案例，幫助用戶快速掌握 WorkBuddy 的使用。
+> 這本指南不僅是功能說明書，而是以真實任務為主線的實戰讀本。
 
 ## 專案簡介
 
-WorkBuddyGuide 是一本針對 WorkBuddy 的實戰藍皮書，旨在幫助用戶從安裝到實際操作，逐步掌握這個工具的使用。用戶可以從第一章開始，學習如何下載、安裝和完成第一個任務，然後進入更複雜的工作流，如知識管理和多智能體系統的設計。這本指南不僅提供了詳細的操作步驟，還包含了多個真實案例，幫助用戶理解如何在不同場景中應用 WorkBuddy。核心賣點在於其實用性和針對性，讓用戶能夠在真實的工作環境中快速上手。技術上，這個專案使用了 Node.js 作為開發環境，並且依賴於 VitePress 來構建文檔網站，這使得文檔的呈現更加友好和易於導航。
+WorkBuddyGuide 是一本針對 WorkBuddy 的開源實戰指南，旨在通過真實工作流程來幫助用戶掌握這個工具。用戶可以從安裝開始，逐步完成第一項任務，然後進入移動辦公、知識管理等多個主題，最終建立可重用的工作系統。這本指南的設計理念是基於實際任務，並非官方說明書的簡單改寫，提供了從基本使用到進階自動化的全方位支持。核心功能包括多 Agent 系統設計、Skill 創建和自動化可靠性等，讓用戶能夠在不同的工作場景中靈活應用。指南的結構清晰，分為使用手冊、案例篇和進階篇，並附有常用指令模板，方便用戶快速上手。
 
-相比於其他類似的工具，WorkBuddyGuide 更加注重實際案例的分享，這對於希望在工作中應用 AI 的用戶來說，無疑是非常有價值的。使用者可以在 GitHub 上提交自己的使用案例，這樣的社群互動不僅豐富了內容，也提高了指南的實用性。儘管目前的開源社群活躍度尚可，但仍需更多的案例和回饋來進一步完善。對於新手來說，這本指南提供了清晰的學習路徑，但對於已經熟悉 WorkBuddy 的用戶，可能需要更深入的技術細節和高級用法。總體來看，這是一個值得關注的專案，特別是對於希望在團隊中實施 AI 工作流的開發者和產品經理。
+這種以案例為主的學習方式，能有效降低學習曲線，特別適合需要快速解決實際問題的用戶。相較於其他類似工具，WorkBuddyGuide 提供了更具體的實作案例，並強調社群共創，鼓勵用戶分享自己的使用經驗，形成良好的知識共享氛圍。這樣的設計使得 WorkBuddyGuide 不僅是一本指南，更是一個活的社群資源，隨著用戶的參與而不斷豐富。對於需要在團隊中實現高效協作的用戶，這本指南提供了清晰的路徑和實用的工具，能夠大幅提升工作效率。
 
 **技術棧**：`Node.js 22` · `VitePress`
 
 ## 重點功能
 
 - 實戰案例 — 提供多個真實工作場景的案例，幫助用戶理解如何應用 WorkBuddy。
-- 詳細使用手冊 — 包含從安裝到進階使用的完整指南，讓新手能夠快速上手。
-- 社群互動 — 用戶可以提交自己的使用案例，促進內容的豐富和更新。
-- 多語言支持 — 提供簡體中文和英文版本，方便不同語言的用戶使用。
-- 在線閱讀 — 提供完整的網站體驗，包括側邊欄、全文搜索和移動端適配。
+- 多 Agent 系統設計 — 指導用戶如何設計和實現多智能體系統以提高工作效率。
+- Skill 創建 — 詳細說明如何創建和使用自定義技能，滿足特定需求。
+- 自動化可靠性 — 提供自動化過程的最佳實踐，確保任務執行的穩定性。
+- 常用指令模板 — 附有指令模板，方便用戶快速查找和使用。
 
 ## 快速開始
 
-1. 安裝 Node.js
+1. 安裝 Node.js 環境
 ```bash
 npm install
 ```
-2. 啟動開發伺服器
+2. 啟動本地開發伺服器
 ```bash
 npm run dev
 ```
-3. 本地構建文檔
+3. 構建並預覽文檔
 ```bash
-npm run docs:build
+npm run docs:build && npm run docs:preview
+```
+
+## 程式碼範例
+
+```python
+{
+  "前置條件": "需要 Node.js 20～24，推薦 Node.js 22。",
+  "指令": "npm install",
+  "預期輸出": "安裝所需的依賴包以啟動本地開發環境。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 7 天內累積 1055 stars（151/天），forks 142（13.5%），顯示出相對活躍的社群參與。這個專案的主要貢獻者來自於多個背景，顯示出跨領域的合作。它解決了在使用 WorkBuddy 時缺乏實用指南的痛點，讓用戶能夠更快上手。近期的推廣活動和社群互動可能也促進了其知名度的提升。forks/stars 比率為 13.5%，顯示出許多人對於這個專案有實際的修改和使用需求。
+> 建立 9 天就累積 1086 stars（121/天），forks 146（13.4%），這顯示出該專案的快速增長。作者團隊由多位貢獻者組成，這些成員在 AI 和自動化領域有豐富的經驗。這個專案解決了用戶在使用 WorkBuddy 時缺乏實戰案例的痛點，讓用戶能夠更快上手並應用於實際工作中。近期的社群活動和討論也促進了該專案的曝光，吸引了更多開發者的注意。隨著多智能體和自動化技術的發展，這個工具的需求日益增加，為用戶提供了更高效的工作方式。forks/stars 比率為 13.4%，顯示出有相當比例的用戶在積極修改和使用這個專案，這是一個健康的社群信號。
 
 ## 適合誰使用
 
-**目標受眾**：希望在工作中應用 WorkBuddy 的開發者和產品經理。
+**目標受眾**：需要在團隊中實現高效協作的專業人士和開發者。
 
 > [!example] 使用場景
-> - 產品經理用它來設計和實施 AI 驅動的工作流程，因為這本指南提供了具體的案例和步驟，能夠快速上手。
-> - 開發者用它來學習如何在團隊中整合 WorkBuddy，因為實戰案例能幫助他們理解不同場景下的應用。
-> - 新手用它來完成第一個任務，因為指南的結構清晰，能夠引導他們逐步掌握工具的使用。
+> - 項目經理用它來快速建立團隊工作流程，因為可以參考實戰案例，減少設計時間。
+> - 新手開發者用它來學習 WorkBuddy 的基本操作，因為指南提供了詳細的步驟和範例，讓他們能夠迅速上手。
+> - 企業內部培訓師用它來設計培訓課程，因為可以根據不同崗位的需求，選擇相應的工作流和技能。
+> - 自由職業者用它來管理多個客戶項目，因為指南中的自動化工具能夠提高工作效率，節省時間。
 
 ## 架構分析
 
-WorkBuddyGuide 採用 VitePress 作為文檔生成框架，這使得文檔的呈現和導航更加友好。整體架構以 Node.js 為基礎，並且依賴於 npm 來管理依賴和構建流程。資料流方面，使用者在本地安裝 Node.js 後，可以透過 npm 指令啟動開發伺服器，並在瀏覽器中訪問文檔。
-
-這種設計的好處在於能夠快速構建和部署，但也意味著對 Node.js 環境的依賴。擴展性方面，若未來需要增加更多功能或案例，則需要進一步的開發和維護。整體來看，這種架構適合快速迭代和更新文檔內容，但對於不熟悉 Node.js 的用戶來說，可能會有一定的學習成本。
+WorkBuddyGuide 採用 VitePress 作為文檔生成工具，這使得其具備良好的性能和可擴展性。整體架構分為多個模組，包括使用手冊、案例篇和進階篇，每個模組都針對特定的使用場景進行設計。資料流從用戶的需求出發，經過指南中的步驟，最終輸出具體的操作結果。選擇 VitePress 的原因在於其支持快速構建和良好的 SEO 性能，但這也意味著需要一定的前端技術基礎來進行定制和擴展。擴展性方面，隨著社群的參與，新的案例和功能可以不斷被添加，但這也可能導致文檔的維護成本上升。
 
 ## 技術深入分析
 
-WorkBuddyGuide 的核心技術機制在於其基於 Node.js 的開發環境和 VitePress 的文檔生成框架。這使得用戶能夠快速構建和部署文檔，並提供良好的使用者體驗。效能上，這個專案能夠支持多個用戶同時訪問文檔，並且在本地構建時，能夠快速生成更新的內容。設計上，選擇 Node.js 是因為其非同步處理能力強，適合處理大量的請求，但這也意味著對於不熟悉 JavaScript 環境的用戶來說，學習曲線會有所增加。技術風險方面，若未來需要擴展更多功能，可能會面臨依賴管理和版本兼容的挑戰。整合分析上，這個工具能夠與主流的 CI/CD 工具鏈相容，但對於需要複雜部署的用戶，可能需要額外的適配工作。
+WorkBuddyGuide 的核心技術機制在於其模組化的文檔結構，使用 VitePress 來生成和管理內容，這使得用戶能夠快速找到所需信息。每個模組都針對特定的使用場景進行設計，從基本操作到進階應用，涵蓋了多個層面。效能方面，由於使用了 VitePress，頁面加載速度快，能夠處理大量的文檔和案例。設計選擇上，VitePress 提供了良好的 SEO 性能，但對於不熟悉前端技術的用戶來說，可能需要額外的學習成本。技術風險方面，隨著社群的擴大，文檔的維護和更新可能成為一個挑戰，特別是在用戶提交的案例數量增加時。整合方面，這個工具可以輕鬆融入現有的開發流程，特別是對於已經使用 Node.js 的團隊來說，學習成本相對較低。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了詳細的使用手冊和安裝步驟，讓新手能夠順利上手。安裝過程相對簡單，但對於不熟悉 Node.js 的用戶可能會有些挑戰。文件中有清晰的指引和範例，幫助用戶快速理解如何使用 WorkBuddy。整體來說，花 30 分鐘應該能夠完成基本的安裝和配置。
+> README 文件清晰，提供了詳細的安裝和使用指導；安裝過程相對順暢，但對新手來說可能有一定的挑戰；有良好的 getting started guide，幫助用戶快速上手；文件目前僅提供中文和英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供實用的工作案例，幫助用戶理解如何應用 WorkBuddy。
-> - 結構清晰的指南，適合新手逐步學習。
-> - 社群互動性強，用戶可以提交自己的案例和反饋。
+> - 提供實戰案例，幫助用戶快速上手。
+> - 支持多種工作場景，適用性強。
+> - 社群共創，持續更新和豐富內容。
 
 > [!danger] 缺點
-> - 目前社群案例數量有限，可能影響學習資源的豐富性。
-> - 對於不熟悉 Node.js 的用戶，安裝和配置可能有一定難度。
-> - 部分功能的使用可能需要額外的配置和學習。
+> - 需要一定的前端技術基礎。
+> - 部分場景的案例仍在增加中，可能不夠全面。
+> - 安裝和配置過程對新手來說可能有些複雜。
 
 > [!warning] 注意事項
-> - 目前僅支持 Node.js 20～24，對於其他版本的兼容性未知。
-> - 社群案例數量仍然有限，可能影響使用者的學習資源。
-> - 部分功能可能需要額外的配置，對於新手來說可能有一定的學習曲線。
+> - 僅支援 Node.js 20～24，其他版本可能無法正常運行。
+> - 需要一定的前端開發基礎才能完全理解和應用指南中的內容。
+> - 社群案例的數量仍在增加，部分場景可能尚未覆蓋。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於多智能體系統的設計，而 WorkBuddyGuide 更加注重實用案例和工作流的實施。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供了類似的自動化功能，但缺乏 WorkBuddyGuide 的實戰案例和社群互動。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建和管理智能體，而 WorkBuddyGuide 提供更全面的工作流程指導和實戰案例。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於多智能體的競爭和合作，而 WorkBuddyGuide 更加強調實用的工作流程和技能應用。 |
 
 ## 替代方案決策
 
@@ -204,16 +212,16 @@ WorkBuddyGuide 的核心技術機制在於其基於 Node.js 的開發環境和 V
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於多智能體系統的設計，而 WorkBuddyGuide 更加注重實用案例和工作流的實施。 | 如果你的團隊需要專注於多智能體的協作設計，則可以選擇這個工具。 | medium，因為需要重新學習其特定的工作流和設計模式。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供了類似的自動化功能，但缺乏 WorkBuddyGuide 的實戰案例和社群互動。 | 如果你需要一個更簡單的自動化工具，並不需要太多的案例參考，可以考慮這個選擇。 | low，因為其使用方式相對簡單，容易上手。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於智能體的創建和管理，而 WorkBuddyGuide 提供更全面的工作流程指導。 | 如果你的重點是開發和管理多個智能體，而非具體的工作流程設計。 | medium，因為需要重新學習不同的操作方式和概念。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於多智能體的競爭和合作，而 WorkBuddyGuide 更加強調實用的工作流程和技能應用。 | 如果你需要專注於智能體之間的互動和競爭，而非具體的工作流程。 | high，因為需要適應全新的框架和思維方式。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **WorkBuddyGuide** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **WorkBuddyGuide** | **agent-sprite-forge** | **Duel-Agents** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於多智能體系統的設計，而 WorkBuddyGuide 更加注重實用案例和工作流的實施。 | 提供了類似的自動化功能，但缺乏 WorkBuddyGuide 的實戰案例和社群互動。 |
-> | 遷移成本 | - | medium，因為需要重新學習其特定的工作流和設計模式。 | low，因為其使用方式相對簡單，容易上手。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要專注於多智能體的協作設計，則可以選擇這個工具 | 如果你需要一個更簡單的自動化工具，並不需要太多的案例參考，可 |
+> | 技術路線 | 本專案 | 專注於智能體的創建和管理，而 WorkBuddyGuide 提供更全面的工作流程指導。 | 專注於多智能體的競爭和合作，而 WorkBuddyGuide 更加強調實用的工作流程和技能應用。 |
+> | 遷移成本 | - | medium，因為需要重新學習不同的操作方式和概念。 | high，因為需要適應全新的框架和思維方式。 |
+> | 適用場景 | 主要場景 | 如果你的重點是開發和管理多個智能體，而非具體的工作流程設計。 | 如果你需要專注於智能體之間的互動和競爭，而非具體的工作流程。 |
 
 ## 成熟度評估
 
@@ -224,27 +232,27 @@ WorkBuddyGuide 的核心技術機制在於其基於 Node.js 的開發環境和 V
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合個人試用和小型專案，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些環境下，Node.js 版本不兼容可能導致安裝失敗
-  - 解法：確保使用 Node.js 22 版本
-- [MEDIUM] 社群案例更新速度慢，可能導致內容過時
-  - 解法：定期檢查官方網站以獲取最新案例
-- [MEDIUM] 部分功能需要額外的配置，對新手來說可能不友好
-  - 解法：參考官方文檔中的配置指引
+- **[HIGH]** 安裝過程中可能遇到 Node.js 版本不兼容的問題
+  - 解法：確保使用推薦的 Node.js 版本 22
+- [MEDIUM] 部分案例可能缺乏詳細的步驟說明
+  - 解法：參考社群案例集中的其他案例以獲取靈感
+- [MEDIUM] 社群活躍度可能影響案例更新速度
+  - 解法：主動參與社群討論，提出需求和建議
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 提供了清晰的實戰案例，能夠快速上手。 |
-| 大型企業的 AI 部門 | 普通 | 雖然有實用案例，但可能需要更高級的功能支持。 |
-| 學術研究團隊 | 適合 | 能夠提供具體的工作流和案例，幫助研究者應用 AI。 |
-| 需要快速開發原型的團隊 | 非常適合 | 指南中有多個實用的案例，能夠幫助快速實現原型。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 提供了快速上手的實戰案例和指導，能夠迅速提高團隊效率。 |
+| 大型企業的複雜項目管理 | 普通 | 雖然有多種案例，但可能需要進一步的定制化支持。 |
+| 需要快速培訓新員工的團隊 | 非常適合 | 指南中的結構化內容能夠幫助新員工快速理解工作流程。 |
+| 對自動化要求不高的個人項目 | 不適合 | 對於簡單的任務，使用這本指南的複雜性可能過高。 |
 
 ## 採用成本分析
 
@@ -256,12 +264,12 @@ WorkBuddyGuide 的核心技術機制在於其基於 Node.js 的開發環境和 V
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、3 小時整合，得到實用的工作流指南，值得嘗試。
+> 花 5 小時學、3 小時整合，得到高效的工作流程設計，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具本身不需要高權限，且不存取敏感資料。依賴鏈的信任程度較高，無已知的供應鏈風險。
+> 低風險：該工具不需要高權限，並不會存取敏感資料，依賴鏈的信任程度較高，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -326,8 +334,8 @@ WorkBuddyGuide 的核心技術機制在於其基於 Node.js 的開發環境和 V
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 142 |
-| Open Issues | 5 |
+| Forks | 146 |
+| Open Issues | 6 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-07-15 |
 | 建立日期 | 2026-07-10 |
@@ -354,7 +362,7 @@ WorkBuddyGuide 的核心技術機制在於其基於 Node.js 的開發環境和 V
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，但案例數量仍需增加。
+**社群活躍度**：社群活躍，鼓勵用戶提交案例和參與共創。
 **連結**：[文件](https://workbuddy.homes/)
 
 ## 開發動態
@@ -502,17 +510,17 @@ WorkBuddyGuide 的核心技術機制在於其基於 Node.js 的開發環境和 V
 
 相關概念：[[自動化]] · [[多模態]] · [[CLI/TUI]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[DietrichGebert--ponytail|DietrichGebert/ponytail]] · [[Fokkyp--SoftwareCopyright-Skill|Fokkyp/SoftwareCopyright-Skill]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xGF--boneyard|0xGF/boneyard]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[DietrichGebert--ponytail|DietrichGebert/ponytail]] · [[Fokkyp--SoftwareCopyright-Skill|Fokkyp/SoftwareCopyright-Skill]] · [[Gitlawb--openclaude|Gitlawb/openclaude]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]]
 
 [GitHub](https://github.com/AlephAITech/WorkBuddyGuide) · [官方網站](https://workbuddy.homes/)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：實戰指南）
+> [!note]- 直接競品（同子分類：自動化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "實戰指南" AND file.name != "AlephAITech--WorkBuddyGuide"
+> WHERE subcategory = "自動化" AND file.name != "AlephAITech--WorkBuddyGuide"
 > SORT stars DESC
 > ```
 
@@ -520,7 +528,7 @@ WorkBuddyGuide 的核心技術機制在於其基於 Node.js 的開發環境和 V
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "教學資源" AND file.name != "AlephAITech--WorkBuddyGuide"
+> WHERE category = "開發工具" AND file.name != "AlephAITech--WorkBuddyGuide"
 > SORT stars DESC
 > LIMIT 8
 > ```

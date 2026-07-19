@@ -7,8 +7,8 @@ language: TypeScript
 license: MIT
 description: "OpenTag"
 homepage: ""
-stars: 674
-stars_per_day: 32
+stars: 676
+stars_per_day: 31
 forks: 80
 open_issues: 5
 created: 2026-06-26
@@ -17,7 +17,7 @@ first_seen: 2026-07-03
 week: "2026-W27"
 month: "2026-07"
 category: "開發工具"
-subcategory: "自動化"
+subcategory: "聊天機器人"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-03
-use_case: "讓你在 Slack 中自架設 AI 代理，完全開源且可自訂。"
+use_case: "讓你在 Slack 上自架 AI 代理，擁有完整的運行時和模型控制權。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-03"
-star_history: "2026-07-03:521,2026-07-03:521,2026-07-04:552,2026-07-05:571,2026-07-06:606,2026-07-07:634,2026-07-08:648,2026-07-09:659,2026-07-10:662,2026-07-11:666,2026-07-12:669,2026-07-13:671,2026-07-14:673,2026-07-15:672,2026-07-16:672,2026-07-17:673,2026-07-18:674"
+star_history: "2026-07-03:521,2026-07-03:521,2026-07-04:552,2026-07-05:571,2026-07-06:606,2026-07-07:634,2026-07-08:648,2026-07-09:659,2026-07-10:662,2026-07-11:666,2026-07-12:669,2026-07-13:671,2026-07-14:673,2026-07-15:672,2026-07-16:672,2026-07-17:673,2026-07-18:674,2026-07-19:676"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "OpenTag"
   - "CopilotKit/OpenTag"
-  - "讓你在 Slack 中自架設 AI 代理，完全開源且可自訂。"
+  - "讓你在 Slack 上自架 AI 代理，擁有完整的運行時和模型控制權。"
 ---
 
 # OpenTag
 
-**674** stars · **32** stars/天 · 建立 21 天前 · TypeScript · MIT
+**676** stars · **31** stars/天 · 建立 22 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/CopilotKit--OpenTag");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 讓你在 Slack 中自架設 AI 代理，完全開源且可自訂。
+> 讓你在 Slack 上自架 AI 代理，擁有完整的運行時和模型控制權。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (32 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Medium
-> **適合** 希望在 Slack 中自架設 AI 代理並具備一定技術背景的開發者。
-> **一句話重點** OpenTag 提供了一個靈活且可自訂的 AI 代理解決方案，適合希望在 Slack 中運行自架設 AI 的開發者。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (31 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 3 人 · **參與度** Medium
+> **適合** 希望在 Slack 環境中自架 AI 代理的開發者和團隊。
+> **一句話重點** OpenTag 讓用戶能夠在 Slack 中自架 AI 代理，完全控制運行時和模型，這在商業解決方案中是難以實現的。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/CopilotKit--OpenTag");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "自動化" && p.file.name !== "CopilotKit--OpenTag" && p.status !== "archived")
+>     .where(p => p.subcategory === "聊天機器人" && p.file.name !== "CopilotKit--OpenTag" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,36 +96,36 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 聊天機器人 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** low
-> **結論** 花 10 小時學、5 小時整合，得到靈活的 AI 代理解決方案，值得嘗試。
+> **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
+> **結論** 花 5 小時學習，10 小時整合，得到靈活的自架 AI 代理，值得投入。
 
 > [!abstract] 核心創新
-> 提供了一個開源的自架設 AI 代理解決方案，專為 Slack 設計。
+> OpenTag 提供了一個開源的自架解決方案，讓用戶能夠完全控制 AI 代理的運行時和模型。
 
 ## 專案簡介
 
-OpenTag 是一個開源的自架設 AI 代理解決方案，專為 Slack 設計。用戶可以透過簡單的指令來運行 AI 代理，這個代理能夠閱讀對話串、回答問題、調用工具並在對話中呈現豐富的結果。其核心賣點在於用戶擁有完整的運行環境，並且可以自由選擇模型和工具，避免了傳統商業解決方案的鎖定效應。安裝過程中，使用 `pnpm install` 來拉取所有必要的依賴，並運行兩個主要過程：代理後端 (`pnpm runtime`) 和機器人 (`pnpm channel` 或 `pnpm dev`)。這樣的設計使得用戶可以選擇在 CopilotKit Intelligence Gateway 上運行機器人，或是直接在本地運行，這提供了靈活性和安全性。
+OpenTag 是一個開源的自架 AI 代理解決方案，專為 Slack 設計，能夠讀取對話串、回答問題、調用工具並在對話中呈現豐富的結果。用戶可以完全控制運行時環境，並根據自己的需求選擇模型和工具，避免了傳統 SaaS 的鎖定問題。這個工具的核心在於其與 CopilotKit 的整合，使用者可以選擇兩種運行模式：Intelligence Gateway 模式和自托管模式。前者通過 CopilotKit 的即時網關運行，簡化了安全性管理，而後者則允許用戶直接與 Slack 進行交互。關鍵指令包括 `pnpm install` 來安裝所有依賴，然後使用 `pnpm runtime` 啟動代理後端，接著用 `pnpm channel` 啟動機器人。
 
-技術上，OpenTag 使用了 CopilotKit 的多個包來實現其功能，包括平台無關的機器人引擎和豐富的消息呈現。相較於其他類似工具如 0x0funky/agent-sprite-forge 和 2aronS/Duel-Agents，OpenTag 提供了更高的自訂性，並且支持多平台運行（Slack、Discord、Telegram 和 WhatsApp）。不過，使用者需要具備一定的技術背景來設置和維護這個系統，特別是在自架設的情況下。社群活躍度目前仍在發展中，開放的問題數量顯示出使用者可能會遇到一些挑戰。整體而言，這是一個適合希望在團隊內部使用 AI 代理的開發者和技術人員的解決方案。
+這種設計使得用戶能夠靈活選擇運行環境，並且可以根據需要擴展到其他平台如 Discord 和 Telegram。技術上，OpenTag 使用 TypeScript 和 Python，並依賴多個 CopilotKit 的包來實現功能，這樣的架構使得它在不同平台之間的適應性強。與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 2aronS/Duel-Agents，OpenTag 提供了更高的自定義性和控制權，因為用戶可以完全掌握自己的模型和數據。實際使用中，OpenTag 需要一定的設置時間，尤其是對於不熟悉 Slack 應用開發的用戶來說，可能會面臨一些挑戰，但其靈活性和開源特性使其在長期使用中具備優勢。這個專案目前處於 beta 階段，適合希望在 Slack 環境中實現 AI 功能的團隊，尤其是那些對自架和控制有需求的開發者。
 
-**技術棧**：`TypeScript` · `Python` · `@copilotkit/channels`
+**技術棧**：`TypeScript` · `Python`
 
 ## 重點功能
 
-- 自架設 AI 代理 — 用戶可以在自己的基礎設施上運行 AI 代理，完全控制運行環境。
-- 多平台支持 — 除了 Slack，還支持 Discord、Telegram 和 WhatsApp，方便用戶在不同平台上使用。
-- 靈活的運行模式 — 提供 Intelligence Gateway 模式和自託管模式，滿足不同需求。
-- 豐富的消息呈現 — 使用 CopilotKit 的 UI 組件來生成豐富的消息格式。
-- 簡單的安裝流程 — 只需一條 `pnpm install` 指令即可安裝所有依賴。
+- 自架 AI 代理 — 完全控制運行時和模型，避免商業服務的鎖定。
+- 多平台支持 — 除了 Slack，還能在 Discord、Telegram 和 WhatsApp 上運行。
+- Intelligence Gateway 模式 — 通過即時網關運行，簡化安全性管理。
+- 豐富的回應格式 — 支持生成表格和圖表，提升用戶互動體驗。
+- 靈活的自定義 — 用戶可以根據需求修改代理行為和整合工具。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 安裝所有依賴
 ```bash
 pnpm install
 ```
@@ -141,65 +141,67 @@ pnpm channel
 ## 程式碼範例
 
 ```ts
-{
-  "前置條件": "安裝完成後，啟動代理和機器人",
-  "指令": "pnpm channel",
-  "預期輸出": "機器人在 Slack 中運行，能夠回應提及並執行指令。"
-}
+# 前置條件
+# 需要安裝 pnpm 和 Node.js
+pnpm install
+pnpm runtime    # 啟動代理後端，運行在 :8200
+pnpm channel    # 啟動機器人，通過 Intelligence Gateway 運行
+# 預期輸出
+# 機器人應該能在 Slack 中正常回應用戶的請求。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 21 天內累積 674 stars（32/天），forks 80（11.9%），顯示出一定的社群興趣。主要貢獻者包括 jerelvelarde 和 NathanTarbert，他們在開源社群中有良好的聲譽。這個專案解決了自架設 AI 代理的需求，尤其是在 Slack 這樣的商業環境中，傳統的商業解決方案往往有高昂的費用和鎖定問題。這個工具的出現讓開發者能夠更靈活地運用 AI 技術，並且有可能吸引了對開源解決方案感興趣的使用者。社群的活躍度和問題解決率也顯示出這個專案仍在持續發展中。
+> 建立 22 天內累積 676 stars（31/天），forks 80（11.8%），顯示出不錯的社群參與度。這個專案的作者來自 CopilotKit 團隊，過去在開發聊天平台代理方面有豐富經驗。OpenTag 解決了許多企業在使用商業 AI 服務時面臨的數據隱私和成本問題，尤其是對於需要自架解決方案的團隊。近期在社群中的討論和需求推動了這個專案的曝光率，並且其開源特性吸引了許多開發者的關注。這個工具的出現正好契合了企業對於 AI 自主性和數據控制的需求，並且在開源生態中找到了自己的位置。
 
 ## 適合誰使用
 
-**目標受眾**：希望在 Slack 中自架設 AI 代理並具備一定技術背景的開發者。
+**目標受眾**：希望在 Slack 環境中自架 AI 代理的開發者和團隊。
 
 > [!example] 使用場景
-> - 後端工程師用它來在 Slack 中運行自訂的 AI 代理，因為這樣可以完全控制運行環境，避免商業解決方案的鎖定效應。
-> - 產品經理用它來自動化團隊的問題回報流程，因為它能夠在對話中生成報告並提交到任務管理工具，提升效率。
-> - 開發者用它來測試不同的 AI 模型在 Slack 中的表現，因為它支持多平台運行並且易於集成各種工具。
+> - 產品經理用它來在 Slack 中自動生成會議記錄，因為這樣可以節省手動整理的時間，並且確保信息不遺漏。
+> - 開發者用它來在 Discord 中管理技術支持請求，因為可以快速回應常見問題並提高團隊效率。
+> - 運營團隊用它來在 Telegram 中收集用戶反饋，因為能夠即時處理並生成報告，提升用戶滿意度。
 
 ## 架構分析
 
-OpenTag 的架構設計為一個輕量級的代理系統，基於 CopilotKit 的多個包來實現。其核心是 `@copilotkit/channels`，提供了平台無關的機器人引擎，能夠處理多種消息格式和工具調用。資料流方面，機器人通過 AG-UI 與代理後端進行通訊，這樣的設計使得用戶可以靈活選擇運行環境。
+OpenTag 的架構設計旨在提供靈活的自架解決方案，使用者可以選擇在 Slack 或其他平台上運行 AI 代理。其核心由多個 CopilotKit 包組成，包括 channels、runtime 和 channels-ui，這些包協同工作以實現豐富的用戶互動。用戶可以選擇 Intelligence Gateway 模式，這樣可以減少對 Slack token 的管理，提升安全性；或者選擇自托管模式，直接與 Slack 進行交互。
 
-選擇使用 TypeScript 和 Python 的組合，讓開發者能夠在前端和後端之間無縫切換，並且能夠利用現有的 JavaScript 生態系統。這樣的選擇雖然增加了學習成本，但也帶來了更高的靈活性和擴展性。整體而言，這個架構適合需要快速迭代和自訂的開發者，但在大規模部署時可能會面臨資源管理的挑戰。
+這種設計的代價在於需要用戶自行管理運行環境和安全性。擴展性方面，OpenTag 支持多平台運行，但在不同平台之間的適配可能需要額外的配置。整體來看，這種架構提供了高自由度，但也要求用戶具備一定的技術能力來進行設置和維護。
 
 ## 技術深入分析
 
-OpenTag 的核心技術機制基於 CopilotKit 的多個包，特別是 `@copilotkit/channels`，這是一個平台無關的機器人引擎，能夠處理多種消息格式和工具調用。其設計模式採用模組化架構，讓用戶可以根據需求選擇安裝不同的包。效能方面，這個系統能夠支持多平台運行，並且在小型團隊中能夠快速部署和迭代。選擇 TypeScript 和 Python 的組合，讓開發者能夠在前端和後端之間無縫切換，但也增加了學習成本。設計上，這個系統的靈活性和可擴展性是其主要優勢，但在大規模部署時可能會面臨資源管理的挑戰。整合方面，與 Slack 和其他聊天平台的整合相對簡單，但需要用戶自行管理 API 金鑰和安全性，這可能會成為新手的障礙。
+OpenTag 的核心技術機制是基於 CopilotKit 的多個包，這些包協同工作以實現聊天代理的功能。使用 TypeScript 和 Python，OpenTag 提供了靈活的自架解決方案，支持多平台運行。效能方面，代理的回應速度取決於所選模型的性能，並且需要用戶自行管理運行環境，這可能會影響冷啟動時間和記憶體佔用。設計上，選擇 TypeScript 使得前端交互更加靈活，而 Python 的使用則為深度研究提供了支持。這種選擇的代價在於需要用戶具備一定的技術能力來進行設置和維護。技術風險方面，隨著使用者數量的增加，可能會面臨性能瓶頸，特別是在高並發情況下。整合方面，OpenTag 與主流的 CI/CD 工具有良好的兼容性，但對於新手來說，整合過程可能會有一定的學習曲線。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝指導和範例，安裝過程相對順暢，但對於新手來說，設置過程可能會有一定的挑戰。缺乏多語言支持，主要以英文為主。
+> README 文件提供了清晰的安裝步驟和範例，對於新手來說相對友好。安裝過程順暢，但需要用戶了解 Slack 應用的基本概念。文件中有詳細的設置指南，幫助用戶快速上手。整體而言，花 30 分鐘能夠成功運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 開源且可自訂，讓用戶完全控制運行環境。
-> - 支持多平台，方便用戶在不同聊天工具中使用。
-> - 靈活的運行模式，滿足不同的需求和安全考量。
+> - 完全控制運行時和模型，避免商業服務的鎖定。
+> - 支持多平台運行，靈活適應不同需求。
+> - 豐富的功能支持，包括生成表格和圖表，提升用戶互動體驗。
 
 > [!danger] 缺點
-> - 需要一定的技術背景來設置和維護系統。
-> - 社群活躍度尚在發展中，可能會遇到未解決的問題。
-> - 自架設模式需要用戶自行管理安全性和運行環境。
+> - 需要一定的設置時間，對於新手來說可能有挑戰。
+> - 自架模式需要用戶自行管理安全性和運行環境。
+> - 目前僅支持特定的聊天平台，對於需要多平台支持的用戶需額外配置。
 
 > [!warning] 注意事項
-> - 需要一定的技術背景來設置和維護系統。
-> - 目前社群活躍度尚在發展中，可能會遇到未解決的問題。
-> - 自架設模式需要用戶自行管理安全性和運行環境。
+> - 需要一定的設置時間，對於不熟悉 Slack 應用開發的用戶來說可能會有挑戰。
+> - 目前僅支持特定的聊天平台，對於需要多平台支持的用戶需額外配置。
+> - 自架模式需要用戶自行管理安全性和運行環境。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具提供了類似的 AI 代理功能，但主要集中在遊戲開發上，適合需要遊戲相關功能的開發者。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 此工具專注於多代理系統的協作，而 OpenTag 更加靈活，支持多平台和自訂化。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的聊天代理功能，但主要針對遊戲環境，缺乏 OpenTag 的多平台支持和自架能力。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於競技代理的開發，與 OpenTag 的商業應用場景不同，且不支持自架。 |
 
 ## 替代方案決策
 
@@ -207,64 +209,64 @@ OpenTag 的核心技術機制基於 CopilotKit 的多個包，特別是 `@copilo
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發的 AI 代理，提供了遊戲特定的功能。 | 如果你的專案是遊戲相關，並需要專門的遊戲 AI 功能。 | medium，因為需要重新設計整個代理架構以符合遊戲需求。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於多代理系統的協作，提供了多代理間的協作功能。 | 如果你的專案需要多個代理之間的協作，而不僅僅是一個單一的代理。 | high，因為需要重新設計系統以支持多代理的協作。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲環境的聊天代理，使用 Rust 實作，記憶體用量較少，但缺乏 OpenTag 的多平台支持。 | 如果你的專案主要針對遊戲開發，且需要高效能的聊天代理，則可以考慮它。 | medium，因為需要重新設計與遊戲環境的整合。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 專注於競技代理的開發，使用 Python 實作，功能較為單一，無法支持多平台。 | 如果你的需求是專注於競技環境的 AI 代理，則可以考慮這個工具。 | high，因為需要重構整個代理的架構。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **OpenTag** | **agent-sprite-forge** | **Duel-Agents** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於遊戲開發的 AI 代理，提供了遊戲特定的功能。 | 專注於多代理系統的協作，提供了多代理間的協作功能。 |
-> | 遷移成本 | - | medium，因為需要重新設計整個代理架構以符合遊戲需求。 | high，因為需要重新設計系統以支持多代理的協作。 |
-> | 適用場景 | 主要場景 | 如果你的專案是遊戲相關，並需要專門的遊戲 AI 功能。 | 如果你的專案需要多個代理之間的協作，而不僅僅是一個單一的代理 |
+> | 技術路線 | 本專案 | 專注於遊戲環境的聊天代理，使用 Rust 實作，記憶體用量較少，但缺乏 OpenTag 的多平台支持。 | 專注於競技代理的開發，使用 Python 實作，功能較為單一，無法支持多平台。 |
+> | 遷移成本 | - | medium，因為需要重新設計與遊戲環境的整合。 | high，因為需要重構整個代理的架構。 |
+> | 適用場景 | 主要場景 | 如果你的專案主要針對遊戲開發，且需要高效能的聊天代理，則可以 | 如果你的需求是專注於競技環境的 AI 代理，則可以考慮這個工 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合希望在 Slack 環境中實現 AI 功能的團隊，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 初次設置時可能會遇到 API 金鑰配置問題
-  - 解法：仔細檢查 `.env` 文件中的配置
-- [MEDIUM] 在 Slack 中的消息格式可能不一致
-  - 解法：根據不同平台調整消息格式設置
-- [MEDIUM] 社群問題解決率低，可能需要自行尋找解決方案
-  - 解法：參考官方文檔和 GitHub issue
+- **[HIGH]** 在自托管模式下，Slack token 配置不當可能導致無法正常運行。
+  - 解法：仔細檢查 .env 文件中的 token 配置，確保正確無誤。
+- [MEDIUM] 在高並發情況下，代理可能會出現性能瓶頸。
+  - 解法：考慮擴展運行環境或優化模型配置以提高性能。
+- [MEDIUM] 對於不熟悉 Slack 應用開發的用戶，設置過程可能會有挑戰。
+  - 解法：參考官方文檔中的設置指南，並尋求社群支持。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 靈活的自架設選項和多平台支持，適合小型團隊使用。 |
-| 大型企業的多平台 AI 代理 | 普通 | 雖然支持多平台，但設置和維護成本較高，可能不適合大型企業。 |
-| 開發者想要快速原型設計 AI 代理 | 非常適合 | 安裝簡單且可快速迭代，適合開發者進行原型設計。 |
-| 需要穩定商業解決方案的團隊 | 不適合 | 目前仍在 alpha 階段，不建議用於生產環境。 |
+| 10 人以下的新創公司後端 API | 非常適合 | 能夠在 Slack 環境中自架 AI 代理，提供靈活的解決方案。 |
+| 大型企業的客戶支持系統 | 適合 | 可以在多平台上運行，但需要額外配置。 |
+| 個人開發者的 AI 實驗 | 非常適合 | 開源特性和自架能力使其成為實驗的理想選擇。 |
+| 需要即時反饋的高並發應用 | 不適合 | 在高並發情況下可能會出現性能瓶頸。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~10 小時 |
-| 整合時間 | ~5 小時 |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學、5 小時整合，得到靈活的 AI 代理解決方案，值得嘗試。
+> 花 5 小時學習，10 小時整合，得到靈活的自架 AI 代理，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：需要管理 API 金鑰和用戶數據，使用時需注意安全性。
+> 低風險：OpenTag 本身不需要高權限運行，但用戶需確保 Slack token 的安全性。對於使用的依賴包，需定期檢查是否有已知的安全漏洞。
 
 ## 健康度儀表板
 
@@ -357,7 +359,7 @@ OpenTag 的核心技術機制基於 CopilotKit 的多個包，特別是 `@copilo
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚在發展中，開放的問題數量顯示出使用者可能會遇到一些挑戰。
+**社群活躍度**：社群活躍度中等，最近有合併請求和活躍的開發活動。
 **連結**：[文件](https://docs.copilotkit.ai/slack)
 
 ## 開發動態
@@ -520,7 +522,7 @@ OpenTag 的核心技術機制基於 CopilotKit 的多個包，特別是 `@copilo
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[多模態]] · [[API 設計]]
+相關概念：[[Agent 框架]] · [[自動化]] · [[聊天機器人]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AlexandrosGounis--pdfx|AlexandrosGounis/pdfx]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[DietrichGebert--ponytail|DietrichGebert/ponytail]] · [[Fokkyp--SoftwareCopyright-Skill|Fokkyp/SoftwareCopyright-Skill]]
 
@@ -528,11 +530,11 @@ OpenTag 的核心技術機制基於 CopilotKit 的多個包，特別是 `@copilo
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：自動化）
+> [!note]- 直接競品（同子分類：聊天機器人）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "自動化" AND file.name != "CopilotKit--OpenTag"
+> WHERE subcategory = "聊天機器人" AND file.name != "CopilotKit--OpenTag"
 > SORT stars DESC
 > ```
 
@@ -564,7 +566,7 @@ OpenTag 的核心技術機制基於 CopilotKit 的多個包，特別是 `@copilo
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","多模態","API 設計"];
+> const concepts = ["Agent 框架","自動化","聊天機器人"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "CopilotKit--OpenTag" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
