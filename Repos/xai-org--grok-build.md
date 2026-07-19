@@ -7,12 +7,12 @@ language: Rust
 license: Apache-2.0
 description: "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible."
 homepage: ""
-stars: 16802
-stars_per_day: 5601
-forks: 3085
+stars: 19096
+stars_per_day: 4774
+forks: 3444
 open_issues: 0
 created: 2026-07-14
-pushed_at: 2026-07-17
+pushed_at: 2026-07-18
 first_seen: 2026-07-16
 week: "2026-W29"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "提供一個終端機界面的 AI 編碼代理，支持互動式編�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-07-21"
+appearances: 4
+next_review: "2026-07-22"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-16"
-star_history: "2026-07-16:5254,2026-07-17:12986,2026-07-18:16802"
+star_history: "2026-07-16:5254,2026-07-17:12986,2026-07-18:16802,2026-07-19:19096"
 tags:
   - github
   - "category/開發工具"
@@ -773,6 +773,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-19|2026-07-19]] — 再次上榜，19.1k stars
 - [[2026-07-18|2026-07-18]] — 再次上榜，16.8k stars
 - [[2026-07-17|2026-07-17]] — 再次上榜，13.0k stars
 - [[2026-07-16|2026-07-16]] — 首次收錄，5.3k stars

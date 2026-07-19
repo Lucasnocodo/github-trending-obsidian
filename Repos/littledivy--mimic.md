@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "Intercept any app, then call it from Python like a library"
 homepage: ""
-stars: 1149
-stars_per_day: 287
-forks: 67
+stars: 1178
+stars_per_day: 236
+forks: 75
 open_issues: 4
 created: 2026-07-13
 pushed_at: 2026-07-15
@@ -30,8 +30,8 @@ use_case: "讓你能夠攔截任何應用程式，並像使用庫一樣從 Pytho
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-07-21"
+appearances: 6
+next_review: "2026-07-22"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-14"
-star_history: "2026-07-14:730,2026-07-15:912,2026-07-16:1034,2026-07-17:1108,2026-07-18:1149"
+star_history: "2026-07-14:730,2026-07-15:912,2026-07-16:1034,2026-07-17:1108,2026-07-18:1149,2026-07-19:1178"
 tags:
   - github
   - "category/開發工具"
@@ -793,6 +793,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-19|2026-07-19]] — 再次上榜，1.2k stars
 - [[2026-07-18|2026-07-18]] — 再次上榜，1.1k stars
 - [[2026-07-17|2026-07-17]] — 再次上榜，1.1k stars
 - [[2026-07-16|2026-07-16]] — 再次上榜，1.0k stars

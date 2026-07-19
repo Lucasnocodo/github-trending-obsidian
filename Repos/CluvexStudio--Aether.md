@@ -7,12 +7,12 @@ language: Rust
 license: AGPL-3.0
 description: ""
 homepage: ""
-stars: 1148
-stars_per_day: 383
-forks: 65
-open_issues: 4
+stars: 1258
+stars_per_day: 315
+forks: 76
+open_issues: 7
 created: 2026-07-14
-pushed_at: 2026-07-16
+pushed_at: 2026-07-18
 first_seen: 2026-07-17
 week: "2026-W29"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "為受限網路提供無阻礙的代理通道，讓用戶能夠自由
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-21"
+appearances: 3
+next_review: "2026-07-22"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 76
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-17"
-star_history: "2026-07-17:941,2026-07-17:942,2026-07-18:1146,2026-07-18:1148"
+star_history: "2026-07-17:941,2026-07-17:942,2026-07-18:1146,2026-07-18:1148,2026-07-19:1258"
 tags:
   - github
   - "category/安全"
@@ -871,5 +871,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-19|2026-07-19]] — 再次上榜，1.3k stars
 - [[2026-07-18|2026-07-18]] — 再次上榜，1.1k stars
 - [[2026-07-17|2026-07-17]] — 首次收錄，941 stars

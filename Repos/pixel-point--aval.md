@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "A new open-source format for interactive video on the web, with a built-in state machine, frame-accurate transitions, and packed-alpha transparency."
 homepage: "https://pixelpoint.io/aval"
-stars: 1170
-stars_per_day: 293
-forks: 63
+stars: 1217
+stars_per_day: 243
+forks: 65
 open_issues: 2
 created: 2026-07-13
-pushed_at: 2026-07-17
+pushed_at: 2026-07-18
 first_seen: 2026-07-17
 week: "2026-W29"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "提供一種新的互動視頻格式，支持狀態機、精確過渡
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-21"
+appearances: 3
+next_review: "2026-07-22"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-17"
-star_history: "2026-07-17:1069,2026-07-18:1170"
+star_history: "2026-07-17:1069,2026-07-18:1170,2026-07-19:1217"
 tags:
   - github
   - "category/開發工具"
@@ -828,5 +828,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-19|2026-07-19]] — 再次上榜，1.2k stars
 - [[2026-07-18|2026-07-18]] — 再次上榜，1.2k stars
 - [[2026-07-17|2026-07-17]] — 首次收錄，1.1k stars
