@@ -7,8 +7,8 @@ language: Shell
 license: N/A
 description: "Always-on token-efficiency skill for coding agents (Claude Code, Codex, Cursor, Windsurf, Cline). ~31% lower bill on average, no loss of correctness."
 homepage: ""
-stars: 531
-stars_per_day: 35
+stars: 533
+stars_per_day: 33
 forks: 4
 open_issues: 0
 created: 2026-07-03
@@ -17,7 +17,7 @@ first_seen: 2026-07-06
 week: "2026-W28"
 month: "2026-07"
 category: "開發工具"
-subcategory: "API 工具"
+subcategory: "自動化"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-06
-use_case: "為編碼代理提供持續的代幣效率技能，平均降低 31% 的費用，且不損失正確性。"
+use_case: "為編碼代理提供持續的令牌效率技能，平均降低 31% 的費用，且不損失正確性。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-06"
-star_history: "2026-07-06:590,2026-07-06:590,2026-07-07:596,2026-07-08:611,2026-07-09:566,2026-07-10:555,2026-07-11:557,2026-07-12:560,2026-07-13:561,2026-07-14:549,2026-07-15:544,2026-07-16:530,2026-07-17:531,2026-07-18:527,2026-07-19:531"
+star_history: "2026-07-06:590,2026-07-06:590,2026-07-07:596,2026-07-08:611,2026-07-09:566,2026-07-10:555,2026-07-11:557,2026-07-12:560,2026-07-13:561,2026-07-14:549,2026-07-15:544,2026-07-16:530,2026-07-17:531,2026-07-18:527,2026-07-19:531,2026-07-20:533"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "token-diet"
   - "Kulaxyz/token-diet"
-  - "為編碼代理提供持續的代幣效率技能，平均降低 31% 的費用，且不損失正確性。"
+  - "為編碼代理提供持續的令牌效率技能，平均降低 31% 的費用，且不損失正確性。"
 ---
 
 # token-diet
 
-**531** stars · **35** stars/天 · 建立 15 天前 · Shell · 未標註授權
+**533** stars · **33** stars/天 · 建立 16 天前 · Shell · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/Kulaxyz--token-diet");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 為編碼代理提供持續的代幣效率技能，平均降低 31% 的費用，且不損失正確性。
+> 為編碼代理提供持續的令牌效率技能，平均降低 31% 的費用，且不損失正確性。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (35 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 14 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要降低與編碼代理互動成本的開發者，特別是在資源有限的情況下。
-> **一句話重點** 這個專案不僅能降低成本，還能保持輸出內容的正確性，這對開發者來說是個巨大的優勢。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (33 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 15 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要與多種編碼代理互動並希望降低成本的開發者。
+> **一句話重點** token-diet 不僅能降低成本，還能在保持正確性的同時優化輸出，對開發者來說是一個非常實用的工具。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Kulaxyz--token-diet");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "API 工具" && p.file.name !== "Kulaxyz--token-diet" && p.status !== "archived")
+>     .where(p => p.subcategory === "自動化" && p.file.name !== "Kulaxyz--token-diet" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,98 +96,98 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 API 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習、1 小時整合，得到顯著的代幣使用減少，值得一試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學習，1 小時整合，得到顯著的成本降低，值得採用。
 
 > [!abstract] 核心創新
-> 這個專案的創新點在於能夠在不損失正確性的情況下，顯著降低代幣使用。
+> 通過持續的令牌效率技能，顯著降低編碼代理的使用成本而不損失正確性。
 
 ## 專案簡介
 
-這個專案的核心機制是透過精簡輸出內容來降低代幣消耗，適用於多種編碼代理（如 Claude Code、Codex 等）。使用者只需安裝後，它會在每次會話中自動運行，無需每次手動指令。安裝過程簡單，只需一行指令即可完成，並可選擇不同的運行模式（如 `ultra` 模式可進一步減少輸出）。這個工具的設計理念是保持輸出正確性的同時，去除不必要的冗長語句，確保關鍵信息的傳遞。技術上，它利用了會話開始的鉤子來持續應用這一技能，這樣的設計使得它在多種情境下都能有效運作。
+token-diet 是一個針對多種編碼代理（如 Claude Code、Codex 等）設計的工具，旨在降低使用過程中的令牌消耗。它通過在整個會話中修剪不必要的文字，來達到平均 31% 的費用降低，且在真實測試中，輸出量可減少 30% 至 81%。用戶可以通過簡單的命令安裝，並選擇不同的模式（如 `on`、`lite`、`ultra` 和 `off`）來調整輸出精簡程度。技術上，token-diet 透過會話開始的鉤子來持續應用這些優化，確保每次會話都能保持高效。這種設計使得它在處理大量輸出時，能夠顯著降低成本，特別是在需要大量文本生成的情境下。
 
-相較於傳統的編碼助手，這個工具能夠在輸出密集型的情境中（如建議、計劃、解釋）實現高達 81% 的輸出減少，並且在費用上平均降低 31%。在實際運行中，這種方法不僅提高了效率，還保持了正確性，這是許多其他工具所無法做到的。使用者在進行代碼變更和測試時，能夠明顯感受到其帶來的成本效益。這個工具特別適合需要頻繁與編碼代理互動的開發者，尤其是在資源有限的情況下。整體來看，這是一個值得考慮的工具，尤其是對於那些希望降低開發成本的團隊。
+與其他工具相比，如 0xGF/boneyard 和 0x0funky/agent-sprite-forge，token-diet 更加專注於令牌的精簡，而不是僅僅提高生成的速度。實際使用中，token-diet 在輸出密集型的會話中表現尤為突出，能夠有效減少不必要的文字，並保持必要的正確性。使用者可能會遇到的問題包括如何選擇合適的模式來平衡輸出和成本，這需要根據具體的使用場景來調整。這個專案目前處於活躍開發階段，未來可能會增加更多的功能來支持不同的編碼代理。對於需要經常與編碼代理互動的開發者來說，token-diet 提供了一個非常有價值的解決方案，特別是在成本控制方面。
 
 **技術棧**：`Shell` · `JavaScript` · `Python`
 
 ## 重點功能
 
-- 持續運行 — 安裝後自動運行，無需每次手動指令。
-- 多種運行模式 — 支持 `on`、`lite`、`ultra` 和 `off` 模式，根據需求調整輸出精簡程度。
-- 精簡輸出 — 去除冗長語句，保持關鍵信息的傳遞，顯著降低代幣使用。
-- 支持多種編碼代理 — 可針對 Claude Code、Codex、Cursor 等多種代理進行優化。
-- 批量處理 — 支持獨立調用的批量處理，減少不必要的交互。
+- 持續運行 — 無需每次發送命令，會話開始時自動啟用。
+- 多種模式 — 可選擇 `on`、`lite`、`ultra` 和 `off` 來調整輸出精簡程度。
+- 高效的輸出 — 減少不必要的文字，保持必要的正確性。
+- 批量處理 — 支援批量獨立調用，減少不必要的交互。
+- 子代理委派 — 將廣泛的搜索委派給較便宜的模型，保持正確性驗證。
 
 ## 快速開始
 
-1. 安裝 token-diet
+1. 使用 curl 安裝 token-diet
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Kulaxyz/token-diet/main/install.sh | bash
 ```
-2. 選擇運行模式
+2. 選擇安裝模式
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Kulaxyz/token-diet/main/install.sh | bash -s -- --ultra
 ```
-3. 啟用或禁用功能
+3. 運行 token-diet
 ```bash
-/token-diet [on|lite|ultra|off]
+/token-diet on
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 15 天內累積 531 stars（35/天），forks 4（0.8%），顯示出一定的關注度。作者 Kulaxyz 之前在開源社群中有過其他貢獻，這個工具解決了代碼助手在代幣使用上的高昂成本問題，之前的解決方案往往無法有效控制輸出長度和成本。這個工具的設計讓它能夠在多種編碼代理中運行，這在市場上是相對少見的。由於其簡單的安裝方式和高效的性能，吸引了不少開發者的注意。
+> 建立 16 天內累積 533 stars（33/天），forks 4（0.8%），顯示出穩定的增長。作者 Kulaxyz 是一位活躍的開發者，這個專案解決了在使用編碼代理時高昂的令牌費用問題，之前的方案往往無法有效控制成本。這個工具的推出引起了社群的注意，特別是在開發者對成本敏感的背景下。高 fork/stars 比率顯示出使用者對這個工具的實際修改和使用需求。
 
 ## 適合誰使用
 
-**目標受眾**：需要降低與編碼代理互動成本的開發者，特別是在資源有限的情況下。
+**目標受眾**：需要與多種編碼代理互動並希望降低成本的開發者。
 
 > [!example] 使用場景
-> - 後端工程師用它來減少與 Codex 的互動成本，因為它能將代碼生成的代幣使用降低 31%。
-> - 產品經理用它來快速獲取技術建議，因為它能提供更精簡的回答，讓決策過程更高效。
-> - 測試工程師用它來優化測試用例的生成，因為它能夠針對關鍵路徑進行高效的測試，減少不必要的代碼輸出。
+> - 後端工程師用它來減少與 Codex 的互動成本，因為能夠節省 31% 的令牌費用，讓預算更有效。
+> - AI 研究人員用它來優化模型生成的文本，因為能夠在保持正確性的同時，減少不必要的輸出。
+> - DevOps 工程師用它來在 CI/CD 流程中集成，因為能夠快速生成必要的文檔和測試，降低整體開支。
 
 ## 架構分析
 
-這個專案採用了一個簡單的安裝腳本，透過 `SessionStart` 鉤子來持續應用技能，這樣的設計使得它能夠在每次會話中自動運行。資料流方面，使用者的請求會經過這個技能的處理，從而減少不必要的輸出。選擇這種架構的好處是簡化了使用流程，但可能在某些情況下會導致功能的靈活性降低。擴展性方面，這個工具的設計使得未來可以針對更多的編碼代理進行優化，但目前仍然依賴於固定的代理類型。
+token-diet 的架構設計為一個持續運行的技能，通過會話開始的鉤子來自動應用。這樣的設計使得用戶無需每次手動啟動，提升了使用的便利性。資料流方面，token-diet 在會話中會持續監控輸出，並根據選擇的模式進行調整，確保輸出精簡且正確。選擇這種設計的代價在於需要用戶對不同模式的理解，以便根據需求進行調整。擴展性方面，這種設計能夠支持多種編碼代理，但在未來可能需要針對新代理進行調整和優化。
 
 ## 技術深入分析
 
-這個工具的核心技術機制在於利用會話開始的鉤子來持續應用代幣效率技能，這樣的設計使得它能夠在每次會話中自動運行。效能方面，根據實際運行數據，這個工具能在輸出密集型的情境中實現高達 81% 的輸出減少，並且在費用上平均降低 31%。選擇使用 Shell 和 JavaScript 進行實作，這使得安裝過程變得簡單，但也可能在某些情況下限制了功能的靈活性。技術風險方面，這個工具依賴於特定的編碼代理，未來若這些代理的 API 發生變化，可能會影響工具的運作。整合方面，這個工具能夠輕鬆融入現有的開發流程，特別是在使用 CI/CD 的環境中，能夠有效提升開發效率。
+token-diet 的核心技術機制在於持續的令牌效率優化，通過在會話中修剪不必要的文字來降低成本。它使用了會話開始的鉤子來自動應用這些優化，這意味著用戶無需每次手動啟動，提升了使用的便利性。效能上，token-diet 在真實測試中顯示出高達 81% 的輸出節省，並且在多種情境下保持正確性。設計上選擇了 Shell、JavaScript 和 Python 作為技術棧，這使得安裝和使用變得簡單，但也意味著需要用戶對這些技術有一定的了解。技術風險方面，過度精簡可能在某些情境下影響輸出質量，這需要用戶根據具體需求進行調整。整合方面，token-diet 可以輕鬆融入現有的開發流程，但對於新手來說，理解各種模式的選擇可能需要一些時間。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和使用範例。安裝過程順暢，沒有明顯的坑。文件中有良好的入門指南，適合新手使用。
+> README 文件清晰且提供了安裝指令和使用範例，讓新手能夠快速上手。安裝過程順暢，無明顯的坑。文件中沒有多語言支持，但主要內容已經足夠清楚，能讓使用者在 30 分鐘內跑起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 能夠顯著降低代幣使用，平均降低 31%。
-> - 簡單的安裝和使用流程，適合各種開發者。
-> - 支持多種編碼代理，靈活性高。
+> - 顯著降低令牌使用成本，平均節省 31%。
+> - 提供多種模式以滿足不同需求。
+> - 持續運行的設計提升了使用便利性。
 
 > [!danger] 缺點
 > - 僅支援特定的編碼代理，限制了使用範圍。
-> - 在某些情境下可能無法完全去除所有冗長內容。
-> - 需要持續的網路連接以便於安裝和更新。
+> - 過度精簡可能影響某些情境下的輸出質量。
+> - 需要穩定的網路連接以保持功能。
 
 > [!warning] 注意事項
-> - 僅支援特定的編碼代理（如 Claude Code、Codex 等）。
-> - 在某些情境下可能無法完全去除所有冗長內容。
-> - 需要持續的網路連接以便於安裝和更新。
+> - 僅支援特定的編碼代理（Claude Code、Codex 等）。
+> - 在某些情況下，過度精簡可能影響輸出質量。
+> - 需要持續的網路連接以保持功能運作。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建和管理多個代理，而 token-diet 專注於降低單個代理的代幣使用。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供了一個更全面的代理管理系統，而 token-diet 專注於優化輸出效率。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成代理的多樣性，而 token-diet 更專注於令牌的精簡和成本控制。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供不同的編碼代理集成，但不如 token-diet 專注於令牌效率。 |
 
 ## 替代方案決策
 
@@ -195,44 +195,47 @@ curl -fsSL https://raw.githubusercontent.com/Kulaxyz/token-diet/main/install.sh 
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建和管理多個代理，而 token-diet 專注於降低單個代理的代幣使用。 | 如果需要管理多個代理並進行協同工作，這個工具會更合適。 | medium，因為需要重新配置多個代理的設定。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供了一個更全面的代理管理系統，而 token-diet 專注於優化輸出效率。 | 如果需要一個全面的代理管理解決方案，boneyard 會是更好的選擇。 | high，因為需要重新設計整個代理的運作流程。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成代理的多樣性，而 token-diet 更專注於令牌的精簡和成本控制。 | 如果需要多樣化的生成代理以滿足不同需求，則應選擇此工具。 | medium，因為需要重新設計整體的交互流程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供不同的編碼代理集成，但不如 token-diet 專注於令牌效率。 | 如果需要更廣泛的編碼代理支持，而不僅僅是令牌效率，則應選擇此工具。 | high，因為需要重構現有的系統以適應新工具。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **token-diet** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於創建和管理多個代理，而 token-diet 專注於降低單個代理的代幣使用。 | 提供了一個更全面的代理管理系統，而 token-diet 專注於優化輸出效率。 |
-> | 遷移成本 | - | medium，因為需要重新配置多個代理的設定。 | high，因為需要重新設計整個代理的運作流程。 |
-> | 適用場景 | 主要場景 | 如果需要管理多個代理並進行協同工作，這個工具會更合適。 | 如果需要一個全面的代理管理解決方案，boneyard 會是更 |
+> | 技術路線 | 本專案 | 專注於生成代理的多樣性，而 token-diet 更專注於令牌的精簡和成本控制。 | 提供不同的編碼代理集成，但不如 token-diet 專注於令牌效率。 |
+> | 遷移成本 | - | medium，因為需要重新設計整體的交互流程。 | high，因為需要重構現有的系統以適應新工具。 |
+> | 適用場景 | 主要場景 | 如果需要多樣化的生成代理以滿足不同需求，則應選擇此工具。 | 如果需要更廣泛的編碼代理支持，而不僅僅是令牌效率，則應選擇此 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人項目試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些情境下，可能無法完全去除所有冗長內容，導致代幣使用未達預期。
-  - 解法：根據具體情境調整運行模式，選擇更適合的精簡程度。
-- **[HIGH]** 對於不支援的編碼代理，無法使用此工具。
-  - 解法：考慮使用其他工具或手動優化輸出。
+- [MEDIUM] 在某些情況下，過度精簡可能導致重要信息的遺失。
+  - 解法：根據具體需求調整模式，選擇適合的輸出精簡程度。
+- **[HIGH]** 需要穩定的網路連接以保持功能運作。
+  - 解法：在有穩定網路的環境中使用，避免在不穩定的網路下運行。
+- [MEDIUM] 對於不熟悉命令行的用戶，安裝過程可能會有些困難。
+  - 解法：提供安裝指導或簡化安裝流程。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊需要頻繁與編碼代理互動 | 非常適合 | 能夠顯著降低代幣使用，提升開發效率。 |
-| 大型企業的核心產品開發 | 不適合 | 目前處於 alpha 階段，穩定性不足。 |
-| 個人開發者的 side project | 適合 | 簡單的安裝和使用流程，能夠快速上手。 |
+| 小型團隊開發專案 | 非常適合 | 能有效降低開發成本，特別是在與編碼代理互動時。 |
+| 大型企業的核心系統 | 不適合 | 目前仍在 beta 階段，穩定性不足。 |
+| AI 研究團隊進行模型測試 | 適合 | 能夠在保持正確性的同時，降低測試成本。 |
+| 個人開發者的 side project | 非常適合 | 簡單易用，能快速上手並降低成本。 |
 
 ## 採用成本分析
 
@@ -244,12 +247,12 @@ curl -fsSL https://raw.githubusercontent.com/Kulaxyz/token-diet/main/install.sh 
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習、1 小時整合，得到顯著的代幣使用減少，值得一試。
+> 花 2 小時學習，1 小時整合，得到顯著的成本降低，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具不需要高權限，且不存取敏感資料，適合在 CI/CD pipeline 中使用。
+> 低風險：不需要高權限，且不存取敏感資料。依賴鏈的信任程度良好，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -336,7 +339,7 @@ curl -fsSL https://raw.githubusercontent.com/Kulaxyz/token-diet/main/install.sh 
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有持續的更新和維護。
+**社群活躍度**：社群活躍，最近有更新和提交。
 **連結**：[文件](https://github.com/Kulaxyz/token-diet)
 
 ## 開發動態
@@ -437,7 +440,7 @@ curl -fsSL https://raw.githubusercontent.com/Kulaxyz/token-diet/main/install.sh 
 
 ## 延伸閱讀
 
-相關概念：[[自動化測試]] · [[API 設計]] · [[機器學習]]
+相關概念：[[自動化]] · [[API 設計]] · [[效能優化]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[JuliusBrussee--caveman|JuliusBrussee/caveman]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[CopilotKit--OpenTag|CopilotKit/OpenTag]] · [[DietrichGebert--ponytail|DietrichGebert/ponytail]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]]
 
@@ -445,11 +448,11 @@ curl -fsSL https://raw.githubusercontent.com/Kulaxyz/token-diet/main/install.sh 
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：API 工具）
+> [!note]- 直接競品（同子分類：自動化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "API 工具" AND file.name != "Kulaxyz--token-diet"
+> WHERE subcategory = "自動化" AND file.name != "Kulaxyz--token-diet"
 > SORT stars DESC
 > ```
 
@@ -481,7 +484,7 @@ curl -fsSL https://raw.githubusercontent.com/Kulaxyz/token-diet/main/install.sh 
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化測試","API 設計","機器學習"];
+> const concepts = ["自動化","API 設計","效能優化"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Kulaxyz--token-diet" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
