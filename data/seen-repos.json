@@ -2934,10 +2934,10 @@
   },
   "littledivy/mimic": {
     "first_seen": "2026-07-14",
-    "last_seen": "2026-07-19",
-    "times_seen": 6,
+    "last_seen": "2026-07-20",
+    "times_seen": 7,
     "stars_first": 730,
-    "stars_last": 1178
+    "stars_last": 1216
   },
   "William-Lu-stack/LuxyAI": {
     "first_seen": "2026-07-14",
@@ -2962,10 +2962,10 @@
   },
   "xai-org/grok-build": {
     "first_seen": "2026-07-16",
-    "last_seen": "2026-07-19",
-    "times_seen": 4,
+    "last_seen": "2026-07-20",
+    "times_seen": 5,
     "stars_first": 5254,
-    "stars_last": 19096
+    "stars_last": 20258
   },
   "Kappaemme-git/codex-first-customer-finder-skill": {
     "first_seen": "2026-07-16",
@@ -2990,37 +2990,58 @@
   },
   "Fei-Away/Codex-Dream-Skin": {
     "first_seen": "2026-07-17",
-    "last_seen": "2026-07-19",
-    "times_seen": 3,
+    "last_seen": "2026-07-20",
+    "times_seen": 4,
     "stars_first": 6371,
-    "stars_last": 9838
+    "stars_last": 10545
   },
   "pixel-point/aval": {
     "first_seen": "2026-07-17",
-    "last_seen": "2026-07-19",
-    "times_seen": 3,
+    "last_seen": "2026-07-20",
+    "times_seen": 4,
     "stars_first": 1069,
-    "stars_last": 1217
+    "stars_last": 1241
   },
   "CluvexStudio/Aether": {
     "first_seen": "2026-07-17",
-    "last_seen": "2026-07-19",
-    "times_seen": 3,
+    "last_seen": "2026-07-20",
+    "times_seen": 4,
     "stars_first": 941,
-    "stars_last": 1258
+    "stars_last": 1319
   },
   "tandpfun/wardrobe": {
     "first_seen": "2026-07-18",
-    "last_seen": "2026-07-19",
-    "times_seen": 2,
+    "last_seen": "2026-07-20",
+    "times_seen": 3,
     "stars_first": 909,
-    "stars_last": 1064
+    "stars_last": 1164
   },
   "oil-oil/beautify-github-readme": {
     "first_seen": "2026-07-19",
-    "last_seen": "2026-07-19",
-    "times_seen": 1,
+    "last_seen": "2026-07-20",
+    "times_seen": 2,
     "stars_first": 828,
-    "stars_last": 828
+    "stars_last": 869
+  },
+  "nethical6/conversation-steganography": {
+    "first_seen": "2026-07-20",
+    "last_seen": "2026-07-20",
+    "times_seen": 1,
+    "stars_first": 829,
+    "stars_last": 829
+  },
+  "pablostanley/yoinks": {
+    "first_seen": "2026-07-20",
+    "last_seen": "2026-07-20",
+    "times_seen": 1,
+    "stars_first": 776,
+    "stars_last": 776
+  },
+  "KubeezMedia/kubeez-scroll-world-video": {
+    "first_seen": "2026-07-20",
+    "last_seen": "2026-07-20",
+    "times_seen": 1,
+    "stars_first": 660,
+    "stars_last": 660
   }
 }

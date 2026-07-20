@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Design clear, theme-specific GitHub README homepages with SVG titles, real proof, and maintainable Markdown"
 homepage: ""
-stars: 828
-stars_per_day: 166
-forks: 47
-open_issues: 2
+stars: 869
+stars_per_day: 145
+forks: 49
+open_issues: 1
 created: 2026-07-13
-pushed_at: 2026-07-17
+pushed_at: 2026-07-19
 first_seen: 2026-07-19
 week: "2026-W30"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "讓 GitHub README 更清晰且具主題性，使用 SVG 標題、實�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-26"
+appearances: 2
+next_review: "2026-07-27"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-19"
-star_history: "2026-07-19:828"
+star_history: "2026-07-19:828,2026-07-20:869"
 tags:
   - github
   - "category/開發工具"
@@ -799,4 +799,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-20|2026-07-20]] — 再次上榜，869 stars
 - [[2026-07-19|2026-07-19]] — 首次收錄，828 stars
