@@ -7,10 +7,10 @@ language: Rust
 license: AGPL-3.0
 description: ""
 homepage: ""
-stars: 1319
-stars_per_day: 264
-forks: 78
-open_issues: 7
+stars: 1395
+stars_per_day: 233
+forks: 85
+open_issues: 13
 created: 2026-07-14
 pushed_at: 2026-07-19
 first_seen: 2026-07-17
@@ -30,8 +30,8 @@ use_case: "提供一個用於繞過網路審查的 SOCKS5 代理客戶端。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-07-23"
+appearances: 5
+next_review: "2026-07-24"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 72
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-17"
-star_history: "2026-07-17:941,2026-07-17:942,2026-07-18:1146,2026-07-18:1148,2026-07-19:1258,2026-07-19:1258,2026-07-20:1319,2026-07-20:1319"
+star_history: "2026-07-17:941,2026-07-17:942,2026-07-18:1146,2026-07-18:1148,2026-07-19:1258,2026-07-19:1258,2026-07-20:1319,2026-07-20:1319,2026-07-21:1395"
 tags:
   - github
   - "category/基礎設施"
@@ -858,6 +858,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-21|2026-07-21]] — 再次上榜，1.4k stars
 - [[2026-07-20|2026-07-20]] — 再次上榜，1.3k stars
 - [[2026-07-19|2026-07-19]] — 再次上榜，1.3k stars
 - [[2026-07-18|2026-07-18]] — 再次上榜，1.1k stars

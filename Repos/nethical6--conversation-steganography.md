@@ -7,9 +7,9 @@ language: Go
 license: GPL-3.0
 description: "Use LLMs to hide messages inside normal looking conversations"
 homepage: ""
-stars: 829
-stars_per_day: 415
-forks: 48
+stars: 884
+stars_per_day: 295
+forks: 53
 open_issues: 1
 created: 2026-07-17
 pushed_at: 2026-07-18
@@ -30,8 +30,8 @@ use_case: "使用 LLM 在正常對話中隱藏消息，實現私密通訊。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-23"
+appearances: 2
+next_review: "2026-07-24"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-20"
-star_history: "2026-07-20:829"
+star_history: "2026-07-20:829,2026-07-21:884"
 tags:
   - github
   - "category/安全"
@@ -928,4 +928,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-21|2026-07-21]] — 再次上榜，884 stars
 - [[2026-07-20|2026-07-20]] — 首次收錄，829 stars
