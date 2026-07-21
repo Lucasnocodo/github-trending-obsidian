@@ -523,7 +523,7 @@ python3 forge/stage3_build/generate_threejs_factory.py spec.json --out src/creat
 
 相關概念：[[程序化生成]] · [[3D 模型]] · [[動畫設計]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[huangserva--3DCellForge|huangserva/3DCellForge]] · [[vinhhien112--Three.js-Object-Sculptor-Codex-Plugin|vinhhien112/Three.js-Object-Sculptor-Codex-Plugin]] · [[0xSero--codex-shim|0xSero/codex-shim]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[huangserva--3DCellForge|huangserva/3DCellForge]] · [[vinhhien112--Three.js-Object-Sculptor-Codex-Plugin|vinhhien112/Three.js-Object-Sculptor-Codex-Plugin]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]]
 
 [GitHub](https://github.com/hoainho/img2threejs) · [官方網站](https://hoainho.github.io/img2threejs-showcase/)
 

@@ -445,7 +445,7 @@ Harness Engineering 的核心技術在於如何將組織的非功能性需求轉
 
 相關概念：[[代理框架]] · [[系統整合]] · [[反饋循環]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[baoweise-bot--aimili-vpngate|baoweise-bot/aimili-vpngate]] · [[masterking32--MasterHttpRelayVPN|masterking32/MasterHttpRelayVPN]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Flowseal--tg-ws-proxy|Flowseal/tg-ws-proxy]] · [[baoweise-bot--aimili-vpngate|baoweise-bot/aimili-vpngate]] · [[masterking32--MasterHttpRelayVPN|masterking32/MasterHttpRelayVPN]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]]
 
 [GitHub](https://github.com/lopopolo/harness-engineering) · [官方網站](https://openai.com/index/harness-engineering/)
 
