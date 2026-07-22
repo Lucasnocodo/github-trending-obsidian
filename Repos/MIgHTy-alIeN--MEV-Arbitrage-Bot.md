@@ -16,8 +16,8 @@ pushed_at: 2026-07-22
 first_seen: 2026-07-22
 week: "2026-W30"
 month: "2026-07"
-category: "其他"
-subcategory: "自動化交易"
+category: "開發工具"
+subcategory: "自動化"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-22
-use_case: "自動化套利機器人，透過智能合約在 Uniswap 池之間尋找套利機會。"
+use_case: "自動化執行 Ethereum 上的套利交易，無需手動干預。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,10 +42,10 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-22"
-star_history: "2026-07-22:739"
+star_history: "2026-07-22:739,2026-07-22:739"
 tags:
   - github
-  - "category/其他"
+  - "category/開發工具"
   - "lang/solidity"
   - "topic/ai"
   - "topic/aitradingbot"
@@ -55,7 +55,7 @@ tags:
 aliases:
   - "MEV-Arbitrage-Bot"
   - "MIgHTy-alIeN/MEV-Arbitrage-Bot"
-  - "自動化套利機器人，透過智能合約在 Uniswap 池之間尋找套利機會。"
+  - "自動化執行 Ethereum 上的套利交易，無需手動干預。"
 ---
 
 # MEV-Arbitrage-Bot
@@ -78,20 +78,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ai` `aitradingbot` `bot` `btc` `claude` `eth` `etherlab` `mev` `mevbots`
 
 > [!summary] 一句話摘要
-> 自動化套利機器人，透過智能合約在 Uniswap 池之間尋找套利機會。
+> 自動化執行 Ethereum 上的套利交易，無需手動干預。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (185 stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 希望在以太坊上自動化套利交易的區塊鏈開發者和加密貨幣交易者。
-> **一句話重點** 這個專案展示了如何利用智能合約和自動化腳本來簡化套利交易的過程。
+> **適合** 希望在 Ethereum 上自動化套利交易的 DeFi 投資者和量化交易者。
+> **一句話重點** 這個套利機器人不僅提供了自動化交易的解決方案，還讓用戶能夠在 Ethereum 生態系統中輕鬆參與套利機會。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/MIgHTy-alIeN--MEV-Arbitrage-Bot");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "自動化交易" && p.file.name !== "MIgHTy-alIeN--MEV-Arbitrage-Bot" && p.status !== "archived")
+>     .where(p => p.subcategory === "自動化" && p.file.name !== "MIgHTy-alIeN--MEV-Arbitrage-Bot" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -102,32 +102,31 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 自動化交易 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習、3 小時整合，得到自動化套利的效果，值得一試。
+> **結論** 花 5 小時學習，3 小時整合，得到自動化套利的效果，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個無需手動操作的自動化套利解決方案。
+> 這個專案的核心創新在於將智能合約與外部 Python 腳本結合，實現完全自動化的套利交易。
 
 ## 專案簡介
 
-這個 MEV Arbitrage Bot 是一個智能合約，能夠自動尋找並執行 Uniswap 池之間的套利機會。用戶只需部署合約並設置參數，機器人便會自動運行，透過 `executeArbitrage()` 函數在單一交易中完成套利操作。合約還支持快速交換、設置允許的路由器和代幣、設定池費用等功能，讓用戶能靈活管理其套利策略。這樣的設計使得用戶無需手動操作，提升了交易效率，並減少了錯誤的可能性。技術上，這個機器人依賴於 Solidity 編寫的智能合約，並與 Python 自動化腳本結合，實現了高效的套利執行。
-
-相較於其他套利工具，這個機器人不僅支持多個路由器，還能在單一交易中完成多個操作，這在市場競爭中提供了優勢。使用者可以在每次交易中設置最小和最大交換金額，這樣的靈活性對於資金管理至關重要。儘管機器人不保證固定的收益，但在當前市場環境下，1 ETH 的存款有潛力每天帶來約 500 美元的收益。使用者需要注意，市場波動和網絡費用會影響最終收益。整體來看，這個專案適合對自動化交易有興趣的開發者，尤其是那些希望在以太坊上進行套利的用戶。
+這個 MEV Arbitrage Bot 是一個智能合約，能夠自動尋找並執行 Ethereum 上不同流動池和路由器之間的套利機會。用戶只需部署合約並設置參數，然後透過外部 Python 腳本自動運行。主要功能 `executeArbitrage()` 會在單一交易中搜尋套利機會，並透過 `quickSwap()` 進行快速交換。設計上，合約擁有多種管理功能，如設定允許的路由器和代幣、設置最小和最大交易金額等，這使得用戶能夠靈活調整策略。合約的所有者擁有唯一的權限來修改設置和提取資金，這樣的設計確保了資金的安全性和合約的可控性。使用者可以在 Etherlab 網站上輕鬆部署合約，並透過簡單的步驟進行資金注入和啟動。這個工具的賣點在於其完全自動化的套利過程，讓用戶無需手動操作即可獲取潛在利潤。
 
 **技術棧**：`Solidity 0.8.20` · `Python`
 
 ## 重點功能
 
-- 自動套利執行 — 使用 `executeArbitrage()` 函數在單一交易中完成套利。
-- 快速交換功能 — 透過 `quickSwap()` 直接從合約餘額進行快速交換。
-- 靈活的路由器和代幣管理 — 使用 `setRouterAllowed()` 和 `setTokenAllowed()` 設置允許的路由器和代幣。
-- 池費用和默認代幣設置 — 使用 `setDefaultFee()` 和 `setDefaultTokenOut()` 進行配置。
-- 最小和最大交換金額設置 — 使用 `setMinQuickSwapAmount()` 和 `setMaxQuickSwapAmount()` 設置交換金額限制。
+- 自動套利執行 — `executeArbitrage()` 函數能在單一交易中尋找並執行套利機會。
+- 快速交換功能 — 使用 `quickSwap()` 直接從合約餘額進行代幣交換。
+- 靈活的路由器和代幣管理 — `setRouterAllowed()` 和 `setTokenAllowed()` 允許用戶自定義可用的路由器和代幣。
+- 設置最小和最大交易金額 — `setMinQuickSwapAmount()` 和 `setMaxQuickSwapAmount()` 提供了交易的靈活性。
+- 緊急暫停功能 — `setPaused()` 允許合約擁有者在需要時暫停所有操作。
+- 資金提取功能 — `withdraw()` 和 `withdrawETH()` 讓合約擁有者能夠提取資金。
 
 ## 快速開始
 
@@ -137,85 +136,82 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```
 2. 創建合約文件
 ```bash
-在文件管理器中創建新文件，如 contract.sol，並粘貼智能合約代碼。
+在文件管理器中創建新文件，如 contract.sol，並粘貼合約代碼
 ```
 3. 編譯合約
 ```bash
-選擇編譯器版本 0.8.20 並點擊編譯。
+選擇編譯器版本 0.8.20，然後點擊編譯
 ```
-4. 部署合約並資助
+4. 部署合約並資金注入
 ```bash
-連接錢包並部署合約，然後發送 0.5 到 1 ETH 以資助合約。
+連接錢包，部署合約，並發送 0.5 至 1 ETH 到合約地址
 ```
-5. 啟動自動化
+5. 啟動機器人
 ```bash
-在 Python 自動化選項中選擇合約並點擊啟動。
+在 Python 自動化選項中選擇合約並點擊啟動
 ```
 
 ## 程式碼範例
 
 ```solidity
 {
-  "前置條件": "合約已部署並資助",
-  "指令": "executeArbitrage();",
-  "預期輸出": "執行套利操作，並在日誌中顯示交易結果。"
+  "前置條件": "合約已部署並資金注入",
+  "指令": "bot.executeArbitrage();",
+  "預期輸出": "執行套利交易並返回結果"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 這個專案在建立僅 4 天內就累積了 739 stars（每天 185），forks 數量達到 497（67.3%），顯示出強烈的社群興趣。作者 MIgHTy-alIeN 似乎專注於開發與區塊鏈相關的自動化工具，解決了傳統手動套利的繁瑣問題，讓用戶能夠更輕鬆地參與市場。此專案的推出可能受到近期以太坊交易量增加的影響，並且在社群中引發了討論。高比例的 forks 表示許多人正在嘗試修改或擴展這個工具，顯示出其潛在的實用性和靈活性。
+> 建立 4 天內累積 739 stars（185/天），forks 497（67.3%），顯示出極高的興趣和活躍度。作者 MIgHTy-alIeN 之前有開發其他 AI 交易工具，這次的套利機器人解決了傳統手動套利的效率低下問題。此專案的推出正值 DeFi 生態系統持續擴張，許多用戶尋求自動化的套利解決方案。高達 67.3% 的 forks/stars 比率顯示許多人正在積極修改或實驗這個工具，這通常代表著社群的強烈參與和需求。
 
 ## 適合誰使用
 
-**目標受眾**：希望在以太坊上自動化套利交易的區塊鏈開發者和加密貨幣交易者。
+**目標受眾**：希望在 Ethereum 上自動化套利交易的 DeFi 投資者和量化交易者。
 
 > [!example] 使用場景
-> - 加密貨幣交易者用它來自動化套利操作，因為這樣可以減少手動操作的錯誤並提高交易速度。
-> - 區塊鏈開發者用它來測試不同的套利策略，因為它提供了靈活的參數設置和即時的交易反饋。
-> - 金融分析師用它來監控市場變化並自動執行交易，因為它能夠在瞬息萬變的市場中快速反應。
+> - DeFi 投資者用它來自動化套利交易，因為手動操作耗時且容易錯過機會。
+> - 量化交易者用它來快速執行套利策略，因為合約能在單一交易中完成多個操作，減少了交易成本。
+> - 新手用戶用它來學習套利交易的基本概念，因為部署和啟動流程簡單，降低了入門門檻。
 
 ## 架構分析
 
-這個套利機器人由一個智能合約和一個 Python 自動化腳本組成。智能合約負責執行交易和管理資金，而 Python 腳本則負責監控市場並發送交易請求。這樣的設計使得用戶能夠在不干預的情況下運行機器人，降低了人為錯誤的風險。
-
-合約的設計考慮到了安全性，只有擁有者能夠修改設置或提取資金。這種設計的代價是，使用者需要對合約的運行狀態保持監控，以確保其正常運行。整體架構的擴展性良好，但在高頻交易的情況下，可能會受到以太坊網絡擁堵的影響。
+這個套利機器人採用智能合約加上外部 Python 腳本的架構模式，這樣的設計使得合約能夠在 Ethereum 網路上執行自動化交易，而 Python 腳本則負責定期檢查套利機會。合約內部使用 Solidity 實現主要功能，如交易執行和資金管理，這樣的選擇使得交易能夠在區塊鏈上透明且安全地進行。選擇智能合約而非傳統的中心化服務，能夠降低信任成本，但也需要用戶對合約的安全性有一定的認知。這樣的架構在擴展性上有一定的瓶頸，尤其是在高頻交易場景下，可能會受到網路延遲和交易費用的影響。
 
 ## 技術深入分析
 
-這個 MEV Arbitrage Bot 的核心技術機制是基於 Solidity 編寫的智能合約，並結合 Python 自動化腳本進行操作。合約使用 `executeArbitrage()` 函數來尋找和執行套利機會，這個過程中會利用以太坊的 `eth_estimateGas` 進行乾跑測試，確保交易的可行性。這樣的設計能夠在每次交易中快速反應，並減少失敗的風險。合約的效能取決於市場的流動性和網絡的擁堵情況，當前市場環境下，1 ETH 的存款預估每天能帶來約 500 美元的收益。
-
-選擇 Solidity 作為開發語言是因為它是以太坊智能合約的標準語言，這樣能夠充分利用以太坊的生態系統。合約的依賴性相對較低，主要依賴於以太坊網絡的穩定性。技術風險方面，合約的設計決策可能在高頻交易時受到網絡擁堵的影響，這可能導致交易延遲或失敗。在整合方面，這個工具可以與現有的以太坊生態系統無縫對接，並且支持與多種錢包的連接，方便用戶使用。
+這個 MEV Arbitrage Bot 的核心技術機制是基於 Solidity 實現的智能合約，並結合外部 Python 腳本進行自動化操作。合約內部使用了多個函數來管理交易流程，如 `executeArbitrage()` 和 `quickSwap()`，這些函數能夠在單一交易中完成多個操作，這樣的設計提高了交易效率。效能上，合約能夠在每個時間間隔內檢查套利機會，並透過 `eth_estimateGas` 進行預估，這樣的設計能夠在不浪費資金的情況下進行交易。選擇 Solidity 作為開發語言，能夠確保合約的安全性和透明度，但也需要用戶有一定的技術背景來進行部署和管理。這個專案的依賴關係相對簡單，主要依賴於 Ethereum 網路的基礎設施，這降低了使用的複雜度。未來在擴展性方面，若用戶需求增加，可能需要考慮如何處理高頻交易的瓶頸，特別是在網路擁擠時期。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的步驟指導，讓用戶能夠輕鬆部署和運行機器人。安裝過程相對順暢，但需要用戶有基本的以太坊和智能合約知識。文件中沒有提供多語言支持，主要以英文為主。整體來說，花 30 分鐘應該能夠成功部署並運行機器人。
+> README 文件清晰且包含詳細的步驟指導，讓新手能夠快速上手。安裝過程相對順暢，但對於不熟悉智能合約的用戶可能會有一定的挑戰。文件中沒有多語言支持，僅提供英文內容。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化套利，減少手動操作的錯誤。
-> - 支持多個路由器和代幣的靈活配置。
-> - 實時日誌顯示交易活動，便於監控。
+> - 完全自動化的套利過程，減少手動操作的需求。
+> - 靈活的參數設置，能夠根據市場變化調整策略。
+> - 透明的交易記錄，所有操作都在區塊鏈上進行，易於審計。
 
 > [!danger] 缺點
-> - 收益不保證，依賴市場波動。
-> - 需要持續監控以確保機器人正常運行。
-> - 合約設置只能由擁有者修改，靈活性較低。
+> - 需要一定的 ETH 作為交易費用，對資金要求較高。
+> - 合約的所有者擁有唯一的權限，可能導致集中化風險。
+> - 對於新手用戶，部署和設置過程可能會有一定的學習曲線。
 
 > [!warning] 注意事項
-> - 收益不保證，依賴市場波動和網絡費用。
-> - 合約的所有設置只能由擁有者修改，降低了靈活性。
-> - 需要持續監控以確保機器人正常運行。
+> - 僅支援 Ethereum 網路，無法在其他區塊鏈上運行。
+> - 需要一定的 ETH 作為交易費用，對於資金較少的用戶可能不適合。
+> - 合約的所有者擁有唯一的權限，這可能帶來集中化風險。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建和管理多個交易代理，而本專案專注於單一套利機器人的自動化。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供更廣泛的交易策略選擇，而本專案專注於特定的 Uniswap 套利。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的自動化套利功能，但主要針對不同的 DeFi 協議，可能需要額外的配置。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於高頻交易策略，與本專案相比，對技術要求更高，適合經驗豐富的交易者。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 提供多種交易策略，但需要用戶手動選擇，缺乏本專案的自動化優勢。 |
 
 ## 替代方案決策
 
@@ -223,16 +219,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於多代理的交易管理，而本專案專注於單一套利機器人的自動化。 | 如果需要管理多個交易代理以應對不同市場情況，這個工具會更合適。 | medium，因為需要重新設計交易邏輯。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供多樣的交易策略，而本專案專注於特定的 Uniswap 套利。 | 如果需要更廣泛的交易策略選擇，這個工具會更合適。 | high，因為需要重新設計整個交易策略。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於多種 DeFi 協議的套利，但需要用戶手動配置，缺乏自動化優勢。 | 如果你的團隊需要針對特定 DeFi 協議進行套利，並且願意手動配置。 | medium，因為需要重新設置和配置策略。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於高頻交易策略，對技術要求較高，適合經驗豐富的交易者。 | 如果你的團隊已經具備高頻交易的經驗，並且需要更高的交易頻率。 | high，因為需要重新設計交易策略和架構。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **MEV-Arbitrage-Bot** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於多代理的交易管理，而本專案專注於單一套利機器人的自動化。 | 提供多樣的交易策略，而本專案專注於特定的 Uniswap 套利。 |
-> | 遷移成本 | - | medium，因為需要重新設計交易邏輯。 | high，因為需要重新設計整個交易策略。 |
-> | 適用場景 | 主要場景 | 如果需要管理多個交易代理以應對不同市場情況，這個工具會更合適 | 如果需要更廣泛的交易策略選擇，這個工具會更合適。 |
+> | 技術路線 | 本專案 | 專注於多種 DeFi 協議的套利，但需要用戶手動配置，缺乏自動化優勢。 | 專注於高頻交易策略，對技術要求較高，適合經驗豐富的交易者。 |
+> | 遷移成本 | - | medium，因為需要重新設置和配置策略。 | high，因為需要重新設計交易策略和架構。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要針對特定 DeFi 協議進行套利，並且願意手 | 如果你的團隊已經具備高頻交易的經驗，並且需要更高的交易頻率。 |
 
 ## 成熟度評估
 
@@ -243,27 +239,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人測試和學習，不建議用於生產環境的核心交易。
+> 適合個人測試和學習，但不建議用於生產環境。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 合約在高頻交易時可能會受到網絡擁堵影響，導致交易延遲。
-  - 解法：在低峰時段進行交易以減少延遲。
-- [MEDIUM] 需要持續監控合約狀態，否則可能會錯過套利機會。
-  - 解法：設置自動通知系統以便及時反應。
-- [MEDIUM] 合約設置只能由擁有者修改，可能導致靈活性不足。
-  - 解法：在部署前仔細規劃合約設置。
+- **[HIGH]** 合約部署後無法修改參數，需謹慎設置初始值
+  - 解法：在部署前仔細檢查所有參數設定
+- [MEDIUM] 在網路擁擠時，交易可能會失敗或延遲
+  - 解法：選擇低峰時段進行交易
+- **[HIGH]** 合約的安全性依賴於開發者的實現，可能存在漏洞
+  - 解法：進行充分的合約審計和測試
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型加密貨幣交易團隊進行套利交易 | 非常適合 | 自動化功能能夠提高交易效率，減少人為錯誤。 |
-| 個人開發者測試套利策略 | 適合 | 提供了靈活的參數設置和即時反饋。 |
-| 大型交易所進行高頻套利 | 不適合 | 可能受到網絡擁堵影響，導致交易延遲。 |
-| 對套利交易有興趣的學習者 | 非常適合 | 簡單的部署流程和豐富的功能設置。 |
+| 小型 DeFi 項目的套利交易 | 非常適合 | 合約的自動化特性能夠有效降低手動操作的需求。 |
+| 大型交易所的高頻套利 | 普通 | 雖然合約能夠執行套利，但在高頻交易場景下可能會遇到延遲問題。 |
+| 新手用戶學習套利交易 | 非常適合 | 簡單的部署流程和自動化操作降低了入門門檻。 |
 
 ## 採用成本分析
 
@@ -275,12 +270,12 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習、3 小時整合，得到自動化套利的效果，值得一試。
+> 花 5 小時學習，3 小時整合，得到自動化套利的效果，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：合約本身不需要高權限，僅需用戶的錢包授權。合約不會存取敏感資料，但需注意合約的安全性和漏洞風險。
+> 安全性評估中等，合約本身不需要高權限，但對合約的實現安全性有較高要求，建議進行審計。
 
 ## 健康度儀表板
 
@@ -360,12 +355,12 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，最近有更新和討論。
+**社群活躍度**：社群活躍度高，最近有多次提交和更新。
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-07-22 ~ 2026-07-22）
-> **活躍天數** 1 天 · **最新 commit** Update LICENSE
+> **活躍天數** 1 天 · **最新 commit** Update LICENSE - 2026-07-22 07:32:04
 
 ## README 摘錄
 
@@ -443,19 +438,19 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 ## 延伸閱讀
 
-相關概念：[[自動化交易]] · [[智能合約]] · [[區塊鏈技術]]
+相關概念：[[MEV]] · [[自動化交易]] · [[智能合約]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[sterlingcrispin--nothing-ever-happens|sterlingcrispin/nothing-ever-happens]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[sterlingcrispin--nothing-ever-happens|sterlingcrispin/nothing-ever-happens]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[CopilotKit--OpenTag|CopilotKit/OpenTag]]
 
 [GitHub](https://github.com/MIgHTy-alIeN/MEV-Arbitrage-Bot)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：自動化交易）
+> [!note]- 直接競品（同子分類：自動化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "自動化交易" AND file.name != "MIgHTy-alIeN--MEV-Arbitrage-Bot"
+> WHERE subcategory = "自動化" AND file.name != "MIgHTy-alIeN--MEV-Arbitrage-Bot"
 > SORT stars DESC
 > ```
 
@@ -463,7 +458,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "MIgHTy-alIeN--MEV-Arbitrage-Bot"
+> WHERE category = "開發工具" AND file.name != "MIgHTy-alIeN--MEV-Arbitrage-Bot"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -487,7 +482,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化交易","智能合約","區塊鏈技術"];
+> const concepts = ["MEV","自動化交易","智能合約"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "MIgHTy-alIeN--MEV-Arbitrage-Bot" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
