@@ -7,10 +7,10 @@ language: JavaScript
 license: MIT
 description: "Your clothes, extracted and organized with gpt-image."
 homepage: ""
-stars: 1222
-stars_per_day: 306
-forks: 175
-open_issues: 3
+stars: 1291
+stars_per_day: 258
+forks: 187
+open_issues: 4
 created: 2026-07-16
 pushed_at: 2026-07-16
 first_seen: 2026-07-18
@@ -30,8 +30,8 @@ use_case: "透過 gpt-image 提取和組織你的衣物。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-07-24"
+appearances: 5
+next_review: "2026-07-25"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-18"
-star_history: "2026-07-18:909,2026-07-19:1064,2026-07-20:1164,2026-07-21:1222"
+star_history: "2026-07-18:909,2026-07-19:1064,2026-07-20:1164,2026-07-21:1222,2026-07-22:1291"
 tags:
   - github
   - "category/開發工具"
@@ -732,6 +732,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-22|2026-07-22]] — 再次上榜，1.3k stars
 - [[2026-07-21|2026-07-21]] — 再次上榜，1.2k stars
 - [[2026-07-20|2026-07-20]] — 再次上榜，1.2k stars
 - [[2026-07-19|2026-07-19]] — 再次上榜，1.1k stars

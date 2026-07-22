@@ -2990,10 +2990,10 @@
   },
   "Fei-Away/Codex-Dream-Skin": {
     "first_seen": "2026-07-17",
-    "last_seen": "2026-07-21",
-    "times_seen": 5,
+    "last_seen": "2026-07-22",
+    "times_seen": 6,
     "stars_first": 6371,
-    "stars_last": 11177
+    "stars_last": 11583
   },
   "pixel-point/aval": {
     "first_seen": "2026-07-17",
@@ -3011,10 +3011,10 @@
   },
   "tandpfun/wardrobe": {
     "first_seen": "2026-07-18",
-    "last_seen": "2026-07-21",
-    "times_seen": 4,
+    "last_seen": "2026-07-22",
+    "times_seen": 5,
     "stars_first": 909,
-    "stars_last": 1222
+    "stars_last": 1291
   },
   "oil-oil/beautify-github-readme": {
     "first_seen": "2026-07-19",
@@ -3025,17 +3025,17 @@
   },
   "nethical6/conversation-steganography": {
     "first_seen": "2026-07-20",
-    "last_seen": "2026-07-21",
-    "times_seen": 2,
+    "last_seen": "2026-07-22",
+    "times_seen": 3,
     "stars_first": 829,
-    "stars_last": 884
+    "stars_last": 915
   },
   "pablostanley/yoinks": {
     "first_seen": "2026-07-20",
-    "last_seen": "2026-07-21",
-    "times_seen": 2,
+    "last_seen": "2026-07-22",
+    "times_seen": 3,
     "stars_first": 776,
-    "stars_last": 878
+    "stars_last": 970
   },
   "KubeezMedia/kubeez-scroll-world-video": {
     "first_seen": "2026-07-20",
@@ -3046,17 +3046,17 @@
   },
   "hoainho/img2threejs": {
     "first_seen": "2026-07-21",
-    "last_seen": "2026-07-21",
-    "times_seen": 1,
+    "last_seen": "2026-07-22",
+    "times_seen": 2,
     "stars_first": 1098,
-    "stars_last": 1098
+    "stars_last": 1534
   },
   "lopopolo/harness-engineering": {
     "first_seen": "2026-07-21",
-    "last_seen": "2026-07-21",
-    "times_seen": 1,
+    "last_seen": "2026-07-22",
+    "times_seen": 2,
     "stars_first": 868,
-    "stars_last": 868
+    "stars_last": 1727
   },
   "MatinSenPai/Aether-GUI": {
     "first_seen": "2026-07-21",
@@ -3067,9 +3067,30 @@
   },
   "Blueturboguy07/cue": {
     "first_seen": "2026-07-21",
-    "last_seen": "2026-07-21",
-    "times_seen": 1,
+    "last_seen": "2026-07-22",
+    "times_seen": 2,
     "stars_first": 666,
-    "stars_last": 666
+    "stars_last": 704
+  },
+  "v-modal/vmodal_sdk_flutter": {
+    "first_seen": "2026-07-22",
+    "last_seen": "2026-07-22",
+    "times_seen": 1,
+    "stars_first": 782,
+    "stars_last": 782
+  },
+  "MIgHTy-alIeN/MEV-Arbitrage-Bot": {
+    "first_seen": "2026-07-22",
+    "last_seen": "2026-07-22",
+    "times_seen": 1,
+    "stars_first": 739,
+    "stars_last": 739
+  },
+  "Blaizzy/nativ": {
+    "first_seen": "2026-07-22",
+    "last_seen": "2026-07-22",
+    "times_seen": 1,
+    "stars_first": 647,
+    "stars_last": 647
   }
 }

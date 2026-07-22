@@ -7,12 +7,12 @@ language: JavaScript
 license: GPL-3.0
 description: "Open-source macOS AI copilot that floats over your screen, sees/hears your meetings, and stays hidden from screen shares. Cluely alternative, bring-your-own-key."
 homepage: ""
-stars: 666
-stars_per_day: 133
-forks: 144
+stars: 704
+stars_per_day: 117
+forks: 147
 open_issues: 7
 created: 2026-07-15
-pushed_at: 2026-07-20
+pushed_at: 2026-07-21
 first_seen: 2026-07-21
 week: "2026-W30"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "提供一個隱形的 AI 助手，協助你在會議中記錄和解�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-28"
+appearances: 2
+next_review: "2026-07-29"
 contributor_count: 4
 engagement: "medium"
 issue_close_rate: 22
@@ -42,7 +42,7 @@ last_release_days: 6
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-21"
-star_history: "2026-07-21:666,2026-07-21:666"
+star_history: "2026-07-21:666,2026-07-21:666,2026-07-22:704"
 tags:
   - github
   - "category/生產力"
@@ -834,4 +834,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-22|2026-07-22]] — 再次上榜，704 stars
 - [[2026-07-21|2026-07-21]] — 首次收錄，666 stars
