@@ -493,7 +493,7 @@ python scripts/build_story.py story.json hyperframes/index.html --check-assets &
 
 相關概念：[[視頻生成]] · [[手繪插圖]] · [[自動化製作]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[Robbyant--lingbot-video|Robbyant/lingbot-video]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[Robbyant--lingbot-video|Robbyant/lingbot-video]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]]
 
 [GitHub](https://github.com/xiejunjie524/handdraw-story-video)
 

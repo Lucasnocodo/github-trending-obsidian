@@ -7,8 +7,8 @@ language: Python
 license: NOASSERTION
 description: "AI SRE AgenticOps for Kubernetes and cloud infrastructure."
 homepage: ""
-stars: 847
-stars_per_day: 77
+stars: 849
+stars_per_day: 71
 forks: 213
 open_issues: 0
 created: 2026-07-10
@@ -17,7 +17,7 @@ first_seen: 2026-07-14
 week: "2026-W29"
 month: "2026-07"
 category: "基礎設施"
-subcategory: "SRE 工具"
+subcategory: "雲端運維"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-14
-use_case: "讓基礎設施自動解釋故障並安全修復，並證明其恢復能力。"
+use_case: "讓基礎設施自我解釋、修復並驗證恢復的 AI SRE 控制平面。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-07-21"
 contributor_count: 0
 engagement: "medium"
 issue_close_rate: -1
-repo_size_kb: 4375
-readme_length: 9829
+repo_size_kb: 664
+readme_length: 9874
 bus_factor: 0
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-14"
-star_history: "2026-07-14:564,2026-07-14:569,2026-07-15:618,2026-07-16:646,2026-07-17:691,2026-07-18:710,2026-07-19:745,2026-07-20:785,2026-07-21:822,2026-07-22:847"
+star_history: "2026-07-14:564,2026-07-14:569,2026-07-15:618,2026-07-16:646,2026-07-17:691,2026-07-18:710,2026-07-19:745,2026-07-20:785,2026-07-21:822,2026-07-22:847,2026-07-23:849"
 tags:
   - github
   - "category/基礎設施"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "Flawless"
   - "William-Lu-stack/Flawless"
-  - "讓基礎設施自動解釋故障並安全修復，並證明其恢復能力。"
+  - "讓基礎設施自我解釋、修復並驗證恢復的 AI SRE 控制平面。"
 ---
 
 # Flawless
 
-**847** stars · **77** stars/天 · 建立 11 天前 · Python · NOASSERTION
+**849** stars · **71** stars/天 · 建立 12 天前 · Python · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/William-Lu-stack--Flawless");
@@ -76,20 +76,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `agenticops` `ai` `aiops` `aisre` `cloud` `cloud-native` `devops` `kubernetes` `llm` `mcp` `observability` `sre`
 
 > [!summary] 一句話摘要
-> 讓基礎設施自動解釋故障並安全修復，並證明其恢復能力。
+> 讓基礎設施自我解釋、修復並驗證恢復的 AI SRE 控制平面。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (77 stars/day)
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (71 stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 希望自動化 Kubernetes 環境中的 SRE 流程的中小型團隊。
-> **一句話重點** Flawless 的最大優勢在於其自動化的修復流程，能夠有效提升 SRE 團隊的工作效率。
+> **適合** 需要高效能雲端基礎設施管理的中大型團隊，尤其是專注於 Kubernetes 的 DevOps 團隊。
+> **一句話重點** Flawless 不僅僅是運維工具，而是一個完整的 SRE 控制平面，能夠自動化故障檢測和修復過程。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/William-Lu-stack--Flawless");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "SRE 工具" && p.file.name !== "William-Lu-stack--Flawless" && p.status !== "archived")
+>     .where(p => p.subcategory === "雲端運維" && p.file.name !== "William-Lu-stack--Flawless" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -100,118 +100,113 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 SRE 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 雲端運維 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習，15 小時整合，得到高效的 SRE 自動化效果，值得考慮。
+> **結論** 花 10 小時學習，20 小時整合，得到高效的 SRE 控制平面，值得投資。
 
 > [!abstract] 核心創新
-> Flawless 將故障發現、證據收集和修復驗證整合成一個可審計的閉環。
+> Flawless 提供了一個完整的可審計的 AgenticOps 循環，將故障檢測和修復過程自動化。這在現有的 SRE 工具中是相對獨特的。
 
 ## 專案簡介
 
-Flawless 是一個 AI 原生的 SRE 控制平面，專為 Kubernetes 和雲基礎設施設計。它的核心機制是將警報、證據、拓撲、人為批准、控制修復和恢復驗證整合成一個可審計的 AgenticOps 循環。用戶可以透過簡單的 CLI 指令啟動整個系統，例如 `flawless start`，這會執行先決條件檢查、創建環境變數檔案並啟動 API 和所有本地代理服務。這個工具的賣點在於其持久的修復歷史，能夠追蹤每一個失敗的策略和驗證結果，並在 Pod 重啟後仍能保留這些記錄。
+Flawless 是一個 AI 原生的 SRE 控制平面，專為 Kubernetes 和雲端基礎設施設計。它的核心機制是將警報、證據、拓撲、人為批准、控制修復和恢復驗證整合成一個可審計的 AgenticOps 循環。使用者可以透過 SRE Chat 進行操作，並利用 Inspection Queue 進行手動或排程掃描，這些掃描會根據嚴重性進行排序。Flawless 的設計理念是以證據為先，確保所有操作都經過 RBAC、政策、乾跑和人為批准的保護，這樣可以避免模型的執行邊界問題。這個工具的「一句話賣點」是：它不僅僅提供建議，而是實現了一個完整的故障檢測和修復的閉環。
 
-技術上，Flawless 使用 FastAPI 和 Uvicorn 作為後端框架，並依賴多個庫來實現功能，包括 Langchain 和 Prometheus。這種選擇使得系統能夠高效處理請求並提供即時的監控數據。
+技術上，Flawless 使用 FastAPI 和 Uvicorn 作為後端，並依賴於多個 Python 和 Node.js 的庫來實現其功能，這使得它在性能和擴展性上有良好的表現。與其他工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，Flawless 提供了更強的證據驅動修復和恢復驗證功能，這在多數情況下能夠減少人為錯誤和提高效率。使用者在實際運行中可能會遇到 Kubernetes 設定問題，這需要確保正確配置 KUBECONFIG。Flawless 的社群活躍度高，開發者持續更新，未來可能會進一步增強其模型配置和擴展能力。適合中大型團隊使用，尤其是那些需要高效能和可靠性的雲端基礎設施管理的團隊。
 
-與其他 SRE 工具相比，如 0x0funky/agent-sprite-forge，Flawless 提供了更全面的控制修復流程，從證據收集到人為批准，這在複雜的雲環境中尤為重要。
-
-實際使用中，Flawless 能夠處理大量的監控數據並提供即時反饋，這對於需要高可用性的生產環境至關重要。其社群活躍度高，且無開放的問題，顯示出良好的維護狀態。這個專案目前處於 beta 階段，適合中小型團隊使用，尤其是那些希望自動化 SRE 流程的團隊。
-
-建議在使用時，確保有足夠的資源來支持其運行，並考慮使用 Docker 進行部署，以簡化安裝過程。對於需要高可用性和自動化修復的團隊，Flawless 是一個值得考慮的選擇。
-
-**技術棧**：`FastAPI` · `Uvicorn` · `Langchain`
+**技術棧**：`FastAPI` · `Uvicorn` · `Python 3.11+` · `Node.js 20+`
 
 ## 重點功能
 
-- SRE Chat — 提供 ChatGPT 風格的操作控制台，包含集群、命名空間、工作負載和風險上下文。
-- Inspection Queue — 支援定期或手動掃描，並根據嚴重性進行排名。
-- Controlled Remediation — 包含證據收集、變更預覽、人為批准、執行和後變更驗證的完整流程。
-- Topology Impact — 提供 2D/3D 拓撲視圖，並進行依賴性分析和影響範圍分析。
-- Release Governance — 包含 SLO、錯誤預算、canary/risk gate 和釋出審計鏈。
+- SRE Chat — ChatGPT 風格的操作控制台，提供集群、命名空間和工作負載的上下文。
+- Inspection Queue — 定期或手動掃描 Kubernetes 環境，並根據嚴重性進行排序。
+- Controlled Remediation — 收集證據、變更預覽、人工批准和執行，並記錄失敗的策略以供後續使用。
+- Topology Impact — 提供 2D/3D 拓撲視覺化和依賴關係分析。
+- Release Governance — 包含 SLO、錯誤預算和緊急修復路徑，確保發佈的安全性。
+- Knowledge Base — 支持上傳多種格式的運維文檔，方便知識的管理和使用。
+- Model Lab — 配置多個 OpenAI 兼容的模型網關，並比較結果。
+- Observability — 整合 Prometheus 指標、Loki 日誌和 Grafana 連結，提供全面的可觀察性。
 
 ## 快速開始
 
-1. 檢查先決條件並啟動系統
+1. 檢查先決條件並啟動服務
 ```bash
-flawless start
+curl -fsSL --retry 3 https://raw.githubusercontent.com/your-org/Flawless/main/scripts/install-macos.sh | bash -s -- --china
 ```
-2. 配置環境變數
+2. 手動克隆並啟動
 ```bash
-echo 'LLM_API_BASE=http://localhost:11434/v1' >> .env
+git clone https://github.com/your-org/Flawless.git && cd Flawless && ./scripts/quickstart.sh
 ```
-3. 啟動 Docker 容器
+3. 啟動 Kubernetes 模式
 ```bash
-docker-compose up -d
+./scripts/quickstart.sh --mode native
 ```
 
 ## 程式碼範例
 
 ```python
 {
-  "前置條件": "需要配置 .env 檔案以使用 AI 聊天功能",
-  "指令": "LLM_API_BASE=http://localhost:11434/v1\nLLM_API_KEY=ollama\nLLM_MODEL=qwen2.5:7b\nLLM_AUTH_TYPE=api_key",
-  "預期輸出": "成功配置後，系統將能夠使用指定的 AI 模型進行交互。"
+  "前置條件": "配置 .env 文件以使用 OpenAI 兼容的本地端點",
+  "指令": "LLM_API_BASE=http://localhost:11434/v1\nLLM_API_KEY=\nLLM_MODEL=qwen2.5:7b\nLLM_AUTH_TYPE=none",
+  "預期輸出": "配置成功後，Flawless 將能夠使用指定的 LLM 進行操作。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 11 天就累積 847 stars（77/天），forks 213（25.1%），這顯示出強烈的社群興趣。這個專案由一群 Flawless Contributors 維護，解決了傳統 SRE 工具在自動化和可審計性方面的不足。之前的工具往往只能提供建議，無法有效地執行和驗證修復。最近的推文和討論也促進了其曝光度，讓更多人關注這個解決方案。高比例的 forks/stars（25.1%）顯示出許多人在實際修改和使用這個工具，反映出其實用性和需求。
+> 建立 12 天內累積 849 stars（71/天），forks 213（25.1%），這顯示出強烈的社群興趣。開發者 William Lu 之前有多個成功的開源專案，這使得 Flawless 在技術社群中受到關注。這個專案解決了現有雲系統故障難以追蹤的痛點，提供了一個完整的 SRE 控制平面，這在市場上是相對稀缺的。技術生態的變化，如 AI 和自動化的興起，使得這種工具的需求大幅增加。高於 25% 的 forks/stars 比率顯示出許多人在實際修改和使用這個工具，而不僅僅是觀望。
 
 ## 適合誰使用
 
-**目標受眾**：希望自動化 Kubernetes 環境中的 SRE 流程的中小型團隊。
+**目標受眾**：需要高效能雲端基礎設施管理的中大型團隊，尤其是專注於 Kubernetes 的 DevOps 團隊。
 
 > [!example] 使用場景
-> - SRE 工程師用它來自動化 Kubernetes 環境中的故障修復，因為其提供的控制修復流程能夠有效減少人工干預，提升系統穩定性。
-> - DevOps 團隊用它來監控雲基礎設施的健康狀態，因為其即時的 Prometheus 指標和可視化工具能快速識別問題。
-> - 系統管理員用它來管理多個雲環境的資源，因為其拓撲影響分析功能能幫助理解資源之間的依賴關係。
+> - DevOps 工程師用它來實現自動化故障修復，因為它能夠連接警報和證據，並自動執行經過批准的修復行動。
+> - 雲端架構師用它來監控 Kubernetes 環境，因為它提供了 2D/3D 拓撲視覺化和影響分析，幫助快速識別問題。
+> - SRE 團隊用它來進行運維知識的沉澱，因為它支持上傳各種格式的運維文檔，並將其整合到操作流程中。
 
 ## 架構分析
 
-Flawless 採用微服務架構，核心組件包括 FastAPI 作為後端服務，並使用 Docker 進行容器化部署。這種設計使得系統能夠靈活擴展，並能夠在不同環境中運行。數據流從用戶的請求進入 FastAPI，經過多個服務進行處理，最終返回結果。
+Flawless 的架構由前端控制台和控制平面 API 組成，前者負責用戶交互，後者處理證據管道、修復作業狀態機和觀察性存儲。這種設計使得 Flawless 能夠在多個 Kubernetes 環境中運行，並且能夠擴展到其他雲端資源。數據流經過多個適配器，確保了與現有系統的兼容性。
 
-選擇 Docker 作為部署方式，雖然增加了一定的學習曲線，但能夠提供一致的運行環境。此架構的擴展性良好，但在高負載下可能會遇到性能瓶頸，特別是在數據處理和存儲方面。整體而言，這種設計適合需要高可用性和自動化的環境。
+選擇 FastAPI 作為後端框架，因為它能提供高效的非同步處理能力，這對於處理大量的運維請求至關重要。這種架構的代價在於需要一定的學習曲線來理解各個組件的交互。擴展性方面，Flawless 的設計允許添加自定義算法擴展，但這也意味著需要開發者具備一定的專業知識。
 
 ## 技術深入分析
 
-Flawless 的核心技術機制是將多個功能模組整合在一起，使用 FastAPI 進行後端開發，並利用 Docker 進行容器化部署。這使得系統能夠快速響應請求並提供即時的監控數據。其效能特性在於能夠處理大量的監控數據，並提供即時反饋，這對於需要高可用性的生產環境至關重要。設計上選擇 FastAPI 而非傳統的 Flask，因為 FastAPI 提供了更好的性能和自動生成 API 文檔的能力。
-
-依賴樹相對簡單，但仍需注意外部庫的版本兼容性。技術風險方面，隨著使用者數量的增加，可能會出現性能瓶頸，特別是在數據處理和存儲方面。此外，對外部 API 的依賴程度較高，可能會影響系統的穩定性。整合方面，Flawless 能夠與主流的 CI/CD 工具（如 GitHub Actions）良好配合，並且在 Docker 環境中運行時能夠簡化整合過程。
+Flawless 的核心技術機制在於其證據驅動的修復流程，這是通過整合多種數據來源（如警報、事件、日誌和指標）來實現的。它使用 FastAPI 和 Uvicorn 提供高效的 API 服務，並能夠處理大量的運維請求。效能方面，Flawless 能夠在多個 Kubernetes 環境中運行，並且支持多種雲端資源的整合，這使得它在處理大規模數據時表現良好。設計取捨方面，選擇 FastAPI 使得開發速度較快，但也需要開發者具備一定的 Python 知識。技術風險方面，Flawless 對 Kubernetes 的依賴性較高，未來若 Kubernetes 發生重大變化，可能會影響其運行。整合分析方面，Flawless 可以與主流的 CI/CD 工具鏈（如 GitHub Actions）進行良好的整合，但在某些情況下可能需要額外的適配器來解決兼容性問題。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，包含快速入門指南和範例。安裝過程相對順暢，但需要注意 Docker 的配置。文件目前僅提供英文版本，可能對非英語使用者造成困難。
+> README 文件清晰且包含詳細的安裝步驟，對新手友好。安裝過程相對順暢，但需要注意 Kubernetes 的配置。文件中有提供快速入門指南，幫助用戶快速上手。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供全面的故障修復流程，減少人工干預。
-> - 良好的社群支持和活躍的開發。
-> - 可擴展性強，適合多種環境。
+> - 提供完整的證據驅動修復流程，減少人為錯誤。
+> - 支持多種雲端和 Kubernetes 環境，具備良好的擴展性。
+> - 集成了多種可觀察性工具，方便運維監控。
 
 > [!danger] 缺點
-> - 需要較高的學習曲線，特別是對於 Docker 和微服務架構不熟悉的用戶。
-> - 目前不支援 Windows 環境，限制了使用者範圍。
-> - 依賴於多個外部庫，可能增加維護成本。
+> - 安裝和配置過程相對複雜，對新手不友好。
+> - 對於大型集群，性能調整可能需要額外的工作。
+> - 目前對非 OpenAI 模型的支持有限。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.11+ 和 Node.js 20+。
-> - 需要 Docker 環境來運行完整功能。
-> - 目前不支援 Windows 環境。
+> - 需要 Kubernetes 設定以獲取資源訪問權限。
+> - 對於大型集群，可能需要調整資源配置以避免性能瓶頸。
+> - 目前僅支持 OpenAI 兼容的模型，對於其他模型的支持可能有限。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的自動化修復功能，但主要集中於事件驅動架構，Flawless 則提供更全面的控制修復流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資源管理和清理，Flawless 提供更強的監控和修復能力。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的自動化運維功能，但缺乏 Flawless 的證據驅動修復機制。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資源管理，但不具備 Flawless 的完整 SRE 控制平面功能。 |
 
 ## 替代方案決策
 
@@ -219,16 +214,16 @@ Flawless 的核心技術機制是將多個功能模組整合在一起，使用 F
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用事件驅動架構，重點在於自動化修復。 | 如果需要一個輕量級的事件驅動解決方案，適合小型專案。 | medium，因為需要重新設計事件流。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資源管理和清理，缺乏全面的修復功能。 | 如果主要需求是資源清理，而非故障修復。 | low，因為功能範圍較小，容易替換。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體用量少，但功能相對簡單。 | 如果你的團隊需要一個輕量級的運維工具，且不需要 Flawless 的完整功能。 | low，因為功能簡單，切換成本低。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資源管理，缺乏 Flawless 的自動化修復功能。 | 如果你的團隊已經在使用其他資源管理工具，且不需要 Flawless 的 SRE 控制平面功能。 | medium，因為需要重新配置資源管理流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **Flawless** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用事件驅動架構，重點在於自動化修復。 | 專注於資源管理和清理，缺乏全面的修復功能。 |
-> | 遷移成本 | - | medium，因為需要重新設計事件流。 | low，因為功能範圍較小，容易替換。 |
-> | 適用場景 | 主要場景 | 如果需要一個輕量級的事件驅動解決方案，適合小型專案。 | 如果主要需求是資源清理，而非故障修復。 |
+> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量少，但功能相對簡單。 | 專注於資源管理，缺乏 Flawless 的自動化修復功能。 |
+> | 遷移成本 | - | low，因為功能簡單，切換成本低。 | medium，因為需要重新配置資源管理流程。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要一個輕量級的運維工具，且不需要 Flawle | 如果你的團隊已經在使用其他資源管理工具，且不需要 Flawl |
 
 ## 成熟度評估
 
@@ -239,57 +234,44 @@ Flawless 的核心技術機制是將多個功能模組整合在一起，使用 F
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合中小型團隊試用，但不建議用於生產環境的核心路徑上。
+> 適合在非關鍵環境中試用，但不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高負載下，可能出現性能瓶頸，特別是在數據處理方面。
-  - 解法：考慮增加資源或優化數據流。
-- [MEDIUM] Docker 配置不當可能導致啟動失敗。
-  - 解法：確保 Docker 和 Docker Compose 的版本符合要求。
-- [MEDIUM] 對於不熟悉 AI 模型的用戶，配置過程可能會造成困惑。
-  - 解法：參考官方文檔中的配置範例。
+- **[HIGH]** Kubernetes 設定不當會導致無法訪問資源
+  - 解法：確保正確配置 KUBECONFIG
+- [MEDIUM] 在大型集群中可能會遇到性能瓶頸
+  - 解法：需要根據實際情況調整資源配置
+- [MEDIUM] 對非 OpenAI 模型的支持有限
+  - 解法：考慮使用 OpenAI 兼容的模型
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 非常適合 | 提供自動化的 SRE 流程，能有效減少人工干預。 |
-| 中型企業的雲基礎設施管理 | 適合 | 能夠處理多種雲環境，並提供即時監控。 |
-| 大型企業的核心系統 | 不適合 | 目前處於 beta 階段，穩定性尚未達到生產要求。 |
+| 10 人以上的雲端運維團隊 | 非常適合 | Flawless 提供了完整的 SRE 控制平面，能夠自動化故障檢測和修復。 |
+| 小型初創公司 | 普通 | 雖然功能強大，但安裝和配置過程可能對小團隊造成負擔。 |
+| 需要高可觀察性的企業級應用 | 非常適合 | Flawless 提供了多種可觀察性工具的整合，方便監控和故障排查。 |
+| 對運維自動化需求不高的團隊 | 不適合 | Flawless 的功能過於複雜，對於不需要自動化的團隊來說可能是多餘的。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~10 小時 |
-| 整合時間 | ~15 小時 |
+| 整合時間 | ~20 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習，15 小時整合，得到高效的 SRE 自動化效果，值得考慮。
+> 花 10 小時學習，20 小時整合，得到高效的 SRE 控制平面，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：Flawless 本身不需要高權限運行，且不存取敏感資料。依賴的庫需定期檢查安全性，但整體風險可控。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-Flawless 最常與 Kubernetes 和 Docker 搭配使用，通常在部署和監控環節中發揮作用。在一個用 Kubernetes 部署的專案中，你可以用 Flawless 來自動化故障修復，具體做法是通過 CLI 指令啟動系統並配置環境變數。Flawless 支援 GitHub Actions 和其他 CI 工具，並能與主流 IDE（如 VS Code）整合。整合的摩擦點主要在於 Docker 的配置和環境變數的設置，這需要一些額外的學習成本。
-
-## 歷史脈絡
-
-> [!info] 這個工具為什麼現在出現？
-
-在 Flawless 出現之前，許多 SRE 工具只能提供建議，無法有效執行和驗證修復。這些工具的痛點在於缺乏自動化和可審計性。隨著 AI 技術的進步，Flawless 能夠將故障發現、證據收集和修復驗證整合在一起，這在技術上是可行的。
-
-這個工具代表了 SRE 自動化的趨勢，未來可能會有更多類似的解決方案出現。
+> Flawless 本身不需要高權限，但在 Kubernetes 環境中運行時需要適當的權限配置。它會存取敏感資料如 Kubernetes 憑證，因此需要確保安全性。依賴鏈中有多個庫，需定期檢查是否有已知的安全漏洞。
 
 ## 健康度儀表板
 
@@ -358,7 +340,7 @@ Flawless 最常與 Kubernetes 和 Docker 搭配使用，通常在部署和監控
 | Open Issues | 0 |
 | 最後推送 | 2026-07-22 |
 | 建立日期 | 2026-07-10 |
-| Repo 大小 | 4.3 MB |
+| Repo 大小 | 664 KB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/William-Lu-stack/Flawless) |
 | Topics | `agenticops` `ai` `aiops` `aisre` `cloud` `cloud-native` `devops` `kubernetes` |
 
@@ -378,12 +360,13 @@ Flawless 最常與 Kubernetes 和 Docker 搭配使用，通常在部署和監控
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，無開放問題，顯示良好的維護狀態。
+**社群活躍度**：社群活躍，持續更新和維護。
+**連結**：[文件](https://github.com/William-Lu-stack/Flawless)
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-07-22）
-> **活躍天數** 1 天 · **最新 commit** feat: release sanitized continuous-recovery platform 3.2.2
+> **活躍天數** 1 天 · **最新 commit** feat: release credential-clean continuous-recovery platform 3.2.2
 
 ## README 摘錄
 
@@ -449,9 +432,9 @@ Flawless 最常與 Kubernetes 和 Docker 搭配使用，通常在部署和監控
 > 
 > ```env
 > LLM_API_BASE=http://localhost:11434/v1
-> LLM_API_KEY=ollama
+> LLM_API_KEY=
 > LLM_MODEL=qwen2.5:7b
-> LLM_AUTH_TYPE=api_key
+> LLM_AUTH_TYPE=none
 > ```
 > 
 > In Docker mode, the quick-start script automatically maps `localhost` model
@@ -461,7 +444,7 @@ Flawless 最常與 Kubernetes 和 Docker 搭配使用，通常在部署和監控
 > LLM_AUTH_TYPE=oauth_client_credentials
 > OAUTH_TOKEN_URL=https://your-iam/realms/main/protocol/openid-connect/token
 > OAUTH_CLIENT_ID=your-client
-> OAUTH_CLIENT_SECRET=your-secret
+> OAUTH_CLIENT_SECRET=${INJECT_FROM_SECRET_MANAGER}
 > LLM_API_BASE=https://your-llm-gateway/engines/default
 > LLM_MODEL=your-model
 > LLM_VERIFY_SSL=true
@@ -485,7 +468,7 @@ Flawless 最常與 Kubernetes 和 Docker 搭配使用，通常在部署和監控
 >     "model": "your-model",
 >     "base_url": "https://api.example.com/v1",
 >     "auth_type": "api_key",
->     "api_key": "from-secret",
+>     "api_key": "${INJECT_FROM_SECRET_MANAGER}",
 >     "role": "candidate",
 >     "max_tokens": 4096
 >   }
@@ -620,11 +603,11 @@ Flawless 最常與 Kubernetes 和 Docker 搭配使用，通常在部署和監控
 > ./scripts/quickstart.sh doctor
 > ```
 > 
-> `doctor` reports the exact commit, remote comparison, platform, Docker
+> `doctor` reports the exact commit, remote c
 
 ## 延伸閱讀
 
-相關概念：[[MCP Protocol]] · [[Observability]] · [[AI Ops]]
+相關概念：[[AIops]] · [[Kubernetes]] · [[雲端基礎設施]] · [[自動化運維]] · [[可觀察性]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[HKUDS--AgentSpace|HKUDS/AgentSpace]] · [[anomalyco--rift|anomalyco/rift]]
 
@@ -632,11 +615,11 @@ Flawless 最常與 Kubernetes 和 Docker 搭配使用，通常在部署和監控
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：SRE 工具）
+> [!note]- 直接競品（同子分類：雲端運維）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "SRE 工具" AND file.name != "William-Lu-stack--Flawless"
+> WHERE subcategory = "雲端運維" AND file.name != "William-Lu-stack--Flawless"
 > SORT stars DESC
 > ```
 
@@ -668,7 +651,7 @@ Flawless 最常與 Kubernetes 和 Docker 搭配使用，通常在部署和監控
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["MCP Protocol","Observability","AI Ops"];
+> const concepts = ["AIops","Kubernetes","雲端基礎設施","自動化運維","可觀察性"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "William-Lu-stack--Flawless" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
