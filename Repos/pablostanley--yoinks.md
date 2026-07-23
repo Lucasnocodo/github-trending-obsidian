@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "yoink any video from your terminal. no shady ads."
 homepage: ""
-stars: 970
-stars_per_day: 194
-forks: 101
+stars: 1053
+stars_per_day: 176
+forks: 104
 open_issues: 9
 created: 2026-07-16
 pushed_at: 2026-07-17
@@ -30,10 +30,10 @@ use_case: "從終端機下載視頻，無廣告、無惡意重定向。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-07-29"
+appearances: 4
+next_review: "2026-07-30"
 contributor_count: 1
-engagement: "medium"
+engagement: "low"
 issue_close_rate: 0
 repo_size_kb: 342
 readme_length: 2841
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-20"
-star_history: "2026-07-20:776,2026-07-21:878,2026-07-22:970"
+star_history: "2026-07-20:776,2026-07-21:878,2026-07-22:970,2026-07-23:1053"
 tags:
   - github
   - "category/cli_工具"
@@ -756,6 +756,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-23|2026-07-23]] — 再次上榜，1.1k stars
 - [[2026-07-22|2026-07-22]] — 再次上榜，970 stars
 - [[2026-07-21|2026-07-21]] — 再次上榜，878 stars
 - [[2026-07-20|2026-07-20]] — 首次收錄，776 stars

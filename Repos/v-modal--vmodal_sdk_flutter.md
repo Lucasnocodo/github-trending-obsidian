@@ -7,9 +7,9 @@ language: Dart
 license: MIT
 description: "V- Modal AI: Search anything anywhere SDK Flutter"
 homepage: ""
-stars: 782
-stars_per_day: 156
-forks: 2
+stars: 888
+stars_per_day: 148
+forks: 3
 open_issues: 1
 created: 2026-07-16
 pushed_at: 2026-07-19
@@ -30,8 +30,8 @@ use_case: "提供多模態記憶的 Flutter SDK，讓應用程式能夠快速搜
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-29"
+appearances: 2
+next_review: "2026-07-30"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 92
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-22"
-star_history: "2026-07-22:782"
+star_history: "2026-07-22:782,2026-07-23:888"
 tags:
   - github
   - "category/開發工具"
@@ -846,4 +846,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-23|2026-07-23]] — 再次上榜，888 stars
 - [[2026-07-22|2026-07-22]] — 首次收錄，782 stars

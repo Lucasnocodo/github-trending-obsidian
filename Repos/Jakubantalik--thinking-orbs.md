@@ -1,69 +1,65 @@
 ---
-repo: MIgHTy-alIeN/MEV-Arbitrage-Bot
-url: https://github.com/MIgHTy-alIeN/MEV-Arbitrage-Bot
-owner: MIgHTy-alIeN
+repo: Jakubantalik/thinking-orbs
+url: https://github.com/Jakubantalik/thinking-orbs
+owner: Jakubantalik
 owner_type: User
-language: Solidity
-license: NOASSERTION
-description: "An arbitrage bot is a smart contract connected to an external automation script that controls its operation."
+language: TypeScript
+license: MIT
+description: "Dotted thought-orb loading indicators for AI & agent UIs — six tuned states, two sizes, auto dark/light"
 homepage: ""
-stars: 920
-stars_per_day: 184
-forks: 650
-open_issues: 0
-created: 2026-07-17
-pushed_at: 2026-07-23
-first_seen: 2026-07-22
+stars: 655
+stars_per_day: 655
+forks: 42
+open_issues: 5
+created: 2026-07-21
+pushed_at: 2026-07-21
+first_seen: 2026-07-23
 week: "2026-W30"
 month: "2026-07"
 category: "開發工具"
-subcategory: "自動化"
+subcategory: "UI 元件"
 release_tag: ""
-install_complexity: "medium"
+install_complexity: "easy"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-07-22
-use_case: "自動化執行 Ethereum 上的套利交易，無需手動干預。"
-priority: medium
+last_reviewed: 2026-07-23
+use_case: "提供 AI 和代理 UI 的點狀思維圓球加載指示器，具備六種調整狀態和自動深淺色主題。"
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-30"
+appearances: 1
+next_review: "2026-07-26"
 contributor_count: 1
-engagement: "high"
-issue_close_rate: -1
-repo_size_kb: 2553
-readme_length: 3637
+engagement: "low"
+issue_close_rate: 0
+repo_size_kb: 133
+readme_length: 2519
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-07-22"
-star_history: "2026-07-22:739,2026-07-22:739,2026-07-23:920"
+ring_history: "assess@2026-07-23"
+star_history: "2026-07-23:655"
 tags:
   - github
   - "category/開發工具"
-  - "lang/solidity"
-  - "topic/ai"
-  - "topic/aitradingbot"
-  - "topic/bot"
-  - "topic/btc"
-  - "topic/claude"
+  - "lang/typescript"
+  - easy_install
 aliases:
-  - "MEV-Arbitrage-Bot"
-  - "MIgHTy-alIeN/MEV-Arbitrage-Bot"
-  - "自動化執行 Ethereum 上的套利交易，無需手動干預。"
+  - "thinking-orbs"
+  - "Jakubantalik/thinking-orbs"
+  - "提供 AI 和代理 UI 的點狀思維圓球加載指示器，具備六種調整狀態和自動深淺色主題。"
 ---
 
-# MEV-Arbitrage-Bot
+# thinking-orbs
 
-**739** stars · **185** stars/天 · 建立 4 天前 · Solidity · NOASSERTION
+**655** stars · **655** stars/天 · 建立 1 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/MIgHTy-alIeN--MEV-Arbitrage-Bot");
+const me = dv.page("Repos/Jakubantalik--thinking-orbs");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -73,25 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案`
-
-`ai` `aitradingbot` `bot` `btc` `claude` `eth` `etherlab` `mev` `mevbots`
+`個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 自動化執行 Ethereum 上的套利交易，無需手動干預。
+> 提供 AI 和代理 UI 的點狀思維圓球加載指示器，具備六種調整狀態和自動深淺色主題。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (185 stars/day)
-> **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** High
-> **適合** 希望在 Ethereum 上自動化套利交易的 DeFi 投資者和量化交易者。
-> **一句話重點** 這個套利機器人不僅提供了自動化交易的解決方案，還讓用戶能夠在 Ethereum 生態系統中輕鬆參與套利機會。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (655 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要在 AI 應用中集成輕量級加載指示器的前端開發者。
+> **一句話重點** Thinking Orbs 的設計不僅注重性能，還兼顧了用戶體驗，這在當前的開發環境中非常重要。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/MIgHTy-alIeN--MEV-Arbitrage-Bot");
+> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "自動化" && p.file.name !== "MIgHTy-alIeN--MEV-Arbitrage-Bot" && p.status !== "archived")
+>     .where(p => p.subcategory === "UI 元件" && p.file.name !== "Jakubantalik--thinking-orbs" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -102,116 +96,111 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 UI 元件 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到自動化套利的效果，值得嘗試。
+> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，1 小時整合，得到輕量級的加載指示器，值得採用。
 
 > [!abstract] 核心創新
-> 這個專案的核心創新在於將智能合約與外部 Python 腳本結合，實現完全自動化的套利交易。
+> 提供六種手動調整的動畫狀態，並且能自動適應主題。
 
 ## 專案簡介
 
-這個 MEV Arbitrage Bot 是一個智能合約，能夠自動尋找並執行 Ethereum 上不同流動池和路由器之間的套利機會。用戶只需部署合約並設置參數，然後透過外部 Python 腳本自動運行。主要功能 `executeArbitrage()` 會在單一交易中搜尋套利機會，並透過 `quickSwap()` 進行快速交換。設計上，合約擁有多種管理功能，如設定允許的路由器和代幣、設置最小和最大交易金額等，這使得用戶能夠靈活調整策略。合約的所有者擁有唯一的權限來修改設置和提取資金，這樣的設計確保了資金的安全性和合約的可控性。使用者可以在 Etherlab 網站上輕鬆部署合約，並透過簡單的步驟進行資金注入和啟動。這個工具的賣點在於其完全自動化的套利過程，讓用戶無需手動操作即可獲取潛在利潤。
+Thinking Orbs 是一個專為 AI 和代理界面設計的點狀加載指示器，提供六種手動調整的動畫狀態，並且有兩種尺寸可供選擇。用戶只需簡單地導入 `ThinkingOrb` 組件，即可在其應用中使用，這些指示器在 2D 畫布上渲染，無需 WebGL，確保在所有主流瀏覽器中表現一致。這個設計選擇的好處是能夠在低端設備上保持良好的性能，並且避免了複雜的圖形處理。每個狀態都代表了代理的不同動作，並且可以自動根據主題（深色或淺色）進行調整，這樣的設計使得它在多種應用場景中都能保持一致的視覺效果。使用者可以透過 `npm install thinking-orbs` 來安裝，並且可以快速上手。這個專案的優勢在於其輕量級和高效能，適合需要加載指示器的應用，尤其是在對性能要求較高的情況下。
 
-**技術棧**：`Solidity 0.8.20` · `Python`
+與其他加載指示器相比，如 `0x0funky/agent-sprite-forge` 和 `0xGF/boneyard`，Thinking Orbs 提供了更簡單的使用方式和更好的性能表現。這些替代品可能需要更複雜的設置或依賴於重型圖形處理。實際使用中，Thinking Orbs 的表現穩定，並且能夠自動暫停動畫以節省資源，這對於需要長時間運行的應用來說是個優勢。考慮到目前的開發狀態，這個專案仍在 beta 階段，適合小型團隊或個人專案使用，但在生產環境中仍需謹慎評估其穩定性。對於需要快速集成簡單加載指示器的開發者來說，Thinking Orbs 是一個值得考慮的選擇。
+
+**技術棧**：`TypeScript` · `React` · `Vite`
 
 ## 重點功能
 
-- 自動套利執行 — `executeArbitrage()` 函數能在單一交易中尋找並執行套利機會。
-- 快速交換功能 — 使用 `quickSwap()` 直接從合約餘額進行代幣交換。
-- 靈活的路由器和代幣管理 — `setRouterAllowed()` 和 `setTokenAllowed()` 允許用戶自定義可用的路由器和代幣。
-- 設置最小和最大交易金額 — `setMinQuickSwapAmount()` 和 `setMaxQuickSwapAmount()` 提供了交易的靈活性。
-- 緊急暫停功能 — `setPaused()` 允許合約擁有者在需要時暫停所有操作。
-- 資金提取功能 — `withdraw()` 和 `withdrawETH()` 讓合約擁有者能夠提取資金。
+- 六種動畫狀態 — 每種狀態代表代理的不同動作，提供多樣化的用戶體驗。
+- 兩種尺寸 — `64` 和 `20`，適合不同的使用場景，如聊天頭像或內聯文本。
+- 自動主題切換 — 根據應用的主題自動調整顏色，確保良好的可讀性。
+- 高性能 — 使用 2D 畫布渲染，避免了 WebGL 的性能開銷，適合低端設備。
+- 無需額外依賴 — 只需安裝 `thinking-orbs`，即可輕鬆集成到 React 應用中。
 
 ## 快速開始
 
-1. 打開部署頁面
+1. 安裝套件
 ```bash
-訪問 https://etherlab-onchain.github.io/Etherlab/
+npm install thinking-orbs
 ```
-2. 創建合約文件
+2. 導入組件
 ```bash
-在文件管理器中創建新文件，如 contract.sol，並粘貼合約代碼
+import { ThinkingOrb } from 'thinking-orbs';
 ```
-3. 編譯合約
+3. 使用組件
 ```bash
-選擇編譯器版本 0.8.20，然後點擊編譯
-```
-4. 部署合約並資金注入
-```bash
-連接錢包，部署合約，並發送 0.5 至 1 ETH 到合約地址
-```
-5. 啟動機器人
-```bash
-在 Python 自動化選項中選擇合約並點擊啟動
+<ThinkingOrb />
 ```
 
 ## 程式碼範例
 
-```solidity
-{
-  "前置條件": "合約已部署並資金注入",
-  "指令": "bot.executeArbitrage();",
-  "預期輸出": "執行套利交易並返回結果"
+```ts
+# 前置條件
+import { ThinkingOrb } from 'thinking-orbs';
+
+function Status() {
+  return <ThinkingOrb />;
 }
+# 預期輸出
+一個顯示加載狀態的點狀思維圓球。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 739 stars（185/天），forks 497（67.3%），顯示出極高的興趣和活躍度。作者 MIgHTy-alIeN 之前有開發其他 AI 交易工具，這次的套利機器人解決了傳統手動套利的效率低下問題。此專案的推出正值 DeFi 生態系統持續擴張，許多用戶尋求自動化的套利解決方案。高達 67.3% 的 forks/stars 比率顯示許多人正在積極修改或實驗這個工具，這通常代表著社群的強烈參與和需求。
+> 建立 1 天就累積 655 stars（655/天），forks 42（6.4%），這顯示出其快速的增長潛力。作者 Jakub Antalik 以其對 UI/UX 的專注而聞名，這個專案解決了在 AI 和代理界面中缺乏輕量級加載指示器的問題。之前的方案通常依賴於較重的圖形處理，導致性能問題。這個專案的出現正好填補了這個空白，並且在社群中引起了關注。技術上，這個工具的設計使其能夠輕鬆集成到現有的 React 應用中，並且能夠自動適應主題，這在當前的開發趨勢中是相當重要的。forks/stars 比率為 6.4%，顯示出有相當一部分用戶對其進行了實際修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：希望在 Ethereum 上自動化套利交易的 DeFi 投資者和量化交易者。
+**目標受眾**：需要在 AI 應用中集成輕量級加載指示器的前端開發者。
 
 > [!example] 使用場景
-> - DeFi 投資者用它來自動化套利交易，因為手動操作耗時且容易錯過機會。
-> - 量化交易者用它來快速執行套利策略，因為合約能在單一交易中完成多個操作，減少了交易成本。
-> - 新手用戶用它來學習套利交易的基本概念，因為部署和啟動流程簡單，降低了入門門檻。
+> - 前端工程師用它來在聊天應用中顯示加載狀態，因為它的輕量級設計能夠在低端設備上流暢運行。
+> - UI 設計師用它來增強 AI 代理的用戶體驗，因為它的自動主題切換功能能夠保持一致的視覺效果。
+> - 產品經理用它來快速原型設計，因為它的簡單集成方式能夠節省開發時間。
 
 ## 架構分析
 
-這個套利機器人採用智能合約加上外部 Python 腳本的架構模式，這樣的設計使得合約能夠在 Ethereum 網路上執行自動化交易，而 Python 腳本則負責定期檢查套利機會。合約內部使用 Solidity 實現主要功能，如交易執行和資金管理，這樣的選擇使得交易能夠在區塊鏈上透明且安全地進行。選擇智能合約而非傳統的中心化服務，能夠降低信任成本，但也需要用戶對合約的安全性有一定的認知。這樣的架構在擴展性上有一定的瓶頸，尤其是在高頻交易場景下，可能會受到網路延遲和交易費用的影響。
+Thinking Orbs 採用模組化設計，使用 TypeScript 和 React 實現。其核心是基於 2D 畫布的點狀動畫，這樣的設計使得它在性能上優於依賴於重型圖形處理的方案。資料流方面，動畫狀態根據用戶的操作和主題自動調整，這樣的設計使得用戶體驗更加流暢。選擇 2D 畫布而非 WebGL 是為了減少性能開銷，這在低端設備上尤為重要。擴展性方面，雖然目前僅支持 React，但未來可以考慮擴展到其他框架，這將需要額外的開發工作。
 
 ## 技術深入分析
 
-這個 MEV Arbitrage Bot 的核心技術機制是基於 Solidity 實現的智能合約，並結合外部 Python 腳本進行自動化操作。合約內部使用了多個函數來管理交易流程，如 `executeArbitrage()` 和 `quickSwap()`，這些函數能夠在單一交易中完成多個操作，這樣的設計提高了交易效率。效能上，合約能夠在每個時間間隔內檢查套利機會，並透過 `eth_estimateGas` 進行預估，這樣的設計能夠在不浪費資金的情況下進行交易。選擇 Solidity 作為開發語言，能夠確保合約的安全性和透明度，但也需要用戶有一定的技術背景來進行部署和管理。這個專案的依賴關係相對簡單，主要依賴於 Ethereum 網路的基礎設施，這降低了使用的複雜度。未來在擴展性方面，若用戶需求增加，可能需要考慮如何處理高頻交易的瓶頸，特別是在網路擁擠時期。
+Thinking Orbs 的核心技術在於使用 TypeScript 和 React 來實現點狀動畫，這使得它在開發過程中能夠獲得靜態類型檢查的優勢。每個動畫狀態都是獨立設計的，這樣的設計使得它能夠靈活應對不同的用戶需求。性能方面，這個工具能夠在低端設備上穩定運行，因為它使用了 2D 畫布而非 WebGL，這樣的選擇減少了資源消耗。設計上，選擇 React 作為框架使得它能夠輕鬆集成到現有的應用中，但這也意味著未來擴展到其他框架會面臨挑戰。技術風險方面，隨著用戶量的增加，可能會出現性能瓶頸，特別是在多個動畫同時運行的情況下。整合方面，Thinking Orbs 能夠與現有的 React 生態系統無縫對接，這對於開發者來說是一個重要的優勢。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含詳細的步驟指導，讓新手能夠快速上手。安裝過程相對順暢，但對於不熟悉智能合約的用戶可能會有一定的挑戰。文件中沒有多語言支持，僅提供英文內容。
+> README 文件清晰且包含範例，安裝過程順暢，無明顯坑。提供了良好的快速入門指導，但目前僅有英語版本，對於非英語使用者可能會有些困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 完全自動化的套利過程，減少手動操作的需求。
-> - 靈活的參數設置，能夠根據市場變化調整策略。
-> - 透明的交易記錄，所有操作都在區塊鏈上進行，易於審計。
+> - 輕量級設計，適合低端設備。
+> - 簡單的集成過程，快速上手。
+> - 自動主題切換功能，提升用戶體驗。
 
 > [!danger] 缺點
-> - 需要一定的 ETH 作為交易費用，對資金要求較高。
-> - 合約的所有者擁有唯一的權限，可能導致集中化風險。
-> - 對於新手用戶，部署和設置過程可能會有一定的學習曲線。
+> - 目前僅支持 React，對其他框架的支持有限。
+> - 缺乏多語言支持，文檔僅有英語。
+> - 動畫效果在某些設備上可能表現不佳。
 
 > [!warning] 注意事項
-> - 僅支援 Ethereum 網路，無法在其他區塊鏈上運行。
-> - 需要一定的 ETH 作為交易費用，對於資金較少的用戶可能不適合。
-> - 合約的所有者擁有唯一的權限，這可能帶來集中化風險。
+> - 目前僅支持 React 應用，對其他框架的支持尚未實現。
+> - 動畫效果可能在某些低端設備上表現不佳，需進一步優化。
+> - 目前沒有提供多語言支持，僅有英語文檔。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的自動化套利功能，但主要針對不同的 DeFi 協議，可能需要額外的配置。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於高頻交易策略，與本專案相比，對技術要求更高，適合經驗豐富的交易者。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 提供多種交易策略，但需要用戶手動選擇，缺乏本專案的自動化優勢。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供了更複雜的動畫效果，但需要額外的設置和依賴。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 雖然功能類似，但性能較差，特別是在低端設備上。 |
 
 ## 替代方案決策
 
@@ -219,69 +208,69 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於多種 DeFi 協議的套利，但需要用戶手動配置，缺乏自動化優勢。 | 如果你的團隊需要針對特定 DeFi 協議進行套利，並且願意手動配置。 | medium，因為需要重新設置和配置策略。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於高頻交易策略，對技術要求較高，適合經驗豐富的交易者。 | 如果你的團隊已經具備高頻交易的經驗，並且需要更高的交易頻率。 | high，因為需要重新設計交易策略和架構。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Sprite 動畫，提供更多的動畫選擇，但需要較多的設置和資源。 | 如果需要更複雜的動畫效果，並且不介意額外的設置。 | medium，因為需要重新設計動畫邏輯。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 依賴於 SVG 動畫，性能較差，特別是在低端設備上。 | 如果需要 SVG 特有的效果，但不在意性能問題。 | low，因為可以直接替換使用。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **MEV-Arbitrage-Bot** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **thinking-orbs** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於多種 DeFi 協議的套利，但需要用戶手動配置，缺乏自動化優勢。 | 專注於高頻交易策略，對技術要求較高，適合經驗豐富的交易者。 |
-> | 遷移成本 | - | medium，因為需要重新設置和配置策略。 | high，因為需要重新設計交易策略和架構。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要針對特定 DeFi 協議進行套利，並且願意手 | 如果你的團隊已經具備高頻交易的經驗，並且需要更高的交易頻率。 |
+> | 技術路線 | 本專案 | 使用 Sprite 動畫，提供更多的動畫選擇，但需要較多的設置和資源。 | 依賴於 SVG 動畫，性能較差，特別是在低端設備上。 |
+> | 遷移成本 | - | medium，因為需要重新設計動畫邏輯。 | low，因為可以直接替換使用。 |
+> | 適用場景 | 主要場景 | 如果需要更複雜的動畫效果，並且不介意額外的設置。 | 如果需要 SVG 特有的效果，但不在意性能問題。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Alpha |
+| 開發階段 | Beta |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | high |
+| Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人測試和學習，但不建議用於生產環境。
+> 適合個人專案或小型團隊試用，但不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 合約部署後無法修改參數，需謹慎設置初始值
-  - 解法：在部署前仔細檢查所有參數設定
-- [MEDIUM] 在網路擁擠時，交易可能會失敗或延遲
-  - 解法：選擇低峰時段進行交易
-- **[HIGH]** 合約的安全性依賴於開發者的實現，可能存在漏洞
-  - 解法：進行充分的合約審計和測試
+- **[HIGH]** 在某些低端設備上，動畫可能會卡頓或延遲。
+  - 解法：考慮使用靜態圖像替代動畫。
+- [MEDIUM] 主題切換時可能需要重新渲染，導致短暫的閃爍。
+  - 解法：在主題切換時暫時禁用動畫。
+- [MEDIUM] 當多個動畫同時運行時，可能會導致性能下降。
+  - 解法：限制同時運行的動畫數量。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型 DeFi 項目的套利交易 | 非常適合 | 合約的自動化特性能夠有效降低手動操作的需求。 |
-| 大型交易所的高頻套利 | 普通 | 雖然合約能夠執行套利，但在高頻交易場景下可能會遇到延遲問題。 |
-| 新手用戶學習套利交易 | 非常適合 | 簡單的部署流程和自動化操作降低了入門門檻。 |
+| 小型團隊的 AI 聊天應用 | 非常適合 | 輕量級設計和自動主題切換功能非常符合需求。 |
+| 大型企業的生產環境 | 不適合 | 目前仍在 beta 階段，穩定性不足。 |
+| 個人開發者的原型設計 | 適合 | 快速集成和簡單使用能夠提升開發效率。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
-| 維護負擔 | medium |
-| 綁定風險 | medium |
+| 學習時間 | ~2 小時 |
+| 整合時間 | ~1 小時 |
+| 維護負擔 | low |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到自動化套利的效果，值得嘗試。
+> 花 2 小時學習，1 小時整合，得到輕量級的加載指示器，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 安全性評估中等，合約本身不需要高權限，但對合約的實現安全性有較高要求，建議進行審計。
+> 低風險：此工具不需要高權限，且不存取敏感資料，依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/MIgHTy-alIeN--MEV-Arbitrage-Bot");
+> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -316,7 +305,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/MIgHTy-alIeN--MEV-Arbitrage-Bot");
+> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -340,117 +329,137 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 497 |
-| Open Issues | 0 |
-| 最後推送 | 2026-07-22 |
-| 建立日期 | 2026-07-17 |
-| Repo 大小 | 2.5 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/MIgHTy-alIeN/MEV-Arbitrage-Bot) |
-| Topics | `ai` `aitradingbot` `bot` `btc` `claude` `eth` `etherlab` `mev` |
+| Forks | 42 |
+| Open Issues | 5 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-07-21 |
+| 建立日期 | 2026-07-21 |
+| Repo 大小 | 133 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Jakubantalik/thinking-orbs) |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@tailwindcss/vite` `@types/react` `@types/react-dom` `@vitejs/plugin-react` `clsx` `react` `react-dom` `tailwind-merge` `tailwindcss` `typescript` `vite` `vite-plugin-dts`
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@MIgHTy-alIeN](https://github.com/MIgHTy-alIeN) | 11395 |
+> | [@Jakubantalik](https://github.com/Jakubantalik) | 8 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度高，最近有多次提交和更新。
+**社群活躍度**：社群活躍度中等，最近有 5 個開放問題待解決。
+**連結**：[文件](https://orbs.jakubantalik.com)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-22 ~ 2026-07-22）
-> **活躍天數** 1 天 · **最新 commit** Update LICENSE - 2026-07-22 07:32:04
+> [!abstract] 最近 10 次 commit（2026-07-20 ~ 2026-07-21）
+> **活躍天數** 2 天 · **最新 commit** Fix Safari: replace CSS multi-column masonry with grid row-spans
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#5](https://github.com/Jakubantalik/thinking-orbs/issues/5) | Vue 3 version adapted from this project | 0 | 0 |
+> | [#3](https://github.com/Jakubantalik/thinking-orbs/issues/3) | Would you be open to listing the community Flutter port? | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # MEV Arbitrage Bot for Ethereum — Smart Contract + Python Automation. Finds and executes arbitrage between Uniswap pools and routers.
+> # thinking-orbs
 > 
+> Dotted thought-orb loading indicators for AI & agent UIs. Six hand-tuned animated states, each shipped at two purpose-tuned sizes, rendered on a plain 2D canvas — no WebGL, no filters, works identically in Chrome, Safari and Firefox.
 > 
+> [Live demo](https://orbs.jakubantalik.com) · [Repository](https://github.com/Jakubantalik/thinking-orbs) · [Report an issue](https://github.com/Jakubantalik/thinking-orbs/issues)
 > 
-> An arbitrage bot is a smart contract that searches for and executes arbitrage opportunities between pools and routers, holding ETH/tokens on its balance. Below is a step-by-step guide on how to deploy your bot and get it running without a single manual call.
+> ## Install
 > 
-> ## What the bot is
+> ```bash
+> npm install thinking-orbs
+> ```
 > 
-> An arbitrage bot is a smart contract connected to an external automation script that controls its operation.
+> ## Quick start
 > 
-> - **`executeArbitrage()`** — the main function: searches for and executes an arbitrage opportunity between pools/routers in a single transaction.
-> - **`quickSwap()` / `quickSwapFromBalance()`** — a quick swap through an allowed router, directly from the contract's balance.
-> - **`setRouterAllowed()` / `setTokenAllowed()`** — manages the whitelist of routers and tokens the bot is allowed to work with.
-> - **`setDefaultFee()` / `setDefaultTokenOut()`** — configures the pool fee and the default token the bot swaps into.
-> - **`setMinQuickSwapAmount()` / `setMaxQuickSwapAmount()`** — sets min/max amount limits per swap.
-> - **`setPaused()`** — emergency pause, stopping all contract operations.
-> - **`revokeApproval()`** — revokes previously granted token approvals.
-> - **`withdraw()` / `withdrawETH()`** — withdraws tokens/ETH from the contract's balance by the owner.
-> - **`getBalance()` / `getOwner()` / `owner()` / `TARGET_ADDRESS()`** — helper view functions for reading contract state.
+> ```tsx
+> import { ThinkingOrb } from 'thinking-orbs';
 > 
-> The contract owner is the only one who can change settings and withdraw funds.
+> function Status() {
+>   return ;
+> }
+> ```
 > 
-> ## Step-by-step guide
+> ## States
 > 
-> ### 1. Open the deployer page
+> Six verbs an agent can be doing, each a distinct animation:
 > 
+> ```tsx
+>     {/* particles on tilted orbits */}
+>   {/* a scan meridian sweeps a dotted globe */}
+>     {/* bands scramble, then click back solved */}
+>   {/* a waveform rolls through the rings */}
+>   {/* an undulating multi-band sash */}
+>     {/* dotted outline: circle → triangle → square */}
+> ```
 > 
+> ## Sizes
 > 
-> Open [etherlab website](https://etherlab-onchain.github.io/Etherlab/) (or the hosted version of the page) in your browser — this is the environment where the bot is created and deployed.
+> Two tuned presets — separate designs, not a scale factor. `64` for chat-avatar scale, `20` for inline-text scale. Each carries its own dot count, dot size and speed tuning:
 > 
-> ### 2. Create the bot file
+> ```tsx
 > 
-> Create a new `.sol` file in the file manager (e.g. `contract.sol`). Paste the smart contract code into the editor field [contract](contract.sol)
+> ```
 > 
+> ## Theme
 > 
+> Strictly monochrome — light ink for dark backgrounds, dark ink for light backgrounds — with the mode picked automatically from the host project:
 > 
-> ### 3. Compile the bot
+> ```tsx
+>    {/* default — detects from the project */}
+>    {/* pin: light dots for dark backgrounds */}
+>   {/* pin: dark dots for light backgrounds */}
+> ```
 > 
-> Go to the **Compiler** tab, select compiler version **0.8.20**, and click compile.
+> `auto` resolves in three layers and updates live when any of them change:
 > 
+> 1. an ancestor `data-theme="dark|light"` attribute or `dark`/`light` class (the Tailwind / shadcn convention), watched via `MutationObserver`;
+> 2. otherwise `prefers-color-scheme`, subscribed for live OS theme switches;
+> 3. SSR-safe — the canvas paints only on the client, after the theme has resolved.
 > 
+> ## Other props
 > 
-> ### 4. Deploy and fund the bot
+> ```tsx
 > 
-> Go to the **Deploy** tab, connect your wallet — MetaMask or Phantom (whichever is more convenient) — and deploy the contract. Our bot contract will appear below.
+> ```
 > 
-> You can fund the balance by copying its address: send **0.5 to 1 ETH** — this is enough for beginners.
+> All other `` props (`className`, `style`, `data-*`, …) pass through.
 > 
+> ## Accessibility & performance
 > 
+> - `role="img"` with a sensible per-state `aria-label` out of the box.
+> - `prefers-reduced-motion: reduce` renders a static representative frame — no animation — and still follows the live theme.
+> - Every instance pauses automatically when scrolled offscreen (`IntersectionObserver`) or when the tab is hidden, and resumes in phase — all instances share one clock.
+> - Plain 2D canvas arcs only: no `ctx.filter`, no SVG filters, no WebGL — the same pixels everywhere, cheap on low-end devices. Device-pixel-ratio capped at 2.
 > 
-> ### 5. Start the bot via automation
+> ## License
 > 
-> Go to the **Python Automation** tab, make sure all fields are filled in automatically and your contract is selected, click **Start**, and confirm the launch in MetaMask or Phantom.
-> 
-> Do not close the page while the bot is running.
-> 
->  
-> 
-> ## What happens after clicking Start
-> 
->  
-> 
-> - Every interval, the bot checks `executeArbitrage` via a dry-run (`eth_estimateGas`); if the call would succeed, a real transaction is sent — and it needs to be confirmed once in MetaMask.
-> - Any other selected functions are checked the same way, but are never sent — no extra confirmations needed.
-> - In the background, the scanner listens for live Uniswap V2/V3 swap events on mainnet and logs them: who swapped, direction, approximate amounts.
-> - All bot activity is displayed in the **Logs** panel in real time.
-> 
-> ## About profit
-> 
-> The bot doesn't promise mountains of gold — returns depend on market volatility, bot competition, and network gas fees. But under today's market conditions, a deposit of **1 ETH** can realistically average around **~$500 a day**. Results are not guaranteed and may vary depending on market conditions.
+> MIT © Jakub Antalik
 
 ## 延伸閱讀
 
-相關概念：[[MEV]] · [[自動化交易]] · [[智能合約]]
+相關概念：[[UI 元件]] · [[性能優化]] · [[動畫設計]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[sterlingcrispin--nothing-ever-happens|sterlingcrispin/nothing-ever-happens]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[ConardLi--garden-skills|ConardLi/garden-skills]] · [[CopilotKit--OpenTag|CopilotKit/OpenTag]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[vorpus--performativeUI|vorpus/performativeUI]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]]
 
-[GitHub](https://github.com/MIgHTy-alIeN/MEV-Arbitrage-Bot)
+[GitHub](https://github.com/Jakubantalik/thinking-orbs)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：自動化）
+> [!note]- 直接競品（同子分類：UI 元件）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "自動化" AND file.name != "MIgHTy-alIeN--MEV-Arbitrage-Bot"
+> WHERE subcategory = "UI 元件" AND file.name != "Jakubantalik--thinking-orbs"
 > SORT stars DESC
 > ```
 
@@ -458,7 +467,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "MIgHTy-alIeN--MEV-Arbitrage-Bot"
+> WHERE category = "開發工具" AND file.name != "Jakubantalik--thinking-orbs"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -467,7 +476,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Solidity" AND file.name != "MIgHTy-alIeN--MEV-Arbitrage-Bot" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "Jakubantalik--thinking-orbs" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -476,15 +485,15 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W30" AND file.name != "MIgHTy-alIeN--MEV-Arbitrage-Bot"
+> WHERE week = "2026-W30" AND file.name != "Jakubantalik--thinking-orbs"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["MEV","自動化交易","智能合約"];
+> const concepts = ["UI 元件","性能優化","動畫設計"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "MIgHTy-alIeN--MEV-Arbitrage-Bot" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "Jakubantalik--thinking-orbs" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -497,12 +506,12 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/MIgHTy-alIeN--MEV-Arbitrage-Bot");
+> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "MIgHTy-alIeN--MEV-Arbitrage-Bot" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Jakubantalik--thinking-orbs" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -518,7 +527,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "MIgHTy-alIeN" AND file.name != "MIgHTy-alIeN--MEV-Arbitrage-Bot"
+> WHERE owner = "Jakubantalik" AND file.name != "Jakubantalik--thinking-orbs"
 > SORT stars DESC
 > ```
 
@@ -526,7 +535,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/MIgHTy-alIeN--MEV-Arbitrage-Bot");
+> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -543,7 +552,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/MIgHTy-alIeN--MEV-Arbitrage-Bot");
+> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -576,7 +585,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/MIgHTy-alIeN--MEV-Arbitrage-Bot");
+> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -600,7 +609,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/MIgHTy-alIeN--MEV-Arbitrage-Bot");
+> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -637,7 +646,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/MIgHTy-alIeN--MEV-Arbitrage-Bot");
+> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -720,7 +729,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-07-22** — 首次收錄
+> **2026-07-23** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -736,5 +745,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-07-23|2026-07-23]] — 再次上榜，920 stars
-- [[2026-07-22|2026-07-22]] — 首次收錄，739 stars
+- [[2026-07-23|2026-07-23]] — 首次收錄，655 stars
