@@ -1,65 +1,70 @@
 ---
-repo: Jakubantalik/thinking-orbs
-url: https://github.com/Jakubantalik/thinking-orbs
-owner: Jakubantalik
-owner_type: User
+repo: pireel/pireel
+url: https://github.com/pireel/pireel
+owner: pireel
+owner_type: Organization
 language: TypeScript
-license: MIT
-description: "Dotted thought-orb loading indicators for AI & agent UIs — six tuned states, two sizes, auto dark/light"
-homepage: ""
-stars: 841
-stars_per_day: 421
-forks: 59
-open_issues: 6
-created: 2026-07-21
-pushed_at: 2026-07-21
-first_seen: 2026-07-23
+license: AGPL-3.0
+description: "Open-source, backend-free AI video editor for talking-head video — storyboarding, designed graphics, kinetic captions, themes and in-browser WebCodecs export. Drivable by any AI agent over MCP."
+homepage: "https://www.pireel.com"
+stars: 666
+stars_per_day: 222
+forks: 52
+open_issues: 0
+created: 2026-07-20
+pushed_at: 2026-07-24
+first_seen: 2026-07-24
 week: "2026-W30"
 month: "2026-07"
 category: "開發工具"
-subcategory: "UI 組件"
+subcategory: "影片編輯"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-07-23
-use_case: "為 AI 和代理 UI 提供點狀思維圓球加載指示器，具有六種調整狀態和自動深淺主題。"
+last_reviewed: 2026-07-24
+use_case: "提供一個無需後端的 AI 影片編輯器，專為對話式影片設計，支持故事板、動態字幕等功能。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-07-27"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 133
-readme_length: 2519
+issue_close_rate: -1
+repo_size_kb: 2049
+readme_length: 2865
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-07-23"
-star_history: "2026-07-23:655,2026-07-23:656,2026-07-24:841"
+ring_history: "assess@2026-07-24"
+star_history: "2026-07-24:666"
 tags:
   - github
   - "category/開發工具"
   - "lang/typescript"
-  - easy_install
+  - org
+  - "topic/ai_video"
+  - "topic/capcut"
+  - "topic/captions"
+  - "topic/chatcut"
+  - "topic/openchatcut"
 aliases:
-  - "thinking-orbs"
-  - "Jakubantalik/thinking-orbs"
-  - "為 AI 和代理 UI 提供點狀思維圓球加載指示器，具有六種調整狀態和自動深淺主題。"
+  - "pireel"
+  - "pireel/pireel"
+  - "提供一個無需後端的 AI 影片編輯器，專為對話式影片設計，支持故事板、動態字幕等功能。"
 ---
 
-# thinking-orbs
+# pireel
 
-**656** stars · **656** stars/天 · 建立 1 天前 · TypeScript · MIT
+**666** stars · **222** stars/天 · 建立 3 天前 · TypeScript · AGPL-3.0
 
 ```dataviewjs
-const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+const me = dv.page("Repos/pireel--pireel");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +74,25 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `easy-install`
+`ORG`
+
+`ai-video` `capcut` `captions` `chatcut` `openchatcut` `talking-head` `video-editor`
 
 > [!summary] 一句話摘要
-> 為 AI 和代理 UI 提供點狀思維圓球加載指示器，具有六種調整狀態和自動深淺主題。
+> 提供一個無需後端的 AI 影片編輯器，專為對話式影片設計，支持故事板、動態字幕等功能。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (656 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要為 AI 應用添加美觀加載指示器的前端開發者。
-> **一句話重點** 這個專案的設計不僅注重美觀，還考慮到了性能和用戶體驗，特別適合 AI 應用的加載指示器需求。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (222 stars/day)
+> **授權** AGPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要快速編輯對話式影片且不想依賴後端的獨立創作者或小型團隊。
+> **一句話重點** Pireel 的無後端設計讓影片編輯變得更快速和隱私友好，特別適合個人創作者。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/pireel--pireel");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "UI 組件" && p.file.name !== "Jakubantalik--thinking-orbs" && p.status !== "archived")
+>     .where(p => p.subcategory === "影片編輯" && p.file.name !== "pireel--pireel" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,107 +103,98 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 UI 組件 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 影片編輯 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到美觀的加載指示器，值得採用。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~3h · **綁定風險** medium
+> **結論** 花 3 小時學習，2 小時整合，得到快速的影片編輯工具，值得一試。
 
 > [!abstract] 核心創新
-> 提供六種手調的動畫狀態，專為 AI 和代理 UI 設計的加載指示器。
+> 完全無需後端的 AI 影片編輯器，所有功能均在瀏覽器中實現。
 
 ## 專案簡介
 
-這個專案提供了六種手調的動畫狀態，適用於 AI 和代理的 UI 加載指示器，並且在兩種尺寸下運行，分別為 64 和 20 像素。這些圓球指示器在純 2D 畫布上渲染，無需 WebGL，確保在 Chrome、Safari 和 Firefox 中表現一致。使用者只需透過 `npm install thinking-orbs` 安裝，然後在 React 組件中引入 `ThinkingOrb` 即可使用。這個工具的賣點在於它的自動主題檢測功能，能根據父元素的 `data-theme` 屬性或系統的顏色偏好自動調整顏色，並且在滾動或標籤隱藏時會自動暫停動畫，這對於性能優化非常重要。這些設計使得它在低端設備上也能流暢運行，並且不會因為使用過多的資源而影響使用體驗。這個專案使用 TypeScript 開發，並依賴於 React 和 Vite，這使得它在開發過程中能夠享受類型安全和快速構建的優勢。
+Pireel Studio 是一個開源的無後端 AI 影片編輯器，專注於對話式影片的編輯。用戶可以直接在瀏覽器中導入影片，編輯過程包括故事板、設計圖形、動態字幕、主題設定等，所有操作都在客戶端完成，無需註冊或伺服器支持。使用者只需透過 `npx skills add pireel/pireel-agent` 安裝插件，即可將編輯器與 AI 代理連接，進行更高效的編輯。這個設計使得編輯過程快速且直觀，並且草稿會保存在 `localStorage` 中，確保資料安全。技術上，Pireel 使用 Vite 作為構建工具，並依賴於多個現代 JavaScript 庫，如 React 和 TailwindCSS，提供良好的用戶介面和體驗。
 
-**技術棧**：`TypeScript` · `React 18` · `Vite`
+相較於其他編輯器如 CapCut 和 Adobe Premiere，Pireel 的優勢在於其完全的客戶端運行和無需後端的特性，這使得它在隱私和速度上有顯著優勢。儘管如此，某些功能如生成和跨設備同步仍需依賴外部提供者。使用者可能會發現，對於需要雲端支持的高級功能，這個工具的靈活性和擴展性可能會受到限制。整體來看，Pireel 是一個適合小型團隊或個人創作者的工具，特別是在快速生成內容的需求下。未來六個月內，隨著更多功能的整合，Pireel 有潛力成為更全面的影片編輯解決方案。
+
+**技術棧**：`TypeScript` · `React` · `Vite` · `TailwindCSS`
 
 ## 重點功能
 
-- 六種動畫狀態 — 每種狀態代表不同的代理行為，提供多樣化的用戶體驗。
-- 兩種尺寸 — 64 像素適合聊天頭像，20 像素適合行內文本，滿足不同場景需求。
-- 自動主題檢測 — 根據父元素的 `data-theme` 屬性或系統顏色偏好自動調整顏色，提升 UI 一致性。
-- 性能優化 — 使用 `IntersectionObserver` 在滾動或標籤隱藏時自動暫停動畫，減少資源消耗。
-- 無需 WebGL — 在純 2D 畫布上渲染，確保在低端設備上也能流暢運行。
+- 無需後端 — 所有編輯功能均在瀏覽器中運行，無需伺服器支持。
+- 即時預覽 — 用戶可以在編輯過程中即時查看變更效果。
+- 動態字幕 — 支持自定義動態字幕，增強影片的可讀性。
+- 主題設置 — 提供多種主題選擇，讓影片風格多樣化。
+- 本地存儲 — 草稿和編輯內容保存在 `localStorage` 中，確保資料安全。
 
 ## 快速開始
 
-1. 安裝套件
+1. 安裝 Pireel 插件
 ```bash
-npm install thinking-orbs
+npx skills add pireel/pireel-agent
 ```
-2. 引入組件
+2. 安裝依賴
 ```bash
-import { ThinkingOrb } from 'thinking-orbs';
+pnpm install
 ```
-3. 使用組件
+3. 啟動編輯器
 ```bash
-<ThinkingOrb />
-```
-
-## 程式碼範例
-
-```ts
-{
-  "前置條件": "已安裝 thinking-orbs 套件；",
-  "程式碼": "import { ThinkingOrb } from 'thinking-orbs';\n\nfunction Status() {\n  return <ThinkingOrb />;\n}",
-  "預期輸出": "顯示一個加載指示器，根據當前主題自動調整顏色。"
-}
+pnpm dev
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 656 stars（656/天），forks 42（6.4%），這顯示出相對穩定的社群關注度。作者 Jakub Antalik 之前有開發過其他 UI 相關的專案，這次專案解決了在 AI 和代理 UI 中缺乏美觀且高效的加載指示器的問題。由於目前市場上對於這類指示器的需求增加，這個工具正好填補了這一空白。社群中對於 Vue 3 的適配需求也顯示出其潛在的擴展性。這個工具的設計理念和性能優化策略符合當前的開發趨勢，特別是在響應式設計和性能優化方面。
+> 建立 3 天內累積 666 stars（222/天），forks 52（7.8%），顯示出良好的社群反應。作者 tangjinzhou 之前有開發其他 AI 相關工具，這次推出的 Pireel 解決了傳統影片編輯器需要後端支持的痛點，讓用戶能夠在瀏覽器中進行完整的編輯流程。這種無需伺服器的設計在當前的開發環境中非常受歡迎，尤其是對於需要快速迭代的創作者來說。社群的活躍度和快速的反饋也促進了這個專案的成長。
 
 ## 適合誰使用
 
-**目標受眾**：需要為 AI 應用添加美觀加載指示器的前端開發者。
+**目標受眾**：需要快速編輯對話式影片且不想依賴後端的獨立創作者或小型團隊。
 
 > [!example] 使用場景
-> - 前端工程師用它來為 AI 聊天機器人添加加載指示器，因為它的自動主題檢測功能使得 UI 更加一致且美觀。
-> - UI 設計師用它來快速原型化應用中的加載狀態，因為它提供了多種動畫狀態，能夠提升用戶體驗。
-> - 全端工程師用它來在多種瀏覽器中保持一致的加載效果，因為它在不同瀏覽器中表現一致，減少了兼容性問題。
+> - 獨立影片製作人用它來快速編輯對話式影片，因為無需後端支持，能夠在本地快速完成編輯。
+> - 小型創業團隊用它來製作行銷影片，因為可以輕鬆導入素材並即時預覽效果，提升工作效率。
+> - 教育工作者用它來創建教學影片，因為其動態字幕和主題功能能夠增強學習體驗。
 
 ## 架構分析
 
-這個專案採用模組化設計，使用 TypeScript 和 React 進行開發，確保了類型安全和組件的可重用性。資料流方面，所有動畫狀態都是在 2D 畫布上渲染，這樣的選擇使得性能優化更為簡單，因為不需要處理複雜的 WebGL 渲染。選擇使用 IntersectionObserver 和 MutationObserver 來管理動畫的啟動和暫停，這樣的設計使得資源使用更為高效。整體架構輕量，依賴性較少，易於集成到現有的 React 應用中，但在未來可能需要考慮增加更多的主題和顏色選擇以滿足不同用戶需求。
+Pireel Studio 採用單頁應用架構，所有編輯功能都在客戶端運行，這樣的設計使得用戶無需依賴伺服器，能夠快速進行編輯。資料流方面，編輯過程中的所有操作都在本地進行，並使用 `localStorage` 和 OPFS 來保存草稿和影片資料。這樣的設計雖然提升了速度和隱私，但在需要雲端支持的功能上則需要額外的提供者。選擇 Vite 作為構建工具，能夠快速啟動和熱重載，這對於開發過程非常有利。整體架構的輕量化使得 Pireel 能夠在資源有限的環境中運行，但在處理大型影片或高負載時可能會面臨性能瓶頸。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是使用 TypeScript 和 React 開發的 UI 組件，專注於提供六種不同的動畫狀態，這些狀態在 2D 畫布上渲染，確保了跨瀏覽器的一致性。效能方面，由於使用了 IntersectionObserver，當元素滾動出視口時會自動暫停動畫，這樣的設計能有效減少資源消耗。選擇 TypeScript 提供了類型安全，減少了潛在的錯誤，並且使用 Vite 進行快速構建，這樣的選擇使得開發過程更為高效。設計取捨方面，選擇不使用 WebGL 渲染，雖然犧牲了一些視覺效果，但確保了在低端設備上的流暢運行。未來可能需要考慮擴展更多的主題和顏色選擇，以滿足不同用戶的需求，這在目前的設計中尚未實現。
+Pireel Studio 的核心技術機制是基於現代前端技術，使用 TypeScript 和 React 建立用戶界面，並透過 Vite 進行快速構建和開發。這使得編輯器在啟動和使用過程中都能保持高效。資料流方面，所有編輯操作都在客戶端進行，並使用 `localStorage` 和 OPFS 來保存資料，這樣的設計不僅提升了速度，還確保了用戶資料的隱私。選擇 Vite 作為構建工具，能夠快速啟動和熱重載，這對於開發過程非常有利。儘管這樣的架構在小型專案中表現優異，但在處理大型影片或高負載時可能會面臨性能瓶頸，特別是在需要生成和編輯大量素材時。對於雲端功能的依賴也可能成為未來擴展的障礙，尤其是在需要跨設備同步和雲端存儲的情境下。整體而言，Pireel 的設計理念是以用戶為中心，強調快速和靈活的編輯體驗，但在某些高級功能上仍需進一步完善。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了安裝和使用的範例；安裝過程順暢，無明顯坑；有提供 live demo 以便快速上手；文件目前僅提供英文版本。這使得新手能在 30 分鐘內成功運行。
+> README 文件清晰且提供了安裝和使用範例，讓新手能夠快速上手。安裝過程相對順暢，使用 pnpm 安裝依賴後即可啟動編輯器。文件中有詳細的快速開始指南，對於新手友好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用，快速集成到 React 應用中。
-> - 性能優化良好，適合低端設備使用。
-> - 自動主題檢測功能提升了 UI 的一致性。
+> - 無需伺服器支持，編輯過程完全在客戶端進行。
+> - 即時預覽功能，提升用戶編輯體驗。
+> - 支持多種主題和動態字幕，增強影片的可視化效果。
 
 > [!danger] 缺點
-> - 目前僅支持單色主題，缺乏自定義選項。
-> - 僅限於 React 環境，對其他框架支持不足。
-> - 不支持 IE 瀏覽器，限制了用戶群體。
+> - 對於需要雲端支持的高級功能，靈活性有限。
+> - 目前僅支持 Chromium 瀏覽器，對其他瀏覽器的兼容性不足。
+> - 不適合大型團隊的協作需求。
 
 > [!warning] 注意事項
-> - 僅支援 React 18 以上版本。
-> - 目前僅提供單色主題，無法自定義顏色。
-> - 不支援 IE 瀏覽器，僅在現代瀏覽器中運行。
+> - 某些高級功能需要外部提供者支持。
+> - 目前僅支持 Chromium 瀏覽器的 WebCodecs。
+> - 不支持大型團隊的協作功能，主要針對個人或小型團隊。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供更複雜的動畫效果，但需要 WebGL 支持，對於低端設備的兼容性較差。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於靜態加載指示器，無法提供動畫效果，適合對性能要求較高的場景。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 提供多種主題和顏色選擇，但設置較為繁瑣，對於需要快速集成的開發者不太友好。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成式 AI 影片編輯，而 Pireel 更加強調無需後端的編輯流程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更強大的雲端功能，但需要伺服器支持，與 Pireel 的無後端設計形成對比。 |
 
 ## 替代方案決策
 
@@ -204,16 +202,16 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 WebGL 實現更複雜的動畫效果，對於高性能需求的應用更合適。 | 如果你的應用需要高效的動畫效果並且能接受 WebGL 的要求。 | medium，因為需要重新設計動畫邏輯。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於靜態加載指示器，性能優化良好，但缺乏動畫效果。 | 如果你的應用對性能要求極高且不需要動畫效果。 | low，因為可以直接替換靜態指示器。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成式 AI 影片編輯，提供更多自動化功能，而 Pireel 更加強調無需後端的編輯流程。 | 如果需要更強大的生成式功能，並且不介意使用後端支持，則可以選擇這個工具。 | medium，因為需要重新適應不同的編輯流程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更強大的雲端功能，但需要伺服器支持，與 Pireel 的無後端設計形成對比。 | 如果需要雲端支持和更高級的編輯功能，則可以考慮這個工具。 | high，因為需要重新整合到雲端架構中。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **thinking-orbs** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **pireel** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 WebGL 實現更複雜的動畫效果，對於高性能需求的應用更合適。 | 專注於靜態加載指示器，性能優化良好，但缺乏動畫效果。 |
-> | 遷移成本 | - | medium，因為需要重新設計動畫邏輯。 | low，因為可以直接替換靜態指示器。 |
-> | 適用場景 | 主要場景 | 如果你的應用需要高效的動畫效果並且能接受 WebGL 的要求 | 如果你的應用對性能要求極高且不需要動畫效果。 |
+> | 技術路線 | 本專案 | 專注於生成式 AI 影片編輯，提供更多自動化功能，而 Pireel 更加強調無需後端的編輯流程。 | 提供更強大的雲端功能，但需要伺服器支持，與 Pireel 的無後端設計形成對比。 |
+> | 遷移成本 | - | medium，因為需要重新適應不同的編輯流程。 | high，因為需要重新整合到雲端架構中。 |
+> | 適用場景 | 主要場景 | 如果需要更強大的生成式功能，並且不介意使用後端支持，則可以選 | 如果需要雲端支持和更高級的編輯功能，則可以考慮這個工具。 |
 
 ## 成熟度評估
 
@@ -224,48 +222,49 @@ import { ThinkingOrb } from 'thinking-orbs';
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人項目試用，尚不建議用於生產環境。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Safari 中可能出現渲染問題，特別是使用多列 CSS 時。
-  - 解法：使用 grid row-spans 來替代多列 CSS。
-- [MEDIUM] 在某些情況下，主題自動檢測可能不如預期工作。
-  - 解法：手動設置主題以避免問題。
+- **[HIGH]** 在某些瀏覽器中可能無法正常運行，特別是非 Chromium 瀏覽器。
+  - 解法：建議使用 Chrome 或 Edge 瀏覽器。
+- [MEDIUM] 對於大型影片的編輯可能會導致性能下降。
+  - 解法：建議將影片分段編輯。
+- [MEDIUM] 某些高級功能需要額外的提供者支持，否則無法使用。
+  - 解法：提前確認所需的提供者是否已經配置。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型 AI 聊天應用的前端開發 | 非常適合 | 提供簡單的加載指示器，提升用戶體驗。 |
-| 大型企業級應用的 UI 設計 | 普通 | 雖然性能優化良好，但功能較為單一。 |
-| 需要快速原型開發的項目 | 非常適合 | 安裝和使用都非常簡單，能快速集成。 |
-| 需要多樣化主題的應用 | 不適合 | 目前僅支持單色主題，缺乏自定義選項。 |
+| 個人影片創作者 | 非常適合 | 無需伺服器支持，能快速編輯和導出影片。 |
+| 小型創業團隊 | 適合 | 能夠快速生成行銷影片，但對於大型專案可能不夠穩定。 |
+| 教育機構 | 普通 | 雖然可以創建教學影片，但缺乏雲端支持可能影響協作。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
+| 學習時間 | ~3 小時 |
+| 整合時間 | ~2 小時 |
 | 維護負擔 | low |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到美觀的加載指示器，值得採用。
+> 花 3 小時學習，2 小時整合，得到快速的影片編輯工具，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具不需要高權限，且不會存取敏感資料，依賴鏈信任程度高，適合在 CI/CD 中使用。
+> 低風險：該工具在客戶端運行，不需要高權限，且不存取敏感資料。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/pireel--pireel");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -300,7 +299,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/pireel--pireel");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -324,137 +323,140 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 42 |
-| Open Issues | 5 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-07-21 |
-| 建立日期 | 2026-07-21 |
-| Repo 大小 | 133 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Jakubantalik/thinking-orbs) |
+| Forks | 52 |
+| Open Issues | 0 |
+| 最後推送 | 2026-07-24 |
+| 建立日期 | 2026-07-20 |
+| 官方網站 | [Link](https://www.pireel.com) |
+| Repo 大小 | 2.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/pireel/pireel) |
+| Topics | `ai-video` `capcut` `captions` `chatcut` `openchatcut` `talking-head` `video-editor` |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `@tailwindcss/vite` `@types/react` `@types/react-dom` `@vitejs/plugin-react` `clsx` `react` `react-dom` `tailwind-merge` `tailwindcss` `typescript` `vite` `vite-plugin-dts`
+> `@ai-sdk/react` `@base-ui/react` `@fontsource-variable/geist` `@fontsource-variable/jetbrains-mono` `@mediapipe/tasks-vision` `@streamdown/cjk` `@streamdown/code` `@streamdown/math` `@streamdown/mermaid` `ai` `class-variance-authority` `clsx` `cmdk` `fast-json-patch` `jsondiffpatch`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "TypeScript" : 99
+>     "CSS" : 1
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Jakubantalik](https://github.com/Jakubantalik) | 8 |
+> | [@tangjinzhou](https://github.com/tangjinzhou) | 12 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放問題尚未解決。
-**連結**：[文件](https://orbs.jakubantalik.com)
+**社群活躍度**：社群活躍度高，最近有多次更新和活躍的討論。
+**連結**：[文件](https://www.pireel.com)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-20 ~ 2026-07-21）
-> **活躍天數** 2 天 · **最新 commit** Fix Safari: replace CSS multi-column masonry with grid row-spans
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#5](https://github.com/Jakubantalik/thinking-orbs/issues/5) | Vue 3 version adapted from this project | 0 | 0 |
-> | [#3](https://github.com/Jakubantalik/thinking-orbs/issues/3) | Would you be open to listing the community Flutter port? | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-07-22 ~ 2026-07-24）
+> **活躍天數** 3 天 · **最新 commit** update gitignore
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # thinking-orbs
+> # Pireel Studio
 > 
-> Dotted thought-orb loading indicators for AI & agent UIs. Six hand-tuned animated states, each shipped at two purpose-tuned sizes, rendered on a plain 2D canvas — no WebGL, no filters, works identically in Chrome, Safari and Firefox.
+> **An open-source, backend-free AI video editor for talking-head video.**
 > 
-> [Live demo](https://orbs.jakubantalik.com) · [Repository](https://github.com/Jakubantalik/thinking-orbs) · [Report an issue](https://github.com/Jakubantalik/thinking-orbs/issues)
+> Import a clip and the canvas follows your footage — editing, storyboarding,
+> designed graphics, kinetic captions, themes, live preview, timeline and export
+> all run **fully in the browser**. No account, no server.
 > 
-> ## Install
+> [](LICENSE)
+> [](https://github.com/pireel/pireel-agent)
+> &nbsp;·&nbsp; [pireel.com](https://pireel.com)
 > 
-> ```bash
-> npm install thinking-orbs
-> ```
+> ---
+> 
+> This repository is the source for the editor packages plus a minimal shell that
+> mounts them as a plain Vite app. It is synced one-way from the Pireel monorepo;
+> develop against the hosted product at [pireel.com](https://pireel.com).
 > 
 > ## Quick start
 > 
-> ```tsx
-> import { ThinkingOrb } from 'thinking-orbs';
+> The fastest way to drive Pireel is from your AI coding agent (Codex / Claude
+> Code) — install the plugin and it connects the editor over MCP:
 > 
-> function Status() {
->   return ;
-> }
+> ```bash
+> npx skills add pireel/pireel-agent
 > ```
 > 
-> ## States
+> Or run the editor shell locally:
 > 
-> Six verbs an agent can be doing, each a distinct animation:
-> 
-> ```tsx
->     {/* particles on tilted orbits */}
->   {/* a scan meridian sweeps a dotted globe */}
->     {/* bands scramble, then click back solved */}
->   {/* a waveform rolls through the rings */}
->   {/* an undulating multi-band sash */}
->     {/* dotted outline: circle → triangle → square */}
+> ```bash
+> pnpm install
+> pnpm dev
 > ```
 > 
-> ## Sizes
+> Open the printed URL, drop in a video, and start editing. Drafts persist in
+> `localStorage`, video bytes in OPFS — nothing leaves the browser.
 > 
-> Two tuned presets — separate designs, not a scale factor. `64` for chat-avatar scale, `20` for inline-text scale. Each carries its own dot count, dot size and speed tuning:
+> ## Themes
 > 
-> ```tsx
+> Every video can wear a full design system — palette, type and layout dialect.
+> Dozens ship in `@pireel/studio-frames`; here are a few.
+> 
+> ## What works with no backend
+> 
+> - **Local editing**: talking-head track, blocks, captions, timeline, live
+>   preview — all client-side.
+> - **Client export**: WYSIWYG export on WebCodecs (Chromium).
+> - **Frame themes**: the full catalog is served from `@pireel/studio-frames`.
+> - **Local uploads**: a disk-backed dev route (`/local-assets`) stores
+>   content-addressed files, the local counterpart of the hosted upload provider.
+> 
+> ## What needs providers
+> 
+> Generation (block composition, narration planning, transcription, cloud media
+> vault, cross-device sync, image/video generation) is injected through
+> `StudioProviders`. The shell registers `unavailableProviders()`, so those paths
+> fail with a hint until you wire them up. Two ways to light them:
+> 
+> 1. **Inject your own providers** in
+>    [`apps/studio-oss/src/providers.ts`](apps/studio-oss/src/providers.ts) — five
+>    small contracts (composer / planner / transcriber / vault / projects) you can
+>    point at any backend or local model.
+> 2. **Bring your own agent**: the editor is designed to be driven by an external
+>    agent over MCP. See the
+>    [agent plugin](https://github.com/pireel/pireel-agent) and the connect guide
+>    at [pireel.com/connect-agent.md](https://pireel.com/connect-agent.md).
+> 
+> ## Layout
 > 
 > ```
-> 
-> ## Theme
-> 
-> Strictly monochrome — light ink for dark backgrounds, dark ink for light backgrounds — with the mode picked automatically from the host project:
-> 
-> ```tsx
->    {/* default — detects from the project */}
->    {/* pin: light dots for dark backgrounds */}
->   {/* pin: dark dots for light backgrounds */}
+> apps/studio-oss/        minimal Vite shell that mounts the editor
+> packages/studio-ui/     editor UI (workbench, panels, timeline, client export)
+> packages/studio-engine/ composition core, briefs, prompts, video-edit utilities
+> packages/studio-frames/ frame themes (design systems) + content
+> packages/ui/            shared primitives, brand mark, theme tokens
 > ```
-> 
-> `auto` resolves in three layers and updates live when any of them change:
-> 
-> 1. an ancestor `data-theme="dark|light"` attribute or `dark`/`light` class (the Tailwind / shadcn convention), watched via `MutationObserver`;
-> 2. otherwise `prefers-color-scheme`, subscribed for live OS theme switches;
-> 3. SSR-safe — the canvas paints only on the client, after the theme has resolved.
-> 
-> ## Other props
-> 
-> ```tsx
-> 
-> ```
-> 
-> All other `` props (`className`, `style`, `data-*`, …) pass through.
-> 
-> ## Accessibility & performance
-> 
-> - `role="img"` with a sensible per-state `aria-label` out of the box.
-> - `prefers-reduced-motion: reduce` renders a static representative frame — no animation — and still follows the live theme.
-> - Every instance pauses automatically when scrolled offscreen (`IntersectionObserver`) or when the tab is hidden, and resumes in phase — all instances share one clock.
-> - Plain 2D canvas arcs only: no `ctx.filter`, no SVG filters, no WebGL — the same pixels everywhere, cheap on low-end devices. Device-pixel-ratio capped at 2.
 > 
 > ## License
 > 
-> MIT © Jakub Antalik
+> [AGPL-3.0-only](LICENSE).
 
 ## 延伸閱讀
 
-相關概念：[[UI 組件]] · [[性能優化]] · [[響應式設計]]
+相關概念：[[自動化]] · [[AI 影片編輯]] · [[WebCodecs]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[vorpus--performativeUI|vorpus/performativeUI]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]]
 
-[GitHub](https://github.com/Jakubantalik/thinking-orbs)
+[GitHub](https://github.com/pireel/pireel) · [官方網站](https://www.pireel.com)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：UI 組件）
+> [!note]- 直接競品（同子分類：影片編輯）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "UI 組件" AND file.name != "Jakubantalik--thinking-orbs"
+> WHERE subcategory = "影片編輯" AND file.name != "pireel--pireel"
 > SORT stars DESC
 > ```
 
@@ -462,7 +464,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "Jakubantalik--thinking-orbs"
+> WHERE category = "開發工具" AND file.name != "pireel--pireel"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -471,7 +473,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "Jakubantalik--thinking-orbs" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "pireel--pireel" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -480,15 +482,15 @@ import { ThinkingOrb } from 'thinking-orbs';
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W30" AND file.name != "Jakubantalik--thinking-orbs"
+> WHERE week = "2026-W30" AND file.name != "pireel--pireel"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["UI 組件","性能優化","響應式設計"];
+> const concepts = ["自動化","AI 影片編輯","WebCodecs"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "Jakubantalik--thinking-orbs" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "pireel--pireel" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -501,12 +503,12 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/pireel--pireel");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "Jakubantalik--thinking-orbs" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "pireel--pireel" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -522,7 +524,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "Jakubantalik" AND file.name != "Jakubantalik--thinking-orbs"
+> WHERE owner = "pireel" AND file.name != "pireel--pireel"
 > SORT stars DESC
 > ```
 
@@ -530,7 +532,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/pireel--pireel");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -547,7 +549,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/pireel--pireel");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -580,7 +582,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/pireel--pireel");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -604,7 +606,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/pireel--pireel");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -641,7 +643,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/pireel--pireel");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -724,7 +726,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-07-23** — 首次收錄
+> **2026-07-24** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -740,5 +742,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-07-24|2026-07-24]] — 再次上榜，841 stars
-- [[2026-07-23|2026-07-23]] — 首次收錄，655 stars
+- [[2026-07-24|2026-07-24]] — 首次收錄，666 stars

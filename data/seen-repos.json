@@ -3025,10 +3025,10 @@
   },
   "nethical6/conversation-steganography": {
     "first_seen": "2026-07-20",
-    "last_seen": "2026-07-23",
-    "times_seen": 4,
+    "last_seen": "2026-07-24",
+    "times_seen": 5,
     "stars_first": 829,
-    "stars_last": 1003
+    "stars_last": 1072
   },
   "pablostanley/yoinks": {
     "first_seen": "2026-07-20",
@@ -3053,10 +3053,10 @@
   },
   "lopopolo/harness-engineering": {
     "first_seen": "2026-07-21",
-    "last_seen": "2026-07-23",
-    "times_seen": 3,
+    "last_seen": "2026-07-24",
+    "times_seen": 4,
     "stars_first": 868,
-    "stars_last": 2202
+    "stars_last": 2283
   },
   "MatinSenPai/Aether-GUI": {
     "first_seen": "2026-07-21",
@@ -3081,24 +3081,24 @@
   },
   "MIgHTy-alIeN/MEV-Arbitrage-Bot": {
     "first_seen": "2026-07-22",
-    "last_seen": "2026-07-23",
-    "times_seen": 2,
+    "last_seen": "2026-07-24",
+    "times_seen": 3,
     "stars_first": 739,
-    "stars_last": 920
+    "stars_last": 1195
   },
   "Blaizzy/nativ": {
     "first_seen": "2026-07-22",
-    "last_seen": "2026-07-23",
-    "times_seen": 2,
+    "last_seen": "2026-07-24",
+    "times_seen": 3,
     "stars_first": 647,
-    "stars_last": 768
+    "stars_last": 822
   },
   "Jakubantalik/thinking-orbs": {
     "first_seen": "2026-07-23",
-    "last_seen": "2026-07-23",
-    "times_seen": 1,
+    "last_seen": "2026-07-24",
+    "times_seen": 2,
     "stars_first": 655,
-    "stars_last": 655
+    "stars_last": 841
   },
   "xiejunjie524/handdraw-story-video": {
     "first_seen": "2026-07-23",
@@ -3109,9 +3109,37 @@
   },
   "powerycy/goutoujunshi": {
     "first_seen": "2026-07-23",
-    "last_seen": "2026-07-23",
-    "times_seen": 1,
+    "last_seen": "2026-07-24",
+    "times_seen": 2,
     "stars_first": 548,
-    "stars_last": 548
+    "stars_last": 689
+  },
+  "andrewyng/openworker": {
+    "first_seen": "2026-07-24",
+    "last_seen": "2026-07-24",
+    "times_seen": 1,
+    "stars_first": 1686,
+    "stars_last": 1686
+  },
+  "nyblnet/bento": {
+    "first_seen": "2026-07-24",
+    "last_seen": "2026-07-24",
+    "times_seen": 1,
+    "stars_first": 1171,
+    "stars_last": 1171
+  },
+  "Vincentwei1021/video-shotcraft": {
+    "first_seen": "2026-07-24",
+    "last_seen": "2026-07-24",
+    "times_seen": 1,
+    "stars_first": 1002,
+    "stars_last": 1002
+  },
+  "pireel/pireel": {
+    "first_seen": "2026-07-24",
+    "last_seen": "2026-07-24",
+    "times_seen": 1,
+    "stars_first": 666,
+    "stars_last": 666
   }
 }

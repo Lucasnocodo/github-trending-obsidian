@@ -7,9 +7,9 @@ language: Python
 license: CC-BY-4.0
 description: "🐎 Ryan Lopopolo’s anthology, field guide, and agent context bundle for harness engineering"
 homepage: "https://openai.com/index/harness-engineering/"
-stars: 2202
-stars_per_day: 551
-forks: 221
+stars: 2283
+stars_per_day: 457
+forks: 229
 open_issues: 1
 created: 2026-07-18
 pushed_at: 2026-07-18
@@ -30,8 +30,8 @@ use_case: "提升代理輸出，透過塑造環境來改善代理的運作。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-07-26"
+appearances: 4
+next_review: "2026-07-27"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-21"
-star_history: "2026-07-21:868,2026-07-22:1727,2026-07-23:2202"
+star_history: "2026-07-21:868,2026-07-22:1727,2026-07-23:2202,2026-07-24:2283"
 tags:
   - github
   - "category/開發工具"
@@ -741,6 +741,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-24|2026-07-24]] — 再次上榜，2.3k stars
 - [[2026-07-23|2026-07-23]] — 再次上榜，2.2k stars
 - [[2026-07-22|2026-07-22]] — 再次上榜，1.7k stars
 - [[2026-07-21|2026-07-21]] — 首次收錄，868 stars

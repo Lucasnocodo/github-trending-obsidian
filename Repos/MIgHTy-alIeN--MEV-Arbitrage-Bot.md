@@ -7,12 +7,12 @@ language: Solidity
 license: NOASSERTION
 description: "An arbitrage bot is a smart contract connected to an external automation script that controls its operation."
 homepage: ""
-stars: 920
-stars_per_day: 184
-forks: 650
-open_issues: 0
+stars: 1195
+stars_per_day: 199
+forks: 854
+open_issues: 1
 created: 2026-07-17
-pushed_at: 2026-07-23
+pushed_at: 2026-07-24
 first_seen: 2026-07-22
 week: "2026-W30"
 month: "2026-07"
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-22
 use_case: "自動化套利機器人，透過智能合約在 Uniswap 之間尋找套利機會。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-30"
+appearances: 3
+next_review: "2026-07-31"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-22"
-star_history: "2026-07-22:739,2026-07-22:739,2026-07-23:920,2026-07-23:920"
+star_history: "2026-07-22:739,2026-07-22:739,2026-07-23:920,2026-07-23:920,2026-07-24:1195"
 tags:
   - github
   - "category/其他"
@@ -743,5 +743,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-24|2026-07-24]] — 再次上榜，1.2k stars
 - [[2026-07-23|2026-07-23]] — 再次上榜，920 stars
 - [[2026-07-22|2026-07-22]] — 首次收錄，739 stars
