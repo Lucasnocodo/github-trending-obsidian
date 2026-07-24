@@ -7,8 +7,8 @@ language: JavaScript
 license: N/A
 description: "Scroll-scrubbed 'fly through the world' burger demo, generated with Kubeez. Live: meepcastana.github.io/kubeez-scroll-world-video"
 homepage: "https://kubeezmedia.github.io/kubeez-scroll-world-video/"
-stars: 607
-stars_per_day: 67
+stars: 595
+stars_per_day: 60
 forks: 5
 open_issues: 0
 created: 2026-07-13
@@ -16,8 +16,8 @@ pushed_at: 2026-07-14
 first_seen: 2026-07-20
 week: "2026-W30"
 month: "2026-07"
-category: "Web 應用"
-subcategory: "互動展示"
+category: "開發工具"
+subcategory: "動畫工具"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-20
-use_case: "透過滾動滑動鏡頭，帶你飛越迷你漢堡世界的互動式展示。"
+use_case: "透過滾動滑動攝影機，展示一個連續的迷你漢堡世界動畫。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,21 +42,21 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-20"
-star_history: "2026-07-20:660,2026-07-20:660,2026-07-21:632,2026-07-22:618,2026-07-23:607"
+star_history: "2026-07-20:660,2026-07-20:660,2026-07-21:632,2026-07-22:618,2026-07-23:607,2026-07-24:595"
 tags:
   - github
-  - "category/web_應用"
+  - "category/開發工具"
   - "lang/javascript"
   - org
 aliases:
   - "kubeez-scroll-world-video"
   - "KubeezMedia/kubeez-scroll-world-video"
-  - "透過滾動滑動鏡頭，帶你飛越迷你漢堡世界的互動式展示。"
+  - "透過滾動滑動攝影機，展示一個連續的迷你漢堡世界動畫。"
 ---
 
 # kubeez-scroll-world-video
 
-**607** stars · **67** stars/天 · 建立 9 天前 · JavaScript · 未標註授權
+**595** stars · **60** stars/天 · 建立 10 天前 · JavaScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/KubeezMedia--kubeez-scroll-world-video");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 透過滾動滑動鏡頭，帶你飛越迷你漢堡世界的互動式展示。
+> 透過滾動滑動攝影機，展示一個連續的迷你漢堡世界動畫。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (67 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 9 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 希望創建互動式網頁展示的前端開發者和設計師。
-> **一句話重點** 這個專案展示了如何利用滾動行為創造出引人入勝的互動式網頁體驗。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (60 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 10 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要創建高互動性網頁動畫的前端開發者和市場行銷專家。
+> **一句話重點** 這個專案展示了如何利用滾動事件創造引人入勝的動畫效果，為網頁設計帶來新的可能性。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/KubeezMedia--kubeez-scroll-world-video");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "互動展示" && p.file.name !== "KubeezMedia--kubeez-scroll-world-video" && p.status !== "archived")
+>     .where(p => p.subcategory === "動畫工具" && p.file.name !== "KubeezMedia--kubeez-scroll-world-video" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,38 +96,38 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 互動展示 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 動畫工具 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，3 小時整合，得到一個引人入勝的互動展示，值得投資。
+> **結論** 花 5 小時學習，10 小時整合，得到流暢的動畫效果，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案的創新在於將滾動行為與影片播放無縫結合，創造出沉浸式的互動體驗。
+> 這個專案的創新點在於無縫的場景過渡技術，能夠在用戶滾動時保持連貫的視覺體驗。
 
 ## 專案簡介
 
-這個專案提供了一個獨特的互動式網頁體驗，使用者透過滾動滑動鏡頭，讓預先渲染的影片在迷你漢堡世界中流暢移動。每個場景都是透過 Kubeez 平台生成的，並以連續的方式呈現，沒有明顯的切換。核心機制是將滾動位置映射到影片的 `currentTime`，使得滾動動作直接驅動鏡頭前進。使用者在滾動時會看到市場、烤架、櫃檯和漢堡等場景，並且每個場景之間有專門的過渡片段，這樣整個體驗看起來就像是一個連續的飛行。這種設計使得使用者能夠沉浸在這個虛擬世界中，並且感受到流暢的視覺效果。技術上，這個專案使用了 JavaScript 和 HTML 來構建，並利用 Python 來提供本地伺服器支持。
+這個專案的核心機制是利用滾動事件來控制攝影機的運動，實現一個無縫的動畫效果。用戶在滾動時，實際上是在驅動一個預渲染的視頻，這些視頻片段是通過 Kubeez 平台生成的，並且每個場景之間都有專門的過渡片段，讓整個過程看起來如同一個連續的飛行。這樣的設計不僅提升了用戶的沉浸感，也避免了傳統網頁滾動的切換感。關鍵的指令是 `mountKubeezWorld()`，這個函數將所有的場景和過渡片段連接起來，並處理滾動到時間的映射。技術上，這個專案使用了 JavaScript 和 HTML，並依賴於 Kubeez 的生成技術，無需外部工具，這使得整體架構輕量且高效。
 
-這樣的架構使得專案能夠在靜態主機上運行，並且支持平滑的影片加載和播放。與其他類似工具相比，例如 0x0funky/agent-sprite-forge，這個專案的獨特之處在於其無縫的場景過渡和互動性，這使得它在展示上更具吸引力。實際使用中，這個專案能夠處理多個場景的影片，並且在性能上表現良好，適合用於各種行業的展示需求。對於需要創造沉浸式體驗的團隊來說，這是一個值得考慮的選擇。未來，隨著技術的進步，這個專案可能會進一步擴展其功能，支持更多的自定義選項和場景。
+與其他類似工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，這個專案的獨特之處在於它的無縫過渡技術，能夠在不同場景之間保持流暢的視覺體驗，而不是簡單的場景切換。實際使用中，這個專案能夠處理的視頻片段數量取決於 Kubeez 的計算資源，並且在靜態主機上也能保持平滑的播放效果。這個專案目前處於活躍開發階段，未來可能會增加更多的場景和過渡效果。對於小型團隊或個人開發者來說，這是一個值得嘗試的工具，特別是在需要創造引人入勝的視覺效果時。
 
 **技術棧**：`JavaScript` · `HTML` · `Python`
 
 ## 重點功能
 
-- 滾動驅動鏡頭 — 使用者滾動頁面時，鏡頭隨著滾動位置在影片中移動。
-- 無縫過渡效果 — 每個場景之間有專門的過渡片段，確保流暢的視覺體驗。
-- 完全自動化生成 — 所有場景和影片均由 Kubeez 平台自動生成，無需外部工具。
-- 支援多場景展示 — 可輕鬆添加多個場景，適用於不同主題的展示需求。
-- 簡易本地運行 — 使用 Python 提供的 HTTP 伺服器可輕鬆在本地測試。
+- 滾動驅動的攝影機 — 用戶滾動時控制攝影機在預渲染視頻中的位置。
+- 無縫過渡效果 — 使用專門的過渡片段來保持視覺連貫性，避免切換時的突兀感。
+- 簡單的配置 — 只需一個配置對象即可設置所有場景和過渡片段。
+- 高效的視頻編碼 — 使用 `crf 20` 和小 GOP 設置，確保視頻質量和加載速度。
+- 支持靜態主機 — 即使在 GitHub Pages 等靜態主機上也能平滑播放。
 
 ## 快速開始
 
-1. 克隆專案並進入目錄
+1. 克隆專案
 ```bash
-git clone https://github.com/KubeezMedia/kubeez-scroll-world-video.git && cd kubeez-scroll-world-video
+git clone https://github.com/KubeezMedia/kubeez-scroll-world-video.git
 ```
 2. 啟動本地伺服器
 ```bash
@@ -135,69 +135,75 @@ python -m http.server 8080
 ```
 3. 在瀏覽器中打開
 ```bash
-open http://localhost:8080
+http://localhost:8080
 ```
 
 ## 程式碼範例
 
 ```js
-{
-  "前置條件": "確保已經安裝 Kubeez 並配置好環境。",
-  "指令": "mountKubeezWorld(document.getElementById('world'), { brand: { name: 'Smash & Co.' }, sections: [ /* market, grill, counter, burger — copy + accent per scene */ ], connectors: [ 'assets/vid/conn1.mp4', 'assets/vid/conn2.mp4', 'assets/vid/conn3.mp4' ], });",
-  "預期輸出": "將在指定的 DOM 元素中渲染出互動式的漢堡世界展示。"
-}
+[
+  "# 前置條件：已經在 HTML 中引入 Kubeez JS 庫",
+  "mountKubeezWorld(document.getElementById('world'), {",
+  "  brand: { name: 'Smash & Co.' },",
+  "  sections: [ /* market, grill, counter, burger — copy + accent per scene */ ],",
+  "  connectors: [ 'assets/vid/conn1.mp4', 'assets/vid/conn2.mp4', 'assets/vid/conn3.mp4' ],",
+  "});",
+  "# 預期輸出：在滾動時展示連續的漢堡世界動畫"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 9 天內累積 607 stars（67/天），forks 5（0.8%），這顯示出穩定的增長。作者 MeepCastana 之前有其他相關作品，這個專案解決了傳統網頁展示的沉悶問題，提供了一種新的互動方式。社群對於這種創新的展示方式反應熱烈，可能是因為它結合了視覺藝術與技術，吸引了許多設計師和開發者的注意。技術上，這樣的互動展示在現今的網頁設計中越來越受重視，尤其是在需要吸引觀眾的行業中。
+> 建立 10 天內累積 595 stars（59.5/天），forks 5（0.8%），這顯示出穩定的增長。作者 MeepCastana 在視覺效果和動畫領域有豐富的經驗，這個專案解決了傳統網頁動畫中常見的切換問題，提供了一種更流暢的用戶體驗。近期的推廣活動和社群討論也可能促進了這個專案的曝光。隨著網頁動畫需求的增加，這種創新的解決方案正好滿足了市場需求。forks/stars 比率較低，顯示出使用者對於這個專案的興趣主要集中在觀察和試用階段。
 
 ## 適合誰使用
 
-**目標受眾**：希望創建互動式網頁展示的前端開發者和設計師。
+**目標受眾**：需要創建高互動性網頁動畫的前端開發者和市場行銷專家。
 
 > [!example] 使用場景
-> - 網頁設計師用它來創建互動式產品展示，因為這種方式能有效吸引訪客的注意力，提升轉換率。
-> - 行銷團隊用它來展示品牌故事，因為流暢的視覺效果能讓觀眾更容易記住品牌。
-> - 教育工作者用它來製作互動式教學內容，因為這種沉浸式的學習方式能提高學生的參與感。
+> - 前端開發者用它來創建一個引人入勝的產品展示頁面，因為這樣的動畫效果能夠提升用戶的互動性和留存率。
+> - 市場行銷團隊用它來展示品牌故事，因為這種沉浸式的視覺效果能夠更好地吸引潛在客戶的注意。
+> - 獨立開發者用它來製作個人作品集，因為這樣的工具能夠快速生成高質量的動畫，而不需要專業的動畫技能。
 
 ## 架構分析
 
-這個專案的架構基於一個簡單的 JavaScript 引擎，負責處理滾動事件和影片播放。選擇使用原生 JavaScript 而非框架，因為這樣可以減少依賴，提升性能。資料流方面，影片作為 Blob 加載，這樣即使在靜態主機上也能實現平滑播放。這種設計的代價是需要用戶在本地伺服器上運行，而無法直接在檔案系統中運行。擴展性方面，這個架構能夠輕鬆添加新的場景和過渡效果，但在處理大量影片時可能會遇到性能瓶頸。
+這個專案採用了一個輕量級的架構，主要由一個 JavaScript 引擎和一系列預渲染的視頻片段組成。每個視頻片段都是獨立生成的，並且通過滾動事件來控制播放進度。這樣的設計使得整體系統能夠在靜態主機上運行，而不需要複雜的伺服器配置。
+
+過渡效果的實現依賴於精確的幀匹配，這意味著在生成視頻時需要特別注意每個場景的邊界，這樣才能保證過渡的流暢性。這種方法的代價是需要較高的計算資源來生成高質量的視頻片段，特別是在場景數量增多的情況下。整體而言，這個架構在性能和視覺效果之間取得了良好的平衡。
 
 ## 技術深入分析
 
-這個專案的核心技術在於將滾動事件與影片播放進行映射，使用者的每一次滾動都直接影響影片的播放進度。這種設計使得使用者能夠在互動中感受到流暢的視覺效果。影片的生成使用了 Kubeez 平台，這意味著所有的內容都可以在一個統一的環境中創建，減少了對外部工具的依賴。效能方面，由於使用 Blob 加載影片，這使得即使在靜態主機上也能實現平滑的播放體驗。設計上選擇了原生 JavaScript，這樣可以避免引入額外的框架，降低了學習曲線和維護成本。技術風險方面，對於大量影片的處理可能會導致性能瓶頸，尤其是在低性能設備上。整合方面，這個專案可以輕鬆與現有的網頁設計流程結合，並且對於 CI/CD pipeline 的友好度也相對較高，因為它的依賴性很低。
+這個專案的核心技術機制是將滾動事件映射到視頻播放的時間，這使得用戶的互動能夠直接影響視覺內容的呈現。使用的技術包括 JavaScript 和 HTML，並依賴於 Kubeez 平台生成的視頻。這樣的設計確保了視頻的高質量和流暢性，特別是在過渡效果的實現上，通過精確的幀匹配來避免視覺上的切換感。效能方面，這個專案能夠在靜態主機上運行，這意味著即使在資源有限的環境中也能保持良好的用戶體驗。選擇 JavaScript 作為主要開發語言，使得整體架構輕量且易於維護，但也意味著在某些情況下可能會面臨性能瓶頸。技術風險方面，依賴於 Kubeez 平台可能會導致未來的兼容性問題，特別是在平台更新或變更時。整合方面，這個專案能夠輕鬆地與現有的前端框架（如 React 或 Vue）結合，但可能需要額外的適配工作來處理滾動事件的映射。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且詳細，提供了完整的使用說明和範例。安裝過程相對順暢，但需要注意必須在 HTTP 環境下運行。文件目前僅提供英文，可能對非英語使用者造成一定的障礙。
+> README 文件提供了清晰的使用說明和範例，安裝過程相對順暢，但需要注意必須在 HTTP 環境中運行。整體上，對於新手來說，花 30 分鐘可以順利運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供沉浸式的互動體驗，吸引使用者注意。
-> - 無需外部工具，所有內容均可在 Kubeez 平台上生成。
-> - 流暢的場景過渡，提升整體視覺效果。
+> - 提供流暢的用戶體驗，無縫過渡提升視覺效果。
+> - 簡單的配置和使用，適合快速開發。
+> - 能夠在靜態主機上運行，降低了部署成本。
 
 > [!danger] 缺點
-> - 需要 Kubeez 帳號，對於不想註冊的使用者來說不方便。
-> - 影片生成過程可能消耗較多的資源和時間。
-> - 僅支援 HTTP 環境，限制了使用場景。
+> - 依賴於 Kubeez 平台，無法使用自定義內容生成。
+> - 對於大型項目，生成視頻的成本可能較高。
+> - 需要在 HTTP 環境中運行，限制了使用場景。
 
 > [!warning] 注意事項
-> - 僅支援在 HTTP 環境下運行，無法直接在本地檔案系統中運行。
-> - 需要 Kubeez 帳號來生成和管理內容。
-> - 影片生成過程可能需要消耗相對較多的 Kubeez 積分。
+> - 僅支持在 HTTP 環境中運行，無法直接從本地文件系統啟動。
+> - 需要使用 Kubeez 平台生成內容，無法使用外部工具。
+> - 對於大型視頻片段，可能會影響加載時間和性能。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成動畫角色，而本專案則是針對互動式場景展示，適合不同的使用情境。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供的是靜態的場景展示，而本專案的互動性和流暢性使其更具吸引力。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的動畫生成能力，但主要集中在角色動畫，而非場景過渡。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於靜態圖像生成，缺乏動態過渡效果，適合靜態展示。 |
 
 ## 替代方案決策
 
@@ -205,16 +211,16 @@ open http://localhost:8080
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於生成動畫角色，使用的是基於圖形的渲染，而本專案則是針對互動式場景展示，使用影片作為主要媒介。 | 如果你的專案需要創建動畫角色而非場景展示，則應選擇這個工具。 | medium，因為需要重新設計內容生成的流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供靜態的場景展示，主要依賴於圖像而非影片，而本專案則提供流暢的互動體驗。 | 如果你的需求是靜態展示而非互動體驗，則可以考慮這個工具。 | low，因為可以直接使用靜態資源。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色動畫生成，使用不同的動畫技術，適合需要角色互動的場景。 | 如果你的專案需要強調角色的動態表現，而不僅僅是場景過渡。 | medium，因為需要重新設計動畫流程。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 主要生成靜態圖像，缺乏動態過渡效果，適合靜態展示。 | 如果你的需求主要是靜態展示，而不需要動態交互。 | low，因為可以直接使用靜態資源。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **kubeez-scroll-world-video** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這個工具專注於生成動畫角色，使用的是基於圖形的渲染，而本專案則是針對互動式場景展示，使用影片作為主要媒介。 | boneyard 提供靜態的場景展示，主要依賴於圖像而非影片，而本專案則提供流暢的互動體驗。 |
-> | 遷移成本 | - | medium，因為需要重新設計內容生成的流程。 | low，因為可以直接使用靜態資源。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要創建動畫角色而非場景展示，則應選擇這個工具。 | 如果你的需求是靜態展示而非互動體驗，則可以考慮這個工具。 |
+> | 技術路線 | 本專案 | 專注於角色動畫生成，使用不同的動畫技術，適合需要角色互動的場景。 | 主要生成靜態圖像，缺乏動態過渡效果，適合靜態展示。 |
+> | 遷移成本 | - | medium，因為需要重新設計動畫流程。 | low，因為可以直接使用靜態資源。 |
+> | 適用場景 | 主要場景 | 如果你的專案需要強調角色的動態表現，而不僅僅是場景過渡。 | 如果你的需求主要是靜態展示，而不需要動態交互。 |
 
 ## 成熟度評估
 
@@ -225,44 +231,44 @@ open http://localhost:8080
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合用於小型專案或實驗性質的展示，不建議用於生產環境的核心功能。
+> 適合小型專案試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些瀏覽器中，影片加載速度可能較慢，影響使用體驗。
-  - 解法：確保使用最新版本的瀏覽器，並提前加載影片。
-- [MEDIUM] 過渡效果在某些設備上可能不夠流暢。
-  - 解法：調整過渡的持續時間，確保其平滑。
-- **[HIGH]** 需要確保所有影片都已正確生成，否則會導致顯示錯誤。
-  - 解法：在生成影片後進行測試，確保每個場景都能正常播放。
+- [MEDIUM] 在某些瀏覽器中，滾動事件可能會有延遲，導致動畫不同步。
+  - 解法：確保使用最新版本的瀏覽器，並測試不同的滾動設置。
+- **[HIGH]** 生成視頻的時間可能較長，特別是在高解析度下。
+  - 解法：考慮降低解析度以加快生成速度。
+- **[HIGH]** 在靜態主機上可能會遇到加載速度慢的問題。
+  - 解法：使用 CDN 加速視頻資源的加載。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 需要創建互動式產品展示的行銷團隊 | 非常適合 | 因為流暢的視覺效果能有效吸引觀眾注意。 |
-| 希望展示品牌故事的設計師 | 適合 | 這種互動方式能讓觀眾更容易記住品牌。 |
-| 教育機構希望提升學生參與感的教師 | 普通 | 雖然有趣，但可能不適合所有教學內容。 |
-| 需要靜態展示的企業 | 不適合 | 這個工具專注於互動性，靜態展示效果不佳。 |
+| 小型創業公司的產品展示頁面 | 非常適合 | 能夠快速創建引人入勝的視覺效果，提升用戶互動。 |
+| 大型企業的品牌故事頁面 | 適合 | 提供流暢的動畫效果，但可能需要更多的視頻資源。 |
+| 個人作品集展示 | 非常適合 | 簡單的配置和使用，能夠快速展示創意。 |
+| 需要高性能動畫的遊戲開發 | 不適合 | 性能需求較高，可能無法滿足即時渲染的需求。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~3 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，3 小時整合，得到一個引人入勝的互動展示，值得投資。
+> 花 5 小時學習，10 小時整合，得到流暢的動畫效果，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具不需要高權限，且不會存取敏感資料。依賴鏈的信任程度高，適合在 CI/CD pipeline 中使用。
+> 低風險：這個工具不需要高權限運行，且不會存取敏感資料，適合在 CI/CD pipeline 中使用。
 
 ## 健康度儀表板
 
@@ -490,19 +496,19 @@ open http://localhost:8080
 
 ## 延伸閱讀
 
-相關概念：[[互動展示]] · [[視覺效果]] · [[網頁設計]]
+相關概念：[[動畫工具]] · [[視覺效果]] · [[網頁互動]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[nolangz--pixel2motion|nolangz/pixel2motion]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]]
 
 [GitHub](https://github.com/KubeezMedia/kubeez-scroll-world-video) · [官方網站](https://kubeezmedia.github.io/kubeez-scroll-world-video/)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：互動展示）
+> [!note]- 直接競品（同子分類：動畫工具）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "互動展示" AND file.name != "KubeezMedia--kubeez-scroll-world-video"
+> WHERE subcategory = "動畫工具" AND file.name != "KubeezMedia--kubeez-scroll-world-video"
 > SORT stars DESC
 > ```
 
@@ -510,7 +516,7 @@ open http://localhost:8080
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Web 應用" AND file.name != "KubeezMedia--kubeez-scroll-world-video"
+> WHERE category = "開發工具" AND file.name != "KubeezMedia--kubeez-scroll-world-video"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -534,7 +540,7 @@ open http://localhost:8080
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["互動展示","視覺效果","網頁設計"];
+> const concepts = ["動畫工具","視覺效果","網頁互動"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "KubeezMedia--kubeez-scroll-world-video" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

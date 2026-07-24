@@ -2,14 +2,14 @@
 tags:
   - concept
 aliases:
-  - "WebCodecs"
+  - "AIOps"
 ---
 
-# WebCodecs
+# AIOps
 
 ## 是什麼
 
-WebCodecs 是一種網頁技術，允許開發者在瀏覽器中直接編解碼音視頻資料。這使得網頁應用能更流暢地處理媒體內容，提升使用者體驗，特別是在串流和遊戲應用中。它與 WebRTC 和 MediaSource Extensions 一起使用。
+AIOps 是將人工智慧應用於 IT 運營的技術，旨在透過數據分析和自動化來提升運營效率。它能即時偵測問題並提供解決方案，幫助企業更快地回應系統異常。常見平台有 Splunk 和 Moogsoft。
 
 ## 快速統計
 

@@ -2,14 +2,14 @@
 tags:
   - concept
 aliases:
-  - "WebCodecs"
+  - "AI 動畫"
 ---
 
-# WebCodecs
+# AI 動畫
 
 ## 是什麼
 
-WebCodecs 是一種網頁技術，允許開發者在瀏覽器中直接編解碼音視頻資料。這使得網頁應用能更流暢地處理媒體內容，提升使用者體驗，特別是在串流和遊戲應用中。它與 WebRTC 和 MediaSource Extensions 一起使用。
+AI 動畫是利用人工智慧技術自動生成或改進動畫內容的過程。這項技術可以大幅降低動畫製作的時間和成本，並且讓創作者更專注於創意發想。常見的工具有 Adobe Character Animator 和 DeepMotion。
 
 ## 快速統計
 

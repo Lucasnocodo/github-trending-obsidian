@@ -550,7 +550,7 @@ video-shotcraft 最常與 Remotion 框架搭配使用，處於視頻生成的開
 
 相關概念：[[動態設計]] · [[視頻生成]] · [[AI 代理]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[Robbyant--lingbot-video|Robbyant/lingbot-video]] · [[xiejunjie524--handdraw-story-video|xiejunjie524/handdraw-story-video]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[Robbyant--lingbot-video|Robbyant/lingbot-video]] · [[xiejunjie524--handdraw-story-video|xiejunjie524/handdraw-story-video]] · [[Blaizzy--nativ|Blaizzy/nativ]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]]
 
 [GitHub](https://github.com/Vincentwei1021/video-shotcraft) · [官方網站](https://vincentwei1021.github.io/video-shotcraft/)
 

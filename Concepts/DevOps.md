@@ -2,14 +2,14 @@
 tags:
   - concept
 aliases:
-  - "WebCodecs"
+  - "DevOps"
 ---
 
-# WebCodecs
+# DevOps
 
 ## 是什麼
 
-WebCodecs 是一種網頁技術，允許開發者在瀏覽器中直接編解碼音視頻資料。這使得網頁應用能更流暢地處理媒體內容，提升使用者體驗，特別是在串流和遊戲應用中。它與 WebRTC 和 MediaSource Extensions 一起使用。
+DevOps 是一種結合開發（Dev）和運營（Ops）的文化和實踐，旨在提高軟體開發和交付的速度與品質。透過自動化和協作，團隊能更快速地推出新功能，提升用戶體驗。流行的工具有 Jenkins 和 Docker。
 
 ## 快速統計
 
