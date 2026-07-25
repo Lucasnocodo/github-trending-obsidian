@@ -9,7 +9,7 @@ description: "Dotted thought-orb loading indicators for AI & agent UIs — six t
 homepage: ""
 stars: 936
 stars_per_day: 312
-forks: 70
+forks: 71
 open_issues: 6
 created: 2026-07-21
 pushed_at: 2026-07-21
@@ -17,7 +17,7 @@ first_seen: 2026-07-23
 week: "2026-W30"
 month: "2026-07"
 category: "開發工具"
-subcategory: "UI 組件"
+subcategory: "UI 元素"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-23
-use_case: "提供 AI 和代理用戶介面的圓點思考球加載指示器，具備六種調整狀態和自動深淺色主題。"
+use_case: "提供 AI 和代理 UI 的圓點思維載入指示器，具備六種調整狀態和兩種尺寸，能自動適應深色/淺色主題。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-23"
-star_history: "2026-07-23:655,2026-07-23:656,2026-07-24:841,2026-07-24:841,2026-07-25:936"
+star_history: "2026-07-23:655,2026-07-23:656,2026-07-24:841,2026-07-24:841,2026-07-25:936,2026-07-25:936"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "thinking-orbs"
   - "Jakubantalik/thinking-orbs"
-  - "提供 AI 和代理用戶介面的圓點思考球加載指示器，具備六種調整狀態和自動深淺色主題。"
+  - "提供 AI 和代理 UI 的圓點思維載入指示器，具備六種調整狀態和兩種尺寸，能自動適應深色/淺色主題。"
 ---
 
 # thinking-orbs
 
-**841** stars · **421** stars/天 · 建立 2 天前 · TypeScript · MIT
+**936** stars · **312** stars/天 · 建立 3 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Jakubantalik--thinking-orbs");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供 AI 和代理用戶介面的圓點思考球加載指示器，具備六種調整狀態和自動深淺色主題。
+> 提供 AI 和代理 UI 的圓點思維載入指示器，具備六種調整狀態和兩種尺寸，能自動適應深色/淺色主題。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (421 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 2 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要為 AI 應用添加加載指示器的前端開發者，尤其是使用 React 的團隊。
-> **一句話重點** 這個專案的創新在於簡化了加載指示器的使用，並提供了自動主題適應的功能，讓開發者能夠快速提升用戶介面的互動性。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (312 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要在 React 應用中實現美觀載入指示器的前端開發者。
+> **一句話重點** 這個專案的設計理念是簡約而高效，專注於提供美觀且性能優化的載入指示器。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Jakubantalik--thinking-orbs");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "UI 組件" && p.file.name !== "Jakubantalik--thinking-orbs" && p.status !== "archived")
+>     .where(p => p.subcategory === "UI 元素" && p.file.name !== "Jakubantalik--thinking-orbs" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,32 +96,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 UI 組件 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 UI 元素 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，得到簡單易用的加載指示器，值得嘗試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
+> **結論** 花 2 小時學習，1 小時整合，得到美觀的載入指示器，值得。
 
 > [!abstract] 核心創新
-> 提供六種獨特的圓點加載動畫，並自動適應主題顏色。
+> 提供六種手調動畫狀態的圓點載入指示器，專為 AI 和代理 UI 設計。
 
 ## 專案簡介
 
-這個專案提供了六種手動調整的圓點思考球加載指示器，專為 AI 和代理用戶介面設計。使用者只需安裝 `thinking-orbs`，並在 React 組件中引入 `ThinkingOrb`，即可輕鬆使用這些動畫指示器。每個指示器有獨特的動畫效果，能夠在不同的主題下自動調整顏色，並且在性能上優化，使用純 2D Canvas 渲染，避免了 WebGL 的複雜性。這樣的設計使得它在各種瀏覽器中表現一致，並且在低端設備上也能流暢運行。它的主要賣點在於簡單易用且具備多樣化的動畫效果，讓開發者能夠快速提升用戶介面的互動性。
+這個專案提供了一種圓點思維載入指示器，專為 AI 和代理 UI 設計。用戶可以選擇六種不同的動畫狀態，這些狀態在一個簡單的 2D 畫布上渲染，無需 WebGL 或濾鏡，確保在 Chrome、Safari 和 Firefox 上表現一致。安裝非常簡單，只需執行 `npm install thinking-orbs`，然後在 React 組件中導入並使用 `ThinkingOrb`。這個工具的賣點在於其自動主題適應功能，能根據父元素的 `data-theme` 屬性或系統的配色方案自動調整顏色，這對於需要在不同主題下保持一致性的 UI 特別有用。技術上，專案使用 TypeScript 和 Vite 作為構建工具，並且依賴於 React 18 以上版本，這樣的選擇使得它能夠充分利用現代前端技術的優勢。
 
-這個工具使用 TypeScript 開發，並依賴 React 和 Vite 進行構建，確保了現代化的開發體驗。與其他加載指示器相比，如 `0x0funky/agent-sprite-forge` 和 `0xGF/boneyard`，這個專案專注於簡單的 2D 動畫，並且提供了自動主題切換的功能，這在多數加載指示器中並不常見。使用者在使用過程中可能會發現，這些指示器在滾動或隱藏標籤時會自動暫停，這有助於節省資源。這個專案目前處於早期階段，對於小型專案或需要快速原型的團隊非常合適。未來可能會增加更多的動畫效果和自定義選項。
+與其他類似工具相比，如 `0x0funky/agent-sprite-forge` 和 `0xGF/boneyard`，這個專案專注於簡約的 2D 動畫，而不是複雜的 3D 效果，這使得它在低端設備上也能流暢運行。使用上，這個工具的性能表現良好，因為它在滾動離開螢幕時會自動暫停，並且在標籤被隱藏時也會暫停，這樣可以節省資源。對於小型團隊或個人開發者來說，這是一個非常合適的選擇，因為它的安裝和使用都非常簡單，並且不需要額外的配置。未來六個月內，隨著對動畫和 UI 美學的需求增加，這個專案可能會吸引更多的使用者和貢獻者。
 
-**技術棧**：`TypeScript 5.3.0` · `React 18.2.0` · `Vite 5.0.0`
+**技術棧**：`TypeScript 5.3.0` · `React 18` · `Vite 5.0.0`
 
 ## 重點功能
 
-- 六種動畫狀態 — 每種狀態代表不同的代理行為，提供多樣化的用戶反饋。
-- 兩種尺寸選擇 — 分別為 64px 和 20px，適合不同的使用場景。
-- 自動主題切換 — 根據主題自動調整顏色，支持深色和淺色模式。
-- 性能優化 — 使用純 2D Canvas 渲染，避免了 WebGL 的複雜性，適合低端設備。
-- 無需額外依賴 — 透過 React 和 Vite 進行構建，簡化了開發流程。
+- 六種動畫狀態 — 每種狀態代表不同的動作，增強用戶體驗。
+- 兩種尺寸 — 提供 64px 和 20px 兩種設計，適應不同的 UI 需求。
+- 自動主題適應 — 根據父元素的主題自動調整顏色，無需手動設定。
+- 性能優化 — 在滾動離開螢幕時自動暫停，節省資源。
+- 無需 WebGL — 使用簡單的 2D 畫布，確保在所有主流瀏覽器上表現一致。
 
 ## 快速開始
 
@@ -129,7 +129,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 ```bash
 npm install thinking-orbs
 ```
-2. 引入組件
+2. 導入組件
 ```bash
 import { ThinkingOrb } from 'thinking-orbs';
 ```
@@ -144,60 +144,60 @@ import { ThinkingOrb } from 'thinking-orbs';
 {
   "前置條件": "已安裝 thinking-orbs 套件",
   "程式碼": "import { ThinkingOrb } from 'thinking-orbs';\n\nfunction Status() {\n  return <ThinkingOrb />;\n}",
-  "預期輸出": "顯示一個圓點思考球加載指示器"
+  "預期輸出": "一個動態的載入指示器，根據主題自動調整顏色。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 2 天就累積 841 stars（421/天），forks 59（7.0%），這顯示出強烈的興趣和使用潛力。作者 Jakub Antalik 在這個領域有相當的經驗，這個專案解決了許多現有加載指示器在主題適應性和性能上的不足。之前的解決方案往往依賴於複雜的圖形渲染技術，導致在低端設備上表現不佳，而這個專案則以簡單的 2D Canvas 渲染來解決這一問題。社群對於這個專案的反應也相當積極，尤其是對於 Vue 3 的適配需求，顯示出其潛在的擴展性。這些因素共同推動了這個專案的快速增長。
+> 建立 3 天就累積 936 stars（312/天），forks 71（7.6%），這顯示出良好的使用者興趣。作者 Jakub Antalik 之前有其他相關專案，這個專案解決了在 AI 界面中缺乏簡單且美觀的載入指示器的問題。這個工具的推出可能與社群對於更美觀的 UI 元素需求增加有關。forks/stars 比率為 7.6%，顯示出相對較高的實際修改和使用意圖。
 
 ## 適合誰使用
 
-**目標受眾**：需要為 AI 應用添加加載指示器的前端開發者，尤其是使用 React 的團隊。
+**目標受眾**：需要在 React 應用中實現美觀載入指示器的前端開發者。
 
 > [!example] 使用場景
-> - 前端工程師用它來為 AI 聊天機器人添加加載指示器，因為它的動畫效果能提升用戶體驗，並且自動適應主題。
-> - 產品經理用它來展示即將到來的功能加載狀態，因為它的簡單集成方式讓原型開發變得快速且高效。
-> - UI 設計師用它來測試不同的加載動畫，因為它提供多種狀態和尺寸選擇，能夠輕鬆調整以符合設計需求。
+> - 前端工程師用它來在 AI 應用中實現載入指示器，因為它提供了多種動畫狀態，能提升用戶體驗。
+> - UI 設計師用它來快速實現深色和淺色主題的載入效果，因為它能自動適應主題，節省了設計時間。
+> - 獨立開發者用它來增強個人專案的視覺效果，因為它的安裝和使用都非常簡單，無需複雜的配置。
 
 ## 架構分析
 
-這個專案採用模組化的架構，使用 TypeScript 和 React 來構建 UI 組件。每個加載指示器都是獨立的 React 組件，這樣的設計使得它們可以輕鬆地在不同的應用中重用。資料流主要是通過 props 傳遞，並使用 Canvas API 進行渲染，這樣可以確保在各種設備上都能保持一致的性能。選擇使用純 2D Canvas 而非 WebGL 是為了簡化開發並提高兼容性，但這也意味著在動畫效果上可能會有所限制。未來擴展性方面，這種架構允許輕鬆添加新的動畫狀態或尺寸，但可能需要考慮到性能瓶頸，特別是在高負載的應用中。
+這個專案採用模組化設計，使用 TypeScript 進行開發，並利用 Vite 作為構建工具。資料流主要在 React 組件中進行，通過 props 傳遞狀態和樣式。選擇 2D 畫布而非 WebGL，能確保在各種設備上都有良好的性能，代價是無法實現更複雜的視覺效果。擴展性方面，未來可以考慮增加更多動畫狀態和顏色選項，但目前的設計已經能滿足大多數需求。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是使用 TypeScript 和 React 來構建可重用的 UI 組件，並利用 Canvas API 進行渲染。這樣的設計使得它在性能上優化，能夠在低端設備上流暢運行。每個加載指示器的動畫效果都是手動調整的，這樣可以確保在不同的使用場景中都能提供良好的用戶體驗。這個專案的效能特性在於它的簡單性，使用純 2D Canvas 渲染，避免了 WebGL 的複雜性，這對於需要兼容性和性能的應用來說是個優勢。選擇 TypeScript 和 React 也使得這個專案在開發過程中能夠獲得更好的類型檢查和組件化開發的優勢。未來可能需要考慮到性能瓶頸，特別是在高負載的應用中，因為所有的動畫都是在同一個時鐘下運行，這可能會導致在大量使用時的性能下降。整合方面，這個專案與主流的 React 生態系統相容性良好，但對於其他框架的支持仍需加強。
+這個專案的核心技術機制是基於 TypeScript 和 React，使用 2D 畫布進行渲染，避免了 WebGL 的複雜性。效能方面，由於使用了簡單的 2D 圖形，這使得它在低端設備上也能流暢運行，並且在滾動離開螢幕時會自動暫停，這樣可以節省資源。選擇 React 使得這個專案能夠充分利用組件化的優勢，並且能夠與現有的 React 生態系統無縫整合。技術風險方面，未來可能會面臨擴展性挑戰，特別是在增加更多動畫狀態和顏色選項時。整合方面，與主流的 CI/CD 工具和 IDE 的相容性良好，能夠輕鬆融入現有的開發流程。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含範例，安裝過程順暢，使用者能夠快速上手。文件中提供了實用的快速入門指南，讓新手能夠在短時間內運行起來。多語言支持尚未提供，可能對非英語使用者造成一定困難。
+> README 文件清晰，提供了安裝和使用範例。安裝過程順暢，沒有明顯的坑。文件中有 live demo，方便新手快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用，快速集成到 React 應用中。
-> - 提供多種動畫狀態，能夠提升用戶體驗。
-> - 自動主題切換，適應不同的 UI 設計。
+> - 安裝簡單，快速上手。
+> - 自動主題適應，提升用戶體驗。
+> - 性能優化，適合低端設備。
 
 > [!danger] 缺點
-> - 目前僅限於 React 框架，對其他框架的支持不足。
-> - 動畫效果較為簡單，可能不符合所有需求。
-> - 在某些舊版本的瀏覽器中可能會出現兼容性問題。
+> - 僅支援 React 18 以上版本。
+> - 不支援複雜的 3D 效果。
+> - 目前僅提供單色主題選擇。
 
 > [!warning] 注意事項
-> - 目前僅支援 React 框架，對於其他框架的支持尚未實現。
-> - 動畫效果較為簡單，可能不符合所有設計需求。
-> - 在某些舊版本的瀏覽器中可能會出現兼容性問題。
+> - 僅支援 React 18 以上版本。
+> - 不支援複雜的 3D 效果，僅限於 2D 動畫。
+> - 目前僅提供單色主題，未來可能會增加更多顏色選項。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個專案專注於 2D 動畫，而 agent-sprite-forge 提供更多的精靈動畫選擇，適合需要多樣化動畫的場景。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供更複雜的加載動畫選擇，但可能需要更多的資源，適合高性能需求的應用。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於 3D 動畫效果，適合需要更複雜視覺效果的應用。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供更豐富的動畫選擇，但可能需要更多資源，適合高性能設備。 |
 
 ## 替代方案決策
 
@@ -205,16 +205,16 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具使用精靈動畫來實現更複雜的加載效果，而本專案則專注於簡單的圓點動畫。 | 如果需要更豐富的動畫效果和自定義選項，則 agent-sprite-forge 更為合適。 | medium，因為需要重新設計動畫邏輯。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 提供了多種加載動畫選擇，但可能需要更多的資源，適合高性能需求的應用。 | 如果你的應用需要高性能的加載動畫，boneyard 可能更合適。 | high，因為需要重構整個加載邏輯。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體用量相對較低，但生態系統不如 JavaScript 豐富。 | 如果你的團隊已經在使用 Rust 並需要高效能的動畫效果。 | medium，因為需要重新學習 Rust 的開發模式。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供多種動畫選擇，使用 SVG 技術，適合需要更高解析度的場景。 | 如果你的應用需要高解析度的動畫效果，並且不介意增加資源消耗。 | high，因為需要重新設計動畫邏輯。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **thinking-orbs** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 這個工具使用精靈動畫來實現更複雜的加載效果，而本專案則專注於簡單的圓點動畫。 | boneyard 提供了多種加載動畫選擇，但可能需要更多的資源，適合高性能需求的應用。 |
-> | 遷移成本 | - | medium，因為需要重新設計動畫邏輯。 | high，因為需要重構整個加載邏輯。 |
-> | 適用場景 | 主要場景 | 如果需要更豐富的動畫效果和自定義選項，則 agent-spr | 如果你的應用需要高性能的加載動畫，boneyard 可能更合 |
+> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量相對較低，但生態系統不如 JavaScript 豐富。 | 提供多種動畫選擇，使用 SVG 技術，適合需要更高解析度的場景。 |
+> | 遷移成本 | - | medium，因為需要重新學習 Rust 的開發模式。 | high，因為需要重新設計動畫邏輯。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Rust 並需要高效能的動畫效果。 | 如果你的應用需要高解析度的動畫效果，並且不介意增加資源消耗。 |
 
 ## 成熟度評估
 
@@ -225,27 +225,25 @@ import { ThinkingOrb } from 'thinking-orbs';
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
+> 適合個人項目試用，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Safari 中可能出現渲染問題，特別是在使用多列樣式時。
-  - 解法：使用 CSS Grid 代替多列樣式。
-- [MEDIUM] 在某些情況下，主題切換可能不即時反映。
-  - 解法：確保正確設置 data-theme 屬性。
-- [MEDIUM] 當標籤滾動出視口時，動畫會暫停，可能影響用戶體驗。
-  - 解法：考慮在滾動時提供靜態佔位符。
+- **[HIGH]** 在 Safari 中可能會遇到 CSS 多列佈局的問題
+  - 解法：使用 grid row-spans 替代
+- [MEDIUM] 在某些情況下，動畫可能無法正確顯示
+  - 解法：確保父元素的主題屬性正確設置
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的 AI 應用開發 | 非常適合 | 簡單易用且能快速集成，適合快速原型開發。 |
-| 需要高性能加載動畫的商業應用 | 不適合 | 性能優化不足，可能在高負載下表現不佳。 |
-| 個人側邊專案或實驗 | 適合 | 輕量且易於使用，適合小型專案。 |
-| 大型企業級應用 | 普通 | 雖然功能強大，但可能需要更多的自定義選項。 |
+| 小型團隊的 AI 應用 | 非常適合 | 簡單的安裝和使用，能快速提升 UI 美觀度。 |
+| 需要高性能動畫的商業應用 | 不適合 | 僅限於 2D 動畫，無法滿足高性能需求。 |
+| 獨立開發者的個人專案 | 適合 | 安裝簡單，能快速實現美觀的載入指示器。 |
+| 大型企業的核心產品 | 普通 | 目前功能較為單一，可能無法滿足所有需求。 |
 
 ## 採用成本分析
 
@@ -254,15 +252,27 @@ import { ThinkingOrb } from 'thinking-orbs';
 | 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
-| 綁定風險 | medium |
+| 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到簡單易用的加載指示器，值得嘗試。
+> 花 2 小時學習，1 小時整合，得到美觀的載入指示器，值得。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料，安全性較高。依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
+> 低風險：不需要高權限，僅使用前端資源，不存取敏感資料。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+這個工具最常與 React 搭配使用，通常在 UI 開發階段進行整合。在一個使用 Vite 的 React 專案中，可以通過 `npm install thinking-orbs` 安裝，然後在需要的地方導入 `ThinkingOrb` 組件。與主流 CI 工具（如 GitHub Actions）相容良好，能夠輕鬆集成到現有的開發流程中。整合的摩擦點主要在於需要確保 React 版本符合要求，否則可能會遇到兼容性問題。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在這個專案出現之前，開發者通常使用 CSS 動畫或 SVG 來實現載入指示器，但這些方法在性能上可能不夠理想。隨著前端技術的進步，特別是 TypeScript 和 React 的普及，這個專案的出現提供了一個更簡單且高效的解決方案。這個工具代表了對於簡約和性能優化的趨勢，未來可能會在 UI 設計中越來越受到重視。
 
 ## 健康度儀表板
 
@@ -327,7 +337,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 59 |
+| Forks | 71 |
 | Open Issues | 6 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-07-21 |
@@ -346,7 +356,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放問題數量較少，解決率尚待提升。
+**社群活躍度**：社群活躍度中等，開放問題數量為 6，尚未解決。
 **連結**：[文件](https://orbs.jakubantalik.com)
 
 ## 開發動態
@@ -445,7 +455,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 ## 延伸閱讀
 
-相關概念：[[動畫]] · [[UI 組件]] · [[性能優化]]
+相關概念：[[動畫]] · [[UI-UX 設計]] · [[前端開發]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[vorpus--performativeUI|vorpus/performativeUI]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
 
@@ -453,11 +463,11 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：UI 組件）
+> [!note]- 直接競品（同子分類：UI 元素）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "UI 組件" AND file.name != "Jakubantalik--thinking-orbs"
+> WHERE subcategory = "UI 元素" AND file.name != "Jakubantalik--thinking-orbs"
 > SORT stars DESC
 > ```
 
@@ -489,7 +499,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["動畫","UI 組件","性能優化"];
+> const concepts = ["動畫","UI-UX 設計","前端開發"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Jakubantalik--thinking-orbs" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

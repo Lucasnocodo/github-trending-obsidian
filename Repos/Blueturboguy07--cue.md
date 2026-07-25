@@ -7,16 +7,16 @@ language: JavaScript
 license: GPL-3.0
 description: "Open-source macOS AI copilot that floats over your screen, sees/hears your meetings, and stays hidden from screen shares. Cluely alternative, bring-your-own-key."
 homepage: ""
-stars: 761
-stars_per_day: 95
-forks: 159
-open_issues: 8
+stars: 781
+stars_per_day: 87
+forks: 164
+open_issues: 5
 created: 2026-07-15
 pushed_at: 2026-07-21
 first_seen: 2026-07-21
 week: "2026-W30"
 month: "2026-07"
-category: "生產力"
+category: "其他"
 subcategory: "AI 助手"
 release_tag: "v0.2.0"
 install_complexity: "medium"
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-21
-use_case: "提供隱形的 AI 助手，幫助你在會議中即時獲取資訊，並保持隱藏狀態。"
+use_case: "提供一個隱形的 AI 助手，協助你在會議和編碼問題中即時獲得幫助。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,28 +34,28 @@ appearances: 2
 next_review: "2026-07-29"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 27
+issue_close_rate: 55
 repo_size_kb: 1145
 readme_length: 9872
 bus_factor: 1
-last_release_days: 3
+last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-21"
-star_history: "2026-07-21:666,2026-07-21:666,2026-07-22:704,2026-07-22:704,2026-07-23:727,2026-07-24:761"
+star_history: "2026-07-21:666,2026-07-21:666,2026-07-22:704,2026-07-22:704,2026-07-23:727,2026-07-24:761,2026-07-25:781"
 tags:
   - github
-  - "category/生產力"
+  - "category/其他"
   - "lang/javascript"
 aliases:
   - "cue"
   - "Blueturboguy07/cue"
-  - "提供隱形的 AI 助手，幫助你在會議中即時獲取資訊，並保持隱藏狀態。"
+  - "提供一個隱形的 AI 助手，協助你在會議和編碼問題中即時獲得幫助。"
 ---
 
 # cue
 
-**761** stars · **95** stars/天 · 建立 8 天前 · JavaScript · GPL-3.0
+**781** stars · **87** stars/天 · 建立 9 天前 · JavaScript · GPL-3.0
 
 ```dataviewjs
 const me = dv.page("Repos/Blueturboguy07--cue");
@@ -71,13 +71,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `v0.2.0`
 
 > [!summary] 一句話摘要
-> 提供隱形的 AI 助手，幫助你在會議中即時獲取資訊，並保持隱藏狀態。
+> 提供一個隱形的 AI 助手，協助你在會議和編碼問題中即時獲得幫助。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (95 stars/day)
-> **授權** GPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 2 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要在 macOS 上使用隱形 AI 助手以提高會議效率的獨立開發者。
-> **一句話重點** cue 的隱形設計讓它成為會議中的私密助手，這在當前遠端工作的環境中尤為重要。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (87 stars/day)
+> **授權** GPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 3 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 需要在 macOS 上使用隱形 AI 助手以提升會議效率的專業人士。
+> **一句話重點** cue 的隱形設計和自帶金鑰的靈活性，使其成為會議和編碼輔助的理想選擇。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,26 +101,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，3 小時整合，得到即時的會議輔助，值得一試。
+> **結論** 花 2 小時學習，1 小時整合，得到即時的會議和編碼輔助，值得採用。
 
 > [!abstract] 核心創新
-> cue 是一個隱形的 AI 助手，專為會議和編程問題設計，能在不被捕捉的情況下提供即時幫助。
+> cue 提供了一個隱形的 AI 助手，專為會議和編碼問題設計，並允許用戶自帶 AI 金鑰。
 
 ## 專案簡介
 
-cue 是一款開源的 macOS AI 助手，設計為在使用者的螢幕上浮動，能夠即時捕捉螢幕、麥克風及會議音訊，並利用 AI 模型提供實時幫助。用戶可透過快捷鍵 `⌘` `↵` 啟動助手，解決編程問題或在會議中提供建議。這個工具的賣點在於其隱形特性，能在螢幕分享時保持隱藏，特別適合需要私密輔助的場合。技術上，cue 使用 Electron 框架，並依賴於 `desktopCapturer` 和 `getUserMedia` 來捕捉螢幕和音訊，並且透過 OpenAI Whisper 或 Google Gemini 進行語音轉文字。這種設計使得用戶能夠在會議中獲得即時的反饋，並且不會被其他參與者看到。
+cue 是一個開源的 macOS AI 助手，能在你的螢幕上浮動，並同時接收來自螢幕、麥克風和會議音頻的三個獨立輸入。這個設計的核心在於提供即時的幫助，無論是在會議中回答問題或解決編碼問題，使用者只需按下 `⌘` `↵` 鍵就能獲得建議。這樣的設計使得 cue 成為一個強大的工具，特別適合需要即時反饋的場景。技術上，cue 使用 Electron 框架來構建，並依賴於 OpenAI Whisper 或 Google Gemini 進行語音轉文字處理，這樣的選擇使得它能夠在本地運行，減少延遲。與 Cluely 相比，cue 允許用戶自帶 AI 金鑰，這意味著使用者可以根據自己的需求選擇不同的 AI 提供者，這在成本和功能上提供了更大的靈活性。
 
-與 Cluely 相比，cue 允許用戶自帶 AI 金鑰，這意味著用戶可以選擇不同的 AI 提供者，並且不需要支付額外的服務費用。這使得 cue 在成本上更具優勢，特別是對於需要長時間使用的用戶。使用者在實際操作中可能會遇到需要重新授權的問題，特別是在重新構建應用後，這可能會影響使用體驗。整體而言，cue 是一個針對需要在會議或編程時獲得即時幫助的用戶設計的工具，適合小型團隊或個人開發者使用。
+在功能上，cue 具備了即時解決編碼問題的能力，並能在會議中提供對話建議，這使得它在多任務處理的場景中表現優異。使用者需要注意的是，雖然 cue 設計為隱形，但在某些情況下仍可能被錄屏工具捕捉到，這是其設計上的一個限制。社群活躍度尚可，開發者在過去幾天內持續進行更新，顯示出對專案的投入。總體來說，cue 是一個適合需要在會議中使用 AI 助手的開發者和專業人士的工具，特別是那些需要在 macOS 環境中工作的使用者。
 
 **技術棧**：`Electron 33.2.1` · `Node.js 18+`
 
 ## 重點功能
 
-- 即時輔助 — 使用 `⌘` `↵` 快捷鍵獲得即時建議，無論是程式碼問題還是會議對話。
-- 螢幕捕捉 — 利用 Electron 的 `desktopCapturer` 捕捉螢幕內容，並在需要時提供全解析度截圖。
-- 音訊轉文字 — 支援 OpenAI Whisper 和 Google Gemini 進行語音轉錄，能夠同時處理麥克風和會議音訊。
-- 隱形模式 — 設計為在螢幕分享時保持隱藏，使用 `setContentProtection(true)` 來避免被捕捉。
-- 自帶 AI 金鑰 — 允許用戶自帶 API 金鑰，支持多種 AI 提供者，降低使用成本。
+- 即時輔助 — 按下 `⌘` `↵` 鍵即可獲得即時建議，無論是會議對話還是編碼問題。
+- 多音源輸入 — 同時接收螢幕、麥克風和會議音頻的輸入，提供全面的上下文理解。
+- 隱形設計 — 使用 `setContentProtection(true)` 來隱藏於螢幕分享中，保護使用者隱私。
+- 自帶 AI 金鑰 — 允許使用者自帶 OpenAI、Anthropic 或 Google 的 API 金鑰，靈活選擇 AI 提供者。
+- 高效能轉錄 — 使用 OpenAI Whisper 或 Google Gemini 進行語音轉文字，支持即時反饋。
 
 ## 快速開始
 
@@ -128,81 +128,68 @@ cue 是一款開源的 macOS AI 助手，設計為在使用者的螢幕上浮動
 ```bash
 從 Releases 頁面下載 cue-mac.zip
 ```
-2. 解壓縮並移動到應用程式資料夾
+2. 解壓並移動到應用程式資料夾
 ```bash
-將 cue.app 拖到 Applications 資料夾
+將 cue.app 拖入 Applications 資料夾
 ```
-3. 首次啟動時授權麥克風和螢幕錄製權限
+3. 首次開啟應用程式
 ```bash
-在系統設定中啟用 cue 的麥克風和螢幕錄製權限
-```
-
-## 程式碼範例
-
-```js
-# 前置條件：需要 Node.js 18+；
-```bash
-git clone https://github.com/Blueturboguy07/cue.git
-cd cue
-npm install
-npm start
-```
-# 預期輸出：啟動 cue 應用程式。
+右鍵點擊 cue.app，選擇 Open 以繞過 macOS 安全限制
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 8 天就累積 761 stars（95/天），forks 159（20.9%），顯示出強烈的社群興趣。這個專案由 Blueturboguy07 和其他幾位貢獻者共同開發，解決了在會議中需要即時輔助但又不想被其他人看到的痛點。之前的工具如 Cluely 雖然提供類似功能，但需要付費或限制較多，cue 則提供了更靈活的選擇。社群的反應也表明了對這種隱形助手的需求，特別是在遠端工作的環境中。這個工具的設計也符合當前對於隱私和安全的關注，讓用戶在使用 AI 助手時能夠保持控制權。
+> 建立 9 天內累積 781 stars（87/天），forks 164（21.0%），這顯示出強烈的社群參與。作者 Blueturboguy07 和團隊在開源社群中有一定的影響力，這個專案解決了在會議中使用 AI 助手的需求，特別是在需要隱私保護的情境下。之前的解決方案如 Cluely 可能無法提供這樣的靈活性，因為它們通常需要固定的 AI 提供者。這個專案的推出吸引了開發者的注意，因為它提供了自帶金鑰的選項，讓使用者可以根據自己的需求選擇 AI 提供者。社群的反應也顯示出對這種隱私保護的需求日益增加，特別是在遠端工作和虛擬會議普及的背景下。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 macOS 上使用隱形 AI 助手以提高會議效率的獨立開發者。
+**目標受眾**：需要在 macOS 上使用隱形 AI 助手以提升會議效率的專業人士。
 
 > [!example] 使用場景
-> - 軟體工程師用它來在會議中獲得即時的程式碼建議，因為它能根據螢幕內容提供具體的解決方案。
-> - 學生用它來在網上課程中記錄重點，因為它能同時捕捉會議音訊和螢幕內容，並提供即時的筆記。
-> - 自由工作者用它來在 Zoom 會議中保持隱私，因為它能在不被其他參與者看到的情況下提供即時的建議。
+> - 軟體工程師用它來在 Zoom 會議中即時獲得對話建議，因為這樣可以更自然地參與討論，提升會議效率。
+> - 產品經理用它來在會議中解決即時的技術問題，因為它能快速提供解決方案，減少等待時間。
+> - 學生用它來在在線學習中獲得即時的問題解答，因為它能在不干擾課程的情況下提供幫助。
 
 ## 架構分析
 
-cue 採用 Electron 框架，整體架構分為主進程和渲染進程。主進程負責音訊捕捉和 AI 模型的請求，渲染進程則顯示用戶介面。這種設計使得應用能夠在本地運行，減少了對網路的依賴，並且能夠快速響應用戶的操作。
+cue 的架構基於 Electron，這使得它能夠在桌面環境中運行，並利用 Node.js 進行後端處理。其設計選擇了將音頻和視覺輸入分開處理，這樣的架構使得即時反饋成為可能。使用 `desktopCapturer` 來捕捉螢幕，並使用 `getUserMedia` 來獲取麥克風音頻，這樣的分開處理有助於提高準確性和反應速度。
 
-音訊和螢幕捕捉的分離處理確保了數據的準確性和即時性。選擇 Electron 使得跨平台開發變得簡單，但也可能導致應用的體積較大，對資源的需求較高。整體而言，這種架構設計在提供即時反饋的同時，也需考慮到性能的優化和資源的管理。
+選擇 Electron 使得開發者能夠快速構建跨平台應用，但也帶來了較大的應用包體積和資源需求。擴展性方面，未來可以考慮加入更多的 AI 提供者或功能，但這需要進一步的開發和測試。整體而言，這樣的架構設計使得 cue 能夠在會議和編碼輔助上提供即時的支持。
 
 ## 技術深入分析
 
-cue 的核心技術機制基於 Electron 框架，利用 `desktopCapturer` 和 `getUserMedia` 來捕捉螢幕和音訊。這使得應用能夠在本地運行，並即時提供反饋。音訊轉錄使用 OpenAI Whisper 或 Google Gemini，能夠同時處理來自麥克風和會議的音訊，這對於即時輔助至關重要。效能方面，cue 在捕捉和處理音訊時的延遲相對較低，但在高負載情況下可能會影響反應速度。設計上，選擇 Electron 使得跨平台開發變得簡單，但也可能導致應用的體積較大，對資源的需求較高。技術風險方面，音訊捕捉的準確性依賴於使用者的設備和環境，可能會影響使用體驗。整合方面，cue 能夠與主流的會議工具如 Zoom 和 Google Meet 無縫協作，但在某些情況下仍需手動調整設置以確保隱形模式的有效性。
+cue 的核心技術機制是基於 Electron 構建的桌面應用，這使得它能夠在 macOS 和 Windows 上運行。它使用 `desktopCapturer` 來捕捉螢幕，並利用 `getUserMedia` 來獲取麥克風音頻，這樣的設計使得它能夠同時處理多個音源。效能方面，cue 能夠實時處理音頻流，並使用 OpenAI Whisper 或 Google Gemini 進行語音轉文字，這使得它在即時反饋上表現優異。選擇 Electron 雖然帶來了較大的應用包體積，但其跨平台的特性使得開發者能夠快速部署。技術上，cue 的設計取捨在於隱私保護和即時反饋之間的平衡，這使得它在某些情況下仍可能被錄屏工具捕捉到。對於未來的擴展性，cue 可以考慮加入更多的 AI 提供者或功能，這將進一步提升其市場競爭力。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含詳細的安裝步驟和使用指南，對於新手來說非常友好。安裝過程中需要授權麥克風和螢幕錄製權限，這可能會造成初次使用的困擾，但整體流程順暢。提供的內建教學能幫助用戶快速上手，並且有良好的 getting started guide。
+> README 文件清晰，提供詳細的安裝步驟和使用說明；安裝過程中需要注意 macOS 的安全設置，可能會有初次使用的困難；有內建的教學指引，幫助新手快速上手；文件目前僅提供英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 提供即時的輔助功能，能夠在會議中提供建議和解決方案。
-> - 隱形模式設計，能在螢幕分享時保持私密性。
-> - 支持多種 AI 提供者，使用者可以根據需求選擇適合的 API 金鑰。
+> - 提供即時的會議和編碼輔助，提升工作效率。
+> - 隱形設計保護使用者隱私，適合敏感環境使用。
+> - 允許使用者自帶 AI 金鑰，靈活選擇 AI 提供者。
 
 > [!danger] 缺點
-> - 僅支援 macOS，對於 Windows 和 Linux 的支援尚未完全測試。
-> - 需要手動授權麥克風和螢幕錄製權限，初次使用可能會造成困擾。
-> - 在某些情況下，隱形模式可能會被捕捉工具忽略，無法完全保證隱私。
+> - 在某些情況下可能被錄屏工具捕捉，無法完全保證隱私。
+> - 需要手動授權麥克風和螢幕錄影權限，初次使用可能有困難。
+> - 僅支援 macOS 和 Windows，Linux 尚未測試。
 
 > [!warning] 注意事項
-> - 僅支援 macOS，Windows 支援尚未完全測試。
-> - 需要手動授權麥克風和螢幕錄製權限，可能會造成初次使用的困擾。
-> - 在 macOS 15.4+ 上，隱形模式可能會被某些捕捉工具忽略，無法保證完全隱藏。
+> - 僅支援 macOS 和 Windows，Linux 尚未測試。
+> - 在某些情況下，仍可能被錄屏工具捕捉到，無法完全保證隱私。
+> - 需要使用者手動授權麥克風和螢幕錄影權限，初次使用時可能會遇到困難。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 助手功能，但不具備隱形模式，可能在螢幕分享時被捕捉。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於會議記錄，但不支援即時輔助功能，適合需要完整會議紀錄的用戶。 |
-| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 提供多個 AI 助手的選擇，但操作上較為複雜，適合對 AI 有進階需求的用戶。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 助手功能，但不專注於隱形設計，適合需要可見輔助的場景。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於會議記錄和管理，功能上較為單一，適合需要專注於會議管理的使用者。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 提供編碼輔助，但不具備即時會議輔助的功能，適合專注於開發的使用者。 |
 
 ## 替代方案決策
 
@@ -210,16 +197,16 @@ cue 的核心技術機制基於 Electron 框架，利用 `desktopCapturer` 和 `
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| Cluely | Cluely 提供類似的 AI 助手功能，但需要付費，且不支持自帶金鑰，這使得使用成本較高。 | 如果你的團隊已經在使用 Cluely 並且不介意支付費用，則可以選擇它。 | low，因為兩者的功能相似，切換相對簡單。 |
-| [AgentSeal/codeburn](https://github.com/AgentSeal/codeburn) | AgentSeal 提供了更強大的會議記錄功能，但不具備即時輔助，適合需要完整會議紀錄的用戶。 | 如果你的需求主要是會議紀錄而非即時輔助，則可以考慮使用 AgentSeal。 | medium，因為需要重新適應新的工作流程。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 助手功能，但不專注於隱形設計，適合需要可見輔助的場景。 | 如果你的團隊需要可見的 AI 助手來輔助會議或編碼，這個工具會是更好的選擇。 | medium，因為需要重新設置 AI 提供者和功能配置。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於會議記錄和管理，功能上較為單一，適合需要專注於會議管理的使用者。 | 如果你的需求主要是會議記錄而非即時輔助，這個工具會更合適。 | low，因為功能較為單一，轉移成本低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **cue** | **Cluely** | **codeburn** |
+> | 維度 | **cue** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Cluely 提供類似的 AI 助手功能，但需要付費，且不支持自帶金鑰，這使得使用成本較高。 | AgentSeal 提供了更強大的會議記錄功能，但不具備即時輔助，適合需要完整會議紀錄的用戶。 |
-> | 遷移成本 | - | low，因為兩者的功能相似，切換相對簡單。 | medium，因為需要重新適應新的工作流程。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Cluely 並且不介意支付費用，則 | 如果你的需求主要是會議紀錄而非即時輔助，則可以考慮使用 Ag |
+> | 技術路線 | 本專案 | 提供類似的 AI 助手功能，但不專注於隱形設計，適合需要可見輔助的場景。 | 專注於會議記錄和管理，功能上較為單一，適合需要專注於會議管理的使用者。 |
+> | 遷移成本 | - | medium，因為需要重新設置 AI 提供者和功能配置。 | low，因為功能較為單一，轉移成本低。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要可見的 AI 助手來輔助會議或編碼，這個工具 | 如果你的需求主要是會議記錄而非即時輔助，這個工具會更合適。 |
 
 ## 成熟度評估
 
@@ -230,44 +217,43 @@ cue 的核心技術機制基於 Electron 框架，利用 `desktopCapturer` 和 `
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人試用和小型團隊，但不建議在生產環境的核心路徑上使用。
+> 適合個人試用或小型團隊使用，但不建議在生產環境的核心路徑上使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Zoom 中可能無法隱藏，特別是在使用不正確的螢幕分享設置時。
-  - 解法：確保在 Zoom 的設定中選擇 'Advanced capture with window filtering'。
-- [MEDIUM] 初次使用時可能無法授權麥克風和螢幕錄製權限。
-  - 解法：需要手動在系統設定中重新授權。
-- **[HIGH]** 在 macOS 15.4+ 上，某些捕捉工具可能會忽略隱形模式。
-  - 解法：無法完全避免，使用時需謹慎。
+- **[HIGH]** 在 Zoom 中可能無法隱形，取決於設定
+  - 解法：確保在 Zoom 設定中選擇 'Advanced capture with window filtering'。
+- [MEDIUM] 首次使用時可能無法授權麥克風和螢幕錄影權限
+  - 解法：手動在系統設定中授權，並重新啟動應用程式。
+- **[HIGH]** 某些 AI 金鑰可能無法支持語音轉錄功能
+  - 解法：確保使用的金鑰具有語音轉錄的權限。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 5 人以下的遠端團隊會議 | 非常適合 | 能夠提供即時的會議輔助，保持隱私。 |
-| 大型企業的正式會議 | 不適合 | 可能會因為隱形模式的限制而影響使用。 |
-| 個人開發者的編程問題解決 | 非常適合 | 能夠即時提供程式碼建議和解決方案。 |
-| 需要長時間錄製會議的使用情境 | 普通 | 雖然能夠錄製，但隱形模式可能會影響錄製效果。 |
+| 10 人以下的小型團隊進行遠端會議 | 非常適合 | 即時提供會議建議，提升討論效率。 |
+| 需要在編碼時獲得即時反饋的開發者 | 非常適合 | 能夠快速解決編碼問題，減少查詢時間。 |
+| 大型企業的會議中使用 AI 助手 | 普通 | 可能會遇到隱私問題，需要額外的設定來確保安全。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~2 小時 |
-| 整合時間 | ~3 小時 |
-| 維護負擔 | medium |
+| 整合時間 | ~1 小時 |
+| 維護負擔 | low |
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，3 小時整合，得到即時的會議輔助，值得一試。
+> 花 2 小時學習，1 小時整合，得到即時的會議和編碼輔助，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：cue 只在本地運行，不存取敏感資料，並且不需要高權限。使用者需自行管理 API 金鑰的安全性。
+> 低風險：應用本身不需要高權限，僅存取麥克風和螢幕錄影權限；不會存取敏感資料，依賴鏈中無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -332,9 +318,9 @@ cue 的核心技術機制基於 Electron 框架，利用 `desktopCapturer` 和 `
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 159 |
-| Open Issues | 8 |
-| Issue 解決率 | 27% (3 closed) |
+| Forks | 164 |
+| Open Issues | 5 |
+| Issue 解決率 | 55% (6 closed) |
 | 最後推送 | 2026-07-21 |
 | 建立日期 | 2026-07-15 |
 | Repo 大小 | 1.1 MB |
@@ -365,8 +351,7 @@ cue 的核心技術機制基於 Electron 框架，利用 `desktopCapturer` 和 `
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者定期更新，回應問題速度尚可。
-**連結**：[文件](https://github.com/Blueturboguy07/cue/wiki)
+**社群活躍度**：社群活躍，開發者在過去幾天內持續進行更新。
 
 ## 開發動態
 
@@ -378,8 +363,7 @@ cue 的核心技術機制基於 Electron 框架，利用 `desktopCapturer` 和 `
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#16](https://github.com/Blueturboguy07/cue/issues/16) | windows | 0 | 0 |
-> | [#13](https://github.com/Blueturboguy07/cue/issues/13) | Apple issue | 0 | 0 |
+> | [#1](https://github.com/Blueturboguy07/cue/issues/1) | Linux? | 0 | 2 |
 
 ## README 摘錄
 
@@ -533,9 +517,9 @@ cue 的核心技術機制基於 Electron 框架，利用 `desktopCapturer` 和 `
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[即時通訊]] · [[AI 助手]]
+相關概念：[[CLI/TUI]] · [[自動化測試]] · [[自然語言處理]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[XiaomiMiMo--MiMo-Code|XiaomiMiMo/MiMo-Code]] · [[cosmicstack-labs--mercury-agent|cosmicstack-labs/mercury-agent]] · [[farzaa--clicky|farzaa/clicky]] · [[calesthio--Crucix|calesthio/Crucix]] · [[op7418--Claude-to-IM-skill|op7418/Claude-to-IM-skill]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[XiaomiMiMo--MiMo-Code|XiaomiMiMo/MiMo-Code]] · [[cosmicstack-labs--mercury-agent|cosmicstack-labs/mercury-agent]] · [[farzaa--clicky|farzaa/clicky]] · [[calesthio--Crucix|calesthio/Crucix]]
 
 [GitHub](https://github.com/Blueturboguy07/cue)
 
@@ -553,7 +537,7 @@ cue 的核心技術機制基於 Electron 框架，利用 `desktopCapturer` 和 `
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "生產力" AND file.name != "Blueturboguy07--cue"
+> WHERE category = "其他" AND file.name != "Blueturboguy07--cue"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -577,7 +561,7 @@ cue 的核心技術機制基於 Electron 框架，利用 `desktopCapturer` 和 `
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","即時通訊","AI 助手"];
+> const concepts = ["CLI/TUI","自動化測試","自然語言處理"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Blueturboguy07--cue" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
