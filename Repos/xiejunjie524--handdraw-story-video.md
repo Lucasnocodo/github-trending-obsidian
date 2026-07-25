@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Turn hand-drawn story illustrations into 35–45 second line-reveal and gradual-coloring videos with HyperFrames."
 homepage: ""
-stars: 621
-stars_per_day: 155
-forks: 95
+stars: 643
+stars_per_day: 107
+forks: 97
 open_issues: 0
 created: 2026-07-18
-pushed_at: 2026-07-18
+pushed_at: 2026-07-23
 first_seen: 2026-07-23
 week: "2026-W30"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "將手繪故事插圖轉換為 35-45 秒的逐步顯示和上色視�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-30"
+appearances: 2
+next_review: "2026-08-01"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-23"
-star_history: "2026-07-23:621"
+star_history: "2026-07-23:621,2026-07-25:643"
 tags:
   - github
   - "category/其他"
@@ -789,4 +789,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-25|2026-07-25]] — 再次上榜，643 stars
 - [[2026-07-23|2026-07-23]] — 首次收錄，621 stars

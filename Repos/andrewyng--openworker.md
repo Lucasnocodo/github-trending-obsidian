@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: ""
 homepage: ""
-stars: 1686
-stars_per_day: 422
-forks: 249
-open_issues: 57
+stars: 3538
+stars_per_day: 708
+forks: 473
+open_issues: 92
 created: 2026-07-20
-pushed_at: 2026-07-23
+pushed_at: 2026-07-25
 first_seen: 2026-07-24
 week: "2026-W30"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "提供一個開源的 AI 助手平台，能夠在桌面上自動完�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-27"
+appearances: 2
+next_review: "2026-07-28"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 2
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-24"
-star_history: "2026-07-24:1686"
+star_history: "2026-07-24:1686,2026-07-25:3538"
 tags:
   - github
   - "category/生產力"
@@ -796,4 +796,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-25|2026-07-25]] — 再次上榜，3.5k stars
 - [[2026-07-24|2026-07-24]] — 首次收錄，1.7k stars

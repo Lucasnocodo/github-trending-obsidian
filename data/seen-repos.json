@@ -3053,10 +3053,10 @@
   },
   "lopopolo/harness-engineering": {
     "first_seen": "2026-07-21",
-    "last_seen": "2026-07-24",
-    "times_seen": 4,
+    "last_seen": "2026-07-25",
+    "times_seen": 5,
     "stars_first": 868,
-    "stars_last": 2283
+    "stars_last": 2329
   },
   "MatinSenPai/Aether-GUI": {
     "first_seen": "2026-07-21",
@@ -3088,38 +3088,38 @@
   },
   "Blaizzy/nativ": {
     "first_seen": "2026-07-22",
-    "last_seen": "2026-07-24",
-    "times_seen": 3,
+    "last_seen": "2026-07-25",
+    "times_seen": 4,
     "stars_first": 647,
-    "stars_last": 822
+    "stars_last": 863
   },
   "Jakubantalik/thinking-orbs": {
     "first_seen": "2026-07-23",
-    "last_seen": "2026-07-24",
-    "times_seen": 2,
+    "last_seen": "2026-07-25",
+    "times_seen": 3,
     "stars_first": 655,
-    "stars_last": 841
+    "stars_last": 936
   },
   "xiejunjie524/handdraw-story-video": {
     "first_seen": "2026-07-23",
-    "last_seen": "2026-07-23",
-    "times_seen": 1,
+    "last_seen": "2026-07-25",
+    "times_seen": 2,
     "stars_first": 621,
-    "stars_last": 621
+    "stars_last": 643
   },
   "powerycy/goutoujunshi": {
     "first_seen": "2026-07-23",
-    "last_seen": "2026-07-24",
-    "times_seen": 2,
+    "last_seen": "2026-07-25",
+    "times_seen": 3,
     "stars_first": 548,
-    "stars_last": 689
+    "stars_last": 812
   },
   "andrewyng/openworker": {
     "first_seen": "2026-07-24",
-    "last_seen": "2026-07-24",
-    "times_seen": 1,
+    "last_seen": "2026-07-25",
+    "times_seen": 2,
     "stars_first": 1686,
-    "stars_last": 1686
+    "stars_last": 3538
   },
   "nyblnet/bento": {
     "first_seen": "2026-07-24",
@@ -3130,16 +3130,30 @@
   },
   "Vincentwei1021/video-shotcraft": {
     "first_seen": "2026-07-24",
-    "last_seen": "2026-07-24",
-    "times_seen": 1,
+    "last_seen": "2026-07-25",
+    "times_seen": 2,
     "stars_first": 1002,
-    "stars_last": 1002
+    "stars_last": 1496
   },
   "pireel/pireel": {
     "first_seen": "2026-07-24",
-    "last_seen": "2026-07-24",
-    "times_seen": 1,
+    "last_seen": "2026-07-25",
+    "times_seen": 2,
     "stars_first": 666,
-    "stars_last": 666
+    "stars_last": 716
+  },
+  "gnipbao/story-to-handdrawn-video": {
+    "first_seen": "2026-07-25",
+    "last_seen": "2026-07-25",
+    "times_seen": 1,
+    "stars_first": 610,
+    "stars_last": 610
+  },
+  "CatsJuice/sticker-forge": {
+    "first_seen": "2026-07-25",
+    "last_seen": "2026-07-25",
+    "times_seen": 1,
+    "stars_first": 530,
+    "stars_last": 530
   }
 }

@@ -7,9 +7,9 @@ language: Python
 license: NOASSERTION
 description: "一个先接住情绪、再分析关系并给出可执行策略的 Codex 恋爱军师，内置心理、法律、社会、人文、哲学、婚姻家庭与性学知识库，支持多元关系。"
 homepage: ""
-stars: 689
-stars_per_day: 230
-forks: 81
+stars: 812
+stars_per_day: 203
+forks: 93
 open_issues: 3
 created: 2026-07-20
 pushed_at: 2026-07-23
@@ -30,8 +30,8 @@ use_case: "提供情緒支持與關係分析的 AI 恋爱军师，幫助用戶�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-27"
+appearances: 3
+next_review: "2026-07-28"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-23"
-star_history: "2026-07-23:548,2026-07-24:689"
+star_history: "2026-07-23:548,2026-07-24:689,2026-07-25:812"
 tags:
   - github
   - "category/ai_ml"
@@ -844,5 +844,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-25|2026-07-25]] — 再次上榜，812 stars
 - [[2026-07-24|2026-07-24]] — 再次上榜，689 stars
 - [[2026-07-23|2026-07-23]] — 首次收錄，548 stars

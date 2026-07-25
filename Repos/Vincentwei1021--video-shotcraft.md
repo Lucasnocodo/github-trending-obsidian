@@ -7,12 +7,12 @@ language: TypeScript
 license: Apache-2.0
 description: "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 106 shot recipe cards, 161 motion previews, a production-ready template"
 homepage: "https://vincentwei1021.github.io/video-shotcraft/"
-stars: 1002
-stars_per_day: 251
-forks: 73
-open_issues: 1
+stars: 1496
+stars_per_day: 299
+forks: 122
+open_issues: 0
 created: 2026-07-19
-pushed_at: 2026-07-23
+pushed_at: 2026-07-24
 first_seen: 2026-07-24
 week: "2026-W30"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "將 AI 轉化為電影級產品視頻製作工具，提供 106 種拍
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-27"
+appearances: 2
+next_review: "2026-07-28"
 contributor_count: 0
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-24"
-star_history: "2026-07-24:1002"
+star_history: "2026-07-24:1002,2026-07-25:1496"
 tags:
   - github
   - "category/ai_ml"
@@ -846,4 +846,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-25|2026-07-25]] — 再次上榜，1.5k stars
 - [[2026-07-24|2026-07-24]] — 首次收錄，1.0k stars
