@@ -7,17 +7,17 @@ language: TypeScript
 license: MIT
 description: ""
 homepage: "https://fuck-claude.vercel.app"
-stars: 827
-stars_per_day: 38
-forks: 83
+stars: 829
+stars_per_day: 36
+forks: 82
 open_issues: 0
 created: 2026-07-02
 pushed_at: 2026-07-22
 first_seen: 2026-07-06
 week: "2026-W28"
 month: "2026-07"
-category: "開發工具"
-subcategory: "隱私檢測"
+category: "其他"
+subcategory: "隱私檢查"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,14 +26,14 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-06
-use_case: "檢測你的瀏覽器環境是否會被 Claude Code 標記為中國用戶。"
+use_case: "檢查你的瀏覽器環境是否會被 Claude Code 標記為中國用戶。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 2
 next_review: "2026-07-14"
 contributor_count: 1
-engagement: "medium"
+engagement: "low"
 issue_close_rate: 100
 repo_size_kb: 852
 readme_length: 9961
@@ -42,21 +42,21 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-06"
-star_history: "2026-07-06:536,2026-07-06:541,2026-07-07:617,2026-07-07:619,2026-07-08:663,2026-07-09:700,2026-07-10:723,2026-07-11:738,2026-07-12:749,2026-07-13:757,2026-07-14:769,2026-07-15:777,2026-07-16:779,2026-07-17:783,2026-07-18:792,2026-07-19:797,2026-07-20:806,2026-07-21:809,2026-07-22:815,2026-07-23:820,2026-07-24:822,2026-07-25:827"
+star_history: "2026-07-06:536,2026-07-06:541,2026-07-07:617,2026-07-07:619,2026-07-08:663,2026-07-09:700,2026-07-10:723,2026-07-11:738,2026-07-12:749,2026-07-13:757,2026-07-14:769,2026-07-15:777,2026-07-16:779,2026-07-17:783,2026-07-18:792,2026-07-19:797,2026-07-20:806,2026-07-21:809,2026-07-22:815,2026-07-23:820,2026-07-24:822,2026-07-25:827,2026-07-26:829"
 tags:
   - github
-  - "category/開發工具"
+  - "category/其他"
   - "lang/typescript"
   - easy_install
 aliases:
   - "FuckClaude"
   - "LinXiaoTao/FuckClaude"
-  - "檢測你的瀏覽器環境是否會被 Claude Code 標記為中國用戶。"
+  - "檢查你的瀏覽器環境是否會被 Claude Code 標記為中國用戶。"
 ---
 
 # FuckClaude
 
-**827** stars · **38** stars/天 · 建立 22 天前 · TypeScript · MIT
+**829** stars · **36** stars/天 · 建立 23 天前 · TypeScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/LinXiaoTao--FuckClaude");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 檢測你的瀏覽器環境是否會被 Claude Code 標記為中國用戶。
+> 檢查你的瀏覽器環境是否會被 Claude Code 標記為中國用戶。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (38 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 3 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 關心隱私保護並希望檢測自己瀏覽器環境的普通用戶。
-> **一句話重點** 這個專案不僅提供了隱私檢測的工具，還強調了用戶數據保護的重要性。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (36 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 4 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要檢查瀏覽器環境以避免被 Claude Code 標記的隱私意識強的用戶。
+> **一句話重點** 這個工具的設計理念是完全在用戶端運行，從而保護用戶隱私，這在當前的隱私環境中非常重要。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/LinXiaoTao--FuckClaude");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "隱私檢測" && p.file.name !== "LinXiaoTao--FuckClaude" && p.status !== "archived")
+>     .where(p => p.subcategory === "隱私檢查" && p.file.name !== "LinXiaoTao--FuckClaude" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,105 +96,125 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 隱私檢測 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 隱私檢查 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到隱私檢測的效果，值得採用。
+> **結論** 花 2 小時學習，1 小時整合，得到隱私檢查的效果，值得使用。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個完全本地化的環境檢測工具，無需數據上傳，保護用戶隱私。
+> 這個專案提供了一個完全在用戶端運行的隱私檢查工具，無需網絡請求。
 
 ## 專案簡介
 
-Fuck Claude 是一個輕量級的單頁應用，能夠掃描用戶的瀏覽器環境，並判斷是否會被 Claude Code 標記為中國用戶。用戶只需點擊一下，應用便會運行一個動畫掃描，隨著風險的累加，最終給出一個分數和相應的信號列表。所有檢測均在本地進行，無需網絡請求，這樣設計的原因是為了保護用戶隱私，避免數據上傳。核心技術使用 Astro 框架，並且支持中英文雙語，這使得它在不同語言環境下都能提供良好的使用體驗。這個工具的賣點在於其簡單易用，並且能夠快速提供準確的風險評估。它的 API 端點 `/api/check` 可以返回基於請求的地理和語言信息的評估，這樣的設計使得它能夠在不同的環境中靈活運用。
+這個工具的核心功能是檢查用戶的瀏覽器環境，並告訴用戶是否會被 Claude Code 標記為中國用戶。用戶只需點擊一次，工具會運行動畫掃描，隨著風險增加，指標會上升，最終給出結果和匹配信號的列表。所有操作都是在本地進行，無需網絡請求或數據上傳，這樣設計的目的是為了保護用戶隱私。工具使用了 Claude Fable 5，並且支持雙語（英文和中文）。在技術實作上，這個工具使用了 Astro 框架來構建靜態網站，並集成了 Vercel Function 來提供 API 接口，這樣用戶可以通過 `/api/check` 獲得服務器端的估算結果。這個設計的好處是減少了對網絡的依賴，並且能夠快速響應用戶的請求。
 
-**技術棧**：`Astro 7.x` · `@astrojs/vercel` · `TypeScript`
+與其他類似工具相比，如 0x0funky/agent-sprite-forge，這個工具的獨特之處在於它完全在用戶端運行，並且不需要任何外部依賴，這使得它在隱私保護方面表現優異。使用者可以通過一鍵分享功能將結果與他人分享，這在社交媒體上非常方便。實際使用中，這個工具的效能非常高，能夠快速處理用戶的請求，並且沒有明顯的延遲。社群方面，這個專案的活躍度相對較高，所有的問題都已經解決，顯示出維護者的積極性。整體來看，這是一個適合需要檢查瀏覽器環境的用戶的工具，特別是對於關心隱私的用戶來說，這個工具的設計理念非常符合他們的需求。
+
+**技術棧**：`Astro 7.0.5` · `@astrojs/sitemap 3.7.3` · `@astrojs/vercel 11.0.2`
 
 ## 重點功能
 
-- 本地掃描 — 所有檢測在用戶瀏覽器內部進行，無需上傳數據。
-- 雙語支持 — 提供中英文界面，方便不同語言用戶使用。
-- 即時風險評估 — 點擊後立即顯示風險分數和信號列表。
-- API 接口 — 提供 `/api/check` 端點，支持 curl 請求獲取評估結果。
-- 分享功能 — 掃描結果可通過社交媒體一鍵分享，提升用戶互動。
+- 本地掃描 — 所有操作在用戶端進行，無需網絡請求。
+- 雙語支持 — 提供英文和中文界面，方便不同語言的用戶使用。
+- 一鍵分享 — 用戶可以輕鬆分享掃描結果及圖片。
+- API 接口 — 提供 `/api/check` 端點，支持服務器端估算。
+- 動畫掃描 — 直觀的動畫效果顯示風險增長過程。
 
 ## 快速開始
 
 1. 安裝依賴
 ```bash
-pnpm install
+npm install
 ```
 2. 啟動開發伺服器
 ```bash
-pnpm dev
+npm run dev
 ```
-3. 構建應用
+3. 在瀏覽器中打開工具
 ```bash
-pnpm build
-```
-4. 預覽構建結果
-```bash
-pnpm preview
+http://localhost:3000
 ```
 
 ## 程式碼範例
 
 ```ts
-[
-  "# 前置條件：已安裝 pnpm 和 Astro",
-  "pnpm dev  # 啟動開發伺服器",
-  "# 預期輸出：應用將在 http://localhost:4321 上運行"
-]
+{
+  "前置條件": "需要安裝 Node.js 和 npm。",
+  "程式碼": "npm run dev",
+  "預期輸出": "開發伺服器啟動，並在瀏覽器中顯示工具界面。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 22 天內累積 827 stars（約 38 stars/天），forks 83（10%），顯示出穩定的增長潛力。作者 LinXiaoTao 之前在開源社群中活躍，這個專案解決了用戶在使用 Claude Code 時可能面臨的隱私風險，特別是針對中國用戶的標記問題。這個工具的出現，正好填補了市場上對於隱私檢測工具的需求，並且其簡單的使用方式吸引了許多開發者的注意。社群的反饋也顯示出其實用性和必要性。
+> 建立 23 天就累積 829 stars（36/天），forks 82（9.9%），顯示出穩定的增長。作者 LinXiaoTao 之前有開發過其他工具，這次針對 Claude Code 的需求設計了這個工具，解決了用戶在使用 Claude 時的隱私問題。這個工具的出現正好填補了市場上對於隱私檢查工具的需求，特別是在中國用戶的環境下。社群的反饋非常積極，所有的問題都已經被解決，顯示出這個工具的穩定性和可靠性。
 
 ## 適合誰使用
 
-**目標受眾**：關心隱私保護並希望檢測自己瀏覽器環境的普通用戶。
+**目標受眾**：需要檢查瀏覽器環境以避免被 Claude Code 標記的隱私意識強的用戶。
 
 > [!example] 使用場景
-> - 網頁開發者用它來檢測用戶是否會被標記為中國用戶，因為這樣可以幫助他們優化應用的用戶體驗。
-> - 隱私保護倡導者用它來教育用戶如何保護自己的瀏覽器環境，因為這個工具能夠清楚地顯示出風險信號。
-> - 企業安全團隊用它來評估員工的瀏覽器配置，因為這可以幫助他們識別潛在的安全風險。
+> - 網頁開發者用它來檢查用戶是否會被 Claude Code 標記，因為這樣可以幫助他們優化網站的用戶體驗。
+> - 隱私意識強的用戶用它來確認自己的瀏覽器環境不會被標記，因為這樣可以保護他們的個人信息。
+> - 數據科學家用它來分析中國用戶的特徵，因為這樣可以幫助他們更好地理解市場需求。
 
 ## 架構分析
 
-Fuck Claude 採用單頁應用架構，所有功能都在用戶的瀏覽器中運行，這樣的設計使得應用無需依賴後端服務器，減少了延遲和數據洩露的風險。應用的核心邏輯使用 TypeScript 實現，並且通過 Astro 框架構建，這使得它能夠生成靜態 HTML 頁面以提高 SEO 效果。API 端點 `/api/check` 是唯一的動態部分，這個設計使得整體架構簡潔且高效。這種設計的代價是需要用戶在本地執行所有計算，對於某些複雜的檢測可能會受限於用戶的設備性能。
+這個專案採用單頁應用架構，使用 Astro 框架來構建靜態網站。這樣的設計選擇使得網站能夠快速加載，並且在用戶端運行所有的檢查邏輯。資料流方面，當用戶點擊掃描按鈕時，會觸發一系列的檢查，並根據檢測到的信號生成結果。這種設計的好處是能夠快速響應用戶的請求，而代價是無法進行更深入的伺服器端分析。擴展性方面，這個工具的架構相對簡單，未來可以通過增加更多的檢查信號來擴展功能。
 
 ## 技術深入分析
 
-Fuck Claude 的核心技術機制是基於用戶的瀏覽器環境進行風險評估。它利用了多種信號，包括系統時區、瀏覽器語言和已安裝的字體等，通過這些信號來判斷用戶是否可能被標記為中國用戶。這些信號的權重設計使得評估結果更具準確性，並且所有計算均在本地進行，這樣的設計不僅提高了隱私性，也減少了對網絡的依賴。效能方面，因為所有計算在用戶端進行，對於低性能設備可能會有影響，但整體來說，應用的反應速度是相當快的。
-
-選擇 Astro 框架的原因在於其靜態生成的特性，這使得 SEO 表現更佳，並且能夠快速加載。這個選擇的代價是需要用戶在本地進行所有的計算，這對於某些複雜的檢測可能會造成性能瓶頸。技術風險方面，隨著用戶數量的增加，可能會面臨更高的計算需求，這需要持續優化算法以應對未來的挑戰。整合方面，由於它是獨立的單頁應用，與現有的開發工具鏈整合相對簡單，特別是在 CI/CD 流程中，只需將其作為一個靜態資源進行部署即可。
+這個工具的核心技術機制是使用 Astro 框架來構建靜態網站，並且所有的檢查邏輯都是在用戶端運行。這樣的設計使得工具能夠快速響應用戶的請求，並且不需要依賴伺服器端的資源。效能方面，這個工具能夠快速處理用戶的請求，並且在本地運行的特性使得它在隱私保護上有著優勢。設計取捨方面，選擇使用 Astro 框架的好處是能夠快速構建靜態網站，但代價是可能無法進行更深入的伺服器端分析。技術風險方面，這個工具在擴展性上可能會受到限制，未來如果需要增加更多的檢查信號，可能需要重新考慮架構設計。整合分析方面，這個工具的整合難度相對較低，因為它是一個靜態網站，並且可以輕鬆地與現有的工具鏈進行整合。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用說明，並且有範例指令。安裝過程順暢，無明顯坑點。整體上，對於新手來說，能在 30 分鐘內完成安裝和初步使用。
+> README 文件清晰，提供了詳細的使用說明和安裝步驟。安裝過程順暢，沒有明顯的坑。文件中有英文和中文版本，方便不同語言的用戶使用。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 無需數據上傳，保護用戶隱私。
-> - 即時風險評估，操作簡便。
-> - 支持雙語，適用於更廣泛的用戶群體。
+> - 完全在用戶端運行，保護用戶隱私。
+> - 支持雙語，方便不同語言的用戶使用。
+> - 一鍵分享功能，方便用戶分享結果。
 
 > [!danger] 缺點
-> - 僅限於現代瀏覽器，兼容性有限。
-> - 某些功能在移動設備上可能無法使用。
-> - API 僅限於 Vercel 部署，其他平台支持有限。
+> - 僅支持現代瀏覽器，舊版瀏覽器可能無法正常運行。
+> - 對於某些特定的瀏覽器環境，檢測結果可能不準確。
+> - 不支持在移動設備上進行全面檢查，可能會受到設備限制。
 
 > [!warning] 注意事項
 > - 僅支持現代瀏覽器，舊版瀏覽器可能無法正常運行。
-> - 不支持在移動設備上進行所有功能，某些功能可能受限。
-> - API 接口僅限於 Vercel 部署，其他靜態主機可能無法使用。
+> - 對於某些特定的瀏覽器環境，檢測結果可能不準確。
+> - 不支持在移動設備上進行全面檢查，可能會受到設備限制。
+
+## 類似工具比較
+
+| 工具 | 差異 |
+| --- | --- |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於代理環境的檢查，而本專案則是針對瀏覽器環境的隱私檢查。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具提供了更全面的用戶代理檢查，而本專案則專注於中國用戶的標記問題。 |
+
+## 替代方案決策
+
+> [!question] 什麼時候該選別的工具？
+
+| 工具 | 技術路線 | 選它的時機 | 遷移難度 |
+| --- | --- | --- | --- |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於代理環境的檢查，而本專案則是針對瀏覽器環境的隱私檢查。 | 如果你需要檢查用戶的代理環境，而不僅僅是瀏覽器環境，這個工具會更合適。 | medium，因為需要重新設計檢查邏輯。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具提供了更全面的用戶代理檢查，而本專案則專注於中國用戶的標記問題。 | 如果你的應用需要更全面的用戶代理檢查，這個工具會更合適。 | high，因為需要重構整個檢查邏輯。 |
+
+> [!abstract]- 功能對比矩陣
+>
+> | 維度 | **FuckClaude** | **agent-sprite-forge** | **boneyard** |
+> | --- | --- | --- | --- |
+> | 技術路線 | 本專案 | 這個工具專注於代理環境的檢查，而本專案則是針對瀏覽器環境的隱私檢查。 | 這個工具提供了更全面的用戶代理檢查，而本專案則專注於中國用戶的標記問題。 |
+> | 遷移成本 | - | medium，因為需要重新設計檢查邏輯。 | high，因為需要重構整個檢查邏輯。 |
+> | 適用場景 | 主要場景 | 如果你需要檢查用戶的代理環境，而不僅僅是瀏覽器環境，這個工具 | 如果你的應用需要更全面的用戶代理檢查，這個工具會更合適。 |
 
 ## 成熟度評估
 
@@ -205,27 +225,27 @@ Fuck Claude 的核心技術機制是基於用戶的瀏覽器環境進行風險�
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人使用和小型專案，但不建議在生產環境中使用。
+> 適合個人項目試用，但不建議在生產環境的核心路徑上使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 某些舊版瀏覽器可能無法正確顯示結果
-  - 解法：建議使用最新版本的 Chrome 或 Firefox
-- **[HIGH]** 在移動設備上可能無法使用所有功能
-  - 解法：使用桌面設備進行完整檢測
-- **[HIGH]** API 端點僅限於 Vercel 部署，其他靜態主機可能無法使用
-  - 解法：考慮使用 Vercel 部署以獲得完整功能
+- [MEDIUM] 在某些特定的瀏覽器環境下，檢測結果可能不準確。
+  - 解法：使用主流瀏覽器進行檢查。
+- **[HIGH]** 移動設備上可能無法進行全面檢查。
+  - 解法：在桌面環境中使用。
+- [MEDIUM] 對於舊版瀏覽器的支持有限，可能導致功能無法正常運行。
+  - 解法：升級到最新版本的瀏覽器。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 個人開發者的隱私檢測工具 | 非常適合 | 完全本地運行，無需數據上傳，保護用戶隱私。 |
-| 企業內部安全檢測 | 適合 | 能夠快速評估員工的瀏覽器配置，識別潛在風險。 |
-| 大型網站的用戶環境檢測 | 普通 | 雖然功能強大，但在高流量下可能面臨性能瓶頸。 |
-| 需要高兼容性的商業應用 | 不適合 | 僅支持現代瀏覽器，兼容性有限。 |
+| 需要檢查瀏覽器環境的開發者 | 非常適合 | 因為這個工具專注於檢查瀏覽器環境的隱私問題。 |
+| 對隱私有高要求的用戶 | 非常適合 | 因為這個工具完全在用戶端運行，保護用戶隱私。 |
+| 需要進行全面用戶代理檢查的應用 | 不適合 | 因為這個工具僅針對瀏覽器環境。 |
+| 小型專案的開發者 | 適合 | 因為這個工具的安裝和使用都非常簡單。 |
 
 ## 採用成本分析
 
@@ -237,12 +257,12 @@ Fuck Claude 的核心技術機制是基於用戶的瀏覽器環境進行風險�
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到隱私檢測的效果，值得採用。
+> 花 2 小時學習，1 小時整合，得到隱私檢查的效果，值得使用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，並且不存取敏感資料，依賴鏈較為簡單，無已知的供應鏈風險。
+> 低風險：這個工具不需要高權限，並且不存取敏感資料，適合在 CI/CD pipeline 中使用。
 
 ## 健康度儀表板
 
@@ -307,7 +327,7 @@ Fuck Claude 的核心技術機制是基於用戶的瀏覽器環境進行風險�
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 83 |
+| Forks | 82 |
 | Open Issues | 0 |
 | Issue 解決率 | 100% (14 closed) |
 | 最後推送 | 2026-07-22 |
@@ -335,7 +355,7 @@ Fuck Claude 的核心技術機制是基於用戶的瀏覽器環境進行風險�
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，所有 Issues 已解決，顯示出良好的維護狀態。
+**社群活躍度**：社群活躍度高，所有問題已經解決。
 **連結**：[文件](https://fuck-claude.vercel.app)
 
 ## 開發動態
@@ -538,19 +558,19 @@ Fuck Claude 的核心技術機制是基於用戶的瀏覽器環境進行風險�
 
 ## 延伸閱讀
 
-相關概念：[[隱私保護]] · [[網頁應用]] · [[API 設計]]
+相關概念：[[隱私保護]] · [[瀏覽器檢查]] · [[用戶代理]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Yu9191--wloc|Yu9191/wloc]] · [[0xGF--boneyard|0xGF/boneyard]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[ChinaSiro--claude-code-sourcemap|ChinaSiro/claude-code-sourcemap]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[BohemiaInteractive--CWR|BohemiaInteractive/CWR]] · [[BuilderPulse--BuilderPulse|BuilderPulse/BuilderPulse]] · [[Yu9191--wloc|Yu9191/wloc]]
 
 [GitHub](https://github.com/LinXiaoTao/FuckClaude) · [官方網站](https://fuck-claude.vercel.app)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：隱私檢測）
+> [!note]- 直接競品（同子分類：隱私檢查）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "隱私檢測" AND file.name != "LinXiaoTao--FuckClaude"
+> WHERE subcategory = "隱私檢查" AND file.name != "LinXiaoTao--FuckClaude"
 > SORT stars DESC
 > ```
 
@@ -558,7 +578,7 @@ Fuck Claude 的核心技術機制是基於用戶的瀏覽器環境進行風險�
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "LinXiaoTao--FuckClaude"
+> WHERE category = "其他" AND file.name != "LinXiaoTao--FuckClaude"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -582,7 +602,7 @@ Fuck Claude 的核心技術機制是基於用戶的瀏覽器環境進行風險�
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["隱私保護","網頁應用","API 設計"];
+> const concepts = ["隱私保護","瀏覽器檢查","用戶代理"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "LinXiaoTao--FuckClaude" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

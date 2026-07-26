@@ -7,18 +7,18 @@ language: JavaScript
 license: N/A
 description: "Codex Dream Skin"
 homepage: "https://www.dreamskin.cc"
-stars: 12239
-stars_per_day: 1360
-forks: 1229
-open_issues: 42
+stars: 12305
+stars_per_day: 1231
+forks: 1236
+open_issues: 38
 created: 2026-07-15
-pushed_at: 2026-07-25
+pushed_at: 2026-07-26
 first_seen: 2026-07-17
 week: "2026-W29"
 month: "2026-07"
 category: "開發工具"
 subcategory: "主題工具"
-release_tag: "v1.5.2"
+release_tag: "v1.5.5"
 install_complexity: "easy"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-17
-use_case: "為 Codex 桌面端提供可自定義的主題和外觀。"
+use_case: "為 Codex 桌面端提供可自定義的主題和外觀，增強開發者的使用體驗。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 6
 next_review: "2026-07-25"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 58
-repo_size_kb: 22250
-readme_length: 4798
+issue_close_rate: 62
+repo_size_kb: 23005
+readme_length: 6340
 bus_factor: 1
-last_release_days: 0
+last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-17"
-star_history: "2026-07-17:6371,2026-07-17:6404,2026-07-18:8857,2026-07-18:8879,2026-07-19:9838,2026-07-19:9839,2026-07-20:10545,2026-07-20:10551,2026-07-21:11177,2026-07-21:11180,2026-07-22:11583,2026-07-22:11585,2026-07-23:11890,2026-07-24:12107,2026-07-25:12239"
+star_history: "2026-07-17:6371,2026-07-17:6404,2026-07-18:8857,2026-07-18:8879,2026-07-19:9838,2026-07-19:9839,2026-07-20:10545,2026-07-20:10551,2026-07-21:11177,2026-07-21:11180,2026-07-22:11583,2026-07-22:11585,2026-07-23:11890,2026-07-24:12107,2026-07-25:12239,2026-07-26:12305"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "Codex-Dream-Skin"
   - "Fei-Away/Codex-Dream-Skin"
-  - "為 Codex 桌面端提供可自定義的主題和外觀。"
+  - "為 Codex 桌面端提供可自定義的主題和外觀，增強開發者的使用體驗。"
 ---
 
 # Codex-Dream-Skin
 
-**12.2k** stars · **1.4k** stars/天 · 建立 9 天前 · JavaScript · 未標註授權
+**12.3k** stars · **1.2k** stars/天 · 建立 10 天前 · JavaScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/Fei-Away--Codex-Dream-Skin");
@@ -69,16 +69,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v1.5.2` `easy-install`
+`v1.5.5` `easy-install`
 
 > [!summary] 一句話摘要
-> 為 Codex 桌面端提供可自定義的主題和外觀。
+> 為 Codex 桌面端提供可自定義的主題和外觀，增強開發者的使用體驗。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Recent · **熱度** Viral (1.4k stars/day)
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Viral (1.2k stars/day)
 > **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 希望為 Codex 應用增添個性化主題的普通用戶和開發者。
-> **一句話重點** Codex Dream Skin 的設計讓用戶能夠輕鬆自定義 Codex 的外觀，提升使用體驗。
+> **適合** 需要在 Codex 上自定義界面的開發者和設計師。
+> **一句話重點** Codex Dream Skin 不僅提供了主題切換功能，還兼顧了安全性和用戶體驗，讓開發者能夠輕鬆自定義工作環境。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,26 +102,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到個性化的 Codex 界面，值得嘗試。
+> **結論** 花 2 小時學習，1 小時整合，得到靈活的主題切換功能，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案提供了一個無需修改官方安裝包的主題自定義解決方案。
+> 這個專案提供了一個安全的主題切換解決方案，無需修改官方安裝包。
 
 ## 專案簡介
 
-Codex Dream Skin 是一個為 Codex 桌面應用提供自定義主題的工具，允許用戶透過簡單的安裝過程來變更應用的外觀。用戶只需下載安裝包，然後從菜單中選擇主題即可，無需複雜的命令行操作或編碼知識。這個工具的核心賣點在於它的可互動性，所有的 UI 元件都是原生控件，並且支持用戶自定義背景圖像，讓使用者可以創造出個性化的使用體驗。技術上，Codex Dream Skin 利用本機 CDP 注入來實現主題的應用，這樣的設計不會改變官方的二進制檔案，確保了安全性和穩定性。與其他主題工具相比，如 0xGF/boneyard 和 0xSero/codex-shim，Codex Dream Skin 提供了更直觀的安裝流程和更高的自定義自由度。
+Codex Dream Skin 是一個專為 Codex 桌面應用設計的主題和換膚工具，允許用戶輕鬆更換應用的外觀。用戶只需下載安裝包，安裝後即可通過菜單或系統托盤進行主題切換，無需修改官方安裝包。該工具支持從官方主題庫一鍵安裝主題，並提供了在線 Studio 來自定義主題，包括背景圖和配色。其核心賣點在於不改變官方二進制文件，並使用本機 CDP 注入來實現主題的應用，這樣可以保持安全性和穩定性。技術上，Codex Dream Skin 使用 JavaScript 和 PowerShell 等語言，並且在 macOS 和 Windows 上均可運行，安裝過程簡單直觀，無需額外的環境配置。
 
-這使得它在需要快速部署和個性化的情境中非常適合，尤其是對於那些不想深入技術細節的普通用戶。儘管如此，使用者仍需注意，因為目前的版本尚未簽名，可能會在某些系統上出現安全提示。這個專案的社群活躍度也相對較高，開發者在不斷修復問題和推出新功能，顯示出其良好的維護狀態。總體而言，Codex Dream Skin 是一個值得嘗試的工具，特別適合那些希望為 Codex 應用增添個性化風格的用戶。
+與其他主題工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，Codex Dream Skin 提供了更為友好的用戶界面和更高的安全性，因為它不會修改原始應用的代碼或結構。使用者可以在 DreamSkin.cc 上瀏覽和下載主題，並且支持導入自定義主題包，這使得它在功能上更具靈活性。該工具的社群活躍度良好，開發者積極回應問題，並且有定期更新。適合需要個性化開發環境的開發者，尤其是對於喜歡自定義界面的用戶來說，這是一個值得考慮的選擇。
 
 **技術棧**：`JavaScript` · `PowerShell` · `Shell` · `CSS` · `Swift` · `Inno Setup`
 
 ## 重點功能
 
-- 可互動 UI — 所有控件均為原生，提供真實的交互體驗。
-- 自定義背景 — 支持用戶上傳個性化背景圖，並自動調整配色。
-- 主題保存與切換 — 允許用戶在菜單中保存和切換主題。
-- 主題導入 — 支持導入 ZIP 格式的主題包，並進行安全性校驗。
-- 一鍵恢復官方外觀 — 用戶可隨時恢復到 Codex 的原始界面。
+- 一鍵換膚 — 直接從 DreamSkin.cc 安裝主題，無需手動下載。
+- 主題導入 — 支持導入自定義主題包，需包含特定格式的文件。
+- 真·可交互 — 所有控件均為原生，保證主題的真實性和互動性。
+- 可存主題 — 允許用戶在系統托盤中保存和切換本地主題。
+- 安全性 — 不修改官方安裝包，使用本機 CDP 注入，保障安全性。
 
 ## 快速開始
 
@@ -131,67 +131,65 @@ Codex Dream Skin 是一個為 Codex 桌面應用提供自定義主題的工具�
 ```
 2. 安裝應用
 ```bash
-macOS：打開 .dmg 文件並拖入 Applications；Windows：雙擊 .exe 文件並跟隨安裝向導
+macOS: 打開 .dmg 文件並拖入 Applications；Windows: 雙擊安裝程式並跟隨指示
 ```
-3. 選擇主題
+3. 啟動應用
 ```bash
-從菜單中選擇已保存的主題進行切換
+從菜單或系統托盤啟動 Codex Dream Skin
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 9 天內累積 12239 stars（1360/天），forks 1229（10.0%），顯示出強勁的增長潛力。作者 Fei-Away 和其他貢獻者在開源社群中有一定的影響力，這個專案解決了 Codex 用戶對於主題自定義的需求，之前用戶只能依賴官方提供的外觀。近期的推廣活動和社群討論也促進了這個專案的曝光度。高達 10% 的 forks/stars 比率顯示出許多用戶在實際修改和使用這個工具，而非僅僅觀望。
+> 建立 10 天就累積 12305 stars（1231/天），forks 1236（10.0%），這顯示出其快速增長的潛力。作者 Fei-Away 和其他貢獻者在開源社群中有一定的知名度，過去的項目也受到好評。這個工具解決了 Codex 用戶在外觀自定義上的需求，之前的方案往往需要修改原始代碼，風險較高。最近的推廣活動和社群討論也提升了其曝光率。技術上，這個工具的設計使得主題的應用不會影響到原始應用的穩定性，這在開發者中引起了廣泛的關注。forks/stars 比率為 10.0%，顯示出許多用戶對此工具進行了實際的修改和使用。
 
 ## 適合誰使用
 
-**目標受眾**：希望為 Codex 應用增添個性化主題的普通用戶和開發者。
+**目標受眾**：需要在 Codex 上自定義界面的開發者和設計師。
 
 > [!example] 使用場景
-> - 前端開發者用它來為 Codex 應用設計獨特的主題，因為這樣能提升工作氛圍並增加創造力。
-> - 設計師用它來快速切換不同的主題風格，因為這樣可以在不同的專案中保持一致的視覺風格。
-> - 普通用戶用它來美化 Codex 的界面，因為這樣能讓日常使用變得更愉悅，提升使用體驗。
+> - 前端開發者用它來自定義 Codex 的界面，因為這樣可以提升工作氛圍，增加開發的愉悅感。
+> - 設計師用它來快速切換不同的主題，因為這樣可以在不同的設計風格中進行比較，提升工作效率。
+> - 團隊負責人用它來為團隊成員提供一致的開發環境，因為這樣可以減少因界面差異造成的困惑。
 
 ## 架構分析
 
-Codex Dream Skin 採用本機 CDP 注入技術，這意味著它不需要修改 Codex 的原始二進制檔案，從而保持了應用的完整性和安全性。用戶界面由原生控件組成，這樣可以確保主題的互動性和流暢性。資料流方面，主題的應用過程中，首先會進行安全性校驗，然後再將主題應用到 UI 上。
+Codex Dream Skin 採用的是一種基於本機應用的架構，通過 CDP 注入來實現主題的應用。這樣的設計使得主題切換不會影響到原始應用的穩定性，並且能夠保持用戶的安全性。資料流方面，主題包的導入和切換過程中會進行多次安全校驗，確保主題的完整性和兼容性。
 
-這樣的設計使得用戶可以隨時恢復到官方外觀，降低了使用風險。選擇 CDP 注入而非其他方法（如修改二進制文件）是為了提高安全性和穩定性，但這也意味著可能無法實現更深層次的自定義。整體架構的擴展性良好，未來可以通過增加更多的主題包來擴展功能。
+選擇這種架構的代價在於需要用戶手動導入主題包，這在某些情況下可能會增加使用的複雜度。擴展性方面，該工具支持導入自定義主題包，但對於不符合格式的主題包則無法進行導入，這可能會限制用戶的選擇。整體而言，這種設計使得 Codex Dream Skin 在安全性和靈活性之間取得了良好的平衡。
 
 ## 技術深入分析
 
-Codex Dream Skin 的核心技術在於本機 CDP 注入，這使得它能夠在不修改原始應用的情況下實現主題的應用。這種方法不僅保證了應用的安全性，還能夠提供良好的用戶體驗，因為所有的 UI 元件都是原生控件。效能方面，由於不需要重啟應用，主題的切換過程相對流暢，並且不會影響到應用的其他功能。設計上選擇 JavaScript 和 PowerShell 作為主要技術棧，這使得開發和維護相對簡單，但也可能限制了某些高級功能的實現。
-
-依賴關係方面，這個專案的依賴較少，主要依賴於系統的原生功能，這降低了潛在的安全風險。技術風險方面，未來如果 Codex 的架構發生變化，可能會影響到這個工具的運作。此外，對於主題包的安全性檢查也需要持續關注，以防止不安全的內容被導入。整合方面，這個工具可以輕鬆與現有的 Codex 應用整合，並且不會對 CI/CD 流程造成影響，這使得它在開發環境中非常友好。
+Codex Dream Skin 的核心技術機制在於使用 CDP 注入來實現主題的應用，這樣的設計使得主題的切換不會影響到原始應用的穩定性。該工具能夠處理多達 32 MiB 的主題包，並且在導入過程中會進行多次安全校驗，以確保主題的完整性。選擇 JavaScript 和 PowerShell 作為主要開發語言，使得該工具在跨平台上具有良好的兼容性。這種選擇的好處在於能夠快速開發和迭代，但可能會增加對於 Windows 和 macOS 環境的依賴。設計上，Codex Dream Skin 在安全性和靈活性之間取得了良好的平衡，因為它不會修改原始應用的代碼，並且使用本機回環 CDP 注入來實現主題的應用。技術風險方面，若未來 Codex 的更新改變了 CDP 的行為，可能會影響到該工具的正常運作。整合方面，該工具能夠與主流的開發環境良好整合，並且提供了簡單的安裝和使用流程，降低了學習成本。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和使用說明。安裝過程順暢，無需額外的依賴或複雜的設置。文件中有良好的快速開始指南，讓新手能夠在短時間內上手。可惜的是，文件目前僅提供英文版本，對於非英語使用者可能會造成一定的障礙。
+> README 文件清晰且提供了詳細的安裝步驟和使用說明。安裝過程相對順暢，沒有明顯的坑。文件中提供了良好的 getting started guide，幫助新手快速上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 安裝過程簡單，無需技術背景。
-> - 提供高度的自定義選項，滿足不同用戶需求。
-> - 保持官方應用的完整性，降低安全風險。
+> - 簡單易用的安裝流程，無需額外配置。
+> - 支持一鍵安裝和主題導入，方便用戶自定義。
+> - 保持了官方應用的安全性，無需修改原始代碼。
 
 > [!danger] 缺點
-> - 目前版本未簽名，可能在某些系統上出現安全提示。
-> - 不支持自動更新主題，需手動下載。
-> - 僅支持 ZIP 格式的主題包，限制了靈活性。
+> - 主題包格式要求嚴格，使用不當可能導致導入失敗。
+> - 未簽名的安裝包可能會引起安全警告。
+> - 不支持自動配置 API Key，需手動設置。
 
 > [!warning] 注意事項
-> - 目前版本尚未簽名，可能在某些系統上出現安全提示。
-> - 不支持自定義主題的自動更新，需手動下載新主題包。
-> - 僅支持普通 ZIP 格式的主題包，不支持其他格式。
+> - 目前主題包僅支持特定格式，需包含 manifest.json 和 theme.css。
+> - 安裝包目前為未簽名版本，部分系統可能會出現安全提示。
+> - 不支持自動改寫 API Key 或 Base URL，需手動配置。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供主題自定義功能，但安裝過程較為複雜，需要用戶手動操作命令行。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 專注於 Codex 的功能擴展，而非主題自定義，適合需要功能增強的用戶。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 該工具專注於創建和管理 AI 代理的外觀，與 Codex Dream Skin 的主題切換功能不同。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了一個更為簡單的主題管理系統，但缺乏 Codex Dream Skin 的互動性和安全性。 |
 
 ## 替代方案決策
 
@@ -199,16 +197,16 @@ Codex Dream Skin 的核心技術在於本機 CDP 注入，這使得它能夠在�
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 使用命令行工具進行主題自定義，提供更高的靈活性，但對於普通用戶來說學習曲線較陡。 | 如果你的團隊已經熟悉命令行操作並需要更高的自定義能力。 | medium，因為需要轉換到命令行工具的使用方式。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 專注於功能擴展而非主題自定義，適合需要額外功能的用戶。 | 如果你需要在 Codex 中增加額外的功能，而不僅僅是改變外觀。 | low，因為可以與現有的 Codex 環境無縫整合。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於創建 AI 代理的外觀，與 Codex Dream Skin 的主題切換功能不同。 | 如果需要專門為 AI 代理設計的主題，這個工具更為合適。 | medium，因為需要重新設計主題的格式和內容。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供簡單的主題管理系統，但缺乏 Codex Dream Skin 的互動性和安全性。 | 如果只需要基本的主題切換功能，而不需要高安全性，這個工具可能更合適。 | low，因為主題格式相對簡單。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **Codex-Dream-Skin** | **boneyard** | **codex-shim** |
+> | 維度 | **Codex-Dream-Skin** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用命令行工具進行主題自定義，提供更高的靈活性，但對於普通用戶來說學習曲線較陡。 | 專注於功能擴展而非主題自定義，適合需要額外功能的用戶。 |
-> | 遷移成本 | - | medium，因為需要轉換到命令行工具的使用方式。 | low，因為可以與現有的 Codex 環境無縫整合。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經熟悉命令行操作並需要更高的自定義能力。 | 如果你需要在 Codex 中增加額外的功能，而不僅僅是改變外 |
+> | 技術路線 | 本專案 | 專注於創建 AI 代理的外觀，與 Codex Dream Skin 的主題切換功能不同。 | 提供簡單的主題管理系統，但缺乏 Codex Dream Skin 的互動性和安全性。 |
+> | 遷移成本 | - | medium，因為需要重新設計主題的格式和內容。 | low，因為主題格式相對簡單。 |
+> | 適用場景 | 主要場景 | 如果需要專門為 AI 代理設計的主題，這個工具更為合適。 | 如果只需要基本的主題切換功能，而不需要高安全性，這個工具可能 |
 
 ## 成熟度評估
 
@@ -219,27 +217,26 @@ Codex Dream Skin 的核心技術在於本機 CDP 注入，這使得它能夠在�
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人使用和小型專案試用，但不建議在生產環境中使用。
+> 適合個人試用，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 在某些系統上安裝後可能會出現安全提示，影響用戶體驗。
-  - 解法：參考安裝文檔中的放行方法。
-- **[HIGH]** 導入主題包時，若格式不正確會導致導入失敗。
-  - 解法：確保主題包包含正確的文件結構和格式。
-- [MEDIUM] 未簽名的版本可能會被某些防病毒軟體誤判為惡意軟體。
-  - 解法：在安裝前暫時禁用防病毒軟體，安裝後再啟用。
+- **[HIGH]** 安裝過程中可能會出現未簽名的安全警告
+  - 解法：按照文檔中的指示放行安裝包
+- [MEDIUM] 導入的主題包格式不正確會導致導入失敗
+  - 解法：確保主題包包含正確的 manifest.json 和 theme.css
+- [MEDIUM] CDP 注入可能在 Codex 更新後失效
+  - 解法：定期檢查更新和社群討論以獲取最新資訊
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊希望為 Codex 應用增添個性化主題 | 非常適合 | 提供簡單的安裝和高自由度的自定義選項。 |
-| 大型企業需要穩定的生產環境 | 不適合 | 目前仍在 beta 階段，存在潛在的穩定性風險。 |
-| 個人開發者希望快速美化 Codex 界面 | 非常適合 | 安裝簡單且能快速實現主題切換。 |
-| 對安全性要求極高的應用場景 | 普通 | 雖然不修改官方二進制，但仍需注意未簽名的風險。 |
+| 小型開發團隊的 Codex 環境 | 非常適合 | 能夠快速自定義和切換主題，提高團隊的工作效率。 |
+| 個人開發者的日常使用 | 適合 | 提供了靈活的主題選擇，增強了使用體驗。 |
+| 大型企業的生產環境 | 不適合 | 可能存在安全性和穩定性風險，不建議在關鍵系統中使用。  |
 
 ## 採用成本分析
 
@@ -251,12 +248,12 @@ Codex Dream Skin 的核心技術在於本機 CDP 注入，這使得它能夠在�
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到個性化的 Codex 界面，值得嘗試。
+> 花 2 小時學習，1 小時整合，得到靈活的主題切換功能，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，且不存取敏感資料，但未簽名的版本可能會引起安全警告。
+> 低風險：該工具不需要高權限，並且不會存取敏感資料。依賴鏈的信任程度較高，無已知的供應鏈風險。
 
 ## 健康度儀表板
 
@@ -322,12 +319,12 @@ Codex Dream Skin 的核心技術在於本機 CDP 注入，這使得它能夠在�
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 1.2k |
-| Open Issues | 42 |
-| Issue 解決率 | 58% (57 closed) |
-| 最後推送 | 2026-07-25 |
+| Open Issues | 38 |
+| Issue 解決率 | 62% (63 closed) |
+| 最後推送 | 2026-07-26 |
 | 建立日期 | 2026-07-15 |
 | 官方網站 | [Link](https://www.dreamskin.cc) |
-| Repo 大小 | 21.7 MB |
+| Repo 大小 | 22.5 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Fei-Away/Codex-Dream-Skin) |
 
 > [!info]- 語言組成
@@ -344,39 +341,39 @@ Codex Dream Skin 的核心技術在於本機 CDP 注入，這使得它能夠在�
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Fei-Away](https://github.com/Fei-Away) | 32 |
+> | [@Fei-Away](https://github.com/Fei-Away) | 42 |
 > | [@rwang23](https://github.com/rwang23) | 5 |
 > | [@Finderchangchang](https://github.com/Finderchangchang) | 1 |
 > | [@wasim-builds](https://github.com/wasim-builds) | 1 |
 > | [@nightt5879](https://github.com/nightt5879) | 1 |
 
-**最新版本**：v1.5.2 — Codex Dream Skin v1.5.2 (2026-07-25)
+**最新版本**：v1.5.5 — Codex Dream Skin v1.5.5 (2026-07-25)
 
 > [!info]- Release Notes
-> ## Codex Dream Skin v1.5.2
+> ## Codex Dream Skin v1.5.5
 > 
 > ### Downloads
 > 
-> - **macOS:** [CodexDreamSkin-v1.5.2.dmg](https://github.com/Fei-Away/Codex-Dream-Skin/releases/download/v1.5.2/CodexDreamSkin-v1.5.2.dmg)
-> - **Windows:** [CodexDreamSkin-Setup-v1.5.2.exe](https://github.com/Fei-Away/Codex-Dream-Skin/releases/download/v1.5.2/CodexDreamSkin-Setup-v1.5.2.exe)
-> - [SHA256SUMS.txt](https://github.com/Fei-Away/Codex-Dream-Skin/releases/download/v1.5.2/SHA256SUMS.txt)
+> - **macOS:** [CodexDreamSkin-v1.5.5.dmg](https://github.com/Fei-Away/Codex-Dream-Skin/releases/download/v1.5.5/CodexDreamSkin-v1.5.5.dmg)
+> - **Windows:** [CodexDreamSkin-Setup-v1.5.5.exe](https://github.com/Fei-Away/Codex-Dream-Skin/releases/download/v1.5.5/CodexDreamSkin-Setup-v1.5.5.exe)
+> - [SHA256SUMS.txt](https://github.com/Fei-Away/Codex-Dream-Skin/releases/download/v1.5.5/SHA256SUMS.txt)
 > 
 > The packages are currently unsigned. Follow the graphical first-run steps in
-> [macOS installation](https://github.com/Fei-Away/Codex-Dream-Skin/blob/v1.5.2/docs/install-macos.md)
-> or [Windows installation](https://github.com/Fei-Away/Codex-Dream-Skin/blob/v1.5.2/docs/install-windows.md).
+> [macOS installation](https://github.com/Fei-Away/Codex-Dream-Skin/blob/v1.5.5/docs/install-macos.md)
+> or [Windows installation](https://github.com/Fei-Away/Codex-Dream-Skin/blob/v1.5.5/docs/install-windows.md).
 > No terminal trust command is required for ordinary users.
 > 
-> This release was built automatically from b5a614eb5b0eeb618d277804a77c913daa8c1511 after the version bump reached main.
+> This release was built automatically from c020d2461225e965f1f3c426959773b26d23799d after the version bump reached main.
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和修復問題。
+**社群活躍度**：社群活躍，開發者積極回應問題，並定期更新。
 **連結**：[文件](https://github.com/Fei-Away/Codex-Dream-Skin/docs)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-24 ~ 2026-07-25）
-> **活躍天數** 2 天 · **最新 commit** fix(macos): brace $code to stop unbound-variable crash in menu bar apply alert (#254)
+> [!abstract] 最近 10 次 commit（2026-07-25 ~ 2026-07-26）
+> **活躍天數** 2 天 · **最新 commit** fix(readme): use width= not height= for the DreamSkin mark so it actually scales up
 
 ## 熱門議題
 
@@ -400,7 +397,21 @@ Codex Dream Skin 的核心技術在於本機 CDP 注入，這使得它能夠在�
 > 
 >   一张图，一种心情 · 写代码，也要有氛围感
 > 
+>   官方主题库：DreamSkin.cc ·
+>   主题库 Gallery ·
+>   在线 Studio
+> 
 >   非 OpenAI 官方产品。不修改 .app / app.asar / WindowsApps。
+> 
+> ## 🤝 独家赞助
+> 
+> 感谢 Passion8 独家赞助本项目！Passion8 是一家面向开发者的 AI API 中转服务商，为个人开发者与团队提供稳定、低成本的主流大模型接入。
+> 满血 AI · 触手可及：OpenAI、Claude 全系列原版模型，无降智、无套壳；使用前沿 AI 模型仅需官方价格的一小部分，充值 1:1，1$ = 1¥。保留原有官方 SDK，只把 Base URL 换成 Passion8，Claude Code、Codex、Grok 以及任意 OpenAI 兼容客户端都能直接跑——一行配置，代码不用改。
+> 全球节点加速：Cloudflare 全球边缘 + 多线路 BBR 加速，低延迟、高可用、稳定如一；7×24 稳定中转，99.9% SLA，首 Token 目标 1 秒内。
+> 安全可靠：独立 API Key、密钥加密存储、全链路 HTTPS，隐私优先。
+> Passion8 为本项目用户准备了专属福利：通过此链接注册，首次充值自动赠送 10% 额度，无需申请，30 分钟内到账。有问题联系 support@passion8.cc。
+> 
+> 换肤与 API 配置互相独立，本项目不会自动改写你的模型供应商设置。
 > 
 > ## 直接安装
 > 
@@ -413,21 +424,54 @@ Codex Dream Skin 的核心技術在於本機 CDP 注入，這使得它能夠在�
 > 不需要 clone 源码、安装 Node.js 或手动运行 `.sh` / `.ps1`。首次未签名放行、更新和卸载步骤见
 > [macOS 安装说明](./docs/install-macos.md) / [Windows 安装说明](./docs/install-windows.md)。
 > 
-> ## 赞助商
+> ## 主题库与社区
 > 
 >   
 >     
 >   
 > 
->   更智能的连接 · 更热爱的创造
->   热爱驱动 · 无限可能 · Connect AI · Power Creation
+>   DreamSkin.cc · 本项目的官方主题库与创作平台
+>   Make your workspace yours.
 > 
->   感谢 passion8.cc 赞助本项目。
->   满血 AI 中转：官方模型直连，无降智、无套壳；一行配置接入 Codex / Claude Code / Grok。
+>   浏览主题库 →
+>   &nbsp;·&nbsp;
+>   在线 Studio →
+> 
+> - [**主题库 Gallery**](https://dreamskin.cc/gallery)：浏览社区已审核的主题，支持最新 / 热门排序和创作者榜单。
+>   每套主题都能先在网页里的桌面模拟器中试穿，再决定装不装。
 > 
 >   
->     换肤与 API 配置互相独立，本项目不会自动改写你的模型供应商设置。
+>     
 >   
+>   社区主题「晨雾山水」的在线试穿 · 首页/任务页、宽窄窗口、侧栏展开收起都能当场切，满意了再一键换肤或下载主题包
+> 
+> - [**在线 Studio**](https://dreamskin.cc/studio)：在浏览器里换背景图、调主题色、写 Safe CSS，导出 `.zip` 主题包，
+>   也可以直接投稿到主题库（需登录，经人工审核后公开）。
+> 
+>   
+>     
+>   
+>   在线 Studio · 左侧实时预览，右侧调背景图、外观焦点与配色；主题库里任意一套主题都能一键载入继续改
+> 
+> macOS 菜单栏和 Windows 托盘都有「主题库 Gallery」和「在线 Studio」入口，可以直接打开。
+> 
+> ### 一键换肤
+> 
+> 在 DreamSkin.cc 上看到喜欢的主题，点「一键换肤」就能让本机客户端直接装上，不用先下载再手动导入。
+> 需要 v1.5.0 或更新的客户端（建议 v1.5.5 及以上）。
+> 
+> 流程与安全边界：
+> 
+> - 网页通过 `dreamskin://apply?version=ver_...` 唤起本机 App。链接只能携带一个主题版本 ID，**不能**携带
+>   任意 URL、文件路径或命令，也不存在静默应用参数。
+> - App 只向固定的官方 API 取包，并拒绝重定向。
+> - 换肤前弹出原生确认框，并核对该版本的审核状态、一键兼容标记、版本号、包大小、实际下载字节数和 SHA-256。
+> - 通过后复用与手动导入完全相同的 ZIP、manifest、图片与 Safe CSS 校验。
+> - 只有真实渲染进程确认新主题已生效才算成功。启动或渲染失败会自动尝试恢复换肤前的主题，恢复结果
+>   同样要经过可见性验证；无法确认时会明确报告状态未确认，而不是假装已恢复。
+> 
+> 只有完整满足当前主题包契约（背景图 + `theme.json` + 非空 `theme.css` + 声明 `safe-css` 能力）的主题
+> 才会显示一键换肤按钮；不满足的走下面的手动导入。
 > 
 > ## 实测精选预设
 > 
@@ -462,6 +506,7 @@ Codex Dream Skin 的核心技術在於本機 CDP 注入，這使得它能夠在�
 > - **真背景层**：一张 16:9 纯壁纸连续铺满整窗，首页突出氛围，任务页自动降低干扰
 > - **可换图**：换一张喜欢的纯背景，自适应焦点、安全区和配色后变成你的主题
 > - **可存主题**：macOS 菜单栏与 Windows 系统托盘都能保存/切换本地主题
+> - **一键换肤**：在 [DreamSkin.cc](https://dreamskin.cc) 上点一下，客户端核对来源与校验和后直接装上
 > - **可导入主题包**：两端都可直接选择普通 `.zip`，安全校验后加入本地主题库
 > - **可恢复**：一键还原官方外观
 > - **相对安全**：本机回环 CDP 注入，不改官方二进制与签名
@@ -484,6 +529,9 @@ Codex Dream Skin 的核心技術在於本機 CDP 注入，這使得它能夠在�
 > 
 > ### 导入下载的主题
 > 
+> 从 DreamSkin.cc 装主题优先用[一键换肤](#一键换肤)。下面是手动导入 `.zip` 的兜底路径，也适用于任何
+> 其他来源的主题包。
+> 
 > 在 macOS 菜单栏选择“导入主题 ZIP…”，或在 Windows 托盘选择同名菜单。只支持普通 `.zip`，
 > 不支持 `.dreamskin` 后缀，也不要仅改后缀伪装。正式 Studio 主题包包含 `manifest.json`、
 > `theme.json`、非空 `theme.css` 和恰好一张 `background.webp|jpg|png`；还可包含 `LICENSE.txt` 和预留的
@@ -503,8 +551,7 @@ Codex Dream Skin 的核心技術在於本機 CDP 注入，這使得它能夠在�
 > 
 > 菜单里有“打开主题文件夹”快捷入口。移动后重新打开菜单/托盘即可；不要再套一层目录，也不要放链接、
 > 嵌套压缩包或缺少三件套的文件夹。手动目录不会经过 ZIP 导入器的归档校验，请只使用可信内容。升级前
-> 已经保存且没有 CSS 的 legacy 主题仍可切换，但不会注入额外 CSS。两端菜单也可直接打开 DreamSkin.cc
-> 的“主题库 Gallery”和“在线 Studio”。
+> 已经保存且没有 CSS 的 legacy 主题仍可切换，但不会注入额外 CSS。
 > 
 > ### 开发者：从源码运行
 > 
@@ -549,7 +596,7 @@ Codex Dream Skin 的核心技術在於本機 CDP 注入，這使得它能夠在�
 
 相關概念：[[CLI/TUI]] · [[自動化]] · [[主題設計]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlephAITech--WorkBuddyGuide|AlephAITech/WorkBuddyGuide]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlephAITech--WorkBuddyGuide|AlephAITech/WorkBuddyGuide]]
 
 [GitHub](https://github.com/Fei-Away/Codex-Dream-Skin) · [官方網站](https://www.dreamskin.cc)
 

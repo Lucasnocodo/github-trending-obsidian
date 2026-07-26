@@ -2,14 +2,14 @@
 tags:
   - concept
 aliases:
-  - "嵌入式"
+  - "AgenticOps"
 ---
 
-# 嵌入式
+# AgenticOps
 
 ## 是什麼
 
-嵌入式系統是指專門設計來執行特定任務的計算機系統，通常嵌入在其他設備中。這些系統在日常生活中隨處可見，例如家電、汽車和醫療設備，因為它們能夠提高效率並降低成本。常見的開發工具包括Arduino、Raspberry Pi和ESP32等。
+AgenticOps 是一種自動化操作的概念，專注於使用智能代理來管理和優化系統的運行。這種方式能提高效率，減少人為錯誤，並且在雲端環境中尤為重要，像是使用 AWS Lambda 或 Google Cloud Functions 來實現自動化任務。
 
 ## 快速統計
 
