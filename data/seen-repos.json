@@ -3088,17 +3088,17 @@
   },
   "Blaizzy/nativ": {
     "first_seen": "2026-07-22",
-    "last_seen": "2026-07-25",
-    "times_seen": 4,
+    "last_seen": "2026-07-26",
+    "times_seen": 5,
     "stars_first": 647,
-    "stars_last": 863
+    "stars_last": 886
   },
   "Jakubantalik/thinking-orbs": {
     "first_seen": "2026-07-23",
-    "last_seen": "2026-07-25",
-    "times_seen": 3,
+    "last_seen": "2026-07-26",
+    "times_seen": 4,
     "stars_first": 655,
-    "stars_last": 936
+    "stars_last": 1022
   },
   "xiejunjie524/handdraw-story-video": {
     "first_seen": "2026-07-23",
@@ -3109,17 +3109,17 @@
   },
   "powerycy/goutoujunshi": {
     "first_seen": "2026-07-23",
-    "last_seen": "2026-07-25",
-    "times_seen": 3,
+    "last_seen": "2026-07-26",
+    "times_seen": 4,
     "stars_first": 548,
-    "stars_last": 812
+    "stars_last": 885
   },
   "andrewyng/openworker": {
     "first_seen": "2026-07-24",
-    "last_seen": "2026-07-25",
-    "times_seen": 2,
+    "last_seen": "2026-07-26",
+    "times_seen": 3,
     "stars_first": 1686,
-    "stars_last": 3538
+    "stars_last": 5217
   },
   "nyblnet/bento": {
     "first_seen": "2026-07-24",
@@ -3130,30 +3130,44 @@
   },
   "Vincentwei1021/video-shotcraft": {
     "first_seen": "2026-07-24",
-    "last_seen": "2026-07-25",
-    "times_seen": 2,
+    "last_seen": "2026-07-26",
+    "times_seen": 3,
     "stars_first": 1002,
-    "stars_last": 1496
+    "stars_last": 1768
   },
   "pireel/pireel": {
     "first_seen": "2026-07-24",
-    "last_seen": "2026-07-25",
-    "times_seen": 2,
+    "last_seen": "2026-07-26",
+    "times_seen": 3,
     "stars_first": 666,
-    "stars_last": 716
+    "stars_last": 756
   },
   "gnipbao/story-to-handdrawn-video": {
     "first_seen": "2026-07-25",
-    "last_seen": "2026-07-25",
-    "times_seen": 1,
+    "last_seen": "2026-07-26",
+    "times_seen": 2,
     "stars_first": 610,
-    "stars_last": 610
+    "stars_last": 631
   },
   "CatsJuice/sticker-forge": {
     "first_seen": "2026-07-25",
-    "last_seen": "2026-07-25",
-    "times_seen": 1,
+    "last_seen": "2026-07-26",
+    "times_seen": 2,
     "stars_first": 530,
-    "stars_last": 530
+    "stars_last": 576
+  },
+  "slvDev/esp32-ai": {
+    "first_seen": "2026-07-26",
+    "last_seen": "2026-07-26",
+    "times_seen": 1,
+    "stars_first": 875,
+    "stars_last": 875
+  },
+  "mikiarlo3/ai-copywriter": {
+    "first_seen": "2026-07-26",
+    "last_seen": "2026-07-26",
+    "times_seen": 1,
+    "stars_first": 621,
+    "stars_last": 621
   }
 }

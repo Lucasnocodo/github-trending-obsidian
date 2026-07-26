@@ -7,10 +7,10 @@ language: TypeScript
 license: AGPL-3.0
 description: "Open-source, backend-free AI video editor for talking-head video — storyboarding, designed graphics, kinetic captions, themes and in-browser WebCodecs export. Drivable by any AI agent over MCP."
 homepage: "https://www.pireel.com"
-stars: 716
-stars_per_day: 179
-forks: 56
-open_issues: 1
+stars: 756
+stars_per_day: 151
+forks: 63
+open_issues: 4
 created: 2026-07-20
 pushed_at: 2026-07-24
 first_seen: 2026-07-24
@@ -30,8 +30,8 @@ use_case: "提供一個無需後端的 AI 影片編輯器，專為對話式影�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-01"
+appearances: 3
+next_review: "2026-08-02"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-24"
-star_history: "2026-07-24:666,2026-07-25:716"
+star_history: "2026-07-24:666,2026-07-25:716,2026-07-26:756"
 tags:
   - github
   - "category/開發工具"
@@ -742,5 +742,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-26|2026-07-26]] — 再次上榜，756 stars
 - [[2026-07-25|2026-07-25]] — 再次上榜，716 stars
 - [[2026-07-24|2026-07-24]] — 首次收錄，666 stars

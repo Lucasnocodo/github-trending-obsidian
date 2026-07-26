@@ -7,10 +7,10 @@ language: JavaScript
 license: MIT
 description: "A tactile WebGL sticker maker with rich text, image uploads, and interactive peel physics."
 homepage: "http://sticker.oooo.so/"
-stars: 530
-stars_per_day: 133
-forks: 46
-open_issues: 0
+stars: 576
+stars_per_day: 115
+forks: 52
+open_issues: 1
 created: 2026-07-20
 pushed_at: 2026-07-25
 first_seen: 2026-07-25
@@ -30,8 +30,8 @@ use_case: "讓用戶輕鬆創建互動式 WebGL 貼紙，支持文本和圖像�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-01"
+appearances: 2
+next_review: "2026-08-02"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-25"
-star_history: "2026-07-25:530,2026-07-25:530"
+star_history: "2026-07-25:530,2026-07-25:530,2026-07-26:576"
 tags:
   - github
   - "category/開發工具"
@@ -883,4 +883,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-26|2026-07-26]] — 再次上榜，576 stars
 - [[2026-07-25|2026-07-25]] — 首次收錄，530 stars
