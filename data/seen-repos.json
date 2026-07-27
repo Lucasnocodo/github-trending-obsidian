@@ -3088,17 +3088,17 @@
   },
   "Blaizzy/nativ": {
     "first_seen": "2026-07-22",
-    "last_seen": "2026-07-26",
-    "times_seen": 5,
+    "last_seen": "2026-07-27",
+    "times_seen": 6,
     "stars_first": 647,
-    "stars_last": 886
+    "stars_last": 925
   },
   "Jakubantalik/thinking-orbs": {
     "first_seen": "2026-07-23",
-    "last_seen": "2026-07-26",
-    "times_seen": 4,
+    "last_seen": "2026-07-27",
+    "times_seen": 5,
     "stars_first": 655,
-    "stars_last": 1022
+    "stars_last": 1104
   },
   "xiejunjie524/handdraw-story-video": {
     "first_seen": "2026-07-23",
@@ -3109,17 +3109,17 @@
   },
   "powerycy/goutoujunshi": {
     "first_seen": "2026-07-23",
-    "last_seen": "2026-07-26",
-    "times_seen": 4,
+    "last_seen": "2026-07-27",
+    "times_seen": 5,
     "stars_first": 548,
-    "stars_last": 885
+    "stars_last": 969
   },
   "andrewyng/openworker": {
     "first_seen": "2026-07-24",
-    "last_seen": "2026-07-26",
-    "times_seen": 3,
+    "last_seen": "2026-07-27",
+    "times_seen": 4,
     "stars_first": 1686,
-    "stars_last": 5217
+    "stars_last": 7051
   },
   "nyblnet/bento": {
     "first_seen": "2026-07-24",
@@ -3137,17 +3137,17 @@
   },
   "pireel/pireel": {
     "first_seen": "2026-07-24",
-    "last_seen": "2026-07-26",
-    "times_seen": 3,
+    "last_seen": "2026-07-27",
+    "times_seen": 4,
     "stars_first": 666,
-    "stars_last": 756
+    "stars_last": 779
   },
   "gnipbao/story-to-handdrawn-video": {
     "first_seen": "2026-07-25",
-    "last_seen": "2026-07-26",
-    "times_seen": 2,
+    "last_seen": "2026-07-27",
+    "times_seen": 3,
     "stars_first": 610,
-    "stars_last": 631
+    "stars_last": 655
   },
   "CatsJuice/sticker-forge": {
     "first_seen": "2026-07-25",
@@ -3158,16 +3158,30 @@
   },
   "slvDev/esp32-ai": {
     "first_seen": "2026-07-26",
-    "last_seen": "2026-07-26",
-    "times_seen": 1,
+    "last_seen": "2026-07-27",
+    "times_seen": 2,
     "stars_first": 875,
-    "stars_last": 875
+    "stars_last": 1436
   },
   "mikiarlo3/ai-copywriter": {
     "first_seen": "2026-07-26",
-    "last_seen": "2026-07-26",
-    "times_seen": 1,
+    "last_seen": "2026-07-27",
+    "times_seen": 2,
     "stars_first": 621,
-    "stars_last": 621
+    "stars_last": 863
+  },
+  "mshumer/Claude-of-Duty": {
+    "first_seen": "2026-07-27",
+    "last_seen": "2026-07-27",
+    "times_seen": 1,
+    "stars_first": 721,
+    "stars_last": 721
+  },
+  "makecindy/cindy": {
+    "first_seen": "2026-07-27",
+    "last_seen": "2026-07-27",
+    "times_seen": 1,
+    "stars_first": 615,
+    "stars_last": 615
   }
 }

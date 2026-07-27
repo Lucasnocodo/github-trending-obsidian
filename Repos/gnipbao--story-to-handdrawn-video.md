@@ -7,9 +7,9 @@ language: JavaScript
 license: MIT
 description: "Agent skill: convert Chinese story copy or ordered images into a hand-drawn diary-comic animation (silent MP4 picture track)."
 homepage: ""
-stars: 631
-stars_per_day: 158
-forks: 70
+stars: 655
+stars_per_day: 131
+forks: 73
 open_issues: 0
 created: 2026-07-21
 pushed_at: 2026-07-21
@@ -30,8 +30,8 @@ use_case: "將中文故事或上傳的漫畫頁面轉換為手繪日記漫畫動
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-02"
+appearances: 3
+next_review: "2026-08-03"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-25"
-star_history: "2026-07-25:610,2026-07-26:631"
+star_history: "2026-07-25:610,2026-07-26:631,2026-07-27:655"
 tags:
   - github
   - "category/其他"
@@ -903,5 +903,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-27|2026-07-27]] — 再次上榜，655 stars
 - [[2026-07-26|2026-07-26]] — 再次上榜，631 stars
 - [[2026-07-25|2026-07-25]] — 首次收錄，610 stars

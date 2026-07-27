@@ -7,10 +7,10 @@ language: Swift
 license: MIT
 description: "Local AI, native to your Mac. Chat, serve, monitor, and connect MLX models from one macOS app."
 homepage: "https://blaizzy.github.io/nativ/"
-stars: 886
-stars_per_day: 177
-forks: 47
-open_issues: 39
+stars: 925
+stars_per_day: 154
+forks: 51
+open_issues: 33
 created: 2026-07-20
 pushed_at: 2026-07-26
 first_seen: 2026-07-22
@@ -30,8 +30,8 @@ use_case: "在你的 Mac 上本地運行 AI 模型的應用程式，支持聊天
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-08-02"
+appearances: 6
+next_review: "2026-08-03"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 26
@@ -42,7 +42,7 @@ last_release_days: 6
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-22"
-star_history: "2026-07-22:647,2026-07-22:647,2026-07-23:768,2026-07-23:768,2026-07-24:822,2026-07-24:822,2026-07-25:863,2026-07-25:863,2026-07-26:886,2026-07-26:886"
+star_history: "2026-07-22:647,2026-07-22:647,2026-07-23:768,2026-07-23:768,2026-07-24:822,2026-07-24:822,2026-07-25:863,2026-07-25:863,2026-07-26:886,2026-07-26:886,2026-07-27:925"
 tags:
   - github
   - "category/ai_ml"
@@ -866,6 +866,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-27|2026-07-27]] — 再次上榜，925 stars
 - [[2026-07-26|2026-07-26]] — 再次上榜，886 stars
 - [[2026-07-25|2026-07-25]] — 再次上榜，863 stars
 - [[2026-07-24|2026-07-24]] — 再次上榜，822 stars

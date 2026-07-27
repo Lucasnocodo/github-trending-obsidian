@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "Dotted thought-orb loading indicators for AI & agent UIs — six tuned states, two sizes, auto dark/light"
 homepage: ""
-stars: 1024
-stars_per_day: 256
-forks: 76
-open_issues: 6
+stars: 1104
+stars_per_day: 221
+forks: 82
+open_issues: 7
 created: 2026-07-21
 pushed_at: 2026-07-21
 first_seen: 2026-07-23
@@ -30,8 +30,8 @@ use_case: "提供 AI 和代理 UI 的點狀思考球載入指示器，具備六�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-07-29"
+appearances: 5
+next_review: "2026-07-30"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-23"
-star_history: "2026-07-23:655,2026-07-23:656,2026-07-24:841,2026-07-24:841,2026-07-25:936,2026-07-25:936,2026-07-26:1022,2026-07-26:1024"
+star_history: "2026-07-23:655,2026-07-23:656,2026-07-24:841,2026-07-24:841,2026-07-25:936,2026-07-25:936,2026-07-26:1022,2026-07-26:1024,2026-07-27:1104"
 tags:
   - github
   - "category/開發工具"
@@ -750,6 +750,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-27|2026-07-27]] — 再次上榜，1.1k stars
 - [[2026-07-26|2026-07-26]] — 再次上榜，1.0k stars
 - [[2026-07-25|2026-07-25]] — 再次上榜，936 stars
 - [[2026-07-24|2026-07-24]] — 再次上榜，841 stars
