@@ -7,8 +7,8 @@ language: TypeScript
 license: AGPL-3.0
 description: "One-click desktop GUI for the Aether censorship-circumvention tunnel — Tauri v2, React 19, Rust"
 homepage: ""
-stars: 774
-stars_per_day: 70
+stars: 791
+stars_per_day: 66
 forks: 36
 open_issues: 14
 created: 2026-07-14
@@ -16,8 +16,8 @@ pushed_at: 2026-07-25
 first_seen: 2026-07-21
 week: "2026-W30"
 month: "2026-07"
-category: "CLI 工具"
-subcategory: "反審查"
+category: "開發工具"
+subcategory: "桌面應用"
 release_tag: "v0.6.0"
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-21
-use_case: "提供一鍵式桌面 GUI 來使用 Aether 反審查隧道，讓用戶無需命令行操作即可輕鬆連接。"
+use_case: "提供一鍵式桌面 GUI 來使用 Aether 反審查隧道，簡化命令行操作。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -38,14 +38,14 @@ issue_close_rate: 13
 repo_size_kb: 2575
 readme_length: 6868
 bus_factor: 1
-last_release_days: 1
+last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-21"
-star_history: "2026-07-21:669,2026-07-21:669,2026-07-22:705,2026-07-23:724,2026-07-24:731,2026-07-25:741,2026-07-26:774"
+star_history: "2026-07-21:669,2026-07-21:669,2026-07-22:705,2026-07-23:724,2026-07-24:731,2026-07-25:741,2026-07-26:774,2026-07-27:791"
 tags:
   - github
-  - "category/cli_工具"
+  - "category/開發工具"
   - "lang/typescript"
   - "topic/anti_censorship"
   - "topic/censorship_circumvention"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "Aether-GUI"
   - "MatinSenPai/Aether-GUI"
-  - "提供一鍵式桌面 GUI 來使用 Aether 反審查隧道，讓用戶無需命令行操作即可輕鬆連接。"
+  - "提供一鍵式桌面 GUI 來使用 Aether 反審查隧道，簡化命令行操作。"
 ---
 
 # Aether-GUI
 
-**774** stars · **70** stars/天 · 建立 11 天前 · TypeScript · AGPL-3.0
+**791** stars · **66** stars/天 · 建立 12 天前 · TypeScript · AGPL-3.0
 
 ```dataviewjs
 const me = dv.page("Repos/MatinSenPai--Aether-GUI");
@@ -78,20 +78,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `anti-censorship` `censorship-circumvention` `desktop-app` `proxy` `react` `rust` `tauri` `typescript`
 
 > [!summary] 一句話摘要
-> 提供一鍵式桌面 GUI 來使用 Aether 反審查隧道，讓用戶無需命令行操作即可輕鬆連接。
+> 提供一鍵式桌面 GUI 來使用 Aether 反審查隧道，簡化命令行操作。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (70 stars/day)
-> **授權** AGPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 1 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 希望簡化反審查工具使用流程的普通用戶，特別是對命令行不熟悉的用戶。
-> **一句話重點** 這個專案讓普通用戶也能輕鬆使用 Aether 反審查工具，降低了使用門檻。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (66 stars/day)
+> **授權** AGPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 2 天前) · **貢獻者** 2 人 · **參與度** Low
+> **適合** 希望在受限網路中使用 Aether 但不想接觸命令行的普通用戶。
+> **一句話重點** Aether-GUI 讓反審查工具的使用變得簡單直觀，特別適合不想接觸命令行的用戶。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/MatinSenPai--Aether-GUI");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "反審查" && p.file.name !== "MatinSenPai--Aether-GUI" && p.status !== "archived")
+>     .where(p => p.subcategory === "桌面應用" && p.file.name !== "MatinSenPai--Aether-GUI" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -102,99 +102,99 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 反審查 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 桌面應用 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~2h · **綁定風險** medium
-> **結論** 花 2 小時學習，1 小時整合，得到簡化的反審查工具使用體驗，值得嘗試。
+> **結論** 花 2 小時學習，1 小時整合，得到簡單易用的反審查工具，值得考慮。
 
 > [!abstract] 核心創新
-> Aether-GUI 提供了一個無需命令行的簡單桌面介面，讓普通用戶也能輕鬆使用 Aether 反審查工具。
+> Aether-GUI 透過簡化 Aether 的使用流程，讓不熟悉命令行的用戶也能輕鬆使用反審查工具。
 
 ## 專案簡介
 
-Aether-GUI 是一款專為 Aether 反審查隧道設計的桌面應用，旨在簡化用戶的連接過程。用戶只需點擊連接按鈕，應用會自動處理身份驗證、路由發現等過程，並在背後運行 Aether 的命令行工具。這個 GUI 透過 Rust 的 pseudo-terminal 驅動 Aether 的二進制文件，並自動回答互動提示，讓用戶無需進入命令行界面。其核心賣點在於簡化了複雜的反審查過程，讓普通用戶也能輕鬆使用。應用提供多種連接選項，包括 MASQUE 和 WireGuard 協議，並允許用戶選擇不同的掃描模式與 IP 版本。
+Aether-GUI 是一個為 Aether 反審查工具提供的桌面 GUI，使用者只需按下連接按鈕，所有的身份驗證和路由發現都會自動處理。這個工具不重新實現 Aether 的隧道邏輯，而是透過偽終端驅動實際的 `aether` 二進制檔案，並自動回答其互動式設置提示。用戶可以選擇不同的協議（如 MASQUE、WireGuard 或 WARP-in-WARP）和掃描模式（如 Turbo、Balanced、Thorough 等），以便根據需要調整連接的速度和安全性。這種設計讓不熟悉命令行的用戶也能輕鬆使用 Aether 的強大功能。使用 React 和 Rust，並透過 Tauri 提供輕量級的前端和後端整合，確保了高效能和低資源消耗。
 
-技術上，前端使用 React 和 Tailwind，後端則是 Rust，這樣的選擇使得應用在性能和可擴展性上都有不錯的表現。與其他類似工具相比，如 Shadowsocks 和 V2Ray，Aether-GUI 提供了更直觀的用戶介面和即時的連接狀態反饋，特別適合不熟悉命令行的用戶。儘管如此，對於需要更高自定義的用戶，這個工具可能會顯得過於簡化。使用過程中，若隧道意外中斷，應用會自動重連，並顯示當前重連狀態，這在使用 WARP-in-WARP 協議時尤為重要。總體來看，這是一個針對普通用戶的穩定工具，適合希望簡化反審查流程的用戶，但在高級功能上可能會有所欠缺。
+相較於其他類似工具，如 Shadowsocks 和 V2Ray，Aether-GUI 提供了更簡單的使用介面和自動化的連接過程，特別適合不想進行複雜設置的用戶。實際使用中，Aether-GUI 能夠自動重連，並在隧道中斷時提供清晰的重試提示，這在使用 WARP-in-WARP 時尤為重要。這個專案目前仍在活躍開發中，社群的反饋和問題解決率顯示出其穩定性和未來潛力。對於希望在受限網路環境中保持隱私的用戶，Aether-GUI 是一個值得考慮的選擇。
 
-**技術棧**：`React 19` · `Rust` · `Tauri v2` · `Tailwind CSS 4`
+**技術棧**：`React 19` · `Rust` · `Tauri v2` · `Tailwind v4`
 
 ## 重點功能
 
-- 一鍵連接 — 用戶只需按下連接按鈕，應用會自動處理所有設置。
-- 多種協議選擇 — 支持 MASQUE、WireGuard 和 WARP-in-WARP，滿足不同的安全需求。
-- 掃描模式選擇 — 提供 Turbo、Balanced、Thorough 等多種模式，根據需求調整路由發現速度。
-- 即時進度顯示 — 在尋找可用路由時，顯示實際進度和時間，讓用戶了解當前狀態。
-- 自動重連 — 隧道中斷時自動重連，並顯示重連狀態，提升使用體驗。
+- 一鍵連接 — 用戶只需按下按鈕即可自動連接，無需手動配置。
+- 高級面板 — 提供多種協議和掃描模式選擇，滿足不同需求。
+- 即時進度顯示 — 在搜尋可用路由時顯示實際進度和時間。
+- 自動重連 — 隧道中斷時自動重試，並提供清晰的重試提示。
+- 多平台支持 — 雖然目前僅支持 Windows，但未來計劃擴展到其他平台。
 
 ## 快速開始
 
-1. 下載最新安裝包
+1. 下載安裝程式
 ```bash
-從 Releases 頁面下載 Aether-GUI_x.y.z_x64-setup.exe
+從 Releases 頁面下載最新的安裝檔。
 ```
-2. 安裝應用
+2. 安裝 Aether-GUI
 ```bash
-運行下載的安裝包進行安裝
+運行下載的安裝程式以安裝應用。
 ```
 3. 啟動應用並連接
 ```bash
-打開 Aether-GUI，點擊連接按鈕
+打開 Aether-GUI，按下 'Connect' 按鈕連接。
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 11 天就累積 774 stars（70/天），forks 36（4.7%），這顯示出不錯的初期接受度。作者 MatinSenPai 和 rqzbeh 在開源社群中有一定的影響力，並且這個工具解決了用戶在反審查過程中的複雜性問題，之前的工具往往需要用戶具備一定的技術背景。Aether-GUI 的出現讓這個過程變得更加友好，吸引了不熟悉命令行的用戶群體。社群的活躍度也反映在開放的 Issues 上，雖然解決率不高，但這也顯示出開發者對用戶反饋的重視。
+> 建立 12 天就累積 791 stars（66/天），forks 36（4.6%），顯示出穩定的增長趨勢。作者 MatinSenPai 和 rqzbeh 具備開源背景，之前參與過多個相關專案。Aether-GUI 解決了使用 Aether 時的使用障礙，讓不熟悉命令行的用戶能夠輕鬆上手，這在許多反審查工具中是少見的。近期社群對於簡化使用流程的需求增加，可能促進了這個專案的關注。技術上，Tauri 和 Rust 的結合讓這個工具在資源使用上表現出色，適合各種硬體環境。forks/stars 比率4.6%顯示出一些用戶已經開始修改和擴展這個工具，這意味著有活躍的社群參與。
 
 ## 適合誰使用
 
-**目標受眾**：希望簡化反審查工具使用流程的普通用戶，特別是對命令行不熟悉的用戶。
+**目標受眾**：希望在受限網路中使用 Aether 但不想接觸命令行的普通用戶。
 
 > [!example] 使用場景
-> - 普通用戶用它來快速連接到被封鎖的網站，因為不需要命令行操作，降低了使用門檻。
-> - IT 支援人員用它來幫助客戶解決網路連接問題，因為可以快速設定並提供即時的連接狀態反饋。
-> - 開發者用它來測試反審查工具的穩定性，因為可以輕鬆切換不同的連接協議和掃描模式。
+> - 普通用戶用它來在受限網路中輕鬆連接到 Aether，因為只需一鍵即可自動處理所有設置。
+> - 開發者用它來測試 Aether 的不同連接模式和協議，因為其提供的高級面板讓調整變得簡單直觀。
+> - 企業用戶用它來在內部網路中設置安全的隧道，因為其自動重連功能能確保連接的穩定性。
 
 ## 架構分析
 
-Aether-GUI 採用 Tauri 框架，前端使用 React 和 Tailwind CSS，後端則是 Rust。這樣的架構設計使得應用在性能上表現優異，且能夠輕鬆地與 Aether 的命令行工具進行交互。前端通過 IPC 與後端進行通信，並使用 portable-pty 來啟動 Aether 的二進制文件。這種設計的代價在於，對於需要高自定義的用戶，可能會感到功能受限。整體架構的擴展性良好，但在某些情況下，可能會因為依賴於 Aether 的穩定性而受到影響。
+Aether-GUI 採用 Tauri 框架，將前端和後端分開，前端使用 React 和 Tailwind 提供用戶界面，後端則用 Rust 處理與 Aether 的交互。這樣的設計使得應用在資源使用上非常輕量，並且能夠快速啟動。資料流方面，前端通過 IPC 與 Rust 後端通信，後端則使用 `portable-pty` 來啟動 Aether 的二進制檔案，並監控其輸出。這種設計的代價是需要用戶對 Aether 的基本運作有一定了解，否則可能無法充分利用其功能。擴展性方面，未來可以考慮增加對其他平台的支持，但目前僅限於 Windows。
 
 ## 技術深入分析
 
-Aether-GUI 的核心技術機制在於其使用 Tauri 框架，這使得開發者能夠利用 Rust 的性能優勢，同時提供一個現代化的前端介面。前端使用 React 19 和 Tailwind CSS，這樣的選擇不僅提升了開發效率，還能提供良好的用戶體驗。後端則使用 portable-pty 來啟動 Aether 的二進制文件，這樣的設計確保了命令行工具的穩定性。效能方面，應用在運行時的資源消耗相對較低，因為背景動畫會在窗口失去焦點時暫停。設計取捨方面，選擇了 Rust 作為後端語言，這帶來了高性能的同時，也增加了學習成本。技術風險方面，依賴於 Aether 的穩定性，若 Aether 更新頻繁，可能會影響 Aether-GUI 的穩定性。整合方面，與現有的 CI/CD 流程相容性良好，能夠輕鬆集成到現有的開發環境中。
+Aether-GUI 的核心技術機制是利用 Tauri 框架將前端和後端分開，前端使用 React 19 和 Tailwind 進行開發，並透過 Zustand 管理狀態。後端則使用 Rust 和 `portable-pty` 啟動 Aether 的二進制檔案，並監控其輸出。這種設計使得應用在資源使用上非常輕量，並且能夠快速啟動。效能方面，由於前端和後端的分離，應用在運行時的記憶體佔用非常低，適合在各種硬體環境中運行。設計取捨方面，選擇 Rust 作為後端語言帶來了高效能和安全性，但也增加了學習曲線。技術風險方面，若未來 Aether 的 API 發生變更，可能會影響 Aether-GUI 的穩定性。整合方面，這個工具與現有的開發流程（如 CI/CD）相容性良好，能夠輕鬆集成到現有的開發環境中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用說明，對於新手來說相對友好。安裝過程順暢，無明顯坑點。文件中有針對不同平台的構建說明，幫助用戶快速上手。
+> README 文件清晰且包含必要的安裝步驟，對於新手來說相對友好。安裝過程順暢，但需要注意 Windows 平台的限制。文件中未提供多語言支持，僅有英文和波斯語版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡化了反審查工具的使用流程，適合不熟悉命令行的用戶。
-> - 提供即時的連接狀態反饋，提升用戶體驗。
-> - 支持多種協議和掃描模式，滿足不同需求。
+> - 簡化的使用流程，適合不熟悉命令行的用戶。
+> - 提供多種協議和掃描模式選擇，靈活性高。
+> - 自動重連功能，提升使用穩定性。
 
 > [!danger] 缺點
-> - 目前僅支持 Windows x64 平台，限制了使用範圍。
-> - 對於高級用戶，缺乏足夠的自定義選項。
-> - 在某些網路環境下可能會遇到不穩定的連接。
+> - 目前僅支持 Windows 平台，限制了使用範圍。
+> - 對於不熟悉 Aether 的用戶，可能需要額外學習時間。
+> - 在某些網路環境下，連接穩定性可能不足。
 
 > [!warning] 注意事項
-> - 目前僅支持 Windows x64 平台，其他平台需自行構建。
-> - 對於高級用戶，可能缺乏足夠的自定義選項。
-> - 在某些網路環境下，可能會遇到連接不穩定的問題。
+> - 目前僅支持 Windows x64 平台，其他平台尚未實現。
+> - 對於不熟悉命令行的用戶，可能需要額外的學習時間來理解 Aether 的運作。
+> - 在某些網路環境下，可能會遇到連接不穩定的情況。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [CluvexStudio/Aether](https://github.com/CluvexStudio/Aether) | Aether 是底層的反審查工具，提供命令行介面，適合需要高自定義的用戶。 |
-| [Shadowsocks/Shadowsocks](https://github.com/Shadowsocks/Shadowsocks) | Shadowsocks 提供了更靈活的代理設置，但需要用戶具備一定的技術背景。 |
-| [v2ray/v2ray-core](https://github.com/v2ray/v2ray-core) | V2Ray 提供了更強大的功能和配置選項，但相對於 Aether-GUI，使用門檻較高。 |
+| [CluvexStudio/Aether](https://github.com/CluvexStudio/Aether) | Aether 是底層的命令行工具，提供了實際的反審查功能，而 Aether-GUI 則是其圖形介面包裝，讓使用更為簡單。 |
+| Shadowsocks | Shadowsocks 是一個廣泛使用的代理工具，提供了類似的隱私保護功能，但需要手動配置，對於新手不太友好。 |
+| V2Ray | V2Ray 提供了更複雜的配置選項和協議支持，但其設置過程相對繁瑣，不如 Aether-GUI 簡單直觀。 |
 
 ## 替代方案決策
 
@@ -202,16 +202,16 @@ Aether-GUI 的核心技術機制在於其使用 Tauri 框架，這使得開發�
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [Shadowsocks/Shadowsocks](https://github.com/Shadowsocks/Shadowsocks) | Shadowsocks 是一款成熟的代理工具，提供了靈活的配置選項，適合需要高自定義的用戶。 | 如果你的團隊已經在使用 Shadowsocks 並需要更高的自定義能力，這是更好的選擇。 | medium，因為需要重新配置代理設置。 |
-| [v2ray/v2ray-core](https://github.com/v2ray/v2ray-core) | V2Ray 提供了更強大的功能和配置選項，但相對於 Aether-GUI，使用門檻較高。 | 如果你的團隊需要更複雜的代理設置和流量混淆，V2Ray 是更合適的選擇。 | high，因為需要重新學習配置和使用方式。 |
+| Shadowsocks | Shadowsocks 是一個成熟的代理工具，提供了多種加密方式和配置選項，而 Aether-GUI 則專注於簡化使用體驗。 | 如果你的團隊已經在使用 Shadowsocks 且需要更高的靈活性和控制，則應選擇它。 | medium，因為需要重新配置代理設置和用戶端。 |
+| V2Ray | V2Ray 提供了更複雜的配置選項和協議支持，而 Aether-GUI 旨在提供更簡單的用戶體驗。 | 如果你需要更高的自定義和配置能力，V2Ray 會是更好的選擇。 | high，因為需要重新設置所有的配置和用戶端。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **Aether-GUI** | **Shadowsocks** | **v2ray-core** |
+> | 維度 | **Aether-GUI** | **Shadowsocks** | **V2Ray** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Shadowsocks 是一款成熟的代理工具，提供了靈活的配置選項，適合需要高自定義的用戶。 | V2Ray 提供了更強大的功能和配置選項，但相對於 Aether-GUI，使用門檻較高。 |
-> | 遷移成本 | - | medium，因為需要重新配置代理設置。 | high，因為需要重新學習配置和使用方式。 |
-> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Shadowsocks 並需要更高的 | 如果你的團隊需要更複雜的代理設置和流量混淆，V2Ray 是更 |
+> | 技術路線 | 本專案 | Shadowsocks 是一個成熟的代理工具，提供了多種加密方式和配置選項，而 Aether-GUI 則專注於簡化使用體驗。 | V2Ray 提供了更複雜的配置選項和協議支持，而 Aether-GUI 旨在提供更簡單的用戶體驗。 |
+> | 遷移成本 | - | medium，因為需要重新配置代理設置和用戶端。 | high，因為需要重新設置所有的配置和用戶端。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經在使用 Shadowsocks 且需要更高的 | 如果你需要更高的自定義和配置能力，V2Ray 會是更好的選擇 |
 
 ## 成熟度評估
 
@@ -222,27 +222,27 @@ Aether-GUI 的核心技術機制在於其使用 Tauri 框架，這使得開發�
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人使用和測試，但不建議用於生產環境的核心路徑上。
+> 適合個人試用，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些網路環境下，連接可能不穩定，特別是使用 WARP-in-WARP 協議時。
-  - 解法：嘗試切換到其他協議或掃描模式。
-- [MEDIUM] 安裝過程中可能需要額外的依賴，特別是在 Linux 和 macOS 上。
-  - 解法：參考 README 中的構建說明，確保安裝所有必要的依賴。
-- **[HIGH]** 某些用戶可能會遇到 Aether 二進制文件缺失的情況。
-  - 解法：確保正確執行 fetch-aether.sh 腳本以獲取二進制文件。
+- **[HIGH]** 在某些網路環境下，可能無法穩定連接到 Aether 伺服器。
+  - 解法：嘗試更改掃描模式或協議。
+- [MEDIUM] Windows 平台的安裝過程可能會遇到權限問題。
+  - 解法：以管理員身份運行安裝程式。
+- **[HIGH]** 在使用 WARP-in-WARP 時，可能會遇到連接不穩定的情況。
+  - 解法：考慮使用其他協議或掃描模式。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的網路安全測試 | 非常適合 | 簡化了反審查工具的使用流程，適合不熟悉命令行的用戶。 |
-| 需要高自定義的企業環境 | 不適合 | 缺乏足夠的自定義選項，可能無法滿足需求。 |
-| 個人用戶希望繞過網路審查 | 適合 | 提供簡單的連接方式，降低了使用門檻。 |
-| 需要在多平台上運行的應用 | 普通 | 目前僅支持 Windows x64，限制了使用範圍。 |
+| 小型團隊的反審查應用 | 非常適合 | 簡化的使用流程和自動重連功能非常適合小型團隊使用。 |
+| 大型企業的安全隧道設置 | 普通 | 雖然功能強大，但目前僅支持 Windows，限制了使用範圍。 |
+| 個人用戶在受限網路中使用 | 非常適合 | 一鍵連接的設計讓普通用戶能夠輕鬆使用。 |
+| 需要高度自定義的用戶 | 不適合 | 對於需要複雜配置的用戶，Aether-GUI 的選項可能不夠靈活。 |
 
 ## 採用成本分析
 
@@ -254,12 +254,26 @@ Aether-GUI 的核心技術機制在於其使用 Tauri 框架，這使得開發�
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到簡化的反審查工具使用體驗，值得嘗試。
+> 花 2 小時學習，1 小時整合，得到簡單易用的反審查工具，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：應用本身不需要高權限，僅需存取本地的 SOCKS5 端口。依賴於 Aether 的安全性，若 Aether 有安全漏洞，可能會影響整體安全性。
+> 中等風險：該工具需要訪問網路資源，並可能需要高權限來安裝。使用時需注意隱私保護，特別是在公共網路環境中。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Aether-GUI 最常與 Aether 反審查工具搭配使用，作為其圖形介面，簡化了使用流程。在一個使用 Windows 環境的開發團隊中，Aether-GUI 可以作為安全隧道的解決方案，具體做法是安裝 Aether-GUI 並直接使用其一鍵連接功能。這個工具與主流的 CI/CD 工具（如 GitHub Actions）相容性良好，能夠輕鬆集成到現有的開發流程中。整合的摩擦點主要在於 Windows 平台的特定需求，可能需要額外的安裝步驟來滿足系統要求。
+
+## 歷史脈絡
+
+> [!info] 這個工具為什麼現在出現？
+
+在 Aether-GUI 出現之前，許多用戶使用命令行工具來進行反審查，這對於不熟悉技術的用戶來說是一個挑戰。隨著對隱私和自由上網需求的增加，Aether-GUI 提供了一個更友好的解決方案。技術上，Tauri 的出現使得開發輕量級桌面應用變得可行，這為 Aether-GUI 的實現提供了基礎。
+
+這個工具代表了簡化使用反審查工具的趨勢，未來可能會有更多類似的應用出現。
 
 ## 健康度儀表板
 
@@ -376,13 +390,20 @@ Aether-GUI 的核心技術機制在於其使用 Tauri 框架，這使得開發�
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放的 Issues 反映出用戶反饋的重視。
+**社群活躍度**：社群活躍度中等，開發者定期更新並回應問題。
 **連結**：[文件](https://github.com/MatinSenPai/Aether-GUI)
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-07-20 ~ 2026-07-25）
 > **活躍天數** 2 天 · **最新 commit** Increase image width in README
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#17](https://github.com/MatinSenPai/Aether-GUI/issues/17) | Allow custom window width and height `enhancement` | 1 | 0 |
 
 ## README 摘錄
 
@@ -478,7 +499,7 @@ Aether-GUI 的核心技術機制在於其使用 Tauri 框架，這使得開發�
 
 ## 延伸閱讀
 
-相關概念：[[反審查]] · [[VPN]] · [[代理伺服器]]
+相關概念：[[反審查]] · [[代理]] · [[網路安全]]
 
 相關專案：[[CluvexStudio--Aether|CluvexStudio/Aether]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[XingYu-Zhong--DeepSeek-GUI|XingYu-Zhong/DeepSeek-GUI]] · [[qiuzhi2046--Qclaw|qiuzhi2046/Qclaw]] · [[vercel-labs--zero-native|vercel-labs/zero-native]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]]
 
@@ -486,11 +507,11 @@ Aether-GUI 的核心技術機制在於其使用 Tauri 框架，這使得開發�
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：反審查）
+> [!note]- 直接競品（同子分類：桌面應用）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "反審查" AND file.name != "MatinSenPai--Aether-GUI"
+> WHERE subcategory = "桌面應用" AND file.name != "MatinSenPai--Aether-GUI"
 > SORT stars DESC
 > ```
 
@@ -498,7 +519,7 @@ Aether-GUI 的核心技術機制在於其使用 Tauri 框架，這使得開發�
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "CLI 工具" AND file.name != "MatinSenPai--Aether-GUI"
+> WHERE category = "開發工具" AND file.name != "MatinSenPai--Aether-GUI"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -522,7 +543,7 @@ Aether-GUI 的核心技術機制在於其使用 Tauri 框架，這使得開發�
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["反審查","VPN","代理伺服器"];
+> const concepts = ["反審查","代理","網路安全"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "MatinSenPai--Aether-GUI" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
