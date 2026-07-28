@@ -7,18 +7,18 @@ language: Swift
 license: MIT
 description: "Local AI, native to your Mac. Chat, serve, monitor, and connect MLX models from one macOS app."
 homepage: "https://blaizzy.github.io/nativ/"
-stars: 925
-stars_per_day: 154
-forks: 51
+stars: 968
+stars_per_day: 138
+forks: 54
 open_issues: 33
 created: 2026-07-20
-pushed_at: 2026-07-26
+pushed_at: 2026-07-28
 first_seen: 2026-07-22
 week: "2026-W30"
 month: "2026-07"
 category: "AI/ML"
-subcategory: "本地推理"
-release_tag: "v0.0.1"
+subcategory: "本地推論"
+release_tag: "v0.1.0"
 install_complexity: "medium"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-22
-use_case: "讓你在 Mac 上本地運行 AI 模型，集成聊天、監控和模型管理功能。"
+use_case: "讓你的 Mac 本地運行 AI 模型，實現聊天、服務、監控和模型連接。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 6
 next_review: "2026-08-03"
 contributor_count: 5
 engagement: "low"
-issue_close_rate: 37
-repo_size_kb: 5440
-readme_length: 6719
+issue_close_rate: 40
+repo_size_kb: 5668
+readme_length: 7225
 bus_factor: 1
-last_release_days: 7
+last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-22"
-star_history: "2026-07-22:647,2026-07-22:647,2026-07-23:768,2026-07-23:768,2026-07-24:822,2026-07-24:822,2026-07-25:863,2026-07-25:863,2026-07-26:886,2026-07-26:886,2026-07-27:925,2026-07-27:925"
+star_history: "2026-07-22:647,2026-07-22:647,2026-07-23:768,2026-07-23:768,2026-07-24:822,2026-07-24:822,2026-07-25:863,2026-07-25:863,2026-07-26:886,2026-07-26:886,2026-07-27:925,2026-07-27:925,2026-07-28:968"
 tags:
   - github
   - "category/ai_ml"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "nativ"
   - "Blaizzy/nativ"
-  - "讓你在 Mac 上本地運行 AI 模型，集成聊天、監控和模型管理功能。"
+  - "讓你的 Mac 本地運行 AI 模型，實現聊天、服務、監控和模型連接。"
 ---
 
 # nativ
 
-**925** stars · **154** stars/天 · 建立 6 天前 · Swift · MIT
+**968** stars · **138** stars/天 · 建立 7 天前 · Swift · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/Blaizzy--nativ");
@@ -68,23 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v0.0.1`
+`v0.1.0`
 
 > [!summary] 一句話摘要
-> 讓你在 Mac 上本地運行 AI 模型，集成聊天、監控和模型管理功能。
+> 讓你的 Mac 本地運行 AI 模型，實現聊天、服務、監控和模型連接。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (154 stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (138 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Low
-> **適合** 需要在 Mac 上運行 AI 模型但不想依賴雲端的開發者。
-> **一句話重點** Nativ 的設計讓本地 AI 模型的運行變得簡單而高效，特別適合 Apple 硬體用戶。
+> **適合** 需要在 Apple silicon 上運行本地 AI 模型的開發者和研究人員。
+> **一句話重點** Nativ 讓本地 AI 運行變得簡單而高效，特別適合 Apple silicon 用戶。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Blaizzy--nativ");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "本地推理" && p.file.name !== "Blaizzy--nativ" && p.status !== "archived")
+>     .where(p => p.subcategory === "本地推論" && p.file.name !== "Blaizzy--nativ" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,117 +95,113 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 本地推理 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 本地推論 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到快速本地 AI 模型運行的效果，值得嘗試。
+> **結論** 花 5 小時學習、8 小時整合，得到本地 AI 運行的能力，值得考慮。
 
 > [!abstract] 核心創新
-> Nativ 是一個專為 Apple silicon 設計的本地 AI 模型運行環境，提供完整的聊天、監控和模型管理功能。
+> Nativ 提供了一個專為 Apple silicon 設計的本地 AI 環境，支持即時聊天和多種模型的本地運行。
 
 ## 專案簡介
 
-Nativ 是一款專為 Apple silicon 設計的 macOS 應用，能夠本地運行 AI 模型。用戶可以通過這個應用進行聊天、管理模型、查看性能分析以及連接各種 MLX 模型。使用者只需選擇已安裝的模型或從 Hugging Face 下載，然後即可開始與模型互動。Nativ 的一句話賣點是：在本地環境中提供 OpenAI 和 Anthropic 兼容的推理服務，讓開發者能夠無縫集成 AI 功能。這個應用使用 SwiftUI 作為前端，後端則是基於 `mlx-vlm` 伺服器，並且支援多種 API 端點，包括聊天、圖像和音頻處理。Nativ 也提供了詳細的性能分析工具，能夠追蹤請求量、token 使用情況和模型性能等數據。
+Nativ 是一款專為 Apple silicon 設計的本地 AI 應用，允許用戶在 macOS 環境中運行 AI 模型。用戶可以透過這個應用進行聊天、管理模型、監控性能，並且支持多種編程工具的整合。其核心功能包括本地聊天、圖像生成與編輯、模型庫管理以及性能分析。用戶可以通過 CLI 指令如 `curl http://127.0.0.1:8080/v1/chat/completions` 來進行 API 請求，這使得 Nativ 成為一個兼容 OpenAI 和 Anthropic 的本地推論服務器。Nativ 的設計選擇了 SwiftUI 作為前端框架，並且內嵌了 mlx-vlm 服務器來處理模型的運行，這樣的架構使得應用更加流暢且易於使用。
 
-與其他類似工具相比，Nativ 的優勢在於其本地運行的能力，這意味著用戶不需要依賴雲端服務，能夠更快地獲得響應並保護數據隱私。使用者可以在本地 API 伺服器上進行各種請求，這對於需要高效能和低延遲的應用場景尤為重要。Nativ 的設計考慮到 Apple 的硬體架構，能夠充分利用統一內存，這使得它在處理大型模型時表現更佳。這個專案目前仍在早期階段，功能持續增強，未來將支援更多專用模型。對於需要在 Mac 上運行 AI 模型的開發者來說，Nativ 是一個值得關注的選擇。
+相較於其他工具如 Hugging Face 的 Transformers，Nativ 提供了更直接的本地運行體驗，無需依賴雲端服務，適合需要高效能和低延遲的用戶。使用 Nativ 時，需確保 Mac 擁有足夠的統一內存來支持選擇的模型，這在大型模型的運行時尤為重要。社群活躍度不錯，但目前的開發仍在初期階段，建議用戶在非關鍵環境中試用。對於需要在本地快速運行 AI 模型的開發者來說，Nativ 是一個值得考慮的選擇。
 
-**技術棧**：`SwiftUI` · `Python 3` · `Makefile`
+**技術棧**：`SwiftUI` · `Python 3` · `mlx-vlm`
 
 ## 重點功能
 
-- 本地聊天和視覺 — 支援即時對話、圖像附件和持久聊天歷史。
-- 模型庫 — 瀏覽和下載 Hugging Face 兼容模型，並檢查記憶體適配性。
-- 性能分析 — 追蹤請求量、token 使用、解碼速度和模型性能。
-- 系統監控 — 實時檢查 CPU 負載、GPU 使用率和內存狀態。
+- 本地聊天和視覺 — 支持流式對話、圖像附件和持久聊天歷史。
+- 圖像生成與編輯 — 在專用的圖像標籤中生成或編輯圖像，支持從剪貼簿粘貼圖像。
+- 模型庫 — 瀏覽和下載兼容的 Hugging Face 模型，並檢查內存適配性。
+- 性能分析 — 跟蹤請求量、token 使用、解碼速度等性能指標。
+- 系統監控 — 實時檢查 CPU 負載、GPU 利用率和內存壓力等系統狀態。
 - 本地 API — 提供 OpenAI 和 Anthropic 兼容的聊天和模型端點。
-- 開發者工作區 — 配置伺服器、檢查運行時詳細信息和監控伺服器健康狀態。
-- 菜單欄控制 — 快速啟動或停止伺服器，檢查服務統計數據。
-- 高級推理控制 — 調整取樣、思考預算和結構化輸出等參數。
+- 編程工具整合 — 支持多種編程工具的配置和啟動，提升開發效率。
+- 高級推論控制 — 調整取樣、思考預算和結構化輸出等參數。
 
 ## 快速開始
 
 1. 下載最新版本
 ```bash
-從 GitHub Releases 下載 DMG，拖動 Nativ 到應用程式中
+從 GitHub Releases 下載 DMG，拖動 Nativ 到應用程式中並啟動。
 ```
 2. 選擇模型
 ```bash
-啟動應用後選擇已安裝的語言模型或下載推薦模型
+在首次啟動時選擇已安裝的語言模型或下載推薦模型。
 ```
-3. 開始聊天
+3. 開始聊天或檢查分析
 ```bash
-啟動聊天功能，檢查性能分析或連接支援的編碼工具
+啟動聊天，檢查性能分析或連接支持的編程工具。
 ```
 
 ## 程式碼範例
 
 ```swift
-[
-  "# 使用 curl 發送請求到本地伺服器",
-  "curl http://127.0.0.1:8080/v1/chat/completions \\",
-  "  -H 'Content-Type: application/json' \\",
-  "  -d '{\"model\": \"your-model-id\", \"messages\": [{\"role\": \"user\", \"content\": \"Why is the sky blue?\"}], \"stream\": false}'",
-  "# 預期輸出：模型的回應內容"
-]
+{
+  "前置條件": "選擇一個模型後，Nativ 服務器啟動。",
+  "指令": "curl http://127.0.0.1:8080/v1/chat/completions -H 'Content-Type: application/json' -d '{\"model\": \"your-model-id\", \"messages\": [{\"role\": \"user\", \"content\": \"Why is the sky blue?\"}], \"stream\": false}'",
+  "預期輸出": "返回模型生成的回應。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 6 天就累積 925 stars（154/天），forks 51（5.5%），顯示出強勁的增長潛力。作者 Lazarus-931 和 Blaizzy 具備開源社群的活躍背景，這個專案解決了在本地運行 AI 模型的需求，特別是針對 Apple silicon 的優化。之前的解決方案往往依賴雲端，導致延遲和數據隱私問題。近期的推廣活動和社群討論也提升了其曝光率。這個工具的出現正好符合了對本地 AI 解決方案日益增長的需求，特別是在開發者社群中。
+> 建立 7 天就累積 968 stars（138/天），forks 54（5.6%），這顯示出快速增長的潛力。開發者 Lazarus-931 和 Blaizzy 之前在 AI 領域有過多個成功專案，這次專案解決了本地 AI 運行的痛點，特別是在 Apple silicon 環境下的高效能需求。近期的推廣活動和社群討論也促進了關注度。技術上，Apple silicon 的優化使得本地推論變得可行，這是 Nativ 的一大優勢。forks/stars 比率顯示出用戶對於修改和實際應用的興趣，這意味著社群對於這個專案的投入程度較高。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Mac 上運行 AI 模型但不想依賴雲端的開發者。
+**目標受眾**：需要在 Apple silicon 上運行本地 AI 模型的開發者和研究人員。
 
 > [!example] 使用場景
-> - 獨立開發者用它來在本地運行 AI 模型進行實驗，因為這樣可以減少對雲端服務的依賴，並提高數據隱私。
-> - AI 研究者用它來快速測試和調整模型參數，因為 Nativ 提供了詳細的性能分析工具，能夠即時反映模型的運行狀況。
-> - 小型團隊用它來整合 AI 功能到他們的應用中，因為 Nativ 支援多種 API 端點，能夠輕鬆連接到現有的開發流程。
+> - AI 研究員用它來在本地快速測試和迭代模型，因為它支持多種 MLX 模型並能即時查看性能數據。
+> - 開發者用它來整合本地 AI 服務到 VS Code，因為這樣可以在開發過程中即時獲得 AI 的幫助，提升編程效率。
+> - 數據科學家用它來生成和編輯圖像，因為它提供了本地的圖像處理能力，無需依賴外部服務。
 
 ## 架構分析
 
-Nativ 採用 SwiftUI 構建用戶界面，並使用 `NativServerKit` 管理嵌入式 Python 環境和伺服器生命週期。資料流從用戶界面到 `mlx-vlm` 伺服器，並通過本地 API 提供服務。這種設計使得應用能夠快速響應用戶請求，並減少了對外部依賴的需求。
-
-選擇 SwiftUI 使得開發者能夠利用 Apple 生態系統的最佳實踐，但也可能限制了跨平台的擴展性。擴展性方面，隨著模型數量的增加，可能會面臨記憶體和性能瓶頸，特別是在運行大型模型時。整體架構考慮到了性能和用戶體驗的平衡，適合需要本地運行 AI 的開發者。
+Nativ 的架構基於 SwiftUI 應用與內嵌的 mlx-vlm 服務器，這樣的設計使得用戶能夠在本地運行 AI 模型而無需依賴外部服務。應用通過 NativServerKit 管理 Python 環境和服務器生命週期，並提供模型發現、聊天、分析和整合等功能。這種設計的代價在於需要用戶確保有足夠的內存來支持運行的模型，並且首次下載模型時需要網絡連接。擴展性方面，隨著更多模型和功能的加入，可能會面臨性能瓶頸，特別是在內存和計算資源有限的情況下。
 
 ## 技術深入分析
 
-Nativ 的核心技術機制在於其 SwiftUI 應用和嵌入式 Python 環境的結合，這使得用戶能夠在本地運行 AI 模型。使用 `mlx-vlm` 伺服器來處理請求，並通過本地 API 提供服務，這樣的設計能夠減少延遲並提高數據隱私。效能方面，Nativ 能夠在 Apple silicon 上高效運行，但在處理大型模型時可能會面臨記憶體瓶頸。選擇 SwiftUI 使得界面友好，但也限制了跨平台的可能性。技術風險方面，隨著用戶數量的增加，伺服器的負載可能會成為瓶頸，特別是在高請求量的情況下。整合方面，Nativ 與現有的開發工具鏈相容性良好，能夠輕鬆地與其他工具搭配使用，降低了學習成本。
+Nativ 利用 SwiftUI 提供了一個直觀的用戶界面，並且內嵌了 mlx-vlm 服務器來處理 AI 模型的推論。這種架構使得用戶能夠在本地環境中快速運行模型，並且支持即時聊天和性能監控。效能上，Nativ 能夠處理多種模型，但需要注意的是，模型的大小和複雜度會直接影響到運行的性能和內存需求。選擇 SwiftUI 作為前端框架，使得開發過程中能夠快速迭代，但也可能在某些情況下限制了跨平台的能力。技術上，Nativ 依賴於 Python 和 Swift 的結合，這樣的選擇使得開發者能夠利用 Python 的強大生態系統，但也帶來了額外的依賴管理挑戰。隨著模型數量的增加，Nativ 可能會面臨性能瓶頸，特別是在內存和計算資源有限的情況下。整體而言，Nativ 在本地 AI 領域提供了一個有趣的解決方案，特別是對於需要高效能和低延遲的開發者來說。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含範例，安裝過程相對順暢，但首次下載模型可能需要網路連接。沒有提供多語言支持，主要以英文為主。
+> README 文件清晰，提供了詳細的安裝和使用指導，並包含範例指令。安裝過程相對順暢，但首次下載模型可能需要網絡連接。文件目前僅提供英文版本，可能對非英語使用者造成一定困難。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 本地運行，無需依賴雲端服務，提供更快的響應速度。
-> - 多功能性，集成聊天、模型管理和性能分析於一體。
-> - 針對 Apple silicon 優化，能夠充分利用硬體資源。
+> - 提供本地運行 AI 模型的能力，無需依賴雲端服務。
+> - 支持多種編程工具的整合，提升開發效率。
+> - 實時性能監控功能，幫助用戶優化模型使用。
 
 > [!danger] 缺點
-> - 僅支援 Apple silicon，無法在其他平台上運行。
-> - 目前功能仍在持續開發中，可能存在不穩定性。
-> - 首次下載模型需要網路，對於離線使用者不友好。
+> - 僅限於 Apple silicon 的設備，限制了使用範圍。
+> - 首次使用需要網絡下載模型和依賴，可能影響使用體驗。
+> - 目前功能仍在開發中，可能存在不穩定性。
 
 > [!warning] 注意事項
 > - 僅支援 Apple silicon 的 Mac。
-> - 需要 macOS 26 或更新版本。
-> - 首次下載模型和依賴時需要網路連接。
-> - 目前不支援 Windows 或其他平台。
+> - 需要足夠的統一內存來運行選擇的模型。
+> - 首次下載模型和依賴時需要網絡連接。
+> - 目前僅在 macOS 26 或更新版本上運行。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的本地 AI 模型運行環境，但不支援 SwiftUI 界面，使用者體驗較差。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於特定模型的運行，但缺乏 Nativ 的多功能性和性能分析工具。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 主要用於集成 Codex 模型，功能較為單一，無法提供全面的系統監控和性能分析。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供一個基於雲的 AI 代理框架，但不支持本地推論，適合需要分散式架構的用戶。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於模型的訓練和部署，缺乏 Nativ 的即時聊天和性能監控功能。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 提供對 Codex 的封裝，但不支持本地運行，適合已經在使用 Codex 的開發者。 |
 
 ## 替代方案決策
 
@@ -213,16 +209,16 @@ Nativ 的核心技術機制在於其 SwiftUI 應用和嵌入式 Python 環境的
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，提供更高的性能，但缺乏 Nativ 的用戶友好界面。 | 如果需要更高性能且不介意使用命令行工具，則可以選擇這個方案。 | medium，因為需要重新學習 Rust 的生態系統。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於特定模型的運行，功能較為單一，無法提供 Nativ 的多功能性。 | 如果你的需求非常特定且不需要多功能性，這個工具可能更合適。 | low，因為功能簡單，易於上手。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供一個基於雲的 AI 代理框架，適合需要分散式架構的用戶。 | 如果你的團隊需要一個可擴展的雲端解決方案來運行 AI 模型。 | medium，因為需要重新設計架構以適應雲端環境。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於模型的訓練和部署，缺乏 Nativ 的即時聊天和性能監控功能。 | 如果你的需求主要集中在模型的訓練和部署，而不需要即時交互。 | low，因為可以直接使用現有的模型和訓練流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **nativ** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Rust 實作，提供更高的性能，但缺乏 Nativ 的用戶友好界面。 | 專注於特定模型的運行，功能較為單一，無法提供 Nativ 的多功能性。 |
-> | 遷移成本 | - | medium，因為需要重新學習 Rust 的生態系統。 | low，因為功能簡單，易於上手。 |
-> | 適用場景 | 主要場景 | 如果需要更高性能且不介意使用命令行工具，則可以選擇這個方案。 | 如果你的需求非常特定且不需要多功能性，這個工具可能更合適。 |
+> | 技術路線 | 本專案 | 提供一個基於雲的 AI 代理框架，適合需要分散式架構的用戶。 | 專注於模型的訓練和部署，缺乏 Nativ 的即時聊天和性能監控功能。 |
+> | 遷移成本 | - | medium，因為需要重新設計架構以適應雲端環境。 | low，因為可以直接使用現有的模型和訓練流程。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要一個可擴展的雲端解決方案來運行 AI 模型。 | 如果你的需求主要集中在模型的訓練和部署，而不需要即時交互。 |
 
 ## 成熟度評估
 
@@ -233,55 +229,43 @@ Nativ 的核心技術機制在於其 SwiftUI 應用和嵌入式 Python 環境的
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合開發者進行探索和實驗，但不建議在生產環境中使用。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 首次啟動時模型下載速度可能較慢
-  - 解法：選擇較小的模型進行測試
-- **[HIGH]** 某些模型可能不兼容，導致加載失敗
-  - 解法：檢查 Hugging Face 上的模型兼容性說明
-- [MEDIUM] 在高負載下，伺服器可能會出現延遲
-  - 解法：監控性能並適當調整模型使用
+- [MEDIUM] 首次啟動時需要下載模型，可能導致延遲
+  - 解法：提前下載所需模型以減少啟動時間
+- **[HIGH]** 在內存不足時可能導致應用崩潰
+  - 解法：確保選擇的模型不超過可用內存
+- [MEDIUM] 某些功能仍在開發中，可能不穩定
+  - 解法：定期檢查更新以獲取最新功能
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型開發團隊進行 AI 模型測試 | 非常適合 | Nativ 提供了多種功能，能夠滿足團隊的需求。 |
-| 需要快速原型的獨立開發者 | 適合 | 本地運行能夠加快開發速度，減少依賴。 |
-| 大型企業的生產環境 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
+| 小型開發團隊進行 AI 模型開發 | 非常適合 | 提供本地運行和即時反饋，提升開發效率。 |
+| 大型企業需要穩定的 AI 服務 | 不適合 | 目前仍在 alpha 階段，穩定性不足。 |
+| 個人開發者進行 AI 實驗 | 適合 | 本地運行無需依賴雲端，適合快速迭代。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 整合時間 | ~8 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到快速本地 AI 模型運行的效果，值得嘗試。
+> 花 5 小時學習、8 小時整合，得到本地 AI 運行的能力，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：Nativ 本身不需要高權限運行，但需要存取 Hugging Face 的模型資料，建議使用者注意 API 金鑰的安全性。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-Nativ 最常與其他開發工具搭配使用，如 Xcode 和 GitHub。它能夠在開發階段提供即時的 AI 支援，並且可以與 CI/CD 流程整合。實際整合範例是在 Xcode 中使用 Nativ 進行模型測試，具體做法是配置 API 端點並在代碼中調用。Nativ 支援 GitHub Actions 進行自動化測試，但目前尚未有官方的 IDE 插件。整合的摩擦點主要在於需要手動配置 API 端點，對於新手來說可能會有一定的學習曲線。
-
-## 歷史脈絡
-
-> [!info] 這個工具為什麼現在出現？
-
-在 Nativ 出現之前，開發者通常依賴雲端服務來運行 AI 模型，這導致了延遲和數據隱私問題。隨著 Apple silicon 的普及，本地運行 AI 模型的需求逐漸上升。Nativ 的出現代表了本地推理的趨勢，未來可能會有更多類似的工具出現，以滿足開發者對於性能和隱私的需求。
+> Nativ 本身不需要高權限運行，但在使用過程中可能需要訪問網絡以下載模型。依賴鏈的安全性取決於所使用的 Python 包，建議定期檢查依賴更新。
 
 ## 健康度儀表板
 
@@ -346,19 +330,19 @@ Nativ 最常與其他開發工具搭配使用，如 Xcode 和 GitHub。它能夠
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 51 |
+| Forks | 54 |
 | Open Issues | 33 |
-| Issue 解決率 | 37% (19 closed) |
-| 最後推送 | 2026-07-26 |
+| Issue 解決率 | 40% (22 closed) |
+| 最後推送 | 2026-07-28 |
 | 建立日期 | 2026-07-20 |
 | 官方網站 | [Link](https://blaizzy.github.io/nativ/) |
-| Repo 大小 | 5.3 MB |
+| Repo 大小 | 5.5 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Blaizzy/nativ) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Swift" : 89
+>     "Swift" : 90
 >     "Python" : 6
 >     "Shell" : 3
 >     "HTML" : 1
@@ -367,26 +351,35 @@ Nativ 最常與其他開發工具搭配使用，如 Xcode 和 GitHub。它能夠
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Lazarus-931](https://github.com/Lazarus-931) | 62 |
-> | [@Blaizzy](https://github.com/Blaizzy) | 27 |
-> | [@lucasnewman](https://github.com/lucasnewman) | 19 |
+> | [@Lazarus-931](https://github.com/Lazarus-931) | 69 |
+> | [@Blaizzy](https://github.com/Blaizzy) | 32 |
+> | [@lucasnewman](https://github.com/lucasnewman) | 26 |
 > | [@rcanand](https://github.com/rcanand) | 2 |
 > | [@claude](https://github.com/claude) | 1 |
 
-**最新版本**：v0.0.1 (2026-07-20)
+**最新版本**：v0.1.0 (2026-07-27)
 
 > [!info]- Release Notes
-> **Full Changelog**: https://github.com/Blaizzy/nativ/commits/v0.0.1
+> Nativ v0.1.0 is a major step forward for local AI on Apple silicon. This release adds local image generation and editing, expands the integration ecosystem, and makes model management, chat, and server operation faster and more reliable.
+> 
+> ## Highlights
+> 
+> - **Generate and edit images locally** — Use the new Images workspace, generate or edit images directly in Chat, paste images from the clipboard, or capture a screenshot. This release also adds a default image model and support for the Mage-Flow family.
+> - **Connect more of your tools** — New integrations cover Aider, Goose, Crush, Qwen Code, OpenClaw, Buzz, Zed, Continue, VS Code, Cursor, and JetBrains.
+> - **Manage models with less friction** — Nativ now detects models from custom Hugging Face caches and LM Studio, supports custom Hugging Face tokens, keeps downloads running across navigation, allows concurrent downloads, warns when a model may not fit in memory, and surfaces loading progress and failures throughout the app.
+> - **Configure and secure the local server** — Choose the server host and port, control the server from the sidebar and Settings, and keep the server API key securely in the macOS Keychain.
+> - **Enjoy a smoother chat experience** — Streamed responses are coalesced to keep the UI responsive, scrolling and menus behave more reliably, and conversations can be copied or exported as text.
+> ...（完整內容見 GitHub）
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和回應問題。
+**社群活躍度**：社群活躍度中等，開發者積極回應問題。
 **連結**：[文件](https://blaizzy.github.io/nativ/)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-25 ~ 2026-07-26）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #117 from Blaizzy/integration-buzz
+> [!abstract] 最近 10 次 commit（2026-07-27 ~ 2026-07-28）
+> **活躍天數** 2 天 · **最新 commit** Keep selection menus open (#133)
 
 ## 熱門議題
 
@@ -421,11 +414,12 @@ Nativ 最常與其他開發工具搭配使用，如 Xcode 和 GitHub。它能夠
 > | Feature | What you get |
 > |---|---|
 > | **Local chat and vision** | Streaming conversations, image attachments, reasoning output, response metrics, and persistent chat history. |
-> | **Model library** | Discover installed MLX models, browse and download compatible models from Hugging Face with fit warnings for your memory, inspect capabilities, switch models, or remove old ones. |
+> | **Image generation and editing** | Generate and edit images locally with compatible MLX image models in a dedicated Images tab. |
+> | **Model library** | Discover installed MLX models, browse and download compatible models from Hugging Face with fit warnings for your memory, inspect capabilities, switch models, or remove old ones. Preload separate language, image-generation, and speech models at once, with a warning if the combination would exceed your Mac's memory. |
 > | **Performance analytics** | Track request volume, token usage, time to first token, decode speed, model performance, and recent activity. |
 > | **System monitor** | Inspect live per-core CPU load, GPU utilization, unified memory and swap pressure, disk throughput, capacity, and SMART health. |
 > | **Local APIs** | OpenAI-compatible chat, Responses, image, audio, and model endpoints, plus Anthropic Messages endpoints. |
-> | **Coding-tool integrations** | Configure and launch Codex, Claude Code, Pi, Hermes, and OpenCode against models served by Nativ. |
+> | **Coding-tool integrations** | Configure and launch terminal coding agents — Codex, Claude Code, Pi, Hermes, OpenCode, Aider, Goose, Crush, Qwen Code, OpenClaw — and set up editors — VS Code, Cursor, Zed, JetBrains, Cline, Continue — against models served by Nativ. See [INTEGRATIONS.md](INTEGRATIONS.md) for per-tool setup. |
 > | **Developer workspace** | Set the server host and port, add a Hugging Face token for gated models, inspect runtime details, copy endpoint URLs, search and filter live server logs, and monitor server health. |
 > | **Menu bar controls** | Start or stop the server, change the loaded model, check serving statistics, open the main app without breaking focus, or pin multiple live CPU, GPU, and RAM percentages and mini graphs. |
 > | **Advanced inference controls** | Tune sampling, thinking budgets, structured output, KV-cache quantization, prefix caching, and speculative decoding. |
@@ -434,7 +428,7 @@ Nativ 最常與其他開發工具搭配使用，如 Xcode 和 GitHub。它能夠
 > 
 > ## Coming soon
 > 
-> Support for dedicated audio-only and image-generation-only models is coming soon.
+> Support for dedicated audio-only models is coming soon, along with calling image generation as a tool directly from Chat.
 > 
 > ## How it works
 > 
@@ -581,7 +575,7 @@ Nativ 最常與其他開發工具搭配使用，如 Xcode 和 GitHub。它能夠
 
 ## 延伸閱讀
 
-相關概念：[[本地推理]] · [[AI 模型管理]] · [[性能分析]]
+相關概念：[[本地推論]] · [[AI 模型管理]] · [[性能監控]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[TheTom--turboquant_plus|TheTom/turboquant_plus]] · [[antirez--ds4|antirez/ds4]] · [[danveloper--flash-moe|danveloper/flash-moe]]
 
@@ -589,11 +583,11 @@ Nativ 最常與其他開發工具搭配使用，如 Xcode 和 GitHub。它能夠
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：本地推理）
+> [!note]- 直接競品（同子分類：本地推論）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "本地推理" AND file.name != "Blaizzy--nativ"
+> WHERE subcategory = "本地推論" AND file.name != "Blaizzy--nativ"
 > SORT stars DESC
 > ```
 
@@ -625,7 +619,7 @@ Nativ 最常與其他開發工具搭配使用，如 Xcode 和 GitHub。它能夠
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["本地推理","AI 模型管理","性能分析"];
+> const concepts = ["本地推論","AI 模型管理","性能監控"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Blaizzy--nativ" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

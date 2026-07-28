@@ -509,7 +509,7 @@ AgentENV 的核心技術在於其使用 Firecracker microVM 來實現輕量級�
 
 相關概念：[[虛擬化]] · [[容器化]] · [[強化學習]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[wlzh--dji-4g-vohive-mac|wlzh/dji-4g-vohive-mac]] · [[zerobootdev--zeroboot|zerobootdev/zeroboot]] · [[CluvexStudio--Aether|CluvexStudio/Aether]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[wlzh--dji-4g-vohive-mac|wlzh/dji-4g-vohive-mac]] · [[zerobootdev--zeroboot|zerobootdev/zeroboot]] · [[CluvexStudio--Aether|CluvexStudio/Aether]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]]
 
 [GitHub](https://github.com/kvcache-ai/AgentENV)
 

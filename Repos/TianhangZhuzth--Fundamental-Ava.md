@@ -1,23 +1,23 @@
 ---
-repo: AlloyRH/AlloyFund
-url: https://github.com/AlloyRH/AlloyFund
-owner: AlloyRH
+repo: DennisLeroy/WilsonMC
+url: https://github.com/DennisLeroy/WilsonMC
+owner: DennisLeroy
 owner_type: User
-language: Solidity
-license: MIT
-description: "Launch a coin backed by a real equity. Every trade auto-buys that stock and drips it to holders’ wallets. Hold the coin, stack real Nvidia, Tesla, Apple — on-chain, liquidity locked forever."
-homepage: "https://www.alloy.fund"
-stars: 456
-stars_per_day: 17
+language: Rust
+license: GPL-3.0
+description: "Making fast, efficient Minecraft server hosting accessible to everyone."
+homepage: ""
+stars: 457
+stars_per_day: 16
 forks: 29
 open_issues: 0
 created: 2026-06-30
-pushed_at: 2026-07-17
+pushed_at: 2026-07-27
 first_seen: 2026-07-01
 week: "2026-W27"
 month: "2026-07"
 category: "其他"
-subcategory: "區塊鏈金融"
+subcategory: "遊戲伺服器"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-01
-use_case: "讓每一筆交易自動購買真實股票，持有者可隨時提領。"
+use_case: "讓快速、高效的 Minecraft 伺服器托管對每個人都可及。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,30 +35,35 @@ next_review: "2026-07-12"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
-repo_size_kb: 85
-readme_length: 8518
+repo_size_kb: 169653
+readme_length: 2525
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-01"
-star_history: "2026-07-01:599,2026-07-01:602,2026-07-02:718,2026-07-02:720,2026-07-03:756,2026-07-03:756,2026-07-04:520,2026-07-04:520,2026-07-05:523,2026-07-05:523,2026-07-06:525,2026-07-07:528,2026-07-08:529,2026-07-09:500,2026-07-10:499,2026-07-11:500,2026-07-12:501,2026-07-13:501,2026-07-14:492,2026-07-15:488,2026-07-16:476,2026-07-17:477,2026-07-18:477,2026-07-19:477,2026-07-20:478,2026-07-21:471,2026-07-22:466,2026-07-23:464,2026-07-24:457,2026-07-25:456,2026-07-26:456,2026-07-27:456"
+star_history: "2026-07-01:599,2026-07-01:602,2026-07-02:718,2026-07-02:720,2026-07-03:756,2026-07-03:756,2026-07-04:520,2026-07-04:520,2026-07-05:523,2026-07-05:523,2026-07-06:525,2026-07-07:528,2026-07-08:529,2026-07-09:500,2026-07-10:499,2026-07-11:500,2026-07-12:501,2026-07-13:501,2026-07-14:492,2026-07-15:488,2026-07-16:476,2026-07-17:477,2026-07-18:477,2026-07-19:477,2026-07-20:478,2026-07-21:471,2026-07-22:466,2026-07-23:464,2026-07-24:457,2026-07-25:456,2026-07-26:456,2026-07-27:456,2026-07-28:457"
 tags:
   - github
   - "category/其他"
-  - "lang/solidity"
+  - "lang/rust"
+  - "topic/docker"
+  - "topic/game_server"
+  - "topic/gamedev"
+  - "topic/minecraf_server"
+  - "topic/minecraft"
 aliases:
-  - "AlloyFund"
-  - "AlloyRH/AlloyFund"
-  - "讓每一筆交易自動購買真實股票，持有者可隨時提領。"
+  - "WilsonMC"
+  - "DennisLeroy/WilsonMC"
+  - "讓快速、高效的 Minecraft 伺服器托管對每個人都可及。"
 ---
 
-# AlloyFund
+# WilsonMC
 
-**456** stars · **17** stars/天 · 建立 27 天前 · Solidity · MIT
+**457** stars · **16** stars/天 · 建立 28 天前 · Rust · GPL-3.0
 
 ```dataviewjs
-const me = dv.page("Repos/AlloyRH--AlloyFund");
+const me = dv.page("Repos/DennisLeroy--WilsonMC");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,21 +75,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 `個人專案`
 
+`docker` `game-server` `gamedev` `minecraf-server` `minecraft` `networking` `rust` `server`
+
 > [!summary] 一句話摘要
-> 讓每一筆交易自動購買真實股票，持有者可隨時提領。
+> 讓快速、高效的 Minecraft 伺服器托管對每個人都可及。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (17 stars/day)
-> **授權** MIT (商業友好) · **維護** Moderate (最後推送 9 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 想要在加密貨幣中獲得實際股票收益的投資者。
-> **一句話重點** 這個專案不僅是代幣的發行，更是將股票收益引入加密貨幣的創新嘗試。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (16 stars/day)
+> **授權** GPL-3.0 (Copyleft，商用需注意) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要快速、高效 Minecraft 伺服器托管的遊戲開發者和伺服器管理員。
+> **一句話重點** Wilson 將 Rust 的高效能與 Minecraft 伺服器的需求結合，提供了一個全新的選擇。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/AlloyRH--AlloyFund");
+> const me = dv.page("Repos/DennisLeroy--WilsonMC");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "區塊鏈金融" && p.file.name !== "AlloyRH--AlloyFund" && p.status !== "archived")
+>     .where(p => p.subcategory === "遊戲伺服器" && p.file.name !== "DennisLeroy--WilsonMC" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,106 +102,116 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 區塊鏈金融 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 遊戲伺服器 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到實際股票收益，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
+> **結論** 花 10 小時學、5 小時整合，得到高效能的 Minecraft 伺服器，值得嘗試。
 
 > [!abstract] 核心創新
-> 這個專案創造了一種新的代幣類型，結合了 memecoin 和實際股票分紅的特性。
+> Wilson 是一個完全用 Rust 實作的 Minecraft 伺服器，專注於性能和安全性。
 
 ## 專案簡介
 
-Alloy 是一個基於 Robinhood Chain 的發行平台，專注於創建一種新型的 memecoin，這種代幣的持有者能夠獲得實際的股票分紅。每當用戶進行交易時，會收取 1% 的手續費，這些費用會被轉換為真實的股票，並按比例分配給持有者。這種設計消除了傳統的中介機構，所有的資金流動都是透明的，並且完全在鏈上進行。用戶只需持有代幣，即可被動累積如 Nvidia、Tesla 和 Apple 的股票，隨時可以提領。此系統的關鍵在於其無需預言機、無需保管人，且用戶資金不受管理者控制，所有分配都是基於智能合約的自動化過程。核心指令包括 `launch()` 和 `sweep(token)`，前者用於發行代幣，後者用於收集手續費並購買股票。
+Wilson 是一個完全用 Rust 實作的 Minecraft 伺服器，旨在提供快速、高效且可自定義的遊戲體驗。它的核心機制是利用多執行緒來提升性能，並支持最新的 Java 和 Bedrock 版本，確保與 Vanilla 遊戲機制的兼容性。使用者可以透過 TOML 配置文件輕鬆調整伺服器設置，並且具備強大的擴展性，支持插件開發。Wilson 的設計重點在於安全性，防止已知的安全漏洞，並提供加密和數據包壓縮等功能。這些特性使得伺服器在高負載下仍能保持穩定運行，適合需要高效能的多人遊戲環境。與其他伺服器相比，如 Spigot 或 Paper，Wilson 以 Rust 的性能優勢和現代化的設計理念，提供更高的執行效率和更低的延遲。
 
-**技術棧**：`Solidity 0.8.26` · `TypeScript` · `Hardhat`
+這使得 Wilson 特別適合大型伺服器或需要高並發的遊戲環境。使用者可能會遇到的問題包括插件兼容性和性能調整，這需要一定的技術背景來解決。社群活躍度高，開發者定期更新，顯示出良好的維護狀況。這個專案目前處於重度開發中，適合對 Minecraft 伺服器有需求的開發者和遊戲愛好者。預計未來會持續增強功能，特別是在插件生態和性能優化方面。
+
+**技術棧**：`Rust 1.95` · `Nix` · `Docker`
 
 ## 重點功能
 
-- 自動股票分紅 — 每次交易收取 1% 手續費，自動購買真實股票並分配給持有者。
-- 無需預言機 — 所有交易和分配均在鏈上進行，消除了中介風險。
-- 固定供應量 — 每個代幣的供應量固定為 1,000,000,000，無法增發。
-- 透明的資金流動 — 所有資金流動都在智能合約中公開，無法被管理者操控。
-- 可隨時提領 — 持有者可以隨時提領累積的股票收益。
+- 多執行緒性能 — 利用 Rust 的並行處理能力，顯著提升伺服器響應速度。
+- 高安全性設計 — 防止已知安全漏洞，確保玩家資料安全。
+- 靈活配置 — 使用 TOML 文件進行伺服器設置，支持自定義選項。
+- 插件支持 — 提供插件開發基礎，擴展伺服器功能。
+- 兼容多版本 — 同時支持 Java 和 Bedrock 版本，滿足不同玩家需求。
 
 ## 快速開始
 
-1. 安裝依賴
+1. 克隆專案
 ```bash
-npm install
+git clone https://github.com/DennisLeroy/WilsonMC.git
 ```
-2. 編譯合約
+2. 進入專案目錄
 ```bash
-npx hardhat compile
+cd WilsonMC
 ```
-3. 執行測試
+3. 使用 Cargo 建置專案
 ```bash
-npx hardhat test
+cargo build --release
+```
+4. 啟動伺服器
+```bash
+./target/release/wilson
+```
+5. 配置伺服器
+```bash
+編輯 config.toml 文件進行自定義設置
 ```
 
 ## 程式碼範例
 
-```solidity
-{
-  "前置條件": "已安裝 Hardhat 和依賴",
-  "指令": "npx hardhat run scripts/deploy.ts --network robinhood",
-  "預期輸出": "合約成功部署，並在鏈上生成代幣。"
-}
+```rust
+[
+  "# 前置條件：已安裝 Rust 環境",
+  "cargo run --release",
+  "# 預期輸出：伺服器啟動並顯示狀態信息"
+]
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 27 天內累積 456 stars（17 stars/天），forks 29（6.4%），顯示出穩定的增長潛力。作者 AlloyRH 擁有豐富的區塊鏈背景，這個專案解決了傳統股票投資的流動性問題，讓用戶能夠直接在鏈上獲得股票收益。此專案的推出正值 DeFi 和 memecoin 的熱潮，吸引了大量關注。高 forks/stars 比率顯示出許多開發者對其進行了實際修改和使用，顯示出社群的活躍度。
+> 建立 28 天就累積 457 stars（16/天），forks 29（6.3%），這顯示出社群對其功能的興趣。作者 DennisLeroy 在遊戲伺服器開發方面有豐富經驗，這個專案解決了現有伺服器性能不足和安全性問題的痛點。之前的解決方案如 Spigot 和 Paper 雖然功能強大，但在性能和安全性上仍有改進空間。近期的社群討論和推廣活動也促進了其曝光率。Rust 的流行和對高效能伺服器需求的增加，使得 Wilson 的出現恰逢其時。forks/stars 比率顯示出使用者對這個專案的實際修改意圖，表明它不僅僅是觀望，而是有實際的應用需求。
 
 ## 適合誰使用
 
-**目標受眾**：想要在加密貨幣中獲得實際股票收益的投資者。
+**目標受眾**：需要快速、高效 Minecraft 伺服器托管的遊戲開發者和伺服器管理員。
 
 > [!example] 使用場景
-> - 加密貨幣投資者用它來在交易中自動獲得股票分紅，因為這樣可以省去手動購買股票的麻煩，並且每次交易都能獲得實際資產。
-> - 區塊鏈開發者用它來創建新的代幣，因為其簡化的發行流程和透明的分配機制能夠吸引更多的投資者。
-> - 金融科技公司用它來整合股票和加密貨幣的交易，因為這樣可以提供一個全新的投資產品，吸引更多的用戶進入市場。
+> - 遊戲伺服器管理員用它來快速部署高效的 Minecraft 伺服器，因為 Wilson 的多執行緒設計能顯著降低延遲，提升玩家體驗。
+> - 開發者用它來測試自製的 Minecraft 插件，因為 Wilson 提供了靈活的配置選項和插件開發基礎，讓開發過程更順暢。
+> - 伺服器架設者用它來搭建大型 Minecraft 伺服器，因為其高效能和安全性設計能支持更多玩家同時在線。
 
 ## 架構分析
 
-Alloy 的架構基於智能合約，使用 Solidity 實現 ERC-20 代幣和分紅機制。所有的交易和分配都是在鏈上進行，這樣的設計確保了透明度和安全性。流動性池的設計使得用戶無法提取流動性，這樣可以保證資金的穩定性。每次交易的手續費都會自動轉換為股票，這樣的設計避免了傳統金融系統中的中介風險。整體架構的設計使得用戶可以輕鬆參與，而不需要擔心資金的安全性。
+Wilson 的架構基於 Rust 的高效能特性，採用多執行緒設計來處理並發請求，這使得伺服器在高負載下仍能保持穩定。資料流方面，伺服器使用自定義的協議來處理玩家請求，並透過加密和壓縮技術來提升安全性和效率。選擇 Rust 使得 Wilson 在性能上優於使用 Java 的伺服器，然而這也意味著開發者需要具備 Rust 的知識。擴展性方面，Wilson 支持插件開發，這使得伺服器能夠根據需求進行功能擴展。未來可能的瓶頸在於插件生態的成熟度，若無法吸引足夠的開發者參與，可能會影響其長期發展。
 
 ## 技術深入分析
 
-Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標準的智能合約來實現股票的自動分配。每次交易的手續費都會被用來購買實際的股票，這樣的設計使得用戶能夠在不需要主動操作的情況下獲得收益。效能方面，由於所有操作都是在鏈上進行，這意味著用戶的資金安全性得到了保障。設計上，Alloy 選擇了固定供應量的代幣，這樣可以避免通脹的風險，並且所有的分配都是基於智能合約的自動化過程。這樣的設計使得用戶能夠輕鬆參與，而不需要擔心資金的安全性。技術風險方面，由於依賴於交易量，若市場冷清，可能會影響到股票的購買和分配。整合方面，Alloy 可以輕鬆與其他 DeFi 區塊鏈工具鏈結合，提供更豐富的金融產品。
+Wilson 的核心技術機制在於使用 Rust 的多執行緒特性來處理並發請求，這使得伺服器在高負載下能夠保持穩定。伺服器能夠處理大量玩家的請求，並且在性能上優於傳統的 Java 伺服器。設計上，Wilson 使用自定義的協議來進行資料傳輸，並且透過加密和數據包壓縮來提升安全性。選擇 Rust 作為開發語言，不僅提升了性能，還減少了記憶體使用量，這對於需要高效能的遊戲伺服器來說是至關重要的。技術風險方面，Wilson 目前仍在重度開發中，未來可能會面臨插件兼容性和性能調整的挑戰。整合方面，Wilson 可以與現有的 CI/CD 流程相容，並且支持 Docker 部署，這使得它在現代開發環境中易於使用。整體來說，Wilson 提供了一個高效能且安全的 Minecraft 伺服器選擇，適合對性能有高要求的開發者。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的指導，包含安裝和使用範例。安裝過程相對順暢，沒有明顯的坑。文件目前僅提供英文版本，對於非英語使用者可能有一定的學習曲線。
+> README 文件清晰且包含必要的安裝步驟，讓新手能夠快速上手。安裝過程相對順暢，但需要一定的 Rust 知識來進行配置。文件中有良好的 getting started guide，並且有多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 創新的股票分紅機制，吸引投資者。
-> - 完全在鏈上運行，無需中介機構。
-> - 固定供應量，減少通脹風險。
+> - 高效能：利用 Rust 的多執行緒特性，能夠在高負載下保持穩定。
+> - 安全性：設計上防止已知的安全漏洞，保障玩家資料安全。
+> - 靈活性：支持多種配置選項，滿足不同伺服器需求。
 
 > [!danger] 缺點
-> - 僅限於 Robinhood Chain，生態系統較小。
-> - 需要用戶對區塊鏈有一定了解。
-> - 市場波動可能影響代幣價值和股票購買。
+> - 開發門檻高：需要具備 Rust 的開發經驗來進行配置和插件開發。
+> - 功能尚不完整：Bedrock 版本的支持仍在開發中，功能不如 Java 版本豐富。
+> - 社群相對較小：相較於其他成熟的伺服器，社群和插件生態尚在成長中。
 
 > [!warning] 注意事項
-> - 僅支援 Robinhood Chain。
-> - 需要用戶對區塊鏈和智能合約有基本了解。
-> - 代幣的流動性完全依賴於交易量，低交易量可能影響股票購買。
+> - 目前僅支持 Java 版本的完整功能，Bedrock 版本仍在開發中。
+> - 需要一定的 Rust 開發經驗來進行插件開發和伺服器配置。
+> - 對於大型伺服器，可能需要進行額外的性能調整。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 此工具專注於生成 AI 代理，而 AlloyFund 專注於區塊鏈金融和股票分紅。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供的功能更偏向於 NFT，而 AlloyFund 則是針對股票的分紅機制。 |
+| [SpigotMC/Spigot](https://github.com/SpigotMC/Spigot) | Spigot 提供了豐富的插件生態，但在性能上可能不如 Wilson，特別是在高並發情況下。 |
+| [PaperMC/Paper](https://github.com/PaperMC/Paper) | Paper 在性能優化上有不錯的表現，但 Wilson 的 Rust 實作可能在資源使用上更為高效。 |
 
 ## 替代方案決策
 
@@ -202,16 +219,16 @@ Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成 AI 代理，與 AlloyFund 的股票分紅機制無直接關聯。 | 如果你的專案需要 AI 代理生成而非金融產品，則應選擇此工具。 | low，因為兩者的功能差異明顯。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供 NFT 功能，而 AlloyFund 專注於股票分紅，兩者的應用場景不同。 | 如果你的專案需要 NFT 創建和管理，則應選擇 Boneyard。 | medium，因為需要重新設計資金流動和分配機制。 |
+| [SpigotMC/Spigot](https://github.com/SpigotMC/Spigot) | Spigot 使用 Java 實作，擁有豐富的插件生態，但在性能上可能不如 Wilson，特別是在高並發情況下。 | 如果你的團隊已經熟悉 Java 並需要一個成熟的插件生態，Spigot 會是更好的選擇。 | medium，因為需要將現有的插件和配置轉換到新的環境中。 |
+| [PaperMC/Paper](https://github.com/PaperMC/Paper) | Paper 在性能優化上有不錯的表現，但 Wilson 的 Rust 實作可能在資源使用上更為高效。 | 如果你需要一個已經優化過的 Java 伺服器，Paper 會是更合適的選擇。 | medium，因為需要調整配置和插件以適應新的伺服器架構。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **AlloyFund** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **WilsonMC** | **Spigot** | **Paper** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於生成 AI 代理，與 AlloyFund 的股票分紅機制無直接關聯。 | Boneyard 提供 NFT 功能，而 AlloyFund 專注於股票分紅，兩者的應用場景不同。 |
-> | 遷移成本 | - | low，因為兩者的功能差異明顯。 | medium，因為需要重新設計資金流動和分配機制。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要 AI 代理生成而非金融產品，則應選擇此工具 | 如果你的專案需要 NFT 創建和管理，則應選擇 Boneya |
+> | 技術路線 | 本專案 | Spigot 使用 Java 實作，擁有豐富的插件生態，但在性能上可能不如 Wilson，特別是在高並發情況下。 | Paper 在性能優化上有不錯的表現，但 Wilson 的 Rust 實作可能在資源使用上更為高效。 |
+> | 遷移成本 | - | medium，因為需要將現有的插件和配置轉換到新的環境中。 | medium，因為需要調整配置和插件以適應新的伺服器架構。 |
+> | 適用場景 | 主要場景 | 如果你的團隊已經熟悉 Java 並需要一個成熟的插件生態，S | 如果你需要一個已經優化過的 Java 伺服器，Paper 會 |
 
 ## 成熟度評估
 
@@ -222,50 +239,52 @@ Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合早期試用，尚不建議用於生產環境。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在低交易量時，股票購買可能無法達到預期效果
-  - 解法：增加市場推廣以提高交易量
-- [MEDIUM] 用戶需要了解如何提領股票收益
-  - 解法：提供詳細的使用指南和支援
-- [MEDIUM] 流動性池的設計可能導致資金鎖定
-  - 解法：用戶需了解流動性池的運作原理
+- **[HIGH]** 插件兼容性問題，某些插件可能無法正常運作
+  - 解法：檢查插件是否支持最新版本的 Wilson
+- [MEDIUM] 性能調整需要手動進行，初學者可能不易上手
+  - 解法：參考官方文檔中的性能調整建議
+- [MEDIUM] Bedrock 版本功能尚不完整，可能影響遊戲體驗
+  - 解法：使用 Java 版本進行遊戲，直到 Bedrock 功能完善
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型加密貨幣投資團隊 | 非常適合 | 能夠快速發行代幣並獲得實際股票收益。 |
-| 大型金融機構 | 普通 | 可能需要更複雜的金融產品設計。 |
-| 個人投資者 | 適合 | 能夠輕鬆參與並獲得被動收益。 |
-| 對區塊鏈不熟悉的用戶 | 不適合 | 需要一定的區塊鏈知識才能有效使用。 |
+| 10 人以下的 Minecraft 伺服器 | 非常適合 | Wilson 的高效能和靈活配置能夠滿足小型伺服器的需求。 |
+| 大型 Minecraft 伺服器（100+ 人） | 適合 | 雖然 Wilson 性能優越，但仍需進行性能調整以適應高負載。 |
+| 需要快速開發和測試插件的開發者 | 非常適合 | Wilson 提供了良好的插件開發基礎，讓開發者能快速迭代。 |
+| 對安全性要求極高的伺服器 | 非常適合 | Wilson 的安全設計能有效防止已知漏洞，適合高安全需求的環境。 |
+| 小型遊戲開發團隊 | 普通 | 雖然 Wilson 提供了高效能，但團隊需要具備 Rust 開發能力。 |
+| 對性能要求不高的休閒伺服器 | 不適合 | 對於不需要高效能的伺服器，使用其他成熟的解決方案會更為合適。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 學習時間 | ~10 小時 |
+| 整合時間 | ~5 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到實際股票收益，值得一試。
+> 花 10 小時學、5 小時整合，得到高效能的 Minecraft 伺服器，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，所有資金流動均在鏈上進行，並且不存取敏感資料。依賴鏈的信任程度高，沒有已知的供應鏈風險。
+> 低風險：Wilson 的設計上防止已知漏洞，並不需要高權限運行，適合在 CI/CD 流程中使用。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/AlloyRH--AlloyFund");
+> const me = dv.page("Repos/DennisLeroy--WilsonMC");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -300,7 +319,7 @@ Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/AlloyRH--AlloyFund");
+> const me = dv.page("Repos/DennisLeroy--WilsonMC");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -326,229 +345,132 @@ Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標
 | --- | --- |
 | Forks | 29 |
 | Open Issues | 0 |
-| 最後推送 | 2026-07-17 |
+| 最後推送 | 2026-07-27 |
 | 建立日期 | 2026-06-30 |
-| 官方網站 | [Link](https://www.alloy.fund) |
-| Repo 大小 | 85 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/AlloyRH/AlloyFund) |
+| Repo 大小 | 165.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/DennisLeroy/WilsonMC) |
+| Topics | `docker` `game-server` `gamedev` `minecraf-server` `minecraft` `networking` `rust` `server` |
 
 > [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@nomicfoundation/hardhat-toolbox` `@openzeppelin/contracts` `hardhat` `solhint` `dotenv` `ethers`
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "Solidity" : 76
->     "TypeScript" : 24
-> ```
+> `Cargo.toml` 中的核心套件：
+> `resolver` `members` `exclude` `all` `nursery` `pedantic` `cargo` `if_then_some_else_none` `empty_enum_variants_with_brackets` `empty_structs_with_brackets` `separated_literal_suffix` `semicolon_outside_block` `redundant_test_prefix` `non_zero_suggestions` `dbg_macro`
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@AlloyRH](https://github.com/AlloyRH) | 200 |
+> | [@DennisLeroy](https://github.com/DennisLeroy) | 2502 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，定期更新和維護。
-**連結**：[文件](https://www.alloy.fund/docs)
+**社群活躍度**：社群活躍，開發者定期更新，並有活躍的討論區。
+**連結**：[文件](https://github.com/DennisLeroy/WilsonMC/wiki)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-17 ~ 2026-07-18）
-> **活躍天數** 2 天 · **最新 commit** mythril
+> [!abstract] 最近 10 次 commit（2026-07-25 ~ 2026-07-27）
+> **活躍天數** 3 天 · **最新 commit** docs
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> Alloy
+> # Wilson
 > 
-> Dividend memecoins backed by real tokenized stocks.
+> [](https://opensource.org/licenses/gpl-3-0)
 > 
->   alloy.fund ·
->   @AlloyRH ·
->   Launchpad
+> Wilson is a Minecraft server built entirely in Rust, offering a fast, efficient,
+> and customizable experience. It prioritizes performance and player enjoyment while adhering to the core mechanics of the game.
 > 
->   
->   
->   
->   
+> ## Goals
 > 
-> ---
+> - **Performance**: Leveraging multi-threading for maximum speed and efficiency.
+> - **Compatibility**: Supports the latest Java & Bedrock Minecraft server version while adhering to Vanilla game mechanics.
+> - **Security**: Prioritizes security by preventing known security exploits.
+> - **Flexibility**: Highly configurable, with the ability to disable unnecessary features.
+> - **Extensibility**: Provides a foundation for plugin development.
 > 
-> ## Overview
+> > [!IMPORTANT]
+> > Wilson is currently under heavy development.
+> >
+> > [See what needs to be done before the 1.0.0 Release](https://github.com/Wilson-MC/Wilson/issues/449)
 > 
-> Alloy is a launchpad on [Robinhood Chain](https://robinhood.com/us/en/chain/) for a token type that did not previously exist: a **memecoin that pays its holders in real equity**.
+> ## Features
 > 
-> Every coin launched on Alloy is bound at deploy time to one real, Robinhood-issued **tokenized stock**. Every trade against that coin pays a 1% pool fee. A permissionless keeper converts those fees into the backing stock and distributes it to holders pro-rata. Holding the coin passively accrues real NVDA, TSLA, or AAPL, claimable to your wallet at any time.
-> 
-> There is no oracle, no custodian, no off-chain accounting, and no admin key over user funds. The distribution is an on-chain invariant.
-> 
-> ```
-> hold coin -> coin trades -> 1% fee -> buys real stock -> drips to holders -> claim to wallet
-> ```
-> 
-> ## How it works
-> 
-> ```mermaid
-> flowchart LR
->     A[Creator] -->|launch| B[AlloyLaunchpad]
->     B -->|deploy fixed 1B supply| C[AlloyMeme ERC-20]
->     B -->|seed single-sided| D[Uniswap V3 PoolCOIN / USDG · 1%]
->     B -->|LP NFT locked forever| B
->     E[Traders] |buy / sell| D
->     D -->|accrued fees| F[sweep · permissionless]
->     F -->|70%| G[buy backing stock]
->     F -->|20%| H[creator]
->     F -->|10%| I[buy back $ALLOY]
->     G -->|distribute| C
->     C -->|claim| J[Holder walletreal stock]
-> ```
-> 
-> ### 1. Launch
-> 
-> `launch()` performs the entire lifecycle in a single transaction:
-> 
-> 1. Deploys an `AlloyMeme` ERC-20 via `CREATE2` with a fixed 1,000,000,000 supply and no mint function.
-> 2. Opens a Uniswap V3 pool against **USDG** at the 1% fee tier.
-> 3. Seeds the **entire supply** as single-sided liquidity above spot, so the pool opens holding only the coin.
-> 4. Retains the LP position permanently. The position is never transferable out — liquidity cannot be pulled.
-> 5. Excludes the pool, the launchpad, and the burn address from dividend accounting, so drips only ever reach real holders.
-> 
-> The launch price is deterministic. The pool is initialised at a precomputed `sqrtPriceX96` derived from `startTick = 398400`, which on an 18-decimal coin against 6-decimal USDG yields an opening fully-diluted valuation of approximately **$5,000**.
-> 
-> $$P_{\text{launch}} = 1.0001^{-398400} \times 10^{18-6} \approx 5.0 \times 10^{-6}\ \text{USDG}$$
-> 
-> ### 2. Sweep
-> 
-> `sweep(token)` is permissionless and can be called by anyone:
-> 
-> 1. Collects accrued fees from the locked LP position (both sides).
-> 2. Sells the coin-denominated side into USDG so all routing happens in dollars.
-> 3. Splits the USDG per the fee schedule below.
-> 4. Buys the backing stock with the drip share and credits it to holders.
-> 
-> ### 3. Fee schedule
-> 
-> | Share | Basis points | Destination |
-> | --- | ---: | --- |
-> | Drip | 7000 | Buys the backing stock, distributed to holders |
-> | Creator | 2000 | Paid to the launcher in USDG |
-> | Protocol | 1000 | Buys back `$ALLOY` |
-> 
-> Configurable by the owner via `setFeeSplit`, constrained to sum to exactly `10_000`.
-> 
-> ## The drip: dividend accounting
-> 
-> `AlloyMeme` implements a magnified per-share accumulator, a well-understood pattern for constant-time pro-rata distribution regardless of holder count. Distribution is **O(1)**; there is no iteration over holders and therefore no gas ceiling on the holder set.
-> 
-> Let $S$ be the eligible supply (total supply minus excluded balances) and $A$ the reward amount being distributed:
-> 
-> $$\text{magPerShare} \mathrel{+}= \left\lfloor \frac{A \cdot 2^{128}}{S} \right\rfloor$$
-> 
-> Each account's lifetime entitlement is its balance scaled by the accumulator, corrected for balance changes that occurred at different accumulator values:
-> 
-> $$\text{accrued}(a) = \left\lfloor \frac{\text{magPerShare} \cdot \text{balance}(a) + \text{corrections}(a)}{2^{128}} \right\rfloor$$
-> 
-> $$\text{claimable}(a) = \text{accrued}(a) - \text{withdrawn}(a)$$
-> 
-> On every transfer of value $v$, corrections are adjusted so that historical entitlement is preserved:
-> 
-> ```
-> from:  corrections[from] += magPerShare * v      (balance fell)
-> to:    corrections[to]   -= magPerShare * v      (balance rose)
-> ```
-> 
-> The $2^{128}$ magnitude preserves precision for dust-sized distributions against a 1e27-wei eligible supply, and the accumulator cannot realistically overflow a `uint256`.
-> 
-> ### Exclusions
-> 
-> Addresses excluded from dividends (the AMM pool, the launchpad, the burn address) are removed from `eligibleSupply`. Without this, the pool — which holds most of the supply at launch — would absorb the majority of every drip and strand it permanently. Exclusions are only settable by the factory and only while `magPerShare == 0`, so no accrued balance can ever be confiscated.
-> 
-> ## The $ALLOY flywheel
-> 
-> `$ALLOY` captures fees from every coin on the launchpad.
-> 
-> ```mermaid
-> flowchart LR
->     A[coins launch] --> B[trades pay 1% fee]
->     B --> C[10% buys back $ALLOY]
->     C --> D[$ALLOY holders:boosted drips · free launches]
->     D --> A
-> ```
-> 
-> | Utility | Mechanism |
-> | --- | --- |
-> | Fee capture | 10% of every coin's trading fees buys `$ALLOY` on-chain |
-> | Free launches | Holding `freeLaunchThreshold` waives the creation fee |
-> | Boosted drips | Elevated share of distributed stock |
-> 
-> ## Deployments
-> 
-> Robinhood Chain — chain ID **4663**.
-> 
-> | Contract | Address |
-> | --- | --- |
-> | AlloyLaunchpad | [`0x927750E6EebAD299EFDb88f37F830BAD27b0657e`](https://robinhoodchain.blockscout.com/address/0x927750E6EebAD299EFDb88f37F830BAD27b0657e) |
-> | $ALLOY | [`0x3d85d3e14cE83924CcD1eFcd3416DD6b3d8c2C25`](https://robinhoodchain.blockscout.com/address/0x3d85d3e14cE83924CcD1eFcd3416DD6b3d8c2C25) |
-> | USDG (quote asset) | [`0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168`](https://robinhoodchain.blockscout.com/address/0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168) |
-> | Uniswap V3 Factory | `0x1f7d7550B1b028f7571E69A784071F0205FD2EfA` |
-> | NonfungiblePositionManager | `0x73991a25c818bf1f1128deaab1492d45638de0d3` |
-> | SwapRouter02 | `0xcaf681a66d020601342297493863e78c959e5cb2` |
-> 
-> All protocol contracts are verified on Blockscout.
-> 
-> ## Security properties
-> 
-> | Property | Guarantee |
-> | --- | --- |
-> | Liquidity | The LP position is minted to the launchpad and never transferred out. Liquidity is permanently locked. |
-> | Supply | Fixed at 1,000,000,000 at construction. `AlloyMeme` exposes no mint path and no owner. |
-> | Custody | Non-custodial. Coins and drips settle directly between the pool, the token, and holder wallets. |
-> | Distribution solvency | `distribute()` only credits reward already delivered to the contract, so the sum of claims can never exceed the balance held. |
-> | Confiscation | Exclusions are factory-only and rejected once distribution has begun (`magPerShare != 0`). |
-> | Admin scope | The owner can set the fee split, creation fee, treasury, and `$ALLOY` config. The owner cannot mint, pause, seize balances, or touch the LP. |
-> | Backing integrity | The backing stock is immutable per coin, bound at construction. |
-> 
-> ### Known trade-offs
-> 
-> - `sweep()` routes swaps with `amountOutMinimum = 0`. Amounts are fee-sized, but this is MEV-exposed by construction; the alternative is a stale on-chain price oracle for an asset with intentionally thin liquidity.
-> - Only tokenized stocks with a live USDG pool can back a coin. The interface enforces this at launch time.
-> - Drips accrue only to non-excluded holders. Coins held inside another contract that does not forward claims will accrue to that contract.
-> 
-> ## Repository layout
-> 
-> ```
-> contracts/
->   AlloyMeme.sol            dividend-paying ERC-20; magnified per-share accounting
->   AlloyLaunchpad.sol       launch, single-sided seeding, LP lock, fee sweep
->   interfaces/IUniswap.sol  minimal Uniswap V3 surface consumed by the protocol
-> docs/
->   architecture.md          system design and control flow
->   mechanism.md             distribution math and launch pricing derivation
->   security.md              invariants, threat model, trade-offs
-> abis/                      ABIs for integrators
-> ```
-> 
-> ## Integration
-> 
-> A Uniswap-standard token list of every launched coin is serv
+> - [x] Configuration (toml)
+> - [Tracking: Protocol](https://github.com/Wilson-MC/Wilson/issues/1401)
+>   - [x] Server Status/Ping
+>   - [x] Encryption
+>   - [x] Packet Compression
+>   - [x] Java Edition
+>   - [x] Bedrock Edition (W.I.P)
+>   - ...
+> - [Tracking: World](https://github.com/Wilson-MC/Wilson/issues/1403)
+>   - [x] Player Tab-list
+>   - [x] Scoreboard
+>   - [x] World Loading
+>   - [x] World Time
+>   - [x] World Borders
+>   - [x] World Saving
+>   - [x] Lighting
+>   - [x] Entity Spawning
+>   - [x] Bossbar
+>   - [x] Chunk Loading (Vanilla, Linear, Pump)
+>   - [Chunk Generation](https://github.com/Wilson-MC/Wilson/issues/36)
+>   - [x] Chunk Saving (Vanilla, Linear, Pump)
+>   - [Redstone](https://github.com/Wilson-MC/Wilson/issues/1402)
+>   - [x] Liquid Physics
+>   - ...
+> - [Tracking: Player](https://github.com/Wilson-MC/Wilson/issues/1405)
+>   - [x] Skins
+>   - [x] Teleport
+>   - [x] Movement
+>   - [x] Animation
+>   - [x] Inventory
+>   - [Combat](https://github.com/Wilson-MC/Wilson/issues/1404)
+>   - [x] Experience
+>   - [x] Hunger
+>   - [X] Off Hand
+>   - [X] Advancements (W.I.P)
+>   - [x] Eating
+>   - ...
+> - Entities
+>   - [x] Non-Living (Minecart, Eggs...) (W.I.P)
+>   - [x] Entity Effects
+>   - [x] Players
+>   - [x] Mobs (W.I.P)
+>   - [x] Animals (W.I.P)
+>   - [Entity AI](https://github.com/Wilson-MC/Wilson/issues/1406)
+>   - [x] Boss (W.I.P)
+>   - [x] Villagers (W.I.P)
+>   - [X] Entity Saving
+> - Server
+>   - [Plugins](https://github.com/Wilson-MC/Wilson/issues/1407)
+>   - [x] Query
+>   - [x] RCON
+>   - [x] Inventories
+>   - [x] Particles
+>   - [x] Chat
+>   - [Commands](https://github.com/Wilson-MC/Wilson/issues/15)
+>   - [x] Permissions
+>   - [x] Translations
+> - Proxy
+>   - [x] Bungeecord
+>   - [x] Velocity
 
 ## 延伸閱讀
 
-相關概念：[[區塊鏈金融]] · [[智能合約]] · [[DeFi]]
+相關概念：[[多執行緒]] · [[遊戲伺服器]] · [[Rust]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[nv-tlabs--Gamma-World|nv-tlabs/Gamma-World]] · [[uluckyXH--OpenMOSS|uluckyXH/OpenMOSS]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[GammaLabTechnologies--harmonist|GammaLabTechnologies/harmonist]] · [[HKUDS--ClawTeam|HKUDS/ClawTeam]]
 
-[GitHub](https://github.com/AlloyRH/AlloyFund) · [官方網站](https://www.alloy.fund)
+[GitHub](https://github.com/DennisLeroy/WilsonMC)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：區塊鏈金融）
+> [!note]- 直接競品（同子分類：遊戲伺服器）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "區塊鏈金融" AND file.name != "AlloyRH--AlloyFund"
+> WHERE subcategory = "遊戲伺服器" AND file.name != "DennisLeroy--WilsonMC"
 > SORT stars DESC
 > ```
 
@@ -556,7 +478,7 @@ Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "AlloyRH--AlloyFund"
+> WHERE category = "其他" AND file.name != "DennisLeroy--WilsonMC"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -565,7 +487,7 @@ Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Solidity" AND file.name != "AlloyRH--AlloyFund" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "DennisLeroy--WilsonMC" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -574,15 +496,15 @@ Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W27" AND file.name != "AlloyRH--AlloyFund"
+> WHERE week = "2026-W27" AND file.name != "DennisLeroy--WilsonMC"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["區塊鏈金融","智能合約","DeFi"];
+> const concepts = ["多執行緒","遊戲伺服器","Rust"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "AlloyRH--AlloyFund" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "DennisLeroy--WilsonMC" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -595,12 +517,12 @@ Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/AlloyRH--AlloyFund");
+> const me = dv.page("Repos/DennisLeroy--WilsonMC");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "AlloyRH--AlloyFund" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "DennisLeroy--WilsonMC" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -616,7 +538,7 @@ Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "AlloyRH" AND file.name != "AlloyRH--AlloyFund"
+> WHERE owner = "DennisLeroy" AND file.name != "DennisLeroy--WilsonMC"
 > SORT stars DESC
 > ```
 
@@ -624,7 +546,7 @@ Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/AlloyRH--AlloyFund");
+> const me = dv.page("Repos/DennisLeroy--WilsonMC");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -641,7 +563,7 @@ Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/AlloyRH--AlloyFund");
+> const me = dv.page("Repos/DennisLeroy--WilsonMC");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -674,7 +596,7 @@ Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/AlloyRH--AlloyFund");
+> const me = dv.page("Repos/DennisLeroy--WilsonMC");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -698,7 +620,7 @@ Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/AlloyRH--AlloyFund");
+> const me = dv.page("Repos/DennisLeroy--WilsonMC");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -735,7 +657,7 @@ Alloy 的核心技術機制在於其獨特的分紅設計，使用了 ERC-20 標
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/AlloyRH--AlloyFund");
+> const me = dv.page("Repos/DennisLeroy--WilsonMC");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },

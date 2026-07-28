@@ -7,9 +7,9 @@ language: N/A
 license: NOASSERTION
 description: "Open Frontier Intelligence"
 homepage: ""
-stars: 1993
-stars_per_day: 1993
-forks: 150
+stars: 2041
+stars_per_day: 2041
+forks: 153
 open_issues: 6
 created: 2026-07-27
 pushed_at: 2026-07-28
@@ -19,14 +19,14 @@ month: "2026-07"
 category: "AI/ML"
 subcategory: "LLM 推論"
 release_tag: ""
-install_complexity: "easy"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-28
-use_case: "提供開放的前沿智能模型，支持多模態和長上下文的推理。"
+use_case: "提供開放的多模態智能模型，專注於長期推理和知識工作。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,17 +42,16 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-28"
-star_history: "2026-07-28:1993"
+star_history: "2026-07-28:1993,2026-07-28:2041"
 tags:
   - github
   - "category/ai_ml"
   - "lang/other"
   - org
-  - easy_install
 aliases:
   - "Kimi-K3"
   - "MoonshotAI/Kimi-K3"
-  - "提供開放的前沿智能模型，支持多模態和長上下文的推理。"
+  - "提供開放的多模態智能模型，專注於長期推理和知識工作。"
 ---
 
 # Kimi-K3
@@ -70,16 +69,16 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`ORG` `easy-install`
+`ORG`
 
 > [!summary] 一句話摘要
-> 提供開放的前沿智能模型，支持多模態和長上下文的推理。
+> 提供開放的多模態智能模型，專注於長期推理和知識工作。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Viral (2.0k stars/day)
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Viral (2.0k stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要開放多模態智能模型進行長期推理和知識工作的研究者和開發者。
-> **一句話重點** Kimi K3 的開放性和多模態能力使其在前沿智能領域具備獨特的競爭優勢。
+> **適合** 需要開放多模態智能模型以進行長期推理和知識工作的開發者和研究者。
+> **一句話重點** Kimi K3 的開放性和多模態能力使其在長期推理和知識工作中具備獨特優勢。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -102,27 +101,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到強大的多模態推理能力，值得投入。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
+> **結論** 花 10 小時學習，20 小時整合，得到強大的多模態推理能力，值得投入。
 
 > [!abstract] 核心創新
-> Kimi K3 是世界上首個開放的 3T 級模型，專為前沿智能設計。
+> Kimi K3 是全球首個開放的 3T 級模型，專為邊界智能設計。
 
 ## 專案簡介
 
-Kimi K3 是一個開放權重的多模態智能模型，擁有 2.8 兆參數，專為長期編碼和知識工作設計。用戶可以通過配置 `reasoning_effort` 參數來調整推理強度，支持低、中、高和最大推理。這意味著用戶可以根據需求選擇推理的深度，從而影響模型的回應質量。其架構基於 Kimi Delta Attention 和 Attention Residuals，並採用 Mixture-of-Experts (MoE) 模式，能在 896 個專家中激活 16 個，這樣的設計提升了計算效率，並且在長期工程會話中表現出色。Kimi K3 支持 1 百萬 token 的上下文窗口，這使得它在處理大型資料集時能夠保持上下文的連貫性。
+Kimi K3 是一個開放權重的多模態智能模型，擁有 2.8 兆參數，專為長期推理和知識工作而設計。用戶可以透過 API 進行多輪對話，並利用 `reasoning_effort` 參數來調整推理的深度，支援 `low`、`high` 和 `max` 三種模式。這個模型的架構基於 Kimi Delta Attention (KDA) 和 Attention Residuals (AttnRes)，並且具有 1 百萬 token 的上下文窗口，這使得它能夠在長時間的編程和知識工作中運行，並能夠處理文本、圖像和視頻資料。Kimi K3 的一大賣點是其開放的權重，這讓研究人員和開發者能夠自由使用和進一步創新。
 
-與其他模型相比，如 GPT-3，Kimi K3 的開放權重和多模態能力使其在研究和實際應用中更具靈活性。使用者可以通過 API 訪問 Kimi K3，並且它與 vLLM 和 SGLang 等推理引擎兼容，這為開發者提供了多樣的整合選擇。儘管目前的社群活動相對較新，但已經有一些熱門問題反映了用戶對於中文支持和硬體兼容性的需求。整體而言，Kimi K3 是一個具備高效能和靈活性的前沿智能模型，適合需要長期推理和多模態處理的應用場景。
+與其他模型相比，如 OpenAI 的 GPT 系列，Kimi K3 在多模態處理和長期上下文管理方面具有明顯優勢，特別適合需要長期推理的應用場景。實際使用中，Kimi K3 能夠支持大規模的工程任務，並且在 GPU 核心優化和編譯器開發等方面表現出色。雖然目前的開發還在初期階段，但其潛力巨大，尤其是在開放權重的背景下，未來可能會吸引更多的開發者和研究者進行貢獻和改進。對於需要進行長期推理和多模態處理的團隊，Kimi K3 是一個值得考慮的選擇。
 
-**技術棧**：`Python` · `OpenAI API`
+**技術棧**：`Kimi Delta Attention` · `Attention Residuals` · `MXFP4` · `MXFP8`
 
 ## 重點功能
 
-- 新架構 — 基於 Kimi Delta Attention 和 Attention Residuals，提升計算效率。
-- 長期編碼 — 能夠在長期會話中保持上下文，適合大型代碼庫的優化。
-- 多模態支持 — 同時理解文本、圖像和視頻，適合多樣化的應用場景。
-- 開放權重 — 完全開放的模型權重，促進研究和創新。
-- 推理強度配置 — 透過 `reasoning_effort` 參數調整推理深度，滿足不同需求。
+- 新架構 — 基於 Kimi Delta Attention (KDA) 和 Attention Residuals (AttnRes)，提供 2.5 倍的效率提升。
+- 長期編程 — 支援長時間的工程會話，能夠自動化複雜的編程任務。
+- 多模態理解 — 同時處理文本、圖像和視頻，提供更豐富的交互體驗。
+- 開放權重 — 完全開放的權重，促進研究和創新。
+- 量化技術 — 使用 MXFP4 和 MXFP8 進行量化，提升硬體兼容性。
 
 ## 快速開始
 
@@ -130,78 +129,76 @@ Kimi K3 是一個開放權重的多模態智能模型，擁有 2.8 兆參數，�
 ```bash
 pip install openai
 ```
-2. 設置 API 密鑰
+2. 初始化模型
 ```bash
-export OPENAI_API_KEY='your_api_key'
+client = openai.OpenAI()
 ```
-3. 運行範例程式
+3. 發送請求
 ```bash
-python your_script.py
+response = client.chat.completions.create(model='kimi-k3', messages=messages, reasoning_effort='max')
 ```
 
 ## 程式碼範例
 
 ```bash
 {
-  "前置條件": "需要安裝 openai 套件並設置 API 密鑰。",
-  "指令": "response = client.chat.completions.create(\n    model=model_name,\n    messages=messages,\n    stream=False,\n    max_tokens=4096,\n    reasoning_effort=\"max\",\n)",
-  "預期輸出": "assistant should mention 215 and 222 that appear in the prior reasoning content."
+  "前置條件": "需要安裝 openai 套件。",
+  "程式碼": "response = client.chat.completions.create(\n    model=model_name,\n    messages=messages,\n    stream=False,\n    max_tokens=4096,\n    reasoning_effort='max',\n)",
+  "預期輸出": "助手應該提到之前推理內容中的數字。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 1 天就累積 1993 stars（1993/天），forks 150（7.5%），這顯示出強烈的初期興趣。作者 bigeagle 在開源社群中有一定的影響力，這個模型解決了多模態推理和長上下文處理的需求，特別是在開放權重的背景下，讓研究者能夠自由探索。近期的社群討論集中在中文支持和硬體兼容性上，顯示出用戶對於這些功能的期待。技術上，隨著多模態模型的興起，Kimi K3 的設計理念符合當前的技術趨勢，並且其開放性使得它在學術界和業界都具備潛在的應用價值。
+> 建立 1 天就累積 2041 stars（2041/天），forks 153（7.5%），這顯示出強烈的興趣和活躍度。作者 bigeagle 在開源社群中有一定的影響力，過去可能參與過類似的 AI 項目。Kimi K3 解決了多模態智能模型在開放性和可擴展性上的不足，讓開發者能夠在不受限的情況下進行創新。這個模型的推出恰逢對開放 AI 模型需求上升的時期，社群對其功能和潛力表現出高度期待。forks/stars 比率為 7.5%，顯示出許多人在實際修改和使用這個工具。
 
 ## 適合誰使用
 
-**目標受眾**：需要開放多模態智能模型進行長期推理和知識工作的研究者和開發者。
+**目標受眾**：需要開放多模態智能模型以進行長期推理和知識工作的開發者和研究者。
 
 > [!example] 使用場景
-> - AI 研究者用它來開發新的多模態應用，因為 Kimi K3 的開放權重和高效能支持快速實驗和迭代。
-> - 軟體工程師用它來優化大型代碼庫，因為 Kimi K3 能夠在長期會話中保持上下文，幫助理解複雜邏輯。
-> - 數據科學家用它來進行深度研究，因為 Kimi K3 支持互動式可視化和長上下文處理，能夠生成更深入的分析報告。
+> - AI 研究員用它來開發多模態智能應用，因為 Kimi K3 支援長達 1 百萬 token 的上下文，能夠處理複雜的數據集。
+> - 後端工程師用它來優化 GPU 核心，因為 Kimi K3 的長期推理能力能夠自動化繁瑣的優化過程，節省開發時間。
+> - 遊戲開發者用它來實現視覺交互，因為 Kimi K3 的多模態能力能夠同時處理圖像和文本，提升遊戲的互動性。
 
 ## 架構分析
 
-Kimi K3 採用 Mixture-of-Experts (MoE) 架構，這使得模型能夠在多個專家中選擇最合適的進行推理，從而提高了效率。其 Kimi Delta Attention 和 Attention Residuals 的設計，讓模型在處理長上下文時能夠保持高效能。這種設計的代價在於需要較高的計算資源，尤其是在激活多個專家的情況下。隨著模型規模的擴大，可能會面臨記憶體和計算瓶頸，特別是在推理過程中需要大量的上下文資料時。整體而言，Kimi K3 的架構設計旨在平衡性能和計算效率，適合需要長期推理的應用場景。
+Kimi K3 採用 Mixture-of-Experts (MoE) 架構，這使得模型在處理複雜任務時能夠動態選擇專家進行計算。這種設計的好處在於能夠在不增加計算成本的情況下提升模型的表現，然而，這也帶來了模型訓練和推理的複雜性。資料流方面，模型在推理時會根據上下文動態選擇激活的專家，這樣可以有效利用資源。選擇 MoE 而非傳統的全連接層，雖然能夠提升效率，但在某些情況下可能會導致專家之間的協調問題，影響推理的穩定性。擴展性方面，這種架構能夠輕鬆擴展到更大的模型，但在實際應用中，對硬體的需求也隨之增加。
 
 ## 技術深入分析
 
-Kimi K3 的核心技術機制基於 Mixture-of-Experts (MoE) 架構，這使得模型能夠在多個專家中選擇最合適的進行推理。這種設計不僅提高了計算效率，還能在長期會話中保持上下文的連貫性。模型的效能特性顯示，Kimi K3 能夠處理高達 1 百萬 token 的上下文，這對於大型資料集的分析至關重要。選擇 Kimi Delta Attention 和 Attention Residuals 作為基礎架構，這使得模型在推理過程中能夠有效地管理記憶體和計算資源。
-
-技術上，這種選擇的代價在於需要較高的計算資源，尤其是在激活多個專家的情況下。隨著模型的擴大，可能會面臨記憶體和計算瓶頸，特別是在推理過程中需要大量的上下文資料時。整合 Kimi K3 到現有的技術生態中，開發者可以利用其 API 與多種推理引擎（如 vLLM 和 SGLang）進行整合，這為開發者提供了靈活的選擇。整體而言，Kimi K3 的設計理念符合當前的技術趨勢，並且其開放性使得它在學術界和業界都具備潛在的應用價值。
+Kimi K3 的核心技術機制基於 Mixture-of-Experts (MoE) 架構，這使得模型能夠在推理時根據上下文動態選擇激活的專家，從而提高效率。這種設計允許模型在處理複雜任務時，能夠在不增加計算成本的情況下，提升表現。Kimi K3 能夠處理的資料量非常龐大，支持 1 百萬 token 的上下文，這在實際應用中能夠處理長期的對話和推理任務。選擇 KDA 和 AttnRes 作為注意力機制，能夠在推理速度和準確性之間取得良好的平衡，但這也意味著對硬體的需求會相對較高。這個模型的依賴樹相對複雜，尤其是在多模態處理上，可能需要額外的資源來支持其運行。技術風險方面，隨著模型的擴大，可能會面臨專家之間的協調問題，這在某些情況下可能影響推理的穩定性。整合方面，Kimi K3 與現有的開發工具鏈相容性良好，特別是在使用 CLI 工具時，能夠輕鬆集成到現有的工作流中。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件質量尚可，但缺乏範例和中文支持。安裝過程相對順暢，沒有明顯的坑。缺乏詳細的入門指南，可能對新手造成困難。
+> README 文件提供了基本的使用說明，但缺乏詳細範例，可能對新手不夠友好。安裝過程相對順暢，但對於硬體要求的說明不夠明確。整體而言，對於新手來說，可能需要額外的學習時間來熟悉這個工具。
 
 ## 優缺點分析
 
 > [!success] 優點
 > - 開放權重，促進研究和創新。
-> - 支持長上下文，適合複雜應用。
-> - 多模態能力，能處理文本、圖像和視頻。
+> - 支持多模態處理，能夠同時理解文本和圖像。
+> - 長期推理能力，適合複雜的知識工作。
 
 > [!danger] 缺點
-> - 目前缺乏中文支持，影響非英語使用者。
-> - 尚未針對 Apple Silicon 提供支持計劃。
-> - 量化技術尚在探索階段，可能影響性能。
+> - 需要高效能硬體支持，對於普通用戶可能不友好。
+> - 使用上需要完整的消息傳遞，增加了複雜度。
+> - 目前的文檔支持不足，非英語使用者可能面臨困難。
 
 > [!warning] 注意事項
-> - 目前 README 缺乏中文支持，可能影響非英語使用者的理解。
-> - 尚未提供針對 Apple Silicon 的支持計劃，可能影響某些開發者的使用。
-> - 模型的量化技術尚在探索階段，對於低位數量化的需求尚未完全滿足。
+> - 目前不支援中文 README，可能影響非英語使用者的理解。
+> - 對於大型模型的運行需求，可能需要高效能的硬體支持。
+> - 在多輪對話中，需完整傳遞助手的消息，增加了使用的複雜度。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 此工具專注於代理模型的開發，而 Kimi K3 更加注重多模態和長上下文的推理。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了一個輕量級的推理框架，適合小型專案，而 Kimi K3 的設計則針對大型應用和深度推理。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | Codex Shim 主要針對代碼生成，Kimi K3 則支持文本、圖像和視頻的多模態處理。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於代理模型的創建，而 Kimi K3 更加強調多模態和長期推理的能力。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了簡化的 AI 模型，而 Kimi K3 則是針對高性能和多模態處理進行優化。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | Duel-Agents 專注於競爭性代理，而 Kimi K3 更加適合需要長期推理的應用。 |
 
 ## 替代方案決策
 
@@ -209,16 +206,16 @@ Kimi K3 的核心技術機制基於 Mixture-of-Experts (MoE) 架構，這使得�
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於代理模型的開發，Kimi K3 更加注重多模態和長上下文的推理。 | 如果你的專案需要專注於代理模型的開發，而不是多模態處理。 | medium，因為需要重構部分應用邏輯。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供輕量級的推理框架，適合小型專案，而 Kimi K3 的設計則針對大型應用。 | 如果你的專案較小，並且需要快速實現基本功能。 | low，因為框架相似，遷移成本較低。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於代理模型的創建，提供簡化的開發流程，而 Kimi K3 則強調多模態和長期推理的能力。 | 如果你的專案需要快速開發代理模型，且不需要多模態處理，則可以選擇 agent-sprite-forge。 | medium，因為需要重新設計部分架構以適應不同的模型特性。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供簡化的 AI 模型，適合快速開發，而 Kimi K3 則是針對高性能和多模態處理進行優化。 | 如果你的團隊需要快速原型開發，且不需要高性能的推理能力，可以考慮 boneyard。 | low，因為兩者在基本 API 設計上有相似之處。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **Kimi-K3** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於代理模型的開發，Kimi K3 更加注重多模態和長上下文的推理。 | 提供輕量級的推理框架，適合小型專案，而 Kimi K3 的設計則針對大型應用。 |
-> | 遷移成本 | - | medium，因為需要重構部分應用邏輯。 | low，因為框架相似，遷移成本較低。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要專注於代理模型的開發，而不是多模態處理。 | 如果你的專案較小，並且需要快速實現基本功能。 |
+> | 技術路線 | 本專案 | 專注於代理模型的創建，提供簡化的開發流程，而 Kimi K3 則強調多模態和長期推理的能力。 | 提供簡化的 AI 模型，適合快速開發，而 Kimi K3 則是針對高性能和多模態處理進行優化。 |
+> | 遷移成本 | - | medium，因為需要重新設計部分架構以適應不同的模型特性。 | low，因為兩者在基本 API 設計上有相似之處。 |
+> | 適用場景 | 主要場景 | 如果你的專案需要快速開發代理模型，且不需要多模態處理，則可以 | 如果你的團隊需要快速原型開發，且不需要高性能的推理能力，可以 |
 
 ## 成熟度評估
 
@@ -229,43 +226,49 @@ Kimi K3 的核心技術機制基於 Mixture-of-Experts (MoE) 架構，這使得�
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用或小型專案，不建議用在生產環境的核心路徑上。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 目前缺乏中文支持，非英語使用者可能會遇到理解困難。
-  - 解法：使用翻譯工具輔助理解。
-- [MEDIUM] 對 Apple Silicon 的支持尚未明確，可能導致無法在某些設備上運行。
-  - 解法：使用其他硬體或等待官方支持。
-- [MEDIUM] 量化技術尚在探索階段，可能影響性能。
-  - 解法：在使用前進行性能測試以評估影響。
+- **[HIGH]** 使用過程中可能會遇到推理內容不一致的情況，特別是在多輪對話中。
+  - 解法：確保每次請求都傳遞完整的消息歷史。
+- [MEDIUM] 對於大型模型的運行需求，可能需要高效能的硬體支持。
+  - 解法：在雲端環境中運行，選擇適合的 GPU 配置。
+- [MEDIUM] 文檔支持不足，非英語使用者可能面臨困難。
+  - 解法：尋找社群翻譯或參考其他開源模型的文檔。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 大型研究團隊進行多模態分析 | 非常適合 | Kimi K3 的多模態支持和長上下文能力非常符合需求。 |
-| 小型專案的快速開發 | 普通 | 雖然功能強大，但可能過於複雜，對小型專案來說不必要。 |
-| 需要長期推理的工程項目 | 非常適合 | Kimi K3 在長期會話中的表現優異，能夠保持上下文的連貫性。 |
+| 需要長期推理的 AI 研究團隊 | 非常適合 | Kimi K3 的長期推理能力和多模態處理非常符合需求。 |
+| 小型創業團隊進行快速原型開發 | 普通 | 雖然有開放權重，但可能需要較高的硬體支持。 |
+| 大型企業進行知識工作自動化 | 適合 | Kimi K3 的多模態能力能夠提升工作效率。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 學習時間 | ~10 小時 |
+| 整合時間 | ~20 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到強大的多模態推理能力，值得投入。
+> 花 10 小時學習，20 小時整合，得到強大的多模態推理能力，值得投入。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：不需要高權限，且不存取敏感資料。依賴鏈的信任程度尚可，無已知的供應鏈風險。
+> 低風險：該工具不需要高權限運行，且不會存取敏感資料，但使用時需確保 API 金鑰的安全性。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+Kimi K3 通常與開發工具如 VS Code 和 CI/CD 系統搭配使用，能夠在開發、建置和部署階段提供支持。在使用 Kimi Code CLI 時，可以輕鬆選擇 Kimi K3 作為模型，具體做法是執行 `/model` 命令。與 GitHub Actions 和 GitLab CI 的整合相對簡單，但在某些情況下可能需要額外的配置來適應不同的工作流。常見的整合問題包括對於硬體需求的理解不足，建議在整合前做好充分的準備。
 
 ## 健康度儀表板
 
@@ -330,7 +333,7 @@ Kimi K3 的核心技術機制基於 Mixture-of-Experts (MoE) 架構，這使得�
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 150 |
+| Forks | 153 |
 | Open Issues | 6 |
 | Issue 解決率 | 25% (2 closed) |
 | 最後推送 | 2026-07-28 |
@@ -345,7 +348,7 @@ Kimi K3 的核心技術機制基於 Mixture-of-Experts (MoE) 架構，這使得�
 
 ## 社群與生態
 
-**社群活躍度**：社群活動剛起步，活躍度尚可，但問題解決率偏低。
+**社群活躍度**：社群活躍度中等，最近有更新和回應，但解決率較低。
 **連結**：[文件](https://platform.kimi.ai/docs)
 
 ## 開發動態
@@ -358,7 +361,7 @@ Kimi K3 的核心技術機制基於 Mixture-of-Experts (MoE) 架構，這使得�
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#6](https://github.com/MoonshotAI/Kimi-K3/issues/6) | 这么一个强大的模型，真希望README.md是用中文来呈现的 | 4 | 0 |
+> | [#6](https://github.com/MoonshotAI/Kimi-K3/issues/6) | 这么一个强大的模型，真希望README.md是用中文来呈现的 | 5 | 0 |
 > | [#7](https://github.com/MoonshotAI/Kimi-K3/issues/7) | 是否考虑出个27b或70B的？ | 0 | 0 |
 > | [#5](https://github.com/MoonshotAI/Kimi-K3/issues/5) | [Request] Apple Silicon / MLX / EXO support roadmap | 0 | 0 |
 > | [#4](https://github.com/MoonshotAI/Kimi-K3/issues/4) | 这得需要什么样的量化技术啊??? 2位 1位都扛不住! 要往1位以下发展了啊. | 0 | 1 |
@@ -517,9 +520,9 @@ Kimi K3 的核心技術機制基於 Mixture-of-Experts (MoE) 架構，這使得�
 
 ## 延伸閱讀
 
-相關概念：[[多模態]] · [[推理優化]] · [[量化技術]]
+相關概念：[[多模態]] · [[長期推理]] · [[量化技術]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[deepseek-ai--TileKernels|deepseek-ai/TileKernels]] · [[jamesob--local-llm|jamesob/local-llm]] · [[kyegomez--OpenMythos|kyegomez/OpenMythos]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[deepseek-ai--TileKernels|deepseek-ai/TileKernels]] · [[jamesob--local-llm|jamesob/local-llm]] · [[kyegomez--OpenMythos|kyegomez/OpenMythos]] · [[lightseekorg--tokenspeed|lightseekorg/tokenspeed]]
 
 [GitHub](https://github.com/MoonshotAI/Kimi-K3)
 
@@ -561,7 +564,7 @@ Kimi K3 的核心技術機制基於 Mixture-of-Experts (MoE) 架構，這使得�
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["多模態","推理優化","量化技術"];
+> const concepts = ["多模態","長期推理","量化技術"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "MoonshotAI--Kimi-K3" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
