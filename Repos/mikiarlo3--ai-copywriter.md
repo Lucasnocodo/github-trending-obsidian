@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "An AI copywriter that uses real copywriting skills + real marketing knowledge with human tone."
 homepage: ""
-stars: 863
-stars_per_day: 432
-forks: 13
+stars: 941
+stars_per_day: 314
+forks: 18
 open_issues: 2
 created: 2026-07-24
 pushed_at: 2026-07-25
@@ -30,8 +30,8 @@ use_case: "結合真實文案寫作技巧與市場知識的 AI 文案工具，�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-30"
+appearances: 3
+next_review: "2026-07-31"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-26"
-star_history: "2026-07-26:621,2026-07-26:622,2026-07-27:863"
+star_history: "2026-07-26:621,2026-07-26:622,2026-07-27:863,2026-07-28:941"
 tags:
   - github
   - "category/其他"
@@ -757,5 +757,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-28|2026-07-28]] — 再次上榜，941 stars
 - [[2026-07-27|2026-07-27]] — 再次上榜，863 stars
 - [[2026-07-26|2026-07-26]] — 首次收錄，621 stars

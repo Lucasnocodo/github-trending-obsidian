@@ -7,9 +7,9 @@ language: Python
 license: N/A
 description: ""
 homepage: ""
-stars: 1436
-stars_per_day: 479
-forks: 145
+stars: 1788
+stars_per_day: 447
+forks: 189
 open_issues: 7
 created: 2026-07-23
 pushed_at: 2026-07-26
@@ -30,8 +30,8 @@ use_case: "在 $8 的 ESP32 微控制器上運行 28.9M 參數的語言模型，
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-07-30"
+appearances: 3
+next_review: "2026-07-31"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-26"
-star_history: "2026-07-26:875,2026-07-27:1436"
+star_history: "2026-07-26:875,2026-07-27:1436,2026-07-28:1788"
 tags:
   - github
   - "category/ai_ml"
@@ -761,5 +761,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-28|2026-07-28]] — 再次上榜，1.8k stars
 - [[2026-07-27|2026-07-27]] — 再次上榜，1.4k stars
 - [[2026-07-26|2026-07-26]] — 首次收錄，875 stars

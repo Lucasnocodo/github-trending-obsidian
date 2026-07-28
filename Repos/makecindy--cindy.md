@@ -7,12 +7,12 @@ language: TypeScript
 license: Apache-2.0
 description: "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。"
 homepage: "https://cindy.app"
-stars: 615
-stars_per_day: 154
-forks: 73
-open_issues: 157
+stars: 888
+stars_per_day: 178
+forks: 110
+open_issues: 223
 created: 2026-07-22
-pushed_at: 2026-07-27
+pushed_at: 2026-07-28
 first_seen: 2026-07-27
 week: "2026-W31"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "開源的 AI 代理，開箱即用，能夠自動執行各種任務�
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-03"
+appearances: 2
+next_review: "2026-08-04"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 57
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-27"
-star_history: "2026-07-27:615"
+star_history: "2026-07-27:615,2026-07-28:888"
 tags:
   - github
   - "category/ai_ml"
@@ -865,4 +865,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-28|2026-07-28]] — 再次上榜，888 stars
 - [[2026-07-27|2026-07-27]] — 首次收錄，615 stars

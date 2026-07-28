@@ -1,23 +1,23 @@
 ---
-repo: Jakubantalik/thinking-orbs
-url: https://github.com/Jakubantalik/thinking-orbs
-owner: Jakubantalik
+repo: VictorTaelin/OptMem
+url: https://github.com/VictorTaelin/OptMem
+owner: VictorTaelin
 owner_type: User
-language: TypeScript
-license: MIT
-description: "Dotted thought-orb loading indicators for AI & agent UIs — six tuned states, two sizes, auto dark/light"
+language: Python
+license: N/A
+description: "Permanent memory for AI agents. A 426-token prompt, a script, plug and play."
 homepage: ""
-stars: 1172
-stars_per_day: 195
-forks: 85
-open_issues: 7
-created: 2026-07-21
-pushed_at: 2026-07-21
-first_seen: 2026-07-23
-week: "2026-W30"
+stars: 661
+stars_per_day: 331
+forks: 35
+open_issues: 0
+created: 2026-07-25
+pushed_at: 2026-07-27
+first_seen: 2026-07-28
+week: "2026-W31"
 month: "2026-07"
 category: "開發工具"
-subcategory: "UI 組件"
+subcategory: "記憶管理"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -25,41 +25,41 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-07-23
-use_case: "提供 AI 和代理用戶介面的點狀思維球加載指示器。"
+last_reviewed: 2026-07-28
+use_case: "為 AI 代理提供永久記憶，讓每次會話都能持續學習。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
-next_review: "2026-08-04"
+appearances: 1
+next_review: "2026-07-31"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 133
-readme_length: 2519
+issue_close_rate: -1
+repo_size_kb: 11249
+readme_length: 3535
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-07-23"
-star_history: "2026-07-23:655,2026-07-23:656,2026-07-24:841,2026-07-24:841,2026-07-25:936,2026-07-25:936,2026-07-26:1022,2026-07-26:1024,2026-07-27:1104,2026-07-27:1106,2026-07-28:1172"
+ring_history: "assess@2026-07-28"
+star_history: "2026-07-28:661"
 tags:
   - github
   - "category/開發工具"
-  - "lang/typescript"
+  - "lang/python"
   - easy_install
 aliases:
-  - "thinking-orbs"
-  - "Jakubantalik/thinking-orbs"
-  - "提供 AI 和代理用戶介面的點狀思維球加載指示器。"
+  - "OptMem"
+  - "VictorTaelin/OptMem"
+  - "為 AI 代理提供永久記憶，讓每次會話都能持續學習。"
 ---
 
-# thinking-orbs
+# OptMem
 
-**1.1k** stars · **221** stars/天 · 建立 5 天前 · TypeScript · MIT
+**661** stars · **331** stars/天 · 建立 2 天前 · Python · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+const me = dv.page("Repos/VictorTaelin--OptMem");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 提供 AI 和代理用戶介面的點狀思維球加載指示器。
+> 為 AI 代理提供永久記憶，讓每次會話都能持續學習。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (221 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在 React 應用中快速集成加載指示器的前端開發者。
-> **一句話重點** 這個專案的設計理念是簡化 AI 應用中的加載指示器，讓開發者能夠快速集成而不需擔心兼容性問題。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (331 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要為 AI 代理提供持久記憶的開發者，特別是在構建虛擬助手或聊天機器人時。
+> **一句話重點** OptMem 的設計讓 AI 代理能夠持續學習和適應，從而提升用戶體驗。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/VictorTaelin--OptMem");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "UI 組件" && p.file.name !== "Jakubantalik--thinking-orbs" && p.status !== "archived")
+>     .where(p => p.subcategory === "記憶管理" && p.file.name !== "VictorTaelin--OptMem" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,108 +96,111 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 UI 組件 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 記憶管理 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到簡單易用的加載指示器，值得。
+> **結論** 花 2 小時學習，1 小時整合，得到高效的記憶管理，值得採用。
 
 > [!abstract] 核心創新
-> 提供六種獨特的點狀加載動畫，專為 AI 和代理用戶介面設計。
+> OptMem 提供了一種簡單而高效的方式來管理 AI 代理的永久記憶，無需複雜的配置。
 
 ## 專案簡介
 
-這個專案提供了六種手動調整的動畫狀態，適用於 AI 和代理用戶介面的點狀思維球加載指示器。用戶只需安裝 npm 套件，然後在 React 組件中引入 `ThinkingOrb`，便可輕鬆使用。每個狀態都代表一種動作，並在兩種不同的尺寸下呈現，分別為 64 和 20 像素，適合聊天頭像和內文顯示。這些指示器在 2D 畫布上渲染，無需 WebGL，且在 Chrome、Safari 和 Firefox 中表現一致。這樣的設計選擇使得開發者能夠簡單地整合到現有的 UI 中，並且不需要考慮不同瀏覽器的兼容性問題。專案的「一句話賣點」是：簡單易用的加載指示器，專為 AI 應用設計。
+OptMem 是一個為 AI 代理設計的永久記憶工具，透過簡單的 CLI 指令來記錄和檢索記憶。使用者只需在每次會話開始時執行 `memo wake`，然後根據輸出進行操作，這樣就能夠持續記錄重要的學習和事件。記憶以固定寬度的格式存儲，這使得每次查詢都能在 O(1) 的時間內完成，並且即使在記錄達到一百萬條時，`wake` 指令的執行時間也僅需 0.03 秒。這種設計使得 OptMem 能夠在不斷增長的記憶中保持高效。工具的核心是 Python 實現，並且不依賴任何外部庫，這使得它在安裝和使用上都非常輕量。
 
-技術上，專案使用 TypeScript 和 Vite 作為構建工具，並依賴 React 18 以上版本。這使得它能夠利用現代前端技術的優勢，並保持輕量級的依賴樹。與其他類似工具相比，如 `0x0funky/agent-sprite-forge` 和 `0xGF/boneyard`，這個專案專注於簡單的點狀動畫，而不是複雜的圖形效果，適合需要快速集成的情境。使用者可能會發現，這些指示器的主題是單色的，根據主題自動調整顏色，這在設計上提供了良好的可讀性。專案的社群活躍度尚可，但開放的問題數量顯示出仍有改進空間。整體來看，這是一個適合小型團隊或個人專案的工具，未來可能會隨著使用者需求的增長而持續更新。
+與其他記憶管理工具相比，OptMem 的記憶檢索速度更快，且支持以樹狀結構組織記憶，這樣用戶可以更方便地導航和查找過去的記憶。相較於其他工具如 `claude-obsidian`，OptMem 的設計更專注於簡化記憶的記錄和檢索過程，並且不需要複雜的配置或背景運行。使用者在記錄記憶時，OptMem 會自動處理合併和壓縮，這樣用戶無需擔心記憶的管理問題。這使得它特別適合需要長期記錄和回顧的 AI 應用場景，例如虛擬助手或聊天機器人。整體而言，OptMem 提供了一個簡單而高效的解決方案，適合任何需要持久記憶的 AI 系統。
 
-**技術棧**：`TypeScript` · `Vite` · `React 18`
+**技術棧**：`Python 3`
 
 ## 重點功能
 
-- 六種動畫狀態 — 每種狀態代表不同的動作，適合多種使用場景。
-- 兩種尺寸 — 提供 64 像素和 20 像素的設計，適合不同的 UI 需求。
-- 自動主題切換 — 根據主題自動選擇顏色，提升可讀性。
-- 無需 WebGL — 在 2D 畫布上渲染，兼容多種瀏覽器。
-- 簡單的安裝和使用 — 只需一行代碼即可集成到 React 組件中。
+- 永久記憶 — 透過 `memo note` 指令記錄重要事件，支持每條記憶最多 280 字元。
+- 快速檢索 — 使用 `memo recall` 指令能夠快速搜尋所有記憶，保證查詢速度。
+- 樹狀結構導航 — 通過 `memo zoom` 指令可以在記憶的樹狀結構中進行導航。
+- 簡單安裝 — 只需一行命令安裝，無需複雜配置。
+- 輕量級設計 — 只有一個 Python 檔案，無依賴，易於部署。
 
 ## 快速開始
 
-1. 安裝套件
+1. 安裝 OptMem
 ```bash
-npm install thinking-orbs
+curl -fsSL https://raw.githubusercontent.com/VictorTaelin/OptMem/main/install.sh | sh
 ```
-2. 引入組件
+2. 啟動記憶系統
 ```bash
-import { ThinkingOrb } from 'thinking-orbs';
+memo wake
 ```
-3. 使用組件
+3. 記錄一條記憶
 ```bash
-<ThinkingOrb />
+memo note "這是一條測試記憶"
 ```
 
 ## 程式碼範例
 
-```ts
+```python
 {
-  "# 前置條件": "已安裝 thinking-orbs 套件",
-  "指令": "import { ThinkingOrb } from 'thinking-orbs';\n\nfunction Status() {\n  return <ThinkingOrb />;\n}",
-  "# 預期輸出": "顯示一個加載指示器，根據狀態自動變化。"
+  "前置條件": "已安裝 OptMem",
+  "指令": "memo wake",
+  "預期輸出": "## Memory\n\nYour memory is OptMem:\n- The tool is `~/.optmem/memo`\n- Your memories are in `~/.optmem/memory`"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天就累積 1106 stars（221/天），forks 82（7.4%），這顯示出快速增長的趨勢。專案的作者 Jakub Antalik 以其簡潔的設計和易用性解決了在 AI 界面中缺乏合適加載指示器的痛點。之前的解決方案往往過於複雜或不夠美觀，這使得開發者在 UI 整合時面臨困難。近期的推文和社群討論也引起了對此專案的關注。這個專案的成功也得益於現代前端技術的進步，使得簡單的動畫效果能夠輕鬆實現。forks/stars 比率為 7.4%，顯示出有相當比例的開發者在實際使用和修改這個專案。
+> 建立 2 天就累積 661 stars（330.5/天），forks 35（5.3%），顯示出一定的社群關注度。作者 VictorTaelin 是一位專注於 AI 工具開發的開發者，這個專案解決了 AI 代理記憶管理的痛點，之前的方案往往需要複雜的配置或背景運行。這個工具的簡單性和高效性使其在短時間內獲得了使用者的青睞。社群的反應也表明，對於簡化 AI 記憶管理的需求是存在的，這可能是促使其快速增長的原因之一。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 React 應用中快速集成加載指示器的前端開發者。
+**目標受眾**：需要為 AI 代理提供持久記憶的開發者，特別是在構建虛擬助手或聊天機器人時。
 
 > [!example] 使用場景
-> - 前端工程師用它來為 AI 應用添加加載指示器，因為它提供了簡單易用的組件，能快速提升用戶體驗。
-> - UI 設計師用它來設計具有現代感的加載動畫，因為它的單色設計和自動主題切換功能能夠輕鬆融入各種界面風格。
-> - 產品經理用它來快速原型設計，因為它的即時可視化效果能幫助團隊更好地理解用戶交互流程。
+> - AI 開發者用它來持續記錄代理的學習和交互，因為這樣能夠在每次會話中保持上下文的連貫性，避免重複學習。
+> - 虛擬助手開發者用它來記錄用戶的偏好和歷史互動，因為這樣能夠提供更個性化的服務，提升用戶滿意度。
+> - 聊天機器人開發者用它來管理對話記錄，因為這樣能夠快速檢索過去的對話，增強機器人的應對能力。
 
 ## 架構分析
 
-這個專案採用模組化的架構，使用 TypeScript 來提供靜態類型檢查，確保代碼的可維護性。資料流方面，動畫狀態在 React 組件中進行管理，並通過 props 傳遞到 `ThinkingOrb` 組件中。這樣的設計使得開發者能夠輕鬆地在不同的 UI 組件中重用這些加載指示器。選擇 Vite 作為構建工具，因為它提供了快速的開發環境和優化的構建流程，代價是需要對 Vite 的配置有一定了解。整體架構的輕量性使得專案能夠快速啟動，但在擴展性方面可能會面臨挑戰，特別是在需要支持更多動畫效果的情況下。
+OptMem 的架構設計為單一 Python 檔案，這使得安裝和使用都非常簡單。記憶以固定寬度的格式存儲在一個日誌文件中，這樣每次查詢都能在 O(1) 的時間內完成。這種設計的代價是記憶的大小受到限制，但在大多數應用場景下，這樣的性能是足夠的。記憶的組織方式為樹狀結構，這使得用戶能夠方便地導航和查找過去的記憶。整體而言，這種設計使得 OptMem 在記憶的記錄和檢索上達到了高效與簡單的平衡。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是使用 TypeScript 和 React 來構建可重用的 UI 組件，並利用 Vite 進行快速構建。每個動畫狀態都是精心設計的，確保在不同的瀏覽器中都能一致呈現。效能方面，由於使用 2D 畫布而非 WebGL，這使得加載指示器在性能上相對輕量，適合大多數現代設備。設計取捨方面，選擇了簡單的動畫效果而非複雜的圖形，這樣的選擇使得專案易於使用，但在視覺效果上可能不如某些競爭對手。技術風險方面，隨著使用者需求的增長，可能需要考慮如何擴展更多的動畫效果或自定義選項。整合方面，與現有的 React 生態系統兼容性良好，並且能夠輕鬆融入 CI/CD 流程中。
+OptMem 的核心技術機制是基於固定寬度的記憶存儲，這使得每次查詢都能在 O(1) 的時間內完成，並且即使在記錄達到一百萬條時，`wake` 指令的執行時間也僅需 0.03 秒。這種設計選擇的好處在於簡化了記憶的管理，使用者無需擔心記憶的壓縮或合併，因為這些操作都是自動進行的。從效能的角度來看，這種設計能夠支持大規模的記憶存儲，並且在實際使用中表現出色。選擇 Python 作為開發語言使得 OptMem 在安裝和使用上都非常輕量，並且易於維護。
+
+這樣的選擇也降低了依賴的複雜度，避免了 vendor lock-in 的風險。技術風險方面，OptMem 在多用戶環境下的表現可能會受到限制，因為它不支持並行寫入。這意味著在需要多個代理同時記錄記憶的情況下，可能會出現數據衝突的問題。整合方面，由於其設計簡單，OptMem 可以輕鬆地與其他 Python 應用進行整合，並且在 CI/CD pipeline 中的使用也相對簡單。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了安裝和使用的範例。安裝過程相對順暢，沒有明顯的坑。文件中有良好的快速入門指南，但目前僅提供英文版本。
+> README 文件清晰且包含必要的安裝和使用範例，讓新手能夠快速上手。安裝過程順暢，無需面對複雜的配置問題。文件中沒有提供多語言支持，但整體可讀性良好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用，快速集成到現有的 React 應用中。
-> - 提供多種動畫狀態，適合不同的用例。
-> - 自動主題切換功能提升了用戶體驗。
+> - 安裝簡單，僅需一行命令即可完成。
+> - 記憶檢索速度快，能夠在大規模記憶中迅速找到所需信息。
+> - 設計輕量，無需依賴其他庫，易於部署。
 
 > [!danger] 缺點
-> - 目前僅支持 React，對其他框架的支持有限。
-> - 缺乏自定義樣式的靈活性。
-> - 社群活躍度尚可，但開放問題數量較多。
+> - 不支持 Windows 系統，限制了使用範圍。
+> - 記憶的大小受限於固定寬度設計，可能不適合某些應用。
+> - 不支持多用戶並行寫入，限制了在多代理環境下的使用。
 
 > [!warning] 注意事項
-> - 目前僅支援 React 18 以上版本。
-> - 不支援自定義顏色或樣式，僅提供單色設計。
-> - 缺乏對其他框架（如 Vue 或 Angular）的官方支持。
+> - 僅支援 Linux 和 macOS，未提供 Windows 的完整支持。
+> - 記憶的大小受限於固定寬度設計，可能不適合需要大量變動記憶的應用。
+> - 不支持多用戶並行寫入，需避免在同一設備上同時運行多個代理。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於更複雜的動畫效果，適合需要高自訂性的 UI，但整合難度較高。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供多種加載動畫，但不如本專案簡單易用，適合對動畫效果有特殊需求的開發者。 |
+| [ClaudioDrews/memory-os](https://github.com/ClaudioDrews/memory-os) | 這個工具提供更複雜的記憶管理功能，但需要更多的配置和背景運行，適合需要高級功能的用戶。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 這個工具支持更豐富的記憶結構，但相對於 OptMem 來說，使用上更為複雜。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 這個工具專注於記憶的持久化，但缺乏 OptMem 的快速檢索和簡單記錄功能。 |
 
 ## 替代方案決策
 
@@ -205,16 +208,16 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於更複雜的動畫效果，適合需要高自訂性的 UI。 | 如果你的專案需要多樣化的動畫效果，並且團隊能夠處理更高的整合複雜度。 | medium，因為需要重新設計動畫邏輯。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供多種加載動畫，但不如本專案簡單易用。 | 如果你的專案對動畫效果有特殊需求，並且不介意較高的學習曲線。 | high，因為需要重新調整 UI 組件的整合方式。 |
+| [ClaudioDrews/memory-os](https://github.com/ClaudioDrews/memory-os) | 這個工具提供更複雜的記憶管理功能，但需要更多的配置和背景運行，適合需要高級功能的用戶。 | 如果你的應用需要更複雜的記憶結構和管理功能，ClaudioDrews/memory-os 會是更好的選擇。 | medium，因為需要重新設計記憶管理的邏輯。 |
+| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 這個工具支持更豐富的記憶結構，但相對於 OptMem 來說，使用上更為複雜。 | 如果你的應用需要多種記憶結構和更高的靈活性，AgriciDaniel/claude-obsidian 可能更適合。 | high，因為需要重新設計應用的記憶管理流程。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **thinking-orbs** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **OptMem** | **memory-os** | **claude-obsidian** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於更複雜的動畫效果，適合需要高自訂性的 UI。 | 提供多種加載動畫，但不如本專案簡單易用。 |
-> | 遷移成本 | - | medium，因為需要重新設計動畫邏輯。 | high，因為需要重新調整 UI 組件的整合方式。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要多樣化的動畫效果，並且團隊能夠處理更高的整合 | 如果你的專案對動畫效果有特殊需求，並且不介意較高的學習曲線。 |
+> | 技術路線 | 本專案 | 這個工具提供更複雜的記憶管理功能，但需要更多的配置和背景運行，適合需要高級功能的用戶。 | 這個工具支持更豐富的記憶結構，但相對於 OptMem 來說，使用上更為複雜。 |
+> | 遷移成本 | - | medium，因為需要重新設計記憶管理的邏輯。 | high，因為需要重新設計應用的記憶管理流程。 |
+> | 適用場景 | 主要場景 | 如果你的應用需要更複雜的記憶結構和管理功能，ClaudioD | 如果你的應用需要多種記憶結構和更高的靈活性，AgriciDa |
 
 ## 成熟度評估
 
@@ -225,27 +228,24 @@ import { ThinkingOrb } from 'thinking-orbs';
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人側項目試用，但不建議用在生產環境的核心路徑上。
+> 適合個人項目試用，但不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Safari 中可能出現顯示問題，特別是對於某些動畫效果。
-  - 解法：使用最新版本的 Safari 或考慮在其他瀏覽器中測試。
-- [MEDIUM] 對於自定義樣式的支持有限，可能無法滿足所有設計需求。
-  - 解法：考慮在外部 CSS 中進行樣式調整。
-- [MEDIUM] 在某些情況下，動畫可能無法正確顯示，特別是在低性能設備上。
-  - 解法：測試在不同設備上的性能，並根據需要調整動畫效果。
+- **[HIGH]** 在多用戶環境下可能會出現數據衝突，因為不支持並行寫入。
+  - 解法：確保每次只有一個代理在記錄記憶。
+- [MEDIUM] 記憶的大小受限於固定寬度設計，可能在某些情況下導致記憶丟失。
+  - 解法：定期檢查記憶的使用情況，必要時進行壓縮。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的 AI 應用開發 | 非常適合 | 簡單易用，能快速集成到現有的 React 應用中。 |
-| 大型企業的複雜 UI 系統 | 不適合 | 對於自定義樣式的支持有限，可能無法滿足高要求的設計需求。 |
-| 個人開發者的側項目 | 適合 | 輕量級且易於使用，適合快速原型設計。 |
-| 需要多樣化動畫效果的專案 | 普通 | 雖然提供多種狀態，但在自定義方面有所限制。 |
+| 小型團隊開發的虛擬助手 | 非常適合 | 能夠有效管理用戶的偏好和歷史互動。 |
+| 大型企業的 AI 系統 | 不適合 | 不支持多用戶並行寫入，可能導致數據衝突。 |
+| 個人開發的聊天機器人 | 適合 | 簡單的安裝和使用流程非常適合個人項目。 |
 
 ## 採用成本分析
 
@@ -257,24 +257,18 @@ import { ThinkingOrb } from 'thinking-orbs';
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到簡單易用的加載指示器，值得。
+> 花 2 小時學習，1 小時整合，得到高效的記憶管理，值得採用。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具不需要高權限，且不存取敏感資料，適合在 CI/CD 流程中安全使用。
-
-## 生態系整合
-
-> [!abstract] 如何融入你的工具鏈
-
-這個工具最常與 React 應用搭配使用，通常在開發過程中用於提升用戶界面的反應速度。在一個用 Next.js 部署的專案中，你可以用這個工具來顯示加載狀態，具體做法是引入 `ThinkingOrb` 組件並在需要的地方使用。與主流的 CI 工具（如 GitHub Actions）兼容良好，能夠輕鬆集成到現有的開發流程中。整合的摩擦點主要在於對其他框架的支持有限，這可能需要額外的適配工作。
+> 低風險：OptMem 不需要高權限，且不存取敏感資料。其依賴鏈簡單，無已知的供應鏈風險，適合在 CI/CD pipeline 中使用。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/VictorTaelin--OptMem");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -309,7 +303,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/VictorTaelin--OptMem");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -333,138 +327,159 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 82 |
-| Open Issues | 7 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-07-21 |
-| 建立日期 | 2026-07-21 |
-| Repo 大小 | 133 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Jakubantalik/thinking-orbs) |
+| Forks | 35 |
+| Open Issues | 0 |
+| 最後推送 | 2026-07-27 |
+| 建立日期 | 2026-07-25 |
+| Repo 大小 | 11.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/VictorTaelin/OptMem) |
 
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@tailwindcss/vite` `@types/react` `@types/react-dom` `@vitejs/plugin-react` `clsx` `react` `react-dom` `tailwind-merge` `tailwindcss` `typescript` `vite` `vite-plugin-dts`
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 63
+>     "JavaScript" : 34
+>     "HTML" : 3
+>     "Shell" : 1
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Jakubantalik](https://github.com/Jakubantalik) | 8 |
+> | [@VictorTaelin](https://github.com/VictorTaelin) | 38 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，但仍有許多開放問題未解決。
-**連結**：[文件](https://orbs.jakubantalik.com)
+**社群活躍度**：社群活躍度高，最近有合併請求和更新。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-20 ~ 2026-07-21）
-> **活躍天數** 2 天 · **最新 commit** Fix Safari: replace CSS multi-column masonry with grid row-spans
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#7](https://github.com/Jakubantalik/thinking-orbs/issues/7) | Add an official Next.js example | 0 | 0 |
-> | [#5](https://github.com/Jakubantalik/thinking-orbs/issues/5) | Vue 3 version adapted from this project | 0 | 0 |
-> | [#3](https://github.com/Jakubantalik/thinking-orbs/issues/3) | Would you be open to listing the community Flutter port? | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-07-26 ~ 2026-07-27）
+> **活躍天數** 2 天 · **最新 commit** Merge pull request #2 from rarf/windows-native-support
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # thinking-orbs
+> # OptMem
 > 
-> Dotted thought-orb loading indicators for AI & agent UIs. Six hand-tuned animated states, each shipped at two purpose-tuned sizes, rendered on a plain 2D canvas — no WebGL, no filters, works identically in Chrome, Safari and Firefox.
-> 
-> [Live demo](https://orbs.jakubantalik.com) · [Repository](https://github.com/Jakubantalik/thinking-orbs) · [Report an issue](https://github.com/Jakubantalik/thinking-orbs/issues)
+> Permanent memory for AI agents. A 426-token prompt, a script, plug and play.
 > 
 > ## Install
 > 
-> ```bash
-> npm install thinking-orbs
+> ```sh
+> curl -fsSL https://raw.githubusercontent.com/VictorTaelin/OptMem/main/install.sh | sh
 > ```
 > 
-> ## Quick start
+> It prints a `## Memory` block. Paste that at the top of your agent's
+> `AGENTS.md` (or `CLAUDE.md`), and you are done. Run the same line again to
+> update.
 > 
-> ```tsx
-> import { ThinkingOrb } from 'thinking-orbs';
+> The tool lands at `~/.optmem/memo`; put `~/.optmem` on `PATH` to type `memo`.
 > 
-> function Status() {
->   return ;
-> }
-> ```
+> ## Commands
 > 
-> ## States
+> | | |
+> |---|---|
+> | `memo wake` | read the memory — the first command of every session |
+> | `memo note "..."` | record one memory: one line, up to 280 chars |
+> | `memo nap` | answer the merges that came due |
+> | `memo recall ` | search every memory ever recorded, word for word |
+> | `memo zoom -` | open a tree node into its two halves |
+> | `memo forget -` | drop a bad summary; the next nap rebuilds it |
 > 
-> Six verbs an agent can be doing, each a distinct animation:
+> Merges arrive one at a time, in the output of `note`. Nothing ever runs in the
+> background.
 > 
-> ```tsx
->     {/* particles on tilted orbits */}
->   {/* a scan meridian sweeps a dotted globe */}
->     {/* bands scramble, then click back solved */}
->   {/* a waveform rolls through the rings */}
->   {/* an undulating multi-band sash */}
->     {/* dotted outline: circle → triangle → square */}
-> ```
-> 
-> ## Sizes
-> 
-> Two tuned presets — separate designs, not a scale factor. `64` for chat-avatar scale, `20` for inline-text scale. Each carries its own dot count, dot size and speed tuning:
-> 
-> ```tsx
+> ## Files
 > 
 > ```
-> 
-> ## Theme
-> 
-> Strictly monochrome — light ink for dark backgrounds, dark ink for light backgrounds — with the mode picked automatically from the host project:
-> 
-> ```tsx
->    {/* default — detects from the project */}
->    {/* pin: light dots for dark backgrounds */}
->   {/* pin: dark dots for light backgrounds */}
+> ~/.optmem/
+>   memo          the tool: one file of Python 3, no dependencies
+>   memory/
+>     LOG.txt     every memory, one per line, append-only, never edited
+>     TREE/       the summaries: a cache, rebuildable from the log alone
+>     config      the sizes, written by `memo config`
 > ```
 > 
-> `auto` resolves in three layers and updates live when any of them change:
-> 
-> 1. an ancestor `data-theme="dark|light"` attribute or `dark`/`light` class (the Tailwind / shadcn convention), watched via `MutationObserver`;
-> 2. otherwise `prefers-color-scheme`, subscribed for live OS theme switches;
-> 3. SSR-safe — the canvas paints only on the client, after the theme has resolved.
-> 
-> ## Other props
-> 
-> ```tsx
-> 
+> ```sh
+> memo config                  # show the sizes
+> memo config WAKE_LINES=300   # how many lines wake prints (208 ≈ 16k tokens)
+> memo config WAKE_LINES=      # back to the default
 > ```
 > 
-> All other `` props (`className`, `style`, `data-*`, …) pass through.
+> `WAKE_LINES` is the only size worth touching, and it is a reading budget, not
+> a storage budget: change it whenever, in either direction, and nothing is
+> recomputed.
 > 
-> ## Accessibility & performance
+> Records are fixed width, so position *is* identity and every lookup is one
+> seek. At a million memories (608 MB), `wake` takes 0.03s.
 > 
-> - `role="img"` with a sensible per-state `aria-label` out of the box.
-> - `prefers-reduced-motion: reduce` renders a static representative frame — no animation — and still follows the live theme.
-> - Every instance pauses automatically when scrolled offscreen (`IntersectionObserver`) or when the tab is hidden, and resumes in phase — all instances share one clock.
-> - Plain 2D canvas arcs only: no `ctx.filter`, no SVG filters, no WebGL — the same pixels everywhere, cheap on low-end devices. Device-pixel-ratio capped at 2.
+> Set `$MEMORY_DIR` to keep `memory/` elsewhere — a synced folder, a git repo.
 > 
-> ## License
+> ## The prompt
 > 
-> MIT © Jakub Antalik
+> This is what the installer prints, and the whole of the integration.
+> 
+> ```markdown
+> ## Memory
+> 
+> Your memory is OptMem:
+> - The tool is `~/.optmem/memo`
+> - Your memories are in `~/.optmem/memory`
+> 
+> OptMem outlives every session, compaction, model and vendor change.
+> Without it you do not know who you are, or what was decided and tried.
+> 
+> ### At startup: activating OptMem (mandatory)
+> 
+> Run `~/.optmem/memo wake` before any other tool call, in every session, and
+> then do exactly what it prints, to the end of its output.
+> 
+> ### While working: register memories (mandatory)
+> 
+> Call `~/.optmem/memo note ""` whenever you learn
+> something new, or something worth keeping happens. That covers a task
+> worth real effort, a fact or insight the user teaches you, anything you
+> learn about their life (even indirectly), any event of lasting effect.
+> 
+> Do not register redundant memories.
+> 
+> If `~/.optmem/memo note` asks a compression: do it before your next action.
+> 
+> Never edit or delete anything under `~/.optmem/memory`: the tool manages it.
+> 
+> ### When you need an old memory: search, or navigate
+> 
+> `~/.optmem/memo recall ` searches every memory, word for word.
+> 
+> Your memories also form a binary tree: #0-1, #2-3 ... exist as one-line
+> summaries, pairs of those as #0-3, and so on -- every `#a-b` line wake
+> prints is one node of it. `~/.optmem/memo zoom ` opens a node into its
+> two halves, down to the raw memories.
+> 
+> ### If you're a subagent: skip everything above
+> 
+> Parallel sessions on this machine are all you, and may all write memories.
+> A subagent is not: it must never run `memo`, because it cannot judge what
+> is already known, and its notes would arrive duplicated and incorrectly.
+> When you spawn one, write: `You are a subagent. Don't run memo.`
+> ```
 
 ## 延伸閱讀
 
-相關概念：[[動畫]] · [[UI 組件]] · [[React]]
+相關概念：[[記憶管理]] · [[AI 代理]] · [[持久化存儲]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[vorpus--performativeUI|vorpus/performativeUI]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
+相關專案：[[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[raiyanyahya--recall|raiyanyahya/recall]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]]
 
-[GitHub](https://github.com/Jakubantalik/thinking-orbs)
+[GitHub](https://github.com/VictorTaelin/OptMem)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：UI 組件）
+> [!note]- 直接競品（同子分類：記憶管理）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "UI 組件" AND file.name != "Jakubantalik--thinking-orbs"
+> WHERE subcategory = "記憶管理" AND file.name != "VictorTaelin--OptMem"
 > SORT stars DESC
 > ```
 
@@ -472,7 +487,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "Jakubantalik--thinking-orbs"
+> WHERE category = "開發工具" AND file.name != "VictorTaelin--OptMem"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -481,7 +496,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "Jakubantalik--thinking-orbs" AND status != "archived"
+> WHERE language = "Python" AND file.name != "VictorTaelin--OptMem" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -490,15 +505,15 @@ import { ThinkingOrb } from 'thinking-orbs';
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W30" AND file.name != "Jakubantalik--thinking-orbs"
+> WHERE week = "2026-W31" AND file.name != "VictorTaelin--OptMem"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["動畫","UI 組件","React"];
+> const concepts = ["記憶管理","AI 代理","持久化存儲"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "Jakubantalik--thinking-orbs" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "VictorTaelin--OptMem" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -511,12 +526,12 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/VictorTaelin--OptMem");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "Jakubantalik--thinking-orbs" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "VictorTaelin--OptMem" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -532,7 +547,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "Jakubantalik" AND file.name != "Jakubantalik--thinking-orbs"
+> WHERE owner = "VictorTaelin" AND file.name != "VictorTaelin--OptMem"
 > SORT stars DESC
 > ```
 
@@ -540,7 +555,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/VictorTaelin--OptMem");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -557,7 +572,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/VictorTaelin--OptMem");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -590,7 +605,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/VictorTaelin--OptMem");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -614,7 +629,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/VictorTaelin--OptMem");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -651,7 +666,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/VictorTaelin--OptMem");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -734,7 +749,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-07-23** — 首次收錄
+> **2026-07-28** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -750,9 +765,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-07-28|2026-07-28]] — 再次上榜，1.2k stars
-- [[2026-07-27|2026-07-27]] — 再次上榜，1.1k stars
-- [[2026-07-26|2026-07-26]] — 再次上榜，1.0k stars
-- [[2026-07-25|2026-07-25]] — 再次上榜，936 stars
-- [[2026-07-24|2026-07-24]] — 再次上榜，841 stars
-- [[2026-07-23|2026-07-23]] — 首次收錄，655 stars
+- [[2026-07-28|2026-07-28]] — 首次收錄，661 stars

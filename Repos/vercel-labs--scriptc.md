@@ -1,65 +1,65 @@
 ---
-repo: Jakubantalik/thinking-orbs
-url: https://github.com/Jakubantalik/thinking-orbs
-owner: Jakubantalik
-owner_type: User
+repo: vercel-labs/scriptc
+url: https://github.com/vercel-labs/scriptc
+owner: vercel-labs
+owner_type: Organization
 language: TypeScript
-license: MIT
-description: "Dotted thought-orb loading indicators for AI & agent UIs — six tuned states, two sizes, auto dark/light"
-homepage: ""
-stars: 1172
-stars_per_day: 195
-forks: 85
-open_issues: 7
-created: 2026-07-21
-pushed_at: 2026-07-21
-first_seen: 2026-07-23
-week: "2026-W30"
+license: Apache-2.0
+description: "TypeScript-to-Native Compiler"
+homepage: "https://scriptc.dev"
+stars: 1825
+stars_per_day: 365
+forks: 33
+open_issues: 9
+created: 2026-07-22
+pushed_at: 2026-07-28
+first_seen: 2026-07-28
+week: "2026-W31"
 month: "2026-07"
 category: "開發工具"
-subcategory: "UI 組件"
-release_tag: ""
-install_complexity: "easy"
+subcategory: "編譯器"
+release_tag: "v0.0.17"
+install_complexity: "medium"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-07-23
-use_case: "提供 AI 和代理用戶介面的點狀思維球加載指示器。"
+last_reviewed: 2026-07-28
+use_case: "將 TypeScript 編譯成小而快速的原生可執行檔，無需 Node 或 JavaScript 引擎。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
-next_review: "2026-08-04"
-contributor_count: 1
+appearances: 1
+next_review: "2026-07-31"
+contributor_count: 2
 engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 133
-readme_length: 2519
+issue_close_rate: 18
+repo_size_kb: 14309
+readme_length: 2293
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-07-23"
-star_history: "2026-07-23:655,2026-07-23:656,2026-07-24:841,2026-07-24:841,2026-07-25:936,2026-07-25:936,2026-07-26:1022,2026-07-26:1024,2026-07-27:1104,2026-07-27:1106,2026-07-28:1172"
+ring_history: "assess@2026-07-28"
+star_history: "2026-07-28:1825"
 tags:
   - github
   - "category/開發工具"
   - "lang/typescript"
-  - easy_install
+  - org
 aliases:
-  - "thinking-orbs"
-  - "Jakubantalik/thinking-orbs"
-  - "提供 AI 和代理用戶介面的點狀思維球加載指示器。"
+  - "scriptc"
+  - "vercel-labs/scriptc"
+  - "將 TypeScript 編譯成小而快速的原生可執行檔，無需 Node 或 JavaScript 引擎。"
 ---
 
-# thinking-orbs
+# scriptc
 
-**1.1k** stars · **221** stars/天 · 建立 5 天前 · TypeScript · MIT
+**1.8k** stars · **365** stars/天 · 建立 5 天前 · TypeScript · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+const me = dv.page("Repos/vercel-labs--scriptc");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -69,23 +69,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`個人專案` `easy-install`
+`ORG` `v0.0.17`
 
 > [!summary] 一句話摘要
-> 提供 AI 和代理用戶介面的點狀思維球加載指示器。
+> 將 TypeScript 編譯成小而快速的原生可執行檔，無需 Node 或 JavaScript 引擎。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (221 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 5 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在 React 應用中快速集成加載指示器的前端開發者。
-> **一句話重點** 這個專案的設計理念是簡化 AI 應用中的加載指示器，讓開發者能夠快速集成而不需擔心兼容性問題。
+> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (365 stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Low
+> **適合** 希望將 TypeScript 應用轉換為高效能原生執行檔的開發者。
+> **一句話重點** scriptc 讓 TypeScript 開發者能夠輕鬆生成高效能的原生應用，無需依賴 JavaScript 引擎。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/vercel-labs--scriptc");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "UI 組件" && p.file.name !== "Jakubantalik--thinking-orbs" && p.status !== "archived")
+>     .where(p => p.subcategory === "編譯器" && p.file.name !== "vercel-labs--scriptc" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,108 +96,108 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 UI 組件 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 編譯器 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到簡單易用的加載指示器，值得。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到高效能的原生應用，值得考慮。
 
 > [!abstract] 核心創新
-> 提供六種獨特的點狀加載動畫，專為 AI 和代理用戶介面設計。
+> scriptc 將 TypeScript 編譯成小而快速的原生執行檔，無需任何 JavaScript 引擎。
 
 ## 專案簡介
 
-這個專案提供了六種手動調整的動畫狀態，適用於 AI 和代理用戶介面的點狀思維球加載指示器。用戶只需安裝 npm 套件，然後在 React 組件中引入 `ThinkingOrb`，便可輕鬆使用。每個狀態都代表一種動作，並在兩種不同的尺寸下呈現，分別為 64 和 20 像素，適合聊天頭像和內文顯示。這些指示器在 2D 畫布上渲染，無需 WebGL，且在 Chrome、Safari 和 Firefox 中表現一致。這樣的設計選擇使得開發者能夠簡單地整合到現有的 UI 中，並且不需要考慮不同瀏覽器的兼容性問題。專案的「一句話賣點」是：簡單易用的加載指示器，專為 AI 應用設計。
+scriptc 是一個將 TypeScript 編譯成原生可執行檔的工具，透過在編譯時運行 TypeScript 代碼，並將結果嵌入到二進制文件中，實現零運行時開銷。使用者只需執行 `scriptc build <file.ts>` 來編譯 TypeScript 檔案，最終生成的可執行檔無需任何 JavaScript 引擎。這個工具的核心在於其前端使用 TypeScript 編譯器 API 解析和類型檢查，然後生成中間表示（IR），再轉換為 C 語言，最終使用 clang 編譯成原生執行檔。這樣的設計使得生成的二進制檔案體積小且執行速度快，適合需要高效能的應用場景。scriptc 也支持原生 FFI（Foreign Function Interface），允許 TypeScript 直接調用 C 語言的函數，這在需要與底層系統庫交互的情況下特別有用。
 
-技術上，專案使用 TypeScript 和 Vite 作為構建工具，並依賴 React 18 以上版本。這使得它能夠利用現代前端技術的優勢，並保持輕量級的依賴樹。與其他類似工具相比，如 `0x0funky/agent-sprite-forge` 和 `0xGF/boneyard`，這個專案專注於簡單的點狀動畫，而不是複雜的圖形效果，適合需要快速集成的情境。使用者可能會發現，這些指示器的主題是單色的，根據主題自動調整顏色，這在設計上提供了良好的可讀性。專案的社群活躍度尚可，但開放的問題數量顯示出仍有改進空間。整體來看，這是一個適合小型團隊或個人專案的工具，未來可能會隨著使用者需求的增長而持續更新。
+與其他類似工具相比，如 `nativ`，scriptc 提供了更好的 TypeScript 支持和更小的二進制檔案，因為它不需要任何 JavaScript 引擎。使用者在 Windows 環境下也能夠順利運行，這是最近版本的一大改進。這個工具適合需要高效能且希望減少運行時依賴的開發者，特別是在嵌入式系統或資源受限的環境中。未來的發展方向可能會集中在擴展對其他語言的支持及增強編譯器的功能上。
 
-**技術棧**：`TypeScript` · `Vite` · `React 18`
+**技術棧**：`TypeScript 5.9.3` · `Node.js >= 24.0.0` · `pnpm`
 
 ## 重點功能
 
-- 六種動畫狀態 — 每種狀態代表不同的動作，適合多種使用場景。
-- 兩種尺寸 — 提供 64 像素和 20 像素的設計，適合不同的 UI 需求。
-- 自動主題切換 — 根據主題自動選擇顏色，提升可讀性。
-- 無需 WebGL — 在 2D 畫布上渲染，兼容多種瀏覽器。
-- 簡單的安裝和使用 — 只需一行代碼即可集成到 React 組件中。
+- 零運行時開銷 — 將 TypeScript 編譯成小而快速的原生可執行檔，無需 Node 或 JavaScript 引擎。
+- 原生 FFI 支持 — 允許 TypeScript 直接調用 C 語言函數，方便與底層系統庫交互。
+- 動態嵌入引擎 — 使用 `--dynamic` 參數可嵌入 npm 依賴，並報告未執行的代碼。
+- 檢查類型轉換 — 使用 `JSON.parse(...) as Config` 進行運行時驗證，提供錯誤提示。
+- 支持 Windows 環境 — 最新版本修復了 Windows 路徑處理問題，確保 CLI 在 Windows 上正常運行。
 
 ## 快速開始
 
-1. 安裝套件
+1. 安裝依賴
 ```bash
-npm install thinking-orbs
+pnpm install
 ```
-2. 引入組件
+2. 編譯 TypeScript 檔案
 ```bash
-import { ThinkingOrb } from 'thinking-orbs';
+pnpm scriptc build <file.ts>
 ```
-3. 使用組件
+3. 運行編譯後的可執行檔
 ```bash
-<ThinkingOrb />
+./<file>
 ```
 
 ## 程式碼範例
 
 ```ts
 {
-  "# 前置條件": "已安裝 thinking-orbs 套件",
-  "指令": "import { ThinkingOrb } from 'thinking-orbs';\n\nfunction Status() {\n  return <ThinkingOrb />;\n}",
-  "# 預期輸出": "顯示一個加載指示器，根據狀態自動變化。"
+  "前置條件": "已安裝 scriptc 並有 TypeScript 檔案。",
+  "指令": "$ scriptc build fib.ts",
+  "預期輸出": "生成一個名為 fib 的原生可執行檔。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 5 天就累積 1106 stars（221/天），forks 82（7.4%），這顯示出快速增長的趨勢。專案的作者 Jakub Antalik 以其簡潔的設計和易用性解決了在 AI 界面中缺乏合適加載指示器的痛點。之前的解決方案往往過於複雜或不夠美觀，這使得開發者在 UI 整合時面臨困難。近期的推文和社群討論也引起了對此專案的關注。這個專案的成功也得益於現代前端技術的進步，使得簡單的動畫效果能夠輕鬆實現。forks/stars 比率為 7.4%，顯示出有相當比例的開發者在實際使用和修改這個專案。
+> 建立 5 天內累積 1825 stars（365/天），forks 33（1.8%），顯示出一定的社群關注度。作者 ctate 和 simonw 具備豐富的開發經驗，之前在 Vercel 的其他專案中也有不錯的表現。這個工具解決了將 TypeScript 轉換為原生可執行檔的需求，這在現有的 JavaScript 生態中並不常見，特別是對於需要高效能的應用。近期的推廣活動和社群討論也可能促進了其曝光度。這個工具的出現正值 TypeScript 和原生應用需求上升的時期，讓開發者能夠更方便地將 TypeScript 應用於各種環境中。forks/stars 比率較低，顯示目前多數用戶仍在觀望階段。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 React 應用中快速集成加載指示器的前端開發者。
+**目標受眾**：希望將 TypeScript 應用轉換為高效能原生執行檔的開發者。
 
 > [!example] 使用場景
-> - 前端工程師用它來為 AI 應用添加加載指示器，因為它提供了簡單易用的組件，能快速提升用戶體驗。
-> - UI 設計師用它來設計具有現代感的加載動畫，因為它的單色設計和自動主題切換功能能夠輕鬆融入各種界面風格。
-> - 產品經理用它來快速原型設計，因為它的即時可視化效果能幫助團隊更好地理解用戶交互流程。
+> - 後端工程師用它來將 TypeScript 應用編譯成原生可執行檔，因為這樣能減少運行時依賴，提高效能。
+> - 嵌入式開發者用它來將 TypeScript 程式碼轉換為小型原生應用，因為這樣能在資源受限的環境中運行。
+> - 系統程式設計師用它來實現 TypeScript 與 C 語言的互操作性，因為它支持原生 FFI，能直接調用 C 函數。
 
 ## 架構分析
 
-這個專案採用模組化的架構，使用 TypeScript 來提供靜態類型檢查，確保代碼的可維護性。資料流方面，動畫狀態在 React 組件中進行管理，並通過 props 傳遞到 `ThinkingOrb` 組件中。這樣的設計使得開發者能夠輕鬆地在不同的 UI 組件中重用這些加載指示器。選擇 Vite 作為構建工具，因為它提供了快速的開發環境和優化的構建流程，代價是需要對 Vite 的配置有一定了解。整體架構的輕量性使得專案能夠快速啟動，但在擴展性方面可能會面臨挑戰，特別是在需要支持更多動畫效果的情況下。
+scriptc 的架構主要分為三個部分：前端使用 TypeScript 編譯器 API 進行解析和類型檢查，生成中間表示（IR）；IR 再轉換為 C 語言，最終通過 clang 編譯成原生執行檔。這種設計使得生成的二進制檔案體積小且執行速度快。選擇 C 作為參考後端是因為其可讀性和可維護性，雖然 LLVM 提供了更高效的代碼生成，但在某些情況下可能會導致更大的二進制檔案。這種架構的擴展性良好，但在大型應用中可能面臨編譯時間過長的問題。
 
 ## 技術深入分析
 
-這個專案的核心技術機制是使用 TypeScript 和 React 來構建可重用的 UI 組件，並利用 Vite 進行快速構建。每個動畫狀態都是精心設計的，確保在不同的瀏覽器中都能一致呈現。效能方面，由於使用 2D 畫布而非 WebGL，這使得加載指示器在性能上相對輕量，適合大多數現代設備。設計取捨方面，選擇了簡單的動畫效果而非複雜的圖形，這樣的選擇使得專案易於使用，但在視覺效果上可能不如某些競爭對手。技術風險方面，隨著使用者需求的增長，可能需要考慮如何擴展更多的動畫效果或自定義選項。整合方面，與現有的 React 生態系統兼容性良好，並且能夠輕鬆融入 CI/CD 流程中。
+scriptc 的核心技術機制在於其使用 TypeScript 編譯器 API 進行解析和類型檢查，然後生成中間表示（IR），這樣的設計讓編譯過程更加靈活且可擴展。生成的 IR 最終轉換為 C 語言，並使用 clang 編譯成原生執行檔，這樣的流程確保了生成的二進制檔案小且執行效率高。對於性能和規模特性，scriptc 能夠有效處理中小型 TypeScript 應用，但在大型應用中可能面臨編譯時間過長的挑戰。選擇 C 作為參考後端的好處在於其可讀性和可維護性，但在某些情況下可能會導致更大的二進制檔案。技術風險方面，FFI 調用可能在擴展時出現性能瓶頸，開發者需謹慎使用。整合方面，scriptc 與現有的 TypeScript 生態系統兼容，能夠輕鬆融入現有的開發流程，並與 CI/CD 工具鏈良好配合。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了安裝和使用的範例。安裝過程相對順暢，沒有明顯的坑。文件中有良好的快速入門指南，但目前僅提供英文版本。
+> README 文件清晰，提供了詳細的使用範例和安裝步驟；安裝過程順暢，無明顯坑；有良好的入門指南，文件目前僅提供英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 簡單易用，快速集成到現有的 React 應用中。
-> - 提供多種動畫狀態，適合不同的用例。
-> - 自動主題切換功能提升了用戶體驗。
+> - 生成的可執行檔無需運行時依賴，減少了部署的複雜性。
+> - 支持原生 FFI，方便與底層系統庫進行交互。
+> - 在 Windows 環境下的支持得到改善，增強了可用性。
 
 > [!danger] 缺點
-> - 目前僅支持 React，對其他框架的支持有限。
-> - 缺乏自定義樣式的靈活性。
-> - 社群活躍度尚可，但開放問題數量較多。
+> - 目前僅支持 TypeScript，對於其他語言的支持有限。
+> - 對於大型應用，編譯時間可能較長，影響開發效率。
+> - FFI 調用可能導致性能瓶頸，需謹慎使用。
 
 > [!warning] 注意事項
-> - 目前僅支援 React 18 以上版本。
-> - 不支援自定義顏色或樣式，僅提供單色設計。
-> - 缺乏對其他框架（如 Vue 或 Angular）的官方支持。
+> - 目前僅支持 TypeScript，不支持其他語言。
+> - 對於大型 TypeScript 應用，編譯時間可能較長。
+> - 在某些情況下，FFI 調用可能會導致性能瓶頸。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於更複雜的動畫效果，適合需要高自訂性的 UI，但整合難度較高。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供多種加載動畫，但不如本專案簡單易用，適合對動畫效果有特殊需求的開發者。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | boneyard 主要針對 C 語言的編譯，而 scriptc 專注於 TypeScript 到原生的轉換，適合不同的開發需求。 |
+| nativ | nativ 提供了類似的功能，但可能需要 JavaScript 引擎，scriptc 則完全不需要，適合對性能要求更高的場景。 |
 
 ## 替代方案決策
 
@@ -205,16 +205,16 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於更複雜的動畫效果，適合需要高自訂性的 UI。 | 如果你的專案需要多樣化的動畫效果，並且團隊能夠處理更高的整合複雜度。 | medium，因為需要重新設計動畫邏輯。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供多種加載動畫，但不如本專案簡單易用。 | 如果你的專案對動畫效果有特殊需求，並且不介意較高的學習曲線。 | high，因為需要重新調整 UI 組件的整合方式。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | agent-sprite-forge 專注於生成 AI agent 的腳本，而 scriptc 專注於 TypeScript 的編譯，兩者的應用場景不同。 | 如果你的專案主要是生成 AI agent 的腳本，則 agent-sprite-forge 更適合。 | medium，因為需要重新設計代碼結構以適應不同的工具。 |
+| nativ | nativ 主要針對 C 語言的編譯，而 scriptc 專注於 TypeScript 到原生的轉換，適合不同的開發需求。 | 如果你的團隊已經在使用 C 語言並希望保持一致性，則 nativ 更為合適。 | high，因為需要將 TypeScript 代碼轉換為 C 語言。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **thinking-orbs** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **scriptc** | **agent-sprite-forge** | **nativ** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於更複雜的動畫效果，適合需要高自訂性的 UI。 | 提供多種加載動畫，但不如本專案簡單易用。 |
-> | 遷移成本 | - | medium，因為需要重新設計動畫邏輯。 | high，因為需要重新調整 UI 組件的整合方式。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要多樣化的動畫效果，並且團隊能夠處理更高的整合 | 如果你的專案對動畫效果有特殊需求，並且不介意較高的學習曲線。 |
+> | 技術路線 | 本專案 | agent-sprite-forge 專注於生成 AI agent 的腳本，而 scriptc 專注於 TypeScript 的編譯，兩者的應用場景不同。 | nativ 主要針對 C 語言的編譯，而 scriptc 專注於 TypeScript 到原生的轉換，適合不同的開發需求。 |
+> | 遷移成本 | - | medium，因為需要重新設計代碼結構以適應不同的工具。 | high，因為需要將 TypeScript 代碼轉換為 C 語言。 |
+> | 適用場景 | 主要場景 | 如果你的專案主要是生成 AI agent 的腳本，則 age | 如果你的團隊已經在使用 C 語言並希望保持一致性，則 nat |
 
 ## 成熟度評估
 
@@ -225,56 +225,56 @@ import { ThinkingOrb } from 'thinking-orbs';
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人側項目試用，但不建議用在生產環境的核心路徑上。
+> 目前適合個人試用，尚不建議用於生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在 Safari 中可能出現顯示問題，特別是對於某些動畫效果。
-  - 解法：使用最新版本的 Safari 或考慮在其他瀏覽器中測試。
-- [MEDIUM] 對於自定義樣式的支持有限，可能無法滿足所有設計需求。
-  - 解法：考慮在外部 CSS 中進行樣式調整。
-- [MEDIUM] 在某些情況下，動畫可能無法正確顯示，特別是在低性能設備上。
-  - 解法：測試在不同設備上的性能，並根據需要調整動畫效果。
+- **[HIGH]** 在大型 TypeScript 應用中，編譯時間可能過長，影響開發效率。
+  - 解法：考慮將大型應用拆分為多個小模組。
+- [MEDIUM] FFI 調用可能導致性能瓶頸，特別是在高頻調用的情況下。
+  - 解法：謹慎使用 FFI，並進行性能測試。
+- [MEDIUM] 在 Windows 環境下，某些路徑處理可能仍存在問題。
+  - 解法：確保使用最新版本，並檢查路徑格式。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的 AI 應用開發 | 非常適合 | 簡單易用，能快速集成到現有的 React 應用中。 |
-| 大型企業的複雜 UI 系統 | 不適合 | 對於自定義樣式的支持有限，可能無法滿足高要求的設計需求。 |
-| 個人開發者的側項目 | 適合 | 輕量級且易於使用，適合快速原型設計。 |
-| 需要多樣化動畫效果的專案 | 普通 | 雖然提供多種狀態，但在自定義方面有所限制。 |
+| 小型專案的 TypeScript 開發 | 非常適合 | 能夠快速編譯成原生可執行檔，減少運行時依賴。 |
+| 大型 TypeScript 應用的開發 | 普通 | 編譯時間可能過長，影響開發效率。 |
+| 需要與 C 語言庫交互的應用 | 非常適合 | 支持原生 FFI，方便調用 C 函數。 |
+| 希望在 Windows 環境下開發的團隊 | 適合 | 最新版本改善了 Windows 支持，能夠正常運行。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~2 小時 |
-| 整合時間 | ~1 小時 |
-| 維護負擔 | low |
-| 綁定風險 | low |
+| 學習時間 | ~5 小時 |
+| 整合時間 | ~10 小時 |
+| 維護負擔 | medium |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到簡單易用的加載指示器，值得。
+> 花 5 小時學習，10 小時整合，得到高效能的原生應用，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具不需要高權限，且不存取敏感資料，適合在 CI/CD 流程中安全使用。
+> 低風險：scriptc 本身不需要高權限，且不存取敏感資料，但使用 FFI 時需注意調用的 C 函數的安全性。
 
 ## 生態系整合
 
 > [!abstract] 如何融入你的工具鏈
 
-這個工具最常與 React 應用搭配使用，通常在開發過程中用於提升用戶界面的反應速度。在一個用 Next.js 部署的專案中，你可以用這個工具來顯示加載狀態，具體做法是引入 `ThinkingOrb` 組件並在需要的地方使用。與主流的 CI 工具（如 GitHub Actions）兼容良好，能夠輕鬆集成到現有的開發流程中。整合的摩擦點主要在於對其他框架的支持有限，這可能需要額外的適配工作。
+scriptc 通常與 TypeScript 和 Node.js 一起使用，適合在開發階段進行編譯和測試。在一個使用 TypeScript 的專案中，開發者可以透過 `scriptc build` 將 TypeScript 檔案編譯為原生可執行檔，然後直接在 CI/CD pipeline 中運行。scriptc 能夠與 GitHub Actions 和其他 CI 工具良好整合，並且可以在 VS Code 中使用相應的插件進行開發。整合過程中，最常見的問題是路徑處理，特別是在 Windows 環境中，開發者需確保使用正確的路徑格式以避免錯誤。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/vercel-labs--scriptc");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -309,7 +309,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/vercel-labs--scriptc");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -333,138 +333,116 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 82 |
-| Open Issues | 7 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-07-21 |
-| 建立日期 | 2026-07-21 |
-| Repo 大小 | 133 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Jakubantalik/thinking-orbs) |
+| Forks | 33 |
+| Open Issues | 9 |
+| Issue 解決率 | 18% (2 closed) |
+| 最後推送 | 2026-07-28 |
+| 建立日期 | 2026-07-22 |
+| 官方網站 | [Link](https://scriptc.dev) |
+| Repo 大小 | 14.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/vercel-labs/scriptc) |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `@tailwindcss/vite` `@types/react` `@types/react-dom` `@vitejs/plugin-react` `clsx` `react` `react-dom` `tailwind-merge` `tailwindcss` `typescript` `vite` `vite-plugin-dts`
+> `@types/node` `eslint` `tsx` `typescript` `typescript-eslint` `vitest`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "TypeScript" : 73
+>     "C" : 25
+>     "JavaScript" : 2
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Jakubantalik](https://github.com/Jakubantalik) | 8 |
+> | [@ctate](https://github.com/ctate) | 285 |
+> | [@simonw](https://github.com/simonw) | 1 |
+
+**最新版本**：v0.0.17 (2026-07-27)
+
+> [!info]- Release Notes
+> ## 0.0.17
+> 
+> ### Fixes
+> 
+> - **The CLI builds and runs programs on Windows.** TypeScript's virtual filesystem now sees consistently slash-normalized Windows paths, default executable names carry the required `.exe` suffix for both native and cross-target Windows builds, and the workspace build command survives Windows shell quoting. A Windows CI lane pins the path regressions and drives `scriptc run` end to end.
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，但仍有許多開放問題未解決。
-**連結**：[文件](https://orbs.jakubantalik.com)
+**社群活躍度**：社群活躍度中等，開發者回應問題的速度較快。
+**連結**：[文件](https://scriptc.dev/docs)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-20 ~ 2026-07-21）
-> **活躍天數** 2 天 · **最新 commit** Fix Safari: replace CSS multi-column masonry with grid row-spans
+> [!abstract] 最近 10 次 commit（2026-07-26 ~ 2026-07-27）
+> **活躍天數** 2 天 · **最新 commit** Merge pull request #15 from vercel-labs/ctate/to-fixed-effects
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#7](https://github.com/Jakubantalik/thinking-orbs/issues/7) | Add an official Next.js example | 0 | 0 |
-> | [#5](https://github.com/Jakubantalik/thinking-orbs/issues/5) | Vue 3 version adapted from this project | 0 | 0 |
-> | [#3](https://github.com/Jakubantalik/thinking-orbs/issues/3) | Would you be open to listing the community Flutter port? | 0 | 0 |
+> | [#13](https://github.com/vercel-labs/scriptc/issues/13) | Compiling plain JavaScript via type inference: collaboration | 8 | 0 |
+> | [#23](https://github.com/vercel-labs/scriptc/issues/23) | CcCompileError: clang failed compiling | 0 | 0 |
+> | [#21](https://github.com/vercel-labs/scriptc/issues/21) | FFI call dropped when its result initializes a never-reassig | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # thinking-orbs
+> # scriptc
 > 
-> Dotted thought-orb loading indicators for AI & agent UIs. Six hand-tuned animated states, each shipped at two purpose-tuned sizes, rendered on a plain 2D canvas — no WebGL, no filters, works identically in Chrome, Safari and Firefox.
+> **Zero-runtime TypeScript.** scriptc compiles ordinary TypeScript into small, fast native executables — no Node, no V8, no JavaScript engine in the binary.
 > 
-> [Live demo](https://orbs.jakubantalik.com) · [Repository](https://github.com/Jakubantalik/thinking-orbs) · [Report an issue](https://github.com/Jakubantalik/thinking-orbs/issues)
+> ```console
+> $ cat fib.ts
+> function fib(n: number): number {
+>   return n  ...)`** runs TypeScript at build time (in an isolated VM inside the compiler) and bakes the result into the binary as a literal.
+> - **Native FFI (`--ffi`)** binds signature-only TypeScript declarations to direct C ABI calls and links manifest-declared archives, objects, and system libraries. The boundary is explicit and length-delimited; see the [Native FFI guide](https://scriptc.dev/ffi).
+> - **`--dynamic`** embeds the engine for npm deps and `any` code. `scriptc coverage --dynamic` reports exactly which statements run where and what the remaining blockers are. Static stays the default: a binary never silently grows an engine.
+> - **Checked casts** — `JSON.parse(...) as Config` inserts a runtime validation that throws a catchable error naming the offending path (`expected number at $.port, got string`). TypeScript's `as` is a promise; scriptc verifies it.
 > 
-> ## Install
+> ## Architecture
 > 
-> ```bash
-> npm install thinking-orbs
+> ```mermaid
+> flowchart LR
+>     TS[TypeScript] -->|tsc: parse + typecheck| L[lowering]
+>     L --> IR[typed IR]
+>     IR --> C[C]
+>     C -->|clang| BIN[native executable]
 > ```
 > 
-> ## Quick start
+> - `packages/compiler` — frontend (tsc API → IR), the IR with validator/serializer, the LLVM and C backends. The IR is the only interface between the ends; LLVM is the default code generator (with a transparent fallback for programs outside its tier), and C is the reference backend forever (readable, source-line-annotated output via `--backend c`).
+> - `packages/runtime` — the C runtime: refcounted values with a cycle collector, stackful fibers and the event loop (kqueue), the server stack, JS-exact number formatting. Feature units are link-gated: binaries pay only for what they use.
+> - `packages/cli` — `scriptc build | run | coverage`.
 > 
-> ```tsx
-> import { ThinkingOrb } from 'thinking-orbs';
+> ## Development
 > 
-> function Status() {
->   return ;
-> }
+> ```console
+> $ pnpm install && pnpm build
+> $ pnpm test                      # differential corpus + diagnostics snapshots
+> $ SCRIPTC_SAN=1 pnpm test        # the same corpus under ASan + RC audit
+> $ pnpm scriptc build x.ts --emit-ir   # keep .scriptc/x.c and x.ir.json
 > ```
 > 
-> ## States
-> 
-> Six verbs an agent can be doing, each a distinct animation:
-> 
-> ```tsx
->     {/* particles on tilted orbits */}
->   {/* a scan meridian sweeps a dotted globe */}
->     {/* bands scramble, then click back solved */}
->   {/* a waveform rolls through the rings */}
->   {/* an undulating multi-band sash */}
->     {/* dotted outline: circle → triangle → square */}
-> ```
-> 
-> ## Sizes
-> 
-> Two tuned presets — separate designs, not a scale factor. `64` for chat-avatar scale, `20` for inline-text scale. Each carries its own dot count, dot size and speed tuning:
-> 
-> ```tsx
-> 
-> ```
-> 
-> ## Theme
-> 
-> Strictly monochrome — light ink for dark backgrounds, dark ink for light backgrounds — with the mode picked automatically from the host project:
-> 
-> ```tsx
->    {/* default — detects from the project */}
->    {/* pin: light dots for dark backgrounds */}
->   {/* pin: dark dots for light backgrounds */}
-> ```
-> 
-> `auto` resolves in three layers and updates live when any of them change:
-> 
-> 1. an ancestor `data-theme="dark|light"` attribute or `dark`/`light` class (the Tailwind / shadcn convention), watched via `MutationObserver`;
-> 2. otherwise `prefers-color-scheme`, subscribed for live OS theme switches;
-> 3. SSR-safe — the canvas paints only on the client, after the theme has resolved.
-> 
-> ## Other props
-> 
-> ```tsx
-> 
-> ```
-> 
-> All other `` props (`className`, `style`, `data-*`, …) pass through.
-> 
-> ## Accessibility & performance
-> 
-> - `role="img"` with a sensible per-state `aria-label` out of the box.
-> - `prefers-reduced-motion: reduce` renders a static representative frame — no animation — and still follows the live theme.
-> - Every instance pauses automatically when scrolled offscreen (`IntersectionObserver`) or when the tab is hidden, and resumes in phase — all instances share one clock.
-> - Plain 2D canvas arcs only: no `ctx.filter`, no SVG filters, no WebGL — the same pixels everywhere, cheap on low-end devices. Device-pixel-ratio capped at 2.
-> 
-> ## License
-> 
-> MIT © Jakub Antalik
+> Every feature lands with differential tests; both lanes green is the merge bar.
 
 ## 延伸閱讀
 
-相關概念：[[動畫]] · [[UI 組件]] · [[React]]
+相關概念：[[編譯器]] · [[原生應用]] · [[TypeScript]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[vorpus--performativeUI|vorpus/performativeUI]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]]
 
-[GitHub](https://github.com/Jakubantalik/thinking-orbs)
+[GitHub](https://github.com/vercel-labs/scriptc) · [官方網站](https://scriptc.dev)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：UI 組件）
+> [!note]- 直接競品（同子分類：編譯器）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "UI 組件" AND file.name != "Jakubantalik--thinking-orbs"
+> WHERE subcategory = "編譯器" AND file.name != "vercel-labs--scriptc"
 > SORT stars DESC
 > ```
 
@@ -472,7 +450,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "Jakubantalik--thinking-orbs"
+> WHERE category = "開發工具" AND file.name != "vercel-labs--scriptc"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -481,7 +459,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "Jakubantalik--thinking-orbs" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "vercel-labs--scriptc" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -490,15 +468,15 @@ import { ThinkingOrb } from 'thinking-orbs';
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W30" AND file.name != "Jakubantalik--thinking-orbs"
+> WHERE week = "2026-W31" AND file.name != "vercel-labs--scriptc"
 > SORT stars DESC
 > ```
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["動畫","UI 組件","React"];
+> const concepts = ["編譯器","原生應用","TypeScript"];
 > const pages = dv.pages('"Repos"')
->   .where(p => p.file.name !== "Jakubantalik--thinking-orbs" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
+>   .where(p => p.file.name !== "vercel-labs--scriptc" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
 >   .limit(5);
 > if (pages.length > 0) {
@@ -511,12 +489,12 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/vercel-labs--scriptc");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "Jakubantalik--thinking-orbs" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "vercel-labs--scriptc" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -532,7 +510,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "Jakubantalik" AND file.name != "Jakubantalik--thinking-orbs"
+> WHERE owner = "vercel-labs" AND file.name != "vercel-labs--scriptc"
 > SORT stars DESC
 > ```
 
@@ -540,7 +518,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/vercel-labs--scriptc");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -557,7 +535,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/vercel-labs--scriptc");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -590,7 +568,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/vercel-labs--scriptc");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -614,7 +592,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/vercel-labs--scriptc");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -651,7 +629,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/Jakubantalik--thinking-orbs");
+> const me = dv.page("Repos/vercel-labs--scriptc");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -734,7 +712,7 @@ import { ThinkingOrb } from 'thinking-orbs';
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-07-23** — 首次收錄
+> **2026-07-28** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -750,9 +728,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-07-28|2026-07-28]] — 再次上榜，1.2k stars
-- [[2026-07-27|2026-07-27]] — 再次上榜，1.1k stars
-- [[2026-07-26|2026-07-26]] — 再次上榜，1.0k stars
-- [[2026-07-25|2026-07-25]] — 再次上榜，936 stars
-- [[2026-07-24|2026-07-24]] — 再次上榜，841 stars
-- [[2026-07-23|2026-07-23]] — 首次收錄，655 stars
+- [[2026-07-28|2026-07-28]] — 首次收錄，1.8k stars

@@ -3095,10 +3095,10 @@
   },
   "Jakubantalik/thinking-orbs": {
     "first_seen": "2026-07-23",
-    "last_seen": "2026-07-27",
-    "times_seen": 5,
+    "last_seen": "2026-07-28",
+    "times_seen": 6,
     "stars_first": 655,
-    "stars_last": 1104
+    "stars_last": 1172
   },
   "xiejunjie524/handdraw-story-video": {
     "first_seen": "2026-07-23",
@@ -3144,10 +3144,10 @@
   },
   "gnipbao/story-to-handdrawn-video": {
     "first_seen": "2026-07-25",
-    "last_seen": "2026-07-27",
-    "times_seen": 3,
+    "last_seen": "2026-07-28",
+    "times_seen": 4,
     "stars_first": 610,
-    "stars_last": 655
+    "stars_last": 669
   },
   "CatsJuice/sticker-forge": {
     "first_seen": "2026-07-25",
@@ -3158,30 +3158,58 @@
   },
   "slvDev/esp32-ai": {
     "first_seen": "2026-07-26",
-    "last_seen": "2026-07-27",
-    "times_seen": 2,
+    "last_seen": "2026-07-28",
+    "times_seen": 3,
     "stars_first": 875,
-    "stars_last": 1436
+    "stars_last": 1788
   },
   "mikiarlo3/ai-copywriter": {
     "first_seen": "2026-07-26",
-    "last_seen": "2026-07-27",
-    "times_seen": 2,
+    "last_seen": "2026-07-28",
+    "times_seen": 3,
     "stars_first": 621,
-    "stars_last": 863
+    "stars_last": 941
   },
   "mshumer/Claude-of-Duty": {
     "first_seen": "2026-07-27",
-    "last_seen": "2026-07-27",
-    "times_seen": 1,
+    "last_seen": "2026-07-28",
+    "times_seen": 2,
     "stars_first": 721,
-    "stars_last": 721
+    "stars_last": 1052
   },
   "makecindy/cindy": {
     "first_seen": "2026-07-27",
-    "last_seen": "2026-07-27",
-    "times_seen": 1,
+    "last_seen": "2026-07-28",
+    "times_seen": 2,
     "stars_first": 615,
-    "stars_last": 615
+    "stars_last": 888
+  },
+  "MoonshotAI/Kimi-K3": {
+    "first_seen": "2026-07-28",
+    "last_seen": "2026-07-28",
+    "times_seen": 1,
+    "stars_first": 1993,
+    "stars_last": 1993
+  },
+  "vercel-labs/scriptc": {
+    "first_seen": "2026-07-28",
+    "last_seen": "2026-07-28",
+    "times_seen": 1,
+    "stars_first": 1825,
+    "stars_last": 1825
+  },
+  "kvcache-ai/AgentENV": {
+    "first_seen": "2026-07-28",
+    "last_seen": "2026-07-28",
+    "times_seen": 1,
+    "stars_first": 905,
+    "stars_last": 905
+  },
+  "VictorTaelin/OptMem": {
+    "first_seen": "2026-07-28",
+    "last_seen": "2026-07-28",
+    "times_seen": 1,
+    "stars_first": 661,
+    "stars_last": 661
   }
 }
