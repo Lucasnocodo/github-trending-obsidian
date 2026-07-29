@@ -7,7 +7,7 @@ language: Python
 license: MIT
 description: "MoonEP: A Perfectly Balanced Expert Parallelism Library via Dynamic Redundant Experts"
 homepage: ""
-stars: 806
+stars: 807
 stars_per_day: 202
 forks: 80
 open_issues: 14
@@ -17,7 +17,7 @@ first_seen: 2026-07-29
 week: "2026-W31"
 month: "2026-07"
 category: "AI/ML"
-subcategory: "專家模型"
+subcategory: "專家並行"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-29
-use_case: "提供動態冗餘專家的專家並行通信庫，實現完美的負載平衡。"
+use_case: "透過動態冗餘專家實現完美平衡的專家並行庫。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-29"
-star_history: "2026-07-29:806"
+star_history: "2026-07-29:806,2026-07-29:807"
 tags:
   - github
   - "category/ai_ml"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "MoonEP"
   - "MoonshotAI/MoonEP"
-  - "提供動態冗餘專家的專家並行通信庫，實現完美的負載平衡。"
+  - "透過動態冗餘專家實現完美平衡的專家並行庫。"
 ---
 
 # MoonEP
 
-**806** stars · **202** stars/天 · 建立 4 天前 · Python · MIT
+**807** stars · **202** stars/天 · 建立 4 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/MoonshotAI--MoonEP");
@@ -72,20 +72,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `ORG`
 
 > [!summary] 一句話摘要
-> 提供動態冗餘專家的專家並行通信庫，實現完美的負載平衡。
+> 透過動態冗餘專家實現完美平衡的專家並行庫。
 
 > [!info] 速覽
 > **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (202 stars/day)
 > **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要在多 GPU 環境中進行高效並行計算的深度學習研究者和工程師。
-> **一句話重點** MoonEP 的動態冗餘專家設計是解決多 GPU 環境下計算負載不均的有效方案。
+> **適合** 需要在多 GPU 環境中進行高效專家並行計算的深度學習研究者和工程師。
+> **一句話重點** MoonEP 的動態冗餘專家設計使其在專家並行計算中實現了前所未有的負載平衡。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/MoonshotAI--MoonEP");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "專家模型" && p.file.name !== "MoonshotAI--MoonEP" && p.status !== "archived")
+>     .where(p => p.subcategory === "專家並行" && p.file.name !== "MoonshotAI--MoonEP" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -96,42 +96,45 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 專家模型 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 專家並行 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，10 小時整合，得到高效的並行計算效果，值得投入。
+> **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~8h · **綁定風險** medium
+> **結論** 花 8 小時學、12 小時整合，得到穩定的專家並行計算效果，值得考慮。
 
 > [!abstract] 核心創新
-> MoonEP 透過動態冗餘專家實現了完美的負載平衡，顯著提升了並行計算的效率。
+> MoonEP 通過動態冗餘專家實現了專家並行計算的完美負載平衡。
 
 ## 專案簡介
 
-MoonEP 是一個專家並行通信庫，旨在通過動態冗餘專家來保持各個計算單元的負載完美平衡。使用者可以透過 `Buffer` 類別來初始化參數，例如 `S=4096` 代表每個計算單元的輸入令牌數量，`K=8` 代表每個令牌路由的專家數量。這個設計使得每個計算單元無論路由如何偏斜，始終接收 `S × K` 個令牌，從而避免了計算不均的問題。技術上，MoonEP 使用了 CUDA 來實現高效的並行計算，並且透過零拷貝技術來減少數據傳輸延遲，這意味著令牌可以直接寫入最終的專家分組位置，從而消除了不必要的數據拷貝。與 DeepEP v2 相比，MoonEP 在面對不平衡的路由時，通信時間幾乎保持平穩，而 DeepEP v2 的延遲隨著不平衡程度的增加而顯著上升。這使得 MoonEP 在訓練過程中不會因為計算不均而導致內存碎片化或 OOM 問題。整體來看，MoonEP 透過其獨特的設計和高效的實現，為需要高效並行計算的深度學習任務提供了一個強大的解決方案。
+MoonEP 是一個專家並行通信庫，旨在通過動態冗餘專家來保持每個計算單元的令牌負載完美平衡。使用者只需提供輸入令牌數量 `S` 和每個令牌的路由專家數量 `K`，庫會自動確保每個計算單元接收到恰好 `S × K` 的令牌，這樣即使在路由不均的情況下也能保持平衡。其核心機制是在線規劃，利用一個幾乎無開銷的 GPU 規劃內核來預先加載少量冗餘專家，並在反向傳播中將其梯度還原到原計算單元。這樣的設計不僅提高了計算效率，還減少了內存碎片的問題。
+
+使用者可以通過 `buffer.dispatch` 和 `buffer.combine` 來進行前向和反向計算，並且支持零拷貝操作以進一步提升性能。這個工具的賣點在於其在處理不均衡路由時的穩定性，能夠有效避免因為某些計算單元負載過重而導致的性能下降。相較於其他專家並行庫，MoonEP 的通訊時間在各種不均衡程度下都保持平穩，顯示出其優越的性能。這使得它在大規模模型訓練中表現出色，特別是在需要高效利用 GPU 資源的情況下。
 
 **技術棧**：`Python` · `CUDA`
 
 ## 重點功能
 
-- 完美平衡 — 每個計算單元接收固定數量的令牌，避免負載不均。
-- 動態冗餘專家 — 根據當前路由輸出在線規劃專家，提升計算效率。
-- 零拷貝技術 — 令牌直接寫入最終位置，減少數據傳輸延遲。
-- 支持多種設備 — 兼容 NVIDIA GPU 和即將支持的 Zhenwu PPU。
-- 高效的 CUDA 實現 — 使用最新的 CUDA 擴展和優化編譯選項，提升性能。
+- 完美平衡 — 每個計算單元接收恰好 `S × K` 令牌，無論路由如何不均。
+- 在線規劃 — 利用幾乎無開銷的 GPU 規劃內核，提前加載冗餘專家。
+- 零拷貝操作 — 支持 `zero_copy=True`，直接在通信緩衝區上進行計算，消除不必要的數據拷貝。
+- 高效的梯度還原 — 在反向傳播中能夠將冗餘專家的梯度還原到原計算單元。
+- 穩定的性能 — 在各種不均衡程度下，通訊時間保持穩定，顯示出優越的性能。
 
 ## 快速開始
 
-1. 安裝 MoonEP
+1. 安裝庫
 ```bash
 pip install -e .
 ```
 2. 初始化 Buffer
 ```bash
-from moonep import Buffer; buffer = Buffer(S=4096, H=7168, K=8, E=256, num_ep_ranks=8, num_sms=32, token_padding=128)
+from moonep import Buffer
+buffer = Buffer(S=4096, H=7168, K=8, E=256, num_ep_ranks=8, num_sms=32, token_padding=128)
 ```
-3. 執行前向傳播
+3. 執行前向計算
 ```bash
 hidden_nvsh, route_weights_nvs, cu_seqlens, plan = buffer.dispatch(hidden_sh, route_weights_sk, topk_experts_sk, tokens_per_expert)
 ```
@@ -139,64 +142,67 @@ hidden_nvsh, route_weights_nvs, cu_seqlens, plan = buffer.dispatch(hidden_sh, ro
 ## 程式碼範例
 
 ```python
-[
-  "# 前置條件；",
-  "from moonep import Buffer",
-  "buffer = Buffer(S=4096, H=7168, K=8, E=256, num_ep_ranks=8, num_sms=32, token_padding=128)",
-  "# 預期輸出：初始化的 Buffer 對象"
-]
+{
+  "前置條件": "已安裝 MoonEP 並初始化 Buffer",
+  "指令": "hidden_nvsh, route_weights_nvs, cu_seqlens, plan = buffer.dispatch(hidden_sh, route_weights_sk, topk_experts_sk, tokens_per_expert)",
+  "預期輸出": "hidden_nvsh: [NvS, H] bf16 — dispatched tokens in physical VM group order"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 806 stars（202/天），forks 80（9.9%），這顯示出使用者對其功能的高度興趣。作者 weixiao-huang 和 esp0r 具備相關的背景，並且這個專案解決了在多 GPU 環境下專家模型負載不均的問題，這在過去的實現中常常導致性能下降。隨著深度學習模型的複雜度增加，對於高效的並行計算需求也隨之上升，MoonEP 的出現正好滿足了這一需求。社群的反應也顯示出對於其文檔和 API 的改進需求，這可能會進一步推動其發展。
+> 建立 4 天內累積 807 stars（202/天），forks 80（9.9%），顯示出相對活躍的社群參與。主要貢獻者 weixiao-huang 和 esp0r 在高性能計算領域有豐富經驗，這使得他們的解決方案針對了專家並行計算中的一個長期痛點：如何在不均衡路由下保持計算效率。這個工具的出現正好填補了市場上對高效能專家並行庫的需求，尤其是對於需要高效 GPU 利用率的深度學習應用。社群的反饋和需求也促進了這個專案的快速成長。
 
 ## 適合誰使用
 
-**目標受眾**：需要在多 GPU 環境中進行高效並行計算的深度學習研究者和工程師。
+**目標受眾**：需要在多 GPU 環境中進行高效專家並行計算的深度學習研究者和工程師。
 
 > [!example] 使用場景
-> - 深度學習研究者用它來在多 GPU 環境中訓練大型模型，因為它能保持計算負載平衡，避免 OOM 問題，提升訓練效率。
-> - AI 工程師用它來實現高效的專家模型推理，因為其零拷貝技術能顯著降低延遲，提升推理速度。
-> - 系統架構師用它來設計高效的分布式計算架構，因為其動態冗餘專家的設計能夠靈活應對不同的計算需求。
+> - 深度學習工程師用它來在大型模型訓練中保持 GPU 負載平衡，因為它能有效避免因不均衡路由導致的性能下降。
+> - 研究人員用它來測試不同的專家路由策略，因為其動態冗餘專家的設計可以快速調整計算負載。
+> - AI 開發者用它來優化推理過程，因為零拷貝操作能顯著提高推理速度，降低延遲。
 
 ## 架構分析
 
-MoonEP 採用了一種基於 CUDA 的並行計算架構，設計上強調了動態冗餘專家的使用。這種架構允許在計算過程中根據當前的路由輸出來動態規劃專家，從而保持每個計算單元的負載平衡。資料流方面，令牌從輸入進入 Buffer，經過 `dispatch` 函數進行分發，然後在專家中進行計算，最後通過 `combine` 函數將結果匯總回來。這種設計的代價在於需要額外的計劃和預取內核，但這些內核的開銷相對較小。擴展性方面，MoonEP 可以在多 GPU 環境中靈活運用，但對於不支持 CUDA 的環境則無法使用。
+MoonEP 採用了一個基於 CUDA 的專家並行架構，設計目的是為了在多 GPU 環境中實現高效的計算負載平衡。其核心是動態冗餘專家的概念，這意味著在計算過程中，系統能夠根據當前的路由狀況動態選擇冗餘專家進行計算。資料流方面，令牌首先被分配到各個專家，然後進行計算，最後將結果返回給原計算單元。
+
+這樣的設計使得每個計算單元的負載保持一致，避免了因為某些專家負載過重而導致的性能瓶頸。選擇 CUDA 作為計算平台的原因在於其高效能和對並行計算的良好支持，但這也意味著對硬體的要求較高。整體架構的擴展性良好，但在高負載情況下可能會遇到內存瓶頸，特別是在處理大規模模型時。
 
 ## 技術深入分析
 
-MoonEP 的核心技術機制在於其動態冗餘專家設計，這使得在多 GPU 環境中能夠保持每個計算單元的負載平衡。使用 CUDA 進行高效的並行計算，並且透過零拷貝技術來減少數據傳輸延遲。效能方面，MoonEP 在面對不平衡的路由時，通信時間幾乎保持平穩，這是因為其設計能夠靈活應對不同的計算需求。設計取捨方面，選擇 CUDA 作為實現語言使得性能優化成為可能，但也限制了其在其他硬體上的使用。技術風險方面，隨著使用者數量的增加，可能會面臨更多的使用場景和需求，這需要持續的維護和更新。整合分析中，MoonEP 與主流深度學習框架的整合難度相對較低，但對於不熟悉 CUDA 的使用者來說，仍然需要一定的學習成本。
+MoonEP 的核心技術機制在於其動態冗餘專家設計，這使得每個計算單元能夠根據當前的路由狀況動態選擇冗餘專家進行計算。這一設計不僅提高了計算效率，還減少了內存碎片的問題。效能方面，MoonEP 在各種不均衡程度下的通訊時間保持穩定，顯示出其優越的性能。這是因為其使用了零拷貝操作，令牌直接寫入最終的專家分組位置，消除了不必要的數據拷貝。
+
+選擇 CUDA 作為計算平台的原因在於其高效能和對並行計算的良好支持，但這也意味著對硬體的要求較高。技術風險方面，隨著模型規模的擴大，可能會遇到內存瓶頸，特別是在處理大規模模型時。此外，對於外部 API 的依賴程度較低，這降低了供應鏈風險。整合方面，MoonEP 能夠與主流深度學習框架良好整合，但對於新手來說，可能需要一定的學習成本來掌握其使用方法。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的使用說明和範例，安裝過程相對順暢，但對於不熟悉 CUDA 的使用者可能會有一定的挑戰。整體而言，花 30 分鐘應該能夠成功運行基本範例。
+> README 文件品質良好，提供了詳細的使用說明和範例。安裝過程相對順暢，但需要配置 CUDA 環境。文件中缺乏多語言支持，主要以英文為主，對於非英語使用者可能會有一定的障礙。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 動態冗餘專家設計提升了計算效率，避免了 OOM 問題。
-> - 零拷貝技術顯著降低了數據傳輸延遲，提升了性能。
-> - 完美的負載平衡使得訓練過程穩定，無需擔心計算不均的問題。
+> - 動態冗餘專家設計能有效保持計算負載平衡。
+> - 支持零拷貝操作，顯著提升計算性能。
+> - 在不均衡路由情況下性能穩定，避免了 OOM 問題。
 
 > [!danger] 缺點
-> - 僅支援 NVIDIA GPU，對於其他硬體的支持有限。
-> - 需要一定的 CUDA 環境配置，對於新手可能有學習曲線。
-> - 目前文檔不夠完善，可能需要使用者自行探索。
+> - 目前僅支援 NVIDIA GPU，對其他硬體的支持有限。
+> - 需要一定的 CUDA 環境配置，對新手有學習曲線。
+> - 文檔尚不完善，部分功能的使用方法需要補充。
 
 > [!warning] 注意事項
-> - 僅支援 NVIDIA GPU，對於其他硬體的兼容性尚未確認。
-> - 需要 CUDA 環境，對於不熟悉 CUDA 的使用者可能有學習曲線。
-> - 目前文檔不夠完善，特別是在 API 使用方面。
+> - 僅支援 NVIDIA GPU，對於其他硬體平台的支持尚在開發中。
+> - 需要 CUDA 環境，對於不熟悉 CUDA 的開發者可能有一定的學習曲線。
+> - 目前文檔尚不完善，部分功能的使用方法需要進一步補充。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於多代理系統的協作，而 MoonEP 專注於專家模型的並行計算，適用場景不同。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供了不同的並行計算策略，但不具備 MoonEP 的動態冗餘專家設計，可能無法達到同樣的負載平衡效果。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 主要針對模型的輕量化和壓縮，而 MoonEP 專注於專家並行的計算效率和負載平衡。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | Duel-Agents 提供多代理的協作框架，但在專家並行的性能優化上不如 MoonEP 的動態冗餘設計。 |
 
 ## 替代方案決策
 
@@ -204,16 +210,16 @@ MoonEP 的核心技術機制在於其動態冗餘專家設計，這使得在多 
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於多代理系統的協作，而 MoonEP 專注於專家模型的並行計算，適用場景不同。 | 如果你的專案需要多代理系統的協作，而不是專家模型的並行計算。 | medium，因為需要重構專案架構以適應不同的設計理念。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供了不同的並行計算策略，但不具備 MoonEP 的動態冗餘專家設計，可能無法達到同樣的負載平衡效果。 | 如果你的專案需要更靈活的並行計算策略，而不僅僅是專家模型的實現。 | high，因為需要重新設計計算流程。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於多代理系統的協作，而 MoonEP 專注於專家並行的計算效率。 | 如果你的專案需要多代理協作而非專家並行計算，則應選擇它。 | medium，因為需要重新設計代理間的通信邏輯。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 提供多代理的協作框架，但在專家並行的性能優化上不如 MoonEP 的動態冗餘設計。 | 如果你的專案需要多代理的協作而非專家並行計算，則應選擇它。 | medium，因為需要重新設計代理間的通信邏輯。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **MoonEP** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **MoonEP** | **agent-sprite-forge** | **Duel-Agents** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於多代理系統的協作，而 MoonEP 專注於專家模型的並行計算，適用場景不同。 | 提供了不同的並行計算策略，但不具備 MoonEP 的動態冗餘專家設計，可能無法達到同樣的負載平衡效果。 |
-> | 遷移成本 | - | medium，因為需要重構專案架構以適應不同的設計理念。 | high，因為需要重新設計計算流程。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要多代理系統的協作，而不是專家模型的並行計算。 | 如果你的專案需要更靈活的並行計算策略，而不僅僅是專家模型的實 |
+> | 技術路線 | 本專案 | 專注於多代理系統的協作，而 MoonEP 專注於專家並行的計算效率。 | 提供多代理的協作框架，但在專家並行的性能優化上不如 MoonEP 的動態冗餘設計。 |
+> | 遷移成本 | - | medium，因為需要重新設計代理間的通信邏輯。 | medium，因為需要重新設計代理間的通信邏輯。 |
+> | 適用場景 | 主要場景 | 如果你的專案需要多代理協作而非專家並行計算，則應選擇它。 | 如果你的專案需要多代理的協作而非專家並行計算，則應選擇它。 |
 
 ## 成熟度評估
 
@@ -224,41 +230,44 @@ MoonEP 的核心技術機制在於其動態冗餘專家設計，這使得在多 
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人實驗和研究使用，但不建議用於生產環境。
+> 適合個人側項目試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在高負載情況下，可能會遇到計算不均的問題，導致性能下降。
-  - 解法：調整專家數量和路由策略以保持負載平衡。
-- [MEDIUM] 文檔中缺乏對 API 的詳細說明，可能會造成使用困難。
+- **[HIGH]** 在高負載情況下可能會遇到內存瓶頸，特別是在處理大規模模型時。
+  - 解法：優化模型結構以減少內存使用。
+- [MEDIUM] 文檔尚不完善，部分功能的使用方法需要補充。
   - 解法：參考源碼或社群討論以獲取更多信息。
+- **[HIGH]** 僅支援 NVIDIA GPU，對於其他硬體的支持有限。
+  - 解法：考慮使用其他專家並行庫或等待未來的更新。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以上的深度學習團隊進行大型模型訓練 | 非常適合 | 其動態冗餘專家設計能夠有效平衡計算負載，避免 OOM 問題。 |
-| 小型團隊進行簡單的推理任務 | 普通 | 雖然功能強大，但對於小型任務可能過於複雜。 |
-| 需要在非 NVIDIA 硬體上運行的模型 | 不適合 | 目前僅支援 NVIDIA GPU，無法在其他硬體上運行。 |
+| 10 人以下的新創公司進行深度學習模型訓練 | 非常適合 | MoonEP 能夠有效利用 GPU 資源，保持計算負載平衡。 |
+| 大型企業的深度學習團隊進行模型推理 | 適合 | 在不均衡路由情況下，MoonEP 的性能穩定性能夠滿足需求。 |
+| 對 CUDA 環境不熟悉的開發者 | 不適合 | 需要一定的 CUDA 環境配置，對新手有學習曲線。 |
+| 需要在非 NVIDIA 硬體上運行的深度學習模型 | 不適合 | 目前僅支援 NVIDIA GPU，對其他硬體的支持有限。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
-| 學習時間 | ~5 小時 |
-| 整合時間 | ~10 小時 |
+| 學習時間 | ~8 小時 |
+| 整合時間 | ~12 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，10 小時整合，得到高效的並行計算效果，值得投入。
+> 花 8 小時學、12 小時整合，得到穩定的專家並行計算效果，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：MoonEP 本身不需要高權限，僅在計算過程中使用 GPU 資源，對敏感資料的存取有限。
+> 低風險：MoonEP 本身不需要高權限，僅在 CUDA 環境中運行，不存取敏感資料。
 
 ## 健康度儀表板
 
@@ -346,7 +355,7 @@ MoonEP 的核心技術機制在於其動態冗餘專家設計，這使得在多 
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有 14 個開放問題尚未解決。
+**社群活躍度**：社群活躍度中等，最近有 14 個開放問題，解決率為 0%。
 
 ## 開發動態
 
@@ -503,19 +512,19 @@ MoonEP 的核心技術機制在於其動態冗餘專家設計，這使得在多 
 
 ## 延伸閱讀
 
-相關概念：[[專家模型]] · [[並行計算]] · [[CUDA]]
+相關概念：[[專家並行]] · [[GPU 計算]] · [[深度學習]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Blaizzy--nativ|Blaizzy/nativ]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[Blaizzy--nativ|Blaizzy/nativ]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]] · [[Forsy-AI--agent-apprenticeship|Forsy-AI/agent-apprenticeship]]
 
 [GitHub](https://github.com/MoonshotAI/MoonEP)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：專家模型）
+> [!note]- 直接競品（同子分類：專家並行）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "專家模型" AND file.name != "MoonshotAI--MoonEP"
+> WHERE subcategory = "專家並行" AND file.name != "MoonshotAI--MoonEP"
 > SORT stars DESC
 > ```
 
@@ -547,7 +556,7 @@ MoonEP 的核心技術機制在於其動態冗餘專家設計，這使得在多 
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["專家模型","並行計算","CUDA"];
+> const concepts = ["專家並行","GPU 計算","深度學習"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "MoonshotAI--MoonEP" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

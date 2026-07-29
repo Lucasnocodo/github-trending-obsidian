@@ -7,17 +7,17 @@ language: JavaScript
 license: MIT
 description: "A tactile WebGL sticker maker with rich text, image uploads, and interactive peel physics."
 homepage: "http://sticker.oooo.so/"
-stars: 617
-stars_per_day: 88
-forks: 56
-open_issues: 1
+stars: 635
+stars_per_day: 79
+forks: 59
+open_issues: 2
 created: 2026-07-20
 pushed_at: 2026-07-27
 first_seen: 2026-07-25
 week: "2026-W30"
 month: "2026-07"
-category: "開發工具"
-subcategory: "UI 工具"
+category: "Web 應用"
+subcategory: "互動設計"
 release_tag: ""
 install_complexity: "easy"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-25
-use_case: "一個觸感豐富的 WebGL 貼紙製作工具，支持文字、圖片上傳和互動式撕開物理效果。"
+use_case: "讓使用者輕鬆創建互動式 WebGL 貼紙，支持豐富的文本和圖像上傳。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,10 +42,10 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-25"
-star_history: "2026-07-25:530,2026-07-25:530,2026-07-26:576,2026-07-26:576,2026-07-27:598,2026-07-28:617"
+star_history: "2026-07-25:530,2026-07-25:530,2026-07-26:576,2026-07-26:576,2026-07-27:598,2026-07-28:617,2026-07-29:635"
 tags:
   - github
-  - "category/開發工具"
+  - "category/web_應用"
   - "lang/javascript"
   - easy_install
   - "topic/sticker"
@@ -53,12 +53,12 @@ tags:
 aliases:
   - "sticker-forge"
   - "CatsJuice/sticker-forge"
-  - "一個觸感豐富的 WebGL 貼紙製作工具，支持文字、圖片上傳和互動式撕開物理效果。"
+  - "讓使用者輕鬆創建互動式 WebGL 貼紙，支持豐富的文本和圖像上傳。"
 ---
 
 # sticker-forge
 
-**617** stars · **88** stars/天 · 建立 7 天前 · JavaScript · MIT
+**635** stars · **79** stars/天 · 建立 8 天前 · JavaScript · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/CatsJuice--sticker-forge");
@@ -76,20 +76,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `sticker` `webgl`
 
 > [!summary] 一句話摘要
-> 一個觸感豐富的 WebGL 貼紙製作工具，支持文字、圖片上傳和互動式撕開物理效果。
+> 讓使用者輕鬆創建互動式 WebGL 貼紙，支持豐富的文本和圖像上傳。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Growing (88 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 2 人 · **參與度** Low
-> **適合** 需要在網頁應用中創建互動式貼紙的前端開發者和設計師。
-> **一句話重點** 這個專案不僅是工具，更是創造互動式體驗的全新方式。
+> **安裝難度** Easy · **專案狀態** Recent · **熱度** Growing (79 stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 2 人 · **參與度** Low
+> **適合** 需要在網頁上創建互動式貼紙的前端開發者和設計師。
+> **一句話重點** 這個專案展示了如何利用 WebGL 創建互動式的網頁應用，並且提供了豐富的自定義選項，讓用戶能夠自由創作。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/CatsJuice--sticker-forge");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "UI 工具" && p.file.name !== "CatsJuice--sticker-forge" && p.status !== "archived")
+>     .where(p => p.subcategory === "互動設計" && p.file.name !== "CatsJuice--sticker-forge" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -100,32 +100,32 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 UI 工具 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 互動設計 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Beta (可試用) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學、8 小時整合，得到高互動性的貼紙效果，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~5h · **綁定風險** medium
+> **結論** 花 5 小時學習，10 小時整合，得到豐富的互動體驗，值得嘗試。
 
 > [!abstract] 核心創新
-> 提供了互動式撕開效果和豐富的自定義選項，讓用戶能夠創建生動的貼紙。
+> 提供了即時的物理效果和豐富的自定義選項，讓用戶能夠創建獨特的互動式貼紙。
 
 ## 專案簡介
 
-Sticker Forge 是一個將文字或上傳的圖像藝術轉換為觸感 WebGL 貼紙的工具。用戶可以通過拖曳來模擬撕開貼紙的效果，並且能看到貼紙的背面和陰影效果。這個工具的賣點在於其互動性和視覺效果，讓用戶能夠創建生動的貼紙。用戶可以使用 `npm run dev` 指令來啟動本地開發環境，並使用 `npm run build` 來構建應用和可重用的庫。技術上，這個專案使用了 Three.js 來管理 WebGL 場景，並且自定義著色器來處理貼紙的撕開效果。這樣的設計讓貼紙在撕開時能夠呈現出真實的物理反應，並且支持多種材料效果，如 holographic 和 glitter。
+Sticker Forge 是一個互動式的 WebGL 貼紙創建工具，允許用戶將文本或上傳的圖像藝術品轉換為觸感貼紙。用戶可以通過拖動貼紙的邊緣來模擬撕下的效果，並且可以自定義各種屬性，如顏色、光影和聲音效果。核心機制是利用 Three.js 來管理 WebGL 場景，並使用自定義著色器來實現貼紙的動態效果。使用者只需執行 `npm run dev` 來啟動本地開發環境，並可使用 `npm run build` 來構建可重用的庫和應用。這個工具的賣點在於其豐富的自定義選項和即時反饋，讓用戶能夠創建獨特的貼紙。技術上，這個專案依賴於多個現代 JavaScript 庫，如 React 和 Vite，並且使用 TypeScript 來增強開發體驗。
 
-與其他類似工具相比，Sticker Forge 提供了更高的互動性和自定義選項，特別是在撕開物理效果的表現上，這使得它在創建動態貼紙時更具吸引力。使用者可以選擇多種來源類型，包括文字、圖片和 SVG，並且能夠自定義各種參數，如陰影、光照和材料類型。雖然目前只有一個開放的問題，但社群活躍度尚可，且有定期的更新。這個專案目前處於 beta 階段，適合需要創建互動式貼紙的開發者，特別是那些在網頁應用中尋求增強用戶體驗的團隊。未來六個月內，預計將會有更多的功能增強和性能優化。對於小型團隊或個人開發者來說，這是一個值得嘗試的工具，尤其是在需要創建視覺吸引力的應用時。
+與其他貼紙生成工具相比，Sticker Forge 提供了更高的互動性和物理效果，這使得用戶在使用時能夠獲得更真實的體驗。與類似的工具如 0x0funky/agent-sprite-forge 相比，Sticker Forge 更加專注於 WebGL 的應用，並提供了更為細緻的物理模擬。這個工具適合需要創建互動式網頁內容的開發者，特別是在教育和娛樂領域。使用者需要注意的是，這個專案目前仍在活躍開發中，可能會有不穩定的 API 變更。整體來說，這是一個值得嘗試的工具，特別是對於想要增強用戶互動的網頁應用。
 
-**技術棧**：`JavaScript` · `TypeScript` · `Three.js` · `Next.js` · `Vite`
+**技術棧**：`JavaScript` · `TypeScript` · `Three.js` · `React` · `Vite`
 
 ## 重點功能
 
-- 互動式撕開效果 — 用戶可以通過拖曳模擬撕開貼紙的過程，呈現真實的物理反應。
-- 多種素材來源 — 支持文字、圖片和 SVG 來源，並能自定義各種參數。
-- 豐富的自定義選項 — 用戶可以調整陰影、光照和材料類型等參數，提升視覺效果。
-- 即時預覽 — 用戶可以在編輯過程中即時查看貼紙效果，提升創作效率。
-- 簡單的 API — 提供易於使用的 JavaScript API，方便與其他應用集成。
+- 互動貼紙創建 — 用戶可以上傳圖像或輸入文本，並自定義貼紙的外觀和行為。
+- 豐富的自定義選項 — 包括光影效果、顏色、材質類型等，讓用戶能夠創建獨特的貼紙。
+- 即時反饋 — 用戶的操作會立即反映在貼紙上，提升使用體驗。
+- 支持多種圖像格式 — 包括 PNG、JPEG、SVG 等，方便用戶上傳各種圖像。
+- Web 組件支持 — 用戶可以輕鬆將貼紙集成到現有的網頁應用中。
 
 ## 快速開始
 
@@ -137,7 +137,7 @@ npm install
 ```bash
 npm run dev
 ```
-3. 構建應用和庫
+3. 構建應用
 ```bash
 npm run build
 ```
@@ -146,63 +146,64 @@ npm run build
 
 ```js
 {
-  "前置條件": "已經安裝並啟動應用",
-  "指令": "await sticker.setSource({ type: 'text', text: 'PEEL ME', color: '#19191d' });",
-  "預期輸出": "貼紙會顯示文字 'PEEL ME'，並且可以進行撕開的互動。"
+  "前置條件": "已經在 HTML 中引入 sticker-forge 的 JS 檔案",
+  "指令": "sticker.setSource({ type: 'text', text: 'PEEL ME', color: '#19191d' });",
+  "預期輸出": "貼紙將顯示文本 'PEEL ME'，顏色為 '#19191d'。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 7 天就累積 617 stars（88/天），forks 56（9.1%），這顯示出相對穩定的增長。這個專案由 CatsJuice 和 lunar-me 共同開發，解決了在網頁上創建互動式貼紙的需求，之前的工具往往缺乏這種物理反應的真實感。這個工具的推出吸引了許多設計師和開發者的注意，可能是因為其獨特的撕開物理效果和豐富的自定義選項。技術上，WebGL 的進步使得這種互動式效果變得可行，並且在現代瀏覽器中得到了廣泛支持。forks/stars 比率為 9.1%，顯示出有相當一部分用戶在積極修改和使用這個工具。
+> 建立 8 天就累積 635 stars（79/天），forks 59（9.3%），顯示出相對活躍的社群參與。作者 CatsJuice 之前有多個開源專案，這次的 Sticker Forge 解決了創建互動式貼紙的需求，之前的工具多數缺乏豐富的自定義選項和物理效果。這個專案的推出引起了開發者的興趣，特別是在社交媒體和開發者社群中。技術上，WebGL 的進步和現代瀏覽器的性能提升使得這個工具的實現成為可能。高達 9.3% 的 forks/stars 比率顯示出許多人對這個專案的實際應用和修改的興趣。
 
 ## 適合誰使用
 
-**目標受眾**：需要在網頁應用中創建互動式貼紙的前端開發者和設計師。
+**目標受眾**：需要在網頁上創建互動式貼紙的前端開發者和設計師。
 
 > [!example] 使用場景
-> - 前端開發者用它來在網頁應用中創建互動式貼紙，因為這樣能提升用戶參與度和視覺吸引力。
-> - 設計師用它來快速生成自定義貼紙，因為其支持多種素材來源和豐富的自定義選項。
-> - 教育工作者用它來製作互動式學習材料，因為其物理效果能夠吸引學生的注意力並提升學習體驗。
+> - 前端開發者用它來創建互動式網頁貼紙，因為這樣可以提升用戶的參與感，並且提供更豐富的視覺效果。
+> - 教育工作者用它來設計教學工具，因為能夠讓學生通過互動來學習，增強學習動機。
+> - 遊戲開發者用它來製作遊戲中的貼紙道具，因為其物理效果可以增加遊戲的趣味性和真實感。
 
 ## 架構分析
 
-Sticker Forge 的架構基於現代前端技術，使用了 Three.js 來處理 WebGL 的渲染。這樣的選擇使得貼紙的撕開效果能夠呈現出真實的物理反應。資料流上，使用者的輸入（文字或圖片）會經過處理，轉換為可視化的貼紙效果。這個設計的代價是需要較高的瀏覽器性能，特別是在移動設備上。擴展性方面，由於使用了模組化的設計，未來可以輕鬆添加新功能或效果，但可能需要考慮到性能的影響。
+Sticker Forge 採用模組化的架構，主要分為應用層和庫層。應用層使用 React 和 Vite 來構建互動式界面，並利用 Three.js 來處理 WebGL 渲染。這樣的設計使得開發者能夠快速構建和測試應用，並且能夠輕鬆擴展功能。
+
+數據流通過 API 進行，使用者的操作會觸發事件，進而更新貼紙的狀態。選擇使用 WebGL 而非 Canvas，能夠提供更高的渲染性能和更真實的視覺效果，但也增加了學習曲線和兼容性問題。這個架構的擴展性良好，但在處理大量貼紙時可能會遇到性能瓶頸，特別是在移動設備上。
 
 ## 技術深入分析
 
-Sticker Forge 的核心技術機制基於 WebGL 和 Three.js，這使得其能夠實現高效的圖形渲染和物理效果。使用者可以通過簡單的 API 來創建和自定義貼紙，這些貼紙在撕開時會呈現出真實的物理反應。效能方面，這個工具能夠處理多種素材來源，並且在移動設備上也能保持相對穩定的性能。設計上選擇了模組化的架構，使得未來的擴展變得容易，但這也意味著需要考慮到性能的影響。技術風險方面，隨著用戶數量的增加，可能會出現性能瓶頸，特別是在高負載的情況下。整合方面，這個工具可以輕鬆與現有的前端框架進行整合，並且支援主流的 CI/CD 流程，這使得它在團隊協作中非常友好。
+Sticker Forge 的核心技術機制是基於 Three.js 的 WebGL 渲染，這使得它能夠實現高效的圖形處理和物理效果。使用者的輸入會通過 API 進行處理，並即時反映在貼紙的狀態上。效能方面，這個工具能夠處理多達數百個貼紙，但在移動設備上可能會遇到性能瓶頸。選擇 React 和 Vite 作為前端框架，能夠加速開發流程，但也增加了對開發者技能的要求。這個專案的依賴樹相對簡單，主要依賴於現代的 JavaScript 庫，降低了維護的複雜度。技術風險方面，WebGL 的兼容性問題可能會在不同瀏覽器上造成不一致的使用體驗。整合方面，與主流的 CI/CD 工具相容性良好，能夠輕鬆部署到生產環境。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰且包含範例，安裝過程順暢，沒有明顯的坑。提供了良好的入門指南，讓新手能夠快速上手。文件目前僅提供英文版本。
+> README 文件清晰，提供了詳細的安裝和使用指導；安裝過程順暢，無明顯坑；有良好的入門指南，適合新手快速上手；文件目前僅提供英文版本。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 互動性強，能提升用戶參與度。
-> - 支持多種素材來源，靈活性高。
-> - 自定義選項豐富，能滿足不同需求。
+> - 提供豐富的自定義選項，讓用戶能夠創建獨特的貼紙。
+> - 即時反饋提升了用戶體驗，特別是在互動設計方面。
+> - 使用現代技術棧，便於開發和維護。
 
 > [!danger] 缺點
-> - 目前只有一個開放的問題，可能影響穩定性。
-> - 需要較高的瀏覽器性能，可能不適合所有設備。
-> - 對於新手來說，可能需要一些學習成本來掌握 API。
+> - 對於不熟悉 WebGL 的開發者來說，學習曲線較陡。
+> - 在某些舊版瀏覽器上可能無法正常運行。
+> - 目前仍在開發中，API 可能會有變更。
 
 > [!warning] 注意事項
-> - 僅支援 Node.js 22.13 或更新版本。
-> - 目前只有一個開放的問題，可能影響穩定性。
-> - 不支援舊版瀏覽器，需使用現代瀏覽器以獲得最佳效果。
+> - 目前僅支援 Node.js 22.13 或更新版本。
+> - 在某些舊版瀏覽器上可能無法正常運行 WebGL 功能。
+> - 需要用戶上傳的圖像必須是可被瀏覽器解碼的格式。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建角色精靈，適合遊戲開發，而 Sticker Forge 則專注於創建貼紙，適合網頁應用。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了更簡單的貼紙創建功能，但缺乏 Sticker Forge 的互動性和物理效果。 |
-| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | Codex-shim 提供了 AI 生成的內容，而 Sticker Forge 則專注於用戶自定義的貼紙創建。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建角色精靈，並不具備 Sticker Forge 的互動物理效果和自定義選項。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 提供了基本的貼紙功能，但缺乏 Sticker Forge 的即時反饋和豐富的自定義選項。 |
 
 ## 替代方案決策
 
@@ -210,64 +211,63 @@ Sticker Forge 的核心技術機制基於 WebGL 和 Three.js，這使得其能�
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色精靈的創建，使用了不同的技術堆疊。 | 如果你的專案需要角色精靈而非貼紙，則應選擇此工具。 | medium，因為需要重新設計素材和 API 調用。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供了簡單的貼紙創建功能，但互動性較低。 | 如果只需要靜態貼紙而不需要互動效果，則可以考慮這個工具。 | low，因為 API 結構相似。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於角色精靈的創建，使用 Canvas 技術，記憶體使用較低，但互動性和物理效果不如 Sticker Forge。 | 如果你的專案需要輕量級的角色精靈而不需要複雜的物理效果。 | medium，因為需要調整到不同的技術棧和 API。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供基本的貼紙功能，使用傳統的 DOM 操作，性能較低，但易於上手。 | 如果你的專案對性能要求不高，並且需要快速實現基本功能。 | low，因為 API 和使用方式較為簡單。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **sticker-forge** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於角色精靈的創建，使用了不同的技術堆疊。 | 提供了簡單的貼紙創建功能，但互動性較低。 |
-> | 遷移成本 | - | medium，因為需要重新設計素材和 API 調用。 | low，因為 API 結構相似。 |
-> | 適用場景 | 主要場景 | 如果你的專案需要角色精靈而非貼紙，則應選擇此工具。 | 如果只需要靜態貼紙而不需要互動效果，則可以考慮這個工具。 |
+> | 技術路線 | 本專案 | 專注於角色精靈的創建，使用 Canvas 技術，記憶體使用較低，但互動性和物理效果不如 Sticker Forge。 | 提供基本的貼紙功能，使用傳統的 DOM 操作，性能較低，但易於上手。 |
+> | 遷移成本 | - | medium，因為需要調整到不同的技術棧和 API。 | low，因為 API 和使用方式較為簡單。 |
+> | 適用場景 | 主要場景 | 如果你的專案需要輕量級的角色精靈而不需要複雜的物理效果。 | 如果你的專案對性能要求不高，並且需要快速實現基本功能。 |
 
 ## 成熟度評估
 
 | 項目 | 評估 |
 | --- | --- |
-| 開發階段 | Beta |
+| 開發階段 | Alpha |
 | 生產環境就緒 | No |
-| Breaking Change 風險 | medium |
+| Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合小型專案試用，但不建議在生產環境的核心路徑上使用。
+> 適合個人項目或實驗性質的開發，不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 在某些舊版瀏覽器上可能無法正常顯示貼紙效果
-  - 解法：建議使用最新版本的 Chrome 或 Firefox
-- [MEDIUM] 撕開音效在某些設備上可能無法播放
-  - 解法：檢查瀏覽器的音效設置
-- [MEDIUM] API 調用時可能出現異步問題
-  - 解法：確保在調用前已經正確設置所有參數
+- **[HIGH]** 在某些瀏覽器上可能無法正確顯示 WebGL 效果
+  - 解法：使用最新版本的 Chrome 或 Firefox 瀏覽器
+- [MEDIUM] 上傳的圖像格式不被支持時，會導致錯誤
+  - 解法：確保上傳的圖像為 PNG、JPEG 或 SVG 格式
+- [MEDIUM] API 可能會隨著更新而變更
+  - 解法：定期查看官方文檔以獲取最新的 API 變更信息
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型創業團隊的網頁應用 | 非常適合 | 提供了豐富的互動性和自定義選項，能提升用戶體驗。 |
-| 大型企業的內部工具 | 普通 | 雖然功能強大，但可能需要額外的性能優化。 |
-| 個人開發者的創意項目 | 非常適合 | 簡單易用，能快速實現創意。 |
-| 需要高效能的遊戲開發 | 不適合 | 可能無法滿足高性能需求。 |
+| 小型創業團隊開發互動式網頁應用 | 非常適合 | 提供了豐富的自定義選項，能夠快速創建互動內容。 |
+| 教育機構需要設計教學工具 | 適合 | 能夠增強學生的學習動機，提供互動體驗。 |
+| 大型企業需要穩定的生產環境 | 不適合 | 目前仍在開發中，API 可能不穩定。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~8 小時 |
+| 整合時間 | ~10 小時 |
 | 維護負擔 | medium |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學、8 小時整合，得到高互動性的貼紙效果，值得一試。
+> 花 5 小時學習，10 小時整合，得到豐富的互動體驗，值得嘗試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：這個工具不需要高權限，且不存取敏感資料，適合在 CI/CD 中使用。
+> 低風險：不需要高權限，且不存取敏感資料。依賴鏈中未發現已知的安全漏洞，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -332,8 +332,8 @@ Sticker Forge 的核心技術機制基於 WebGL 和 Three.js，這使得其能�
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 56 |
-| Open Issues | 1 |
+| Forks | 59 |
+| Open Issues | 2 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-07-27 |
 | 建立日期 | 2026-07-20 |
@@ -362,7 +362,7 @@ Sticker Forge 的核心技術機制基於 WebGL 和 Three.js，這使得其能�
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度尚可，定期更新。
+**社群活躍度**：社群活躍，最近有合併請求和問題回應。
 **連結**：[文件](http://sticker.oooo.so/)
 
 ## 開發動態
@@ -608,7 +608,7 @@ Sticker Forge 的核心技術機制基於 WebGL 和 Three.js，這使得其能�
 
 ## 延伸閱讀
 
-相關概念：[[WebGL]] · [[互動設計]] · [[自定義 UI]]
+相關概念：[[WebGL]] · [[互動設計]] · [[前端開發]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlephAITech--WorkBuddyGuide|AlephAITech/WorkBuddyGuide]]
 
@@ -616,11 +616,11 @@ Sticker Forge 的核心技術機制基於 WebGL 和 Three.js，這使得其能�
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：UI 工具）
+> [!note]- 直接競品（同子分類：互動設計）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "UI 工具" AND file.name != "CatsJuice--sticker-forge"
+> WHERE subcategory = "互動設計" AND file.name != "CatsJuice--sticker-forge"
 > SORT stars DESC
 > ```
 
@@ -628,7 +628,7 @@ Sticker Forge 的核心技術機制基於 WebGL 和 Three.js，這使得其能�
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "開發工具" AND file.name != "CatsJuice--sticker-forge"
+> WHERE category = "Web 應用" AND file.name != "CatsJuice--sticker-forge"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -652,7 +652,7 @@ Sticker Forge 的核心技術機制基於 WebGL 和 Three.js，這使得其能�
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["WebGL","互動設計","自定義 UI"];
+> const concepts = ["WebGL","互動設計","前端開發"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "CatsJuice--sticker-forge" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

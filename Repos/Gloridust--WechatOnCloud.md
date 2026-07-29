@@ -7,18 +7,18 @@ language: TypeScript
 license: N/A
 description: "云微WOC，云微信，自由连接"
 homepage: ""
-stars: 3514
-stars_per_day: 60
-forks: 777
-open_issues: 22
+stars: 3515
+stars_per_day: 59
+forks: 778
+open_issues: 23
 created: 2026-05-29
-pushed_at: 2026-07-19
+pushed_at: 2026-07-28
 first_seen: 2026-06-03
 week: "2026-W23"
 month: "2026-06"
-category: "其他"
-subcategory: "社交媒體管理"
-release_tag: "v1.4.8"
+category: "開發工具"
+subcategory: "自動化"
+release_tag: "v1.4.9"
 install_complexity: "medium"
 status: to-review
 my_rating: 0
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-06-03
-use_case: "在自己的 NAS 或伺服器上運行服務端微信，實現多端共享與管理。"
+use_case: "在自己的 NAS 或伺服器上運行服務端微信，實現多端共享與跨設備同步。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,28 +34,28 @@ appearances: 3
 next_review: "2026-06-08"
 contributor_count: 5
 engagement: "medium"
-issue_close_rate: 80
-repo_size_kb: 2073
+issue_close_rate: 79
+repo_size_kb: 2024
 readme_length: 8402
 bus_factor: 1
-last_release_days: 9
-release_cadence: "monthly"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-06-03"
-star_history: "2026-06-03:1468,2026-06-03:1480,2026-06-04:1941,2026-06-04:1941,2026-06-05:2054,2026-06-05:2054,2026-06-06:2116,2026-06-07:2144,2026-06-08:2176,2026-06-09:2260,2026-06-10:2286,2026-06-11:2305,2026-06-12:2318,2026-06-13:2335,2026-06-14:2531,2026-06-15:2694,2026-06-16:2784,2026-06-17:2829,2026-06-18:2883,2026-06-19:2937,2026-06-20:2980,2026-06-21:3013,2026-06-22:3038,2026-06-23:3069,2026-06-24:3101,2026-06-25:3162,2026-06-26:3200,2026-06-27:3242,2026-06-28:3255,2026-06-29:3269,2026-06-30:3281,2026-07-01:3295,2026-07-02:3310,2026-07-03:3317,2026-07-04:3324,2026-07-05:3331,2026-07-06:3337,2026-07-07:3353,2026-07-08:3362,2026-07-09:3371,2026-07-10:3375,2026-07-11:3383,2026-07-12:3388,2026-07-13:3395,2026-07-14:3416,2026-07-15:3421,2026-07-16:3425,2026-07-17:3431,2026-07-18:3433,2026-07-19:3437,2026-07-20:3449,2026-07-21:3469,2026-07-22:3483,2026-07-23:3489,2026-07-24:3504,2026-07-25:3504,2026-07-26:3507,2026-07-27:3511,2026-07-28:3514"
+star_history: "2026-06-03:1468,2026-06-03:1480,2026-06-04:1941,2026-06-04:1941,2026-06-05:2054,2026-06-05:2054,2026-06-06:2116,2026-06-07:2144,2026-06-08:2176,2026-06-09:2260,2026-06-10:2286,2026-06-11:2305,2026-06-12:2318,2026-06-13:2335,2026-06-14:2531,2026-06-15:2694,2026-06-16:2784,2026-06-17:2829,2026-06-18:2883,2026-06-19:2937,2026-06-20:2980,2026-06-21:3013,2026-06-22:3038,2026-06-23:3069,2026-06-24:3101,2026-06-25:3162,2026-06-26:3200,2026-06-27:3242,2026-06-28:3255,2026-06-29:3269,2026-06-30:3281,2026-07-01:3295,2026-07-02:3310,2026-07-03:3317,2026-07-04:3324,2026-07-05:3331,2026-07-06:3337,2026-07-07:3353,2026-07-08:3362,2026-07-09:3371,2026-07-10:3375,2026-07-11:3383,2026-07-12:3388,2026-07-13:3395,2026-07-14:3416,2026-07-15:3421,2026-07-16:3425,2026-07-17:3431,2026-07-18:3433,2026-07-19:3437,2026-07-20:3449,2026-07-21:3469,2026-07-22:3483,2026-07-23:3489,2026-07-24:3504,2026-07-25:3504,2026-07-26:3507,2026-07-27:3511,2026-07-28:3514,2026-07-29:3515"
 tags:
   - github
-  - "category/其他"
+  - "category/開發工具"
   - "lang/typescript"
 aliases:
   - "WechatOnCloud"
   - "Gloridust/WechatOnCloud"
-  - "在自己的 NAS 或伺服器上運行服務端微信，實現多端共享與管理。"
+  - "在自己的 NAS 或伺服器上運行服務端微信，實現多端共享與跨設備同步。"
 ---
 
 # WechatOnCloud
 
-**3.5k** stars · **60** stars/天 · 建立 59 天前 · TypeScript · 未標註授權
+**3.5k** stars · **59** stars/天 · 建立 60 天前 · TypeScript · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/Gloridust--WechatOnCloud");
@@ -68,23 +68,23 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 }
 ```
 
-`v1.4.8`
+`v1.4.9`
 
 > [!summary] 一句話摘要
-> 在自己的 NAS 或伺服器上運行服務端微信，實現多端共享與管理。
+> 在自己的 NAS 或伺服器上運行服務端微信，實現多端共享與跨設備同步。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Growing · **熱度** Growing (60 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Moderate (最後推送 8 天前) · **貢獻者** 5+ 人 · **參與度** Medium
-> **適合** 需要在 NAS 上運行多個微信實例以實現多端共享的開發者或小型團隊。
-> **一句話重點** 這個專案不僅能運行微信，還能作為多應用平台，支持多種社交媒體的管理。
+> **安裝難度** Medium · **專案狀態** Growing · **熱度** Growing (59 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** 5+ 人 · **參與度** Medium
+> **適合** 需要在 NAS 或伺服器上運行服務端微信並實現多端同步的開發者和團隊。
+> **一句話重點** 這個專案讓用戶能在自己的伺服器上運行多個微信實例，實現跨設備的消息同步，解決了傳統微信使用中的多端困境。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/Gloridust--WechatOnCloud");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "社交媒體管理" && p.file.name !== "Gloridust--WechatOnCloud" && p.status !== "archived")
+>     .where(p => p.subcategory === "自動化" && p.file.name !== "Gloridust--WechatOnCloud" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,108 +95,96 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 社交媒體管理 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** medium
-> **結論** 花 5 小時學習，2 小時整合，得到靈活的多實例管理效果，值得考慮。
+> **結論** 花 5 小時學習，3 小時整合，得到高效的多端微信管理，值得投資。
 
 > [!abstract] 核心創新
-> 支持多個獨立的微信實例運行，並且能夠在同一平台上管理多種社交媒體應用。
+> 支持多應用平台，除了微信還能運行 Chromium 瀏覽器，實現多端同步。
 
 ## 專案簡介
 
-WechatOnCloud 是一個讓用戶能在自己的 NAS 或伺服器上運行服務端微信的工具，支持多端共享同一會話。用戶可以通過面板管理多個獨立的微信或 Chromium 瀏覽器實例，每個實例都是一個獨立的容器，並且支持多用戶訪問。核心機制是利用 Docker 容器技術，將每個實例運行在虛擬顯示環境中，並通過 KasmVNC 將畫面串流到瀏覽器，實現跨設備的即時同步。用戶只需使用 `docker-compose up -d` 命令即可快速啟動服務，並在面板中進行實例的創建與管理。這個工具的賣點在於其靈活性和可擴展性，讓用戶能夠隨時新增或刪除實例，並且不需要修改微信客戶端。
+WechatOnCloud 是一個基於 Docker 的服務端微信解決方案，允許用戶在 NAS 或伺服器上運行多個微信實例。用戶可以通過瀏覽器訪問這些實例，實現跨設備的消息同步和共享。每個實例都運行在獨立的容器中，並使用 KasmVNC 將畫面串流到瀏覽器，這樣用戶無需修改微信客戶端即可使用。核心賣點在於其支持多應用，除了微信，還可以運行 Chromium 瀏覽器來訪問其他社交媒體平台。用戶只需簡單的 Docker 指令，如 `docker compose up -d`，即可啟動服務。這種設計使得多個用戶可以共享同一會話，並透過子賬號管理訪問權限，提升了使用的靈活性和安全性。整個系統的安全性設計非常重要，面板是唯一的入口，並且不會將敏感數據暴露給前端。
 
 **技術棧**：`TypeScript` · `Docker` · `KasmVNC`
 
 ## 重點功能
 
-- 多實例管理 — 一個面板可管理多個獨立的微信或 Chromium 實例，互不干擾。
-- 多應用支持 — 可選擇運行微信或 Chromium 瀏覽器，支持多種社交媒體的登錄。
-- 實例生命周期管理 — 一鍵啟動、停止、重啟或升級實例，方便管理。
-- 文件傳輸與剪貼板 — 支持拖拽上傳文件及文本剪貼板中轉，提升使用便利性。
-- 安全優先設計 — 面板為唯一入口，並對 docker.sock 進行嚴格控制，確保安全性。
+- 多實例管理 — 一個面板管理多個獨立實例，每個實例都是獨立的容器，互不干擾。
+- 多應用支持 — 除了微信，還可以運行 Chromium 瀏覽器，支持多種社交媒體平台。
+- 多端共享 — 多個設備可以共享同一會話，並且支持子賬號管理，按需分配訪問權限。
+- 實例生命周期管理 — 一鍵啟動、停止、重啟和升級實例，方便管理。
+- 文件傳輸與剪貼板 — 支持拖拽文件上傳和文本剪貼板中轉，提升使用便利性。
 
 ## 快速開始
 
-1. 拉取官方鏡像
+1. 克隆專案並進入目錄
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Gloridust/WechatOnCloud/main/docker-compose.yml -o docker-compose.yml
+git clone https://github.com/Gloridust/WechatOnCloud.git WechatOnCloud && cd WechatOnCloud
 ```
-2. 啟動服務
+2. 複製環境變數範本並修改密碼
+```bash
+cp .env.example .env
+```
+3. 啟動 Docker 容器
 ```bash
 docker compose up -d
-```
-3. 訪問面板
-```bash
-在瀏覽器中訪問 http://<你的IP>:36080
-```
-
-## 程式碼範例
-
-```ts
-{
-  "前置條件": "需已安裝 Docker（含 Compose 插件）。",
-  "指令": "docker-compose up -d",
-  "預期輸出": "啟動面板及實例容器，並在瀏覽器中訪問面板。"
-}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 59 天內累積 3514 stars（60/天），forks 777（22.1%），顯示出強烈的使用需求。作者 Gloridust 之前的作品也在開源社群中獲得了良好的反響，這個專案解決了用戶在多設備使用微信時的痛點，特別是對於需要在 NAS 上運行的用戶。社群的活躍度高，開發者積極回應 Issues，顯示出良好的維護狀況。
+> 建立 60 天內累積 3515 stars（59/天），forks 778（22.1%），顯示出強勁的增長潛力。作者 Gloridust 及其團隊在開源社群中活躍，解決了用戶在多設備使用微信時的痛點，之前的解決方案往往需要複雜的配置或不支持多用戶共享。此專案的推出引起了廣泛的關注，特別是在 Telegram 和社交媒體上有過討論，顯示出其實用性和需求。技術上，Docker 的普及使得這種容器化的解決方案變得可行，並且用戶對於簡化的安裝和管理流程有著強烈需求。forks/stars 比率為 22.1%，顯示出許多用戶在積極修改和使用這個專案。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 NAS 上運行多個微信實例以實現多端共享的開發者或小型團隊。
+**目標受眾**：需要在 NAS 或伺服器上運行服務端微信並實現多端同步的開發者和團隊。
 
 > [!example] 使用場景
-> - 後端工程師用它來在 NAS 上運行多個微信實例，因為這樣可以實現多端同步，避免在不同設備間切換的麻煩。
-> - 小型團隊用它來共享微信會話，因為可以讓多位成員同時訪問同一個微信實例，提升協作效率。
-> - 社群管理者用它來管理多個社交媒體帳號，因為可以在同一平台上運行多個 Chromium 實例，方便管理不同的社交媒體。
+> - 後端工程師用它來在自己的伺服器上運行多個微信實例，因為這樣可以實現跨設備的消息同步，提升工作效率。
+> - 小型團隊用它來共享一個微信帳號，因為這樣可以避免多個設備之間的消息丟失，確保信息的即時性。
+> - 社交媒體經營者用它來同時管理多個社交平台的帳號，因為這樣可以在同一界面中快速切換，提高工作效率。
 
 ## 架構分析
 
-WechatOnCloud 採用 Docker 容器架構，允許用戶在 NAS 或伺服器上運行多個獨立的微信實例。每個實例都是一個獨立的容器，運行在虛擬顯示環境中，並通過 KasmVNC 將畫面串流到瀏覽器。這樣的設計讓用戶能夠輕鬆管理多個實例，並且不需要修改微信客戶端。
-
-使用 Docker 的好處是能夠快速部署和擴展，但也需要用戶具備一定的 Docker 知識。由於所有實例都在同一宿主機上運行，因此資源的分配和管理成為一個關鍵問題，尤其是在內存使用上。整體架構的設計考慮到了安全性，面板是唯一的入口，並且對 docker.sock 的訪問進行了嚴格控制。
+WechatOnCloud 採用 Docker 容器化架構，每個實例運行在獨立的容器中，這樣的設計使得用戶可以輕鬆管理多個實例而不會互相影響。系統使用 KasmVNC 將實例畫面串流到瀏覽器，這樣用戶無需安裝任何客戶端，只需透過瀏覽器即可訪問。這種設計的代價是需要較高的內存資源，因為每個實例都需要分配一定的內存和 CPU 資源。整體架構的擴展性良好，但隨著實例數量的增加，內存使用會顯著上升，這是需要考量的瓶頸。
 
 ## 技術深入分析
 
-WechatOnCloud 的核心技術在於其容器化架構，利用 Docker 技術來運行多個獨立的微信實例。每個實例都運行在獨立的容器中，並通過 KasmVNC 將畫面串流到瀏覽器，這種設計使得用戶能夠在不同設備上共享同一會話。這個架構的效能取決於宿主機的性能，特別是在內存使用上，因為每個實例都需要一定的內存來運行。設計上，WechatOnCloud 充分考慮了安全性，面板是唯一的入口，並且對 docker.sock 的訪問進行了嚴格控制，這樣的設計能有效防止未授權的訪問。選擇 Docker 作為技術棧的好處在於其快速部署和擴展的能力，但也帶來了對用戶 Docker 知識的要求。技術風險方面，隨著實例數量的增加，資源管理可能成為瓶頸，特別是在內存方面。整合到現有的 CI/CD pipeline 中也相對簡單，因為 Docker 容器的使用使得部署過程變得標準化。
+WechatOnCloud 的核心技術在於其容器化架構，使用 Docker 來管理每個實例的運行。每個實例都運行在獨立的容器中，這樣的設計使得用戶可以輕鬆地管理多個實例，並且不會互相影響。系統使用 KasmVNC 將畫面串流到瀏覽器，這樣用戶無需安裝任何客戶端，只需透過瀏覽器即可訪問。效能方面，實測顯示每個實例在空閒狀態下約佔用 0.6 GiB 的內存，活躍時可達 1.5 GiB，這意味著內存是主要的瓶頸。設計上，選擇 Docker 作為基礎架構的原因是其便於管理和擴展，但這也帶來了對宿主機資源的依賴。技術風險方面，隨著實例數量的增加，內存使用會顯著上升，這可能會影響到系統的穩定性。整合方面，與主流的 CI/CD 工具兼容性良好，並且可以輕鬆地與現有的開發流程結合。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件清晰，提供了詳細的安裝步驟和使用指南。安裝過程相對順暢，但對於不熟悉 Docker 的用戶可能會有一定的挑戰。文件中有快速開始的指引，能幫助新手快速上手。
+> README 文件清晰，包含詳細的安裝步驟和使用說明。安裝過程相對順暢，但對於不熟悉 Docker 的用戶可能需要額外的學習時間。文件目前僅提供英文，缺乏多語言支持。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 靈活的多實例管理，支持同時運行多個微信和社交媒體實例。
-> - 安全性設計良好，面板是唯一入口，避免了直接暴露於公網的風險。
-> - 支持文件傳輸和剪貼板功能，提升了使用便利性。
+> - 支持多個社交媒體平台，提升使用靈活性。
+> - 簡單的 Docker 部署流程，降低了使用門檻。
+> - 強大的多用戶管理功能，適合團隊協作。
 
 > [!danger] 缺點
-> - 需要用戶具備一定的 Docker 知識，對新手來說有學習曲線。
-> - 資源使用上可能會受到宿主機性能的限制，特別是內存。
-> - 面板需在內網運行，無法直接公開訪問。
+> - 需要相對較高的硬體資源，特別是內存。
+> - 面板需在內網運行，對於需要外部訪問的用戶不太友好。
+> - 對於不熟悉 Docker 的用戶，初期設置可能較為複雜。
 
 > [!warning] 注意事項
-> - 僅支援 x86_64 和 arm64 架構的宿主機。
-> - 需要 Docker 環境，對於不熟悉 Docker 的用戶有一定學習成本。
-> - 面板需在內網運行，避免暴露於公網以確保安全。
+> - 需要 Docker 環境，對於不熟悉 Docker 的用戶可能有學習曲線。
+> - 實例的性能依賴於宿主機的資源配置，內存是主要瓶頸。
+> - 面板必須在內網環境中使用，暴露於公網存在安全風險。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 這個工具專注於創建和管理多個代理實例，而 WechatOnCloud 主要針對社交媒體的多端管理。 |
-| [HKUDS/OpenHarness](https://github.com/HKUDS/OpenHarness) | OpenHarness 提供更廣泛的應用管理功能，但不專注於微信的多實例運行。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的多實例管理功能，但主要針對 AI agent 的運行環境。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於社交媒體自動化，但不支持多用戶共享會話。 |
 
 ## 替代方案決策
 
@@ -204,16 +192,16 @@ WechatOnCloud 的核心技術在於其容器化架構，利用 Docker 技術來�
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Boneyard 專注於提供一個簡單的社交媒體管理平台，而 WechatOnCloud 則專注於多實例的微信運行。 | 如果你的需求主要是管理社交媒體帳號而非特定於微信，Boneyard 可能更合適。 | medium，因為兩者的架構和功能有一定的差異。 |
-| [HKUDS/OpenHarness](https://github.com/HKUDS/OpenHarness) | OpenHarness 提供更廣泛的應用管理功能，但不專注於微信的多實例運行。 | 如果你的團隊需要管理多種應用而不僅限於微信，OpenHarness 可能更適合。 | high，因為需要重新適應不同的管理界面和功能。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的多實例管理功能，但主要針對 AI agent 的運行環境，並不支持社交媒體的多端同步。 | 如果你的需求主要是運行 AI agent，而非社交媒體，則可以選擇此工具。 | medium，因為需要重新配置環境和實例。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於社交媒體自動化，但不支持多用戶共享會話，適合單用戶使用。 | 如果你的需求是自動化社交媒體操作，且不需要多用戶共享，則可以選擇此工具。 | low，因為功能相似，遷移成本較低。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **WechatOnCloud** | **boneyard** | **OpenHarness** |
+> | 維度 | **WechatOnCloud** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | Boneyard 專注於提供一個簡單的社交媒體管理平台，而 WechatOnCloud 則專注於多實例的微信運行。 | OpenHarness 提供更廣泛的應用管理功能，但不專注於微信的多實例運行。 |
-> | 遷移成本 | - | medium，因為兩者的架構和功能有一定的差異。 | high，因為需要重新適應不同的管理界面和功能。 |
-> | 適用場景 | 主要場景 | 如果你的需求主要是管理社交媒體帳號而非特定於微信，Boney | 如果你的團隊需要管理多種應用而不僅限於微信，OpenHarn |
+> | 技術路線 | 本專案 | 提供類似的多實例管理功能，但主要針對 AI agent 的運行環境，並不支持社交媒體的多端同步。 | 專注於社交媒體自動化，但不支持多用戶共享會話，適合單用戶使用。 |
+> | 遷移成本 | - | medium，因為需要重新配置環境和實例。 | low，因為功能相似，遷移成本較低。 |
+> | 適用場景 | 主要場景 | 如果你的需求主要是運行 AI agent，而非社交媒體，則可 | 如果你的需求是自動化社交媒體操作，且不需要多用戶共享，則可以 |
 
 ## 成熟度評估
 
@@ -224,44 +212,44 @@ WechatOnCloud 的核心技術在於其容器化架構，利用 Docker 技術來�
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人或小型團隊試用，但不建議用於生產環境的核心路徑上。
+> 適合個人或小型團隊試用，但不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** 首次新建實例若卡住報 `创建容器失败`，可能是 Docker 守護進程拉取實例鏡像超時。
-  - 解法：手動拉取鏡像以避免超時問題。
-- **[HIGH]** 面板暴露於公網可能導致安全風險。
-  - 解法：確保面板僅在內網運行或通過 VPN 訪問。
-- [MEDIUM] 內存使用隨實例數量增加而增加，可能導致性能下降。
-  - 解法：根據實際需求調整實例數量，並監控宿主機性能。
+- **[HIGH]** 首次新建實例若卡住報 `創建容器失敗`，可能是 Docker 拉取超時
+  - 解法：手動拉取鏡像以避免超時問題
+- **[HIGH]** 面板需在內網運行，暴露於公網存在安全風險
+  - 解法：使用 VPN 或內網穿透技術訪問面板
+- [MEDIUM] 內存使用隨實例數量增加而顯著上升，可能導致性能下降
+  - 解法：根據實際需求調整實例數量，避免過度佔用資源
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 5 人以下的小型團隊需要共享微信會話 | 非常適合 | 支持多用戶訪問同一實例，提升團隊協作效率。 |
-| 需要在 NAS 上運行多個社交媒體帳號的管理者 | 適合 | 能夠在同一平台上運行多個社交媒體實例，方便管理。 |
-| 不熟悉 Docker 的用戶 | 不適合 | 需要一定的 Docker 知識來進行安裝和管理。 |
-| 需要在公網上運行的社交媒體管理工具 | 不適合 | 面板需在內網運行以確保安全。 |
+| 小型團隊需要共享微信帳號 | 非常適合 | 支持多用戶管理和會話共享，能有效提升工作效率。 |
+| 個人開發者希望在伺服器上運行多個社交媒體帳號 | 適合 | 能夠簡單地管理多個實例，並實現跨設備同步。 |
+| 大型企業需要高效的社交媒體管理工具 | 普通 | 雖然支持多實例，但可能需要更多的資源和管理。 |
+| 對 Docker 不熟悉的用戶 | 不適合 | 安裝和配置過程可能對新手造成困難。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~5 小時 |
-| 整合時間 | ~2 小時 |
+| 整合時間 | ~3 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，2 小時整合，得到靈活的多實例管理效果，值得考慮。
+> 花 5 小時學習，3 小時整合，得到高效的多端微信管理，值得投資。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 中等風險：面板需要訪問 docker.sock，這意味著擁有高權限。用戶必須確保面板不暴露於公網，並改變默認密碼以增強安全性。
+> 中等風險：面板需要高權限訪問宿主的 docker.sock，且能夠訪問已登錄的社交媒體帳號，必須確保面板不暴露於公網。
 
 ## 健康度儀表板
 
@@ -326,10 +314,10 @@ WechatOnCloud 的核心技術在於其容器化架構，利用 Docker 技術來�
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 777 |
-| Open Issues | 22 |
-| Issue 解決率 | 80% (89 closed) |
-| 最後推送 | 2026-07-19 |
+| Forks | 778 |
+| Open Issues | 23 |
+| Issue 解決率 | 79% (89 closed) |
+| 最後推送 | 2026-07-28 |
 | 建立日期 | 2026-05-29 |
 | Repo 大小 | 2.0 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Gloridust/WechatOnCloud) |
@@ -347,56 +335,65 @@ WechatOnCloud 的核心技術在於其容器化架構，利用 Docker 技術來�
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Gloridust](https://github.com/Gloridust) | 128 |
+> | [@Gloridust](https://github.com/Gloridust) | 133 |
 > | [@d1y](https://github.com/d1y) | 3 |
 > | [@chenshu007](https://github.com/chenshu007) | 2 |
 > | [@mvanhorn](https://github.com/mvanhorn) | 1 |
 > | [@web-flow](https://github.com/web-flow) | 1 |
 
-**最新版本**：v1.4.8 — v1.4.8 — 修复微信「反复卡进度、永远装不完」+ 诊断包收录安装状态 (2026-07-19)
+**最新版本**：v1.4.9 — v1.4.9 — 桌面连不上可诊断 + Tailscale/内网 IPv6 放行 + 输入体验改进 (2026-07-28)
 
 > [!info]- Release Notes
-> ## 本次修复
+> ## 桌面连不上，终于能查了（issue #124）
 > 
-> ### 微信下载/安装：断点续传，装得完
-> 此前网络半路被掐断时，下次触发会**删掉下到一半的包从 0 重来**，且多次点安装会互相踩，表现为**反复卡在同一百分比后退出、永远装不完**（用户实测卡 28%）。现在：
+> 有用户反馈「一直卡在桌面正在启动 / 重连中…」，但导出诊断里**什么线索都没有**。查下来发现是我们自己的锅：面板处理 WebSocket 连接时有三道校验（Host 白名单 / URL 解析 / 会话权限），**任何一道不通过都是静默断开，不留任何日志**。于是用户只看到「重连中」，我们也无从下手。
 > 
-> - **断点续传**（`curl -C -`）：中断后从已下字节继续，而非重下
-> - **并发锁**：已有安装在跑时，二次触发直接跳过，不再互相删包
-> - **完整性校验**：`dpkg-deb` 读得出版本才算完整包，半包/损坏包自动清理并提示重下
-> - **安装日志**：全过程写入 `install.log`（curl 退出码、已下字节、续传轮次）
+> - **三条拒绝路径全部留痕**，写入对应实例日志 + 面板日志，导出诊断即可看到：
+>   - Host 被拒时回显实际收到的 `Host` / `X-Forwarded-Host`，并提示加 `PANEL_ALLOWED_HOSTS`
+>   - 会话失败细分为「没带 cookie / 会话过期 / 用户不存在 / 被禁用 / 无权限」——反代吞 Cookie 头是常见成因
+> - 同一实例同一原因 60 秒只记一条，避免 2 秒一次的重连把日志刷爆
 > 
-> ### 导出诊断：装不上有据可查
-> 「导出诊断」此前只有面板/容器日志，看不到安装为何失败。现在每个实例段追加：
+> ## Tailscale / 内网 IPv6 现在能直接访问了
 > 
-> - **`status.json`**：安装 phase / percent / 错误信息，一眼看出卡在哪一步
-> - **`install.log` 尾 50 行**：下载每一步的实况（v1.4.8 起的实例才有）
+> 这两种此前会被直接 400 拒绝（实测确认）：
 > 
-> 配合断点续传修复，形成「装不上 → 导诊断 → 定位根因」闭环。
+> - **Tailscale / Headscale 的 CGNAT 段 `100.64.0.0/10`**
+> - **内网 IPv6**：`fc00::/7`（ULA，含 Tailscale 的 `fd7a::/48`）与 `fe80::/10`（链路本地）—— 此前只放行 `::1`，纯 IPv6 内网用户完全进不来
+> 
+> 安全性与原有的 RFC1918 放行同理：校验的是 Host 头字面量，DNS-rebinding 攻击者的 Host 是自己的域名，匹配不上。
+> 
+> ## 微信装不上时不再误导你去查网络
+> 
+> 盘写满时 `curl` 以退出码 23（本地写失败）反复卡在同一字节，连进度文件都写不进去（面板显示无下载进度），此前的报错却提示「请检查网络」—— 真实案例里用户为此查了半天代理。现在下载前先 `df` 预检、失败后按退出码复查，直接报「磁盘空间不足」并给出清理指引。
+> 
+> ## 输入体验（issue #125）
+> 
+> - **自动回车开关**：转发输入条右侧新增 `↵` 开关。关掉后只把文字**填进**应用输入框、不代发，方便先编辑再自己发（按钮文案随之变「填入」）。默认保持原有行为。
+> - **功能键排**：左侧 `Fn` 展开 `Esc` `Tab` `退格` `Del` `↵` `←` `↑` `↓` `→`，这些键在 VNC 里常被浏览器吞掉，手机端更是没有。
+> - **齿轮图标**：旧图标路径混进了绝对指令，有两颗齿走形（右下最明显），已换成对称版本。
+> - **子用户文案**：「重启实例」按钮本就按权限隐藏，但提示文字没跟着改，子用户会照着找一个不存在的按钮，现改为提示联系管理员。
 > 
 > ---
-> 
-> 镜像：`ghcr.io/gloridust/{woc-panel,wechat-on-cloud}:1.4.8`、`gloridust/{woc-panel,wechat-on-cloud}:1.4.8`（amd64 + arm64）。升级方式不变：面板「检查更新」一键升级。
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍，開發者積極回應 Issues。
+**社群活躍度**：社群活躍，定期更新與回應問題。
 **連結**：[文件](https://github.com/Gloridust/WechatOnCloud)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-07 ~ 2026-07-19）
-> **活躍天數** 4 天 · **最新 commit** feat(diag): 诊断包收录每实例 status.json + install.log 尾部（排查装不上无死角）
+> [!abstract] 最近 10 次 commit（2026-07-08 ~ 2026-07-28）
+> **活躍天數** 4 天 · **最新 commit** docs(tg-bot): 更正私聊窗口为 5 分钟——轮询模式下验证码送不达
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#125](https://github.com/Gloridust/WechatOnCloud/issues/125) | 关于【文本转发】和【图标/文字】的一些小问题 | 0 | 0 |
-> | [#124](https://github.com/Gloridust/WechatOnCloud/issues/124) | 群晖配置无法正常使用 | 0 | 5 |
-> | [#123](https://github.com/Gloridust/WechatOnCloud/issues/123) | 为每个实例单独配置代理地址 | 0 | 0 |
-> | [#121](https://github.com/Gloridust/WechatOnCloud/issues/121) | 有没有办法让导出或备份微信聊天记录到微信实例可用 | 0 | 3 |
+> | [#126](https://github.com/Gloridust/WechatOnCloud/issues/126) | 希望可以适配一下手机浏览器 | 0 | 0 |
+> | [#125](https://github.com/Gloridust/WechatOnCloud/issues/125) | 关于【文本转发】和【图标/文字】的一些小问题 | 0 | 2 |
+> | [#124](https://github.com/Gloridust/WechatOnCloud/issues/124) | 群晖配置无法正常使用 | 0 | 9 |
+> | [#123](https://github.com/Gloridust/WechatOnCloud/issues/123) | 为每个实例单独配置代理地址 | 0 | 1 |
 
 ## README 摘錄
 
@@ -610,19 +607,19 @@ WechatOnCloud 的核心技術在於其容器化架構，利用 Docker 技術來�
 
 ## 延伸閱讀
 
-相關概念：[[容器化]] · [[多模態]] · [[自動化]]
+相關概念：[[容器化]] · [[自動化]] · [[多端協作]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[AlexandrosGounis--pdfx|AlexandrosGounis/pdfx]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]] · [[louislva--claude-peers-mcp|louislva/claude-peers-mcp]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[HKUDS--OpenHarness|HKUDS/OpenHarness]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[BigBodyCobain--Shadowbroker|BigBodyCobain/Shadowbroker]] · [[AlexandrosGounis--pdfx|AlexandrosGounis/pdfx]] · [[Gloridust--WechatOnCloud|Gloridust/WechatOnCloud]] · [[louislva--claude-peers-mcp|louislva/claude-peers-mcp]]
 
 [GitHub](https://github.com/Gloridust/WechatOnCloud)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：社交媒體管理）
+> [!note]- 直接競品（同子分類：自動化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "社交媒體管理" AND file.name != "Gloridust--WechatOnCloud"
+> WHERE subcategory = "自動化" AND file.name != "Gloridust--WechatOnCloud"
 > SORT stars DESC
 > ```
 
@@ -630,7 +627,7 @@ WechatOnCloud 的核心技術在於其容器化架構，利用 Docker 技術來�
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "其他" AND file.name != "Gloridust--WechatOnCloud"
+> WHERE category = "開發工具" AND file.name != "Gloridust--WechatOnCloud"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -654,7 +651,7 @@ WechatOnCloud 的核心技術在於其容器化架構，利用 Docker 技術來�
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["容器化","多模態","自動化"];
+> const concepts = ["容器化","自動化","多端協作"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Gloridust--WechatOnCloud" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

@@ -7,9 +7,9 @@ language: Python
 license: Apache-2.0
 description: "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence"
 homepage: "https://technology.robbyant.com/lingbot-video"
-stars: 872
-stars_per_day: 46
-forks: 38
+stars: 881
+stars_per_day: 44
+forks: 39
 open_issues: 10
 created: 2026-07-08
 pushed_at: 2026-07-10
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-12
-use_case: "提供一個開源的大規模 Mixture-of-Experts 視頻生成模型，以促進具身智能的發展。"
+use_case: "提供大規模的混合專家視頻生成模型，專注於體現智能的應用。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-12"
-star_history: "2026-07-12:684,2026-07-12:685,2026-07-13:717,2026-07-13:718,2026-07-14:765,2026-07-14:766,2026-07-15:789,2026-07-15:789,2026-07-16:803,2026-07-17:816,2026-07-18:826,2026-07-19:830,2026-07-20:835,2026-07-21:842,2026-07-22:848,2026-07-23:857,2026-07-24:861,2026-07-25:865,2026-07-26:868,2026-07-27:872,2026-07-28:872"
+star_history: "2026-07-12:684,2026-07-12:685,2026-07-13:717,2026-07-13:718,2026-07-14:765,2026-07-14:766,2026-07-15:789,2026-07-15:789,2026-07-16:803,2026-07-17:816,2026-07-18:826,2026-07-19:830,2026-07-20:835,2026-07-21:842,2026-07-22:848,2026-07-23:857,2026-07-24:861,2026-07-25:865,2026-07-26:868,2026-07-27:872,2026-07-28:872,2026-07-29:881"
 tags:
   - github
   - "category/ai_ml"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "lingbot-video"
   - "Robbyant/lingbot-video"
-  - "提供一個開源的大規模 Mixture-of-Experts 視頻生成模型，以促進具身智能的發展。"
+  - "提供大規模的混合專家視頻生成模型，專注於體現智能的應用。"
 ---
 
 # lingbot-video
 
-**872** stars · **46** stars/天 · 建立 19 天前 · Python · Apache-2.0
+**881** stars · **44** stars/天 · 建立 20 天前 · Python · Apache-2.0
 
 ```dataviewjs
 const me = dv.page("Repos/Robbyant--lingbot-video");
@@ -78,13 +78,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `image-to-video` `lingbot-video` `video-generation` `world-models`
 
 > [!summary] 一句話摘要
-> 提供一個開源的大規模 Mixture-of-Experts 視頻生成模型，以促進具身智能的發展。
+> 提供大規模的混合專家視頻生成模型，專注於體現智能的應用。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (46 stars/day)
-> **授權** Apache-2.0 (商業友好) · **維護** Moderate (最後推送 17 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 對於具身智能和視頻生成技術有興趣的研究者和開發者。
-> **一句話重點** LingBot-Video 的開源性質和高效能架構使其在具身智能視頻生成領域中具有顯著的競爭優勢。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (44 stars/day)
+> **授權** Apache-2.0 (商業友好) · **維護** Moderate (最後推送 18 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要高效視頻生成解決方案的機器人開發者和 AI 研究人員。
+> **一句話重點** LingBot-Video 的 MoE 架構使其在視頻生成效率上具有顯著優勢，特別適合需要快速反應的應用場景。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -108,26 +108,26 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Alpha (不穩定) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習、20 小時整合，得到高效的視頻生成能力，值得投入。
+> **結論** 花 10 小時學習，20 小時整合，得到高效的視頻生成能力，值得探索。
 
 > [!abstract] 核心創新
-> LingBot-Video 是首個開源的大規模 MoE 視頻生成模型，專為具身智能設計。
+> LingBot-Video 是首個專注於體現智能的開源大規模 MoE 視頻生成模型。
 
 ## 專案簡介
 
-LingBot-Video 是一個專為具身智能設計的大規模 Mixture-of-Experts (MoE) 視頻生成模型，旨在縮短視頻合成與物理世界理解之間的差距。用戶可以透過結構化的 JSON 標題來進行推斷，並使用 `python rewriter/inference.py` 指令來執行視頻生成。這個模型的賣點在於其高效的 MoE 架構，能夠實現約 3 倍的推斷速度，並且訓練於超過 70,000 小時的具身數據，這使得它在生成高美學、物理合理性和任務完成度的視頻方面表現優異。技術上，LingBot-Video 使用了 PyTorch 和多個深度學習庫，並依賴於最新的 `torch` 和 `transformers` 版本，這樣的選擇使得模型在性能上有了更好的保障。
+LingBot-Video 是一個開源的混合專家（MoE）視頻生成模型，旨在將視頻合成與物理世界理解結合起來。使用者可以透過結構化的 JSON 標題來生成視頻，並且模型支持多種任務，包括文本到視頻（T2V）和文本到圖像到視頻（TI2V）。其核心機制是通過高效的 MoE 架構來實現，這使得推理速度比傳統模型快約三倍。安裝過程中，使用者需要安裝 PyTorch 和其他依賴，並可選擇使用 SGLang 進行更高效的推理。LingBot-Video 在 RBench 基準測試中表現優異，尤其在多實體和人類互動的場景中，顯示出其強大的性能。
 
-與其他視頻生成模型相比，如 Cosmos3 Super 和 LongCat-Video，LingBot-Video 在多項指標上均表現出色，特別是在多實體和人形機器人任務上。使用者在實際應用中可能會遇到的挑戰包括對於 JSON 格式的要求及多 GPU 推斷的記憶體需求，這需要有足夠的系統 RAM 來支持大型 MoE 檢查點的加載。該專案目前仍在快速發展中，適合對視頻生成和具身智能有興趣的研究者和開發者。未來六個月內，預期將會有更多功能和優化釋出，特別是在模型的穩定性和擴展性方面。
+與其他視頻生成模型相比，如 Cosmos3 Super 和 LongCat-Video，LingBot-Video 在多數指標上均有更好的表現，特別是在物理合理性和任務完成度上。這使得它在需要高效視頻生成的應用場景中非常適合，例如機器人控制和虛擬助手。使用者在實際應用中可能會遇到需要調整 JSON 標題格式的問題，這需要一定的學習曲線。該專案目前仍在活躍開發中，未來可能會持續推出新的功能和改進。
 
-**技術棧**：`Python >=3.10` · `torch 2.12.0.dev20260220+cu130` · `transformers 5.8.1`
+**技術棧**：`Python >=3.10` · `torch==2.12.0.dev20260220+cu130` · `transformers==5.8.1` · `diffusers==0.39.0`
 
 ## 重點功能
 
-- 高效 MoE 架構 — 實現約 3 倍的推斷速度，平衡容量與成本。
-- 70,000+ 小時的具身數據訓練 — 提供高質量的視頻生成能力。
-- 多重獎勵系統 — 在高美學、物理合理性和任務完成度上進行獎勵。
-- 支持 JSON 結構化標題 — 提供清晰的推斷流程。
-- 多 GPU 推斷支持 — 透過 `--enable_fsdp_inference` 參數來減少記憶體壓力。
+- 高效 MoE 架構 — 推理速度比傳統模型快約 3 倍。
+- 70,000+ 小時的數據訓練 — 包含大量的網絡視頻和體現數據。
+- 多重獎勵系統 — 根據美學、物理合理性和任務完成度進行獎勵。
+- 支持 T2V 和 TI2V 任務 — 可生成多種視頻格式。
+- 基準測試表現優異 — 在 RBench 中排名第一，顯示出強大的性能。
 
 ## 快速開始
 
@@ -139,71 +139,72 @@ git clone https://github.com/Robbyant/lingbot-video && cd lingbot-video && pip i
 ```bash
 python -m venv .venv && source .venv/bin/activate
 ```
-3. 執行推斷
+3. 運行推理腳本
 ```bash
-python rewriter/inference.py --backend transformers --mode t2v --prompt '' --duration 5 --output prompt.json
+python rewriter/inference.py --backend transformers --mode t2v --prompt "" --duration 5 --output prompt.json
 ```
 
 ## 程式碼範例
 
 ```python
 {
-  "前置條件": "確保已安裝所有依賴並啟動虛擬環境。",
-  "指令": "python rewriter/inference.py --backend transformers --mode t2v --prompt '' --duration 5 --output prompt.json",
-  "預期輸出": "生成的視頻將根據提供的 JSON 標題進行推斷。"
+  "前置條件": "已安裝所需的依賴和模型",
+  "指令": "python rewriter/inference.py --backend transformers --mode t2v --prompt \"\" --duration 5 --output prompt.json",
+  "預期輸出": "生成的視頻將根據提供的 JSON 標題進行合成。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 19 天內累積 872 stars（46/天），forks 38（4.4%），這顯示出穩定的增長潛力。作者 Jiang Bonadia 在深度學習和視頻生成領域有豐富的經驗，之前的工作集中在提升視頻生成模型的性能。LingBot-Video 解決了以往視頻生成模型在具身智能應用中的不足，特別是在數據整合和推斷速度上。近期的技術報告和模型釋出也吸引了不少關注，社群對於其開源性質和性能表現充滿期待。這個專案的成功也反映了對於高效視頻生成技術需求的上升。
+> 建立 20 天就累積 881 stars（44/天），forks 39（4.4%），顯示出穩定的增長。該專案的主要貢獻者是 jiangbonadia，過去在視頻生成和機器學習領域有豐富的經驗。LingBot-Video 解決了傳統視頻生成模型在物理理解和效率上的痛點，這在以往的模型中並不常見。最近的技術報告和模型釋出吸引了不少關注，尤其是在 Hugging Face 和 ModelScope 平台上。這個專案的成功也反映了對於大規模 MoE 架構的需求上升，尤其是在 AI 和機器人領域。
 
 ## 適合誰使用
 
-**目標受眾**：對於具身智能和視頻生成技術有興趣的研究者和開發者。
+**目標受眾**：需要高效視頻生成解決方案的機器人開發者和 AI 研究人員。
 
 > [!example] 使用場景
-> - 機器人開發者用它來生成具身智能的操作視頻，因為它能夠在物理合理性和任務完成度上提供高質量的輸出。
-> - 學術研究者用它來探索視頻生成技術在機器學習中的應用，因為它提供了強大的 MoE 架構和大量的訓練數據。
-> - 遊戲開發者用它來創建動態的遊戲場景視頻，因為其高效的推斷速度能夠加速開發流程。
+> - 機器人開發者用它來生成高效的視頻合成，因為其 MoE 架構能提供更快的推理速度，適合實時應用。
+> - AI 研究人員用它來探索視頻生成的物理合理性，因為模型在多實體和人類互動的表現優於其他模型。
+> - 遊戲開發者用它來創建動態視頻內容，因為其支持的多任務特性能夠滿足不同的創作需求。
 
 ## 架構分析
 
-LingBot-Video 採用 MoE 架構，這使得模型在推斷時能夠動態選擇專家進行計算，從而提高效率。資料流方面，模型首先接收結構化的 JSON 標題，然後通過重寫器進行處理，最後生成視頻。這種設計的好處是能夠在保持高效能的同時，提供靈活的輸入格式。選擇 MoE 架構的代價在於需要更高的記憶體和計算資源，特別是在多 GPU 環境下。擴展性方面，該模型能夠處理大規模的數據集，但在推斷速度和記憶體使用上可能會遇到瓶頸，特別是在高負載的情況下。
+LingBot-Video 採用混合專家（MoE）架構，這使得模型能夠在推理時根據需求選擇不同的專家進行計算，從而提高效率。資料流方面，模型首先接收結構化的 JSON 標題，然後通過重寫器進行處理，最後生成視頻。這種設計使得模型能夠在不同的任務中靈活應用，但也要求使用者對 JSON 格式有一定的理解。選擇 MoE 架構的代價在於需要更高的計算資源，特別是在多 GPU 環境中。擴展性方面，隨著模型的增長，對系統內存的需求也會增加，這可能成為一個瓶頸。
 
 ## 技術深入分析
 
-LingBot-Video 的核心技術機制在於其 MoE 架構，這使得模型能夠根據不同的輸入動態選擇專家進行計算，從而提高推斷速度和效率。這種架構的設計模式使得模型在處理大規模數據時能夠保持高效能，並且能夠適應不同的任務需求。效能方面，模型能夠處理大量的視頻生成請求，但在高負載情況下可能會面臨記憶體瓶頸，特別是在多 GPU 環境下。選擇 PyTorch 作為主要框架的好處在於其強大的社群支持和豐富的生態系統，但這也意味著需要定期更新以保持與最新技術的兼容性。技術風險方面，隨著使用者數量的增加，可能會出現性能下降的問題，這需要持續的優化和維護。整合方面，LingBot-Video 與主流的深度學習框架（如 TensorFlow 和 PyTorch）兼容良好，並且能夠輕鬆集成到現有的 CI/CD pipeline 中，這對於團隊的採用和學習成本有正面的影響。
+LingBot-Video 的核心技術在於其混合專家（MoE）架構，這使得模型能夠根據不同的任務需求選擇合適的專家進行計算，從而提高推理效率。模型的設計考慮到了視頻生成的多樣性，支持文本到視頻（T2V）和文本到圖像到視頻（TI2V）等多種任務。效能方面，LingBot-Video 在 RBench 中的表現顯示出其在多實體和人類互動場景中的優勢，特別是在物理合理性和任務完成度上。選擇 Python 和 PyTorch 作為開發語言和框架，這使得模型能夠利用現有的深度學習生態系統，但也帶來了對於計算資源的高需求。技術風險方面，隨著模型的擴展，可能會出現系統內存不足的問題，這需要在部署時進行充分考慮。整合方面，LingBot-Video 能夠與主流的深度學習框架良好兼容，並且支持多 GPU 環境的推理，這對於需要高效計算的應用場景尤為重要。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝指導和使用範例，讓新手能夠順利上手。安裝過程相對順暢，但需要注意系統資源的配置。文件提供了中英文版本，對於不同語言的使用者都很友好。
+> README 文件清晰，提供了安裝和使用的具體指導；安裝過程相對順暢，但對於 JSON 標題格式的要求可能需要額外的學習；有提供多語言文檔，方便不同語言的使用者上手。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 高效的 MoE 架構，能夠實現快速推斷。
-> - 訓練於大量的具身數據，生成的視頻質量高。
-> - 開源性質，便於社群貢獻和改進。
+> - 高效的推理速度，適合實時應用。
+> - 開源社群支持，持續更新和改進。
+> - 多任務支持，靈活應用於不同場景。
 
 > [!danger] 缺點
-> - 需要大量的系統資源，特別是在多 GPU 環境下。
-> - 對於自然語言的支持有限，需使用結構化的 JSON 標題。
-> - 目前仍在快速發展中，可能存在不穩定的情況。
+> - 對於 JSON 標題格式有特定要求，學習曲線較陡。
+> - 需要較高的計算資源，對於小型團隊可能不友好。
+> - 仍在開發中，API 可能不穩定。
 
 > [!warning] 注意事項
-> - 需要大量的系統 RAM 以支持大型 MoE 檢查點的加載。
-> - 僅支持結構化的 JSON 標題，對於自然語言提示的支持有限。
-> - 多 GPU 推斷需要額外的配置以減少記憶體壓力。
+> - 需要 Python 3.10 以上版本。
+> - 對於 JSON 標題格式有特定要求，可能需要學習時間。
+> - 目前僅支援特定的 GPU 環境，對於資源有限的使用者可能不友好。
+> - 開發中，可能會有不穩定的 API 改變。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成遊戲角色動畫，LingBot-Video 更加專注於具身智能的視頻生成。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供視頻生成的基礎功能，但缺乏 LingBot-Video 的高效 MoE 架構和多獎勵系統。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成遊戲角色動畫，而 LingBot-Video 更加注重於物理世界的理解和視頻合成。 |
+| [2aronS/Duel-Agents](https://github.com/2aronS/Duel-Agents) | 提供多代理協作的視頻生成，而 LingBot-Video 在單一代理的視頻生成上有更好的性能。 |
 
 ## 替代方案決策
 
@@ -211,16 +212,16 @@ LingBot-Video 的核心技術機制在於其 MoE 架構，這使得模型能夠�
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於生成遊戲角色動畫，LingBot-Video 更加專注於具身智能的視頻生成。 | 如果你的項目專注於遊戲開發，且需要生成角色動畫，則可以考慮使用它。 | medium，因為需要調整輸入格式和模型架構。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供視頻生成的基礎功能，但缺乏 LingBot-Video 的高效 MoE 架構和多獎勵系統。 | 如果你的需求較為簡單，且不需要高效能的 MoE 架構，可以考慮使用它。 | low，因為其 API 和使用方式相對簡單。 |
+| Cosmos3 Super | 使用傳統的卷積神經網絡進行視頻生成，而 LingBot-Video 則採用 MoE 架構，能夠在推理上提供更高的效率。 | 如果你的項目對於視頻生成的速度要求不高，且需要較為成熟的解決方案，Cosmos3 Super 可能是更好的選擇。 | medium，因為需要重新調整模型架構和數據格式。 |
+| LongCat-Video | 專注於簡單的視頻合成任務，性能較弱，而 LingBot-Video 在多任務支持上具有優勢。 | 如果你的需求僅限於簡單的視頻合成，LongCat-Video 可能會更簡單易用。 | low，因為其 API 和數據格式較為簡單。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **lingbot-video** | **agent-sprite-forge** | **boneyard** |
+> | 維度 | **lingbot-video** | **Cosmos3 Super** | **LongCat-Video** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 專注於生成遊戲角色動畫，LingBot-Video 更加專注於具身智能的視頻生成。 | 提供視頻生成的基礎功能，但缺乏 LingBot-Video 的高效 MoE 架構和多獎勵系統。 |
-> | 遷移成本 | - | medium，因為需要調整輸入格式和模型架構。 | low，因為其 API 和使用方式相對簡單。 |
-> | 適用場景 | 主要場景 | 如果你的項目專注於遊戲開發，且需要生成角色動畫，則可以考慮使 | 如果你的需求較為簡單，且不需要高效能的 MoE 架構，可以考 |
+> | 技術路線 | 本專案 | 使用傳統的卷積神經網絡進行視頻生成，而 LingBot-Video 則採用 MoE 架構，能夠在推理上提供更高的效率。 | 專注於簡單的視頻合成任務，性能較弱，而 LingBot-Video 在多任務支持上具有優勢。 |
+> | 遷移成本 | - | medium，因為需要重新調整模型架構和數據格式。 | low，因為其 API 和數據格式較為簡單。 |
+> | 適用場景 | 主要場景 | 如果你的項目對於視頻生成的速度要求不高，且需要較為成熟的解決 | 如果你的需求僅限於簡單的視頻合成，LongCat-Video |
 
 ## 成熟度評估
 
@@ -231,27 +232,27 @@ LingBot-Video 的核心技術機制在於其 MoE 架構，這使得模型能夠�
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人試用和研究，但不建議用於生產環境的核心路徑上。
+> 適合個人研究和試用，但不建議用於生產環境的核心功能。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] 對於自然語言提示的支持有限，可能需要額外的處理步驟
-  - 解法：使用提供的重寫器將提示轉換為 JSON 格式
-- **[HIGH]** 多 GPU 推斷可能導致記憶體不足
-  - 解法：確保系統有足夠的 RAM，或使用單 GPU 模式
-- [MEDIUM] 安裝過程中可能會遇到依賴版本不兼容的問題
-  - 解法：確保使用推薦的依賴版本
+- [MEDIUM] 對於 JSON 標題格式的要求可能導致初學者困惑
+  - 解法：參考提供的文檔進行格式調整
+- **[HIGH]** 在多 GPU 環境下可能出現內存不足的問題
+  - 解法：確保系統有足夠的 RAM 來支持大模型
+- **[HIGH]** API 可能隨著開發進程而變動，導致不穩定性
+  - 解法：定期檢查更新和文檔以獲取最新信息
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型研究團隊進行視頻生成實驗 | 非常適合 | 具備強大的 MoE 架構和豐富的數據支持，能夠快速生成高質量視頻。 |
-| 大型企業開發具身智能應用 | 適合 | 雖然需要大量資源，但其高效能能夠支持大規模應用。 |
-| 個人開發者進行小型項目 | 普通 | 對於資源有限的情況，可能需要考慮其他輕量級選項。 |
-| 需要快速原型開發的創業團隊 | 不適合 | 高資源需求和不穩定性可能會影響開發進度。 |
+| 需要生成高效視頻的機器人開發團隊 | 非常適合 | 其 MoE 架構能夠提供快速的推理速度，滿足實時需求。 |
+| 小型團隊進行簡單的視頻合成 | 普通 | 雖然功能強大，但對於簡單任務可能過於複雜。 |
+| 大型 AI 研究機構進行視頻生成研究 | 非常適合 | 能夠支持多種任務，並且有豐富的數據支持。 |
+| 個人開發者進行視頻生成實驗 | 適合 | 開源且有活躍的社群支持，適合探索和學習。 |
 
 ## 採用成本分析
 
@@ -263,12 +264,18 @@ LingBot-Video 的核心技術機制在於其 MoE 架構，這使得模型能夠�
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習、20 小時整合，得到高效的視頻生成能力，值得投入。
+> 花 10 小時學習，20 小時整合，得到高效的視頻生成能力，值得探索。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限，且不存取敏感資料。依賴鏈的信任程度高，且無已知的供應鏈風險。
+> 低風險：該工具不需要高權限，且不存取敏感資料，使用時需注意依賴的庫是否有已知漏洞。
+
+## 生態系整合
+
+> [!abstract] 如何融入你的工具鏈
+
+LingBot-Video 最常與 PyTorch 和 Hugging Face 生態系統搭配使用，主要用於視頻生成的開發和研究。在一個使用 PyTorch 的項目中，可以通過安裝相應的依賴來輕鬆整合 LingBot-Video，具體做法是使用 pip 安裝所需的庫。該工具與 GitHub Actions 等 CI 工具兼容，能夠輕鬆集成到現有的開發流程中。最常見的整合問題是對於 JSON 標題格式的要求，這需要使用者提前做好準備。
 
 ## 健康度儀表板
 
@@ -333,7 +340,7 @@ LingBot-Video 的核心技術機制在於其 MoE 架構，這使得模型能夠�
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 38 |
+| Forks | 39 |
 | Open Issues | 10 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-07-10 |
@@ -361,7 +368,7 @@ LingBot-Video 的核心技術機制在於其 MoE 架構，這使得模型能夠�
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開放的問題數量顯示出使用者對於功能的需求。
+**社群活躍度**：社群活躍度中等，開放問題解決率低，需關注後續發展。
 **連結**：[文件](https://technology.robbyant.com/lingbot-video)
 
 ## 開發動態
@@ -562,9 +569,9 @@ LingBot-Video 的核心技術機制在於其 MoE 架構，這使得模型能夠�
 
 ## 延伸閱讀
 
-相關概念：[[視頻生成]] · [[具身智能]] · [[深度學習]]
+相關概念：[[視頻生成]] · [[混合專家模型]] · [[機器人控制]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[0xGF--boneyard|0xGF/boneyard]] · [[BigPizzaV3--CodexPlusPlus|BigPizzaV3/CodexPlusPlus]] · [[Lightricks--LTX-Desktop|Lightricks/LTX-Desktop]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[EvoLinkAI--awesome-gpt-image-2-prompts|EvoLinkAI/awesome-gpt-image-2-prompts]] · [[FlashML-org--flashlib|FlashML-org/flashlib]]
 
 [GitHub](https://github.com/Robbyant/lingbot-video) · [官方網站](https://technology.robbyant.com/lingbot-video)
 
@@ -606,7 +613,7 @@ LingBot-Video 的核心技術機制在於其 MoE 架構，這使得模型能夠�
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["視頻生成","具身智能","深度學習"];
+> const concepts = ["視頻生成","混合專家模型","機器人控制"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "Robbyant--lingbot-video" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
