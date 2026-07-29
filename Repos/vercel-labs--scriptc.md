@@ -7,12 +7,12 @@ language: TypeScript
 license: Apache-2.0
 description: "TypeScript-to-Native Compiler"
 homepage: "https://scriptc.dev"
-stars: 1825
-stars_per_day: 365
-forks: 33
-open_issues: 9
+stars: 2156
+stars_per_day: 359
+forks: 41
+open_issues: 25
 created: 2026-07-22
-pushed_at: 2026-07-28
+pushed_at: 2026-07-29
 first_seen: 2026-07-28
 week: "2026-W31"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "將 TypeScript 編譯成小而快速的原生可執行檔，無需 No
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-07-31"
+appearances: 2
+next_review: "2026-08-01"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 18
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-28"
-star_history: "2026-07-28:1825"
+star_history: "2026-07-28:1825,2026-07-29:2156"
 tags:
   - github
   - "category/開發工具"
@@ -432,7 +432,7 @@ scriptc 通常與 TypeScript 和 Node.js 一起使用，適合在開發階段進
 
 相關概念：[[編譯器]] · [[原生應用]] · [[TypeScript]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]]
+相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[432539--gpt2api|432539/gpt2api]] · [[AgentSeal--codeburn|AgentSeal/codeburn]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[AlephAITech--WorkBuddyGuide|AlephAITech/WorkBuddyGuide]]
 
 [GitHub](https://github.com/vercel-labs/scriptc) · [官方網站](https://scriptc.dev)
 
@@ -728,4 +728,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-29|2026-07-29]] — 再次上榜，2.2k stars
 - [[2026-07-28|2026-07-28]] — 首次收錄，1.8k stars
