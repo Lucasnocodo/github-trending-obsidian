@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "MoonEP: A Perfectly Balanced Expert Parallelism Library via Dynamic Redundant Experts"
 homepage: ""
-stars: 807
-stars_per_day: 202
-forks: 80
-open_issues: 14
+stars: 868
+stars_per_day: 174
+forks: 89
+open_issues: 16
 created: 2026-07-24
 pushed_at: 2026-07-28
 first_seen: 2026-07-29
@@ -30,10 +30,10 @@ use_case: "透過動態冗餘專家實現完美平衡的專家並行庫。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-01"
+appearances: 2
+next_review: "2026-08-06"
 contributor_count: 2
-engagement: "low"
+engagement: "medium"
 issue_close_rate: 0
 repo_size_kb: 525
 readme_length: 9886
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-29"
-star_history: "2026-07-29:806,2026-07-29:807"
+star_history: "2026-07-29:806,2026-07-29:807,2026-07-30:868"
 tags:
   - github
   - "category/ai_ml"
@@ -810,4 +810,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-30|2026-07-30]] — 再次上榜，868 stars
 - [[2026-07-29|2026-07-29]] — 首次收錄，806 stars

@@ -7,10 +7,10 @@ language: N/A
 license: NOASSERTION
 description: "Open Frontier Intelligence"
 homepage: ""
-stars: 3593
-stars_per_day: 3593
-forks: 295
-open_issues: 10
+stars: 6201
+stars_per_day: 3101
+forks: 436
+open_issues: 13
 created: 2026-07-27
 pushed_at: 2026-07-28
 first_seen: 2026-07-28
@@ -30,8 +30,8 @@ use_case: "提供強大的多模態智能模型，專注於長期編碼和知識
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-01"
+appearances: 3
+next_review: "2026-08-02"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 17
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-28"
-star_history: "2026-07-28:1993,2026-07-28:2041,2026-07-29:3586,2026-07-29:3593"
+star_history: "2026-07-28:1993,2026-07-28:2041,2026-07-29:3586,2026-07-29:3593,2026-07-30:6201"
 tags:
   - github
   - "category/ai_ml"
@@ -812,5 +812,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-30|2026-07-30]] — 再次上榜，6.2k stars
 - [[2026-07-29|2026-07-29]] — 再次上榜，3.6k stars
 - [[2026-07-28|2026-07-28]] — 首次收錄，2.0k stars

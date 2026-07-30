@@ -7,12 +7,12 @@ language: Rust
 license: MIT
 description: "AgentENV (AENV) is a distributed platform for running agent environments at scale."
 homepage: ""
-stars: 1482
-stars_per_day: 247
-forks: 130
-open_issues: 36
+stars: 2243
+stars_per_day: 320
+forks: 176
+open_issues: 52
 created: 2026-07-23
-pushed_at: 2026-07-29
+pushed_at: 2026-07-30
 first_seen: 2026-07-28
 week: "2026-W31"
 month: "2026-07"
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-28
 use_case: "提供一個可擴展的分散式平台來運行代理環境，專為強化學習訓練設計。"
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-01"
+appearances: 3
+next_review: "2026-08-02"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-28"
-star_history: "2026-07-28:905,2026-07-29:1482"
+star_history: "2026-07-28:905,2026-07-29:1482,2026-07-30:2243"
 tags:
   - github
   - "category/基礎設施"
@@ -805,5 +805,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-30|2026-07-30]] — 再次上榜，2.2k stars
 - [[2026-07-29|2026-07-29]] — 再次上榜，1.5k stars
 - [[2026-07-28|2026-07-28]] — 首次收錄，905 stars
