@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-28
-use_case: "為 AI 代理提供永久記憶，讓記憶管理變得簡單且高效。"
+use_case: "為 AI 代理提供永久記憶，簡單易用的記錄與檢索工具。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
@@ -34,15 +34,15 @@ appearances: 3
 next_review: "2026-08-02"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: -1
+issue_close_rate: 0
 repo_size_kb: 11249
-readme_length: 3535
+readme_length: 3533
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-28"
-star_history: "2026-07-28:661,2026-07-28:661,2026-07-29:816,2026-07-29:817,2026-07-30:884"
+star_history: "2026-07-28:661,2026-07-28:661,2026-07-29:816,2026-07-29:817,2026-07-30:884,2026-07-30:884"
 tags:
   - github
   - "category/開發工具"
@@ -51,12 +51,12 @@ tags:
 aliases:
   - "OptMem"
   - "VictorTaelin/OptMem"
-  - "為 AI 代理提供永久記憶，讓記憶管理變得簡單且高效。"
+  - "為 AI 代理提供永久記憶，簡單易用的記錄與檢索工具。"
 ---
 
 # OptMem
 
-**817** stars · **272** stars/天 · 建立 3 天前 · Python · 未標註授權
+**884** stars · **221** stars/天 · 建立 4 天前 · Python · 未標註授權
 
 ```dataviewjs
 const me = dv.page("Repos/VictorTaelin--OptMem");
@@ -72,13 +72,13 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案` `easy-install`
 
 > [!summary] 一句話摘要
-> 為 AI 代理提供永久記憶，讓記憶管理變得簡單且高效。
+> 為 AI 代理提供永久記憶，簡單易用的記錄與檢索工具。
 
 > [!info] 速覽
-> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (272 stars/day)
-> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 1 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
-> **適合** 需要在 AI 代理中實現永久記憶管理的獨立開發者或小型團隊。
-> **一句話重點** OptMem 的設計讓 AI 代理能夠持久記憶，並且簡化了記憶的管理流程。
+> **安裝難度** Easy · **專案狀態** Brand New · **熱度** Hot (221 stars/day)
+> **授權** 未標註授權 (風險較高) · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Low
+> **適合** 需要為 AI 代理提供持久記憶功能的開發者，尤其是希望簡化記憶管理的團隊。
+> **一句話重點** OptMem 的設計理念讓 AI 代理能夠持久記憶，從而提升智能和適應性。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
@@ -101,27 +101,27 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
-> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** low
-> **結論** 花 2 小時學習，1 小時整合，得到高效的記憶管理，值得一試。
+> **成熟度** Alpha (不穩定) · **安裝** Easy (一行搞定) · **學習** ~2h · **綁定風險** medium
+> **結論** 花 2 小時學、1 小時整合，得到持久記憶的功能，值得一試。
 
 > [!abstract] 核心創新
-> OptMem 提供了一種簡單而高效的方式來管理 AI 代理的永久記憶，無需複雜的配置。
+> OptMem 提供了一種簡單而高效的方式來為 AI 代理實現永久記憶，無需複雜的依賴和配置。
 
 ## 專案簡介
 
-OptMem 是一個為 AI 代理提供永久記憶的工具，旨在解決記憶管理的繁瑣問題。使用者只需透過 `memo` 命令來記錄和檢索記憶，命令包括 `memo note` 用於記錄新記憶，`memo recall` 用於檢索過去的記憶，這些記憶會以固定寬度的格式存儲，確保查詢效率。設計上，OptMem 的記憶是以樹狀結構組織，這樣可以快速查找和合併記憶，並且每次記錄都不會影響到過去的記憶，這樣的設計使得記憶的管理變得簡單且高效。這個工具的賣點在於其簡單的安裝和使用，使用者只需將安裝生成的提示塊粘貼到代理的文檔中即可開始使用。技術上，OptMem 是用 Python 實現的，並且不依賴其他庫，這使得它的安裝和運行非常輕量。
+OptMem 是一個專為 AI 代理設計的永久記憶工具，通過簡單的命令行介面，讓用戶能夠輕鬆記錄和檢索記憶。用戶只需在每次會話開始時執行 `memo wake`，然後使用 `memo note` 記錄重要信息，這樣就能在後續會話中隨時回顧。這種設計使得 AI 代理能夠持續學習並記住過去的經驗，從而提高其智能和適應性。OptMem 的一大賣點是其無需複雜的依賴，僅需一個 Python 腳本即可運行，並且所有記憶都以 append-only 的方式存儲，確保數據的完整性和可靠性。
 
-與其他記憶管理工具相比，OptMem 的記憶檢索速度非常快，`wake` 命令在處理一百萬條記憶時僅需 0.03 秒，這在實際應用中能顯著提高效率。相較於其他工具如 `claude-obsidian` 和 `memory-os`，OptMem 提供了更簡單的命令行介面和更高的查詢效率。使用者在記錄和檢索記憶時不需要擔心背景執行或複雜的配置，這使得它特別適合需要快速記憶管理的場景。儘管目前社群活躍度尚可，但由於開源專案的特性，未來的發展潛力仍然可觀。對於小型團隊或個人開發者來說，OptMem 是一個值得考慮的選擇，特別是在需要持續記錄和檢索記憶的應用中。
+用戶可以透過 `memo recall` 命令快速檢索過去的記憶，支持高達 280 字元的單行記錄，並且能夠在記憶數量達到一百萬時，仍能保持 0.03 秒的快速響應。這樣的設計不僅提高了使用效率，也讓記憶的管理變得簡單明瞭。相較於其他記憶管理工具，OptMem 的固定寬度記錄方式使得每次查找都能迅速定位，這在處理大量記憶時尤為重要。這種高效的記憶管理方式使得 OptMem 在需要長期記憶的 AI 應用中表現出色。
 
 **技術棧**：`Python 3`
 
 ## 重點功能
 
-- 永久記憶管理 — 使用 `memo note` 記錄新記憶，並以樹狀結構組織，方便檢索。
-- 快速檢索 — `memo recall` 命令能夠快速檢索過去的記憶，處理一百萬條記憶僅需 0.03 秒。
-- 簡單安裝 — 透過一行命令安裝，並將生成的提示塊粘貼到代理文檔中即可使用。
-- 無依賴運行 — 完全用 Python 實現，無需其他庫，輕量且易於部署。
-- 自定義配置 — 使用 `memo config` 調整記憶的顯示行數，靈活適應不同需求。
+- 永久記憶 — 透過 `memo note` 命令記錄重要信息，支持每條記錄最多 280 字元。
+- 快速檢索 — 使用 `memo recall` 命令可快速查找過去的記憶，響應時間低於 0.03 秒。
+- 簡單安裝 — 只需執行一行命令即可安裝，無需複雜的依賴。
+- 記憶結構 — 記憶以 append-only 方式存儲，確保數據的完整性，且不會被編輯。
+- 配置靈活 — 可通過 `memo config` 命令調整記憶的顯示行數，靈活適應不同需求。
 
 ## 快速開始
 
@@ -129,85 +129,76 @@ OptMem 是一個為 AI 代理提供永久記憶的工具，旨在解決記憶管
 ```bash
 curl -fsSL https://raw.githubusercontent.com/VictorTaelin/OptMem/main/install.sh | sh
 ```
-2. 將生成的提示塊粘貼到代理文檔中
-```bash
-# 在 AGENTS.md 或 CLAUDE.md 中粘貼生成的提示
-```
-3. 啟動記憶管理
+2. 啟動記憶系統
 ```bash
 memo wake
+```
+3. 記錄新記憶
+```bash
+memo note "你的記錄內容"
 ```
 
 ## 程式碼範例
 
 ```python
-# 前置條件
-# 安裝完成後，執行以下命令
-memo wake
-# 預期輸出
-# Memory
-Your memory is OptMem:
-- The tool is `~/.optmem/memo`
-- Your memories are in `~/.optmem/memory`
+{
+  "前置條件": "已安裝 OptMem 並配置好環境變數。",
+  "指令": "memo note \"這是一條新的記憶\"",
+  "預期輸出": "記憶已成功記錄。"
+}
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 3 天就累積 817 stars（272/天），forks 48（5.9%），這顯示出一定的關注度。作者 VictorTaelin 在 AI 代理領域有一定的經驗，這個專案解決了記憶管理的痛點，讓 AI 代理能夠持久記憶，避免重複學習。雖然目前沒有明確的觸發事件，但其簡單易用的特性吸引了不少開發者的目光。技術上，這個工具的設計符合現代 AI 應用的需求，特別是在記憶管理方面的創新使其具備了相對優勢。forks/stars 比率為 5.9%，顯示出有一定的使用者在進行修改或實驗。
+> 建立 4 天內累積 884 stars（221/天），forks 53（6.0%），顯示出穩定的增長趨勢。作者 VictorTaelin 在 AI 領域有一定的背景，這個工具解決了 AI 代理在多次會話中無法持久記憶的痛點，之前的解決方案往往需要複雜的資料庫或雲端服務。這個工具的簡單性和易用性吸引了開發者的注意，尤其是在社群中有關於 AI 記憶管理的討論增多。技術上，OptMem 的設計理念使得它能夠輕鬆整合到現有的 AI 系統中，這是其受歡迎的原因之一。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 AI 代理中實現永久記憶管理的獨立開發者或小型團隊。
+**目標受眾**：需要為 AI 代理提供持久記憶功能的開發者，尤其是希望簡化記憶管理的團隊。
 
 > [!example] 使用場景
-> - AI 研究者用它來記錄實驗結果，以便在不同的實驗中快速檢索之前的結果，因為它能夠在每次啟動時自動加載記憶，節省了重複學習的時間。
-> - 獨立開發者用它來管理 AI 代理的對話記憶，因為其簡單的命令行介面讓記憶的記錄和檢索變得高效且無縫。
-> - 小型團隊用它來協作開發 AI 代理，因為每個團隊成員都能輕鬆地記錄和共享記憶，避免了信息的丟失和重複工作。
+> - AI 開發者用它來為聊天機器人持久記錄用戶偏好，因為這樣可以在每次對話中提供更個性化的回應。
+> - 研究人員用它來記錄實驗數據和觀察結果，因為這樣能夠在後續分析中快速回顧過去的實驗細節。
+> - 產品經理用它來跟蹤用戶反饋和需求變化，因為這樣可以在產品迭代中更好地滿足用戶需求。
 
 ## 架構分析
 
-OptMem 採用單一 Python 腳本的架構，這樣的設計使得安裝和運行都非常輕量，適合快速部署。記憶以固定寬度的格式存儲，這樣可以在查詢時快速定位，避免了傳統資料庫的查詢延遲。每次記錄的記憶都會被追加到日誌中，並且不會被修改，這樣的設計確保了記憶的完整性。
-
-樹狀結構的設計使得記憶的檢索和合併變得高效，能夠快速找到所需的記憶。這種設計的代價在於，對於需要複雜查詢的應用場景，可能不如傳統資料庫靈活。整體而言，這種架構適合需要快速記憶檢索的應用，但在擴展性上可能會受到限制。
+OptMem 的架構基於一個單一的 Python 腳本，這樣的設計使得安裝和使用都非常簡單。所有記憶都以 append-only 的方式存儲在本地，確保數據的完整性。每次記憶的查詢都是基於固定寬度的記錄，這意味著查詢性能非常高，尤其在記憶數量達到一百萬時，仍能保持 0.03 秒的響應時間。這種設計選擇使得 OptMem 在需要快速記憶檢索的場景中表現出色，但也意味著在記憶數量過多時，可能會面臨性能瓶頸。整體而言，這種架構適合單一用戶的記憶管理需求，但在多用戶環境中可能不夠靈活。
 
 ## 技術深入分析
 
-OptMem 的核心技術機制是基於固定寬度的記憶存儲，這樣的設計使得每次查詢都能夠快速定位到所需記憶，避免了傳統資料庫的查詢延遲。每條記憶的記錄都是追加到日誌中，這樣的設計確保了記憶的完整性和不可變性，使用者無法隨意修改已記錄的內容。這種設計使得記憶的檢索和合併變得高效，能夠快速找到所需的記憶。從效能上來看，OptMem 能夠處理大量記憶，並且在檢索時的延遲非常低，這對於需要快速反應的 AI 代理來說至關重要。
-
-選擇 Python 作為開發語言的原因在於其簡單性和廣泛的應用範圍，這使得 OptMem 能夠輕鬆整合進現有的 AI 系統中。依賴樹的複雜度較低，因為它僅依賴於 Python 標準庫，這降低了維護成本。技術風險方面，隨著記憶數量的增加，可能會出現性能瓶頸，特別是在記憶檢索時。此外，對於外部 API 的依賴程度較低，這使得 OptMem 在安全性上具有一定的優勢。
-
-整合到現有的技術生態中也相對簡單，因為它不需要額外的配置，使用者只需將其命令行工具集成到現有的工作流中即可。
+OptMem 的核心技術在於其簡單而高效的記憶管理系統，使用固定寬度的記錄格式來確保快速查詢。每次記憶的寫入都是 append-only，這樣的設計不僅保證了數據的完整性，還能避免因編輯而導致的數據錯誤。效能方面，當記憶數量達到一百萬時，查詢速度仍能保持在 0.03 秒，這在實際應用中非常重要。選擇使用 Python 3 作為開發語言，使得 OptMem 在安裝和使用上都非常簡單，但這也限制了其在其他語言環境中的應用。整體而言，OptMem 的設計考量了用戶的使用便捷性和記憶的高效管理，但在多用戶環境中可能會面臨挑戰。對於需要長期記憶的 AI 應用，OptMem 提供了一個理想的解決方案。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和使用指令，讓新手能夠快速上手。安裝過程順暢，僅需一行命令即可完成。文件中有詳細的使用說明和範例，幫助使用者理解如何記錄和檢索記憶。文件目前僅提供英文版本，可能對非英語使用者造成一定的障礙。
+> README 文件清晰且包含安裝指令，適合新手快速上手。安裝過程順暢，無需額外配置。文件中提供了基本的使用範例，對於初學者友好。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 安裝簡單，僅需一行命令即可完成安裝。
-> - 記憶檢索速度快，能夠處理大量記憶而不影響性能。
-> - 無需依賴其他庫，輕量且易於維護。
+> - 安裝簡單，僅需一行命令即可完成。
+> - 記憶檢索速度快，適合需要快速反應的應用場景。
+> - 無需複雜的依賴，便於整合到現有系統中。
 
 > [!danger] 缺點
-> - 目前僅支援 Linux 和 macOS，Windows 用戶需額外配置。
-> - 不支援多用戶同時寫入，可能導致記憶重複或錯誤。
-> - 對於需要複雜查詢的應用場景，靈活性不足。
+> - 不支援多用戶環境，限制了使用場景。
+> - 記憶數量過多可能影響性能，需謹慎管理。
+> - 僅支援 Python 3，對於其他語言的開發者不友好。
 
 > [!warning] 注意事項
-> - 目前僅支援 Linux 和 macOS，Windows 用戶需額外配置。
-> - 記憶的數量和大小受到 `WAKE_LINES` 的限制，需根據實際需求調整。
-> - 不支援多用戶同時寫入，可能導致記憶重複或錯誤。
+> - 僅支援 Python 3，需確保環境相容性。
+> - 不支援多用戶環境，設計上僅適合單一用戶使用。
+> - 記憶數量過多可能影響性能，雖然查詢速度仍然很快。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的記憶管理功能，但依賴於更複雜的後端服務，適合需要高可擴展性的應用。 |
-| [ClaudioDrews/memory-os](https://github.com/ClaudioDrews/memory-os) | 這個工具提供了更豐富的記憶管理功能，但安裝和配置過程相對繁瑣，適合大型團隊使用。 |
-| [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 專注於記憶的可視化管理，適合需要圖形化界面的用戶，但對於命令行用戶來說不夠友好。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供更複雜的記憶管理功能，但需要更多的配置和依賴。 |
+| [ClaudioDrews/memory-os](https://github.com/ClaudioDrews/memory-os) | 專注於操作系統層級的記憶管理，適合需要深度整合的場景。 |
+| [DenisSergeevitch/agents-best-practices](https://github.com/DenisSergeevitch/agents-best-practices) | 提供最佳實踐指南，適合想要優化 AI 代理的開發者，但不具備記憶功能。 |
 
 ## 替代方案決策
 
@@ -215,16 +206,16 @@ OptMem 的核心技術機制是基於固定寬度的記憶存儲，這樣的設�
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供類似的記憶管理功能，但依賴於更複雜的後端服務，適合需要高可擴展性的應用。 | 如果你的應用需要處理大量記憶並且需要高可擴展性，boneyard 可能是更好的選擇。 | medium，因為需要重新設計記憶存儲的結構。 |
-| [ClaudioDrews/memory-os](https://github.com/ClaudioDrews/memory-os) | 這個工具提供了更豐富的記憶管理功能，但安裝和配置過程相對繁瑣，適合大型團隊使用。 | 如果你的團隊需要更複雜的記憶管理功能，memory-os 可能更合適。 | high，因為需要重新設計記憶的管理流程。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供更複雜的記憶管理功能，但需要更多的配置和依賴。 | 如果你的團隊需要更高級的記憶管理功能，且不介意額外的配置工作。 | medium，因為需要重新設置記憶管理的架構。 |
+| [ClaudioDrews/memory-os](https://github.com/ClaudioDrews/memory-os) | 專注於操作系統層級的記憶管理，適合需要深度整合的場景。 | 如果你的應用需要與操作系統深度集成，並且需要更高的性能。 | high，因為需要重構現有的記憶管理邏輯。 |
 
 > [!abstract]- 功能對比矩陣
 >
-> | 維度 | **OptMem** | **boneyard** | **memory-os** |
+> | 維度 | **OptMem** | **agent-sprite-forge** | **memory-os** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供類似的記憶管理功能，但依賴於更複雜的後端服務，適合需要高可擴展性的應用。 | 這個工具提供了更豐富的記憶管理功能，但安裝和配置過程相對繁瑣，適合大型團隊使用。 |
-> | 遷移成本 | - | medium，因為需要重新設計記憶存儲的結構。 | high，因為需要重新設計記憶的管理流程。 |
-> | 適用場景 | 主要場景 | 如果你的應用需要處理大量記憶並且需要高可擴展性，boneya | 如果你的團隊需要更複雜的記憶管理功能，memory-os 可 |
+> | 技術路線 | 本專案 | 提供更複雜的記憶管理功能，但需要更多的配置和依賴。 | 專注於操作系統層級的記憶管理，適合需要深度整合的場景。 |
+> | 遷移成本 | - | medium，因為需要重新設置記憶管理的架構。 | high，因為需要重構現有的記憶管理邏輯。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要更高級的記憶管理功能，且不介意額外的配置工作 | 如果你的應用需要與操作系統深度集成，並且需要更高的性能。 |
 
 ## 成熟度評估
 
@@ -235,26 +226,24 @@ OptMem 的核心技術機制是基於固定寬度的記憶存儲，這樣的設�
 | Breaking Change 風險 | high |
 
 > [!tip] 採用建議
-> 適合個人 side project 試用，不建議用在生產環境的核心路徑上
+> 適合個人或小型專案試用，但不建議在生產環境中使用。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- [MEDIUM] Windows 用戶可能需要額外配置才能使用，安裝過程不夠直觀。
-  - 解法：參考社群提供的解決方案或使用 WSL。
-- **[HIGH]** 在記錄大量記憶時，可能會出現性能瓶頸。
-  - 解法：定期清理不必要的記憶以保持性能。
-- [MEDIUM] 不支援多用戶同時寫入，可能導致記憶重複。
-  - 解法：確保每個用戶在不同的會話中使用。
+- [MEDIUM] 在記錄大量記憶時，可能會導致性能下降。
+  - 解法：定期清理不必要的記憶。
+- **[HIGH]** 不支援多用戶環境，可能導致數據衝突。
+  - 解法：在單用戶環境中使用，避免多個用戶同時操作。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 小型團隊的 AI 代理開發 | 非常適合 | 簡單的命令行介面和快速的記憶檢索非常符合小型團隊的需求。 |
-| 大型企業的 AI 代理系統 | 不適合 | 對於需要高可擴展性和複雜查詢的應用場景，OptMem 的靈活性不足。 |
-| 個人開發者的 AI 實驗 | 適合 | 安裝簡單且無需依賴其他庫，適合快速試驗和開發。 |
+| 小型團隊的 AI 代理開發 | 非常適合 | 簡單的安裝和使用流程，適合快速開發。 |
+| 需要持久記憶的個人專案 | 適合 | 能夠有效管理記憶，提升 AI 代理的智能。 |
+| 大型企業的多用戶環境 | 不適合 | 不支援多用戶操作，可能導致數據衝突。 |
 
 ## 採用成本分析
 
@@ -263,15 +252,15 @@ OptMem 的核心技術機制是基於固定寬度的記憶存儲，這樣的設�
 | 學習時間 | ~2 小時 |
 | 整合時間 | ~1 小時 |
 | 維護負擔 | low |
-| 綁定風險 | low |
+| 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 2 小時學習，1 小時整合，得到高效的記憶管理，值得一試。
+> 花 2 小時學、1 小時整合，得到持久記憶的功能，值得一試。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：OptMem 本身不需要高權限運行，且不存取敏感資料，適合在 CI/CD 環境中使用。
+> 低風險：OptMem 不需要高權限運行，且不存取敏感資料。依賴鏈簡單，無已知的供應鏈風險，適合在 CI/CD 中使用。
 
 ## 健康度儀表板
 
@@ -336,9 +325,10 @@ OptMem 的核心技術機制是基於固定寬度的記憶存儲，這樣的設�
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 48 |
-| Open Issues | 0 |
-| 最後推送 | 2026-07-27 |
+| Forks | 53 |
+| Open Issues | 1 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-07-29 |
 | 建立日期 | 2026-07-25 |
 | Repo 大小 | 11.0 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/VictorTaelin/OptMem) |
@@ -347,7 +337,7 @@ OptMem 的核心技術機制是基於固定寬度的記憶存儲，這樣的設�
 > ```mermaid
 > pie title 語言組成
 >     "Python" : 63
->     "JavaScript" : 34
+>     "JavaScript" : 33
 >     "HTML" : 3
 >     "Shell" : 1
 > ```
@@ -355,17 +345,16 @@ OptMem 的核心技術機制是基於固定寬度的記憶存儲，這樣的設�
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@VictorTaelin](https://github.com/VictorTaelin) | 38 |
+> | [@VictorTaelin](https://github.com/VictorTaelin) | 39 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，近期有合併請求和更新。
-**連結**：[文件](https://github.com/VictorTaelin/OptMem)
+**社群活躍度**：社群活躍度中等，開發者有定期更新。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-26 ~ 2026-07-27）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #2 from rarf/windows-native-support
+> [!abstract] 最近 10 次 commit（2026-07-26 ~ 2026-07-29）
+> **活躍天數** 3 天 · **最新 commit** the memory context halves: 96 lines, ~8k tokens, 2 parts
 
 ## README 摘錄
 
@@ -413,7 +402,7 @@ OptMem 的核心技術機制是基於固定寬度的記憶存儲，這樣的設�
 > 
 > ```sh
 > memo config                  # show the sizes
-> memo config WAKE_LINES=300   # how many lines wake prints (208 ≈ 16k tokens)
+> memo config WAKE_LINES=300   # how many lines wake prints (96 ≈ 8k tokens)
 > memo config WAKE_LINES=      # back to the default
 > ```
 > 
@@ -477,9 +466,9 @@ OptMem 的核心技術機制是基於固定寬度的記憶存儲，這樣的設�
 
 ## 延伸閱讀
 
-相關概念：[[記憶管理]] · [[AI 代理]] · [[命令行工具]]
+相關概念：[[記憶管理]] · [[AI 代理]] · [[持久化存儲]]
 
-相關專案：[[0xGF--boneyard|0xGF/boneyard]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[raiyanyahya--recall|raiyanyahya/recall]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[ClaudioDrews--memory-os|ClaudioDrews/memory-os]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[0xGF--boneyard|0xGF/boneyard]] · [[AgriciDaniel--claude-obsidian|AgriciDaniel/claude-obsidian]] · [[Einsia--OpenChronicle|Einsia/OpenChronicle]] · [[raiyanyahya--recall|raiyanyahya/recall]] · [[0xSero--codex-shim|0xSero/codex-shim]]
 
 [GitHub](https://github.com/VictorTaelin/OptMem)
 
@@ -521,7 +510,7 @@ OptMem 的核心技術機制是基於固定寬度的記憶存儲，這樣的設�
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["記憶管理","AI 代理","命令行工具"];
+> const concepts = ["記憶管理","AI 代理","持久化存儲"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "VictorTaelin--OptMem" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

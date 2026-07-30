@@ -7,17 +7,17 @@ language: Python
 license: MIT
 description: ""
 homepage: ""
-stars: 7051
-stars_per_day: 1007
-forks: 951
-open_issues: 193
+stars: 10696
+stars_per_day: 1070
+forks: 1408
+open_issues: 300
 created: 2026-07-20
-pushed_at: 2026-07-25
+pushed_at: 2026-07-28
 first_seen: 2026-07-24
 week: "2026-W30"
 month: "2026-07"
 category: "生產力"
-subcategory: "AI 助手"
+subcategory: "自動化"
 release_tag: "v0.1.6"
 install_complexity: "medium"
 status: to-review
@@ -26,23 +26,23 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-24
-use_case: "提供一個開源的 AI 助手平台，能夠在桌面上自動完成日常任務。"
+use_case: "提供一個開源的 AI 助手，能在桌面上自動完成各種任務，並生成實際的工作成果。"
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 4
 next_review: "2026-07-30"
-contributor_count: 3
+contributor_count: 4
 engagement: "medium"
-issue_close_rate: 2
-repo_size_kb: 1619
-readme_length: 6698
+issue_close_rate: 4
+repo_size_kb: 1172
+readme_length: 6978
 bus_factor: 1
-last_release_days: 1
+last_release_days: 7
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-07-24"
-star_history: "2026-07-24:1686,2026-07-25:3538,2026-07-26:5217,2026-07-27:7051"
+star_history: "2026-07-24:1686,2026-07-25:3538,2026-07-26:5217,2026-07-27:7051,2026-07-30:10696"
 tags:
   - github
   - "category/生產力"
@@ -50,12 +50,12 @@ tags:
 aliases:
   - "openworker"
   - "andrewyng/openworker"
-  - "提供一個開源的 AI 助手平台，能夠在桌面上自動完成日常任務。"
+  - "提供一個開源的 AI 助手，能在桌面上自動完成各種任務，並生成實際的工作成果。"
 ---
 
 # openworker
 
-**1.7k** stars · **422** stars/天 · 建立 4 天前 · Python · MIT
+**10.7k** stars · **1.1k** stars/天 · 建立 10 天前 · Python · MIT
 
 ```dataviewjs
 const me = dv.page("Repos/andrewyng--openworker");
@@ -71,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `v0.1.6`
 
 > [!summary] 一句話摘要
-> 提供一個開源的 AI 助手平台，能夠在桌面上自動完成日常任務。
+> 提供一個開源的 AI 助手，能在桌面上自動完成各種任務，並生成實際的工作成果。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Brand New · **熱度** Hot (422 stars/day)
-> **授權** MIT (商業友好) · **維護** Active (最後推送 0 天前) · **貢獻者** 3 人 · **參與度** Medium
-> **適合** 需要一個能在桌面上自動完成日常任務的獨立開發者或業務專業人士。
-> **一句話重點** OpenWorker 的本地執行特性使其在隱私和安全性上具備優勢，適合需要保護數據的用戶。
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Viral (1.1k stars/day)
+> **授權** MIT (商業友好) · **維護** Active (最後推送 1 天前) · **貢獻者** 4+ 人 · **參與度** Medium
+> **適合** 需要一個能在桌面上自動完成任務並生成實際成果的獨立工作者或小型團隊。
+> **一句話重點** OpenWorker 的最大優勢在於它能在本地運行並生成實際成果，這在目前的 AI 助手市場中是相對少見的。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/andrewyng--openworker");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "AI 助手" && p.file.name !== "andrewyng--openworker" && p.status !== "archived")
+>     .where(p => p.subcategory === "自動化" && p.file.name !== "andrewyng--openworker" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -95,110 +95,103 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 AI 助手 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 自動化 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~5h · **綁定風險** low
-> **結論** 花 5 小時學習，8 小時整合，得到高效的日常任務自動化，值得投入。
+> **結論** 花 5 小時學習，8 小時整合，得到自動化日常任務的效果，值得考慮。
 
 > [!abstract] 核心創新
-> OpenWorker 提供了一個本地執行的 AI 助手，能夠自動完成日常任務，並支持多種模型提供者。
+> 提供一個不鎖定於特定模型的開源 AI 助手，能在本地運行並生成實際成果。
 
 ## 專案簡介
 
-OpenWorker 是一個開源的 AI 助手，旨在幫助用戶自動完成日常任務，像是撰寫文件、更新日曆或回覆 Slack 訊息。用戶只需告訴 OpenWorker 期望的結果，例如「準備客戶簡報」，它會將任務分解為多個步驟，並在桌面、文件及連接的應用程式中執行。在進行任何重要操作之前，OpenWorker 會先確認用戶的批准，確保不會意外執行不必要的動作。這樣的設計使得用戶最終獲得的是完成的交付物，而非待辦事項清單。該工具支持多達 25 種以上的應用整合，包括 Slack、Jira、Notion 等，並且能夠根據用戶的需求選擇模型提供者，無論是 OpenAI、Anthropic 還是本地模型如 Ollama。
+OpenWorker 是一個開源的 AI 助手，旨在幫助用戶自動完成日常任務。用戶只需告訴 OpenWorker 想要的結果，例如「準備客戶簡報」或「整理日曆」，它會將任務分解為步驟，並在桌面、檔案和連接的應用程式中執行。這個過程中，OpenWorker 會在發送訊息或更改日曆之前確認用戶的批准，最終提供實際的交付成果，而不僅僅是待辦事項清單。這種設計使得用戶能夠專注於更高層次的工作，而不是繁瑣的操作。核心技術包括 Python 和 FastAPI，並利用 aisuite 作為底層架構，這使得它能夠靈活地與多種 API 進行整合。OpenWorker 支持 25 種以上的工具整合，包括 Slack、Jira 和 Google Calendar，並且可以使用用戶自己的 API 金鑰，這樣用戶的數據不會隨意外流出。
 
-這種靈活性使得 OpenWorker 不會鎖定於任何特定的模型，並確保用戶的數據安全性，因為所有操作都在本地進行。其核心架構基於 aisuite，這是一個輕量級的 Python 庫，提供統一的聊天完成 API 和工具支持。這樣的設計選擇使得 OpenWorker 在功能上具備高度的可擴展性和靈活性。與其他類似工具相比，OpenWorker 的最大優勢在於其本地執行的特性，這意味著用戶的數據不會被上傳至雲端，從而提高了隱私性和安全性。
+與其他 AI 助手相比，如 ChatGPT 或 Claude，OpenWorker 提供了更強的本地化處理能力，並且不會鎖定用戶於特定的模型或服務。這使得它在需要高度定制化和數據隱私的場景中更具優勢。實際使用中，OpenWorker 的效能取決於用戶的硬體配置和所選的模型，對於需要處理大量數據的用戶來說，可能需要更高的資源配置。這個專案目前處於開放測試階段，社群活躍度高，並且有持續的更新和改進。對於小型團隊或個人用戶來說，這是一個值得考慮的選擇，尤其是當他們需要一個能夠自動化日常工作的助手時。
 
-**技術棧**：`Python 3.10` · `Node 20` · `Rust`
+**技術棧**：`Python 3.10` · `FastAPI` · `aisuite`
 
 ## 重點功能
 
-- 多種交付物生成 — 能夠生成文件、報告、電子表格等，並以可分享的格式輸出。
-- Slack 整合 — 在 Slack 中提及 @OpenWorker 即可啟動會話，並在桌面上完成工作。
-- 25+ 應用整合 — 支援 GitHub、Notion、Jira 等多種工具，並可透過 MCP 協議進行擴展。
-- 自動化排程 — 能夠設定定期執行的任務，如每週報告或日常簡報。
-- 用戶批准機制 — 在執行任何重要操作前，會先確認用戶的批准，避免意外行動。
+- 生成實際交付成果 — 能生成文件、報告和網頁，並以可共享的檔案格式輸出。
+- Slack 整合 — 在 Slack 中提及 @OpenWorker，會話會在桌面上開啟，並將結果以線程回覆。
+- 多種工具整合 — 支持 25 種以上的應用程式整合，包括 GitHub、Notion 和 Google Calendar。
+- 自動化排程 — 支持定期工作的自動化，例如早晨簡報或每週報告。
+- 本地運行 — 用戶可以使用自己的 API 金鑰，數據不會隨意外流出。
 
 ## 快速開始
 
-1. 克隆專案並進入目錄
+1. 安裝 OpenWorker
 ```bash
-git clone https://github.com/andrewyng/openworker && cd openworker
+下載 macOS 或 Windows 版本並安裝
 ```
-2. 設置開發環境
+2. 添加模型金鑰
 ```bash
-bash packaging/setup_dev_env.sh
+在應用中添加 OpenAI 或其他模型的 API 金鑰
 ```
-3. 啟動本地代理伺服器
+3. 開始使用
 ```bash
-.venv/bin/openworker-server --cwd ~/some/project --port 8765
-```
-
-## 程式碼範例
-
-```python
-{
-  "前置條件": "需要 Python 3.10+ 和 Node 20+。",
-  "指令": "bash packaging/setup_dev_env.sh",
-  "預期輸出": "設置開發環境所需的虛擬環境。"
-}
+告訴 OpenWorker 你想要的結果，例如 '準備客戶簡報'
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 4 天內累積 1686 stars（422/天），forks 249（14.8%），顯示出強烈的社群興趣。這個專案的作者 rohitprasad15 和 andrewyng 具備豐富的開發經驗，之前在 aisuite 的工作為這個專案奠定了基礎。OpenWorker 解決了許多用戶在日常工作中需要多個工具協作的痛點，提供了一個集成的解決方案。最近的推文和社群討論也引發了對這個工具的關注，特別是在 AI 助手的需求日益增加的背景下。高達 14.8% 的 forks/stars 比率顯示出許多開發者對這個專案進行實際修改和使用的興趣。
+> 建立 10 天內累積 10696 stars（1070/天），forks 1408（13.2%），顯示出強烈的社群興趣。這個專案的作者包括 rohitprasad15 和 andrewyng，他們在開源社群中有一定的影響力。OpenWorker 解決了用戶在日常工作中需要多個工具和平台進行操作的痛點，通過提供一個集中式的 AI 助手來簡化流程。近期的推廣活動和社群討論也促進了其曝光率。技術上，這個工具的設計使得用戶能夠選擇自己喜歡的模型，這在市場上是相對少見的，進一步吸引了對數據隱私有需求的用戶。forks/stars 比率為 13.2%，顯示出許多用戶對於自定義和擴展的興趣。
 
 ## 適合誰使用
 
-**目標受眾**：需要一個能在桌面上自動完成日常任務的獨立開發者或業務專業人士。
+**目標受眾**：需要一個能在桌面上自動完成任務並生成實際成果的獨立工作者或小型團隊。
 
 > [!example] 使用場景
-> - 業務開發人員用它來自動生成客戶簡報，因為這樣可以節省大量的時間，並且確保內容的專業性。
-> - 專案經理用它來整合 Slack 和 Jira 的訊息，因為這樣可以快速獲得專案進度而不需要手動查詢。
-> - 內容創作者用它來編寫和排版文章，因為它能夠自動生成格式化的文件，提升工作效率。
+> - 行銷專員用它來自動生成每週報告，因為手動整理數據和撰寫報告耗時且容易出錯。
+> - 產品經理用它來整合 Slack 和 Jira 的任務，因為這樣可以節省時間並減少在不同平台間切換的麻煩。
+> - 自由工作者用它來管理客戶的日曆和會議安排，因為這樣能提高工作效率並減少遺漏重要事項的風險。
 
 ## 架構分析
 
-OpenWorker 的架構基於一個本地代理伺服器，這樣的設計使得用戶的數據不會被上傳至雲端，從而提高了隱私性。其核心使用 Python 實現，並利用 aisuite 提供的統一 API 來支持多種 LLM 模型。資料流從用戶的請求開始，經過代理伺服器處理後，通過各種應用整合進行操作。這樣的設計選擇使得 OpenWorker 在功能上具備高度的靈活性，但可能在擴展性上受到本地環境的限制。整體來說，這種架構能夠有效地處理多種任務，但在面對大規模資料時，性能可能會受到影響。
+OpenWorker 採用客戶端-伺服器架構，客戶端為桌面應用，伺服器則是基於 Python 的本地代理。這種設計使得用戶能夠在本地運行 AI 助手，並且不依賴於雲端服務，這樣可以提高數據隱私性。資料流中，客戶端發送請求到本地伺服器，伺服器再根據用戶的需求調用不同的 API 進行處理。
+
+這樣的設計使得用戶可以靈活選擇使用的模型，並且能夠在本地完成所有操作，避免了網路延遲的問題。選擇使用 Python 和 FastAPI 是因為它們在處理 I/O 密集型應用時的高效性，並且有著良好的社群支持。這種架構的擴展性取決於用戶的硬體配置，對於需要處理大量數據的用戶，可能需要更高的資源配置。
 
 ## 技術深入分析
 
-OpenWorker 的核心技術機制基於 aisuite，這是一個提供統一聊天完成 API 的輕量級 Python 庫。這使得 OpenWorker 能夠靈活地整合多種 LLM 模型，並在用戶的本地環境中運行。效能方面，由於所有操作都在本地進行，這意味著用戶的數據不會被上傳至雲端，從而提高了隱私性。然而，這也可能導致在處理大型資料時性能下降，特別是在資源有限的環境中。
+OpenWorker 的核心技術機制基於 Python 和 FastAPI，這使得它能夠高效處理用戶的請求並進行多任務處理。它的架構設計為客戶端-伺服器模式，客戶端是桌面應用，伺服器則是本地代理，這樣的設計能夠確保用戶的數據不會隨意外流出。效能方面，OpenWorker 能夠處理各種不同的任務，具體效能取決於用戶的硬體配置和所選的模型。設計上選擇 Python 是因為其在開發速度和社群支持上的優勢，FastAPI 則提供了高效的 I/O 處理能力。
 
-設計上選擇 Python 使得開發過程相對簡單，但也可能導致在高並發情況下的性能瓶頸。對於依賴於外部 API 的功能，OpenWorker 需要穩定的網路連接，否則會影響其整體效能。整合方面，OpenWorker 支援多種 CI/CD 工具，並且能夠輕鬆地與現有的開發流程相容，但對於某些特定的環境配置，可能需要額外的適配。整體而言，OpenWorker 提供了一個靈活且強大的解決方案，適合需要高隱私性和自動化的用戶。
+這種選擇的代價是可能需要用戶具備一定的技術背景來進行設置和使用。技術風險方面，隨著用戶數量的增加，可能會面臨伺服器性能瓶頸的問題，特別是在處理大量請求時。整合方面，OpenWorker 能夠與多種主流工具鏈相容，並且支持多種 API 的整合，這使得它在現有的工作流程中能夠輕鬆融入。整體來看，OpenWorker 的設計考量了用戶的需求，並在數據隱私和靈活性上做出了平衡。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝指導和使用說明，包含必要的範例。安裝過程相對順暢，但需要注意多個依賴的安裝。文件中缺乏中文或多語言支持，可能對非英語使用者造成困難。
+> README 文件提供了清晰的介紹和使用說明，但缺乏具體的範例。安裝過程相對順暢，但 Windows 版本的安全警告可能會造成困擾。文件目前僅提供英文，對於非英語用戶可能會有一定的學習曲線。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 本地執行，保護用戶隱私。
-> - 支持多種模型提供者，靈活性高。
-> - 集成多種應用，提升工作效率。
+> - 能生成實際的工作成果，而不僅僅是建議或待辦事項。
+> - 支持多種工具整合，能夠靈活適應用戶的工作流程。
+> - 本地運行，能夠保護用戶的數據隱私。
 
 > [!danger] 缺點
-> - 安裝過程相對複雜，需要多個依賴。
-> - Windows 版本尚未簽名，可能影響使用體驗。
-> - 對於大型資料處理可能存在性能瓶頸。
+> - 目前仍在開放測試階段，可能存在穩定性問題。
+> - 需要一定的技術背景來設置和使用。
+> - 在 Windows 上的版本尚未簽名，可能會影響使用體驗。
 
 > [!warning] 注意事項
-> - 僅支援 Python 3.10+。
-> - 目前 Windows 版本尚未簽名，可能會有 SmartScreen 警告。
-> - 需要安裝 Node.js 及 Rust 工具鏈來運行桌面應用。
+> - 目前僅支援 Python 3.10 以上版本。
+> - 在 Windows 上的版本尚未簽名，可能會出現安全警告。
+> - 對於某些大型任務，可能需要較高的硬體配置。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供一個可視化的代理生成工具，而 OpenWorker 更專注於日常任務的自動化和整合。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 AI 模型的管理，而 OpenWorker 提供的是一個完整的工作流自動化解決方案。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的 AI 助手功能，但專注於遊戲開發場景，適合遊戲開發者使用。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 提供自動化功能，但主要針對資料處理，適合需要處理大量數據的用戶。 |
+| [0xSero/codex-shim](https://github.com/0xSero/codex-shim) | 專注於代碼生成和編輯，適合開發者使用，而 OpenWorker 更加通用，適合各類任務。 |
 
 ## 替代方案決策
 
@@ -206,16 +199,16 @@ OpenWorker 的核心技術機制基於 aisuite，這是一個提供統一聊天�
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供可視化的代理生成工具，專注於簡化代理的創建過程。 | 如果你的團隊需要快速生成和測試代理，而不關心日常任務的自動化。 | medium - 需要重新設計工作流以適應新的工具。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於 AI 模型的管理，提供更細粒度的控制。 | 如果你的需求主要是管理和調用多個 AI 模型，而不是自動化日常任務。 | high - 需要重新設計整個應用架構。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 專注於遊戲開發的 AI 助手，提供特定於遊戲的功能，而 OpenWorker 更加通用。 | 如果你的專案主要集中在遊戲開發上，這個工具會更適合。 | medium，因為需要重新調整工作流程以適應遊戲開發的需求。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於數據處理和分析，適合需要處理大量數據的用戶，而 OpenWorker 更加通用。 | 如果你的工作主要集中在數據分析和處理上，這個工具會更適合。 | low，因為數據處理的需求和工具的整合相對簡單。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **openworker** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 提供可視化的代理生成工具，專注於簡化代理的創建過程。 | 專注於 AI 模型的管理，提供更細粒度的控制。 |
-> | 遷移成本 | - | medium - 需要重新設計工作流以適應新的工具。 | high - 需要重新設計整個應用架構。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要快速生成和測試代理，而不關心日常任務的自動化 | 如果你的需求主要是管理和調用多個 AI 模型，而不是自動化日 |
+> | 技術路線 | 本專案 | 專注於遊戲開發的 AI 助手，提供特定於遊戲的功能，而 OpenWorker 更加通用。 | 專注於數據處理和分析，適合需要處理大量數據的用戶，而 OpenWorker 更加通用。 |
+> | 遷移成本 | - | medium，因為需要重新調整工作流程以適應遊戲開發的需求。 | low，因為數據處理的需求和工具的整合相對簡單。 |
+> | 適用場景 | 主要場景 | 如果你的專案主要集中在遊戲開發上，這個工具會更適合。 | 如果你的工作主要集中在數據分析和處理上，這個工具會更適合。 |
 
 ## 成熟度評估
 
@@ -226,27 +219,27 @@ OpenWorker 的核心技術機制基於 aisuite，這是一個提供統一聊天�
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合個人試用和小型專案，但不建議用在生產環境的核心路徑上。
+> 適合個人或小型團隊的測試使用，不建議用於生產環境的核心任務。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** Windows 上的安裝過程可能會遇到 SmartScreen 警告
-  - 解法：使用 macOS 或在 Windows 上等待簽名完成
-- [MEDIUM] 某些應用整合可能需要額外的配置
-  - 解法：參考官方文檔進行配置
-- [MEDIUM] 在處理大型任務時可能會出現性能瓶頸
-  - 解法：考慮將任務拆分為小型任務進行處理
+- **[HIGH]** 在 Windows 上運行時可能會出現安全警告，影響使用體驗
+  - 解法：等待版本簽名或使用 macOS 版本
+- [MEDIUM] 某些功能在特定環境下不穩定，可能導致崩潰
+  - 解法：定期更新到最新版本以獲取修復
+- [MEDIUM] 對於大型任務，可能需要較高的硬體配置
+  - 解法：在高效能的環境中運行以獲得最佳效能
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司需要自動化日常任務 | 非常適合 | 其本地執行特性和多種應用整合非常符合小型團隊的需求。 |
-| 大型企業需要高效的任務管理系統 | 普通 | 雖然功能強大，但在大型資料處理上可能會遇到性能瓶頸。 |
-| 需要保護數據隱私的個人用戶 | 非常適合 | 所有操作均在本地進行，能有效保護用戶的數據隱私。 |
-| 對於不熟悉技術的用戶 | 不適合 | 安裝和配置過程相對複雜，可能需要技術支持。 |
+| 小型團隊的日常任務自動化 | 非常適合 | 能夠自動化多種日常任務，提升工作效率。 |
+| 需要處理大量數據的分析團隊 | 普通 | 雖然支持數據處理，但不專注於此。 |
+| 個人自由工作者的專案管理 | 非常適合 | 能夠靈活整合多種工具，適合個人使用。 |
+| 大型企業的核心業務流程 | 不適合 | 目前仍在測試階段，穩定性不足。 |
 
 ## 採用成本分析
 
@@ -258,12 +251,12 @@ OpenWorker 的核心技術機制基於 aisuite，這是一個提供統一聊天�
 | 綁定風險 | low |
 
 > [!tip] 投入 vs 回報
-> 花 5 小時學習，8 小時整合，得到高效的日常任務自動化，值得投入。
+> 花 5 小時學習，8 小時整合，得到自動化日常任務的效果，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：OpenWorker 在本地執行，不需要高權限，且不會存取敏感資料。依賴鏈的信任程度較高，因為使用了知名的開源庫。
+> 低風險：本工具在本地運行，不需要高權限，並且用戶的數據不會隨意外流出。
 
 ## 健康度儀表板
 
@@ -328,29 +321,30 @@ OpenWorker 的核心技術機制基於 aisuite，這是一個提供統一聊天�
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 249 |
-| Open Issues | 57 |
-| Issue 解決率 | 2% (1 closed) |
-| 最後推送 | 2026-07-23 |
+| Forks | 1.4k |
+| Open Issues | 300 |
+| Issue 解決率 | 4% (11 closed) |
+| 最後推送 | 2026-07-28 |
 | 建立日期 | 2026-07-20 |
-| Repo 大小 | 1.6 MB |
+| Repo 大小 | 1.1 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/andrewyng/openworker) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 58
->     "TypeScript" : 33
+>     "Python" : 60
+>     "TypeScript" : 32
 >     "HTML" : 4
->     "CSS" : 3
+>     "CSS" : 2
 >     "Rust" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@rohitprasad15](https://github.com/rohitprasad15) | 44 |
+> | [@rohitprasad15](https://github.com/rohitprasad15) | 78 |
 > | [@andrewyng](https://github.com/andrewyng) | 1 |
+> | [@fahadsiddiqui](https://github.com/fahadsiddiqui) | 1 |
 > | [@Yashasm18](https://github.com/Yashasm18) | 1 |
 
 **最新版本**：v0.1.6 (2026-07-23)
@@ -362,21 +356,22 @@ OpenWorker 的核心技術機制基於 aisuite，這是一個提供統一聊天�
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，開發者對問題的回應速度尚可。
+**社群活躍度**：社群活躍，定期更新和回應用戶的問題。
 **連結**：[文件](https://openworker.com/docs)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-23 ~ 2026-07-23）
-> **活躍天數** 1 天 · **最新 commit** Keep ripgrep searches out of generated directories (#10)
+> [!abstract] 最近 10 次 commit（2026-07-28 ~ 2026-07-28）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #304 from andrewyng/rpTokenMetering
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#64](https://github.com/andrewyng/openworker/issues/64) | Chat composer sends message on Enter while confirming IME (C | 0 | 0 |
-> | [#62](https://github.com/andrewyng/openworker/issues/62) | Unable to hit models running in my own GPU's | 0 | 1 |
+> | [#232](https://github.com/andrewyng/openworker/issues/232) | pls add a linux version | 10 | 0 |
+> | [#72](https://github.com/andrewyng/openworker/issues/72) | Feature request: open-ai compatible API from models | 5 | 1 |
+> | [#191](https://github.com/andrewyng/openworker/issues/191) | 需要中文 | 3 | 3 |
 
 ## README 摘錄
 
@@ -465,6 +460,11 @@ OpenWorker 的核心技術機制基於 aisuite，這是一個提供統一聊天�
 > npm run dev        # browser UI on the Vite dev port
 > ```
 > 
+> The standalone server creates a per-launch token at
+> `/sidecar-8765.token`; Vite reads that user-only file when it starts.
+> For direct API calls, send its value in the `X-OpenWorker-Token` header. The
+> desktop app uses an in-memory launch token instead and never writes it to disk.
+> 
 > To run the full desktop app instead of the browser UI, replace step 3 with `npm run tauri dev` (from `surfaces/gui/`) - the Tauri shell launches the window and supervises the server itself.
 > 
 > Tests: `.venv/bin/pytest` (server), `npm test` and `npm run e2e` in `surfaces/gui` (GUI unit + hermetic end-to-end). Desktop bundles are built with `packaging/build_dmg.sh` / `packaging/build_windows.ps1`.
@@ -498,19 +498,19 @@ OpenWorker 的核心技術機制基於 aisuite，這是一個提供統一聊天�
 
 ## 延伸閱讀
 
-相關概念：[[自動化]] · [[AI 助手]] · [[MCP Protocol]]
+相關概念：[[自動化]] · [[CLI/TUI]] · [[API 設計]]
 
-相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[Blueturboguy07--cue|Blueturboguy07/cue]] · [[XiaomiMiMo--MiMo-Code|XiaomiMiMo/MiMo-Code]] · [[cosmicstack-labs--mercury-agent|cosmicstack-labs/mercury-agent]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[Doorman11991--smallcode|Doorman11991/smallcode]] · [[OpenBMB--PilotDeck|OpenBMB/PilotDeck]]
+相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[0xSero--codex-shim|0xSero/codex-shim]] · [[Blueturboguy07--cue|Blueturboguy07/cue]] · [[XiaomiMiMo--MiMo-Code|XiaomiMiMo/MiMo-Code]] · [[cosmicstack-labs--mercury-agent|cosmicstack-labs/mercury-agent]] · [[DenisSergeevitch--agents-best-practices|DenisSergeevitch/agents-best-practices]] · [[Doorman11991--smallcode|Doorman11991/smallcode]]
 
 [GitHub](https://github.com/andrewyng/openworker)
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：AI 助手）
+> [!note]- 直接競品（同子分類：自動化）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "AI 助手" AND file.name != "andrewyng--openworker"
+> WHERE subcategory = "自動化" AND file.name != "andrewyng--openworker"
 > SORT stars DESC
 > ```
 
@@ -542,7 +542,7 @@ OpenWorker 的核心技術機制基於 aisuite，這是一個提供統一聊天�
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["自動化","AI 助手","MCP Protocol"];
+> const concepts = ["自動化","CLI/TUI","API 設計"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "andrewyng--openworker" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")

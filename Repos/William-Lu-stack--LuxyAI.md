@@ -8,16 +8,16 @@ license: NOASSERTION
 description: "AI SRE AgenticOps for Kubernetes and cloud infrastructure."
 homepage: ""
 stars: 856
-stars_per_day: 48
+stars_per_day: 45
 forks: 213
 open_issues: 1
 created: 2026-07-10
-pushed_at: 2026-07-28
+pushed_at: 2026-07-29
 first_seen: 2026-07-14
 week: "2026-W29"
 month: "2026-07"
 category: "基礎設施"
-subcategory: "雲原生運維"
+subcategory: "自動化運維"
 release_tag: ""
 install_complexity: "medium"
 status: to-review
@@ -26,7 +26,7 @@ score_confidence: 0
 score_interest: 0
 score_risk: 0
 last_reviewed: 2026-07-14
-use_case: "讓基礎設施自動解釋故障並安全修復，並證明其恢復過程。"
+use_case: "讓基礎設施自我解釋、修復並證明恢復的 AI 原生 SRE 控制平臺。"
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
@@ -35,14 +35,14 @@ next_review: "2026-07-21"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 1307
-readme_length: 9818
+repo_size_kb: 1588
+readme_length: 9771
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-14"
-star_history: "2026-07-14:564,2026-07-14:569,2026-07-15:618,2026-07-16:646,2026-07-17:691,2026-07-18:710,2026-07-19:745,2026-07-20:785,2026-07-21:822,2026-07-22:847,2026-07-23:849,2026-07-24:850,2026-07-25:850,2026-07-26:850,2026-07-27:850,2026-07-28:855,2026-07-29:856"
+star_history: "2026-07-14:564,2026-07-14:569,2026-07-15:618,2026-07-16:646,2026-07-17:691,2026-07-18:710,2026-07-19:745,2026-07-20:785,2026-07-21:822,2026-07-22:847,2026-07-23:849,2026-07-24:850,2026-07-25:850,2026-07-26:850,2026-07-27:850,2026-07-28:855,2026-07-29:856,2026-07-30:856"
 tags:
   - github
   - "category/基礎設施"
@@ -55,12 +55,12 @@ tags:
 aliases:
   - "Flawless"
   - "William-Lu-stack/Flawless"
-  - "讓基礎設施自動解釋故障並安全修復，並證明其恢復過程。"
+  - "讓基礎設施自我解釋、修復並證明恢復的 AI 原生 SRE 控制平臺。"
 ---
 
 # Flawless
 
-**856** stars · **48** stars/天 · 建立 18 天前 · Python · NOASSERTION
+**856** stars · **45** stars/天 · 建立 19 天前 · Python · NOASSERTION
 
 ```dataviewjs
 const me = dv.page("Repos/William-Lu-stack--Flawless");
@@ -78,20 +78,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `agenticops` `ai` `aiops` `aisre` `cloud` `cloud-native` `devops` `kubernetes` `llm` `mcp` `observability` `sre`
 
 > [!summary] 一句話摘要
-> 讓基礎設施自動解釋故障並安全修復，並證明其恢復過程。
+> 讓基礎設施自我解釋、修復並證明恢復的 AI 原生 SRE 控制平臺。
 
 > [!info] 速覽
-> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (48 stars/day)
+> **安裝難度** Medium · **專案狀態** Recent · **熱度** Growing (45 stars/day)
 > **授權** NOASSERTION · **維護** Active (最後推送 0 天前) · **貢獻者** Solo (bus factor 風險) · **參與度** Medium
-> **適合** 需要在 Kubernetes 環境中實現自動化運維的 SRE 和 DevOps 團隊。
-> **一句話重點** Flawless 不僅是一個運維工具，更是一個自動化的故障處理平台，能夠提升雲基礎設施的可靠性。
+> **適合** 需要在 Kubernetes 環境中實現自動化運維的中小型團隊。
+> **一句話重點** Flawless 的最大優勢在於其將運維過程自動化，並提供可審計的操作循環，這在當前快速變化的雲環境中至關重要。
 
 > [!abstract]- 同類競品快速對比
 > ```dataviewjs
 > const me = dv.page("Repos/William-Lu-stack--Flawless");
 > if (me) {
 >   const rivals = dv.pages('"Repos"')
->     .where(p => p.subcategory === "雲原生運維" && p.file.name !== "William-Lu-stack--Flawless" && p.status !== "archived")
+>     .where(p => p.subcategory === "自動化運維" && p.file.name !== "William-Lu-stack--Flawless" && p.status !== "archived")
 >     .sort(p => p.stars || 0, "desc").limit(5);
 >   if (rivals.length > 0) {
 >     dv.table(["專案", "Stars", "Stars/天", "安裝", "授權", "Ring"], rivals.map(p => [
@@ -102,108 +102,113 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 >       p.license || "?",
 >       p.ring || "assess"
 >     ]));
->   } else { dv.paragraph("_目前 vault 中沒有其他 雲原生運維 類工具_"); }
+>   } else { dv.paragraph("_目前 vault 中沒有其他 自動化運維 類工具_"); }
 > }
 > ```
 
 > [!question] TL;DR — 值得投入嗎？
 > **成熟度** Beta (可試用) · **安裝** Medium (需設定) · **學習** ~10h · **綁定風險** medium
-> **結論** 花 10 小時學習，15 小時整合，得到自動化運維的高效能，值得考慮。
+> **結論** 花 10 小時學、20 小時整合，得到自動化運維的效果，值得考慮。
 
 > [!abstract] 核心創新
-> Flawless 將故障處理過程自動化，並將證據收集與人為批准整合在一起，形成可審計的操作循環。
+> Flawless 將故障檢測、修復和恢復驗證整合成一個可審計的 AgenticOps 循環。
 
 ## 專案簡介
 
-Flawless 是一個 AI 原生的 SRE 控制平面，專為 Kubernetes 和雲基礎設施設計。它透過連接警報、證據、拓撲、人為批准、控制修復及恢復驗證，形成一個可審計的 AgenticOps 循環。使用者可以透過簡單的 CLI 指令來啟動整個系統，例如 `./scripts/quickstart.sh --mode native`，這將檢查先決條件並啟動 API 和所有本地代理服務。這個工具的賣點在於它不僅提供建議，而是能夠自動化整個故障處理過程，從發現問題到執行變更，再到驗證恢復。技術上，Flawless 使用 FastAPI 和 Uvicorn 作為後端框架，並依賴 Kubernetes 進行資源管理，這使得它能夠高效地處理大規模的雲基礎設施。
+Flawless 是一個針對 Kubernetes 和雲基礎設施的 AI 原生 SRE 控制平臺，旨在將警報、證據、拓撲、人為批准、受控修復和恢復驗證整合成一個可審計的 AgenticOps 循環。用戶可以透過簡單的 CLI 指令啟動整個系統，例如使用 `./quick-start` 指令來進行必要的檢查並啟動 API 及所有本地代理服務。這個設計使得基礎設施能夠自動化故障檢測和修復過程，從而減少人為干預的需求。Flawless 使用 FastAPI 和 Uvicorn 作為後端框架，並依賴於 Kubernetes 的 API 進行資源管理，這樣的選擇使得系統能夠高效處理大量的請求和數據流。與其他工具相比，如 0x0funky/agent-sprite-forge，Flawless 不僅提供建議，還能執行變更並進行後續驗證，這使得其在實際運維中更具實用性。
 
-與其他 SRE 工具相比，如 0x0funky/agent-sprite-forge 和 0xGF/boneyard，Flawless 提供了更完整的證據收集和人為批准流程，確保每一步都經過嚴格的審核。這樣的設計使得 Flawless 特別適合需要高可靠性和可審計性的企業環境。使用者在實際操作中可能會遇到 Kubernetes 設定的挑戰，特別是在本地開發環境中，這需要額外的配置。整體而言，Flawless 目前處於 beta 階段，對於希望在雲環境中實現自動化運維的團隊來說，這是一個值得考慮的選擇。
+Flawless 的設計還考慮了持續的可觀察性，整合了 Prometheus 和 Grafana 來監控系統狀態，並提供了可視化的數據流分析。儘管目前仍在開發中，Flawless 已經展示了其在故障恢復和修復過程中的潛力，特別是在需要快速響應的生產環境中。這個專案的成熟度尚處於 beta 階段，適合中小型團隊進行實驗和測試。未來幾個月內，預計會增加更多的功能和穩定性改進。對於需要在 Kubernetes 環境中實現自動化運維的團隊，Flawless 是一個值得考慮的選擇。
 
-**技術棧**：`FastAPI` · `Uvicorn` · `Docker` · `Kubernetes`
+**技術棧**：`FastAPI` · `Uvicorn` · `Kubernetes` · `Prometheus` · `Grafana`
 
 ## 重點功能
 
-- SRE Chat — 提供 ChatGPT 風格的操作控制台，支持集群、命名空間和工作負載的上下文。
-- Controlled Remediation — 收集證據、變更預覽、人為批准、執行和後變更驗證，並記錄失敗策略。
-- Topology Impact — 提供 2D/3D 拓撲視覺化和 CMDB 風格的依賴關係分析。
-- Skills Library — 可重用的操作技能庫，編碼專家知識，能被其他代理重用。
-- Observability — 整合 Prometheus 指標、Loki 日誌和 Grafana 連結，提供全面的可觀察性。
+- SRE Chat — 類似 ChatGPT 的操作控制台，提供集群、命名空間、工作負載和風險上下文。
+- Inspection Queue — 在 Rancher/Kubernetes 範圍內進行計劃或手動掃描，並根據嚴重性進行排名。
+- Controlled Remediation — 收集證據、變更預覽、人為批准、執行、變更後驗證，並記錄失敗策略。
+- Topology Impact — 提供 2D/3D 拓撲、CMDB 風格的依賴關係和 blast-radius 分析。
+- Release Governance — 包含 SLO、錯誤預算、canary/risk gate 和發佈審計鏈。
+- Skills Library — 可攜帶的操作技能，編碼專家知識並可被其他代理重用。
+- Knowledge Base — 支援上傳文本、Markdown、PDF、Word、Excel、日誌、YAML 和操作手冊。
+- Observability — 整合 Prometheus 指標、Loki 日誌、Tempo 跟踪和 Grafana 連結。
 
 ## 快速開始
 
-1. 檢查先決條件並啟動服務
+1. 檢查必要條件並啟動系統
 ```bash
-./scripts/quickstart.sh --mode native
+./quick-start
 ```
-2. 配置環境變數以使用 AI 模型
+2. 配置 LLM API 端點
 ```bash
-echo 'LLM_API_BASE=http://localhost:11434/v1' >> .env
+LLM_API_BASE=http://localhost:11434/v1
 ```
 3. 啟動 Docker 環境
 ```bash
-docker-compose up -d
+docker-compose up
 ```
 
 ## 程式碼範例
 
 ```python
 {
-  "前置條件": "需要配置 .env 檔案以使用 AI 模型",
-  "指令": "LLM_API_BASE=http://localhost:11434/v1 LLM_API_KEY= LLM_MODEL=qwen2.5:7b LLM_AUTH_TYPE=none",
-  "預期輸出": "將啟動 AI 模型並連接到控制台。"
+  "前置條件": "需要配置 LLM API 端點",
+  "指令": "LLM_API_BASE=http://localhost:11434/v1",
+  "預期輸出": "將 LLM API 端點設置為本地服務。"
 }
 ```
 
 ## 為什麼值得關注
 
 > [!tip] 爆紅原因
-> 建立 18 天內累積 856 stars（48/天），forks 213（24.9%），這顯示出強烈的社群參與。作者 William-Lu-stack 在 AI 和雲基礎設施領域有豐富的經驗，這個專案解決了傳統 SRE 工具無法自動化故障處理的痛點。之前的解決方案往往需要大量的手動干預，Flawless 則通過 AI 技術實現了自動化，提升了效率。這個專案的推出引起了許多 DevOps 和 SRE 專業人士的關注，並在社群中引發討論。這種增長也反映了對於雲原生架構自動化需求的上升，尤其是在 Kubernetes 生態系統中。
+> 建立 19 天就累積 856 stars（45/天），forks 213（24.9%），顯示出強烈的社群興趣。這個專案由 William-Lu-stack 主導，他在 DevOps 和 AI 領域有豐富的經驗。Flawless 解決了現有運維工具無法有效整合故障檢測和修復過程的痛點，之前的解決方案往往只能提供建議而無法自動執行。最近的推廣活動和社群討論也促進了其曝光率。隨著 Kubernetes 和雲原生技術的普及，Flawless 的需求也隨之增加，特別是在需要高可用性和快速恢復的環境中。forks/stars 比率接近 25%，顯示出許多開發者對此專案進行實際修改和使用的興趣。
 
 ## 適合誰使用
 
-**目標受眾**：需要在 Kubernetes 環境中實現自動化運維的 SRE 和 DevOps 團隊。
+**目標受眾**：需要在 Kubernetes 環境中實現自動化運維的中小型團隊。
 
 > [!example] 使用場景
-> - SRE 工程師用它來自動化故障處理流程，因為它能夠連接警報和證據，並在執行變更前獲得人為批准。
-> - DevOps 團隊用它來監控和管理 Kubernetes 環境，因為它提供了可視化的拓撲分析和持續的健康檢查。
-> - 雲基礎設施管理者用它來驗證修復過程，因為它能夠記錄每一步的證據並生成可審計的報告。
+> - SRE 團隊用它來自動化故障檢測和修復流程，因為這樣可以減少人為干預，提升系統的穩定性和可用性。
+> - DevOps 工程師用它來整合 Kubernetes 環境中的監控和修復，因為它提供了實時的數據流分析和可視化工具。
+> - 安全團隊用它來確保基礎設施的合規性和安全性，因為其可審計的操作循環能夠提供詳細的變更記錄和恢復證據。
 
 ## 架構分析
 
-Flawless 的架構由前端控制台和控制平面 API 組成，前端負責用戶交互，控制平面 API 處理證據管道、修復作業狀態機、釋放門檻和 SLO 預算等功能。這種設計使得整個系統能夠高效運行，並且能夠在不同的雲環境中靈活應用。每個模組都可以獨立擴展，並且可以根據需求進行調整。這樣的架構使得 Flawless 能夠在大規模的雲基礎設施中保持高效能和穩定性。選擇這種架構的代價在於需要更多的初始配置，但長期來看能夠提供更好的擴展性和靈活性。
+Flawless 採用微服務架構，將不同的功能模組分離以提高可維護性。系統核心是基於 FastAPI 的 RESTful API，負責處理所有請求並與 Kubernetes 進行交互。數據流經由 Prometheus 和 Grafana 進行監控和可視化，這樣的設計使得系統能夠即時反應並進行故障修復。
+
+選擇 FastAPI 是因為其高效的性能和簡單的開發體驗，而 Kubernetes 則提供了強大的容器管理能力。這種架構的代價在於需要額外的學習時間來熟悉各個模組的運作，並且在擴展性上可能會受到 Kubernetes 環境的限制。整體而言，Flawless 的架構設計適合需要高可用性和快速故障恢復的場景。
 
 ## 技術深入分析
 
-Flawless 的核心技術機制在於其 AI 驅動的故障處理能力，使用 FastAPI 和 Uvicorn 作為後端框架，能夠高效處理請求並提供即時反饋。它的設計模式結合了事件驅動和證據收集，確保每一步操作都有依據。效能方面，Flawless 能夠處理大規模的 Kubernetes 環境，並且在資源使用上相對高效。選擇 Python 和 FastAPI 的原因在於其生態系統豐富，能夠快速開發和迭代。這樣的選擇雖然帶來了較高的學習曲線，但長期來看能夠提供更好的擴展性。技術風險方面，Flawless 對 Kubernetes 的依賴可能在未來的版本中造成兼容性問題，特別是在 Kubernetes 更新後。整合方面，Flawless 能夠與主流的 CI/CD 工具鏈無縫對接，並且支持多種雲平台的資源管理。
+Flawless 的核心技術機制是基於 FastAPI 和 Kubernetes 的微服務架構，這使得系統能夠高效地處理請求並進行資源管理。系統能夠處理大量的請求，並且在故障發生時能夠迅速響應。Flawless 的設計考慮了持續的可觀察性，整合了 Prometheus 和 Grafana 來監控系統狀態，並提供可視化的數據流分析。選擇 FastAPI 是因為其高效的性能和簡單的開發體驗，而 Kubernetes 則提供了強大的容器管理能力。這種架構的代價在於需要額外的學習時間來熟悉各個模組的運作，並且在擴展性上可能會受到 Kubernetes 環境的限制。Flawless 的設計還考慮了安全性，所有操作都需要人為批准，並且提供了詳細的變更記錄和恢復證據。這樣的設計能夠有效降低操作風險，並提高系統的穩定性。
 
 ## 新手體驗
 
 > [!info] 上手難度評估
-> README 文件提供了清晰的安裝步驟和範例，整體安裝過程較為順暢。新手可以在 30 分鐘內完成基本配置並啟動服務，文件目前僅提供英文版本。
+> README 文件提供了清晰的指導和範例，安裝過程相對順暢，但需要注意 Kubernetes 環境的配置。文件中有多語言支持，對於新手來說，花 30 分鐘能夠基本上運行起來。
 
 ## 優缺點分析
 
 > [!success] 優點
-> - 自動化故障處理流程，減少人為干預。
-> - 提供可審計的操作循環，增加透明度。
-> - 整合多種雲資源，方便管理和監控。
+> - 集成了 AI 功能以自動化運維流程，減少人為干預。
+> - 提供可視化的數據流分析，幫助用戶快速定位問題。
+> - 可擴展性強，支持多種雲和容器化環境。
 
 > [!danger] 缺點
-> - 需要較高的初始配置和學習成本。
-> - 對 Kubernetes 環境的依賴性強。
-> - 目前功能仍在不斷迭代中，可能存在不穩定性。
+> - 目前仍在 beta 階段，可能存在不穩定性。
+> - 需要 Kubernetes 環境，對於不熟悉的用戶有學習曲線。
+> - 依賴多個外部服務，增加整合的複雜性。
 
 > [!warning] 注意事項
-> - 需要 Kubernetes 環境才能完全運作。
-> - 目前僅支援 Python 3.11+ 和 Node.js 20+。
-> - 在本地開發環境中，Kubernetes 設定可能需要額外的配置。
+> - 目前仍在 beta 階段，可能存在不穩定性。
+> - 需要 Kubernetes 環境進行部署，對於不熟悉 Kubernetes 的用戶有學習曲線。
+> - 依賴於多個外部服務，如 Prometheus 和 Grafana，可能增加整合的複雜性。
 
 ## 類似工具比較
 
 | 工具 | 差異 |
 | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 提供類似的自動化功能，但缺乏 Flawless 的完整證據收集和人為批准流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資源管理，但不具備 Flawless 的 AI 驅動的故障處理能力。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | Flawless 提供了更全面的故障檢測和修復功能，而 agent-sprite-forge 更專注於簡單的代理管理。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | Flawless 整合了 AI 功能來自動化運維，而 boneyard 主要是用於資源清理和管理。 |
 
 ## 替代方案決策
 
@@ -211,16 +216,16 @@ Flawless 的核心技術機制在於其 AI 驅動的故障處理能力，使用 
 
 | 工具 | 技術路線 | 選它的時機 | 遷移難度 |
 | --- | --- | --- | --- |
-| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Rust 實作，記憶體用量較少，但功能覆蓋範圍不如 Flawless 廣泛。 | 如果你的團隊需要一個輕量級的解決方案，且不需要完整的自動化流程。 | medium，因為需要重寫部分操作流程。 |
-| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資源管理，缺乏 Flawless 的 AI 驅動能力。 | 如果你的需求主要集中在資源監控而非自動化故障處理。 | low，因為功能相似，遷移成本低。 |
+| [0x0funky/agent-sprite-forge](https://github.com/0x0funky/agent-sprite-forge) | 使用 Python 實作，專注於簡單的代理管理，而 Flawless 則提供了更全面的故障檢測和修復功能。 | 如果你的團隊需要一個簡單的代理管理工具，而不是全面的運維解決方案。 | low，因為兩者的功能範圍相對簡單，轉移成本低。 |
+| [0xGF/boneyard](https://github.com/0xGF/boneyard) | 專注於資源清理和管理，而 Flawless 則整合了 AI 功能來自動化運維。 | 如果你的需求主要是資源管理，而不需要 AI 驅動的運維功能。 | medium，因為需要重新設計運維流程以適應不同的工具特性。 |
 
 > [!abstract]- 功能對比矩陣
 >
 > | 維度 | **Flawless** | **agent-sprite-forge** | **boneyard** |
 > | --- | --- | --- | --- |
-> | 技術路線 | 本專案 | 使用 Rust 實作，記憶體用量較少，但功能覆蓋範圍不如 Flawless 廣泛。 | 專注於資源管理，缺乏 Flawless 的 AI 驅動能力。 |
-> | 遷移成本 | - | medium，因為需要重寫部分操作流程。 | low，因為功能相似，遷移成本低。 |
-> | 適用場景 | 主要場景 | 如果你的團隊需要一個輕量級的解決方案，且不需要完整的自動化流 | 如果你的需求主要集中在資源監控而非自動化故障處理。 |
+> | 技術路線 | 本專案 | 使用 Python 實作，專注於簡單的代理管理，而 Flawless 則提供了更全面的故障檢測和修復功能。 | 專注於資源清理和管理，而 Flawless 則整合了 AI 功能來自動化運維。 |
+> | 遷移成本 | - | low，因為兩者的功能範圍相對簡單，轉移成本低。 | medium，因為需要重新設計運維流程以適應不同的工具特性。 |
+> | 適用場景 | 主要場景 | 如果你的團隊需要一個簡單的代理管理工具，而不是全面的運維解決 | 如果你的需求主要是資源管理，而不需要 AI 驅動的運維功能。 |
 
 ## 成熟度評估
 
@@ -231,44 +236,44 @@ Flawless 的核心技術機制在於其 AI 驅動的故障處理能力，使用 
 | Breaking Change 風險 | medium |
 
 > [!tip] 採用建議
-> 適合用於測試和開發環境，但不建議在生產環境中使用。
+> 適合個人 side project 試用，不建議用在生產環境的核心路徑上。
 
 ## 已知陷阱
 
 > [!bug] 踩坑才知道的問題
 
-- **[HIGH]** Kubernetes 設定不當可能導致無法啟動服務
-  - 解法：確保正確配置 KUBECONFIG 和相關權限
-- [MEDIUM] 在本地環境中，Docker 可能無法正確映射主機資源
-  - 解法：檢查 Docker 設定，必要時手動配置
-- [MEDIUM] AI 模型配置錯誤會導致無法正常運作
-  - 解法：確認 .env 檔案中的 API 鍵和模型名稱正確
+- **[HIGH]** 在 Kubernetes 環境中，可能會遇到資源限制導致的性能問題。
+  - 解法：確保 Kubernetes 集群有足夠的資源配置。
+- [MEDIUM] 在使用外部服務時，可能會遇到網路延遲問題。
+  - 解法：考慮將服務部署在同一區域以減少延遲。
+- [MEDIUM] 安裝過程中可能需要特定版本的依賴，導致安裝失敗。
+  - 解法：仔細檢查 requirements.txt 中的版本要求。
 
 ## 使用情境適合度
 
 | 情境 | 適合度 | 說明 |
 | --- | --- | --- |
-| 10 人以下的新創公司後端 API | 適合 | 能夠自動化運維流程，減少人力成本。 |
-| 大型企業的雲基礎設施管理 | 非常適合 | 提供全面的可觀察性和自動化功能。 |
-| 需要快速迭代的開發團隊 | 普通 | 雖然功能強大，但學習曲線較陡峭。 |
-| 對運維自動化需求不高的小型專案 | 不適合 | 可能過於複雜，無法充分發揮其優勢。 |
+| 10 人以下的新創公司後端 API | 適合 | Flawless 提供的自動化運維功能能夠有效減少人力成本。 |
+| 大型企業的生產環境 | 普通 | 雖然功能強大，但目前仍在 beta 階段，可能不夠穩定。 |
+| 需要快速故障恢復的 DevOps 團隊 | 非常適合 | Flawless 的自動化修復功能能夠快速響應故障。 |
+| 不熟悉 Kubernetes 的小型團隊 | 不適合 | 需要一定的 Kubernetes 知識來有效使用此工具。 |
 
 ## 採用成本分析
 
 | 項目 | 評估 |
 | --- | --- |
 | 學習時間 | ~10 小時 |
-| 整合時間 | ~15 小時 |
+| 整合時間 | ~20 小時 |
 | 維護負擔 | medium |
 | 綁定風險 | medium |
 
 > [!tip] 投入 vs 回報
-> 花 10 小時學習，15 小時整合，得到自動化運維的高效能，值得考慮。
+> 花 10 小時學、20 小時整合，得到自動化運維的效果，值得考慮。
 
 ## 安全性評估
 
 > [!warning] 安全性快速掃描
-> 低風險：該工具不需要高權限操作，但需要正確配置 Kubernetes 權限以保證安全性。對於 CI/CD 的整合，需確保 API 鍵和敏感資料的安全管理。
+> Flawless 本身不需要高權限，但在運行時可能需要存取 Kubernetes 的 API。依賴的外部服務需確保安全性，並且在 CI/CD 中使用時需注意 API 金鑰的管理。
 
 ## 健康度儀表板
 
@@ -336,9 +341,9 @@ Flawless 的核心技術機制在於其 AI 驅動的故障處理能力，使用 
 | Forks | 213 |
 | Open Issues | 1 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-07-28 |
+| 最後推送 | 2026-07-29 |
 | 建立日期 | 2026-07-10 |
-| Repo 大小 | 1.3 MB |
+| Repo 大小 | 1.6 MB |
 | OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/William-Lu-stack/Flawless) |
 | Topics | `agenticops` `ai` `aiops` `aisre` `cloud` `cloud-native` `devops` `kubernetes` |
 
@@ -349,9 +354,9 @@ Flawless 的核心技術機制在於其 AI 驅動的故障處理能力，使用 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 77
->     "TypeScript" : 14
->     "CSS" : 6
+>     "Python" : 78
+>     "TypeScript" : 13
+>     "CSS" : 5
 >     "Shell" : 2
 >     "PowerShell" : 1
 > ```
@@ -359,23 +364,24 @@ Flawless 的核心技術機制在於其 AI 驅動的故障處理能力，使用 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@William-Lu-stack](https://github.com/William-Lu-stack) | 21 |
+> | [@William-Lu-stack](https://github.com/William-Lu-stack) | 24 |
 
 ## 社群與生態
 
-**社群活躍度**：社群活躍度中等，最近有更新和問題回應。
+**社群活躍度**：社群活躍，最近有多次提交和更新。
+**連結**：[文件](https://github.com/William-Lu-stack/Flawless/blob/main/docs/PROJECT_TECHNICAL_MATERIALS_ZH.md)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-26 ~ 2026-07-28）
-> **活躍天數** 3 天 · **最新 commit** fix: make skill migration idempotent
+> [!abstract] 最近 10 次 commit（2026-07-27 ~ 2026-07-29）
+> **活躍天數** 3 天 · **最新 commit** fix: route rollout analysis to API service
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#4](https://github.com/William-Lu-stack/Flawless/issues/4) | Requesting a private security contact (please enable private | 0 | 0 |
+> | [#4](https://github.com/William-Lu-stack/Flawless/issues/4) | Requesting a private security contact (please enable private | 0 | 1 |
 
 ## README 摘錄
 
@@ -398,9 +404,35 @@ Flawless 的核心技術機制在於其 AI 驅動的故障處理能力，使用 
 > 
 > Maintained by the **Flawless Contributors** community.
 > 
-> Current release: **3.2.16**.
+> Current release: **3.3.1**.
 > 
-> Release 3.2.16 makes the built-in Skill migration idempotent. Once a stale
+> 中文技术架构、工程实现、测试证据和项目工具材料见
+> [`docs/PROJECT_TECHNICAL_MATERIALS_ZH.md`](docs/PROJECT_TECHNICAL_MATERIALS_ZH.md)。
+> 灰度发布的生产安装、配置和状态语义见
+> [`docs/ARGO_ROLLOUTS_SRE_ZH.md`](docs/ARGO_ROLLOUTS_SRE_ZH.md)。
+> 
+> Release 3.3.1 replaces the display-only Deployment canary with real Argo
+> Rollouts progressive delivery.  The existing blast-radius algorithm now
+> produces an enforceable replica-weight envelope; each batch runs a live
+> Prometheus/SLO AnalysisRun, the approved ceiling pauses for a second human
+> promotion, and hard SLI failures automatically return capacity to stableRS.
+> Rollback also restores the source Deployment template, so both runtime and
+> desired state are recovered.  Argo Rollouts v1.9.1 is pinned by digest to a
+> verified mainland-accessible mirror.  The application executor was tested
+> against a real K3s controller for canary pause, status-subresource promotion,
+> automatic abort, capacity recovery, and desired-state restoration.
+> 
+> Release 3.2.17 closes the post-LLM diagnosis stall. The LLM response, action
+> normalization, and Skill Router are now independently observable stages; the
+> Router runs outside the asyncio event loop with its own hard timeout, and the
+> deterministic no-LLM fallback is bounded as well. Missing timing fields no
+> longer render as a false `0 秒 / 0 秒` deadline, and an orphaned persisted job is
+> resumed from fresh evidence with all old approvals invalidated. This release is
+> covered by a real DeepSeek response-path test and a real K3s workflow that
+> patches a broken Deployment through two human approvals and verifies the new
+> Pod recovered.
+> 
+> Release 3.2.16 made the built-in Skill migration idempotent. Once a stale
 > legacy definition has been materialized as a current standard Skill package,
 > later restarts keep enforcing the shipped policy without emitting duplicate
 > migration receipts or rewriting the package.
@@ -508,60 +540,11 @@ Flawless 的核心技術機制在於其 AI 驅動的故障處理能力，使用 
 > 
 > ## Model Configuration
 > 
-> Flawless supports two common model access patterns.
-> 
-> 
-> ### Base URL + API Key
-> 
-> Use this for OpenAI-compatible providers:
-> 
-> ```json
-> [
->   {
->     "id": "openai-compatible",
->     "provider": "openai-compatible",
->     "model": "your-model",
->     "base_url": "https://api.example.com/v1",
->     "auth_type": "api_key",
->     "api_key": "${INJECT_FROM_SECRET_MANAGER}",
->     "role": "candidate",
->     "max_tokens": 4096
->   }
-> ]
-> ```
-> 
-> Set the JSON in `MODEL_PROFILES_JSON` or add models from the **Model Lab** page. Secrets should come from Kubernetes Secret or your enterprise secret platform.
-> 
-> 
-> ## Unified Resource API
-> 
-> `GET /api/resources` exposes Kubernetes, databases, virtual machines,
-> middleware, storage, and cloud resources through one stable contract:
-> 
-> ```text
-> GET /api/resources?resource_type=pod&cluster=prod&namespace=orders&limit=200
-> ```
-> 
-> The response uses contract `flawless.resource.v1`, includes source and health
-> summaries, and supports cursor pagination. New infrastructure teams should add
-> an adapter and normalize into this contract instead of introducing a parallel
-> resource API.
-> 
-> 
-> ## Why This Exists
-> 
-> Modern cloud systems fail in ways that are hard to reason about from a single log line:
-> 
-> - a Pod restart can hide a PVC, image, scheduling, network, quota, or rollout issue;
-> - a small workload change can affect services, data pipelines, middleware, and downstream users;
-> - repeated human firefighting leaves valuable operational knowledge outside the platform;
-> - model output is useful only when it is constrained by evidence, policy, permissions, and rollback.
-> 
-> Flawless is built as an SRE con
+> Flawless supports two common 
 
 ## 延伸閱讀
 
-相關概念：[[AIops]] · [[Kubernetes]] · [[雲原生]] · [[自動化運維]] · [[Observability]]
+相關概念：[[自動化]] · [[Kubernetes]] · [[AI Ops]] · [[故障檢測]] · [[可觀察性]]
 
 相關專案：[[0x0funky--agent-sprite-forge|0x0funky/agent-sprite-forge]] · [[0xGF--boneyard|0xGF/boneyard]] · [[2aronS--Duel-Agents|2aronS/Duel-Agents]] · [[L42ARO--Mercury-Transforming-Drone|L42ARO/Mercury-Transforming-Drone]] · [[LaurieWired--tailslayer|LaurieWired/tailslayer]] · [[NVIDIA--NemoClaw|NVIDIA/NemoClaw]] · [[HKUDS--AgentSpace|HKUDS/AgentSpace]] · [[anomalyco--rift|anomalyco/rift]]
 
@@ -569,11 +552,11 @@ Flawless 的核心技術機制在於其 AI 驅動的故障處理能力，使用 
 
 ## 相關收錄
 
-> [!note]- 直接競品（同子分類：雲原生運維）
+> [!note]- 直接競品（同子分類：自動化運維）
 > ```dataview
 > TABLE stars, stars_per_day AS "Stars/天", install_complexity AS "難度", use_case AS "用途"
 > FROM "Repos"
-> WHERE subcategory = "雲原生運維" AND file.name != "William-Lu-stack--Flawless"
+> WHERE subcategory = "自動化運維" AND file.name != "William-Lu-stack--Flawless"
 > SORT stars DESC
 > ```
 
@@ -605,7 +588,7 @@ Flawless 的核心技術機制在於其 AI 驅動的故障處理能力，使用 
 
 > [!note]- 共用概念的相關專案
 > ```dataviewjs
-> const concepts = ["AIops","Kubernetes","雲原生","自動化運維","Observability"];
+> const concepts = ["自動化","Kubernetes","AI Ops","故障檢測","可觀察性"];
 > const pages = dv.pages('"Repos"')
 >   .where(p => p.file.name !== "William-Lu-stack--Flawless" && p.file.outlinks?.some(l => concepts.some(c => l.path?.includes(c))))
 >   .sort(p => p.stars, "desc")
