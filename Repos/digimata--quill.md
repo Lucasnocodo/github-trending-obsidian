@@ -7,12 +7,12 @@ language: Swift
 license: N/A
 description: "Ultra-minimalist macOS recording + transcription."
 homepage: ""
-stars: 1593
-stars_per_day: 319
-forks: 101
-open_issues: 14
+stars: 2524
+stars_per_day: 421
+forks: 160
+open_issues: 18
 created: 2026-07-24
-pushed_at: 2026-07-28
+pushed_at: 2026-07-30
 first_seen: 2026-07-30
 week: "2026-W31"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "提供一個超簡約的 macOS 錄音與轉錄工具，讓使用者�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-02"
+appearances: 2
+next_review: "2026-08-03"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 7
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-30"
-star_history: "2026-07-30:1593"
+star_history: "2026-07-30:1593,2026-07-31:2524"
 tags:
   - github
   - "category/其他"
@@ -795,4 +795,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-31|2026-07-31]] — 再次上榜，2.5k stars
 - [[2026-07-30|2026-07-30]] — 首次收錄，1.6k stars

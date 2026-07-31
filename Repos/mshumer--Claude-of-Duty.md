@@ -7,10 +7,10 @@ language: JavaScript
 license: MIT
 description: "A Call of Duty-quality FPS in Three.js, built from a single prompt."
 homepage: ""
-stars: 2272
-stars_per_day: 568
-forks: 327
-open_issues: 18
+stars: 2416
+stars_per_day: 483
+forks: 357
+open_issues: 21
 created: 2026-07-25
 pushed_at: 2026-07-25
 first_seen: 2026-07-27
@@ -30,8 +30,8 @@ use_case: "在瀏覽器中構建的類 Call of Duty 的第一人稱射擊遊戲�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-08-02"
+appearances: 5
+next_review: "2026-08-03"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-27"
-star_history: "2026-07-27:721,2026-07-28:1052,2026-07-29:1818,2026-07-30:2272"
+star_history: "2026-07-27:721,2026-07-28:1052,2026-07-29:1818,2026-07-30:2272,2026-07-31:2416"
 tags:
   - github
   - "category/遊戲"
@@ -791,6 +791,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-31|2026-07-31]] — 再次上榜，2.4k stars
 - [[2026-07-30|2026-07-30]] — 再次上榜，2.3k stars
 - [[2026-07-29|2026-07-29]] — 再次上榜，1.8k stars
 - [[2026-07-28|2026-07-28]] — 再次上榜，1.1k stars

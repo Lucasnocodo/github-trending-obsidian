@@ -7,12 +7,12 @@ language: Python
 license: N/A
 description: "Permanent memory for AI agents. A 426-token prompt, a script, plug and play."
 homepage: ""
-stars: 884
-stars_per_day: 221
-forks: 53
-open_issues: 1
+stars: 935
+stars_per_day: 187
+forks: 54
+open_issues: 0
 created: 2026-07-25
-pushed_at: 2026-07-29
+pushed_at: 2026-07-31
 first_seen: 2026-07-28
 week: "2026-W31"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: "為 AI 代理提供永久記憶，簡單易用的記錄與檢索工�
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-08-02"
+appearances: 4
+next_review: "2026-08-07"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-28"
-star_history: "2026-07-28:661,2026-07-28:661,2026-07-29:816,2026-07-29:817,2026-07-30:884,2026-07-30:884"
+star_history: "2026-07-28:661,2026-07-28:661,2026-07-29:816,2026-07-29:817,2026-07-30:884,2026-07-30:884,2026-07-31:935"
 tags:
   - github
   - "category/開發工具"
@@ -764,6 +764,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-07-31|2026-07-31]] — 再次上榜，935 stars
 - [[2026-07-30|2026-07-30]] — 再次上榜，884 stars
 - [[2026-07-29|2026-07-29]] — 再次上榜，816 stars
 - [[2026-07-28|2026-07-28]] — 首次收錄，661 stars
