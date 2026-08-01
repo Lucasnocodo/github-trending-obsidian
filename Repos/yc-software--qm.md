@@ -1,68 +1,64 @@
 ---
-repo: WilonityXYZ/Wilonity
-url: https://github.com/WilonityXYZ/Wilonity
-owner: WilonityXYZ
-owner_type: User
-language: N/A
+repo: yc-software/qm
+url: https://github.com/yc-software/qm
+owner: yc-software
+owner_type: Organization
+language: TypeScript
 license: MIT
-description: "Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread"
-homepage: "https://wilonity.xyz"
-stars: 651
-stars_per_day: 651
-forks: 0
-open_issues: 1
-created: 2026-07-31
-pushed_at: 2026-07-31
-first_seen: 2026-07-31
+description: "Multiplayer agent harness for work"
+homepage: "https://qm.ycombinator.com"
+stars: 2422
+stars_per_day: 1211
+forks: 218
+open_issues: 30
+created: 2026-07-29
+pushed_at: 2026-08-01
+first_seen: 2026-08-01
 week: "2026-W31"
-month: "2026-07"
+month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.1.4"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-07-31
+last_reviewed: 2026-08-01
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 1
-next_review: "2026-08-03"
-contributor_count: 1
+next_review: "2026-08-04"
+contributor_count: 3
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 11833
-readme_length: 2956
+repo_size_kb: 5605
+readme_length: 8263
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-07-31"
-star_history: "2026-07-31:651"
+ring_history: "assess@2026-08-01"
+star_history: "2026-08-01:2422"
 tags:
   - github
   - "category/other"
-  - "lang/other"
-  - "topic/aim"
-  - "topic/arc_raiders"
-  - "topic/arc_raiders_mod"
-  - "topic/counter_strike_2"
-  - "topic/cs2hack"
+  - "lang/typescript"
+  - org
 aliases:
-  - "Wilonity"
-  - "WilonityXYZ/Wilonity"
+  - "qm"
+  - "yc-software/qm"
 ---
 
-# Wilonity
+# qm
 
-**651** stars · **651** stars/天 · 建立 1 天前 · N/A · MIT
+**2.4k** stars · **1.2k** stars/天 · 建立 2 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/WilonityXYZ--Wilonity");
+const me = dv.page("Repos/yc-software--qm");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
-
-`aim` `arc-raiders` `arc-raiders-mod` `counter-strike-2` `cs2hack` `eft-tool` `game` `hack` `internal` `kernel` `meccha-chameleon-tool` `memory-hacking` `minecraft` `mod` `radar` `rust-plugins` `rust-treasures` `rusthack` `warzone-modification` `webradar`
+`ORG` `v0.1.4`
 
 > [!summary] 一句話摘要
-> Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread
+> Multiplayer agent harness for work
 
 ## 專案簡介
 
-Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread
+Multiplayer agent harness for work
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/yc-software--qm");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +119,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/yc-software--qm");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,134 +143,225 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 0 |
-| Open Issues | 1 |
+| Forks | 218 |
+| Open Issues | 30 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-07-31 |
-| 建立日期 | 2026-07-31 |
-| 官方網站 | [Link](https://wilonity.xyz) |
-| Repo 大小 | 11.6 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/WilonityXYZ/Wilonity) |
-| Topics | `aim` `arc-raiders` `arc-raiders-mod` `counter-strike-2` `cs2hack` `eft-tool` `game` `hack` |
+| 最後推送 | 2026-08-01 |
+| 建立日期 | 2026-07-29 |
+| 官方網站 | [Link](https://qm.ycombinator.com) |
+| Repo 大小 | 5.5 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/yc-software/qm) |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "TypeScript" : 92
+>     "HTML" : 5
+>     "CSS" : 1
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@WilonityXYZ](https://github.com/WilonityXYZ) | 3 |
+> | [@ReganBell](https://github.com/ReganBell) | 20 |
+> | [@16francej](https://github.com/16francej) | 19 |
+> | [@BinSquare](https://github.com/BinSquare) | 1 |
+
+**最新版本**：v0.1.4 (2026-07-31)
+
+> [!info]- Release Notes
+> ## What's Changed
+> * Restrict the web-ui model picker to the org allowed-models list by @16francej in https://github.com/yc-software/qm/pull/40
+> * Use @latest in the qm init bootstrap instead of a version placeholder by @16francej in https://github.com/yc-software/qm/pull/41
+> 
+> 
+> **Full Changelog**: https://github.com/yc-software/qm/compare/v0.1.3...v0.1.4
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-31 ~ 2026-07-31）
-> **活躍天數** 1 天 · **最新 commit** Add files via upload
+> [!abstract] 最近 10 次 commit（2026-07-30 ~ 2026-07-31）
+> **活躍天數** 2 天 · **最新 commit** Use @latest in the qm init bootstrap instead of a version placeholder (#41)
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 🚀 Wilonity Loader v3
+> # qm
 > 
-> **Next‑gen game enhancement platform**
+> A multiplayer agent harness for work. In Slack and on the web.
 > 
-> [](https://github.com/WilonityLoader)
-> [](https://wilonity.xyz)
-> [](LICENSE)
-> [](https://discord.gg/hRZ8bvq3qA)
-> [](https://twitter.com/wilonity)
-> [](https://t.me/DMVChannel)
+> ## What is QM?
 > 
-> ---
+> Most agents are designed like personal assistants. You can make one work for a whole
+> company, but it quickly gets complex. QM is designed for startups. Employees each get
+> their own isolated workspace and work independently without affecting each other, and
+> they can also collaborate with the agent in channels, group messages, and projects.
 > 
-> ## 📖 About
+> Each person and each room has its own scoped memory, files, keychain view, permissions,
+> crons, web apps, and durable sandbox.
 > 
-> **Wilonity Loader** is a modern game enhancement platform designed to elevate your gaming experience. Our mission is to provide gamers with powerful, reliable, and easy‑to‑use tools for their favorite titles.
+> It's built with open source in mind. Pick your own harness and model and switch between
+> them — Pi, OpenCode, Codex, and Claude Code all drive the same core, so a deployment
+> isn't tied to any single vendor.
 > 
-> We believe in:
-> - ✅ **Innovation** — constantly evolving technology
-> - 🔒 **Safety** — every tool is thoroughly tested and verified
-> - 🎯 **Precision** — advanced algorithms for optimal performance
-> - 🌍 **Community** — driven by feedback and collaboration
+> ## Features
 > 
-> ---
+> - **Personal and shared scopes.** People customize the agent to be _theirs_, and still
+>   work with it collaboratively in Slack channels and projects.
+> - **Slack and web.** The same identity and configuration carries between Slack and the
+>   web app.
+> - **Admin control.** Set org-level configuration, a security posture, and which
+>   harnesses and models are available.
+> - **Web apps.** Spin up custom internal apps and publish them to the right people.
+> - **Shared skills.** Skills are scope-owned and shareable by grant, with admin-gated
+>   promotion to the whole org and skill packs imported from git repositories.
+> - **Background work.** Crons and watches run work while nobody's watching.
 > 
-> ## 🎮 Supported Games
+> ## What you can do with it
 > 
-> | Game | Status | Modules |
-> |------|--------|---------|
-> | **CS2** | ✅ Fully supported | 60+ |
-> | **Valorant** | ✅ Fully supported | 40+ |
-> | **Rust** | ✅ Fully supported | 35+ |
-> | **Apex Legends** | ✅ Fully supported | 28+ |
-> | **Fortnite** | ✅ Fully supported | 25+ |
-> | **War Thunder** | ✅ Supported | 15+ |
-> | **Minecraft** | ✅ Fully supported | 45+ |
-> | **GTA V** | ✅ Supported | 30+ |
-> | **Overwatch 2** | ✅ Supported | 20+ |
-> | **Rainbow Six Siege** | ✅ Supported | 18+ |
-> | **League of Legends** | ✅ Supported | 22+ |
-> | **Dota 2** | ✅ Supported | 20+ |
-> | **Team Fortress 2** | ✅ Supported | 16+ |
-> | **Garry's Mod** | ✅ Supported | 12+ |
-> | **Among Us** | ✅ Supported | 10+ |
+> - Search internal notes, email, documents, databases, and the web together
+> - Retrieve information from your company brain
+> - Build internal apps, publish them to the right people, and keep their data current
+> - Learn your writing voice from past sends, then triage your inbox on a schedule —
+>   labels and reply drafts included
+> - Work in an existing repository: run tests, open PRs, monitor CI, check system logs
+> - Track a project in a shared channel and post updates and follow-ups
 > 
-> > 📋 *Full list and detailed module descriptions available on our [website](https://wilonity.xyz)*
+> ## Architecture
 > 
-> ---
+> ```mermaid
+> flowchart LR
+>   DB[("Postgressessions · memory · queue")]
 > 
-> ## 🖥️ Application Preview.
+>   subgraph CORE["Headless core"]
+>     API["API · identity · policy · scheduler"]
+>     LOOP["Agent loop(Pi, OpenCode, Claude Code)"]
+>     API  LOOP
+>   end
 > 
-> *Wilonity Loader interface – clean, fast, and intuitive*
+>   SBX["Per-scope sandboxfiles · tools · logged-in services"]
 > 
-> ---
+>   DB  API
+>   LOOP  SBX
+> ```
 > 
-> ## ✨ Key Features
+> Every turn runs through a central core, which can use a variety of models and harnesses
+> to generate the response. A Postgres persistence layer holds user data, session history,
+> and other durable state. The agent has a small, fixed tool surface; one of those tools is
+> `execute`, which runs commands in the scope's own isolated sandbox — its durable computer,
+> where installed tools stay installed. The web UI, the admin panel, and the public portal
+> are optional plugins over the core's HTTP API;
+> Slack is an optional in-process plugin that core starts
+> and supervises through a direct service client.
 > 
-> - **Unified Launcher** – one app for all your games
-> - **Smart Module System** – load only what you need
-> - **Regular Updates** – stay ahead with constant improvements
-> - **User‑Friendly Interface** – designed for speed and simplicity
-> - **Cross‑Platform** – Windows 10/11 x64 & ARM64 support
-> - **Zero Configuration** – download, run, play
+> The core runs TypeScript directly on Node and uses Fastify for HTTP. The Slack plugin
+> uses Bolt; the web UI builds with Vite and renders with Lit.
 > 
-> ---
+> The core itself is generic. Everything specific to one company — org config, custom tools
+> and skills, sandbox image, infrastructure — lives in a **deployment directory** that the
+> [`qm` CLI](./cli/README.md) validates and deploys. Every substrate (harness, session
+> store, sandbox, memory) sits behind an interface, so production implementations swap in
+> via one wiring file.
 > 
-> ## 📥 Installation
+> ## Security and secrets
 > 
-> ### Requirements
-> - Windows 10/11 (x64 or ARM64)
-> - .NET Framework 4.8 or higher
-> - Visual C++ Redistributable (included in installer)
+> QM's approach follows local coding agents like OpenCode, Codex, and Claude Code: the
+> agent acts as the person it's working for, with their credentials and permissions, and
+> everything it does is audited. An org picks one security posture, which narrower scopes
+> can only tighten:
 > 
-> ### Steps
-> 1. Download the latest installer from our [official website](https://wilonity.xyz)
-> 2. Run the setup and follow the instructions
-> 3. Launch Wilonity Loader from your desktop shortcut.
-> 4. Select your game and enjoy!
+> - **Strict** — every harness tool call pauses for human approval, except the two
+>   no-effect turn enders.
+> - **Auto** (default) — a classifier screens provenance-labelled external data and tool
+>   results before they reach the model; a deployment can point that at its own screening
+>   proxy.
+> - **Dangerous** — no content screening, no pauses between tool calls.
 > 
-> > ⚠️ *Older Windows versions (7, 8.1) are not supported.*
+> The predeclared command policy — approval rules and hard denials for things like
+> recursive deletes or destructive SQL — applies in every posture, Dangerous included.
 > 
-> ## 📬 Contact & Social
+> [`SECURITY.md`](./SECURITY.md) has the threat model, the operator assumptions, and the
+> known limitations.
 > 
-> - **Website**: [wilonity.xyz](https://wilonity.xyz)
-> - **Email**: [help@wilonity.xyz](mailto:help@wilonity.xyz)
-> - **Discord**: [Join our server](https://discord.gg/hRZ8bvq3qA)
-> - **Twitter**: [@wilonity](https://twitter.com/wilonity)
-> - **Telegram**: [t.me/wilonity](https://t.me/DMVChannel)
-> - **GitHub**: [github.com/Wilonity](https://github.com/WilonityLoader)
+> ## Deploy it for your org
 > 
-> ---
+> Create an organization-owned deployment repository that depends on `@yc-software/qm`:
 > 
-> ## 📄 License
+> ```bash
+> npm exec --yes --package=@yc-software/qm@latest -- \
+>   qm init . --org  --target 
+> npm install
+> ```
 > 
-> This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details..
+> Initialization materializes a deployment skill for an agent and walks through
+> infrastructure, web sign-in, connector credentials, optional Slack access, deployment,
+> and live verification — no source checkout required. Each deployment runs in the
+> operator's own cloud account; initialization does not generate or enable deployment CI,
+> and this repository has no production deployment workflow. See
+> [`deployment.md`](./deployment.md) for the details.
 > 
-> ---
+> ## Contributing
 > 
-> **Made with ❤️ by the Wilonity Team**
+> We take contributions as _human-written_ text, not code — see
+> [`CONTRIBUTING.md`](./CONTRIBUTING.md). Describe the change you'd like informally in a
+> `.txt` or `.md` file in [`adrs/`](./adrs/), and if we're aligned we'll handle the
+> implementation. Report vulnerabilities privately — see [`SECURITY.md`](./SECURITY.md),
+> not a public issue.
+> 
+> ## Customize your instance
+> 
+> The deployment repository above carries config and a sandbox layer, and never needs a
+> source checkout. Some organizations want the opposite trade: the whole codebase in one
+> place, so engineers and coding agents read core and customizations together, while the
+> customizations themselves stay private. For that, keep a **private fork**: a standalone
+> private repository whose history begins as a clone of qm and whose core stays identical
+> to upstream.
+> 
+> Populate it once, then clone it to work in:
+> 
+> ```bash
+> gh repo create /qm-private --private
+> 
+> git clone --bare git@github.com:yc-software/qm qm-seed.git
+> git -C qm-seed.git push --mirror git@github.com:/qm-private
+> rm -rf qm-seed.git
+> 
+> git clone git@github.com:/qm-private
+> git -C qm-private remote add upstream git@github.com:yc-software/qm
+> ```
+> 
+> Create the private fork with a plain clone, as shown above, and never with GitHub's fork
+> feature. The word "fork" here names the concept — a downstream copy that diverges
+> deliberately and merges from upstream — not GitHub's Fork button. A GitHub fork inherits
+> the visibility of the repository it came from, so a fork of a public repository cannot be
+> made private. A GitHub fork also shares one object network with the repository it came
+> from, so commits pushed to the fork stay fetchable by SHA from the public side. Many
+> organizations disallow forking private repositories as well. A plain clone has none of
+> these problems, and it costs one thing: the clone is an ordinary repository, so upstream's
+> CI workflows run live in your own account. Expect to supply the secrets those workflows
+> need, or disable the ones you do not want running.
+> 
+> Everything specific to your organization goes in `deploy/layers//` — config, sandbox
+> tools and skills, plugin images, infrastructure — in the same shape `qm init` produces. See
+> [`deploy/layers/README.md`](./deploy/layers/README.md). Core stays byte-identical to
+> upstream, which is what keeps merges small.
+> 
+> Two skills maintain the boundary in both directions. `update-qm` merges upstream qm into
+> the private fork and opens the sync PR; `upstream-pr` sends an organization-agnostic fix back to
+> qm, cutting the branch from `upstream/main` and checking the outgoing diff, commit
+> messages, and screenshots for organization identifiers before it pushes. Nothing under
+> `deploy/layers/` ever travels upstream.
+> 
+> ## Going deeper
+> 
+> - [`docs/getting-started.md`](./docs/getting-started.md) — first run, end to end
+> - [`cli/README.md`](./cli/README.md) — the `qm` CLI and the deployment directory contract
+> - [`docs/deploy-directory.md`](./docs/deploy-directory.md) — the d
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[xikhar--persona|xikhar/persona]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[bashalarmistalt--decimen-optical-transfer|bashalarmistalt/decimen-optical-transfer]] · [[gavamedia--deltafin|gavamedia/deltafin]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]]
 
-[GitHub](https://github.com/WilonityXYZ/Wilonity) · [官方網站](https://wilonity.xyz)
+[GitHub](https://github.com/yc-software/qm) · [官方網站](https://qm.ycombinator.com)
 
 ## 相關收錄
 
@@ -284,7 +369,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "WilonityXYZ--Wilonity"
+> WHERE category = "Other" AND file.name != "yc-software--qm"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -293,7 +378,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "WilonityXYZ--Wilonity" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "yc-software--qm" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -302,18 +387,18 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W31" AND file.name != "WilonityXYZ--Wilonity"
+> WHERE week = "2026-W31" AND file.name != "yc-software--qm"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/yc-software--qm");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "WilonityXYZ--Wilonity" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "yc-software--qm" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -329,7 +414,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "WilonityXYZ" AND file.name != "WilonityXYZ--Wilonity"
+> WHERE owner = "yc-software" AND file.name != "yc-software--qm"
 > SORT stars DESC
 > ```
 
@@ -337,7 +422,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/yc-software--qm");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -354,7 +439,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/yc-software--qm");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -387,7 +472,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/yc-software--qm");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -411,7 +496,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/yc-software--qm");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -448,7 +533,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/yc-software--qm");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -531,7 +616,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-07-31** — 首次收錄
+> **2026-08-01** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -547,4 +632,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-07-31|2026-07-31]] — 首次收錄，651 stars
+- [[2026-08-01|2026-08-01]] — 首次收錄，2.4k stars

@@ -1,21 +1,21 @@
 ---
-repo: WilonityXYZ/Wilonity
-url: https://github.com/WilonityXYZ/Wilonity
-owner: WilonityXYZ
+repo: xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer
+url: https://github.com/xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer
+owner: xdash
 owner_type: User
 language: N/A
-license: MIT
-description: "Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread"
-homepage: "https://wilonity.xyz"
-stars: 651
-stars_per_day: 651
-forks: 0
-open_issues: 1
-created: 2026-07-31
+license: N/A
+description: "FDE（前沿部署工程师）从零入门指南（基于范冰《增长黑客》原书框架）"
+homepage: ""
+stars: 594
+stars_per_day: 594
+forks: 70
+open_issues: 6
+created: 2026-07-30
 pushed_at: 2026-07-31
-first_seen: 2026-07-31
+first_seen: 2026-08-01
 week: "2026-W31"
-month: "2026-07"
+month: "2026-08"
 category: "Other"
 subcategory: ""
 release_tag: ""
@@ -25,44 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-07-31
+last_reviewed: 2026-08-01
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 1
-next_review: "2026-08-03"
+next_review: "2026-08-04"
 contributor_count: 1
-engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 11833
-readme_length: 2956
+engagement: "medium"
+issue_close_rate: 14
+repo_size_kb: 14446
+readme_length: 2013
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-07-31"
-star_history: "2026-07-31:651"
+ring_history: "assess@2026-08-01"
+star_history: "2026-08-01:594"
 tags:
   - github
   - "category/other"
   - "lang/other"
-  - "topic/aim"
-  - "topic/arc_raiders"
-  - "topic/arc_raiders_mod"
-  - "topic/counter_strike_2"
-  - "topic/cs2hack"
 aliases:
-  - "Wilonity"
-  - "WilonityXYZ/Wilonity"
+  - "FDE-the-Guidance-Book-of-Forward-Deployed-Engineer"
+  - "xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer"
 ---
 
-# Wilonity
+# FDE-the-Guidance-Book-of-Forward-Deployed-Engineer
 
-**651** stars · **651** stars/天 · 建立 1 天前 · N/A · MIT
+**594** stars · **594** stars/天 · 建立 1 天前 · N/A · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/WilonityXYZ--Wilonity");
+const me = dv.page("Repos/xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -77,20 +72,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 `個人專案`
 
-`aim` `arc-raiders` `arc-raiders-mod` `counter-strike-2` `cs2hack` `eft-tool` `game` `hack` `internal` `kernel` `meccha-chameleon-tool` `memory-hacking` `minecraft` `mod` `radar` `rust-plugins` `rust-treasures` `rusthack` `warzone-modification` `webradar`
-
 > [!summary] 一句話摘要
-> Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread
+> FDE（前沿部署工程师）从零入门指南（基于范冰《增长黑客》原书框架）
 
 ## 專案簡介
 
-Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread
+FDE（前沿部署工程师）从零入门指南（基于范冰《增长黑客》原书框架）
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +118,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,134 +142,107 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 0 |
-| Open Issues | 1 |
-| Issue 解決率 | 0% (0 closed) |
+| Forks | 70 |
+| Open Issues | 6 |
+| Issue 解決率 | 14% (1 closed) |
 | 最後推送 | 2026-07-31 |
-| 建立日期 | 2026-07-31 |
-| 官方網站 | [Link](https://wilonity.xyz) |
-| Repo 大小 | 11.6 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/WilonityXYZ/Wilonity) |
-| Topics | `aim` `arc-raiders` `arc-raiders-mod` `counter-strike-2` `cs2hack` `eft-tool` `game` `hack` |
+| 建立日期 | 2026-07-30 |
+| Repo 大小 | 14.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@WilonityXYZ](https://github.com/WilonityXYZ) | 3 |
+> | [@xdash](https://github.com/xdash) | 10 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-31 ~ 2026-07-31）
-> **活躍天數** 1 天 · **最新 commit** Add files via upload
+> [!abstract] 最近 10 次 commit（2026-07-30 ~ 2026-07-31）
+> **活躍天數** 2 天 · **最新 commit** 书名统一为《前线部署工程师》：全局改译名、封面加网址、章节挪至根目录方便浏览
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#4](https://github.com/xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer/issues/4) | 分享两篇 FDE 一线观察：快消企业与日本市场的 AI 落地现场 | 1 | 1 |
+> | [#2](https://github.com/xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer/issues/2) | 建议补充企业 AI 项目的角色错位：买单者、使用者、受益者与担责者并非同一人 | 1 | 1 |
+> | [#6](https://github.com/xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer/issues/6) | 建议升级为 site 模式，提升读者阅读体验. | 0 | 2 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 🚀 Wilonity Loader v3
+> # 前线部署工程师：人工智能时代的客户价值交付秘籍
 > 
-> **Next‑gen game enhancement platform**
-> 
-> [](https://github.com/WilonityLoader)
-> [](https://wilonity.xyz)
-> [](LICENSE)
-> [](https://discord.gg/hRZ8bvq3qA)
-> [](https://twitter.com/wilonity)
-> [](https://t.me/DMVChannel)
+> 范冰 著 · 免费公开全文，欢迎在线阅读与分享
 > 
 > ---
 > 
-> ## 📖 About
+> ## 关于本书
 > 
-> **Wilonity Loader** is a modern game enhancement platform designed to elevate your gaming experience. Our mission is to provide gamers with powerful, reliable, and easy‑to‑use tools for their favorite titles.
+> 2025 年夏天，我的朋友圈被同一个数字刷屏：95%。
 > 
-> We believe in:
-> - ✅ **Innovation** — constantly evolving technology
-> - 🔒 **Safety** — every tool is thoroughly tested and verified
-> - 🎯 **Precision** — advanced algorithms for optimal performance
-> - 🌍 **Community** — driven by feedback and collaboration
+> 麻省理工学院的一份报告说，过去三年，全球企业在生成式人工智能上烧了三四百亿美元，其中 95% 的项目没能产生任何能写进财务报表的价值。几乎同一时间，另一条新闻在往相反的方向狂奔：硅谷的招聘网站上，一个叫「前线部署工程师」（Forward Deployed Engineer，简称 FDE）的岗位，发布量九个月涨了八倍。OpenAI 在招，Anthropic 在招，YC 孵化器里一百多家创业公司都在招。
 > 
-> ---
+> 一边是企业人工智能项目 95% 的阵亡率，一边是一个岗位 800% 的抢手度。把这两条新闻摆在一起看，答案不难猜：**模型已经不稀缺了，能把模型塞进客户真实业务里的人，才稀缺。**
 > 
-> ## 🎮 Supported Games
+> 我由此对 FDE 这个岗位产生了浓厚的兴趣。多年前写《增长黑客》时，我做的事情本质上和这次一样：把一个硅谷正在发生、但国内还没有名字的东西，系统地研究一遍，再诚实地讲清楚。这次我也沿用了同样的笨办法——翻遍能找到的一手材料：Palantir 早期高管在播客里的复盘、前员工的回忆录、风投的行业分析、麻省理工那份报告的原文、几十份各家公司的招聘启事、薪酬报告、论坛上从业者的吐槽，以及国内第一批实践者的经验谈。
 > 
-> | Game | Status | Modules |
-> |------|--------|---------|
-> | **CS2** | ✅ Fully supported | 60+ |
-> | **Valorant** | ✅ Fully supported | 40+ |
-> | **Rust** | ✅ Fully supported | 35+ |
-> | **Apex Legends** | ✅ Fully supported | 28+ |
-> | **Fortnite** | ✅ Fully supported | 25+ |
-> | **War Thunder** | ✅ Supported | 15+ |
-> | **Minecraft** | ✅ Fully supported | 45+ |
-> | **GTA V** | ✅ Supported | 30+ |
-> | **Overwatch 2** | ✅ Supported | 20+ |
-> | **Rainbow Six Siege** | ✅ Supported | 18+ |
-> | **League of Legends** | ✅ Supported | 22+ |
-> | **Dota 2** | ✅ Supported | 20+ |
-> | **Team Fortress 2** | ✅ Supported | 16+ |
-> | **Garry's Mod** | ✅ Supported | 12+ |
-> | **Among Us** | ✅ Supported | 10+ |
+> 这本书就是那个研究过程的完整沉淀。它聊清楚三件事：
 > 
-> > 📋 *Full list and detailed module descriptions available on our [website](https://wilonity.xyz)*
+> - **FDE 是什么**：这个从 Palantir 情报项目里长出来的角色，如何定义、为何在人工智能时代爆发
+> - **怎么做**：沿着一次真实交付的完整旅程——找对问题、赢得客户、激活部署、守住续约、扩大收入、规模化复制
+> - **谁在做**：112 个真实可查的案例，从 Palantir、OpenAI、Anthropic 到 Harvey、Sierra，再到中国的第一批实践者
 > 
-> ---
+> 书里所有数据和案例，都在附录 C 里标明了出处。整理的过程本身就是学习，我尽量让每一条引用都经得起核查；如有疏漏，欢迎通过 Issue 指正。
 > 
-> ## 🖥️ Application Preview.
+> ## 为什么免费公开
 > 
-> *Wilonity Loader interface – clean, fast, and intuitive*
+> 这本书首先是我写给自己的学习笔记。研究一个陌生领域，最好的验收方式就是把它讲成一本别人也能读懂的书——讲不清楚的地方，就是自己没弄懂的地方。
 > 
-> ---
+> 整理完之后，把它锁在硬盘里，多少有些可惜。FDE 在国内还是一个刚有名字的岗位，很多讨论还停留在「它是不是换了个名字的售前」。如果这份沉淀能帮正在考虑转型的工程师看清这个岗位的全貌，帮投身企业人工智能的创业者少走一段弯路，帮任何一个想弄明白「人工智能到底怎么才能在企业里落地」的人节省几十个小时的检索时间，那它公开出来，显然比躺在我的硬盘里更有价值。
 > 
-> ## ✨ Key Features
+> 知识的价值在于流动，而不在于囤积。
 > 
-> - **Unified Launcher** – one app for all your games
-> - **Smart Module System** – load only what you need
-> - **Regular Updates** – stay ahead with constant improvements
-> - **User‑Friendly Interface** – designed for speed and simplicity
-> - **Cross‑Platform** – Windows 10/11 x64 & ARM64 support
-> - **Zero Configuration** – download, run, play
+> ## 关于作者
 > 
-> ---
+> 范冰，网名 XDash，互联网从业者，长期关注技术趋势与商业方法论。本书为个人研究整理，不代表任何机构立场。
 > 
-> ## 📥 Installation
+> ## 阅读方式
 > 
-> ### Requirements
-> - Windows 10/11 (x64 or ARM64)
-> - .NET Framework 4.8 or higher
-> - Visual C++ Redistributable (included in installer)
+> - **在线阅读**：点击下方目录，直接在 GitHub 上按章节阅读
+> - **整本下载**：[前线部署工程师.pdf](前线部署工程师.pdf)（根目录合并版，95 页；如有更新以章节 Markdown 为准）
 > 
-> ### Steps
-> 1. Download the latest installer from our [official website](https://wilonity.xyz)
-> 2. Run the setup and follow the instructions
-> 3. Launch Wilonity Loader from your desktop shortcut.
-> 4. Select your game and enjoy!
+> ## 目录
 > 
-> > ⚠️ *Older Windows versions (7, 8.1) are not supported.*
+> | 章节 | 内容 |
+> | --- | --- |
+> | [第 1 章](01-第1章-FDE的崛起.md) | FDE 的崛起 |
+> | [第 2 章](02-第2章-解决正确的问题.md) | 解决正确的问题 |
+> | [第 3 章](03-第3章-赢得客户.md) | 赢得客户 |
+> | [第 4 章](04-第4章-激活部署.md) | 激活部署 |
+> | [第 5 章](05-第5章-守住续约.md) | 守住续约 |
+> | [第 6 章](06-第6章-扩大收入.md) | 扩大收入 |
+> | [第 7 章](07-第7章-规模化复制.md) | 规模化复制 |
+> | [第 8 章](08-第8章-完整案例集.md) | 完整案例集 |
+> | [后记](09-后记-FDE的职业道德.md) | FDE 的职业道德 |
+> | [附录 A](10-附录A-FDE应当关注的常用指标.md) | FDE 应当关注的常用指标 |
+> | [附录 B](11-附录B-FDE人物与团队名单.md) | FDE 人物与团队名单 |
+> | [附录 C](12-附录C-全书案例索引与资料出处.md) | 全书案例索引与资料出处 |
 > 
-> ## 📬 Contact & Social
+> ## 版权声明
 > 
-> - **Website**: [wilonity.xyz](https://wilonity.xyz)
-> - **Email**: [help@wilonity.xyz](mailto:help@wilonity.xyz)
-> - **Discord**: [Join our server](https://discord.gg/hRZ8bvq3qA)
-> - **Twitter**: [@wilonity](https://twitter.com/wilonity)
-> - **Telegram**: [t.me/wilonity](https://t.me/DMVChannel)
-> - **GitHub**: [github.com/Wilonity](https://github.com/WilonityLoader)
+> 本书著作权归作者范冰所有。本仓库内容由作者本人授权公开，供读者**免费阅读与非商业性分享**，转载请务必注明出处与作者；任何商业用途（包括但不限于出版、培训、付费内容改编）须事先获得作者书面许可。
 > 
 > ---
 > 
-> ## 📄 License
-> 
-> This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details..
-> 
-> ---
-> 
-> **Made with ❤️ by the Wilonity Team**
+> 如果这本书对你有帮助，欢迎 Star 本仓库，或把它分享给需要的人。
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[xikhar--persona|xikhar/persona]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[bashalarmistalt--decimen-optical-transfer|bashalarmistalt/decimen-optical-transfer]] · [[gavamedia--deltafin|gavamedia/deltafin]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]]
 
-[GitHub](https://github.com/WilonityXYZ/Wilonity) · [官方網站](https://wilonity.xyz)
+[GitHub](https://github.com/xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer)
 
 ## 相關收錄
 
@@ -284,7 +250,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "WilonityXYZ--Wilonity"
+> WHERE category = "Other" AND file.name != "xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -293,7 +259,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "WilonityXYZ--Wilonity" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -302,18 +268,18 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W31" AND file.name != "WilonityXYZ--Wilonity"
+> WHERE week = "2026-W31" AND file.name != "xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "WilonityXYZ--Wilonity" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -329,7 +295,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "WilonityXYZ" AND file.name != "WilonityXYZ--Wilonity"
+> WHERE owner = "xdash" AND file.name != "xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer"
 > SORT stars DESC
 > ```
 
@@ -337,7 +303,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -354,7 +320,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -387,7 +353,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -411,7 +377,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -448,7 +414,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -531,7 +497,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-07-31** — 首次收錄
+> **2026-08-01** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -547,4 +513,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-07-31|2026-07-31]] — 首次收錄，651 stars
+- [[2026-08-01|2026-08-01]] — 首次收錄，594 stars

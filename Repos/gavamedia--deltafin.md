@@ -1,21 +1,21 @@
 ---
-repo: WilonityXYZ/Wilonity
-url: https://github.com/WilonityXYZ/Wilonity
-owner: WilonityXYZ
-owner_type: User
-language: N/A
-license: MIT
-description: "Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread"
-homepage: "https://wilonity.xyz"
-stars: 651
-stars_per_day: 651
-forks: 0
-open_issues: 1
-created: 2026-07-31
-pushed_at: 2026-07-31
-first_seen: 2026-07-31
+repo: gavamedia/deltafin
+url: https://github.com/gavamedia/deltafin
+owner: gavamedia
+owner_type: Organization
+language: Python
+license: NOASSERTION
+description: "Run full Kimi K3 on a single device. And an OpenAI-compatible API server for local chat and coding agents."
+homepage: ""
+stars: 567
+stars_per_day: 142
+forks: 64
+open_issues: 6
+created: 2026-07-28
+pushed_at: 2026-07-30
+first_seen: 2026-08-01
 week: "2026-W31"
-month: "2026-07"
+month: "2026-08"
 category: "Other"
 subcategory: ""
 release_tag: ""
@@ -25,44 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-07-31
+last_reviewed: 2026-08-01
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 1
-next_review: "2026-08-03"
-contributor_count: 1
-engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 11833
-readme_length: 2956
+next_review: "2026-08-08"
+contributor_count: 2
+engagement: "medium"
+issue_close_rate: 40
+repo_size_kb: 755
+readme_length: 9975
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-07-31"
-star_history: "2026-07-31:651"
+ring_history: "assess@2026-08-01"
+star_history: "2026-08-01:567"
 tags:
   - github
   - "category/other"
-  - "lang/other"
-  - "topic/aim"
-  - "topic/arc_raiders"
-  - "topic/arc_raiders_mod"
-  - "topic/counter_strike_2"
-  - "topic/cs2hack"
+  - "lang/python"
+  - org
+  - "topic/kimi"
+  - "topic/kimi_k3"
+  - "topic/local_ai"
+  - "topic/local_llm"
 aliases:
-  - "Wilonity"
-  - "WilonityXYZ/Wilonity"
+  - "deltafin"
+  - "gavamedia/deltafin"
 ---
 
-# Wilonity
+# deltafin
 
-**651** stars · **651** stars/天 · 建立 1 天前 · N/A · MIT
+**567** stars · **142** stars/天 · 建立 4 天前 · Python · NOASSERTION
 
 ```dataviewjs
-const me = dv.page("Repos/WilonityXYZ--Wilonity");
+const me = dv.page("Repos/gavamedia--deltafin");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`ORG`
 
-`aim` `arc-raiders` `arc-raiders-mod` `counter-strike-2` `cs2hack` `eft-tool` `game` `hack` `internal` `kernel` `meccha-chameleon-tool` `memory-hacking` `minecraft` `mod` `radar` `rust-plugins` `rust-treasures` `rusthack` `warzone-modification` `webradar`
+`kimi` `kimi-k3` `local-ai` `local-llm`
 
 > [!summary] 一句話摘要
-> Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread
+> Run full Kimi K3 on a single device. And an OpenAI-compatible API server for local chat and coding agents.
 
 ## 專案簡介
 
-Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread
+Run full Kimi K3 on a single device. And an OpenAI-compatible API server for local chat and coding agents.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/gavamedia--deltafin");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +125,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/gavamedia--deltafin");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,134 +149,150 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 0 |
-| Open Issues | 1 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-07-31 |
-| 建立日期 | 2026-07-31 |
-| 官方網站 | [Link](https://wilonity.xyz) |
-| Repo 大小 | 11.6 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/WilonityXYZ/Wilonity) |
-| Topics | `aim` `arc-raiders` `arc-raiders-mod` `counter-strike-2` `cs2hack` `eft-tool` `game` `hack` |
+| Forks | 64 |
+| Open Issues | 6 |
+| Issue 解決率 | 40% (4 closed) |
+| 最後推送 | 2026-07-30 |
+| 建立日期 | 2026-07-28 |
+| Repo 大小 | 755 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/gavamedia/deltafin) |
+| Topics | `kimi` `kimi-k3` `local-ai` `local-llm` |
+
+> [!info]- 主要依賴
+> `requirements.txt` 中的核心套件：
+> `numpy` `safetensors` `tiktoken` `ml_dtypes` `blobfile` `transformers` `einops` `tokenizers` `packaging` `gigatoken @ https://files.pythonhosted.org/packages/05/8c/89091815057ea41a1e81061704266de52ac12e5411bc66d5f1b33a3f85a8/gigatoken-0.10.0-cp310-abi3-macosx_11_0_arm64.whl#sha256` `gigatoken @ https://files.pythonhosted.org/packages/35/6f/d393a7735cbf775f612da4d0674f7ecc8900e0be4989fd46cbe23f650965/gigatoken-0.10.0-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl#sha256` `gigatoken @ https://files.pythonhosted.org/packages/e7/32/a0b3af6db26b3704224d3ad856ebadfdb6ed5d50210ab16ab9ad27b30673/gigatoken-0.10.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 90
+>     "C" : 4
+>     "Objective-C++" : 3
+>     "Metal" : 2
+>     "Cuda" : 1
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@WilonityXYZ](https://github.com/WilonityXYZ) | 3 |
+> | [@chrisringrose](https://github.com/chrisringrose) | 21 |
+> | [@AdamTheCoderman](https://github.com/AdamTheCoderman) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-31 ~ 2026-07-31）
-> **活躍天數** 1 天 · **最新 commit** Add files via upload
+> [!abstract] 最近 10 次 commit（2026-07-29 ~ 2026-07-30）
+> **活躍天數** 2 天 · **最新 commit** Add idle-warmed exact server tokenization
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#15](https://github.com/gavamedia/deltafin/issues/15) | M5 Max / 128 GB full-local K3 profile (internal NVMe, int8 s | 3 | 1 |
+> | [#13](https://github.com/gavamedia/deltafin/issues/13) | M3 Ultra 512GB testing | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 🚀 Wilonity Loader v3
+> ```
+>    ____       _ _         __ _
+>         |  _ \  ___| | |_ __ _ / _(_)_ __
+>         | | | |/ _ \ | __/ _` | |_| | '_ \
+>         | |_| |  __/ | || (_| |  _| | | | |
+>         |____/ \___|_|\__\__,_|_| |_|_| |_|
+> ```
 > 
-> **Next‑gen game enhancement platform**
 > 
-> [](https://github.com/WilonityLoader)
-> [](https://wilonity.xyz)
-> [](LICENSE)
-> [](https://discord.gg/hRZ8bvq3qA)
-> [](https://twitter.com/wilonity)
-> [](https://t.me/DMVChannel)
+> ## 1. Install or upgrade
 > 
-> ---
 > 
-> ## 📖 About
+> ### New installation
 > 
-> **Wilonity Loader** is a modern game enhancement platform designed to elevate your gaming experience. Our mission is to provide gamers with powerful, reliable, and easy‑to‑use tools for their favorite titles.
+> Clone the repository and enter it first; every path below is relative to the
+> Deltafin folder. The only real decision is step 3.
 > 
-> We believe in:
-> - ✅ **Innovation** — constantly evolving technology
-> - 🔒 **Safety** — every tool is thoroughly tested and verified
-> - 🎯 **Precision** — advanced algorithms for optimal performance
-> - 🌍 **Community** — driven by feedback and collaboration
+> ```bash
+> git clone https://github.com/gavamedia/deltafin.git
+> cd deltafin
 > 
-> ---
 > 
-> ## 🎮 Supported Games
+> ### An experiment in running [Kimi K3](https://huggingface.co/moonshotai/Kimi-K3) (2.8T parameters) on one local workstation
 > 
-> | Game | Status | Modules |
-> |------|--------|---------|
-> | **CS2** | ✅ Fully supported | 60+ |
-> | **Valorant** | ✅ Fully supported | 40+ |
-> | **Rust** | ✅ Fully supported | 35+ |
-> | **Apex Legends** | ✅ Fully supported | 28+ |
-> | **Fortnite** | ✅ Fully supported | 25+ |
-> | **War Thunder** | ✅ Supported | 15+ |
-> | **Minecraft** | ✅ Fully supported | 45+ |
-> | **GTA V** | ✅ Supported | 30+ |
-> | **Overwatch 2** | ✅ Supported | 20+ |
-> | **Rainbow Six Siege** | ✅ Supported | 18+ |
-> | **League of Legends** | ✅ Supported | 22+ |
-> | **Dota 2** | ✅ Supported | 20+ |
-> | **Team Fortress 2** | ✅ Supported | 16+ |
-> | **Garry's Mod** | ✅ Supported | 12+ |
-> | **Among Us** | ✅ Supported | 10+ |
+> Deltafin is a small research project that runs a Mixture-of-Experts model far
+> larger than the machine it sits on. It supports Apple Silicon macOS and
+> x86-64/aarch64 Linux, automatically selecting MPS, CUDA or CPU for the resident
+> model path and a qualified Metal, CUDA or CPU MXFP4 expert kernel. The
+> maintainer-run exact-oracle reference is now **0.2660 token/s (3.76
+> seconds/token median)** on a modest 64 GB M1 Max; that is one first-generation
+> machine, not a ceiling for newer hardware. Speculative acceptance varies with
+> the text, so the observed three-run range is reported below rather than hidden.
 > 
-> > 📋 *Full list and detailed module descriptions available on our [website](https://wilonity.xyz)*
+> The README stays focused on installing and running the project. For the
+> mechanisms, measurements, and fallback rules behind the speed work, see
+> [How Deltafin's optimizations work](OPTIMIZATIONS.md).
+> 
+> One principle sits above every optimization: **speed must never come from
+> reducing model quality**. Deltafin keeps all 16 routed experts and the full K3
+> target as the sole authority for every emitted token. Small draft models may
+> suggest work, but confidence and model selection can change only what K3
+> verifies—not what is allowed to reach the output.
+> 
+> -brightgreen)
 > 
 > ---
 > 
-> ## 🖥️ Application Preview.
 > 
-> *Wilonity Loader interface – clean, fast, and intuitive*
+> ### Configuration
 > 
-> ---
+> Everything works with no configuration: Deltafin picks a preferred available
+> device and the int8 spine when it has been built, and says what it chose at
+> startup. These variables exist for overriding that:
 > 
-> ## ✨ Key Features
-> 
-> - **Unified Launcher** – one app for all your games
-> - **Smart Module System** – load only what you need
-> - **Regular Updates** – stay ahead with constant improvements
-> - **User‑Friendly Interface** – designed for speed and simplicity
-> - **Cross‑Platform** – Windows 10/11 x64 & ARM64 support
-> - **Zero Configuration** – download, run, play
-> 
-> ---
-> 
-> ## 📥 Installation
-> 
-> ### Requirements
-> - Windows 10/11 (x64 or ARM64)
-> - .NET Framework 4.8 or higher
-> - Visual C++ Redistributable (included in installer)
-> 
-> ### Steps
-> 1. Download the latest installer from our [official website](https://wilonity.xyz)
-> 2. Run the setup and follow the instructions
-> 3. Launch Wilonity Loader from your desktop shortcut.
-> 4. Select your game and enjoy!
-> 
-> > ⚠️ *Older Windows versions (7, 8.1) are not supported.*
-> 
-> ## 📬 Contact & Social
-> 
-> - **Website**: [wilonity.xyz](https://wilonity.xyz)
-> - **Email**: [help@wilonity.xyz](mailto:help@wilonity.xyz)
-> - **Discord**: [Join our server](https://discord.gg/hRZ8bvq3qA)
-> - **Twitter**: [@wilonity](https://twitter.com/wilonity)
-> - **Telegram**: [t.me/wilonity](https://t.me/DMVChannel)
-> - **GitHub**: [github.com/Wilonity](https://github.com/WilonityLoader)
-> 
-> ---
-> 
-> ## 📄 License
-> 
-> This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details..
-> 
-> ---
-> 
-> **Made with ❤️ by the Wilonity Team**
+> | Variable | Default | Meaning |
+> |---|---|---|
+> | `K3_DEV` | auto | `mps` when available, then the first CUDA device visible to the process, otherwise `cpu`; accepts explicit `mps`, `cuda`, `cuda:N` or `cpu` |
+> | `K3_MOE` | auto | `metal` on MPS; a native `cuda` candidate on CUDA; otherwise `cpu`. Optional GPU backends must pass their own ABI, shape and correctness checks or fall back to CPU |
+> | `K3_GEMV_LIB` / `K3_BATCH_LIB` | platform default | override the native MXFP4 library paths (`.dylib` on macOS, `.so` on Linux) |
+> | `K3_CUDA_MOE_LIB` | `tools/libcudamoe.so` | override the optional native CUDA library path |
+> | `K3_CUDA_ARCH` | auto | add compiler-supported native CUDA images detected from installed GPUs while retaining a portable PTX fallback; accepts strict values such as `sm_89` or `sm_89,sm_120` for cross-builds |
+> | `K3_CUDA_EXPERT_CACHE` | `auto` | maximum resident GPU experts; `auto` budgets from free VRAM at the first real route, after model allocations, while `0` keeps CUDA compute but disables residency |
+> | `K3_CUDA_EXPERT_CACHE_RESERVE` | `auto` | VRAM kept outside the expert cache (`auto` is at least 2 GiB and 20% of free VRAM); accepts byte units or a percentage |
+> | `K3_CUDA_INT8_DEQUANT` | `auto` | qualified one-pass CUDA dequant for int8 resident-spine tensors; `off` retains the selected PyTorch expression |
+> | `K3_SPINE` | auto | `int8` when built (recommended), else `bf16`; former 4/6-bit mixed-spine modes are rejected by the quality guard |
+> | `K3_INT8_LM_HEAD` | `auto` | packed row-int8 output head on a qualified native backend; automatic on MPS, forceable elsewhere, with the first real head call guarded by a dense fallback |
+> | `K3_INT8_KDA_QKV` | `0` | experimental packed row-int8 bundle for KDA Q/K/V/G/F-A/B; one real MPS streamed-weight sequence has passed exactly, while every backend remains capability-gated with a dense fallback |
+> | `K3_KDA_RECUR` | `device` | keep the KDA recurrence on the selected CPU, CUDA or MPS device; `cpu` preserves the historical MPS-to-CPU experiment and legacy `mps` is accepted as an alias for `device` |
+> | `K3_MLA_QUERY_ALIAS` | `0` | opt-in T=1 eager-MLA zero-copy query view; source, provider, inference and layout gates retain the established path on any mismatch; removes a redundant allocation, with no end-to-end speed claim yet ([details](OPTIMIZATIONS.md#zero-copy-mla-query-view-at-single-token-decode)) |
+> | `K3_SHORTCONV` | `auto` | use the portable decode-time four-tap multiply/sum kernel on MPS, CUDA and CPU; `conv1d` remains forceable for backend retesting |
+> | `K3_UAG_DRAFT` | `auto` | load the local, pinned Qwen3 hybrid on the measured MPS path when both models are installed, with either model usable alone; every proposal is re-tokenized and target-verified by K3; `on` enables CUDA/CPU testing and `off` disables it |
+> | `K3_UAG_MODEL` | auto | override the wide assistant directory; automatic selection prefers `k3-draft-qwen3-1.7b-base`, then an existing 0.6B directory; hybrid eligibility comes from the validated model config rather than the folder name, and loading stays local-only, safetensors-only and `trust_remote_code=False` |
+> | `K3_UAG_PROBE_MODEL` | auto | override the 0.6B admission assistant used alongside the default 1.7B model; `off` keeps the selected single-model path |
+> | `K3_UAG_PROBE_DRAFTS` / `K3_UAG_MAX_DRAFTS` | `2` / `8` | exact adaptive verifier widths, capped at the capability-tested nine target rows |
+> | `K3_UAG_ASSISTANT_TOKENS` | `20` | hard ceiling for assistant-side tokens per proposal; the runtime first uses a smaller width-derived budget and retries at this ceiling only when translation needs it |
+> | `K3_UAG_CONFIDENCE` | `0.3` | stop a wide proposal before the assistant's first low-confidence token; the two-draft admission probe is always verified directly, while an empty wide proposal runs one ordinary K3 token and retries at the next position |
+> | `K3_SPEC` | `1` | master switch for target-verified universal and n-gram speculation |
+> | `K3_SPEC_ROLLBACK` | `replay` | replay captured KDA inputs and truncate MLA for partial n-gram drafts; partial universal drafts always restore and narrow-rerun, while `rerun` selects that conservative path for n-grams too |
+> | `K3_TEMPLATES` | `1` | template-layer buffer reuse |
+> | `K3_PRELOAD` / `K3_PREFETCH` | `1` | background layer loading / expert prefetch |
+> | `K3_GEMV_THREADS` | auto | native CPU MXFP4 workers: up to 4 effective CPUs on macOS and 8 on Linux, respecting affinity and cgroup quota; override to retune a specific host |
+> | `K3_GEMV_AUTOTUNE` | `0` | experimental one-shot CPU worker-width calibration on the first complete expert set; enables a width only when two exact trials agree on at least a 5% gain, and skips under load or when Metal/CUDA is selected ([details](OPTIMIZATIONS.md#live-cpu-worker-width-calibration)) |
+> | `K3_METAL_POSITION_BATCH` | `0` | MPS/Metal-specific exact opt-in T>1 position-major MoE; measured +2.0% on accepted speculative passes and should be retuned per Mac |
+> | `K3_MOE_TOP_K` | `16` | must remain the model's full 16 routed experts; startup rejects any lower value rather than exposing a quality/speed trade |
+> | `K3_CPU_MOE_BATCH` | `auto` | exact persistent CPU MXFP4 worker ring; padded counters measured +3.6% at eight threads |
+> | `K3_ASYNC_CACHE_WRITE` | `0` | opt-in cache-miss write overlap; `K3_CACHE_WRITE_QUEUE` (4) bounds outstanding buffers and `K3_CACHE_WRITE_WORKERS` (1) is retunable per host |
+> | `K3_APPROX` / `K3_DTYPE` | `0` / `fp32` | the supported runtime requires fp32 activation numerics and rejects former approximate/fp16 settings |
+> | `K3_RAM_GB` / `K3_PIN_LAYERS` | auto | override the RAM budget |
+> | `K3_PROFILE` | `0` | per-phase timing for each pass |
+> | `K3_TRACE` | `off` | `buffered` writes one router-trace block per pass; `sync` writes each layer immediately |
+> | `DELTAFIN_ROOT` | repo root | where caches and weights live |
+> | `K3_HF_HOST` / `K3_HF_PATH` | Hugging Face | point expert fetching at a mirror |
+> | `K3_SERVER
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[xikhar--persona|xikhar/persona]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[bashalarmistalt--decimen-optical-transfer|bashalarmistalt/decimen-optical-transfer]] · [[gavamedia--deltafin|gavamedia/deltafin]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]]
 
-[GitHub](https://github.com/WilonityXYZ/Wilonity) · [官方網站](https://wilonity.xyz)
+[GitHub](https://github.com/gavamedia/deltafin)
 
 ## 相關收錄
 
@@ -284,7 +300,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "WilonityXYZ--Wilonity"
+> WHERE category = "Other" AND file.name != "gavamedia--deltafin"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -293,7 +309,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "WilonityXYZ--Wilonity" AND status != "archived"
+> WHERE language = "Python" AND file.name != "gavamedia--deltafin" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -302,18 +318,18 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W31" AND file.name != "WilonityXYZ--Wilonity"
+> WHERE week = "2026-W31" AND file.name != "gavamedia--deltafin"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/gavamedia--deltafin");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "WilonityXYZ--Wilonity" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "gavamedia--deltafin" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -329,7 +345,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "WilonityXYZ" AND file.name != "WilonityXYZ--Wilonity"
+> WHERE owner = "gavamedia" AND file.name != "gavamedia--deltafin"
 > SORT stars DESC
 > ```
 
@@ -337,7 +353,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/gavamedia--deltafin");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -354,7 +370,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/gavamedia--deltafin");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -387,7 +403,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/gavamedia--deltafin");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -411,7 +427,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/gavamedia--deltafin");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -448,7 +464,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/gavamedia--deltafin");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -531,7 +547,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-07-31** — 首次收錄
+> **2026-08-01** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -547,4 +563,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-07-31|2026-07-31]] — 首次收錄，651 stars
+- [[2026-08-01|2026-08-01]] — 首次收錄，567 stars

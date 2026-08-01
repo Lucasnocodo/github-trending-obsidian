@@ -3172,10 +3172,10 @@
   },
   "mshumer/Claude-of-Duty": {
     "first_seen": "2026-07-27",
-    "last_seen": "2026-07-31",
-    "times_seen": 5,
+    "last_seen": "2026-08-01",
+    "times_seen": 6,
     "stars_first": 721,
-    "stars_last": 2416
+    "stars_last": 2531
   },
   "makecindy/cindy": {
     "first_seen": "2026-07-27",
@@ -3186,10 +3186,10 @@
   },
   "MoonshotAI/Kimi-K3": {
     "first_seen": "2026-07-28",
-    "last_seen": "2026-07-31",
-    "times_seen": 4,
+    "last_seen": "2026-08-01",
+    "times_seen": 5,
     "stars_first": 1993,
-    "stars_last": 7565
+    "stars_last": 7734
   },
   "vercel-labs/scriptc": {
     "first_seen": "2026-07-28",
@@ -3207,10 +3207,10 @@
   },
   "VictorTaelin/OptMem": {
     "first_seen": "2026-07-28",
-    "last_seen": "2026-07-31",
-    "times_seen": 4,
+    "last_seen": "2026-08-01",
+    "times_seen": 5,
     "stars_first": 661,
-    "stars_last": 935
+    "stars_last": 1041
   },
   "MoonshotAI/MoonEP": {
     "first_seen": "2026-07-29",
@@ -3242,10 +3242,10 @@
   },
   "xikhar/persona": {
     "first_seen": "2026-07-31",
-    "last_seen": "2026-07-31",
-    "times_seen": 1,
+    "last_seen": "2026-08-01",
+    "times_seen": 2,
     "stars_first": 679,
-    "stars_last": 679
+    "stars_last": 720
   },
   "WilonityXYZ/Wilonity": {
     "first_seen": "2026-07-31",
@@ -3256,10 +3256,10 @@
   },
   "0xwilliamortiz/ponytail-improved": {
     "first_seen": "2026-07-31",
-    "last_seen": "2026-07-31",
-    "times_seen": 1,
+    "last_seen": "2026-08-01",
+    "times_seen": 2,
     "stars_first": 564,
-    "stars_last": 564
+    "stars_last": 570
   },
   "0xwilliamortiz/openclaude-improved": {
     "first_seen": "2026-07-31",
@@ -3267,5 +3267,40 @@
     "times_seen": 1,
     "stars_first": 562,
     "stars_last": 562
+  },
+  "yc-software/qm": {
+    "first_seen": "2026-08-01",
+    "last_seen": "2026-08-01",
+    "times_seen": 1,
+    "stars_first": 2422,
+    "stars_last": 2422
+  },
+  "bashalarmistalt/decimen-optical-transfer": {
+    "first_seen": "2026-08-01",
+    "last_seen": "2026-08-01",
+    "times_seen": 1,
+    "stars_first": 2194,
+    "stars_last": 2194
+  },
+  "QwenAudio/qwen-audio-agent": {
+    "first_seen": "2026-08-01",
+    "last_seen": "2026-08-01",
+    "times_seen": 1,
+    "stars_first": 622,
+    "stars_last": 622
+  },
+  "xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer": {
+    "first_seen": "2026-08-01",
+    "last_seen": "2026-08-01",
+    "times_seen": 1,
+    "stars_first": 594,
+    "stars_last": 594
+  },
+  "gavamedia/deltafin": {
+    "first_seen": "2026-08-01",
+    "last_seen": "2026-08-01",
+    "times_seen": 1,
+    "stars_first": 567,
+    "stars_last": 567
   }
 }

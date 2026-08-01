@@ -1,63 +1,69 @@
 ---
-repo: xikhar/persona
-url: https://github.com/xikhar/persona
-owner: xikhar
-owner_type: User
+repo: QwenAudio/qwen-audio-agent
+url: https://github.com/QwenAudio/qwen-audio-agent
+owner: QwenAudio
+owner_type: Organization
 language: JavaScript
-license: NOASSERTION
-description: "Bringing real-time voice to life."
+license: Apache-2.0
+description: "A realtime voice runtime that keeps Agents talking, working, and present.  Real-time Voice Runtime for AI Agents"
 homepage: ""
-stars: 720
-stars_per_day: 240
-forks: 64
-open_issues: 2
-created: 2026-07-28
-pushed_at: 2026-07-31
-first_seen: 2026-07-31
+stars: 622
+stars_per_day: 156
+forks: 45
+open_issues: 5
+created: 2026-07-27
+pushed_at: 2026-08-01
+first_seen: 2026-08-01
 week: "2026-W31"
-month: "2026-07"
+month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v1.1.1"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-07-31
+last_reviewed: 2026-08-01
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-04"
-contributor_count: 2
+appearances: 1
+next_review: "2026-08-08"
+contributor_count: 5
 engagement: "low"
-issue_close_rate: 50
-repo_size_kb: 1302
-readme_length: 6932
+issue_close_rate: 17
+repo_size_kb: 15106
+readme_length: 6375
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-07-31"
-star_history: "2026-07-31:679,2026-08-01:720"
+ring_history: "assess@2026-08-01"
+star_history: "2026-08-01:622"
 tags:
   - github
   - "category/other"
   - "lang/javascript"
+  - org
+  - "topic/agent"
+  - "topic/agentic_ai"
+  - "topic/voice_agent"
+  - "topic/voice_ai"
+  - "topic/voice_chat"
 aliases:
-  - "persona"
-  - "xikhar/persona"
+  - "qwen-audio-agent"
+  - "QwenAudio/qwen-audio-agent"
 ---
 
-# persona
+# qwen-audio-agent
 
-**679** stars · **340** stars/天 · 建立 2 天前 · JavaScript · NOASSERTION
+**622** stars · **156** stars/天 · 建立 4 天前 · JavaScript · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/xikhar--persona");
+const me = dv.page("Repos/QwenAudio--qwen-audio-agent");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`ORG` `v1.1.1`
+
+`agent` `agentic-ai` `voice-agent` `voice-ai` `voice-chat`
+
 > [!summary] 一句話摘要
-> Bringing real-time voice to life.
+> A realtime voice runtime that keeps Agents talking, working, and present.  Real-time Voice Runtime for AI Agents
 
 ## 專案簡介
 
-Bringing real-time voice to life.
+A realtime voice runtime that keeps Agents talking, working, and present.  Real-time Voice Runtime for AI Agents
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/QwenAudio--qwen-audio-agent");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +126,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/QwenAudio--qwen-audio-agent");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,244 +150,404 @@ Bringing real-time voice to life.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 56 |
-| Open Issues | 1 |
-| Issue 解決率 | 50% (1 closed) |
-| 最後推送 | 2026-07-31 |
-| 建立日期 | 2026-07-28 |
-| Repo 大小 | 1.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/xikhar/persona) |
+| Forks | 45 |
+| Open Issues | 5 |
+| Issue 解決率 | 17% (1 closed) |
+| 最後推送 | 2026-08-01 |
+| 建立日期 | 2026-07-27 |
+| Repo 大小 | 14.8 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/QwenAudio/qwen-audio-agent) |
+| Topics | `agent` `agentic-ai` `voice-agent` `voice-ai` `voice-chat` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 54
->     "TypeScript" : 29
->     "CSS" : 11
->     "Objective-C++" : 3
->     "C++" : 2
+>     "JavaScript" : 89
+>     "Python" : 4
+>     "Shell" : 2
+>     "CSS" : 2
+>     "Swift" : 2
+>     "HTML" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@xikhar](https://github.com/xikhar) | 8 |
-> | [@fawnster](https://github.com/fawnster) | 2 |
+> | [@x-lixu](https://github.com/x-lixu) | 95 |
+> | [@PigeonDan1](https://github.com/PigeonDan1) | 2 |
+> | [@robin1001](https://github.com/robin1001) | 1 |
+> | [@ReganQing](https://github.com/ReganQing) | 1 |
+> | [@liutaocode](https://github.com/liutaocode) | 1 |
+
+**最新版本**：v1.1.1 (2026-07-31)
+
+> [!info]- Release Notes
+> ## What's Changed
+> * test: stabilize announcement retry timing by @x-lixu in https://github.com/QwenAudio/qwen-audio-agent/pull/36
+> * fix: handle runtime configuration, task metadata, and gateway races by @liutaocode in https://github.com/QwenAudio/qwen-audio-agent/pull/32
+> * release: qwen-audio-agent 1.1.1 by @x-lixu in https://github.com/QwenAudio/qwen-audio-agent/pull/37
+> 
+> ## New Contributors
+> * @liutaocode made their first contribution in https://github.com/QwenAudio/qwen-audio-agent/pull/32
+> 
+> **Full Changelog**: https://github.com/QwenAudio/qwen-audio-agent/compare/v1.1.0...v1.1.1
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-28 ~ 2026-07-31）
-> **活躍天數** 4 天 · **最新 commit** feat: add reliable per-model lighting controls
+> [!abstract] 最近 10 次 commit（2026-07-31 ~ 2026-08-01）
+> **活躍天數** 2 天 · **最新 commit** refactor: decouple realtime provider protocols (#41)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#3](https://github.com/xikhar/persona/issues/3) | Local AI usage? | 0 | 3 |
+> | [#38](https://github.com/QwenAudio/qwen-audio-agent/issues/38) | [Feature] Qwen Audio 3.0 Realtime  价格太贵，免费额度又不够，希望可以降价 `enhancement` | 0 | 1 |
+> | [#21](https://github.com/QwenAudio/qwen-audio-agent/issues/21) | [Feature] 没有在阿里云里面找到免费的额度在哪里？ `enhancement` | 0 | 2 |
+> | [#20](https://github.com/QwenAudio/qwen-audio-agent/issues/20) | [Feature] demo video `enhancement` | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> Persona
+> # Qwen Audio Agent
 > 
->   A realtime character presence for desktop voice experiences.
+> [中文](README.md) | [English](README_EN.md)
 > 
-> ---
+> [](https://github.com/QwenAudio/qwen-audio-agent/actions/workflows/ci.yml)
+> [](https://www.npmjs.com/package/qwen-audio-agent)
+> [](https://nodejs.org/)
+> [](LICENSE)
 > 
-> Persona is a cross-platform desktop character that gives voice conversations
-> an expressive visual identity alongside your work.
+> ## Agent，始终在场
 > 
-> ## Platform support
+> 真正的交流，不该在说完一句话后，就陷入漫长的等待。也不该因为 Agent 正在查资料、调用工具或处理任务，整场对话就此暂停。
 > 
-> | Platform    | Automatic voice output listener | Distribution               |
-> | ----------- | ------------------------------- | -------------------------- |
-> | Linux       | PipeWire process-stream capture | AppImage and DEB           |
-> | Windows     | WASAPI process-loopback capture | NSIS installer             |
-> | macOS 14.2+ | Core Audio process tap          | DMG and ZIP, arm64 and x64 |
+> 交流应该是连续的，Agent 也应该始终在场。
 > 
-> Linux requires `pw-dump` and `pw-record` on `PATH`. Windows process-loopback
-> requires Windows 10 build 20348 or newer. macOS asks once for System Audio
-> Recording permission.
+> 所以，我们做了 **qwen-audio-agent**——让 Agent 持续交流、持续工作、持续在场的实时语音运行时。无论是聊天、思考，还是处理任务，Agent 都始终在这场对话里。它会倾听，会回应，也会在任务完成时自然地告诉你：
 > 
-> Each listener is scoped to the supported application's playback process. Persona
-> does not capture the microphone, save audio, produce speech, transcribe content,
-> or send audio over the network.
+> “已经好了。”
 > 
-> ## Try Persona locally
+> ## News
 > 
-> Requirements:
+> - **2026-07-30 · [v1.0.0](https://github.com/QwenAudio/qwen-audio-agent/releases/tag/v1.0.0)**
+>   🚀 正式版发布，推出内置 Gateway 的 macOS 桌面版。
+> - **2026-07-28 · [v0.9.0](https://github.com/QwenAudio/qwen-audio-agent/releases/tag/v0.9.0)**
+>   🌍 项目正式开源，后台 Agent 统一接入 ACP 架构。
 > 
-> - Node.js 24 or newer
-> - npm
-> - A desktop session with hardware-accelerated graphics
+> ## 对话继续，任务也在继续
 > 
-> The packaged character catalog is intentionally empty while the distributable
-> defaults are being selected. Persona opens Settings on first launch so you can
-> import a local `.vrm` model; ignored media files under `public/assets/` are not
-> loaded unless they are declared in the catalog.
+> 对话不会因为后台任务而停下；任务完成后，结果会自然回到当前对话：
 > 
-> To exercise the packaged-library path with the current ignored local test
-> media, copy the provided examples over the active empty catalogs:
+> https://github.com/user-attachments/assets/42022655-36d1-46b2-9c26-ff0765284000
+> 
+> ### 核心特色
+> 
+> - 全双工实时语音交互、自然打断和持续多轮对话
+> - 一键选择你喜欢的办事 Agent，复用已有的工具、MCP、Skill
+> - 前台对话与后台任务并驾齐驱，可随时追问任务进度或取消任务
+> - 支持创建多个独立任务，由后台 Agent 异步执行，并持续追踪任务状态
+> - 任务结果自动回到当前对话，支持继续追问和修改
+> - 支持 WebUI、终端 TUI 和 macOS 桌面悬浮球
+> - 支持本地用户档案与跨会话个人记忆
+> 
+> ## 参考架构
+> 
+> 能直接回答的问题会立即回答；需要工具或持续处理时，任务会交给后台 Agent。
+> 整个过程中，用户面对的始终是同一个助理。
+> 
+> 查看详细架构
+> 
+> 更完整的设计与模块说明见[架构文档](docs/architecture.md)。
+> 
+> ## Agent 支持
+> 
+> | 后台 Agent | 接入方式 | 接入准备 | 推荐指数 |
+> | --- | --- | --- | --- |
+> | 无 | N/A | 仅前台模式，无需配置 | ★★★★★ |
+> | OpenCode | 原生 ACP | 支持自动安装和百炼配置 | ★★★★★ |
+> | OpenClaw | 内置 ACP 桥接 | 支持自动安装和百炼配置 | ★★★★★ |
+> | Qoder | 原生 ACP | 用户自行安装和配置 | ★★★★★ |
+> | Kimi Code | 原生 ACP | 用户自行安装和配置 | ★★★★★ |
+> | Hermes | 原生 ACP | 用户自行安装和配置 | ★★★★☆ |
+> | CodeBuddy | 原生 ACP | 用户自行安装和配置 | ★★★★☆ |
+> | Codex | 外部 ACP 适配 | 用户自行安装和配置 | ★★★★☆ |
+> | Claude Code | 外部 ACP 适配 | 用户自行安装和配置 | ★★★★☆ |
+> 
+> 推荐指数综合反映当前集成完整度、兼容性和实际验证程度：五星表示已经过充分测试的
+> 推荐集成，四星表示正在开发或尚未完成同等范围验证。
+> 详细配置和能力边界见[配置说明](docs/configuration.md)。
+> 
+> ## 安装
+> 
+> 需要 Node.js 22.22.2+ 或 24.15.0+、npm 10+ 和 DashScope API Key。
+> 仓库提供 `.nvmrc` 和 `.node-version`；使用 nvm 时可直接运行 `nvm use`。
+> 
+> 一键安装（推荐，从 npm 安装）：
 > 
 > ```bash
-> cp public/assets/library.json.example public/assets/library.json
-> cp public/assets/manifest.json.example public/assets/manifest.json
+> npm install -g qwen-audio-agent
 > ```
 > 
-> Both example files are directly usable and also document the complete catalog
-> format. Their media remains test-only: the example manifest deliberately keeps
-> distribution disabled and its license fields incomplete.
+> 也可以直接从 GitHub 安装最新代码：
 > 
-> Packaged VRM files belong under `public/assets/models/`; packaged VRMA files
-> belong under `public/assets/animations/`. A catalog can declare multiple
-> packaged models. When `default_model_id` is `null`, Persona selects the first
-> model record as the packaged default.
+> ```bash
+> npm install -g git+https://github.com/QwenAudio/qwen-audio-agent.git
+> ```
+> 
+> 从源码安装：
+> 
+> ```bash
+> git clone https://github.com/QwenAudio/qwen-audio-agent.git
+> cd qwen-audio-agent
+> npm install
+> npm run install:global
+> ```
+> 
+> 升级到最新 npm 版本：
+> 
+> ```bash
+> npm install -g qwen-audio-agent@latest
+> ```
+> 
+> 升级到 GitHub 最新代码：
+> 
+> ```bash
+> npm install -g git+https://github.com/QwenAudio/qwen-audio-agent.git
+> ```
+> 
+> ## 获取 DashScope API Key
+> 
+> 阿里云百炼为 Qwen Audio 3.0 Realtime 提供
+> [新人免费额度](https://help.aliyun.com/zh/model-studio/new-free-quota)，创建 API Key 后
+> 即可免费开始使用 qwen-audio-agent。
+> 
+> 1. 打开百炼控制台的 [API Key 页面](https://bailian.console.aliyun.com/?tab=model#/api-key)，
+>    登录账号，单击**创建 API Key**。
+> 2. 复制生成的 Key，稍后填入 `config.env`。请勿公开或提交 API Key。
+> 
+> 详细说明见[百炼官方文档](https://help.aliyun.com/zh/model-studio/get-api-key)。
+> 
+> ## 快速开始
+> 
+> 1. 创建配置：
+> 
+> ```bash
+> qwenaudio config
+> ```
+> 
+> 2. 打开命令显示的 `config.env`，填写 DashScope API Key。需要执行后台任务时，
+>    再选择 OpenClaw 或其他后台 Agent：
+> 
+> ```dotenv
+> DASHSCOPE_API_KEY=your-key
+> # 语音前台模型：qwen-audio-3.0-realtime-flash 或 qwen-audio-3.0-realtime-plus（默认）
+> QWEN_AUDIO_REALTIME_MODEL=qwen-audio-3.0-realtime-plus
+> # 后台Agent：可选，不设置或设置为 none 时，启动仅前台模式
+> AGENT_PROTOCOL=openclaw
+> # 后台模型：可为空，留空则沿用 Agent 自身的用户配置
+> QWEN_AUDIO_AGENT_BACKEND_MODEL=qwen3.7-max
+> ```
+> 
+> 3. 在一个终端中启动 Gateway：
+> 
+> ```bash
+> qwenaudio
+> ```
+> 
+> 4. 另开一个终端，启动 TUI：
+> 
+> ```bash
+> qwenaudio tui
+> ```
+> 
+> 也可以使用浏览器界面：
+> 
+> ```bash
+> qwenaudio webui
+> ```
+> 
+> ### TUI 使用注意
+> 
+> | 平台 | 默认模式 | 打断方式 |
+> | --- | --- | --- |
+> | macOS | 带回声消除的全双工 | 直接说话 |
+> | Linux / Windows | 半双工 | 播报时按 `x` |
+> 
+> Linux 和 Windows 首次使用前需安装 `sounddevice` 和系统 PortAudio。也可以开启
+> 无回声消除的全双工模式；此时请佩戴耳机，避免扬声器声音造成误识别：
+> 
+> ```bash
+> qwenaudio tui --audio-mode full
+> ```
+> 
+> ## macOS 桌面版
+> 
+> 桌面版提供常驻桌面的语音悬浮球，并内置和自动管理 Gateway，无需事先启动服务。
+> 首次运行时，应用会创建配置文件，并引导你在设置页填写 DashScope API Key、选择
+> 后台 Agent（也可以使用仅前台模式）。
+> 
+> 桌面版支持流光声波球和液态渐变球两种外观。下面分别展示它们在思考 / 呼吸状态
+> 下的原始动态效果：
+> 
+> | 流光声波球 | 液态渐变球 |
+> | --- | --- |
+> |  |  |
+> 
+> 从发布页下载 `.dmg`，打开后将 **Qwen Audio Agent** 拖入“应用程序”即可。
+> 
+> 从源码生成本机测试版：
+> 
+> ```bash
+> npm run desktop:build:local
+> ```
+> 
+> ## 后台常驻
+> 
+> 希望个人助理长期在线时，可以安装为用户后台服务：
+> 
+> ```bash
+> qwenaudio gateway install
+> ```
+> 
+> 常用管理命令：
+> 
+> ```bash
+> qwenaudio gateway status
+> qwenaudio gateway restart
+> qwenaudio gateway stop
+> qwenaudio gateway start
+> qwenaudio gateway uninstall
+> ```
+> 
+> ## 选择后台 Agent
+> 
+> `AGENT_PROTOCOL` 是可选配置。留空时，Gateway 以仅前台模式运行，实时语音聊天
+> 保持可用；如果请求需要后台执行，前台会明确说明当前没有可用的后台 Agent。
+> 也可以在命令行中使用 `qwenaudio --backend none`，明确要求仅启动前台模式。
+> 
+> 通过 `AGENT_PROTOCOL` 环境变量或 `--backend` 参数选择后台 Agent。选择后，
+> OpenCode 和 OpenClaw 支持自动下载安装；配置
+> `DASHSCOPE_API_KEY` 和 `QWEN_AUDIO_AGENT_BACKEND_MODEL` 后即可自动接入百炼
+> 模型。未指定后台模型且用户已经安装并配置对应 Agent 时，则完整复用用户环境。
+> 
+> 查看当前可用的后台 Agent：
+> 
+> ```bash
+> qwenaudio setup
+> ```
+> 
+> 使用 OpenClaw：
+> 
+> ```dotenv
+> AGENT_PROTOCOL=openclaw
+> ```
+> 
+> 使用 OpenCode：
+> 
+> ```dotenv
+> AGENT_PROTOCOL=opencode
+> ```
+> 
+> 使用 Qoder：
+> 
+> ```dotenv
+> AGENT_PROTOCOL=qoder
+> ```
+> 
+> Kimi Code、Hermes、CodeBuddy、Codex 和 Claude Code 也可直接选择：
+> 
+> ```dotenv
+> AGENT_PROTOCOL=kimi
+> # 或 hermes、codebuddy、codex、claude
+> ```
+> 
+> 以上其他后台暂时需要用户自行安装并完成原生配置；qwen-audio-agent 会复用其
+> 用户级模型、工具、MCP、Skill 和认证。
+> 
+> 使用其他支持 ACP stdio 的 Agent：
+> 
+> ```dotenv
+> AGENT_PROTOCOL=acp
+> ACP_COMMAND=your-agent
+> ACP_ARGS=["--acp"]
+> ```
+> 
+> 通用 ACP 入口不需要修改 Gateway 代码。命令、参数、显示名称和工作目录可分别通过 `ACP_COMMAND`、`ACP_ARGS`、`ACP_LABEL` 和 `ACP_WORKSPACE` 配置。
+> 
+> 后台权限默认使用 `native`，由后台 Agent 在需要时询问。只有在可信项目中，并且
+> 明确接受自动执行命令和修改文件时，才应启用：
+> 
+> ```dotenv
+> QWEN_AUDIO_AGENT_BACKEND_PERMISSION_MODE=full
+> ```
+> 
+> 详细选项见 [配置说明](docs/configuration.md)。
+> 
+> ## 用户档案与记忆
+> 
+> 用户数据保存在 `~/.config/qwaudio/`：
+> 
+> - `USER.md`：称呼、所在地、偏好和常用项目
+> - `frontend-memory.json`：用户明确要求长期记住的信息
+> - `tasks.json`：任务结果和待通知状态
+> 
+> 这些文件只保存在本机，不会写入源码仓库。可以直接编辑 `USER.md`，也可以在对话中
+> 要求助理记住或忘记信息。
+> 
+> ## 使用注意事项
+> 
+> - 不要在用户档案或对话中保存密码、API Key、验证码和访问令牌。
+> - 麦克风音频与实时对话会发送到配置的 Qwen Audio Realtime 服务。
+> - 后台任务可能调用所选 Agent 的模型、工具、MCP 和外部服务。
+> - `full` 权限允许后台执行命令和修改文件，只应在可信项目中使用。
+> - Gateway 默认仅供本机访问；不要直接暴露到局域网或公网。
+> - Linux / Windows 使用无回声消除全双工时，请佩戴耳机。
+> 
+> 详细数据边界见[隐私说明](PRIVACY.md)，网络与权限配置见
+> [配置说明](docs/configuration.md)。
+> 
+> ## 源码开发
 > 
 > ```bash
 > npm install
-> npm run demo
+> npm run build
+> npm test
 > ```
-> 
-> `npm run demo` builds the current renderer and launches Persona with normal
-> automatic voice-output detection.
-> 
-> For a background launch:
 > 
 > ```bash
-> npm start -- --background
+> npm run dev       # Gateway 与 WebUI 热更新
+> npm run desktop   # macOS 桌面悬浮球
 > ```
 > 
-> ## Customize Persona
+> 更多构建、测试和发布说明见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 > 
-> Open **Settings…** from Persona's tray menu to manage the character library.
-> You can preview installed models and animation actions together, choose the
-> default model, set the character's initial size, and add your own `.vrm` and
-> `.vrma` files.
+> ## 交流与分享
 > 
-> Until a default model exists, Persona does not create the avatar window or
-> start its voice-output listener. The first imported model becomes the default
-> automatically.
+> 你可以直接在 [GitHub Issues](https://github.com/QwenAudio/qwen-audio-agent/issues) 发起讨论。
+> 对中国用户，也可以扫描左侧二维码加入微信交流群；如果群二维码已满或过期，
+> 扫描右侧的个人二维码，维护者会邀请你进群。
 > 
-> Persona always provides **Idle** and **Speaking** action slots. They begin
-> without media, so the model keeps its normal pose until you add clips. Each
-> action can contain multiple `.vrma` files; uploads receive numbered names such
-> as `idle1`, `idle2`, `speaking1`, or `wave1`. Persona chooses a clip from the
-> action whenever that action runs.
+> | 微信交流群 | 个人微信 |
+> | :---: | :---: |
+> |  |  |
 > 
-> Custom actions include a name, description, and trigger scenario. Persona adds
-> that metadata to its MCP animation tool so a connected agent can understand
-> what the action expresses and when to use it. Imported media and configuration
-> changes stay in Persona's local application data.
+> ## 参与贡献与安全
 > 
-> Packaged media is immutable. Editing or removing a packaged action creates a
-> user-level override without changing the installed application. **Reset
-> packaged actions** restores shipped metadata and visibility while leaving
-> user-created actions and uploaded clips untouched.
+> - 开发与提交说明：[CONTRIBUTING.md](CONTRIBUTING.md)
+> - 安全问题报告：[SECURITY.md](SECURITY.md)
+> - 数据流向说明：[PRIVACY.md](PRIVACY.md)
+> - 第三方组件声明：[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
 > 
-> ## Connect Persona to Codex
+> ## 许可证
 > 
-> With Persona running, register its local MCP server:
-> 
-> ```bash
-> codex mcp add persona --url http://127.0.0.1:47831/mcp
-> ```
-> 
-> New Codex sessions can then ask Persona to play an installed animation, show or
-> hide its window, and report whether the local character and voice listener are
-> active. Persona remains a separate desktop application; the MCP connection
-> only exposes its own visual controls.
-> 
-> The window intentionally contains no controls:
-> 
-> - Scroll to zoom.
-> - Left-drag to orbit.
-> - Right-drag to pan.
-> - Use your window manager's move gesture to reposition the window.
-> 
-> On Hyprland, Persona also applies floating, pinned, topmost, full-opacity,
-> no-blur, no-shadow, and decoration-free properties. macOS uses an all-Spaces
-> topmost window. Other desktops use the strongest supported Electron window
-> hints.
-> 
-> ## Build native packages
-> 
-> Build on the operating system you are targeting:
-> 
-> ```bash
-> npm run dist:linux
-> npm run dist:windows
-> npm run dist:mac
-> ```
-> 
-> Outputs are written to `release/`. Windows needs Visual Studio Build Tools with
-> the C++ desktop workload. macOS needs Xcode Command Line Tools and macOS 14.2+
-> SDK support.
-> 
-> GitHub Actions runs the full JavaScript, renderer, native compile, and native
-> self-test suite on Linux, Windows, and macOS. Prerelease tags shaped like
-> `v0.1.0-beta.0` create native packages and a checksum file, but only after the
-> asset release gate passes. See [Releasing](docs/RELEASING.md).
-> 
-> ## Replace the character assets before publishing
-> 
-> Character media is intentionally excluded from Git. Local test files must not
-> be distributed. The packaged library is declared without a hard-coded filename
-> contract in source code:
-> 
-> ```text
-> public/assets/
-> ├── library.json
-> ├── library.json.example
-> ├── manifest.json
-> ├── manifest.json.example
-> ├── models/
-> │   └── 
-> └── animations/
->     └── 
-> ```
-> 
-> Define each packaged model and animation action in `library.json`. Action
-> records carry their public name, description, trigger scenario, runtime type,
-> and zero or more asset paths. The permanent `system-idle` and
-> `system-speaking` records may have empty asset lists. Mirror every declared
-> media path in `manifest.json`, then
-> complete its license and source fields and set `distributionAllowed` to `true`.
-> Remove the VRM and VRMA ignore rules only when the chosen files are safe to
-> publish. The release workflow will fail closed until then. Read
-> [Asset licenses](ASSET_LICENSES.md).
-> 
-> ## Development
-> 
-> ```bash
-> npm run check
-> npm run native:build
-> npm run native:test
-> ```
-> 
-> The native listener is required before running Persona from source on macOS or
-> Windows. Linux captures activity through PipeWire and does not build a helper.
-> 
-> Contributions are welcome. Read the [contribution
-> guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before
-> opening an issue or pull request.
-> 
-> More detail:
-> 
-> - [Architecture and development](docs/DEVELOPMENT.md)
-> - [Codex and integration API](docs/INTEGRATIONS.md)
-> - [Release process](docs/RELEASING.md)
-> - [Security policy](SECURITY.md)
-> 
-> Persona application source is licensed under the [MIT License](LICENSE).
-> Bundled character assets are excluded from that license and remain test-only
-> until replaced and documented.
+> [Apache License 2.0](LICENSE)
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[bashalarmistalt--decimen-optical-transfer|bashalarmistalt/decimen-optical-transfer]] · [[gavamedia--deltafin|gavamedia/deltafin]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]]
 
-[GitHub](https://github.com/xikhar/persona)
+[GitHub](https://github.com/QwenAudio/qwen-audio-agent)
 
 ## 相關收錄
 
@@ -385,7 +555,7 @@ Bringing real-time voice to life.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "xikhar--persona"
+> WHERE category = "Other" AND file.name != "QwenAudio--qwen-audio-agent"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -394,7 +564,7 @@ Bringing real-time voice to life.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "xikhar--persona" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "QwenAudio--qwen-audio-agent" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -403,18 +573,18 @@ Bringing real-time voice to life.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W31" AND file.name != "xikhar--persona"
+> WHERE week = "2026-W31" AND file.name != "QwenAudio--qwen-audio-agent"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/QwenAudio--qwen-audio-agent");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "xikhar--persona" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "QwenAudio--qwen-audio-agent" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -430,7 +600,7 @@ Bringing real-time voice to life.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "xikhar" AND file.name != "xikhar--persona"
+> WHERE owner = "QwenAudio" AND file.name != "QwenAudio--qwen-audio-agent"
 > SORT stars DESC
 > ```
 
@@ -438,7 +608,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/QwenAudio--qwen-audio-agent");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -455,7 +625,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/QwenAudio--qwen-audio-agent");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -488,7 +658,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/QwenAudio--qwen-audio-agent");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -512,7 +682,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/QwenAudio--qwen-audio-agent");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -549,7 +719,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/QwenAudio--qwen-audio-agent");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -632,7 +802,7 @@ Bringing real-time voice to life.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-07-31** — 首次收錄
+> **2026-08-01** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -648,5 +818,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-01|2026-08-01]] — 再次上榜，720 stars
-- [[2026-07-31|2026-07-31]] — 首次收錄，679 stars
+- [[2026-08-01|2026-08-01]] — 首次收錄，622 stars

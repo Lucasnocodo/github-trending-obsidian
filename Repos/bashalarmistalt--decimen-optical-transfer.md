@@ -1,68 +1,63 @@
 ---
-repo: WilonityXYZ/Wilonity
-url: https://github.com/WilonityXYZ/Wilonity
-owner: WilonityXYZ
+repo: bashalarmistalt/decimen-optical-transfer
+url: https://github.com/bashalarmistalt/decimen-optical-transfer
+owner: bashalarmistalt
 owner_type: User
-language: N/A
+language: TypeScript
 license: MIT
-description: "Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread"
-homepage: "https://wilonity.xyz"
-stars: 651
-stars_per_day: 651
-forks: 0
-open_issues: 1
-created: 2026-07-31
+description: ""
+homepage: ""
+stars: 2194
+stars_per_day: 2194
+forks: 260
+open_issues: 4
+created: 2026-07-30
 pushed_at: 2026-07-31
-first_seen: 2026-07-31
+first_seen: 2026-08-01
 week: "2026-W31"
-month: "2026-07"
+month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.1.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-07-31
+last_reviewed: 2026-08-01
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
 appearances: 1
-next_review: "2026-08-03"
+next_review: "2026-08-04"
 contributor_count: 1
-engagement: "low"
+engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 11833
-readme_length: 2956
+repo_size_kb: 2762
+readme_length: 6463
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-07-31"
-star_history: "2026-07-31:651"
+ring_history: "assess@2026-08-01"
+star_history: "2026-08-01:2194"
 tags:
   - github
   - "category/other"
-  - "lang/other"
-  - "topic/aim"
-  - "topic/arc_raiders"
-  - "topic/arc_raiders_mod"
-  - "topic/counter_strike_2"
-  - "topic/cs2hack"
+  - "lang/typescript"
 aliases:
-  - "Wilonity"
-  - "WilonityXYZ/Wilonity"
+  - "decimen-optical-transfer"
+  - "bashalarmistalt/decimen-optical-transfer"
 ---
 
-# Wilonity
+# decimen-optical-transfer
 
-**651** stars · **651** stars/天 · 建立 1 天前 · N/A · MIT
+**2.2k** stars · **2.2k** stars/天 · 建立 1 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/WilonityXYZ--Wilonity");
+const me = dv.page("Repos/bashalarmistalt--decimen-optical-transfer");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
-
-`aim` `arc-raiders` `arc-raiders-mod` `counter-strike-2` `cs2hack` `eft-tool` `game` `hack` `internal` `kernel` `meccha-chameleon-tool` `memory-hacking` `minecraft` `mod` `radar` `rust-plugins` `rust-treasures` `rusthack` `warzone-modification` `webradar`
+`個人專案` `v0.1.0`
 
 > [!summary] 一句話摘要
-> Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread
+> No description
 
 ## 專案簡介
 
-Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/bashalarmistalt--decimen-optical-transfer");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +118,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/bashalarmistalt--decimen-optical-transfer");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,134 +142,191 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 0 |
-| Open Issues | 1 |
+| Forks | 260 |
+| Open Issues | 4 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-07-31 |
-| 建立日期 | 2026-07-31 |
-| 官方網站 | [Link](https://wilonity.xyz) |
-| Repo 大小 | 11.6 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/WilonityXYZ/Wilonity) |
-| Topics | `aim` `arc-raiders` `arc-raiders-mod` `counter-strike-2` `cs2hack` `eft-tool` `game` `hack` |
+| 建立日期 | 2026-07-30 |
+| Repo 大小 | 2.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/bashalarmistalt/decimen-optical-transfer) |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@types/qrcode` `@vitejs/plugin-basic-ssl` `qrcode` `typescript` `vite` `zxing-wasm`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "TypeScript" : 75
+>     "HTML" : 17
+>     "CSS" : 8
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@WilonityXYZ](https://github.com/WilonityXYZ) | 3 |
+> | [@bashalarmistalt](https://github.com/bashalarmistalt) | 1 |
+
+**最新版本**：v0.1.0 (2026-07-31)
+
+> [!info]- Release Notes
+> **Full Changelog**: https://github.com/bashalarmistalt/decimen-optical-transfer/commits/v0.1.0
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-31 ~ 2026-07-31）
-> **活躍天數** 1 天 · **最新 commit** Add files via upload
+> [!abstract] 最近 10 次 commit（2026-07-30）
+> **活躍天數** 1 天 · **最新 commit** Initial commit
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#3](https://github.com/bashalarmistalt/decimen-optical-transfer/issues/3) | Host it on Github Pages | 2 | 0 |
+> | [#4](https://github.com/bashalarmistalt/decimen-optical-transfer/issues/4) | [Feature] add to F-Droid | 0 | 2 |
+> | [#1](https://github.com/bashalarmistalt/decimen-optical-transfer/issues/1) | # Receiver memory-exhaustion DoS: `parseFrame` accepts frame | 0 | 2 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 🚀 Wilonity Loader v3
+> # Decimen Optical Transfer: fountain-coded QR file transfer
 > 
-> **Next‑gen game enhancement platform**
+> Send a file between two devices using nothing but a **screen and a camera**.
+> One page displays the file as an endless stream of animated QR codes; another
+> device points its camera at it and reconstructs the file. **No network path
+> between the devices, no app, no pairing, no permissions beyond the camera.**
+> The payload travels as light.
 > 
-> [](https://github.com/WilonityLoader)
-> [](https://wilonity.xyz)
-> [](LICENSE)
-> [](https://discord.gg/hRZ8bvq3qA)
-> [](https://twitter.com/wilonity)
-> [](https://t.me/DMVChannel)
+> This is a minimal proof of concept extracted from a larger
+> experiment that reached **128 KB/s phone-to-phone** with denser frames,
+> multi-code grids, and an error-corrected color channel. This PoC keeps only
+> the essential trick and transmits a 512 KB image (or a 2 MB one, selectable
+> in the sender's settings) at a comfortable rate.
 > 
-> ---
+>   
 > 
-> ## 📖 About
+> Mid-transfer: a phone pulling a 2 MB image out of the air at 129 KB/s.
 > 
-> **Wilonity Loader** is a modern game enhancement platform designed to elevate your gaming experience. Our mission is to provide gamers with powerful, reliable, and easy‑to‑use tools for their favorite titles.
+> ## Try it
 > 
-> We believe in:
-> - ✅ **Innovation** — constantly evolving technology
-> - 🔒 **Safety** — every tool is thoroughly tested and verified
-> - 🎯 **Precision** — advanced algorithms for optimal performance
-> - 🌍 **Community** — driven by feedback and collaboration
+> ```bash
+> npm install
+> npm run dev
+> ```
 > 
-> ---
+> - On the **sending** device (a laptop is ideal): open
+>   `https://localhost:5173/send/` and it starts streaming immediately. Max
+>   screen brightness helps.
+> - On the **receiving** device (a phone): open the `Network` URL Vite prints
+>   (`https://:5173/receive/`), accept the certificate warning once,
+>   tap **Start camera**, and point it at the code.
+> - A few seconds later: *Transfer Complete!* and the received image, verified
+>   by hash.
 > 
-> ## 🎮 Supported Games
+> **Why the dev server is https-only:** the receiver uses `getUserMedia`, and
+> browsers remove that API entirely on insecure origins: a phone reaching
+> your dev server over plain http has no camera, full stop (`localhost` is
+> exempt, but your phone isn't localhost). That's a web platform rule, not a
+> choice. The dev server therefore ships with a self-signed certificate
+> (`@vitejs/plugin-basic-ssl`); the browser will warn on first visit. Tap
+> "Show Details" then "visit this website" (iOS) or "Advanced" then "Proceed"
+> (Android/desktop), and the page is still a secure context, so the camera
+> works. The odd-looking `lvh.me` hosts Vite prints are a public convenience
+> domain that resolves to 127.0.0.1 (same machine, nothing extra running).
 > 
-> | Game | Status | Modules |
-> |------|--------|---------|
-> | **CS2** | ✅ Fully supported | 60+ |
-> | **Valorant** | ✅ Fully supported | 40+ |
-> | **Rust** | ✅ Fully supported | 35+ |
-> | **Apex Legends** | ✅ Fully supported | 28+ |
-> | **Fortnite** | ✅ Fully supported | 25+ |
-> | **War Thunder** | ✅ Supported | 15+ |
-> | **Minecraft** | ✅ Fully supported | 45+ |
-> | **GTA V** | ✅ Supported | 30+ |
-> | **Overwatch 2** | ✅ Supported | 20+ |
-> | **Rainbow Six Siege** | ✅ Supported | 18+ |
-> | **League of Legends** | ✅ Supported | 22+ |
-> | **Dota 2** | ✅ Supported | 20+ |
-> | **Team Fortress 2** | ✅ Supported | 16+ |
-> | **Garry's Mod** | ✅ Supported | 12+ |
-> | **Among Us** | ✅ Supported | 10+ |
+> Hold the phone steady, or better, prop it against something. Camera
+> autofocus hunting from hand tremor is the #1 throughput killer.
 > 
-> > 📋 *Full list and detailed module descriptions available on our [website](https://wilonity.xyz)*
+> ## How it works
 > 
-> ---
+> **The one-way channel problem.** A screen-to-camera link has no back-channel:
+> the receiver can't ask for retransmission, and it will inevitably miss frames
+> (blur, refresh straddling, autofocus). Looping the frames and hoping is
+> miserable: miss one frame and you wait a full cycle for it to come around.
 > 
-> ## 🖥️ Application Preview.
+> **Fountain codes fix this completely.** The sender never sends the file's
+> blocks directly. Each frame is the XOR of a pseudorandom *subset* of blocks;
+> the subset is derived deterministically from the frame's sequence number,
+> with subset sizes drawn from a robust-soliton distribution ([Luby transform
+> coding](https://en.wikipedia.org/wiki/Luby_transform_code)). The receiver
+> collects **any** ~K·1.15 distinct frames, in any order, and peels the file
+> out of them. Dropped frames cost a little time, never correctness. Sender
+> and receiver frame rates don't need to match at all.
 > 
-> *Wilonity Loader interface – clean, fast, and intuitive*
+> **Every frame is self-describing.** A 20-byte header carries the session id,
+> sequence number, block count/size, file length, and a hash. There is no
+> handshake: the receiver locks onto a stream mid-flight, and restarting the
+> sender (new session id) automatically resets the receiver.
 > 
-> ---
+> **Decoding.** Safari has never shipped `BarcodeDetector` (WebKit bug 281848),
+> so decoding is [zxing-cpp](https://github.com/zxing-cpp/zxing-cpp) compiled
+> to WASM, running in workers fed by `requestVideoFrameCallback`. Busy workers
+> mean dropped frames, which the fountain happily absorbs.
 > 
-> ## ✨ Key Features
+> ## Hard-won details baked into this PoC
 > 
-> - **Unified Launcher** – one app for all your games
-> - **Smart Module System** – load only what you need
-> - **Regular Updates** – stay ahead with constant improvements
-> - **User‑Friendly Interface** – designed for speed and simplicity
-> - **Cross‑Platform** – Windows 10/11 x64 & ARM64 support
-> - **Zero Configuration** – download, run, play
+> - **JS engines disagree about `Math.log`** (it's implementation-approximated).
+>   Sender and receiver must build bit-identical soliton distributions, so
+>   `fountain.ts` includes a deterministic log built from exactly-specified
+>   IEEE-754 ops. V8 vs JavaScriptCore desync is a silent, total failure mode.
+> - **iOS lies about camera frame rate.** `frameRate: {ideal: 60}` silently
+>   delivers 30; you must demand `{exact: 60}` (works at 1280-wide capture)
+>   and fall back. Always read back `getSettings()`.
+> - **`requestVideoFrameCallback` chains outlive their stream** and resume on
+>   the next one; without a generation counter, every stop/start leaks a
+>   zombie capture loop.
+> - **Progress bars must track frames collected, not blocks solved.** LT
+>   peeling back-loads its solve cascade: block-count progress looks stalled
+>   for most of the transfer, then teleports to 100%.
+> - **QR error correction is set to the minimum (L).** In-frame ECC and the
+>   fountain layer solve different problems (corruption vs erasure), but at
+>   these frame sizes level L plus frame disposal is the better trade.
 > 
-> ---
+> ## Tuning
 > 
-> ## 📥 Installation
+> Both pages have a collapsed **Settings** panel. On the sender: payload size
+> (512 KB or 2 MB), tx fps, bytes per frame, error-correction level, and
+> display size. Changing anything restarts the stream, and the receiver resets
+> automatically off the new session id. On the receiver: capture width,
+> capture fps, and decode worker count, applied when the camera starts.
 > 
-> ### Requirements
-> - Windows 10/11 (x64 or ARM64)
-> - .NET Framework 4.8 or higher
-> - Visual C++ Redistributable (included in installer)
+> | setting | default | notes |
+> |---|---|---|
+> | tx fps | 24 | each frame must own at least 2 refresh cycles of the display |
+> | bytes / frame | 1465 (QR v27) | denser is faster if the receiver still decodes it; 2953 (v40) works phone-to-phone at close range |
 > 
-> ### Steps
-> 1. Download the latest installer from our [official website](https://wilonity.xyz)
-> 2. Run the setup and follow the instructions
-> 3. Launch Wilonity Loader from your desktop shortcut.
-> 4. Select your game and enjoy!
+> The parent experiment's measured ceiling with this exact architecture plus
+> denser frames, a 120 fps ProMotion sender, and stacked codes: ~128 KB/s
+> handheld, ~186 KB/s propped.
 > 
-> > ⚠️ *Older Windows versions (7, 8.1) are not supported.*
+> ## Similar projects
 > 
-> ## 📬 Contact & Social
+> The concept here was arrived at independently. It turns out
+> several people have had similar ideas, and their takes are all
+> worth a look:
 > 
-> - **Website**: [wilonity.xyz](https://wilonity.xyz)
-> - **Email**: [help@wilonity.xyz](mailto:help@wilonity.xyz)
-> - **Discord**: [Join our server](https://discord.gg/hRZ8bvq3qA)
-> - **Twitter**: [@wilonity](https://twitter.com/wilonity)
-> - **Telegram**: [t.me/wilonity](https://t.me/DMVChannel)
-> - **GitHub**: [github.com/Wilonity](https://github.com/WilonityLoader)
+> - [mohankumarelec/airgapped-qr-code-transfer](https://github.com/mohankumarelec/airgapped-qr-code-transfer):
+>   browser-based QR file transfer with compression and sequential chunking.
+>   Discovered after publicly demoing this project; convergent evolution in
+>   action.
+> - [divan/txqr](https://github.com/divan/txqr) (2018): animated QR plus
+>   fountain codes in Go, with two excellent write-ups on why fountain coding
+>   beats sequential looping.
+> - [sz3/libcimbar](https://github.com/sz3/libcimbar): goes past QR entirely
+>   with a custom high-density color code purpose-built for this channel.
 > 
-> ---
+> Built with [node-qrcode](https://github.com/soldair/node-qrcode) and
+> [zxing-wasm](https://github.com/Sec-ant/zxing-wasm).
 > 
-> ## 📄 License
+> ## License
 > 
-> This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details..
-> 
-> ---
-> 
-> **Made with ❤️ by the Wilonity Team**
+> MIT
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[xikhar--persona|xikhar/persona]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[bashalarmistalt--decimen-optical-transfer|bashalarmistalt/decimen-optical-transfer]] · [[gavamedia--deltafin|gavamedia/deltafin]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]]
 
-[GitHub](https://github.com/WilonityXYZ/Wilonity) · [官方網站](https://wilonity.xyz)
+[GitHub](https://github.com/bashalarmistalt/decimen-optical-transfer)
 
 ## 相關收錄
 
@@ -284,7 +334,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "WilonityXYZ--Wilonity"
+> WHERE category = "Other" AND file.name != "bashalarmistalt--decimen-optical-transfer"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -293,7 +343,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "WilonityXYZ--Wilonity" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "bashalarmistalt--decimen-optical-transfer" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -302,18 +352,18 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W31" AND file.name != "WilonityXYZ--Wilonity"
+> WHERE week = "2026-W31" AND file.name != "bashalarmistalt--decimen-optical-transfer"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/bashalarmistalt--decimen-optical-transfer");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "WilonityXYZ--Wilonity" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "bashalarmistalt--decimen-optical-transfer" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -329,7 +379,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "WilonityXYZ" AND file.name != "WilonityXYZ--Wilonity"
+> WHERE owner = "bashalarmistalt" AND file.name != "bashalarmistalt--decimen-optical-transfer"
 > SORT stars DESC
 > ```
 
@@ -337,7 +387,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/bashalarmistalt--decimen-optical-transfer");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -354,7 +404,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/bashalarmistalt--decimen-optical-transfer");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -387,7 +437,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/bashalarmistalt--decimen-optical-transfer");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -411,7 +461,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/bashalarmistalt--decimen-optical-transfer");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -448,7 +498,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/WilonityXYZ--Wilonity");
+> const me = dv.page("Repos/bashalarmistalt--decimen-optical-transfer");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -531,7 +581,7 @@ Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-07-31** — 首次收錄
+> **2026-08-01** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -547,4 +597,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-07-31|2026-07-31]] — 首次收錄，651 stars
+- [[2026-08-01|2026-08-01]] — 首次收錄，2.2k stars
