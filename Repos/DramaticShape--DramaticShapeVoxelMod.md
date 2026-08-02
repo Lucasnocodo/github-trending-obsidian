@@ -1,63 +1,63 @@
 ---
-repo: xikhar/persona
-url: https://github.com/xikhar/persona
-owner: xikhar
+repo: DramaticShape/DramaticShapeVoxelMod
+url: https://github.com/DramaticShape/DramaticShapeVoxelMod
+owner: DramaticShape
 owner_type: User
-language: JavaScript
-license: NOASSERTION
-description: "Bringing real-time voice to life."
+language: Lua
+license: N/A
+description: ""
 homepage: ""
-stars: 770
-stars_per_day: 193
-forks: 68
-open_issues: 3
-created: 2026-07-28
-pushed_at: 2026-08-01
-first_seen: 2026-07-31
-week: "2026-W31"
-month: "2026-07"
+stars: 641
+stars_per_day: 107
+forks: 33
+open_issues: 26
+created: 2026-07-26
+pushed_at: 2026-08-02
+first_seen: 2026-08-02
+week: "2026-W32"
+month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v1.4.1"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-07-31
+last_reviewed: 2026-08-02
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-08-09"
-contributor_count: 2
+contributor_count: 1
 engagement: "low"
-issue_close_rate: 50
-repo_size_kb: 1302
-readme_length: 6932
+issue_close_rate: 28
+repo_size_kb: 1181
+readme_length: 5036
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-07-31"
-star_history: "2026-07-31:679,2026-08-01:720,2026-08-02:770"
+ring_history: "assess@2026-08-02"
+star_history: "2026-08-02:641"
 tags:
   - github
   - "category/other"
-  - "lang/javascript"
+  - "lang/lua"
 aliases:
-  - "persona"
-  - "xikhar/persona"
+  - "DramaticShapeVoxelMod"
+  - "DramaticShape/DramaticShapeVoxelMod"
 ---
 
-# persona
+# DramaticShapeVoxelMod
 
-**679** stars · **340** stars/天 · 建立 2 天前 · JavaScript · NOASSERTION
+**641** stars · **107** stars/天 · 建立 6 天前 · Lua · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/xikhar--persona");
+const me = dv.page("Repos/DramaticShape--DramaticShapeVoxelMod");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`個人專案` `v1.4.1`
+
 > [!summary] 一句話摘要
-> Bringing real-time voice to life.
+> No description
 
 ## 專案簡介
 
-Bringing real-time voice to life.
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/DramaticShape--DramaticShapeVoxelMod");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +118,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/DramaticShape--DramaticShapeVoxelMod");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,244 +142,130 @@ Bringing real-time voice to life.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 56 |
-| Open Issues | 1 |
-| Issue 解決率 | 50% (1 closed) |
-| 最後推送 | 2026-07-31 |
-| 建立日期 | 2026-07-28 |
-| Repo 大小 | 1.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/xikhar/persona) |
+| Forks | 33 |
+| Open Issues | 26 |
+| Issue 解決率 | 28% (10 closed) |
+| 最後推送 | 2026-08-02 |
+| 建立日期 | 2026-07-26 |
+| Repo 大小 | 1.2 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/DramaticShape/DramaticShapeVoxelMod) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 54
->     "TypeScript" : 29
->     "CSS" : 11
->     "Objective-C++" : 3
->     "C++" : 2
+>     "Lua" : 94
+>     "Python" : 6
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@xikhar](https://github.com/xikhar) | 8 |
-> | [@fawnster](https://github.com/fawnster) | 2 |
+> | [@DramaticShape](https://github.com/DramaticShape) | 99 |
+
+**最新版本**：v1.4.1 — 1.4.1 (2026-08-01)
+
+> [!info]- Release Notes
+> - Back sprites without proper transparency fill are no longer transparent
+> - Updated pokecenter PC/oak's lab PC voxelizations
+> - Updated tables in oaks lab
+> - Added anti-aliasing option
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-28 ~ 2026-07-31）
-> **活躍天數** 4 天 · **最新 commit** feat: add reliable per-model lighting controls
+> [!abstract] 最近 10 次 commit（2026-08-01 ~ 2026-08-01）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #51 from DramaticShape/back-sprite-transparency-fix
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#3](https://github.com/xikhar/persona/issues/3) | Local AI usage? | 0 | 3 |
+> | [#10](https://github.com/DramaticShape/DramaticShapeVoxelMod/issues/10) | Performance issues on Android | 4 | 5 |
+> | [#47](https://github.com/DramaticShape/DramaticShapeVoxelMod/issues/47) | no issue, just wanted to say thanks | 1 | 0 |
+> | [#55](https://github.com/DramaticShape/DramaticShapeVoxelMod/issues/55) | [Feature Suggestion]: Have ledges have a ground height diffe | 0 | 0 |
+> | [#53](https://github.com/DramaticShape/DramaticShapeVoxelMod/issues/53) | Game upside down | 0 | 3 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> Persona
+> # Dramatic Shape Voxel Mod
 > 
->   A realtime character presence for desktop voice experiences.
+> A mod for the [Pokémon Gen 1 Recompilation
+> Project](https://github.com/bryanthaboi/pokemon-gen1-recomp-project).
 > 
-> ---
+> The overworld as a 3D diorama. Terrain is extruded into real geometry,
+> occlusion comes from a depth buffer rather than a y-sort, characters stand
+> as leaning sprite slabs, a shadow map throws real cast shadows across
+> whatever they land on, and an optional tilt-shift pass sells the
+> miniature-model look.
 > 
-> Persona is a cross-platform desktop character that gives voice conversations
-> an expressive visual identity alongside your work.
+> Water is a surface rather than a texture lying in a hole. It is a field of
+> one-pixel-wide voxel columns, each standing a whole number of pixels tall and
+> rising and falling as waves — found by walking the view ray through them in
+> the shader, so a crest hides what is behind it and shows you its lit side,
+> with no extra geometry anywhere.
 > 
-> ## Platform support
+> And it reflects. The sky it stands under, in the same bands, the same dither
+> and off the same clock, so the lake and the sky above it meet at the
+> waterline with no seam. The sun or moon hanging in it, at the size the
+> painted disc is drawn, craters and all. Whoever is standing beside it —
+> walkers, NPCs, the two Pokémon in a staged battle. And on **FULL**, a
+> screen-space ray march adds the rest of what is on screen: the shoreline, the
+> trees behind it, the buildings across the bay. How much of it shows is
+> Fresnel, so the top rung is a mirror and a looking-straight-down rung is a
+> pond, off the same water.
 > 
-> | Platform    | Automatic voice output listener | Distribution               |
-> | ----------- | ------------------------------- | -------------------------- |
-> | Linux       | PipeWire process-stream capture | AppImage and DEB           |
-> | Windows     | WASAPI process-loopback capture | NSIS installer             |
-> | macOS 14.2+ | Core Audio process tap          | DMG and ZIP, arm64 and x64 |
+> And battles fought on that world rather than on a white field. When
+> something picks a fight the map's NPCs are culled, the engine's own wipe
+> plays over the empty map, and the battle draws over the nearest patch of
+> clear ground — shot over the shoulder, the player's mon low and left and
+> the enemy high and right, with a slow parallax drift behind them and a
+> depth-of-field pass that keeps both of them sharp.
 > 
-> Linux requires `pw-dump` and `pw-record` on `PATH`. Windows process-loopback
-> requires Windows 10 build 20348 or newer. macOS asks once for System Audio
-> Recording permission.
+> Purely presentational. Nothing here reaches collision, movement, triggers
+> or scripts — it changes what the world *looks* like and nothing about what
+> it *is*. The battle arena is where the **camera** goes, not where anybody
+> goes: no cell, facing, flag or warp is written, so the player is standing
+> exactly where the fight found them when it ends.
 > 
-> Each listener is scoped to the supported application's playback process. Persona
-> does not capture the microphone, save audio, produce speech, transcribe content,
-> or send audio over the network.
+> ## Controls
 > 
-> ## Try Persona locally
+> Every key is free-roam only, and each one is also a row on the OPTIONS
+> menu.
 > 
-> Requirements:
+> | control | does |
+> | --- | --- |
+> | `3`, or the **VOXEL** options row | OFF → 15 → 35 → 50 → 75 → OFF (camera pitch) |
+> | `5`, or the **V-GRID** options row | OFF / ON — a one-pixel wireframe on every voxel |
+> | `6`, or the **T-SHIFT** options row | OFF → 1 → 2 → 3 → OFF (miniature blur) |
+> | `7`, or the **V-CURVE** options row | OFF → 1 → 2 → 3 — bend the world over the horizon |
+> | `8`, or the **3D-BTL** options row | ON / OFF — fight on the map instead of on a white field |
+> | `9`, or the **WATER** options row | FULL / SKY / OFF — waves and reflections on water. **SKY** gives the surface its pixel-tall wave columns and puts the sky, the sun, the moon and the cast in them; **FULL** adds a screen-space ray march that also reflects the shoreline, the trees and the buildings standing behind it |
+> | the **BACK SPRITES** options row | OFF / ON — keep your own Pokémon on the battle menu, seen from behind in its classic slot, instead of standing it on the map; the foe is still out there. Only on the menu while **3D-BTL** is on, because it decides nothing without it |
+> | the **AA** options row | OFF / 2X / 4X — smooth the stair-stepped edges of the 3D world by rendering the diorama larger than the window and folding it back down. The ladder is samples per display pixel: 2X is a canvas root-two wider and taller, 4X one exactly twice the size. Every edge in the projected picture softens with the silhouettes — the tileset's own texels are quads in a perspective view and cross the pixel grid at the same arbitrary angles — so the diorama reads smoother rather than sharper. The most expensive row in the mod, so it is OFF by default and **FULL** leaves it alone |
+> | the **DAYTIME** options row | SYNC / DAY / NIGHT / DUSK / DAWN / CYCLE — what time it is outdoors, on the diorama *and* on the flat 2D world; held at SYNC (and off the menu) while VOXEL is FULL |
 > 
-> - Node.js 24 or newer
-> - npm
-> - A desktop session with hardware-accelerated graphics
+> **3D-BTL** is on by default and is independent of **VOXEL**: battles draw
+> on the world whether or not the free-roam camera is pitched over.
 > 
-> The packaged character catalog is intentionally empty while the distributable
-> defaults are being selected. Persona opens Settings on first launch so you can
-> import a local `.vrm` model; ignored media files under `public/assets/` are not
-> loaded unless they are declared in the catalog.
+> Two of the engine's own rows are taken away while this mod is installed:
+> **TILT**, which is the flat fake of what this mode does for real, and **GBC
+> FX**, a full-screen present pass over the top of the diorama. Both are held at
+> off rather than merely hidden — a row that is not there cannot switch off a
+> value an older save arrived with. Uninstall and both come back, at whatever
+> they were last set to.
 > 
-> To exercise the packaged-library path with the current ignored local test
-> media, copy the provided examples over the active empty catalogs:
-> 
-> ```bash
-> cp public/assets/library.json.example public/assets/library.json
-> cp public/assets/manifest.json.example public/assets/manifest.json
-> ```
-> 
-> Both example files are directly usable and also document the complete catalog
-> format. Their media remains test-only: the example manifest deliberately keeps
-> distribution disabled and its license fields incomplete.
-> 
-> Packaged VRM files belong under `public/assets/models/`; packaged VRMA files
-> belong under `public/assets/animations/`. A catalog can declare multiple
-> packaged models. When `default_model_id` is `null`, Persona selects the first
-> model record as the packaged default.
-> 
-> ```bash
-> npm install
-> npm run demo
-> ```
-> 
-> `npm run demo` builds the current renderer and launches Persona with normal
-> automatic voice-output detection.
-> 
-> For a background launch:
-> 
-> ```bash
-> npm start -- --background
-> ```
-> 
-> ## Customize Persona
-> 
-> Open **Settings…** from Persona's tray menu to manage the character library.
-> You can preview installed models and animation actions together, choose the
-> default model, set the character's initial size, and add your own `.vrm` and
-> `.vrma` files.
-> 
-> Until a default model exists, Persona does not create the avatar window or
-> start its voice-output listener. The first imported model becomes the default
-> automatically.
-> 
-> Persona always provides **Idle** and **Speaking** action slots. They begin
-> without media, so the model keeps its normal pose until you add clips. Each
-> action can contain multiple `.vrma` files; uploads receive numbered names such
-> as `idle1`, `idle2`, `speaking1`, or `wave1`. Persona chooses a clip from the
-> action whenever that action runs.
-> 
-> Custom actions include a name, description, and trigger scenario. Persona adds
-> that metadata to its MCP animation tool so a connected agent can understand
-> what the action expresses and when to use it. Imported media and configuration
-> changes stay in Persona's local application data.
-> 
-> Packaged media is immutable. Editing or removing a packaged action creates a
-> user-level override without changing the installed application. **Reset
-> packaged actions** restores shipped metadata and visibility while leaving
-> user-created actions and uploaded clips untouched.
-> 
-> ## Connect Persona to Codex
-> 
-> With Persona running, register its local MCP server:
-> 
-> ```bash
-> codex mcp add persona --url http://127.0.0.1:47831/mcp
-> ```
-> 
-> New Codex sessions can then ask Persona to play an installed animation, show or
-> hide its window, and report whether the local character and voice listener are
-> active. Persona remains a separate desktop application; the MCP connection
-> only exposes its own visual controls.
-> 
-> The window intentionally contains no controls:
-> 
-> - Scroll to zoom.
-> - Left-drag to orbit.
-> - Right-drag to pan.
-> - Use your window manager's move gesture to reposition the window.
-> 
-> On Hyprland, Persona also applies floating, pinned, topmost, full-opacity,
-> no-blur, no-shadow, and decoration-free properties. macOS uses an all-Spaces
-> topmost window. Other desktops use the strongest supported Electron window
-> hints.
-> 
-> ## Build native packages
-> 
-> Build on the operating system you are targeting:
-> 
-> ```bash
-> npm run dist:linux
-> npm run dist:windows
-> npm run dist:mac
-> ```
-> 
-> Outputs are written to `release/`. Windows needs Visual Studio Build Tools with
-> the C++ desktop workload. macOS needs Xcode Command Line Tools and macOS 14.2+
-> SDK support.
-> 
-> GitHub Actions runs the full JavaScript, renderer, native compile, and native
-> self-test suite on Linux, Windows, and macOS. Prerelease tags shaped like
-> `v0.1.0-beta.0` create native packages and a checksum file, but only after the
-> asset release gate passes. See [Releasing](docs/RELEASING.md).
-> 
-> ## Replace the character assets before publishing
-> 
-> Character media is intentionally excluded from Git. Local test files must not
-> be distributed. The packaged library is declared without a hard-coded filename
-> contract in source code:
-> 
-> ```text
-> public/assets/
-> ├── library.json
-> ├── library.json.example
-> ├── manifest.json
-> ├── manifest.json.example
-> ├── models/
-> │   └── 
-> └── animations/
->     └── 
-> ```
-> 
-> Define each packaged model and animation action in `library.json`. Action
-> records carry their public name, description, trigger scenario, runtime type,
-> and zero or more asset paths. The permanent `system-idle` and
-> `system-speaking` records may have empty asset lists. Mirror every declared
-> media path in `manifest.json`, then
-> complete its license and source fields and set `distributionAllowed` to `true`.
-> Remove the VRM and VRMA ignore rules only when the chosen files are safe to
-> publish. The release workflow will fail closed until then. Read
-> [Asset licenses](ASSET_LICENSES.md).
-> 
-> ## Development
-> 
-> ```bash
-> npm run check
-> npm run native:build
-> npm run native:test
-> ```
-> 
-> The native listener is required before running Persona from source on macOS or
-> Windows. Linux captures activity through PipeWire and does not build a helper.
-> 
-> Contributions are welcome. Read the [contribution
-> guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before
-> opening an issue or pull request.
-> 
-> More detail:
-> 
-> - [Architecture and development](docs/DEVELOPMENT.md)
-> - [Codex and integration API](docs/INTEGRATIONS.md)
-> - [Release process](docs/RELEASING.md)
-> - [Security policy](SECURITY.md)
-> 
-> Persona application source is licensed under the [MIT License](LICENSE).
-> Bundled character assets are excluded from that license and remain test-only
-> until replaced and documented.
+> Everything the battle screen draws as a box — the two HUD blocks, the text
+> box and the menus over it — sits on frosted glass rather than on the white
+> field it used to have behind it: the world underneath, blurred and laid back
+> down translucent, with the ink flipping white where the ground it lands on is
+> dark. Nothing the engine draws inside a box moves; only the paper is gone.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[bashalarmistalt--decimen-optical-transfer|bashalarmistalt/decimen-optical-transfer]] · [[gavamedia--deltafin|gavamedia/deltafin]] · [[xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer|xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer]] · [[yc-software--qm|yc-software/qm]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]]
 
-[GitHub](https://github.com/xikhar/persona)
+[GitHub](https://github.com/DramaticShape/DramaticShapeVoxelMod)
 
 ## 相關收錄
 
@@ -385,7 +273,7 @@ Bringing real-time voice to life.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "xikhar--persona"
+> WHERE category = "Other" AND file.name != "DramaticShape--DramaticShapeVoxelMod"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -394,7 +282,7 @@ Bringing real-time voice to life.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "xikhar--persona" AND status != "archived"
+> WHERE language = "Lua" AND file.name != "DramaticShape--DramaticShapeVoxelMod" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -403,18 +291,18 @@ Bringing real-time voice to life.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W31" AND file.name != "xikhar--persona"
+> WHERE week = "2026-W32" AND file.name != "DramaticShape--DramaticShapeVoxelMod"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/DramaticShape--DramaticShapeVoxelMod");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "xikhar--persona" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "DramaticShape--DramaticShapeVoxelMod" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -430,7 +318,7 @@ Bringing real-time voice to life.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "xikhar" AND file.name != "xikhar--persona"
+> WHERE owner = "DramaticShape" AND file.name != "DramaticShape--DramaticShapeVoxelMod"
 > SORT stars DESC
 > ```
 
@@ -438,7 +326,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/DramaticShape--DramaticShapeVoxelMod");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -455,7 +343,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/DramaticShape--DramaticShapeVoxelMod");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -488,7 +376,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/DramaticShape--DramaticShapeVoxelMod");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -512,7 +400,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/DramaticShape--DramaticShapeVoxelMod");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -549,7 +437,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/DramaticShape--DramaticShapeVoxelMod");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -632,7 +520,7 @@ Bringing real-time voice to life.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-07-31** — 首次收錄
+> **2026-08-02** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -648,6 +536,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-02|2026-08-02]] — 再次上榜，770 stars
-- [[2026-08-01|2026-08-01]] — 再次上榜，720 stars
-- [[2026-07-31|2026-07-31]] — 首次收錄，679 stars
+- [[2026-08-02|2026-08-02]] — 首次收錄，641 stars

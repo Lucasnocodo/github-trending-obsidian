@@ -7,9 +7,9 @@ language: N/A
 license: N/A
 description: "FDE（前沿部署工程师）从零入门指南（基于范冰《增长黑客》原书框架）"
 homepage: ""
-stars: 594
-stars_per_day: 594
-forks: 70
+stars: 1122
+stars_per_day: 561
+forks: 149
 open_issues: 6
 created: 2026-07-30
 pushed_at: 2026-07-31
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-04"
+appearances: 2
+next_review: "2026-08-05"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 14
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-01"
-star_history: "2026-08-01:594"
+star_history: "2026-08-01:594,2026-08-02:1122"
 tags:
   - github
   - "category/other"
@@ -513,4 +513,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-02|2026-08-02]] — 再次上榜，1.1k stars
 - [[2026-08-01|2026-08-01]] — 首次收錄，594 stars

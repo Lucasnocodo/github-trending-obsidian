@@ -1,21 +1,21 @@
 ---
-repo: xikhar/persona
-url: https://github.com/xikhar/persona
-owner: xikhar
-owner_type: User
-language: JavaScript
-license: NOASSERTION
-description: "Bringing real-time voice to life."
-homepage: ""
-stars: 770
-stars_per_day: 193
-forks: 68
-open_issues: 3
-created: 2026-07-28
-pushed_at: 2026-08-01
-first_seen: 2026-07-31
-week: "2026-W31"
-month: "2026-07"
+repo: talivia-group/talivia
+url: https://github.com/talivia-group/talivia
+owner: talivia-group
+owner_type: Organization
+language: TypeScript
+license: MIT
+description: "Open-source, self-hosted revenue-first analytics for founders: web analytics, Session Replay, revenue attribution, and customer revenue integrations. datafast alternative"
+homepage: "https://talivia.com"
+stars: 599
+stars_per_day: 200
+forks: 49
+open_issues: 1
+created: 2026-07-29
+pushed_at: 2026-07-29
+first_seen: 2026-08-02
+week: "2026-W32"
+month: "2026-08"
 category: "Other"
 subcategory: ""
 release_tag: ""
@@ -25,39 +25,45 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-07-31
+last_reviewed: 2026-08-02
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-08-09"
-contributor_count: 2
+appearances: 1
+next_review: "2026-08-05"
+contributor_count: 1
 engagement: "low"
-issue_close_rate: 50
-repo_size_kb: 1302
-readme_length: 6932
+issue_close_rate: 0
+repo_size_kb: 1412
+readme_length: 4023
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-07-31"
-star_history: "2026-07-31:679,2026-08-01:720,2026-08-02:770"
+ring_history: "assess@2026-08-02"
+star_history: "2026-08-02:599"
 tags:
   - github
   - "category/other"
-  - "lang/javascript"
+  - "lang/typescript"
+  - org
+  - "topic/analytics"
+  - "topic/bing"
+  - "topic/datafast"
+  - "topic/dodopayments"
+  - "topic/google_search"
 aliases:
-  - "persona"
-  - "xikhar/persona"
+  - "talivia"
+  - "talivia-group/talivia"
 ---
 
-# persona
+# talivia
 
-**679** stars · **340** stars/天 · 建立 2 天前 · JavaScript · NOASSERTION
+**599** stars · **200** stars/天 · 建立 3 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/xikhar--persona");
+const me = dv.page("Repos/talivia-group--talivia");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`ORG`
+
+`analytics` `bing` `datafast` `dodopayments` `google-search` `lemonsqueezy` `polar` `product-analytics` `revenue-analytics` `revenue-attribution` `session-replay` `stripe` `web-analytics`
+
 > [!summary] 一句話摘要
-> Bringing real-time voice to life.
+> Open-source, self-hosted revenue-first analytics for founders: web analytics, Session Replay, revenue attribution, and customer revenue integrations. datafast alternative
 
 ## 專案簡介
 
-Bringing real-time voice to life.
+Open-source, self-hosted revenue-first analytics for founders: web analytics, Session Replay, revenue attribution, and customer revenue integrations. datafast alternative
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/talivia-group--talivia");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +126,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/talivia-group--talivia");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,244 +150,170 @@ Bringing real-time voice to life.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 56 |
+| Forks | 49 |
 | Open Issues | 1 |
-| Issue 解決率 | 50% (1 closed) |
-| 最後推送 | 2026-07-31 |
-| 建立日期 | 2026-07-28 |
-| Repo 大小 | 1.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/xikhar/persona) |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-07-29 |
+| 建立日期 | 2026-07-29 |
+| 官方網站 | [Link](https://talivia.com) |
+| Repo 大小 | 1.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/talivia-group/talivia) |
+| Topics | `analytics` `bing` `datafast` `dodopayments` `google-search` `lemonsqueezy` `polar` `product-analytics` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 54
->     "TypeScript" : 29
->     "CSS" : 11
->     "Objective-C++" : 3
->     "C++" : 2
+>     "TypeScript" : 96
+>     "CSS" : 3
+>     "JavaScript" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@xikhar](https://github.com/xikhar) | 8 |
-> | [@fawnster](https://github.com/fawnster) | 2 |
+> | [@taliviagroup](https://github.com/taliviagroup) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-28 ~ 2026-07-31）
-> **活躍天數** 4 天 · **最新 commit** feat: add reliable per-model lighting controls
+> [!abstract] 最近 10 次 commit（2026-07-29）
+> **活躍天數** 1 天 · **最新 commit** feat(app): init
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#3](https://github.com/xikhar/persona/issues/3) | Local AI usage? | 0 | 3 |
+> | [#1](https://github.com/talivia-group/talivia/issues/1) | Tracker domain allowlist silently disables analytics for mix | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> Persona
+> # Talivia
 > 
->   A realtime character presence for desktop voice experiences.
+> This repository contains the focused open-source edition of Talivia, the revenue-first analytics
+> platform available at [talivia.com](https://talivia.com). The self-hosted edition combines core web
+> analytics, Session Replay, website collaborators, shared analytics, import/export, and customer
+> revenue from Stripe, LemonSqueezy, Polar, Dodo, Yolfi, or the Manual Payment API.
 > 
-> ---
+> ## Open source and Talivia Cloud
 > 
-> Persona is a cross-platform desktop character that gives voice conversations
-> an expressive visual identity alongside your work.
+> The open-source edition is a self-hosted subset of the complete Talivia product. For managed
+> hosting and additional integrations-including Google Search Console, Bing Webmaster Tools, GitHub
+> activity, and social mentions from X, Reddit, TikTok and others use
+> [Talivia Cloud](https://talivia.com).
 > 
-> ## Platform support
+> ## Documentation
 > 
-> | Platform    | Automatic voice output listener | Distribution               |
-> | ----------- | ------------------------------- | -------------------------- |
-> | Linux       | PipeWire process-stream capture | AppImage and DEB           |
-> | Windows     | WASAPI process-loopback capture | NSIS installer             |
-> | macOS 14.2+ | Core Audio process tap          | DMG and ZIP, arm64 and x64 |
+> Product and integration guides are available in the
+> [official Talivia documentation](https://talivia.com/docs).
 > 
-> Linux requires `pw-dump` and `pw-record` on `PATH`. Windows process-loopback
-> requires Windows 10 build 20348 or newer. macOS asks once for System Audio
-> Recording permission.
+> ## Local development
 > 
-> Each listener is scoped to the supported application's playback process. Persona
-> does not capture the microphone, save audio, produce speech, transcribe content,
-> or send audio over the network.
-> 
-> ## Try Persona locally
-> 
-> Requirements:
-> 
-> - Node.js 24 or newer
-> - npm
-> - A desktop session with hardware-accelerated graphics
-> 
-> The packaged character catalog is intentionally empty while the distributable
-> defaults are being selected. Persona opens Settings on first launch so you can
-> import a local `.vrm` model; ignored media files under `public/assets/` are not
-> loaded unless they are declared in the catalog.
-> 
-> To exercise the packaged-library path with the current ignored local test
-> media, copy the provided examples over the active empty catalogs:
+> Requirements: Node.js 22 LTS or 24 LTS, pnpm 10+, and an empty PostgreSQL database.
 > 
 > ```bash
-> cp public/assets/library.json.example public/assets/library.json
-> cp public/assets/manifest.json.example public/assets/manifest.json
+> cp .env.example .env
+> openssl rand -hex 32
 > ```
 > 
-> Both example files are directly usable and also document the complete catalog
-> format. Their media remains test-only: the example manifest deliberately keeps
-> distribution disabled and its license fields incomplete.
-> 
-> Packaged VRM files belong under `public/assets/models/`; packaged VRMA files
-> belong under `public/assets/animations/`. A catalog can declare multiple
-> packaged models. When `default_model_id` is `null`, Persona selects the first
-> model record as the packaged default.
+> Put the generated value in `APP_SECRET`, then install, migrate, and start Talivia:
 > 
 > ```bash
-> npm install
-> npm run demo
+> pnpm install --frozen-lockfile
+> pnpm exec prisma migrate deploy
+> pnpm dev
 > ```
 > 
-> `npm run demo` builds the current renderer and launches Persona with normal
-> automatic voice-output detection.
+> Open `http://localhost:3000` and sign in with:
 > 
-> For a background launch:
+> - Username: `admin`
+> - Password: `admin`
+> 
+> Change this bootstrap password immediately under **Settings → Account**.
+> Administrators can create additional username/password accounts and change their roles on the same
+> Account page. Password hashes are never shown; every user changes their own password.
+> 
+> Useful checks:
 > 
 > ```bash
-> npm start -- --background
+> pnpm lint
+> pnpm test
+> pnpm build
 > ```
 > 
-> ## Customize Persona
+> The baseline migration is for an empty database only. There is no migration path from a hosted
+> Talivia database.
 > 
-> Open **Settings…** from Persona's tray menu to manage the character library.
-> You can preview installed models and animation actions together, choose the
-> default model, set the character's initial size, and add your own `.vrm` and
-> `.vrma` files.
+> ## Configuration
 > 
-> Until a default model exists, Persona does not create the avatar window or
-> start its voice-output listener. The first imported model becomes the default
-> automatically.
+> Talivia has two required settings and one optional integration:
 > 
-> Persona always provides **Idle** and **Speaking** action slots. They begin
-> without media, so the model keeps its normal pose until you add clips. Each
-> action can contain multiple `.vrma` files; uploads receive numbered names such
-> as `idle1`, `idle2`, `speaking1`, or `wave1`. Persona chooses a clip from the
-> action whenever that action runs.
+> | Variable | Required | Purpose |
+> | --- | --- | --- |
+> | `DATABASE_URL` | Yes | Connection string for the PostgreSQL database. |
+> | `APP_SECRET` | Yes | Random value of at least 32 bytes; signs sessions and encrypts saved provider credentials. |
+> | `COINGECKO_API_KEY` | No | Enables crypto exchange-rate conversion. |
 > 
-> Custom actions include a name, description, and trigger scenario. Persona adds
-> that metadata to its MCP animation tool so a connected agent can understand
-> what the action expresses and when to use it. Imported media and configuration
-> changes stay in Persona's local application data.
+> The application remains usable when CoinGecko is not configured or temporarily unavailable.
 > 
-> Packaged media is immutable. Editing or removing a packaged action creates a
-> user-level override without changing the installed application. **Reset
-> packaged actions** restores shipped metadata and visibility while leaving
-> user-created actions and uploaded clips untouched.
+> ## First setup
 > 
-> ## Connect Persona to Codex
+> 1. Create a website in Talivia.
+> 2. Copy its tracking snippet into your site.
+> 3. Confirm that a visit appears on the dashboard.
+> 4. Optionally enable Session Replay in website settings.
+> 5. Connect customer revenue under **Website settings → Payments**.
 > 
-> With Persona running, register its local MCP server:
+> Supported revenue inputs include Stripe, LemonSqueezy, Polar, Dodo, Yolfi, and the Manual Payment
+> API. Subscription lifecycle, refunds, disputes, and first-/last-touch attribution are retained.
+> 
+> Payment-provider webhook URLs are generated from the incoming request origin. When Talivia runs
+> behind a reverse proxy, forward the original `Host` and `X-Forwarded-Proto` headers.
+> 
+> ## Docker
+> 
+> Requirements: Docker Engine with Docker Compose.
 > 
 > ```bash
-> codex mcp add persona --url http://127.0.0.1:47831/mcp
+> cp .env.example .env
+> openssl rand -hex 32
 > ```
 > 
-> New Codex sessions can then ask Persona to play an installed animation, show or
-> hide its window, and report whether the local character and voice listener are
-> active. Persona remains a separate desktop application; the MCP connection
-> only exposes its own visual controls.
-> 
-> The window intentionally contains no controls:
-> 
-> - Scroll to zoom.
-> - Left-drag to orbit.
-> - Right-drag to pan.
-> - Use your window manager's move gesture to reposition the window.
-> 
-> On Hyprland, Persona also applies floating, pinned, topmost, full-opacity,
-> no-blur, no-shadow, and decoration-free properties. macOS uses an all-Spaces
-> topmost window. Other desktops use the strongest supported Electron window
-> hints.
-> 
-> ## Build native packages
-> 
-> Build on the operating system you are targeting:
+> Put the generated value in `APP_SECRET`, then start Talivia:
 > 
 > ```bash
-> npm run dist:linux
-> npm run dist:windows
-> npm run dist:mac
+> docker compose up --build -d
+> docker compose ps
 > ```
 > 
-> Outputs are written to `release/`. Windows needs Visual Studio Build Tools with
-> the C++ desktop workload. macOS needs Xcode Command Line Tools and macOS 14.2+
-> SDK support.
+> Open `http://localhost:3000` and change the bootstrap `admin` password immediately. The container
+> applies the OSS database migration automatically before starting the application.
 > 
-> GitHub Actions runs the full JavaScript, renderer, native compile, and native
-> self-test suite on Linux, Windows, and macOS. Prerelease tags shaped like
-> `v0.1.0-beta.0` create native packages and a checksum file, but only after the
-> asset release gate passes. See [Releasing](docs/RELEASING.md).
+> ## Backups and upgrades
 > 
-> ## Replace the character assets before publishing
-> 
-> Character media is intentionally excluded from Git. Local test files must not
-> be distributed. The packaged library is declared without a hard-coded filename
-> contract in source code:
-> 
-> ```text
-> public/assets/
-> ├── library.json
-> ├── library.json.example
-> ├── manifest.json
-> ├── manifest.json.example
-> ├── models/
-> │   └── 
-> └── animations/
->     └── 
-> ```
-> 
-> Define each packaged model and animation action in `library.json`. Action
-> records carry their public name, description, trigger scenario, runtime type,
-> and zero or more asset paths. The permanent `system-idle` and
-> `system-speaking` records may have empty asset lists. Mirror every declared
-> media path in `manifest.json`, then
-> complete its license and source fields and set `distributionAllowed` to `true`.
-> Remove the VRM and VRMA ignore rules only when the chosen files are safe to
-> publish. The release workflow will fail closed until then. Read
-> [Asset licenses](ASSET_LICENSES.md).
-> 
-> ## Development
+> Back up the PostgreSQL database and any deployment-specific storage before upgrading. For a
+> Compose installation, create a logical database backup with:
 > 
 > ```bash
-> npm run check
-> npm run native:build
-> npm run native:test
+> docker compose exec -T postgres pg_dump -U talivia -d talivia_oss > talivia-backup.sql
 > ```
 > 
-> The native listener is required before running Persona from source on macOS or
-> Windows. Linux captures activity through PipeWire and does not build a helper.
+> Future releases add ordered migrations under `prisma/migrations`. Apply them with
+> `pnpm exec prisma migrate deploy`; the official container does this during startup. Never edit a
+> migration that has already been applied to a persistent database.
 > 
-> Contributions are welcome. Read the [contribution
-> guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before
-> opening an issue or pull request.
+> ## Security and contributions
 > 
-> More detail:
+> See [SECURITY.md](SECURITY.md) for vulnerability reporting and deployment guidance, and
+> [CONTRIBUTING.md](CONTRIBUTING.md) for the development workflow.
 > 
-> - [Architecture and development](docs/DEVELOPMENT.md)
-> - [Codex and integration API](docs/INTEGRATIONS.md)
-> - [Release process](docs/RELEASING.md)
-> - [Security policy](SECURITY.md)
-> 
-> Persona application source is licensed under the [MIT License](LICENSE).
-> Bundled character assets are excluded from that license and remain test-only
-> until replaced and documented.
+> Talivia is licensed under the [MIT License](LICENSE).
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[bashalarmistalt--decimen-optical-transfer|bashalarmistalt/decimen-optical-transfer]] · [[gavamedia--deltafin|gavamedia/deltafin]] · [[xdash--FDE-the-Guidance-Book-of-Forward-Deployed-Engineer|xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer]] · [[yc-software--qm|yc-software/qm]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
 
-[GitHub](https://github.com/xikhar/persona)
+[GitHub](https://github.com/talivia-group/talivia) · [官方網站](https://talivia.com)
 
 ## 相關收錄
 
@@ -385,7 +321,7 @@ Bringing real-time voice to life.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "xikhar--persona"
+> WHERE category = "Other" AND file.name != "talivia-group--talivia"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -394,7 +330,7 @@ Bringing real-time voice to life.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "xikhar--persona" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "talivia-group--talivia" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -403,18 +339,18 @@ Bringing real-time voice to life.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W31" AND file.name != "xikhar--persona"
+> WHERE week = "2026-W32" AND file.name != "talivia-group--talivia"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/talivia-group--talivia");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "xikhar--persona" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "talivia-group--talivia" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -430,7 +366,7 @@ Bringing real-time voice to life.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "xikhar" AND file.name != "xikhar--persona"
+> WHERE owner = "talivia-group" AND file.name != "talivia-group--talivia"
 > SORT stars DESC
 > ```
 
@@ -438,7 +374,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/talivia-group--talivia");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -455,7 +391,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/talivia-group--talivia");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -488,7 +424,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/talivia-group--talivia");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -512,7 +448,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/talivia-group--talivia");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -549,7 +485,7 @@ Bringing real-time voice to life.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/xikhar--persona");
+> const me = dv.page("Repos/talivia-group--talivia");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -632,7 +568,7 @@ Bringing real-time voice to life.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-07-31** — 首次收錄
+> **2026-08-02** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -648,6 +584,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-02|2026-08-02]] — 再次上榜，770 stars
-- [[2026-08-01|2026-08-01]] — 再次上榜，720 stars
-- [[2026-07-31|2026-07-31]] — 首次收錄，679 stars
+- [[2026-08-02|2026-08-02]] — 首次收錄，599 stars

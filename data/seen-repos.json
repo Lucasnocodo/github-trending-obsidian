@@ -3186,10 +3186,10 @@
   },
   "MoonshotAI/Kimi-K3": {
     "first_seen": "2026-07-28",
-    "last_seen": "2026-08-01",
-    "times_seen": 5,
+    "last_seen": "2026-08-02",
+    "times_seen": 6,
     "stars_first": 1993,
-    "stars_last": 7734
+    "stars_last": 7832
   },
   "vercel-labs/scriptc": {
     "first_seen": "2026-07-28",
@@ -3242,10 +3242,10 @@
   },
   "xikhar/persona": {
     "first_seen": "2026-07-31",
-    "last_seen": "2026-08-01",
-    "times_seen": 2,
+    "last_seen": "2026-08-02",
+    "times_seen": 3,
     "stars_first": 679,
-    "stars_last": 720
+    "stars_last": 770
   },
   "WilonityXYZ/Wilonity": {
     "first_seen": "2026-07-31",
@@ -3270,31 +3270,31 @@
   },
   "yc-software/qm": {
     "first_seen": "2026-08-01",
-    "last_seen": "2026-08-01",
-    "times_seen": 1,
+    "last_seen": "2026-08-02",
+    "times_seen": 2,
     "stars_first": 2422,
-    "stars_last": 2422
+    "stars_last": 5215
   },
   "bashalarmistalt/decimen-optical-transfer": {
     "first_seen": "2026-08-01",
-    "last_seen": "2026-08-01",
-    "times_seen": 1,
+    "last_seen": "2026-08-02",
+    "times_seen": 2,
     "stars_first": 2194,
-    "stars_last": 2194
+    "stars_last": 3129
   },
   "QwenAudio/qwen-audio-agent": {
     "first_seen": "2026-08-01",
-    "last_seen": "2026-08-01",
-    "times_seen": 1,
+    "last_seen": "2026-08-02",
+    "times_seen": 2,
     "stars_first": 622,
-    "stars_last": 622
+    "stars_last": 1396
   },
   "xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer": {
     "first_seen": "2026-08-01",
-    "last_seen": "2026-08-01",
-    "times_seen": 1,
+    "last_seen": "2026-08-02",
+    "times_seen": 2,
     "stars_first": 594,
-    "stars_last": 594
+    "stars_last": 1122
   },
   "gavamedia/deltafin": {
     "first_seen": "2026-08-01",
@@ -3302,5 +3302,33 @@
     "times_seen": 1,
     "stars_first": 567,
     "stars_last": 567
+  },
+  "trycompai/crm": {
+    "first_seen": "2026-08-02",
+    "last_seen": "2026-08-02",
+    "times_seen": 1,
+    "stars_first": 832,
+    "stars_last": 832
+  },
+  "sqliteai/waste": {
+    "first_seen": "2026-08-02",
+    "last_seen": "2026-08-02",
+    "times_seen": 1,
+    "stars_first": 705,
+    "stars_last": 705
+  },
+  "DramaticShape/DramaticShapeVoxelMod": {
+    "first_seen": "2026-08-02",
+    "last_seen": "2026-08-02",
+    "times_seen": 1,
+    "stars_first": 641,
+    "stars_last": 641
+  },
+  "talivia-group/talivia": {
+    "first_seen": "2026-08-02",
+    "last_seen": "2026-08-02",
+    "times_seen": 1,
+    "stars_first": 599,
+    "stars_last": 599
   }
 }
