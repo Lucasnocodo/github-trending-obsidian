@@ -1,64 +1,69 @@
 ---
-repo: sqliteai/waste
-url: https://github.com/sqliteai/waste
-owner: sqliteai
+repo: WilonityDev/WilonityLoader
+url: https://github.com/WilonityDev/WilonityLoader
+owner: WilonityDev
 owner_type: Organization
-language: C
-license: Apache-2.0
-description: "Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by streaming activated weights directly from NVMe. A dependency-free, embeddable C inference engine."
-homepage: ""
-stars: 1166
-stars_per_day: 233
-forks: 96
-open_issues: 3
-created: 2026-07-28
-pushed_at: 2026-08-02
-first_seen: 2026-08-02
+language: N/A
+license: MIT
+description: "Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, PUBG, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread."
+homepage: "https://wilonity.xyz"
+stars: 1216
+stars_per_day: 608
+forks: 0
+open_issues: 0
+created: 2026-07-31
+pushed_at: 2026-08-01
+first_seen: 2026-08-03
 week: "2026-W32"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: "v0.6.2"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-02
+last_reviewed: 2026-08-03
 use_case: ""
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-08-06"
-contributor_count: 2
+contributor_count: 1
 engagement: "low"
-issue_close_rate: 75
-repo_size_kb: 3871
-readme_length: 9496
+issue_close_rate: -1
+repo_size_kb: 11839
+readme_length: 2952
 bus_factor: 1
-last_release_days: 1
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-02"
-star_history: "2026-08-02:705,2026-08-03:1166"
+ring_history: "assess@2026-08-03"
+star_history: "2026-08-03:1216"
 tags:
   - github
   - "category/other"
-  - "lang/c"
+  - "lang/other"
   - org
+  - "topic/arc_raiders"
+  - "topic/counter_strike_2"
+  - "topic/game"
+  - "topic/hack"
+  - "topic/meccha_chameleon_tools"
 aliases:
-  - "waste"
-  - "sqliteai/waste"
+  - "WilonityLoader"
+  - "WilonityDev/WilonityLoader"
 ---
 
-# waste
+# WilonityLoader
 
-**705** stars · **176** stars/天 · 建立 4 天前 · C · Apache-2.0
+**1.2k** stars · **608** stars/天 · 建立 2 天前 · N/A · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/sqliteai--waste");
+const me = dv.page("Repos/WilonityDev--WilonityLoader");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG` `v0.6.2`
+`ORG`
+
+`arc-raiders` `counter-strike-2` `game` `hack` `meccha-chameleon-tools` `minecraft`
 
 > [!summary] 一句話摘要
-> Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by streaming activated weights directly from NVMe. A dependency-free, embeddable C inference engine.
+> Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, PUBG, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread.
 
 ## 專案簡介
 
-Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by streaming activated weights directly from NVMe. A dependency-free, embeddable C inference engine.
+Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, PUBG, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/WilonityDev--WilonityLoader");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +126,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/WilonityDev--WilonityLoader");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,242 +150,133 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 68 |
-| Open Issues | 2 |
-| Issue 解決率 | 75% (6 closed) |
+| Forks | 0 |
+| Open Issues | 0 |
 | 最後推送 | 2026-08-01 |
-| 建立日期 | 2026-07-28 |
-| Repo 大小 | 3.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/sqliteai/waste) |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "C" : 47
->     "Python" : 45
->     "Shell" : 6
->     "Makefile" : 1
->     "Objective-C" : 1
-> ```
+| 建立日期 | 2026-07-31 |
+| 官方網站 | [Link](https://wilonity.xyz) |
+| Repo 大小 | 11.6 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/WilonityDev/WilonityLoader) |
+| Topics | `arc-raiders` `counter-strike-2` `game` `hack` `meccha-chameleon-tools` `minecraft` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@marcobambini](https://github.com/marcobambini) | 138 |
-> | [@isenbek](https://github.com/isenbek) | 3 |
-
-**最新版本**：v0.6.2 (2026-08-01)
-
-> [!info]- Release Notes
-> ### Fixed
-> 
-> - **`waste info` and `waste run` crashed on K3 on every x86 build**
->   ([#10](https://github.com/sqliteai/waste/issues/10)). The tensors the
->   loader skips — the vision tower, and anything outside `tensor_prefix` —
->   kept `group` at 0, and the row-scratch sizing divided by it. The
->   architecture decided what that meant: arm64's `sdiv` answers 0 and the
->   run continues, x86's `idiv` raises `#DE`. `waste plan` was unaffected
->   because it does not load. §37.
-> - **`WASTE_Q8=0` could not load a 4-bit trunk**
->   ([#6](https://github.com/sqliteai/waste/issues/6)) — that is, any
->   container a default `tools/convert.py` run produces. The dequantizer
->   read one byte per weight, true of Q8G alone, while catching every
->   quantized format. It now decodes through `waste_deq_row`, the one place
->   that knows all three widths. The same lines also predated `waste_f16`'s
->   subnormal fix and flushed group scales below 6.1e-05 to zero.
-> - **`embed_tokens` stays on disk under `WASTE_Q8=0`**, as it does
->   otherwise: 7.93 → 6.52 GiB of peak RSS on Kimi-Linear, identical logits.
->   The f32-equivalence check now differs from the default path in the
->   storage width alone, which is what it claims to compare.
-> 
-> ### Added
-> 
-> - **Router lookahead in the decode path.** At the end of a MoE layer, once
->   its reads are consumed and the disk is about to idle through the next
->   layer's attention, layer L+1's router runs on layer L's hidden state and
-> ...（完整內容見 GitHub）
+> | [@WilonityManager](https://github.com/WilonityManager) | 5 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-01 ~ 2026-08-01）
-> **活躍天數** 1 天 · **最新 commit** Connect the engine's traces to the cache simulator, and fix what it modelled
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#11](https://github.com/sqliteai/waste/issues/11) | CUDA backend: what would have to be true for it to pay `enhancement` `help wanted` | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-07-31 ~ 2026-08-01）
+> **活躍天數** 2 天 · **最新 commit** Update README.md
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # WASTE — Weight-Aware Streaming Tensor Engine
+> # 🚀 Wilonity Loader v3
 > 
-> **Kimi K3 — 2.78 trillion parameters — running on a consumer laptop.**
+> **Next‑gen game enhancement platform**
 > 
-> ```
-> $ waste run ~/models/k3.waste 'What is the capital of Italy?'
-> waste: no --budget, using 46.24 GB of 64.00 GB (expert cache 17.56 GB)
-> The capital of Italy is **Rome**.
-> [16 tokens, 25.78 s, 0.62 tok/s | experts 9038 hit / 14514 miss = 38%]
-> ```
+> [](https://github.com/WilonityDev)
+> [](https://wilonity.xyz)
+> [](LICENSE)
+> [](https://discord.gg/hRZ8bvq3qA)
+> [](https://twitter.com/wilonity)
+> [](https://t.me/DMVChannel)
 > 
-> WASTE is an embeddable inference engine written in C, with no third-party runtime dependencies. It keeps the model trunk in memory, streams selected experts directly from disk, and uses the remaining RAM as a bounded expert cache.
+> ---
 > 
-> Its current proof point is the complete open-weights Kimi K3 model: 2.78 trillion parameters, converted into a 982 GiB container and running on a 64 GB MacBook Pro at 0.45–0.62 tokens per second. **This is not a distilled, pruned, or reduced variant**.
+> ## 📖 About
 > 
-> | Model               | Container | Minimum RAM | Tested speed    |
-> | ------------------- | --------- | ----------- | --------------- |
-> | **Kimi K3 2.78T**   | 982 GiB   | 29.05 GiB   | 0.45–0.62 tok/s |
-> | **Kimi-Linear 48B** | 19 GiB    | 1.87 GiB    | 10.7 tok/s      |
+> **Wilonity Loader** is a modern game enhancement platform designed to elevate your gaming experience. Our mission is to provide gamers with powerful, reliable, and easy‑to‑use tools for their favorite titles.
 > 
-> WASTE was written for that one model and that one constraint: **K3 does
-> not fit in the RAM of current mainstream consumer systems.** It is 1.42 TB
-> as published and 982 GB after conversion. But a mixture of experts
-> activates about 4% of itself per token, so almost all of that weight is
-> idle at any instant — and idle weight does not need to be in memory, it
-> needs to be *reachable in time*. WASTE keeps it on disk in a layout where
-> one expert costs exactly one read, streams what each token actually
-> needs, and spends every remaining byte of RAM on the part that repeats.
+> We believe in:
+> - ✅ **Innovation** — constantly evolving technology
+> - 🔒 **Safety** — every tool is thoroughly tested and verified
+> - 🎯 **Precision** — advanced algorithms for optimal performance
+> - 🌍 **Community** — driven by feedback and collaboration
 > 
+> ---
 > 
-> ## What it is
+> ## 🎮 Supported Games
 > 
-> - **Self-contained.** One `libwaste.a`, one `waste` binary, nothing at run
->   time beyond libc and pthreads.
-> - **Zero dependencies.** No BLAS, no ONNX, no Python in the inference
->   path, nothing to install. The Python under `tools/` converts models and
->   validates the engine; it never runs alongside it.
-> - **Fully embeddable.** Twenty-six public functions in
->   [src/waste.h](src/waste.h): open a model under a RAM ceiling, generate,
->   save the session, close. The CLI is a client of that API and touches
->   nothing private — if the CLI can do it, so can an embedding host.
+> | Game | Status | Modules |
+> |------|--------|---------|
+> | **CS2** | ✅ Fully supported | 60+ |
+> | **Valorant** | ✅ Fully supported | 40+ |
+> | **Rust** | ✅ Fully supported | 35+ |
+> | **Apex Legends** | ✅ Fully supported | 28+ |
+> | **Fortnite** | ✅ Fully supported | 25+ |
+> | **War Thunder** | ✅ Supported | 15+ |
+> | **Minecraft** | ✅ Fully supported | 45+ |
+> | **GTA V** | ✅ Supported | 30+ |
+> | **Overwatch 2** | ✅ Supported | 20+ |
+> | **Rainbow Six Siege** | ✅ Supported | 18+ |
+> | **League of Legends** | ✅ Supported | 22+ |
+> | **Dota 2** | ✅ Supported | 20+ |
+> | **Team Fortress 2** | ✅ Supported | 16+ |
+> | **Garry's Mod** | ✅ Supported | 12+ |
+> | **Among Us** | ✅ Supported | 10+ |
 > 
-> ```c
-> waste_cfg cfg;
-> waste_cfg_init(&cfg);
-> cfg.ram_budget_bytes = 46ULL  N   */
-> waste_generate(ctx, ids, n_ids, &params, cb, u);   /* consumes the queue */
-> ```
+> > 📋 *Full list and detailed module descriptions available on our [website](https://wilonity.xyz)*
 > 
-> The tower's shape, the patch budget and the pixel normalization live in
-> `vision.json`, which the converter writes from the release's own nested
-> `vision_config` and from `preprocessor_config.json`. K3 normalizes to
-> [-1, 1] with mean = std = 0.5.
+> ---
 > 
-> That last sentence was wrong here for a day, and the way it was wrong is
-> worth keeping. This section used to say **K3 ships no preprocessor
-> config**, so the normalization was "the CLIP convention this lineage of
-> towers uses rather than a value read out of the release" — an assumption,
-> labelled as one. The release does ship the file; the downloader fetched a
-> hardcoded list of filenames and never asked the repo what it contained.
-> The tower still matched its oracle at 2.3e-06 throughout, because the
-> oracle is fed random pixels and never touches the normalization. An
-> honest caveat is not a substitute for reading the file.
+> ## 🖥️ Application Preview.
 > 
+> *Wilonity Loader interface – clean, fast, and intuitive.*
 > 
-> ## Why the name
+> ---
 > 
-> Every token answered by a cloud service is paid for twice: once on the
-> invoice, and once in the electricity of a datacenter running a model that
-> would fit — barely, awkwardly, but genuinely — on hardware already sitting
-> on a desk. WASTE means to be the first concrete step toward ending that
-> waste of tokens. The acronym came second.
+> ## ✨ Key Features
 > 
+> - **Unified Launcher** – one app for all your games
+> - **Smart Module System** – load only what you need
+> - **Regular Updates** – stay ahead with constant improvements
+> - **User‑Friendly Interface** – designed for speed and simplicity
+> - **Cross‑Platform** – Windows 10/11 x64 & ARM64 support
+> - **Zero Configuration** – download, run, play
 > 
-> ## Where this stands
+> ---
 > 
-> The engine is correct: every layer is validated against a PyTorch
-> reference, the final logits agree to 3.6e-06, and the vision tower matches
-> its own oracle to 2.3e-06. It is also slow — half a token per second,
-> twenty-six seconds for the sentence above.
+> ## 📥 Installation
 > 
-> Both of those matter, and the second one should not be read as a
-> disclaimer. We are not aware of another published demonstration of a
-> model this size streaming from disk on a consumer machine: we found none
-> for trillion-scale NVMe streaming, and the best-documented 671B-class
-> recipes assume a server with a terabyte of DDR5. That is a report of what
-> our search turned up rather than a survey — this repository carries no
-> bibliography and no comparison table, so read it as an invitation to send
-> a counter-example, not as a result. The interesting part is not the
-> speed, it is that the whole thing is in the reachable range on a single
-> consumer machine — and that from here the question is engineering rather
-> than feasibility.
+> ### Requirements
+> - Windows 10/11 (x64 or ARM64)
+> - .NET Framework 4.8 or higher
+> - Visual C++ Redistributable (included in installer)
 > 
-> Where the levers were is not where they are. The two that looked biggest —
-> reading fewer bytes per token, and keeping more of them in RAM — were both
-> measured and both refused: this family's router has no tail to demote, and a
-> cache the machine will not leave resident cannot be bought at any price. What
-> paid instead was never about *which* bytes to read but *when*. Overlapping
-> the expert reads with the arithmetic is worth ~1.6x; starting the next
-> layer's reads on its own router's guess, one residual early, takes the hit
-> rate from 14% to 38% at no extra bytes at all.
+> ### Steps
+> 1. Download the latest installer from our [official website](https://wilonity.xyz)
+> 2. Run the setup and follow the instructions.
+> 3. Launch Wilonity Loader from your desktop shortcut.
+> 4. Select your game and enjoy!
 > 
-> Both of those are exact — the cache statistics and the logits are unchanged
-> — which is the property that makes them shippable rather than tuning.
-> [docs/EFFICIENCY.md](docs/EFFICIENCY.md) is the account of how each lever was
-> priced, including the three that were built before being measured and the two
-> that were then taken back out.
+> > ⚠️ *Older Windows versions (7, 8.1) are not supported.*
 > 
-> What that opens up, concretely: a frontier-scale model that answers with
-> no network, no per-token invoice, and nothing leaving the machine — which
-> is the difference between "you may not send that data to an API" and "run
-> it here". The format and the engine are not K3-specific in any deep way;
-> K3 is simply the hardest case that exists today, and a model that streams
-> at 2.78T streams comfortably at 48B.
+> ## 📬 Contact & Social
 > 
-> Every number in this document was measured on the commit it is published
-> with, and the ones that were wrong are recorded as wrong in
-> [docs/LEARNED.md](docs/LEARNED.md) rather than quietly corrected.
+> - **Website**: [wilonity.xyz](https://wilonity.xyz)
+> - **Email**: [help@wilonity.xyz](mailto:help@wilonity.xyz)
+> - **Discord**: [Join our server](https://discord.gg/hRZ8bvq3qA)
+> - **Twitter**: [@wilonity](https://twitter.com/wilonity)
+> - **Telegram**: [t.me/wilonity](https://t.me/DMVChannel)
+> - **GitHub**: [github.com/Wilonity](https://github.com/WilonityDev)
 > 
+> ---
 > 
-> ## What you need
+> ## 📄 License
 > 
-> | | |
-> |---|---|
-> | **disk, for the model** | **982 GB** for the converted container — plan a terabyte |
-> | disk, to convert it | another 1.42 TB of staging for the published shards, freed afterwards |
-> | **RAM** | **29.05 GB** minimum to open K3 at 4K context; **64 GB** for the numbers here |
-> | storage speed | the container must be on internal NVMe — see below |
-> | build | a C11 compiler and `make`. No BLAS, no CUDA, no Python at run time |
+> This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details..
 > 
-> Sizes here are powers of two, the way `df` and the engine both report
-> them: the container is 982 GiB, which a disk vendor would call 1.05 TB.
+> ---
 > 
-> The RAM floor is what the engine refuses to start below, and it is almost
-> entirely the 27.28 GB resident trunk. Useful throughput starts higher: on
-> a 64 GB machine the engine gives itself a 46 GB budget, of which 17.56 GB
-> is expert cache, and that is the top of the measured curve. A 32 GB
-> machine can technically open the model and will page badly; treat 64 GB as
-> the real requirement.
-> 
-> **Storage speed is not a detail.** A token reads 17 GB of experts. On the
-> internal SSD that is 12.78 GB/s and the model streams; over a USB
-> enclosure it is 0.94 GB/s and the same token takes thirteen seconds.
-> Convert onto internal NVMe, and use the external disk for the download
-> only.
-> 
-> If a terabyte is not available, the same engine and the same format run
-> `Kimi-Linear-48B-A3B-Instruct` from a **19 GB** container with a
-> **1.87 GB** floor, at 10.7 tok/s. That is the good path for trying WASTE
-> out before committing a disk to K3.
-> 
-> 
-> ## Platforms
-> 
-> | | build | model-free suite | backend |
-> |---|---|---|---|
-> | macOS arm64 | yes | 23 pass / 0 fail / 11 skip | NEON |
-> | Linux arm64 | yes | 23 pass / 0 fail / 11 skip | NEON |
-> | Linux x86_64 | yes | 23 pass / 0 fail / 11 skip | AVX2 |
-> | Windows x86_64 | yes | contai
+> **Made with ❤️ by the Wilonity Team**
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]] · [[bashalarmistalt--decimen-optical-transfer|bashalarmistalt/decimen-optical-transfer]] · [[gavamedia--deltafin|gavamedia/deltafin]] · [[talivia-group--talivia|talivia-group/talivia]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
 
-[GitHub](https://github.com/sqliteai/waste)
+[GitHub](https://github.com/WilonityDev/WilonityLoader) · [官方網站](https://wilonity.xyz)
 
 ## 相關收錄
 
@@ -386,7 +284,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "sqliteai--waste"
+> WHERE category = "Other" AND file.name != "WilonityDev--WilonityLoader"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -395,7 +293,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C" AND file.name != "sqliteai--waste" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "WilonityDev--WilonityLoader" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -404,18 +302,18 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "sqliteai--waste"
+> WHERE week = "2026-W32" AND file.name != "WilonityDev--WilonityLoader"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/WilonityDev--WilonityLoader");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "sqliteai--waste" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "WilonityDev--WilonityLoader" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -431,7 +329,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "sqliteai" AND file.name != "sqliteai--waste"
+> WHERE owner = "WilonityDev" AND file.name != "WilonityDev--WilonityLoader"
 > SORT stars DESC
 > ```
 
@@ -439,7 +337,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/WilonityDev--WilonityLoader");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -456,7 +354,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/WilonityDev--WilonityLoader");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -489,7 +387,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/WilonityDev--WilonityLoader");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -513,7 +411,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/WilonityDev--WilonityLoader");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -550,7 +448,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/WilonityDev--WilonityLoader");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -633,7 +531,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-02** — 首次收錄
+> **2026-08-03** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -649,5 +547,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-03|2026-08-03]] — 再次上榜，1.2k stars
-- [[2026-08-02|2026-08-02]] — 首次收錄，705 stars
+- [[2026-08-03|2026-08-03]] — 首次收錄，1.2k stars

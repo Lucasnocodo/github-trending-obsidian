@@ -7,12 +7,12 @@ language: JavaScript
 license: Apache-2.0
 description: "A realtime voice runtime that keeps Agents talking, working, and present.  Real-time Voice Runtime for AI Agents"
 homepage: ""
-stars: 1396
-stars_per_day: 279
-forks: 91
-open_issues: 10
+stars: 1752
+stars_per_day: 292
+forks: 110
+open_issues: 4
 created: 2026-07-27
-pushed_at: 2026-08-01
+pushed_at: 2026-08-03
 first_seen: 2026-08-01
 week: "2026-W31"
 month: "2026-08"
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-08-01
 use_case: ""
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-05"
+appearances: 3
+next_review: "2026-08-06"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 17
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-01"
-star_history: "2026-08-01:622,2026-08-02:1396"
+star_history: "2026-08-01:622,2026-08-02:1396,2026-08-03:1752"
 tags:
   - github
   - "category/other"
@@ -818,5 +818,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-03|2026-08-03]] — 再次上榜，1.8k stars
 - [[2026-08-02|2026-08-02]] — 再次上榜，1.4k stars
 - [[2026-08-01|2026-08-01]] — 首次收錄，622 stars

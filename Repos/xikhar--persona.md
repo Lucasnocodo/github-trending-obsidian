@@ -7,12 +7,12 @@ language: JavaScript
 license: NOASSERTION
 description: "Bringing real-time voice to life."
 homepage: ""
-stars: 770
-stars_per_day: 193
-forks: 68
-open_issues: 3
+stars: 796
+stars_per_day: 159
+forks: 72
+open_issues: 1
 created: 2026-07-28
-pushed_at: 2026-08-01
+pushed_at: 2026-08-02
 first_seen: 2026-07-31
 week: "2026-W31"
 month: "2026-07"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-08-09"
+appearances: 4
+next_review: "2026-08-10"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-07-31"
-star_history: "2026-07-31:679,2026-08-01:720,2026-08-02:770"
+star_history: "2026-07-31:679,2026-08-01:720,2026-08-02:770,2026-08-03:796"
 tags:
   - github
   - "category/other"
@@ -648,6 +648,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-03|2026-08-03]] — 再次上榜，796 stars
 - [[2026-08-02|2026-08-02]] — 再次上榜，770 stars
 - [[2026-08-01|2026-08-01]] — 再次上榜，720 stars
 - [[2026-07-31|2026-07-31]] — 首次收錄，679 stars

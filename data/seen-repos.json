@@ -3186,10 +3186,10 @@
   },
   "MoonshotAI/Kimi-K3": {
     "first_seen": "2026-07-28",
-    "last_seen": "2026-08-02",
-    "times_seen": 6,
+    "last_seen": "2026-08-03",
+    "times_seen": 7,
     "stars_first": 1993,
-    "stars_last": 7832
+    "stars_last": 7921
   },
   "vercel-labs/scriptc": {
     "first_seen": "2026-07-28",
@@ -3242,10 +3242,10 @@
   },
   "xikhar/persona": {
     "first_seen": "2026-07-31",
-    "last_seen": "2026-08-02",
-    "times_seen": 3,
+    "last_seen": "2026-08-03",
+    "times_seen": 4,
     "stars_first": 679,
-    "stars_last": 770
+    "stars_last": 796
   },
   "WilonityXYZ/Wilonity": {
     "first_seen": "2026-07-31",
@@ -3270,31 +3270,31 @@
   },
   "yc-software/qm": {
     "first_seen": "2026-08-01",
-    "last_seen": "2026-08-02",
-    "times_seen": 2,
+    "last_seen": "2026-08-03",
+    "times_seen": 3,
     "stars_first": 2422,
-    "stars_last": 5215
+    "stars_last": 7603
   },
   "bashalarmistalt/decimen-optical-transfer": {
     "first_seen": "2026-08-01",
-    "last_seen": "2026-08-02",
-    "times_seen": 2,
+    "last_seen": "2026-08-03",
+    "times_seen": 3,
     "stars_first": 2194,
-    "stars_last": 3129
+    "stars_last": 3772
   },
   "QwenAudio/qwen-audio-agent": {
     "first_seen": "2026-08-01",
-    "last_seen": "2026-08-02",
-    "times_seen": 2,
+    "last_seen": "2026-08-03",
+    "times_seen": 3,
     "stars_first": 622,
-    "stars_last": 1396
+    "stars_last": 1752
   },
   "xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer": {
     "first_seen": "2026-08-01",
-    "last_seen": "2026-08-02",
-    "times_seen": 2,
+    "last_seen": "2026-08-03",
+    "times_seen": 3,
     "stars_first": 594,
-    "stars_last": 1122
+    "stars_last": 1679
   },
   "gavamedia/deltafin": {
     "first_seen": "2026-08-01",
@@ -3305,17 +3305,17 @@
   },
   "trycompai/crm": {
     "first_seen": "2026-08-02",
-    "last_seen": "2026-08-02",
-    "times_seen": 1,
+    "last_seen": "2026-08-03",
+    "times_seen": 2,
     "stars_first": 832,
-    "stars_last": 832
+    "stars_last": 1926
   },
   "sqliteai/waste": {
     "first_seen": "2026-08-02",
-    "last_seen": "2026-08-02",
-    "times_seen": 1,
+    "last_seen": "2026-08-03",
+    "times_seen": 2,
     "stars_first": 705,
-    "stars_last": 705
+    "stars_last": 1166
   },
   "DramaticShape/DramaticShapeVoxelMod": {
     "first_seen": "2026-08-02",
@@ -3330,5 +3330,19 @@
     "times_seen": 1,
     "stars_first": 599,
     "stars_last": 599
+  },
+  "WilonityDev/WilonityLoader": {
+    "first_seen": "2026-08-03",
+    "last_seen": "2026-08-03",
+    "times_seen": 1,
+    "stars_first": 1216,
+    "stars_last": 1216
+  },
+  "microsoft/skill-recorder": {
+    "first_seen": "2026-08-03",
+    "last_seen": "2026-08-03",
+    "times_seen": 1,
+    "stars_first": 907,
+    "stars_last": 907
   }
 }

@@ -1,64 +1,69 @@
 ---
-repo: sqliteai/waste
-url: https://github.com/sqliteai/waste
-owner: sqliteai
+repo: microsoft/skill-recorder
+url: https://github.com/microsoft/skill-recorder
+owner: microsoft
 owner_type: Organization
-language: C
-license: Apache-2.0
-description: "Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by streaming activated weights directly from NVMe. A dependency-free, embeddable C inference engine."
+language: TypeScript
+license: MIT
+description: "Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio."
 homepage: ""
-stars: 1166
-stars_per_day: 233
-forks: 96
-open_issues: 3
-created: 2026-07-28
-pushed_at: 2026-08-02
-first_seen: 2026-08-02
+stars: 907
+stars_per_day: 227
+forks: 102
+open_issues: 29
+created: 2026-07-29
+pushed_at: 2026-08-03
+first_seen: 2026-08-03
 week: "2026-W32"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: "v0.6.2"
+release_tag: "v0.3.1"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-02
+last_reviewed: 2026-08-03
 use_case: ""
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-08-06"
-contributor_count: 2
-engagement: "low"
-issue_close_rate: 75
-repo_size_kb: 3871
-readme_length: 9496
-bus_factor: 1
-last_release_days: 1
+contributor_count: 3
+engagement: "medium"
+issue_close_rate: 3
+repo_size_kb: 5929
+readme_length: 8439
+bus_factor: 2
+last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-02"
-star_history: "2026-08-02:705,2026-08-03:1166"
+ring_history: "assess@2026-08-03"
+star_history: "2026-08-03:907"
 tags:
   - github
   - "category/other"
-  - "lang/c"
+  - "lang/typescript"
   - org
+  - "topic/agent_skills"
+  - "topic/ai_agents"
+  - "topic/automation"
+  - "topic/copilot"
+  - "topic/copilot_cli"
 aliases:
-  - "waste"
-  - "sqliteai/waste"
+  - "skill-recorder"
+  - "microsoft/skill-recorder"
 ---
 
-# waste
+# skill-recorder
 
-**705** stars · **176** stars/天 · 建立 4 天前 · C · Apache-2.0
+**907** stars · **227** stars/天 · 建立 4 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/sqliteai--waste");
+const me = dv.page("Repos/microsoft--skill-recorder");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG` `v0.6.2`
+`ORG` `v0.3.1`
+
+`agent-skills` `ai-agents` `automation` `copilot` `copilot-cli` `copilot-cowork` `copilot-studio` `electron` `microsoft-scout` `screen-recording`
 
 > [!summary] 一句話摘要
-> Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by streaming activated weights directly from NVMe. A dependency-free, embeddable C inference engine.
+> Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio.
 
 ## 專案簡介
 
-Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by streaming activated weights directly from NVMe. A dependency-free, embeddable C inference engine.
+Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/microsoft--skill-recorder");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +126,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/microsoft--skill-recorder");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,242 +150,270 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 68 |
-| Open Issues | 2 |
-| Issue 解決率 | 75% (6 closed) |
-| 最後推送 | 2026-08-01 |
-| 建立日期 | 2026-07-28 |
-| Repo 大小 | 3.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/sqliteai/waste) |
+| Forks | 102 |
+| Open Issues | 29 |
+| Issue 解決率 | 3% (1 closed) |
+| 最後推送 | 2026-08-03 |
+| 建立日期 | 2026-07-29 |
+| Repo 大小 | 5.8 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/microsoft/skill-recorder) |
+| Topics | `agent-skills` `ai-agents` `automation` `copilot` `copilot-cli` `copilot-cowork` `copilot-studio` `electron` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "C" : 47
->     "Python" : 45
->     "Shell" : 6
->     "Makefile" : 1
->     "Objective-C" : 1
+>     "TypeScript" : 76
+>     "JavaScript" : 12
+>     "CSS" : 6
+>     "PowerShell" : 3
+>     "Shell" : 2
+>     "HTML" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@marcobambini](https://github.com/marcobambini) | 138 |
-> | [@isenbek](https://github.com/isenbek) | 3 |
+> | [@GiorgioUghini](https://github.com/GiorgioUghini) | 32 |
+> | [@adilei](https://github.com/adilei) | 30 |
+> | [@adilei-powerapps](https://github.com/adilei-powerapps) | 9 |
 
-**最新版本**：v0.6.2 (2026-08-01)
+**最新版本**：v0.3.1 — Skill Recorder v0.3.1 (2026-07-30)
 
 > [!info]- Release Notes
-> ### Fixed
+> # Skill Recorder v0.3.1
 > 
-> - **`waste info` and `waste run` crashed on K3 on every x86 build**
->   ([#10](https://github.com/sqliteai/waste/issues/10)). The tensors the
->   loader skips — the vision tower, and anything outside `tensor_prefix` —
->   kept `group` at 0, and the row-scratch sizing divided by it. The
->   architecture decided what that meant: arm64's `sdiv` answers 0 and the
->   run continues, x86's `idiv` raises `#DE`. `waste plan` was unaffected
->   because it does not load. §37.
-> - **`WASTE_Q8=0` could not load a 4-bit trunk**
->   ([#6](https://github.com/sqliteai/waste/issues/6)) — that is, any
->   container a default `tools/convert.py` run produces. The dequantizer
->   read one byte per weight, true of Q8G alone, while catching every
->   quantized format. It now decodes through `waste_deq_row`, the one place
->   that knows all three widths. The same lines also predated `waste_f16`'s
->   subnormal fix and flushed group scales below 6.1e-05 to zero.
-> - **`embed_tokens` stays on disk under `WASTE_Q8=0`**, as it does
->   otherwise: 7.93 → 6.52 GiB of peak RSS on Kimi-Linear, identical logits.
->   The f32-equivalence check now differs from the default path in the
->   storage width alone, which is what it claims to compare.
+> This is a **source-only patch release**. No prebuilt application, installer, or portable binary is attached. GitHub provides the tagged source archives, and the commands below build the exact release commit locally.
 > 
-> ### Added
+> ## Fixed
 > 
-> - **Router lookahead in the decode path.** At the end of a MoE layer, once
->   its reads are consumed and the disk is about to idle through the next
->   layer's attention, layer L+1's router runs on layer L's hidden state and
-> ...（完整內容見 GitHub）
+> - The Windows source installer now handles dependency paths longer than legacy `MAX_PATH` while moving and cleaning its staging tree.
+> - The extracted source is renamed to a shorter build path before `npm ci` creates deeply nested dependencies.
+> - Temporary-file cleanup can no longer hide the original installation error.
+> - PowerShell 5.1 regression coverage exercises a path longer than 260 characters and a read-only dependency file.
+> 
+> ## Upgrade and compatibility notes
+> 
+> - **Windows users should use v0.3.1 instead of v0.3.0.** The v0.3.0 Windows command pins the defective installer and cannot receive this correction in place.
+> - Existing successful installations remain usable. Re-run the command below to install the corrected revision.
+> - macOS and Ubuntu behavior is unchanged.
+> - No dependencies or compliance boundaries changed.
+> 
+> ## Release identity
+> 
+> - Tag: `v0.3.1`
+> - Commit: `32fd0b57e02c3ea1e016cca0d64e59052e93a9b9`
+> 
+> Installer script SHA-256 values:
+> 
+> ```text
+> f0251c09a7c3481b15850f77a512bd95850652b1d0991804290d16bc70ecf65d  install.ps1
+> cda37c728b8bf8341075d4fb6225f4387f22df1ef880a172f186bbd1aa19481d  install.sh
+> ```
+> 
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-01 ~ 2026-08-01）
-> **活躍天數** 1 天 · **最新 commit** Connect the engine's traces to the cache simulator, and fix what it modelled
+> [!abstract] 最近 10 次 commit（2026-07-29 ~ 2026-07-30）
+> **活躍天數** 2 天 · **最新 commit** Merge pull request #31 from microsoft/giorgioughini-release-0-3-1
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#11](https://github.com/sqliteai/waste/issues/11) | CUDA backend: what would have to be true for it to pay `enhancement` `help wanted` | 0 | 0 |
+> | [#35](https://github.com/microsoft/skill-recorder/issues/35) | Bump sharp to 0.35.x to resolve Dependabot alert (requires l `dependencies` `security` | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # WASTE — Weight-Aware Streaming Tensor Engine
+> # Skill Recorder
 > 
-> **Kimi K3 — 2.78 trillion parameters — running on a consumer laptop.**
+> **Record yourself doing a task once, then turn it into a skill your AI agent can repeat.**
 > 
+> Skill Recorder captures a real work session on your screen: the clicks, the app and
+> window switches, the pages you visit, and (if you want) your spoken narration. It then uses
+> the **GitHub Copilot CLI** to reconstruct *what you actually did* as a clear **intent plus
+> an ordered list of steps**. From there, one step turns that single run into something an
+> agent can reuse:
+> 
+> - a **Skill**: a `SKILL.md` procedure an agent runs on demand, or
+> - an **Automation**: the same procedure on a schedule or trigger.
+> 
+> Both prefer the agent's **native tools** (like the `gh` CLI or `web_fetch`) over replaying
+> UI clicks, and generalize from your one example, so recording yourself submitting *one*
+> form can teach the agent to submit *all* of them.
+> 
+>   
+>   &nbsp;&nbsp;
+>   
+> 
+> ## How it works
+> 
+> 1. 🔴 **Record.** Hit record (or `⌘⇧R` / `Ctrl+Shift+R` from anywhere) and just do your
+>    task. Skill Recorder captures your screen and activity locally, in the background.
+> 2. 🎛️ **Control.** While recording, a small always-on-top bar shows capture and
+>    microphone state. Mute, unmute, or switch mics on the fly, then finish, or discard
+>    (with a confirmation) if the take didn't go to plan.
+> 3. 🧠 **Analyze.** Click Analyze and GitHub Copilot reconstructs one overall intent and
+>    an ordered list of steps. Review and edit until it reads right.
+> 4. ✨ **Create.** From an approved analysis, generate a reusable **Skill** and/or a
+>    scheduled **Automation**.
+> 
+> ## Get started
+> 
+> Skill Recorder is published as a **source release**: one command downloads a pinned Node.js
+> runtime, builds the exact release commit on your machine, and adds a **Skill Recorder (Source)**
+> app you can relaunch anytime. Nothing is installed globally. You'll need a GitHub account with
+> **Copilot access**; the Copilot CLI ships with the app.
+> 
+> macOS is the primary target. Windows 11 (x64 and ARM64) is supported too (see
+> [`WINDOWS-VALIDATION.md`](WINDOWS-VALIDATION.md)).
+> 
+> ### Install it
+> 
+> Open the **[latest release](https://github.com/microsoft/skill-recorder/releases/latest)** and
+> copy the command for your platform. Each release pins an exact commit, so the real command looks
+> like the patterns below with `` filled in.
+> 
+> **macOS / Ubuntu**
+> 
+> ```bash
+> commit=""; curl -fsSL "https://raw.githubusercontent.com/microsoft/skill-recorder/$commit/install.sh" | SKILL_RECORDER_COMMIT="$commit" bash
 > ```
-> $ waste run ~/models/k3.waste 'What is the capital of Italy?'
-> waste: no --budget, using 46.24 GB of 64.00 GB (expert cache 17.56 GB)
-> The capital of Italy is **Rome**.
-> [16 tokens, 25.78 s, 0.62 tok/s | experts 9038 hit / 14514 miss = 38%]
+> 
+> The commit pins both the downloaded script and the source it builds. To keep the app running
+> after the terminal closes, add `SKILL_RECORDER_DETACHED=1` after the pipe:
+> 
+> ```bash
+> commit=""; curl -fsSL "https://raw.githubusercontent.com/microsoft/skill-recorder/$commit/install.sh" | SKILL_RECORDER_COMMIT="$commit" SKILL_RECORDER_DETACHED=1 bash
 > ```
 > 
-> WASTE is an embeddable inference engine written in C, with no third-party runtime dependencies. It keeps the model trunk in memory, streams selected experts directly from disk, and uses the remaining RAM as a bounded expert cache.
+> On macOS this adds a **Skill Recorder (Source)** app to `~/Applications` (relaunch from Spotlight,
+> Launchpad, or the Dock). On Ubuntu it adds a matching application entry.
 > 
-> Its current proof point is the complete open-weights Kimi K3 model: 2.78 trillion parameters, converted into a 982 GiB container and running on a 64 GB MacBook Pro at 0.45–0.62 tokens per second. **This is not a distilled, pruned, or reduced variant**.
+> **Windows (PowerShell)**
 > 
-> | Model               | Container | Minimum RAM | Tested speed    |
-> | ------------------- | --------- | ----------- | --------------- |
-> | **Kimi K3 2.78T**   | 982 GiB   | 29.05 GiB   | 0.45–0.62 tok/s |
-> | **Kimi-Linear 48B** | 19 GiB    | 1.87 GiB    | 10.7 tok/s      |
-> 
-> WASTE was written for that one model and that one constraint: **K3 does
-> not fit in the RAM of current mainstream consumer systems.** It is 1.42 TB
-> as published and 982 GB after conversion. But a mixture of experts
-> activates about 4% of itself per token, so almost all of that weight is
-> idle at any instant — and idle weight does not need to be in memory, it
-> needs to be *reachable in time*. WASTE keeps it on disk in a layout where
-> one expert costs exactly one read, streams what each token actually
-> needs, and spends every remaining byte of RAM on the part that repeats.
-> 
-> 
-> ## What it is
-> 
-> - **Self-contained.** One `libwaste.a`, one `waste` binary, nothing at run
->   time beyond libc and pthreads.
-> - **Zero dependencies.** No BLAS, no ONNX, no Python in the inference
->   path, nothing to install. The Python under `tools/` converts models and
->   validates the engine; it never runs alongside it.
-> - **Fully embeddable.** Twenty-six public functions in
->   [src/waste.h](src/waste.h): open a model under a RAM ceiling, generate,
->   save the session, close. The CLI is a client of that API and touches
->   nothing private — if the CLI can do it, so can an embedding host.
-> 
-> ```c
-> waste_cfg cfg;
-> waste_cfg_init(&cfg);
-> cfg.ram_budget_bytes = 46ULL  N   */
-> waste_generate(ctx, ids, n_ids, &params, cb, u);   /* consumes the queue */
+> ```powershell
+> $commit=""; $env:SKILL_RECORDER_COMMIT=$commit; irm "https://raw.githubusercontent.com/microsoft/skill-recorder/$commit/install.ps1" | iex
 > ```
 > 
-> The tower's shape, the patch budget and the pixel normalization live in
-> `vision.json`, which the converter writes from the release's own nested
-> `vision_config` and from `preprocessor_config.json`. K3 normalizes to
-> [-1, 1] with mean = std = 0.5.
+> This adds **Skill Recorder (Source)** shortcuts to your desktop and Start Menu.
 > 
-> That last sentence was wrong here for a day, and the way it was wrong is
-> worth keeping. This section used to say **K3 ships no preprocessor
-> config**, so the normalization was "the CLIP convention this lineage of
-> towers uses rather than a value read out of the release" — an assumption,
-> labelled as one. The release does ship the file; the downloader fetched a
-> hardcoded list of filenames and never asked the repo what it contained.
-> The tower still matched its oracle at 2.3e-06 throughout, because the
-> oracle is fed random pixels and never touches the normalization. An
-> honest caveat is not a substitute for reading the file.
+> ### Then record
 > 
+> 1. **Grant Screen Recording.** On first launch, macOS asks for Screen Recording permission;
+>    grant it and you're ready to record.
+> 2. **Record, Analyze, Create.** Do your task, then Analyze. The first time you Analyze,
+>    Skill Recorder offers **Sign in to Copilot** if you aren't signed in yet.
 > 
-> ## Why the name
+> To inspect the script before running it, set install options, update, or uninstall, see
+> [`INSTALL.md`](INSTALL.md).
 > 
-> Every token answered by a cloud service is paid for twice: once on the
-> invoice, and once in the electricity of a datacenter running a model that
-> would fit — barely, awkwardly, but genuinely — on hardware already sitting
-> on a desk. WASTE means to be the first concrete step toward ending that
-> waste of tokens. The acronym came second.
+> > ⚠️ **Keep secrets out of your recordings.** Don't record, type, paste, or narrate
+> > passwords, tokens, API keys, or other confidential info. Choosing *Analyze* sends
+> > recording data to GitHub's cloud. Skill Recorder reminds you before every recording.
+> > Details in [What gets captured](#what-gets-captured).
 > 
+> ---
 > 
-> ## Where this stands
+> *Everything below is for people who want the details, or want to hack on the code.*
 > 
-> The engine is correct: every layer is validated against a PyTorch
-> reference, the final logits agree to 3.6e-06, and the vision tower matches
-> its own oracle to 2.3e-06. It is also slow — half a token per second,
-> twenty-six seconds for the sentence above.
+> ## What gets captured
 > 
-> Both of those matter, and the second one should not be read as a
-> disclaimer. We are not aware of another published demonstration of a
-> model this size streaming from disk on a consumer machine: we found none
-> for trillion-scale NVMe streaming, and the best-documented 671B-class
-> recipes assume a server with a terabyte of DDR5. That is a report of what
-> our search turned up rather than a survey — this repository carries no
-> bibliography and no comparison table, so read it as an invitation to send
-> a counter-example, not as a result. The interesting part is not the
-> speed, it is that the whole thing is in the reachable range on a single
-> consumer machine — and that from here the question is engineering rather
-> than feasibility.
+> Recording, storage, frame extraction, and optional narration transcription all happen
+> **on your computer**; nothing leaves while you record. Only when you choose **Analyze**
+> does Skill Recorder send the event timeline (window/document titles, URLs, and clipboard
+> previews), extracted screen images, and narration text to GitHub's cloud for Copilot to
+> process.
 > 
-> Where the levers were is not where they are. The two that looked biggest —
-> reading fewer bytes per token, and keeping more of them in RAM — were both
-> measured and both refused: this family's router has no tail to demote, and a
-> cache the machine will not leave resident cannot be bought at any price. What
-> paid instead was never about *which* bytes to read but *when*. Overlapping
-> the expert reads with the arithmetic is worth ~1.6x; starting the next
-> layer's reads on its own router's guess, one residual early, takes the hit
-> rate from 14% to 38% at no extra bytes at all.
+> The in-app "Records your screen and activity" panel spells out exactly what's collected:
 > 
-> Both of those are exact — the cache statistics and the logits are unchanged
-> — which is the property that makes them shippable rather than tuning.
-> [docs/EFFICIENCY.md](docs/EFFICIENCY.md) is the account of how each lever was
-> priced, including the three that were built before being measured and the two
-> that were then taken back out.
+> - **Window tracking:** active-app / window switches.
+> - **Browser URLs:** the page you're on (macOS).
+> - **Screen video:** recorded by Chromium; low-rate snapshots are kept only when the
+>   screen changes or a heartbeat is due.
+> - **Clipboard:** short previews of copied text that tie steps together.
+> - **Narration** *(optional)*: spoken commentary, transcribed **on-device** in any of
+>   Whisper's 99 supported languages (a one-time ~252 MB model download on first use).
 > 
-> What that opens up, concretely: a frontier-scale model that answers with
-> no network, no per-token invoice, and nothing leaving the machine — which
-> is the difference between "you may not send that data to an API" and "run
-> it here". The format and the engine are not K3-specific in any deep way;
-> K3 is simply the hardest case that exists today, and a model that streams
-> at 2.78T streams comfortably at 48B.
+> > ⚠️ **Please don't capture secrets.** Passwords, access tokens, API keys, credentials, and
+> > other confidential information should never be recorded, typed, pasted, shown, copied,
+> > or narrated during a session.
 > 
-> Every number in this document was measured on the commit it is published
-> with, and the ones that were wrong are recorded as wrong in
-> [docs/LEARNED.md](docs/LEARNED.md) rather than quietly corrected.
+> ## Develop from source
 > 
+> Requires **Node.js 24**. After checking out a release revision:
 > 
-> ## What you need
+> ```bash
+> npm ci
+> npm run compliance:licenses
+> npm run dev
+> ```
 > 
-> | | |
-> |---|---|
-> | **disk, for the model** | **982 GB** for the converted container — plan a terabyte |
-> | disk, to convert it | another 1.42 TB of staging for the published shards, freed afterwards |
-> | **RAM** | **29.05 GB** minimum to open K3 at 4K context; **64 GB** for the numbers here |
-> | storage speed | the container must be on internal NVMe — see below |
-> | build | a C11 compiler and `make`. No BLAS, no CUDA, no Python at run time |
+> `npm run dev` starts Vite and launches the Electron app with hot-reload; `⌘⇧R` (macOS) /
+> `Ctrl+Shift+R` (Windows) toggles recording from anywhere. Full manual setup, the build and
+> `dist` scripts, and the licensing boundary between local source builds and redistributable
+> packages are in [`INSTALL.md`](INSTALL.md). Maintainers changing versions, dependencies,
+> assets, or releases must follow [`RELEASING.md`](RELEASING.md).
 > 
-> Sizes here are powers of two, the way `df` and the engine both report
-> them: the container is 982 GiB, which a disk vendor would call 1.05 TB.
+> ## Evals
 > 
-> The RAM floor is what the engine refuses to start below, and it is almost
-> entirely the 27.28 GB resident trunk. Useful throughput starts higher: on
-> a 64 GB machine the engine gives itself a 46 GB budget, of which 17.56 GB
-> is expert cache, and that is the top of the measured curve. A 32 GB
-> machine can technically open the model and will page badly; treat 64 GB as
-> the real requirement.
+> The Copilot **describer** and **builders** have a fixture-based eval suite; see
+> [`evals/README.md`](evals/README.md).
 > 
-> **Storage speed is not a detail.** A token reads 17 GB of experts. On the
-> internal SSD that is 12.78 GB/s and the model streams; over a USB
-> enclosure it is 0.94 GB/s and the same token takes thirteen seconds.
-> Convert onto internal NVMe, and use the external disk for the download
-> only.
+> ```bash
+> npm run eval            # score the describer against synthetic recordings
+> npm run eval:builder    # score the skill/automation generalization
+> ```
 > 
-> If a terabyte is not available, the same engine and the same format run
-> `Kimi-Linear-48B-A3B-Instruct` from a **19 GB** container with a
-> **1.87 GB** floor, at 10.7 tok/s. That is the good path for trying WASTE
-> out before committing a disk to K3.
+> ## Documentation
 > 
+> - **[INSTALL.md](INSTALL.md):** install options, inspect-first install, updating,
+>   uninstalling, and manual developer setup.
+> - **[RELEASING.md](RELEASING.md):** maintainer release runbook.
+> - **[evals/README.md](evals/README.md):** the describer / builder eval harness.
+> - **[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md):** licenses for bundled dependencies.
 > 
-> ## Platforms
+> ## Security
 > 
-> | | build | model-free suite | backend |
-> |---|---|---|---|
-> | macOS arm64 | yes | 23 pass / 0 fail / 11 skip | NEON |
-> | Linux arm64 | yes | 23 pass / 0 fail / 11 skip | NEON |
-> | Linux x86_64 | yes | 23 pass / 0 fail / 11 skip | AVX2 |
-> | Windows x86_64 | yes | contai
+> Please don't report security vulnerabilities through public GitHub issues. See
+> [`SECURITY.md`](SECURITY.md) for Microsoft's coordinated-disclosure process and reporting
+> channels.
+> 
+> ## Support
+> 
+> File bugs and feature requests through
+> **[GitHub Issues](https://github.com/microsoft/skill-recorder/issues)** (search existing issues
+> first to avoid duplicates). Support is limited to the resources described in
+> [`SUPPORT.md`](SUPPORT.md).
+> 
+> ## License
+> 
+> [MIT](LICENSE)
+> 
+> ## Contributing
+> 
+> This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+> Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
+> the rights to use your contribution. For details, visit [Contributor License Agreements](https://cla.opensource.microsoft.com).
+> 
+> When you submit a pull request, a CLA bot will automatically determine whether you need to provide
+> a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
+> provided by the bot. You will only need to do this once across all repos using our CLA.
+> 
+> This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+> For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+> contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+> 
+> ## Trademarks
+> 
+> This project may contain trademarks or logos for projects, pro
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]] · [[bashalarmistalt--decimen-optical-transfer|bashalarmistalt/decimen-optical-transfer]] · [[gavamedia--deltafin|gavamedia/deltafin]] · [[talivia-group--talivia|talivia-group/talivia]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
 
-[GitHub](https://github.com/sqliteai/waste)
+[GitHub](https://github.com/microsoft/skill-recorder)
 
 ## 相關收錄
 
@@ -386,7 +421,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "sqliteai--waste"
+> WHERE category = "Other" AND file.name != "microsoft--skill-recorder"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -395,7 +430,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C" AND file.name != "sqliteai--waste" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "microsoft--skill-recorder" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -404,18 +439,18 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "sqliteai--waste"
+> WHERE week = "2026-W32" AND file.name != "microsoft--skill-recorder"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/microsoft--skill-recorder");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "sqliteai--waste" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "microsoft--skill-recorder" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -431,7 +466,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "sqliteai" AND file.name != "sqliteai--waste"
+> WHERE owner = "microsoft" AND file.name != "microsoft--skill-recorder"
 > SORT stars DESC
 > ```
 
@@ -439,7 +474,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/microsoft--skill-recorder");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -456,7 +491,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/microsoft--skill-recorder");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -489,7 +524,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/microsoft--skill-recorder");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -513,7 +548,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/microsoft--skill-recorder");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -550,7 +585,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/sqliteai--waste");
+> const me = dv.page("Repos/microsoft--skill-recorder");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -633,7 +668,7 @@ Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by strea
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-02** — 首次收錄
+> **2026-08-03** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -649,5 +684,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-03|2026-08-03]] — 再次上榜，1.2k stars
-- [[2026-08-02|2026-08-02]] — 首次收錄，705 stars
+- [[2026-08-03|2026-08-03]] — 首次收錄，907 stars
