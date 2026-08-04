@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Multiplayer agent harness for work"
 homepage: "https://qm.ycombinator.com"
-stars: 7603
-stars_per_day: 1901
-forks: 797
-open_issues: 95
+stars: 10021
+stars_per_day: 2004
+forks: 1061
+open_issues: 109
 created: 2026-07-29
-pushed_at: 2026-08-01
+pushed_at: 2026-08-04
 first_seen: 2026-08-01
 week: "2026-W31"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-08-06"
+appearances: 4
+next_review: "2026-08-07"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-01"
-star_history: "2026-08-01:2422,2026-08-02:5215,2026-08-03:7603"
+star_history: "2026-08-01:2422,2026-08-02:5215,2026-08-03:7603,2026-08-04:10021"
 tags:
   - github
   - "category/other"
@@ -632,6 +632,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-04|2026-08-04]] — 再次上榜，10.0k stars
 - [[2026-08-03|2026-08-03]] — 再次上榜，7.6k stars
 - [[2026-08-02|2026-08-02]] — 再次上榜，5.2k stars
 - [[2026-08-01|2026-08-01]] — 首次收錄，2.4k stars

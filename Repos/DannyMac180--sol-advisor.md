@@ -1,69 +1,63 @@
 ---
-repo: microsoft/skill-recorder
-url: https://github.com/microsoft/skill-recorder
-owner: microsoft
-owner_type: Organization
-language: TypeScript
+repo: DannyMac180/sol-advisor
+url: https://github.com/DannyMac180/sol-advisor
+owner: DannyMac180
+owner_type: User
+language: Shell
 license: MIT
-description: "Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio."
+description: "Codex-native architect orchestration with Luna and Terra implementation lanes and mandatory fresh Sol review."
 homepage: ""
-stars: 1481
-stars_per_day: 296
-forks: 154
-open_issues: 27
-created: 2026-07-29
+stars: 1064
+stars_per_day: 532
+forks: 75
+open_issues: 4
+created: 2026-08-01
 pushed_at: 2026-08-03
-first_seen: 2026-08-03
+first_seen: 2026-08-04
 week: "2026-W32"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: "v0.3.1"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-03
+last_reviewed: 2026-08-04
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-08-07"
-contributor_count: 3
-engagement: "medium"
-issue_close_rate: 3
-repo_size_kb: 5929
-readme_length: 8439
-bus_factor: 2
-last_release_days: 4
-release_cadence: "weekly"
+contributor_count: 1
+engagement: "low"
+issue_close_rate: 0
+repo_size_kb: 66
+readme_length: 8459
+bus_factor: 1
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-03"
-star_history: "2026-08-03:907,2026-08-04:1481"
+ring_history: "assess@2026-08-04"
+star_history: "2026-08-04:1064"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
-  - org
-  - "topic/agent_skills"
-  - "topic/ai_agents"
-  - "topic/automation"
-  - "topic/copilot"
-  - "topic/copilot_cli"
+  - "lang/shell"
 aliases:
-  - "skill-recorder"
-  - "microsoft/skill-recorder"
+  - "sol-advisor"
+  - "DannyMac180/sol-advisor"
 ---
 
-# skill-recorder
+# sol-advisor
 
-**907** stars · **227** stars/天 · 建立 4 天前 · TypeScript · MIT
+**1.1k** stars · **532** stars/天 · 建立 2 天前 · Shell · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/microsoft--skill-recorder");
+const me = dv.page("Repos/DannyMac180--sol-advisor");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -76,22 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG` `v0.3.1`
-
-`agent-skills` `ai-agents` `automation` `copilot` `copilot-cli` `copilot-cowork` `copilot-studio` `electron` `microsoft-scout` `screen-recording`
+`個人專案`
 
 > [!summary] 一句話摘要
-> Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio.
+> Codex-native architect orchestration with Luna and Terra implementation lanes and mandatory fresh Sol review.
 
 ## 專案簡介
 
-Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio.
+Codex-native architect orchestration with Luna and Terra implementation lanes and mandatory fresh Sol review.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/DannyMac180--sol-advisor");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -126,7 +118,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/DannyMac180--sol-advisor");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -150,270 +142,210 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 102 |
-| Open Issues | 29 |
-| Issue 解決率 | 3% (1 closed) |
+| Forks | 75 |
+| Open Issues | 4 |
+| Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-08-03 |
-| 建立日期 | 2026-07-29 |
-| Repo 大小 | 5.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/microsoft/skill-recorder) |
-| Topics | `agent-skills` `ai-agents` `automation` `copilot` `copilot-cli` `copilot-cowork` `copilot-studio` `electron` |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "TypeScript" : 76
->     "JavaScript" : 12
->     "CSS" : 6
->     "PowerShell" : 3
->     "Shell" : 2
->     "HTML" : 2
-> ```
+| 建立日期 | 2026-08-01 |
+| Repo 大小 | 66 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/DannyMac180/sol-advisor) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@GiorgioUghini](https://github.com/GiorgioUghini) | 32 |
-> | [@adilei](https://github.com/adilei) | 30 |
-> | [@adilei-powerapps](https://github.com/adilei-powerapps) | 9 |
-
-**最新版本**：v0.3.1 — Skill Recorder v0.3.1 (2026-07-30)
-
-> [!info]- Release Notes
-> # Skill Recorder v0.3.1
-> 
-> This is a **source-only patch release**. No prebuilt application, installer, or portable binary is attached. GitHub provides the tagged source archives, and the commands below build the exact release commit locally.
-> 
-> ## Fixed
-> 
-> - The Windows source installer now handles dependency paths longer than legacy `MAX_PATH` while moving and cleaning its staging tree.
-> - The extracted source is renamed to a shorter build path before `npm ci` creates deeply nested dependencies.
-> - Temporary-file cleanup can no longer hide the original installation error.
-> - PowerShell 5.1 regression coverage exercises a path longer than 260 characters and a read-only dependency file.
-> 
-> ## Upgrade and compatibility notes
-> 
-> - **Windows users should use v0.3.1 instead of v0.3.0.** The v0.3.0 Windows command pins the defective installer and cannot receive this correction in place.
-> - Existing successful installations remain usable. Re-run the command below to install the corrected revision.
-> - macOS and Ubuntu behavior is unchanged.
-> - No dependencies or compliance boundaries changed.
-> 
-> ## Release identity
-> 
-> - Tag: `v0.3.1`
-> - Commit: `32fd0b57e02c3ea1e016cca0d64e59052e93a9b9`
-> 
-> Installer script SHA-256 values:
-> 
-> ```text
-> f0251c09a7c3481b15850f77a512bd95850652b1d0991804290d16bc70ecf65d  install.ps1
-> cda37c728b8bf8341075d4fb6225f4387f22df1ef880a172f186bbd1aa19481d  install.sh
-> ```
-> 
+> | [@DannyMac180](https://github.com/DannyMac180) | 7 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-29 ~ 2026-07-30）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #31 from microsoft/giorgioughini-release-0-3-1
+> [!abstract] 最近 10 次 commit（2026-08-01 ~ 2026-08-03）
+> **活躍天數** 3 天 · **最新 commit** Merge pull request #3 from DannyMac180/codex/luna-task-lane
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#35](https://github.com/microsoft/skill-recorder/issues/35) | Bump sharp to 0.35.x to resolve Dependabot alert (requires l `dependencies` `security` | 0 | 1 |
+> | [#5](https://github.com/DannyMac180/sol-advisor/issues/5) | Commitment-boundary reviewer cannot return its required verd | 0 | 0 |
+> | [#1](https://github.com/DannyMac180/sol-advisor/issues/1) | Runtime inspector exits 0 with null sandbox_policy_type; ver | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Skill Recorder
+> # Sol Advisor
 > 
-> **Record yourself doing a task once, then turn it into a skill your AI agent can repeat.**
+> **Sol runs the show. Choose the native Terra / High lane, or explicitly opt into
+> user-visible Luna tasks; the primary Sol task owns verification and acceptance in
+> both modes.**
 > 
-> Skill Recorder captures a real work session on your screen: the clicks, the app and
-> window switches, the pages you visit, and (if you want) your spoken narration. It then uses
-> the **GitHub Copilot CLI** to reconstruct *what you actually did* as a clear **intent plus
-> an ordered list of steps**. From there, one step turns that single run into something an
-> agent can reuse:
+> Sol Advisor is a Codex-native architect workflow for capability-routed software
+> delivery. The primary session stays focused on requirements, architecture, specs, and
+> verification while either native Codex custom-agent threads or separate Codex app
+> tasks handle the bounded implementation work.
 > 
-> - a **Skill**: a `SKILL.md` procedure an agent runs on demand, or
-> - an **Automation**: the same procedure on a schedule or trigger.
 > 
-> Both prefer the agent's **native tools** (like the `gh` CLI or `web_fetch`) over replaying
-> UI clicks, and generalize from your one example, so recording yourself submitting *one*
-> form can teach the agent to submit *all* of them.
+> ## Install from GitHub
 > 
->   
->   &nbsp;&nbsp;
->   
+> Requirements common to both modes:
 > 
-> ## How it works
+> - A current Codex CLI or ChatGPT desktop app with plugins enabled.
+> - Access to GPT-5.6 Sol / High for the primary task.
 > 
-> 1. 🔴 **Record.** Hit record (or `⌘⇧R` / `Ctrl+Shift+R` from anywhere) and just do your
->    task. Skill Recorder captures your screen and activity locally, in the background.
-> 2. 🎛️ **Control.** While recording, a small always-on-top bar shows capture and
->    microphone state. Mute, unmute, or switch mics on the fly, then finish, or discard
->    (with a confirmation) if the take didn't go to plan.
-> 3. 🧠 **Analyze.** Click Analyze and GitHub Copilot reconstructs one overall intent and
->    an ordered list of steps. Review and edit until it reads right.
-> 4. ✨ **Create.** From an approved analysis, generate a reusable **Skill** and/or a
->    scheduled **Automation**.
+> Additional native-mode requirements:
 > 
-> ## Get started
+> - Native subagents and custom-agent support enabled.
+> - Access to GPT-5.6 Terra / High.
+> - jq, which the native companion-install lookup uses to locate the installed plugin
+>   package.
 > 
-> Skill Recorder is published as a **source release**: one command downloads a pinned Node.js
-> runtime, builds the exact release commit on your machine, and adds a **Skill Recorder (Source)**
-> app you can relaunch anytime. Nothing is installed globally. You'll need a GitHub account with
-> **Copilot access**; the Copilot CLI ships with the app.
+> Additional Luna task-mode requirements:
 > 
-> macOS is the primary target. Windows 11 (x64 and ARM64) is supported too (see
-> [`WINDOWS-VALIDATION.md`](WINDOWS-VALIDATION.md)).
+> - Explicit authorization in the user's current request.
+> - Access to GPT-5.6 Luna / Max and the Codex app task tools (`list_projects`,
+>   `list_threads`, `create_thread`, `wait_threads`, `read_thread`, and
+>   `send_message_to_thread`).
 > 
-> ### Install it
+> Add the GitHub repository as a Codex marketplace, then install the plugin:
 > 
-> Open the **[latest release](https://github.com/microsoft/skill-recorder/releases/latest)** and
-> copy the command for your platform. Each release pins an exact commit, so the real command looks
-> like the patterns below with `` filled in.
+> ~~~sh
+> codex plugin marketplace add DannyMac180/sol-advisor --ref main
+> codex plugin add sol-advisor@sol-advisor
+> ~~~
 > 
-> **macOS / Ubuntu**
 > 
-> ```bash
-> commit=""; curl -fsSL "https://raw.githubusercontent.com/microsoft/skill-recorder/$commit/install.sh" | SKILL_RECORDER_COMMIT="$commit" bash
-> ```
+> ### Install the native companion custom agents (native mode only)
 > 
-> The commit pins both the downloaded script and the source it builds. To keep the app running
-> after the terminal closes, add `SKILL_RECORDER_DETACHED=1` after the pipe:
+> This section is mandatory for native-mode use and can be skipped for Luna-only use.
+> Luna tasks use Codex app task tools and do not require native subagents, Terra access,
+> custom-agent enablement, or companion-agent installation. For native mode, plugin
+> installation does **not** automatically install custom-agent files. That is
+> intentional: the files are user-owned role pins, and the installer must never
+> overwrite a different local role silently. Install the companion templates separately:
 > 
-> ```bash
-> commit=""; curl -fsSL "https://raw.githubusercontent.com/microsoft/skill-recorder/$commit/install.sh" | SKILL_RECORDER_COMMIT="$commit" SKILL_RECORDER_DETACHED=1 bash
-> ```
+> ~~~sh
+> plugin_dir="$(codex plugin list --json | jq -r '.installed[] | select(.pluginId == "sol-advisor@sol-advisor") | .source.path')"
+> test -n "$plugin_dir"
+> test -d "$plugin_dir"
+> sh "$plugin_dir/scripts/install-agents.sh"
+> sh "$plugin_dir/scripts/install-agents.sh" --check
+> ~~~
 > 
-> On macOS this adds a **Skill Recorder (Source)** app to `~/Applications` (relaunch from Spotlight,
-> Launchpad, or the Dock). On Ubuntu it adds a matching application entry.
+> Without an explicit target, the installer uses the existing CODEX_HOME value when one is
+> already set, otherwise the user's default Codex agents directory. It does not invoke
+> Codex, edit config.toml, or overwrite a differing agent file. It only installs a
+> missing template and then verifies every installed copy byte-for-byte.
 > 
-> **Windows (PowerShell)**
+> For native mode, start a **new Codex task** after the check passes. Native agent types
+> are discovered at task creation, so an existing task may not see the installed roles.
+> Then select GPT-5.6 Sol with High reasoning for the primary session and ask for
+> implementation work normally, or invoke the orchestration skill explicitly:
 > 
-> ```powershell
-> $commit=""; $env:SKILL_RECORDER_COMMIT=$commit; irm "https://raw.githubusercontent.com/microsoft/skill-recorder/$commit/install.ps1" | iex
-> ```
+> ~~~text
+> Use $sol-advisor:orchestration to build this feature, verify it, and obtain the final Sol review before reporting done.
+> ~~~
 > 
-> This adds **Skill Recorder (Source)** shortcuts to your desktop and Start Menu.
+> For Luna-only use, skip the companion installation above and explicitly authorize the
+> task lane in the current request, for example: “Use the Luna task lane for this
+> feature.”
 > 
-> ### Then record
 > 
-> 1. **Grant Screen Recording.** On first launch, macOS asks for Screen Recording permission;
->    grant it and you're ready to record.
-> 2. **Record, Analyze, Create.** Do your task, then Analyze. The first time you Analyze,
->    Skill Recorder offers **Sign in to Copilot** if you aren't signed in yet.
+> ## Go deeper
 > 
-> To inspect the script before running it, set install options, update, or uninstall, see
-> [`INSTALL.md`](INSTALL.md).
+> I write [**Attention Heads**](https://attentionheads.substack.com/?utm_source=github&utm_medium=readme&utm_campaign=sol-advisor) — deep, evidence-backed writing on AI, cognition, and agentic engineering. The **Agentic Engineering Field Notes** series is where I publish practical advice on the craft of using AI. [Subscribe](https://attentionheads.substack.com/subscribe?utm_source=github&utm_medium=readme&utm_campaign=sol-advisor) to get new posts to your inbox.
 > 
-> > ⚠️ **Keep secrets out of your recordings.** Don't record, type, paste, or narrate
-> > passwords, tokens, API keys, or other confidential info. Choosing *Analyze* sends
-> > recording data to GitHub's cloud. Skill Recorder reminds you before every recording.
-> > Details in [What gets captured](#what-gets-captured).
+> | Mode | Worker | Routing | Primary ownership |
+> |---|---|---|---|
+> | Native subagent (default) | `sol_advisor_terra_implementer`, then `sol_advisor_sol_reviewer` | GPT-5.6 Terra / High, then fresh GPT-5.6 Sol / High | Architecture, parent verification, and acceptance after the fresh native review |
+> | Luna task (explicit opt-in) | User-visible Codex task created with app task tools | GPT-5.6 Luna / Max | Decomposition, task monitoring, actual diff review, corrections, PR authorization, dependent-stack ordering, and final acceptance |
 > 
-> ---
+> The primary session is GPT-5.6 Sol / High in either mode. The native lane remains
+> available and unchanged: it uses the separately installed Terra role and requires a
+> fresh Sol reviewer. The Luna lane is outside native subagent V2, does not use a Luna
+> custom-agent TOML, and never activates merely because this skill is installed.
 > 
-> *Everything below is for people who want the details, or want to hack on the code.*
+> In the native lane, the final review is context-independent, not model-family-
+> independent: Sol reviews Sol's orchestration with a fresh context. In the Luna lane,
+> the primary Sol task itself reviews and accepts the Luna task's work; it does not route
+> that lane through the native Sol reviewer.
 > 
-> ## What gets captured
 > 
-> Recording, storage, frame extraction, and optional narration transcription all happen
-> **on your computer**; nothing leaves while you record. Only when you choose **Analyze**
-> does Skill Recorder send the event timeline (window/document titles, URLs, and clipboard
-> previews), extracted screen images, and narration text to GitHub's cloud for Copilot to
-> process.
+> ## Check and update native mode
 > 
-> The in-app "Records your screen and activity" panel spells out exactly what's collected:
+> Run this check whenever the native Terra / High route must be trusted. Luna-only users
+> can skip this companion check:
 > 
-> - **Window tracking:** active-app / window switches.
-> - **Browser URLs:** the page you're on (macOS).
-> - **Screen video:** recorded by Chromium; low-rate snapshots are kept only when the
->   screen changes or a heartbeat is due.
-> - **Clipboard:** short previews of copied text that tie steps together.
-> - **Narration** *(optional)*: spoken commentary, transcribed **on-device** in any of
->   Whisper's 99 supported languages (a one-time ~252 MB model download on first use).
+> ~~~sh
+> plugin_dir="$(codex plugin list --json | jq -r '.installed[] | select(.pluginId == "sol-advisor@sol-advisor") | .source.path')"
+> test -d "$plugin_dir"
+> sh "$plugin_dir/scripts/install-agents.sh" --check
+> ~~~
 > 
-> > ⚠️ **Please don't capture secrets.** Passwords, access tokens, API keys, credentials, and
-> > other confidential information should never be recorded, typed, pasted, shown, copied,
-> > or narrated during a session.
+> To update the marketplace plugin and, for native mode, migrate the exact recognized
+> v0.2.0 companion files:
 > 
-> ## Develop from source
+> ~~~sh
+> codex plugin marketplace upgrade sol-advisor
+> codex plugin add sol-advisor@sol-advisor
+> plugin_dir="$(codex plugin list --json | jq -r '.installed[] | select(.pluginId == "sol-advisor@sol-advisor") | .source.path')"
+> test -d "$plugin_dir"
+> sh "$plugin_dir/scripts/install-agents.sh"
+> sh "$plugin_dir/scripts/install-agents.sh" --check
+> ~~~
 > 
-> Requires **Node.js 24**. After checking out a release revision:
+> Version 0.4.0 retains the historical byte-exact v0.2.0 migration for
+> `sol-advisor-luna-implementer.toml` and `sol-advisor-terra-implementer.toml` files.
+> Normal installer mode replaces the exact legacy Terra file with the current Terra /
+> High template, removes the exact legacy Luna file, and refuses modified, nonregular,
+> or symlinked destinations without partial agent-file mutation. `--check` is
+> non-mutating and fails until both current role files match exactly and Luna is absent.
+> The native routing update was motivated by
+> [Eric Provencher's X post](https://x.com/pvncher/status/2083300990350954981).
 > 
-> ```bash
-> npm ci
-> npm run compliance:licenses
-> npm run dev
-> ```
+> The installer intentionally installs only the two native companion roles. The Luna
+> task lane is an app-task workflow and must not add or restore a
+> `sol-advisor-luna-implementer.toml` file.
 > 
-> `npm run dev` starts Vite and launches the Electron app with hot-reload; `⌘⇧R` (macOS) /
-> `Ctrl+Shift+R` (Windows) toggles recording from anywhere. Full manual setup, the build and
-> `dist` scripts, and the licensing boundary between local source builds and redistributable
-> packages are in [`INSTALL.md`](INSTALL.md). Maintainers changing versions, dependencies,
-> assets, or releases must follow [`RELEASING.md`](RELEASING.md).
+> For native mode, do not use a substitute agent as a shortcut. Start a fresh task after
+> every successful install or update. Luna-only use does not require this installer or a
+> native-agent refresh.
 > 
-> ## Evals
 > 
-> The Copilot **describer** and **builders** have a fixture-based eval suite; see
-> [`evals/README.md`](evals/README.md).
+> ## Native runtime routing evidence
 > 
-> ```bash
-> npm run eval            # score the describer against synthetic recordings
-> npm run eval:builder    # score the skill/automation generalization
-> ```
+> Native spawn/details metadata is the primary source of routing evidence. It must show
+> the selected custom agent type. When it also exposes model and effort, the orchestrator
+> compares those values with the role pin. If Desktop omits model or effort and the local
+> rollout is accessible, use the companion inspector as the authoritative read-only
+> fallback for those omitted fields:
 > 
-> ## Documentation
+> ~~~sh
+> plugin_dir="$(codex plugin list --json | jq -r '.installed[] | select(.pluginId == "sol-advisor@sol-advisor") | .source.path')"
+> thread_id=""
+> sh "$plugin_dir/scripts/inspect-agent-runtime.sh" "$thread_id"
+> ~~~
 > 
-> - **[INSTALL.md](INSTALL.md):** install options, inspect-first install, updating,
->   uninstalling, and manual developer setup.
-> - **[RELEASING.md](RELEASING.md):** maintainer release runbook.
-> - **[evals/README.md](evals/README.md):** the describer / builder eval harness.
-> - **[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md):** licenses for bundled dependencies.
+> For a disposable fixture or a non-default local session root, pass it explicitly:
 > 
-> ## Security
+> ~~~sh
+> sh "$plugin_dir/scripts/inspect-agent-runtime.sh" --sessions-dir /absolute/path/to/sessions "$thread_id"
+> ~~~
 > 
-> Please don't report security vulnerabilities through public GitHub issues. See
-> [`SECURITY.md`](SECURITY.md) for Microsoft's coordinated-disclosure process and reporting
-> channels.
+> The helper searches only rollout filenames ending in that exact thread id, then emits a
+> single compact JSON object with allowlisted routing fields. It never prints prompts,
+> messages, environment variables, tokens, configuration contents, or arbitrary rollout
+> payloads. It refuses invalid ids, zero or multiple matches, and missing or inconsistent
+> role/model/effort; there is no inferred fallback. If public and local evidence both
+> exist, they must agree.
 > 
-> ## Support
 > 
-> File bugs and feature requests through
-> **[GitHub Issues](https://github.com/microsoft/skill-recorder/issues)** (search existing issues
-> first to avoid duplicates). Support is limited to the resources described in
-> [`SUPPORT.md`](SUPPORT.md).
+> ## How routing works
 > 
-> ## License
-> 
-> [MIT](LICENSE)
-> 
-> ## Contributing
-> 
-> This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-> Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-> the rights to use your contribution. For details, visit [Contributor License Agreements](https://cla.opensource.microsoft.com).
-> 
-> When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-> a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-> provided by the bot. You will only need to do this once across all repos using our CLA.
-> 
-> This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-> For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-> contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-> 
-> ## Trademarks
-> 
-> This project may contain trademarks or logos for projects, pro
+> The Sol orchestrator keeps architecture, decomposition, verification,
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityDev--WilonityLoader|WilonityDev/WilonityLoader]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]] · [[bashalarmistalt--decimen-optical-transfer|bashalarmistalt/decimen-optical-transfer]] · [[gavamedia--deltafin|gavamedia/deltafin]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
 
-[GitHub](https://github.com/microsoft/skill-recorder)
+[GitHub](https://github.com/DannyMac180/sol-advisor)
 
 ## 相關收錄
 
@@ -421,7 +353,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "microsoft--skill-recorder"
+> WHERE category = "Other" AND file.name != "DannyMac180--sol-advisor"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -430,7 +362,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "microsoft--skill-recorder" AND status != "archived"
+> WHERE language = "Shell" AND file.name != "DannyMac180--sol-advisor" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -439,18 +371,18 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "microsoft--skill-recorder"
+> WHERE week = "2026-W32" AND file.name != "DannyMac180--sol-advisor"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/DannyMac180--sol-advisor");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "microsoft--skill-recorder" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "DannyMac180--sol-advisor" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -466,7 +398,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "microsoft" AND file.name != "microsoft--skill-recorder"
+> WHERE owner = "DannyMac180" AND file.name != "DannyMac180--sol-advisor"
 > SORT stars DESC
 > ```
 
@@ -474,7 +406,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/DannyMac180--sol-advisor");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -491,7 +423,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/DannyMac180--sol-advisor");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -524,7 +456,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/DannyMac180--sol-advisor");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -548,7 +480,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/DannyMac180--sol-advisor");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -585,7 +517,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/DannyMac180--sol-advisor");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -668,7 +600,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-03** — 首次收錄
+> **2026-08-04** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -684,5 +616,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-04|2026-08-04]] — 再次上榜，1.5k stars
-- [[2026-08-03|2026-08-03]] — 首次收錄，907 stars
+- [[2026-08-04|2026-08-04]] — 首次收錄，1.1k stars

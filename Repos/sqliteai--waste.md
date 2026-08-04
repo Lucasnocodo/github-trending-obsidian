@@ -7,12 +7,12 @@ language: C
 license: Apache-2.0
 description: "Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by streaming activated weights directly from NVMe. A dependency-free, embeddable C inference engine."
 homepage: ""
-stars: 1166
-stars_per_day: 233
-forks: 96
-open_issues: 3
+stars: 1558
+stars_per_day: 260
+forks: 115
+open_issues: 1
 created: 2026-07-28
-pushed_at: 2026-08-02
+pushed_at: 2026-08-03
 first_seen: 2026-08-02
 week: "2026-W32"
 month: "2026-08"
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-08-02
 use_case: ""
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-06"
+appearances: 3
+next_review: "2026-08-07"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 75
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-02"
-star_history: "2026-08-02:705,2026-08-03:1166"
+star_history: "2026-08-02:705,2026-08-03:1166,2026-08-04:1558"
 tags:
   - github
   - "category/other"
@@ -649,5 +649,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-04|2026-08-04]] — 再次上榜，1.6k stars
 - [[2026-08-03|2026-08-03]] — 再次上榜，1.2k stars
 - [[2026-08-02|2026-08-02]] — 首次收錄，705 stars

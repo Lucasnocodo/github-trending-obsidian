@@ -7,8 +7,8 @@ language: N/A
 license: MIT
 description: "Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, PUBG, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread."
 homepage: "https://wilonity.xyz"
-stars: 1216
-stars_per_day: 608
+stars: 899
+stars_per_day: 300
 forks: 0
 open_issues: 0
 created: 2026-07-31
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-06"
+appearances: 2
+next_review: "2026-08-07"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-03"
-star_history: "2026-08-03:1216"
+star_history: "2026-08-03:1216,2026-08-04:899"
 tags:
   - github
   - "category/other"
@@ -547,4 +547,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-04|2026-08-04]] — 再次上榜，899 stars
 - [[2026-08-03|2026-08-03]] — 首次收錄，1.2k stars

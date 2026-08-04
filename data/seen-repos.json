@@ -3270,17 +3270,17 @@
   },
   "yc-software/qm": {
     "first_seen": "2026-08-01",
-    "last_seen": "2026-08-03",
-    "times_seen": 3,
+    "last_seen": "2026-08-04",
+    "times_seen": 4,
     "stars_first": 2422,
-    "stars_last": 7603
+    "stars_last": 10021
   },
   "bashalarmistalt/decimen-optical-transfer": {
     "first_seen": "2026-08-01",
-    "last_seen": "2026-08-03",
-    "times_seen": 3,
+    "last_seen": "2026-08-04",
+    "times_seen": 4,
     "stars_first": 2194,
-    "stars_last": 3772
+    "stars_last": 4295
   },
   "QwenAudio/qwen-audio-agent": {
     "first_seen": "2026-08-01",
@@ -3291,10 +3291,10 @@
   },
   "xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer": {
     "first_seen": "2026-08-01",
-    "last_seen": "2026-08-03",
-    "times_seen": 3,
+    "last_seen": "2026-08-04",
+    "times_seen": 4,
     "stars_first": 594,
-    "stars_last": 1679
+    "stars_last": 2216
   },
   "gavamedia/deltafin": {
     "first_seen": "2026-08-01",
@@ -3305,17 +3305,17 @@
   },
   "trycompai/crm": {
     "first_seen": "2026-08-02",
-    "last_seen": "2026-08-03",
-    "times_seen": 2,
+    "last_seen": "2026-08-04",
+    "times_seen": 3,
     "stars_first": 832,
-    "stars_last": 1926
+    "stars_last": 3442
   },
   "sqliteai/waste": {
     "first_seen": "2026-08-02",
-    "last_seen": "2026-08-03",
-    "times_seen": 2,
+    "last_seen": "2026-08-04",
+    "times_seen": 3,
     "stars_first": 705,
-    "stars_last": 1166
+    "stars_last": 1558
   },
   "DramaticShape/DramaticShapeVoxelMod": {
     "first_seen": "2026-08-02",
@@ -3333,16 +3333,37 @@
   },
   "WilonityDev/WilonityLoader": {
     "first_seen": "2026-08-03",
-    "last_seen": "2026-08-03",
-    "times_seen": 1,
+    "last_seen": "2026-08-04",
+    "times_seen": 2,
     "stars_first": 1216,
-    "stars_last": 1216
+    "stars_last": 899
   },
   "microsoft/skill-recorder": {
     "first_seen": "2026-08-03",
-    "last_seen": "2026-08-03",
-    "times_seen": 1,
+    "last_seen": "2026-08-04",
+    "times_seen": 2,
     "stars_first": 907,
-    "stars_last": 907
+    "stars_last": 1481
+  },
+  "FareedKhan-dev/kimi-k3-in-c": {
+    "first_seen": "2026-08-04",
+    "last_seen": "2026-08-04",
+    "times_seen": 1,
+    "stars_first": 1319,
+    "stars_last": 1319
+  },
+  "DannyMac180/sol-advisor": {
+    "first_seen": "2026-08-04",
+    "last_seen": "2026-08-04",
+    "times_seen": 1,
+    "stars_first": 1064,
+    "stars_last": 1064
+  },
+  "imsai-sh/zhuzhiliao": {
+    "first_seen": "2026-08-04",
+    "last_seen": "2026-08-04",
+    "times_seen": 1,
+    "stars_first": 946,
+    "stars_last": 946
   }
 }

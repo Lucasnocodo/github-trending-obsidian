@@ -1,69 +1,63 @@
 ---
-repo: microsoft/skill-recorder
-url: https://github.com/microsoft/skill-recorder
-owner: microsoft
-owner_type: Organization
-language: TypeScript
-license: MIT
-description: "Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio."
-homepage: ""
-stars: 1481
-stars_per_day: 296
-forks: 154
-open_issues: 27
-created: 2026-07-29
+repo: imsai-sh/zhuzhiliao
+url: https://github.com/imsai-sh/zhuzhiliao
+owner: imsai-sh
+owner_type: User
+language: HTML
+license: N/A
+description: "竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。"
+homepage: "https://zhuzhiliao.imsai.cc"
+stars: 946
+stars_per_day: 473
+forks: 120
+open_issues: 48
+created: 2026-08-01
 pushed_at: 2026-08-03
-first_seen: 2026-08-03
+first_seen: 2026-08-04
 week: "2026-W32"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: "v0.3.1"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-03
+last_reviewed: 2026-08-04
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-08-07"
-contributor_count: 3
+contributor_count: 1
 engagement: "medium"
-issue_close_rate: 3
-repo_size_kb: 5929
-readme_length: 8439
-bus_factor: 2
-last_release_days: 4
-release_cadence: "weekly"
+issue_close_rate: 8
+repo_size_kb: 760
+readme_length: 2727
+bus_factor: 1
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-03"
-star_history: "2026-08-03:907,2026-08-04:1481"
+ring_history: "assess@2026-08-04"
+star_history: "2026-08-04:946"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
-  - org
-  - "topic/agent_skills"
-  - "topic/ai_agents"
-  - "topic/automation"
-  - "topic/copilot"
-  - "topic/copilot_cli"
+  - "lang/html"
 aliases:
-  - "skill-recorder"
-  - "microsoft/skill-recorder"
+  - "zhuzhiliao"
+  - "imsai-sh/zhuzhiliao"
 ---
 
-# skill-recorder
+# zhuzhiliao
 
-**907** stars · **227** stars/天 · 建立 4 天前 · TypeScript · MIT
+**946** stars · **473** stars/天 · 建立 2 天前 · HTML · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/microsoft--skill-recorder");
+const me = dv.page("Repos/imsai-sh--zhuzhiliao");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -76,22 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG` `v0.3.1`
-
-`agent-skills` `ai-agents` `automation` `copilot` `copilot-cli` `copilot-cowork` `copilot-studio` `electron` `microsoft-scout` `screen-recording`
+`個人專案`
 
 > [!summary] 一句話摘要
-> Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio.
+> 竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。
 
 ## 專案簡介
 
-Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio.
+竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -126,7 +118,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -150,270 +142,150 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 102 |
-| Open Issues | 29 |
-| Issue 解決率 | 3% (1 closed) |
+| Forks | 120 |
+| Open Issues | 48 |
+| Issue 解決率 | 8% (4 closed) |
 | 最後推送 | 2026-08-03 |
-| 建立日期 | 2026-07-29 |
-| Repo 大小 | 5.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/microsoft/skill-recorder) |
-| Topics | `agent-skills` `ai-agents` `automation` `copilot` `copilot-cli` `copilot-cowork` `copilot-studio` `electron` |
+| 建立日期 | 2026-08-01 |
+| 官方網站 | [Link](https://zhuzhiliao.imsai.cc) |
+| Repo 大小 | 760 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/imsai-sh/zhuzhiliao) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 76
->     "JavaScript" : 12
->     "CSS" : 6
->     "PowerShell" : 3
->     "Shell" : 2
->     "HTML" : 2
+>     "HTML" : 75
+>     "JavaScript" : 25
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@GiorgioUghini](https://github.com/GiorgioUghini) | 32 |
-> | [@adilei](https://github.com/adilei) | 30 |
-> | [@adilei-powerapps](https://github.com/adilei-powerapps) | 9 |
-
-**最新版本**：v0.3.1 — Skill Recorder v0.3.1 (2026-07-30)
-
-> [!info]- Release Notes
-> # Skill Recorder v0.3.1
-> 
-> This is a **source-only patch release**. No prebuilt application, installer, or portable binary is attached. GitHub provides the tagged source archives, and the commands below build the exact release commit locally.
-> 
-> ## Fixed
-> 
-> - The Windows source installer now handles dependency paths longer than legacy `MAX_PATH` while moving and cleaning its staging tree.
-> - The extracted source is renamed to a shorter build path before `npm ci` creates deeply nested dependencies.
-> - Temporary-file cleanup can no longer hide the original installation error.
-> - PowerShell 5.1 regression coverage exercises a path longer than 260 characters and a read-only dependency file.
-> 
-> ## Upgrade and compatibility notes
-> 
-> - **Windows users should use v0.3.1 instead of v0.3.0.** The v0.3.0 Windows command pins the defective installer and cannot receive this correction in place.
-> - Existing successful installations remain usable. Re-run the command below to install the corrected revision.
-> - macOS and Ubuntu behavior is unchanged.
-> - No dependencies or compliance boundaries changed.
-> 
-> ## Release identity
-> 
-> - Tag: `v0.3.1`
-> - Commit: `32fd0b57e02c3ea1e016cca0d64e59052e93a9b9`
-> 
-> Installer script SHA-256 values:
-> 
-> ```text
-> f0251c09a7c3481b15850f77a512bd95850652b1d0991804290d16bc70ecf65d  install.ps1
-> cda37c728b8bf8341075d4fb6225f4387f22df1ef880a172f186bbd1aa19481d  install.sh
-> ```
-> 
+> | [@imsai-sh](https://github.com/imsai-sh) | 20 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-07-29 ~ 2026-07-30）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #31 from microsoft/giorgioughini-release-0-3-1
+> [!abstract] 最近 10 次 commit（2026-08-02 ~ 2026-08-03）
+> **活躍天數** 2 天 · **最新 commit** Merge pull request #6 from imsai-sh/readme-trim-star-copy
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#35](https://github.com/microsoft/skill-recorder/issues/35) | Bump sharp to 0.35.x to resolve Dependabot alert (requires l `dependencies` `security` | 0 | 1 |
+> | [#37](https://github.com/imsai-sh/zhuzhiliao/issues/37) | 项目改名 | 21 | 4 |
+> | [#1](https://github.com/imsai-sh/zhuzhiliao/issues/1) | 啊则个则个 则个似不似1000w token以内能coding出的最好的仓库 | 20 | 3 |
+> | [#3](https://github.com/imsai-sh/zhuzhiliao/issues/3) | 有这么好的网站咋不早点告诉我 | 10 | 0 |
+> | [#45](https://github.com/imsai-sh/zhuzhiliao/issues/45) | 有老哥给加上了【哇声大作战】功能，笑死我了，要听取蛙声一片了 | 7 | 0 |
+> | [#26](https://github.com/imsai-sh/zhuzhiliao/issues/26) | bug: 自动甩转速不均匀 | 7 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Skill Recorder
+> # 竹知了
 > 
-> **Record yourself doing a task once, then turn it into a skill your AI agent can repeat.**
+> 一转就"哇哇"叫的传统玩具，Web 模拟版。零依赖单文件，手机优先。
 > 
-> Skill Recorder captures a real work session on your screen: the clicks, the app and
-> window switches, the pages you visit, and (if you want) your spoken narration. It then uses
-> the **GitHub Copilot CLI** to reconstruct *what you actually did* as a clear **intent plus
-> an ordered list of steps**. From there, one step turns that single run into something an
-> agent can reuse:
+> **在线试玩：**
 > 
-> - a **Skill**: a `SKILL.md` procedure an agent runs on demand, or
-> - an **Automation**: the same procedure on a schedule or trigger.
+> [](https://github.com/imsai-sh/zhuzhiliao/stargazers)
 > 
-> Both prefer the agent's **native tools** (like the `gh` CLI or `web_fetch`) over replaying
-> UI clicks, and generalize from your one example, so recording yourself submitting *one*
-> form can teach the agent to submit *all* of them.
+> > 甩两下要是听见了小时候那声"哇——哇——"，顺手点个 ⭐ **Star** 吧。
 > 
->   
->   &nbsp;&nbsp;
->   
+> ## 玩法
 > 
-> ## How it works
+> 直接用浏览器打开 `index.html` 即可（无需构建、无需联网）。
 > 
-> 1. 🔴 **Record.** Hit record (or `⌘⇧R` / `Ctrl+Shift+R` from anywhere) and just do your
->    task. Skill Recorder captures your screen and activity locally, in the background.
-> 2. 🎛️ **Control.** While recording, a small always-on-top bar shows capture and
->    microphone state. Mute, unmute, or switch mics on the fly, then finish, or discard
->    (with a confirmation) if the take didn't go to plan.
-> 3. 🧠 **Analyze.** Click Analyze and GitHub Copilot reconstructs one overall intent and
->    an ordered list of steps. Review and edit until it reads right.
-> 4. ✨ **Create.** From an approved analysis, generate a reusable **Skill** and/or a
->    scheduled **Automation**.
+> - **按住屏幕画圈**：像甩真玩具一样，转得越快叫得越响（触屏时锚点会自动抬到指尖上方，避免手挡住小蝉）
+> - **自动甩**：不想动手就点它（空格键也行）
+> - **甩手机**（手机端，需 HTTPS 或本地文件）：握住手机划圈，重力方向在机身坐标里转动，直接驱动甩杆（iOS 首次需授权动作传感器；普通 http 局域网地址下浏览器不派发传感器事件，该按钮会自动隐藏）
 > 
-> ## Get started
+> ### 局域网试玩
 > 
-> Skill Recorder is published as a **source release**: one command downloads a pinned Node.js
-> runtime, builds the exact release commit on your machine, and adds a **Skill Recorder (Source)**
-> app you can relaunch anytime. Nothing is installed globally. You'll need a GitHub account with
-> **Copilot access**; the Copilot CLI ships with the app.
-> 
-> macOS is the primary target. Windows 11 (x64 and ARM64) is supported too (see
-> [`WINDOWS-VALIDATION.md`](WINDOWS-VALIDATION.md)).
-> 
-> ### Install it
-> 
-> Open the **[latest release](https://github.com/microsoft/skill-recorder/releases/latest)** and
-> copy the command for your platform. Each release pins an exact commit, so the real command looks
-> like the patterns below with `` filled in.
-> 
-> **macOS / Ubuntu**
+> 在项目目录起个静态服务，手机连同一 Wi-Fi 访问 `http://:8123`：
 > 
 > ```bash
-> commit=""; curl -fsSL "https://raw.githubusercontent.com/microsoft/skill-recorder/$commit/install.sh" | SKILL_RECORDER_COMMIT="$commit" bash
+> python3 -m http.server 8123
 > ```
 > 
-> The commit pins both the downloaded script and the source it builds. To keep the app running
-> after the terminal closes, add `SKILL_RECORDER_DETACHED=1` after the pipe:
+> ## 真实玩具的发声原理
 > 
-> ```bash
-> commit=""; curl -fsSL "https://raw.githubusercontent.com/microsoft/skill-recorder/$commit/install.sh" | SKILL_RECORDER_COMMIT="$commit" SKILL_RECORDER_DETACHED=1 bash
-> ```
+> 竹筒一端蒙竹膜，膜心系一根涂了**松香**的线，线的另一头拴在小竹签上。
+> 甩起来转圈时，线在松香上"黏–滑"交替摩擦，脉冲沿线传到竹膜，
+> 膜与筒腔共鸣放大——就是那声"哇——哇——"。
 > 
-> On macOS this adds a **Skill Recorder (Source)** app to `~/Applications` (relaunch from Spotlight,
-> Launchpad, or the Dock). On Ubuntu it adds a matching application entry.
+> ## 声音
 > 
-> **Windows (PowerShell)**
+> 主音源是**真实竹知了的录音采样**：从实拍视频里截取 1.72 秒（恰好 4 个"哇"周期、
+> 包络边界自动搜索对齐），尾部 50ms 等功率交叉淡化烘进头部做成无缝循环，
+> 以 AAC 内嵌在 HTML 里保持单文件。回放速率随甩动转速变化
+> （录音里的甩速约 2.33 圈/秒，甩得越快叫得越急越高），再叠每圈相位的音高微摆。
 > 
-> ```powershell
-> $commit=""; $env:SKILL_RECORDER_COMMIT=$commit; irm "https://raw.githubusercontent.com/microsoft/skill-recorder/$commit/install.ps1" | iex
-> ```
+> 采样解码失败时回退到纯合成链：
 > 
-> This adds **Skill Recorder (Source)** shortcuts to your desktop and Start Menu.
+> | 真实玩具 | 合成兜底实现 |
+> |---|---|
+> | 松香黏滑摩擦产生脉冲 | 锯齿波振荡器，频率随转速升高（55~195 Hz），tanh 软削波增毛糙谐波 |
+> | 蝉鸣颗粒感 | 24~45 Hz 正弦低频调幅 + 带通摩擦噪声底 |
+> | 竹膜 + 筒腔共鸣 | 三个并联带通共振峰（1050 / 2150 / 3350 Hz） |
+> | 转圈带来的"哇——哇——" | 带通滤波器中心频率随转动相位扫频 |
 > 
-> ### Then record
+> ## 物理
 > 
-> 1. **Grant Screen Recording.** On first launch, macOS asks for Screen Recording permission;
->    grant it and you're ready to record.
-> 2. **Record, Analyze, Create.** Do your task, then Analyze. The first time you Analyze,
->    Skill Recorder offers **Sign in to Copilot** if you aren't signed in yet.
+> 竹筒是绳系质点（重力 + 只拉不推的弹性绳 + 空气阻力，1/240s 定步长积分）。
+> 发声核心变量是**绳方向的角速度**：竹筒绕甩杆转得越快、绳越紧，声音越响越亮；
+> 角速度低于约 1.1 圈/秒或绳未张紧时不发声，松手后靠惯性余音渐歇。
 > 
-> To inspect the script before running it, set install options, update, or uninstall, see
-> [`INSTALL.md`](INSTALL.md).
+> ## 技术
 > 
-> > ⚠️ **Keep secrets out of your recordings.** Don't record, type, paste, or narrate
-> > passwords, tokens, API keys, or other confidential info. Choosing *Analyze* sends
-> > recording data to GitHub's cloud. Skill Recorder reminds you before every recording.
-> > Details in [What gets captured](#what-gets-captured).
+> - 单文件 `index.html`：Canvas 2D 渲染 + Web Audio API，无任何依赖（含内嵌录音）
+> - SEO：head 里有 OG/Twitter 卡片与 JSON-LD（WebSite + WebApplication/VideoGame）；`` 里有一段
+>   玩具介绍作为无 JS 环境（含不执行 JS 的百度蜘蛛）可读的静态正文，正常用户不可见；根目录 `robots.txt`、
+>   `sitemap.xml`、`og-image.jpg`（1200×630 页面实拍）、`404.html`（有了它 Cloudflare Pages 才会对未知路径
+>   返回真 404，否则任意路径都是 200 + 首页的 soft-404）
+> - 移动端优先：安全区适配、绳长随屏幕缩放、拇指小圈即可甩响（触摸时锚点自动上移避免手挡）、多点触控互斥、`devicemotion` 体感模式
+> - 音频在首次触摸/点击时初始化，触摸在抬手时补解锁（user activation 规则）；iOS 的 `interrupted` 状态与旧内核 `roundRect` 均有兜底
+> - 静态场景预合成为离屏层，静置 8 秒自动挂起音频线程省电
 > 
-> ---
+> ## 实时计数
 > 
-> *Everything below is for people who want the details, or want to hack on the code.*
+> 页面底部有一行全站统计：**此刻在线 · 唯一来客 · 访问次数 · 全球哇数**，外加只存在浏览器
+> localStorage 里的**个人哇数**。手动甩出的每一圈记一"哇"，自动甩不计。
 > 
-> ## What gets captured
+> 后端是 `worker/` 里的一个 Cloudflare Worker + 单实例 SQLite **Durable Object**：
 > 
-> Recording, storage, frame extraction, and optional narration transcription all happen
-> **on your computer**; nothing leaves while you record. Only when you choose **Analyze**
-> does Skill Recorder send the event timeline (window/document titles, URLs, and clipboard
-> previews), extracted screen images, and narration text to GitHub's cloud for Copilot to
-> process.
+> - **实时推送**：所有在线玩家挂在同一个 DO 的 WebSocket（Hibernation API）上，任何人甩出哇，
+>   350ms 合并广播推给全场；挂机连接休眠零费用，心跳 ping/pong 由运行时自动应答不唤醒 DO
+> - **同步策略**：客户端本地先累计，1.2s 批量走 WS 上报；页面关闭用 `sendBeacon` 兜底补报；
+>   断线指数退避重连，重连不重复计访问
+> - **成本控制**：计数在内存自增、2 秒合并落盘（SQLite 行写入有限额）；免费套餐足够跑
+> - **防刷**：单连接哇数限速（10s 滑动窗口）、单条消息哇数上限、并发连接上限、
+>   按 IP 的连接/补报频控、单连接 hi 去重
+> - **路由**：`zhuzhiliao.imsai.cc/api/*` 走 zone route 进 Worker，其余流量走 Pages；
+>   唯一访客用 localStorage 里的随机 UUID 在 DO 的 SQLite 表去重
 > 
-> The in-app "Records your screen and activity" panel spells out exactly what's collected:
+> 部署：`cd worker && npx wrangler deploy`（Pages 部署页面本体，Worker 承接 `/api/*`）。
 > 
-> - **Window tracking:** active-app / window switches.
-> - **Browser URLs:** the page you're on (macOS).
-> - **Screen video:** recorded by Chromium; low-rate snapshots are kept only when the
->   screen changes or a heartbeat is due.
-> - **Clipboard:** short previews of copied text that tie steps together.
-> - **Narration** *(optional)*: spoken commentary, transcribed **on-device** in any of
->   Whisper's 99 supported languages (a one-time ~252 MB model download on first use).
+> ## 点个 Star ⭐
 > 
-> > ⚠️ **Please don't capture secrets.** Passwords, access tokens, API keys, credentials, and
-> > other confidential information should never be recorded, typed, pasted, shown, copied,
-> > or narrated during a session.
+> 竹知了是小时候路边摊上几块钱的玩意儿，会响、会烦人、会被大人没收，现在实物越来越难找了。
+> 这个 Web 版想做的事很简单：让它继续能被随手甩响 —— 一个 HTML 文件，零依赖、零构建，
+> 存下来断网也能玩，二十年后双击照样出声。
 > 
-> ## Develop from source
+> 如果它甩响了你的某段回忆，或者你觉得这套「真实录音采样 + 绳系质点物理 + Durable Object
+> 实时计数」塞进单文件的做法有点意思：
 > 
-> Requires **Node.js 24**. After checking out a release revision:
+> - 点个 [⭐ Star](https://github.com/imsai-sh/zhuzhiliao/stargazers) —— Star 多了才排得上 GitHub 的搜索和推荐
+> - 把  甩给一个也玩过竹知了的人，看他愣两秒
+> - 有 Bug、有想法、有更像真玩具的调参，欢迎提 Issue / PR
 > 
-> ```bash
-> npm ci
-> npm run compliance:licenses
-> npm run dev
-> ```
-> 
-> `npm run dev` starts Vite and launches the Electron app with hot-reload; `⌘⇧R` (macOS) /
-> `Ctrl+Shift+R` (Windows) toggles recording from anywhere. Full manual setup, the build and
-> `dist` scripts, and the licensing boundary between local source builds and redistributable
-> packages are in [`INSTALL.md`](INSTALL.md). Maintainers changing versions, dependencies,
-> assets, or releases must follow [`RELEASING.md`](RELEASING.md).
-> 
-> ## Evals
-> 
-> The Copilot **describer** and **builders** have a fixture-based eval suite; see
-> [`evals/README.md`](evals/README.md).
-> 
-> ```bash
-> npm run eval            # score the describer against synthetic recordings
-> npm run eval:builder    # score the skill/automation generalization
-> ```
-> 
-> ## Documentation
-> 
-> - **[INSTALL.md](INSTALL.md):** install options, inspect-first install, updating,
->   uninstalling, and manual developer setup.
-> - **[RELEASING.md](RELEASING.md):** maintainer release runbook.
-> - **[evals/README.md](evals/README.md):** the describer / builder eval harness.
-> - **[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md):** licenses for bundled dependencies.
-> 
-> ## Security
-> 
-> Please don't report security vulnerabilities through public GitHub issues. See
-> [`SECURITY.md`](SECURITY.md) for Microsoft's coordinated-disclosure process and reporting
-> channels.
-> 
-> ## Support
-> 
-> File bugs and feature requests through
-> **[GitHub Issues](https://github.com/microsoft/skill-recorder/issues)** (search existing issues
-> first to avoid duplicates). Support is limited to the resources described in
-> [`SUPPORT.md`](SUPPORT.md).
-> 
-> ## License
-> 
-> [MIT](LICENSE)
-> 
-> ## Contributing
-> 
-> This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-> Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-> the rights to use your contribution. For details, visit [Contributor License Agreements](https://cla.opensource.microsoft.com).
-> 
-> When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-> a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-> provided by the bot. You will only need to do this once across all repos using our CLA.
-> 
-> This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-> For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-> contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-> 
-> ## Trademarks
-> 
-> This project may contain trademarks or logos for projects, pro
+> 全球哇数正在页面底部实时跳动，你的每一圈都算数。
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityDev--WilonityLoader|WilonityDev/WilonityLoader]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]] · [[bashalarmistalt--decimen-optical-transfer|bashalarmistalt/decimen-optical-transfer]] · [[gavamedia--deltafin|gavamedia/deltafin]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
 
-[GitHub](https://github.com/microsoft/skill-recorder)
+[GitHub](https://github.com/imsai-sh/zhuzhiliao) · [官方網站](https://zhuzhiliao.imsai.cc)
 
 ## 相關收錄
 
@@ -421,7 +293,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "microsoft--skill-recorder"
+> WHERE category = "Other" AND file.name != "imsai-sh--zhuzhiliao"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -430,7 +302,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "microsoft--skill-recorder" AND status != "archived"
+> WHERE language = "HTML" AND file.name != "imsai-sh--zhuzhiliao" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -439,18 +311,18 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "microsoft--skill-recorder"
+> WHERE week = "2026-W32" AND file.name != "imsai-sh--zhuzhiliao"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "microsoft--skill-recorder" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "imsai-sh--zhuzhiliao" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -466,7 +338,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "microsoft" AND file.name != "microsoft--skill-recorder"
+> WHERE owner = "imsai-sh" AND file.name != "imsai-sh--zhuzhiliao"
 > SORT stars DESC
 > ```
 
@@ -474,7 +346,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -491,7 +363,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -524,7 +396,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -548,7 +420,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -585,7 +457,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/microsoft--skill-recorder");
+> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -668,7 +540,7 @@ Desktop app that records your on-screen work session and uses the GitHub Copilot
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-03** — 首次收錄
+> **2026-08-04** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -684,5 +556,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-04|2026-08-04]] — 再次上榜，1.5k stars
-- [[2026-08-03|2026-08-03]] — 首次收錄，907 stars
+- [[2026-08-04|2026-08-04]] — 首次收錄，946 stars
