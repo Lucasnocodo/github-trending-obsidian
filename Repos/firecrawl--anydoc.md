@@ -1,68 +1,64 @@
 ---
-repo: FareedKhan-dev/kimi-k3-in-c
-url: https://github.com/FareedKhan-dev/kimi-k3-in-c
-owner: FareedKhan-dev
-owner_type: User
-language: C
-license: Apache-2.0
-description: "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU."
-homepage: "https://medium.com/@fareedkhandev/building-kimi-k3-in-c-to-run-a-2-8t-model-on-consumer-hardware-a5792cbf3b59"
-stars: 2097
-stars_per_day: 699
-forks: 342
-open_issues: 7
-created: 2026-08-01
-pushed_at: 2026-08-01
-first_seen: 2026-08-04
+repo: firecrawl/anydoc
+url: https://github.com/firecrawl/anydoc
+owner: firecrawl
+owner_type: Organization
+language: Rust
+license: MIT
+description: "Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and PDF to clean Markdown. Built in Rust, with Node.js and Python bindings."
+homepage: ""
+stars: 1867
+stars_per_day: 1867
+forks: 83
+open_issues: 10
+created: 2026-08-03
+pushed_at: 2026-08-04
+first_seen: 2026-08-05
 week: "2026-W32"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: "v0.1.0"
+release_tag: "v0.1.3"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-04
+last_reviewed: 2026-08-05
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-08-08"
-contributor_count: 2
-engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 31177
-readme_length: 10000
+contributor_count: 4
+engagement: "low"
+issue_close_rate: 9
+repo_size_kb: 813
+readme_length: 9749
 bus_factor: 1
-last_release_days: 2
+last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-04"
-star_history: "2026-08-04:1319,2026-08-05:2097"
+ring_history: "assess@2026-08-05"
+star_history: "2026-08-05:1867"
 tags:
   - github
   - "category/other"
-  - "lang/c"
-  - "topic/avx2"
-  - "topic/c99"
-  - "topic/cpu_inference"
-  - "topic/deep_learning"
-  - "topic/from_scratch"
+  - "lang/rust"
+  - org
 aliases:
-  - "kimi-k3-in-c"
-  - "FareedKhan-dev/kimi-k3-in-c"
+  - "anydoc"
+  - "firecrawl/anydoc"
 ---
 
-# kimi-k3-in-c
+# anydoc
 
-**1.3k** stars · **660** stars/天 · 建立 2 天前 · C · Apache-2.0
+**1.9k** stars · **1.9k** stars/天 · 建立 1 天前 · Rust · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/FareedKhan-dev--kimi-k3-in-c");
+const me = dv.page("Repos/firecrawl--anydoc");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v0.1.0`
-
-`avx2` `c99` `cpu-inference` `deep-learning` `from-scratch` `inference-engine` `kimi-k3` `linear-attention` `llm` `llm-inference` `machine-learning` `memory-efficient` `mixture-of-experts` `moe` `mxfp4` `quantization` `simd` `systems-programming` `transformer` `zero-dependencies`
+`ORG` `v0.1.3`
 
 > [!summary] 一句話摘要
-> A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.
+> Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and PDF to clean Markdown. Built in Rust, with Node.js and Python bindings.
 
 ## 專案簡介
 
-A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.
+Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and PDF to clean Markdown. Built in Rust, with Node.js and Python bindings.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/FareedKhan-dev--kimi-k3-in-c");
+> const me = dv.page("Repos/firecrawl--anydoc");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +119,7 @@ A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB o
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/FareedKhan-dev--kimi-k3-in-c");
+> const me = dv.page("Repos/firecrawl--anydoc");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,259 +143,191 @@ A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB o
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 206 |
-| Open Issues | 5 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-01 |
-| 建立日期 | 2026-08-01 |
-| 官方網站 | [Link](https://medium.com/@fareedkhandev/building-kimi-k3-in-c-to-run-a-2-8t-model-on-consumer-hardware-a5792cbf3b59) |
-| Repo 大小 | 30.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/FareedKhan-dev/kimi-k3-in-c) |
-| Topics | `avx2` `c99` `cpu-inference` `deep-learning` `from-scratch` `inference-engine` `kimi-k3` `linear-attention` |
+| Forks | 83 |
+| Open Issues | 10 |
+| Issue 解決率 | 9% (1 closed) |
+| 最後推送 | 2026-08-04 |
+| 建立日期 | 2026-08-03 |
+| Repo 大小 | 813 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/firecrawl/anydoc) |
+
+> [!info]- 主要依賴
+> `Cargo.toml` 中的核心套件：
+> `members` `exclude` `name` `version` `edition` `rust-version` `description` `license` `repository` `readme` `keywords` `categories` `include` `insta` `sha2`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "C" : 64
->     "Python" : 30
->     "Shell" : 4
->     "Makefile" : 1
->     "CMake" : 1
+>     "Rust" : 78
+>     "Python" : 17
+>     "JavaScript" : 5
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@FareedKhan-dev](https://github.com/FareedKhan-dev) | 27 |
-> | [@dependabot[bot]](https://github.com/dependabot[bot]) | 1 |
+> | [@tomsideguide](https://github.com/tomsideguide) | 84 |
+> | [@nickscamara](https://github.com/nickscamara) | 3 |
+> | [@Andsu-dev](https://github.com/Andsu-dev) | 1 |
+> | [@ericciarla](https://github.com/ericciarla) | 1 |
 
-**最新版本**：v0.1.0 (2026-08-02)
+**最新版本**：v0.1.3 (2026-08-04)
+
+> [!info]- Release Notes
+> **Full Changelog**: https://github.com/firecrawl/anydoc/compare/v0.1.2...v0.1.3
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-01 ~ 2026-08-01）
-> **活躍天數** 1 天 · **最新 commit** ci: bump actions/checkout from 4 to 7
+> [!abstract] 最近 10 次 commit（2026-08-04 ~ 2026-08-04）
+> **活躍天數** 1 天 · **最新 commit** fix(build): drop zip's C-backed zstd codec, unblock wasm32 builds
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#7](https://github.com/FareedKhan-dev/kimi-k3-in-c/issues/7) | Can we have one for Qwen 3.8 27B also! (weights will be avai | 0 | 0 |
-> | [#5](https://github.com/FareedKhan-dev/kimi-k3-in-c/issues/5) | ./download-model.sh ~/k3model `bug` | 0 | 0 |
-> | [#3](https://github.com/FareedKhan-dev/kimi-k3-in-c/issues/3) | Support for Quantized / Storage-Efficient Kimi K3 Checkpoint `enhancement` | 0 | 0 |
+> | [#9](https://github.com/firecrawl/anydoc/issues/9) | XLSX conversion silently treats hidden rows and columns as v | 1 | 0 |
+> | [#12](https://github.com/firecrawl/anydoc/issues/12) | Fillable forms lose their field layer — expose form fields i | 0 | 0 |
+> | [#11](https://github.com/firecrawl/anydoc/issues/11) | Docker support please | 0 | 0 |
+> | [#10](https://github.com/firecrawl/anydoc/issues/10) | Expose worksheet identity and source coordinates in to_docum | 0 | 0 |
+> | [#8](https://github.com/firecrawl/anydoc/issues/8) | XLSX merged-cell spans are clipped to the populated range | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> kimi-k3-in-c
+> # anydoc
 > 
-> A 2.78-trillion-parameter model. One CPU. 8 GB of RAM.
+> [](https://crates.io/crates/anydoc)
+> [](https://www.npmjs.com/package/@firecrawl/anydoc)
+> [](https://pypi.org/project/firecrawl-anydoc/)
+> [](LICENSE)
+> [](https://skills.sh/firecrawl/anydoc)
 > 
-> Kimi K3 inference in portable C99.No BLAS. No framework. No GPU.
+> Fast Rust library that converts documents (Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and PDF) into clean GitHub-Flavored Markdown. Includes bindings for [Node.js](node/README.md) and [Python](python/README.md).
 > 
-> 2.78Tparameters
-> 1.56 TBcheckpoint on disk
-> 8.24 GBpeak RSS, measured
-> 176 KBthe whole engine
-> 0GPUs
+> Built by [Firecrawl](https://firecrawl.dev) to turn any office document into LLM-ready Markdown in single-digit milliseconds, with one consistent output no matter which format goes in. It powers [Firecrawl Parse](https://firecrawl.dev/parse), so if you'd rather not run it yourself, the hosted API gives you the same conversion plus our OCR models for the scanned pages anydoc can't read on its own.
 > 
-> ```console
-> $ ./bin/k3 ~/k3model --trunk ~/k3trunk --preset laptop \
->            --tok ~/k3model --prompt "The capital of France is" --gen 8 --incremental
 > 
-> --- generated text ---
->  Paris.",
-> +            "The Eiffel
-> ----------------------
-> 8 tokens in 261.5 s, 32.69 s/token average
-> PEAK RSS for the whole run: 8.24 GB
-> ```
+> ## Quick start
 > 
-> Slow, and answering correctly, in 8.24 GB, from a checkpoint of 1.56 TB. This is a base
-> model, so what follows " Paris." is a continuation rather than a reply; there is no chat
-> template. Give it more memory and the answer does not change, only the clock:
 > 
-> ```console
-> $ ./bin/k3 ~/k3model --trunk ~/k3trunk --preset server \
->            --tok ~/k3model --prompt "def fibonacci(n):" --gen 28 --incremental
+> ## Features
 > 
-> --- generated text ---
->     if n  [prompt] [memory] [generation] [diagnostics]
-> ```
+> - **One output for every format.** Each format parses into a shared document model and renders through a single Markdown serializer, so escaping, tables, heading anchors, and footnotes behave identically whether the input was a `.doc` from 2003 or a `.pptx` from yesterday.
+> - **Full document structure.** Headings with anchors, bold/italic/strikethrough, inline code and code blocks, links and internal cross-references, bulleted/numbered/nested/task lists with the source's own numbering, tables with merged cells and header rows, block quotes, footnotes and endnotes, and speaker notes.
+> - **Embedded assets.** Images and embedded objects render as their alt text in the Markdown, and the raw bytes stay available on the document model, tagged with their media type. Images with an external URL become ordinary Markdown images.
+> - **Content-based format detection.** The format is read from the bytes themselves (PDF header, RTF open group, OLE stream names, ZIP package mimetype), so mislabeled files still convert correctly.
+> - **Fast.** Pure Rust, no ML models, no external services. Median conversion time is under 5ms per document.
+> - **Bindings that stay out of the way.** Node.js conversion runs on the libuv thread pool and never blocks the event loop; Python releases the GIL so other threads keep running. TypeScript types and Python stubs ship with the packages.
+> - **PDF support built in.** Text-based PDFs convert locally through [pdf-inspector](https://github.com/firecrawl/pdf-inspector), no OCR service required.
+> - **Agent ready.** Ships as an [Agent Skill](#agent-skill): one `npx skills add firecrawl/anydoc` and any agent can read office documents.
 > 
-> `` is the directory holding the `.safetensors` shards. It is required for any
-> run, but `--help`, `--version` and `--list-presets` work without it:
+> 
+> ## Benchmark
+> 
+> anydoc is measured against six other converters on 100 real-world documents spanning fourteen formats. Scores run from 0 to 100, higher is better; speed is the median time to convert one document.
+> 
+> | tool         | formats   | median ms | docs judged | score  | completeness | structure | formatting | cleanliness |
+> | ------------ | --------- | --------- | ----------- | ------ | ------------ | --------- | ---------- | ----------- |
+> | anydoc       | **14/14** | **4.7**   | 94          | **80** | **88**       | **78**    | **77**     | **79**      |
+> | libreoffice  | 12/14     | 1129.5    | 87          | 40     | 59           | 43        | 43         | 24          |
+> | unstructured | 8/14      | 572.9     | 58          | 65     | 76           | 62        | 52         | 67          |
+> | markitdown   | 6/14      | 134.8     | 33          | 65     | 80           | 67        | 61         | 53          |
+> | pandoc       | 5/14      | 102.1     | 34          | 57     | 75           | 57        | 58         | 39          |
+> | docling      | 4/14      | 513.6     | 21          | 57     | 63           | 59        | 57         | 52          |
+> | mammoth      | 1/14      | 52.5      | 8           | 70     | 85           | 68        | 74         | 55          |
+> 
+> Per format, like for like:
+> 
+> | format | anydoc | libreoffice | unstructured | markitdown | pandoc | docling | mammoth |
+> | ------ | ------ | ----------- | ------------ | ---------- | ------ | ------- | ------- |
+> | doc    | **88** | 58          | 68           | -          | -      | -       | -       |
+> | docm   | **82** | 49          | -            | -          | -      | -       | -       |
+> | docx   | **86** | 53          | 56           | 72         | 68     | 68      | 70      |
+> | epub   | 74     | -           | 74           | **77**     | 53     | -       | -       |
+> | odp    | **87** | 22          | -            | -          | -      | -       | -       |
+> | ods    | **82** | 42          | -            | -          | -      | -       | -       |
+> | odt    | **80** | 52          | 70           | -          | 61     | -       | -       |
+> | ppt    | **80** | 25          | -            | -          | -      | -       | -       |
+> | pptx   | **76** | 22          | -            | 59         | -      | 50      | -       |
+> | rtf    | **89** | 58          | 48           | -          | 46     | -       | -       |
+> | xls    | **77** | 40          | 68           | 64         | -      | -       | -       |
+> | xlsm   | **70** | 30          | -            | -          | -      | -       | -       |
+> | xlsx   | **70** | 31          | 69           | 55         | -      | 51      | -       |
+> 
+> **How quality was scored:** an LLM judge (Claude Sonnet 5) compares two tools' outputs blind against ground truth: the document's first six pages, rendered to images by LibreOffice. Each output is scored on completeness, structure, formatting, and cleanliness. Every pair is judged twice with the outputs swapped to cancel position bias, for 479 verdicts in total. Each tool's `score` averages its per-format scores over the formats it supports, so a corpus heavy in one format can't skew it. It also means each row averages a different set of formats (mammoth's 70 is docx alone, while anydoc's 80 spans all fourteen), so the per-format table is the fair comparison.
+> 
+> Speed is one warm conversion per document on a Ryzen 9 9950X3D (Windows 11, 64 GB DDR5-6400). anydoc and the Python libraries are timed with process spawn excluded; the CLI tools include it, since that is how they are used. The harness lives in [`bench/`](bench/README.md); the corpus is not redistributable and is not in the repo.
+> 
+> **Best fit:** pipelines that receive a mixed bag of office documents and need one consistent, structured Markdown output. In this comparison, anydoc was the only tool to cover all fourteen formats, scored highest on every judged format except EPUB, and converted documents an order of magnitude faster than the next-fastest tool.
+> 
+> 
+> ### Agent skill
+> 
+> anydoc ships as an [Agent Skill](https://agentskills.io), so your agent can read any document it runs into:
 > 
 > ```bash
-> ./bin/k3 --help
-> ./bin/k3 --version
-> ./bin/k3 --list-presets
+> npx skills add firecrawl/anydoc
 > ```
 > 
+> The [skill](skills/convert-documents-to-markdown/SKILL.md) teaches the agent to convert documents with the anydoc CLI. Works with [Claude Code](https://claude.ai/code), [Codex](https://openai.com/codex/), [Cursor](https://cursor.com), [OpenCode](https://opencode.ai), and any other [compatible agent](https://agentskills.io/clients).
 > 
-> ### Worked examples
+> 
+> ### CLI
 > 
 > ```bash
+> npx @firecrawl/anydoc report.docx               # Markdown to stdout
+> npx @firecrawl/anydoc slides.pptx -o slides.md  # or to a file
+> npx @firecrawl/anydoc - --format csv  Full API reference: [node/README.md](node/README.md)
 > 
-> ## The machine, and what it assumes
 > 
-> Every measurement here comes from one workstation: a two-socket AMD EPYC 7763 with 124
-> cores and no SMT, 228 GB of RAM, and 3.2 TB of NVMe. It also has four NVIDIA L40 GPUs,
-> which sat completely idle for the entire campaign, because this engine has no GPU path.
+> ### Python
 > 
-> ```text
-> --- ISA (note: AVX2 present, AVX-512 ABSENT) ---
-> avx avx2 fma sse4_2
-> 
-> --- memory ---
-> Mem:           228Gi       5.1Gi       207Gi       3.1Mi        18Gi       223Gi
-> MemTotal:       239308464 kB
-> MemAvailable:   233961008 kB
-> Hugepagesize:       2048 kB
+> ```bash
+> pip install firecrawl-anydoc
 > ```
-> 
-> There is **no AVX-512**. The engine needs AVX2 and FMA and nothing more, the instruction
-> set on any desktop CPU from the last decade.
-> 
-> The storage numbers matter more than the CPU numbers, and one runs against expectation.
-> 
-> ```text
-> --- storage bandwidth, measured ---
-> O_DIRECT cold : 3.2 GB/s     (dd bs=4M iflag=direct after drop_caches)
-> buffered warm : 2.3 GB/s
-> engine, trunk : 5373-6064 MB/s sustained during runs
-> NOTE O_DIRECT is FASTER than buffered here. That is the opposite of the usual
-> expectation, and it is why the engine opens the trunk O_DIRECT.
-> ```
-> 
-> Reading with `O_DIRECT`, bypassing the page cache entirely, is **faster** here than
-> reading through it. That single measurement decided the whole I/O design.
-> 
-> One piece of hygiene, because a loaded machine is easy to measure badly:
-> 
-> ```text
-> --- measurement hygiene ---
-> unattended-upgrades: STOPPED and DISABLED before measurement (was using ~63% of a
->   core during the smoke run).
-> apt-daily.timer and apt-daily-upgrade.timer: DISABLED
-> ```
-> 
-> A background package updater eating most of a core moves a timing by more than most
-> optimisations do, so it goes off before anything is measured.
-> 
-> How much memory does the engine actually need? Multiplying config values by hand gives the
-> wrong answer in an instructive way, which is why `tools/budget.py` exists:
 > 
 > ```python
+> import anydoc
 > 
-> ### Prompt options
 > 
-> Exactly one of these is required. Passing none, or more than one, is a usage error
-> (exit 2).
+> # From a file path:
+> markdown = anydoc.to_markdown("report.docx")
 > 
-> | flag | argument | |
-> |---|---|---|
-> | `--prompt` | `TEXT` | tokenize TEXT and run it. **Requires `--tok`.** |
-> | `--prompt-file` | `PATH` | tokenize the file's bytes. **Requires `--tok`.** Preferred for anything non-ASCII: the shell re-encodes `argv`, whereas a file is read verbatim |
-> | `--ids` | `1,2,3` | token ids directly. No tokenizer is loaded at all, so this works on a machine with no tokenizer files. The reproducible channel the tests use |
+> 
+> # From bytes, with the format detected from the content:
+> markdown = anydoc.to_markdown_bytes(data)
+> 
+> 
+> # Or name it, which signature-less formats (CSV) need:
+> markdown = anydoc.to_markdown_bytes(data, "csv")
+> 
+> 
+> # Or stop at the document model, which also carries embedded assets:
+> document = anydoc.to_document(data)
+> ```
+> 
+> > Full API reference: [python/README.md](python/README.md)
+> 
+> 
+> ### Rust
 > 
 > ```bash
-> 
-> ### Memory options
-> 
-> | flag | argument | default | |
-> |---|---|---|---|
-> | `--preset` | `NAME` | none | `laptop` · `desktop` · `workstation` · `server` · `max`. Sets both budgets below |
-> | `--trunk` | `DIR` | off | the packed trunk directory from step 5. **This is what enables streaming.** Without it the trunk loads fully resident, around 113.5 GB |
-> | `--trunk-gb` | `X` | 16 | budget for pinned layers plus the streaming ring |
-> | `--cache-gb` | `X` | 64 | budget for the routed-expert LRU cache |
-> 
-> `--preset` and the two `-gb` flags set the same two numbers, so a preset is just a
-> shorthand. Order matters if you mix them: a later flag wins, so
-> `--preset server --cache-gb 40` gives you the server trunk budget with a 40 GB cache.
-> 
-> > **`--preset` without `--trunk` does nothing useful.** Every preset assumes the trunk is
-> > streamed. Omit `--trunk` and the engine loads all 113.5 GB resident regardless of the
-> > budget you asked for.
-> 
-> 
-> ### Generation options
-> 
-> | flag | argument | default | |
-> |---|---|---|---|
-> | `--gen` | `N` | 8 | tokens to generate. Ceiling 4096; prompts may be up to 32768 tokens |
-> | `--incremental` | none | off | carry the KV cache and the recurrent state between tokens instead of re-running the whole prefix |
-> | `--tok` | `DIR` | none | directory holding `tiktoken.model` and `tokenizer_config.json` |
-> 
-> **Pass `--incremental` for any generation of length.** Without it every step re-runs the
-> entire prefix, which is *O(T²)*; with it, step 0 pays for the prompt and every later step
-> costs the same fixed amount. Both paths are gated on producing identical tokens, so this
-> is a pure speed choice.
-> 
-> 
-> ### Diagnostic options
-> 
-> | flag | argument | |
-> |---|---|---|
-> | `--config` | `PATH` | model config; defaults to `/config.json` |
-> | `--layers` | `N` | bind only the first N layers, for partial shard sets |
-> | `--out` | `FILE` | JSON results (default `k3_run.json`) |
-> | `--dump-logits` | `PATH` | float32 logits for the first step, for elementwise comparison |
-> | `--dump-cache-trace` | `DIR` | writes `expert_hist.json` and `expert_trace.bin`, which `tools/sim_cache.py` replays |
-> 
-> 
-> # Elementwise logit comparison against the PyTorch reference.
-> ./bin/k3 ~/k3model --trunk ~/k3trunk --preset server \
->          --ids 3,4,5,6,7 --gen 1 --dump-logits /tmp/c_logits.bin
-> python3 tools/cmp_logits.py /tmp/c_logits.bin ref_logits.json
-> 
-> 
-> ## Why the trunk is not quantised
-> 
-> The trunk is 108.81 GB of bfloat16. Quantising it to int8 would halve that, and to int4
-> would quarter it. Every other engine of this shape offers a bit-width knob. This one has
-> exactly two weight types and no knob at all:
-> 
-> ```c
-> enum { K3_WF32 = 0, K3_WBF16 = 1 };
+> cargo add anydoc
 > ```
 > 
-> The reason is that the cost was measured. The study sampled 31 attention tensors from the
-> released checkpoint over HTTP range reads, 384 rows each, quantised with symmetric per-row
-> scaling.
+> ```rust
+> // From a file path:
+> let markdown = anydoc::to_markdown("report.docx")?;
 > 
-> ```text
->   type   tensor                      int8 mean  int4 mean    ratio
->   ------------------------------------------------------------------
->   KDA    L13.o_proj                    0.01188    0.21122    17.8x
->   MLA    L3.kv_b_proj                  0.00736    0.13355    18.2x
->   MLA    L11.o_proj                    0.01399    0.24612    17.6x
->   ------------------------------------------------------------------
->   MEAN over KDA-layer tensors          0.01046    0.18746    17.9x  (n=2)
->   MEAN over MLA-layer tensors          0.00948    0.17154    18.1x  (n=18)
->   MEAN over ALL sampled tensors        0.00961    0.17383    18.1x  (n=31)
-> ```
-> 
-> Int8 costs about one percent and int4 about seventeen, a ratio of 18 that holds across every
-> tensor sampled. And the mean understates the damage, because the tail is much worse.
-> 
-> The worst individual rows at int4 reach 45 percent, 56 percent and **65 percent** relative
-> error. Those are not rounding artefacts.
-> 
-> There is also a strong hint from the model authors. The technical report says the experts
-> are MXFP4 with quantisation-aware training, "while all non-expert components remain in
-> higher precision". That list of non-expert components is exactly this trunk. It was
-> deliberately not quantised, and it was never trained to tolerate four bits.
-> 
-> A lossless stream costs seconds per token, and those seconds are recoverable by giving the
-> engine more RAM,
+> // From bytes, with the format detected from the content:
+> let markdown = anydoc:
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityDev--WilonityLoader|WilonityDev/WilonityLoader]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]] · [[bashalarmistalt--decimen-optical-transfer|bashalarmistalt/decimen-optical-transfer]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
 
-[GitHub](https://github.com/FareedKhan-dev/kimi-k3-in-c) · [官方網站](https://medium.com/@fareedkhandev/building-kimi-k3-in-c-to-run-a-2-8t-model-on-consumer-hardware-a5792cbf3b59)
+[GitHub](https://github.com/firecrawl/anydoc)
 
 ## 相關收錄
 
@@ -409,7 +335,7 @@ A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB o
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "FareedKhan-dev--kimi-k3-in-c"
+> WHERE category = "Other" AND file.name != "firecrawl--anydoc"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -418,7 +344,7 @@ A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB o
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C" AND file.name != "FareedKhan-dev--kimi-k3-in-c" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "firecrawl--anydoc" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -427,18 +353,18 @@ A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB o
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "FareedKhan-dev--kimi-k3-in-c"
+> WHERE week = "2026-W32" AND file.name != "firecrawl--anydoc"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/FareedKhan-dev--kimi-k3-in-c");
+> const me = dv.page("Repos/firecrawl--anydoc");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "FareedKhan-dev--kimi-k3-in-c" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "firecrawl--anydoc" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -454,7 +380,7 @@ A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB o
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "FareedKhan-dev" AND file.name != "FareedKhan-dev--kimi-k3-in-c"
+> WHERE owner = "firecrawl" AND file.name != "firecrawl--anydoc"
 > SORT stars DESC
 > ```
 
@@ -462,7 +388,7 @@ A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB o
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/FareedKhan-dev--kimi-k3-in-c");
+> const me = dv.page("Repos/firecrawl--anydoc");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -479,7 +405,7 @@ A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB o
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/FareedKhan-dev--kimi-k3-in-c");
+> const me = dv.page("Repos/firecrawl--anydoc");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -512,7 +438,7 @@ A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB o
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/FareedKhan-dev--kimi-k3-in-c");
+> const me = dv.page("Repos/firecrawl--anydoc");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -536,7 +462,7 @@ A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB o
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/FareedKhan-dev--kimi-k3-in-c");
+> const me = dv.page("Repos/firecrawl--anydoc");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -573,7 +499,7 @@ A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB o
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/FareedKhan-dev--kimi-k3-in-c");
+> const me = dv.page("Repos/firecrawl--anydoc");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -656,7 +582,7 @@ A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB o
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-04** — 首次收錄
+> **2026-08-05** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -672,5 +598,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-05|2026-08-05]] — 再次上榜，2.1k stars
-- [[2026-08-04|2026-08-04]] — 首次收錄，1.3k stars
+- [[2026-08-05|2026-08-05]] — 首次收錄，1.9k stars

@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio."
 homepage: ""
-stars: 1481
-stars_per_day: 296
-forks: 154
-open_issues: 27
+stars: 1815
+stars_per_day: 303
+forks: 182
+open_issues: 30
 created: 2026-07-29
-pushed_at: 2026-08-03
+pushed_at: 2026-08-04
 first_seen: 2026-08-03
 week: "2026-W32"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-07"
+appearances: 3
+next_review: "2026-08-08"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 3
@@ -42,7 +42,7 @@ last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-03"
-star_history: "2026-08-03:907,2026-08-04:1481"
+star_history: "2026-08-03:907,2026-08-04:1481,2026-08-05:1815"
 tags:
   - github
   - "category/other"
@@ -684,5 +684,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-05|2026-08-05]] — 再次上榜，1.8k stars
 - [[2026-08-04|2026-08-04]] — 再次上榜，1.5k stars
 - [[2026-08-03|2026-08-03]] — 首次收錄，907 stars

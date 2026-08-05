@@ -7,12 +7,12 @@ language: HTML
 license: N/A
 description: "竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。"
 homepage: "https://zhuzhiliao.imsai.cc"
-stars: 946
-stars_per_day: 473
-forks: 120
-open_issues: 48
+stars: 1744
+stars_per_day: 581
+forks: 234
+open_issues: 9
 created: 2026-08-01
-pushed_at: 2026-08-03
+pushed_at: 2026-08-04
 first_seen: 2026-08-04
 week: "2026-W32"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-07"
+appearances: 2
+next_review: "2026-08-08"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 8
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-04"
-star_history: "2026-08-04:946"
+star_history: "2026-08-04:946,2026-08-05:1744"
 tags:
   - github
   - "category/other"
@@ -556,4 +556,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-05|2026-08-05]] — 再次上榜，1.7k stars
 - [[2026-08-04|2026-08-04]] — 首次收錄，946 stars
