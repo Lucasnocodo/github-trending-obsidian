@@ -20,7 +20,7 @@ category: "其他"
 subcategory: "遊戲伺服器"
 release_tag: ""
 install_complexity: "medium"
-status: to-review
+status: archived
 my_rating: 0
 score_confidence: 0
 score_interest: 0
