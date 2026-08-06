@@ -1,19 +1,19 @@
 ---
-repo: trycompai/crm
-url: https://github.com/trycompai/crm
-owner: trycompai
-owner_type: Organization
+repo: thebuggeddev/anatomy
+url: https://github.com/thebuggeddev/anatomy
+owner: thebuggeddev
+owner_type: User
 language: TypeScript
-license: MIT
-description: ""
-homepage: ""
-stars: 6451
-stars_per_day: 1290
-forks: 657
-open_issues: 2
-created: 2026-07-31
-pushed_at: 2026-08-06
-first_seen: 2026-08-02
+license: N/A
+description: "An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol"
+homepage: "https://anatomy-livid.vercel.app"
+stars: 1638
+stars_per_day: 546
+forks: 461
+open_issues: 7
+created: 2026-08-02
+pushed_at: 2026-08-02
+first_seen: 2026-08-06
 week: "2026-W32"
 month: "2026-08"
 category: "Other"
@@ -25,40 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-02
+last_reviewed: 2026-08-06
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
+appearances: 1
 next_review: "2026-08-09"
-contributor_count: 1
+contributor_count: 2
 engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 4460
-readme_length: 9506
+repo_size_kb: 215322
+readme_length: 3438
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-02"
-star_history: "2026-08-02:832,2026-08-03:1926,2026-08-04:3442,2026-08-05:4898,2026-08-06:6451"
+ring_history: "assess@2026-08-06"
+star_history: "2026-08-06:1638"
 tags:
   - github
   - "category/other"
   - "lang/typescript"
-  - org
 aliases:
-  - "crm"
-  - "trycompai/crm"
+  - "anatomy"
+  - "thebuggeddev/anatomy"
 ---
 
-# crm
+# anatomy
 
-**832** stars · **832** stars/天 · 建立 1 天前 · TypeScript · MIT
+**1.6k** stars · **546** stars/天 · 建立 3 天前 · TypeScript · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/trycompai--crm");
+const me = dv.page("Repos/thebuggeddev--anatomy");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +70,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
-
 > [!summary] 一句話摘要
-> No description
+> An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 ## 專案簡介
 
-No description available.
+An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/thebuggeddev--anatomy");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +116,7 @@ No description available.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/thebuggeddev--anatomy");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,256 +140,153 @@ No description available.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 109 |
-| Open Issues | 2 |
+| Forks | 461 |
+| Open Issues | 7 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-01 |
-| 建立日期 | 2026-07-31 |
-| Repo 大小 | 4.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/trycompai/crm) |
+| 最後推送 | 2026-08-02 |
+| 建立日期 | 2026-08-02 |
+| 官方網站 | [Link](https://anatomy-livid.vercel.app) |
+| Repo 大小 | 210.3 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/thebuggeddev/anatomy) |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `@biomejs/biome` `turbo` `typescript`
+> `drizzle-orm` `gsap` `lucide-react` `next` `react` `react-dom` `three` `@cloudflare/vite-plugin` `@cloudflare/workers-types` `@tailwindcss/postcss` `@types/node` `@types/react` `@types/react-dom` `@types/three` `@vitejs/plugin-react`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 91
->     "Python" : 5
->     "HTML" : 3
->     "CSS" : 1
->     "JavaScript" : 1
+>     "TypeScript" : 74
+>     "CSS" : 22
+>     "JavaScript" : 3
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@carhartlewis](https://github.com/carhartlewis) | 28 |
+> | [@thebuggeddev](https://github.com/thebuggeddev) | 5 |
+> | [@codex](https://github.com/codex) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-01 ~ 2026-08-01）
-> **活躍天數** 1 天 · **最新 commit** Refactor task handling and enhance error management in agent scheduling
+> [!abstract] 最近 10 次 commit（2026-08-02 ~ 2026-08-02）
+> **活躍天數** 1 天 · **最新 commit** feat: add Vercel configuration and update build scripts for Next.js integration
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#1](https://github.com/trycompai/crm/issues/1) | Feature Request: Native Clay & Claap Integrations | 0 | 1 |
+> | [#4](https://github.com/thebuggeddev/anatomy/issues/4) | feat: Free static asset hosting alternative to Cloudflare Im | 3 | 0 |
+> | [#3](https://github.com/thebuggeddev/anatomy/issues/3) | Add multilingual support for the app | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> CRM
+> # vinext-starter
 > 
->   An open-source, agentic-first CRM.
->   A durable research agent is the product. The database is just where it writes things down.
+> A clean full-stack starter running on
+> [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
+> Drizzle support.
 > 
->   The agent ·
->   Stack ·
->   Quick start ·
->   Configuration ·
->   Deploying ·
->   Contributing
+> ## Prerequisites
 > 
->   
->   
->   
->   
+> - Node.js `>=22.13.0`
 > 
->   
->     
->     
->   
+> ## Quick Start
 > 
-> ---
-> 
-> 
-> ## Quick start
-> 
-> You need [Bun](https://bun.com) and Docker.
-> 
-> ```sh
-> git clone https://github.com/trycompai/crm.git && cd crm
-> bun install
-> 
-> docker compose up -d          # Postgres on :5432
-> cp .env.example .env          # then fill in the four values below
-> 
-> bun run db:deploy             # apply migrations
-> bun run db:seed               # optional: a believable pipeline to look at
-> bun run dev
+> ```bash
+> npm install
+> npm run dev
+> npm run build
 > ```
 > 
-> The app is on [localhost:3000](http://localhost:3000), the API on
-> [localhost:3001](http://localhost:3001).
+> This starter does not use `wrangler.jsonc`.
 > 
+> ## Included Shape
 > 
-> ## Configuration
+> - edit site code under `app/`
+> - `.openai/hosting.json` declares optional Sites D1 and R2 bindings
+> - `vite.config.ts` simulates declared bindings for local development
+> - `db/schema.ts` starts intentionally empty
+> - `examples/d1/` contains an optional D1 example surface
+> - `drizzle.config.ts` supports local migration generation when needed
 > 
-> **There is one `.env`, at the root of the repo**, read by all three processes. Real
-> environment variables always win, so on a hosting platform you configure it there and
-> the file is purely a local convenience.
+> ## Workspace Auth Headers
 > 
-> Beyond the four required values, everything is optional and the app runs without any
-> of it. [`.env.example`](./.env.example) is the full list with a note on each; the
-> short version:
+> OpenAI workspace sites can read the current user's email from
+> `oai-authenticated-user-email`.
 > 
-> | | |
-> | --- | --- |
-> | `API_URL` / `APP_URL` | Where the two halves are served. Only needed off localhost. |
-> | `PERPLEXITY_API_KEY` | Lets the agent search the open web, with citations. |
-> | `RAPIDAPI_KEY` | Lets the agent read LinkedIn profiles for identity. |
-> | `CONTEXT_DEV_API_KEY` | Company logo, industry and socials from a domain. |
-> | `AGENT_BRIDGE_SECRET` | Lets a rep talk to the agent from a contact's **Agent** tab. |
-> | `REDIS_URL` | A shared cache. Without it, per-instance and in-memory. |
-> | `CRON_SECRET` | Guards the Gmail/Calendar sync route. Required to use it. |
+> SIWC-authenticated workspace sites may also receive
+> `oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
+> `name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
+> `oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
 > 
+> Treat the full name as optional and fall back to email when it is absent:
 > 
-> ## What this is
+> ```tsx
+> import { headers } from "next/headers";
 > 
-> Most CRMs are a database with a form in front of it. The AI ones bolt a chat box onto
-> the side of that form. Both leave the actual work — finding out what is true, and
-> writing it down — to a human who has better things to do.
+> export default async function Home() {
+>   const requestHeaders = await headers();
+>   const email = requestHeaders.get("oai-authenticated-user-email");
+>   const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
+>   const fullName =
+>     encodedFullName &&
+>     requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
+>       "percent-encoded-utf-8"
+>       ? decodeURIComponent(encodedFullName)
+>       : null;
 > 
-> This is built the other way round. **The agent is not a feature of the CRM; the CRM is
-> where the agent keeps its notes.** It runs on its own deployment, on its own schedule,
-> against its own work queue. It decides what to look at next, books its own follow-ups,
-> spends a research budget, and stops when the budget runs out. Nothing about it is
-> request-response: close the browser and it keeps going.
-> 
-> The API deliberately has no intelligence in it at all. NestJS reports that *something
-> happened* — a thread was ingested, a company was created, an attendee is unknown — by
-> writing a row to a queue. The agent leases that row and decides what it means. A Nest
-> service that calls an enrichment API is treated as a bug, and
-> [`docs/api.md`](./docs/api.md) explains the outage that made that a rule.
-> 
-> The rule the agent itself never breaks: **nothing about a person is guessed.** No tool
-> accepts a confidence score, because a model asked to grade its own certainty will, and
-> it will be wrong in the direction that makes it look useful. Tools report what they
-> *observed* — `crm.signature-block`, `github.account-identity` — and a ledger prices the
-> evidence. Strong evidence writes to the record. Weak evidence becomes a suggestion a
-> human settles. A confidently wrong fact about a customer is worse than a blank field,
-> because nobody can tell it is wrong.
-> 
-> It is single-tenant and internal by design. Sign-in is Google, the allow-list is one
-> environment variable, and everyone who gets in can see everything. That is the whole
-> authorisation model — see [SECURITY.md](./SECURITY.md) before you point it at real
-> customer data.
-> 
-> 
-> ## Screenshots
-> 
->   
->     
->       
->         
->         
->       
->       Deals — filters, sort and page live in the URL, so a view is a link.
->     
->     
->       
->         
->         
->       
->       Contacts — most of these were created by the mailbox sync, not typed.
->     
->   
->   
->     
->       
->         
->         
->       
->       Companies — logo, industry and location arrive on their own.
->     
->     
->       
->         
->         
->       
->       Overview — yours or the whole team's, toggled in the URL.
->     
->   
-> 
-> 
-> ## The agent
-> 
-> [`apps/agent`](./apps/agent) is its own deployment, built on
-> [**eve**](https://eve.dev) — Vercel's filesystem-first framework for durable agents.
-> A tool is a file, a skill is a markdown file, a schedule is a file, and the runtime
-> handles the durable part: sessions that survive a redeploy, work that resumes where it
-> stopped.
-> 
-> | | |
-> | --- | --- |
-> | **18 authored tools** | `read_crm_history`, `search_crm`, `identify_contact`, `research_person`, `enrich_company`, `record_fact`, `schedule_recheck`… |
-> | **4 skills** | `evidence.md`, `identity-matching.md`, `data-boundaries.md`, `writing-a-brief.md` — prose the agent reads, versioned like code |
-> | **1 schedule** | `dispatch.ts`, which decides nothing. It leases what is due and starts a session per row. |
-> | **A sandbox** | `bash`, `grep`, `glob` and a `/workspace`, with **`deny-all` egress** |
-> 
-> **It runs itself.** `lib/tasks.ts` is the work queue: `claimDue` leases rows with
-> `FOR UPDATE SKIP LOCKED`, so two dispatchers take disjoint work and a run that dies
-> frees its row when the lease expires. Anything that looks like "every N minutes, the
-> oldest ten contacts" belongs in a task's `dueAt`, not in a cron expression. When the
-> agent wants another look at somebody it calls `schedule_recheck` and says why — and
-> the reason is shown to the rep, because an agent that cannot say why it will be back
-> in fourteen days does not have a reason, it has a default.
-> 
-> **Every outside source is optional, and it is designed to run with none of them.**
-> With no API keys at all it still works: `read_crm_history` reads your own threads,
-> meetings and signature blocks, which is free and is the best evidence there is — no
-> data vendor can sell you a reply from the person's own address. Each key opens one
-> more place to look. It is told at the start of every session which ones this install
-> has, so it plans around what it actually has rather than discovering the gaps one
-> failed call at a time, and it prints the list at startup:
-> 
-> ```
-> [agent] on   LinkedIn (RAPIDAPI_KEY)
-> [agent] off  Web research (PERPLEXITY_API_KEY)
-> [agent] off  Company brand data (CONTEXT_DEV_API_KEY)
+>   const displayName = fullName ?? email;
+>   // ...
+> }
 > ```
 > 
-> **The sandbox has no network and no database.** Turning it on is what gives the model
-> a shell — the difference between a tool-caller and something that can keep a dossier,
-> diff this month's profile against last month's, and grep a thread for a signature
-> block. `deny-all` egress costs nothing, because `web_fetch` runs in the app runtime
-> and `web_search` at the model provider. What it removes is the only path by which a
-> customer's email body could leave through a shell command. The other half of that rule
-> is an absence: **the sandbox is never given `DATABASE_URL`.** A shell with credentials
-> and egress is exfiltration-shaped even in an internal tool; a shell with neither is a
-> text processor.
+> ## Optional Dispatch-Owned ChatGPT Sign-In
 > 
-> **You can talk to it, and watch it work.** Every contact, company and deal has an
-> **Agent** tab — the steps as it takes them, the leads it throws away and why, and its
-> questions answered in place when it cannot decide between two people. Conversations
-> are durable and survive a reload; the record travels in a signed token rather than
-> being bolted onto the front of your message. Set `AGENT_BRIDGE_SECRET` to the same
-> value in both processes to turn it on. Without it the tab reports that it is not
-> configured, and the agent carries on running its own schedule.
+> Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
+> optional or required ChatGPT sign-in:
 > 
-> [`docs/agent.md`](./docs/agent.md) is the full write-up.
+> - Use `getChatGPTUser()` for optional signed-in UI.
+> - Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
+>   anonymous visitors through Sign in with ChatGPT.
+> - Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
+>   browser links or actions.
+> - Pass a same-origin relative `returnTo` path for the destination after sign-in
+>   or sign-out. The helper validates and safely encodes it.
+> - Mark protected pages with `export const dynamic = "force-dynamic"` because
+>   they depend on per-request identity headers.
 > 
+> Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
+> OAuth cookies, and identity header injection. Do not implement app routes for
+> those reserved paths. Routes that do not import and call the helper remain
+> anonymous-compatible.
 > 
-> ## The stack
+> SIWC establishes identity only; it does not prove workspace membership. Use the
+> Sites hosting platform's access policy controls for workspace-wide restrictions,
+> or enforce explicit server-side membership or allowlist checks.
 > 
-> A [Turborepo](https://turborepo.dev) monorepo on [Bun](https://bun.com), deployed on
-> [Vercel](https://vercel.com).
+> Use SIWC for account pages, user-specific dashboards, saved records, and write
+> actions tied to the current ChatGPT user. Leave public content anonymous.
 > 
-> | | |
-> | --- | --- |
-> | **Agent** | [eve](https://eve.dev) — durable sessions, tools, skills, schedules, sandboxes |
-> | **Model** | [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) — no provider SDK, and OIDC on Vercel means no key to manage |
-> | **Sandbox** | [Vercel Sandbox](https://vercel.com/docs/vercel-s
+> ## Useful Commands
+> 
+> - `npm run dev`: start local development
+> - `npm run build`: verify the vinext build output
+> - `npm test`: build the starter and verify its rendered loading skeleton
+> - `npm run db:generate`: generate Drizzle migrations after schema changes
+> 
+> ## Learn More
+> 
+> - [vinext Documentation](https://github.com/cloudflare/vinext)
+> - [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]] · [[bashalarmistalt--decimen-optical-transfer|bashalarmistalt/decimen-optical-transfer]] · [[gavamedia--deltafin|gavamedia/deltafin]] · [[sqliteai--waste|sqliteai/waste]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
 
-[GitHub](https://github.com/trycompai/crm)
+[GitHub](https://github.com/thebuggeddev/anatomy) · [官方網站](https://anatomy-livid.vercel.app)
 
 ## 相關收錄
 
@@ -400,7 +294,7 @@ No description available.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "trycompai--crm"
+> WHERE category = "Other" AND file.name != "thebuggeddev--anatomy"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -409,7 +303,7 @@ No description available.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "trycompai--crm" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "thebuggeddev--anatomy" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -418,18 +312,18 @@ No description available.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "trycompai--crm"
+> WHERE week = "2026-W32" AND file.name != "thebuggeddev--anatomy"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/thebuggeddev--anatomy");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "trycompai--crm" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "thebuggeddev--anatomy" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -445,7 +339,7 @@ No description available.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "trycompai" AND file.name != "trycompai--crm"
+> WHERE owner = "thebuggeddev" AND file.name != "thebuggeddev--anatomy"
 > SORT stars DESC
 > ```
 
@@ -453,7 +347,7 @@ No description available.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/thebuggeddev--anatomy");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -470,7 +364,7 @@ No description available.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/thebuggeddev--anatomy");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -503,7 +397,7 @@ No description available.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/thebuggeddev--anatomy");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -527,7 +421,7 @@ No description available.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/thebuggeddev--anatomy");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -564,7 +458,7 @@ No description available.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/thebuggeddev--anatomy");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -647,7 +541,7 @@ No description available.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-02** — 首次收錄
+> **2026-08-06** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -663,8 +557,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-06|2026-08-06]] — 再次上榜，6.5k stars
-- [[2026-08-05|2026-08-05]] — 再次上榜，4.9k stars
-- [[2026-08-04|2026-08-04]] — 再次上榜，3.4k stars
-- [[2026-08-03|2026-08-03]] — 再次上榜，1.9k stars
-- [[2026-08-02|2026-08-02]] — 首次收錄，832 stars
+- [[2026-08-06|2026-08-06]] — 首次收錄，1.6k stars

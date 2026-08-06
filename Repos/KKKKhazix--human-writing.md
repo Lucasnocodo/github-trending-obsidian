@@ -1,64 +1,67 @@
 ---
-repo: trycompai/crm
-url: https://github.com/trycompai/crm
-owner: trycompai
-owner_type: Organization
-language: TypeScript
+repo: KKKKhazix/human-writing
+url: https://github.com/KKKKhazix/human-writing
+owner: KKKKhazix
+owner_type: User
+language: Python
 license: MIT
-description: ""
+description: "让 AI 写的中文读起来像一个具体的人在说话。通用创作与改稿 Skill，开箱即用。"
 homepage: ""
-stars: 6451
-stars_per_day: 1290
-forks: 657
-open_issues: 2
-created: 2026-07-31
-pushed_at: 2026-08-06
-first_seen: 2026-08-02
+stars: 1230
+stars_per_day: 1230
+forks: 109
+open_issues: 3
+created: 2026-08-05
+pushed_at: 2026-08-05
+first_seen: 2026-08-06
 week: "2026-W32"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v1.1.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-02
+last_reviewed: 2026-08-06
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
+appearances: 1
 next_review: "2026-08-09"
 contributor_count: 1
-engagement: "medium"
+engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 4460
-readme_length: 9506
+repo_size_kb: 67
+readme_length: 2536
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-02"
-star_history: "2026-08-02:832,2026-08-03:1926,2026-08-04:3442,2026-08-05:4898,2026-08-06:6451"
+ring_history: "assess@2026-08-06"
+star_history: "2026-08-06:1230"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
-  - org
+  - "lang/python"
+  - "topic/agent_skills"
+  - "topic/chinese_writing"
+  - "topic/creative_writing"
+  - "topic/writing_skill"
 aliases:
-  - "crm"
-  - "trycompai/crm"
+  - "human-writing"
+  - "KKKKhazix/human-writing"
 ---
 
-# crm
+# human-writing
 
-**832** stars · **832** stars/天 · 建立 1 天前 · TypeScript · MIT
+**1.2k** stars · **1.2k** stars/天 · 建立 1 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/trycompai--crm");
+const me = dv.page("Repos/KKKKhazix--human-writing");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +74,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`個人專案` `v1.1.0`
+
+`agent-skills` `chinese-writing` `creative-writing` `writing-skill`
 
 > [!summary] 一句話摘要
-> No description
+> 让 AI 写的中文读起来像一个具体的人在说话。通用创作与改稿 Skill，开箱即用。
 
 ## 專案簡介
 
-No description available.
+让 AI 写的中文读起来像一个具体的人在说话。通用创作与改稿 Skill，开箱即用。
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/KKKKhazix--human-writing");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +124,7 @@ No description available.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/KKKKhazix--human-writing");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -144,255 +149,152 @@ No description available.
 | 欄位 | 值 |
 | --- | --- |
 | Forks | 109 |
-| Open Issues | 2 |
+| Open Issues | 3 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-01 |
-| 建立日期 | 2026-07-31 |
-| Repo 大小 | 4.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/trycompai/crm) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@biomejs/biome` `turbo` `typescript`
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "TypeScript" : 91
->     "Python" : 5
->     "HTML" : 3
->     "CSS" : 1
->     "JavaScript" : 1
-> ```
+| 最後推送 | 2026-08-05 |
+| 建立日期 | 2026-08-05 |
+| Repo 大小 | 67 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/KKKKhazix/human-writing) |
+| Topics | `agent-skills` `chinese-writing` `creative-writing` `writing-skill` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@carhartlewis](https://github.com/carhartlewis) | 28 |
+> | [@KKKKhazix](https://github.com/KKKKhazix) | 7 |
+
+**最新版本**：v1.1.0 — 活人感写作 1.1.0 (2026-08-05)
+
+> [!info]- Release Notes
+> 1.0 靠字符串禁令拦 AI 味——禁掉「不是……而是……」、禁冒号、禁一批黑话。能拦住最明显的那层，但模型换个马甲继续做一模一样的事。
+> 
+> 1.1 把防线从字面挪到动作。
+> 
+> **规则层面**：禁的不再是某几个字，而是「先给读者立一个他没有的误解再推翻它」这个动作本身——翻案腔换什么外衣都拦。同时新增了排比、抒情借喻和名词化的禁令，冒号改成分级（引原话的放行，「一句话总结：」式的继续拦）。三处条文互相打架的地方也修了。
+> 
+> **检测脚本**：补了变形翻案句、三连排比、AI 抒情词、名词化句式的警告层，加了句长变异系数和连词密度的统计检查。反过来，「不丢人」「打法」「想象空间」这些正常中文从误伤名单里捞出来了。
+> 
+> **新东西**：出了一个两千字以内的蒸馏版（`dist/human-writing-lite.md`），ChatGPT、千问办公、WorkBuddy 这类聊天窗口直接粘贴就能用。
+> 
+> 完整变更见 [CHANGELOG.md](https://github.com/KKKKhazix/human-writing/blob/main/CHANGELOG.md)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-01 ~ 2026-08-01）
-> **活躍天數** 1 天 · **最新 commit** Refactor task handling and enhance error management in agent scheduling
+> [!abstract] 最近 10 次 commit（2026-08-05 ~ 2026-08-05）
+> **活躍天數** 1 天 · **最新 commit** docs: 重写 README，去掉产品说明书腔
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#1](https://github.com/trycompai/crm/issues/1) | Feature Request: Native Clay & Claap Integrations | 0 | 1 |
+> | [#3](https://github.com/KKKKhazix/human-writing/issues/3) | Is there a English version？ | 0 | 0 |
+> | [#2](https://github.com/KKKKhazix/human-writing/issues/2) | feat: 增加产品案例与个人作品集项目故事的专用写作分支 | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> CRM
+> 快速安装 ·
+>   写作流程 ·
+>   仓库结构 ·
+>   提交问题
 > 
->   An open-source, agentic-first CRM.
->   A durable research agent is the product. The database is just where it writes things down.
+> > AI 写中文有个通病：读完觉得挺流畅，但说不出是谁写的。活人感写作想治的就是这件事。
 > 
->   The agent ·
->   Stack ·
->   Quick start ·
->   Configuration ·
->   Deploying ·
->   Contributing
+> 让模型写出来的文章读起来像一个具体的人在说话——知道一些事，有判断，偶尔岔开一句，还能接回来。适用于知乎回答、公众号文章、博客、论坛帖、人物故事、科普、评测、小说、口播等大多数中文写作场景。
 > 
->   
->   
->   
->   
+> ## 它做什么
 > 
->   
->     
->     
->   
+> 写作之前先解决一个前置问题：你手上有没有东西可写。
 > 
-> ---
+> 现实题材，材料不够就去查，查不到就追问或者缩短篇幅，绝不拿车轱辘话凑字数。虚构题材可以自由创造人物和情节，但每个场景仍然要有目标、有动作、有变化。
 > 
+> 材料过关之后管三件事：
 > 
-> ## Quick start
+> | 材料 | 推进 | 中文 |
+> | :--- | :--- | :--- |
+> | 现实写作核准事实、数字、引语和亲历。虚构写作检查人物、行动与因果。 | 每段都要带来新东西——新事实、新动作、新例子或新后果。写过的不重复。 | 白话打底，在意词序和停顿，清掉报告腔、模型腔和翻案句。 |
 > 
-> You need [Bun](https://bun.com) and Docker.
+> 初稿写完还有一道关。Skill 会逐段检查有没有在原地转圈，砍掉重复解释，调整长短句节奏，拦住冒号滥用、破折号、「不是……而是……」之类的翻案腔和常见 AI 黑话。检查脚本只管已经写明的硬规则，不替你决定风格。
 > 
-> ```sh
-> git clone https://github.com/trycompai/crm.git && cd crm
-> bun install
+> ## 快速安装
 > 
-> docker compose up -d          # Postgres on :5432
-> cp .env.example .env          # then fill in the four values below
+> 把下面这句话发给你的 Agent。
 > 
-> bun run db:deploy             # apply migrations
-> bun run db:seed               # optional: a believable pipeline to look at
-> bun run dev
+> ```bash
+> 帮我安装这个skill：https://github.com/KKKKhazix/human-writing
 > ```
 > 
-> The app is on [localhost:3000](http://localhost:3000), the API on
-> [localhost:3001](http://localhost:3001).
+> Agent 会读取仓库、找到 `human-writing`，完成安装。装好之后显示名为「活人感写作」。
 > 
+> Agent 不支持直接安装时
 > 
-> ## Configuration
+> 从 [Releases](https://github.com/KKKKhazix/human-writing/releases/latest) 下载，或者把仓库里的 [`human-writing`](./human-writing) 文件夹完整复制到本机 Skills 目录。文件夹名保留 `human-writing`。
 > 
-> **There is one `.env`, at the root of the repo**, read by all three processes. Real
-> environment variables always win, so on a hosting platform you configure it there and
-> the file is purely a local convenience.
-> 
-> Beyond the four required values, everything is optional and the app runs without any
-> of it. [`.env.example`](./.env.example) is the full list with a note on each; the
-> short version:
-> 
-> | | |
-> | --- | --- |
-> | `API_URL` / `APP_URL` | Where the two halves are served. Only needed off localhost. |
-> | `PERPLEXITY_API_KEY` | Lets the agent search the open web, with citations. |
-> | `RAPIDAPI_KEY` | Lets the agent read LinkedIn profiles for identity. |
-> | `CONTEXT_DEV_API_KEY` | Company logo, industry and socials from a domain. |
-> | `AGENT_BRIDGE_SECRET` | Lets a rep talk to the agent from a contact's **Agent** tab. |
-> | `REDIS_URL` | A shared cache. Without it, per-instance and in-memory. |
-> | `CRON_SECRET` | Guards the Gmail/Calendar sync route. Required to use it. |
-> 
-> 
-> ## What this is
-> 
-> Most CRMs are a database with a form in front of it. The AI ones bolt a chat box onto
-> the side of that form. Both leave the actual work — finding out what is true, and
-> writing it down — to a human who has better things to do.
-> 
-> This is built the other way round. **The agent is not a feature of the CRM; the CRM is
-> where the agent keeps its notes.** It runs on its own deployment, on its own schedule,
-> against its own work queue. It decides what to look at next, books its own follow-ups,
-> spends a research budget, and stops when the budget runs out. Nothing about it is
-> request-response: close the browser and it keeps going.
-> 
-> The API deliberately has no intelligence in it at all. NestJS reports that *something
-> happened* — a thread was ingested, a company was created, an attendee is unknown — by
-> writing a row to a queue. The agent leases that row and decides what it means. A Nest
-> service that calls an enrichment API is treated as a bug, and
-> [`docs/api.md`](./docs/api.md) explains the outage that made that a rule.
-> 
-> The rule the agent itself never breaks: **nothing about a person is guessed.** No tool
-> accepts a confidence score, because a model asked to grade its own certainty will, and
-> it will be wrong in the direction that makes it look useful. Tools report what they
-> *observed* — `crm.signature-block`, `github.account-identity` — and a ledger prices the
-> evidence. Strong evidence writes to the record. Weak evidence becomes a suggestion a
-> human settles. A confidently wrong fact about a customer is worse than a blank field,
-> because nobody can tell it is wrong.
-> 
-> It is single-tenant and internal by design. Sign-in is Google, the allow-list is one
-> environment variable, and everyone who gets in can see everything. That is the whole
-> authorisation model — see [SECURITY.md](./SECURITY.md) before you point it at real
-> customer data.
-> 
-> 
-> ## Screenshots
-> 
->   
->     
->       
->         
->         
->       
->       Deals — filters, sort and page live in the URL, so a view is a link.
->     
->     
->       
->         
->         
->       
->       Contacts — most of these were created by the mailbox sync, not typed.
->     
->   
->   
->     
->       
->         
->         
->       
->       Companies — logo, industry and location arrive on their own.
->     
->     
->       
->         
->         
->       
->       Overview — yours or the whole team's, toggled in the URL.
->     
->   
-> 
-> 
-> ## The agent
-> 
-> [`apps/agent`](./apps/agent) is its own deployment, built on
-> [**eve**](https://eve.dev) — Vercel's filesystem-first framework for durable agents.
-> A tool is a file, a skill is a markdown file, a schedule is a file, and the runtime
-> handles the durable part: sessions that survive a redeploy, work that resumes where it
-> stopped.
-> 
-> | | |
-> | --- | --- |
-> | **18 authored tools** | `read_crm_history`, `search_crm`, `identify_contact`, `research_person`, `enrich_company`, `record_fact`, `schedule_recheck`… |
-> | **4 skills** | `evidence.md`, `identity-matching.md`, `data-boundaries.md`, `writing-a-brief.md` — prose the agent reads, versioned like code |
-> | **1 schedule** | `dispatch.ts`, which decides nothing. It leases what is due and starts a session per row. |
-> | **A sandbox** | `bash`, `grep`, `glob` and a `/workspace`, with **`deny-all` egress** |
-> 
-> **It runs itself.** `lib/tasks.ts` is the work queue: `claimDue` leases rows with
-> `FOR UPDATE SKIP LOCKED`, so two dispatchers take disjoint work and a run that dies
-> frees its row when the lease expires. Anything that looks like "every N minutes, the
-> oldest ten contacts" belongs in a task's `dueAt`, not in a cron expression. When the
-> agent wants another look at somebody it calls `schedule_recheck` and says why — and
-> the reason is shown to the rep, because an agent that cannot say why it will be back
-> in fourteen days does not have a reason, it has a default.
-> 
-> **Every outside source is optional, and it is designed to run with none of them.**
-> With no API keys at all it still works: `read_crm_history` reads your own threads,
-> meetings and signature blocks, which is free and is the best evidence there is — no
-> data vendor can sell you a reply from the person's own address. Each key opens one
-> more place to look. It is told at the start of every session which ones this install
-> has, so it plans around what it actually has rather than discovering the gaps one
-> failed call at a time, and it prints the list at startup:
-> 
-> ```
-> [agent] on   LinkedIn (RAPIDAPI_KEY)
-> [agent] off  Web research (PERPLEXITY_API_KEY)
-> [agent] off  Company brand data (CONTEXT_DEV_API_KEY)
+> ```text
+> ~/.agents/skills/human-writing/
 > ```
 > 
-> **The sandbox has no network and no database.** Turning it on is what gives the model
-> a shell — the difference between a tool-caller and something that can keep a dossier,
-> diff this month's profile against last month's, and grep a thread for a signature
-> block. `deny-all` egress costs nothing, because `web_fetch` runs in the app runtime
-> and `web_search` at the model provider. What it removes is the only path by which a
-> customer's email body could leave through a shell command. The other half of that rule
-> is an absence: **the sandbox is never given `DATABASE_URL`.** A shell with credentials
-> and egress is exfiltration-shaped even in an internal tool; a shell with neither is a
-> text processor.
+> 装好之后这样用：
 > 
-> **You can talk to it, and watch it work.** Every contact, company and deal has an
-> **Agent** tab — the steps as it takes them, the leads it throws away and why, and its
-> questions answered in place when it cannot decide between two people. Conversations
-> are durable and survive a reload; the record travels in a signed token rather than
-> being bolted onto the front of your message. Set `AGENT_BRIDGE_SECRET` to the same
-> value in both processes to turn it on. Without it the tab reports that it is not
-> configured, and the agent carries on running its own schedule.
+> ```text
+> 使用 $human-writing，把我的材料写成一篇有活人感和中文韵律的作品。
+> ```
 > 
-> [`docs/agent.md`](./docs/agent.md) is the full write-up.
+> ## 1.1.0 改了什么
 > 
+> 1.0 用字符串禁令拦 AI 味——禁「不是……而是……」、禁冒号、禁一批黑话。有效，但模型会换一套字面继续做同样的事。「你以为……其实……」「回头才发现」和「不是A而是B」是同一个姿势，读者认的是姿势，不是字。
 > 
-> ## The stack
+> 1.1 把防线从字面挪到动作：禁的是「先给读者立一个他没有的误解，再推翻它」这件事本身，不管穿什么外衣。检测脚本也跟着升级，补了变形翻案句、AI 排比、抒情借喻的警告层，加了句长变异系数和连词密度的统计检查，同时把「不丢人」「打法」这类正常中文从误伤名单里捞出来。另外出了一个两千字的蒸馏版，ChatGPT、千问这类聊天窗口直接粘贴就能用。
 > 
-> A [Turborepo](https://turborepo.dev) monorepo on [Bun](https://bun.com), deployed on
-> [Vercel](https://vercel.com).
+> 完整变更见 [CHANGELOG.md](./CHANGELOG.md)。
 > 
-> | | |
-> | --- | --- |
-> | **Agent** | [eve](https://eve.dev) — durable sessions, tools, skills, schedules, sandboxes |
-> | **Model** | [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) — no provider SDK, and OIDC on Vercel means no key to manage |
-> | **Sandbox** | [Vercel Sandbox](https://vercel.com/docs/vercel-s
+> ## 仓库结构
+> 
+> 展开查看完整目录
+> 
+> ```text
+> human-writing/
+> ├── SKILL.md
+> ├── VERSION
+> ├── LICENSE
+> ├── agents/
+> │   └── openai.yaml
+> ├── dist/
+> │   └── human-writing-lite.md
+> ├── references/
+> │   ├── forum-prose.md
+> │   ├── reality.md
+> │   ├── fiction.md
+> │   ├── formats.md
+> │   └── revision.md
+> └── scripts/
+>     └── check_prose.py
+> ```
+> 
+> | 位置 | 干什么的 |
+> | :--- | :--- |
+> | [`SKILL.md`](./human-writing/SKILL.md) | 入口。材料门槛、现实与虚构分流、写作流程、交付禁令，全在这一份里 |
+> | [`forum-prose.md`](./human-writing/references/forum-prose.md) | 知乎、公众号、论坛长帖的写法，节奏和措辞的具体做法都在这里 |
+> | [`reality.md`](./human-writing/references/reality.md) | 真人、历史、新闻、数据和个人经历的事实边界 |
+> | [`fiction.md`](./human-writing/references/fiction.md) | 小说、故事、虚构散文和对白的创作规则 |
+> | [`formats.md`](./human-writing/references/formats.md) | 短内容、口播、演讲、教程、评测等特殊形式 |
+> | [`revision.md`](./human-writing/references/revision.md) | 初稿写完之后怎么改——逐遍检查清单 |
+> | [`check_prose.py`](./human-writing/scripts/check_prose.py) | 检查成稿有没有踩到硬禁令 |
+> | [`human-writing-lite.md`](./human-writing/dist/human-writing-lite.md) | 蒸馏版，两千字以内，聊天窗口直接粘贴用 |
+> 
+> ## 反馈
+> 
+> MIT 协议开源。仓库只有原创规则和工具，没有第三方文章、训练语料或模型权重。
+> 
+> 碰到规则冲突、误报或者某个模型上表现不对，欢迎[提 Issue](https://github.com/KKKKhazix/human-writing/issues)。附上你的提示词、模型输出片段和你觉得应该是什么样，排查起来快很多。
+> 
+>   活人感写作 · Human Writing · 1.1.0
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]] · [[bashalarmistalt--decimen-optical-transfer|bashalarmistalt/decimen-optical-transfer]] · [[gavamedia--deltafin|gavamedia/deltafin]] · [[sqliteai--waste|sqliteai/waste]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
 
-[GitHub](https://github.com/trycompai/crm)
+[GitHub](https://github.com/KKKKhazix/human-writing)
 
 ## 相關收錄
 
@@ -400,7 +302,7 @@ No description available.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "trycompai--crm"
+> WHERE category = "Other" AND file.name != "KKKKhazix--human-writing"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -409,7 +311,7 @@ No description available.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "trycompai--crm" AND status != "archived"
+> WHERE language = "Python" AND file.name != "KKKKhazix--human-writing" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -418,18 +320,18 @@ No description available.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "trycompai--crm"
+> WHERE week = "2026-W32" AND file.name != "KKKKhazix--human-writing"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/KKKKhazix--human-writing");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "trycompai--crm" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "KKKKhazix--human-writing" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -445,7 +347,7 @@ No description available.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "trycompai" AND file.name != "trycompai--crm"
+> WHERE owner = "KKKKhazix" AND file.name != "KKKKhazix--human-writing"
 > SORT stars DESC
 > ```
 
@@ -453,7 +355,7 @@ No description available.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/KKKKhazix--human-writing");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -470,7 +372,7 @@ No description available.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/KKKKhazix--human-writing");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -503,7 +405,7 @@ No description available.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/KKKKhazix--human-writing");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -527,7 +429,7 @@ No description available.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/KKKKhazix--human-writing");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -564,7 +466,7 @@ No description available.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/trycompai--crm");
+> const me = dv.page("Repos/KKKKhazix--human-writing");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -647,7 +549,7 @@ No description available.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-02** — 首次收錄
+> **2026-08-06** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -663,8 +565,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-06|2026-08-06]] — 再次上榜，6.5k stars
-- [[2026-08-05|2026-08-05]] — 再次上榜，4.9k stars
-- [[2026-08-04|2026-08-04]] — 再次上榜，3.4k stars
-- [[2026-08-03|2026-08-03]] — 再次上榜，1.9k stars
-- [[2026-08-02|2026-08-02]] — 首次收錄，832 stars
+- [[2026-08-06|2026-08-06]] — 首次收錄，1.2k stars
