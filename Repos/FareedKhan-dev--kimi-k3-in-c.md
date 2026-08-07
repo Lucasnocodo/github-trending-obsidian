@@ -7,12 +7,12 @@ language: C
 license: Apache-2.0
 description: "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU."
 homepage: "https://medium.com/@fareedkhandev/building-kimi-k3-in-c-to-run-a-2-8t-model-on-consumer-hardware-a5792cbf3b59"
-stars: 2612
-stars_per_day: 653
-forks: 433
-open_issues: 9
+stars: 2889
+stars_per_day: 578
+forks: 483
+open_issues: 2
 created: 2026-08-01
-pushed_at: 2026-08-01
+pushed_at: 2026-08-06
 first_seen: 2026-08-04
 week: "2026-W32"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-08-09"
+appearances: 4
+next_review: "2026-08-10"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-04"
-star_history: "2026-08-04:1319,2026-08-05:2097,2026-08-06:2612"
+star_history: "2026-08-04:1319,2026-08-05:2097,2026-08-06:2612,2026-08-07:2889"
 tags:
   - github
   - "category/other"
@@ -672,6 +672,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-07|2026-08-07]] — 再次上榜，2.9k stars
 - [[2026-08-06|2026-08-06]] — 再次上榜，2.6k stars
 - [[2026-08-05|2026-08-05]] — 再次上榜，2.1k stars
 - [[2026-08-04|2026-08-04]] — 首次收錄，1.3k stars

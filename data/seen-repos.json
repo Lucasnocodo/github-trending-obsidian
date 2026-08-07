@@ -3305,10 +3305,10 @@
   },
   "trycompai/crm": {
     "first_seen": "2026-08-02",
-    "last_seen": "2026-08-06",
-    "times_seen": 5,
+    "last_seen": "2026-08-07",
+    "times_seen": 6,
     "stars_first": 832,
-    "stars_last": 6451
+    "stars_last": 7241
   },
   "sqliteai/waste": {
     "first_seen": "2026-08-02",
@@ -3347,51 +3347,65 @@
   },
   "FareedKhan-dev/kimi-k3-in-c": {
     "first_seen": "2026-08-04",
-    "last_seen": "2026-08-06",
-    "times_seen": 3,
+    "last_seen": "2026-08-07",
+    "times_seen": 4,
     "stars_first": 1319,
-    "stars_last": 2612
+    "stars_last": 2889
   },
   "DannyMac180/sol-advisor": {
     "first_seen": "2026-08-04",
-    "last_seen": "2026-08-06",
-    "times_seen": 3,
+    "last_seen": "2026-08-07",
+    "times_seen": 4,
     "stars_first": 1064,
-    "stars_last": 1489
+    "stars_last": 1718
   },
   "imsai-sh/zhuzhiliao": {
     "first_seen": "2026-08-04",
-    "last_seen": "2026-08-06",
-    "times_seen": 3,
+    "last_seen": "2026-08-07",
+    "times_seen": 4,
     "stars_first": 946,
-    "stars_last": 2101
+    "stars_last": 2314
   },
   "firecrawl/anydoc": {
     "first_seen": "2026-08-05",
-    "last_seen": "2026-08-06",
-    "times_seen": 2,
+    "last_seen": "2026-08-07",
+    "times_seen": 3,
     "stars_first": 1867,
-    "stars_last": 5444
+    "stars_last": 8832
   },
   "genspark-ai/genoffice": {
     "first_seen": "2026-08-05",
-    "last_seen": "2026-08-06",
-    "times_seen": 2,
+    "last_seen": "2026-08-07",
+    "times_seen": 3,
     "stars_first": 1400,
-    "stars_last": 1832
+    "stars_last": 2069
   },
   "thebuggeddev/anatomy": {
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06",
-    "times_seen": 1,
+    "last_seen": "2026-08-07",
+    "times_seen": 2,
     "stars_first": 1638,
-    "stars_last": 1638
+    "stars_last": 1878
   },
   "KKKKhazix/human-writing": {
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06",
-    "times_seen": 1,
+    "last_seen": "2026-08-07",
+    "times_seen": 2,
     "stars_first": 1230,
-    "stars_last": 1230
+    "stars_last": 1663
+  },
+  "Binaryify/open-kimi-ppt-skill": {
+    "first_seen": "2026-08-07",
+    "last_seen": "2026-08-07",
+    "times_seen": 1,
+    "stars_first": 1456,
+    "stars_last": 1456
+  },
+  "ZzzLc0405/photo-abstract-editorial": {
+    "first_seen": "2026-08-07",
+    "last_seen": "2026-08-07",
+    "times_seen": 1,
+    "stars_first": 1092,
+    "stars_last": 1092
   }
 }

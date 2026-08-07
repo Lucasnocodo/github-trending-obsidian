@@ -1,19 +1,19 @@
 ---
-repo: thebuggeddev/anatomy
-url: https://github.com/thebuggeddev/anatomy
-owner: thebuggeddev
+repo: ZzzLc0405/photo-abstract-editorial
+url: https://github.com/ZzzLc0405/photo-abstract-editorial
+owner: ZzzLc0405
 owner_type: User
-language: TypeScript
+language: N/A
 license: N/A
-description: "An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol"
-homepage: "https://anatomy-livid.vercel.app"
-stars: 1878
-stars_per_day: 470
-forks: 538
-open_issues: 16
-created: 2026-08-02
-pushed_at: 2026-08-02
-first_seen: 2026-08-06
+description: ""
+homepage: ""
+stars: 1092
+stars_per_day: 546
+forks: 58
+open_issues: 1
+created: 2026-08-04
+pushed_at: 2026-08-04
+first_seen: 2026-08-07
 week: "2026-W32"
 month: "2026-08"
 category: "Other"
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-06
+last_reviewed: 2026-08-07
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-08-10"
-contributor_count: 2
-engagement: "medium"
+contributor_count: 1
+engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 215322
-readme_length: 3438
+repo_size_kb: 4847
+readme_length: 1533
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-06"
-star_history: "2026-08-06:1638,2026-08-07:1878"
+ring_history: "assess@2026-08-07"
+star_history: "2026-08-07:1092"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/other"
 aliases:
-  - "anatomy"
-  - "thebuggeddev/anatomy"
+  - "photo-abstract-editorial"
+  - "ZzzLc0405/photo-abstract-editorial"
 ---
 
-# anatomy
+# photo-abstract-editorial
 
-**1.6k** stars · **546** stars/天 · 建立 3 天前 · TypeScript · 未標註授權
+**1.1k** stars · **546** stars/天 · 建立 2 天前 · N/A · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/thebuggeddev--anatomy");
+const me = dv.page("Repos/ZzzLc0405--photo-abstract-editorial");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`個人專案`
+
 > [!summary] 一句話摘要
-> An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
+> No description
 
 ## 專案簡介
 
-An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/ZzzLc0405--photo-abstract-editorial");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +118,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/ZzzLc0405--photo-abstract-editorial");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,153 +142,89 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 461 |
-| Open Issues | 7 |
+| Forks | 58 |
+| Open Issues | 1 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-02 |
-| 建立日期 | 2026-08-02 |
-| 官方網站 | [Link](https://anatomy-livid.vercel.app) |
-| Repo 大小 | 210.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/thebuggeddev/anatomy) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `drizzle-orm` `gsap` `lucide-react` `next` `react` `react-dom` `three` `@cloudflare/vite-plugin` `@cloudflare/workers-types` `@tailwindcss/postcss` `@types/node` `@types/react` `@types/react-dom` `@types/three` `@vitejs/plugin-react`
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "TypeScript" : 74
->     "CSS" : 22
->     "JavaScript" : 3
-> ```
+| 最後推送 | 2026-08-04 |
+| 建立日期 | 2026-08-04 |
+| Repo 大小 | 4.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/ZzzLc0405/photo-abstract-editorial) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@thebuggeddev](https://github.com/thebuggeddev) | 5 |
-> | [@codex](https://github.com/codex) | 1 |
+> | [@ZzzLc0405](https://github.com/ZzzLc0405) | 2 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-02 ~ 2026-08-02）
-> **活躍天數** 1 天 · **最新 commit** feat: add Vercel configuration and update build scripts for Next.js integration
+> [!abstract] 最近 10 次 commit（2026-08-04 ~ 2026-08-04）
+> **活躍天數** 1 天 · **最新 commit** Add usage and customization guide
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#4](https://github.com/thebuggeddev/anatomy/issues/4) | feat: Free static asset hosting alternative to Cloudflare Im | 3 | 0 |
-> | [#3](https://github.com/thebuggeddev/anatomy/issues/3) | Add multilingual support for the app | 0 | 0 |
+> | [#1](https://github.com/ZzzLc0405/photo-abstract-editorial/issues/1) | Codex Skills 创建图片问题 | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # vinext-starter
+> # Photo Abstract Editorial
 > 
-> A clean full-stack starter running on
-> [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-> Drizzle support.
+> 将一张照片转化为“原始摄影区域 + 抽象记忆面板 + 诗意英文标题”的竖向编辑作品的 Codex Skill。它保留照片的真实内容，并仅从照片本身提炼空间关系、构图节奏和色彩关系；它不是滤镜、照片重画或风格迁移。
 > 
-> ## Prerequisites
+> The skill includes the complete prompt in both Chinese and English.
 > 
-> - Node.js `>=22.13.0`
+> ## 使用方法
 > 
-> ## Quick Start
+> 1. 将整个 `photo-abstract-editorial` 文件夹复制到你的 Codex skills 目录，例如 `~/.codex/skills/`。
+> 2. 开启新的 Codex 对话，上传一张希望处理的照片。
+> 3. 直接提出需求，例如：
 > 
-> ```bash
-> npm install
-> npm run dev
-> npm run build
+>    > 使用 `photo-abstract-editorial` 将这张照片制作成摄影与抽象面板组合的编辑作品。
+> 
+> 4. Skill 会将原图保留在成品的上方或主要区域，并在下方创建由原图关系推导出的极简抽象面板。成品中只保留一个原创英文标题（可选副标题）。
+> 
+> 也可以直接打开下列文件，并将其作为图像生成提示词使用：
+> 
+> - 中文版：[references/photo-abstract-editorial-prompt.zh-CN.md](references/photo-abstract-editorial-prompt.zh-CN.md)
+> - English version: [references/photo-abstract-editorial-prompt.en.md](references/photo-abstract-editorial-prompt.en.md)
+> 
+> ## 可自由调整的部分
+> 
+> 这套提示词应当被视为高质量起点，而不是不可变的版式规范。请按自己的审美和项目需求修改以下参数：
+> 
+> - **照片与面板的比例**：可调整摄影区域和抽象面板的高度占比、画布比例，以及抽象母题的大小与留白。
+> - **颜色**：可修改象牙色面板背景、照片提取色的饱和度、主色与强调色的数量和倾向。
+> - **抽象形式**：可选择或混合色块、柔和有机质量、弧形笔触、短条、层叠色带、简化建筑质量、细线、点状标记等形式。
+> - **版式与文字**：可调整母题位置、标题位置、字体气质、标题长度和是否使用副标题。
+> - **抽象程度**：可根据题材在“关系优先”和“保留少量身份特征”之间调整，例如让地标建筑或小型物件保留更多辨识线索。
+> 
+> 调整时建议保留两条核心原则：
+> 
+> 1. 上传照片始终是唯一内容来源，照片区域不应被重画、扩展或改写。
+> 2. 抽象面板中的每个重要元素都应能追溯到原照片中真实存在的空间、色彩或结构事实。
+> 
+> ## 内容结构
+> 
+> ```text
+> photo-abstract-editorial/
+> ├── SKILL.md                         # Skill 工作流程与约束
+> ├── agents/openai.yaml               # Codex 界面元数据
+> ├── references/
+> │   ├── photo-abstract-editorial-prompt.zh-CN.md
+> │   └── photo-abstract-editorial-prompt.en.md
+> └── assets/examples/                 # 5 张示例图片
 > ```
 > 
-> This starter does not use `wrangler.jsonc`.
-> 
-> ## Included Shape
-> 
-> - edit site code under `app/`
-> - `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-> - `vite.config.ts` simulates declared bindings for local development
-> - `db/schema.ts` starts intentionally empty
-> - `examples/d1/` contains an optional D1 example surface
-> - `drizzle.config.ts` supports local migration generation when needed
-> 
-> ## Workspace Auth Headers
-> 
-> OpenAI workspace sites can read the current user's email from
-> `oai-authenticated-user-email`.
-> 
-> SIWC-authenticated workspace sites may also receive
-> `oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-> `name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-> `oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-> 
-> Treat the full name as optional and fall back to email when it is absent:
-> 
-> ```tsx
-> import { headers } from "next/headers";
-> 
-> export default async function Home() {
->   const requestHeaders = await headers();
->   const email = requestHeaders.get("oai-authenticated-user-email");
->   const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
->   const fullName =
->     encodedFullName &&
->     requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
->       "percent-encoded-utf-8"
->       ? decodeURIComponent(encodedFullName)
->       : null;
-> 
->   const displayName = fullName ?? email;
->   // ...
-> }
-> ```
-> 
-> ## Optional Dispatch-Owned ChatGPT Sign-In
-> 
-> Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-> optional or required ChatGPT sign-in:
-> 
-> - Use `getChatGPTUser()` for optional signed-in UI.
-> - Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
->   anonymous visitors through Sign in with ChatGPT.
-> - Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
->   browser links or actions.
-> - Pass a same-origin relative `returnTo` path for the destination after sign-in
->   or sign-out. The helper validates and safely encodes it.
-> - Mark protected pages with `export const dynamic = "force-dynamic"` because
->   they depend on per-request identity headers.
-> 
-> Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-> OAuth cookies, and identity header injection. Do not implement app routes for
-> those reserved paths. Routes that do not import and call the helper remain
-> anonymous-compatible.
-> 
-> SIWC establishes identity only; it does not prove workspace membership. Use the
-> Sites hosting platform's access policy controls for workspace-wide restrictions,
-> or enforce explicit server-side membership or allowlist checks.
-> 
-> Use SIWC for account pages, user-specific dashboards, saved records, and write
-> actions tied to the current ChatGPT user. Leave public content anonymous.
-> 
-> ## Useful Commands
-> 
-> - `npm run dev`: start local development
-> - `npm run build`: verify the vinext build output
-> - `npm test`: build the starter and verify its rendered loading skeleton
-> - `npm run db:generate`: generate Drizzle migrations after schema changes
-> 
-> ## Learn More
-> 
-> - [vinext Documentation](https://github.com/cloudflare/vinext)
-> - [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+> `assets/examples` 中的图片仅用于理解预期输入类型；除非用户上传该图片本身，否则不要将其中的主题、色彩或构图复用于新的作品。
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]] · [[KKKKhazix--human-writing|KKKKhazix/human-writing]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityDev--WilonityLoader|WilonityDev/WilonityLoader]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]]
 
-[GitHub](https://github.com/thebuggeddev/anatomy) · [官方網站](https://anatomy-livid.vercel.app)
+[GitHub](https://github.com/ZzzLc0405/photo-abstract-editorial)
 
 ## 相關收錄
 
@@ -294,7 +232,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "thebuggeddev--anatomy"
+> WHERE category = "Other" AND file.name != "ZzzLc0405--photo-abstract-editorial"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -303,7 +241,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "thebuggeddev--anatomy" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "ZzzLc0405--photo-abstract-editorial" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -312,18 +250,18 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "thebuggeddev--anatomy"
+> WHERE week = "2026-W32" AND file.name != "ZzzLc0405--photo-abstract-editorial"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/ZzzLc0405--photo-abstract-editorial");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "thebuggeddev--anatomy" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "ZzzLc0405--photo-abstract-editorial" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -339,7 +277,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "thebuggeddev" AND file.name != "thebuggeddev--anatomy"
+> WHERE owner = "ZzzLc0405" AND file.name != "ZzzLc0405--photo-abstract-editorial"
 > SORT stars DESC
 > ```
 
@@ -347,7 +285,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/ZzzLc0405--photo-abstract-editorial");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -364,7 +302,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/ZzzLc0405--photo-abstract-editorial");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -397,7 +335,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/ZzzLc0405--photo-abstract-editorial");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -421,7 +359,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/ZzzLc0405--photo-abstract-editorial");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -458,7 +396,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/ZzzLc0405--photo-abstract-editorial");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -541,7 +479,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-06** — 首次收錄
+> **2026-08-07** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -557,5 +495,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-07|2026-08-07]] — 再次上榜，1.9k stars
-- [[2026-08-06|2026-08-06]] — 首次收錄，1.6k stars
+- [[2026-08-07|2026-08-07]] — 首次收錄，1.1k stars

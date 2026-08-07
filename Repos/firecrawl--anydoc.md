@@ -7,12 +7,12 @@ language: Rust
 license: MIT
 description: "Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and PDF to clean Markdown. Built in Rust, with Node.js and Python bindings."
 homepage: ""
-stars: 5444
-stars_per_day: 2722
-forks: 239
-open_issues: 17
+stars: 8832
+stars_per_day: 2944
+forks: 415
+open_issues: 36
 created: 2026-08-03
-pushed_at: 2026-08-05
+pushed_at: 2026-08-06
 first_seen: 2026-08-05
 week: "2026-W32"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-09"
+appearances: 3
+next_review: "2026-08-10"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 9
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-05"
-star_history: "2026-08-05:1867,2026-08-06:5444"
+star_history: "2026-08-05:1867,2026-08-06:5444,2026-08-07:8832"
 tags:
   - github
   - "category/other"
@@ -598,5 +598,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-07|2026-08-07]] — 再次上榜，8.8k stars
 - [[2026-08-06|2026-08-06]] — 再次上榜，5.4k stars
 - [[2026-08-05|2026-08-05]] — 首次收錄，1.9k stars

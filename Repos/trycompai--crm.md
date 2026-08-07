@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: ""
 homepage: ""
-stars: 6451
-stars_per_day: 1290
-forks: 657
-open_issues: 2
+stars: 7241
+stars_per_day: 1207
+forks: 758
+open_issues: 13
 created: 2026-07-31
-pushed_at: 2026-08-06
+pushed_at: 2026-08-07
 first_seen: 2026-08-02
 week: "2026-W32"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-08-09"
+appearances: 6
+next_review: "2026-08-10"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-02"
-star_history: "2026-08-02:832,2026-08-03:1926,2026-08-04:3442,2026-08-05:4898,2026-08-06:6451"
+star_history: "2026-08-02:832,2026-08-03:1926,2026-08-04:3442,2026-08-05:4898,2026-08-06:6451,2026-08-07:7241"
 tags:
   - github
   - "category/other"
@@ -663,6 +663,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-07|2026-08-07]] — 再次上榜，7.2k stars
 - [[2026-08-06|2026-08-06]] — 再次上榜，6.5k stars
 - [[2026-08-05|2026-08-05]] — 再次上榜，4.9k stars
 - [[2026-08-04|2026-08-04]] — 再次上榜，3.4k stars

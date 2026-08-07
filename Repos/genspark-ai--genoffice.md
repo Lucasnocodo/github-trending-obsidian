@@ -7,12 +7,12 @@ language: TypeScript
 license: Apache-2.0
 description: "An AI-native office suite for macOS and Windows: word processor, spreadsheet, presentations, and PDF."
 homepage: "https://www.genspark.ai"
-stars: 1832
-stars_per_day: 366
-forks: 292
-open_issues: 16
+stars: 2069
+stars_per_day: 345
+forks: 343
+open_issues: 20
 created: 2026-07-31
-pushed_at: 2026-08-05
+pushed_at: 2026-08-07
 first_seen: 2026-08-05
 week: "2026-W32"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-09"
+appearances: 3
+next_review: "2026-08-10"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 17
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-05"
-star_history: "2026-08-05:1400,2026-08-06:1832"
+star_history: "2026-08-05:1400,2026-08-06:1832,2026-08-07:2069"
 tags:
   - github
   - "category/other"
@@ -595,5 +595,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-07|2026-08-07]] — 再次上榜，2.1k stars
 - [[2026-08-06|2026-08-06]] — 再次上榜，1.8k stars
 - [[2026-08-05|2026-08-05]] — 首次收錄，1.4k stars
