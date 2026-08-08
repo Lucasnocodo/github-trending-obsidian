@@ -1,19 +1,19 @@
 ---
-repo: imsai-sh/zhuzhiliao
-url: https://github.com/imsai-sh/zhuzhiliao
-owner: imsai-sh
+repo: Zeejay0/gathered-scenes-zine-skill
+url: https://github.com/Zeejay0/gathered-scenes-zine-skill
+owner: Zeejay0
 owner_type: User
-language: HTML
-license: N/A
-description: "竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。"
-homepage: "https://zhuzhiliao.imsai.cc"
-stars: 2438
-stars_per_day: 406
-forks: 311
-open_issues: 9
+language: N/A
+license: MIT
+description: ""
+homepage: ""
+stars: 970
+stars_per_day: 162
+forks: 51
+open_issues: 0
 created: 2026-08-01
-pushed_at: 2026-08-04
-first_seen: 2026-08-04
+pushed_at: 2026-08-07
+first_seen: 2026-08-08
 week: "2026-W32"
 month: "2026-08"
 category: "Other"
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-04
+last_reviewed: 2026-08-08
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-08-11"
+appearances: 1
+next_review: "2026-08-15"
 contributor_count: 1
-engagement: "medium"
-issue_close_rate: 8
-repo_size_kb: 760
-readme_length: 2727
+engagement: "low"
+issue_close_rate: -1
+repo_size_kb: 4442
+readme_length: 3794
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-04"
-star_history: "2026-08-04:946,2026-08-05:1744,2026-08-06:2101,2026-08-07:2314,2026-08-08:2438"
+ring_history: "assess@2026-08-08"
+star_history: "2026-08-08:970"
 tags:
   - github
   - "category/other"
-  - "lang/html"
+  - "lang/other"
 aliases:
-  - "zhuzhiliao"
-  - "imsai-sh/zhuzhiliao"
+  - "gathered-scenes-zine-skill"
+  - "Zeejay0/gathered-scenes-zine-skill"
 ---
 
-# zhuzhiliao
+# gathered-scenes-zine-skill
 
-**946** stars · **473** stars/天 · 建立 2 天前 · HTML · 未標註授權
+**970** stars · **162** stars/天 · 建立 6 天前 · N/A · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+const me = dv.page("Repos/Zeejay0--gathered-scenes-zine-skill");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -73,17 +73,17 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> 竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。
+> No description
 
 ## 專案簡介
 
-竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Zeejay0--gathered-scenes-zine-skill");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Zeejay0--gathered-scenes-zine-skill");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,150 +142,215 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 120 |
-| Open Issues | 48 |
-| Issue 解決率 | 8% (4 closed) |
-| 最後推送 | 2026-08-03 |
+| Forks | 51 |
+| Open Issues | 0 |
+| 最後推送 | 2026-08-07 |
 | 建立日期 | 2026-08-01 |
-| 官方網站 | [Link](https://zhuzhiliao.imsai.cc) |
-| Repo 大小 | 760 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/imsai-sh/zhuzhiliao) |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "HTML" : 75
->     "JavaScript" : 25
-> ```
+| Repo 大小 | 4.3 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Zeejay0/gathered-scenes-zine-skill) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@imsai-sh](https://github.com/imsai-sh) | 20 |
+> | [@Zeejay0](https://github.com/Zeejay0) | 9 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-02 ~ 2026-08-03）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #6 from imsai-sh/readme-trim-star-copy
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#37](https://github.com/imsai-sh/zhuzhiliao/issues/37) | 项目改名 | 21 | 4 |
-> | [#1](https://github.com/imsai-sh/zhuzhiliao/issues/1) | 啊则个则个 则个似不似1000w token以内能coding出的最好的仓库 | 20 | 3 |
-> | [#3](https://github.com/imsai-sh/zhuzhiliao/issues/3) | 有这么好的网站咋不早点告诉我 | 10 | 0 |
-> | [#45](https://github.com/imsai-sh/zhuzhiliao/issues/45) | 有老哥给加上了【哇声大作战】功能，笑死我了，要听取蛙声一片了 | 7 | 0 |
-> | [#26](https://github.com/imsai-sh/zhuzhiliao/issues/26) | bug: 自动甩转速不均匀 | 7 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-01 ~ 2026-08-07）
+> **活躍天數** 2 天 · **最新 commit** Update README.md
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 竹知了
+> # 拾景zine
 > 
-> 一转就"哇哇"叫的传统玩具，Web 模拟版。零依赖单文件，手机优先。
+> ### GATHERED SCENES ZINE
 > 
-> **在线试玩：**
+> 把普通画面，变成值得停留的一页。
 > 
-> [](https://github.com/imsai-sh/zhuzhiliao/stargazers)
+> **作者 / Author · Zeejay0**
 > 
-> > 甩两下要是听见了小时候那声"哇——哇——"，顺手点个 ⭐ **Star** 吧。
+> [English](README.en.md) · [两种创作路径](#两种创作路径) · [开始使用](#开始使用) · [作品档案](#作品档案)
 > 
-> ## 玩法
+> > A SMALL PRESS FOR EVERYDAY SCENES.
 > 
-> 直接用浏览器打开 `index.html` 即可（无需构建、无需联网）。
+> 拾景纸刊是一组为 Codex 编写的生图 Skill。它不把照片当作等待套用的模板，而是先阅读场景：辨认主体、空间、色彩、动作与没有说完的情绪，再选择保留真实现场，或把现场蒸馏为一件新的纸上作品。
 > 
-> - **按住屏幕画圈**：像甩真玩具一样，转得越快叫得越响（触屏时锚点会自动抬到指尖上方，避免手挡住小蝉）
-> - **自动甩**：不想动手就点它（空格键也行）
-> - **甩手机**（手机端，需 HTTPS 或本地文件）：握住手机划圈，重力方向在机身坐标里转动，直接驱动甩杆（iOS 首次需授权动作传感器；普通 http 局域网地址下浏览器不派发传感器事件，该按钮会自动隐藏）
+> 照片提供事实，创作决定如何留下它。
 > 
-> ### 局域网试玩
+> ---
 > 
-> 在项目目录起个静态服务，手机连同一 Wi-Fi 访问 `http://:8123`：
+> ## 我们如何观看一张照片
 > 
-> ```bash
-> python3 -m http.server 8123
+> ```text
+> 一张照片  →  阅读现场  →  提取关系  →  选择创作路径  →  重新装订成一页
 > ```
 > 
-> ## 真实玩具的发声原理
+> 我们优先保留场景中真正重要的关系，而不是复制所有细节：人物与远方、窗与光、道路与方向、植物与空白，以及一瞬间留下的情绪余韵。
 > 
-> 竹筒一端蒙竹膜，膜心系一根涂了**松香**的线，线的另一头拴在小竹签上。
-> 甩起来转圈时，线在松香上"黏–滑"交替摩擦，脉冲沿线传到竹膜，
-> 膜与筒腔共鸣放大——就是那声"哇——哇——"。
+> 这套视觉语言建立在五条原则上：
 > 
-> ## 声音
+> - **真景为锚**：真实场景不是装饰素材，而是作品的事实基础。
+> - **插画成场**：插画扩展照片尚未说完的空间，而不是描摹照片。
+> - **色彩成结构**：高纯度色彩负责平衡、方向和视觉重心。
+> - **纸面会呼吸**：留白参与叙事，复杂信息被压缩成少量清楚的形。
+> - **边界有触感**：撕纸、纤维、干墨与印刷误差构成材料语言。
 > 
-> 主音源是**真实竹知了的录音采样**：从实拍视频里截取 1.72 秒（恰好 4 个"哇"周期、
-> 包络边界自动搜索对齐），尾部 50ms 等功率交叉淡化烘进头部做成无缝循环，
-> 以 AAC 内嵌在 HTML 里保持单文件。回放速率随甩动转速变化
-> （录音里的甩速约 2.33 圈/秒，甩得越快叫得越急越高），再叠每圈相位的音高微摆。
+> ## 两种创作路径
 > 
-> 采样解码失败时回退到纯合成链：
+> 同一张照片，可以被保存，也可以被重新想象。本仓库收录两个互补的 Skill。
 > 
-> | 真实玩具 | 合成兜底实现 |
-> |---|---|
-> | 松香黏滑摩擦产生脉冲 | 锯齿波振荡器，频率随转速升高（55~195 Hz），tanh 软削波增毛糙谐波 |
-> | 蝉鸣颗粒感 | 24~45 Hz 正弦低频调幅 + 带通摩擦噪声底 |
-> | 竹膜 + 筒腔共鸣 | 三个并联带通共振峰（1050 / 2150 / 3350 Hz） |
-> | 转圈带来的"哇——哇——" | 带通滤波器中心频率随转动相位扫频 |
+> | | 实景拼贴 · Gathered Scenes | 影像蒸馏 · Scene Distillation |
+> | --- | --- | --- |
+> | **适合** | 想保留原照片与现场身份 | 想获得独立成立的原创插画作品 |
+> | **照片的角色** | 成为最终海报中的真实视觉锚点 | 只作为语义与情绪来源，不进入成品 |
+> | **转化方式** | 摄影、抽象插画、结构性色彩与手撕边界共同构图 | 从事实中提取命题、张力与视觉隐喻，重新创作 |
+> | **结果** | 真实而克制的纸感拼贴海报 | 表达优先的极简编辑插画 |
+> | **调用名称** | `$scenes-gathered-zine-v1-3` | `$scene-distillation-zine-v1-3` |
 > 
-> ## 物理
+> ### 01 · 实景拼贴
 > 
-> 竹筒是绳系质点（重力 + 只拉不推的弹性绳 + 空气阻力，1/240s 定步长积分）。
-> 发声核心变量是**绳方向的角速度**：竹筒绕甩杆转得越快、绳越紧，声音越响越亮；
-> 角速度低于约 1.1 圈/秒或绳未张紧时不发声，松手后靠惯性余音渐歇。
+> `scenes-gathered-zine-v1-3` 保留照片中不可替代的现场关系，以真实摄影作为锚点，让源自原图的抽象形状、单一高纯度色彩与可见的手撕纤维边缘向纸面延伸。
 > 
-> ## 技术
+> 它适合这样的请求：
 > 
-> - 单文件 `index.html`：Canvas 2D 渲染 + Web Audio API，无任何依赖（含内嵌录音）
-> - SEO：head 里有 OG/Twitter 卡片与 JSON-LD（WebSite + WebApplication/VideoGame）；`` 里有一段
->   玩具介绍作为无 JS 环境（含不执行 JS 的百度蜘蛛）可读的静态正文，正常用户不可见；根目录 `robots.txt`、
->   `sitemap.xml`、`og-image.jpg`（1200×630 页面实拍）、`404.html`（有了它 Cloudflare Pages 才会对未知路径
->   返回真 404，否则任意路径都是 200 + 首页的 soft-404）
-> - 移动端优先：安全区适配、绳长随屏幕缩放、拇指小圈即可甩响（触摸时锚点自动上移避免手挡）、多点触控互斥、`devicemotion` 体感模式
-> - 音频在首次触摸/点击时初始化，触摸在抬手时补解锁（user activation 规则）；iOS 的 `interrupted` 状态与旧内核 `roundRect` 均有兜底
-> - 静态场景预合成为离屏层，静置 8 秒自动挂起音频线程省电
+> ```text
+> 用 $scenes-gathered-zine-v1-3 把这张照片做成一张拾景纸刊海报。
+> 保留人物与海岸线的关系，文字用中文。
+> ```
 > 
-> ## 实时计数
+> [阅读完整 Skill](skills/scenes-gathered-zine-v1-3/SKILL.md)
 > 
-> 页面底部有一行全站统计：**此刻在线 · 唯一来客 · 访问次数 · 全球哇数**，外加只存在浏览器
-> localStorage 里的**个人哇数**。手动甩出的每一圈记一"哇"，自动甩不计。
+> ### 02 · 影像蒸馏
 > 
-> 后端是 `worker/` 里的一个 Cloudflare Worker + 单实例 SQLite **Durable Object**：
+> `scene-distillation-zine-v1-3` 不在成品中保留原始照片。它从照片中提取语义核心、情绪张力和视觉隐喻，再用纸张、插画、色彩与自由文字创作一件新的作品。
 > 
-> - **实时推送**：所有在线玩家挂在同一个 DO 的 WebSocket（Hibernation API）上，任何人甩出哇，
->   350ms 合并广播推给全场；挂机连接休眠零费用，心跳 ping/pong 由运行时自动应答不唤醒 DO
-> - **同步策略**：客户端本地先累计，1.2s 批量走 WS 上报；页面关闭用 `sendBeacon` 兜底补报；
->   断线指数退避重连，重连不重复计访问
-> - **成本控制**：计数在内存自增、2 秒合并落盘（SQLite 行写入有限额）；免费套餐足够跑
-> - **防刷**：单连接哇数限速（10s 滑动窗口）、单条消息哇数上限、并发连接上限、
->   按 IP 的连接/补报频控、单连接 hi 去重
-> - **路由**：`zhuzhiliao.imsai.cc/api/*` 走 zone route 进 Worker，其余流量走 Pages；
->   唯一访客用 localStorage 里的随机 UUID 在 DO 的 SQLite 表去重
+> 它适合这样的请求：
 > 
-> 部署：`cd worker && npx wrangler deploy`（Pages 部署页面本体，Worker 承接 `/api/*`）。
+> ```text
+> 用 $scene-distillation-zine-v1-3 重新创作这张照片。
+> 不要保留照片本身，让作品表达“靠近与错过”。
+> ```
 > 
-> ## 点个 Star ⭐
+> [阅读完整 Skill](skills/scene-distillation-zine-v1-3/SKILL.md)
 > 
-> 竹知了是小时候路边摊上几块钱的玩意儿，会响、会烦人、会被大人没收，现在实物越来越难找了。
-> 这个 Web 版想做的事很简单：让它继续能被随手甩响 —— 一个 HTML 文件，零依赖、零构建，
-> 存下来断网也能玩，二十年后双击照样出声。
+> ## 从现场到纸面
 > 
-> 如果它甩响了你的某段回忆，或者你觉得这套「真实录音采样 + 绳系质点物理 + Durable Object
-> 实时计数」塞进单文件的做法有点意思：
+> 每次创作都会经历同一套观察过程，但不会套用固定模板。
 > 
-> - 点个 [⭐ Star](https://github.com/imsai-sh/zhuzhiliao/stargazers) —— Star 多了才排得上 GitHub 的搜索和推荐
-> - 把  甩给一个也玩过竹知了的人，看他愣两秒
-> - 有 Bug、有想法、有更像真玩具的调参，欢迎提 Issue / PR
+> | 阶段 | 发生什么 |
+> | --- | --- |
+> | **01 · 观察** | 找到核心主体、空间关系、方向、重量与安静区域 |
+> | **02 · 取舍** | 保留让场景仍然成立的最少信息，移除无关细节 |
+> | **03 · 转译** | 将轮廓、路径、光影或情绪转为纸上形状与色彩结构 |
+> | **04 · 编排** | 让摄影、插画、文字、边界与留白形成清楚的观看路径 |
+> | **05 · 成页** | 输出一张平面、克制、有触感且能独立成立的纸刊作品 |
 > 
-> 全球哇数正在页面底部实时跳动，你的每一圈都算数。
+> ## 作品档案
+> 
+> 这里将按“原始照片 → 观察记录 → 最终作品”保存代表案例，而不是只陈列一面结果图墙。每份档案会说明作品保留了什么、舍弃了什么，以及色彩和构图如何从现场生长出来。
+> 
+> ### 实景拼贴 01 · 第比利斯远眺
+> 
+> | 原始照片 | 最终作品 |
+> | :---: | :---: |
+> |  |  |
+> 
+> 保留教堂塔楼作为真实锚点，将城市密度压缩为蓝色印刷场，让石质轮廓穿过摄影、线描与撕纸边界。[查看观察记录](examples/real-scene-collage/01-where-stone-meets-sky/)
+> 
+> ### 实景拼贴 02 · 冬日渡桥
+> 
+> | 原始照片 | 最终作品 |
+> | :---: | :---: |
+> |  |  |
+> 
+> 保留桥上人群与水面倒影，将雪林向外转译为安静的蓝灰纸上场景，让横向行进成为整张作品的节奏。[查看观察记录](examples/real-scene-collage/02-winter-crossing/)
+> 
+> ### 影像蒸馏 01 · 时间挥手回应
+> 
+> | 原始照片 | 最终作品 |
+> | :---: | :---: |
+> |  |  |
+> 
+> 舍弃照片本身，只保留挥手的动作、远处石像与两者之间尚未抵达的回应；一条黄色手势轨迹成为时间的视觉隐喻。[查看观察记录](examples/image-distillation/01-time-waves-back/)
+> 
+> ### 影像蒸馏 02 · 雪落得很轻
+> 
+> | 原始照片 | 最终作品 |
+> | :---: | :---: |
+> |  |  |
+> 
+> 从雪地中的坐姿与冬衣色彩提炼出松散纸片人物，以大面积纸白保留雪的轻盈，并用一枚暖红色小块建立遥远的视觉回应。[查看观察记录](examples/image-distillation/02-snow-falls-lightly/)
+> 
+> [浏览完整作品档案](examples/)
+> 
+> ## 开始使用
+> 
+> ### 安装
+> 
+> 克隆仓库，然后把需要的 Skill 复制到 Codex Skills 目录：
+> 
+> ```bash
+> git clone https://github.com/Zeejay0/gathered-scenes-zine-skill.git
+> mkdir -p ~/.codex/skills
+> cp -R gathered-scenes-zine-skill/skills/scenes-gathered-zine-v1-3 ~/.codex/skills/
+> cp -R gathered-scenes-zine-skill/skills/scene-distillation-zine-v1-3 ~/.codex/skills/
+> ```
+> 
+> 如果 Skill 没有立即出现，请重启 Codex。
+> 
+> ### 使用
+> 
+> 1. 上传一张照片。
+> 2. 选择“实景拼贴”或“影像蒸馏”。
+> 3. 调用对应的 Skill；也可以补充希望保留的关系、文字语言或情绪方向。
+> 
+> 除图片外，两个 Skill 都会返回简短的创作说明；具体输出规则请以各自的 `SKILL.md` 为准。
+> 
+> ## 仓库结构
+> 
+> ```text
+> gathered-scenes-zine-skill/
+> ├── README.md
+> ├── README.en.md
+> ├── assets/
+> │   └── brand/
+> ├── examples/
+> │   └── README.md
+> └── skills/
+>     ├── scenes-gathered-zine-v1-3/
+>     │   ├── SKILL.md
+>     │   └── agents/openai.yaml
+>     └── scene-distillation-zine-v1-3/
+>         ├── SKILL.md
+>         └── agents/openai.yaml
+> ```
+> 
+> ## 关于照片
+> 
+> Skill 只把用户提供的照片作为当前生成任务的参考。除非用户明确要求，不应浏览、分享、另行上传或保存原始照片。有关具体处理规则，请阅读对应的 Skill 文档。
+> 
+> ## 找到作者
+> 
+> **作者：Zeejay0**
+> 
+> 抖音及其他内容平台统一用户名：`Zeejay0`。在你常用的平台搜索这个名字，即可找到作者与后续作品。
+> 
+> 每个 Skill 在同一段对话的前两次生成完成后，会轻量提示：`若公开分享，欢迎标注：Visual Skill by @Zeejay0`；从第三次起不再重复。
+> 
+> ## License
+> 
+> [MIT](LICENSE) © Zeejay0
+> 
+> **拾起景物，留住片刻。**
+> 
+> AI-GENERATED PAPER ART · 2026
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityDev--WilonityLoader|WilonityDev/WilonityLoader]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]]
 
-[GitHub](https://github.com/imsai-sh/zhuzhiliao) · [官方網站](https://zhuzhiliao.imsai.cc)
+[GitHub](https://github.com/Zeejay0/gathered-scenes-zine-skill)
 
 ## 相關收錄
 
@@ -293,7 +358,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "imsai-sh--zhuzhiliao"
+> WHERE category = "Other" AND file.name != "Zeejay0--gathered-scenes-zine-skill"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -302,7 +367,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "HTML" AND file.name != "imsai-sh--zhuzhiliao" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "Zeejay0--gathered-scenes-zine-skill" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -311,18 +376,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "imsai-sh--zhuzhiliao"
+> WHERE week = "2026-W32" AND file.name != "Zeejay0--gathered-scenes-zine-skill"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Zeejay0--gathered-scenes-zine-skill");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "imsai-sh--zhuzhiliao" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Zeejay0--gathered-scenes-zine-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -338,7 +403,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "imsai-sh" AND file.name != "imsai-sh--zhuzhiliao"
+> WHERE owner = "Zeejay0" AND file.name != "Zeejay0--gathered-scenes-zine-skill"
 > SORT stars DESC
 > ```
 
@@ -346,7 +411,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Zeejay0--gathered-scenes-zine-skill");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -363,7 +428,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Zeejay0--gathered-scenes-zine-skill");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -396,7 +461,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Zeejay0--gathered-scenes-zine-skill");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -420,7 +485,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Zeejay0--gathered-scenes-zine-skill");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -457,7 +522,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Zeejay0--gathered-scenes-zine-skill");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -540,7 +605,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-04** — 首次收錄
+> **2026-08-08** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -556,8 +621,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-08|2026-08-08]] — 再次上榜，2.4k stars
-- [[2026-08-07|2026-08-07]] — 再次上榜，2.3k stars
-- [[2026-08-06|2026-08-06]] — 再次上榜，2.1k stars
-- [[2026-08-05|2026-08-05]] — 再次上榜，1.7k stars
-- [[2026-08-04|2026-08-04]] — 首次收錄，946 stars
+- [[2026-08-08|2026-08-08]] — 首次收錄，970 stars

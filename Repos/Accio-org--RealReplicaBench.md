@@ -1,19 +1,19 @@
 ---
-repo: imsai-sh/zhuzhiliao
-url: https://github.com/imsai-sh/zhuzhiliao
-owner: imsai-sh
-owner_type: User
+repo: Accio-org/RealReplicaBench
+url: https://github.com/Accio-org/RealReplicaBench
+owner: Accio-org
+owner_type: Organization
 language: HTML
-license: N/A
-description: "竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。"
-homepage: "https://zhuzhiliao.imsai.cc"
-stars: 2438
-stars_per_day: 406
-forks: 311
-open_issues: 9
-created: 2026-08-01
-pushed_at: 2026-08-04
-first_seen: 2026-08-04
+license: Apache-2.0
+description: "RealReplicaBench: Benchmarking Long-Horizon Agents in High-Fidelity, Stateful, and Reproducible Replicas of Real Online Services"
+homepage: "https://realreplicabench.site.accio.ai/"
+stars: 1040
+stars_per_day: 208
+forks: 79
+open_issues: 0
+created: 2026-08-02
+pushed_at: 2026-08-06
+first_seen: 2026-08-08
 week: "2026-W32"
 month: "2026-08"
 category: "Other"
@@ -25,39 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-04
+last_reviewed: 2026-08-08
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
+appearances: 1
 next_review: "2026-08-11"
 contributor_count: 1
-engagement: "medium"
-issue_close_rate: 8
-repo_size_kb: 760
-readme_length: 2727
+engagement: "low"
+issue_close_rate: -1
+repo_size_kb: 154368
+readme_length: 9553
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-04"
-star_history: "2026-08-04:946,2026-08-05:1744,2026-08-06:2101,2026-08-07:2314,2026-08-08:2438"
+ring_history: "assess@2026-08-08"
+star_history: "2026-08-08:1040"
 tags:
   - github
   - "category/other"
   - "lang/html"
+  - org
 aliases:
-  - "zhuzhiliao"
-  - "imsai-sh/zhuzhiliao"
+  - "RealReplicaBench"
+  - "Accio-org/RealReplicaBench"
 ---
 
-# zhuzhiliao
+# RealReplicaBench
 
-**946** stars · **473** stars/天 · 建立 2 天前 · HTML · 未標註授權
+**1.0k** stars · **208** stars/天 · 建立 5 天前 · HTML · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+const me = dv.page("Repos/Accio-org--RealReplicaBench");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`ORG`
 
 > [!summary] 一句話摘要
-> 竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。
+> RealReplicaBench: Benchmarking Long-Horizon Agents in High-Fidelity, Stateful, and Reproducible Replicas of Real Online Services
 
 ## 專案簡介
 
-竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。
+RealReplicaBench: Benchmarking Long-Horizon Agents in High-Fidelity, Stateful, and Reproducible Replicas of Real Online Services
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Accio-org--RealReplicaBench");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +119,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Accio-org--RealReplicaBench");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,150 +143,247 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 120 |
-| Open Issues | 48 |
-| Issue 解決率 | 8% (4 closed) |
-| 最後推送 | 2026-08-03 |
-| 建立日期 | 2026-08-01 |
-| 官方網站 | [Link](https://zhuzhiliao.imsai.cc) |
-| Repo 大小 | 760 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/imsai-sh/zhuzhiliao) |
+| Forks | 79 |
+| Open Issues | 0 |
+| 最後推送 | 2026-08-06 |
+| 建立日期 | 2026-08-02 |
+| 官方網站 | [Link](https://realreplicabench.site.accio.ai/) |
+| Repo 大小 | 150.8 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Accio-org/RealReplicaBench) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "HTML" : 75
->     "JavaScript" : 25
+>     "HTML" : 64
+>     "JavaScript" : 17
+>     "Python" : 13
+>     "Shell" : 3
+>     "CSS" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@imsai-sh](https://github.com/imsai-sh) | 20 |
+> | [@lianyukun](https://github.com/lianyukun) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-02 ~ 2026-08-03）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #6 from imsai-sh/readme-trim-star-copy
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#37](https://github.com/imsai-sh/zhuzhiliao/issues/37) | 项目改名 | 21 | 4 |
-> | [#1](https://github.com/imsai-sh/zhuzhiliao/issues/1) | 啊则个则个 则个似不似1000w token以内能coding出的最好的仓库 | 20 | 3 |
-> | [#3](https://github.com/imsai-sh/zhuzhiliao/issues/3) | 有这么好的网站咋不早点告诉我 | 10 | 0 |
-> | [#45](https://github.com/imsai-sh/zhuzhiliao/issues/45) | 有老哥给加上了【哇声大作战】功能，笑死我了，要听取蛙声一片了 | 7 | 0 |
-> | [#26](https://github.com/imsai-sh/zhuzhiliao/issues/26) | bug: 自动甩转速不均匀 | 7 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-03 ~ 2026-08-06）
+> **活躍天數** 4 天 · **最新 commit** Stop tracking the Chinese-language authoring notes
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 竹知了
+> Developed and maintained by the Accio team at Alibaba International.
 > 
-> 一转就"哇哇"叫的传统玩具，Web 模拟版。零依赖单文件，手机优先。
+>   
+>   
+>   
+>   
+>   
 > 
-> **在线试玩：**
+>   Overview ·
+>   Live leaderboard ·
+>   Mock showcase ·
+>   Quick start ·
+>   Reproducibility ·
+>   Contact
 > 
-> [](https://github.com/imsai-sh/zhuzhiliao/stargazers)
+>   
+>     
+>   
+>   &nbsp;
+>   
+>     
+>   
 > 
-> > 甩两下要是听见了小时候那声"哇——哇——"，顺手点个 ⭐ **Star** 吧。
+>   We run models on request, including pre-release and internal builds —
+>   and we are open to working together on the benchmark.
 > 
-> ## 玩法
+> ---
 > 
-> 直接用浏览器打开 `index.html` 即可（无需构建、无需联网）。
 > 
-> - **按住屏幕画圈**：像甩真玩具一样，转得越快叫得越响（触屏时锚点会自动抬到指尖上方，避免手挡住小蝉）
-> - **自动甩**：不想动手就点它（空格键也行）
-> - **甩手机**（手机端，需 HTTPS 或本地文件）：握住手机划圈，重力方向在机身坐标里转动，直接驱动甩杆（iOS 首次需授权动作传感器；普通 http 局域网地址下浏览器不派发传感器事件，该按钮会自动隐藏）
+> ## Quick start
 > 
-> ### 局域网试玩
 > 
-> 在项目目录起个静态服务，手机连同一 Wi-Fi 访问 `http://:8123`：
+> ### Install
 > 
 > ```bash
-> python3 -m http.server 8123
+> python3 -m venv .venv
+> source .venv/bin/activate
+> python -m pip install -e .
+> real-replica-bench list
 > ```
 > 
-> ## 真实玩具的发声原理
 > 
-> 竹筒一端蒙竹膜，膜心系一根涂了**松香**的线，线的另一头拴在小竹签上。
-> 甩起来转圈时，线在松香上"黏–滑"交替摩擦，脉冲沿线传到竹膜，
-> 膜与筒腔共鸣放大——就是那声"哇——哇——"。
+> ## Overview
 > 
-> ## 声音
+> RealReplicaBench evaluates whether an agent can complete long-horizon business
+> workflows, not just answer questions about them. Tasks cover browser operations,
+> native-style CLI tools, API/MCP workflows, document and spreadsheet production,
+> public-web research, supplier analysis, product publishing, logistics, and
+> commerce operations. Every task runs in a fresh container and is graded by its
+> own deterministic or LLM-assisted verifier.
 > 
-> 主音源是**真实竹知了的录音采样**：从实拍视频里截取 1.72 秒（恰好 4 个"哇"周期、
-> 包络边界自动搜索对齐），尾部 50ms 等功率交叉淡化烘进头部做成无缝循环，
-> 以 AAC 内嵌在 HTML 里保持单文件。回放速率随甩动转速变化
-> （录音里的甩速约 2.33 圈/秒，甩得越快叫得越急越高），再叠每圈相位的音高微摆。
+> - **107 tasks:** 53 CLI, 28 browser, 16 file, and 10 API/MCP tasks.
+> - **Three capability slices:** 65 text-only, 20 browser-text-capable, and 22
+>   vision-required tasks.
+> - **Stateful evaluation:** local mock services model SaaS, commerce, messaging,
+>   document, and operational systems without requiring production accounts.
+> - **Auditable outputs:** each run preserves the resolved configuration,
+>   trajectory, verifier result, artifacts, logs, and container metadata.
 > 
-> 采样解码失败时回退到纯合成链：
+>   
 > 
-> | 真实玩具 | 合成兜底实现 |
+> 
+> ### API validation boundary
+> 
+> Every route above — the Gemini, Qwen, and OpenRouter agents and both Judges,
+> including reasoning through the bundled shim and custom upstream base URLs —
+> has been exercised against local protocol recorders, without real credentials
+> or billable calls, under the exact request/response contracts covered by
+> `tests/test_public_api.py`.
+> 
+> This proves request construction and response parsing, not provider-side model
+> entitlement, quota, or billing. Before a full run, use `--limit 1` with your own
+> keys and record the provider/model snapshot in the run metadata.
+> 
+> Deeper reference:
+> [`docs/openclaw-runtime-image.md`](docs/openclaw-runtime-image.md) for the
+> runtime image's identity, pin, and customization boundary;
+> [`docs/openclaw-native-gemini.md`](docs/openclaw-native-gemini.md) and
+> [`docs/openclaw-native-qwen.md`](docs/openclaw-native-qwen.md) for the native
+> provider routes.
+> 
+> 
+> ### Real task surfaces
+> 
+> The suite uses reproducible local replicas of commerce and business software,
+> so agents must operate interfaces and change state.
+> 
+>   
+>     
+>     
+>     
+>   
+>   
+>     Product publishingStructured catalog and listing operations
+>     Freight bookingMulti-step logistics workflows
+>     Storefront operationsVisual configuration and stateful editing
+>   
+> 
+>   
+>     
+>   
+> 
+>   Browse 104 rendered pages across eight UI mock services. The showcase is
+>   a static visual tour; state-changing interactions run inside the benchmark
+>   runtime.
+> 
+> 
+> ## Reference results
+> 
+> Results are aligned by `task_id` over the complete 107-task collection. The
+> tables below are per harness — twelve model families on OpenClaw, thirteen on
+> Accio — and the twelve present in both are the ones that compare directly.
+> The published scores were produced through Accio-managed evaluation endpoints
+> with `gemini-3.1-pro-preview` as the judge; the public path in this repository
+> uses bring-your-own credentials.
+> 
+> The [live leaderboard](https://realreplicabench.site.accio.ai/) is the
+> source of record; the tables below are a snapshot.
+> 
+>   
+> 
+> 
+> ### Detailed evaluation statistics
+> 
+> Pass and capacity use the same verifier semantics across harnesses. Steps,
+> time, and tokens are descriptive telemetry: tool granularity, runtime
+> scheduling, and provider usage accounting differ, so these values are not
+> normalized efficiency scores.
+> 
+> 🥇🥈🥉 mark the top three within each harness. The bar in the Pass column is
+> drawn on a fixed 0–100% scale, not normalized to the leader, so bar lengths
+> are directly comparable between the two tables.
+> 
+> #### OpenClaw
+> 
+> | Model | Pass | Avg. capacity | Avg. steps | Avg. time | Avg. tokens |
+> |---|:--|---:|---:|---:|---:|
+> | 🥇 Claude Opus 5 | `███████████░░░░░░░░░` 60/107 (56.1%) | 0.905 | 47.7 | 12.7 min | 3.47M |
+> | 🥈 Claude Opus 4.8 | `██████████░░░░░░░░░░` 55/107 (51.4%) | 0.860 | 47.6 | 16.4 min | 4.05M |
+> | 🥉 GPT-5.6 Sol | `██████████░░░░░░░░░░` 53/107 (49.5%) | 0.855 | 28.6 | 14.4 min | 2.09M |
+> | GPT-5.5 | `██████████░░░░░░░░░░` 51/107 (47.7%) | 0.835 | 37.1 | 12.7 min | 2.85M |
+> | Claude Opus 4.7 | `█████████░░░░░░░░░░░` 49/107 (45.8%) | 0.871 | 47.4 | 14.3 min | 4.10M |
+> | Qwen 3.8 Max Preview | `█████████░░░░░░░░░░░` 48/107 (44.9%) | 0.822 | 40.6 | 18.9 min | 2.13M |
+> | Gemini 3.6 Flash | `█████████░░░░░░░░░░░` 48/107 (44.9%) | 0.867 | 46.3 | 13.5 min | 3.28M |
+> | DeepSeek V4 Flash | `█████████░░░░░░░░░░░` 46/107 (43.0%) | 0.827 | 137.8 | 19.2 min | 11.04M |
+> | GLM 5.2 | `████████░░░░░░░░░░░░` 42/107 (39.3%) | 0.814 | 56.9 | 14.8 min | 3.12M |
+> | Gemini 3.5 Flash | `███████░░░░░░░░░░░░░` 39/107 (36.4%) | 0.798 | 63.9 | 17.9 min | 5.54M |
+> | GPT-5.6 Luna | `███████░░░░░░░░░░░░░` 36/107 (33.6%) | 0.797 | 27.5 | 12.2 min | 1.81M |
+> | Gemini 3 Flash | `██████░░░░░░░░░░░░░░` 31/107 (29.0%) | 0.744 | 45.1 | 16.1 min | 3.09M |
+> 
+> #### Accio
+> 
+> | Model | Pass | Avg. capacity | Avg. steps | Avg. time | Avg. tokens |
+> |---|:--|---:|---:|---:|---:|
+> | 🥇 Claude Opus 5 | `████████████░░░░░░░░` 66/107 (61.7%) | 0.861 | 63.2 | 10.1 min | 3.69M |
+> | 🥈 Claude Opus 4.8 | `███████████░░░░░░░░░` 59/107 (55.1%) | 0.886 | 67.4 | 11.6 min | 4.82M |
+> | 🥉 Claude Opus 4.7 | `██████████░░░░░░░░░░` 56/107 (52.3%) | 0.878 | 61.5 | 6.4 min | 4.32M |
+> | GPT-5.6 Sol | `██████████░░░░░░░░░░` 55/107 (51.4%) | 0.873 | 53.0 | 5.5 min | 1.85M |
+> | Qwen 3.8 Max | `██████████░░░░░░░░░░` 52/107 (48.6%) | 0.826 | 67.8 | 15.6 min | 2.93M |
+> | Gemini 3.6 Flash | `█████████░░░░░░░░░░░` 50/107 (46.7%) | 0.815 | 47.7 | 4.6 min | 2.62M |
+> | GLM 5.2 | `█████████░░░░░░░░░░░` 50/107 (46.7%) | 0.787 | 81.0 | 10.8 min | 3.62M |
+> | DeepSeek V4 Flash | `█████████░░░░░░░░░░░` 50/107 (46.7%) | 0.838 | 84.0 | 10.0 min | 5.35M |
+> | Qwen 3.8 Max Preview | `█████████░░░░░░░░░░░` 49/107 (45.8%) | 0.856 | 69.8 | 12.7 min | 2.51M |
+> | GPT-5.5 | `█████████░░░░░░░░░░░` 48/107 (44.9%) | 0.864 | 45.3 | 4.5 min | 1.44M |
+> | GPT-5.6 Luna | `█████████░░░░░░░░░░░` 48/107 (44.9%) | 0.809 | 66.0 | 5.7 min | 2.49M |
+> | Gemini 3.5 Flash | `█████████░░░░░░░░░░░` 46/107 (43.0%) | 0.821 | 91.2 | 9.0 min | 4.80M |
+> | Gemini 3 Flash | `██████░░░░░░░░░░░░░░` 31/107 (29.0%) | 0.769 | 46.0 | 4.5 min | 2.48M |
+> 
+> The raw task-level result bundles are not stored in Git and do not yet have
+> public immutable URLs or checksums. Until they do, the published board is an
+> audited aggregate keyed by public result IDs, not a standalone reproduction
+> package.
+> 
+> 
+> ### Get your model evaluated, or work with us
+> 
+> > [!TIP]
+> > **We run models on request**, including pre-release and internal builds, and
+> > can evaluate privately against your own checkpoint before you ship it.
+> >
+> > **We are also open to collaboration** — new task domains, mock environments,
+> > harness work, or joint evaluation. Tell us what you have in mind.
+> >
+> > [](mailto:lianyukun.lyk@alibaba-inc.com)
+> > [](mailto:sicong.xsc@alibaba-inc.com)
+> >
+> > Prefer to copy rather than click: `lianyukun.lyk@alibaba-inc.com` ·
+> > `sicong.xsc@alibaba-inc.com`
+> 
+> 
+> ### Metrics
+> 
+> | Metric | Definition |
 > |---|---|
-> | 松香黏滑摩擦产生脉冲 | 锯齿波振荡器，频率随转速升高（55~195 Hz），tanh 软削波增毛糙谐波 |
-> | 蝉鸣颗粒感 | 24~45 Hz 正弦低频调幅 + 带通摩擦噪声底 |
-> | 竹膜 + 筒腔共鸣 | 三个并联带通共振峰（1050 / 2150 / 3350 Hz） |
-> | 转圈带来的"哇——哇——" | 带通滤波器中心频率随转动相位扫频 |
+> | Pass | A task passes only when every required verifier check passes; the rate is passes over the 107 aligned tasks. |
+> | Avg. capacity | Macro mean of each task's `checks_passed / checks_total`; this preserves partial task completion but is not a weighted official score. |
+> | Avg. steps | Mean trajectory tool-call count over the displayed task attempts. |
+> | Avg. time | Mean task wall-clock duration, using summary duration or audited manifest timestamps when the summary duration is zero. |
+> | Avg. tokens | Mean total model tokens per task after normalizing provider-specific usage fields; cached tokens are included when reported. |
 > 
-> ## 物理
 > 
-> 竹筒是绳系质点（重力 + 只拉不推的弹性绳 + 空气阻力，1/240s 定步长积分）。
-> 发声核心变量是**绳方向的角速度**：竹筒绕甩杆转得越快、绳越紧，声音越响越亮；
-> 角速度低于约 1.1 圈/秒或绳未张紧时不发声，松手后靠惯性余音渐歇。
+> ### Requirements
 > 
-> ## 技术
-> 
-> - 单文件 `index.html`：Canvas 2D 渲染 + Web Audio API，无任何依赖（含内嵌录音）
-> - SEO：head 里有 OG/Twitter 卡片与 JSON-LD（WebSite + WebApplication/VideoGame）；`` 里有一段
->   玩具介绍作为无 JS 环境（含不执行 JS 的百度蜘蛛）可读的静态正文，正常用户不可见；根目录 `robots.txt`、
->   `sitemap.xml`、`og-image.jpg`（1200×630 页面实拍）、`404.html`（有了它 Cloudflare Pages 才会对未知路径
->   返回真 404，否则任意路径都是 200 + 首页的 soft-404）
-> - 移动端优先：安全区适配、绳长随屏幕缩放、拇指小圈即可甩响（触摸时锚点自动上移避免手挡）、多点触控互斥、`devicemotion` 体感模式
-> - 音频在首次触摸/点击时初始化，触摸在抬手时补解锁（user activation 规则）；iOS 的 `interrupted` 状态与旧内核 `roundRect` 均有兜底
-> - 静态场景预合成为离屏层，静置 8 秒自动挂起音频线程省电
-> 
-> ## 实时计数
-> 
-> 页面底部有一行全站统计：**此刻在线 · 唯一来客 · 访问次数 · 全球哇数**，外加只存在浏览器
-> localStorage 里的**个人哇数**。手动甩出的每一圈记一"哇"，自动甩不计。
-> 
-> 后端是 `worker/` 里的一个 Cloudflare Worker + 单实例 SQLite **Durable Object**：
-> 
-> - **实时推送**：所有在线玩家挂在同一个 DO 的 WebSocket（Hibernation API）上，任何人甩出哇，
->   350ms 合并广播推给全场；挂机连接休眠零费用，心跳 ping/pong 由运行时自动应答不唤醒 DO
-> - **同步策略**：客户端本地先累计，1.2s 批量走 WS 上报；页面关闭用 `sendBeacon` 兜底补报；
->   断线指数退避重连，重连不重复计访问
-> - **成本控制**：计数在内存自增、2 秒合并落盘（SQLite 行写入有限额）；免费套餐足够跑
-> - **防刷**：单连接哇数限速（10s 滑动窗口）、单条消息哇数上限、并发连接上限、
->   按 IP 的连接/补报频控、单连接 hi 去重
-> - **路由**：`zhuzhiliao.imsai.cc/api/*` 走 zone route 进 Worker，其余流量走 Pages；
->   唯一访客用 localStorage 里的随机 UUID 在 DO 的 SQLite 表去重
-> 
-> 部署：`cd worker && npx wrangler deploy`（Pages 部署页面本体，Worker 承接 `/api/*`）。
-> 
-> ## 点个 Star ⭐
-> 
-> 竹知了是小时候路边摊上几块钱的玩意儿，会响、会烦人、会被大人没收，现在实物越来越难找了。
-> 这个 Web 版想做的事很简单：让它继续能被随手甩响 —— 一个 HTML 文件，零依赖、零构建，
-> 存下来断网也能玩，二十年后双击照样出声。
-> 
-> 如果它甩响了你的某段回忆，或者你觉得这套「真实录音采样 + 绳系质点物理 + Durable Object
-> 实时计数」塞进单文件的做法有点意思：
-> 
-> - 点个 [⭐ Star](https://github.com/imsai-sh/zhuzhiliao/stargazers) —— Star 多了才排得上 GitHub 的搜索和推荐
-> - 把  甩给一个也玩过竹知了的人，看他愣两秒
-> - 有 Bug、有想法、有更像真玩具的调参，欢迎提 Issue / PR
-> 
-> 全球哇数正在页面底部实时跳动，你的每一圈都算数。
+> - Docker with Linux 
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityDev--WilonityLoader|WilonityDev/WilonityLoader]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]]
 
-[GitHub](https://github.com/imsai-sh/zhuzhiliao) · [官方網站](https://zhuzhiliao.imsai.cc)
+[GitHub](https://github.com/Accio-org/RealReplicaBench) · [官方網站](https://realreplicabench.site.accio.ai/)
 
 ## 相關收錄
 
@@ -293,7 +391,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "imsai-sh--zhuzhiliao"
+> WHERE category = "Other" AND file.name != "Accio-org--RealReplicaBench"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -302,7 +400,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "HTML" AND file.name != "imsai-sh--zhuzhiliao" AND status != "archived"
+> WHERE language = "HTML" AND file.name != "Accio-org--RealReplicaBench" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -311,18 +409,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "imsai-sh--zhuzhiliao"
+> WHERE week = "2026-W32" AND file.name != "Accio-org--RealReplicaBench"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Accio-org--RealReplicaBench");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "imsai-sh--zhuzhiliao" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Accio-org--RealReplicaBench" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -338,7 +436,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "imsai-sh" AND file.name != "imsai-sh--zhuzhiliao"
+> WHERE owner = "Accio-org" AND file.name != "Accio-org--RealReplicaBench"
 > SORT stars DESC
 > ```
 
@@ -346,7 +444,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Accio-org--RealReplicaBench");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -363,7 +461,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Accio-org--RealReplicaBench");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -396,7 +494,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Accio-org--RealReplicaBench");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -420,7 +518,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Accio-org--RealReplicaBench");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -457,7 +555,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/imsai-sh--zhuzhiliao");
+> const me = dv.page("Repos/Accio-org--RealReplicaBench");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -540,7 +638,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-04** — 首次收錄
+> **2026-08-08** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -556,8 +654,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-08|2026-08-08]] — 再次上榜，2.4k stars
-- [[2026-08-07|2026-08-07]] — 再次上榜，2.3k stars
-- [[2026-08-06|2026-08-06]] — 再次上榜，2.1k stars
-- [[2026-08-05|2026-08-05]] — 再次上榜，1.7k stars
-- [[2026-08-04|2026-08-04]] — 首次收錄，946 stars
+- [[2026-08-08|2026-08-08]] — 首次收錄，1.0k stars

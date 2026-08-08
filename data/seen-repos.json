@@ -3347,31 +3347,31 @@
   },
   "FareedKhan-dev/kimi-k3-in-c": {
     "first_seen": "2026-08-04",
-    "last_seen": "2026-08-07",
-    "times_seen": 4,
+    "last_seen": "2026-08-08",
+    "times_seen": 5,
     "stars_first": 1319,
-    "stars_last": 2889
+    "stars_last": 3330
   },
   "DannyMac180/sol-advisor": {
     "first_seen": "2026-08-04",
-    "last_seen": "2026-08-07",
-    "times_seen": 4,
+    "last_seen": "2026-08-08",
+    "times_seen": 5,
     "stars_first": 1064,
-    "stars_last": 1718
+    "stars_last": 1782
   },
   "imsai-sh/zhuzhiliao": {
     "first_seen": "2026-08-04",
-    "last_seen": "2026-08-07",
-    "times_seen": 4,
+    "last_seen": "2026-08-08",
+    "times_seen": 5,
     "stars_first": 946,
-    "stars_last": 2314
+    "stars_last": 2438
   },
   "firecrawl/anydoc": {
     "first_seen": "2026-08-05",
-    "last_seen": "2026-08-07",
-    "times_seen": 3,
+    "last_seen": "2026-08-08",
+    "times_seen": 4,
     "stars_first": 1867,
-    "stars_last": 8832
+    "stars_last": 11134
   },
   "genspark-ai/genoffice": {
     "first_seen": "2026-08-05",
@@ -3382,30 +3382,44 @@
   },
   "thebuggeddev/anatomy": {
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-07",
-    "times_seen": 2,
+    "last_seen": "2026-08-08",
+    "times_seen": 3,
     "stars_first": 1638,
-    "stars_last": 1878
+    "stars_last": 1988
   },
   "KKKKhazix/human-writing": {
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-07",
-    "times_seen": 2,
+    "last_seen": "2026-08-08",
+    "times_seen": 3,
     "stars_first": 1230,
-    "stars_last": 1663
+    "stars_last": 1889
   },
   "Binaryify/open-kimi-ppt-skill": {
     "first_seen": "2026-08-07",
-    "last_seen": "2026-08-07",
-    "times_seen": 1,
+    "last_seen": "2026-08-08",
+    "times_seen": 2,
     "stars_first": 1456,
-    "stars_last": 1456
+    "stars_last": 1586
   },
   "ZzzLc0405/photo-abstract-editorial": {
     "first_seen": "2026-08-07",
-    "last_seen": "2026-08-07",
-    "times_seen": 1,
+    "last_seen": "2026-08-08",
+    "times_seen": 2,
     "stars_first": 1092,
-    "stars_last": 1092
+    "stars_last": 1502
+  },
+  "Accio-org/RealReplicaBench": {
+    "first_seen": "2026-08-08",
+    "last_seen": "2026-08-08",
+    "times_seen": 1,
+    "stars_first": 1040,
+    "stars_last": 1040
+  },
+  "Zeejay0/gathered-scenes-zine-skill": {
+    "first_seen": "2026-08-08",
+    "last_seen": "2026-08-08",
+    "times_seen": 1,
+    "stars_first": 970,
+    "stars_last": 970
   }
 }

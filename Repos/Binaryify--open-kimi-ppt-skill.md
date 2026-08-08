@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "非官方 Kimi Slides Skill：让 AI Agent 生成可编辑 PPTD + PPTX，并附带本地浏览器编辑器 Unofficial Kimi Slides skill for AI agents — generate editable PPTD + PPTX with a local browser editor"
 homepage: ""
-stars: 1456
-stars_per_day: 1456
-forks: 371
-open_issues: 5
+stars: 1586
+stars_per_day: 793
+forks: 1005
+open_issues: 6
 created: 2026-08-05
-pushed_at: 2026-08-06
+pushed_at: 2026-08-07
 first_seen: 2026-08-07
 week: "2026-W32"
 month: "2026-08"
@@ -30,10 +30,10 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-10"
+appearances: 2
+next_review: "2026-08-11"
 contributor_count: 2
-engagement: "medium"
+engagement: "high"
 issue_close_rate: 29
 repo_size_kb: 108676
 readme_length: 7386
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-07"
-star_history: "2026-08-07:1456"
+star_history: "2026-08-07:1456,2026-08-08:1586"
 tags:
   - github
   - "category/other"
@@ -711,4 +711,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-08|2026-08-08]] — 再次上榜，1.6k stars
 - [[2026-08-07|2026-08-07]] — 首次收錄，1.5k stars

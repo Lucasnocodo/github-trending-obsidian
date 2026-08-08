@@ -7,12 +7,12 @@ language: Shell
 license: MIT
 description: "Codex-native architect orchestration with Luna and Terra implementation lanes and mandatory fresh Sol review."
 homepage: ""
-stars: 1718
-stars_per_day: 344
-forks: 123
-open_issues: 13
+stars: 1782
+stars_per_day: 297
+forks: 128
+open_issues: 15
 created: 2026-08-01
-pushed_at: 2026-08-04
+pushed_at: 2026-08-08
 first_seen: 2026-08-04
 week: "2026-W32"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-08-10"
+appearances: 5
+next_review: "2026-08-11"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-04"
-star_history: "2026-08-04:1064,2026-08-05:1335,2026-08-06:1489,2026-08-07:1718"
+star_history: "2026-08-04:1064,2026-08-05:1335,2026-08-06:1489,2026-08-07:1718,2026-08-08:1782"
 tags:
   - github
   - "category/other"
@@ -616,6 +616,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-08|2026-08-08]] — 再次上榜，1.8k stars
 - [[2026-08-07|2026-08-07]] — 再次上榜，1.7k stars
 - [[2026-08-06|2026-08-06]] — 再次上榜，1.5k stars
 - [[2026-08-05|2026-08-05]] — 再次上榜，1.3k stars
