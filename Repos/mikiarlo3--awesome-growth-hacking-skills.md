@@ -1,20 +1,20 @@
 ---
-repo: thebuggeddev/anatomy
-url: https://github.com/thebuggeddev/anatomy
-owner: thebuggeddev
+repo: mikiarlo3/awesome-growth-hacking-skills
+url: https://github.com/mikiarlo3/awesome-growth-hacking-skills
+owner: mikiarlo3
 owner_type: User
-language: TypeScript
+language: Shell
 license: N/A
-description: "An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol"
-homepage: "https://anatomy-livid.vercel.app"
-stars: 2037
-stars_per_day: 340
-forks: 588
-open_issues: 16
-created: 2026-08-02
-pushed_at: 2026-08-02
-first_seen: 2026-08-06
-week: "2026-W32"
+description: "Find agentic growth hacking skills for Claude, ChatGPT, Manus | by enso.bot"
+homepage: ""
+stars: 765
+stars_per_day: 191
+forks: 11
+open_issues: 0
+created: 2026-08-04
+pushed_at: 2026-08-04
+first_seen: 2026-08-09
+week: "2026-W33"
 month: "2026-08"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-06
+last_reviewed: 2026-08-09
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-08-12"
+appearances: 1
+next_review: "2026-08-16"
 contributor_count: 2
-engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 215322
-readme_length: 3438
+engagement: "low"
+issue_close_rate: -1
+repo_size_kb: 10
+readme_length: 9672
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-06"
-star_history: "2026-08-06:1638,2026-08-07:1878,2026-08-08:1988,2026-08-09:2037"
+ring_history: "assess@2026-08-09"
+star_history: "2026-08-09:765"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/shell"
 aliases:
-  - "anatomy"
-  - "thebuggeddev/anatomy"
+  - "awesome-growth-hacking-skills"
+  - "mikiarlo3/awesome-growth-hacking-skills"
 ---
 
-# anatomy
+# awesome-growth-hacking-skills
 
-**1.6k** stars · **546** stars/天 · 建立 3 天前 · TypeScript · 未標註授權
+**765** stars · **191** stars/天 · 建立 4 天前 · Shell · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/thebuggeddev--anatomy");
+const me = dv.page("Repos/mikiarlo3--awesome-growth-hacking-skills");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,17 +71,17 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
 > [!summary] 一句話摘要
-> An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
+> Find agentic growth hacking skills for Claude, ChatGPT, Manus | by enso.bot
 
 ## 專案簡介
 
-An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
+Find agentic growth hacking skills for Claude, ChatGPT, Manus | by enso.bot
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/mikiarlo3--awesome-growth-hacking-skills");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +116,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/mikiarlo3--awesome-growth-hacking-skills");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,153 +140,127 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 461 |
-| Open Issues | 7 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-02 |
-| 建立日期 | 2026-08-02 |
-| 官方網站 | [Link](https://anatomy-livid.vercel.app) |
-| Repo 大小 | 210.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/thebuggeddev/anatomy) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `drizzle-orm` `gsap` `lucide-react` `next` `react` `react-dom` `three` `@cloudflare/vite-plugin` `@cloudflare/workers-types` `@tailwindcss/postcss` `@types/node` `@types/react` `@types/react-dom` `@types/three` `@vitejs/plugin-react`
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "TypeScript" : 74
->     "CSS" : 22
->     "JavaScript" : 3
-> ```
+| Forks | 11 |
+| Open Issues | 0 |
+| 最後推送 | 2026-08-04 |
+| 建立日期 | 2026-08-04 |
+| Repo 大小 | 10 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/mikiarlo3/awesome-growth-hacking-skills) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@thebuggeddev](https://github.com/thebuggeddev) | 5 |
-> | [@codex](https://github.com/codex) | 1 |
+> | [@mikiarlo3](https://github.com/mikiarlo3) | 2 |
+> | [@claude](https://github.com/claude) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-02 ~ 2026-08-02）
-> **活躍天數** 1 天 · **最新 commit** feat: add Vercel configuration and update build scripts for Next.js integration
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#4](https://github.com/thebuggeddev/anatomy/issues/4) | feat: Free static asset hosting alternative to Cloudflare Im | 3 | 0 |
-> | [#3](https://github.com/thebuggeddev/anatomy/issues/3) | Add multilingual support for the app | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-04 ~ 2026-08-04）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #1 from mikiarlo3/claude/session-gcjm07
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # vinext-starter
+> # Awesome Agentic Growth & Marketing Skills
 > 
-> A clean full-stack starter running on
-> [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-> Drizzle support.
+> A curated, categorized directory of open-source AI agent skills for growth hacking, marketing execution, and revenue operations.
 > 
-> ## Prerequisites
+> This collection focuses on **Agentic Growth Hacking**—leveraging AI agents (like Claude Code, Cursor, and OpenClaw) to scale go-to-market workflows, discover attention loopholes, and execute at machine speed.
 > 
-> - Node.js `>=22.13.0`
+> **Curated by [enso.bot](https://enso.bot/)** — The platform for agentic growth and automated attention.
 > 
-> ## Quick Start
+> ---
 > 
-> ```bash
-> npm install
-> npm run dev
-> npm run build
-> ```
 > 
-> This starter does not use `wrangler.jsonc`.
+> ## Featured Marketing Collections
 > 
-> ## Included Shape
+> Broad, multi-discipline libraries that cover the entire marketing stack.
 > 
-> - edit site code under `app/`
-> - `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-> - `vite.config.ts` simulates declared bindings for local development
-> - `db/schema.ts` starts intentionally empty
-> - `examples/d1/` contains an optional D1 example surface
-> - `drizzle.config.ts` supports local migration generation when needed
+> - [Marketing Skills for AI Agents](https://github.com/coreyhaines31/marketingskills) - CRO, copywriting, SEO, analytics, growth engineering, lifecycle, sales, and GTM workflows.
+> - [Brand Build Skills](https://github.com/rampstackco/claude-skills) - 100+ stack-agnostic skills covering brand, design, content, SEO, paid media, growth tooling, analytics, CRO, and launch lifecycle.
+> - [Aaron Marketing Skills](https://github.com/aaron-he-zhu/aaron-marketing-skills) - 120+ skills across SEO/GEO, social, email, paid ads, influencers, and product launches.
+> - [Marketing & SEO Skills](https://github.com/kostja94/marketing-skills) - Skills for SEO, content, paid ads, page optimization, channel strategy, and analytics.
+> - [AI Marketing Suite](https://github.com/zubair-trabzada/ai-marketing-claude) - Comprehensive suite for website audits, copy generation, email sequences, social calendars, ads, funnels, competitor analysis, and reporting.
+> - [Marketing Agent Skills](https://github.com/realjaymes/marketingagentskills) - Frameworks for strategy, positioning, content, research, experimentation, SEO, and lifecycle workflows.
+> - [Bora Oz Tunc Skills](https://github.com/boraoztunc/skills) - Copywriting, advertising, SEO, content strategy, landing pages, pricing, CRO, analytics, and app-store screenshots.
 > 
-> ## Workspace Auth Headers
 > 
-> OpenAI workspace sites can read the current user's email from
-> `oai-authenticated-user-email`.
+> ## Contents
 > 
-> SIWC-authenticated workspace sites may also receive
-> `oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-> `name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-> `oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
+> - [Featured Marketing Collections](#featured-marketing-collections)
+> - [Strategy, Positioning, and Brand](#strategy-positioning-and-brand)
+> - [Customer Research and Competitive Intelligence](#customer-research-and-competitive-intelligence)
+> - [SEO, GEO, AEO, and Discovery](#seo-geo-aeo-and-discovery)
+> - [CRO, Websites, and Funnel Design](#cro-websites-and-funnel-design)
+> - [Content, Copywriting, and Thought Leadership](#content-copywriting-and-thought-leadership)
+> - [Email, Lifecycle, and Retention](#email-lifecycle-and-retention)
+> - [Paid Media, Creative, and Attribution](#paid-media-creative-and-attribution)
+> - [Social, Community, and Creator Distribution](#social-community-and-creator-distribution)
+> - [Sales, SDR, ABM, and RevOps](#sales-sdr-abm-and-revops)
+> - [Product-Led Growth and Experimentation](#product-led-growth-and-experimentation)
+> - [E-commerce, ASO, and Marketplace Growth](#e-commerce-aso-and-marketplace-growth)
+> - [Marketing Operations, Automation, and Reporting](#marketing-operations-automation-and-reporting)
+> - [Discovery Directories and Registries](#discovery-directories-and-registries)
 > 
-> Treat the full name as optional and fall back to email when it is absent:
+> ---
 > 
-> ```tsx
-> import { headers } from "next/headers";
 > 
-> export default async function Home() {
->   const requestHeaders = await headers();
->   const email = requestHeaders.get("oai-authenticated-user-email");
->   const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
->   const fullName =
->     encodedFullName &&
->     requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
->       "percent-encoded-utf-8"
->       ? decodeURIComponent(encodedFullName)
->       : null;
+> ## Strategy, Positioning, and Brand
 > 
->   const displayName = fullName ?? email;
->   // ...
-> }
-> ```
+> - [Brand Building Skills](https://github.com/arnabbagxd/Brand-building-skills) - Workflows for brand strategy, naming, identity, voice, positioning, messaging, launch, D2C, B2B, UGC, and brand partnerships.
+> - [Product Marketing Skills](https://github.com/pmalliance/product-marketing-skills) - Context setup, messaging, competitive intelligence, customer research, GTM planning, and pricing strategies.
+> - [Startup Skill](https://github.com/ferdinandobons/startup-skill) - Startup validation, competitive intelligence, positioning, and pitch deck workflows.
+> - [Marketing Research Skill](https://github.com/ishwarjha/claude-marketing-research-skill) - Practitioner-grade research system for competitor mapping, positioning, avatar profiling, awareness mapping, and value proposition development.
 > 
-> ## Optional Dispatch-Owned ChatGPT Sign-In
 > 
-> Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-> optional or required ChatGPT sign-in:
+> ## Customer Research and Competitive Intelligence
 > 
-> - Use `getChatGPTUser()` for optional signed-in UI.
-> - Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
->   anonymous visitors through Sign in with ChatGPT.
-> - Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
->   browser links or actions.
-> - Pass a same-origin relative `returnTo` path for the destination after sign-in
->   or sign-out. The helper validates and safely encodes it.
-> - Mark protected pages with `export const dynamic = "force-dynamic"` because
->   they depend on per-request identity headers.
+> - [App Review Insights](https://github.com/joeseesun/qiaomu-app-review-insights) - App-store-review mining to extract pain points, opportunities, version risks, and feature evidence.
+> - [Composio Lead Research Assistant](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/lead-research-assistant) - Target-company discovery, qualification, and actionable outreach strategies.
+> - [Composio Competitive Ads Extractor](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/competitive-ads-extractor) - Extracts and analyzes competitors' ads from libraries to understand messaging approaches.
 > 
-> Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-> OAuth cookies, and identity header injection. Do not implement app routes for
-> those reserved paths. Routes that do not import and call the helper remain
-> anonymous-compatible.
 > 
-> SIWC establishes identity only; it does not prove workspace membership. Use the
-> Sites hosting platform's access policy controls for workspace-wide restrictions,
-> or enforce explicit server-side membership or allowlist checks.
+> ## SEO, GEO, AEO, and Discovery
 > 
-> Use SIWC for account pages, user-specific dashboards, saved records, and write
-> actions tied to the current ChatGPT user. Leave public content anonymous.
+> - [Agentic SEO Skill](https://github.com/Bhanunamikaze/Agentic-SEO-Skill) - Technical SEO, content, schema, GEO (Generative Engine Optimization), AEO (Answer Engine Optimization), programmatic SEO, and audit evidence collection.
+> - [Sanity Agent Toolkit](https://github.com/sanity-io/agent-toolkit) - Official SEO/AEO and content-experimentation best-practice skills.
+> - [Aaron Keyword Research](https://github.com/aaron-he-zhu/aaron-marketing-skills/tree/main/seo-geo/survey/keyword-research) - Deep keyword research and topical clustering workflows.
+> - [Aaron GEO Content Optimizer](https://github.com/aaron-he-zhu/aaron-marketing-skills/tree/main/seo-geo/implement/geo-content-optimizer) - Optimization for AI search engines and AI Overviews.
+> - [Aaron Technical SEO Checker](https://github.com/aaron-he-zhu/aaron-marketing-skills/tree/main/seo-geo/tune/technical-seo-checker) - Automated technical SEO review and remediation.
 > 
-> ## Useful Commands
 > 
-> - `npm run dev`: start local development
-> - `npm run build`: verify the vinext build output
-> - `npm test`: build the starter and verify its rendered loading skeleton
-> - `npm run db:generate`: generate Drizzle migrations after schema changes
+> ## CRO, Websites, and Funnel Design
 > 
-> ## Learn More
+> - [Humblytics Marketing Skills](https://github.com/Humblytics/humblytics-marketing-skills) - Live-data CRO, A/B testing, heatmaps, revenue attribution, and funnels. Includes MCP integration for live analytics.
+> - [Humblytics CRO Optimizer](https://github.com/Humblytics/humblytics-marketing-skills/blob/main/skills/cro-optimizer/SKILL.md) - Conversion rate optimization using live analytics data.
+> - [Humblytics A/B Test Generator](https://github.com/Humblytics/humblytics-marketing-skills/blob/main/skills/ab-test-generator/SKILL.md) - Generate and launch tests based on analytics and heatmap friction.
 > 
-> - [vinext Documentation](https://github.com/cloudflare/vinext)
-> - [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+> 
+> ## Content, Copywriting, and Thought Leadership
+> 
+> - [Content Skills](https://github.com/vstorm-co/content-skills) - Brand-aware content strategy, blogs, social posts, presentations, infographics, video scripts, repurposing, and anti-slop review.
+> - [Composio Content Research Writer](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/content-research-writer) - Research-backed writing, citation generation, and hook improvement.
+> - [Swyx Skills](https://github.com/swyxio/skills) - Content-adjacent media workflows including podcast publishing, YouTube channel operations, thumbnails, transcription, and summarization.
+> 
+> 
+> ## Email, Lifecycle, and Retention
+> 
+> - [Email Marketing Bible](https://github.com/CosmoBlk/email-marketing-bible) - Comprehensive guide and skills for email automation, flows, deliverability, analytics, compliance, email design, cold email, SMS/RCS, and industry playbooks.
+> - [Email Skills](https://github.com/chunkydotdev/email-skills) - Deep email expertise covering deliverability, sender authentication, sequences, lifecycle emails, content quality, compliance, operations, inbound processing, and security.
+> - [Claude Email](https://github.com/AgriciDaniel/claude-email) - Inbox triage, email copy frameworks (PAS, AIDA, BAB), pre-send quality review, deliverability audits, automation sequences, and marketing planning.
+> - [Email Marketing Skill](https://github.com/jacquescorbytuech/email-marketing-skill) - Strategy, deliverability, list building, segmentation, automation, copywriting, analytics, and ESP selection.
+> 
+> 
+> ## Paid Media, Creative, and Attribution
+> 
+> - [Advertising Skills](https://github.com/realkimbarrett/advertising-skills) - Direct-response paid acquisition, positioning, funnel architecture, creative testing, ad copy, and performance diagnosis.
+> - [NotFair](https://github.com/nowork-studio/NotFair) - Claude 
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]] · [[KKKKhazix--human-writing|KKKKhazix/human-writing]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityDev--WilonityLoader|WilonityDev/WilonityLoader]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/thebuggeddev/anatomy) · [官方網站](https://anatomy-livid.vercel.app)
+[GitHub](https://github.com/mikiarlo3/awesome-growth-hacking-skills)
 
 ## 相關收錄
 
@@ -294,7 +268,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "thebuggeddev--anatomy"
+> WHERE category = "Other" AND file.name != "mikiarlo3--awesome-growth-hacking-skills"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -303,7 +277,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "thebuggeddev--anatomy" AND status != "archived"
+> WHERE language = "Shell" AND file.name != "mikiarlo3--awesome-growth-hacking-skills" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -312,18 +286,18 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "thebuggeddev--anatomy"
+> WHERE week = "2026-W33" AND file.name != "mikiarlo3--awesome-growth-hacking-skills"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/mikiarlo3--awesome-growth-hacking-skills");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "thebuggeddev--anatomy" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "mikiarlo3--awesome-growth-hacking-skills" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -339,7 +313,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "thebuggeddev" AND file.name != "thebuggeddev--anatomy"
+> WHERE owner = "mikiarlo3" AND file.name != "mikiarlo3--awesome-growth-hacking-skills"
 > SORT stars DESC
 > ```
 
@@ -347,7 +321,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/mikiarlo3--awesome-growth-hacking-skills");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -364,7 +338,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/mikiarlo3--awesome-growth-hacking-skills");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -397,7 +371,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/mikiarlo3--awesome-growth-hacking-skills");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -421,7 +395,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/mikiarlo3--awesome-growth-hacking-skills");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -458,7 +432,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/mikiarlo3--awesome-growth-hacking-skills");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -541,7 +515,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-06** — 首次收錄
+> **2026-08-09** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -557,7 +531,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-09|2026-08-09]] — 再次上榜，2.0k stars
-- [[2026-08-08|2026-08-08]] — 再次上榜，2.0k stars
-- [[2026-08-07|2026-08-07]] — 再次上榜，1.9k stars
-- [[2026-08-06|2026-08-06]] — 首次收錄，1.6k stars
+- [[2026-08-09|2026-08-09]] — 首次收錄，765 stars

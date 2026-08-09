@@ -1,20 +1,20 @@
 ---
-repo: thebuggeddev/anatomy
-url: https://github.com/thebuggeddev/anatomy
-owner: thebuggeddev
+repo: 0xwilliamortiz/claude-red
+url: https://github.com/0xwilliamortiz/claude-red
+owner: 0xwilliamortiz
 owner_type: User
-language: TypeScript
-license: N/A
-description: "An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol"
-homepage: "https://anatomy-livid.vercel.app"
-stars: 2037
-stars_per_day: 340
-forks: 588
-open_issues: 16
-created: 2026-08-02
-pushed_at: 2026-08-02
-first_seen: 2026-08-06
-week: "2026-W32"
+language: JavaScript
+license: MIT
+description: "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development."
+homepage: ""
+stars: 681
+stars_per_day: 227
+forks: 86
+open_issues: 1
+created: 2026-08-05
+pushed_at: 2026-08-09
+first_seen: 2026-08-09
+week: "2026-W33"
 month: "2026-08"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-06
+last_reviewed: 2026-08-09
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-08-12"
-contributor_count: 2
+contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 215322
-readme_length: 3438
+repo_size_kb: 100822
+readme_length: 9932
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-06"
-star_history: "2026-08-06:1638,2026-08-07:1878,2026-08-08:1988,2026-08-09:2037"
+ring_history: "assess@2026-08-09"
+star_history: "2026-08-09:681"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/javascript"
+  - "topic/claude"
+  - "topic/claude_code"
+  - "topic/claude_code_plugin"
+  - "topic/claude_skills"
+  - "topic/codex"
 aliases:
-  - "anatomy"
-  - "thebuggeddev/anatomy"
+  - "claude-red"
+  - "0xwilliamortiz/claude-red"
 ---
 
-# anatomy
+# claude-red
 
-**1.6k** stars · **546** stars/天 · 建立 3 天前 · TypeScript · 未標註授權
+**681** stars · **227** stars/天 · 建立 3 天前 · JavaScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/thebuggeddev--anatomy");
+const me = dv.page("Repos/0xwilliamortiz--claude-red");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`個人專案`
+
+`claude` `claude-code` `claude-code-plugin` `claude-skills` `codex` `codex-skill` `redteam` `redteaming` `skill` `skills`
+
 > [!summary] 一句話摘要
-> An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
+> claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.
 
 ## 專案簡介
 
-An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
+claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/0xwilliamortiz--claude-red");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +125,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/0xwilliamortiz--claude-red");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,153 +149,251 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 461 |
-| Open Issues | 7 |
+| Forks | 86 |
+| Open Issues | 1 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-02 |
-| 建立日期 | 2026-08-02 |
-| 官方網站 | [Link](https://anatomy-livid.vercel.app) |
-| Repo 大小 | 210.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/thebuggeddev/anatomy) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `drizzle-orm` `gsap` `lucide-react` `next` `react` `react-dom` `three` `@cloudflare/vite-plugin` `@cloudflare/workers-types` `@tailwindcss/postcss` `@types/node` `@types/react` `@types/react-dom` `@types/three` `@vitejs/plugin-react`
+| 最後推送 | 2026-08-09 |
+| 建立日期 | 2026-08-05 |
+| Repo 大小 | 98.5 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/0xwilliamortiz/claude-red) |
+| Topics | `claude` `claude-code` `claude-code-plugin` `claude-skills` `codex` `codex-skill` `redteam` `redteaming` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 74
->     "CSS" : 22
->     "JavaScript" : 3
+>     "JavaScript" : 78
+>     "Python" : 17
+>     "Shell" : 4
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@thebuggeddev](https://github.com/thebuggeddev) | 5 |
-> | [@codex](https://github.com/codex) | 1 |
+> | [@0xwilliamortiz](https://github.com/0xwilliamortiz) | 3 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-02 ~ 2026-08-02）
-> **活躍天數** 1 天 · **最新 commit** feat: add Vercel configuration and update build scripts for Next.js integration
+> [!abstract] 最近 10 次 commit（2026-08-05 ~ 2026-08-09）
+> **活躍天數** 3 天 · **最新 commit** Update claude-red-ui.zip
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#4](https://github.com/thebuggeddev/anatomy/issues/4) | feat: Free static asset hosting alternative to Cloudflare Im | 3 | 0 |
-> | [#3](https://github.com/thebuggeddev/anatomy/issues/3) | Add multilingual support for the app | 0 | 0 |
+> | [#1](https://github.com/0xwilliamortiz/claude-red/issues/1) | Malware, go to the original https://github.com/SnailSploit/C | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # vinext-starter
+> # claude-red
 > 
-> A clean full-stack starter running on
-> [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-> Drizzle support.
+> **Offensive security skills for Claude — drop-in `SKILL.md` files that turn Claude into a context-aware red team operator.**
 > 
-> ## Prerequisites
+> [](LICENSE)
+> [](#skill-index)
+> [](#categories)
+> [](https://github.com/0xwilliamortiz/claude-red)
+> [](https://github.com/0xwilliamortiz/claude-red/network/members)
 > 
-> - Node.js `>=22.13.0`
+> Maintained by **[0xwilliamortiz](https://github.com/0xwilliamortiz)**.
 > 
-> ## Quick Start
+> ---
+> 
+> 
+> ## Quickstart
+> 
+> 
+> ### Bash installer (no Node)
 > 
 > ```bash
-> npm install
-> npm run dev
-> npm run build
+> ./install.sh
+> ./install.sh --target ~/.claude/skills
+> ./install.sh --category web
 > ```
 > 
-> This starter does not use `wrangler.jsonc`.
+> ---
 > 
-> ## Included Shape
 > 
-> - edit site code under `app/`
-> - `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-> - `vite.config.ts` simulates declared bindings for local development
-> - `db/schema.ts` starts intentionally empty
-> - `examples/d1/` contains an optional D1 example surface
-> - `drizzle.config.ts` supports local migration generation when needed
+> ## Table of Contents
 > 
-> ## Workspace Auth Headers
+> - [What is this](#what-is-this)
+> - [Quickstart](#quickstart)
+> - [Categories](#categories)
+> - [Skill Index](#skill-index)
+>   - [Web Application](#web-application)
+>   - [Auth & Identity](#auth--identity)
+>   - [Active Directory](#active-directory)
+>   - [Wireless](#wireless)
+>   - [Cloud](#cloud)
+>   - [Mobile](#mobile)
+>   - [IoT & Embedded](#iot--embedded)
+>   - [Infrastructure & Red Team](#infrastructure--red-team)
+>   - [Exploit Development](#exploit-development)
+>   - [Fuzzing & Vulnerability Research](#fuzzing--vulnerability-research)
+>   - [Reconnaissance](#reconnaissance)
+>   - [AI Security](#ai-security)
+>   - [Utility](#utility)
+> - [Roadmap](#roadmap)
+> - [Contributing](#contributing)
+> - [License](#license)
+> - [Acknowledgements](#acknowledgements)
 > 
-> OpenAI workspace sites can read the current user's email from
-> `oai-authenticated-user-email`.
+> ---
 > 
-> SIWC-authenticated workspace sites may also receive
-> `oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-> `name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-> `oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
 > 
-> Treat the full name as optional and fall back to email when it is absent:
+> ## What is this
 > 
-> ```tsx
-> import { headers } from "next/headers";
+> `claude-red` is a curated library of offensive security skills for the [Claude Skills system](https://docs.claude.com). Each skill is a structured `SKILL.md` file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to ADCS abuse.
 > 
-> export default async function Home() {
->   const requestHeaders = await headers();
->   const email = requestHeaders.get("oai-authenticated-user-email");
->   const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
->   const fullName =
->     encodedFullName &&
->     requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
->       "percent-encoded-utf-8"
->       ? decodeURIComponent(encodedFullName)
->       : null;
+> Drop a skill into your Claude environment and it behaves like a specialist: it knows the techniques, the tooling, the edge cases, and the escalation paths. Skills load on demand based on conversational triggers — you don't pay context for skills you aren't using.
 > 
->   const displayName = fullName ?? email;
->   // ...
-> }
+> On Windows, `claude-red` can also launch the companion UI binary when present.
+> 
+> **Use it for:** authorized red team engagements, bug bounty triage, security research, CTF preparation, training operators, and exploring attack surfaces methodically.
+> 
+> ---
+> 
+> 
+> ### npm (recommended)
+> 
+> ```bash
+> npm install -g .
+> claude-red
 > ```
 > 
-> ## Optional Dispatch-Owned ChatGPT Sign-In
+> ```bash
+> claude-red --target ~/.claude/skills/claude-red
+> claude-red --category web
+> claude-red list
+> claude-red ui
+> ```
 > 
-> Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-> optional or required ChatGPT sign-in:
+> Local checkout:
 > 
-> - Use `getChatGPTUser()` for optional signed-in UI.
-> - Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
->   anonymous visitors through Sign in with ChatGPT.
-> - Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
->   browser links or actions.
-> - Pass a same-origin relative `returnTo` path for the destination after sign-in
->   or sign-out. The helper validates and safely encodes it.
-> - Mark protected pages with `export const dynamic = "force-dynamic"` because
->   they depend on per-request identity headers.
+> ```bash
+> npm install -g .
+> claude-red
+> ```
 > 
-> Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-> OAuth cookies, and identity header injection. Do not implement app routes for
-> those reserved paths. Routes that do not import and call the helper remain
-> anonymous-compatible.
+> Claude auto-loads matching skills by conversational triggers (e.g. mentioning SQLi loads `offensive-sqli`).
 > 
-> SIWC establishes identity only; it does not prove workspace membership. Use the
-> Sites hosting platform's access policy controls for workspace-wide restrictions,
-> or enforce explicit server-side membership or allowlist checks.
 > 
-> Use SIWC for account pages, user-specific dashboards, saved records, and write
-> actions tied to the current ChatGPT user. Leave public content anonymous.
+> ### Git clone
 > 
-> ## Useful Commands
+> ```bash
+> git clone https://github.com/0xwilliamortiz/claude-red ~/.claude/skills/claude-red
+> ```
 > 
-> - `npm run dev`: start local development
-> - `npm run build`: verify the vinext build output
-> - `npm test`: build the starter and verify its rendered loading skeleton
-> - `npm run db:generate`: generate Drizzle migrations after schema changes
+> Sparse one category:
 > 
-> ## Learn More
+> ```bash
+> git clone --filter=blob:none --sparse https://github.com/0xwilliamortiz/claude-red
+> cd claude-red && git sparse-checkout set Skills/web Skills/active-directory
+> ```
 > 
-> - [vinext Documentation](https://github.com/cloudflare/vinext)
-> - [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+> 
+> ### Claude Code
+> 
+> ```bash
+> cat Skills/web/offensive-sqli/SKILL.md | claude --system-file -
+> cat Skills/active-directory/**/SKILL.md | claude --system-file -
+> ```
+> 
+> 
+> ### Claude.ai (Manual)
+> 
+> Paste the contents of a `SKILL.md` into a Project's system prompt or prepend to your conversation.
+> 
+> 
+> ## Categories
+> 
+> | Category | Skills | Focus |
+> |---|---:|---|
+> | [Web Application](#web-application) | 16 | OWASP Top 10 + business logic + advanced web bug classes |
+> | [Auth & Identity](#auth--identity) | 2 | JWT, OAuth |
+> | [Active Directory](#active-directory) | 1 | On-prem AD attack methodology *(expanding)* |
+> | [Wireless](#wireless) | 13 | 802.11, WPA2/3, EAP, WPS, evil-twin, BLE, Zigbee, Z-Wave, LoRa, sub-GHz |
+> | [Cloud](#cloud) | 1 | AWS / Azure / GCP attack paths *(expanding)* |
+> | [Mobile](#mobile) | 1 | Android + iOS pentest *(expanding)* |
+> | [IoT & Embedded](#iot--embedded) | 1 | Hardware, firmware, RTOS, ICS *(expanding)* |
+> | [Infrastructure & Red Team](#infrastructure--red-team) | 7 | Initial access, EDR evasion, Windows ops |
+> | [Exploit Development](#exploit-development) | 6 | Stack/heap, mitigations, crash analysis, TOCTOU |
+> | [Fuzzing & VR](#fuzzing--vulnerability-research) | 4 | libFuzzer, AFL++, bug ID, vuln classes |
+> | [Reconnaissance](#reconnaissance) | 2 | OSINT tooling and methodology |
+> | [AI Security](#ai-security) | 1 | Prompt injection, jailbreaks, RAG poisoning |
+> | [Utility](#utility) | 2 | Fast-checking, professional reporting |
+> 
+> ---
+> 
+> 
+> ## Skill Index
+> 
+> 
+> ### Web Application
+> 
+> `Skills/web/`
+> 
+> | Skill | Description |
+> |---|---|
+> | [`offensive-sqli`](Skills/web/offensive-sqli/SKILL.md) | SQL injection — error/blind/OOB, DB-specific, ORM CVEs, cloud paths |
+> | [`offensive-xss`](Skills/web/offensive-xss/SKILL.md) | Cross-site scripting — stored, reflected, DOM, mutation |
+> | [`offensive-ssrf`](Skills/web/offensive-ssrf/SKILL.md) | Server-side request forgery — cloud metadata, filter bypass |
+> | [`offensive-ssti`](Skills/web/offensive-ssti/SKILL.md) | Server-side template injection — engine ID, RCE paths |
+> | [`offensive-xxe`](Skills/web/offensive-xxe/SKILL.md) | XML external entity — OOB exfil, blind exploitation |
+> | [`offensive-idor`](Skills/web/offensive-idor/SKILL.md) | Insecure direct object references — enumeration, business logic |
+> | [`offensive-file-upload`](Skills/web/offensive-file-upload/SKILL.md) | File upload — extension bypass, polyglots, webshells |
+> | [`offensive-rce`](Skills/web/offensive-rce/SKILL.md) | Remote code execution — chaining, command injection |
+> | [`offensive-deserialization`](Skills/web/offensive-deserialization/SKILL.md) | Insecure deserialization — Java/PHP/.NET gadget chains |
+> | [`offensive-race-condition`](Skills/web/offensive-race-condition/SKILL.md) | Race conditions — TOCTOU, single-packet, limit bypass |
+> | [`offensive-request-smuggling`](Skills/web/offensive-request-smuggling/SKILL.md) | HTTP request smuggling — CL.TE, TE.CL, h2 desync |
+> | [`offensive-open-redirect`](Skills/web/offensive-open-redirect/SKILL.md) | Open redirect — OAuth abuse, phishing, SSRF pivots |
+> | [`offensive-parameter-pollution`](Skills/web/offensive-parameter-pollution/SKILL.md) | HTTP parameter pollution — WAF bypass, logic confusion |
+> | [`offensive-graphql`](Skills/web/offensive-graphql/SKILL.md) | GraphQL — introspection, batching, IDOR via aliases |
+> | [`offensive-waf-bypass`](Skills/web/offensive-waf-bypass/SKILL.md) | WAF bypass — encoding, chunking, case mutation |
+> | [`offensive-business-logic`](Skills/web/offensive-business-logic/SKILL.md) | Business logic — workflow bypass, pricing, refunds, chains |
+> 
+> 
+> ### Auth & Identity
+> 
+> `Skills/auth/`
+> 
+> | Skill | Description |
+> |---|---|
+> | [`offensive-jwt`](Skills/auth/offensive-jwt/SKILL.md) | JWT — alg:none, key confusion, secret cracking |
+> | [`offensive-oauth`](Skills/auth/offensive-oauth/SKILL.md) | OAuth — open redirect abuse, token leakage, PKCE bypass |
+> 
+> 
+> ### Active Directory
+> 
+> `Skills/active-directory/`
+> 
+> | Skill | Description |
+> |---|---|
+> | [`offensive-active-directory`](Skills/active-directory/offensive-active-directory/SKILL.md) | AD — Kerberoast, ASREProast, ACL abuse, ADCS ESC1-15, delegation, persistence, hybrid AAD |
+> 
+> > **Note:** This category is being expanded. The AD overview is being split into 16 focused skills (Kerberoasting, ASREProasting, ADCS, coercion, NTLM relay, BloodHound, ticket forgery, GPO abuse, etc.). See [Roadmap](#roadmap).
+> 
+> 
+> ### Wireless
+> 
+> `Skills/wireless/`
+> 
+> | Skill | Description |
+> |---|---|
+> | [`offensive-wifi`](Skills/wireless/offensive-wifi/SKILL.md) | 802.11 overview — entrypoint into the wireless category |
+> | [`offensive-wifi-recon`](Skills/wireless/offensive-wifi-recon/SKILL.md) | Adapter selection, monitor mode, multi-band airspace mapping |
+> | [`offensive-wpa2-psk`](Skills/wireless/offensive-wpa2-psk/SKILL.md) | Handshake capture, PMKID, hashcat 22000 cracking |
+> | [`offensive-wpa3-sae`](Skills/wireless/offensive-wpa3-sae/SKILL.md) | Transition-mode downgrade, Dragonblood, SAE side-channels |
+> | [`offensive-wpa-enterprise`](Skills/wireless/offensive-wpa-enterprise/SKILL.md) | 802.1X / EAP attacks, eaphammer evil-twin RADIUS |
+> | [`offensive-wps`](Skills/wireless/offensive-wps/SKILL.md) | Pixie Dust, online PIN brute, vendor PIN generators |
+> | [`offensive-evil
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]] · [[KKKKhazix--human-writing|KKKKhazix/human-writing]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityDev--WilonityLoader|WilonityDev/WilonityLoader]]
+相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]]
 
-[GitHub](https://github.com/thebuggeddev/anatomy) · [官方網站](https://anatomy-livid.vercel.app)
+[GitHub](https://github.com/0xwilliamortiz/claude-red)
 
 ## 相關收錄
 
@@ -294,7 +401,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "thebuggeddev--anatomy"
+> WHERE category = "Other" AND file.name != "0xwilliamortiz--claude-red"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -303,7 +410,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "thebuggeddev--anatomy" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "0xwilliamortiz--claude-red" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -312,18 +419,18 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "thebuggeddev--anatomy"
+> WHERE week = "2026-W33" AND file.name != "0xwilliamortiz--claude-red"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/0xwilliamortiz--claude-red");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "thebuggeddev--anatomy" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "0xwilliamortiz--claude-red" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -339,7 +446,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "thebuggeddev" AND file.name != "thebuggeddev--anatomy"
+> WHERE owner = "0xwilliamortiz" AND file.name != "0xwilliamortiz--claude-red"
 > SORT stars DESC
 > ```
 
@@ -347,7 +454,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/0xwilliamortiz--claude-red");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -364,7 +471,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/0xwilliamortiz--claude-red");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -397,7 +504,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/0xwilliamortiz--claude-red");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -421,7 +528,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/0xwilliamortiz--claude-red");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -458,7 +565,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/0xwilliamortiz--claude-red");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -541,7 +648,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-06** — 首次收錄
+> **2026-08-09** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -557,7 +664,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-09|2026-08-09]] — 再次上榜，2.0k stars
-- [[2026-08-08|2026-08-08]] — 再次上榜，2.0k stars
-- [[2026-08-07|2026-08-07]] — 再次上榜，1.9k stars
-- [[2026-08-06|2026-08-06]] — 首次收錄，1.6k stars
+- [[2026-08-09|2026-08-09]] — 首次收錄，681 stars

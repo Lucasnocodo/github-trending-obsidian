@@ -3368,10 +3368,10 @@
   },
   "firecrawl/anydoc": {
     "first_seen": "2026-08-05",
-    "last_seen": "2026-08-08",
-    "times_seen": 4,
+    "last_seen": "2026-08-09",
+    "times_seen": 5,
     "stars_first": 1867,
-    "stars_last": 11134
+    "stars_last": 12179
   },
   "genspark-ai/genoffice": {
     "first_seen": "2026-08-05",
@@ -3382,38 +3382,38 @@
   },
   "thebuggeddev/anatomy": {
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-08",
-    "times_seen": 3,
+    "last_seen": "2026-08-09",
+    "times_seen": 4,
     "stars_first": 1638,
-    "stars_last": 1988
+    "stars_last": 2037
   },
   "KKKKhazix/human-writing": {
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-08",
-    "times_seen": 3,
+    "last_seen": "2026-08-09",
+    "times_seen": 4,
     "stars_first": 1230,
-    "stars_last": 1889
+    "stars_last": 1991
   },
   "Binaryify/open-kimi-ppt-skill": {
     "first_seen": "2026-08-07",
-    "last_seen": "2026-08-08",
-    "times_seen": 2,
+    "last_seen": "2026-08-09",
+    "times_seen": 3,
     "stars_first": 1456,
-    "stars_last": 1586
+    "stars_last": 1588
   },
   "ZzzLc0405/photo-abstract-editorial": {
     "first_seen": "2026-08-07",
-    "last_seen": "2026-08-08",
-    "times_seen": 2,
+    "last_seen": "2026-08-09",
+    "times_seen": 3,
     "stars_first": 1092,
-    "stars_last": 1502
+    "stars_last": 1751
   },
   "Accio-org/RealReplicaBench": {
     "first_seen": "2026-08-08",
-    "last_seen": "2026-08-08",
-    "times_seen": 1,
+    "last_seen": "2026-08-09",
+    "times_seen": 2,
     "stars_first": 1040,
-    "stars_last": 1040
+    "stars_last": 1042
   },
   "Zeejay0/gathered-scenes-zine-skill": {
     "first_seen": "2026-08-08",
@@ -3421,5 +3421,33 @@
     "times_seen": 1,
     "stars_first": 970,
     "stars_last": 970
+  },
+  "magicrew/doc7": {
+    "first_seen": "2026-08-09",
+    "last_seen": "2026-08-09",
+    "times_seen": 1,
+    "stars_first": 787,
+    "stars_last": 787
+  },
+  "mikiarlo3/awesome-growth-hacking-skills": {
+    "first_seen": "2026-08-09",
+    "last_seen": "2026-08-09",
+    "times_seen": 1,
+    "stars_first": 765,
+    "stars_last": 765
+  },
+  "0xwilliamortiz/claude-red": {
+    "first_seen": "2026-08-09",
+    "last_seen": "2026-08-09",
+    "times_seen": 1,
+    "stars_first": 681,
+    "stars_last": 681
+  },
+  "sophiamyang/finger-frame-effect-ai": {
+    "first_seen": "2026-08-09",
+    "last_seen": "2026-08-09",
+    "times_seen": 1,
+    "stars_first": 626,
+    "stars_last": 626
   }
 }

@@ -1,20 +1,20 @@
 ---
-repo: thebuggeddev/anatomy
-url: https://github.com/thebuggeddev/anatomy
-owner: thebuggeddev
+repo: sophiamyang/finger-frame-effect-ai
+url: https://github.com/sophiamyang/finger-frame-effect-ai
+owner: sophiamyang
 owner_type: User
-language: TypeScript
+language: JavaScript
 license: N/A
-description: "An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol"
-homepage: "https://anatomy-livid.vercel.app"
-stars: 2037
-stars_per_day: 340
-forks: 588
-open_issues: 16
+description: ""
+homepage: ""
+stars: 626
+stars_per_day: 104
+forks: 73
+open_issues: 2
 created: 2026-08-02
-pushed_at: 2026-08-02
-first_seen: 2026-08-06
-week: "2026-W32"
+pushed_at: 2026-08-07
+first_seen: 2026-08-09
+week: "2026-W33"
 month: "2026-08"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-06
+last_reviewed: 2026-08-09
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-08-12"
-contributor_count: 2
+appearances: 1
+next_review: "2026-08-16"
+contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 215322
-readme_length: 3438
+repo_size_kb: 29309
+readme_length: 3899
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-06"
-star_history: "2026-08-06:1638,2026-08-07:1878,2026-08-08:1988,2026-08-09:2037"
+ring_history: "assess@2026-08-09"
+star_history: "2026-08-09:626"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/javascript"
 aliases:
-  - "anatomy"
-  - "thebuggeddev/anatomy"
+  - "finger-frame-effect-ai"
+  - "sophiamyang/finger-frame-effect-ai"
 ---
 
-# anatomy
+# finger-frame-effect-ai
 
-**1.6k** stars · **546** stars/天 · 建立 3 天前 · TypeScript · 未標註授權
+**626** stars · **104** stars/天 · 建立 6 天前 · JavaScript · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/thebuggeddev--anatomy");
+const me = dv.page("Repos/sophiamyang--finger-frame-effect-ai");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`個人專案`
+
 > [!summary] 一句話摘要
-> An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
+> No description
 
 ## 專案簡介
 
-An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/sophiamyang--finger-frame-effect-ai");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +118,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/sophiamyang--finger-frame-effect-ai");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,153 +142,127 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 461 |
-| Open Issues | 7 |
+| Forks | 73 |
+| Open Issues | 2 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-02 |
+| 最後推送 | 2026-08-07 |
 | 建立日期 | 2026-08-02 |
-| 官方網站 | [Link](https://anatomy-livid.vercel.app) |
-| Repo 大小 | 210.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/thebuggeddev/anatomy) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `drizzle-orm` `gsap` `lucide-react` `next` `react` `react-dom` `three` `@cloudflare/vite-plugin` `@cloudflare/workers-types` `@tailwindcss/postcss` `@types/node` `@types/react` `@types/react-dom` `@types/three` `@vitejs/plugin-react`
+| Repo 大小 | 28.6 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/sophiamyang/finger-frame-effect-ai) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 74
->     "CSS" : 22
->     "JavaScript" : 3
+>     "JavaScript" : 42
+>     "Python" : 33
+>     "HTML" : 25
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@thebuggeddev](https://github.com/thebuggeddev) | 5 |
-> | [@codex](https://github.com/codex) | 1 |
+> | [@sophiamyang](https://github.com/sophiamyang) | 17 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-02 ~ 2026-08-02）
-> **活躍天數** 1 天 · **最新 commit** feat: add Vercel configuration and update build scripts for Next.js integration
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#4](https://github.com/thebuggeddev/anatomy/issues/4) | feat: Free static asset hosting alternative to Cloudflare Im | 3 | 0 |
-> | [#3](https://github.com/thebuggeddev/anatomy/issues/3) | Add multilingual support for the app | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-03 ~ 2026-08-07）
+> **活躍天數** 2 天 · **最新 commit** Revert "Add finger-pet to the finger-frame family table"
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # vinext-starter
+> # Finger Frame AI 🎬✨
 > 
-> A clean full-stack starter running on
-> [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-> Drizzle support.
+> **Try it: https://sophiamyang.github.io/finger-frame-effect-ai/**
 > 
-> ## Prerequisites
+> Upload a video of the two-hand finger-frame gesture — get it back with an
+> **AI-generated world inside the frame**. The whole video is restyled by a
+> video-to-video model (motion, blinks, and all), then composited so the
+> finger frame acts as a window into the animated version.
 > 
-> - Node.js `>=22.13.0`
+> ## The finger-frame family
 > 
-> ## Quick Start
+> | App | Generation | Latency |
+> |---|---|---|
+> | [finger-frame-effect](https://sophiamyang.github.io/finger-frame-effect/) ([repo](https://github.com/sophiamyang/finger-frame-effect)) — live camera, local effects | Canvas 2D (Van Gogh, toon, glitch, …) | none |
+> | **this app** — recorded video, AI restyle | Gemini Omni Flash (offline video edit) | minutes |
+> | [finger-frame-effect-lucy](https://sophiamyang.github.io/finger-frame-effect-lucy/) ([repo](https://github.com/sophiamyang/finger-frame-effect-lucy)) — live camera, live AI | Decart Lucy 2.5 (realtime video-to-video) | ~real time |
+> 
+> *Real hands, AI world — generated with the default "3D animated movie"
+> style ([full-quality mp4](examples/final.mp4)).*
+> 
+> ## How it works
+> 
+> 1. **Restyle** — the uploaded video is sent to
+>    [Gemini Omni Flash video editing](https://ai.google.dev/gemini-api/docs/omni)
+>    with your chosen style (3D animated movie, anime, claymation,
+>    watercolor, or a custom prompt). This is a true video model: the whole
+>    clip is regenerated, so the animated version moves exactly like you.
+>    Every prompt gets a strict-alignment suffix appended — same framing, no
+>    zoom/crop/recentering, facial features at the same screen coordinates,
+>    expression preserved frame by frame (mouth openness, blinks, gaze) — so
+>    the result lines up behind the finger-frame window.
+> 2. **Track** — MediaPipe Hand Landmarker finds both hands per frame, and the
+>    finger-frame quad is tracked with the same audited pipeline as the live
+>    app (anatomical corner ordering — crossing your fingers renders the
+>    bowtie — spread/area gates with hysteresis, teleport rejection,
+>    velocity-adaptive smoothing, dropout hold, presence fade).
+> 3. **Composite** — the AI video is revealed through the tracked quad with
+>    the dashed marching-ants outline and pulsing corner dots.
+> 4. **Export** — the result records to a downloadable video — MP4 where the
+>    browser supports recording it (Safari, newer Chrome), otherwise `.webm`
+>    (convert with `ffmpeg -i finger-frame-ai.webm -c:v libx264 out.mp4`).
+> 
+> ## Bring your own key
+> 
+> The AI step uses your own [Gemini API key](https://aistudio.google.com/apikey),
+> entered in the app. It stays in your browser (localStorage only if you check
+> "remember") and is sent only to Google's API. Generation is billed per
+> video and takes a few minutes. Keep clips under ~15MB (a few seconds of
+> 720p — any common format: mp4, mov, webm); larger files exceed the inline
+> upload limit. No key? The **placeholder style** button runs the full
+> track-composite-export pipeline with a hue-shifted stand-in so you can try
+> everything for free.
+> 
+> ## Run locally
+> 
+> Any static server works:
 > 
 > ```bash
-> npm install
-> npm run dev
-> npm run build
+> python3 -m http.server 8124
 > ```
 > 
-> This starter does not use `wrangler.jsonc`.
+> Then open http://localhost:8124. A `?src=` query param loads a video
+> from the server directory (dev convenience).
 > 
-> ## Included Shape
+> ## CLI alternative (Python)
 > 
-> - edit site code under `app/`
-> - `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-> - `vite.config.ts` simulates declared bindings for local development
-> - `db/schema.ts` starts intentionally empty
-> - `examples/d1/` contains an optional D1 example surface
-> - `drizzle.config.ts` supports local migration generation when needed
+> The same pipeline as offline scripts — useful for batch work or
+> frame-accurate H.264 output:
 > 
-> ## Workspace Auth Headers
+> ```bash
+> python3 -m venv .venv
+> .venv/bin/pip install -r requirements.txt
 > 
-> OpenAI workspace sites can read the current user's email from
-> `oai-authenticated-user-email`.
-> 
-> SIWC-authenticated workspace sites may also receive
-> `oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-> `name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-> `oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-> 
-> Treat the full name as optional and fall back to email when it is absent:
-> 
-> ```tsx
-> import { headers } from "next/headers";
-> 
-> export default async function Home() {
->   const requestHeaders = await headers();
->   const email = requestHeaders.get("oai-authenticated-user-email");
->   const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
->   const fullName =
->     encodedFullName &&
->     requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
->       "percent-encoded-utf-8"
->       ? decodeURIComponent(encodedFullName)
->       : null;
-> 
->   const displayName = fullName ?? email;
->   // ...
-> }
+> export GEMINI_API_KEY=...
+> .venv/bin/python stylize.py input.mp4 -o stylized.mp4      # AI restyle
+> .venv/bin/python composite.py input.mp4 stylized.mp4 -o final.mp4
 > ```
 > 
-> ## Optional Dispatch-Owned ChatGPT Sign-In
+> Any input format ffmpeg/OpenCV can read works (mp4, mov, webm, …).
+> `composite.py` needs `ffmpeg` on PATH, outputs H.264 MP4, and carries over
+> the original audio track when present.
 > 
-> Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-> optional or required ChatGPT sign-in:
+> ## Notes
 > 
-> - Use `getChatGPTUser()` for optional signed-in UI.
-> - Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
->   anonymous visitors through Sign in with ChatGPT.
-> - Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
->   browser links or actions.
-> - Pass a same-origin relative `returnTo` path for the destination after sign-in
->   or sign-out. The helper validates and safely encodes it.
-> - Mark protected pages with `export const dynamic = "force-dynamic"` because
->   they depend on per-request identity headers.
-> 
-> Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-> OAuth cookies, and identity header injection. Do not implement app routes for
-> those reserved paths. Routes that do not import and call the helper remain
-> anonymous-compatible.
-> 
-> SIWC establishes identity only; it does not prove workspace membership. Use the
-> Sites hosting platform's access policy controls for workspace-wide restrictions,
-> or enforce explicit server-side membership or allowlist checks.
-> 
-> Use SIWC for account pages, user-specific dashboards, saved records, and write
-> actions tied to the current ChatGPT user. Leave public content anonymous.
-> 
-> ## Useful Commands
-> 
-> - `npm run dev`: start local development
-> - `npm run build`: verify the vinext build output
-> - `npm test`: build the starter and verify its rendered loading skeleton
-> - `npm run db:generate`: generate Drizzle migrations after schema changes
-> 
-> ## Learn More
-> 
-> - [vinext Documentation](https://github.com/cloudflare/vinext)
-> - [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+> - Input/output media are gitignored — personal footage stays local. The
+>   only committed media is the sample under `examples/`.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]] · [[KKKKhazix--human-writing|KKKKhazix/human-writing]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityDev--WilonityLoader|WilonityDev/WilonityLoader]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/thebuggeddev/anatomy) · [官方網站](https://anatomy-livid.vercel.app)
+[GitHub](https://github.com/sophiamyang/finger-frame-effect-ai)
 
 ## 相關收錄
 
@@ -294,7 +270,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "thebuggeddev--anatomy"
+> WHERE category = "Other" AND file.name != "sophiamyang--finger-frame-effect-ai"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -303,7 +279,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "thebuggeddev--anatomy" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "sophiamyang--finger-frame-effect-ai" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -312,18 +288,18 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "thebuggeddev--anatomy"
+> WHERE week = "2026-W33" AND file.name != "sophiamyang--finger-frame-effect-ai"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/sophiamyang--finger-frame-effect-ai");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "thebuggeddev--anatomy" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "sophiamyang--finger-frame-effect-ai" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -339,7 +315,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "thebuggeddev" AND file.name != "thebuggeddev--anatomy"
+> WHERE owner = "sophiamyang" AND file.name != "sophiamyang--finger-frame-effect-ai"
 > SORT stars DESC
 > ```
 
@@ -347,7 +323,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/sophiamyang--finger-frame-effect-ai");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -364,7 +340,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/sophiamyang--finger-frame-effect-ai");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -397,7 +373,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/sophiamyang--finger-frame-effect-ai");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -421,7 +397,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/sophiamyang--finger-frame-effect-ai");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -458,7 +434,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/sophiamyang--finger-frame-effect-ai");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -541,7 +517,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-06** — 首次收錄
+> **2026-08-09** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -557,7 +533,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-09|2026-08-09]] — 再次上榜，2.0k stars
-- [[2026-08-08|2026-08-08]] — 再次上榜，2.0k stars
-- [[2026-08-07|2026-08-07]] — 再次上榜，1.9k stars
-- [[2026-08-06|2026-08-06]] — 首次收錄，1.6k stars
+- [[2026-08-09|2026-08-09]] — 首次收錄，626 stars

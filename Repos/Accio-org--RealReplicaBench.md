@@ -7,12 +7,12 @@ language: HTML
 license: Apache-2.0
 description: "RealReplicaBench: Benchmarking Long-Horizon Agents in High-Fidelity, Stateful, and Reproducible Replicas of Real Online Services"
 homepage: "https://realreplicabench.site.accio.ai/"
-stars: 1040
-stars_per_day: 208
-forks: 79
-open_issues: 0
+stars: 1042
+stars_per_day: 174
+forks: 80
+open_issues: 3
 created: 2026-08-02
-pushed_at: 2026-08-06
+pushed_at: 2026-08-08
 first_seen: 2026-08-08
 week: "2026-W32"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-11"
+appearances: 2
+next_review: "2026-08-16"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-08"
-star_history: "2026-08-08:1040"
+star_history: "2026-08-08:1040,2026-08-09:1042"
 tags:
   - github
   - "category/other"
@@ -654,4 +654,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-09|2026-08-09]] — 再次上榜，1.0k stars
 - [[2026-08-08|2026-08-08]] — 首次收錄，1.0k stars

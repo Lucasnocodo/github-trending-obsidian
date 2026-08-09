@@ -1,63 +1,69 @@
 ---
-repo: thebuggeddev/anatomy
-url: https://github.com/thebuggeddev/anatomy
-owner: thebuggeddev
-owner_type: User
-language: TypeScript
-license: N/A
-description: "An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol"
-homepage: "https://anatomy-livid.vercel.app"
-stars: 2037
-stars_per_day: 340
-forks: 588
-open_issues: 16
+repo: magicrew/doc7
+url: https://github.com/magicrew/doc7
+owner: magicrew
+owner_type: Organization
+language: Go
+license: MIT
+description: "Turn documents into AI-ready Markdown with visual understanding"
+homepage: ""
+stars: 787
+stars_per_day: 131
+forks: 27
+open_issues: 0
 created: 2026-08-02
-pushed_at: 2026-08-02
-first_seen: 2026-08-06
-week: "2026-W32"
+pushed_at: 2026-08-07
+first_seen: 2026-08-09
+week: "2026-W33"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.1.2"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-06
+last_reviewed: 2026-08-09
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-08-12"
-contributor_count: 2
-engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 215322
-readme_length: 3438
+appearances: 1
+next_review: "2026-08-16"
+contributor_count: 1
+engagement: "low"
+issue_close_rate: 100
+repo_size_kb: 508
+readme_length: 9927
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 2
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-06"
-star_history: "2026-08-06:1638,2026-08-07:1878,2026-08-08:1988,2026-08-09:2037"
+ring_history: "assess@2026-08-09"
+star_history: "2026-08-09:787"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/go"
+  - org
+  - "topic/document_ai"
+  - "topic/docx_to_markdown"
+  - "topic/local_ai"
+  - "topic/markdown"
+  - "topic/multimodal"
 aliases:
-  - "anatomy"
-  - "thebuggeddev/anatomy"
+  - "doc7"
+  - "magicrew/doc7"
 ---
 
-# anatomy
+# doc7
 
-**1.6k** stars · **546** stars/天 · 建立 3 天前 · TypeScript · 未標註授權
+**787** stars · **131** stars/天 · 建立 6 天前 · Go · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/thebuggeddev--anatomy");
+const me = dv.page("Repos/magicrew--doc7");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`ORG` `v0.1.2`
+
+`document-ai` `docx-to-markdown` `local-ai` `markdown` `multimodal` `open-source` `pdf-to-markdown` `vision-language-model`
+
 > [!summary] 一句話摘要
-> An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
+> Turn documents into AI-ready Markdown with visual understanding
 
 ## 專案簡介
 
-An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
+Turn documents into AI-ready Markdown with visual understanding
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/magicrew--doc7");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +126,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/magicrew--doc7");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,153 +150,236 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 461 |
-| Open Issues | 7 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-02 |
+| Forks | 27 |
+| Open Issues | 0 |
+| Issue 解決率 | 100% (1 closed) |
+| 最後推送 | 2026-08-07 |
 | 建立日期 | 2026-08-02 |
-| 官方網站 | [Link](https://anatomy-livid.vercel.app) |
-| Repo 大小 | 210.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/thebuggeddev/anatomy) |
+| Repo 大小 | 508 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/magicrew/doc7) |
+| Topics | `document-ai` `docx-to-markdown` `local-ai` `markdown` `multimodal` `open-source` `pdf-to-markdown` `vision-language-model` |
 
 > [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `drizzle-orm` `gsap` `lucide-react` `next` `react` `react-dom` `three` `@cloudflare/vite-plugin` `@cloudflare/workers-types` `@tailwindcss/postcss` `@types/node` `@types/react` `@types/react-dom` `@types/three` `@vitejs/plugin-react`
+> `go.mod` 中的核心套件：
+> `module` `github.com/AkmalOt/gomsg` `github.com/hhrutter/tiff` `github.com/mattn/go-colorable` `github.com/mattn/go-isatty` `github.com/modelcontextprotocol/go-sdk` `github.com/spf13/cobra` `github.com/yuin/goldmark` `golang.org/x/image` `golang.org/x/net` `golang.org/x/sys` `golang.org/x/term` `github.com/google/jsonschema-go` `github.com/inconshreveable/mousetrap` `github.com/richardlehane/mscfb`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 74
->     "CSS" : 22
->     "JavaScript" : 3
+>     "Go" : 94
+>     "PowerShell" : 3
+>     "Shell" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@thebuggeddev](https://github.com/thebuggeddev) | 5 |
-> | [@codex](https://github.com/codex) | 1 |
+> | [@esowt](https://github.com/esowt) | 5 |
+
+**最新版本**：v0.1.2 (2026-08-07)
+
+> [!info]- Release Notes
+> ## What's Changed
+> * Improve installer onboarding by @esowt in https://github.com/magicrew/doc7/pull/2
+> * Fix Windows installer checksum matching by @esowt in https://github.com/magicrew/doc7/pull/5
+> 
+> 
+> **Full Changelog**: https://github.com/magicrew/doc7/compare/v0.1.1...v0.1.2
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-02 ~ 2026-08-02）
-> **活躍天數** 1 天 · **最新 commit** feat: add Vercel configuration and update build scripts for Next.js integration
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#4](https://github.com/thebuggeddev/anatomy/issues/4) | feat: Free static asset hosting alternative to Cloudflare Im | 3 | 0 |
-> | [#3](https://github.com/thebuggeddev/anatomy/issues/3) | Add multilingual support for the app | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-02 ~ 2026-08-07）
+> **活躍天數** 3 天 · **最新 commit** Fix Windows installer checksum matching
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # vinext-starter
+> doc7
+>   Any document in. AI-ready Markdown out.
+>   Turn PDFs, Office files, scans, screenshots, charts, formulas, and diagrams into Markdown your AI can search, quote, and reason over.
+>   简体中文 · English
+>   GitHub · Releases · Benchmark
 > 
-> A clean full-stack starter running on
-> [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-> Drizzle support.
+> [](https://github.com/magicrew/doc7/actions/workflows/build.yml) [](https://github.com/magicrew/doc7/releases) [](./LICENSE)
 > 
-> ## Prerequisites
+> [](#quick-start)
 > 
-> - Node.js `>=22.13.0`
+> `doc7` turns PDFs, Office files, scans, screenshots, charts, formulas, and
+> diagrams into Markdown through your own OpenAI-compatible multimodal model.
+> No required OCR stack. No document-processing service lock-in.
+> 
 > 
 > ## Quick Start
 > 
+> Install doc7, start a local vision model in LM Studio or Ollama, then convert a
+> document:
+> 
 > ```bash
-> npm install
-> npm run dev
-> npm run build
+> 
+> ## Detailed Setup and Usage
+> 
+> **Download:** [macOS, Linux, and Windows CLI archives](https://github.com/magicrew/doc7/releases)
+> 
+> Install the latest release without administrator privileges.
+> 
+> macOS or Linux:
+> 
+> ```bash
+> curl -fsSL https://raw.githubusercontent.com/magicrew/doc7/main/scripts/install.sh | bash
 > ```
 > 
-> This starter does not use `wrangler.jsonc`.
+> Windows PowerShell:
 > 
-> ## Included Shape
-> 
-> - edit site code under `app/`
-> - `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-> - `vite.config.ts` simulates declared bindings for local development
-> - `db/schema.ts` starts intentionally empty
-> - `examples/d1/` contains an optional D1 example surface
-> - `drizzle.config.ts` supports local migration generation when needed
-> 
-> ## Workspace Auth Headers
-> 
-> OpenAI workspace sites can read the current user's email from
-> `oai-authenticated-user-email`.
-> 
-> SIWC-authenticated workspace sites may also receive
-> `oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-> `name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-> `oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-> 
-> Treat the full name as optional and fall back to email when it is absent:
-> 
-> ```tsx
-> import { headers } from "next/headers";
-> 
-> export default async function Home() {
->   const requestHeaders = await headers();
->   const email = requestHeaders.get("oai-authenticated-user-email");
->   const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
->   const fullName =
->     encodedFullName &&
->     requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
->       "percent-encoded-utf-8"
->       ? decodeURIComponent(encodedFullName)
->       : null;
-> 
->   const displayName = fullName ?? email;
->   // ...
-> }
+> ```powershell
+> irm https://raw.githubusercontent.com/magicrew/doc7/main/scripts/install.ps1 | iex
 > ```
 > 
-> ## Optional Dispatch-Owned ChatGPT Sign-In
+> The installer is the recommended macOS path. It downloads a checksum-verified
+> release and installs it under your user directory, so it does not require an
+> administrator account or an Apple Developer ID. Directly opening a binary
+> downloaded by a browser is different: macOS may attach a quarantine attribute
+> to that file. If you choose the archive path, run the included command from
+> Terminal after extracting it:
 > 
-> Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-> optional or required ChatGPT sign-in:
+> ```bash
+> xattr -dr com.apple.quarantine 
+> ```
 > 
-> - Use `getChatGPTUser()` for optional signed-in UI.
-> - Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
->   anonymous visitors through Sign in with ChatGPT.
-> - Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
->   browser links or actions.
-> - Pass a same-origin relative `returnTo` path for the destination after sign-in
->   or sign-out. The helper validates and safely encodes it.
-> - Mark protected pages with `export const dynamic = "force-dynamic"` because
->   they depend on per-request identity headers.
+> This removes the local download quarantine; it is not Apple signing or
+> notarization. Official Developer ID signing and notarization require an Apple
+> Developer Program account and are planned for a future signed release channel.
 > 
-> Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-> OAuth cookies, and identity header injection. Do not implement app routes for
-> those reserved paths. Routes that do not import and call the helper remain
-> anonymous-compatible.
+> Start LM Studio or Ollama, load a local vision model, and convert a file:
 > 
-> SIWC establishes identity only; it does not prove workspace membership. Use the
-> Sites hosting platform's access policy controls for workspace-wide restrictions,
-> or enforce explicit server-side membership or allowlist checks.
+> ```bash
+> doc7 report.pdf
+> doc7 screenshot.png
+> ```
 > 
-> Use SIWC for account pages, user-specific dashboards, saved records, and write
-> actions tied to the current ChatGPT user. Leave public content anonymous.
+> That is the complete first-run flow. doc7 detects the system language, finds
+> running local model servers, reads their real model IDs, lets you choose when
+> several models are available, verifies image understanding, and saves the
+> choice on this machine. LM Studio and Ollama endpoints without authentication
+> need no API key.
 > 
-> ## Useful Commands
+> `chat` is a small agent running on the configured local model. Ordinary messages
+> go directly to the model and do not need a document. Run it without a message for
+> an interactive session:
 > 
-> - `npm run dev`: start local development
-> - `npm run build`: verify the vinext build output
-> - `npm test`: build the starter and verify its rendered loading skeleton
-> - `npm run db:generate`: generate Drizzle migrations after schema changes
+> ```bash
+> doc7 chat "Hello, introduce yourself"
+> doc7 chat
+> ```
 > 
-> ## Learn More
+> When the user explicitly supplies a file, directory, or URL and asks doc7 to
+> process it, the model can call the restricted `convert_document` tool:
 > 
-> - [vinext Documentation](https://github.com/cloudflare/vinext)
-> - [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+> ```bash
+> doc7 chat "Turn report.pdf into knowledge-base Markdown"
+> ```
+> 
+> There is no keyword or language-specific intent parser. The model decides whether
+> to use tools through OpenAI-compatible Tool Calling. For a vague filename, Chat can
+> use a structured read-only filesystem tool set (`pwd`, `ls`, `find`, `file`, `stat`,
+> `wc`, and `realpath`) inside authorized directories, then ask you to choose a
+> candidate before conversion. It never receives an arbitrary shell string: there are
+> no pipes, redirects, scripts, writes, network commands, or process controls.
+> 
+> The session starts with the working directory and existing Desktop, Documents, and
+> Downloads directories. Other directories require an explicit path entered in the
+> local terminal. `head` and `tail` are separate preview tools because they expose
+> limited text content to the model; Chat asks for confirmation before using them.
+> Models without Tool Calling can still chat; use `doc7 ` as the stable direct
+> conversion entrypoint.
+> 
+> The same chat agent can guide first-time configuration in natural language. It can
+> show the effective config path, discover models exposed by local LM Studio or Ollama,
+> and verify a candidate with a real vision probe:
+> 
+> ```text
+> doc7> Use the local LM Studio model that can understand images
+> doc7> Switch the interface to English
+> doc7> Check whether my current model configuration works
+> ```
+> 
+> Configuration changes are dry-run first. The agent calls `ask_user` to show a clear
+> choice, and only writes the file after the user selects confirmation. Use
+> `doc7 --yes chat "..."` for explicit one-shot authorization of non-secret changes.
+> When a remote endpoint needs an API key, Chat can start a hidden local input prompt;
+> the model may see the number of entered bytes and the credential source, but never
+> the key content. In non-interactive environments, use `doc7 setup config --api-key-stdin`.
+> 
+> Inspect or change the local configuration:
+> 
+> ```bash
+> doc7 config show
+> doc7 config path
+> doc7 config set              # list editable keys, current values, and descriptions
+> doc7 config set language en       # en, zh-CN, or auto
+> doc7 setup                        # run local model discovery again
+> ```
+> 
+> `doc7 config` prints the effective configuration file path. Localized labels keep
+> their stable English keys beside them, so values can be edited without guessing:
+> 
+> ```bash
+> doc7 config set model 
+> doc7 config set base_url http://127.0.0.1:1234/v1
+> doc7 config set credential_store env
+> ```
+> 
+> The usual location is the user configuration directory under `doc7/config.yaml`.
+> If `.doc7.yaml` exists in the current directory or one of its parents, doc7 shows
+> and uses that effective path instead. Use `--config ` to select a file
+> explicitly.
+> 
+> Update an installed CLI:
+> 
+> ```bash
+> doc7 update --check
+> doc7 update
+> ```
+> 
+> The updater reads the latest stable GitHub Release, downloads the matching package
+> for the current platform, and verifies `checksums.txt`. On Windows, replacement is
+> deferred until the running executable exits; the install directory must be writable
+> by the current user.
+> 
+> Remote OpenAI-compatible endpoints are supported too. Before the first remote
+> conversion, doc7 clearly warns that document content will leave the machine.
+> API keys stay in the system keychain, Windows Credential Manager, an explicitly
+> selected environment variable, or a local credential file. They are never
+> stored in this repository or a release archive.
+> 
+> The Windows x86_64 archive contains the CLI and launchers. Windows Portable
+> packages additionally bundle the document renderers, so they can be extracted
+> to a short path such as `C:\doc7` on machines where software installation is
+> restricted. The model always runs at the endpoint you configure; it is not
+> embedded in the CLI archive.
+> 
+> 
+> ## Local Inference vs Cloud Document APIs
+> 
+> Cloud pricing changes by region, model, feature, and volume. The durable
+> difference is the cost structure: cloud document APIs meter pages, images, or
+> feature calls; local doc7 inference mainly uses hardware and electricity you
+> control.
+> 
+> | Option | Typical billing unit | Cost as document volume grows | Document location |
+> | --- | --- | --- | --- |
+> | **doc7 + local quantized VLM** | No doc7 per-page or per-call fee | Mostly existing hardware, electricity, and operations | Local or private infrastructure |
+> | [AWS Textract](https://aws.amazon.com/textract/pricing/) | Pages, priced by API and analysis feature | Usage grows with pages and enabled features | Cloud API |
+> | [Google Document AI](https://cloud.google.com/products/document-ai/pricing) | Pages, usually priced per processor and volume tier | Usage grows with pages and processor type | Cloud API |
+> | [Azure Document Intelligence](https://azure.microsoft.com/en-us/pricing/details/document-intelligence/) | Pages, model, and pricing tier | Usage grows with pages and selected capability | Cloud API |
+> | [Alibaba Cloud OCR](https://help.aliyun.com/zh/ocr/product-overview/product-billing/) | Pay-as-you-go calls or prepaid resource packages | Continued processing consumes calls or package quota | Cloud API |
+> | [Tencent Cloud OCR](https://buy.cloud.tencent.com/price/ocr) | API calls through prepaid or postpaid billing | Continued processing consumes calls or package quota | Cloud API |
+> | [Baidu AI Cloud OCR](https://cloud.baidu.com/doc/OCR/s/Jk3h7xtsd) | API call
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]] · [[KKKKhazix--human-writing|KKKKhazix/human-writing]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityDev--WilonityLoader|WilonityDev/WilonityLoader]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/thebuggeddev/anatomy) · [官方網站](https://anatomy-livid.vercel.app)
+[GitHub](https://github.com/magicrew/doc7)
 
 ## 相關收錄
 
@@ -294,7 +387,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "thebuggeddev--anatomy"
+> WHERE category = "Other" AND file.name != "magicrew--doc7"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -303,7 +396,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "thebuggeddev--anatomy" AND status != "archived"
+> WHERE language = "Go" AND file.name != "magicrew--doc7" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -312,18 +405,18 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "thebuggeddev--anatomy"
+> WHERE week = "2026-W33" AND file.name != "magicrew--doc7"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/magicrew--doc7");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "thebuggeddev--anatomy" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "magicrew--doc7" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -339,7 +432,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "thebuggeddev" AND file.name != "thebuggeddev--anatomy"
+> WHERE owner = "magicrew" AND file.name != "magicrew--doc7"
 > SORT stars DESC
 > ```
 
@@ -347,7 +440,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/magicrew--doc7");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -364,7 +457,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/magicrew--doc7");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -397,7 +490,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/magicrew--doc7");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -421,7 +514,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/magicrew--doc7");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -458,7 +551,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/thebuggeddev--anatomy");
+> const me = dv.page("Repos/magicrew--doc7");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -541,7 +634,7 @@ An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-06** — 首次收錄
+> **2026-08-09** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -557,7 +650,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-09|2026-08-09]] — 再次上榜，2.0k stars
-- [[2026-08-08|2026-08-08]] — 再次上榜，2.0k stars
-- [[2026-08-07|2026-08-07]] — 再次上榜，1.9k stars
-- [[2026-08-06|2026-08-06]] — 首次收錄，1.6k stars
+- [[2026-08-09|2026-08-09]] — 首次收錄，787 stars
