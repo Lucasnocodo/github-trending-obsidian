@@ -1,67 +1,63 @@
 ---
-repo: KKKKhazix/human-writing
-url: https://github.com/KKKKhazix/human-writing
-owner: KKKKhazix
+repo: xoreaxeaxeax/asm-hall-of-shame
+url: https://github.com/xoreaxeaxeax/asm-hall-of-shame
+owner: xoreaxeaxeax
 owner_type: User
-language: Python
+language: C
 license: MIT
-description: "让 AI 写的中文读起来像一个具体的人在说话。通用创作与改稿 Skill，开箱即用。"
+description: "Racing to the bottom of CPU performance"
 homepage: ""
-stars: 2122
-stars_per_day: 424
-forks: 188
-open_issues: 4
-created: 2026-08-05
-pushed_at: 2026-08-05
-first_seen: 2026-08-06
-week: "2026-W32"
+stars: 669
+stars_per_day: 167
+forks: 6
+open_issues: 6
+created: 2026-08-06
+pushed_at: 2026-08-06
+first_seen: 2026-08-10
+week: "2026-W33"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: "v1.1.0"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-06
+last_reviewed: 2026-08-10
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-08-13"
+appearances: 1
+next_review: "2026-08-17"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 67
-readme_length: 2536
+repo_size_kb: 241
+readme_length: 5846
 bus_factor: 1
-last_release_days: 1
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-06"
-star_history: "2026-08-06:1230,2026-08-07:1663,2026-08-08:1889,2026-08-09:1991,2026-08-10:2122"
+ring_history: "assess@2026-08-10"
+star_history: "2026-08-10:669"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - "topic/agent_skills"
-  - "topic/chinese_writing"
-  - "topic/creative_writing"
-  - "topic/writing_skill"
+  - "lang/c"
 aliases:
-  - "human-writing"
-  - "KKKKhazix/human-writing"
+  - "asm-hall-of-shame"
+  - "xoreaxeaxeax/asm-hall-of-shame"
 ---
 
-# human-writing
+# asm-hall-of-shame
 
-**1.2k** stars · **1.2k** stars/天 · 建立 1 天前 · Python · MIT
+**669** stars · **167** stars/天 · 建立 4 天前 · C · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/KKKKhazix--human-writing");
+const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -74,22 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案` `v1.1.0`
-
-`agent-skills` `chinese-writing` `creative-writing` `writing-skill`
+`個人專案`
 
 > [!summary] 一句話摘要
-> 让 AI 写的中文读起来像一个具体的人在说话。通用创作与改稿 Skill，开箱即用。
+> Racing to the bottom of CPU performance
 
 ## 專案簡介
 
-让 AI 写的中文读起来像一个具体的人在说话。通用创作与改稿 Skill，开箱即用。
+Racing to the bottom of CPU performance
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -124,7 +118,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -148,153 +142,297 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 109 |
-| Open Issues | 3 |
+| Forks | 6 |
+| Open Issues | 6 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-05 |
-| 建立日期 | 2026-08-05 |
-| Repo 大小 | 67 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/KKKKhazix/human-writing) |
-| Topics | `agent-skills` `chinese-writing` `creative-writing` `writing-skill` |
+| 最後推送 | 2026-08-06 |
+| 建立日期 | 2026-08-06 |
+| Repo 大小 | 241 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/xoreaxeaxeax/asm-hall-of-shame) |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "C" : 93
+>     "Makefile" : 4
+>     "Python" : 3
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@KKKKhazix](https://github.com/KKKKhazix) | 7 |
-
-**最新版本**：v1.1.0 — 活人感写作 1.1.0 (2026-08-05)
-
-> [!info]- Release Notes
-> 1.0 靠字符串禁令拦 AI 味——禁掉「不是……而是……」、禁冒号、禁一批黑话。能拦住最明显的那层，但模型换个马甲继续做一模一样的事。
-> 
-> 1.1 把防线从字面挪到动作。
-> 
-> **规则层面**：禁的不再是某几个字，而是「先给读者立一个他没有的误解再推翻它」这个动作本身——翻案腔换什么外衣都拦。同时新增了排比、抒情借喻和名词化的禁令，冒号改成分级（引原话的放行，「一句话总结：」式的继续拦）。三处条文互相打架的地方也修了。
-> 
-> **检测脚本**：补了变形翻案句、三连排比、AI 抒情词、名词化句式的警告层，加了句长变异系数和连词密度的统计检查。反过来，「不丢人」「打法」「想象空间」这些正常中文从误伤名单里捞出来了。
-> 
-> **新东西**：出了一个两千字以内的蒸馏版（`dist/human-writing-lite.md`），ChatGPT、千问办公、WorkBuddy 这类聊天窗口直接粘贴就能用。
-> 
-> 完整变更见 [CHANGELOG.md](https://github.com/KKKKhazix/human-writing/blob/main/CHANGELOG.md)
+> | [@xoreaxeaxeax](https://github.com/xoreaxeaxeax) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-05 ~ 2026-08-05）
-> **活躍天數** 1 天 · **最新 commit** docs: 重写 README，去掉产品说明书腔
+> [!abstract] 最近 10 次 commit（2026-08-06）
+> **活躍天數** 1 天 · **最新 commit** initial commit
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#3](https://github.com/KKKKhazix/human-writing/issues/3) | Is there a English version？ | 0 | 0 |
-> | [#2](https://github.com/KKKKhazix/human-writing/issues/2) | feat: 增加产品案例与个人作品集项目故事的专用写作分支 | 0 | 0 |
+> | [#2](https://github.com/xoreaxeaxeax/asm-hall-of-shame/issues/2) | Project is not called "Assembly Stall of Shame" | 3 | 0 |
+> | [#3](https://github.com/xoreaxeaxeax/asm-hall-of-shame/issues/3) | Rakefield repo link is broken | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> 快速安装 ·
->   写作流程 ·
->   仓库结构 ·
->   提交问题
+> # Assembly Hall of Shame
 > 
-> > AI 写中文有个通病：读完觉得挺流畅，但说不出是谁写的。活人感写作想治的就是这件事。
+> ## Overview
 > 
-> 让模型写出来的文章读起来像一个具体的人在说话——知道一些事，有判断，偶尔岔开一句，还能接回来。适用于知乎回答、公众号文章、博客、论坛帖、人物故事、科普、评测、小说、口播等大多数中文写作场景。
+> Instruction latency analysis usually focuses on performance
+> *optimization*—making code run as fast as possible.  The `Assembly Hall of
+> Shame` takes the opposite approach: searching for the absolute floor of
+> single-instruction performance.
 > 
-> ## 它做什么
+> ## :trophy: Current Champions :trophy:
 > 
-> 写作之前先解决一个前置问题：你手上有没有东西可写。
+> ### **x86**: [fxrstor64](#1-trophy-fxrstor64-trophy)
 > 
-> 现实题材，材料不够就去查，查不到就追问或者缩短篇幅，绝不拿车轱辘话凑字数。虚构题材可以自由创造人物和情节，但每个场景仍然要有目标、有动作、有变化。
+> **Strategy**: Use `fxrstor64` to load 512-byte FPU/MMX/XMM state from a
+> high-latency MMIO region in the PCIe fabric, then starve the fabric while the
+> load is in flight — a fleet of hammer cores pounds a different high-latency
+> MMIO register with tight 4-byte reads, saturating the PCIe root complex and
+> endpoint with non-posted transactions, so CPU 0's 512-byte `fxrstor64` must
+> queue behind all that contending traffic.
 > 
-> 材料过关之后管三件事：
+> **Contender**: AMD Ryzen 7 5800H
 > 
-> | 材料 | 推进 | 中文 |
-> | :--- | :--- | :--- |
-> | 现实写作核准事实、数字、引语和亲历。虚构写作检查人物、行动与因果。 | 每段都要带来新东西——新事实、新动作、新例子或新后果。写过的不重复。 | 白话打底，在意词序和停顿，清掉报告腔、模型腔和翻案句。 |
+> ```asm
+> ; CPU 0 — timed instruction
+> movl $0xfcc68830, %rsi
+> fxrstor64 %rsi
 > 
-> 初稿写完还有一道关。Skill 会逐段检查有没有在原地转圈，砍掉重复解释，调整长短句节奏，拦住冒号滥用、破折号、「不是……而是……」之类的翻案腔和常见 AI 黑话。检查脚本只管已经写明的硬规则，不替你决定风格。
-> 
-> ## 快速安装
-> 
-> 把下面这句话发给你的 Agent。
-> 
-> ```bash
-> 帮我安装这个skill：https://github.com/KKKKhazix/human-writing
+> ; CPUs 1..N — hammer loop against a different high-latency location
+> movl 0xfcc68858, %eax
 > ```
 > 
-> Agent 会读取仓库、找到 `human-writing`，完成安装。装好之后显示名为「活人感写作」。
+> :trophy: **Score**: 198,002,498,236 cycles
 > 
-> Agent 不支持直接安装时
+> :trophy: **Time**: 62 seconds
 > 
-> 从 [Releases](https://github.com/KKKKhazix/human-writing/releases/latest) 下载，或者把仓库里的 [`human-writing`](./human-writing) 文件夹完整复制到本机 Skills 目录。文件夹名保留 `human-writing`。
+> ## Honorable Mentions
 > 
-> ```text
-> ~/.agents/skills/human-writing/
+> A spec-violating [unaligned ymm0 load](#3-vmovdqu-ymm-unaligned--) that forced
+> non-posted dword transactions from stalled GPU registers was used to break the
+> fundamental design of System Management Mode in
+> [smiiiiiiiiiiiiiiii](https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii).
+> 
+> ```asm
+> vmovdqu 0xfcc003b1, %ymm0
 > ```
 > 
-> 装好之后这样用：
+> ## Rules
 > 
-> ```text
-> 使用 $human-writing，把我的材料写成一篇有活人感和中文韵律的作品。
+> * Instructions may use whatever setup is necessary, but only a single
+>   instruction is eligible to be scored.
+> * Trapped/emulated/virtualized instructions may only time the trap, not the
+>   handler.
+> * Instructions must not be interruptible.  `rep movs`, `pause`, etc. are
+>   disqualified.
+> * Times are normalized based on the CPU base clock frequency.
+> * All platforms must be in their factory stock configurations - no hardware
+>   modifications.
+> 
+> ## x86 Leaderboard
+> 
+> ### 27. [nop](nop/)
+> 
+> **Strategy**: `nop` does nothing. It opens the leaderboard accordingly.
+> 
+> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
+> 
+> ```
+> nop
 > ```
 > 
-> ## 1.1.0 改了什么
+> **Score**: 1 cycles
 > 
-> 1.0 用字符串禁令拦 AI 味——禁「不是……而是……」、禁冒号、禁一批黑话。有效，但模型会换一套字面继续做同样的事。「你以为……其实……」「回头才发现」和「不是A而是B」是同一个姿势，读者认的是姿势，不是字。
+> **Time**: 0 nanoseconds
 > 
-> 1.1 把防线从字面挪到动作：禁的是「先给读者立一个他没有的误解，再推翻它」这件事本身，不管穿什么外衣。检测脚本也跟着升级，补了变形翻案句、AI 排比、抒情借喻的警告层，加了句长变异系数和连词密度的统计检查，同时把「不丢人」「打法」这类正常中文从误伤名单里捞出来。另外出了一个两千字的蒸馏版，ChatGPT、千问这类聊天窗口直接粘贴就能用。
+> ### 26. [nop16](nop16/)
 > 
-> 完整变更见 [CHANGELOG.md](./CHANGELOG.md)。
+> **Strategy**: Regular `nop` was too short, but how do we make nothing take
+> longer? Try a `lonnnnnng nop`.
 > 
-> ## 仓库结构
+> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
 > 
-> 展开查看完整目录
-> 
-> ```text
-> human-writing/
-> ├── SKILL.md
-> ├── VERSION
-> ├── LICENSE
-> ├── agents/
-> │   └── openai.yaml
-> ├── dist/
-> │   └── human-writing-lite.md
-> ├── references/
-> │   ├── forum-prose.md
-> │   ├── reality.md
-> │   ├── fiction.md
-> │   ├── formats.md
-> │   └── revision.md
-> └── scripts/
->     └── check_prose.py
+> ```
+> data16 data16 data16 data16 data16 data16 data16 nopl 0x00000000(%%eax,%%eax,1)
 > ```
 > 
-> | 位置 | 干什么的 |
-> | :--- | :--- |
-> | [`SKILL.md`](./human-writing/SKILL.md) | 入口。材料门槛、现实与虚构分流、写作流程、交付禁令，全在这一份里 |
-> | [`forum-prose.md`](./human-writing/references/forum-prose.md) | 知乎、公众号、论坛长帖的写法，节奏和措辞的具体做法都在这里 |
-> | [`reality.md`](./human-writing/references/reality.md) | 真人、历史、新闻、数据和个人经历的事实边界 |
-> | [`fiction.md`](./human-writing/references/fiction.md) | 小说、故事、虚构散文和对白的创作规则 |
-> | [`formats.md`](./human-writing/references/formats.md) | 短内容、口播、演讲、教程、评测等特殊形式 |
-> | [`revision.md`](./human-writing/references/revision.md) | 初稿写完之后怎么改——逐遍检查清单 |
-> | [`check_prose.py`](./human-writing/scripts/check_prose.py) | 检查成稿有没有踩到硬禁令 |
-> | [`human-writing-lite.md`](./human-writing/dist/human-writing-lite.md) | 蒸馏版，两千字以内，聊天窗口直接粘贴用 |
+> **Score**: 20 cycles
 > 
-> ## 反馈
+> **Time**: 7 nanoseconds
 > 
-> MIT 协议开源。仓库只有原创规则和工具，没有第三方文章、训练语料或模型权重。
+> ### 25. [rdtsc](rdtsc/)
 > 
-> 碰到规则冲突、误报或者某个模型上表现不对，欢迎[提 Issue](https://github.com/KKKKhazix/human-writing/issues)。附上你的提示词、模型输出片段和你觉得应该是什么样，排查起来快很多。
+> **Strategy**: Just a reference instruction to get our bearings.
 > 
->   活人感写作 · Human Writing · 1.1.0
+> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
+> 
+> ```asm
+> rdtsc
+> ```
+> 
+> **Score**: 49 cycles
+> 
+> **Time**: 18 nanoseconds
+> 
+> ### 24. [idiv](idiv/)
+> 
+> **Strategy**: Use 128-bit dividend (rdx:rax=2:0) with small divisor to push the
+> quotient above the ceiling imposed by sign-extension, driving the longest path
+> through the divider microcode.
+> 
+> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
+> 
+> ```asm
+> xorq %rax, %rax   ; rax = 0  (low 64 bits of dividend)
+> movq $2, %rdx     ; rdx = 2  (high 64 bits: full dividend = 2^65)
+> movq $5, %rbx     ; divisor → quotient = 2^65/5 ≈ 7.4×10^18
+> idivq %rbx
+> ```
+> 
+> **Score**: 77 cycles
+> 
+> **Time**: 28 nanoseconds
+> 
+> ### 23. [enter](enter/)
+> 
+> **Strategy**: Use maximum nesting depth (31) to force 30 display-pointer loads
+> and pushes through the microcode display-walk path.
+> 
+> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
+> 
+> ```asm
+> enter $0, $31       ; 0 bytes allocated, nesting depth 31 (maximum)
+> ```
+> 
+> **Score**: 112 cycles
+> 
+> **Time**: 41 nanoseconds
+> 
+> ### 22. [fldl](fldl/)
+> 
+> **Strategy**: Try a small denormal to trigger an FP microcode assist.
+> 
+> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
+> 
+> ```asm
+>     movabsq $0x0000000000000001, %rax
+>     movq    %rax, -8(%rsp)
+>     fldl    -8(%rsp)
+> ```
+> 
+> **Score**: 133 cycles
+> 
+> **Time**: 49 nanoseconds
+> 
+> ### 21. [clflush](clflush/)
+> 
+> **Strategy**: Just ensure the cache line is dirty.
+> 
+> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
+> 
+> ```asm
+> clflush (%rax)          ; rax -> dirty cache line resident in L3
+> ```
+> 
+> **Score**: 165 cycles
+> 
+> **Time**: 60 nanoseconds
+> 
+> ### 20. [fsin](fsin/)
+> 
+> **Strategy**: Use exponent 0x7ff to reach 'special value' processing in
+> microcode; positive/negative, NaN/inf doesn't seem to make a difference, go with
+> QNaN.
+> 
+> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
+> 
+> ```asm
+>     movabsq $0x7fffffffffffffff, %rax
+>     movq    %rax, -8(%rsp)
+>     fldl    -8(%rsp)
+>     fsin
+> ```
+> 
+> **Score**: 257 cycles
+> 
+> **Time**: 94 nanoseconds
+> 
+> ### 19. [mfence](mfence/)
+> 
+> **Strategy**: Saturate all write-combining line-fill buffers with `movnti`
+> stores to distinct cache lines, forcing `mfence` to drain the full LFB write
+> path to the uncore before retiring.
+> 
+> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
+> 
+> ```asm
+> movnti %r9,  0*64(%rdi)   ; ×16 distinct cache lines — saturate the write-combining LFBs
+> ; …
+> movnti %r9, 15*64(%rdi)
+> mfence                     ; must drain all pending LFB writes before retiring
+> ```
+> 
+> **Score**: 326 cycles
+> 
+> **Time**: 120 nanoseconds
+> 
+> ### 18. [mov cr3](mov_cr3/)
+> 
+> **Strategy**: Nothing for now, just check how long it takes to invalidate the
+> TLB.
+> 
+> **Contender**: AMD Ryzen 7 5800H with Radeon Graphics (Trigkey S5)
+> 
+> ```asm
+> mov %rax, %cr3
+> ```
+> 
+> **Score**: 352 cycles
+> 
+> **Time**: 110 nanoseconds
+> 
+> ### 17. [fadd](denormal/)
+> 
+> **Strategy**: Hit x87 FP microcode assist path by using denormal source operand.
+> 
+> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
+> 
+> ```asm
+> fldl   subnorm    ; 1e-310: value 
+> 1,000,000,000,000 cycles
+> 
+> **Contender**: TODO
+> 
+> ```asm
+> ; XCR0 must enable AMX components (bits 17-18); state area ~8KB
+> xrstor64 (%rsi)         ; rsi -> MMIO region, same technique as fxrstor64
+> ```
+> 
+> ## ARM Leaderboard
+> 
+> * T.B.D.
+> 
+> ## RISC-V Leaderboard
+> 
+> * T.B.D.
+>   
+> ## Author
+> 
+> The assembly hall-of-shame is a research effort from Christopher Domas ([@xoreaxeaxeax](https://x.com/xoreaxeaxeax/)).
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityDev--WilonityLoader|WilonityDev/WilonityLoader]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/KKKKhazix/human-writing)
+[GitHub](https://github.com/xoreaxeaxeax/asm-hall-of-shame)
 
 ## 相關收錄
 
@@ -302,7 +440,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "KKKKhazix--human-writing"
+> WHERE category = "Other" AND file.name != "xoreaxeaxeax--asm-hall-of-shame"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -311,7 +449,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "KKKKhazix--human-writing" AND status != "archived"
+> WHERE language = "C" AND file.name != "xoreaxeaxeax--asm-hall-of-shame" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -320,18 +458,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "KKKKhazix--human-writing"
+> WHERE week = "2026-W33" AND file.name != "xoreaxeaxeax--asm-hall-of-shame"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "KKKKhazix--human-writing" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "xoreaxeaxeax--asm-hall-of-shame" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -347,7 +485,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "KKKKhazix" AND file.name != "KKKKhazix--human-writing"
+> WHERE owner = "xoreaxeaxeax" AND file.name != "xoreaxeaxeax--asm-hall-of-shame"
 > SORT stars DESC
 > ```
 
@@ -355,7 +493,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -372,7 +510,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -405,7 +543,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -429,7 +567,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -466,7 +604,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -549,7 +687,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-06** — 首次收錄
+> **2026-08-10** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -565,8 +703,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-10|2026-08-10]] — 再次上榜，2.1k stars
-- [[2026-08-09|2026-08-09]] — 再次上榜，2.0k stars
-- [[2026-08-08|2026-08-08]] — 再次上榜，1.9k stars
-- [[2026-08-07|2026-08-07]] — 再次上榜，1.7k stars
-- [[2026-08-06|2026-08-06]] — 首次收錄，1.2k stars
+- [[2026-08-10|2026-08-10]] — 首次收錄，669 stars

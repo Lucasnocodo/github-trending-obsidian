@@ -3368,10 +3368,10 @@
   },
   "firecrawl/anydoc": {
     "first_seen": "2026-08-05",
-    "last_seen": "2026-08-09",
-    "times_seen": 5,
+    "last_seen": "2026-08-10",
+    "times_seen": 6,
     "stars_first": 1867,
-    "stars_last": 12179
+    "stars_last": 12778
   },
   "genspark-ai/genoffice": {
     "first_seen": "2026-08-05",
@@ -3389,24 +3389,24 @@
   },
   "KKKKhazix/human-writing": {
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-09",
-    "times_seen": 4,
+    "last_seen": "2026-08-10",
+    "times_seen": 5,
     "stars_first": 1230,
-    "stars_last": 1991
+    "stars_last": 2122
   },
   "Binaryify/open-kimi-ppt-skill": {
     "first_seen": "2026-08-07",
-    "last_seen": "2026-08-09",
-    "times_seen": 3,
+    "last_seen": "2026-08-10",
+    "times_seen": 4,
     "stars_first": 1456,
-    "stars_last": 1588
+    "stars_last": 1608
   },
   "ZzzLc0405/photo-abstract-editorial": {
     "first_seen": "2026-08-07",
-    "last_seen": "2026-08-09",
-    "times_seen": 3,
+    "last_seen": "2026-08-10",
+    "times_seen": 4,
     "stars_first": 1092,
-    "stars_last": 1751
+    "stars_last": 1990
   },
   "Accio-org/RealReplicaBench": {
     "first_seen": "2026-08-08",
@@ -3431,17 +3431,17 @@
   },
   "mikiarlo3/awesome-growth-hacking-skills": {
     "first_seen": "2026-08-09",
-    "last_seen": "2026-08-09",
-    "times_seen": 1,
+    "last_seen": "2026-08-10",
+    "times_seen": 2,
     "stars_first": 765,
-    "stars_last": 765
+    "stars_last": 798
   },
   "0xwilliamortiz/claude-red": {
     "first_seen": "2026-08-09",
-    "last_seen": "2026-08-09",
-    "times_seen": 1,
+    "last_seen": "2026-08-10",
+    "times_seen": 2,
     "stars_first": 681,
-    "stars_last": 681
+    "stars_last": 711
   },
   "sophiamyang/finger-frame-effect-ai": {
     "first_seen": "2026-08-09",
@@ -3449,5 +3449,33 @@
     "times_seen": 1,
     "stars_first": 626,
     "stars_last": 626
+  },
+  "ShawnPana/phone-harness": {
+    "first_seen": "2026-08-10",
+    "last_seen": "2026-08-10",
+    "times_seen": 1,
+    "stars_first": 929,
+    "stars_last": 929
+  },
+  "wumingqi60/lingxi": {
+    "first_seen": "2026-08-10",
+    "last_seen": "2026-08-10",
+    "times_seen": 1,
+    "stars_first": 709,
+    "stars_last": 709
+  },
+  "google-gemma/gemma-translator": {
+    "first_seen": "2026-08-10",
+    "last_seen": "2026-08-10",
+    "times_seen": 1,
+    "stars_first": 701,
+    "stars_last": 701
+  },
+  "xoreaxeaxeax/asm-hall-of-shame": {
+    "first_seen": "2026-08-10",
+    "last_seen": "2026-08-10",
+    "times_seen": 1,
+    "stars_first": 669,
+    "stars_last": 669
   }
 }

@@ -7,12 +7,12 @@ language: N/A
 license: N/A
 description: ""
 homepage: ""
-stars: 1751
-stars_per_day: 438
-forks: 88
-open_issues: 2
+stars: 1990
+stars_per_day: 398
+forks: 100
+open_issues: 3
 created: 2026-08-04
-pushed_at: 2026-08-04
+pushed_at: 2026-08-09
 first_seen: 2026-08-07
 week: "2026-W32"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-08-12"
+appearances: 4
+next_review: "2026-08-13"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-07"
-star_history: "2026-08-07:1092,2026-08-08:1502,2026-08-09:1751"
+star_history: "2026-08-07:1092,2026-08-08:1502,2026-08-09:1751,2026-08-10:1990"
 tags:
   - github
   - "category/other"
@@ -495,6 +495,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-10|2026-08-10]] — 再次上榜，2.0k stars
 - [[2026-08-09|2026-08-09]] — 再次上榜，1.8k stars
 - [[2026-08-08|2026-08-08]] — 再次上榜，1.5k stars
 - [[2026-08-07|2026-08-07]] — 首次收錄，1.1k stars

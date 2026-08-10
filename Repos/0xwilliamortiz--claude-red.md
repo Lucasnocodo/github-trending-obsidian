@@ -7,9 +7,9 @@ language: JavaScript
 license: MIT
 description: "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development."
 homepage: ""
-stars: 681
-stars_per_day: 227
-forks: 86
+stars: 711
+stars_per_day: 178
+forks: 90
 open_issues: 1
 created: 2026-08-05
 pushed_at: 2026-08-09
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-12"
+appearances: 2
+next_review: "2026-08-17"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-09"
-star_history: "2026-08-09:681"
+star_history: "2026-08-09:681,2026-08-10:711"
 tags:
   - github
   - "category/other"
@@ -664,4 +664,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-10|2026-08-10]] — 再次上榜，711 stars
 - [[2026-08-09|2026-08-09]] — 首次收錄，681 stars

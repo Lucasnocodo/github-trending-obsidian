@@ -1,67 +1,64 @@
 ---
-repo: KKKKhazix/human-writing
-url: https://github.com/KKKKhazix/human-writing
-owner: KKKKhazix
-owner_type: User
-language: Python
-license: MIT
-description: "让 AI 写的中文读起来像一个具体的人在说话。通用创作与改稿 Skill，开箱即用。"
+repo: google-gemma/gemma-translator
+url: https://github.com/google-gemma/gemma-translator
+owner: google-gemma
+owner_type: Organization
+language: JavaScript
+license: Apache-2.0
+description: ""
 homepage: ""
-stars: 2122
-stars_per_day: 424
-forks: 188
-open_issues: 4
-created: 2026-08-05
-pushed_at: 2026-08-05
-first_seen: 2026-08-06
-week: "2026-W32"
+stars: 701
+stars_per_day: 117
+forks: 86
+open_issues: 1
+created: 2026-08-03
+pushed_at: 2026-08-06
+first_seen: 2026-08-10
+week: "2026-W33"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: "v1.1.0"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-06
+last_reviewed: 2026-08-10
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-08-13"
-contributor_count: 1
-engagement: "low"
+appearances: 1
+next_review: "2026-08-17"
+contributor_count: 3
+engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 67
-readme_length: 2536
+repo_size_kb: 2472
+readme_length: 7429
 bus_factor: 1
-last_release_days: 1
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-06"
-star_history: "2026-08-06:1230,2026-08-07:1663,2026-08-08:1889,2026-08-09:1991,2026-08-10:2122"
+ring_history: "assess@2026-08-10"
+star_history: "2026-08-10:701"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - "topic/agent_skills"
-  - "topic/chinese_writing"
-  - "topic/creative_writing"
-  - "topic/writing_skill"
+  - "lang/javascript"
+  - org
 aliases:
-  - "human-writing"
-  - "KKKKhazix/human-writing"
+  - "gemma-translator"
+  - "google-gemma/gemma-translator"
 ---
 
-# human-writing
+# gemma-translator
 
-**1.2k** stars · **1.2k** stars/天 · 建立 1 天前 · Python · MIT
+**701** stars · **117** stars/天 · 建立 6 天前 · JavaScript · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/KKKKhazix--human-writing");
+const me = dv.page("Repos/google-gemma--gemma-translator");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -74,22 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案` `v1.1.0`
-
-`agent-skills` `chinese-writing` `creative-writing` `writing-skill`
+`ORG`
 
 > [!summary] 一句話摘要
-> 让 AI 写的中文读起来像一个具体的人在说话。通用创作与改稿 Skill，开箱即用。
+> No description
 
 ## 專案簡介
 
-让 AI 写的中文读起来像一个具体的人在说话。通用创作与改稿 Skill，开箱即用。
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/google-gemma--gemma-translator");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -124,7 +119,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/google-gemma--gemma-translator");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -148,153 +143,198 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 109 |
-| Open Issues | 3 |
+| Forks | 86 |
+| Open Issues | 1 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-05 |
-| 建立日期 | 2026-08-05 |
-| Repo 大小 | 67 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/KKKKhazix/human-writing) |
-| Topics | `agent-skills` `chinese-writing` `creative-writing` `writing-skill` |
+| 最後推送 | 2026-08-06 |
+| 建立日期 | 2026-08-03 |
+| Repo 大小 | 2.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/google-gemma/gemma-translator) |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "JavaScript" : 51
+>     "Python" : 21
+>     "CSS" : 14
+>     "Shell" : 14
+>     "HTML" : 1
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@KKKKhazix](https://github.com/KKKKhazix) | 7 |
-
-**最新版本**：v1.1.0 — 活人感写作 1.1.0 (2026-08-05)
-
-> [!info]- Release Notes
-> 1.0 靠字符串禁令拦 AI 味——禁掉「不是……而是……」、禁冒号、禁一批黑话。能拦住最明显的那层，但模型换个马甲继续做一模一样的事。
-> 
-> 1.1 把防线从字面挪到动作。
-> 
-> **规则层面**：禁的不再是某几个字，而是「先给读者立一个他没有的误解再推翻它」这个动作本身——翻案腔换什么外衣都拦。同时新增了排比、抒情借喻和名词化的禁令，冒号改成分级（引原话的放行，「一句话总结：」式的继续拦）。三处条文互相打架的地方也修了。
-> 
-> **检测脚本**：补了变形翻案句、三连排比、AI 抒情词、名词化句式的警告层，加了句长变异系数和连词密度的统计检查。反过来，「不丢人」「打法」「想象空间」这些正常中文从误伤名单里捞出来了。
-> 
-> **新东西**：出了一个两千字以内的蒸馏版（`dist/human-writing-lite.md`），ChatGPT、千问办公、WorkBuddy 这类聊天窗口直接粘贴就能用。
-> 
-> 完整变更见 [CHANGELOG.md](https://github.com/KKKKhazix/human-writing/blob/main/CHANGELOG.md)
+> | [@dmotz](https://github.com/dmotz) | 7 |
+> | [@alanvww](https://github.com/alanvww) | 1 |
+> | [@MaartenGr](https://github.com/MaartenGr) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-05 ~ 2026-08-05）
-> **活躍天數** 1 天 · **最新 commit** docs: 重写 README，去掉产品说明书腔
+> [!abstract] 最近 10 次 commit（2026-08-04 ~ 2026-08-06）
+> **活躍天數** 3 天 · **最新 commit** Merge pull request #9 from google-gemma/dmotz-patch-1
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#3](https://github.com/KKKKhazix/human-writing/issues/3) | Is there a English version？ | 0 | 0 |
-> | [#2](https://github.com/KKKKhazix/human-writing/issues/2) | feat: 增加产品案例与个人作品集项目故事的专用写作分支 | 0 | 0 |
+> | [#8](https://github.com/google-gemma/gemma-translator/issues/8) | Will the hardware CAD files for TranslateGemma be open sourc | 0 | 2 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> 快速安装 ·
->   写作流程 ·
->   仓库结构 ·
->   提交问题
+> # Gemma Translator
 > 
-> > AI 写中文有个通病：读完觉得挺流畅，但说不出是谁写的。活人感写作想治的就是这件事。
+> This repo was built with the assistance of [Google Antigravity](https://antigravity.google/) and includes code to run an on-device, fully offline voice translator powered by [Gemma 4](https://ai.google.dev/gemma/docs/core) and [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-lm). This project features a web frontend optimized for small handheld displays (e.g., 480x320) and a Python API server (`http.server`) that communicates with Gemma. Text-to-speech is powered by [Moonshine](https://github.com/moonshine-ai/moonshine).
 > 
-> 让模型写出来的文章读起来像一个具体的人在说话——知道一些事，有判断，偶尔岔开一句，还能接回来。适用于知乎回答、公众号文章、博客、论坛帖、人物故事、科普、评测、小说、口播等大多数中文写作场景。
+> https://github.com/user-attachments/assets/343072ce-dc78-44a7-a783-99312845cabe
 > 
-> ## 它做什么
+> ## Features
 > 
-> 写作之前先解决一个前置问题：你手上有没有东西可写。
+> - **On-Device Inference**: Uses LiteRT-LM to run the `gemma4-e2b` model entirely locally. No internet required after setup.
+> - **Voice Interface**: Captures microphone audio, processes it, and sends it to the local model.
+> - **Optimized UI**: Retro-terminal styling custom-built for small hardware screens (like Raspberry Pi displays).
+> - **Unified Startup**: One script to launch the LLM server, the Python API, and the React frontend.
 > 
-> 现实题材，材料不够就去查，查不到就追问或者缩短篇幅，绝不拿车轱辘话凑字数。虚构题材可以自由创造人物和情节，但每个场景仍然要有目标、有动作、有变化。
+> ## Prerequisites
 > 
-> 材料过关之后管三件事：
+> - Python 3.10+
+> - Node.js 18+ (20 LTS recommended) & npm — installed automatically by `deploy-pi.sh` on Raspberry Pi OS / Debian
+> - Linux or macOS
 > 
-> | 材料 | 推进 | 中文 |
-> | :--- | :--- | :--- |
-> | 现实写作核准事实、数字、引语和亲历。虚构写作检查人物、行动与因果。 | 每段都要带来新东西——新事实、新动作、新例子或新后果。写过的不重复。 | 白话打底，在意词序和停顿，清掉报告腔、模型腔和翻案句。 |
+> ## Required Hardware
 > 
-> 初稿写完还有一道关。Skill 会逐段检查有没有在原地转圈，砍掉重复解释，调整长短句节奏，拦住冒号滥用、破折号、「不是……而是……」之类的翻案腔和常见 AI 黑话。检查脚本只管已经写明的硬规则，不替你决定风格。
+> - **Compute**: Raspberry Pi 5 with 8GB RAM
+> - **Audio Input**: Microphone or USB audio capture interface
+> - **Audio Output**: Speaker or headphone output device
+> - **Display**: Display monitor or touchscreen (e.g., 480x320 kiosk display)
 > 
-> ## 快速安装
+> ## Setup Instructions
 > 
-> 把下面这句话发给你的 Agent。
+> 1. **Make Scripts Executable**
+>    Ensure the setup, download, start, and deployment scripts have execute permissions:
+>    ```bash
+>    chmod +x setup.sh download_model.sh start.sh deploy-pi.sh
+>    ```
 > 
+> 2. **Install Dependencies**
+>    Run the setup script to create a Python virtual environment (`venv`) and install all required packages:
+>    ```bash
+>    ./setup.sh
+>    ```
+> 
+> 3. **Download the Model**
+>    Run the model downloader script to fetch the `gemma4-e2b` model from Hugging Face and import it into LiteRT-LM:
+>    ```bash
+>    ./download_model.sh
+>    ```
+> 
+> ## Running the Application
+> 
+> Start all services (LiteRT-LM, the Python API server, and the Vite Web UI) in development mode:
 > ```bash
-> 帮我安装这个skill：https://github.com/KKKKhazix/human-writing
+> ./start.sh
 > ```
 > 
-> Agent 会读取仓库、找到 `human-writing`，完成安装。装好之后显示名为「活人感写作」。
-> 
-> Agent 不支持直接安装时
-> 
-> 从 [Releases](https://github.com/KKKKhazix/human-writing/releases/latest) 下载，或者把仓库里的 [`human-writing`](./human-writing) 文件夹完整复制到本机 Skills 目录。文件夹名保留 `human-writing`。
-> 
-> ```text
-> ~/.agents/skills/human-writing/
+> To run in production mode (skipping Vite dev server and serving compiled UI assets from `frontend/dist/` via `backend/server.py` on port 3000):
+> ```bash
+> ./start.sh --prod
 > ```
 > 
-> 装好之后这样用：
+> The application will be accessible at:
+> - **Web UI (Dev)**: `http://localhost:5173`
+> - **Web UI (Prod) / API server**: `http://localhost:3000`
+> - **LiteRT-LM**: `http://localhost:9379`
 > 
-> ```text
-> 使用 $human-writing，把我的材料写成一篇有活人感和中文韵律的作品。
+> ## Raspberry Pi Appliance Deployment
+> 
+> To deploy as a permanent systemd kiosk service on a Raspberry Pi 5 (8GB):
+> ```bash
+> ./deploy-pi.sh
 > ```
+> This automated script installs Debian audio/venv packages, sets up the Python environment, builds production UI assets, downloads the LiteRT model, registers the systemd unit from `deploy/gemma-translator.service`, and configures LXDE GUI autostart (`~/.config/lxsession/rpd-x/autostart`) to launch Chromium in kiosk mode pointing to `http://localhost:3000`.
 > 
-> ## 1.1.0 改了什么
+> ## Project Structure
 > 
-> 1.0 用字符串禁令拦 AI 味——禁「不是……而是……」、禁冒号、禁一批黑话。有效，但模型会换一套字面继续做同样的事。「你以为……其实……」「回头才发现」和「不是A而是B」是同一个姿势，读者认的是姿势，不是字。
+> - `frontend/` - React (Vite) web frontend (`index.html`, `src/`, styles, and Vite configuration).
+> - `backend/` - Python API server (`server.py` and `requirements.txt`) for Moonshine STT, moonshine-voice TTS, and model proxying.
+> - `deploy/` - Parameterizable systemd service unit template (`gemma-translator.service`).
+> - `stl/` - STL files for 3D printing the hardware case.
+> - `setup.sh` - Automates Python virtual environment creation and dependency installation.
+> - `download_model.sh` - Fetches the required LiteRT model.
+> - `start.sh` - Multi-process launcher supporting `--prod` and development modes.
+> - `deploy-pi.sh` - One-command Raspberry Pi automated deployment script.
 > 
-> 1.1 把防线从字面挪到动作：禁的是「先给读者立一个他没有的误解，再推翻它」这件事本身，不管穿什么外衣。检测脚本也跟着升级，补了变形翻案句、AI 排比、抒情借喻的警告层，加了句长变异系数和连词密度的统计检查，同时把「不丢人」「打法」这类正常中文从误伤名单里捞出来。另外出了一个两千字的蒸馏版，ChatGPT、千问这类聊天窗口直接粘贴就能用。
+> ## Keyboard Shortcuts
 > 
-> 完整变更见 [CHANGELOG.md](./CHANGELOG.md)。
+> The Gemma Translator supports **two keyboard modes**. Switch between them anytime from the **Settings panel → "Keyboard Mode"** dropdown. The choice is remembered across restarts (stored in the browser's `localStorage` under the key `keyboardMode`).
 > 
-> ## 仓库结构
+> The app has two lanes (two people facing each other on the kiosk):
+> - **Lane 1 / Person 1** — the left/top lane.
+> - **Lane 2 / Person 2** — the right/bottom lane.
 > 
-> 展开查看完整目录
+> Each lane has a rotating language "revolver" and records speech, which is transcribed (Moonshine STT), translated (Gemma), and spoken back in the other lane's language (moonshine-voice TTS).
 > 
-> ```text
-> human-writing/
-> ├── SKILL.md
-> ├── VERSION
-> ├── LICENSE
-> ├── agents/
-> │   └── openai.yaml
-> ├── dist/
-> │   └── human-writing-lite.md
-> ├── references/
-> │   ├── forum-prose.md
-> │   ├── reality.md
-> │   ├── fiction.md
-> │   ├── formats.md
-> │   └── revision.md
-> └── scripts/
->     └── check_prose.py
-> ```
+> ### Landscape Mode (default) — "active person"
+> One lane is the **active person** at a time. The active lane is framed with **corner brackets on all four corners**. You drive everything from a single set of keys and switch focus with Space.
 > 
-> | 位置 | 干什么的 |
+> | Key | Action | Description |
+> | :--- | :--- | :--- |
+> | **Spacebar** | Switch active person | Toggles the active lane (Person 1 ⇄ Person 2). Disabled while recording. |
+> | **Z** | Record (push-to-talk) | Hold to record the **active** person; release to transcribe & translate. |
+> | **← Left Arrow** | Previous language | Rotates the **active** person's language backward. |
+> | **→ Right Arrow** | Next language | Rotates the **active** person's language forward. |
+> 
+> Notes:
+> - The active lane shows four-corner brackets; while it is recording, the brackets invert to black along with the lane's color reversal.
+> - Best for one-handed / single-operator use.
+> 
+> ### Vertical Mode — "two-hand" (original mapping)
+> Each lane has its **own dedicated keys** — there is no active-person concept and **no bracket highlight**. Both people can be controlled independently.
+> 
+> | Key | Action | Description |
+> | :--- | :--- | :--- |
+> | **Z** | Record — Person 1 (push-to-talk) | Hold to record Lane 1; release to transcribe & translate. |
+> | **X** | Record — Person 2 (push-to-talk) | Hold to record Lane 2; release to transcribe & translate. |
+> | **← Left Arrow** | Previous language — Person 1 | Rotates Lane 1's language backward. |
+> | **→ Right Arrow** | Next language — Person 1 | Rotates Lane 1's language forward. |
+> | **− Minus** (`_`) | Previous language — Person 2 | Rotates Lane 2's language backward. |
+> | **+ Plus** (`=`) | Next language — Person 2 | Rotates Lane 2's language forward. |
+> 
+> Notes:
+> - No corner-bracket selection highlight in this mode.
+> - Best for two operators, each handling their own side.
+> 
+> ### Common behavior (both modes)
+> - **Input focus guard:** all shortcuts are ignored while focus is on a configuration field (``, ``, or ``) — e.g. when editing the API endpoint or settings.
+> - **Recording lock:** language rotation is blocked while a recording is in progress.
+> - **Keyboard-driven:** recording and language rotation are keyboard-only in the current build; on-screen touch controls are not enabled.
+> 
+> ### Switching modes
+> Open **Settings (⚙)** → **Keyboard Mode** → choose **Landscape** or **Vertical**. The change takes effect immediately and persists on the device.
+> 
+> | Setting value | Mode |
 > | :--- | :--- |
-> | [`SKILL.md`](./human-writing/SKILL.md) | 入口。材料门槛、现实与虚构分流、写作流程、交付禁令，全在这一份里 |
-> | [`forum-prose.md`](./human-writing/references/forum-prose.md) | 知乎、公众号、论坛长帖的写法，节奏和措辞的具体做法都在这里 |
-> | [`reality.md`](./human-writing/references/reality.md) | 真人、历史、新闻、数据和个人经历的事实边界 |
-> | [`fiction.md`](./human-writing/references/fiction.md) | 小说、故事、虚构散文和对白的创作规则 |
-> | [`formats.md`](./human-writing/references/formats.md) | 短内容、口播、演讲、教程、评测等特殊形式 |
-> | [`revision.md`](./human-writing/references/revision.md) | 初稿写完之后怎么改——逐遍检查清单 |
-> | [`check_prose.py`](./human-writing/scripts/check_prose.py) | 检查成稿有没有踩到硬禁令 |
-> | [`human-writing-lite.md`](./human-writing/dist/human-writing-lite.md) | 蒸馏版，两千字以内，聊天窗口直接粘贴用 |
+> | `landscape` | Active-person scheme (Space / Z / ← →) — default |
+> | `vertical` | Two-hand scheme (Z / X / ← → / − +) |
 > 
-> ## 反馈
+> ### Credits
+> Made by a small team at [Google Creative Lab](https://github.com/googlecreativelab):
+> - [Alan Yam](https://github.com/alanvww)
+> - [Shashwath Santosh](https://x.com/shashwth)
+> - [Dan Motzenbecker](https://github.com/dmotz)
 > 
-> MIT 协议开源。仓库只有原创规则和工具，没有第三方文章、训练语料或模型权重。
+> ## Disclaimer
 > 
-> 碰到规则冲突、误报或者某个模型上表现不对，欢迎[提 Issue](https://github.com/KKKKhazix/human-writing/issues)。附上你的提示词、模型输出片段和你觉得应该是什么样，排查起来快很多。
-> 
->   活人感写作 · Human Writing · 1.1.0
+> This is not an officially supported Google product. This project is not
+> eligible for the [Google Open Source Software Vulnerability Rewards
+> Program](https://bughunters.google.com/open-source-security).
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]] · [[QwenAudio--qwen-audio-agent|QwenAudio/qwen-audio-agent]] · [[WilonityDev--WilonityLoader|WilonityDev/WilonityLoader]] · [[WilonityXYZ--Wilonity|WilonityXYZ/Wilonity]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/KKKKhazix/human-writing)
+[GitHub](https://github.com/google-gemma/gemma-translator)
 
 ## 相關收錄
 
@@ -302,7 +342,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "KKKKhazix--human-writing"
+> WHERE category = "Other" AND file.name != "google-gemma--gemma-translator"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -311,7 +351,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "KKKKhazix--human-writing" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "google-gemma--gemma-translator" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -320,18 +360,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W32" AND file.name != "KKKKhazix--human-writing"
+> WHERE week = "2026-W33" AND file.name != "google-gemma--gemma-translator"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/google-gemma--gemma-translator");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "KKKKhazix--human-writing" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "google-gemma--gemma-translator" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -347,7 +387,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "KKKKhazix" AND file.name != "KKKKhazix--human-writing"
+> WHERE owner = "google-gemma" AND file.name != "google-gemma--gemma-translator"
 > SORT stars DESC
 > ```
 
@@ -355,7 +395,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/google-gemma--gemma-translator");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -372,7 +412,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/google-gemma--gemma-translator");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -405,7 +445,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/google-gemma--gemma-translator");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -429,7 +469,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/google-gemma--gemma-translator");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -466,7 +506,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/KKKKhazix--human-writing");
+> const me = dv.page("Repos/google-gemma--gemma-translator");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -549,7 +589,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-06** — 首次收錄
+> **2026-08-10** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -565,8 +605,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-10|2026-08-10]] — 再次上榜，2.1k stars
-- [[2026-08-09|2026-08-09]] — 再次上榜，2.0k stars
-- [[2026-08-08|2026-08-08]] — 再次上榜，1.9k stars
-- [[2026-08-07|2026-08-07]] — 再次上榜，1.7k stars
-- [[2026-08-06|2026-08-06]] — 首次收錄，1.2k stars
+- [[2026-08-10|2026-08-10]] — 首次收錄，701 stars
