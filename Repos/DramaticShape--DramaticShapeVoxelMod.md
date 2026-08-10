@@ -20,7 +20,7 @@ category: "Other"
 subcategory: ""
 release_tag: "v1.4.1"
 install_complexity: "unknown"
-status: to-review
+status: archived
 my_rating: 0
 score_confidence: 0
 score_interest: 0
