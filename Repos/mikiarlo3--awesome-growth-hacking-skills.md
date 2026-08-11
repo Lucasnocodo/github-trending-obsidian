@@ -7,10 +7,10 @@ language: Shell
 license: N/A
 description: "Find agentic growth hacking skills for Claude, ChatGPT, Manus | by enso.bot"
 homepage: ""
-stars: 798
-stars_per_day: 160
-forks: 14
-open_issues: 0
+stars: 820
+stars_per_day: 137
+forks: 15
+open_issues: 1
 created: 2026-08-04
 pushed_at: 2026-08-04
 first_seen: 2026-08-09
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-08-09
 use_case: ""
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-17"
+appearances: 3
+next_review: "2026-08-18"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-09"
-star_history: "2026-08-09:765,2026-08-10:798"
+star_history: "2026-08-09:765,2026-08-10:798,2026-08-11:820"
 tags:
   - github
   - "category/other"
@@ -531,5 +531,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-11|2026-08-11]] — 再次上榜，820 stars
 - [[2026-08-10|2026-08-10]] — 再次上榜，798 stars
 - [[2026-08-09|2026-08-09]] — 首次收錄，765 stars

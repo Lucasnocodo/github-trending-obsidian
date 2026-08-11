@@ -3389,24 +3389,24 @@
   },
   "KKKKhazix/human-writing": {
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-10",
-    "times_seen": 5,
+    "last_seen": "2026-08-11",
+    "times_seen": 6,
     "stars_first": 1230,
-    "stars_last": 2122
+    "stars_last": 2298
   },
   "Binaryify/open-kimi-ppt-skill": {
     "first_seen": "2026-08-07",
-    "last_seen": "2026-08-10",
-    "times_seen": 4,
+    "last_seen": "2026-08-11",
+    "times_seen": 5,
     "stars_first": 1456,
-    "stars_last": 1608
+    "stars_last": 1607
   },
   "ZzzLc0405/photo-abstract-editorial": {
     "first_seen": "2026-08-07",
-    "last_seen": "2026-08-10",
-    "times_seen": 4,
+    "last_seen": "2026-08-11",
+    "times_seen": 5,
     "stars_first": 1092,
-    "stars_last": 1990
+    "stars_last": 2289
   },
   "Accio-org/RealReplicaBench": {
     "first_seen": "2026-08-08",
@@ -3431,10 +3431,10 @@
   },
   "mikiarlo3/awesome-growth-hacking-skills": {
     "first_seen": "2026-08-09",
-    "last_seen": "2026-08-10",
-    "times_seen": 2,
+    "last_seen": "2026-08-11",
+    "times_seen": 3,
     "stars_first": 765,
-    "stars_last": 798
+    "stars_last": 820
   },
   "0xwilliamortiz/claude-red": {
     "first_seen": "2026-08-09",
@@ -3452,10 +3452,10 @@
   },
   "ShawnPana/phone-harness": {
     "first_seen": "2026-08-10",
-    "last_seen": "2026-08-10",
-    "times_seen": 1,
+    "last_seen": "2026-08-11",
+    "times_seen": 2,
     "stars_first": 929,
-    "stars_last": 929
+    "stars_last": 1341
   },
   "wumingqi60/lingxi": {
     "first_seen": "2026-08-10",
@@ -3473,9 +3473,37 @@
   },
   "xoreaxeaxeax/asm-hall-of-shame": {
     "first_seen": "2026-08-10",
-    "last_seen": "2026-08-10",
-    "times_seen": 1,
+    "last_seen": "2026-08-11",
+    "times_seen": 2,
     "stars_first": 669,
-    "stars_last": 669
+    "stars_last": 732
+  },
+  "oil-oil/oil-motion": {
+    "first_seen": "2026-08-11",
+    "last_seen": "2026-08-11",
+    "times_seen": 1,
+    "stars_first": 1231,
+    "stars_last": 1231
+  },
+  "SMNETSTUDIO/WeChat-AI": {
+    "first_seen": "2026-08-11",
+    "last_seen": "2026-08-11",
+    "times_seen": 1,
+    "stars_first": 903,
+    "stars_last": 903
+  },
+  "MengTo/kage": {
+    "first_seen": "2026-08-11",
+    "last_seen": "2026-08-11",
+    "times_seen": 1,
+    "stars_first": 782,
+    "stars_last": 782
+  },
+  "jd-opensource/JoyAI-Video-Edit": {
+    "first_seen": "2026-08-11",
+    "last_seen": "2026-08-11",
+    "times_seen": 1,
+    "stars_first": 737,
+    "stars_last": 737
   }
 }

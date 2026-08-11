@@ -7,9 +7,9 @@ language: C
 license: MIT
 description: "Racing to the bottom of CPU performance"
 homepage: ""
-stars: 669
-stars_per_day: 167
-forks: 6
+stars: 732
+stars_per_day: 146
+forks: 10
 open_issues: 6
 created: 2026-08-06
 pushed_at: 2026-08-06
@@ -30,8 +30,8 @@ use_case: ""
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-17"
+appearances: 2
+next_review: "2026-08-18"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-10"
-star_history: "2026-08-10:669"
+star_history: "2026-08-10:669,2026-08-11:732"
 tags:
   - github
   - "category/other"
@@ -703,4 +703,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-11|2026-08-11]] — 再次上榜，732 stars
 - [[2026-08-10|2026-08-10]] — 首次收錄，669 stars

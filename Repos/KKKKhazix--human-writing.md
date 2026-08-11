@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "让 AI 写的中文读起来像一个具体的人在说话。通用创作与改稿 Skill，开箱即用。"
 homepage: ""
-stars: 2122
-stars_per_day: 424
-forks: 188
+stars: 2298
+stars_per_day: 383
+forks: 200
 open_issues: 4
 created: 2026-08-05
 pushed_at: 2026-08-05
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-08-13"
+appearances: 6
+next_review: "2026-08-14"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-06"
-star_history: "2026-08-06:1230,2026-08-07:1663,2026-08-08:1889,2026-08-09:1991,2026-08-10:2122"
+star_history: "2026-08-06:1230,2026-08-07:1663,2026-08-08:1889,2026-08-09:1991,2026-08-10:2122,2026-08-11:2298"
 tags:
   - github
   - "category/other"
@@ -565,6 +565,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-11|2026-08-11]] — 再次上榜，2.3k stars
 - [[2026-08-10|2026-08-10]] — 再次上榜，2.1k stars
 - [[2026-08-09|2026-08-09]] — 再次上榜，2.0k stars
 - [[2026-08-08|2026-08-08]] — 再次上榜，1.9k stars

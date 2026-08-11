@@ -1,19 +1,19 @@
 ---
-repo: ShawnPana/phone-harness
-url: https://github.com/ShawnPana/phone-harness
-owner: ShawnPana
-owner_type: User
+repo: jd-opensource/JoyAI-Video-Edit
+url: https://github.com/jd-opensource/JoyAI-Video-Edit
+owner: jd-opensource
+owner_type: Organization
 language: Python
-license: MIT
-description: "let your agent control your phone"
+license: Apache-2.0
+description: "[Official Repo] JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion"
 homepage: ""
-stars: 1341
-stars_per_day: 447
-forks: 105
-open_issues: 16
-created: 2026-08-07
-pushed_at: 2026-08-11
-first_seen: 2026-08-10
+stars: 737
+stars_per_day: 123
+forks: 29
+open_issues: 6
+created: 2026-08-04
+pushed_at: 2026-08-07
+first_seen: 2026-08-11
 week: "2026-W33"
 month: "2026-08"
 category: "Other"
@@ -25,39 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-10
+last_reviewed: 2026-08-11
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-14"
-contributor_count: 1
+appearances: 1
+next_review: "2026-08-18"
+contributor_count: 4
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 40
-readme_length: 5135
+repo_size_kb: 4133
+readme_length: 5303
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-10"
-star_history: "2026-08-10:929,2026-08-11:1341"
+ring_history: "assess@2026-08-11"
+star_history: "2026-08-11:737"
 tags:
   - github
   - "category/other"
   - "lang/python"
+  - org
 aliases:
-  - "phone-harness"
-  - "ShawnPana/phone-harness"
+  - "JoyAI-Video-Edit"
+  - "jd-opensource/JoyAI-Video-Edit"
 ---
 
-# phone-harness
+# JoyAI-Video-Edit
 
-**929** stars · **465** stars/天 · 建立 2 天前 · Python · MIT
+**737** stars · **123** stars/天 · 建立 6 天前 · Python · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/ShawnPana--phone-harness");
+const me = dv.page("Repos/jd-opensource--JoyAI-Video-Edit");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`ORG`
 
 > [!summary] 一句話摘要
-> let your agent control your phone
+> [Official Repo] JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion
 
 ## 專案簡介
 
-let your agent control your phone
+[Official Repo] JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/jd-opensource--JoyAI-Video-Edit");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +119,7 @@ let your agent control your phone
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/jd-opensource--JoyAI-Video-Edit");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,175 +143,194 @@ let your agent control your phone
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 75 |
-| Open Issues | 13 |
+| Forks | 29 |
+| Open Issues | 6 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-10 |
-| 建立日期 | 2026-08-07 |
-| Repo 大小 | 40 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/ShawnPana/phone-harness) |
+| 最後推送 | 2026-08-07 |
+| 建立日期 | 2026-08-04 |
+| Repo 大小 | 4.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/jd-opensource/JoyAI-Video-Edit) |
+
+> [!info]- 主要依賴
+> `requirements.txt` 中的核心套件：
+> `--extra-index-url https://download.pytorch.org/whl/cu128` `torch` `torchvision` `torchaudio` `transformers` `diffusers` `accelerate` `huggingface-hub` `safetensors` `tokenizers` `sentencepiece` `protobuf` `fastapi` `uvicorn` `starlette`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 99
+>     "Python" : 60
+>     "HTML" : 23
+>     "Cuda" : 16
+>     "C++" : 1
 >     "Shell" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@ShawnPana](https://github.com/ShawnPana) | 13 |
+> | [@Dai-Wenxun](https://github.com/Dai-Wenxun) | 7 |
+> | [@EasonXiao-888](https://github.com/EasonXiao-888) | 5 |
+> | [@StevenGrove](https://github.com/StevenGrove) | 1 |
+> | [@wangxf1987](https://github.com/wangxf1987) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-07 ~ 2026-08-07）
-> **活躍天數** 1 天 · **最新 commit** connection: detect not-connected states and hand off to the user, never auto-connect
+> [!abstract] 最近 10 次 commit（2026-08-05 ~ 2026-08-07）
+> **活躍天數** 3 天 · **最新 commit** Merge pull request #6 from jd-opensource/fix/fa4-sdpa-fallback
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#13](https://github.com/ShawnPana/phone-harness/issues/13) | Localized iPhone Mirroring app name causes permanent `no-win | 0 | 0 |
+> | [#7](https://github.com/jd-opensource/JoyAI-Video-Edit/issues/7) | when is  Consumer GPU support coming?? | 1 | 2 |
+> | [#4](https://github.com/jd-opensource/JoyAI-Video-Edit/issues/4) | Deployment broken as published: sgl-kernel pin missing fused | 1 | 1 |
+> | [#3](https://github.com/jd-opensource/JoyAI-Video-Edit/issues/3) | 启动运行异常 | 0 | 1 |
+> | [#2](https://github.com/jd-opensource/JoyAI-Video-Edit/issues/2) | Thank you for your excellent work. Do you support audio and  | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Phone Harness 📱
+> JoyAI-Video-Edit
+> Real-Time Open-Ended Video Editing with Autoregressive Diffusion
 > 
-> Connect an LLM directly to your real iPhone with a thin, editable harness.
-> No jailbreak, no Xcode, no WebDriverAgent.
+>   
+>   
+>   
+>   
+>   
 > 
-> The Mac's iPhone Mirroring window is the whole transport: `screencapture` +
-> Vision-framework OCR for eyes, HID-level CGEvents for hands. Nothing between the
-> agent and the phone. The agent writes what's missing during execution in
-> `agent-workspace/agent_helpers.py`.
+>   
 > 
-> ```
->   ● agent: wants to open Weather
->   │
->   ● ocr() → "Weather" at (400, 468)
->   │
->   ● tap(400, 468) → wait_stable() → ocr() confirms the forecast
->   ✓ done
-> ```
+> JoyAI-Video-Edit is a real-time, instruction-guided video editing system for open-ended video streams. Given a live camera stream or uploaded video and a natural-language edit instruction, it edits frames causally as they arrive, without waiting for the full video, requiring a predefined video length, or revisiting future frames. In our deployment benchmark, the full end-to-end pipeline reaches 30.19 FPS at 720x1280, pushing video editing from offline batch processing toward interactive streaming generation.
 > 
-> **Your phone, driven by an agent.**
+> The system combines an MLLM-based condition encoder, a causal video VAE, and a 16B-parameter multimodal diffusion transformer. It is trained and deployed as an autoregressive diffusion editor, then accelerated with aligned autoregressive distribution matching distillation, long-horizon optimization, bounded KV-state inference, and deployment-oriented scheduling to sustain high-throughput 720p editing while reducing train-inference mismatch and accumulated temporal drift.
 > 
-> ## Setup prompt
+> ## 🔥🔥🔥 News!!
 > 
-> Paste into Claude Code or Codex:
+> - 2026.08.06: 🎉 We are excited to release the live demo of our real-time video editing model—try it here: .
+> - 2026.08.05: 🎉 We release the deployment code, [technical report](https://arxiv.org/pdf/2608.03974), online demo, and JoyAI-Video-Edit checkpoints. Please check the links above for details.
+> 
+> ## 💎 Highlights
+> 
+> - **Real-time open-ended editing.** Edits live or uploaded videos as frames arrive, without requiring the full sequence upfront.
+> - **Diverse instruction control.** Supports subject edits, local edits, background changes, style transfer, motion changes, and reference-guided editing.
+> - **Autoregressive diffusion design.** Combines an MLLM condition encoder, causal video VAE, and MMDiT backbone for streaming video editing.
+> - **High-throughput 720p deployment.** Reaches 30.19 FPS end-to-end throughput at 720x1280 with bounded KV-state inference and stable per-chunk compute.
+> 
+> ## 🚧 TODO
+> 
+> - [ ] **Consumer GPU support.** Optimize deployment for consumer-grade GPUs such as GeForce RTX 5090.
+> - [ ] **Stronger model version in progress.** A more powerful version is under active development, with a particular focus on advancing reference-image-guided video editing (RV2V) capabilities.
+> - [ ] **Release full training and data pipelines.** Open-source the complete training framework and data generation pipeline.
+> 
+> ## 🎬 Showcase
+> 
+> JoyAI-Video-Edit is designed for broad video editing tasks, including global appearance changes, local object edits, subject add/remove/replace, background replacement, style transfer, and reference-guided edits.
+> 
+> https://github.com/user-attachments/assets/bca232c9-75df-46f9-b366-14cfa2651994
+> 
+>   
+>     Source
+>     Prompt
+>     Edited
+>   
+>   
+>     
+>     Transform the people, hairstyles, and interior into a British castle aristocratic style.
+>     
+>   
+>   
+>     
+>     Turn the video into a watercolor wash style.
+>     
+>   
+>   
+>     
+>     Make all dogs white, add colorful hats, and turn the sunglasses hot pink.
+>     
+>   
+>   
+>     
+>     Dress the girl in a brown down jacket and blue baseball cap.
+>     
+>   
+>   
+>     
+>     Remove the two white cats in pink clothes on both sides.
+>     
+>   
+> 
+> ## 📦 Model Download
+> 
+> Download the released JoyAI-Video-Edit weights from [Hugging Face](https://huggingface.co/jdopensource/JoyAI-Video-Edit), then place them under:
 > 
 > ```text
-> Set up phone-harness for me. Clone https://github.com/ShawnPana/phone-harness
-> into ~/.phone-harness (its canonical home) and read `install.md` first to install
-> it and connect it to my real iPhone
-> through the macOS iPhone Mirroring app — install it so `phone-harness` is a
-> command on my PATH, and register it as an agent skill named phone-harness using
-> `phone-harness skill` as the body, so you reach for it automatically. Then read
-> `SKILL.md` for normal usage, and always read `src/phone_harness/helpers.py`
-> because that is where the functions are. Whenever you capture or verify the
-> screen, activate the iPhone Mirroring window so I can see what you're doing on
-> the phone.
-> 
-> Setup needs two things only I can do: pairing iPhone Mirroring with my phone
-> once, and granting the terminal Accessibility + Screen Recording in System
-> Settings — walk me through those and wait for me. Verify with
-> `./phone-harness --doctor`.
-> 
-> After it's installed, as a quick demo that interaction works, go to my Home
-> Screen and — if the phone is connected and unlocked — ask me whether you should
-> open the Weather app as a harmless test; only open it if I say yes. If the
-> session is paused or the phone is locked, just tell me the doctor status instead.
+> deploy/deps/checkpoints/JoyAI-Video-Edit/
+> |-- dit/
+> |   `-- joyai_video_edit_dit_0804.pth
+> `-- vae/
+>     |-- config.json
+>     `-- diffusion_pytorch_model.safetensors
 > ```
 > 
-> The agent will walk you through the two things only you can do: **pairing**
-> iPhone Mirroring with your phone once (the pairing prompts need the physical
-> phone), and granting the terminal **Accessibility** (taps & keystrokes) and
-> **Screen Recording** (seeing the phone) in System Settings → Privacy &
-> Security. Screen Recording takes effect after the terminal restarts;
-> Accessibility is immediate. Then `./phone-harness --doctor` verifies the whole
-> chain.
+> ## 🚀 Quick Start
 > 
-> These are the permissions currently known to be required. A fresh machine may
-> prompt for more the first time an action runs — if `--doctor` passes but taps or
-> capture silently do nothing, watch for a macOS permission prompt. See
-> [install.md](install.md) for details.
-> 
-> ## Why this works
-> 
-> iPhone Mirroring (macOS Sequoia+) renders the phone as a Mac window and forwards
-> real mouse and keyboard input as touches. That gives an agent everything it
-> needs:
-> 
-> - **See** — capture just the mirroring window, OCR it with Apple's Vision
->   framework: every visible string with a tap-ready coordinate. The poor man's
->   DOM.
-> - **Act** — CGEvents posted at the HID tap: taps, long-presses, drags/flicks,
->   scroll gestures, unicode typing, and the app's own shortcuts (Cmd+1 Home,
->   Cmd+2 App Switcher, Cmd+3 Spotlight).
-> - **Verify** — screenshot again. No DOM means the capture is the ground truth.
-> 
-> Things that do NOT work, learned the hard way: AppleScript `click at` (silently
-> ignored — the window is a video stream with no accessibility tree), unicode key
-> payloads (mirroring forwards raw HID keycodes, so typing must use keycodes), a
-> slow touch-drag (barely moves an iOS list — use wheel scroll for lists, a fast
-> flick for pages), and input while the window isn't frontmost (swallowed).
-> 
-> ## Usage
+> ### 1. Install
 > 
 > ```bash
-> ./phone-harness <<'PY'
-> open_app("Notes")
-> tap_text("New Note")
-> type_text("hello from the harness")
-> print([o["text"] for o in ocr()][:10])
-> PY
+> conda create -n joyai-video-edit python=3.10 -y
+> conda activate joyai-video-edit
+> python -m pip install -r requirements.txt
 > ```
 > 
-> Day-to-day workflow lives in [SKILL.md](SKILL.md), which [install.md](install.md)
-> registers as an agent skill (`phone-harness skill` prints the body) so the agent
-> reaches for it on its own.
+> ### 2. Prepare Checkpoints
 > 
-> ## Architecture
+> Download the released weights from the Hugging Face link above. MiMo-VL and the ONNX detector files are external runtime dependencies; see [`DEPLOYMENT.md`](DEPLOYMENT.md) for deployment details.
 > 
-> - `SKILL.md` — day-to-day usage (the agent-facing product surface)
-> - `install.md` — permissions bootstrap and troubleshooting
-> - `src/phone_harness/` — protected core (~500 lines):
->   - `mirror.py` — window discovery, focus, capture, CGEvent input
->   - `ocr.py` — Vision-framework text recognition → screen-point boxes
->   - `helpers.py` — the primitives pre-imported into scripts
->   - `admin.py` — `--doctor`
->   - `run.py` — the CLI (`exec` stdin with helpers in scope)
-> - `agent-workspace/agent_helpers.py` — helper code the agent edits; auto-loaded
->   into every script's namespace
-> 
-> The mirror transport is stateless (window bounds and captures are re-queried per
-> call), so there is no daemon — every invocation is self-contained.
-> 
-> ## Development
-> 
-> From a checkout, use `./phone-harness` to run the working tree directly:
+> ### 3. Launch
 > 
 > ```bash
-> ./phone-harness <<'PY'
-> print(screen_info())
-> PY
+> cd deploy
+> bash run_server.sh
 > ```
 > 
-> ## Limits
+> Then open:
 > 
-> - One phone, one session; unlocking the physical phone pauses mirroring.
-> - No multi-touch (no pinch), no camera/Face ID flows, DRM video renders black.
-> - OCR sees text, not semantics — unlabeled icons need a screenshot + a
->   vision-capable model.
+> ```text
+> http://localhost:8080
+> ```
+> 
+> For remote machines, bind the server to `0.0.0.0` and open the selected port, or use SSH port forwarding.
+> 
+> ## 🛠️ Custom Deployment
+> 
+> For custom deployment, edit `deploy/run_server.sh` to set checkpoint paths, CUDA device placement, host, and port. The default script also sets persistent TorchInductor, Triton, and CUDA cache directories so compile artifacts are reused across launches.
+> 
+> `TORCHINDUCTOR_AUTOGRAD_CACHE` is not required for inference-only serving.
+> 
+> ## 📚 Citation
+> 
+> If JoyAI-Video-Edit is useful for your research or product prototype, please cite:
+> 
+> ```bibtex
+> @article{xiao2026joyai,
+>   title={JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion},
+>   author={Xiao, Yicheng and Dai, Wenxun and Qin, Xinran and Song, Lin and Zhang, Maoquan and Xu, Hang and Chen, Yukang and Li, Yitong and Zhang, Guohui and Zhang, Yuan and Zhang, Xuying and Zhang, Tommy and Yuan, Jianlong and Li, Peihao and Lu, Shuai and Fu, Siming and Zhao, Chuyang and Han, Xin and Huang, Jie and Li, Wenbo and Ma, Guoqing and Huang, Wei and Qi, Xiaojuan and Huang, Haoyang and Duan, Nan},
+>   journal={arXiv preprint arXiv:2608.03974},
+>   year={2026}
+> }
+> ```
+> 
+> ## ⚖️ License Agreement
+> 
+> JoyAI-Video-Edit is licensed under Apache 2.0.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/ShawnPana/phone-harness)
+[GitHub](https://github.com/jd-opensource/JoyAI-Video-Edit)
 
 ## 相關收錄
 
@@ -318,7 +338,7 @@ let your agent control your phone
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "ShawnPana--phone-harness"
+> WHERE category = "Other" AND file.name != "jd-opensource--JoyAI-Video-Edit"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -327,7 +347,7 @@ let your agent control your phone
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "ShawnPana--phone-harness" AND status != "archived"
+> WHERE language = "Python" AND file.name != "jd-opensource--JoyAI-Video-Edit" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -336,18 +356,18 @@ let your agent control your phone
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W33" AND file.name != "ShawnPana--phone-harness"
+> WHERE week = "2026-W33" AND file.name != "jd-opensource--JoyAI-Video-Edit"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/jd-opensource--JoyAI-Video-Edit");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "ShawnPana--phone-harness" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "jd-opensource--JoyAI-Video-Edit" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -363,7 +383,7 @@ let your agent control your phone
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "ShawnPana" AND file.name != "ShawnPana--phone-harness"
+> WHERE owner = "jd-opensource" AND file.name != "jd-opensource--JoyAI-Video-Edit"
 > SORT stars DESC
 > ```
 
@@ -371,7 +391,7 @@ let your agent control your phone
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/jd-opensource--JoyAI-Video-Edit");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -388,7 +408,7 @@ let your agent control your phone
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/jd-opensource--JoyAI-Video-Edit");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -421,7 +441,7 @@ let your agent control your phone
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/jd-opensource--JoyAI-Video-Edit");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -445,7 +465,7 @@ let your agent control your phone
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/jd-opensource--JoyAI-Video-Edit");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -482,7 +502,7 @@ let your agent control your phone
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/jd-opensource--JoyAI-Video-Edit");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -565,7 +585,7 @@ let your agent control your phone
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-10** — 首次收錄
+> **2026-08-11** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -581,5 +601,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-11|2026-08-11]] — 再次上榜，1.3k stars
-- [[2026-08-10|2026-08-10]] — 首次收錄，929 stars
+- [[2026-08-11|2026-08-11]] — 首次收錄，737 stars

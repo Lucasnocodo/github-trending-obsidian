@@ -1,19 +1,19 @@
 ---
-repo: ShawnPana/phone-harness
-url: https://github.com/ShawnPana/phone-harness
-owner: ShawnPana
+repo: MengTo/kage
+url: https://github.com/MengTo/kage
+owner: MengTo
 owner_type: User
-language: Python
-license: MIT
-description: "let your agent control your phone"
-homepage: ""
-stars: 1341
-stars_per_day: 447
-forks: 105
-open_issues: 16
-created: 2026-08-07
-pushed_at: 2026-08-11
-first_seen: 2026-08-10
+language: HTML
+license: N/A
+description: "An interactive five-chapter night walk through a Kyoto mountain temple, rendered live in Three.js."
+homepage: "https://mengto.github.io/kage/"
+stars: 782
+stars_per_day: 391
+forks: 139
+open_issues: 0
+created: 2026-08-08
+pushed_at: 2026-08-09
+first_seen: 2026-08-11
 week: "2026-W33"
 month: "2026-08"
 category: "Other"
@@ -25,39 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-10
+last_reviewed: 2026-08-11
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-08-14"
 contributor_count: 1
-engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 40
-readme_length: 5135
+engagement: "medium"
+issue_close_rate: -1
+repo_size_kb: 23703
+readme_length: 3759
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-10"
-star_history: "2026-08-10:929,2026-08-11:1341"
+ring_history: "assess@2026-08-11"
+star_history: "2026-08-11:782"
 tags:
   - github
   - "category/other"
-  - "lang/python"
+  - "lang/html"
+  - "topic/creative_coding"
+  - "topic/generative_art"
+  - "topic/interactive_storytelling"
+  - "topic/japanese_design"
+  - "topic/threejs"
 aliases:
-  - "phone-harness"
-  - "ShawnPana/phone-harness"
+  - "kage"
+  - "MengTo/kage"
 ---
 
-# phone-harness
+# kage
 
-**929** stars · **465** stars/天 · 建立 2 天前 · Python · MIT
+**782** stars · **391** stars/天 · 建立 2 天前 · HTML · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/ShawnPana--phone-harness");
+const me = dv.page("Repos/MengTo--kage");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -72,18 +77,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 `個人專案`
 
+`creative-coding` `generative-art` `interactive-storytelling` `japanese-design` `threejs` `webgl`
+
 > [!summary] 一句話摘要
-> let your agent control your phone
+> An interactive five-chapter night walk through a Kyoto mountain temple, rendered live in Three.js.
 
 ## 專案簡介
 
-let your agent control your phone
+An interactive five-chapter night walk through a Kyoto mountain temple, rendered live in Three.js.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/MengTo--kage");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ let your agent control your phone
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/MengTo--kage");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,175 +149,102 @@ let your agent control your phone
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 75 |
-| Open Issues | 13 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-10 |
-| 建立日期 | 2026-08-07 |
-| Repo 大小 | 40 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/ShawnPana/phone-harness) |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "Python" : 99
->     "Shell" : 1
-> ```
+| Forks | 139 |
+| Open Issues | 0 |
+| 最後推送 | 2026-08-09 |
+| 建立日期 | 2026-08-08 |
+| 官方網站 | [Link](https://mengto.github.io/kage/) |
+| Repo 大小 | 23.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/MengTo/kage) |
+| Topics | `creative-coding` `generative-art` `interactive-storytelling` `japanese-design` `threejs` `webgl` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@ShawnPana](https://github.com/ShawnPana) | 13 |
+> | [@MengTo](https://github.com/MengTo) | 11 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-07 ~ 2026-08-07）
-> **活躍天數** 1 天 · **最新 commit** connection: detect not-connected states and hand off to the user, never auto-connect
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#13](https://github.com/ShawnPana/phone-harness/issues/13) | Localized iPhone Mirroring app name causes permanent `no-win | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-08 ~ 2026-08-09）
+> **活躍天數** 2 天 · **最新 commit** Stop the sections widening the page
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Phone Harness 📱
+> # Kage
 > 
-> Connect an LLM directly to your real iPhone with a thin, editable harness.
-> No jailbreak, no Xcode, no WebDriverAgent.
+> An interactive five-chapter night walk through a Kyoto mountain temple, rendered live in Three.js and layered with cinematic generated imagery.
 > 
-> The Mac's iPhone Mirroring window is the whole transport: `screencapture` +
-> Vision-framework OCR for eyes, HID-level CGEvents for hands. Nothing between the
-> agent and the phone. The agent writes what's missing during execution in
-> `agent-workspace/agent_helpers.py`.
+> [**View the live project**](https://mengto.github.io/kage/) · [**View the source**](https://github.com/MengTo/kage) · [**Read the build prompt**](PROMPT.md)
 > 
+> ## What it does
+> 
+> - Moves a live WebGL camera through a mountain temple as the page scrolls.
+> - Combines procedural architecture, lantern light, fog, rain, drifting leaves, a vermilion moon, and a restrained bloom pipeline.
+> - Layers editorial typography, generated scene plates, and alpha-preserving WebP foreground elements over the 3D world, with section-specific fade and blur transitions.
+> - Includes chapter navigation, a responsive mobile layout, reduced-motion behavior, and a custom cursor for precise pointer devices.
+> 
+> ## How it is made
+> 
+> Kage is a deliberately small static site. `index.html` contains the document structure, CSS, procedural scene construction, scroll choreography, and interaction logic. A vendored Three.js r149 build provides WebGL rendering without a package manager or build step.
+> 
+> The temple, torii, lanterns, moon, terrain, rain, leaves, fog, and post-processing are constructed at runtime. Optimized WebP scene plates and foreground cutouts sit in normal HTML layers, giving the page its collage-like depth while keeping the camera path and lighting live.
+> 
+> ## Build or remix it
+> 
+> The portable implementation brief in [PROMPT.md](PROMPT.md) describes the scene structure, layout system, motion language, and quality constraints needed to rebuild or reinterpret the experience.
+> 
+> ## Run locally
+> 
+> From the repository root, run:
+> 
+> ```bash
+> python3 -m http.server 4173 --bind 127.0.0.1
 > ```
->   ● agent: wants to open Weather
->   │
->   ● ocr() → "Weather" at (400, 468)
->   │
->   ● tap(400, 468) → wait_stable() → ocr() confirms the forecast
->   ✓ done
-> ```
 > 
-> **Your phone, driven by an agent.**
+> Then visit [http://127.0.0.1:4173/](http://127.0.0.1:4173/).
 > 
-> ## Setup prompt
+> There is no build step, environment variable, analytics script, or runtime network dependency. Python is used only to serve the static files locally; any equivalent static server will work.
 > 
-> Paste into Claude Code or Codex:
+> ## Project structure
 > 
 > ```text
-> Set up phone-harness for me. Clone https://github.com/ShawnPana/phone-harness
-> into ~/.phone-harness (its canonical home) and read `install.md` first to install
-> it and connect it to my real iPhone
-> through the macOS iPhone Mirroring app — install it so `phone-harness` is a
-> command on my PATH, and register it as an agent skill named phone-harness using
-> `phone-harness skill` as the body, so you reach for it automatically. Then read
-> `SKILL.md` for normal usage, and always read `src/phone_harness/helpers.py`
-> because that is where the functions are. Whenever you capture or verify the
-> screen, activate the iPhone Mirroring window so I can see what you're doing on
-> the phone.
-> 
-> Setup needs two things only I can do: pairing iPhone Mirroring with my phone
-> once, and granting the terminal Accessibility + Screen Recording in System
-> Settings — walk me through those and wait for me. Verify with
-> `./phone-harness --doctor`.
-> 
-> After it's installed, as a quick demo that interaction works, go to my Home
-> Screen and — if the phone is connected and unlocked — ask me whether you should
-> open the Weather app as a harmless test; only open it if I say yes. If the
-> session is paused or the phone is locked, just tell me the doctor status instead.
+> kage/
+> ├── index.html
+> ├── PROMPT.md
+> ├── README.md
+> ├── assets/
+> │   └── kage-preview.webp
+> └── secret-pathways-assets/
+>     ├── fonts.css
+>     ├── three.min.js
+>     ├── generated/
+>     └── foreground/png/
 > ```
 > 
-> The agent will walk you through the two things only you can do: **pairing**
-> iPhone Mirroring with your phone once (the pairing prompts need the physical
-> phone), and granting the terminal **Accessibility** (taps & keystrokes) and
-> **Screen Recording** (seeing the phone) in System Settings → Privacy &
-> Security. Screen Recording takes effect after the terminal restarts;
-> Accessibility is immediate. Then `./phone-harness --doctor` verifies the whole
-> chain.
+> ## Design and attribution
 > 
-> These are the permissions currently known to be required. A fresh machine may
-> prompt for more the first time an action runs — if `--doctor` passes but taps or
-> capture silently do nothing, watch for a macOS permission prompt. See
-> [install.md](install.md) for details.
+> Kage is an original, independent design study inspired by Japanese temple architecture and night gardens. It is not affiliated with a specific temple, cultural institution, or tourism organization.
 > 
-> ## Why this works
+> The cinematic scene plates and foreground artwork were generated for this project using GPT Image 2, then art-directed and composed with the live Three.js scene. The vendored Three.js r149 build retains its MIT license notice and copyright attribution.
 > 
-> iPhone Mirroring (macOS Sequoia+) renders the phone as a Mac window and forwards
-> real mouse and keyboard input as touches. That gives an agent everything it
-> needs:
+> ## More projects
 > 
-> - **See** — capture just the mirroring window, OCR it with Apple's Vision
->   framework: every visible string with a tap-ready coordinate. The poor man's
->   DOM.
-> - **Act** — CGEvents posted at the HID tap: taps, long-presses, drags/flicks,
->   scroll gestures, unicode typing, and the app's own shortcuts (Cmd+1 Home,
->   Cmd+2 App Switcher, Cmd+3 Spotlight).
-> - **Verify** — screenshot again. No DOM means the capture is the ground truth.
+> Other single-file experiments in the same vein — no build step, no framework, everything in one HTML document.
 > 
-> Things that do NOT work, learned the hard way: AppleScript `click at` (silently
-> ignored — the window is a video stream with no accessibility tree), unicode key
-> payloads (mirroring forwards raw HID keycodes, so typing must use keycodes), a
-> slow touch-drag (barely moves an iOS list — use wheel scroll for lists, a fast
-> flick for pages), and input while the window isn't frontmost (swallowed).
+> - [**Complete Shelf**](https://mengto.github.io/complete-shelf/) — an original Three.js library of seven interactive clothbound hardcovers. · [source](https://github.com/MengTo/complete-shelf)
+> - [**Sketchbook**](https://mengto.com) — a page-flipping sketchbook of Singapore: drag to turn the page, drag the magnifier across it. · [source](https://github.com/MengTo/sketchbook)
+> - [**Agent Skills**](https://github.com/MengTo/Skills) — the reusable skill library these pages are built with, including the [falling leaves](https://github.com/MengTo/Skills/tree/main/agent-skills/web-design/falling-leaves) and [pointer trail](https://github.com/MengTo/Skills/tree/main/agent-skills/web-design/pointer-trail-emitter) techniques extracted from Kage.
 > 
-> ## Usage
+> ## License
 > 
-> ```bash
-> ./phone-harness <<'PY'
-> open_app("Notes")
-> tap_text("New Note")
-> type_text("hello from the harness")
-> print([o["text"] for o in ocr()][:10])
-> PY
-> ```
-> 
-> Day-to-day workflow lives in [SKILL.md](SKILL.md), which [install.md](install.md)
-> registers as an agent skill (`phone-harness skill` prints the body) so the agent
-> reaches for it on its own.
-> 
-> ## Architecture
-> 
-> - `SKILL.md` — day-to-day usage (the agent-facing product surface)
-> - `install.md` — permissions bootstrap and troubleshooting
-> - `src/phone_harness/` — protected core (~500 lines):
->   - `mirror.py` — window discovery, focus, capture, CGEvent input
->   - `ocr.py` — Vision-framework text recognition → screen-point boxes
->   - `helpers.py` — the primitives pre-imported into scripts
->   - `admin.py` — `--doctor`
->   - `run.py` — the CLI (`exec` stdin with helpers in scope)
-> - `agent-workspace/agent_helpers.py` — helper code the agent edits; auto-loaded
->   into every script's namespace
-> 
-> The mirror transport is stateless (window bounds and captures are re-queried per
-> call), so there is no daemon — every invocation is self-contained.
-> 
-> ## Development
-> 
-> From a checkout, use `./phone-harness` to run the working tree directly:
-> 
-> ```bash
-> ./phone-harness <<'PY'
-> print(screen_info())
-> PY
-> ```
-> 
-> ## Limits
-> 
-> - One phone, one session; unlocking the physical phone pauses mirroring.
-> - No multi-touch (no pinch), no camera/Face ID flows, DRM video renders black.
-> - OCR sees text, not semantics — unlabeled icons need a screenshot + a
->   vision-capable model.
+> No license is currently granted for reuse or redistribution of the original Kage code or artwork. The third-party Three.js runtime remains covered by its included MIT license notice.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/ShawnPana/phone-harness)
+[GitHub](https://github.com/MengTo/kage) · [官方網站](https://mengto.github.io/kage/)
 
 ## 相關收錄
 
@@ -318,7 +252,7 @@ let your agent control your phone
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "ShawnPana--phone-harness"
+> WHERE category = "Other" AND file.name != "MengTo--kage"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -327,7 +261,7 @@ let your agent control your phone
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "ShawnPana--phone-harness" AND status != "archived"
+> WHERE language = "HTML" AND file.name != "MengTo--kage" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -336,18 +270,18 @@ let your agent control your phone
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W33" AND file.name != "ShawnPana--phone-harness"
+> WHERE week = "2026-W33" AND file.name != "MengTo--kage"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/MengTo--kage");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "ShawnPana--phone-harness" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "MengTo--kage" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -363,7 +297,7 @@ let your agent control your phone
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "ShawnPana" AND file.name != "ShawnPana--phone-harness"
+> WHERE owner = "MengTo" AND file.name != "MengTo--kage"
 > SORT stars DESC
 > ```
 
@@ -371,7 +305,7 @@ let your agent control your phone
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/MengTo--kage");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -388,7 +322,7 @@ let your agent control your phone
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/MengTo--kage");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -421,7 +355,7 @@ let your agent control your phone
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/MengTo--kage");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -445,7 +379,7 @@ let your agent control your phone
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/MengTo--kage");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -482,7 +416,7 @@ let your agent control your phone
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/MengTo--kage");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -565,7 +499,7 @@ let your agent control your phone
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-10** — 首次收錄
+> **2026-08-11** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -581,5 +515,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-11|2026-08-11]] — 再次上榜，1.3k stars
-- [[2026-08-10|2026-08-10]] — 首次收錄，929 stars
+- [[2026-08-11|2026-08-11]] — 首次收錄，782 stars

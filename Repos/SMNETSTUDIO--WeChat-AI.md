@@ -1,19 +1,19 @@
 ---
-repo: ShawnPana/phone-harness
-url: https://github.com/ShawnPana/phone-harness
-owner: ShawnPana
+repo: SMNETSTUDIO/WeChat-AI
+url: https://github.com/SMNETSTUDIO/WeChat-AI
+owner: SMNETSTUDIO
 owner_type: User
-language: Python
-license: MIT
-description: "let your agent control your phone"
+language: TypeScript
+license: Apache-2.0
+description: ""
 homepage: ""
-stars: 1341
-stars_per_day: 447
-forks: 105
-open_issues: 16
-created: 2026-08-07
+stars: 903
+stars_per_day: 903
+forks: 669
+open_issues: 0
+created: 2026-08-10
 pushed_at: 2026-08-11
-first_seen: 2026-08-10
+first_seen: 2026-08-11
 week: "2026-W33"
 month: "2026-08"
 category: "Other"
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-10
+last_reviewed: 2026-08-11
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-08-14"
 contributor_count: 1
-engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 40
-readme_length: 5135
+engagement: "high"
+issue_close_rate: 100
+repo_size_kb: 762
+readme_length: 6064
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-10"
-star_history: "2026-08-10:929,2026-08-11:1341"
+ring_history: "assess@2026-08-11"
+star_history: "2026-08-11:903"
 tags:
   - github
   - "category/other"
-  - "lang/python"
+  - "lang/typescript"
 aliases:
-  - "phone-harness"
-  - "ShawnPana/phone-harness"
+  - "WeChat-AI"
+  - "SMNETSTUDIO/WeChat-AI"
 ---
 
-# phone-harness
+# WeChat-AI
 
-**929** stars · **465** stars/天 · 建立 2 天前 · Python · MIT
+**903** stars · **903** stars/天 · 建立 1 天前 · TypeScript · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/ShawnPana--phone-harness");
+const me = dv.page("Repos/SMNETSTUDIO--WeChat-AI");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -73,17 +73,17 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> let your agent control your phone
+> No description
 
 ## 專案簡介
 
-let your agent control your phone
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/SMNETSTUDIO--WeChat-AI");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ let your agent control your phone
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/SMNETSTUDIO--WeChat-AI");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,175 +142,180 @@ let your agent control your phone
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 75 |
-| Open Issues | 13 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-10 |
-| 建立日期 | 2026-08-07 |
-| Repo 大小 | 40 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/ShawnPana/phone-harness) |
+| Forks | 669 |
+| Open Issues | 0 |
+| Issue 解決率 | 100% (1 closed) |
+| 最後推送 | 2026-08-11 |
+| 建立日期 | 2026-08-10 |
+| Repo 大小 | 762 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/SMNETSTUDIO/WeChat-AI) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 99
->     "Shell" : 1
+>     "TypeScript" : 55
+>     "HTML" : 42
+>     "JavaScript" : 2
+>     "Python" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@ShawnPana](https://github.com/ShawnPana) | 13 |
+> | [@SMNETSTUDIO](https://github.com/SMNETSTUDIO) | 4 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-07 ~ 2026-08-07）
-> **活躍天數** 1 天 · **最新 commit** connection: detect not-connected states and hand off to the user, never auto-connect
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#13](https://github.com/ShawnPana/phone-harness/issues/13) | Localized iPhone Mirroring app name causes permanent `no-win | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-10 ~ 2026-08-11）
+> **活躍天數** 2 天 · **最新 commit** chore: switch to Apache-2.0 with Commons Clause (no commercial use / no resale)
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Phone Harness 📱
+> # WeChat-AI
 > 
-> Connect an LLM directly to your real iPhone with a thin, editable harness.
-> No jailbreak, no Xcode, no WebDriverAgent.
+> **自托管微信角色扮演对话服务** · Self-hosted WeChat roleplay chatbot service
 > 
-> The Mac's iPhone Mirroring window is the whole transport: `screencapture` +
-> Vision-framework OCR for eyes, HID-level CGEvents for hands. Nothing between the
-> agent and the phone. The agent writes what's missing during execution in
-> `agent-workspace/agent_helpers.py`.
+> 直连腾讯 **iLink**，数据存 **远端 Redis**，登录用 **LINUX DO OAuth**。
+> Connects directly to Tencent **iLink**, stores data in **remote Redis**, and authenticates via **LINUX DO OAuth**.
+> 
+> [功能 Features](#功能-features) · [架构 Architecture](#架构-architecture) · [快速开始 Quick Start](#快速开始-quick-start) · [文档 Docs](#文档-docs) · [许可证 License](#许可证-license)
+> 
+> [](https://linux.do/) [](https://t.me/smnet_group/105727)
+> 
+> ---
+> 
+> ## 功能 Features
+> 
+> | 中文 | English |
+> |------|---------|
+> | LINUX DO OAuth 登录（用户 / 管理员） | LINUX DO OAuth login (user / admin) |
+> | 用户中心：扫码添加/删除微信机器人、批准私聊用户、分配人设 | User center: scan-QR add/remove WeChat bots, approve chat peers, assign personas |
+> | 用户对话：绑定 LINUX DO 后微信内 `@用户名` 请求对话，对方 `/同意` 后双向中继 | P2P chat: after binding, `@username` in WeChat to request a chat, peer replies `/agree` to relay messages both ways |
+> | 管理后台：数据面板、Token 用量、用户与机器人、部署节点、表情包审核 | Admin dashboard: stats, token usage, users & bots, deploy nodes, sticker moderation |
+> | 表情包广场：投稿 / 我的库 / 公开需审核；恶意图过滤 | Sticker square: submit / my library / public needs review; malicious-image filtering |
+> | 回复文字与图片表情（主人表情库 → 模型引用 slug → iLink CDN 发图） | Text + image sticker replies (owner sticker library → model references slug → sent via iLink CDN) |
+> | 输入状态指示（getconfig + sendtyping，回复送达即消失） | Typing indicator (getconfig + sendtyping, disappears when reply is delivered) |
+> | 入站图片理解（`VISION_ENABLED`，默认关闭；caption 模式人设模型无需视觉） | Inbound image understanding (`VISION_ENABLED`, off by default; `caption` mode needs no vision-capable roleplay model) |
+> | 入站语音转写（微信自带转写，默认开启） | Inbound voice transcription (WeChat built-in STT, on by default) |
+> | 远端 Redis 存储（bot token 与表情包均在 Redis） | Remote Redis storage (bot tokens & stickers in Redis) |
+> | OpenAI 兼容 LLM + 按日 Token 统计 | OpenAI-compatible LLM + daily token stats |
+> | 用户自定义模型 + 联网搜索（经 HF 工具网关出站，主站不直连用户 API） | User custom models + web search (egress only via HF tools gateway) |
+> | Chatflow：可视化编排（`/chatflow`），人设可选 prompt / chatflow 模式 | Chatflow: visual orchestration (`/chatflow`), personas support prompt / chatflow mode |
+> | 多节点同构部署 + Cloudflare Worker 负载均衡 | Multi-node homogeneous deployment + Cloudflare Worker LB |
+> | OTA 增量更新（文件差量 + 自动重启） | OTA incremental updates (file diff + auto restart) |
+> 
+> ## 架构 Architecture
 > 
 > ```
->   ● agent: wants to open Weather
->   │
->   ● ocr() → "Weather" at (400, 468)
->   │
->   ● tap(400, 468) → wait_stable() → ocr() confirms the forecast
->   ✓ done
+> 微信用户 ──► 腾讯 iLink ──► 本系统多节点 (收消息 / 人设+记忆 / LLM / 回消息)
+> WeChat user ──► Tencent iLink ──► multi-node system (receive / persona+memory / LLM / reply)
+> 
+> 浏览器 ──► 主域名 CF Worker LB ──► Node-1…N (同一镜像, 共享 Redis)
+> Browser ──► main domain CF Worker LB ──► Node-1…N (same image, shared Redis)
 > ```
 > 
-> **Your phone, driven by an agent.**
+> ## 快速开始 Quick Start
 > 
-> ## Setup prompt
-> 
-> Paste into Claude Code or Codex:
-> 
-> ```text
-> Set up phone-harness for me. Clone https://github.com/ShawnPana/phone-harness
-> into ~/.phone-harness (its canonical home) and read `install.md` first to install
-> it and connect it to my real iPhone
-> through the macOS iPhone Mirroring app — install it so `phone-harness` is a
-> command on my PATH, and register it as an agent skill named phone-harness using
-> `phone-harness skill` as the body, so you reach for it automatically. Then read
-> `SKILL.md` for normal usage, and always read `src/phone_harness/helpers.py`
-> because that is where the functions are. Whenever you capture or verify the
-> screen, activate the iPhone Mirroring window so I can see what you're doing on
-> the phone.
-> 
-> Setup needs two things only I can do: pairing iPhone Mirroring with my phone
-> once, and granting the terminal Accessibility + Screen Recording in System
-> Settings — walk me through those and wait for me. Verify with
-> `./phone-harness --doctor`.
-> 
-> After it's installed, as a quick demo that interaction works, go to my Home
-> Screen and — if the phone is connected and unlocked — ask me whether you should
-> open the Weather app as a harmless test; only open it if I say yes. If the
-> session is paused or the phone is locked, just tell me the doctor status instead.
-> ```
-> 
-> The agent will walk you through the two things only you can do: **pairing**
-> iPhone Mirroring with your phone once (the pairing prompts need the physical
-> phone), and granting the terminal **Accessibility** (taps & keystrokes) and
-> **Screen Recording** (seeing the phone) in System Settings → Privacy &
-> Security. Screen Recording takes effect after the terminal restarts;
-> Accessibility is immediate. Then `./phone-harness --doctor` verifies the whole
-> chain.
-> 
-> These are the permissions currently known to be required. A fresh machine may
-> prompt for more the first time an action runs — if `--doctor` passes but taps or
-> capture silently do nothing, watch for a macOS permission prompt. See
-> [install.md](install.md) for details.
-> 
-> ## Why this works
-> 
-> iPhone Mirroring (macOS Sequoia+) renders the phone as a Mac window and forwards
-> real mouse and keyboard input as touches. That gives an agent everything it
-> needs:
-> 
-> - **See** — capture just the mirroring window, OCR it with Apple's Vision
->   framework: every visible string with a tap-ready coordinate. The poor man's
->   DOM.
-> - **Act** — CGEvents posted at the HID tap: taps, long-presses, drags/flicks,
->   scroll gestures, unicode typing, and the app's own shortcuts (Cmd+1 Home,
->   Cmd+2 App Switcher, Cmd+3 Spotlight).
-> - **Verify** — screenshot again. No DOM means the capture is the ground truth.
-> 
-> Things that do NOT work, learned the hard way: AppleScript `click at` (silently
-> ignored — the window is a video stream with no accessibility tree), unicode key
-> payloads (mirroring forwards raw HID keycodes, so typing must use keycodes), a
-> slow touch-drag (barely moves an iOS list — use wheel scroll for lists, a fast
-> flick for pages), and input while the window isn't frontmost (swallowed).
-> 
-> ## Usage
+> ### 本地开发 Local Development
 > 
 > ```bash
-> ./phone-harness <<'PY'
-> open_app("Notes")
-> tap_text("New Note")
-> type_text("hello from the harness")
-> print([o["text"] for o in ocr()][:10])
-> PY
+> pnpm install
+> cp .env.example .env
+> # 必填 Required: REDIS_URL（Upstash 用 rediss://）、LLM_API_KEY（平台）、LINUXDO_* 、LINUXDO_ADMIN_IDS
+> # 用户自定义 LLM / 联网搜索：部署 huggingface/wechat-ai-tools，配置 TOOLS_BASE_URL + TOOLS_API_KEY
+> 
+> pnpm db:seed
+> pnpm diag
+> pnpm dev
 > ```
 > 
-> Day-to-day workflow lives in [SKILL.md](SKILL.md), which [install.md](install.md)
-> registers as an agent skill (`phone-harness skill` prints the body) so the agent
-> reaches for it on its own.
+> 页面 / Pages：
 > 
-> ## Architecture
+> | 路径 Path | 说明 Description |
+> |-----------|------------------|
+> | `/` | 功能落地页 + OG 分享图 Landing page |
+> | `/app` | 用户中心 User center (LINUX DO login) |
+> | `/docs` | 使用文档 Documentation |
+> | `/admin` | 管理后台 Admin dashboard |
+> | `/chatflow` | Chatflow 编辑器 Chatflow editor |
 > 
-> - `SKILL.md` — day-to-day usage (the agent-facing product surface)
-> - `install.md` — permissions bootstrap and troubleshooting
-> - `src/phone_harness/` — protected core (~500 lines):
->   - `mirror.py` — window discovery, focus, capture, CGEvent input
->   - `ocr.py` — Vision-framework text recognition → screen-point boxes
->   - `helpers.py` — the primitives pre-imported into scripts
->   - `admin.py` — `--doctor`
->   - `run.py` — the CLI (`exec` stdin with helpers in scope)
-> - `agent-workspace/agent_helpers.py` — helper code the agent edits; auto-loaded
->   into every script's namespace
-> 
-> The mirror transport is stateless (window bounds and captures are re-queried per
-> call), so there is no daemon — every invocation is self-contained.
-> 
-> ## Development
-> 
-> From a checkout, use `./phone-harness` to run the working tree directly:
+> ### Docker 一键部署 One-Click Deploy
 > 
 > ```bash
-> ./phone-harness <<'PY'
-> print(screen_info())
-> PY
+> # 配置好 .env 后 After configuring .env
+> docker compose up -d --build
 > ```
 > 
-> ## Limits
+> 详见 / See `docs/docker.md`。
 > 
-> - One phone, one session; unlocking the physical phone pauses mirroring.
-> - No multi-touch (no pinch), no camera/Face ID flows, DRM video renders black.
-> - OCR sees text, not semantics — unlabeled icons need a screenshot + a
->   vision-capable model.
+> ### 多节点 Multi-Node
+> 
+> 每台服务器运行**同一镜像**，共享同一个 Upstash Redis，用户只访问主域名。Cloudflare Worker 负责健康检查与轮询分流，源站地址只写在 Worker 的 `ORIGINS` 中。详见 / See `cloudflare-worker/README.md`。
+> 
+> Each server runs the **same image**, shares one Upstash Redis; users only visit the main domain. A Cloudflare Worker handles health checks and round-robin, origin addresses live only in the Worker's `ORIGINS`.
+> 
+> ## 文档 Docs
+> 
+> | 文档 Doc | 内容 Content |
+> |----------|-------------|
+> | [docs/upstash-redis.md](docs/upstash-redis.md) | Upstash Redis 配置 Redis setup |
+> | [docs/oauth-linuxdo.md](docs/oauth-linuxdo.md) | LINUX DO OAuth 配置 |
+> | [docs/docker.md](docs/docker.md) | Docker / 多节点部署 Multi-node deploy |
+> | [docs/cloudflare.md](docs/cloudflare.md) | Cloudflare 缓存 Cache |
+> | [cloudflare-worker/README.md](cloudflare-worker/README.md) | CF Worker 多源站 LB |
+> | [docs/ai-gateway.md](docs/ai-gateway.md) | AI 网关（主站 ↔ HF）AI gateway |
+> | [docs/chatflow.md](docs/chatflow.md) | Chatflow 编排 |
+> | [docs/admin-api.md](docs/admin-api.md) | 管理 API |
+> | [docs/runbook.md](docs/runbook.md) | 运维手册 Ops runbook |
+> | [docs/e2e-checklist.md](docs/e2e-checklist.md) | 真机验收清单 E2E checklist |
+> 
+> ## 仓库结构 Repository Structure
+> 
+> ```
+> apps/api           # REST + iLink worker + Admin/App/Chatflow UI (public/*.html)
+> packages/ilink     # iLink HTTP 客户端 iLink HTTP client
+> packages/db        # Redis 仓储 / seed / 人设与模型连接 Redis repos / seed
+> packages/llm       # OpenAI 兼容 chat + tools 网关客户端
+> packages/core      # 会话、人设、记忆、路由、chatflow 引擎
+> huggingface/       # wechat-ai-tools：唯一外网 AI/搜索出口（可独立部署）
+> cloudflare-worker  # 主域名负载均衡 Cloudflare Worker LB
+> docs/              # runbook、E2E 清单、ADR
+> scripts/           # 构建 / 打包 / 验收脚本 build / pack / accept scripts
+> ```
+> 
+> ## 验收 Acceptance
+> 
+> ```bash
+> pnpm accept          # 离线自动化门禁 offline automated gate
+> ```
+> 
+> 真机清单 / Real-device checklist：`docs/e2e-checklist.md` · 状态 / Status：`docs/ACCEPTANCE.md`
+> 
+> ## 合规与风险 Compliance & Risk
+> 
+> - 使用腾讯 **微信 ClawBot / iLink** 能力，须遵守相关使用条款。
+>   Using Tencent **WeChat ClawBot / iLink** capabilities requires compliance with the applicable terms.
+> - 个人 Bot 存在限流与处置风险；默认 **白名单用户** 才可对话。
+>   Personal bots face rate-limit and takedown risks; by default only **approved users** can chat.
+> - 角色扮演内容会经 LLM API 出机；请自行评估隐私。
+>   Roleplay content leaves the machine via LLM APIs; assess your own privacy posture.
+> - iLink 协议以实测为准，字段可能变更；适配层见 `packages/ilink`。
+>   The iLink protocol is based on observed behavior and may change; the adapter lives in `packages/ilink`.
+> 
+> ## 许可证 License
+> 
+> [Apache-2.0 with Commons Clause](LICENSE)
+> 
+> **禁止商用与转卖**：仅允许个人/非商业使用；不得以任何形式收取费用、提供付费托管/咨询服务，或将本代码用于商业产品转售。详见 [LICENSE](LICENSE)。
+> 
+> **No commercial use / no resale**: personal & non-commercial use only. You may not charge fees, offer paid hosting/support, or resell the code in commercial products. See [LICENSE](LICENSE).
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/ShawnPana/phone-harness)
+[GitHub](https://github.com/SMNETSTUDIO/WeChat-AI)
 
 ## 相關收錄
 
@@ -318,7 +323,7 @@ let your agent control your phone
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "ShawnPana--phone-harness"
+> WHERE category = "Other" AND file.name != "SMNETSTUDIO--WeChat-AI"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -327,7 +332,7 @@ let your agent control your phone
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "ShawnPana--phone-harness" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "SMNETSTUDIO--WeChat-AI" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -336,18 +341,18 @@ let your agent control your phone
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W33" AND file.name != "ShawnPana--phone-harness"
+> WHERE week = "2026-W33" AND file.name != "SMNETSTUDIO--WeChat-AI"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/SMNETSTUDIO--WeChat-AI");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "ShawnPana--phone-harness" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "SMNETSTUDIO--WeChat-AI" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -363,7 +368,7 @@ let your agent control your phone
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "ShawnPana" AND file.name != "ShawnPana--phone-harness"
+> WHERE owner = "SMNETSTUDIO" AND file.name != "SMNETSTUDIO--WeChat-AI"
 > SORT stars DESC
 > ```
 
@@ -371,7 +376,7 @@ let your agent control your phone
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/SMNETSTUDIO--WeChat-AI");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -388,7 +393,7 @@ let your agent control your phone
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/SMNETSTUDIO--WeChat-AI");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -421,7 +426,7 @@ let your agent control your phone
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/SMNETSTUDIO--WeChat-AI");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -445,7 +450,7 @@ let your agent control your phone
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/SMNETSTUDIO--WeChat-AI");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -482,7 +487,7 @@ let your agent control your phone
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/ShawnPana--phone-harness");
+> const me = dv.page("Repos/SMNETSTUDIO--WeChat-AI");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -565,7 +570,7 @@ let your agent control your phone
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-10** — 首次收錄
+> **2026-08-11** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -581,5 +586,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-11|2026-08-11]] — 再次上榜，1.3k stars
-- [[2026-08-10|2026-08-10]] — 首次收錄，929 stars
+- [[2026-08-11|2026-08-11]] — 首次收錄，903 stars
