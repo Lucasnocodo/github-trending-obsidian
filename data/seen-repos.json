@@ -3389,17 +3389,17 @@
   },
   "KKKKhazix/human-writing": {
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-11",
-    "times_seen": 6,
+    "last_seen": "2026-08-12",
+    "times_seen": 7,
     "stars_first": 1230,
-    "stars_last": 2298
+    "stars_last": 2441
   },
   "Binaryify/open-kimi-ppt-skill": {
     "first_seen": "2026-08-07",
-    "last_seen": "2026-08-11",
-    "times_seen": 5,
+    "last_seen": "2026-08-12",
+    "times_seen": 6,
     "stars_first": 1456,
-    "stars_last": 1607
+    "stars_last": 1602
   },
   "ZzzLc0405/photo-abstract-editorial": {
     "first_seen": "2026-08-07",
@@ -3452,10 +3452,10 @@
   },
   "ShawnPana/phone-harness": {
     "first_seen": "2026-08-10",
-    "last_seen": "2026-08-11",
-    "times_seen": 2,
+    "last_seen": "2026-08-12",
+    "times_seen": 3,
     "stars_first": 929,
-    "stars_last": 1341
+    "stars_last": 1522
   },
   "wumingqi60/lingxi": {
     "first_seen": "2026-08-10",
@@ -3473,31 +3473,31 @@
   },
   "xoreaxeaxeax/asm-hall-of-shame": {
     "first_seen": "2026-08-10",
-    "last_seen": "2026-08-11",
-    "times_seen": 2,
+    "last_seen": "2026-08-12",
+    "times_seen": 3,
     "stars_first": 669,
-    "stars_last": 732
+    "stars_last": 771
   },
   "oil-oil/oil-motion": {
     "first_seen": "2026-08-11",
-    "last_seen": "2026-08-11",
-    "times_seen": 1,
+    "last_seen": "2026-08-12",
+    "times_seen": 2,
     "stars_first": 1231,
-    "stars_last": 1231
+    "stars_last": 1488
   },
   "SMNETSTUDIO/WeChat-AI": {
     "first_seen": "2026-08-11",
-    "last_seen": "2026-08-11",
-    "times_seen": 1,
+    "last_seen": "2026-08-12",
+    "times_seen": 2,
     "stars_first": 903,
-    "stars_last": 903
+    "stars_last": 1450
   },
   "MengTo/kage": {
     "first_seen": "2026-08-11",
-    "last_seen": "2026-08-11",
-    "times_seen": 1,
+    "last_seen": "2026-08-12",
+    "times_seen": 2,
     "stars_first": 782,
-    "stars_last": 782
+    "stars_last": 822
   },
   "jd-opensource/JoyAI-Video-Edit": {
     "first_seen": "2026-08-11",
@@ -3505,5 +3505,26 @@
     "times_seen": 1,
     "stars_first": 737,
     "stars_last": 737
+  },
+  "antirez/h3.c": {
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12",
+    "times_seen": 1,
+    "stars_first": 1303,
+    "stars_last": 1303
+  },
+  "eternityspring/shuohao-skills": {
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12",
+    "times_seen": 1,
+    "stars_first": 948,
+    "stars_last": 948
+  },
+  "sohaibdevv/youtube-music": {
+    "first_seen": "2026-08-12",
+    "last_seen": "2026-08-12",
+    "times_seen": 1,
+    "stars_first": 836,
+    "stars_last": 836
   }
 }
