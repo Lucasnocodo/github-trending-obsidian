@@ -7,9 +7,9 @@ language: HTML
 license: N/A
 description: "An interactive five-chapter night walk through a Kyoto mountain temple, rendered live in Three.js."
 homepage: "https://mengto.github.io/kage/"
-stars: 822
-stars_per_day: 274
-forks: 146
+stars: 861
+stars_per_day: 215
+forks: 154
 open_issues: 0
 created: 2026-08-08
 pushed_at: 2026-08-09
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-15"
+appearances: 3
+next_review: "2026-08-16"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-11"
-star_history: "2026-08-11:782,2026-08-12:822"
+star_history: "2026-08-11:782,2026-08-12:822,2026-08-13:861"
 tags:
   - github
   - "category/other"
@@ -515,5 +515,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-13|2026-08-13]] — 再次上榜，861 stars
 - [[2026-08-12|2026-08-12]] — 再次上榜，822 stars
 - [[2026-08-11|2026-08-11]] — 首次收錄，782 stars

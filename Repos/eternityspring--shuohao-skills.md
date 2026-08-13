@@ -7,9 +7,9 @@ language: JavaScript
 license: Apache-2.0
 description: "AI 短剧制作的 skill 集合：拆角色、出设定图、排大纲 | Agent skills for AI short-drama production — character bibles, model sheets, adaptation outlines. Runs in Claude Code & codex."
 homepage: ""
-stars: 948
-stars_per_day: 190
-forks: 112
+stars: 1204
+stars_per_day: 201
+forks: 137
 open_issues: 1
 created: 2026-08-06
 pushed_at: 2026-08-11
@@ -30,8 +30,8 @@ use_case: ""
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-19"
+appearances: 2
+next_review: "2026-08-16"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-12"
-star_history: "2026-08-12:948"
+star_history: "2026-08-12:948,2026-08-13:1204"
 tags:
   - github
   - "category/other"
@@ -537,4 +537,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-13|2026-08-13]] — 再次上榜，1.2k stars
 - [[2026-08-12|2026-08-12]] — 首次收錄，948 stars

@@ -1,68 +1,68 @@
 ---
-repo: sohaibdevv/youtube-music
-url: https://github.com/sohaibdevv/youtube-music
-owner: sohaibdevv
+repo: guillaumemeyer/watermarks-remover
+url: https://github.com/guillaumemeyer/watermarks-remover
+owner: guillaumemeyer
 owner_type: User
-language: TypeScript
+language: Python
 license: MIT
-description: "A lightweight, ad‑free client for streaming music from YouTube Music. No subscription required. Supports background playback, search, and custom playlists via the reverse‑engineered API."
-homepage: ""
-stars: 851
-stars_per_day: 851
-forks: 0
-open_issues: 0
+description: "Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD"
+homepage: "https://github.com/guillaumemeyer/watermarks-remover"
+stars: 2658
+stars_per_day: 2658
+forks: 258
+open_issues: 3
 created: 2026-08-11
-pushed_at: 2026-08-11
-first_seen: 2026-08-12
+pushed_at: 2026-08-13
+first_seen: 2026-08-13
 week: "2026-W33"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: "v1.0.0"
+release_tag: "v0.3.1"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-12
+last_reviewed: 2026-08-13
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-08-16"
-contributor_count: 2
+contributor_count: 1
 engagement: "low"
-issue_close_rate: -1
-repo_size_kb: 3618
-readme_length: 951
+issue_close_rate: 40
+repo_size_kb: 145
+readme_length: 9873
 bus_factor: 1
-last_release_days: 1
+last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-12"
-star_history: "2026-08-12:836,2026-08-13:851"
+ring_history: "assess@2026-08-13"
+star_history: "2026-08-13:2658"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
-  - "topic/ad_free"
-  - "topic/audio_streaming"
-  - "topic/background_playback"
-  - "topic/desktop_app"
-  - "topic/free"
+  - "lang/python"
+  - "topic/agent_skill"
+  - "topic/ai"
+  - "topic/c2pa"
+  - "topic/claude"
+  - "topic/provenance"
 aliases:
-  - "youtube-music"
-  - "sohaibdevv/youtube-music"
+  - "watermarks-remover"
+  - "guillaumemeyer/watermarks-remover"
 ---
 
-# youtube-music
+# watermarks-remover
 
-**836** stars · **836** stars/天 · 建立 1 天前 · TypeScript · MIT
+**2.7k** stars · **2.7k** stars/天 · 建立 1 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/sohaibdevv--youtube-music");
+const me = dv.page("Repos/guillaumemeyer--watermarks-remover");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v1.0.0`
+`個人專案` `v0.3.1`
 
-`ad-free` `audio-streaming` `background-playback` `desktop-app` `free` `music` `music-player` `no-ads` `open-source` `player` `playlist-manager` `streaming` `windows` `youtube` `youtube-music` `yt-music`
+`agent-skill` `ai` `c2pa` `claude` `provenance` `synthid` `watermark`
 
 > [!summary] 一句話摘要
-> A lightweight, ad‑free client for streaming music from YouTube Music. No subscription required. Supports background playback, search, and custom playlists via the reverse‑engineered API.
+> Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD
 
 ## 專案簡介
 
-A lightweight, ad‑free client for streaming music from YouTube Music. No subscription required. Supports background playback, search, and custom playlists via the reverse‑engineered API.
+Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/guillaumemeyer--watermarks-remover");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +125,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/guillaumemeyer--watermarks-remover");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,132 +149,255 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 0 |
-| Open Issues | 0 |
-| 最後推送 | 2026-08-11 |
+| Forks | 258 |
+| Open Issues | 3 |
+| Issue 解決率 | 40% (2 closed) |
+| 最後推送 | 2026-08-13 |
 | 建立日期 | 2026-08-11 |
-| Repo 大小 | 3.5 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/sohaibdevv/youtube-music) |
-| Topics | `ad-free` `audio-streaming` `background-playback` `desktop-app` `free` `music` `music-player` `no-ads` |
+| 官方網站 | [Link](https://github.com/guillaumemeyer/watermarks-remover) |
+| Repo 大小 | 145 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/guillaumemeyer/watermarks-remover) |
+| Topics | `agent-skill` `ai` `c2pa` `claude` `provenance` `synthid` `watermark` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 90
->     "JavaScript" : 5
->     "CSS" : 5
+>     "Python" : 96
+>     "Shell" : 3
+>     "Makefile" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@sohaibdevv](https://github.com/sohaibdevv) | 7 |
-> | [@github-actions[bot]](https://github.com/github-actions[bot]) | 1 |
+> | [@raybadteam](https://github.com/raybadteam) | 1 |
 
-**最新版本**：v1.0.0 — youtube-music v1.0.0 (2026-08-11)
+**最新版本**：v0.3.1 — v0.3.1 — stronger Layer B statistical-watermark rewrite (2026-08-13)
 
 > [!info]- Release Notes
-> First public release. Everything works, nothing extra.
-> 
-> 📦 **Inside the archive:**
-> _- youtube-music-free.exe_
-> 🔒 **Password: ytm4all**
-> 
-> 🔥 Features:
-> - Search for tracks, albums, artists
-> - Local playlists (saved locally)
-> - Background playback – music keeps playing when minimized
-> - Media keys support (Play/Pause/Next/Prev)
-> - Dark theme
-> - No ads
-> - No login required
-> - No tracking
-> 
-> ⚡ Just download, unzip with the password, and run the EXE. Works on Windows 10/11.
-> 
-> 📄 License: MIT
-> 
-> Bugs and questions – open an Issue.
+> - `rewrite_text.py` default paraphrase now performs an explicit **word-choice + syntax** attack (clause order, connectors, transition words, sentence boundaries, function words) rather than a generic rewrite
+> - New `--strength humanize`: zero-shot "write like a human" pass targeting formulaic AI-style phrasing
+> - New `--strength code`: rewrites comments, docstrings, and string literals, and renames local identifiers while preserving behavior and public API names
+> - Structural pass now emits "natural, varied human prose" instead of AI-typical "clear professional style"
+> - New `--temperature` (default `0.9`) for both Ollama and OpenAI-compatible backends
+> - New `--candidates N`: generates N rewrites and selects the most lexically diverged (bigram Jaccard distance) with a length-drift guard
+> - Stronger model hygiene: prefer local open-weight models and avoid any known-watermarked vendor, not just the suspected origin
+> - Residual-risk reporting now distinguishes short/highly predictable text (lower risk) from long, high-entropy prose (higher risk)
+> - Docs updated in `SKILL.md`, `removal-matrix.md`, and `vendor-notes.md`; tests cover new prompts, divergence scoring, and candidate selection
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-11 ~ 2026-08-11）
-> **活躍天數** 1 天 · **最新 commit** Update README.md
+> [!abstract] 最近 10 次 commit（2026-08-11 ~ 2026-08-13）
+> **活躍天數** 3 天 · **最新 commit** Release v0.3.1: stronger Layer B statistical-watermark rewrite
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#4](https://github.com/guillaumemeyer/watermarks-remover/issues/4) | Dockerfile.synthid: REVERSE_SYNTHID_REF is a silent no-op (A | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> 🎵 YouTube Music, but free
+> ```
+> _ _ _ ____ ___ ____ ____ _  _ ____ ____ _  _ ____    ____ ____ _  _ ____ _  _ ____ ____
+> | | | |__|  |  |___ |__/ |\/| |__| |__/ |_/  [__  __ |__/ |___ |\/| |  | |  | |___ |__/
+> |_|_| |  |  |  |___ |  \ |  | |  | |  \ | \_ ___]    |  \ |___ |  | |__|  \/  |___ |  \
+> ```
 > 
->   No ads. No premium. No bullshit.
 > 
->   
->     
->   
->   
->     
->   
->   
->     
->   
->   
->     
->   
+> ## Install (agent skill)
 > 
-> ---
+> ```bash
 > 
-> ## ✨ Features
+> # Clones upstream, creates a venv, and installs scorer-only dependencies.
+> "$SCRIPTS/setup_synthid.sh"
 > 
-> |  |  |
+> 
+> # Optional local Ollama:
+> 
+> ## Optional SynthID pixel scoring
+> 
+> `inspect_image.py` and `clean_image.py` can report a pixel-domain SynthID
+> confidence score when an external checkout of
+> [`aloshdenny/reverse-SynthID`](https://github.com/aloshdenny/reverse-SynthID)
+> is available. The scorer is **not bundled**: it is loaded at runtime from your
+> checkout, and its code remains under the upstream project's non-commercial
+> Research License.
+> 
+> 
+> ### Option 1: one-command bootstrap (no Docker)
+> 
+> ```bash
+> SCRIPTS=skills/remove-ai-marks/scripts
+> 
+> 
+> ### Option 2: local Docker build
+> 
+> ```bash
+> make docker-synthid-build
+> docker run --rm -v "$(pwd):/data" watermarks-remover-synthid-scorer /data/shot.png
+> ```
+> 
+> The image is built locally from the upstream source at build time. It is not
+> published, so it does not redistribute the upstream code.
+> 
+> V4 scoring uses `artifacts/spectral_codebook_v4.npz` from the upstream checkout
+> (~220 MB). This is **detection/scoring only** — it does not remove pixel
+> watermarks.
+> 
+> 
+> ## Removal options (summary)
+> 
+> | Option | Removes | Notes |
+> | --- | --- | --- |
+> | Unicode scrub (Layer A) | ZWSP, bidi, tags, exotic spaces, … | Safe default for text |
+> | Rewrite (Layer B) | Statistical token marks (best-effort) | Always offered by skill; costs style — see [Disclaimer](#disclaimer-what-removing-a-text-watermark-costs) |
+> | Container/metadata strip | File provenance | See format table |
+> | Open-weight local models | Avoid re-stamping with origin model | Operational alternative |
+> 
+> Matrix: [`skills/remove-ai-marks/references/removal-matrix.md`](skills/remove-ai-marks/references/removal-matrix.md).
+> 
+> 
+> ### [v0.3.0](https://github.com/guillaumemeyer/watermarks-remover/releases/tag/v0.3.0) — optional SynthID pixel scoring
+> 
+> - Optional pixel-domain SynthID scorer via an external [`aloshdenny/reverse-SynthID`](https://github.com/aloshdenny/reverse-SynthID) checkout (`score_synthid.py`); surfaced in `inspect_image.py` / `clean_image.py` with `REVERSE_SYNTHID_DIR` or `--synthid-dir`
+> - `setup_synthid.sh` bootstrap (scorer-only dependencies; `--full` installs upstream requirements); `Dockerfile.synthid` plus `make docker-synthid-build` / `docker-synthid-help`
+> - Makefile `smoke-synthid` and `bootstrap-synthid` targets
+> - Tests for the scorer adapter, CLI unavailable path, JSON parsing, and runtime errors
+> - Docs: detection/scoring only (no pixel removal); upstream code is not bundled and remains under its non-commercial Research License
+> 
+> 
+> # watermarks-remover
+> 
+> [](https://github.com/guillaumemeyer/watermarks-remover/actions/workflows/ci.yml)
+> [](https://github.com/guillaumemeyer/watermarks-remover/releases)
+> 
+> Agent skill + stdlib Python scripts to strip **multi-vendor AI provenance marks** from text and files — for privacy and hygiene on content **you own**.
+> 
+> | Layer | Target | How |
+> | --- | --- | --- |
+> | **A** | Invisible Unicode, exotic spaces, bidi, tag chars | Deterministic Python scripts |
+> | **B** | Statistical (token-sampling) text watermarks | Agent rewrite + optional `rewrite_text.py` hook |
+> | **Files** | C2PA / EXIF / XMP / doc props | PNG, JPEG, SVG, PDF, DOCX, ODT, HTML, Markdown |
+> 
+> Vendors / ecosystems (class-level): **Claude**, **Gemini / SynthID-Text**, **OpenAI** provenance surfaces, **open-LLM** Kirchenbauer-style marks.
+> 
+> **Latest release:** [v0.3.1](https://github.com/guillaumemeyer/watermarks-remover/releases/tag/v0.3.1)
+> 
+> Skill path: [`skills/remove-ai-marks/`](skills/remove-ai-marks/)  
+> (migration: formerly `remove-claude-marks`; slash alias `/remove-claude-marks` still documented)
+> 
+> 
+> # Grok Build / project-local
+> mkdir -p .grok/skills
+> ln -sfn "$(pwd)/skills/remove-ai-marks" .grok/skills/remove-ai-marks
+> 
+> 
+> # User-global Grok
+> mkdir -p ~/.grok/skills
+> ln -sfn "$(pwd)/skills/remove-ai-marks" ~/.grok/skills/remove-ai-marks
+> ```
+> 
+> Invoke with `/remove-ai-marks` or ask to “strip AI watermarks / C2PA / Claude marks / SynthID-class text.”
+> 
+> Optional system tools (auto-used when present):
+> 
+> | Tool | Role |
 > | --- | --- |
-> | 🚫 **No ads** | Uninterrupted listening |
-> | 🔄 **Background playback** | Music keeps playing when minimized |
-> | 🔍 **Search** | Find tracks, artists, albums instantly |
-> | 📂 **Local playlists** | Save queues – no tracking |
-> | 🌙 **Dark theme** | Auto or manual |
-> | ⌨️ **Media keys** | Play/Pause, Next, Previous |
-> | 📦 **Portable** | Single EXE – no install |
+> | [`c2patool`](https://github.com/contentauth/c2pa-rs/tree/main/cli) | Inspect C2PA manifests |
+> | [`exiftool`](https://exiftool.org/) | Residual metadata strip (esp. **PDF**) |
+> 
+> Core scripts need **Python 3.10+** stdlib only. Layer B model calls are optional.
+> 
+> 
+> ## Quick use (scripts)
+> 
+> ```bash
+> SCRIPTS=skills/remove-ai-marks/scripts
+> 
+> 
+> # Unified inspect / clean
+> python3 "$SCRIPTS/inspect_file.py" draft.md
+> python3 "$SCRIPTS/clean_file.py" draft.md -o draft.cleaned.md
+> python3 "$SCRIPTS/clean_file.py" photo.png -o photo.cleaned.png
+> python3 "$SCRIPTS/clean_file.py" notes.docx -o notes.cleaned.docx
+> 
+> 
+> # Text Layer A
+> python3 "$SCRIPTS/inspect_text.py" draft.md
+> python3 "$SCRIPTS/clean_text.py" draft.md -o draft.cleaned.md --stats
+> 
+> 
+> # Layer B rewrite hook (default: print prompt only — no model required)
+> python3 "$SCRIPTS/rewrite_text.py" draft.md --backend print-prompt --strength paraphrase
+> 
+> # WATERMARKS_REWRITE_BACKEND=ollama WATERMARKS_REWRITE_MODEL=llama3.2 \
+> 
+> #   python3 "$SCRIPTS/rewrite_text.py" draft.md -o draft.rewritten.md
+> 
+> 
+> # Images
+> python3 "$SCRIPTS/inspect_image.py" shot.png
+> python3 "$SCRIPTS/clean_image.py" shot.png -o shot.cleaned.png
+> ```
+> 
+> 
+> # Score an image (default checkout: ~/reverse-SynthID).
+> REVERSE_SYNTHID_DIR=~/reverse-SynthID \
+> ~/reverse-SynthID/.venv/bin/python "$SCRIPTS/score_synthid.py" shot.png
+> 
+> 
+> # Or surface the score from inspect / clean (same venv Python).
+> REVERSE_SYNTHID_DIR=~/reverse-SynthID \
+> ~/reverse-SynthID/.venv/bin/python "$SCRIPTS/inspect_image.py" shot.png
+> ```
+> 
+> `setup_synthid.sh` accepts `--dir PATH`, `--ref REF`, and `--full` (install the
+> full upstream `requirements.txt`, which adds `torch`/`diffusers` for the
+> upstream VAE bypass this project does not use).
+> 
+> 
+> ## Coverage matrix
+> 
+> | Channel | Claude | Gemini/SynthID | OpenAI | Open-LLM |
+> | --- | --- | --- | --- | --- |
+> | Unicode / edit-based text | Layer A | Layer A | Layer A | Layer A |
+> | Statistical sampling text | Layer B best-effort | Layer B best-effort | Layer B if present | Layer B best-effort |
+> | C2PA / file metadata | Yes (listed formats) | Yes when present | Yes when present | Yes when present |
+> | Pixel image marks | Out of scope | Optional SynthID score (external); removal out of scope | Out of scope | Out of scope |
+> | Training backdoors | Out of scope | Out of scope | Out of scope | Out of scope |
+> 
+> Details: [`skills/remove-ai-marks/references/vendor-notes.md`](skills/remove-ai-marks/references/vendor-notes.md), [`mark-classes.md`](skills/remove-ai-marks/references/mark-classes.md).
 > 
 > ---
 > 
-> ## 📦 Download
 > 
->   
->     
->   
->   
-> 🔐 Password:  ytm4all
+> ## How text marking works (short)
 > 
-> ---
+> Modern LLM watermarks often hide a signal in **which tokens are chosen** (generative / sampling bias), not only in invisible characters. Edit-based schemes inject Unicode or synonym rules. File schemes attach **C2PA** or generator metadata.
 > 
-> ## 🚀 How to use
+> - **Layer A** removes edit-based Unicode carriers (testable).
+> - **Layer B** attacks sampling watermarks via heavy rewrite (best-effort; literature-standard attacks such as paraphrase / back-translation).
+> - **File cleaners** strip C2PA/XMP/props from supported containers.
 > 
-> 1. ⬇️ Download the ZIP  
-> 2. 🔓 Unzip with password `ytm4all`  
-> 3. 🖱️ Run **`youtube-music-free.exe`**  
-> 4. 🔎 Search and play
+> Until vendors ship public detectors and keys, **no tool can honestly certify** “this fails the official check.” Reports must separate verifiable vs best-effort work.
 > 
-> No install, no registry, no leftovers.
+> Prefer a **non-origin** model for Layer B (do not rewrite Claude text with Claude if you are trying to avoid re-stamping).
 > 
 > ---
 > 
-> ## ⚠️ Disclaimer
 > 
-> Not affiliated with Google. All rights belong to owners. Streams audio like a browser – no downloading, no DRM bypass. Use responsibly.
+> ## Disclaimer: what removing a text watermark costs
 > 
-> ---
-> 
-> ## 📄 License
-> 
-> MIT
-> 
-> ---
+> Text watermarks live in **the wording itself**: the signal is spread across token choices, so nearly every sentence carries a little of it. Two consequences follow, and they are why Layer B is honestly describ
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/sohaibdevv/youtube-music)
+[GitHub](https://github.com/guillaumemeyer/watermarks-remover) · [官方網站](https://github.com/guillaumemeyer/watermarks-remover)
 
 ## 相關收錄
 
@@ -282,7 +405,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "sohaibdevv--youtube-music"
+> WHERE category = "Other" AND file.name != "guillaumemeyer--watermarks-remover"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -291,7 +414,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "sohaibdevv--youtube-music" AND status != "archived"
+> WHERE language = "Python" AND file.name != "guillaumemeyer--watermarks-remover" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -300,18 +423,18 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W33" AND file.name != "sohaibdevv--youtube-music"
+> WHERE week = "2026-W33" AND file.name != "guillaumemeyer--watermarks-remover"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/guillaumemeyer--watermarks-remover");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "sohaibdevv--youtube-music" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "guillaumemeyer--watermarks-remover" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -327,7 +450,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "sohaibdevv" AND file.name != "sohaibdevv--youtube-music"
+> WHERE owner = "guillaumemeyer" AND file.name != "guillaumemeyer--watermarks-remover"
 > SORT stars DESC
 > ```
 
@@ -335,7 +458,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/guillaumemeyer--watermarks-remover");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -352,7 +475,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/guillaumemeyer--watermarks-remover");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -385,7 +508,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/guillaumemeyer--watermarks-remover");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -409,7 +532,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/guillaumemeyer--watermarks-remover");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -446,7 +569,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/guillaumemeyer--watermarks-remover");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -529,7 +652,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-12** — 首次收錄
+> **2026-08-13** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -545,5 +668,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-13|2026-08-13]] — 再次上榜，851 stars
-- [[2026-08-12|2026-08-12]] — 首次收錄，836 stars
+- [[2026-08-13|2026-08-13]] — 首次收錄，2.7k stars

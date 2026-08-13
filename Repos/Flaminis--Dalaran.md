@@ -1,68 +1,68 @@
 ---
-repo: sohaibdevv/youtube-music
-url: https://github.com/sohaibdevv/youtube-music
-owner: sohaibdevv
+repo: Flaminis/Dalaran
+url: https://github.com/Flaminis/Dalaran
+owner: Flaminis
 owner_type: User
-language: TypeScript
-license: MIT
-description: "A lightweight, ad‑free client for streaming music from YouTube Music. No subscription required. Supports background playback, search, and custom playlists via the reverse‑engineered API."
+language: Rust
+license: Apache-2.0
+description: "Dalaran — Apache-2.0, robotics-first visualization and data infrastructure for multimodal time-series. ROS 2 native, reads existing .rrd recordings. A hard fork of Rerun."
 homepage: ""
-stars: 851
-stars_per_day: 851
-forks: 0
-open_issues: 0
-created: 2026-08-11
-pushed_at: 2026-08-11
-first_seen: 2026-08-12
+stars: 891
+stars_per_day: 178
+forks: 55
+open_issues: 8
+created: 2026-08-07
+pushed_at: 2026-08-12
+first_seen: 2026-08-13
 week: "2026-W33"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: "v1.0.0"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-12
+last_reviewed: 2026-08-13
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-16"
-contributor_count: 2
+appearances: 1
+next_review: "2026-08-20"
+contributor_count: 5
 engagement: "low"
-issue_close_rate: -1
-repo_size_kb: 3618
-readme_length: 951
-bus_factor: 1
-last_release_days: 1
-release_cadence: "weekly"
+issue_close_rate: 0
+repo_size_kb: 155238
+readme_length: 9607
+bus_factor: 2
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-12"
-star_history: "2026-08-12:836,2026-08-13:851"
+ring_history: "assess@2026-08-13"
+star_history: "2026-08-13:891"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
-  - "topic/ad_free"
-  - "topic/audio_streaming"
-  - "topic/background_playback"
-  - "topic/desktop_app"
-  - "topic/free"
+  - "lang/rust"
+  - "topic/apache2"
+  - "topic/computer_vision"
+  - "topic/lidar"
+  - "topic/pointcloud"
+  - "topic/python"
 aliases:
-  - "youtube-music"
-  - "sohaibdevv/youtube-music"
+  - "Dalaran"
+  - "Flaminis/Dalaran"
 ---
 
-# youtube-music
+# Dalaran
 
-**836** stars · **836** stars/天 · 建立 1 天前 · TypeScript · MIT
+**891** stars · **178** stars/天 · 建立 5 天前 · Rust · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/sohaibdevv--youtube-music");
+const me = dv.page("Repos/Flaminis--Dalaran");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +75,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v1.0.0`
-
-`ad-free` `audio-streaming` `background-playback` `desktop-app` `free` `music` `music-player` `no-ads` `open-source` `player` `playlist-manager` `streaming` `windows` `youtube` `youtube-music` `yt-music`
+`apache2` `computer-vision` `lidar` `pointcloud` `python` `robotics` `ros2` `rust` `time-series` `visualization`
 
 > [!summary] 一句話摘要
-> A lightweight, ad‑free client for streaming music from YouTube Music. No subscription required. Supports background playback, search, and custom playlists via the reverse‑engineered API.
+> Dalaran — Apache-2.0, robotics-first visualization and data infrastructure for multimodal time-series. ROS 2 native, reads existing .rrd recordings. A hard fork of Rerun.
 
 ## 專案簡介
 
-A lightweight, ad‑free client for streaming music from YouTube Music. No subscription required. Supports background playback, search, and custom playlists via the reverse‑engineered API.
+Dalaran — Apache-2.0, robotics-first visualization and data infrastructure for multimodal time-series. ROS 2 native, reads existing .rrd recordings. A hard fork of Rerun.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/Flaminis--Dalaran");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +123,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/Flaminis--Dalaran");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,132 +147,241 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 0 |
-| Open Issues | 0 |
-| 最後推送 | 2026-08-11 |
-| 建立日期 | 2026-08-11 |
-| Repo 大小 | 3.5 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/sohaibdevv/youtube-music) |
-| Topics | `ad-free` `audio-streaming` `background-playback` `desktop-app` `free` `music` `music-player` `no-ads` |
+| Forks | 55 |
+| Open Issues | 8 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-08-12 |
+| 建立日期 | 2026-08-07 |
+| Repo 大小 | 151.6 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Flaminis/Dalaran) |
+| Topics | `apache2` `computer-vision` `lidar` `pointcloud` `python` `robotics` `ros2` `rust` |
+
+> [!info]- 主要依賴
+> `Cargo.toml` 中的核心套件：
+> `resolver` `members` `exclude` `authors` `edition` `homepage` `include` `license` `repository` `rust-version` `version` `ignored` `ignored-paths` `dl_build_info` `dl_build_tools`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 90
->     "JavaScript" : 5
->     "CSS" : 5
+>     "Rust" : 82
+>     "Python" : 14
+>     "C++" : 2
+>     "WGSL" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@sohaibdevv](https://github.com/sohaibdevv) | 7 |
-> | [@github-actions[bot]](https://github.com/github-actions[bot]) | 1 |
-
-**最新版本**：v1.0.0 — youtube-music v1.0.0 (2026-08-11)
-
-> [!info]- Release Notes
-> First public release. Everything works, nothing extra.
-> 
-> 📦 **Inside the archive:**
-> _- youtube-music-free.exe_
-> 🔒 **Password: ytm4all**
-> 
-> 🔥 Features:
-> - Search for tracks, albums, artists
-> - Local playlists (saved locally)
-> - Background playback – music keeps playing when minimized
-> - Media keys support (Play/Pause/Next/Prev)
-> - Dark theme
-> - No ads
-> - No login required
-> - No tracking
-> 
-> ⚡ Just download, unzip with the password, and run the EXE. Works on Windows 10/11.
-> 
-> 📄 License: MIT
-> 
-> Bugs and questions – open an Issue.
+> | [@emilk](https://github.com/emilk) | 2309 |
+> | [@Wumpf](https://github.com/Wumpf) | 1626 |
+> | [@teh-cmc](https://github.com/teh-cmc) | 1033 |
+> | [@abey79](https://github.com/abey79) | 849 |
+> | [@jprochazk](https://github.com/jprochazk) | 438 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-11 ~ 2026-08-11）
-> **活躍天數** 1 天 · **最新 commit** Update README.md
+> [!abstract] 最近 10 次 commit（2026-08-07 ~ 2026-08-07）
+> **活躍天數** 1 天 · **最新 commit** style(tests): replace throwaway lambdas in the frame-transform test
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> 🎵 YouTube Music, but free
+> # Dalaran
 > 
->   No ads. No premium. No bullshit.
+> **Dalaran is an Apache-2.0, robotics-first observability and visualization stack
+> for multimodal time-series data — ROS 2 topics, LiDAR sweeps, camera streams,
+> IMU, and TF transforms, recorded and replayed on one timeline.**
 > 
->   
->     
->   
->   
->     
->   
->   
->     
->   
->   
->     
->   
+> You log data from your robot, your simulator, or an offline pipeline; Dalaran
+> stores it in an Arrow-backed columnar chunk store, renders it in a 3D/2D viewer
+> that stays in sync across every sensor, and hands the same data back to you as
+> dataframes when you want to compute on it instead of look at it.
 > 
 > ---
 > 
-> ## ✨ Features
 > 
-> |  |  |
-> | --- | --- |
-> | 🚫 **No ads** | Uninterrupted listening |
-> | 🔄 **Background playback** | Music keeps playing when minimized |
-> | 🔍 **Search** | Find tracks, artists, albums instantly |
-> | 📂 **Local playlists** | Save queues – no tracking |
-> | 🌙 **Dark theme** | Auto or manual |
-> | ⌨️ **Media keys** | Play/Pause, Next, Previous |
-> | 📦 **Portable** | Single EXE – no install |
+> ## 60-second quickstart
+> 
+> 
+> ## Why Dalaran
+> 
+> Everything below is what Dalaran adds for robotics teams specifically, and
+> everything below works today — it is code in this repository with tests, not a
+> roadmap. What is *not* built yet lives in [ROADMAP.md](ROADMAP.md).
+> 
+> - **`dalaran.robot`, a high-level robotics logging API** — one handle that knows
+>   about a robot: joint states, base pose, sensor frames, and URDF-driven link
+>   transforms, so you log `robot.log_joint_states(...)` instead of hand-rolling a
+>   dozen entity paths and quaternion conversions. Point it at a URDF and joint
+>   limits, joint axes and `` joints are honoured for you.
+> - **ROS 2 bridge and rosbag2 replay** — subscribe to live ROS 2
+>   topics or replay a rosbag2 into Dalaran, backed by an **extensible message
+>   registry** so you can teach it your own `.msg` types without patching the
+>   core. Today the repository already ingests MCAP and a set of common ROS
+>   message schemas.
+> - **ROS axis-convention helpers** — REP-103/REP-105 conventions (`x`-forward
+>   `z`-up, ENU vs. NED for positions *and* orientations, `map`/`odom`/`base_link`
+>   frame semantics that make the direction hard to get backwards) as first-class
+>   helpers, because silently mismatched axis conventions are the single most
+>   common way a robotics visualization ends up wrong.
+> - **Occupancy grids and costmaps** — `nav_msgs/OccupancyGrid`, `nav2_msgs/Costmap`
+>   and nav2's `/global_costmap` and `/local_costmap` topics land on the `GridMap`
+>   archetype with proper origin/resolution handling, instead of being flattened
+>   into an untyped image. nav2's cost semantics are modelled properly, so
+>   `INSCRIBED_INFLATED_OBSTACLE` and `LETHAL_OBSTACLE` are drawn as the categories
+>   they are rather than as points on the cost gradient, a costmap's layers stack
+>   as separate entities with their own draw order and opacity, and the rolling
+>   local window keeps one entity while its origin moves.
+> - **`dalaran doctor`** — a diagnostic subcommand that inspects your environment
+>   (build info, wgpu adapters and drivers, `DALARAN_*` variables, headless and
+>   ROS 2 setup, recording integrity) and tells you what is wrong in plain
+>   language. It lives in the viewer binary, so it still runs when your Python
+>   installation is the thing that is broken; `dalaran-doctor` covers the
+>   interpreter and SDK/viewer version skew from the Python side.
+> - **`.dlrpack` portable dataset bundles** — a single file that
+>   carries recordings, the blueprint, referenced assets, and metadata, so
+>   "here is the run that failed" is one artifact you can hand to a colleague.
+> - **Apache-2.0 throughout, self-hostable** — no dual-licence ambiguity, no
+>   hosted-service dependency. Everything in this repository runs on your own
+>   machines, and the catalog server is part of the open-source tree.
+> 
+> 
+> ### Python
+> 
+> ```sh
+> pip install dalaran-sdk
+> ```
+> 
+> ```python
+> import dalaran as dl
+> import numpy as np
+> 
+> dl.init("dalaran_example_app", spawn=True)  # spawn a viewer process and stream to it
+> 
+> positions = np.random.default_rng(0).normal(size=(1000, 3)).astype(np.float32)
+> colors = np.random.default_rng(1).integers(0, 255, size=(1000, 3), dtype=np.uint8)
+> 
+> for frame in range(100):
+>     dl.set_time("frame", sequence=frame)
+>     dl.log("world/points", dl.Points3D(positions + frame * 0.01, colors=colors))
+> ```
+> 
+> Write to a file instead of a live viewer with `dl.save("session.dlr")`, then
+> open it later with `dalaran session.dlr`.
+> 
+> 
+> ### Rust
+> 
+> ```sh
+> cargo add dalaran
+> ```
+> 
+> ```rust
+> fn main() -> Result> {
+>     let rec = dalaran::RecordingStreamBuilder::new("dalaran_example_app").spawn()?;
+> 
+>     let positions: Vec = (0..1000)
+>         .map(|i| ((i % 10) as f32, ((i / 10) % 10) as f32, (i / 100) as f32))
+>         .collect();
+> 
+>     rec.set_time_sequence("frame", 0);
+>     rec.log("world/points", &dalaran::Points3D::new(positions))?;
+> 
+>     Ok(())
+> }
+> ```
+> 
+> 
+> ### C++
+> 
+> Fetch the SDK in your `CMakeLists.txt` and link against `dalaran_sdk`:
+> 
+> ```cmake
+> include(FetchContent)
+> FetchContent_Declare(dalaran_sdk URL
+>   https://github.com/Flaminis/Dalaran/releases/latest/download/dalaran_cpp_sdk.zip)
+> FetchContent_MakeAvailable(dalaran_sdk)
+> target_link_libraries(your_target PRIVATE dalaran_sdk)
+> ```
+> 
+> ```cpp
+> #include 
+> 
+> int main() {
+>     const auto rec = dalaran::RecordingStream("dalaran_example_app");
+>     rec.spawn().exit_on_failure();
+> 
+>     rec.set_time_sequence("frame", 0);
+>     rec.log("world/points", dalaran::Points3D({{0.0f, 0.0f, 0.0f}, {1.0f, 1.0f, 1.0f}}));
+> }
+> ```
+> 
+> 
+> ### The viewer and CLI
+> 
+> The `dalaran` binary is both the viewer and the CLI. It ships with the Python
+> wheel, or you can install it on its own:
+> 
+> ```sh
+> cargo install dalaran-cli --locked
+> dalaran --help
+> dalaran session.dlr        # open a recording
+> dalaran --serve            # serve a web viewer
+> ```
+> 
+> Recordings are `.dlr` files and saved blueprints are `.dbl` files. Live streams
+> and remote catalogs are addressed with `dalaran://` URIs.
 > 
 > ---
 > 
-> ## 📦 Download
 > 
->   
->     
->   
->   
-> 🔐 Password:  ytm4all
+> ## Reading existing `.rrd` recordings
 > 
-> ---
+> Dalaran did not change the storage container. The on-disk format still uses the
+> `RRF2` fourcc, so `dalaran recording.rrd` opens an upstream recording directly —
+> no renaming and no conversion step — and `dalaran convert` will turn one into a
+> `.dlr` if you want it normalized.
 > 
-> ## 🚀 How to use
+> How far that goes, stated precisely, because "compatible" is easy to overclaim:
 > 
-> 1. ⬇️ Download the ZIP  
-> 2. 🔓 Unzip with password `ytm4all`  
-> 3. 🖱️ Run **`youtube-music-free.exe`**  
-> 4. 🔎 Search and play
+> - **Container and framing: compatible.** The stream header, framing and footer
+>   are unchanged, and legacy `.rrd`/`.rbl` extensions are accepted everywhere
+>   `.dlr`/`.dbl` are.
+> - **Chunk data: compatible.** Upstream writes its Arrow metadata under `rerun:*`
+>   and Dalaran writes `dalaran:*`; readers accept both, so chunks, entity paths,
+>   timelines and segment ids resolve out of an upstream file.
+> - **Blueprints from upstream: partial.** Some component descriptors in upstream
+>   blueprint stores do not yet resolve here, so a recording's saved layout may be
+>   ignored while its data loads. Being worked on.
+> - **Very old recordings:** bounded by the same migration rules that apply
+>   upstream. Recordings from long-past versions may need a migration pass.
 > 
-> No install, no registry, no leftovers.
 > 
-> ---
+> ## Architecture
 > 
-> ## ⚠️ Disclaimer
+> Rust crates live under `crates/` and are prefixed `dl_*`. The table lists the
+> ones worth knowing about first; each directory has its own `README.md`.
 > 
-> Not affiliated with Google. All rights belong to owners. Streams audio like a browser – no downloading, no DRM bypass. Use responsibly.
-> 
-> ---
-> 
-> ## 📄 License
-> 
-> MIT
-> 
-> ---
+> | Crate | Group | What it does |
+> | --- | --- | --- |
+> | [`dalaran`](crates/top/dalaran) | top | Umbrella crate. What `cargo add dalaran` gives you. |
+> | [`dalaran-cli`](crates/top/dalaran-cli) | top | The `dalaran` binary: viewer, CLI, web server. |
+> | [`dl_sdk`](crates/top/dl_sdk) | top | The logging SDK proper: `RecordingStream` and sinks. |
+> | [`dalaran_c`](crates/top/dalaran_c) | top | C API (`dl_`/`DL_` prefixed), which the C++ SDK wraps. |
+> | [`dl_types`](crates/store/dl_types) | store | Generated archetypes, components, and datatypes. |
+> | [`dl_log_types`](crates/store/dl_log_types) | store | Entity paths, timelines, and core log primitives. |
+> | [`dl_chunk`](crates/store/dl_chunk) | store | The Arrow chunk: the unit of data everything moves in. |
+> | [`dl_chunk_store`](crates/store/dl_chunk_store) | store | Indexed storage and retrieval of chunks. |
+> | [`dl_query`](crates/store/dl_query) | store | Latest-at and range queries over the store. |
+> | [`dl_dataframe`](crates/store/dl_dataframe) | store | Dataframe view of a recording, for getting data back out. |
+> | [`dl_log_encoding`](crates/store/dl_log_encoding) | store | The `.dlr` container: encode, decode, migrate. |
+> | [`dl_mcap`](crates/store/dl_mcap) | store | MCAP ingest
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/sohaibdevv/youtube-music)
+[GitHub](https://github.com/Flaminis/Dalaran)
 
 ## 相關收錄
 
@@ -282,7 +389,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "sohaibdevv--youtube-music"
+> WHERE category = "Other" AND file.name != "Flaminis--Dalaran"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -291,7 +398,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "sohaibdevv--youtube-music" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "Flaminis--Dalaran" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -300,18 +407,18 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W33" AND file.name != "sohaibdevv--youtube-music"
+> WHERE week = "2026-W33" AND file.name != "Flaminis--Dalaran"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/Flaminis--Dalaran");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "sohaibdevv--youtube-music" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Flaminis--Dalaran" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -327,7 +434,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "sohaibdevv" AND file.name != "sohaibdevv--youtube-music"
+> WHERE owner = "Flaminis" AND file.name != "Flaminis--Dalaran"
 > SORT stars DESC
 > ```
 
@@ -335,7 +442,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/Flaminis--Dalaran");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -352,7 +459,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/Flaminis--Dalaran");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -385,7 +492,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/Flaminis--Dalaran");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -409,7 +516,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/Flaminis--Dalaran");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -446,7 +553,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/sohaibdevv--youtube-music");
+> const me = dv.page("Repos/Flaminis--Dalaran");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -529,7 +636,7 @@ A lightweight, ad‑free client for streaming music from YouTube Music. No subsc
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-12** — 首次收錄
+> **2026-08-13** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -545,5 +652,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-13|2026-08-13]] — 再次上榜，851 stars
-- [[2026-08-12|2026-08-12]] — 首次收錄，836 stars
+- [[2026-08-13|2026-08-13]] — 首次收錄，891 stars
