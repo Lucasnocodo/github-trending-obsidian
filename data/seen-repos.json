@@ -3452,10 +3452,10 @@
   },
   "ShawnPana/phone-harness": {
     "first_seen": "2026-08-10",
-    "last_seen": "2026-08-13",
-    "times_seen": 4,
+    "last_seen": "2026-08-14",
+    "times_seen": 5,
     "stars_first": 929,
-    "stars_last": 1652
+    "stars_last": 1719
   },
   "wumingqi60/lingxi": {
     "first_seen": "2026-08-10",
@@ -3480,17 +3480,17 @@
   },
   "oil-oil/oil-motion": {
     "first_seen": "2026-08-11",
-    "last_seen": "2026-08-13",
-    "times_seen": 3,
+    "last_seen": "2026-08-14",
+    "times_seen": 4,
     "stars_first": 1231,
-    "stars_last": 1628
+    "stars_last": 1690
   },
   "SMNETSTUDIO/WeChat-AI": {
     "first_seen": "2026-08-11",
-    "last_seen": "2026-08-13",
-    "times_seen": 3,
+    "last_seen": "2026-08-14",
+    "times_seen": 4,
     "stars_first": 903,
-    "stars_last": 1571
+    "stars_last": 1689
   },
   "MengTo/kage": {
     "first_seen": "2026-08-11",
@@ -3508,10 +3508,10 @@
   },
   "antirez/h3.c": {
     "first_seen": "2026-08-12",
-    "last_seen": "2026-08-13",
-    "times_seen": 2,
+    "last_seen": "2026-08-14",
+    "times_seen": 3,
     "stars_first": 1303,
-    "stars_last": 1621
+    "stars_last": 1794
   },
   "eternityspring/shuohao-skills": {
     "first_seen": "2026-08-12",
@@ -3529,10 +3529,10 @@
   },
   "guillaumemeyer/watermarks-remover": {
     "first_seen": "2026-08-13",
-    "last_seen": "2026-08-13",
-    "times_seen": 1,
+    "last_seen": "2026-08-14",
+    "times_seen": 2,
     "stars_first": 2658,
-    "stars_last": 2658
+    "stars_last": 5607
   },
   "LaoFeng-mouse/flyingmouse-format": {
     "first_seen": "2026-08-13",
@@ -3543,9 +3543,37 @@
   },
   "Flaminis/Dalaran": {
     "first_seen": "2026-08-13",
-    "last_seen": "2026-08-13",
-    "times_seen": 1,
+    "last_seen": "2026-08-14",
+    "times_seen": 2,
     "stars_first": 891,
-    "stars_last": 891
+    "stars_last": 938
+  },
+  "deepseek-ai/deepseek-harness": {
+    "first_seen": "2026-08-14",
+    "last_seen": "2026-08-14",
+    "times_seen": 1,
+    "stars_first": 63661,
+    "stars_last": 63661
+  },
+  "xoreaxeaxeax/skitter-creek-bath-salts": {
+    "first_seen": "2026-08-14",
+    "last_seen": "2026-08-14",
+    "times_seen": 1,
+    "stars_first": 1073,
+    "stars_last": 1073
+  },
+  "Leutenegger/book-to-skill": {
+    "first_seen": "2026-08-14",
+    "last_seen": "2026-08-14",
+    "times_seen": 1,
+    "stars_first": 1032,
+    "stars_last": 1032
+  },
+  "gvzdv/claudish-to-english": {
+    "first_seen": "2026-08-14",
+    "last_seen": "2026-08-14",
+    "times_seen": 1,
+    "stars_first": 936,
+    "stars_last": 936
   }
 }

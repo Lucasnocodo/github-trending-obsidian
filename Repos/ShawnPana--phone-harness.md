@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "let your agent control your phone"
 homepage: ""
-stars: 1652
-stars_per_day: 330
-forks: 145
-open_issues: 21
+stars: 1719
+stars_per_day: 287
+forks: 155
+open_issues: 27
 created: 2026-08-07
 pushed_at: 2026-08-13
 first_seen: 2026-08-10
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-08-16"
+appearances: 5
+next_review: "2026-08-17"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-10"
-star_history: "2026-08-10:929,2026-08-11:1341,2026-08-12:1522,2026-08-13:1652"
+star_history: "2026-08-10:929,2026-08-11:1341,2026-08-12:1522,2026-08-13:1652,2026-08-14:1719"
 tags:
   - github
   - "category/other"
@@ -581,6 +581,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-14|2026-08-14]] — 再次上榜，1.7k stars
 - [[2026-08-13|2026-08-13]] — 再次上榜，1.7k stars
 - [[2026-08-12|2026-08-12]] — 再次上榜，1.5k stars
 - [[2026-08-11|2026-08-11]] — 再次上榜，1.3k stars

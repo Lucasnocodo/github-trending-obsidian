@@ -7,9 +7,9 @@ language: Rust
 license: Apache-2.0
 description: "Dalaran — Apache-2.0, robotics-first visualization and data infrastructure for multimodal time-series. ROS 2 native, reads existing .rrd recordings. A hard fork of Rerun."
 homepage: ""
-stars: 891
-stars_per_day: 178
-forks: 55
+stars: 938
+stars_per_day: 156
+forks: 56
 open_issues: 8
 created: 2026-08-07
 pushed_at: 2026-08-12
@@ -30,8 +30,8 @@ use_case: ""
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-20"
+appearances: 2
+next_review: "2026-08-21"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-13"
-star_history: "2026-08-13:891"
+star_history: "2026-08-13:891,2026-08-14:938"
 tags:
   - github
   - "category/other"
@@ -652,4 +652,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-14|2026-08-14]] — 再次上榜，938 stars
 - [[2026-08-13|2026-08-13]] — 首次收錄，891 stars
