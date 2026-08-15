@@ -7,10 +7,10 @@ language: Shell
 license: MIT
 description: ""
 homepage: ""
-stars: 936
-stars_per_day: 312
-forks: 59
-open_issues: 2
+stars: 1106
+stars_per_day: 277
+forks: 72
+open_issues: 3
 created: 2026-08-10
 pushed_at: 2026-08-13
 first_seen: 2026-08-14
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-17"
+appearances: 2
+next_review: "2026-08-18"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 67
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-14"
-star_history: "2026-08-14:936"
+star_history: "2026-08-14:936,2026-08-15:1106"
 tags:
   - github
   - "category/other"
@@ -669,4 +669,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-15|2026-08-15]] — 再次上榜，1.1k stars
 - [[2026-08-14|2026-08-14]] — 首次收錄，936 stars

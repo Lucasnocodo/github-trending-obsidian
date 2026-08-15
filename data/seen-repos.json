@@ -3487,10 +3487,10 @@
   },
   "SMNETSTUDIO/WeChat-AI": {
     "first_seen": "2026-08-11",
-    "last_seen": "2026-08-14",
-    "times_seen": 4,
+    "last_seen": "2026-08-15",
+    "times_seen": 5,
     "stars_first": 903,
-    "stars_last": 1689
+    "stars_last": 1713
   },
   "MengTo/kage": {
     "first_seen": "2026-08-11",
@@ -3508,10 +3508,10 @@
   },
   "antirez/h3.c": {
     "first_seen": "2026-08-12",
-    "last_seen": "2026-08-14",
-    "times_seen": 3,
+    "last_seen": "2026-08-15",
+    "times_seen": 4,
     "stars_first": 1303,
-    "stars_last": 1794
+    "stars_last": 1854
   },
   "eternityspring/shuohao-skills": {
     "first_seen": "2026-08-12",
@@ -3529,10 +3529,10 @@
   },
   "guillaumemeyer/watermarks-remover": {
     "first_seen": "2026-08-13",
-    "last_seen": "2026-08-14",
-    "times_seen": 2,
+    "last_seen": "2026-08-15",
+    "times_seen": 3,
     "stars_first": 2658,
-    "stars_last": 5607
+    "stars_last": 8272
   },
   "LaoFeng-mouse/flyingmouse-format": {
     "first_seen": "2026-08-13",
@@ -3550,17 +3550,17 @@
   },
   "deepseek-ai/deepseek-harness": {
     "first_seen": "2026-08-14",
-    "last_seen": "2026-08-14",
-    "times_seen": 1,
+    "last_seen": "2026-08-15",
+    "times_seen": 2,
     "stars_first": 63661,
-    "stars_last": 63661
+    "stars_last": 97184
   },
   "xoreaxeaxeax/skitter-creek-bath-salts": {
     "first_seen": "2026-08-14",
-    "last_seen": "2026-08-14",
-    "times_seen": 1,
+    "last_seen": "2026-08-15",
+    "times_seen": 2,
     "stars_first": 1073,
-    "stars_last": 1073
+    "stars_last": 1577
   },
   "Leutenegger/book-to-skill": {
     "first_seen": "2026-08-14",
@@ -3571,9 +3571,37 @@
   },
   "gvzdv/claudish-to-english": {
     "first_seen": "2026-08-14",
-    "last_seen": "2026-08-14",
-    "times_seen": 1,
+    "last_seen": "2026-08-15",
+    "times_seen": 2,
     "stars_first": 936,
-    "stars_last": 936
+    "stars_last": 1106
+  },
+  "anywhere-labs/deepseek-harness-desktop": {
+    "first_seen": "2026-08-15",
+    "last_seen": "2026-08-15",
+    "times_seen": 1,
+    "stars_first": 2146,
+    "stars_last": 2146
+  },
+  "zhu1090093659/dsh-web-ui": {
+    "first_seen": "2026-08-15",
+    "last_seen": "2026-08-15",
+    "times_seen": 1,
+    "stars_first": 1985,
+    "stars_last": 1985
+  },
+  "cordiverse/paper": {
+    "first_seen": "2026-08-15",
+    "last_seen": "2026-08-15",
+    "times_seen": 1,
+    "stars_first": 1331,
+    "stars_last": 1331
+  },
+  "awesome-dsh-plugin/awesome-dsh-plugin": {
+    "first_seen": "2026-08-15",
+    "last_seen": "2026-08-15",
+    "times_seen": 1,
+    "stars_first": 1215,
+    "stars_last": 1215
   }
 }

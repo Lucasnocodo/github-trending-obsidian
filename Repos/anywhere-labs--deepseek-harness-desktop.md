@@ -1,63 +1,69 @@
 ---
-repo: antirez/h3.c
-url: https://github.com/antirez/h3.c
-owner: antirez
-owner_type: User
-language: C
+repo: anywhere-labs/deepseek-harness-desktop
+url: https://github.com/anywhere-labs/deepseek-harness-desktop
+owner: anywhere-labs
+owner_type: Organization
+language: TypeScript
 license: MIT
-description: "MiniMax H3 inference engine for Mac computers"
-homepage: ""
-stars: 1854
-stars_per_day: 371
-forks: 122
-open_issues: 31
-created: 2026-08-09
-pushed_at: 2026-08-11
-first_seen: 2026-08-12
+description: "为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验"
+homepage: "https://dshdesktop.cn"
+stars: 2146
+stars_per_day: 2146
+forks: 115
+open_issues: 22
+created: 2026-08-13
+pushed_at: 2026-08-15
+first_seen: 2026-08-15
 week: "2026-W33"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.1.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-12
+last_reviewed: 2026-08-15
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-08-18"
-contributor_count: 1
+contributor_count: 5
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 716
-readme_length: 9882
+repo_size_kb: 126821
+readme_length: 2833
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 2
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-12"
-star_history: "2026-08-12:1303,2026-08-13:1621,2026-08-14:1794,2026-08-15:1854"
+ring_history: "assess@2026-08-15"
+star_history: "2026-08-15:2146"
 tags:
   - github
   - "category/other"
-  - "lang/c"
+  - "lang/typescript"
+  - org
+  - "topic/deepseek"
+  - "topic/deepseek_harness"
+  - "topic/desktop"
+  - "topic/dsh"
+  - "topic/dsh_plugin"
 aliases:
-  - "h3.c"
-  - "antirez/h3.c"
+  - "deepseek-harness-desktop"
+  - "anywhere-labs/deepseek-harness-desktop"
 ---
 
-# h3.c
+# deepseek-harness-desktop
 
-**1.3k** stars · **652** stars/天 · 建立 2 天前 · C · MIT
+**2.1k** stars · **2.1k** stars/天 · 建立 1 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/antirez--h3.c");
+const me = dv.page("Repos/anywhere-labs--deepseek-harness-desktop");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`ORG` `v0.1.0`
+
+`deepseek` `deepseek-harness` `desktop` `dsh` `dsh-plugin` `dsh-plugin-desktop`
 
 > [!summary] 一句話摘要
-> MiniMax H3 inference engine for Mac computers
+> 为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验
 
 ## 專案簡介
 
-MiniMax H3 inference engine for Mac computers
+为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/anywhere-labs--deepseek-harness-desktop");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +126,7 @@ MiniMax H3 inference engine for Mac computers
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/anywhere-labs--deepseek-harness-desktop");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,246 +150,207 @@ MiniMax H3 inference engine for Mac computers
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 64 |
-| Open Issues | 13 |
+| Forks | 115 |
+| Open Issues | 22 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-11 |
-| 建立日期 | 2026-08-09 |
-| Repo 大小 | 716 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/antirez/h3.c) |
+| 最後推送 | 2026-08-15 |
+| 建立日期 | 2026-08-13 |
+| 官方網站 | [Link](https://dshdesktop.cn) |
+| Repo 大小 | 123.8 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/anywhere-labs/deepseek-harness-desktop) |
+| Topics | `deepseek` `deepseek-harness` `desktop` `dsh` `dsh-plugin` `dsh-plugin-desktop` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "C" : 70
->     "Objective-C" : 16
->     "Metal" : 13
+>     "TypeScript" : 97
+>     "CSS" : 2
+>     "Python" : 1
+>     "JavaScript" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@antirez](https://github.com/antirez) | 122 |
+> | [@tianyicui](https://github.com/tianyicui) | 5235 |
+> | [@LegGasai](https://github.com/LegGasai) | 1361 |
+> | [@imccyu](https://github.com/imccyu) | 1168 |
+> | [@Chinesezjc](https://github.com/Chinesezjc) | 587 |
+> | [@turtle1999](https://github.com/turtle1999) | 585 |
+
+**最新版本**：v0.1.0 — DeepSeek Harness Desktop v0.1.0 (2026-08-13)
+
+> [!info]- Release Notes
+> DeepSeek Harness Desktop 首个公开版本。
+> 
+> 将官方 DeepSeek Harness 打包为开箱即用的 Electron 桌面应用，无需手动安装 Node.js 或通过命令行启动本地 Web UI。
+> 
+> ## 下载
+> 
+> 请根据操作系统下载对应的安装包：
+> 
+> - **macOS Apple Silicon**：下载 `.dmg` 文件
+> - **Windows x64**：下载 `.exe` 文件
+> 
+> > 当前 macOS 版本仅支持 Apple Silicon（M1、M2、M3、M4 等芯片），暂不支持 Intel Mac。
+> 
+> ## 主要功能
+> 
+> - 自动启动和管理本地 Harness 服务
+> - 无需手动配置 Node.js 或执行命令
+> - 支持系统托盘驻留
+> - 针对 macOS 和 Windows 进行桌面界面适配
+> - 保留官方 Harness 的插件系统和本地 Web UI
+> - 应用数据和 Harness 服务均运行在本地
+> 
+> ## 相关链接
+> 
+> - 官网：https://deepseekdesktop.com
+> - 项目仓库：https://github.com/anywhere-labs/deepseek-harness-desktop
+> 
+> > 本项目是基于 DeepSeek Harness 构建的社区桌面版本，并非 DeepSeek 官方产品。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-09 ~ 2026-08-11）
-> **活躍天數** 3 天 · **最新 commit** Clarify SSD streaming memory and speed tradeoff
+> [!abstract] 最近 10 次 commit（2026-08-14 ~ 2026-08-15）
+> **活躍天數** 2 天 · **最新 commit** docs: streamline friendly link descriptions
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#13](https://github.com/antirez/h3.c/issues/13) | Performance: 1344x768 / 5s renders wait-dominated (GPU idle  | 0 | 0 |
+> | [#23](https://github.com/anywhere-labs/deepseek-harness-desktop/issues/23) | 尴尬我也做了一个桌面端 | 0 | 0 |
+> | [#21](https://github.com/anywhere-labs/deepseek-harness-desktop/issues/21) | 模型切换异常 | 0 | 1 |
+> | [#20](https://github.com/anywhere-labs/deepseek-harness-desktop/issues/20) | RTL mixed-text rendering is broken when a sentence starts wi | 0 | 1 |
+> | [#19](https://github.com/anywhere-labs/deepseek-harness-desktop/issues/19) | 打开报错，无法解析皮肤包 | 0 | 2 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # h3-metal
+> DeepSeek Harness Desktop
 > 
-> Native MiniMax-H3 inference for Apple Silicon. The project is being built as a
-> sequence of working vertical slices: deterministic host/model metadata first,
-> then portable Metal block parity, prompt encoding, prompt-to-video/audio, and
-> first/last-frame conditioning and then ordered references.
+>   
+>   
+>   
+>   
+>   
 > 
-> Prompt-to-video/audio, first/last-frame conditioning, and ordered Ref2VA
-> image/video/audio references work end to end. The current work is incremental
-> H3-specific Metal performance and memory optimization on M3 Max and M5 Max.
+> 中文 · English
 > 
+> 为DeepSeek Harness生态打造的现代化桌面端体验（插件）
 > 
-> ## Tutorial
+>   DeepSeek Harness 官方目前通过命令行启动本地 Web UI。本项目将服务启动、运行管理和桌面窗口整合为开箱即用的桌面体验，让用户无需配置 Node.js 或执行命令，即可直接使用。
 > 
+> Download Desktop
 > 
-> ### 1. Build and inspect the model
+>   
 > 
-> The examples assume that the Hugging Face snapshot is in `./MiniMax-H3` and
-> that FFmpeg and FFprobe are available on `PATH`.
+> ## 主要功能
 > 
-> ```sh
-> make -j8
-> mkdir -p outputs
-> ./h3 --info -d ./MiniMax-H3
-> ```
+>   
+>     
+>       Desktop
+>       把官方 DeepSeek Harness 的本地 Web UI 带到原生桌面。应用自动启动和管理本地 Harness 服务，集成系统托盘与桌面窗口，无需安装 Node.js 或执行命令。
+>     
+>     
+>       手机远程控制 
+>       通过 iOS 和 Android 远程连接 Desktop，在手机上发起任务、查看 Agent 进度，并在需要时继续跟进。
+>     
+>   
+>   
+>     
+>       插件市场 
+>       Harness 遵循“一切皆插件”的架构。桌面端插件市场将提供插件的发现、安装、更新和管理，让模型、工具、界面与工作流能力按需组合。
+>     
+>     
+>       Channels 
+>       接入微信、飞书、Discord、WhatsApp 等 IM 通道，直接在日常聊天工具中向 Agent 发起任务、接收进度并继续对话。
+>     
+>   
 > 
-> `--info` checks the model layout and prints the selected Metal device without
-> mapping all weights or generating media. Run `./h3 --help` for the complete CLI
-> reference.
+> ## 插件生态
 > 
-> Without `-p`, the same binary starts an Iris-style interactive session:
+> DeepSeek Harness 基于 [Cordis](https://github.com/cordiverse/cordis) 构建，并采用“一切皆插件”的架构。模型适配器、工具注册表、会话日志和 Agent Loop 等核心能力都以插件参与运行，可以通过配置自由组合或替换；外部插件也可以通过 profile 与 bundle 接入现有运行时。详见官方的[架构说明](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/architecture.md)和[插件管理文档](https://github.com/deepseek-ai/deepseek-harness/blob/master/apps/cli/reference/README.md#plugin-management)。
 > 
-> ```sh
-> ./h3 -d ./MiniMax-H3 --width 512 --height 512 --steps 6
-> ```
+> 我们希望 Desktop 不只是一个独立的桌面封装，而是 DeepSeek Harness 插件生态中的桌面入口。后续计划将桌面能力按官方插件机制重新组织，让服务管理、系统集成和插件市场可以沿用 Harness 的组合方式接入。
 > 
-> Type a prompt to generate a numbered video. The session keeps the exact BF16
-> prompt conditioning, prepared DiT, and video decoder in memory, so repeating a
-> prompt with another seed avoids loading and encoding them again. Useful commands
-> are `!status`, `!seed random`, `!seconds 2`, `!show`, `!save output.mp4`, and
-> `!cache`. Use `!help` for the full, short list.
+> > **即将推出：** Desktop 目前还不是以 DeepSeek Harness 插件形式交付，上述插件化能力仍在开发中。
 > 
-> First/last-frame conditioning is persistent in the session:
+> ## 与官方项目的关系
 > 
-> ```text
-> h3> !first opening.png
-> h3> !last ending.png
-> h3> The camera moves slowly around the subject.
-> ```
+> 本项目基于 [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) 构建。
 > 
-> Use `!first clear` or `!last clear` to remove an anchor. Generated videos are
-> written to the session directory printed at startup.
+> DeepSeek Harness 的核心能力、插件系统和 Web UI 来自官方项目。本项目主要负责：
 > 
-> For a general Ref2VA conditioning image, use `!ref-image PATH` instead. Images
-> are appended in order and exposed to the model as ``, ``,
-> and so on; filenames have no meaning to the model.
+> - 桌面应用封装
+> - 本地服务生命周期管理
+> - 桌面窗口和系统托盘集成
+> - macOS、Windows 安装包构建与发布
+> - 桌面环境下的界面适配
 > 
-> ```text
-> h3> !ref-image person.png
-> h3> Make the person shown in Picture 1 wave to the camera.
-> ```
+> 如果你希望通过命令行运行 Harness，或者参与核心功能开发，请优先查看官方仓库。
 > 
-> `!refs` lists the current order, `!ref-remove N` removes one entry, and
-> `!refs clear` removes them all. Ref2VA references cannot be mixed with
-> `!first`/`!last` anchors.
+> ## 开发
 > 
-> 
-> ### 2. Make a first fast video
-> 
-> Start with the validated balanced preset. It generates 22 frames at 24 fps
-> (about 0.92 seconds), displays the evolving middle-video frame after every
-> denoising transition in a supported graphical terminal, and prints phase
-> timings:
-> 
-> ```sh
-> ./h3 --profile \
->   -d ./MiniMax-H3 \
->   -p "A red fox walks through fresh snow in a pine forest. Medium tracking shot, natural winter light, realistic fur, soft footsteps and wind." \
->   --width 512 --height 512 \
->   --frames 22 --steps 20 \
->   --layers 45 --reuse 2 \
->   --show \
->   -o outputs/fox-fast.mp4
-> ```
-> 
-> This is deliberately not the most aggressive configuration:
-> 
-> - `--steps 20` performs the default 20 denoising passes.
-> - `--reuse 2` computes 11 fresh denoiser velocities instead of all 20 and
->   extrapolates the skipped transitions.
-> - `--layers 45` runs 45 of the 50 transformer blocks, reducing both time and
->   unified-memory use.
-> - `--show` is optional. It supports Kitty/Ghostty and
->   iTerm2/WezTerm/Konsole graphical protocols. It loads a resident preview VAE,
->   displays one representative middle-video frame after every Euler transition,
->   and then displays all final frames. Display dimensions default to 2x so the
->   image has its intended logical size on macOS Retina screens; use `--zoom 1`
->   on a non-HiDPI display. This adds preview decode time and roughly 10 GiB of
->   temporary model residency; runs without `--show` are unchanged.
-> - `--profile` is optional and does not select a different generation path.
-> 
-> The first process invocation also pays model loading and filesystem-cache
-> costs. Compare performance using repeated runs, and alternate variants when
-> the machines are warming up because this workload is sensitive to thermal
-> throttling.
-> 
-> For a very short iteration, request four denoising passes directly:
-> 
-> ```sh
-> ./h3 --profile \
->   -d ./MiniMax-H3 \
->   -p "A red fox walks through fresh snow in a pine forest. Medium tracking shot, natural winter light, realistic fur." \
->   --width 512 --height 512 --frames 22 \
->   --steps 4 --layers 50 --reuse 1 \
->   --show \
->   -o outputs/fox-four-step.mp4
-> ```
-> 
-> `--steps N` always means exactly N denoising passes. Four through seven passes
-> use the same schedule that won the low-budget comparison; increasing from 4
-> to 7 progressively improves detail and motion. Keep `--reuse 1` at such small
-> budgets so every requested pass runs the model. `--show` displays one preview
-> after each pass.
-> 
-> Several tail-heavy schedules were evaluated because most visible cleanup
-> happens late in a long run. They preserved too few early composition updates
-> and produced woven texture, weak motion, or clipped colors. The retained mode
-> uses the released linear base grid with one terminal point. On the 512-square,
-> 22-frame fox test, the selected four-pass result had 0.556 full-video SSIM
-> against a 29-pass reference; an independent surfer test measured 0.547. The
-> four-pass denoise took about 3.5 seconds on M5 Max, versus 26.4 seconds for the
-> reference.
-> 
-> For a low-memory run, add `--ssd-streaming`:
-> 
-> ```sh
-> ./h3 --profile \
->   -d ./MiniMax-H3 \
->   -p "A red fox walks through fresh snow in a pine forest." \
->   --width 512 --height 512 --frames 22 --steps 20 \
->   --layers 50 --reuse 1 --ssd-streaming \
->   -o outputs/fox-ssd.mp4
-> ```
-> 
-> This uses the original BF16 checkpoint without conversion or quantization. It
-> keeps two DiT blocks in memory and reads the next block from SSD while the GPU
-> runs the current one. On M5 Max, tracked DiT storage fell from about 36.5 GiB to
-> 2.0 GiB at 512 square and 2.1 GiB at 864x480. A warm 50-block forward measured
-> 1.35 versus 2.49 seconds at 512 square (84% slower), and 2.14 versus 2.68
-> seconds at 864x480 (26% slower). These are comparisons against the same
-> full-residency BF16 path, and the results were byte-identical in both checks.
-> 
-> The 2.0--2.1 GiB figure is the DiT's tracked tensor storage, not total system
-> RAM. Prompt encoding and the two VAEs run in separate phases rather than adding
-> their full peaks to it; the OS, media buffers, and output resolution still need
-> headroom. `--show` keeps a preview VAE resident and adds roughly 10 GiB, so omit
-> it for the lowest-memory run.
-> 
-> SSD streaming is an explicit memory/speed tradeoff and is not the default. It
-> cannot be combined with `--use-int8-row-fc2`. In an interactive session, use
-> `!ssd-streaming on`.
-> 
-> 
-> ### 3. Move toward reference quality
-> 
-> Change one control at a time when evaluating quality. First restore all layers,
-> then all denoiser evaluations, and finally raise the default 20-pass schedule
-> to the slower 50-pass reference:
-> 
-> ```sh
-> ./h3 --profile \
->   -d ./MiniMax-H3 \
->   -p "A red fox walks through fresh snow in a pine forest. Medium tracking shot, natural winter light, realistic fur, soft footsteps and wind." \
->   --width 512 --height 512 \
->   --frames 22 --steps 50 \
->   --layers 50 --reuse 1 \
->   -o outputs/fox-close.mp4
-> ```
-> 
-> The defaults are `--steps 20 --layers 50 --reuse 1`; keep `--steps 50`
-> explicit for this close path. It performs 50 complete 50-block denoiser
-> forwards and is much more expensive than the default, but is the right oracle
-> when a fast mode changes the subject, anatomy, motion, or composition.
-> Numerical pixel identity with MLX is not expected because the random-number and
-> execution engines differ; the depicted content and motion should agree.
-> 
-> 
-> ### 6. Improve the prompt
-> 
-> A short prompt works, but the released system expects a Context-IR-like
-> description. State the subject, action, setting, camera, lighting/style, and
-> desired sound. For example:
+> 桌面端代码位于：
 > 
 > ```text
-> Scene: a single red fox in a snow-covered pine forest at dawn.
-> Action: the fox walks steadily left to right and looks toward the camera once.
-> Camera: medium-height lateral tracking shot, 50 mm lens, stable framing.
-> Look: photorealistic fur, cold blue ambient light, warm sunrise rim lig
+> apps/desktop
+> ```
+> 
+> 安装依赖并启动桌面应用：
+> 
+> ```sh
+> pnpm install
+> pnpm run dev:desktop
+> ```
+> 
+> ## 社区交流
+> 
+> 可选择常用的平台参与讨论，交流使用问题、插件开发和项目进展。
+> 
+>   
+>     
+>       微信群
+>       QQ群
+>     
+>   
+>   
+>     
+>       
+>       
+>     
+>   
+> 
+> Discord：[加入 DeepSeek Harness Desktop 社区](https://discord.gg/TJeGqKRNM)
+> 
+> ## 友情链接
+> 
+> 这里收录 DeepSeek Harness 生态项目及开发者工具。
+> 
+> | 项目 | 简介 | 链接 |
+> | --- | --- | --- |
+> | DeepSeek Harness 橙皮书 | DeepSeek Harness 社区实测手册。 | [GitHub](https://github.com/alchaincyf/deepseek-harness-orange-book) |
+> | Awesome DSH Plugin | DeepSeek Harness 社区插件精选列表。 | [GitHub](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) · [官网](https://awesome-dsh-plugin.com) |
+> | dsh-web-ui | DeepSeek Harness Web UI 插件与皮肤合集。 | [GitHub](https://github.com/zhu1090093659/dsh-web-ui) · [展示站](https://gallery.dsh-market.com) |
+> | dsh-TUI | DeepSeek Harness 全屏交互式终端界面。 | [GitHub](https://github.com/ccch1mneyyy/dsh-TUI) |
+> | Agents-Anywhere | 从手机远程控制电脑上的 Coding Agent。 | [GitHub](https://github.com/anywhere-labs/Agents-Anywhere) |
+> | MkSaaS · TanStarter（赞助商） | 面向独立开发者的商业 SaaS 启动模板。MkSaaS 基于 Next.js，TanStarter 基于 TanStack Start 与 Cloudflare，内置 AI、认证、支付和后台等常用能力。 | [MkSaaS](https://mksaas.com) · [TanStarter](https://tanstarter.dev) |
+> 
+> 如果希望收录您的项目，欢迎加入微信群并私信 @王博升Benson。
+> 
+> ## License
+> 
+> 本项目遵循 [MIT License](LICENSE)。
+> 
+> > 本项目是基于 DeepSeek Harness 构建的社区桌面版本，并非 DeepSeek 官方产品。
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/antirez/h3.c)
+[GitHub](https://github.com/anywhere-labs/deepseek-harness-desktop) · [官方網站](https://dshdesktop.cn)
 
 ## 相關收錄
 
@@ -389,7 +358,7 @@ MiniMax H3 inference engine for Mac computers
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "antirez--h3.c"
+> WHERE category = "Other" AND file.name != "anywhere-labs--deepseek-harness-desktop"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -398,7 +367,7 @@ MiniMax H3 inference engine for Mac computers
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C" AND file.name != "antirez--h3.c" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "anywhere-labs--deepseek-harness-desktop" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -407,18 +376,18 @@ MiniMax H3 inference engine for Mac computers
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W33" AND file.name != "antirez--h3.c"
+> WHERE week = "2026-W33" AND file.name != "anywhere-labs--deepseek-harness-desktop"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/anywhere-labs--deepseek-harness-desktop");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "antirez--h3.c" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "anywhere-labs--deepseek-harness-desktop" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -434,7 +403,7 @@ MiniMax H3 inference engine for Mac computers
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "antirez" AND file.name != "antirez--h3.c"
+> WHERE owner = "anywhere-labs" AND file.name != "anywhere-labs--deepseek-harness-desktop"
 > SORT stars DESC
 > ```
 
@@ -442,7 +411,7 @@ MiniMax H3 inference engine for Mac computers
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/anywhere-labs--deepseek-harness-desktop");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -459,7 +428,7 @@ MiniMax H3 inference engine for Mac computers
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/anywhere-labs--deepseek-harness-desktop");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -492,7 +461,7 @@ MiniMax H3 inference engine for Mac computers
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/anywhere-labs--deepseek-harness-desktop");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -516,7 +485,7 @@ MiniMax H3 inference engine for Mac computers
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/anywhere-labs--deepseek-harness-desktop");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -553,7 +522,7 @@ MiniMax H3 inference engine for Mac computers
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/anywhere-labs--deepseek-harness-desktop");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -636,7 +605,7 @@ MiniMax H3 inference engine for Mac computers
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-12** — 首次收錄
+> **2026-08-15** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -652,7 +621,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-15|2026-08-15]] — 再次上榜，1.9k stars
-- [[2026-08-14|2026-08-14]] — 再次上榜，1.8k stars
-- [[2026-08-13|2026-08-13]] — 再次上榜，1.6k stars
-- [[2026-08-12|2026-08-12]] — 首次收錄，1.3k stars
+- [[2026-08-15|2026-08-15]] — 首次收錄，2.1k stars

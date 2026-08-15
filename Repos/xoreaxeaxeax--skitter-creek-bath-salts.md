@@ -7,10 +7,10 @@ language: C
 license: MIT
 description: "Unlocking _everything_ on the CPU with DRAM scrambling"
 homepage: ""
-stars: 1073
-stars_per_day: 1073
-forks: 106
-open_issues: 0
+stars: 1577
+stars_per_day: 1577
+forks: 127
+open_issues: 2
 created: 2026-08-13
 pushed_at: 2026-08-13
 first_seen: 2026-08-14
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-17"
+appearances: 2
+next_review: "2026-08-18"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-14"
-star_history: "2026-08-14:1073"
+star_history: "2026-08-14:1073,2026-08-15:1577"
 tags:
   - github
   - "category/other"
@@ -665,4 +665,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-15|2026-08-15]] — 再次上榜，1.6k stars
 - [[2026-08-14|2026-08-14]] — 首次收錄，1.1k stars

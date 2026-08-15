@@ -1,19 +1,19 @@
 ---
-repo: antirez/h3.c
-url: https://github.com/antirez/h3.c
-owner: antirez
-owner_type: User
-language: C
-license: MIT
-description: "MiniMax H3 inference engine for Mac computers"
+repo: cordiverse/paper
+url: https://github.com/cordiverse/paper
+owner: cordiverse
+owner_type: Organization
+language: N/A
+license: N/A
+description: "A Programming Paradigm for Spatiotemporal Composability"
 homepage: ""
-stars: 1854
-stars_per_day: 371
-forks: 122
-open_issues: 31
-created: 2026-08-09
-pushed_at: 2026-08-11
-first_seen: 2026-08-12
+stars: 1331
+stars_per_day: 1331
+forks: 48
+open_issues: 0
+created: 2026-08-13
+pushed_at: 2026-08-13
+first_seen: 2026-08-15
 week: "2026-W33"
 month: "2026-08"
 category: "Other"
@@ -25,39 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-12
+last_reviewed: 2026-08-15
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-08-18"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 716
-readme_length: 9882
+issue_close_rate: -1
+repo_size_kb: 882
+readme_length: 1709
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-12"
-star_history: "2026-08-12:1303,2026-08-13:1621,2026-08-14:1794,2026-08-15:1854"
+ring_history: "assess@2026-08-15"
+star_history: "2026-08-15:1331"
 tags:
   - github
   - "category/other"
-  - "lang/c"
+  - "lang/other"
+  - org
 aliases:
-  - "h3.c"
-  - "antirez/h3.c"
+  - "paper"
+  - "cordiverse/paper"
 ---
 
-# h3.c
+# paper
 
-**1.3k** stars · **652** stars/天 · 建立 2 天前 · C · MIT
+**1.3k** stars · **1.3k** stars/天 · 建立 1 天前 · N/A · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/antirez--h3.c");
+const me = dv.page("Repos/cordiverse--paper");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`ORG`
 
 > [!summary] 一句話摘要
-> MiniMax H3 inference engine for Mac computers
+> A Programming Paradigm for Spatiotemporal Composability
 
 ## 專案簡介
 
-MiniMax H3 inference engine for Mac computers
+A Programming Paradigm for Spatiotemporal Composability
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/cordiverse--paper");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +119,7 @@ MiniMax H3 inference engine for Mac computers
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/cordiverse--paper");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,246 +143,45 @@ MiniMax H3 inference engine for Mac computers
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 64 |
-| Open Issues | 13 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-11 |
-| 建立日期 | 2026-08-09 |
-| Repo 大小 | 716 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/antirez/h3.c) |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "C" : 70
->     "Objective-C" : 16
->     "Metal" : 13
-> ```
+| Forks | 48 |
+| Open Issues | 0 |
+| 最後推送 | 2026-08-13 |
+| 建立日期 | 2026-08-13 |
+| Repo 大小 | 882 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cordiverse/paper) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@antirez](https://github.com/antirez) | 122 |
+> | [@shigma](https://github.com/shigma) | 2 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-09 ~ 2026-08-11）
-> **活躍天數** 3 天 · **最新 commit** Clarify SSD streaming memory and speed tradeoff
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#13](https://github.com/antirez/h3.c/issues/13) | Performance: 1344x768 / 5s renders wait-dominated (GPU idle  | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-13 ~ 2026-08-13）
+> **活躍天數** 1 天 · **最新 commit** upload paper
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # h3-metal
+> # A Programming Paradigm for Spatiotemporal Composability
 > 
-> Native MiniMax-H3 inference for Apple Silicon. The project is being built as a
-> sequence of working vertical slices: deterministic host/model metadata first,
-> then portable Metal block parity, prompt encoding, prompt-to-video/audio, and
-> first/last-frame conditioning and then ordered references.
+> **[Read the paper (PDF)](paper.pdf)** · Draft of August 13, 2026
 > 
-> Prompt-to-video/audio, first/last-frame conditioning, and ordered Ref2VA
-> image/video/audio references work end to end. The current work is incremental
-> H3-specific Metal performance and memory optimization on M3 Max and M5 Max.
+> > This is a preprint under active revision. The content may change substantially; please cite the latest version and check back before relying on specific results.
 > 
-> 
-> ## Tutorial
-> 
-> 
-> ### 1. Build and inspect the model
-> 
-> The examples assume that the Hugging Face snapshot is in `./MiniMax-H3` and
-> that FFmpeg and FFprobe are available on `PATH`.
-> 
-> ```sh
-> make -j8
-> mkdir -p outputs
-> ./h3 --info -d ./MiniMax-H3
-> ```
-> 
-> `--info` checks the model layout and prints the selected Metal device without
-> mapping all weights or generating media. Run `./h3 --help` for the complete CLI
-> reference.
-> 
-> Without `-p`, the same binary starts an Iris-style interactive session:
-> 
-> ```sh
-> ./h3 -d ./MiniMax-H3 --width 512 --height 512 --steps 6
-> ```
-> 
-> Type a prompt to generate a numbered video. The session keeps the exact BF16
-> prompt conditioning, prepared DiT, and video decoder in memory, so repeating a
-> prompt with another seed avoids loading and encoding them again. Useful commands
-> are `!status`, `!seed random`, `!seconds 2`, `!show`, `!save output.mp4`, and
-> `!cache`. Use `!help` for the full, short list.
-> 
-> First/last-frame conditioning is persistent in the session:
-> 
-> ```text
-> h3> !first opening.png
-> h3> !last ending.png
-> h3> The camera moves slowly around the subject.
-> ```
-> 
-> Use `!first clear` or `!last clear` to remove an anchor. Generated videos are
-> written to the session directory printed at startup.
-> 
-> For a general Ref2VA conditioning image, use `!ref-image PATH` instead. Images
-> are appended in order and exposed to the model as ``, ``,
-> and so on; filenames have no meaning to the model.
-> 
-> ```text
-> h3> !ref-image person.png
-> h3> Make the person shown in Picture 1 wave to the camera.
-> ```
-> 
-> `!refs` lists the current order, `!ref-remove N` removes one entry, and
-> `!refs clear` removes them all. Ref2VA references cannot be mixed with
-> `!first`/`!last` anchors.
-> 
-> 
-> ### 2. Make a first fast video
-> 
-> Start with the validated balanced preset. It generates 22 frames at 24 fps
-> (about 0.92 seconds), displays the evolving middle-video frame after every
-> denoising transition in a supported graphical terminal, and prints phase
-> timings:
-> 
-> ```sh
-> ./h3 --profile \
->   -d ./MiniMax-H3 \
->   -p "A red fox walks through fresh snow in a pine forest. Medium tracking shot, natural winter light, realistic fur, soft footsteps and wind." \
->   --width 512 --height 512 \
->   --frames 22 --steps 20 \
->   --layers 45 --reuse 2 \
->   --show \
->   -o outputs/fox-fast.mp4
-> ```
-> 
-> This is deliberately not the most aggressive configuration:
-> 
-> - `--steps 20` performs the default 20 denoising passes.
-> - `--reuse 2` computes 11 fresh denoiser velocities instead of all 20 and
->   extrapolates the skipped transitions.
-> - `--layers 45` runs 45 of the 50 transformer blocks, reducing both time and
->   unified-memory use.
-> - `--show` is optional. It supports Kitty/Ghostty and
->   iTerm2/WezTerm/Konsole graphical protocols. It loads a resident preview VAE,
->   displays one representative middle-video frame after every Euler transition,
->   and then displays all final frames. Display dimensions default to 2x so the
->   image has its intended logical size on macOS Retina screens; use `--zoom 1`
->   on a non-HiDPI display. This adds preview decode time and roughly 10 GiB of
->   temporary model residency; runs without `--show` are unchanged.
-> - `--profile` is optional and does not select a different generation path.
-> 
-> The first process invocation also pays model loading and filesystem-cache
-> costs. Compare performance using repeated runs, and alternate variants when
-> the machines are warming up because this workload is sensitive to thermal
-> throttling.
-> 
-> For a very short iteration, request four denoising passes directly:
-> 
-> ```sh
-> ./h3 --profile \
->   -d ./MiniMax-H3 \
->   -p "A red fox walks through fresh snow in a pine forest. Medium tracking shot, natural winter light, realistic fur." \
->   --width 512 --height 512 --frames 22 \
->   --steps 4 --layers 50 --reuse 1 \
->   --show \
->   -o outputs/fox-four-step.mp4
-> ```
-> 
-> `--steps N` always means exactly N denoising passes. Four through seven passes
-> use the same schedule that won the low-budget comparison; increasing from 4
-> to 7 progressively improves detail and motion. Keep `--reuse 1` at such small
-> budgets so every requested pass runs the model. `--show` displays one preview
-> after each pass.
-> 
-> Several tail-heavy schedules were evaluated because most visible cleanup
-> happens late in a long run. They preserved too few early composition updates
-> and produced woven texture, weak motion, or clipped colors. The retained mode
-> uses the released linear base grid with one terminal point. On the 512-square,
-> 22-frame fox test, the selected four-pass result had 0.556 full-video SSIM
-> against a 29-pass reference; an independent surfer test measured 0.547. The
-> four-pass denoise took about 3.5 seconds on M5 Max, versus 26.4 seconds for the
-> reference.
-> 
-> For a low-memory run, add `--ssd-streaming`:
-> 
-> ```sh
-> ./h3 --profile \
->   -d ./MiniMax-H3 \
->   -p "A red fox walks through fresh snow in a pine forest." \
->   --width 512 --height 512 --frames 22 --steps 20 \
->   --layers 50 --reuse 1 --ssd-streaming \
->   -o outputs/fox-ssd.mp4
-> ```
-> 
-> This uses the original BF16 checkpoint without conversion or quantization. It
-> keeps two DiT blocks in memory and reads the next block from SSD while the GPU
-> runs the current one. On M5 Max, tracked DiT storage fell from about 36.5 GiB to
-> 2.0 GiB at 512 square and 2.1 GiB at 864x480. A warm 50-block forward measured
-> 1.35 versus 2.49 seconds at 512 square (84% slower), and 2.14 versus 2.68
-> seconds at 864x480 (26% slower). These are comparisons against the same
-> full-residency BF16 path, and the results were byte-identical in both checks.
-> 
-> The 2.0--2.1 GiB figure is the DiT's tracked tensor storage, not total system
-> RAM. Prompt encoding and the two VAEs run in separate phases rather than adding
-> their full peaks to it; the OS, media buffers, and output resolution still need
-> headroom. `--show` keeps a preview VAE resident and adds roughly 10 GiB, so omit
-> it for the lowest-memory run.
-> 
-> SSD streaming is an explicit memory/speed tradeoff and is not the default. It
-> cannot be combined with `--use-int8-row-fc2`. In an interactive session, use
-> `!ssd-streaming on`.
-> 
-> 
-> ### 3. Move toward reference quality
-> 
-> Change one control at a time when evaluating quality. First restore all layers,
-> then all denoiser evaluations, and finally raise the default 20-pass schedule
-> to the slower 50-pass reference:
-> 
-> ```sh
-> ./h3 --profile \
->   -d ./MiniMax-H3 \
->   -p "A red fox walks through fresh snow in a pine forest. Medium tracking shot, natural winter light, realistic fur, soft footsteps and wind." \
->   --width 512 --height 512 \
->   --frames 22 --steps 50 \
->   --layers 50 --reuse 1 \
->   -o outputs/fox-close.mp4
-> ```
-> 
-> The defaults are `--steps 20 --layers 50 --reuse 1`; keep `--steps 50`
-> explicit for this close path. It performs 50 complete 50-block denoiser
-> forwards and is much more expensive than the default, but is the right oracle
-> when a fast mode changes the subject, anatomy, motion, or composition.
-> Numerical pixel identity with MLX is not expected because the random-number and
-> execution engines differ; the depicted content and motion should agree.
-> 
-> 
-> ### 6. Improve the prompt
-> 
-> A short prompt works, but the released system expects a Context-IR-like
-> description. State the subject, action, setting, camera, lighting/style, and
-> desired sound. For example:
-> 
-> ```text
-> Scene: a single red fox in a snow-covered pine forest at dawn.
-> Action: the fox walks steadily left to right and looks toward the camera once.
-> Camera: medium-height lateral tracking shot, 50 mm lens, stable framing.
-> Look: photorealistic fur, cold blue ambient light, warm sunrise rim lig
+> Modern software---from plugin systems to self-evolving agent harnesses---increasingly requires _dynamic composition_, yet its formal foundations remain underdeveloped. We identify two orthogonal dimensions of the problem: _temporal composability_, the ability to completely revert a component's side effects upon removal, and _spatial composability_, the ability to declare and reactively manage inter-component dependencies.
+> We address the two dimensions by lifting classical effect and coeffect concepts to runtime mechanisms.
+> In particular, we formalize _revertible effects_, in which every context transformation carries an inverse that the runtime tracks.
+> We formalize _reactive coeffects_, in which each change of the context notifies a component against its coeffect specification.
+> We unify the effect context and the coeffect context into a single _context type_, which constitutes a programming paradigm.
+> After that, we combine these mechanisms into the notion of a _component_ and give a calculus of dynamic composition, whose metatheory carries spatiotemporal composability from a single component to a whole system of interleaved components.
+> We implement these ideas in _Cordis_, a meta-framework of spatiotemporal composability that provides a core library with effect tracking and coeffect resolution, as well as a declarative component loader with configuration reconciliation and hot module replacement.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/antirez/h3.c)
+[GitHub](https://github.com/cordiverse/paper)
 
 ## 相關收錄
 
@@ -389,7 +189,7 @@ MiniMax H3 inference engine for Mac computers
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "antirez--h3.c"
+> WHERE category = "Other" AND file.name != "cordiverse--paper"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -398,7 +198,7 @@ MiniMax H3 inference engine for Mac computers
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C" AND file.name != "antirez--h3.c" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "cordiverse--paper" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -407,18 +207,18 @@ MiniMax H3 inference engine for Mac computers
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W33" AND file.name != "antirez--h3.c"
+> WHERE week = "2026-W33" AND file.name != "cordiverse--paper"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/cordiverse--paper");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "antirez--h3.c" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "cordiverse--paper" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -434,7 +234,7 @@ MiniMax H3 inference engine for Mac computers
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "antirez" AND file.name != "antirez--h3.c"
+> WHERE owner = "cordiverse" AND file.name != "cordiverse--paper"
 > SORT stars DESC
 > ```
 
@@ -442,7 +242,7 @@ MiniMax H3 inference engine for Mac computers
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/cordiverse--paper");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -459,7 +259,7 @@ MiniMax H3 inference engine for Mac computers
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/cordiverse--paper");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -492,7 +292,7 @@ MiniMax H3 inference engine for Mac computers
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/cordiverse--paper");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -516,7 +316,7 @@ MiniMax H3 inference engine for Mac computers
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/cordiverse--paper");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -553,7 +353,7 @@ MiniMax H3 inference engine for Mac computers
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/antirez--h3.c");
+> const me = dv.page("Repos/cordiverse--paper");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -636,7 +436,7 @@ MiniMax H3 inference engine for Mac computers
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-12** — 首次收錄
+> **2026-08-15** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -652,7 +452,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-15|2026-08-15]] — 再次上榜，1.9k stars
-- [[2026-08-14|2026-08-14]] — 再次上榜，1.8k stars
-- [[2026-08-13|2026-08-13]] — 再次上榜，1.6k stars
-- [[2026-08-12|2026-08-12]] — 首次收錄，1.3k stars
+- [[2026-08-15|2026-08-15]] — 首次收錄，1.3k stars
