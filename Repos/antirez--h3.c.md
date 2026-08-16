@@ -7,10 +7,10 @@ language: C
 license: MIT
 description: "MiniMax H3 inference engine for Mac computers"
 homepage: ""
-stars: 1854
-stars_per_day: 371
-forks: 122
-open_issues: 31
+stars: 1957
+stars_per_day: 326
+forks: 126
+open_issues: 33
 created: 2026-08-09
 pushed_at: 2026-08-11
 first_seen: 2026-08-12
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-08-18"
+appearances: 5
+next_review: "2026-08-19"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-12"
-star_history: "2026-08-12:1303,2026-08-13:1621,2026-08-14:1794,2026-08-15:1854"
+star_history: "2026-08-12:1303,2026-08-13:1621,2026-08-14:1794,2026-08-15:1854,2026-08-16:1957"
 tags:
   - github
   - "category/other"
@@ -652,6 +652,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-16|2026-08-16]] — 再次上榜，2.0k stars
 - [[2026-08-15|2026-08-15]] — 再次上榜，1.9k stars
 - [[2026-08-14|2026-08-14]] — 再次上榜，1.8k stars
 - [[2026-08-13|2026-08-13]] — 再次上榜，1.6k stars

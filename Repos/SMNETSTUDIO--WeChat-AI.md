@@ -7,9 +7,9 @@ language: TypeScript
 license: Apache-2.0
 description: ""
 homepage: ""
-stars: 1713
-stars_per_day: 428
-forks: 1225
+stars: 1744
+stars_per_day: 349
+forks: 1247
 open_issues: 0
 created: 2026-08-10
 pushed_at: 2026-08-13
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-08-18"
+appearances: 6
+next_review: "2026-08-19"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-11"
-star_history: "2026-08-11:903,2026-08-12:1450,2026-08-13:1571,2026-08-14:1689,2026-08-15:1713"
+star_history: "2026-08-11:903,2026-08-12:1450,2026-08-13:1571,2026-08-14:1689,2026-08-15:1713,2026-08-16:1744"
 tags:
   - github
   - "category/other"
@@ -586,6 +586,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-16|2026-08-16]] — 再次上榜，1.7k stars
 - [[2026-08-15|2026-08-15]] — 再次上榜，1.7k stars
 - [[2026-08-14|2026-08-14]] — 再次上榜，1.7k stars
 - [[2026-08-13|2026-08-13]] — 再次上榜，1.6k stars

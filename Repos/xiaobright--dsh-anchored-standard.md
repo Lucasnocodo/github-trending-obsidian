@@ -1,20 +1,20 @@
 ---
-repo: xoreaxeaxeax/skitter-creek-bath-salts
-url: https://github.com/xoreaxeaxeax/skitter-creek-bath-salts
-owner: xoreaxeaxeax
+repo: xiaobright/dsh-anchored-standard
+url: https://github.com/xiaobright/dsh-anchored-standard
+owner: xiaobright
 owner_type: User
-language: C
-license: MIT
-description: "Unlocking _everything_ on the CPU with DRAM scrambling"
-homepage: ""
-stars: 1677
-stars_per_day: 839
-forks: 136
-open_issues: 2
-created: 2026-08-13
-pushed_at: 2026-08-13
-first_seen: 2026-08-14
-week: "2026-W33"
+language: JavaScript
+license: NOASSERTION
+description: "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)"
+homepage: "https://github.com/xiaobright/modeltest"
+stars: 2247
+stars_per_day: 2247
+forks: 70
+open_issues: 31
+created: 2026-08-14
+pushed_at: 2026-08-15
+first_seen: 2026-08-16
+week: "2026-W34"
 month: "2026-08"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,43 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-14
+last_reviewed: 2026-08-16
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-08-19"
-contributor_count: 1
+contributor_count: 5
 engagement: "low"
-issue_close_rate: -1
-repo_size_kb: 3855
-readme_length: 9549
-bus_factor: 1
+issue_close_rate: 16
+repo_size_kb: 119
+readme_length: 9554
+bus_factor: 2
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-14"
-star_history: "2026-08-14:1073,2026-08-15:1577,2026-08-16:1677"
+ring_history: "assess@2026-08-16"
+star_history: "2026-08-16:2247"
 tags:
   - github
   - "category/other"
-  - "lang/c"
+  - "lang/javascript"
+  - "topic/deepseek"
+  - "topic/deepseek_harness"
+  - "topic/dsh_plugin"
+  - "topic/llm_agent"
 aliases:
-  - "skitter-creek-bath-salts"
-  - "xoreaxeaxeax/skitter-creek-bath-salts"
+  - "dsh-anchored-standard"
+  - "xiaobright/dsh-anchored-standard"
 ---
 
-# skitter-creek-bath-salts
+# dsh-anchored-standard
 
-**1.1k** stars · **1.1k** stars/天 · 建立 1 天前 · C · MIT
+**2.2k** stars · **2.2k** stars/天 · 建立 1 天前 · JavaScript · NOASSERTION
 
 ```dataviewjs
-const me = dv.page("Repos/xoreaxeaxeax--skitter-creek-bath-salts");
+const me = dv.page("Repos/xiaobright--dsh-anchored-standard");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +74,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`deepseek` `deepseek-harness` `dsh-plugin` `llm-agent`
 
 > [!summary] 一句話摘要
-> Unlocking _everything_ on the CPU with DRAM scrambling
+> Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)
 
 ## 專案簡介
 
-Unlocking _everything_ on the CPU with DRAM scrambling
+Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--skitter-creek-bath-salts");
+> const me = dv.page("Repos/xiaobright--dsh-anchored-standard");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +122,7 @@ Unlocking _everything_ on the CPU with DRAM scrambling
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--skitter-creek-bath-salts");
+> const me = dv.page("Repos/xiaobright--dsh-anchored-standard");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,259 +146,216 @@ Unlocking _everything_ on the CPU with DRAM scrambling
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 106 |
-| Open Issues | 0 |
-| 最後推送 | 2026-08-13 |
-| 建立日期 | 2026-08-13 |
-| Repo 大小 | 3.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/xoreaxeaxeax/skitter-creek-bath-salts) |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "C" : 61
->     "Python" : 38
-> ```
+| Forks | 70 |
+| Open Issues | 31 |
+| Issue 解決率 | 16% (6 closed) |
+| 最後推送 | 2026-08-15 |
+| 建立日期 | 2026-08-14 |
+| 官方網站 | [Link](https://github.com/xiaobright/modeltest) |
+| Repo 大小 | 119 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/xiaobright/dsh-anchored-standard) |
+| Topics | `deepseek` `deepseek-harness` `dsh-plugin` `llm-agent` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@xoreaxeaxeax](https://github.com/xoreaxeaxeax) | 2 |
+> | [@xiaobright](https://github.com/xiaobright) | 11 |
+> | [@3067997259-design](https://github.com/3067997259-design) | 5 |
+> | [@Greenhand-monster](https://github.com/Greenhand-monster) | 5 |
+> | [@wushi2333](https://github.com/wushi2333) | 3 |
+> | [@AHCzyz](https://github.com/AHCzyz) | 2 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-13 ~ 2026-08-13）
-> **活躍天數** 1 天 · **最新 commit** unspaghettify the readme prose
+> [!abstract] 最近 10 次 commit（2026-08-15 ~ 2026-08-15）
+> **活躍天數** 1 天 · **最新 commit** Merge branch 'develop': self-contained modes, README restructure, subagent guide
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#50](https://github.com/xiaobright/dsh-anchored-standard/issues/50) | [OMP Port] omp-deepseek-anchor — dsh-anchored-standard 移植到 O | 0 | 0 |
+> | [#49](https://github.com/xiaobright/dsh-anchored-standard/issues/49) | instruction-hint 的命令式措辞会把锚定轨迹打回 "let me"；中性/建议式措辞能保住 "we"——且 | 0 | 2 |
+> | [#47](https://github.com/xiaobright/dsh-anchored-standard/issues/47) | 更拉跨了，直接运行十几分钟没反应 | 0 | 0 |
+> | [#46](https://github.com/xiaobright/dsh-anchored-standard/issues/46) | [Community] 独立插件 All-WarmUp：借鉴了 dsh-anchored-standard 的 epoc | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # skitter-creek-bath-salts
+> # dsh-anchored-standard
 > 
-> > *Unlocking **everything** on the CPU with DRAM scrambling — PSP, C6, microcode,
-> > SMM, and anything else the specs left out.*
+> [中文说明](./README.zh-CN.md)
 > 
-> `&x == &x`.
+> Experimental DeepSeek Harness agent presets — one base mode plus two variants
+> — that anchor a session's first model request on the Minimal condition
+> (real Minimal tool schema, no auto-injected context), then promote to a small
+> resident catalog once the session is durable, unlocking heavier Standard tools
+> on demand.
 > 
-> Usually.
-> 
-> Poke the DRAM controller and an address can be made to land wherever you want in
-> memory. `skitter-creek-bath-salts` modifies the bottom layers of the memory
-> hierarchy to rewire the physical DRAM address translations. This scrambles
-> platform memory, exposing protected regions of DRAM — carveouts invisible even
-> to the kernel. When the address translations break, so do the security
-> primitives built on them, and we unlock *everything*.
-> 
-> ---
+> This is a community project. It is not an official DeepSeek preset and is not
+> affiliated with or endorsed by DeepSeek.
 > 
 > 
-> ## Quick start: unlock your Platform Security Processor
+> ## Install
 > 
-> > *Tamper with your PSP, see what happens.*
+> Clone this repository, then copy the entire `preset` directory into the user
+> preset root under the id `anchored-standard`. Every mode directory in this
+> repository is self-contained: the `zero-anchored-standard/` and
+> `whoami-standard/` variants install the same way, alone or together, with no
+> other directory required (see their sections below).
 > 
-> The fTPM runs on the PSP's own ARM core, in a DRAM carveout right past the
-> visible top-of-memory. Reach it by aliasing an OS-visible physical address
-> onto it, pull the bytes out, disassemble.
+> PowerShell:
+> 
+> ```powershell
+> $target = Join-Path $env:USERPROFILE '.dsh\.agent-presets\anchored-standard'
+> if (Test-Path -LiteralPath $target) { throw "Preset already exists: $target" }
+> New-Item -ItemType Directory -Force -Path (Split-Path -Parent $target) | Out-Null
+> Copy-Item -Recurse -LiteralPath '.\preset' -Destination $target
+> ```
+> 
+> Linux/macOS:
 > 
 > ```sh
-> 
-> ## Quick start: unlock System Management Mode
-> 
-> > *Read what SMM hides.*
-> 
-> The SMI handler entry vector lives at `SMBASE + 0x8000`. `SMBASE` is in
-> MSR `0xc0010111`. Read it, pull the bytes through the alias map, and pipe
-> them straight into a disassembler:
-> 
-> ```sh
-> 
-> ## Quick start: unlock C6 DRAM
-> 
-> > *I have no idea what's in here and have never seen it discussed, likely
-> > internal CPU registers. Have fun.*
-> 
-> When the cores power-gate into C6, each one's full x86 architectural context is
-> stashed here for restore.
-> 
-> ```sh
-> ./userspace/platform_check || exit 1
-> 
-> 
-> # For example, on this platform IA32_APIC_BASE sits at +0x9b8 in each area.
-> 
-> ## TL;DR
-> 
-> - [Unlock your Platform Security Processor](#quick-start-unlock-your-platform-security-processor)
-> - [Unlock System Management Mode](#quick-start-unlock-system-management-mode)
-> - [Unlock C6 DRAM](#quick-start-unlock-cc6-dram)
-> - [Unlock your CPU microcode](#quick-start-unlock-your-cpu-microcode)
-> 
-> ---
-> 
-> 
-> ## Target
-> 
-> Developed and tested on **AMD Family 16h CPUs**, the last generation whose
-> datasheets document the DRAM controller's translation registers — and show that
-> they can't be locked. 17h and beyond simply leave this information out. The
-> [odyssey of `*p`](#the-odyssey-of-p) is similar across generations and
-> architectures, and the underlying transforms extend even to ARM, RISC-V, and
-> beyond; `skitter-creek-bath-salts` shows us [**only how to begin**](#the-shared-pipeline).
-> 
-> ---
-> 
-> 
-> # Bail out early on platforms this was never tested on.
-> ./userspace/platform_check || exit 1
-> 
-> 
-> # Resolve the PSP DRAM carveout — sets PSP_BASE / PSP_SIZE (0x7f800000 /
-> 
-> # 0x800000 on the test box). Swap 2x4gb for whichever data/maps/ prefix
-> 
-> # matches your DIMMs; one --map per saved map.
-> eval "$(sudo ./userspace/dram_carveouts --region psp)"
-> sudo ./userspace/dram_dump --protected-pa $PSP_BASE --length $PSP_SIZE \
->     $(printf -- '--map %s ' data/maps/2x4gb_*.map) > psp.bin
-> 
-> 
-> # The PSP is an ARM core, so disassemble as Thumb-2. Carve crAmd_ModExp
-> 
-> # (0x64 bytes at PSP_BASE+0x19d4) straight out of the captured image.
-> objdump -b binary -m armv7 -M force-thumb --adjust-vma=$PSP_BASE \
->     --start-address=$((PSP_BASE + 0x19d4)) \
->     --stop-address=$((PSP_BASE + 0x19d4 + 0x64)) \
->     -D psp.bin
+> dsh_home="${DSH_HOME:-$HOME/.dsh}"
+> mkdir -p "$dsh_home/.agent-presets"
+> test ! -e "$dsh_home/.agent-presets/anchored-standard"
+> cp -R preset "$dsh_home/.agent-presets/anchored-standard"
 > ```
 > 
-> ```armasm
-> ; crAmd_ModExp — the fTPM's RSA modular-exponentiation routine, recovered intact
-> ; from the PSP's private DRAM.
-> 7f8019d4:  b5f0       push  {r4, r5, r6, r7, lr}
-> 7f8019d6:  b0e5       sub   sp, #404
-> 7f8019de:  2280       movs  r2, #128                  ; 1024-bit operand
-> 7f8019e4:  f7fe ffef  bl    0x7f8009c6                ; import base (aA)
-> 7f8019ee:  a0eb       adr   r0, 0x7f801d9c            ; "crAmd_ModExp aA failed, status = 0x%x"
-> 7f8019f8:  f7fe ffe5  bl    0x7f8009c6                ; import exponent (aB)
-> 7f801a02:  a0f0       adr   r0, 0x7f801dc4            ; "crAmd_ModExp aB failed status = 0x%x"
-> 7f801a18:  f000 fdd4  bl    0x7f8025c4                ; the modexp itself
-> 7f801a20:  a0f2       adr   r0, 0x7f801dec            ; "crAmd_ModExp failed ret=0x%08x, exit"
-> 7f801a22:  f000 fef5  bl    0x7f802810                ; log error
-> 7f801a2e:  f001 e92a  blx   0x7f802c84                ; export result
-> 7f801a36:  bdf0       pop   {r4, r5, r6, r7, pc}
+> Fully restart DeepSeek Harness, create a blank session, and select
+> **Anchored Standard (experimental)**. Do not switch an active session from a
+> different preset.
+> 
+> 
+> ## Configuration reference
+> 
+> All knobs are rows in each mode's `agent.cordis.yml`. Unknown keys fail at
+> preset mount.
+> 
+> `tool-bootstrap` (in `preset/agent.cordis.yml`; the row must stay FIRST —
+> waterfall registration order decides the first-request strip):
+> 
+> | Key | Default | Meaning |
+> |---|---|---|
+> | `bootstrapTools` | `[bash, str_replace_editor]` | Tools visible on request #1. |
+> | `promoteOn` | `either` | Promotion trigger: `either`, `tool-call`, or `assistant-message`. |
+> | `bootstrapMaxTokens` | unset | Optional output cap for request #1; stripped after promotion. |
+> | `suppressedContextSources` | `[agent-instructions, skill-catalog]` | `source.kind` values stripped during bootstrap; `[]` disables the filter. |
+> | `compactionTools` | `[]` | Extra tools available between a compaction boundary and re-promotion. |
+> 
+> `zero-tool-bootstrap` (in `zero-anchored-standard/` and `whoami-standard/`):
+> `suppressedContextSources` and `compactionTools` have the same semantics
+> (promotion is always the first `assistant/message`), plus
+> `includeSubagents` — whether subagents also take the anchor phase (set `true`
+> in `whoami-standard`, `false` in `zero-anchored-standard`).
+> 
+> `anchor-turn` (in both variants): `text` — the synthetic first user message
+> (default "This round is a test. Tools are not open yet; all tools will open
+> next round." in zero-anchored, "你是谁" in whoami); `includeSubagents` —
+> whether subagents also take the anchor turn.
+> 
+> `instruction-hint` (all modes): `promoteOn` matching the mode's promotion
+> semantics (`either` in the base mode, `assistant-message` in the variants) —
+> the one-shot "instruction files exist, read them before acting" hint waits
+> for promotion.
+> 
+> 
+> ## Why
+> 
+> DeepSeek V4 Pro conditions strongly on the API-visible tool catalog. In the
+> Project2 evaluation, Standard and PTC produced scores of 91 and 92, while the
+> official Minimal preset produced 99 and 96. Permanently staying on Minimal,
+> however, gives up the Standard preset's broader tool set.
+> 
+> Anchored Standard separates initial trajectory selection from later tool use:
+> 
+> 1. Keep the Minimal complete system prompt.
+> 2. Expose the Minimal preset's REAL tool schemas — persistent `bash` +
+>    `str_replace_editor`, byte-identical to the official Minimal composition —
+>    on the first model request (lever 1 above).
+> 3. Strip the auto-injected context on that first request as well — the
+>    AGENTS.md/CLAUDE.md workspace digest and the available-skills reminder that
+>    true Minimal never mounts (`suppressedContextSources` in the
+>    `tool-bootstrap` row; lever 3). User-initiated skill gestures are not
+>    filtered, and both injections return unchanged from request #2 on.
+> 4. After the session records its first durable promotion signal — a `tool/call`
+>    or the first `assistant/message`, whichever comes first — promote to the
+>    RESIDENT catalog: the bootstrap pair plus the discovery tools plus whatever
+>    the model has explicitly unlocked via `dev_tool_search`. Dumping the full
+>    Standard catalog at promotion pulled the trajectory back to standard-like
+>    behavior (the post-promotion regression), so heavier tools — `web_search`,
+>    `subagent`, `workflow`, … — stay one `dev_tool_search` call away. Request
+>    #1 always sees the bootstrap catalog; request #2 always sees the resident
+>    catalog, so a text-only first reply can no longer trap the session in
+>    bootstrap. (`promoteOn` in the `tool-bootstrap` row selects the trigger:
+>    `either` default, `tool-call`, or `assistant-message`.)
+> 5. Derive the phase from durable session events so resume and reload preserve it.
+> 
+> The bootstrap catalog is the same on every platform: the Minimal pair
+> (`bash`/`str_replace_editor`). The preset's shell is the persistent PTY bash
+> (the sandboxed Standard `bash` row is disabled — both register the `bash` name
+> into the same layer, and the tools registry rejects duplicates; Windows never
+> had the sandboxed bash anyway). `pwsh` remains available in the promoted
+> catalog on Windows.
+> 
+> 
+> ## Modes at a glance
+> 
+> | Mode | Directory | First model request | Anchor mechanism | Promotion signal | Cost |
+> |---|---|---|---|---|---|
+> | Anchored Standard | `preset/` | 2 tools (the Minimal pair) | Minimal tool schema | first durable `tool/call` **or** `assistant/message` (`promoteOn: either`) | none |
+> | Zero-Anchored Standard | `zero-anchored-standard/` | 0 tools | one fixed anchor turn | the anchor reply (`assistant/message`) | +1 model call |
+> | Whoami Standard | `whoami-standard/` | 0 tools | one "你是谁" self-introduction turn | the self-introduction reply (`assistant/message`) | +1 model call |
+> 
+> Every mode directory is self-contained and installs alone under whatever id
+> you copy it to (see [Install](#install)).
+> 
+> 
+> ## Terminology
+> 
+> - **trajectory** — the style of the model's first reasoning chain. The
+>   Minimal condition produces "We need…" first lines; the Standard condition
+>   produces "Let me…" ("standard-like") first lines.
+> - **anchor** — the first-request conditions that select the trajectory. Issue
+>   #11 isolated three levers: the tool schema, the output budget, and the
+>   injected reminders.
+> - **bootstrap phase** — request #1 of a session: the bootstrap tool pair, no
+>   auto-injected context, optional output cap.
+> - **promotion** — the durable session event that ends the bootstrap phase.
+>   Base mode: first `tool/call` or `assistant/message`, whichever comes first.
+>   Variants: the anchor reply.
+> - **durable** — recorded in the session event log. Phase state is derived
+>   from durable events, so resume and reload preserve it.
+> - **resident catalog** — the promoted tool set: the bootstrap pair plus the
+>   discovery tools plus every tool the model explicitly unlocked.
+> - **discovery tools** — `dev_tool_search`, `skill_search`, `skill_load`: the
+>   on-demand unlock surface for heavier Standard tools.
+> - **materialized copy** — the committed copy of a `shared/` plugin inside a
+>   mode directory, generated by `npm run sync`.
+> 
+> 
+> ## How it works
+> 
+> The base mode in one request lifecycle (the variants change only the first
+> turn — see their sections):
+> 
 > ```
-> 
-> That's the PSP's RSA engine — the modexp behind every fTPM signature, and behind
-> the Miller-Rabin tests that mint its keys — lifted out of memory the PSP is
-> supposed to own alone, fenced off at the memory controller, opaque even to
-> ring-0. Modify as you see fit.
-> 
-> ---
-> 
-> 
-> # Bail out early on platforms this was never tested on.
-> ./userspace/platform_check || exit 1
-> 
-> sudo modprobe msr
-> 
-> 
-> # SMBASE is per-core; core 0's lives in MSR 0xc0010111.
-> SMM_BASE=0x$(sudo rdmsr -p 0 0xc0010111)
-> SMI_ENTRY=$(( SMM_BASE + 0x8000 ))
-> 
-> 
-> # Dump the entry vector through the alias map and disassemble on the fly.
-> 
-> # SMM starts in real mode, so ndisasm gets -b 16. One --map per saved map;
-> 
-> # printf expands the glob into a --map for each (at_swizzle, at_bankswap) combo.
-> sudo ./userspace/dram_dump --protected-pa $SMI_ENTRY --length 0x40 \
->     $(printf -- '--map %s ' data/maps/2x4gb_*.map) | ndisasm -b 16 -
-> ```
-> 
-> ```nasm
-> ; SMI entry stub — the first thing a core executes when entering the
-> ; ultra-privileged System Management Mode.
-> mov si,0x8148           ; SI -> GDT pointer parked at SMBASE+0x8148, just past this stub
-> o32 lgdt [cs:si]        ; load it (o32 -> full 32-bit base, not real mode's 24-bit form)
-> mov eax,0x3             ; CR0.PE | CR0.MP
-> mov cr0,eax             ; flip the core into protected mode
-> jmp short 0x14          ; near jump to serialize and flush the prefetch queue post-switch
-> mov ax,0x18             ; GDT selector 0x18 -> flat data segment
-> mov ss,ax               ; reload SS for protected mode
-> mov eax,0x6efe2ff8      ; SMM stack top
-> mov esp,eax             ; install the SMM stack
-> o32 push byte +0x10     ; far-return frame: CS = code selector 0x10
-> mov ecx,0xc0010111      ; MSR SMM_BASE
-> rdmsr                   ; EAX = this core's SMBASE
-> mov ebx,eax             ; stash SMBASE
-> add eax,0x803a          ; EAX = SMBASE+0x803a, the 32-bit handler entry
-> push eax                ; far-return frame: EIP = SMBASE+0x803a
-> retfd                   ; far-return into 0x10:SMBASE+0x803a — the SMI handler proper
-> ```
-> 
-> Those instructions run in ring -2, the most privileged context on the CPU,
-> out of memory the chipset is supposed to make unreadable. SMRAM "locked"
-> turns out to be a polite suggestion when we can talk to the DRAM controller
-> directly.
-> 
-> Swap `2x4gb` for whichever prefix in `data/maps/` matches your installed
-> DIMMs (`sudo dmidecode -t memory`). If your topology isn't there, run
-> `analysis/gather_aliases.py` then `analysis/unspaghettify.py` to bake
-> your own.
-> 
-> ---
-> 
-> 
-> # Resolve the C6 stash — sets CC6_BASE / CC6_SIZE (0x7f000000 / 0x800000 on the
-> 
-> # test box). Each idle core's state lives in a 16 KiB save area; four cores
-> 
-> # here, at CC6_BASE + {0, 0x4000, 0x8000, 0xc000}.
-> eval "$(sudo ./userspace/dram_carveouts --region cc6)"
-> sudo ./userspace/dram_dump --protected-pa $CC6_BASE --length 0x10000 \
->     $(printf -- '--map %s ' data/maps/2x4gb_*.map) > cc6.bin
-> 
-> 
-> # Read it from all four cores straight out of the stash:
-> for c in 0 1 2 3; do
->     printf 'core %d  ' $c
->     hexdump -C -s $(( c*0x4000 + 0x9b8 )) -n 8 cc6.bin | head -1
-> done
-> ```
-> 
-> ```text
-> core 0  000009b8  00 09 e0 fe 00 00 00 00  |........|    *What could go wrong?*
-> 
-> When a core drops into C6 its microcode patch RAM — volatile SRAM — goes dark with
-> the rest of the core. So the C6 stash keeps the loaded patch in DRAM and re-seeds
-> it on wake. That copy sits at `+0x1800` in each save area, and the alias reaches
-> it like any other byte.
-> 
-> Grab the microcode copy the CPU stashed in fenced DRAM:
-> 
-> ```sh
-> ./userspace/platform_check || exit 1
-> eval "$(sudo ./userspace/dram_carveouts --region cc6)"
-> 
-> 
-> # page 1 of core 0's save area is the live microcode patch body
-> sudo ./userspace/dram_dump --protected-pa $((CC6_BASE + 0x1800)) --length 0x5f0 \
->     $(printf -- '--map %s ' data/maps/2x4gb_*.map) > ucode_ram.bin
-> ```
-> 
-> Match it against known patches:
-> 
-> ```sh
-> 
-> # did we find it?
-> pyt
+> user's first message
+>         │
+>         ▼
+> ┌ request #1 ─ bootstrap phase ──────────────────────────────┐
+> │ tools    : bash + str_replace_editor (Minimal's real pair) │
+> │ context  : no AGENTS.md digest, no skill-catalog reminder  │
+> │ budget   : adapter default (`bootstrapMaxTokens` optional) │
+> └─────────────────────────────────────────────────────────────┘
+>         │ first durable tool/call OR assistant/m
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/xoreaxeaxeax/skitter-creek-bath-salts)
+[GitHub](https://github.com/xiaobright/dsh-anchored-standard) · [官方網站](https://github.com/xiaobright/modeltest)
 
 ## 相關收錄
 
@@ -402,7 +363,7 @@ Unlocking _everything_ on the CPU with DRAM scrambling
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "xoreaxeaxeax--skitter-creek-bath-salts"
+> WHERE category = "Other" AND file.name != "xiaobright--dsh-anchored-standard"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -411,7 +372,7 @@ Unlocking _everything_ on the CPU with DRAM scrambling
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "C" AND file.name != "xoreaxeaxeax--skitter-creek-bath-salts" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "xiaobright--dsh-anchored-standard" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -420,18 +381,18 @@ Unlocking _everything_ on the CPU with DRAM scrambling
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W33" AND file.name != "xoreaxeaxeax--skitter-creek-bath-salts"
+> WHERE week = "2026-W34" AND file.name != "xiaobright--dsh-anchored-standard"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--skitter-creek-bath-salts");
+> const me = dv.page("Repos/xiaobright--dsh-anchored-standard");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "xoreaxeaxeax--skitter-creek-bath-salts" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "xiaobright--dsh-anchored-standard" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -447,7 +408,7 @@ Unlocking _everything_ on the CPU with DRAM scrambling
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "xoreaxeaxeax" AND file.name != "xoreaxeaxeax--skitter-creek-bath-salts"
+> WHERE owner = "xiaobright" AND file.name != "xiaobright--dsh-anchored-standard"
 > SORT stars DESC
 > ```
 
@@ -455,7 +416,7 @@ Unlocking _everything_ on the CPU with DRAM scrambling
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--skitter-creek-bath-salts");
+> const me = dv.page("Repos/xiaobright--dsh-anchored-standard");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -472,7 +433,7 @@ Unlocking _everything_ on the CPU with DRAM scrambling
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--skitter-creek-bath-salts");
+> const me = dv.page("Repos/xiaobright--dsh-anchored-standard");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -505,7 +466,7 @@ Unlocking _everything_ on the CPU with DRAM scrambling
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--skitter-creek-bath-salts");
+> const me = dv.page("Repos/xiaobright--dsh-anchored-standard");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -529,7 +490,7 @@ Unlocking _everything_ on the CPU with DRAM scrambling
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--skitter-creek-bath-salts");
+> const me = dv.page("Repos/xiaobright--dsh-anchored-standard");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -566,7 +527,7 @@ Unlocking _everything_ on the CPU with DRAM scrambling
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/xoreaxeaxeax--skitter-creek-bath-salts");
+> const me = dv.page("Repos/xiaobright--dsh-anchored-standard");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -649,7 +610,7 @@ Unlocking _everything_ on the CPU with DRAM scrambling
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-14** — 首次收錄
+> **2026-08-16** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -665,6 +626,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-16|2026-08-16]] — 再次上榜，1.7k stars
-- [[2026-08-15|2026-08-15]] — 再次上榜，1.6k stars
-- [[2026-08-14|2026-08-14]] — 首次收錄，1.1k stars
+- [[2026-08-16|2026-08-16]] — 首次收錄，2.2k stars
