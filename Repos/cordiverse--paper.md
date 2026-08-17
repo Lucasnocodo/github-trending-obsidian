@@ -7,9 +7,9 @@ language: N/A
 license: N/A
 description: "A Programming Paradigm for Spatiotemporal Composability"
 homepage: ""
-stars: 1331
-stars_per_day: 1331
-forks: 48
+stars: 1900
+stars_per_day: 633
+forks: 75
 open_issues: 0
 created: 2026-08-13
 pushed_at: 2026-08-13
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-18"
+appearances: 2
+next_review: "2026-08-20"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-15"
-star_history: "2026-08-15:1331"
+star_history: "2026-08-15:1331,2026-08-17:1900"
 tags:
   - github
   - "category/other"
@@ -452,4 +452,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-17|2026-08-17]] — 再次上榜，1.9k stars
 - [[2026-08-15|2026-08-15]] — 首次收錄，1.3k stars

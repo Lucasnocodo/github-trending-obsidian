@@ -7,12 +7,12 @@ language: JavaScript
 license: NOASSERTION
 description: "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)"
 homepage: "https://github.com/xiaobright/modeltest"
-stars: 2247
-stars_per_day: 2247
-forks: 70
-open_issues: 31
+stars: 3102
+stars_per_day: 1551
+forks: 97
+open_issues: 23
 created: 2026-08-14
-pushed_at: 2026-08-15
+pushed_at: 2026-08-17
 first_seen: 2026-08-16
 week: "2026-W34"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-19"
+appearances: 2
+next_review: "2026-08-20"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 16
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-16"
-star_history: "2026-08-16:2247"
+star_history: "2026-08-16:2247,2026-08-17:3102"
 tags:
   - github
   - "category/other"
@@ -626,4 +626,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-17|2026-08-17]] — 再次上榜，3.1k stars
 - [[2026-08-16|2026-08-16]] — 首次收錄，2.2k stars

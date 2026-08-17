@@ -7,12 +7,12 @@ language: TypeScript
 license: Apache-2.0
 description: "Plugin and skin collection for DeepSeek Harness (DSH) Web UI - task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and skin center."
 homepage: "https://gallery.dsh-market.com"
-stars: 2754
-stars_per_day: 918
-forks: 155
-open_issues: 37
+stars: 3528
+stars_per_day: 882
+forks: 207
+open_issues: 42
 created: 2026-08-12
-pushed_at: 2026-08-16
+pushed_at: 2026-08-17
 first_seen: 2026-08-15
 week: "2026-W33"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-19"
+appearances: 3
+next_review: "2026-08-20"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 79
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-15"
-star_history: "2026-08-15:1985,2026-08-16:2754"
+star_history: "2026-08-15:1985,2026-08-16:2754,2026-08-17:3528"
 tags:
   - github
   - "category/other"
@@ -689,5 +689,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-17|2026-08-17]] — 再次上榜，3.5k stars
 - [[2026-08-16|2026-08-16]] — 再次上榜，2.8k stars
 - [[2026-08-15|2026-08-15]] — 首次收錄，2.0k stars
