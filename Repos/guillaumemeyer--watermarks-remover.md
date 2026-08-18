@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD"
 homepage: "https://github.com/guillaumemeyer/watermarks-remover"
-stars: 11715
-stars_per_day: 2343
-forks: 1249
-open_issues: 10
+stars: 13551
+stars_per_day: 2259
+forks: 1485
+open_issues: 6
 created: 2026-08-11
-pushed_at: 2026-08-17
+pushed_at: 2026-08-18
 first_seen: 2026-08-13
 week: "2026-W33"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-08-20"
+appearances: 6
+next_review: "2026-08-21"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 40
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-13"
-star_history: "2026-08-13:2658,2026-08-14:5607,2026-08-15:8272,2026-08-16:9795,2026-08-17:11715"
+star_history: "2026-08-13:2658,2026-08-14:5607,2026-08-15:8272,2026-08-16:9795,2026-08-17:11715,2026-08-18:13551"
 tags:
   - github
   - "category/other"
@@ -668,6 +668,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-18|2026-08-18]] — 再次上榜，13.6k stars
 - [[2026-08-17|2026-08-17]] — 再次上榜，11.7k stars
 - [[2026-08-16|2026-08-16]] — 再次上榜，9.8k stars
 - [[2026-08-15|2026-08-15]] — 再次上榜，8.3k stars

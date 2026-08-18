@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "DeepSeek Harness: Everything is a Plugin."
 homepage: "https://deepseek.com/harness"
-stars: 134524
-stars_per_day: 44841
-forks: 13528
+stars: 151234
+stars_per_day: 37809
+forks: 15557
 open_issues: 0
 created: 2026-08-13
-pushed_at: 2026-08-13
+pushed_at: 2026-08-17
 first_seen: 2026-08-14
 week: "2026-W33"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-08-20"
+appearances: 5
+next_review: "2026-08-21"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-14"
-star_history: "2026-08-14:63661,2026-08-15:97184,2026-08-16:116523,2026-08-17:134524"
+star_history: "2026-08-14:63661,2026-08-15:97184,2026-08-16:116523,2026-08-17:134524,2026-08-18:151234"
 tags:
   - github
   - "category/other"
@@ -516,6 +516,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-18|2026-08-18]] — 再次上榜，151.2k stars
 - [[2026-08-17|2026-08-17]] — 再次上榜，134.5k stars
 - [[2026-08-16|2026-08-16]] — 再次上榜，116.5k stars
 - [[2026-08-15|2026-08-15]] — 再次上榜，97.2k stars

@@ -7,10 +7,10 @@ language: Python
 license: CC0-1.0
 description: "A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表"
 homepage: "https://awesome-dsh-plugin.com"
-stars: 5510
-stars_per_day: 1837
-forks: 892
-open_issues: 78
+stars: 7682
+stars_per_day: 1921
+forks: 1100
+open_issues: 192
 created: 2026-08-13
 pushed_at: 2026-08-17
 first_seen: 2026-08-15
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-08-20"
+appearances: 4
+next_review: "2026-08-21"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 32
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-15"
-star_history: "2026-08-15:1215,2026-08-16:3080,2026-08-17:5510"
+star_history: "2026-08-15:1215,2026-08-16:3080,2026-08-17:5510,2026-08-18:7682"
 tags:
   - github
   - "category/other"
@@ -540,6 +540,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-18|2026-08-18]] — 再次上榜，7.7k stars
 - [[2026-08-17|2026-08-17]] — 再次上榜，5.5k stars
 - [[2026-08-16|2026-08-16]] — 再次上榜，3.1k stars
 - [[2026-08-15|2026-08-15]] — 首次收錄，1.2k stars

@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验"
 homepage: "https://dshdesktop.cn"
-stars: 9357
-stars_per_day: 3119
-forks: 396
-open_issues: 124
+stars: 11899
+stars_per_day: 2975
+forks: 544
+open_issues: 180
 created: 2026-08-13
-pushed_at: 2026-08-16
+pushed_at: 2026-08-18
 first_seen: 2026-08-15
 week: "2026-W33"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-08-20"
+appearances: 4
+next_review: "2026-08-21"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-15"
-star_history: "2026-08-15:2146,2026-08-16:6120,2026-08-17:9357"
+star_history: "2026-08-15:2146,2026-08-16:6120,2026-08-17:9357,2026-08-18:11899"
 tags:
   - github
   - "category/other"
@@ -621,6 +621,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-18|2026-08-18]] — 再次上榜，11.9k stars
 - [[2026-08-17|2026-08-17]] — 再次上榜，9.4k stars
 - [[2026-08-16|2026-08-16]] — 再次上榜，6.1k stars
 - [[2026-08-15|2026-08-15]] — 首次收錄，2.1k stars

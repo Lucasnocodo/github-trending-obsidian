@@ -3529,10 +3529,10 @@
   },
   "guillaumemeyer/watermarks-remover": {
     "first_seen": "2026-08-13",
-    "last_seen": "2026-08-17",
-    "times_seen": 5,
+    "last_seen": "2026-08-18",
+    "times_seen": 6,
     "stars_first": 2658,
-    "stars_last": 11715
+    "stars_last": 13551
   },
   "LaoFeng-mouse/flyingmouse-format": {
     "first_seen": "2026-08-13",
@@ -3550,10 +3550,10 @@
   },
   "deepseek-ai/deepseek-harness": {
     "first_seen": "2026-08-14",
-    "last_seen": "2026-08-17",
-    "times_seen": 4,
+    "last_seen": "2026-08-18",
+    "times_seen": 5,
     "stars_first": 63661,
-    "stars_last": 134524
+    "stars_last": 151234
   },
   "xoreaxeaxeax/skitter-creek-bath-salts": {
     "first_seen": "2026-08-14",
@@ -3578,44 +3578,58 @@
   },
   "anywhere-labs/deepseek-harness-desktop": {
     "first_seen": "2026-08-15",
-    "last_seen": "2026-08-17",
-    "times_seen": 3,
+    "last_seen": "2026-08-18",
+    "times_seen": 4,
     "stars_first": 2146,
-    "stars_last": 9357
+    "stars_last": 11899
   },
   "zhu1090093659/dsh-web-ui": {
     "first_seen": "2026-08-15",
-    "last_seen": "2026-08-17",
-    "times_seen": 3,
+    "last_seen": "2026-08-18",
+    "times_seen": 4,
     "stars_first": 1985,
-    "stars_last": 3528
+    "stars_last": 4152
   },
   "cordiverse/paper": {
     "first_seen": "2026-08-15",
-    "last_seen": "2026-08-17",
-    "times_seen": 2,
+    "last_seen": "2026-08-18",
+    "times_seen": 3,
     "stars_first": 1331,
-    "stars_last": 1900
+    "stars_last": 2130
   },
   "awesome-dsh-plugin/awesome-dsh-plugin": {
     "first_seen": "2026-08-15",
-    "last_seen": "2026-08-17",
-    "times_seen": 3,
+    "last_seen": "2026-08-18",
+    "times_seen": 4,
     "stars_first": 1215,
-    "stars_last": 5510
+    "stars_last": 7682
   },
   "xiaobright/dsh-anchored-standard": {
     "first_seen": "2026-08-16",
-    "last_seen": "2026-08-17",
-    "times_seen": 2,
+    "last_seen": "2026-08-18",
+    "times_seen": 3,
     "stars_first": 2247,
-    "stars_last": 3102
+    "stars_last": 3435
   },
   "yjh051108/dsh-routing-suite": {
     "first_seen": "2026-08-16",
-    "last_seen": "2026-08-17",
-    "times_seen": 2,
+    "last_seen": "2026-08-18",
+    "times_seen": 3,
     "stars_first": 1798,
-    "stars_last": 2933
+    "stars_last": 5424
+  },
+  "dmmulroy/anti-slop": {
+    "first_seen": "2026-08-18",
+    "last_seen": "2026-08-18",
+    "times_seen": 1,
+    "stars_first": 2390,
+    "stars_last": 2390
+  },
+  "ccch1mneyyy/dsh-TUI": {
+    "first_seen": "2026-08-18",
+    "last_seen": "2026-08-18",
+    "times_seen": 1,
+    "stars_first": 1827,
+    "stars_last": 1827
   }
 }

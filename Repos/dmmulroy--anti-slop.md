@@ -1,20 +1,20 @@
 ---
-repo: cordiverse/paper
-url: https://github.com/cordiverse/paper
-owner: cordiverse
-owner_type: Organization
-language: N/A
-license: N/A
-description: "A Programming Paradigm for Spatiotemporal Composability"
+repo: dmmulroy/anti-slop
+url: https://github.com/dmmulroy/anti-slop
+owner: dmmulroy
+owner_type: User
+language: TypeScript
+license: MIT
+description: "Opinionated Oxlint rules for rejecting low-evidence TypeScript and JavaScript patterns"
 homepage: ""
-stars: 2130
-stars_per_day: 533
-forks: 85
-open_issues: 0
-created: 2026-08-13
-pushed_at: 2026-08-13
-first_seen: 2026-08-15
-week: "2026-W33"
+stars: 2390
+stars_per_day: 478
+forks: 40
+open_issues: 2
+created: 2026-08-12
+pushed_at: 2026-08-14
+first_seen: 2026-08-18
+week: "2026-W34"
 month: "2026-08"
 category: "Other"
 subcategory: ""
@@ -25,40 +25,43 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-15
+last_reviewed: 2026-08-18
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-08-21"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: -1
-repo_size_kb: 882
-readme_length: 1709
+issue_close_rate: 82
+repo_size_kb: 55
+readme_length: 6354
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-15"
-star_history: "2026-08-15:1331,2026-08-17:1900,2026-08-18:2130"
+ring_history: "assess@2026-08-18"
+star_history: "2026-08-18:2390"
 tags:
   - github
   - "category/other"
-  - "lang/other"
-  - org
+  - "lang/typescript"
+  - "topic/agent_skills"
+  - "topic/linting"
+  - "topic/oxlint"
+  - "topic/typescript"
 aliases:
-  - "paper"
-  - "cordiverse/paper"
+  - "anti-slop"
+  - "dmmulroy/anti-slop"
 ---
 
-# paper
+# anti-slop
 
-**1.3k** stars · **1.3k** stars/天 · 建立 1 天前 · N/A · 未標註授權
+**2.4k** stars · **478** stars/天 · 建立 5 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/cordiverse--paper");
+const me = dv.page("Repos/dmmulroy--anti-slop");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +74,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`個人專案`
+
+`agent-skills` `linting` `oxlint` `typescript`
 
 > [!summary] 一句話摘要
-> A Programming Paradigm for Spatiotemporal Composability
+> Opinionated Oxlint rules for rejecting low-evidence TypeScript and JavaScript patterns
 
 ## 專案簡介
 
-A Programming Paradigm for Spatiotemporal Composability
+Opinionated Oxlint rules for rejecting low-evidence TypeScript and JavaScript patterns
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/cordiverse--paper");
+> const me = dv.page("Repos/dmmulroy--anti-slop");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +124,7 @@ A Programming Paradigm for Spatiotemporal Composability
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/cordiverse--paper");
+> const me = dv.page("Repos/dmmulroy--anti-slop");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,45 +148,283 @@ A Programming Paradigm for Spatiotemporal Composability
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 48 |
-| Open Issues | 0 |
-| 最後推送 | 2026-08-13 |
-| 建立日期 | 2026-08-13 |
-| Repo 大小 | 882 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cordiverse/paper) |
+| Forks | 40 |
+| Open Issues | 2 |
+| Issue 解決率 | 82% (9 closed) |
+| 最後推送 | 2026-08-14 |
+| 建立日期 | 2026-08-12 |
+| Repo 大小 | 55 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/dmmulroy/anti-slop) |
+| Topics | `agent-skills` `linting` `oxlint` `typescript` |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@oxlint/plugins` `@types/node` `oxlint` `tsx` `typescript`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "TypeScript" : 98
+>     "JavaScript" : 2
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@shigma](https://github.com/shigma) | 2 |
+> | [@dmmulroy](https://github.com/dmmulroy) | 12 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-13 ~ 2026-08-13）
-> **活躍天數** 1 天 · **最新 commit** upload paper
+> [!abstract] 最近 10 次 commit（2026-08-12 ~ 2026-08-14）
+> **活躍天數** 3 天 · **最新 commit** Ignore agent tooling when installing anti-slop
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#12](https://github.com/dmmulroy/anti-slop/issues/12) | anti-slop/no-shape-in-symbol-names flags zod's .shape | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # A Programming Paradigm for Spatiotemporal Composability
+> # anti-slop
 > 
-> **[Read the paper (PDF)](paper.pdf)** · Draft of August 13, 2026
+> [](https://skills.sh/dmmulroy/anti-slop)
 > 
-> > This is a preprint under active revision. The content may change substantially; please cite the latest version and check back before relying on specific results.
+> Opinionated Oxlint rules that reject low-evidence and low-signal TypeScript and JavaScript patterns.
 > 
-> Modern software---from plugin systems to self-evolving agent harnesses---increasingly requires _dynamic composition_, yet its formal foundations remain underdeveloped. We identify two orthogonal dimensions of the problem: _temporal composability_, the ability to completely revert a component's side effects upon removal, and _spatial composability_, the ability to declare and reactively manage inter-component dependencies.
-> We address the two dimensions by lifting classical effect and coeffect concepts to runtime mechanisms.
-> In particular, we formalize _revertible effects_, in which every context transformation carries an inverse that the runtime tracks.
-> We formalize _reactive coeffects_, in which each change of the context notifies a component against its coeffect specification.
-> We unify the effect context and the coeffect context into a single _context type_, which constitutes a programming paradigm.
-> After that, we combine these mechanisms into the notion of a _component_ and give a calculus of dynamic composition, whose metatheory carries spatiotemporal composability from a single component to a whole system of interleaved components.
-> We implement these ideas in _Cordis_, a meta-framework of spatiotemporal composability that provides a core library with effect tracking and coeffect resolution, as well as a declarative component loader with configuration reconciliation and hot module replacement.
+> This project is meant to be vendored, not treated as a fixed npm dependency. Copy the rules into your repository, read them, and change them to match your team's standards. The bundled agent skill handles the initial copy and configuration; after that, the vendored files are yours to maintain and make your own.
+> 
+> ## Install with an agent skill
+> 
+> ```bash
+> npx skills add dmmulroy/anti-slop --skill install-anti-slop
+> ```
+> 
+> Then ask your coding agent to install or configure anti-slop in the current repository. The skill copies the plugin, installs current Oxlint dependencies, merges the plugin into the existing lint configuration, enables every rule, and validates the result.
+> 
+> To inspect available skills first:
+> 
+> ```bash
+> npx skills add dmmulroy/anti-slop --list
+> ```
+> 
+> ## Manual local installation
+> 
+> Copy `src/` into the target repository, for example at `tools/oxlint/anti-slop/`, and install matching current versions of `oxlint` and `@oxlint/plugins`.
+> 
+> Register the copied entry point in `oxlint.config.ts`:
+> 
+> ```ts
+> import { defineConfig } from "oxlint";
+> 
+> export default defineConfig({
+>   ignorePatterns: [
+>     ".agent/**",
+>     ".agents/**",
+>     ".claude/**",
+>     ".codex/**",
+>     ".continue/**",
+>     ".cursor/**",
+>     ".gemini/**",
+>     ".opencode/**",
+>     ".pi/**",
+>     ".roo/**",
+>     ".windsurf/**",
+>     "tools/oxlint/anti-slop/**",
+>   ],
+>   jsPlugins: [
+>     { name: "anti-slop", specifier: "./tools/oxlint/anti-slop/index.ts" },
+>   ],
+>   rules: {
+>     "anti-slop/no-chained-type-assertions": "error",
+>     "anti-slop/no-conditional-empty-object-spread": "error",
+>     "anti-slop/no-known-value-widening": "error",
+>     "anti-slop/no-module-mocking": "error",
+>     "anti-slop/no-object-parameters": "error",
+>     "anti-slop/no-reflect-apply": "error",
+>     "anti-slop/no-reflect-get": "error",
+>     "anti-slop/no-runtime-typeof": "error",
+>     "anti-slop/no-shape-in-symbol-names": "error",
+>     "anti-slop/no-unknown-parameters": "error",
+>     "anti-slop/no-unknown-returns": "error",
+>     "anti-slop/no-unknown-type-aliases": "error",
+>     "anti-slop/no-unsafe-dictionary-type": "error",
+>     "anti-slop/no-widen-then-assert": "error",
+>     "anti-slop/require-safety-comment-for-type-assertion": "error"
+>   }
+> });
+> ```
+> 
+> The same `ignorePatterns`, `jsPlugins`, and rules work under `lint` in a Vite+ config. Merge the ignore patterns into Vite+'s `fmt.ignorePatterns` as well so `vp check` does not reformat installed agent assets or the vendored plugin. Preserve existing ignores and add any other project-local agent tooling directories detected in the repository; do not broadly ignore every dot-directory.
+> 
+> ## Rules
+> 
+> - `no-chained-type-assertions` — rejects nested type assertions that fabricate evidence.
+> - `no-conditional-empty-object-spread` — rejects conditional spreads that use `{}` to omit fields.
+> - `no-known-value-widening` — rejects explicit broad target types that discard known value evidence.
+> - `no-module-mocking` — rejects Vitest and Jest module mocks in favor of real dependency seams.
+> - `no-object-parameters` — rejects the broad `object` type on function inputs.
+> - `no-reflect-apply` — rejects `Reflect.apply` in favor of typed function calls.
+> - `no-reflect-get` — rejects `Reflect.get` in favor of typed property access or boundary parsing.
+> - `no-runtime-typeof` — requires boundary parsing instead of ad hoc `typeof` narrowing.
+> - `no-shape-in-symbol-names` — rejects `shape` in symbol names.
+> - `no-unknown-parameters` — rejects `unknown` inputs except the explicit `cause` convention.
+> - `no-unknown-returns` — rejects function contracts that return `unknown` or `Promise`.
+> - `no-unknown-type-aliases` — rejects aliases that merely conceal `unknown`.
+> - `no-unsafe-dictionary-type` — rejects dictionary value contracts based on `unknown`, `any`, `object`, `{}`, and semantic equivalents.
+> - `no-widen-then-assert` — rejects local flows that widen known values and later assert them back.
+> - `require-safety-comment-for-type-assertion` — requires each non-const assertion to document its checked invariant.
+> 
+> ## Violation examples
+> 
+> Each snippet below is rejected by the named rule.
+> 
+> ### `no-chained-type-assertions`
+> 
+> ```ts
+> const user = input as object as User;
+> ```
+> 
+> ### `no-conditional-empty-object-spread`
+> 
+> ```ts
+> const options = {
+>   ...(timeout !== undefined ? { timeout } : {}),
+> };
+> ```
+> 
+> ### `no-known-value-widening`
+> 
+> ```ts
+> const handlers: Record = {
+>   start: startHandler,
+> };
+> ```
+> 
+> This discards the known `start` key. Preserve inference or use `satisfies Record` instead.
+> 
+> ### `no-module-mocking`
+> 
+> ```ts
+> vi.mock("./user-store");
+> ```
+> 
+> ### `no-object-parameters`
+> 
+> ```ts
+> function save(value: object) {}
+> ```
+> 
+> ### `no-reflect-apply`
+> 
+> ```ts
+> const value = Reflect.apply(operation, owner, args);
+> ```
+> 
+> ### `no-reflect-get`
+> 
+> ```ts
+> const value = Reflect.get(owner, key);
+> ```
+> 
+> ### `no-runtime-typeof`
+> 
+> ```ts
+> if (typeof input === "string") {
+>   useName(input);
+> }
+> ```
+> 
+> Schema-free projects can permit `typeof` checks directly inside type predicate and
+> assertion functions while continuing to reject ad hoc checks elsewhere:
+> 
+> ```json
+> {
+>   "anti-slop/no-runtime-typeof": [
+>     "error",
+>     { "allowInTypeGuards": true }
+>   ]
+> }
+> ```
+> 
+> The option defaults to `false`.
+> 
+> ### `no-shape-in-symbol-names`
+> 
+> ```ts
+> interface UserShape {
+>   id: string;
+> }
+> ```
+> 
+> ### `no-unknown-parameters`
+> 
+> ```ts
+> function handle(input: unknown) {}
+> ```
+> 
+> ### `no-unknown-returns`
+> 
+> ```ts
+> function loadUser(): unknown {
+>   return input;
+> }
+> ```
+> 
+> ### `no-unknown-type-aliases`
+> 
+> ```ts
+> type ExternalValue = unknown;
+> ```
+> 
+> ### `no-unsafe-dictionary-type`
+> 
+> ```ts
+> type Metadata = Record;
+> type OtherMetadata = { [key: string]: object };
+> ```
+> 
+> ### `no-widen-then-assert`
+> 
+> ```ts
+> const loaded: User = loadUser();
+> const stored: unknown = loaded;
+> const user = stored as User;
+> ```
+> 
+> ### `require-safety-comment-for-type-assertion`
+> 
+> ```ts
+> const userId = value as UserId;
+> ```
+> 
+> Add a specific justification immediately before a necessary assertion:
+> 
+> ```ts
+> // SAFETY: parseUserId validated the identifier before branding it.
+> const userId = value as UserId;
+> ```
+> 
+> ## Development
+> 
+> ```bash
+> pnpm install
+> pnpm check
+> ```
+> 
+> `src/` is canonical. After changing production source, run `pnpm sync:skill-assets`; CI checks that the skill's bundled copy remains identical.
+> 
+> ## License
+> 
+> MIT
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/cordiverse/paper)
+[GitHub](https://github.com/dmmulroy/anti-slop)
 
 ## 相關收錄
 
@@ -189,7 +432,7 @@ A Programming Paradigm for Spatiotemporal Composability
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "cordiverse--paper"
+> WHERE category = "Other" AND file.name != "dmmulroy--anti-slop"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -198,7 +441,7 @@ A Programming Paradigm for Spatiotemporal Composability
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "cordiverse--paper" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "dmmulroy--anti-slop" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -207,18 +450,18 @@ A Programming Paradigm for Spatiotemporal Composability
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W33" AND file.name != "cordiverse--paper"
+> WHERE week = "2026-W34" AND file.name != "dmmulroy--anti-slop"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/cordiverse--paper");
+> const me = dv.page("Repos/dmmulroy--anti-slop");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "cordiverse--paper" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "dmmulroy--anti-slop" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -234,7 +477,7 @@ A Programming Paradigm for Spatiotemporal Composability
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "cordiverse" AND file.name != "cordiverse--paper"
+> WHERE owner = "dmmulroy" AND file.name != "dmmulroy--anti-slop"
 > SORT stars DESC
 > ```
 
@@ -242,7 +485,7 @@ A Programming Paradigm for Spatiotemporal Composability
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/cordiverse--paper");
+> const me = dv.page("Repos/dmmulroy--anti-slop");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -259,7 +502,7 @@ A Programming Paradigm for Spatiotemporal Composability
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/cordiverse--paper");
+> const me = dv.page("Repos/dmmulroy--anti-slop");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -292,7 +535,7 @@ A Programming Paradigm for Spatiotemporal Composability
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/cordiverse--paper");
+> const me = dv.page("Repos/dmmulroy--anti-slop");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -316,7 +559,7 @@ A Programming Paradigm for Spatiotemporal Composability
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/cordiverse--paper");
+> const me = dv.page("Repos/dmmulroy--anti-slop");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -353,7 +596,7 @@ A Programming Paradigm for Spatiotemporal Composability
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/cordiverse--paper");
+> const me = dv.page("Repos/dmmulroy--anti-slop");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -436,7 +679,7 @@ A Programming Paradigm for Spatiotemporal Composability
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-15** — 首次收錄
+> **2026-08-18** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -452,6 +695,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-18|2026-08-18]] — 再次上榜，2.1k stars
-- [[2026-08-17|2026-08-17]] — 再次上榜，1.9k stars
-- [[2026-08-15|2026-08-15]] — 首次收錄，1.3k stars
+- [[2026-08-18|2026-08-18]] — 首次收錄，2.4k stars
