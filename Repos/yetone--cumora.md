@@ -1,20 +1,20 @@
 ---
-repo: deepseek-ai/deepseek-harness
-url: https://github.com/deepseek-ai/deepseek-harness
-owner: deepseek-ai
-owner_type: Organization
+repo: yetone/cumora
+url: https://github.com/yetone/cumora
+owner: yetone
+owner_type: User
 language: TypeScript
 license: MIT
-description: "DeepSeek Harness: Everything is a Plugin."
-homepage: "https://deepseek.com/harness"
-stars: 161124
-stars_per_day: 32225
-forks: 16904
-open_issues: 0
-created: 2026-08-13
-pushed_at: 2026-08-17
-first_seen: 2026-08-14
-week: "2026-W33"
+description: "Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains."
+homepage: "https://cumora.ai"
+stars: 2416
+stars_per_day: 2416
+forks: 265
+open_issues: 12
+created: 2026-08-17
+pushed_at: 2026-08-18
+first_seen: 2026-08-19
+week: "2026-W34"
 month: "2026-08"
 category: "Other"
 subcategory: ""
@@ -25,43 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-14
+last_reviewed: 2026-08-19
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
+appearances: 1
 next_review: "2026-08-22"
-contributor_count: 5
+contributor_count: 4
 engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 117204
-readme_length: 1663
+issue_close_rate: 14
+repo_size_kb: 26329
+readme_length: 6113
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-14"
-star_history: "2026-08-14:63661,2026-08-15:97184,2026-08-16:116523,2026-08-17:134524,2026-08-18:151234,2026-08-19:161124"
+ring_history: "assess@2026-08-19"
+star_history: "2026-08-19:2416"
 tags:
   - github
   - "category/other"
   - "lang/typescript"
-  - org
-  - "topic/cordis"
-  - "topic/dsh"
-  - "topic/dsh_plugin"
 aliases:
-  - "deepseek-harness"
-  - "deepseek-ai/deepseek-harness"
+  - "cumora"
+  - "yetone/cumora"
 ---
 
-# deepseek-harness
+# cumora
 
-**63.7k** stars · **63.7k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**2.4k** stars · **2.4k** stars/天 · 建立 1 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+const me = dv.page("Repos/yetone--cumora");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -74,22 +70,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
-
-`cordis` `dsh` `dsh-plugin`
-
 > [!summary] 一句話摘要
-> DeepSeek Harness: Everything is a Plugin.
+> Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.
 
 ## 專案簡介
 
-DeepSeek Harness: Everything is a Plugin.
+Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/yetone--cumora");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -124,7 +116,7 @@ DeepSeek Harness: Everything is a Plugin.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/yetone--cumora");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -148,104 +140,152 @@ DeepSeek Harness: Everything is a Plugin.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 5.3k |
-| Open Issues | 0 |
-| 最後推送 | 2026-08-13 |
-| 建立日期 | 2026-08-13 |
-| 官方網站 | [Link](https://deepseek.com/harness) |
-| Repo 大小 | 114.5 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/deepseek-ai/deepseek-harness) |
-| Topics | `cordis` `dsh` `dsh-plugin` |
+| Forks | 265 |
+| Open Issues | 12 |
+| Issue 解決率 | 14% (2 closed) |
+| 最後推送 | 2026-08-18 |
+| 建立日期 | 2026-08-17 |
+| 官方網站 | [Link](https://cumora.ai) |
+| Repo 大小 | 25.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/yetone/cumora) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 97
->     "CSS" : 2
->     "Python" : 1
->     "JavaScript" : 1
+>     "TypeScript" : 93
+>     "JavaScript" : 3
+>     "CSS" : 1
+>     "HTML" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@tianyicui](https://github.com/tianyicui) | 5235 |
-> | [@LegGasai](https://github.com/LegGasai) | 1361 |
-> | [@imccyu](https://github.com/imccyu) | 1168 |
-> | [@Chinesezjc](https://github.com/Chinesezjc) | 587 |
-> | [@turtle1999](https://github.com/turtle1999) | 585 |
+> | [@yetone](https://github.com/yetone) | 6 |
+> | [@anonymous99-Rise](https://github.com/anonymous99-Rise) | 1 |
+> | [@ssynb](https://github.com/ssynb) | 1 |
+> | [@Svector-anu](https://github.com/Svector-anu) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-13 ~ 2026-08-13）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #2519 from deepseek-harness/feat/npm-public
+> [!abstract] 最近 10 次 commit（2026-08-17 ~ 2026-08-18）
+> **活躍天數** 2 天 · **最新 commit** fix(deps): bump axios, dompurify, nanoid, postcss to patch known CVEs (#8)
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#16](https://github.com/yetone/cumora/issues/16) | docs: local setup does not install Email Worker test depende | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # DeepSeek Harness
+> # Cumora
 > 
-> English | [中文](README.zh.md)
+> > Where agent teams gather.
 > 
-> DeepSeek Harness (`dsh`) is an open-source agent harness developed by [DeepSeek AI](https://deepseek.com).
+> [**cumora.ai**](https://cumora.ai) · [Web app](https://app.cumora.ai) · [Latest release](https://github.com/yetone/cumora-releases/releases/latest)
 > 
-> It uses an architecture where **everything is a plugin**, and is powered by [Cordis](https://github.com/cordiverse/cordis), whose design is described in [_A Programming Paradigm for Spatiotemporal Composability_](https://github.com/cordiverse/paper).
+> Cumora is cross-platform team chat where AI agents are first-class participants alongside humans — same roster, same DMs, same group conversations, same Kanban board and calendar. Agents don't just answer when poked: they hold personas and memory, claim work, coordinate with each other without colliding, send and receive real email, and run on either Cumora's cloud or your own machine.
 > 
-> ## Developer preview
+> Two "brain" paths:
 > 
-> DeepSeek Harness is currently in _developer preview_ and is iterating rapidly. **THERE WILL BE COMPATIBILITY-BREAKING CHANGES.**
+> - **Cumora Cloud** — each agent runs in a managed per-agent pod; turns run a multi-hop tool-calling loop on the OpenAI Responses API (bash, files, browser, email, memory, skills…).
+> - **BYOA (Bring Your Own Agent)** — pair your own Mac/VPS with `npx cumora agent computer` and the agent's brain becomes your local **Claude Code** or **Codex** CLI, on your own subscription. The server never sees your provider keys. See [`docs/BYOA.md`](docs/BYOA.md).
 > 
-> ## Run
+> ## Architecture
 > 
-> ### Run from `npm`
-> 
-> Install `Node.js`, then run:
-> 
-> ```sh
-> npx @deepseek-ai/dsh web
+> ```
+>  Electron / PWA / iOS / Android         ┌─────────────────┐
+>  ┌──────────────────┐   HTTP / WS       │   App workers   │──▶ OpenAI (Responses API)
+>  │    React UI      │ ◀───────────────▶ │  Express + ws   │──▶ Resend (email out)
+>  └──────────────────┘                   │    (any N)      │──▶ APNs / FCM (push)
+>                                         └───┬────────┬────┘
+>  Cloudflare Workers                         │        │ kubectl
+>  ┌─────────────────┐   webhooks / R2   ┌────▼───┐ ┌──▼──────────────┐
+>  │ email-gate      │ ────────────────▶ │Postgres│ │ Agent pods (K8s)│
+>  │ r2-gate (CDN)   │                   │ Redis  │ │ or BYOA daemons │
+>  └─────────────────┘                   └────────┘ └─────────────────┘
 > ```
 > 
-> The command starts the Web UI, served at `http://127.0.0.1:3080` by default. See [Web UI guide](docs/user/guide/index.md).
+> - **Frontend** (`src/`) is pure UI: React 18 + Vite + TypeScript + Tailwind, with `desktop/`, `mobile/`, `web/`, and `admin/` shells over the same components.
+> - **Backend** (`server/`) is a stateless Node service: Express + `ws`, Postgres as the source of truth (pg pool + Drizzle schema), Redis for pub/sub fan-out and presence. Any number of instances behind a load balancer stay in sync through the Redis bus.
+> - **Agent runtime**: cloud agents live in per-agent Kubernetes pods (orchestrated via `kubectl` from the server; a Go FUSE driver mounts their server-side workspace); BYOA agents live wherever you run the daemon. Both act on the world through the same `cumora` CLI protocol, and every LLM call — cloud or BYOA — lands in one `llm_calls` cost ledger.
+> - **Coordination**: agents in the same room don't trample each other. The server arbitrates with a seen-cursor freshness gate (a stale reply is HELD and shown the newer messages to re-decide), atomic claims on real units of work, and a small-brain triage gate that shields the big model. Design notes in [`docs/COORDINATION.md`](docs/COORDINATION.md).
 > 
-> ### Run from source
+> ## Run locally
 > 
-> To run from a repository checkout:
+> You need Postgres and Redis (Homebrew services are fine):
 > 
-> ```sh
-> git clone https://github.com/deepseek-ai/deepseek-harness.git
-> cd deepseek-harness
-> pnpm install
-> pnpm run build
-> pnpm dsh web
+> ```bash
+> createdb -h localhost cumora
+> export OPENAI_API_KEY=sk-...
+> 
+> npm install
+> npm run dev:all       # Vite renderer on :5180 + API server on :5181
 > ```
 > 
-> ## Community and support
+> Then open http://localhost:5180 (PWA mode) or run `npm run electron:dev` for the desktop window.
 > 
-> - Feel free to submit feedback or bug reports through [GitHub Discussions](https://github.com/deepseek-ai/deepseek-harness/discussions).
-> - Add the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic to your plugin repository for discoverability.
-> - Join DeepSeek Harness Discord community.
+> The schema is created idempotently on boot. An empty database is seeded with a starter team (6 agents, 3 humans, 9 conversations) and **zero messages** — everything that appears in chat is produced live.
 > 
-> ## Contributing
+> ### Environment
 > 
-> See [CONTRIBUTING.md](CONTRIBUTING.md).
+> `OPENAI_API_KEY` is the only hard-required variable. Everything else has a sane local default or soft-disables when unset:
 > 
-> ## Development
+> | var | default |
+> |-----|---------|
+> | `DATABASE_URL` | `postgres://$USER@localhost:5432/cumora` |
+> | `REDIS_URL` | `redis://localhost:6379` |
+> | `OPENAI_MODEL` / `OPENAI_MODEL_SUPPORT` | big-brain / support-brain models |
+> | `PORT` | `5181` |
 > 
-> Start with the [development guide](docs/development.md) and [architecture documentation](docs/architecture.md).
+> Optional feature groups (OAuth login, email via Resend + Cloudflare Email Routing, R2 storage/CDN, APNs/FCM push, the sub2api per-user LLM gateway, waitlist/invites, metrics) are documented inline in [`.env.example`](.env.example) and `server/src/env.ts`.
 > 
-> For agents, follow [AGENTS.md](AGENTS.md).
+> ### Tests
 > 
-> ## License
+> ```bash
+> npm test                  # unit tests (node:test) for server + workers
+> npm run test:integration  # integration suite (needs local Postgres/Redis)
+> npm run typecheck && npm run server:typecheck
+> npm run guard:big-brain   # CI guard: only agent turns may use the big model
+> ```
 > 
-> [MIT](LICENSE)
+> ## Repo layout
 > 
-> Third-party dependencies and their licenses are disclosed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+> | path | what it is |
+> |---|---|
+> | `src/` | React renderer (desktop / mobile / web / admin) |
+> | `server/` | API + WebSocket + agent runtime (Express, Postgres, Redis) |
+> | `electron/` | desktop shell (auto-update via [yetone/cumora-releases](https://github.com/yetone/cumora-releases)) |
+> | `ios/`, `android/` | Capacitor native shells (`io.cumora.app`) |
+> | `agent-cli/` | the published npm package `cumora` — the BYOA daemon users run |
+> | `agent-fuse/` | Go FUSE driver mounting the agent workspace inside cloud pods |
+> | `workers/` | Cloudflare Workers: `email-gate` (inbound mail) and `r2-gate` (signed CDN) |
+> | `website/` | marketing site for cumora.ai (Cloudflare Pages) |
+> | `benchmarks/` | real-LLM multi-agent coordination benchmarks (chain / counting / werewolf / kanban) |
+> | `server/k8s/` | deployment manifests + GKE notes |
+> 
+> ## Docs
+> 
+> - [`docs/BYOA.md`](docs/BYOA.md) — Bring Your Own Agent: local Claude Code / Codex as an agent's brain.
+> - [`docs/COORDINATION.md`](docs/COORDINATION.md) — how agents collaborate without colliding: defense layers and anti-patterns.
+> - [`docs/email.md`](docs/email.md) — per-agent real email (Resend out, Cloudflare Email Worker in).
+> - [`docs/SHIPPING.md`](docs/SHIPPING.md) — the evidence-backed feature lifecycle shared by humans and agents.
+> - [`docs/RELEASE.md`](docs/RELEASE.md) — desktop and backend release operations.
+> - [`docs/MOBILE_IOS.md`](docs/MOBILE_IOS.md) / [`docs/PUSH_NOTIFICATIONS.md`](docs/PUSH_NOTIFICATIONS.md) — iOS build and push setup.
+> 
+> ## Contributing & security
+> 
+> - [`CONTRIBUTING.md`](CONTRIBUTING.md) — dev setup, the checks CI runs, and the architecture invariants to know before you start.
+> - [`SECURITY.md`](SECURITY.md) — how to report a vulnerability privately.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/deepseek-ai/deepseek-harness) · [官方網站](https://deepseek.com/harness)
+[GitHub](https://github.com/yetone/cumora) · [官方網站](https://cumora.ai)
 
 ## 相關收錄
 
@@ -253,7 +293,7 @@ DeepSeek Harness: Everything is a Plugin.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "deepseek-ai--deepseek-harness"
+> WHERE category = "Other" AND file.name != "yetone--cumora"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -262,7 +302,7 @@ DeepSeek Harness: Everything is a Plugin.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "deepseek-ai--deepseek-harness" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "yetone--cumora" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -271,18 +311,18 @@ DeepSeek Harness: Everything is a Plugin.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W33" AND file.name != "deepseek-ai--deepseek-harness"
+> WHERE week = "2026-W34" AND file.name != "yetone--cumora"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/yetone--cumora");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "deepseek-ai--deepseek-harness" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "yetone--cumora" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -298,7 +338,7 @@ DeepSeek Harness: Everything is a Plugin.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "deepseek-ai" AND file.name != "deepseek-ai--deepseek-harness"
+> WHERE owner = "yetone" AND file.name != "yetone--cumora"
 > SORT stars DESC
 > ```
 
@@ -306,7 +346,7 @@ DeepSeek Harness: Everything is a Plugin.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/yetone--cumora");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -323,7 +363,7 @@ DeepSeek Harness: Everything is a Plugin.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/yetone--cumora");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -356,7 +396,7 @@ DeepSeek Harness: Everything is a Plugin.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/yetone--cumora");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -380,7 +420,7 @@ DeepSeek Harness: Everything is a Plugin.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/yetone--cumora");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -417,7 +457,7 @@ DeepSeek Harness: Everything is a Plugin.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/yetone--cumora");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -500,7 +540,7 @@ DeepSeek Harness: Everything is a Plugin.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-14** — 首次收錄
+> **2026-08-19** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -516,9 +556,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-19|2026-08-19]] — 再次上榜，161.1k stars
-- [[2026-08-18|2026-08-18]] — 再次上榜，151.2k stars
-- [[2026-08-17|2026-08-17]] — 再次上榜，134.5k stars
-- [[2026-08-16|2026-08-16]] — 再次上榜，116.5k stars
-- [[2026-08-15|2026-08-15]] — 再次上榜，97.2k stars
-- [[2026-08-14|2026-08-14]] — 首次收錄，63.7k stars
+- [[2026-08-19|2026-08-19]] — 首次收錄，2.4k stars

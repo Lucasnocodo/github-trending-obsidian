@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Opinionated Oxlint rules for rejecting low-evidence TypeScript and JavaScript patterns"
 homepage: ""
-stars: 2390
-stars_per_day: 478
-forks: 40
+stars: 2645
+stars_per_day: 441
+forks: 47
 open_issues: 2
 created: 2026-08-12
-pushed_at: 2026-08-14
+pushed_at: 2026-08-18
 first_seen: 2026-08-18
 week: "2026-W34"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-21"
+appearances: 2
+next_review: "2026-08-22"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 82
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-18"
-star_history: "2026-08-18:2390"
+star_history: "2026-08-18:2390,2026-08-19:2645"
 tags:
   - github
   - "category/other"
@@ -695,4 +695,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-19|2026-08-19]] — 再次上榜，2.6k stars
 - [[2026-08-18|2026-08-18]] — 首次收錄，2.4k stars
