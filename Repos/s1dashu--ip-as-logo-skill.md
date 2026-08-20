@@ -1,20 +1,20 @@
 ---
-repo: deepseek-ai/deepseek-harness
-url: https://github.com/deepseek-ai/deepseek-harness
-owner: deepseek-ai
-owner_type: Organization
-language: TypeScript
+repo: s1dashu/ip-as-logo-skill
+url: https://github.com/s1dashu/ip-as-logo-skill
+owner: s1dashu
+owner_type: User
+language: N/A
 license: MIT
-description: "DeepSeek Harness: Everything is a Plugin."
-homepage: "https://deepseek.com/harness"
-stars: 168005
-stars_per_day: 28001
-forks: 17968
-open_issues: 0
-created: 2026-08-13
-pushed_at: 2026-08-19
-first_seen: 2026-08-14
-week: "2026-W33"
+description: "A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos."
+homepage: "https://ipaslogo.com"
+stars: 2150
+stars_per_day: 2150
+forks: 99
+open_issues: 3
+created: 2026-08-18
+pushed_at: 2026-08-20
+first_seen: 2026-08-20
+week: "2026-W34"
 month: "2026-08"
 category: "Other"
 subcategory: ""
@@ -25,43 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-14
+last_reviewed: 2026-08-20
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 7
+appearances: 1
 next_review: "2026-08-23"
-contributor_count: 5
-engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 117204
-readme_length: 1663
+contributor_count: 1
+engagement: "low"
+issue_close_rate: 0
+repo_size_kb: 29773
+readme_length: 6276
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-14"
-star_history: "2026-08-14:63661,2026-08-15:97184,2026-08-16:116523,2026-08-17:134524,2026-08-18:151234,2026-08-19:161124,2026-08-20:168005"
+ring_history: "assess@2026-08-20"
+star_history: "2026-08-20:2150"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
-  - org
-  - "topic/cordis"
-  - "topic/dsh"
-  - "topic/dsh_plugin"
+  - "lang/other"
+  - "topic/codex"
+  - "topic/codex_skill"
+  - "topic/image_generation"
+  - "topic/logo_design"
+  - "topic/mascot_design"
 aliases:
-  - "deepseek-harness"
-  - "deepseek-ai/deepseek-harness"
+  - "ip-as-logo-skill"
+  - "s1dashu/ip-as-logo-skill"
 ---
 
-# deepseek-harness
+# ip-as-logo-skill
 
-**63.7k** stars · **63.7k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**2.1k** stars · **2.1k** stars/天 · 建立 1 天前 · N/A · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -74,22 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`個人專案`
 
-`cordis` `dsh` `dsh-plugin`
+`codex` `codex-skill` `image-generation` `logo-design` `mascot-design`
 
 > [!summary] 一句話摘要
-> DeepSeek Harness: Everything is a Plugin.
+> A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
 
 ## 專案簡介
 
-DeepSeek Harness: Everything is a Plugin.
+A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -124,7 +125,7 @@ DeepSeek Harness: Everything is a Plugin.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -148,104 +149,125 @@ DeepSeek Harness: Everything is a Plugin.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 5.3k |
-| Open Issues | 0 |
-| 最後推送 | 2026-08-13 |
-| 建立日期 | 2026-08-13 |
-| 官方網站 | [Link](https://deepseek.com/harness) |
-| Repo 大小 | 114.5 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/deepseek-ai/deepseek-harness) |
-| Topics | `cordis` `dsh` `dsh-plugin` |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "TypeScript" : 97
->     "CSS" : 2
->     "Python" : 1
->     "JavaScript" : 1
-> ```
+| Forks | 99 |
+| Open Issues | 3 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-08-20 |
+| 建立日期 | 2026-08-18 |
+| 官方網站 | [Link](https://ipaslogo.com) |
+| Repo 大小 | 29.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/s1dashu/ip-as-logo-skill) |
+| Topics | `codex` `codex-skill` `image-generation` `logo-design` `mascot-design` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@tianyicui](https://github.com/tianyicui) | 5235 |
-> | [@LegGasai](https://github.com/LegGasai) | 1361 |
-> | [@imccyu](https://github.com/imccyu) | 1168 |
-> | [@Chinesezjc](https://github.com/Chinesezjc) | 587 |
-> | [@turtle1999](https://github.com/turtle1999) | 585 |
+> | [@s1dashu](https://github.com/s1dashu) | 24 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-13 ~ 2026-08-13）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #2519 from deepseek-harness/feat/npm-public
+> [!abstract] 最近 10 次 commit（2026-08-19 ~ 2026-08-20）
+> **活躍天數** 2 天 · **最新 commit** docs: update README and public site URL
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#3](https://github.com/s1dashu/ip-as-logo-skill/issues/3) | This skill is very popular with Koreans. | 0 | 1 |
+> | [#2](https://github.com/s1dashu/ip-as-logo-skill/issues/2) | 合作申请！！ | 0 | 2 |
+> | [#1](https://github.com/s1dashu/ip-as-logo-skill/issues/1) | made an avatar generator based on this skill | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # DeepSeek Harness
+> # IP as Logo
 > 
-> English | [中文](README.zh.md)
+> `ip-as-logo` is a compact Agent Skill for generating highly simplified company-ready mascot logos. It treats the result as a logo first and a character second: familiar cute animals by default, bold rounded silhouettes, strict complexity limits, oversized corner composition, and broad flat color masses.
 > 
-> DeepSeek Harness (`dsh`) is an open-source agent harness developed by [DeepSeek AI](https://deepseek.com).
+> You can also browse the free [IP as Logo Skill website](https://ipaslogo.com), a searchable library backed by Cloudflare R2 and Supabase.
 > 
-> It uses an architecture where **everything is a plugin**, and is powered by [Cordis](https://github.com/cordiverse/cordis), whose design is described in [_A Programming Paradigm for Spatiotemporal Composability_](https://github.com/cordiverse/paper).
+> **Don't have Codex, Doubao, Coze, or Workbuddy?** [Visit our website](https://ipaslogo.com) to download ready-made logos for free. Every logo is free for commercial use.
 > 
-> ## Developer preview
+> ## What it enforces
 > 
-> DeepSeek Harness is currently in _developer preview_ and is iterating rapidly. **THERE WILL BE COMPATIBILITY-BREAKING CHANGES.**
+> - One dominant silhouette built from roughly 6–10 basic shapes
+> - Three semantic colors by default: two IP base colors plus one background color
+> - Three proposed directions followed by six independently generated candidates after user approval
+> - Familiar, broadly appealing animals as the default open-ended subject; objects, machines, fantasy artifacts, and obscure creatures require a clear product reason
+> - A quantified restrained-color default: softened chromatic backgrounds, warm neutrals, and explicit silhouette/detail contrast targets
+> - Thick, rounded forms without sharp or fragile details
+> - An 82–90% close crop that visibly peeks or rises from the lower-left or lower-right, with paired identifying features preserved
+> - Flat-first artwork with broad, uniform filled color masses and no internal shading or gradients
+> - One specifically named canvas color that fills the square edge-to-edge and remains visible in all four corners
+> - One-pass unfiltered candidate batches with no visual review, rejection, repair, or style-compliance retry
 > 
-> ## Run
+> ## Install
 > 
-> ### Run from `npm`
+> Install the complete skill with the Agent Skills CLI:
 > 
-> Install `Node.js`, then run:
-> 
-> ```sh
-> npx @deepseek-ai/dsh web
+> ```bash
+> npx skills@latest add s1dashu/ip-as-logo-skill
 > ```
 > 
-> The command starts the Web UI, served at `http://127.0.0.1:3080` by default. See [Web UI guide](docs/user/guide/index.md).
+> The installer detects the repository's root `SKILL.md`, lets you choose a supported coding agent, and installs the complete `ip-as-logo` directory, including its supporting assets. Use `--global` for a personal installation available across projects:
 > 
-> ### Run from source
-> 
-> To run from a repository checkout:
-> 
-> ```sh
-> git clone https://github.com/deepseek-ai/deepseek-harness.git
-> cd deepseek-harness
-> pnpm install
-> pnpm run build
-> pnpm dsh web
+> ```bash
+> npx skills@latest add s1dashu/ip-as-logo-skill --global
 > ```
 > 
-> ## Community and support
+> ## Agent compatibility
 > 
-> - Feel free to submit feedback or bug reports through [GitHub Discussions](https://github.com/deepseek-ai/deepseek-harness/discussions).
-> - Add the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic to your plugin repository for discoverability.
-> - Join DeepSeek Harness Discord community.
+> It follows the open Agent Skills format and is designed to work with any compatible AI agent, rather than being tied to a specific agent product.
 > 
-> ## Contributing
+> Supported agents include **Codex, Coze, Doubao, YouMind, Manus, Gemini Apps, and Replit Agent**. This skill only supports agents with built-in image-generation capabilities that can return generated images as assets.
 > 
-> See [CONTRIBUTING.md](CONTRIBUTING.md).
+> ## Use
 > 
-> ## Development
+> Ask your AI agent for an IP mascot logo, for example:
 > 
-> Start with the [development guide](docs/development.md) and [architecture documentation](docs/architecture.md).
+> ```text
+> Create a rounded ghost IP logo on a deep navy background.
+> ```
 > 
-> For agents, follow [AGENTS.md](AGENTS.md).
+> The skill does not ask for a color-mode choice by default. Every default candidate uses three semantic colors: two IP base colors plus one specifically named canvas color. It no longer reserves any fraction of the candidate set for two-color logos. A two-color logo is generated only when the user explicitly requests it, and then uses canvas-colored negative space for facial marks rather than introducing a third color.
+> 
+> When the user already names an IP subject, the skill proposes three controlled design treatments of that subject. When the subject is open, it proposes familiar animal mascots first and ties each to a product attribute or brand promise. In open-ended batches, 95–100% of candidates should be familiar animals; non-animal subjects are limited to a small minority with a direct product connection, never used merely to manufacture novelty.
+> 
+> Large batches create variety within commercially plausible animal mascots through species or breed, ear and muzzle proportions, expression, lower-left versus lower-right emergence, crop, silhouette, and secondary color organization. Clocks, locks, industrial tools, measuring instruments, vehicles, abstract machines, fantasy artifacts, and obscure creatures are not default company mascots.
+> 
+> If the skill runs inside a product repository, it inspects relevant read-only context before asking questions. If product context is insufficient, it asks one consolidated round of background questions. Once context is sufficient, it always presents three concise directions and proposes generating six independent images. It proceeds after the user agrees, or immediately when the user has already explicitly authorized six outputs.
+> 
+> When the user accepts all three directions, the default batch contains two variants per direction: `A1`, `A2`, `B1`, `B2`, `C1`, and `C2`. When the user selects one direction, the skill generates six controlled variants of that direction. If the user rejects the proposed quantity or distribution, their replacement instructions take precedence.
+> 
+> Compatible agents may generate the six candidates in parallel with subagents up to the runtime's available concurrency, using additional waves when needed. Codex can use ImageGen when available; other agent environments may use any configured image generator. If no generator is available, the skill asks the user to provide or enable one instead of pretending that an image was generated. Every result is a separate full-resolution square asset, never a six-logo contact sheet.
+> 
+> When the user does not supply a palette, the skill chooses and explicitly names a clearly chromatic but restrained canvas color rather than neon color or muddy gray. It keeps the normal design to exactly three semantic colors: two IP base colors plus the named canvas color. Prompts describe that color as filling the full square and do not use image-mode terminology.
+> 
+> ## Repository structure
+> 
+> ```text
+> SKILL.md
+> assets/ip-as-logo-wall.webp
+> README.md
+> LICENSE
+> ```
+> 
+> The skill itself intentionally consists of a single instruction document. The repository also includes the showcase image above, but no scripts, style references, or generation dependencies.
+> 
+> ## Model behavior
+> 
+> Image-generation models may still introduce unwanted shading, crop paired features, or add too much volume. The skill treats each batch as a one-pass draw: every returned image is preserved and presented without visual compliance review, scoring, filtering, repair, or retry. A call that returns no usable image asset is reported as a technical failure rather than fabricated or silently replaced.
 > 
 > ## License
 > 
-> [MIT](LICENSE)
-> 
-> Third-party dependencies and their licenses are disclosed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+> MIT
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/deepseek-ai/deepseek-harness) · [官方網站](https://deepseek.com/harness)
+[GitHub](https://github.com/s1dashu/ip-as-logo-skill) · [官方網站](https://ipaslogo.com)
 
 ## 相關收錄
 
@@ -253,7 +275,7 @@ DeepSeek Harness: Everything is a Plugin.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "deepseek-ai--deepseek-harness"
+> WHERE category = "Other" AND file.name != "s1dashu--ip-as-logo-skill"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -262,7 +284,7 @@ DeepSeek Harness: Everything is a Plugin.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "deepseek-ai--deepseek-harness" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "s1dashu--ip-as-logo-skill" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -271,18 +293,18 @@ DeepSeek Harness: Everything is a Plugin.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W33" AND file.name != "deepseek-ai--deepseek-harness"
+> WHERE week = "2026-W34" AND file.name != "s1dashu--ip-as-logo-skill"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "deepseek-ai--deepseek-harness" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "s1dashu--ip-as-logo-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -298,7 +320,7 @@ DeepSeek Harness: Everything is a Plugin.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "deepseek-ai" AND file.name != "deepseek-ai--deepseek-harness"
+> WHERE owner = "s1dashu" AND file.name != "s1dashu--ip-as-logo-skill"
 > SORT stars DESC
 > ```
 
@@ -306,7 +328,7 @@ DeepSeek Harness: Everything is a Plugin.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -323,7 +345,7 @@ DeepSeek Harness: Everything is a Plugin.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -356,7 +378,7 @@ DeepSeek Harness: Everything is a Plugin.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -380,7 +402,7 @@ DeepSeek Harness: Everything is a Plugin.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -417,7 +439,7 @@ DeepSeek Harness: Everything is a Plugin.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/deepseek-ai--deepseek-harness");
+> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -500,7 +522,7 @@ DeepSeek Harness: Everything is a Plugin.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-14** — 首次收錄
+> **2026-08-20** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -516,10 +538,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-20|2026-08-20]] — 再次上榜，168.0k stars
-- [[2026-08-19|2026-08-19]] — 再次上榜，161.1k stars
-- [[2026-08-18|2026-08-18]] — 再次上榜，151.2k stars
-- [[2026-08-17|2026-08-17]] — 再次上榜，134.5k stars
-- [[2026-08-16|2026-08-16]] — 再次上榜，116.5k stars
-- [[2026-08-15|2026-08-15]] — 再次上榜，97.2k stars
-- [[2026-08-14|2026-08-14]] — 首次收錄，63.7k stars
+- [[2026-08-20|2026-08-20]] — 首次收錄，2.1k stars

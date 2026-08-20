@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "DSH 官方公众号收录的 TUI 补位插件：Claude Code 风，鲸鱼顶栏/实时状态/流式思考/双击 Esc 回滚/上下文进度+TPS。npm 一键装。  DSH official WeChat featured TUI plugin — Claude Code style: whale bar, live status, streaming thoughts, double-Esc rollback, context bar + TPS. npm one-click."
 homepage: "https://dshtui.com/"
-stars: 1984
-stars_per_day: 397
-forks: 88
-open_issues: 72
+stars: 2087
+stars_per_day: 348
+forks: 92
+open_issues: 64
 created: 2026-08-13
-pushed_at: 2026-08-19
+pushed_at: 2026-08-20
 first_seen: 2026-08-18
 week: "2026-W34"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-22"
+appearances: 3
+next_review: "2026-08-23"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 62
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-18"
-star_history: "2026-08-18:1827,2026-08-19:1984"
+star_history: "2026-08-18:1827,2026-08-19:1984,2026-08-20:2087"
 tags:
   - github
   - "category/other"
@@ -738,5 +738,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-20|2026-08-20]] — 再次上榜，2.1k stars
 - [[2026-08-19|2026-08-19]] — 再次上榜，2.0k stars
 - [[2026-08-18|2026-08-18]] — 首次收錄，1.8k stars

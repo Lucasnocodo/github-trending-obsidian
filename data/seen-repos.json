@@ -3550,17 +3550,17 @@
   },
   "deepseek-ai/deepseek-harness": {
     "first_seen": "2026-08-14",
-    "last_seen": "2026-08-19",
-    "times_seen": 6,
+    "last_seen": "2026-08-20",
+    "times_seen": 7,
     "stars_first": 63661,
-    "stars_last": 161124
+    "stars_last": 168005
   },
   "xoreaxeaxeax/skitter-creek-bath-salts": {
     "first_seen": "2026-08-14",
-    "last_seen": "2026-08-17",
-    "times_seen": 4,
+    "last_seen": "2026-08-20",
+    "times_seen": 5,
     "stars_first": 1073,
-    "stars_last": 1732
+    "stars_last": 1853
   },
   "Leutenegger/book-to-skill": {
     "first_seen": "2026-08-14",
@@ -3578,10 +3578,10 @@
   },
   "anywhere-labs/deepseek-harness-desktop": {
     "first_seen": "2026-08-15",
-    "last_seen": "2026-08-19",
-    "times_seen": 5,
+    "last_seen": "2026-08-20",
+    "times_seen": 6,
     "stars_first": 2146,
-    "stars_last": 13772
+    "stars_last": 15319
   },
   "zhu1090093659/dsh-web-ui": {
     "first_seen": "2026-08-15",
@@ -3592,31 +3592,31 @@
   },
   "cordiverse/paper": {
     "first_seen": "2026-08-15",
-    "last_seen": "2026-08-19",
-    "times_seen": 4,
+    "last_seen": "2026-08-20",
+    "times_seen": 5,
     "stars_first": 1331,
-    "stars_last": 2306
+    "stars_last": 2405
   },
   "awesome-dsh-plugin/awesome-dsh-plugin": {
     "first_seen": "2026-08-15",
-    "last_seen": "2026-08-19",
-    "times_seen": 5,
+    "last_seen": "2026-08-20",
+    "times_seen": 6,
     "stars_first": 1215,
-    "stars_last": 9022
+    "stars_last": 10099
   },
   "xiaobright/dsh-anchored-standard": {
     "first_seen": "2026-08-16",
-    "last_seen": "2026-08-19",
-    "times_seen": 4,
+    "last_seen": "2026-08-20",
+    "times_seen": 5,
     "stars_first": 2247,
-    "stars_last": 3570
+    "stars_last": 3640
   },
   "yjh051108/dsh-routing-suite": {
     "first_seen": "2026-08-16",
-    "last_seen": "2026-08-19",
-    "times_seen": 4,
+    "last_seen": "2026-08-20",
+    "times_seen": 5,
     "stars_first": 1798,
-    "stars_last": 6066
+    "stars_last": 6317
   },
   "dmmulroy/anti-slop": {
     "first_seen": "2026-08-18",
@@ -3627,16 +3627,23 @@
   },
   "ccch1mneyyy/dsh-TUI": {
     "first_seen": "2026-08-18",
-    "last_seen": "2026-08-19",
-    "times_seen": 2,
+    "last_seen": "2026-08-20",
+    "times_seen": 3,
     "stars_first": 1827,
-    "stars_last": 1984
+    "stars_last": 2087
   },
   "yetone/cumora": {
     "first_seen": "2026-08-19",
-    "last_seen": "2026-08-19",
-    "times_seen": 1,
+    "last_seen": "2026-08-20",
+    "times_seen": 2,
     "stars_first": 2416,
-    "stars_last": 2416
+    "stars_last": 2702
+  },
+  "s1dashu/ip-as-logo-skill": {
+    "first_seen": "2026-08-20",
+    "last_seen": "2026-08-20",
+    "times_seen": 1,
+    "stars_first": 2150,
+    "stars_last": 2150
   }
 }
