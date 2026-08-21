@@ -7,9 +7,9 @@ language: N/A
 license: MIT
 description: "A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos."
 homepage: "https://ipaslogo.com"
-stars: 2150
-stars_per_day: 2150
-forks: 99
+stars: 3155
+stars_per_day: 1578
+forks: 153
 open_issues: 3
 created: 2026-08-18
 pushed_at: 2026-08-20
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-23"
+appearances: 2
+next_review: "2026-08-24"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-20"
-star_history: "2026-08-20:2150"
+star_history: "2026-08-20:2150,2026-08-21:3155"
 tags:
   - github
   - "category/other"
@@ -538,4 +538,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-21|2026-08-21]] — 再次上榜，3.2k stars
 - [[2026-08-20|2026-08-20]] — 首次收錄，2.1k stars

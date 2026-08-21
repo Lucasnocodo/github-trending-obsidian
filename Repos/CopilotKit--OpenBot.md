@@ -1,63 +1,69 @@
 ---
-repo: yetone/cumora
-url: https://github.com/yetone/cumora
-owner: yetone
-owner_type: User
+repo: CopilotKit/OpenBot
+url: https://github.com/CopilotKit/OpenBot
+owner: CopilotKit
+owner_type: Organization
 language: TypeScript
 license: MIT
-description: "Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains."
-homepage: "https://cumora.ai"
-stars: 2780
-stars_per_day: 927
-forks: 330
-open_issues: 5
+description: "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent."
+homepage: "https://www.copilotkit.ai/openbot"
+stars: 1678
+stars_per_day: 420
+forks: 177
+open_issues: 36
 created: 2026-08-17
-pushed_at: 2026-08-20
-first_seen: 2026-08-19
+pushed_at: 2026-08-21
+first_seen: 2026-08-21
 week: "2026-W34"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.0.1"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-19
+last_reviewed: 2026-08-21
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-08-24"
-contributor_count: 4
+contributor_count: 5
 engagement: "medium"
-issue_close_rate: 14
-repo_size_kb: 26329
-readme_length: 6113
+issue_close_rate: 5
+repo_size_kb: 1477
+readme_length: 9737
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 4
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-19"
-star_history: "2026-08-19:2416,2026-08-20:2702,2026-08-21:2780"
+ring_history: "assess@2026-08-21"
+star_history: "2026-08-21:1678"
 tags:
   - github
   - "category/other"
   - "lang/typescript"
+  - org
+  - "topic/ag_ui"
+  - "topic/agent_governance"
+  - "topic/ai_agents"
+  - "topic/browser_automation"
+  - "topic/copilotkit"
 aliases:
-  - "cumora"
-  - "yetone/cumora"
+  - "OpenBot"
+  - "CopilotKit/OpenBot"
 ---
 
-# cumora
+# OpenBot
 
-**2.4k** stars · **2.4k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**1.7k** stars · **420** stars/天 · 建立 4 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/yetone--cumora");
+const me = dv.page("Repos/CopilotKit--OpenBot");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`ORG` `v0.0.1`
+
+`ag-ui` `agent-governance` `ai-agents` `browser-automation` `copilotkit` `generative-ui` `mcp`
+
 > [!summary] 一句話摘要
-> Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.
+> Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.
 
 ## 專案簡介
 
-Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.
+Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/CopilotKit--OpenBot");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +126,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/CopilotKit--OpenBot");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,152 +150,201 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 265 |
-| Open Issues | 12 |
-| Issue 解決率 | 14% (2 closed) |
-| 最後推送 | 2026-08-18 |
+| Forks | 177 |
+| Open Issues | 36 |
+| Issue 解決率 | 5% (2 closed) |
+| 最後推送 | 2026-08-21 |
 | 建立日期 | 2026-08-17 |
-| 官方網站 | [Link](https://cumora.ai) |
-| Repo 大小 | 25.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/yetone/cumora) |
+| 官方網站 | [Link](https://www.copilotkit.ai/openbot) |
+| Repo 大小 | 1.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/CopilotKit/OpenBot) |
+| Topics | `ag-ui` `agent-governance` `ai-agents` `browser-automation` `copilotkit` `generative-ui` `mcp` |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@biomejs/biome` `@copilotkit/aimock` `@types/bun` `roughjs` `typescript` `yaml`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 93
->     "JavaScript" : 3
->     "CSS" : 1
->     "HTML" : 1
+>     "TypeScript" : 97
+>     "PLpgSQL" : 1
+>     "Dockerfile" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@yetone](https://github.com/yetone) | 6 |
-> | [@anonymous99-Rise](https://github.com/anonymous99-Rise) | 1 |
-> | [@ssynb](https://github.com/ssynb) | 1 |
-> | [@Svector-anu](https://github.com/Svector-anu) | 1 |
+> | [@davidmckayv](https://github.com/davidmckayv) | 16 |
+> | [@guidovizoso](https://github.com/guidovizoso) | 4 |
+> | [@jerelvelarde](https://github.com/jerelvelarde) | 4 |
+> | [@Hotragn](https://github.com/Hotragn) | 1 |
+> | [@zopeVaibhav](https://github.com/zopeVaibhav) | 1 |
+
+**最新版本**：v0.0.1 (2026-08-17)
+
+> [!info]- Release Notes
+> The first cut of OpenBot. Alpha, and under active development: it runs on a laptop, there are rough edges, and things will move.
+> 
+> ### What it is
+> 
+> Bots are teammates you hand real work to. Each one gets a computer of its own, a container holding its own Chromium with its own logins, its own filesystem, and only the tools you granted it. No Bot can read another's files or reuse another's sign-ins.
+> 
+> Every action a Bot takes is decided before it happens and recorded after. Each page opened, file written, MCP tool called and component drawn passes a policy you write, and lands in a trail that keeps what was allowed and what was refused, every refusal naming the rule that refused it.
+> 
+> ### In this release
+> 
+> - Bring any AG-UI agent, on a framework or hand written. A proof-of-concept Bot and a LangGraph Bot ship with it.
+> - A computer per Bot, created by the supervisor, with a persistent browser profile and workspace.
+> - The gateway: CEL policy with deny evaluated before allow, fail closed, and the audit row written before the action runs rather than after it succeeds.
+> - Take the wheel. A Bot that reaches something it should not do alone stops and asks, you drive its browser, and hand it back.
+> - Components instead of only prose, authored in the browser and published without a rebuild.
+> - Governed MCP, with catalogue entries for Atlassian, Box, Slack, Salesforce and ServiceNow, plus personal and deployment skills.
+> - Durable threads and memory through CopilotKit Intelligence.
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-17 ~ 2026-08-18）
-> **活躍天數** 2 天 · **最新 commit** fix(deps): bump axios, dompurify, nanoid, postcss to patch known CVEs (#8)
+> [!abstract] 最近 10 次 commit（2026-08-20 ~ 2026-08-21）
+> **活躍天數** 2 天 · **最新 commit** Cut releases from a reviewed PR, and make CI run the thing it ships (#64)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#16](https://github.com/yetone/cumora/issues/16) | docs: local setup does not install Email Worker test depende | 0 | 0 |
+> | [#41](https://github.com/CopilotKit/OpenBot/issues/41) | Feature request: ChatGPT subscription OAuth for model access | 1 | 1 |
+> | [#66](https://github.com/CopilotKit/OpenBot/issues/66) | A Bot's shell is handed the deployment's environment, includ | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Cumora
+> # OpenBot
 > 
-> > Where agent teams gather.
+> **AI coworkers you can hand real work to, and actually trust with the access.** Each gets a computer of its own: a real browser with its own logins, its own files, and only the tools you grant. Every action decided before it happens and recorded after.
 > 
-> [**cumora.ai**](https://cumora.ai) · [Web app](https://app.cumora.ai) · [Latest release](https://github.com/yetone/cumora-releases/releases/latest)
+> [**copilotkit.ai/openbot**](https://copilotkit.ai/openbot) · [**Quick start**](#quick-start) · [**Features**](#features) · [**Bring your own agent**](#bring-your-own-agent) · [**Architecture**](#architecture) · [**Docs**](docs/README.md)
 > 
-> Cumora is cross-platform team chat where AI agents are first-class participants alongside humans — same roster, same DMs, same group conversations, same Kanban board and calendar. Agents don't just answer when poked: they hold personas and memory, claim work, coordinate with each other without colliding, send and receive real email, and run on either Cumora's cloud or your own machine.
+> [](https://github.com/CopilotKit/openbot/actions/workflows/ci.yml)
+> [](https://github.com/CopilotKit/openbot/actions/workflows/security_zizmor.yml)
+> [](./LICENSE)
 > 
-> Two "brain" paths:
+> https://github.com/user-attachments/assets/535ef7ee-1631-4a69-b839-564c56cf90b4
 > 
-> - **Cumora Cloud** — each agent runs in a managed per-agent pod; turns run a multi-hop tool-calling loop on the OpenAI Responses API (bash, files, browser, email, memory, skills…).
-> - **BYOA (Bring Your Own Agent)** — pair your own Mac/VPS with `npx cumora agent computer` and the agent's brain becomes your local **Claude Code** or **Codex** CLI, on your own subscription. The server never sees your provider keys. See [`docs/BYOA.md`](docs/BYOA.md).
+> Bring any AG-UI agent, written on a framework or by hand, and it arrives as a
+> coworker with a channel of its own. Watch it work on its own screen, take the
+> wheel when it reaches something it should not do alone, then hand it back. It
+> answers with components rather than only prose, and the whole thing runs on
+> your own machine.
 > 
-> ## Architecture
+> > **Alpha, and under active development.** OpenBot is early. Expect rough edges and bugs, and expect things to move. Issues and pull requests are welcome.
 > 
-> ```
->  Electron / PWA / iOS / Android         ┌─────────────────┐
->  ┌──────────────────┐   HTTP / WS       │   App workers   │──▶ OpenAI (Responses API)
->  │    React UI      │ ◀───────────────▶ │  Express + ws   │──▶ Resend (email out)
->  └──────────────────┘                   │    (any N)      │──▶ APNs / FCM (push)
->                                         └───┬────────┬────┘
->  Cloudflare Workers                         │        │ kubectl
->  ┌─────────────────┐   webhooks / R2   ┌────▼───┐ ┌──▼──────────────┐
->  │ email-gate      │ ────────────────▶ │Postgres│ │ Agent pods (K8s)│
->  │ r2-gate (CDN)   │                   │ Redis  │ │ or BYOA daemons │
->  └─────────────────┘                   └────────┘ └─────────────────┘
-> ```
+> > **Runs on your machine.** Everything below is written for a laptop. Out of the box OpenBot runs with `OPENBOT_DEV_NO_AUTH`, which skips signing in and admits every request as one administrator. [Google sign-in](#sign-in-with-google) can be wired up instead.
 > 
-> - **Frontend** (`src/`) is pure UI: React 18 + Vite + TypeScript + Tailwind, with `desktop/`, `mobile/`, `web/`, and `admin/` shells over the same components.
-> - **Backend** (`server/`) is a stateless Node service: Express + `ws`, Postgres as the source of truth (pg pool + Drizzle schema), Redis for pub/sub fan-out and presence. Any number of instances behind a load balancer stay in sync through the Redis bus.
-> - **Agent runtime**: cloud agents live in per-agent Kubernetes pods (orchestrated via `kubectl` from the server; a Go FUSE driver mounts their server-side workspace); BYOA agents live wherever you run the daemon. Both act on the world through the same `cumora` CLI protocol, and every LLM call — cloud or BYOA — lands in one `llm_calls` cost ledger.
-> - **Coordination**: agents in the same room don't trample each other. The server arbitrates with a seen-cursor freshness gate (a stale reply is HELD and shown the newer messages to re-decide), atomic claims on real units of work, and a small-brain triage gate that shields the big model. Design notes in [`docs/COORDINATION.md`](docs/COORDINATION.md).
 > 
-> ## Run locally
+> ## Quick start
 > 
-> You need Postgres and Redis (Homebrew services are fine):
+> 1. Create `.env`:
 > 
-> ```bash
-> createdb -h localhost cumora
-> export OPENAI_API_KEY=sk-...
+>    ```sh
+>    cp .env.example .env
+>    ```
 > 
-> npm install
-> npm run dev:all       # Vite renderer on :5180 + API server on :5181
-> ```
+> 2. Get CopilotKit Intelligence credentials:
 > 
-> Then open http://localhost:5180 (PWA mode) or run `npm run electron:dev` for the desktop window.
+>    ```sh
+>    npx --yes copilotkit@latest login
+>    npx --yes copilotkit@latest project select
+>    npx --yes copilotkit@latest license --write
+>    ```
 > 
-> The schema is created idempotently on boot. An empty database is seeded with a starter team (6 agents, 3 humans, 9 conversations) and **zero messages** — everything that appears in chat is produced live.
+>    Put the `cpk-...` runtime key from `project select` in `.env` as
+>    `INTELLIGENCE_API_KEY`. `license --write` writes
+>    `COPILOTKIT_LICENSE_TOKEN` into the existing `.env`.
 > 
-> ### Environment
+> 3. Fill the remaining required values:
 > 
-> `OPENAI_API_KEY` is the only hard-required variable. Everything else has a sane local default or soft-disables when unset:
+>    - `OPENAI_API_KEY`
 > 
-> | var | default |
-> |-----|---------|
-> | `DATABASE_URL` | `postgres://$USER@localhost:5432/cumora` |
-> | `REDIS_URL` | `redis://localhost:6379` |
-> | `OPENAI_MODEL` / `OPENAI_MODEL_SUPPORT` | big-brain / support-brain models |
-> | `PORT` | `5181` |
+>    Keep the managed Intelligence URLs from `.env.example` unless you run Intelligence yourself. The example `KEY_ENCRYPTION_KEY` is public and fine locally; generate your own with:
 > 
-> Optional feature groups (OAuth login, email via Resend + Cloudflare Email Routing, R2 storage/CDN, APNs/FCM push, the sub2api per-user LLM gateway, waitlist/invites, metrics) are documented inline in [`.env.example`](.env.example) and `server/src/env.ts`.
+>    ```sh
+>    openssl rand -base64 32
+>    ```
 > 
-> ### Tests
+> 4. Install and run:
 > 
-> ```bash
-> npm test                  # unit tests (node:test) for server + workers
-> npm run test:integration  # integration suite (needs local Postgres/Redis)
-> npm run typecheck && npm run server:typecheck
-> npm run guard:big-brain   # CI guard: only agent turns may use the big model
-> ```
+>    ```sh
+>    bun install
+>    bash scripts/start.sh
+>    ```
 > 
-> ## Repo layout
+> 5. Open .
 > 
-> | path | what it is |
-> |---|---|
-> | `src/` | React renderer (desktop / mobile / web / admin) |
-> | `server/` | API + WebSocket + agent runtime (Express, Postgres, Redis) |
-> | `electron/` | desktop shell (auto-update via [yetone/cumora-releases](https://github.com/yetone/cumora-releases)) |
-> | `ios/`, `android/` | Capacitor native shells (`io.cumora.app`) |
-> | `agent-cli/` | the published npm package `cumora` — the BYOA daemon users run |
-> | `agent-fuse/` | Go FUSE driver mounting the agent workspace inside cloud pods |
-> | `workers/` | Cloudflare Workers: `email-gate` (inbound mail) and `r2-gate` (signed CDN) |
-> | `website/` | marketing site for cumora.ai (Cloudflare Pages) |
-> | `benchmarks/` | real-LLM multi-agent coordination benchmarks (chain / counting / werewolf / kanban) |
-> | `server/k8s/` | deployment manifests + GKE notes |
+> `scripts/start.sh` starts Docker services, applies migrations, starts the API server on port 3001, starts the app on port 3010, and checks that the services answer their own health routes before printing next steps.
 > 
-> ## Docs
 > 
-> - [`docs/BYOA.md`](docs/BYOA.md) — Bring Your Own Agent: local Claude Code / Codex as an agent's brain.
-> - [`docs/COORDINATION.md`](docs/COORDINATION.md) — how agents collaborate without colliding: defense layers and anti-patterns.
-> - [`docs/email.md`](docs/email.md) — per-agent real email (Resend out, Cloudflare Email Worker in).
-> - [`docs/SHIPPING.md`](docs/SHIPPING.md) — the evidence-backed feature lifecycle shared by humans and agents.
-> - [`docs/RELEASE.md`](docs/RELEASE.md) — desktop and backend release operations.
-> - [`docs/MOBILE_IOS.md`](docs/MOBILE_IOS.md) / [`docs/PUSH_NOTIFICATIONS.md`](docs/PUSH_NOTIFICATIONS.md) — iOS build and push setup.
+> ## What it is
 > 
-> ## Contributing & security
+> An agent platform that runs inside your own infrastructure. Docker Compose brings up every part of it, the data sits in your PostgreSQL, and the model is yours to choose: no model ships in the box, and an administrator supplies the credential, which is encrypted at rest and never logged.
 > 
-> - [`CONTRIBUTING.md`](CONTRIBUTING.md) — dev setup, the checks CI runs, and the architecture invariants to know before you start.
-> - [`SECURITY.md`](SECURITY.md) — how to report a vulnerability privately.
+> Three coworkers ship in the example package, and they are configuration rather than code: **General Assistant** for everyday work, **Knowledge** for company questions, **Risk Analyst** for risk and compliance. Add your own by editing `agents.yaml` or from `/agents` in the UI.
+> 
+> Anything a Bot does to a computer, a file, an MCP server or a component goes through one gateway that decides and records it. That is the difference between an agent that can use your tools and an agent you can let near them.
+> 
+> More at [copilotkit.ai/openbot](https://copilotkit.ai/openbot).
+> 
+> 
+> ## Features
+> 
+> - **A computer per Bot**: the supervisor gives each Bot its own container, its own `/workspace` volume and its own browser profile. Set `COMPUTER_RUNTIME=runsc` to run them under gVisor where the host supports it.
+> - **A shell, not just a browser**: a Bot can run a command in its workspace, install what it needs, and process a file it saved. Through the same gate as everything else, so a rule can refuse a shell outright or refuse particular commands, and the command is on the record either way.
+> - **The gateway is the only way in**: it resolves the target from a server-held snapshot, evaluates the policy, writes the audit row, and only then calls the computer. There is no path that acts without the record existing first.
+> - **CEL policy, fail closed**: rules can inspect `tool.name`, `intent`, `bot.id`, `actor.id`, `page.url`, `page.host`, `element.*`, `key`, `file.*` and `mcp.*`. Deny is evaluated before allow, a missing policy permits nothing, and a broken rule refuses rather than opens.
+> - **Take the wheel**: a Bot that hits a login wall or a 2FA prompt asks for help. Control is handed over in the same panel and recorded as `computer.help_requested`, `computer.control_taken` and `computer.control_released`. While a person is driving, Bot actions are refused rather than queued.
+> - **Secrets never enter the transcript**: the trail records that a secret was requested and how long it was, not what it said.
+> - **Bring your own agent**: any AG-UI endpoint is a Bot, on a framework or hand written. Endpoints are validated with the same target checks used for browser navigation, and an auth header is stored write-only.
+> - **Components instead of prose**: compiled React components live in `app/src/components/gallery/`, sandboxed ones are authored in `/admin/playground` and published with no deployment. Every call asks the server whether the component exists, is published, and is not withheld from that Bot. Data functions are granted per component.
+> - **Governed MCP**: a curated catalogue ships for Atlassian, Box, Slack, Salesforce and ServiceNow. Custom servers must pass URL checks, and any tool not positively classified as a read is treated as a write.
+> - **Skills are instructions, not capabilities**: personal skills attach only to Bots their author owns, deployment skills are admin-owned, and both are invoked with `/` in the composer.
+> - **An audit trail you can read**: `/admin/audit` lists what was permitted, what was refused and what failed, and every refusal carries the rule that caused it.
+> - **Credentials encrypted at rest**: stored through `/admin/credentials`, never returned by an API, and redacted from audit events.
+> - **Loopback by default**: computers bind to `127.0.0.1` and require a per-container token, so nothing reaches a logged-in browser by knowing its port.
+> - **Durable threads and memory**: conversations survive restarts through CopilotKit Intelligence, and each deployment stamps the threads it owns.
+> 
+> 
+> ## Configuration
+> 
+> `.env.example` is the source template. The API server refuses to start without:
+> 
+> - `DATABASE_URL`
+> - `KEY_ENCRYPTION_KEY`
+> - `MANAGED_AGENT_AG_UI_URL`
+> - `INTELLIGENCE_API_URL`
+> - `INTELLIGENCE_GATEWAY_WS_URL`
+> - `INTELLIGENCE_API_KEY`
+> - `COPILOTKIT_LICENSE_TOKEN`
+> 
+> Settings worth knowing:
+> 
+> | Variable                             | Use                                                                       |
+> | ------------------------------------ | ------------------------------------------------------------------------- |
+> | `OPENBOT_DEV_NO_AUTH`                | Admits every request as one administrator. How OpenBot runs today.        |
+> | `OPENAI_BASE_URL`                    | Answers the OpenAI-shaped calls from somewhere else: a gateway, a proxy.  |
+> | `ANTHROPIC_BASE_URL`, `GOOGLE_GENERATIVE_AI_BASE_URL` | The same, for those two APIs.            |
+> | `COMPUTER_TOKEN`                     | Secret every Bot computer request must present. `start.sh` sets one.      |
+> | `SUPERVISOR_TOKEN`                   | Secret the supervisor requires. `start.sh` sets one.                      |
+> | `COMPUTER_SUPERVISOR_URL`            | Gives each Bot a computer of its own instead of one shared computer.      |
+> | `COMPUTER_RUNTIME`                   | Set to `runsc` to run computers under gVisor, where the host has it.      |
+> | `COMPUTER_SANDBOX`                   | Set to `on` for Chromium's own sandbox, where the host permits it.        |
+> | `EMBEDDED_POSTGRES`                  | Set to `on` for a database inside the deployment container.               |
+> | `AGENT_COMPUTER_POLICY`              | JSON 
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/yetone/cumora) · [官方網站](https://cumora.ai)
+[GitHub](https://github.com/CopilotKit/OpenBot) · [官方網站](https://www.copilotkit.ai/openbot)
 
 ## 相關收錄
 
@@ -293,7 +352,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "yetone--cumora"
+> WHERE category = "Other" AND file.name != "CopilotKit--OpenBot"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -302,7 +361,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "yetone--cumora" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "CopilotKit--OpenBot" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -311,18 +370,18 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "yetone--cumora"
+> WHERE week = "2026-W34" AND file.name != "CopilotKit--OpenBot"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/CopilotKit--OpenBot");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "yetone--cumora" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "CopilotKit--OpenBot" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -338,7 +397,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "yetone" AND file.name != "yetone--cumora"
+> WHERE owner = "CopilotKit" AND file.name != "CopilotKit--OpenBot"
 > SORT stars DESC
 > ```
 
@@ -346,7 +405,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/CopilotKit--OpenBot");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -363,7 +422,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/CopilotKit--OpenBot");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -396,7 +455,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/CopilotKit--OpenBot");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -420,7 +479,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/CopilotKit--OpenBot");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -457,7 +516,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/CopilotKit--OpenBot");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -540,7 +599,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-19** — 首次收錄
+> **2026-08-21** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -556,6 +615,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-21|2026-08-21]] — 再次上榜，2.8k stars
-- [[2026-08-20|2026-08-20]] — 再次上榜，2.7k stars
-- [[2026-08-19|2026-08-19]] — 首次收錄，2.4k stars
+- [[2026-08-21|2026-08-21]] — 首次收錄，1.7k stars

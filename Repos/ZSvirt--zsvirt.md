@@ -1,19 +1,19 @@
 ---
-repo: yetone/cumora
-url: https://github.com/yetone/cumora
-owner: yetone
-owner_type: User
-language: TypeScript
-license: MIT
-description: "Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains."
-homepage: "https://cumora.ai"
-stars: 2780
-stars_per_day: 927
-forks: 330
-open_issues: 5
-created: 2026-08-17
-pushed_at: 2026-08-20
-first_seen: 2026-08-19
+repo: ZSvirt/zsvirt
+url: https://github.com/ZSvirt/zsvirt
+owner: ZSvirt
+owner_type: Organization
+language: Java
+license: GPL-3.0
+description: "Core IaaS engine and cloud infrastructure foundation of ZSvirt"
+homepage: "https://zsvirt.io/"
+stars: 1142
+stars_per_day: 190
+forks: 174
+open_issues: 0
+created: 2026-08-14
+pushed_at: 2026-08-18
+first_seen: 2026-08-21
 week: "2026-W34"
 month: "2026-08"
 category: "Other"
@@ -25,39 +25,45 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-19
+last_reviewed: 2026-08-21
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-08-24"
-contributor_count: 4
+appearances: 1
+next_review: "2026-08-28"
+contributor_count: 1
 engagement: "medium"
-issue_close_rate: 14
-repo_size_kb: 26329
-readme_length: 6113
+issue_close_rate: -1
+repo_size_kb: 82903
+readme_length: 7018
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-19"
-star_history: "2026-08-19:2416,2026-08-20:2702,2026-08-21:2780"
+ring_history: "assess@2026-08-21"
+star_history: "2026-08-21:1142"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/java"
+  - org
+  - "topic/cloud_native"
+  - "topic/hypervisor"
+  - "topic/infrastructure"
+  - "topic/kvm"
+  - "topic/proxmox"
 aliases:
-  - "cumora"
-  - "yetone/cumora"
+  - "zsvirt"
+  - "ZSvirt/zsvirt"
 ---
 
-# cumora
+# zsvirt
 
-**2.4k** stars · **2.4k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**1.1k** stars · **190** stars/天 · 建立 6 天前 · Java · GPL-3.0
 
 ```dataviewjs
-const me = dv.page("Repos/yetone--cumora");
+const me = dv.page("Repos/ZSvirt--zsvirt");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`ORG`
+
+`cloud-native` `hypervisor` `infrastructure` `kvm` `proxmox` `virtual-machine` `virtualization` `vm` `vmware-labs` `vsphere`
+
 > [!summary] 一句話摘要
-> Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.
+> Core IaaS engine and cloud infrastructure foundation of ZSvirt
 
 ## 專案簡介
 
-Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.
+Core IaaS engine and cloud infrastructure foundation of ZSvirt
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/ZSvirt--zsvirt");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +126,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/ZSvirt--zsvirt");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,152 +150,291 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 265 |
-| Open Issues | 12 |
-| Issue 解決率 | 14% (2 closed) |
+| Forks | 174 |
+| Open Issues | 0 |
 | 最後推送 | 2026-08-18 |
-| 建立日期 | 2026-08-17 |
-| 官方網站 | [Link](https://cumora.ai) |
-| Repo 大小 | 25.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/yetone/cumora) |
+| 建立日期 | 2026-08-14 |
+| 官方網站 | [Link](https://zsvirt.io/) |
+| Repo 大小 | 81.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/ZSvirt/zsvirt) |
+| Topics | `cloud-native` `hypervisor` `infrastructure` `kvm` `proxmox` `virtual-machine` `virtualization` `vm` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 93
->     "JavaScript" : 3
->     "CSS" : 1
->     "HTML" : 1
+>     "Java" : 78
+>     "Groovy" : 19
+>     "Python" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@yetone](https://github.com/yetone) | 6 |
-> | [@anonymous99-Rise](https://github.com/anonymous99-Rise) | 1 |
-> | [@ssynb](https://github.com/ssynb) | 1 |
-> | [@Svector-anu](https://github.com/Svector-anu) | 1 |
+> | [@zsphere-opensource](https://github.com/zsphere-opensource) | 12 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-17 ~ 2026-08-18）
-> **活躍天數** 2 天 · **最新 commit** fix(deps): bump axios, dompurify, nanoid, postcss to patch known CVEs (#8)
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#16](https://github.com/yetone/cumora/issues/16) | docs: local setup does not install Email Worker test depende | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-14 ~ 2026-08-18）
+> **活躍天數** 2 天 · **最新 commit** Update License link in CONTRIBUTING.md
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Cumora
+> Open Source Virtualization
+>     
+>     Enterprise Ready, Community Driven
+>   
 > 
-> > Where agent teams gather.
+>   
+>     
+>       
+>     
+>     
+>       
+>     
+>     
+>       
+>     
+>     
+>       
+>     
+>   
 > 
-> [**cumora.ai**](https://cumora.ai) · [Web app](https://app.cumora.ai) · [Latest release](https://github.com/yetone/cumora-releases/releases/latest)
+>   
+>     English
+>     &nbsp;&middot;&nbsp;
+>     简体中文
+>   
 > 
-> Cumora is cross-platform team chat where AI agents are first-class participants alongside humans — same roster, same DMs, same group conversations, same Kanban board and calendar. Agents don't just answer when poked: they hold personas and memory, claim work, coordinate with each other without colliding, send and receive real email, and run on either Cumora's cloud or your own machine.
+> ## What is ZSvirt
+> ZSvirt brings [ZStack](https://www.zstack-cloud.com/)'s enterprise-proven ZSphere virtualization engine into the open-source world. Backed by [ZStack](https://www.zstack-cloud.com/), a mature infrastructure leader, ZSvirt delivers a lightweight, scalable platform designed for absolute freedom—from high-performance homelabs to hyperscale infrastructure without vendor lock-in.
 > 
-> Two "brain" paths:
+> ## Product Tour
 > 
-> - **Cumora Cloud** — each agent runs in a managed per-agent pod; turns run a multi-hop tool-calling loop on the OpenAI Responses API (bash, files, browser, email, memory, skills…).
-> - **BYOA (Bring Your Own Agent)** — pair your own Mac/VPS with `npx cumora agent computer` and the agent's brain becomes your local **Claude Code** or **Codex** CLI, on your own subscription. The server never sees your provider keys. See [`docs/BYOA.md`](docs/BYOA.md).
+>   
+>     📊 DASHBOARD — Unified Operations Overview
+>   
+> 
+>   
+> 
+>   
+>     
+>       
+>     
+>   
+> 
+>   
+>     🗂️ INVENTORY — Centralized Infrastructure Management
+>   
+> 
+>   
+> 
+>   
+>     
+>       
+>     
+>   
+> 
+>   
+>     🔄 MIGRATION MANAGEMENT — Workload Migration
+>   
+> 
+>   
+> 
+>   
+>     
+>       
+>     
+>   
+> 
+> ## Live Demo
+> 
+> [ZSvirt Live Demo](https://demo.zsvirt.io/) is a free hosted environment for trying ZSvirt online. No local installation is required—after registration and login, you can start exploring the platform right away.
 > 
 > ## Architecture
 > 
-> ```
->  Electron / PWA / iOS / Android         ┌─────────────────┐
->  ┌──────────────────┐   HTTP / WS       │   App workers   │──▶ OpenAI (Responses API)
->  │    React UI      │ ◀───────────────▶ │  Express + ws   │──▶ Resend (email out)
->  └──────────────────┘                   │    (any N)      │──▶ APNs / FCM (push)
->                                         └───┬────────┬────┘
->  Cloudflare Workers                         │        │ kubectl
->  ┌─────────────────┐   webhooks / R2   ┌────▼───┐ ┌──▼──────────────┐
->  │ email-gate      │ ────────────────▶ │Postgres│ │ Agent pods (K8s)│
->  │ r2-gate (CDN)   │                   │ Redis  │ │ or BYOA daemons │
->  └─────────────────┘                   └────────┘ └─────────────────┘
-> ```
+> ZSvirt uses a modular architecture built around virtualization resource
+> management, the management plane, extension services, and operational tooling.
 > 
-> - **Frontend** (`src/`) is pure UI: React 18 + Vite + TypeScript + Tailwind, with `desktop/`, `mobile/`, `web/`, and `admin/` shells over the same components.
-> - **Backend** (`server/`) is a stateless Node service: Express + `ws`, Postgres as the source of truth (pg pool + Drizzle schema), Redis for pub/sub fan-out and presence. Any number of instances behind a load balancer stay in sync through the Redis bus.
-> - **Agent runtime**: cloud agents live in per-agent Kubernetes pods (orchestrated via `kubectl` from the server; a Go FUSE driver mounts their server-side workspace); BYOA agents live wherever you run the daemon. Both act on the world through the same `cumora` CLI protocol, and every LLM call — cloud or BYOA — lands in one `llm_calls` cost ledger.
-> - **Coordination**: agents in the same room don't trample each other. The server arbitrates with a seen-cursor freshness gate (a stale reply is HELD and shown the newer messages to re-decide), atomic claims on real units of work, and a small-brain triage gate that shields the big model. Design notes in [`docs/COORDINATION.md`](docs/COORDINATION.md).
+> Core capabilities include:
 > 
-> ## Run locally
+> - **Compute virtualization**: host, cluster, virtual machine, image, and
+>   lifecycle management.
+> - **Network virtualization**: virtual networks, network services, security
+>   groups, and related capabilities.
+> - **Storage virtualization**: primary storage, backup storage, volumes,
+>   snapshots, and storage resource management.
+> - **Management plane**: API framework, permission model, events, alarms,
+>   auditing, and system operations.
+> - **Extension services**: capabilities for migration, disaster recovery,
+>   monitoring, quota management, access control, and enterprise operations.
+> - **Tools and integrations**: installation tools, diagnostics tools, migration
+>   tools, automation scripts, agents, CLI, and external system integrations.
 > 
-> You need Postgres and Redis (Homebrew services are fine):
+> At the software architecture level, ZSvirt emphasizes asynchrony, statelessness,
+> extensibility, and automation:
 > 
-> ```bash
-> createdb -h localhost cumora
-> export OPENAI_API_KEY=sk-...
+> - **Asynchronous architecture**: supports asynchronous messages, asynchronous
+>   methods, and asynchronous HTTP calls to reduce blocking and improve system
+>   throughput.
+> - **Stateless services**: individual requests do not depend on state from other
+>   requests, making services easier to scale, recover, and operate.
+> - **Plugin-based extensibility**: supports horizontal extension of resource
+>   types, business capabilities, and integration capabilities through plugins.
+> - **Workflow engine**: manages the execution order of complex operations and
+>   supports rollback and recovery in failure scenarios.
+> - **Tagging and query capabilities**: supports resource attribute extension,
+>   resource classification, unified queries, and automation orchestration.
+> - **Automated deployment**: uses automation tools to handle deployment,
+>   configuration, and operations tasks, reducing deployment and maintenance
+>   complexity.
 > 
-> npm install
-> npm run dev:all       # Vite renderer on :5180 + API server on :5181
-> ```
+>   
 > 
-> Then open http://localhost:5180 (PWA mode) or run `npm run electron:dev` for the desktop window.
+> ## VMware Migration Guide
 > 
-> The schema is created idempotently on boot. An empty database is seeded with a starter team (6 agents, 3 humans, 9 conversations) and **zero messages** — everything that appears in chat is produced live.
+> As enterprises reassess their virtualization strategies, migration from VMware
+> to alternative platforms has become an important topic for organizations
+> seeking cost control, infrastructure flexibility, and long-term operational
+> stability.
 > 
-> ### Environment
+> ZSvirt provides migration-oriented capabilities and operational tools to help
+> users evaluate, plan, and move workloads from existing VMware environments to
+> ZSvirt-based virtualization infrastructure.
 > 
-> `OPENAI_API_KEY` is the only hard-required variable. Everything else has a sane local default or soft-disables when unset:
+> - [VMware Migration Guide](https://zsvirt.io/vmware-alternative/)
 > 
-> | var | default |
-> |-----|---------|
-> | `DATABASE_URL` | `postgres://$USER@localhost:5432/cumora` |
-> | `REDIS_URL` | `redis://localhost:6379` |
-> | `OPENAI_MODEL` / `OPENAI_MODEL_SUPPORT` | big-brain / support-brain models |
-> | `PORT` | `5181` |
+>   
+>     
+>   
 > 
-> Optional feature groups (OAuth login, email via Resend + Cloudflare Email Routing, R2 storage/CDN, APNs/FCM push, the sub2api per-user LLM gateway, waitlist/invites, metrics) are documented inline in [`.env.example`](.env.example) and `server/src/env.ts`.
+> ## Quick Start
 > 
-> ### Tests
+> The fastest way to evaluate ZSvirt is to follow the quick start guide in the
+> product documentation. It walks you through preparing compute, network, and
+> storage resources, initializing the management service, and creating your first
+> virtual machine.
 > 
-> ```bash
-> npm test                  # unit tests (node:test) for server + workers
-> npm run test:integration  # integration suite (needs local Postgres/Redis)
-> npm run typecheck && npm run server:typecheck
-> npm run guard:big-brain   # CI guard: only agent turns may use the big model
-> ```
+> 🚀 [Quick Start](https://zsvirt.io/en/docs/quick-start)
+> ▶️ [Video](https://youtu.be/LsSJlBRUvYw)
 > 
-> ## Repo layout
+> ## Best Practices
+> Powered by the same enterprise engine as ZSphere, ZSvirt inherits proven success across global customers below.
 > 
-> | path | what it is |
-> |---|---|
-> | `src/` | React renderer (desktop / mobile / web / admin) |
-> | `server/` | API + WebSocket + agent runtime (Express, Postgres, Redis) |
-> | `electron/` | desktop shell (auto-update via [yetone/cumora-releases](https://github.com/yetone/cumora-releases)) |
-> | `ios/`, `android/` | Capacitor native shells (`io.cumora.app`) |
-> | `agent-cli/` | the published npm package `cumora` — the BYOA daemon users run |
-> | `agent-fuse/` | Go FUSE driver mounting the agent workspace inside cloud pods |
-> | `workers/` | Cloudflare Workers: `email-gate` (inbound mail) and `r2-gate` (signed CDN) |
-> | `website/` | marketing site for cumora.ai (Cloudflare Pages) |
-> | `benchmarks/` | real-LLM multi-agent coordination benchmarks (chain / counting / werewolf / kanban) |
-> | `server/k8s/` | deployment manifests + GKE notes |
+>   
 > 
-> ## Docs
+> ## Virtualization Platform Comparison
 > 
-> - [`docs/BYOA.md`](docs/BYOA.md) — Bring Your Own Agent: local Claude Code / Codex as an agent's brain.
-> - [`docs/COORDINATION.md`](docs/COORDINATION.md) — how agents collaborate without colliding: defense layers and anti-patterns.
-> - [`docs/email.md`](docs/email.md) — per-agent real email (Resend out, Cloudflare Email Worker in).
-> - [`docs/SHIPPING.md`](docs/SHIPPING.md) — the evidence-backed feature lifecycle shared by humans and agents.
-> - [`docs/RELEASE.md`](docs/RELEASE.md) — desktop and backend release operations.
-> - [`docs/MOBILE_IOS.md`](docs/MOBILE_IOS.md) / [`docs/PUSH_NOTIFICATIONS.md`](docs/PUSH_NOTIFICATIONS.md) — iOS build and push setup.
+> Proxmox VE vs VMware vSphere vs ZSvirt
 > 
-> ## Contributing & security
+>   
 > 
-> - [`CONTRIBUTING.md`](CONTRIBUTING.md) — dev setup, the checks CI runs, and the architecture invariants to know before you start.
-> - [`SECURITY.md`](SECURITY.md) — how to report a vulnerability privately.
+> ## Governance
+> 
+> ZSvirt is governed by a lightweight open-source governance model that defines
+> how the project is maintained, how decisions are made, and how contributors
+> collaborate.
+> 
+> The [GOVERNANCE.md](GOVERNANCE.md) document is the starting point for learning
+> about project roles, maintainer responsibilities, decision-making processes,
+> release management, and community collaboration.
+> 
+> As the community grows, the governance model may evolve to include dedicated
+> maintainers, working groups, and more formal project processes.
+> 
+> ## Contributing
+> 
+> We welcome and appreciate contributions from the community. Whether you are
+> fixing bugs, improving documentation, proposing features, adding tests, or
+> sharing deployment, migration, and operational practices, your contribution
+> helps make ZSvirt better.
+> 
+> If you are new to the project, you can start with documentation improvements,
+> issue reports, test verification, migration experience, or community
+> discussions. Developers are also welcome to contribute code improvements,
+> tooling enhancements, and integrations.
+> 
+> We may recognize active contributors through community acknowledgements,
+> release notes, contributor lists, or future community programs.
+> 
+> Before contributing, please read:
+> 
+> - [CONTRIBUTING.md](CONTRIBUTING.md)
+> 
+> ## Security
+> 
+> The security process for reporting vulnerabilities is described in
+> [SECURITY.md](SECURITY.md).
+> 
+> Please do not report security vulnerabilities through public GitHub Issues or
+> Discussions.
+> 
+> ## License
+> 
+> ZSvirt is licensed under the
+> [GNU General Public License v3.0](LICENSE).
+> 
+> Some repositories or components may include third-party open-source software
+> under different licenses. Please check the `LICENSE`, `NOTICE`, and related
+> files in each repository for details.
+> 
+> ## Resources
+> 
+>   
+>     
+>       🌐 Community Website
+>       Explore ZSvirt features, use cases, news, and community resources.
+>       Visit Website →
+>     
+>     
+>       ▶️ Videos
+>       Watch the ZSvirt product introduction and discover its core capabilities.
+>       Watch Product Video →
+>     
+>   
+> 
+>   
+>     
+>       📝 Blog
+>       Discover release updates, engineering stories, and virtualization insights.
+>       Read the Blog →
+>     
+>     
+>       💬 GitHub Discussions
+>       Ask questions, share ideas, and connect with the ZSvirt community.
+>       Join the Discussion →
+>     
+>   
+> 
+>   
+>     
+>       ▶️ YouTube
+>       Follow the ZSvirt channel for demonstrations, tutorials, and product updates.
+>       Follow on YouTube →
+>     
+>     
+>       💼 LinkedIn
+>       Follow ZSvirt for project news, community highlights, and industry insights.
+>       Follow on LinkedIn →
+>     
+>   
+> 
+>   
+>     
+>       𝕏 X
+>       Get the latest ZSvirt announcements and community updates.
+>       Follow on X →
+>     
+>     
+>       🟠 Reddit
+>       Join community conversations and share your ZSvirt experience.
+>       Join on Reddit →
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/yetone/cumora) · [官方網站](https://cumora.ai)
+[GitHub](https://github.com/ZSvirt/zsvirt) · [官方網站](https://zsvirt.io/)
 
 ## 相關收錄
 
@@ -293,7 +442,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "yetone--cumora"
+> WHERE category = "Other" AND file.name != "ZSvirt--zsvirt"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -302,7 +451,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "yetone--cumora" AND status != "archived"
+> WHERE language = "Java" AND file.name != "ZSvirt--zsvirt" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -311,18 +460,18 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "yetone--cumora"
+> WHERE week = "2026-W34" AND file.name != "ZSvirt--zsvirt"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/ZSvirt--zsvirt");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "yetone--cumora" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "ZSvirt--zsvirt" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -338,7 +487,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "yetone" AND file.name != "yetone--cumora"
+> WHERE owner = "ZSvirt" AND file.name != "ZSvirt--zsvirt"
 > SORT stars DESC
 > ```
 
@@ -346,7 +495,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/ZSvirt--zsvirt");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -363,7 +512,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/ZSvirt--zsvirt");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -396,7 +545,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/ZSvirt--zsvirt");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -420,7 +569,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/ZSvirt--zsvirt");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -457,7 +606,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/ZSvirt--zsvirt");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -540,7 +689,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-19** — 首次收錄
+> **2026-08-21** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -556,6 +705,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-21|2026-08-21]] — 再次上榜，2.8k stars
-- [[2026-08-20|2026-08-20]] — 再次上榜，2.7k stars
-- [[2026-08-19|2026-08-19]] — 首次收錄，2.4k stars
+- [[2026-08-21|2026-08-21]] — 首次收錄，1.1k stars

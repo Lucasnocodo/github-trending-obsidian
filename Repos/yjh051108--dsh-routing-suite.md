@@ -7,9 +7,9 @@ language: PowerShell
 license: N/A
 description: "dsh-routing-suite — injector + router-standard kit: install the runtime injector first, then the task-aware reasoning-mode router preset (measured P1-P23)."
 homepage: ""
-stars: 6317
-stars_per_day: 1263
-forks: 114
+stars: 6461
+stars_per_day: 1077
+forks: 119
 open_issues: 48
 created: 2026-08-14
 pushed_at: 2026-08-17
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-08-23"
+appearances: 6
+next_review: "2026-08-24"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 6
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-16"
-star_history: "2026-08-16:1798,2026-08-17:2933,2026-08-18:5424,2026-08-19:6066,2026-08-20:6317"
+star_history: "2026-08-16:1798,2026-08-17:2933,2026-08-18:5424,2026-08-19:6066,2026-08-20:6317,2026-08-21:6461"
 tags:
   - github
   - "category/other"
@@ -527,6 +527,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-21|2026-08-21]] — 再次上榜，6.5k stars
 - [[2026-08-20|2026-08-20]] — 再次上榜，6.3k stars
 - [[2026-08-19|2026-08-19]] — 再次上榜，6.1k stars
 - [[2026-08-18|2026-08-18]] — 再次上榜，5.4k stars

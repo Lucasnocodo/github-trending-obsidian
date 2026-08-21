@@ -1,19 +1,19 @@
 ---
-repo: yetone/cumora
-url: https://github.com/yetone/cumora
-owner: yetone
+repo: alchaincyf/deepseek-harness-orange-book
+url: https://github.com/alchaincyf/deepseek-harness-orange-book
+owner: alchaincyf
 owner_type: User
-language: TypeScript
-license: MIT
-description: "Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains."
-homepage: "https://cumora.ai"
-stars: 2780
-stars_per_day: 927
-forks: 330
-open_issues: 5
-created: 2026-08-17
-pushed_at: 2026-08-20
-first_seen: 2026-08-19
+language: HTML
+license: N/A
+description: "DeepSeek Harness橙皮书《从开机到拆开》：完整系统提示词、129行启动清单、三份原始会话日志——官方文档没有的一手实测。PDF/EPUB/HTML免费下载"
+homepage: ""
+stars: 1103
+stars_per_day: 184
+forks: 98
+open_issues: 6
+created: 2026-08-14
+pushed_at: 2026-08-17
+first_seen: 2026-08-21
 week: "2026-W34"
 month: "2026-08"
 category: "Other"
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-19
+last_reviewed: 2026-08-21
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-08-24"
-contributor_count: 4
-engagement: "medium"
+appearances: 1
+next_review: "2026-08-28"
+contributor_count: 1
+engagement: "low"
 issue_close_rate: 14
-repo_size_kb: 26329
-readme_length: 6113
+repo_size_kb: 58490
+readme_length: 4325
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-19"
-star_history: "2026-08-19:2416,2026-08-20:2702,2026-08-21:2780"
+ring_history: "assess@2026-08-21"
+star_history: "2026-08-21:1103"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/html"
 aliases:
-  - "cumora"
-  - "yetone/cumora"
+  - "deepseek-harness-orange-book"
+  - "alchaincyf/deepseek-harness-orange-book"
 ---
 
-# cumora
+# deepseek-harness-orange-book
 
-**2.4k** stars · **2.4k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**1.1k** stars · **184** stars/天 · 建立 6 天前 · HTML · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/yetone--cumora");
+const me = dv.page("Repos/alchaincyf--deepseek-harness-orange-book");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`個人專案`
+
 > [!summary] 一句話摘要
-> Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.
+> DeepSeek Harness橙皮书《从开机到拆开》：完整系统提示词、129行启动清单、三份原始会话日志——官方文档没有的一手实测。PDF/EPUB/HTML免费下载
 
 ## 專案簡介
 
-Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.
+DeepSeek Harness橙皮书《从开机到拆开》：完整系统提示词、129行启动清单、三份原始会话日志——官方文档没有的一手实测。PDF/EPUB/HTML免费下载
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/alchaincyf--deepseek-harness-orange-book");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +118,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/alchaincyf--deepseek-harness-orange-book");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,152 +142,180 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 265 |
-| Open Issues | 12 |
-| Issue 解決率 | 14% (2 closed) |
-| 最後推送 | 2026-08-18 |
-| 建立日期 | 2026-08-17 |
-| 官方網站 | [Link](https://cumora.ai) |
-| Repo 大小 | 25.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/yetone/cumora) |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "TypeScript" : 93
->     "JavaScript" : 3
->     "CSS" : 1
->     "HTML" : 1
-> ```
+| Forks | 98 |
+| Open Issues | 6 |
+| Issue 解決率 | 14% (1 closed) |
+| 最後推送 | 2026-08-17 |
+| 建立日期 | 2026-08-14 |
+| Repo 大小 | 57.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/alchaincyf/deepseek-harness-orange-book) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@yetone](https://github.com/yetone) | 6 |
-> | [@anonymous99-Rise](https://github.com/anonymous99-Rise) | 1 |
-> | [@ssynb](https://github.com/ssynb) | 1 |
-> | [@Svector-anu](https://github.com/Svector-anu) | 1 |
+> | [@alchaincyf](https://github.com/alchaincyf) | 7 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-17 ~ 2026-08-18）
-> **活躍天數** 2 天 · **最新 commit** fix(deps): bump axios, dompurify, nanoid, postcss to patch known CVEs (#8)
+> [!abstract] 最近 10 次 commit（2026-08-14 ~ 2026-08-17）
+> **活躍天數** 3 天 · **最新 commit** docs: README 增加 WorkBuddy 在线阅读入口
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#16](https://github.com/yetone/cumora/issues/16) | docs: local setup does not install Email Worker test depende | 0 | 0 |
+> | [#7](https://github.com/alchaincyf/deepseek-harness-orange-book/issues/7) | 大粪 | 77 | 10 |
+> | [#3](https://github.com/alchaincyf/deepseek-harness-orange-book/issues/3) | 虽然《橙皮书》系列都是AI写的，但是这版有点太粗糙了。 | 1 | 1 |
+> | [#5](https://github.com/alchaincyf/deepseek-harness-orange-book/issues/5) | 【互链邀请】dsh-suite 生态目录已收录《DeepSeek Harness 橙皮书》，寻求互链合作 | 0 | 0 |
+> | [#4](https://github.com/alchaincyf/deepseek-harness-orange-book/issues/4) | 信息来源说明 | 0 | 0 |
+> | [#2](https://github.com/alchaincyf/deepseek-harness-orange-book/issues/2) | DeepSeek Harness 生态项目互链邀请 | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Cumora
+> **中文** | [English summary](#english-summary)
 > 
-> > Where agent teams gather.
+>   
 > 
-> [**cumora.ai**](https://cumora.ai) · [Web app](https://app.cumora.ai) · [Latest release](https://github.com/yetone/cumora-releases/releases/latest)
+> # DeepSeek Harness：从开机到拆开
 > 
-> Cumora is cross-platform team chat where AI agents are first-class participants alongside humans — same roster, same DMs, same group conversations, same Kanban board and calendar. Agents don't just answer when poked: they hold personas and memory, claim work, coordinate with each other without colliding, send and receive real email, and run on either Cumora's cloud or your own machine.
+> > 橙皮书系列 · 花叔 著 · v260814（2026年8月14日）
 > 
-> Two "brain" paths:
+> 一个不写代码的人，把一个刚出厂24小时的agent框架装在自己机器上跑穿了。这本书记录它此刻的样子。
 > 
-> - **Cumora Cloud** — each agent runs in a managed per-agent pod; turns run a multi-hop tool-calling loop on the OpenAI Responses API (bash, files, browser, email, memory, skills…).
-> - **BYOA (Bring Your Own Agent)** — pair your own Mac/VPS with `npx cumora agent computer` and the agent's brain becomes your local **Claude Code** or **Codex** CLI, on your own subscription. The server never sees your provider keys. See [`docs/BYOA.md`](docs/BYOA.md).
+> 2026年8月13日，DeepSeek开源了agent框架Harness（MIT协议，发布当天开源）。官方发布稿的主语从头到尾是「它」——它怎么造的、它是什么架构。而这本书把主语换回「我」：我装上之后第一件事干什么、会不会花我的钱、会不会动我硬盘上别的文件。
 > 
-> ## Architecture
+> ## 🎬 15秒发布动画
 > 
-> ```
->  Electron / PWA / iOS / Android         ┌─────────────────┐
->  ┌──────────────────┐   HTTP / WS       │   App workers   │──▶ OpenAI (Responses API)
->  │    React UI      │ ◀───────────────▶ │  Express + ws   │──▶ Resend (email out)
->  └──────────────────┘                   │    (any N)      │──▶ APNs / FCM (push)
->                                         └───┬────────┬────┘
->  Cloudflare Workers                         │        │ kubectl
->  ┌─────────────────┐   webhooks / R2   ┌────▼───┐ ┌──▼──────────────┐
->  │ email-gate      │ ────────────────▶ │Postgres│ │ Agent pods (K8s)│
->  │ r2-gate (CDN)   │                   │ Redis  │ │ or BYOA daemons │
->  └─────────────────┘                   └────────┘ └─────────────────┘
-> ```
+>   
 > 
-> - **Frontend** (`src/`) is pure UI: React 18 + Vite + TypeScript + Tailwind, with `desktop/`, `mobile/`, `web/`, and `admin/` shells over the same components.
-> - **Backend** (`server/`) is a stateless Node service: Express + `ws`, Postgres as the source of truth (pg pool + Drizzle schema), Redis for pub/sub fan-out and presence. Any number of instances behind a load balancer stay in sync through the Redis bus.
-> - **Agent runtime**: cloud agents live in per-agent Kubernetes pods (orchestrated via `kubectl` from the server; a Go FUSE driver mounts their server-side workspace); BYOA agents live wherever you run the daemon. Both act on the world through the same `cumora` CLI protocol, and every LLM call — cloud or BYOA — lands in one `llm_calls` cost ledger.
-> - **Coordination**: agents in the same room don't trample each other. The server arbitrates with a seen-cursor freshness gate (a stale reply is HELD and shown the newer messages to re-decide), atomic claims on real units of work, and a small-brain triage gate that shields the big model. Design notes in [`docs/COORDINATION.md`](docs/COORDINATION.md).
+>   使用DeepSeek官方VI · 由Huashu-Design设计制作
+>   ⬇ 下载1080p60 MP4（含音效）
 > 
-> ## Run locally
+> ## 🎥 60秒能力演示
 > 
-> You need Postgres and Redis (Homebrew services are fine):
+> 四段真实能力，全部对应书里的一手实测：开机装载129个插件 → 写入前的权限审批 → PTC让模型直接写程序编排工具（5次开口15次操作）→ 创造模式现场给自己造出第33个工具`count_chinese`，最后把整个终端拆成积木。
 > 
-> ```bash
-> createdb -h localhost cumora
-> export OPENAI_API_KEY=sk-...
+>   
 > 
-> npm install
-> npm run dev:all       # Vite renderer on :5180 + API server on :5181
-> ```
+>   ▶ 观看60秒完整版（1080p60 MP4，含音效）
 > 
-> Then open http://localhost:5180 (PWA mode) or run `npm run electron:dev` for the desktop window.
+> ## 📑 杂志编辑风幻灯片（20页）
 > 
-> The schema is created idempotently on boot. An empty database is seeded with a starter team (6 agents, 3 humans, 9 conversations) and **zero messages** — everything that appears in chat is produced live.
+> 不想读整本书？这套20页的杂志编辑风deck是全书的浓缩版：五个章节、进门四问、成本账单、44条事件、PTC、创造模式、拆开看架构，一页一个结论，适合快速过一遍或拿去做分享。
 > 
-> ### Environment
+>   
 > 
-> `OPENAI_API_KEY` is the only hard-required variable. Everything else has a sane local default or soft-disables when unset:
+>   ⬇ 下载PPTX（20页 · 11MB）
 > 
-> | var | default |
-> |-----|---------|
-> | `DATABASE_URL` | `postgres://$USER@localhost:5432/cumora` |
-> | `REDIS_URL` | `redis://localhost:6379` |
-> | `OPENAI_MODEL` / `OPENAI_MODEL_SUPPORT` | big-brain / support-brain models |
-> | `PORT` | `5181` |
+> ## 下载
 > 
-> Optional feature groups (OAuth login, email via Resend + Cloudflare Email Routing, R2 storage/CDN, APNs/FCM push, the sub2api per-user LLM gateway, waitlist/invites, metrics) are documented inline in [`.env.example`](.env.example) and `server/src/env.ts`.
+> | 格式 | 文件 | 大小 |
+> |------|------|------|
+> | PDF | [**DeepSeek-Harness-Orange-Book-zh-v260814.pdf**](DeepSeek-Harness-Orange-Book-zh-v260814.pdf) | 13MB |
+> | EPUB（微信读书优化版） | [**DeepSeek-Harness-Orange-Book-zh-v260814.epub**](DeepSeek-Harness-Orange-Book-zh-v260814.epub) | 5.4MB |
+> | HTML（单文件，图片已内联） | [**DeepSeek-Harness-Orange-Book-zh-v260814.html**](DeepSeek-Harness-Orange-Book-zh-v260814.html) | 4.9MB |
 > 
-> ### Tests
+> > 💡 PDF建议下载后阅读，GitHub在线预览可能无法完整渲染。
 > 
-> ```bash
-> npm test                  # unit tests (node:test) for server + workers
-> npm run test:integration  # integration suite (needs local Postgres/Redis)
-> npm run typecheck && npm run server:typecheck
-> npm run guard:big-brain   # CI guard: only agent turns may use the big model
-> ```
+> ## 这本书有什么官方文档里没有的
 > 
-> ## Repo layout
+> 全部一手实测，跑在作者自己的电脑上：
 > 
-> | path | what it is |
-> |---|---|
-> | `src/` | React renderer (desktop / mobile / web / admin) |
-> | `server/` | API + WebSocket + agent runtime (Express, Postgres, Redis) |
-> | `electron/` | desktop shell (auto-update via [yetone/cumora-releases](https://github.com/yetone/cumora-releases)) |
-> | `ios/`, `android/` | Capacitor native shells (`io.cumora.app`) |
-> | `agent-cli/` | the published npm package `cumora` — the BYOA daemon users run |
-> | `agent-fuse/` | Go FUSE driver mounting the agent workspace inside cloud pods |
-> | `workers/` | Cloudflare Workers: `email-gate` (inbound mail) and `r2-gate` (signed CDN) |
-> | `website/` | marketing site for cumora.ai (Cloudflare Pages) |
-> | `benchmarks/` | real-LLM multi-agent coordination benchmarks (chain / counting / werewolf / kanban) |
-> | `server/k8s/` | deployment manifests + GKE notes |
+> - **完整系统提示词**——每次开口之前被灌进模型脑子里的那一大段话
+> - **129行出厂启动清单**——`dsh --profile web --dump-default-config`导出，一行行看它开机装了什么
+> - **三份原始会话日志**——标准模式、PTC、创造模式各一份，一条事件都没删
+> - **AI现场给自己造工具的全程**——19步，工具清单从32行变成33行，多出来的那一行是它自己写的
+> - **PTC实测账单**——5次开口编排15次操作，以及那笔反直觉的账：固定开销反而涨9%
+> - **35个不随产品安装的扩展包清单**——都在npm上，但不在安装闭包里，「仓库里有」不等于「装上就有」
+> - **代码库考古**——12,293次提交/约64天、683篇Agent Note、4篇事故复盘（含「100%覆盖率全绿，编辑器一连上就崩」）
 > 
-> ## Docs
+> ## 本书结构
 > 
-> - [`docs/BYOA.md`](docs/BYOA.md) — Bring Your Own Agent: local Claude Code / Codex as an agent's brain.
-> - [`docs/COORDINATION.md`](docs/COORDINATION.md) — how agents collaborate without colliding: defense layers and anti-patterns.
-> - [`docs/email.md`](docs/email.md) — per-agent real email (Resend out, Cloudflare Email Worker in).
-> - [`docs/SHIPPING.md`](docs/SHIPPING.md) — the evidence-backed feature lifecycle shared by humans and agents.
-> - [`docs/RELEASE.md`](docs/RELEASE.md) — desktop and backend release operations.
-> - [`docs/MOBILE_IOS.md`](docs/MOBILE_IOS.md) / [`docs/PUSH_NOTIFICATIONS.md`](docs/PUSH_NOTIFICATIONS.md) — iOS build and push setup.
+> | 部分 | 内容 |
+> |------|------|
+> | **序章** | 探索未至之境：你装的到底是什么，以及替你做掉那道四选一 |
+> | **Part 1 进门** | 十分钟干成第一件活 · 它被允许碰什么 · 四种模式人话版 · 从Claude Code搬家，哪些能直接用 |
+> | **Part 2 主线** | 每一次运行都有迹可循 · 一次任务多少钱 · 它给自己长出一只手 · 让模型写程序及那笔反直觉的账 · 让它自己干完一件长活 |
+> | **Part 3 地基** | skill、MCP、插件到底谁管谁 · 两个插件都想管文件编辑谁赢 · 它出过什么事 |
+> | **Part 4 收** | 一个几乎全由AI写出来的代码库长什么样 · 它在赌什么，代价是什么 |
+> | **附录** | 数字基准表（每个数字带命令和快照时间）· 术语对照 · 命令速查 · 迁移总表 |
 > 
-> ## Contributing & security
+> 每节末尾有个固定小栏目：**《他们本来想这么做，后来没做》**——取自仓库里被否决的设计方案，回答「为什么这里没有X」。
 > 
-> - [`CONTRIBUTING.md`](CONTRIBUTING.md) — dev setup, the checks CI runs, and the architecture invariants to know before you start.
-> - [`SECURITY.md`](SECURITY.md) — how to report a vulnerability privately.
+> ## 适合谁读
+> 
+> - **不写代码、但用过Claude Code / Codex / OpenClaw这类工具的人**：每个概念一句技术定义+一个日常类比+类比在哪失真
+> - **业内工程师**：一手材料是自己跑出来的日志、被否决的方案、事故复盘的考古，不是发布稿的转译
+> - **想评估要不要迁移的人**：能直接用/要自己装/用不了，逐项实测（`~/.agents/skills`被零配置读走这种事，文档不会告诉你）
+> 
+> 书里凡是卡住作者的地方都原样写下来了——顺的过程没什么可信度，卡住的地方才有。
+> 
+> ## 关于时效
+> 
+> 这本书写于Harness发布后的24小时内，书里凡是从网上取的数字（star数、包数量）都只是按下回车那一刻的样子，正文里标了取数时间。实测部分（系统提示词、日志、启动清单）随版本演进可能变化，复现时以你本机输出为准。
+> 
+> ## 橙皮书系列
+> 
+> 面向AI Native Builder的实战指南系列：
+> 
+> - Claude Code 从入门到精通
+> - Claude Code 源码解析
+> - Harness Engineering
+> - Agent Skills
+> - OpenClaw：养一只你自己的AI
+> - Polymarket 指南
+> - [OpenAI Codex 从入门到精通](https://github.com/alchaincyf/codex-orange-book)（中英双版）
+> - **DeepSeek Harness：从开机到拆开** ← 你在这里
+> 
+> 完整合集见[huasheng.ai](https://www.huasheng.ai/)。
+> 
+> ## 友情链接
+> 
+> 同一个生态里的项目：
+> 
+> | 项目 | 简介 | 链接 |
+> |------|------|------|
+> | DeepSeek Harness Desktop | 为DSH生态做的桌面端，把Harness装进图形界面里跑。 | [GitHub](https://github.com/anywhere-labs/deepseek-harness-desktop) · [官网](https://dshdesktop.cn) |
+> | Awesome DeepSeek Harness | DSH终极指南：快速入门、资源推荐、精选插件与工具，中英日三语。 | [GitHub](https://github.com/libukai/awesome-deepseek-harness) |
+> 
+> ## 关于作者
+> 
+> **花叔（HuaShu）** · AI Native Coder · 独立开发者
+> 
+> 小猫补光灯（App Store付费榜第一）的开发者，橙皮书系列作者，全平台50万+读者。所有产品全部用AI完成，从未手写过一行代码。CCTV《焦点访谈》报道的「手搓经济」代表人物。
+> 
+> - X/Twitter：[@AlchainHust](https://x.com/AlchainHust)
+> - YouTube：[@Alchain](https://www.youtube.com/@Alchain)
+> - B站：[花叔v](https://space.bilibili.com/14097567)
+> - 微信公众号：花叔
+> - GitHub：[@alchaincyf](https://github.com/alchaincyf)
+> - 官网：[huasheng.ai](https://www.huasheng.ai/)
+> 
+> ## English summary
+> 
+> **DeepSeek Harness: From First Boot to Teardown** (Chinese edition) — written within 24 hours of DeepSeek open-sourcing its agent harness (Aug 13, 2026, MIT license). The author — who has never hand-written a line of code — ran it end to end on his own machine and documented what the official docs don't show: the full system prompt, the 129-line default boot manifest, three unedited session logs, and a live recording of the AI building a new tool for itself (19 steps, tool list going from 32 to 33 lines). Chinese only for now.
+> 
+> ## 📚 在线阅读（WorkBuddy）
+> 
+> 本书已同步到 WorkBuddy 资料库：每章一个网页，也可以直接把链接丢给你的 Agent 当上下文。
+> 
+> https://www.workbuddy.cn/space/d/XABVjoKqAElO
+> 
+> 全部橙皮书入口：https://www.workbuddy.cn/space/d/YcllWXknAUoMk6lFSWdfbI
+> 
+> ## 协议
+> 
+>   
+> 
+> 本作品基于[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)协议发布。在保留署名的前提下，可自由分享和改编（非商用）。
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/yetone/cumora) · [官方網站](https://cumora.ai)
+[GitHub](https://github.com/alchaincyf/deepseek-harness-orange-book)
 
 ## 相關收錄
 
@@ -293,7 +323,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "yetone--cumora"
+> WHERE category = "Other" AND file.name != "alchaincyf--deepseek-harness-orange-book"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -302,7 +332,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "yetone--cumora" AND status != "archived"
+> WHERE language = "HTML" AND file.name != "alchaincyf--deepseek-harness-orange-book" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -311,18 +341,18 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "yetone--cumora"
+> WHERE week = "2026-W34" AND file.name != "alchaincyf--deepseek-harness-orange-book"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/alchaincyf--deepseek-harness-orange-book");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "yetone--cumora" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "alchaincyf--deepseek-harness-orange-book" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -338,7 +368,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "yetone" AND file.name != "yetone--cumora"
+> WHERE owner = "alchaincyf" AND file.name != "alchaincyf--deepseek-harness-orange-book"
 > SORT stars DESC
 > ```
 
@@ -346,7 +376,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/alchaincyf--deepseek-harness-orange-book");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -363,7 +393,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/alchaincyf--deepseek-harness-orange-book");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -396,7 +426,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/alchaincyf--deepseek-harness-orange-book");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -420,7 +450,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/alchaincyf--deepseek-harness-orange-book");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -457,7 +487,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/alchaincyf--deepseek-harness-orange-book");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -540,7 +570,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-19** — 首次收錄
+> **2026-08-21** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -556,6 +586,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-21|2026-08-21]] — 再次上榜，2.8k stars
-- [[2026-08-20|2026-08-20]] — 再次上榜，2.7k stars
-- [[2026-08-19|2026-08-19]] — 首次收錄，2.4k stars
+- [[2026-08-21|2026-08-21]] — 首次收錄，1.1k stars

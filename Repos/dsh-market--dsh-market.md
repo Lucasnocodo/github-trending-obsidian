@@ -1,63 +1,67 @@
 ---
-repo: yetone/cumora
-url: https://github.com/yetone/cumora
-owner: yetone
-owner_type: User
+repo: dsh-market/dsh-market
+url: https://github.com/dsh-market/dsh-market
+owner: dsh-market
+owner_type: Organization
 language: TypeScript
 license: MIT
-description: "Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains."
-homepage: "https://cumora.ai"
-stars: 2780
-stars_per_day: 927
-forks: 330
-open_issues: 5
-created: 2026-08-17
-pushed_at: 2026-08-20
-first_seen: 2026-08-19
+description: "The plugin market inside DeepSeek Harness — browse, search, one-click install · DSH 可视化插件市场"
+homepage: "https://dshmarket.com"
+stars: 1466
+stars_per_day: 244
+forks: 85
+open_issues: 32
+created: 2026-08-14
+pushed_at: 2026-08-21
+first_seen: 2026-08-21
 week: "2026-W34"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v1.16.2"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-19
+last_reviewed: 2026-08-21
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-08-24"
-contributor_count: 4
-engagement: "medium"
-issue_close_rate: 14
-repo_size_kb: 26329
-readme_length: 6113
+contributor_count: 5
+engagement: "low"
+issue_close_rate: 78
+repo_size_kb: 10205
+readme_length: 9902
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-19"
-star_history: "2026-08-19:2416,2026-08-20:2702,2026-08-21:2780"
+ring_history: "assess@2026-08-21"
+star_history: "2026-08-21:1466"
 tags:
   - github
   - "category/other"
   - "lang/typescript"
+  - org
+  - "topic/deepseek_harness"
+  - "topic/dsh_plugin"
+  - "topic/marketplace"
 aliases:
-  - "cumora"
-  - "yetone/cumora"
+  - "dsh-market"
+  - "dsh-market/dsh-market"
 ---
 
-# cumora
+# dsh-market
 
-**2.4k** stars · **2.4k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**1.5k** stars · **244** stars/天 · 建立 6 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/yetone--cumora");
+const me = dv.page("Repos/dsh-market--dsh-market");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +74,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`ORG` `v1.16.2`
+
+`deepseek-harness` `dsh-plugin` `marketplace`
+
 > [!summary] 一句話摘要
-> Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.
+> The plugin market inside DeepSeek Harness — browse, search, one-click install · DSH 可视化插件市场
 
 ## 專案簡介
 
-Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.
+The plugin market inside DeepSeek Harness — browse, search, one-click install · DSH 可视化插件市场
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/dsh-market--dsh-market");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +124,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/dsh-market--dsh-market");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,152 +148,147 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 265 |
-| Open Issues | 12 |
-| Issue 解決率 | 14% (2 closed) |
-| 最後推送 | 2026-08-18 |
-| 建立日期 | 2026-08-17 |
-| 官方網站 | [Link](https://cumora.ai) |
-| Repo 大小 | 25.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/yetone/cumora) |
+| Forks | 85 |
+| Open Issues | 32 |
+| Issue 解決率 | 78% (112 closed) |
+| 最後推送 | 2026-08-21 |
+| 建立日期 | 2026-08-14 |
+| 官方網站 | [Link](https://dshmarket.com) |
+| Repo 大小 | 10.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/dsh-market/dsh-market) |
+| Topics | `deepseek-harness` `dsh-plugin` `marketplace` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 93
->     "JavaScript" : 3
->     "CSS" : 1
->     "HTML" : 1
+>     "TypeScript" : 74
+>     "JavaScript" : 21
+>     "CSS" : 2
+>     "HTML" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@yetone](https://github.com/yetone) | 6 |
-> | [@anonymous99-Rise](https://github.com/anonymous99-Rise) | 1 |
-> | [@ssynb](https://github.com/ssynb) | 1 |
-> | [@Svector-anu](https://github.com/Svector-anu) | 1 |
+> | [@fkysly](https://github.com/fkysly) | 214 |
+> | [@qichuang321](https://github.com/qichuang321) | 5 |
+> | [@ysyyhhh](https://github.com/ysyyhhh) | 5 |
+> | [@Karl-441](https://github.com/Karl-441) | 5 |
+> | [@Bruce-Yii](https://github.com/Bruce-Yii) | 3 |
+
+**最新版本**：v1.16.2 — dshmarket 1.16.2 (2026-08-20)
+
+> [!info]- Release Notes
+> npm: https://www.npmjs.com/package/dshmarket/v/1.16.2 · dist-tag: latest
+> 
+> ## What's Changed
+> * fix: a proxy reaches pnpm, a CRLF workspace file stays valid, and a long tag stops wrapping the row by @fkysly in https://github.com/dsh-market/dsh-market/pull/239
+> 
+> 
+> **Full Changelog**: https://github.com/dsh-market/dsh-market/compare/v1.16.1...v1.16.2
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-17 ~ 2026-08-18）
-> **活躍天數** 2 天 · **最新 commit** fix(deps): bump axios, dompurify, nanoid, postcss to patch known CVEs (#8)
+> [!abstract] 最近 10 次 commit（2026-08-20 ~ 2026-08-21）
+> **活躍天數** 2 天 · **最新 commit** fix: restore in-flight update progress when the config page reopens (#233)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#16](https://github.com/yetone/cumora/issues/16) | docs: local setup does not install Email Worker test depende | 0 | 0 |
+> | [#241](https://github.com/dsh-market/dsh-market/issues/241) | 插件市场打开失败 `bug` | 0 | 0 |
+> | [#235](https://github.com/dsh-market/dsh-market/issues/235) | [UI] 列表新双列布局有点怪，要不改成瀑布式？ `roadmap` | 0 | 3 |
+> | [#232](https://github.com/dsh-market/dsh-market/issues/232) | 内网加载不了市场数据了，内网能访问github `bug` | 0 | 4 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Cumora
+> # dsh-market
 > 
-> > Where agent teams gather.
+> English | [中文](README.zh.md)
 > 
-> [**cumora.ai**](https://cumora.ai) · [Web app](https://app.cumora.ai) · [Latest release](https://github.com/yetone/cumora-releases/releases/latest)
+> [](https://www.npmjs.com/package/dshmarket)
+> [](https://github.com/dsh-market/dsh-market)
 > 
-> Cumora is cross-platform team chat where AI agents are first-class participants alongside humans — same roster, same DMs, same group conversations, same Kanban board and calendar. Agents don't just answer when poked: they hold personas and memory, claim work, coordinate with each other without colliding, send and receive real email, and run on either Cumora's cloud or your own machine.
+> > `dsh-market` is independent of any particular client — it works in any host that speaks the standard DeepSeek Harness protocol. We're currently in discussions with `anywhere-labs/deepseek-harness-desktop` about future cooperation, and we'll share updates here as they happen. Use [dsh-desktop](https://github.com/dataelement/dsh-desktop) or [deepseek-harness-desktop](https://github.com/hairyf/deepseek-harness-desktop) — both ship with this plugin market built in — or another excellent third-party client.
 > 
-> Two "brain" paths:
+> The plugin market inside DeepSeek Harness. Open Settings → **Plugin Market** → browse, search, one-click install.
 > 
-> - **Cumora Cloud** — each agent runs in a managed per-agent pod; turns run a multi-hop tool-calling loop on the OpenAI Responses API (bash, files, browser, email, memory, skills…).
-> - **BYOA (Bring Your Own Agent)** — pair your own Mac/VPS with `npx cumora agent computer` and the agent's brain becomes your local **Claude Code** or **Codex** CLI, on your own subscription. The server never sees your provider keys. See [`docs/BYOA.md`](docs/BYOA.md).
+> One-click themes: install, switch live, no restart.
 > 
-> ## Architecture
+> ## Install
 > 
-> ```
->  Electron / PWA / iOS / Android         ┌─────────────────┐
->  ┌──────────────────┐   HTTP / WS       │   App workers   │──▶ OpenAI (Responses API)
->  │    React UI      │ ◀───────────────▶ │  Express + ws   │──▶ Resend (email out)
->  └──────────────────┘                   │    (any N)      │──▶ APNs / FCM (push)
->                                         └───┬────────┬────┘
->  Cloudflare Workers                         │        │ kubectl
->  ┌─────────────────┐   webhooks / R2   ┌────▼───┐ ┌──▼──────────────┐
->  │ email-gate      │ ────────────────▶ │Postgres│ │ Agent pods (K8s)│
->  │ r2-gate (CDN)   │                   │ Redis  │ │ or BYOA daemons │
->  └─────────────────┘                   └────────┘ └─────────────────┘
+> ```sh
+> dsh plugin --profile web add dshmarket
 > ```
 > 
-> - **Frontend** (`src/`) is pure UI: React 18 + Vite + TypeScript + Tailwind, with `desktop/`, `mobile/`, `web/`, and `admin/` shells over the same components.
-> - **Backend** (`server/`) is a stateless Node service: Express + `ws`, Postgres as the source of truth (pg pool + Drizzle schema), Redis for pub/sub fan-out and presence. Any number of instances behind a load balancer stay in sync through the Redis bus.
-> - **Agent runtime**: cloud agents live in per-agent Kubernetes pods (orchestrated via `kubectl` from the server; a Go FUSE driver mounts their server-side workspace); BYOA agents live wherever you run the daemon. Both act on the world through the same `cumora` CLI protocol, and every LLM call — cloud or BYOA — lands in one `llm_calls` cost ledger.
-> - **Coordination**: agents in the same room don't trample each other. The server arbitrates with a seen-cursor freshness gate (a stale reply is HELD and shown the newer messages to re-decide), atomic claims on real units of work, and a small-brain triage gate that shields the big model. Design notes in [`docs/COORDINATION.md`](docs/COORDINATION.md).
+> Restart `dsh web`, then open **Settings → Plugin Market**.
 > 
-> ## Run locally
+> **Requires dsh web 0.1.0-rc.6 or newer.** On an older host the market
+> disables itself and says so in the browser console rather than rendering
+> against primitives that are not there — if the Plugin Market entry never
+> appears, that is usually why. Worth checking when a desktop build bundles
+> its own dsh: it may be older than the one `npm` would give you (#139).
 > 
-> You need Postgres and Redis (Homebrew services are fine):
+> ## What you get
 > 
-> ```bash
-> createdb -h localhost cumora
-> export OPENAI_API_KEY=sk-...
+> - **Browse & search** the full community catalog (1550+ plugins, growing daily) — category filters, star counts, top/new sorting, bilingual descriptions that follow your UI language
+> - **Screenshots** — AppStore-style screenshots, auto-carousel when there's more than one, click to preview full-size: author-curated shots show right on the card (zero extra requests); plugins without curated shots fall back to automatic README extraction once you open the install dialog. Images load from GitHub hosting only
+> - **Themes** — a dedicated tab for community themes and skins: install → active immediately, switch with one click (themes are mutually exclusive, your choice survives restarts), uninstall to revert
+> - **One-click install** — confirm the source, watch live progress; most plugins go live after a page refresh, no restart
+> - **Backup & restore** — export your profile's plugin list and configuration as readable JSON, import it on another machine, store it on WebDAV with daily auto-backup, or sync through a private GitHub Gist; restores **merge** (plugins installed after the backup are kept), validate before writing, and roll back on failure
+> - **Updates** — per-plugin update checks (npm version or pinned commit vs HEAD), one-click update, or update everything at once; the market updates itself the same way
+> - **Uninstall** — two-step confirm; plugins installed this session are removed live
+> - **Hot disable / enable** — toggles write `- id: …` + `disabled: true|false` into the profile's `cordis.patch.yml` (the official patch layer, mechanism ported from [dsh-plugin-hub](https://github.com/Noob-stupid/dsh-plugin-hub)): DSH's HMR re-composes within ~1s, no restart, and the loader re-applies the choice on every boot; hand-edited patch rows show as badges, host-infrastructure plugins are protected from toggling, and a malformed patch file is never made worse
+> - **Restart when needed** — changes that cannot hot-load show a one-click restart beside the pending-change banner; the action is restricted to same-origin loopback requests
+> - **Zero jargon** — if a component is missing (pnpm), the market detects it and offers a one-click automatic setup
+> - **Log export** — one click produces a sanitized plain-text log for bug reports (home paths and credential shapes are masked; nothing is ever sent anywhere). The market's version sits next to the page heading, so a screenshot of a problem already carries it
+> - **Settings card** — on dsh 0.1.0-rc.7 and newer the market manages *itself* from **Settings → Plugins → Plugin configuration**, next to every other plugin: see the running version, pick a **release channel** (stable, or beta to try builds still being verified — the market only, never your other plugins; a third *dev* channel appears once developer mode is switched on, and carries builds published straight off a branch), update, or remove the market — with an opt-in cleanup that also drops the disable rows it wrote, so plugins it switched off start running again rather than staying off with no UI left to switch them back on
+> - **Diagnostics** — the plugin load order and conflict surface, one page: bundle stack with official/community badges, duplicate loader entries, dependency version mismatches, multi-version core packages, overrides and invalid config entries. Plain-language terms, problem blocks highlighted, everything collapsible
 > 
-> npm install
-> npm run dev:all       # Vite renderer on :5180 + API server on :5181
-> ```
+> - **Load order** — drag community bundles into the order you want, or take the suggested one derived from the plugins' own before/after rules. Nothing is written until a trial composition passes, and the panel tells you what the new order would change (overrides, invalid or duplicate entries) before you apply it
+> - **AI fix** — one click copies a diagnostics-driven fix prompt (errors/warnings/order conflicts + conservative scope instructions) to the clipboard; you paste it into a new conversation and decide whether to send
 > 
-> Then open http://localhost:5180 (PWA mode) or run `npm run electron:dev` for the desktop window.
+> ## Speed
 > 
-> The schema is created idempotently on boot. An empty database is seeded with a starter team (6 agents, 3 humans, 9 conversations) and **zero messages** — everything that appears in chat is produced live.
+> Installs prefer npm tarballs over full-repo GitHub downloads whenever a plugin publishes to npm (registry-verified against the repo to prevent name squatting). Registry installs are typically seconds; GitHub-only plugins depend on your connection to GitHub.
 > 
-> ### Environment
+> ## Security
 > 
-> `OPENAI_API_KEY` is the only hard-required variable. Everything else has a sane local default or soft-disables when unset:
+> - Installs are restricted to sources listed in the curated [awesome-dsh-plugin](https://awesome-dsh-plugin.com) registry — anything else is rejected
+> - Build scripts stay blocked by default (pnpm ≥10); allowing one is your explicit per-package choice
+> - Terminal/CLI-surface plugins are flagged before you install them into the web profile
+> - The install endpoint accepts same-origin POST only; the market never phones home
+> - Backups can contain credentials from your profile config — the UI warns before export and upload; WebDAV sync is https-only, refuses private-network targets, and never stores your password in the browser
+> - The restart endpoint additionally requires a direct loopback client (forwarded requests are rejected) and relaunches the exact DSH entry, arguments, environment, and working directory
+> - One-click restart launches a detached replacement. If DSH is managed by systemd, launchd, pm2, or another supervisor, turn the restart button off and let the supervisor own restarts instead; the pending-change notice remains visible but the button is hidden. Either flip **Allow restart** off in **Settings → Plugins → Plugin configuration**, or write it into the profile patch — where it has to sit under `config:`, because the loader passes only that sub-object to a plugin and a top-level `allowRestart:` is silently ignored (#227 by @Fantasymax):
 > 
-> | var | default |
-> |-----|---------|
-> | `DATABASE_URL` | `postgres://$USER@localhost:5432/cumora` |
-> | `REDIS_URL` | `redis://localhost:6379` |
-> | `OPENAI_MODEL` / `OPENAI_MODEL_SUPPORT` | big-brain / support-brain models |
-> | `PORT` | `5181` |
+>   ```yaml
+>   - id: dsh-market
+>     name: dshmarket
+>     config:
+>       allowRestart: false   # NOT at the top level beside `name:`
+>   ```
 > 
-> Optional feature groups (OAuth login, email via Resend + Cloudflare Email Routing, R2 storage/CDN, APNs/FCM push, the sub2api per-user LLM gateway, waitlist/invites, metrics) are documented inline in [`.env.example`](.env.example) and `server/src/env.ts`.
+>   `GET /dsh-market/status` reports `"restart": false` once it has taken effect.
+> - For terminal-attached launches, the detached replacement keeps running after the original terminal closes
+> - Listing ≠ endorsement: plugins are third-party code, install sources you trust
 > 
-> ### Tests
+> ## Submit your plugin
 > 
-> ```bash
-> npm test                  # unit tests (node:test) for server + workers
-> npm run test:integration  # integration suite (needs local Postgres/Redis)
-> npm run typecheck && npm run server:typecheck
-> npm run guard:big-brain   # CI guard: only agent turns may use the big model
-> ```
+> **This repo is the market app, not the catalog.** The plugin list comes from the curated [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) registry — to get your plugin listed in the market, open a PR **there** (one entry in the list; the site and this market pick it up automatically, usually within a day). Please don't PR plugin entries against this repo.
 > 
-> ## Repo layout
+> ## Roadmap & feedback
 > 
-> | path | what it is |
-> |---|---|
-> | `src/` | React renderer (desktop / mobile / web / admin) |
-> | `server/` | API + WebSocket + agent runtime (Express, Postgres, Redis) |
-> | `electron/` | desktop shell (auto-update via [yetone/cumora-releases](https://github.com/yetone/cumora-releases)) |
-> | `ios/`, `android/` | Capacitor native shells (`io.cumora.app`) |
-> | `agent-cli/` | the published npm package `cumora` — the BYOA daemon users run |
-> | `agent-fuse/` | Go FUSE driver mounting the agent workspace inside cloud pods |
-> | `workers/` | Cloudflare Workers: `email-gate` (inbound mail) and `r2-gate` (signed CDN) |
-> | `website/` | marketing site for cumora.ai (Cloudflare Pages) |
-> | `benchmarks/` | real-LLM multi-agent coordination benchmarks (chain / counting / werewolf / kanban) |
-> | `server/k8s/` | deployment manifests + GKE notes |
-> 
-> ## Docs
-> 
-> - [`docs/BYOA.md`](docs/BYOA.md) — Bring Your Own Agent: local Claude Code / Codex as an agent's brain.
-> - [`docs/COORDINATION.md`](docs/COORDINATION.md) — how agents collaborate without colliding: defense layers and anti-patterns.
-> - [`docs/email.md`](docs/email.md) — per-agent real email (Resend out, Cloudflare Email Worker in).
-> - [`docs/SHIPPING.md`](docs/SHIPPING.md) — the evidence-backed feature lifecycle shared by humans and agents.
-> - [`docs/RELEASE.md`](docs/RELEASE.md) — desktop and backend release operations.
-> - [`docs/MOBILE_IOS.md`](docs/MOBILE_IOS.md) / [`docs/PUSH_NOTIFICATIONS.md`](docs/PUSH_NOTIFICATIONS.md) — iOS build and push setup.
-> 
-> ## Contributing & security
-> 
-> - [`CONTRIBUTING.md`](CONTRIBUTING.md) — dev setup, the checks CI runs, and the architecture invariants to know before you start.
-> - [`SECURITY.md`](SECURITY.md) — how to report a vulnerability privately.
+> - **Bugs** go in [issues](https://github.com/dsh-market/dsh-market/issues) — attaching the market's "Export log" makes diagnosis roughly ten times faster
+> - **Feature ideas** go on the [Roadmap](https://github.com/orgs/dsh-market/projects/1). Issues are kept for things that are broken, so a prop
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/yetone/cumora) · [官方網站](https://cumora.ai)
+[GitHub](https://github.com/dsh-market/dsh-market) · [官方網站](https://dshmarket.com)
 
 ## 相關收錄
 
@@ -293,7 +296,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "yetone--cumora"
+> WHERE category = "Other" AND file.name != "dsh-market--dsh-market"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -302,7 +305,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "yetone--cumora" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "dsh-market--dsh-market" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -311,18 +314,18 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "yetone--cumora"
+> WHERE week = "2026-W34" AND file.name != "dsh-market--dsh-market"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/dsh-market--dsh-market");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "yetone--cumora" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "dsh-market--dsh-market" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -338,7 +341,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "yetone" AND file.name != "yetone--cumora"
+> WHERE owner = "dsh-market" AND file.name != "dsh-market--dsh-market"
 > SORT stars DESC
 > ```
 
@@ -346,7 +349,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/dsh-market--dsh-market");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -363,7 +366,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/dsh-market--dsh-market");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -396,7 +399,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/dsh-market--dsh-market");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -420,7 +423,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/dsh-market--dsh-market");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -457,7 +460,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/yetone--cumora");
+> const me = dv.page("Repos/dsh-market--dsh-market");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -540,7 +543,7 @@ Where agent teams gather. Cross-platform team chat where AI agents are first-cla
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-19** — 首次收錄
+> **2026-08-21** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -556,6 +559,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-21|2026-08-21]] — 再次上榜，2.8k stars
-- [[2026-08-20|2026-08-20]] — 再次上榜，2.7k stars
-- [[2026-08-19|2026-08-19]] — 首次收錄，2.4k stars
+- [[2026-08-21|2026-08-21]] — 首次收錄，1.5k stars

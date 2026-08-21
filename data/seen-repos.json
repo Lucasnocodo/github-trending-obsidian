@@ -3606,17 +3606,17 @@
   },
   "xiaobright/dsh-anchored-standard": {
     "first_seen": "2026-08-16",
-    "last_seen": "2026-08-20",
-    "times_seen": 5,
+    "last_seen": "2026-08-21",
+    "times_seen": 6,
     "stars_first": 2247,
-    "stars_last": 3640
+    "stars_last": 3686
   },
   "yjh051108/dsh-routing-suite": {
     "first_seen": "2026-08-16",
-    "last_seen": "2026-08-20",
-    "times_seen": 5,
+    "last_seen": "2026-08-21",
+    "times_seen": 6,
     "stars_first": 1798,
-    "stars_last": 6317
+    "stars_last": 6461
   },
   "dmmulroy/anti-slop": {
     "first_seen": "2026-08-18",
@@ -3634,16 +3634,58 @@
   },
   "yetone/cumora": {
     "first_seen": "2026-08-19",
-    "last_seen": "2026-08-20",
-    "times_seen": 2,
+    "last_seen": "2026-08-21",
+    "times_seen": 3,
     "stars_first": 2416,
-    "stars_last": 2702
+    "stars_last": 2780
   },
   "s1dashu/ip-as-logo-skill": {
     "first_seen": "2026-08-20",
-    "last_seen": "2026-08-20",
-    "times_seen": 1,
+    "last_seen": "2026-08-21",
+    "times_seen": 2,
     "stars_first": 2150,
-    "stars_last": 2150
+    "stars_last": 3155
+  },
+  "CopilotKit/OpenBot": {
+    "first_seen": "2026-08-21",
+    "last_seen": "2026-08-21",
+    "times_seen": 1,
+    "stars_first": 1678,
+    "stars_last": 1678
+  },
+  "dsh-market/dsh-market": {
+    "first_seen": "2026-08-21",
+    "last_seen": "2026-08-21",
+    "times_seen": 1,
+    "stars_first": 1466,
+    "stars_last": 1466
+  },
+  "cinderline/northcinder": {
+    "first_seen": "2026-08-21",
+    "last_seen": "2026-08-21",
+    "times_seen": 1,
+    "stars_first": 1200,
+    "stars_last": 1200
+  },
+  "ZSvirt/zsvirt": {
+    "first_seen": "2026-08-21",
+    "last_seen": "2026-08-21",
+    "times_seen": 1,
+    "stars_first": 1142,
+    "stars_last": 1142
+  },
+  "alchaincyf/deepseek-harness-orange-book": {
+    "first_seen": "2026-08-21",
+    "last_seen": "2026-08-21",
+    "times_seen": 1,
+    "stars_first": 1103,
+    "stars_last": 1103
+  },
+  "Tiger3807861189/DeepSeek-V4-J-Space-Capability-Realization-Report": {
+    "first_seen": "2026-08-21",
+    "last_seen": "2026-08-21",
+    "times_seen": 1,
+    "stars_first": 1037,
+    "stars_last": 1037
   }
 }
