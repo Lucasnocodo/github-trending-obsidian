@@ -1,19 +1,19 @@
 ---
-repo: s1dashu/ip-as-logo-skill
-url: https://github.com/s1dashu/ip-as-logo-skill
-owner: s1dashu
+repo: vvxw/deploy-vercel
+url: https://github.com/vvxw/deploy-vercel
+owner: vvxw
 owner_type: User
-language: N/A
-license: MIT
-description: "A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos."
-homepage: "https://ipaslogo.com"
-stars: 3496
-stars_per_day: 1165
-forks: 172
-open_issues: 3
+language: JavaScript
+license: N/A
+description: "Install Command：npm install"
+homepage: ""
+stars: 993
+stars_per_day: 331
+forks: 200
+open_issues: 5
 created: 2026-08-18
-pushed_at: 2026-08-20
-first_seen: 2026-08-20
+pushed_at: 2026-08-18
+first_seen: 2026-08-22
 week: "2026-W34"
 month: "2026-08"
 category: "Other"
@@ -25,44 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-20
+last_reviewed: 2026-08-22
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-08-25"
 contributor_count: 1
-engagement: "low"
+engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 29773
-readme_length: 6276
+repo_size_kb: 28
+readme_length: 2362
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-20"
-star_history: "2026-08-20:2150,2026-08-21:3155,2026-08-22:3496"
+ring_history: "assess@2026-08-22"
+star_history: "2026-08-22:993"
 tags:
   - github
   - "category/other"
-  - "lang/other"
-  - "topic/codex"
-  - "topic/codex_skill"
-  - "topic/image_generation"
-  - "topic/logo_design"
-  - "topic/mascot_design"
+  - "lang/javascript"
 aliases:
-  - "ip-as-logo-skill"
-  - "s1dashu/ip-as-logo-skill"
+  - "deploy-vercel"
+  - "vvxw/deploy-vercel"
 ---
 
-# ip-as-logo-skill
+# deploy-vercel
 
-**2.1k** stars · **2.1k** stars/天 · 建立 1 天前 · N/A · MIT
+**993** stars · **331** stars/天 · 建立 3 天前 · JavaScript · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+const me = dv.page("Repos/vvxw--deploy-vercel");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -77,20 +72,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 `個人專案`
 
-`codex` `codex-skill` `image-generation` `logo-design` `mascot-design`
-
 > [!summary] 一句話摘要
-> A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
+> Install Command：npm install
 
 ## 專案簡介
 
-A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
+Install Command：npm install
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/vvxw--deploy-vercel");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +118,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/vvxw--deploy-vercel");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,125 +142,133 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 99 |
-| Open Issues | 3 |
+| Forks | 200 |
+| Open Issues | 5 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-20 |
+| 最後推送 | 2026-08-18 |
 | 建立日期 | 2026-08-18 |
-| 官方網站 | [Link](https://ipaslogo.com) |
-| Repo 大小 | 29.1 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/s1dashu/ip-as-logo-skill) |
-| Topics | `codex` `codex-skill` `image-generation` `logo-design` `mascot-design` |
+| Repo 大小 | 28 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/vvxw/deploy-vercel) |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `ws` `axios` `@grpc/grpc-js` `@grpc/proto-loader` `systeminformation`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "JavaScript" : 64
+>     "HTML" : 36
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@s1dashu](https://github.com/s1dashu) | 24 |
+> | [@vvxw](https://github.com/vvxw) | 5 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-19 ~ 2026-08-20）
-> **活躍天數** 2 天 · **最新 commit** docs: update README and public site URL
+> [!abstract] 最近 10 次 commit（2026-08-18 ~ 2026-08-18）
+> **活躍天數** 1 天 · **最新 commit** Update README.md
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#3](https://github.com/s1dashu/ip-as-logo-skill/issues/3) | This skill is very popular with Koreans. | 0 | 1 |
-> | [#2](https://github.com/s1dashu/ip-as-logo-skill/issues/2) | 合作申请！！ | 0 | 2 |
-> | [#1](https://github.com/s1dashu/ip-as-logo-skill/issues/1) | made an avatar generator based on this skill | 0 | 1 |
+> | [#6](https://github.com/vvxw/deploy-vercel/issues/6) | 地区编码经过测试有几个无法使用 | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # IP as Logo
+> ## Vercel 部署说明
+> 1：点击Use this template ➡ Create a new repostory 创建一个私密项目, 名称随意
 > 
-> `ip-as-logo` is a compact Agent Skill for generating highly simplified company-ready mascot logos. It treats the result as a logo first and a character second: familiar cute animals by default, bold rounded silhouettes, strict complexity limits, oversized corner composition, and broad flat color masses.
+> 2: 修改index.js文件里的环境变量保存，不需要的留空
 > 
-> You can also browse the free [IP as Logo Skill website](https://ipaslogo.com), a searchable library backed by Cloudflare R2 and Supabase.
+> 3: 用AI生成一个纯html的网页替换`index.thml`伪装网页
 > 
-> **Don't have Codex, Doubao, Coze, or Workbuddy?** [Visit our website](https://ipaslogo.com) to download ready-made logos for free. Every logo is free for commercial use.
+> 4：打开vercel连接项目部署
+>   - 打开 Vercel 控制台
+>   - 点击 “New Project”
+>   - Import该项目
+>   - 选择默认配置, Install Command打开，设置为`npm install`
+>   - 点击 “Deploy”, 等待部署完成
 > 
-> ## What it enforces
+> 5：部署完成后确认没问题，将反代后的域名填写到`index.js`的DOMAIN环境变量里, 然后用 https://www.jshaman.com/index.html 混淆替换后保存
 > 
-> - One dominant silhouette built from roughly 6–10 basic shapes
-> - Three semantic colors by default: two IP base colors plus one background color
-> - Three proposed directions followed by six independently generated candidates after user approval
-> - Familiar, broadly appealing animals as the default open-ended subject; objects, machines, fantasy artifacts, and obscure creatures require a clear product reason
-> - A quantified restrained-color default: softened chromatic backgrounds, warm neutrals, and explicit silhouette/detail contrast targets
-> - Thick, rounded forms without sharp or fragile details
-> - An 82–90% close crop that visibly peeks or rises from the lower-left or lower-right, with paired identifying features preserved
-> - Flat-first artwork with broad, uniform filled color masses and no internal shading or gradients
-> - One specifically named canvas color that fills the square edge-to-edge and remains visible in all four corners
-> - One-pass unfiltered candidate batches with no visual review, rejection, repair, or style-compliance retry
+> 6：获取订阅信息，修改优选域名使用(节点里的address字段),可以自行套订阅器，比如：https://sub.eooce.xx.kg
 > 
-> ## Install
+> ## Vercel 常用地区代码对照表
 > 
-> Install the complete skill with the Agent Skills CLI:
+> 下面是常见 Vercel `regions` 代码对应关系：
 > 
+> | 地区代码 | 城市/区域 | 国家/地区 | 中文说明 |
+> |---|---|---|---|
+> | `hnd1` | Tokyo | Japan | 日本东京 |
+> | `kix1` | Osaka | Japan | 日本大阪 |
+> | `icn1` | Seoul | South Korea | 韩国首尔 |
+> | `hkg1` | Hong Kong | Hong Kong | 中国香港 |
+> | `sin1` | Singapore | Singapore | 新加坡 |
+> | `syd1` | Sydney | Australia | 澳大利亚悉尼 |
+> | `bom1` | Mumbai | India | 印度孟买 |
+> | `del1` | New Delhi | India | 印度新德里 |
+> | `fra1` | Frankfurt | Germany | 德国法兰克福 |
+> | `lhr1` | London | United Kingdom | 英国伦敦 |
+> | `cdg1` | Paris | France | 法国巴黎 |
+> | `ams1` | Amsterdam | Netherlands | 荷兰阿姆斯特丹 |
+> | `mad1` | Madrid | Spain | 西班牙马德里 |
+> | `dub1` | Dublin | Ireland | 爱尔兰都柏林 |
+> | `dxb1` | Dubai | United Arab Emirates | 阿联酋迪拜 |
+> | `jnb1` | Johannesburg | South Africa | 南非约翰内斯堡 |
+> | `cpt1` | Cape Town | South Africa | 南非开普敦 |
+> | `gru1` | São Paulo | Brazil | 巴西圣保罗 |
+> | `sfo1` | San Francisco | United States | 美国旧金山 |
+> | `iad1` | Washington, D.C. | United States | 美国华盛顿特区 |
+> | `pdx1` | Portland | United States | 美国波特兰 |
+> | `mia1` | Miami | United States | 美国迈阿密 |
+> | `ewr1` | Newark | United States | 美国纽瓦克 |
+> | `yul1` | Montréal | Canada | 加拿大蒙特利尔 |
+> 
+> ---
+> 
+> ## 注意事项
+> 
+> 部署成功后，访问项目地址，确认：
+> 
+> 1. 页面能正常访问
+> 2. 生成的订阅链接能获取到节点
+> 3. vervel分配的域名已被墙，无法使用直连节点
+> 4. 哪吒不亮，不用填写
+> 
+> ## 使用cloudflare的workers或snippets反代项目域名，给节点套CDN加速
 > ```bash
-> npx skills@latest add s1dashu/ip-as-logo-skill
+> export default {
+>     async fetch(request, env) {
+>         let url = new URL(request.url);
+>         if (url.pathname.startsWith('/')) {
+>             var arrStr = [
+>                 'xxx-xxx.vercel.app',   // 此处单引号里填写你的vercel分配的域名，不包含https://
+>             ];
+>             url.protocol = 'https:'
+>             url.hostname = getRandomArray(arrStr)
+>             let new_request = new Request(url, request);
+>             return fetch(new_request);
+>         }
+>         return env.ASSETS.fetch(request);
+>     },
+> };
+> function getRandomArray(array) {
+>   const randomIndex = Math.floor(Math.random() * array.length);
+>   return array[randomIndex];
+> }
 > ```
-> 
-> The installer detects the repository's root `SKILL.md`, lets you choose a supported coding agent, and installs the complete `ip-as-logo` directory, including its supporting assets. Use `--global` for a personal installation available across projects:
-> 
-> ```bash
-> npx skills@latest add s1dashu/ip-as-logo-skill --global
-> ```
-> 
-> ## Agent compatibility
-> 
-> It follows the open Agent Skills format and is designed to work with any compatible AI agent, rather than being tied to a specific agent product.
-> 
-> Supported agents include **Codex, Coze, Doubao, YouMind, Manus, Gemini Apps, and Replit Agent**. This skill only supports agents with built-in image-generation capabilities that can return generated images as assets.
-> 
-> ## Use
-> 
-> Ask your AI agent for an IP mascot logo, for example:
-> 
-> ```text
-> Create a rounded ghost IP logo on a deep navy background.
-> ```
-> 
-> The skill does not ask for a color-mode choice by default. Every default candidate uses three semantic colors: two IP base colors plus one specifically named canvas color. It no longer reserves any fraction of the candidate set for two-color logos. A two-color logo is generated only when the user explicitly requests it, and then uses canvas-colored negative space for facial marks rather than introducing a third color.
-> 
-> When the user already names an IP subject, the skill proposes three controlled design treatments of that subject. When the subject is open, it proposes familiar animal mascots first and ties each to a product attribute or brand promise. In open-ended batches, 95–100% of candidates should be familiar animals; non-animal subjects are limited to a small minority with a direct product connection, never used merely to manufacture novelty.
-> 
-> Large batches create variety within commercially plausible animal mascots through species or breed, ear and muzzle proportions, expression, lower-left versus lower-right emergence, crop, silhouette, and secondary color organization. Clocks, locks, industrial tools, measuring instruments, vehicles, abstract machines, fantasy artifacts, and obscure creatures are not default company mascots.
-> 
-> If the skill runs inside a product repository, it inspects relevant read-only context before asking questions. If product context is insufficient, it asks one consolidated round of background questions. Once context is sufficient, it always presents three concise directions and proposes generating six independent images. It proceeds after the user agrees, or immediately when the user has already explicitly authorized six outputs.
-> 
-> When the user accepts all three directions, the default batch contains two variants per direction: `A1`, `A2`, `B1`, `B2`, `C1`, and `C2`. When the user selects one direction, the skill generates six controlled variants of that direction. If the user rejects the proposed quantity or distribution, their replacement instructions take precedence.
-> 
-> Compatible agents may generate the six candidates in parallel with subagents up to the runtime's available concurrency, using additional waves when needed. Codex can use ImageGen when available; other agent environments may use any configured image generator. If no generator is available, the skill asks the user to provide or enable one instead of pretending that an image was generated. Every result is a separate full-resolution square asset, never a six-logo contact sheet.
-> 
-> When the user does not supply a palette, the skill chooses and explicitly names a clearly chromatic but restrained canvas color rather than neon color or muddy gray. It keeps the normal design to exactly three semantic colors: two IP base colors plus the named canvas color. Prompts describe that color as filling the full square and do not use image-mode terminology.
-> 
-> ## Repository structure
-> 
-> ```text
-> SKILL.md
-> assets/ip-as-logo-wall.webp
-> README.md
-> LICENSE
-> ```
-> 
-> The skill itself intentionally consists of a single instruction document. The repository also includes the showcase image above, but no scripts, style references, or generation dependencies.
-> 
-> ## Model behavior
-> 
-> Image-generation models may still introduce unwanted shading, crop paired features, or add too much volume. The skill treats each batch as a one-pass draw: every returned image is preserved and presented without visual compliance review, scoring, filtering, repair, or retry. A call that returns no usable image asset is reported as a technical failure rather than fabricated or silently replaced.
-> 
-> ## License
-> 
-> MIT
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/s1dashu/ip-as-logo-skill) · [官方網站](https://ipaslogo.com)
+[GitHub](https://github.com/vvxw/deploy-vercel)
 
 ## 相關收錄
 
@@ -275,7 +276,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE category = "Other" AND file.name != "vvxw--deploy-vercel"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -284,7 +285,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "s1dashu--ip-as-logo-skill" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "vvxw--deploy-vercel" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -293,18 +294,18 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE week = "2026-W34" AND file.name != "vvxw--deploy-vercel"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/vvxw--deploy-vercel");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "s1dashu--ip-as-logo-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "vvxw--deploy-vercel" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -320,7 +321,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "s1dashu" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE owner = "vvxw" AND file.name != "vvxw--deploy-vercel"
 > SORT stars DESC
 > ```
 
@@ -328,7 +329,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/vvxw--deploy-vercel");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -345,7 +346,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/vvxw--deploy-vercel");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -378,7 +379,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/vvxw--deploy-vercel");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -402,7 +403,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/vvxw--deploy-vercel");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -439,7 +440,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/vvxw--deploy-vercel");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -522,7 +523,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-20** — 首次收錄
+> **2026-08-22** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -538,6 +539,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-22|2026-08-22]] — 再次上榜，3.5k stars
-- [[2026-08-21|2026-08-21]] — 再次上榜，3.2k stars
-- [[2026-08-20|2026-08-20]] — 首次收錄，2.1k stars
+- [[2026-08-22|2026-08-22]] — 首次收錄，993 stars

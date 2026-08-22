@@ -1,68 +1,68 @@
 ---
-repo: s1dashu/ip-as-logo-skill
-url: https://github.com/s1dashu/ip-as-logo-skill
-owner: s1dashu
+repo: wang2122/sprix-sage-router
+url: https://github.com/wang2122/sprix-sage-router
+owner: wang2122
 owner_type: User
-language: N/A
+language: Python
 license: MIT
-description: "A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos."
-homepage: "https://ipaslogo.com"
-stars: 3496
-stars_per_day: 1165
-forks: 172
-open_issues: 3
+description: "Sprix AI at 屿智同行 — state-aware SELF/COLLABORATE/HANDOFF routing for A2A agent networks."
+homepage: ""
+stars: 1009
+stars_per_day: 336
+forks: 12
+open_issues: 0
 created: 2026-08-18
-pushed_at: 2026-08-20
-first_seen: 2026-08-20
+pushed_at: 2026-08-21
+first_seen: 2026-08-22
 week: "2026-W34"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.1.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-20
+last_reviewed: 2026-08-22
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-08-25"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 29773
-readme_length: 6276
+issue_close_rate: -1
+repo_size_kb: 92
+readme_length: 9804
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 4
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-20"
-star_history: "2026-08-20:2150,2026-08-21:3155,2026-08-22:3496"
+ring_history: "assess@2026-08-22"
+star_history: "2026-08-22:1009"
 tags:
   - github
   - "category/other"
-  - "lang/other"
-  - "topic/codex"
-  - "topic/codex_skill"
-  - "topic/image_generation"
-  - "topic/logo_design"
-  - "topic/mascot_design"
+  - "lang/python"
+  - "topic/a2a"
+  - "topic/agent_orchestration"
+  - "topic/agent_routing"
+  - "topic/ai_agents"
+  - "topic/multi_agent_systems"
 aliases:
-  - "ip-as-logo-skill"
-  - "s1dashu/ip-as-logo-skill"
+  - "sprix-sage-router"
+  - "wang2122/sprix-sage-router"
 ---
 
-# ip-as-logo-skill
+# sprix-sage-router
 
-**2.1k** stars · **2.1k** stars/天 · 建立 1 天前 · N/A · MIT
+**1.0k** stars · **336** stars/天 · 建立 3 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+const me = dv.page("Repos/wang2122--sprix-sage-router");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`個人專案` `v0.1.0`
 
-`codex` `codex-skill` `image-generation` `logo-design` `mascot-design`
+`a2a` `agent-orchestration` `agent-routing` `ai-agents` `multi-agent-systems` `python` `sprix-ai` `task-scheduling`
 
 > [!summary] 一句話摘要
-> A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
+> Sprix AI at 屿智同行 — state-aware SELF/COLLABORATE/HANDOFF routing for A2A agent networks.
 
 ## 專案簡介
 
-A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
+Sprix AI at 屿智同行 — state-aware SELF/COLLABORATE/HANDOFF routing for A2A agent networks.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/wang2122--sprix-sage-router");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +125,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/wang2122--sprix-sage-router");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,125 +149,212 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 99 |
-| Open Issues | 3 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-20 |
+| Forks | 12 |
+| Open Issues | 0 |
+| 最後推送 | 2026-08-21 |
 | 建立日期 | 2026-08-18 |
-| 官方網站 | [Link](https://ipaslogo.com) |
-| Repo 大小 | 29.1 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/s1dashu/ip-as-logo-skill) |
-| Topics | `codex` `codex-skill` `image-generation` `logo-design` `mascot-design` |
+| Repo 大小 | 92 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/wang2122/sprix-sage-router) |
+| Topics | `a2a` `agent-orchestration` `agent-routing` `ai-agents` `multi-agent-systems` `python` `sprix-ai` `task-scheduling` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@s1dashu](https://github.com/s1dashu) | 24 |
+> | [@wang2122](https://github.com/wang2122) | 14 |
+
+**最新版本**：v0.1.0 — Sprix SAGE Router v0.1.0 (2026-08-18)
+
+> [!info]- Release Notes
+> ## Research preview
+> 
+> The first public research release of **Sprix SAGE Router**, an open-source algorithmic output of **Sprix AI at 屿智同行**.
+> 
+> ### Included
+> 
+> - State-aware SELF, COLLABORATE, and HANDOFF routing
+> - Permission-first eligibility and progress-aware switching cost
+> - Submodular capability coverage and greedy team construction
+> - Trust-calibrated bids and online reliability / pair-synergy learning
+> - Executable demo, deterministic benchmark, and behavioral tests
+> - Enterprise-style contribution, security, governance, and citation metadata
+> 
+> > This release is an early-stage research preview. It is not a production SLA or a peer-reviewed result.
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-19 ~ 2026-08-20）
-> **活躍天數** 2 天 · **最新 commit** docs: update README and public site URL
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#3](https://github.com/s1dashu/ip-as-logo-skill/issues/3) | This skill is very popular with Koreans. | 0 | 1 |
-> | [#2](https://github.com/s1dashu/ip-as-logo-skill/issues/2) | 合作申请！！ | 0 | 2 |
-> | [#1](https://github.com/s1dashu/ip-as-logo-skill/issues/1) | made an avatar generator based on this skill | 0 | 1 |
+> [!abstract] 最近 10 次 commit（2026-08-18 ~ 2026-08-21）
+> **活躍天數** 2 天 · **最新 commit** docs: embed SAGE research figures
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # IP as Logo
+> # Sprix SAGE Router
 > 
-> `ip-as-logo` is a compact Agent Skill for generating highly simplified company-ready mascot logos. It treats the result as a logo first and a character second: familiar cute animals by default, bold rounded silhouettes, strict complexity limits, oversized corner composition, and broad flat color masses.
 > 
-> You can also browse the free [IP as Logo Skill website](https://ipaslogo.com), a searchable library backed by Cloudflare R2 and Supabase.
+> ## Quick start
 > 
-> **Don't have Codex, Doubao, Coze, or Workbuddy?** [Visit our website](https://ipaslogo.com) to download ready-made logos for free. Every logo is free for commercial use.
-> 
-> ## What it enforces
-> 
-> - One dominant silhouette built from roughly 6–10 basic shapes
-> - Three semantic colors by default: two IP base colors plus one background color
-> - Three proposed directions followed by six independently generated candidates after user approval
-> - Familiar, broadly appealing animals as the default open-ended subject; objects, machines, fantasy artifacts, and obscure creatures require a clear product reason
-> - A quantified restrained-color default: softened chromatic backgrounds, warm neutrals, and explicit silhouette/detail contrast targets
-> - Thick, rounded forms without sharp or fragile details
-> - An 82–90% close crop that visibly peeks or rises from the lower-left or lower-right, with paired identifying features preserved
-> - Flat-first artwork with broad, uniform filled color masses and no internal shading or gradients
-> - One specifically named canvas color that fills the square edge-to-edge and remains visible in all four corners
-> - One-pass unfiltered candidate batches with no visual review, rejection, repair, or style-compliance retry
-> 
-> ## Install
-> 
-> Install the complete skill with the Agent Skills CLI:
+> The reference implementation requires Python 3.10+ and has no runtime dependencies.
 > 
 > ```bash
-> npx skills@latest add s1dashu/ip-as-logo-skill
+> git clone https://github.com/wang2122/sprix-sage-router.git
+> cd sprix-sage-router
+> python demo.py
 > ```
 > 
-> The installer detects the repository's root `SKILL.md`, lets you choose a supported coding agent, and installs the complete `ip-as-logo` directory, including its supporting assets. Use `--global` for a personal installation available across projects:
+> Run the verification suite:
 > 
 > ```bash
-> npx skills@latest add s1dashu/ip-as-logo-skill --global
+> python -m unittest -v
+> python benchmark.py
 > ```
 > 
-> ## Agent compatibility
+> Minimal usage:
 > 
-> It follows the open Agent Skills format and is designed to work with any compatible AI agent, rather than being tied to a specific agent product.
+> ```python
+> from sprix_sage import Agent, ExecutionOutcome, Requirement, SAGERouter, Task
 > 
-> Supported agents include **Codex, Coze, Doubao, YouMind, Manus, Gemini Apps, and Replit Agent**. This skill only supports agents with built-in image-generation capabilities that can return generated images as assets.
+> agents = [
+>     Agent("planner", {"planning": 0.92, "coding": 0.55}, cost=0.08, latency_ms=900),
+>     Agent("coder", {"planning": 0.35, "coding": 0.96}, cost=0.12, latency_ms=1200),
+> ]
 > 
-> ## Use
+> task = Task(
+>     "build-feature",
+>     requirements=(
+>         Requirement("planning", 0.4),
+>         Requirement("coding", 0.6, depends_on=("planning",)),
+>     ),
+>     value=1.0,
+>     budget=0.30,
+>     deadline_ms=4000,
+>     progress=0.35,
+> )
 > 
-> Ask your AI agent for an IP mascot logo, for example:
+> router = SAGERouter(agents, incumbent_id="planner")
+> decision = router.route(task)
+> print(decision.mode, decision.assignments, decision.topology)
 > 
-> ```text
-> Create a rounded ghost IP logo on a deep navy background.
+> 
+> ## About Sprix AI
+> 
+> Sprix AI is the A2A initiative of **屿智同行**, focused on agent discovery, task matching, multi-agent scheduling, and transaction mechanisms for dependable agent-to-agent service exchange. Sprix SAGE Router is an open-source algorithmic research output of that initiative.
+> 
+> Company attribution describes the project's origin; this public repository remains a research preview and does not expose proprietary production systems or data.
+> 
+> 
+> ## Why SAGE?
+> 
+> Agent discovery tells a system which agents exist. It does not answer the harder runtime question: **who should work with whom after execution has already begun?**
+> 
+> SAGE—**State-Aware Graph Exchange**—is the decision layer between A2A discovery and task execution. It evaluates three routes in one auditable objective:
+> 
+> | Route | Ownership | Best used when |
+> |---|---|---|
+> | **SELF** | Incumbent agent | Existing capability and accumulated context are sufficient |
+> | **COLLABORATE** | Incumbent retains ownership | A small complementary team covers missing requirements |
+> | **HANDOFF** | A peer takes full ownership | Specialist advantage exceeds context-transfer loss |
+> 
+> SAGE is designed to sit above the [Agent2Agent (A2A) protocol](https://a2a-protocol.org/latest/). A2A provides Agent Cards, messages, tasks, artifacts, authentication, and transport. SAGE decides **which feasible agent configuration should execute the task, in which mode, and why**.
+> 
+> Figure 1. SAGE constrains the candidate space before comparing SELF, COLLABORATE, and HANDOFF, then updates contextual trust from execution evidence.
+> 
+> 
+> ## Benchmark
+> 
+> `benchmark.py` runs 2,500 tasks over five deterministic seeds in an external simulator. Hidden capability, pair effects, nonlinear quality, realized cost, and realized latency are deliberately different from SAGE's prediction model. Values are mean ± population standard deviation across seeds:
+> 
+> Figure 3. Paired synthetic comparison under a shared external evaluator. Error bars show population standard deviation across five seeds.
+> 
+> | Strategy | Quality | Common utility | Cost / budget | Deadline miss |
+> |---|---:|---:|---:|---:|
+> | Incumbent only | 0.507 ± 0.003 | 0.389 ± 0.002 | 0.239 ± 0.005 | 26.4% |
+> | Advertised-skill solo | 0.558 ± 0.005 | 0.435 ± 0.005 | 0.292 ± 0.004 | 11.9% |
+> | Feasible solo oracle | 0.553 ± 0.005 | 0.440 ± 0.005 | 0.271 ± 0.005 | 0.0% |
+> | Static SAGE | 0.591 ± 0.007 | 0.467 ± 0.007 | 0.329 ± 0.007 | 0.0% |
+> | **Online SAGE** | **0.634 ± 0.006** | **0.487 ± 0.006** | 0.434 ± 0.011 | 0.2% |
+> 
+> All strategies are evaluated with the same external quality-cost-latency utility. Online SAGE spends more than static SAGE to obtain higher simulated quality; that trade-off remains visible instead of being hidden behind a capability-only score.
+> 
+> > [!IMPORTANT]
+> > These synthetic numbers test learning and constraints without using SAGE's own score as ground truth. They are still **not** evidence of real-world superiority. A publishable evaluation requires confidence intervals over real executions, strong learned-routing baselines, heterogeneous agent benchmarks, marketplace trace replay, calibration analysis, and adversarial conditions.
+> 
+> 
+> ### State-aware agent matching for open A2A networks
+> 
+> [](https://github.com/wang2122/sprix-sage-router/actions/workflows/tests.yml)
+> [](https://www.python.org/)
+> [](LICENSE)
+> [](#project-status)
+> 
+> **An open-source research output of [Sprix AI](#about-sprix-ai) at 屿智同行.**
+> 
+> Choose whether an agent should **continue alone**, **recruit complementary collaborators**, or **hand off the task**—then assign task-DAG roles, schedule dependencies, and learn from execution evidence under permission, budget, and deadline constraints.
+> 
+> [Quick start](#quick-start) · [Algorithm](ALGORITHM.md) · [Benchmark](#benchmark) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
+> 
+> ---
+> 
+> 
+> ## What makes SAGE different?
+> 
+> - **Mid-execution tri-mode routing.** SELF, COLLABORATE, and HANDOFF compete in the same utility function instead of relying on disconnected heuristics.
+> - **Progress-aware replanning.** Active executors, completed DAG nodes, failures, accumulated progress, and transferable context affect whether switching is worthwhile.
+> - **Complementarity before prestige.** A team is rewarded for marginal requirement coverage, not for collecting individually high-ranked but redundant agents.
+> - **Contextual trust instead of one reputation score.** Reliability is learned per agent and per requirement, so success in coding does not automatically imply strength in research.
+> - **Task-DAG role assignment.** Every remaining requirement is assigned to an executor; dependency edges become an inspectable communication topology and critical-path latency estimate.
+> - **Learned outcome model.** A regularized online predictor replaces the original fixed success equation and can later be swapped for a production reward model.
+> - **Bounded team search.** Beam search compares multiple team prefixes instead of committing to one greedy sequence.
+> - **Bid fidelity.** Quoted confidence, cost, and latency are calibrated against observed execution evidence.
+> - **Permission-first matching.** Ineligible agents never enter the ranking, regardless of predicted quality.
+> - **Evidence-aware credit.** Per-requirement and per-agent outcomes avoid giving every teammate identical full credit.
+> - **Auditable output.** Every decision includes assignments, topology, success, coverage, cost, latency, risk, utility, and a human-readable rationale.
+> 
+> 
+> ## Core algorithm
+> 
+> For task requirement \(r\), SAGE combines global and requirement-conditioned trust into calibrated capability \(q_{a,r}\). Team coverage is:
+> 
+> $$
+> C_r(S)=1-\prod_{a\in S}(1-q_{a,r})
+> $$
+> 
+> Each requirement is assigned to the strongest calibrated team member. SAGE schedules these assignments over the requirement DAG, serializing work assigned to one agent and parallelizing independent work assigned to different agents. Team-level cost and critical-path latency are checked again after construction.
+> 
+> Every feasible route is ranked by:
+> 
+> $$
+> U(m,S,z,E)=V\hat p_\theta(y=1\mid x,m,S,z,E)-\lambda_c C-\lambda_l L-\lambda_r R-\lambda_h H-\lambda_o O-\lambda_u\mathcal U+\beta\mathcal B
+> $$
+> 
+> Here \(z\) is role assignment, \(E\) is the induced communication topology, \(H\) is context-transfer loss, \(O\) is coordination overhead, and \(\mathcal U/\mathcal B\) support uncertainty-aware exploration. The full design and limitations are documented in [ALGORITHM.md](ALGORITHM.md).
+> 
+> Figure 2. Conceptual policy map. Exact boundaries are learned and constraint-dependent; the diagram highlights the dominant forces behind route changes.
+> 
+> 
+> # Feed back the strongest available evidence after execution.
+> router.record_outcome(
+>     decision,
+>     ExecutionOutcome(
+>         success=0.9,
+>         requirement_scores={"planning": 0.95, "coding": 0.86},
+>         actual_cost=0.19,
+>         actual_latency_ms=1450,
+>     ),
+> )
 > ```
 > 
-> The skill does not ask for a color-mode choice by default. Every default candidate uses three semantic colors: two IP base colors plus one specifically named canvas color. It no longer reserves any fraction of the candidate set for two-color logos. A two-color logo is generated only when the user explicitly requests it, and then uses canvas-colored negative space for facial marks rather than introducing a third color.
 > 
-> When the user already names an IP subject, the skill proposes three controlled design treatments of that subject. When the subject is open, it proposes familiar animal mascots first and ties each to a product attribute or brand promise. In open-ended batches, 95–100% of candidates should be familiar animals; non-animal subjects are limited to a small minority with a direct product connection, never used merely to manufacture novelty.
+> ## A2A integration
 > 
-> Large batches create variety within commercially plausible animal mascots through species or breed, ear and muzzle proportions, expression, lower-left versus lower-right emergence, crop, silhouette, and secondary color organization. Clocks, locks, industrial tools, measuring instruments, vehicles, abstract machines, fantasy artifacts, and obscure creatures are not default company mascots.
+> Production integration maps protocol and marketplace signals into SAGE as follows:
 > 
-> If the skill runs inside a product repository, it inspects relevant read-only context before asking questions. If product context is insufficient, it asks one consolidated round of background questions. Once context is sufficient, it always presents three concise directions and proposes generating six independent images. It proceeds after the user agrees, or immediately when the user has already explicitly authorized six outputs.
-> 
-> When the user accepts all three directions, the default batch contains two variants per direction: `A1`, `A2`, `B1`, `B2`, `C1`, and `C2`. When the user selects one direction, the skill generates six controlled variants of that direction. If the user rejects the proposed quantity or distribution, their replacement instructions take precedence.
-> 
-> Compatible agents may generate the six candidates in parallel with subagents up to the runtime's available concurrency, using additional waves when needed. Codex can use ImageGen when available; other agent environments may use any configured image generator. If no generator is available, the skill asks the user to provide or enable one instead of pretending that an image was generated. Every result is a separate full-resolution square asset, never a six-logo contact sheet.
-> 
-> When the user does not supply a palette, the skill chooses and explicitly names a clearly chromatic but restrained canvas color rather than neon color or muddy gray. It keeps the normal design to exactly three semantic colors: two IP base colors plus the named canvas color. Prompts describe that color as filling the full square and do not use image-mode terminology.
-> 
-> ## Repository structure
-> 
-> ```text
-> SKILL.md
-> assets/ip-as-logo-wall.webp
-> README.md
-> LICENSE
-> ```
-> 
-> The skill itself intentionally consists of a single instruction document. The repository also includes the showcase image above, but no scripts, style references, or generation dependencies.
-> 
-> ## Model behavior
-> 
-> Image-generation models may still introduce unwanted shading, crop paired features, or add too much volume. The skill treats each batch as a one-pass draw: every returned image is preserved and presented without visual compliance review, scoring, filtering, repair, or retry. A call that returns no usable image asset is reported as a technical failure rather than fabricated or silently replaced.
-> 
-> ## License
-> 
-> MIT
+> | 
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/s1dashu/ip-as-logo-skill) · [官方網站](https://ipaslogo.com)
+[GitHub](https://github.com/wang2122/sprix-sage-router)
 
 ## 相關收錄
 
@@ -275,7 +362,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE category = "Other" AND file.name != "wang2122--sprix-sage-router"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -284,7 +371,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "s1dashu--ip-as-logo-skill" AND status != "archived"
+> WHERE language = "Python" AND file.name != "wang2122--sprix-sage-router" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -293,18 +380,18 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE week = "2026-W34" AND file.name != "wang2122--sprix-sage-router"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/wang2122--sprix-sage-router");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "s1dashu--ip-as-logo-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "wang2122--sprix-sage-router" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -320,7 +407,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "s1dashu" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE owner = "wang2122" AND file.name != "wang2122--sprix-sage-router"
 > SORT stars DESC
 > ```
 
@@ -328,7 +415,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/wang2122--sprix-sage-router");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -345,7 +432,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/wang2122--sprix-sage-router");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -378,7 +465,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/wang2122--sprix-sage-router");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -402,7 +489,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/wang2122--sprix-sage-router");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -439,7 +526,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/wang2122--sprix-sage-router");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -522,7 +609,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-20** — 首次收錄
+> **2026-08-22** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -538,6 +625,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-22|2026-08-22]] — 再次上榜，3.5k stars
-- [[2026-08-21|2026-08-21]] — 再次上榜，3.2k stars
-- [[2026-08-20|2026-08-20]] — 首次收錄，2.1k stars
+- [[2026-08-22|2026-08-22]] — 首次收錄，1.0k stars

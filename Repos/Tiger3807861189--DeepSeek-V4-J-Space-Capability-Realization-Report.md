@@ -7,8 +7,8 @@ language: N/A
 license: NOASSERTION
 description: "DeepSeek V4 × J-Space capability realization report — benchmark evidence that J-Space reduces capability-realization loss on DeepSeek V4 (Flash/Pro)."
 homepage: ""
-stars: 1037
-stars_per_day: 259
+stars: 1036
+stars_per_day: 207
 forks: 67
 open_issues: 13
 created: 2026-08-16
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-24"
+appearances: 2
+next_review: "2026-08-25"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-21"
-star_history: "2026-08-21:1037"
+star_history: "2026-08-21:1037,2026-08-22:1036"
 tags:
   - github
   - "category/other"
@@ -611,4 +611,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-22|2026-08-22]] — 再次上榜，1.0k stars
 - [[2026-08-21|2026-08-21]] — 首次收錄，1.0k stars

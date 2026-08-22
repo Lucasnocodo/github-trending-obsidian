@@ -1,19 +1,19 @@
 ---
-repo: s1dashu/ip-as-logo-skill
-url: https://github.com/s1dashu/ip-as-logo-skill
-owner: s1dashu
+repo: Leutenegger/watermarks-remover
+url: https://github.com/Leutenegger/watermarks-remover
+owner: Leutenegger
 owner_type: User
-language: N/A
+language: Python
 license: MIT
-description: "A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos."
-homepage: "https://ipaslogo.com"
-stars: 3496
-stars_per_day: 1165
-forks: 172
-open_issues: 3
-created: 2026-08-18
-pushed_at: 2026-08-20
-first_seen: 2026-08-20
+description: "Remove multi-vendor AI provenance traces: Unicode text sanitization, statistical rewriting techniques, and C2PA/metadata stripping from PNG/JPEG/SVG/PDF/DOCX/HTML/MD files"
+homepage: ""
+stars: 929
+stars_per_day: 465
+forks: 95
+open_issues: 4
+created: 2026-08-19
+pushed_at: 2026-08-19
+first_seen: 2026-08-22
 week: "2026-W34"
 month: "2026-08"
 category: "Other"
@@ -25,44 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-20
+last_reviewed: 2026-08-22
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-08-25"
-contributor_count: 1
-engagement: "low"
+contributor_count: 0
+engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 29773
-readme_length: 6276
-bus_factor: 1
+repo_size_kb: 306
+readme_length: 10000
+bus_factor: 0
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-20"
-star_history: "2026-08-20:2150,2026-08-21:3155,2026-08-22:3496"
+ring_history: "assess@2026-08-22"
+star_history: "2026-08-22:929"
 tags:
   - github
   - "category/other"
-  - "lang/other"
+  - "lang/python"
+  - "topic/claude"
+  - "topic/claude_code"
+  - "topic/claude_skills"
   - "topic/codex"
-  - "topic/codex_skill"
-  - "topic/image_generation"
-  - "topic/logo_design"
-  - "topic/mascot_design"
+  - "topic/codex_cli"
 aliases:
-  - "ip-as-logo-skill"
-  - "s1dashu/ip-as-logo-skill"
+  - "watermarks-remover"
+  - "Leutenegger/watermarks-remover"
 ---
 
-# ip-as-logo-skill
+# watermarks-remover
 
-**2.1k** stars · **2.1k** stars/天 · 建立 1 天前 · N/A · MIT
+**929** stars · **465** stars/天 · 建立 2 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+const me = dv.page("Repos/Leutenegger--watermarks-remover");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +75,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
-
-`codex` `codex-skill` `image-generation` `logo-design` `mascot-design`
+`claude` `claude-code` `claude-skills` `codex` `codex-cli` `codex-desktop` `codex-plugin` `codex-skill` `codex-skills` `grok` `grok-45` `grok-ai` `grok-build` `grok-cli` `watermark` `watermark-detection` `watermark-tools` `watermarks`
 
 > [!summary] 一句話摘要
-> A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
+> Remove multi-vendor AI provenance traces: Unicode text sanitization, statistical rewriting techniques, and C2PA/metadata stripping from PNG/JPEG/SVG/PDF/DOCX/HTML/MD files
 
 ## 專案簡介
 
-A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
+Remove multi-vendor AI provenance traces: Unicode text sanitization, statistical rewriting techniques, and C2PA/metadata stripping from PNG/JPEG/SVG/PDF/DOCX/HTML/MD files
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--watermarks-remover");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +123,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--watermarks-remover");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,125 +147,215 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 99 |
-| Open Issues | 3 |
+| Forks | 95 |
+| Open Issues | 4 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-20 |
-| 建立日期 | 2026-08-18 |
-| 官方網站 | [Link](https://ipaslogo.com) |
-| Repo 大小 | 29.1 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/s1dashu/ip-as-logo-skill) |
-| Topics | `codex` `codex-skill` `image-generation` `logo-design` `mascot-design` |
+| 最後推送 | 2026-08-19 |
+| 建立日期 | 2026-08-19 |
+| Repo 大小 | 306 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Leutenegger/watermarks-remover) |
+| Topics | `claude` `claude-code` `claude-skills` `codex` `codex-cli` `codex-desktop` `codex-plugin` `codex-skill` |
 
-> [!info]- 主要貢獻者
-> | 貢獻者 | Commits |
-> | --- | --- |
-> | [@s1dashu](https://github.com/s1dashu) | 24 |
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 95
+>     "Shell" : 2
+>     "PowerShell" : 2
+>     "Makefile" : 1
+> ```
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-19 ~ 2026-08-20）
-> **活躍天數** 2 天 · **最新 commit** docs: update README and public site URL
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#3](https://github.com/s1dashu/ip-as-logo-skill/issues/3) | This skill is very popular with Koreans. | 0 | 1 |
-> | [#2](https://github.com/s1dashu/ip-as-logo-skill/issues/2) | 合作申请！！ | 0 | 2 |
-> | [#1](https://github.com/s1dashu/ip-as-logo-skill/issues/1) | made an avatar generator based on this skill | 0 | 1 |
+> [!abstract] 最近 10 次 commit（2026-08-19）
+> **活躍天數** 1 天 · **最新 commit** Add full project with parallel curl support in install_skill.py
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # IP as Logo
+> ```
+> _ _ _ ____ ___ ____ ____ _  _ ____ ____ _  _ ____    ____ ____ _  _ ____ _  _ ____ ____
+> | | | |__|  |  |___ |__/ |\/| |__| |__/ |_/  [__  __ |__/ |___ |\/| |  | |  | |___ |__/
+> |_|_| |  |  |  |___ |  \ |  | |  | |  \ | \_ ___]    |  \ |___ |  | |__|  \/  |___ |  \
+> ```
 > 
-> `ip-as-logo` is a compact Agent Skill for generating highly simplified company-ready mascot logos. It treats the result as a logo first and a character second: familiar cute animals by default, bold rounded silhouettes, strict complexity limits, oversized corner composition, and broad flat color masses.
 > 
-> You can also browse the free [IP as Logo Skill website](https://ipaslogo.com), a searchable library backed by Cloudflare R2 and Supabase.
+> ## Install (agent skill)
 > 
-> **Don't have Codex, Doubao, Coze, or Workbuddy?** [Visit our website](https://ipaslogo.com) to download ready-made logos for free. Every logo is free for commercial use.
-> 
-> ## What it enforces
-> 
-> - One dominant silhouette built from roughly 6–10 basic shapes
-> - Three semantic colors by default: two IP base colors plus one background color
-> - Three proposed directions followed by six independently generated candidates after user approval
-> - Familiar, broadly appealing animals as the default open-ended subject; objects, machines, fantasy artifacts, and obscure creatures require a clear product reason
-> - A quantified restrained-color default: softened chromatic backgrounds, warm neutrals, and explicit silhouette/detail contrast targets
-> - Thick, rounded forms without sharp or fragile details
-> - An 82–90% close crop that visibly peeks or rises from the lower-left or lower-right, with paired identifying features preserved
-> - Flat-first artwork with broad, uniform filled color masses and no internal shading or gradients
-> - One specifically named canvas color that fills the square edge-to-edge and remains visible in all four corners
-> - One-pass unfiltered candidate batches with no visual review, rejection, repair, or style-compliance retry
-> 
-> ## Install
-> 
-> Install the complete skill with the Agent Skills CLI:
+> The skill ships **no code** — it calls the service over HTTP. Install the skill (markdown only) and start the service, then set `WATERMARKS_SERVICE_URL` if it is not `http://127.0.0.1:8765`.
 > 
 > ```bash
-> npx skills@latest add s1dashu/ip-as-logo-skill
-> ```
 > 
-> The installer detects the repository's root `SKILL.md`, lets you choose a supported coding agent, and installs the complete `ip-as-logo` directory, including its supporting assets. Use `--global` for a personal installation available across projects:
+> # Clones upstream, creates a venv, and installs scorer-only dependencies.
+> "$SCRIPTS/setup_synthid.sh"
+> 
+> 
+> # Clones upstream (pinned commit), creates a venv, installs torch + deps.
+> "$SCRIPTS/setup_ctrlregen.sh"
+> 
+> 
+> # Bootstrap (clones upstream, creates ~/MarkLLM/.venv, installs deps).
+> "$SCRIPTS/setup_markllm.sh"
+> 
+> 
+> # Bootstrap (PyPI pin default; creates ~/markdiffusion/.venv, installs deps).
+> "$SCRIPTS/setup_markdiffusion.sh"
+> 
+> 
+> ### Optional Cursor text-only skill
+> 
+> [`skills/clean-user-facing-text/`](skills/clean-user-facing-text/) is a
+> self-contained Cursor skill for authorized manuscripts, documentation, and web
+> copy. It excludes image, C2PA, service, and external-model tooling.
+> 
+> Install it into `~/.cursor/skills/clean-user-facing-text`:
 > 
 > ```bash
-> npx skills@latest add s1dashu/ip-as-logo-skill --global
+> python3 install_skill.py
 > ```
 > 
-> ## Agent compatibility
+> On Windows, use `py install_skill.py`. The `install-skill.sh` wrapper is
+> provided for macOS/Linux shells. Existing installations are preserved unless
+> you pass `--force`; replacement is staged first and the previous install is
+> kept as a uniquely named backup.
 > 
-> It follows the open Agent Skills format and is designed to work with any compatible AI agent, rather than being tied to a specific agent product.
+> Skill invocation is model-selected. Projects that explicitly adopt this
+> workflow can also copy the optional rule:
 > 
-> Supported agents include **Codex, Coze, Doubao, YouMind, Manus, Gemini Apps, and Replit Agent**. This skill only supports agents with built-in image-generation capabilities that can return generated images as assets.
-> 
-> ## Use
-> 
-> Ask your AI agent for an IP mascot logo, for example:
-> 
-> ```text
-> Create a rounded ghost IP logo on a deep navy background.
+> ```bash
+> mkdir -p /path/to/project/.cursor/rules
+> cp integrations/cursor/clean-user-facing-text.mdc \
+>   /path/to/project/.cursor/rules/clean-user-facing-text.mdc
 > ```
 > 
-> The skill does not ask for a color-mode choice by default. Every default candidate uses three semantic colors: two IP base colors plus one specifically named canvas color. It no longer reserves any fraction of the candidate set for two-color logos. A two-color logo is generated only when the user explicitly requests it, and then uses canvas-colored negative space for facial marks rather than introducing a third color.
+> For all projects, put the same instruction in Cursor **User Rules** instead.
+> Rules improve consistency but remain model instructions; Cursor does not expose
+> a deterministic pre-send filter for final chat responses.
 > 
-> When the user already names an IP subject, the skill proposes three controlled design treatments of that subject. When the subject is open, it proposes familiar animal mascots first and ties each to a product attribute or brand promise. In open-ended batches, 95–100% of candidates should be familiar animals; non-animal subjects are limited to a small minority with a direct product connection, never used merely to manufacture novelty.
 > 
-> Large batches create variety within commercially plausible animal mascots through species or breed, ear and muzzle proportions, expression, lower-left versus lower-right emergence, crop, silhouette, and secondary color organization. Clocks, locks, industrial tools, measuring instruments, vehicles, abstract machines, fantasy artifacts, and obscure creatures are not default company mascots.
+> # Optional local Ollama (loopback only by default — remote endpoints require
 > 
-> If the skill runs inside a product repository, it inspects relevant read-only context before asking questions. If product context is insufficient, it asks one consolidated round of background questions. Once context is sufficient, it always presents three concise directions and proposes generating six independent images. It proceeds after the user agrees, or immediately when the user has already explicitly authorized six outputs.
+> # API keys are read from WATERMARKS_REWRITE_API_KEY only (never argv).
 > 
-> When the user accepts all three directions, the default batch contains two variants per direction: `A1`, `A2`, `B1`, `B2`, `C1`, and `C2`. When the user selects one direction, the skill generates six controlled variants of that direction. If the user rejects the proposed quantity or distribution, their replacement instructions take precedence.
 > 
-> Compatible agents may generate the six candidates in parallel with subagents up to the runtime's available concurrency, using additional waves when needed. Codex can use ImageGen when available; other agent environments may use any configured image generator. If no generator is available, the skill asks the user to provide or enable one instead of pretending that an image was generated. Every result is a separate full-resolution square asset, never a six-logo contact sheet.
+> ### Configuration (env vars for docker compose)
 > 
-> When the user does not supply a palette, the skill chooses and explicitly names a clearly chromatic but restrained canvas color rather than neon color or muddy gray. It keeps the normal design to exactly three semantic colors: two IP base colors plus the named canvas color. Prompts describe that color as filling the full square and do not use image-mode terminology.
+> **Nothing is required to clean arbitrary text** — the core service works out of the box:
 > 
-> ## Repository structure
+> ```bash
+> echo "Hello\u200bWorld\u00ad!" > /tmp/sample.txt
+> curl -s -X POST http://127.0.0.1:8765/clean -H 'Content-Type: application/json' \
+>   -d "{\"file\": \"$(base64 ` on the HTTP API |
+> | `WATERMARKS_GEMINI_*` | — | Removed Aug 2026: Google retired SynthID text watermarking on the API (see `vendor-notes.md`) |
+> | `WATERMARKS_SYNTHID_SCORER_URL` | `wr-core` | Point core at the `wr-synthid-score` sidecar for SynthID image scoring (e.g. `http://wr-synthid-score:8766` under the heavy profile) |
+> | `WATERMARKS_SYNTHID_SCORER_API_KEY` | `wr-core` + `wr-synthid-score` | Shared bearer key for the scorer sidecar (empty = no auth) |
+> | `WATERMARKS_MARKLLM_SCHEME` | `text_detectors.py` (host) | MarkLLM scheme for `/detect`: `kgw` (default) / `synthid` |
+> | `HF_TOKEN` | harness/heavy services | Hugging Face token for gated models |
+> | `WATERMARKS_SERVICE_URL` | client only (skill / curl) | Where to reach the service; default `http://127.0.0.1:8765` |
+> | `WATERMARKS_REWRITE_BACKEND` | `rewrite_text.py` hook | `print-prompt` (default) / `ollama` / `openai-compatible` |
+> | `WATERMARKS_REWRITE_MODEL` | `rewrite_text.py` hook | Model name (e.g. `deepseek-v4-flash`) |
+> | `WATERMARKS_REWRITE_BASE_URL` | `rewrite_text.py` hook | API base (e.g. `https://api.deepseek.com`) |
+> | `WATERMARKS_REWRITE_API_KEY` | `rewrite_text.py` hook | API key — env only, never on argv |
+> | `WATERMARKS_REWRITE_ALLOW_REMOTE` | `rewrite_text.py` hook | `1` to allow non-loopback endpoints |
+> | `WATERMARKS_REWRITE_REASONING_EFFORT` | `rewrite_text.py` hook | `none` (default) / `low` / `medium` / `high` / `off` |
 > 
-> ```text
-> SKILL.md
-> assets/ip-as-logo-wall.webp
-> README.md
-> LICENSE
-> ```
+> Layer B is agent-orchestrated in the skill (it rewrites with its own model), so the `WATERMARKS_REWRITE_*` vars are only needed when driving `rewrite_text.py` directly.
 > 
-> The skill itself intentionally consists of a single instruction document. The repository also includes the showcase image above, but no scripts, style references, or generation dependencies.
+> Images publish automatically on `v*` tags via [`.github/workflows/release-images.yml`](.github/workflows/release-images.yml).
 > 
-> ## Model behavior
 > 
-> Image-generation models may still introduce unwanted shading, crop paired features, or add too much volume. The skill treats each batch as a one-pass draw: every returned image is preserved and presented without visual compliance review, scoring, filtering, repair, or retry. A call that returns no usable image asset is reported as a technical failure rather than fabricated or silently replaced.
+> ## Optional SynthID pixel scoring
 > 
-> ## License
+> `inspect_image.py` and `clean_image.py` can report a pixel-domain SynthID
+> confidence score when an external checkout of
+> [`aloshdenny/reverse-SynthID`](https://github.com/aloshdenny/reverse-SynthID)
+> is available. The scorer is **not bundled**: it is loaded at runtime from your
+> checkout, and its code remains under the upstream project's non-commercial
+> Research License.
 > 
-> MIT
+> 
+> ### Option 1: one-command bootstrap (no Docker)
+> 
+> ```bash
+> SCRIPTS=service/scripts
+> 
+> 
+> ### Option 2: local Docker build
+> 
+> ```bash
+> make docker-synthid-build
+> 
+> ### Option 3: HTTP scorer sidecar (docker compose)
+> 
+> Under the `heavy` profile the compose stack also runs the scorer as an HTTP
+> sidecar (`wr-synthid-score`) so the **published core service** can score
+> images before/after cleaning without bundling the non-commercial upstream
+> code. Point `wr-core` at it and share a bearer key (see `.env.example`):
+> 
+> ```bash
+> 
+> ## Optional CtrlRegen pixel removal
+> 
+> For **pixel-domain** image watermarks (SynthID-class, StegaStamp, Tree-Ring,
+> StableSignature), an optional external backend runs the CtrlRegen pipeline
+> (ControlNet + DINOv2 IP-Adapter controllable regeneration). The backend is
+> [`mertizci/noai-watermark`](https://github.com/mertizci/noai-watermark), a
+> maintained reimplementation of the ICLR 2025
+> [CtrlRegen](https://arxiv.org/abs/2410.05470) method with automatic tiling.
+> 
+> The backend is **not bundled** and ships no LICENSE file, so it is treated as
+> all-rights-reserved: it is cloned at a pinned commit and loaded at runtime.
+> Its research-era dependency pins (`requirements-ctrlregen.txt` — e.g.
+> `transformers==4.37.2`, `diffusers==0.27.2`) carry published advisories and
+> are intentionally not current, so they are only ever installed inside the
+> dedicated venv this script creates and never into the main service image;
+> `setup_ctrlregen.sh` also re-verifies the pinned commit on existing
+> checkouts, not just fresh clones.
+> 
+> 
+> ## Optional MarkLLM text-watermark verification
+> 
+> For **controlled experiments**, an optional external harness wraps
+> [`THU-BPM/MarkLLM`](https://github.com/THU-BPM/MarkLLM) (Apache-2.0) to
+> watermark test text and re-detect it after a Layer B rewrite — e.g. prove that
+> a KGW (Kirchenbauer, your "open-LLM" row) or SynthID-Text (Gemini row) mark
+> disappears under your rewrite. It is a **verification harness, not an oracle**:
+> MarkLLM detection is only valid against the *same* scheme config + keys used at
+> generation, and it cannot certify a vendor detector will fail.
+> 
+> The backend is **not bundled**. `setup_markllm.sh` clones upstream at a pinned
+> commit, creates a venv, and installs pinned deps (torch + transformers); the
+> scoring model (default `facebook/opt-1.3b`, Apache-2.0) downloads from Hugging
+> Face on first run.
+> 
+> ```bash
+> SCRIPTS=service/scripts
+> 
+> 
+> ## Optional SynthID-text removal benchmark
+> 
+> [`bench_synthid_text.py`](service/scripts/bench_synthid_text.py) measures how
+> effectively a Layer B rewrite clears SynthID-text-class watermarks and at
+> what cost. It generates watermarked + unwatermarked samples with the MarkLLM
+> SynthID scheme (same-config detection, sanity-gated), runs your rewrite
+> variants (strength × max rewrite attempts; the loop stops early on pass) plus
+> controls (no-removal, Layer-A-only, optional re-stamp check), and writes a
+> shareable `report.md` /
+> `results.json` / `results.csv`. Full guide:
+> [`docs/synthid-text-benchmark.md`](docs/synthid-text-benchmark.md).
+> 
+> Requires a MarkLLM checkout (`setup_markllm.sh` / `MARKLLM_DIR`) and a
+> rewrite backend. **The rewriting model is an LLM you configure** — the same
+> `rewrite_text.py` backend the skill uses. MarkLLM's default
+> `facebook/opt-1.3b` (`--markllm-model`) is only the watermark
+> generator/detector; it never rewrites. Configure the rewrite model via env
+> vars or benchmark flags 
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/s1dashu/ip-as-logo-skill) · [官方網站](https://ipaslogo.com)
+[GitHub](https://github.com/Leutenegger/watermarks-remover)
 
 ## 相關收錄
 
@@ -275,7 +363,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE category = "Other" AND file.name != "Leutenegger--watermarks-remover"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -284,7 +372,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "s1dashu--ip-as-logo-skill" AND status != "archived"
+> WHERE language = "Python" AND file.name != "Leutenegger--watermarks-remover" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -293,18 +381,18 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE week = "2026-W34" AND file.name != "Leutenegger--watermarks-remover"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--watermarks-remover");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "s1dashu--ip-as-logo-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Leutenegger--watermarks-remover" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -320,7 +408,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "s1dashu" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE owner = "Leutenegger" AND file.name != "Leutenegger--watermarks-remover"
 > SORT stars DESC
 > ```
 
@@ -328,7 +416,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--watermarks-remover");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -345,7 +433,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--watermarks-remover");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -378,7 +466,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--watermarks-remover");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -402,7 +490,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--watermarks-remover");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -439,7 +527,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--watermarks-remover");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -522,7 +610,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-20** — 首次收錄
+> **2026-08-22** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -538,6 +626,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-22|2026-08-22]] — 再次上榜，3.5k stars
-- [[2026-08-21|2026-08-21]] — 再次上榜，3.2k stars
-- [[2026-08-20|2026-08-20]] — 首次收錄，2.1k stars
+- [[2026-08-22|2026-08-22]] — 首次收錄，929 stars

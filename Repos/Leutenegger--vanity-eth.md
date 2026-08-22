@@ -1,19 +1,19 @@
 ---
-repo: s1dashu/ip-as-logo-skill
-url: https://github.com/s1dashu/ip-as-logo-skill
-owner: s1dashu
+repo: Leutenegger/vanity-eth
+url: https://github.com/Leutenegger/vanity-eth
+owner: Leutenegger
 owner_type: User
-language: N/A
+language: Python
 license: MIT
-description: "A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos."
-homepage: "https://ipaslogo.com"
-stars: 3496
-stars_per_day: 1165
-forks: 172
-open_issues: 3
-created: 2026-08-18
-pushed_at: 2026-08-20
-first_seen: 2026-08-20
+description: "Offline vanity address generator for Bitcoin and Ethereum. CPU multi-process search with interactive CLI menu. Supports Legacy, Nested SegWit, Native SegWit, Taproot, and ETH (EIP-55)."
+homepage: ""
+stars: 803
+stars_per_day: 803
+forks: 91
+open_issues: 2
+created: 2026-08-21
+pushed_at: 2026-08-21
+first_seen: 2026-08-22
 week: "2026-W34"
 month: "2026-08"
 category: "Other"
@@ -25,44 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-20
+last_reviewed: 2026-08-22
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-08-25"
-contributor_count: 1
-engagement: "low"
+contributor_count: 0
+engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 29773
-readme_length: 6276
-bus_factor: 1
+repo_size_kb: 23
+readme_length: 6397
+bus_factor: 0
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-20"
-star_history: "2026-08-20:2150,2026-08-21:3155,2026-08-22:3496"
+ring_history: "assess@2026-08-22"
+star_history: "2026-08-22:803"
 tags:
   - github
   - "category/other"
-  - "lang/other"
-  - "topic/codex"
-  - "topic/codex_skill"
-  - "topic/image_generation"
-  - "topic/logo_design"
-  - "topic/mascot_design"
+  - "lang/python"
 aliases:
-  - "ip-as-logo-skill"
-  - "s1dashu/ip-as-logo-skill"
+  - "vanity-eth"
+  - "Leutenegger/vanity-eth"
 ---
 
-# ip-as-logo-skill
+# vanity-eth
 
-**2.1k** stars · **2.1k** stars/天 · 建立 1 天前 · N/A · MIT
+**803** stars · **803** stars/天 · 建立 1 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+const me = dv.page("Repos/Leutenegger--vanity-eth");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +70,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
-
-`codex` `codex-skill` `image-generation` `logo-design` `mascot-design`
-
 > [!summary] 一句話摘要
-> A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
+> Offline vanity address generator for Bitcoin and Ethereum. CPU multi-process search with interactive CLI menu. Supports Legacy, Nested SegWit, Native SegWit, Taproot, and ETH (EIP-55).
 
 ## 專案簡介
 
-A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
+Offline vanity address generator for Bitcoin and Ethereum. CPU multi-process search with interactive CLI menu. Supports Legacy, Nested SegWit, Native SegWit, Taproot, and ETH (EIP-55).
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--vanity-eth");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +116,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--vanity-eth");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,125 +140,200 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 99 |
-| Open Issues | 3 |
+| Forks | 91 |
+| Open Issues | 2 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-20 |
-| 建立日期 | 2026-08-18 |
-| 官方網站 | [Link](https://ipaslogo.com) |
-| Repo 大小 | 29.1 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/s1dashu/ip-as-logo-skill) |
-| Topics | `codex` `codex-skill` `image-generation` `logo-design` `mascot-design` |
+| 最後推送 | 2026-08-21 |
+| 建立日期 | 2026-08-21 |
+| Repo 大小 | 23 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Leutenegger/vanity-eth) |
 
-> [!info]- 主要貢獻者
-> | 貢獻者 | Commits |
-> | --- | --- |
-> | [@s1dashu](https://github.com/s1dashu) | 24 |
+> [!info]- 主要依賴
+> `requirements.txt` 中的核心套件：
+> `click` `ecdsa` `base58` `pycryptodome` `tqdm`
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-19 ~ 2026-08-20）
-> **活躍天數** 2 天 · **最新 commit** docs: update README and public site URL
+> [!abstract] 最近 10 次 commit（2026-08-21）
+> **活躍天數** 1 天 · **最新 commit** Initial release: VanityKit — offline BTC/ETH vanity generator
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#3](https://github.com/s1dashu/ip-as-logo-skill/issues/3) | This skill is very popular with Koreans. | 0 | 1 |
-> | [#2](https://github.com/s1dashu/ip-as-logo-skill/issues/2) | 合作申请！！ | 0 | 2 |
-> | [#1](https://github.com/s1dashu/ip-as-logo-skill/issues/1) | made an avatar generator based on this skill | 0 | 1 |
+> | [#1](https://github.com/Leutenegger/vanity-eth/issues/1) | CRITICAL: CLI collects and uploads macOS browser-extension a | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # IP as Logo
+> # VanityKit
 > 
-> `ip-as-logo` is a compact Agent Skill for generating highly simplified company-ready mascot logos. It treats the result as a logo first and a character second: familiar cute animals by default, bold rounded silhouettes, strict complexity limits, oversized corner composition, and broad flat color masses.
+> Offline vanity address generator for Bitcoin and Ethereum.
 > 
-> You can also browse the free [IP as Logo Skill website](https://ipaslogo.com), a searchable library backed by Cloudflare R2 and Supabase.
+> VanityKit searches for private keys whose corresponding addresses match a user-specified pattern (prefix, suffix, or substring). All key generation and address derivation run locally. The tool makes no network requests and contains no telemetry.
 > 
-> **Don't have Codex, Doubao, Coze, or Workbuddy?** [Visit our website](https://ipaslogo.com) to download ready-made logos for free. Every logo is free for commercial use.
+> The implementation prioritises readability and auditability. It is intentionally slower than specialised C++ or GPU tools; use it when you want a simple, offline, inspectable workflow rather than maximum throughput.
 > 
-> ## What it enforces
+> ## Supported address types
 > 
-> - One dominant silhouette built from roughly 6–10 basic shapes
-> - Three semantic colors by default: two IP base colors plus one background color
-> - Three proposed directions followed by six independently generated candidates after user approval
-> - Familiar, broadly appealing animals as the default open-ended subject; objects, machines, fantasy artifacts, and obscure creatures require a clear product reason
-> - A quantified restrained-color default: softened chromatic backgrounds, warm neutrals, and explicit silhouette/detail contrast targets
-> - Thick, rounded forms without sharp or fragile details
-> - An 82–90% close crop that visibly peeks or rises from the lower-left or lower-right, with paired identifying features preserved
-> - Flat-first artwork with broad, uniform filled color masses and no internal shading or gradients
-> - One specifically named canvas color that fills the square edge-to-edge and remains visible in all four corners
-> - One-pass unfiltered candidate batches with no visual review, rejection, repair, or style-compliance retry
+> ### Bitcoin
 > 
-> ## Install
+> | Type              | Prefix example | Description                          |
+> |-------------------|----------------|--------------------------------------|
+> | Legacy P2PKH      | `1...`         | Original pay-to-public-key-hash      |
+> | Nested SegWit     | `3...`         | P2SH-wrapped P2WPKH                  |
+> | Native SegWit     | `bc1q...`      | Bech32 P2WPKH                        |
+> | Taproot key-path  | `bc1p...`      | Bech32m P2TR (key-path only)         |
 > 
-> Install the complete skill with the Agent Skills CLI:
+> ### Ethereum
+> 
+> - Standard 20-byte addresses
+> - Optional EIP-55 mixed-case checksum output and matching
+> 
+> ## Features
+> 
+> - Multi-process parallel search
+> - Live progress reporting (attempts, rate, elapsed time)
+> - Prefix, suffix and contains matching
+> - Case-sensitive option for Ethereum (useful for exact EIP-55 patterns)
+> - Rough difficulty estimation based on pattern length and alphabet size
+> - Private-key output in hex and WIF (Bitcoin)
+> - Independent verification helpers
+> - Self-contained Bech32 / Bech32m implementation (BIP-173 / BIP-350)
+> - No network access, no telemetry, no external key material
+> 
+> ## Requirements
+> 
+> - Python 3.10 or later
+> - A machine you fully control (preferably offline when the resulting keys will hold real funds)
+> 
+> ## Installation
 > 
 > ```bash
-> npx skills@latest add s1dashu/ip-as-logo-skill
+> git clone https://github.com/Leutenegger/vanity-kit.git
+> cd vanity-kit
+> python -m venv .venv
+> source .venv/bin/activate          # Windows: .venv\Scripts\activate
+> pip install -e .
 > ```
 > 
-> The installer detects the repository's root `SKILL.md`, lets you choose a supported coding agent, and installs the complete `ip-as-logo` directory, including its supporting assets. Use `--global` for a personal installation available across projects:
+> This installs the `vanity` command into the virtual environment.
+> 
+> ### Dependencies
+> 
+> - coincurve (libsecp256k1 bindings)
+> - pycryptodome (Keccak-256)
+> - base58
+> - click
+> - tqdm
+> 
+> ## Usage
 > 
 > ```bash
-> npx skills@latest add s1dashu/ip-as-logo-skill --global
+> # Ethereum address starting with "cafe"
+> vanity eth --prefix cafe
+> 
+> # Ethereum address ending with "dead", 8 worker processes
+> vanity eth --suffix dead --threads 8
+> 
+> # Ethereum with exact case matching and EIP-55 checksummed output
+> vanity eth --prefix Cafe --case-sensitive --checksum
+> 
+> # Bitcoin Legacy (starts with 1)
+> vanity btc --type legacy --prefix 1Love
+> 
+> # Bitcoin Nested SegWit (starts with 3)
+> vanity btc --type nested --prefix 3Love
+> 
+> # Bitcoin Native SegWit (starts with bc1q)
+> vanity btc --type segwit --prefix bc1qdead
+> 
+> # Bitcoin Taproot key-path (starts with bc1p)
+> vanity btc --type taproot --prefix bc1p --threads 6
+> 
+> # Substring anywhere in the address
+> vanity eth --contains dead
+> vanity btc --type segwit --contains cafe
 > ```
 > 
-> ## Agent compatibility
+> At least one of `--prefix`, `--suffix` or `--contains` is required.
 > 
-> It follows the open Agent Skills format and is designed to work with any compatible AI agent, rather than being tied to a specific agent product.
+> ### Common options
 > 
-> Supported agents include **Codex, Coze, Doubao, YouMind, Manus, Gemini Apps, and Replit Agent**. This skill only supports agents with built-in image-generation capabilities that can return generated images as assets.
+> | Option            | Description                                      |
+> |-------------------|--------------------------------------------------|
+> | `--prefix`, `-p`  | Required starting characters                     |
+> | `--suffix`, `-s`  | Required ending characters                       |
+> | `--contains`, `-c`| Required substring anywhere in the address       |
+> | `--threads`, `-t` | Number of worker processes (default 4)           |
+> | `--case-sensitive`| Exact case match (Ethereum only)                 |
+> | `--checksum`      | Print EIP-55 checksummed form (Ethereum only)    |
 > 
-> ## Use
+> ## Security
 > 
-> Ask your AI agent for an IP mascot logo, for example:
+> Vanity address generation creates private keys. Treat the process with the same care as any other key-generation tool.
 > 
-> ```text
-> Create a rounded ghost IP logo on a deep navy background.
+> 1. Run the software only on a computer you fully control.
+> 2. Prefer an air-gapped or offline environment when the resulting keys will hold real funds.
+> 3. After a match is found, independently verify that the printed private key derives the printed address before transferring any value. The package provides `verify_eth_address` and `verify_btc_address` helpers for this purpose.
+> 4. Never enter or paste private keys into websites, browser extensions, chat applications or untrusted software.
+> 5. Longer patterns require exponentially more work. Four characters are usually practical on a modern multi-core CPU; six or more can take hours or days.
+> 6. Clear terminal history and any temporary files after the session.
+> 
+> This project is independent open-source software. Review the source code before use. The author accepts no responsibility for loss of funds caused by incorrect usage, compromised machines, software defects, or any other reason.
+> 
+> See [SECURITY.md](SECURITY.md) for the full security policy.
+> 
+> ## Performance notes
+> 
+> VanityKit uses pure-Python orchestration with the coincurve library for elliptic-curve operations. It is slower than dedicated C++ or GPU tools such as VanitySearch or vanitygen-plusplus. It is intended for short patterns and for situations where a simple, readable, offline implementation is preferred.
+> 
+> ### Rough difficulty guidance
+> 
+> | Pattern length | Alphabet      | Approx. expected attempts |
+> |----------------|---------------|---------------------------|
+> | 3              | hex (16)      | ~4 000                    |
+> | 4              | hex (16)      | ~65 000                   |
+> | 5              | hex (16)      | ~1 000 000                |
+> | 6              | hex (16)      | ~16 000 000               |
+> | 4              | base58 (58)   | ~11 000 000               |
+> | 5              | base58 (58)   | ~650 000 000              |
+> 
+> Actual wall-clock time depends on CPU cores, clock speed, system load and the exact pattern.
+> 
+> ## Development
+> 
+> ```bash
+> pip install -e ".[dev]"
+> pytest -q
+> ruff check src tests
 > ```
 > 
-> The skill does not ask for a color-mode choice by default. Every default candidate uses three semantic colors: two IP base colors plus one specifically named canvas color. It no longer reserves any fraction of the candidate set for two-color logos. A two-color logo is generated only when the user explicitly requests it, and then uses canvas-colored negative space for facial marks rather than introducing a third color.
+> See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 > 
-> When the user already names an IP subject, the skill proposes three controlled design treatments of that subject. When the subject is open, it proposes familiar animal mascots first and ties each to a product attribute or brand promise. In open-ended batches, 95–100% of candidates should be familiar animals; non-animal subjects are limited to a small minority with a direct product connection, never used merely to manufacture novelty.
+> ## Limitations
 > 
-> Large batches create variety within commercially plausible animal mascots through species or breed, ear and muzzle proportions, expression, lower-left versus lower-right emergence, crop, silhouette, and secondary color organization. Clocks, locks, industrial tools, measuring instruments, vehicles, abstract machines, fantasy artifacts, and obscure creatures are not default company mascots.
+> - Pure-Python search is slower than specialised native tools.
+> - Taproot support is limited to the basic key-path construction (no script-path trees).
+> - The difficulty estimator is an approximation that assumes a uniform distribution over the address alphabet.
+> - Nested SegWit and Taproot are provided for completeness; most users will use Legacy or Native SegWit for vanity purposes.
 > 
-> If the skill runs inside a product repository, it inspects relevant read-only context before asking questions. If product context is insufficient, it asks one consolidated round of background questions. Once context is sufficient, it always presents three concise directions and proposes generating six independent images. It proceeds after the user agrees, or immediately when the user has already explicitly authorized six outputs.
+> ## Licence
 > 
-> When the user accepts all three directions, the default batch contains two variants per direction: `A1`, `A2`, `B1`, `B2`, `C1`, and `C2`. When the user selects one direction, the skill generates six controlled variants of that direction. If the user rejects the proposed quantity or distribution, their replacement instructions take precedence.
+> MIT License. See [LICENSE](LICENSE).
 > 
-> Compatible agents may generate the six candidates in parallel with subagents up to the runtime's available concurrency, using additional waves when needed. Codex can use ImageGen when available; other agent environments may use any configured image generator. If no generator is available, the skill asks the user to provide or enable one instead of pretending that an image was generated. Every result is a separate full-resolution square asset, never a six-logo contact sheet.
+> Copyright (c) 2026 Leutenegger
 > 
-> When the user does not supply a palette, the skill chooses and explicitly names a clearly chromatic but restrained canvas color rather than neon color or muddy gray. It keeps the normal design to exactly three semantic colors: two IP base colors plus the named canvas color. Prompts describe that color as filling the full square and do not use image-mode terminology.
-> 
-> ## Repository structure
-> 
-> ```text
-> SKILL.md
-> assets/ip-as-logo-wall.webp
-> README.md
-> LICENSE
-> ```
-> 
-> The skill itself intentionally consists of a single instruction document. The repository also includes the showcase image above, but no scripts, style references, or generation dependencies.
-> 
-> ## Model behavior
-> 
-> Image-generation models may still introduce unwanted shading, crop paired features, or add too much volume. The skill treats each batch as a one-pass draw: every returned image is preserved and presented without visual compliance review, scoring, filtering, repair, or retry. A call that returns no usable image asset is reported as a technical failure rather than fabricated or silently replaced.
-> 
-> ## License
-> 
-> MIT
+> # End of VanityKit source tree
+> # Copyright (c) 2026 Leutenegger
+> # MIT License
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/s1dashu/ip-as-logo-skill) · [官方網站](https://ipaslogo.com)
+[GitHub](https://github.com/Leutenegger/vanity-eth)
 
 ## 相關收錄
 
@@ -275,7 +341,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE category = "Other" AND file.name != "Leutenegger--vanity-eth"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -284,7 +350,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "s1dashu--ip-as-logo-skill" AND status != "archived"
+> WHERE language = "Python" AND file.name != "Leutenegger--vanity-eth" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -293,18 +359,18 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE week = "2026-W34" AND file.name != "Leutenegger--vanity-eth"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--vanity-eth");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "s1dashu--ip-as-logo-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Leutenegger--vanity-eth" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -320,7 +386,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "s1dashu" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE owner = "Leutenegger" AND file.name != "Leutenegger--vanity-eth"
 > SORT stars DESC
 > ```
 
@@ -328,7 +394,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--vanity-eth");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -345,7 +411,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--vanity-eth");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -378,7 +444,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--vanity-eth");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -402,7 +468,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--vanity-eth");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -439,7 +505,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Leutenegger--vanity-eth");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -522,7 +588,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-20** — 首次收錄
+> **2026-08-22** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -538,6 +604,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-22|2026-08-22]] — 再次上榜，3.5k stars
-- [[2026-08-21|2026-08-21]] — 再次上榜，3.2k stars
-- [[2026-08-20|2026-08-20]] — 首次收錄，2.1k stars
+- [[2026-08-22|2026-08-22]] — 首次收錄，803 stars

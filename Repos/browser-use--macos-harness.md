@@ -1,68 +1,69 @@
 ---
-repo: s1dashu/ip-as-logo-skill
-url: https://github.com/s1dashu/ip-as-logo-skill
-owner: s1dashu
-owner_type: User
-language: N/A
+repo: browser-use/macos-harness
+url: https://github.com/browser-use/macos-harness
+owner: browser-use
+owner_type: Organization
+language: Python
 license: MIT
-description: "A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos."
-homepage: "https://ipaslogo.com"
-stars: 3496
-stars_per_day: 1165
-forks: 172
-open_issues: 3
-created: 2026-08-18
-pushed_at: 2026-08-20
-first_seen: 2026-08-20
+description: "The simplest, thinnest harness that gives an LLM complete freedom to control a Mac."
+homepage: "https://github.com/browser-use/macos-harness"
+stars: 688
+stars_per_day: 138
+forks: 45
+open_issues: 6
+created: 2026-08-17
+pushed_at: 2026-08-17
+first_seen: 2026-08-22
 week: "2026-W34"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.1.2"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-20
+last_reviewed: 2026-08-22
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-08-25"
+appearances: 1
+next_review: "2026-08-29"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 29773
-readme_length: 6276
+repo_size_kb: 5640
+readme_length: 3507
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 5
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-20"
-star_history: "2026-08-20:2150,2026-08-21:3155,2026-08-22:3496"
+ring_history: "assess@2026-08-22"
+star_history: "2026-08-22:688"
 tags:
   - github
   - "category/other"
-  - "lang/other"
-  - "topic/codex"
-  - "topic/codex_skill"
-  - "topic/image_generation"
-  - "topic/logo_design"
-  - "topic/mascot_design"
+  - "lang/python"
+  - org
+  - "topic/accessibility"
+  - "topic/agent"
+  - "topic/automation"
+  - "topic/cdp"
+  - "topic/computer_use"
 aliases:
-  - "ip-as-logo-skill"
-  - "s1dashu/ip-as-logo-skill"
+  - "macos-harness"
+  - "browser-use/macos-harness"
 ---
 
-# ip-as-logo-skill
+# macos-harness
 
-**2.1k** stars · **2.1k** stars/天 · 建立 1 天前 · N/A · MIT
+**688** stars · **138** stars/天 · 建立 5 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+const me = dv.page("Repos/browser-use--macos-harness");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`ORG` `v0.1.2`
 
-`codex` `codex-skill` `image-generation` `logo-design` `mascot-design`
+`accessibility` `agent` `automation` `cdp` `computer-use` `macos` `python`
 
 > [!summary] 一句話摘要
-> A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
+> The simplest, thinnest harness that gives an LLM complete freedom to control a Mac.
 
 ## 專案簡介
 
-A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
+The simplest, thinnest harness that gives an LLM complete freedom to control a Mac.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/browser-use--macos-harness");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +126,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/browser-use--macos-harness");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,125 +150,142 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 99 |
-| Open Issues | 3 |
+| Forks | 45 |
+| Open Issues | 6 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-20 |
-| 建立日期 | 2026-08-18 |
-| 官方網站 | [Link](https://ipaslogo.com) |
-| Repo 大小 | 29.1 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/s1dashu/ip-as-logo-skill) |
-| Topics | `codex` `codex-skill` `image-generation` `logo-design` `mascot-design` |
+| 最後推送 | 2026-08-17 |
+| 建立日期 | 2026-08-17 |
+| 官方網站 | [Link](https://github.com/browser-use/macos-harness) |
+| Repo 大小 | 5.5 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/browser-use/macos-harness) |
+| Topics | `accessibility` `agent` `automation` `cdp` `computer-use` `macos` `python` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@s1dashu](https://github.com/s1dashu) | 24 |
+> | [@gregpr07](https://github.com/gregpr07) | 6 |
+
+**最新版本**：v0.1.2 — macOS Harness v0.1.2 (2026-08-17)
+
+> [!info]- Release Notes
+> Fix the animated project banner on PyPI by using the same absolute static-asset pattern as Browser Harness.
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-19 ~ 2026-08-20）
-> **活躍天數** 2 天 · **最新 commit** docs: update README and public site URL
+> [!abstract] 最近 10 次 commit（2026-08-15 ~ 2026-08-17）
+> **活躍天數** 2 天 · **最新 commit** fix: render project banner on PyPI
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#3](https://github.com/s1dashu/ip-as-logo-skill/issues/3) | This skill is very popular with Koreans. | 0 | 1 |
-> | [#2](https://github.com/s1dashu/ip-as-logo-skill/issues/2) | 合作申请！！ | 0 | 2 |
-> | [#1](https://github.com/s1dashu/ip-as-logo-skill/issues/1) | made an avatar generator based on this skill | 0 | 1 |
+> | [#6](https://github.com/browser-use/macos-harness/issues/6) | mac.click() silently has no effect on native AppKit apps (Fi | 0 | 3 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # IP as Logo
+> # macOS Harness ⌘
 > 
-> `ip-as-logo` is a compact Agent Skill for generating highly simplified company-ready mascot logos. It treats the result as a logo first and a character second: familiar cute animals by default, bold rounded silhouettes, strict complexity limits, oversized corner composition, and broad flat color masses.
+> The simplest, thinnest harness that gives an LLM complete freedom to complete
+> virtually any task on a Mac.
 > 
-> You can also browse the free [IP as Logo Skill website](https://ipaslogo.com), a searchable library backed by Cloudflare R2 and Supabase.
-> 
-> **Don't have Codex, Doubao, Coze, or Workbuddy?** [Visit our website](https://ipaslogo.com) to download ready-made logos for free. Every logo is free for commercial use.
-> 
-> ## What it enforces
-> 
-> - One dominant silhouette built from roughly 6–10 basic shapes
-> - Three semantic colors by default: two IP base colors plus one background color
-> - Three proposed directions followed by six independently generated candidates after user approval
-> - Familiar, broadly appealing animals as the default open-ended subject; objects, machines, fantasy artifacts, and obscure creatures require a clear product reason
-> - A quantified restrained-color default: softened chromatic backgrounds, warm neutrals, and explicit silhouette/detail contrast targets
-> - Thick, rounded forms without sharp or fragile details
-> - An 82–90% close crop that visibly peeks or rises from the lower-left or lower-right, with paired identifying features preserved
-> - Flat-first artwork with broad, uniform filled color masses and no internal shading or gradients
-> - One specifically named canvas color that fills the square edge-to-edge and remains visible in all four corners
-> - One-pass unfiltered candidate batches with no visual review, rejection, repair, or style-compliance retry
-> 
-> ## Install
-> 
-> Install the complete skill with the Agent Skills CLI:
-> 
-> ```bash
-> npx skills@latest add s1dashu/ip-as-logo-skill
-> ```
-> 
-> The installer detects the repository's root `SKILL.md`, lets you choose a supported coding agent, and installs the complete `ip-as-logo` directory, including its supporting assets. Use `--global` for a personal installation available across projects:
-> 
-> ```bash
-> npx skills@latest add s1dashu/ip-as-logo-skill --global
-> ```
-> 
-> ## Agent compatibility
-> 
-> It follows the open Agent Skills format and is designed to work with any compatible AI agent, rather than being tied to a specific agent product.
-> 
-> Supported agents include **Codex, Coze, Doubao, YouMind, Manus, Gemini Apps, and Replit Agent**. This skill only supports agents with built-in image-generation capabilities that can return generated images as assets.
-> 
-> ## Use
-> 
-> Ask your AI agent for an IP mascot logo, for example:
+> The agent writes what is missing, mid-task. No framework, no recipes, no rails.
+> One Python process connected directly to macOS, your real browser, and your files.
 > 
 > ```text
-> Create a rounded ghost IP logo on a deep navy background.
+> ● agent: wants to do something no helper exists for
+> │
+> ● sees the app and uses raw macOS primitives
+> │
+> ● writes the missing logic in ordinary Python
+> │
+> ✓ task complete                                  no app-specific tool added
 > ```
 > 
-> The skill does not ask for a color-mode choice by default. Every default candidate uses three semantic colors: two IP base colors plus one specifically named canvas color. It no longer reserves any fraction of the candidate set for two-color logos. A two-color logo is generated only when the user explicitly requests it, and then uses canvas-colored negative space for facial marks rather than introducing a third color.
+> **Your agent now has a Mac.**
 > 
-> When the user already names an IP subject, the skill proposes three controlled design treatments of that subject. When the subject is open, it proposes familiar animal mascots first and ties each to a product attribute or brand promise. In open-ended batches, 95–100% of candidates should be familiar animals; non-animal subjects are limited to a small minority with a direct product connection, never used merely to manufacture novelty.
+> ## Give it to your agent
 > 
-> Large batches create variety within commercially plausible animal mascots through species or breed, ear and muzzle proportions, expression, lower-left versus lower-right emergence, crop, silhouette, and secondary color organization. Clocks, locks, industrial tools, measuring instruments, vehicles, abstract machines, fantasy artifacts, and obscure creatures are not default company mascots.
-> 
-> If the skill runs inside a product repository, it inspects relevant read-only context before asking questions. If product context is insufficient, it asks one consolidated round of background questions. Once context is sufficient, it always presents three concise directions and proposes generating six independent images. It proceeds after the user agrees, or immediately when the user has already explicitly authorized six outputs.
-> 
-> When the user accepts all three directions, the default batch contains two variants per direction: `A1`, `A2`, `B1`, `B2`, `C1`, and `C2`. When the user selects one direction, the skill generates six controlled variants of that direction. If the user rejects the proposed quantity or distribution, their replacement instructions take precedence.
-> 
-> Compatible agents may generate the six candidates in parallel with subagents up to the runtime's available concurrency, using additional waves when needed. Codex can use ImageGen when available; other agent environments may use any configured image generator. If no generator is available, the skill asks the user to provide or enable one instead of pretending that an image was generated. Every result is a separate full-resolution square asset, never a six-logo contact sheet.
-> 
-> When the user does not supply a palette, the skill chooses and explicitly names a clearly chromatic but restrained canvas color rather than neon color or muddy gray. It keeps the normal design to exactly three semantic colors: two IP base colors plus the named canvas color. Prompts describe that color as filling the full square and do not use image-mode terminology.
-> 
-> ## Repository structure
+> Paste this into Codex or Claude Code:
 > 
 > ```text
-> SKILL.md
-> assets/ip-as-logo-wall.webp
-> README.md
-> LICENSE
+> Install or upgrade macOS Harness from https://github.com/browser-use/macos-harness with uv using Python 3.12. Register the skill printed by `macos-harness skill`, then run `macos-harness doctor`. Explain any missing macOS permissions and ask before requesting them. Finally, verify the harness by capturing one already-running app without bringing it to the foreground.
 > ```
 > 
-> The skill itself intentionally consists of a single instruction document. The repository also includes the showcase image above, but no scripts, style references, or generation dependencies.
+> That is it. The agent installs the package, teaches itself the workflow, checks
+> permissions, and verifies the connection. [Manual setup](install.md) is available too.
 > 
-> ## Model behavior
+> ## Six primitives. The whole Mac.
 > 
-> Image-generation models may still introduce unwanted shading, crop paired features, or add too much volume. The skill treats each batch as a one-pass draw: every returned image is preserved and presented without visual compliance review, scoring, filtering, repair, or retry. A call that returns no usable image asset is reported as a technical failure rather than fabricated or silently replaced.
+> ```bash
+> macos-harness <<'PY'
+> frame = mac.see("Spotify")
+> mac.key("cmd+k", app="Spotify")
+> mac.type("Alessia Cara", app="Spotify")
+> mac.click(640, 420, app="Spotify")
 > 
-> ## License
+> item = mac.ax.at(640, 420, app="Spotify")
+> mac.script('tell application "Spotify" to play')
 > 
-> MIT
+> print(browser.page_info())
+> print(list(Path.home().iterdir()))
+> PY
+> ```
+> 
+> Think in `see`, `key`, `type`, `click`, `ax`, and `script`. `browser`, `Path`, and
+> `subprocess` are ready in the same Python process.
+> 
+> There are no Spotify tools, Slack tools, or Final Cut tools. The model gets raw
+> primitives and writes the rest.
+> 
+> ## How it works
+> 
+> ```text
+>                               one persistent Python process
+>                                            │
+>                     ┌──────────────────────┼──────────────────────┐
+>                     │                      │                      │
+>                  mac.*                  browser.*          Path / subprocess
+>                     │                      │                      │
+>         ┌───────────┼───────────┐     Browser Harness        files + shell
+>         │           │           │            │
+>     CGWindow     CGEvent      AX + Apple      CDP
+>    screenshots    to PID       Events          │
+>         │           │           │          real Chrome
+>         └───────────┴───────────┘
+>                     │
+>               native + Electron apps
+> ```
+> 
+> - Captures background app windows without bringing them forward
+> - Sends keyboard and coordinate input directly to an app PID
+> - Draws an animated, click-through pointer without moving your real cursor
+> - Exposes raw Apple Accessibility and Apple Events when vision is not enough
+> - Uses Browser Harness for the real, logged-in browser
+> - Keeps ordinary Python and the local filesystem within reach
+> 
+> ## Permissions and privacy
+> 
+> `macos-harness doctor` reports the macOS permissions actually needed. The harness
+> never activates or raises a target app and never moves the physical pointer.
+> 
+> Anonymous telemetry is enabled by default. It records only the CLI command
+> category, success, duration, package version, OS/architecture, and detected agent
+> client. It never records prompts, app names, screenshots, UI text, scripts, paths,
+> or window titles.
+> 
+> ```bash
+> macos-harness telemetry disable
+> ```
+> 
+> Experimental. macOS only. [MIT licensed](LICENSE).
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/s1dashu/ip-as-logo-skill) · [官方網站](https://ipaslogo.com)
+[GitHub](https://github.com/browser-use/macos-harness) · [官方網站](https://github.com/browser-use/macos-harness)
 
 ## 相關收錄
 
@@ -275,7 +293,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE category = "Other" AND file.name != "browser-use--macos-harness"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -284,7 +302,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "s1dashu--ip-as-logo-skill" AND status != "archived"
+> WHERE language = "Python" AND file.name != "browser-use--macos-harness" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -293,18 +311,18 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE week = "2026-W34" AND file.name != "browser-use--macos-harness"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/browser-use--macos-harness");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "s1dashu--ip-as-logo-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "browser-use--macos-harness" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -320,7 +338,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "s1dashu" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE owner = "browser-use" AND file.name != "browser-use--macos-harness"
 > SORT stars DESC
 > ```
 
@@ -328,7 +346,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/browser-use--macos-harness");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -345,7 +363,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/browser-use--macos-harness");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -378,7 +396,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/browser-use--macos-harness");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -402,7 +420,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/browser-use--macos-harness");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -439,7 +457,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/browser-use--macos-harness");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -522,7 +540,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-20** — 首次收錄
+> **2026-08-22** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -538,6 +556,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-22|2026-08-22]] — 再次上榜，3.5k stars
-- [[2026-08-21|2026-08-21]] — 再次上榜，3.2k stars
-- [[2026-08-20|2026-08-20]] — 首次收錄，2.1k stars
+- [[2026-08-22|2026-08-22]] — 首次收錄，688 stars
