@@ -1,20 +1,20 @@
 ---
-repo: vvxw/deploy-vercel
-url: https://github.com/vvxw/deploy-vercel
-owner: vvxw
+repo: MengTo/threeui
+url: https://github.com/MengTo/threeui
+owner: MengTo
 owner_type: User
-language: JavaScript
-license: N/A
-description: "Install Command：npm install"
-homepage: ""
-stars: 1131
-stars_per_day: 283
-forks: 235
-open_issues: 5
-created: 2026-08-18
-pushed_at: 2026-08-18
-first_seen: 2026-08-22
-week: "2026-W34"
+language: HTML
+license: MIT
+description: "Open-source ThreeUI Community catalog with live interactive components and complete Community source."
+homepage: "https://threeui.com"
+stars: 1940
+stars_per_day: 1940
+forks: 197
+open_issues: 4
+created: 2026-08-21
+pushed_at: 2026-08-22
+first_seen: 2026-08-23
+week: "2026-W35"
 month: "2026-08"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-22
+last_reviewed: 2026-08-23
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-08-26"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 28
-readme_length: 2362
+issue_close_rate: 20
+repo_size_kb: 43170
+readme_length: 4252
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-22"
-star_history: "2026-08-22:993,2026-08-23:1131"
+ring_history: "assess@2026-08-23"
+star_history: "2026-08-23:1940"
 tags:
   - github
   - "category/other"
-  - "lang/javascript"
+  - "lang/html"
+  - "topic/react"
+  - "topic/shaders"
+  - "topic/threejs"
+  - "topic/ui_components"
+  - "topic/webgl"
 aliases:
-  - "deploy-vercel"
-  - "vvxw/deploy-vercel"
+  - "threeui"
+  - "MengTo/threeui"
 ---
 
-# deploy-vercel
+# threeui
 
-**993** stars · **331** stars/天 · 建立 3 天前 · JavaScript · 未標註授權
+**1.9k** stars · **1.9k** stars/天 · 建立 1 天前 · HTML · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/vvxw--deploy-vercel");
+const me = dv.page("Repos/MengTo--threeui");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -72,18 +77,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 `個人專案`
 
+`react` `shaders` `threejs` `ui-components` `webgl`
+
 > [!summary] 一句話摘要
-> Install Command：npm install
+> Open-source ThreeUI Community catalog with live interactive components and complete Community source.
 
 ## 專案簡介
 
-Install Command：npm install
+Open-source ThreeUI Community catalog with live interactive components and complete Community source.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/MengTo--threeui");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ Install Command：npm install
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/MengTo--threeui");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,133 +149,142 @@ Install Command：npm install
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 200 |
-| Open Issues | 5 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-18 |
-| 建立日期 | 2026-08-18 |
-| Repo 大小 | 28 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/vvxw/deploy-vercel) |
+| Forks | 197 |
+| Open Issues | 4 |
+| Issue 解決率 | 20% (1 closed) |
+| 最後推送 | 2026-08-22 |
+| 建立日期 | 2026-08-21 |
+| 官方網站 | [Link](https://threeui.com) |
+| Repo 大小 | 42.2 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/MengTo/threeui) |
+| Topics | `react` `shaders` `threejs` `ui-components` `webgl` |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `ws` `axios` `@grpc/grpc-js` `@grpc/proto-loader` `systeminformation`
+> `three128` `three165` `@types/node` `@types/react` `@types/react-dom` `@types/three` `@vitejs/plugin-react` `react` `react-dom` `three` `typescript` `vite`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 64
->     "HTML" : 36
+>     "HTML" : 96
+>     "TypeScript" : 3
+>     "JavaScript" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@vvxw](https://github.com/vvxw) | 5 |
+> | [@MengTo](https://github.com/MengTo) | 12 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-18 ~ 2026-08-18）
-> **活躍天數** 1 天 · **最新 commit** Update README.md
+> [!abstract] 最近 10 次 commit（2026-08-21 ~ 2026-08-22）
+> **活躍天數** 2 天 · **最新 commit** Fix Community sync sanitization
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#6](https://github.com/vvxw/deploy-vercel/issues/6) | 地区编码经过测试有几个无法使用 | 0 | 0 |
+> | [#4](https://github.com/MengTo/threeui/issues/4) | Unable to authenticate as Lifetime Member | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> ## Vercel 部署说明
-> 1：点击Use this template ➡ Create a new repostory 创建一个私密项目, 名称随意
+> # ThreeUI Community
 > 
-> 2: 修改index.js文件里的环境变量保存，不需要的留空
+> The open-source, login-free edition of ThreeUI. It uses the same application shell, layout, navigation, browse grid, search, themes, responsive behavior, component pages, live renderers, controls, variant picker, and source tabs as the main project.
 > 
-> 3: 用AI生成一个纯html的网页替换`index.thml`伪装网页
+> The catalog is the only product-level difference: Pro and Beta components are removed. Every Community component keeps all of its free variants and controls.
 > 
-> 4：打开vercel连接项目部署
->   - 打开 Vercel 控制台
->   - 点击 “New Project”
->   - Import该项目
->   - 选择默认配置, Install Command打开，设置为`npm install`
->   - 点击 “Deploy”, 等待部署完成
+> [Browse ThreeUI](https://threeui.com) · [View the source on GitHub](https://github.com/MengTo/threeui)
 > 
-> 5：部署完成后确认没问题，将反代后的域名填写到`index.js`的DOMAIN环境变量里, 然后用 https://www.jshaman.com/index.html 混淆替换后保存
+> ## Included
 > 
-> 6：获取订阅信息，修改优选域名使用(节点里的address字段),可以自行套订阅器，比如：https://sub.eooce.xx.kg
+> - 50 Community parent components
+> - 111 Community routes
+> - 141 free variant records, plus 23 singleton components (164 browse results)
+> - Complete Community implementation source and required assets
+> - No authentication, account state, checkout runtime, Pro implementation, or Beta implementation
+> - `Get Pro` links to `https://threeui.com/pricing`
 > 
-> ## Vercel 常用地区代码对照表
+> ## Run locally
 > 
-> 下面是常见 Vercel `regions` 代码对应关系：
-> 
-> | 地区代码 | 城市/区域 | 国家/地区 | 中文说明 |
-> |---|---|---|---|
-> | `hnd1` | Tokyo | Japan | 日本东京 |
-> | `kix1` | Osaka | Japan | 日本大阪 |
-> | `icn1` | Seoul | South Korea | 韩国首尔 |
-> | `hkg1` | Hong Kong | Hong Kong | 中国香港 |
-> | `sin1` | Singapore | Singapore | 新加坡 |
-> | `syd1` | Sydney | Australia | 澳大利亚悉尼 |
-> | `bom1` | Mumbai | India | 印度孟买 |
-> | `del1` | New Delhi | India | 印度新德里 |
-> | `fra1` | Frankfurt | Germany | 德国法兰克福 |
-> | `lhr1` | London | United Kingdom | 英国伦敦 |
-> | `cdg1` | Paris | France | 法国巴黎 |
-> | `ams1` | Amsterdam | Netherlands | 荷兰阿姆斯特丹 |
-> | `mad1` | Madrid | Spain | 西班牙马德里 |
-> | `dub1` | Dublin | Ireland | 爱尔兰都柏林 |
-> | `dxb1` | Dubai | United Arab Emirates | 阿联酋迪拜 |
-> | `jnb1` | Johannesburg | South Africa | 南非约翰内斯堡 |
-> | `cpt1` | Cape Town | South Africa | 南非开普敦 |
-> | `gru1` | São Paulo | Brazil | 巴西圣保罗 |
-> | `sfo1` | San Francisco | United States | 美国旧金山 |
-> | `iad1` | Washington, D.C. | United States | 美国华盛顿特区 |
-> | `pdx1` | Portland | United States | 美国波特兰 |
-> | `mia1` | Miami | United States | 美国迈阿密 |
-> | `ewr1` | Newark | United States | 美国纽瓦克 |
-> | `yul1` | Montréal | Canada | 加拿大蒙特利尔 |
-> 
-> ---
-> 
-> ## 注意事项
-> 
-> 部署成功后，访问项目地址，确认：
-> 
-> 1. 页面能正常访问
-> 2. 生成的订阅链接能获取到节点
-> 3. vervel分配的域名已被墙，无法使用直连节点
-> 4. 哪吒不亮，不用填写
-> 
-> ## 使用cloudflare的workers或snippets反代项目域名，给节点套CDN加速
 > ```bash
-> export default {
->     async fetch(request, env) {
->         let url = new URL(request.url);
->         if (url.pathname.startsWith('/')) {
->             var arrStr = [
->                 'xxx-xxx.vercel.app',   // 此处单引号里填写你的vercel分配的域名，不包含https://
->             ];
->             url.protocol = 'https:'
->             url.hostname = getRandomArray(arrStr)
->             let new_request = new Request(url, request);
->             return fetch(new_request);
->         }
->         return env.ASSETS.fetch(request);
->     },
-> };
-> function getRandomArray(array) {
->   const randomIndex = Math.floor(Math.random() * array.length);
->   return array[randomIndex];
+> npm install
+> npm run dev
+> ```
+> 
+> Run the complete publication boundary, type, and production-build checks:
+> 
+> ```bash
+> npm run build
+> ```
+> 
+> ## Install the React package
+> 
+> Install the public Community component library from npm:
+> 
+> ```bash
+> npm install @designcodeio/threeui
+> ```
+> 
+> Import a component and the shared styles:
+> 
+> ```tsx
+> import { AtTheHorizon } from "@designcodeio/threeui";
+> import "@designcodeio/threeui/style.css";
+> 
+> export function Hero() {
+>   return ;
 > }
 > ```
+> 
+> For the smallest development import graph, use a component subpath:
+> 
+> ```tsx
+> import { AtTheHorizon } from "@designcodeio/threeui/components/AtTheHorizon";
+> ```
+> 
+> Components that render full HTML documents expect their runtime files at the same root-relative URLs used by the ThreeUI preview. Copy the needed files from `node_modules/@designcodeio/threeui/lib-dist/assets/` into your app's public directory, or override the component's `sourceUrl` or `assetBaseUrl` prop where available.
+> 
+> ## Pro source access
+> 
+> Pro implementation source is deliberately not published to npm. Active ThreeUI Pro members authenticate through the browser and download an entitled source bundle with the public CLI:
+> 
+> ```bash
+> npx @designcodeio/threeui-cli add cross-beam
+> ```
+> 
+> The CLI uses OAuth with PKCE, stores its refreshable session with owner-only permissions, checks the account entitlement on every server request, and refuses to overwrite changed project files unless `--force` is supplied. Run `npx @designcodeio/threeui-cli --help` for login, logout, destination, and development endpoint options.
+> 
+> ## Synchronization
+> 
+> The checked-in repository runs independently. Maintainers can refresh its Community subset from a separately held main-project snapshot:
+> 
+> ```bash
+> npm run sync:community -- /path/to/main-threeui
+> ```
+> 
+> The sync fails closed, filters Pro and Beta before generating the public import graph, preserves all free metadata and options, removes restricted font assets, and writes:
+> 
+> - `public/community-sync-report.json` — counts plus per-component variant/control parity
+> - `public/source-code.json` — Community source bundles used by the Code tab
+> - `src/data/shaders.tsx` — Community-only catalog and renderer imports
+> 
+> The private ThreeUI repository runs this synchronization after every successful push to `main`. A no-op sync exits without a release. Changes update the `automation/community-sync` branch and open one reviewed pull request here. New public components, variants, or controls infer a minor release; removals infer a major release; compatible source changes infer a patch release. Merging a versioned sync pull request publishes the new package through npm trusted publishing with provenance.
+> 
+> The public workflow also runs a clean build, boundary audit, package creation, and anonymous installation smoke test before release. The Pro installer is versioned and published separately; changes to Pro component content do not require a CLI release.
+> 
+> ## License
+> 
+> Application code, Community component code, and ThreeUI-authored Community imagery are MIT licensed. Bundled open fonts remain under the SIL Open Font License 1.1, and bundled Three.js runtime files remain MIT licensed. Remote catalog thumbnails and previews loaded from `https://threeui.com` are not redistributed by this repository. See `ASSET-LICENSES.md`, `FONT-LICENSES.md`, and `THIRD_PARTY_NOTICES.md`.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/vvxw/deploy-vercel)
+[GitHub](https://github.com/MengTo/threeui) · [官方網站](https://threeui.com)
 
 ## 相關收錄
 
@@ -276,7 +292,7 @@ Install Command：npm install
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "vvxw--deploy-vercel"
+> WHERE category = "Other" AND file.name != "MengTo--threeui"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -285,7 +301,7 @@ Install Command：npm install
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "vvxw--deploy-vercel" AND status != "archived"
+> WHERE language = "HTML" AND file.name != "MengTo--threeui" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -294,18 +310,18 @@ Install Command：npm install
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "vvxw--deploy-vercel"
+> WHERE week = "2026-W35" AND file.name != "MengTo--threeui"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/MengTo--threeui");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "vvxw--deploy-vercel" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "MengTo--threeui" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -321,7 +337,7 @@ Install Command：npm install
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "vvxw" AND file.name != "vvxw--deploy-vercel"
+> WHERE owner = "MengTo" AND file.name != "MengTo--threeui"
 > SORT stars DESC
 > ```
 
@@ -329,7 +345,7 @@ Install Command：npm install
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/MengTo--threeui");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -346,7 +362,7 @@ Install Command：npm install
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/MengTo--threeui");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -379,7 +395,7 @@ Install Command：npm install
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/MengTo--threeui");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -403,7 +419,7 @@ Install Command：npm install
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/MengTo--threeui");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -440,7 +456,7 @@ Install Command：npm install
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/MengTo--threeui");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -523,7 +539,7 @@ Install Command：npm install
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-22** — 首次收錄
+> **2026-08-23** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -539,5 +555,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-23|2026-08-23]] — 再次上榜，1.1k stars
-- [[2026-08-22|2026-08-22]] — 首次收錄，993 stars
+- [[2026-08-23|2026-08-23]] — 首次收錄，1.9k stars

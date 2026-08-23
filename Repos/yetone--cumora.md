@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains."
 homepage: "https://cumora.ai"
-stars: 2858
-stars_per_day: 715
-forks: 346
-open_issues: 7
+stars: 2902
+stars_per_day: 580
+forks: 350
+open_issues: 6
 created: 2026-08-17
-pushed_at: 2026-08-21
+pushed_at: 2026-08-22
 first_seen: 2026-08-19
 week: "2026-W34"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-08-25"
+appearances: 5
+next_review: "2026-08-26"
 contributor_count: 4
 engagement: "medium"
 issue_close_rate: 14
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-19"
-star_history: "2026-08-19:2416,2026-08-20:2702,2026-08-21:2780,2026-08-22:2858"
+star_history: "2026-08-19:2416,2026-08-20:2702,2026-08-21:2780,2026-08-22:2858,2026-08-23:2902"
 tags:
   - github
   - "category/other"
@@ -556,6 +556,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-23|2026-08-23]] — 再次上榜，2.9k stars
 - [[2026-08-22|2026-08-22]] — 再次上榜，2.9k stars
 - [[2026-08-21|2026-08-21]] — 再次上榜，2.8k stars
 - [[2026-08-20|2026-08-20]] — 再次上榜，2.7k stars

@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent."
 homepage: "https://www.copilotkit.ai/openbot"
-stars: 2137
-stars_per_day: 427
-forks: 230
-open_issues: 22
+stars: 2337
+stars_per_day: 390
+forks: 268
+open_issues: 29
 created: 2026-08-17
 pushed_at: 2026-08-22
 first_seen: 2026-08-21
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-25"
+appearances: 3
+next_review: "2026-08-26"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 5
@@ -42,7 +42,7 @@ last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-21"
-star_history: "2026-08-21:1678,2026-08-22:2137"
+star_history: "2026-08-21:1678,2026-08-22:2137,2026-08-23:2337"
 tags:
   - github
   - "category/other"
@@ -615,5 +615,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-23|2026-08-23]] — 再次上榜，2.3k stars
 - [[2026-08-22|2026-08-22]] — 再次上榜，2.1k stars
 - [[2026-08-21|2026-08-21]] — 首次收錄，1.7k stars

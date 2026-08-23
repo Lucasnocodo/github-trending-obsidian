@@ -3634,24 +3634,24 @@
   },
   "yetone/cumora": {
     "first_seen": "2026-08-19",
-    "last_seen": "2026-08-22",
-    "times_seen": 4,
+    "last_seen": "2026-08-23",
+    "times_seen": 5,
     "stars_first": 2416,
-    "stars_last": 2858
+    "stars_last": 2902
   },
   "s1dashu/ip-as-logo-skill": {
     "first_seen": "2026-08-20",
-    "last_seen": "2026-08-22",
-    "times_seen": 3,
+    "last_seen": "2026-08-23",
+    "times_seen": 4,
     "stars_first": 2150,
-    "stars_last": 3496
+    "stars_last": 3786
   },
   "CopilotKit/OpenBot": {
     "first_seen": "2026-08-21",
-    "last_seen": "2026-08-22",
-    "times_seen": 2,
+    "last_seen": "2026-08-23",
+    "times_seen": 3,
     "stars_first": 1678,
-    "stars_last": 2137
+    "stars_last": 2337
   },
   "dsh-market/dsh-market": {
     "first_seen": "2026-08-21",
@@ -3662,10 +3662,10 @@
   },
   "cinderline/northcinder": {
     "first_seen": "2026-08-21",
-    "last_seen": "2026-08-22",
-    "times_seen": 2,
+    "last_seen": "2026-08-23",
+    "times_seen": 3,
     "stars_first": 1200,
-    "stars_last": 1203
+    "stars_last": 1205
   },
   "ZSvirt/zsvirt": {
     "first_seen": "2026-08-21",
@@ -3683,36 +3683,36 @@
   },
   "Tiger3807861189/DeepSeek-V4-J-Space-Capability-Realization-Report": {
     "first_seen": "2026-08-21",
-    "last_seen": "2026-08-22",
-    "times_seen": 2,
+    "last_seen": "2026-08-23",
+    "times_seen": 3,
     "stars_first": 1037,
-    "stars_last": 1036
+    "stars_last": 1038
   },
   "wang2122/sprix-sage-router": {
     "first_seen": "2026-08-22",
-    "last_seen": "2026-08-22",
-    "times_seen": 1,
+    "last_seen": "2026-08-23",
+    "times_seen": 2,
     "stars_first": 1009,
-    "stars_last": 1009
+    "stars_last": 1243
   },
   "vvxw/deploy-vercel": {
     "first_seen": "2026-08-22",
-    "last_seen": "2026-08-22",
-    "times_seen": 1,
+    "last_seen": "2026-08-23",
+    "times_seen": 2,
     "stars_first": 993,
-    "stars_last": 993
+    "stars_last": 1131
   },
   "Leutenegger/watermarks-remover": {
     "first_seen": "2026-08-22",
-    "last_seen": "2026-08-22",
-    "times_seen": 1,
+    "last_seen": "2026-08-23",
+    "times_seen": 2,
     "stars_first": 929,
-    "stars_last": 929
+    "stars_last": 934
   },
   "Leutenegger/vanity-eth": {
     "first_seen": "2026-08-22",
-    "last_seen": "2026-08-22",
-    "times_seen": 1,
+    "last_seen": "2026-08-23",
+    "times_seen": 2,
     "stars_first": 803,
     "stars_last": 803
   },
@@ -3722,5 +3722,12 @@
     "times_seen": 1,
     "stars_first": 688,
     "stars_last": 688
+  },
+  "MengTo/threeui": {
+    "first_seen": "2026-08-23",
+    "last_seen": "2026-08-23",
+    "times_seen": 1,
+    "stars_first": 1940,
+    "stars_last": 1940
   }
 }
