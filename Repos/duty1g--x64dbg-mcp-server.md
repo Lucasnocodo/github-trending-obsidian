@@ -1,68 +1,68 @@
 ---
-repo: s1dashu/ip-as-logo-skill
-url: https://github.com/s1dashu/ip-as-logo-skill
-owner: s1dashu
+repo: duty1g/x64dbg-mcp-server
+url: https://github.com/duty1g/x64dbg-mcp-server
+owner: duty1g
 owner_type: User
-language: N/A
+language: Zig
 license: MIT
-description: "A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos."
-homepage: "https://ipaslogo.com"
-stars: 3925
-stars_per_day: 785
-forks: 191
-open_issues: 7
-created: 2026-08-18
-pushed_at: 2026-08-22
-first_seen: 2026-08-20
-week: "2026-W34"
+description: "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg programmatically: set breakpoints, step through code, read memory, dump registers, and more.  Built with Zig — zero dependencies, single-binary output, cros"
+homepage: ""
+stars: 921
+stars_per_day: 921
+forks: 93
+open_issues: 0
+created: 2026-08-22
+pushed_at: 2026-08-23
+first_seen: 2026-08-24
+week: "2026-W35"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "1.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-20
+last_reviewed: 2026-08-24
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
+appearances: 1
 next_review: "2026-08-27"
 contributor_count: 1
-engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 29773
-readme_length: 6276
+engagement: "medium"
+issue_close_rate: 100
+repo_size_kb: 1768
+readme_length: 9765
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 2
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-20"
-star_history: "2026-08-20:2150,2026-08-21:3155,2026-08-22:3496,2026-08-23:3786,2026-08-24:3925"
+ring_history: "assess@2026-08-24"
+star_history: "2026-08-24:921"
 tags:
   - github
   - "category/other"
-  - "lang/other"
-  - "topic/codex"
-  - "topic/codex_skill"
-  - "topic/image_generation"
-  - "topic/logo_design"
-  - "topic/mascot_design"
+  - "lang/zig"
+  - "topic/ai_agents"
+  - "topic/ai_debugging"
+  - "topic/binary_analysis"
+  - "topic/claude"
+  - "topic/claude_code"
 aliases:
-  - "ip-as-logo-skill"
-  - "s1dashu/ip-as-logo-skill"
+  - "x64dbg-mcp-server"
+  - "duty1g/x64dbg-mcp-server"
 ---
 
-# ip-as-logo-skill
+# x64dbg-mcp-server
 
-**2.1k** stars · **2.1k** stars/天 · 建立 1 天前 · N/A · MIT
+**921** stars · **921** stars/天 · 建立 1 天前 · Zig · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+const me = dv.page("Repos/duty1g--x64dbg-mcp-server");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`個人專案` `1.0`
 
-`codex` `codex-skill` `image-generation` `logo-design` `mascot-design`
+`ai-agents` `ai-debugging` `binary-analysis` `claude` `claude-code` `malware-analysis` `malware-research` `malware-scanner` `mcp` `mcp-server` `mcp-servers` `x64dbg` `x64dbg-mcp` `x64dbg-plugin` `x64dbg-tools` `xdbg` `zig` `zig-lang` `ziglang`
 
 > [!summary] 一句話摘要
-> A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
+> x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg programmatically: set breakpoints, step through code, read memory, dump registers, and more.  Built with Zig — zero dependencies, single-binary output, cros
 
 ## 專案簡介
 
-A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
+x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg programmatically: set breakpoints, step through code, read memory, dump registers, and more.  Built with Zig — zero dependencies, single-binary output, cros
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/duty1g--x64dbg-mcp-server");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +125,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/duty1g--x64dbg-mcp-server");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,125 +149,265 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 99 |
-| Open Issues | 3 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-20 |
-| 建立日期 | 2026-08-18 |
-| 官方網站 | [Link](https://ipaslogo.com) |
-| Repo 大小 | 29.1 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/s1dashu/ip-as-logo-skill) |
-| Topics | `codex` `codex-skill` `image-generation` `logo-design` `mascot-design` |
+| Forks | 93 |
+| Open Issues | 0 |
+| Issue 解決率 | 100% (1 closed) |
+| 最後推送 | 2026-08-23 |
+| 建立日期 | 2026-08-22 |
+| Repo 大小 | 1.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/duty1g/x64dbg-mcp-server) |
+| Topics | `ai-agents` `ai-debugging` `binary-analysis` `claude` `claude-code` `malware-analysis` `malware-research` `malware-scanner` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@s1dashu](https://github.com/s1dashu) | 24 |
+> | [@duty1g](https://github.com/duty1g) | 13 |
+
+**最新版本**：1.0 — x64dbg - v1.0  (2026-08-22)
+
+> [!info]- Release Notes
+> ## v1.0 — 71 MCP Tools, Full Debugger Control
+> 
+> Native x64dbg MCP plugin built in Zig. Zero dependencies, single binary, x32 + x64.
+> 
+> ### Highlights
+> 
+> - **71 MCP tools** covering the full debugging workflow
+> - **Dual transport** — Streamable HTTP + SSE (MCP 2024-11-05)
+> - **x32 and x64** from a single codebase
+> - **Config dialog** — change IP/port from the Plugins menu
+> - **Auto-start** — server launches with x64dbg, configurable
+> 
+> ### Tools
+> 
+> | Category | Tools |
+> |----------|-------|
+> | Execution | run, StepInto, StepOver, StepOut, PauseDebug, StopDebug, RestartDebug, RunToAddress, TraceInto |
+> | Breakpoints | SetBreakpoint, SetHardwareBreakpoint, SetConditionalBreakpoint, EnableBreakpoint, DisableBreakpoint, ToggleBreakpoint, DeleteBreakpoint, DeleteAllBreakpoints, ResetHitCount, ListBreakpoints |
+> | Memory | ReadMemory, WriteMemToAddress, AllocateMemory, FreeMemory, GetMemoryMap, GetDumpableRegions, DumpMemory, FindPattern, RestorePatches, GetPatches |
+> | Registers | GetAllRegisters, SetRegister, GetArguments |
+> | Disassembly | Disassemble, DisassembleFunction, Assemble, GetFunctions |
+> | Modules | ListModules, GetImports, GetExports, ListSymbols, SearchSymbols, AnalyzeModule, DetectOEP, DumpModule |
+> | Threads | GetThreads, SwitchThread, SuspendThread, ResumeThread |
+> | Annotations | CommentOrLabelAtAddress, SetBookmark, DeleteBookmark, ListBookmarks |
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-19 ~ 2026-08-20）
-> **活躍天數** 2 天 · **最新 commit** docs: update README and public site URL
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#3](https://github.com/s1dashu/ip-as-logo-skill/issues/3) | This skill is very popular with Koreans. | 0 | 1 |
-> | [#2](https://github.com/s1dashu/ip-as-logo-skill/issues/2) | 合作申请！！ | 0 | 2 |
-> | [#1](https://github.com/s1dashu/ip-as-logo-skill/issues/1) | made an avatar generator based on this skill | 0 | 1 |
+> [!abstract] 最近 10 次 commit（2026-08-22 ~ 2026-08-23）
+> **活躍天數** 2 天 · **最新 commit** Style disclaimer as blockquote
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # IP as Logo
+> x64dbg-MCP Server
+> MCP-powered agentic reverse engineering for x64dbg.
 > 
-> `ip-as-logo` is a compact Agent Skill for generating highly simplified company-ready mascot logos. It treats the result as a logo first and a character second: familiar cute animals by default, bold rounded silhouettes, strict complexity limits, oversized corner composition, and broad flat color masses.
+>   
+>   
+>   
+>   
+>   
+>   
+>   
+>   
 > 
-> You can also browse the free [IP as Logo Skill website](https://ipaslogo.com), a searchable library backed by Cloudflare R2 and Supabase.
+>   Features •
+>   Install •
+>   Usage •
+>   Tools •
+>   Configuration •
+>   Building •
+>   Structure
 > 
-> **Don't have Codex, Doubao, Coze, or Workbuddy?** [Visit our website](https://ipaslogo.com) to download ready-made logos for free. Every logo is free for commercial use.
+> #
 > 
-> ## What it enforces
+> x64dbg-MCP Server is a native [MCP](https://modelcontextprotocol.io/) (Model Context Protocol) plugin for [x64dbg](https://x64dbg.com/) that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg programmatically: set breakpoints, step through code, read memory, dump registers, and more.
 > 
-> - One dominant silhouette built from roughly 6–10 basic shapes
-> - Three semantic colors by default: two IP base colors plus one background color
-> - Three proposed directions followed by six independently generated candidates after user approval
-> - Familiar, broadly appealing animals as the default open-ended subject; objects, machines, fantasy artifacts, and obscure creatures require a clear product reason
-> - A quantified restrained-color default: softened chromatic backgrounds, warm neutrals, and explicit silhouette/detail contrast targets
-> - Thick, rounded forms without sharp or fragile details
-> - An 82–90% close crop that visibly peeks or rises from the lower-left or lower-right, with paired identifying features preserved
-> - Flat-first artwork with broad, uniform filled color masses and no internal shading or gradients
-> - One specifically named canvas color that fills the square edge-to-edge and remains visible in all four corners
-> - One-pass unfiltered candidate batches with no visual review, rejection, repair, or style-compliance retry
+> Built with [Zig](https://ziglang.org/) — zero dependencies, single-binary output, cross-compiles to both x32 and x64 from any host. No .NET, no Python, no runtime — just drop the plugin into your x64dbg plugins folder and go.
+> 
+> > **MCP 2024-11-05** — Streamable HTTP + SSE transports, JSON-RPC 2.0.
+> 
 > 
 > ## Install
 > 
-> Install the complete skill with the Agent Skills CLI:
+> Download the latest release or build from source:
 > 
-> ```bash
-> npx skills@latest add s1dashu/ip-as-logo-skill
+> 1. Copy the contents of `dist/` into your x64dbg root folder (deploys both x32 and x64)
+> 2. Launch x64dbg
+> 
+> The MCP server starts automatically. Default ports:
+> - **x64:** `0.0.0.0:9094`
+> - **x32:** `0.0.0.0:9095`
+> 
+> 
+> ## Usage
+> 
+> Add to your MCP client config (`.mcp.json`, etc.):
+> 
+> **Streamable HTTP (recommended):**
+> ```json
+> {
+>   "mcpServers": {
+>     "x64dbg": {
+>       "type": "http",
+>       "url": "http://localhost:9094/",
+>       "headers": {
+>         "Authorization": "Bearer YOUR_TOKEN_HERE"
+>       }
+>     }
+>   }
+> }
 > ```
 > 
-> The installer detects the repository's root `SKILL.md`, lets you choose a supported coding agent, and installs the complete `ip-as-logo` directory, including its supporting assets. Use `--global` for a personal installation available across projects:
-> 
-> ```bash
-> npx skills@latest add s1dashu/ip-as-logo-skill --global
+> **SSE (legacy clients):**
+> ```json
+> {
+>   "mcpServers": {
+>     "x64dbg": {
+>       "type": "sse",
+>       "url": "http://localhost:9094/sse",
+>       "headers": {
+>         "Authorization": "Bearer YOUR_TOKEN_HERE"
+>       }
+>     }
+>   }
+> }
 > ```
 > 
-> ## Agent compatibility
+> If connecting from WSL or a remote machine, use the host's IP address and set the bind address to `0.0.0.0` in the config dialog.
 > 
-> It follows the open Agent Skills format and is designed to work with any compatible AI agent, rather than being tied to a specific agent product.
+> **Example — AI-assisted reverse engineering session:**
+> ```
+> You:    Load calc.exe and break at the entry point
+> AI: [calls LoadBinary, SetBreakpoint, run, WaitForPause]
+>         Loaded calc.exe, hit breakpoint at 0x7FF7A1234000 in calc.exe
 > 
-> Supported agents include **Codex, Coze, Doubao, YouMind, Manus, Gemini Apps, and Replit Agent**. This skill only supports agents with built-in image-generation capabilities that can return generated images as assets.
+> You:    What are the current registers?
+> AI: [calls GetAllRegisters]
+>         RAX: 0x0, RCX: 0x7FF7A1234000, RDX: 0x1, ...
 > 
-> ## Use
+> You:    Read 64 bytes at the current instruction pointer
+> AI: [calls ReadMemory]
+>         48 83 EC 28 E8 12 34 00 00 ...
 > 
-> Ask your AI agent for an IP mascot logo, for example:
-> 
-> ```text
-> Create a rounded ghost IP logo on a deep navy background.
+> You:    Step over the next 3 instructions and show me the stack
+> AI: [calls StepOver x3, GetCallStack]
+>         Stepped to 0x7FF7A1234010, call stack: ...
 > ```
 > 
-> The skill does not ask for a color-mode choice by default. Every default candidate uses three semantic colors: two IP base colors plus one specifically named canvas color. It no longer reserves any fraction of the candidate set for two-color logos. A two-color logo is generated only when the user explicitly requests it, and then uses canvas-colored negative space for facial marks rather than introducing a third color.
 > 
-> When the user already names an IP subject, the skill proposes three controlled design treatments of that subject. When the subject is open, it proposes familiar animal mascots first and ties each to a product attribute or brand promise. In open-ended batches, 95–100% of candidates should be familiar animals; non-animal subjects are limited to a small minority with a direct product connection, never used merely to manufacture novelty.
+> ## Features
 > 
-> Large batches create variety within commercially plausible animal mascots through species or breed, ear and muzzle proportions, expression, lower-left versus lower-right emergence, crop, silhouette, and secondary color organization. Clocks, locks, industrial tools, measuring instruments, vehicles, abstract machines, fantasy artifacts, and obscure creatures are not default company mascots.
+> - **71 MCP Tools:** Full debugger control — disassembly, stepping, breakpoints, memory allocation, registers, modules, threads, call stack, pattern scanning, string extraction, xrefs, symbols, bookmarks, PE analysis, OEP detection, module dumping, PEB/SEH inspection, tracing, and more.
+> - **22 Event Callbacks:** Full debugger event coverage — init, stop, breakpoint, exception, step, attach/detach, DLL load/unload, threads, and more.
+> - **Zero Dependencies:** Pure native plugin, no runtime or framework needed.
+> - **x32 and x64:** Single codebase, builds both architectures from one command.
+> - **Dual Transport:** Streamable HTTP + SSE — compatible with any MCP client (new and legacy).
+> - **Bearer Auth:** Mandatory token authentication — auto-generated on first run, required on every request to prevent unauthorized access.
+> - **Config Dialog:** Change IP/port/token from the Plugins menu, auto-restarts the server on save.
+> - **Auto-Start:** MCP server starts automatically when x64dbg launches.
+> - **Cross-Compile:** Build Windows plugins from Linux, macOS, or WSL.
 > 
-> If the skill runs inside a product repository, it inspects relevant read-only context before asking questions. If product context is insufficient, it asks one consolidated round of background questions. Once context is sufficient, it always presents three concise directions and proposes generating six independent images. It proceeds after the user agrees, or immediately when the user has already explicitly authorized six outputs.
 > 
-> When the user accepts all three directions, the default batch contains two variants per direction: `A1`, `A2`, `B1`, `B2`, `C1`, and `C2`. When the user selects one direction, the skill generates six controlled variants of that direction. If the user rejects the proposed quantity or distribution, their replacement instructions take precedence.
+> ## Configuration
 > 
-> Compatible agents may generate the six candidates in parallel with subagents up to the runtime's available concurrency, using additional waves when needed. Codex can use ImageGen when available; other agent environments may use any configured image generator. If no generator is available, the skill asks the user to provide or enable one instead of pretending that an image was generated. Every result is a separate full-resolution square asset, never a six-logo contact sheet.
+> Go to **Plugins > x64dbg-MCP Server > Configure MCP Server...** to change the bind address, port, and auth token.
 > 
-> When the user does not supply a palette, the skill chooses and explicitly names a clearly chromatic but restrained canvas color rather than neon color or muddy gray. It keeps the normal design to exactly three semantic colors: two IP base colors plus the named canvas color. Prompts describe that color as filling the full square and do not use image-mode terminology.
+> - `0.0.0.0` — listen on all interfaces (for WSL/remote access)
+> - `127.0.0.1` — local-only access
 > 
-> ## Repository structure
 > 
-> ```text
-> SKILL.md
-> assets/ip-as-logo-wall.webp
-> README.md
-> LICENSE
-> ```
+> ## Tools
 > 
-> The skill itself intentionally consists of a single instruction document. The repository also includes the showcase image above, but no scripts, style references, or generation dependencies.
+> 71 MCP tools covering the full x64dbg debugging workflow.
 > 
-> ## Model behavior
 > 
-> Image-generation models may still introduce unwanted shading, crop paired features, or add too much volume. The skill treats each batch as a one-pass draw: every returned image is preserved and presented without visual compliance review, scoring, filtering, repair, or retry. A call that returns no usable image asset is reported as a technical failure rather than fabricated or silently replaced.
+> ### Always available
+> | Tool | Description |
+> |------|-------------|
+> | `GetDebugState` | Current debugger state, PID, instruction pointer |
+> | `LoadBinary` | Load an executable into the debugger |
+> | `ExecuteDebuggerCommand` | Run any x64dbg command |
+> | `ListCommandsByCategory` | List available MCP tools |
+> | `SearchForStrings` | Search process memory for text |
+> | `GetEventLog` | Last N debugger events (exceptions, breakpoints, DLL loads) |
+> | `ClearEventLog` | Clear the event log |
+> | `EvalExpression` | Evaluate any x64dbg expression (address, register, arithmetic) |
+> | `AttachProcess` | Attach to a running process by PID |
+> | `Echo` | Echo input back |
 > 
-> ## License
 > 
-> MIT
+> ### Requires active debug session
+> | Tool | Description |
+> |------|-------------|
+> | `GetCurrentAddress` | Current EIP/RIP with label and comment |
+> | `Disassemble` | Disassemble N instructions at an address |
+> | `DisassembleFunction` | Disassemble an entire function by boundaries |
+> | `ReadMemory` | Hex dump of process memory |
+> | `WaitForPause` | Block until target pauses |
+> | `run` | Resume execution (F9) |
+> | `StepInto` | Single-step into calls (F7) |
+> | `StepOver` | Step over calls (F8) |
+> | `StepOut` | Run until return (Ctrl+F9) |
+> | `PauseDebug` | Pause the target (F12) |
+> | `StopDebug` | Terminate debug session |
+> | `RestartDebug` | Restart debug session |
+> | `SetBreakpoint` | Set INT3 breakpoint at address/symbol |
+> | `SetHardwareBreakpoint` | Set hardware breakpoint (DR0-DR3, read/write/execute) |
+> | `SetConditionalBreakpoint` | Set breakpoint with condition expression and optional log |
+> | `EnableBreakpoint` | Enable a breakpoint at a given address |
+> | `DisableBreakpoint` | Disable a breakpoint without deleting it |
+> | `ToggleBreakpoint` | Toggle a breakpoint between enabled and disabled |
+> | `DeleteBreakpoint` | Remove a breakpoint |
+> | `DeleteAllBreakpoints` | Remove all breakpoints (normal, hardware, memory) |
+> | `ResetHitCount` | Reset a breakpoint's hit counter to zero |
+> | `ListBreakpoints` | List all active breakpoints |
+> | `GetAllRegisters` | Dump all general-purpose registers |
+> | `SetRegister` | Set a CPU register value |
+> | `GetCallStack` | Current thread call stack |
+> | `GetThreads` | List all threads with IDs and instruction pointers |
+> | `SwitchThread` | Switch active thread context |
+> | `SuspendThread` | Suspend a thread by its thread ID |
+> | `ResumeThread` | Resume a suspended thread |
+> | `ListModules` | List loaded modules with base addresses and sizes |
+> | `GetMemoryMap` | Memory regions with addresses, sizes, and protection |
+> | `GetDumpableRegions` | List committed, readable memory regions |
+> | `AllocateMemory` | Allocate memory in the target process |
+> | `FreeMemory` | Free allocated memory in the target process |
+> | `WriteMemToAddress` | Patch memory with hex bytes |
+> | `RestorePatches` | Restore all patches to original bytes |
+> | `Assemble` | Assemble an instruction at an address |
+> | `CommentOrLabelAtAddress` | Add comment/label in disassembly |
+> | `SetBookmark` | Set a bookmark at an address |
+> | `DeleteBookmark` | Delete a bookmark |
+> | `ListBookmarks` | List all bookmarks |
+> | `GetImports` | Show module import table |
+> | `GetExports` | Show module export table |
+> | `SearchSymbols` | Search for symbols matching a pattern |
+> | `ListSymbols` | List exported symbols of a module |
+> | `GetPatches` | List all memory patches |
+> | `FindPattern` | Scan module memory for byte pattern with ?? wildcards |
+> | `GetStrings` | Extract ASCII strings from a module's memory |
+> | `GetReferences` | Find CALL/JMP xrefs to a target address |
+> | `GetFunctions` | List analyzed functions with addresses and labels |
+> | `AnalyzeModule` | PE structure analysis: sections, EP, image size |
+> | `DetectOEP` | Detect Original Entry Point for packed executables |
+> | `DumpMemory` | Save memory region to file on disk |
+> | `DumpModule` | Dump an entire module to a file |
+> | `RunToAddress` | Run until hitting a specific address |
+> | `TraceInto` | Step N instructions recording address + disassembly |
+> | `FollowPointer` | Dereference pointer chain N levels deep |
+> | `WatchExpressions` | Evaluate multiple expressions in one call |
+> | `GetSEHChain` | Walk Structured Exception Handler chain (x32) |
+> | `GetPEB` | Read Process Environment Block fields |
+> | `GetA
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/s1dashu/ip-as-logo-skill) · [官方網站](https://ipaslogo.com)
+[GitHub](https://github.com/duty1g/x64dbg-mcp-server)
 
 ## 相關收錄
 
@@ -275,7 +415,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE category = "Other" AND file.name != "duty1g--x64dbg-mcp-server"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -284,7 +424,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "s1dashu--ip-as-logo-skill" AND status != "archived"
+> WHERE language = "Zig" AND file.name != "duty1g--x64dbg-mcp-server" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -293,18 +433,18 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE week = "2026-W35" AND file.name != "duty1g--x64dbg-mcp-server"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/duty1g--x64dbg-mcp-server");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "s1dashu--ip-as-logo-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "duty1g--x64dbg-mcp-server" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -320,7 +460,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "s1dashu" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE owner = "duty1g" AND file.name != "duty1g--x64dbg-mcp-server"
 > SORT stars DESC
 > ```
 
@@ -328,7 +468,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/duty1g--x64dbg-mcp-server");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -345,7 +485,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/duty1g--x64dbg-mcp-server");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -378,7 +518,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/duty1g--x64dbg-mcp-server");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -402,7 +542,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/duty1g--x64dbg-mcp-server");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -439,7 +579,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/duty1g--x64dbg-mcp-server");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -522,7 +662,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-20** — 首次收錄
+> **2026-08-24** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -538,8 +678,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-24|2026-08-24]] — 再次上榜，3.9k stars
-- [[2026-08-23|2026-08-23]] — 再次上榜，3.8k stars
-- [[2026-08-22|2026-08-22]] — 再次上榜，3.5k stars
-- [[2026-08-21|2026-08-21]] — 再次上榜，3.2k stars
-- [[2026-08-20|2026-08-20]] — 首次收錄，2.1k stars
+- [[2026-08-24|2026-08-24]] — 首次收錄，921 stars

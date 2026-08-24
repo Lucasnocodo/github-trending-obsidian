@@ -7,9 +7,9 @@ language: JavaScript
 license: N/A
 description: "Install Command：npm install"
 homepage: ""
-stars: 1131
-stars_per_day: 283
-forks: 235
+stars: 1219
+stars_per_day: 244
+forks: 258
 open_issues: 5
 created: 2026-08-18
 pushed_at: 2026-08-18
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-26"
+appearances: 3
+next_review: "2026-08-27"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-22"
-star_history: "2026-08-22:993,2026-08-23:1131"
+star_history: "2026-08-22:993,2026-08-23:1131,2026-08-24:1219"
 tags:
   - github
   - "category/other"
@@ -539,5 +539,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-24|2026-08-24]] — 再次上榜，1.2k stars
 - [[2026-08-23|2026-08-23]] — 再次上榜，1.1k stars
 - [[2026-08-22|2026-08-22]] — 首次收錄，993 stars

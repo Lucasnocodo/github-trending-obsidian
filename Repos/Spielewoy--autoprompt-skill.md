@@ -1,68 +1,68 @@
 ---
-repo: s1dashu/ip-as-logo-skill
-url: https://github.com/s1dashu/ip-as-logo-skill
-owner: s1dashu
+repo: Spielewoy/autoprompt-skill
+url: https://github.com/Spielewoy/autoprompt-skill
+owner: Spielewoy
 owner_type: User
-language: N/A
+language: JavaScript
 license: MIT
-description: "A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos."
-homepage: "https://ipaslogo.com"
-stars: 3925
-stars_per_day: 785
-forks: 191
-open_issues: 7
-created: 2026-08-18
-pushed_at: 2026-08-22
-first_seen: 2026-08-20
-week: "2026-W34"
+description: "Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks."
+homepage: "https://www.npmjs.com/package/autoprompt-skill"
+stars: 770
+stars_per_day: 128
+forks: 50
+open_issues: 4
+created: 2026-08-17
+pushed_at: 2026-08-21
+first_seen: 2026-08-24
+week: "2026-W35"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v1.0.4"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-20
+last_reviewed: 2026-08-24
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-08-27"
-contributor_count: 1
+appearances: 1
+next_review: "2026-08-31"
+contributor_count: 2
 engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 29773
-readme_length: 6276
+issue_close_rate: 56
+repo_size_kb: 3049
+readme_length: 6906
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 3
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-20"
-star_history: "2026-08-20:2150,2026-08-21:3155,2026-08-22:3496,2026-08-23:3786,2026-08-24:3925"
+ring_history: "assess@2026-08-24"
+star_history: "2026-08-24:770"
 tags:
   - github
   - "category/other"
-  - "lang/other"
-  - "topic/codex"
-  - "topic/codex_skill"
-  - "topic/image_generation"
-  - "topic/logo_design"
-  - "topic/mascot_design"
+  - "lang/javascript"
+  - "topic/agent_orchestration"
+  - "topic/agent_skills"
+  - "topic/agentic_workflows"
+  - "topic/ai_agents"
+  - "topic/ai_coding"
 aliases:
-  - "ip-as-logo-skill"
-  - "s1dashu/ip-as-logo-skill"
+  - "autoprompt-skill"
+  - "Spielewoy/autoprompt-skill"
 ---
 
-# ip-as-logo-skill
+# autoprompt-skill
 
-**2.1k** stars · **2.1k** stars/天 · 建立 1 天前 · N/A · MIT
+**770** stars · **128** stars/天 · 建立 6 天前 · JavaScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+const me = dv.page("Repos/Spielewoy--autoprompt-skill");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v1.0.4`
 
-`codex` `codex-skill` `image-generation` `logo-design` `mascot-design`
+`agent-orchestration` `agent-skills` `agentic-workflows` `ai-agents` `ai-coding` `automated-testing` `autonomous-agents` `claude-code` `cli` `code-review` `codex` `coding-agent` `developer-tools` `github-copilot` `multi-agent-systems` `opencode` `prompt-engineering` `subagents` `test-driven-development` `workflow-automation`
 
 > [!summary] 一句話摘要
-> A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
+> Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.
 
 ## 專案簡介
 
-A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.
+Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Spielewoy--autoprompt-skill");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +125,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Spielewoy--autoprompt-skill");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,125 +149,247 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 99 |
-| Open Issues | 3 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-20 |
-| 建立日期 | 2026-08-18 |
-| 官方網站 | [Link](https://ipaslogo.com) |
-| Repo 大小 | 29.1 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/s1dashu/ip-as-logo-skill) |
-| Topics | `codex` `codex-skill` `image-generation` `logo-design` `mascot-design` |
+| Forks | 50 |
+| Open Issues | 4 |
+| Issue 解決率 | 56% (5 closed) |
+| 最後推送 | 2026-08-21 |
+| 建立日期 | 2026-08-17 |
+| 官方網站 | [Link](https://www.npmjs.com/package/autoprompt-skill) |
+| Repo 大小 | 3.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Spielewoy/autoprompt-skill) |
+| Topics | `agent-orchestration` `agent-skills` `agentic-workflows` `ai-agents` `ai-coding` `automated-testing` `autonomous-agents` `claude-code` |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "JavaScript" : 55
+>     "PowerShell" : 24
+>     "Shell" : 20
+>     "Python" : 1
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@s1dashu](https://github.com/s1dashu) | 24 |
+> | [@Spielewoy](https://github.com/Spielewoy) | 13 |
+> | [@randyren278](https://github.com/randyren278) | 1 |
+
+**最新版本**：v1.0.4 — Autoprompt Skill 1.0.4 (2026-08-21)
+
+> [!info]- Release Notes
+> # Autoprompt Skill 1.0.4
+> 
+> Autoprompt turns one explicit goal into a closed plan, build, test, review, repair, and verification loop.
+> 
+> ## Highlights
+> 
+> - 45% fewer failures in the published Terminal-Bench 2.1 run: 29 failures fell to 16
+> - State-aware CLI scans nine coding agents, reports installed versions, and offers install, update, repair, doctor, and uninstall flows
+> - Older Codex installs are detected and updated in place
+> - Explicit invocation keeps the orchestration loop isolated from ordinary coding requests
+> - Native provider packages for Claude Code, Codex, OpenCode, Kilo Code, VS Code, Prime Agent, Oh My Pi, DeepSeek Harness, and Reasonix
+> - Deterministic English, Chinese, Korean, Spanish, and Arabic documentation visuals
+> 
+> ## Install
+> 
+> ```bash
+> npm install -g autoprompt-skill
+> autoprompt
+> ```
+> 
+> ## Supported coding agents
+> 
+> - Claude Code
+> - Codex
+> - OpenCode
+> - Kilo Code
+> - VS Code
+> - Prime Agent
+> - Oh My Pi
+> - DeepSeek Harness
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-19 ~ 2026-08-20）
-> **活躍天數** 2 天 · **最新 commit** docs: update README and public site URL
+> [!abstract] 最近 10 次 commit（2026-08-19 ~ 2026-08-21）
+> **活躍天數** 3 天 · **最新 commit** Merge PR #10 from Spielewoy/fix/v1.0.4-release-readiness
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#3](https://github.com/s1dashu/ip-as-logo-skill/issues/3) | This skill is very popular with Koreans. | 0 | 1 |
-> | [#2](https://github.com/s1dashu/ip-as-logo-skill/issues/2) | 合作申请！！ | 0 | 2 |
-> | [#1](https://github.com/s1dashu/ip-as-logo-skill/issues/1) | made an avatar generator based on this skill | 0 | 1 |
+> | [#14](https://github.com/Spielewoy/autoprompt-skill/issues/14) | Tests fail on Windows when Git is not installed at C:\Progra | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # IP as Logo
+> Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.
 > 
-> `ip-as-logo` is a compact Agent Skill for generating highly simplified company-ready mascot logos. It treats the result as a logo first and a character second: familiar cute animals by default, bold rounded silhouettes, strict complexity limits, oversized corner composition, and broad flat color masses.
+>   
+>   
+>   
+>   
 > 
-> You can also browse the free [IP as Logo Skill website](https://ipaslogo.com), a searchable library backed by Cloudflare R2 and Supabase.
+>   English |
+>   中文 |
+>   한국어 |
+>   Español |
+>   العربية
 > 
-> **Don't have Codex, Doubao, Coze, or Workbuddy?** [Visit our website](https://ipaslogo.com) to download ready-made logos for free. Every logo is free for commercial use.
+> ## Contents
 > 
-> ## What it enforces
-> 
-> - One dominant silhouette built from roughly 6–10 basic shapes
-> - Three semantic colors by default: two IP base colors plus one background color
-> - Three proposed directions followed by six independently generated candidates after user approval
-> - Familiar, broadly appealing animals as the default open-ended subject; objects, machines, fantasy artifacts, and obscure creatures require a clear product reason
-> - A quantified restrained-color default: softened chromatic backgrounds, warm neutrals, and explicit silhouette/detail contrast targets
-> - Thick, rounded forms without sharp or fragile details
-> - An 82–90% close crop that visibly peeks or rises from the lower-left or lower-right, with paired identifying features preserved
-> - Flat-first artwork with broad, uniform filled color masses and no internal shading or gradients
-> - One specifically named canvas color that fills the square edge-to-edge and remains visible in all four corners
-> - One-pass unfiltered candidate batches with no visual review, rejection, repair, or style-compliance retry
+> [Install](#install) · [Benchmarks](#benchmarks) · [Invocation](#anatomy-of-an-invocation) · [Run controls](#run-controls) · [Workflow](#how-it-works) · [Agents](#the-agents) · [Examples](#examples) · [FAQ](#faq) · [License](#license)
 > 
 > ## Install
 > 
-> Install the complete skill with the Agent Skills CLI:
+> Use the CLI below, or download an installer from [GitHub Releases](https://github.com/Spielewoy/autoprompt-skill/releases/tag/v1.0.4).
+> 
+> ### 1. Install the CLI
 > 
 > ```bash
-> npx skills@latest add s1dashu/ip-as-logo-skill
+> npm install -g autoprompt-skill
 > ```
 > 
-> The installer detects the repository's root `SKILL.md`, lets you choose a supported coding agent, and installs the complete `ip-as-logo` directory, including its supporting assets. Use `--global` for a personal installation available across projects:
+> ### 2. Launch the installer
 > 
 > ```bash
-> npx skills@latest add s1dashu/ip-as-logo-skill --global
+> autoprompt
 > ```
 > 
-> ## Agent compatibility
+> ### 3. Install
 > 
-> It follows the open Agent Skills format and is designed to work with any compatible AI agent, rather than being tied to a specific agent product.
+> Choose your coding agent, confirm its path, and install. `N` means enter another path.
 > 
-> Supported agents include **Codex, Coze, Doubao, YouMind, Manus, Gemini Apps, and Replit Agent**. This skill only supports agents with built-in image-generation capabilities that can return generated images as assets.
+> For another CLI or IDE, choose `Custom coding agent` and use the [compatibility guide](docs/guides/custom-agent-compatibility.md).
 > 
-> ## Use
+> Install from source
 > 
-> Ask your AI agent for an IP mascot logo, for example:
-> 
-> ```text
-> Create a rounded ghost IP logo on a deep navy background.
+> ```bash
+> git clone https://github.com/Spielewoy/autoprompt-skill
+> cd autoprompt-skill
+> npm install -g .
+> autoprompt
 > ```
 > 
-> The skill does not ask for a color-mode choice by default. Every default candidate uses three semantic colors: two IP base colors plus one specifically named canvas color. It no longer reserves any fraction of the candidate set for two-color logos. A two-color logo is generated only when the user explicitly requests it, and then uses canvas-colored negative space for facial marks rather than introducing a third color.
+> ### Requirements
 > 
-> When the user already names an IP subject, the skill proposes three controlled design treatments of that subject. When the subject is open, it proposes familiar animal mascots first and ties each to a product attribute or brand promise. In open-ended batches, 95–100% of candidates should be familiar animals; non-animal subjects are limited to a small minority with a direct product connection, never used merely to manufacture novelty.
+> - [Node.js 20+](https://nodejs.org/en/download)
+> - [Python 3.11+](https://www.python.org/downloads/) exposed as `python`, with [PyYAML](https://pypi.org/project/PyYAML/)
+> - [Bash 4.3+](https://www.gnu.org/software/bash/) on macOS or Linux
+> - [Git](https://git-scm.com/downloads) only for the GitHub checkout method
 > 
-> Large batches create variety within commercially plausible animal mascots through species or breed, ear and muzzle proportions, expression, lower-left versus lower-right emergence, crop, silhouette, and secondary color organization. Clocks, locks, industrial tools, measuring instruments, vehicles, abstract machines, fantasy artifacts, and obscure creatures are not default company mascots.
+> ### Support
 > 
-> If the skill runs inside a product repository, it inspects relevant read-only context before asking questions. If product context is insufficient, it asks one consolidated round of background questions. Once context is sufficient, it always presents three concise directions and proposes generating six independent images. It proceeds after the user agrees, or immediately when the user has already explicitly authorized six outputs.
+> | Status | Coding agent | Audited requirement | Key |
+> |---|---|---|---|
+> | Working | [Claude Code](https://code.claude.com/docs/en/setup) | 2.1.219+; audited 2.1.233 | `claude` |
+> | Working | [Codex](https://github.com/openai/codex) | Subagent-capable build; audited 0.147.0 | `codex` |
+> | Working | [OpenCode](https://opencode.ai/docs/agents) | 1.18.7+; audited 1.18.18 | `opencode` |
+> | Working | [Kilo Code](https://kilo.ai/docs/customize/custom-subagents) | 7.4.22+; audited 7.4.22 | `kilo` |
+> | Working | [VS Code](https://code.visualstudio.com/docs/agents/subagents) | 1.133+; audited 1.133.0 with Copilot 0.61.0 | `vscode` |
+> | Working | [Prime Agent](https://github.com/PrimeIntellect-ai/prime-agent) | 0.7.2; audited 0.7.2; native package adapter | `prime` |
+> | Working | [Oh My Pi](https://omp.sh/) | 17.4.0+; adapter contract, install lifecycle, and native role payload verified for 17.4.0 | `omp` |
+> | Working | [DeepSeek Harness](https://deepseek.com/harness/en/) | 0.1.0-rc.7+; adapter contract, install lifecycle, and native role payload verified for 0.1.0-rc.7 | `deepseek` |
+> | Working | [Reasonix](https://reasonix.io/docs/) | 1.30.0+; adapter contract, install lifecycle, and native role payload verified for 1.30.0 | `reasonix` |
 > 
-> When the user accepts all three directions, the default batch contains two variants per direction: `A1`, `A2`, `B1`, `B2`, `C1`, and `C2`. When the user selects one direction, the skill generates six controlled variants of that direction. If the user rejects the proposed quantity or distribution, their replacement instructions take precedence.
+> See [support and audit notes](docs/faq/which-coding-agents-are-supported.md).
 > 
-> Compatible agents may generate the six candidates in parallel with subagents up to the runtime's available concurrency, using additional waves when needed. Codex can use ImageGen when available; other agent environments may use any configured image generator. If no generator is available, the skill asks the user to provide or enable one instead of pretending that an image was generated. Every result is a separate full-resolution square asset, never a six-logo contact sheet.
+> ### Check, update, or remove an installation
 > 
-> When the user does not supply a palette, the skill chooses and explicitly names a clearly chromatic but restrained canvas color rather than neon color or muddy gray. It keeps the normal design to exactly three semantic colors: two IP base colors plus the named canvas color. Prompts describe that color as filling the full square and do not use image-mode terminology.
+> - Check every detected installation: `autoprompt doctor --strict`
+> - Check one provider: `autoprompt doctor PROVIDER --strict`
+> - Update or repair: `autoprompt`, then choose an installed provider
+> - Uninstall interactively: `autoprompt uninstall`
+> - Uninstall one provider: `autoprompt uninstall PROVIDER`
+> - Show every command: `autoprompt help`
 > 
-> ## Repository structure
+> Replace `PROVIDER` with a key from the support table, such as `claude`, `codex`, or `prime`.
 > 
-> ```text
-> SKILL.md
-> assets/ip-as-logo-wall.webp
-> README.md
-> LICENSE
-> ```
+> ## Benchmarks
 > 
-> The skill itself intentionally consists of a single instruction document. The repository also includes the showcase image above, but no scripts, style references, or generation dependencies.
+>   
 > 
-> ## Model behavior
+> Measured OpenCode comparison
 > 
-> Image-generation models may still introduce unwanted shading, crop paired features, or add too much volume. The skill treats each batch as a one-pass draw: every returned image is preserved and presented without visual compliance review, scoring, filtering, repair, or retry. A call that returns no usable image asset is reported as a technical failure rather than fabricated or silently replaced.
+>   
+> 
+> | Track | Solved | Score | Failed |
+> |---|---:|---:|---:|
+> | OpenCode | 60/89 | 67.42% | 29 |
+> | **OpenCode + Autoprompt** | **73/89** | **82.02%** | **16** |
+> | **Change** | **+13 solves** | **+14.61 points** | **45% fewer** |
+> 
+> DeepSeek's 82.7% used its own test setup, so it is a reference point, not a comparable third run. Read the [setup and evidence boundaries](docs/benchmarks/terminal-bench-2.1.md), or [request another benchmark](https://github.com/Spielewoy/autoprompt-skill/issues/new?template=benchmark_request.md).
+> 
+> Expected trade-off: about 3x the time and 2x the tokens.
+> 
+> Timing and token logs were not retained, so these are planning estimates based on user experience reports, not measured benchmark results. The measured result was 29 to 16 failures (45% fewer) in this run, which translates to about 2x fewer mistakes. Note: for very small tasks, this may differ heavily.
+> 
+> ## Anatomy of an invocation
+> 
+>   
+> 
+> ## Run controls
+> 
+> Use `mode=` to set concurrency. Use `agents=` to route models where the host supports it. [Custom model setup](docs/faq/how-to-add-custom-models.md)
+> 
+> | Control | Claude Code | Codex | OpenCode | Kilo | VS Code | Prime Agent | Oh My Pi | DeepSeek Harness | Reasonix |
+> |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+> | `mode=` | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+> | Custom `agents=` routing | ✓ | ✓ | ✕ Not available - inherits active model | ✕ Not available - inherits active model | ✕ Not available - inherits active model | ✕ Not available - inherits selected parent model | ✕ Not available - inherits selected parent model | ✕ Not available - inherits selected parent model | ✕ Not available - inherits selected parent model |
+> 
+> ## How it works
+> 
+>   
+> 
+> ## The agents
+> 
+>   
+> 
+> ## Examples
+> 
+> | Goal | Prompt |
+> |---|---|
+> | Fix | `/autoprompt fix the registration race and add a regression test` |
+> | Build | `/autoprompt mode=wide build the booking flow from API to checkout` |
+> | Research | `/autoprompt compare job queues against this codebase and recommend one` |
+> | Limit parallel work | `/autoprompt mode=custom max_subs=4 migrate every model` |
+> 
+> Use `$autoprompt` instead of `/autoprompt` in Codex. In Oh My Pi, use `/skill:autoprompt`.
+> 
+> ## FAQ
+> 
+> Does Autoprompt mean I literally do not have to prompt?
+> 
+> No. Give it a clear goal, constraints, and success criteria. Autoprompt handles the execution loop, so you do not have to prompt every step. [Details](docs/faq/does-autoprompt-mean-i-do-not-have-to-prompt.md)
+> 
+> How autonomous is Autoprompt?
+> 
+> It can scope, implement, test, review, repair, and verify a goal. It stops for choices that change the result, actions that need your authority, or blockers it cannot safely resolve. [Details](docs/faq/how-autonomous-is-autoprompt.md)
+> 
+> What are the layers for?
+> 
+> The layers separate coordination, management, execution, and independent judgment. That separation keeps one agent from planning, approving, and verifying its own work. [Details](docs/faq/what-are-the-layers-for.md)
+> 
+> What do `mode`, `max_subs`, and `agents` do?
+> 
+> `mode=tokensaver` caps active subagents at six. `mode=wide` opens every ready lane. `mode=custom max_subs=N` sets your own ceiling. `agents` controls model routing where the host supports it. [Details](docs/faq/tokensaver-vs-wide-vs-custom.md)
+> 
+> Why does Autoprompt not start in the background?
+> 
+> Because it changes cost, time, and workflow. Start it explicitly with `/autoprompt `, or `$autoprompt` in Codex.
 > 
 > ## License
 > 
-> MIT
+> [MIT](LICENSE). Copyright 2026 [Spielewoy](https://github.com/Spielewoy).
+> 
+> Community: [Contributing](docs/CONTRIBUTING.md), [Code of Conduct](docs/CODE_OF_CONDUCT.md), [Security](docs/SECURITY.md), and [Support](docs/SUPPORT.md).
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]] · [[FareedKhan-dev--kimi-k3-in-c|FareedKhan-dev/kimi-k3-in-c]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/s1dashu/ip-as-logo-skill) · [官方網站](https://ipaslogo.com)
+[GitHub](https://github.com/Spielewoy/autoprompt-skill) · [官方網站](https://www.npmjs.com/package/autoprompt-skill)
 
 ## 相關收錄
 
@@ -275,7 +397,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE category = "Other" AND file.name != "Spielewoy--autoprompt-skill"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -284,7 +406,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "s1dashu--ip-as-logo-skill" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "Spielewoy--autoprompt-skill" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -293,18 +415,18 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE week = "2026-W35" AND file.name != "Spielewoy--autoprompt-skill"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Spielewoy--autoprompt-skill");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "s1dashu--ip-as-logo-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Spielewoy--autoprompt-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -320,7 +442,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "s1dashu" AND file.name != "s1dashu--ip-as-logo-skill"
+> WHERE owner = "Spielewoy" AND file.name != "Spielewoy--autoprompt-skill"
 > SORT stars DESC
 > ```
 
@@ -328,7 +450,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Spielewoy--autoprompt-skill");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -345,7 +467,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Spielewoy--autoprompt-skill");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -378,7 +500,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Spielewoy--autoprompt-skill");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -402,7 +524,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Spielewoy--autoprompt-skill");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -439,7 +561,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/s1dashu--ip-as-logo-skill");
+> const me = dv.page("Repos/Spielewoy--autoprompt-skill");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -522,7 +644,7 @@ A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-20** — 首次收錄
+> **2026-08-24** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -538,8 +660,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-24|2026-08-24]] — 再次上榜，3.9k stars
-- [[2026-08-23|2026-08-23]] — 再次上榜，3.8k stars
-- [[2026-08-22|2026-08-22]] — 再次上榜，3.5k stars
-- [[2026-08-21|2026-08-21]] — 再次上榜，3.2k stars
-- [[2026-08-20|2026-08-20]] — 首次收錄，2.1k stars
+- [[2026-08-24|2026-08-24]] — 首次收錄，770 stars

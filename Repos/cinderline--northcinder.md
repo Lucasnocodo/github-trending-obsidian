@@ -7,8 +7,8 @@ language: JavaScript
 license: MIT
 description: "Buyer-run, ad-neutral shopping-agent MCP software with deterministic ranking, signed purchase mandates, and a local audit trail."
 homepage: ""
-stars: 1205
-stars_per_day: 241
+stars: 1207
+stars_per_day: 201
 forks: 6
 open_issues: 2
 created: 2026-08-17
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-08-26"
+appearances: 4
+next_review: "2026-08-27"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: 4
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-21"
-star_history: "2026-08-21:1200,2026-08-22:1203,2026-08-23:1205"
+star_history: "2026-08-21:1200,2026-08-22:1203,2026-08-23:1205,2026-08-24:1207"
 tags:
   - github
   - "category/other"
@@ -601,6 +601,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-24|2026-08-24]] — 再次上榜，1.2k stars
 - [[2026-08-23|2026-08-23]] — 再次上榜，1.2k stars
 - [[2026-08-22|2026-08-22]] — 再次上榜，1.2k stars
 - [[2026-08-21|2026-08-21]] — 首次收錄，1.2k stars

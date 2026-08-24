@@ -3634,24 +3634,24 @@
   },
   "yetone/cumora": {
     "first_seen": "2026-08-19",
-    "last_seen": "2026-08-23",
-    "times_seen": 5,
+    "last_seen": "2026-08-24",
+    "times_seen": 6,
     "stars_first": 2416,
-    "stars_last": 2902
+    "stars_last": 2963
   },
   "s1dashu/ip-as-logo-skill": {
     "first_seen": "2026-08-20",
-    "last_seen": "2026-08-23",
-    "times_seen": 4,
+    "last_seen": "2026-08-24",
+    "times_seen": 5,
     "stars_first": 2150,
-    "stars_last": 3786
+    "stars_last": 3925
   },
   "CopilotKit/OpenBot": {
     "first_seen": "2026-08-21",
-    "last_seen": "2026-08-23",
-    "times_seen": 3,
+    "last_seen": "2026-08-24",
+    "times_seen": 4,
     "stars_first": 1678,
-    "stars_last": 2337
+    "stars_last": 2511
   },
   "dsh-market/dsh-market": {
     "first_seen": "2026-08-21",
@@ -3662,10 +3662,10 @@
   },
   "cinderline/northcinder": {
     "first_seen": "2026-08-21",
-    "last_seen": "2026-08-23",
-    "times_seen": 3,
+    "last_seen": "2026-08-24",
+    "times_seen": 4,
     "stars_first": 1200,
-    "stars_last": 1205
+    "stars_last": 1207
   },
   "ZSvirt/zsvirt": {
     "first_seen": "2026-08-21",
@@ -3690,17 +3690,17 @@
   },
   "wang2122/sprix-sage-router": {
     "first_seen": "2026-08-22",
-    "last_seen": "2026-08-23",
-    "times_seen": 2,
+    "last_seen": "2026-08-24",
+    "times_seen": 3,
     "stars_first": 1009,
-    "stars_last": 1243
+    "stars_last": 1424
   },
   "vvxw/deploy-vercel": {
     "first_seen": "2026-08-22",
-    "last_seen": "2026-08-23",
-    "times_seen": 2,
+    "last_seen": "2026-08-24",
+    "times_seen": 3,
     "stars_first": 993,
-    "stars_last": 1131
+    "stars_last": 1219
   },
   "Leutenegger/watermarks-remover": {
     "first_seen": "2026-08-22",
@@ -3725,9 +3725,30 @@
   },
   "MengTo/threeui": {
     "first_seen": "2026-08-23",
-    "last_seen": "2026-08-23",
-    "times_seen": 1,
+    "last_seen": "2026-08-24",
+    "times_seen": 2,
     "stars_first": 1940,
-    "stars_last": 1940
+    "stars_last": 2965
+  },
+  "duty1g/x64dbg-mcp-server": {
+    "first_seen": "2026-08-24",
+    "last_seen": "2026-08-24",
+    "times_seen": 1,
+    "stars_first": 921,
+    "stars_last": 921
+  },
+  "Spielewoy/autoprompt-skill": {
+    "first_seen": "2026-08-24",
+    "last_seen": "2026-08-24",
+    "times_seen": 1,
+    "stars_first": 770,
+    "stars_last": 770
+  },
+  "ShadowAqueduct/watermark-remover": {
+    "first_seen": "2026-08-24",
+    "last_seen": "2026-08-24",
+    "times_seen": 1,
+    "stars_first": 760,
+    "stars_last": 760
   }
 }

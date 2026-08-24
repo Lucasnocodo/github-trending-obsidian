@@ -7,12 +7,12 @@ language: HTML
 license: MIT
 description: "Open-source ThreeUI Community catalog with live interactive components and complete Community source."
 homepage: "https://threeui.com"
-stars: 1940
-stars_per_day: 1940
-forks: 197
-open_issues: 4
+stars: 2965
+stars_per_day: 1483
+forks: 295
+open_issues: 5
 created: 2026-08-21
-pushed_at: 2026-08-22
+pushed_at: 2026-08-23
 first_seen: 2026-08-23
 week: "2026-W35"
 month: "2026-08"
@@ -30,10 +30,10 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-26"
+appearances: 2
+next_review: "2026-08-27"
 contributor_count: 1
-engagement: "medium"
+engagement: "low"
 issue_close_rate: 20
 repo_size_kb: 43170
 readme_length: 4252
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-23"
-star_history: "2026-08-23:1940"
+star_history: "2026-08-23:1940,2026-08-24:2965"
 tags:
   - github
   - "category/other"
@@ -555,4 +555,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-24|2026-08-24]] — 再次上榜，3.0k stars
 - [[2026-08-23|2026-08-23]] — 首次收錄，1.9k stars
