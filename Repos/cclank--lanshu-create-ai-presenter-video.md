@@ -1,20 +1,20 @@
 ---
-repo: vvxw/deploy-vercel
-url: https://github.com/vvxw/deploy-vercel
-owner: vvxw
+repo: cclank/lanshu-create-ai-presenter-video
+url: https://github.com/cclank/lanshu-create-ai-presenter-video
+owner: cclank
 owner_type: User
-language: JavaScript
-license: N/A
-description: "Install Command：npm install"
+language: Python
+license: MIT
+description: "Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image."
 homepage: ""
-stars: 1305
-stars_per_day: 218
-forks: 270
-open_issues: 5
-created: 2026-08-18
-pushed_at: 2026-08-18
-first_seen: 2026-08-22
-week: "2026-W34"
+stars: 840
+stars_per_day: 210
+forks: 146
+open_issues: 0
+created: 2026-08-20
+pushed_at: 2026-08-20
+first_seen: 2026-08-25
+week: "2026-W35"
 month: "2026-08"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-22
+last_reviewed: 2026-08-25
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-08-28"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 28
-readme_length: 2362
+issue_close_rate: -1
+repo_size_kb: 21
+readme_length: 2685
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-22"
-star_history: "2026-08-22:993,2026-08-23:1131,2026-08-24:1219,2026-08-25:1305"
+ring_history: "assess@2026-08-25"
+star_history: "2026-08-25:840"
 tags:
   - github
   - "category/other"
-  - "lang/javascript"
+  - "lang/python"
+  - "topic/ai_video"
+  - "topic/codex"
+  - "topic/codex_skill"
+  - "topic/digital_human"
+  - "topic/video_generation"
 aliases:
-  - "deploy-vercel"
-  - "vvxw/deploy-vercel"
+  - "lanshu-create-ai-presenter-video"
+  - "cclank/lanshu-create-ai-presenter-video"
 ---
 
-# deploy-vercel
+# lanshu-create-ai-presenter-video
 
-**993** stars · **331** stars/天 · 建立 3 天前 · JavaScript · 未標註授權
+**840** stars · **210** stars/天 · 建立 4 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/vvxw--deploy-vercel");
+const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -72,18 +77,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 `個人專案`
 
+`ai-video` `codex` `codex-skill` `digital-human` `video-generation`
+
 > [!summary] 一句話摘要
-> Install Command：npm install
+> Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.
 
 ## 專案簡介
 
-Install Command：npm install
+Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ Install Command：npm install
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,133 +149,186 @@ Install Command：npm install
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 200 |
-| Open Issues | 5 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-18 |
-| 建立日期 | 2026-08-18 |
-| Repo 大小 | 28 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/vvxw/deploy-vercel) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `ws` `axios` `@grpc/grpc-js` `@grpc/proto-loader` `systeminformation`
+| Forks | 146 |
+| Open Issues | 0 |
+| 最後推送 | 2026-08-20 |
+| 建立日期 | 2026-08-20 |
+| Repo 大小 | 21 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cclank/lanshu-create-ai-presenter-video) |
+| Topics | `ai-video` `codex` `codex-skill` `digital-human` `video-generation` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 64
->     "HTML" : 36
+>     "Python" : 65
+>     "Shell" : 35
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@vvxw](https://github.com/vvxw) | 5 |
+> | [@cclank](https://github.com/cclank) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-18 ~ 2026-08-18）
-> **活躍天數** 1 天 · **最新 commit** Update README.md
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#6](https://github.com/vvxw/deploy-vercel/issues/6) | 地区编码经过测试有几个无法使用 | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-20）
+> **活躍天數** 1 天 · **最新 commit** Initial open-source release
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> ## Vercel 部署说明
-> 1：点击Use this template ➡ Create a new repostory 创建一个私密项目, 名称随意
+> # lanshu-create-ai-presenter-video
 > 
-> 2: 修改index.js文件里的环境变量保存，不需要的留空
+> [](https://github.com/cclank/lanshu-create-ai-presenter-video/actions/workflows/validate.yml)
+> [](LICENSE)
+> [](https://www.python.org/)
+> [](https://ffmpeg.org/)
+> [](https://github.com/cclank/lanshu-create-ai-presenter-video/stargazers)
 > 
-> 3: 用AI生成一个纯html的网页替换`index.thml`伪装网页
+> 一个面向 Codex 的通用数字人视频制作 Skill。输入主题或文案与授权人物图后，它会组织文案、配音、人物生成、口型校准、字幕与关键词动效、剪辑、渲染和质量验收。
 > 
-> 4：打开vercel连接项目部署
->   - 打开 Vercel 控制台
->   - 点击 “New Project”
->   - Import该项目
->   - 选择默认配置, Install Command打开，设置为`npm install`
->   - 点击 “Deploy”, 等待部署完成
+> 它按能力选择当前环境可用的工具，项目源码不绑定服务商、模型名称或私有接口。
 > 
-> 5：部署完成后确认没问题，将反代后的域名填写到`index.js`的DOMAIN环境变量里, 然后用 https://www.jshaman.com/index.html 混淆替换后保存
+> ## 最少需要提供什么
 > 
-> 6：获取订阅信息，修改优选域名使用(节点里的address字段),可以自行套订阅器，比如：https://sub.eooce.xx.kg
+> 1. 一个主题或一份完整文案。
+> 2. 一张经过授权、包含清晰成年人物的参考图。
 > 
-> ## Vercel 常用地区代码对照表
+> 可选输入包括声音样本、屏幕录制、图片、B-roll、品牌素材、目标平台、时长、横竖屏、风格、水印和结尾引导。
 > 
-> 下面是常见 Vercel `regions` 代码对应关系：
+> ## 安装
 > 
-> | 地区代码 | 城市/区域 | 国家/地区 | 中文说明 |
-> |---|---|---|---|
-> | `hnd1` | Tokyo | Japan | 日本东京 |
-> | `kix1` | Osaka | Japan | 日本大阪 |
-> | `icn1` | Seoul | South Korea | 韩国首尔 |
-> | `hkg1` | Hong Kong | Hong Kong | 中国香港 |
-> | `sin1` | Singapore | Singapore | 新加坡 |
-> | `syd1` | Sydney | Australia | 澳大利亚悉尼 |
-> | `bom1` | Mumbai | India | 印度孟买 |
-> | `del1` | New Delhi | India | 印度新德里 |
-> | `fra1` | Frankfurt | Germany | 德国法兰克福 |
-> | `lhr1` | London | United Kingdom | 英国伦敦 |
-> | `cdg1` | Paris | France | 法国巴黎 |
-> | `ams1` | Amsterdam | Netherlands | 荷兰阿姆斯特丹 |
-> | `mad1` | Madrid | Spain | 西班牙马德里 |
-> | `dub1` | Dublin | Ireland | 爱尔兰都柏林 |
-> | `dxb1` | Dubai | United Arab Emirates | 阿联酋迪拜 |
-> | `jnb1` | Johannesburg | South Africa | 南非约翰内斯堡 |
-> | `cpt1` | Cape Town | South Africa | 南非开普敦 |
-> | `gru1` | São Paulo | Brazil | 巴西圣保罗 |
-> | `sfo1` | San Francisco | United States | 美国旧金山 |
-> | `iad1` | Washington, D.C. | United States | 美国华盛顿特区 |
-> | `pdx1` | Portland | United States | 美国波特兰 |
-> | `mia1` | Miami | United States | 美国迈阿密 |
-> | `ewr1` | Newark | United States | 美国纽瓦克 |
-> | `yul1` | Montréal | Canada | 加拿大蒙特利尔 |
-> 
-> ---
-> 
-> ## 注意事项
-> 
-> 部署成功后，访问项目地址，确认：
-> 
-> 1. 页面能正常访问
-> 2. 生成的订阅链接能获取到节点
-> 3. vervel分配的域名已被墙，无法使用直连节点
-> 4. 哪吒不亮，不用填写
-> 
-> ## 使用cloudflare的workers或snippets反代项目域名，给节点套CDN加速
 > ```bash
-> export default {
->     async fetch(request, env) {
->         let url = new URL(request.url);
->         if (url.pathname.startsWith('/')) {
->             var arrStr = [
->                 'xxx-xxx.vercel.app',   // 此处单引号里填写你的vercel分配的域名，不包含https://
->             ];
->             url.protocol = 'https:'
->             url.hostname = getRandomArray(arrStr)
->             let new_request = new Request(url, request);
->             return fetch(new_request);
->         }
->         return env.ASSETS.fetch(request);
->     },
-> };
-> function getRandomArray(array) {
->   const randomIndex = Math.floor(Math.random() * array.length);
->   return array[randomIndex];
-> }
+> git clone https://github.com/cclank/lanshu-create-ai-presenter-video.git \
+>   ~/.codex/skills/lanshu-create-ai-presenter-video
 > ```
+> 
+> 安装后的 Skill 路径：
+> 
+> ```text
+> ~/.codex/skills/lanshu-create-ai-presenter-video
+> ```
+> 
+> ## 文件结构
+> 
+> ```text
+> lanshu-create-ai-presenter-video/
+> ├── SKILL.md
+> ├── README.md
+> ├── agents/
+> │   └── openai.yaml
+> ├── assets/
+> │   └── job.template.json
+> ├── references/
+> │   ├── generation.md
+> │   ├── editing.md
+> │   └── qa-recovery.md
+> └── scripts/
+>     ├── init_job.py
+>     ├── preflight.py
+>     └── finalize_delivery.sh
+> ```
+> 
+> ## 三份参考文档分别负责什么
+> 
+> - `generation.md`：输入检查、文案、声音、能力选型、付费生成、人物提示词与一致性。
+> - `editing.md`：时间轴、开场和结尾、字幕预设、人物侧关键词动效、封面与导出。
+> - `qa-recovery.md`：技术验收、人工验收和常见故障修复。
+> 
+> Codex 只在进入对应阶段时读取相关文档，减少上下文占用。
+> 
+> ## 快速使用
+> 
+> 在对话中直接说：
+> 
+> ```text
+> 使用 $lanshu-create-ai-presenter-video，把这份文案和人物图做成一条 16:9、30 秒、有实时字幕的数字人讲解视频。
+> ```
+> 
+> 也可以先初始化标准任务目录：
+> 
+> ```bash
+> SKILL_DIR=~/.codex/skills/lanshu-create-ai-presenter-video
+> 
+> python3 "$SKILL_DIR/scripts/init_job.py" \
+>   --job-dir ~/Videos/my-presenter-video \
+>   --presenter-image ~/Pictures/presenter.png \
+>   --topic "视频主题" \
+>   --duration 60 \
+>   --aspect 9:16 \
+>   --rights-confirmed \
+>   --adult-presenter-confirmed
+> ```
+> 
+> 随后查看并补全 `job.json` 中的人工检查与远程上传许可，再运行：
+> 
+> ```bash
+> python3 "$SKILL_DIR/scripts/preflight.py" ~/Videos/my-presenter-video/job.json
+> ```
+> 
+> ## 运行环境
+> 
+> - Codex 或兼容本地 Skill 的 Agent 环境。
+> - Python `3.9+`。
+> - `FFmpeg` 与 `ffprobe`。
+> - Bash、`jq`、`awk` 和 `sed`。
+> - 至少一种当前环境可调用的视频生成、语音生成与口型同步能力。
+> 
+> ## 核心工作方式
+> 
+> ```text
+> 主题或文案 + 授权人物图
+>         ↓
+> 锁定文案与完整配音
+>         ↓
+> 低成本人物试片
+>         ↓
+> 生成连续数字人主素材
+>         ↓
+> 按同一条音频时间轴剪辑
+>         ↓
+> 添加字幕、关键词动效和封面
+>         ↓
+> 口型、人物、声音与画面验收
+>         ↓
+> 输出母版、分享版和 QA 报告
+> ```
+> 
+> 完整配音是全片的时间基准。人物视频、字幕、镜头、关键词与转场都按照这条音频定位，可以减少口型漂移和片段衔接问题。
+> 
+> ## 默认设置
+> 
+> - 竖屏 `9:16`、`1080×1920`、`30fps`。
+> - 主题生成的视频通常控制在 45–75 秒。
+> - 没有授权声音样本时使用合适的库存声音。
+> - 默认包含清晰开场、2–4 个内容节拍和简洁结尾。
+> - 音乐与商业引导按需求添加。
+> - 发布响度目标约为 `-16 LUFS`。
+> 
+> ## 安全和成本边界
+> 
+> - 远程上传前确认图片使用权和成年人物状态。
+> - 克隆声音前确认声音授权。
+> - 首次付费生成前说明上传内容、生成时长、价格依据、试片方案和重试上限。
+> - 任务中断后优先查询已有任务 ID，避免重复扣费。
+> - 连续三个付费候选失败后停止并总结问题。
+> 
+> ## 开源与隐私
+> 
+> - 仓库不保存 API 密钥、访问令牌、签名下载地址或用户素材。
+> - 任务级请求记录需要移除凭据与临时 URL 后再提交。
+> - 预检与交付报告只保存文件名，不写入开发者机器的绝对路径。
+> - 项目使用 [MIT License](LICENSE)，可以自由使用、修改和分发。
+> 
+> ## 贡献
+> 
+> 欢迎通过 Issue 提交使用反馈，也欢迎用 Pull Request 改进工作流、兼容性和质量检查。
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/vvxw/deploy-vercel)
+[GitHub](https://github.com/cclank/lanshu-create-ai-presenter-video)
 
 ## 相關收錄
 
@@ -276,7 +336,7 @@ Install Command：npm install
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "vvxw--deploy-vercel"
+> WHERE category = "Other" AND file.name != "cclank--lanshu-create-ai-presenter-video"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -285,7 +345,7 @@ Install Command：npm install
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "vvxw--deploy-vercel" AND status != "archived"
+> WHERE language = "Python" AND file.name != "cclank--lanshu-create-ai-presenter-video" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -294,18 +354,18 @@ Install Command：npm install
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "vvxw--deploy-vercel"
+> WHERE week = "2026-W35" AND file.name != "cclank--lanshu-create-ai-presenter-video"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "vvxw--deploy-vercel" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "cclank--lanshu-create-ai-presenter-video" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -321,7 +381,7 @@ Install Command：npm install
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "vvxw" AND file.name != "vvxw--deploy-vercel"
+> WHERE owner = "cclank" AND file.name != "cclank--lanshu-create-ai-presenter-video"
 > SORT stars DESC
 > ```
 
@@ -329,7 +389,7 @@ Install Command：npm install
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -346,7 +406,7 @@ Install Command：npm install
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -379,7 +439,7 @@ Install Command：npm install
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -403,7 +463,7 @@ Install Command：npm install
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -440,7 +500,7 @@ Install Command：npm install
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -523,7 +583,7 @@ Install Command：npm install
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-22** — 首次收錄
+> **2026-08-25** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -539,7 +599,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-25|2026-08-25]] — 再次上榜，1.3k stars
-- [[2026-08-24|2026-08-24]] — 再次上榜，1.2k stars
-- [[2026-08-23|2026-08-23]] — 再次上榜，1.1k stars
-- [[2026-08-22|2026-08-22]] — 首次收錄，993 stars
+- [[2026-08-25|2026-08-25]] — 首次收錄，840 stars

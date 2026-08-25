@@ -1,20 +1,20 @@
 ---
-repo: vvxw/deploy-vercel
-url: https://github.com/vvxw/deploy-vercel
-owner: vvxw
+repo: tobi/walgit
+url: https://github.com/tobi/walgit
+owner: tobi
 owner_type: User
-language: JavaScript
-license: N/A
-description: "Install Command：npm install"
+language: Rust
+license: MIT
+description: ""
 homepage: ""
-stars: 1305
-stars_per_day: 218
-forks: 270
-open_issues: 5
-created: 2026-08-18
-pushed_at: 2026-08-18
-first_seen: 2026-08-22
-week: "2026-W34"
+stars: 1082
+stars_per_day: 1082
+forks: 58
+open_issues: 1
+created: 2026-08-23
+pushed_at: 2026-08-24
+first_seen: 2026-08-25
+week: "2026-W35"
 month: "2026-08"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-22
+last_reviewed: 2026-08-25
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-08-28"
 contributor_count: 1
-engagement: "medium"
+engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 28
-readme_length: 2362
+repo_size_kb: 955
+readme_length: 9289
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-22"
-star_history: "2026-08-22:993,2026-08-23:1131,2026-08-24:1219,2026-08-25:1305"
+ring_history: "assess@2026-08-25"
+star_history: "2026-08-25:1082"
 tags:
   - github
   - "category/other"
-  - "lang/javascript"
+  - "lang/rust"
 aliases:
-  - "deploy-vercel"
-  - "vvxw/deploy-vercel"
+  - "walgit"
+  - "tobi/walgit"
 ---
 
-# deploy-vercel
+# walgit
 
-**993** stars · **331** stars/天 · 建立 3 天前 · JavaScript · 未標註授權
+**1.1k** stars · **1.1k** stars/天 · 建立 1 天前 · Rust · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/vvxw--deploy-vercel");
+const me = dv.page("Repos/tobi--walgit");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -73,17 +73,17 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> Install Command：npm install
+> No description
 
 ## 專案簡介
 
-Install Command：npm install
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/tobi--walgit");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ Install Command：npm install
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/tobi--walgit");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,133 +142,151 @@ Install Command：npm install
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 200 |
-| Open Issues | 5 |
+| Forks | 58 |
+| Open Issues | 1 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-18 |
-| 建立日期 | 2026-08-18 |
-| Repo 大小 | 28 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/vvxw/deploy-vercel) |
+| 最後推送 | 2026-08-24 |
+| 建立日期 | 2026-08-23 |
+| Repo 大小 | 955 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/tobi/walgit) |
 
 > [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `ws` `axios` `@grpc/grpc-js` `@grpc/proto-loader` `systeminformation`
+> `Cargo.toml` 中的核心套件：
+> `resolver` `members` `version` `edition` `license` `rust-version` `walgit-proto` `walgit-store` `walgit-config` `walgit-git` `walgit-wal` `walgit-server` `walgit-bundle` `anyhow` `thiserror`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 64
->     "HTML" : 36
+>     "Rust" : 90
+>     "TypeScript" : 7
+>     "CSS" : 1
+>     "Shell" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@vvxw](https://github.com/vvxw) | 5 |
+> | [@tobi](https://github.com/tobi) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-18 ~ 2026-08-18）
-> **活躍天數** 1 天 · **最新 commit** Update README.md
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#6](https://github.com/vvxw/deploy-vercel/issues/6) | 地区编码经过测试有几个无法使用 | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-23）
+> **活躍天數** 1 天 · **最新 commit** walgit: initial public release
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> ## Vercel 部署说明
-> 1：点击Use this template ➡ Create a new repostory 创建一个私密项目, 名称随意
+> # walgit — a git server that is one binary in front of an object store
 > 
-> 2: 修改index.js文件里的环境变量保存，不需要的留空
+> walgit hosts git repositories with **no database, no leader and no local state that matters**. You run a
+> single binary, point it at an S3 or GCS bucket, and you have: smart HTTP (v0/v2) fetch and push, `bundle-uri`
+> clones served as static files, Git LFS, a browsing web UI, a JSON API with an SDK, per-repository push policy,
+> webhooks — and a server that scales to repositories **larger than the machine it runs on**. Every machine that
+> runs walgit is a disposable cache; the bucket is the repository.
 > 
-> 3: 用AI生成一个纯html的网页替换`index.thml`伪装网页
+> ```sh
 > 
-> 4：打开vercel连接项目部署
->   - 打开 Vercel 控制台
->   - 点击 “New Project”
->   - Import该项目
->   - 选择默认配置, Install Command打开，设置为`npm install`
->   - 点击 “Deploy”, 等待部署完成
+> # 1. a bucket (any S3-compatible store or GCS) and a config
+> cat > walgit.toml /` namespaces, sha1 and sha256 repositories. Upstream `git` does upload-pack/repack/bundle; walgit does receive-pack, the WAL and the plumbing. |
+> | **bundle-uri** | Bundles cut on calendar slots (weekly full, chained dailies, hourlies) as a pure function of the WAL: a fresh clone downloads the newest full plus the chain above it from the bucket and asks the server only for the remainder; a catch-up downloads exactly the slots it missed. Two lists per repo: `bundles/list` for clones, `bundles/catchup` for fetches. Blobless families for `--filter=blob:none`. |
+> | **LFS** | Batch API + basic transfer, objects in the bucket, optional read-through from an upstream LFS server for imported repositories. |
+> | **web UI + API** | A React UI (tree, blob, commits, diffs, the WAL's own health page) on a read-mostly JSON API under `/{owner}/{repo}/api/*`; sha-addressed answers are immutable and cached everywhere; long answers stream progress as SSE. `repos.js` is a dependency-free SDK for pages, agents and scripts. |
+> | **policy** | Per-repository push rules (`policy.json`): protected refs, groups, fast-forward only, bypass lists. `docs/POLICY.md`. |
+> | **settings** | Per-repository config (bundle schedules, compaction, upstream follow) published into the WAL with history. |
+> | **events** | A small bridge tails the WAL and POSTs ref events to a webhook, exactly-once per (repo, seq, ref) with a durable cursor. `docs/EVENTS.md`. |
+> | **maintenance** | Checkpoints, bundle builds, geometric compaction, base rebuilds, connectivity audits and repairs — one loop that computes the desired state from (config, WAL) every pass and does one bounded unit of the most important missing work. Self-healing by construction: an outage leaves no holes; a deleted artefact is "missing" and rebuilt identically. |
+> | **auth** | `none` (loopback), `token` (static tokens), `oidc` (any OpenID Connect issuer: browser sign-in, ID tokens, and walgit-issued access tokens for git). `/services/public/install.sh` sets a developer's machine up in one idempotent command. |
+> | **stores** | S3 and S3-compatible (AWS, MinIO, rustfs, R2, Ceph, …) and GCS, first class; an in-memory store for tests. |
 > 
-> 5：部署完成后确认没问题，将反代后的域名填写到`index.js`的DOMAIN环境变量里, 然后用 https://www.jshaman.com/index.html 混淆替换后保存
 > 
-> 6：获取订阅信息，修改优选域名使用(节点里的address字段),可以自行套订阅器，比如：https://sub.eooce.xx.kg
+> ## How it works, briefly
 > 
-> ## Vercel 常用地区代码对照表
+> **The repository is a WAL in the bucket.** Under `repos///`: `manifest.pb` (tiny, CAS-rewritten:
+> head sequence, the live pack set, checkpoint pointer, settings — *the linearization point*), `log/.pb`
+> (immutable entries: PUSH, COMPACT, CHECKPOINT, SETTINGS), `wal/.pack|.idx|.rev|.bitmap|.commit-graph`
+> (immutable, content-addressed packs with their side-files), `checkpoints//` (folded ref snapshot + pack
+> inventory so a cold start is snapshot + tail), `bundles/`, `leases/` (CAS with TTL — the only cross-instance
+> mutex), `policy.json`, `lfs/objects/`, `events/cursor.json`.
 > 
-> 下面是常见 Vercel `regions` 代码对应关系：
+> **A push**: our receive-pack indexes the pack (`git index-pack --fix-thin --rev-index` in a scratch dir), checks
+> connectivity and policy, uploads `pack ∥ idx ∥ log entry`, then CASes the manifest. On a 412 it re-reads,
+> re-validates every ref's old value and retries. Concurrent pushes to one repository on one instance are group
+> committed into one CAS. The client sees `ok` only after the bucket does.
 > 
-> | 地区代码 | 城市/区域 | 国家/地区 | 中文说明 |
-> |---|---|---|---|
-> | `hnd1` | Tokyo | Japan | 日本东京 |
-> | `kix1` | Osaka | Japan | 日本大阪 |
-> | `icn1` | Seoul | South Korea | 韩国首尔 |
-> | `hkg1` | Hong Kong | Hong Kong | 中国香港 |
-> | `sin1` | Singapore | Singapore | 新加坡 |
-> | `syd1` | Sydney | Australia | 澳大利亚悉尼 |
-> | `bom1` | Mumbai | India | 印度孟买 |
-> | `del1` | New Delhi | India | 印度新德里 |
-> | `fra1` | Frankfurt | Germany | 德国法兰克福 |
-> | `lhr1` | London | United Kingdom | 英国伦敦 |
-> | `cdg1` | Paris | France | 法国巴黎 |
-> | `ams1` | Amsterdam | Netherlands | 荷兰阿姆斯特丹 |
-> | `mad1` | Madrid | Spain | 西班牙马德里 |
-> | `dub1` | Dublin | Ireland | 爱尔兰都柏林 |
-> | `dxb1` | Dubai | United Arab Emirates | 阿联酋迪拜 |
-> | `jnb1` | Johannesburg | South Africa | 南非约翰内斯堡 |
-> | `cpt1` | Cape Town | South Africa | 南非开普敦 |
-> | `gru1` | São Paulo | Brazil | 巴西圣保罗 |
-> | `sfo1` | San Francisco | United States | 美国旧金山 |
-> | `iad1` | Washington, D.C. | United States | 美国华盛顿特区 |
-> | `pdx1` | Portland | United States | 美国波特兰 |
-> | `mia1` | Miami | United States | 美国迈阿密 |
-> | `ewr1` | Newark | United States | 美国纽瓦克 |
-> | `yul1` | Montréal | Canada | 加拿大蒙特利尔 |
+> **A read**: one conditional GET of the manifest; 304 → serve from the local copy, 200 → apply the new entries.
+> What "apply" means depends on what the request needs: **refs** (snapshot + log → `packed-refs`, no packs:
+> advertisements, the API, bundle lists), **serve** (the pack set *as this machine can hold it*: small packs and the
+> history pack local, a too-large base read by range), **full** (everything local, for repacks), **objects** (the
+> remote reader, for the UI on a repository that does not fit). Pack downloads run on their own runtime and never
+> block a refs request.
 > 
-> ---
+> **Placement is configuration.** `[placement] serve / maintain` globs say which repositories a host does object
+> work for; refs-level reads work everywhere. One box: leave the defaults. Several: put the monorepo on the host with
+> the SSD (`cache.mode = "disk"`), everything else on the small ones, and route by `//` in front.
 > 
-> ## 注意事项
+> **Nothing waits silently.** Anything slow is a *task* with an id, a log and a progress stream — narrated to git on
+> sideband 2 (`remote: * …`) and to the browser as SSE.
 > 
-> 部署成功后，访问项目地址，确认：
+> `AGENTS.md` is the full architecture and operating manual: constraints, the WAL strategies, every design decision
+> with its reasoning, the invariants, and the cost model (round trips to the bucket are the budget).
 > 
-> 1. 页面能正常访问
-> 2. 生成的订阅链接能获取到节点
-> 3. vervel分配的域名已被墙，无法使用直连节点
-> 4. 哪吒不亮，不用填写
 > 
-> ## 使用cloudflare的workers或snippets反代项目域名，给节点套CDN加速
-> ```bash
-> export default {
->     async fetch(request, env) {
->         let url = new URL(request.url);
->         if (url.pathname.startsWith('/')) {
->             var arrStr = [
->                 'xxx-xxx.vercel.app',   // 此处单引号里填写你的vercel分配的域名，不包含https://
->             ];
->             url.protocol = 'https:'
->             url.hostname = getRandomArray(arrStr)
->             let new_request = new Request(url, request);
->             return fetch(new_request);
->         }
->         return env.ASSETS.fetch(request);
->     },
-> };
-> function getRandomArray(array) {
->   const randomIndex = Math.floor(Math.random() * array.length);
->   return array[randomIndex];
-> }
+> ## Running it
+> 
+> ```sh
+> 
+> # build (needs rust per rust-toolchain.toml, protoc, node 24 + pnpm for the web UI)
+> just web-build && cargo build --release -p walgit-cli
+> 
+> # or: nix build .#walgit        or: podman build -t walgit -f Containerfile .
+> 
+> 
+> # one box, TLS by walgit itself, a local S3 store (rustfs in a container)
+> just dev-store
+> ./target/release/walgit-server --config walgit.standalone.toml
+> open https://walgit.localhost:8080/
 > ```
+> 
+> * `walgit.standalone.toml` — the one-machine shape (self-signed TLS, rustfs, every role). Start here.
+> * `walgit.example.toml` — every key with its default and a comment.
+> * `Containerfile`, `flake.nix` — an OCI image and a Nix package/devshell.
+> * `deploy/nginx.conf.example` — an optional nginx in front: public TLS, one `auth_request` per credential, and
+>   **byte offload**: walgit answers bundle/LFS downloads with `X-Accel-Redirect` and nginx streams + caches the
+>   object from the bucket itself (S3 presigned or GCS with walgit's bearer). The file documents the contract.
+> 
+> Roles (`server.roles`): `serve` (git, API, UI, bundles, LFS), `maintain` (checkpoints, bundles, compaction,
+> fsck/repair), `events` (the webhook bridge). Empty = all. Any number of `serve` hosts may point at one bucket; give
+> each repository one maintainer (placement globs) and you are done.
+> 
+> 
+> ### Authentication
+> 
+> | mode | who gets in | how git authenticates |
+> |---|---|---|
+> | `none` | everyone is `anon` with write — loopback experiments | nothing |
+> | `token` | static `tokens` in the config (`token_env` reads the secret from the environment) | `Authorization: Bearer `, or the token as an HTTP Basic password |
+> | `oidc` | any OpenID Connect issuer (`issuer`, `oauth_client_id/secret`, `allowed_domains`/`allowed_emails`): Google, Entra, Okta, Auth0, Keycloak, Dex, GitLab… | a **walgit access token**: sign in once in the browser, create one at `/_auth/tokens`, paste it into the installer. Stateless (HMAC with `session_secret`, `access_token_ttl`); rotating the secret revokes all. ID tokens from the issuer (`audiences`) and static `tokens` work too. |
+> 
+> Developer setup is one idempotent command — `sh -c "$(curl -fsSL 'https://git.example.com/services/public/install.sh')"` —
+> which stores the token in a file only the user can read, installs a tiny git credential helper (git ≥ 2.46: it
+> answers `get` with `authtype=Bearer`, and on a real 401 `erase`s the token and says where a new one comes from),
+> and turns on `transfer.bundleURI`. `?repo=owner/name` clones right after.
+> 
+> 
+> ### Developing
+> 
+> ```sh
+> just test          # fast hermetic tier (< 1 min): unit + quick integration, in-memory store, real git
+> just e2e           # real git against the server (~20 s)
+> just warnings      # zero rustc warnings across all targets
+> just ci            # all of the above
+> cargo test -p walgit-server --test sim     # fault-injection simulation (crashes, partitions, s
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/vvxw/deploy-vercel)
+[GitHub](https://github.com/tobi/walgit)
 
 ## 相關收錄
 
@@ -276,7 +294,7 @@ Install Command：npm install
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "vvxw--deploy-vercel"
+> WHERE category = "Other" AND file.name != "tobi--walgit"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -285,7 +303,7 @@ Install Command：npm install
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "vvxw--deploy-vercel" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "tobi--walgit" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -294,18 +312,18 @@ Install Command：npm install
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "vvxw--deploy-vercel"
+> WHERE week = "2026-W35" AND file.name != "tobi--walgit"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/tobi--walgit");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "vvxw--deploy-vercel" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "tobi--walgit" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -321,7 +339,7 @@ Install Command：npm install
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "vvxw" AND file.name != "vvxw--deploy-vercel"
+> WHERE owner = "tobi" AND file.name != "tobi--walgit"
 > SORT stars DESC
 > ```
 
@@ -329,7 +347,7 @@ Install Command：npm install
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/tobi--walgit");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -346,7 +364,7 @@ Install Command：npm install
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/tobi--walgit");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -379,7 +397,7 @@ Install Command：npm install
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/tobi--walgit");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -403,7 +421,7 @@ Install Command：npm install
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/tobi--walgit");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -440,7 +458,7 @@ Install Command：npm install
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/tobi--walgit");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -523,7 +541,7 @@ Install Command：npm install
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-22** — 首次收錄
+> **2026-08-25** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -539,7 +557,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-25|2026-08-25]] — 再次上榜，1.3k stars
-- [[2026-08-24|2026-08-24]] — 再次上榜，1.2k stars
-- [[2026-08-23|2026-08-23]] — 再次上榜，1.1k stars
-- [[2026-08-22|2026-08-22]] — 首次收錄，993 stars
+- [[2026-08-25|2026-08-25]] — 首次收錄，1.1k stars

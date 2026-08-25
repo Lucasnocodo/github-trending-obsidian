@@ -1,20 +1,20 @@
 ---
-repo: vvxw/deploy-vercel
-url: https://github.com/vvxw/deploy-vercel
-owner: vvxw
+repo: b-nnett/grok-bot-0.18-reconstructed
+url: https://github.com/b-nnett/grok-bot-0.18-reconstructed
+owner: b-nnett
 owner_type: User
-language: JavaScript
+language: TypeScript
 license: N/A
-description: "Install Command：npm install"
+description: "Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for macOS"
 homepage: ""
-stars: 1305
-stars_per_day: 218
-forks: 270
-open_issues: 5
-created: 2026-08-18
-pushed_at: 2026-08-18
-first_seen: 2026-08-22
-week: "2026-W34"
+stars: 1839
+stars_per_day: 1839
+forks: 2059
+open_issues: 11
+created: 2026-08-23
+pushed_at: 2026-08-23
+first_seen: 2026-08-25
+week: "2026-W35"
 month: "2026-08"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-22
+last_reviewed: 2026-08-25
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-08-28"
 contributor_count: 1
-engagement: "medium"
+engagement: "high"
 issue_close_rate: 0
-repo_size_kb: 28
-readme_length: 2362
+repo_size_kb: 5559
+readme_length: 9293
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-22"
-star_history: "2026-08-22:993,2026-08-23:1131,2026-08-24:1219,2026-08-25:1305"
+ring_history: "assess@2026-08-25"
+star_history: "2026-08-25:1839"
 tags:
   - github
   - "category/other"
-  - "lang/javascript"
+  - "lang/typescript"
 aliases:
-  - "deploy-vercel"
-  - "vvxw/deploy-vercel"
+  - "grok-bot-0.18-reconstructed"
+  - "b-nnett/grok-bot-0.18-reconstructed"
 ---
 
-# deploy-vercel
+# grok-bot-0.18-reconstructed
 
-**993** stars · **331** stars/天 · 建立 3 天前 · JavaScript · 未標註授權
+**1.8k** stars · **1.8k** stars/天 · 建立 1 天前 · TypeScript · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/vvxw--deploy-vercel");
+const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -73,17 +73,17 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> Install Command：npm install
+> Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for macOS
 
 ## 專案簡介
 
-Install Command：npm install
+Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for macOS
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ Install Command：npm install
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,133 +142,245 @@ Install Command：npm install
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 200 |
-| Open Issues | 5 |
+| Forks | 2.1k |
+| Open Issues | 11 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-18 |
-| 建立日期 | 2026-08-18 |
-| Repo 大小 | 28 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/vvxw/deploy-vercel) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `ws` `axios` `@grpc/grpc-js` `@grpc/proto-loader` `systeminformation`
+| 最後推送 | 2026-08-23 |
+| 建立日期 | 2026-08-23 |
+| Repo 大小 | 5.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/b-nnett/grok-bot-0.18-reconstructed) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 64
->     "HTML" : 36
+>     "TypeScript" : 98
+>     "JavaScript" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@vvxw](https://github.com/vvxw) | 5 |
+> | [@b-nnett](https://github.com/b-nnett) | 2 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-18 ~ 2026-08-18）
-> **活躍天數** 1 天 · **最新 commit** Update README.md
+> [!abstract] 最近 10 次 commit（2026-08-22 ~ 2026-08-23）
+> **活躍天數** 2 天 · **最新 commit** Document project and preserve original installers
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#6](https://github.com/vvxw/deploy-vercel/issues/6) | 地区编码经过测试有几个无法使用 | 0 | 0 |
+> | [#3](https://github.com/b-nnett/grok-bot-0.18-reconstructed/issues/3) | Publish installable builds via GitHub Releases and GitHub Ac | 1 | 0 |
+> | [#11](https://github.com/b-nnett/grok-bot-0.18-reconstructed/issues/11) | Routed providers (OpenRouter/Astree/custom) fail: secrets ne | 0 | 0 |
+> | [#10](https://github.com/b-nnett/grok-bot-0.18-reconstructed/issues/10) | 🗺️ Master Reconstruction Plan — All Phases & Context | 0 | 0 |
+> | [#9](https://github.com/b-nnett/grok-bot-0.18-reconstructed/issues/9) | Routed provider path sends tools with no executors | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> ## Vercel 部署说明
-> 1：点击Use this template ➡ Create a new repostory 创建一个私密项目, 名称随意
+> # Grok Bot 0.18 — reconstructed and extended
 > 
-> 2: 修改index.js文件里的环境变量保存，不需要的留空
+> This repository is an unofficial, source-oriented reconstruction of the
+> publicly shipped Grok Bot 0.18.0 macOS app.
 > 
-> 3: 用AI生成一个纯html的网页替换`index.thml`伪装网页
+> The project began as an attempt to understand how the desktop app was put
+> together. It now contains readable TypeScript implementations of its Electron,
+> host, coordinator, local-execution, protocol, and renderer boundaries, plus a
+> deterministic toolchain for turning those sources back into a working macOS
+> application.
 > 
-> 4：打开vercel连接项目部署
->   - 打开 Vercel 控制台
->   - 点击 “New Project”
->   - Import该项目
->   - 选择默认配置, Install Command打开，设置为`npm install`
->   - 点击 “Deploy”, 等待部署完成
+> It also adds a few practical experiments:
 > 
-> 5：部署完成后确认没问题，将反代后的域名填写到`index.js`的DOMAIN环境变量里, 然后用 https://www.jshaman.com/index.html 混淆替换后保存
+> - an inference router for Cursor, Claude Code, Codex, and OpenRouter;
+> - Grok Bot plugin/MCP tools across the routed providers;
+> - local usage tracking for routed inference;
+> - an optional local Docker sandbox in place of the remote box; and
+> - a reconstructed settings surface integrated into the polished shipped UI.
 > 
-> 6：获取订阅信息，修改优选域名使用(节点里的address字段),可以自行套订阅器，比如：https://sub.eooce.xx.kg
+> This is a hacking and research project, not Anysphere's original monorepo and
+> not an official Grok Bot release. Names and module boundaries inferred from a
+> compiled application may differ from the original source.
 > 
-> ## Vercel 常用地区代码对照表
+> ## What is in the repository?
 > 
-> 下面是常见 Vercel `regions` 代码对应关系：
+> The checked-in tree contains the reviewed reconstruction, tests, manifests,
+> build scripts, and Git LFS preservation copies of the original macOS arm64 and
+> Windows x64 installers. It deliberately does **not** commit the extracted
+> upstream application, build output, local credentials, or the large forensic
+> recovery workspace.
 > 
-> | 地区代码 | 城市/区域 | 国家/地区 | 中文说明 |
-> |---|---|---|---|
-> | `hnd1` | Tokyo | Japan | 日本东京 |
-> | `kix1` | Osaka | Japan | 日本大阪 |
-> | `icn1` | Seoul | South Korea | 韩国首尔 |
-> | `hkg1` | Hong Kong | Hong Kong | 中国香港 |
-> | `sin1` | Singapore | Singapore | 新加坡 |
-> | `syd1` | Sydney | Australia | 澳大利亚悉尼 |
-> | `bom1` | Mumbai | India | 印度孟买 |
-> | `del1` | New Delhi | India | 印度新德里 |
-> | `fra1` | Frankfurt | Germany | 德国法兰克福 |
-> | `lhr1` | London | United Kingdom | 英国伦敦 |
-> | `cdg1` | Paris | France | 法国巴黎 |
-> | `ams1` | Amsterdam | Netherlands | 荷兰阿姆斯特丹 |
-> | `mad1` | Madrid | Spain | 西班牙马德里 |
-> | `dub1` | Dublin | Ireland | 爱尔兰都柏林 |
-> | `dxb1` | Dubai | United Arab Emirates | 阿联酋迪拜 |
-> | `jnb1` | Johannesburg | South Africa | 南非约翰内斯堡 |
-> | `cpt1` | Cape Town | South Africa | 南非开普敦 |
-> | `gru1` | São Paulo | Brazil | 巴西圣保罗 |
-> | `sfo1` | San Francisco | United States | 美国旧金山 |
-> | `iad1` | Washington, D.C. | United States | 美国华盛顿特区 |
-> | `pdx1` | Portland | United States | 美国波特兰 |
-> | `mia1` | Miami | United States | 美国迈阿密 |
-> | `ewr1` | Newark | United States | 美国纽瓦克 |
-> | `yul1` | Montréal | Canada | 加拿大蒙特利尔 |
+> The public Grok Bot 0.18.0 application is instead treated as a pinned build
+> input. During bootstrap, the toolchain downloads it, verifies its SHA-256
+> identity, and extracts the pieces required to assemble the reconstruction.
 > 
-> ---
+> The resulting app is a hybrid by design:
 > 
-> ## 注意事项
+> - application runtimes are compiled from the readable sources under `source/`;
+> - the polished shipped renderer remains the UI baseline;
+> - a narrow deterministic transform adds the reconstructed Router settings UI;
+> - original and patched renderer chunk hashes are recorded and verified; and
+> - the finished app uses a separate bundle identifier and an ad-hoc signature.
 > 
-> 部署成功后，访问项目地址，确认：
+> The upstream app installed on the machine is never overwritten.
 > 
-> 1. 页面能正常访问
-> 2. 生成的订阅链接能获取到节点
-> 3. vervel分配的域名已被墙，无法使用直连节点
-> 4. 哪吒不亮，不用填写
+> ### Why retain the shipped renderer?
 > 
-> ## 使用cloudflare的workers或snippets反代项目域名，给节点套CDN加速
-> ```bash
-> export default {
->     async fetch(request, env) {
->         let url = new URL(request.url);
->         if (url.pathname.startsWith('/')) {
->             var arrStr = [
->                 'xxx-xxx.vercel.app',   // 此处单引号里填写你的vercel分配的域名，不包含https://
->             ];
->             url.protocol = 'https:'
->             url.hostname = getRandomArray(arrStr)
->             let new_request = new Request(url, request);
->             return fetch(new_request);
->         }
->         return env.ASSETS.fetch(request);
->     },
-> };
-> function getRandomArray(array) {
->   const randomIndex = Math.floor(Math.random() * array.length);
->   return array[randomIndex];
-> }
+> The distributed application did not include the original frontend source or
+> source maps. It contained optimized, minified production JavaScript and CSS
+> chunks: enough to inspect behavior and recover contracts, but not the authored
+> React components, names, comments, file structure, or design-system source.
+> 
+> Recreating the complete frontend with the same polish and behavior would have
+> been a separate, much larger reverse-engineering project. It was not a realistic
+> goal for a weekend build. The practical choice was therefore to reconstruct the
+> runtime and control-plane code, retain the checksum-pinned shipped renderer,
+> and make the smallest auditable UI patch needed for the new Router settings.
+> 
+> `frontend/` is a readable partial reconstruction and design workspace. It is
+> useful for understanding UI contracts and experimenting with clean components,
+> but it should not be mistaken for Anysphere's missing original frontend source
+> or a pixel-perfect replacement for the packaged renderer.
+> 
+> ## Preserved original installers
+> 
+> Research copies of the exact 0.18.0 installers live under
+> `research-archives/original/0.18.0/` and are stored with Git LFS:
+> 
+> | Platform | File | SHA-256 |
+> | --- | --- | --- |
+> | macOS arm64 | `macos-arm64/Grok_Bot_0.18.0.dmg` | `a253ccd8aab01e083f9812a0264354c5034d8ba7f0610bbb557e82ae77d203eb` |
+> | Windows x64 | `windows-x64/Grok_Bot_0.18.0_Setup.exe` | `464079a15ef5fa8b61ccea8fffcc78f63cfcf6df65fb0ad5e725d8b95f7e437e` |
+> 
+> See [research-archives/README.md](research-archives/README.md) for source URLs,
+> sizes, verification commands, and the machine-readable artifact manifest.
+> 
+> ## Current features
+> 
+> ### Inference Router
+> 
+> Open **Settings → Router** to choose the backend used for new turns:
+> 
+> | Provider | Authentication | Tool support |
+> | --- | --- | --- |
+> | Cursor | Existing Grok Bot/Cursor session | Native Grok Bot tools and plugins |
+> | Claude Code | Existing Claude Code login | Routed Grok Bot MCP tools |
+> | Codex | Existing local ChatGPT/Codex login | Direct Responses transport with Grok Bot tools |
+> | OpenRouter | API key saved through the desktop secrets bridge | Grok Bot tool-execution loop |
+> 
+> Cursor is the default. Claude Code and Codex do not require separate API keys
+> when their local clients are already authenticated. The application preserves
+> streaming responses, thinking state, reactions, rich plugin mentions, and MCP
+> tool execution across routed conversations.
+> 
+> **Usage & Billing** shows the locally recorded request and token totals for
+> providers that return usage data. These figures are activity records, not an
+> authoritative provider invoice.
+> 
+> ### Local Docker sandbox
+> 
+> The Router page also has a **Use local Docker VM** toggle. When enabled, Grok
+> Bot runs its box host and execution daemon in an owned local container instead
+> of connecting to the remote sandbox.
+> 
+> The container:
+> 
+> - is bound only to loopback ports;
+> - mounts content-addressed host and daemon artifacts read-only;
+> - reuses the user's existing provider authentication where needed;
+> - is validated before the coordinator connects; and
+> - is stopped or replaced through the same settings lifecycle.
+> 
+> Docker Desktop, or another compatible local Docker daemon, must be running.
+> Remote mode remains the default.
+> 
+> ## Requirements
+> 
+> - macOS on Apple Silicon
+> - Node.js 26.5.x
+> - Xcode Command Line Tools
+> - Git LFS
+> - Docker Desktop (optional, only for the local sandbox)
+> - local Claude Code or Codex authentication for those router choices
+> 
+> ## Quick start
+> 
+> ```sh
+> git clone 
+> cd grok-bot-0.18-reconstructed
+> git lfs install
+> git lfs pull
+> npm ci
+> npm run bootstrap
+> npm run check
+> npm run package
+> open "dist/Grok Bot 0.18 Reconstructed.app"
 > ```
+> 
+> `npm run bootstrap` first uses the Git LFS preservation copy of the pinned
+> 0.18.0 DMG. If that archive is absent, it falls back to the original public URL;
+> `GROK_BOT_018_APP` can also point to an existing application copy. Bootstrap
+> verifies both the DMG and `app.asar`, caches the matching Electron runtime, and
+> hydrates the ignored `src/app/dist` build input.
+> 
+> `npm run package` compiles the reconstructed runtimes, applies the narrow
+> renderer/settings transform, creates the app bundle, assigns the reconstructed
+> bundle identity, ad-hoc signs it, and verifies the result. Output is written to:
+> 
+> ```text
+> dist/Grok Bot 0.18 Reconstructed.app
+> ```
+> 
+> Reconstructed packages disable the upstream updater at the packaging boundary
+> and default upstream Sentry and telemetry emission off. Explicitly supplied
+> environment configuration is still respected.
+> 
+> ## Architecture
+> 
+> ```text
+> polished shipped renderer
+>           │
+>           │ desktop preload / RPC
+>           ▼
+>      Electron main
+>           │
+>           ├── settings, secrets, auth and plugin lifecycle
+>           ├── remote box connector
+>           └── owned local Docker connector
+>                        │
+>                        ▼
+>               coordinator + host
+>                        │
+>               inference router
+>            ┌───────────┼───────────┐
+>         Cursor      Claude       Codex / OpenRouter
+>                        │
+>                  Grok Bot MCP tools
+> ```
+> 
+> The main source areas are:
+> 
+> - `source/electron-main/` — desktop lifecycle, settings, auth, box connectors,
+>   coordinator ownership, and RPC handlers;
+> - `source/electron-preload/` — the narrow trusted bridge exposed to the UI;
+> - `source/host/` — inference, tools, MCP, settings, and turn execution;
+> - `source/node-agent-coordinator/` — transcript routing, streaming activity,
+>   reactions, and the routed MCP bridge;
+> - `source/shared/` — shared contracts, settings, protocol, and provider helpers;
+> - `frontend/` — readable React/TypeScript renderer reconstruction and design
+>   workspace;
+> - `scripts/` — bootstrap, compilation, renderer patching, packaging, signing,
+>   and verification; and
+> - `tests/` — publication and router regressions.
+> 
+> See [docs/ARCHITECTURE.md](docs/ARCHIT
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/vvxw/deploy-vercel)
+[GitHub](https://github.com/b-nnett/grok-bot-0.18-reconstructed)
 
 ## 相關收錄
 
@@ -276,7 +388,7 @@ Install Command：npm install
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "vvxw--deploy-vercel"
+> WHERE category = "Other" AND file.name != "b-nnett--grok-bot-0.18-reconstructed"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -285,7 +397,7 @@ Install Command：npm install
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "vvxw--deploy-vercel" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "b-nnett--grok-bot-0.18-reconstructed" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -294,18 +406,18 @@ Install Command：npm install
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W34" AND file.name != "vvxw--deploy-vercel"
+> WHERE week = "2026-W35" AND file.name != "b-nnett--grok-bot-0.18-reconstructed"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "vvxw--deploy-vercel" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "b-nnett--grok-bot-0.18-reconstructed" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -321,7 +433,7 @@ Install Command：npm install
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "vvxw" AND file.name != "vvxw--deploy-vercel"
+> WHERE owner = "b-nnett" AND file.name != "b-nnett--grok-bot-0.18-reconstructed"
 > SORT stars DESC
 > ```
 
@@ -329,7 +441,7 @@ Install Command：npm install
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -346,7 +458,7 @@ Install Command：npm install
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -379,7 +491,7 @@ Install Command：npm install
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -403,7 +515,7 @@ Install Command：npm install
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -440,7 +552,7 @@ Install Command：npm install
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/vvxw--deploy-vercel");
+> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -523,7 +635,7 @@ Install Command：npm install
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-22** — 首次收錄
+> **2026-08-25** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -539,7 +651,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-25|2026-08-25]] — 再次上榜，1.3k stars
-- [[2026-08-24|2026-08-24]] — 再次上榜，1.2k stars
-- [[2026-08-23|2026-08-23]] — 再次上榜，1.1k stars
-- [[2026-08-22|2026-08-22]] — 首次收錄，993 stars
+- [[2026-08-25|2026-08-25]] — 首次收錄，1.8k stars

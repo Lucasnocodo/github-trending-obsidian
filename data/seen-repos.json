@@ -3641,10 +3641,10 @@
   },
   "s1dashu/ip-as-logo-skill": {
     "first_seen": "2026-08-20",
-    "last_seen": "2026-08-24",
-    "times_seen": 5,
+    "last_seen": "2026-08-25",
+    "times_seen": 6,
     "stars_first": 2150,
-    "stars_last": 3925
+    "stars_last": 4144
   },
   "CopilotKit/OpenBot": {
     "first_seen": "2026-08-21",
@@ -3690,17 +3690,17 @@
   },
   "wang2122/sprix-sage-router": {
     "first_seen": "2026-08-22",
-    "last_seen": "2026-08-24",
-    "times_seen": 3,
+    "last_seen": "2026-08-25",
+    "times_seen": 4,
     "stars_first": 1009,
-    "stars_last": 1424
+    "stars_last": 1756
   },
   "vvxw/deploy-vercel": {
     "first_seen": "2026-08-22",
-    "last_seen": "2026-08-24",
-    "times_seen": 3,
+    "last_seen": "2026-08-25",
+    "times_seen": 4,
     "stars_first": 993,
-    "stars_last": 1219
+    "stars_last": 1305
   },
   "Leutenegger/watermarks-remover": {
     "first_seen": "2026-08-22",
@@ -3725,17 +3725,17 @@
   },
   "MengTo/threeui": {
     "first_seen": "2026-08-23",
-    "last_seen": "2026-08-24",
-    "times_seen": 2,
+    "last_seen": "2026-08-25",
+    "times_seen": 3,
     "stars_first": 1940,
-    "stars_last": 2965
+    "stars_last": 3536
   },
   "duty1g/x64dbg-mcp-server": {
     "first_seen": "2026-08-24",
-    "last_seen": "2026-08-24",
-    "times_seen": 1,
+    "last_seen": "2026-08-25",
+    "times_seen": 2,
     "stars_first": 921,
-    "stars_last": 921
+    "stars_last": 1242
   },
   "Spielewoy/autoprompt-skill": {
     "first_seen": "2026-08-24",
@@ -3746,9 +3746,37 @@
   },
   "ShadowAqueduct/watermark-remover": {
     "first_seen": "2026-08-24",
-    "last_seen": "2026-08-24",
-    "times_seen": 1,
+    "last_seen": "2026-08-25",
+    "times_seen": 2,
     "stars_first": 760,
-    "stars_last": 760
+    "stars_last": 773
+  },
+  "b-nnett/grok-bot-0.18-reconstructed": {
+    "first_seen": "2026-08-25",
+    "last_seen": "2026-08-25",
+    "times_seen": 1,
+    "stars_first": 1839,
+    "stars_last": 1839
+  },
+  "tobi/walgit": {
+    "first_seen": "2026-08-25",
+    "last_seen": "2026-08-25",
+    "times_seen": 1,
+    "stars_first": 1082,
+    "stars_last": 1082
+  },
+  "MeteorNOX/DeepSeek-Balance-Whale-Widget": {
+    "first_seen": "2026-08-25",
+    "last_seen": "2026-08-25",
+    "times_seen": 1,
+    "stars_first": 876,
+    "stars_last": 876
+  },
+  "cclank/lanshu-create-ai-presenter-video": {
+    "first_seen": "2026-08-25",
+    "last_seen": "2026-08-25",
+    "times_seen": 1,
+    "stars_first": 840,
+    "stars_last": 840
   }
 }
