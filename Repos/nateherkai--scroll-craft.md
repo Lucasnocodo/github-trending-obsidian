@@ -1,19 +1,19 @@
 ---
-repo: cclank/lanshu-create-ai-presenter-video
-url: https://github.com/cclank/lanshu-create-ai-presenter-video
-owner: cclank
+repo: nateherkai/scroll-craft
+url: https://github.com/nateherkai/scroll-craft
+owner: nateherkai
 owner_type: User
-language: Python
+language: JavaScript
 license: MIT
-description: "Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image."
-homepage: ""
-stars: 924
-stars_per_day: 185
-forks: 167
-open_issues: 0
-created: 2026-08-20
-pushed_at: 2026-08-20
-first_seen: 2026-08-25
+description: "Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll."
+homepage: "https://github.com/nateherkai/scroll-craft"
+stars: 917
+stars_per_day: 306
+forks: 148
+open_issues: 1
+created: 2026-08-22
+pushed_at: 2026-08-23
+first_seen: 2026-08-26
 week: "2026-W35"
 month: "2026-08"
 category: "Other"
@@ -25,44 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-25
+last_reviewed: 2026-08-26
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-02"
+appearances: 1
+next_review: "2026-08-29"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 21
-readme_length: 2685
+issue_close_rate: 0
+repo_size_kb: 4799
+readme_length: 9141
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-25"
-star_history: "2026-08-25:840,2026-08-26:924"
+ring_history: "assess@2026-08-26"
+star_history: "2026-08-26:917"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - "topic/ai_video"
-  - "topic/codex"
-  - "topic/codex_skill"
-  - "topic/digital_human"
-  - "topic/video_generation"
+  - "lang/javascript"
+  - "topic/accessibility"
+  - "topic/agent_skills"
+  - "topic/ai_web_design"
+  - "topic/anthropic"
+  - "topic/claude_code"
 aliases:
-  - "lanshu-create-ai-presenter-video"
-  - "cclank/lanshu-create-ai-presenter-video"
+  - "scroll-craft"
+  - "nateherkai/scroll-craft"
 ---
 
-# lanshu-create-ai-presenter-video
+# scroll-craft
 
-**840** stars · **210** stars/天 · 建立 4 天前 · Python · MIT
+**917** stars · **306** stars/天 · 建立 3 天前 · JavaScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+const me = dv.page("Repos/nateherkai--scroll-craft");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -77,20 +77,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 `個人專案`
 
-`ai-video` `codex` `codex-skill` `digital-human` `video-generation`
+`accessibility` `agent-skills` `ai-web-design` `anthropic` `claude-code` `claude-code-plugin` `creative-coding` `design-system` `frontend` `interaction-design` `landing-page` `scroll-animation` `scrollytelling` `typography` `web-design`
 
 > [!summary] 一句話摘要
-> Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.
+> Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll.
 
 ## 專案簡介
 
-Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.
+Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/nateherkai--scroll-craft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +125,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/nateherkai--scroll-craft");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,186 +149,185 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 146 |
-| Open Issues | 0 |
-| 最後推送 | 2026-08-20 |
-| 建立日期 | 2026-08-20 |
-| Repo 大小 | 21 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cclank/lanshu-create-ai-presenter-video) |
-| Topics | `ai-video` `codex` `codex-skill` `digital-human` `video-generation` |
+| Forks | 148 |
+| Open Issues | 1 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-08-23 |
+| 建立日期 | 2026-08-22 |
+| 官方網站 | [Link](https://github.com/nateherkai/scroll-craft) |
+| Repo 大小 | 4.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/nateherkai/scroll-craft) |
+| Topics | `accessibility` `agent-skills` `ai-web-design` `anthropic` `claude-code` `claude-code-plugin` `creative-coding` `design-system` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 65
->     "Shell" : 35
+>     "JavaScript" : 76
+>     "CSS" : 12
+>     "HTML" : 10
+>     "Shell" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@cclank](https://github.com/cclank) | 1 |
+> | [@nateherkai](https://github.com/nateherkai) | 8 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-20）
-> **活躍天數** 1 天 · **最新 commit** Initial open-source release
+> [!abstract] 最近 10 次 commit（2026-08-22 ~ 2026-08-23）
+> **活躍天數** 2 天 · **最新 commit** fix: iOS scrub-clip priming, plus a real-device diagnostic page
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#1](https://github.com/nateherkai/scroll-craft/issues/1) | data-sc-kinetic is silently ignored when it sits on a child  | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # lanshu-create-ai-presenter-video
+> # scrollcraft
 > 
-> [](https://github.com/cclank/lanshu-create-ai-presenter-video/actions/workflows/validate.yml)
+> **A Claude Code skill that builds premium, scroll-driven websites, and holds them to a real design standard.**
+> 
+> Most AI website output fails in one of two directions. It is either well behaved and forgettable, or it is a flashy scroll animation with 2.1:1 body text, a headline that wraps to six lines on a phone, and the same six sections every other AI page has. scrollcraft is built to fail neither way: it treats **interaction** and **craft** as one job rather than two.
+> 
 > [](LICENSE)
-> [](https://www.python.org/)
-> [](https://ffmpeg.org/)
-> [](https://github.com/cclank/lanshu-create-ai-presenter-video/stargazers)
+> [](https://code.claude.com/docs/en/plugins)
 > 
-> 一个面向 Codex 的通用数字人视频制作 Skill。输入主题或文案与授权人物图后，它会组织文案、配音、人物生成、口型校准、字幕与关键词动效、剪辑、渲染和质量验收。
+> ---
 > 
-> 它按能力选择当前环境可用的工具，项目源码不绑定服务商、模型名称或私有接口。
+> ## Three builds, three completely different pages
 > 
-> ## 最少需要提供什么
+> Same skill, same engine, no shared skeleton. The differences below are not themes: they are different page grammars, different navigation models, different endings.
 > 
-> 1. 一个主题或一份完整文案。
-> 2. 一张经过授权、包含清晰成年人物的参考图。
+> ### Orrery · a travel practice
+> One unbroken world. The whole page is a single fixed stage: you fall into a handmade scale model of the Earth, land in Kyoto, cross to Patagonia and the Sahara, and rise back to the workbench you started on. No section boundaries anywhere.
 > 
-> 可选输入包括声音样本、屏幕录制、图片、B-roll、品牌素材、目标平台、时长、横竖屏、风格、水印和结尾引导。
+> ### PERKFORM · a protein coffee
+> A filmic one-shot that hard-cuts to two full-bleed inverted grounds mid-page. Loud, product-forward, and the only one of the three that raises its voice.
 > 
-> ## 安装
+> ### Fallowbank · a landscape design-build studio
+> Quiet, documentary, restrained. Museum-label copy over real photography, and a close that is a line of running text rather than a button.
 > 
-> ```bash
-> git clone https://github.com/cclank/lanshu-create-ai-presenter-video.git \
->   ~/.codex/skills/lanshu-create-ai-presenter-video
-> ```
+> ---
 > 
-> 安装后的 Skill 路径：
+> ## What it actually does
 > 
-> ```text
-> ~/.codex/skills/lanshu-create-ai-presenter-video
-> ```
+> **Interaction, engagement, and being unrepeatable**
 > 
-> ## 文件结构
+> - **Scroll is the timeline.** Video scrubs frame by frame under the wheel, sections pin while their argument advances, rails pan sideways, headlines assemble line by line, the page ground shifts colour as you travel, and the pointer moves things that are not scrolling.
+> - **Eight mutually exclusive page grammars.** Filmic one-shot, chaptered editorial, live surface, continuous world, typographic poster, gallery, split stage, rhythmic cutlist. Each one *forbids* what the others require, so two builds cannot quietly converge.
+> - **A required signature move.** Every build invents one bespoke interaction that exists on that site alone. A recoloured spotlight does not count.
+> - **A fingerprint gate.** A new build must differ from every page you have already made on at least 4 of 6 dimensions: grammar, nav, hero, act shape, close, signature move. Fail it and you change the plan, not the record.
 > 
-> ```text
-> lanshu-create-ai-presenter-video/
-> ├── SKILL.md
-> ├── README.md
-> ├── agents/
-> │   └── openai.yaml
-> ├── assets/
-> │   └── job.template.json
-> ├── references/
-> │   ├── generation.md
-> │   ├── editing.md
-> │   └── qa-recovery.md
-> └── scripts/
->     ├── init_job.py
->     ├── preflight.py
->     └── finalize_delivery.sh
-> ```
+> **Craft, and how the page actually feels**
 > 
-> ## 三份参考文档分别负责什么
+> - **A feeling curve before any act exists.** One line per act: the emotion, then what on screen causes it. Two adjacent acts with the same feeling means one is filler.
+> - **One engineered peak.** Peak-end rule, applied literally. The peak gets the asset budget, the silence in front of it, and the most scroll room. A page with three peaks has none.
+> - **A typography floor.** Two families maximum, tracking that tightens as size grows, 45 to 75ch measure, line height inverse to measure, and light-on-dark compensated on three axes.
+> - **A spacing scale with actual rhythm.** 4px base, more space above a heading than below it, fluid section padding so a phone does not inherit desktop air.
+> - **Colour with six roles and one accent**, secondary text tinted rather than flat grey, no pure black, and a documented escape for pages that hard-cut between light and dark grounds.
+> - **Depth as five tools, not one.** Offset shadows, edge light, scale-and-blur as distance, overlap, and grain.
+> - **Brand guidelines are inputs, not decoration.** Point it at a brand kit and its hard rules win, including rules that forbid things the skill would otherwise reach for.
+> - **A refuse list.** Identical feature-card grids, `01 / 06` counters, scroll cues, gradient text, em dashes, invented statistics, fake dashboards, AI-purple gradients, and the cream-and-brass artisan palette every craft brand defaults to.
 > 
-> - `generation.md`：输入检查、文案、声音、能力选型、付费生成、人物提示词与一致性。
-> - `editing.md`：时间轴、开场和结尾、字幕预设、人物侧关键词动效、封面与导出。
-> - `qa-recovery.md`：技术验收、人工验收和常见故障修复。
+> **It checks its own work**
 > 
-> Codex 只在进入对应阶段时读取相关文档，减少上下文占用。
+> A headless browser walks the finished page at every scroll position, waits for the video playhead to settle, and reports:
 > 
-> ## 快速使用
+> - **dead scroll**: scroll that changes nothing on screen
+> - **cues that never reach full opacity**: copy the reader can only ever see faded
+> - **contrast measured on the composited page**, per line, at the brightest frame that ever passes under it, with the direction picked per line so light-on-dark and dark-on-light are both graded correctly
+> - **legs stuck on a poster**: a clip that silently never decoded, which looks exactly like a paused film
 > 
-> 在对话中直接说：
+> Then it writes a contact sheet, because a machine can prove a page works and cannot tell you it means anything.
 > 
-> ```text
-> 使用 $lanshu-create-ai-presenter-video，把这份文案和人物图做成一条 16:9、30 秒、有实时字幕的数字人讲解视频。
-> ```
+> ---
 > 
-> 也可以先初始化标准任务目录：
+> ## Install
 > 
 > ```bash
-> SKILL_DIR=~/.codex/skills/lanshu-create-ai-presenter-video
-> 
-> python3 "$SKILL_DIR/scripts/init_job.py" \
->   --job-dir ~/Videos/my-presenter-video \
->   --presenter-image ~/Pictures/presenter.png \
->   --topic "视频主题" \
->   --duration 60 \
->   --aspect 9:16 \
->   --rights-confirmed \
->   --adult-presenter-confirmed
+> /plugin marketplace add nateherkai/scroll-craft
+> ```
+> ```bash
+> /plugin install nateherk-design
 > ```
 > 
-> 随后查看并补全 `job.json` 中的人工检查与远程上传许可，再运行：
+> Then use it by describing what you want, or invoke it directly:
+> 
+> ```
+> /nateherk-design:scrollcraft
+> ```
+> 
+> If the install summary says `Run /reload-plugins to activate.`, run that.
+> 
+> To hack on the skill without installing:
 > 
 > ```bash
-> python3 "$SKILL_DIR/scripts/preflight.py" ~/Videos/my-presenter-video/job.json
+> claude --plugin-dir ./plugins/nateherk-design
 > ```
 > 
-> ## 运行环境
+> ## First run
 > 
-> - Codex 或兼容本地 Skill 的 Agent 环境。
-> - Python `3.9+`。
-> - `FFmpeg` 与 `ffprobe`。
-> - Bash、`jq`、`awk` 和 `sed`。
-> - 至少一种当前环境可调用的视频生成、语音生成与口型同步能力。
-> 
-> ## 核心工作方式
-> 
-> ```text
-> 主题或文案 + 授权人物图
->         ↓
-> 锁定文案与完整配音
->         ↓
-> 低成本人物试片
->         ↓
-> 生成连续数字人主素材
->         ↓
-> 按同一条音频时间轴剪辑
->         ↓
-> 添加字幕、关键词动效和封面
->         ↓
-> 口型、人物、声音与画面验收
->         ↓
-> 输出母版、分享版和 QA 报告
+> ```bash
+> node scripts/doctor.mjs              # preflight: says exactly what is missing
+> node scripts/workspace.mjs --ensure  # creates your workspace and an empty registry
 > ```
 > 
-> 完整配音是全片的时间基准。人物视频、字幕、镜头、关键词与转场都按照这条音频定位，可以减少口型漂移和片段衔接问题。
+> Run `doctor` before anything else. The three most common setup faults all surface later as misleading errors otherwise: a stripped ffmpeg reports a missing filter as a syntax error in *your* command, a missing WebP muxer reports as a bad filename, and `playwright-core` resolves from the wrong directory.
 > 
-> ## 默认设置
+> ## Requirements
 > 
-> - 竖屏 `9:16`、`1080×1920`、`30fps`。
-> - 主题生成的视频通常控制在 45–75 秒。
-> - 没有授权声音样本时使用合适的库存声音。
-> - 默认包含清晰开场、2–4 个内容节拍和简洁结尾。
-> - 音乐与商业引导按需求添加。
-> - 发布响度目标约为 `-16 LUFS`。
+> | | Why | Notes |
+> | --- | --- | --- |
+> | **Node 18+** | every script | |
+> | **A full ffmpeg build** | encoding clips so they *scrub* rather than play | Some toolchains put a stripped ffmpeg on PATH with ~50 filters and no `scale`. `doctor` finds a real build if one exists; `SCROLLCRAFT_FFMPEG` overrides. |
+> | **`playwright-core` + Chrome** | the verification pass | `npm i playwright-core` **in the build folder** |
+> | **`KIE_AI_API_KEY`** | only if you want assets *generated* | Optional. Building from your own photos and footage needs no key and no spend, and it is a first-class route. See `.env.example`. |
 > 
-> ## 安全和成本边界
+> ## The workspace
 > 
-> - 远程上传前确认图片使用权和成年人物状态。
-> - 克隆声音前确认声音授权。
-> - 首次付费生成前说明上传内容、生成时长、价格依据、试片方案和重试上限。
-> - 任务中断后优先查询已有任务 ID，避免重复扣费。
-> - 连续三个付费候选失败后停止并总结问题。
+> Your builds and your fingerprint registry live in one directory, resolved rather than assumed. First hit wins:
 > 
-> ## 开源与隐私
+> 1. `SCROLLCRAFT_HOME`
+> 2. the nearest `.scrollcraft.json` walking up from the current directory: `{ "workspace": "path/to/builds" }`
+> 3. `/scrollcraft`
 > 
-> - 仓库不保存 API 密钥、访问令牌、签名下载地址或用户素材。
-> - 任务级请求记录需要移除凭据与临时 URL 后再提交。
-> - 预检与交付报告只保存文件名，不写入开发者机器的绝对路径。
-> - 项目使用 [MIT License](LICENSE)，可以自由使用、修改和分发。
+> Builds land in `/builds//`; your registry is `/FINGERPRINTS.md`.
 > 
-> ## 贡献
+> **Your registry starts empty, and that is correct.** The gate exists to stop you repeating *yourself*, so your first build has nothing to clear and every build after it does. [`EXAMPLES.md`](EXAMPLES.md) is the author's twelve-row table, included so you can see what a filled registry looks like and which shapes tend to collide. It is illustration, not constraint.
 > 
-> 欢迎通过 Issue 提交使用反馈，也欢迎用 Pull Request 改进工作流、兼容性和质量检查。
+> ## What is in here
+> 
+> ```
+> plugins/nateherk-design/
+> └── skills/scrollcraft/
+>     ├── SKILL.md            the procedure: interview, grammar, score, build, verify
+>     ├── references/
+>     │   ├── uniqueness.md   eight page grammars, the signature move, the fingerprint gate
+>     │   ├── feel.md         the feeling curve, the engineered peak, the feel check
+>     │   ├── devices.md      nine scroll devices and the cue contract
+>     │   ├── worldflight.md  continuous-world mode: one fixed stage, no seams
+>     │   ├── worlds.md       art direction, and the style-preamble method
+>     │   ├── taste.md        the design floor: spacing, type, colour, depth, motion
+>     │   ├── assets.md       generation, camera moves, encoding for scrubbing
+>     │   ├── verify.md       the harness, and what it cannot tell you
+>     │   └── template.html   a starting skeleton, not a layout
+>     ├── engine/             scrollcraft.js + .css. The mechanism, never edited per project
+>     ├── templates/          the empty registry a new workspace is seeded from
+>     └── scripts/            doctor · workspace · kie · encode · serve · shoot · worldflight-assert
+> ```
+> 
+> [`CHANGELOG.md`](plugins/nateherk-design/skills/scrollcraft/CHANGELOG.md)
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/cclank/lanshu-create-ai-presenter-video)
+[GitHub](https://github.com/nateherkai/scroll-craft) · [官方網站](https://github.com/nateherkai/scroll-craft)
 
 ## 相關收錄
 
@@ -336,7 +335,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE category = "Other" AND file.name != "nateherkai--scroll-craft"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -345,7 +344,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "cclank--lanshu-create-ai-presenter-video" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "nateherkai--scroll-craft" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -354,18 +353,18 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE week = "2026-W35" AND file.name != "nateherkai--scroll-craft"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/nateherkai--scroll-craft");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "cclank--lanshu-create-ai-presenter-video" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "nateherkai--scroll-craft" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -381,7 +380,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "cclank" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE owner = "nateherkai" AND file.name != "nateherkai--scroll-craft"
 > SORT stars DESC
 > ```
 
@@ -389,7 +388,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/nateherkai--scroll-craft");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -406,7 +405,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/nateherkai--scroll-craft");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -439,7 +438,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/nateherkai--scroll-craft");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -463,7 +462,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/nateherkai--scroll-craft");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -500,7 +499,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/nateherkai--scroll-craft");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -583,7 +582,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-25** — 首次收錄
+> **2026-08-26** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -599,5 +598,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-26|2026-08-26]] — 再次上榜，924 stars
-- [[2026-08-25|2026-08-25]] — 首次收錄，840 stars
+- [[2026-08-26|2026-08-26]] — 首次收錄，917 stars

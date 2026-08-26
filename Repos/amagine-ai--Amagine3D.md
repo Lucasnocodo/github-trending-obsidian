@@ -1,19 +1,19 @@
 ---
-repo: cclank/lanshu-create-ai-presenter-video
-url: https://github.com/cclank/lanshu-create-ai-presenter-video
-owner: cclank
-owner_type: User
-language: Python
-license: MIT
-description: "Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image."
+repo: amagine-ai/Amagine3D
+url: https://github.com/amagine-ai/Amagine3D
+owner: amagine-ai
+owner_type: Organization
+language: TypeScript
+license: Apache-2.0
+description: "Amagine3D: From hardware requirements to editable 3D designs"
 homepage: ""
-stars: 924
-stars_per_day: 185
-forks: 167
-open_issues: 0
-created: 2026-08-20
-pushed_at: 2026-08-20
-first_seen: 2026-08-25
+stars: 556
+stars_per_day: 93
+forks: 29
+open_issues: 4
+created: 2026-08-19
+pushed_at: 2026-08-25
+first_seen: 2026-08-26
 week: "2026-W35"
 month: "2026-08"
 category: "Other"
@@ -25,44 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-25
+last_reviewed: 2026-08-26
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-02"
 contributor_count: 1
-engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 21
-readme_length: 2685
+engagement: "low"
+issue_close_rate: 43
+repo_size_kb: 4769
+readme_length: 9671
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-25"
-star_history: "2026-08-25:840,2026-08-26:924"
+ring_history: "assess@2026-08-26"
+star_history: "2026-08-26:556"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - "topic/ai_video"
-  - "topic/codex"
-  - "topic/codex_skill"
-  - "topic/digital_human"
-  - "topic/video_generation"
+  - "lang/typescript"
+  - org
 aliases:
-  - "lanshu-create-ai-presenter-video"
-  - "cclank/lanshu-create-ai-presenter-video"
+  - "Amagine3D"
+  - "amagine-ai/Amagine3D"
 ---
 
-# lanshu-create-ai-presenter-video
+# Amagine3D
 
-**840** stars · **210** stars/天 · 建立 4 天前 · Python · MIT
+**556** stars · **93** stars/天 · 建立 6 天前 · TypeScript · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+const me = dv.page("Repos/amagine-ai--Amagine3D");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
-
-`ai-video` `codex` `codex-skill` `digital-human` `video-generation`
+`ORG`
 
 > [!summary] 一句話摘要
-> Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.
+> Amagine3D: From hardware requirements to editable 3D designs
 
 ## 專案簡介
 
-Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.
+Amagine3D: From hardware requirements to editable 3D designs
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/amagine-ai--Amagine3D");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +119,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/amagine-ai--Amagine3D");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,186 +143,177 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 146 |
-| Open Issues | 0 |
-| 最後推送 | 2026-08-20 |
-| 建立日期 | 2026-08-20 |
-| Repo 大小 | 21 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cclank/lanshu-create-ai-presenter-video) |
-| Topics | `ai-video` `codex` `codex-skill` `digital-human` `video-generation` |
+| Forks | 29 |
+| Open Issues | 4 |
+| Issue 解決率 | 43% (3 closed) |
+| 最後推送 | 2026-08-25 |
+| 建立日期 | 2026-08-19 |
+| Repo 大小 | 4.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/amagine-ai/Amagine3D) |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@amagine3d/a3d-runtime` `@fontsource-variable/ibm-plex-sans` `@fontsource-variable/jetbrains-mono` `dotenv` `express` `fflate` `react` `react-dom` `react-markdown` `remark-gfm` `three` `trash` `@types/express` `@types/node` `@types/react`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 65
->     "Shell" : 35
+>     "TypeScript" : 52
+>     "Python" : 34
+>     "CSS" : 12
+>     "JavaScript" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@cclank](https://github.com/cclank) | 1 |
+> | [@Cang-yan](https://github.com/Cang-yan) | 35 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-20）
-> **活躍天數** 1 天 · **最新 commit** Initial open-source release
+> [!abstract] 最近 10 次 commit（2026-08-25 ~ 2026-08-25）
+> **活躍天數** 1 天 · **最新 commit** style(chat): emphasize final agent responses
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#9](https://github.com/amagine-ai/Amagine3D/issues/9) | Model preview occasionally flickers and resets during artifa | 0 | 0 |
+> | [#6](https://github.com/amagine-ai/Amagine3D/issues/6) | [RFC] 引入独立 CPU Z-buffer 软件光栅化渲染器 | 0 | 1 |
+> | [#1](https://github.com/amagine-ai/Amagine3D/issues/1) | Support for more common component parameters to ease shell c | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # lanshu-create-ai-presenter-video
+> Amagine3D
 > 
-> [](https://github.com/cclank/lanshu-create-ai-presenter-video/actions/workflows/validate.yml)
-> [](LICENSE)
-> [](https://www.python.org/)
-> [](https://ffmpeg.org/)
-> [](https://github.com/cclank/lanshu-create-ai-presenter-video/stargazers)
+> From hardware requirements to editable 3D designs
 > 
-> 一个面向 Codex 的通用数字人视频制作 Skill。输入主题或文案与授权人物图后，它会组织文案、配音、人物生成、口型校准、字幕与关键词动效、剪辑、渲染和质量验收。
+>   Amagine3D is the open-source 3D capability layer Amagine is developing for hardware creation.
+>   Give it a product description and reference images, add the key dimensions, and Amagine3D can design an enclosure and assembly structures around the internal components while producing source code that remains editable. STEP, STL, and 3MF files can be exported as needed.
 > 
-> 它按能力选择当前环境可用的工具，项目源码不绑定服务商、模型名称或私有接口。
+>   Capabilities ·
+>   Example ·
+>   Quick Start ·
+>   简体中文
 > 
-> ## 最少需要提供什么
+>   
+>   
+>   
+>   
 > 
-> 1. 一个主题或一份完整文案。
-> 2. 一张经过授权、包含清晰成年人物的参考图。
+>   
 > 
-> 可选输入包括声音样本、屏幕录制、图片、B-roll、品牌素材、目标平台、时长、横竖屏、风格、水印和结尾引导。
 > 
-> ## 安装
+> ## Quick Start
 > 
-> ```bash
-> git clone https://github.com/cclank/lanshu-create-ai-presenter-video.git \
->   ~/.codex/skills/lanshu-create-ai-presenter-video
-> ```
 > 
-> 安装后的 Skill 路径：
-> 
-> ```text
-> ~/.codex/skills/lanshu-create-ai-presenter-video
-> ```
-> 
-> ## 文件结构
-> 
-> ```text
-> lanshu-create-ai-presenter-video/
-> ├── SKILL.md
-> ├── README.md
-> ├── agents/
-> │   └── openai.yaml
-> ├── assets/
-> │   └── job.template.json
-> ├── references/
-> │   ├── generation.md
-> │   ├── editing.md
-> │   └── qa-recovery.md
-> └── scripts/
->     ├── init_job.py
->     ├── preflight.py
->     └── finalize_delivery.sh
-> ```
-> 
-> ## 三份参考文档分别负责什么
-> 
-> - `generation.md`：输入检查、文案、声音、能力选型、付费生成、人物提示词与一致性。
-> - `editing.md`：时间轴、开场和结尾、字幕预设、人物侧关键词动效、封面与导出。
-> - `qa-recovery.md`：技术验收、人工验收和常见故障修复。
-> 
-> Codex 只在进入对应阶段时读取相关文档，减少上下文占用。
-> 
-> ## 快速使用
-> 
-> 在对话中直接说：
-> 
-> ```text
-> 使用 $lanshu-create-ai-presenter-video，把这份文案和人物图做成一条 16:9、30 秒、有实时字幕的数字人讲解视频。
-> ```
-> 
-> 也可以先初始化标准任务目录：
+> ### Install and Run
 > 
 > ```bash
-> SKILL_DIR=~/.codex/skills/lanshu-create-ai-presenter-video
-> 
-> python3 "$SKILL_DIR/scripts/init_job.py" \
->   --job-dir ~/Videos/my-presenter-video \
->   --presenter-image ~/Pictures/presenter.png \
->   --topic "视频主题" \
->   --duration 60 \
->   --aspect 9:16 \
->   --rights-confirmed \
->   --adult-presenter-confirmed
+> git clone https://github.com/amagine-ai/Amagine3D.git
+> cd Amagine3D
+> npm install
+> cp .env.example .env
+> npm run dev
 > ```
 > 
-> 随后查看并补全 `job.json` 中的人工检查与远程上传许可，再运行：
+> Configure `.env`, then open `http://127.0.0.1:6160`. The local API listens on
+> `http://127.0.0.1:6161` by default. The first start prepares `.venv`; later
+> starts reuse it when the dependency fingerprint is unchanged.
 > 
-> ```bash
-> python3 "$SKILL_DIR/scripts/preflight.py" ~/Videos/my-presenter-video/job.json
+> 
+> ## Example: BUSY Bar Desktop Device Enclosure
+> 
+> The GIF above shows a desktop device enclosure that Amagine3D generated from public information about [BUSY Bar](https://busy.app/). BUSY Bar is a productivity multi-tool for displaying custom statuses. It includes a built-in Pomodoro timer and apps, supports extensive customization, is open-source, and is friendly to developers and hardware enthusiasts. Amagine3D created a multipart enclosure for it, with a display area on the front, physical controls on top, and internal space arranged around the components and interfaces.
+> 
+> The Agent first used the reference images to position the display area and controls, then divided the enclosure into parts around the internal components. The dimensions that determine appearance and assembly remain editable parameters, so they can be adjusted after generation.
+> 
+> This generation produced complete build123d source code, STEP and STL files, and a check report. The workbench can continue to preview, measure, and modify the model. Parameter changes are written back to the source and rebuild the geometry, and the complete result is saved with the project.
+> 
+> Design reference: [BUSY Bar official website](https://busy.app/).
+> 
+> 
+> ### Server Configuration
+> 
+> ```dotenv
+> LLM_API_KEY=...
+> LLM_MODEL=openai/gpt-5.5
+> LLM_BASE_URL=https://gateway.example.com/v1
+> LLM_API_TYPE=openai-responses
+> LLM_THINKING_LEVEL=medium
+> TAVILY_API_KEY=... # optional; enables the Web refs control
+> 
+> PORT=6161
+> WEB_PORT=6160
+> AGENT_RUN_TIMEOUT_MS=1800000
 > ```
 > 
-> ## 运行环境
+> These values are read only by the local Express server. When
+> `TAVILY_API_KEY` is configured, the composer exposes a **Web refs** control.
+> Enabling it for a turn requires Amagine3D Agent to search before CAD mutations,
+> returns ranked dimension/specification sources, and passes up to three
+> available reference images to the multimodal model. Missing images do not block
+> the CAD Skill workflow. Do not expose API keys through client-side environment
+> variables or commit `.env`.
 > 
-> - Codex 或兼容本地 Skill 的 Agent 环境。
-> - Python `3.9+`。
-> - `FFmpeg` 与 `ffprobe`。
-> - Bash、`jq`、`awk` 和 `sed`。
-> - 至少一种当前环境可调用的视频生成、语音生成与口型同步能力。
 > 
-> ## 核心工作方式
+> ## From Requirements to Editable Hardware Structures
+> 
+> Parametric CAD is the first 3D capability delivered in Amagine3D. It currently focuses on intelligent hardware enclosures and related structures, creating complete parametric designs from natural-language requirements, reference images, and dimensions.
+> 
+> The design process starts with internal components, arranging mounts and interfaces before creating the enclosure, controls, and thermal-management structures. When a design needs multiple parts, covers, hinges, or latches are developed together with assembly clearances and printing tolerances. For rigid mechanisms such as hinged or sliding covers, the system can also check collisions and operating clearances along a defined motion path.
+> 
+> Every generation preserves the complete Python and build123d source code. Key dimensions appear in the workbench, where they can be adjusted and written back to the source without calling the model again. Single-color designs can be exported as STEP and STL, while multi-color designs can produce color-aware 3MF files and separate STL files for each color region.
+> 
+> Behind the scenes, the 3D-native Agent first organizes the requirements into a design brief, then runs the source in the browser geometry runtime to build the actual model. The Agent can see the model's real dimensions and receives check results for part connectivity, interference, and motion. Exported model files are read back as well. It uses these results to decide whether to keep revising or accept the current version.
+> 
+> 
+> ## 3D-native Agent
+> 
+> Amagine3D defines a 3D-native Agent as an Agent architecture centered on 3D design state. This state records the geometry of every part in the current version and the spatial relationships between them. It determines the Agent's next action, and execution results are written back into it.
 > 
 > ```text
-> 主题或文案 + 授权人物图
->         ↓
-> 锁定文案与完整配音
->         ↓
-> 低成本人物试片
->         ↓
-> 生成连续数字人主素材
->         ↓
-> 按同一条音频时间轴剪辑
->         ↓
-> 添加字幕、关键词动效和封面
->         ↓
-> 口型、人物、声音与画面验收
->         ↓
-> 输出母版、分享版和 QA 报告
+> User requirements and physical constraints
+>                     │
+>                     ▼
+>          Accepted 3D design state
+>                     │ create candidate version
+>                     ▼
+>        ┌── autonomous inner loop ──┐
+>        │ read model → plan changes  │
+>        │      ↑              ↓      │
+>        │ analyze results ← run checks│
+>        └─────────────┬──────────────┘
+>                      │ checks pass
+>                      ▼
+>           Commit as a new version
+>                      │
+>                      ▼
+>           Save state and artifacts
 > ```
 > 
-> 完整配音是全片的时间基准。人物视频、字幕、镜头、关键词与转场都按照这条音频定位，可以减少口型漂移和片段衔接问题。
+> In this architecture, a design task has two levels. The autonomous inner loop produces candidate designs, while the commit stage decides whether a candidate can become the new accepted version. Keeping them separate lets the Agent try repeatedly without damaging a design that has already passed its checks.
 > 
-> ## 默认设置
+> Each iteration of the autonomous inner loop starts from the current design state. The Agent reads the spatial relationships between parts, then decides which structures need to change. The modified model runs in a real geometry environment, where the system measures the generated result directly and checks assembly interference, motion paths, and exported files. These results return to the Agent. If a requirement is not satisfied, the Agent uses the specific measurements to locate the problem, modifies the affected area, and starts another iteration. This process works from the geometry that was actually generated, rather than the model's textual judgment of the result.
 > 
-> - 竖屏 `9:16`、`1080×1920`、`30fps`。
-> - 主题生成的视频通常控制在 45–75 秒。
-> - 没有授权声音样本时使用合适的库存声音。
-> - 默认包含清晰开场、2–4 个内容节拍和简洁结尾。
-> - 音乐与商业引导按需求添加。
-> - 发布响度目标约为 `-16 LUFS`。
+> Once a candidate design meets the checks for the current task, it enters the commit stage. The system compares the candidate with the user constraints and the previous design version. If the checks pass, the candidate is saved as the new baseline, together with its source code and manufacturing files. If the change introduces a new problem, the system preserves the previous result and lets the Agent continue correcting the candidate. Changes to confirmed structures or overwrites of existing artifacts can require user approval.
 > 
-> ## 安全和成本边界
+> The current public release implements the first stage of this process with parametric CAD. The Agent generates build123d source code from a design brief, builds the geometry in the browser, and then revises or accepts the candidate according to the check results. For now, source code remains the primary design state, and tasks advance through predefined stages. The next stage will record parts and their spatial relationships directly in a continuously updated 3D world-model state. The Agent will then be able to modify local structures or switch geometry representations within that state without reconstructing the entire design from conversation and source code each time.
 > 
-> - 远程上传前确认图片使用权和成年人物状态。
-> - 克隆声音前确认声音授权。
-> - 首次付费生成前说明上传内容、生成时长、价格依据、试片方案和重试上限。
-> - 任务中断后优先查询已有任务 ID，避免重复扣费。
-> - 连续三个付费候选失败后停止并总结问题。
 > 
-> ## 开源与隐私
+> ## Beyond CAD
 > 
-> - 仓库不保存 API 密钥、访问令牌、签名下载地址或用户素材。
-> - 任务级请求记录需要移除凭据与临时 URL 后再提交。
-> - 预检与交付报告只保存文件名，不写入开发者机器的绝对路径。
-> - 项目使用 [MIT License](LICENSE)，可以自由使用、修改和分发。
+> CAD is the starting point for Amagine3D. Complete hardware creation also requires an understanding of physical components, spatial relationships, and existing assets, so 3D information from different sources can continue flowing between design and manufacturing.
 > 
-> ## 贡献
-> 
-> 欢迎通过 Issue 提交使用反馈，也欢迎用 Pull Request 改进工作流、兼容性和质量检查。
+> In the next stage, Amagine3D will progressively build a shared 3D context for each hardware project. The system will know whether a model represents a screen, battery, PCB, or connector. It will understand how the
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/cclank/lanshu-create-ai-presenter-video)
+[GitHub](https://github.com/amagine-ai/Amagine3D)
 
 ## 相關收錄
 
@@ -336,7 +321,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE category = "Other" AND file.name != "amagine-ai--Amagine3D"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -345,7 +330,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "cclank--lanshu-create-ai-presenter-video" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "amagine-ai--Amagine3D" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -354,18 +339,18 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE week = "2026-W35" AND file.name != "amagine-ai--Amagine3D"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/amagine-ai--Amagine3D");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "cclank--lanshu-create-ai-presenter-video" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "amagine-ai--Amagine3D" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -381,7 +366,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "cclank" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE owner = "amagine-ai" AND file.name != "amagine-ai--Amagine3D"
 > SORT stars DESC
 > ```
 
@@ -389,7 +374,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/amagine-ai--Amagine3D");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -406,7 +391,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/amagine-ai--Amagine3D");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -439,7 +424,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/amagine-ai--Amagine3D");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -463,7 +448,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/amagine-ai--Amagine3D");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -500,7 +485,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/amagine-ai--Amagine3D");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -583,7 +568,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-25** — 首次收錄
+> **2026-08-26** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -599,5 +584,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-26|2026-08-26]] — 再次上榜，924 stars
-- [[2026-08-25|2026-08-25]] — 首次收錄，840 stars
+- [[2026-08-26|2026-08-26]] — 首次收錄，556 stars

@@ -1,68 +1,63 @@
 ---
-repo: cclank/lanshu-create-ai-presenter-video
-url: https://github.com/cclank/lanshu-create-ai-presenter-video
-owner: cclank
+repo: missuo/herdrm
+url: https://github.com/missuo/herdrm
+owner: missuo
 owner_type: User
-language: Python
-license: MIT
-description: "Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image."
+language: Swift
+license: N/A
+description: "Native macOS console for herdr — all your coding agents and their live terminals, across devices"
 homepage: ""
-stars: 924
-stars_per_day: 185
-forks: 167
-open_issues: 0
-created: 2026-08-20
-pushed_at: 2026-08-20
-first_seen: 2026-08-25
+stars: 631
+stars_per_day: 105
+forks: 40
+open_issues: 9
+created: 2026-08-19
+pushed_at: 2026-08-24
+first_seen: 2026-08-26
 week: "2026-W35"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.4.5"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-25
+last_reviewed: 2026-08-26
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-02"
-contributor_count: 1
-engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 21
-readme_length: 2685
+contributor_count: 5
+engagement: "low"
+issue_close_rate: 61
+repo_size_kb: 8320
+readme_length: 8656
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 2
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-25"
-star_history: "2026-08-25:840,2026-08-26:924"
+ring_history: "assess@2026-08-26"
+star_history: "2026-08-26:631"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - "topic/ai_video"
-  - "topic/codex"
-  - "topic/codex_skill"
-  - "topic/digital_human"
-  - "topic/video_generation"
+  - "lang/swift"
 aliases:
-  - "lanshu-create-ai-presenter-video"
-  - "cclank/lanshu-create-ai-presenter-video"
+  - "herdrm"
+  - "missuo/herdrm"
 ---
 
-# lanshu-create-ai-presenter-video
+# herdrm
 
-**840** stars · **210** stars/天 · 建立 4 天前 · Python · MIT
+**631** stars · **105** stars/天 · 建立 6 天前 · Swift · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+const me = dv.page("Repos/missuo--herdrm");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
-
-`ai-video` `codex` `codex-skill` `digital-human` `video-generation`
+`v0.4.5`
 
 > [!summary] 一句話摘要
-> Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.
+> Native macOS console for herdr — all your coding agents and their live terminals, across devices
 
 ## 專案簡介
 
-Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.
+Native macOS console for herdr — all your coding agents and their live terminals, across devices
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/missuo--herdrm");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +118,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/missuo--herdrm");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,186 +142,219 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 146 |
-| Open Issues | 0 |
-| 最後推送 | 2026-08-20 |
-| 建立日期 | 2026-08-20 |
-| Repo 大小 | 21 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cclank/lanshu-create-ai-presenter-video) |
-| Topics | `ai-video` `codex` `codex-skill` `digital-human` `video-generation` |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "Python" : 65
->     "Shell" : 35
-> ```
+| Forks | 40 |
+| Open Issues | 9 |
+| Issue 解決率 | 61% (14 closed) |
+| 最後推送 | 2026-08-24 |
+| 建立日期 | 2026-08-19 |
+| Repo 大小 | 8.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/missuo/herdrm) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@cclank](https://github.com/cclank) | 1 |
+> | [@missuo](https://github.com/missuo) | 79 |
+> | [@alejodelosrios](https://github.com/alejodelosrios) | 12 |
+> | [@ljxw88](https://github.com/ljxw88) | 9 |
+> | [@lcandy2](https://github.com/lcandy2) | 3 |
+> | [@FacuVCanale](https://github.com/FacuVCanale) | 2 |
+
+**最新版本**：v0.4.5 — herdrm 0.4.5 (2026-08-24)
+
+> [!info]- Release Notes
+> ### Changed
+> - With a single device selected in the bottom-left switcher, the Space and
+>   Agent rows (and the titlebar) no longer show that device's badge — every
+>   row belongs to it, so the badge said nothing. ⌘K search keeps its badges
+>   (it always searches every device), and the New Agent / New Space device
+>   pickers stay available while filtered.
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-20）
-> **活躍天數** 1 天 · **最新 commit** Initial open-source release
+> [!abstract] 最近 10 次 commit（2026-08-22 ~ 2026-08-24）
+> **活躍天數** 2 天 · **最新 commit** chore: changelog for 0.4.5
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#48](https://github.com/missuo/herdrm/issues/48) | fix: Spaces section header click does nothing | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # lanshu-create-ai-presenter-video
+> The native macOS console for herdr — see Claude Code, Codex,
+>   Gemini, Grok and OpenCode across your Mac and every SSH box you own, and jump into any one
+>   of them at full-TUI fidelity.
 > 
-> [](https://github.com/cclank/lanshu-create-ai-presenter-video/actions/workflows/validate.yml)
-> [](LICENSE)
-> [](https://www.python.org/)
-> [](https://ffmpeg.org/)
-> [](https://github.com/cclank/lanshu-create-ai-presenter-video/stargazers)
+>   
+>   
+>   
+>   
+>   
 > 
-> 一个面向 Codex 的通用数字人视频制作 Skill。输入主题或文案与授权人物图后，它会组织文案、配音、人物生成、口型校准、字幕与关键词动效、剪辑、渲染和质量验收。
+>   What it does ·
+>   Why herdrm? ·
+>   Install ·
+>   Quick Start ·
+>   Architecture
 > 
-> 它按能力选择当前环境可用的工具，项目源码不绑定服务商、模型名称或私有接口。
+> ---
 > 
-> ## 最少需要提供什么
+>   
 > 
-> 1. 一个主题或一份完整文案。
-> 2. 一张经过授权、包含清晰成年人物的参考图。
+> ## ✨ What it does
 > 
-> 可选输入包括声音样本、屏幕录制、图片、B-roll、品牌素材、目标平台、时长、横竖屏、风格、水印和结尾引导。
+> [herdr](https://herdr.dev) is the runtime your coding agents live on — a background server that
+> owns their terminals and knows which one is working, blocked, or done. **herdrm** is a native
+> macOS window on top of it, and it's grown well past "attach to a terminal":
 > 
-> ## 安装
+> | | |
+> |---|---|
+> | 🖥️ **Every device** | Local + remote over SSH — keys, Tailscale, or a Keychain password — with auto-reconnect |
+> | 🧭 **Live status** | Spaces & Agents sorted by urgency: blocked → done → working → idle |
+> | ⌨️ **Real terminal** | Full PTY attach, not a chat wrapper — native selection, legible fonts, resilient sessions |
+> | 📎 **Paste anything** | Files and images land straight in the agent's pane, locally or over SSH |
+> | 🔔 **Notifications** | A system alert the moment an agent needs you — click it to jump right there |
+> | 🔍 **⌘K search** | Every agent, on every device, one keystroke away |
 > 
-> ```bash
-> git clone https://github.com/cclank/lanshu-create-ai-presenter-video.git \
->   ~/.codex/skills/lanshu-create-ai-presenter-video
+> See the full feature list
+> 
+> ### Every machine, one sidebar
+> - **All your devices, in parallel** — remote sockets forwarded over `ssh -L`, each on its own
+>   reconnect loop (1s → 30s backoff). The sidebar aggregates every device with a tinted OS badge;
+>   the bottom-left switcher filters by device.
+> - **Flexible SSH targets** — `user@host`, `user@host:port`, `ssh://` URIs, and `~/.ssh/config`
+>   aliases. Auth falls back OpenSSH keys/agent → **Tailscale SSH** (1.98.0+) → an in-app password
+>   prompt stored in the **macOS login Keychain**, never in a file.
+> - **Diagnosable failures** — "herdr isn't running on ``", a misconfigured
+>   `AllowStreamLocalForwarding`, or *why* a disconnected device is unreachable — never a bare
+>   "not connected".
+> 
+> ### Spaces & Agents, always current
+> - **Spaces & Agents sidebar** — every workspace and agent (claude, codex, gemini, grok,
+>   opencode, …), same canonical order the ⌘K palette uses.
+> - **New Agent / New Space** — locally the picker only lists advertised CLIs found on the
+>   login-shell PATH (captured once from a real interactive + login shell, not by grepping rc
+>   files or trusting LaunchServices); SSH devices follow the remote server's manifest catalog
+>   and validate on start. Each agent's bypass-permissions flag is on by default. **⌘N** for a
+>   new agent, **⇧⌘N** for a new space. New Space includes an inline directory browser that
+>   works over SSH. Settings → Agents accepts a per-kind binary path when detection is wrong.
+> - Spaces rename straight from the sidebar's context menu.
+> 
+> ### A real terminal, not a chat wrapper
+> - **Live terminal** — attaches directly to the agent's PTY (`herdr agent attach`); grabs
+>   keyboard focus the moment you jump in from ⌘K, the sidebar, or a notification.
+> - **Native text selection** — drag to select, no Shift needed; right-click for Copy/Paste/Select
+>   All plus link actions (⌘-click opens a URL).
+> - **Legibility controls** — Thin strokes, font Weight, and Line spacing settings.
+> - **Shift+Enter** inserts a line break instead of submitting; colors adapt correctly in Light
+>   mode instead of washing out.
+> - **Resilient sessions** — a dropped connection or a takeover shows a Reconnect button instead
+>   of freezing on the last frame; mixed-version `herdr` binaries no longer break attach.
+> 
+> ### Files, search, and staying in the loop
+> - **Paste files and images** into Claude Code, Codex, or Copilot. Local pastes forward as
+>   Ctrl+V; remote pastes stream over SSH into a self-pruning cache (7-day retention, 50 MB cap).
+> - **Search** — ⌘K across every device, ordered by urgency, scrolling to follow your selection.
+> - **Notifications** — a sound and a system alert when any agent finishes or needs input;
+>   clicking jumps straight to it. Agents you're already watching stay quiet.
+> 
+> ### Built like a native Mac app
+> - **Universal binary** — Apple Silicon and Intel, one download.
+> - **Light & dark**, auto-updates via [Sparkle](https://sparkle-project.org), signed and
+>   notarized.
+> - **HerdrKit** — the socket-RPC/SSH/device layer ships as its own, independently testable Swift
+>   package (`Packages/HerdrKit`).
+> 
+> ## 🤔 Why herdrm?
+> 
+> You already run agents through herdr because the model is right — spaces, live status, real
+> PTYs, not a chat window pretending to be one. But living in `herdr attach` and a wall of
+> terminal panes is its own skill, and not everyone wants to be a tmux person to get the benefit.
+> herdrm is the same model, built for people who'd rather click:
+> 
+> - **Herdr's mechanics, an Apple-native interface.** Every space and agent is a sidebar row you
+>   click, not a session name you type — built in SwiftUI, so it looks and moves like a
+>   first-party Mac app, not a terminal skin bolted on top.
+> - **Native means fast.** No Electron, no browser engine underneath — herdrm launches instantly
+>   and stays light, the kind of responsiveness only a truly native app gets.
+> - **Still the real terminal when it matters.** Click an agent and you're on its actual PTY, full
+>   TUI, nothing summarized — you just don't have to live inside a multiplexer to get there.
+> - **One console, every machine.** Laptop, dev box, home server — all rows in the same sidebar.
+> - **You stop polling.** Status lives in the sidebar and in notifications, not in your head.
+> - **It gets out of the way.** ⌘K, ⌘N, paste-to-attach — no new mental model to learn.
+> 
+> ## 📋 Requirements
+> 
+> - macOS 14+
+> - [herdr](https://herdr.dev) installed locally (herdrm starts it if it isn't running) and on
+>   your remote machines
+> - For remote devices: OpenSSH access, Tailscale SSH (1.98.0+), or a Keychain-stored password
+> 
+> ## 📦 Install
+> 
+> **Homebrew**
+> ```sh
+> brew install owo-network/brew/herdrm
 > ```
 > 
-> 安装后的 Skill 路径：
+> **Manual** — download `herdrm-x.y.z.zip` from [Releases](https://github.com/missuo/herdrm/releases),
+> unzip, drag `herdrm.app` into `/Applications`. Either way it self-updates from then on — **HerdrM
+> → Check for Updates…**, or **HerdrM → About HerdrM** for the version you're running.
+> 
+> ## ⚡ Quick Start
 > 
 > ```text
-> ~/.codex/skills/lanshu-create-ai-presenter-video
+> 1. Launch herdrm            → no local herdr running? herdrm starts it for you
+> 2. Add a device (optional)  → you@dev-box · you@dev-box:2222 · a Tailscale machine
+> 3. ⌘N                       → pick a device + a CLI, you're attached to its live terminal
+> 4. ⌘K                       → jump to any agent on any device, any time
 > ```
 > 
-> ## 文件结构
+> ## 🏗️ Architecture
 > 
-> ```text
-> lanshu-create-ai-presenter-video/
-> ├── SKILL.md
-> ├── README.md
-> ├── agents/
-> │   └── openai.yaml
-> ├── assets/
-> │   └── job.template.json
-> ├── references/
-> │   ├── generation.md
-> │   ├── editing.md
-> │   └── qa-recovery.md
-> └── scripts/
->     ├── init_job.py
->     ├── preflight.py
->     └── finalize_delivery.sh
+> ```mermaid
+> flowchart LR
+>     A(["🖥️ herdrbackground server, owns the PTYs"]) -->|"Unix-socket RPC +herdr agent attach"| B[["Packages/HerdrKitRPC client · SSH tunnel · device store"]]
+>     B -->|SwiftUI bindings| C(["Sources/HerdrMsidebar · terminal · search · notifications"])
+>     style A fill:#161b22,stroke:#E2795B,color:#e6edf3
+>     style B fill:#1f2630,stroke:#3B82F6,color:#e6edf3
+>     style C fill:#161b22,stroke:#2FA35F,color:#e6edf3
 > ```
 > 
-> ## 三份参考文档分别负责什么
+> - **[herdr](https://herdr.dev)** — the daemon: owns every agent's PTY, persists spaces, answers
+>   over a local Unix socket.
+> - **`Packages/HerdrKit`** — transport and domain layer, UI-independent and unit-tested on its
+>   own (`make kit-test`).
+> - **`Sources/HerdrM`** — the SwiftUI shell built on
+>   [SwiftTerm](https://github.com/migueldeicaza/SwiftTerm).
 > 
-> - `generation.md`：输入检查、文案、声音、能力选型、付费生成、人物提示词与一致性。
-> - `editing.md`：时间轴、开场和结尾、字幕预设、人物侧关键词动效、封面与导出。
-> - `qa-recovery.md`：技术验收、人工验收和常见故障修复。
+> ## 🔨 Build from source
 > 
-> Codex 只在进入对应阶段时读取相关文档，减少上下文占用。
-> 
-> ## 快速使用
-> 
-> 在对话中直接说：
-> 
-> ```text
-> 使用 $lanshu-create-ai-presenter-video，把这份文案和人物图做成一条 16:9、30 秒、有实时字幕的数字人讲解视频。
+> ```sh
+> brew install xcodegen
+> make build   # xcodegen + xcodebuild → build/Build/Products/Debug/herdrm.app
+> make run
+> make kit-test  # HerdrKit integration tests (needs a running local herdr)
 > ```
 > 
-> 也可以先初始化标准任务目录：
+> ## 🤝 Contributing
 > 
-> ```bash
-> SKILL_DIR=~/.codex/skills/lanshu-create-ai-presenter-video
+> Early-stage software, PRs genuinely welcome — small and single-purpose lands fastest.
 > 
-> python3 "$SKILL_DIR/scripts/init_job.py" \
->   --job-dir ~/Videos/my-presenter-video \
->   --presenter-image ~/Pictures/presenter.png \
->   --topic "视频主题" \
->   --duration 60 \
->   --aspect 9:16 \
->   --rights-confirmed \
->   --adult-presenter-confirmed
-> ```
-> 
-> 随后查看并补全 `job.json` 中的人工检查与远程上传许可，再运行：
-> 
-> ```bash
-> python3 "$SKILL_DIR/scripts/preflight.py" ~/Videos/my-presenter-video/job.json
-> ```
-> 
-> ## 运行环境
-> 
-> - Codex 或兼容本地 Skill 的 Agent 环境。
-> - Python `3.9+`。
-> - `FFmpeg` 与 `ffprobe`。
-> - Bash、`jq`、`awk` 和 `sed`。
-> - 至少一种当前环境可调用的视频生成、语音生成与口型同步能力。
-> 
-> ## 核心工作方式
-> 
-> ```text
-> 主题或文案 + 授权人物图
->         ↓
-> 锁定文案与完整配音
->         ↓
-> 低成本人物试片
->         ↓
-> 生成连续数字人主素材
->         ↓
-> 按同一条音频时间轴剪辑
->         ↓
-> 添加字幕、关键词动效和封面
->         ↓
-> 口型、人物、声音与画面验收
->         ↓
-> 输出母版、分享版和 QA 报告
-> ```
-> 
-> 完整配音是全片的时间基准。人物视频、字幕、镜头、关键词与转场都按照这条音频定位，可以减少口型漂移和片段衔接问题。
-> 
-> ## 默认设置
-> 
-> - 竖屏 `9:16`、`1080×1920`、`30fps`。
-> - 主题生成的视频通常控制在 45–75 秒。
-> - 没有授权声音样本时使用合适的库存声音。
-> - 默认包含清晰开场、2–4 个内容节拍和简洁结尾。
-> - 音乐与商业引导按需求添加。
-> - 发布响度目标约为 `-16 LUFS`。
-> 
-> ## 安全和成本边界
-> 
-> - 远程上传前确认图片使用权和成年人物状态。
-> - 克隆声音前确认声音授权。
-> - 首次付费生成前说明上传内容、生成时长、价格依据、试片方案和重试上限。
-> - 任务中断后优先查询已有任务 ID，避免重复扣费。
-> - 连续三个付费候选失败后停止并总结问题。
-> 
-> ## 开源与隐私
-> 
-> - 仓库不保存 API 密钥、访问令牌、签名下载地址或用户素材。
-> - 任务级请求记录需要移除凭据与临时 URL 后再提交。
-> - 预检与交付报告只保存文件名，不写入开发者机器的绝对路径。
-> - 项目使用 [MIT License](LICENSE)，可以自由使用、修改和分发。
-> 
-> ## 贡献
-> 
-> 欢迎通过 Issue 提交使用反馈，也欢迎用 Pull Request 改进工作流、兼容性和质量检查。
+> - **Bug?** [Open an issue](https://github.com/missuo/herdrm/issues/new) with your macOS
+>   version, `herdr --version`, and repro steps.
+> - **Feature idea?** Open an issue first for anything beyond a small PR.
+> - **Sending a PR:** `make build` + `make kit-test` locally (no CI gate yet — this is the bar),
+>   plus a line under `## [Unreleased]` in `CHANGELOG.md` (release automation requi
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/cclank/lanshu-create-ai-presenter-video)
+[GitHub](https://github.com/missuo/herdrm)
 
 ## 相關收錄
 
@@ -336,7 +362,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE category = "Other" AND file.name != "missuo--herdrm"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -345,7 +371,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "cclank--lanshu-create-ai-presenter-video" AND status != "archived"
+> WHERE language = "Swift" AND file.name != "missuo--herdrm" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -354,18 +380,18 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE week = "2026-W35" AND file.name != "missuo--herdrm"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/missuo--herdrm");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "cclank--lanshu-create-ai-presenter-video" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "missuo--herdrm" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -381,7 +407,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "cclank" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE owner = "missuo" AND file.name != "missuo--herdrm"
 > SORT stars DESC
 > ```
 
@@ -389,7 +415,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/missuo--herdrm");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -406,7 +432,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/missuo--herdrm");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -439,7 +465,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/missuo--herdrm");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -463,7 +489,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/missuo--herdrm");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -500,7 +526,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/missuo--herdrm");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -583,7 +609,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-25** — 首次收錄
+> **2026-08-26** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -599,5 +625,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-26|2026-08-26]] — 再次上榜，924 stars
-- [[2026-08-25|2026-08-25]] — 首次收錄，840 stars
+- [[2026-08-26|2026-08-26]] — 首次收錄，631 stars

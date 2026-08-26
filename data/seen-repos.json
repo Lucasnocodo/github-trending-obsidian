@@ -3725,17 +3725,17 @@
   },
   "MengTo/threeui": {
     "first_seen": "2026-08-23",
-    "last_seen": "2026-08-25",
-    "times_seen": 3,
+    "last_seen": "2026-08-26",
+    "times_seen": 4,
     "stars_first": 1940,
-    "stars_last": 3536
+    "stars_last": 3949
   },
   "duty1g/x64dbg-mcp-server": {
     "first_seen": "2026-08-24",
-    "last_seen": "2026-08-25",
-    "times_seen": 2,
+    "last_seen": "2026-08-26",
+    "times_seen": 3,
     "stars_first": 921,
-    "stars_last": 1242
+    "stars_last": 1387
   },
   "Spielewoy/autoprompt-skill": {
     "first_seen": "2026-08-24",
@@ -3746,24 +3746,24 @@
   },
   "ShadowAqueduct/watermark-remover": {
     "first_seen": "2026-08-24",
-    "last_seen": "2026-08-25",
-    "times_seen": 2,
+    "last_seen": "2026-08-26",
+    "times_seen": 3,
     "stars_first": 760,
-    "stars_last": 773
+    "stars_last": 792
   },
   "b-nnett/grok-bot-0.18-reconstructed": {
     "first_seen": "2026-08-25",
-    "last_seen": "2026-08-25",
-    "times_seen": 1,
+    "last_seen": "2026-08-26",
+    "times_seen": 2,
     "stars_first": 1839,
-    "stars_last": 1839
+    "stars_last": 2570
   },
   "tobi/walgit": {
     "first_seen": "2026-08-25",
-    "last_seen": "2026-08-25",
-    "times_seen": 1,
+    "last_seen": "2026-08-26",
+    "times_seen": 2,
     "stars_first": 1082,
-    "stars_last": 1082
+    "stars_last": 1575
   },
   "MeteorNOX/DeepSeek-Balance-Whale-Widget": {
     "first_seen": "2026-08-25",
@@ -3774,9 +3774,37 @@
   },
   "cclank/lanshu-create-ai-presenter-video": {
     "first_seen": "2026-08-25",
-    "last_seen": "2026-08-25",
-    "times_seen": 1,
+    "last_seen": "2026-08-26",
+    "times_seen": 2,
     "stars_first": 840,
-    "stars_last": 840
+    "stars_last": 924
+  },
+  "nateherkai/scroll-craft": {
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26",
+    "times_seen": 1,
+    "stars_first": 917,
+    "stars_last": 917
+  },
+  "missuo/herdrm": {
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26",
+    "times_seen": 1,
+    "stars_first": 631,
+    "stars_last": 631
+  },
+  "ApodexAI/FrontierAgent": {
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26",
+    "times_seen": 1,
+    "stars_first": 614,
+    "stars_last": 614
+  },
+  "amagine-ai/Amagine3D": {
+    "first_seen": "2026-08-26",
+    "last_seen": "2026-08-26",
+    "times_seen": 1,
+    "stars_first": 556,
+    "stars_last": 556
   }
 }

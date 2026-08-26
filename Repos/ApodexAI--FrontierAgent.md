@@ -1,19 +1,19 @@
 ---
-repo: cclank/lanshu-create-ai-presenter-video
-url: https://github.com/cclank/lanshu-create-ai-presenter-video
-owner: cclank
-owner_type: User
+repo: ApodexAI/FrontierAgent
+url: https://github.com/ApodexAI/FrontierAgent
+owner: ApodexAI
+owner_type: Organization
 language: Python
-license: MIT
-description: "Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image."
-homepage: ""
-stars: 924
-stars_per_day: 185
-forks: 167
-open_issues: 0
-created: 2026-08-20
-pushed_at: 2026-08-20
-first_seen: 2026-08-25
+license: Apache-2.0
+description: "🧩 FrontierAgent, our agent framework, open-sourced alongside it — native command-line TUI, ReAct and Agent Team modes, one command on macOS and Linux, no preinstall, no hard Docker dependency."
+homepage: "https://www.apodex.ai"
+stars: 614
+stars_per_day: 205
+forks: 59
+open_issues: 2
+created: 2026-08-22
+pushed_at: 2026-08-26
+first_seen: 2026-08-26
 week: "2026-W35"
 month: "2026-08"
 category: "Other"
@@ -25,44 +25,45 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-25
+last_reviewed: 2026-08-26
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-02"
-contributor_count: 1
-engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 21
-readme_length: 2685
-bus_factor: 1
+appearances: 1
+next_review: "2026-08-29"
+contributor_count: 5
+engagement: "low"
+issue_close_rate: 0
+repo_size_kb: 6953
+readme_length: 9849
+bus_factor: 2
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-25"
-star_history: "2026-08-25:840,2026-08-26:924"
+ring_history: "assess@2026-08-26"
+star_history: "2026-08-26:614"
 tags:
   - github
   - "category/other"
   - "lang/python"
-  - "topic/ai_video"
-  - "topic/codex"
-  - "topic/codex_skill"
-  - "topic/digital_human"
-  - "topic/video_generation"
+  - org
+  - "topic/agent_orchestration"
+  - "topic/agentic_ai"
+  - "topic/agentic_framework"
+  - "topic/ai_agents"
+  - "topic/harness"
 aliases:
-  - "lanshu-create-ai-presenter-video"
-  - "cclank/lanshu-create-ai-presenter-video"
+  - "FrontierAgent"
+  - "ApodexAI/FrontierAgent"
 ---
 
-# lanshu-create-ai-presenter-video
+# FrontierAgent
 
-**840** stars · **210** stars/天 · 建立 4 天前 · Python · MIT
+**614** stars · **205** stars/天 · 建立 3 天前 · Python · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+const me = dv.page("Repos/ApodexAI--FrontierAgent");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`ORG`
 
-`ai-video` `codex` `codex-skill` `digital-human` `video-generation`
+`agent-orchestration` `agentic-ai` `agentic-framework` `ai-agents` `harness` `multi-agent` `terminal-agent` `tui`
 
 > [!summary] 一句話摘要
-> Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.
+> 🧩 FrontierAgent, our agent framework, open-sourced alongside it — native command-line TUI, ReAct and Agent Team modes, one command on macOS and Linux, no preinstall, no hard Docker dependency.
 
 ## 專案簡介
 
-Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.
+🧩 FrontierAgent, our agent framework, open-sourced alongside it — native command-line TUI, ReAct and Agent Team modes, one command on macOS and Linux, no preinstall, no hard Docker dependency.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/ApodexAI--FrontierAgent");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +126,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/ApodexAI--FrontierAgent");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,186 +150,261 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 146 |
-| Open Issues | 0 |
-| 最後推送 | 2026-08-20 |
-| 建立日期 | 2026-08-20 |
-| Repo 大小 | 21 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cclank/lanshu-create-ai-presenter-video) |
-| Topics | `ai-video` `codex` `codex-skill` `digital-human` `video-generation` |
+| Forks | 59 |
+| Open Issues | 2 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-08-26 |
+| 建立日期 | 2026-08-22 |
+| 官方網站 | [Link](https://www.apodex.ai) |
+| Repo 大小 | 6.8 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/ApodexAI/FrontierAgent) |
+| Topics | `agent-orchestration` `agentic-ai` `agentic-framework` `ai-agents` `harness` `multi-agent` `terminal-agent` `tui` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 65
->     "Shell" : 35
+>     "Python" : 96
+>     "Shell" : 2
+>     "HTML" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@cclank](https://github.com/cclank) | 1 |
+> | [@zhanghanduo](https://github.com/zhanghanduo) | 12 |
+> | [@dq-ai-dev](https://github.com/dq-ai-dev) | 6 |
+> | [@fzp0424](https://github.com/fzp0424) | 4 |
+> | [@LiangcaiSu](https://github.com/LiangcaiSu) | 3 |
+> | [@ntudy](https://github.com/ntudy) | 2 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-20）
-> **活躍天數** 1 天 · **最新 commit** Initial open-source release
+> [!abstract] 最近 10 次 commit（2026-08-25 ~ 2026-08-25）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #9 from fzp0424/docs/frontierchallenge-readme-header
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # lanshu-create-ai-presenter-video
+> ---
 > 
-> [](https://github.com/cclank/lanshu-create-ai-presenter-video/actions/workflows/validate.yml)
-> [](LICENSE)
-> [](https://www.python.org/)
-> [](https://ffmpeg.org/)
-> [](https://github.com/cclank/lanshu-create-ai-presenter-video/stargazers)
+>   
+>   
+>   
+>   
+>   
+>   
+>   
+>   
 > 
-> 一个面向 Codex 的通用数字人视频制作 Skill。输入主题或文案与授权人物图后，它会组织文案、配音、人物生成、口型校准、字幕与关键词动效、剪辑、渲染和质量验收。
+>   Tech Blog ·
+>   Tech Report
 > 
-> 它按能力选择当前环境可用的工具，项目源码不绑定服务商、模型名称或私有接口。
 > 
-> ## 最少需要提供什么
+> ## Quick start
 > 
-> 1. 一个主题或一份完整文案。
-> 2. 一张经过授权、包含清晰成年人物的参考图。
-> 
-> 可选输入包括声音样本、屏幕录制、图片、B-roll、品牌素材、目标平台、时长、横竖屏、风格、水印和结尾引导。
-> 
-> ## 安装
-> 
-> ```bash
-> git clone https://github.com/cclank/lanshu-create-ai-presenter-video.git \
->   ~/.codex/skills/lanshu-create-ai-presenter-video
-> ```
-> 
-> 安装后的 Skill 路径：
-> 
-> ```text
-> ~/.codex/skills/lanshu-create-ai-presenter-video
-> ```
-> 
-> ## 文件结构
-> 
-> ```text
-> lanshu-create-ai-presenter-video/
-> ├── SKILL.md
-> ├── README.md
-> ├── agents/
-> │   └── openai.yaml
-> ├── assets/
-> │   └── job.template.json
-> ├── references/
-> │   ├── generation.md
-> │   ├── editing.md
-> │   └── qa-recovery.md
-> └── scripts/
->     ├── init_job.py
->     ├── preflight.py
->     └── finalize_delivery.sh
-> ```
-> 
-> ## 三份参考文档分别负责什么
-> 
-> - `generation.md`：输入检查、文案、声音、能力选型、付费生成、人物提示词与一致性。
-> - `editing.md`：时间轴、开场和结尾、字幕预设、人物侧关键词动效、封面与导出。
-> - `qa-recovery.md`：技术验收、人工验收和常见故障修复。
-> 
-> Codex 只在进入对应阶段时读取相关文档，减少上下文占用。
-> 
-> ## 快速使用
-> 
-> 在对话中直接说：
-> 
-> ```text
-> 使用 $lanshu-create-ai-presenter-video，把这份文案和人物图做成一条 16:9、30 秒、有实时字幕的数字人讲解视频。
-> ```
-> 
-> 也可以先初始化标准任务目录：
+> Requirements: Git, Python 3.12, [uv](https://docs.astral.sh/uv/), and an
+> OpenAI-compatible model endpoint. Docker is optional.
 > 
 > ```bash
-> SKILL_DIR=~/.codex/skills/lanshu-create-ai-presenter-video
+> git clone https://github.com/ApodexAI/FrontierAgent.git
+> cd FrontierAgent
 > 
-> python3 "$SKILL_DIR/scripts/init_job.py" \
->   --job-dir ~/Videos/my-presenter-video \
->   --presenter-image ~/Pictures/presenter.png \
->   --topic "视频主题" \
->   --duration 60 \
->   --aspect 9:16 \
->   --rights-confirmed \
->   --adult-presenter-confirmed
+> uv sync --python 3.12 --extra dev
+> cp .env.example .env
 > ```
 > 
-> 随后查看并补全 `job.json` 中的人工检查与远程上传许可，再运行：
+> Add your endpoint to `.env`:
+> 
+> ```dotenv
+> OPENAI_API_KEY=your-key
+> OPENAI_BASE_URL=https://your-openai-compatible-endpoint/v1
+> OPENAI_MODEL=your-model-name
+> 
+> 
+> ## Highlights
+> 
+> - **Native Agent Team workflow.** The coordinator decomposes the request,
+>   dispatches bounded parallel assignments, receives structured reports, and can
+>   use an optional fast reporter for final evidence review.
+> - **Task Board.** Agent Team's `add_task` and `update_task` events appear live in
+>   the TUI sidebar with pending, active, completed, blocked, and cancelled state.
+> - **Sandboxed file work.** Shell and file tools share one task-scoped filesystem:
+>   `/inputs` is read-only, `/workspace` is working state, and `/outputs` contains
+>   persistent deliverables. Authorization and sandbox failures are fail-closed.
+> - **Asynchronous intervention.** Type while an agent is running to queue a new
+>   instruction. It is injected at the next safe turn boundary without discarding
+>   the active run. In Agent Team mode it steers the coordinator; already-running
+>   sub-agents are allowed to finish.
+> - **Transparent deliverables.** On macOS/Docker, `/outputs` maps to
+>   `.apodex/runs//outputs` on the host. The same run directory also
+>   contains its checkpoint, trace, engine log, and trajectories.
+> - **Approval, trace, and recovery.** Mutating operations show a diff and require
+>   approval unless `--yes` is enabled. Sessions are checkpointed, every action is
+>   traced locally, `/revert` restores session changes, and `--resume` continues a
+>   saved run.
+> - **Evaluation included.** The subprocess runner supports research and
+>   file-grounded benchmarks, deterministic artifact collection, concurrency,
+>   progress inspection, and rerunning individual failures.
+> 
+>   
+> 
+> Conceptual Agent Team workflow, from task delegation and asynchronous report collection to verification and final synthesis.
+> 
+> 
+> # Optional web research tools
+> SERPER_API_KEY=
+> JINA_API_KEY=
+> ```
+> 
+> Start the TUI:
 > 
 > ```bash
-> python3 "$SKILL_DIR/scripts/preflight.py" ~/Videos/my-presenter-video/job.json
+> 
+> ## Benchmark evaluation
+> 
+> The evaluation harness runs each benchmark question in an isolated subprocess,
+> supports resumable multi-run experiments, and dispatches benchmark-specific
+> deterministic or model-based judges. A minimal smoke run, once the datasets are
+> downloaded per [the evaluation guide](docs/eval.md#datasets), is:
+> 
+> ```bash
+> uv sync --extra eval --extra sandbox --extra document-readers
+> uv run python -m benchmarks.public.runner.run_subprocess \
+>   --benchmark browsecomp --pipeline stateful-react-agent --profile default \
+>   --limit 1 --concurrency 1 --out ./results/smoke
 > ```
 > 
-> ## 运行环境
+> The [evaluation guide](docs/eval.md) is the canonical operator reference for
+> credentials, judge preflight, datasets, file benchmarks, execution, and result
+> inspection. The [benchmark registry](benchmarks/README.md) lists dataset keys,
+> default pipelines, scoring implementations, and extension points.
+> FrontierSearchBench has its own external scorer and an isolation requirement, so
+> it is documented separately in
+> [FrontierSearchBench evaluation](docs/eval-frontier-search.md).
 > 
-> - Codex 或兼容本地 Skill 的 Agent 环境。
-> - Python `3.9+`。
-> - `FFmpeg` 与 `ffprobe`。
-> - Bash、`jq`、`awk` 和 `sed`。
-> - 至少一种当前环境可调用的视频生成、语音生成与口型同步能力。
 > 
-> ## 核心工作方式
+> ## Supported benchmarks
+> 
+> BrowseComp, BrowseComp-ZH, xbench-DeepResearch, Humanity's Last Exam (text-only),
+> SuperChem, FrontierScience-Research, FrontierScience-Olympiad, DeepSearchQA,
+> WideSearch, FrontierSearchBench, OfficeQA, GDPval, APEX, and OneMillion-Bench.
+> 
+> GDPval uses deterministic deliverable validation in this open-source harness;
+> the agentic pairwise grader is intentionally excluded. The
+> [benchmark registry](benchmarks/README.md#supported-benchmarks) is authoritative
+> for each dataset key, its default pipeline, and its scoring implementation.
+> 
+> 
+> # FrontierAgent
+> 
+> FrontierAgent is an open-source agent runtime, terminal product, and evaluation
+> suite for long-horizon research and file-based work. The `frontier-agent` TUI
+> ships two native workflows:
+> 
+> - **ReAct** — one stateful agent researches, reads files, writes deliverables,
+>   runs commands, and iterates in a task-scoped sandbox.
+> - **Agent Team** — a coordinator maintains a task board, delegates independent
+>   work to parallel sub-agents, collects their reports, and synthesizes the result.
+> 
+> The same workflow engine powers the benchmark runner used to evaluate Apodex
+> models. The framework, tools, workflows, and evaluation layer remain separate,
+> so each can be reused independently.
+> 
+> > **Want to try FrontierAgent without hosting a model?**
+> >
+> > Apodex-1.1 is available through the
+> > **[Apodex API Platform](https://platform.apodex.ai/)**. Get an API key,
+> > connect its OpenAI-compatible endpoint, and start running FrontierAgent in
+> > minutes.
+> 
+> New here? Use the **[documentation index](docs/README.md)** to find the right
+> installation, SGLang, workflow, evaluation, or developer guide.
+> 
+>   
+> 
+> 
+> ## How it fits together
+> 
+> ```mermaid
+> flowchart LR
+>     U["User / benchmark task"] --> TUI["TUI or subprocess runner"]
+>     TUI --> R["Stateful ReAct"]
+>     TUI --> C["Agent Team coordinator"]
+>     C --> B["Task board"]
+>     B --> S1["Sub-agent 1"]
+>     B --> S2["Sub-agent 2"]
+>     B --> SN["Sub-agent N"]
+>     R --> FS["Task sandbox"]
+>     S1 --> FS
+>     S2 --> FS
+>     SN --> FS
+>     FS --> I["/inputs (read-only)"]
+>     FS --> W["/workspace (working files)"]
+>     FS --> O["/outputs (deliverables)"]
+>     S1 --> C
+>     S2 --> C
+>     SN --> C
+>     C --> A["Final answer / report"]
+>     R --> A
+> ```
+> 
+> The repository boundaries are intentional:
 > 
 > ```text
-> 主题或文案 + 授权人物图
->         ↓
-> 锁定文案与完整配音
->         ↓
-> 低成本人物试片
->         ↓
-> 生成连续数字人主素材
->         ↓
-> 按同一条音频时间轴剪辑
->         ↓
-> 添加字幕、关键词动效和封面
->         ↓
-> 口型、人物、声音与画面验收
->         ↓
-> 输出母版、分享版和 QA 报告
+> frontier_agent/  generic loop, scheduling, registries, AgentBus, observers
+> plugins/tools/   web, shell, file, sandbox, and team tool implementations
+> workflows/       ReAct and Agent Team pipelines, profiles, prompts, observers
+> apodex/          terminal CLI/TUI, approvals, sessions, traces, and Docker path
+> benchmarks/      public harness plus bundled FrontierSearchBench/FrontierChallenge
 > ```
 > 
-> 完整配音是全片的时间基准。人物视频、字幕、镜头、关键词与转场都按照这条音频定位，可以减少口型漂移和片段衔接问题。
+> More detail: [framework architecture](docs/framework.md),
+> [Agent Team](workflows/agent_team/README.md), and
+> [Stateful ReAct](workflows/stateful_react_agent/README.md). See
+> [run artifacts and timestamps](docs/run-artifacts.md) for the on-disk layout.
 > 
-> ## 默认设置
 > 
-> - 竖屏 `9:16`、`1080×1920`、`30fps`。
-> - 主题生成的视频通常控制在 45–75 秒。
-> - 没有授权声音样本时使用合适的库存声音。
-> - 默认包含清晰开场、2–4 个内容节拍和简洁结尾。
-> - 音乐与商业引导按需求添加。
-> - 发布响度目标约为 `-16 LUFS`。
+> # Stateful single-agent workflow
+> uv run frontier-agent --mode react --cwd /path/to/project
 > 
-> ## 安全和成本边界
 > 
-> - 远程上传前确认图片使用权和成年人物状态。
-> - 克隆声音前确认声音授权。
-> - 首次付费生成前说明上传内容、生成时长、价格依据、试片方案和重试上限。
-> - 任务中断后优先查询已有任务 ID，避免重复扣费。
-> - 连续三个付费候选失败后停止并总结问题。
+> # Coordinator plus parallel sub-agents
+> uv run frontier-agent --mode agent_team --cwd /path/to/project
+> ```
 > 
-> ## 开源与隐私
+> `uv sync` above installs the lightweight terminal runtime. Scientific and
+> document packages are intentionally optional in native mode; the agent installs
+> only what a task actually needs into `/.apodex/runtime/native`. The
+> `apodex` command is retained as a compatibility alias.
 > 
-> - 仓库不保存 API 密钥、访问令牌、签名下载地址或用户素材。
-> - 任务级请求记录需要移除凭据与临时 URL 后再提交。
-> - 预检与交付报告只保存文件名，不写入开发者机器的绝对路径。
-> - 项目使用 [MIT License](LICENSE)，可以自由使用、修改和分发。
+> Prefer a script that does all of the above? `./scripts/run-macos.sh` and
+> `./scripts/run-linux.sh` set up a hosted-endpoint install, and
+> `./scripts/run-linux-gpu.sh --install-system-deps --setup-only` prepares a native,
+> isolated SGLang environment on a Linux NVIDIA GPU. The step-by-step equivalent is
+> the [endpoint quickstart](docs/install/tui-endpoint-quickstart.md)
+> ([中文教程](docs/install/tui-endpoint-quickstart.zh-CN.md)), which requires neither
+> model self-hosting nor Docker.
 > 
-> ## 贡献
+> Local SGLang serving is pinned to reviewed NVIDIA driver / CUDA / SGLang tracks,
+> and a mismatch surfaces late as opaque CUDA or Triton kernel errors during model
+> load. Confirm your `nvidia-smi` driver against the
+> [GPU compatibility matrix](docs/install/gpu-compatibility.md) before choosing an
+> image tag or native pin. The GPU helper selects a reviewed userspace track from
+> the host driver, but never installs or replaces the driver itself.
 > 
-> 欢迎通过 Issue 提交使用反馈，也欢迎用 Pull Request 改进工作流、兼容性和质量检查。
+> 
+> ### Deployment model
+> 
+> The operating system, FrontierAgent runtime, and model runtime are independent
+> choices. “NVIDIA” describes the local model service, not how the agent itself
+> runs. Unsure which applies to your machine or GPU provider? Start with the
+> **[installation chooser](docs/install/README
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/cclank/lanshu-create-ai-presenter-video)
+[GitHub](https://github.com/ApodexAI/FrontierAgent) · [官方網站](https://www.apodex.ai)
 
 ## 相關收錄
 
@@ -336,7 +412,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE category = "Other" AND file.name != "ApodexAI--FrontierAgent"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -345,7 +421,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "cclank--lanshu-create-ai-presenter-video" AND status != "archived"
+> WHERE language = "Python" AND file.name != "ApodexAI--FrontierAgent" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -354,18 +430,18 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE week = "2026-W35" AND file.name != "ApodexAI--FrontierAgent"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/ApodexAI--FrontierAgent");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "cclank--lanshu-create-ai-presenter-video" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "ApodexAI--FrontierAgent" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -381,7 +457,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "cclank" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE owner = "ApodexAI" AND file.name != "ApodexAI--FrontierAgent"
 > SORT stars DESC
 > ```
 
@@ -389,7 +465,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/ApodexAI--FrontierAgent");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -406,7 +482,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/ApodexAI--FrontierAgent");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -439,7 +515,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/ApodexAI--FrontierAgent");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -463,7 +539,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/ApodexAI--FrontierAgent");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -500,7 +576,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/ApodexAI--FrontierAgent");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -583,7 +659,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-25** — 首次收錄
+> **2026-08-26** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -599,5 +675,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-26|2026-08-26]] — 再次上榜，924 stars
-- [[2026-08-25|2026-08-25]] — 首次收錄，840 stars
+- [[2026-08-26|2026-08-26]] — 首次收錄，614 stars
