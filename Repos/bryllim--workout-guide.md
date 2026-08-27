@@ -1,68 +1,68 @@
 ---
-repo: cclank/lanshu-create-ai-presenter-video
-url: https://github.com/cclank/lanshu-create-ai-presenter-video
-owner: cclank
+repo: bryllim/workout-guide
+url: https://github.com/bryllim/workout-guide
+owner: bryllim
 owner_type: User
-language: Python
+language: Astro
 license: MIT
-description: "Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image."
-homepage: ""
-stars: 951
-stars_per_day: 159
-forks: 172
-open_issues: 1
-created: 2026-08-20
-pushed_at: 2026-08-20
-first_seen: 2026-08-25
+description: "302 open exercise illustrations and a framework-neutral npm package by Bryl Lim"
+homepage: "https://bryllim.github.io/workout-guide/"
+stars: 884
+stars_per_day: 295
+forks: 140
+open_issues: 0
+created: 2026-08-24
+pushed_at: 2026-08-26
+first_seen: 2026-08-27
 week: "2026-W35"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v1.0.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-25
+last_reviewed: 2026-08-27
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-09-03"
-contributor_count: 1
+appearances: 1
+next_review: "2026-08-30"
+contributor_count: 2
 engagement: "medium"
 issue_close_rate: -1
-repo_size_kb: 21
-readme_length: 2685
+repo_size_kb: 39859
+readme_length: 2230
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 3
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-25"
-star_history: "2026-08-25:840,2026-08-26:924,2026-08-27:951"
+ring_history: "assess@2026-08-27"
+star_history: "2026-08-27:884"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - "topic/ai_video"
-  - "topic/codex"
-  - "topic/codex_skill"
-  - "topic/digital_human"
-  - "topic/video_generation"
+  - "lang/astro"
+  - "topic/exercise"
+  - "topic/expo"
+  - "topic/fitness"
+  - "topic/npm_package"
+  - "topic/open_source"
 aliases:
-  - "lanshu-create-ai-presenter-video"
-  - "cclank/lanshu-create-ai-presenter-video"
+  - "workout-guide"
+  - "bryllim/workout-guide"
 ---
 
-# lanshu-create-ai-presenter-video
+# workout-guide
 
-**840** stars · **210** stars/天 · 建立 4 天前 · Python · MIT
+**884** stars · **295** stars/天 · 建立 3 天前 · Astro · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+const me = dv.page("Repos/bryllim--workout-guide");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v1.0.0`
 
-`ai-video` `codex` `codex-skill` `digital-human` `video-generation`
+`exercise` `expo` `fitness` `npm-package` `open-source` `react-native` `workout`
 
 > [!summary] 一句話摘要
-> Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.
+> 302 open exercise illustrations and a framework-neutral npm package by Bryl Lim
 
 ## 專案簡介
 
-Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.
+302 open exercise illustrations and a framework-neutral npm package by Bryl Lim
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/bryllim--workout-guide");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +125,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/bryllim--workout-guide");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,186 +149,108 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 146 |
+| Forks | 140 |
 | Open Issues | 0 |
-| 最後推送 | 2026-08-20 |
-| 建立日期 | 2026-08-20 |
-| Repo 大小 | 21 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cclank/lanshu-create-ai-presenter-video) |
-| Topics | `ai-video` `codex` `codex-skill` `digital-human` `video-generation` |
+| 最後推送 | 2026-08-26 |
+| 建立日期 | 2026-08-24 |
+| 官方網站 | [Link](https://bryllim.github.io/workout-guide/) |
+| Repo 大小 | 38.9 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/bryllim/workout-guide) |
+| Topics | `exercise` `expo` `fitness` `npm-package` `open-source` `react-native` `workout` |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@axe-core/playwright` `@eslint/js` `@playwright/test` `@types/node` `eslint` `globals` `potrace` `sharp` `svgo` `typescript` `typescript-eslint` `vitest`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 65
->     "Shell" : 35
+>     "Astro" : 36
+>     "JavaScript" : 26
+>     "CSS" : 24
+>     "TypeScript" : 14
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@cclank](https://github.com/cclank) | 1 |
+> | [@bryllim](https://github.com/bryllim) | 9 |
+> | [@ikrame-ih](https://github.com/ikrame-ih) | 1 |
+
+**最新版本**：v1.0.0 — Workout Guide 1.0.0 (2026-08-24)
+
+> [!info]- Release Notes
+> The first public release of Workout Guide by Bryl Lim.
+> 
+> - 302 exercises with exactly three transparent 512 × 512 PNG frames each
+> - Typed ESM and CommonJS API with manifest, search, lookups, and CDN URL helpers
+> - Direct static asset imports plus Expo and React Native literal require() support
+> - Searchable Astro gallery, 302 detail pages, and integration guide
+> - MIT-licensed code and documentation; CC BY-SA 4.0 visual assets with complete attribution
+> 
+> Visit the gallery: https://bryllim.github.io/workout-guide/
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-20）
-> **活躍天數** 1 天 · **最新 commit** Initial open-source release
+> [!abstract] 最近 10 次 commit（2026-08-24 ~ 2026-08-26）
+> **活躍天數** 3 天 · **最新 commit** Merge pull request #1 from ikrame-ih/fix/select-dropdown-contrast
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # lanshu-create-ai-presenter-video
+> # Workout Guide
 > 
-> [](https://github.com/cclank/lanshu-create-ai-presenter-video/actions/workflows/validate.yml)
-> [](LICENSE)
-> [](https://www.python.org/)
-> [](https://ffmpeg.org/)
-> [](https://github.com/cclank/lanshu-create-ai-presenter-video/stargazers)
+> An open exercise illustration library containing 302 exercises, three consistent frames per exercise, a typed framework-neutral npm package, and a searchable static gallery.
 > 
-> 一个面向 Codex 的通用数字人视频制作 Skill。输入主题或文案与授权人物图后，它会组织文案、配音、人物生成、口型校准、字幕与关键词动效、剪辑、渲染和质量验收。
+> The original pose artwork used by this project comes from [Everkinetic](https://github.com/everkinetic/data) under CC BY-SA 4.0. [Bryl Lim](https://bryllim.com) expanded upon that foundation with additional exercises and animation frames, normalized assets, structured metadata, package APIs, and the documentation gallery.
 > 
-> 它按能力选择当前环境可用的工具，项目源码不绑定服务商、模型名称或私有接口。
+> [Browse the gallery](https://bryllim.github.io/workout-guide/) · [Read the guide](https://bryllim.github.io/workout-guide/guide/) · [Open the package on npm](https://www.npmjs.com/package/@bryllim/workout-guide)
 > 
-> ## 最少需要提供什么
+> ## Install
 > 
-> 1. 一个主题或一份完整文案。
-> 2. 一张经过授权、包含清晰成年人物的参考图。
-> 
-> 可选输入包括声音样本、屏幕录制、图片、B-roll、品牌素材、目标平台、时长、横竖屏、风格、水印和结尾引导。
-> 
-> ## 安装
-> 
-> ```bash
-> git clone https://github.com/cclank/lanshu-create-ai-presenter-video.git \
->   ~/.codex/skills/lanshu-create-ai-presenter-video
+> ```sh
+> npm install @bryllim/workout-guide
 > ```
 > 
-> 安装后的 Skill 路径：
+> ```ts
+> import { getExercise, searchExercises, getAssetUrl } from '@bryllim/workout-guide';
 > 
-> ```text
-> ~/.codex/skills/lanshu-create-ai-presenter-video
+> const pushUp = getExercise('push-up');
+> const bodyweightChest = searchExercises('chest', { equipment: 'bodyweight' });
+> const firstFrame = getAssetUrl('push-up', 1);
 > ```
 > 
-> ## 文件结构
+> Direct asset imports and literal React Native `require()` examples are documented in the [integration guide](https://bryllim.github.io/workout-guide/guide/).
 > 
-> ```text
-> lanshu-create-ai-presenter-video/
-> ├── SKILL.md
-> ├── README.md
-> ├── agents/
-> │   └── openai.yaml
-> ├── assets/
-> │   └── job.template.json
-> ├── references/
-> │   ├── generation.md
-> │   ├── editing.md
-> │   └── qa-recovery.md
-> └── scripts/
->     ├── init_job.py
->     ├── preflight.py
->     └── finalize_delivery.sh
+> ## Repository
+> 
+> This npm-workspace monorepo contains:
+> 
+> - `packages/workout-guide`: package API, canonical manifest, and all 906 transparent 512 × 512 SVGs, with PNG sources retained for compatibility.
+> - `apps/site`: Astro landing page, gallery, detail pages, and guide.
+> - `scripts`: deterministic catalog import and validation utilities.
+> 
+> Run the project locally:
+> 
+> ```sh
+> npm install
+> npm run check
+> npm run dev
 > ```
 > 
-> ## 三份参考文档分别负责什么
+> The normalized catalog and all package assets are checked into the repository. Maintainers can regenerate them from a compatible source export with `npm run catalog:import -- /path/to/source`.
 > 
-> - `generation.md`：输入检查、文案、声音、能力选型、付费生成、人物提示词与一致性。
-> - `editing.md`：时间轴、开场和结尾、字幕预设、人物侧关键词动效、封面与导出。
-> - `qa-recovery.md`：技术验收、人工验收和常见故障修复。
+> ## Licensing
 > 
-> Codex 只在进入对应阶段时读取相关文档，减少上下文占用。
+> Code and documentation are available under the [MIT License](./LICENSE). Visual assets are licensed under [CC BY-SA 4.0](./LICENSE-ASSETS). See [LICENSES.md](./LICENSES.md) and [ATTRIBUTION.md](./ATTRIBUTION.md) for the complete breakdown, including Everkinetic-derived poses.
 > 
-> ## 快速使用
-> 
-> 在对话中直接说：
-> 
-> ```text
-> 使用 $lanshu-create-ai-presenter-video，把这份文案和人物图做成一条 16:9、30 秒、有实时字幕的数字人讲解视频。
-> ```
-> 
-> 也可以先初始化标准任务目录：
-> 
-> ```bash
-> SKILL_DIR=~/.codex/skills/lanshu-create-ai-presenter-video
-> 
-> python3 "$SKILL_DIR/scripts/init_job.py" \
->   --job-dir ~/Videos/my-presenter-video \
->   --presenter-image ~/Pictures/presenter.png \
->   --topic "视频主题" \
->   --duration 60 \
->   --aspect 9:16 \
->   --rights-confirmed \
->   --adult-presenter-confirmed
-> ```
-> 
-> 随后查看并补全 `job.json` 中的人工检查与远程上传许可，再运行：
-> 
-> ```bash
-> python3 "$SKILL_DIR/scripts/preflight.py" ~/Videos/my-presenter-video/job.json
-> ```
-> 
-> ## 运行环境
-> 
-> - Codex 或兼容本地 Skill 的 Agent 环境。
-> - Python `3.9+`。
-> - `FFmpeg` 与 `ffprobe`。
-> - Bash、`jq`、`awk` 和 `sed`。
-> - 至少一种当前环境可调用的视频生成、语音生成与口型同步能力。
-> 
-> ## 核心工作方式
-> 
-> ```text
-> 主题或文案 + 授权人物图
->         ↓
-> 锁定文案与完整配音
->         ↓
-> 低成本人物试片
->         ↓
-> 生成连续数字人主素材
->         ↓
-> 按同一条音频时间轴剪辑
->         ↓
-> 添加字幕、关键词动效和封面
->         ↓
-> 口型、人物、声音与画面验收
->         ↓
-> 输出母版、分享版和 QA 报告
-> ```
-> 
-> 完整配音是全片的时间基准。人物视频、字幕、镜头、关键词与转场都按照这条音频定位，可以减少口型漂移和片段衔接问题。
-> 
-> ## 默认设置
-> 
-> - 竖屏 `9:16`、`1080×1920`、`30fps`。
-> - 主题生成的视频通常控制在 45–75 秒。
-> - 没有授权声音样本时使用合适的库存声音。
-> - 默认包含清晰开场、2–4 个内容节拍和简洁结尾。
-> - 音乐与商业引导按需求添加。
-> - 发布响度目标约为 `-16 LUFS`。
-> 
-> ## 安全和成本边界
-> 
-> - 远程上传前确认图片使用权和成年人物状态。
-> - 克隆声音前确认声音授权。
-> - 首次付费生成前说明上传内容、生成时长、价格依据、试片方案和重试上限。
-> - 任务中断后优先查询已有任务 ID，避免重复扣费。
-> - 连续三个付费候选失败后停止并总结问题。
-> 
-> ## 开源与隐私
-> 
-> - 仓库不保存 API 密钥、访问令牌、签名下载地址或用户素材。
-> - 任务级请求记录需要移除凭据与临时 URL 后再提交。
-> - 预检与交付报告只保存文件名，不写入开发者机器的绝对路径。
-> - 项目使用 [MIT License](LICENSE)，可以自由使用、修改和分发。
-> 
-> ## 贡献
-> 
-> 欢迎通过 Issue 提交使用反馈，也欢迎用 Pull Request 改进工作流、兼容性和质量检查。
+> Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) and the [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/cclank/lanshu-create-ai-presenter-video)
+[GitHub](https://github.com/bryllim/workout-guide) · [官方網站](https://bryllim.github.io/workout-guide/)
 
 ## 相關收錄
 
@@ -336,7 +258,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE category = "Other" AND file.name != "bryllim--workout-guide"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -345,7 +267,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "cclank--lanshu-create-ai-presenter-video" AND status != "archived"
+> WHERE language = "Astro" AND file.name != "bryllim--workout-guide" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -354,18 +276,18 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE week = "2026-W35" AND file.name != "bryllim--workout-guide"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/bryllim--workout-guide");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "cclank--lanshu-create-ai-presenter-video" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "bryllim--workout-guide" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -381,7 +303,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "cclank" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE owner = "bryllim" AND file.name != "bryllim--workout-guide"
 > SORT stars DESC
 > ```
 
@@ -389,7 +311,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/bryllim--workout-guide");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -406,7 +328,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/bryllim--workout-guide");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -439,7 +361,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/bryllim--workout-guide");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -463,7 +385,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/bryllim--workout-guide");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -500,7 +422,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/bryllim--workout-guide");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -583,7 +505,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-25** — 首次收錄
+> **2026-08-27** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -599,6 +521,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-27|2026-08-27]] — 再次上榜，951 stars
-- [[2026-08-26|2026-08-26]] — 再次上榜，924 stars
-- [[2026-08-25|2026-08-25]] — 首次收錄，840 stars
+- [[2026-08-27|2026-08-27]] — 首次收錄，884 stars

@@ -7,10 +7,10 @@ language: TypeScript
 license: N/A
 description: "Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for macOS"
 homepage: ""
-stars: 2570
-stars_per_day: 1285
-forks: 2867
-open_issues: 12
+stars: 3284
+stars_per_day: 1095
+forks: 3203
+open_issues: 14
 created: 2026-08-23
 pushed_at: 2026-08-23
 first_seen: 2026-08-25
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-08-29"
+appearances: 3
+next_review: "2026-08-30"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-25"
-star_history: "2026-08-25:1839,2026-08-26:2570"
+star_history: "2026-08-25:1839,2026-08-26:2570,2026-08-27:3284"
 tags:
   - github
   - "category/other"
@@ -651,5 +651,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-27|2026-08-27]] — 再次上榜，3.3k stars
 - [[2026-08-26|2026-08-26]] — 再次上榜，2.6k stars
 - [[2026-08-25|2026-08-25]] — 首次收錄，1.8k stars

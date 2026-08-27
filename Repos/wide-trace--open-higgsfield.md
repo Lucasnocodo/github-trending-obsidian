@@ -1,19 +1,19 @@
 ---
-repo: cclank/lanshu-create-ai-presenter-video
-url: https://github.com/cclank/lanshu-create-ai-presenter-video
-owner: cclank
+repo: wide-trace/open-higgsfield
+url: https://github.com/wide-trace/open-higgsfield
+owner: wide-trace
 owner_type: User
-language: Python
-license: MIT
-description: "Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image."
-homepage: ""
-stars: 951
-stars_per_day: 159
-forks: 172
-open_issues: 1
-created: 2026-08-20
-pushed_at: 2026-08-20
-first_seen: 2026-08-25
+language: TypeScript
+license: N/A
+description: "A studio for image and video generation — one prompt bar, each model’s own settings, and every finished run in one gallery."
+homepage: "https://openhiggsfield.ai"
+stars: 664
+stars_per_day: 664
+forks: 3
+open_issues: 0
+created: 2026-08-26
+pushed_at: 2026-08-26
+first_seen: 2026-08-27
 week: "2026-W35"
 month: "2026-08"
 category: "Other"
@@ -25,44 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-25
+last_reviewed: 2026-08-27
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-09-03"
+appearances: 1
+next_review: "2026-08-30"
 contributor_count: 1
-engagement: "medium"
+engagement: "low"
 issue_close_rate: -1
-repo_size_kb: 21
-readme_length: 2685
+repo_size_kb: 472
+readme_length: 6788
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-25"
-star_history: "2026-08-25:840,2026-08-26:924,2026-08-27:951"
+ring_history: "assess@2026-08-27"
+star_history: "2026-08-27:664"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - "topic/ai_video"
-  - "topic/codex"
-  - "topic/codex_skill"
-  - "topic/digital_human"
-  - "topic/video_generation"
+  - "lang/typescript"
 aliases:
-  - "lanshu-create-ai-presenter-video"
-  - "cclank/lanshu-create-ai-presenter-video"
+  - "open-higgsfield"
+  - "wide-trace/open-higgsfield"
 ---
 
-# lanshu-create-ai-presenter-video
+# open-higgsfield
 
-**840** stars · **210** stars/天 · 建立 4 天前 · Python · MIT
+**664** stars · **664** stars/天 · 建立 1 天前 · TypeScript · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+const me = dv.page("Repos/wide-trace--open-higgsfield");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -77,20 +72,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 `個人專案`
 
-`ai-video` `codex` `codex-skill` `digital-human` `video-generation`
-
 > [!summary] 一句話摘要
-> Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.
+> A studio for image and video generation — one prompt bar, each model’s own settings, and every finished run in one gallery.
 
 ## 專案簡介
 
-Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.
+A studio for image and video generation — one prompt bar, each model’s own settings, and every finished run in one gallery.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/wide-trace--open-higgsfield");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +118,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/wide-trace--open-higgsfield");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,186 +142,209 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 146 |
+| Forks | 3 |
 | Open Issues | 0 |
-| 最後推送 | 2026-08-20 |
-| 建立日期 | 2026-08-20 |
-| Repo 大小 | 21 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cclank/lanshu-create-ai-presenter-video) |
-| Topics | `ai-video` `codex` `codex-skill` `digital-human` `video-generation` |
+| 最後推送 | 2026-08-26 |
+| 建立日期 | 2026-08-26 |
+| 官方網站 | [Link](https://openhiggsfield.ai) |
+| Repo 大小 | 472 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/wide-trace/open-higgsfield) |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@tanstack/react-virtual` `@vercel/blob` `next` `react` `react-dom` `zustand` `@types/node` `@types/react` `@types/react-dom` `typescript`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 65
->     "Shell" : 35
+>     "TypeScript" : 69
+>     "CSS" : 29
+>     "JavaScript" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@cclank](https://github.com/cclank) | 1 |
+> | [@wide-trace](https://github.com/wide-trace) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-20）
-> **活躍天數** 1 天 · **最新 commit** Initial open-source release
+> [!abstract] 最近 10 次 commit（2026-08-26）
+> **活躍天數** 1 天 · **最新 commit** Initial commit
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # lanshu-create-ai-presenter-video
+> # OpenHiggsfield AI — Open-Source Alternative to Higgsfield AI
 > 
-> [](https://github.com/cclank/lanshu-create-ai-presenter-video/actions/workflows/validate.yml)
-> [](LICENSE)
-> [](https://www.python.org/)
-> [](https://ffmpeg.org/)
-> [](https://github.com/cclank/lanshu-create-ai-presenter-video/stargazers)
+> > **The free, open-source alternative to Higgsfield AI.** Generate images and
+> > videos with 40 models from one prompt bar — no closed ecosystem, no studio
+> > subscription.
 > 
-> 一个面向 Codex 的通用数字人视频制作 Skill。输入主题或文案与授权人物图后，它会组织文案、配音、人物生成、口型校准、字幕与关键词动效、剪辑、渲染和质量验收。
+> ## 🌐 Try it Online — No Install Required
 > 
-> 它按能力选择当前环境可用的工具，项目源码不绑定服务商、模型名称或私有接口。
+> **Hosted version:** [openhiggsfield.ai](https://openhiggsfield.ai)
 > 
-> ## 最少需要提供什么
+> Image and Video in one studio, in the browser — no Node.js, no setup. Add your
+> platform key (`id:secret`) to start generating. The studio itself is free.
 > 
-> 1. 一个主题或一份完整文案。
-> 2. 一张经过授权、包含清晰成年人物的参考图。
+> ---
 > 
-> 可选输入包括声音样本、屏幕录制、图片、B-roll、品牌素材、目标平台、时长、横竖屏、风格、水印和结尾引导。
+> **Why OpenHiggsfield AI instead of Higgsfield AI?**
 > 
-> ## 安装
+> - **Free & open-source** — no studio subscription, no vendor lock-in
+> - **Self-hosted** — clone it, run it, change it
+> - **Your key** — generate with your own platform key
+> - **40 models** — 12 image, 28 video, one catalog, one composer
+> 
+> ---
+> 
+> Next.js 16 App Router on Vercel · React 19 · plain CSS · Zustand · pnpm
+> 
+> ---
+> 
+> ## Features
+> 
+> ### Generate
+> 
+> - **One composer for Image and Video.** A single prompt bar drives both; the
+>   model you pick decides image or video. `⌘/Ctrl + Enter` submits.
+> - **40 models in the catalog** — 12 image, 28 video: Nano Banana 2 / Lite / Pro,
+>   Soul 2, Soul Cinema, Gemini Omni Flash, Kling 3 (Turbo / Std / Pro / 4K /
+>   Motion), Veo 3.1, Wan, Flux, GPT Image 2, Ideogram, Recraft, LTX, MiniMax,
+>   PixVerse, Grok, Qwen and more. Searchable picker.
+> - **Per-model settings.** Aspect ratio, resolution, duration, output format,
+>   audio, batch size, prompt enhancement — each model declares its own allow-list
+>   and the studio renders exactly that. No parallel hardcoded list.
+> - **Media inputs by role.** Start frame, end frame, references, video and audio,
+>   each with the per-role cap the model declares. Files upload to Vercel Blob and
+>   become public URLs the generate request can carry.
+> - **Asset picker.** Attach from your uploads library or from any finished run in
+>   history — two tabs over one library, filtered to the role's kind.
+> - **Batch.** Up to 4 results per press. Models with a native count setting use it;
+>   the rest are submitted once per result, each clearing its own tile.
+> - **Live run lifecycle.** Skeletons open in the grid on submit, the request is
+>   polled every 4s until a terminal status (10-minute deadline), and each finished
+>   result blooms into place on its own clock.
+> 
+> ### Gallery
+> 
+> - **Four scopes** — Image, Video, Assets (every finished run) and Favorites —
+>   as an arrow-key-navigable tab rail.
+> - **Masonry grid** of real runs at their true aspect ratio, newest first, with a
+>   gradient placeholder while media loads.
+> - **Per-tile actions**: reuse, favorite, delete, select.
+> - **Reuse restores model, settings and prompt**, so the same run can be
+>   re-rendered, not just re-typed.
+> - **Viewer.** Full-size media with prompt (copy in one click), model, resolved
+>   settings, timestamp, download, favorite and Recreate.
+> - **Selection mode.** Click a tile's checkbox to enter; shift-click extends a
+>   range. Bulk download (sequential, with progress and a report of any files the
+>   CDN refused), bulk favorite/unfavorite, bulk delete. `Esc` exits.
+> - **Undo.** Deletion is reversible for 6 seconds via a bar with a draining
+>   hairline, in the strip the composer already reserves.
+> - **Empty states** that hand you a starter prompt instead of a blank grid.
+> 
+> ### State and errors
+> 
+> - **History persists** in IndexedDB in this browser (60 records). Favorites are
+>   a deliberate keep and never age out of the cap. Result URLs belong to the
+>   generation platform, so old history can outlive its CDN lifetime and show gaps.
+> - **Failed, NSFW and canceled runs** are recorded as failed tiles carrying the
+>   reason and a retry that restores the prompt and model.
+> - **Your own platform key.** Entered in a modal, stored by a server action in an
+>   httpOnly cookie. A missing key opens the modal — it never fails silently. The
+>   topbar lamp states whether a key is held and whether a run is in flight.
+> 
+> ---
+> 
+> ## Architecture
+> 
+> Each generate is one object: `{ model, prompt, media, settings }`.
+> 
+> - **The UI builds that object** and hands it to a server action. The action
+>   resolves it against the catalog and maps it to the generation API's own
+>   fields (`image_urls`, `aspect_ratio`, …).
+> - **Server actions are the only caller.** The browser never talks to the
+>   generation API. Submit is `POST /{model}`; status is
+>   `GET /requests/{id}/status`. Auth is `Authorization: Key `.
+> - **The catalog is the source of truth** (`src/generation/catalog/`). A new entry
+>   appears in the picker, brings its own settings rail and media roles, and needs
+>   no studio changes.
+> - **Five small Zustand stores** — shared image/video prompt, shared image/video
+>   media, `settings[modelId]`, and a tiny `active` store. No store per model.
+> - **Uploads** go client-direct to Vercel Blob through `/api/blob`, which issues
+>   scoped tokens. `blob:` URLs are preview-only.
+> 
+> ---
+> 
+> ## Getting started
 > 
 > ```bash
-> git clone https://github.com/cclank/lanshu-create-ai-presenter-video.git \
->   ~/.codex/skills/lanshu-create-ai-presenter-video
+> pnpm install
+> pnpm dev            # http://localhost:3000
 > ```
 > 
-> 安装后的 Skill 路径：
+> Open the studio, press **Add key**, and paste your platform key as `id:secret`.
 > 
-> ```text
-> ~/.codex/skills/lanshu-create-ai-presenter-video
-> ```
-> 
-> ## 文件结构
-> 
-> ```text
-> lanshu-create-ai-presenter-video/
-> ├── SKILL.md
-> ├── README.md
-> ├── agents/
-> │   └── openai.yaml
-> ├── assets/
-> │   └── job.template.json
-> ├── references/
-> │   ├── generation.md
-> │   ├── editing.md
-> │   └── qa-recovery.md
-> └── scripts/
->     ├── init_job.py
->     ├── preflight.py
->     └── finalize_delivery.sh
-> ```
-> 
-> ## 三份参考文档分别负责什么
-> 
-> - `generation.md`：输入检查、文案、声音、能力选型、付费生成、人物提示词与一致性。
-> - `editing.md`：时间轴、开场和结尾、字幕预设、人物侧关键词动效、封面与导出。
-> - `qa-recovery.md`：技术验收、人工验收和常见故障修复。
-> 
-> Codex 只在进入对应阶段时读取相关文档，减少上下文占用。
-> 
-> ## 快速使用
-> 
-> 在对话中直接说：
-> 
-> ```text
-> 使用 $lanshu-create-ai-presenter-video，把这份文案和人物图做成一条 16:9、30 秒、有实时字幕的数字人讲解视频。
-> ```
-> 
-> 也可以先初始化标准任务目录：
+> ### Environment
 > 
 > ```bash
-> SKILL_DIR=~/.codex/skills/lanshu-create-ai-presenter-video
-> 
-> python3 "$SKILL_DIR/scripts/init_job.py" \
->   --job-dir ~/Videos/my-presenter-video \
->   --presenter-image ~/Pictures/presenter.png \
->   --topic "视频主题" \
->   --duration 60 \
->   --aspect 9:16 \
->   --rights-confirmed \
->   --adult-presenter-confirmed
+> HF_API_BASE_URL=                      # generation API origin, server only
+> OPEN_HIGGSFIELD_READ_WRITE_TOKEN=     # Vercel Blob read-write token
 > ```
 > 
-> 随后查看并补全 `job.json` 中的人工检查与远程上传许可，再运行：
+> ### Commands
 > 
-> ```bash
-> python3 "$SKILL_DIR/scripts/preflight.py" ~/Videos/my-presenter-video/job.json
+> | Command | What it does |
+> | --- | --- |
+> | `pnpm dev` | Dev server on port 3000 |
+> | `pnpm build` | Production build |
+> | `pnpm start` | Serve the production build |
+> | `pnpm brand` | Rebuild the icons and OG card in `public/` |
+> 
+> ---
+> 
+> ## Layout
+> 
+> ```
+> src/
+>   app/          /  is the full-viewport studio and the only page
+>                 /api/blob issues upload tokens
+>                 base.css owns the document canvas
+>   generation/   generate requests, server actions, API mapping, catalog, stores
+>   openhiggsfield/
+>                 the studio surface: composer, gallery, viewer, model picker,
+>                 settings, asset picker, selection bar — and openhiggsfield.css
 > ```
 > 
-> ## 运行环境
+> ---
 > 
-> - Codex 或兼容本地 Skill 的 Agent 环境。
-> - Python `3.9+`。
-> - `FFmpeg` 与 `ffprobe`。
-> - Bash、`jq`、`awk` 和 `sed`。
-> - 至少一种当前环境可调用的视频生成、语音生成与口型同步能力。
+> ## Design principles
 > 
-> ## 核心工作方式
+> Dark studio ground, a single lime accent `#d1fe17`, Inter throughout. The chrome
+> stays neutral so the generated work is the only color on the surface.
 > 
-> ```text
-> 主题或文案 + 授权人物图
->         ↓
-> 锁定文案与完整配音
->         ↓
-> 低成本人物试片
->         ↓
-> 生成连续数字人主素材
->         ↓
-> 按同一条音频时间轴剪辑
->         ↓
-> 添加字幕、关键词动效和封面
->         ↓
-> 口型、人物、声音与画面验收
->         ↓
-> 输出母版、分享版和 QA 报告
-> ```
+> 1. **The tool disappears into the task** — expression never obscures state or
+>    affordance.
+> 2. **Accent is state, not decoration** — selection, primary action, liveness only.
+> 3. **Data is data** — settings, counts and durations read in tabular numerals.
+>    One typeface throughout; no monospace anywhere.
+> 4. **Motion conveys state** — the generation lifecycle, the arrival of a run.
+>    Nothing loops decoratively.
+> 5. **Every control ships all its states** — hover, focus, active, disabled,
+>    loading, error, empty.
+> 6. **The catalog is the source of truth** — the studio renders what the model
+>    declares, never a parallel hardcoded list.
 > 
-> 完整配音是全片的时间基准。人物视频、字幕、镜头、关键词与转场都按照这条音频定位，可以减少口型漂移和片段衔接问题。
-> 
-> ## 默认设置
-> 
-> - 竖屏 `9:16`、`1080×1920`、`30fps`。
-> - 主题生成的视频通常控制在 45–75 秒。
-> - 没有授权声音样本时使用合适的库存声音。
-> - 默认包含清晰开场、2–4 个内容节拍和简洁结尾。
-> - 音乐与商业引导按需求添加。
-> - 发布响度目标约为 `-16 LUFS`。
-> 
-> ## 安全和成本边界
-> 
-> - 远程上传前确认图片使用权和成年人物状态。
-> - 克隆声音前确认声音授权。
-> - 首次付费生成前说明上传内容、生成时长、价格依据、试片方案和重试上限。
-> - 任务中断后优先查询已有任务 ID，避免重复扣费。
-> - 连续三个付费候选失败后停止并总结问题。
-> 
-> ## 开源与隐私
-> 
-> - 仓库不保存 API 密钥、访问令牌、签名下载地址或用户素材。
-> - 任务级请求记录需要移除凭据与临时 URL 后再提交。
-> - 预检与交付报告只保存文件名，不写入开发者机器的绝对路径。
-> - 项目使用 [MIT License](LICENSE)，可以自由使用、修改和分发。
-> 
-> ## 贡献
-> 
-> 欢迎通过 Issue 提交使用反馈，也欢迎用 Pull Request 改进工作流、兼容性和质量检查。
+> Built for people who work in long sessions, iterating on prompts, inputs and
+> settings.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/cclank/lanshu-create-ai-presenter-video)
+[GitHub](https://github.com/wide-trace/open-higgsfield) · [官方網站](https://openhiggsfield.ai)
 
 ## 相關收錄
 
@@ -336,7 +352,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE category = "Other" AND file.name != "wide-trace--open-higgsfield"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -345,7 +361,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "cclank--lanshu-create-ai-presenter-video" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "wide-trace--open-higgsfield" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -354,18 +370,18 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE week = "2026-W35" AND file.name != "wide-trace--open-higgsfield"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/wide-trace--open-higgsfield");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "cclank--lanshu-create-ai-presenter-video" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "wide-trace--open-higgsfield" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -381,7 +397,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "cclank" AND file.name != "cclank--lanshu-create-ai-presenter-video"
+> WHERE owner = "wide-trace" AND file.name != "wide-trace--open-higgsfield"
 > SORT stars DESC
 > ```
 
@@ -389,7 +405,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/wide-trace--open-higgsfield");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -406,7 +422,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/wide-trace--open-higgsfield");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -439,7 +455,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/wide-trace--open-higgsfield");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -463,7 +479,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/wide-trace--open-higgsfield");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -500,7 +516,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/cclank--lanshu-create-ai-presenter-video");
+> const me = dv.page("Repos/wide-trace--open-higgsfield");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -583,7 +599,7 @@ Provider-neutral Codex Skill for producing verified AI presenter videos from a s
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-25** — 首次收錄
+> **2026-08-27** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -599,6 +615,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-27|2026-08-27]] — 再次上榜，951 stars
-- [[2026-08-26|2026-08-26]] — 再次上榜，924 stars
-- [[2026-08-25|2026-08-25]] — 首次收錄，840 stars
+- [[2026-08-27|2026-08-27]] — 首次收錄，664 stars

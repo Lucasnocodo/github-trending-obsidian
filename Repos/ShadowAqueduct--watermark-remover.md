@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "Purge multi-vendor AI watermarks: clean Unicode text, apply statistical rewrite hooks, and clear C2PA plus metadata from PNG, JPEG, SVG, PDF, DOCX, HTML, and MD."
 homepage: ""
-stars: 792
-stars_per_day: 396
-forks: 75
+stars: 811
+stars_per_day: 270
+forks: 76
 open_issues: 6
 created: 2026-08-23
 pushed_at: 2026-08-23
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-08-29"
+appearances: 4
+next_review: "2026-08-30"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-24"
-star_history: "2026-08-24:760,2026-08-25:773,2026-08-26:792"
+star_history: "2026-08-24:760,2026-08-25:773,2026-08-26:792,2026-08-27:811"
 tags:
   - github
   - "category/other"
@@ -658,6 +658,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-27|2026-08-27]] — 再次上榜，811 stars
 - [[2026-08-26|2026-08-26]] — 再次上榜，792 stars
 - [[2026-08-25|2026-08-25]] — 再次上榜，773 stars
 - [[2026-08-24|2026-08-24]] — 首次收錄，760 stars
