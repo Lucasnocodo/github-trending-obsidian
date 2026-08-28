@@ -7,9 +7,9 @@ language: TypeScript
 license: N/A
 description: "A studio for image and video generation — one prompt bar, each model’s own settings, and every finished run in one gallery."
 homepage: "https://openhiggsfield.ai"
-stars: 664
-stars_per_day: 664
-forks: 3
+stars: 918
+stars_per_day: 459
+forks: 9
 open_issues: 0
 created: 2026-08-26
 pushed_at: 2026-08-26
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-30"
+appearances: 2
+next_review: "2026-08-31"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-27"
-star_history: "2026-08-27:664"
+star_history: "2026-08-27:664,2026-08-28:918"
 tags:
   - github
   - "category/other"
@@ -615,4 +615,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-28|2026-08-28]] — 再次上榜，918 stars
 - [[2026-08-27|2026-08-27]] — 首次收錄，664 stars

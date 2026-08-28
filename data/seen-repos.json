@@ -3725,17 +3725,17 @@
   },
   "MengTo/threeui": {
     "first_seen": "2026-08-23",
-    "last_seen": "2026-08-27",
-    "times_seen": 5,
+    "last_seen": "2026-08-28",
+    "times_seen": 6,
     "stars_first": 1940,
-    "stars_last": 4259
+    "stars_last": 4392
   },
   "duty1g/x64dbg-mcp-server": {
     "first_seen": "2026-08-24",
-    "last_seen": "2026-08-27",
-    "times_seen": 4,
+    "last_seen": "2026-08-28",
+    "times_seen": 5,
     "stars_first": 921,
-    "stars_last": 1488
+    "stars_last": 1626
   },
   "Spielewoy/autoprompt-skill": {
     "first_seen": "2026-08-24",
@@ -3753,17 +3753,17 @@
   },
   "b-nnett/grok-bot-0.18-reconstructed": {
     "first_seen": "2026-08-25",
-    "last_seen": "2026-08-27",
-    "times_seen": 3,
+    "last_seen": "2026-08-28",
+    "times_seen": 4,
     "stars_first": 1839,
-    "stars_last": 3284
+    "stars_last": 3394
   },
   "tobi/walgit": {
     "first_seen": "2026-08-25",
-    "last_seen": "2026-08-27",
-    "times_seen": 3,
+    "last_seen": "2026-08-28",
+    "times_seen": 4,
     "stars_first": 1082,
-    "stars_last": 2203
+    "stars_last": 2278
   },
   "MeteorNOX/DeepSeek-Balance-Whale-Widget": {
     "first_seen": "2026-08-25",
@@ -3781,10 +3781,10 @@
   },
   "nateherkai/scroll-craft": {
     "first_seen": "2026-08-26",
-    "last_seen": "2026-08-27",
-    "times_seen": 2,
+    "last_seen": "2026-08-28",
+    "times_seen": 3,
     "stars_first": 917,
-    "stars_last": 1047
+    "stars_last": 1126
   },
   "missuo/herdrm": {
     "first_seen": "2026-08-26",
@@ -3795,10 +3795,10 @@
   },
   "ApodexAI/FrontierAgent": {
     "first_seen": "2026-08-26",
-    "last_seen": "2026-08-27",
-    "times_seen": 2,
+    "last_seen": "2026-08-28",
+    "times_seen": 3,
     "stars_first": 614,
-    "stars_last": 1067
+    "stars_last": 1192
   },
   "amagine-ai/Amagine3D": {
     "first_seen": "2026-08-26",
@@ -3809,16 +3809,30 @@
   },
   "bryllim/workout-guide": {
     "first_seen": "2026-08-27",
-    "last_seen": "2026-08-27",
-    "times_seen": 1,
+    "last_seen": "2026-08-28",
+    "times_seen": 2,
     "stars_first": 884,
-    "stars_last": 884
+    "stars_last": 949
   },
   "wide-trace/open-higgsfield": {
     "first_seen": "2026-08-27",
-    "last_seen": "2026-08-27",
-    "times_seen": 1,
+    "last_seen": "2026-08-28",
+    "times_seen": 2,
     "stars_first": 664,
-    "stars_last": 664
+    "stars_last": 918
+  },
+  "HEJustinSun/my-girlfriend-jingtian-latex": {
+    "first_seen": "2026-08-28",
+    "last_seen": "2026-08-28",
+    "times_seen": 1,
+    "stars_first": 3378,
+    "stars_last": 3378
+  },
+  "sapientinc/PRAXIST": {
+    "first_seen": "2026-08-28",
+    "last_seen": "2026-08-28",
+    "times_seen": 1,
+    "stars_first": 1178,
+    "stars_last": 1178
   }
 }

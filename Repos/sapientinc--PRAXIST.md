@@ -1,19 +1,19 @@
 ---
-repo: nateherkai/scroll-craft
-url: https://github.com/nateherkai/scroll-craft
-owner: nateherkai
-owner_type: User
-language: JavaScript
-license: MIT
-description: "Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll."
-homepage: "https://github.com/nateherkai/scroll-craft"
-stars: 1126
-stars_per_day: 225
-forks: 180
-open_issues: 2
-created: 2026-08-22
-pushed_at: 2026-08-23
-first_seen: 2026-08-26
+repo: sapientinc/PRAXIST
+url: https://github.com/sapientinc/PRAXIST
+owner: sapientinc
+owner_type: Organization
+language: Python
+license: NOASSERTION
+description: "Autonomous research system for measurable, computer-executable research."
+homepage: "https://praxist.sapient.inc/en/docs"
+stars: 1178
+stars_per_day: 1178
+forks: 129
+open_issues: 0
+created: 2026-08-27
+pushed_at: 2026-08-28
+first_seen: 2026-08-28
 week: "2026-W35"
 month: "2026-08"
 category: "Other"
@@ -25,44 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-26
+last_reviewed: 2026-08-28
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-08-31"
-contributor_count: 1
+contributor_count: 2
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 4799
-readme_length: 9141
+issue_close_rate: -1
+repo_size_kb: 15195
+readme_length: 9745
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-26"
-star_history: "2026-08-26:917,2026-08-27:1047,2026-08-28:1126"
+ring_history: "assess@2026-08-28"
+star_history: "2026-08-28:1178"
 tags:
   - github
   - "category/other"
-  - "lang/javascript"
-  - "topic/accessibility"
-  - "topic/agent_skills"
-  - "topic/ai_web_design"
-  - "topic/anthropic"
-  - "topic/claude_code"
+  - "lang/python"
+  - org
 aliases:
-  - "scroll-craft"
-  - "nateherkai/scroll-craft"
+  - "PRAXIST"
+  - "sapientinc/PRAXIST"
 ---
 
-# scroll-craft
+# PRAXIST
 
-**917** stars · **306** stars/天 · 建立 3 天前 · JavaScript · MIT
+**1.2k** stars · **1.2k** stars/天 · 建立 1 天前 · Python · NOASSERTION
 
 ```dataviewjs
-const me = dv.page("Repos/nateherkai--scroll-craft");
+const me = dv.page("Repos/sapientinc--PRAXIST");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
-
-`accessibility` `agent-skills` `ai-web-design` `anthropic` `claude-code` `claude-code-plugin` `creative-coding` `design-system` `frontend` `interaction-design` `landing-page` `scroll-animation` `scrollytelling` `typography` `web-design`
+`ORG`
 
 > [!summary] 一句話摘要
-> Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll.
+> Autonomous research system for measurable, computer-executable research.
 
 ## 專案簡介
 
-Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll.
+Autonomous research system for measurable, computer-executable research.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/sapientinc--PRAXIST");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +119,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/sapientinc--PRAXIST");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,185 +143,258 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 148 |
-| Open Issues | 1 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-23 |
-| 建立日期 | 2026-08-22 |
-| 官方網站 | [Link](https://github.com/nateherkai/scroll-craft) |
-| Repo 大小 | 4.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/nateherkai/scroll-craft) |
-| Topics | `accessibility` `agent-skills` `ai-web-design` `anthropic` `claude-code` `claude-code-plugin` `creative-coding` `design-system` |
+| Forks | 129 |
+| Open Issues | 0 |
+| 最後推送 | 2026-08-28 |
+| 建立日期 | 2026-08-27 |
+| 官方網站 | [Link](https://praxist.sapient.inc/en/docs) |
+| Repo 大小 | 14.8 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/sapientinc/PRAXIST) |
+
+> [!info]- 主要依賴
+> `requirements.txt` 中的核心套件：
+> `anthropic` `backoff` `openai` `matplotlib` `pypdf` `pymupdf4llm` `seaborn` `numpy` `transformers` `datasets` `tiktoken` `wandb` `tqdm` `rich` `humanize`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 76
->     "CSS" : 12
->     "HTML" : 10
->     "Shell" : 2
+>     "Python" : 98
+>     "Jinja" : 2
+>     "Shell" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@nateherkai](https://github.com/nateherkai) | 8 |
+> | [@electrixoul](https://github.com/electrixoul) | 3 |
+> | [@Knowix](https://github.com/Knowix) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-22 ~ 2026-08-23）
-> **活躍天數** 2 天 · **最新 commit** fix: iOS scrub-clip priming, plus a real-device diagnostic page
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#1](https://github.com/nateherkai/scroll-craft/issues/1) | data-sc-kinetic is silently ignored when it sits on a child  | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-27 ~ 2026-08-28）
+> **活躍天數** 2 天 · **最新 commit** fix: preserve Codex Desktop originator metadata (#2)
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # scrollcraft
+> Praxist: meet your personal R&amp;D team
 > 
-> **A Claude Code skill that builds premium, scroll-driven websites, and holds them to a real design standard.**
+>   
+>   
+>   
+>   
+>   
 > 
-> Most AI website output fails in one of two directions. It is either well behaved and forgettable, or it is a flashy scroll animation with 2.1:1 body text, a headline that wraps to six lines on a phone, and the same six sections every other AI page has. scrollcraft is built to fail neither way: it treats **interaction** and **craft** as one job rather than two.
+> Praxist is an autonomous research system for measurable, computer-executable
+> research. It coordinates parallel research peers, task-owned evaluation,
+> durable evidence, and generation-to-generation synthesis.
 > 
-> [](LICENSE)
-> [](https://code.claude.com/docs/en/plugins)
+> Praxist treats research as a persistent process rather than a sequence of
+> disconnected prompts. Use it when a project already runs and its objective is
+> measurable, but the best path forward is still unknown.
 > 
-> ---
+>   
 > 
-> ## Three builds, three completely different pages
 > 
-> Same skill, same engine, no shared skeleton. The differences below are not themes: they are different page grammars, different navigation models, different endings.
+> ## Install Praxist
 > 
-> ### Orrery · a travel practice
-> One unbroken world. The whole page is a single fixed stage: you fall into a handmade scale model of the Earth, land in Kyoto, cross to Patagonia and the Sahara, and rise back to the workbench you started on. No section boundaries anywhere.
-> 
-> ### PERKFORM · a protein coffee
-> A filmic one-shot that hard-cuts to two full-bleed inverted grounds mid-page. Loud, product-forward, and the only one of the three that raises its voice.
-> 
-> ### Fallowbank · a landscape design-build studio
-> Quiet, documentary, restrained. Museum-label copy over real photography, and a close that is a line of running text rather than a button.
-> 
-> ---
-> 
-> ## What it actually does
-> 
-> **Interaction, engagement, and being unrepeatable**
-> 
-> - **Scroll is the timeline.** Video scrubs frame by frame under the wheel, sections pin while their argument advances, rails pan sideways, headlines assemble line by line, the page ground shifts colour as you travel, and the pointer moves things that are not scrolling.
-> - **Eight mutually exclusive page grammars.** Filmic one-shot, chaptered editorial, live surface, continuous world, typographic poster, gallery, split stage, rhythmic cutlist. Each one *forbids* what the others require, so two builds cannot quietly converge.
-> - **A required signature move.** Every build invents one bespoke interaction that exists on that site alone. A recoloured spotlight does not count.
-> - **A fingerprint gate.** A new build must differ from every page you have already made on at least 4 of 6 dimensions: grammar, nav, hero, act shape, close, signature move. Fail it and you change the plan, not the record.
-> 
-> **Craft, and how the page actually feels**
-> 
-> - **A feeling curve before any act exists.** One line per act: the emotion, then what on screen causes it. Two adjacent acts with the same feeling means one is filler.
-> - **One engineered peak.** Peak-end rule, applied literally. The peak gets the asset budget, the silence in front of it, and the most scroll room. A page with three peaks has none.
-> - **A typography floor.** Two families maximum, tracking that tightens as size grows, 45 to 75ch measure, line height inverse to measure, and light-on-dark compensated on three axes.
-> - **A spacing scale with actual rhythm.** 4px base, more space above a heading than below it, fluid section padding so a phone does not inherit desktop air.
-> - **Colour with six roles and one accent**, secondary text tinted rather than flat grey, no pure black, and a documented escape for pages that hard-cut between light and dark grounds.
-> - **Depth as five tools, not one.** Offset shadows, edge light, scale-and-blur as distance, overlap, and grain.
-> - **Brand guidelines are inputs, not decoration.** Point it at a brand kit and its hard rules win, including rules that forbid things the skill would otherwise reach for.
-> - **A refuse list.** Identical feature-card grids, `01 / 06` counters, scroll cues, gradient text, em dashes, invented statistics, fake dashboards, AI-purple gradients, and the cream-and-brass artisan palette every craft brand defaults to.
-> 
-> **It checks its own work**
-> 
-> A headless browser walks the finished page at every scroll position, waits for the video playhead to settle, and reports:
-> 
-> - **dead scroll**: scroll that changes nothing on screen
-> - **cues that never reach full opacity**: copy the reader can only ever see faded
-> - **contrast measured on the composited page**, per line, at the brightest frame that ever passes under it, with the direction picked per line so light-on-dark and dark-on-light are both graded correctly
-> - **legs stuck on a poster**: a clip that silently never decoded, which looks exactly like a paused film
-> 
-> Then it writes a contact sheet, because a machine can prove a page works and cannot tell you it means anything.
-> 
-> ---
-> 
-> ## Install
+> Install the complete runtime integrations and finish first-use setup with one
+> command:
 > 
 > ```bash
-> /plugin marketplace add nateherkai/scroll-craft
-> ```
-> ```bash
-> /plugin install nateherk-design
+> python3 -m pip install --index-url https://pypi.org/simple "praxist[agents,codex]" && praxist setup --interactive --install-skills codex
 > ```
 > 
-> Then use it by describing what you want, or invoke it directly:
+> The local wizard covers the Fair Source License, User Agreement, privacy,
+> runtime profile, masked credentials, Codex skills, writable examples,
+> and readiness checks. It does not select a research project or launch a run.
+> For Claude Code, use the
+> [host-specific one-line command](docs/getting-started/installation.md#install-and-configure).
 > 
-> ```
-> /nateherk-design:scrollcraft
-> ```
-> 
-> If the install summary says `Run /reload-plugins to activate.`, run that.
-> 
-> To hack on the skill without installing:
+> For an agent-managed installation, open Codex:
 > 
 > ```bash
-> claude --plugin-dir ./plugins/nateherk-design
+> codex --yolo
 > ```
 > 
-> ## First run
+> Then ask it to install and configure Praxist using the packaged OOBE runbook,
+> and to stop after readiness checks.
+> 
+> Before starting research, read the [Quickstart](docs/getting-started/quickstart.md)
+> and [Your First Task](docs/getting-started/first-task.md). They describe the
+> separate takeover step and the project contract it creates.
+> 
+> Choose **Codex-native mode** to use an existing Codex subscription without an
+> API key. For sustained research, Praxist generally favors
+> [open-source model APIs](docs/guides/open-source-model-apis.md) with a high
+> observed cache-hit rate. The setup wizard also supports other API-backed
+> profiles.
+> 
+> 
+> ## Examples And Templates
 > 
 > ```bash
-> node scripts/doctor.mjs              # preflight: says exactly what is missing
-> node scripts/workspace.mjs --ensure  # creates your workspace and an empty registry
+> praxist examples list
+> praxist examples install rocket_booster_recovery
+> praxist examples install rocket_booster_recovery_rust
 > ```
 > 
-> Run `doctor` before anything else. The three most common setup faults all surface later as misleading errors otherwise: a stripped ffmpeg reports a missing filter as a syntax error in *your* command, a missing WebP muxer reports as a bad filename, and `playwright-core` resolves from the wrong directory.
+> Complete examples are writable reference projects. `templates/tasks/` contains
+> replaceable scaffolding for building new task harnesses. The two Rocket Booster
+> Recovery examples demonstrate the same research problem through Python/JAX and
+> native Rust implementations.
+> 
+> 
+> ### Q4. Do I need an API key, and what will it cost?
+> 
+> No API key is required in Codex-native mode; Praxist uses your authenticated
+> Codex session. We also recommend using your own API key to access supported
+> model APIs.
+> 
+> API costs are set by the provider and vary by model and usage. Total cost also
+> depends on parallelism, the number of generations, and evaluation runtime. For
+> cost-sensitive runs, start with a small representative workload before scaling
+> up.
+> 
+> 
+> ## Use Praxist Through Codex
+> 
+> We recommend Codex as the interface for operating Praxist. Praxist is not a
+> replacement for Codex: Codex remains the interactive agent that understands
+> your project, communicates with you, and uses development tools. Praxist adds
+> the persistent research loop, parallel peers, evidence protocols, scheduling,
+> and lifecycle control.
+> 
+> After installation, open Codex in the root of an already runnable research
+> project and invoke `$praxist-takeover`. The takeover skill inspects readiness,
+> creates or repairs the task harness, validates its evaluator and evidence
+> contract, and launches the run after the required gates pass. A precise brief
+> produces a better research plan; include the objective, metrics, constraints,
+> resources, exploration choices, and whether launch is authorized.
+> 
+> Example takeover brief
+> 
+> ```text
+> $praxist-takeover
+> 
+> Treat the current directory as the existing runnable research project. Verify
+> the baseline and its evaluation path before changing anything.
+> 
+> Optimize  while preserving .
+> Use  peers for up to  generations within
+> . Use the runtime and model provider selected during
+> setup.  literature search,  QD, and
+>  generation-zero DIG.
+> 
+> Do not download new datasets or replace required project assets. Build a
+> separate task harness with explicit metric directions, baseline provenance,
+> protocol-integrity checks, evidence maturity rules, and justified retention
+> lanes. After readiness checks pass, . Report the task path, run ID, evidence contract, generation
+> close policy, and monitor command.
+> ```
+> 
+> Other bundled skills:
+> 
+> | Skill | Purpose |
+> |---|---|
+> | `praxist-takeover-codex` | No-key takeover using the saved Codex login |
+> | `praxist-onboarding` | Explain Praxist and inspect local readiness |
+> | `praxist-task-initialization` | Build or repair a task harness without launching |
+> | `praxist-interactive-task-init` | Design a task through confirmation-first setup |
+> | `praxist-control` | Start, stop, resume, monitor, and inspect runs |
+> | `praxist-diagnostic` | Diagnose run health and produce reports |
+> | `praxist-scientific-research` | Gather sourced literature and benchmark context |
+> | `praxist-runtime-install` | Install or repair runtime dependencies and credentials |
+> | `terminal-line-plot` | Draw metric trends in the terminal |
+> 
+> See [Agent Skills](docs/user-guide/skills.md) for invocation syntax and the
+> generated [Skills Reference](docs/reference/skills.md) for the complete
+> contracts.
+> 
+> 
+> ## What Praxist Provides
+> 
+> | Capability | Purpose |
+> |---|---|
+> | Parallel research peers | Explore competing hypotheses and implementations concurrently |
+> | Multi-generation synthesis | Carry useful evidence and strategy into later generations |
+> | Durable evidence lanes | Preserve candidates through incubator, frontier, and Gems state |
+> | Multi-metric evaluation | Rank task-defined evidence, including Pareto-optimal tradeoffs |
+> | [Quality-Diversity (QD)](docs/guides/qdig-cohort-allocator.md) and optional [Deep Innovation Gate (DIG)](docs/guides/deep-innovation-gate.md) | Maintain diversity without forcing one exploration policy |
+> | Central resource scheduling | Adapt experiment admission to observed resource pressure |
+> | Resume, replay, and monitoring | Keep long-running research inspectable and recoverable |
+> | Plugin boundaries | Support multiple runtimes, providers, tools, budgets, and workflows |
+> 
+> 
+> ## Praxist And The Task Project
+> 
+> | Praxist owns | The task project owns |
+> |---|---|
+> | Research orchestration, lifecycle, evidence protocols, replay, scheduling, and extension interfaces | Research objective, executable code, evaluator, metrics, baselines, prompts, roles, and domain constraints |
+> 
+> Praxist contains no task-specific scientific assumptions. A task remains the
+> single source of truth for what should be tested and what counts as valid evidence.
+> 
+> 
+> ## Operate A Run
+> 
+> ```bash
+> praxist status --json
+> praxist --monitor --latest
+> praxist stop 
+> praxist resume 
+> ```
+> 
+> `Ctrl-C` closes only the monitor; it does not stop the research run.
+> 
 > 
 > ## Requirements
 > 
-> | | Why | Notes |
-> | --- | --- | --- |
-> | **Node 18+** | every script | |
-> | **A full ffmpeg build** | encoding clips so they *scrub* rather than play | Some toolchains put a stripped ffmpeg on PATH with ~50 filters and no `scale`. `doctor` finds a real build if one exists; `SCROLLCRAFT_FFMPEG` overrides. |
-> | **`playwright-core` + Chrome** | the verification pass | `npm i playwright-core` **in the build folder** |
-> | **`KIE_AI_API_KEY`** | only if you want assets *generated* | Optional. Building from your own photos and footage needs no key and no spend, and it is a first-class route. See `.env.example`. |
+> | Status | Requirement |
+> |---|---|
+> | Required | CPython 3.11+ |
+> | Required to launch research | A runnable project with measurable evaluation |
+> | Required for skill-driven operation | Codex or Claude Code; direct CLI operation remains available without either |
+> | Authentication: choose one | A saved Codex login for Codex-native mode, or a supported provider API key |
+> | Continuously release-tested | Linux on CPython 3.11 and 3.12 |
+> | Compatibility target | macOS and other CPython 3.11+ environments; run `praxist doctor` before research |
 > 
-> ## The workspace
+> Task-specific datasets and compute dependencies remain owned by the task project.
 > 
-> Your builds and your fingerprint registry live in one directory, resolved rather than assumed. First hit wins:
+> See the [platform support matrix](docs/operations/platform-support.md) for the
+> difference between release-qualified hosts and compatibility targets.
 > 
-> 1. `SCROLLCRAFT_HOME`
-> 2. the nearest `.scrollcraft.json` walking up from the current directory: `{ "workspace": "path/to/builds" }`
-> 3. `/scrollcraft`
 > 
-> Builds land in `/builds//`; your registry is `/FINGERPRINTS.md`.
+> ## Documentation
 > 
-> **Your registry starts empty, and that is correct.** The gate exists to stop you repeating *yourself*, so your first build has nothing to clear and every build after it does. [`EXAMPLES.md`](EXAMPLES.md) is the author's twelve-row table, included so you can see what a filled registry looks like and which shapes tend to collide. It is illustration, not constraint.
+> Read the **[Praxist documentation](https://praxist.sapient.inc/en/docs)**
+> or open it with:
 > 
-> ## What is in here
-> 
-> ```
-> plugins/nateherk-design/
-> └── skills/scrollcraft/
->     ├── SKILL.md            the procedure: interview, grammar, score, build, verify
->     ├── references/
->     │   ├── uniqueness.md   eight page grammars, the signature move, the fingerprint gate
->     │   ├── feel.md         the feeling curve, the engineered peak, the feel check
->     │   ├── devices.md      nine scroll devices and the cue contract
->     │   ├── worldflight.md  continuous-world mode: one fixed stage, no seams
->     │   ├── worlds.md       art direction, and the style-preamble method
->     │   ├── taste.md        the design floor: spacing, type, colour, depth, motion
->     │   ├── assets.md       generation, camera moves, encoding for scrubbing
->     │   ├── verify.md       the harness, and what it cannot tell you
->     │   └── template.html   a starting skeleton, not a layout
->     ├── engine/             scrollcraft.js + .css. The mechanism, never edited per project
->     ├── templates/          the empty registry a new workspace is seeded from
->     └── scripts/            doctor · workspace · kie · encode · serve · shoot · worldflight-assert
+> ```bash
+> praxist docs
 > ```
 > 
-> [`CHANGELOG.md`](plugins/nateherk-design/skills/scrollcraft/CHANGELOG.md)
+> No local documentation server is required.
+> 
+> 
+> ## FAQ
+> 
+> Show questions and answers
+> 
+> 
+> ### Q1. What is Praxist?
+> 
+> Praxist is an autonomous research system for measurable research problems that
+> can be executed on a computer. It turns an already runnable project into a
+> continuous, evidence-driven research run.
+> 
+> Across successive generations, parallel research agents develop candida
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/nateherkai/scroll-craft) · [官方網站](https://github.com/nateherkai/scroll-craft)
+[GitHub](https://github.com/sapientinc/PRAXIST) · [官方網站](https://praxist.sapient.inc/en/docs)
 
 ## 相關收錄
 
@@ -335,7 +402,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "nateherkai--scroll-craft"
+> WHERE category = "Other" AND file.name != "sapientinc--PRAXIST"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -344,7 +411,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "nateherkai--scroll-craft" AND status != "archived"
+> WHERE language = "Python" AND file.name != "sapientinc--PRAXIST" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -353,18 +420,18 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "nateherkai--scroll-craft"
+> WHERE week = "2026-W35" AND file.name != "sapientinc--PRAXIST"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/sapientinc--PRAXIST");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "nateherkai--scroll-craft" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "sapientinc--PRAXIST" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -380,7 +447,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "nateherkai" AND file.name != "nateherkai--scroll-craft"
+> WHERE owner = "sapientinc" AND file.name != "sapientinc--PRAXIST"
 > SORT stars DESC
 > ```
 
@@ -388,7 +455,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/sapientinc--PRAXIST");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -405,7 +472,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/sapientinc--PRAXIST");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -438,7 +505,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/sapientinc--PRAXIST");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -462,7 +529,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/sapientinc--PRAXIST");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -499,7 +566,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/sapientinc--PRAXIST");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -582,7 +649,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-26** — 首次收錄
+> **2026-08-28** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -598,6 +665,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-28|2026-08-28]] — 再次上榜，1.1k stars
-- [[2026-08-27|2026-08-27]] — 再次上榜，1.0k stars
-- [[2026-08-26|2026-08-26]] — 首次收錄，917 stars
+- [[2026-08-28|2026-08-28]] — 首次收錄，1.2k stars

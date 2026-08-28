@@ -1,19 +1,19 @@
 ---
-repo: nateherkai/scroll-craft
-url: https://github.com/nateherkai/scroll-craft
-owner: nateherkai
+repo: HEJustinSun/my-girlfriend-jingtian-latex
+url: https://github.com/HEJustinSun/my-girlfriend-jingtian-latex
+owner: HEJustinSun
 owner_type: User
-language: JavaScript
-license: MIT
-description: "Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll."
-homepage: "https://github.com/nateherkai/scroll-craft"
-stars: 1126
-stars_per_day: 225
-forks: 180
-open_issues: 2
-created: 2026-08-22
-pushed_at: 2026-08-23
-first_seen: 2026-08-26
+language: TeX
+license: N/A
+description: ""
+homepage: ""
+stars: 3378
+stars_per_day: 3378
+forks: 539
+open_issues: 433
+created: 2026-08-27
+pushed_at: 2026-08-27
+first_seen: 2026-08-28
 week: "2026-W35"
 month: "2026-08"
 category: "Other"
@@ -25,44 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-26
+last_reviewed: 2026-08-28
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-08-31"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 4799
-readme_length: 9141
+issue_close_rate: 4
+repo_size_kb: 17163
+readme_length: 265
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-26"
-star_history: "2026-08-26:917,2026-08-27:1047,2026-08-28:1126"
+ring_history: "assess@2026-08-28"
+star_history: "2026-08-28:3378"
 tags:
   - github
   - "category/other"
-  - "lang/javascript"
-  - "topic/accessibility"
-  - "topic/agent_skills"
-  - "topic/ai_web_design"
-  - "topic/anthropic"
-  - "topic/claude_code"
+  - "lang/tex"
 aliases:
-  - "scroll-craft"
-  - "nateherkai/scroll-craft"
+  - "my-girlfriend-jingtian-latex"
+  - "HEJustinSun/my-girlfriend-jingtian-latex"
 ---
 
-# scroll-craft
+# my-girlfriend-jingtian-latex
 
-**917** stars · **306** stars/天 · 建立 3 天前 · JavaScript · MIT
+**3.4k** stars · **3.4k** stars/天 · 建立 1 天前 · TeX · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/nateherkai--scroll-craft");
+const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -77,20 +72,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 `個人專案`
 
-`accessibility` `agent-skills` `ai-web-design` `anthropic` `claude-code` `claude-code-plugin` `creative-coding` `design-system` `frontend` `interaction-design` `landing-page` `scroll-animation` `scrollytelling` `typography` `web-design`
-
 > [!summary] 一句話摘要
-> Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll.
+> No description
 
 ## 專案簡介
 
-Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll.
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +118,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,185 +142,56 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 148 |
-| Open Issues | 1 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-23 |
-| 建立日期 | 2026-08-22 |
-| 官方網站 | [Link](https://github.com/nateherkai/scroll-craft) |
-| Repo 大小 | 4.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/nateherkai/scroll-craft) |
-| Topics | `accessibility` `agent-skills` `ai-web-design` `anthropic` `claude-code` `claude-code-plugin` `creative-coding` `design-system` |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "JavaScript" : 76
->     "CSS" : 12
->     "HTML" : 10
->     "Shell" : 2
-> ```
+| Forks | 539 |
+| Open Issues | 433 |
+| Issue 解決率 | 4% (16 closed) |
+| 最後推送 | 2026-08-27 |
+| 建立日期 | 2026-08-27 |
+| Repo 大小 | 16.8 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/HEJustinSun/my-girlfriend-jingtian-latex) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@nateherkai](https://github.com/nateherkai) | 8 |
+> | [@HEJustinSun](https://github.com/HEJustinSun) | 2 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-22 ~ 2026-08-23）
-> **活躍天數** 2 天 · **最新 commit** fix: iOS scrub-clip priming, plus a real-device diagnostic page
+> [!abstract] 最近 10 次 commit（2026-08-27 ~ 2026-08-27）
+> **活躍天數** 1 天 · **最新 commit** Add files via upload
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#1](https://github.com/nateherkai/scroll-craft/issues/1) | data-sc-kinetic is silently ignored when it sits on a child  | 0 | 0 |
+> | [#53](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/53) | 我恨你们这些有钱人 | 40 | 5 |
+> | [#75](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/75) | anthropic，你搞砸了一切 | 23 | 2 |
+> | [#317](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/317) | [LaTeX] 正文排版存在多处技术问题 | 15 | 10 |
+> | [#381](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/381) | 👀 看 Issues/PRs 太累了，我来全景总结！(含6大专题/网页版/最新#447) 🍉🚀 | 13 | 2 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # scrollcraft
+> # 我的女友景甜
 > 
-> **A Claude Code skill that builds premium, scroll-driven websites, and holds them to a real design standard.**
+> 这是一个 5 x 8 英寸的 XeLaTeX 排版工程。
 > 
-> Most AI website output fails in one of two directions. It is either well behaved and forgettable, or it is a flashy scroll animation with 2.1:1 body text, a headline that wraps to six lines on a phone, and the same six sections every other AI page has. scrollcraft is built to fail neither way: it treats **interaction** and **craft** as one job rather than two.
+> ## 编译
 > 
-> [](LICENSE)
-> [](https://code.claude.com/docs/en/plugins)
-> 
-> ---
-> 
-> ## Three builds, three completely different pages
-> 
-> Same skill, same engine, no shared skeleton. The differences below are not themes: they are different page grammars, different navigation models, different endings.
-> 
-> ### Orrery · a travel practice
-> One unbroken world. The whole page is a single fixed stage: you fall into a handmade scale model of the Earth, land in Kyoto, cross to Patagonia and the Sahara, and rise back to the workbench you started on. No section boundaries anywhere.
-> 
-> ### PERKFORM · a protein coffee
-> A filmic one-shot that hard-cuts to two full-bleed inverted grounds mid-page. Loud, product-forward, and the only one of the three that raises its voice.
-> 
-> ### Fallowbank · a landscape design-build studio
-> Quiet, documentary, restrained. Museum-label copy over real photography, and a close that is a line of running text rather than a button.
-> 
-> ---
-> 
-> ## What it actually does
-> 
-> **Interaction, engagement, and being unrepeatable**
-> 
-> - **Scroll is the timeline.** Video scrubs frame by frame under the wheel, sections pin while their argument advances, rails pan sideways, headlines assemble line by line, the page ground shifts colour as you travel, and the pointer moves things that are not scrolling.
-> - **Eight mutually exclusive page grammars.** Filmic one-shot, chaptered editorial, live surface, continuous world, typographic poster, gallery, split stage, rhythmic cutlist. Each one *forbids* what the others require, so two builds cannot quietly converge.
-> - **A required signature move.** Every build invents one bespoke interaction that exists on that site alone. A recoloured spotlight does not count.
-> - **A fingerprint gate.** A new build must differ from every page you have already made on at least 4 of 6 dimensions: grammar, nav, hero, act shape, close, signature move. Fail it and you change the plan, not the record.
-> 
-> **Craft, and how the page actually feels**
-> 
-> - **A feeling curve before any act exists.** One line per act: the emotion, then what on screen causes it. Two adjacent acts with the same feeling means one is filler.
-> - **One engineered peak.** Peak-end rule, applied literally. The peak gets the asset budget, the silence in front of it, and the most scroll room. A page with three peaks has none.
-> - **A typography floor.** Two families maximum, tracking that tightens as size grows, 45 to 75ch measure, line height inverse to measure, and light-on-dark compensated on three axes.
-> - **A spacing scale with actual rhythm.** 4px base, more space above a heading than below it, fluid section padding so a phone does not inherit desktop air.
-> - **Colour with six roles and one accent**, secondary text tinted rather than flat grey, no pure black, and a documented escape for pages that hard-cut between light and dark grounds.
-> - **Depth as five tools, not one.** Offset shadows, edge light, scale-and-blur as distance, overlap, and grain.
-> - **Brand guidelines are inputs, not decoration.** Point it at a brand kit and its hard rules win, including rules that forbid things the skill would otherwise reach for.
-> - **A refuse list.** Identical feature-card grids, `01 / 06` counters, scroll cues, gradient text, em dashes, invented statistics, fake dashboards, AI-purple gradients, and the cream-and-brass artisan palette every craft brand defaults to.
-> 
-> **It checks its own work**
-> 
-> A headless browser walks the finished page at every scroll position, waits for the video playhead to settle, and reports:
-> 
-> - **dead scroll**: scroll that changes nothing on screen
-> - **cues that never reach full opacity**: copy the reader can only ever see faded
-> - **contrast measured on the composited page**, per line, at the brightest frame that ever passes under it, with the direction picked per line so light-on-dark and dark-on-light are both graded correctly
-> - **legs stuck on a poster**: a clip that silently never decoded, which looks exactly like a paused film
-> 
-> Then it writes a contact sheet, because a machine can prove a page works and cannot tell you it means anything.
-> 
-> ---
-> 
-> ## Install
+> 需要 XeLaTeX 和标准 TeX Live 发行版：
 > 
 > ```bash
-> /plugin marketplace add nateherkai/scroll-craft
+> mkdir -p build
+> xelatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
+> xelatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
 > ```
-> ```bash
-> /plugin install nateherk-design
-> ```
-> 
-> Then use it by describing what you want, or invoke it directly:
-> 
-> ```
-> /nateherk-design:scrollcraft
-> ```
-> 
-> If the install summary says `Run /reload-plugins to activate.`, run that.
-> 
-> To hack on the skill without installing:
-> 
-> ```bash
-> claude --plugin-dir ./plugins/nateherk-design
-> ```
-> 
-> ## First run
-> 
-> ```bash
-> node scripts/doctor.mjs              # preflight: says exactly what is missing
-> node scripts/workspace.mjs --ensure  # creates your workspace and an empty registry
-> ```
-> 
-> Run `doctor` before anything else. The three most common setup faults all surface later as misleading errors otherwise: a stripped ffmpeg reports a missing filter as a syntax error in *your* command, a missing WebP muxer reports as a bad filename, and `playwright-core` resolves from the wrong directory.
-> 
-> ## Requirements
-> 
-> | | Why | Notes |
-> | --- | --- | --- |
-> | **Node 18+** | every script | |
-> | **A full ffmpeg build** | encoding clips so they *scrub* rather than play | Some toolchains put a stripped ffmpeg on PATH with ~50 filters and no `scale`. `doctor` finds a real build if one exists; `SCROLLCRAFT_FFMPEG` overrides. |
-> | **`playwright-core` + Chrome** | the verification pass | `npm i playwright-core` **in the build folder** |
-> | **`KIE_AI_API_KEY`** | only if you want assets *generated* | Optional. Building from your own photos and footage needs no key and no spend, and it is a first-class route. See `.env.example`. |
-> 
-> ## The workspace
-> 
-> Your builds and your fingerprint registry live in one directory, resolved rather than assumed. First hit wins:
-> 
-> 1. `SCROLLCRAFT_HOME`
-> 2. the nearest `.scrollcraft.json` walking up from the current directory: `{ "workspace": "path/to/builds" }`
-> 3. `/scrollcraft`
-> 
-> Builds land in `/builds//`; your registry is `/FINGERPRINTS.md`.
-> 
-> **Your registry starts empty, and that is correct.** The gate exists to stop you repeating *yourself*, so your first build has nothing to clear and every build after it does. [`EXAMPLES.md`](EXAMPLES.md) is the author's twelve-row table, included so you can see what a filled registry looks like and which shapes tend to collide. It is illustration, not constraint.
-> 
-> ## What is in here
-> 
-> ```
-> plugins/nateherk-design/
-> └── skills/scrollcraft/
->     ├── SKILL.md            the procedure: interview, grammar, score, build, verify
->     ├── references/
->     │   ├── uniqueness.md   eight page grammars, the signature move, the fingerprint gate
->     │   ├── feel.md         the feeling curve, the engineered peak, the feel check
->     │   ├── devices.md      nine scroll devices and the cue contract
->     │   ├── worldflight.md  continuous-world mode: one fixed stage, no seams
->     │   ├── worlds.md       art direction, and the style-preamble method
->     │   ├── taste.md        the design floor: spacing, type, colour, depth, motion
->     │   ├── assets.md       generation, camera moves, encoding for scrubbing
->     │   ├── verify.md       the harness, and what it cannot tell you
->     │   └── template.html   a starting skeleton, not a layout
->     ├── engine/             scrollcraft.js + .css. The mechanism, never edited per project
->     ├── templates/          the empty registry a new workspace is seeded from
->     └── scripts/            doctor · workspace · kie · encode · serve · shoot · worldflight-assert
-> ```
-> 
-> [`CHANGELOG.md`](plugins/nateherk-design/skills/scrollcraft/CHANGELOG.md)
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/nateherkai/scroll-craft) · [官方網站](https://github.com/nateherkai/scroll-craft)
+[GitHub](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex)
 
 ## 相關收錄
 
@@ -335,7 +199,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "nateherkai--scroll-craft"
+> WHERE category = "Other" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -344,7 +208,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "nateherkai--scroll-craft" AND status != "archived"
+> WHERE language = "TeX" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -353,18 +217,18 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "nateherkai--scroll-craft"
+> WHERE week = "2026-W35" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "nateherkai--scroll-craft" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "HEJustinSun--my-girlfriend-jingtian-latex" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -380,7 +244,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "nateherkai" AND file.name != "nateherkai--scroll-craft"
+> WHERE owner = "HEJustinSun" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
 > SORT stars DESC
 > ```
 
@@ -388,7 +252,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -405,7 +269,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -438,7 +302,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -462,7 +326,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -499,7 +363,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/nateherkai--scroll-craft");
+> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -582,7 +446,7 @@ Claude Code skill for premium scroll-driven websites. Scroll becomes the timelin
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-26** — 首次收錄
+> **2026-08-28** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -598,6 +462,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-28|2026-08-28]] — 再次上榜，1.1k stars
-- [[2026-08-27|2026-08-27]] — 再次上榜，1.0k stars
-- [[2026-08-26|2026-08-26]] — 首次收錄，917 stars
+- [[2026-08-28|2026-08-28]] — 首次收錄，3.4k stars

@@ -7,9 +7,9 @@ language: Astro
 license: MIT
 description: "302 open exercise illustrations and a framework-neutral npm package by Bryl Lim"
 homepage: "https://bryllim.github.io/workout-guide/"
-stars: 884
-stars_per_day: 295
-forks: 140
+stars: 949
+stars_per_day: 237
+forks: 151
 open_issues: 0
 created: 2026-08-24
 pushed_at: 2026-08-26
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-08-30"
+appearances: 2
+next_review: "2026-08-31"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-27"
-star_history: "2026-08-27:884"
+star_history: "2026-08-27:884,2026-08-28:949"
 tags:
   - github
   - "category/other"
@@ -521,4 +521,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-28|2026-08-28]] — 再次上榜，949 stars
 - [[2026-08-27|2026-08-27]] — 首次收錄，884 stars
