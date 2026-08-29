@@ -1,68 +1,67 @@
 ---
-repo: bryllim/workout-guide
-url: https://github.com/bryllim/workout-guide
-owner: bryllim
-owner_type: User
-language: Astro
-license: MIT
-description: "302 open exercise illustrations and a framework-neutral npm package by Bryl Lim"
-homepage: "https://bryllim.github.io/workout-guide/"
-stars: 984
-stars_per_day: 197
-forks: 152
-open_issues: 0
-created: 2026-08-24
-pushed_at: 2026-08-26
-first_seen: 2026-08-27
+repo: Tencent/WeMM-Embedding
+url: https://github.com/Tencent/WeMM-Embedding
+owner: Tencent
+owner_type: Organization
+language: Python
+license: NOASSERTION
+description: "WeMM-Embedding is a family of universal multimodal embedding models by the WeChat Vision Team at Tencent, supporting multimodal understanding and retrieval."
+homepage: ""
+stars: 860
+stars_per_day: 215
+forks: 51
+open_issues: 3
+created: 2026-08-25
+pushed_at: 2026-08-28
+first_seen: 2026-08-29
 week: "2026-W35"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: "v1.0.0"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-27
+last_reviewed: 2026-08-29
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-09-05"
-contributor_count: 2
-engagement: "medium"
-issue_close_rate: -1
-repo_size_kb: 39859
-readme_length: 2230
+appearances: 1
+next_review: "2026-09-01"
+contributor_count: 3
+engagement: "low"
+issue_close_rate: 0
+repo_size_kb: 1502
+readme_length: 6827
 bus_factor: 1
-last_release_days: 3
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-27"
-star_history: "2026-08-27:884,2026-08-28:949,2026-08-29:984"
+ring_history: "assess@2026-08-29"
+star_history: "2026-08-29:860"
 tags:
   - github
   - "category/other"
-  - "lang/astro"
-  - "topic/exercise"
-  - "topic/expo"
-  - "topic/fitness"
-  - "topic/npm_package"
-  - "topic/open_source"
+  - "lang/python"
+  - org
+  - "topic/embedding_models"
+  - "topic/multimodal"
+  - "topic/multimodal_llm"
 aliases:
-  - "workout-guide"
-  - "bryllim/workout-guide"
+  - "WeMM-Embedding"
+  - "Tencent/WeMM-Embedding"
 ---
 
-# workout-guide
+# WeMM-Embedding
 
-**884** stars · **295** stars/天 · 建立 3 天前 · Astro · MIT
+**860** stars · **215** stars/天 · 建立 4 天前 · Python · NOASSERTION
 
 ```dataviewjs
-const me = dv.page("Repos/bryllim--workout-guide");
+const me = dv.page("Repos/Tencent--WeMM-Embedding");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +74,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v1.0.0`
+`ORG`
 
-`exercise` `expo` `fitness` `npm-package` `open-source` `react-native` `workout`
+`embedding-models` `multimodal` `multimodal-llm`
 
 > [!summary] 一句話摘要
-> 302 open exercise illustrations and a framework-neutral npm package by Bryl Lim
+> WeMM-Embedding is a family of universal multimodal embedding models by the WeChat Vision Team at Tencent, supporting multimodal understanding and retrieval.
 
 ## 專案簡介
 
-302 open exercise illustrations and a framework-neutral npm package by Bryl Lim
+WeMM-Embedding is a family of universal multimodal embedding models by the WeChat Vision Team at Tencent, supporting multimodal understanding and retrieval.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/bryllim--workout-guide");
+> const me = dv.page("Repos/Tencent--WeMM-Embedding");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +124,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/bryllim--workout-guide");
+> const me = dv.page("Repos/Tencent--WeMM-Embedding");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,108 +148,228 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 140 |
-| Open Issues | 0 |
-| 最後推送 | 2026-08-26 |
-| 建立日期 | 2026-08-24 |
-| 官方網站 | [Link](https://bryllim.github.io/workout-guide/) |
-| Repo 大小 | 38.9 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/bryllim/workout-guide) |
-| Topics | `exercise` `expo` `fitness` `npm-package` `open-source` `react-native` `workout` |
+| Forks | 51 |
+| Open Issues | 3 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-08-28 |
+| 建立日期 | 2026-08-25 |
+| Repo 大小 | 1.5 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Tencent/WeMM-Embedding) |
+| Topics | `embedding-models` `multimodal` `multimodal-llm` |
 
 > [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@axe-core/playwright` `@eslint/js` `@playwright/test` `@types/node` `eslint` `globals` `potrace` `sharp` `svgo` `typescript` `typescript-eslint` `vitest`
+> `requirements.txt` 中的核心套件：
+> `torch` `transformers` `qwen-vl-utils` `sentence-transformers` `accelerate`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Astro" : 36
->     "JavaScript" : 26
->     "CSS" : 24
->     "TypeScript" : 14
+>     "Python" : 96
+>     "Shell" : 4
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@bryllim](https://github.com/bryllim) | 9 |
-> | [@ikrame-ih](https://github.com/ikrame-ih) | 1 |
-
-**最新版本**：v1.0.0 — Workout Guide 1.0.0 (2026-08-24)
-
-> [!info]- Release Notes
-> The first public release of Workout Guide by Bryl Lim.
-> 
-> - 302 exercises with exactly three transparent 512 × 512 PNG frames each
-> - Typed ESM and CommonJS API with manifest, search, lookups, and CDN URL helpers
-> - Direct static asset imports plus Expo and React Native literal require() support
-> - Searchable Astro gallery, 302 detail pages, and integration guide
-> - MIT-licensed code and documentation; CC BY-SA 4.0 visual assets with complete attribution
-> 
-> Visit the gallery: https://bryllim.github.io/workout-guide/
+> | [@JUNJIE99](https://github.com/JUNJIE99) | 9 |
+> | [@Raykoooo](https://github.com/Raykoooo) | 4 |
+> | [@tencent-adm](https://github.com/tencent-adm) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-24 ~ 2026-08-26）
-> **活躍天數** 3 天 · **最新 commit** Merge pull request #1 from ikrame-ih/fix/select-dropdown-contrast
+> [!abstract] 最近 10 次 commit（2026-08-25 ~ 2026-08-28）
+> **活躍天數** 3 天 · **最新 commit** add README_zh.md
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#3](https://github.com/Tencent/WeMM-Embedding/issues/3) | Verify evals on Papers with Code | 0 | 0 |
+> | [#2](https://github.com/Tencent/WeMM-Embedding/issues/2) | Questions about video retrieval, deployment, and potential c | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Workout Guide
+> WeMM-Embedding: WeChat Multi-Modal Embedding
 > 
-> An open exercise illustration library containing 302 exercises, three consistent frames per exercise, a typed framework-neutral npm package, and a searchable static gallery.
+>   English | 中文
 > 
-> The original pose artwork used by this project comes from [Everkinetic](https://github.com/everkinetic/data) under CC BY-SA 4.0. [Bryl Lim](https://bryllim.com) expanded upon that foundation with additional exercises and animation frames, normalized assets, structured metadata, package APIs, and the documentation gallery.
+>   
+>     
+>   
+>   
+>     
+>   
+>   
+>     
+>   
 > 
-> [Browse the gallery](https://bryllim.github.io/workout-guide/) · [Read the guide](https://bryllim.github.io/workout-guide/guide/) · [Open the package on npm](https://www.npmjs.com/package/@bryllim/workout-guide)
+> WeMM-Embedding is a family of universal multimodal embedding models developed by the WeChat Vision team. It provides unified representations for text, images, videos, visual documents, and interleaved multimodal inputs, achieving state-of-the-art performance across multiple benchmarks covering diverse tasks and domains.
 > 
-> ## Install
+>   
+>     
+>   
 > 
-> ```sh
-> npm install @bryllim/workout-guide
+> ## Model Zoo
+> 
+> | Model | Matryoshka dimensions | Hugging Face |
+> | --- | --- | --- |
+> | WeMM-Embedding-2B | `64, 128, 256, 512, 1024, 2048` | [🤗 Link](https://huggingface.co/tencent/WeMM-Embedding-2B) |
+> | WeMM-Embedding-4B | `64, 128, 256, 512, 1024, 2560` | [🤗 Link](https://huggingface.co/tencent/WeMM-Embedding-4B) |
+> | WeMM-Embedding-9B | `64, 128, 256, 512, 1024, 2048, 4096` | [🤗 Link](https://huggingface.co/tencent/WeMM-Embedding-9B) |
+> 
+> All models support text, images, videos, visual documents, and interleaved multimodal inputs. Embeddings are obtained from the last-layer hidden state at the dedicated `` token position, followed by L2 normalization. Audio input is not currently supported.
+> 
+> ## Installation
+> 
+> ```bash
+> pip install -r requirements.txt
 > ```
 > 
-> ```ts
-> import { getExercise, searchExercises, getAssetUrl } from '@bryllim/workout-guide';
+> ## Transformers
+> We recommend using `transformers==5.2.0` for inference and reproducibility, as newer versions may differ in preprocessing behavior.
 > 
-> const pushUp = getExercise('push-up');
-> const bodyweightChest = searchExercises('chest', { equipment: 'bodyweight' });
-> const firstFrame = getAssetUrl('push-up', 1);
+> ```bash
+> python examples/transformers_inference.py \
+>   --model /path/to/WeMM-Embedding-2B \
+>   --image /path/to/image.jpg \
+>   --video /path/to/video.mp4 \
+>   --dimension 2048
 > ```
 > 
-> Direct asset imports and literal React Native `require()` examples are documented in the [integration guide](https://bryllim.github.io/workout-guide/guide/).
+> The example produces independent text, image, and video embeddings. Omit `--dimension` for the full embedding dimension.
 > 
-> ## Repository
+> ## Sentence Transformers
 > 
-> This npm-workspace monorepo contains:
-> 
-> - `packages/workout-guide`: package API, canonical manifest, and all 906 transparent 512 × 512 SVGs, with PNG sources retained for compatibility.
-> - `apps/site`: Astro landing page, gallery, detail pages, and guide.
-> - `scripts`: deterministic catalog import and validation utilities.
-> 
-> Run the project locally:
-> 
-> ```sh
-> npm install
-> npm run check
-> npm run dev
+> ```bash
+> python examples/sentence_transformers_inference.py \
+>   --model /path/to/WeMM-Embedding-2B \
+>   --image /path/to/image.jpg \
+>   --video /path/to/video.mp4 \
+>   --dimension 2048
 > ```
 > 
-> The normalized catalog and all package assets are checked into the repository. Maintainers can regenerate them from a compatible source export with `npm run catalog:import -- /path/to/source`.
+> `SentenceTransformer` loads the model directly, so a Hugging Face model id such as `tencent/WeMM-Embedding-2B` also works in place of a local path. Text, image, and video inputs go through `SentenceTransformer.encode()`, and MRL is selected with `--dimension`.
 > 
-> ## Licensing
+> ## Serving
 > 
-> Code and documentation are available under the [MIT License](./LICENSE). Visual assets are licensed under [CC BY-SA 4.0](./LICENSE-ASSETS). See [LICENSES.md](./LICENSES.md) and [ATTRIBUTION.md](./ATTRIBUTION.md) for the complete breakdown, including Everkinetic-derived poses.
+> Tested versions: vLLM `0.27.0` and SGLang `0.5.9`.
 > 
-> Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) and the [Code of Conduct](./CODE_OF_CONDUCT.md).
+> vLLM:
+> 
+> ```bash
+> MODEL_PATH=/path/to/WeMM-Embedding-2B
+> vllm serve "$MODEL_PATH" \
+>   --runner pooling \
+>   --chat-template "$MODEL_PATH/embedding_chat_template.jinja"
+> ```
+> 
+> SGLang:
+> 
+> ```bash
+> MODEL_PATH=/path/to/WeMM-Embedding-2B
+> python scripts/patch_sglang_video.py
+> python -m sglang.launch_server \
+>   --model-path "$MODEL_PATH" \
+>   --is-embedding \
+>   --enable-precise-embedding-interpolation
+> ```
+> 
+> Equivalent one-command wrappers are available in `scripts/serve_vllm.sh` and `scripts/serve_sglang.sh`.
+> 
+> ## Matryoshka Embeddings
+> 
+> For a supported dimension `d`, truncate the full embedding and normalize it again:
+> 
+> ```python
+> embedding = torch.nn.functional.normalize(embedding[..., :d], dim=-1)
+> ```
+> 
+> On MMEB-v2, the 2B model at 256 dimensions retains 98.7% of its full-dimensional image and video performance.
+> 
+> ## Evaluation
+> 
+> ### MMEB-v2
+> 
+> Results on 78 datasets from Table 1 of the [technical report](assets/WeMM_Embedding_tech_report.pdf). Image and video tasks use Hit@1, while visual-document tasks use NDCG@5. Higher is better.
+> 
+> | Model | Size | AVG | Image | Video | VisDoc |
+> | --- | ---: | ---: | ---: | ---: | ---: |
+> | VLM2Vec | 2B | 47.8 | 59.7 | 29.0 | 44.0 |
+> | GME | 2B | 55.4 | 51.9 | 33.9 | 76.8 |
+> | VLM2Vec-V2 | 2B | 59.3 | 64.9 | 34.9 | 69.2 |
+> | Qwen3-VL-Embedding | 2B | 73.2 | 75.0 | 61.9 | 79.2 |
+> | DME-Small† | 2B | 74.8 | 75.9 | 65.6 | 79.9 |
+> | **WeMM-Embedding** | **2B** | **77.9** | **79.6** | **70.8** | **80.7** |
+> | **WeMM-Embedding** | **4B** | **79.2** | **80.8** | **72.1** | **82.0** |
+> | VLM2Vec | 8B | 53.2 | 65.5 | 34.0 | 49.1 |
+> | GME | 8B | 59.2 | 56.0 | 38.6 | 79.3 |
+> | Qwen3-VL-Embedding | 8B | 77.8 | 80.1 | 67.1 | 82.4 |
+> | DME-Medium† | 9B | 78.4 | 79.8 | 70.8 | 82.0 |
+> | **WeMM-Embedding** | **9B** | **80.6** | **81.9** | **74.3** | **83.3** |
+> 
+> † Closed-source leaderboard submission without publicly released model weights or a public inference endpoint.
+> 
+> ### MMEB-v3
+> 
+> Results on all 190 tasks from Table 2 of the [technical report](assets/WeMM_Embedding_tech_report.pdf). V3-All includes the 78 MMEB-v2 tasks, 53 text tasks, 47 agent tasks, 11 audio tasks, and MCMR. Unsupported tasks are assigned a score of zero.
+> 
+> | Model | Size | V3-All | Text | Agent | MCMR | Audio |
+> | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+> | VLM2Vec-V2 | 2B | 38.3 | 24.5 | 28.7 | 4.1 | 0.0 |
+> | Omni-Embed-Nemotron | 3B | 43.5 | 39.2 | 36.5 | 26.1 | 36.5 |
+> | E5-Omni | 3B | 44.6 | 26.7 | 36.9 | 31.9 | 30.8 |
+> | Qwen3-VL-Embedding | 2B | 50.9 | 39.2 | 39.3 | 42.0 | 0.0 |
+> | **WeMM-Embedding** | **2B** | **56.0** | **45.3** | **45.1** | **42.5** | **0.0** |
+> | **WeMM-Embedding** | **4B** | **58.2** | **47.9** | **49.0** | **41.9** | **0.0** |
+> | WAVE | 7B | 26.3 | 13.7 | 11.3 | 8.9 | 31.8 |
+> | VLM2Vec | 8B | 32.9 | 22.2 | 19.7 | 0.9 | 0.0 |
+> | LCO-Embedding-Omni | 7B | 40.6 | 32.4 | 27.8 | 20.0 | 43.2 |
+> | GME | 8B | 43.6 | 37.1 | 35.6 | 27.3 | 0.0 |
+> | E5-Omni | 7B | 47.1 | 26.9 | 36.7 | 41.1 | 43.0 |
+> | Tianmu-Emb-Uni | 8B | 53.3 | 43.6 | 39.4 | 38.8 | 38.9 |
+> | Qwen3-VL-Embedding | 8B | 53.5 | 42.5 | 38.4 | 38.0 | 0.0 |
+> | **WeMM-Embedding** | **9B** | **59.5** | **48.8** | **51.0** | **49.3** | **0.0** |
+> 
+> Text results use NDCG@5; agent, MCMR, and audio results use Hit@1.
+> 
+> `mmeb_v3_eval/` contains the MMEB-v3 evaluation code used to produce our reported numbers. It is the official [TIGER-AI-Lab/VLM2Vec](https://github.com/TIGER-AI-Lab/VLM2Vec) pipeline with a minimal diff: multi-node multi-GPU inference (`torchrun --nnodes=N`), a `wemm_embedding` backbone implementing our preprocessing and batched inference, dataset instructions aligned with the released model, and 64-frame video sampling. Data download, single-node and multi-node commands are documented in `mmeb_v3_eval/README.md`.
+> 
+> ```bash
+> cd mmeb_v3_eval
+> DATA_ROOT=/path/to/MMEB-V3 bash scripts/download_data.sh
+> MODEL_PATH=/path/to/WeMM-Embedding-2B DATA_BASEDIR=/path/to/MMEB-V3 \
+> OUTPUT_DIR=exps/wemm_embedding bash scripts/run_eval.sh
+> ```
+> 
+> ## Citation
+> If you find this repository useful, please consider giving a star ⭐ and citation
+> ```bibtex
+> @article{wemm-embedding,
+>       title={WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report}, 
+>       author={Junjie Zhou and Ke Mei and Lei Li and Tianyi Wang and Fengyun Rao and Jing Lyu},
+>       year={2026},
+>       eprint={2608.24053},
+>       archivePrefix={arXiv},
+>       primaryClass={cs.CV},
+>       url={https://arxiv.org/abs/2608.24053}, 
+> }
+> ```
+> 
+> ## License
+> 
+> Unless otherwise noted, Tencent-authored code in this repository is released under the
+> [Apache License 2.0](LICENSE).
+> 
+> Third-party components retain their original licenses and copyright notices. Please review
+> the corresponding source files before use.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/bryllim/workout-guide) · [官方網站](https://bryllim.github.io/workout-guide/)
+[GitHub](https://github.com/Tencent/WeMM-Embedding)
 
 ## 相關收錄
 
@@ -258,7 +377,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "bryllim--workout-guide"
+> WHERE category = "Other" AND file.name != "Tencent--WeMM-Embedding"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -267,7 +386,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Astro" AND file.name != "bryllim--workout-guide" AND status != "archived"
+> WHERE language = "Python" AND file.name != "Tencent--WeMM-Embedding" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -276,18 +395,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "bryllim--workout-guide"
+> WHERE week = "2026-W35" AND file.name != "Tencent--WeMM-Embedding"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/bryllim--workout-guide");
+> const me = dv.page("Repos/Tencent--WeMM-Embedding");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "bryllim--workout-guide" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Tencent--WeMM-Embedding" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -303,7 +422,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "bryllim" AND file.name != "bryllim--workout-guide"
+> WHERE owner = "Tencent" AND file.name != "Tencent--WeMM-Embedding"
 > SORT stars DESC
 > ```
 
@@ -311,7 +430,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/bryllim--workout-guide");
+> const me = dv.page("Repos/Tencent--WeMM-Embedding");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -328,7 +447,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/bryllim--workout-guide");
+> const me = dv.page("Repos/Tencent--WeMM-Embedding");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -361,7 +480,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/bryllim--workout-guide");
+> const me = dv.page("Repos/Tencent--WeMM-Embedding");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -385,7 +504,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/bryllim--workout-guide");
+> const me = dv.page("Repos/Tencent--WeMM-Embedding");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -422,7 +541,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/bryllim--workout-guide");
+> const me = dv.page("Repos/Tencent--WeMM-Embedding");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -505,7 +624,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-27** — 首次收錄
+> **2026-08-29** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -521,6 +640,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-29|2026-08-29]] — 再次上榜，984 stars
-- [[2026-08-28|2026-08-28]] — 再次上榜，949 stars
-- [[2026-08-27|2026-08-27]] — 首次收錄，884 stars
+- [[2026-08-29|2026-08-29]] — 首次收錄，860 stars

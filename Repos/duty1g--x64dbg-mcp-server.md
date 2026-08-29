@@ -7,9 +7,9 @@ language: Zig
 license: MIT
 description: "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg programmatically: set breakpoints, step through code, read memory, dump registers, and more.  Built with Zig — zero dependencies, single-binary output, cros"
 homepage: ""
-stars: 1626
-stars_per_day: 325
-forks: 165
+stars: 1679
+stars_per_day: 280
+forks: 170
 open_issues: 0
 created: 2026-08-22
 pushed_at: 2026-08-27
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-08-31"
+appearances: 6
+next_review: "2026-09-01"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-24"
-star_history: "2026-08-24:921,2026-08-25:1242,2026-08-26:1387,2026-08-27:1488,2026-08-28:1626"
+star_history: "2026-08-24:921,2026-08-25:1242,2026-08-26:1387,2026-08-27:1488,2026-08-28:1626,2026-08-29:1679"
 tags:
   - github
   - "category/other"
@@ -678,6 +678,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-08-29|2026-08-29]] — 再次上榜，1.7k stars
 - [[2026-08-28|2026-08-28]] — 再次上榜，1.6k stars
 - [[2026-08-27|2026-08-27]] — 再次上榜，1.5k stars
 - [[2026-08-26|2026-08-26]] — 再次上榜，1.4k stars
