@@ -1,63 +1,68 @@
 ---
-repo: b-nnett/grok-bot-0.18-reconstructed
-url: https://github.com/b-nnett/grok-bot-0.18-reconstructed
-owner: b-nnett
+repo: themartiano/try-omarchy
+url: https://github.com/themartiano/try-omarchy
+owner: themartiano
 owner_type: User
-language: TypeScript
-license: N/A
-description: "Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for macOS"
+language: Shell
+license: MIT
+description: "Run Omarchy on MacOS without any setup."
 homepage: ""
-stars: 3437
-stars_per_day: 573
-forks: 3381
-open_issues: 14
+stars: 901
+stars_per_day: 150
+forks: 39
+open_issues: 11
 created: 2026-08-23
-pushed_at: 2026-08-23
-first_seen: 2026-08-25
-week: "2026-W35"
+pushed_at: 2026-08-29
+first_seen: 2026-08-30
+week: "2026-W36"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.2.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-25
+last_reviewed: 2026-08-30
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
-next_review: "2026-09-02"
-contributor_count: 1
-engagement: "high"
-issue_close_rate: 0
-repo_size_kb: 5559
-readme_length: 9293
+appearances: 1
+next_review: "2026-09-06"
+contributor_count: 5
+engagement: "low"
+issue_close_rate: 45
+repo_size_kb: 3334
+readme_length: 8847
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 3
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-25"
-star_history: "2026-08-25:1839,2026-08-26:2570,2026-08-27:3284,2026-08-28:3394,2026-08-29:3414,2026-08-30:3437"
+ring_history: "assess@2026-08-30"
+star_history: "2026-08-30:901"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/shell"
+  - "topic/aarch64"
+  - "topic/apple_silicon"
+  - "topic/archlinux"
+  - "topic/arm"
+  - "topic/arm64"
 aliases:
-  - "grok-bot-0.18-reconstructed"
-  - "b-nnett/grok-bot-0.18-reconstructed"
+  - "try-omarchy"
+  - "themartiano/try-omarchy"
 ---
 
-# grok-bot-0.18-reconstructed
+# try-omarchy
 
-**1.8k** stars · **1.8k** stars/天 · 建立 1 天前 · TypeScript · 未標註授權
+**901** stars · **150** stars/天 · 建立 6 天前 · Shell · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+const me = dv.page("Repos/themartiano--try-omarchy");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v0.2.0`
+
+`aarch64` `apple-silicon` `archlinux` `arm` `arm64` `community` `linux` `macos` `omarchy` `qemu` `virtualization`
 
 > [!summary] 一句話摘要
-> Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for macOS
+> Run Omarchy on MacOS without any setup.
 
 ## 專案簡介
 
-Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for macOS
+Run Omarchy on MacOS without any setup.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/themartiano--try-omarchy");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/themartiano--try-omarchy");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,245 +149,275 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 2.1k |
+| Forks | 39 |
 | Open Issues | 11 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-23 |
+| Issue 解決率 | 45% (9 closed) |
+| 最後推送 | 2026-08-29 |
 | 建立日期 | 2026-08-23 |
-| Repo 大小 | 5.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/b-nnett/grok-bot-0.18-reconstructed) |
+| Repo 大小 | 3.3 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/themartiano/try-omarchy) |
+| Topics | `aarch64` `apple-silicon` `archlinux` `arm` `arm64` `community` `linux` `macos` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 98
->     "JavaScript" : 2
+>     "Shell" : 40
+>     "Swift" : 37
+>     "Python" : 22
+>     "Makefile" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@b-nnett](https://github.com/b-nnett) | 2 |
+> | [@themartiano](https://github.com/themartiano) | 236 |
+> | [@pantulis](https://github.com/pantulis) | 2 |
+> | [@rlimberger](https://github.com/rlimberger) | 2 |
+> | [@ijt](https://github.com/ijt) | 1 |
+> | [@pfelrodrigues](https://github.com/pfelrodrigues) | 1 |
+
+**最新版本**：v0.2.0 (2026-08-27)
+
+> [!info]- Release Notes
+> This release brings a smoother experience, with the most requested features and fixes such as clipboard and folder sharing, Hyprland default config, ASCII animations and package installation working.
+> 
+> # Features
+> * Omarchy updated to `4.0.1` (#19)
+> * Shared clipboard, bidirectional, duplicate safe (#8)
+> * Host-guest shared directory (#9, #21)
+> 
+> # Fixes
+> * Fix AUR packages missing and installs failing (#28, #23)
+> * Fix ASCII animations and screensaver (#31)
+> * Fix missing window gaps and "floating" windows (#1)
+> * Start menu UI alignment and text (#15)
+> 
+> ## Dev
+> * Updated pinned package versions (#6, #27)
+> * GitHub CI workflow for PRs (#14)
+> * `make` cleanup commands (#16)
+> * Smarter builds, reuse previous outputs where possible (#17)
+> 
+> ## New Contributors 🎉
+> * @pfelrodrigues made their first contribution in https://github.com/themartiano/try-omarchy/pull/3
+> * @ijt made their first contribution in https://github.com/themartiano/try-omarchy/pull/6
+> * @rlimberger made their first contribution in https://github.com/themartiano/try-omarchy/pull/8
+> * @sava-vidakovic made their first contribution in https://github.com/themartiano/try-omarchy/pull/27
+> 
+> ___
+> 
+> The new automatic updater is not yet working reliably enough, so `v0.1.0` disks won't be automatically migrated to `v0.2.0`.
+> If you have files that need to be ported, manually export them and reimport on `v0.2.0`.
+> 
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-22 ~ 2026-08-23）
-> **活躍天數** 2 天 · **最新 commit** Document project and preserve original installers
+> [!abstract] 最近 10 次 commit（2026-08-28 ~ 2026-08-29）
+> **活躍天數** 2 天 · **最新 commit** Fix rounded border coverage under VirGL (#55)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#3](https://github.com/b-nnett/grok-bot-0.18-reconstructed/issues/3) | Publish installable builds via GitHub Releases and GitHub Ac | 1 | 0 |
-> | [#11](https://github.com/b-nnett/grok-bot-0.18-reconstructed/issues/11) | Routed providers (OpenRouter/Astree/custom) fail: secrets ne | 0 | 0 |
-> | [#10](https://github.com/b-nnett/grok-bot-0.18-reconstructed/issues/10) | 🗺️ Master Reconstruction Plan — All Phases & Context | 0 | 0 |
-> | [#9](https://github.com/b-nnett/grok-bot-0.18-reconstructed/issues/9) | Routed provider path sends tools with no executors | 0 | 0 |
+> | [#18](https://github.com/themartiano/try-omarchy/issues/18) | Some super space “commsndd “ don't work? | 1 | 12 |
+> | [#7](https://github.com/themartiano/try-omarchy/issues/7) | [Feature Request] Enable Nested Virtualization on M3+ Macs | 1 | 1 |
+> | [#57](https://github.com/themartiano/try-omarchy/issues/57) | "target not found" when installing any package | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Grok Bot 0.18 — reconstructed and extended
+> # Try Omarchy
 > 
-> This repository is an unofficial, source-oriented reconstruction of the
-> publicly shipped Grok Bot 0.18.0 macOS app.
+> Run the upstream [Omarchy](https://github.com/basecamp/omarchy) desktop as a native, hardware-accelerated app on an Apple Silicon Mac.
 > 
-> The project began as an attempt to understand how the desktop app was put
-> together. It now contains readable TypeScript implementations of its Electron,
-> host, coordinator, local-execution, protocol, and renderer boundaries, plus a
-> deterministic toolchain for turning those sources back into a working macOS
-> application.
+> Try Omarchy packages a project-built ARM64 Arch Linux image configured with Omarchy Quattro, a QEMU runtime using Apple Hypervisor Framework, and a small Swift/AppKit launcher into one macOS app. The image is built from pinned Arch Linux ARM packages and a pinned revision of the upstream Omarchy source. Temporary fixes carried ahead of the next upstream release are enumerated with strict hashes in the guest build spec and artifact provenance.
 > 
-> It also adds a few practical experiments:
+> Try Omarchy is not official or affiliated with Omarchy.
 > 
-> - an inference router for Cursor, Claude Code, Codex, and OpenRouter;
-> - Grok Bot plugin/MCP tools across the routed providers;
-> - local usage tracking for routed inference;
-> - an optional local Docker sandbox in place of the remote box; and
-> - a reconstructed settings surface integrated into the polished shipped UI.
+> ## Highlights
 > 
-> This is a hacking and research project, not Anysphere's original monorepo and
-> not an official Grok Bot release. Names and module boundaries inferred from a
-> compiled application may differ from the original source.
+> - Hardware-accelerated ARM64 virtualization and VirGL graphics
+> - Resizable native window with automatic guest resolution and HiDPI scale updates
+> - Mac audio input/output selection inside Omarchy, with live routing and system-default fallback
+> - Two-way clipboard sharing for text and PNG images between macOS and Omarchy
+> - One optional shared Mac folder, available inside Omarchy under the same name (`~/Work` stays `~/Work`)
+> - Loopback-only TCP and UDP port forwarding from the Mac into Omarchy
 > 
-> ## What is in the repository?
-> 
-> The checked-in tree contains the reviewed reconstruction, tests, manifests,
-> build scripts, and Git LFS preservation copies of the original macOS arm64 and
-> Windows x64 installers. It deliberately does **not** commit the extracted
-> upstream application, build output, local credentials, or the large forensic
-> recovery workspace.
-> 
-> The public Grok Bot 0.18.0 application is instead treated as a pinned build
-> input. During bootstrap, the toolchain downloads it, verifies its SHA-256
-> identity, and extracts the pieces required to assemble the reconstruction.
-> 
-> The resulting app is a hybrid by design:
-> 
-> - application runtimes are compiled from the readable sources under `source/`;
-> - the polished shipped renderer remains the UI baseline;
-> - a narrow deterministic transform adds the reconstructed Router settings UI;
-> - original and patched renderer chunk hashes are recorded and verified; and
-> - the finished app uses a separate bundle identifier and an ad-hoc signature.
-> 
-> The upstream app installed on the machine is never overwritten.
-> 
-> ### Why retain the shipped renderer?
-> 
-> The distributed application did not include the original frontend source or
-> source maps. It contained optimized, minified production JavaScript and CSS
-> chunks: enough to inspect behavior and recover contracts, but not the authored
-> React components, names, comments, file structure, or design-system source.
-> 
-> Recreating the complete frontend with the same polish and behavior would have
-> been a separate, much larger reverse-engineering project. It was not a realistic
-> goal for a weekend build. The practical choice was therefore to reconstruct the
-> runtime and control-plane code, retain the checksum-pinned shipped renderer,
-> and make the smallest auditable UI patch needed for the new Router settings.
-> 
-> `frontend/` is a readable partial reconstruction and design workspace. It is
-> useful for understanding UI contracts and experimenting with clean components,
-> but it should not be mistaken for Anysphere's missing original frontend source
-> or a pixel-perfect replacement for the packaged renderer.
-> 
-> ## Preserved original installers
-> 
-> Research copies of the exact 0.18.0 installers live under
-> `research-archives/original/0.18.0/` and are stored with Git LFS:
-> 
-> | Platform | File | SHA-256 |
-> | --- | --- | --- |
-> | macOS arm64 | `macos-arm64/Grok_Bot_0.18.0.dmg` | `a253ccd8aab01e083f9812a0264354c5034d8ba7f0610bbb557e82ae77d203eb` |
-> | Windows x64 | `windows-x64/Grok_Bot_0.18.0_Setup.exe` | `464079a15ef5fa8b61ccea8fffcc78f63cfcf6df65fb0ad5e725d8b95f7e437e` |
-> 
-> See [research-archives/README.md](research-archives/README.md) for source URLs,
-> sizes, verification commands, and the machine-readable artifact manifest.
-> 
-> ## Current features
-> 
-> ### Inference Router
-> 
-> Open **Settings → Router** to choose the backend used for new turns:
-> 
-> | Provider | Authentication | Tool support |
-> | --- | --- | --- |
-> | Cursor | Existing Grok Bot/Cursor session | Native Grok Bot tools and plugins |
-> | Claude Code | Existing Claude Code login | Routed Grok Bot MCP tools |
-> | Codex | Existing local ChatGPT/Codex login | Direct Responses transport with Grok Bot tools |
-> | OpenRouter | API key saved through the desktop secrets bridge | Grok Bot tool-execution loop |
-> 
-> Cursor is the default. Claude Code and Codex do not require separate API keys
-> when their local clients are already authenticated. The application preserves
-> streaming responses, thinking state, reactions, rich plugin mentions, and MCP
-> tool execution across routed conversations.
-> 
-> **Usage & Billing** shows the locally recorded request and token totals for
-> providers that return usage data. These figures are activity records, not an
-> authoritative provider invoice.
-> 
-> ### Local Docker sandbox
-> 
-> The Router page also has a **Use local Docker VM** toggle. When enabled, Grok
-> Bot runs its box host and execution daemon in an owned local container instead
-> of connecting to the remote sandbox.
-> 
-> The container:
-> 
-> - is bound only to loopback ports;
-> - mounts content-addressed host and daemon artifacts read-only;
-> - reuses the user's existing provider authentication where needed;
-> - is validated before the coordinator connects; and
-> - is stopped or replaced through the same settings lifecycle.
-> 
-> Docker Desktop, or another compatible local Docker daemon, must be running.
-> Remote mode remains the default.
-> 
-> ## Requirements
-> 
-> - macOS on Apple Silicon
-> - Node.js 26.5.x
-> - Xcode Command Line Tools
-> - Git LFS
-> - Docker Desktop (optional, only for the local sandbox)
-> - local Claude Code or Codex authentication for those router choices
+> > **Current limitation:** Video decoding is CPU-only, so playback can be slow, especially at high resolutions. An improved video path is in development.
 > 
 > ## Quick start
 > 
+> 1. Open [Releases](https://github.com/themartiano/try-omarchy/releases) and download the latest signed and notarized `.dmg`.
+> 2. Open the DMG and drag **Try Omarchy** to **Applications**.
+> 3. Launch **Try Omarchy** from Applications.
+> 
+> Every launch begins at the start menu. **Immersive** is on by default and its caption explains how to leave Full Screen. Turn it off to keep Omarchy full screen while letting the Mac menu bar and Dock appear at the screen edges. Accessibility enables Mac Command-to-guest-Super shortcuts; microphone access is optional. The first launch takes longer while the app prepares Linux and starts Omarchy's account provisioning.
+> 
+> Restarting from inside Omarchy reboots the guest in the same Try Omarchy app.
+> Shutting down Omarchy closes the app and leaves it closed.
+> 
+> ## Clipboard sharing
+> 
+> Copy and paste work in both directions as soon as you sign in to Omarchy: text
+> and PNG images copied on the Mac appear in the Omarchy clipboard, and content
+> copied in Omarchy lands on the Mac pasteboard. Nothing is transferred until
+> something is copied.
+> 
+> ## Sharing a folder with the Mac
+> 
+> Folder sharing is off until you pick a folder. Use **Choose…** next to
+> **Shared folder** on the start menu to select one Mac folder; Omarchy links it
+> into its home under the same name (`~/Work` on the Mac becomes `~/Work` in
+> Omarchy) with full read and write access, so choose a folder you intend Linux
+> software to modify. The whole home folder, `~/Library`, and system directories
+> cannot be shared. **Turn Off** keeps the choice but stops exporting it on the
+> next launch; Omarchy then removes the link and gives back any standard folder
+> such as `~/Documents` that the link had taken over. The share belongs to the
+> first Omarchy account created during
+> provisioning. Additional guest accounts can reach the same share, with each
+> entry's normal Unix permission bits deciding whether they can modify it.
+> 
+> ## Forwarding ports to Omarchy
+> 
+> Use **Configure…** next to **Port forwarding** on the start menu to map a Mac
+> localhost port to a service port in Omarchy. Each mapping can use TCP or UDP;
+> the same Mac port may be used once for each protocol. Forwarded ports bind only
+> to `127.0.0.1`, so other devices on the network cannot connect to them. The
+> service inside Omarchy must listen on `0.0.0.0` or the guest network interface,
+> not only on the guest's own localhost.
+> 
+> The reverse direction does not need a mapping. From Omarchy, connect to
+> `10.0.2.2:` to reach a service running on the Mac.
+> 
+> ## Requirements
+> 
+> - Apple Silicon Mac (`arm64`)
+> - macOS 15 or newer
+> - At least 8 GB free initially
+> 
+> ## Data and updates
+> 
+> Normal launches keep one persistent VM under `~/Library/Application Support/Try Omarchy/VM/v1`. Removing the app does not remove this data. The start menu can reset it, and requires confirmation before replacing a disk that is incompatible with a new factory guest build.
+> 
+> ## Development requirements
+> 
+> - Xcode command-line tools with Swift 6
+> - Python 3
+> - `pkg-config` (Homebrew is the simplest way to install it)
+> - A running Docker-compatible engine that supports privileged `linux/arm64`
+>   containers
+> - Roughly 20 GB free for guest, runtime, caches, and assembled output
+> 
+> Install the one Homebrew build tool with:
+> 
 > ```sh
-> git clone 
-> cd grok-bot-0.18-reconstructed
-> git lfs install
-> git lfs pull
-> npm ci
-> npm run bootstrap
-> npm run check
-> npm run package
-> open "dist/Grok Bot 0.18 Reconstructed.app"
+> brew install pkg-config
 > ```
 > 
-> `npm run bootstrap` first uses the Git LFS preservation copy of the pinned
-> 0.18.0 DMG. If that archive is absent, it falls back to the original public URL;
-> `GROK_BOT_018_APP` can also point to an existing application copy. Bootstrap
-> verifies both the DMG and `app.asar`, caches the matching Electron runtime, and
-> hydrates the ignored `src/app/dist` build input.
+> `make doctor` performs the basic preflight. `make runtime` downloads a
+> checksum-pinned `arm64_sequoia` dependency set, builds QEMU for macOS 15.0,
+> and rejects any runtime image that raises that minimum or strongly imports an
+> API unavailable on the declared platform. Installed Homebrew library versions
+> are never copied into the app.
 > 
-> `npm run package` compiles the reconstructed runtimes, applies the narrow
-> renderer/settings transform, creates the app bundle, assigns the reconstructed
-> bundle identity, ad-hoc signs it, and verifies the result. Output is written to:
+> ## Build and run
+> 
+> For a first full build and launch:
+> 
+> ```sh
+> make build run
+> ```
+> 
+> The first build downloads pinned sources, assembles a multi-gigabyte guest, and
+> compiles QEMU, so it can take a while. `make build` includes the basic toolchain
+> check. Later builds hash the effective inputs and validate the existing outputs,
+> then rebuild only the guest, runtime, or app components that changed. To bypass
+> that cache deliberately, run `make build FORCE=1` (or add `FORCE=1` to an
+> individual component command).
+> 
+> Artifacts created before their `.build/state/` record exists are rebuilt once;
+> the cache never adopts an output whose successful inputs it did not observe.
+> 
+> Launching also ensures that the guest, runtime, and native app are current, so
+> the normal follow-up command is:
+> 
+> ```sh
+> make run
+> ```
+> 
+> Run the complete contract and native test suite with:
+> 
+> ```sh
+> make test
+> ```
+> 
+> Run `make help` for component builds, persistent-storage reset, ephemeral mode, and cleanup commands.
+> 
+> To reclaim development build space, run:
+> 
+> ```sh
+> make clean
+> ```
+> 
+> This removes all repository build output, the native and guest build caches,
+> and Try Omarchy's project-scoped Docker builder image and work volumes. It does
+> not touch a developer's persistent VM.
+> 
+> For a complete local reset, first quit Try Omarchy and then run:
+> 
+> ```sh
+> make clean-all
+> ```
+> 
+> The deep cleanup also permanently deletes the current user's Try Omarchy VM
+> disks and app state, plus stale Try Omarchy build and test directories in the
+> macOS temporary directories. It only selects Docker resources and temporary
+> paths owned by this project; it does not run a global Docker or system prune.
+> To prevent accidental data loss, the command requires an interactive terminal
+> and only proceeds after the developer types `clean-all` at the confirmation
+> prompt.
+> 
+> ## Packaging and releases
+> 
+> All generated output has one predictable home:
 > 
 > ```text
-> dist/Grok Bot 0.18 Reconstructed.app
+> dist/
+> ├── Try Omarchy.app
+> ├── TryOmarchy.dmg        # after make package or make release
+> └── guest/                # verified guest build artifacts
 > ```
 > 
-> Reconstructed packages disable the upstream updater at the packaging boundary
-> and default upstream Sentry and telemetry emission off. Explicitly supplied
-> environment configuration is still respected.
+> Both DMG targets create distributable artifacts:
 > 
-> ## Architecture
+> - `make package` rebuilds the app, Developer ID-signs the app and DMG,
+>   notarizes the DMG with Apple, and staples the notarization tickets. It uses
+>   `PACKAGE_SIGN_IDENTITY` and `PACKAGE_NOTARY_PROFILE`, which default to the
+>   configured release credentials, and fails instead of producing an
+>   unnotarized fallback.
+> - `make release` performs the same signing and notarization workflow with the
+>   release-specific credential variables.
+> 
+> Maintainers should follow [`docs/releasing.md`](docs/releasing.md) for the full build, test, signing, license, corresponding-source, and verification checklist.
+> 
+> ## Repository layout
 > 
 > ```text
-> polished shipped renderer
->           │
->           │ desktop preload / RPC
->           ▼
->      Electron main
->           │
->           ├── settings, secrets, auth and plugin lifecycle
->           ├── remote box connector
->           └── owned local Docker connector
->                        │
->                        ▼
->               coordinator + host
->                        │
->               inference router
->            ┌───────────┼───────────┐
->         Cursor      Claude       Codex / OpenRouter
->                        │
->                  Grok Bot MCP tools
-> ```
-> 
-> The main source areas are:
-> 
-> - `source/electron-main/` — desktop lifecycle, settings, auth, box connectors,
->   coordinator ownership, and RPC handlers;
-> - `source/electron-preload/` — the narrow trusted bridge exposed to the UI;
-> - `source/host/` — inference, tools, MCP, settings, and turn execution;
-> - `source/node-agent-coordinator/` — transcript routing, streaming activity,
->   reactions, and the routed MCP bridge;
-> - `source/shared/` — shared contracts, settings, protocol, and provider helpers;
-> - `frontend/` — readable React/TypeScript renderer reconstruction and design
->   workspace;
-> - `scripts/` — bootstrap, compilation, renderer patching, packaging, signing,
->   and verification; and
-> - `tests/` — publication and router regressions.
-> 
-> See [docs/ARCHITECTURE.md](docs/ARCHIT
+> .
+> ├── Makefile                 public build interface
+> ├── macos/                   Swift launcher and QEMU/HVF runtime builder
+> ├── guest/                   reproducible ARM64 factory-image builder
+> ├── docs/                    architecture and release documentation
+> ├── dist/                    generated output (ignored)
+> ├── CONTRIBUTING.md
+> ├── 
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/b-nnett/grok-bot-0.18-reconstructed)
+[GitHub](https://github.com/themartiano/try-omarchy)
 
 ## 相關收錄
 
@@ -388,7 +425,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "b-nnett--grok-bot-0.18-reconstructed"
+> WHERE category = "Other" AND file.name != "themartiano--try-omarchy"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -397,7 +434,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "b-nnett--grok-bot-0.18-reconstructed" AND status != "archived"
+> WHERE language = "Shell" AND file.name != "themartiano--try-omarchy" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -406,18 +443,18 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "b-nnett--grok-bot-0.18-reconstructed"
+> WHERE week = "2026-W36" AND file.name != "themartiano--try-omarchy"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/themartiano--try-omarchy");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "b-nnett--grok-bot-0.18-reconstructed" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "themartiano--try-omarchy" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -433,7 +470,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "b-nnett" AND file.name != "b-nnett--grok-bot-0.18-reconstructed"
+> WHERE owner = "themartiano" AND file.name != "themartiano--try-omarchy"
 > SORT stars DESC
 > ```
 
@@ -441,7 +478,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/themartiano--try-omarchy");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -458,7 +495,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/themartiano--try-omarchy");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -491,7 +528,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/themartiano--try-omarchy");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -515,7 +552,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/themartiano--try-omarchy");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -552,7 +589,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/themartiano--try-omarchy");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -635,7 +672,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-25** — 首次收錄
+> **2026-08-30** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -651,9 +688,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-30|2026-08-30]] — 再次上榜，3.4k stars
-- [[2026-08-29|2026-08-29]] — 再次上榜，3.4k stars
-- [[2026-08-28|2026-08-28]] — 再次上榜，3.4k stars
-- [[2026-08-27|2026-08-27]] — 再次上榜，3.3k stars
-- [[2026-08-26|2026-08-26]] — 再次上榜，2.6k stars
-- [[2026-08-25|2026-08-25]] — 首次收錄，1.8k stars
+- [[2026-08-30|2026-08-30]] — 首次收錄，901 stars

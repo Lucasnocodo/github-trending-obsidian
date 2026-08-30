@@ -1,20 +1,20 @@
 ---
-repo: b-nnett/grok-bot-0.18-reconstructed
-url: https://github.com/b-nnett/grok-bot-0.18-reconstructed
-owner: b-nnett
+repo: XiaoDuoYa/codex-with-chatgpt
+url: https://github.com/XiaoDuoYa/codex-with-chatgpt
+owner: XiaoDuoYa
 owner_type: User
 language: TypeScript
-license: N/A
-description: "Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for macOS"
+license: MIT
+description: "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness."
 homepage: ""
-stars: 3437
-stars_per_day: 573
-forks: 3381
-open_issues: 14
-created: 2026-08-23
-pushed_at: 2026-08-23
-first_seen: 2026-08-25
-week: "2026-W35"
+stars: 1007
+stars_per_day: 1007
+forks: 117
+open_issues: 2
+created: 2026-08-28
+pushed_at: 2026-08-30
+first_seen: 2026-08-30
+week: "2026-W36"
 month: "2026-08"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-25
+last_reviewed: 2026-08-30
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
+appearances: 1
 next_review: "2026-09-02"
-contributor_count: 1
-engagement: "high"
-issue_close_rate: 0
-repo_size_kb: 5559
-readme_length: 9293
-bus_factor: 1
+contributor_count: 5
+engagement: "medium"
+issue_close_rate: 85
+repo_size_kb: 134
+readme_length: 6980
+bus_factor: 3
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-25"
-star_history: "2026-08-25:1839,2026-08-26:2570,2026-08-27:3284,2026-08-28:3394,2026-08-29:3414,2026-08-30:3437"
+ring_history: "assess@2026-08-30"
+star_history: "2026-08-30:1007"
 tags:
   - github
   - "category/other"
   - "lang/typescript"
+  - "topic/ai_agents"
+  - "topic/chatgpt"
+  - "topic/codex"
+  - "topic/mcp"
+  - "topic/model_context_protocol"
 aliases:
-  - "grok-bot-0.18-reconstructed"
-  - "b-nnett/grok-bot-0.18-reconstructed"
+  - "codex-with-chatgpt"
+  - "XiaoDuoYa/codex-with-chatgpt"
 ---
 
-# grok-bot-0.18-reconstructed
+# codex-with-chatgpt
 
-**1.8k** stars · **1.8k** stars/天 · 建立 1 天前 · TypeScript · 未標註授權
+**1.0k** stars · **1.0k** stars/天 · 建立 1 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +75,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`ai-agents` `chatgpt` `codex` `mcp` `model-context-protocol` `oauth`
 
 > [!summary] 一句話摘要
-> Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for macOS
+> ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.
 
 ## 專案簡介
 
-Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for macOS
+ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +123,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,245 +147,240 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 2.1k |
-| Open Issues | 11 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-08-23 |
-| 建立日期 | 2026-08-23 |
-| Repo 大小 | 5.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/b-nnett/grok-bot-0.18-reconstructed) |
+| Forks | 117 |
+| Open Issues | 2 |
+| Issue 解決率 | 85% (11 closed) |
+| 最後推送 | 2026-08-30 |
+| 建立日期 | 2026-08-28 |
+| Repo 大小 | 134 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/XiaoDuoYa/codex-with-chatgpt) |
+| Topics | `ai-agents` `chatgpt` `codex` `mcp` `model-context-protocol` `oauth` |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@modelcontextprotocol/sdk` `commander` `express` `ignore` `zod` `@types/express` `@types/node` `tsx` `typescript` `vitest`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 98
->     "JavaScript" : 2
+>     "TypeScript" : 97
+>     "JavaScript" : 3
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@b-nnett](https://github.com/b-nnett) | 2 |
+> | [@EdisonJwa](https://github.com/EdisonJwa) | 1 |
+> | [@rtxmythically](https://github.com/rtxmythically) | 1 |
+> | [@vetrovk](https://github.com/vetrovk) | 1 |
+> | [@catball912](https://github.com/catball912) | 1 |
+> | [@XiaoDuoYa](https://github.com/XiaoDuoYa) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-22 ~ 2026-08-23）
-> **活躍天數** 2 天 · **最新 commit** Document project and preserve original installers
+> [!abstract] 最近 10 次 commit（2026-08-29 ~ 2026-08-30）
+> **活躍天數** 2 天 · **最新 commit** Offer an optional Cloudflare named hostname so ChatGPT connectors survive restarts.
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#3](https://github.com/b-nnett/grok-bot-0.18-reconstructed/issues/3) | Publish installable builds via GitHub Releases and GitHub Ac | 1 | 0 |
-> | [#11](https://github.com/b-nnett/grok-bot-0.18-reconstructed/issues/11) | Routed providers (OpenRouter/Astree/custom) fail: secrets ne | 0 | 0 |
-> | [#10](https://github.com/b-nnett/grok-bot-0.18-reconstructed/issues/10) | 🗺️ Master Reconstruction Plan — All Phases & Context | 0 | 0 |
-> | [#9](https://github.com/b-nnett/grok-bot-0.18-reconstructed/issues/9) | Routed provider path sends tools with no executors | 0 | 0 |
+> | [#5](https://github.com/XiaoDuoYa/codex-with-chatgpt/issues/5) | 在已有多轮对话sessions的项目无法激活配对码 `跟进中` | 1 | 2 |
+> | [#22](https://github.com/XiaoDuoYa/codex-with-chatgpt/issues/22) | Optional fixed Cloudflare domain (keep Quick Tunnel as defau `跟进中` | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Grok Bot 0.18 — reconstructed and extended
+> # Codex with ChatGPT
 > 
-> This repository is an unofficial, source-oriented reconstruction of the
-> publicly shipped Grok Bot 0.18.0 macOS app.
+> > ChatGPT thinks. Codex works.
+> > ChatGPT 负责思考，Codex 负责干活。
 > 
-> The project began as an attempt to understand how the desktop app was put
-> together. It now contains readable TypeScript implementations of its Electron,
-> host, coordinator, local-execution, protocol, and renderer boundaries, plus a
-> deterministic toolchain for turning those sources back into a working macOS
-> application.
+> ## The problem · 解决什么问题
 > 
-> It also adds a few practical experiments:
+> **中文** — ChatGPT 付费订阅的网页版额度大量闲置，Codex 却在消耗紧张的
+> API 额度做规划和 Review。本项目把"思考"交给你已付费的网页版 ChatGPT，
+> Codex 只负责执行。不用 API Key、不搞逆向代理——官方网页 + 只读 MCP 桥接。
 > 
-> - an inference router for Cursor, Claude Code, Codex, and OpenRouter;
-> - Grok Bot plugin/MCP tools across the routed providers;
-> - local usage tracking for routed inference;
-> - an optional local Docker sandbox in place of the remote box; and
-> - a reconstructed settings surface integrated into the polished shipped UI.
+> **EN** — ChatGPT Plus/Pro web quota sits idle while your coding agent burns
+> scarce API/Codex tokens on planning and review. This project moves the
+> thinking to the subscription you already pay for; Codex only executes.
+> No API keys, no reverse proxy — official web UI plus a read-only MCP bridge.
 > 
-> This is a hacking and research project, not Anysphere's original monorepo and
-> not an official Grok Bot release. Names and module boundaries inferred from a
-> compiled application may differ from the original source.
+> ## What it is · 这是什么
 > 
-> ## What is in the repository?
+> **中文** — 把 ChatGPT 网页版变成 Codex 编码会话的"规划与审查大脑"，执行权
+> 完全保留在 Codex 手里。你的仓库永远不会被上传：ChatGPT 通过一条安全的、
+> OAuth 保护的**只读** MCP 连接，按需读取当前工作区里它真正需要的那几行代码。
 > 
-> The checked-in tree contains the reviewed reconstruction, tests, manifests,
-> build scripts, and Git LFS preservation copies of the original macOS arm64 and
-> Windows x64 installers. It deliberately does **not** commit the extracted
-> upstream application, build output, local credentials, or the large forensic
-> recovery workspace.
+> **EN** — Use the ChatGPT web app as the planning and review brain for your
+> Codex coding sessions, while Codex keeps full ownership of execution. Your
+> repository is never uploaded: ChatGPT reads exactly the lines it needs through
+> a secure, OAuth-protected, **read-only** MCP connection to your current
+> workspace.
 > 
-> The public Grok Bot 0.18.0 application is instead treated as a pinned build
-> input. During bootstrap, the toolchain downloads it, verifies its SHA-256
-> identity, and extracts the pieces required to assemble the reconstruction.
+> Detailed docs below are in English · 详细中文文档见 **[README.zh-CN.md](README.zh-CN.md)**
 > 
-> The resulting app is a hybrid by design:
+> ## One-paste install · 一段话安装
 > 
-> - application runtimes are compiled from the readable sources under `source/`;
-> - the polished shipped renderer remains the UI baseline;
-> - a narrow deterministic transform adds the reconstructed Router settings UI;
-> - original and patched renderer chunk hashes are recorded and verified; and
-> - the finished app uses a separate bundle identifier and an ad-hoc signature.
-> 
-> The upstream app installed on the machine is never overwritten.
-> 
-> ### Why retain the shipped renderer?
-> 
-> The distributed application did not include the original frontend source or
-> source maps. It contained optimized, minified production JavaScript and CSS
-> chunks: enough to inspect behavior and recover contracts, but not the authored
-> React components, names, comments, file structure, or design-system source.
-> 
-> Recreating the complete frontend with the same polish and behavior would have
-> been a separate, much larger reverse-engineering project. It was not a realistic
-> goal for a weekend build. The practical choice was therefore to reconstruct the
-> runtime and control-plane code, retain the checksum-pinned shipped renderer,
-> and make the smallest auditable UI patch needed for the new Router settings.
-> 
-> `frontend/` is a readable partial reconstruction and design workspace. It is
-> useful for understanding UI contracts and experimenting with clean components,
-> but it should not be mistaken for Anysphere's missing original frontend source
-> or a pixel-perfect replacement for the packaged renderer.
-> 
-> ## Preserved original installers
-> 
-> Research copies of the exact 0.18.0 installers live under
-> `research-archives/original/0.18.0/` and are stored with Git LFS:
-> 
-> | Platform | File | SHA-256 |
-> | --- | --- | --- |
-> | macOS arm64 | `macos-arm64/Grok_Bot_0.18.0.dmg` | `a253ccd8aab01e083f9812a0264354c5034d8ba7f0610bbb557e82ae77d203eb` |
-> | Windows x64 | `windows-x64/Grok_Bot_0.18.0_Setup.exe` | `464079a15ef5fa8b61ccea8fffcc78f63cfcf6df65fb0ad5e725d8b95f7e437e` |
-> 
-> See [research-archives/README.md](research-archives/README.md) for source URLs,
-> sizes, verification commands, and the machine-readable artifact manifest.
-> 
-> ## Current features
-> 
-> ### Inference Router
-> 
-> Open **Settings → Router** to choose the backend used for new turns:
-> 
-> | Provider | Authentication | Tool support |
-> | --- | --- | --- |
-> | Cursor | Existing Grok Bot/Cursor session | Native Grok Bot tools and plugins |
-> | Claude Code | Existing Claude Code login | Routed Grok Bot MCP tools |
-> | Codex | Existing local ChatGPT/Codex login | Direct Responses transport with Grok Bot tools |
-> | OpenRouter | API key saved through the desktop secrets bridge | Grok Bot tool-execution loop |
-> 
-> Cursor is the default. Claude Code and Codex do not require separate API keys
-> when their local clients are already authenticated. The application preserves
-> streaming responses, thinking state, reactions, rich plugin mentions, and MCP
-> tool execution across routed conversations.
-> 
-> **Usage & Billing** shows the locally recorded request and token totals for
-> providers that return usage data. These figures are activity records, not an
-> authoritative provider invoice.
-> 
-> ### Local Docker sandbox
-> 
-> The Router page also has a **Use local Docker VM** toggle. When enabled, Grok
-> Bot runs its box host and execution daemon in an owned local container instead
-> of connecting to the remote sandbox.
-> 
-> The container:
-> 
-> - is bound only to loopback ports;
-> - mounts content-addressed host and daemon artifacts read-only;
-> - reuses the user's existing provider authentication where needed;
-> - is validated before the coordinator connects; and
-> - is stopped or replaced through the same settings lifecycle.
-> 
-> Docker Desktop, or another compatible local Docker daemon, must be running.
-> Remote mode remains the default.
-> 
-> ## Requirements
-> 
-> - macOS on Apple Silicon
-> - Node.js 26.5.x
-> - Xcode Command Line Tools
-> - Git LFS
-> - Docker Desktop (optional, only for the local sandbox)
-> - local Claude Code or Codex authentication for those router choices
-> 
-> ## Quick start
-> 
-> ```sh
-> git clone 
-> cd grok-bot-0.18-reconstructed
-> git lfs install
-> git lfs pull
-> npm ci
-> npm run bootstrap
-> npm run check
-> npm run package
-> open "dist/Grok Bot 0.18 Reconstructed.app"
-> ```
-> 
-> `npm run bootstrap` first uses the Git LFS preservation copy of the pinned
-> 0.18.0 DMG. If that archive is absent, it falls back to the original public URL;
-> `GROK_BOT_018_APP` can also point to an existing application copy. Bootstrap
-> verifies both the DMG and `app.asar`, caches the matching Electron runtime, and
-> hydrates the ignored `src/app/dist` build input.
-> 
-> `npm run package` compiles the reconstructed runtimes, applies the narrow
-> renderer/settings transform, creates the app bundle, assigns the reconstructed
-> bundle identity, ad-hoc signs it, and verifies the result. Output is written to:
+> **中文** — 不懂 git、Node、终端？完全不需要懂。把下面这段话原样复制给你的
+> 编码 Agent（Codex），然后去倒杯咖啡：
 > 
 > ```text
-> dist/Grok Bot 0.18 Reconstructed.app
+> 请帮我完整安装并配置 Codex with ChatGPT，全程自动，我是不懂技术的小白，
+> 所有事情你自己做：
+> 
+> 1. 环境自检：需要 git 和 Node.js ≥ 20，缺什么就自动安装
+>   （macOS 用 Homebrew，Windows 用 winget），同时安装 cloudflared。
+> 2. 下载：把 https://github.com/XiaoDuoYa/codex-with-chatgpt 克隆到
+>    ~/codex-with-chatgpt（已存在就 git pull 更新）。
+> 3. 构建：在该目录里执行 corepack pnpm install 和 corepack pnpm build。
+> 4. 安装 Skill：把仓库里的 skill/SKILL.md 复制到
+>    ~/.codex/skills/codex-with-chatgpt/SKILL.md，并把文件中
+>    "The codex-with-chatgpt checkout lives at:" 那一行的路径改成实际克隆路径。
+> 5. 首次配置：按 SKILL.md 里的 first-time setup 流程执行
+>   （运行 c2c setup，用内置浏览器打开 ChatGPT 配置连接器并输入配对码）。
+>    全程只用内置浏览器，禁止打开任何第三方浏览器。
+> 6. 只有遇到需要我登录（ChatGPT / Cloudflare）、验证码或两步验证时才叫我，
+>    而且一次只告诉我一个动作。
+> 7. 完成后给我看 ✓ 清单，并确认文件读取测试通过。我不懂 MCP、OAuth、
+>    Tunnel、端口这些词，不要向我解释；出了问题先自己修。
 > ```
 > 
-> Reconstructed packages disable the upstream updater at the packaging boundary
-> and default upstream Sentry and telemetry emission off. Explicitly supplied
-> environment configuration is still respected.
-> 
-> ## Architecture
+> **EN** — Don't know git, Node, or terminals? You don't need to. Copy the
+> paragraph below, paste it to your coding agent (Codex), and go grab a coffee:
 > 
 > ```text
-> polished shipped renderer
->           │
->           │ desktop preload / RPC
->           ▼
->      Electron main
->           │
->           ├── settings, secrets, auth and plugin lifecycle
->           ├── remote box connector
->           └── owned local Docker connector
->                        │
->                        ▼
->               coordinator + host
->                        │
->               inference router
->            ┌───────────┼───────────┐
->         Cursor      Claude       Codex / OpenRouter
->                        │
->                  Grok Bot MCP tools
+> Please install and configure "Codex with ChatGPT" for me, fully automatically.
+> I am a non-technical user — do everything yourself:
+> 
+> 1. Check the environment: git and Node.js >= 20 must be available. Install
+>    anything missing yourself (macOS: Homebrew, Windows: winget). Also install
+>    cloudflared.
+> 2. Download: clone https://github.com/XiaoDuoYa/codex-with-chatgpt into
+>    ~/codex-with-chatgpt (if it already exists, git pull to update).
+> 3. Build: inside that folder run `corepack pnpm install` then `corepack pnpm build`.
+> 4. Install the Skill: copy skill/SKILL.md to
+>    ~/.codex/skills/codex-with-chatgpt/SKILL.md, and update the line
+>    "The codex-with-chatgpt checkout lives at:" to the actual clone path.
+> 5. First-time setup: follow the SKILL.md "first-time setup" workflow
+>    (run c2c setup, configure the ChatGPT connector in the BUILT-IN browser,
+>    enter the pairing code). Never open a third-party browser.
+> 6. Only interrupt me for logins (ChatGPT / Cloudflare), CAPTCHAs or 2FA —
+>    and give me exactly ONE action at a time.
+> 7. When done, show me the ✓ checklist and confirm the file-read test passed.
+>    I don't know what MCP, OAuth, tunnels or ports are. Don't explain them.
+>    If anything breaks, fix it yourself first.
 > ```
 > 
-> The main source areas are:
+> **Updates · 更新** — The Skill checks GitHub once a day and updates itself when a
+> new version is released; no action needed. You can also say "更新 Codex with ChatGPT"
+> anytime. / Skill 每天自动检查一次 GitHub，有新版本会自动更新，无需任何操作；
+> 也可以随时对 Codex 说"更新 Codex with ChatGPT"。
 > 
-> - `source/electron-main/` — desktop lifecycle, settings, auth, box connectors,
->   coordinator ownership, and RPC handlers;
-> - `source/electron-preload/` — the narrow trusted bridge exposed to the UI;
-> - `source/host/` — inference, tools, MCP, settings, and turn execution;
-> - `source/node-agent-coordinator/` — transcript routing, streaming activity,
->   reactions, and the routed MCP bridge;
-> - `source/shared/` — shared contracts, settings, protocol, and provider helpers;
-> - `frontend/` — readable React/TypeScript renderer reconstruction and design
->   workspace;
-> - `scripts/` — bootstrap, compilation, renderer patching, packaging, signing,
->   and verification; and
-> - `tests/` — publication and router regressions.
+> ---
 > 
-> See [docs/ARCHITECTURE.md](docs/ARCHIT
+> *The sections below are in English. 以下详细内容为英文，中文完整版见
+> [README.zh-CN.md](README.zh-CN.md)。*
+> 
+> ## Install → Setup → Use (manual)
+> 
+> 1. Install the Codex Skill: copy `skill/` to `~/.codex/skills/codex-with-chatgpt/`.
+> 2. Tell Codex: **"Set up Codex with ChatGPT."** (中文: "使用 Codex with ChatGPT 完成首次配置。")
+> 3. Use Codex normally: **"Use Codex with ChatGPT to implement XXX."**
+> 
+> That's the whole manual. You don't need to know what MCP, OAuth, tunnels,
+> ports or localhost are — Codex configures everything automatically and you
+> just see:
+> 
+> ```
+> Codex with ChatGPT
+> 
+> ✓ Project detected
+> ✓ Workspace Bridge started
+> ✓ Secure connection established
+> ✓ ChatGPT connected
+> ✓ File read test passed
+> 
+> Ready.
+> ```
+> 
+> The only step that may need you: logging into ChatGPT (and, if you want a
+> stable hostname, logging into Cloudflare once).
+> 
+> ### Optional stable hostname
+> 
+> The default public address is a temporary Cloudflare URL. It changes when the
+> bridge restarts, and Codex repairs ChatGPT by deleting that workspace's
+> connector and adding it again.
+> 
+> If you have a Cloudflare account and a domain already on Cloudflare, first-time
+> setup (and the next coding session, once) will ask whether you want a stable
+> hostname such as `c2c-.your-domain.com`. That path opens a browser so
+> you can authorize Cloudflare. After that, the ChatGPT connector keeps working
+> across restarts. If you skip it, or login fails, Codex stays on the temporary
+> address — same features, just a slower repair.
+> 
+> Credentials stay in the OS app state directory, not in the project.
+> 
+> ## How it works
+> 
+> ```
+>              ┌───────────────────────────┐
+>              │       ChatGPT Web         │
+>              │  Reason / Plan / Review   │
+>              └──────────┬──────────▲─────┘
+>                         │          │
+>                MCP      │          │ Computer Use
+>             Data Plane  │          │ Control Plane ( dist/, exposes the `c2c` bin
+> pnpm test           # vitest: 76 tests (path security, OAuth, pairing, MCP e2e)
+> 
+> c2c setup           # bridge + tunnel + pairing code, all in one
+> c2c sandbox-allow   # whitelist the settings dir in Codex (macOS + Windows)
+> c2c status / doctor / pair / unpair / logs / stop
+> ```
+> 
+> Requirements: Node.js >= 20, git. `cloudflared` for the public connection
+> (auto-detected; the Skill installs it for you).
+> 
+> Docs: [architecture](docs/architecture.md) · [protocol](docs/protocol.md) ·
+> [security](docs/security.md) · [troubleshooting](docs/troubleshooting.md)
+> 
+> ## Project layout
+> 
+> ```
+> src/
+>   bridge/     loopback HTTP server, port recovery, admin API
+>   mcp/        8 read-only tools, stateless Streamable HTTP
+>   auth/       OAuth 2.1 (PKCE, DCR, refresh rotation, revocation)
+>   pairing/    one-time pairing codes (CSPRNG, TTL, rate limits)
+>   workspace/  path containment, sensitive-file policy, search, git
+>   tunnel/     TunnelProvider abstraction + Cloudflare Quick/Named Tunnel
+>   execution/  execution records for the review loop
+>   process/    daemon lifecycle
+>   cli/        the c2c CLI
+> skill/        the Codex Skill (the real UX layer)
+> tests/        unit + integration tests
+> docs/         architecture / protocol / security / troubleshooting
+> ```
+> 
+> ## Status & disclaimer
+> 
+> V1. Verified end-to-end: bridge, OAuth + pairing, public tunnel, ChatGPT
+> connector setup, zero-touch first-run experience.
+> 
+> **Unofficial community project. Not affiliated with or endorsed by OpenAI.**
+> 
+> ## License
+> 
+> [MIT](LICENSE)
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]] · [[DramaticShape--DramaticShapeVoxelMod|DramaticShape/DramaticShapeVoxelMod]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/b-nnett/grok-bot-0.18-reconstructed)
+[GitHub](https://github.com/XiaoDuoYa/codex-with-chatgpt)
 
 ## 相關收錄
 
@@ -388,7 +388,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "b-nnett--grok-bot-0.18-reconstructed"
+> WHERE category = "Other" AND file.name != "XiaoDuoYa--codex-with-chatgpt"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -397,7 +397,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "b-nnett--grok-bot-0.18-reconstructed" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "XiaoDuoYa--codex-with-chatgpt" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -406,18 +406,18 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "b-nnett--grok-bot-0.18-reconstructed"
+> WHERE week = "2026-W36" AND file.name != "XiaoDuoYa--codex-with-chatgpt"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "b-nnett--grok-bot-0.18-reconstructed" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "XiaoDuoYa--codex-with-chatgpt" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -433,7 +433,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "b-nnett" AND file.name != "b-nnett--grok-bot-0.18-reconstructed"
+> WHERE owner = "XiaoDuoYa" AND file.name != "XiaoDuoYa--codex-with-chatgpt"
 > SORT stars DESC
 > ```
 
@@ -441,7 +441,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -458,7 +458,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -491,7 +491,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -515,7 +515,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -552,7 +552,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/b-nnett--grok-bot-0.18-reconstructed");
+> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -635,7 +635,7 @@ Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for m
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-25** — 首次收錄
+> **2026-08-30** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -651,9 +651,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-30|2026-08-30]] — 再次上榜，3.4k stars
-- [[2026-08-29|2026-08-29]] — 再次上榜，3.4k stars
-- [[2026-08-28|2026-08-28]] — 再次上榜，3.4k stars
-- [[2026-08-27|2026-08-27]] — 再次上榜，3.3k stars
-- [[2026-08-26|2026-08-26]] — 再次上榜，2.6k stars
-- [[2026-08-25|2026-08-25]] — 首次收錄，1.8k stars
+- [[2026-08-30|2026-08-30]] — 首次收錄，1.0k stars
