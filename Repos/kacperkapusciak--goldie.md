@@ -1,20 +1,20 @@
 ---
-repo: HEJustinSun/my-girlfriend-jingtian-latex
-url: https://github.com/HEJustinSun/my-girlfriend-jingtian-latex
-owner: HEJustinSun
+repo: kacperkapusciak/goldie
+url: https://github.com/kacperkapusciak/goldie
+owner: kacperkapusciak
 owner_type: User
-language: TeX
-license: N/A
-description: ""
+language: TypeScript
+license: MIT
+description: "✨ agentic app store previews and screenshots"
 homepage: ""
-stars: 4159
-stars_per_day: 1386
-forks: 656
-open_issues: 540
-created: 2026-08-27
-pushed_at: 2026-08-27
-first_seen: 2026-08-28
-week: "2026-W35"
+stars: 822
+stars_per_day: 137
+forks: 59
+open_issues: 5
+created: 2026-08-24
+pushed_at: 2026-08-28
+first_seen: 2026-08-31
+week: "2026-W36"
 month: "2026-08"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-28
+last_reviewed: 2026-08-31
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-09-03"
+appearances: 1
+next_review: "2026-09-07"
 contributor_count: 1
-engagement: "medium"
-issue_close_rate: 4
-repo_size_kb: 17163
-readme_length: 265
+engagement: "low"
+issue_close_rate: 0
+repo_size_kb: 3781
+readme_length: 2914
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-28"
-star_history: "2026-08-28:3378,2026-08-29:3775,2026-08-30:4014,2026-08-31:4159"
+ring_history: "assess@2026-08-31"
+star_history: "2026-08-31:822"
 tags:
   - github
   - "category/other"
-  - "lang/tex"
+  - "lang/typescript"
 aliases:
-  - "my-girlfriend-jingtian-latex"
-  - "HEJustinSun/my-girlfriend-jingtian-latex"
+  - "goldie"
+  - "kacperkapusciak/goldie"
 ---
 
-# my-girlfriend-jingtian-latex
+# goldie
 
-**3.4k** stars · **3.4k** stars/天 · 建立 1 天前 · TeX · 未標註授權
+**822** stars · **137** stars/天 · 建立 6 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+const me = dv.page("Repos/kacperkapusciak--goldie");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -73,17 +73,17 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> No description
+> ✨ agentic app store previews and screenshots
 
 ## 專案簡介
 
-No description available.
+✨ agentic app store previews and screenshots
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/kacperkapusciak--goldie");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ No description available.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/kacperkapusciak--goldie");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,56 +142,140 @@ No description available.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 539 |
-| Open Issues | 433 |
-| Issue 解決率 | 4% (16 closed) |
-| 最後推送 | 2026-08-27 |
-| 建立日期 | 2026-08-27 |
-| Repo 大小 | 16.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/HEJustinSun/my-girlfriend-jingtian-latex) |
+| Forks | 59 |
+| Open Issues | 5 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-08-28 |
+| 建立日期 | 2026-08-24 |
+| Repo 大小 | 3.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/kacperkapusciak/goldie) |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@napi-rs/canvas` `@swmansion/argent` `jiti` `@biomejs/biome` `@types/bun` `typescript`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "TypeScript" : 97
+>     "CSS" : 3
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@HEJustinSun](https://github.com/HEJustinSun) | 2 |
+> | [@kacperkapusciak](https://github.com/kacperkapusciak) | 43 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-27 ~ 2026-08-27）
-> **活躍天數** 1 天 · **最新 commit** Add files via upload
+> [!abstract] 最近 10 次 commit（2026-08-28 ~ 2026-08-28）
+> **活躍天數** 1 天 · **最新 commit** Add MIT license
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#53](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/53) | 我恨你们这些有钱人 | 40 | 5 |
-> | [#75](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/75) | anthropic，你搞砸了一切 | 23 | 2 |
-> | [#317](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/317) | [LaTeX] 正文排版存在多处技术问题 | 15 | 10 |
-> | [#381](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/381) | 👀 看 Issues/PRs 太累了，我来全景总结！(含6大专题/网页版/最新#447) 🍉🚀 | 13 | 2 |
+> | [#2](https://github.com/kacperkapusciak/goldie/issues/2) | npm i -g goldie fails: @swmansion/argent@^0.22.0 does not ex | 1 | 0 |
+> | [#4](https://github.com/kacperkapusciak/goldie/issues/4) | frame renders CJK headline/subhead as tofu boxes on zh-CN lo | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 我的女友景甜
+> # Goldie: App Store screenshot generator for coding agents (and humans)
 > 
-> 这是一个 5 x 8 英寸的 XeLaTeX 排版工程。
+> goldie makes App Store screenshots and app preview videos for an iOS app.
+> [argent](https://github.com/software-mansion/argent) replays flows on a
+> simulator; goldie frames the captures with a device bezel, background and
+> headline, joins the clips into a preview video, and checks the result against
+> Apple's upload rules.
 > 
-> ## 编译
+> goldie is framework agnostic. It drives the app through the simulator, so it
+> works the same for SwiftUI, UIKit, Flutter, React Native and Kotlin
+> Multiplatform apps.
 > 
-> 需要 XeLaTeX 和标准 TeX Live 发行版：
+> ## Install
 > 
-> ```bash
-> mkdir -p build
-> xelatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
-> xelatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
+> You need macOS with iOS simulators, Node 20 or newer and ffmpeg.
+> 
+> Install the CLI:
+> 
 > ```
+> npm i -g goldie
+> ```
+> 
+> Add the skill to your coding agent:
+> 
+> ```
+> npx skills add kacperkapusciak/goldie            # Cursor, Codex, any agent
+> 
+> /plugin marketplace add kacperkapusciak/goldie   # Claude Code
+> /plugin install goldie@goldie
+> ```
+> 
+> The skill works with any agent that supports the skills format.
+> 
+> ## Use with a coding agent
+> 
+> Ask from your app repo:
+> 
+> ```
+> create App Store screenshots using goldie
+> ```
+> 
+> The agent explores the app, writes the flows and config, and
+> opens the studio. Follow-ups such as `use a dark background` edit the same
+> files. 
+> 
+> ## Use by hand
+> 
+> Copy `goldie.config.example.ts` to `goldie.config.ts`, point its scenes at
+> argent flows in `.argent/flows`, then:
+> 
+> ```
+> goldie doctor     Check tools, simulators and flows
+> goldie all        Capture, frame, render the preview and verify
+> goldie studio     Preview and tweak the assets in the browser
+> ```
+> 
+> Output lands in `out/`: 6.9" screenshots (1320 x 2868) and a 886 x 1920
+> H.264 preview, per locale. Previews must run 15 to 30 seconds.
+> 
+> ## Design
+> 
+> https://github.com/user-attachments/assets/d6171a90-8fc1-437b-a574-5a8547068a3c
+> 
+> The studio switches backgrounds, templates, bezel, fonts and per-tile copy,
+> and saves to `goldie.design.json` so the CLI renders the same thing. The
+> config also takes:
+> 
+> - `frame`: `17-pro-blue`, `17-pro-silver`, `17-pro-orange`, or a custom
+>   bezel image; `theme.screenOnly: true` drops it.
+> - `theme.template`: `editorial`, `showcase`, `magazine`, `storyboard`,
+>   `dynamic`, or your own layout sequence from `classic`, `copy-below`, `hero`,
+>   `offset`, `tilt`, `tilt-right`, `duo`, `duo-tilt`, `panorama`,
+>   `panorama-duo`, `minimal`.
+> - `theme.fontFamily`: a CSS font stack. Merriweather, DM Mono, Lato, DM Sans
+>   and Montserrat are bundled.
+> - `decorations`: badges or images layered behind the device.
+> 
+> ## Remarks
+> 
+> - Use a Release build; Debug builds paint LogBox banners into captures.
+> - Flows fail when the app changes. Ask coding agent to repair them, or re-record
+>   with argent.
+> 
+> ## Sponsored by Software Mansion
+> 
+> goldie is sponsored by [Software Mansion](https://swmansion.com), the
+> software agency that created [Argent](https://github.com/software-mansion/argent).
+> You can [hire Software Mansion](https://swmansion.com/contact) for your next project.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex)
+[GitHub](https://github.com/kacperkapusciak/goldie)
 
 ## 相關收錄
 
@@ -199,7 +283,7 @@ No description available.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
+> WHERE category = "Other" AND file.name != "kacperkapusciak--goldie"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -208,7 +292,7 @@ No description available.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TeX" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "kacperkapusciak--goldie" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -217,18 +301,18 @@ No description available.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
+> WHERE week = "2026-W36" AND file.name != "kacperkapusciak--goldie"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/kacperkapusciak--goldie");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "HEJustinSun--my-girlfriend-jingtian-latex" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "kacperkapusciak--goldie" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -244,7 +328,7 @@ No description available.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "HEJustinSun" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
+> WHERE owner = "kacperkapusciak" AND file.name != "kacperkapusciak--goldie"
 > SORT stars DESC
 > ```
 
@@ -252,7 +336,7 @@ No description available.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/kacperkapusciak--goldie");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -269,7 +353,7 @@ No description available.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/kacperkapusciak--goldie");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -302,7 +386,7 @@ No description available.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/kacperkapusciak--goldie");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -326,7 +410,7 @@ No description available.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/kacperkapusciak--goldie");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -363,7 +447,7 @@ No description available.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/kacperkapusciak--goldie");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -446,7 +530,7 @@ No description available.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-28** — 首次收錄
+> **2026-08-31** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -462,7 +546,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-31|2026-08-31]] — 再次上榜，4.2k stars
-- [[2026-08-30|2026-08-30]] — 再次上榜，4.0k stars
-- [[2026-08-29|2026-08-29]] — 再次上榜，3.8k stars
-- [[2026-08-28|2026-08-28]] — 首次收錄，3.4k stars
+- [[2026-08-31|2026-08-31]] — 首次收錄，822 stars

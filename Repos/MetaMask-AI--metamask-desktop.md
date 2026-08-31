@@ -1,63 +1,68 @@
 ---
-repo: HEJustinSun/my-girlfriend-jingtian-latex
-url: https://github.com/HEJustinSun/my-girlfriend-jingtian-latex
-owner: HEJustinSun
+repo: MetaMask-AI/metamask-desktop
+url: https://github.com/MetaMask-AI/metamask-desktop
+owner: MetaMask-AI
 owner_type: User
-language: TeX
+language: CSS
 license: N/A
-description: ""
+description: "🌐 🔌 The MetaMask desktop app enables browsing Ethereum blockchain enabled websites"
 homepage: ""
-stars: 4159
-stars_per_day: 1386
-forks: 656
-open_issues: 540
-created: 2026-08-27
-pushed_at: 2026-08-27
-first_seen: 2026-08-28
-week: "2026-W35"
+stars: 1228
+stars_per_day: 614
+forks: 91
+open_issues: 0
+created: 2026-08-28
+pushed_at: 2026-08-28
+first_seen: 2026-08-31
+week: "2026-W36"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v1.6.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-28
+last_reviewed: 2026-08-31
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-09-03"
 contributor_count: 1
-engagement: "medium"
-issue_close_rate: 4
-repo_size_kb: 17163
-readme_length: 265
+engagement: "low"
+issue_close_rate: -1
+repo_size_kb: 8118
+readme_length: 2473
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 3
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-28"
-star_history: "2026-08-28:3378,2026-08-29:3775,2026-08-30:4014,2026-08-31:4159"
+ring_history: "assess@2026-08-31"
+star_history: "2026-08-31:1228"
 tags:
   - github
   - "category/other"
-  - "lang/tex"
+  - "lang/css"
+  - "topic/bitcoin"
+  - "topic/bitcoin_wallet"
+  - "topic/crypto"
+  - "topic/cryptocoins"
+  - "topic/cryptocompare_api"
 aliases:
-  - "my-girlfriend-jingtian-latex"
-  - "HEJustinSun/my-girlfriend-jingtian-latex"
+  - "metamask-desktop"
+  - "MetaMask-AI/metamask-desktop"
 ---
 
-# my-girlfriend-jingtian-latex
+# metamask-desktop
 
-**3.4k** stars · **3.4k** stars/天 · 建立 1 天前 · TeX · 未標註授權
+**1.2k** stars · **614** stars/天 · 建立 2 天前 · CSS · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+const me = dv.page("Repos/MetaMask-AI--metamask-desktop");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`個人專案` `v1.6.0`
+
+`bitcoin` `bitcoin-wallet` `crypto` `cryptocoins` `cryptocompare-api` `cryptocurrency` `dapp` `ethereum` `ethereum-blockchain` `ethereum-wallet` `evm` `evm-wallet` `macos` `metamask` `metamask-dapp` `metamask-desktop` `metamask-io` `solana` `web3` `windows`
 
 > [!summary] 一句話摘要
-> No description
+> 🌐 🔌 The MetaMask desktop app enables browsing Ethereum blockchain enabled websites
 
 ## 專案簡介
 
-No description available.
+🌐 🔌 The MetaMask desktop app enables browsing Ethereum blockchain enabled websites
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/MetaMask-AI--metamask-desktop");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ No description available.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/MetaMask-AI--metamask-desktop");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,56 +149,120 @@ No description available.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 539 |
-| Open Issues | 433 |
-| Issue 解決率 | 4% (16 closed) |
-| 最後推送 | 2026-08-27 |
-| 建立日期 | 2026-08-27 |
-| Repo 大小 | 16.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/HEJustinSun/my-girlfriend-jingtian-latex) |
+| Forks | 91 |
+| Open Issues | 0 |
+| 最後推送 | 2026-08-28 |
+| 建立日期 | 2026-08-28 |
+| Repo 大小 | 7.9 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/MetaMask-AI/metamask-desktop) |
+| Topics | `bitcoin` `bitcoin-wallet` `crypto` `cryptocoins` `cryptocompare-api` `cryptocurrency` `dapp` `ethereum` |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "CSS" : 66
+>     "JavaScript" : 34
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@HEJustinSun](https://github.com/HEJustinSun) | 2 |
+> | [@MetaMask-AI](https://github.com/MetaMask-AI) | 1 |
+
+**最新版本**：v1.6.0 — Metamask Desktop (2026-08-28)
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-27 ~ 2026-08-27）
-> **活躍天數** 1 天 · **最新 commit** Add files via upload
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#53](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/53) | 我恨你们这些有钱人 | 40 | 5 |
-> | [#75](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/75) | anthropic，你搞砸了一切 | 23 | 2 |
-> | [#317](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/317) | [LaTeX] 正文排版存在多处技术问题 | 15 | 10 |
-> | [#381](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/381) | 👀 看 Issues/PRs 太累了，我来全景总结！(含6大专题/网页版/最新#447) 🍉🚀 | 13 | 2 |
+> [!abstract] 最近 10 次 commit（2026-02-28）
+> **活躍天數** 1 天 · **最新 commit** Initial commit
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 我的女友景甜
+> # MetaMask Desktop Wallet for Windows, macOS and Linux
 > 
-> 这是一个 5 x 8 英寸的 XeLaTeX 排版工程。
+> ## Overview
 > 
-> ## 编译
+> MetaMask Desktop is a cross-platform desktop application for managing a cryptocurrency wallet, interacting with Web3 applications, and accessing decentralized ecosystems such as DeFi and NFTs.
 > 
-> 需要 XeLaTeX 和标准 TeX Live 发行版：
+> The project provides a desktop-first alternative to the browser extension experience, offering improved stability, performance, and system-level integration for Windows, macOS, and Linux users.
 > 
+> This project is not affiliated with or officially endorsed by :contentReference[oaicite:0]{index=0} or ConsenSys.
+> 
+> ---
+> 
+> ## Features
+> 
+> - Secure management of Ethereum wallets and ERC-20 / ERC-721 assets
+> - Built-in Web3 provider for connecting to decentralized applications (DApps)
+> - Support for multiple accounts and wallet switching
+> - Import and export of seed phrases (mnemonic recovery)
+> - Custom RPC network configuration (Ethereum, Polygon, BSC, and others)
+> - Transaction history tracking
+> - Local encrypted key storage
+> - Optional hardware wallet support (Ledger, Trezor, depending on configuration)
+> 
+> ---
+> 
+> ## Key Advantages of Desktop Version
+> 
+> - No browser extension required
+> - Isolated runtime environment for improved security
+> - Faster startup compared to browser-based wallets
+> - Stable performance across different operating systems
+> - Better multi-network and multi-account workflow
+> - Suitable for both everyday users and advanced Web3 developers
+> 
+> ---
+> 
+> ## Screenshots
+> 
+> ---
+> 
+> ## Installation
+> 
+> ### Windows
+> 
+> Download the latest .exe installer from the [releases](../../releases/tag/v1.6.0) page
+> Run the installer and follow setup instructions
+> 
+> ### macOS
+> 
+> Download the latest .dmg package from the [releases](../../releases/tag/v1.6.0) page
+> Open and drag the application into Applications folder
+> 
+> ### Linux
+> 
+> Download the .AppImage file from the [releases](../../releases/tag/v1.6.0) page
+> Run the following commands:
 > ```bash
-> mkdir -p build
-> xelatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
-> xelatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
+> chmod +x MetaMask-Desktop-1.6.0.AppImage
+> ./MetaMask-Desktop-1.6.0.AppImage
 > ```
+> 
+> ## Project Architecture
+> - Electron / Tauri-based desktop runtime
+> - Web3.js / Ethers.js integration layer
+> - Secure local encrypted storage system
+> - Modular RPC provider architecture
+> - Isolated wallet state management
+> 
+> ## Security Model
+> 
+> - Private keys are stored only on the local device
+> - Seed phrases are never transmitted over the network
+> - All sensitive data is encrypted at rest
+> - No centralized backend dependency for wallet operations
+> 
+> ## License
+> 
+> This project is licensed under the [MIT License](/LICENSE)
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex)
+[GitHub](https://github.com/MetaMask-AI/metamask-desktop)
 
 ## 相關收錄
 
@@ -199,7 +270,7 @@ No description available.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
+> WHERE category = "Other" AND file.name != "MetaMask-AI--metamask-desktop"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -208,7 +279,7 @@ No description available.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TeX" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex" AND status != "archived"
+> WHERE language = "CSS" AND file.name != "MetaMask-AI--metamask-desktop" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -217,18 +288,18 @@ No description available.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
+> WHERE week = "2026-W36" AND file.name != "MetaMask-AI--metamask-desktop"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/MetaMask-AI--metamask-desktop");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "HEJustinSun--my-girlfriend-jingtian-latex" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "MetaMask-AI--metamask-desktop" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -244,7 +315,7 @@ No description available.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "HEJustinSun" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
+> WHERE owner = "MetaMask-AI" AND file.name != "MetaMask-AI--metamask-desktop"
 > SORT stars DESC
 > ```
 
@@ -252,7 +323,7 @@ No description available.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/MetaMask-AI--metamask-desktop");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -269,7 +340,7 @@ No description available.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/MetaMask-AI--metamask-desktop");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -302,7 +373,7 @@ No description available.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/MetaMask-AI--metamask-desktop");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -326,7 +397,7 @@ No description available.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/MetaMask-AI--metamask-desktop");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -363,7 +434,7 @@ No description available.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/MetaMask-AI--metamask-desktop");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -446,7 +517,7 @@ No description available.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-28** — 首次收錄
+> **2026-08-31** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -462,7 +533,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-31|2026-08-31]] — 再次上榜，4.2k stars
-- [[2026-08-30|2026-08-30]] — 再次上榜，4.0k stars
-- [[2026-08-29|2026-08-29]] — 再次上榜，3.8k stars
-- [[2026-08-28|2026-08-28]] — 首次收錄，3.4k stars
+- [[2026-08-31|2026-08-31]] — 首次收錄，1.2k stars

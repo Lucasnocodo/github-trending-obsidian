@@ -1,63 +1,68 @@
 ---
-repo: HEJustinSun/my-girlfriend-jingtian-latex
-url: https://github.com/HEJustinSun/my-girlfriend-jingtian-latex
-owner: HEJustinSun
+repo: Nanako0129/sepia
+url: https://github.com/Nanako0129/sepia
+owner: Nanako0129
 owner_type: User
-language: TeX
-license: N/A
-description: ""
+language: N/A
+license: MIT
+description: "De-AI writing skill for Claude Code, Codex, Grok Build, and Antigravity — narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136)."
 homepage: ""
-stars: 4159
-stars_per_day: 1386
-forks: 656
-open_issues: 540
-created: 2026-08-27
-pushed_at: 2026-08-27
-first_seen: 2026-08-28
-week: "2026-W35"
+stars: 992
+stars_per_day: 331
+forks: 60
+open_issues: 1
+created: 2026-08-28
+pushed_at: 2026-08-31
+first_seen: 2026-08-31
+week: "2026-W36"
 month: "2026-08"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.3.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-28
+last_reviewed: 2026-08-31
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-09-03"
-contributor_count: 1
-engagement: "medium"
-issue_close_rate: 4
-repo_size_kb: 17163
-readme_length: 265
+contributor_count: 2
+engagement: "low"
+issue_close_rate: 0
+repo_size_kb: 109
+readme_length: 7465
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-28"
-star_history: "2026-08-28:3378,2026-08-29:3775,2026-08-30:4014,2026-08-31:4159"
+ring_history: "assess@2026-08-31"
+star_history: "2026-08-31:992"
 tags:
   - github
   - "category/other"
-  - "lang/tex"
+  - "lang/other"
+  - "topic/agent_skills"
+  - "topic/ai_writing"
+  - "topic/antigravity"
+  - "topic/claude_code"
+  - "topic/codex"
 aliases:
-  - "my-girlfriend-jingtian-latex"
-  - "HEJustinSun/my-girlfriend-jingtian-latex"
+  - "sepia"
+  - "Nanako0129/sepia"
 ---
 
-# my-girlfriend-jingtian-latex
+# sepia
 
-**3.4k** stars · **3.4k** stars/天 · 建立 1 天前 · TeX · 未標註授權
+**992** stars · **331** stars/天 · 建立 3 天前 · N/A · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+const me = dv.page("Repos/Nanako0129--sepia");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v0.3.0`
+
+`agent-skills` `ai-writing` `antigravity` `claude-code` `codex` `developer-tools` `fiction` `grok` `humanizer` `llm` `prompt-engineering` `writing-tools`
 
 > [!summary] 一句話摘要
-> No description
+> De-AI writing skill for Claude Code, Codex, Grok Build, and Antigravity — narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).
 
 ## 專案簡介
 
-No description available.
+De-AI writing skill for Claude Code, Codex, Grok Build, and Antigravity — narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/Nanako0129--sepia");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ No description available.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/Nanako0129--sepia");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,56 +149,221 @@ No description available.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 539 |
-| Open Issues | 433 |
-| Issue 解決率 | 4% (16 closed) |
-| 最後推送 | 2026-08-27 |
-| 建立日期 | 2026-08-27 |
-| Repo 大小 | 16.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/HEJustinSun/my-girlfriend-jingtian-latex) |
+| Forks | 60 |
+| Open Issues | 1 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-08-31 |
+| 建立日期 | 2026-08-28 |
+| Repo 大小 | 109 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Nanako0129/sepia) |
+| Topics | `agent-skills` `ai-writing` `antigravity` `claude-code` `codex` `developer-tools` `fiction` `grok` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@HEJustinSun](https://github.com/HEJustinSun) | 2 |
+> | [@Nanako0129](https://github.com/Nanako0129) | 32 |
+> | [@shihyuho](https://github.com/shihyuho) | 2 |
+
+**最新版本**：v0.3.0 (2026-08-30)
+
+> [!info]- Release Notes
+> ## Upgrade notes
+> 
+> The shared install.sh is gone. Use each platform native update path:
+> 
+> - Claude Code: claude plugin marketplace update sepia, then claude plugin update sepia
+> - Codex: codex plugin marketplace upgrade sepia, then codex plugin add sepia@sepia
+> - Grok Build: grok plugin update
+> - Antigravity: move the existing clone, skill, and workflow aside, then run the README pinned v0.3.0 fresh-install block
+> 
+> ## Added
+> 
+> - Direct sepia-write, sepia-review, sepia-refactor, and sepia-recreate skill entries for Claude Code, Codex, and Grok Build (#10).
+> - A live Star History chart in both READMEs. The chart depends on Star History and a repository-scoped sealed credential (#12).
+> 
+> ## Changed
+> 
+> - Research summaries and the fiction rubric now separate measured evidence from Sepia editorial inferences; manual findings no longer present themselves as detector probabilities or validated thresholds (#7).
+> - Target prose, files, links, and quoted material are explicitly untrusted data. They cannot switch the selected operation or grant tool, file, network, or external-action authority (#10).
+> - Platform installation guidance now uses native Claude Code, Codex, and Grok Build managers; Antigravity keeps the manual pinned install path (#6).
+> 
+> ## Verification boundary
+> 
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-27 ~ 2026-08-27）
-> **活躍天數** 1 天 · **最新 commit** Add files via upload
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#53](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/53) | 我恨你们这些有钱人 | 40 | 5 |
-> | [#75](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/75) | anthropic，你搞砸了一切 | 23 | 2 |
-> | [#317](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/317) | [LaTeX] 正文排版存在多处技术问题 | 15 | 10 |
-> | [#381](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/381) | 👀 看 Issues/PRs 太累了，我来全景总结！(含6大专题/网页版/最新#447) 🍉🚀 | 13 | 2 |
+> [!abstract] 最近 10 次 commit（2026-08-30 ~ 2026-08-30）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #14 from shihyuho/feat/antigravity-plugin
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 我的女友景甜
+> # sepia
 > 
-> 这是一个 5 x 8 英寸的 XeLaTeX 排版工程。
+> **English** | [繁體中文](README.zh-TW.md)
 > 
-> ## 编译
+> > De-AI writing at the layer that actually gives AI away. Fiction gets its narrative architecture repaired before anyone touches word choice; professional documents (release notes, PR replies, postmortems, tickets, technical articles) each get rules matched to their venue.
 > 
-> 需要 XeLaTeX 和标准 TeX Live 发行版：
+> A portable [Agent Skill](https://agentskills.io/specification) for Claude Code, Codex, Grok Build, and Antigravity. One canonical `SKILL.md`, no per-platform forks. Four operations: **write**, **review** (diagnose only), **refactor** (minimal edits), **recreate** (full rewrite).
+> 
+> ## Why another humanizer
+> 
+> Every popular humanizer edits word choice and syntax. [StoryScope](https://arxiv.org/abs/2604.03136) (Russell et al., 2026: 61,608 stories, human + 5 frontier LLMs) showed that a classifier using **narrative-structure features alone** detects AI fiction at 93.2% macro-F1, and that editing the surface style away barely moves it (95.5% → 93.9%). The tells that survive are architectural: themes explained by the narrator, single-track causally-tidy plots, emotions rendered only as bodily sensation, no real-world references, no reader, linear time, endings resolved by protagonist growth and acceptance.
+> 
+> sepia turns those measured gaps, together with the eleven related studies digested in [`research/`](research/), into a three-pass writing and revision protocol for fiction:
+> 
+> | Pass | Layer | Examples |
+> |---|---|---|
+> | 1 | Narrative architecture (fiction) | stop explaining the theme, loosen the causal chain, back-load revelations, mix emotion modes, sparse character networks, name real things |
+> | 2 | Discourse flow | de-template the paragraph-question sequence, fix the mid-story sag, vary rhythm and positions |
+> | 3 | Surface style | the classic layer: clichés, syntax templates, vocabulary, register |
+> 
+> Plus a 30-feature diagnosis rubric and per-model fingerprint corrections (Claude, GPT, Gemini, DeepSeek, Kimi).
+> 
+> Professional prose fails differently. The studies point at filler that carries no information, hedging where a judgment was needed, chatbot leftovers, register that ignores the venue, and formatting that looks stamped out. Each document type gets a thin rule file on top of one shared checklist:
+> 
+> | Domain | The gist |
+> |---|---|
+> | Release notes / announcements | user impact first, artifacts per claim, no marketing inflation |
+> | PR / issue replies | answer first, cite `file:line`, no reflex praise, length ∝ stakes |
+> | Postmortems | blameless toward people, merciless toward mechanisms; timestamps, dead ends, owned action items |
+> | Tickets / work orders | title = outcome, testable acceptance criteria, link don't repeat |
+> | Technical articles | open at the problem, one real dead end, one committed opinion, numbers with conditions |
+> 
+> The governing principle throughout: **calibrate to the human distribution, don't invert the AI one.** Humans sit at moderate values; a story with every rule applied is a new fingerprint. The skill selects 3–5 moves per story and leaves slack.
+> 
+> ## Operation entries
+> 
+> The complete plugin package gives Claude Code, Codex, Grok Build, and Antigravity a general router plus four direct operation entries:
+> 
+> | Operation | Claude Code | Codex | Grok Build | Antigravity | Meaning |
+> |---|---|---|---|---|---|
+> | write | `/sepia-write` | `$sepia-write` | `/sepia-write` | `/sepia-write` | Create new prose |
+> | review | `/sepia-review` | `$sepia-review` | `/sepia-review` | `/sepia-review` | Diagnose without editing |
+> | refactor | `/sepia-refactor` | `$sepia-refactor` | `/sepia-refactor` | `/sepia-refactor` | Make minimal in-place edits |
+> | recreate | `/sepia-recreate` | `$sepia-recreate` | `/sepia-recreate` | `/sepia-recreate` | Rewrite from the source facts and intent |
+> 
+> The general `/sepia` (Claude Code, Grok Build, and Antigravity) or `$sepia` (Codex) router remains available. The operation wrappers depend on their sibling canonical skill, so standalone wrapper installation is unsupported; install the complete plugin package. This table documents package syntax; installed UI and runtime behavior were not exercised as part of this change.
+> 
+> ## Install
+> 
+> All four tools use their native plugin installers. Every install defaults to **user scope** — install once, use it in every project.
+> 
+> ### Claude Code
 > 
 > ```bash
-> mkdir -p build
-> xelatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
-> xelatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
+> # install
+> claude plugin marketplace add Nanako0129/sepia
+> claude plugin install sepia@sepia --scope user
+> 
+> # update
+> claude plugin marketplace update sepia
+> claude plugin update sepia
 > ```
+> 
+> The in-session `/plugin install` dialog asks you to pick a scope — choose **User** there.
+> 
+> ### Codex
+> 
+> ```bash
+> # install
+> codex plugin marketplace add Nanako0129/sepia
+> codex plugin add sepia@sepia
+> 
+> # update — refresh the marketplace snapshot, then re-add to pick up the new version
+> codex plugin marketplace upgrade sepia
+> codex plugin add sepia@sepia
+> ```
+> 
+> ### Grok Build
+> 
+> ```bash
+> # install
+> grok plugin install Nanako0129/sepia --trust
+> 
+> # update
+> grok plugin update
+> ```
+> 
+> Grok also auto-discovers a Claude Code install of sepia if you have one; either route works.
+> 
+> ### Antigravity
+> 
+> ```bash
+> # install directly from GitHub
+> agy plugin install https://github.com/Nanako0129/sepia
+> ```
+> 
+> ### Skills CLI (alternative, 77+ agents)
+> 
+> ```bash
+> npx skills add Nanako0129/sepia -g     # -g = user scope; the default is project
+> npx skills update -g                   # update
+> ```
+> 
+> ### Project scope (alternative)
+> 
+> When one repo should pin its own copy, commit `skills/sepia/` into that repo as `.agents/skills/sepia` (Codex + Antigravity) or `.claude/skills/sepia` (Claude Code).
+> 
+> ## Uninstall
+> 
+> Each tool uses its native command:
+> 
+> ```bash
+> # Claude Code
+> claude plugin uninstall sepia@sepia --scope user
+> 
+> # Codex
+> codex plugin remove sepia@sepia
+> 
+> # Grok Build
+> grok plugin uninstall sepia
+> 
+> # Antigravity
+> agy plugin uninstall sepia
+> ```
+> 
+> ## Layout
+> 
+> ```text
+> sepia/
+> ├── plugin.json              # Antigravity packaging
+> ├── skills/
+> │   ├── sepia/                # canonical skill (Agent Skills standard)
+> │   │   ├── SKILL.md          # routing, operations, calibration rules, guardrails
+> │   │   └── references/       # passes, rubric, fingerprints, and domain rules
+> │   ├── sepia-write/SKILL.md  # thin fixed-operation wrappers
+> │   ├── sepia-review/SKILL.md
+> │   ├── sepia-refactor/SKILL.md
+> │   └── sepia-recreate/SKILL.md
+> ├── .claude-plugin/          # Claude Code packaging (plugin.json, marketplace.json)
+> ├── .codex-plugin/           # Codex packaging
+> ├── .agents/                 # Codex/Antigravity workspace-mode discovery + Antigravity workflow
+> └── research/                # digested evidence base with sources
+> ```
+> 
+> ## Star History
+> 
+>   
+>     
+>     
+>     
+>   
+> 
+> ## Sources
+> 
+> Full digests with links in [`research/`](research/). Primary: StoryScope ([arXiv:2604.03136](https://arxiv.org/abs/2604.03136)); LAMP ([CHI 2025](https://arxiv.org/abs/2409.14509)); Measuring AI Slop ([arXiv:2509.19163](https://arxiv.org/abs/2509.19163)); Reinhart et al. ([PNAS 2025](https://arxiv.org/abs/2410.16107)); Russell et al. ([ACL 2025](https://arxiv.org/abs/2501.15654)); NarraBench ([arXiv:2510.09869](https://arxiv.org/abs/2510.09869)); Echoes in AI ([PNAS 2025](https://arxiv.org/abs/2501.00273)); QUDsim ([COLM 2025](https://arxiv.org/abs/2504.09373)); Beguš ([2024](https://arxiv.org/abs/2310.12902)); Beyond Checkmate ([EMNLP 2025](https://arxiv.org/abs/2501.19301)); Nonaka & Perry ([2025](https://arxiv.org/abs/2510.18932)); Chakrabarty et al. ([2026](https://arxiv.org/abs/2510.13939)).
+> 
+> ## License
+> 
+> MIT
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex)
+[GitHub](https://github.com/Nanako0129/sepia)
 
 ## 相關收錄
 
@@ -199,7 +371,7 @@ No description available.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
+> WHERE category = "Other" AND file.name != "Nanako0129--sepia"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -208,7 +380,7 @@ No description available.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TeX" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "Nanako0129--sepia" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -217,18 +389,18 @@ No description available.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
+> WHERE week = "2026-W36" AND file.name != "Nanako0129--sepia"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/Nanako0129--sepia");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "HEJustinSun--my-girlfriend-jingtian-latex" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Nanako0129--sepia" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -244,7 +416,7 @@ No description available.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "HEJustinSun" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
+> WHERE owner = "Nanako0129" AND file.name != "Nanako0129--sepia"
 > SORT stars DESC
 > ```
 
@@ -252,7 +424,7 @@ No description available.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/Nanako0129--sepia");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -269,7 +441,7 @@ No description available.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/Nanako0129--sepia");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -302,7 +474,7 @@ No description available.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/Nanako0129--sepia");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -326,7 +498,7 @@ No description available.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/Nanako0129--sepia");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -363,7 +535,7 @@ No description available.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/Nanako0129--sepia");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -446,7 +618,7 @@ No description available.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-28** — 首次收錄
+> **2026-08-31** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -462,7 +634,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-31|2026-08-31]] — 再次上榜，4.2k stars
-- [[2026-08-30|2026-08-30]] — 再次上榜，4.0k stars
-- [[2026-08-29|2026-08-29]] — 再次上榜，3.8k stars
-- [[2026-08-28|2026-08-28]] — 首次收錄，3.4k stars
+- [[2026-08-31|2026-08-31]] — 首次收錄，992 stars

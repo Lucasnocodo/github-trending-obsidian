@@ -1,20 +1,20 @@
 ---
-repo: HEJustinSun/my-girlfriend-jingtian-latex
-url: https://github.com/HEJustinSun/my-girlfriend-jingtian-latex
-owner: HEJustinSun
+repo: amosblomqvist/learn
+url: https://github.com/amosblomqvist/learn
+owner: amosblomqvist
 owner_type: User
-language: TeX
+language: TypeScript
 license: N/A
-description: ""
+description: "My AI learning system."
 homepage: ""
-stars: 4159
-stars_per_day: 1386
-forks: 656
-open_issues: 540
-created: 2026-08-27
-pushed_at: 2026-08-27
-first_seen: 2026-08-28
-week: "2026-W35"
+stars: 931
+stars_per_day: 155
+forks: 91
+open_issues: 4
+created: 2026-08-24
+pushed_at: 2026-08-25
+first_seen: 2026-08-31
+week: "2026-W36"
 month: "2026-08"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-28
+last_reviewed: 2026-08-31
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-09-03"
+appearances: 1
+next_review: "2026-09-07"
 contributor_count: 1
-engagement: "medium"
-issue_close_rate: 4
-repo_size_kb: 17163
-readme_length: 265
+engagement: "low"
+issue_close_rate: 0
+repo_size_kb: 277
+readme_length: 2187
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-28"
-star_history: "2026-08-28:3378,2026-08-29:3775,2026-08-30:4014,2026-08-31:4159"
+ring_history: "assess@2026-08-31"
+star_history: "2026-08-31:931"
 tags:
   - github
   - "category/other"
-  - "lang/tex"
+  - "lang/typescript"
 aliases:
-  - "my-girlfriend-jingtian-latex"
-  - "HEJustinSun/my-girlfriend-jingtian-latex"
+  - "learn"
+  - "amosblomqvist/learn"
 ---
 
-# my-girlfriend-jingtian-latex
+# learn
 
-**3.4k** stars · **3.4k** stars/天 · 建立 1 天前 · TeX · 未標註授權
+**931** stars · **155** stars/天 · 建立 6 天前 · TypeScript · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+const me = dv.page("Repos/amosblomqvist--learn");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -73,17 +73,17 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> No description
+> My AI learning system.
 
 ## 專案簡介
 
-No description available.
+My AI learning system.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/amosblomqvist--learn");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ No description available.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/amosblomqvist--learn");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,56 +142,82 @@ No description available.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 539 |
-| Open Issues | 433 |
-| Issue 解決率 | 4% (16 closed) |
-| 最後推送 | 2026-08-27 |
-| 建立日期 | 2026-08-27 |
-| Repo 大小 | 16.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/HEJustinSun/my-girlfriend-jingtian-latex) |
+| Forks | 91 |
+| Open Issues | 4 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-08-25 |
+| 建立日期 | 2026-08-24 |
+| Repo 大小 | 277 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/amosblomqvist/learn) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@HEJustinSun](https://github.com/HEJustinSun) | 2 |
+> | [@amosblomqvist](https://github.com/amosblomqvist) | 2 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-27 ~ 2026-08-27）
-> **活躍天數** 1 天 · **最新 commit** Add files via upload
+> [!abstract] 最近 10 次 commit（2026-08-24 ~ 2026-08-25）
+> **活躍天數** 2 天 · **最新 commit** updated thumbnail
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#53](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/53) | 我恨你们这些有钱人 | 40 | 5 |
-> | [#75](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/75) | anthropic，你搞砸了一切 | 23 | 2 |
-> | [#317](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/317) | [LaTeX] 正文排版存在多处技术问题 | 15 | 10 |
-> | [#381](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex/issues/381) | 👀 看 Issues/PRs 太累了，我来全景总结！(含6大专题/网页版/最新#447) 🍉🚀 | 13 | 2 |
+> | [#4](https://github.com/amosblomqvist/learn/issues/4) | Request: permission to publish an adapted derivative of skil | 0 | 0 |
+> | [#3](https://github.com/amosblomqvist/learn/issues/3) | License | 0 | 0 |
+> | [#2](https://github.com/amosblomqvist/learn/issues/2) | 让依赖图跨会话存活 —— 全局知识图、掌握度坍缩、课中图状态更新 | 0 | 0 |
+> | [#1](https://github.com/amosblomqvist/learn/issues/1) | Mermaid diagrams render in pi but fail to parse in Obsidian  | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 我的女友景甜
+> # learn
 > 
-> 这是一个 5 x 8 英寸的 XeLaTeX 排版工程。
+> [](https://www.youtube.com/watch?v=kzcI5F4tGiU)
 > 
-> ## 编译
+> My AI learning system from this video: [How I Use AI to Learn Things](https://www.youtube.com/watch?v=kzcI5F4tGiU).
 > 
-> 需要 XeLaTeX 和标准 TeX Live 发行版：
+> This is a personal system I built for myself, shared as-is. Built as a pi configuration: the teaching philosophy encoded in a skill, a few small extensions, and agent definitions.
+> 
+> ## What's in it
+> 
+> - `skills/teach/` — the philosophy and the process
+> - `skills/visualize/` — adds a correct, minimal diagram to a lesson when an idea is clearer as a picture
+> - `extensions/ask-user-question/` — the agent asks you questions through a UI popup
+> - `extensions/quiz/` — graded questions with instant feedback (✓/✗, correct answer, explanation)
+> - `extensions/md-log/` — link a markdown file to the session
+> - `extensions/visual-tools/` — tools for visualization subagents
+> - `agents/` — `researcher`, `svg-maker`, `mermaid-maker`: the subagents the system delegates to
+> 
+> ## Install
+> 
+> This repo **is** a `.pi` directory. From your learning project's root:
 > 
 > ```bash
-> mkdir -p build
-> xelatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
-> xelatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
+> git clone https://github.com/amosblomqvist/learn .pi
 > ```
+> 
+> Then open pi in that directory. (Or copy the pieces you want into your existing project config.)
+> 
+> ## Requirements
+> 
+> - [pi](https://github.com/earendil-works/pi)
+> - A subagent implementation, so the system can spawn the researcher and the visual makers. Recommended: [pi-interactive-subagents](https://github.com/amosblomqvist/pi-interactive-subagents) (tmux only). With it, everything works out of the box. Any other implementation works too, but expect to adapt the agent definitions, e.g. `agents/researcher.md` lists `safe_bash` in its tools, which is specific to that extension.
+> - `ask-user-question` — use the copy bundled here. If your setup already has an `ask-user-question` extension, use **this** one in its place. Popups from different extensions serialize through a shared UI lock, which only works when it's the same implementation.
+> 
+> ## Notes
+> 
+> You can run the system without subagents. The main session does the teaching. You just lose the researcher (truth verification) and the generated visuals.
+> 
+> The teaching skill is written for one learner (me). Edit the skill to fit how you learn best.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/HEJustinSun/my-girlfriend-jingtian-latex)
+[GitHub](https://github.com/amosblomqvist/learn)
 
 ## 相關收錄
 
@@ -199,7 +225,7 @@ No description available.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
+> WHERE category = "Other" AND file.name != "amosblomqvist--learn"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -208,7 +234,7 @@ No description available.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TeX" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "amosblomqvist--learn" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -217,18 +243,18 @@ No description available.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
+> WHERE week = "2026-W36" AND file.name != "amosblomqvist--learn"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/amosblomqvist--learn");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "HEJustinSun--my-girlfriend-jingtian-latex" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "amosblomqvist--learn" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -244,7 +270,7 @@ No description available.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "HEJustinSun" AND file.name != "HEJustinSun--my-girlfriend-jingtian-latex"
+> WHERE owner = "amosblomqvist" AND file.name != "amosblomqvist--learn"
 > SORT stars DESC
 > ```
 
@@ -252,7 +278,7 @@ No description available.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/amosblomqvist--learn");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -269,7 +295,7 @@ No description available.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/amosblomqvist--learn");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -302,7 +328,7 @@ No description available.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/amosblomqvist--learn");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -326,7 +352,7 @@ No description available.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/amosblomqvist--learn");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -363,7 +389,7 @@ No description available.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/HEJustinSun--my-girlfriend-jingtian-latex");
+> const me = dv.page("Repos/amosblomqvist--learn");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -446,7 +472,7 @@ No description available.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-28** — 首次收錄
+> **2026-08-31** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -462,7 +488,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-08-31|2026-08-31]] — 再次上榜，4.2k stars
-- [[2026-08-30|2026-08-30]] — 再次上榜，4.0k stars
-- [[2026-08-29|2026-08-29]] — 再次上榜，3.8k stars
-- [[2026-08-28|2026-08-28]] — 首次收錄，3.4k stars
+- [[2026-08-31|2026-08-31]] — 首次收錄，931 stars
