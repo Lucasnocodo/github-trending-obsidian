@@ -3816,38 +3816,38 @@
   },
   "wide-trace/open-higgsfield": {
     "first_seen": "2026-08-27",
-    "last_seen": "2026-08-31",
-    "times_seen": 5,
+    "last_seen": "2026-09-01",
+    "times_seen": 6,
     "stars_first": 664,
-    "stars_last": 1099
+    "stars_last": 1149
   },
   "HEJustinSun/my-girlfriend-jingtian-latex": {
     "first_seen": "2026-08-28",
-    "last_seen": "2026-08-31",
-    "times_seen": 4,
+    "last_seen": "2026-09-01",
+    "times_seen": 5,
     "stars_first": 3378,
-    "stars_last": 4159
+    "stars_last": 4198
   },
   "sapientinc/PRAXIST": {
     "first_seen": "2026-08-28",
-    "last_seen": "2026-08-31",
-    "times_seen": 4,
+    "last_seen": "2026-09-01",
+    "times_seen": 5,
     "stars_first": 1178,
-    "stars_last": 4810
+    "stars_last": 5686
   },
   "Tencent/WeMM-Embedding": {
     "first_seen": "2026-08-29",
-    "last_seen": "2026-08-31",
-    "times_seen": 3,
+    "last_seen": "2026-09-01",
+    "times_seen": 4,
     "stars_first": 860,
-    "stars_last": 947
+    "stars_last": 1024
   },
   "XiaoDuoYa/codex-with-chatgpt": {
     "first_seen": "2026-08-30",
-    "last_seen": "2026-08-31",
-    "times_seen": 2,
+    "last_seen": "2026-09-01",
+    "times_seen": 3,
     "stars_first": 1007,
-    "stars_last": 1524
+    "stars_last": 1952
   },
   "themartiano/try-omarchy": {
     "first_seen": "2026-08-30",
@@ -3858,17 +3858,17 @@
   },
   "MetaMask-AI/metamask-desktop": {
     "first_seen": "2026-08-31",
-    "last_seen": "2026-08-31",
-    "times_seen": 1,
+    "last_seen": "2026-09-01",
+    "times_seen": 2,
     "stars_first": 1228,
     "stars_last": 1228
   },
   "Nanako0129/sepia": {
     "first_seen": "2026-08-31",
-    "last_seen": "2026-08-31",
-    "times_seen": 1,
+    "last_seen": "2026-09-01",
+    "times_seen": 2,
     "stars_first": 992,
-    "stars_last": 992
+    "stars_last": 1269
   },
   "amosblomqvist/learn": {
     "first_seen": "2026-08-31",
@@ -3883,5 +3883,26 @@
     "times_seen": 1,
     "stars_first": 822,
     "stars_last": 822
+  },
+  "jub0t/Concat": {
+    "first_seen": "2026-09-01",
+    "last_seen": "2026-09-01",
+    "times_seen": 1,
+    "stars_first": 951,
+    "stars_last": 951
+  },
+  "cbrock84/headcount": {
+    "first_seen": "2026-09-01",
+    "last_seen": "2026-09-01",
+    "times_seen": 1,
+    "stars_first": 873,
+    "stars_last": 873
+  },
+  "crmne/fastpotify": {
+    "first_seen": "2026-09-01",
+    "last_seen": "2026-09-01",
+    "times_seen": 1,
+    "stars_first": 856,
+    "stars_last": 856
   }
 }

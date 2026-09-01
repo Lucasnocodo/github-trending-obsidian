@@ -1,68 +1,68 @@
 ---
-repo: XiaoDuoYa/codex-with-chatgpt
-url: https://github.com/XiaoDuoYa/codex-with-chatgpt
-owner: XiaoDuoYa
+repo: jub0t/Concat
+url: https://github.com/jub0t/Concat
+owner: jub0t
 owner_type: User
 language: TypeScript
-license: MIT
-description: "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness."
+license: MPL-2.0
+description: "Free & Open-Source CapCut replacement. (formerly WolfCut)"
 homepage: ""
-stars: 1952
-stars_per_day: 651
-forks: 203
-open_issues: 3
-created: 2026-08-28
+stars: 951
+stars_per_day: 159
+forks: 79
+open_issues: 10
+created: 2026-08-25
 pushed_at: 2026-08-31
-first_seen: 2026-08-30
+first_seen: 2026-09-01
 week: "2026-W36"
-month: "2026-08"
+month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.2.0-alpha.16"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-30
+last_reviewed: 2026-09-01
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-09-04"
-contributor_count: 5
-engagement: "medium"
-issue_close_rate: 85
-repo_size_kb: 134
-readme_length: 6980
-bus_factor: 3
-last_release_days: -1
-release_cadence: "never"
+appearances: 1
+next_review: "2026-09-08"
+contributor_count: 1
+engagement: "low"
+issue_close_rate: 52
+repo_size_kb: 19361
+readme_length: 2584
+bus_factor: 1
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-30"
-star_history: "2026-08-30:1007,2026-08-31:1524,2026-09-01:1952"
+ring_history: "assess@2026-09-01"
+star_history: "2026-09-01:951"
 tags:
   - github
   - "category/other"
   - "lang/typescript"
-  - "topic/ai_agents"
-  - "topic/chatgpt"
-  - "topic/codex"
-  - "topic/mcp"
-  - "topic/model_context_protocol"
+  - "topic/audio_processor"
+  - "topic/auto_caption"
+  - "topic/automation"
+  - "topic/capcut"
+  - "topic/capcut_alternative"
 aliases:
-  - "codex-with-chatgpt"
-  - "XiaoDuoYa/codex-with-chatgpt"
+  - "Concat"
+  - "jub0t/Concat"
 ---
 
-# codex-with-chatgpt
+# Concat
 
-**1.0k** stars · **1.0k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**951** stars · **159** stars/天 · 建立 6 天前 · TypeScript · MPL-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+const me = dv.page("Repos/jub0t--Concat");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ai-agents` `chatgpt` `codex` `mcp` `model-context-protocol` `oauth`
+`個人專案` `v0.2.0-alpha.16`
+
+`audio-processor` `auto-caption` `automation` `capcut` `capcut-alternative` `content-creation` `cross-platform` `desktop-app` `ffmpeg` `free-video-editor` `non-linear-editor` `offline-first` `open-source-video-editor` `rust-lang` `tauri-app` `video-editing` `video-editing-software` `video-processing-tool` `whisper-cpp`
 
 > [!summary] 一句話摘要
-> ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.
+> Free & Open-Source CapCut replacement. (formerly WolfCut)
 
 ## 專案簡介
 
-ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.
+Free & Open-Source CapCut replacement. (formerly WolfCut)
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/jub0t--Concat");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -123,7 +125,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/jub0t--Concat");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -147,240 +149,126 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 117 |
-| Open Issues | 2 |
-| Issue 解決率 | 85% (11 closed) |
-| 最後推送 | 2026-08-30 |
-| 建立日期 | 2026-08-28 |
-| Repo 大小 | 134 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/XiaoDuoYa/codex-with-chatgpt) |
-| Topics | `ai-agents` `chatgpt` `codex` `mcp` `model-context-protocol` `oauth` |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@modelcontextprotocol/sdk` `commander` `express` `ignore` `zod` `@types/express` `@types/node` `tsx` `typescript` `vitest`
+| Forks | 79 |
+| Open Issues | 10 |
+| Issue 解決率 | 52% (11 closed) |
+| 最後推送 | 2026-08-31 |
+| 建立日期 | 2026-08-25 |
+| Repo 大小 | 18.9 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/jub0t/Concat) |
+| Topics | `audio-processor` `auto-caption` `automation` `capcut` `capcut-alternative` `content-creation` `cross-platform` `desktop-app` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 97
->     "JavaScript" : 3
+>     "TypeScript" : 48
+>     "Rust" : 45
+>     "Python" : 3
+>     "CSS" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@EdisonJwa](https://github.com/EdisonJwa) | 1 |
-> | [@rtxmythically](https://github.com/rtxmythically) | 1 |
-> | [@vetrovk](https://github.com/vetrovk) | 1 |
-> | [@catball912](https://github.com/catball912) | 1 |
-> | [@XiaoDuoYa](https://github.com/XiaoDuoYa) | 1 |
+> | [@jub0t](https://github.com/jub0t) | 155 |
+
+**最新版本**：v0.2.0-alpha.16 — WolfCut v0.2.0-alpha.16 (2026-08-31)
+
+> [!info]- Release Notes
+> WolfCut is MPL-2.0. The installers bundle GPL-built FFmpeg binaries,
+> invoked as separate programs — sources and licenses in
+> [THIRD_PARTY_NOTICES.md](https://github.com/jub0t/WolfCut/blob/main/THIRD_PARTY_NOTICES.md).
+> 
+> 
+> **Full Changelog**: https://github.com/jub0t/Concat/compare/v0.2.0-alpha.15...v0.2.0-alpha.16
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-29 ~ 2026-08-30）
-> **活躍天數** 2 天 · **最新 commit** Offer an optional Cloudflare named hostname so ChatGPT connectors survive restarts.
+> [!abstract] 最近 10 次 commit（2026-08-30 ~ 2026-08-31）
+> **活躍天數** 2 天 · **最新 commit** Rebuild the Text panel on the wc-ui-rnd inspector
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#5](https://github.com/XiaoDuoYa/codex-with-chatgpt/issues/5) | 在已有多轮对话sessions的项目无法激活配对码 `跟进中` | 1 | 2 |
-> | [#22](https://github.com/XiaoDuoYa/codex-with-chatgpt/issues/22) | Optional fixed Cloudflare domain (keep Quick Tunnel as defau `跟进中` | 0 | 0 |
+> | [#20](https://github.com/jub0t/Concat/issues/20) | Frame Rate lagging | 2 | 2 |
+> | [#7](https://github.com/jub0t/Concat/issues/7) | support nix package manager `bug` `good first issue` | 2 | 2 |
+> | [#28](https://github.com/jub0t/Concat/issues/28) | Add feature clipper | 1 | 1 |
+> | [#26](https://github.com/jub0t/Concat/issues/26) | Preview renders black/gray during playback and scrubbing. `bug` `good first issue` | 1 | 3 |
+> | [#31](https://github.com/jub0t/Concat/issues/31) | Linux AppImage: WebKitWebProcess SIGABRT on every launch — " | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Codex with ChatGPT
+> # Concat
 > 
-> > ChatGPT thinks. Codex works.
-> > ChatGPT 负责思考，Codex 负责干活。
+> **The free, open-source CapCut replacement.**
 > 
-> ## The problem · 解决什么问题
-> 
-> **中文** — ChatGPT 付费订阅的网页版额度大量闲置，Codex 却在消耗紧张的
-> API 额度做规划和 Review。本项目把"思考"交给你已付费的网页版 ChatGPT，
-> Codex 只负责执行。不用 API Key、不搞逆向代理——官方网页 + 只读 MCP 桥接。
-> 
-> **EN** — ChatGPT Plus/Pro web quota sits idle while your coding agent burns
-> scarce API/Codex tokens on planning and review. This project moves the
-> thinking to the subscription you already pay for; Codex only executes.
-> No API keys, no reverse proxy — official web UI plus a read-only MCP bridge.
-> 
-> ## What it is · 这是什么
-> 
-> **中文** — 把 ChatGPT 网页版变成 Codex 编码会话的"规划与审查大脑"，执行权
-> 完全保留在 Codex 手里。你的仓库永远不会被上传：ChatGPT 通过一条安全的、
-> OAuth 保护的**只读** MCP 连接，按需读取当前工作区里它真正需要的那几行代码。
-> 
-> **EN** — Use the ChatGPT web app as the planning and review brain for your
-> Codex coding sessions, while Codex keeps full ownership of execution. Your
-> repository is never uploaded: ChatGPT reads exactly the lines it needs through
-> a secure, OAuth-protected, **read-only** MCP connection to your current
-> workspace.
-> 
-> Detailed docs below are in English · 详细中文文档见 **[README.zh-CN.md](README.zh-CN.md)**
-> 
-> ## One-paste install · 一段话安装
-> 
-> **中文** — 不懂 git、Node、终端？完全不需要懂。把下面这段话原样复制给你的
-> 编码 Agent（Codex），然后去倒杯咖啡：
-> 
-> ```text
-> 请帮我完整安装并配置 Codex with ChatGPT，全程自动，我是不懂技术的小白，
-> 所有事情你自己做：
-> 
-> 1. 环境自检：需要 git 和 Node.js ≥ 20，缺什么就自动安装
->   （macOS 用 Homebrew，Windows 用 winget），同时安装 cloudflared。
-> 2. 下载：把 https://github.com/XiaoDuoYa/codex-with-chatgpt 克隆到
->    ~/codex-with-chatgpt（已存在就 git pull 更新）。
-> 3. 构建：在该目录里执行 corepack pnpm install 和 corepack pnpm build。
-> 4. 安装 Skill：把仓库里的 skill/SKILL.md 复制到
->    ~/.codex/skills/codex-with-chatgpt/SKILL.md，并把文件中
->    "The codex-with-chatgpt checkout lives at:" 那一行的路径改成实际克隆路径。
-> 5. 首次配置：按 SKILL.md 里的 first-time setup 流程执行
->   （运行 c2c setup，用内置浏览器打开 ChatGPT 配置连接器并输入配对码）。
->    全程只用内置浏览器，禁止打开任何第三方浏览器。
-> 6. 只有遇到需要我登录（ChatGPT / Cloudflare）、验证码或两步验证时才叫我，
->    而且一次只告诉我一个动作。
-> 7. 完成后给我看 ✓ 清单，并确认文件读取测试通过。我不懂 MCP、OAuth、
->    Tunnel、端口这些词，不要向我解释；出了问题先自己修。
-> ```
-> 
-> **EN** — Don't know git, Node, or terminals? You don't need to. Copy the
-> paragraph below, paste it to your coding agent (Codex), and go grab a coffee:
-> 
-> ```text
-> Please install and configure "Codex with ChatGPT" for me, fully automatically.
-> I am a non-technical user — do everything yourself:
-> 
-> 1. Check the environment: git and Node.js >= 20 must be available. Install
->    anything missing yourself (macOS: Homebrew, Windows: winget). Also install
->    cloudflared.
-> 2. Download: clone https://github.com/XiaoDuoYa/codex-with-chatgpt into
->    ~/codex-with-chatgpt (if it already exists, git pull to update).
-> 3. Build: inside that folder run `corepack pnpm install` then `corepack pnpm build`.
-> 4. Install the Skill: copy skill/SKILL.md to
->    ~/.codex/skills/codex-with-chatgpt/SKILL.md, and update the line
->    "The codex-with-chatgpt checkout lives at:" to the actual clone path.
-> 5. First-time setup: follow the SKILL.md "first-time setup" workflow
->    (run c2c setup, configure the ChatGPT connector in the BUILT-IN browser,
->    enter the pairing code). Never open a third-party browser.
-> 6. Only interrupt me for logins (ChatGPT / Cloudflare), CAPTCHAs or 2FA —
->    and give me exactly ONE action at a time.
-> 7. When done, show me the ✓ checklist and confirm the file-read test passed.
->    I don't know what MCP, OAuth, tunnels or ports are. Don't explain them.
->    If anything breaks, fix it yourself first.
-> ```
-> 
-> **Updates · 更新** — The Skill checks GitHub once a day and updates itself when a
-> new version is released; no action needed. You can also say "更新 Codex with ChatGPT"
-> anytime. / Skill 每天自动检查一次 GitHub，有新版本会自动更新，无需任何操作；
-> 也可以随时对 Codex 说"更新 Codex with ChatGPT"。
+>   
+>   
+>   
+>   
 > 
 > ---
 > 
-> *The sections below are in English. 以下详细内容为英文，中文完整版见
-> [README.zh-CN.md](README.zh-CN.md)。*
+> Concat is everything you use CapCut for — without the watermarks, paywalls,
+> or subscriptions. A native Rust engine does the heavy lifting, a clean React
+> interface does the editing, and it all runs on your machine: install it and
+> start cutting, no account, no extra downloads, no setup.
 > 
-> ## Install → Setup → Use (manual)
+> ## Highlights
 > 
-> 1. Install the Codex Skill: copy `skill/` to `~/.codex/skills/codex-with-chatgpt/`.
-> 2. Tell Codex: **"Set up Codex with ChatGPT."** (中文: "使用 Codex with ChatGPT 完成首次配置。")
-> 3. Use Codex normally: **"Use Codex with ChatGPT to implement XXX."**
+> - Free and local Text-to-Speech features.
+> - 🎬 Multi-track editing, with several timelines per project when one isn't enough
+> - ✂️ The cutting toolkit you'd expect: split, trim, merge, transitions, speed control
+> - 💬 Auto-captions that run entirely on your machine — your audio never leaves it
+> - 🎙️ Voice filters for cleaning up or playing with your sound
+> - 📝 Titles and styled text
+> - 📦 Templates — build an edit once, reuse it for the next video
+> - 🚫 No watermarks, no account, nothing behind a paywall
+> - 🖥️ Works the same on macOS, Windows and Linux
 > 
-> That's the whole manual. You don't need to know what MCP, OAuth, tunnels,
-> ports or localhost are — Codex configures everything automatically and you
-> just see:
+> ## Get started
 > 
-> ```
-> Codex with ChatGPT
+> Currently in Alpha (pre-release), Download from [Releases](https://github.com/jub0t/Concat/releases), Supports:
+> - Windows (tested)
+> - MacOs (tested) - unsigned binaries, use `xattr -dr com.apple.quarantine /Applications/Concat.app`
+> - Linux
 > 
-> ✓ Project detected
-> ✓ Workspace Bridge started
-> ✓ Secure connection established
-> ✓ ChatGPT connected
-> ✓ File read test passed
+> ### Nix (Linux)
 > 
-> Ready.
-> ```
+> The repository is a flake. `nix run github:jub0t/Concat` starts the editor
+> with ffmpeg and whisper wired in; `nix develop` opens a shell with everything
+> `npm run app` needs.
 > 
-> The only step that may need you: logging into ChatGPT (and, if you want a
-> stable hostname, logging into Cloudflare once).
+> ## Contribution
 > 
-> ### Optional stable hostname
+> > [!IMPORTANT]
+> > The best way to contribute is to grab a build from the [Release](https://github.com/jub0t/Concat/releases) page and test the application to see where it breaks or how it can be improved.
 > 
-> The default public address is a temporary Cloudflare URL. It changes when the
-> bridge restarts, and Codex repairs ChatGPT by deleting that workspace's
-> connector and adding it again.
+> To learn more about contributing to this project please refer to [this Discussion announcement](https://github.com/jub0t/Concat/discussions/3).
 > 
-> If you have a Cloudflare account and a domain already on Cloudflare, first-time
-> setup (and the next coding session, once) will ask whether you want a stable
-> hostname such as `c2c-.your-domain.com`. That path opens a browser so
-> you can authorize Cloudflare. After that, the ChatGPT connector keeps working
-> across restarts. If you skip it, or login fails, Codex stays on the temporary
-> address — same features, just a slower repair.
+> ## Roadmap (or ideas)
 > 
-> Credentials stay in the OS app state directory, not in the project.
+> 🌟 = important or really desired.
 > 
-> ## How it works
-> 
-> ```
->              ┌───────────────────────────┐
->              │       ChatGPT Web         │
->              │  Reason / Plan / Review   │
->              └──────────┬──────────▲─────┘
->                         │          │
->                MCP      │          │ Computer Use
->             Data Plane  │          │ Control Plane ( dist/, exposes the `c2c` bin
-> pnpm test           # vitest: 76 tests (path security, OAuth, pairing, MCP e2e)
-> 
-> c2c setup           # bridge + tunnel + pairing code, all in one
-> c2c sandbox-allow   # whitelist the settings dir in Codex (macOS + Windows)
-> c2c status / doctor / pair / unpair / logs / stop
-> ```
-> 
-> Requirements: Node.js >= 20, git. `cloudflared` for the public connection
-> (auto-detected; the Skill installs it for you).
-> 
-> Docs: [architecture](docs/architecture.md) · [protocol](docs/protocol.md) ·
-> [security](docs/security.md) · [troubleshooting](docs/troubleshooting.md)
-> 
-> ## Project layout
-> 
-> ```
-> src/
->   bridge/     loopback HTTP server, port recovery, admin API
->   mcp/        8 read-only tools, stateless Streamable HTTP
->   auth/       OAuth 2.1 (PKCE, DCR, refresh rotation, revocation)
->   pairing/    one-time pairing codes (CSPRNG, TTL, rate limits)
->   workspace/  path containment, sensitive-file policy, search, git
->   tunnel/     TunnelProvider abstraction + Cloudflare Quick/Named Tunnel
->   execution/  execution records for the review loop
->   process/    daemon lifecycle
->   cli/        the c2c CLI
-> skill/        the Codex Skill (the real UX layer)
-> tests/        unit + integration tests
-> docs/         architecture / protocol / security / troubleshooting
-> ```
-> 
-> ## Status & disclaimer
-> 
-> V1. Verified end-to-end: bridge, OAuth + pairing, public tunnel, ChatGPT
-> connector setup, zero-touch first-run experience.
-> 
-> **Unofficial community project. Not affiliated with or endorsed by OpenAI.**
-> 
-> ## License
-> 
-> [MIT](LICENSE)
+> - [ ] Templates: Improve templates, create centralized registry of templates contributed by users (kinda like npm).
+> - [ ] Hardware analysis: for device-tier detection, checking how good or potato someone's device is.
+> - [ ] Effects: A scaleable way to embed or add hundreds of different Transition styles, Effects, etc to the Library.
+> - [ ] Noise Cancelation/Removal.
+> - [ ] Object/Face Tracking: Proposed (can do better): MOSSE/KCF/optical flow.
+> - [ ] Auto Human Face Detection & Blurring features: YuNet + tracker, or look for better alternative tech.
+> - [ ] Caption text highlighting: Achievable with Whisper.cpp for timestamps.
+> - [ ] Profanity detection from Audio: Whisper + dictionary.
+> - [ ] Audio Silence removal feature.
+> - [ ] Auto Reframe: YuNet/person detector + tracker.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/XiaoDuoYa/codex-with-chatgpt)
+[GitHub](https://github.com/jub0t/Concat)
 
 ## 相關收錄
 
@@ -388,7 +276,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "XiaoDuoYa--codex-with-chatgpt"
+> WHERE category = "Other" AND file.name != "jub0t--Concat"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -397,7 +285,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "XiaoDuoYa--codex-with-chatgpt" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "jub0t--Concat" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -406,18 +294,18 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "XiaoDuoYa--codex-with-chatgpt"
+> WHERE week = "2026-W36" AND file.name != "jub0t--Concat"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/jub0t--Concat");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "XiaoDuoYa--codex-with-chatgpt" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "jub0t--Concat" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -433,7 +321,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "XiaoDuoYa" AND file.name != "XiaoDuoYa--codex-with-chatgpt"
+> WHERE owner = "jub0t" AND file.name != "jub0t--Concat"
 > SORT stars DESC
 > ```
 
@@ -441,7 +329,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/jub0t--Concat");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -458,7 +346,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/jub0t--Concat");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -491,7 +379,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/jub0t--Concat");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -515,7 +403,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/jub0t--Concat");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -552,7 +440,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/jub0t--Concat");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -635,7 +523,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-30** — 首次收錄
+> **2026-09-01** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -651,6 +539,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-01|2026-09-01]] — 再次上榜，2.0k stars
-- [[2026-08-31|2026-08-31]] — 再次上榜，1.5k stars
-- [[2026-08-30|2026-08-30]] — 首次收錄，1.0k stars
+- [[2026-09-01|2026-09-01]] — 首次收錄，951 stars

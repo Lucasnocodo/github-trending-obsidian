@@ -1,68 +1,68 @@
 ---
-repo: XiaoDuoYa/codex-with-chatgpt
-url: https://github.com/XiaoDuoYa/codex-with-chatgpt
-owner: XiaoDuoYa
+repo: crmne/fastpotify
+url: https://github.com/crmne/fastpotify
+owner: crmne
 owner_type: User
-language: TypeScript
+language: Rust
 license: MIT
-description: "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness."
-homepage: ""
-stars: 1952
-stars_per_day: 651
-forks: 203
-open_issues: 3
-created: 2026-08-28
+description: "Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows."
+homepage: "https://fastpotify.rocks"
+stars: 856
+stars_per_day: 214
+forks: 43
+open_issues: 26
+created: 2026-08-27
 pushed_at: 2026-08-31
-first_seen: 2026-08-30
+first_seen: 2026-09-01
 week: "2026-W36"
-month: "2026-08"
+month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.4.1"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-30
+last_reviewed: 2026-09-01
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-09-04"
 contributor_count: 5
-engagement: "medium"
-issue_close_rate: 85
-repo_size_kb: 134
-readme_length: 6980
-bus_factor: 3
-last_release_days: -1
-release_cadence: "never"
+engagement: "low"
+issue_close_rate: 63
+repo_size_kb: 9617
+readme_length: 9590
+bus_factor: 1
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-08-30"
-star_history: "2026-08-30:1007,2026-08-31:1524,2026-09-01:1952"
+ring_history: "assess@2026-09-01"
+star_history: "2026-09-01:856"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
-  - "topic/ai_agents"
-  - "topic/chatgpt"
-  - "topic/codex"
-  - "topic/mcp"
-  - "topic/model_context_protocol"
+  - "lang/rust"
+  - "topic/audio"
+  - "topic/cross_platform"
+  - "topic/desktop_app"
+  - "topic/egui"
+  - "topic/gui"
 aliases:
-  - "codex-with-chatgpt"
-  - "XiaoDuoYa/codex-with-chatgpt"
+  - "fastpotify"
+  - "crmne/fastpotify"
 ---
 
-# codex-with-chatgpt
+# fastpotify
 
-**1.0k** stars · **1.0k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**856** stars · **214** stars/天 · 建立 4 天前 · Rust · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+const me = dv.page("Repos/crmne--fastpotify");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ai-agents` `chatgpt` `codex` `mcp` `model-context-protocol` `oauth`
+`v0.4.1`
+
+`audio` `cross-platform` `desktop-app` `egui` `gui` `librespot` `linux` `macos` `mpris` `music` `music-player` `rust` `spotify` `spotify-client` `spotify-connect` `windows`
 
 > [!summary] 一句話摘要
-> ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.
+> Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.
 
 ## 專案簡介
 
-ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.
+Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/crmne--fastpotify");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -123,7 +125,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/crmne--fastpotify");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -147,240 +149,234 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 117 |
-| Open Issues | 2 |
-| Issue 解決率 | 85% (11 closed) |
-| 最後推送 | 2026-08-30 |
-| 建立日期 | 2026-08-28 |
-| Repo 大小 | 134 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/XiaoDuoYa/codex-with-chatgpt) |
-| Topics | `ai-agents` `chatgpt` `codex` `mcp` `model-context-protocol` `oauth` |
+| Forks | 43 |
+| Open Issues | 26 |
+| Issue 解決率 | 63% (44 closed) |
+| 最後推送 | 2026-08-31 |
+| 建立日期 | 2026-08-27 |
+| 官方網站 | [Link](https://fastpotify.rocks) |
+| Repo 大小 | 9.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/crmne/fastpotify) |
+| Topics | `audio` `cross-platform` `desktop-app` `egui` `gui` `librespot` `linux` `macos` |
 
 > [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@modelcontextprotocol/sdk` `commander` `express` `ignore` `zod` `@types/express` `@types/node` `tsx` `typescript` `vitest`
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "TypeScript" : 97
->     "JavaScript" : 3
-> ```
+> `Cargo.toml` 中的核心套件：
+> `name` `version` `edition` `rust-version` `license` `description` `repository` `keywords` `categories` `name` `path` `name` `path` `anyhow` `thiserror`
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@EdisonJwa](https://github.com/EdisonJwa) | 1 |
-> | [@rtxmythically](https://github.com/rtxmythically) | 1 |
-> | [@vetrovk](https://github.com/vetrovk) | 1 |
-> | [@catball912](https://github.com/catball912) | 1 |
-> | [@XiaoDuoYa](https://github.com/XiaoDuoYa) | 1 |
+> | [@crmne](https://github.com/crmne) | 249 |
+> | [@mikenoired](https://github.com/mikenoired) | 9 |
+> | [@dappermint](https://github.com/dappermint) | 6 |
+> | [@kveld9](https://github.com/kveld9) | 6 |
+> | [@oyuh](https://github.com/oyuh) | 3 |
+
+**最新版本**：v0.4.1 (2026-08-31)
+
+> [!info]- Release Notes
+> Fastpotify turns into Winamp. 0.4.1 is 0.4.0 plus a first day of fixes, and these notes carry the whole story: the mini player with classic skin support, right-to-left text, compact views, a tougher audio output, and a long list of fixes. Thanks to everyone who tried the five release candidates and reported back. The macOS build is not notarized yet, so the first-open steps on the download page apply; clear the quarantine flag with `xattr -dr` on macOS 26.
+> 
+> ## New in 0.4.1
+> 
+> - **Each credited artist is its own link**, in the track tables and the player bar, instead of one link that always opened the first; a comma inside a name stays a name. Thanks @mikenoired. (#100)
+> - **The Date added column says how long ago** for the first thirty days, the way Spotify does, and keeps the calendar date beyond that. Thanks @mikenoired. (#102)
+> - **The mini player's playlist follows a double-click at once** instead of waiting for the queue to be fetched again. By @crmne.
+> - **The scroll wheel moves one step a notch on Windows**, which multiplies a notch into its line setting and made the volume jump fifteen percent. By @crmne; thanks @scrxp for the report. (#103)
+> - **Japanese and every other script the skin's font lacks scroll through the marquee** in the pixel face the playlist already uses, instead of a row of question marks. By @crmne; thanks @gitHatmos for the report. (#104)
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-29 ~ 2026-08-30）
-> **活躍天數** 2 天 · **最新 commit** Offer an optional Cloudflare named hostname so ChatGPT connectors survive restarts.
+> [!abstract] 最近 10 次 commit（2026-08-31 ~ 2026-08-31）
+> **活躍天數** 1 天 · **最新 commit** Give the frame rate detents, like a gear lever
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#5](https://github.com/XiaoDuoYa/codex-with-chatgpt/issues/5) | 在已有多轮对话sessions的项目无法激活配对码 `跟进中` | 1 | 2 |
-> | [#22](https://github.com/XiaoDuoYa/codex-with-chatgpt/issues/22) | Optional fixed Cloudflare domain (keep Quick Tunnel as defau `跟进中` | 0 | 0 |
+> | [#73](https://github.com/crmne/fastpotify/issues/73) | App crashes when trying to start playback [Fedora KDE] `bug` | 2 | 8 |
+> | [#107](https://github.com/crmne/fastpotify/issues/107) | Can't Sign-In on WIndows 10 `bug` | 1 | 0 |
+> | [#106](https://github.com/crmne/fastpotify/issues/106) | Add a recents tab `enhancement` | 1 | 0 |
+> | [#105](https://github.com/crmne/fastpotify/issues/105) | Allow selecting multiple songs `enhancement` | 1 | 0 |
+> | [#96](https://github.com/crmne/fastpotify/issues/96) | Autoscroll (scrolling with middle-click) `enhancement` | 1 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Codex with ChatGPT
+> # Fastpotify
 > 
-> > ChatGPT thinks. Codex works.
-> > ChatGPT 负责思考，Codex 负责干活。
+> **Spotify, native and fast.** A lightweight Spotify client written in Rust with
+> [egui](https://github.com/emilk/egui), playing music through
+> [librespot](https://github.com/librespot-org/librespot). It runs on Linux,
+> macOS, and Windows, starts in well under a second, and stays small while it
+> runs. There is no browser engine anywhere in the process.
 > 
-> ## The problem · 解决什么问题
+> **Playing needs Spotify Premium.** Spotify only lets Premium accounts play
+> music through another app, on the computer itself or on any other device.
+> With a Free account Fastpotify can browse the library but not play it, and
+> says so at sign-in.
 > 
-> **中文** — ChatGPT 付费订阅的网页版额度大量闲置，Codex 却在消耗紧张的
-> API 额度做规划和 Review。本项目把"思考"交给你已付费的网页版 ChatGPT，
-> Codex 只负责执行。不用 API Key、不搞逆向代理——官方网页 + 只读 MCP 桥接。
+> Fastpotify follows in the footsteps of
+> [Omarchy Spotify](https://github.com/stappmus/Omarchy-Spotify) and
+> [spotify-tui](https://github.com/Rigellute/spotify-tui): the familiar Spotify
+> layout, access to your library, and a Spotify Connect receiver in one desktop
+> application rather than a shell plugin.
 > 
-> **EN** — ChatGPT Plus/Pro web quota sits idle while your coding agent burns
-> scarce API/Codex tokens on planning and review. This project moves the
-> thinking to the subscription you already pay for; Codex only executes.
-> No API keys, no reverse proxy — official web UI plus a read-only MCP bridge.
+> **Documentation:** [fastpotify.rocks](https://fastpotify.rocks/): what it is, getting started, everyday use, and how it connects to Spotify.
 > 
-> ## What it is · 这是什么
 > 
-> **中文** — 把 ChatGPT 网页版变成 Codex 编码会话的"规划与审查大脑"，执行权
-> 完全保留在 Codex 手里。你的仓库永远不会被上传：ChatGPT 通过一条安全的、
-> OAuth 保护的**只读** MCP 连接，按需读取当前工作区里它真正需要的那几行代码。
+> ## Install
 > 
-> **EN** — Use the ChatGPT web app as the planning and review brain for your
-> Codex coding sessions, while Codex keeps full ownership of execution. Your
-> repository is never uploaded: ChatGPT reads exactly the lines it needs through
-> a secure, OAuth-protected, **read-only** MCP connection to your current
-> workspace.
+> On Arch Linux, Fastpotify is in the AUR:
 > 
-> Detailed docs below are in English · 详细中文文档见 **[README.zh-CN.md](README.zh-CN.md)**
-> 
-> ## One-paste install · 一段话安装
-> 
-> **中文** — 不懂 git、Node、终端？完全不需要懂。把下面这段话原样复制给你的
-> 编码 Agent（Codex），然后去倒杯咖啡：
-> 
-> ```text
-> 请帮我完整安装并配置 Codex with ChatGPT，全程自动，我是不懂技术的小白，
-> 所有事情你自己做：
-> 
-> 1. 环境自检：需要 git 和 Node.js ≥ 20，缺什么就自动安装
->   （macOS 用 Homebrew，Windows 用 winget），同时安装 cloudflared。
-> 2. 下载：把 https://github.com/XiaoDuoYa/codex-with-chatgpt 克隆到
->    ~/codex-with-chatgpt（已存在就 git pull 更新）。
-> 3. 构建：在该目录里执行 corepack pnpm install 和 corepack pnpm build。
-> 4. 安装 Skill：把仓库里的 skill/SKILL.md 复制到
->    ~/.codex/skills/codex-with-chatgpt/SKILL.md，并把文件中
->    "The codex-with-chatgpt checkout lives at:" 那一行的路径改成实际克隆路径。
-> 5. 首次配置：按 SKILL.md 里的 first-time setup 流程执行
->   （运行 c2c setup，用内置浏览器打开 ChatGPT 配置连接器并输入配对码）。
->    全程只用内置浏览器，禁止打开任何第三方浏览器。
-> 6. 只有遇到需要我登录（ChatGPT / Cloudflare）、验证码或两步验证时才叫我，
->    而且一次只告诉我一个动作。
-> 7. 完成后给我看 ✓ 清单，并确认文件读取测试通过。我不懂 MCP、OAuth、
->    Tunnel、端口这些词，不要向我解释；出了问题先自己修。
+> ```bash
+> yay -S fastpotify-bin      # the released build, ready made
+> yay -S fastpotify          # the release, built from source
+> yay -S fastpotify-git      # built from the latest commit
 > ```
 > 
-> **EN** — Don't know git, Node, or terminals? You don't need to. Copy the
-> paragraph below, paste it to your coding agent (Codex), and go grab a coffee:
+> On macOS, with [Homebrew](https://brew.sh):
 > 
-> ```text
-> Please install and configure "Codex with ChatGPT" for me, fully automatically.
-> I am a non-technical user — do everything yourself:
-> 
-> 1. Check the environment: git and Node.js >= 20 must be available. Install
->    anything missing yourself (macOS: Homebrew, Windows: winget). Also install
->    cloudflared.
-> 2. Download: clone https://github.com/XiaoDuoYa/codex-with-chatgpt into
->    ~/codex-with-chatgpt (if it already exists, git pull to update).
-> 3. Build: inside that folder run `corepack pnpm install` then `corepack pnpm build`.
-> 4. Install the Skill: copy skill/SKILL.md to
->    ~/.codex/skills/codex-with-chatgpt/SKILL.md, and update the line
->    "The codex-with-chatgpt checkout lives at:" to the actual clone path.
-> 5. First-time setup: follow the SKILL.md "first-time setup" workflow
->    (run c2c setup, configure the ChatGPT connector in the BUILT-IN browser,
->    enter the pairing code). Never open a third-party browser.
-> 6. Only interrupt me for logins (ChatGPT / Cloudflare), CAPTCHAs or 2FA —
->    and give me exactly ONE action at a time.
-> 7. When done, show me the ✓ checklist and confirm the file-read test passed.
->    I don't know what MCP, OAuth, tunnels or ports are. Don't explain them.
->    If anything breaks, fix it yourself first.
+> ```sh
+> brew install --cask crmne/tap/fastpotify
 > ```
 > 
-> **Updates · 更新** — The Skill checks GitHub once a day and updates itself when a
-> new version is released; no action needed. You can also say "更新 Codex with ChatGPT"
-> anytime. / Skill 每天自动检查一次 GitHub，有新版本会自动更新，无需任何操作；
-> 也可以随时对 Codex 说"更新 Codex with ChatGPT"。
+> Everywhere else it is a single binary. Build it with a stable Rust toolchain
+> (1.95 or newer):
 > 
-> ---
-> 
-> *The sections below are in English. 以下详细内容为英文，中文完整版见
-> [README.zh-CN.md](README.zh-CN.md)。*
-> 
-> ## Install → Setup → Use (manual)
-> 
-> 1. Install the Codex Skill: copy `skill/` to `~/.codex/skills/codex-with-chatgpt/`.
-> 2. Tell Codex: **"Set up Codex with ChatGPT."** (中文: "使用 Codex with ChatGPT 完成首次配置。")
-> 3. Use Codex normally: **"Use Codex with ChatGPT to implement XXX."**
-> 
-> That's the whole manual. You don't need to know what MCP, OAuth, tunnels,
-> ports or localhost are — Codex configures everything automatically and you
-> just see:
-> 
-> ```
-> Codex with ChatGPT
-> 
-> ✓ Project detected
-> ✓ Workspace Bridge started
-> ✓ Secure connection established
-> ✓ ChatGPT connected
-> ✓ File read test passed
-> 
-> Ready.
+> ```bash
+> cargo install --path .
 > ```
 > 
-> The only step that may need you: logging into ChatGPT (and, if you want a
-> stable hostname, logging into Cloudflare once).
+> MilkDrop is drawn by libprojectM, a C++ library built from source along the
+> way, so the build also needs CMake, a C++ compiler, and libclang;
+> `cargo install --path . --no-default-features` leaves MilkDrop out and needs
+> none of them. On Linux you also need the development packages for ALSA,
+> PulseAudio (which covers PipeWire), and the usual windowing libraries, for
+> example on Arch:
 > 
-> ### Optional stable hostname
-> 
-> The default public address is a temporary Cloudflare URL. It changes when the
-> bridge restarts, and Codex repairs ChatGPT by deleting that workspace's
-> connector and adding it again.
-> 
-> If you have a Cloudflare account and a domain already on Cloudflare, first-time
-> setup (and the next coding session, once) will ask whether you want a stable
-> hostname such as `c2c-.your-domain.com`. That path opens a browser so
-> you can authorize Cloudflare. After that, the ChatGPT connector keeps working
-> across restarts. If you skip it, or login fails, Codex stays on the temporary
-> address — same features, just a slower repair.
-> 
-> Credentials stay in the OS app state directory, not in the project.
-> 
-> ## How it works
-> 
-> ```
->              ┌───────────────────────────┐
->              │       ChatGPT Web         │
->              │  Reason / Plan / Review   │
->              └──────────┬──────────▲─────┘
->                         │          │
->                MCP      │          │ Computer Use
->             Data Plane  │          │ Control Plane ( dist/, exposes the `c2c` bin
-> pnpm test           # vitest: 76 tests (path security, OAuth, pairing, MCP e2e)
-> 
-> c2c setup           # bridge + tunnel + pairing code, all in one
-> c2c sandbox-allow   # whitelist the settings dir in Codex (macOS + Windows)
-> c2c status / doctor / pair / unpair / logs / stop
+> ```bash
+> sudo pacman -S --needed alsa-lib libpulse libxkbcommon wayland cmake clang
 > ```
 > 
-> Requirements: Node.js >= 20, git. `cloudflared` for the public connection
-> (auto-detected; the Skill installs it for you).
+> and on Debian or Ubuntu:
 > 
-> Docs: [architecture](docs/architecture.md) · [protocol](docs/protocol.md) ·
-> [security](docs/security.md) · [troubleshooting](docs/troubleshooting.md)
-> 
-> ## Project layout
-> 
-> ```
-> src/
->   bridge/     loopback HTTP server, port recovery, admin API
->   mcp/        8 read-only tools, stateless Streamable HTTP
->   auth/       OAuth 2.1 (PKCE, DCR, refresh rotation, revocation)
->   pairing/    one-time pairing codes (CSPRNG, TTL, rate limits)
->   workspace/  path containment, sensitive-file policy, search, git
->   tunnel/     TunnelProvider abstraction + Cloudflare Quick/Named Tunnel
->   execution/  execution records for the review loop
->   process/    daemon lifecycle
->   cli/        the c2c CLI
-> skill/        the Codex Skill (the real UX layer)
-> tests/        unit + integration tests
-> docs/         architecture / protocol / security / troubleshooting
+> ```bash
+> sudo apt install libasound2-dev libpulse-dev libxkbcommon-dev libwayland-dev \
+>   cmake clang libclang-dev
 > ```
 > 
-> ## Status & disclaimer
+> On Windows, libprojectM is built with Visual Studio 2022, CMake, LLVM, and
+> vcpkg (`vcpkg install glew:x64-windows-static-md`, with
+> `VCPKG_INSTALLATION_ROOT` pointing at the vcpkg folder).
 > 
-> V1. Verified end-to-end: bridge, OAuth + pairing, public tunnel, ChatGPT
-> connector setup, zero-touch first-run experience.
+> With [Nix](https://nixos.org), `nix develop` provides all of it, along with
+> the exact toolchain `rust-toolchain.toml` pins.
 > 
-> **Unofficial community project. Not affiliated with or endorsed by OpenAI.**
+> Titles in a script the interface font does not cover -- Chinese, Japanese,
+> Korean, Arabic, Hebrew, Thai, the Indic scripts and a dozen more -- are drawn
+> with a face borrowed from the system rather than bundled, which would cost
+> more than ten megabytes for Chinese alone. macOS and Windows carry faces for
+> the common ones; on Linux install the Noto families for the scripts you
+> listen to, for example `noto-fonts` and `noto-fonts-cjk` (Arch) or
+> `fonts-noto` and `fonts-noto-cjk` (Debian or Ubuntu). A script with no face
+> installed still shows as empty boxes.
 > 
-> ## License
+> A desktop entry is provided in `packaging/applications/fastpotify.desktop`.
 > 
-> [MIT](LICENSE)
+> 
+> ## What it does
+> 
+> - **Plays music on this computer.** Fastpotify is a Spotify Connect device.
+>   Pick it from your phone, or press play here. Gapless, up to 320 kbps, with
+>   optional volume normalisation and an on-disk audio cache.
+> - **Controls other devices.** Move playback to a speaker, a phone, or
+>   another computer from the device picker, and keep controlling it: play,
+>   pause, skip, seek, shuffle, repeat, volume.
+> - **Finds speakers on your network.** A librespot, spotifyd, or hardware
+>   receiver waiting on the LAN is invisible to Spotify's API until it has an
+>   account. Fastpotify discovers those over mDNS and connects them for you,
+>   after which they behave like any other Spotify Connect device.
+> - **Library access.** Playlists, Liked Songs, saved albums, followed
+>   artists, podcasts, and saved episodes, filterable in the sidebar and as
+>   full pages. Sidebar rows pin to the top and drag into your own order.
+> - **Search** across songs, artists, albums, playlists, podcasts, and episodes,
+>   with a top result and per-type views.
+> - **Home** with Made for you, Recently played, your top artists and songs, and
+>   recommendations.
+> - **Artist pages** with popular songs, a filterable discography, and related
+>   artists. **Album**, **playlist**, and **podcast** pages support playback
+>   from any row.
+> - **Playlists you own** can be created, renamed, described, reordered, and
+>   edited: add from any row's menu or by dragging a song onto the playlist in
+>   the sidebar, remove from the playlist page.
+> - **Queue** as a side panel or a page; add anything to it from a row menu.
+> - **Picks up where you left off.** A cold start shows the song the last
+>   session ended on, paused at the position it stopped at; play carries on
+>   from there instead of restarting it. Next, previous, and the progress bar
+>   work on it before it plays, so a skip never has to start it first.
+> - **Album-art colour.** Pages and the player bar take a tint from the cover
+>   of what you are looking at or listening to. Turn it off in Settings.
+> - **Light and dark**, or follow the system.
+> - **Winamp mini player.** `Ctrl+M` turns the window into a tiny player that
+>   wears classic `.wsz` skins, drawn pixel for pixel at 1x to 4x, with the
+>   spectrum analyser, the playlist, and the equalizer hanging under it as
+>   they did; the logo in the skin brings the big window back. Drop a skin
+>   from the [Winamp Skin Museum](https://skins.webamp.org) on either window
+>   to add it.
+> 
+>   
+> - **Equalizer.** Winamp's ten bands and presets over the music played on
+>   this computer, in Settings and in the skin.
+> - **MilkDrop.** Winamp's visualiser, through
+>   [projectM](https://github.com/projectM-visualizer/projectm), in a
+>   fullscreenable window of its own (a separate process, so it never disturbs
+>   the player), playing MilkDrop's own `.milk` presets; Settings fetches the
+>   packs projectM curates.
+> - **Keyboard-first.** Every common action has a shortcut (`Ctrl+/` or `?` lists
+>   them).
+> - **Keeps playing when you close the window.** The window closes for real,
+>   the music and the process stay in the system tray (Linux status notifier),
+>   and clicking the tray, or your desktop's media controls, brings a window
+>   back. No compositor-specific tricks, so it behaves the same on any
+>   desktop. Quit from the tray menu or `Ctrl+Q`; turn the behaviour off in
+>   Settings if you prefer close-to-quit. On macOS the Dock icon stays present,
+>   and clicking it opens the window again.
+> - **Visible network activity.** Pages show spinners while they load. An
+>   indicator appears in the top bar when a Spotify request takes more than a
+>   moment or is waiting for a rate limit.
+> - **One instance.** Launching it again brings the existing window forward
+>   instead of starting a second copy, on every platform.
+> - **Desktop integration.** MPRIS on Linux, so media keys, the shell, and
+>   `playerctl` see Fastpotify like any other player. On macOS and Windows,
+>   `fastpotify next` and its siblings drive the running app from a terminal,
+>   a launcher, or a hotkey.
+> 
+> 
+> ## Sign in
+> 
+> Press **Sign in with Spotify**. Your browser opens Spotify's own consent
+> page (Authorization Code with PKCE); Fastpotify never sees your password.
+> When Spotify redirects back to the app, your library, search, and control
+> of other devices work immediately. The refresh token is stored in the
+> platform's state directory (`~/.local/state/fastpotify` on Linux), so the
+> browser is needed once per machine.
+> 
+> Playing music **on this computer** is one more one-time browser approval.
+> Spotify treats streaming as a separate grant for its own client identity,
+> which is what librespot plays with. Take it from the device menu ("Play
+> here, set up once") or Settings; it needs Spotify Premium, and librespot
+> stores a reusable credential for later sessions. Browsing works on any
+> account without this step; playing, here or on another device, does not,
+> because Spotify's API only takes playba
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/XiaoDuoYa/codex-with-chatgpt)
+[GitHub](https://github.com/crmne/fastpotify) · [官方網站](https://fastpotify.rocks)
 
 ## 相關收錄
 
@@ -388,7 +384,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "XiaoDuoYa--codex-with-chatgpt"
+> WHERE category = "Other" AND file.name != "crmne--fastpotify"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -397,7 +393,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "XiaoDuoYa--codex-with-chatgpt" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "crmne--fastpotify" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -406,18 +402,18 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "XiaoDuoYa--codex-with-chatgpt"
+> WHERE week = "2026-W36" AND file.name != "crmne--fastpotify"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/crmne--fastpotify");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "XiaoDuoYa--codex-with-chatgpt" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "crmne--fastpotify" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -433,7 +429,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "XiaoDuoYa" AND file.name != "XiaoDuoYa--codex-with-chatgpt"
+> WHERE owner = "crmne" AND file.name != "crmne--fastpotify"
 > SORT stars DESC
 > ```
 
@@ -441,7 +437,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/crmne--fastpotify");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -458,7 +454,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/crmne--fastpotify");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -491,7 +487,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/crmne--fastpotify");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -515,7 +511,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/crmne--fastpotify");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -552,7 +548,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/XiaoDuoYa--codex-with-chatgpt");
+> const me = dv.page("Repos/crmne--fastpotify");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -635,7 +631,7 @@ ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-30** — 首次收錄
+> **2026-09-01** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -651,6 +647,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-01|2026-09-01]] — 再次上榜，2.0k stars
-- [[2026-08-31|2026-08-31]] — 再次上榜，1.5k stars
-- [[2026-08-30|2026-08-30]] — 首次收錄，1.0k stars
+- [[2026-09-01|2026-09-01]] — 首次收錄，856 stars
