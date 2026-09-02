@@ -1,68 +1,63 @@
 ---
-repo: crmne/fastpotify
-url: https://github.com/crmne/fastpotify
-owner: crmne
+repo: tradecatlabs/shulihuazixuecongshu
+url: https://github.com/tradecatlabs/shulihuazixuecongshu
+owner: tradecatlabs
 owner_type: User
-language: Rust
-license: MIT
-description: "Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows."
-homepage: "https://fastpotify.rocks"
-stars: 1588
-stars_per_day: 318
-forks: 65
-open_issues: 37
+language: Python
+license: N/A
+description: ""
+homepage: ""
+stars: 849
+stars_per_day: 170
+forks: 160
+open_issues: 0
 created: 2026-08-27
 pushed_at: 2026-09-01
-first_seen: 2026-09-01
+first_seen: 2026-09-02
 week: "2026-W36"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v0.4.1"
+release_tag: "v2.4.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-01
+last_reviewed: 2026-09-02
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-05"
-contributor_count: 5
-engagement: "low"
-issue_close_rate: 63
-repo_size_kb: 9617
-readme_length: 9590
+appearances: 1
+next_review: "2026-09-09"
+contributor_count: 1
+engagement: "medium"
+issue_close_rate: 100
+repo_size_kb: 142963
+readme_length: 2372
 bus_factor: 1
-last_release_days: 1
+last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-01"
-star_history: "2026-09-01:856,2026-09-02:1588"
+ring_history: "assess@2026-09-02"
+star_history: "2026-09-02:849"
 tags:
   - github
   - "category/other"
-  - "lang/rust"
-  - "topic/audio"
-  - "topic/cross_platform"
-  - "topic/desktop_app"
-  - "topic/egui"
-  - "topic/gui"
+  - "lang/python"
 aliases:
-  - "fastpotify"
-  - "crmne/fastpotify"
+  - "shulihuazixuecongshu"
+  - "tradecatlabs/shulihuazixuecongshu"
 ---
 
-# fastpotify
+# shulihuazixuecongshu
 
-**856** stars · **214** stars/天 · 建立 4 天前 · Rust · MIT
+**849** stars · **170** stars/天 · 建立 5 天前 · Python · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/crmne--fastpotify");
+const me = dv.page("Repos/tradecatlabs--shulihuazixuecongshu");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v0.4.1`
-
-`audio` `cross-platform` `desktop-app` `egui` `gui` `librespot` `linux` `macos` `mpris` `music` `music-player` `rust` `spotify` `spotify-client` `spotify-connect` `windows`
+`個人專案` `v2.4.0`
 
 > [!summary] 一句話摘要
-> Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.
+> No description
 
 ## 專案簡介
 
-Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/tradecatlabs--shulihuazixuecongshu");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +118,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/tradecatlabs--shulihuazixuecongshu");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,234 +142,196 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 43 |
-| Open Issues | 26 |
-| Issue 解決率 | 63% (44 closed) |
-| 最後推送 | 2026-08-31 |
+| Forks | 160 |
+| Open Issues | 0 |
+| Issue 解決率 | 100% (2 closed) |
+| 最後推送 | 2026-09-01 |
 | 建立日期 | 2026-08-27 |
-| 官方網站 | [Link](https://fastpotify.rocks) |
-| Repo 大小 | 9.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/crmne/fastpotify) |
-| Topics | `audio` `cross-platform` `desktop-app` `egui` `gui` `librespot` `linux` `macos` |
+| Repo 大小 | 139.6 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/tradecatlabs/shulihuazixuecongshu) |
 
-> [!info]- 主要依賴
-> `Cargo.toml` 中的核心套件：
-> `name` `version` `edition` `rust-version` `license` `description` `repository` `keywords` `categories` `name` `path` `name` `path` `anyhow` `thiserror`
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 98
+>     "CSS" : 1
+>     "Makefile" : 1
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@crmne](https://github.com/crmne) | 249 |
-> | [@mikenoired](https://github.com/mikenoired) | 9 |
-> | [@dappermint](https://github.com/dappermint) | 6 |
-> | [@kveld9](https://github.com/kveld9) | 6 |
-> | [@oyuh](https://github.com/oyuh) | 3 |
+> | [@tukuaiai](https://github.com/tukuaiai) | 13 |
 
-**最新版本**：v0.4.1 (2026-08-31)
+**最新版本**：v2.4.0 — v2.4.0：正文繁简与异体统一 (2026-08-30)
 
 > [!info]- Release Notes
-> Fastpotify turns into Winamp. 0.4.1 is 0.4.0 plus a first day of fixes, and these notes carry the whole story: the mini player with classic skin support, right-to-left text, compact views, a tougher audio output, and a long list of fixes. Thanks to everyone who tried the five release candidates and reported back. The macOS build is not notarized yet, so the first-open steps on the download page apply; clear the quarantine flag with `xattr -dr` on macOS 26.
+> ## 本次更新
 > 
-> ## New in 0.4.1
+> - 全量普查17册Markdown中的繁体字、日文新字形和旧异体。
+> - 将6册中的7,433处高置信繁体、423处日文新字形或旧异体统一为规范简体。
+> - 将2处上下文型“反覆”改为“反复”，保留“覆盖”“倾覆”等正确用法。
+> - 对7个低频上下文逐一核对原PDF，正确恢复“镭含”“沾着”“氯苯”“音赠”“经过混和”“茎、叶”等内容，避免机械简化引入错误。
+> - 新增中文异体回归审计；351种已确认字符和“反覆”当前均为0处。
+> - 原始PDF及图片资源保持不变。
 > 
-> - **Each credited artist is its own link**, in the track tables and the player bar, instead of one link that always opened the first; a comma inside a name stays a name. Thanks @mikenoired. (#100)
-> - **The Date added column says how long ago** for the first thirty days, the way Spotify does, and keeps the calendar date beyond that. Thanks @mikenoired. (#102)
-> - **The mini player's playlist follows a double-click at once** instead of waiting for the queue to be fetched again. By @crmne.
-> - **The scroll wheel moves one step a notch on Windows**, which multiplies a notch into its line setting and made the volume jump fifteen percent. By @crmne; thanks @scrxp for the report. (#103)
-> - **Japanese and every other script the skin's font lacks scroll through the marquee** in the pixel face the playlist already uses, instead of a row of question marks. By @crmne; thanks @gitHatmos for the report. (#104)
-> ...（完整內容見 GitHub）
+> ## 验证
+> 
+> - 17册独立EPUB：17/17通过。
+> - 三本合订版共1,649个细粒度目录项。
+> - 88,653个MathML，4,878个图片元素，363个表格，237个脚注。
+> - Calibre 8.16.2 smoke：3/3通过。
+> - `TextEdit.go_to_anchor()`：1,564项，0失败、0异常、0百分号编码。
+> - WebEngine目录定位：1,649项，0失败。
+> - EPUB繁体/异体审计：0发现。
+> - 隐私审计：0发现。
+> 
+> Release仍仅发布数学、物理学、化学三本学科合订EPUB。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-31 ~ 2026-08-31）
-> **活躍天數** 1 天 · **最新 commit** Give the frame rate detents, like a gear lever
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#73](https://github.com/crmne/fastpotify/issues/73) | App crashes when trying to start playback [Fedora KDE] `bug` | 2 | 8 |
-> | [#107](https://github.com/crmne/fastpotify/issues/107) | Can't Sign-In on WIndows 10 `bug` | 1 | 0 |
-> | [#106](https://github.com/crmne/fastpotify/issues/106) | Add a recents tab `enhancement` | 1 | 0 |
-> | [#105](https://github.com/crmne/fastpotify/issues/105) | Allow selecting multiple songs `enhancement` | 1 | 0 |
-> | [#96](https://github.com/crmne/fastpotify/issues/96) | Autoscroll (scrolling with middle-click) `enhancement` | 1 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-29 ~ 2026-09-01）
+> **活躍天數** 3 天 · **最新 commit** Revert "修正数学公式句末标点位置"
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Fastpotify
+> # 数理化自学丛书（电子书重建版）
 > 
-> **Spotify, native and fast.** A lightweight Spotify client written in Rust with
-> [egui](https://github.com/emilk/egui), playing music through
-> [librespot](https://github.com/librespot-org/librespot). It runs on Linux,
-> macOS, and Windows, starts in well under a second, and stays small while it
-> runs. There is no browser engine anywhere in the process.
+> 本仓库保存《数理化自学丛书》17 册的原始扫描 PDF、语义化 Markdown、扫描插图资源和可复现 EPUB3 构建工具。
 > 
-> **Playing needs Spotify Premium.** Spotify only lets Premium accounts play
-> music through another app, on the computer itself or on any other device.
-> With a Free account Fastpotify can browse the library but not play it, and
-> says so at sign-in.
+> ## 电子书处理交流群
 > 
-> Fastpotify follows in the footsteps of
-> [Omarchy Spotify](https://github.com/stappmus/Omarchy-Spotify) and
-> [spotify-tui](https://github.com/Rigellute/spotify-tui): the familiar Spotify
-> layout, access to your library, and a Spotify Connect receiver in one desktop
-> application rather than a shell plugin.
+> 新建了一个电子书处理交流群，欢迎感兴趣的朋友加入，一起交流、学习和分享电子书及扫描版 PDF 的数字化处理经验：
 > 
-> **Documentation:** [fastpotify.rocks](https://fastpotify.rocks/): what it is, getting started, everyday use, and how it connects to Spotify.
+> **Telegram：** https://t.me/dzscl
 > 
+> 群内会定期更新和发布扫描版 PDF 处理的数字工序、工具与相关镜像。也欢迎提供赞助 Token 或计算资源；赞助商名单会写入制作的作品，并在合适的位置进行介绍和推广。
 > 
-> ## Install
+> ## 赞助
 > 
-> On Arch Linux, Fastpotify is in the AUR:
+> 本项目计算资源由 **交易猫实验室（TradeCat Labs）** 赞助。
+> 
+> **CA：** https://dexscreener.com/bsc/0x8a99b8d53eff6bc331af529af74ad267f3167777
+> 
+> ## 收录书目
+> 
+> - 代数（第一至第四册）
+> - 平面三角
+> - 平面几何（第一、第二册）
+> - 平面解析几何
+> - 立体几何
+> - 化学（第一至第四册）
+> - 物理（第一至第四册）
+> 
+> 作者元数据统一为“数理化自学丛书编委会”，电子书语言统一为 `zh-CN`。
+> 
+> ## 仓库结构
+> 
+> ```text
+> .
+> ├── books/               # 电子书源文件区
+> │   ├── *.md             # 17 册规范正文源
+> │   └── assets/          # 4,875 个正文图片资源
+> ├── raw/                 # 17 册原始扫描 PDF、导入哈希和资料说明
+> ├── catalog.json         # 书目、顺序、语言和稳定 EPUB UUID
+> ├── epub/                # EPUB 样式、Lua 过滤器及 Pandoc 本地化数据
+> ├── scripts/             # 源文件审计与 EPUB3 构建工具
+> ├── docs/                # 来源、维护与已知问题说明
+> ├── reports/             # 动态审计报告（JSON 不纳入版本控制）
+> └── dist/                # 构建出的 EPUB（不纳入版本控制）
+> ```
+> 
+> Markdown 与 `books/assets/` 保持在同一源文件区，因此正文中的 `assets/...` 相对引用可直接解析；仓库根目录不放置单册电子书源文件。
+> 
+> ## 构建
+> 
+> 依赖：
+> 
+> - Python 3.10+
+> - Pandoc 3.1+
+> - GNU Make（可选）
+> 
+> 原始 PDF 深度审计额外需要 PyPDF2 3.x、qpdf、Poppler（`pdfinfo`、`pdfdetach`、`pdfsig`、`pdftotext`）和 ExifTool。
+> 
+> 完整审计并构建：
 > 
 > ```bash
-> yay -S fastpotify-bin      # the released build, ready made
-> yay -S fastpotify          # the release, built from source
-> yay -S fastpotify-git      # built from the latest commit
+> make all
 > ```
 > 
-> On macOS, with [Homebrew](https://brew.sh):
-> 
-> ```sh
-> brew install --cask crmne/tap/fastpotify
-> ```
-> 
-> Everywhere else it is a single binary. Build it with a stable Rust toolchain
-> (1.95 or newer):
+> 仅审计源文件：
 > 
 > ```bash
-> cargo install --path .
+> make audit
 > ```
 > 
-> MilkDrop is drawn by libprojectM, a C++ library built from source along the
-> way, so the build also needs CMake, a C++ compiler, and libclang;
-> `cargo install --path . --no-default-features` leaves MilkDrop out and needs
-> none of them. On Linux you also need the development packages for ALSA,
-> PulseAudio (which covers PipeWire), and the usual windowing libraries, for
-> example on Arch:
+> 审计17份原始扫描 PDF 的哈希、结构、附件、主动内容和隐私元数据：
 > 
 > ```bash
-> sudo pacman -S --needed alsa-lib libpulse libxkbcommon wayland cmake clang
+> make pdf-audit
 > ```
 > 
-> and on Debian or Ubuntu:
+> 仅构建 EPUB：
 > 
 > ```bash
-> sudo apt install libasound2-dev libpulse-dev libxkbcommon-dev libwayland-dev \
->   cmake clang libclang-dev
+> make epub
 > ```
 > 
-> On Windows, libprojectM is built with Visual Studio 2022, CMake, LLVM, and
-> vcpkg (`vcpkg install glew:x64-windows-static-md`, with
-> `VCPKG_INSTALLATION_ROOT` pointing at the vcpkg folder).
+> 验证已有 EPUB：
 > 
-> With [Nix](https://nixos.org), `nix develop` provides all of it, along with
-> the exact toolchain `rust-toolchain.toml` pins.
+> ```bash
+> make verify
+> ```
 > 
-> Titles in a script the interface font does not cover -- Chinese, Japanese,
-> Korean, Arabic, Hebrew, Thai, the Indic scripts and a dozen more -- are drawn
-> with a face borrowed from the system rather than bundled, which would cost
-> more than ten megabytes for Chinese alone. macOS and Windows carry faces for
-> the common ones; on Linux install the Noto families for the scripts you
-> listen to, for example `noto-fonts` and `noto-fonts-cjk` (Arch) or
-> `fonts-noto` and `fonts-noto-cjk` (Debian or Ubuntu). A script with no face
-> installed still shows as empty boxes.
+> 构建单册：
 > 
-> A desktop entry is provided in `packaging/applications/fastpotify.desktop`.
+> ```bash
+> python3 scripts/build_epubs.py --book '代数（第一册）'
+> ```
 > 
+> 输出位于 `dist/`，报告位于 `reports/`。构建器会检查 ZIP、XML、元数据、内部链接、图片替代文本、MathML 数量以及 EPUB3 nav/EPUB2 NCX 同步状态。同一源文件、同一 Pandoc 版本和同一 `SOURCE_DATE_EPOCH` 下，输出字节可复现。
 > 
-> ## What it does
+> ## Release 发布策略
 > 
-> - **Plays music on this computer.** Fastpotify is a Spotify Connect device.
->   Pick it from your phone, or press play here. Gapless, up to 320 kbps, with
->   optional volume normalisation and an on-disk audio cache.
-> - **Controls other devices.** Move playback to a speaker, a phone, or
->   another computer from the device picker, and keep controlling it: play,
->   pause, skip, seek, shuffle, repeat, volume.
-> - **Finds speakers on your network.** A librespot, spotifyd, or hardware
->   receiver waiting on the LAN is invisible to Spotify's API until it has an
->   account. Fastpotify discovers those over mDNS and connects them for you,
->   after which they behave like any other Spotify Connect device.
-> - **Library access.** Playlists, Liked Songs, saved albums, followed
->   artists, podcasts, and saved episodes, filterable in the sidebar and as
->   full pages. Sidebar rows pin to the top and drag into your own order.
-> - **Search** across songs, artists, albums, playlists, podcasts, and episodes,
->   with a top result and per-type views.
-> - **Home** with Made for you, Recently played, your top artists and songs, and
->   recommendations.
-> - **Artist pages** with popular songs, a filterable discography, and related
->   artists. **Album**, **playlist**, and **podcast** pages support playback
->   from any row.
-> - **Playlists you own** can be created, renamed, described, reordered, and
->   edited: add from any row's menu or by dragging a song onto the playlist in
->   the sidebar, remove from the playlist page.
-> - **Queue** as a side panel or a page; add anything to it from a row menu.
-> - **Picks up where you left off.** A cold start shows the song the last
->   session ended on, paused at the position it stopped at; play carries on
->   from there instead of restarting it. Next, previous, and the progress bar
->   work on it before it plays, so a skip never has to start it first.
-> - **Album-art colour.** Pages and the player bar take a tint from the cover
->   of what you are looking at or listening to. Turn it off in Settings.
-> - **Light and dark**, or follow the system.
-> - **Winamp mini player.** `Ctrl+M` turns the window into a tiny player that
->   wears classic `.wsz` skins, drawn pixel for pixel at 1x to 4x, with the
->   spectrum analyser, the playlist, and the equalizer hanging under it as
->   they did; the logo in the skin brings the big window back. Drop a skin
->   from the [Winamp Skin Museum](https://skins.webamp.org) on either window
->   to add it.
+> 从 `v2.0.0` 起，GitHub Release 只发布以下三本学科合订版 EPUB，不再上传17本独立 EPUB：
 > 
->   
-> - **Equalizer.** Winamp's ten bands and presets over the music played on
->   this computer, in Settings and in the skin.
-> - **MilkDrop.** Winamp's visualiser, through
->   [projectM](https://github.com/projectM-visualizer/projectm), in a
->   fullscreenable window of its own (a separate process, so it never disturbs
->   the player), playing MilkDrop's own `.milk` presets; Settings fetches the
->   packs projectM curates.
-> - **Keyboard-first.** Every common action has a shortcut (`Ctrl+/` or `?` lists
->   them).
-> - **Keeps playing when you close the window.** The window closes for real,
->   the music and the process stay in the system tray (Linux status notifier),
->   and clicking the tray, or your desktop's media controls, brings a window
->   back. No compositor-specific tricks, so it behaves the same on any
->   desktop. Quit from the tray menu or `Ctrl+Q`; turn the behaviour off in
->   Settings if you prefer close-to-quit. On macOS the Dock icon stays present,
->   and clicking it opens the window again.
-> - **Visible network activity.** Pages show spinners while they load. An
->   indicator appears in the top bar when a Spotify request takes more than a
->   moment or is waiting for a rate limit.
-> - **One instance.** Launching it again brings the existing window forward
->   instead of starting a second copy, on every platform.
-> - **Desktop integration.** MPRIS on Linux, so media keys, the shell, and
->   `playerctl` see Fastpotify like any other player. On macOS and Windows,
->   `fastpotify next` and its siblings drive the running app from a terminal,
->   a launcher, or a hotkey.
+> - 数学（合订本）
+> - 物理学（合订本）
+> - 化学（合订本）
 > 
+> 17册 Markdown、原始 PDF、资源和单册构建能力继续保留在仓库中，作为合订本的可审计来源。既有 `v1.0.0`、`v1.1.0` Release 保留，不追溯删除。
 > 
-> ## Sign in
+> ## 发布前隐私审计
 > 
-> Press **Sign in with Spotify**. Your browser opens Spotify's own consent
-> page (Authorization Code with PKCE); Fastpotify never sees your password.
-> When Spotify redirects back to the app, your library, search, and control
-> of other devices work immediately. The refresh token is stored in the
-> platform's state directory (`~/.local/state/fastpotify` on Linux), so the
-> browser is needed once per machine.
+> ```bash
+> make privacy
+> make pre-push
+> ```
 > 
-> Playing music **on this computer** is one more one-time browser approval.
-> Spotify treats streaming as a separate grant for its own client identity,
-> which is what librespot plays with. Take it from the device menu ("Play
-> here, set up once") or Settings; it needs Spotify Premium, and librespot
-> stores a reusable credential for later sessions. Browsing works on any
-> account without this step; playing, here or on another device, does not,
-> because Spotify's API only takes playba
+> 推送门禁覆盖 Git 候选文件、路径跨平台兼容性、PNG 完整性与元数据、生成 EPUB、常见秘密格式、本机路径以及 Git 历史身份信息。详见 [`docs/PRIVACY.md`](docs/PRIVACY.md)。
+> 
+> ## 当前源资产状态
+> 
+> - 原始扫描 PDF：17 册、5,927 页
+> - 规范 Markdown：17 册
+> - 图片资源：4,875 个
+> - 图片引用：4,878 次
+> - 缺失或孤立资源：0
+> - 已验证 EPUB MathML：88,653 个
+> - 空图片替代文本：0
+> 
+> 《立体几何》原扫描第 49、50、55、56 页仍为空白；Markdown 和 EPUB 已依据另一份扫描逐页核对恢复，`raw/` 原字节未改动。详见 [`docs/KNOWN_ISSUES.md`](docs/KNOWN_ISSUES.md)。
+> 
+> ## 权利说明
+> 
+> 本仓库不对原著文字、版式或扫描图像授予新的版权许可。使用或再分发前，请自行确认适用地区的版权状态和授权条件。重建文件主要用于文献保存、校勘和个人研究。
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/crmne/fastpotify) · [官方網站](https://fastpotify.rocks)
+[GitHub](https://github.com/tradecatlabs/shulihuazixuecongshu)
 
 ## 相關收錄
 
@@ -384,7 +339,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "crmne--fastpotify"
+> WHERE category = "Other" AND file.name != "tradecatlabs--shulihuazixuecongshu"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -393,7 +348,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Rust" AND file.name != "crmne--fastpotify" AND status != "archived"
+> WHERE language = "Python" AND file.name != "tradecatlabs--shulihuazixuecongshu" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -402,18 +357,18 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "crmne--fastpotify"
+> WHERE week = "2026-W36" AND file.name != "tradecatlabs--shulihuazixuecongshu"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/tradecatlabs--shulihuazixuecongshu");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "crmne--fastpotify" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "tradecatlabs--shulihuazixuecongshu" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -429,7 +384,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "crmne" AND file.name != "crmne--fastpotify"
+> WHERE owner = "tradecatlabs" AND file.name != "tradecatlabs--shulihuazixuecongshu"
 > SORT stars DESC
 > ```
 
@@ -437,7 +392,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/tradecatlabs--shulihuazixuecongshu");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -454,7 +409,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/tradecatlabs--shulihuazixuecongshu");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -487,7 +442,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/tradecatlabs--shulihuazixuecongshu");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -511,7 +466,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/tradecatlabs--shulihuazixuecongshu");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -548,7 +503,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/tradecatlabs--shulihuazixuecongshu");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -631,7 +586,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-01** — 首次收錄
+> **2026-09-02** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -647,5 +602,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-02|2026-09-02]] — 再次上榜，1.6k stars
-- [[2026-09-01|2026-09-01]] — 首次收錄，856 stars
+- [[2026-09-02|2026-09-02]] — 首次收錄，849 stars

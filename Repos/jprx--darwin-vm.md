@@ -1,68 +1,63 @@
 ---
-repo: crmne/fastpotify
-url: https://github.com/crmne/fastpotify
-owner: crmne
+repo: jprx/darwin-vm
+url: https://github.com/jprx/darwin-vm
+owner: jprx
 owner_type: User
-language: Rust
+language: Python
 license: MIT
-description: "Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows."
-homepage: "https://fastpotify.rocks"
-stars: 1588
-stars_per_day: 318
-forks: 65
-open_issues: 37
+description: "Run iOS/ macOS in Qemu. Virtual iPhone 17, 16, 15, 14, 13, 12 and M5-M1 Apple Si Macs supported."
+homepage: ""
+stars: 893
+stars_per_day: 179
+forks: 74
+open_issues: 5
 created: 2026-08-27
 pushed_at: 2026-09-01
-first_seen: 2026-09-01
+first_seen: 2026-09-02
 week: "2026-W36"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v0.4.1"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-01
+last_reviewed: 2026-09-02
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-05"
-contributor_count: 5
+appearances: 1
+next_review: "2026-09-09"
+contributor_count: 1
 engagement: "low"
-issue_close_rate: 63
-repo_size_kb: 9617
-readme_length: 9590
+issue_close_rate: 17
+repo_size_kb: 33
+readme_length: 9961
 bus_factor: 1
-last_release_days: 1
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-01"
-star_history: "2026-09-01:856,2026-09-02:1588"
+ring_history: "assess@2026-09-02"
+star_history: "2026-09-02:893"
 tags:
   - github
   - "category/other"
-  - "lang/rust"
-  - "topic/audio"
-  - "topic/cross_platform"
-  - "topic/desktop_app"
-  - "topic/egui"
-  - "topic/gui"
+  - "lang/python"
 aliases:
-  - "fastpotify"
-  - "crmne/fastpotify"
+  - "darwin-vm"
+  - "jprx/darwin-vm"
 ---
 
-# fastpotify
+# darwin-vm
 
-**856** stars · **214** stars/天 · 建立 4 天前 · Rust · MIT
+**893** stars · **179** stars/天 · 建立 5 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/crmne--fastpotify");
+const me = dv.page("Repos/jprx--darwin-vm");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v0.4.1`
-
-`audio` `cross-platform` `desktop-app` `egui` `gui` `librespot` `linux` `macos` `mpris` `music` `music-player` `rust` `spotify` `spotify-client` `spotify-connect` `windows`
+`個人專案`
 
 > [!summary] 一句話摘要
-> Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.
+> Run iOS/ macOS in Qemu. Virtual iPhone 17, 16, 15, 14, 13, 12 and M5-M1 Apple Si Macs supported.
 
 ## 專案簡介
 
-Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.
+Run iOS/ macOS in Qemu. Virtual iPhone 17, 16, 15, 14, 13, 12 and M5-M1 Apple Si Macs supported.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/jprx--darwin-vm");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +118,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/jprx--darwin-vm");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,234 +142,253 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 43 |
-| Open Issues | 26 |
-| Issue 解決率 | 63% (44 closed) |
-| 最後推送 | 2026-08-31 |
+| Forks | 74 |
+| Open Issues | 5 |
+| Issue 解決率 | 17% (1 closed) |
+| 最後推送 | 2026-09-01 |
 | 建立日期 | 2026-08-27 |
-| 官方網站 | [Link](https://fastpotify.rocks) |
-| Repo 大小 | 9.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/crmne/fastpotify) |
-| Topics | `audio` `cross-platform` `desktop-app` `egui` `gui` `librespot` `linux` `macos` |
+| Repo 大小 | 33 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/jprx/darwin-vm) |
 
-> [!info]- 主要依賴
-> `Cargo.toml` 中的核心套件：
-> `name` `version` `edition` `rust-version` `license` `description` `repository` `keywords` `categories` `name` `path` `name` `path` `anyhow` `thiserror`
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 58
+>     "Shell" : 42
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@crmne](https://github.com/crmne) | 249 |
-> | [@mikenoired](https://github.com/mikenoired) | 9 |
-> | [@dappermint](https://github.com/dappermint) | 6 |
-> | [@kveld9](https://github.com/kveld9) | 6 |
-> | [@oyuh](https://github.com/oyuh) | 3 |
-
-**最新版本**：v0.4.1 (2026-08-31)
-
-> [!info]- Release Notes
-> Fastpotify turns into Winamp. 0.4.1 is 0.4.0 plus a first day of fixes, and these notes carry the whole story: the mini player with classic skin support, right-to-left text, compact views, a tougher audio output, and a long list of fixes. Thanks to everyone who tried the five release candidates and reported back. The macOS build is not notarized yet, so the first-open steps on the download page apply; clear the quarantine flag with `xattr -dr` on macOS 26.
-> 
-> ## New in 0.4.1
-> 
-> - **Each credited artist is its own link**, in the track tables and the player bar, instead of one link that always opened the first; a comma inside a name stays a name. Thanks @mikenoired. (#100)
-> - **The Date added column says how long ago** for the first thirty days, the way Spotify does, and keeps the calendar date beyond that. Thanks @mikenoired. (#102)
-> - **The mini player's playlist follows a double-click at once** instead of waiting for the queue to be fetched again. By @crmne.
-> - **The scroll wheel moves one step a notch on Windows**, which multiplies a notch into its line setting and made the volume jump fifteen percent. By @crmne; thanks @scrxp for the report. (#103)
-> - **Japanese and every other script the skin's font lacks scroll through the marquee** in the pixel face the playlist already uses, instead of a row of question marks. By @crmne; thanks @gitHatmos for the report. (#104)
-> ...（完整內容見 GitHub）
+> | [@jprx](https://github.com/jprx) | 5 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-31 ~ 2026-08-31）
-> **活躍天數** 1 天 · **最新 commit** Give the frame rate detents, like a gear lever
+> [!abstract] 最近 10 次 commit（2026-08-27 ~ 2026-09-01）
+> **活躍天數** 4 天 · **最新 commit** fix(sprr): read sprr index bits directly from page table descriptor
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#73](https://github.com/crmne/fastpotify/issues/73) | App crashes when trying to start playback [Fedora KDE] `bug` | 2 | 8 |
-> | [#107](https://github.com/crmne/fastpotify/issues/107) | Can't Sign-In on WIndows 10 `bug` | 1 | 0 |
-> | [#106](https://github.com/crmne/fastpotify/issues/106) | Add a recents tab `enhancement` | 1 | 0 |
-> | [#105](https://github.com/crmne/fastpotify/issues/105) | Allow selecting multiple songs `enhancement` | 1 | 0 |
-> | [#96](https://github.com/crmne/fastpotify/issues/96) | Autoscroll (scrolling with middle-click) `enhancement` | 1 | 0 |
+> | [#3](https://github.com/jprx/darwin-vm/issues/3) | add suport for ubuntu | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Fastpotify
+> # darwin-vm
 > 
-> **Spotify, native and fast.** A lightweight Spotify client written in Rust with
-> [egui](https://github.com/emilk/egui), playing music through
-> [librespot](https://github.com/librespot-org/librespot). It runs on Linux,
-> macOS, and Windows, starts in well under a second, and stays small while it
-> runs. There is no browser engine anywhere in the process.
+> Run iOS/ macOS in Qemu. Supports emulating iPhone 17, 16, 15, 14, 13, and 12
+> (A19-A14) and M5-M1 Macs (tested with Macbook Air and Mac Mini). You can debug
+> the kernel, edit the root filesystem, and run a root shell + custom programs.
 > 
-> **Playing needs Spotify Premium.** Spotify only lets Premium accounts play
-> music through another app, on the computer itself or on any other device.
-> With a Free account Fastpotify can browse the library but not play it, and
-> says so at sign-in.
+> Features:
+> - Runs a lightweight debuggable iOS/ macOS (Darwin) system with custom filesystem.
+> - Boots you directly into a root shell in just a few seconds.
+> - Compile and run your own programs as root in the VM, no jailbreak or kernel patches required.
+> - Runs anywhere qemu runs (ARM host not required).
+> - Supports emulating A19-A14 (iOS) and M5-M1 (macOS) CPUs.
+> - Supports SPTM based kernels and CPUs with MIE.
+> - Can debug / patch the kernel, SPTM, TXM, dyld, launchd, and userspace programs.
+> - Automated setup to get going in just a few minutes.
 > 
-> Fastpotify follows in the footsteps of
-> [Omarchy Spotify](https://github.com/stappmus/Omarchy-Spotify) and
-> [spotify-tui](https://github.com/Rigellute/spotify-tui): the familiar Spotify
-> layout, access to your library, and a Spotify Connect receiver in one desktop
-> application rather than a shell plugin.
-> 
-> **Documentation:** [fastpotify.rocks](https://fastpotify.rocks/): what it is, getting started, everyday use, and how it connects to Spotify.
-> 
-> 
-> ## Install
-> 
-> On Arch Linux, Fastpotify is in the AUR:
-> 
-> ```bash
-> yay -S fastpotify-bin      # the released build, ready made
-> yay -S fastpotify          # the release, built from source
-> yay -S fastpotify-git      # built from the latest commit
+> ```
+> $ ./run.sh
+> Darwin Kernel Version 27.0.0: Tue Aug 11 22:05:33 PDT 2026; root:xnu-13432.1.9~3/RELEASE_ARM64_T8142
+> pmap_startup() init/release time: 893478 microsec
+> vm_page_bootstrap: 463555 free pages, 25917 wired pages
+> VM bootstrap: 73 maps, 256 entries and 64 nodes available
+> ptr-packing max: compressor:0x page:0x vmn:0xfffffeffffffff00 vme:0x
+> zone_map_range: min:0x max:0x0, vm-size:0x5cc000000 ro-size:0x29e000000, vm_min:0x ro_min:0x
+> vm: "vm_compressor_mode" is 4
+> VM bootstrap done: 71 maps, 224 entries and 59 nodes left
+> standard timeslicing quantum is 10000 us
+> standard background quantum is 2500 us
+> Long logs support configured: size: 16384
+> Firehose configured: 16 chunks, 8 io pages
+> Log queues configured: slot count: 90, per-slot size: 32768, total size: 2949120
+> OSLog stream configured: stream: 8192 bytes, cache: 2112 bytes
+> [trap_telemetry] trap_telemetry_init
+> mig_table_max_displ = 91 mach_kobj_count = 390
+> debug_log_init: Error!! gPanicBase is still not initialized
+> libTXM_KernelVersion: 12
+> libTXM_Image4Version: 1
+> TXM [Log]: setup logging: 32768 bytes (256 | 128)
+> TXM [Log]: system supports DIT feature
+> TXM [Log]: setup device tree range
+> TXM [Log]: unable to find esdm-fuses property in /chosen
+> TXM [Log]: resolved system platform identity: 0
+> TXM [Log]: Code Signing Monitor Image4 Module Version 7.0.0: Mon Aug 10 00:10:03 PDT 2026; root:AppleImage4_txm-374~7048/libima
+> ...
+> Darwin Ignition Sequence Version 1.0.0: Tue Aug 11 21:44:28 PDT 2026; root:libignition-64~19270/libignition_core/RELEASE_ARM64E
+> libignition: 1: arguments           :
+> libignition: 1:   ignition level    : 0x5
+> libignition: 1:   force dylib root  : 0x0
+> libignition: 1:   halt after stage  : n/a
+> ...
+> com.apple.xpc.launchd|1970-01-01 00:00:29.466851 : Darwin Bootstrapper Version 7.0.0: Mon Aug 10 01:06:09 PDT 2026; root:libxpc_executables-3298.1.1~29/launchd/RELEASE_ARM64E
+> com.apple.xpc.launchd|1970-01-01 00:00:29.484709 : boot-args = rd=md0 serial=3 -v -noprogress wdt=-1 wlan-olyhal-abort
+> com.apple.xpc.launchd|1970-01-01 00:00:29.486795 : Restore environment starting.
+> com.apple.xpc.launchd|1970-01-01 00:00:29.487770 : System Integrity Protection is engaged.
+> com.apple.xpc.launchd|1970-01-01 00:00:29.904447 (system/com.jprx.bash) : internal event: WILL_SPAWN, code = 0
+> com.apple.xpc.launchd|1970-01-01 00:00:29.905070 (system/com.jprx.bash) : service state: spawn scheduled
+> com.apple.xpc.launchd|1970-01-01 00:00:29.905166 (system/com.jprx.bash) : service state: spawning
+> com.apple.xpc.launchd|1970-01-01 00:00:29.922055 (system/com.jprx.bash) : launching: speculative
+> bash-3.2# uname -v
+> Darwin Kernel Version 27.0.0: Tue Aug 11 22:05:33 PDT 2026; root:xnu-13432.1.9~3/RELEASE_ARM64_T8142
+> bash-3.2# whoami
+> root
+> bash-3.2# ls
+> .fseventsd      mnt1            mnt3            mnt8            usr
+> System          mnt10           mnt4            mnt9            var
+> bin             mnt11           mnt5            private
+> dev             mnt12           mnt6            sbin
+> etc             mnt2            mnt7            tmp
 > ```
 > 
-> On macOS, with [Homebrew](https://brew.sh):
+> (some kernel messages were removed from the above log to make it easier to read)
 > 
-> ```sh
-> brew install --cask crmne/tap/fastpotify
+> 
+> # Setup
+> 
+> You'll need a few things:
+> 1. Access to a Mac with `python`, `jq`, `wget`, and `ipsw`.
+> 2. A machine to build and run `qemu` on - this can be different to the first machine.
+> 3. (optional) The URL of the IPSW (iOS or macOS) you want to use. You don't need to download the IPSW, you just need the URL. If you don't care which version you boot, we provide a default one.
+> 
+> > [!NOTE]
+> > The [`ipsw`](https://blacktop.github.io/ipsw/) tool can help find the URLs for `IPSW` files.
+> 
+> 
+> ## Quickstart
+> 
+> How to get this running as fast as possible. See below sections for
+> explanations of what these commands do/ how to customize things.
+> 
+> Install dependencies:
+> 
+> ```
+> brew install jq wget ipsw
 > ```
 > 
-> Everywhere else it is a single binary. Build it with a stable Rust toolchain
-> (1.95 or newer):
+> Clone this repo:
 > 
-> ```bash
-> cargo install --path .
+> ```
+> git clone https://github.com/jprx/darwin-vm.git
+> cd darwin-vm
 > ```
 > 
-> MilkDrop is drawn by libprojectM, a C++ library built from source along the
-> way, so the build also needs CMake, a C++ compiler, and libclang;
-> `cargo install --path . --no-default-features` leaves MilkDrop out and needs
-> none of them. On Linux you also need the development packages for ALSA,
-> PulseAudio (which covers PipeWire), and the usual windowing libraries, for
-> example on Arch:
+> Download iOS files. Must run this on a Mac (see step 1 below to customize which
+> iOS/ macOS version we install):
 > 
-> ```bash
-> sudo pacman -S --needed alsa-lib libpulse libxkbcommon wayland cmake clang
+> ```
+> ./get_files.sh
+> ./fix_perms.sh firmware/ramdisk.dmg
 > ```
 > 
-> and on Debian or Ubuntu:
+> Build qemu:
 > 
-> ```bash
-> sudo apt install libasound2-dev libpulse-dev libxkbcommon-dev libwayland-dev \
->   cmake clang libclang-dev
+> ```
+> git submodule update --init
+> cd qemu-sptm
+> mkdir build
+> cd build
+> ../configure --target-list=aarch64-softmmu
+> make -j
+> cd ../..
 > ```
 > 
-> On Windows, libprojectM is built with Visual Studio 2022, CMake, LLVM, and
-> vcpkg (`vcpkg install glew:x64-windows-static-md`, with
-> `VCPKG_INSTALLATION_ROOT` pointing at the vcpkg folder).
+> Launch the VM:
 > 
-> With [Nix](https://nixos.org), `nix develop` provides all of it, along with
-> the exact toolchain `rust-toolchain.toml` pins.
+> ```
+> ./run.sh
+> ```
 > 
-> Titles in a script the interface font does not cover -- Chinese, Japanese,
-> Korean, Arabic, Hebrew, Thai, the Indic scripts and a dozen more -- are drawn
-> with a face borrowed from the system rather than bundled, which would cost
-> more than ten megabytes for Chinese alone. macOS and Windows carry faces for
-> the common ones; on Linux install the Noto families for the scripts you
-> listen to, for example `noto-fonts` and `noto-fonts-cjk` (Arch) or
-> `fonts-noto` and `fonts-noto-cjk` (Debian or Ubuntu). A script with no face
-> installed still shows as empty boxes.
-> 
-> A desktop entry is provided in `packaging/applications/fastpotify.desktop`.
+> Your VM should boot to a root shell! Use `ctrl+A` followed by `x` in the
+> terminal to quit Qemu.
 > 
 > 
-> ## What it does
+> ### 2. Download and install the KDK for that version
 > 
-> - **Plays music on this computer.** Fastpotify is a Spotify Connect device.
->   Pick it from your phone, or press play here. Gapless, up to 320 kbps, with
->   optional volume normalisation and an on-disk audio cache.
-> - **Controls other devices.** Move playback to a speaker, a phone, or
->   another computer from the device picker, and keep controlling it: play,
->   pause, skip, seek, shuffle, repeat, volume.
-> - **Finds speakers on your network.** A librespot, spotifyd, or hardware
->   receiver waiting on the LAN is invisible to Spotify's API until it has an
->   account. Fastpotify discovers those over mDNS and connects them for you,
->   after which they behave like any other Spotify Connect device.
-> - **Library access.** Playlists, Liked Songs, saved albums, followed
->   artists, podcasts, and saved episodes, filterable in the sidebar and as
->   full pages. Sidebar rows pin to the top and drag into your own order.
-> - **Search** across songs, artists, albums, playlists, podcasts, and episodes,
->   with a top result and per-type views.
-> - **Home** with Made for you, Recently played, your top artists and songs, and
->   recommendations.
-> - **Artist pages** with popular songs, a filterable discography, and related
->   artists. **Album**, **playlist**, and **podcast** pages support playback
->   from any row.
-> - **Playlists you own** can be created, renamed, described, reordered, and
->   edited: add from any row's menu or by dragging a song onto the playlist in
->   the sidebar, remove from the playlist page.
-> - **Queue** as a side panel or a page; add anything to it from a row menu.
-> - **Picks up where you left off.** A cold start shows the song the last
->   session ended on, paused at the position it stopped at; play carries on
->   from there instead of restarting it. Next, previous, and the progress bar
->   work on it before it plays, so a skip never has to start it first.
-> - **Album-art colour.** Pages and the player bar take a tint from the cover
->   of what you are looking at or listening to. Turn it off in Settings.
-> - **Light and dark**, or follow the system.
-> - **Winamp mini player.** `Ctrl+M` turns the window into a tiny player that
->   wears classic `.wsz` skins, drawn pixel for pixel at 1x to 4x, with the
->   spectrum analyser, the playlist, and the equalizer hanging under it as
->   they did; the logo in the skin brings the big window back. Drop a skin
->   from the [Winamp Skin Museum](https://skins.webamp.org) on either window
->   to add it.
+> Apple sometimes forgets to publish KDKs, so check that there is a KDK in Apple
+> Developer Downloads before continuing (you'll need to sign in to view these):
 > 
->   
-> - **Equalizer.** Winamp's ten bands and presets over the music played on
->   this computer, in Settings and in the skin.
-> - **MilkDrop.** Winamp's visualiser, through
->   [projectM](https://github.com/projectM-visualizer/projectm), in a
->   fullscreenable window of its own (a separate process, so it never disturbs
->   the player), playing MilkDrop's own `.milk` presets; Settings fetches the
->   packs projectM curates.
-> - **Keyboard-first.** Every common action has a shortcut (`Ctrl+/` or `?` lists
->   them).
-> - **Keeps playing when you close the window.** The window closes for real,
->   the music and the process stay in the system tray (Linux status notifier),
->   and clicking the tray, or your desktop's media controls, brings a window
->   back. No compositor-specific tricks, so it behaves the same on any
->   desktop. Quit from the tray menu or `Ctrl+Q`; turn the behaviour off in
->   Settings if you prefer close-to-quit. On macOS the Dock icon stays present,
->   and clicking it opens the window again.
-> - **Visible network activity.** Pages show spinners while they load. An
->   indicator appears in the top bar when a Spotify request takes more than a
->   moment or is waiting for a rate limit.
-> - **One instance.** Launching it again brings the existing window forward
->   instead of starting a second copy, on every platform.
-> - **Desktop integration.** MPRIS on Linux, so media keys, the shell, and
->   `playerctl` see Fastpotify like any other player. On macOS and Windows,
->   `fastpotify next` and its siblings drive the running app from a terminal,
->   a launcher, or a hotkey.
+> https://developer.apple.com/download/all/?q=Kernel%20Debug%20Kit
+> 
+> Make sure the exact version number matches (eg. `25G70`), not just the
+> customer-facing release (eg. `26.6`), as there can be multiple KDKs released
+> per macOS release.
+> 
+> Download the KDK matching your exact macOS version and install it.
 > 
 > 
-> ## Sign in
+> ### 3. Setup an initial VM
 > 
-> Press **Sign in with Spotify**. Your browser opens Spotify's own consent
-> page (Authorization Code with PKCE); Fastpotify never sees your password.
-> When Spotify redirects back to the app, your library, search, and control
-> of other devices work immediately. The refresh token is stored in the
-> platform's state directory (`~/.local/state/fastpotify` on Linux), so the
-> browser is needed once per machine.
+> Use `get_files.sh` to fetch a macOS IPSW matching the version we want to debug
+> for the specific Mac you want to boot.
 > 
-> Playing music **on this computer** is one more one-time browser approval.
-> Spotify treats streaming as a separate grant for its own client identity,
-> which is what librespot plays with. Take it from the device menu ("Play
-> here, set up once") or Settings; it needs Spotify Premium, and librespot
-> stores a reusable credential for later sessions. Browsing works on any
-> account without this step; playing, here or on another device, does not,
-> because Spotify's API only takes playba
+> For example, if you wanted to run macOS build 25G70 on an M4 Mac Mini, use:
+> 
+> ```
+> DEVNAME="Mac16,10" URL="https://updates.cdn-apple.com/2026SummerFCS/fullrestores/140-56823/1C29995E-8C11-4384-B9C0-B00145B84F51/UniversalMac_26.6_25G70_Restore.ipsw" ./get_files.sh
+> ```
+> 
+> Make note of the following output; we'll need the `kernel ext` and `chip name`
+> fields later:
+> 
+> ```
+> Mac16,10
+> board name: j773gap
+> kernel ext: mac16g
+> chip name:  t8132
+> os sdk:     macosx
+> ```
+> 
+> (and don't forget to run `./fix_perms.sh firmware/ramdisk.dmg` after `get_files.sh`).
+> 
+> Boot and run the VM and make sure it works before continuing.
+> 
+> 
+> # Tested Configurations
+> 
+> `darwin-vm` has been tested with the following systems:
+> 
+> | Device          | `devname`    | CPU name | iOS 27.0 beta 8 | iOS 26.6 |
+> |-----------------|--------------|----------|-----------------|----------|
+> | iPhone 17 (A19) | `iPhone18,3` | `t8150`  | ✅              | ✅       |
+> | iPhone 16 (A18) | `iPhone17,3` | `t8140`  | ✅              | ✅       |
+> | iPhone 15 (A16) | `iPhone15,4` | `t8120`  | ✅              | ✅       |
+> | iPhone 14 (A15) | `iPhone14,7` | `t8110`  | ✅              | ✅       |
+> | iPhone 13 (A15) | `iPhone14,5` | `t8110`  | ✅              | ✅       |
+> | iPhone 12 (A14) | `iPhone13,2` | `t8101`  | ✅              | ✅       |
+> 
+> | Device         | `devname`    | CPU name | macOS 27.0 beta 8 | macOS 26.6 |
+> |----------------|--------------|----------|-------------------|------------|
+> | M5 Macbook Air | `Mac17,4`    | `t8142`  | ✅                | ✅         |
+> | M4 Mac Mini    | `Mac16,10`   | `t8132`  | ✅                | ✅         |
+> | M3 Macbook Air | `Mac15,13`   | `t8122`  | ✅                | ✅         |
+> | M2 Mac Mini    | `Mac14,3`    | `t8112`  | ✅                | ✅         |
+> | M1 Mac Mini    | `Macmini9,1` | `t8103`  | ✅                | ✅         |
+> 
+> ✅ = boots to root shell and can run commands
+> 
+> Notes:
+> - If you don't need MIE, use something without it, as emulating MIE can be slow.
+> 
+> 
+> # What this is not
+> 
+> This is not a full iPhone/ Mac emulator. Don't expect the screen, wifi,
+> bluetooth, graphics, GUI apps, or full springboard to work. This just boots iOS
+> / macOS to a barebones root shell so you can run custom command line programs,
+> debug the
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/crmne/fastpotify) · [官方網站](https://fastpotify.rocks)
+[GitHub](https://github.com/jprx/darwin-vm)
 
 ## 相關收錄
 
@@ -384,7 +396,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "crmne--fastpotify"
+> WHERE category = "Other" AND file.name != "jprx--darwin-vm"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -393,7 +405,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Rust" AND file.name != "crmne--fastpotify" AND status != "archived"
+> WHERE language = "Python" AND file.name != "jprx--darwin-vm" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -402,18 +414,18 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "crmne--fastpotify"
+> WHERE week = "2026-W36" AND file.name != "jprx--darwin-vm"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/jprx--darwin-vm");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "crmne--fastpotify" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "jprx--darwin-vm" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -429,7 +441,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "crmne" AND file.name != "crmne--fastpotify"
+> WHERE owner = "jprx" AND file.name != "jprx--darwin-vm"
 > SORT stars DESC
 > ```
 
@@ -437,7 +449,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/jprx--darwin-vm");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -454,7 +466,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/jprx--darwin-vm");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -487,7 +499,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/jprx--darwin-vm");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -511,7 +523,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/jprx--darwin-vm");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -548,7 +560,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/jprx--darwin-vm");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -631,7 +643,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-01** — 首次收錄
+> **2026-09-02** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -647,5 +659,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-02|2026-09-02]] — 再次上榜，1.6k stars
-- [[2026-09-01|2026-09-01]] — 首次收錄，856 stars
+- [[2026-09-02|2026-09-02]] — 首次收錄，893 stars

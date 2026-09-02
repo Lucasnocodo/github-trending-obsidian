@@ -7,12 +7,12 @@ language: Markdown
 license: MIT
 description: "An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable."
 homepage: "https://cbrock84.github.io/headcount/"
-stars: 873
-stars_per_day: 291
-forks: 132
+stars: 974
+stars_per_day: 244
+forks: 150
 open_issues: 1
 created: 2026-08-28
-pushed_at: 2026-09-01
+pushed_at: 2026-09-02
 first_seen: 2026-09-01
 week: "2026-W36"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-04"
+appearances: 2
+next_review: "2026-09-05"
 contributor_count: 3
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-01"
-star_history: "2026-09-01:873"
+star_history: "2026-09-01:873,2026-09-02:974"
 tags:
   - github
   - "category/other"
@@ -536,4 +536,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-02|2026-09-02]] — 再次上榜，974 stars
 - [[2026-09-01|2026-09-01]] — 首次收錄，873 stars

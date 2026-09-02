@@ -1,68 +1,68 @@
 ---
-repo: crmne/fastpotify
-url: https://github.com/crmne/fastpotify
-owner: crmne
+repo: damejan80/tokentab
+url: https://github.com/damejan80/tokentab
+owner: damejan80
 owner_type: User
-language: Rust
+language: Python
 license: MIT
-description: "Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows."
-homepage: "https://fastpotify.rocks"
-stars: 1588
-stars_per_day: 318
-forks: 65
-open_issues: 37
+description: "A CLI that reads Claude Code, Codex, and Gemini CLI session logs and works out how much they cost, by model, project, and day."
+homepage: ""
+stars: 1140
+stars_per_day: 228
+forks: 210
+open_issues: 0
 created: 2026-08-27
-pushed_at: 2026-09-01
-first_seen: 2026-09-01
+pushed_at: 2026-08-27
+first_seen: 2026-09-02
 week: "2026-W36"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v0.4.1"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-01
+last_reviewed: 2026-09-02
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-05"
-contributor_count: 5
-engagement: "low"
-issue_close_rate: 63
-repo_size_kb: 9617
-readme_length: 9590
+contributor_count: 1
+engagement: "medium"
+issue_close_rate: -1
+repo_size_kb: 317
+readme_length: 5564
 bus_factor: 1
-last_release_days: 1
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-01"
-star_history: "2026-09-01:856,2026-09-02:1588"
+ring_history: "assess@2026-09-02"
+star_history: "2026-09-02:1140"
 tags:
   - github
   - "category/other"
-  - "lang/rust"
-  - "topic/audio"
-  - "topic/cross_platform"
-  - "topic/desktop_app"
-  - "topic/egui"
-  - "topic/gui"
+  - "lang/python"
+  - "topic/ai"
+  - "topic/claude"
+  - "topic/claude_code"
+  - "topic/cursor"
+  - "topic/python"
 aliases:
-  - "fastpotify"
-  - "crmne/fastpotify"
+  - "tokentab"
+  - "damejan80/tokentab"
 ---
 
-# fastpotify
+# tokentab
 
-**856** stars · **214** stars/天 · 建立 4 天前 · Rust · MIT
+**1.1k** stars · **228** stars/天 · 建立 5 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/crmne--fastpotify");
+const me = dv.page("Repos/damejan80--tokentab");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v0.4.1`
+`個人專案`
 
-`audio` `cross-platform` `desktop-app` `egui` `gui` `librespot` `linux` `macos` `mpris` `music` `music-player` `rust` `spotify` `spotify-client` `spotify-connect` `windows`
+`ai` `claude` `claude-code` `cursor` `python` `token-optimization` `token-usage`
 
 > [!summary] 一句話摘要
-> Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.
+> A CLI that reads Claude Code, Codex, and Gemini CLI session logs and works out how much they cost, by model, project, and day.
 
 ## 專案簡介
 
-Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.
+A CLI that reads Claude Code, Codex, and Gemini CLI session logs and works out how much they cost, by model, project, and day.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/damejan80--tokentab");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +125,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/damejan80--tokentab");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,234 +149,136 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 43 |
-| Open Issues | 26 |
-| Issue 解決率 | 63% (44 closed) |
-| 最後推送 | 2026-08-31 |
+| Forks | 210 |
+| Open Issues | 0 |
+| 最後推送 | 2026-08-27 |
 | 建立日期 | 2026-08-27 |
-| 官方網站 | [Link](https://fastpotify.rocks) |
-| Repo 大小 | 9.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/crmne/fastpotify) |
-| Topics | `audio` `cross-platform` `desktop-app` `egui` `gui` `librespot` `linux` `macos` |
-
-> [!info]- 主要依賴
-> `Cargo.toml` 中的核心套件：
-> `name` `version` `edition` `rust-version` `license` `description` `repository` `keywords` `categories` `name` `path` `name` `path` `anyhow` `thiserror`
+| Repo 大小 | 317 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/damejan80/tokentab) |
+| Topics | `ai` `claude` `claude-code` `cursor` `python` `token-optimization` `token-usage` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@crmne](https://github.com/crmne) | 249 |
-> | [@mikenoired](https://github.com/mikenoired) | 9 |
-> | [@dappermint](https://github.com/dappermint) | 6 |
-> | [@kveld9](https://github.com/kveld9) | 6 |
-> | [@oyuh](https://github.com/oyuh) | 3 |
-
-**最新版本**：v0.4.1 (2026-08-31)
-
-> [!info]- Release Notes
-> Fastpotify turns into Winamp. 0.4.1 is 0.4.0 plus a first day of fixes, and these notes carry the whole story: the mini player with classic skin support, right-to-left text, compact views, a tougher audio output, and a long list of fixes. Thanks to everyone who tried the five release candidates and reported back. The macOS build is not notarized yet, so the first-open steps on the download page apply; clear the quarantine flag with `xattr -dr` on macOS 26.
-> 
-> ## New in 0.4.1
-> 
-> - **Each credited artist is its own link**, in the track tables and the player bar, instead of one link that always opened the first; a comma inside a name stays a name. Thanks @mikenoired. (#100)
-> - **The Date added column says how long ago** for the first thirty days, the way Spotify does, and keeps the calendar date beyond that. Thanks @mikenoired. (#102)
-> - **The mini player's playlist follows a double-click at once** instead of waiting for the queue to be fetched again. By @crmne.
-> - **The scroll wheel moves one step a notch on Windows**, which multiplies a notch into its line setting and made the volume jump fifteen percent. By @crmne; thanks @scrxp for the report. (#103)
-> - **Japanese and every other script the skin's font lacks scroll through the marquee** in the pixel face the playlist already uses, instead of a row of question marks. By @crmne; thanks @gitHatmos for the report. (#104)
-> ...（完整內容見 GitHub）
+> | [@damejan80](https://github.com/damejan80) | 6 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-31 ~ 2026-08-31）
-> **活躍天數** 1 天 · **最新 commit** Give the frame rate detents, like a gear lever
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#73](https://github.com/crmne/fastpotify/issues/73) | App crashes when trying to start playback [Fedora KDE] `bug` | 2 | 8 |
-> | [#107](https://github.com/crmne/fastpotify/issues/107) | Can't Sign-In on WIndows 10 `bug` | 1 | 0 |
-> | [#106](https://github.com/crmne/fastpotify/issues/106) | Add a recents tab `enhancement` | 1 | 0 |
-> | [#105](https://github.com/crmne/fastpotify/issues/105) | Allow selecting multiple songs `enhancement` | 1 | 0 |
-> | [#96](https://github.com/crmne/fastpotify/issues/96) | Autoscroll (scrolling with middle-click) `enhancement` | 1 | 0 |
+> [!abstract] 最近 10 次 commit（2026-08-27 ~ 2026-08-27）
+> **活躍天數** 1 天 · **最新 commit** Update LICENSE
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Fastpotify
+> # tokentab
 > 
-> **Spotify, native and fast.** A lightweight Spotify client written in Rust with
-> [egui](https://github.com/emilk/egui), playing music through
-> [librespot](https://github.com/librespot-org/librespot). It runs on Linux,
-> macOS, and Windows, starts in well under a second, and stays small while it
-> runs. There is no browser engine anywhere in the process.
+> tokentab reads the session logs that Claude Code, Codex, Cursor and Gemini CLI already leave on disk and adds up token usage and cost - broken down by model, by project, by day, and by the kind of work each session was doing. It runs entirely locally: no account, no API key, nothing leaves your machine.
 > 
-> **Playing needs Spotify Premium.** Spotify only lets Premium accounts play
-> music through another app, on the computer itself or on any other device.
-> With a Free account Fastpotify can browse the library but not play it, and
-> says so at sign-in.
+> ## Installing
 > 
-> Fastpotify follows in the footsteps of
-> [Omarchy Spotify](https://github.com/stappmus/Omarchy-Spotify) and
-> [spotify-tui](https://github.com/Rigellute/spotify-tui): the familiar Spotify
-> layout, access to your library, and a Spotify Connect receiver in one desktop
-> application rather than a shell plugin.
+> Clone the repo and install it into your environment:
 > 
-> **Documentation:** [fastpotify.rocks](https://fastpotify.rocks/): what it is, getting started, everyday use, and how it connects to Spotify.
-> 
-> 
-> ## Install
-> 
-> On Arch Linux, Fastpotify is in the AUR:
-> 
-> ```bash
-> yay -S fastpotify-bin      # the released build, ready made
-> yay -S fastpotify          # the release, built from source
-> yay -S fastpotify-git      # built from the latest commit
+> ```
+> git clone https://github.com/damejan80/tokentab
+> cd tokentab
+> pip install .
+> python cli.py
 > ```
 > 
-> On macOS, with [Homebrew](https://brew.sh):
+> That puts a `tokentab` command on your path. You can also run it without installing at all - see [From source](#from-source).
 > 
-> ```sh
-> brew install --cask crmne/tap/fastpotify
+> ## What it reads
+> 
+> It understands three tools out of the box, plus a Cursor slot that's wired up but not finished (more on that below).
+> 
+> | Tool | Where its logs live |
+> | --- | --- |
+> | **Claude Code** | `~/.claude/projects/**/*.jsonl` |
+> | **Codex** | `~/.codex/sessions/**/rollout-*.jsonl` |
+> | **Gemini CLI** | `~/.gemini/tmp/**/session-*.json` |
+> | **Cursor** | *(stub - see below)* |
+> 
+> If a tool isn't installed, it's just skipped. You'll only ever see the tools you actually use.
+> 
+> ## Using it
+> 
+> The bare command gives you the last 7 days across everything:
+> 
+> ```
+> python cli.py
 > ```
 > 
-> Everywhere else it is a single binary. Build it with a stable Rust toolchain
-> (1.95 or newer):
+> Some other things it does:
 > 
-> ```bash
-> cargo install --path .
+> ```
+> python cli.py -today                     # just today
+> python cli.py -month                     # this calendar month
+> python cli.py -p all                    # everything you've ever run
+> python cli.py --provider claude         # one tool only
+> python cli.py --project myapp           # one project
+> python cli.pyb --from 2026-06-01 --to 2026-06-15   # a specific window
+> python cli.py --json | jq .             # machine-readable, pipe it wherever
+> python cli.py -web                       # the same thing, in a browser, with charts
 > ```
 > 
-> MilkDrop is drawn by libprojectM, a C++ library built from source along the
-> way, so the build also needs CMake, a C++ compiler, and libclang;
-> `cargo install --path . --no-default-features` leaves MilkDrop out and needs
-> none of them. On Linux you also need the development packages for ALSA,
-> PulseAudio (which covers PipeWire), and the usual windowing libraries, for
-> example on Arch:
+> Colour drops automatically when you pipe the output somewhere, so pasting into a PR or a chat doesn't drag a load of escape codes along with it.
 > 
-> ```bash
-> sudo pacman -S --needed alsa-lib libpulse libxkbcommon wayland cmake clang
+> ### The web dashboard
+> 
+> ```
+> python cli.py -web
 > ```
 > 
-> and on Debian or Ubuntu:
+> Opens `http://localhost:4747` and lays the same numbers out as a monthly statement - total up top, everything itemised below. It reads from disk on every request (the data's tiny, so there's no reason to cache and risk showing you something stale) and binds to localhost only - nothing gets uploaded, same as the CLI. It doesn't even pull fonts from a CDN; it uses whatever serif and mono your system already has, so it works with the network unplugged. Pick a port with `--port`, or pass `--no-open` if you don't want it grabbing your browser.
 > 
-> ```bash
-> sudo apt install libasound2-dev libpulse-dev libxkbcommon-dev libwayland-dev \
->   cmake clang libclang-dev
+> It's built on Python's standard-library HTTP server - no Flask, no framework, nothing extra to install.
+> 
+> ## How the numbers are worked out
+> 
+> **Tokens** come straight from the logs - every one of these tools records its own token counts per call, so nothing here is guessed. The one wrinkle is caching: Claude splits cache reads and writes out separately, and Gemini reports input *including* the cached part, so tokentab pulls the cached tokens back out before pricing to avoid charging you twice for the same thing.
+> 
+> **Prices** are a hand-kept table in [`tokentab/pricing/prices.py`](tokentab/pricing/prices.py), in dollars per million tokens. It's a table on purpose - the tool never reaches out to the network to price anything, and a slightly-stale number beats a crash when a vendor renames a model overnight. The matching is fuzzy: `claude-opus-4-6-20260514` still finds `claude-opus-4-6`. If a model shows up as `$0.00`, it means the name didn't match anything in the table - add a line and it's sorted. The CLI says so when it happens instead of quietly counting it as free.
+> 
+> **Activity** (coding / debugging / refactor / testing / etc.) is a guess based on which tools got used and the wording of your first message in a session. It's deterministic - no model calls - so it's fast and you can eyeball whether it's roughly right. Treat it as a hint, not gospel.
+> 
+> ## Adding another tool
+> 
+> Every provider is a single module in `tokentab/providers/` that exposes a `collect()` function returning a flat list of `UsageRecord`s (the shape's in [`tokentab/types.py`](tokentab/types.py)). Write the module, add it to the list in `tokentab/providers/__init__.py`, done - pricing, grouping, the dashboard, all of it just works because everything downstream only ever touches that one shared shape. The three real parsers are worth a read as templates; Claude's is the simplest place to start.
+> 
+> ## From source
+> 
+> ```
+> git clone https://github.com/wzchav/tokentab
+> cd tokentab
+> pip install -e .
+> tokentab
 > ```
 > 
-> On Windows, libprojectM is built with Visual Studio 2022, CMake, LLVM, and
-> vcpkg (`vcpkg install glew:x64-windows-static-md`, with
-> `VCPKG_INSTALLATION_ROOT` pointing at the vcpkg folder).
+> The only third-party dependency is [rich](https://github.com/Textualize/rich), for the terminal tables. Everything else - the web server, the parsers, the JSON - is Python's standard library.
 > 
-> With [Nix](https://nixos.org), `nix develop` provides all of it, along with
-> the exact toolchain `rust-toolchain.toml` pins.
+> ## Reading the output
 > 
-> Titles in a script the interface font does not cover -- Chinese, Japanese,
-> Korean, Arabic, Hebrew, Thai, the Indic scripts and a dozen more -- are drawn
-> with a face borrowed from the system rather than bundled, which would cost
-> more than ten megabytes for Chinese alone. macOS and Windows carry faces for
-> the common ones; on Linux install the Noto families for the scripts you
-> listen to, for example `noto-fonts` and `noto-fonts-cjk` (Arch) or
-> `fonts-noto` and `fonts-noto-cjk` (Debian or Ubuntu). A script with no face
-> installed still shows as empty boxes.
+> A few patterns worth knowing when you look at your own numbers:
 > 
-> A desktop entry is provided in `packaging/applications/fastpotify.desktop`.
+> - **Cache hit under ~80%, consistently** - your context probably isn't stable between calls, or caching isn't switched on. One weird session is nothing; weeks of it is worth a look.
+> - **A big model dominating cost on lots of tiny calls** - you might be reaching for the expensive one on work a cheaper model would one-shot.
+> - **"chat" or "exploring" eating a big share** - a lot of the spend went to talking and reading rather than editing. Sometimes that's the job; sometimes it's a sign a session wandered.
 > 
+> These are starting points, not verdicts. The tool shows you the data: you know what the work actually was.
 > 
-> ## What it does
+> ## Notes
 > 
-> - **Plays music on this computer.** Fastpotify is a Spotify Connect device.
->   Pick it from your phone, or press play here. Gapless, up to 320 kbps, with
->   optional volume normalisation and an on-disk audio cache.
-> - **Controls other devices.** Move playback to a speaker, a phone, or
->   another computer from the device picker, and keep controlling it: play,
->   pause, skip, seek, shuffle, repeat, volume.
-> - **Finds speakers on your network.** A librespot, spotifyd, or hardware
->   receiver waiting on the LAN is invisible to Spotify's API until it has an
->   account. Fastpotify discovers those over mDNS and connects them for you,
->   after which they behave like any other Spotify Connect device.
-> - **Library access.** Playlists, Liked Songs, saved albums, followed
->   artists, podcasts, and saved episodes, filterable in the sidebar and as
->   full pages. Sidebar rows pin to the top and drag into your own order.
-> - **Search** across songs, artists, albums, playlists, podcasts, and episodes,
->   with a top result and per-type views.
-> - **Home** with Made for you, Recently played, your top artists and songs, and
->   recommendations.
-> - **Artist pages** with popular songs, a filterable discography, and related
->   artists. **Album**, **playlist**, and **podcast** pages support playback
->   from any row.
-> - **Playlists you own** can be created, renamed, described, reordered, and
->   edited: add from any row's menu or by dragging a song onto the playlist in
->   the sidebar, remove from the playlist page.
-> - **Queue** as a side panel or a page; add anything to it from a row menu.
-> - **Picks up where you left off.** A cold start shows the song the last
->   session ended on, paused at the position it stopped at; play carries on
->   from there instead of restarting it. Next, previous, and the progress bar
->   work on it before it plays, so a skip never has to start it first.
-> - **Album-art colour.** Pages and the player bar take a tint from the cover
->   of what you are looking at or listening to. Turn it off in Settings.
-> - **Light and dark**, or follow the system.
-> - **Winamp mini player.** `Ctrl+M` turns the window into a tiny player that
->   wears classic `.wsz` skins, drawn pixel for pixel at 1x to 4x, with the
->   spectrum analyser, the playlist, and the equalizer hanging under it as
->   they did; the logo in the skin brings the big window back. Drop a skin
->   from the [Winamp Skin Museum](https://skins.webamp.org) on either window
->   to add it.
+> Prices are best-effort - if you spot a stale one, a one-line PR or an issue is welcome. Everything runs locally.
 > 
->   
-> - **Equalizer.** Winamp's ten bands and presets over the music played on
->   this computer, in Settings and in the skin.
-> - **MilkDrop.** Winamp's visualiser, through
->   [projectM](https://github.com/projectM-visualizer/projectm), in a
->   fullscreenable window of its own (a separate process, so it never disturbs
->   the player), playing MilkDrop's own `.milk` presets; Settings fetches the
->   packs projectM curates.
-> - **Keyboard-first.** Every common action has a shortcut (`Ctrl+/` or `?` lists
->   them).
-> - **Keeps playing when you close the window.** The window closes for real,
->   the music and the process stay in the system tray (Linux status notifier),
->   and clicking the tray, or your desktop's media controls, brings a window
->   back. No compositor-specific tricks, so it behaves the same on any
->   desktop. Quit from the tray menu or `Ctrl+Q`; turn the behaviour off in
->   Settings if you prefer close-to-quit. On macOS the Dock icon stays present,
->   and clicking it opens the window again.
-> - **Visible network activity.** Pages show spinners while they load. An
->   indicator appears in the top bar when a Spotify request takes more than a
->   moment or is waiting for a rate limit.
-> - **One instance.** Launching it again brings the existing window forward
->   instead of starting a second copy, on every platform.
-> - **Desktop integration.** MPRIS on Linux, so media keys, the shell, and
->   `playerctl` see Fastpotify like any other player. On macOS and Windows,
->   `fastpotify next` and its siblings drive the running app from a terminal,
->   a launcher, or a hotkey.
+> ## License
 > 
-> 
-> ## Sign in
-> 
-> Press **Sign in with Spotify**. Your browser opens Spotify's own consent
-> page (Authorization Code with PKCE); Fastpotify never sees your password.
-> When Spotify redirects back to the app, your library, search, and control
-> of other devices work immediately. The refresh token is stored in the
-> platform's state directory (`~/.local/state/fastpotify` on Linux), so the
-> browser is needed once per machine.
-> 
-> Playing music **on this computer** is one more one-time browser approval.
-> Spotify treats streaming as a separate grant for its own client identity,
-> which is what librespot plays with. Take it from the device menu ("Play
-> here, set up once") or Settings; it needs Spotify Premium, and librespot
-> stores a reusable credential for later sessions. Browsing works on any
-> account without this step; playing, here or on another device, does not,
-> because Spotify's API only takes playba
+> MIT - do what you like with it.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/crmne/fastpotify) · [官方網站](https://fastpotify.rocks)
+[GitHub](https://github.com/damejan80/tokentab)
 
 ## 相關收錄
 
@@ -384,7 +286,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "crmne--fastpotify"
+> WHERE category = "Other" AND file.name != "damejan80--tokentab"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -393,7 +295,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Rust" AND file.name != "crmne--fastpotify" AND status != "archived"
+> WHERE language = "Python" AND file.name != "damejan80--tokentab" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -402,18 +304,18 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "crmne--fastpotify"
+> WHERE week = "2026-W36" AND file.name != "damejan80--tokentab"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/damejan80--tokentab");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "crmne--fastpotify" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "damejan80--tokentab" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -429,7 +331,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "crmne" AND file.name != "crmne--fastpotify"
+> WHERE owner = "damejan80" AND file.name != "damejan80--tokentab"
 > SORT stars DESC
 > ```
 
@@ -437,7 +339,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/damejan80--tokentab");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -454,7 +356,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/damejan80--tokentab");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -487,7 +389,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/damejan80--tokentab");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -511,7 +413,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/damejan80--tokentab");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -548,7 +450,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/crmne--fastpotify");
+> const me = dv.page("Repos/damejan80--tokentab");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -631,7 +533,7 @@ Spotify, native and fast. One lightweight Rust app for your whole library, local
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-01** — 首次收錄
+> **2026-09-02** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -647,5 +549,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-02|2026-09-02]] — 再次上榜，1.6k stars
-- [[2026-09-01|2026-09-01]] — 首次收錄，856 stars
+- [[2026-09-02|2026-09-02]] — 首次收錄，1.1k stars

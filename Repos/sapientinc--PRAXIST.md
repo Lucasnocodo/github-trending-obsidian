@@ -7,12 +7,12 @@ language: Python
 license: NOASSERTION
 description: "Autonomous research system for measurable, computer-executable research."
 homepage: "https://praxist.sapient.inc/en/docs"
-stars: 5686
-stars_per_day: 1422
-forks: 493
-open_issues: 3
+stars: 6311
+stars_per_day: 1262
+forks: 524
+open_issues: 14
 created: 2026-08-27
-pushed_at: 2026-08-31
+pushed_at: 2026-09-01
 first_seen: 2026-08-28
 week: "2026-W35"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-09-04"
+appearances: 6
+next_review: "2026-09-05"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-28"
-star_history: "2026-08-28:1178,2026-08-29:2051,2026-08-30:3218,2026-08-31:4810,2026-09-01:5686"
+star_history: "2026-08-28:1178,2026-08-29:2051,2026-08-30:3218,2026-08-31:4810,2026-09-01:5686,2026-09-02:6311"
 tags:
   - github
   - "category/other"
@@ -665,6 +665,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-02|2026-09-02]] — 再次上榜，6.3k stars
 - [[2026-09-01|2026-09-01]] — 再次上榜，5.7k stars
 - [[2026-08-31|2026-08-31]] — 再次上榜，4.8k stars
 - [[2026-08-30|2026-08-30]] — 再次上榜，3.2k stars

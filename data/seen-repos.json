@@ -3816,10 +3816,10 @@
   },
   "wide-trace/open-higgsfield": {
     "first_seen": "2026-08-27",
-    "last_seen": "2026-09-01",
-    "times_seen": 6,
+    "last_seen": "2026-09-02",
+    "times_seen": 7,
     "stars_first": 664,
-    "stars_last": 1149
+    "stars_last": 1214
   },
   "HEJustinSun/my-girlfriend-jingtian-latex": {
     "first_seen": "2026-08-28",
@@ -3830,10 +3830,10 @@
   },
   "sapientinc/PRAXIST": {
     "first_seen": "2026-08-28",
-    "last_seen": "2026-09-01",
-    "times_seen": 5,
+    "last_seen": "2026-09-02",
+    "times_seen": 6,
     "stars_first": 1178,
-    "stars_last": 5686
+    "stars_last": 6311
   },
   "Tencent/WeMM-Embedding": {
     "first_seen": "2026-08-29",
@@ -3844,10 +3844,10 @@
   },
   "XiaoDuoYa/codex-with-chatgpt": {
     "first_seen": "2026-08-30",
-    "last_seen": "2026-09-01",
-    "times_seen": 3,
+    "last_seen": "2026-09-02",
+    "times_seen": 4,
     "stars_first": 1007,
-    "stars_last": 1952
+    "stars_last": 2169
   },
   "themartiano/try-omarchy": {
     "first_seen": "2026-08-30",
@@ -3858,17 +3858,17 @@
   },
   "MetaMask-AI/metamask-desktop": {
     "first_seen": "2026-08-31",
-    "last_seen": "2026-09-01",
-    "times_seen": 2,
+    "last_seen": "2026-09-02",
+    "times_seen": 3,
     "stars_first": 1228,
-    "stars_last": 1228
+    "stars_last": 1229
   },
   "Nanako0129/sepia": {
     "first_seen": "2026-08-31",
-    "last_seen": "2026-09-01",
-    "times_seen": 2,
+    "last_seen": "2026-09-02",
+    "times_seen": 3,
     "stars_first": 992,
-    "stars_last": 1269
+    "stars_last": 1372
   },
   "amosblomqvist/learn": {
     "first_seen": "2026-08-31",
@@ -3893,16 +3893,37 @@
   },
   "cbrock84/headcount": {
     "first_seen": "2026-09-01",
-    "last_seen": "2026-09-01",
-    "times_seen": 1,
+    "last_seen": "2026-09-02",
+    "times_seen": 2,
     "stars_first": 873,
-    "stars_last": 873
+    "stars_last": 974
   },
   "crmne/fastpotify": {
     "first_seen": "2026-09-01",
-    "last_seen": "2026-09-01",
-    "times_seen": 1,
+    "last_seen": "2026-09-02",
+    "times_seen": 2,
     "stars_first": 856,
-    "stars_last": 856
+    "stars_last": 1588
+  },
+  "damejan80/tokentab": {
+    "first_seen": "2026-09-02",
+    "last_seen": "2026-09-02",
+    "times_seen": 1,
+    "stars_first": 1140,
+    "stars_last": 1140
+  },
+  "jprx/darwin-vm": {
+    "first_seen": "2026-09-02",
+    "last_seen": "2026-09-02",
+    "times_seen": 1,
+    "stars_first": 893,
+    "stars_last": 893
+  },
+  "tradecatlabs/shulihuazixuecongshu": {
+    "first_seen": "2026-09-02",
+    "last_seen": "2026-09-02",
+    "times_seen": 1,
+    "stars_first": 849,
+    "stars_last": 849
   }
 }
