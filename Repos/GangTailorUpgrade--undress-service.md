@@ -1,21 +1,21 @@
 ---
-repo: sapientinc/PRAXIST
-url: https://github.com/sapientinc/PRAXIST
-owner: sapientinc
-owner_type: Organization
+repo: GangTailorUpgrade/undress-service
+url: https://github.com/GangTailorUpgrade/undress-service
+owner: GangTailorUpgrade
+owner_type: User
 language: Python
-license: NOASSERTION
-description: "Autonomous research system for measurable, computer-executable research."
-homepage: "https://praxist.sapient.inc/en/docs"
-stars: 6694
-stars_per_day: 1116
-forks: 508
-open_issues: 21
-created: 2026-08-27
-pushed_at: 2026-09-01
-first_seen: 2026-08-28
-week: "2026-W35"
-month: "2026-08"
+license: MIT
+description: "Dress AI Sponsor"
+homepage: "https://undress.design/undress"
+stars: 945
+stars_per_day: 315
+forks: 1
+open_issues: 0
+created: 2026-08-31
+pushed_at: 2026-09-02
+first_seen: 2026-09-03
+week: "2026-W36"
+month: "2026-09"
 category: "Other"
 subcategory: ""
 release_tag: ""
@@ -25,40 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-08-28
+last_reviewed: 2026-09-03
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 7
+appearances: 1
 next_review: "2026-09-06"
-contributor_count: 2
+contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
-repo_size_kb: 15195
-readme_length: 9745
+repo_size_kb: 1184
+readme_length: 9856
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-08-28"
-star_history: "2026-08-28:1178,2026-08-29:2051,2026-08-30:3218,2026-08-31:4810,2026-09-01:5686,2026-09-02:6311,2026-09-03:6694"
+ring_history: "assess@2026-09-03"
+star_history: "2026-09-03:945"
 tags:
   - github
   - "category/other"
   - "lang/python"
-  - org
+  - "topic/18comic"
+  - "topic/coomer"
+  - "topic/coomer_downloader"
+  - "topic/coomer_party"
+  - "topic/coomer_porn"
 aliases:
-  - "PRAXIST"
-  - "sapientinc/PRAXIST"
+  - "undress-service"
+  - "GangTailorUpgrade/undress-service"
 ---
 
-# PRAXIST
+# undress-service
 
-**1.2k** stars · **1.2k** stars/天 · 建立 1 天前 · Python · NOASSERTION
+**945** stars · **315** stars/天 · 建立 3 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/sapientinc--PRAXIST");
+const me = dv.page("Repos/GangTailorUpgrade--undress-service");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`個人專案`
+
+`18comic` `coomer` `coomer-downloader` `coomer-party` `coomer-porn` `coomer-su` `doujin-moe` `ehviewer` `ex-hentai` `explicit-content` `hitomi-la` `kemono` `kemono-downloader` `kemono-oarty` `kemono-party` `kemono-porn` `kemono-su` `nudity` `sex` `unrestricted-ai`
 
 > [!summary] 一句話摘要
-> Autonomous research system for measurable, computer-executable research.
+> Dress AI Sponsor
 
 ## 專案簡介
 
-Autonomous research system for measurable, computer-executable research.
+Dress AI Sponsor
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/sapientinc--PRAXIST");
+> const me = dv.page("Repos/GangTailorUpgrade--undress-service");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +125,7 @@ Autonomous research system for measurable, computer-executable research.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/sapientinc--PRAXIST");
+> const me = dv.page("Repos/GangTailorUpgrade--undress-service");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,258 +149,285 @@ Autonomous research system for measurable, computer-executable research.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 129 |
+| Forks | 1 |
 | Open Issues | 0 |
-| 最後推送 | 2026-08-28 |
-| 建立日期 | 2026-08-27 |
-| 官方網站 | [Link](https://praxist.sapient.inc/en/docs) |
-| Repo 大小 | 14.8 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/sapientinc/PRAXIST) |
+| 最後推送 | 2026-09-02 |
+| 建立日期 | 2026-08-31 |
+| 官方網站 | [Link](https://undress.design/undress) |
+| Repo 大小 | 1.2 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/GangTailorUpgrade/undress-service) |
+| Topics | `18comic` `coomer` `coomer-downloader` `coomer-party` `coomer-porn` `coomer-su` `doujin-moe` `ehviewer` |
 
 > [!info]- 主要依賴
 > `requirements.txt` 中的核心套件：
-> `anthropic` `backoff` `openai` `matplotlib` `pypdf` `pymupdf4llm` `seaborn` `numpy` `transformers` `datasets` `tiktoken` `wandb` `tqdm` `rich` `humanize`
+> `fastapi` `uvicorn` `python-multipart` `pydantic` `pydantic-settings` `python-dotenv` `sqlalchemy` `alembic` `aiosqlite` `torch` `torchvision` `transformers` `diffusers` `accelerate` `safetensors`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 98
->     "Jinja" : 2
->     "Shell" : 1
+>     "Python" : 93
+>     "Batchfile" : 6
+>     "Dockerfile" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@electrixoul](https://github.com/electrixoul) | 3 |
-> | [@Knowix](https://github.com/Knowix) | 1 |
+> | [@GangTailorUpgrade](https://github.com/GangTailorUpgrade) | 7 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-27 ~ 2026-08-28）
-> **活躍天數** 2 天 · **最新 commit** fix: preserve Codex Desktop originator metadata (#2)
+> [!abstract] 最近 10 次 commit（2026-08-31 ~ 2026-09-02）
+> **活躍天數** 2 天 · **最新 commit** Update README.md
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> Praxist: meet your personal R&amp;D team
+> # 👗 Dress AI Service
 > 
->   
->   
->   
->   
->   
+> **Self-Hosted AI Outfit Generator & Virtual Wardrobe Stylist**
 > 
-> Praxist is an autonomous research system for measurable, computer-executable
-> research. It coordinates parallel research peers, task-owned evaluation,
-> durable evidence, and generation-to-generation synthesis.
+> [](https://python.org)
+> [](https://fastapi.tiangolo.com)
+> [](https://docker.com)
+> [](LICENSE)
+> [](https://github.com/GangTailorUpgrade/undress-service)
 > 
-> Praxist treats research as a persistent process rather than a sequence of
-> disconnected prompts. Use it when a project already runs and its objective is
-> measurable, but the best path forward is still unknown.
+> 🚀 **Turn your closet into an AI-powered fashion assistant.** Upload your wardrobe, get smart outfit recommendations for any occasion, and visualize your looks with generative AI — all self-hosted, private, and free.
 > 
->   
+> [🎥 Demo Video](#) · [📖 Documentation](docs/) · [🐳 Quick Start](#quick-start) · [💬 Discord](#)
+> 
+> ---
 > 
 > 
-> ## Install Praxist
-> 
-> Install the complete runtime integrations and finish first-use setup with one
-> command:
-> 
-> ```bash
-> python3 -m pip install --index-url https://pypi.org/simple "praxist[agents,codex]" && praxist setup --interactive --install-skills codex
-> ```
-> 
-> The local wizard covers the Fair Source License, User Agreement, privacy,
-> runtime profile, masked credentials, Codex skills, writable examples,
-> and readiness checks. It does not select a research project or launch a run.
-> For Claude Code, use the
-> [host-specific one-line command](docs/getting-started/installation.md#install-and-configure).
-> 
-> For an agent-managed installation, open Codex:
-> 
-> ```bash
-> codex --yolo
-> ```
-> 
-> Then ask it to install and configure Praxist using the packaged OOBE runbook,
-> and to stop after readiness checks.
-> 
-> Before starting research, read the [Quickstart](docs/getting-started/quickstart.md)
-> and [Your First Task](docs/getting-started/first-task.md). They describe the
-> separate takeover step and the project contract it creates.
-> 
-> Choose **Codex-native mode** to use an existing Codex subscription without an
-> API key. For sustained research, Praxist generally favors
-> [open-source model APIs](docs/guides/open-source-model-apis.md) with a high
-> observed cache-hit rate. The setup wizard also supports other API-backed
-> profiles.
+> # Setup
+> git clone https://github.com/GangTailorUpgrade/undress-service.git
+> cd dress-ai-service
+> python -m venv venv && source venv/bin/activate
+> pip install -r requirements-dev.txt
 > 
 > 
-> ## Examples And Templates
+> ## 📦 Features
+> 
+> 
+> ### Core Features
+> - ✅ **AI Auto-Tagging** — Upload a photo; AI detects category (top, bottom, shoes, accessory), dominant colors, fabric type, pattern, and season
+> - ✅ **Smart Outfit Generator** — Combines items based on color theory, occasion, weather, and fashion rules
+> - ✅ **Virtual Try-On Visualization** — Generate photorealistic images of recommended outfits on customizable avatars
+> - ✅ **Weather Integration** — Real-time weather-aware suggestions (rain coats, summer linens, winter layers)
+> - ✅ **Occasion Profiles** — Casual, Business, Date Night, Gym, Travel, Party presets
+> - ✅ **Favorites & Collections** — Save and organize your favorite looks
+> - ✅ **Export & Share** — Export outfit boards as PNG/PDF or shareable links
+> - ✅ **Batch Upload** — Drag & drop entire folders of clothing photos
+> - ✅ **Duplicate Detection** — AI prevents adding the same item twice
+> 
+> 
+> ### Advanced Features
+> - 🔄 **Model Swap** — Choose different AI model styles (realistic, anime, sketch)
+> - 🎨 **Color Palette Extractor** — Builds seasonal color palettes from your wardrobe
+> - 📊 **Wardrobe Analytics** — Insights: most-worn colors, underutilized items, gap analysis
+> - 🔌 **Plugin System** — Extend with custom recommendation engines
+> - 🌍 **Multi-language** — i18n support for 12 languages
+> - 📱 **PWA Support** — Install as a mobile app
+> 
+> ---
+> 
+> 
+> ### Option 1: Docker (Recommended)
 > 
 > ```bash
-> praxist examples list
-> praxist examples install rocket_booster_recovery
-> praxist examples install rocket_booster_recovery_rust
+> git clone https://github.com/GangTailorUpgrade/undress-service.git
+> cd dress-ai-service
+> cp .env.example .env
+> docker-compose up --build
 > ```
 > 
-> Complete examples are writable reference projects. `templates/tasks/` contains
-> replaceable scaffolding for building new task harnesses. The two Rocket Booster
-> Recovery examples demonstrate the same research problem through Python/JAX and
-> native Rust implementations.
+> Visit `http://localhost:8080` — your personal AI stylist is live! 🎉
 > 
 > 
-> ### Q4. Do I need an API key, and what will it cost?
-> 
-> No API key is required in Codex-native mode; Praxist uses your authenticated
-> Codex session. We also recommend using your own API key to access supported
-> model APIs.
-> 
-> API costs are set by the provider and vary by model and usage. Total cost also
-> depends on parallelism, the number of generations, and evaluation runtime. For
-> cost-sensitive runs, start with a small representative workload before scaling
-> up.
-> 
-> 
-> ## Use Praxist Through Codex
-> 
-> We recommend Codex as the interface for operating Praxist. Praxist is not a
-> replacement for Codex: Codex remains the interactive agent that understands
-> your project, communicates with you, and uses development tools. Praxist adds
-> the persistent research loop, parallel peers, evidence protocols, scheduling,
-> and lifecycle control.
-> 
-> After installation, open Codex in the root of an already runnable research
-> project and invoke `$praxist-takeover`. The takeover skill inspects readiness,
-> creates or repairs the task harness, validates its evaluator and evidence
-> contract, and launches the run after the required gates pass. A precise brief
-> produces a better research plan; include the objective, metrics, constraints,
-> resources, exploration choices, and whether launch is authorized.
-> 
-> Example takeover brief
-> 
-> ```text
-> $praxist-takeover
-> 
-> Treat the current directory as the existing runnable research project. Verify
-> the baseline and its evaluation path before changing anything.
-> 
-> Optimize  while preserving .
-> Use  peers for up to  generations within
-> . Use the runtime and model provider selected during
-> setup.  literature search,  QD, and
->  generation-zero DIG.
-> 
-> Do not download new datasets or replace required project assets. Build a
-> separate task harness with explicit metric directions, baseline provenance,
-> protocol-integrity checks, evidence maturity rules, and justified retention
-> lanes. After readiness checks pass, . Report the task path, run ID, evidence contract, generation
-> close policy, and monitor command.
-> ```
-> 
-> Other bundled skills:
-> 
-> | Skill | Purpose |
-> |---|---|
-> | `praxist-takeover-codex` | No-key takeover using the saved Codex login |
-> | `praxist-onboarding` | Explain Praxist and inspect local readiness |
-> | `praxist-task-initialization` | Build or repair a task harness without launching |
-> | `praxist-interactive-task-init` | Design a task through confirmation-first setup |
-> | `praxist-control` | Start, stop, resume, monitor, and inspect runs |
-> | `praxist-diagnostic` | Diagnose run health and produce reports |
-> | `praxist-scientific-research` | Gather sourced literature and benchmark context |
-> | `praxist-runtime-install` | Install or repair runtime dependencies and credentials |
-> | `terminal-line-plot` | Draw metric trends in the terminal |
-> 
-> See [Agent Skills](docs/user-guide/skills.md) for invocation syntax and the
-> generated [Skills Reference](docs/reference/skills.md) for the complete
-> contracts.
-> 
-> 
-> ## What Praxist Provides
-> 
-> | Capability | Purpose |
-> |---|---|
-> | Parallel research peers | Explore competing hypotheses and implementations concurrently |
-> | Multi-generation synthesis | Carry useful evidence and strategy into later generations |
-> | Durable evidence lanes | Preserve candidates through incubator, frontier, and Gems state |
-> | Multi-metric evaluation | Rank task-defined evidence, including Pareto-optimal tradeoffs |
-> | [Quality-Diversity (QD)](docs/guides/qdig-cohort-allocator.md) and optional [Deep Innovation Gate (DIG)](docs/guides/deep-innovation-gate.md) | Maintain diversity without forcing one exploration policy |
-> | Central resource scheduling | Adapt experiment admission to observed resource pressure |
-> | Resume, replay, and monitoring | Keep long-running research inspectable and recoverable |
-> | Plugin boundaries | Support multiple runtimes, providers, tools, budgets, and workflows |
-> 
-> 
-> ## Praxist And The Task Project
-> 
-> | Praxist owns | The task project owns |
-> |---|---|
-> | Research orchestration, lifecycle, evidence protocols, replay, scheduling, and extension interfaces | Research objective, executable code, evaluator, metrics, baselines, prompts, roles, and domain constraints |
-> 
-> Praxist contains no task-specific scientific assumptions. A task remains the
-> single source of truth for what should be tested and what counts as valid evidence.
-> 
-> 
-> ## Operate A Run
+> ### Option 2: Local Python
 > 
 > ```bash
-> praxist status --json
-> praxist --monitor --latest
-> praxist stop 
-> praxist resume 
+> git clone https://github.com/GangTailorUpgrade/undress-service.git
+> cd dress-ai-service
+> python -m venv venv
+> source venv/bin/activate  # Windows: venv\Scripts\activate
+> pip install -r requirements.txt
+> 
+> 
+> ## ⚙️ Configuration
+> 
+> Create a `.env` file:
+> 
+> ```env
+> 
+> # Optional: Ollama for LLM reasoning
+> OLLAMA_URL=http://localhost:11434
+> OLLAMA_MODEL=llama3.2
+> 
+> 
+> # Optional: Weather API
+> OPENWEATHER_API_KEY=your_key_here
+> 
+> 
+> ## 🧪 API Endpoints
+> 
+> | Method | Endpoint | Description |
+> |--------|----------|-------------|
+> | `POST` | `/api/v1/wardrobe/upload` | Upload clothing item |
+> | `GET` | `/api/v1/wardrobe/items` | List all wardrobe items |
+> | `GET` | `/api/v1/wardrobe/items/{id}` | Get item details |
+> | `DELETE` | `/api/v1/wardrobe/items/{id}` | Remove item |
+> | `POST` | `/api/v1/outfits/generate` | Generate outfit recommendations |
+> | `GET` | `/api/v1/outfits/{id}` | Get outfit details |
+> | `POST` | `/api/v1/outfits/{id}/visualize` | Generate outfit visualization |
+> | `POST` | `/api/v1/outfits/{id}/favorite` | Save to favorites |
+> | `GET` | `/api/v1/analytics/wardrobe` | Wardrobe insights |
+> | `GET` | `/api/v1/health` | Health check |
+> 
+> **Full API docs:** `http://localhost:8080/docs` (Swagger UI) or `http://localhost:8080/redoc` (ReDoc)
+> 
+> ---
+> 
+> 
+> ## ✨ What is Dress AI Service?
+> 
+> **Dress AI Service** is an open-source, self-hosted AI fashion platform that helps you:
+> 
+> - 📸 **Digitize your wardrobe** — Upload photos of your clothes; AI auto-tags them by category, color, style, and season
+> - 🧠 **Get smart outfit recommendations** — AI suggests perfect combinations based on occasion, weather, and your personal style
+> - 🎨 **Visualize outfits before wearing** — Generate AI renderings of how recommended outfits will look
+> - 🌤️ **Weather-aware styling** — Integrates real-time weather to suggest appropriate layers and fabrics
+> - 🏠 **100% self-hosted** — Your photos stay on your machine. No cloud uploads. No privacy concerns.
+> 
+> Whether you're a fashion enthusiast, a boutique owner, or a developer building the next generation of fashion tech, Dress AI Service gives you a complete, production-ready foundation.
+> 
+> ---
+> 
+> 
+> ## 🖼️ Screenshots
+> 
+> | Wardrobe Upload | AI Tagging | Outfit Recommendations | AI Visualization |
+> |---|---|---|---|
+> |  |  |  |  |
+> 
+> ---
+> 
+> # Download AI models (first run)
+> python scripts/download_models.py
+> 
+> 
+> # Start the server
+> uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
 > ```
 > 
-> `Ctrl-C` closes only the monitor; it does not stop the research run.
+> ---
 > 
 > 
-> ## Requirements
+> ## 🏗️ Architecture
 > 
-> | Status | Requirement |
-> |---|---|
-> | Required | CPython 3.11+ |
-> | Required to launch research | A runnable project with measurable evaluation |
-> | Required for skill-driven operation | Codex or Claude Code; direct CLI operation remains available without either |
-> | Authentication: choose one | A saved Codex login for Codex-native mode, or a supported provider API key |
-> | Continuously release-tested | Linux on CPython 3.11 and 3.12 |
-> | Compatibility target | macOS and other CPython 3.11+ environments; run `praxist doctor` before research |
-> 
-> Task-specific datasets and compute dependencies remain owned by the task project.
-> 
-> See the [platform support matrix](docs/operations/platform-support.md) for the
-> difference between release-qualified hosts and compatibility targets.
-> 
-> 
-> ## Documentation
-> 
-> Read the **[Praxist documentation](https://praxist.sapient.inc/en/docs)**
-> or open it with:
-> 
-> ```bash
-> praxist docs
+> ```
+> ┌─────────────────────────────────────────────────────────────┐
+> │                     Dress AI Service                        │
+> ├─────────────────────────────────────────────────────────────┤
+> │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐ │
+> │  │  Wardrobe   │  │   Outfit    │  │   AI Visualization  │ │
+> │  │   Upload    │  │   Engine    │  │      Pipeline       │ │
+> │  │  & Storage  │  │  (Rules +   │  │  (Stable Diffusion  │ │
+> │  │             │  │   LLM)      │  │   / FLUX / SDXL)    │ │
+> │  └──────┬──────┘  └──────┬──────┘  └──────────┬──────────┘ │
+> │         │                │                     │            │
+> │  ┌──────▼────────────────▼─────────────────────▼──────────┐ │
+> │  │              FastAPI Backend (Python 3.11)             │ │
+> │  │  • SQLite / PostgreSQL  • CLIP Tagging  • Weather API │ │
+> │  └─────────────────────────┬──────────────────────────────┘ │
+> │                            │                                │
+> │  ┌─────────────────────────▼──────────────────────────────┐ │
+> │  │              Self-Hosted Frontend (HTML/JS)            │ │
+> │  │         • Drag & Drop Upload  • Live Preview          │ │
+> │  └────────────────────────────────────────────────────────┘ │
+> └─────────────────────────────────────────────────────────────┘
 > ```
 > 
-> No local documentation server is required.
+> ---
 > 
 > 
-> ## FAQ
+> ## 🛠️ Tech Stack
 > 
-> Show questions and answers
+> | Layer | Technology | Purpose |
+> |-------|-----------|---------|
+> | **Backend** | FastAPI + Python 3.11 | High-performance async API |
+> | **AI/ML** | CLIP, Stable Diffusion XL, FLUX.1-schnell | Image understanding & generation |
+> | **Database** | SQLite (default) / PostgreSQL | Wardrobe & outfit storage |
+> | **Frontend** | Vanilla HTML5 + Tailwind CSS | Lightweight, zero-build UI |
+> | **Container** | Docker + Docker Compose | One-command deployment |
+> | **LLM** | Ollama (optional) | Local outfit reasoning & descriptions |
+> 
+> ---
 > 
 > 
-> ### Q1. What is Praxist?
+> # Server
+> HOST=0.0.0.0
+> PORT=8080
+> DEBUG=false
 > 
-> Praxist is an autonomous research system for measurable research problems that
-> can be executed on a computer. It turns an already runnable project into a
-> continuous, evidence-driven research run.
 > 
-> Across successive generations, parallel research agents develop candida
+> # Database
+> DATABASE_URL=sqlite:///data/wardrobe.db
+> 
+> # DATABASE_URL=postgresql://user:pass@localhost/dressai
+> 
+> 
+> # AI Models
+> USE_LOCAL_MODELS=true
+> SDXL_MODEL_PATH=models/sd-xl-base
+> FLUX_MODEL_PATH=models/flux-schnell
+> CLIP_MODEL=openai/clip-vit-large-patch14
+> 
+> 
+> # Image Generation
+> IMAGE_WIDTH=1024
+> IMAGE_HEIGHT=1024
+> NUM_INFERENCE_STEPS=20
+> GUIDANCE_SCALE=7.5
+> 
+> 
+> # Storage
+> UPLOAD_DIR=data/uploads
+> MAX_UPLOAD_SIZE=20MB
+> ```
+> 
+> ---
+> 
+> 
+> ## 🧠 How It Works
+> 
+> 
+> ### 1. Wardrobe Digitization
+> When you upload a clothing photo:
+> 1. **Image preprocessing** — Resize, normalize, background removal (optional)
+> 2. **CLIP inference** — Classifies category, color, pattern, fabric
+> 3. **Embedding storage** — Saves visual embedding for similarity search
+> 4. **Metadata extraction** — Dominant colors, season tags, style classification
+> 
+> 
+> ### 2. Outfit Recommendation Engine
+> The recommendation system uses a hybrid approach:
+> - **Rule-based layer** — Color theory (complementary, analogous, triadic), occasion appropriateness, weather matching
+> - **Embedding similarity** — CLIP embeddings find visually harmonious combinations
+> - **LLM reasoning** (optional) — Ollama-powered natural language outfit reasoning
+> - **User feedback loop** — Learns from your favorites and rejections
+> 
+> 
+> ### 3. AI Visualization
+> For each recommended outfit:
+> 1. **Prompt engineering** — 
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/sapientinc/PRAXIST) · [官方網站](https://praxist.sapient.inc/en/docs)
+[GitHub](https://github.com/GangTailorUpgrade/undress-service) · [官方網站](https://undress.design/undress)
 
 ## 相關收錄
 
@@ -402,7 +435,7 @@ Autonomous research system for measurable, computer-executable research.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "sapientinc--PRAXIST"
+> WHERE category = "Other" AND file.name != "GangTailorUpgrade--undress-service"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -411,7 +444,7 @@ Autonomous research system for measurable, computer-executable research.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "sapientinc--PRAXIST" AND status != "archived"
+> WHERE language = "Python" AND file.name != "GangTailorUpgrade--undress-service" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -420,18 +453,18 @@ Autonomous research system for measurable, computer-executable research.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W35" AND file.name != "sapientinc--PRAXIST"
+> WHERE week = "2026-W36" AND file.name != "GangTailorUpgrade--undress-service"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/sapientinc--PRAXIST");
+> const me = dv.page("Repos/GangTailorUpgrade--undress-service");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "sapientinc--PRAXIST" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "GangTailorUpgrade--undress-service" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -447,7 +480,7 @@ Autonomous research system for measurable, computer-executable research.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "sapientinc" AND file.name != "sapientinc--PRAXIST"
+> WHERE owner = "GangTailorUpgrade" AND file.name != "GangTailorUpgrade--undress-service"
 > SORT stars DESC
 > ```
 
@@ -455,7 +488,7 @@ Autonomous research system for measurable, computer-executable research.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/sapientinc--PRAXIST");
+> const me = dv.page("Repos/GangTailorUpgrade--undress-service");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -472,7 +505,7 @@ Autonomous research system for measurable, computer-executable research.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/sapientinc--PRAXIST");
+> const me = dv.page("Repos/GangTailorUpgrade--undress-service");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -505,7 +538,7 @@ Autonomous research system for measurable, computer-executable research.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/sapientinc--PRAXIST");
+> const me = dv.page("Repos/GangTailorUpgrade--undress-service");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -529,7 +562,7 @@ Autonomous research system for measurable, computer-executable research.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/sapientinc--PRAXIST");
+> const me = dv.page("Repos/GangTailorUpgrade--undress-service");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -566,7 +599,7 @@ Autonomous research system for measurable, computer-executable research.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/sapientinc--PRAXIST");
+> const me = dv.page("Repos/GangTailorUpgrade--undress-service");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -649,7 +682,7 @@ Autonomous research system for measurable, computer-executable research.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-08-28** — 首次收錄
+> **2026-09-03** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -665,10 +698,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-03|2026-09-03]] — 再次上榜，6.7k stars
-- [[2026-09-02|2026-09-02]] — 再次上榜，6.3k stars
-- [[2026-09-01|2026-09-01]] — 再次上榜，5.7k stars
-- [[2026-08-31|2026-08-31]] — 再次上榜，4.8k stars
-- [[2026-08-30|2026-08-30]] — 再次上榜，3.2k stars
-- [[2026-08-29|2026-08-29]] — 再次上榜，2.1k stars
-- [[2026-08-28|2026-08-28]] — 首次收錄，1.2k stars
+- [[2026-09-03|2026-09-03]] — 首次收錄，945 stars

@@ -7,8 +7,8 @@ language: CSS
 license: N/A
 description: "🌐 🔌 The MetaMask desktop app enables browsing Ethereum blockchain enabled websites"
 homepage: ""
-stars: 1229
-stars_per_day: 307
+stars: 1230
+stars_per_day: 246
 forks: 91
 open_issues: 0
 created: 2026-08-28
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-09-05"
+appearances: 4
+next_review: "2026-09-06"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-08-31"
-star_history: "2026-08-31:1228,2026-09-01:1228,2026-09-02:1229"
+star_history: "2026-08-31:1228,2026-09-01:1228,2026-09-02:1229,2026-09-03:1230"
 tags:
   - github
   - "category/other"
@@ -533,6 +533,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-03|2026-09-03]] — 再次上榜，1.2k stars
 - [[2026-09-02|2026-09-02]] — 再次上榜，1.2k stars
 - [[2026-09-01|2026-09-01]] — 再次上榜，1.2k stars
 - [[2026-08-31|2026-08-31]] — 首次收錄，1.2k stars

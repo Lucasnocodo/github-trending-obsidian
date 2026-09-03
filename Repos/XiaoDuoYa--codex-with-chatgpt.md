@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness."
 homepage: ""
-stars: 2169
-stars_per_day: 542
-forks: 218
+stars: 2296
+stars_per_day: 459
+forks: 242
 open_issues: 5
 created: 2026-08-28
-pushed_at: 2026-09-01
+pushed_at: 2026-09-02
 first_seen: 2026-08-30
 week: "2026-W36"
 month: "2026-08"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-09-05"
+appearances: 5
+next_review: "2026-09-06"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 85
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-08-30"
-star_history: "2026-08-30:1007,2026-08-31:1524,2026-09-01:1952,2026-09-02:2169"
+star_history: "2026-08-30:1007,2026-08-31:1524,2026-09-01:1952,2026-09-02:2169,2026-09-03:2296"
 tags:
   - github
   - "category/other"
@@ -651,6 +651,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-03|2026-09-03]] — 再次上榜，2.3k stars
 - [[2026-09-02|2026-09-02]] — 再次上榜，2.2k stars
 - [[2026-09-01|2026-09-01]] — 再次上榜，2.0k stars
 - [[2026-08-31|2026-08-31]] — 再次上榜，1.5k stars
