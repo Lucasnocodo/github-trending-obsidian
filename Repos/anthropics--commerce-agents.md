@@ -1,19 +1,19 @@
 ---
-repo: cbrock84/headcount
-url: https://github.com/cbrock84/headcount
-owner: cbrock84
-owner_type: User
-language: Markdown
-license: MIT
-description: "An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable."
-homepage: "https://cbrock84.github.io/headcount/"
-stars: 1197
-stars_per_day: 200
-forks: 190
-open_issues: 1
-created: 2026-08-28
-pushed_at: 2026-09-03
-first_seen: 2026-09-01
+repo: anthropics/commerce-agents
+url: https://github.com/anthropics/commerce-agents
+owner: anthropics
+owner_type: Organization
+language: Python
+license: Apache-2.0
+description: "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included."
+homepage: "https://claude.com/solutions/commerce"
+stars: 1664
+stars_per_day: 832
+forks: 270
+open_issues: 3
+created: 2026-09-01
+pushed_at: 2026-09-01
+first_seen: 2026-09-04
 week: "2026-W36"
 month: "2026-09"
 category: "Other"
@@ -25,44 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-01
+last_reviewed: 2026-09-04
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-09-07"
-contributor_count: 3
+contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 6840
-readme_length: 2990
-bus_factor: 2
+repo_size_kb: 1464
+readme_length: 9702
+bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-01"
-star_history: "2026-09-01:873,2026-09-02:974,2026-09-03:1126,2026-09-04:1197"
+ring_history: "assess@2026-09-04"
+star_history: "2026-09-04:1664"
 tags:
   - github
   - "category/other"
-  - "lang/markdown"
-  - "topic/agent_marketplace"
-  - "topic/claude_code"
-  - "topic/claude_code_plugin"
-  - "topic/claude_plugin"
-  - "topic/claude_skills"
+  - "lang/python"
+  - org
 aliases:
-  - "headcount"
-  - "cbrock84/headcount"
+  - "commerce-agents"
+  - "anthropics/commerce-agents"
 ---
 
-# headcount
+# commerce-agents
 
-**873** stars · **291** stars/天 · 建立 3 天前 · Markdown · MIT
+**1.7k** stars · **832** stars/天 · 建立 2 天前 · Python · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/cbrock84--headcount");
+const me = dv.page("Repos/anthropics--commerce-agents");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`agent-marketplace` `claude-code` `claude-code-plugin` `claude-plugin` `claude-skills` `mcp`
+`ORG`
 
 > [!summary] 一句話摘要
-> An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable.
+> Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.
 
 ## 專案簡介
 
-An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable.
+Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/anthropics--commerce-agents");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -123,7 +119,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/anthropics--commerce-agents");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -147,125 +143,181 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 132 |
-| Open Issues | 1 |
+| Forks | 270 |
+| Open Issues | 3 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-09-01 |
-| 建立日期 | 2026-08-28 |
-| 官方網站 | [Link](https://cbrock84.github.io/headcount/) |
-| Repo 大小 | 6.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cbrock84/headcount) |
-| Topics | `agent-marketplace` `claude-code` `claude-code-plugin` `claude-plugin` `claude-skills` `mcp` |
+| 建立日期 | 2026-09-01 |
+| 官方網站 | [Link](https://claude.com/solutions/commerce) |
+| Repo 大小 | 1.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/anthropics/commerce-agents) |
+
+> [!info]- 主要依賴
+> `requirements.txt` 中的核心套件：
+> `-e ./commerce-common` `-e ./shopping-agent/core` `-e ./shopping-agent/runtime-messages-api` `-e ./shopping-agent/runtime-agent-sdk` `-e ./merchant-agent/core` `-e ./merchant-agent/runtime-messages-api` `-e ./merchant-agent/runtime-agent-sdk` `annotated-doc` `annotated-types` `anthropic` `anyio` `attrs` `certifi` `cffi` `claude-agent-sdk`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 99
+>     "Shell" : 1
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@claude](https://github.com/claude) | 25 |
-> | [@cbrock84](https://github.com/cbrock84) | 24 |
-> | [@chris-brock](https://github.com/chris-brock) | 5 |
+> | [@alishazal](https://github.com/alishazal) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-01 ~ 2026-09-01）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #28 from cbrock84/claude/skill-depth
+> [!abstract] 最近 10 次 commit（2026-08-31）
+> **活躍天數** 1 天 · **最新 commit** building commerce agents using claude
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> headcount
+> # Claude Commerce Agents
 > 
-> Add a department, not a prompt.
+> Two commerce agents built on Claude: a **shopping agent** a business embeds in its app for
+> customers, and a **merchant agent** its staff use to run the back office. Each is defined
+> once (prompt, skills, tool contracts, gates) and runs on the Messages API, the Claude Agent
+> SDK, and Managed Agents; four runnable verticals show both over the same libraries.
 > 
->   
->   
->   
->   
->   
-> 
->   
->     
->       
->       
->     
->   
-> 
->   Open the interactive org chart — search every skill, open a department, jump to the source.
-> 
-> An agent organization for [Claude Code](https://claude.com/claude-code), structured as a company:
-> a chief executive over 16 departments, 172 skills in total.
-> 
-> Every department is an independently installable plugin, so a project loads only the functions it
-> needs rather than all of them at once.
+> > [!NOTE]
+> > Every company, brand, product, and person here is fictional; the only company is ACME.
+> > Nothing places an order, charges a card, or changes a live listing: `checkout` renders
+> > the cart for the host to complete, and every merchant write is staged until a person
+> > approves it. Business rules, authorization, and compliance are the deployment's.
 > 
 > 
-> ## Install
+> ## Quick start: run the demos
 > 
-> ```
-> /plugin marketplace add cbrock84/headcount
-> /plugin install security@headcount
+> Python 3.11+ and Node 22. Clone, install, add a key, run a vertical:
+> 
+> ```bash
+> git clone https://github.com/anthropics/commerce-agents.git && cd commerce-agents
+> python3 -m venv .venv && source .venv/bin/activate
+> pip install -r requirements.txt       # the seven packages and their pinned dependencies
+> cp .env.example .env                  # add ANTHROPIC_API_KEY
+> (cd examples && npm ci)               # the eight web apps share one workspace
+> python scripts/run_demo.py retail     # API :8000 + storefront :3000
 > ```
 > 
-> Install as many departments as the project needs. Skills are addressed as `department:skill` —
-> `security:threat-modeling`, `finance:unit-economics` — so names never collide.
+> `--merchant` starts the portal instead of the storefront and `--all` starts both. The
+> verticals are `retail` (:3000, portal :3100), `travel` (:3001, :3101), `telecom` (:3002,
+> :3102), and `entertainment` (:3003, :3103); each README lists prompts to try on both surfaces.
 > 
 > 
-> ## Use
+> ## Quick start: build your own
 > 
-> Skills load themselves when a request matches. Ask a question in the department's territory and the
-> right specialist engages:
+> The Claude Code plugin scaffolds an agent on these packages against your systems, or reviews
+> one you have. With the repo cloned as above (the plugin reads it as the reference):
 > 
-> | You ask | What loads |
-> |---|---|
-> | "why isn't this landing page converting?" | `demand-generation:landing-page-cro-expert` |
-> | "review this design before we build it" | `security:threat-modeling` |
-> | "can we afford this hire?" | `finance:unit-economics` |
-> | "our growth has stalled" | `executive:business-growth-consultant` |
-> 
-> Invoke one directly by name when you want a specific lens: `/finance:financial-modeling`.
-> 
-> Seven situations that cross departments — a SOC 2 demand from an enterprise prospect, a
-> security incident, a stalled funnel — are worked through end to end in
-> [docs/USE-CASES.md](docs/USE-CASES.md), including where a reviewer-class department stops the
-> work rather than adding an opinion.
-> 
-> Each department also ships an agent charter in `.claude/agents/`, so a department can be delegated
-> to as a subagent with its own exclusive write surface.
-> 
-> 
-> ## How it is organized
-> 
-> ```
-> plugins//
->   .claude-plugin/plugin.json   department manifest
->   skills//SKILL.md      frontmatter name equals the directory name
-> .claude/agents/.md         one charter per department
-> docs/AGENT-SURFACES.md         every path has exactly one owner, enforced in CI
-> docs/DECISION-LOG.md           numbered decisions with options and recommendations
-> docs/USE-CASES.md              situations worked end to end across departments
-> docs/org-chart.html           interactive org chart, searchable across every skill
-> docs/index.html               GitHub Pages entry point, redirects to the chart
+> ```bash
+> claude plugin marketplace add anthropics/commerce-agents
+> claude plugin install commerce-builder@claude-commerce-agents
+> claude
+> /scaffold-commerce-agent a shopping assistant for our store
 > ```
 > 
-> Agents split by **exclusive write surface**, not by topic — a topic split has no checkable
-> boundary, and two agents working on "SEO" and "UI" both end up in the same file. See
-> `executive:agent-hierarchy` for the method.
+> The command asks about your stack, plays the plan back, and builds the project; `/add-commerce-flow`
+> and `/author-commerce-evals` continue from there, and `/review-commerce-agent` starts from an agent
+> that already exists ([`plugins/commerce-builder/`](plugins/commerce-builder/)). Each command also
+> runs when a request matches its description, so naming it is optional.
 > 
 > 
-> ## Writing
+> ## The two agents
 > 
-> Notes from building and running this, and from the day job — technology, security, AI, and the
-> operating side of all three — go out at [cbrock84.substack.com](https://cbrock84.substack.com).
+> The **shopping agent** searches, compares, plans, fills the cart, answers order and policy
+> questions, and remembers what a customer tells it. Its five flows are the skills in
+> [`shopping-agent/skills/`](shopping-agent/skills/); a deployment implements
+> [`StorefrontBackend`](shopping-agent/core/shopping_agent/backend.py) over its catalog,
+> cart, order, and policy systems.
 > 
-> The piece on why this is shaped like an org chart at all, and what broke before it was:
-> [Giving AI agents an org chart](https://cbrock84.substack.com/p/giving-ai-agents-an-org-chart).
+> The **merchant agent** explains performance, maintains listings, acts on inventory and order
+> alerts, prices and promotes, and drafts campaigns; every write is a staged change the host's
+> approval surface applies. Its five flows are the skills in [`merchant-agent/skills/`](merchant-agent/skills/);
+> a deployment implements [`MerchantBackend`](merchant-agent/core/merchant_agent/backend.py) over
+> its analytics, catalog, inventory, pricing, and campaign systems.
 > 
 > 
+> ## Layout
+> 
+> | Directory | Contents | pip package, `import` name |
+> |---|---|---|
+> | [`commerce-common/`](commerce-common/) | What both roles share: config, fencing, memory, skills, grounding, presentation, executor frame, events | `commerce-common`, `commerce_common` |
+> | [`shopping-agent/core/`](shopping-agent/core/) | Shopping types, `StorefrontBackend`, prompt, tool contracts, gates, executor | `shopping-agent-core`, `shopping_agent` |
+> | [`shopping-agent/runtime-messages-api/`](shopping-agent/runtime-messages-api/) | `ShoppingAgent`, the turn loop on the Messages API | `shopping-agent-runtime`, `shopping_agent_runtime` |
+> | [`shopping-agent/runtime-agent-sdk/`](shopping-agent/runtime-agent-sdk/) | The shopping agent on the Agent SDK, with a console | `shopping-agent-sdk`, `shopping_agent_sdk` |
+> | [`shopping-agent/managed-agents/`](shopping-agent/managed-agents/) | Manifest and storefront MCP server for Managed Agents | — |
+> | [`merchant-agent/core/`](merchant-agent/core/) | Merchant types, `MerchantBackend`, prompt, tool contracts, change guardrails, gates, executor | `merchant-agent-core`, `merchant_agent` |
+> | [`merchant-agent/runtime-messages-api/`](merchant-agent/runtime-messages-api/) | `MerchantAgent` and the analysis delegate on the Messages API | `merchant-agent-runtime`, `merchant_agent_runtime` |
+> | [`merchant-agent/runtime-agent-sdk/`](merchant-agent/runtime-agent-sdk/) | The merchant agent on the Agent SDK, with an approving console | `merchant-agent-sdk`, `merchant_agent_sdk` |
+> | [`merchant-agent/managed-agents/`](merchant-agent/managed-agents/) | Manifest, merchant MCP server, scheduled digest for Managed Agents | — |
+> | [`examples/`](examples/) | Four verticals, shared host code (`demo_common/`), shared web code (`web-shared/`) | — |
+> | [`plugins/commerce-builder/`](plugins/commerce-builder/) | The Claude Code plugin | — |
+> | [`docs/`](docs/) | `safety.md` (enforced rules), `backends.md` (mapping your systems), `deployment.md` (other platforms) | — |
+> | [`tests/`](tests/) | Cross-package suites; each package also has its own `tests/` | — |
+> | [`scripts/`](scripts/) | `install.sh`, `run_demo.py`, `smoke_chat.py`, `screenshot_tour.py`, `check.py`, `deploy_managed_agent.sh`, `verify_all.py` | — |
+> 
+> 
+> ## Three ways to run an agent
+> 
+> **Messages API.** The reference loop; the examples are host applications around it:
+> 
+> ```python
+> from pathlib import Path
+> 
+> from shopping_agent import ShoppingAgentConfig
+> from shopping_agent_runtime import ShoppingAgent
+> 
+> agent = ShoppingAgent(backend=your_backend, skills_dir=Path("shopping-agent/skills"),
+>                       config=ShoppingAgentConfig(brand_name="Your Store"))
+> async for event in agent.stream_turn(messages, session, state):
+>     ...   # text_delta, tool_call, ui, cart_update (change_update on the merchant side), turn_complete
+> await agent.update_memory(messages, session)   # memory extraction; this path only
+> ```
+> 
+> The example hosts take the session id in an `X-Session-Id` header.
+> 
+> **Agent SDK.** The same prompt, skills, and tools, with the SDK running the loop; the host
+> prefetches grounding reads, and nothing runs after the turn:
+> 
+> ```bash
+> python shopping-agent/runtime-agent-sdk/main.py --once "a two-person tent under $250"
+> python merchant-agent/runtime-agent-sdk/main.py          # approves staged changes with y/N
+> ```
+> 
+> **Managed Agents.** A hosted agent over the same skills and contracts, calling your MCP server:
+> 
+> ```bash
+> scripts/deploy_managed_agent.sh shopping-agent/managed-agents/shopping-agent   # or merchant-agent/...; --live deploys
+> ```
+> 
+> 
+> ## Safety
+> 
+> Fencing, provenance gates, caps, memory validation, and the merchant approval gate run
+> inside the tool call and hold on all three paths; grounding, the analysis budgets, and memory
+> extraction are runtime features. [`docs/safety.md`](docs/safety.md) lists each rule with its
+> module and paths, and what a deployment adds first; the examples have no authentication and
+> the MCP servers bind to loopback.
+> 
+> 
+> ## Verticals
+> 
+> | Example | Storefront | Portal |
+> |---|---|---|
+> | [`examples/retail/`](examples/retail/) ACME | Search, comparison, plans, cart, checkout, memory over the built-in components | Digest, staged restocks and listing fixes, analysis delegate over a SQL view |
+> | [`examples/travel/`](examples/travel/) ACME Travel | Date-bound inventory and a `present_itinerary` extension | Occupancy calendar and date-window rate moves |
+> | [`examples/telecom/`](examples/telecom/) ACME Mobile | Account context, plan matrix, server-authored fee disclosures | Plan mix, price moves that state the lines affected, protected regulated fees |
+> | [`examples/entertainment/`](examples/entertainment/) ACME Tickets | Timed holds, waitlists, transfers, venue map, all-in fee disclosures | Event pacing, hold releases that add real capacity, fee-preserving pric
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/cbrock84/headcount) · [官方網站](https://cbrock84.github.io/headcount/)
+[GitHub](https://github.com/anthropics/commerce-agents) · [官方網站](https://claude.com/solutions/commerce)
 
 ## 相關收錄
 
@@ -273,7 +325,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "cbrock84--headcount"
+> WHERE category = "Other" AND file.name != "anthropics--commerce-agents"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -282,7 +334,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Markdown" AND file.name != "cbrock84--headcount" AND status != "archived"
+> WHERE language = "Python" AND file.name != "anthropics--commerce-agents" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -291,18 +343,18 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "cbrock84--headcount"
+> WHERE week = "2026-W36" AND file.name != "anthropics--commerce-agents"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/anthropics--commerce-agents");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "cbrock84--headcount" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "anthropics--commerce-agents" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -318,7 +370,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "cbrock84" AND file.name != "cbrock84--headcount"
+> WHERE owner = "anthropics" AND file.name != "anthropics--commerce-agents"
 > SORT stars DESC
 > ```
 
@@ -326,7 +378,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/anthropics--commerce-agents");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -343,7 +395,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/anthropics--commerce-agents");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -376,7 +428,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/anthropics--commerce-agents");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -400,7 +452,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/anthropics--commerce-agents");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -437,7 +489,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/anthropics--commerce-agents");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -520,7 +572,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-01** — 首次收錄
+> **2026-09-04** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -536,7 +588,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-04|2026-09-04]] — 再次上榜，1.2k stars
-- [[2026-09-03|2026-09-03]] — 再次上榜，1.1k stars
-- [[2026-09-02|2026-09-02]] — 再次上榜，974 stars
-- [[2026-09-01|2026-09-01]] — 首次收錄，873 stars
+- [[2026-09-04|2026-09-04]] — 首次收錄，1.7k stars

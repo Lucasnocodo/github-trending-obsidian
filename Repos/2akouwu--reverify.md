@@ -1,68 +1,68 @@
 ---
-repo: cbrock84/headcount
-url: https://github.com/cbrock84/headcount
-owner: cbrock84
+repo: 2akouwu/reverify
+url: https://github.com/2akouwu/reverify
+owner: 2akouwu
 owner_type: User
-language: Markdown
+language: Python
 license: MIT
-description: "An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable."
-homepage: "https://cbrock84.github.io/headcount/"
-stars: 1197
-stars_per_day: 200
-forks: 190
-open_issues: 1
-created: 2026-08-28
-pushed_at: 2026-09-03
-first_seen: 2026-09-01
+description: "Anti-hallucination for AI agents that read binaries. The model proposes, deterministic tools decide: every claim is VERIFIED or REFUTED against the real bytes, with evidence, and grounded facts survive context resets. MCP server + CLI."
+homepage: ""
+stars: 818
+stars_per_day: 205
+forks: 172
+open_issues: 3
+created: 2026-08-31
+pushed_at: 2026-09-04
+first_seen: 2026-09-04
 week: "2026-W36"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.9.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-01
+last_reviewed: 2026-09-04
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-09-07"
-contributor_count: 3
+contributor_count: 1
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 6840
-readme_length: 2990
-bus_factor: 2
-last_release_days: -1
-release_cadence: "never"
+issue_close_rate: 25
+repo_size_kb: 360
+readme_length: 9816
+bus_factor: 1
+last_release_days: 0
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-01"
-star_history: "2026-09-01:873,2026-09-02:974,2026-09-03:1126,2026-09-04:1197"
+ring_history: "assess@2026-09-04"
+star_history: "2026-09-04:818"
 tags:
   - github
   - "category/other"
-  - "lang/markdown"
-  - "topic/agent_marketplace"
-  - "topic/claude_code"
-  - "topic/claude_code_plugin"
-  - "topic/claude_plugin"
-  - "topic/claude_skills"
+  - "lang/python"
+  - "topic/ai"
+  - "topic/ai_agents"
+  - "topic/anti_hallucination"
+  - "topic/binary_analysis"
+  - "topic/context_engineering"
 aliases:
-  - "headcount"
-  - "cbrock84/headcount"
+  - "reverify"
+  - "2akouwu/reverify"
 ---
 
-# headcount
+# reverify
 
-**873** stars · **291** stars/天 · 建立 3 天前 · Markdown · MIT
+**818** stars · **205** stars/天 · 建立 4 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/cbrock84--headcount");
+const me = dv.page("Repos/2akouwu--reverify");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`agent-marketplace` `claude-code` `claude-code-plugin` `claude-plugin` `claude-skills` `mcp`
+`個人專案` `v0.9.0`
+
+`ai` `ai-agents` `anti-hallucination` `binary-analysis` `context-engineering` `ctf` `developer-tools` `disassembler` `frida` `grounding` `hallucination` `hallucination-detection` `llm` `malware-analysis` `mcp` `mcp-server` `python` `reverse-engineering` `security-tools` `verification`
 
 > [!summary] 一句話摘要
-> An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable.
+> Anti-hallucination for AI agents that read binaries. The model proposes, deterministic tools decide: every claim is VERIFIED or REFUTED against the real bytes, with evidence, and grounded facts survive context resets. MCP server + CLI.
 
 ## 專案簡介
 
-An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable.
+Anti-hallucination for AI agents that read binaries. The model proposes, deterministic tools decide: every claim is VERIFIED or REFUTED against the real bytes, with evidence, and grounded facts survive context resets. MCP server + CLI.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/2akouwu--reverify");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -123,7 +125,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/2akouwu--reverify");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -147,34 +149,53 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 132 |
-| Open Issues | 1 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-01 |
-| 建立日期 | 2026-08-28 |
-| 官方網站 | [Link](https://cbrock84.github.io/headcount/) |
-| Repo 大小 | 6.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cbrock84/headcount) |
-| Topics | `agent-marketplace` `claude-code` `claude-code-plugin` `claude-plugin` `claude-skills` `mcp` |
+| Forks | 172 |
+| Open Issues | 3 |
+| Issue 解決率 | 25% (1 closed) |
+| 最後推送 | 2026-09-04 |
+| 建立日期 | 2026-08-31 |
+| Repo 大小 | 360 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/2akouwu/reverify) |
+| Topics | `ai` `ai-agents` `anti-hallucination` `binary-analysis` `context-engineering` `ctf` `developer-tools` `disassembler` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@claude](https://github.com/claude) | 25 |
-> | [@cbrock84](https://github.com/cbrock84) | 24 |
-> | [@chris-brock](https://github.com/chris-brock) | 5 |
+> | [@2akouwu](https://github.com/2akouwu) | 24 |
+
+**最新版本**：v0.9.0 — v0.9.0 — the semantic layer (angr): functions, calls, xrefs (2026-09-04)
+
+> [!info]- Release Notes
+> ## The semantic layer (roadmap #3)
+> 
+> Bytes, instructions, imports and emulation are what the deterministic core can judge on its own. The claims analysts actually make — *function X calls Y*, *this string is referenced from that routine*, *this code is reachable from the entry point* — need function boundaries and cross-references, i.e. a real program-analysis engine. Reverify does not build one: it stands on **angr** (`CFGFast`) and keeps its own part thin.
+> 
+> - **Four claim kinds**: `function_at` (offset or name; `observe` reads size, blocks, callees), `calls` (`from` -> `to`, where `to` may be a function or an import name; a refutation lists the real callees), `references` (code references the data at `to`, e.g. a string, optionally from a given function; a refutation lists the referencing functions), `reachable_from_entry`. Addresses accept `space: file|rva|va`; names accept `lib!func`.
+> - **Honest strength**: semantic verdicts name the engine and version and land in the ledger at a new **`DERIVED`** tier below `VERIFIED` — recovered by static analysis, not read from the bytes. Without an engine the pure fallback only knows what is independently certain (the entry point and the exports are function starts) and answers `INCONCLUSIVE` for everything else, never a guess.
+> - **Who verifies the verifier, semantic edition**: the export table (lief or the pure parser, independent of angr) is the oracle — every export must be a function start the engine recovered.
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-01 ~ 2026-09-01）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #28 from cbrock84/claude/skill-depth
+> [!abstract] 最近 10 次 commit（2026-09-03 ~ 2026-09-04）
+> **活躍天數** 2 天 · **最新 commit** feat: semantic layer on angr — function boundaries, call graph, xrefs (v0.9.0)
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#4](https://github.com/2akouwu/reverify/issues/4) | Expand the hallucination benchmark beyond the prologue prior | 0 | 0 |
+> | [#2](https://github.com/2akouwu/reverify/issues/2) | ExeBench / re-executability adapter: compile candidate C and | 0 | 0 |
+> | [#1](https://github.com/2akouwu/reverify/issues/1) | Run the hallucination benchmark on Linux ELF and macOS Mach- | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> headcount
+> Reverify
 > 
-> Add a department, not a prompt.
+>   The AI proposes. The bytes decide.
+>   Anti-hallucination for AI agents that read binaries: every claim is checked against the real bytes.
 > 
 >   
 >   
@@ -184,88 +205,157 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > 
 >   
 >     
->       
->       
->     
 >   
 > 
->   Open the interactive org chart — search every skill, open a department, jump to the source.
+> Ask an AI to reverse-engineer a file and it will make things up — offsets, structs, what the
+> code does — and say it like it's fact. Reverify checks it against the one thing that can't lie,
+> **the bytes**. Every claim is tested against the real binary; only what's true survives.
 > 
-> An agent organization for [Claude Code](https://claude.com/claude-code), structured as a company:
-> a chief executive over 16 departments, 172 skills in total.
+> On 19 real Windows system files, the AI's textbook answer was wrong **100% of the time** —
+> reverify caught every one, with **zero false alarms**
+> ([EXAMPLE.md](EXAMPLE.md), [BENCHMARK.md](BENCHMARK.md); `python benchmarks/prologue_prior.py`).
 > 
-> Every department is an independently installable plugin, so a project loads only the functions it
-> needs rather than all of them at once.
-> 
-> 
-> ## Install
-> 
-> ```
-> /plugin marketplace add cbrock84/headcount
-> /plugin install security@headcount
-> ```
-> 
-> Install as many departments as the project needs. Skills are addressed as `department:skill` —
-> `security:threat-modeling`, `finance:unit-economics` — so names never collide.
+>   
 > 
 > 
-> ## Use
+> ## Quick start
 > 
-> Skills load themselves when a request matches. Ask a question in the department's territory and the
-> right specialist engages:
+> ```bash
 > 
-> | You ask | What loads |
-> |---|---|
-> | "why isn't this landing page converting?" | `demand-generation:landing-page-cro-expert` |
-> | "review this design before we build it" | `security:threat-modeling` |
-> | "can we afford this hire?" | `finance:unit-economics` |
-> | "our growth has stalled" | `executive:business-growth-consultant` |
-> 
-> Invoke one directly by name when you want a specific lens: `/finance:financial-modeling`.
-> 
-> Seven situations that cross departments — a SOC 2 demand from an enterprise prospect, a
-> security incident, a stalled funnel — are worked through end to end in
-> [docs/USE-CASES.md](docs/USE-CASES.md), including where a reviewer-class department stops the
-> work rather than adding an opinion.
-> 
-> Each department also ships an agent charter in `.claude/agents/`, so a department can be delegated
-> to as a subagent with its own exclusive write surface.
+> # Install the CLI + MCP server from PyPI:
+> pip install reverify        # pure-Python core; or "reverify[full]" for capstone+unicorn+lief
+> reverify auto sample.bin --json
 > 
 > 
-> ## How it is organized
-> 
-> ```
-> plugins//
->   .claude-plugin/plugin.json   department manifest
->   skills//SKILL.md      frontmatter name equals the directory name
-> .claude/agents/.md         one charter per department
-> docs/AGENT-SURFACES.md         every path has exactly one owner, enforced in CI
-> docs/DECISION-LOG.md           numbered decisions with options and recommendations
-> docs/USE-CASES.md              situations worked end to end across departments
-> docs/org-chart.html           interactive org chart, searchable across every skill
-> docs/index.html               GitHub Pages entry point, redirects to the chart
+> # Or run straight from a checkout — pure standard library, nothing to install:
+> python reverify/cli.py auto sample.bin --json
+> python reverify/cli.py parse-pe sample.exe --json
+> python reverify/cli.py disasm 90505831C0C3 --arch x86_64
 > ```
 > 
-> Agents split by **exclusive write surface**, not by topic — a topic split has no checkable
-> boundary, and two agents working on "SEO" and "UI" both end up in the same file. See
-> `executive:agent-hierarchy` for the method.
+> 
+> ## The problem
+> 
+> Language models are great at reading code and unreliable at reverse engineering. Ask a
+> model to reconstruct a struct or an algorithm from a binary and it will confidently invent
+> offsets, sizes, and behavior. In binary analysis this hallucination problem is far worse
+> than in source code, and *"did the model just make that up?"* is the single biggest blocker
+> to using AI for real RE.
 > 
 > 
-> ## Writing
+> ## What Reverify does
 > 
-> Notes from building and running this, and from the day job — technology, security, AI, and the
-> operating side of all three — go out at [cbrock84.substack.com](https://cbrock84.substack.com).
+> Reverify pairs a language model with a **deterministic, pure-Python RE toolkit** and makes the
+> toolkit the judge. The model proposes; the tools verify. A hypothesis about a structure or an
+> algorithm is only reported once it has been **checked against the actual bytes** — disassembled,
+> pattern-matched, or executed in the emulator — so the output is grounded in the binary instead
+> of the model's imagination.
 > 
-> The piece on why this is shaped like an org chart at all, and what broke before it was:
-> [Giving AI agents an org chart](https://cbrock84.substack.com/p/giving-ai-agents-an-org-chart).
+> - **Deterministic core** — PE/ELF/Mach-O parsing, x86/x64/ARM/ARM64 disassembly, AOB pattern
+>   scanning, CPU emulation, Protobuf/TLV dissection, Frida hook generation. Pure Python out of
+>   the box; installs clean with no Ghidra.
+> - **Mature engines, optional** — with `pip install "reverify[full]"` the toolkit upgrades
+>   itself in place to **capstone** (disassembly), **unicorn** (real CPU emulation), **lief**
+>   (PE/ELF/Mach-O) and **Z3** (proofs); `pip install "reverify[angr]"` adds **angr** for
+>   function boundaries, the call graph and cross-references. Not installed? It falls back to
+>   the pure-Python core. `reverify backends` shows what's active.
+> - **Grounded, not guessed** — structural claims are verified against the binary by the tools.
+> - **Agent-native** — ships as an MCP server, so Claude Code, Cursor, and other agents can call
+>   the tools directly; also a plain CLI.
+> 
+> > Reverify is for **authorized** reverse engineering — malware analysis, CTF, interoperability
+> > research, and software you own or are permitted to analyze. See [SECURITY.md](SECURITY.md).
 > 
 > 
+> ## The verification loop
+> 
+> This is what the name is about. A **claim** is any hypothesis about the binary; the
+> deterministic tools are the judge and hand back `VERIFIED`, `REFUTED`, or
+> `INCONCLUSIVE` together with the bytes they actually observed:
+> 
+> ```bash
+> reverify verify sample.bin --claim '{
+>   "kind": "instructions", "offset": 4096,
+>   "mnemonics": ["push", "mov", "sub"], "note": "function prologue"
+> }'
+> ```
+> 
+> ```bash
+> 
+> # Check a reconstructed routine actually computes what the model claimed:
+> reverify verify - --claim '{
+>   "kind": "emulate_result", "code": "b805000000b90300000001c8c3",
+>   "arch": "x86", "expect_registers": {"eax": 8}
+> }'
+> ```
+> 
+> Claims can be batched from a JSON file (`--claims-file claims.json`); the CLI exits
+> non-zero if **anything** is refuted, so an agent or CI job can gate on a grounded
+> reconstruction. Claim kinds: `bytes_at`, `u16_at` / `u32_at` / `u64_at` (typed reads, no
+> endianness math), `pattern_present`, `string_present`, `instructions` (mnemonics and
+> optionally operands), `emulate_result`, `behavior_equiv`, `prove_equiv`, `protobuf_field`,
+> `import_present`, `export_present`, `section_present`, and the semantic kinds
+> `function_at`, `calls`, `references`, `reachable_from_entry` (see
+> [The semantic layer](#the-semantic-layer-functions-calls-and-cross-references)). Offsets are file offsets unless a claim says
+> `"space": "rva"` or `"va"`; the verifier translates through the section table and echoes
+> all three addresses in the evidence, and a refuted `bytes_at` reports where the expected
+> bytes actually are. Set `"observe": true` (or omit `expected`) to have the tools *read* a
+> value instead of asserting one, and `"depends_on": [...]` so a refuted root invalidates
+> the claims built on it.
+> 
+> 
+> ### Grounded means *informative*, not just "nothing refuted"
+> 
+> "Every claim verified" is trivially reachable: assert that the file starts with `MZ` and
+> that `.text` exists. So Reverify also weighs how much a verified set actually says. Each
+> result carries a `weight` — zero for claims that merely restate the fact sheet the model was
+> shown, for duplicates, for inline code/data that does not occur in the binary
+> (self-referential), and for echoes of the tools' own previous output; otherwise it is
+> **measured from the binary itself** — how often the expected content occurs in this file and
+> how much entropy it has — so zero padding, a ubiquitous prologue, or a pattern that matches
+> everywhere weigh almost nothing even though they verify, and emulation must actually execute
+> non-degenerate code. A reconstruction is **grounded** only when nothing
+> is refuted *and* the verified weight reaches `--min-information` (default 1.0). This follows
+> the CORE refinement of FActScore: credit only claims that are factual, informative and
+> non-repetitive. `reverify reconstruct --samples N` draws several proposals per round and
+> lets the verifier — not the model's confidence — select among them.
+> 
+> [EXAMPLE.md](EXAMPLE.md) walks through one run on `kernel32.dll` — the model
+> proposes the textbook prologue from prior, the verifier refutes it with the real
+> bytes, and the model corrects to grounded, with no API key and no specific model.
+> [BENCHMARK.md](BENCHMARK.md) is the reproducible measurement behind the numbers above.
+> 
+> 
+> ## The ledger: state that survives a context reset
+> 
+> Every agent harness handles a full context window the same way — a model summarizes the
+> transcript, the rest is dropped, and the docs warn that repeated compactions degrade
+> accuracy. That loss is unavoidable for free-form conversation, because nothing in a
+> transcript says which parts were *state* and which were chatter.
+> 
+> Reverify's loop can do better for itself, because it already draws that line: the only
+> things that matter are what the tools **verified, observed, proved — and refuted**.
+> Everything else (the model's prose, its unverified guesses) was never trusted, so dropping
+> it loses nothing. Since v0.8.0 exactly that state is written to disk as it happens:
+> 
+> - **`.reverify/ledger/.json` per binary** (content-keyed, so a renamed copy shares
+>   its ledger), checkpointed after **every** round — a crash, a `/clear`, an auto-compact or
+>   a new process all resume from the same grounded position.
+> - **Negative memory**: refutations come back as `KNOWN FALSE`, so a fresh context does not
+>   re-propose the same wrong prior — the part a summary usually drops.
+> - **Bounded in context, unbounded on disk**: the prompt shows the most recent `--max-facts`
+>   (proof-grade facts pinned), and a deterministic ladder trims the *shown* fact sheet to
+>   `--prompt-budget` characters (kernel32.dll: 43k chars fit a 20k budget with the section
+>   table, entry point and header intact). Scoring uses the full sheet, so hiding a fact never
+>   makes restating it profitable, and a claim already in the ledger scores zero (`known`).
+> - **Lazy hand-off**: the hook injects one index line per binary; the facts are pulled on
+>   demand, so recovering state costs a few dozen
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/cbrock84/headcount) · [官方網站](https://cbrock84.github.io/headcount/)
+[GitHub](https://github.com/2akouwu/reverify)
 
 ## 相關收錄
 
@@ -273,7 +363,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "cbrock84--headcount"
+> WHERE category = "Other" AND file.name != "2akouwu--reverify"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -282,7 +372,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Markdown" AND file.name != "cbrock84--headcount" AND status != "archived"
+> WHERE language = "Python" AND file.name != "2akouwu--reverify" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -291,18 +381,18 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "cbrock84--headcount"
+> WHERE week = "2026-W36" AND file.name != "2akouwu--reverify"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/2akouwu--reverify");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "cbrock84--headcount" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "2akouwu--reverify" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -318,7 +408,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "cbrock84" AND file.name != "cbrock84--headcount"
+> WHERE owner = "2akouwu" AND file.name != "2akouwu--reverify"
 > SORT stars DESC
 > ```
 
@@ -326,7 +416,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/2akouwu--reverify");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -343,7 +433,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/2akouwu--reverify");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -376,7 +466,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/2akouwu--reverify");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -400,7 +490,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/2akouwu--reverify");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -437,7 +527,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/2akouwu--reverify");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -520,7 +610,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-01** — 首次收錄
+> **2026-09-04** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -536,7 +626,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-04|2026-09-04]] — 再次上榜，1.2k stars
-- [[2026-09-03|2026-09-03]] — 再次上榜，1.1k stars
-- [[2026-09-02|2026-09-02]] — 再次上榜，974 stars
-- [[2026-09-01|2026-09-01]] — 首次收錄，873 stars
+- [[2026-09-04|2026-09-04]] — 首次收錄，818 stars

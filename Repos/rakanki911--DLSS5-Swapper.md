@@ -1,68 +1,63 @@
 ---
-repo: cbrock84/headcount
-url: https://github.com/cbrock84/headcount
-owner: cbrock84
+repo: rakanki911/DLSS5-Swapper
+url: https://github.com/rakanki911/DLSS5-Swapper
+owner: rakanki911
 owner_type: User
-language: Markdown
+language: JavaScript
 license: MIT
-description: "An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable."
-homepage: "https://cbrock84.github.io/headcount/"
-stars: 1197
-stars_per_day: 200
-forks: 190
-open_issues: 1
-created: 2026-08-28
+description: "DLSS 5 Swapper is a powerful, easy-to-use tool for installing, managing, and restoring DLSS 5 across games and supported emulators. It features automatic game detection, optional drive scanning, DLSS5-Feeder for compatible titles without native DLSS, emulator support, and compatibility with DirectX 9/10/11/12, Vulkan, and OpenGL."
+homepage: ""
+stars: 1157
+stars_per_day: 231
+forks: 49
+open_issues: 28
+created: 2026-08-29
 pushed_at: 2026-09-03
-first_seen: 2026-09-01
+first_seen: 2026-09-04
 week: "2026-W36"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v2.2.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-01
+last_reviewed: 2026-09-04
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-09-07"
-contributor_count: 3
-engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 6840
-readme_length: 2990
-bus_factor: 2
-last_release_days: -1
-release_cadence: "never"
+contributor_count: 2
+engagement: "low"
+issue_close_rate: 52
+repo_size_kb: 27828
+readme_length: 4730
+bus_factor: 1
+last_release_days: 2
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-01"
-star_history: "2026-09-01:873,2026-09-02:974,2026-09-03:1126,2026-09-04:1197"
+ring_history: "assess@2026-09-04"
+star_history: "2026-09-04:1157"
 tags:
   - github
   - "category/other"
-  - "lang/markdown"
-  - "topic/agent_marketplace"
-  - "topic/claude_code"
-  - "topic/claude_code_plugin"
-  - "topic/claude_plugin"
-  - "topic/claude_skills"
+  - "lang/javascript"
 aliases:
-  - "headcount"
-  - "cbrock84/headcount"
+  - "DLSS5-Swapper"
+  - "rakanki911/DLSS5-Swapper"
 ---
 
-# headcount
+# DLSS5-Swapper
 
-**873** stars · **291** stars/天 · 建立 3 天前 · Markdown · MIT
+**1.2k** stars · **231** stars/天 · 建立 5 天前 · JavaScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/cbrock84--headcount");
+const me = dv.page("Repos/rakanki911--DLSS5-Swapper");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`agent-marketplace` `claude-code` `claude-code-plugin` `claude-plugin` `claude-skills` `mcp`
+`v2.2.0`
 
 > [!summary] 一句話摘要
-> An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable.
+> DLSS 5 Swapper is a powerful, easy-to-use tool for installing, managing, and restoring DLSS 5 across games and supported emulators. It features automatic game detection, optional drive scanning, DLSS5-Feeder for compatible titles without native DLSS, emulator support, and compatibility with DirectX 9/10/11/12, Vulkan, and OpenGL.
 
 ## 專案簡介
 
-An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable.
+DLSS 5 Swapper is a powerful, easy-to-use tool for installing, managing, and restoring DLSS 5 across games and supported emulators. It features automatic game detection, optional drive scanning, DLSS5-Feeder for compatible titles without native DLSS, emulator support, and compatibility with DirectX 9/10/11/12, Vulkan, and OpenGL.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/rakanki911--DLSS5-Swapper");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -123,7 +118,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/rakanki911--DLSS5-Swapper");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -147,125 +142,184 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 132 |
-| Open Issues | 1 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-01 |
-| 建立日期 | 2026-08-28 |
-| 官方網站 | [Link](https://cbrock84.github.io/headcount/) |
-| Repo 大小 | 6.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cbrock84/headcount) |
-| Topics | `agent-marketplace` `claude-code` `claude-code-plugin` `claude-plugin` `claude-skills` `mcp` |
+| Forks | 49 |
+| Open Issues | 28 |
+| Issue 解決率 | 52% (30 closed) |
+| 最後推送 | 2026-09-03 |
+| 建立日期 | 2026-08-29 |
+| Repo 大小 | 27.2 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/rakanki911/DLSS5-Swapper) |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `extract-zip` `electron` `electron-builder`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "JavaScript" : 91
+>     "CSS" : 7
+>     "HTML" : 2
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@claude](https://github.com/claude) | 25 |
-> | [@cbrock84](https://github.com/cbrock84) | 24 |
-> | [@chris-brock](https://github.com/chris-brock) | 5 |
+> | [@rakanki911](https://github.com/rakanki911) | 19 |
+> | [@Febsho](https://github.com/Febsho) | 2 |
+
+**最新版本**：v2.2.0 — DLSS 5 Swapper v2.2.0 - OptiScaler & Smarter Library (2026-09-02)
+
+> [!info]- Release Notes
+> # DLSS 5 Swapper v2.2.0 — Optional OptiScaler & Smarter Library
+> 
+> The biggest addition in **2.2.0** is **optional OptiScaler DLSS-NR integration**,
+> alongside new library tools, persistent History, improved recovery, and
+> 38-language coverage for search, filters and installation warnings.
+> 
+> ## ⭐ Headline: choose OptiScaler or ReShade per game
+> 
+> - Select **Rendering backend → OptiScaler DLSS-NR** in the game details,
+>   then **Apply backend change / Install** with the game closed.
+> - **ReShade remains the default.** OptiScaler is completely optional. Select
+>   ReShade and apply to return; each backend keeps separate settings.
+> - Downloads a pinned, SHA-256-verified
+>   [OptiScaler DLSS-NR v0.1.1.5](https://github.com/Dagherbou/OptiScaler_DLSSNR/releases/tag/v0.1.1.5-dlssnr)
+>   from its author on first use (~130 MB); upstream batch scripts are not run.
+> - Requires **RTX 50 series**, **NVIDIA driver 616.56+**, and a **64-bit game
+>   with native DLSS enabled**. This is not a generic injector for non-DLSS
+>   games or emulators; use ReShade/Feeder for those.
+> - DX12 uses DLSS output by default. DX11/Vulkan uses the DX12 bridge with
+>   FSR output by default, while DLSS remains selected in the game's settings
+>   to provide inputs. Performance and image quality depend on the game.
+> - Vulkan backend changes require **Restore originals** first. Active global
+>   ReShade Vulkan installations must be restored before using OptiScaler;
+>   layers belonging to other games are not silently disabled.
+> 
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-01 ~ 2026-09-01）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #28 from cbrock84/claude/skill-depth
+> [!abstract] 最近 10 次 commit（2026-09-02 ~ 2026-09-03）
+> **活躍天數** 2 天 · **最新 commit** Organize emulator profiles and all 38 languages into README tables
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#40](https://github.com/rakanki911/DLSS5-Swapper/issues/40) | API detecter wrong `good first issue` | 3 | 2 |
+> | [#41](https://github.com/rakanki911/DLSS5-Swapper/issues/41) | Proposed QOL Improvement. `enhancement` | 2 | 1 |
+> | [#76](https://github.com/rakanki911/DLSS5-Swapper/issues/76) | Allow rendering API to be changed. | 1 | 0 |
+> | [#50](https://github.com/rakanki911/DLSS5-Swapper/issues/50) | [Suggestion] Allow installing OptiScaler method for older Nv | 1 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> headcount
+> DLSS 5 Swapper
 > 
-> Add a department, not a prompt.
+>   Install and manage DLSS 5 Neural Rendering for compatible games and emulators.
 > 
+>   
 >   
 >   
 >   
->   
->   
+> 
+> ## Download 2.2.0
+> 
+> [**Windows Installer**](https://github.com/rakanki911/DLSS5-Swapper/releases/download/v2.2.0/DLSS5-Swapper-Setup-2.2.0.exe) ·
+> [**Portable**](https://github.com/rakanki911/DLSS5-Swapper/releases/download/v2.2.0/DLSS5-Swapper-2.2.0-portable.exe) ·
+> [Checksums](https://github.com/rakanki911/DLSS5-Swapper/releases/download/v2.2.0/SHA256SUMS.txt)
 > 
 >   
->     
->       
->       
->     
->   
 > 
->   Open the interactive org chart — search every skill, open a department, jump to the source.
+> ## Features
 > 
-> An agent organization for [Claude Code](https://claude.com/claude-code), structured as a company:
-> a chief executive over 16 departments, 172 skills in total.
+> - **Easy installation:** native DLSS games, or compatible non-DLSS games through DLSS5-Feeder.
+> - **Your library:** Steam, Epic, GOG, modern Xbox Game Pass folders, and manually added games/emulators.
+> - **Search and filters:** combine title, graphics API, DLSS status/version and add-ons; click counters to filter.
+> - **Flexible layout:** group by store or show everything in one list, with game artwork and light/dark themes.
+> - **Controlled scanning:** full-drive scanning is **off by default**. Added folders still scan normally; enable all-drive discovery or remove scan folders in Settings.
+> - **Right-click shortcuts:** open/copy folder, rescan, change cover, restore originals or hide a game.
+> - **Backups and History:** restore original files, keep installation records, and copy History/activity/install logs.
+> - **Custom add-ons:** the Add-ons page remains available alongside the integrated installation routes.
 > 
-> Every department is an independently installable plugin, so a project loads only the functions it
-> needs rather than all of them at once.
+> ## New in 2.2.0
 > 
+> - **⭐ Optional [OptiScaler DLSS-NR](https://github.com/Dagherbou/OptiScaler_DLSSNR/releases):** choose it in the game page instead of ReShade. Apply the change with the game closed; switch back when wanted. Settings are kept separately.
+> - **SWTOR / DX9:** correct Feeder selection instead of the native-only route; adds 32-bit DX8 installation.
+> - **Feeder repairs:** matching 0.12.0 components, corrected shader/preset settings, and missing Visual C++ runtime checks.
+> - **Better detection:** small/nested executables and Cyberpunk 2077 / Phantom Liberty library entries.
+> - **Safer installs/restores:** preserve native Streamline/FG files, protect backups during repeat installs and backend switches, and restore even when the executable is missing.
+> - **History and translations:** fixes missing installation history; search, filters and installation warnings now cover all 38 languages.
 > 
-> ## Install
+> [Full fixes and known limitations →](docs/releases/v2.2.0.md)
 > 
-> ```
-> /plugin marketplace add cbrock84/headcount
-> /plugin install security@headcount
-> ```
+> ## Compatibility
 > 
-> Install as many departments as the project needs. Skills are addressed as `department:skill` —
-> `security:threat-modeling`, `finance:unit-economics` — so names never collide.
+> | Category | Support |
+> | --- | --- |
+> | **System** | Windows 10/11 x64; compatible 32-bit and 64-bit games |
+> | **ReShade / Feeder GPUs** | RTX 20 / 30 / 40 / 50; older-series support is reported by the bundled modified runtime's author |
+> | **OptiScaler GPUs** | RTX 50 only, NVIDIA driver **616.56+**, 64-bit games with native DLSS enabled |
+> | **DirectX 12** | Native DLSS, Feeder, or eligible OptiScaler games |
+> | **DirectX 11** | Feeder for 32/64-bit games; eligible OptiScaler games |
+> | **DirectX 9 / 8** | DX9: 32/64-bit; DX8: 32-bit, through dgVoodoo2 → DX11 → Feeder |
+> | **Vulkan / OpenGL** | ReShade/Feeder; eligible Vulkan games can also use OptiScaler |
+> | **DirectX 10** | Not directly supported by Feeder; choose DX11 when available |
 > 
+> OptiScaler's DX11/Vulkan path uses a DX12 bridge with FSR output by default.
+> For Vulkan backend changes, **restore originals first**. OptiScaler is not the emulator/non-DLSS route.
 > 
-> ## Use
+> ## Emulators
 > 
-> Skills load themselves when a request matches. Ask a question in the department's territory and the
-> right specialist engages:
+> Select the emulator folder and its active renderer, then use **ReShade/Feeder**.
 > 
-> | You ask | What loads |
-> |---|---|
-> | "why isn't this landing page converting?" | `demand-generation:landing-page-cro-expert` |
-> | "review this design before we build it" | `security:threat-modeling` |
-> | "can we afford this hire?" | `finance:unit-economics` |
-> | "our growth has stalled" | `executive:business-growth-consultant` |
+>   Emulators
+>   DuckStationPCSX2RPCS3
+>   DolphinPPSSPPXenia
+>   CemuRyujinxyuzu / suyu / Eden / Citron / Sudachi
+>   shadPS4Azahar / Citra / Lime3DSmelonDS
+>   FlycastxemuVita3K
+>   RetroArchmGBASnes9x
+>   Play!
 > 
-> Invoke one directly by name when you want a specific lens: `/finance:financial-modeling`.
+> Compatibility varies by renderer and game. Xenia HUD correction remains experimental.
 > 
-> Seven situations that cross departments — a SOC 2 demand from an enterprise prospect, a
-> security incident, a stalled funnel — are worked through end to end in
-> [docs/USE-CASES.md](docs/USE-CASES.md), including where a reviewer-class department stops the
-> work rather than adding an opinion.
+> ## 38 languages
 > 
-> Each department also ships an agent charter in `.claude/agents/`, so a department can be delegated
-> to as a subagent with its own exclusive write surface.
+>   All 38 languages
+>   Englishالعربية简体中文繁體中文
+>   EspañolPortuguêsРусскийDeutsch
+>   Français日本語한국어Italiano
+>   TürkçePolskiУкраїнськаNederlands
+>   ČeštinaMagyarRomânăΕλληνικά
+>   SvenskaDanskNorskSuomi
+>   ไทยTiếng ViệtBahasa IndonesiaBahasa Melayu
+>   Filipinoहिन्दीবাংলাفارسی
+>   اردوБългарскиСрпскиHrvatski
+>   SlovenčinaCatalà
 > 
+> **Arabic, Persian and Urdu support right-to-left layout.**
 > 
-> ## How it is organized
+> ## Screenshots
 > 
-> ```
-> plugins//
->   .claude-plugin/plugin.json   department manifest
->   skills//SKILL.md      frontmatter name equals the directory name
-> .claude/agents/.md         one charter per department
-> docs/AGENT-SURFACES.md         every path has exactly one owner, enforced in CI
-> docs/DECISION-LOG.md           numbered decisions with options and recommendations
-> docs/USE-CASES.md              situations worked end to end across departments
-> docs/org-chart.html           interactive org chart, searchable across every skill
-> docs/index.html               GitHub Pages entry point, redirects to the chart
-> ```
+> ## Before installing
 > 
-> Agents split by **exclusive write surface**, not by topic — a topic split has no checkable
-> boundary, and two agents working on "SEO" and "UI" both end up in the same file. See
-> `executive:agent-hierarchy` for the method.
+> - **Anti-cheat:** red warning and optional confirmation, not a blanket block. Injection can cause crashes or account bans; the app never bypasses anti-cheat.
+> - **Requirements:** Feeder needs Visual C++ runtimes (x64, plus x86 for 32-bit games). Some components download on first use.
+> - **Compatibility is not guaranteed.** Keep backups; existing mods may conflict. Not every reported game crash is fixed.
+> - **Linux/Proton:** experimental community source only; no Linux binaries in this release.
 > 
+> ---
 > 
-> ## Writing
-> 
-> Notes from building and running this, and from the day job — technology, security, AI, and the
-> operating side of all three — go out at [cbrock84.substack.com](https://cbrock84.substack.com).
-> 
-> The piece on why this is shaped like an org chart at all, and what broke before it was:
-> [Giving AI agents an org chart](https://cbrock84.substack.com/p/giving-ai-agents-an-org-chart).
-> 
-> 
+> Built by **Rakan Alkhaldi** · MIT · [Third-party credits and licences](THIRD_PARTY_NOTICES.md)
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/cbrock84/headcount) · [官方網站](https://cbrock84.github.io/headcount/)
+[GitHub](https://github.com/rakanki911/DLSS5-Swapper)
 
 ## 相關收錄
 
@@ -273,7 +327,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "cbrock84--headcount"
+> WHERE category = "Other" AND file.name != "rakanki911--DLSS5-Swapper"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -282,7 +336,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Markdown" AND file.name != "cbrock84--headcount" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "rakanki911--DLSS5-Swapper" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -291,18 +345,18 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "cbrock84--headcount"
+> WHERE week = "2026-W36" AND file.name != "rakanki911--DLSS5-Swapper"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/rakanki911--DLSS5-Swapper");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "cbrock84--headcount" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "rakanki911--DLSS5-Swapper" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -318,7 +372,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "cbrock84" AND file.name != "cbrock84--headcount"
+> WHERE owner = "rakanki911" AND file.name != "rakanki911--DLSS5-Swapper"
 > SORT stars DESC
 > ```
 
@@ -326,7 +380,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/rakanki911--DLSS5-Swapper");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -343,7 +397,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/rakanki911--DLSS5-Swapper");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -376,7 +430,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/rakanki911--DLSS5-Swapper");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -400,7 +454,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/rakanki911--DLSS5-Swapper");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -437,7 +491,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/rakanki911--DLSS5-Swapper");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -520,7 +574,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-01** — 首次收錄
+> **2026-09-04** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -536,7 +590,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-04|2026-09-04]] — 再次上榜，1.2k stars
-- [[2026-09-03|2026-09-03]] — 再次上榜，1.1k stars
-- [[2026-09-02|2026-09-02]] — 再次上榜，974 stars
-- [[2026-09-01|2026-09-01]] — 首次收錄，873 stars
+- [[2026-09-04|2026-09-04]] — 首次收錄，1.2k stars

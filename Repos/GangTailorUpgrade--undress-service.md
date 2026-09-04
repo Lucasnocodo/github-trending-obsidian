@@ -7,8 +7,8 @@ language: Python
 license: MIT
 description: "Dress AI Sponsor"
 homepage: "https://undress.design/undress"
-stars: 945
-stars_per_day: 315
+stars: 1020
+stars_per_day: 255
 forks: 1
 open_issues: 0
 created: 2026-08-31
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-06"
+appearances: 2
+next_review: "2026-09-07"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-03"
-star_history: "2026-09-03:945"
+star_history: "2026-09-03:945,2026-09-04:1020"
 tags:
   - github
   - "category/other"
@@ -698,4 +698,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-04|2026-09-04]] — 再次上榜，1.0k stars
 - [[2026-09-03|2026-09-03]] — 首次收錄，945 stars

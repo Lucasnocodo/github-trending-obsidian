@@ -1,68 +1,68 @@
 ---
-repo: cbrock84/headcount
-url: https://github.com/cbrock84/headcount
-owner: cbrock84
+repo: Player-YN/PawWork_ZhuaZhua
+url: https://github.com/Player-YN/PawWork_ZhuaZhua
+owner: Player-YN
 owner_type: User
-language: Markdown
+language: JavaScript
 license: MIT
-description: "An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable."
-homepage: "https://cbrock84.github.io/headcount/"
-stars: 1197
-stars_per_day: 200
-forks: 190
-open_issues: 1
+description: "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server."
+homepage: ""
+stars: 873
+stars_per_day: 146
+forks: 5
+open_issues: 0
 created: 2026-08-28
-pushed_at: 2026-09-03
-first_seen: 2026-09-01
+pushed_at: 2026-09-01
+first_seen: 2026-09-04
 week: "2026-W36"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "unpacked-f2a02f0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-01
+last_reviewed: 2026-09-04
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-09-07"
-contributor_count: 3
-engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 6840
-readme_length: 2990
-bus_factor: 2
-last_release_days: -1
-release_cadence: "never"
+appearances: 1
+next_review: "2026-09-11"
+contributor_count: 1
+engagement: "low"
+issue_close_rate: -1
+repo_size_kb: 15555
+readme_length: 9229
+bus_factor: 1
+last_release_days: 3
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-01"
-star_history: "2026-09-01:873,2026-09-02:974,2026-09-03:1126,2026-09-04:1197"
+ring_history: "assess@2026-09-04"
+star_history: "2026-09-04:873"
 tags:
   - github
   - "category/other"
-  - "lang/markdown"
-  - "topic/agent_marketplace"
-  - "topic/claude_code"
-  - "topic/claude_code_plugin"
-  - "topic/claude_plugin"
-  - "topic/claude_skills"
+  - "lang/javascript"
+  - "topic/ai_agent"
+  - "topic/browser_agent"
+  - "topic/byok"
+  - "topic/chrome_extension"
+  - "topic/llm"
 aliases:
-  - "headcount"
-  - "cbrock84/headcount"
+  - "PawWork_ZhuaZhua"
+  - "Player-YN/PawWork_ZhuaZhua"
 ---
 
-# headcount
+# PawWork_ZhuaZhua
 
-**873** stars · **291** stars/天 · 建立 3 天前 · Markdown · MIT
+**873** stars · **146** stars/天 · 建立 6 天前 · JavaScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/cbrock84--headcount");
+const me = dv.page("Repos/Player-YN--PawWork_ZhuaZhua");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`agent-marketplace` `claude-code` `claude-code-plugin` `claude-plugin` `claude-skills` `mcp`
+`個人專案` `unpacked-f2a02f0`
+
+`ai-agent` `browser-agent` `byok` `chrome-extension` `llm` `pptx` `tldraw` `univer`
 
 > [!summary] 一句話摘要
-> An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable.
+> Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.
 
 ## 專案簡介
 
-An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable.
+Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/Player-YN--PawWork_ZhuaZhua");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -123,7 +125,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/Player-YN--PawWork_ZhuaZhua");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -147,125 +149,204 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 132 |
-| Open Issues | 1 |
-| Issue 解決率 | 0% (0 closed) |
+| Forks | 5 |
+| Open Issues | 0 |
 | 最後推送 | 2026-09-01 |
 | 建立日期 | 2026-08-28 |
-| 官方網站 | [Link](https://cbrock84.github.io/headcount/) |
-| Repo 大小 | 6.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cbrock84/headcount) |
-| Topics | `agent-marketplace` `claude-code` `claude-code-plugin` `claude-plugin` `claude-skills` `mcp` |
+| Repo 大小 | 15.2 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Player-YN/PawWork_ZhuaZhua) |
+| Topics | `ai-agent` `browser-agent` `byok` `chrome-extension` `llm` `pptx` `tldraw` `univer` |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "JavaScript" : 92
+>     "CSS" : 5
+>     "HTML" : 3
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@claude](https://github.com/claude) | 25 |
-> | [@cbrock84](https://github.com/cbrock84) | 24 |
-> | [@chris-brock](https://github.com/chris-brock) | 5 |
+> | [@Player-YN](https://github.com/Player-YN) | 11 |
+
+**最新版本**：unpacked-f2a02f0 — Paw Work unpacked unpacked-f2a02f0 (2026-09-01)
+
+> [!info]- Release Notes
+> Preferred: clone only branch unpacked —
+> 
+>   git clone --depth 1 --single-branch --branch unpacked https://github.com/Player-YN/PawWork_ZhuaZhua.git paw-work
+> 
+> Then Chrome → chrome://extensions → Developer mode → Load unpacked → select the `paw-work` folder (the one with manifest.json).
+> 
+> This zip is the same bytes. Unzip, then the same Chrome steps on the inner `paw-work` folder.
+> 
+> Do not git clone the default (source) branch to install. Do not load a folder that contains node_modules.
+> 
+> 推荐：只克隆 unpacked 分支，然后 Chrome → chrome://extensions → 开发者模式 → 加载已解压的扩展程序 → 选 `paw-work` 文件夹（里面有 manifest.json）。不要 clone 源码仓当安装包。
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-01 ~ 2026-09-01）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #28 from cbrock84/claude/skill-depth
+> [!abstract] 最近 10 次 commit（2026-08-28 ~ 2026-09-01）
+> **活躍天數** 3 天 · **最新 commit** release: sync main 89a4cda
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> headcount
+> # 爪爪 · Paw Work
 > 
-> Add a department, not a prompt.
+> **Select on the live page. Describe the outcome. Take away a real file.**
 > 
->   
->   
->   
->   
->   
+> English · [中文](README.zh-CN.md)
 > 
->   
->     
->       
->       
->     
->   
+> > [!IMPORTANT]
+> > **Just want to use Paw Work?** Do **not** clone this whole repository. You do not need the developer files. Clone **only** branch [`unpacked`](https://github.com/Player-YN/PawWork_ZhuaZhua/tree/unpacked) (~44 MB). That folder *is* the Chrome extension (`manifest.json` at the root).
+> >
+> > Clone creates `paw-work` under **the directory where you run the command**, not a fixed Desktop path. If you run it from your user home, that is `C:\Users\yyy\paw-work`. Git cannot print the path by itself — the last line of the block below does. In Chrome, Load unpacked that printed folder.
+> >
+> > **Windows (PowerShell)** — paste this whole block:
+> >
+> > ```powershell
+> > git clone --depth 1 --single-branch --branch unpacked https://github.com/Player-YN/PawWork_ZhuaZhua.git paw-work
+> > (Get-Item .\paw-work).FullName
+> > ```
+> >
+> > **macOS / Linux:**
+> >
+> > ```bash
+> > git clone --depth 1 --single-branch --branch unpacked https://github.com/Player-YN/PawWork_ZhuaZhua.git paw-work
+> > realpath paw-work
+> > ```
+> >
+> > Then: Chrome → `chrome://extensions` → **Developer mode** → **Load unpacked** → select the folder whose path was just printed.
+> >
+> > No git? On this GitHub page: **Code → switch the branch to `unpacked` → Download ZIP**. Unzip, then Load unpacked the folder that contains `manifest.json`.
+> >
+> > Optional, same bytes: the [Release zip](https://github.com/Player-YN/PawWork_ZhuaZhua/releases/latest) (`paw-work-unpacked.zip`). Unzip and Load unpacked the inner `paw-work` folder.
 > 
->   Open the interactive org chart — search every skill, open a department, jump to the source.
+> [](https://github.com/Player-YN/PawWork_ZhuaZhua/actions/workflows/ci.yml)
+> [](LICENSE)
 > 
-> An agent organization for [Claude Code](https://claude.com/claude-code), structured as a company:
-> a chief executive over 16 departments, 172 skills in total.
+> ```text
+> SELECT + DESCRIBE OUTCOME → DELIVER
+> ```
 > 
-> Every department is an independently installable plugin, so a project loads only the functions it
-> needs rather than all of them at once.
+> [What you can do](#what-you-can-do) · [See it](#see-it) · [How it works](#how-it-works) · [Install](#install) · [Trust](#trust--privacy) · [Limitations](#limitations)
 > 
+> ---
+> 
+> ## What it is
+> 
+> Paw Work is a **Chrome MV3 extension**. Turn Paw Mode on, point at images, tables, text, blocks, or links on the page you already have open, then say what you want in the sidepanel. It returns **editable office files** on live canvases — not a chat essay about the page.
+> 
+> It is not an unattended Operator that roams the web for you, and not a terminal coding agent. It sits beside the browser world you are already logged into: you set the scope, it returns something you can check.
+> 
+> ## Who it is for
+> 
+> | For | Not a first choice for |
+> |-----|------------------------|
+> | People who already work in the browser — compare, extract, export, turn a page into a sheet, deck, poster, site, or long doc | Unattended RPA (cross-site checkout, submit, pay) |
+> | Work that starts on a page you are already looking at (shop, SaaS, docs, article) | A coding-agent home: Docker, local shell, million-file repos |
+> 
+> No account. No server. You bring your own model keys.
+> 
+> ## What you can do
+> 
+> | On the page | You ask for | You take away |
+> |-------------|-------------|----------------|
+> | Product photos, tables, copy, blocks, links | “Make a comparison sheet” | A live spreadsheet ([Univer](https://univer.ai)) you can keep editing |
+> | The same selection, or a blank workspace | “Make an 8-page deck / one poster” | Design/Slides on a [tldraw](https://tldraw.dev) canvas; decks export to PPTX |
+> | The current page | “Make an editable site, with entrance motion” | Real HTML. Tweaks stay on that file. Site QA gates quality |
+> | Long notes or a transcript | “Turn this into a document” | A document canvas |
+> | Need a picture or a lookup | “Generate in this style / search, then put it in the sheet” | Images in the workspace; search uses **your** web-acquire key |
+> 
+> You can run more than one task in the same session. `@` mentions a capture. Empty templates for sheet / slides / docs / site sit at the foot of the workspace rail.
+> 
+> **Try asking:**
+> 
+> - Turn these product cards into a comparison sheet.
+> - Make a poster from the selected images.
+> - Rebuild this page as an editable site.
+> - Turn these notes into an 8-page deck.
+> - This is messy — show a plan first and wait for my approval.
+> 
+> Complex work can yield a **plan card** before it writes: Approve, Decline, or Required to change (you leave notes; it revises the plan; the old card stays). It does not silently expand outside what you selected.
+> 
+> ## See it
+> 
+> Selecting product photos on a live Apple page. The sidepanel holds the capture; the next line is the outcome.
+> 
+> A live spreadsheet beside the sidepanel. The agent is splitting a SKU column on the **open** workbook — not dropping a second file into chat.
+> 
+> ## How it works
+> 
+> 1. Turn **Paw Mode** on (off = normal browsing).
+> 2. Click what matters on the page.
+> 3. In the sidepanel, describe the outcome.
+> 4. Open the file from the workspace rail. Click a node, say the change, only that node changes.
+> 
+> ```text
+> Live page (Paw on) → select → sidepanel → live canvas / file
+> ```
+> 
+> Not listed on the Chrome Web Store yet. **Passersby:** clone only branch [`unpacked`](https://github.com/Player-YN/PawWork_ZhuaZhua/tree/unpacked) (see the box at the top) — do not clone this source tree. Then: Paw on → paste a model key → select something → say one sentence.
+> 
+> ## Trust & privacy
+> 
+> - No account, no Paw Work server, no hosted model quota.
+> - Keys live in Chrome extension storage on **your** machine and are sent only to the HTTPS endpoints **you** set.
+> - Model-generated code compiles with packaged esbuild-wasm and runs in a QuickJS VM. It never sees `chrome.*`, the live page DOM, or another session’s files. No executable code is loaded from a CDN.
+> - Capture is what you pointed at, not the whole site. The agent inspects on demand. You can stop a run; it must not keep working in the background.
 > 
 > ## Install
 > 
-> ```
-> /plugin marketplace add cbrock84/headcount
-> /plugin install security@headcount
-> ```
+> **If you just want to use it** — do not clone this whole repository. Clone **only** branch `unpacked`.
 > 
-> Install as many departments as the project needs. Skills are addressed as `department:skill` —
-> `security:threat-modeling`, `finance:unit-economics` — so names never collide.
+> 1. Paste the PowerShell (or macOS/Linux) block at the top of this README. The last line prints the absolute path of `paw-work`.
+> 2. Open Chrome → `chrome://extensions`
+> 3. Turn on **Developer mode**
+> 4. **Load unpacked** → select the folder whose path was printed (`manifest.json` is at that root)
 > 
+> No git? **Code → branch `unpacked` → Download ZIP**, unzip, then steps 2–4. Same pack is also on the [Release page](https://github.com/Player-YN/PawWork_ZhuaZhua/releases/latest) as `paw-work-unpacked.zip`.
 > 
-> ## Use
+> No Node, no `npm install`. Do not load the source-repo root.
 > 
-> Skills load themselves when a request matches. Ask a question in the department's territory and the
-> right specialist engages:
+> ### Build from source (contributors)
 > 
-> | You ask | What loads |
-> |---|---|
-> | "why isn't this landing page converting?" | `demand-generation:landing-page-cro-expert` |
-> | "review this design before we build it" | `security:threat-modeling` |
-> | "can we afford this hire?" | `finance:unit-economics` |
-> | "our growth has stalled" | `executive:business-growth-consultant` |
+> Prerequisites: Node.js 20+, npm, Chrome 120+.
 > 
-> Invoke one directly by name when you want a specific lens: `/finance:financial-modeling`.
-> 
-> Seven situations that cross departments — a SOC 2 demand from an enterprise prospect, a
-> security incident, a stalled funnel — are worked through end to end in
-> [docs/USE-CASES.md](docs/USE-CASES.md), including where a reviewer-class department stops the
-> work rather than adding an opinion.
-> 
-> Each department also ships an agent charter in `.claude/agents/`, so a department can be delegated
-> to as a subagent with its own exclusive write surface.
-> 
-> 
-> ## How it is organized
-> 
-> ```
-> plugins//
->   .claude-plugin/plugin.json   department manifest
->   skills//SKILL.md      frontmatter name equals the directory name
-> .claude/agents/.md         one charter per department
-> docs/AGENT-SURFACES.md         every path has exactly one owner, enforced in CI
-> docs/DECISION-LOG.md           numbered decisions with options and recommendations
-> docs/USE-CASES.md              situations worked end to end across departments
-> docs/org-chart.html           interactive org chart, searchable across every skill
-> docs/index.html               GitHub Pages entry point, redirects to the chart
+> ```bash
+> git clone https://github.com/Player-YN/PawWork_ZhuaZhua.git
+> cd PawWork_ZhuaZhua
+> npm install
+> npm run build:agent
+> npm run pack:extension
 > ```
 > 
-> Agents split by **exclusive write surface**, not by topic — a topic split has no checkable
-> boundary, and two agents working on "SEO" and "UI" both end up in the same file. See
-> `executive:agent-hierarchy` for the method.
+> Then Load unpacked → `artifacts/unpacked/`. After `npm install` the folder is hundreds of megabytes (`node_modules`). **Do not load the repository root.** Rebuild (`npm run build:agent`) and reload after pulling.
 > 
+> How to build and test: [CONTRIBUTING.md](CONTRIBUTING.md).
 > 
-> ## Writing
+> ## Bring your own keys
 > 
-> Notes from building and running this, and from the day job — technology, security, AI, and the
-> operating side of all three — go out at [cbrock84.substack.com](https://cbrock84.substack.com).
+> Nothing runs without them. Configure in the sidepanel settings.
 > 
-> The piece on why this is shaped like an org chart at all, and what broke before it was:
-> [Giving AI agents an org chart](https://cbrock84.substack.com/p/giving-ai-agents-an-org-chart).
+> - **Chat** — any OpenAI-compatible HTTPS endpoint (base URL + key + model).
+> - **Image** (optional) — its own base URL / key / model; empty fields inherit chat. OpenRouter’s image origin is filled by the template.
+> - **Web search / fetch** (optional) — your search or crawl keys. Without them, fetch can still do an anonymous GET.
+> - **tldraw license** (optional) — removes the Design/Slides watermark; see Limitations.
 > 
+> ## Stack
 > 
+> Chrome MV3 extension. Sidepanel talks to an in-extension workspace (no Paw Work cloud). Spreadsheets and documents: Univer. Posters and slides: tldraw. Sites: real HTML. Generated JS runs in a local WASM sandbox. Files persist in the browser (IndexedDB + OPFS). MIT code in this repo; third-party engines in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+> 
+> Runtime contracts (isolation, writes, tools) live in [`docs/SESSION_WORKSPACE_RUNTIME.md`](docs/SESSION_WORKSPACE_RUNTIME.md) and [`docs/PROMPT_RUNTIME.md`](docs/PROMPT_RUNTIME.md). Host path: [constitution § Host path](docs/SESSIO
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/cbrock84/headcount) · [官方網站](https://cbrock84.github.io/headcount/)
+[GitHub](https://github.com/Player-YN/PawWork_ZhuaZhua)
 
 ## 相關收錄
 
@@ -273,7 +354,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "cbrock84--headcount"
+> WHERE category = "Other" AND file.name != "Player-YN--PawWork_ZhuaZhua"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -282,7 +363,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Markdown" AND file.name != "cbrock84--headcount" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "Player-YN--PawWork_ZhuaZhua" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -291,18 +372,18 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "cbrock84--headcount"
+> WHERE week = "2026-W36" AND file.name != "Player-YN--PawWork_ZhuaZhua"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/Player-YN--PawWork_ZhuaZhua");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "cbrock84--headcount" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Player-YN--PawWork_ZhuaZhua" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -318,7 +399,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "cbrock84" AND file.name != "cbrock84--headcount"
+> WHERE owner = "Player-YN" AND file.name != "Player-YN--PawWork_ZhuaZhua"
 > SORT stars DESC
 > ```
 
@@ -326,7 +407,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/Player-YN--PawWork_ZhuaZhua");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -343,7 +424,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/Player-YN--PawWork_ZhuaZhua");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -376,7 +457,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/Player-YN--PawWork_ZhuaZhua");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -400,7 +481,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/Player-YN--PawWork_ZhuaZhua");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -437,7 +518,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/Player-YN--PawWork_ZhuaZhua");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -520,7 +601,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-01** — 首次收錄
+> **2026-09-04** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -536,7 +617,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-04|2026-09-04]] — 再次上榜，1.2k stars
-- [[2026-09-03|2026-09-03]] — 再次上榜，1.1k stars
-- [[2026-09-02|2026-09-02]] — 再次上榜，974 stars
-- [[2026-09-01|2026-09-01]] — 首次收錄，873 stars
+- [[2026-09-04|2026-09-04]] — 首次收錄，873 stars

@@ -3844,10 +3844,10 @@
   },
   "XiaoDuoYa/codex-with-chatgpt": {
     "first_seen": "2026-08-30",
-    "last_seen": "2026-09-03",
-    "times_seen": 5,
+    "last_seen": "2026-09-04",
+    "times_seen": 6,
     "stars_first": 1007,
-    "stars_last": 2296
+    "stars_last": 2423
   },
   "themartiano/try-omarchy": {
     "first_seen": "2026-08-30",
@@ -3858,17 +3858,17 @@
   },
   "MetaMask-AI/metamask-desktop": {
     "first_seen": "2026-08-31",
-    "last_seen": "2026-09-03",
-    "times_seen": 4,
+    "last_seen": "2026-09-04",
+    "times_seen": 5,
     "stars_first": 1228,
     "stars_last": 1230
   },
   "Nanako0129/sepia": {
     "first_seen": "2026-08-31",
-    "last_seen": "2026-09-03",
-    "times_seen": 4,
+    "last_seen": "2026-09-04",
+    "times_seen": 5,
     "stars_first": 992,
-    "stars_last": 1666
+    "stars_last": 1915
   },
   "amosblomqvist/learn": {
     "first_seen": "2026-08-31",
@@ -3893,10 +3893,10 @@
   },
   "cbrock84/headcount": {
     "first_seen": "2026-09-01",
-    "last_seen": "2026-09-03",
-    "times_seen": 3,
+    "last_seen": "2026-09-04",
+    "times_seen": 4,
     "stars_first": 873,
-    "stars_last": 1126
+    "stars_last": 1197
   },
   "crmne/fastpotify": {
     "first_seen": "2026-09-01",
@@ -3928,9 +3928,44 @@
   },
   "GangTailorUpgrade/undress-service": {
     "first_seen": "2026-09-03",
-    "last_seen": "2026-09-03",
-    "times_seen": 1,
+    "last_seen": "2026-09-04",
+    "times_seen": 2,
     "stars_first": 945,
-    "stars_last": 945
+    "stars_last": 1020
+  },
+  "anthropics/commerce-agents": {
+    "first_seen": "2026-09-04",
+    "last_seen": "2026-09-04",
+    "times_seen": 1,
+    "stars_first": 1664,
+    "stars_last": 1664
+  },
+  "rakanki911/DLSS5-Swapper": {
+    "first_seen": "2026-09-04",
+    "last_seen": "2026-09-04",
+    "times_seen": 1,
+    "stars_first": 1157,
+    "stars_last": 1157
+  },
+  "shadcn-ui/cn": {
+    "first_seen": "2026-09-04",
+    "last_seen": "2026-09-04",
+    "times_seen": 1,
+    "stars_first": 993,
+    "stars_last": 993
+  },
+  "Player-YN/PawWork_ZhuaZhua": {
+    "first_seen": "2026-09-04",
+    "last_seen": "2026-09-04",
+    "times_seen": 1,
+    "stars_first": 873,
+    "stars_last": 873
+  },
+  "2akouwu/reverify": {
+    "first_seen": "2026-09-04",
+    "last_seen": "2026-09-04",
+    "times_seen": 1,
+    "stars_first": 818,
+    "stars_last": 818
   }
 }

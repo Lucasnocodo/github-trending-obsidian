@@ -1,68 +1,69 @@
 ---
-repo: cbrock84/headcount
-url: https://github.com/cbrock84/headcount
-owner: cbrock84
-owner_type: User
-language: Markdown
+repo: shadcn-ui/cn
+url: https://github.com/shadcn-ui/cn
+owner: shadcn-ui
+owner_type: Organization
+language: TypeScript
 license: MIT
-description: "An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable."
-homepage: "https://cbrock84.github.io/headcount/"
-stars: 1197
-stars_per_day: 200
-forks: 190
-open_issues: 1
-created: 2026-08-28
-pushed_at: 2026-09-03
-first_seen: 2026-09-01
+description: "cn is a new engine for Tailwind class merging and conflict resolution. It replaces tailwind-merge and clsx. Same APIs. Full parity. And it is 30× faster."
+homepage: ""
+stars: 993
+stars_per_day: 331
+forks: 7
+open_issues: 4
+created: 2026-08-31
+pushed_at: 2026-09-04
+first_seen: 2026-09-04
 week: "2026-W36"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "cn@0.2.5"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-01
+last_reviewed: 2026-09-04
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-09-07"
 contributor_count: 3
-engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 6840
-readme_length: 2990
-bus_factor: 2
-last_release_days: -1
-release_cadence: "never"
+engagement: "low"
+issue_close_rate: 43
+repo_size_kb: 1838
+readme_length: 7456
+bus_factor: 1
+last_release_days: 0
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-01"
-star_history: "2026-09-01:873,2026-09-02:974,2026-09-03:1126,2026-09-04:1197"
+ring_history: "assess@2026-09-04"
+star_history: "2026-09-04:993"
 tags:
   - github
   - "category/other"
-  - "lang/markdown"
-  - "topic/agent_marketplace"
-  - "topic/claude_code"
-  - "topic/claude_code_plugin"
-  - "topic/claude_plugin"
-  - "topic/claude_skills"
+  - "lang/typescript"
+  - org
+  - "topic/clsx"
+  - "topic/cn"
+  - "topic/shadcn"
+  - "topic/tailwind_merge"
+  - "topic/tailwindcss"
 aliases:
-  - "headcount"
-  - "cbrock84/headcount"
+  - "cn"
+  - "shadcn-ui/cn"
 ---
 
-# headcount
+# cn
 
-**873** stars · **291** stars/天 · 建立 3 天前 · Markdown · MIT
+**993** stars · **331** stars/天 · 建立 3 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/cbrock84--headcount");
+const me = dv.page("Repos/shadcn-ui--cn");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,20 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`agent-marketplace` `claude-code` `claude-code-plugin` `claude-plugin` `claude-skills` `mcp`
+`ORG` `cn@0.2.5`
+
+`clsx` `cn` `shadcn` `tailwind-merge` `tailwindcss`
 
 > [!summary] 一句話摘要
-> An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable.
+> cn is a new engine for Tailwind class merging and conflict resolution. It replaces tailwind-merge and clsx. Same APIs. Full parity. And it is 30× faster.
 
 ## 專案簡介
 
-An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable.
+cn is a new engine for Tailwind class merging and conflict resolution. It replaces tailwind-merge and clsx. Same APIs. Full parity. And it is 30× faster.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/shadcn-ui--cn");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -123,7 +126,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/shadcn-ui--cn");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -147,125 +150,267 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 132 |
-| Open Issues | 1 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-01 |
-| 建立日期 | 2026-08-28 |
-| 官方網站 | [Link](https://cbrock84.github.io/headcount/) |
-| Repo 大小 | 6.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/cbrock84/headcount) |
-| Topics | `agent-marketplace` `claude-code` `claude-code-plugin` `claude-plugin` `claude-skills` `mcp` |
+| Forks | 7 |
+| Open Issues | 4 |
+| Issue 解決率 | 43% (3 closed) |
+| 最後推送 | 2026-09-04 |
+| 建立日期 | 2026-08-31 |
+| Repo 大小 | 1.8 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/shadcn-ui/cn) |
+| Topics | `clsx` `cn` `shadcn` `tailwind-merge` `tailwindcss` |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@changesets/changelog-github` `@changesets/cli` `@eslint/js` `@ianvs/prettier-plugin-sort-imports` `eslint` `eslint-config-prettier` `globals` `prettier` `typescript-eslint`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "TypeScript" : 55
+>     "JavaScript" : 39
+>     "HTML" : 6
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@claude](https://github.com/claude) | 25 |
-> | [@cbrock84](https://github.com/cbrock84) | 24 |
-> | [@chris-brock](https://github.com/chris-brock) | 5 |
+> | [@shadcn](https://github.com/shadcn) | 18 |
+> | [@github-actions[bot]](https://github.com/github-actions[bot]) | 6 |
+> | [@aidenybai](https://github.com/aidenybai) | 5 |
+
+**最新版本**：cn@0.2.5 (2026-09-04)
+
+> [!info]- Release Notes
+> ### Patch Changes
+> 
+> - [#16](https://github.com/shadcn-ui/cn/pull/16) [`014ad31`](https://github.com/shadcn-ui/cn/commit/014ad31d79afda5609720b4591f664fdb29d76e9) Thanks [@aidenybai](https://github.com/aidenybai)! - Accept a single class or theme definition in an extension instead of throwing.
+> 
+> - [#22](https://github.com/shadcn-ui/cn/pull/22) [`5135277`](https://github.com/shadcn-ui/cn/commit/513527747a3c6de7e38b563553713b0a764b95ca) Thanks [@aidenybai](https://github.com/aidenybai)! - Exclude the generated output file from content scans when its path matches a content glob.
+> 
+> - [#17](https://github.com/shadcn-ui/cn/pull/17) [`6f421fc`](https://github.com/shadcn-ui/cn/commit/6f421fc00396a0eea653dfc2fb6678d6b6e1b415) Thanks [@aidenybai](https://github.com/aidenybai)! - Accept readonly arrays in config extensions. This lets token tuples declared
+>   with `as const` work without a defensive copy.
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-01 ~ 2026-09-01）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #28 from cbrock84/claude/skill-depth
+> [!abstract] 最近 10 次 commit（2026-09-02 ~ 2026-09-04）
+> **活躍天數** 3 天 · **最新 commit** chore(release): version packages (#18)
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#24](https://github.com/shadcn-ui/cn/issues/24) | Vite/Next plugins for dev file watcher | 0 | 0 |
+> | [#23](https://github.com/shadcn-ui/cn/issues/23) | font-[<non-numeric>] is merged as font-weight instead of fon | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> headcount
+> # cn
 > 
-> Add a department, not a prompt.
+> `cn` is a [new engine](https://github.com/shadcn-ui/cn/blob/main/docs/how-it-works.md) for Tailwind class merging and
+> conflict resolution. It replaces `tailwind-merge` and `clsx`. Same APIs.
+> Full parity. **And it is [30× faster](#how-much-faster).**
 > 
->   
->   
->   
->   
->   
+> ```ts
+> import { cn } from "cn"
 > 
->   
->     
->       
->       
->     
->   
+> // conditional joining (like clsx) + conflict resolution (like tailwind-merge)
+> cn("px-2 py-1", isActive && "bg-blue-500", { "text-white": isActive })
+> ```
 > 
->   Open the interactive org chart — search every skill, open a department, jump to the source.
+> `cn` has zero dependencies and is framework-agnostic: it works with React,
+> Vue, Svelte, Solid, Astro, or plain server templates, and runs in browsers,
+> Node, Bun, Deno, and edge runtimes. **It works in any Tailwind CSS project. You don't need shadcn/ui.**
 > 
-> An agent organization for [Claude Code](https://claude.com/claude-code), structured as a company:
-> a chief executive over 16 departments, 172 skills in total.
+> `cn` is built and maintained by [aidenybai](https://x.com/aidenybai) and [shadcn](https://x.com/shadcn).
 > 
-> Every department is an independently installable plugin, so a project loads only the functions it
-> needs rather than all of them at once.
+> ## Can I use this today?
 > 
+> Yes. You can replace `tailwind-merge` and `clsx` with `cn` today. It's a drop-in replacement.
+> 
+> Here's a command to migrate:
+> 
+> ```bash
+> npx shadcn@latest migrate cn
+> ```
 > 
 > ## Install
 > 
-> ```
-> /plugin marketplace add cbrock84/headcount
-> /plugin install security@headcount
-> ```
-> 
-> Install as many departments as the project needs. Skills are addressed as `department:skill` —
-> `security:threat-modeling`, `finance:unit-economics` — so names never collide.
-> 
-> 
-> ## Use
-> 
-> Skills load themselves when a request matches. Ask a question in the department's territory and the
-> right specialist engages:
-> 
-> | You ask | What loads |
-> |---|---|
-> | "why isn't this landing page converting?" | `demand-generation:landing-page-cro-expert` |
-> | "review this design before we build it" | `security:threat-modeling` |
-> | "can we afford this hire?" | `finance:unit-economics` |
-> | "our growth has stalled" | `executive:business-growth-consultant` |
-> 
-> Invoke one directly by name when you want a specific lens: `/finance:financial-modeling`.
-> 
-> Seven situations that cross departments — a SOC 2 demand from an enterprise prospect, a
-> security incident, a stalled funnel — are worked through end to end in
-> [docs/USE-CASES.md](docs/USE-CASES.md), including where a reviewer-class department stops the
-> work rather than adding an opinion.
-> 
-> Each department also ships an agent charter in `.claude/agents/`, so a department can be delegated
-> to as a subagent with its own exclusive write surface.
-> 
-> 
-> ## How it is organized
-> 
-> ```
-> plugins//
->   .claude-plugin/plugin.json   department manifest
->   skills//SKILL.md      frontmatter name equals the directory name
-> .claude/agents/.md         one charter per department
-> docs/AGENT-SURFACES.md         every path has exactly one owner, enforced in CI
-> docs/DECISION-LOG.md           numbered decisions with options and recommendations
-> docs/USE-CASES.md              situations worked end to end across departments
-> docs/org-chart.html           interactive org chart, searchable across every skill
-> docs/index.html               GitHub Pages entry point, redirects to the chart
+> ```bash
+> npm i cn
 > ```
 > 
-> Agents split by **exclusive write surface**, not by topic — a topic split has no checkable
-> boundary, and two agents working on "SEO" and "UI" both end up in the same file. See
-> `executive:agent-hierarchy` for the method.
+> ### New project
 > 
+> Import it and go. Nothing to configure:
 > 
-> ## Writing
+> ```tsx
+> import { cn } from "cn"
 > 
-> Notes from building and running this, and from the day job — technology, security, AI, and the
-> operating side of all three — go out at [cbrock84.substack.com](https://cbrock84.substack.com).
+> export function Button({
+>   className,
+>   active,
+>   ...props
+> }: React.ComponentProps & { active?: boolean }) {
+>   return (
+>     
+>   )
+> }
+> ```
 > 
-> The piece on why this is shaped like an org chart at all, and what broke before it was:
-> [Giving AI agents an org chart](https://cbrock84.substack.com/p/giving-ai-agents-an-org-chart).
+> ### Existing shadcn/ui project
 > 
+> #### Using the `shadcn` CLI
 > 
+> ```bash
+> npx shadcn@latest migrate cn
+> ```
+> 
+> #### Manually
+> 
+> Your components already import `cn` from `@/lib/utils`. Replace the wrapper with the one from `cn`.
+> 
+> ```diff
+> // lib/utils.ts
+> - import { clsx, type ClassValue } from "clsx";
+> - import { twMerge } from "tailwind-merge";
+> 
+> - export function cn(...inputs: ClassValue[]) {
+> -   return twMerge(clsx(inputs));
+> - }
+> + export { cn } from "cn";
+> ```
+> 
+> Then remove `clsx` and `tailwind-merge` from your dependencies. If other
+> packages still import them, [alias them to `cn`](https://github.com/shadcn-ui/cn/blob/main/docs/aliasing.md)
+> so your bundle only carries one implementation.
+> 
+> ## How much faster?
+> 
+> The following benchmarks compare `cn` against `clsx` + `tailwind-merge`,
+> which is what most projects run today.
+> 
+> We ran each library through every workload in its own isolated process with
+> its own warmup, and kept the best of 5 runs.
+> 
+> To see the results for yourself, run `pnpm bench`. The methodology is
+> in [docs/how-it-works.md](https://github.com/shadcn-ui/cn/blob/main/docs/how-it-works.md#benchmark-methodology).
+> 
+> | scenario                                                   | clsx + tailwind-merge |     cn | faster |
+> | ---------------------------------------------------------- | --------------------: | -----: | -----: |
+> | the call your components make most¹                        |                320 ns |  10 ns |    30× |
+> | same classes as last render (cache hit)                    |                 14 ns |   7 ns |   1.9× |
+> | typical component strings, warm                            |                 13 ns |   7 ns |   1.9× |
+> | thousands of recurring strings (a real repo's working set) |                2.4 µs |  14 ns |   172× |
+> | cold render, many arbitrary values                         |                3.4 µs | 1.1 µs |   3.0× |
+> | cold render, SSR-style unique strings                      |                2.3 µs | 360 ns |   6.4× |
+> | very first call (page load)                                |                3.2 ms | 0.4 ms |     7× |
+> 
+> ¹ `cn(base, variant, condition && extra)` with stable class strings. This is
+> the shape almost every component call has. `cn` learns repeated call
+> sequences, so a render loop's calls verify by identity and skip the work
+> entirely.
+> 
+> ### Real repositories
+> 
+> The rows above are synthetic. `pnpm bench:corpus` replays every `cn()` call
+> harvested from 58 open source codebases (144,265 calls) through each
+> library, one isolated process per library and repository, and prints the
+> per-repository table. Geometric mean across the 58 repositories: `cn` is
+> **37× faster** than `clsx` + `tailwind-merge`.
+> 
+> `cn` ships the least JavaScript to parse in every setup, 26 KB minified.
+> 
+> If you want an even smaller bundle with the same performance, see
+> [`cn build`](https://github.com/shadcn-ui/cn/blob/main/docs/build-setup.md).
+> 
+> ## Custom themes
+> 
+> `cn/config` accepts the same `{ extend, override, prefix }` shape, under the
+> same name:
+> 
+> ```ts
+> // before
+> import { extendTailwindMerge } from "tailwind-merge"
+> 
+> const twMerge = extendTailwindMerge({
+>   extend: { classGroups: { "font-size": [{ text: ["hero"] }] } },
+> })
+> ```
+> 
+> ```ts
+> // after
+> import { createCn } from "cn/config"
+> 
+> const cn = createCn({
+>   extend: { classGroups: { "font-size": [{ text: ["hero"] }] } },
+> })
+> ```
+> 
+> Custom validator functions work as-is. `fromTheme`, `validators`,
+> `mergeConfigs`, and `defaultConfig` are exported from `cn/config`. Tailwind
+> v4 prefixes are supported: `createCn({ prefix: "tw" })`.
+> 
+> ## Coming from tailwind-merge
+> 
+> `cn` produces the same output as tailwind-merge for every input. We verify
+> this with 356,000 differential tests.
+> 
+> Every export maps to the same name or a familiar one:
+> 
+> | tailwind-merge               | cn                                     |
+> | ---------------------------- | -------------------------------------- |
+> | `twMerge(...)`               | `twMerge(...)` from `"cn"`, identical  |
+> | `twJoin(...)`                | `twJoin(...)` from `"cn"`, identical   |
+> | `extendTailwindMerge(ext)`   | same name, from `"cn/config"`          |
+> | `createTailwindMerge(fn)`    | `createTwMerge(fn)` from `"cn/config"` |
+> | `getDefaultConfig()`         | `defaultConfig()` from `"cn/config"`   |
+> | `fromTheme`, `validators`    | same names, from `"cn/config"`         |
+> | `mergeConfigs`               | same name, from `"cn/config"`          |
+> | `experimentalParseClassName` | not supported                          |
+> 
+> ## Gotchas
+> 
+> - `cn` supports Tailwind CSS v4, like tailwind-merge v3. On Tailwind v3,
+>   stay with tailwind-merge v2.
+> - Classes that merely _look like_ Tailwind utilities (`text-2xs`) are
+>   treated as Tailwind utilities. Same behavior and guidance as
+>   [tailwind-merge's docs](https://github.com/dcastil/tailwind-merge/blob/main/docs/limitations.md).
+> - With [`cn build`](https://github.com/shadcn-ui/cn/blob/main/docs/build-setup.md), dynamically constructed class names (`"p-" + size`) can't
+>   be detected. Same rule as Tailwind itself. Use `--safelist`.
+> - The CLI needs Node 20+.
+> 
+> ## API
+> 
+> - **`cn`**: `cn(...inputs)`, `twMerge(...)`, `twJoin(...)`, `clsx(...)`
+> - **`cn/config`**: `createCn(ext?)`, `extendTailwindMerge(ext?)`,
+>   `createTwMerge(ext?)`, `fromTheme`, `validators`, `defaultConfig()`,
+>   `mergeConfigs(base, ext)`
+> - **`cn/engine`**: `createCn(tables, ...)`, `createEngine(tables, ...)` for
+>   build-time compiled tables
+> - **`cn/lite`**: `clsx(...)`, strings-only join (`clsx/lite` parity)
+> - **CLI**: `npx cn build --help`
+> 
+> ## Credits
+> 
+> - `cn`'s merge engine, compiler, and table format are original work.
+> - The package's conflict-resolution **semantics** intentionally match those of
+>   [tailwind-merge](https://github.com/dcastil/tailwind-merge) by Dany Castillo
+>   (MIT licensed), and the default tables it ships are compiled from
+>   tailwind-merge's default configuration.
+> - The `clsx`-compatible join layer implements the argument semantics of
+>   [clsx](https://github.com/lukeed/clsx) by Luke Edwards (MIT licensed).
+> - The argument-identity cache for repeated variadic calls re-implements an optimization pioneered by
+>   [cnfast](https://github.com/aidenybai/cnfast) by Aiden Bai (MIT licensed).
+> 
+> Thank you to all three authors.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]] · [[DannyMac180--sol-advisor|DannyMac180/sol-advisor]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/cbrock84/headcount) · [官方網站](https://cbrock84.github.io/headcount/)
+[GitHub](https://github.com/shadcn-ui/cn)
 
 ## 相關收錄
 
@@ -273,7 +418,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "cbrock84--headcount"
+> WHERE category = "Other" AND file.name != "shadcn-ui--cn"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -282,7 +427,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Markdown" AND file.name != "cbrock84--headcount" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "shadcn-ui--cn" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -291,18 +436,18 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "cbrock84--headcount"
+> WHERE week = "2026-W36" AND file.name != "shadcn-ui--cn"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/shadcn-ui--cn");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "cbrock84--headcount" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "shadcn-ui--cn" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -318,7 +463,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "cbrock84" AND file.name != "cbrock84--headcount"
+> WHERE owner = "shadcn-ui" AND file.name != "shadcn-ui--cn"
 > SORT stars DESC
 > ```
 
@@ -326,7 +471,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/shadcn-ui--cn");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -343,7 +488,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/shadcn-ui--cn");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -376,7 +521,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/shadcn-ui--cn");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -400,7 +545,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/shadcn-ui--cn");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -437,7 +582,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/cbrock84--headcount");
+> const me = dv.page("Repos/shadcn-ui--cn");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -520,7 +665,7 @@ An agent organization for Claude Code, structured as a company — 15+ departmen
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-01** — 首次收錄
+> **2026-09-04** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -536,7 +681,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-04|2026-09-04]] — 再次上榜，1.2k stars
-- [[2026-09-03|2026-09-03]] — 再次上榜，1.1k stars
-- [[2026-09-02|2026-09-02]] — 再次上榜，974 stars
-- [[2026-09-01|2026-09-01]] — 首次收錄，873 stars
+- [[2026-09-04|2026-09-04]] — 首次收錄，993 stars
