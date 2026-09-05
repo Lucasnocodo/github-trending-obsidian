@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "Anti-hallucination for AI agents that read binaries. The model proposes, deterministic tools decide: every claim is VERIFIED or REFUTED against the real bytes, with evidence, and grounded facts survive context resets. MCP server + CLI."
 homepage: ""
-stars: 818
-stars_per_day: 205
-forks: 172
-open_issues: 3
+stars: 891
+stars_per_day: 178
+forks: 191
+open_issues: 5
 created: 2026-08-31
 pushed_at: 2026-09-04
 first_seen: 2026-09-04
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-07"
+appearances: 2
+next_review: "2026-09-12"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 25
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-04"
-star_history: "2026-09-04:818"
+star_history: "2026-09-04:818,2026-09-05:891"
 tags:
   - github
   - "category/other"
@@ -626,4 +626,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-05|2026-09-05]] — 再次上榜，891 stars
 - [[2026-09-04|2026-09-04]] — 首次收錄，818 stars

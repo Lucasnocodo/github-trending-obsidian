@@ -3928,31 +3928,31 @@
   },
   "GangTailorUpgrade/undress-service": {
     "first_seen": "2026-09-03",
-    "last_seen": "2026-09-04",
-    "times_seen": 2,
+    "last_seen": "2026-09-05",
+    "times_seen": 3,
     "stars_first": 945,
-    "stars_last": 1020
+    "stars_last": 1062
   },
   "anthropics/commerce-agents": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-09-04",
-    "times_seen": 1,
+    "last_seen": "2026-09-05",
+    "times_seen": 2,
     "stars_first": 1664,
-    "stars_last": 1664
+    "stars_last": 1950
   },
   "rakanki911/DLSS5-Swapper": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-09-04",
-    "times_seen": 1,
+    "last_seen": "2026-09-05",
+    "times_seen": 2,
     "stars_first": 1157,
-    "stars_last": 1157
+    "stars_last": 1552
   },
   "shadcn-ui/cn": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-09-04",
-    "times_seen": 1,
+    "last_seen": "2026-09-05",
+    "times_seen": 2,
     "stars_first": 993,
-    "stars_last": 993
+    "stars_last": 1114
   },
   "Player-YN/PawWork_ZhuaZhua": {
     "first_seen": "2026-09-04",
@@ -3963,9 +3963,44 @@
   },
   "2akouwu/reverify": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-09-04",
-    "times_seen": 1,
+    "last_seen": "2026-09-05",
+    "times_seen": 2,
     "stars_first": 818,
-    "stars_last": 818
+    "stars_last": 891
+  },
+  "lnkiai/m3e-canvas": {
+    "first_seen": "2026-09-05",
+    "last_seen": "2026-09-05",
+    "times_seen": 1,
+    "stars_first": 2250,
+    "stars_last": 2250
+  },
+  "jlrouzies-fr/DLSS5-Feeder": {
+    "first_seen": "2026-09-05",
+    "last_seen": "2026-09-05",
+    "times_seen": 1,
+    "stars_first": 724,
+    "stars_last": 724
+  },
+  "nahrek/polyledger": {
+    "first_seen": "2026-09-05",
+    "last_seen": "2026-09-05",
+    "times_seen": 1,
+    "stars_first": 614,
+    "stars_last": 614
+  },
+  "MSNightmare/FalconFlank": {
+    "first_seen": "2026-09-05",
+    "last_seen": "2026-09-05",
+    "times_seen": 1,
+    "stars_first": 506,
+    "stars_last": 506
+  },
+  "danielblnc/DLSS-NR-on-AMD": {
+    "first_seen": "2026-09-05",
+    "last_seen": "2026-09-05",
+    "times_seen": 1,
+    "stars_first": 497,
+    "stars_last": 497
   }
 }

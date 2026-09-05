@@ -1,19 +1,19 @@
 ---
-repo: anthropics/commerce-agents
-url: https://github.com/anthropics/commerce-agents
-owner: anthropics
-owner_type: Organization
-language: Python
-license: Apache-2.0
-description: "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included."
-homepage: "https://claude.com/solutions/commerce"
-stars: 1950
-stars_per_day: 650
-forks: 324
-open_issues: 4
-created: 2026-09-01
-pushed_at: 2026-09-01
-first_seen: 2026-09-04
+repo: MSNightmare/FalconFlank
+url: https://github.com/MSNightmare/FalconFlank
+owner: MSNightmare
+owner_type: User
+language: C
+license: MIT
+description: "Crowdstrike Falcon 0day Privilege Escalation Vulnerability"
+homepage: ""
+stars: 506
+stars_per_day: 253
+forks: 134
+open_issues: 0
+created: 2026-09-03
+pushed_at: 2026-09-03
+first_seen: 2026-09-05
 week: "2026-W36"
 month: "2026-09"
 category: "Other"
@@ -25,40 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-04
+last_reviewed: 2026-09-05
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-08"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 1464
-readme_length: 9702
+issue_close_rate: 100
+repo_size_kb: 1563
+readme_length: 589
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-04"
-star_history: "2026-09-04:1664,2026-09-05:1950"
+ring_history: "assess@2026-09-05"
+star_history: "2026-09-05:506"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - org
+  - "lang/c"
 aliases:
-  - "commerce-agents"
-  - "anthropics/commerce-agents"
+  - "FalconFlank"
+  - "MSNightmare/FalconFlank"
 ---
 
-# commerce-agents
+# FalconFlank
 
-**1.7k** stars · **832** stars/天 · 建立 2 天前 · Python · Apache-2.0
+**506** stars · **253** stars/天 · 建立 2 天前 · C · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/anthropics--commerce-agents");
+const me = dv.page("Repos/MSNightmare--FalconFlank");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`個人專案`
 
 > [!summary] 一句話摘要
-> Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.
+> Crowdstrike Falcon 0day Privilege Escalation Vulnerability
 
 ## 專案簡介
 
-Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.
+Crowdstrike Falcon 0day Privilege Escalation Vulnerability
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/MSNightmare--FalconFlank");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +118,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/MSNightmare--FalconFlank");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,181 +142,45 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 270 |
-| Open Issues | 3 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-01 |
-| 建立日期 | 2026-09-01 |
-| 官方網站 | [Link](https://claude.com/solutions/commerce) |
-| Repo 大小 | 1.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/anthropics/commerce-agents) |
-
-> [!info]- 主要依賴
-> `requirements.txt` 中的核心套件：
-> `-e ./commerce-common` `-e ./shopping-agent/core` `-e ./shopping-agent/runtime-messages-api` `-e ./shopping-agent/runtime-agent-sdk` `-e ./merchant-agent/core` `-e ./merchant-agent/runtime-messages-api` `-e ./merchant-agent/runtime-agent-sdk` `annotated-doc` `annotated-types` `anthropic` `anyio` `attrs` `certifi` `cffi` `claude-agent-sdk`
+| Forks | 134 |
+| Open Issues | 0 |
+| Issue 解決率 | 100% (1 closed) |
+| 最後推送 | 2026-09-03 |
+| 建立日期 | 2026-09-03 |
+| Repo 大小 | 1.5 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/MSNightmare/FalconFlank) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 99
->     "Shell" : 1
+>     "C" : 99
+>     "C++" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@alishazal](https://github.com/alishazal) | 1 |
+> | [@MSNightmare](https://github.com/MSNightmare) | 3 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-31）
-> **活躍天數** 1 天 · **最新 commit** building commerce agents using claude
+> [!abstract] 最近 10 次 commit（2026-09-03 ~ 2026-09-03）
+> **活躍天數** 1 天 · **最新 commit** Update README.md
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Claude Commerce Agents
+> # FalconFlank
+> Crowdstrike Falcon 0day Privilege Escalation Vulnerability
 > 
-> Two commerce agents built on Claude: a **shopping agent** a business embeds in its app for
-> customers, and a **merchant agent** its staff use to run the back office. Each is defined
-> once (prompt, skills, tool contracts, gates) and runs on the Messages API, the Claude Agent
-> SDK, and Managed Agents; four runnable verticals show both over the same libraries.
-> 
-> > [!NOTE]
-> > Every company, brand, product, and person here is fictional; the only company is ACME.
-> > Nothing places an order, charges a card, or changes a live listing: `checkout` renders
-> > the cart for the host to complete, and every merchant write is staged until a person
-> > approves it. Business rules, authorization, and compliance are the deployment's.
-> 
-> 
-> ## Quick start: run the demos
-> 
-> Python 3.11+ and Node 22. Clone, install, add a key, run a vertical:
-> 
-> ```bash
-> git clone https://github.com/anthropics/commerce-agents.git && cd commerce-agents
-> python3 -m venv .venv && source .venv/bin/activate
-> pip install -r requirements.txt       # the seven packages and their pinned dependencies
-> cp .env.example .env                  # add ANTHROPIC_API_KEY
-> (cd examples && npm ci)               # the eight web apps share one workspace
-> python scripts/run_demo.py retail     # API :8000 + storefront :3000
-> ```
-> 
-> `--merchant` starts the portal instead of the storefront and `--all` starts both. The
-> verticals are `retail` (:3000, portal :3100), `travel` (:3001, :3101), `telecom` (:3002,
-> :3102), and `entertainment` (:3003, :3103); each README lists prompts to try on both surfaces.
-> 
-> 
-> ## Quick start: build your own
-> 
-> The Claude Code plugin scaffolds an agent on these packages against your systems, or reviews
-> one you have. With the repo cloned as above (the plugin reads it as the reference):
-> 
-> ```bash
-> claude plugin marketplace add anthropics/commerce-agents
-> claude plugin install commerce-builder@claude-commerce-agents
-> claude
-> /scaffold-commerce-agent a shopping assistant for our store
-> ```
-> 
-> The command asks about your stack, plays the plan back, and builds the project; `/add-commerce-flow`
-> and `/author-commerce-evals` continue from there, and `/review-commerce-agent` starts from an agent
-> that already exists ([`plugins/commerce-builder/`](plugins/commerce-builder/)). Each command also
-> runs when a request matches its description, so naming it is optional.
-> 
-> 
-> ## The two agents
-> 
-> The **shopping agent** searches, compares, plans, fills the cart, answers order and policy
-> questions, and remembers what a customer tells it. Its five flows are the skills in
-> [`shopping-agent/skills/`](shopping-agent/skills/); a deployment implements
-> [`StorefrontBackend`](shopping-agent/core/shopping_agent/backend.py) over its catalog,
-> cart, order, and policy systems.
-> 
-> The **merchant agent** explains performance, maintains listings, acts on inventory and order
-> alerts, prices and promotes, and drafts campaigns; every write is a staged change the host's
-> approval surface applies. Its five flows are the skills in [`merchant-agent/skills/`](merchant-agent/skills/);
-> a deployment implements [`MerchantBackend`](merchant-agent/core/merchant_agent/backend.py) over
-> its analytics, catalog, inventory, pricing, and campaign systems.
-> 
-> 
-> ## Layout
-> 
-> | Directory | Contents | pip package, `import` name |
-> |---|---|---|
-> | [`commerce-common/`](commerce-common/) | What both roles share: config, fencing, memory, skills, grounding, presentation, executor frame, events | `commerce-common`, `commerce_common` |
-> | [`shopping-agent/core/`](shopping-agent/core/) | Shopping types, `StorefrontBackend`, prompt, tool contracts, gates, executor | `shopping-agent-core`, `shopping_agent` |
-> | [`shopping-agent/runtime-messages-api/`](shopping-agent/runtime-messages-api/) | `ShoppingAgent`, the turn loop on the Messages API | `shopping-agent-runtime`, `shopping_agent_runtime` |
-> | [`shopping-agent/runtime-agent-sdk/`](shopping-agent/runtime-agent-sdk/) | The shopping agent on the Agent SDK, with a console | `shopping-agent-sdk`, `shopping_agent_sdk` |
-> | [`shopping-agent/managed-agents/`](shopping-agent/managed-agents/) | Manifest and storefront MCP server for Managed Agents | — |
-> | [`merchant-agent/core/`](merchant-agent/core/) | Merchant types, `MerchantBackend`, prompt, tool contracts, change guardrails, gates, executor | `merchant-agent-core`, `merchant_agent` |
-> | [`merchant-agent/runtime-messages-api/`](merchant-agent/runtime-messages-api/) | `MerchantAgent` and the analysis delegate on the Messages API | `merchant-agent-runtime`, `merchant_agent_runtime` |
-> | [`merchant-agent/runtime-agent-sdk/`](merchant-agent/runtime-agent-sdk/) | The merchant agent on the Agent SDK, with an approving console | `merchant-agent-sdk`, `merchant_agent_sdk` |
-> | [`merchant-agent/managed-agents/`](merchant-agent/managed-agents/) | Manifest, merchant MCP server, scheduled digest for Managed Agents | — |
-> | [`examples/`](examples/) | Four verticals, shared host code (`demo_common/`), shared web code (`web-shared/`) | — |
-> | [`plugins/commerce-builder/`](plugins/commerce-builder/) | The Claude Code plugin | — |
-> | [`docs/`](docs/) | `safety.md` (enforced rules), `backends.md` (mapping your systems), `deployment.md` (other platforms) | — |
-> | [`tests/`](tests/) | Cross-package suites; each package also has its own `tests/` | — |
-> | [`scripts/`](scripts/) | `install.sh`, `run_demo.py`, `smoke_chat.py`, `screenshot_tour.py`, `check.py`, `deploy_managed_agent.sh`, `verify_all.py` | — |
-> 
-> 
-> ## Three ways to run an agent
-> 
-> **Messages API.** The reference loop; the examples are host applications around it:
-> 
-> ```python
-> from pathlib import Path
-> 
-> from shopping_agent import ShoppingAgentConfig
-> from shopping_agent_runtime import ShoppingAgent
-> 
-> agent = ShoppingAgent(backend=your_backend, skills_dir=Path("shopping-agent/skills"),
->                       config=ShoppingAgentConfig(brand_name="Your Store"))
-> async for event in agent.stream_turn(messages, session, state):
->     ...   # text_delta, tool_call, ui, cart_update (change_update on the merchant side), turn_complete
-> await agent.update_memory(messages, session)   # memory extraction; this path only
-> ```
-> 
-> The example hosts take the session id in an `X-Session-Id` header.
-> 
-> **Agent SDK.** The same prompt, skills, and tools, with the SDK running the loop; the host
-> prefetches grounding reads, and nothing runs after the turn:
-> 
-> ```bash
-> python shopping-agent/runtime-agent-sdk/main.py --once "a two-person tent under $250"
-> python merchant-agent/runtime-agent-sdk/main.py          # approves staged changes with y/N
-> ```
-> 
-> **Managed Agents.** A hosted agent over the same skills and contracts, calling your MCP server:
-> 
-> ```bash
-> scripts/deploy_managed_agent.sh shopping-agent/managed-agents/shopping-agent   # or merchant-agent/...; --live deploys
-> ```
-> 
-> 
-> ## Safety
-> 
-> Fencing, provenance gates, caps, memory validation, and the merchant approval gate run
-> inside the tool call and hold on all three paths; grounding, the analysis budgets, and memory
-> extraction are runtime features. [`docs/safety.md`](docs/safety.md) lists each rule with its
-> module and paths, and what a deployment adds first; the examples have no authentication and
-> the MCP servers bind to loopback.
-> 
-> 
-> ## Verticals
-> 
-> | Example | Storefront | Portal |
-> |---|---|---|
-> | [`examples/retail/`](examples/retail/) ACME | Search, comparison, plans, cart, checkout, memory over the built-in components | Digest, staged restocks and listing fixes, analysis delegate over a SQL view |
-> | [`examples/travel/`](examples/travel/) ACME Travel | Date-bound inventory and a `present_itinerary` extension | Occupancy calendar and date-window rate moves |
-> | [`examples/telecom/`](examples/telecom/) ACME Mobile | Account context, plan matrix, server-authored fee disclosures | Plan mix, price moves that state the lines affected, protected regulated fees |
-> | [`examples/entertainment/`](examples/entertainment/) ACME Tickets | Timed holds, waitlists, transfers, venue map, all-in fee disclosures | Event pacing, hold releases that add real capacity, fee-preserving pric
+> FalconFlank is a 0day privilege escalation that abuses the office malicious macros remediation in Crowdstrike Falcon Sensor, obviously by the time I drop this Crowdstrike would already have detections for it so if you want to test you either have to add it to the exclusions or obfuscate the PoC and change the dll load technique.
+> As of now it works in a fully updated windows 11 25H2 / Windows Server 2025 with Crowdstrike Falcon - Phase 3 Optimal Protection + needs "Microsoft Office file malicious macro removal"
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/anthropics/commerce-agents) · [官方網站](https://claude.com/solutions/commerce)
+[GitHub](https://github.com/MSNightmare/FalconFlank)
 
 ## 相關收錄
 
@@ -325,7 +188,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "anthropics--commerce-agents"
+> WHERE category = "Other" AND file.name != "MSNightmare--FalconFlank"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -334,7 +197,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "anthropics--commerce-agents" AND status != "archived"
+> WHERE language = "C" AND file.name != "MSNightmare--FalconFlank" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -343,18 +206,18 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "anthropics--commerce-agents"
+> WHERE week = "2026-W36" AND file.name != "MSNightmare--FalconFlank"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/MSNightmare--FalconFlank");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "anthropics--commerce-agents" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "MSNightmare--FalconFlank" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -370,7 +233,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "anthropics" AND file.name != "anthropics--commerce-agents"
+> WHERE owner = "MSNightmare" AND file.name != "MSNightmare--FalconFlank"
 > SORT stars DESC
 > ```
 
@@ -378,7 +241,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/MSNightmare--FalconFlank");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -395,7 +258,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/MSNightmare--FalconFlank");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -428,7 +291,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/MSNightmare--FalconFlank");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -452,7 +315,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/MSNightmare--FalconFlank");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -489,7 +352,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/MSNightmare--FalconFlank");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -572,7 +435,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-04** — 首次收錄
+> **2026-09-05** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -588,5 +451,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-05|2026-09-05]] — 再次上榜，1.9k stars
-- [[2026-09-04|2026-09-04]] — 首次收錄，1.7k stars
+- [[2026-09-05|2026-09-05]] — 首次收錄，506 stars

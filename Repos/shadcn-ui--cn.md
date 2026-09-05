@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "cn is a new engine for Tailwind class merging and conflict resolution. It replaces tailwind-merge and clsx. Same APIs. Full parity. And it is 30× faster."
 homepage: ""
-stars: 993
-stars_per_day: 331
+stars: 1114
+stars_per_day: 279
 forks: 7
-open_issues: 4
+open_issues: 5
 created: 2026-08-31
 pushed_at: 2026-09-04
 first_seen: 2026-09-04
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-07"
+appearances: 2
+next_review: "2026-09-08"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 43
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-04"
-star_history: "2026-09-04:993"
+star_history: "2026-09-04:993,2026-09-05:1114"
 tags:
   - github
   - "category/other"
@@ -681,4 +681,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-05|2026-09-05]] — 再次上榜，1.1k stars
 - [[2026-09-04|2026-09-04]] — 首次收錄，993 stars

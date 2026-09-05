@@ -1,19 +1,19 @@
 ---
-repo: anthropics/commerce-agents
-url: https://github.com/anthropics/commerce-agents
-owner: anthropics
-owner_type: Organization
-language: Python
-license: Apache-2.0
-description: "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included."
-homepage: "https://claude.com/solutions/commerce"
-stars: 1950
-stars_per_day: 650
-forks: 324
-open_issues: 4
-created: 2026-09-01
-pushed_at: 2026-09-01
-first_seen: 2026-09-04
+repo: lnkiai/m3e-canvas
+url: https://github.com/lnkiai/m3e-canvas
+owner: lnkiai
+owner_type: User
+language: TypeScript
+license: MIT
+description: "Sketch Material 3 Expressive screens in the browser and turn them into vibe-coding prompts."
+homepage: "https://lnkiai.github.io/m3e-canvas/"
+stars: 2250
+stars_per_day: 750
+forks: 166
+open_issues: 0
+created: 2026-09-02
+pushed_at: 2026-09-05
+first_seen: 2026-09-05
 week: "2026-W36"
 month: "2026-09"
 category: "Other"
@@ -25,40 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-04
+last_reviewed: 2026-09-05
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-08"
-contributor_count: 1
-engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 1464
-readme_length: 9702
+contributor_count: 5
+engagement: "low"
+issue_close_rate: 100
+repo_size_kb: 9038
+readme_length: 9931
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-04"
-star_history: "2026-09-04:1664,2026-09-05:1950"
+ring_history: "assess@2026-09-05"
+star_history: "2026-09-05:2250"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - org
+  - "lang/typescript"
+  - "topic/design_tool"
+  - "topic/material_3_expressive"
+  - "topic/material_design"
+  - "topic/material3"
+  - "topic/nextjs"
 aliases:
-  - "commerce-agents"
-  - "anthropics/commerce-agents"
+  - "m3e-canvas"
+  - "lnkiai/m3e-canvas"
 ---
 
-# commerce-agents
+# m3e-canvas
 
-**1.7k** stars · **832** stars/天 · 建立 2 天前 · Python · Apache-2.0
+**2.3k** stars · **750** stars/天 · 建立 3 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/anthropics--commerce-agents");
+const me = dv.page("Repos/lnkiai--m3e-canvas");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +75,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`design-tool` `material-3-expressive` `material-design` `material3` `nextjs` `prompt` `react` `vibe-coding`
 
 > [!summary] 一句話摘要
-> Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.
+> Sketch Material 3 Expressive screens in the browser and turn them into vibe-coding prompts.
 
 ## 專案簡介
 
-Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.
+Sketch Material 3 Expressive screens in the browser and turn them into vibe-coding prompts.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/lnkiai--m3e-canvas");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +123,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/lnkiai--m3e-canvas");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,181 +147,160 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 270 |
-| Open Issues | 3 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-01 |
-| 建立日期 | 2026-09-01 |
-| 官方網站 | [Link](https://claude.com/solutions/commerce) |
-| Repo 大小 | 1.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/anthropics/commerce-agents) |
+| Forks | 166 |
+| Open Issues | 0 |
+| Issue 解決率 | 100% (4 closed) |
+| 最後推送 | 2026-09-05 |
+| 建立日期 | 2026-09-02 |
+| 官方網站 | [Link](https://lnkiai.github.io/m3e-canvas/) |
+| Repo 大小 | 8.8 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/lnkiai/m3e-canvas) |
+| Topics | `design-tool` `material-3-expressive` `material-design` `material3` `nextjs` `prompt` `react` `vibe-coding` |
 
 > [!info]- 主要依賴
-> `requirements.txt` 中的核心套件：
-> `-e ./commerce-common` `-e ./shopping-agent/core` `-e ./shopping-agent/runtime-messages-api` `-e ./shopping-agent/runtime-agent-sdk` `-e ./merchant-agent/core` `-e ./merchant-agent/runtime-messages-api` `-e ./merchant-agent/runtime-agent-sdk` `annotated-doc` `annotated-types` `anthropic` `anyio` `attrs` `certifi` `cffi` `claude-agent-sdk`
+> `package.json` 中的核心套件：
+> `html-to-image` `motion` `next` `react` `react-dom` `@tailwindcss/postcss` `@types/node` `@types/react` `@types/react-dom` `tailwindcss` `typescript` `vitest`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 99
->     "Shell" : 1
+>     "TypeScript" : 99
+>     "CSS" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@alishazal](https://github.com/alishazal) | 1 |
+> | [@lnkiai](https://github.com/lnkiai) | 35 |
+> | [@CQMHV](https://github.com/CQMHV) | 11 |
+> | [@Cokedog320](https://github.com/Cokedog320) | 6 |
+> | [@dependabot[bot]](https://github.com/dependabot[bot]) | 2 |
+> | [@j-token](https://github.com/j-token) | 2 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-31）
-> **活躍天數** 1 天 · **最新 commit** building commerce agents using claude
+> [!abstract] 最近 10 次 commit（2026-09-05 ~ 2026-09-05）
+> **活躍天數** 1 天 · **最新 commit** Edit as before where the browser has no locks, and drop the checking notice
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Claude Commerce Agents
+> M3E Canvas
 > 
-> Two commerce agents built on Claude: a **shopping agent** a business embeds in its app for
-> customers, and a **merchant agent** its staff use to run the back office. Each is defined
-> once (prompt, skills, tool contracts, gates) and runs on the Messages API, the Claude Agent
-> SDK, and Managed Agents; four runnable verticals show both over the same libraries.
+>   Sketch Material 3 Expressive screens in the browser, link them, tap through them, and copy a prompt for your AI coding tool.
 > 
-> > [!NOTE]
-> > Every company, brand, product, and person here is fictional; the only company is ACME.
-> > Nothing places an order, charges a card, or changes a live listing: `checkout` renders
-> > the cart for the host to complete, and every merchant write is staged until a person
-> > approves it. Business rules, authorization, and compliance are the deployment's.
+>   
+>   
+>   
+>   
+>   
+>   
+>   
+>   
 > 
+>   日本語 · 中文 · 한국어 · Open the app
 > 
-> ## Quick start: run the demos
+> Sketch a recipes app, retheme it, copy the prompt, hand it to an AI coding tool, and run the result on Android. (mp4)
 > 
-> Python 3.11+ and Node 22. Clone, install, add a key, run a vertical:
-> 
-> ```bash
-> git clone https://github.com/anthropics/commerce-agents.git && cd commerce-agents
-> python3 -m venv .venv && source .venv/bin/activate
-> pip install -r requirements.txt       # the seven packages and their pinned dependencies
-> cp .env.example .env                  # add ANTHROPIC_API_KEY
-> (cd examples && npm ci)               # the eight web apps share one workspace
-> python scripts/run_demo.py retail     # API :8000 + storefront :3000
-> ```
-> 
-> `--merchant` starts the portal instead of the storefront and `--all` starts both. The
-> verticals are `retail` (:3000, portal :3100), `travel` (:3001, :3101), `telecom` (:3002,
-> :3102), and `entertainment` (:3003, :3103); each README lists prompts to try on both surfaces.
+> Works with any AI coding tool that takes a prompt, such as Claude Code, Codex, Gemini CLI or Cursor: copy the prompt, paste it into the tool, and ask for the app.
 > 
 > 
-> ## Quick start: build your own
+> ## What it does
 > 
-> The Claude Code plugin scaffolds an agent on these packages against your systems, or reviews
-> one you have. With the repo cloned as above (the plugin reads it as the reference):
+> - **Drag-and-drop parts** – buttons, icon buttons, FABs, split buttons, FAB menus, chips, app bars, navigation bars, floating toolbars, tabs, search bars, cards, lists, dialogs, snackbars, text fields, switches, checkboxes, radio buttons, sliders, text, images, badges, boxes and dividers, all drawn to Material 3 Expressive.
+> - **Magnetic connections** – bring two buttons or list items close and they fuse into a connected group; the corners soften as they meet.
+> - **Real M3 Expressive loading** – the shape-morphing Loading Indicator (ported from material-components-android) and wavy linear / circular progress indicators.
+> - **Phone and desktop screens** – add as many screens as you like, name them, pick a background, and drag a screen to move everything on it. Switch any screen between a 412×892 phone and a 1280×800 desktop from its label: bars stretch, the navigation bar becomes a rail (and a rail becomes a bar again on a phone), and the parts are laid out again beside it. Screens of both sizes can share one design; same-named screens are written into the prompt as one screen at two widths.
+> - **Tap to navigate** – give any tappable part, an app bar icon or a navigation bar destination a target screen (or "back") and a transition: slide from any of the four sides, fade, expand or none. Arrows show the flow on the canvas; the preview lets you tap through it, and back plays the transition in reverse.
+> - **Swipe to navigate** – a screen can open another on a left / right / up / down swipe. In the preview the screen follows your finger, and the reverse swipe goes back.
+> - **Toggle buttons** – any button can flip on tap, changing its icon and style.
+> - **Layers and groups** – a layers panel lists the z-order of each screen; drag a row to bring parts forward or send them back, and open a group or a connected run to reorder what is inside it. Select several parts and group them to keep their overlap and move them as one. The prompt describes overlaps and side-by-side rows explicitly so the generated layout keeps them.
+> - **Theme** – the four M3 Expressive axes in one panel. Color: seven presets or one seed color that becomes a full Material 3 scheme you can fine-tune, light / dark, three contrast levels and a dynamic-color switch (match the phone wallpaper). Shape: square, rounded or full corners for every part at once. Type: Roboto, Roboto Flex, Roboto Serif or the system font, with the emphasized styles. Motion: the standard or the expressive spring scheme, which also drives the preview.
+> - **Prompt output** – the whole design (or a single screen) becomes a concise natural-language prompt in Japanese, English, Chinese or Korean, including your own notes on what each part does. Pick Android (the default) or the web as the target and the prompt asks for the matching stack.
+> - **Tidy** – one button snaps bars to the edges, the FAB to the corner, joins neighbouring list items and buttons, and stacks the rest on 16dp margins. Press it again to undo.
+> - **Optional AI helper** – bring your own key (OpenAI, Claude, Gemini or DeepSeek) and let the model write a part's behavior note or a screen's description, in your language. Each rewrite can be undone. The key stays in your browser and the request goes straight to the provider; there is no server in between.
+> - **Export** – copy the prompt (edit it by hand first if you like) or save a screen as a PNG.
+> - **Alignment guides**, undo/redo, keyboard shortcuts, seven color themes, a favorites row in the parts panel, and everything is saved in your browser (localStorage).
+> - **Phone-friendly** – on a phone you get one fixed screen and a buttons-only editor: tap the plus to add a button, tap a button to move it, and edit its text, icon and style in a bottom sheet. The full multi-screen editor is for desktop browsers.
 > 
-> ```bash
-> claude plugin marketplace add anthropics/commerce-agents
-> claude plugin install commerce-builder@claude-commerce-agents
-> claude
-> /scaffold-commerce-agent a shopping assistant for our store
-> ```
+>   
+>     Preview: tap a part and the linked screen slides in.
+>     Prompt: the design as a concise brief in the selected language.
+>   
 > 
-> The command asks about your stack, plays the plan back, and builds the project; `/add-commerce-flow`
-> and `/author-commerce-evals` continue from there, and `/review-commerce-agent` starts from an agent
-> that already exists ([`plugins/commerce-builder/`](plugins/commerce-builder/)). Each command also
-> runs when a request matches its description, so naming it is optional.
-> 
-> 
-> ## The two agents
-> 
-> The **shopping agent** searches, compares, plans, fills the cart, answers order and policy
-> questions, and remembers what a customer tells it. Its five flows are the skills in
-> [`shopping-agent/skills/`](shopping-agent/skills/); a deployment implements
-> [`StorefrontBackend`](shopping-agent/core/shopping_agent/backend.py) over its catalog,
-> cart, order, and policy systems.
-> 
-> The **merchant agent** explains performance, maintains listings, acts on inventory and order
-> alerts, prices and promotes, and drafts campaigns; every write is a staged change the host's
-> approval surface applies. Its five flows are the skills in [`merchant-agent/skills/`](merchant-agent/skills/);
-> a deployment implements [`MerchantBackend`](merchant-agent/core/merchant_agent/backend.py) over
-> its analytics, catalog, inventory, pricing, and campaign systems.
+> Phone: one screen, buttons only, edited in a bottom sheet.
 > 
 > 
-> ## Layout
+> ## Keyboard
 > 
-> | Directory | Contents | pip package, `import` name |
-> |---|---|---|
-> | [`commerce-common/`](commerce-common/) | What both roles share: config, fencing, memory, skills, grounding, presentation, executor frame, events | `commerce-common`, `commerce_common` |
-> | [`shopping-agent/core/`](shopping-agent/core/) | Shopping types, `StorefrontBackend`, prompt, tool contracts, gates, executor | `shopping-agent-core`, `shopping_agent` |
-> | [`shopping-agent/runtime-messages-api/`](shopping-agent/runtime-messages-api/) | `ShoppingAgent`, the turn loop on the Messages API | `shopping-agent-runtime`, `shopping_agent_runtime` |
-> | [`shopping-agent/runtime-agent-sdk/`](shopping-agent/runtime-agent-sdk/) | The shopping agent on the Agent SDK, with a console | `shopping-agent-sdk`, `shopping_agent_sdk` |
-> | [`shopping-agent/managed-agents/`](shopping-agent/managed-agents/) | Manifest and storefront MCP server for Managed Agents | — |
-> | [`merchant-agent/core/`](merchant-agent/core/) | Merchant types, `MerchantBackend`, prompt, tool contracts, change guardrails, gates, executor | `merchant-agent-core`, `merchant_agent` |
-> | [`merchant-agent/runtime-messages-api/`](merchant-agent/runtime-messages-api/) | `MerchantAgent` and the analysis delegate on the Messages API | `merchant-agent-runtime`, `merchant_agent_runtime` |
-> | [`merchant-agent/runtime-agent-sdk/`](merchant-agent/runtime-agent-sdk/) | The merchant agent on the Agent SDK, with an approving console | `merchant-agent-sdk`, `merchant_agent_sdk` |
-> | [`merchant-agent/managed-agents/`](merchant-agent/managed-agents/) | Manifest, merchant MCP server, scheduled digest for Managed Agents | — |
-> | [`examples/`](examples/) | Four verticals, shared host code (`demo_common/`), shared web code (`web-shared/`) | — |
-> | [`plugins/commerce-builder/`](plugins/commerce-builder/) | The Claude Code plugin | — |
-> | [`docs/`](docs/) | `safety.md` (enforced rules), `backends.md` (mapping your systems), `deployment.md` (other platforms) | — |
-> | [`tests/`](tests/) | Cross-package suites; each package also has its own `tests/` | — |
-> | [`scripts/`](scripts/) | `install.sh`, `run_demo.py`, `smoke_chat.py`, `screenshot_tour.py`, `check.py`, `deploy_managed_agent.sh`, `verify_all.py` | — |
+> | Key | Action |
+> | --- | --- |
+> | `V` / `H` | Select / hand tool (hold `Space` to pan) |
+> | Wheel, `Ctrl` + wheel | Pan, zoom |
+> | `+` `-` `0` | Zoom in, zoom out, fit |
+> | `Ctrl+Z` / `Ctrl+Shift+Z` | Undo / redo |
+> | `Ctrl+D` | Duplicate |
+> | Arrows (`Shift` = 10) | Nudge |
+> | `Delete` | Delete part or screen |
+> | `P` | Preview |
 > 
 > 
-> ## Three ways to run an agent
-> 
-> **Messages API.** The reference loop; the examples are host applications around it:
-> 
-> ```python
-> from pathlib import Path
-> 
-> from shopping_agent import ShoppingAgentConfig
-> from shopping_agent_runtime import ShoppingAgent
-> 
-> agent = ShoppingAgent(backend=your_backend, skills_dir=Path("shopping-agent/skills"),
->                       config=ShoppingAgentConfig(brand_name="Your Store"))
-> async for event in agent.stream_turn(messages, session, state):
->     ...   # text_delta, tool_call, ui, cart_update (change_update on the merchant side), turn_complete
-> await agent.update_memory(messages, session)   # memory extraction; this path only
-> ```
-> 
-> The example hosts take the session id in an `X-Session-Id` header.
-> 
-> **Agent SDK.** The same prompt, skills, and tools, with the SDK running the loop; the host
-> prefetches grounding reads, and nothing runs after the turn:
+> ## Develop
 > 
 > ```bash
-> python shopping-agent/runtime-agent-sdk/main.py --once "a two-person tent under $250"
-> python merchant-agent/runtime-agent-sdk/main.py          # approves staged changes with y/N
+> npm install
+> npm run dev        # http://localhost:3000
+> npm run build      # static export to ./out
 > ```
 > 
-> **Managed Agents.** A hosted agent over the same skills and contracts, calling your MCP server:
-> 
-> ```bash
-> scripts/deploy_managed_agent.sh shopping-agent/managed-agents/shopping-agent   # or merchant-agent/...; --live deploys
-> ```
+> The app is a static Next.js export. To host it under a sub-path (for example a GitHub Pages project site), set `NEXT_PUBLIC_BASE_PATH=/your-repo` at build time. `.github/workflows/deploy.yml` does this automatically and publishes `out/` to GitHub Pages on every push to `main`.
 > 
 > 
-> ## Safety
+> ## Credits
 > 
-> Fencing, provenance gates, caps, memory validation, and the merchant approval gate run
-> inside the tool call and hold on all three paths; grounding, the analysis budgets, and memory
-> extraction are runtime features. [`docs/safety.md`](docs/safety.md) lists each rule with its
-> module and paths, and what a deployment adds first; the examples have no authentication and
-> the MCP servers bind to loopback.
+> - Loading indicator shapes and animation model: [material-components-android](https://github.com/material-components/material-components-android) (Apache-2.0) via [Aler1x/m3-loading-indicator](https://github.com/Aler1x/m3-loading-indicator). See `NOTICE`.
+> - Icons: [Material Symbols](https://fonts.google.com/icons) (Apache-2.0). Fonts are loaded from Google Fonts.
 > 
 > 
-> ## Verticals
+> ## See also
 > 
-> | Example | Storefront | Portal |
-> |---|---|---|
-> | [`examples/retail/`](examples/retail/) ACME | Search, comparison, plans, cart, checkout, memory over the built-in components | Digest, staged restocks and listing fixes, analysis delegate over a SQL view |
-> | [`examples/travel/`](examples/travel/) ACME Travel | Date-bound inventory and a `present_itinerary` extension | Occupancy calendar and date-window rate moves |
-> | [`examples/telecom/`](examples/telecom/) ACME Mobile | Account context, plan matrix, server-authored fee disclosures | Plan mix, price moves that state the lines affected, protected regulated fees |
-> | [`examples/entertainment/`](examples/entertainment/) ACME Tickets | Timed holds, waitlists, transfers, venue map, all-in fee disclosures | Event pacing, hold releases that add real capacity, fee-preserving pric
+> - [matraic/m3e](https://github.com/matraic/m3e) – Material 3 Expressive as Lit web components (MIT), with React bindings and an icon package. A good home for the screens you sketch here.
+> - [Beer CSS](https://www.beercss.com/) – Material Design 3 as a plain CSS framework (MIT). Another way to build the web version of a screen you sketch here.
+> 
+> 
+> ## 日本語
+> 
+> **Material 3 Expressive の画面をブラウザで組み立てて、画面同士をつなぎ、タップして確かめ、そのまま AI コーディング用のプロンプトにするツールです。**
+> 
+> 公開版: https://lnkiai.github.io/m3e-canvas/
+> 
+> レシピアプリを組み、テーマを変え、プロンプトをコピーして AI コーディングツールに渡し、できたアプリを Android で動かすまで。（mp4）
+> 
+> Claude Code、Codex、Gemini CLI、Cursor など、プロンプトを受け取れる AI コーディングツールならどれでも使えます。プロンプトをコピーしてツールに貼り、アプリを作ってと頼むだけです。
+> 
+> 
+> ### できること
+> 
+> - **ドラッグ＆ドロップ** – ボタン、アイコンボタン、FAB、スプリットボタン、FAB メニュー、チップ、アプリバー、ナビゲーションバー、フローティングツールバー、タブ、検索バー、カード、リスト、ダイアログ、スナックバー、テキスト入力、スイッチ、チェックボックス、ラジオボタン、スライダー、テキスト、画像、バッジ、ボックス、区切り線。
+> - **磁石のような連結** – ボタンやリスト項目を近づけると 1 つのグループにくっつき、角が溶けてつながります。
+> - **本物の M3 Expressive ローディング** – 形が変化する Loading Indicator（Android 実装からの移植）と、波形のリニア／サーキュラープログレス。
+> - **スマホ画面とデスクトップ画面** – 画面を何枚でも追加して名前や背景色を付け、画面ごと動かせます。画面のラベルから 412×892 のスマホと 1280×800 のデスクトップを切り替えられ、バーは伸び、ナビゲーションバーはレールに（スマホに戻せばレールはバーに）なり、部品はその横に並べ直されます。両方のサイズを 1 つのデザインに混在でき、同じ名前の画面はプロンプトで「1 つの画面の 2 つの幅」として書かれます。
+> - **タップで遷移** – 部品、アプリバーのアイコン、ナビゲーションバーの項目に移動先の画面（または「戻る」）と遷移を設定。スライドは上下左右の 4 方向、ほかにフェード／拡大／なし。キャンバスに矢印が出て、プレビューでは実際にタップして確かめられ、戻るときは遷移が逆再生されます。
+> - **スワイプで遷移** – 画面に左右上下のスワイプ先を設定できます。プレビューでは指の動きに画面が追従し、逆方向のスワイプで戻れます。
+> - **切り替えボタン** – ボタンをタップでオン／オフが切り替わるトグルにして、オン時のアイコンとスタイルを指定できます。
+> - **レイヤーとグループ** – 画面ごとの重なり順をレイヤーパネルで確認し、ドラッグで前後を入れ替えられます。グループや連結した列は開いて、中の順番も入れ替えられます。複数選択してグループ化すると、重なりを保ったまま一緒に動かせます。プロンプトには重なりや横並びが明示され、生成されるレイアウトが崩れにくくなります。
+> - **テーマ** – M3 Expressive の 4 つの軸を 1 つのパネルで。カラーは 7 種のプリセットか、ベース色 1 つから Material 3 のスキーム全体を生成して微調整でき、ライト／ダーク、3 段階のコントラスト、壁紙に合わせるダイナミックカラーも指定できます。シェイプは全部品の角丸をスクエア／標準／フルでまとめて切り替え。タイポグラフィは Roboto、Roboto Flex、Roboto Serif、システムフォントと強調スタイル。モーションはスタンダード／エクスプレッシブで、プレビューの遷移にも反映されます。
+> - **プロンプト出力** – デザイン全体、または 1 画面だけを、日本語・英語・中国語・韓国語の簡潔な文章にします。部品ごとの「振る舞い」メモもそのまま入ります。実装先は Android（既定）と Web から選べ、プロンプトはそれに合った技術で書かれます。
+> - **整える** – ボタンひとつでバーを端に、FAB を隅に寄せ、隣り合うリスト項目やボタンをつなげ、残りを余白 16dp で積み直します。もう一度押すと元に戻ります。
+> - **AI 補助（任意）** – 自分のキー（OpenAI、Claude、Gemini、DeepSeek）を入れると、部品の動作や画面の説明を UI の言語で書いてもらえます。書き換えは元に戻せます。キーはブラウザ内にだけ保存され、リクエストはプロバイダへ直接送られます（間にサーバーはありません）。
+> - **書き出し** – プロンプトのコピー（手で編集してからも可）、画面の PNG 保存。
+> - **補助線
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/anthropics/commerce-agents) · [官方網站](https://claude.com/solutions/commerce)
+[GitHub](https://github.com/lnkiai/m3e-canvas) · [官方網站](https://lnkiai.github.io/m3e-canvas/)
 
 ## 相關收錄
 
@@ -325,7 +308,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "anthropics--commerce-agents"
+> WHERE category = "Other" AND file.name != "lnkiai--m3e-canvas"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -334,7 +317,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "anthropics--commerce-agents" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "lnkiai--m3e-canvas" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -343,18 +326,18 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "anthropics--commerce-agents"
+> WHERE week = "2026-W36" AND file.name != "lnkiai--m3e-canvas"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/lnkiai--m3e-canvas");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "anthropics--commerce-agents" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "lnkiai--m3e-canvas" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -370,7 +353,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "anthropics" AND file.name != "anthropics--commerce-agents"
+> WHERE owner = "lnkiai" AND file.name != "lnkiai--m3e-canvas"
 > SORT stars DESC
 > ```
 
@@ -378,7 +361,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/lnkiai--m3e-canvas");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -395,7 +378,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/lnkiai--m3e-canvas");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -428,7 +411,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/lnkiai--m3e-canvas");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -452,7 +435,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/lnkiai--m3e-canvas");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -489,7 +472,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/lnkiai--m3e-canvas");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -572,7 +555,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-04** — 首次收錄
+> **2026-09-05** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -588,5 +571,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-05|2026-09-05]] — 再次上榜，1.9k stars
-- [[2026-09-04|2026-09-04]] — 首次收錄，1.7k stars
+- [[2026-09-05|2026-09-05]] — 首次收錄，2.3k stars

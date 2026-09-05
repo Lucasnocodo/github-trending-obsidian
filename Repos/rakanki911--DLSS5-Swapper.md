@@ -7,12 +7,12 @@ language: JavaScript
 license: MIT
 description: "DLSS 5 Swapper is a powerful, easy-to-use tool for installing, managing, and restoring DLSS 5 across games and supported emulators. It features automatic game detection, optional drive scanning, DLSS5-Feeder for compatible titles without native DLSS, emulator support, and compatibility with DirectX 9/10/11/12, Vulkan, and OpenGL."
 homepage: ""
-stars: 1157
-stars_per_day: 231
-forks: 49
-open_issues: 28
+stars: 1552
+stars_per_day: 259
+forks: 72
+open_issues: 48
 created: 2026-08-29
-pushed_at: 2026-09-03
+pushed_at: 2026-09-04
 first_seen: 2026-09-04
 week: "2026-W36"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-07"
+appearances: 2
+next_review: "2026-09-08"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 52
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-04"
-star_history: "2026-09-04:1157"
+star_history: "2026-09-04:1157,2026-09-05:1552"
 tags:
   - github
   - "category/other"
@@ -590,4 +590,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-05|2026-09-05]] — 再次上榜，1.6k stars
 - [[2026-09-04|2026-09-04]] — 首次收錄，1.2k stars

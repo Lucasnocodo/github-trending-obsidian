@@ -1,19 +1,19 @@
 ---
-repo: anthropics/commerce-agents
-url: https://github.com/anthropics/commerce-agents
-owner: anthropics
-owner_type: Organization
+repo: nahrek/polyledger
+url: https://github.com/nahrek/polyledger
+owner: nahrek
+owner_type: User
 language: Python
-license: Apache-2.0
-description: "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included."
-homepage: "https://claude.com/solutions/commerce"
-stars: 1950
-stars_per_day: 650
-forks: 324
-open_issues: 4
-created: 2026-09-01
-pushed_at: 2026-09-01
-first_seen: 2026-09-04
+license: MIT
+description: "Resumable Polymarket indexer: CLOB market metadata plus on-chain trades from Polygon, in one DuckDB file you can query with SQL"
+homepage: ""
+stars: 614
+stars_per_day: 307
+forks: 109
+open_issues: 0
+created: 2026-09-02
+pushed_at: 2026-09-02
+first_seen: 2026-09-05
 week: "2026-W36"
 month: "2026-09"
 category: "Other"
@@ -25,40 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-04
+last_reviewed: 2026-09-05
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-08"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 1464
-readme_length: 9702
+issue_close_rate: -1
+repo_size_kb: 106
+readme_length: 9986
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-04"
-star_history: "2026-09-04:1664,2026-09-05:1950"
+ring_history: "assess@2026-09-05"
+star_history: "2026-09-05:614"
 tags:
   - github
   - "category/other"
   - "lang/python"
-  - org
+  - "topic/data_science"
+  - "topic/hypersync"
+  - "topic/polymarket"
+  - "topic/polymarketprediction_markets"
+  - "topic/prediction_market"
 aliases:
-  - "commerce-agents"
-  - "anthropics/commerce-agents"
+  - "polyledger"
+  - "nahrek/polyledger"
 ---
 
-# commerce-agents
+# polyledger
 
-**1.7k** stars · **832** stars/天 · 建立 2 天前 · Python · Apache-2.0
+**614** stars · **307** stars/天 · 建立 2 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/anthropics--commerce-agents");
+const me = dv.page("Repos/nahrek--polyledger");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`個人專案`
+
+`data-science` `hypersync` `polymarket` `polymarketprediction-markets` `prediction-market`
 
 > [!summary] 一句話摘要
-> Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.
+> Resumable Polymarket indexer: CLOB market metadata plus on-chain trades from Polygon, in one DuckDB file you can query with SQL
 
 ## 專案簡介
 
-Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.
+Resumable Polymarket indexer: CLOB market metadata plus on-chain trades from Polygon, in one DuckDB file you can query with SQL
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/nahrek--polyledger");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +125,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/nahrek--polyledger");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,181 +149,217 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 270 |
-| Open Issues | 3 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-01 |
-| 建立日期 | 2026-09-01 |
-| 官方網站 | [Link](https://claude.com/solutions/commerce) |
-| Repo 大小 | 1.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/anthropics/commerce-agents) |
-
-> [!info]- 主要依賴
-> `requirements.txt` 中的核心套件：
-> `-e ./commerce-common` `-e ./shopping-agent/core` `-e ./shopping-agent/runtime-messages-api` `-e ./shopping-agent/runtime-agent-sdk` `-e ./merchant-agent/core` `-e ./merchant-agent/runtime-messages-api` `-e ./merchant-agent/runtime-agent-sdk` `annotated-doc` `annotated-types` `anthropic` `anyio` `attrs` `certifi` `cffi` `claude-agent-sdk`
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "Python" : 99
->     "Shell" : 1
-> ```
+| Forks | 109 |
+| Open Issues | 0 |
+| 最後推送 | 2026-09-02 |
+| 建立日期 | 2026-09-02 |
+| Repo 大小 | 106 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/nahrek/polyledger) |
+| Topics | `data-science` `hypersync` `polymarket` `polymarketprediction-markets` `prediction-market` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@alishazal](https://github.com/alishazal) | 1 |
+> | [@nahrek](https://github.com/nahrek) | 21 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-08-31）
-> **活躍天數** 1 天 · **最新 commit** building commerce agents using claude
+> [!abstract] 最近 10 次 commit（2026-09-02 ~ 2026-09-02）
+> **活躍天數** 1 天 · **最新 commit** Update test_clients.py
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Claude Commerce Agents
+> # PolyLedger
 > 
-> Two commerce agents built on Claude: a **shopping agent** a business embeds in its app for
-> customers, and a **merchant agent** its staff use to run the back office. Each is defined
-> once (prompt, skills, tool contracts, gates) and runs on the Messages API, the Claude Agent
-> SDK, and Managed Agents; four runnable verticals show both over the same libraries.
+> A resumable indexer for Polymarket market metadata and on-chain trade data, backed by DuckDB.
 > 
-> > [!NOTE]
-> > Every company, brand, product, and person here is fictional; the only company is ACME.
-> > Nothing places an order, charges a card, or changes a live listing: `checkout` renders
-> > the cart for the host to complete, and every merchant write is staged until a person
-> > approves it. Business rules, authorization, and compliance are the deployment's.
+> PolyLedger pulls every market from the Polymarket CLOB API, streams every `OrderFilled` event from Polygon via [Envio HyperSync](https://envio.dev), and writes both into a single DuckDB file you can query with SQL immediately.
+> 
+> ---
 > 
 > 
-> ## Quick start: run the demos
+> ## Installation
 > 
-> Python 3.11+ and Node 22. Clone, install, add a key, run a vertical:
+> ```bat
+> git clone https://github.com/nahrek/polyledger
+> cd polyledger
+> python -m venv .venv
+> .venv\Scripts\activate.bat
+> pip install -e .
+> ```
+> 
+> Then configure the HyperSync token. Copy `.env.example` to `.env`, open it in any
+> editor, and set `HYPERSYNC_BEARER_TOKEN`. PolyLedger reads `.env` from the working
+> directory on startup, so there is no export step. Real environment variables still
+> take precedence if you prefer to set them that way.
+> 
+> 
+> ## Quick start
+> 
+> Run the full pipeline:
 > 
 > ```bash
-> git clone https://github.com/anthropics/commerce-agents.git && cd commerce-agents
-> python3 -m venv .venv && source .venv/bin/activate
-> pip install -r requirements.txt       # the seven packages and their pinned dependencies
-> cp .env.example .env                  # add ANTHROPIC_API_KEY
-> (cd examples && npm ci)               # the eight web apps share one workspace
-> python scripts/run_demo.py retail     # API :8000 + storefront :3000
+> polyledger sync
 > ```
 > 
-> `--merchant` starts the portal instead of the storefront and `--all` starts both. The
-> verticals are `retail` (:3000, portal :3100), `travel` (:3001, :3101), `telecom` (:3002,
-> :3102), and `entertainment` (:3003, :3103); each README lists prompts to try on both surfaces.
+> The first backfill is slow. On the free HyperSync tier it takes anywhere from a few hours to a couple of days depending on how much history you want. It is safe to interrupt at any point. Every subsequent run is incremental and finishes in seconds.
 > 
-> 
-> ## Quick start: build your own
-> 
-> The Claude Code plugin scaffolds an agent on these packages against your systems, or reviews
-> one you have. With the repo cloned as above (the plugin reads it as the reference):
+> To verify the setup on a small slice first:
 > 
 > ```bash
-> claude plugin marketplace add anthropics/commerce-agents
-> claude plugin install commerce-builder@claude-commerce-agents
-> claude
-> /scaffold-commerce-agent a shopping assistant for our store
+> polyledger markets                    # metadata only, a few minutes
+> polyledger chain --max-blocks 200000  # roughly five days of Polygon history
+> polyledger stats
 > ```
 > 
-> The command asks about your stack, plays the plan back, and builds the project; `/add-commerce-flow`
-> and `/author-commerce-evals` continue from there, and `/review-commerce-agent` starts from an agent
-> that already exists ([`plugins/commerce-builder/`](plugins/commerce-builder/)). Each command also
-> runs when a request matches its description, so naming it is optional.
+> `stats` reports what is actually in the database:
 > 
-> 
-> ## The two agents
-> 
-> The **shopping agent** searches, compares, plans, fills the cart, answers order and policy
-> questions, and remembers what a customer tells it. Its five flows are the skills in
-> [`shopping-agent/skills/`](shopping-agent/skills/); a deployment implements
-> [`StorefrontBackend`](shopping-agent/core/shopping_agent/backend.py) over its catalog,
-> cart, order, and policy systems.
-> 
-> The **merchant agent** explains performance, maintains listings, acts on inventory and order
-> alerts, prices and promotes, and drafts campaigns; every write is a staged change the host's
-> approval surface applies. Its five flows are the skills in [`merchant-agent/skills/`](merchant-agent/skills/);
-> a deployment implements [`MerchantBackend`](merchant-agent/core/merchant_agent/backend.py) over
-> its analytics, catalog, inventory, pricing, and campaign systems.
-> 
-> 
-> ## Layout
-> 
-> | Directory | Contents | pip package, `import` name |
-> |---|---|---|
-> | [`commerce-common/`](commerce-common/) | What both roles share: config, fencing, memory, skills, grounding, presentation, executor frame, events | `commerce-common`, `commerce_common` |
-> | [`shopping-agent/core/`](shopping-agent/core/) | Shopping types, `StorefrontBackend`, prompt, tool contracts, gates, executor | `shopping-agent-core`, `shopping_agent` |
-> | [`shopping-agent/runtime-messages-api/`](shopping-agent/runtime-messages-api/) | `ShoppingAgent`, the turn loop on the Messages API | `shopping-agent-runtime`, `shopping_agent_runtime` |
-> | [`shopping-agent/runtime-agent-sdk/`](shopping-agent/runtime-agent-sdk/) | The shopping agent on the Agent SDK, with a console | `shopping-agent-sdk`, `shopping_agent_sdk` |
-> | [`shopping-agent/managed-agents/`](shopping-agent/managed-agents/) | Manifest and storefront MCP server for Managed Agents | — |
-> | [`merchant-agent/core/`](merchant-agent/core/) | Merchant types, `MerchantBackend`, prompt, tool contracts, change guardrails, gates, executor | `merchant-agent-core`, `merchant_agent` |
-> | [`merchant-agent/runtime-messages-api/`](merchant-agent/runtime-messages-api/) | `MerchantAgent` and the analysis delegate on the Messages API | `merchant-agent-runtime`, `merchant_agent_runtime` |
-> | [`merchant-agent/runtime-agent-sdk/`](merchant-agent/runtime-agent-sdk/) | The merchant agent on the Agent SDK, with an approving console | `merchant-agent-sdk`, `merchant_agent_sdk` |
-> | [`merchant-agent/managed-agents/`](merchant-agent/managed-agents/) | Manifest, merchant MCP server, scheduled digest for Managed Agents | — |
-> | [`examples/`](examples/) | Four verticals, shared host code (`demo_common/`), shared web code (`web-shared/`) | — |
-> | [`plugins/commerce-builder/`](plugins/commerce-builder/) | The Claude Code plugin | — |
-> | [`docs/`](docs/) | `safety.md` (enforced rules), `backends.md` (mapping your systems), `deployment.md` (other platforms) | — |
-> | [`tests/`](tests/) | Cross-package suites; each package also has its own `tests/` | — |
-> | [`scripts/`](scripts/) | `install.sh`, `run_demo.py`, `smoke_chat.py`, `screenshot_tour.py`, `check.py`, `deploy_managed_agent.sh`, `verify_all.py` | — |
-> 
-> 
-> ## Three ways to run an agent
-> 
-> **Messages API.** The reference loop; the examples are host applications around it:
-> 
-> ```python
-> from pathlib import Path
-> 
-> from shopping_agent import ShoppingAgentConfig
-> from shopping_agent_runtime import ShoppingAgent
-> 
-> agent = ShoppingAgent(backend=your_backend, skills_dir=Path("shopping-agent/skills"),
->                       config=ShoppingAgentConfig(brand_name="Your Store"))
-> async for event in agent.stream_turn(messages, session, state):
->     ...   # text_delta, tool_call, ui, cart_update (change_update on the merchant side), turn_complete
-> await agent.update_memory(messages, session)   # memory extraction; this path only
+> ```
+>   markets          14231
+>   tokens           28455
+>   fills            1204773
+>   unmatched_fills  392
+>   first_block      75014820
+>   last_block       75214820
+>   first_time       2026-05-14 08:11:23
+>   last_time        2026-05-19 03:44:02
+>   checkpoints:
+>     order_filled:v2: block 75214820, 1204773 rows, updated 2026-09-02 15:11:23
 > ```
 > 
-> The example hosts take the session id in an `X-Session-Id` header.
-> 
-> **Agent SDK.** The same prompt, skills, and tools, with the SDK running the loop; the host
-> prefetches grounding reads, and nothing runs after the turn:
+> Then query it:
 > 
 > ```bash
-> python shopping-agent/runtime-agent-sdk/main.py --once "a two-person tent under $250"
-> python merchant-agent/runtime-agent-sdk/main.py          # approves staged changes with y/N
-> ```
-> 
-> **Managed Agents.** A hosted agent over the same skills and contracts, calling your MCP server:
-> 
-> ```bash
-> scripts/deploy_managed_agent.sh shopping-agent/managed-agents/shopping-agent   # or merchant-agent/...; --live deploys
+> polyledger query "SELECT question, sum(usd_size) AS volume FROM trades GROUP BY 1 ORDER BY 2 DESC LIMIT 10"
 > ```
 > 
 > 
-> ## Safety
+> ## Features
 > 
-> Fencing, provenance gates, caps, memory validation, and the merchant approval gate run
-> inside the tool call and hold on all three paths; grounding, the analysis budgets, and memory
-> extraction are runtime features. [`docs/safety.md`](docs/safety.md) lists each rule with its
-> module and paths, and what a deployment adds first; the examples have no authentication and
-> the MCP servers bind to loopback.
+> - **Resumable by construction.** Rows and the block cursor are committed in a single transaction, so an interrupted run resumes exactly where it stopped.
+> - **Idempotent writes.** `order_fills` is keyed on `(transaction_hash, log_index)` and inserted with `ON CONFLICT DO NOTHING`. Re-running a range is a no-op.
+> - **DuckDB storage.** Columnar compression, real types, indexes, and SQL joins, all in one file on disk. No server.
+> - **Both contract generations.** Decodes the V2 `OrderFilled` layout and the older V1 one, with separate checkpoints per stream.
+> - **Schema validation.** Every API response passes through Pydantic models, so an upstream format change fails loudly instead of writing nulls for hours.
+> - **Resilient networking.** Exponential backoff with jitter, `Retry-After` support, and a shared token-bucket rate limiter across all REST sources.
+> - **Gap recovery.** Token ids missing from the CLOB listing are flagged and backfilled from the Gamma API rather than silently dropped.
+> - **Parquet export.** One command dumps every table for use with pandas, polars, or Spark.
 > 
 > 
-> ## Verticals
+> ## Configuration
 > 
-> | Example | Storefront | Portal |
-> |---|---|---|
-> | [`examples/retail/`](examples/retail/) ACME | Search, comparison, plans, cart, checkout, memory over the built-in components | Digest, staged restocks and listing fixes, analysis delegate over a SQL view |
-> | [`examples/travel/`](examples/travel/) ACME Travel | Date-bound inventory and a `present_itinerary` extension | Occupancy calendar and date-window rate moves |
-> | [`examples/telecom/`](examples/telecom/) ACME Mobile | Account context, plan matrix, server-authored fee disclosures | Plan mix, price moves that state the lines affected, protected regulated fees |
-> | [`examples/entertainment/`](examples/entertainment/) ACME Tickets | Timed holds, waitlists, transfers, venue map, all-in fee disclosures | Event pacing, hold releases that add real capacity, fee-preserving pric
+> All settings are read from environment variables or from a `.env` file in the working directory, which is loaded automatically at startup. Environment variables take precedence.
+> 
+> | Variable | Default | Description |
+> | --- | --- | --- |
+> | `HYPERSYNC_BEARER_TOKEN` | - | Envio API token. Required |
+> | `POLYLEDGER_DB` | `data/polyledger.duckdb` | Database file path |
+> | `POLYLEDGER_EXPORT_DIR` | `data/parquet` | Parquet export directory |
+> | `POLYLEDGER_CONTRACTS` | `v2` | `v2`, `v1`, or `all` |
+> | `POLYLEDGER_FROM_BLOCK` | `0` | `0` means auto-detect |
+> | `POLYLEDGER_REORG_BUFFER` | `64` | Blocks to stay behind the chain head |
+> | `POLYLEDGER_FLUSH_EVERY` | `50000` | Fills buffered before a checkpointed flush |
+> | `POLYLEDGER_HTTP_RPS` | `8` | Request rate limit for CLOB and Gamma |
+> | `POLYLEDGER_HTTP_CONCURRENCY` | `8` | Parallel HTTP requests |
+> | `POLYLEDGER_HTTP_RETRIES` | `6` | Attempts per request |
+> | `POLYLEDGER_HTTP_TIMEOUT` | `30` | Request timeout in seconds |
+> 
+> `REORG_BUFFER` guards against chain reorganisations by stopping 64 blocks short of the head, so a fill from a block that later gets orphaned is never written.
+> 
+> 
+> ## Table of contents
+> 
+> - [Features](#features)
+> - [Requirements](#requirements)
+> - [Installation](#installation)
+> - [Quick start](#quick-start)
+> - [CLI reference](#cli-reference)
+> - [Data model](#data-model)
+> - [Indexed contracts](#indexed-contracts)
+> - [Configuration](#configuration)
+> - [Design notes](#design-notes)
+> - [Development](#development)
+> - [Limitations](#limitations)
+> - [License](#license)
+> 
+> 
+> ## Requirements
+> 
+> - Python 3.11 or newer
+> - A HyperSync API token (required since November 2025; the free tier is sufficient). Register at [envio.dev](https://envio.dev).
+> 
+> The CLOB and Gamma APIs are public and need no credentials.
+> 
+> 
+> ## CLI reference
+> 
+> | Command | Description |
+> | --- | --- |
+> | `polyledger markets [--backfill]` | Sync market metadata from the CLOB. `--backfill` also resolves unmatched token ids via Gamma. |
+> | `polyledger chain [options]` | Index `OrderFilled` logs from Polygon. |
+> | `polyledger trades [--drop-unmatched]` | Materialise the joined `trades_mat` table. |
+> | `polyledger sync [options]` | Run markets → chain → backfill → trades in order. |
+> | `polyledger stats` | Show row counts, block range, and checkpoints. |
+> | `polyledger export [--out DIR]` | Write every table to Parquet. |
+> | `polyledger query "SELECT ..."` | Run one SQL statement and print the result. |
+> 
+> `chain` options:
+> 
+> | Flag | Description |
+> | --- | --- |
+> | `--contracts v2\|v1\|all` | Which exchange generation to index. Default `v2`. |
+> | `--from-block N` | Override the start block. Ignored if a checkpoint exists. |
+> | `--to-block N` | Stop at this block. |
+> | `--max-blocks N` | Index at most this many blocks, then exit. |
+> 
+> Global flags: `--db PATH` to use a different database file, `-v` for verbose logging.
+> 
+> The `polyledger` executable is installed by `pip install -e .`. Without installing, `python -m polyledger` and `python -m polyledger.cli` are equivalent. The entry point is `main()` in `polyledger/cli.py`.
+> 
+> 
+> ## Data model
+> 
+> 
+> ### `trades`
+> 
+> The main analytical view, joining chain fills to market metadata. Always live and always current. Run `polyledger trades` to materialise it as `trades_mat` if you plan to issue many queries against it.
+> 
+> | Column | Description |
+> | --- | --- |
+> | `block_time`, `block_number` | Block timestamp (UTC) and height |
+> | `question`, `market_slug`, `outcome` | Human-readable context |
+> | `token_id`, `condition_id` | Outcome and market identifiers |
+> | `maker`, `taker` | Counterparty addresses |
+> | `maker_side`, `taker_side` | `BUY` / `SELL`, both sides stated explicitly |
+> | `price` | Execution price, 0 to 1 |
+> | `shares` | Outcome share quantity |
+> | `usd_size` | Notional in dollars |
+> | `fee` | Fee from the event |
+> | `exchange_name`, `exchange_version` | Which contract emitted the fill |
+> | `unmatched_market` | `true` when no market metadata was found |
+> 
+> `price`, `shares`, and `usd_size` are not stored on chain. They are derived from `makerAmountFilled` and `takerAmountFilled` according to the maker's side: when the maker buys, their amount is collateral and the taker's is shares; when the maker sells, it is the other way round. Both are base units with 6 decimals, matching pUSD.
+> 
+> Many datasets collapse the two sides into a single ambiguous `side` column. PolyLedger records both, so you never have to guess whose perspective a row is written from.
+> 
+> 
+> ### Other tables
+> 
+> | Table | Contents |
+> | --- | --- |
+> | `markets` | One row per market (`condition_id`), with question, slug, `active`/`closed`/`neg_risk` flags, tick size, and fees |
+> | `tokens` | One row per outcome (`token_id`). This is the join key against fills |
+> | `order_fills` | Raw decoded logs with no interpretation applied. Build your own join from here if you disagree with the price math |
+> | `checkpoints` | One row per indexing stream |
+> 
+> Ready-made queries for daily volume, OHLC candles, VWAP, per-address positions, and top traders are in [`examples/queries.sql`](examples/
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/anthropics/commerce-agents) · [官方網站](https://claude.com/solutions/commerce)
+[GitHub](https://github.com/nahrek/polyledger)
 
 ## 相關收錄
 
@@ -325,7 +367,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "anthropics--commerce-agents"
+> WHERE category = "Other" AND file.name != "nahrek--polyledger"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -334,7 +376,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "anthropics--commerce-agents" AND status != "archived"
+> WHERE language = "Python" AND file.name != "nahrek--polyledger" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -343,18 +385,18 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "anthropics--commerce-agents"
+> WHERE week = "2026-W36" AND file.name != "nahrek--polyledger"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/nahrek--polyledger");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "anthropics--commerce-agents" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "nahrek--polyledger" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -370,7 +412,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "anthropics" AND file.name != "anthropics--commerce-agents"
+> WHERE owner = "nahrek" AND file.name != "nahrek--polyledger"
 > SORT stars DESC
 > ```
 
@@ -378,7 +420,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/nahrek--polyledger");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -395,7 +437,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/nahrek--polyledger");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -428,7 +470,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/nahrek--polyledger");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -452,7 +494,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/nahrek--polyledger");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -489,7 +531,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/anthropics--commerce-agents");
+> const me = dv.page("Repos/nahrek--polyledger");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -572,7 +614,7 @@ Reference blueprint for building shopping and merchant agents with Claude. Examp
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-04** — 首次收錄
+> **2026-09-05** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -588,5 +630,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-05|2026-09-05]] — 再次上榜，1.9k stars
-- [[2026-09-04|2026-09-04]] — 首次收錄，1.7k stars
+- [[2026-09-05|2026-09-05]] — 首次收錄，614 stars
