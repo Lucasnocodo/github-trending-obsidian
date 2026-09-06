@@ -1,63 +1,64 @@
 ---
-repo: danielblnc/DLSS-NR-on-AMD
-url: https://github.com/danielblnc/DLSS-NR-on-AMD
-owner: danielblnc
-owner_type: User
-language: N/A
-license: N/A
-description: "Run DLSS 5 Neural Rendering on your AMD GPU. Magic!"
+repo: anthropics/fermats-last-theorem
+url: https://github.com/anthropics/fermats-last-theorem
+owner: anthropics
+owner_type: Organization
+language: Lean
+license: Apache-2.0
+description: ""
 homepage: ""
-stars: 671
-stars_per_day: 224
-forks: 27
-open_issues: 72
-created: 2026-09-03
-pushed_at: 2026-09-05
-first_seen: 2026-09-05
-week: "2026-W36"
+stars: 722
+stars_per_day: 722
+forks: 56
+open_issues: 1
+created: 2026-09-04
+pushed_at: 2026-09-04
+first_seen: 2026-09-06
+week: "2026-W37"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v0.2.11"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-05
+last_reviewed: 2026-09-06
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-09"
-contributor_count: 0
+contributor_count: 1
 engagement: "low"
-issue_close_rate: 4
-repo_size_kb: 2
-readme_length: 2426
-bus_factor: 0
-last_release_days: 0
-release_cadence: "weekly"
+issue_close_rate: 0
+repo_size_kb: 232565
+readme_length: 3401
+bus_factor: 1
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-05"
-star_history: "2026-09-05:497,2026-09-06:671"
+ring_history: "assess@2026-09-06"
+star_history: "2026-09-06:722"
 tags:
   - github
   - "category/other"
-  - "lang/other"
+  - "lang/lean"
+  - org
 aliases:
-  - "DLSS-NR-on-AMD"
-  - "danielblnc/DLSS-NR-on-AMD"
+  - "fermats-last-theorem"
+  - "anthropics/fermats-last-theorem"
 ---
 
-# DLSS-NR-on-AMD
+# fermats-last-theorem
 
-**497** stars · **249** stars/天 · 建立 2 天前 · N/A · 未標註授權
+**722** stars · **722** stars/天 · 建立 1 天前 · Lean · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+const me = dv.page("Repos/anthropics--fermats-last-theorem");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v0.2.11`
+`ORG`
 
 > [!summary] 一句話摘要
-> Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
+> No description
 
 ## 專案簡介
 
-Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/anthropics--fermats-last-theorem");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +119,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/anthropics--fermats-last-theorem");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,89 +143,95 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 20 |
-| Open Issues | 53 |
-| Issue 解決率 | 4% (2 closed) |
-| 最後推送 | 2026-09-05 |
-| 建立日期 | 2026-09-03 |
-| Repo 大小 | 2 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/danielblnc/DLSS-NR-on-AMD) |
+| Forks | 56 |
+| Open Issues | 1 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-09-04 |
+| 建立日期 | 2026-09-04 |
+| Repo 大小 | 227.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/anthropics/fermats-last-theorem) |
 
-**最新版本**：v0.2.11 — Alpha 0.2.11 (2026-09-05)
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Lean" : 92
+>     "HTML" : 8
+> ```
 
-> [!info]- Release Notes
-> - Additional 2% performance increase over v0.2.10
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@claude](https://github.com/claude) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-03 ~ 2026-09-05）
-> **活躍天數** 2 天 · **最新 commit** Updated README
+> [!abstract] 最近 10 次 commit（2026-09-03）
+> **活躍天數** 1 天 · **最新 commit** Fermat's Last Theorem in Lean 4 (Lean 4.33.1, Mathlib v4.33.0)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#12](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/12) | Closed source? | 24 | 4 |
-> | [#4](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/4) | Post Source code | 20 | 4 |
-> | [#3](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/3) | RX 9070 XT performance findings / possible RDNA4 optimizatio | 11 | 0 |
-> | [#27](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/27) | And the source code where is it? | 10 | 0 |
-> | [#17](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/17) | working with optiscaler?  | 6 | 0 |
+> | [#1](https://github.com/anthropics/fermats-last-theorem/issues/1) | Host static site with github pages | 13 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # DLSS-NR on AMD
+> # Fermat's Last Theorem in Lean 4
 > 
-> Run **DLSS 5 Neural Rendering** on **AMD Radeon RX 9000 (RDNA4) and 7000 (RDNA3)** cards, in any DirectX 12 game that uses FSR.
+> A complete, machine-checked proof of Fermat's Last Theorem in [Lean 4](https://lean-lang.org), built on
+> [Mathlib](https://github.com/leanprover-community/mathlib4) (Lean 4.33.1; Mathlib `v4.33.0`, pinned by commit in
+> `lakefile.lean`). The argument is that of Frey, Serre, Ribet, Wiles and Taylor-Wiles. `PROOF-PATH.md` names each step
+> and the Lean theorem that carries it, and the `html/` folder presents the whole proof as web pages you can browse
+> offline (see "Reading the proof in a browser" below).
 > 
-> ## Download
+> Research artifact. Not maintained and not accepting contributions.
 > 
-> Get `dlssnr_on_amd_setup.exe` from the [latest release](../../releases/latest).
+> ## The statement
 > 
-> ## Install
+> `Theorems/Thm_fermat_last_theorem.lean` declares
 > 
-> 1. Place `dlssnr_on_amd_setup.exe` in the game exe folder, for Cyberpunk 2077 that is `bin\x64`.
-> 2. Get a copy of `nvngx_dlssnr.dll` (DLSS 5 Neural Rendering, build 310.8.0.0, you can get it from games that support DLSS 5) and place it in the same folder.
-> 3. Run `dlssnr_on_amd_setup.exe` and follow the instructions.
-> 4. Start the game and **enable FSR** (any FSR 3 / FSR 4 works, any quality / FSRAA). Press **End** to open the overlay.
+> ~~~lean
+> theorem fermat_last_theorem (n : ℕ) (hn : 3 ≤ n) (a b c : ℕ) (ha : 0  flt && cd flt
+> LEAN_NUM_THREADS=96 lake build              # one job per hardware thread by default; lower it to bound memory (about 5 GB per job)
+> verification/comparator/run.sh              # verdict: last line of .verify-work/wrapper/comparator.log
+> verification/nanoda/run.sh                  # after the comparator script; verdict: .verify-work/nanoda/run-*/nanoda.stdout
+> ~~~
 > 
-> Run `dlssnr_on_amd_setup.exe` again to **update** (U) or **remove** (R).
+> Lean prints a large number of deprecation and style-linter warnings while building. They do not affect the result.
+> The build has succeeded when its output ends with
+> `'flt_mathlib' depends on axioms: [propext, Classical.choice, Quot.sound]` and `Build completed successfully`. Each
+> script fetches and builds its checker at a pinned version and exits 0 on success.
 > 
-> ## What to expect
+> ## About the sources
 > 
-> Output quality is very similar to what DLSS produces on the original hardware, though there are still some effects that may not be working 100%.
+> `FinalCheck.lean` is the default target; `Theorems/` holds the statements, `P2M/Sol/` the proofs (each importing the
+> statements it cites), `Definitions/` the definitions, `verification/` the two checks, `html/` the web pages described
+> above and `tools/docs-site/` the program that generated them. The Lean sources were produced by AI agents building
+> on human-written open-source Lean, with Lean as the arbiter, and are written to be checked rather than read: names are
+> machine-generated, labels such as `P2M` or hexadecimal suffixes are pipeline labels rather than mathematics, and where
+> a name and a statement disagree the statement is what was proved. Comments were removed, apart from upstream notices,
+> doc strings and citations (listed in `ATTRIBUTION.md`) and the expected-output comment that `#guard_msgs` checks.
 > 
-> Performance is still a work in progress: roughly 31 FPS at 1080p on an RX 9070 XT. I'm improving performance every day, goal is to get it to run as fast as a 5070Ti. Check back for new releases.
+> ## Licence and attribution
 > 
-> ## In-game overlay
-> 
-> End key to open. Up/Down/Left/Right to adjust, Enter toggles.
-> Options: Mode (inline / async, for photo mode only), Tone intensity, Structure intensity, Skin structure. Model selection is planned.
-> 
-> ## Requirements
-> 
-> - Windows 11, DirectX 12 game with FSR. Vulkan is planned for a later release. Tested on Cyberpunk and GTA V Enhanced.
-> - An AMD Radeon RX 9000 series GPU (tested on a 9070 XT). RX 7000 series cards should work, reports are welcome. Older GPUs are not currently supported.
-> - Installed Adrenalin driver 26.1.1 or later
-> - Your own copy of `nvngx_dlssnr.dll` version 310.8.0.0
-> - Games with anti-cheat will block the DLL; use them only with anti-cheat off.
-> 
-> ## How can I help?
-> 
-> Two ways:
-> - Donate. Tokens are expensive, and GPUs to test my mods on are even more expensive. Donate here: [ko-fi.com/danielblnc](https://ko-fi.com/danielblnc)
-> - Test and report. Try on your 7000 GPU or other games, open an issue and attach `dlssnr_on_amd.log` if you encounter any problems.
-> 
-> ## Legal
-> 
-> This project is not affiliated with or endorsed by NVIDIA or AMD. DLSS is a trademark of NVIDIA Corporation. The software here contains no NVIDIA code or data; it requires the user's own legitimately obtained copy of the DLSS 5 DLL. Provided as-is, without warranty; use at your own risk.
+> Copyright 2026 Anthropic, PBC; released under the Apache License 2.0 (`LICENSE`). Portions derive from three
+> Apache-2.0 projects credited in `NOTICE`: the
+> [Imperial College London FLT project](https://github.com/ImperialCollegeLondon/FLT) led by Kevin Buzzard (Frey
+> package, Galois representations, deformation theory, patching and more),
+> [flt-regular](https://github.com/leanprover-community/flt-regular) (Kummer's theorem) and Mathlib. `ATTRIBUTION.md`
+> lists the 106 files containing material from the first two, with upstream file, copyright holder and authors, and the
+> 23 files that reproduce Mathlib text (the excerpts in `Definitions/Def_Compat_Mathlib430.lean` and twenty-two modules
+> that re-prove a Mathlib lemma in place). The web pages bundle KaTeX and Graphviz (compiled to WebAssembly) under their
+> own licences, listed in `html/assets/vendor/LICENSES.txt`. Lean and the packages in `lake-manifest.json` are fetched
+> at build time, not distributed here. If you recognise unattributed material, the omission is unintentional.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/danielblnc/DLSS-NR-on-AMD)
+[GitHub](https://github.com/anthropics/fermats-last-theorem)
 
 ## 相關收錄
 
@@ -232,7 +239,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "danielblnc--DLSS-NR-on-AMD"
+> WHERE category = "Other" AND file.name != "anthropics--fermats-last-theorem"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -241,7 +248,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "danielblnc--DLSS-NR-on-AMD" AND status != "archived"
+> WHERE language = "Lean" AND file.name != "anthropics--fermats-last-theorem" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -250,18 +257,18 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "danielblnc--DLSS-NR-on-AMD"
+> WHERE week = "2026-W37" AND file.name != "anthropics--fermats-last-theorem"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/anthropics--fermats-last-theorem");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "danielblnc--DLSS-NR-on-AMD" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "anthropics--fermats-last-theorem" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -277,7 +284,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "danielblnc" AND file.name != "danielblnc--DLSS-NR-on-AMD"
+> WHERE owner = "anthropics" AND file.name != "anthropics--fermats-last-theorem"
 > SORT stars DESC
 > ```
 
@@ -285,7 +292,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/anthropics--fermats-last-theorem");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -302,7 +309,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/anthropics--fermats-last-theorem");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -335,7 +342,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/anthropics--fermats-last-theorem");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -359,7 +366,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/anthropics--fermats-last-theorem");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -396,7 +403,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/anthropics--fermats-last-theorem");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -479,7 +486,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-05** — 首次收錄
+> **2026-09-06** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -495,5 +502,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-06|2026-09-06]] — 再次上榜，671 stars
-- [[2026-09-05|2026-09-05]] — 首次收錄，497 stars
+- [[2026-09-06|2026-09-06]] — 首次收錄，722 stars

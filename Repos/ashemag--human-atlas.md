@@ -1,63 +1,63 @@
 ---
-repo: danielblnc/DLSS-NR-on-AMD
-url: https://github.com/danielblnc/DLSS-NR-on-AMD
-owner: danielblnc
+repo: ashemag/human-atlas
+url: https://github.com/ashemag/human-atlas
+owner: ashemag
 owner_type: User
-language: N/A
-license: N/A
-description: "Run DLSS 5 Neural Rendering on your AMD GPU. Magic!"
-homepage: ""
-stars: 671
-stars_per_day: 224
-forks: 27
-open_issues: 72
-created: 2026-09-03
+language: TypeScript
+license: MIT
+description: "Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, and exploded views."
+homepage: "https://human-atlas-seven.vercel.app"
+stars: 559
+stars_per_day: 559
+forks: 165
+open_issues: 1
+created: 2026-09-05
 pushed_at: 2026-09-05
-first_seen: 2026-09-05
-week: "2026-W36"
+first_seen: 2026-09-06
+week: "2026-W37"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v0.2.11"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-05
+last_reviewed: 2026-09-06
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-09"
-contributor_count: 0
-engagement: "low"
-issue_close_rate: 4
-repo_size_kb: 2
-readme_length: 2426
-bus_factor: 0
-last_release_days: 0
-release_cadence: "weekly"
+contributor_count: 1
+engagement: "medium"
+issue_close_rate: 0
+repo_size_kb: 111330
+readme_length: 3740
+bus_factor: 1
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-05"
-star_history: "2026-09-05:497,2026-09-06:671"
+ring_history: "assess@2026-09-06"
+star_history: "2026-09-06:559"
 tags:
   - github
   - "category/other"
-  - "lang/other"
+  - "lang/typescript"
 aliases:
-  - "DLSS-NR-on-AMD"
-  - "danielblnc/DLSS-NR-on-AMD"
+  - "human-atlas"
+  - "ashemag/human-atlas"
 ---
 
-# DLSS-NR-on-AMD
+# human-atlas
 
-**497** stars · **249** stars/天 · 建立 2 天前 · N/A · 未標註授權
+**559** stars · **559** stars/天 · 建立 1 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+const me = dv.page("Repos/ashemag--human-atlas");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v0.2.11`
+`個人專案`
 
 > [!summary] 一句話摘要
-> Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
+> Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, and exploded views.
 
 ## 專案簡介
 
-Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
+Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, and exploded views.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/ashemag--human-atlas");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/ashemag--human-atlas");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,89 +142,110 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 20 |
-| Open Issues | 53 |
-| Issue 解決率 | 4% (2 closed) |
+| Forks | 165 |
+| Open Issues | 1 |
+| Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-09-05 |
-| 建立日期 | 2026-09-03 |
-| Repo 大小 | 2 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/danielblnc/DLSS-NR-on-AMD) |
+| 建立日期 | 2026-09-05 |
+| 官方網站 | [Link](https://human-atlas-seven.vercel.app) |
+| Repo 大小 | 108.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/ashemag/human-atlas) |
 
-**最新版本**：v0.2.11 — Alpha 0.2.11 (2026-09-05)
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@base-ui/react` `@shadcn/react` `@types/three` `class-variance-authority` `clsx` `cmdk` `date-fns` `embla-carousel-react` `input-otp` `lucide-react` `react` `react-day-picker` `react-dom` `react-resizable-panels` `react-server-dom-webpack`
 
-> [!info]- Release Notes
-> - Additional 2% performance increase over v0.2.10
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "TypeScript" : 96
+>     "JavaScript" : 3
+>     "Python" : 1
+> ```
+
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@ashemag](https://github.com/ashemag) | 6 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-03 ~ 2026-09-05）
-> **活躍天數** 2 天 · **最新 commit** Updated README
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#12](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/12) | Closed source? | 24 | 4 |
-> | [#4](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/4) | Post Source code | 20 | 4 |
-> | [#3](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/3) | RX 9070 XT performance findings / possible RDNA4 optimizatio | 11 | 0 |
-> | [#27](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/27) | And the source code where is it? | 10 | 0 |
-> | [#17](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/17) | working with optiscaler?  | 6 | 0 |
+> [!abstract] 最近 10 次 commit（2026-09-05 ~ 2026-09-05）
+> **活躍天數** 1 天 · **最新 commit** Improve phone layouts and anatomy inspection
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # DLSS-NR on AMD
+> # Human Atlas
 > 
-> Run **DLSS 5 Neural Rendering** on **AMD Radeon RX 9000 (RDNA4) and 7000 (RDNA3)** cards, in any DirectX 12 game that uses FSR.
+> An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Take the BodyParts3D adult male reference apart into **2,234 individually selectable meshes**, explore **15 anatomical systems**, and search **3,432 named concepts**.
 > 
-> ## Download
+> **[Explore the live demo](https://human-atlas-seven.vercel.app)**
 > 
-> Get `dlssnr_on_amd_setup.exe` from the [latest release](../../releases/latest).
+> ## Explore
 > 
-> ## Install
+> - Orbit, zoom, and select structures directly on the body.
+> - Toggle individual systems or use skeleton and organ presets.
+> - Move from assembled anatomy to a spaced inventory of every visible piece.
+> - Search anatomical names and source identifiers.
+> - Isolate a selected structure and read its details.
+> - Use compact controls and detail panels on mobile.
 > 
-> 1. Place `dlssnr_on_amd_setup.exe` in the game exe folder, for Cyberpunk 2077 that is `bin\x64`.
-> 2. Get a copy of `nvngx_dlssnr.dll` (DLSS 5 Neural Rendering, build 310.8.0.0, you can get it from games that support DLSS 5) and place it in the same folder.
-> 3. Run `dlssnr_on_amd_setup.exe` and follow the instructions.
-> 4. Start the game and **enable FSR** (any FSR 3 / FSR 4 works, any quality / FSRAA). Press **End** to open the overlay.
+> ## Run locally
 > 
-> Run `dlssnr_on_amd_setup.exe` again to **update** (U) or **remove** (R).
+> Requires Node.js 22.13 or newer. No API keys or accounts are needed.
 > 
-> ## What to expect
+> ```sh
+> npm ci
+> npm run dev
+> ```
 > 
-> Output quality is very similar to what DLSS produces on the original hardware, though there are still some effects that may not be working 100%.
+> Open http://localhost:3016. To build the static site, run `npm run build`; the output is in `dist/`.
 > 
-> Performance is still a work in progress: roughly 31 FPS at 1080p on an RX 9070 XT. I'm improving performance every day, goal is to get it to run as fast as a 5070Ti. Check back for new releases.
+> ## Validate
 > 
-> ## In-game overlay
+> ```sh
+> npm run check
+> node scripts/validate-atlas.mjs
+> node scripts/validate-interactions.mjs
+> npm run build
+> ```
 > 
-> End key to open. Up/Down/Left/Right to adjust, Enter toggles.
-> Options: Mode (inline / async, for photo mode only), Tone intensity, Structure intensity, Skin structure. Model selection is planned.
+> Validation covers mesh buffers, names and concept membership, nonoverlapping exploded layouts at desktop and mobile aspect ratios, search and inspection contracts, and tap-versus-drag handling. Browser interaction checks have exercised selection, system controls, search, isolation, rotation, and 390×844, 320×568, and 844×390 layouts. Phone controls stay clear of the exploded inventory, and isolated structures fit the space above or beside the detail panel. Physical-device performance and real multitouch hardware have not been tested.
 > 
-> ## Requirements
+> ## Anatomy data
 > 
-> - Windows 11, DirectX 12 game with FSR. Vulkan is planned for a later release. Tested on Cyberpunk and GTA V Enhanced.
-> - An AMD Radeon RX 9000 series GPU (tested on a 9070 XT). RX 7000 series cards should work, reports are welcome. Older GPUs are not currently supported.
-> - Installed Adrenalin driver 26.1.1 or later
-> - Your own copy of `nvngx_dlssnr.dll` version 310.8.0.0
-> - Games with anti-cheat will block the DLL; use them only with anti-cheat off.
+> The current viewer uses **BodyParts3D 4.0**, an adult male reference anatomy, licensed **CC BY 4.0**. It does not represent every human structure or variation. Individual source meshes are distinct from named concepts, which may group multiple meshes. Descriptions distinguish general system context from individual organ explanations.
 > 
-> ## How can I help?
+> Geometry is simplified for browser performance while retaining every source mesh. The packaged model contains 2,288,268 triangles and downloads approximately 33 MB of compressed geometry. Full credits, source links, and adaptation details are in [ATTRIBUTION.md](public/ATTRIBUTION.md).
 > 
-> Two ways:
-> - Donate. Tokens are expensive, and GPUs to test my mods on are even more expensive. Donate here: [ko-fi.com/danielblnc](https://ko-fi.com/danielblnc)
-> - Test and report. Try on your 7000 GPU or other games, open an issue and attach `dlssnr_on_amd.log` if you encounter any problems.
+> This is an educational explorer, not a diagnostic or surgical tool.
 > 
-> ## Legal
+> ## How it works
 > 
-> This project is not affiliated with or endorsed by NVIDIA or AMD. DLSS is a trademark of NVIDIA Corporation. The software here contains no NVIDIA code or data; it requires the user's own legitimately obtained copy of the DLSS 5 DLL. Provided as-is, without warranty; use at your own risk.
+> Geometry is merged into batches. Per-structure GPU textures control translation, visibility, and selection, while component geometry supports accurate picking. Exploded layouts pack only the visible pieces. Rendering updates when the scene changes; orbit controls remain responsive without thousands of separate draw calls.
+> 
+> The optional WebMCP tools expose anatomy search and inspection in compatible browsers. The visible interface works without them.
+> 
+> ## Rebuilding geometry
+> 
+> The repository includes browser-ready geometry. Rebuilding it is optional: obtain the official BodyParts3D OBJ archive and English metadata tables, prepare the joined concepts and display-system mappings, run `scripts/convert-anatomy.py`, then `node scripts/optimize-anatomy.mjs` and `node scripts/compress-models.mjs`. Simplification uses a 0.2% relative error limit per structure.
+> 
+> ## Deploy
+> 
+> Import this repository into Vercel as a Vite project. The included `vercel.json` configures `npm ci`, `npm run build`, and the `dist` output directory. It can also be served by a static host.
+> 
+> ## License
+> 
+> Original application code is released under the [MIT License](LICENSE). **The anatomy data has its own CC BY 4.0 license**; preserve the attribution when redistributing it. Third-party dependencies retain their respective licenses.
+> 
+> Issues and pull requests are welcome. Please include reproduction steps and browser/device details for interaction problems.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/danielblnc/DLSS-NR-on-AMD)
+[GitHub](https://github.com/ashemag/human-atlas) · [官方網站](https://human-atlas-seven.vercel.app)
 
 ## 相關收錄
 
@@ -232,7 +253,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "danielblnc--DLSS-NR-on-AMD"
+> WHERE category = "Other" AND file.name != "ashemag--human-atlas"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -241,7 +262,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "danielblnc--DLSS-NR-on-AMD" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "ashemag--human-atlas" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -250,18 +271,18 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "danielblnc--DLSS-NR-on-AMD"
+> WHERE week = "2026-W37" AND file.name != "ashemag--human-atlas"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/ashemag--human-atlas");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "danielblnc--DLSS-NR-on-AMD" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "ashemag--human-atlas" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -277,7 +298,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "danielblnc" AND file.name != "danielblnc--DLSS-NR-on-AMD"
+> WHERE owner = "ashemag" AND file.name != "ashemag--human-atlas"
 > SORT stars DESC
 > ```
 
@@ -285,7 +306,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/ashemag--human-atlas");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -302,7 +323,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/ashemag--human-atlas");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -335,7 +356,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/ashemag--human-atlas");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -359,7 +380,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/ashemag--human-atlas");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -396,7 +417,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/ashemag--human-atlas");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -479,7 +500,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-05** — 首次收錄
+> **2026-09-06** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -495,5 +516,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-06|2026-09-06]] — 再次上榜，671 stars
-- [[2026-09-05|2026-09-05]] — 首次收錄，497 stars
+- [[2026-09-06|2026-09-06]] — 首次收錄，559 stars

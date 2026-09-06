@@ -1,63 +1,63 @@
 ---
-repo: danielblnc/DLSS-NR-on-AMD
-url: https://github.com/danielblnc/DLSS-NR-on-AMD
-owner: danielblnc
+repo: yczz/oc-english
+url: https://github.com/yczz/oc-english
+owner: yczz
 owner_type: User
-language: N/A
+language: JavaScript
 license: N/A
-description: "Run DLSS 5 Neural Rendering on your AMD GPU. Magic!"
+description: "养成类游戏英语学习"
 homepage: ""
-stars: 671
-stars_per_day: 224
-forks: 27
-open_issues: 72
-created: 2026-09-03
+stars: 823
+stars_per_day: 206
+forks: 9
+open_issues: 0
+created: 2026-09-01
 pushed_at: 2026-09-05
-first_seen: 2026-09-05
-week: "2026-W36"
+first_seen: 2026-09-06
+week: "2026-W37"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v0.2.11"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-05
+last_reviewed: 2026-09-06
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-09"
-contributor_count: 0
+contributor_count: 1
 engagement: "low"
-issue_close_rate: 4
-repo_size_kb: 2
-readme_length: 2426
-bus_factor: 0
-last_release_days: 0
-release_cadence: "weekly"
+issue_close_rate: -1
+repo_size_kb: 6645
+readme_length: 4157
+bus_factor: 1
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-05"
-star_history: "2026-09-05:497,2026-09-06:671"
+ring_history: "assess@2026-09-06"
+star_history: "2026-09-06:823"
 tags:
   - github
   - "category/other"
-  - "lang/other"
+  - "lang/javascript"
 aliases:
-  - "DLSS-NR-on-AMD"
-  - "danielblnc/DLSS-NR-on-AMD"
+  - "oc-english"
+  - "yczz/oc-english"
 ---
 
-# DLSS-NR-on-AMD
+# oc-english
 
-**497** stars · **249** stars/天 · 建立 2 天前 · N/A · 未標註授權
+**823** stars · **206** stars/天 · 建立 4 天前 · JavaScript · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+const me = dv.page("Repos/yczz--oc-english");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v0.2.11`
+`個人專案`
 
 > [!summary] 一句話摘要
-> Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
+> 养成类游戏英语学习
 
 ## 專案簡介
 
-Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
+养成类游戏英语学习
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/yczz--oc-english");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/yczz--oc-english");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,89 +142,229 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 20 |
-| Open Issues | 53 |
-| Issue 解決率 | 4% (2 closed) |
+| Forks | 9 |
+| Open Issues | 0 |
 | 最後推送 | 2026-09-05 |
-| 建立日期 | 2026-09-03 |
-| Repo 大小 | 2 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/danielblnc/DLSS-NR-on-AMD) |
+| 建立日期 | 2026-09-01 |
+| Repo 大小 | 6.5 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/yczz/oc-english) |
 
-**最新版本**：v0.2.11 — Alpha 0.2.11 (2026-09-05)
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@tauri-apps/cli` `jsdom` `puppeteer-core`
 
-> [!info]- Release Notes
-> - Additional 2% performance increase over v0.2.10
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "JavaScript" : 65
+>     "Rust" : 26
+>     "CSS" : 6
+>     "HTML" : 3
+> ```
+
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@yczz](https://github.com/yczz) | 5 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-03 ~ 2026-09-05）
-> **活躍天數** 2 天 · **最新 commit** Updated README
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#12](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/12) | Closed source? | 24 | 4 |
-> | [#4](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/4) | Post Source code | 20 | 4 |
-> | [#3](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/3) | RX 9070 XT performance findings / possible RDNA4 optimizatio | 11 | 0 |
-> | [#27](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/27) | And the source code where is it? | 10 | 0 |
-> | [#17](https://github.com/danielblnc/DLSS-NR-on-AMD/issues/17) | working with optiscaler?  | 6 | 0 |
+> [!abstract] 最近 10 次 commit（2026-09-01 ~ 2026-09-05）
+> **活躍天數** 3 天 · **最新 commit** init
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # DLSS-NR on AMD
+> # 带着OC学英语
 > 
-> Run **DLSS 5 Neural Rendering** on **AMD Radeon RX 9000 (RDNA4) and 7000 (RDNA3)** cards, in any DirectX 12 game that uses FSR.
+> > 创建一只属于你的 Q 版 OC，给它捏脸、换装、布置小家——而赚积分的唯一方式，是**认真学英语**。
 > 
-> ## Download
+> **Tauri 2.0 桌面应用** · Rust 后端 + Vanilla JS 前端 · SVG 矢量 Q 版角色 · PixiJS 等距 2.5D 房间 · macOS
 > 
-> Get `dlssnr_on_amd_setup.exe` from the [latest release](../../releases/latest).
+> ---
 > 
-> ## Install
+> ## 📸 界面一览
 > 
-> 1. Place `dlssnr_on_amd_setup.exe` in the game exe folder, for Cyberpunk 2077 that is `bin\x64`.
-> 2. Get a copy of `nvngx_dlssnr.dll` (DLSS 5 Neural Rendering, build 310.8.0.0, you can get it from games that support DLSS 5) and place it in the same folder.
-> 3. Run `dlssnr_on_amd_setup.exe` and follow the instructions.
-> 4. Start the game and **enable FSR** (any FSR 3 / FSR 4 works, any quality / FSRAA). Press **End** to open the overlay.
+> | 注册档案 | 捏脸工坊 |
+> | :---: | :---: |
+> |  |  |
 > 
-> Run `dlssnr_on_amd_setup.exe` again to **update** (U) or **remove** (R).
+> | 衣橱换装（一键同款蝴蝶少女） | 2.5D 小家 |
+> | :---: | :---: |
+> |  |  |
 > 
-> ## What to expect
+> | 商店 | 学习中心（13 册教材） |
+> | :---: | :---: |
+> |  |  |
 > 
-> Output quality is very similar to what DLSS produces on the original hardware, though there are still some effects that may not be working 100%.
+> | 跟练（四选一 + 听力） | 单元考成绩单 |
+> | :---: | :---: |
+> |  |  |
 > 
-> Performance is still a work in progress: roughly 31 FPS at 1080p on an RX 9070 XT. I'm improving performance every day, goal is to get it to run as fast as a 5070Ti. Check back for new releases.
+> > 截图由 `npm run screenshots` 自动生成（无头 Chrome + 契约级后端 mock 跑真实前端）。
 > 
-> ## In-game overlay
+> ---
 > 
-> End key to open. Up/Down/Left/Right to adjust, Enter toggles.
-> Options: Mode (inline / async, for photo mode only), Tone intensity, Structure intensity, Skin structure. Model selection is planned.
+> ## 🎮 游戏介绍
 > 
-> ## Requirements
+> ### 🧒 创建你的 OC（免费 · 不限数量）
 > 
-> - Windows 11, DirectX 12 game with FSR. Vulkan is planned for a later release. Tested on Cyberpunk and GTA V Enhanced.
-> - An AMD Radeon RX 9000 series GPU (tested on a 9070 XT). RX 7000 series cards should work, reports are welcome. Older GPUs are not currently supported.
-> - Installed Adrenalin driver 26.1.1 or later
-> - Your own copy of `nvngx_dlssnr.dll` version 310.8.0.0
-> - Games with anti-cheat will block the DLL; use them only with anti-cheat off.
+> 起个名字就能迎接一只空白小人。可以创建多只 OC，每只都有独立的脸蛋、衣柜和小家，随时在人物栏一键切换。
 > 
-> ## How can I help?
+> ### 🎨 捏脸 + 换装
 > 
-> Two ways:
-> - Donate. Tokens are expensive, and GPUs to test my mods on are even more expensive. Donate here: [ko-fi.com/danielblnc](https://ko-fi.com/danielblnc)
-> - Test and report. Try on your 7000 GPU or other games, open an issue and attach `dlssnr_on_amd.log` if you encounter any problems.
+> - **捏脸全免费**：肤色 4 档、眼型 6 款（圆溜溜 / 害羞粉桃眼 / 弯弯笑眼…）、瞳色 6 色、发型 8 款、发色 8 色、嘴巴 5 款 +「不画嘴」、腮红开关
+> - **9 部位换装系统**：帽子 / 眼镜 / 上衣 / 下装 / 鞋子 / 手持 / 背饰 / 耳饰，共 **50 件装扮**
+> - **一键同款**：内置「🦋 蝴蝶少女」预设——姬式长直发 + 粉桃眼 + 绿色羽织队服 + 蝴蝶翅膀 + 黑鞘短刀 + 玉耳坠，已拥有的部件一键上身，缺的会提示去商店补
+> - 角色为纯 SVG 矢量绘制，任意缩放不糊；素体严格按参考模板实现
 > 
-> ## Legal
+> ### 🏠 2.5D 温馨小家
 > 
-> This project is not affiliated with or endorsed by NVIDIA or AMD. DLSS is a trademark of NVIDIA Corporation. The software here contains no NVIDIA code or data; it requires the user's own legitimately obtained copy of the DLSS 5 DLL. Provided as-is, without warranty; use at your own risk.
+> - 等距 2.5D 视角：左墙 + 后墙（带窗户挂画）+ 菱形地砖，家具有贴地投影和立体层次
+> - **18 件家具**：三张床、书桌、书架、沙发、电视、钢琴、地毯、猫窝（里面睡着一只猫）…
+> - 布置模式下拖动家具自由摆放，自动吸附网格；放不下会回弹；右键收进收纳箱
+> 
+> ### 📖 学英语（人教版同步）
+> 
+> - **13 册教材**：人教版小学英语三年级上~六年级下（8 册）+ 初中七年级上~九年级（5 册），单元与课本同步
+> - **语法卡**：每册配套语法讲解，学习前先翻卡
+> - **跟练**：每个单词两张卡——词义四选一 + 🔊 听力辨词，答对即学会
+> - **单元考**：跟练全部完成后解锁，15 题（8 词义 + 4 听力 + 3 语法），**≥12 题通过**
+> - 答题带朗读（系统 TTS），错题附解析
+> 
+> ### ⭐ 积分经济
+> 
+> 积分是唯一的货币，**只能靠学习赚取**，用来买装扮和家具装扮 OC 与小家。
+> 
+> | 事件 | 积分 |
+> | --- | ---: |
+> | 🎁 新手礼包 | +200 |
+> | 🎵 跟练答对一张卡 | +2 |
+> | 🏆 单元考首次通过 | +100 |
+> | 📈 再次通过且刷新最佳 | 每多对 1 题 +10 |
+> 
+> ---
+> 
+> ## 🛠️ 技术栈
+> 
+> | 层 | 技术 |
+> | --- | --- |
+> | 壳 | Tauri 2.0（Rust），包体 ~10MB |
+> | 后端 | Rust：存档/商店/题库/出题/考试判分全部在 Rust 侧，数据编译进二进制 |
+> | 前端 | Vanilla JS（ES Modules，零框架零打包器） |
+> | 角色 | SVG 矢量分层组装（素体 → 装扮 9 层 → 五官 → 发型） |
+> | 房间 | PixiJS（WebGL）等距 2.5D 场景，SVG → 纹理 |
+> | 存档 | JSON，位于系统应用支持目录 |
+> 
+> ## 📁 目录结构
+> 
+> ```
+> ├── src/                    # 前端（Vanilla JS）
+> │   ├── index.html          # 单页界面（注册/主界面/学习中心 + 7 个弹窗）
+> │   ├── main.js             # 交互逻辑（捏脸/衣橱/预设/商店/房间/跟练/考试）
+> │   ├── styles.css          # 暖色卡通主题
+> │   ├── lib/pixi.min.js     # PixiJS（本地 UMD）
+> │   └── js/
+> │       ├── api.js          #   Tauri invoke 封装
+> │       ├── character.js    #   素体 + 五官/发型/装扮分层渲染器
+> │       ├── wardrobe.js     #   50 件装扮 SVG 素材（9 部位）
+> │       ├── furniture.js    #   18 件家具 SVG 素材
+> │       ├── room.js         #   等距 2.5D 房间（Pixi，拖拽/吸附/深度排序）
+> │       └── tts.js          #   单词朗读
+> ├── src-tauri/              # Rust 后端
+> │   ├── src/
+> │   │   ├── models.rs       #   存档数据结构（档案/人物/脸型/装扮/进度）
+> │   │   ├── commands.rs     #   Tauri 指令（注册/创建/换装/购买/摆放…）
+> │   │   ├── content.rs      #   13 册教材 + 语法卡加载
+> │   │   ├── questions.rs    #   跟练卡与 15 题考卷生成、判分
+> │   │   └── shop.rs         #   商店目录（50 装扮 + 18 家具）
+> │   └── data/               # books/（13 册 JSON）+ wardrobe/furniture/grammar
+> ├── test/                   # 冒烟测试（jsdom 全流程 / 渲染 / 契约）
+> ├── scripts/screenshots.mjs # README 截图自动生成
+> └── docs/DESIGN.md          # 设计稿
+> ```
+> 
+> 存档位置：`~/Library/Application Support/com.zhengzhong.oc-english/player.json`
+> 
+> ---
+> 
+> ## 💻 安装步骤
+> 
+> ### 1. 环境要求（macOS）
+> 
+> | 依赖 | 版本 | 安装 |
+> | --- | --- | --- |
+> | Xcode Command Line Tools | — | `xcode-select --install` |
+> | Rust | stable | `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs \| sh` |
+> | Node.js | ≥ 22 | 官网下载或 `brew install node` |
+> 
+> ### 2. 获取代码并安装依赖
+> 
+> ```bash
+> git clone  OC学英语
+> cd OC学英语
+> npm install          # 仅两个开发依赖：@tauri-apps/cli、jsdom（npm 建议配国内镜像）
+> ```
+> 
+> ### 3. 开发模式运行（日常迭代推荐）
+> 
+> ```bash
+> npm run tauri dev
+> ```
+> 
+> 首次会编译 Rust 依赖（几分钟），之后热更新秒级生效。
+> 
+> ### 4. 打包成正式 App
+> 
+> ```bash
+> npm run tauri build
+> ```
+> 
+> 产物：
+> 
+> ```
+> src-tauri/target/release/bundle/macos/带着OC学英语.app   ← 双击即用
+> src-tauri/target/release/bundle/dmg/带着OC学英语_0.1.0_aarch64.dmg
+> ```
+> 
+> > ⚠️ 未做 Apple 签名公证，首次打开若被 Gatekeeper 拦截：**右键 → 打开**，或执行
+> > `xattr -cr 带着OC学英语.app`
+> 
+> ---
+> 
+> ## ✅ 测试
+> 
+> ```bash
+> npm test
+> ```
+> 
+> | 套件 | 覆盖 |
+> | --- | --- |
+> | `test:rust` | Rust 单测 + 全流程集成（注册→学习→考试→购买） |
+> | `test:contract` | 前端 api.js 与 Rust 指令契约对齐 |
+> | `test:render` | 50 装扮 + 18 家具素材完整性、SVG 合法性（xmllint） |
+> | `test:ui` | jsdom 全流程冒烟：注册→捏脸→商店→换装→房间→跟练→考试→登出 |
+> 
+> README 截图再生成：`npm run screenshots`（需要本机装有 Google Chrome）。
+> 
+> ---
+> 
+> ## 🗺️ 路线图
+> 
+> - [x] M1 SVG 矢量角色渲染器 + 分层装扮系统
+> - [x] M2 Rust 数据层（多档案多 OC 存档）+ 可打包桌面应用
+> - [x] M3 13 册人教版教材 + 语法卡 + 跟练/单元考 + 积分商店
+> - [x] M4 素体按参考模板重制 + 50 件装扮精致化 + 蝴蝶少女一键同款
+> - [x] M5 等距 2.5D 房间 + 家具质感升级
+> - [ ] M6 iOS 手机版（Tauri 2 移动端，进行中）
+> - [ ] M7 安卓手机版
+> - [ ] M8 豆豆助手聊天 / 好友串门
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/danielblnc/DLSS-NR-on-AMD)
+[GitHub](https://github.com/yczz/oc-english)
 
 ## 相關收錄
 
@@ -232,7 +372,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "danielblnc--DLSS-NR-on-AMD"
+> WHERE category = "Other" AND file.name != "yczz--oc-english"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -241,7 +381,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "N/A" AND file.name != "danielblnc--DLSS-NR-on-AMD" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "yczz--oc-english" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -250,18 +390,18 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W36" AND file.name != "danielblnc--DLSS-NR-on-AMD"
+> WHERE week = "2026-W37" AND file.name != "yczz--oc-english"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/yczz--oc-english");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "danielblnc--DLSS-NR-on-AMD" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "yczz--oc-english" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -277,7 +417,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "danielblnc" AND file.name != "danielblnc--DLSS-NR-on-AMD"
+> WHERE owner = "yczz" AND file.name != "yczz--oc-english"
 > SORT stars DESC
 > ```
 
@@ -285,7 +425,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/yczz--oc-english");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -302,7 +442,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/yczz--oc-english");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -335,7 +475,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/yczz--oc-english");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -359,7 +499,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/yczz--oc-english");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -396,7 +536,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/danielblnc--DLSS-NR-on-AMD");
+> const me = dv.page("Repos/yczz--oc-english");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -479,7 +619,7 @@ Run DLSS 5 Neural Rendering on your AMD GPU. Magic!
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-05** — 首次收錄
+> **2026-09-06** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -495,5 +635,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-06|2026-09-06]] — 再次上榜，671 stars
-- [[2026-09-05|2026-09-05]] — 首次收錄，497 stars
+- [[2026-09-06|2026-09-06]] — 首次收錄，823 stars

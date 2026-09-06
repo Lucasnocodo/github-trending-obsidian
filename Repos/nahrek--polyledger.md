@@ -7,8 +7,8 @@ language: Python
 license: MIT
 description: "Resumable Polymarket indexer: CLOB market metadata plus on-chain trades from Polygon, in one DuckDB file you can query with SQL"
 homepage: ""
-stars: 614
-stars_per_day: 307
+stars: 620
+stars_per_day: 207
 forks: 109
 open_issues: 0
 created: 2026-09-02
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-08"
+appearances: 2
+next_review: "2026-09-09"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-05"
-star_history: "2026-09-05:614"
+star_history: "2026-09-05:614,2026-09-06:620"
 tags:
   - github
   - "category/other"
@@ -630,4 +630,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-06|2026-09-06]] — 再次上榜，620 stars
 - [[2026-09-05|2026-09-05]] — 首次收錄，614 stars
