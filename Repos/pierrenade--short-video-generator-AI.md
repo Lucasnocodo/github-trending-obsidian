@@ -1,19 +1,19 @@
 ---
-repo: ashemag/human-atlas
-url: https://github.com/ashemag/human-atlas
-owner: ashemag
+repo: pierrenade/short-video-generator-AI
+url: https://github.com/pierrenade/short-video-generator-AI
+owner: pierrenade
 owner_type: User
-language: TypeScript
+language: Python
 license: MIT
-description: "Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, and exploded views."
-homepage: "https://human-atlas-seven.vercel.app"
-stars: 1488
-stars_per_day: 744
-forks: 390
-open_issues: 11
+description: "Free open-source project designed for turning youtube-viedos into viral short videos. Highlight detection, subtitles, translation, voiceover, all in one for your content."
+homepage: ""
+stars: 1019
+stars_per_day: 1019
+forks: 155
+open_issues: 2
 created: 2026-09-05
-pushed_at: 2026-09-06
-first_seen: 2026-09-06
+pushed_at: 2026-09-05
+first_seen: 2026-09-07
 week: "2026-W37"
 month: "2026-09"
 category: "Other"
@@ -25,39 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-06
+last_reviewed: 2026-09-07
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-10"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 111330
-readme_length: 3740
+repo_size_kb: 809
+readme_length: 4910
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-06"
-star_history: "2026-09-06:559,2026-09-07:1488"
+ring_history: "assess@2026-09-07"
+star_history: "2026-09-07:1019"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/python"
+  - "topic/ai"
+  - "topic/ai_video"
+  - "topic/python"
+  - "topic/short_video_maker"
+  - "topic/video_generation"
 aliases:
-  - "human-atlas"
-  - "ashemag/human-atlas"
+  - "short-video-generator-AI"
+  - "pierrenade/short-video-generator-AI"
 ---
 
-# human-atlas
+# short-video-generator-AI
 
-**559** stars · **559** stars/天 · 建立 1 天前 · TypeScript · MIT
+**1.0k** stars · **1.0k** stars/天 · 建立 1 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/ashemag--human-atlas");
+const me = dv.page("Repos/pierrenade--short-video-generator-AI");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -72,18 +77,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 `個人專案`
 
+`ai` `ai-video` `python` `short-video-maker` `video-generation`
+
 > [!summary] 一句話摘要
-> Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, and exploded views.
+> Free open-source project designed for turning youtube-viedos into viral short videos. Highlight detection, subtitles, translation, voiceover, all in one for your content.
 
 ## 專案簡介
 
-Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, and exploded views.
+Free open-source project designed for turning youtube-viedos into viral short videos. Highlight detection, subtitles, translation, voiceover, all in one for your content.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/pierrenade--short-video-generator-AI");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/pierrenade--short-video-generator-AI");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,110 +149,210 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 165 |
-| Open Issues | 1 |
+| Forks | 155 |
+| Open Issues | 2 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-09-05 |
 | 建立日期 | 2026-09-05 |
-| 官方網站 | [Link](https://human-atlas-seven.vercel.app) |
-| Repo 大小 | 108.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/ashemag/human-atlas) |
+| Repo 大小 | 809 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/pierrenade/short-video-generator-AI) |
+| Topics | `ai` `ai-video` `python` `short-video-maker` `video-generation` |
 
 > [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@base-ui/react` `@shadcn/react` `@types/three` `class-variance-authority` `clsx` `cmdk` `date-fns` `embla-carousel-react` `input-otp` `lucide-react` `react` `react-day-picker` `react-dom` `react-resizable-panels` `react-server-dom-webpack`
+> `requirements.txt` 中的核心套件：
+> `yt-dlp` `faster-whisper` `opencv-python` `numpy` `ffmpeg-python` `requests` `python-dotenv` `tqdm` `openai` `google-generativeai` `fastapi` `uvicorn` `rich`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 96
->     "JavaScript" : 3
->     "Python" : 1
+>     "Python" : 89
+>     "HTML" : 11
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@ashemag](https://github.com/ashemag) | 6 |
+> | [@pierrenade](https://github.com/pierrenade) | 12 |
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-09-05 ~ 2026-09-05）
-> **活躍天數** 1 天 · **最新 commit** Improve phone layouts and anatomy inspection
+> **活躍天數** 1 天 · **最新 commit** Update README.md
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#2](https://github.com/pierrenade/short-video-generator-AI/issues/2) | Looks Shady Guys | 0 | 0 |
+> | [#1](https://github.com/pierrenade/short-video-generator-AI/issues/1) | What is manual_mapper.py? | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Human Atlas
+> # AI shorts generator
 > 
-> An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Take the BodyParts3D adult male reference apart into **2,234 individually selectable meshes**, explore **15 anatomical systems**, and search **3,432 named concepts**.
+>   
 > 
-> **[Explore the live demo](https://human-atlas-seven.vercel.app)**
+> A free open-source project designed to turn youtube-videos into viral short videos. Highlight detection, subtitles, translation, voiceover, all in one for your content: no pre-clip credits or any watermarks. Designed for creators who want an alternative to short-video SaaS tools like OpusClip or Vidyo.ai for free. 
 > 
-> ## Explore
+> ## Examples of a  processed video
 > 
-> - Orbit, zoom, and select structures directly on the body.
-> - Toggle individual systems or use skeleton and organ presets.
-> - Move from assembled anatomy to a spaced inventory of every visible piece.
-> - Search anatomical names and source identifiers.
-> - Isolate a selected structure and read its details.
-> - Use compact controls and detail panels on mobile.
+>   
+>     
+>       
+>       "The Speech that Made Obama President"
+>     
+>     
+>       
+>       "How Tom Overcame Social Anxiety - The Mindset That Changed Everything"
+>     
+>     
+>       
+>       "How to stay calm when you know you'll be stressed | Daniel Levitin | TED"
+>     
+>   
 > 
-> ## Run locally
+> # Features 🪁
+> - **API**: Freely use this generator in your own projects via our API.
+> - **Convenient**: Paste a YouTube link (any length!) and get a ready-to-post 9:16 short.
+> - **Hooks option**: When enabled, adds a context-aware AI-generated hook at the start of the clip
+> - **Web version**: Besides the CLI, you can also generate videos on a local website
+> - **Smart Highlight Selection**: Finds the most viral, hot moments from your video automatically based on algorithm
 > 
-> Requires Node.js 22.13 or newer. No API keys or accounts are needed.
+> ## How It Works
 > 
-> ```sh
-> npm ci
-> npm run dev
+> 1. **Download**: Fetches the source video from YouTube, or uses the local file path directly
+> 2. **Transcribe**: `faster-whisper` produces a timestamped transcript locally — same step regardless of which `LLM_PROVIDER` is selected
+> 3. **Detect content type**: The chosen LLM classifies the video (podcast, interview, tutorial, vlog, etc.) and pacing, so the highlight prompt can be tuned per content style
+> 4. **Highlight ranking**: The chosen LLM (`openai` / `gemini` / `muapi`) scans the transcript through a virality framework — hook moments, emotional peaks, opinion bombs, revelations, conflict, quotables, story peaks, practical value — and emits ranked candidates with scores 0–100
+> 5. **Dedupe**: Overlapping candidates are collapsed by score
+> 6. **Top-N selection**: The top `--n` candidates are selected
+> 7. **Auto-crop**: Each highlight is rendered as a vertical short at the requested `--ratio`, with an optional AI-generated hook at the start unless `--no-hook` is set
+> 
+> # Requirements
+> - Python 3.10+
+> - Any LLM API key(OpenAI/Gemini/MuAPI)
+> - `requirements.txt` file dependencies
+> 
+> # Quick start
+> 1. **Clone the repo:**
+> 
+> ```bash
+> git clone https://github.com/pierrenade/short-video-generator-AI.git
+> cd short-video-generator-AI
 > ```
 > 
-> Open http://localhost:3016. To build the static site, run `npm run build`; the output is in `dist/`.
+> 2. **Create and activate a virtual environment:**
 > 
-> ## Validate
-> 
-> ```sh
-> npm run check
-> node scripts/validate-atlas.mjs
-> node scripts/validate-interactions.mjs
-> npm run build
+> **Windows:**
+> ```bash
+> python -m venv venv
+> venv\Scripts\activate
+> ```
+> **Linux/MacOS:**
+> ```bash
+> python -m venv venv
+> venv\Scripts\activate
 > ```
 > 
-> Validation covers mesh buffers, names and concept membership, nonoverlapping exploded layouts at desktop and mobile aspect ratios, search and inspection contracts, and tap-versus-drag handling. Browser interaction checks have exercised selection, system controls, search, isolation, rotation, and 390×844, 320×568, and 844×390 layouts. Phone controls stay clear of the exploded inventory, and isolated structures fit the space above or beside the detail panel. Physical-device performance and real multitouch hardware have not been tested.
+> 3. **Install dependencies**
+> ```bash
+> pip install -r requirements.txt
+> ```
 > 
-> ## Anatomy data
+> 4. **Set up `.env`**
+> ```env
+> # Used LLM provider(openai/gemini/MuAPI)
+> LLM_PROVIDER=openai
 > 
-> The current viewer uses **BodyParts3D 4.0**, an adult male reference anatomy, licensed **CC BY 4.0**. It does not represent every human structure or variation. Individual source meshes are distinct from named concepts, which may group multiple meshes. Descriptions distinguish general system context from individual organ explanations.
+> # Enter the API key for the chosen provider
+> OPENAI_API_KEY=your_openai_key_here
+> OPENAI_MODEL=gpt-4o-mini          # optional
+> GEMINI_API_KEY=your_gemini_key_here
+> GEMINI_MODEL=gemini-2.5-flash      # optional
+> MUAPI_API_KEY=your_muapi_key_here
 > 
-> Geometry is simplified for browser performance while retaining every source mesh. The packaged model contains 2,288,268 triangles and downloads approximately 33 MB of compressed geometry. Full credits, source links, and adaptation details are in [ATTRIBUTION.md](public/ATTRIBUTION.md).
+> # Whisper settings
+> LOCAL_WHISPER_MODEL=base # tiny / base / small / medium / large-v3
+> LOCAL_WHISPER_DEVICE=auto    # auto / cpu / cuda
+> ```
+> If you uncertain about the provider:
+> | Provider | Free tier? | Get key |
+> |---|---|---|
+> | **Gemini** | ✅ Yes, but daily limit | https://aistudio.google.com |
+> | **OpenAI** | ❌ Paid | https://platform.openai.com |
+> | **MuAPI** | ❌ Paid, but pay-per-use, no subscription  | https://muapi.ai |
 > 
-> This is an educational explorer, not a diagnostic or surgical tool.
+> # Usage
+> Basic usage:
 > 
-> ## How it works
+> ```bash
+> python main.py "https://www.youtube.com/watch?v=video_id" 
+> ```
 > 
-> Geometry is merged into batches. Per-structure GPU textures control translation, visibility, and selection, while component geometry supports accurate picking. Exploded layouts pack only the visible pieces. Rendering updates when the scene changes; orbit controls remain responsive without thousands of separate draw calls.
+> Renderred clips are saved to `output` folder
 > 
-> The optional WebMCP tools expose anatomy search and inspection in compatible browsers. The visible interface works without them.
+> With flags:
 > 
-> ## Rebuilding geometry
+> ```bash
+> python main.py "https://www.youtube.com/watch?v=video_id" \
+>       --n 3 \
+>       --ratio 9:16 \
+>       --resolution 1080 \
+>  ```
+>       
+> You can also provide a local video file instead of a YouTube link, for example:
 > 
-> The repository includes browser-ready geometry. Rebuilding it is optional: obtain the official BodyParts3D OBJ archive and English metadata tables, prepare the joined concepts and display-system mappings, run `scripts/convert-anatomy.py`, then `node scripts/optimize-anatomy.mjs` and `node scripts/compress-models.mjs`. Simplification uses a 0.2% relative error limit per structure.
+> ```bash
+> python main.py "/Users/Admin/Folder/video.mp4" \
+>       --n 4 \
+>       --ratio 9:16 \
+>       --resolution 720 \
+>       --language zh \
+> ```
 > 
-> ## Deploy
+> ## CLI Flags
 > 
-> Import this repository into Vercel as a Vite project. The included `vercel.json` configures `npm ci`, `npm run build`, and the `dist` output directory. It can also be served by a static host.
+> | Flag | Default | Notes |
+> |------|---------|-------|
+> | --n | 3 | How many clips to render |
+> | --ratio | 9:16 | Any ratio / 9:16 for short videos / 1:1 for square |
+> | --resolution | 720 | Source video download resolution: `360` / `480` / `720` / `1080` |
+> | --language | auto | Force Whisper language code (e.g. `en`) |
+> | --no-hook | - | Excludes AI generated hook from the start of the  clip |
+> 
+> ## Web version set-up
+> Instead of the CLI, you can use a local web interface to queue multiple videos at once and adjust flags visually. The LLM provider and API keys are still configured in `.env` — the web version only handles video input and render flags.
+> 
+> ```bash
+> python3 server.py
+> ```
+> Serve the frontend:
+> 
+> ```bash
+> cd web
+> python3 -m http.server 8000
+> ```
+> Then, open in your browser:
+> 
+> ```bash
+> http://localhost:8000/shorts-generator-ui.html
+> ```
+> 
+> ## Contributing 
+> 
+> Feel free to open an issue or fork the repository for your projects.
 > 
 > ## License
 > 
-> Original application code is released under the [MIT License](LICENSE). **The anatomy data has its own CC BY 4.0 license**; preserve the attribution when redistributing it. Third-party dependencies retain their respective licenses.
-> 
-> Issues and pull requests are welcome. Please include reproduction steps and browser/device details for interaction problems.
+> This project is licensed under the MIT License.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/ashemag/human-atlas) · [官方網站](https://human-atlas-seven.vercel.app)
+[GitHub](https://github.com/pierrenade/short-video-generator-AI)
 
 ## 相關收錄
 
@@ -253,7 +360,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "ashemag--human-atlas"
+> WHERE category = "Other" AND file.name != "pierrenade--short-video-generator-AI"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -262,7 +369,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "ashemag--human-atlas" AND status != "archived"
+> WHERE language = "Python" AND file.name != "pierrenade--short-video-generator-AI" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -271,18 +378,18 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W37" AND file.name != "ashemag--human-atlas"
+> WHERE week = "2026-W37" AND file.name != "pierrenade--short-video-generator-AI"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/pierrenade--short-video-generator-AI");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "ashemag--human-atlas" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "pierrenade--short-video-generator-AI" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -298,7 +405,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "ashemag" AND file.name != "ashemag--human-atlas"
+> WHERE owner = "pierrenade" AND file.name != "pierrenade--short-video-generator-AI"
 > SORT stars DESC
 > ```
 
@@ -306,7 +413,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/pierrenade--short-video-generator-AI");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -323,7 +430,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/pierrenade--short-video-generator-AI");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -356,7 +463,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/pierrenade--short-video-generator-AI");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -380,7 +487,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/pierrenade--short-video-generator-AI");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -417,7 +524,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/pierrenade--short-video-generator-AI");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -500,7 +607,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-06** — 首次收錄
+> **2026-09-07** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -516,5 +623,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-07|2026-09-07]] — 再次上榜，1.5k stars
-- [[2026-09-06|2026-09-06]] — 首次收錄，559 stars
+- [[2026-09-07|2026-09-07]] — 首次收錄，1.0k stars

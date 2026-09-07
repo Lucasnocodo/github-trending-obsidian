@@ -7,10 +7,10 @@ language: Lean
 license: Apache-2.0
 description: ""
 homepage: ""
-stars: 722
-stars_per_day: 722
-forks: 56
-open_issues: 1
+stars: 863
+stars_per_day: 432
+forks: 72
+open_issues: 3
 created: 2026-09-04
 pushed_at: 2026-09-04
 first_seen: 2026-09-06
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-09"
+appearances: 2
+next_review: "2026-09-10"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-06"
-star_history: "2026-09-06:722"
+star_history: "2026-09-06:722,2026-09-07:863"
 tags:
   - github
   - "category/other"
@@ -502,4 +502,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-07|2026-09-07]] — 再次上榜，863 stars
 - [[2026-09-06|2026-09-06]] — 首次收錄，722 stars

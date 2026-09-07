@@ -1,19 +1,19 @@
 ---
-repo: ashemag/human-atlas
-url: https://github.com/ashemag/human-atlas
-owner: ashemag
+repo: sebbbi/NoGraphicsAPI
+url: https://github.com/sebbbi/NoGraphicsAPI
+owner: sebbbi
 owner_type: User
-language: TypeScript
+language: C++
 license: MIT
-description: "Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, and exploded views."
-homepage: "https://human-atlas-seven.vercel.app"
-stars: 1488
-stars_per_day: 744
-forks: 390
-open_issues: 11
-created: 2026-09-05
+description: "Minimal graphics API. Built on top of latest Vulkan extensions. As close as possibly to my \"No Graphics API\" blog post and the SIGGRAPH talk."
+homepage: ""
+stars: 919
+stars_per_day: 153
+forks: 26
+open_issues: 4
+created: 2026-08-31
 pushed_at: 2026-09-06
-first_seen: 2026-09-06
+first_seen: 2026-09-07
 week: "2026-W37"
 month: "2026-09"
 category: "Other"
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-06
+last_reviewed: 2026-09-07
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-10"
-contributor_count: 1
-engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 111330
-readme_length: 3740
+appearances: 1
+next_review: "2026-09-14"
+contributor_count: 2
+engagement: "low"
+issue_close_rate: 33
+repo_size_kb: 378
+readme_length: 9747
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-06"
-star_history: "2026-09-06:559,2026-09-07:1488"
+ring_history: "assess@2026-09-07"
+star_history: "2026-09-07:919"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/c++"
 aliases:
-  - "human-atlas"
-  - "ashemag/human-atlas"
+  - "NoGraphicsAPI"
+  - "sebbbi/NoGraphicsAPI"
 ---
 
-# human-atlas
+# NoGraphicsAPI
 
-**559** stars · **559** stars/天 · 建立 1 天前 · TypeScript · MIT
+**919** stars · **153** stars/天 · 建立 6 天前 · C++ · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/ashemag--human-atlas");
+const me = dv.page("Repos/sebbbi--NoGraphicsAPI");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
-
 > [!summary] 一句話摘要
-> Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, and exploded views.
+> Minimal graphics API. Built on top of latest Vulkan extensions. As close as possibly to my "No Graphics API" blog post and the SIGGRAPH talk.
 
 ## 專案簡介
 
-Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, and exploded views.
+Minimal graphics API. Built on top of latest Vulkan extensions. As close as possibly to my "No Graphics API" blog post and the SIGGRAPH talk.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/sebbbi--NoGraphicsAPI");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +116,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/sebbbi--NoGraphicsAPI");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,110 +140,222 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 165 |
-| Open Issues | 1 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-05 |
-| 建立日期 | 2026-09-05 |
-| 官方網站 | [Link](https://human-atlas-seven.vercel.app) |
-| Repo 大小 | 108.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/ashemag/human-atlas) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@base-ui/react` `@shadcn/react` `@types/three` `class-variance-authority` `clsx` `cmdk` `date-fns` `embla-carousel-react` `input-otp` `lucide-react` `react` `react-day-picker` `react-dom` `react-resizable-panels` `react-server-dom-webpack`
+| Forks | 26 |
+| Open Issues | 4 |
+| Issue 解決率 | 33% (2 closed) |
+| 最後推送 | 2026-09-06 |
+| 建立日期 | 2026-08-31 |
+| Repo 大小 | 378 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/sebbbi/NoGraphicsAPI) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 96
->     "JavaScript" : 3
->     "Python" : 1
+>     "C++" : 97
+>     "CMake" : 3
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@ashemag](https://github.com/ashemag) | 6 |
+> | [@sebbbi](https://github.com/sebbbi) | 25 |
+> | [@zhedye](https://github.com/zhedye) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-05 ~ 2026-09-05）
-> **活躍天數** 1 天 · **最新 commit** Improve phone layouts and anatomy inspection
+> [!abstract] 最近 10 次 commit（2026-09-05 ~ 2026-09-06）
+> **活躍天數** 2 天 · **最新 commit** Merge remote-tracking branch 'origin/main' into codex/atomic-bump-allocation
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#2](https://github.com/sebbbi/NoGraphicsAPI/issues/2) | some thoughts | 8 | 2 |
+> | [#9](https://github.com/sebbbi/NoGraphicsAPI/issues/9) | Working On Fedora44 / GTX 3060 | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Human Atlas
+> # NoGraphicsAPI
 > 
-> An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Take the BodyParts3D adult male reference apart into **2,234 individually selectable meshes**, explore **15 anatomical systems**, and search **3,432 named concepts**.
+> `NoGraphicsAPI` is an experimental Vulkan 1.4 implementation of the ideas in Sebastian Aaltonen's
+> [*No Graphics API*](https://www.sebastianaaltonen.com/blog/no-graphics-api). It explores how much of
+> a conventional graphics API disappears when shaders use 64-bit GPU pointers, texture and sampler
+> descriptors live in application-owned GPU memory, and synchronization describes hazards instead of
+> resource state.
 > 
-> **[Explore the live demo](https://human-atlas-seven.vercel.app)**
+> The Vulkan backend is implemented and exercised by three example applications. Metal support is not
+> implemented; [the Metal 4 design](docs/metal-porting.md) records the proposed mapping and open issues.
 > 
-> ## Explore
 > 
-> - Orbit, zoom, and select structures directly on the body.
-> - Toggle individual systems or use skeleton and organ presets.
-> - Move from assembled anatomy to a spaced inventory of every visible piece.
-> - Search anatomical names and source identifiers.
-> - Isolate a selected structure and read its details.
-> - Use compact controls and detail panels on mobile.
+> ## How it maps to *No Graphics API*
 > 
-> ## Run locally
+> - **GPU pointers replace buffer objects and bindings.** `create_gpu_heap()` returns a raw allocation
+>   with a GPU address and, for mapped memory, a CPU address. Address-based commands consume
+>   `GpuRange {gpu, size}` directly, and shaders follow typed 64-bit pointers for vertex fetch and
+>   arbitrary data structures.
+> - **Applications own descriptor heaps.** Texture and sampler descriptor heaps are mapped GPU heaps.
+>   The application chooses slots, writes descriptors through the CPU address, binds the GPU range,
+>   and passes 32-bit indices to shaders.
+> - **Root data is one small payload.** A shared C++/Slang structure is copied with
+>   `vkCmdPushDataEXT` for each draw or dispatch. Its pointer fields are GPU addresses. Unlike the
+>   blog's GPU-resident, stage-specific roots, graphics stages share one CPU-supplied root.
+> - **Barriers describe execution and memory hazards.** The public API exposes global stage/access
+>   barriers, not per-resource transition lists. Normal textures remain in one unified layout.
+> - **Pipeline binding state stays small.** There are no public buffer objects, descriptor sets,
+>   descriptor layouts, pipeline layouts, or sampler objects. Viewport, scissor, and exposed
+>   depth/stencil behavior are command state rather than PSO permutations, while data arrives through the root and descriptor heaps.
+> - **Submission is explicit and asynchronous.** Applications provide timeline points for reuse and
+>   deferred destruction. Submitted command buffers are one-shot.
 > 
-> Requires Node.js 22.13 or newer. No API keys or accounts are needed.
+> The [design comparison](docs/no-graphics-api-comparison.md) separates faithful mappings, Vulkan-driven
+> differences, and features that remain outside the prototype.
 > 
-> ```sh
-> npm ci
-> npm run dev
+> 
+> ## Vulkan realization
+> 
+> The backend intentionally creates no `VkDescriptorSetLayout`, `VkDescriptorPool`, `VkDescriptorSet`,
+> or `VkPipelineLayout`. Its central extensions are:
+> 
+> - `VK_EXT_descriptor_heap` for application-owned resource/sampler heaps and `vkCmdPushDataEXT`;
+> - `VK_KHR_device_address_commands` for address-based index, indirect, and copy commands;
+> - `VK_KHR_shader_untyped_pointers` as the descriptor-heap SPIR-V prerequisite;
+> - `VK_KHR_unified_image_layouts`, when available, to optimize ordinary texture access in
+>   `VK_IMAGE_LAYOUT_GENERAL`;
+> - `VK_EXT_mesh_shader` for mesh pipelines and dispatch.
+> 
+> Debug builds enable `VK_EXT_debug_utils` and the Khronos validation layer when available.
+> 
+> Vulkan 1.4 supplies buffer device addresses, timeline semaphores, dynamic rendering,
+> synchronization2, scalar block layout, and the remaining core features. See
+> [Vulkan support](docs/vulkan-support.md) for the concise feature and command mapping.
+> 
+> 
+> ## GPU memory and descriptor heaps
+> 
+> There are no public buffer objects or internal suballocators. Applications own data and descriptor
+> heaps; optimal-tiled textures use separate GPU-only heaps. The optional utility library provides
+> application-side data and texture allocation policies.
+> 
+> `GpuRange` is the non-owning address/size view used by commands. Texture and sampler descriptors are
+> addressed in Slang through the standard heap syntax:
+> 
+> ```slang
+> Texture2D texture = ResourceDescriptorHeap[texture_index];
+> SamplerState sampler = SamplerDescriptorHeap[sampler_index];
+> float4 texel = texture.Sample(sampler, uv);
 > ```
 > 
-> Open http://localhost:3016. To build the static site, run `npm run build`; the output is in `dist/`.
 > 
-> ## Validate
+> ## Shared root ABI
 > 
-> ```sh
-> npm run check
-> node scripts/validate-atlas.mjs
-> node scripts/validate-interactions.mjs
-> npm run build
+> Shared scalar, vector, and matrix types come from ``. Root
+> structures are declared once and included by C++ and Slang:
+> 
+> ```cpp
+> struct RootArguments
+> {
+>     Vertex* vertices;
+>     float4x4 mvp;
+> };
 > ```
 > 
-> Validation covers mesh buffers, names and concept membership, nonoverlapping exploded layouts at desktop and mobile aspect ratios, search and inspection contracts, and tap-versus-drag handling. Browser interaction checks have exercised selection, system controls, search, isolation, rotation, and 390×844, 320×568, and 844×390 layouts. Phone controls stay clear of the exploded inventory, and isolated structures fit the space above or beside the detail panel. Physical-device performance and real multitouch hardware have not been tested.
+> On the CPU, pointer fields receive GPU virtual addresses while ordinary values are copied directly:
 > 
-> ## Anatomy data
+> ```cpp
+> GpuCpuRange vertex_memory = bump_allocator.allocate(vertex_count);
+> RootArguments root{
+>     .vertices = vertex_memory.gpu,
+>     .mvp = mvp,
+> };
+> gpu::draw(commands, root, vertex_count);
+> ```
 > 
-> The current viewer uses **BodyParts3D 4.0**, an adult male reference anatomy, licensed **CC BY 4.0**. It does not represent every human structure or variation. Individual source meshes are distinct from named concepts, which may group multiple meshes. Descriptions distinguish general system context from individual organ explanations.
+> Slang declares the same root as push-constant data and reads both pointer and value fields directly:
 > 
-> Geometry is simplified for browser performance while retaining every source mesh. The packaged model contains 2,288,268 triangles and downloads approximately 33 MB of compressed geometry. Full credits, source links, and adaptation details are in [ATTRIBUTION.md](public/ATTRIBUTION.md).
+> ```slang
+> [[vk::push_constant]] ConstantBuffer root;
 > 
-> This is an educational explorer, not a diagnostic or surgical tool.
+> Vertex vertex = root.vertices[vertex_id];
+> float4x4 mvp = root.mvp;
+> ```
 > 
-> ## How it works
+> The draw or dispatch copies the root bytes immediately through `vkCmdPushDataEXT`; the root does not
+> need to outlive the call. Shared structures use C layout, and matrix-bearing roots use row-major matrix
+> layout. Root values must be trivially copyable, have a size divisible by four, and be no larger than
+> `DeviceCaps::max_push_data_size`.
 > 
-> Geometry is merged into batches. Per-structure GPU textures control translation, visibility, and selection, while component geometry supports accurate picking. Exploded layouts pack only the visible pieces. Rendering updates when the scene changes; orbit controls remain responsive without thousands of separate draw calls.
+> Public descriptor structures have useful defaults. Call sites use C++20 designated initializers to
+> name only fields that differ from those defaults. `Span` and `ByteSpan` are non-owning pointer/count
+> views used for function inputs.
 > 
-> The optional WebMCP tools expose anatomy search and inspection in compatible browsers. The visible interface works without them.
+> The full shader-side contract is in the [Slang shader contract](docs/slang.md).
 > 
-> ## Rebuilding geometry
 > 
-> The repository includes browser-ready geometry. Rebuilding it is optional: obtain the official BodyParts3D OBJ archive and English metadata tables, prepare the joined concepts and display-system mappings, run `scripts/convert-anatomy.py`, then `node scripts/optimize-anatomy.mjs` and `node scripts/compress-models.mjs`. Simplification uses a 0.2% relative error limit per structure.
+> ## Build and run
 > 
-> ## Deploy
+> Requirements:
 > 
-> Import this repository into Vercel as a Vite project. The included `vercel.json` configures `npm ci`, `npm run build`, and the `dist` output directory. It can also be served by a static host.
+> - CMake 3.24+, a C++20 compiler, and Vulkan SDK headers and development libraries version 1.4.357
+>   or newer;
+> - a little-endian x86-64 target; the optional utility math target additionally requires AVX2 and FMA;
+> - a Vulkan 1.4 loader and device exposing the required descriptor-heap, device-address-command,
+>   untyped-pointer, and mesh extensions above, plus their required BDA, synchronization, and
+>   16-bit/scalar-layout features;
+> - coherent CPU-visible GPU memory through a PCIe BAR on a discrete GPU or UMA on an integrated GPU,
+>   plus device-local memory compatible with the supported buffers and textures;
+> - Slang 2026.14.1+ and SPIRV-Tools 2026.3+ when building the examples.
 > 
-> ## License
+> MSVC and clang-cl are supported on Windows. GNU and Clang can build the headless library on other
+> platforms. MinGW, 32-bit x86, and ARM targets are not supported.
 > 
-> Original application code is released under the [MIT License](LICENSE). **The anatomy data has its own CC BY 4.0 license**; preserve the attribution when redistributing it. Third-party dependencies retain their respective licenses.
+> The utility implementation is shipped in-tree, so configuration has no Git or network dependency.
+> The default configuration builds NoGraphicsAPI and its companion utility library. Examples and tests
+> are opt-in so embedding NoGraphicsAPI with `add_subdirectory()` does not add development targets:
 > 
-> Issues and pull requests are welcome. Please include reproduction steps and browser/device details for interaction problems.
+> ```sh
+> cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+> cmake --build build
+> cmake --install build --prefix path/to/install
+> ```
+> 
+> The same install provides independent `NoGraphicsAPI` and `NoGraphicsAPIUtility` packages:
+> 
+> ```cmake
+> find_package(NoGraphicsAPI CONFIG REQUIRED)
+> find_package(NoGraphicsAPIUtility CONFIG REQUIRED)
+> target_link_libraries(my_application PRIVATE
+>     NoGraphicsAPI::NoGraphicsAPI
+>     NoGraphicsAPIUtility::math
+>     NoGraphicsAPIUtility::textures)
+> ```
+> 
+> NoGraphicsAPIUtility provides shared C++/Slang types, math, data and texture suballocation, and a
+> timeline-driven `DeleteQueue`. These are optional application-side policies; NoGraphicsAPI does not
+> depend on them. The queue delays allocator reuse and resource destruction until the application
+> timeline completes. `BumpAllocator::allocate_atomic()` supports relaxed-atomic concurrent reservations
+> from worker threads and returns disjoint mapped ranges. Every other allocator operation requires
+> exclusive access and must not overlap `allocate()` or `allocate_atomic()`.
+> 
+> For repository development on Windows, enable the examples and tests explicitly. Building examples
+> requires the Slang and SPIR-V Tools versions listed above.
+> 
+> ```sh
+> cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DNOGRAPHICSAPI_BUILD_EXAMPLES=ON -DNOGRAPHICSAPI_BUILD_TESTS=ON
+> cmake --build build
+> ctest --test-dir build --output-on-failure
+> ```
+> 
+> The Windows examples use the normal swapchain path:
+> 
+> - [`triangle`](examples/triangle/triangle.cpp): the minimum vertex/fragment d
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/ashemag/human-atlas) · [官方網站](https://human-atlas-seven.vercel.app)
+[GitHub](https://github.com/sebbbi/NoGraphicsAPI)
 
 ## 相關收錄
 
@@ -253,7 +363,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "ashemag--human-atlas"
+> WHERE category = "Other" AND file.name != "sebbbi--NoGraphicsAPI"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -262,7 +372,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "ashemag--human-atlas" AND status != "archived"
+> WHERE language = "C++" AND file.name != "sebbbi--NoGraphicsAPI" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -271,18 +381,18 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W37" AND file.name != "ashemag--human-atlas"
+> WHERE week = "2026-W37" AND file.name != "sebbbi--NoGraphicsAPI"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/sebbbi--NoGraphicsAPI");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "ashemag--human-atlas" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "sebbbi--NoGraphicsAPI" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -298,7 +408,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "ashemag" AND file.name != "ashemag--human-atlas"
+> WHERE owner = "sebbbi" AND file.name != "sebbbi--NoGraphicsAPI"
 > SORT stars DESC
 > ```
 
@@ -306,7 +416,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/sebbbi--NoGraphicsAPI");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -323,7 +433,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/sebbbi--NoGraphicsAPI");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -356,7 +466,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/sebbbi--NoGraphicsAPI");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -380,7 +490,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/sebbbi--NoGraphicsAPI");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -417,7 +527,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/ashemag--human-atlas");
+> const me = dv.page("Repos/sebbbi--NoGraphicsAPI");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -500,7 +610,7 @@ Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system lay
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-06** — 首次收錄
+> **2026-09-07** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -516,5 +626,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-07|2026-09-07]] — 再次上榜，1.5k stars
-- [[2026-09-06|2026-09-06]] — 首次收錄，559 stars
+- [[2026-09-07|2026-09-07]] — 首次收錄，919 stars
