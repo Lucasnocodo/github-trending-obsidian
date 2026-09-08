@@ -1,19 +1,19 @@
 ---
-repo: yczz/oc-english
-url: https://github.com/yczz/oc-english
-owner: yczz
+repo: EverettFish/holo-card-studio
+url: https://github.com/EverettFish/holo-card-studio
+owner: EverettFish
 owner_type: User
-language: JavaScript
-license: N/A
-description: "养成类游戏英语学习"
+language: Python
+license: NOASSERTION
+description: "Turn the user's description or uploaded reference into a finished, editable Blender card and an interactive Three.js page. Preserve the requested subject, style, typography and destination. This skill contains code and text only; generated artwork belongs in the user's output project."
 homepage: ""
-stars: 850
-stars_per_day: 142
-forks: 14
-open_issues: 0
-created: 2026-09-01
-pushed_at: 2026-09-05
-first_seen: 2026-09-06
+stars: 936
+stars_per_day: 936
+forks: 144
+open_issues: 1
+created: 2026-09-07
+pushed_at: 2026-09-07
+first_seen: 2026-09-08
 week: "2026-W37"
 month: "2026-09"
 category: "Other"
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-06
+last_reviewed: 2026-09-08
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-15"
+appearances: 1
+next_review: "2026-09-11"
 contributor_count: 1
-engagement: "low"
-issue_close_rate: -1
-repo_size_kb: 6645
-readme_length: 4157
+engagement: "medium"
+issue_close_rate: 0
+repo_size_kb: 95
+readme_length: 3211
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-06"
-star_history: "2026-09-06:823,2026-09-08:850"
+ring_history: "assess@2026-09-08"
+star_history: "2026-09-08:936"
 tags:
   - github
   - "category/other"
-  - "lang/javascript"
+  - "lang/python"
 aliases:
-  - "oc-english"
-  - "yczz/oc-english"
+  - "holo-card-studio"
+  - "EverettFish/holo-card-studio"
 ---
 
-# oc-english
+# holo-card-studio
 
-**823** stars · **206** stars/天 · 建立 4 天前 · JavaScript · 未標註授權
+**936** stars · **936** stars/天 · 建立 1 天前 · Python · NOASSERTION
 
 ```dataviewjs
-const me = dv.page("Repos/yczz--oc-english");
+const me = dv.page("Repos/EverettFish--holo-card-studio");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -73,17 +73,17 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> 养成类游戏英语学习
+> Turn the user's description or uploaded reference into a finished, editable Blender card and an interactive Three.js page. Preserve the requested subject, style, typography and destination. This skill contains code and text only; generated artwork belongs in the user's output project.
 
 ## 專案簡介
 
-养成类游戏英语学习
+Turn the user's description or uploaded reference into a finished, editable Blender card and an interactive Three.js page. Preserve the requested subject, style, typography and destination. This skill contains code and text only; generated artwork belongs in the user's output project.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/EverettFish--holo-card-studio");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/EverettFish--holo-card-studio");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,229 +142,212 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 9 |
-| Open Issues | 0 |
-| 最後推送 | 2026-09-05 |
-| 建立日期 | 2026-09-01 |
-| Repo 大小 | 6.5 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/yczz/oc-english) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@tauri-apps/cli` `jsdom` `puppeteer-core`
+| Forks | 144 |
+| Open Issues | 1 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-09-07 |
+| 建立日期 | 2026-09-07 |
+| Repo 大小 | 95 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/EverettFish/holo-card-studio) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 65
->     "Rust" : 26
->     "CSS" : 6
->     "HTML" : 3
+>     "Python" : 88
+>     "HTML" : 9
+>     "JavaScript" : 3
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@yczz](https://github.com/yczz) | 5 |
+> | [@EverettFish](https://github.com/EverettFish) | 6 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-01 ~ 2026-09-05）
-> **活躍天數** 3 天 · **最新 commit** init
+> [!abstract] 最近 10 次 commit（2026-09-07 ~ 2026-09-07）
+> **活躍天數** 1 天 · **最新 commit** Update README.md
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#1](https://github.com/EverettFish/holo-card-studio/issues/1) | 如果真拿去工厂加工还缺什么？ | 1 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 带着OC学英语
+> # 🃏 Holo Card Studio
 > 
-> > 创建一只属于你的 Q 版 OC，给它捏脸、换装、布置小家——而赚积分的唯一方式，是**认真学英语**。
+> 实现教程来源（补上，感谢大佬的教程）：小红书@乌托邦的香蕉🍌
 > 
-> **Tauri 2.0 桌面应用** · Rust 后端 + Vanilla JS 前端 · SVG 矢量 Q 版角色 · PixiJS 等距 2.5D 房间 · macOS
+> > 一个 **Codex Skill**：对 Codex 说一句话，收获一张会随视角流光溢彩的 3D 全息闪卡。
+> > 能在浏览器里拖着转、翻到背面、拉滑块看它闪；还附赠一个可以随便改的 Blender 工程。
 > 
-> ---
-> 
-> ## 📸 界面一览
-> 
-> | 注册档案 | 捏脸工坊 |
-> | :---: | :---: |
-> |  |  |
-> 
-> | 衣橱换装（一键同款蝴蝶少女） | 2.5D 小家 |
-> | :---: | :---: |
-> |  |  |
-> 
-> | 商店 | 学习中心（13 册教材） |
-> | :---: | :---: |
-> |  |  |
-> 
-> | 跟练（四选一 + 听力） | 单元考成绩单 |
-> | :---: | :---: |
-> |  |  |
-> 
-> > 截图由 `npm run screenshots` 自动生成（无头 Chrome + 契约级后端 mock 跑真实前端）。
+> 小时候在文具店门口舍不得买的那种闪卡，现在你想印谁就印谁。
 > 
 > ---
 > 
-> ## 🎮 游戏介绍
-> 
-> ### 🧒 创建你的 OC（免费 · 不限数量）
-> 
-> 起个名字就能迎接一只空白小人。可以创建多只 OC，每只都有独立的脸蛋、衣柜和小家，随时在人物栏一键切换。
-> 
-> ### 🎨 捏脸 + 换装
-> 
-> - **捏脸全免费**：肤色 4 档、眼型 6 款（圆溜溜 / 害羞粉桃眼 / 弯弯笑眼…）、瞳色 6 色、发型 8 款、发色 8 色、嘴巴 5 款 +「不画嘴」、腮红开关
-> - **9 部位换装系统**：帽子 / 眼镜 / 上衣 / 下装 / 鞋子 / 手持 / 背饰 / 耳饰，共 **50 件装扮**
-> - **一键同款**：内置「🦋 蝴蝶少女」预设——姬式长直发 + 粉桃眼 + 绿色羽织队服 + 蝴蝶翅膀 + 黑鞘短刀 + 玉耳坠，已拥有的部件一键上身，缺的会提示去商店补
-> - 角色为纯 SVG 矢量绘制，任意缩放不糊；素体严格按参考模板实现
-> 
-> ### 🏠 2.5D 温馨小家
-> 
-> - 等距 2.5D 视角：左墙 + 后墙（带窗户挂画）+ 菱形地砖，家具有贴地投影和立体层次
-> - **18 件家具**：三张床、书桌、书架、沙发、电视、钢琴、地毯、猫窝（里面睡着一只猫）…
-> - 布置模式下拖动家具自由摆放，自动吸附网格；放不下会回弹；右键收进收纳箱
-> 
-> ### 📖 学英语（人教版同步）
-> 
-> - **13 册教材**：人教版小学英语三年级上~六年级下（8 册）+ 初中七年级上~九年级（5 册），单元与课本同步
-> - **语法卡**：每册配套语法讲解，学习前先翻卡
-> - **跟练**：每个单词两张卡——词义四选一 + 🔊 听力辨词，答对即学会
-> - **单元考**：跟练全部完成后解锁，15 题（8 词义 + 4 听力 + 3 语法），**≥12 题通过**
-> - 答题带朗读（系统 TTS），错题附解析
-> 
-> ### ⭐ 积分经济
-> 
-> 积分是唯一的货币，**只能靠学习赚取**，用来买装扮和家具装扮 OC 与小家。
-> 
-> | 事件 | 积分 |
-> | --- | ---: |
-> | 🎁 新手礼包 | +200 |
-> | 🎵 跟练答对一张卡 | +2 |
-> | 🏆 单元考首次通过 | +100 |
-> | 📈 再次通过且刷新最佳 | 每多对 1 题 +10 |
-> 
-> ---
-> 
-> ## 🛠️ 技术栈
-> 
-> | 层 | 技术 |
-> | --- | --- |
-> | 壳 | Tauri 2.0（Rust），包体 ~10MB |
-> | 后端 | Rust：存档/商店/题库/出题/考试判分全部在 Rust 侧，数据编译进二进制 |
-> | 前端 | Vanilla JS（ES Modules，零框架零打包器） |
-> | 角色 | SVG 矢量分层组装（素体 → 装扮 9 层 → 五官 → 发型） |
-> | 房间 | PixiJS（WebGL）等距 2.5D 场景，SVG → 纹理 |
-> | 存档 | JSON，位于系统应用支持目录 |
-> 
-> ## 📁 目录结构
+> ## ✨ 三十秒看懂
 > 
 > ```
-> ├── src/                    # 前端（Vanilla JS）
-> │   ├── index.html          # 单页界面（注册/主界面/学习中心 + 7 个弹窗）
-> │   ├── main.js             # 交互逻辑（捏脸/衣橱/预设/商店/房间/跟练/考试）
-> │   ├── styles.css          # 暖色卡通主题
-> │   ├── lib/pixi.min.js     # PixiJS（本地 UMD）
-> │   └── js/
-> │       ├── api.js          #   Tauri invoke 封装
-> │       ├── character.js    #   素体 + 五官/发型/装扮分层渲染器
-> │       ├── wardrobe.js     #   50 件装扮 SVG 素材（9 部位）
-> │       ├── furniture.js    #   18 件家具 SVG 素材
-> │       ├── room.js         #   等距 2.5D 房间（Pixi，拖拽/吸附/深度排序）
-> │       └── tts.js          #   单词朗读
-> ├── src-tauri/              # Rust 后端
-> │   ├── src/
-> │   │   ├── models.rs       #   存档数据结构（档案/人物/脸型/装扮/进度）
-> │   │   ├── commands.rs     #   Tauri 指令（注册/创建/换装/购买/摆放…）
-> │   │   ├── content.rs      #   13 册教材 + 语法卡加载
-> │   │   ├── questions.rs    #   跟练卡与 15 题考卷生成、判分
-> │   │   └── shop.rs         #   商店目录（50 装扮 + 18 家具）
-> │   └── data/               # books/（13 册 JSON）+ wardrobe/furniture/grammar
-> ├── test/                   # 冒烟测试（jsdom 全流程 / 渲染 / 契约）
-> ├── scripts/screenshots.mjs # README 截图自动生成
-> └── docs/DESIGN.md          # 设计稿
+> 你：「给我做一张赛博朋克风的机械猫闪卡，背景霓虹雨夜，编号 No.007」
+> 
+> Codex：
+>   🎨 画好四层图（主体 / 背景 / 线稿 / 文字）
+>   🧊 搭好 Blender 场景，视差、镭射、星光一次到位
+>   🌐 组装成 Three.js 网页，本地跑起来
+>   📦 递给你：网页链接 + card.blend + 渲染图
 > ```
 > 
-> 存档位置：`~/Library/Application Support/com.zhengzhong.oc-english/player.json`
+> 你只负责想，剩下的它来。
 > 
 > ---
 > 
-> ## 💻 安装步骤
+> ## 🎬 你可以拿它做什么
 > 
-> ### 1. 环境要求（macOS）
+> ### 🐱 给自家毛孩子发一张"传说级"卡
+> 上传一张猫主子的照片，加一句"传说稀有度、金色边框、名字叫布丁"。
+> 主体保留它本猫的神态和构图，背景和线稿全新绘制。拖一拖，猫在卡里往前凸，背景往后退，镭射彩虹随角度流动——朋友圈晒图请自便。
 > 
-> | 依赖 | 版本 | 安装 |
-> | --- | --- | --- |
-> | Xcode Command Line Tools | — | `xcode-select --install` |
-> | Rust | stable | `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs \| sh` |
-> | Node.js | ≥ 22 | 官网下载或 `brew install node` |
+> ### 🎮 给独立游戏做角色卡牌
+> 一个角色一句描述，批量出一整套：战士、法师、盗贼、Boss。
+> 每张卡自带 `card-config.json`，稀有度、编号、属性文字都在里面，改完重新跑一遍流水线就更新。发售前发一波"抽卡预告"，玩家会疯。
 > 
-> ### 2. 获取代码并安装依赖
+> ### 🏢 团队周年纪念 / 新人入职卡
+> 把同事做成卡牌：头像当主体、部门色当背景、Slogan 当文字层。
+> 每人一张，网页链接一发，大家在浏览器里翻自己的卡翻一下午。比 PPT 里的"团队介绍"页好玩一百倍。
+> 
+> ### 🎁 情人节 / 生日 / 纪念日
+> "复古胶片风、粉金配色、背面写一句话"。
+> 做好之后发一个链接过去，对方在手机上转着看，翻到背面看到那句话。仪式感这东西，闪光效果拉满就有了。
+> 
+> ### 🎤 演讲 / 发布会的"彩蛋物料"
+> 产品发布做一张产品卡，讲到最后一页丢一个链接："扫码看会闪的那种"。
+> 响应式网页，手机横竖屏都能玩，观众当场就转起来了。
+> 
+> ### 🖌️ 设计师的材质实验场
+> 不只是网页，`card.blend` 是真正可编辑的 Blender 工程。
+> 共享节点组里有中文命名的 `缩放`、`深度`、`视差效果`，镭射条纹、星光、线稿发光都是独立可调的材质节点。想研究全息卡是怎么"闪"起来的，打开它就是最好的教材。
+> 
+> ---
+> 
+> ## 🧱 一张闪卡是怎么叠出来的
+> 
+> 四层图叠在同一块画布上，视差把它们在空间里"撑开"：
+> 
+> ```
+>         👀 你的视线
+>          │
+>    ┌─────┴──────┐
+>    │  text.png  │  文字层     ─ 稳稳贴在表面
+>    ├────────────┤
+>    │ lineart.png│  线稿层     ─ 发光的轮廓
+>    ├────────────┤
+>    │ subject.png│  主体层     ─ 往前凸出来
+>    ├────────────┤
+>    │ background │  背景层     ─ 往后缩进去
+>    └────────────┘
+> ```
+> 
+> 再铺上镭射彩虹（相位跟着视角走，转到哪闪到哪）、Voronoi 星光、金色卡边。
+> 浏览器端用 Three.js 按同一套 UV 公式重建这四层合成，所以 Blender 里看到什么，网页里就是什么。
+> 
+> ---
+> 
+> ## 🚀 怎么用
+> 
+> ### 安装
+> 把这个目录放进 Codex 的 skills 目录即可：
+> 
+> ```
+> ~/.codex/skills/holo-card-studio/
+> ```
+> 
+> ### 环境
+> - Python 3 + Pillow
+> - Node.js + npm
+> - Blender **不用自己装** —— 流水线会自动把官方便携版放到 `/tools/`，校验 SHA-256，项目自带、互不干扰
+> 
+> ### 开口
+> 然后在 Codex 里直接说人话：
+> 
+> > "用 holo-card-studio 给我做一张水墨风的锦鲤闪卡，文字用书法体，编号 No.001"
+> 
+> 或者上传参考图：
+> 
+> > "照这张图做一张闪卡，保留人物和构图，背景换成星空"
+> 
+> Codex 会先把卡片规格和它推断的细节说给你听，然后开工：画图 → 生成文字层 → 写配置 → 跑流水线 → 起本地服务 → 真正打开页面测拖拽、翻面、滑块和手机布局 → 交付。
+> 
+> ### 你会收到
+> | 东西 | 用来干嘛 |
+> |---|---|
+> | 本地网页链接 | 拖、转、翻、拉滑块 |
+> | `card.blend` | 在 Blender 里继续调材质、换灯光、出渲染 |
+> | `assets/` 四层图 | 想换哪层换哪层，重跑流水线即可 |
+> | `card-config.json` | 改名字、改编号、改稀有度 |
+> | 渲染图 | 直接发 |
+> 
+> ---
+> 
+> ## 🔧 可以调的旋钮
+> 
+> 流水线出厂就是一套顺手的参数，也都留了口子：
+> 
+> - **视差强度**：主体默认 scale 1.25 / depth 0.4，背景 depth -0.25，想更"跳"就往上加
+> - **镭射条纹**：条纹密度、扭曲度、角度，以及粉-黄-蓝-白的渐变
+> - **线稿发光**：强度和遮罩密度，可以从"淡淡勾边"到"霓虹描边"
+> - **星光**：Voronoi 尺度 + 动画噪声，从零星几颗到满天星
+> - **Blender 界面语言**：默认简体中文，存在项目本地配置里，一句话可换
+> 
+> ---
+> 
+> ## 📁 目录一览
+> 
+> ```
+> holo-card-studio/
+> ├── SKILL.md                    # Codex 读的"操作手册"
+> ├── references/
+> │   ├── art-direction.md        # 分层画图的提示词写法、参考图处理
+> │   ├── config.example.json     # 卡片配置示例
+> │   └── verification.md         # 交付前的验收清单
+> ├── scripts/
+> │   ├── ensure_blender.py       # 自动获取官方 Blender 便携版
+> │   ├── build_card.py           # 生成可编辑的 Blender 场景
+> │   ├── export_web.py           # 导出卡片几何
+> │   ├── generate_typography.py  # 精确的透明文字层
+> │   ├── validate_assets.py      # 四层图体检
+> │   ├── run_pipeline.py         # 一键流水线
+> │   └── package_skill.py        # 纯文本打包成可分享的 ZIP
+> └── assets/
+>     └── web-template/           # 响应式 Three.js 查看器
+> ```
+> 
+> skill 本体只有代码和文字，轻得很。你生成的画作、`.blend`、模型都待在你自己的输出项目里。
+> 
+> ---
+> 
+> ## 🤝 分享这个 skill
+> 
+> 想发给朋友或放进仓库？
 > 
 > ```bash
-> git clone  OC学英语
-> cd OC学英语
-> npm install          # 仅两个开发依赖：@tauri-apps/cli、jsdom（npm 建议配国内镜像）
+> python scripts/package_skill.py
 > ```
 > 
-> ### 3. 开发模式运行（日常迭代推荐）
-> 
-> ```bash
-> npm run tauri dev
-> ```
-> 
-> 首次会编译 Rust 依赖（几分钟），之后热更新秒级生效。
-> 
-> ### 4. 打包成正式 App
-> 
-> ```bash
-> npm run tauri build
-> ```
-> 
-> 产物：
-> 
-> ```
-> src-tauri/target/release/bundle/macos/带着OC学英语.app   ← 双击即用
-> src-tauri/target/release/bundle/dmg/带着OC学英语_0.1.0_aarch64.dmg
-> ```
-> 
-> > ⚠️ 未做 Apple 签名公证，首次打开若被 Gatekeeper 拦截：**右键 → 打开**，或执行
-> > `xattr -cr 带着OC学英语.app`
+> 它按白名单只打包文本文件，打出来的 ZIP 干干净净，拿走就能用。
 > 
 > ---
 > 
-> ## ✅ 测试
-> 
-> ```bash
-> npm test
-> ```
-> 
-> | 套件 | 覆盖 |
-> | --- | --- |
-> | `test:rust` | Rust 单测 + 全流程集成（注册→学习→考试→购买） |
-> | `test:contract` | 前端 api.js 与 Rust 指令契约对齐 |
-> | `test:render` | 50 装扮 + 18 家具素材完整性、SVG 合法性（xmllint） |
-> | `test:ui` | jsdom 全流程冒烟：注册→捏脸→商店→换装→房间→跟练→考试→登出 |
-> 
-> README 截图再生成：`npm run screenshots`（需要本机装有 Google Chrome）。
-> 
-> ---
-> 
-> ## 🗺️ 路线图
-> 
-> - [x] M1 SVG 矢量角色渲染器 + 分层装扮系统
-> - [x] M2 Rust 数据层（多档案多 OC 存档）+ 可打包桌面应用
-> - [x] M3 13 册人教版教材 + 语法卡 + 跟练/单元考 + 积分商店
-> - [x] M4 素体按参考模板重制 + 50 件装扮精致化 + 蝴蝶少女一键同款
-> - [x] M5 等距 2.5D 房间 + 家具质感升级
-> - [ ] M6 iOS 手机版（Tauri 2 移动端，进行中）
-> - [ ] M7 安卓手机版
-> - [ ] M8 豆豆助手聊天 / 好友串门
+> *想好第一张卡画谁了吗？* ✨
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/yczz/oc-english)
+[GitHub](https://github.com/EverettFish/holo-card-studio)
 
 ## 相關收錄
 
@@ -372,7 +355,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "yczz--oc-english"
+> WHERE category = "Other" AND file.name != "EverettFish--holo-card-studio"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -381,7 +364,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "yczz--oc-english" AND status != "archived"
+> WHERE language = "Python" AND file.name != "EverettFish--holo-card-studio" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -390,18 +373,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W37" AND file.name != "yczz--oc-english"
+> WHERE week = "2026-W37" AND file.name != "EverettFish--holo-card-studio"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/EverettFish--holo-card-studio");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "yczz--oc-english" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "EverettFish--holo-card-studio" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -417,7 +400,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "yczz" AND file.name != "yczz--oc-english"
+> WHERE owner = "EverettFish" AND file.name != "EverettFish--holo-card-studio"
 > SORT stars DESC
 > ```
 
@@ -425,7 +408,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/EverettFish--holo-card-studio");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -442,7 +425,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/EverettFish--holo-card-studio");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -475,7 +458,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/EverettFish--holo-card-studio");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -499,7 +482,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/EverettFish--holo-card-studio");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -536,7 +519,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/EverettFish--holo-card-studio");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -619,7 +602,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-06** — 首次收錄
+> **2026-09-08** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -635,5 +618,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-08|2026-09-08]] — 再次上榜，850 stars
-- [[2026-09-06|2026-09-06]] — 首次收錄，823 stars
+- [[2026-09-08|2026-09-08]] — 首次收錄，936 stars

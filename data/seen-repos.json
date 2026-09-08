@@ -3935,10 +3935,10 @@
   },
   "anthropics/commerce-agents": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-09-07",
-    "times_seen": 4,
+    "last_seen": "2026-09-08",
+    "times_seen": 5,
     "stars_first": 1664,
-    "stars_last": 2262
+    "stars_last": 2437
   },
   "rakanki911/DLSS5-Swapper": {
     "first_seen": "2026-09-04",
@@ -3970,10 +3970,10 @@
   },
   "lnkiai/m3e-canvas": {
     "first_seen": "2026-09-05",
-    "last_seen": "2026-09-07",
-    "times_seen": 3,
+    "last_seen": "2026-09-08",
+    "times_seen": 4,
     "stars_first": 2250,
-    "stars_last": 4381
+    "stars_last": 4768
   },
   "jlrouzies-fr/DLSS5-Feeder": {
     "first_seen": "2026-09-05",
@@ -3998,45 +3998,45 @@
   },
   "danielblnc/DLSS-NR-on-AMD": {
     "first_seen": "2026-09-05",
-    "last_seen": "2026-09-06",
-    "times_seen": 2,
+    "last_seen": "2026-09-08",
+    "times_seen": 3,
     "stars_first": 497,
-    "stars_last": 671
+    "stars_last": 871
   },
   "yczz/oc-english": {
     "first_seen": "2026-09-06",
-    "last_seen": "2026-09-06",
-    "times_seen": 1,
+    "last_seen": "2026-09-08",
+    "times_seen": 2,
     "stars_first": 823,
-    "stars_last": 823
+    "stars_last": 850
   },
   "anthropics/fermats-last-theorem": {
     "first_seen": "2026-09-06",
-    "last_seen": "2026-09-07",
-    "times_seen": 2,
+    "last_seen": "2026-09-08",
+    "times_seen": 3,
     "stars_first": 722,
-    "stars_last": 863
+    "stars_last": 945
   },
   "ashemag/human-atlas": {
     "first_seen": "2026-09-06",
-    "last_seen": "2026-09-07",
-    "times_seen": 2,
+    "last_seen": "2026-09-08",
+    "times_seen": 3,
     "stars_first": 559,
-    "stars_last": 1488
+    "stars_last": 2111
   },
   "Rion-Wu-tech/wechat-intelligence-hub": {
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-07",
-    "times_seen": 1,
+    "last_seen": "2026-09-08",
+    "times_seen": 2,
     "stars_first": 1347,
-    "stars_last": 1347
+    "stars_last": 1869
   },
   "pierrenade/short-video-generator-AI": {
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-07",
-    "times_seen": 1,
+    "last_seen": "2026-09-08",
+    "times_seen": 2,
     "stars_first": 1019,
-    "stars_last": 1019
+    "stars_last": 1185
   },
   "sebbbi/NoGraphicsAPI": {
     "first_seen": "2026-09-07",
@@ -4044,5 +4044,19 @@
     "times_seen": 1,
     "stars_first": 919,
     "stars_last": 919
+  },
+  "vinzdg/codenotch": {
+    "first_seen": "2026-09-08",
+    "last_seen": "2026-09-08",
+    "times_seen": 1,
+    "stars_first": 959,
+    "stars_last": 959
+  },
+  "EverettFish/holo-card-studio": {
+    "first_seen": "2026-09-08",
+    "last_seen": "2026-09-08",
+    "times_seen": 1,
+    "stars_first": 936,
+    "stars_last": 936
   }
 }

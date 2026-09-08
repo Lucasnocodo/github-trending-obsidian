@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "Free open-source project designed for turning youtube-viedos into viral short videos. Highlight detection, subtitles, translation, voiceover, all in one for your content."
 homepage: ""
-stars: 1019
-stars_per_day: 1019
-forks: 155
-open_issues: 2
+stars: 1185
+stars_per_day: 593
+forks: 161
+open_issues: 0
 created: 2026-09-05
-pushed_at: 2026-09-05
+pushed_at: 2026-09-07
 first_seen: 2026-09-07
 week: "2026-W37"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-10"
+appearances: 2
+next_review: "2026-09-11"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-07"
-star_history: "2026-09-07:1019"
+star_history: "2026-09-07:1019,2026-09-08:1185"
 tags:
   - github
   - "category/other"
@@ -623,4 +623,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-08|2026-09-08]] — 再次上榜，1.2k stars
 - [[2026-09-07|2026-09-07]] — 首次收錄，1.0k stars

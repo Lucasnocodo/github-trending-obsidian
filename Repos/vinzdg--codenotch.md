@@ -1,63 +1,63 @@
 ---
-repo: yczz/oc-english
-url: https://github.com/yczz/oc-english
-owner: yczz
+repo: vinzdg/codenotch
+url: https://github.com/vinzdg/codenotch
+owner: vinzdg
 owner_type: User
-language: JavaScript
-license: N/A
-description: "养成类游戏英语学习"
+language: Swift
+license: MIT
+description: "A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge."
 homepage: ""
-stars: 850
-stars_per_day: 142
-forks: 14
-open_issues: 0
-created: 2026-09-01
-pushed_at: 2026-09-05
-first_seen: 2026-09-06
+stars: 959
+stars_per_day: 480
+forks: 153
+open_issues: 31
+created: 2026-09-05
+pushed_at: 2026-09-07
+first_seen: 2026-09-08
 week: "2026-W37"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v1.5.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-06
+last_reviewed: 2026-09-08
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-15"
-contributor_count: 1
-engagement: "low"
-issue_close_rate: -1
-repo_size_kb: 6645
-readme_length: 4157
+appearances: 1
+next_review: "2026-09-11"
+contributor_count: 5
+engagement: "medium"
+issue_close_rate: 6
+repo_size_kb: 15410
+readme_length: 6543
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-06"
-star_history: "2026-09-06:823,2026-09-08:850"
+ring_history: "assess@2026-09-08"
+star_history: "2026-09-08:959"
 tags:
   - github
   - "category/other"
-  - "lang/javascript"
+  - "lang/swift"
 aliases:
-  - "oc-english"
-  - "yczz/oc-english"
+  - "codenotch"
+  - "vinzdg/codenotch"
 ---
 
-# oc-english
+# codenotch
 
-**823** stars · **206** stars/天 · 建立 4 天前 · JavaScript · 未標註授權
+**959** stars · **480** stars/天 · 建立 2 天前 · Swift · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/yczz--oc-english");
+const me = dv.page("Repos/vinzdg--codenotch");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v1.5.0`
 
 > [!summary] 一句話摘要
-> 养成类游戏英语学习
+> A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge.
 
 ## 專案簡介
 
-养成类游戏英语学习
+A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/vinzdg--codenotch");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/vinzdg--codenotch");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,229 +142,205 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 9 |
-| Open Issues | 0 |
-| 最後推送 | 2026-09-05 |
-| 建立日期 | 2026-09-01 |
-| Repo 大小 | 6.5 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/yczz/oc-english) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@tauri-apps/cli` `jsdom` `puppeteer-core`
+| Forks | 153 |
+| Open Issues | 31 |
+| Issue 解決率 | 6% (2 closed) |
+| 最後推送 | 2026-09-07 |
+| 建立日期 | 2026-09-05 |
+| Repo 大小 | 15.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/vinzdg/codenotch) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 65
->     "Rust" : 26
->     "CSS" : 6
->     "HTML" : 3
+>     "Swift" : 99
+>     "Makefile" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@yczz](https://github.com/yczz) | 5 |
+> | [@vinzdg](https://github.com/vinzdg) | 16 |
+> | [@oasis1992](https://github.com/oasis1992) | 2 |
+> | [@canberkys](https://github.com/canberkys) | 1 |
+> | [@mohammad-albarham](https://github.com/mohammad-albarham) | 1 |
+> | [@mhmzdev](https://github.com/mhmzdev) | 1 |
+
+**最新版本**：v1.5.0 — 1.5.0 (2026-09-07)
+
+> [!info]- Release Notes
+> ## New
+> 
+> - **Grok** — SuperGrok's weekly Grok Build credits, read from the CLI's own session in `~/.grok/auth.json`. (#15, thanks @pgm-norbert; #10 @MintarasGrinius and #12 @maheshauti96 also explored this independently)
+> - **OpenCode** — the Go plan's official usage endpoint, with the key OpenCode itself stores on sign-in. (#11, thanks @MintarasGrinius)
+> 
+> ## Fixed
+> 
+> - Switching a provider off could still have its account read when Settings opened, and a response already in flight could restore a reading you'd just asked it to forget. (#13, thanks @canberkys)
+> - Codex's live reading only recognised a 5-hour and a 7-day window. A free-plan account's real limit was a 30-day one, which silently fell through and reported "nothing metered" on an account that was genuinely tracked — caught by testing the fix against a real account. (#14, thanks @TrapstarKS)
+> - Contributors can now `make build`/`make test` with no Apple Developer account — Debug builds sign themselves automatically when the maintainer's certificate isn't present. (based on #8, thanks @MintarasGrinius)
+> - (Shipped earlier as 1.4.1, now synced to this repo) A Mac waking from a long sleep could erase a ring's remembered reading entirely.
+> 
+> ## Not merged
+> 
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-01 ~ 2026-09-05）
-> **活躍天數** 3 天 · **最新 commit** init
+> [!abstract] 最近 10 次 commit（2026-09-06 ~ 2026-09-07）
+> **活躍天數** 2 天 · **最新 commit** Codenotch 1.5.0
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#18](https://github.com/vinzdg/codenotch/issues/18) | Publish a precompiled .dmg in releases | 11 | 0 |
+> | [#21](https://github.com/vinzdg/codenotch/issues/21) | make run fails on a fresh clone: signing-identity check neve | 1 | 0 |
+> | [#45](https://github.com/vinzdg/codenotch/issues/45) | Makefile: ad-hoc signing fallback never triggers (grep -c ne | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 带着OC学英语
+> # Codenotch
 > 
-> > 创建一只属于你的 Q 版 OC，给它捏脸、换装、布置小家——而赚积分的唯一方式，是**认真学英语**。
+> A macOS app that pins a small black notch to a screen edge, showing how much of
+> each coding assistant's usage limit you have burned — and whether it is still
+> working, done, or waiting on you.
 > 
-> **Tauri 2.0 桌面应用** · Rust 后端 + Vanilla JS 前端 · SVG 矢量 Q 版角色 · PixiJS 等距 2.5D 房间 · macOS
+> Hover a ring for its limit windows and when they reset. Claude's ring shows the
+> same **current session** window Claude Code's own `/usage` leads with, so the
+> two never disagree.
 > 
-> ---
+> ## What it reads
 > 
-> ## 📸 界面一览
+> | Provider | Source | How |
+> |---|---|---|
+> | **Claude Code** | official | The OAuth token in the login keychain, against the same endpoint Claude Code's own `/usage` uses. |
+> | **Cursor** | official | The editor's own signed-in session, read from its local SQLite state — no separate sign-in. |
+> | **Codex** | official | ChatGPT's usage endpoint, using the local Codex sign-in. Shows the 5-hour and weekly limits when available. |
+> | **Antigravity** | official where licensed, otherwise a request count | Antigravity's local language server first, then Google's quota endpoint; a plain count when neither will answer for the account. |
+> | **GLM** | official | Z.ai's Coding Plan monitor endpoint, with a key borrowed from whichever coding tool already holds one — Claude Code's `settings.json`, ZCode, or OpenCode. |
+> | **Grok** | official | The Grok CLI session in `~/.grok/auth.json`, against the same credits billing endpoint `/usage` uses. |
+> | **OpenCode** | official | The Go plan's official usage endpoint, with the `opencode-go` key OpenCode itself stores on sign-in. |
 > 
-> | 注册档案 | 捏脸工坊 |
-> | :---: | :---: |
-> |  |  |
+> Codenotch never signs in anywhere. Every reading is borrowed from a credential
+> or session a tool on your Mac already holds — install and sign in to any of
+> them, and its ring appears. Switching a provider off in Settings stops its
+> credential being read at all and forgets the readings taken from it; it does
+> not sign you out of the tool that owns the account, and the row says so.
 > 
-> | 衣橱换装（一键同款蝴蝶少女） | 2.5D 小家 |
-> | :---: | :---: |
-> |  |  |
+> It also answers **"is it still working?"** — a thin arc spins inside a
+> provider's ring while a session is busy, and becomes a pulsing amber ring when
+> one is blocked waiting on you. Hover for every live session by name, where it
+> is running, and what it wants.
 > 
-> | 商店 | 学习中心（13 册教材） |
-> | :---: | :---: |
-> |  |  |
+> Two Claude Code logins are two rings. Anyone who keeps a work account apart with
+> `CLAUDE_CONFIG_DIR=~/.claude-work claude` gets a **Claude (work)** ring beside the
+> personal one, with its own limits, its own sessions and its own row in Settings.
+> Any `~/.claude-` directory Claude Code has run against is found at launch;
+> the default `~/.claude` always comes first, the rest in alphabetical order, so the
+> rings never swap places.
 > 
-> | 跟练（四选一 + 听力） | 单元考成绩单 |
-> | :---: | :---: |
-> |  |  |
+> ## Placement
 > 
-> > 截图由 `npm run screenshots` 自动生成（无头 Chrome + 契约级后端 mock 跑真实前端）。
+> The notch lives on any of the four screen edges. Right and left keep a
+> vertical column; top and bottom lay the readings out side by side. It pins
+> itself to the *usable* edge, so a bottom notch rests on the Dock and follows
+> when the Dock hides or moves. On a Mac with a hardware notch, the top
+> placement takes its exact shape, so the two read as one rather than as a bar
+> parked underneath it.
 > 
-> ---
+> At rest it is a small pill on the screen edge that unfolds when the pointer
+> reaches it — configurable in Settings to always show, or to hide entirely.
+> Settings live in an orb below the notch: an arc at rest, a gear on hover.
 > 
-> ## 🎮 游戏介绍
+> The app itself can show a Dock icon, a menu bar icon, or neither.
 > 
-> ### 🧒 创建你的 OC（免费 · 不限数量）
+> ## Updates
 > 
-> 起个名字就能迎接一只空白小人。可以创建多只 OC，每只都有独立的脸蛋、衣柜和小家，随时在人物栏一键切换。
+> Codenotch updates itself. [Sparkle](https://sparkle-project.org) checks daily
+> and installs in the background without prompting; Settings says so and can
+> switch it off. Every update is EdDSA-signed, so nothing installs that wasn't
+> built and signed by the maintainer.
 > 
-> ### 🎨 捏脸 + 换装
+> ## Building
 > 
-> - **捏脸全免费**：肤色 4 档、眼型 6 款（圆溜溜 / 害羞粉桃眼 / 弯弯笑眼…）、瞳色 6 色、发型 8 款、发色 8 色、嘴巴 5 款 +「不画嘴」、腮红开关
-> - **9 部位换装系统**：帽子 / 眼镜 / 上衣 / 下装 / 鞋子 / 手持 / 背饰 / 耳饰，共 **50 件装扮**
-> - **一键同款**：内置「🦋 蝴蝶少女」预设——姬式长直发 + 粉桃眼 + 绿色羽织队服 + 蝴蝶翅膀 + 黑鞘短刀 + 玉耳坠，已拥有的部件一键上身，缺的会提示去商店补
-> - 角色为纯 SVG 矢量绘制，任意缩放不糊；素体严格按参考模板实现
-> 
-> ### 🏠 2.5D 温馨小家
-> 
-> - 等距 2.5D 视角：左墙 + 后墙（带窗户挂画）+ 菱形地砖，家具有贴地投影和立体层次
-> - **18 件家具**：三张床、书桌、书架、沙发、电视、钢琴、地毯、猫窝（里面睡着一只猫）…
-> - 布置模式下拖动家具自由摆放，自动吸附网格；放不下会回弹；右键收进收纳箱
-> 
-> ### 📖 学英语（人教版同步）
-> 
-> - **13 册教材**：人教版小学英语三年级上~六年级下（8 册）+ 初中七年级上~九年级（5 册），单元与课本同步
-> - **语法卡**：每册配套语法讲解，学习前先翻卡
-> - **跟练**：每个单词两张卡——词义四选一 + 🔊 听力辨词，答对即学会
-> - **单元考**：跟练全部完成后解锁，15 题（8 词义 + 4 听力 + 3 语法），**≥12 题通过**
-> - 答题带朗读（系统 TTS），错题附解析
-> 
-> ### ⭐ 积分经济
-> 
-> 积分是唯一的货币，**只能靠学习赚取**，用来买装扮和家具装扮 OC 与小家。
-> 
-> | 事件 | 积分 |
-> | --- | ---: |
-> | 🎁 新手礼包 | +200 |
-> | 🎵 跟练答对一张卡 | +2 |
-> | 🏆 单元考首次通过 | +100 |
-> | 📈 再次通过且刷新最佳 | 每多对 1 题 +10 |
-> 
-> ---
-> 
-> ## 🛠️ 技术栈
-> 
-> | 层 | 技术 |
-> | --- | --- |
-> | 壳 | Tauri 2.0（Rust），包体 ~10MB |
-> | 后端 | Rust：存档/商店/题库/出题/考试判分全部在 Rust 侧，数据编译进二进制 |
-> | 前端 | Vanilla JS（ES Modules，零框架零打包器） |
-> | 角色 | SVG 矢量分层组装（素体 → 装扮 9 层 → 五官 → 发型） |
-> | 房间 | PixiJS（WebGL）等距 2.5D 场景，SVG → 纹理 |
-> | 存档 | JSON，位于系统应用支持目录 |
-> 
-> ## 📁 目录结构
-> 
-> ```
-> ├── src/                    # 前端（Vanilla JS）
-> │   ├── index.html          # 单页界面（注册/主界面/学习中心 + 7 个弹窗）
-> │   ├── main.js             # 交互逻辑（捏脸/衣橱/预设/商店/房间/跟练/考试）
-> │   ├── styles.css          # 暖色卡通主题
-> │   ├── lib/pixi.min.js     # PixiJS（本地 UMD）
-> │   └── js/
-> │       ├── api.js          #   Tauri invoke 封装
-> │       ├── character.js    #   素体 + 五官/发型/装扮分层渲染器
-> │       ├── wardrobe.js     #   50 件装扮 SVG 素材（9 部位）
-> │       ├── furniture.js    #   18 件家具 SVG 素材
-> │       ├── room.js         #   等距 2.5D 房间（Pixi，拖拽/吸附/深度排序）
-> │       └── tts.js          #   单词朗读
-> ├── src-tauri/              # Rust 后端
-> │   ├── src/
-> │   │   ├── models.rs       #   存档数据结构（档案/人物/脸型/装扮/进度）
-> │   │   ├── commands.rs     #   Tauri 指令（注册/创建/换装/购买/摆放…）
-> │   │   ├── content.rs      #   13 册教材 + 语法卡加载
-> │   │   ├── questions.rs    #   跟练卡与 15 题考卷生成、判分
-> │   │   └── shop.rs         #   商店目录（50 装扮 + 18 家具）
-> │   └── data/               # books/（13 册 JSON）+ wardrobe/furniture/grammar
-> ├── test/                   # 冒烟测试（jsdom 全流程 / 渲染 / 契约）
-> ├── scripts/screenshots.mjs # README 截图自动生成
-> └── docs/DESIGN.md          # 设计稿
+> ```sh
+> brew install xcodegen   # once
+> make run                # generate, build, launch a Debug build
+> make test               # unit tests
 > ```
 > 
-> 存档位置：`~/Library/Application Support/com.zhengzhong.oc-english/player.json`
+> No signing identity is required for either. `make release` — which archives,
+> notarizes, and produces a signed auto-update feed — needs a Developer ID
+> certificate and an App Store Connect notary profile, and is only ever run by
+> the maintainer to cut an official release. See
+> [CONTRIBUTING.md](CONTRIBUTING.md).
 > 
-> ---
+> Run with `CODENOTCH_DEMO=1` to see fixed sample data instead of live readings.
 > 
-> ## 💻 安装步骤
+> ## Architecture
 > 
-> ### 1. 环境要求（macOS）
+> Every provider implements `UsageProvider` (`Sources/Providers/`) and declares
+> its own `Fidelity` — `.official`, `.derived`, or `.manual` — so the UI never
+> presents a guess as if a vendor had published it. `UsageStore`
+> (`Sources/Model/`) polls them on a timer, keeps the last good reading across
+> launches, and degrades every failure to a visible status rather than a
+> made-up percentage.
 > 
-> | 依赖 | 版本 | 安装 |
-> | --- | --- | --- |
-> | Xcode Command Line Tools | — | `xcode-select --install` |
-> | Rust | stable | `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs \| sh` |
-> | Node.js | ≥ 22 | 官网下载或 `brew install node` |
+> The notch itself works in one-dimensional **stack space** (`along`/`across`)
+> regardless of which screen edge it's on; `NotchPlacement` is the only place
+> that maps that back onto real screen coordinates. `NotchLayout` holds every
+> measurement, quoted from `docs/design/frame-124-hover-tooltip.png` so the
+> layout can be checked against the design frame directly.
 > 
-> ### 2. 获取代码并安装依赖
+> - Design spec: [`docs/specs/2026-08-28-usage-notch-design.md`](docs/specs/2026-08-28-usage-notch-design.md)
+> - Implementation history: [`TASKS.md`](TASKS.md)
 > 
-> ```bash
-> git clone  OC学英语
-> cd OC学英语
-> npm install          # 仅两个开发依赖：@tauri-apps/cli、jsdom（npm 建议配国内镜像）
+> ## The honest caveat
+> 
+> No vendor publishes a clean "your session limit is N% used" API for any of
+> these tools. Each adapter reads whatever the owning app itself reads from —
+> an internal endpoint, a local database, a language server's own RPC — and
+> those can change without notice. Every adapter's response shape is pinned by
+> tests, and every failure degrades to a visible status (`stale`, `needsAuth`,
+> `error`) rather than an invented number.
+> 
+> **Keychain:** the app is signed with a stable Developer ID identity so the
+> one-time "Always Allow" grant on Claude Code's and Antigravity's keychain
+> items survives rebuilds. The secret itself is read only when the owning app
+> has actually changed it — checked via the item's modification date, which
+> isn't behind the same access prompt as the credential — so a valid grant does
+> not mean a prompt on every poll.
+> 
+> **Rate limits:** Claude's endpoint returns 429 if polled too hard, with an
+> unhelpful `Retry-After: 0`. The back-off treats that as a floor-raiser only —
+> 60s, doubling per consecutive 429, capped at 15 minutes — and the deadline is
+> persisted, so relaunching during a penalty waits instead of spending an
+> attempt on it. Polling drops to every 5 minutes when nothing is running, and
+> right-clicking the notch offers **Refresh now**.
+> 
+> **Logs:** the app has no window, so anything worth diagnosing goes to the
+> unified log.
+> 
+> ```sh
+> /usr/bin/log stream --predicate 'subsystem == "com.vinz.codenotch"' --level debug
 > ```
 > 
-> ### 3. 开发模式运行（日常迭代推荐）
+> ## Contributing
 > 
-> ```bash
-> npm run tauri dev
-> ```
+> See [CONTRIBUTING.md](CONTRIBUTING.md).
 > 
-> 首次会编译 Rust 依赖（几分钟），之后热更新秒级生效。
+> ## License
 > 
-> ### 4. 打包成正式 App
-> 
-> ```bash
-> npm run tauri build
-> ```
-> 
-> 产物：
-> 
-> ```
-> src-tauri/target/release/bundle/macos/带着OC学英语.app   ← 双击即用
-> src-tauri/target/release/bundle/dmg/带着OC学英语_0.1.0_aarch64.dmg
-> ```
-> 
-> > ⚠️ 未做 Apple 签名公证，首次打开若被 Gatekeeper 拦截：**右键 → 打开**，或执行
-> > `xattr -cr 带着OC学英语.app`
-> 
-> ---
-> 
-> ## ✅ 测试
-> 
-> ```bash
-> npm test
-> ```
-> 
-> | 套件 | 覆盖 |
-> | --- | --- |
-> | `test:rust` | Rust 单测 + 全流程集成（注册→学习→考试→购买） |
-> | `test:contract` | 前端 api.js 与 Rust 指令契约对齐 |
-> | `test:render` | 50 装扮 + 18 家具素材完整性、SVG 合法性（xmllint） |
-> | `test:ui` | jsdom 全流程冒烟：注册→捏脸→商店→换装→房间→跟练→考试→登出 |
-> 
-> README 截图再生成：`npm run screenshots`（需要本机装有 Google Chrome）。
-> 
-> ---
-> 
-> ## 🗺️ 路线图
-> 
-> - [x] M1 SVG 矢量角色渲染器 + 分层装扮系统
-> - [x] M2 Rust 数据层（多档案多 OC 存档）+ 可打包桌面应用
-> - [x] M3 13 册人教版教材 + 语法卡 + 跟练/单元考 + 积分商店
-> - [x] M4 素体按参考模板重制 + 50 件装扮精致化 + 蝴蝶少女一键同款
-> - [x] M5 等距 2.5D 房间 + 家具质感升级
-> - [ ] M6 iOS 手机版（Tauri 2 移动端，进行中）
-> - [ ] M7 安卓手机版
-> - [ ] M8 豆豆助手聊天 / 好友串门
+> [MIT](LICENSE)
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/yczz/oc-english)
+[GitHub](https://github.com/vinzdg/codenotch)
 
 ## 相關收錄
 
@@ -372,7 +348,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "yczz--oc-english"
+> WHERE category = "Other" AND file.name != "vinzdg--codenotch"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -381,7 +357,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "yczz--oc-english" AND status != "archived"
+> WHERE language = "Swift" AND file.name != "vinzdg--codenotch" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -390,18 +366,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W37" AND file.name != "yczz--oc-english"
+> WHERE week = "2026-W37" AND file.name != "vinzdg--codenotch"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/vinzdg--codenotch");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "yczz--oc-english" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "vinzdg--codenotch" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -417,7 +393,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "yczz" AND file.name != "yczz--oc-english"
+> WHERE owner = "vinzdg" AND file.name != "vinzdg--codenotch"
 > SORT stars DESC
 > ```
 
@@ -425,7 +401,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/vinzdg--codenotch");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -442,7 +418,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/vinzdg--codenotch");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -475,7 +451,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/vinzdg--codenotch");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -499,7 +475,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/vinzdg--codenotch");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -536,7 +512,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/yczz--oc-english");
+> const me = dv.page("Repos/vinzdg--codenotch");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -619,7 +595,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-06** — 首次收錄
+> **2026-09-08** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -635,5 +611,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-08|2026-09-08]] — 再次上榜，850 stars
-- [[2026-09-06|2026-09-06]] — 首次收錄，823 stars
+- [[2026-09-08|2026-09-08]] — 首次收錄，959 stars

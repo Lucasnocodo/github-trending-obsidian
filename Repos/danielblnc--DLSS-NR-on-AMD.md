@@ -7,12 +7,12 @@ language: N/A
 license: N/A
 description: "Run DLSS 5 Neural Rendering on your AMD GPU. Magic!"
 homepage: ""
-stars: 671
-stars_per_day: 224
-forks: 27
-open_issues: 72
+stars: 871
+stars_per_day: 174
+forks: 35
+open_issues: 85
 created: 2026-09-03
-pushed_at: 2026-09-05
+pushed_at: 2026-09-06
 first_seen: 2026-09-05
 week: "2026-W36"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-09"
+appearances: 3
+next_review: "2026-09-15"
 contributor_count: 0
 engagement: "low"
 issue_close_rate: 4
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-05"
-star_history: "2026-09-05:497,2026-09-06:671"
+star_history: "2026-09-05:497,2026-09-06:671,2026-09-08:871"
 tags:
   - github
   - "category/other"
@@ -495,5 +495,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-08|2026-09-08]] — 再次上榜，871 stars
 - [[2026-09-06|2026-09-06]] — 再次上榜，671 stars
 - [[2026-09-05|2026-09-05]] — 首次收錄，497 stars
