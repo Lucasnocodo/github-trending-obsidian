@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Sketch Material 3 Expressive screens in the browser and turn them into vibe-coding prompts."
 homepage: "https://lnkiai.github.io/m3e-canvas/"
-stars: 4768
-stars_per_day: 795
-forks: 418
-open_issues: 2
+stars: 5315
+stars_per_day: 759
+forks: 489
+open_issues: 0
 created: 2026-09-02
-pushed_at: 2026-09-07
+pushed_at: 2026-09-09
 first_seen: 2026-09-05
 week: "2026-W36"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-09-11"
+appearances: 5
+next_review: "2026-09-12"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-05"
-star_history: "2026-09-05:2250,2026-09-06:3865,2026-09-07:4381,2026-09-08:4768"
+star_history: "2026-09-05:2250,2026-09-06:3865,2026-09-07:4381,2026-09-08:4768,2026-09-09:5315"
 tags:
   - github
   - "category/other"
@@ -571,6 +571,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-09|2026-09-09]] — 再次上榜，5.3k stars
 - [[2026-09-08|2026-09-08]] — 再次上榜，4.8k stars
 - [[2026-09-07|2026-09-07]] — 再次上榜，4.4k stars
 - [[2026-09-06|2026-09-06]] — 再次上榜，3.9k stars

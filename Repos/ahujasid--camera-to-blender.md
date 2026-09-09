@@ -1,63 +1,63 @@
 ---
-repo: vinzdg/codenotch
-url: https://github.com/vinzdg/codenotch
-owner: vinzdg
+repo: ahujasid/camera-to-blender
+url: https://github.com/ahujasid/camera-to-blender
+owner: ahujasid
 owner_type: User
-language: Swift
+language: JavaScript
 license: MIT
-description: "A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge."
+description: "Take a photo of real objects, and paste them in Blender"
 homepage: ""
-stars: 1136
-stars_per_day: 379
-forks: 185
-open_issues: 18
-created: 2026-09-05
-pushed_at: 2026-09-09
-first_seen: 2026-09-08
+stars: 778
+stars_per_day: 156
+forks: 77
+open_issues: 0
+created: 2026-09-03
+pushed_at: 2026-09-05
+first_seen: 2026-09-09
 week: "2026-W37"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v1.5.0"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-08
+last_reviewed: 2026-09-09
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-12"
-contributor_count: 5
-engagement: "medium"
-issue_close_rate: 6
-repo_size_kb: 15410
-readme_length: 6543
+appearances: 1
+next_review: "2026-09-16"
+contributor_count: 2
+engagement: "low"
+issue_close_rate: 100
+repo_size_kb: 31
+readme_length: 3147
 bus_factor: 1
-last_release_days: 1
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-08"
-star_history: "2026-09-08:959,2026-09-09:1136"
+ring_history: "assess@2026-09-09"
+star_history: "2026-09-09:778"
 tags:
   - github
   - "category/other"
-  - "lang/swift"
+  - "lang/javascript"
 aliases:
-  - "codenotch"
-  - "vinzdg/codenotch"
+  - "camera-to-blender"
+  - "ahujasid/camera-to-blender"
 ---
 
-# codenotch
+# camera-to-blender
 
-**959** stars · **480** stars/天 · 建立 2 天前 · Swift · MIT
+**778** stars · **156** stars/天 · 建立 5 天前 · JavaScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/vinzdg--codenotch");
+const me = dv.page("Repos/ahujasid--camera-to-blender");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v1.5.0`
-
 > [!summary] 一句話摘要
-> A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge.
+> Take a photo of real objects, and paste them in Blender
 
 ## 專案簡介
 
-A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge.
+Take a photo of real objects, and paste them in Blender
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/ahujasid--camera-to-blender");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +116,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/ahujasid--camera-to-blender");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,205 +140,147 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 153 |
-| Open Issues | 31 |
-| Issue 解決率 | 6% (2 closed) |
-| 最後推送 | 2026-09-07 |
-| 建立日期 | 2026-09-05 |
-| Repo 大小 | 15.0 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/vinzdg/codenotch) |
+| Forks | 77 |
+| Open Issues | 0 |
+| Issue 解決率 | 100% (1 closed) |
+| 最後推送 | 2026-09-05 |
+| 建立日期 | 2026-09-03 |
+| Repo 大小 | 31 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/ahujasid/camera-to-blender) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Swift" : 99
->     "Makefile" : 1
+>     "JavaScript" : 43
+>     "Python" : 27
+>     "CSS" : 20
+>     "HTML" : 10
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@vinzdg](https://github.com/vinzdg) | 16 |
-> | [@oasis1992](https://github.com/oasis1992) | 2 |
-> | [@canberkys](https://github.com/canberkys) | 1 |
-> | [@mohammad-albarham](https://github.com/mohammad-albarham) | 1 |
-> | [@mhmzdev](https://github.com/mhmzdev) | 1 |
-
-**最新版本**：v1.5.0 — 1.5.0 (2026-09-07)
-
-> [!info]- Release Notes
-> ## New
-> 
-> - **Grok** — SuperGrok's weekly Grok Build credits, read from the CLI's own session in `~/.grok/auth.json`. (#15, thanks @pgm-norbert; #10 @MintarasGrinius and #12 @maheshauti96 also explored this independently)
-> - **OpenCode** — the Go plan's official usage endpoint, with the key OpenCode itself stores on sign-in. (#11, thanks @MintarasGrinius)
-> 
-> ## Fixed
-> 
-> - Switching a provider off could still have its account read when Settings opened, and a response already in flight could restore a reading you'd just asked it to forget. (#13, thanks @canberkys)
-> - Codex's live reading only recognised a 5-hour and a 7-day window. A free-plan account's real limit was a 30-day one, which silently fell through and reported "nothing metered" on an account that was genuinely tracked — caught by testing the fix against a real account. (#14, thanks @TrapstarKS)
-> - Contributors can now `make build`/`make test` with no Apple Developer account — Debug builds sign themselves automatically when the maintainer's certificate isn't present. (based on #8, thanks @MintarasGrinius)
-> - (Shipped earlier as 1.4.1, now synced to this repo) A Mac waking from a long sleep could erase a ring's remembered reading entirely.
-> 
-> ## Not merged
-> 
-> ...（完整內容見 GitHub）
+> | [@ahujasid](https://github.com/ahujasid) | 2 |
+> | [@comoc](https://github.com/comoc) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-06 ~ 2026-09-07）
-> **活躍天數** 2 天 · **最新 commit** Codenotch 1.5.0
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#18](https://github.com/vinzdg/codenotch/issues/18) | Publish a precompiled .dmg in releases | 11 | 0 |
-> | [#21](https://github.com/vinzdg/codenotch/issues/21) | make run fails on a fresh clone: signing-identity check neve | 1 | 0 |
-> | [#45](https://github.com/vinzdg/codenotch/issues/45) | Makefile: ad-hoc signing fallback never triggers (grep -c ne | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-09-03 ~ 2026-09-05）
+> **活躍天數** 2 天 · **最新 commit** Merge pull request #2 from comoc/fix/tripo-model-version
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Codenotch
+> # Camera to 3D
 > 
-> A macOS app that pins a small black notch to a screen edge, showing how much of
-> each coding assistant's usage limit you have burned — and whether it is still
-> working, done, or waiting on you.
+> Point your phone at an object, take a photo, and watch a 3D model appear in Blender in under a minute.
 > 
-> Hover a ring for its limit windows and when they reset. Claude's ring shows the
-> same **current session** window Claude Code's own `/usage` leads with, so the
-> two never disagree.
+> Take photo → background removed → 3D model generated → auto-imported into Blender.
 > 
-> ## What it reads
+> The camera UI is built for phone. You run the server on the computer where Blender is open, then open the web app on your phone. A laptop webcam works too.
 > 
-> | Provider | Source | How |
-> |---|---|---|
-> | **Claude Code** | official | The OAuth token in the login keychain, against the same endpoint Claude Code's own `/usage` uses. |
-> | **Cursor** | official | The editor's own signed-in session, read from its local SQLite state — no separate sign-in. |
-> | **Codex** | official | ChatGPT's usage endpoint, using the local Codex sign-in. Shows the 5-hour and weekly limits when available. |
-> | **Antigravity** | official where licensed, otherwise a request count | Antigravity's local language server first, then Google's quota endpoint; a plain count when neither will answer for the account. |
-> | **GLM** | official | Z.ai's Coding Plan monitor endpoint, with a key borrowed from whichever coding tool already holds one — Claude Code's `settings.json`, ZCode, or OpenCode. |
-> | **Grok** | official | The Grok CLI session in `~/.grok/auth.json`, against the same credits billing endpoint `/usage` uses. |
-> | **OpenCode** | official | The Go plan's official usage endpoint, with the `opencode-go` key OpenCode itself stores on sign-in. |
+> ## You'll need
 > 
-> Codenotch never signs in anywhere. Every reading is borrowed from a credential
-> or session a tool on your Mac already holds — install and sign in to any of
-> them, and its ring appears. Switching a provider off in Settings stops its
-> credential being read at all and forgets the readings taken from it; it does
-> not sign you out of the tool that owns the account, and the row says so.
+> - Python 3.10+
+> - Blender 3.0+
+> - A [Tripo3D](https://platform.tripo3d.ai/) API key — required, this makes the 3D models
+> - A [Gemini](https://aistudio.google.com/) API key — optional, removes the photo background
+> - [ngrok](https://ngrok.com/download) — required for phone use, since phone cameras need HTTPS
 > 
-> It also answers **"is it still working?"** — a thin arc spins inside a
-> provider's ring while a session is busy, and becomes a pulsing amber ring when
-> one is blocked waiting on you. Hover for every live session by name, where it
-> is running, and what it wants.
+> ## Setup
 > 
-> Two Claude Code logins are two rings. Anyone who keeps a work account apart with
-> `CLAUDE_CONFIG_DIR=~/.claude-work claude` gets a **Claude (work)** ring beside the
-> personal one, with its own limits, its own sessions and its own row in Settings.
-> Any `~/.claude-` directory Claude Code has run against is found at launch;
-> the default `~/.claude` always comes first, the rest in alphabetical order, so the
-> rings never swap places.
+> ### 1. Install
 > 
-> ## Placement
-> 
-> The notch lives on any of the four screen edges. Right and left keep a
-> vertical column; top and bottom lay the readings out side by side. It pins
-> itself to the *usable* edge, so a bottom notch rests on the Dock and follows
-> when the Dock hides or moves. On a Mac with a hardware notch, the top
-> placement takes its exact shape, so the two read as one rather than as a bar
-> parked underneath it.
-> 
-> At rest it is a small pill on the screen edge that unfolds when the pointer
-> reaches it — configurable in Settings to always show, or to hide entirely.
-> Settings live in an orb below the notch: an arc at rest, a gear on hover.
-> 
-> The app itself can show a Dock icon, a menu bar icon, or neither.
-> 
-> ## Updates
-> 
-> Codenotch updates itself. [Sparkle](https://sparkle-project.org) checks daily
-> and installs in the background without prompting; Settings says so and can
-> switch it off. Every update is EdDSA-signed, so nothing installs that wasn't
-> built and signed by the maintainer.
-> 
-> ## Building
-> 
-> ```sh
-> brew install xcodegen   # once
-> make run                # generate, build, launch a Debug build
-> make test               # unit tests
+> ```bash
+> pip install -r requirements.txt
+> cp .env.example .env
 > ```
 > 
-> No signing identity is required for either. `make release` — which archives,
-> notarizes, and produces a signed auto-update feed — needs a Developer ID
-> certificate and an App Store Connect notary profile, and is only ever run by
-> the maintainer to cut an official release. See
-> [CONTRIBUTING.md](CONTRIBUTING.md).
+> Put your API keys in `.env`:
 > 
-> Run with `CODENOTCH_DEMO=1` to see fixed sample data instead of live readings.
-> 
-> ## Architecture
-> 
-> Every provider implements `UsageProvider` (`Sources/Providers/`) and declares
-> its own `Fidelity` — `.official`, `.derived`, or `.manual` — so the UI never
-> presents a guess as if a vendor had published it. `UsageStore`
-> (`Sources/Model/`) polls them on a timer, keeps the last good reading across
-> launches, and degrades every failure to a visible status rather than a
-> made-up percentage.
-> 
-> The notch itself works in one-dimensional **stack space** (`along`/`across`)
-> regardless of which screen edge it's on; `NotchPlacement` is the only place
-> that maps that back onto real screen coordinates. `NotchLayout` holds every
-> measurement, quoted from `docs/design/frame-124-hover-tooltip.png` so the
-> layout can be checked against the design frame directly.
-> 
-> - Design spec: [`docs/specs/2026-08-28-usage-notch-design.md`](docs/specs/2026-08-28-usage-notch-design.md)
-> - Implementation history: [`TASKS.md`](TASKS.md)
-> 
-> ## The honest caveat
-> 
-> No vendor publishes a clean "your session limit is N% used" API for any of
-> these tools. Each adapter reads whatever the owning app itself reads from —
-> an internal endpoint, a local database, a language server's own RPC — and
-> those can change without notice. Every adapter's response shape is pinned by
-> tests, and every failure degrades to a visible status (`stale`, `needsAuth`,
-> `error`) rather than an invented number.
-> 
-> **Keychain:** the app is signed with a stable Developer ID identity so the
-> one-time "Always Allow" grant on Claude Code's and Antigravity's keychain
-> items survives rebuilds. The secret itself is read only when the owning app
-> has actually changed it — checked via the item's modification date, which
-> isn't behind the same access prompt as the credential — so a valid grant does
-> not mean a prompt on every poll.
-> 
-> **Rate limits:** Claude's endpoint returns 429 if polled too hard, with an
-> unhelpful `Retry-After: 0`. The back-off treats that as a floor-raiser only —
-> 60s, doubling per consecutive 429, capped at 15 minutes — and the deadline is
-> persisted, so relaunching during a penalty waits instead of spending an
-> attempt on it. Polling drops to every 5 minutes when nothing is running, and
-> right-clicking the notch offers **Refresh now**.
-> 
-> **Logs:** the app has no window, so anything worth diagnosing goes to the
-> unified log.
-> 
-> ```sh
-> /usr/bin/log stream --predicate 'subsystem == "com.vinz.codenotch"' --level debug
+> ```
+> TRIPO_API_KEY=your_tripo_api_key_here
+> GEMINI_API_KEY=your_gemini_api_key_here
 > ```
 > 
-> ## Contributing
+> ### 2. Start the server
 > 
-> See [CONTRIBUTING.md](CONTRIBUTING.md).
+> ```bash
+> uvicorn relay_server:app --host 0.0.0.0 --port 8000
+> ```
+> 
+> In a second terminal:
+> 
+> ```bash
+> ngrok http 8000
+> ```
+> 
+> ngrok gives you a URL like `https://abc123.ngrok-free.app`. You'll use it for both the phone and Blender.
+> 
+> ### 3. Connect Blender
+> 
+> 1. **Edit → Preferences → Add-ons → Install**, pick `ws_import_addon.zip`, enable it
+> 2. Press `N` in the 3D viewport → **WS Import** tab
+> 3. Paste your ngrok URL, but swap `https` for `wss` and add `/ws?client=blender`:
+> 
+>    ```
+>    wss://abc123.ngrok-free.app/ws?client=blender
+>    ```
+> 
+> 4. Click **Connect**. It should say **Status: Connected**
+> 
+> ### 4. Use it
+> 
+> Open the ngrok URL on your phone, allow camera access, and point at an object. Tap the shutter, confirm the photo, then wait ~30–60 seconds. When the model is ready, tap **Send to Blender**.
+> 
+> ## Settings
+> 
+> All optional except the Tripo key. Set these in `.env`:
+> 
+> | Variable | Description |
+> | --- | --- |
+> | `TRIPO_API_KEY` | Required. Generates the 3D models |
+> | `GEMINI_API_KEY` | Removes the photo background. Leave empty to skip it and use the photo as-is |
+> | `PORT` | Server port, defaults to `8000` |
+> 
+> ## Running without a phone
+> 
+> To test from your laptop webcam, skip ngrok. Open `http://localhost:8000` and point Blender at `ws://localhost:8000/ws?client=blender`.
+> 
+> ## If something breaks
+> 
+> **Camera won't open on phone** — you need the `https://` ngrok URL, not a local IP.
+> 
+> **"Failed to send to Blender"** — the add-on isn't connected. Check the WS Import panel says Connected, and that your URL starts with `wss://` and ends with `?client=blender`.
+> 
+> **ngrok URL stopped working** — free ngrok URLs change every restart. Reconnect Blender with the new one.
+> 
+> **Background removal fails** — usually a Gemini quota or key problem. You can leave `GEMINI_API_KEY` empty to skip it.
+> 
+> ## What's in here
+> 
+> ```
+> relay_server.py          The server: talks to the APIs, relays models to Blender
+> webapp/                  The phone camera app
+> blender_addon/           Add-on source
+> ws_import_addon.zip      The add-on to install in Blender
+> ```
+> 
+> If you edit the add-on source, repackage it before installing:
+> 
+> ```bash
+> zip -r ws_import_addon.zip blender_addon -x "*/__pycache__/*" "*.pyc"
+> ```
 > 
 > ## License
 > 
-> [MIT](LICENSE)
+> MIT — see [LICENSE](LICENSE).
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/vinzdg/codenotch)
+[GitHub](https://github.com/ahujasid/camera-to-blender)
 
 ## 相關收錄
 
@@ -348,7 +288,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "vinzdg--codenotch"
+> WHERE category = "Other" AND file.name != "ahujasid--camera-to-blender"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -357,7 +297,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Swift" AND file.name != "vinzdg--codenotch" AND status != "archived"
+> WHERE language = "JavaScript" AND file.name != "ahujasid--camera-to-blender" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -366,18 +306,18 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W37" AND file.name != "vinzdg--codenotch"
+> WHERE week = "2026-W37" AND file.name != "ahujasid--camera-to-blender"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/ahujasid--camera-to-blender");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "vinzdg--codenotch" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "ahujasid--camera-to-blender" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -393,7 +333,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "vinzdg" AND file.name != "vinzdg--codenotch"
+> WHERE owner = "ahujasid" AND file.name != "ahujasid--camera-to-blender"
 > SORT stars DESC
 > ```
 
@@ -401,7 +341,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/ahujasid--camera-to-blender");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -418,7 +358,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/ahujasid--camera-to-blender");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -451,7 +391,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/ahujasid--camera-to-blender");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -475,7 +415,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/ahujasid--camera-to-blender");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -512,7 +452,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/ahujasid--camera-to-blender");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -595,7 +535,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-08** — 首次收錄
+> **2026-09-09** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -611,5 +551,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-09|2026-09-09]] — 再次上榜，1.1k stars
-- [[2026-09-08|2026-09-08]] — 首次收錄，959 stars
+- [[2026-09-09|2026-09-09]] — 首次收錄，778 stars

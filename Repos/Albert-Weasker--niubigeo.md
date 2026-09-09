@@ -1,63 +1,63 @@
 ---
-repo: vinzdg/codenotch
-url: https://github.com/vinzdg/codenotch
-owner: vinzdg
+repo: Albert-Weasker/niubigeo
+url: https://github.com/Albert-Weasker/niubigeo
+owner: Albert-Weasker
 owner_type: User
-language: Swift
-license: MIT
-description: "A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge."
+language: TypeScript
+license: Apache-2.0
+description: "Open-source AI brand visibility and competitor reports"
 homepage: ""
-stars: 1136
-stars_per_day: 379
-forks: 185
-open_issues: 18
-created: 2026-09-05
-pushed_at: 2026-09-09
-first_seen: 2026-09-08
+stars: 2182
+stars_per_day: 436
+forks: 69
+open_issues: 11
+created: 2026-09-03
+pushed_at: 2026-09-08
+first_seen: 2026-09-09
 week: "2026-W37"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v1.5.0"
+release_tag: "v0.2.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-08
+last_reviewed: 2026-09-09
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-12"
-contributor_count: 5
-engagement: "medium"
-issue_close_rate: 6
-repo_size_kb: 15410
-readme_length: 6543
+contributor_count: 3
+engagement: "low"
+issue_close_rate: 15
+repo_size_kb: 33730
+readme_length: 9559
 bus_factor: 1
 last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-08"
-star_history: "2026-09-08:959,2026-09-09:1136"
+ring_history: "assess@2026-09-09"
+star_history: "2026-09-09:2182"
 tags:
   - github
   - "category/other"
-  - "lang/swift"
+  - "lang/typescript"
 aliases:
-  - "codenotch"
-  - "vinzdg/codenotch"
+  - "niubigeo"
+  - "Albert-Weasker/niubigeo"
 ---
 
-# codenotch
+# niubigeo
 
-**959** stars · **480** stars/天 · 建立 2 天前 · Swift · MIT
+**2.2k** stars · **436** stars/天 · 建立 5 天前 · TypeScript · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/vinzdg--codenotch");
+const me = dv.page("Repos/Albert-Weasker--niubigeo");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v1.5.0`
+`v0.2.0`
 
 > [!summary] 一句話摘要
-> A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge.
+> Open-source AI brand visibility and competitor reports
 
 ## 專案簡介
 
-A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge.
+Open-source AI brand visibility and competitor reports
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/Albert-Weasker--niubigeo");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/Albert-Weasker--niubigeo");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,205 +142,218 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 153 |
-| Open Issues | 31 |
-| Issue 解決率 | 6% (2 closed) |
-| 最後推送 | 2026-09-07 |
-| 建立日期 | 2026-09-05 |
-| Repo 大小 | 15.0 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/vinzdg/codenotch) |
+| Forks | 69 |
+| Open Issues | 11 |
+| Issue 解決率 | 15% (2 closed) |
+| 最後推送 | 2026-09-08 |
+| 建立日期 | 2026-09-03 |
+| Repo 大小 | 32.9 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Albert-Weasker/niubigeo) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Swift" : 99
->     "Makefile" : 1
+>     "TypeScript" : 93
+>     "JavaScript" : 7
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@vinzdg](https://github.com/vinzdg) | 16 |
-> | [@oasis1992](https://github.com/oasis1992) | 2 |
-> | [@canberkys](https://github.com/canberkys) | 1 |
-> | [@mohammad-albarham](https://github.com/mohammad-albarham) | 1 |
-> | [@mhmzdev](https://github.com/mhmzdev) | 1 |
+> | [@Albert-Weasker](https://github.com/Albert-Weasker) | 14 |
+> | [@tllovesxs](https://github.com/tllovesxs) | 1 |
+> | [@runefi](https://github.com/runefi) | 1 |
 
-**最新版本**：v1.5.0 — 1.5.0 (2026-09-07)
+**最新版本**：v0.2.0 — NiubiGEO v0.2.0 (2026-09-08)
 
 > [!info]- Release Notes
-> ## New
+> # NiubiGEO v0.2.0
 > 
-> - **Grok** — SuperGrok's weekly Grok Build credits, read from the CLI's own session in `~/.grok/auth.json`. (#15, thanks @pgm-norbert; #10 @MintarasGrinius and #12 @maheshauti96 also explored this independently)
-> - **OpenCode** — the Go plan's official usage endpoint, with the key OpenCode itself stores on sign-in. (#11, thanks @MintarasGrinius)
+> NiubiGEO is an open-source, self-hosted tool for observing how AI models describe a product and which competing products appear in their answers.
 > 
-> ## Fixed
+> ## What Is Included
 > 
-> - Switching a provider off could still have its account read when Settings opened, and a response already in flight could restore a reading you'd just asked it to forget. (#13, thanks @canberkys)
-> - Codex's live reading only recognised a 5-hour and a 7-day window. A free-plan account's real limit was a 30-day one, which silently fell through and reported "nothing metered" on an account that was genuinely tracked — caught by testing the fix against a real account. (#14, thanks @TrapstarKS)
-> - Contributors can now `make build`/`make test` with no Apple Developer account — Debug builds sign themselves automatically when the maintainer's certificate isn't present. (based on #8, thanks @MintarasGrinius)
-> - (Shipped earlier as 1.4.1, now synced to this repo) A Mac waking from a long sleep could erase a ring's remembered reading entirely.
+> - Independent domain projects, saved model selections and versioned monitoring configurations.
+> - Per-model domain recognition, raw answers, competitor descriptions, brand keywords and competitor keywords.
+> - Separate offline and Provider-native search settings. Provider citations stay separate from ordinary answer URLs.
+> - Cross-model evidence views, keyword measurements, comparable repeat runs and a separate scheduling worker.
+> - Synchronized English and Chinese READMEs, new logos and 20 public real-domain cases with original answers and screenshots.
 > 
-> ## Not merged
+> [English guide](https://github.com/Albert-Weasker/niubigeo/blob/v0.2.0/README.md) · [简体中文](https://github.com/Albert-Weasker/niubigeo/blob/v0.2.0/README.zh-CN.md) · [20 real cases](https://github.com/Albert-Weasker/niubigeo/blob/v0.2.0/examples/README.md)
+> 
+> ## Install
+> 
+> ```bash
+> docker pull ghcr.io/albert-weasker/niubigeo:v0.2.0
+> docker run -d --name niubigeo \
+>   -p 127.0.0.1:8787:8787 \
+>   -e OPENROUTER_API_KEY \
+>   -v niubigeo-data:/app/data/product-v2 \
+>   ghcr.io/albert-weasker/niubigeo:v0.2.0
+> ```
 > 
 > ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-06 ~ 2026-09-07）
-> **活躍天數** 2 天 · **最新 commit** Codenotch 1.5.0
+> [!abstract] 最近 10 次 commit（2026-09-04 ~ 2026-09-08）
+> **活躍天數** 3 天 · **最新 commit** 修复结构化空回答被截断时无法触发认知重试 (#23)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#18](https://github.com/vinzdg/codenotch/issues/18) | Publish a precompiled .dmg in releases | 11 | 0 |
-> | [#21](https://github.com/vinzdg/codenotch/issues/21) | make run fails on a fresh clone: signing-identity check neve | 1 | 0 |
-> | [#45](https://github.com/vinzdg/codenotch/issues/45) | Makefile: ad-hoc signing fallback never triggers (grep -c ne | 0 | 0 |
+> | [#20](https://github.com/Albert-Weasker/niubigeo/issues/20) | [Bug]: Short brand names can misclassify unbranded prompts | 0 | 0 |
+> | [#18](https://github.com/Albert-Weasker/niubigeo/issues/18) | [Bug]: Web search is reported as used without execution evid | 0 | 0 |
+> | [#16](https://github.com/Albert-Weasker/niubigeo/issues/16) | [Bug]: GitHub repository citations can match repositories wi | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Codenotch
+> # Does AI recommend your product? Who shows up instead?
 > 
-> A macOS app that pins a small black notch to a screen edge, showing how much of
-> each coding assistant's usage limit you have burned — and whether it is still
-> working, done, or waiting on you.
+> **Enter a domain. Compare how models describe your product, who they recommend, and which sources they cite.**
 > 
-> Hover a ring for its limit windows and when they reset. Claude's ring shows the
-> same **current session** window Claude Code's own `/usage` leads with, so the
-> two never disagree.
+>   GitHub · 简体中文 · Quick start · 20 real cases · Releases · Packages · Docs
+>   
+>   Features · How to use it · Monitoring · Compare tools · Why NiubiGEO · Sponsors
 > 
-> ## What it reads
+> You have built a product, written the docs and worked to get the word out. When people ask AI for tools, does your product make it into the answer?
 > 
-> | Provider | Source | How |
-> |---|---|---|
-> | **Claude Code** | official | The OAuth token in the login keychain, against the same endpoint Claude Code's own `/usage` uses. |
-> | **Cursor** | official | The editor's own signed-in session, read from its local SQLite state — no separate sign-in. |
-> | **Codex** | official | ChatGPT's usage endpoint, using the local Codex sign-in. Shows the 5-hour and weekly limits when available. |
-> | **Antigravity** | official where licensed, otherwise a request count | Antigravity's local language server first, then Google's quota endpoint; a plain count when neither will answer for the account. |
-> | **GLM** | official | Z.ai's Coding Plan monitor endpoint, with a key borrowed from whichever coding tool already holds one — Claude Code's `settings.json`, ZCode, or OpenCode. |
-> | **Grok** | official | The Grok CLI session in `~/.grok/auth.json`, against the same credits billing endpoint `/usage` uses. |
-> | **OpenCode** | official | The Go plan's official usage endpoint, with the `opencode-go` key OpenCode itself stores on sign-in. |
+> **NiubiGEO is an open-source tool for tracking brand visibility and competitors in AI answers.** Start with a domain to see how different models describe your product and which competitors they name. Then test keywords to find out who appears in the answers. Open any result to inspect the original response and returned sources.
 > 
-> Codenotch never signs in anywhere. Every reading is borrowed from a credential
-> or session a tool on your Mac already holds — install and sign in to any of
-> them, and its ring appears. Switching a provider off in Settings stops its
-> credential being read at all and forgets the readings taken from it; it does
-> not sign you out of the tool that owns the account, and the row says so.
+> > **Open the GEO reporting black box. Put evidence in your hands.**
 > 
-> It also answers **"is it still working?"** — a thin arc spins inside a
-> provider's ring while a session is busy, and becomes a pulsing amber ring when
-> one is blocked waiting on you. Hover for every live session by name, where it
-> is running, and what it wants.
+> ---
 > 
-> Two Claude Code logins are two rings. Anyone who keeps a work account apart with
-> `CLAUDE_CONFIG_DIR=~/.claude-work claude` gets a **Claude (work)** ring beside the
-> personal one, with its own limits, its own sessions and its own row in Settings.
-> Any `~/.claude-` directory Claude Code has run against is found at launch;
-> the default `~/.claude` always comes first, the rest in alphabetical order, so the
-> rings never swap places.
 > 
-> ## Placement
+> ## How to use it
 > 
-> The notch lives on any of the four screen edges. Right and left keep a
-> vertical column; top and bottom lay the readings out side by side. It pins
-> itself to the *usable* edge, so a bottom notch rests on the Dock and follows
-> when the Dock hides or moves. On a Mac with a hardware notch, the top
-> placement takes its exact shape, so the two read as one rather than as a bar
-> parked underneath it.
+> 1. **Enter a domain.** Create a project for your product. It is saved before you start testing.
+> 2. **Choose your models.** Search for and select one or more models, then set web search separately for each.
+> 3. **Save your configuration and start a test.** Models answer independently. If one fails, the other results remain available.
+> 4. **Open the results.** Review descriptions, competitors, keywords and sources. Open the original answer to check a finding.
+> 5. **Keep observing.** Confirm the keywords you want to test, then run keyword tests. Repeat measurements or set up scheduled monitoring to collect comparable records.
 > 
-> At rest it is a small pill on the screen edge that unfolds when the pointer
-> reaches it — configurable in Settings to always show, or to hide entirely.
-> Settings live in an orb below the notch: an arc at rest, a gear on hover.
+> Start with one model, then add more once you know what to look for. Reading the cases is free; testing your own project incurs model and search API charges.
 > 
-> The app itself can show a Dock icon, a menu bar icon, or neither.
 > 
-> ## Updates
+> ## Three real examples
 > 
-> Codenotch updates itself. [Sparkle](https://sparkle-project.org) checks daily
-> and installs in the background without prompting; Settings says so and can
-> switch it off. Every update is EdDSA-signed, so nothing installs that wasn't
-> built and signed by the maintainer.
+> | Notion | Figma | PostHog |
+> | :--- | :--- | :--- |
+> | [How models describe a product](#case-notion) | [Who appears without naming a brand](#case-figma) | [Sources and repeated tests](#case-posthog) |
 > 
-> ## Building
 > 
-> ```sh
-> brew install xcodegen   # once
-> make run                # generate, build, launch a Debug build
-> make test               # unit tests
+> ## Why we built NiubiGEO
+> 
+> Product teams need more than a score. We want to know whether our product is being seen, where it is misunderstood, why a competitor appears in an answer and what to investigate next.
+> 
+> Without the original answers, sources and test conditions, it is hard to know which findings to trust or where to spend your time and budget.
+> 
+> NiubiGEO makes those questions easier to investigate: read different models’ answers, spot differences in descriptions and keywords, check the sources and keep observing. Where the evidence is missing, the result stays uncertain. Failed runs stay on record, too.
+> 
+> 
+> ## What can you find out?
+> 
+> - **How AI sees your product.** What does it call your brand, and what does it think you do? Do different models agree?
+> - **Who else appears.** Which products does each model associate with yours? Do you or your competitors appear in keyword tests?
+> - **Which words it associates with you.** Compare the keywords models connect to your brand and other products to find differences worth investigating.
+> - **Where the results come from.** Inspect original answers, returned citations and changes across repeated tests.
+> 
+> See the workbench: PostHog model answers and evidence links
+> 
+> [](examples/cases/R04/README.md)
+> 
+> *Read what each model actually said, then open the sources to check. An original screenshot from the September 8, 2026 study. [Read the PostHog case](examples/cases/R04/README.md).*
+> 
+> 
+> ## Get started
+> 
+> **Want to see it in action first? [Explore 20 real cases](examples/README.md).** No installation or API key needed.
+> 
+> To test your own product, you will need Node.js 22+ and your own OpenRouter API key:
+> 
+> ```bash
+> git clone --branch v0.2.0 --depth 1 https://github.com/Albert-Weasker/niubigeo.git
+> cd niubigeo
+> npm ci
+> cp .env.example .env
 > ```
 > 
-> No signing identity is required for either. `make release` — which archives,
-> notarizes, and produces a signed auto-update feed — needs a Developer ID
-> certificate and an App Store Connect notary profile, and is only ever run by
-> the maintainer to cut an official release. See
-> [CONTRIBUTING.md](CONTRIBUTING.md).
+> Set `OPENROUTER_API_KEY` in `.env`, then start the app:
 > 
-> Run with `CODENOTCH_DEMO=1` to see fixed sample data instead of live readings.
-> 
-> ## Architecture
-> 
-> Every provider implements `UsageProvider` (`Sources/Providers/`) and declares
-> its own `Fidelity` — `.official`, `.derived`, or `.manual` — so the UI never
-> presents a guess as if a vendor had published it. `UsageStore`
-> (`Sources/Model/`) polls them on a timer, keeps the last good reading across
-> launches, and degrades every failure to a visible status rather than a
-> made-up percentage.
-> 
-> The notch itself works in one-dimensional **stack space** (`along`/`across`)
-> regardless of which screen edge it's on; `NotchPlacement` is the only place
-> that maps that back onto real screen coordinates. `NotchLayout` holds every
-> measurement, quoted from `docs/design/frame-124-hover-tooltip.png` so the
-> layout can be checked against the design frame directly.
-> 
-> - Design spec: [`docs/specs/2026-08-28-usage-notch-design.md`](docs/specs/2026-08-28-usage-notch-design.md)
-> - Implementation history: [`TASKS.md`](TASKS.md)
-> 
-> ## The honest caveat
-> 
-> No vendor publishes a clean "your session limit is N% used" API for any of
-> these tools. Each adapter reads whatever the owning app itself reads from —
-> an internal endpoint, a local database, a language server's own RPC — and
-> those can change without notice. Every adapter's response shape is pinned by
-> tests, and every failure degrades to a visible status (`stale`, `needsAuth`,
-> `error`) rather than an invented number.
-> 
-> **Keychain:** the app is signed with a stable Developer ID identity so the
-> one-time "Always Allow" grant on Claude Code's and Antigravity's keychain
-> items survives rebuilds. The secret itself is read only when the owning app
-> has actually changed it — checked via the item's modification date, which
-> isn't behind the same access prompt as the credential — so a valid grant does
-> not mean a prompt on every poll.
-> 
-> **Rate limits:** Claude's endpoint returns 429 if polled too hard, with an
-> unhelpful `Retry-After: 0`. The back-off treats that as a floor-raiser only —
-> 60s, doubling per consecutive 429, capped at 15 minutes — and the deadline is
-> persisted, so relaunching during a penalty waits instead of spending an
-> attempt on it. Polling drops to every 5 minutes when nothing is running, and
-> right-clicking the notch offers **Refresh now**.
-> 
-> **Logs:** the app has no window, so anything worth diagnosing goes to the
-> unified log.
-> 
-> ```sh
-> /usr/bin/log stream --predicate 'subsystem == "com.vinz.codenotch"' --level debug
+> ```bash
+> npm run server
 > ```
 > 
-> ## Contributing
+> Open [**http://localhost:8787**](http://localhost:8787) to create your first project.
 > 
-> See [CONTRIBUTING.md](CONTRIBUTING.md).
+> Prefer a container? Follow the [Docker guide](docs/deployment/docker.md). Existing users should read [Backups and upgrades](docs/upgrade.md).
 > 
-> ## License
 > 
-> [MIT](LICENSE)
+> ## From one answer to ongoing observation
+> 
+> | What you want to do | What NiubiGEO provides |
+> | :--- | :--- |
+> | **Manage several products** | Each domain has its own project, configuration, runs and evidence. Switch projects without mixing products into one report. |
+> | **Compare models** | Search, filter and select OpenRouter models. Inspect each model’s answer, result and errors, and retry a failed model separately. |
+> | **Choose whether to use web search** | Set each model to offline or its supported native search mode. Results retain the actual execution conditions. |
+> | **Understand brand and competitor descriptions** | Read business descriptions, categories, competing products and their associated keywords side by side. |
+> | **See who appears without naming your brand** | Confirm keywords, then test them without including your target brand’s name. Inspect actual mentions, recommendations and original wording. |
+> | **Check the evidence** | Original answers, text locations, Provider citations and ordinary answer URLs are shown separately. Failures and uncertainty remain on record. |
+> | **Build a history** | Save what you want to measure, repeat tests or schedule them. Follow historical records and data points back to the answers behind them. |
+> 
+> 
+> ### Repeated measurements and scheduled monitoring
+> 
+> The first domain test shows how models describe your product now. Confirm the competing products and keywords to measure that scope again or create a schedule. Previous records remain when your model selection changes; new models do not acquire invented history.
+> 
+> Scheduled execution requires the [monitoring worker](docs/deployment/docker.md#显式启用-worker) to be running. [PostHog’s three recorded measurements](examples/cases/R04/README.md) include a scheduled run, with answers and failures available for each. A few minutes of repeated tests do not establish long-term growth.
+> 
+> **[How it works in detail](docs/how-it-works.md)** · [Metrics and comparison conditions](docs/measurement-methodology.md) · [Known issues](docs/known-issues.md)
+> 
+> 
+> ### Notion · One product, different descriptions
+> 
+> In the `notion.so` test, models emphasized different aspects of the product: notes, a workspace and collaboration. They also named different competing products.
+> 
+> Reading the answers side by side shows which capabilities each model mentioned, which it left out and which products it associated with Notion.
+> 
+> These are descriptions from this test. Recognizing a domain after being asked about it is not the same as recommending it unprompted.
+> 
+> **[Read Notion’s descriptions and competing products](examples/cases/R08/README.md)**
+> 
+> View Notion’s original model-results screenshot
+> 
+> 
+> ### Figma · Who appears when the brand is not named?
+> 
+> In a **Prototyping** keyword test that did not name Figma, two offline answers mainly explained the concept of prototyping. An answer with web search requested named Figma and described its prototyping features.
+> 
+> This reveals which answers named an actual product and which only explained a concept. A brand mention, a positive description and an explicit recommendation are different things.
+> 
+> > Figma’s prototyping tools make it easy to build and share high-fidelity, no-code, interactive prototypes.
+> 
+> *Excerpt from the original answer: [GPT-4.1 mini · native search requested](examples/cases/R14/README.md#attempt-2afd57bb-3566-40f2-b339-995bd17b3687).*
+> 
+> **[Explore the Figma keyword test](examples/cases/R14/README.md)**
+> 
+> 
+> ### PostHog · Follow a source back to the answer
+> 
+> In the **Feature Flags** test for PostHog, model responses returned citations to pages including a Splunk blog post. NiubiGEO stores these separately from ordinary URLs in the answer text.
+> 
+> Follow a source to the corresponding answer and check where it appeared. A citation helps you inspect the response; it does not, by itself, explain why a model recommended something.
+> 
+> The case also includes three closely spaced measurements, one triggered by a sch
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/vinzdg/codenotch)
+[GitHub](https://github.com/Albert-Weasker/niubigeo)
 
 ## 相關收錄
 
@@ -348,7 +361,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "vinzdg--codenotch"
+> WHERE category = "Other" AND file.name != "Albert-Weasker--niubigeo"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -357,7 +370,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Swift" AND file.name != "vinzdg--codenotch" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "Albert-Weasker--niubigeo" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -366,18 +379,18 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W37" AND file.name != "vinzdg--codenotch"
+> WHERE week = "2026-W37" AND file.name != "Albert-Weasker--niubigeo"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/Albert-Weasker--niubigeo");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "vinzdg--codenotch" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Albert-Weasker--niubigeo" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -393,7 +406,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "vinzdg" AND file.name != "vinzdg--codenotch"
+> WHERE owner = "Albert-Weasker" AND file.name != "Albert-Weasker--niubigeo"
 > SORT stars DESC
 > ```
 
@@ -401,7 +414,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/Albert-Weasker--niubigeo");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -418,7 +431,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/Albert-Weasker--niubigeo");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -451,7 +464,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/Albert-Weasker--niubigeo");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -475,7 +488,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/Albert-Weasker--niubigeo");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -512,7 +525,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/Albert-Weasker--niubigeo");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -595,7 +608,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-08** — 首次收錄
+> **2026-09-09** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -611,5 +624,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-09|2026-09-09]] — 再次上榜，1.1k stars
-- [[2026-09-08|2026-09-08]] — 首次收錄，959 stars
+- [[2026-09-09|2026-09-09]] — 首次收錄，2.2k stars
