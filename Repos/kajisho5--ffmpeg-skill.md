@@ -1,63 +1,63 @@
 ---
-repo: vinzdg/codenotch
-url: https://github.com/vinzdg/codenotch
-owner: vinzdg
+repo: kajisho5/ffmpeg-skill
+url: https://github.com/kajisho5/ffmpeg-skill
+owner: kajisho5
 owner_type: User
-language: Swift
+language: Python
 license: MIT
-description: "A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge."
+description: ""
 homepage: ""
-stars: 1297
-stars_per_day: 324
-forks: 202
-open_issues: 17
-created: 2026-09-05
-pushed_at: 2026-09-10
-first_seen: 2026-09-08
+stars: 896
+stars_per_day: 149
+forks: 63
+open_issues: 2
+created: 2026-09-03
+pushed_at: 2026-09-09
+first_seen: 2026-09-10
 week: "2026-W37"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v1.5.0"
+release_tag: "v0.16.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-08
+last_reviewed: 2026-09-10
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-09-13"
-contributor_count: 5
-engagement: "medium"
-issue_close_rate: 6
-repo_size_kb: 15410
-readme_length: 6543
+appearances: 1
+next_review: "2026-09-17"
+contributor_count: 3
+engagement: "low"
+issue_close_rate: 92
+repo_size_kb: 8983
+readme_length: 9811
 bus_factor: 1
 last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-08"
-star_history: "2026-09-08:959,2026-09-09:1136,2026-09-10:1297"
+ring_history: "assess@2026-09-10"
+star_history: "2026-09-10:896"
 tags:
   - github
   - "category/other"
-  - "lang/swift"
+  - "lang/python"
 aliases:
-  - "codenotch"
-  - "vinzdg/codenotch"
+  - "ffmpeg-skill"
+  - "kajisho5/ffmpeg-skill"
 ---
 
-# codenotch
+# ffmpeg-skill
 
-**959** stars · **480** stars/天 · 建立 2 天前 · Swift · MIT
+**896** stars · **149** stars/天 · 建立 6 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/vinzdg--codenotch");
+const me = dv.page("Repos/kajisho5--ffmpeg-skill");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v1.5.0`
+`v0.16.0`
 
 > [!summary] 一句話摘要
-> A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge.
+> No description
 
 ## 專案簡介
 
-A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge.
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/kajisho5--ffmpeg-skill");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/kajisho5--ffmpeg-skill");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,205 +142,206 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 153 |
-| Open Issues | 31 |
-| Issue 解決率 | 6% (2 closed) |
-| 最後推送 | 2026-09-07 |
-| 建立日期 | 2026-09-05 |
-| Repo 大小 | 15.0 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/vinzdg/codenotch) |
+| Forks | 63 |
+| Open Issues | 2 |
+| Issue 解決率 | 92% (23 closed) |
+| 最後推送 | 2026-09-09 |
+| 建立日期 | 2026-09-03 |
+| Repo 大小 | 8.8 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/kajisho5/ffmpeg-skill) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Swift" : 99
->     "Makefile" : 1
+>     "Python" : 99
+>     "Shell" : 1
+>     "JavaScript" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@vinzdg](https://github.com/vinzdg) | 16 |
-> | [@oasis1992](https://github.com/oasis1992) | 2 |
-> | [@canberkys](https://github.com/canberkys) | 1 |
-> | [@mohammad-albarham](https://github.com/mohammad-albarham) | 1 |
-> | [@mhmzdev](https://github.com/mhmzdev) | 1 |
+> | [@kajisho5](https://github.com/kajisho5) | 90 |
+> | [@claude](https://github.com/claude) | 3 |
+> | [@srthomas21](https://github.com/srthomas21) | 1 |
 
-**最新版本**：v1.5.0 — 1.5.0 (2026-09-07)
+**最新版本**：v0.16.0 — 0.16.0 (2026-09-09)
 
 > [!info]- Release Notes
-> ## New
+> New tool: composite `--cols`x`--rows` clips into one grid (e.g. a 4x2 wall
+> of takes or angles), each cell letterboxed (not stretched) to a common
+> `--cell-width`/`--cell-height` so mismatched aspect ratios and resolutions
+> line up cleanly. `--label auto` (default) burns each clip's own filename,
+> extension stripped, into its cell's bottom-right corner; `--label none`
+> turns that off. No audio unless `--audio-from` picks one input's track --
+> mixing every clip's audio together is rarely what a comparison grid needs,
+> so this tool never does it silently. Runs only as long as the shortest
+> clip by default; `--pad` instead holds each shorter clip's last frame (with
+> silence) out to the longest.
 > 
-> - **Grok** — SuperGrok's weekly Grok Build credits, read from the CLI's own session in `~/.grok/auth.json`. (#15, thanks @pgm-norbert; #10 @MintarasGrinius and #12 @maheshauti96 also explored this independently)
-> - **OpenCode** — the Go plan's official usage endpoint, with the key OpenCode itself stores on sign-in. (#11, thanks @MintarasGrinius)
+> The per-cell label is filename-derived text reaching a `drawtext=text=...`
+> option, the same injection class fixed in 0.15.3 -- wrapped with the
+> existing `escape_drawtext()` helper from the start, with a regression test
+> that builds a clip literally named to look like a filter-graph breakout
+> payload and confirms it renders as inert literal text (not a new filter).
 > 
-> ## Fixed
 > 
-> - Switching a provider off could still have its account read when Settings opened, and a response already in flight could restore a reading you'd just asked it to forget. (#13, thanks @canberkys)
-> - Codex's live reading only recognised a 5-hour and a 7-day window. A free-plan account's real limit was a 30-day one, which silently fell through and reported "nothing metered" on an account that was genuinely tracked — caught by testing the fix against a real account. (#14, thanks @TrapstarKS)
-> - Contributors can now `make build`/`make test` with no Apple Developer account — Debug builds sign themselves automatically when the maintainer's certificate isn't present. (based on #8, thanks @MintarasGrinius)
-> - (Shipped earlier as 1.4.1, now synced to this repo) A Mac waking from a long sleep could erase a ring's remembered reading entirely.
 > 
-> ## Not merged
-> 
+> ## What's Changed
+> * add .npmignore: stop shipping __pycache__ in the npm tarball by @kajisho5 in https://github.com/kajisho5/ffmpeg-skill/pull/102
+> * Add sphere.py: flat-viewport extraction from 360/spherical video by @kajisho5 in https://github.com/kajisho5/ffmpeg-skill/pull/103
 > ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-06 ~ 2026-09-07）
-> **活躍天數** 2 天 · **最新 commit** Codenotch 1.5.0
+> [!abstract] 最近 10 次 commit（2026-09-09 ~ 2026-09-09）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #110 from kajisho5/add-grid-tool
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#18](https://github.com/vinzdg/codenotch/issues/18) | Publish a precompiled .dmg in releases | 11 | 0 |
-> | [#21](https://github.com/vinzdg/codenotch/issues/21) | make run fails on a fresh clone: signing-identity check neve | 1 | 0 |
-> | [#45](https://github.com/vinzdg/codenotch/issues/45) | Makefile: ad-hoc signing fallback never triggers (grep -c ne | 0 | 0 |
+> | [#111](https://github.com/kajisho5/ffmpeg-skill/issues/111) | A failed ffprobe deletes the input file (partial-output clea | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Codenotch
+> ffmpeg-skill
 > 
-> A macOS app that pins a small black notch to a screen edge, showing how much of
-> each coding assistant's usage limit you have burned — and whether it is still
-> working, done, or waiting on you.
+> Give your coding agent a video editor.
 > 
-> Hover a ring for its limit windows and when they reset. Claude's ring shows the
-> same **current session** window Claude Code's own `/usage` leads with, so the
-> two never disagree.
+>   Local FFmpeg · No cloud · No API keys · Python standard library
+>   Claude Code · Cursor · Codex · MCP
 > 
-> ## What it reads
+>   
+>   
+>   
+>   
+>   
 > 
-> | Provider | Source | How |
-> |---|---|---|
-> | **Claude Code** | official | The OAuth token in the login keychain, against the same endpoint Claude Code's own `/usage` uses. |
-> | **Cursor** | official | The editor's own signed-in session, read from its local SQLite state — no separate sign-in. |
-> | **Codex** | official | ChatGPT's usage endpoint, using the local Codex sign-in. Shows the 5-hour and weekly limits when available. |
-> | **Antigravity** | official where licensed, otherwise a request count | Antigravity's local language server first, then Google's quota endpoint; a plain count when neither will answer for the account. |
-> | **GLM** | official | Z.ai's Coding Plan monitor endpoint, with a key borrowed from whichever coding tool already holds one — Claude Code's `settings.json`, ZCode, or OpenCode. |
-> | **Grok** | official | The Grok CLI session in `~/.grok/auth.json`, against the same credits billing endpoint `/usage` uses. |
-> | **OpenCode** | official | The Go plan's official usage endpoint, with the `opencode-go` key OpenCode itself stores on sign-in. |
-> 
-> Codenotch never signs in anywhere. Every reading is borrowed from a credential
-> or session a tool on your Mac already holds — install and sign in to any of
-> them, and its ring appears. Switching a provider off in Settings stops its
-> credential being read at all and forgets the readings taken from it; it does
-> not sign you out of the tool that owns the account, and the row says so.
-> 
-> It also answers **"is it still working?"** — a thin arc spins inside a
-> provider's ring while a session is busy, and becomes a pulsing amber ring when
-> one is blocked waiting on you. Hover for every live session by name, where it
-> is running, and what it wants.
-> 
-> Two Claude Code logins are two rings. Anyone who keeps a work account apart with
-> `CLAUDE_CONFIG_DIR=~/.claude-work claude` gets a **Claude (work)** ring beside the
-> personal one, with its own limits, its own sessions and its own row in Settings.
-> Any `~/.claude-` directory Claude Code has run against is found at launch;
-> the default `~/.claude` always comes first, the rest in alphabetical order, so the
-> rings never swap places.
-> 
-> ## Placement
-> 
-> The notch lives on any of the four screen edges. Right and left keep a
-> vertical column; top and bottom lay the readings out side by side. It pins
-> itself to the *usable* edge, so a bottom notch rests on the Dock and follows
-> when the Dock hides or moves. On a Mac with a hardware notch, the top
-> placement takes its exact shape, so the two read as one rather than as a bar
-> parked underneath it.
-> 
-> At rest it is a small pill on the screen edge that unfolds when the pointer
-> reaches it — configurable in Settings to always show, or to hide entirely.
-> Settings live in an orb below the notch: an arc at rest, a gear on hover.
-> 
-> The app itself can show a Dock icon, a menu bar icon, or neither.
-> 
-> ## Updates
-> 
-> Codenotch updates itself. [Sparkle](https://sparkle-project.org) checks daily
-> and installs in the background without prompting; Settings says so and can
-> switch it off. Every update is EdDSA-signed, so nothing installs that wasn't
-> built and signed by the maintainer.
-> 
-> ## Building
-> 
-> ```sh
-> brew install xcodegen   # once
-> make run                # generate, build, launch a Debug build
-> make test               # unit tests
+> ```bash
+> npx ffmpeg-skill
 > ```
 > 
-> No signing identity is required for either. `make release` — which archives,
-> notarizes, and produces a signed auto-update feed — needs a Developer ID
-> certificate and an App Store Connect notary profile, and is only ever run by
-> the maintainer to cut an official release. See
-> [CONTRIBUTING.md](CONTRIBUTING.md).
+> `ffmpeg-skill` is an [Agent Skill](https://docs.anthropic.com/en/docs/agents-and-tools/agent-skills) for Claude Code, Cursor, Codex and any agent that reads `SKILL.md`. It teaches the agent a fixed workflow (probe → edit losslessly where possible → check → verify) and ships **40 tools** that do the actual work with `ffmpeg` / `ffprobe`: cut, join, silence removal, fit to duration and aspect, captions and karaoke, overlays and motion graphics, HDR → SDR and LUTs, audio clean-up and typed dynamics, sync with drift correction, multicam, loudness, delivery checks, whole-edit project rendering, batch folders. Every tool is also an MCP tool, and the whole set is described by a machine-readable contract.
 > 
-> Run with `CODENOTCH_DEMO=1` to see fixed sample data instead of live readings.
+> If `ffmpeg` and `python3` are on your PATH, it works: offline, on footage you would rather not upload.
 > 
-> ## Architecture
+> > **SPEC** (Self-Producing Execution Contract), coined by this project's author
+> > [kajisho5](https://github.com/kajisho5): each tool's `input_schema` — the part of its contract
+> > and MCP tool definition that has to track the CLI flag-for-flag — is never hand-authored beside
+> > the code. It's derived, at run time, from the same `argparse` parser that already defines the
+> > CLI, and CI fails the build if any of it drifts. → [full explanation](#what-is-spec)
 > 
-> Every provider implements `UsageProvider` (`Sources/Providers/`) and declares
-> its own `Fidelity` — `.official`, `.derived`, or `.manual` — so the UI never
-> presents a guess as if a vendor had published it. `UsageStore`
-> (`Sources/Model/`) polls them on a timer, keeps the last good reading across
-> launches, and degrades every failure to a visible status rather than a
-> made-up percentage.
+> ---
 > 
-> The notch itself works in one-dimensional **stack space** (`along`/`across`)
-> regardless of which screen edge it's on; `NotchPlacement` is the only place
-> that maps that back onto real screen coordinates. `NotchLayout` holds every
-> measurement, quoted from `docs/design/frame-124-hover-tooltip.png` so the
-> layout can be checked against the design frame directly.
 > 
-> - Design spec: [`docs/specs/2026-08-28-usage-notch-design.md`](docs/specs/2026-08-28-usage-notch-design.md)
-> - Implementation history: [`TASKS.md`](TASKS.md)
+> ## Quick start
 > 
-> ## The honest caveat
+> ```bash
 > 
-> No vendor publishes a clean "your session limit is N% used" API for any of
-> these tools. Each adapter reads whatever the owning app itself reads from —
-> an internal endpoint, a local database, a language server's own RPC — and
-> those can change without notice. Every adapter's response shape is pinned by
-> tests, and every failure degrades to a visible status (`stale`, `needsAuth`,
-> `error`) rather than an invented number.
+> # 1. install the skill for Claude Code (Cursor: --cursor, Codex: --codex, all three: --all)
+> npx ffmpeg-skill
 > 
-> **Keychain:** the app is signed with a stable Developer ID identity so the
-> one-time "Always Allow" grant on Claude Code's and Antigravity's keychain
-> items survives rebuilds. The secret itself is read only when the owning app
-> has actually changed it — checked via the item's modification date, which
-> isn't behind the same access prompt as the credential — so a valid grant does
-> not mean a prompt on every poll.
 > 
-> **Rate limits:** Claude's endpoint returns 429 if polled too hard, with an
-> unhelpful `Retry-After: 0`. The back-off treats that as a floor-raiser only —
-> 60s, doubling per consecutive 429, capped at 15 minutes — and the deadline is
-> persisted, so relaunching during a penalty waits instead of spending an
-> attempt on it. Polling drops to every 5 minutes when nothing is running, and
-> right-clicking the notch offers **Refresh now**.
+> ## Install
 > 
-> **Logs:** the app has no window, so anything worth diagnosing goes to the
-> unified log.
-> 
-> ```sh
-> /usr/bin/log stream --predicate 'subsystem == "com.vinz.codenotch"' --level debug
+> ```bash
+> npx ffmpeg-skill              # Claude Code   → ~/.claude/skills/ffmpeg-skill
+> npx ffmpeg-skill --cursor     # Cursor        → ~/.cursor/skills/ffmpeg-skill
+> npx ffmpeg-skill --codex      # Codex         → ~/.codex/skills/ffmpeg-skill
+> npx ffmpeg-skill --all        # all three
+> npx ffmpeg-skill --project    # this project  → ./.claude/skills/ffmpeg-skill
+> npx ffmpeg-skill --dir ./my-skills
+> npx ffmpeg-skill --uninstall  # remove from the selected targets
 > ```
 > 
-> ## Contributing
+> Without Node: clone this repository and copy `SKILL.md`, `scripts/`, `references/` and `mcp/` into your agent's skills directory.
 > 
-> See [CONTRIBUTING.md](CONTRIBUTING.md).
+> After installing:
 > 
-> ## License
+> ```bash
+> npx ffmpeg-skill doctor           # every required FFmpeg component present?
+> npx ffmpeg-skill contract --json  # what the agent framework will see
+> ```
 > 
-> [MIT](LICENSE)
+> FFmpeg itself:
+> 
+> | OS | Command |
+> |----|---------|
+> | macOS | `brew install ffmpeg-full` (the plain `ffmpeg` formula lacks the subtitles, drawtext and zscale filters) |
+> | Ubuntu / Debian | `sudo apt install ffmpeg` |
+> | Windows | `winget install Gyan.FFmpeg` |
+> 
+> 
+> ## Why
+> 
+> An agent that "knows FFmpeg" still guesses: it assumes a frame rate, picks a codec the container cannot hold, re-encodes a file that only needed a stream copy, and reports "done" without opening the result. ffmpeg-skill exists to take the guessing out:
+> 
+> - **Real files first.** Every job starts with `probe.py`; the agent decides from the measured duration, fps, resolution, colour and audio layout, not from the file name.
+> - **Structured tools, not shell strings.** Each operation is a script with typed arguments. Nothing runs through a shell; no filter graph is accepted from the caller.
+> - **A contract the agent can read.** `contract --json` states, for every tool, what it takes, what it writes, which FFmpeg components it needs and how the result is verified. The MCP surface is derived from it.
+> - **Verification after execution.** The result is probed, checked against the destination's spec and, when the picture changed, looked at as a contact sheet.
+> - **Local first.** No cloud, no API keys, no Python dependencies. Optional local transcription is used when a whisper is installed, never required.
+> 
+> 
+> ## Standalone, and in an ecosystem
+> 
+> **Standalone**, this is a local FFmpeg engine: probe → edit → verify, `npx ffmpeg-skill` and nothing else. No API key, no account, no other repo required. Everything above and below this section describes that standalone tool, and none of it changes if you never read the rest of this one.
+> 
+> **In [kajisho5](https://github.com/kajisho5)'s wider video-production ecosystem**, this repo is the *hands*: it cuts, measures and exports files, and reports back in structured JSON. It does not decide what to cut, whether a deliverable is approvable, or what makes a highlight interesting — those are a *brain*'s job, sitting in front of this engine, not inside it.
+> 
+> | You want to... | Use |
+> |---|---|
+> | Cut / join / measure / export a file right now | **this repo** (`ffmpeg-skill`), standalone |
+> | Decide cut points, approve a deliverable, plan a whole edit | [`video-production-agent`](https://github.com/kajisho5/video-production-agent) / [`AI-video-production-OS`](https://github.com/kajisho5/AI-video-production-OS) |
+> | Build a typed editing graph across a workspace, without writing raw `ffmpeg` | [`video-editing-skill`](https://github.com/kajisho5/video-editing-skill) / [`audio-production-skill`](https://github.com/kajisho5/audio-production-skill) |
+> 
+> Other repos in the ecosystem — [`media-analysis-skill`](https://github.com/kajisho5/media-analysis-skill), [`transcription-skill`](https://github.com/kajisho5/transcription-skill), [`subtitle-skill`](https://github.com/kajisho5/subtitle-skill), [`thumbnail-skill`](https://github.com/kajisho5/thumbnail-skill), [`color-grading-skill`](https://github.com/kajisho5/color-grading-skill), [`motion-graphics-skill`](https://github.com/kajisho5/motion-graphics-skill), [`qc-skill`](https://github.com/kajisho5/qc-skill) — read this repo's `contract --json`, its tools' `--json` output and `doctor`, the same way any agent framework would; this repo does not call into any of them. The dependency runs one way.
+> 
+> ---
+> 
+> **Contents**
+> [Standalone, and in an ecosystem](#standalone-and-in-an-ecosystem) · [Why](#why) · [Quick start](#quick-start) · [How it works](#how-it-works) · [Design principles](#design-principles) · [Tools](#tools) · [Audio](#audio-is-a-first-class-input) · [Built for agents](#built-for-agents) · [FFmpeg compatibility](#ffmpeg-compatibility) · [Tested on real footage](#tested-on-real-footage) · [Install](#install) · [Requirements](#requirements) · [Development](#development) · [Docs](#docs)
+> 
+> ---
+> 
+> 
+> # 2. check the machine: ffmpeg, ffprobe and every FFmpeg component the tools need
+> npx ffmpeg-skill doctor
+> 
+> 
+> # 3. (for agent frameworks) read the machine-readable contract
+> npx ffmpeg-skill contract --json | head -40
+> ```
+> 
+> Already installed? re-run `npx ffmpeg-skill` to refresh `~/.claude/skills/ffmpeg-skill`. Copies are not updated automatically.
+> 
+> `doctor`'s overall `ok` and a single tool's `usable: no` are different signals: `ok` means nothing *required by every tool* is missing, but a plain Homebrew `ffmpeg` on macOS can still be `ok` while `caption.py` specifically can't run (no `subtitles` filter) — check `doctor --json`'s `tools` field for the per-tool answer, not just `ok`.
+> 
+> Then talk to your agent:
+> 
+> > "Take `interview.mp4`, keep 0:45–3:10 and 5:00–6:30, and make it exactly 60 seconds for Reels."
+> 
+> The agent runs `probe.py`, `cut.py --segments 0:45-3:10,5:00-6:30`, `fit.py --duration 60 --aspect 9:16 --fit crop`, `export.py --preset reels`, `check.py --platform reels` and `look.py`, then reports "final.mp4: 59.98 s, 1080×1920, 30 fps, AAC stereo" with the contact sheet it inspected.
+> 
+> The tools also work on their own, from any shell:
+> 
+> ```bash
+> S=~/.claude/skills/ffmpeg-skill/scripts
+> python3 $S/probe.py input.mp4 --compact
+> python3 $S/fit.py input.mp4 --duration 60 --aspect 9:16 --dry-run    # print the plan, run nothing
+> python3 $S/export.py input.mp4 --preset reels --json                 # structured result with a probe of the output
+> ```
+> 
+> On Windows in Git Bash, `python3` is only on PATH if Python was installed from the Microsoft Store; a python.org install exposes `python` (or the `py` launcher) instead — replace `python3` with `python` above if you see a "command not found". `bin/in
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/vinzdg/codenotch)
+[GitHub](https://github.com/kajisho5/ffmpeg-skill)
 
 ## 相關收錄
 
@@ -348,7 +349,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "vinzdg--codenotch"
+> WHERE category = "Other" AND file.name != "kajisho5--ffmpeg-skill"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -357,7 +358,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Swift" AND file.name != "vinzdg--codenotch" AND status != "archived"
+> WHERE language = "Python" AND file.name != "kajisho5--ffmpeg-skill" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -366,18 +367,18 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W37" AND file.name != "vinzdg--codenotch"
+> WHERE week = "2026-W37" AND file.name != "kajisho5--ffmpeg-skill"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/kajisho5--ffmpeg-skill");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "vinzdg--codenotch" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "kajisho5--ffmpeg-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -393,7 +394,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "vinzdg" AND file.name != "vinzdg--codenotch"
+> WHERE owner = "kajisho5" AND file.name != "kajisho5--ffmpeg-skill"
 > SORT stars DESC
 > ```
 
@@ -401,7 +402,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/kajisho5--ffmpeg-skill");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -418,7 +419,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/kajisho5--ffmpeg-skill");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -451,7 +452,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/kajisho5--ffmpeg-skill");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -475,7 +476,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/kajisho5--ffmpeg-skill");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -512,7 +513,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/vinzdg--codenotch");
+> const me = dv.page("Repos/kajisho5--ffmpeg-skill");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -595,7 +596,7 @@ A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigrav
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-08** — 首次收錄
+> **2026-09-10** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -611,6 +612,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-10|2026-09-10]] — 再次上榜，1.3k stars
-- [[2026-09-09|2026-09-09]] — 再次上榜，1.1k stars
-- [[2026-09-08|2026-09-08]] — 首次收錄，959 stars
+- [[2026-09-10|2026-09-10]] — 首次收錄，896 stars

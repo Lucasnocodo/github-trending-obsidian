@@ -7,9 +7,9 @@ language: Python
 license: AGPL-3.0
 description: "Local-first WeChat intelligence system with a read-only CLI, Codex skills, searchable chat history, daily briefings, follow-ups and opportunity tracking."
 homepage: ""
-stars: 1953
-stars_per_day: 488
-forks: 2522
+stars: 2033
+stars_per_day: 407
+forks: 2550
 open_issues: 3
 created: 2026-09-04
 pushed_at: 2026-09-07
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-09-12"
+appearances: 4
+next_review: "2026-09-13"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 3
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-07"
-star_history: "2026-09-07:1347,2026-09-08:1869,2026-09-09:1953"
+star_history: "2026-09-07:1347,2026-09-08:1869,2026-09-09:1953,2026-09-10:2033"
 tags:
   - github
   - "category/other"
@@ -692,6 +692,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-10|2026-09-10]] — 再次上榜，2.0k stars
 - [[2026-09-09|2026-09-09]] — 再次上榜，2.0k stars
 - [[2026-09-08|2026-09-08]] — 再次上榜，1.9k stars
 - [[2026-09-07|2026-09-07]] — 首次收錄，1.3k stars

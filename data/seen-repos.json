@@ -3998,10 +3998,10 @@
   },
   "danielblnc/DLSS-NR-on-AMD": {
     "first_seen": "2026-09-05",
-    "last_seen": "2026-09-09",
-    "times_seen": 4,
+    "last_seen": "2026-09-10",
+    "times_seen": 5,
     "stars_first": 497,
-    "stars_last": 942
+    "stars_last": 986
   },
   "yczz/oc-english": {
     "first_seen": "2026-09-06",
@@ -4012,24 +4012,24 @@
   },
   "anthropics/fermats-last-theorem": {
     "first_seen": "2026-09-06",
-    "last_seen": "2026-09-09",
-    "times_seen": 4,
+    "last_seen": "2026-09-10",
+    "times_seen": 5,
     "stars_first": 722,
-    "stars_last": 986
+    "stars_last": 1003
   },
   "ashemag/human-atlas": {
     "first_seen": "2026-09-06",
-    "last_seen": "2026-09-09",
-    "times_seen": 4,
+    "last_seen": "2026-09-10",
+    "times_seen": 5,
     "stars_first": 559,
-    "stars_last": 2545
+    "stars_last": 2881
   },
   "Rion-Wu-tech/wechat-intelligence-hub": {
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
-    "times_seen": 3,
+    "last_seen": "2026-09-10",
+    "times_seen": 4,
     "stars_first": 1347,
-    "stars_last": 1953
+    "stars_last": 2033
   },
   "pierrenade/short-video-generator-AI": {
     "first_seen": "2026-09-07",
@@ -4047,31 +4047,31 @@
   },
   "vinzdg/codenotch": {
     "first_seen": "2026-09-08",
-    "last_seen": "2026-09-09",
-    "times_seen": 2,
+    "last_seen": "2026-09-10",
+    "times_seen": 3,
     "stars_first": 959,
-    "stars_last": 1136
+    "stars_last": 1297
   },
   "EverettFish/holo-card-studio": {
     "first_seen": "2026-09-08",
-    "last_seen": "2026-09-09",
-    "times_seen": 2,
+    "last_seen": "2026-09-10",
+    "times_seen": 3,
     "stars_first": 936,
-    "stars_last": 1158
+    "stars_last": 1264
   },
   "Albert-Weasker/niubigeo": {
     "first_seen": "2026-09-09",
-    "last_seen": "2026-09-09",
-    "times_seen": 1,
+    "last_seen": "2026-09-10",
+    "times_seen": 2,
     "stars_first": 2182,
-    "stars_last": 2182
+    "stars_last": 2260
   },
   "openai/NavierStokesAndEuler": {
     "first_seen": "2026-09-09",
-    "last_seen": "2026-09-09",
-    "times_seen": 1,
+    "last_seen": "2026-09-10",
+    "times_seen": 2,
     "stars_first": 1093,
-    "stars_last": 1093
+    "stars_last": 1595
   },
   "ahujasid/camera-to-blender": {
     "first_seen": "2026-09-09",
@@ -4079,5 +4079,19 @@
     "times_seen": 1,
     "stars_first": 778,
     "stars_last": 778
+  },
+  "kajisho5/ffmpeg-skill": {
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "times_seen": 1,
+    "stars_first": 896,
+    "stars_last": 896
+  },
+  "sdli1995/dlssg_for_sm86": {
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "times_seen": 1,
+    "stars_first": 842,
+    "stars_last": 842
   }
 }

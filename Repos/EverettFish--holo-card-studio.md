@@ -7,12 +7,12 @@ language: Python
 license: NOASSERTION
 description: "Turn the user's description or uploaded reference into a finished, editable Blender card and an interactive Three.js page. Preserve the requested subject, style, typography and destination. This skill contains code and text only; generated artwork belongs in the user's output project."
 homepage: ""
-stars: 1158
-stars_per_day: 579
-forks: 175
+stars: 1264
+stars_per_day: 421
+forks: 184
 open_issues: 2
 created: 2026-09-07
-pushed_at: 2026-09-08
+pushed_at: 2026-09-10
 first_seen: 2026-09-08
 week: "2026-W37"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-12"
+appearances: 3
+next_review: "2026-09-13"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-08"
-star_history: "2026-09-08:936,2026-09-09:1158"
+star_history: "2026-09-08:936,2026-09-09:1158,2026-09-10:1264"
 tags:
   - github
   - "category/other"
@@ -618,5 +618,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-10|2026-09-10]] — 再次上榜，1.3k stars
 - [[2026-09-09|2026-09-09]] — 再次上榜，1.2k stars
 - [[2026-09-08|2026-09-08]] — 首次收錄，936 stars

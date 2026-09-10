@@ -7,9 +7,9 @@ language: Lean
 license: Apache-2.0
 description: "Lean certificates accompanying Navier-Stokes and Euler results"
 homepage: ""
-stars: 1093
-stars_per_day: 1093
-forks: 89
+stars: 1595
+stars_per_day: 1595
+forks: 151
 open_issues: 0
 created: 2026-09-08
 pushed_at: 2026-09-08
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-12"
+appearances: 2
+next_review: "2026-09-13"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-09"
-star_history: "2026-09-09:1093"
+star_history: "2026-09-09:1093,2026-09-10:1595"
 tags:
   - github
   - "category/other"
@@ -481,4 +481,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-10|2026-09-10]] — 再次上榜，1.6k stars
 - [[2026-09-09|2026-09-09]] — 首次收錄，1.1k stars

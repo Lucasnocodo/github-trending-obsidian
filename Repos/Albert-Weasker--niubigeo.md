@@ -7,12 +7,12 @@ language: TypeScript
 license: Apache-2.0
 description: "Open-source AI brand visibility and competitor reports"
 homepage: ""
-stars: 2182
-stars_per_day: 436
-forks: 69
+stars: 2260
+stars_per_day: 377
+forks: 84
 open_issues: 11
 created: 2026-09-03
-pushed_at: 2026-09-08
+pushed_at: 2026-09-09
 first_seen: 2026-09-09
 week: "2026-W37"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-12"
+appearances: 2
+next_review: "2026-09-13"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 15
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-09"
-star_history: "2026-09-09:2182"
+star_history: "2026-09-09:2182,2026-09-10:2260"
 tags:
   - github
   - "category/other"
@@ -624,4 +624,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-10|2026-09-10]] — 再次上榜，2.3k stars
 - [[2026-09-09|2026-09-09]] — 首次收錄，2.2k stars
