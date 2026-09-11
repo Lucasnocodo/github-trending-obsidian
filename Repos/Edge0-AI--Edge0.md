@@ -1,19 +1,19 @@
 ---
-repo: EverettFish/holo-card-studio
-url: https://github.com/EverettFish/holo-card-studio
-owner: EverettFish
-owner_type: User
+repo: Edge0-AI/Edge0
+url: https://github.com/Edge0-AI/Edge0
+owner: Edge0-AI
+owner_type: Organization
 language: Python
-license: NOASSERTION
-description: "Turn the user's description or uploaded reference into a finished, editable Blender card and an interactive Three.js page. Preserve the requested subject, style, typography and destination. This skill contains code and text only; generated artwork belongs in the user's output project."
+license: Apache-2.0
+description: ""
 homepage: ""
-stars: 1350
-stars_per_day: 338
-forks: 194
-open_issues: 2
-created: 2026-09-07
+stars: 1090
+stars_per_day: 545
+forks: 88
+open_issues: 7
+created: 2026-09-08
 pushed_at: 2026-09-11
-first_seen: 2026-09-08
+first_seen: 2026-09-11
 week: "2026-W37"
 month: "2026-09"
 category: "Other"
@@ -25,39 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-08
+last_reviewed: 2026-09-11
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-09-14"
-contributor_count: 1
-engagement: "medium"
+contributor_count: 4
+engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 95
-readme_length: 3211
+repo_size_kb: 1334
+readme_length: 9751
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-08"
-star_history: "2026-09-08:936,2026-09-09:1158,2026-09-10:1264,2026-09-11:1350"
+ring_history: "assess@2026-09-11"
+star_history: "2026-09-11:1090"
 tags:
   - github
   - "category/other"
   - "lang/python"
+  - org
 aliases:
-  - "holo-card-studio"
-  - "EverettFish/holo-card-studio"
+  - "Edge0"
+  - "Edge0-AI/Edge0"
 ---
 
-# holo-card-studio
+# Edge0
 
-**936** stars · **936** stars/天 · 建立 1 天前 · Python · NOASSERTION
+**1.1k** stars · **545** stars/天 · 建立 2 天前 · Python · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/EverettFish--holo-card-studio");
+const me = dv.page("Repos/Edge0-AI--Edge0");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`ORG`
 
 > [!summary] 一句話摘要
-> Turn the user's description or uploaded reference into a finished, editable Blender card and an interactive Three.js page. Preserve the requested subject, style, typography and destination. This skill contains code and text only; generated artwork belongs in the user's output project.
+> No description
 
 ## 專案簡介
 
-Turn the user's description or uploaded reference into a finished, editable Blender card and an interactive Three.js page. Preserve the requested subject, style, typography and destination. This skill contains code and text only; generated artwork belongs in the user's output project.
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/Edge0-AI--Edge0");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +119,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/Edge0-AI--Edge0");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,212 +143,270 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 144 |
-| Open Issues | 1 |
+| Forks | 88 |
+| Open Issues | 7 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-07 |
-| 建立日期 | 2026-09-07 |
-| Repo 大小 | 95 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/EverettFish/holo-card-studio) |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "Python" : 88
->     "HTML" : 9
->     "JavaScript" : 3
-> ```
+| 最後推送 | 2026-09-11 |
+| 建立日期 | 2026-09-08 |
+| Repo 大小 | 1.3 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Edge0-AI/Edge0) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@EverettFish](https://github.com/EverettFish) | 6 |
+> | [@linyubupa](https://github.com/linyubupa) | 42 |
+> | [@Ali-CHUA](https://github.com/Ali-CHUA) | 3 |
+> | [@Alichua](https://github.com/Alichua) | 2 |
+> | [@ahrazzle](https://github.com/ahrazzle) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-07 ~ 2026-09-07）
-> **活躍天數** 1 天 · **最新 commit** Update README.md
+> [!abstract] 最近 10 次 commit（2026-09-10 ~ 2026-09-11）
+> **活躍天數** 2 天 · **最新 commit** Merge pull request #10 from Edge0-AI/fix/mlx-0.30.6-nax-a18
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#1](https://github.com/EverettFish/holo-card-studio/issues/1) | 如果真拿去工厂加工还缺什么？ | 1 | 0 |
+> | [#11](https://github.com/Edge0-AI/Edge0/issues/11) | edge0-35b: serve collapses to "!" output from the third requ | 0 | 0 |
+> | [#8](https://github.com/Edge0-AI/Edge0/issues/8) | Garbled/incoherent output from edge0-8b and edge0-35b on App | 0 | 1 |
+> | [#5](https://github.com/Edge0-AI/Edge0/issues/5) | Thank you for creating this model. How do I run it on my pho | 0 | 2 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 🃏 Holo Card Studio
+> # edge0
 > 
-> 实现教程来源（补上，感谢大佬的教程）：小红书@乌托邦的香蕉🍌
+> **An open-source streaming MoE inference framework — SSD expert offload + Recover-LoRA + prerouter routing prediction.**
 > 
-> > 一个 **Codex Skill**：对 Codex 说一句话，收获一张会随视角流光溢彩的 3D 全息闪卡。
-> > 能在浏览器里拖着转、翻到背面、拉滑块看它闪；还附赠一个可以随便改的 Blender 工程。
+> [](https://huggingface.co/Edge0/Edge0-35B-A3B-preview)
+> [](https://huggingface.co/Edge0/Edge0-8B-A1B-preview)
+> [](https://github.com/Edge0-AI/Edge0)
+> [](LICENSE)
 > 
-> 小时候在文具店门口舍不得买的那种闪卡，现在你想印谁就印谁。
+> English | [中文](README_zh.md)
 > 
-> ---
+> **edge0** is an open-source streaming MoE inference framework. It
+> generalizes the production-proven recipe — **SSD expert offload +
+> Recover-LoRA + prerouter routing prediction** — into an extensible
+> framework. The backend is isolated by design: the current MLX backend
+> runs on Apple Silicon, and additional platforms (CUDA, …) plug into the
+> same core abstractions.
 > 
-> ## ✨ 三十秒看懂
+> Two model tiers ship with the framework. Each tier is an end-to-end
+> release: the released checkpoint, the trained LoRA adapters, and the
+> trained prerouter heads work together as one unit.
 > 
-> ```
-> 你：「给我做一张赛博朋克风的机械猫闪卡，背景霓虹雨夜，编号 No.007」
+> | Tier | Released checkpoint | Inference profile |
+> |---|---|---|
+> | `edge0-35b` | [`Edge0/Edge0-35B-A3B-preview`](https://huggingface.co/Edge0/Edge0-35B-A3B-preview) | 4-bit, 40 layers, 256 experts, prerouter K=4 |
+> | `edge0-8b` | [`Edge0/Edge0-8B-A1B-preview`](https://huggingface.co/Edge0/Edge0-8B-A1B-preview) | 4-bit, 24 layers, 128 experts, prerouter K=8 |
 > 
-> Codex：
->   🎨 画好四层图（主体 / 背景 / 线稿 / 文字）
->   🧊 搭好 Blender 场景，视差、镭射、星光一次到位
->   🌐 组装成 Three.js 网页，本地跑起来
->   📦 递给你：网页链接 + card.blend + 渲染图
-> ```
+> Both checkpoints are built on open sparse-MoE base models (Qwen3.5-MoE
+> 35B-A3B and the Ling 3.0 bailing hybrid respectively) and ship with the
+> LoRA and prerouter training done for this framework — the adapter files
+> are co-located with each checkpoint and load automatically, so
+> `edge0 serve ` runs the trained pipeline out of the box.
 > 
-> 你只负责想，剩下的它来。
 > 
-> ---
+> ## Quick start
 > 
-> ## 🎬 你可以拿它做什么
 > 
-> ### 🐱 给自家毛孩子发一张"传说级"卡
-> 上传一张猫主子的照片，加一句"传说稀有度、金色边框、名字叫布丁"。
-> 主体保留它本猫的神态和构图，背景和线稿全新绘制。拖一拖，猫在卡里往前凸，背景往后退，镭射彩虹随角度流动——朋友圈晒图请自便。
-> 
-> ### 🎮 给独立游戏做角色卡牌
-> 一个角色一句描述，批量出一整套：战士、法师、盗贼、Boss。
-> 每张卡自带 `card-config.json`，稀有度、编号、属性文字都在里面，改完重新跑一遍流水线就更新。发售前发一波"抽卡预告"，玩家会疯。
-> 
-> ### 🏢 团队周年纪念 / 新人入职卡
-> 把同事做成卡牌：头像当主体、部门色当背景、Slogan 当文字层。
-> 每人一张，网页链接一发，大家在浏览器里翻自己的卡翻一下午。比 PPT 里的"团队介绍"页好玩一百倍。
-> 
-> ### 🎁 情人节 / 生日 / 纪念日
-> "复古胶片风、粉金配色、背面写一句话"。
-> 做好之后发一个链接过去，对方在手机上转着看，翻到背面看到那句话。仪式感这东西，闪光效果拉满就有了。
-> 
-> ### 🎤 演讲 / 发布会的"彩蛋物料"
-> 产品发布做一张产品卡，讲到最后一页丢一个链接："扫码看会闪的那种"。
-> 响应式网页，手机横竖屏都能玩，观众当场就转起来了。
-> 
-> ### 🖌️ 设计师的材质实验场
-> 不只是网页，`card.blend` 是真正可编辑的 Blender 工程。
-> 共享节点组里有中文命名的 `缩放`、`深度`、`视差效果`，镭射条纹、星光、线稿发光都是独立可调的材质节点。想研究全息卡是怎么"闪"起来的，打开它就是最好的教材。
-> 
-> ---
-> 
-> ## 🧱 一张闪卡是怎么叠出来的
-> 
-> 四层图叠在同一块画布上，视差把它们在空间里"撑开"：
-> 
-> ```
->         👀 你的视线
->          │
->    ┌─────┴──────┐
->    │  text.png  │  文字层     ─ 稳稳贴在表面
->    ├────────────┤
->    │ lineart.png│  线稿层     ─ 发光的轮廓
->    ├────────────┤
->    │ subject.png│  主体层     ─ 往前凸出来
->    ├────────────┤
->    │ background │  背景层     ─ 往后缩进去
->    └────────────┘
-> ```
-> 
-> 再铺上镭射彩虹（相位跟着视角走，转到哪闪到哪）、Voronoi 星光、金色卡边。
-> 浏览器端用 Three.js 按同一套 UV 公式重建这四层合成，所以 Blender 里看到什么，网页里就是什么。
-> 
-> ---
-> 
-> ## 🚀 怎么用
-> 
-> ### 安装
-> 把这个目录放进 Codex 的 skills 目录即可：
-> 
-> ```
-> ~/.codex/skills/holo-card-studio/
-> ```
-> 
-> ### 环境
-> - Python 3 + Pillow
-> - Node.js + npm
-> - Blender **不用自己装** —— 流水线会自动把官方便携版放到 `/tools/`，校验 SHA-256，项目自带、互不干扰
-> 
-> ### 开口
-> 然后在 Codex 里直接说人话：
-> 
-> > "用 holo-card-studio 给我做一张水墨风的锦鲤闪卡，文字用书法体，编号 No.001"
-> 
-> 或者上传参考图：
-> 
-> > "照这张图做一张闪卡，保留人物和构图，背景换成星空"
-> 
-> Codex 会先把卡片规格和它推断的细节说给你听，然后开工：画图 → 生成文字层 → 写配置 → 跑流水线 → 起本地服务 → 真正打开页面测拖拽、翻面、滑块和手机布局 → 交付。
-> 
-> ### 你会收到
-> | 东西 | 用来干嘛 |
-> |---|---|
-> | 本地网页链接 | 拖、转、翻、拉滑块 |
-> | `card.blend` | 在 Blender 里继续调材质、换灯光、出渲染 |
-> | `assets/` 四层图 | 想换哪层换哪层，重跑流水线即可 |
-> | `card-config.json` | 改名字、改编号、改稀有度 |
-> | 渲染图 | 直接发 |
-> 
-> ---
-> 
-> ## 🔧 可以调的旋钮
-> 
-> 流水线出厂就是一套顺手的参数，也都留了口子：
-> 
-> - **视差强度**：主体默认 scale 1.25 / depth 0.4，背景 depth -0.25，想更"跳"就往上加
-> - **镭射条纹**：条纹密度、扭曲度、角度，以及粉-黄-蓝-白的渐变
-> - **线稿发光**：强度和遮罩密度，可以从"淡淡勾边"到"霓虹描边"
-> - **星光**：Voronoi 尺度 + 动画噪声，从零星几颗到满天星
-> - **Blender 界面语言**：默认简体中文，存在项目本地配置里，一句话可换
-> 
-> ---
-> 
-> ## 📁 目录一览
-> 
-> ```
-> holo-card-studio/
-> ├── SKILL.md                    # Codex 读的"操作手册"
-> ├── references/
-> │   ├── art-direction.md        # 分层画图的提示词写法、参考图处理
-> │   ├── config.example.json     # 卡片配置示例
-> │   └── verification.md         # 交付前的验收清单
-> ├── scripts/
-> │   ├── ensure_blender.py       # 自动获取官方 Blender 便携版
-> │   ├── build_card.py           # 生成可编辑的 Blender 场景
-> │   ├── export_web.py           # 导出卡片几何
-> │   ├── generate_typography.py  # 精确的透明文字层
-> │   ├── validate_assets.py      # 四层图体检
-> │   ├── run_pipeline.py         # 一键流水线
-> │   └── package_skill.py        # 纯文本打包成可分享的 ZIP
-> └── assets/
->     └── web-template/           # 响应式 Three.js 查看器
-> ```
-> 
-> skill 本体只有代码和文字，轻得很。你生成的画作、`.blend`、模型都待在你自己的输出项目里。
-> 
-> ---
-> 
-> ## 🤝 分享这个 skill
-> 
-> 想发给朋友或放进仓库？
+> ### 1) Install
 > 
 > ```bash
-> python scripts/package_skill.py
+> 
+> # quick demo
+> edge0 demo edge0-35b
+> 
+> 
+> ### Python API
+> 
+> ```python
+> from edge0 import AutoEngine
+> from edge0.server.chat import ChatMessage, ChatRequest, ChatSession
+> 
+> engine = AutoEngine.from_pretrained("/path/to/model")  # tier auto-detected
+> req = ChatRequest(
+>     model=engine.name,
+>     messages=[ChatMessage(role="user", content="Hello!")],
+>     max_tokens=64,
+> )
+> tokens, meta = ChatSession(engine, req).run()
+> print(engine._tok.decode(tokens))
+> engine.close()   # release mmaps / expert cache
 > ```
 > 
-> 它按白名单只打包文本文件，打出来的 ZIP 干干净净，拿走就能用。
+> `examples/demo.py` is the same minimal walkthrough (`edge0 demo` runs
+> this exact path).
 > 
-> ---
 > 
-> *想好第一张卡画谁了吗？* ✨
+> ## Benchmark
+> 
+> Measured with `examples/bench.py` (3.3k-token prompt prefill → 10 sampled
+> warmup steps → 200 timed sampled decode tokens, 2 runs per tier):
+> 
+> | Tier | Decode speed | Prefill throughput (cold / warm)* | Peak active memory** | Test machine |
+> |---|---|---|---|---|
+> | `edge0-35b` | 14.9–17.7 tok/s | 113 / 140 tok/s | 2.9 GiB | Mac mini M4 Pro, 24 GB |
+> | `edge0-8b` | 23.9–25.3 tok/s | 500 / 1428 tok/s | 1.0 GiB | Mac mini M4 Pro, 24 GB |
+> 
+> *Cold = first request after process start (expert weights fault in from
+> SSD); warm = subsequent requests (page cache resident). Prefill numbers
+> are throughput over a ~3.3k-token prompt (`BENCH_LONG=1`).*
+> 
+> **Peak active memory at short contexts (MLX allocator peak; expert weights
+> stream from SSD via mmap and are not resident). Long contexts add KV
+> cache: ~3.3 GiB on `edge0-8b` at 3.3k tokens.*
+> 
+> Reproduce:
+> 
+> ```bash
+> python examples/bench.py edge0-35b    # via $EDGE0_35B_MODEL
+> python examples/bench.py edge0-8b    # via $EDGE0_8B_MODEL
+> ```
+> 
+> 
+> ## Requirements
+> 
+> - **OS / hardware**: the MLX backend runs on macOS with Apple Silicon
+>   (M1/M2/M3/M4). The CUDA backend is on the roadmap — no other
+>   platforms are supported yet.
+> - **Python**: 3.10+ (3.12 recommended).
+> - **MLX**: `mlx==0.30.6` / `mlx-metal==0.30.6` with `mlx-lm==0.31.0` (see
+>   `pyproject.toml`). Garbled, mixed-language output on Apple A18 / A18 Pro
+>   means an older `mlx`: `pip install 'mlx==0.30.6' 'mlx-metal==0.30.6'`
+>   ([#8](https://github.com/Edge0-AI/Edge0/issues/8)).
+> - **Memory**: ~2.9 GB peak active memory for `edge0-35b`, ~1.0 GB for
+>   `edge0-8b` (short contexts; see [Benchmark](#benchmark)). Add
+>   headroom for the OS, tokenizer, and long-context KV growth.
+> - **Disk**: the 4-bit checkpoints are ~23 GB (`edge0-35b`) and ~4.2 GB
+>   (`edge0-8b`); expert weights are mmapped and read on demand, they are
+>   not loaded into RAM up front.
+> 
+> 
+> ## Design
+> 
+> - **transformers-style usage**: `AutoModel` / `AutoConfig` / `AutoEngine`
+>   resolve the tier from the model name;
+> - **Backend isolation**: all MLX code lives under `edge0/backends/mlx/`;
+>   the core logic (model specs, prerouter, streaming expert pool, server)
+>   depends only on the backend facade (`edge0/backends/base.py`), so a new
+>   backend implements the same facade (`backends/cuda/` is a reserved
+>   slot) with zero changes to core code;
+> - **Adapters as safetensors**: LoRA and prerouter weights are
+>   `.safetensors` files with provenance metadata (source, version, owner
+>   layers), resolved from the model directory or `artifacts/`;
+> - **Model + adapters in one directory**: a model directory holds both
+>   the base checkpoint (`config.json` / `model*.safetensors` / tokenizer)
+>   and that model's adapters; upgrading adapters swaps adapter
+>   files only — the base stays read-only and is never merged.
+> 
+> 
+> ## Core mechanisms
+> 
+> - **SSD expert offload**: expert weights are streamed from storage on
+>   demand; peak memory is bounded by the active set, not the parameter
+>   count.
+> - **Prerouter**: a trained head predicts expert routing one step
+>   ahead, so expert loads overlap the forward pass instead of stalling
+>   it — **up to +59%** decode throughput; the gain grows with storage
+>   latency, model size, and routed width *K*.
+> - **Recover-LoRA**: the int4 base is frozen and LoRA adapters are
+>   trained by distillation from the FP teacher, recovering most of the
+>   quantization loss at 4-bit (see [Quality](#quality)).  Adapters stay
+>   unmerged: one read-only base serves multiple adapter sets.
+> 
+> 
+> # Python >= 3.10; the MLX backend requires macOS with Apple Silicon
+> python3.12 -m venv .venv && .venv/bin/pip install -e '.[dev,fetch]'
+> ```
+> 
+> 
+> ### 2) Download a model
+> 
+> The two tiers are published on Hugging Face — each repo bundles the
+> base checkpoint and the trained LoRA + prerouter adapters in **one
+> directory**, so a single download is a ready-to-run model:
+> 
+> - [`Edge0/Edge0-35B-A3B-preview`](https://huggingface.co/Edge0/Edge0-35B-A3B-preview) (~23 GB)
+> - [`Edge0/Edge0-8B-A1B-preview`](https://huggingface.co/Edge0/Edge0-8B-A1B-preview) (~4.2 GB)
+> 
+> ```bash
+> 
+> # with the repo's helper (defaults to the two repos above):
+> .venv/bin/python scripts/fetch_models.py --tier edge0-35b --target-dir models
+> .venv/bin/python scripts/fetch_models.py --tier edge0-8b --target-dir models
+> 
+> 
+> # or directly with the CLI:
+> .venv/bin/huggingface-cli download Edge0/Edge0-35B-A3B-preview     --local-dir models/edge0-35b
+> .venv/bin/huggingface-cli download Edge0/Edge0-8B-A1B-preview     --local-dir models/edge0-8b
+> ```
+> 
+> Either way you end up with a directory like:
+> 
+> ```
+> models/edge0-35b/
+> ├── config.json, model-*.safetensors, tokenizer files   # base checkpoint
+> ├── lora_edge0_35b.safetensors          # trained LoRA adapters
+> └── prerouter_edge0_35b.safetensors     # trained prerouter heads
+> ```
+> 
+> 
+> ### 3) Point edge0 at it
+> 
+> Tier names resolve to local directories via environment variables
+> (where you put the download is up to you):
+> 
+> ```bash
+> export EDGE0_35B_MODEL=$PWD/models/edge0-35b
+> export EDGE0_8B_MODEL=$PWD/models/edge0-8b
+> ```
+> 
+> Or skip the env vars entirely and pass the directory directly — the
+> tier is auto-detected from the checkpoint's `config.json`:
+> 
+> ```bash
+> edge0 demo models/edge0-35b
+> edge0 serve models/edge0-8b
+> ```
+> 
+> 
+> ### 4) Run
+> 
+> ```bash
+> 
+> # serve (OpenAI-compatible /v1/chat/completions)
+> edge0 serve edge0-35b
+> ```
+> 
+> ```bash
+> curl http://127.0.0.1:8000/v1/chat/completions \
+>   -H 'Content-Type: application/json' \
+>   -d '{"messages":[{"role":"user","content":"Hello!"}],"max_tokens":32}'
+> 
+> 
+> # 5) One-shot chat (pass --max-new to cap length; add --show-thinking to
+> 
+> #    print the model's reasoning block too)
+> edge0 chat edge0-35b --prompt "Explain streaming inference in one sentence."
+> ```
+> 
+> `python -m edge0 ...` is equivalent to `edge0 ...`.
+> 
+> 
+> ### Models and adapters
+> 
+> - **Checkpoint**: the original model directory (`config.json`,
+>   `model*.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/EverettFish/holo-card-studio)
+[GitHub](https://github.com/Edge0-AI/Edge0)
 
 ## 相關收錄
 
@@ -355,7 +414,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "EverettFish--holo-card-studio"
+> WHERE category = "Other" AND file.name != "Edge0-AI--Edge0"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -364,7 +423,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "EverettFish--holo-card-studio" AND status != "archived"
+> WHERE language = "Python" AND file.name != "Edge0-AI--Edge0" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -373,18 +432,18 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W37" AND file.name != "EverettFish--holo-card-studio"
+> WHERE week = "2026-W37" AND file.name != "Edge0-AI--Edge0"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/Edge0-AI--Edge0");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "EverettFish--holo-card-studio" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Edge0-AI--Edge0" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -400,7 +459,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "EverettFish" AND file.name != "EverettFish--holo-card-studio"
+> WHERE owner = "Edge0-AI" AND file.name != "Edge0-AI--Edge0"
 > SORT stars DESC
 > ```
 
@@ -408,7 +467,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/Edge0-AI--Edge0");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -425,7 +484,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/Edge0-AI--Edge0");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -458,7 +517,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/Edge0-AI--Edge0");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -482,7 +541,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/Edge0-AI--Edge0");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -519,7 +578,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/Edge0-AI--Edge0");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -602,7 +661,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-08** — 首次收錄
+> **2026-09-11** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -618,7 +677,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-11|2026-09-11]] — 再次上榜，1.4k stars
-- [[2026-09-10|2026-09-10]] — 再次上榜，1.3k stars
-- [[2026-09-09|2026-09-09]] — 再次上榜，1.2k stars
-- [[2026-09-08|2026-09-08]] — 首次收錄，936 stars
+- [[2026-09-11|2026-09-11]] — 首次收錄，1.1k stars

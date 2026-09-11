@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, and exploded views."
 homepage: "https://human-atlas-seven.vercel.app"
-stars: 2881
-stars_per_day: 576
-forks: 702
+stars: 3125
+stars_per_day: 521
+forks: 757
 open_issues: 29
 created: 2026-09-05
 pushed_at: 2026-09-06
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-09-13"
+appearances: 6
+next_review: "2026-09-14"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-06"
-star_history: "2026-09-06:559,2026-09-07:1488,2026-09-08:2111,2026-09-09:2545,2026-09-10:2881"
+star_history: "2026-09-06:559,2026-09-07:1488,2026-09-08:2111,2026-09-09:2545,2026-09-10:2881,2026-09-11:3125"
 tags:
   - github
   - "category/other"
@@ -516,6 +516,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-11|2026-09-11]] — 再次上榜，3.1k stars
 - [[2026-09-10|2026-09-10]] — 再次上榜，2.9k stars
 - [[2026-09-09|2026-09-09]] — 再次上榜，2.5k stars
 - [[2026-09-08|2026-09-08]] — 再次上榜，2.1k stars

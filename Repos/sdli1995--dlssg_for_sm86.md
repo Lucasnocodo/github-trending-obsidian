@@ -7,12 +7,12 @@ language: N/A
 license: N/A
 description: "Here is a dlssg for RTX30 Series GPU "
 homepage: ""
-stars: 842
-stars_per_day: 421
-forks: 51
-open_issues: 41
+stars: 1508
+stars_per_day: 503
+forks: 89
+open_issues: 70
 created: 2026-09-07
-pushed_at: 2026-09-09
+pushed_at: 2026-09-10
 first_seen: 2026-09-10
 week: "2026-W37"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-13"
+appearances: 2
+next_review: "2026-09-14"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 18
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-10"
-star_history: "2026-09-10:842"
+star_history: "2026-09-10:842,2026-09-11:1508"
 tags:
   - github
   - "category/other"
@@ -599,4 +599,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-11|2026-09-11]] — 再次上榜，1.5k stars
 - [[2026-09-10|2026-09-10]] — 首次收錄，842 stars

@@ -7,12 +7,12 @@ language: Swift
 license: MIT
 description: "A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge."
 homepage: ""
-stars: 1297
-stars_per_day: 324
-forks: 202
-open_issues: 17
+stars: 1400
+stars_per_day: 280
+forks: 219
+open_issues: 20
 created: 2026-09-05
-pushed_at: 2026-09-10
+pushed_at: 2026-09-11
 first_seen: 2026-09-08
 week: "2026-W37"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-09-13"
+appearances: 4
+next_review: "2026-09-14"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 6
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-08"
-star_history: "2026-09-08:959,2026-09-09:1136,2026-09-10:1297"
+star_history: "2026-09-08:959,2026-09-09:1136,2026-09-10:1297,2026-09-11:1400"
 tags:
   - github
   - "category/other"
@@ -611,6 +611,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-11|2026-09-11]] — 再次上榜，1.4k stars
 - [[2026-09-10|2026-09-10]] — 再次上榜，1.3k stars
 - [[2026-09-09|2026-09-09]] — 再次上榜，1.1k stars
 - [[2026-09-08|2026-09-08]] — 首次收錄，959 stars
