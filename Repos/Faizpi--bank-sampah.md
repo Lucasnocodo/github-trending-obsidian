@@ -1,19 +1,19 @@
 ---
-repo: Edge0-AI/Edge0
-url: https://github.com/Edge0-AI/Edge0
-owner: Edge0-AI
-owner_type: Organization
-language: Python
-license: Apache-2.0
+repo: Faizpi/bank-sampah
+url: https://github.com/Faizpi/bank-sampah
+owner: Faizpi
+owner_type: User
+language: PHP
+license: N/A
 description: ""
 homepage: ""
-stars: 1366
-stars_per_day: 455
-forks: 110
-open_issues: 8
-created: 2026-09-08
+stars: 919
+stars_per_day: 919
+forks: 1
+open_issues: 0
+created: 2026-09-11
 pushed_at: 2026-09-11
-first_seen: 2026-09-11
+first_seen: 2026-09-12
 week: "2026-W37"
 month: "2026-09"
 category: "Other"
@@ -25,40 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-11
+last_reviewed: 2026-09-12
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-15"
-contributor_count: 4
+contributor_count: 1
 engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 1334
-readme_length: 9751
+issue_close_rate: -1
+repo_size_kb: 9573
+readme_length: 2177
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-11"
-star_history: "2026-09-11:1090,2026-09-12:1366"
+ring_history: "assess@2026-09-12"
+star_history: "2026-09-12:919"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - org
+  - "lang/php"
 aliases:
-  - "Edge0"
-  - "Edge0-AI/Edge0"
+  - "bank-sampah"
+  - "Faizpi/bank-sampah"
 ---
 
-# Edge0
+# bank-sampah
 
-**1.1k** stars · **545** stars/天 · 建立 2 天前 · Python · Apache-2.0
+**919** stars · **919** stars/天 · 建立 1 天前 · PHP · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/Edge0-AI--Edge0");
+const me = dv.page("Repos/Faizpi--bank-sampah");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,7 +70,7 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`個人專案`
 
 > [!summary] 一句話摘要
 > No description
@@ -84,7 +83,7 @@ No description available.
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/Edge0-AI--Edge0");
+> const me = dv.page("Repos/Faizpi--bank-sampah");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +118,7 @@ No description available.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/Edge0-AI--Edge0");
+> const me = dv.page("Repos/Faizpi--bank-sampah");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,270 +142,97 @@ No description available.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 88 |
-| Open Issues | 7 |
-| Issue 解決率 | 0% (0 closed) |
+| Forks | 1 |
+| Open Issues | 0 |
 | 最後推送 | 2026-09-11 |
-| 建立日期 | 2026-09-08 |
-| Repo 大小 | 1.3 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Edge0-AI/Edge0) |
+| 建立日期 | 2026-09-11 |
+| Repo 大小 | 9.3 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Faizpi/bank-sampah) |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "PHP" : 79
+>     "Blade" : 18
+>     "JavaScript" : 3
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@linyubupa](https://github.com/linyubupa) | 42 |
-> | [@Ali-CHUA](https://github.com/Ali-CHUA) | 3 |
-> | [@Alichua](https://github.com/Alichua) | 2 |
-> | [@ahrazzle](https://github.com/ahrazzle) | 1 |
+> | [@Faizpi](https://github.com/Faizpi) | 3 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-10 ~ 2026-09-11）
-> **活躍天數** 2 天 · **最新 commit** Merge pull request #10 from Edge0-AI/fix/mlx-0.30.6-nax-a18
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#11](https://github.com/Edge0-AI/Edge0/issues/11) | edge0-35b: serve collapses to "!" output from the third requ | 0 | 0 |
-> | [#8](https://github.com/Edge0-AI/Edge0/issues/8) | Garbled/incoherent output from edge0-8b and edge0-35b on App | 0 | 1 |
-> | [#5](https://github.com/Edge0-AI/Edge0/issues/5) | Thank you for creating this model. How do I run it on my pho | 0 | 2 |
+> [!abstract] 最近 10 次 commit（2026-09-11 ~ 2026-09-11）
+> **活躍天數** 1 天 · **最新 commit** docs(readme): rewrite as a concise product overview
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # edge0
+> # Bank Sampah Digital
 > 
-> **An open-source streaming MoE inference framework — SSD expert offload + Recover-LoRA + prerouter routing prediction.**
+> Bank Sampah Digital adalah aplikasi web untuk mengelola bank sampah. Warga bisa menabung sampah, memantau saldo, mengajukan penjemputan, dan mencairkan saldo. Pengelola bisa mencatat setoran, memverifikasi transaksi, dan melihat laporan.
 > 
-> [](https://huggingface.co/Edge0/Edge0-35B-A3B-preview)
-> [](https://huggingface.co/Edge0/Edge0-8B-A1B-preview)
-> [](https://github.com/Edge0-AI/Edge0)
-> [](LICENSE)
+> Aplikasi ini dibuat mobile-first, jadi nyaman dipakai lewat HP saat petugas berada di lapangan.
 > 
-> English | [中文](README_zh.md)
+> ## Siapa saja penggunanya
 > 
-> **edge0** is an open-source streaming MoE inference framework. It
-> generalizes the production-proven recipe — **SSD expert offload +
-> Recover-LoRA + prerouter routing prediction** — into an extensible
-> framework. The backend is isolated by design: the current MLX backend
-> runs on Apple Silicon, and additional platforms (CUDA, …) plug into the
-> same core abstractions.
+> **Warga** — mendaftar akun, melihat saldo dan riwayat transaksi, mengajukan penjemputan sampah, mengajukan pencairan saldo, memakai kartu nasabah ber-QR, dan menukar saldo dengan paket sembako.
 > 
-> Two model tiers ship with the framework. Each tier is an end-to-end
-> release: the released checkpoint, the trained LoRA adapters, and the
-> trained prerouter heads work together as one unit.
+> **Petugas** — mencari nasabah, mencatat setoran sampah, menangani tugas penjemputan, dan melayani penukaran di layanan keliling.
 > 
-> | Tier | Released checkpoint | Inference profile |
-> |---|---|---|
-> | `edge0-35b` | [`Edge0/Edge0-35B-A3B-preview`](https://huggingface.co/Edge0/Edge0-35B-A3B-preview) | 4-bit, 40 layers, 256 experts, prerouter K=4 |
-> | `edge0-8b` | [`Edge0/Edge0-8B-A1B-preview`](https://huggingface.co/Edge0/Edge0-8B-A1B-preview) | 4-bit, 24 layers, 128 experts, prerouter K=8 |
+> **Bendahara** — memverifikasi dan mencatat pencairan saldo, mengunggah bukti pembayaran, serta menyusun laporan.
 > 
-> Both checkpoints are built on open sparse-MoE base models (Qwen3.5-MoE
-> 35B-A3B and the Ling 3.0 bailing hybrid respectively) and ship with the
-> LoRA and prerouter training done for this framework — the adapter files
-> are co-located with each checkpoint and load automatically, so
-> `edge0 serve ` runs the trained pipeline out of the box.
+> **Admin** — mengelola data warga dan pengguna, wilayah (dusun, RW, RT), jenis sampah dan harganya, pengumuman, program, hingga audit dan rekonsiliasi.
 > 
+> **Pengunjung** — tanpa perlu masuk, siapa pun bisa melihat katalog sampah, daftar harga, jadwal layanan keliling, pengumuman, dan statistik.
 > 
-> ## Quick start
+> ## Alur singkat
 > 
+> 1. Warga menyetor sampah yang sudah dipilah.
+> 2. Petugas mencatat jenis, kondisi, dan berat sampah, lalu transaksi disimpan sebagai bukti.
+> 3. Saldo warga bertambah sesuai harga yang berlaku saat itu.
+> 4. Warga bisa mengajukan penjemputan atau mencairkan saldo kapan saja.
 > 
-> ### 1) Install
+> Setiap transaksi tercatat rapi dan bisa ditelusuri kembali.
+> 
+> ## Menjalankan di komputer sendiri
+> 
+> Aplikasi ini memakai Laravel dan MySQL, dan paling mudah dijalankan lewat [Laragon](https://laragon.org).
 > 
 > ```bash
-> 
-> # quick demo
-> edge0 demo edge0-35b
-> 
-> 
-> ### Python API
-> 
-> ```python
-> from edge0 import AutoEngine
-> from edge0.server.chat import ChatMessage, ChatRequest, ChatSession
-> 
-> engine = AutoEngine.from_pretrained("/path/to/model")  # tier auto-detected
-> req = ChatRequest(
->     model=engine.name,
->     messages=[ChatMessage(role="user", content="Hello!")],
->     max_tokens=64,
-> )
-> tokens, meta = ChatSession(engine, req).run()
-> print(engine._tok.decode(tokens))
-> engine.close()   # release mmaps / expert cache
+> git clone https://github.com/Faizpi/bank-sampah.git
+> cd bank-sampah
+> composer install
+> cp .env.example .env
+> php artisan key:generate
+> php artisan migrate --seed
+> npm install
+> npm run build
 > ```
 > 
-> `examples/demo.py` is the same minimal walkthrough (`edge0 demo` runs
-> this exact path).
+> Atur `.env` agar menunjuk ke database lokal, lalu arahkan virtual host ke folder `public`. Aplikasi akan terbuka di:
 > 
-> 
-> ## Benchmark
-> 
-> Measured with `examples/bench.py` (3.3k-token prompt prefill → 10 sampled
-> warmup steps → 200 timed sampled decode tokens, 2 runs per tier):
-> 
-> | Tier | Decode speed | Prefill throughput (cold / warm)* | Peak active memory** | Test machine |
-> |---|---|---|---|---|
-> | `edge0-35b` | 14.9–17.7 tok/s | 113 / 140 tok/s | 2.9 GiB | Mac mini M4 Pro, 24 GB |
-> | `edge0-8b` | 23.9–25.3 tok/s | 500 / 1428 tok/s | 1.0 GiB | Mac mini M4 Pro, 24 GB |
-> 
-> *Cold = first request after process start (expert weights fault in from
-> SSD); warm = subsequent requests (page cache resident). Prefill numbers
-> are throughput over a ~3.3k-token prompt (`BENCH_LONG=1`).*
-> 
-> **Peak active memory at short contexts (MLX allocator peak; expert weights
-> stream from SSD via mmap and are not resident). Long contexts add KV
-> cache: ~3.3 GiB on `edge0-8b` at 3.3k tokens.*
-> 
-> Reproduce:
-> 
-> ```bash
-> python examples/bench.py edge0-35b    # via $EDGE0_35B_MODEL
-> python examples/bench.py edge0-8b    # via $EDGE0_8B_MODEL
+> ```text
+> http://bank-sampah-skripsi.test
 > ```
 > 
+> ## Akun percobaan
 > 
-> ## Requirements
+> Setelah data awal dimuat, tersedia akun contoh untuk mencoba semua peran. Seluruh akun memakai kata sandi yang sama:
 > 
-> - **OS / hardware**: the MLX backend runs on macOS with Apple Silicon
->   (M1/M2/M3/M4). The CUDA backend is on the roadmap — no other
->   platforms are supported yet.
-> - **Python**: 3.10+ (3.12 recommended).
-> - **MLX**: `mlx==0.30.6` / `mlx-metal==0.30.6` with `mlx-lm==0.31.0` (see
->   `pyproject.toml`). Garbled, mixed-language output on Apple A18 / A18 Pro
->   means an older `mlx`: `pip install 'mlx==0.30.6' 'mlx-metal==0.30.6'`
->   ([#8](https://github.com/Edge0-AI/Edge0/issues/8)).
-> - **Memory**: ~2.9 GB peak active memory for `edge0-35b`, ~1.0 GB for
->   `edge0-8b` (short contexts; see [Benchmark](#benchmark)). Add
->   headroom for the OS, tokenizer, and long-context KV growth.
-> - **Disk**: the 4-bit checkpoints are ~23 GB (`edge0-35b`) and ~4.2 GB
->   (`edge0-8b`); expert weights are mmapped and read on demand, they are
->   not loaded into RAM up front.
-> 
-> 
-> ## Design
-> 
-> - **transformers-style usage**: `AutoModel` / `AutoConfig` / `AutoEngine`
->   resolve the tier from the model name;
-> - **Backend isolation**: all MLX code lives under `edge0/backends/mlx/`;
->   the core logic (model specs, prerouter, streaming expert pool, server)
->   depends only on the backend facade (`edge0/backends/base.py`), so a new
->   backend implements the same facade (`backends/cuda/` is a reserved
->   slot) with zero changes to core code;
-> - **Adapters as safetensors**: LoRA and prerouter weights are
->   `.safetensors` files with provenance metadata (source, version, owner
->   layers), resolved from the model directory or `artifacts/`;
-> - **Model + adapters in one directory**: a model directory holds both
->   the base checkpoint (`config.json` / `model*.safetensors` / tokenizer)
->   and that model's adapters; upgrading adapters swaps adapter
->   files only — the base stays read-only and is never merged.
-> 
-> 
-> ## Core mechanisms
-> 
-> - **SSD expert offload**: expert weights are streamed from storage on
->   demand; peak memory is bounded by the active set, not the parameter
->   count.
-> - **Prerouter**: a trained head predicts expert routing one step
->   ahead, so expert loads overlap the forward pass instead of stalling
->   it — **up to +59%** decode throughput; the gain grows with storage
->   latency, model size, and routed width *K*.
-> - **Recover-LoRA**: the int4 base is frozen and LoRA adapters are
->   trained by distillation from the FP teacher, recovering most of the
->   quantization loss at 4-bit (see [Quality](#quality)).  Adapters stay
->   unmerged: one read-only base serves multiple adapter sets.
-> 
-> 
-> # Python >= 3.10; the MLX backend requires macOS with Apple Silicon
-> python3.12 -m venv .venv && .venv/bin/pip install -e '.[dev,fetch]'
+> ```text
+> Banten123
 > ```
 > 
-> 
-> ### 2) Download a model
-> 
-> The two tiers are published on Hugging Face — each repo bundles the
-> base checkpoint and the trained LoRA + prerouter adapters in **one
-> directory**, so a single download is a ready-to-run model:
-> 
-> - [`Edge0/Edge0-35B-A3B-preview`](https://huggingface.co/Edge0/Edge0-35B-A3B-preview) (~23 GB)
-> - [`Edge0/Edge0-8B-A1B-preview`](https://huggingface.co/Edge0/Edge0-8B-A1B-preview) (~4.2 GB)
-> 
-> ```bash
-> 
-> # with the repo's helper (defaults to the two repos above):
-> .venv/bin/python scripts/fetch_models.py --tier edge0-35b --target-dir models
-> .venv/bin/python scripts/fetch_models.py --tier edge0-8b --target-dir models
-> 
-> 
-> # or directly with the CLI:
-> .venv/bin/huggingface-cli download Edge0/Edge0-35B-A3B-preview     --local-dir models/edge0-35b
-> .venv/bin/huggingface-cli download Edge0/Edge0-8B-A1B-preview     --local-dir models/edge0-8b
-> ```
-> 
-> Either way you end up with a directory like:
-> 
-> ```
-> models/edge0-35b/
-> ├── config.json, model-*.safetensors, tokenizer files   # base checkpoint
-> ├── lora_edge0_35b.safetensors          # trained LoRA adapters
-> └── prerouter_edge0_35b.safetensors     # trained prerouter heads
-> ```
-> 
-> 
-> ### 3) Point edge0 at it
-> 
-> Tier names resolve to local directories via environment variables
-> (where you put the download is up to you):
-> 
-> ```bash
-> export EDGE0_35B_MODEL=$PWD/models/edge0-35b
-> export EDGE0_8B_MODEL=$PWD/models/edge0-8b
-> ```
-> 
-> Or skip the env vars entirely and pass the directory directly — the
-> tier is auto-detected from the checkpoint's `config.json`:
-> 
-> ```bash
-> edge0 demo models/edge0-35b
-> edge0 serve models/edge0-8b
-> ```
-> 
-> 
-> ### 4) Run
-> 
-> ```bash
-> 
-> # serve (OpenAI-compatible /v1/chat/completions)
-> edge0 serve edge0-35b
-> ```
-> 
-> ```bash
-> curl http://127.0.0.1:8000/v1/chat/completions \
->   -H 'Content-Type: application/json' \
->   -d '{"messages":[{"role":"user","content":"Hello!"}],"max_tokens":32}'
-> 
-> 
-> # 5) One-shot chat (pass --max-new to cap length; add --show-thinking to
-> 
-> #    print the model's reasoning block too)
-> edge0 chat edge0-35b --prompt "Explain streaming inference in one sentence."
-> ```
-> 
-> `python -m edge0 ...` is equivalent to `edge0 ...`.
-> 
-> 
-> ### Models and adapters
-> 
-> - **Checkpoint**: the original model directory (`config.json`,
->   `model*.
+> Ganti kata sandi ini sebelum dipakai sungguhan.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/Edge0-AI/Edge0)
+[GitHub](https://github.com/Faizpi/bank-sampah)
 
 ## 相關收錄
 
@@ -414,7 +240,7 @@ No description available.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "Edge0-AI--Edge0"
+> WHERE category = "Other" AND file.name != "Faizpi--bank-sampah"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -423,7 +249,7 @@ No description available.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "Edge0-AI--Edge0" AND status != "archived"
+> WHERE language = "PHP" AND file.name != "Faizpi--bank-sampah" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -432,18 +258,18 @@ No description available.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W37" AND file.name != "Edge0-AI--Edge0"
+> WHERE week = "2026-W37" AND file.name != "Faizpi--bank-sampah"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/Edge0-AI--Edge0");
+> const me = dv.page("Repos/Faizpi--bank-sampah");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "Edge0-AI--Edge0" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Faizpi--bank-sampah" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -459,7 +285,7 @@ No description available.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "Edge0-AI" AND file.name != "Edge0-AI--Edge0"
+> WHERE owner = "Faizpi" AND file.name != "Faizpi--bank-sampah"
 > SORT stars DESC
 > ```
 
@@ -467,7 +293,7 @@ No description available.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/Edge0-AI--Edge0");
+> const me = dv.page("Repos/Faizpi--bank-sampah");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -484,7 +310,7 @@ No description available.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/Edge0-AI--Edge0");
+> const me = dv.page("Repos/Faizpi--bank-sampah");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -517,7 +343,7 @@ No description available.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/Edge0-AI--Edge0");
+> const me = dv.page("Repos/Faizpi--bank-sampah");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -541,7 +367,7 @@ No description available.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/Edge0-AI--Edge0");
+> const me = dv.page("Repos/Faizpi--bank-sampah");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -578,7 +404,7 @@ No description available.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/Edge0-AI--Edge0");
+> const me = dv.page("Repos/Faizpi--bank-sampah");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -661,7 +487,7 @@ No description available.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-11** — 首次收錄
+> **2026-09-12** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -677,5 +503,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-12|2026-09-12]] — 再次上榜，1.4k stars
-- [[2026-09-11|2026-09-11]] — 首次收錄，1.1k stars
+- [[2026-09-12|2026-09-12]] — 首次收錄，919 stars

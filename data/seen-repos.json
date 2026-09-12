@@ -4019,10 +4019,10 @@
   },
   "ashemag/human-atlas": {
     "first_seen": "2026-09-06",
-    "last_seen": "2026-09-11",
-    "times_seen": 6,
+    "last_seen": "2026-09-12",
+    "times_seen": 7,
     "stars_first": 559,
-    "stars_last": 3125
+    "stars_last": 3217
   },
   "Rion-Wu-tech/wechat-intelligence-hub": {
     "first_seen": "2026-09-07",
@@ -4047,17 +4047,17 @@
   },
   "vinzdg/codenotch": {
     "first_seen": "2026-09-08",
-    "last_seen": "2026-09-11",
-    "times_seen": 4,
+    "last_seen": "2026-09-12",
+    "times_seen": 5,
     "stars_first": 959,
-    "stars_last": 1400
+    "stars_last": 1473
   },
   "EverettFish/holo-card-studio": {
     "first_seen": "2026-09-08",
-    "last_seen": "2026-09-11",
-    "times_seen": 4,
+    "last_seen": "2026-09-12",
+    "times_seen": 5,
     "stars_first": 936,
-    "stars_last": 1350
+    "stars_last": 1450
   },
   "Albert-Weasker/niubigeo": {
     "first_seen": "2026-09-09",
@@ -4068,10 +4068,10 @@
   },
   "openai/NavierStokesAndEuler": {
     "first_seen": "2026-09-09",
-    "last_seen": "2026-09-11",
-    "times_seen": 3,
+    "last_seen": "2026-09-12",
+    "times_seen": 4,
     "stars_first": 1093,
-    "stars_last": 1731
+    "stars_last": 1781
   },
   "ahujasid/camera-to-blender": {
     "first_seen": "2026-09-09",
@@ -4089,30 +4089,44 @@
   },
   "sdli1995/dlssg_for_sm86": {
     "first_seen": "2026-09-10",
-    "last_seen": "2026-09-11",
-    "times_seen": 2,
+    "last_seen": "2026-09-12",
+    "times_seen": 3,
     "stars_first": 842,
-    "stars_last": 1508
+    "stars_last": 1862
   },
   "yang0/handraw-style": {
     "first_seen": "2026-09-11",
-    "last_seen": "2026-09-11",
-    "times_seen": 1,
+    "last_seen": "2026-09-12",
+    "times_seen": 2,
     "stars_first": 1098,
-    "stars_last": 1098
+    "stars_last": 1526
   },
   "Edge0-AI/Edge0": {
     "first_seen": "2026-09-11",
-    "last_seen": "2026-09-11",
-    "times_seen": 1,
+    "last_seen": "2026-09-12",
+    "times_seen": 2,
     "stars_first": 1090,
-    "stars_last": 1090
+    "stars_last": 1366
   },
   "donvito/codex-astra-luna-orchestrator": {
     "first_seen": "2026-09-11",
-    "last_seen": "2026-09-11",
-    "times_seen": 1,
+    "last_seen": "2026-09-12",
+    "times_seen": 2,
     "stars_first": 933,
-    "stars_last": 933
+    "stars_last": 990
+  },
+  "Vincentwei1021/anything2explainer": {
+    "first_seen": "2026-09-12",
+    "last_seen": "2026-09-12",
+    "times_seen": 1,
+    "stars_first": 967,
+    "stars_last": 967
+  },
+  "Faizpi/bank-sampah": {
+    "first_seen": "2026-09-12",
+    "last_seen": "2026-09-12",
+    "times_seen": 1,
+    "stars_first": 919,
+    "stars_last": 919
   }
 }

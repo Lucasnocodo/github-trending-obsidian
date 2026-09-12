@@ -7,10 +7,10 @@ language: Python
 license: Apache-2.0
 description: "Use Astra as orchestrator and Luna for subagents in Codex"
 homepage: ""
-stars: 933
-stars_per_day: 187
-forks: 70
-open_issues: 3
+stars: 990
+stars_per_day: 165
+forks: 80
+open_issues: 2
 created: 2026-09-05
 pushed_at: 2026-09-11
 first_seen: 2026-09-11
@@ -30,8 +30,8 @@ use_case: ""
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-18"
+appearances: 2
+next_review: "2026-09-19"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-11"
-star_history: "2026-09-11:933"
+star_history: "2026-09-11:933,2026-09-12:990"
 tags:
   - github
   - "category/other"
@@ -718,4 +718,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-12|2026-09-12]] — 再次上榜，990 stars
 - [[2026-09-11|2026-09-11]] — 首次收錄，933 stars
