@@ -4054,10 +4054,10 @@
   },
   "EverettFish/holo-card-studio": {
     "first_seen": "2026-09-08",
-    "last_seen": "2026-09-12",
-    "times_seen": 5,
+    "last_seen": "2026-09-13",
+    "times_seen": 6,
     "stars_first": 936,
-    "stars_last": 1450
+    "stars_last": 1475
   },
   "Albert-Weasker/niubigeo": {
     "first_seen": "2026-09-09",
@@ -4068,10 +4068,10 @@
   },
   "openai/NavierStokesAndEuler": {
     "first_seen": "2026-09-09",
-    "last_seen": "2026-09-12",
-    "times_seen": 4,
+    "last_seen": "2026-09-13",
+    "times_seen": 5,
     "stars_first": 1093,
-    "stars_last": 1781
+    "stars_last": 1834
   },
   "ahujasid/camera-to-blender": {
     "first_seen": "2026-09-09",
@@ -4089,10 +4089,10 @@
   },
   "sdli1995/dlssg_for_sm86": {
     "first_seen": "2026-09-10",
-    "last_seen": "2026-09-12",
-    "times_seen": 3,
+    "last_seen": "2026-09-13",
+    "times_seen": 4,
     "stars_first": 842,
-    "stars_last": 1862
+    "stars_last": 2230
   },
   "yang0/handraw-style": {
     "first_seen": "2026-09-11",
@@ -4103,10 +4103,10 @@
   },
   "Edge0-AI/Edge0": {
     "first_seen": "2026-09-11",
-    "last_seen": "2026-09-12",
-    "times_seen": 2,
+    "last_seen": "2026-09-13",
+    "times_seen": 3,
     "stars_first": 1090,
-    "stars_last": 1366
+    "stars_last": 1463
   },
   "donvito/codex-astra-luna-orchestrator": {
     "first_seen": "2026-09-11",
@@ -4117,10 +4117,10 @@
   },
   "Vincentwei1021/anything2explainer": {
     "first_seen": "2026-09-12",
-    "last_seen": "2026-09-12",
-    "times_seen": 1,
+    "last_seen": "2026-09-13",
+    "times_seen": 2,
     "stars_first": 967,
-    "stars_last": 967
+    "stars_last": 1105
   },
   "Faizpi/bank-sampah": {
     "first_seen": "2026-09-12",
@@ -4128,5 +4128,40 @@
     "times_seen": 1,
     "stars_first": 919,
     "stars_last": 919
+  },
+  "achimala/dream-loop": {
+    "first_seen": "2026-09-13",
+    "last_seen": "2026-09-13",
+    "times_seen": 1,
+    "stars_first": 927,
+    "stars_last": 927
+  },
+  "jtydhr88/screenwriting-skills": {
+    "first_seen": "2026-09-13",
+    "last_seen": "2026-09-13",
+    "times_seen": 1,
+    "stars_first": 915,
+    "stars_last": 915
+  },
+  "gazijarin/itsgiving": {
+    "first_seen": "2026-09-13",
+    "last_seen": "2026-09-13",
+    "times_seen": 1,
+    "stars_first": 793,
+    "stars_last": 793
+  },
+  "SpaceDudem/text-humanizer": {
+    "first_seen": "2026-09-13",
+    "last_seen": "2026-09-13",
+    "times_seen": 1,
+    "stars_first": 708,
+    "stars_last": 708
+  },
+  "sumimakito/Mac-Duo": {
+    "first_seen": "2026-09-13",
+    "last_seen": "2026-09-13",
+    "times_seen": 1,
+    "stars_first": 706,
+    "stars_last": 706
   }
 }

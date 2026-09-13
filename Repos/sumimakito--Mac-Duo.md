@@ -1,68 +1,68 @@
 ---
-repo: Vincentwei1021/anything2explainer
-url: https://github.com/Vincentwei1021/anything2explainer
-owner: Vincentwei1021
+repo: sumimakito/Mac-Duo
+url: https://github.com/sumimakito/Mac-Duo
+owner: sumimakito
 owner_type: User
-language: TypeScript
-license: NOASSERTION
-description: "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion."
+language: Swift
+license: Apache-2.0
+description: "Wish you could bring the iPhone Duo effect to your MacBook?"
 homepage: ""
-stars: 1105
-stars_per_day: 276
-forks: 193
-open_issues: 1
-created: 2026-09-08
-pushed_at: 2026-09-13
-first_seen: 2026-09-12
-week: "2026-W37"
+stars: 706
+stars_per_day: 353
+forks: 55
+open_issues: 24
+created: 2026-09-10
+pushed_at: 2026-09-12
+first_seen: 2026-09-13
+week: "2026-W38"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "dev"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-12
+last_reviewed: 2026-09-13
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-16"
-contributor_count: 2
-engagement: "medium"
+contributor_count: 5
+engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 15357
-readme_length: 10000
+repo_size_kb: 531
+readme_length: 2592
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-12"
-star_history: "2026-09-12:967,2026-09-13:1105"
+ring_history: "assess@2026-09-13"
+star_history: "2026-09-13:706"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
-  - "topic/agent_skills"
-  - "topic/ai_agents"
-  - "topic/ai_video"
-  - "topic/claude_code"
-  - "topic/claude_code_skill"
+  - "lang/swift"
+  - "topic/flip"
+  - "topic/iphone"
+  - "topic/iphoneduo"
+  - "topic/mac"
+  - "topic/macos"
 aliases:
-  - "anything2explainer"
-  - "Vincentwei1021/anything2explainer"
+  - "Mac-Duo"
+  - "sumimakito/Mac-Duo"
 ---
 
-# anything2explainer
+# Mac-Duo
 
-**967** stars · **322** stars/天 · 建立 3 天前 · TypeScript · NOASSERTION
+**706** stars · **353** stars/天 · 建立 2 天前 · Swift · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+const me = dv.page("Repos/sumimakito--Mac-Duo");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`agent-skills` `ai-agents` `ai-video` `claude-code` `claude-code-skill` `codex` `edge-tts` `educational-video` `explainer-video` `kokoro` `motion-graphics` `multi-agent` `react` `remotion` `text-to-video` `tts` `typescript` `video-generation`
+`dev`
+
+`flip` `iphone` `iphoneduo` `mac` `macos` `menubar` `menubar-app` `menubarapp`
 
 > [!summary] 一句話摘要
-> Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.
+> Wish you could bring the iPhone Duo effect to your MacBook?
 
 ## 專案簡介
 
-Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.
+Wish you could bring the iPhone Duo effect to your MacBook?
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/sumimakito--Mac-Duo");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -123,7 +125,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/sumimakito--Mac-Duo");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -147,181 +149,131 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 174 |
-| Open Issues | 2 |
+| Forks | 55 |
+| Open Issues | 24 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-10 |
-| 建立日期 | 2026-09-08 |
-| Repo 大小 | 15.0 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Vincentwei1021/anything2explainer) |
-| Topics | `agent-skills` `ai-agents` `ai-video` `claude-code` `claude-code-skill` `codex` `edge-tts` `educational-video` |
+| 最後推送 | 2026-09-12 |
+| 建立日期 | 2026-09-10 |
+| Repo 大小 | 531 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/sumimakito/Mac-Duo) |
+| Topics | `flip` `iphone` `iphoneduo` `mac` `macos` `menubar` `menubar-app` `menubarapp` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 73
->     "Python" : 24
->     "Shell" : 3
+>     "Swift" : 98
+>     "Shell" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Vincentwei1021](https://github.com/Vincentwei1021) | 15 |
-> | [@DHCatLaw](https://github.com/DHCatLaw) | 1 |
+> | [@sumimakito](https://github.com/sumimakito) | 16 |
+> | [@cocoa-xu](https://github.com/cocoa-xu) | 1 |
+> | [@WindowsMEMZ](https://github.com/WindowsMEMZ) | 1 |
+> | [@surinrasu](https://github.com/surinrasu) | 1 |
+> | [@S7arFish](https://github.com/S7arFish) | 1 |
+
+**最新版本**：dev — Mac Duo 0.1.0-dev.13.1 (2026-09-12)
+
+> [!info]- Release Notes
+> **Mac Duo 0.1.0-dev.13.1**
+> 
+> Commit: `c4f57ae38220d9b1b5ca1d36526f642b032b720a`
+> 
+> Open the DMG and drag **Mac Duo** to **Applications**, or extract the ZIP.
+> 
+> Requires macOS 14 or later and a MacBook with a compatible lid angle sensor.
+> Includes Apple Silicon and Intel binaries.
+> 
+> Grant Screen Recording permission when prompted to enable the effect.
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-08 ~ 2026-09-10）
-> **活躍天數** 3 天 · **最新 commit** fix(tts): 显式请求词边界，字幕起点不再静默退化成插值
+> [!abstract] 最近 10 次 commit（2026-09-11 ~ 2026-09-12）
+> **活躍天數** 2 天 · **最新 commit** fix: follow up on sensor selection
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#5](https://github.com/Vincentwei1021/anything2explainer/issues/5) | 商业授权咨询：教育类自媒体视频制作与发布 | 0 | 0 |
+> | [#13](https://github.com/sumimakito/Mac-Duo/issues/13) | Check for lid closure instead of using a set angle | 1 | 0 |
+> | [#28](https://github.com/sumimakito/Mac-Duo/issues/28) | Unrecoverable UI lockout when "Start angle" is set near the  | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # anything2explainer
+> # Mac Duo
 > 
-> [](https://claude.com/claude-code)
-> [](https://openai.com/codex)
-> [](https://remotion.dev)
-> [](LICENSE)
+> **Wish you could bring the iPhone Duo effect to your MacBook?**
 > 
-> **English** | [简体中文](README_ZH.md)
+> https://github.com/user-attachments/assets/3ea3b098-c6d2-4398-8f3a-e9087bbb33f2
 > 
-> **Topic in, narrated explainer video out.** anything2explainer is a [Claude Code](https://claude.com/claude-code) / [Codex](https://openai.com/codex) skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar, in Chinese or English. Every frame is drawn in code with [Remotion](https://remotion.dev) (React + TypeScript). No stock footage, no generative video model, no frames lifted from anyone else's work.
+> Close the lid and watch your screen content tilt, blur, and fade as it moves.  
+> Mac Duo adds this effect to your MacBook, with controls in the menu bar.
 > 
-> It is not a CLI. What ships here is the whole method an AI coding agent needs to finish the film: a compilable Remotion template, a primitives and lighting library, tooling for voiceover / storyboard / rendering / quantitative QC, written style and motion specs, a multi-agent division-of-labour protocol, and one complete reference film as the quality bar.
+> **Available in:** English and Simplified Chinese (简体中文).
 > 
-> **English cut** — *RAG & Knowledge Bases*, 5′02″, 44 lines / 785 words, voiced by kokoro-82m `am_liam` at natural speed:
+> With the default settings, it's recommended to view the effect in front of your MacBook.
 > 
-> https://github.com/user-attachments/assets/e2771c68-a28c-4459-ac5a-a5b685181eeb
+> - **Metal rendering:** Uses GPU rendering to apply perspective, blur, and dimming as the lid closes.
+> - **Live screen content:** Uses ScreenCaptureKit to capture and render screen content in real time.
+> - **Adjustable perspective:** Tweak the perspective to suit your viewing position and make the effect look more natural.
 > 
-> **Chinese cut** — *RAG 与知识库* v2, 4′54″, 44 lines / 1490 characters, dot-field backdrop (`bg: 'dots'`), voiced through the bring-your-own-TTS path (Volcengine TTS 2.0 + forced alignment):
+> > [!NOTE]
+> > Mac Duo is completely **free** to use. Whether you use the app or reuse its code in your projects, please consider [sponsoring me](https://github.com/sponsors/sumimakito) if you find it helpful.
+> >
+> > Special thanks to our team at [Moeru AI](https://github.com/moeru-ai) for sponsoring the Apple Developer Program membership used to sign and notarize the prebuilt app here.
 > 
-> https://github.com/user-attachments/assets/5c213990-cbba-439e-8371-fbb3aa348e05
+> ## Download
 > 
-> Both cuts share one storyboard and 44 shots; the English cut re-times every shot to the English voiceover. The full paper trail of the original Chinese cut (4′35″, star-field backdrop, 8 build agents in parallel for 40 minutes, two QC rounds) lives in [`examples/rag/`](examples/rag/) (research → narration → storyboard → shot source → QC reports → delivery notes); rendered frames are in [`examples/rag/frames/`](examples/rag/frames/).
+> [Download DMG](https://github.com/sumimakito/Mac-Duo/releases/download/dev/Mac-Duo-dev.dmg) | [Download ZIP](https://github.com/sumimakito/Mac-Duo/releases/download/dev/Mac-Duo-dev.zip)
 > 
+> These downloads contain the latest [development build](https://github.com/sumimakito/Mac-Duo/releases/tag/dev) for Apple Silicon and Intel Macs.
 > 
-> ## Install
+> Requires macOS 14 or later and a MacBook with a compatible lid angle sensor.
+> Grant Screen Recording permission when prompted to enable the effect.
 > 
-> ```bash
-> git clone https://github.com/Vincentwei1021/anything2explainer.git
-> ln -s "$PWD/anything2explainer" ~/.claude/skills/anything2explainer   # Claude Code
-> ln -s "$PWD/anything2explainer" ~/.codex/skills/anything2explainer    # Codex
+> ## Build
+> 
+> Requires Xcode with Swift 6.0 or later. Run from the project directory:
+> 
+> ```sh
+> ./build.sh
 > ```
 > 
-> Dependencies:
+> The script creates `build/Mac Duo.app` with an ad-hoc signature. Open it from Finder, or build and launch with:
 > 
-> ```bash
-> 
-> # Node ≥18 (the template's npm install pulls remotion 4.0.507 / react 19)
-> brew install ffmpeg          # frame extraction / transcoding, required
-> 
-> python3 -m venv ~/.venvs/a2e && source ~/.venvs/a2e/bin/activate
-> pip install 'edge-tts==7.2.8' numpy pillow scipy   # pin edge-tts: it tracks a Microsoft endpoint and breaks across upgrades (7.2.0+ needs word boundaries requested explicitly; the script does)
-> 
-> 
-> ## Usage
-> 
-> In Claude Code or Codex, just say what you want. The skill triggers itself:
-> 
-> > Make me an explainer video about vector databases.
-> 
-> > 讲一下向量数据库，做成一条讲解视频
-> 
-> It then walks the 9 stages in `SKILL.md`:
-> 
-> 1. **Scaffold** the Remotion project from the template.
-> 2. **Research** (1 agent): a sourced research doc with a list of numbers and analogies, every item with a URL.
-> 3. **Narration & timeline**: the script, then TTS voiceover with per-word boundaries turned into a frame-accurate timeline and subtitle table.
-> 4. **Storyboard**: one line per shot with frame range, beat, visuals, motion, hero element and lighting.
-> 5. **Overlays & primitives**: title, chapter cards, HUD, pipeline rail, plus 2–5 topic-specific icons.
-> 6. **Pilot** (1 agent): the first shot group, then a 30-second cut for you to judge the look.
-> 7. **Parallel build**: the remaining groups, 5–7 shots per agent, each writing pure-function Remotion components.
-> 8. **Render** the full film and run quantitative frame metrics.
-> 9. **QC & fixes**: one QC agent per chapter, fix agents per group, re-verification, then delivery notes.
-> 
-> You can also drive the template by hand:
-> 
-> ```bash
-> template/scripts/new_project.sh ~/work/my-video myslug
-> cd ~/work/my-video
-> 
-> ## What it does
-> 
-> - **Input**: a topic ("explain vector databases"), or an article / document you want turned into a video. You also pick the length and the language.
-> - **Output**: a 1280×720 H.264 MP4 with synchronized voiceover, word-boundary-aligned subtitles, chapter cards, a top HUD and a bottom chapter progress bar, plus the full paper trail (research doc with sources, narration, storyboard, per-shot source code, QC reports).
-> - **How**: the agent researches the topic with sources, writes the narration, generates the voiceover and frame-accurate timeline, storyboards every shot, then dispatches parallel build agents that write one Remotion component per shot. QC agents review the rendered frames against written criteria before delivery.
-> - **Time**: roughly 1 to 3 hours of wall clock depending on length, most of it agents building shots in parallel. You are consulted at exactly four checkpoints.
-> 
-> 
-> # 3. script/storyboard_src.md → python3 scripts/render_storyboard.py     4. edit src/config.ts
-> 
-> ## Output spec
-> 
-> | | |
-> |---|---|
-> | Frame / rate | 1280×720 @ 30fps, H.264 |
-> | Length | your call (see table below); 2–8 minutes all work |
-> | Language | Chinese or English (`lang` in `src/config.ts`); typography, subtitle budgets and TTS switch with it |
-> | Look | black canvas with one of two backdrops, star field + fog gradient or dot-field wave (`bg` in `src/config.ts`; the dot-field wave is ported from video-talkcraft); white line art + purple accents; ultra-bold headline type |
-> | Persistent layers | 44px white-on-black-stroke subtitles, bottom chapter progress bar, top capsule HUD, optional pipeline rail |
-> | Voiceover | Chinese: edge-tts `zh-CN-YunxiNeural` (Yunxi, male). English: kokoro-82m `am_liam` (Liam, male). Or bring your own TTS / finished audio |
-> 
-> Length drives how much ground the film covers, and the size of the whole pipeline:
-> 
-> | Length | Chinese chars | English words | Lines / shots | Build agents | Wall clock | Disk |
-> |---|---|---|---|---|---|---|
-> | 2–3 min | 700–950 | 280–420 | 24–32 | 4–6 | ≈1 h | ≈2 GB |
-> | 3–5 min (reference tier) | 1200–1500 | 420–700 | 40–50 | 8 | ≈2 h | ≈2 GB |
-> | 5–8 min | 1800–2400 | 700–1150 | 60–80 | 10–14 | ≈2–3 h | ≈3 GB |
-> 
-> Chapter count is not tied to length. One chapter that goes deep or several short ones both work; the progress bar splits evenly across however many chapters the narration declares.
-> 
-> 
-> # only needed for English narration (kokoro-82m runs locally)
-> pip install kokoro soundfile && brew install espeak-ng
+> ```sh
+> ./build.sh --run
 > ```
 > 
-> `scipy` is only used by the QC script `frame_metrics.py`. The shell scripts are zsh + Python 3, developed and verified on macOS; Linux should work, Windows is untested.
+> macOS may require Screen Recording permission again after rebuilding with ad-hoc signing.
 > 
+> ## Known limitations
 > 
-> # 1. research/调研.md          2. script/narration.txt → python3 scripts/tts_build.py
+> - Only MacBooks with a compatible lid angle sensor can use the effect. The app reports when no sensor is available.
+> - The sensor must be one macOS marks as built-in. An external display with a similar sensor is ignored.
+> - The effect applies only to the built-in display.
+> - The effect stops when macOS sleeps as the lid closes.
+> - Clicks pass through the effect to the apps underneath.
 > 
-> # 5. src/shots/G1..Gn          6. scripts/preview.sh 30   (first 30 seconds)
+> ## Acknowledgements
 > 
-> # 7. VER=v1 scripts/render.sh + python3 scripts/frame_metrics.py         8. QC → fix → v2/v3
-> ```
+> This project is built with AI assistance.
 > 
+> ## License
 > 
-> ## Four checkpoints
+> Licensed under the [Apache License 2.0](LICENSE). Copyright 2026 Makito.
 > 
-> The run stops and waits for you at exactly four points instead of ploughing through (details in `SKILL.md`):
-> 
-> 1. **Length and language**: before the script is written. Length decides the line count, shot count and how many agents run in parallel, i.e. how much the film can actually cover; language flips `lang` in `src/config.ts`, which drives typography, subtitle budgets and the default voice.
-> 2. **Narration sign-off**: before voiceover. Once locked, frame numbers are hard-coded into every shot; changing one word re-times the whole film. This is the cheapest place to intervene.
-> 3. **Voiceover**: before TTS runs you get asked whether you have a preferred engine. If not, defaults apply (edge-tts Yunxi for Chinese, kokoro-82m Liam for English). You can also hand over finished audio and fill the per-line timeline yourself.
-> 4. **First 30 seconds**: only the first build group is done, then 30 seconds get rendered for you to judge the look. Fixing the style here costs one group; after the full render it costs every group.
-> 
-> 
-> ## How it compares
-> 
-> | Tool class | What it produces | Where anything2explainer differs |
-> |---|---|---|
-> | Generative video models (Sora, Veo, Runway) | Footage synthesized from a prompt 
+> See [NOTICE](NOTICE) for attribution.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/Vincentwei1021/anything2explainer)
+[GitHub](https://github.com/sumimakito/Mac-Duo)
 
 ## 相關收錄
 
@@ -329,7 +281,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "Vincentwei1021--anything2explainer"
+> WHERE category = "Other" AND file.name != "sumimakito--Mac-Duo"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -338,7 +290,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "Vincentwei1021--anything2explainer" AND status != "archived"
+> WHERE language = "Swift" AND file.name != "sumimakito--Mac-Duo" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -347,18 +299,18 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W37" AND file.name != "Vincentwei1021--anything2explainer"
+> WHERE week = "2026-W38" AND file.name != "sumimakito--Mac-Duo"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/sumimakito--Mac-Duo");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "Vincentwei1021--anything2explainer" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "sumimakito--Mac-Duo" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -374,7 +326,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "Vincentwei1021" AND file.name != "Vincentwei1021--anything2explainer"
+> WHERE owner = "sumimakito" AND file.name != "sumimakito--Mac-Duo"
 > SORT stars DESC
 > ```
 
@@ -382,7 +334,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/sumimakito--Mac-Duo");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -399,7 +351,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/sumimakito--Mac-Duo");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -432,7 +384,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/sumimakito--Mac-Duo");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -456,7 +408,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/sumimakito--Mac-Duo");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -493,7 +445,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/sumimakito--Mac-Duo");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -576,7 +528,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-12** — 首次收錄
+> **2026-09-13** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -592,5 +544,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-13|2026-09-13]] — 再次上榜，1.1k stars
-- [[2026-09-12|2026-09-12]] — 首次收錄，967 stars
+- [[2026-09-13|2026-09-13]] — 首次收錄，706 stars
