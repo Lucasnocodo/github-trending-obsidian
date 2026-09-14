@@ -7,10 +7,10 @@ language: JavaScript
 license: MIT
 description: "Agent skill for impressive 3D visuals using Blender + image gen + subagent critic"
 homepage: ""
-stars: 927
-stars_per_day: 185
-forks: 106
-open_issues: 1
+stars: 972
+stars_per_day: 162
+forks: 113
+open_issues: 4
 created: 2026-09-07
 pushed_at: 2026-09-09
 first_seen: 2026-09-13
@@ -30,8 +30,8 @@ use_case: ""
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-20"
+appearances: 2
+next_review: "2026-09-21"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-13"
-star_history: "2026-09-13:927"
+star_history: "2026-09-13:927,2026-09-14:972"
 tags:
   - github
   - "category/other"
@@ -488,4 +488,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-14|2026-09-14]] — 再次上榜，972 stars
 - [[2026-09-13|2026-09-13]] — 首次收錄，927 stars

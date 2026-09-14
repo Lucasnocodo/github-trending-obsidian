@@ -7,12 +7,12 @@ language: Python
 license: Apache-2.0
 description: ""
 homepage: ""
-stars: 1463
-stars_per_day: 366
-forks: 118
+stars: 1627
+stars_per_day: 325
+forks: 129
 open_issues: 14
 created: 2026-09-08
-pushed_at: 2026-09-11
+pushed_at: 2026-09-14
 first_seen: 2026-09-11
 week: "2026-W37"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-09-16"
+appearances: 4
+next_review: "2026-09-17"
 contributor_count: 4
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-11"
-star_history: "2026-09-11:1090,2026-09-12:1366,2026-09-13:1463"
+star_history: "2026-09-11:1090,2026-09-12:1366,2026-09-13:1463,2026-09-14:1627"
 tags:
   - github
   - "category/other"
@@ -677,6 +677,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-14|2026-09-14]] — 再次上榜，1.6k stars
 - [[2026-09-13|2026-09-13]] — 再次上榜，1.5k stars
 - [[2026-09-12|2026-09-12]] — 再次上榜，1.4k stars
 - [[2026-09-11|2026-09-11]] — 首次收錄，1.1k stars

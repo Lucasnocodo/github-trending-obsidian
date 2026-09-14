@@ -7,10 +7,10 @@ language: TypeScript
 license: NOASSERTION
 description: "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion."
 homepage: ""
-stars: 1105
-stars_per_day: 276
-forks: 193
-open_issues: 1
+stars: 1203
+stars_per_day: 241
+forks: 211
+open_issues: 0
 created: 2026-09-08
 pushed_at: 2026-09-13
 first_seen: 2026-09-12
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-16"
+appearances: 3
+next_review: "2026-09-17"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-12"
-star_history: "2026-09-12:967,2026-09-13:1105"
+star_history: "2026-09-12:967,2026-09-13:1105,2026-09-14:1203"
 tags:
   - github
   - "category/other"
@@ -592,5 +592,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-14|2026-09-14]] — 再次上榜，1.2k stars
 - [[2026-09-13|2026-09-13]] — 再次上榜，1.1k stars
 - [[2026-09-12|2026-09-12]] — 首次收錄，967 stars

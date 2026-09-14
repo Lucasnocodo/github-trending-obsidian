@@ -1,20 +1,20 @@
 ---
-repo: EverettFish/holo-card-studio
-url: https://github.com/EverettFish/holo-card-studio
-owner: EverettFish
+repo: crwdla/tokentab
+url: https://github.com/crwdla/tokentab
+owner: crwdla
 owner_type: User
 language: Python
-license: NOASSERTION
-description: "Turn the user's description or uploaded reference into a finished, editable Blender card and an interactive Three.js page. Preserve the requested subject, style, typography and destination. This skill contains code and text only; generated artwork belongs in the user's output project."
+license: MIT
+description: "A CLI that reads Claude Code, Codex, and Gemini CLI session logs and works out how much they cost, by model, project, and day."
 homepage: ""
-stars: 1507
-stars_per_day: 215
-forks: 213
-open_issues: 3
+stars: 913
+stars_per_day: 152
+forks: 212
+open_issues: 0
 created: 2026-09-07
-pushed_at: 2026-09-12
-first_seen: 2026-09-08
-week: "2026-W37"
+pushed_at: 2026-09-07
+first_seen: 2026-09-14
+week: "2026-W38"
 month: "2026-09"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-08
+last_reviewed: 2026-09-14
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 7
-next_review: "2026-09-17"
+appearances: 1
+next_review: "2026-09-21"
 contributor_count: 1
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 95
-readme_length: 3211
+issue_close_rate: -1
+repo_size_kb: 318
+readme_length: 5561
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-08"
-star_history: "2026-09-08:936,2026-09-09:1158,2026-09-10:1264,2026-09-11:1350,2026-09-12:1450,2026-09-13:1475,2026-09-14:1507"
+ring_history: "assess@2026-09-14"
+star_history: "2026-09-14:913"
 tags:
   - github
   - "category/other"
   - "lang/python"
+  - "topic/ai"
+  - "topic/ai_token_monitor"
+  - "topic/claude_code"
+  - "topic/token_optimization"
+  - "topic/token_usage"
 aliases:
-  - "holo-card-studio"
-  - "EverettFish/holo-card-studio"
+  - "tokentab"
+  - "crwdla/tokentab"
 ---
 
-# holo-card-studio
+# tokentab
 
-**936** stars · **936** stars/天 · 建立 1 天前 · Python · NOASSERTION
+**913** stars · **152** stars/天 · 建立 6 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/EverettFish--holo-card-studio");
+const me = dv.page("Repos/crwdla--tokentab");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -72,18 +77,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 
 `個人專案`
 
+`ai` `ai-token-monitor` `claude-code` `token-optimization` `token-usage`
+
 > [!summary] 一句話摘要
-> Turn the user's description or uploaded reference into a finished, editable Blender card and an interactive Three.js page. Preserve the requested subject, style, typography and destination. This skill contains code and text only; generated artwork belongs in the user's output project.
+> A CLI that reads Claude Code, Codex, and Gemini CLI session logs and works out how much they cost, by model, project, and day.
 
 ## 專案簡介
 
-Turn the user's description or uploaded reference into a finished, editable Blender card and an interactive Three.js page. Preserve the requested subject, style, typography and destination. This skill contains code and text only; generated artwork belongs in the user's output project.
+A CLI that reads Claude Code, Codex, and Gemini CLI session logs and works out how much they cost, by model, project, and day.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/crwdla--tokentab");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/crwdla--tokentab");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,212 +149,136 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 144 |
-| Open Issues | 1 |
-| Issue 解決率 | 0% (0 closed) |
+| Forks | 212 |
+| Open Issues | 0 |
 | 最後推送 | 2026-09-07 |
 | 建立日期 | 2026-09-07 |
-| Repo 大小 | 95 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/EverettFish/holo-card-studio) |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "Python" : 88
->     "HTML" : 9
->     "JavaScript" : 3
-> ```
+| Repo 大小 | 318 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/crwdla/tokentab) |
+| Topics | `ai` `ai-token-monitor` `claude-code` `token-optimization` `token-usage` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@EverettFish](https://github.com/EverettFish) | 6 |
+> | [@crwdla](https://github.com/crwdla) | 6 |
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-09-07 ~ 2026-09-07）
-> **活躍天數** 1 天 · **最新 commit** Update README.md
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#1](https://github.com/EverettFish/holo-card-studio/issues/1) | 如果真拿去工厂加工还缺什么？ | 1 | 0 |
+> **活躍天數** 1 天 · **最新 commit** add cursor support
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # 🃏 Holo Card Studio
+> # tokentab
 > 
-> 实现教程来源（补上，感谢大佬的教程）：小红书@乌托邦的香蕉🍌
+> tokentab reads the session logs that Claude Code, Codex, Cursor and Gemini CLI already leave on disk and adds up token usage and cost - broken down by model, by project, by day, and by the kind of work each session was doing. It runs entirely locally: no account, no API key, nothing leaves your machine.
 > 
-> > 一个 **Codex Skill**：对 Codex 说一句话，收获一张会随视角流光溢彩的 3D 全息闪卡。
-> > 能在浏览器里拖着转、翻到背面、拉滑块看它闪；还附赠一个可以随便改的 Blender 工程。
+> ## Installing
 > 
-> 小时候在文具店门口舍不得买的那种闪卡，现在你想印谁就印谁。
-> 
-> ---
-> 
-> ## ✨ 三十秒看懂
+> Clone the repo and install it into your environment:
 > 
 > ```
-> 你：「给我做一张赛博朋克风的机械猫闪卡，背景霓虹雨夜，编号 No.007」
-> 
-> Codex：
->   🎨 画好四层图（主体 / 背景 / 线稿 / 文字）
->   🧊 搭好 Blender 场景，视差、镭射、星光一次到位
->   🌐 组装成 Three.js 网页，本地跑起来
->   📦 递给你：网页链接 + card.blend + 渲染图
+> git clone https://github.com/crwdla/tokentab
+> cd tokentab
+> pip install .
+> python cli.py
 > ```
 > 
-> 你只负责想，剩下的它来。
+> That puts a `tokentab` command on your path. You can also run it without installing at all - see [From source](#from-source).
 > 
-> ---
+> ## What it reads
 > 
-> ## 🎬 你可以拿它做什么
+> It understands three tools out of the box, plus a Cursor slot that's wired up but not finished (more on that below).
 > 
-> ### 🐱 给自家毛孩子发一张"传说级"卡
-> 上传一张猫主子的照片，加一句"传说稀有度、金色边框、名字叫布丁"。
-> 主体保留它本猫的神态和构图，背景和线稿全新绘制。拖一拖，猫在卡里往前凸，背景往后退，镭射彩虹随角度流动——朋友圈晒图请自便。
+> | Tool | Where its logs live |
+> | --- | --- |
+> | **Claude Code** | `~/.claude/projects/**/*.jsonl` |
+> | **Codex** | `~/.codex/sessions/**/rollout-*.jsonl` |
+> | **Gemini CLI** | `~/.gemini/tmp/**/session-*.json` |
+> | **Cursor** | *(stub - see below)* |
 > 
-> ### 🎮 给独立游戏做角色卡牌
-> 一个角色一句描述，批量出一整套：战士、法师、盗贼、Boss。
-> 每张卡自带 `card-config.json`，稀有度、编号、属性文字都在里面，改完重新跑一遍流水线就更新。发售前发一波"抽卡预告"，玩家会疯。
+> If a tool isn't installed, it's just skipped. You'll only ever see the tools you actually use.
 > 
-> ### 🏢 团队周年纪念 / 新人入职卡
-> 把同事做成卡牌：头像当主体、部门色当背景、Slogan 当文字层。
-> 每人一张，网页链接一发，大家在浏览器里翻自己的卡翻一下午。比 PPT 里的"团队介绍"页好玩一百倍。
+> ## Using it
 > 
-> ### 🎁 情人节 / 生日 / 纪念日
-> "复古胶片风、粉金配色、背面写一句话"。
-> 做好之后发一个链接过去，对方在手机上转着看，翻到背面看到那句话。仪式感这东西，闪光效果拉满就有了。
-> 
-> ### 🎤 演讲 / 发布会的"彩蛋物料"
-> 产品发布做一张产品卡，讲到最后一页丢一个链接："扫码看会闪的那种"。
-> 响应式网页，手机横竖屏都能玩，观众当场就转起来了。
-> 
-> ### 🖌️ 设计师的材质实验场
-> 不只是网页，`card.blend` 是真正可编辑的 Blender 工程。
-> 共享节点组里有中文命名的 `缩放`、`深度`、`视差效果`，镭射条纹、星光、线稿发光都是独立可调的材质节点。想研究全息卡是怎么"闪"起来的，打开它就是最好的教材。
-> 
-> ---
-> 
-> ## 🧱 一张闪卡是怎么叠出来的
-> 
-> 四层图叠在同一块画布上，视差把它们在空间里"撑开"：
+> The bare command gives you the last 7 days across everything:
 > 
 > ```
->         👀 你的视线
->          │
->    ┌─────┴──────┐
->    │  text.png  │  文字层     ─ 稳稳贴在表面
->    ├────────────┤
->    │ lineart.png│  线稿层     ─ 发光的轮廓
->    ├────────────┤
->    │ subject.png│  主体层     ─ 往前凸出来
->    ├────────────┤
->    │ background │  背景层     ─ 往后缩进去
->    └────────────┘
+> python cli.py
 > ```
 > 
-> 再铺上镭射彩虹（相位跟着视角走，转到哪闪到哪）、Voronoi 星光、金色卡边。
-> 浏览器端用 Three.js 按同一套 UV 公式重建这四层合成，所以 Blender 里看到什么，网页里就是什么。
-> 
-> ---
-> 
-> ## 🚀 怎么用
-> 
-> ### 安装
-> 把这个目录放进 Codex 的 skills 目录即可：
+> Some other things it does:
 > 
 > ```
-> ~/.codex/skills/holo-card-studio/
+> python cli.py -today                     # just today
+> python cli.py -month                     # this calendar month
+> python cli.py -p all                    # everything you've ever run
+> python cli.py --provider claude         # one tool only
+> python cli.py --project myapp           # one project
+> python cli.pyb --from 2026-06-01 --to 2026-06-15   # a specific window
+> python cli.py --json | jq .             # machine-readable, pipe it wherever
+> python cli.py -web                       # the same thing, in a browser, with charts
 > ```
 > 
-> ### 环境
-> - Python 3 + Pillow
-> - Node.js + npm
-> - Blender **不用自己装** —— 流水线会自动把官方便携版放到 `/tools/`，校验 SHA-256，项目自带、互不干扰
+> Colour drops automatically when you pipe the output somewhere, so pasting into a PR or a chat doesn't drag a load of escape codes along with it.
 > 
-> ### 开口
-> 然后在 Codex 里直接说人话：
-> 
-> > "用 holo-card-studio 给我做一张水墨风的锦鲤闪卡，文字用书法体，编号 No.001"
-> 
-> 或者上传参考图：
-> 
-> > "照这张图做一张闪卡，保留人物和构图，背景换成星空"
-> 
-> Codex 会先把卡片规格和它推断的细节说给你听，然后开工：画图 → 生成文字层 → 写配置 → 跑流水线 → 起本地服务 → 真正打开页面测拖拽、翻面、滑块和手机布局 → 交付。
-> 
-> ### 你会收到
-> | 东西 | 用来干嘛 |
-> |---|---|
-> | 本地网页链接 | 拖、转、翻、拉滑块 |
-> | `card.blend` | 在 Blender 里继续调材质、换灯光、出渲染 |
-> | `assets/` 四层图 | 想换哪层换哪层，重跑流水线即可 |
-> | `card-config.json` | 改名字、改编号、改稀有度 |
-> | 渲染图 | 直接发 |
-> 
-> ---
-> 
-> ## 🔧 可以调的旋钮
-> 
-> 流水线出厂就是一套顺手的参数，也都留了口子：
-> 
-> - **视差强度**：主体默认 scale 1.25 / depth 0.4，背景 depth -0.25，想更"跳"就往上加
-> - **镭射条纹**：条纹密度、扭曲度、角度，以及粉-黄-蓝-白的渐变
-> - **线稿发光**：强度和遮罩密度，可以从"淡淡勾边"到"霓虹描边"
-> - **星光**：Voronoi 尺度 + 动画噪声，从零星几颗到满天星
-> - **Blender 界面语言**：默认简体中文，存在项目本地配置里，一句话可换
-> 
-> ---
-> 
-> ## 📁 目录一览
+> ### The web dashboard
 > 
 > ```
-> holo-card-studio/
-> ├── SKILL.md                    # Codex 读的"操作手册"
-> ├── references/
-> │   ├── art-direction.md        # 分层画图的提示词写法、参考图处理
-> │   ├── config.example.json     # 卡片配置示例
-> │   └── verification.md         # 交付前的验收清单
-> ├── scripts/
-> │   ├── ensure_blender.py       # 自动获取官方 Blender 便携版
-> │   ├── build_card.py           # 生成可编辑的 Blender 场景
-> │   ├── export_web.py           # 导出卡片几何
-> │   ├── generate_typography.py  # 精确的透明文字层
-> │   ├── validate_assets.py      # 四层图体检
-> │   ├── run_pipeline.py         # 一键流水线
-> │   └── package_skill.py        # 纯文本打包成可分享的 ZIP
-> └── assets/
->     └── web-template/           # 响应式 Three.js 查看器
+> python cli.py -web
 > ```
 > 
-> skill 本体只有代码和文字，轻得很。你生成的画作、`.blend`、模型都待在你自己的输出项目里。
+> Opens `http://localhost:4747` and lays the same numbers out as a monthly statement - total up top, everything itemised below. It reads from disk on every request (the data's tiny, so there's no reason to cache and risk showing you something stale) and binds to localhost only - nothing gets uploaded, same as the CLI. It doesn't even pull fonts from a CDN; it uses whatever serif and mono your system already has, so it works with the network unplugged. Pick a port with `--port`, or pass `--no-open` if you don't want it grabbing your browser.
 > 
-> ---
+> It's built on Python's standard-library HTTP server - no Flask, no framework, nothing extra to install.
 > 
-> ## 🤝 分享这个 skill
+> ## How the numbers are worked out
 > 
-> 想发给朋友或放进仓库？
+> **Tokens** come straight from the logs - every one of these tools records its own token counts per call, so nothing here is guessed. The one wrinkle is caching: Claude splits cache reads and writes out separately, and Gemini reports input *including* the cached part, so tokentab pulls the cached tokens back out before pricing to avoid charging you twice for the same thing.
 > 
-> ```bash
-> python scripts/package_skill.py
+> **Prices** are a hand-kept table in [`tokentab/pricing/prices.py`](tokentab/pricing/prices.py), in dollars per million tokens. It's a table on purpose - the tool never reaches out to the network to price anything, and a slightly-stale number beats a crash when a vendor renames a model overnight. The matching is fuzzy: `claude-opus-4-6-20260514` still finds `claude-opus-4-6`. If a model shows up as `$0.00`, it means the name didn't match anything in the table - add a line and it's sorted. The CLI says so when it happens instead of quietly counting it as free.
+> 
+> **Activity** (coding / debugging / refactor / testing / etc.) is a guess based on which tools got used and the wording of your first message in a session. It's deterministic - no model calls - so it's fast and you can eyeball whether it's roughly right. Treat it as a hint, not gospel.
+> 
+> ## Adding another tool
+> 
+> Every provider is a single module in `tokentab/providers/` that exposes a `collect()` function returning a flat list of `UsageRecord`s (the shape's in [`tokentab/types.py`](tokentab/types.py)). Write the module, add it to the list in `tokentab/providers/__init__.py`, done - pricing, grouping, the dashboard, all of it just works because everything downstream only ever touches that one shared shape. The three real parsers are worth a read as templates; Claude's is the simplest place to start.
+> 
+> ## From source
+> 
+> ```
+> git clone https://github.com/crwdla/tokentab
+> cd tokentab
+> pip install -e .
+> tokentab
 > ```
 > 
-> 它按白名单只打包文本文件，打出来的 ZIP 干干净净，拿走就能用。
+> The only third-party dependency is [rich](https://github.com/Textualize/rich), for the terminal tables. Everything else - the web server, the parsers, the JSON - is Python's standard library.
 > 
-> ---
+> ## Reading the output
 > 
-> *想好第一张卡画谁了吗？* ✨
+> A few patterns worth knowing when you look at your own numbers:
+> 
+> - **Cache hit under ~80%, consistently** - your context probably isn't stable between calls, or caching isn't switched on. One weird session is nothing; weeks of it is worth a look.
+> - **A big model dominating cost on lots of tiny calls** - you might be reaching for the expensive one on work a cheaper model would one-shot.
+> - **"chat" or "exploring" eating a big share** - a lot of the spend went to talking and reading rather than editing. Sometimes that's the job; sometimes it's a sign a session wandered.
+> 
+> These are starting points, not verdicts. The tool shows you the data: you know what the work actually was.
+> 
+> ## Notes
+> 
+> Prices are best-effort - if you spot a stale one, a one-line PR or an issue is welcome. Everything runs locally.
+> 
+> ## License
+> 
+> MIT - do what you like with it.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]] · [[CopilotKit--OpenBot|CopilotKit/OpenBot]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/EverettFish/holo-card-studio)
+[GitHub](https://github.com/crwdla/tokentab)
 
 ## 相關收錄
 
@@ -355,7 +286,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "EverettFish--holo-card-studio"
+> WHERE category = "Other" AND file.name != "crwdla--tokentab"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -364,7 +295,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "EverettFish--holo-card-studio" AND status != "archived"
+> WHERE language = "Python" AND file.name != "crwdla--tokentab" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -373,18 +304,18 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W37" AND file.name != "EverettFish--holo-card-studio"
+> WHERE week = "2026-W38" AND file.name != "crwdla--tokentab"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/crwdla--tokentab");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "EverettFish--holo-card-studio" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "crwdla--tokentab" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -400,7 +331,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "EverettFish" AND file.name != "EverettFish--holo-card-studio"
+> WHERE owner = "crwdla" AND file.name != "crwdla--tokentab"
 > SORT stars DESC
 > ```
 
@@ -408,7 +339,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/crwdla--tokentab");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -425,7 +356,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/crwdla--tokentab");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -458,7 +389,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/crwdla--tokentab");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -482,7 +413,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/crwdla--tokentab");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -519,7 +450,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/EverettFish--holo-card-studio");
+> const me = dv.page("Repos/crwdla--tokentab");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -602,7 +533,7 @@ Turn the user's description or uploaded reference into a finished, editable Blen
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-08** — 首次收錄
+> **2026-09-14** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -618,10 +549,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-14|2026-09-14]] — 再次上榜，1.5k stars
-- [[2026-09-13|2026-09-13]] — 再次上榜，1.5k stars
-- [[2026-09-12|2026-09-12]] — 再次上榜，1.4k stars
-- [[2026-09-11|2026-09-11]] — 再次上榜，1.4k stars
-- [[2026-09-10|2026-09-10]] — 再次上榜，1.3k stars
-- [[2026-09-09|2026-09-09]] — 再次上榜，1.2k stars
-- [[2026-09-08|2026-09-08]] — 首次收錄，936 stars
+- [[2026-09-14|2026-09-14]] — 首次收錄，913 stars

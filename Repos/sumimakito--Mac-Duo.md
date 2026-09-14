@@ -7,12 +7,12 @@ language: Swift
 license: Apache-2.0
 description: "Wish you could bring the iPhone Duo effect to your MacBook?"
 homepage: ""
-stars: 706
-stars_per_day: 353
-forks: 55
-open_issues: 24
+stars: 810
+stars_per_day: 270
+forks: 59
+open_issues: 23
 created: 2026-09-10
-pushed_at: 2026-09-12
+pushed_at: 2026-09-13
 first_seen: 2026-09-13
 week: "2026-W38"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-16"
+appearances: 2
+next_review: "2026-09-17"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-13"
-star_history: "2026-09-13:706"
+star_history: "2026-09-13:706,2026-09-14:810"
 tags:
   - github
   - "category/other"
@@ -544,4 +544,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-14|2026-09-14]] — 再次上榜，810 stars
 - [[2026-09-13|2026-09-13]] — 首次收錄，706 stars
