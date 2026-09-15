@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "Express yourself in meetings (with memes, of course)."
 homepage: ""
-stars: 819
-stars_per_day: 137
-forks: 98
-open_issues: 7
+stars: 847
+stars_per_day: 121
+forks: 102
+open_issues: 8
 created: 2026-09-08
 pushed_at: 2026-09-08
 first_seen: 2026-09-13
@@ -27,11 +27,11 @@ score_interest: 0
 score_risk: 0
 last_reviewed: 2026-09-13
 use_case: ""
-priority: medium
+priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-21"
+appearances: 3
+next_review: "2026-09-22"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 13
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-13"
-star_history: "2026-09-13:793,2026-09-14:819"
+star_history: "2026-09-13:793,2026-09-14:819,2026-09-15:847"
 tags:
   - github
   - "category/other"
@@ -575,5 +575,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-15|2026-09-15]] — 再次上榜，847 stars
 - [[2026-09-14|2026-09-14]] — 再次上榜，819 stars
 - [[2026-09-13|2026-09-13]] — 首次收錄，793 stars

@@ -1,20 +1,20 @@
 ---
-repo: Vincentwei1021/anything2explainer
-url: https://github.com/Vincentwei1021/anything2explainer
-owner: Vincentwei1021
+repo: kruzovic7/ai-data-extractor
+url: https://github.com/kruzovic7/ai-data-extractor
+owner: kruzovic7
 owner_type: User
-language: TypeScript
-license: NOASSERTION
-description: "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion."
+language: Python
+license: MIT
+description: "Free open-source extractor for AI coding assistant chat histories. Supports Claude Code, Cursor, Windsurf, Aider, Cline/Roo Code, and more."
 homepage: ""
-stars: 1344
-stars_per_day: 224
-forks: 225
-open_issues: 1
-created: 2026-09-08
-pushed_at: 2026-09-13
-first_seen: 2026-09-12
-week: "2026-W37"
+stars: 813
+stars_per_day: 271
+forks: 132
+open_issues: 0
+created: 2026-09-11
+pushed_at: 2026-09-11
+first_seen: 2026-09-15
+week: "2026-W38"
 month: "2026-09"
 category: "Other"
 subcategory: ""
@@ -25,44 +25,43 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-12
+last_reviewed: 2026-09-15
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-09-18"
-contributor_count: 2
+contributor_count: 1
 engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 15357
-readme_length: 10000
+issue_close_rate: -1
+repo_size_kb: 59
+readme_length: 9992
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-12"
-star_history: "2026-09-12:967,2026-09-13:1105,2026-09-14:1203,2026-09-15:1344"
+ring_history: "assess@2026-09-15"
+star_history: "2026-09-15:813"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
-  - "topic/agent_skills"
-  - "topic/ai_agents"
-  - "topic/ai_video"
+  - "lang/python"
+  - "topic/ai"
+  - "topic/ai_data_extraction"
   - "topic/claude_code"
-  - "topic/claude_code_skill"
+  - "topic/cursor"
 aliases:
-  - "anything2explainer"
-  - "Vincentwei1021/anything2explainer"
+  - "ai-data-extractor"
+  - "kruzovic7/ai-data-extractor"
 ---
 
-# anything2explainer
+# ai-data-extractor
 
-**967** stars · **322** stars/天 · 建立 3 天前 · TypeScript · NOASSERTION
+**813** stars · **271** stars/天 · 建立 3 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+const me = dv.page("Repos/kruzovic7--ai-data-extractor");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,20 +74,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`agent-skills` `ai-agents` `ai-video` `claude-code` `claude-code-skill` `codex` `edge-tts` `educational-video` `explainer-video` `kokoro` `motion-graphics` `multi-agent` `react` `remotion` `text-to-video` `tts` `typescript` `video-generation`
+`個人專案`
+
+`ai` `ai-data-extraction` `claude-code` `cursor`
 
 > [!summary] 一句話摘要
-> Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.
+> Free open-source extractor for AI coding assistant chat histories. Supports Claude Code, Cursor, Windsurf, Aider, Cline/Roo Code, and more.
 
 ## 專案簡介
 
-Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.
+Free open-source extractor for AI coding assistant chat histories. Supports Claude Code, Cursor, Windsurf, Aider, Cline/Roo Code, and more.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/kruzovic7--ai-data-extractor");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -123,7 +124,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/kruzovic7--ai-data-extractor");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -147,181 +148,232 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 174 |
-| Open Issues | 2 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-10 |
-| 建立日期 | 2026-09-08 |
-| Repo 大小 | 15.0 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Vincentwei1021/anything2explainer) |
-| Topics | `agent-skills` `ai-agents` `ai-video` `claude-code` `claude-code-skill` `codex` `edge-tts` `educational-video` |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "TypeScript" : 73
->     "Python" : 24
->     "Shell" : 3
-> ```
+| Forks | 132 |
+| Open Issues | 0 |
+| 最後推送 | 2026-09-11 |
+| 建立日期 | 2026-09-11 |
+| Repo 大小 | 59 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/kruzovic7/ai-data-extractor) |
+| Topics | `ai` `ai-data-extraction` `claude-code` `cursor` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Vincentwei1021](https://github.com/Vincentwei1021) | 15 |
-> | [@DHCatLaw](https://github.com/DHCatLaw) | 1 |
+> | [@kruzovic7](https://github.com/kruzovic7) | 6 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-08 ~ 2026-09-10）
-> **活躍天數** 3 天 · **最新 commit** fix(tts): 显式请求词边界，字幕起点不再静默退化成插值
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#5](https://github.com/Vincentwei1021/anything2explainer/issues/5) | 商业授权咨询：教育类自媒体视频制作与发布 | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-09-11 ~ 2026-09-11）
+> **活躍天數** 1 天 · **最新 commit** add LICENSE
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # anything2explainer
+> # AI Coding Assistant Data Extraction
 > 
-> [](https://claude.com/claude-code)
-> [](https://openai.com/codex)
-> [](https://remotion.dev)
-> [](LICENSE)
-> 
-> **English** | [简体中文](README_ZH.md)
-> 
-> **Topic in, narrated explainer video out.** anything2explainer is a [Claude Code](https://claude.com/claude-code) / [Codex](https://openai.com/codex) skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar, in Chinese or English. Every frame is drawn in code with [Remotion](https://remotion.dev) (React + TypeScript). No stock footage, no generative video model, no frames lifted from anyone else's work.
-> 
-> It is not a CLI. What ships here is the whole method an AI coding agent needs to finish the film: a compilable Remotion template, a primitives and lighting library, tooling for voiceover / storyboard / rendering / quantitative QC, written style and motion specs, a multi-agent division-of-labour protocol, and one complete reference film as the quality bar.
-> 
-> **English cut** — *RAG & Knowledge Bases*, 5′02″, 44 lines / 785 words, voiced by kokoro-82m `am_liam` at natural speed:
-> 
-> https://github.com/user-attachments/assets/e2771c68-a28c-4459-ac5a-a5b685181eeb
-> 
-> **Chinese cut** — *RAG 与知识库* v2, 4′54″, 44 lines / 1490 characters, dot-field backdrop (`bg: 'dots'`), voiced through the bring-your-own-TTS path (Volcengine TTS 2.0 + forced alignment):
-> 
-> https://github.com/user-attachments/assets/5c213990-cbba-439e-8371-fbb3aa348e05
-> 
-> Both cuts share one storyboard and 44 shots; the English cut re-times every shot to the English voiceover. The full paper trail of the original Chinese cut (4′35″, star-field backdrop, 8 build agents in parallel for 40 minutes, two QC rounds) lives in [`examples/rag/`](examples/rag/) (research → narration → storyboard → shot source → QC reports → delivery notes); rendered frames are in [`examples/rag/frames/`](examples/rag/frames/).
+> Extract your **own local chat history** from AI coding assistants into a single,
+> normalized JSONL format - for fine-tuning, personal analytics, or just backing
+> up years of conversations before an app's local database gets cleared.
 > 
 > 
-> ## Install
 > 
-> ```bash
-> git clone https://github.com/Vincentwei1021/anything2explainer.git
-> ln -s "$PWD/anything2explainer" ~/.claude/skills/anything2explainer   # Claude Code
-> ln -s "$PWD/anything2explainer" ~/.codex/skills/anything2explainer    # Codex
-> ```
-> 
-> Dependencies:
+> ## Quick start
 > 
 > ```bash
 > 
-> # Node ≥18 (the template's npm install pulls remotion 4.0.507 / react 19)
-> brew install ffmpeg          # frame extraction / transcoding, required
+> ## Features
 > 
-> python3 -m venv ~/.venvs/a2e && source ~/.venvs/a2e/bin/activate
-> pip install 'edge-tts==7.2.8' numpy pillow scipy   # pin edge-tts: it tracks a Microsoft endpoint and breaks across upgrades (7.2.0+ needs word boundaries requested explicitly; the script does)
+> Auto-discovers and extracts complete conversation history, including:
+> 
+> - User messages & assistant responses
+> - Code context (file paths, selections, snippets)
+> - Code diffs / suggested edits, where the tool records them
+> - Tool calls and their results
+> - Timestamps, session IDs, project paths, model names - whatever each
+>   tool's storage actually contains
 > 
 > 
-> ## Usage
+> ### Why Cline and Aider
 > 
-> In Claude Code or Codex, just say what you want. The skill triggers itself:
+> They're two of the most-used AI coding tools that the original list left out,
+> and both have a genuinely different (and instructive) storage shape:
 > 
-> > Make me an explainer video about vector databases.
+> - **Cline** (and its fork **Roo Code**) is the most popular open-source
+>   autonomous coding *agent* extension. It stores raw Anthropic-format
+>   message arrays per task, so its extractor doubles as the simplest example
+>   of parsing that format if you want to add your own tool later.
+> - **Aider** is the most popular *terminal-only* pair-programming tool, and
+>   it's structured completely differently from everything else here: no
+>   central database, just a markdown transcript sitting in every project
+>   directory. It's included specifically to prove the toolkit generalizes
+>   beyond "SQLite or JSONL in one app-data folder."
 > 
-> > 讲一下向量数据库，做成一条讲解视频
 > 
-> It then walks the 9 stages in `SKILL.md`:
+> ## Supported sources
 > 
-> 1. **Scaffold** the Remotion project from the template.
-> 2. **Research** (1 agent): a sourced research doc with a list of numbers and analogies, every item with a URL.
-> 3. **Narration & timeline**: the script, then TTS voiceover with per-word boundaries turned into a frame-accurate timeline and subtitle table.
-> 4. **Storyboard**: one line per shot with frame range, beat, visuals, motion, hero element and lighting.
-> 5. **Overlays & primitives**: title, chapter cards, HUD, pipeline rail, plus 2–5 topic-specific icons.
-> 6. **Pilot** (1 agent): the first shot group, then a 30-second cut for you to judge the look.
-> 7. **Parallel build**: the remaining groups, 5–7 shots per agent, each writing pure-function Remotion components.
-> 8. **Render** the full film and run quantitative frame metrics.
-> 9. **QC & fixes**: one QC agent per chapter, fix agents per group, re-verification, then delivery notes.
+> | # | Tool | Storage | Search location |
+> |---|------|---------|------------------|
+> | 1 | **Claude Code** | JSONL, one file per session | `~/.claude/projects/**/*.jsonl` |
+> | 2 | **Codex CLI** | JSONL "rollout" files | `~/.codex/sessions/**/rollout-*.jsonl` |
+> | 3 | **Cursor** | SQLite (`state.vscdb`) | `~/…/Cursor/User/{global,workspace}Storage` |
+> | 4 | **Windsurf** | SQLite, undocumented schema (heuristic) | `~/…/Windsurf/User/{global,workspace}Storage` |
+> | 5 | **Trae** | SQLite + JSONL, undocumented (heuristic) | `~/…/Trae` |
+> | 6 | **Continue** | JSON, one file per session | `~/.continue/sessions/*.json` |
+> | 7 | **Gemini CLI** | JSON, one file per chat | `~/.gemini/tmp//chats/*.json` |
+> | 8 | **OpenCode** | JSON (session/message/part trees) | `~/.local/share/opencode/storage/` |
+> | 9 | **Cline / Roo Code** *(new)* | JSON, one folder per task | `/User/globalStorage//tasks/` |
+> | 10 | **Aider** *(new)* | Markdown transcript per project | `/.aider.chat.history.md` |
 > 
-> You can also drive the template by hand:
+> Every script searches macOS, Linux, and Windows conventions
+> (`~/Library/Application Support`, `~/.config`, `~/.local/share`, `%APPDATA%`,
+> `%LOCALAPPDATA%`) automatically - you don't need to tell it which OS you're on.
+> 
+> 
+> # No dependencies -- standard library only
+> python --version   # 3.9+ required, 3.10+ recommended
+> 
+> 
+> # Interactive: pick which sources to extract from a numbered menu
+> python extract.py
+> 
+> 
+> # Or drive it directly
+> python extract.py --all
+> python extract.py --sources cursor,claude_code,aider
+> python extract.py --list                    # just show what's installed, don't extract
+> python extract.py --all --merge             # also write all_conversations.jsonl
+> 
+> 
+> # Shorthand for "extract everything"
+> ./extract_all.sh
+> ```
+> 
+> 
+> ### CLI reference
+> 
+> ```
+> python extract.py [--all] [--sources ids] [--list] [--output-dir DIR]
+>                     [--search-path PATH ...] [--merge]
+> 
+> --all                 Extract every supported source, no prompts.
+> --sources ids         Comma-separated source ids (see table above for names,
+>                        or run with --list to see them). Skips the menu.
+> --list                Report what was found for each source without
+>                        extracting anything -- a fast, safe preview.
+> --output-dir DIR      Where to write JSONL (default: ./extracted_data)
+> --search-path PATH    Extra directory to search, on top of the normal OS
+>                        locations. Repeatable. Mainly useful for:
+>                          - Aider, which has no fixed app-data folder and
+>                            needs to know where your projects live
+>                          - nonstandard install locations for anything else
+> --merge               After extracting, also concatenate everything into
+>                        all_conversations.jsonl
+> ```
+> 
+> Each extractor can also still be run standalone, same as the original
+> toolkit (`python -m extractors.cursor` from the project root, or
+> `python extractors/cursor.py`), which is handy while debugging one source.
+> 
+> 
+> ## Output format
+> 
+> Every run creates timestamped files under `extracted_data/`:
+> 
+> ```
+> extracted_data/
+> ├── claude_code_conversations_20260816_143022.jsonl
+> ├── cursor_conversations_20260816_143022.jsonl
+> ├── aider_conversations_20260816_143022.jsonl
+> ├── cline_conversations_20260816_143022.jsonl
+> └── ... one file per source you extracted, plus all_conversations.jsonl if --merge
+> ```
+> 
+> Each line is one JSON conversation:
+> 
+> ```json
+> {
+>   "messages": [
+>     {
+>       "role": "user",
+>       "content": "How do I fix this TypeScript error?",
+>       "code_context": [
+>         {"file": "/Users/you/project/src/index.ts", "code": "const x: string = 123;"}
+>       ],
+>       "timestamp": "2026-01-16T14:30:22Z"
+>     },
+>     {
+>       "role": "assistant",
+>       "content": "The error occurs because you're assigning a number to a string type...",
+>       "tool_use": [{"name": "edit_file", "input": {"path": "src/index.ts"}}],
+>       "timestamp": "2026-01-16T14:30:25Z"
+>     }
+>   ],
+>   "source": "cursor-composer",
+>   "session_id": "c1a2b3...",
+>   "project_path": "/Users/you/project",
+>   "name": "TypeScript Type Error Fix",
+>   "created_at": 1705414222000
+> }
+> ```
+> 
+> Fields vary a bit by source (not every tool records `code_context`, token
+> usage, or `project_path`) - `messages`, `source`, and `session_id` are the
+> only ones you can always rely on.
+> 
+> 
+> ## How it works
+> 
+> 1. **Detect the OS** and build a list of plausible data roots
+>    (`Application Support`, `.config`, `.local/share`, `%APPDATA%`, etc).
+> 2. **Search each root** for the tool's known folder name(s).
+> 3. **Read the storage** - JSONL line-by-line, SQLite via a read-only
+>    connection (so a running app never blocks us), or JSON trees, depending
+>    on the tool.
+> 4. **Normalize** whatever's found into the `messages[]` schema above.
+> 5. **Write JSONL**, one conversation per line, into `extracted_data/`.
+> 
+> Nothing here ever opens a database for writing, and every reader is wrapped
+> so that one corrupt or locked file can't take down the whole run - you'll
+> get a partial result and move on, not a stack trace.
+> 
+> 
+> ### A note on Cursor, Windsurf, and Trae
+> 
+> None of these publish their storage schema, and it has changed multiple
+> times (Cursor alone has gone through at least three shapes: workspace
+> `ItemTable` chat, inline composer, and split `bubbleId` composer). The
+> `cursor.py` extractor implements all three known shapes explicitly.
+> `windsurf.py` and `trae.py` instead use a **generic heuristic**
+> (`extractors/common.py::heuristic_extract_chat_from_kv`) that scans
+> chat-related keys and walks the parsed JSON looking for objects shaped like
+> a role + text pair. It's honest best-effort, not a documented format - if
+> a future version changes shape and stops matching, that's expected; adjust
+> `KEY_HINTS` in the relevant file or send a PR.
+> 
+> 
+> ### A note on Aider
+> 
+> Aider has no central session store - every project directory gets its own
+> `.aider.chat.history.md`. By default this toolkit scans your home directory
+> plus a handful of common project-root names (`projects`, `code`, `dev`,
+> `repos`, `workspace`, `src`, `Documents`) up to 5 directories deep, skipping
+> `node_modules`, `.git`, and similar. If your projects live somewhere else,
+> point at them directly:
 > 
 > ```bash
-> template/scripts/new_project.sh ~/work/my-video myslug
-> cd ~/work/my-video
-> 
-> ## What it does
-> 
-> - **Input**: a topic ("explain vector databases"), or an article / document you want turned into a video. You also pick the length and the language.
-> - **Output**: a 1280×720 H.264 MP4 with synchronized voiceover, word-boundary-aligned subtitles, chapter cards, a top HUD and a bottom chapter progress bar, plus the full paper trail (research doc with sources, narration, storyboard, per-shot source code, QC reports).
-> - **How**: the agent researches the topic with sources, writes the narration, generates the voiceover and frame-accurate timeline, storyboards every shot, then dispatches parallel build agents that write one Remotion component per shot. QC agents review the rendered frames against written criteria before delivery.
-> - **Time**: roughly 1 to 3 hours of wall clock depending on length, most of it agents building shots in parallel. You are consulted at exactly four checkpoints.
-> 
-> 
-> # 3. script/storyboard_src.md → python3 scripts/render_storyboard.py     4. edit src/config.ts
-> 
-> ## Output spec
-> 
-> | | |
-> |---|---|
-> | Frame / rate | 1280×720 @ 30fps, H.264 |
-> | Length | your call (see table below); 2–8 minutes all work |
-> | Language | Chinese or English (`lang` in `src/config.ts`); typography, subtitle budgets and TTS switch with it |
-> | Look | black canvas with one of two backdrops, star field + fog gradient or dot-field wave (`bg` in `src/config.ts`; the dot-field wave is ported from video-talkcraft); white line art + purple accents; ultra-bold headline type |
-> | Persistent layers | 44px white-on-black-stroke subtitles, bottom chapter progress bar, top capsule HUD, optional pipeline rail |
-> | Voiceover | Chinese: edge-tts `zh-CN-YunxiNeural` (Yunxi, male). English: kokoro-82m `am_liam` (Liam, male). Or bring your own TTS / finished audio |
-> 
-> Length drives how much ground the film covers, and the size of the whole pipeline:
-> 
-> | Length | Chinese chars | English words | Lines / shots | Build agents | Wall clock | Disk |
-> |---|---|---|---|---|---|---|
-> | 2–3 min | 700–950 | 280–420 | 24–32 | 4–6 | ≈1 h | ≈2 GB |
-> | 3–5 min (reference tier) | 1200–1500 | 420–700 | 40–50 | 8 | ≈2 h | ≈2 GB |
-> | 5–8 min | 1800–2400 | 700–1150 | 60–80 | 10–14 | ≈2–3 h | ≈3 GB |
-> 
-> Chapter count is not tied to length. One chapter that goes deep or several short ones both work; the progress bar splits evenly across however many chapters the narration declares.
-> 
-> 
-> # only needed for English narration (kokoro-82m runs locally)
-> pip install kokoro soundfile && brew install espeak-ng
-> ```
-> 
-> `scipy` is only used by the QC script `frame_metrics.py`. The shell scripts are zsh + Python 3, developed and verified on macOS; Linux should work, Windows is untested.
-> 
-> 
-> # 1. research/调研.md          2. script/narration.txt → python3 scripts/tts_build.py
-> 
-> # 5. src/shots/G1..Gn          6. scripts/preview.sh 30   (first 30 seconds)
-> 
-> # 7. VER=v1 scripts/render.sh + python3 scripts/frame_metrics.py         8. QC → fix → v2/v3
+> python extract.py --sources aider --search-path ~/client-work --search-path /mnt/data/repos
 > ```
 > 
 > 
-> ## Four checkpoints
+> ## Extending it: adding a new source
 > 
-> The run stops and waits for you at exactly four points instead of ploughing through (details in `SKILL.md`):
-> 
-> 1. **Length and language**: before the script is written. Length decides the line count, shot count and how many agents run in parallel, i.e. how much the film can actually cover; language flips `lang` in `src/config.ts`, which drives typography, subtitle budgets and the default voice.
-> 2. **Narration sign-off**: before voiceover. Once locked, frame numbers are hard-coded into every shot; changing one word re-times the whole film. This is the cheapest place to intervene.
-> 3. **Voiceover**: before TTS runs you get asked whether you have a preferred engine. If not, defaults apply (edge-tts Yunxi for Chinese, kokoro-82m Liam for English). You can also hand over finished audio and fill the per-line timeline yourself.
-> 4. **First 30 seconds**: only the first build group is done, then 30 seconds get rendered for you to judge the look. Fixing the style here costs one group; after the full render it costs every group.
-> 
-> 
-> ## How it compares
-> 
-> | Tool class | What it produces | Where anything2explainer differs |
-> |---|---|---|
-> | Generative video models (Sora, Veo, Runway) | Footage synthesized from a prompt 
+> Every extractor is a small modu
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/Vincentwei1021/anything2explainer)
+[GitHub](https://github.com/kruzovic7/ai-data-extractor)
 
 ## 相關收錄
 
@@ -329,7 +381,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "Vincentwei1021--anything2explainer"
+> WHERE category = "Other" AND file.name != "kruzovic7--ai-data-extractor"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -338,7 +390,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "Vincentwei1021--anything2explainer" AND status != "archived"
+> WHERE language = "Python" AND file.name != "kruzovic7--ai-data-extractor" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -347,18 +399,18 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W37" AND file.name != "Vincentwei1021--anything2explainer"
+> WHERE week = "2026-W38" AND file.name != "kruzovic7--ai-data-extractor"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/kruzovic7--ai-data-extractor");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "Vincentwei1021--anything2explainer" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "kruzovic7--ai-data-extractor" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -374,7 +426,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "Vincentwei1021" AND file.name != "Vincentwei1021--anything2explainer"
+> WHERE owner = "kruzovic7" AND file.name != "kruzovic7--ai-data-extractor"
 > SORT stars DESC
 > ```
 
@@ -382,7 +434,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/kruzovic7--ai-data-extractor");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -399,7 +451,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/kruzovic7--ai-data-extractor");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -432,7 +484,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/kruzovic7--ai-data-extractor");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -456,7 +508,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/kruzovic7--ai-data-extractor");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -493,7 +545,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/Vincentwei1021--anything2explainer");
+> const me = dv.page("Repos/kruzovic7--ai-data-extractor");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -576,7 +628,7 @@ Topic in, narrated explainer video out. A Claude Code / Codex skill that turns a
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-12** — 首次收錄
+> **2026-09-15** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -592,7 +644,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-15|2026-09-15]] — 再次上榜，1.3k stars
-- [[2026-09-14|2026-09-14]] — 再次上榜，1.2k stars
-- [[2026-09-13|2026-09-13]] — 再次上榜，1.1k stars
-- [[2026-09-12|2026-09-12]] — 首次收錄，967 stars
+- [[2026-09-15|2026-09-15]] — 首次收錄，813 stars
