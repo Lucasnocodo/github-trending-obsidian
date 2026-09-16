@@ -1,68 +1,68 @@
 ---
-repo: sumimakito/Mac-Duo
-url: https://github.com/sumimakito/Mac-Duo
-owner: sumimakito
+repo: eternityspring/reelbench-skills
+url: https://github.com/eternityspring/reelbench-skills
+owner: eternityspring
 owner_type: User
-language: Swift
+language: HTML
 license: Apache-2.0
-description: "Wish you could bring the iPhone Duo effect to your MacBook?"
+description: "Learning notes and tooling skills for AI video - AI 视频相关的学习与工具 skill"
 homepage: ""
-stars: 918
-stars_per_day: 184
-forks: 66
-open_issues: 29
-created: 2026-09-10
+stars: 698
+stars_per_day: 140
+forks: 92
+open_issues: 0
+created: 2026-09-11
 pushed_at: 2026-09-14
-first_seen: 2026-09-13
+first_seen: 2026-09-16
 week: "2026-W38"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "dev"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-13
+last_reviewed: 2026-09-16
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-09-23"
-contributor_count: 5
-engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 531
-readme_length: 2592
+contributor_count: 1
+engagement: "medium"
+issue_close_rate: 100
+repo_size_kb: 100613
+readme_length: 1898
 bus_factor: 1
-last_release_days: 1
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-13"
-star_history: "2026-09-13:706,2026-09-14:810,2026-09-15:876,2026-09-16:918"
+ring_history: "assess@2026-09-16"
+star_history: "2026-09-16:698"
 tags:
   - github
   - "category/other"
-  - "lang/swift"
-  - "topic/flip"
-  - "topic/iphone"
-  - "topic/iphoneduo"
-  - "topic/mac"
-  - "topic/macos"
+  - "lang/html"
+  - "topic/ai_video"
+  - "topic/claude_skills"
+  - "topic/ffmpeg"
+  - "topic/shot_analysis"
+  - "topic/video_analysis"
 aliases:
-  - "Mac-Duo"
-  - "sumimakito/Mac-Duo"
+  - "reelbench-skills"
+  - "eternityspring/reelbench-skills"
 ---
 
-# Mac-Duo
+# reelbench-skills
 
-**706** stars · **353** stars/天 · 建立 2 天前 · Swift · Apache-2.0
+**698** stars · **140** stars/天 · 建立 5 天前 · HTML · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/sumimakito--Mac-Duo");
+const me = dv.page("Repos/eternityspring--reelbench-skills");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`dev`
+`個人專案`
 
-`flip` `iphone` `iphoneduo` `mac` `macos` `menubar` `menubar-app` `menubarapp`
+`ai-video` `claude-skills` `ffmpeg` `shot-analysis` `video-analysis`
 
 > [!summary] 一句話摘要
-> Wish you could bring the iPhone Duo effect to your MacBook?
+> Learning notes and tooling skills for AI video - AI 视频相关的学习与工具 skill
 
 ## 專案簡介
 
-Wish you could bring the iPhone Duo effect to your MacBook?
+Learning notes and tooling skills for AI video - AI 视频相关的学习与工具 skill
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/eternityspring--reelbench-skills");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +125,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/eternityspring--reelbench-skills");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,131 +149,116 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 55 |
-| Open Issues | 24 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-12 |
-| 建立日期 | 2026-09-10 |
-| Repo 大小 | 531 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/sumimakito/Mac-Duo) |
-| Topics | `flip` `iphone` `iphoneduo` `mac` `macos` `menubar` `menubar-app` `menubarapp` |
+| Forks | 92 |
+| Open Issues | 0 |
+| Issue 解決率 | 100% (1 closed) |
+| 最後推送 | 2026-09-14 |
+| 建立日期 | 2026-09-11 |
+| Repo 大小 | 98.3 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/eternityspring/reelbench-skills) |
+| Topics | `ai-video` `claude-skills` `ffmpeg` `shot-analysis` `video-analysis` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Swift" : 98
->     "Shell" : 2
+>     "HTML" : 46
+>     "JavaScript" : 44
+>     "CSS" : 10
+>     "Shell" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@sumimakito](https://github.com/sumimakito) | 16 |
-> | [@cocoa-xu](https://github.com/cocoa-xu) | 1 |
-> | [@WindowsMEMZ](https://github.com/WindowsMEMZ) | 1 |
-> | [@surinrasu](https://github.com/surinrasu) | 1 |
-> | [@S7arFish](https://github.com/S7arFish) | 1 |
-
-**最新版本**：dev — Mac Duo 0.1.0-dev.13.1 (2026-09-12)
-
-> [!info]- Release Notes
-> **Mac Duo 0.1.0-dev.13.1**
-> 
-> Commit: `c4f57ae38220d9b1b5ca1d36526f642b032b720a`
-> 
-> Open the DMG and drag **Mac Duo** to **Applications**, or extract the ZIP.
-> 
-> Requires macOS 14 or later and a MacBook with a compatible lid angle sensor.
-> Includes Apple Silicon and Intel binaries.
-> 
-> Grant Screen Recording permission when prompted to enable the effect.
+> | [@eternityspring](https://github.com/eternityspring) | 16 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-11 ~ 2026-09-12）
-> **活躍天數** 2 天 · **最新 commit** fix: follow up on sensor selection
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#13](https://github.com/sumimakito/Mac-Duo/issues/13) | Check for lid closure instead of using a set angle | 1 | 0 |
-> | [#28](https://github.com/sumimakito/Mac-Duo/issues/28) | Unrecoverable UI lockout when "Start angle" is set near the  | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-09-12 ~ 2026-09-14）
+> **活躍天數** 3 天 · **最新 commit** badge 配色从深绿改成红
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Mac Duo
+> [](README.md)
+> [](README.en.md)
+> [](#ai-视频交流社群)
+> [](https://x.com/eternityspring)
 > 
-> **Wish you could bring the iPhone Duo effect to your MacBook?**
+> # reelbench-skills
 > 
-> https://github.com/user-attachments/assets/3ea3b098-c6d2-4398-8f3a-e9087bbb33f2
+> 视频侧的 Claude Code / Codex skill。
 > 
-> Close the lid and watch your screen content tilt, blur, and fade as it moves.  
-> Mac Duo adds this effect to your MacBook, with controls in the menu bar.
+> | skill | 干什么 |
+> | --- | --- |
+> | [video-shots](skills/video-shots/) | **拉片**：把一条成片拆成逐镜头的分析表——时长、景别、类别、运镜、画面、节奏。切点与时长由 ffmpeg 量，模型只判断该判断的那几件事，15 道质量门逐条对账 |
+> | [video-sync](skills/video-sync/) | **合成带分镜信息的视频**：画面一边、分镜信息一边，镜头切了信息跟着切、镜头表自动滚动高亮。横版上下叠、竖版左右并，布局改一份 CSS 就行 |
 > 
-> **Available in:** English and Simplified Chinese (简体中文).
+> ## AI 视频交流社群
 > 
-> With the default settings, it's recommended to view the effect in front of your MacBook.
+> 我建了一个付费AI视频交流群，聊 AI 视频的工作流、工具和实操。
 > 
-> - **Metal rendering:** Uses GPU rendering to apply perspective, blur, and dimming as the lid closes.
-> - **Live screen content:** Uses ScreenCaptureKit to capture and render screen content in real time.
-> - **Adjustable perspective:** Tweak the perspective to suit your viewing position and make the effect look more natural.
+> 有兴趣的加我：微信 **`hao_dev`**，添加时备注 **`github`**。
 > 
-> > [!NOTE]
-> > Mac Duo is completely **free** to use. Whether you use the app or reuse its code in your projects, please consider [sponsoring me](https://github.com/sponsors/sumimakito) if you find it helpful.
-> >
-> > Special thanks to our team at [Moeru AI](https://github.com/moeru-ai) for sponsoring the Apple Developer Program membership used to sign and notarize the prebuilt app here.
+> ## 安装
 > 
-> ## Download
-> 
-> [Download DMG](https://github.com/sumimakito/Mac-Duo/releases/download/dev/Mac-Duo-dev.dmg) | [Download ZIP](https://github.com/sumimakito/Mac-Duo/releases/download/dev/Mac-Duo-dev.zip)
-> 
-> These downloads contain the latest [development build](https://github.com/sumimakito/Mac-Duo/releases/tag/dev) for Apple Silicon and Intel Macs.
-> 
-> Requires macOS 14 or later and a MacBook with a compatible lid angle sensor.
-> Grant Screen Recording permission when prompted to enable the effect.
-> 
-> ## Build
-> 
-> Requires Xcode with Swift 6.0 or later. Run from the project directory:
-> 
-> ```sh
-> ./build.sh
+> ```bash
+> git clone https://github.com/eternityspring/reelbench-skills.git
+> cd reelbench-skills
+> ./scripts/install.sh
 > ```
 > 
-> The script creates `build/Mac Duo.app` with an ad-hoc signature. Open it from Finder, or build and launch with:
+> 软链到 `~/.claude/skills/` 和/或 `~/.codex/skills/`（哪个装了就装到哪），**`git pull` 之后立刻生效**。
 > 
-> ```sh
-> ./build.sh --run
+> ```bash
+> ./scripts/install.sh --claude      # 只装到 Claude Code
+> ./scripts/install.sh --codex       # 只装到 codex
+> ./scripts/install.sh video-shots   # 只装某一个 skill
+> ./scripts/install.sh --uninstall   # 取消软链
 > ```
 > 
-> macOS may require Screen Recording permission again after rebuilding with ad-hoc signing.
+> 依赖只有 `node` >= 18 和 `ffmpeg` / `ffprobe`（macOS：`brew install node ffmpeg`）。
+> **零 npm 依赖、零 API key**，用当前会话额度。
 > 
-> ## Known limitations
+> 不想软链就直接拷：`cp -r skills/video-shots ~/.claude/skills/`——skill 自包含，拷走就能用。
 > 
-> - Only MacBooks with a compatible lid angle sensor can use the effect. The app reports when no sensor is available.
-> - The sensor must be one macOS marks as built-in. An external display with a similar sensor is ignored.
-> - The effect applies only to the built-in display.
-> - The effect stops when macOS sleeps as the lid closes.
-> - Clicks pass through the effect to the apps underneath.
+> ## 示例
 > 
-> ## Acknowledgements
+> `demo-report/` 是拿 `demo-video.mp4`（202.9 秒的 AI 短片《啥是AI》）真跑出来的**完整产物**：
+> 53 镜、平均镜长 3.83 秒、每分钟 15.7 切、15 道质量门全绿。
+> `demo-report-en/` 是同一套流程跑一段 287.4 秒的英文片段（`--lang en`，报告全英文）：
+> 46 镜、平均镜长 6.25 秒、最长的一镜 46.92 秒——场景检测在那一段里一刀都没落，
+> 因为它真的是一条不切的长镜头。
 > 
-> This project is built with AI assistance.
+> [](demo-report/shots-report.html)
 > 
-> ## License
+> 报告是**单文件交互页**：内嵌播放器（播放时同步高亮镜头、点镜头跳转）、镜头节奏带、
+> 可搜索可筛选可排序的镜头表（列表 / 卡片两种视图、首尾关键帧并排、点图开大图）、
+> 统计分布、出场人物、质量检查。零外部依赖，离线双击能开。
 > 
-> Licensed under the [Apache License 2.0](LICENSE). Copyright 2026 Makito.
+> ```
+> demo-report/
+> ├── shots-report.html   ← 克隆下来双击就能开
+> ├── shots.json          ← 53 镜的拉片主数据
+> ├── shots.md            ← Markdown 镜头表
+> ├── track.json          ← 逐帧差分的运动曲线（机器证据）
+> └── frames/             ← 每镜首尾两张关键帧，共 106 张
+> ```
 > 
-> See [NOTICE](NOTICE) for attribution.
+> **video-sync** 的产出在最后面——直接看视频。
+> 
+> ## 成片长这样
+> 
+> 287.4 秒的英文片段 + 46 镜分镜信息，1280×1296（原片 640×360，`--scale 2` 放大）。
+> 镜头切了信息跟着切，列表往上滚、高亮跟着滑：
+> 
+> 播放器没出来就直接下载：[`demo-sync/demo-en-sync.mp4`](demo-sync/demo-en-sync.mp4)
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/sumimakito/Mac-Duo)
+[GitHub](https://github.com/eternityspring/reelbench-skills)
 
 ## 相關收錄
 
@@ -281,7 +266,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "sumimakito--Mac-Duo"
+> WHERE category = "Other" AND file.name != "eternityspring--reelbench-skills"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -290,7 +275,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Swift" AND file.name != "sumimakito--Mac-Duo" AND status != "archived"
+> WHERE language = "HTML" AND file.name != "eternityspring--reelbench-skills" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -299,18 +284,18 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "sumimakito--Mac-Duo"
+> WHERE week = "2026-W38" AND file.name != "eternityspring--reelbench-skills"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/eternityspring--reelbench-skills");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "sumimakito--Mac-Duo" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "eternityspring--reelbench-skills" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -326,7 +311,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "sumimakito" AND file.name != "sumimakito--Mac-Duo"
+> WHERE owner = "eternityspring" AND file.name != "eternityspring--reelbench-skills"
 > SORT stars DESC
 > ```
 
@@ -334,7 +319,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/eternityspring--reelbench-skills");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -351,7 +336,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/eternityspring--reelbench-skills");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -384,7 +369,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/eternityspring--reelbench-skills");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -408,7 +393,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/eternityspring--reelbench-skills");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -445,7 +430,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/eternityspring--reelbench-skills");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -528,7 +513,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-13** — 首次收錄
+> **2026-09-16** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -544,7 +529,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-16|2026-09-16]] — 再次上榜，918 stars
-- [[2026-09-15|2026-09-15]] — 再次上榜，876 stars
-- [[2026-09-14|2026-09-14]] — 再次上榜，810 stars
-- [[2026-09-13|2026-09-13]] — 首次收錄，706 stars
+- [[2026-09-16|2026-09-16]] — 首次收錄，698 stars

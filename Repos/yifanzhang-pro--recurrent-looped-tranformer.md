@@ -7,12 +7,12 @@ language: HTML
 license: Apache-2.0
 description: "Official Project Page for Recurrent Looped Transformer (RLT)"
 homepage: "https://yifanzhang-pro.github.io/recurrent-looped-tranformer"
-stars: 763
-stars_per_day: 382
-forks: 77
+stars: 837
+stars_per_day: 279
+forks: 81
 open_issues: 0
 created: 2026-09-12
-pushed_at: 2026-09-13
+pushed_at: 2026-09-16
 first_seen: 2026-09-15
 week: "2026-W38"
 month: "2026-09"
@@ -30,10 +30,10 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-18"
+appearances: 2
+next_review: "2026-09-19"
 contributor_count: 1
-engagement: "medium"
+engagement: "low"
 issue_close_rate: 100
 repo_size_kb: 4109
 readme_length: 6263
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-15"
-star_history: "2026-09-15:763"
+star_history: "2026-09-15:763,2026-09-16:837"
 tags:
   - github
   - "category/other"
@@ -545,4 +545,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-16|2026-09-16]] — 再次上榜，837 stars
 - [[2026-09-15|2026-09-15]] — 首次收錄，763 stars

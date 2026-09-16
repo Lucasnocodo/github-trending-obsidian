@@ -1,68 +1,63 @@
 ---
-repo: sumimakito/Mac-Duo
-url: https://github.com/sumimakito/Mac-Duo
-owner: sumimakito
+repo: nftechie/stonkfly
+url: https://github.com/nftechie/stonkfly
+owner: nftechie
 owner_type: User
-language: Swift
-license: Apache-2.0
-description: "Wish you could bring the iPhone Duo effect to your MacBook?"
+language: Python
+license: MIT
+description: "A full retained fly-connectome simulation with experimental memory and guarded Coinbase AgentKit trading actions."
 homepage: ""
-stars: 918
-stars_per_day: 184
-forks: 66
-open_issues: 29
+stars: 693
+stars_per_day: 116
+forks: 115
+open_issues: 2
 created: 2026-09-10
-pushed_at: 2026-09-14
-first_seen: 2026-09-13
+pushed_at: 2026-09-10
+first_seen: 2026-09-16
 week: "2026-W38"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "dev"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-13
+last_reviewed: 2026-09-16
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-09-23"
-contributor_count: 5
-engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 531
-readme_length: 2592
+contributor_count: 1
+engagement: "medium"
+issue_close_rate: 50
+repo_size_kb: 1388
+readme_length: 2167
 bus_factor: 1
-last_release_days: 1
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-13"
-star_history: "2026-09-13:706,2026-09-14:810,2026-09-15:876,2026-09-16:918"
+ring_history: "assess@2026-09-16"
+star_history: "2026-09-16:693"
 tags:
   - github
   - "category/other"
-  - "lang/swift"
-  - "topic/flip"
-  - "topic/iphone"
-  - "topic/iphoneduo"
-  - "topic/mac"
-  - "topic/macos"
+  - "lang/python"
 aliases:
-  - "Mac-Duo"
-  - "sumimakito/Mac-Duo"
+  - "stonkfly"
+  - "nftechie/stonkfly"
 ---
 
-# Mac-Duo
+# stonkfly
 
-**706** stars · **353** stars/天 · 建立 2 天前 · Swift · Apache-2.0
+**693** stars · **116** stars/天 · 建立 6 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/sumimakito--Mac-Duo");
+const me = dv.page("Repos/nftechie--stonkfly");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`dev`
-
-`flip` `iphone` `iphoneduo` `mac` `macos` `menubar` `menubar-app` `menubarapp`
+`個人專案`
 
 > [!summary] 一句話摘要
-> Wish you could bring the iPhone Duo effect to your MacBook?
+> A full retained fly-connectome simulation with experimental memory and guarded Coinbase AgentKit trading actions.
 
 ## 專案簡介
 
-Wish you could bring the iPhone Duo effect to your MacBook?
+A full retained fly-connectome simulation with experimental memory and guarded Coinbase AgentKit trading actions.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/nftechie--stonkfly");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +118,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/nftechie--stonkfly");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,131 +142,77 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 55 |
-| Open Issues | 24 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-12 |
+| Forks | 115 |
+| Open Issues | 2 |
+| Issue 解決率 | 50% (2 closed) |
+| 最後推送 | 2026-09-10 |
 | 建立日期 | 2026-09-10 |
-| Repo 大小 | 531 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/sumimakito/Mac-Duo) |
-| Topics | `flip` `iphone` `iphoneduo` `mac` `macos` `menubar` `menubar-app` `menubarapp` |
+| Repo 大小 | 1.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/nftechie/stonkfly) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Swift" : 98
->     "Shell" : 2
+>     "Python" : 96
+>     "C++" : 4
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@sumimakito](https://github.com/sumimakito) | 16 |
-> | [@cocoa-xu](https://github.com/cocoa-xu) | 1 |
-> | [@WindowsMEMZ](https://github.com/WindowsMEMZ) | 1 |
-> | [@surinrasu](https://github.com/surinrasu) | 1 |
-> | [@S7arFish](https://github.com/S7arFish) | 1 |
-
-**最新版本**：dev — Mac Duo 0.1.0-dev.13.1 (2026-09-12)
-
-> [!info]- Release Notes
-> **Mac Duo 0.1.0-dev.13.1**
-> 
-> Commit: `c4f57ae38220d9b1b5ca1d36526f642b032b720a`
-> 
-> Open the DMG and drag **Mac Duo** to **Applications**, or extract the ZIP.
-> 
-> Requires macOS 14 or later and a MacBook with a compatible lid angle sensor.
-> Includes Apple Silicon and Intel binaries.
-> 
-> Grant Screen Recording permission when prompted to enable the effect.
+> | [@nftechie](https://github.com/nftechie) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-11 ~ 2026-09-12）
-> **活躍天數** 2 天 · **最新 commit** fix: follow up on sensor selection
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#13](https://github.com/sumimakito/Mac-Duo/issues/13) | Check for lid closure instead of using a set angle | 1 | 0 |
-> | [#28](https://github.com/sumimakito/Mac-Duo/issues/28) | Unrecoverable UI lockout when "Start angle" is set near the  | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-09-10）
+> **活躍天數** 1 天 · **最新 commit** Initial commit: Stonkfly connectome trading experiment
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Mac Duo
+> # Stonkfly
 > 
-> **Wish you could bring the iPhone Duo effect to your MacBook?**
+> A fly-connectome simulation that can operate a crypto trading account. Actual neural output, actual Coinbase integration. Profitable learning has not been demonstrated.
 > 
-> https://github.com/user-attachments/assets/3ea3b098-c6d2-4398-8f3a-e9087bbb33f2
+> **How it works:** Public Coinbase prices become an RGB chart. It stimulates 3,335 brightness inputs and 811 R8 color inputs in the retained **MaleCNS v1.0 graph: 166,700 neurons, 25.6 million connections**. A fixed neural readout proposes buy, sell or hold. A custom **Coinbase AgentKit ActionProvider** checks limits and places spot orders through Coinbase Advanced.
 > 
-> Close the lid and watch your screen content tilt, blur, and fade as it moves.  
-> Mac Duo adds this effect to your MacBook, with controls in the menu bar.
+> Positive portfolio P&L stimulates 15 identified PAM11 dopamine cells; negative P&L stimulates two PPL101 aversive dopamine cells. A candidate memory rule changes existing KC-to-MBON connections. These are engineered reinforcement signals, **not modeled pain receptors**. Synaptic changes do not establish that it learns to trade profitably. [Model and evidence](docs/model.md).
 > 
-> **Available in:** English and Simplified Chinese (简体中文).
+> ## Run it
 > 
-> With the default settings, it's recommended to view the effect in front of your MacBook.
-> 
-> - **Metal rendering:** Uses GPU rendering to apply perspective, blur, and dimming as the lid closes.
-> - **Live screen content:** Uses ScreenCaptureKit to capture and render screen content in real time.
-> - **Adjustable perspective:** Tweak the perspective to suit your viewing position and make the effect look more natural.
-> 
-> > [!NOTE]
-> > Mac Duo is completely **free** to use. Whether you use the app or reuse its code in your projects, please consider [sponsoring me](https://github.com/sponsors/sumimakito) if you find it helpful.
-> >
-> > Special thanks to our team at [Moeru AI](https://github.com/moeru-ai) for sponsoring the Apple Developer Program membership used to sign and notarize the prebuilt app here.
-> 
-> ## Download
-> 
-> [Download DMG](https://github.com/sumimakito/Mac-Duo/releases/download/dev/Mac-Duo-dev.dmg) | [Download ZIP](https://github.com/sumimakito/Mac-Duo/releases/download/dev/Mac-Duo-dev.zip)
-> 
-> These downloads contain the latest [development build](https://github.com/sumimakito/Mac-Duo/releases/tag/dev) for Apple Silicon and Intel Macs.
-> 
-> Requires macOS 14 or later and a MacBook with a compatible lid angle sensor.
-> Grant Screen Recording permission when prompted to enable the effect.
-> 
-> ## Build
-> 
-> Requires Xcode with Swift 6.0 or later. Run from the project directory:
+> Python 3.11, a C++17 compiler, macOS/Linux. Allow several GB for the dataset and dependencies; 16 GB RAM recommended.
 > 
 > ```sh
-> ./build.sh
+> python3.11 -m venv .venv
+> source .venv/bin/activate
+> pip install -e '.[test]'
+> python -m stonkfly prepare
+> python -m stonkfly run
 > ```
 > 
-> The script creates `build/Mac Duo.app` with an ad-hoc signature. Open it from Finder, or build and launch with:
+> Default: **paper trades, real public BTC-USDC data, $100 simulated balance**. No key needed. Local logs, sensory images and resumable brain state go in `runs/paper/`. Ctrl-C stops it; the same command resumes.
+> 
+> For real orders, first create a dedicated Coinbase Advanced portfolio with **at most 100 USDC** and a portfolio-scoped **ECDSA API key with View + Trade, no Transfer**. Copy `.env.example` to `.env`, fill it in locally, then run these commands yourself:
 > 
 > ```sh
-> ./build.sh --run
+> python -m stonkfly run --live --preflight-only
+> python -m stonkfly run --live
 > ```
 > 
-> macOS may require Screen Recording permission again after rebuilding with ad-hoc signing.
+> Defaults: $10 maximum order including reserved fees, 24 attempts/day, no shorts or leverage. A $20 drawdown stops new orders; **it does not liquidate holdings or cap further losses**. [Operation and recovery](docs/operations.md).
 > 
-> ## Known limitations
+> ```sh
+> python -m stonkfly status
+> python -m pytest -q
+> ```
 > 
-> - Only MacBooks with a compatible lid angle sensor can use the effect. The app reports when no sensor is available.
-> - The sensor must be one macOS marks as built-in. An external display with a similar sensor is ignored.
-> - The effect applies only to the built-in display.
-> - The effect stops when macOS sleeps as the lid closes.
-> - Clicks pass through the effect to the apps underneath.
-> 
-> ## Acknowledgements
-> 
-> This project is built with AI assistance.
-> 
-> ## License
-> 
-> Licensed under the [Apache License 2.0](LICENSE). Copyright 2026 Makito.
-> 
-> See [NOTICE](NOTICE) for attribution.
+> The repo does not come funded or connected to anyone’s account. Live execution needs your local credentials and explicit opt-in.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/sumimakito/Mac-Duo)
+[GitHub](https://github.com/nftechie/stonkfly)
 
 ## 相關收錄
 
@@ -281,7 +220,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "sumimakito--Mac-Duo"
+> WHERE category = "Other" AND file.name != "nftechie--stonkfly"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -290,7 +229,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Swift" AND file.name != "sumimakito--Mac-Duo" AND status != "archived"
+> WHERE language = "Python" AND file.name != "nftechie--stonkfly" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -299,18 +238,18 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "sumimakito--Mac-Duo"
+> WHERE week = "2026-W38" AND file.name != "nftechie--stonkfly"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/nftechie--stonkfly");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "sumimakito--Mac-Duo" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "nftechie--stonkfly" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -326,7 +265,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "sumimakito" AND file.name != "sumimakito--Mac-Duo"
+> WHERE owner = "nftechie" AND file.name != "nftechie--stonkfly"
 > SORT stars DESC
 > ```
 
@@ -334,7 +273,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/nftechie--stonkfly");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -351,7 +290,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/nftechie--stonkfly");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -384,7 +323,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/nftechie--stonkfly");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -408,7 +347,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/nftechie--stonkfly");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -445,7 +384,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/nftechie--stonkfly");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -528,7 +467,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-13** — 首次收錄
+> **2026-09-16** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -544,7 +483,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-16|2026-09-16]] — 再次上榜，918 stars
-- [[2026-09-15|2026-09-15]] — 再次上榜，876 stars
-- [[2026-09-14|2026-09-14]] — 再次上榜，810 stars
-- [[2026-09-13|2026-09-13]] — 首次收錄，706 stars
+- [[2026-09-16|2026-09-16]] — 首次收錄，693 stars

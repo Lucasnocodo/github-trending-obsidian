@@ -1,68 +1,63 @@
 ---
-repo: sumimakito/Mac-Duo
-url: https://github.com/sumimakito/Mac-Duo
-owner: sumimakito
+repo: zjwzcx/Awesome-Astra-Embodied-AI
+url: https://github.com/zjwzcx/Awesome-Astra-Embodied-AI
+owner: zjwzcx
 owner_type: User
-language: Swift
-license: Apache-2.0
-description: "Wish you could bring the iPhone Duo effect to your MacBook?"
+language: N/A
+license: N/A
+description: "GPT-6 Astra for embodied AI and robotics."
 homepage: ""
-stars: 918
-stars_per_day: 184
-forks: 66
-open_issues: 29
-created: 2026-09-10
+stars: 711
+stars_per_day: 237
+forks: 13
+open_issues: 1
+created: 2026-09-12
 pushed_at: 2026-09-14
-first_seen: 2026-09-13
+first_seen: 2026-09-16
 week: "2026-W38"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "dev"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-13
+last_reviewed: 2026-09-16
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-09-23"
-contributor_count: 5
+appearances: 1
+next_review: "2026-09-19"
+contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 531
-readme_length: 2592
+repo_size_kb: 4089
+readme_length: 9993
 bus_factor: 1
-last_release_days: 1
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-13"
-star_history: "2026-09-13:706,2026-09-14:810,2026-09-15:876,2026-09-16:918"
+ring_history: "assess@2026-09-16"
+star_history: "2026-09-16:711"
 tags:
   - github
   - "category/other"
-  - "lang/swift"
-  - "topic/flip"
-  - "topic/iphone"
-  - "topic/iphoneduo"
-  - "topic/mac"
-  - "topic/macos"
+  - "lang/other"
 aliases:
-  - "Mac-Duo"
-  - "sumimakito/Mac-Duo"
+  - "Awesome-Astra-Embodied-AI"
+  - "zjwzcx/Awesome-Astra-Embodied-AI"
 ---
 
-# Mac-Duo
+# Awesome-Astra-Embodied-AI
 
-**706** stars · **353** stars/天 · 建立 2 天前 · Swift · Apache-2.0
+**711** stars · **237** stars/天 · 建立 3 天前 · N/A · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/sumimakito--Mac-Duo");
+const me = dv.page("Repos/zjwzcx--Awesome-Astra-Embodied-AI");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`dev`
-
-`flip` `iphone` `iphoneduo` `mac` `macos` `menubar` `menubar-app` `menubarapp`
+`個人專案`
 
 > [!summary] 一句話摘要
-> Wish you could bring the iPhone Duo effect to your MacBook?
+> GPT-6 Astra for embodied AI and robotics.
 
 ## 專案簡介
 
-Wish you could bring the iPhone Duo effect to your MacBook?
+GPT-6 Astra for embodied AI and robotics.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/zjwzcx--Awesome-Astra-Embodied-AI");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +118,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/zjwzcx--Awesome-Astra-Embodied-AI");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,131 +142,197 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 55 |
-| Open Issues | 24 |
+| Forks | 13 |
+| Open Issues | 1 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-12 |
-| 建立日期 | 2026-09-10 |
-| Repo 大小 | 531 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/sumimakito/Mac-Duo) |
-| Topics | `flip` `iphone` `iphoneduo` `mac` `macos` `menubar` `menubar-app` `menubarapp` |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "Swift" : 98
->     "Shell" : 2
-> ```
+| 最後推送 | 2026-09-14 |
+| 建立日期 | 2026-09-12 |
+| Repo 大小 | 4.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/zjwzcx/Awesome-Astra-Embodied-AI) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@sumimakito](https://github.com/sumimakito) | 16 |
-> | [@cocoa-xu](https://github.com/cocoa-xu) | 1 |
-> | [@WindowsMEMZ](https://github.com/WindowsMEMZ) | 1 |
-> | [@surinrasu](https://github.com/surinrasu) | 1 |
-> | [@S7arFish](https://github.com/S7arFish) | 1 |
-
-**最新版本**：dev — Mac Duo 0.1.0-dev.13.1 (2026-09-12)
-
-> [!info]- Release Notes
-> **Mac Duo 0.1.0-dev.13.1**
-> 
-> Commit: `c4f57ae38220d9b1b5ca1d36526f642b032b720a`
-> 
-> Open the DMG and drag **Mac Duo** to **Applications**, or extract the ZIP.
-> 
-> Requires macOS 14 or later and a MacBook with a compatible lid angle sensor.
-> Includes Apple Silicon and Intel binaries.
-> 
-> Grant Screen Recording permission when prompted to enable the effect.
+> | [@zjwzcx](https://github.com/zjwzcx) | 6 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-11 ~ 2026-09-12）
-> **活躍天數** 2 天 · **最新 commit** fix: follow up on sensor selection
+> [!abstract] 最近 10 次 commit（2026-09-12 ~ 2026-09-14）
+> **活躍天數** 3 天 · **最新 commit** Clarify planning stack in Flood demos
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#13](https://github.com/sumimakito/Mac-Duo/issues/13) | Check for lid closure instead of using a set angle | 1 | 0 |
-> | [#28](https://github.com/sumimakito/Mac-Duo/issues/28) | Unrecoverable UI lockout when "Start angle" is set near the  | 0 | 0 |
+> | [#1](https://github.com/zjwzcx/Awesome-Astra-Embodied-AI/issues/1) | What open-source code is available? | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Mac Duo
+> # Awesome Astra Embodied AI
 > 
-> **Wish you could bring the iPhone Duo effect to your MacBook?**
+> GPT-6 Astra with embodied AI / robotics workflows and demos.
 > 
-> https://github.com/user-attachments/assets/3ea3b098-c6d2-4398-8f3a-e9087bbb33f2
 > 
-> Close the lid and watch your screen content tilt, blur, and fade as it moves.  
-> Mac Duo adds this effect to your MacBook, with controls in the menu bar.
+> ## Contents
 > 
-> **Available in:** English and Simplified Chinese (简体中文).
+> Cases are grouped by workflow and ordered by publication date, newest first within each section.
 > 
-> With the default settings, it's recommended to view the effect in front of your MacBook.
+> - 🤖 [Zero-shot Control](#-zero-shot-control)
+>   - 🧪 [Deploy in Simulation](#-deploy-in-simulation) — 10 cases
+>   - 🌍 [Deploy in Real World](#-deploy-in-real-world) — 10 cases
+> - 🧠 [Agentic Policy Calls](#-agentic-policy-calls) — 1 case
+> - 🔄 [Real-to-sim Replay / Data Rollout](#-real-to-sim-replay--data-rollout) — 6 cases
+> - 🛠️ [Astra Builds RL Training Environments and Training](#-astra-builds-rl-training-environments-and-training) — 5 cases
 > 
-> - **Metal rendering:** Uses GPU rendering to apply perspective, blur, and dimming as the lid closes.
-> - **Live screen content:** Uses ScreenCaptureKit to capture and render screen content in real time.
-> - **Adjustable perspective:** Tweak the perspective to suit your viewing position and make the effect look more natural.
 > 
-> > [!NOTE]
-> > Mac Duo is completely **free** to use. Whether you use the app or reuse its code in your projects, please consider [sponsoring me](https://github.com/sponsors/sumimakito) if you find it helpful.
-> >
-> > Special thanks to our team at [Moeru AI](https://github.com/moeru-ai) for sponsoring the Apple Developer Program membership used to sign and notarize the prebuilt app here.
+> ## 🤖 Zero-shot Control
 > 
-> ## Download
 > 
-> [Download DMG](https://github.com/sumimakito/Mac-Duo/releases/download/dev/Mac-Duo-dev.dmg) | [Download ZIP](https://github.com/sumimakito/Mac-Duo/releases/download/dev/Mac-Duo-dev.zip)
+> ### 🧪 Deploy in Simulation
 > 
-> These downloads contain the latest [development build](https://github.com/sumimakito/Mac-Duo/releases/tag/dev) for Apple Silicon and Intel Macs.
+> Astra directly performs zero-shot control in a simulator.
 > 
-> Requires macOS 14 or later and a MacBook with a compatible lid angle sensor.
-> Grant Screen Recording permission when prompted to enable the effect.
+> #### Case 1: [G1 Cola Bottle Pick-up in Isaac Sim](https://x.com/RotekSong/status/2099104628562608371)
 > 
-> ## Build
+> **Source / Credit:** [Flood Sung (@RotekSong)](https://x.com/RotekSong), X demo of the GPT-6 Codex agent controlling a Unitree G1 in Isaac Sim.
 > 
-> Requires Xcode with Swift 6.0 or later. Run from the project directory:
+> **Published:** 2026-09-13
 > 
-> ```sh
-> ./build.sh
-> ```
+> Astra performs high-level planning for the cola-bottle pick-up, and the GEAR-SONIC planner converts the plan into a whole-body qpos trajectory for the simulated G1 to execute.
 > 
-> The script creates `build/Mac Duo.app` with an ad-hoc signature. Open it from Finder, or build and launch with:
+> #### Case 2: [Quadruped Task via Five-key-joint Trajectory](https://x.com/gclue_akira/status/2098300921658868185)
 > 
-> ```sh
-> ./build.sh --run
-> ```
+> **Source / Credit:** [Akira Sasaki (@gclue_akira)](https://x.com/gclue_akira), X quadruped locomotion demo where Astra outputs five key-joint trajectories for MuJoCo execution.
 > 
-> macOS may require Screen Recording permission again after rebuilding with ad-hoc signing.
+> **Published:** 2026-09-11
 > 
-> ## Known limitations
+> Astra supplies the sparse trajectory while the low-level controller executes the quadruped behavior in MuJoCo.
 > 
-> - Only MacBooks with a compatible lid angle sensor can use the effect. The app reports when no sensor is available.
-> - The sensor must be one macOS marks as built-in. An external display with a similar sensor is ignored.
-> - The effect applies only to the built-in display.
-> - The effect stops when macOS sleeps as the lid closes.
-> - Clicks pass through the effect to the apps underneath.
+> #### Case 3: [G1 Navigation Trajectory Tracked by SONIC](https://x.com/RotekSong/status/2098212303263183329/video/1)
 > 
-> ## Acknowledgements
+> **Source / Credit:** [Flood Sung (@RotekSong)](https://x.com/RotekSong), X demo of Astra producing a navigation trajectory for SONIC to track.
 > 
-> This project is built with AI assistance.
+> **Published:** 2026-09-11
 > 
-> ## License
+> Astra performs high-level navigation planning, and the GEAR-SONIC planner converts the plan into a whole-body qpos trajectory for the simulated G1 to execute.
 > 
-> Licensed under the [Apache License 2.0](LICENSE). Copyright 2026 Makito.
+> #### Case 4: [Robot Hands Solve a Rubik’s Cube](https://x.com/ZeYanjie/status/2098118164626501669)
 > 
-> See [NOTICE](NOTICE) for attribution.
+> **Source / Credit:** [Ze Yanjie (@ZeYanjie)](https://x.com/ZeYanjie), X demo titled “GPT6 Astra solved Rubik’s Cube with robot hands.”
+> 
+> **Published:** 2026-09-10
+> 
+> Astra performs zero-shot dexterous cube manipulation in simulation.
+> 
+> #### Case 5: [Dexterous Apple-stem Grasp in SuperDex](https://www.rednote.com/discovery/item/6aa27b3a000000002b025d03?xsec_token=ABWznjLAd9oNPOxPF1Mc6ZfMK0VKAVH4AMkoYwkdPqQRw=&xsec_source=pc_search&source=web_profile_page)
+> 
+> **Source / Credit:** [Kiki Huang](https://www.rednote.com/user/profile/62f72244000000001f0176ea), Rednote demo using the Meta SuperDex physics backend and MuJoCo rendering.
+> 
+> **Published:** 2026-09-10
+> 
+> Astra controls a dexterous hand to grasp the narrow stem of an apple in simulation.
+> 
+> #### Case 6: [GPT-6 Astra on HumanCLAW-Bench](https://x.com/Kuvvius/status/2098038921301311753)
+> 
+> **Source / Credit:** [Jiawei Gu (@Kuvvius)](https://x.com/Kuvvius), X benchmark demo using the open-source HumanCLAW-Bench harness and motion generator.
+> 
+> **Published:** 2026-09-10
+> 
+> Astra completes benchmark navigation and interaction tasks through the simulation harness.
+> 
+> #### Case 7: [Whole-body Trajectory with a Whole-body Controller](https://www.rednote.com/discovery/item/6a9fe4df00000000110341b8?xsec_token=ABMaVBcBS54ctuQIxmhMJMZVm36xy72xuPS8s6aICdfXM=&xsec_source=pc_search&source=web_profile_page)
+> 
+> **Source / Credit:** [橘子不是唯一的水果](https://www.rednote.com/user/profile/695bb2a2000000003702ea8f), Rednote demo where Astra generates a whole-body trajectory and a whole-body controller executes it.
+> 
+> **Published:** 2026-09-08
+> 
+> Astra generates the trajectory while the whole-body controller closes the execution loop.
+> 
+> #### Case 8: [Isaac Sim Cube Grasp from One Prompt](https://www.rednote.com/discovery/item/6aa017a8000000002b002341?xsec_token=ABeuYgBbxlsBRQGFSm3KRd7TFtNG2CtmpEnSxlcSsSC4E=&xsec_source=pc_like)
+> 
+> **Source / Credit:** [神秘小孙](https://www.rednote.com/user/profile/5b3f9fc86b58b75d4c02ccc0), Rednote demo of Astra building a depth-camera robot-arm cube-grasp scene in Isaac Sim.
+> 
+> **Published:** 2026-09-08
+> 
+> Astra receives one task sentence and produces a working simulated grasp demo.
+> 
+> #### Case 9: [Physically Writing a Fibonacci Sequence](https://x.com/dimentary/status/2097455860541009958)
+> 
+> **Source / Credit:** [Dmytro Hrybov (@dimentary)](https://x.com/dimentary), X demo of Astra generating a Unitree G1 motion for a physical Fibonacci-writing task.
+> 
+> **Published:** 2026-09-08
+> 
+> Astra attempts a long-horizon simulated manipulation task that ends with generated code and robot motion.
+> 
+> #### Case 10: [LLM Harness for Tabletop Robot Control](https://x.com/DJiafei/status/2096601096705995155)
+> 
+> **Source / Credit:** [Jiafei Duan (@DJiafei)](https://x.com/DJiafei), X demo of a GPT-6 Astra harness solving a tabletop grasp-and-place task.
+> 
+> **Published:** 2026-09-06
+> 
+> Astra writes and runs the control loop for a simulated tabletop manipulation task.
+> 
+> 
+> ## 🧠 Agentic Policy Calls
+> 
+> Astra performs high-level task understanding and decomposition, then calls a pretrained embodied foundation model for low-level control.
+> 
+> #### Case 21: [Zero-shot Task Execution through FluxVLA](https://www.rednote.com/discovery/item/6aa16835000000000b00f46d?xsec_token=ABDcu5eBZZYkAUcveAv8IZNWsbLmXk6CUM5u5BhDPODB0=&xsec_source=pc_search&source=web_profile_page)
+> 
+> **Source / Credit:** [Jikun](https://www.rednote.com/user/profile/5e25bcdc00000000010085a8), Rednote demo pairing GPT-6 Astra with the pretrained [FluxVLA](https://github.com/FluxVLA/FluxVLA) policy.
+> 
+> **Published:** 2026-09-09
+> 
+> “Zero-shot” refers to Astra’s task inference and planning; FluxVLA executes the low-level embodied actions.
+> 
+> 
+> ## 🔄 Real-to-sim Replay / Data Rollout
+> 
+> Workflows that reconstruct or replay real-world trajectories, demonstrations, and environments in simulation.
+> 
+> #### Case 22: [Lab Kitchen Reconstruction with Articulated Objects](https://www.rednote.com/discovery/item/6aa4d64c000000000b037809?xsec_token=ABur_B60E14GxVQp2ei3USGkgJntlivJm_02tlDaUFWmg=&xsec_source=pc_search&source=web_profile_page)
+> 
+> **Source / Credit:** [Frank ZY Dou](https://www.rednote.com/user/profile/5e3431cf0000000001002919), Rednote demo reconstructing a lab kitchen from a 20-second monocular RGB video with movable cabinets and other articulated structures.
+> 
+> **Published:** 2026-09-12
+> 
+> Astra iteratively models a real kitchen and its articulated objects into a simulation scene.
+> 
+> #### Case 23: [Rope-driven Dexterous Hand Reconstruction](https://x.com/dimentary/status/2097857980150763900)
+> 
+> **Source / Credit:** [Dmytro Hrybov (@dimentary)](https://x.com/dimentary), X attempt to recreate 1X's tendon-driven hand demo from a reference video in MuJoCo.
+> 
+> **Published:** 2026-09-10
+> 
+> Astra rebuilds the hand and motion, but uses simplified mechanics and illustrative cable deformation rather than full tendon-transmission physics.
+> 
+> #### Case 24: [Tendon-driven Dexterous Hand Motion Reconstruction](https://x.com/earthtojake/status/2097789988670709821)
+> 
+> **Source / Credit:** [Jake Fitzgerald (@earthtojake)](https://x.com/earthtojake), X demo in which Astra designs and reconstructs the motion of a tendon-driven robot hand.
+> 
+> **Published:** 2026-09-09
+> 
+> Astra reconstructs the tendon-driven hand's motion in a simulated model, including cable-actuated finger movement.
+> 
+> #### Case 25: [Dexterous Hand-object Data Rollout](https://x.com/Lingxiao234/status/2097717020540481630)
+> 
+> **Source / Credit:** [Lingxiao (@Lingxiao234)](https://x.com/Lingxiao234), X demo showing two videos driving real-to-sim reconstruction and physical retargeting to Wuji hands.
+> 
+> **Published:** 2026-09-09
+> 
+> Astra reconstructs hand-object interaction from videos without explicit states or actions.
+> 
+> #### Case 26: [Video in → Physics out](https://x.com/huxiao93612565/status/2097815230105399402)
+> 
+> **Source / Credit:** [xia
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/sumimakito/Mac-Duo)
+[GitHub](https://github.com/zjwzcx/Awesome-Astra-Embodied-AI)
 
 ## 相關收錄
 
@@ -281,7 +340,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "sumimakito--Mac-Duo"
+> WHERE category = "Other" AND file.name != "zjwzcx--Awesome-Astra-Embodied-AI"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -290,7 +349,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Swift" AND file.name != "sumimakito--Mac-Duo" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "zjwzcx--Awesome-Astra-Embodied-AI" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -299,18 +358,18 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "sumimakito--Mac-Duo"
+> WHERE week = "2026-W38" AND file.name != "zjwzcx--Awesome-Astra-Embodied-AI"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/zjwzcx--Awesome-Astra-Embodied-AI");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "sumimakito--Mac-Duo" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "zjwzcx--Awesome-Astra-Embodied-AI" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -326,7 +385,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "sumimakito" AND file.name != "sumimakito--Mac-Duo"
+> WHERE owner = "zjwzcx" AND file.name != "zjwzcx--Awesome-Astra-Embodied-AI"
 > SORT stars DESC
 > ```
 
@@ -334,7 +393,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/zjwzcx--Awesome-Astra-Embodied-AI");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -351,7 +410,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/zjwzcx--Awesome-Astra-Embodied-AI");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -384,7 +443,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/zjwzcx--Awesome-Astra-Embodied-AI");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -408,7 +467,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/zjwzcx--Awesome-Astra-Embodied-AI");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -445,7 +504,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/sumimakito--Mac-Duo");
+> const me = dv.page("Repos/zjwzcx--Awesome-Astra-Embodied-AI");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -528,7 +587,7 @@ Wish you could bring the iPhone Duo effect to your MacBook?
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-13** — 首次收錄
+> **2026-09-16** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -544,7 +603,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-16|2026-09-16]] — 再次上榜，918 stars
-- [[2026-09-15|2026-09-15]] — 再次上榜，876 stars
-- [[2026-09-14|2026-09-14]] — 再次上榜，810 stars
-- [[2026-09-13|2026-09-13]] — 首次收錄，706 stars
+- [[2026-09-16|2026-09-16]] — 首次收錄，711 stars

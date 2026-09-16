@@ -7,8 +7,8 @@ language: Python
 license: MIT
 description: "Free open-source extractor for AI coding assistant chat histories. Supports Claude Code, Cursor, Windsurf, Aider, Cline/Roo Code, and more."
 homepage: ""
-stars: 813
-stars_per_day: 271
+stars: 823
+stars_per_day: 206
 forks: 132
 open_issues: 0
 created: 2026-09-11
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-18"
+appearances: 2
+next_review: "2026-09-19"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-15"
-star_history: "2026-09-15:813"
+star_history: "2026-09-15:813,2026-09-16:823"
 tags:
   - github
   - "category/other"
@@ -644,4 +644,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-16|2026-09-16]] — 再次上榜，823 stars
 - [[2026-09-15|2026-09-15]] — 首次收錄，813 stars
