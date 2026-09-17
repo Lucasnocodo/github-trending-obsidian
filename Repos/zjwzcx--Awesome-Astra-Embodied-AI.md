@@ -7,12 +7,12 @@ language: N/A
 license: N/A
 description: "GPT-6 Astra for embodied AI and robotics."
 homepage: ""
-stars: 711
-stars_per_day: 237
-forks: 13
-open_issues: 1
+stars: 790
+stars_per_day: 198
+forks: 14
+open_issues: 2
 created: 2026-09-12
-pushed_at: 2026-09-14
+pushed_at: 2026-09-17
 first_seen: 2026-09-16
 week: "2026-W38"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-19"
+appearances: 2
+next_review: "2026-09-24"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-16"
-star_history: "2026-09-16:711"
+star_history: "2026-09-16:711,2026-09-17:790"
 tags:
   - github
   - "category/other"
@@ -603,4 +603,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-17|2026-09-17]] — 再次上榜，790 stars
 - [[2026-09-16|2026-09-16]] — 首次收錄，711 stars

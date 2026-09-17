@@ -7,9 +7,9 @@ language: C#
 license: MIT
 description: "IDM激活与状态维护工具"
 homepage: ""
-stars: 715
-stars_per_day: 143
-forks: 181
+stars: 722
+stars_per_day: 120
+forks: 182
 open_issues: 3
 created: 2026-09-10
 pushed_at: 2026-09-11
@@ -30,8 +30,8 @@ use_case: ""
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-23"
+appearances: 2
+next_review: "2026-09-24"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 25
@@ -42,7 +42,7 @@ last_release_days: 5
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-16"
-star_history: "2026-09-16:715"
+star_history: "2026-09-16:715,2026-09-17:722"
 tags:
   - github
   - "category/other"
@@ -653,4 +653,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-17|2026-09-17]] — 再次上榜，722 stars
 - [[2026-09-16|2026-09-16]] — 首次收錄，715 stars

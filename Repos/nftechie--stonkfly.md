@@ -7,9 +7,9 @@ language: Python
 license: MIT
 description: "A full retained fly-connectome simulation with experimental memory and guarded Coinbase AgentKit trading actions."
 homepage: ""
-stars: 693
-stars_per_day: 116
-forks: 115
+stars: 722
+stars_per_day: 103
+forks: 123
 open_issues: 2
 created: 2026-09-10
 pushed_at: 2026-09-10
@@ -30,8 +30,8 @@ use_case: ""
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-23"
+appearances: 2
+next_review: "2026-09-24"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-16"
-star_history: "2026-09-16:693"
+star_history: "2026-09-16:693,2026-09-17:722"
 tags:
   - github
   - "category/other"
@@ -483,4 +483,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-17|2026-09-17]] — 再次上榜，722 stars
 - [[2026-09-16|2026-09-16]] — 首次收錄，693 stars

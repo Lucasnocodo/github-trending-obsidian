@@ -1,67 +1,69 @@
 ---
-repo: Chuloo/mural
-url: https://github.com/Chuloo/mural
-owner: Chuloo
-owner_type: User
-language: Kotlin
-license: MIT
-description: "The language app you eventually delete. A native iPhone companion for learning through conversation."
-homepage: "https://mural.chat"
-stars: 1271
-stars_per_day: 318
-forks: 249
-open_issues: 24
-created: 2026-09-12
-pushed_at: 2026-09-16
-first_seen: 2026-09-15
+repo: unstablebuild/rune
+url: https://github.com/unstablebuild/rune
+owner: unstablebuild
+owner_type: Organization
+language: Go
+license: GPL-3.0
+description: "the development environment for pros"
+homepage: "https://rune.build"
+stars: 756
+stars_per_day: 126
+forks: 54
+open_issues: 74
+created: 2026-09-10
+pushed_at: 2026-09-17
+first_seen: 2026-09-17
 week: "2026-W38"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v0.1.0-android-preview.6"
+release_tag: "v1.2.1"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-15
+last_reviewed: 2026-09-17
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-09-20"
-contributor_count: 2
-engagement: "medium"
-issue_close_rate: 22
-repo_size_kb: 19376
-readme_length: 9161
+appearances: 1
+next_review: "2026-09-24"
+contributor_count: 4
+engagement: "low"
+issue_close_rate: 10
+repo_size_kb: 148942
+readme_length: 3325
 bus_factor: 1
-last_release_days: 1
+last_release_days: 6
 release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-15"
-star_history: "2026-09-15:866,2026-09-16:1081,2026-09-17:1271"
+ring_history: "assess@2026-09-17"
+star_history: "2026-09-17:756"
 tags:
   - github
   - "category/other"
-  - "lang/kotlin"
-  - "topic/ios"
-  - "topic/language_learning"
-  - "topic/open_source"
-  - "topic/swiftui"
+  - "lang/go"
+  - org
+  - "topic/agent_orchestration"
+  - "topic/ai"
+  - "topic/cli"
+  - "topic/coding_agents"
+  - "topic/developer_tool"
 aliases:
-  - "mural"
-  - "Chuloo/mural"
+  - "rune"
+  - "unstablebuild/rune"
 ---
 
-# mural
+# rune
 
-**866** stars · **433** stars/天 · 建立 2 天前 · Kotlin · MIT
+**756** stars · **126** stars/天 · 建立 6 天前 · Go · GPL-3.0
 
 ```dataviewjs
-const me = dv.page("Repos/Chuloo--mural");
+const me = dv.page("Repos/unstablebuild--rune");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -74,22 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v0.1.0-android-preview.6`
+`ORG` `v1.2.1`
 
-`ios` `language-learning` `open-source` `swiftui`
+`agent-orchestration` `ai` `cli` `coding-agents` `developer-tool` `devtools` `go` `golang` `ide` `rune` `terminal-multiplexer` `text-editor` `tmux` `tui` `workspace-manager`
 
 > [!summary] 一句話摘要
-> The language app you eventually delete. A native iPhone companion for learning through conversation.
+> the development environment for pros
 
 ## 專案簡介
 
-The language app you eventually delete. A native iPhone companion for learning through conversation.
+the development environment for pros
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/Chuloo--mural");
+> const me = dv.page("Repos/unstablebuild--rune");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -124,7 +126,7 @@ The language app you eventually delete. A native iPhone companion for learning t
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/Chuloo--mural");
+> const me = dv.page("Repos/unstablebuild--rune");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -148,174 +150,160 @@ The language app you eventually delete. A native iPhone companion for learning t
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 181 |
-| Open Issues | 14 |
-| Issue 解決率 | 22% (4 closed) |
-| 最後推送 | 2026-09-14 |
-| 建立日期 | 2026-09-12 |
-| 官方網站 | [Link](https://mural.chat) |
-| Repo 大小 | 18.9 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Chuloo/mural) |
-| Topics | `ios` `language-learning` `open-source` `swiftui` |
+| Forks | 54 |
+| Open Issues | 74 |
+| Issue 解決率 | 10% (8 closed) |
+| 最後推送 | 2026-09-17 |
+| 建立日期 | 2026-09-10 |
+| 官方網站 | [Link](https://rune.build) |
+| Repo 大小 | 145.5 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/unstablebuild/rune) |
+| Topics | `agent-orchestration` `ai` `cli` `coding-agents` `developer-tool` `devtools` `go` `golang` |
+
+> [!info]- 主要依賴
+> `go.mod` 中的核心套件：
+> `module` `codeberg.org/readeck/go-readability/v2` `github.com/Xuanwo/go-locale` `github.com/anthropics/anthropic-sdk-go` `github.com/atotto/clipboard` `github.com/disintegration/imaging` `github.com/dustinkirkland/golang-petname` `github.com/ernestrc/dom` `github.com/ernestrc/go-multierror` `github.com/ernestrc/sensible` `github.com/hajimehoshi/ebiten/v2` `github.com/junegunn/fzf` `github.com/mattn/go-runewidth` `github.com/modelcontextprotocol/go-sdk` `github.com/openai/openai-go/v2`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Kotlin" : 42
->     "TypeScript" : 36
->     "Swift" : 15
->     "Python" : 5
->     "PLpgSQL" : 2
+>     "Go" : 97
+>     "Starlark" : 1
+>     "Shell" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@Chuloo](https://github.com/Chuloo) | 53 |
-> | [@desdelinux](https://github.com/desdelinux) | 6 |
+> | [@ernestrc](https://github.com/ernestrc) | 3981 |
+> | [@eulersson](https://github.com/eulersson) | 91 |
+> | [@ikshantshukla123](https://github.com/ikshantshukla123) | 1 |
+> | [@wthrajat](https://github.com/wthrajat) | 1 |
 
-**最新版本**：v0.1.0-android-preview.6 — Mural for Android — Preview 6 (2026-09-14)
+**最新版本**：v1.2.1 (2026-09-11)
 
 > [!info]- Release Notes
-> Preview 6 fixes Google sign-in getting stuck after a guest conversation. Your earlier guest usage remains linked to your account, while an available gift or purchased balance can be used. Signing in keeps the existing one-time welcome allowance rule. Learning history and your own API key remain available if saved trial details cannot be restored. If local conversation saving delays sign-in, Mural now explains the wait.
-> 
-> ## Install or update
-> 
-> [**Download Mural for Android — Preview 6**](https://github.com/Chuloo/mural/releases/download/v0.1.0-android-preview.6/Mural-Android-direct-v6.apk)
-> 
-> Open the downloaded APK and choose **Update** if Mural is already installed. **Do not uninstall Mural or clear its data.** This APK uses the same certificate as the directly shared Preview 5, so it can update that installation. Changing a download link does not update copies already downloaded or installed: download this file again.
-> 
-> Requires Android 8.0 or later; this preview is for adults 18+. The Google Play build has a different signing certificate and is a separate release.
-> 
-> ## Verification
-> 
-> The tested runtime passed 298 JVM tests with no failures or skips. Release lint reported no errors and 47 warnings. The APK passed v2/v3 signature verification, 16 KB ZIP alignment and a bounded credential scan across all 601 archive entries, with no matches. Pattern scanning cannot exclude every possible credential format.
-> 
-> ...（完整內容見 GitHub）
+> **Full Changelog**: https://github.com/unstablebuild/rune/compare/v1.2.0...v1.2.1
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-14 ~ 2026-09-14）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #23 from desdelinux/android-parity-followup
+> [!abstract] 最近 10 次 commit（2026-09-15 ~ 2026-09-17）
+> **活躍天數** 2 天 · **最新 commit** Fix GUI input to follow the OS keyboard layout (#85)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#20](https://github.com/Chuloo/mural/issues/20) | Local AI models for offline conversation | 4 | 1 |
-> | [#14](https://github.com/Chuloo/mural/issues/14) | Release Mural for Android `enhancement` `platform:android` | 1 | 0 |
-> | [#3](https://github.com/Chuloo/mural/issues/3) | Highlight speaker’s words | 1 | 0 |
+> | [#68](https://github.com/unstablebuild/rune/issues/68) | Windows OS Support `enhancement` | 5 | 1 |
+> | [#86](https://github.com/unstablebuild/rune/issues/86) | Add telemetry consent prompt to the bootstrap wizard `enhancement` | 1 | 0 |
+> | [#63](https://github.com/unstablebuild/rune/issues/63) | Rune Agent: support ACP-compatible external coding agents | 1 | 0 |
+> | [#50](https://github.com/unstablebuild/rune/issues/50) | Language support: TypeScript and JavaScript `javascript` `language` `tsx` | 1 | 0 |
+> | [#87](https://github.com/unstablebuild/rune/issues/87) | Rune Agent: Granular command authorization `enhancement` | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Mural
-> 
-> **The language app you eventually delete.**
+> rune.build · quick start · hack on rune
 > 
 >   
 >   
 >   
 >   
+>   
+>   
+>   
+>     
 > 
-> Mural is a native iPhone and Android app for learning through conversation. Speak to a warm, animated orb, follow the meaning when you need it, and practise words again in later conversations. Mural adjusts the challenge from the evidence in your replies.
+> ---
 > 
-> Built with SwiftUI and Liquid Glass on iPhone, and Jetpack Compose on Android. Learning records stay on your device. This version connects directly to OpenAI using your own API key. It needs an internet connection, but no Mural account or running Mac.
+> https://github.com/user-attachments/assets/4ab84f7f-47c8-47af-9d32-7c69afd02669
 > 
+> **Rune is a fast, GPU-accelerated, full-featured IDE and terminal multiplexer, suitable both for automatic and manual programming.**
 > 
-> ### Install with a local AI agent
+> - **continue working from anywhere**: All your Rune instances form an e2e-encrypted network of peers, powered by our [headscale](https://github.com/juanfont/headscale) network. Connect to your workstation from your laptop, and to your laptop from your workstation.
+> - **batteries included**: Production-grade language intelligence, out-of-the-box. Check the list of [supported languages](https://docs.rune.build/languages/supported).
+> - **a new organizing model**: Stay in the flow for longer. Rune's UI is a screen multiplexer that allows you to organize it freely. Nine workspace slots. Infinite terminals, tabs and windows. A built-in agent or IDE-grade skills for yours.
+> - **plugins and extensions**: Extend Rune's functionality with [official packages →](https://rune.build/packages) or install community ones straight from a Git repository `pkg install github.com/unstablebuild/rune-extension-themebuilder`.
+> - **native application**: A native graphics pipeline: OpenGL on Linux, Metal on macOS. No Electron.
 > 
-> If Codex or another coding agent has access to your Mac's files and terminal, paste the prompt below. The agent can clone, build and install Mural. You handle Apple Account sign-in and team selection in Xcode, device trust and Developer Mode prompts, and API-key entry inside the app. The [iPhone installation guide](docs/run-on-iphone.md) covers each step.
+> ## install
 > 
-> ```text
-> Help me build and install Mural on my iPhone from https://github.com/Chuloo/mural.
-> 
-> Clone the repository into a new local folder, or use this checkout if it is
-> already open. Read README.md, docs/run-on-iphone.md and docs/build-and-test.md.
-> Check that Xcode and its iOS tools are ready, resolve the pinned dependencies,
-> run the offline core tests, and build the iOS Simulator target.
-> 
-> Guide me through adding my Apple Account and choosing my signing team in
-> Xcode. For a first installation, help me choose a unique bundle identifier if
-> needed. Preserve the existing team and identifier when updating Mural, and
-> do not uninstall it or erase its learning data.
-> 
-> Detect my connected iPhone, build with the configured signing team, install
-> Mural and launch it. Tell me when I need to unlock the phone, trust this Mac
-> or the developer profile, enable Developer Mode, or approve a system prompt.
-> 
-> I will choose my learning and subtitle languages, then enter my own OpenAI
-> API key in Settings > Advanced > Use your own API key. Do not ask me to paste
-> the key into chat, read it from Keychain, or put it in source files or logs.
-> Leave managed accounts, hosted trials and purchases disabled.
-> 
-> Finish by reporting which build and installation checks passed, and anything
-> I still need to do on the phone. I will start the first live conversation.
+> ```bash
+> curl -fsSL https://rune.build/install.sh | sh
 > ```
 > 
+> ## development
 > 
-> ### Install with Xcode
-> 
-> Updating an earlier checkout? The iPhone project now lives in `apps/ios/`. Before opening it, follow the [local-settings migration steps](docs/run-on-iphone.md#update-an-earlier-checkout) to preserve your signing team, account configuration and existing app identity.
-> 
-> 1. Clone [Chuloo/mural](https://github.com/Chuloo/mural), or download its ZIP. Open `apps/ios/Mural.xcodeproj`.
-> 2. In Xcode, open **Settings → Accounts** and add your Apple Account.
-> 3. Select the **Mural** target, open **Signing & Capabilities**, enable automatic signing, and choose your team. For your own fork, replace the bundle identifier with a unique value such as `com.yourname.mural`. Keep that value stable for later updates.
-> 4. Connect and unlock your iPhone. Trust the Mac if prompted. Turn on **Settings → Privacy & Security → Developer Mode** on the phone, restart, and confirm the setting.
-> 5. Select **Mural** as the scheme and your iPhone as the destination, then click **Run**. If iOS asks you to trust the developer, do so in **Settings → General → VPN & Device Management**.
-> 6. Choose your learning and subtitle languages in the welcome screens. In **Settings → Advanced → Use your own API key**, save your own OpenAI project key. Start a conversation and allow microphone access.
-> 
-> You should hear Mural greet you in your chosen language. You can now disconnect your phone from the Mac and use Wi-Fi or cellular.
-> 
-> A free Personal Team can run the app on your own phone; TestFlight and App Store distribution require Apple Developer Program membership. Free provisioning profiles expire after seven days. Refresh by running the same project again, preserving the team and bundle identifier. Export a learning backup before changing either or switching phones. See the [detailed iPhone guide](docs/run-on-iphone.md) for common setup problems. [Apple membership guidance](https://developer.apple.com/support/compare-memberships/)
-> 
-> 
-> ## Privacy and API costs
-> 
-> Mural stores conversations, vocabulary and preferences on your device. There is no Mural cloud sync, analytics SDK or advertising. The optional iPhone account feature stores signup data on the account service; conversations and vocabulary stay local. Your API key is stored in the device’s Keychain, excluded from learning exports, and sent only to OpenAI.
-> 
-> During practice, audio, selected conversation text, learning context and requested searches go to OpenAI. Mural does not save raw audio. API requests set `store: false` where supported, but that does not disable all provider retention; OpenAI’s abuse-monitoring rules and your project’s settings still apply. [OpenAI data controls](https://developers.openai.com/api/docs/guides/your-data)
-> 
-> OpenAI bills your project for voice, text and search. The app’s usage display is an estimate, and its conversation time limit is not a billing cap. Check your OpenAI project’s usage and spending settings.
-> 
-> 
-> ## Android
-> 
-> A native Android client is available in [`apps/android/`](apps/android/README.md), with voice and written conversation, the same eight language modules, local learning records and iPhone-compatible JSON backups. Its interface is English, and Spanish on a phone set to Spanish. It runs on Android 8.0 or later and uses your own OpenAI API key stored with Android Keystore. The iPhone client remains available below.
-> 
-> See the [Android installation/build guide](docs/run-on-android.md) and [Android verification record](verification/android-validation.md). Build a personal-install APK with Java 17 and Android SDK 36:
-> 
-> ```sh
-> cd apps/android
-> ./gradlew :app:testDebugUnitTest :app:lintDebug :app:assembleDebug
+> ```bash
+> git clone git@github.com:unstablebuild/rune.git
 > ```
 > 
+> Then run:
+> ```bash
+> go run ./cmd/rune
+> ```
 > 
-> ## Get started
+> To create a macOS application bundle:
+> ```bash
+> make rune-dmg
+> ```
 > 
-> You need a Mac with Xcode 26 or later, an iPhone running iOS 26.1 or later, an Apple Account, and an OpenAI API project with billing and access to GPT-Live-1 and GPT-5.6 Luna. A ChatGPT subscription does not provide API credit.
+> See [prerequisites](https://docs.rune.build/#prerequisites) for more details.
 > 
+> ## Makefile
 > 
-> ## What works today
+> The Makefile has a few rules for common operations needed during development.
 > 
-> - **A warm welcome:** choose a learning language and a subtitle language in two short screens, with a greeting that changes languages.
-> - **Conversation practice:** live voice, gentle corrections, optional meaning subtitles, word lookup, mute, and a typed reply when speaking is inconvenient.
-> - **Themes:** 24 conversation settings, with cultural details supplied by each language module. You can also request a current topic; web search supplies source links.
-> - **Adaptive practice:** vocabulary and provisional ability observations come from validated conversation evidence. Each learning language keeps separate progress.
-> - **Recall bars:** one to three bars summarise repeated retrieval over time. Three bars require spaced evidence in different contexts. These are product heuristics, not calibrated forgetting probabilities or a language certificate.
-> - **A fresh start:** the Talk screen returns to its greeting 15 seconds after a conversation ends. Tap **New conversation** to reset immediately. Your saved conversations and learning remain.
-> - **Local records:** export or import a JSON learning backup, delete a conversation, or delete all learning data from Settings.
+> ```bash
+> make                 # build all binaries into bin/
+> make debug           # build with the race detector and debug-only commands enabled
+> make clean           # remove bin/ and target/
 > 
-> The modules teach Norwegian Bokmål with an Eastern Norwegian voice target, Spanish from Spain, international English, French from France, German from Germany, Italian from Italy, Brazilian Portuguese and Standard Mandarin with Simplified Chinese. Each language has its own conversation themes, teaching guidance and progress. Valid regional alternatives are accepted.
+> # individual binaries
+> make rune            # the editor (bin/rune)
+> make rune-agent      # the agent extension binary (bin/rune-agent)
 > 
-> On iPhone, Mandarin includes optional pinyin in Talk, transcripts and word details. Chinese word lookup uses word boundaries, and the original characters remain available for copying from transcripts. Pinyin uses system 
+> # testing and code quality
+> make test            # run the test suite with the race detector
+> make test-e2e        # also run the e2e suites (requires docker)
+> make test-no-race    # run the test suite without the race detector
+> make coverage        # generate a coverage report
+> make lint            # run golangci-lint
+> make format          # run go fmt
+> make generate        # regenerate generated files (protobufs, mocks, docs)
+> 
+> # license headers
+> make license         # add the license header to files that are missing one
+> make assert_license  # fail if any file is missing the canonical header
+> ```
+> 
+> The remaining targets (`dist`, `release`, `rune-dmg*`, `*-docker-*`,
+> `*-notarize`, `*-dist*`) drive Unstable Build's internal
+> release, packaging, and cloud deployment pipelines and are not expected to
+> work outside that environment.
+> 
+> ## Contributing
+> 
+> See [CONTRIBUTING.md](CONTRIBUTING.md).
+> 
+> To report a security issue, see [SECURITY.md](SECURITY.md).
+> 
+> ## Sponsorship
+> 
+> Rune is developed by Unstable Build, LLC, a self-funded organization. If you'd like to
+> financially support us, you can do so via GitHub Sponsors; we might even send you some swag.
+> 
+> ## License
+> 
+> Rune is licensed under the [GNU General Public License, version 3](LICENSE)
+> or, at your option, any later version.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/Chuloo/mural) · [官方網站](https://mural.chat)
+[GitHub](https://github.com/unstablebuild/rune) · [官方網站](https://rune.build)
 
 ## 相關收錄
 
@@ -323,7 +311,7 @@ The language app you eventually delete. A native iPhone companion for learning t
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "Chuloo--mural"
+> WHERE category = "Other" AND file.name != "unstablebuild--rune"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -332,7 +320,7 @@ The language app you eventually delete. A native iPhone companion for learning t
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Kotlin" AND file.name != "Chuloo--mural" AND status != "archived"
+> WHERE language = "Go" AND file.name != "unstablebuild--rune" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -341,18 +329,18 @@ The language app you eventually delete. A native iPhone companion for learning t
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "Chuloo--mural"
+> WHERE week = "2026-W38" AND file.name != "unstablebuild--rune"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/Chuloo--mural");
+> const me = dv.page("Repos/unstablebuild--rune");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "Chuloo--mural" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "unstablebuild--rune" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -368,7 +356,7 @@ The language app you eventually delete. A native iPhone companion for learning t
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "Chuloo" AND file.name != "Chuloo--mural"
+> WHERE owner = "unstablebuild" AND file.name != "unstablebuild--rune"
 > SORT stars DESC
 > ```
 
@@ -376,7 +364,7 @@ The language app you eventually delete. A native iPhone companion for learning t
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/Chuloo--mural");
+> const me = dv.page("Repos/unstablebuild--rune");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -393,7 +381,7 @@ The language app you eventually delete. A native iPhone companion for learning t
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/Chuloo--mural");
+> const me = dv.page("Repos/unstablebuild--rune");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -426,7 +414,7 @@ The language app you eventually delete. A native iPhone companion for learning t
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/Chuloo--mural");
+> const me = dv.page("Repos/unstablebuild--rune");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -450,7 +438,7 @@ The language app you eventually delete. A native iPhone companion for learning t
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/Chuloo--mural");
+> const me = dv.page("Repos/unstablebuild--rune");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -487,7 +475,7 @@ The language app you eventually delete. A native iPhone companion for learning t
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/Chuloo--mural");
+> const me = dv.page("Repos/unstablebuild--rune");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -570,7 +558,7 @@ The language app you eventually delete. A native iPhone companion for learning t
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-15** — 首次收錄
+> **2026-09-17** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -586,6 +574,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-17|2026-09-17]] — 再次上榜，1.3k stars
-- [[2026-09-16|2026-09-16]] — 再次上榜，1.1k stars
-- [[2026-09-15|2026-09-15]] — 首次收錄，866 stars
+- [[2026-09-17|2026-09-17]] — 首次收錄，756 stars

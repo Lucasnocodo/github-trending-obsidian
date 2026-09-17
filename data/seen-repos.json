@@ -4159,10 +4159,10 @@
   },
   "sumimakito/Mac-Duo": {
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-16",
-    "times_seen": 4,
+    "last_seen": "2026-09-17",
+    "times_seen": 5,
     "stars_first": 706,
-    "stars_last": 918
+    "stars_last": 952
   },
   "crwdla/tokentab": {
     "first_seen": "2026-09-14",
@@ -4173,24 +4173,24 @@
   },
   "Chuloo/mural": {
     "first_seen": "2026-09-15",
-    "last_seen": "2026-09-16",
-    "times_seen": 2,
+    "last_seen": "2026-09-17",
+    "times_seen": 3,
     "stars_first": 866,
-    "stars_last": 1081
+    "stars_last": 1271
   },
   "kruzovic7/ai-data-extractor": {
     "first_seen": "2026-09-15",
-    "last_seen": "2026-09-16",
-    "times_seen": 2,
+    "last_seen": "2026-09-17",
+    "times_seen": 3,
     "stars_first": 813,
-    "stars_last": 823
+    "stars_last": 827
   },
   "yifanzhang-pro/recurrent-looped-tranformer": {
     "first_seen": "2026-09-15",
-    "last_seen": "2026-09-16",
-    "times_seen": 2,
+    "last_seen": "2026-09-17",
+    "times_seen": 3,
     "stars_first": 763,
-    "stars_last": 837
+    "stars_last": 863
   },
   "Colafornia/short-video-generator-AI": {
     "first_seen": "2026-09-15",
@@ -4201,38 +4201,38 @@
   },
   "ai-sucks-butt/ai-sucks-butt": {
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-16",
-    "times_seen": 1,
+    "last_seen": "2026-09-17",
+    "times_seen": 2,
     "stars_first": 1030,
-    "stars_last": 1030
+    "stars_last": 2039
   },
   "angusdevgo/IDM_Pro_Tool": {
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-16",
-    "times_seen": 1,
+    "last_seen": "2026-09-17",
+    "times_seen": 2,
     "stars_first": 715,
-    "stars_last": 715
+    "stars_last": 722
   },
   "zjwzcx/Awesome-Astra-Embodied-AI": {
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-16",
-    "times_seen": 1,
+    "last_seen": "2026-09-17",
+    "times_seen": 2,
     "stars_first": 711,
-    "stars_last": 711
+    "stars_last": 790
   },
   "eternityspring/reelbench-skills": {
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-16",
-    "times_seen": 1,
+    "last_seen": "2026-09-17",
+    "times_seen": 2,
     "stars_first": 698,
-    "stars_last": 698
+    "stars_last": 709
   },
   "nftechie/stonkfly": {
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-16",
-    "times_seen": 1,
+    "last_seen": "2026-09-17",
+    "times_seen": 2,
     "stars_first": 693,
-    "stars_last": 693
+    "stars_last": 722
   },
   "ArasTey/lunel": {
     "first_seen": "2026-09-16",
@@ -4240,5 +4240,12 @@
     "times_seen": 1,
     "stars_first": 692,
     "stars_last": 692
+  },
+  "unstablebuild/rune": {
+    "first_seen": "2026-09-17",
+    "last_seen": "2026-09-17",
+    "times_seen": 1,
+    "stars_first": 756,
+    "stars_last": 756
   }
 }

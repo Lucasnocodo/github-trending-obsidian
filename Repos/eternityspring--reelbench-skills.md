@@ -7,9 +7,9 @@ language: HTML
 license: Apache-2.0
 description: "Learning notes and tooling skills for AI video - AI 视频相关的学习与工具 skill"
 homepage: ""
-stars: 698
-stars_per_day: 140
-forks: 92
+stars: 709
+stars_per_day: 118
+forks: 93
 open_issues: 0
 created: 2026-09-11
 pushed_at: 2026-09-14
@@ -30,8 +30,8 @@ use_case: ""
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-23"
+appearances: 2
+next_review: "2026-09-24"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 100
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-16"
-star_history: "2026-09-16:698"
+star_history: "2026-09-16:698,2026-09-17:709"
 tags:
   - github
   - "category/other"
@@ -529,4 +529,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-17|2026-09-17]] — 再次上榜，709 stars
 - [[2026-09-16|2026-09-16]] — 首次收錄，698 stars
