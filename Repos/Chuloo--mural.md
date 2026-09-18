@@ -7,12 +7,12 @@ language: Kotlin
 license: MIT
 description: "The language app you eventually delete. A native iPhone companion for learning through conversation."
 homepage: "https://mural.chat"
-stars: 1271
-stars_per_day: 318
-forks: 249
-open_issues: 24
+stars: 1324
+stars_per_day: 265
+forks: 257
+open_issues: 26
 created: 2026-09-12
-pushed_at: 2026-09-16
+pushed_at: 2026-09-17
 first_seen: 2026-09-15
 week: "2026-W38"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-09-20"
+appearances: 4
+next_review: "2026-09-21"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 22
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-15"
-star_history: "2026-09-15:866,2026-09-16:1081,2026-09-17:1271"
+star_history: "2026-09-15:866,2026-09-16:1081,2026-09-17:1271,2026-09-18:1324"
 tags:
   - github
   - "category/other"
@@ -586,6 +586,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-18|2026-09-18]] — 再次上榜，1.3k stars
 - [[2026-09-17|2026-09-17]] — 再次上榜，1.3k stars
 - [[2026-09-16|2026-09-16]] — 再次上榜，1.1k stars
 - [[2026-09-15|2026-09-15]] — 首次收錄，866 stars

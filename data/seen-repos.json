@@ -4173,24 +4173,24 @@
   },
   "Chuloo/mural": {
     "first_seen": "2026-09-15",
-    "last_seen": "2026-09-17",
-    "times_seen": 3,
+    "last_seen": "2026-09-18",
+    "times_seen": 4,
     "stars_first": 866,
-    "stars_last": 1271
+    "stars_last": 1324
   },
   "kruzovic7/ai-data-extractor": {
     "first_seen": "2026-09-15",
-    "last_seen": "2026-09-17",
-    "times_seen": 3,
+    "last_seen": "2026-09-18",
+    "times_seen": 4,
     "stars_first": 813,
-    "stars_last": 827
+    "stars_last": 836
   },
   "yifanzhang-pro/recurrent-looped-tranformer": {
     "first_seen": "2026-09-15",
-    "last_seen": "2026-09-17",
-    "times_seen": 3,
+    "last_seen": "2026-09-18",
+    "times_seen": 4,
     "stars_first": 763,
-    "stars_last": 863
+    "stars_last": 874
   },
   "Colafornia/short-video-generator-AI": {
     "first_seen": "2026-09-15",
@@ -4215,17 +4215,17 @@
   },
   "zjwzcx/Awesome-Astra-Embodied-AI": {
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17",
-    "times_seen": 2,
+    "last_seen": "2026-09-18",
+    "times_seen": 3,
     "stars_first": 711,
-    "stars_last": 790
+    "stars_last": 839
   },
   "eternityspring/reelbench-skills": {
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17",
-    "times_seen": 2,
+    "last_seen": "2026-09-18",
+    "times_seen": 3,
     "stars_first": 698,
-    "stars_last": 709
+    "stars_last": 736
   },
   "nftechie/stonkfly": {
     "first_seen": "2026-09-16",
@@ -4247,5 +4247,40 @@
     "times_seen": 1,
     "stars_first": 756,
     "stars_last": 756
+  },
+  "browser-use/jev-ultrafast": {
+    "first_seen": "2026-09-18",
+    "last_seen": "2026-09-18",
+    "times_seen": 1,
+    "stars_first": 2896,
+    "stars_last": 2896
+  },
+  "tamaratran/fast-jev-compaction": {
+    "first_seen": "2026-09-18",
+    "last_seen": "2026-09-18",
+    "times_seen": 1,
+    "stars_first": 1152,
+    "stars_last": 1152
+  },
+  "TheoLeeCJ/openjev": {
+    "first_seen": "2026-09-18",
+    "last_seen": "2026-09-18",
+    "times_seen": 1,
+    "stars_first": 963,
+    "stars_last": 963
+  },
+  "agentverse-os/AgentVerse-OS": {
+    "first_seen": "2026-09-18",
+    "last_seen": "2026-09-18",
+    "times_seen": 1,
+    "stars_first": 756,
+    "stars_last": 756
+  },
+  "vinnylarouge/jevlike": {
+    "first_seen": "2026-09-18",
+    "last_seen": "2026-09-18",
+    "times_seen": 1,
+    "stars_first": 728,
+    "stars_last": 728
   }
 }

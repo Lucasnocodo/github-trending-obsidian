@@ -1,19 +1,19 @@
 ---
-repo: yifanzhang-pro/recurrent-looped-tranformer
-url: https://github.com/yifanzhang-pro/recurrent-looped-tranformer
-owner: yifanzhang-pro
-owner_type: User
-language: HTML
-license: Apache-2.0
-description: "Official Project Page for Recurrent Looped Transformer (RLT)"
-homepage: "https://yifanzhang-pro.github.io/recurrent-looped-tranformer"
-stars: 874
-stars_per_day: 175
-forks: 85
-open_issues: 0
-created: 2026-09-12
+repo: browser-use/jev-ultrafast
+url: https://github.com/browser-use/jev-ultrafast
+owner: browser-use
+owner_type: Organization
+language: Python
+license: MIT
+description: "i. am. speed."
+homepage: "https://browser-use.com"
+stars: 2896
+stars_per_day: 2896
+forks: 161
+open_issues: 19
+created: 2026-09-16
 pushed_at: 2026-09-18
-first_seen: 2026-09-15
+first_seen: 2026-09-18
 week: "2026-W38"
 month: "2026-09"
 category: "Other"
@@ -25,39 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-15
+last_reviewed: 2026-09-18
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-09-25"
+appearances: 1
+next_review: "2026-09-21"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: 100
-repo_size_kb: 4109
-readme_length: 6263
+issue_close_rate: 0
+repo_size_kb: 4478
+readme_length: 7898
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-15"
-star_history: "2026-09-15:763,2026-09-16:837,2026-09-17:863,2026-09-18:874"
+ring_history: "assess@2026-09-18"
+star_history: "2026-09-18:2896"
 tags:
   - github
   - "category/other"
-  - "lang/html"
+  - "lang/python"
+  - org
 aliases:
-  - "recurrent-looped-tranformer"
-  - "yifanzhang-pro/recurrent-looped-tranformer"
+  - "jev-ultrafast"
+  - "browser-use/jev-ultrafast"
 ---
 
-# recurrent-looped-tranformer
+# jev-ultrafast
 
-**763** stars · **382** stars/天 · 建立 2 天前 · HTML · Apache-2.0
+**2.9k** stars · **2.9k** stars/天 · 建立 1 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+const me = dv.page("Repos/browser-use--jev-ultrafast");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`ORG`
 
 > [!summary] 一句話摘要
-> Official Project Page for Recurrent Looped Transformer (RLT)
+> i. am. speed.
 
 ## 專案簡介
 
-Official Project Page for Recurrent Looped Transformer (RLT)
+i. am. speed.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/browser-use--jev-ultrafast");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +119,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/browser-use--jev-ultrafast");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,139 +143,184 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 77 |
-| Open Issues | 0 |
-| Issue 解決率 | 100% (1 closed) |
-| 最後推送 | 2026-09-13 |
-| 建立日期 | 2026-09-12 |
-| 官方網站 | [Link](https://yifanzhang-pro.github.io/recurrent-looped-tranformer) |
-| Repo 大小 | 4.0 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/yifanzhang-pro/recurrent-looped-tranformer) |
+| Forks | 161 |
+| Open Issues | 19 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-09-18 |
+| 建立日期 | 2026-09-16 |
+| 官方網站 | [Link](https://browser-use.com) |
+| Repo 大小 | 4.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/browser-use/jev-ultrafast) |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 58
+>     "HTML" : 18
+>     "JavaScript" : 13
+>     "CSS" : 10
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@yifanzhang-pro](https://github.com/yifanzhang-pro) | 20 |
+> | [@gregpr07](https://github.com/gregpr07) | 2 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-13 ~ 2026-09-13）
-> **活躍天數** 1 天 · **最新 commit** docs: rename preliminary synthetic experiments section
+> [!abstract] 最近 10 次 commit（2026-09-17 ~ 2026-09-17）
+> **活躍天數** 1 天 · **最新 commit** Reduce browser round trips and record a 7-second Flights demo
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#16](https://github.com/browser-use/jev-ultrafast/issues/16) | Setup friction: SOCKS proxy crash on startup; browser-harnes | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Recurrent Looped Transformer
+> # Jev Ultrafast ⚡
 > 
-> [](./Recurrent_Looped_Transformer.pdf)
-> [](https://yifanzhang-pro.github.io/recurrent-looped-tranformer/)
+> **A browser agent with a dynamic, indexed action space.**
 > 
-> ### Latent reasoning with infinite temporal depth
+> Give it one goal. [TypeSafe's Jev](https://docs.typesafe.ai/introduction) picks an operation and an element. A small LLM writes text only when the operation is `TYPE_TEXT`.
 > 
-> **Recurrent Looped Transformer (RLT)** carries latent computation across every prompt and response token. A causal encoder builds global key–value memory; a recurrent decoder combines that memory with sliding-window attention (SWA) and feedback from its previous final hidden state.
+> **Zürich → London on Google Flights in 7.1 seconds.** One natural-language goal, actual text generation, and loading waits included.
 > 
-> **Author:** [Yifan Zhang](https://yifzhang.com)  
-> **Date:** September 12, 2026
+> [Watch the MP4](docs/demo.mp4) · [Measurements](docs/performance.md) · [Read the loop](jev_ultrafast/agent.py)
 > 
-> [[Paper](./Recurrent_Looped_Transformer.pdf)] [[Project Website](https://yifanzhang-pro.github.io/recurrent-looped-tranformer/)]
+> ## The action space
 > 
->  
+> Every observation produces a new element table:
 > 
-> ## Three design principles
-> 
-> 1. **Latent reasoning with infinite temporal depth.** Each processed token extends a recurrent path through the decoder. With decoder depth $L_D$, the path traverses $tL_D$ blocks after $t$ tokens, while the number of blocks executed per token stays fixed.
-> 2. **Model–hardware co-design.** Parallel causal encoder work, batching across independent sequences, memory reuse, and activation checkpointing expose opportunities for efficient training and inference around the recurrent decoder.
-> 3. **Model–RL algorithm co-design.** Pretraining, SFT, sampling, and current-policy RL replay use the same complete-state transition, including prompt recurrence and decoder SWA caches.
-> 
-> “Infinite depth” means an extensible temporal computation path as the sequence grows, not infinite computation within one token. Reasoning improvements, hardware speedups, and RL scaling are research goals rather than measured results in this report.
-> 
-> ## Architecture
-> 
-> For token $x_t$, let $e_t$ be its causal encoder representation and $M_{\le t}$ the encoder-derived global KV memory. The complete decoder state includes both the recurrent output and layerwise SWA KV:
-> 
-> ```math
-> H_t=(s_t,C_t^D),\qquad H_0=(s_\star,\varnothing).
+> ```text
+> [1] button    Change ticket type · Round trip
+> [2] combobox  Where from?        · San Francisco
+> [3] combobox  Where to?          · empty
+> [4] textbox   Departure          · empty
+> ...
 > ```
 > 
-> ```math
-> (s_t,C_t^D)=D_\phi\!\left(\mathrm{Merge}(e_t,s_{t-1});M_{\le t},C_{t-1}^D,t\right).
+> The operations are `CLICK`, `TYPE_TEXT`, `SELECT`, `SCROLL_UP`, `SCROLL_DOWN`, `WAIT`, `DONE`, and `BLOCKED`. Only supported operations and targets are offered.
+> 
+> ```text
+>                       one TypeSafe request
+>                      ┌───────────────────────────┐
+> page → element table → operation                 │
+>                      │ click_target              │
+>                      │ type_text_target          │
+>                      │ select_target, if present │
+>                      └─────────────┬─────────────┘
+>                          use the matching target
+>                                    │
+>                     CLICK [7] ─────┤──→ browser
+>                 TYPE_TEXT [3] ─────┘
+>                           ↓
+>                    small LLM → text → browser
 > ```
 > 
-> ```math
-> p_\Theta(x_{t+1}\mid x_{1:t})=\mathrm{softmax}\!\left(W_o\mathrm{RMSNorm}_o(s_t)\right)_{x_{t+1}}.
+> Target questions are speculative. If the operation is `CLICK`, only `click_target` can execute. Two decisions, **one network round trip**. Each target head contains only compatible elements. Native dropdown choices carry an observed element/option index.
+> 
+> There are no site-specific action scripts or prepared field strings in the policy. The Flights example supplies a goal and independently verifies the outcome. The screenshot renderer adds labels afterward; it does not drive the browser.
+> 
+> ## Try it
+> 
+> ```bash
+> git clone https://github.com/browser-use/jev-ultrafast.git
+> cd jev-ultrafast
+> uv sync
+> cp .env.example .env
+> # Add TYPESAFE_API_KEY and TEXT_MODEL_API_KEY.
+> uv run jev
 > ```
 > 
-> - **Global context:** cross-attention reads encoder memory only through the current position.
-> - **Local decoder memory:** SWA reads recent decoder KV and the current token's KV. A window of $W$ includes the current token; up to $W-1$ historical entries are retained for the next update.
-> - **Temporal feedback:** the previous final decoder output enters the next token's merge. Neither recurrent output nor SWA cache resets at the prompt–response boundary.
+> Open **http://127.0.0.1:8766** and click **Start demo → Run automatically**. The inspector shows numbered elements, operation probabilities, target probabilities, and executed actions. **Choose next** pauses before execution.
 > 
-> The concrete configuration uses **48 encoder layers + 48 decoder layers**, with compatible attention and FFN weights shared across stages. Decoder blocks additionally perform encoder-memory cross-attention, so equal layer counts do not imply equal FLOPs.
+> Chrome connects through [Browser Harness](https://github.com/browser-use/browser-harness), installed by `uv sync`. Run `uv run browser-harness --doctor` if it needs connecting. Allow remote debugging in Chrome when prompted.
 > 
-> ## One execution across training and inference
+> `TEXT_MODEL_API_KEY` is an OpenRouter key in the example configuration. The current demo uses `inception/mercury-2.5` with reasoning disabled. Gemini, GLM, and DeepSeek can also use the OpenAI-compatible text helper; configure the appropriate model, endpoint, and reasoning setting.
 > 
-> | Mode | Encoder | Decoder and gradients |
-> | --- | --- | --- |
-> | Prompt prefill | Causal batch over known tokens | Recur through every prompt token and construct all decoder SWA KV |
-> | Generation | Incremental encoding | Sample from the preceding state, then consume the token exactly once |
-> | Pretraining | Causal batch | Full BPTT; supervise every valid next-token target |
-> | SFT | Causal batch | Full BPTT; supervise assistant targets while updating state on all context tokens |
-> | Current-policy RL replay | Rebuild under current weights | Reconstruct the full history, including SWA caches; evaluate actions before consuming them |
+> ## Use the library
 > 
-> Exact current-policy replay rebuilds parameter-dependent caches after weight updates. Full gradients pass through recurrent outputs, decoder KV, and encoder memory. Detaching any of these is a gradient approximation. Behavior log-probabilities must describe the actual sampling distribution; exact importance sampling also requires support coverage. Shared execution semantics remove structural prompt-boundary mismatch but do not alone guarantee numerical kernel parity or an unbiased off-policy objective.
+> ```python
+> from jev_ultrafast import Agent
 > 
-> ## Preliminary synthetic experiments
-> 
-> Synthetic state-tracking results contributed by [@AradhyeAgarwal](https://x.com/AradhyeAgarwal), using a small implementation with approximately **79K parameters** and **3 seeds**. Training length is **32 operations**; evaluation extends to **128 operations (4× the training length)**, with **2,048 test programs per task and length**.
-> 
-> Final-state accuracy by number of operations:
-> 
-> **Parity**
-> 
-> | Model | 16 operations | 32 operations (train length) | 64 operations (2×) | 128 operations (4×) |
-> | --- | ---: | ---: | ---: | ---: |
-> | RLT | ≈100% | ≈100% | ≈82% | 60.8% |
-> | Transformer | ≈98% | ≈72% | ≈50% | ≈48% |
-> | Token-only merge | ≈98% | ≈59% | ≈49% | ≈50% |
-> 
-> **Five-state transitions**
-> 
-> | Model | 16 operations | 32 operations (train length) | 64 operations (2×) | 128 operations (4×) |
-> | --- | ---: | ---: | ---: | ---: |
-> | RLT | ≈100% | ≈100% | ≈49% | 20.7% |
-> | Transformer | ≈54% | ≈24% | ≈20% | ≈21% |
-> | Token-only merge | ≈50% | ≈23% | ≈20% | ≈20% |
-> 
-> Values marked ≈ are approximate readings from the original figure; exact values are not labeled. RLT's 128-operation values are taken from the figure's numeric labels.
-> 
-> RLT fits both tasks at the training length, but accuracy declines on longer sequences. Chance accuracy is 50% for parity and 20% for five-state transitions. Points in the original figure show means across seeds; whiskers show seed minima and maxima. Parameter and data budgets were matched; FLOPs were not. These are independent synthetic proof-of-concept results, not a validation of large-scale reasoning or RL scaling.
-> 
-> ## Resources
-> 
-> - [Paper](./Recurrent_Looped_Transformer.pdf)
-> - [Project website](https://yifanzhang-pro.github.io/recurrent-looped-tranformer/)
-> - [Prefill–decode kernel mismatch note](https://github.com/yifanzhang-pro/Pretraining-RL-Science/blob/master/Prefill_Decode_Kernel_Mismatch.pdf)
-> 
-> ## Citation
-> 
-> ```bibtex
-> @techreport{zhang2026recurrentlooped,
->   title  = {Recurrent Looped Transformer},
->   author = {Zhang, Yifan},
->   year   = {2026},
->   month  = sep,
->   url    = {https://github.com/yifanzhang-pro/recurrent-looped-tranformer}
-> }
+> with Agent(
+>     "https://www.google.com/travel/flights?hl=en",
+>     "Find one-way flights from Zurich to London on September 20, 2026, "
+>     "for one adult in economy. Stop when matching flight options are visible.",
+> ) as agent:
+>     for state in agent.run():
+>         print(state["elapsed_ms"], state["status"])
 > ```
 > 
-> ## License
+> Run with `uv run --env-file .env python your_script.py`. The same policy can run a different task:
 > 
-> Copyright 2026 Yifan Zhang. Licensed under the [Apache License 2.0](./LICENSE).
+> ```bash
+> uv run --env-file .env python examples/run.py \
+>   --url https://en.wikipedia.org/wiki/Main_Page \
+>   --goal 'Find and open the Wikipedia article about Gödel’s incompleteness theorems.'
+> ```
+> 
+> `uv run --env-file .env python examples/flights.py --keep-open` performs the flight search, checks the actual route/date/results, and saves its trace. It does not select or book a flight.
+> 
+> ## Why it moves
+> 
+> - **One request per decision cycle.** Operation and target heads share the same observed state.
+> - **No screenshots in the default agent loop.** Jev consumes structured state. The inspector opts into screenshots; the video uses a separate continuous screencast.
+> - **One browser call per snapshot.** Read visible controls, their names, values, and text atomically. Keep references to the actual DOM nodes.
+> - **Validate the selected target.** Clicks check the document, form values, target, and nearby context. Animation alone does not force another prediction. Resolve current geometry and reject covered controls before input.
+> - **Wait for useful state.** After typing into a combobox, wait for visible suggestions, capped at 200 ms. Other interactions get at most two animation frames or 50 ms. These reads happen after execution is logged.
+> - **Keep hidden tabs rendering.** Focus emulation prevents background animation throttling without switching Chrome's visible tab.
+> - **Send visible text.** Offscreen article bodies and footers do not fill the model context.
+> - **Reuse an interrupted text request.** A generated value survives a stale-page retry only if the entire text-helper input is unchanged.
+> 
+> Every executed target is resolved from an observed node. The executor rechecks page freshness and click occlusion. Model output never becomes selectors, coordinates, shell commands, or executable JavaScript. Text-helper output must parse as a small JSON object before typing.
+> 
+> ## Small enough to read
+> 
+> | File | Job |
+> | --- | --- |
+> | [agent.py](jev_ultrafast/agent.py) | The complete loop and text-helper handoff |
+> | [snapshot.js](jev_ultrafast/snapshot.js) | Atomic DOM snapshot, indexed controls, freshness guards |
+> | [browser.py](jev_ultrafast/browser.py) | Browser connection, current geometry, execution |
+> | [model.py](jev_ultrafast/model.py) | Dynamic operation/target heads and text generation |
+> | [questions.py](jev_ultrafast/questions.py) | Model instructions |
+> | [demo.py](jev_ultrafast/demo.py) | Local inspector |
+> 
+> ## Evidence and limits
+> 
+> The current video is a **7,073 ms** Google Flights run. Timing starts after initial page observation and includes model calls, generated text, browser work, stale decisions, and loading waits. A fresh independent check verifies the one-way setting, Zürich, London, September 20, 2026, and visible flight options. The video plays at 1×, with no opening hold and a 0.5-second final hold.
+> 
+> In six alternating runs with identical models and settings, both versions passed **3/3**. Median task time went from **9.450 s → 7.092 s**, a **25% reduction**; median browser protocol calls went from **1,092 → 101**. This is three repeats of one task on one browser profile, not a general reliability benchmark.
+> 
+> The same policy opened the requested Wikipedia article in **2.798 s** and passed a local hotel search/filter task in **1.896 s**. Runs, failures, source hashes, and measurement boundaries are in [performance.md](docs/performance.md).
+> 
+> A `DONE` choice still requires independent outcome verification. The DOM reader handles common HTML and ARIA controls, not the full accessible-name specification. Shadow roots, frames, canvas, uploads, pop-up tabs, nested scrolling, and arbitrary keyboard widgets remain outside this MVP. Owned tabs share the existing Chrome profile.
+> 
+> ## Development
+> 
+> ```bash
+> uv run ruff check .
+> uv run pytest
+> node --check jev_ultrafast/static/app.js
+> node --check jev_ultrafast/snapshot.js
+> uv build
+> ```
+> 
+> Tests are offline. `uv run python scripts/check_guards.py` checks real controls in a local browser without model calls. Live examples and recording scripts make paid API calls. `scripts/record_flights.py ` captures original browser timestamps; `scripts/render_demo.py ` renders that verified run at 1× and crops out the Google account strip. Credentials and raw traces stay ignored.
+> 
+> ---
+> 
+> [Browser Use](https://github.com/browser-use/browser-use) · [Browser Harness](https://github.com/browser-use/browser-harness) · [TypeSafe speculative fan-out](https://docs.typesafe.ai/patterns/fan-out)
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/yifanzhang-pro/recurrent-looped-tranformer) · [官方網站](https://yifanzhang-pro.github.io/recurrent-looped-tranformer)
+[GitHub](https://github.com/browser-use/jev-ultrafast) · [官方網站](https://browser-use.com)
 
 ## 相關收錄
 
@@ -282,7 +328,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer"
+> WHERE category = "Other" AND file.name != "browser-use--jev-ultrafast"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -291,7 +337,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "HTML" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer" AND status != "archived"
+> WHERE language = "Python" AND file.name != "browser-use--jev-ultrafast" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -300,18 +346,18 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer"
+> WHERE week = "2026-W38" AND file.name != "browser-use--jev-ultrafast"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/browser-use--jev-ultrafast");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "yifanzhang-pro--recurrent-looped-tranformer" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "browser-use--jev-ultrafast" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -327,7 +373,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "yifanzhang-pro" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer"
+> WHERE owner = "browser-use" AND file.name != "browser-use--jev-ultrafast"
 > SORT stars DESC
 > ```
 
@@ -335,7 +381,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/browser-use--jev-ultrafast");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -352,7 +398,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/browser-use--jev-ultrafast");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -385,7 +431,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/browser-use--jev-ultrafast");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -409,7 +455,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/browser-use--jev-ultrafast");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -446,7 +492,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/browser-use--jev-ultrafast");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -529,7 +575,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-15** — 首次收錄
+> **2026-09-18** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -545,7 +591,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-18|2026-09-18]] — 再次上榜，874 stars
-- [[2026-09-17|2026-09-17]] — 再次上榜，863 stars
-- [[2026-09-16|2026-09-16]] — 再次上榜，837 stars
-- [[2026-09-15|2026-09-15]] — 首次收錄，763 stars
+- [[2026-09-18|2026-09-18]] — 首次收錄，2.9k stars

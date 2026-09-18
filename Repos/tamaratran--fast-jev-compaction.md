@@ -1,19 +1,19 @@
 ---
-repo: yifanzhang-pro/recurrent-looped-tranformer
-url: https://github.com/yifanzhang-pro/recurrent-looped-tranformer
-owner: yifanzhang-pro
+repo: tamaratran/fast-jev-compaction
+url: https://github.com/tamaratran/fast-jev-compaction
+owner: tamaratran
 owner_type: User
-language: HTML
-license: Apache-2.0
-description: "Official Project Page for Recurrent Looped Transformer (RLT)"
-homepage: "https://yifanzhang-pro.github.io/recurrent-looped-tranformer"
-stars: 874
-stars_per_day: 175
-forks: 85
-open_issues: 0
-created: 2026-09-12
+language: TypeScript
+license: MIT
+description: "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim."
+homepage: ""
+stars: 1152
+stars_per_day: 1152
+forks: 49
+open_issues: 7
+created: 2026-09-17
 pushed_at: 2026-09-18
-first_seen: 2026-09-15
+first_seen: 2026-09-18
 week: "2026-W38"
 month: "2026-09"
 category: "Other"
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-15
+last_reviewed: 2026-09-18
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-09-25"
-contributor_count: 1
+appearances: 1
+next_review: "2026-09-21"
+contributor_count: 2
 engagement: "low"
-issue_close_rate: 100
-repo_size_kb: 4109
-readme_length: 6263
+issue_close_rate: 0
+repo_size_kb: 249
+readme_length: 5789
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-15"
-star_history: "2026-09-15:763,2026-09-16:837,2026-09-17:863,2026-09-18:874"
+ring_history: "assess@2026-09-18"
+star_history: "2026-09-18:1152"
 tags:
   - github
   - "category/other"
-  - "lang/html"
+  - "lang/typescript"
 aliases:
-  - "recurrent-looped-tranformer"
-  - "yifanzhang-pro/recurrent-looped-tranformer"
+  - "fast-jev-compaction"
+  - "tamaratran/fast-jev-compaction"
 ---
 
-# recurrent-looped-tranformer
+# fast-jev-compaction
 
-**763** stars · **382** stars/天 · 建立 2 天前 · HTML · Apache-2.0
+**1.2k** stars · **1.2k** stars/天 · 建立 1 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+const me = dv.page("Repos/tamaratran--fast-jev-compaction");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
-
 > [!summary] 一句話摘要
-> Official Project Page for Recurrent Looped Transformer (RLT)
+> Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.
 
 ## 專案簡介
 
-Official Project Page for Recurrent Looped Transformer (RLT)
+Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +116,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,139 +140,176 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 77 |
-| Open Issues | 0 |
-| Issue 解決率 | 100% (1 closed) |
-| 最後推送 | 2026-09-13 |
-| 建立日期 | 2026-09-12 |
-| 官方網站 | [Link](https://yifanzhang-pro.github.io/recurrent-looped-tranformer) |
-| Repo 大小 | 4.0 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/yifanzhang-pro/recurrent-looped-tranformer) |
+| Forks | 49 |
+| Open Issues | 7 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-09-18 |
+| 建立日期 | 2026-09-17 |
+| Repo 大小 | 249 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/tamaratran/fast-jev-compaction) |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@types/node` `tsx` `typescript` `vitest`
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@yifanzhang-pro](https://github.com/yifanzhang-pro) | 20 |
+> | [@devin-ai-integration[bot]](https://github.com/devin-ai-integration[bot]) | 17 |
+> | [@tamaratran](https://github.com/tamaratran) | 13 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-13 ~ 2026-09-13）
-> **活躍天數** 1 天 · **最新 commit** docs: rename preliminary synthetic experiments section
+> [!abstract] 最近 10 次 commit（2026-09-17 ~ 2026-09-17）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #17 from tamaratran/devin/1789683249-readme-tagline
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#21](https://github.com/tamaratran/fast-jev-compaction/issues/21) | Hooks (0) on install — session.compact / turn.complete are n | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Recurrent Looped Transformer
+> # fast-jev-compaction
 > 
-> [](./Recurrent_Looped_Transformer.pdf)
-> [](https://yifanzhang-pro.github.io/recurrent-looped-tranformer/)
+> Claude Code plugin that replaces the compaction summary with Jev decisions:
+> every tool call and result is scored in one fast request, stale ones are
+> dropped or truncated, everything kept stays verbatim. Also usable as an npm
+> library.
 > 
-> ### Latent reasoning with infinite temporal depth
+> ## What and why
 > 
-> **Recurrent Looped Transformer (RLT)** carries latent computation across every prompt and response token. A causal encoder builds global key–value memory; a recurrent decoder combines that memory with sliding-window attention (SWA) and feedback from its previous final hidden state.
+> Most context compaction asks an LLM to summarize old turns. A summary is
+> lossy: a file path, exact error, constraint, or command can disappear even when
+> it matters later. This library never rewrites anything. It only deletes tool
+> calls and tool results Jev says are no longer needed, and it asks Jev while
+> showing it the whole conversation. User and assistant text stays verbatim and
+> in order.
 > 
-> **Author:** [Yifan Zhang](https://yifzhang.com)  
-> **Date:** September 12, 2026
+> The repository is both an npm package (`src/`) and a Claude Code plugin
+> (`hooks/`, `.claude-plugin/`) that uses the package to replace Claude Code's
+> built-in compaction summary with the original messages.
 > 
-> [[Paper](./Recurrent_Looped_Transformer.pdf)] [[Project Website](https://yifanzhang-pro.github.io/recurrent-looped-tranformer/)]
+> ## How it works
 > 
->  
+> 1. Every `tool_use` is paired with its `tool_result` by `tool_use_id`. Calls in
+>    the first message or in the newest `preserveRecentMessages` messages are
+>    pinned and never touched.
+> 2. The **state** sent to Jev is the whole conversation so far, oldest first,
+>    with every tool result replaced by a short note (`ok, 4213 chars (omitted)`).
+>    Tool inputs are included, texts are included, nothing is summarized.
+> 3. The state is fitted into `maxStateTokens` (25k by default) in stages, each
+>    applied only if the previous one was not enough: tool inputs truncated to
+>    1000, then 200, then 60 characters; long texts abridged to head + tail,
+>    oldest non-pinned messages first; old non-pinned messages collapsed to a
+>    `[… N chars omitted …]` note; old tool calls reduced to one line each
+>    (`t12 Read file_path=src/a.ts → ok 480ch`); old call-less messages left
+>    out; runs of old call-only messages folded into one entry. If it still
+>    does not fit, compaction throws. Tokens are estimated without a tokenizer (a
+>    word per six letters, half a token per digit, ~one per other symbol),
+>    calibrated to land a little above the counts Jev reports.
+> 4. For every non-pinned call Jev gets two `noul` questions: should the **call**
+>    stay (knowing it was made, with its input, still matters), and should the
+>    **result** stay verbatim (its contents are still needed and re-running the
+>    tool would not do).
+> 5. Questions are split into as many requests as needed so state plus questions
+>    stays under `maxRequestTokens` (30k by default, under Jev's 32k request
+>    limit). The same full state is resent with every request; requests run
+>    concurrently and their answers are merged.
+> 6. Decisions per call, against `keepThreshold`:
+>    - `keepResult ≥ threshold` → keep call and result;
+>    - else `keepCall ≥ threshold` → keep the call, truncate the result to its
+>      first `truncateHeadChars` characters plus a one-line note;
+>    - else → remove the call together with its result.
+> 7. The message list is rebuilt: a message that loses all its content is
+>    removed, untouched messages are returned as the same objects, and no result
+>    is ever left without its call.
 > 
-> ## Three design principles
+> Jev failures, malformed answers, a missing key, or a history that cannot be
+> fitted throw; the caller (or the Claude Code hook) decides what to fall back to.
 > 
-> 1. **Latent reasoning with infinite temporal depth.** Each processed token extends a recurrent path through the decoder. With decoder depth $L_D$, the path traverses $tL_D$ blocks after $t$ tokens, while the number of blocks executed per token stays fixed.
-> 2. **Model–hardware co-design.** Parallel causal encoder work, batching across independent sequences, memory reuse, and activation checkpointing expose opportunities for efficient training and inference around the recurrent decoder.
-> 3. **Model–RL algorithm co-design.** Pretraining, SFT, sampling, and current-policy RL replay use the same complete-state transition, including prompt recurrence and decoder SWA caches.
+> ## Install and usage
 > 
-> “Infinite depth” means an extensible temporal computation path as the sequence grows, not infinite computation within one token. Reasoning improvements, hardware speedups, and RL scaling are research goals rather than measured results in this report.
-> 
-> ## Architecture
-> 
-> For token $x_t$, let $e_t$ be its causal encoder representation and $M_{\le t}$ the encoder-derived global KV memory. The complete decoder state includes both the recurrent output and layerwise SWA KV:
-> 
-> ```math
-> H_t=(s_t,C_t^D),\qquad H_0=(s_\star,\varnothing).
+> ```sh
+> npm install fast-jev-compaction
+> export TYPESAFE_API_KEY=...
 > ```
 > 
-> ```math
-> (s_t,C_t^D)=D_\phi\!\left(\mathrm{Merge}(e_t,s_{t-1});M_{\le t},C_{t-1}^D,t\right).
+> ```ts
+> import { compactMessages, reductionRatio, type Message } from 'fast-jev-compaction';
+> 
+> const transcript: Message[] = [
+>   { role: 'user', text: 'Fix the failing test. Never edit src/generated.', toolUses: [] },
+>   {
+>     role: 'assistant',
+>     text: '',
+>     toolUses: [{ tool_use_id: 'toolu_1', tool: 'Read', input: { file_path: 'src/a.ts' } }],
+>   },
+>   { role: 'user', text: '', toolUses: [], toolResults: [{ tool_use_id: 'toolu_1', text: '…file…' }] },
+>   // …
+> ];
+> 
+> const result = await compactMessages(transcript, { preserveRecentMessages: 4 });
+> console.log(result.messages, result.decisions, result.stats);
+> if (reductionRatio(result) " } }
 > ```
 > 
-> ```math
-> p_\Theta(x_{t+1}\mid x_{1:t})=\mathrm{softmax}\!\left(W_o\mathrm{RMSNorm}_o(s_t)\right)_{x_{t+1}}.
+> Then add this repository as a plugin marketplace and install the plugin,
+> either from the shell or as slash commands inside a session:
+> 
+> ```sh
+> claude plugin marketplace add tamaratran/fast-jev-compaction
+> claude plugin install fast-jev-compaction@fast-jev-compaction
 > ```
 > 
-> - **Global context:** cross-attention reads encoder memory only through the current position.
-> - **Local decoder memory:** SWA reads recent decoder KV and the current token's KV. A window of $W$ includes the current token; up to $W-1$ historical entries are retained for the next update.
-> - **Temporal feedback:** the previous final decoder output enters the next token's merge. Neither recurrent output nor SWA cache resets at the prompt–response boundary.
+> The install prompts for the plugin options (API key, thresholds, `truncateHeadChars`,
+> …); leave them at their defaults to use `TYPESAFE_API_KEY` from the environment.
+> Restart Claude Code or run `/reload-plugins`. From then on `/compact` (and
+> auto-compaction) goes through Jev: the toast reads
+> `fast-jev-compaction: kept N/M messages, no summary (…)` when the pruned history
+> replaced the built-in summary, or `fallback to built-in summary (…)` when Jev
+> could not remove enough (short sessions, or when it fails).
 > 
-> The concrete configuration uses **48 encoder layers + 48 decoder layers**, with compatible attention and FFN weights shared across stages. Decoder blocks additionally perform encoder-memory cross-attention, so equal layer counts do not imply equal FLOPs.
+> To run from a checkout without installing: `CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 claude --plugin-dir .`
+> from the repository root. No publishing step is required; the marketplace is
+> just the repo's `.claude-plugin/marketplace.json`.
 > 
-> ## One execution across training and inference
+> ## Development
 > 
-> | Mode | Encoder | Decoder and gradients |
-> | --- | --- | --- |
-> | Prompt prefill | Causal batch over known tokens | Recur through every prompt token and construct all decoder SWA KV |
-> | Generation | Incremental encoding | Sample from the preceding state, then consume the token exactly once |
-> | Pretraining | Causal batch | Full BPTT; supervise every valid next-token target |
-> | SFT | Causal batch | Full BPTT; supervise assistant targets while updating state on all context tokens |
-> | Current-policy RL replay | Rebuild under current weights | Reconstruct the full history, including SWA caches; evaluate actions before consuming them |
-> 
-> Exact current-policy replay rebuilds parameter-dependent caches after weight updates. Full gradients pass through recurrent outputs, decoder KV, and encoder memory. Detaching any of these is a gradient approximation. Behavior log-probabilities must describe the actual sampling distribution; exact importance sampling also requires support coverage. Shared execution semantics remove structural prompt-boundary mismatch but do not alone guarantee numerical kernel parity or an unbiased off-policy objective.
-> 
-> ## Preliminary synthetic experiments
-> 
-> Synthetic state-tracking results contributed by [@AradhyeAgarwal](https://x.com/AradhyeAgarwal), using a small implementation with approximately **79K parameters** and **3 seeds**. Training length is **32 operations**; evaluation extends to **128 operations (4× the training length)**, with **2,048 test programs per task and length**.
-> 
-> Final-state accuracy by number of operations:
-> 
-> **Parity**
-> 
-> | Model | 16 operations | 32 operations (train length) | 64 operations (2×) | 128 operations (4×) |
-> | --- | ---: | ---: | ---: | ---: |
-> | RLT | ≈100% | ≈100% | ≈82% | 60.8% |
-> | Transformer | ≈98% | ≈72% | ≈50% | ≈48% |
-> | Token-only merge | ≈98% | ≈59% | ≈49% | ≈50% |
-> 
-> **Five-state transitions**
-> 
-> | Model | 16 operations | 32 operations (train length) | 64 operations (2×) | 128 operations (4×) |
-> | --- | ---: | ---: | ---: | ---: |
-> | RLT | ≈100% | ≈100% | ≈49% | 20.7% |
-> | Transformer | ≈54% | ≈24% | ≈20% | ≈21% |
-> | Token-only merge | ≈50% | ≈23% | ≈20% | ≈20% |
-> 
-> Values marked ≈ are approximate readings from the original figure; exact values are not labeled. RLT's 128-operation values are taken from the figure's numeric labels.
-> 
-> RLT fits both tasks at the training length, but accuracy declines on longer sequences. Chance accuracy is 50% for parity and 20% for five-state transitions. Points in the original figure show means across seeds; whiskers show seed minima and maxima. Parameter and data budgets were matched; FLOPs were not. These are independent synthetic proof-of-concept results, not a validation of large-scale reasoning or RL scaling.
-> 
-> ## Resources
-> 
-> - [Paper](./Recurrent_Looped_Transformer.pdf)
-> - [Project website](https://yifanzhang-pro.github.io/recurrent-looped-tranformer/)
-> - [Prefill–decode kernel mismatch note](https://github.com/yifanzhang-pro/Pretraining-RL-Science/blob/master/Prefill_Decode_Kernel_Mismatch.pdf)
-> 
-> ## Citation
-> 
-> ```bibtex
-> @techreport{zhang2026recurrentlooped,
->   title  = {Recurrent Looped Transformer},
->   author = {Zhang, Yifan},
->   year   = {2026},
->   month  = sep,
->   url    = {https://github.com/yifanzhang-pro/recurrent-looped-tranformer}
-> }
+> ```sh
+> npm install
+> npm run typecheck        # library + hook
+> npm test
+> npm run build
+> npm run validate:plugin  # claude plugin validate
+> TYPESAFE_API_KEY="$(cat ~/.typesafe_key)" npm run demo
 > ```
 > 
-> ## License
+> The unit tests use a fake Jev and never contact TypeSafe. The demo is the live
+> network check.
 > 
-> Copyright 2026 Yifan Zhang. Licensed under the [Apache License 2.0](./LICENSE).
+> ## Animated demo (macOS)
+> 
+> `demo/JevDemo` is a small native SwiftUI app that plays a scripted, dramatized
+> version of the compaction flow inside a Claude Code-style terminal: the tool
+> calls of a canned transcript are scored, results and calls Jev lets go turn red
+> and collapse away, and the rest stays verbatim. It never calls the API; it
+> exists to be screen recorded.
+> 
+> ```sh
+> demo/JevDemo/build.sh   # builds demo/JevDemo/build/JevDemo.app and launches it
+> ```
+> 
+> Press space in the app to replay from the start.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/yifanzhang-pro/recurrent-looped-tranformer) · [官方網站](https://yifanzhang-pro.github.io/recurrent-looped-tranformer)
+[GitHub](https://github.com/tamaratran/fast-jev-compaction)
 
 ## 相關收錄
 
@@ -282,7 +317,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer"
+> WHERE category = "Other" AND file.name != "tamaratran--fast-jev-compaction"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -291,7 +326,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "HTML" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "tamaratran--fast-jev-compaction" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -300,18 +335,18 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer"
+> WHERE week = "2026-W38" AND file.name != "tamaratran--fast-jev-compaction"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "yifanzhang-pro--recurrent-looped-tranformer" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "tamaratran--fast-jev-compaction" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -327,7 +362,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "yifanzhang-pro" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer"
+> WHERE owner = "tamaratran" AND file.name != "tamaratran--fast-jev-compaction"
 > SORT stars DESC
 > ```
 
@@ -335,7 +370,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -352,7 +387,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -385,7 +420,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -409,7 +444,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -446,7 +481,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -529,7 +564,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-15** — 首次收錄
+> **2026-09-18** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -545,7 +580,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-18|2026-09-18]] — 再次上榜，874 stars
-- [[2026-09-17|2026-09-17]] — 再次上榜，863 stars
-- [[2026-09-16|2026-09-16]] — 再次上榜，837 stars
-- [[2026-09-15|2026-09-15]] — 首次收錄，763 stars
+- [[2026-09-18|2026-09-18]] — 首次收錄，1.2k stars

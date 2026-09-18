@@ -1,63 +1,63 @@
 ---
-repo: yifanzhang-pro/recurrent-looped-tranformer
-url: https://github.com/yifanzhang-pro/recurrent-looped-tranformer
-owner: yifanzhang-pro
+repo: agentverse-os/AgentVerse-OS
+url: https://github.com/agentverse-os/AgentVerse-OS
+owner: agentverse-os
 owner_type: User
-language: HTML
+language: Rust
 license: Apache-2.0
-description: "Official Project Page for Recurrent Looped Transformer (RLT)"
-homepage: "https://yifanzhang-pro.github.io/recurrent-looped-tranformer"
-stars: 874
-stars_per_day: 175
-forks: 85
+description: "Personal cloud OS for a developer and their AI agents on a single server. One-command install on Ubuntu, then everything in the browser: a windowed desktop, isolated workspaces with VS Code, Claude Code and Codex, a store of 944 self-hosted apps, backups and updates. Access only via Tailscale, nothing exposed to the internet. Rust core, Svelte UI."
+homepage: ""
+stars: 756
+stars_per_day: 151
+forks: 22
 open_issues: 0
 created: 2026-09-12
-pushed_at: 2026-09-18
-first_seen: 2026-09-15
+pushed_at: 2026-09-12
+first_seen: 2026-09-18
 week: "2026-W38"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.2.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-15
+last_reviewed: 2026-09-18
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-09-25"
-contributor_count: 1
+contributor_count: 0
 engagement: "low"
-issue_close_rate: 100
-repo_size_kb: 4109
-readme_length: 6263
-bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+issue_close_rate: -1
+repo_size_kb: 35502
+readme_length: 9566
+bus_factor: 0
+last_release_days: 6
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-15"
-star_history: "2026-09-15:763,2026-09-16:837,2026-09-17:863,2026-09-18:874"
+ring_history: "assess@2026-09-18"
+star_history: "2026-09-18:756"
 tags:
   - github
   - "category/other"
-  - "lang/html"
+  - "lang/rust"
 aliases:
-  - "recurrent-looped-tranformer"
-  - "yifanzhang-pro/recurrent-looped-tranformer"
+  - "AgentVerse-OS"
+  - "agentverse-os/AgentVerse-OS"
 ---
 
-# recurrent-looped-tranformer
+# AgentVerse-OS
 
-**763** stars · **382** stars/天 · 建立 2 天前 · HTML · Apache-2.0
+**756** stars · **151** stars/天 · 建立 5 天前 · Rust · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+const me = dv.page("Repos/agentverse-os--AgentVerse-OS");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v0.2.0`
 
 > [!summary] 一句話摘要
-> Official Project Page for Recurrent Looped Transformer (RLT)
+> Personal cloud OS for a developer and their AI agents on a single server. One-command install on Ubuntu, then everything in the browser: a windowed desktop, isolated workspaces with VS Code, Claude Code and Codex, a store of 944 self-hosted apps, backups and updates. Access only via Tailscale, nothing exposed to the internet. Rust core, Svelte UI.
 
 ## 專案簡介
 
-Official Project Page for Recurrent Looped Transformer (RLT)
+Personal cloud OS for a developer and their AI agents on a single server. One-command install on Ubuntu, then everything in the browser: a windowed desktop, isolated workspaces with VS Code, Claude Code and Codex, a store of 944 self-hosted apps, backups and updates. Access only via Tailscale, nothing exposed to the internet. Rust core, Svelte UI.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/agentverse-os--AgentVerse-OS");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/agentverse-os--AgentVerse-OS");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,139 +142,204 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 77 |
+| Forks | 22 |
 | Open Issues | 0 |
-| Issue 解決率 | 100% (1 closed) |
-| 最後推送 | 2026-09-13 |
+| 最後推送 | 2026-09-12 |
 | 建立日期 | 2026-09-12 |
-| 官方網站 | [Link](https://yifanzhang-pro.github.io/recurrent-looped-tranformer) |
-| Repo 大小 | 4.0 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/yifanzhang-pro/recurrent-looped-tranformer) |
+| Repo 大小 | 34.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/agentverse-os/AgentVerse-OS) |
 
-> [!info]- 主要貢獻者
-> | 貢獻者 | Commits |
-> | --- | --- |
-> | [@yifanzhang-pro](https://github.com/yifanzhang-pro) | 20 |
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Rust" : 34
+>     "TypeScript" : 23
+>     "Svelte" : 19
+>     "Python" : 12
+>     "Shell" : 9
+>     "HCL" : 1
+>     "HTML" : 1
+>     "CSS" : 1
+> ```
+
+**最新版本**：v0.2.0 — AgentVerse OS 0.2.0 (2026-09-12)
+
+> [!info]- Release Notes
+> ## AgentVerse OS 0.2.0 — first public release
+> 
+> A personal cloud operating system for a developer and their AI agents: your own cloud on a single server, used from any device through the browser.
+> 
+> **Highlights**
+> 
+> - **Core in Rust** (`cloudd`) with the Desktop embedded: projects, workspaces, capabilities, apps, backups, updates, first-run wizard; 60 API routes with OpenAPI.
+> - **Workspaces**: isolated Incus containers with Docker inside, VS Code in the browser, Claude Code and Codex signing in with your subscriptions; stop/start keeps the instance.
+> - **Store of 944 self-hosted apps** from the Runtipi, Coolify and Umbrel catalogs plus hand-written manifests (Garage, ntfy, Dozzle, Hermes Agent, Pipecat Voice): guided install, login details in the card, links between apps, snapshots and rollback, app updates.
+> - **Capabilities instead of addresses**: `storage.s3`, `llm`, `notify` granted to a project through its gate.
+> - **Browser-only setup**: the first-run wizard joins Tailscale by link or QR code, checks DNS and the certificate, creates the first project. Self-update from a package with automatic rollback.
+> - **Desktop** on laptop, tablet and phone: windows, widgets, Files, Passwords & Access, themes and wallpapers; UI in English, Russian, Ukrainian and Spanish.
+> - **Installer and updater**: `bootstrap/install.sh` from a clean Ubuntu 22.04+, `agentverse-update` for the system, apps and components.
+> 
+> **Install from this package**
+> 
+> ```bash
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-13 ~ 2026-09-13）
-> **活躍天數** 1 天 · **最新 commit** docs: rename preliminary synthetic experiments section
+> [!abstract] 最近 10 次 commit（2026-09-12 ~ 2026-09-12）
+> **活躍天數** 1 天 · **最新 commit** README: install from the release package, update channel on GitHub Releases
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Recurrent Looped Transformer
+> **AgentVerse OS** is a personal cloud operating system for a developer and their AI agents: your own cloud running on a single server,
+> used from any device through the browser. It is built as a cross-platform vibe coding flow: the same desktop, workspaces and agents
+> open on a laptop, a tablet or a phone, the workspace and its agents stay on the server, and the work continues where you left it.
+> One command installs it on a clean Ubuntu; everything after that happens in the browser: a windowed desktop, isolated workspaces with
+> VS Code and agents (Claude Code, Codex), a store of 944 self-hosted apps, backups and updates. Nothing is exposed to the internet:
+> access goes through Tailscale with real certificates, no root CAs to install on your devices.
 > 
-> [](./Recurrent_Looped_Transformer.pdf)
-> [](https://yifanzhang-pro.github.io/recurrent-looped-tranformer/)
+> > The project is in alpha and lives on a single test box. It works as a personal server for one person; there are no user accounts or
+> > permissions yet. See [Status](#status) for what is done and what is not.
 > 
-> ### Latent reasoning with infinite temporal depth
+> ## What it looks like
 > 
-> **Recurrent Looped Transformer (RLT)** carries latent computation across every prompt and response token. A causal encoder builds global key–value memory; a recurrent decoder combines that memory with sliding-window attention (SWA) and feedback from its previous final hidden state.
+>   
 > 
-> **Author:** [Yifan Zhang](https://yifzhang.com)  
-> **Date:** September 12, 2026
+> Desktop on a computer: the Store catalog, a project card with its workspace and capabilities, widgets. Monolith theme, glass surfaces.
 > 
-> [[Paper](./Recurrent_Looped_Transformer.pdf)] [[Project Website](https://yifanzhang-pro.github.io/recurrent-looped-tranformer/)]
+>   
+>     
+>       
+>       Light theme: projects and appearance settings. Seven presets, including OLED and high contrast.
+>     
+>     
+>       
+>       Tablet: the same windows and widgets, portrait wallpaper.
+>     
+>   
 > 
->  
+>   
 > 
-> ## Three design principles
+> Phone: a home screen instead of a desktop, full-screen windows, PWA. One Desktop adapts to the device.
 > 
-> 1. **Latent reasoning with infinite temporal depth.** Each processed token extends a recurrent path through the decoder. With decoder depth $L_D$, the path traverses $tL_D$ blocks after $t$ tokens, while the number of blocks executed per token stays fixed.
-> 2. **Model–hardware co-design.** Parallel causal encoder work, batching across independent sequences, memory reuse, and activation checkpointing expose opportunities for efficient training and inference around the recurrent decoder.
-> 3. **Model–RL algorithm co-design.** Pretraining, SFT, sampling, and current-policy RL replay use the same complete-state transition, including prompt recurrence and decoder SWA caches.
+> ## What it does
 > 
-> “Infinite depth” means an extensible temporal computation path as the sequence grows, not infinite computation within one token. Reasoning improvements, hardware speedups, and RL scaling are research goals rather than measured results in this report.
+> - **Projects and workspaces.** Every project gets its own network, its own gate and an isolated Incus container with Docker inside.
+>   Inside: VS Code in the browser, a terminal and agents; Claude Code and Codex log in with your subscriptions. Stop/start keeps the
+>   instance, resources are changed from the project card.
+> - **A Store of 944 apps.** The Runtipi, Coolify and Umbrel catalogs merged into one, with source badges. Guided install, login
+>   credentials right in the card, logs, automatic repair of data-directory permissions, links between apps (e.g. n8n → LiteLLM),
+>   per-app snapshots and rollback.
+> - **Capabilities instead of addresses.** A project asks for `storage.s3`, `llm` or `notify`; the core connects the project's gate to
+>   the provider's network and drops environment variables into the workspace. Swapping Garage for another S3 does not touch the project.
+> - **Browser only.** The first-run wizard joins Tailscale via a link or QR code, checks DNS and the certificate, creates the first project.
+>   System and app updates come from the Updates window: a package with automatic rollback if the new version does not come up.
+> - **Backups.** Scheduled ZFS snapshots and a restic repository taken from a snapshot; roll back a single app in two clicks. Off by default.
+> - **A desktop like a desktop OS.** Windows, taskbar, start menu, widgets (monitor, clock, news, weather, projects), Files over app data
+>   and workspace homes, Passwords & Access, themes and wallpapers, boot screen, offline overlay, screensaver. The UI speaks English,
+>   Russian, Ukrainian and Spanish; the language follows the browser or is set once for all devices.
+> - **Two assistants already in the catalog.** Hermes Agent with a web panel, and Pipecat Voice, a voice assistant in the browser with local
+>   speech recognition and synthesis. Voice control of the system itself is on the roadmap.
 > 
 > ## Architecture
 > 
-> For token $x_t$, let $e_t$ be its causal encoder representation and $M_{\le t}$ the encoder-derived global KV memory. The complete decoder state includes both the recurrent output and layerwise SWA KV:
+> ```mermaid
+> flowchart LR
+>   subgraph devices["Your devices (tailnet)"]
+>     B["Browser · Desktop PWAlaptop · tablet · phone"]
+>   end
 > 
-> ```math
-> H_t=(s_t,C_t^D),\qquad H_0=(s_\star,\varnothing).
+>   subgraph host["Server · Ubuntu · ZFS"]
+>     E["edge CaddyTLS from tailscaled:443 Desktop · :8444 Coder · :8450+ apps"]
+>     C["cloudd (Rust)API · CLI · Desktop embeddedprojects · apps · capabilities · backups · updates"]
+>     subgraph ws["Project alpha"]
+>       G["gate-alpha (Caddy)the only door into the workspace"]
+>       W["workspace · IncusDocker inside · VS Code · Claude Code · Codex"]
+>     end
+>     K["Komodo · App Runtimecompose stacks of apps"]
+>     subgraph apps["Store apps · one network each"]
+>       S3["Garage · storage.s3"]
+>       LLM["LLM gateway · llm"]
+>       N["ntfy · notify"]
+>       X["Gitea · n8n · Nextcloud …"]
+>     end
+>     CO["Coder · workspace control plane"]
+>   end
+> 
+>   B -- "https · MagicDNS" --> E
+>   E --> C
+>   E --> CO
+>   E --> X
+>   C -- "project.yaml" --> CO
+>   CO -- "Incus API" --> W
+>   C -- "grant storage.s3" --> G
+>   G --> S3
+>   G --> LLM
+>   G --> N
+>   W -- "http://storage.s3.gate" --> G
+>   C -- "install / upgrade" --> K
+>   K --> apps
 > ```
 > 
-> ```math
-> (s_t,C_t^D)=D_\phi\!\left(\mathrm{Merge}(e_t,s_{t-1});M_{\le t},C_{t-1}^D,t\right).
+> The core is small: seven entities (project, workspace, gate, app, capability, grant, route) and four contracts. Everything else is
+> proven third-party software: Coder runs the workspaces, Incus isolates them, Komodo deploys compose stacks, Caddy holds the entry
+> point, Tailscale provides the network and certificates.
+> 
+> ## Quick start
+> 
+> You need a clean Ubuntu 22.04+ (tested on 26.04), 8 GB of RAM or more, preferably a separate disk for ZFS, and a Tailscale account.
+> 
+> From the [release package](https://github.com/agentverse-os/AgentVerse-OS/releases), nothing to build:
+> 
+> ```bash
+> curl -LO https://github.com/agentverse-os/AgentVerse-OS/releases/download/v0.2.0/agentverse-os-0.2.0-x86_64.tar.gz
+> mkdir agentverse-os && tar xzf agentverse-os-0.2.0-x86_64.tar.gz -C agentverse-os && cd agentverse-os
+> sudo DISKS="/dev/disk/by-id/" bootstrap/install.sh
 > ```
 > 
-> ```math
-> p_\Theta(x_{t+1}\mid x_{1:t})=\mathrm{softmax}\!\left(W_o\mathrm{RMSNorm}_o(s_t)\right)_{x_{t+1}}.
+> Or from source:
+> 
+> ```bash
+> git clone https://github.com//agentverse-os && cd agentverse-os
+> cd desktop && npm install && npm run build && cd ..        # Desktop → cloudd/static
+> cd cloudd && cargo build --release && cd ..                # core with the Desktop embedded
+> sudo DISKS="/dev/disk/by-id/" bootstrap/install.sh
 > ```
 > 
-> - **Global context:** cross-attention reads encoder memory only through the current position.
-> - **Local decoder memory:** SWA reads recent decoder KV and the current token's KV. A window of $W$ includes the current token; up to $W-1$ historical entries are retained for the next update.
-> - **Temporal feedback:** the previous final decoder output enters the next token's merge. Neither recurrent output nor SWA cache resets at the prompt–response boundary.
+> The installer goes step by step: host checks → ZFS → Docker and Incus → **Tailscale** (a link and QR code to authorize the node, waits
+> for your confirmation, checks MagicDNS and HTTPS Certificates) → Coder → Komodo → edge → core → catalog → template → summary with
+> addresses. A checkout can also install from a package instead of a locally built binary: `PACKAGE=agentverse-os--.tar.gz`
+> (a file or an https URL); packages are built by `scripts/release.sh`.
 > 
-> The concrete configuration uses **48 encoder layers + 48 decoder layers**, with compatible attention and FFN weights shared across stages. Decoder blocks additionally perform encoder-memory cross-attention, so equal layer counts do not imply equal FLOPs.
+> When it finishes, open `https://..ts.net/` and the first-run wizard completes the setup in the browser. Updates come
+> from the Updates window or `sudo agentverse-update`; the update channel is the `stable.json` of the latest release, e.g.
+> `https://github.com/agentverse-os/AgentVerse-OS/releases/download/v0.2.0/stable.json`.
 > 
-> ## One execution across training and inference
+> ## Repository
 > 
-> | Mode | Encoder | Decoder and gradients |
-> | --- | --- | --- |
-> | Prompt prefill | Causal batch over known tokens | Recur through every prompt token and construct all decoder SWA KV |
-> | Generation | Incremental encoding | Sample from the preceding state, then consume the token exactly once |
-> | Pretraining | Causal batch | Full BPTT; supervise every valid next-token target |
-> | SFT | Causal batch | Full BPTT; supervise assistant targets while updating state on all context tokens |
-> | Current-policy RL replay | Rebuild under current weights | Reconstruct the full history, including SWA caches; evaluate actions before consuming them |
+> | Directory | Contents |
+> |---|---|
+> | [`cloudd/`](cloudd/) | the core in Rust (axum, rusqlite, bollard): the `/api/*` API (60 routes, OpenAPI at `/api/openapi.json`), CLI, embedded Desktop; adapters for Incus, Docker, Coder, Komodo, Caddy; backups, updates, first-run wizard |
+> | [`desktop/`](desktop/) | the Desktop in Svelte 5 and Vite, PWA: windows, widgets, Store, Files, Passwords, Settings; dictionaries for four languages in `src/lib/i18n/`; `npm run build` outputs to `cloudd/static/` |
+> | [`store/`](store/) | app manifests: `manifest.yaml` + `compose.yaml`; 938 imported from Runtipi, Coolify and Umbrel, 6 hand-written; `recommended.yaml` |
+> | [`bootstrap/`](bootstrap/) | `install.sh`, `update.sh` (installed as `agentverse-update`), compose files for edge / Coder / Komodo / docker-proxy, host scripts, systemd unit |
+> | [`templates/incus/`](templates/incus/) | the Coder → Incus workspace template |
+> | [`assets/`](assets/) | the Monolith mark, lockups, PWA icons, wallpapers, font, screenshots; `build.py` assembles everything into `desktop/public` |
+> | [`scripts/`](scripts/) | `release.sh` builds the update package and channel manifest; `demo/` holds demo data and the screenshot pipeline for this README |
+> | [`tests/`](tests/) | end-to-end tests on the live test box, shell tests for the installer; Desktop e2e with Playwright lives in `desktop/e2e/` |
 > 
-> Exact current-policy replay rebuilds parameter-dependent caches after weight updates. Full gradients pass through recurrent outputs, decoder KV, and encoder memory. Detaching any of these is a gradient approximation. Behavior log-probabilities must describe the actual sampling distribution; exact importance sampling also requires support coverage. Shared execution semantics remove structural prompt-boundary mismatch but do not alone guarantee numerical kernel parity or an unbiased off-policy objective.
+> ## Development
 > 
-> ## Preliminary synthetic experiments
-> 
-> Synthetic state-tracking results contributed by [@AradhyeAgarwal](https://x.com/AradhyeAgarwal), using a small implementation with approximately **79K parameters** and **3 seeds**. Training length is **32 operations**; evaluation extends to **128 operations (4× the training length)**, with **2,048 test programs per task and length**.
-> 
-> Final-state accuracy by number of operations:
-> 
-> **Parity**
-> 
-> | Model | 16 operations | 32 operations (train length) | 64 operations (2×) | 128 operations (4×) |
-> | --- | ---: | ---: | ---: | ---: |
-> | RLT | ≈100% | ≈100% | ≈82% | 60.8% |
-> | Transformer | ≈98% | ≈72% | ≈50% | ≈48% |
-> | Token-only merge | ≈98% | ≈59% | ≈49% | ≈50% |
-> 
-> **Five-state transitions**
-> 
-> | Model | 16 operations | 32 operations (train length) | 64 operations (2×) | 128 operations (4×) |
-> | --- | ---: | ---: | ---: | ---: |
-> | RLT | ≈100% | ≈100% | ≈49% | 20.7% |
-> | Transformer | ≈54% | ≈24% | ≈20% | ≈21% |
-> | Token-only merge | ≈50% | ≈23% | ≈20% | ≈20% |
-> 
-> Values marked ≈ are approximate readings from the original figure; exact values are not labeled. RLT's 128-operation values are taken from the figure's numeric labels.
-> 
-> RLT fits both tasks at the training length, but accuracy declines on longer sequences. Chance accuracy is 50% for parity and 20% for five-state transitions. Points in the original figure show means across seeds; whiskers show seed minima and maxima. Parameter and data budgets were matched; FLOPs were not. These are independent synthetic proof-of-concept results, not a validation of large-scale reasoning or RL scaling.
-> 
-> ## Resources
-> 
-> - [Paper](./Recurrent_Looped_Transformer.pdf)
-> - [Project website](https://yifanzhang-pro.github.io/recurrent-looped-tranformer/)
-> - [Prefill–decode kernel mismatch note](https://github.com/yifanzhang-pro/Pretraining-RL-Science/blob/master/Prefill_Decode_Kernel_Mismatch.pdf)
-> 
-> ## Citation
-> 
-> ```bibtex
-> @techreport{zhang2026recurrentlooped,
->   title  = {Recurrent Looped Transformer},
->   author = {Zhang, Yifan},
->   year   = {2026},
->   month  = sep,
->   url    = {https://github.com/yifanzhang-pro/recurrent-looped-tranformer}
-> }
-> ```
-> 
-> ## License
-> 
-> Copyright 2026 Yifan Zhang. Licensed under the [Apache License 2.0](./LICENSE).
+> ```bash
+> cd cloudd && cargo test                       # 40 unit tests: contracts, gate and edge rendering, storage, updates
+> cd desktop && npm run dev                     # Vite with /api proxied to cl
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/yifanzhang-pro/recurrent-looped-tranformer) · [官方網站](https://yifanzhang-pro.github.io/recurrent-looped-tranformer)
+[GitHub](https://github.com/agentverse-os/AgentVerse-OS)
 
 ## 相關收錄
 
@@ -282,7 +347,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer"
+> WHERE category = "Other" AND file.name != "agentverse-os--AgentVerse-OS"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -291,7 +356,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "HTML" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "agentverse-os--AgentVerse-OS" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -300,18 +365,18 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer"
+> WHERE week = "2026-W38" AND file.name != "agentverse-os--AgentVerse-OS"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/agentverse-os--AgentVerse-OS");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "yifanzhang-pro--recurrent-looped-tranformer" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "agentverse-os--AgentVerse-OS" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -327,7 +392,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "yifanzhang-pro" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer"
+> WHERE owner = "agentverse-os" AND file.name != "agentverse-os--AgentVerse-OS"
 > SORT stars DESC
 > ```
 
@@ -335,7 +400,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/agentverse-os--AgentVerse-OS");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -352,7 +417,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/agentverse-os--AgentVerse-OS");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -385,7 +450,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/agentverse-os--AgentVerse-OS");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -409,7 +474,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/agentverse-os--AgentVerse-OS");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -446,7 +511,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/agentverse-os--AgentVerse-OS");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -529,7 +594,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-15** — 首次收錄
+> **2026-09-18** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -545,7 +610,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-18|2026-09-18]] — 再次上榜，874 stars
-- [[2026-09-17|2026-09-17]] — 再次上榜，863 stars
-- [[2026-09-16|2026-09-16]] — 再次上榜，837 stars
-- [[2026-09-15|2026-09-15]] — 首次收錄，763 stars
+- [[2026-09-18|2026-09-18]] — 首次收錄，756 stars

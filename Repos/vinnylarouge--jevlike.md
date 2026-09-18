@@ -1,19 +1,19 @@
 ---
-repo: yifanzhang-pro/recurrent-looped-tranformer
-url: https://github.com/yifanzhang-pro/recurrent-looped-tranformer
-owner: yifanzhang-pro
+repo: vinnylarouge/jevlike
+url: https://github.com/vinnylarouge/jevlike
+owner: vinnylarouge
 owner_type: User
-language: HTML
-license: Apache-2.0
-description: "Official Project Page for Recurrent Looped Transformer (RLT)"
-homepage: "https://yifanzhang-pro.github.io/recurrent-looped-tranformer"
-stars: 874
-stars_per_day: 175
-forks: 85
-open_issues: 0
-created: 2026-09-12
-pushed_at: 2026-09-18
-first_seen: 2026-09-15
+language: Python
+license: MIT
+description: ""
+homepage: ""
+stars: 728
+stars_per_day: 728
+forks: 70
+open_issues: 2
+created: 2026-09-16
+pushed_at: 2026-09-16
+first_seen: 2026-09-18
 week: "2026-W38"
 month: "2026-09"
 category: "Other"
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-15
+last_reviewed: 2026-09-18
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-09-25"
+appearances: 1
+next_review: "2026-09-21"
 contributor_count: 1
 engagement: "low"
-issue_close_rate: 100
-repo_size_kb: 4109
-readme_length: 6263
+issue_close_rate: 0
+repo_size_kb: 3237
+readme_length: 7393
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-15"
-star_history: "2026-09-15:763,2026-09-16:837,2026-09-17:863,2026-09-18:874"
+ring_history: "assess@2026-09-18"
+star_history: "2026-09-18:728"
 tags:
   - github
   - "category/other"
-  - "lang/html"
+  - "lang/python"
 aliases:
-  - "recurrent-looped-tranformer"
-  - "yifanzhang-pro/recurrent-looped-tranformer"
+  - "jevlike"
+  - "vinnylarouge/jevlike"
 ---
 
-# recurrent-looped-tranformer
+# jevlike
 
-**763** stars · **382** stars/天 · 建立 2 天前 · HTML · Apache-2.0
+**728** stars · **728** stars/天 · 建立 1 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+const me = dv.page("Repos/vinnylarouge--jevlike");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -73,17 +73,17 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> Official Project Page for Recurrent Looped Transformer (RLT)
+> No description
 
 ## 專案簡介
 
-Official Project Page for Recurrent Looped Transformer (RLT)
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/vinnylarouge--jevlike");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/vinnylarouge--jevlike");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,139 +142,175 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 77 |
-| Open Issues | 0 |
-| Issue 解決率 | 100% (1 closed) |
-| 最後推送 | 2026-09-13 |
-| 建立日期 | 2026-09-12 |
-| 官方網站 | [Link](https://yifanzhang-pro.github.io/recurrent-looped-tranformer) |
-| Repo 大小 | 4.0 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/yifanzhang-pro/recurrent-looped-tranformer) |
+| Forks | 70 |
+| Open Issues | 2 |
+| Issue 解決率 | 0% (0 closed) |
+| 最後推送 | 2026-09-16 |
+| 建立日期 | 2026-09-16 |
+| Repo 大小 | 3.2 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/vinnylarouge/jevlike) |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 98
+>     "Shell" : 2
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@yifanzhang-pro](https://github.com/yifanzhang-pro) | 20 |
+> | [@vinnylarouge](https://github.com/vinnylarouge) | 3 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-13 ~ 2026-09-13）
-> **活躍天數** 1 天 · **最新 commit** docs: rename preliminary synthetic experiments section
+> [!abstract] 最近 10 次 commit（2026-09-16 ~ 2026-09-16）
+> **活躍天數** 1 天 · **最新 commit** Add shared Doom and chess training examples
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#1](https://github.com/vinnylarouge/jevlike/issues/1) | The shuffled-context control leaks the target on Wikispeedia | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Recurrent Looped Transformer
+> # Jevlike
 > 
-> [](./Recurrent_Looped_Transformer.pdf)
-> [](https://yifanzhang-pro.github.io/recurrent-looped-tranformer/)
+> Train a small model that chooses among a changing list of text options.
 > 
-> ### Latent reasoning with infinite temporal depth
+> A Jev-like model takes a piece of text and a list of `N` text options. It returns one probability for each option. It does this in one pass instead of writing an answer word by word. [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev) is TypeSafe's commercial model for this kind of task. TypeSafe has not published its design. This repository is an independent starter model with the same input and output shape.
 > 
-> **Recurrent Looped Transformer (RLT)** carries latent computation across every prompt and response token. A causal encoder builds global key–value memory; a recurrent decoder combines that memory with sliding-window attention (SWA) and feedback from its previous final hidden state.
+> ## Demo
 > 
-> **Author:** [Yifan Zhang](https://yifzhang.com)  
-> **Date:** September 12, 2026
+> The same option-attention head can score controller buttons from image patches. [This ten-second film](docs/jevre-demo-10s-bgm.mp4) joins two selected five-second windows: live `deadly_corridor` combat on the seven Doom buttons, then a chess controller walking to and playing moves with five keys. The diagram shows the tensors used for each decision. The Doom window came from the supplied joint checkpoint, which averaged 0.60 kills and -97.50 reward across its ten recorded episodes. The chess window came from the stronger chess-only checkpoint, which scored 4 wins, 46 draws and 0 losses in 50 sampled games against a random mover, but 0 wins, 2 draws and 48 losses against Stockfish level 0. The windows were selected for activity and are not typical-play or competence claims.
 > 
-> [[Paper](./Recurrent_Looped_Transformer.pdf)] [[Project Website](https://yifanzhang-pro.github.io/recurrent-looped-tranformer/)]
+> Install the game extras and record a fresh 640 by 480 Doom trace from the released joint checkpoint:
 > 
->  
+> ```sh
+> uv pip install -e '.[games]'
+> python examples/doom/play.py examples/checkpoints/joint-imitation.pt --episodes 10 --game-seconds 35.3 --device cpu --capture-resolution 640x480 --output runs/doom.mp4 --trace runs/doom-trace.json
+> ```
 > 
-> ## Three design principles
+> Render the trace in the same visual layout. This writes a silent film because the author-owned soundtrack source is not part of the repository.
 > 
-> 1. **Latent reasoning with infinite temporal depth.** Each processed token extends a recurrent path through the decoder. With decoder depth $L_D$, the path traverses $tL_D$ blocks after $t$ tokens, while the number of blocks executed per token stays fixed.
-> 2. **Model–hardware co-design.** Parallel causal encoder work, batching across independent sequences, memory reuse, and activation checkpointing expose opportunities for efficient training and inference around the recurrent decoder.
-> 3. **Model–RL algorithm co-design.** Pretraining, SFT, sampling, and current-policy RL replay use the same complete-state transition, including prompt recurrence and decoder SWA caches.
+> ```sh
+> (cd examples/film && npm install && npx playwright install chromium)
+> examples/film/make-film.sh runs/doom-trace.json runs/doom-film.mp4 10
+> ```
 > 
-> “Infinite depth” means an extensible temporal computation path as the sequence grows, not infinite computation within one token. Reasoning improvements, hardware speedups, and RL scaling are research goals rather than measured results in this report.
+> The release includes the [Doom example](examples/doom/README.md), the [chess example](examples/chess/README.md), the single-game checkpoints and the shared 12-option checkpoint. Both games import the visual scorer from `jevlike.vision`; there is no second model copy in either example.
 > 
 > ## Architecture
 > 
-> For token $x_t$, let $e_t$ be its causal encoder representation and $M_{\le t}$ the encoder-derived global KV memory. The complete decoder state includes both the recurrent output and layerwise SWA KV:
+> Each option becomes a query vector, which is a short list of numbers representing its text. The query assigns attention weights to the context tokens. Those weights make one context vector for that option. A shared dot product turns each option and context pair into one score. A softmax, which converts scores into probabilities that sum to one, runs across the options.
 > 
-> ```math
-> H_t=(s_t,C_t^D),\qquad H_0=(s_\star,\varnothing).
+>   
+>   
+> 
+> The default encoder learns byte embeddings from scratch. An encoder is the part that turns text into vectors. The optional Hugging Face path uses a frozen pretrained encoder, whose existing weights stay fixed while the small scorer learns.
+> 
+> ## Data format
+> 
+> Use one JSON object per line:
+> 
+> ```json
+> {"context":"The customer needs a refund.","options":["refund","sales","technical support"],"label":0}
 > ```
 > 
-> ```math
-> (s_t,C_t^D)=D_\phi\!\left(\mathrm{Merge}(e_t,s_{t-1});M_{\le t},C_{t-1}^D,t\right).
+> `label` is the zero-based index of the correct option. Each row may have a different number of options, with a minimum of two.
+> 
+> ## Quickstart
+> 
+> Run these commands from the repository root. They create local synthetic data, train on it, evaluate the saved model and score one new menu.
+> 
+> ```sh
+> uv venv
+> source .venv/bin/activate
+> uv pip install -e '.[dev]'
+> 
+> jevlike-data synthetic --output data/synthetic
+> jevlike-train data/synthetic/train.jsonl \
+>   --validation data/synthetic/validation.jsonl \
+>   --output runs/synthetic.pt
+> jevlike-eval runs/synthetic.pt data/synthetic/test.jsonl
+> jevlike-predict runs/synthetic.pt \
+>   --context "Choose the exact badge amber badger. Badge: amber badger." \
+>   --option "azure crane" \
+>   --option "amber badger" \
+>   --option "gold heron"
 > ```
 > 
-> ```math
-> p_\Theta(x_{t+1}\mid x_{1:t})=\mathrm{softmax}\!\left(W_o\mathrm{RMSNorm}_o(s_t)\right)_{x_{t+1}}.
+> The evaluation prints top-1 accuracy, which is the fraction of correct first choices. Top-3 accuracy is the fraction with the right answer among the three highest scores. Expected calibration error compares confidence with observed accuracy. The command also prints a shuffled-context control, which pairs each menu with the wrong context. A useful model should beat that control.
+> 
+> ## Use your own data
+> 
+> 1. Export train, validation and test JSONL files in the format above.
+> 2. Keep all options that the model will see at prediction time in each row.
+> 3. Split related records together. For example, keep all records for one customer or one target page in one split. This prevents near-duplicates from leaking into the test set.
+> 4. Run `jevlike-train` with your train and validation files.
+> 5. Run `jevlike-eval` once on the held-out test file. Held-out means the file was never used for training or model selection.
+> 
+> The default byte encoder truncates context to 192 bytes and each option to 32 bytes. Raise `--context-tokens` or `--option-tokens` when your text needs more room. Training supports CPU, Apple MPS for a Mac GPU, and CUDA for an NVIDIA GPU through `--device`.
+> 
+> ## Use a frozen pretrained encoder
+> 
+> Install the optional dependency and name any compatible encoder from Hugging Face:
+> 
+> ```sh
+> uv pip install -e '.[transformers]'
+> jevlike-train data/synthetic/train.jsonl \
+>   --validation data/synthetic/validation.jsonl \
+>   --output runs/qwen-head.pt \
+>   --encoder hf \
+>   --hf-model Qwen/Qwen2.5-0.5B \
+>   --rank 256 \
+>   --batch-size 8
 > ```
 > 
-> - **Global context:** cross-attention reads encoder memory only through the current position.
-> - **Local decoder memory:** SWA reads recent decoder KV and the current token's KV. A window of $W$ includes the current token; up to $W-1$ historical entries are retained for the next update.
-> - **Temporal feedback:** the previous final decoder output enters the next token's merge. Neither recurrent output nor SWA cache resets at the prompt–response boundary.
+> The checkpoint stores the trained scorer head and the encoder name. It does not copy the frozen encoder weights. Loading the checkpoint therefore needs access to the same Hugging Face model.
 > 
-> The concrete configuration uses **48 encoder layers + 48 decoder layers**, with compatible attention and FFN weights shared across stages. Decoder blocks additionally perform encoder-memory cross-attention, so equal layer counts do not imply equal FLOPs.
+> `--rank` sets the width of the small scorer head. A wider head has more trainable weights and uses more memory.
 > 
-> ## One execution across training and inference
+> ## Wikispeedia example
 > 
-> | Mode | Encoder | Decoder and gradients |
-> | --- | --- | --- |
-> | Prompt prefill | Causal batch over known tokens | Recur through every prompt token and construct all decoder SWA KV |
-> | Generation | Incremental encoding | Sample from the preceding state, then consume the token exactly once |
-> | Pretraining | Causal batch | Full BPTT; supervise every valid next-token target |
-> | SFT | Causal batch | Full BPTT; supervise assistant targets while updating state on all context tokens |
-> | Current-policy RL replay | Rebuild under current weights | Reconstruct the full history, including SWA caches; evaluate actions before consuming them |
+> [`scripts/get_wikispeedia.sh`](scripts/get_wikispeedia.sh) downloads the public SNAP archives and builds next-click JSONL files. The data stay outside this repository.
 > 
-> Exact current-policy replay rebuilds parameter-dependent caches after weight updates. Full gradients pass through recurrent outputs, decoder KV, and encoder memory. Detaching any of these is a gradient approximation. Behavior log-probabilities must describe the actual sampling distribution; exact importance sampling also requires support coverage. Shared execution semantics remove structural prompt-boundary mismatch but do not alone guarantee numerical kernel parity or an unbiased off-policy objective.
-> 
-> ## Preliminary synthetic experiments
-> 
-> Synthetic state-tracking results contributed by [@AradhyeAgarwal](https://x.com/AradhyeAgarwal), using a small implementation with approximately **79K parameters** and **3 seeds**. Training length is **32 operations**; evaluation extends to **128 operations (4× the training length)**, with **2,048 test programs per task and length**.
-> 
-> Final-state accuracy by number of operations:
-> 
-> **Parity**
-> 
-> | Model | 16 operations | 32 operations (train length) | 64 operations (2×) | 128 operations (4×) |
-> | --- | ---: | ---: | ---: | ---: |
-> | RLT | ≈100% | ≈100% | ≈82% | 60.8% |
-> | Transformer | ≈98% | ≈72% | ≈50% | ≈48% |
-> | Token-only merge | ≈98% | ≈59% | ≈49% | ≈50% |
-> 
-> **Five-state transitions**
-> 
-> | Model | 16 operations | 32 operations (train length) | 64 operations (2×) | 128 operations (4×) |
-> | --- | ---: | ---: | ---: | ---: |
-> | RLT | ≈100% | ≈100% | ≈49% | 20.7% |
-> | Transformer | ≈54% | ≈24% | ≈20% | ≈21% |
-> | Token-only merge | ≈50% | ≈23% | ≈20% | ≈20% |
-> 
-> Values marked ≈ are approximate readings from the original figure; exact values are not labeled. RLT's 128-operation values are taken from the figure's numeric labels.
-> 
-> RLT fits both tasks at the training length, but accuracy declines on longer sequences. Chance accuracy is 50% for parity and 20% for five-state transitions. Points in the original figure show means across seeds; whiskers show seed minima and maxima. Parameter and data budgets were matched; FLOPs were not. These are independent synthetic proof-of-concept results, not a validation of large-scale reasoning or RL scaling.
-> 
-> ## Resources
-> 
-> - [Paper](./Recurrent_Looped_Transformer.pdf)
-> - [Project website](https://yifanzhang-pro.github.io/recurrent-looped-tranformer/)
-> - [Prefill–decode kernel mismatch note](https://github.com/yifanzhang-pro/Pretraining-RL-Science/blob/master/Prefill_Decode_Kernel_Mismatch.pdf)
-> 
-> ## Citation
-> 
-> ```bibtex
-> @techreport{zhang2026recurrentlooped,
->   title  = {Recurrent Looped Transformer},
->   author = {Zhang, Yifan},
->   year   = {2026},
->   month  = sep,
->   url    = {https://github.com/yifanzhang-pro/recurrent-looped-tranformer}
-> }
+> ```sh
+> scripts/get_wikispeedia.sh
+> jevlike-train data/wikispeedia/jsonl/train.jsonl \
+>   --validation data/wikispeedia/jsonl/validation.jsonl \
+>   --output runs/wikispeedia.pt
 > ```
 > 
-> ## License
+> Cite Robert West and Jure Leskovec, *Human Wayfinding in Information Networks*, WWW 2012. Review the source data terms on the [SNAP dataset page](https://snap.stanford.edu/data/wikispeedia.html).
 > 
-> Copyright 2026 Yifan Zhang. Licensed under the [Apache License 2.0](./LICENSE).
+> ## What to expect
+> 
+> In the experiments that led to this starter, the one-pass scorer reached about 98% accuracy on synthetic menus. On target-disjoint Wikispeedia next-click data, a frozen Qwen2.5-0.5B encoder plus the scorer reached 26%, against about 8% for shuffled and random-encoder controls. A small model trained from scratch on 40,000 clicks reached 29%. At eight options, one pass was about 100 times faster than a small decoder forced to write 400 tokens.
+> 
+> These numbers describe local experiments, not this quickstart run. We did not show equal quality with Jev or reproduce TypeSafe's private training method.
+> 
+> ## Limitations
+> 
+> - This is a research starter, not a copy of Jev.
+> - Accuracy depends on data quality, split quality and the encoder.
+> - The byte encoder is cheap but weak on language meaning.
+> - The pretrained path may download a large model and needs more memory.
+> - One-pass scoring requires the complete option list before prediction.
+> - The speed comparison used a small local decoder rather than a large commercial model.
+> 
+> ## Licence
+> 
+> Code is released under the [MIT License](LICENSE). Downloaded datasets and pretrained models keep their own terms.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[Binaryify--open-kimi-ppt-skill|Binaryify/open-kimi-ppt-skill]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/yifanzhang-pro/recurrent-looped-tranformer) · [官方網站](https://yifanzhang-pro.github.io/recurrent-looped-tranformer)
+[GitHub](https://github.com/vinnylarouge/jevlike)
 
 ## 相關收錄
 
@@ -282,7 +318,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer"
+> WHERE category = "Other" AND file.name != "vinnylarouge--jevlike"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -291,7 +327,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "HTML" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer" AND status != "archived"
+> WHERE language = "Python" AND file.name != "vinnylarouge--jevlike" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -300,18 +336,18 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer"
+> WHERE week = "2026-W38" AND file.name != "vinnylarouge--jevlike"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/vinnylarouge--jevlike");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "yifanzhang-pro--recurrent-looped-tranformer" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "vinnylarouge--jevlike" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -327,7 +363,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "yifanzhang-pro" AND file.name != "yifanzhang-pro--recurrent-looped-tranformer"
+> WHERE owner = "vinnylarouge" AND file.name != "vinnylarouge--jevlike"
 > SORT stars DESC
 > ```
 
@@ -335,7 +371,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/vinnylarouge--jevlike");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -352,7 +388,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/vinnylarouge--jevlike");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -385,7 +421,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/vinnylarouge--jevlike");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -409,7 +445,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/vinnylarouge--jevlike");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -446,7 +482,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/yifanzhang-pro--recurrent-looped-tranformer");
+> const me = dv.page("Repos/vinnylarouge--jevlike");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -529,7 +565,7 @@ Official Project Page for Recurrent Looped Transformer (RLT)
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-15** — 首次收錄
+> **2026-09-18** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -545,7 +581,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-18|2026-09-18]] — 再次上榜，874 stars
-- [[2026-09-17|2026-09-17]] — 再次上榜，863 stars
-- [[2026-09-16|2026-09-16]] — 再次上榜，837 stars
-- [[2026-09-15|2026-09-15]] — 首次收錄，763 stars
+- [[2026-09-18|2026-09-18]] — 首次收錄，728 stars
