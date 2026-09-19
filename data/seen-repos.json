@@ -4173,10 +4173,10 @@
   },
   "Chuloo/mural": {
     "first_seen": "2026-09-15",
-    "last_seen": "2026-09-18",
-    "times_seen": 4,
+    "last_seen": "2026-09-19",
+    "times_seen": 5,
     "stars_first": 866,
-    "stars_last": 1324
+    "stars_last": 1367
   },
   "kruzovic7/ai-data-extractor": {
     "first_seen": "2026-09-15",
@@ -4187,10 +4187,10 @@
   },
   "yifanzhang-pro/recurrent-looped-tranformer": {
     "first_seen": "2026-09-15",
-    "last_seen": "2026-09-18",
-    "times_seen": 4,
+    "last_seen": "2026-09-19",
+    "times_seen": 5,
     "stars_first": 763,
-    "stars_last": 874
+    "stars_last": 880
   },
   "Colafornia/short-video-generator-AI": {
     "first_seen": "2026-09-15",
@@ -4250,17 +4250,17 @@
   },
   "browser-use/jev-ultrafast": {
     "first_seen": "2026-09-18",
-    "last_seen": "2026-09-18",
-    "times_seen": 1,
+    "last_seen": "2026-09-19",
+    "times_seen": 2,
     "stars_first": 2896,
-    "stars_last": 2896
+    "stars_last": 5947
   },
   "tamaratran/fast-jev-compaction": {
     "first_seen": "2026-09-18",
-    "last_seen": "2026-09-18",
-    "times_seen": 1,
+    "last_seen": "2026-09-19",
+    "times_seen": 2,
     "stars_first": 1152,
-    "stars_last": 1152
+    "stars_last": 3493
   },
   "TheoLeeCJ/openjev": {
     "first_seen": "2026-09-18",
@@ -4271,16 +4271,44 @@
   },
   "agentverse-os/AgentVerse-OS": {
     "first_seen": "2026-09-18",
-    "last_seen": "2026-09-18",
-    "times_seen": 1,
+    "last_seen": "2026-09-19",
+    "times_seen": 2,
     "stars_first": 756,
-    "stars_last": 756
+    "stars_last": 877
   },
   "vinnylarouge/jevlike": {
     "first_seen": "2026-09-18",
-    "last_seen": "2026-09-18",
-    "times_seen": 1,
+    "last_seen": "2026-09-19",
+    "times_seen": 2,
     "stars_first": 728,
-    "stars_last": 728
+    "stars_last": 905
+  },
+  "TheoLeeCJ/SemIf": {
+    "first_seen": "2026-09-19",
+    "last_seen": "2026-09-19",
+    "times_seen": 1,
+    "stars_first": 1647,
+    "stars_last": 1647
+  },
+  "mcncarl/jianying-headless": {
+    "first_seen": "2026-09-19",
+    "last_seen": "2026-09-19",
+    "times_seen": 1,
+    "stars_first": 1164,
+    "stars_last": 1164
+  },
+  "jarrodwatts/jev-trader": {
+    "first_seen": "2026-09-19",
+    "last_seen": "2026-09-19",
+    "times_seen": 1,
+    "stars_first": 929,
+    "stars_last": 929
+  },
+  "robbietilton/Compositor": {
+    "first_seen": "2026-09-19",
+    "last_seen": "2026-09-19",
+    "times_seen": 1,
+    "stars_first": 926,
+    "stars_last": 926
   }
 }

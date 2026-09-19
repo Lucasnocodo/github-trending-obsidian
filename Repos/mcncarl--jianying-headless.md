@@ -1,19 +1,19 @@
 ---
-repo: browser-use/jev-ultrafast
-url: https://github.com/browser-use/jev-ultrafast
-owner: browser-use
-owner_type: Organization
+repo: mcncarl/jianying-headless
+url: https://github.com/mcncarl/jianying-headless
+owner: mcncarl
+owner_type: User
 language: Python
-license: MIT
-description: "i. am. speed."
-homepage: "https://browser-use.com"
-stars: 5947
-stars_per_day: 2974
-forks: 380
-open_issues: 36
-created: 2026-09-16
-pushed_at: 2026-09-18
-first_seen: 2026-09-18
+license: NOASSERTION
+description: "Private source preview: native Jianying drafts, isolated editing/export, and standalone Agent Skill."
+homepage: ""
+stars: 1164
+stars_per_day: 388
+forks: 538
+open_issues: 3
+created: 2026-09-15
+pushed_at: 2026-09-19
+first_seen: 2026-09-19
 week: "2026-W38"
 month: "2026-09"
 category: "Other"
@@ -25,40 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-18
+last_reviewed: 2026-09-19
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-22"
 contributor_count: 1
-engagement: "low"
+engagement: "high"
 issue_close_rate: 0
-repo_size_kb: 4478
-readme_length: 7898
+repo_size_kb: 10386
+readme_length: 4067
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-18"
-star_history: "2026-09-18:2896,2026-09-19:5947"
+ring_history: "assess@2026-09-19"
+star_history: "2026-09-19:1164"
 tags:
   - github
   - "category/other"
   - "lang/python"
-  - org
 aliases:
-  - "jev-ultrafast"
-  - "browser-use/jev-ultrafast"
+  - "jianying-headless"
+  - "mcncarl/jianying-headless"
 ---
 
-# jev-ultrafast
+# jianying-headless
 
-**2.9k** stars · **2.9k** stars/天 · 建立 1 天前 · Python · MIT
+**1.2k** stars · **388** stars/天 · 建立 3 天前 · Python · NOASSERTION
 
 ```dataviewjs
-const me = dv.page("Repos/browser-use--jev-ultrafast");
+const me = dv.page("Repos/mcncarl--jianying-headless");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`個人專案`
 
 > [!summary] 一句話摘要
-> i. am. speed.
+> Private source preview: native Jianying drafts, isolated editing/export, and standalone Agent Skill.
 
 ## 專案簡介
 
-i. am. speed.
+Private source preview: native Jianying drafts, isolated editing/export, and standalone Agent Skill.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/mcncarl--jianying-headless");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +118,7 @@ i. am. speed.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/mcncarl--jianying-headless");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,184 +142,206 @@ i. am. speed.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 161 |
-| Open Issues | 19 |
+| Forks | 538 |
+| Open Issues | 3 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-18 |
-| 建立日期 | 2026-09-16 |
-| 官方網站 | [Link](https://browser-use.com) |
-| Repo 大小 | 4.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/browser-use/jev-ultrafast) |
+| 最後推送 | 2026-09-19 |
+| 建立日期 | 2026-09-15 |
+| Repo 大小 | 10.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/mcncarl/jianying-headless) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 58
->     "HTML" : 18
->     "JavaScript" : 13
->     "CSS" : 10
+>     "Python" : 91
+>     "C++" : 9
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@gregpr07](https://github.com/gregpr07) | 2 |
+> | [@mcncarl](https://github.com/mcncarl) | 5 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-17 ~ 2026-09-17）
-> **活躍天數** 1 天 · **最新 commit** Reduce browser round trips and record a 7-second Flights demo
+> [!abstract] 最近 10 次 commit（2026-09-15 ~ 2026-09-19）
+> **活躍天數** 2 天 · **最新 commit** Add beginner setup guide and verified first-draft workflow
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#16](https://github.com/browser-use/jev-ultrafast/issues/16) | Setup friction: SOCKS proxy crash on startup; browser-harnes | 0 | 0 |
+> | [#3](https://github.com/mcncarl/jianying-headless/issues/3) | 11.5.0 native codec build blocked by exact libvideoeditor ha | 0 | 1 |
+> | [#2](https://github.com/mcncarl/jianying-headless/issues/2) | 干净机器无法复现 codec 固定哈希，请求公开精确工具链标识或分发已验二进制 | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Jev Ultrafast ⚡
+> # Jianying Headless
 > 
-> **A browser agent with a dynamic, indexed action space.**
+> 面向剪映专业版 macOS 的本地自动化工具。通过结构化剪辑计划生成可编辑草稿，
+> 在独立副本中修改多轨工程，并调用本机剪映引擎导出 MP4。
 > 
-> Give it one goal. [TypeSafe's Jev](https://docs.typesafe.ai/introduction) picks an operation and an element. A small LLM writes text only when the operation is `TYPE_TEXT`.
+> **主要适配版本：11.5.0 · 兼容版本：11.4.2**
 > 
-> **Zürich → London on Google Flights in 7.1 seconds.** One natural-language goal, actual text generation, and loading waits included.
+> **首次使用请从 [从零生成第一个剪映草稿](docs/GETTING-STARTED.md) 开始。**
+> 教程包含安装前提、环境检查、拖入自己的视频、首页登记、保存重开和常见报错处理。
+> 11.5.0 仍需匹配具体安装身份与工具链，尚不保证任意电脑安装即用。
 > 
-> [Watch the MP4](docs/demo.mp4) · [Measurements](docs/performance.md) · [Read the loop](jev_ultrafast/agent.py)
+> 项目适用于 AI 视频工作流的工程交接、批量草稿生成和 Agent 辅助剪辑。
+> 提供 Python 命令行入口及配套 Agent Skill。它不是剪映官方 SDK，运行时需要安装匹配版本的剪映。
 > 
-> ## The action space
+> ## 核心功能
 > 
-> Every observation produces a new element table:
-> 
-> ```text
-> [1] button    Change ticket type · Round trip
-> [2] combobox  Where from?        · San Francisco
-> [3] combobox  Where to?          · empty
-> [4] textbox   Departure          · empty
-> ...
-> ```
-> 
-> The operations are `CLICK`, `TYPE_TEXT`, `SELECT`, `SCROLL_UP`, `SCROLL_DOWN`, `WAIT`, `DONE`, and `BLOCKED`. Only supported operations and targets are offered.
-> 
-> ```text
->                       one TypeSafe request
->                      ┌───────────────────────────┐
-> page → element table → operation                 │
->                      │ click_target              │
->                      │ type_text_target          │
->                      │ select_target, if present │
->                      └─────────────┬─────────────┘
->                          use the matching target
->                                    │
->                     CLICK [7] ─────┤──→ browser
->                 TYPE_TEXT [3] ─────┘
->                           ↓
->                    small LLM → text → browser
-> ```
-> 
-> Target questions are speculative. If the operation is `CLICK`, only `click_target` can execute. Two decisions, **one network round trip**. Each target head contains only compatible elements. Native dropdown choices carry an observed element/option index.
-> 
-> There are no site-specific action scripts or prepared field strings in the policy. The Flights example supplies a goal and independently verifies the outcome. The screenshot renderer adds labels afterward; it does not drive the browser.
-> 
-> ## Try it
-> 
-> ```bash
-> git clone https://github.com/browser-use/jev-ultrafast.git
-> cd jev-ultrafast
-> uv sync
-> cp .env.example .env
-> # Add TYPESAFE_API_KEY and TEXT_MODEL_API_KEY.
-> uv run jev
-> ```
-> 
-> Open **http://127.0.0.1:8766** and click **Start demo → Run automatically**. The inspector shows numbered elements, operation probabilities, target probabilities, and executed actions. **Choose next** pauses before execution.
-> 
-> Chrome connects through [Browser Harness](https://github.com/browser-use/browser-harness), installed by `uv sync`. Run `uv run browser-harness --doctor` if it needs connecting. Allow remote debugging in Chrome when prompted.
-> 
-> `TEXT_MODEL_API_KEY` is an OpenRouter key in the example configuration. The current demo uses `inception/mercury-2.5` with reasoning disabled. Gemini, GLM, and DeepSeek can also use the OpenAI-compatible text helper; configure the appropriate model, endpoint, and reasoning setting.
-> 
-> ## Use the library
-> 
-> ```python
-> from jev_ultrafast import Agent
-> 
-> with Agent(
->     "https://www.google.com/travel/flights?hl=en",
->     "Find one-way flights from Zurich to London on September 20, 2026, "
->     "for one adult in economy. Stop when matching flight options are visible.",
-> ) as agent:
->     for state in agent.run():
->         print(state["elapsed_ms"], state["status"])
-> ```
-> 
-> Run with `uv run --env-file .env python your_script.py`. The same policy can run a different task:
-> 
-> ```bash
-> uv run --env-file .env python examples/run.py \
->   --url https://en.wikipedia.org/wiki/Main_Page \
->   --goal 'Find and open the Wikipedia article about Gödel’s incompleteness theorems.'
-> ```
-> 
-> `uv run --env-file .env python examples/flights.py --keep-open` performs the flight search, checks the actual route/date/results, and saves its trace. It does not select or book a flight.
-> 
-> ## Why it moves
-> 
-> - **One request per decision cycle.** Operation and target heads share the same observed state.
-> - **No screenshots in the default agent loop.** Jev consumes structured state. The inspector opts into screenshots; the video uses a separate continuous screencast.
-> - **One browser call per snapshot.** Read visible controls, their names, values, and text atomically. Keep references to the actual DOM nodes.
-> - **Validate the selected target.** Clicks check the document, form values, target, and nearby context. Animation alone does not force another prediction. Resolve current geometry and reject covered controls before input.
-> - **Wait for useful state.** After typing into a combobox, wait for visible suggestions, capped at 200 ms. Other interactions get at most two animation frames or 50 ms. These reads happen after execution is logged.
-> - **Keep hidden tabs rendering.** Focus emulation prevents background animation throttling without switching Chrome's visible tab.
-> - **Send visible text.** Offscreen article bodies and footers do not fill the model context.
-> - **Reuse an interrupted text request.** A generated value survives a stale-page retry only if the entire text-helper input is unchanged.
-> 
-> Every executed target is resolved from an observed node. The executor rechecks page freshness and click occlusion. Model output never becomes selectors, coordinates, shell commands, or executable JavaScript. Text-helper output must parse as a small JSON object before typing.
-> 
-> ## Small enough to read
-> 
-> | File | Job |
+> | 功能 | 支持范围 |
 > | --- | --- |
-> | [agent.py](jev_ultrafast/agent.py) | The complete loop and text-helper handoff |
-> | [snapshot.js](jev_ultrafast/snapshot.js) | Atomic DOM snapshot, indexed controls, freshness guards |
-> | [browser.py](jev_ultrafast/browser.py) | Browser connection, current geometry, execution |
-> | [model.py](jev_ultrafast/model.py) | Dynamic operation/target heads and text generation |
-> | [questions.py](jev_ultrafast/questions.py) | Model instructions |
-> | [demo.py](jev_ultrafast/demo.py) | Local inspector |
+> | 生成可编辑草稿 | 视频分段、多轨组合、变速、音量、画中画、字幕和标题 |
+> | 导入本地素材 | 视频、PNG、JPEG、GIF、配音、音乐和音效 |
+> | 基础动画 | 位置、缩放、旋转、透明度和音量的线性关键帧 |
+> | 原生效果 | 六类静态几何蒙版、叠化转场、轻微抖动；需要匹配的本机资源与使用权限 |
+> | 编辑已有工程 | 检查源草稿，在独立副本中修改，不覆盖原项目 |
+> | 原生视频导出 | 通过本机剪映引擎将已验证快照导出为 H.264/AAC MP4 |
+> | 环境与工程检查 | 核对运行版本、组件身份、素材完整性和草稿保存结果 |
 > 
-> ## Evidence and limits
+> 核心流程为：**素材与剪辑计划 → 可编辑剪映草稿 → 原生引擎导出**。
+> 剪映中后续手工修改的内容不会自动同步回原计划或旧导出快照。
 > 
-> The current video is a **7,073 ms** Google Flights run. Timing starts after initial page observation and includes model calls, generated text, browser work, stale decisions, and loading waits. A fresh independent check verifies the one-way setting, Zürich, London, September 20, 2026, and visible flight options. The video plays at 1×, with no opening hold and a 0.5-second final hold.
+> ## Hypit 协作案例
 > 
-> In six alternating runs with identical models and settings, both versions passed **3/3**. Median task time went from **9.450 s → 7.092 s**, a **25% reduction**; median browser protocol calls went from **1,092 → 101**. This is three repeats of one task on one browser profile, not a general reliability benchmark.
+> 一个约 **50.23 秒**的 IG 滚动动画教程展示了从 Hypit 到剪映的工程交接。
+> 转换使用原工程的独立画面、配音、图片和文字时间安排，而不是仅导入一条最终成片。
 > 
-> The same policy opened the requested Wikipedia article in **2.798 s** and passed a local hotel search/filter task in **1.896 s**. Runs, failures, source hashes, and measurement boundaries are in [performance.md](docs/performance.md).
+> | 工程内容 | 数量 |
+> | --- | --- |
+> | 原始素材 | 39 份 |
+> | 视频与图片 | 8 条轨道、38 个片段 |
+> | 独立配音 | 1 条轨道、7 个片段 |
+> | 可编辑文字 | 14 条轨道、109 个片段 |
+> | 合计 | 23 条轨道、154 个片段 |
 > 
-> A `DONE` choice still requires independent outcome verification. The DOM reader handles common HTML and ARIA controls, not the full accessible-name specification. Shadow roots, frames, canvas, uploads, pop-up tabs, nested scrolling, and arbitrary keyboard widgets remain outside this MVP. Owned tabs share the existing Chrome profile.
+> 该案例已在剪映 11.5.0 完成构建、打开播放、保存、完全退出、冷重开和结构回读，
+> 并通过原生导出的 **1507 / 1507 帧**检查与完整解码检查。
 > 
-> ## Development
+> ### 画面对照
+> 
+> | Hypit 原成片 | 剪映工程原生导出 |
+> | --- | --- |
+> |  |  |
+> 
+> 两组图片均取自真实案例的 1、8、17、28、37、48 秒。展示的是可编辑工程交接，
+> **不是视觉无损转换**：特殊字体、逐词颜色动画、部分裁切与阴影未原样保留，
+> 第 37 秒的补充画面也存在差异。完整主观视听验收尚未完成。
+> 
+> 详见 [Hypit 协作案例](docs/HYPIT-COLLABORATION.md) 和 [媒体说明](docs/media/README.md)。
+> 当前转换是单向、按项目实现；不提供任意 Hypit 工程的一键无损转换或双向同步。
+> 
+> ## 运行环境
+> 
+> - Apple Silicon Mac，macOS 26.0+；已验证环境为 macOS 26.5.1。
+> - 剪映专业版 11.5.0，或兼容配置对应的 11.4.2。
+> - Python 3.9+、FFmpeg / ffprobe、Xcode Command Line Tools。
+> - 已验证桥接工具链：Apple clang 21.0.0 / macOS SDK 26.5。
+> 
+> 应用版本、build、官方库哈希、签名与开发者身份均有检查。
+> 未知版本或不匹配组件会被拒绝，不通过放宽校验强行运行。干净机器安装验收尚未完成。
+> 官方引擎、账号数据、原始工程素材库和效果资源不随源码分发。
+> 
+> ## 快速开始
 > 
 > ```bash
-> uv run ruff check .
-> uv run pytest
-> node --check jev_ultrafast/static/app.js
-> node --check jev_ultrafast/snapshot.js
-> uv build
+> git clone https://github.com/mcncarl/jianying-headless.git
+> cd jianying-headless
+> python3 tools/build_native_codec.py
+> python3 skills/yichen-jianying-edit/scripts/headless_draft.py doctor
 > ```
 > 
-> Tests are offline. `uv run python scripts/check_guards.py` checks real controls in a local browser without model calls. Live examples and recording scripts make paid API calls. `scripts/record_flights.py ` captures original browser timestamps; `scripts/render_demo.py ` renders that verified run at 1× and crops out the Google account strip. Credentials and raw traces stay ignored.
+> `doctor` 是**环境检查命令**：检查剪映版本、组件身份和必要工具。
+> 检查通过表示环境符合运行条件，不代表任意草稿都已通过画面、声音或导出验收。
 > 
-> ---
+> 桥接构建只编译项目源码并链接本机已安装程序库，不下载剪映、不修改官方库或账号权益。
+> 编译结果必须匹配固定哈希，否则停止。
 > 
-> [Browser Use](https://github.com/browser-use/browser-use) · [Browser Harness](https://github.com/browser-use/browser-harness) · [TypeSafe speculative fan-out](https://docs.typesafe.ai/patterns/fan-out)
+> 按 [计划格式](skills/yichen-jianying-edit/references/headless-macos.md) 准备 JSON，
+> 或参考 [基础计划](examples/basic.plan.json) 和 [Hypit 交接格式示例](examples/hypit-handoff.plan.json)。
+> 示例中的素材路径须替换为有权使用的本地文件。
+> 
+> ```bash
+> python3 skills/yichen-jianying-edit/scripts/headless_draft.py build \
+>   --plan /absolute/path/to/plan.json --out "$PWD/work/new-build"
+> python3 skills/yichen-jianying-edit/scripts/headless_draft.py verify-build \
+>   --build "$PWD/work/new-build"
+> ```
+> 
+> 保存当前工作并完全退出剪映后，将新草稿登记到本机首页：
+> 
+> ```bash
+> python3 skills/yichen-jianying-edit/scripts/headless_draft.py publish \
+>   --build "$PWD/work/new-build" --audit "$PWD/work/new-publish-audit"
+> ```
+> 
+> `publish` 在此仅指本机首页登记，不是互联网发布。生成的草稿仍需实际打开、播放和保存检查。
+> 需要成片时，可独立导出已验证快照：
+> 
+> ```bash
+> python3 skills/yichen-jianying-edit/scripts/headless_draft.py export \
+>   --build "$PWD/work/new-build" --out "$PWD/work/new-export"
+> ```
+> 
+> 输出目录须不存在，成片为该目录下的 `render.mp4`。
+> 导出在隔离进程中运行，默认不联网、不读取账号数据。
+> 
+> ## Agent Skill
+> 
+> `skills/yichen-jianying-edit/` 提供 Agent 调用入口、口播计划辅助脚本与操作参考。
+> Skill 不包含剪映引擎；独立安装后仍需检出核心项目，并指定其路径：
+> 
+> ```bash
+> export JIANYING_HEADLESS_ROOT="/absolute/path/to/jianying-headless"
+> ```
+> 
+> 安装说明见 [独立 Skill](skills/yichen-jianying-edit/README.md)。
+> Skill 另收录于 [yichen-skills](https://github.com/mcncarl/yichen-skills/tree/main/yichen-jianying-edit)。
+> 
+> ## 当前限制
+> 
+> - 复合片段仅支持实验性的离线修改与冻结快照导出，尚不能交付为保存可靠的可编辑嵌套草稿。
+> - 图片/GIF 样本曾出现间歇少一帧；严格帧数检查会拒绝缺帧输出，根因尚未解决。
+> - 不支持任意剪映版本、任意效果组合、在线模板、资源下载、云端工程或账号权益获取。
+> - 高清黑白滤镜与橙色描边花字已退出支持范围；含这些效果的计划或旧快照会明确报错。
+> - 工程结构检查、原生播放、视觉一致性、主观听感与素材许可是不同的验收项目。
+> 
+> 详细结果及已知问题见 [验证状态](docs/VERIFICATION.md)。
+> 
+> ## 项目结构与验证
+> 
+> | 目录 | 内容 |
+> | --- | --- |
+> | `engine/` | 草稿构建、独立副本编辑、资源校验与原生导出 |
+> | `bridge/` | 文件与管道桥接源码、保留来源声明的接口头文件 |
+> | `skills/` | Agent Skill 及配套参考 |
+> | `tools/`、`tests/` | 构建、源码包装检查与可移植测试 |
+> | `licenses/` | 第三方许可证 |
+> 
+> ```bash
+> python3 tools/check_package.py
+> python3 -m unittest discover -s tests -v
+> ```
+> 
+> 专项原生测试的本机素材与证据不随仓库分发；源码检查不能替代实际工程验收。
+> 
+> ## 许可与来源
+> 
+> 原创部分采用 [个人学习和非商业使用许可](LICENSE)；商业使用需取得作者书面授权。
+> 第三方内容继续适用原许可证，详见 [第三方声明](THIRD_PARTY_NOTICES.md)。
+> 本项目不是 MIT / Apache-2.0 整包授权，代码许可也不包含剪映集成授权、账号权益或素材许可。
+> 分发边界见 [分发范围](docs/DISTRIBUTION-SCOPE.md)。
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/browser-use/jev-ultrafast) · [官方網站](https://browser-use.com)
+[GitHub](https://github.com/mcncarl/jianying-headless)
 
 ## 相關收錄
 
@@ -328,7 +349,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "browser-use--jev-ultrafast"
+> WHERE category = "Other" AND file.name != "mcncarl--jianying-headless"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -337,7 +358,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "browser-use--jev-ultrafast" AND status != "archived"
+> WHERE language = "Python" AND file.name != "mcncarl--jianying-headless" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -346,18 +367,18 @@ i. am. speed.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "browser-use--jev-ultrafast"
+> WHERE week = "2026-W38" AND file.name != "mcncarl--jianying-headless"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/mcncarl--jianying-headless");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "browser-use--jev-ultrafast" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "mcncarl--jianying-headless" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -373,7 +394,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "browser-use" AND file.name != "browser-use--jev-ultrafast"
+> WHERE owner = "mcncarl" AND file.name != "mcncarl--jianying-headless"
 > SORT stars DESC
 > ```
 
@@ -381,7 +402,7 @@ i. am. speed.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/mcncarl--jianying-headless");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -398,7 +419,7 @@ i. am. speed.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/mcncarl--jianying-headless");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -431,7 +452,7 @@ i. am. speed.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/mcncarl--jianying-headless");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -455,7 +476,7 @@ i. am. speed.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/mcncarl--jianying-headless");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -492,7 +513,7 @@ i. am. speed.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/mcncarl--jianying-headless");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -575,7 +596,7 @@ i. am. speed.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-18** — 首次收錄
+> **2026-09-19** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -591,5 +612,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-19|2026-09-19]] — 再次上榜，5.9k stars
-- [[2026-09-18|2026-09-18]] — 首次收錄，2.9k stars
+- [[2026-09-19|2026-09-19]] — 首次收錄，1.2k stars

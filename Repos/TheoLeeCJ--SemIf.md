@@ -1,19 +1,19 @@
 ---
-repo: browser-use/jev-ultrafast
-url: https://github.com/browser-use/jev-ultrafast
-owner: browser-use
-owner_type: Organization
+repo: TheoLeeCJ/SemIf
+url: https://github.com/TheoLeeCJ/SemIf
+owner: TheoLeeCJ
+owner_type: User
 language: Python
 license: MIT
-description: "i. am. speed."
-homepage: "https://browser-use.com"
-stars: 5947
-stars_per_day: 2974
-forks: 380
-open_issues: 36
+description: "Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe."
+homepage: "openjev.com"
+stars: 1647
+stars_per_day: 549
+forks: 108
+open_issues: 5
 created: 2026-09-16
-pushed_at: 2026-09-18
-first_seen: 2026-09-18
+pushed_at: 2026-09-19
+first_seen: 2026-09-19
 week: "2026-W38"
 month: "2026-09"
 category: "Other"
@@ -25,40 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-18
+last_reviewed: 2026-09-19
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-22"
-contributor_count: 1
+contributor_count: 2
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 4478
-readme_length: 7898
+repo_size_kb: 8511
+readme_length: 8217
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-18"
-star_history: "2026-09-18:2896,2026-09-19:5947"
+ring_history: "assess@2026-09-19"
+star_history: "2026-09-19:1647"
 tags:
   - github
   - "category/other"
   - "lang/python"
-  - org
 aliases:
-  - "jev-ultrafast"
-  - "browser-use/jev-ultrafast"
+  - "SemIf"
+  - "TheoLeeCJ/SemIf"
 ---
 
-# jev-ultrafast
+# SemIf
 
-**2.9k** stars · **2.9k** stars/天 · 建立 1 天前 · Python · MIT
+**1.6k** stars · **549** stars/天 · 建立 3 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/browser-use--jev-ultrafast");
+const me = dv.page("Repos/TheoLeeCJ--SemIf");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +70,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
-
 > [!summary] 一句話摘要
-> i. am. speed.
+> Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe.
 
 ## 專案簡介
 
-i. am. speed.
+Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/TheoLeeCJ--SemIf");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +116,7 @@ i. am. speed.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/TheoLeeCJ--SemIf");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,184 +140,220 @@ i. am. speed.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 161 |
-| Open Issues | 19 |
+| Forks | 108 |
+| Open Issues | 5 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-18 |
+| 最後推送 | 2026-09-19 |
 | 建立日期 | 2026-09-16 |
-| 官方網站 | [Link](https://browser-use.com) |
-| Repo 大小 | 4.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/browser-use/jev-ultrafast) |
+| 官方網站 | [Link](openjev.com) |
+| Repo 大小 | 8.3 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/TheoLeeCJ/SemIf) |
+
+> [!info]- 主要依賴
+> `requirements.txt` 中的核心套件：
+> `torch` `transformers` `accelerate` `safetensors` `huggingface-hub` `tokenizers` `numpy` `sentencepiece` `protobuf` `pytest`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 58
->     "HTML" : 18
->     "JavaScript" : 13
->     "CSS" : 10
+>     "Python" : 82
+>     "JavaScript" : 12
+>     "HTML" : 6
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@gregpr07](https://github.com/gregpr07) | 2 |
+> | [@TheoLeeCJ](https://github.com/TheoLeeCJ) | 11 |
+> | [@fcoury](https://github.com/fcoury) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-17 ~ 2026-09-17）
-> **活躍天數** 1 天 · **最新 commit** Reduce browser round trips and record a 7-second Flights demo
+> [!abstract] 最近 10 次 commit（2026-09-16 ~ 2026-09-19）
+> **活躍天數** 3 天 · **最新 commit** Tolerate float roundoff in MLX evidence verification
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#16](https://github.com/browser-use/jev-ultrafast/issues/16) | Setup friction: SOCKS proxy crash on startup; browser-harnes | 0 | 0 |
+> | [#3](https://github.com/TheoLeeCJ/SemIf/issues/3) | varrock west bank | 1 | 1 |
+> | [#7](https://github.com/TheoLeeCJ/SemIf/issues/7) | Bigger Models, More Tasks, Can openJev Do It Too? | 0 | 0 |
+> | [#1](https://github.com/TheoLeeCJ/SemIf/issues/1) | You might find this interesting in regard to Softmax | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Jev Ultrafast ⚡
+> # SemIf (formerly OpenJev)
 > 
-> **A browser agent with a dynamic, indexed action space.**
+> **Semantic ifs from open models, on a 3090 at home.**
 > 
-> Give it one goal. [TypeSafe's Jev](https://docs.typesafe.ai/introduction) picks an operation and an element. A small LLM writes text only when the operation is `TYPE_TEXT`.
+> *Independent project; not affiliated with Jev or TypeSafe.*
 > 
-> **Zürich → London on Google Flights in 7.1 seconds.** One natural-language goal, actual text generation, and loading waits included.
+> **Wow! No waitlist.** [Run it in your browser today.](webgpu-demo/index.html)
 > 
-> [Watch the MP4](docs/demo.mp4) · [Measurements](docs/performance.md) · [Read the loop](jev_ultrafast/agent.py)
+> [](demo/index.html)
 > 
-> ## The action space
+> *Same frozen 4B model · same state · same 21 questions · measured separately, aligned at t=0 in the replay*
 > 
-> Every observation produces a new element table:
+> > **Independent research project.** SemIf was formerly called OpenJev. It is not affiliated with or endorsed by TypeSafe. Jev, TypeSafe, and other names and marks are the property of their respective owners. No infringement is intended.
 > 
-> ```text
-> [1] button    Change ticket type · Round trip
-> [2] combobox  Where from?        · San Francisco
-> [3] combobox  Where to?          · empty
-> [4] textbox   Departure          · empty
-> ...
-> ```
+> Most agent decisions are small: *route this*, *retry that*, *does the evidence support X?* A chat model can answer them, but it spends time generating text that software immediately parses back into an `if` statement.
 > 
-> The operations are `CLICK`, `TYPE_TEXT`, `SELECT`, `SCROLL_UP`, `SCROLL_DOWN`, `WAIT`, `DONE`, and `BLOCKED`. Only supported operations and targets are offered.
+> Jev is TypeSafe's closed service for runtime-defined semantic decisions. This project reproduces that **interface pattern** with open models; it does not reproduce Jev's undisclosed model or training.
 > 
-> ```text
->                       one TypeSafe request
->                      ┌───────────────────────────┐
-> page → element table → operation                 │
->                      │ click_target              │
->                      │ type_text_target          │
->                      │ select_target, if present │
->                      └─────────────┬─────────────┘
->                          use the matching target
->                                    │
->                     CLICK [7] ─────┤──→ browser
->                 TYPE_TEXT [3] ─────┘
->                           ↓
->                    small LLM → text → browser
-> ```
+> This baseline reads typed option probabilities directly from a model. No answer sentence, JSON repair, or decoding loop.
 > 
-> Target questions are speculative. If the operation is `CLICK`, only `click_target` can execute. Two decisions, **one network round trip**. Each target head contains only compatible elements. Native dropdown choices carry an observed element/option index.
+> ### Latest changes — 2026-09-18
 > 
-> There are no site-specific action scripts or prepared field strings in the policy. The Flights example supplies a goal and independently verifies the outcome. The screenshot renderer adds labels afterward; it does not drive the browser.
+> - Added MiniCPM5 2B and Qwen3.5 4B to the browser demo.
+> - Added **Unsloppify site**, a switch to a conventional interface.
 > 
-> ## Try it
+> ## Quick start
+> 
+> **Apple Silicon:** use the native [MLX backend](docs/MLX.md) for direct scoring,
+> serial prefix reuse, and parallel shared-state decisions on macOS arm64.
+> Install `pip install -e '.[test,mlx]'` and add `--backend mlx` to the scorer command.
+> 
+> Python 3.10+, CUDA, and a GPU that can hold a 4B BF16 model:
 > 
 > ```bash
-> git clone https://github.com/browser-use/jev-ultrafast.git
-> cd jev-ultrafast
-> uv sync
-> cp .env.example .env
-> # Add TYPESAFE_API_KEY and TEXT_MODEL_API_KEY.
-> uv run jev
+> python -m venv .venv
+> . .venv/bin/activate
+> export HF_HOME=/path/to/large-drive/huggingface
+> pip install -e '.[test]'
 > ```
 > 
-> Open **http://127.0.0.1:8766** and click **Start demo → Run automatically**. The inspector shows numbered elements, operation probabilities, target probabilities, and executed actions. **Choose next** pauses before execution.
-> 
-> Chrome connects through [Browser Harness](https://github.com/browser-use/browser-harness), installed by `uv sync`. Run `uv run browser-harness --doctor` if it needs connecting. Allow remote debugging in Chrome when prompted.
-> 
-> `TEXT_MODEL_API_KEY` is an OpenRouter key in the example configuration. The current demo uses `inception/mercury-2.5` with reasoning disabled. Gemini, GLM, and DeepSeek can also use the OpenAI-compatible text helper; configure the appropriate model, endpoint, and reasoning setting.
-> 
-> ## Use the library
-> 
-> ```python
-> from jev_ultrafast import Agent
-> 
-> with Agent(
->     "https://www.google.com/travel/flights?hl=en",
->     "Find one-way flights from Zurich to London on September 20, 2026, "
->     "for one adult in economy. Stop when matching flight options are visible.",
-> ) as agent:
->     for state in agent.run():
->         print(state["elapsed_ms"], state["status"])
-> ```
-> 
-> Run with `uv run --env-file .env python your_script.py`. The same policy can run a different task:
+> Run the owned examples:
 > 
 > ```bash
-> uv run --env-file .env python examples/run.py \
->   --url https://en.wikipedia.org/wiki/Main_Page \
->   --goal 'Find and open the Wikipedia article about Gödel’s incompleteness theorems.'
+> CUDA_VISIBLE_DEVICES=0 semif-score \
+>   --mode direct \
+>   --model Qwen/Qwen3.5-4B \
+>   --revision 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a \
+>   --input examples/decisions.jsonl \
+>   --output results.jsonl
 > ```
 > 
-> `uv run --env-file .env python examples/flights.py --keep-open` performs the flight search, checks the actual route/date/results, and saves its trace. It does not select or book a flight.
+> Each result contains typed option scores, timing, the exact model revision, and a prompt hash.
 > 
-> ## Why it moves
+> If every row has the same exact state, switch to `--mode shared` to prefill it once and evaluate the criteria in parallel.
 > 
-> - **One request per decision cycle.** Operation and target heads share the same observed state.
-> - **No screenshots in the default agent loop.** Jev consumes structured state. The inspector opts into screenshots; the video uses a separate continuous screencast.
-> - **One browser call per snapshot.** Read visible controls, their names, values, and text atomically. Keep references to the actual DOM nodes.
-> - **Validate the selected target.** Clicks check the document, form values, target, and nearby context. Animation alone does not force another prediction. Resolve current geometry and reject covered controls before input.
-> - **Wait for useful state.** After typing into a combobox, wait for visible suggestions, capped at 200 ms. Other interactions get at most two animation frames or 50 ms. These reads happen after execution is logged.
-> - **Keep hidden tabs rendering.** Focus emulation prevents background animation throttling without switching Chrome's visible tab.
-> - **Send visible text.** Offscreen article bodies and footers do not fill the model context.
-> - **Reuse an interrupted text request.** A generated value survives a stale-page retry only if the entire text-helper input is unchanged.
+> ## How it works
 > 
-> Every executed target is resolved from an observed node. The executor rechecks page freshness and click occlusion. Model output never becomes selectors, coordinates, shell commands, or executable JavaScript. Text-helper output must parse as a small JSON object before typing.
-> 
-> ## Small enough to read
-> 
-> | File | Job |
-> | --- | --- |
-> | [agent.py](jev_ultrafast/agent.py) | The complete loop and text-helper handoff |
-> | [snapshot.js](jev_ultrafast/snapshot.js) | Atomic DOM snapshot, indexed controls, freshness guards |
-> | [browser.py](jev_ultrafast/browser.py) | Browser connection, current geometry, execution |
-> | [model.py](jev_ultrafast/model.py) | Dynamic operation/target heads and text generation |
-> | [questions.py](jev_ultrafast/questions.py) | Model instructions |
-> | [demo.py](jev_ultrafast/demo.py) | Local inspector |
-> 
-> ## Evidence and limits
-> 
-> The current video is a **7,073 ms** Google Flights run. Timing starts after initial page observation and includes model calls, generated text, browser work, stale decisions, and loading waits. A fresh independent check verifies the one-way setting, Zürich, London, September 20, 2026, and visible flight options. The video plays at 1×, with no opening hold and a 0.5-second final hold.
-> 
-> In six alternating runs with identical models and settings, both versions passed **3/3**. Median task time went from **9.450 s → 7.092 s**, a **25% reduction**; median browser protocol calls went from **1,092 → 101**. This is three repeats of one task on one browser profile, not a general reliability benchmark.
-> 
-> The same policy opened the requested Wikipedia article in **2.798 s** and passed a local hotel search/filter task in **1.896 s**. Runs, failures, source hashes, and measurement boundaries are in [performance.md](docs/performance.md).
-> 
-> A `DONE` choice still requires independent outcome verification. The DOM reader handles common HTML and ARIA controls, not the full accessible-name specification. Shadow roots, frames, canvas, uploads, pop-up tabs, nested scrolling, and arbitrary keyboard widgets remain outside this MVP. Owned tabs share the existing Chrome profile.
-> 
-> ## Development
-> 
-> ```bash
-> uv run ruff check .
-> uv run pytest
-> node --check jev_ultrafast/static/app.js
-> node --check jev_ultrafast/snapshot.js
-> uv build
+> ```mermaid
+> flowchart LR
+>     S[Unstructured state] --> M[4B model]
+>     C[Runtime criteria] --> M
+>     O[Typed options] --> M
+>     M -- native option logits --> P[Probabilities]
 > ```
 > 
-> Tests are offline. `uv run python scripts/check_guards.py` checks real controls in a local browser without model calls. Live examples and recording scripts make paid API calls. `scripts/record_flights.py ` captures original browser timestamps; `scripts/render_demo.py ` renders that verified run at 1× and crops out the Google account strip. Credentials and raw traces stay ignored.
+> - **Runtime-defined:** criteria and option descriptions arrive with the request.
+> - **Decision-native:** one forward pass reads declared option logits; no answer token is sampled.
+> - **Shared-state aware:** one long state can be prefetched once, then branched across many criteria.
+> - **Auditable:** the owned fixture, exact runners, row-level outputs, revisions, prompts, and known failures are committed.
 > 
-> ---
+> ## Speed
 > 
-> [Browser Use](https://github.com/browser-use/browser-use) · [Browser Harness](https://github.com/browser-use/browser-harness) · [TypeSafe speculative fan-out](https://docs.typesafe.ai/patterns/fan-out)
+> ### Decisions versus a compact generated array
+> 
+> Same frozen Qwen3.5-4B, same owned state, same 21 binary criteria, one RTX 3090:
+> 
+> | Output path | Time | Output tokens | Result |
+> |---|---:|---:|---|
+> | Direct typed logits, median of 3 | **1.023 s** | **0** | 21 probability pairs |
+> | Autoregressive JSON array, median of 3 | 5.332 s | 111 | Valid ordered 21-value array |
+> 
+> The compact generative baseline emits only ordered `"yes"`/`"no"` values—no keys, confidence objects, or explanations. Its median first-token time was 0.489 s, but completing the array took **5.21×** as long as direct readout. All three arrays were valid and identical. Their choices agreed with direct argmax on 18/21 criteria, so this is a systems comparison rather than a claim that the two readouts are semantically equivalent. [Exact prompt, outputs, token timeline, and runs](results/raw/decision-vs-compact-array.json) are committed.
+> 
+> ### Reusing a state across 21 decisions
+> 
+> On an owned 37-state × 21-criterion workload:
+> 
+> | Execution path | Decisions/s | 777 decisions |
+> |---|---:|---:|
+> | Fresh direct scoring | 2.33 | 333.1 s |
+> | Serial prefix reuse | 10.75 | 72.3 s |
+> | Parallel suffixes | **20.03** | **38.8 s** |
+> | Native reranker | 1.86 | 417.3 s |
+> 
+> The owned [37×21 fixture](benchmarks/data/shape777.jsonl), [direct/reuse runner](benchmarks/shape777.py), [reranker runner](benchmarks/shape777_reranker.py), [raw timings](results/raw/shape777-direct.json), and [row-level predictions](results/raw/shape777-direct.predictions.jsonl) are included. The fast reuse paths are experimental: BF16 execution changed 5–6 of 777 argmaxes relative to fresh scoring.
+> 
+> ## Quality
+> 
+> ### Browser model ladder
+> 
+> | System | Browser artifact | Download | Authored balanced accuracy | Perturbation balanced accuracy | TypeSafe subset agreement |
+> |---|---|---:|---:|---:|---:|
+> | Qwen3-0.6B | Q8_0 | 639 MB | 0.440 | 0.528 | 0.407 |
+> | MiniCPM5-2B | Q4_K_M | 1.56 GB | 0.686 | 0.693 | 0.637 |
+> | **Qwen3.5-4B** | Q4_K_M | 3.01 GB | **0.813** | **0.766** | 0.845 |
+> | Published Jev | Closed hosted service | — | — | — | **0.883** |
+> 
+> *Native BF16 scores. Browser builds use quantized GGUF. Jev is TypeSafe's published result on the same 102-row subset.*
+> 
+> ### General decision baseline
+> 
+> | Frozen workload | Rows | Direct logits (4B) | Native reranker (4B) | Published Jev |
+> |---|---:|---:|---:|---:|
+> | Authored decisions, balanced accuracy | 144 | **0.813** | 0.625 | — |
+> | WANLI, balanced accuracy | 256 | **0.637** | 0.522 | — |
+> | TypeSafe selected subset, modal agreement | 102 across 20 cases | **0.845** | 0.560 | 0.883 |
+> | Every judgment grid, accuracy | 36 | **0.806** | 0.694 | — |
+> | Every action firewall, composed accuracy | 10 actions | 0.700 | 0.700 | — |
+> | Every code retrieval, Recall@1 | 6 queries | 1.000 | 1.000 | — |
+> | Every company knowledge, Recall@1 | 7 queries | 0.929 | 0.929 | — |
+> 
+> The reranker remained strong at retrieval ranking, but direct logits were the better general-decision baseline.
+> 
+> The Jev number is read from TypeSafe's published records; we did not run a live Jev endpoint. The comparison covers the 102 rows that could be aligned from public artifacts, not TypeSafe's reported 711-row aggregate.
+> 
+> ## Input
+> 
+> ```json
+> {
+>   "id": "route-1",
+>   "state": "Customer cannot access an account after a password reset.",
+>   "question": "Which queue should handle this request?",
+>   "options": [
+>     {"id": "access", "description": "Account access support."},
+>     {"id": "billing", "description": "Billing support."}
+>   ]
+> }
+> ```
+> 
+> Returned probabilities are conditional on the supplied options. Calibrate and validate them on the workload where they will make decisions.
+> `state` may also be a nonempty JSON object or array. Direct modes preserve it as structured JSON; reranker mode renders it as document text.
+> 
+> ## Documentation
+> 
+> - [Results](docs/RESULTS.md) — quality, speed, perturbations, and claim boundaries
+> - [Method](docs/METHOD.md) — frozen prompts, metrics, and timing scope
+> - [Reproduce](docs/REPRODUCE.md) — exact environment, pinned commands, perturbations, and verification
+> - [Interactive replay](demo/index.html)
+> - [Browser-only WebGPU demo](webgpu-demo/index.html) — no waitlist; use it today
+> - [Machine-readable summary](results/phase1-summary.json)
+> - [Benchmark bundle](benchmarks/README.md) — fixtures, runners, selection IDs, and reproduction commands
+> - [Raw results and checksums](results/raw/)
+> - [Third-party sources](THIRD_PARTY.md)
+> 
+> ## Star history
+> 
+> [](https://www.star-history.com/#TheoLeeCJ/SemIf&Date)
+> 
+> ## Evaluation sources
+> 
+> - [TypeSafe public evaluations](https://evals.typesafe.ai/) — public comparison cases used for selected-subset agreement
+> - [Every parallel judgment lab](https://typesafe-parallel-judgment-lab.every-4573.chatgpt.site/) and its [downloadable experiment data](https://typesafe-parallel-judgment-lab.every-4573.chatgpt.site/downloads/experiments.json)
+> - [WANLI](https://huggingface.co/datasets/alisawuffles/WANLI) — external natural-language inference check
+> - [Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B), [MiniCPM5-2B](https://huggingface.co/openbmb/MiniCPM5-2B), [Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B), and [Qwen3-Reranker-4B](https://huggingf
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/browser-use/jev-ultrafast) · [官方網站](https://browser-use.com)
+[GitHub](https://github.com/TheoLeeCJ/SemIf) · [官方網站](openjev.com)
 
 ## 相關收錄
 
@@ -328,7 +361,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "browser-use--jev-ultrafast"
+> WHERE category = "Other" AND file.name != "TheoLeeCJ--SemIf"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -337,7 +370,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "browser-use--jev-ultrafast" AND status != "archived"
+> WHERE language = "Python" AND file.name != "TheoLeeCJ--SemIf" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -346,18 +379,18 @@ i. am. speed.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "browser-use--jev-ultrafast"
+> WHERE week = "2026-W38" AND file.name != "TheoLeeCJ--SemIf"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/TheoLeeCJ--SemIf");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "browser-use--jev-ultrafast" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "TheoLeeCJ--SemIf" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -373,7 +406,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "browser-use" AND file.name != "browser-use--jev-ultrafast"
+> WHERE owner = "TheoLeeCJ" AND file.name != "TheoLeeCJ--SemIf"
 > SORT stars DESC
 > ```
 
@@ -381,7 +414,7 @@ i. am. speed.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/TheoLeeCJ--SemIf");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -398,7 +431,7 @@ i. am. speed.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/TheoLeeCJ--SemIf");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -431,7 +464,7 @@ i. am. speed.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/TheoLeeCJ--SemIf");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -455,7 +488,7 @@ i. am. speed.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/TheoLeeCJ--SemIf");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -492,7 +525,7 @@ i. am. speed.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/TheoLeeCJ--SemIf");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -575,7 +608,7 @@ i. am. speed.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-18** — 首次收錄
+> **2026-09-19** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -591,5 +624,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-19|2026-09-19]] — 再次上榜，5.9k stars
-- [[2026-09-18|2026-09-18]] — 首次收錄，2.9k stars
+- [[2026-09-19|2026-09-19]] — 首次收錄，1.6k stars

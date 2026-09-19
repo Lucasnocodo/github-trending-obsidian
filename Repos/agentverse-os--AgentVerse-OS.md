@@ -7,10 +7,10 @@ language: Rust
 license: Apache-2.0
 description: "Personal cloud OS for a developer and their AI agents on a single server. One-command install on Ubuntu, then everything in the browser: a windowed desktop, isolated workspaces with VS Code, Claude Code and Codex, a store of 944 self-hosted apps, backups and updates. Access only via Tailscale, nothing exposed to the internet. Rust core, Svelte UI."
 homepage: ""
-stars: 756
-stars_per_day: 151
-forks: 22
-open_issues: 0
+stars: 877
+stars_per_day: 146
+forks: 24
+open_issues: 1
 created: 2026-09-12
 pushed_at: 2026-09-12
 first_seen: 2026-09-18
@@ -30,8 +30,8 @@ use_case: ""
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-25"
+appearances: 2
+next_review: "2026-09-26"
 contributor_count: 0
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: 6
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-18"
-star_history: "2026-09-18:756"
+star_history: "2026-09-18:756,2026-09-19:877"
 tags:
   - github
   - "category/other"
@@ -610,4 +610,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-19|2026-09-19]] — 再次上榜，877 stars
 - [[2026-09-18|2026-09-18]] — 首次收錄，756 stars

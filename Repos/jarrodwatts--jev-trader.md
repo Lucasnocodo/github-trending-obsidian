@@ -1,19 +1,19 @@
 ---
-repo: browser-use/jev-ultrafast
-url: https://github.com/browser-use/jev-ultrafast
-owner: browser-use
-owner_type: Organization
-language: Python
+repo: jarrodwatts/jev-trader
+url: https://github.com/jarrodwatts/jev-trader
+owner: jarrodwatts
+owner_type: User
+language: TypeScript
 license: MIT
-description: "i. am. speed."
-homepage: "https://browser-use.com"
-stars: 5947
-stars_per_day: 2974
-forks: 380
-open_issues: 36
+description: "One AI trade decision every Monad block. Jev on Kuru MON-USDC."
+homepage: ""
+stars: 929
+stars_per_day: 465
+forks: 173
+open_issues: 3
 created: 2026-09-16
-pushed_at: 2026-09-18
-first_seen: 2026-09-18
+pushed_at: 2026-09-17
+first_seen: 2026-09-19
 week: "2026-W38"
 month: "2026-09"
 category: "Other"
@@ -25,40 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-18
+last_reviewed: 2026-09-19
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-22"
 contributor_count: 1
-engagement: "low"
+engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 4478
-readme_length: 7898
+repo_size_kb: 171
+readme_length: 5557
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-18"
-star_history: "2026-09-18:2896,2026-09-19:5947"
+ring_history: "assess@2026-09-19"
+star_history: "2026-09-19:929"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - org
+  - "lang/typescript"
 aliases:
-  - "jev-ultrafast"
-  - "browser-use/jev-ultrafast"
+  - "jev-trader"
+  - "jarrodwatts/jev-trader"
 ---
 
-# jev-ultrafast
+# jev-trader
 
-**2.9k** stars · **2.9k** stars/天 · 建立 1 天前 · Python · MIT
+**929** stars · **465** stars/天 · 建立 2 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/browser-use--jev-ultrafast");
+const me = dv.page("Repos/jarrodwatts--jev-trader");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`個人專案`
 
 > [!summary] 一句話摘要
-> i. am. speed.
+> One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 ## 專案簡介
 
-i. am. speed.
+One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/jarrodwatts--jev-trader");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +118,7 @@ i. am. speed.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/jarrodwatts--jev-trader");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,184 +142,121 @@ i. am. speed.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 161 |
-| Open Issues | 19 |
+| Forks | 173 |
+| Open Issues | 3 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-18 |
+| 最後推送 | 2026-09-17 |
 | 建立日期 | 2026-09-16 |
-| 官方網站 | [Link](https://browser-use.com) |
-| Repo 大小 | 4.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/browser-use/jev-ultrafast) |
+| Repo 大小 | 171 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/jarrodwatts/jev-trader) |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@ai-sdk/typesafe-ai` `@kuru-labs/kuru-sdk` `ai` `ethers` `@types/bun`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 58
->     "HTML" : 18
->     "JavaScript" : 13
->     "CSS" : 10
+>     "TypeScript" : 88
+>     "CSS" : 12
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@gregpr07](https://github.com/gregpr07) | 2 |
+> | [@jarrodwatts](https://github.com/jarrodwatts) | 2 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-17 ~ 2026-09-17）
-> **活躍天數** 1 天 · **最新 commit** Reduce browser round trips and record a 7-second Flights demo
+> [!abstract] 最近 10 次 commit（2026-09-16 ~ 2026-09-17）
+> **活躍天數** 2 天 · **最新 commit** Post-only limit orders every block: earn the spread instead of paying it
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#16](https://github.com/browser-use/jev-ultrafast/issues/16) | Setup friction: SOCKS proxy crash on startup; browser-harnes | 0 | 0 |
+> | [#1](https://github.com/jarrodwatts/jev-trader/issues/1) | It's losing money | 4 | 3 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Jev Ultrafast ⚡
+> # jev-trader
 > 
-> **A browser agent with a dynamic, indexed action space.**
+> One decision every Monad block. A TypeSafe Jev model watches the Kuru MON-USDC order book and answers buy or sell every ~300 ms. Every block posts a real post-only limit order on that side, one tick inside the touch, replacing the last one. Fills happen when a taker hits it, so the bot earns the spread instead of paying it. A small server streams every block to the dashboard.
 > 
-> Give it one goal. [TypeSafe's Jev](https://docs.typesafe.ai/introduction) picks an operation and an element. A small LLM writes text only when the operation is `TYPE_TEXT`.
+> ## Run
 > 
-> **Zürich → London on Google Flights in 7.1 seconds.** One natural-language goal, actual text generation, and loading waits included.
+>     cp .env.example .env
+>     bun install
+>     bun run start
 > 
-> [Watch the MP4](docs/demo.mp4) · [Measurements](docs/performance.md) · [Read the loop](jev_ultrafast/agent.py)
+> With no `PRIVATE_KEY` it dry-runs: real book, real decisions, simulated fills. Set `MODEL=jev` and `TYPESAFE_AI_API_KEY` to use Jev; the default `mock` is a momentum heuristic stand-in.
 > 
-> ## The action space
+> ## Endpoints
 > 
-> Every observation produces a new element table:
+> Deployed (dry run, mock model): https://jev-trader-production.up.railway.app
 > 
-> ```text
-> [1] button    Change ticket type · Round trip
-> [2] combobox  Where from?        · San Francisco
-> [3] combobox  Where to?          · empty
-> [4] textbox   Departure          · empty
-> ...
-> ```
+> - `GET /` snapshot: model, wallet, dryRun, latest block event
+> - `GET /history` last 1000 block events
+> - `GET /events` SSE: `snapshot` on connect, then one `block` event per block, plus a `fill` event whenever a live order's receipt lands
 > 
-> The operations are `CLICK`, `TYPE_TEXT`, `SELECT`, `SCROLL_UP`, `SCROLL_DOWN`, `WAIT`, `DONE`, and `BLOCKED`. Only supported operations and targets are offered.
+> Every event (see `src/trader.ts` for types):
 > 
-> ```text
->                       one TypeSafe request
->                      ┌───────────────────────────┐
-> page → element table → operation                 │
->                      │ click_target              │
->                      │ type_text_target          │
->                      │ select_target, if present │
->                      └─────────────┬─────────────┘
->                          use the matching target
->                                    │
->                     CLICK [7] ─────┤──→ browser
->                 TYPE_TEXT [3] ─────┘
->                           ↓
->                    small LLM → text → browser
-> ```
+>     {
+>       "block": 105488269, "ts": 1789593630676,
+>       "mid": 0.022636, "bestBid": 0.022628, "bestAsk": 0.022644, "spreadBps": 7.07,
+>       "decision": { "action": "buy", "probabilities": { "buy": 0.77, "sell": 0.23, "hold": 0 }, "upIn10": 0.77, "latencyMs": 81, "late": false },
+>       "quote": { "side": "buy", "price": 0.022629, "size": 200, "txHash": "0x…", "gasMon": 0.0357, "cancel": [100295801], "status": "sent", "orderId": null, "capped": false },
+>       "fill": null,
+>       "resting": { "bidMon": 200, "askMon": 200 },
+>       "position": { "side": "short", "size": 200, "entryPrice": 0.022633, "unrealizedUsd": -0.0006, "unrealizedMon": -0.027 },
+>       "totals": { "blocks": 3, "decisions": 3, "quotes": 3, "fills": 1, "reverted": 0, "lateBlocks": 0, "jevUsd": 0.000004, "gasMon": 0.107, "gasUsd": 0.0024, "realizedUsd": 0, "pnlUsd": -0.003, "pnlMon": -0.13, "pnlPct": -0.003 }
+>     }
 > 
-> Target questions are speculative. If the operation is `CLICK`, only `click_target` can execute. Two decisions, **one network round trip**. Each target head contains only compatible elements. Native dropdown choices carry an observed element/option index.
+> Every block the model is asked about the move over `HORIZON_BLOCKS` (default 100, ~30 s) and answers `buy` or `sell`. `quote` is the order that block put on the book: a post-only limit order of `TRADE_SIZE_MON` on that side, `QUOTE_INSIDE_TICKS` inside the touch (clamped to the touch when the spread is too tight), in one `batchUpdate` that also cancels everything we had resting (`cancel`). `hold` appears only with `decision.late: true`, when the model missed the block and nothing was posted. When the position cap (or, live, margin funds) blocks a side, the quote goes on the other side with `capped: true` and `probabilities` still show the model's call. `resting` is our size known to be on the book after this block. `upIn10` equals the buy probability.
 > 
-> There are no site-specific action scripts or prepared field strings in the policy. The Flights example supplies a goal and independently verifies the outcome. The screenshot renderer adds labels afterward; it does not drive the browser.
+> Live sends are fired and forgotten, so the `block` event carries the **intent**: `status: "sent"`, `gasMon` is `gasLimit x (last known base fee + priority)`. Monad charges the gas limit, so that is the real cost whether the order lands or not. The receipt arrives a block or two later as its own SSE event:
 > 
-> ## Try it
+>     event: quote
+>     data: { "block": 105488269, "quote": { …, "status": "placed", "orderId": 100295812, "gasMon": 0.0357 } }
 > 
-> ```bash
-> git clone https://github.com/browser-use/jev-ultrafast.git
-> cd jev-ultrafast
-> uv sync
-> cp .env.example .env
-> # Add TYPESAFE_API_KEY and TEXT_MODEL_API_KEY.
-> uv run jev
-> ```
+> `status` becomes `placed` (with the order id) or `reverted` (the book moved through the price before the tx landed, or a cancelled order had already filled). No receipt after 10 blocks gives `lost`. Fills are not in our own transactions: someone else's taker order hits our resting one, and the Trade log for it arrives via the same `eth_getLogs` poll that feeds the model. Each block with fills gets its own SSE event, and `position`, `realizedUsd` and `fills` update then:
 > 
-> Open **http://127.0.0.1:8766** and click **Start demo → Run automatically**. The inspector shows numbered elements, operation probabilities, target probabilities, and executed actions. **Choose next** pauses before execution.
+>     event: fill
+>     data: { "block": 105488271, "fill": { "side": "buy", "size": 200, "price": 0.022629, "txHash": "0x…", "orderId": 100295812, "simulated": false } }
 > 
-> Chrome connects through [Browser Harness](https://github.com/browser-use/browser-harness), installed by `uv sync`. Run `uv run browser-harness --doctor` if it needs connecting. Allow remote debugging in Chrome when prompted.
+> `txHash` is the taker's transaction. In a dry run the quote is `status: "sim"`: the order rests for one block and a real print crossing its price fills it (`simulated: true`).
 > 
-> `TEXT_MODEL_API_KEY` is an OpenRouter key in the example configuration. The current demo uses `inception/mercury-2.5` with reasoning disabled. Gemini, GLM, and DeepSeek can also use the OpenAI-compatible text helper; configure the appropriate model, endpoint, and reasoning setting.
+> ## Layout
 > 
-> ## Use the library
+>     src/config.ts   env
+>     src/chain.ts    block feed (WebSocket newHeads + polling backstop, newest block only), raw RPC
+>     src/book.ts     one-eth_call order book reader (decodes getL2Book, merges the AMM vault)
+>     src/market.ts   Kuru: read book, hand-encoded batchUpdate (cancel + post-only place), margin deposits, local nonce, async confirmation
+>     src/model.ts    Model interface, JevModel (AI SDK experimental_evaluate), MockModel
+>     src/trader.ts   the loop: one in flight, hold when late, position and P&L accounting
+>     src/server.ts   Bun.serve: snapshot, history, SSE
 > 
-> ```python
-> from jev_ultrafast import Agent
+> ## The 300 ms budget
 > 
-> with Agent(
->     "https://www.google.com/travel/flights?hl=en",
->     "Find one-way flights from Zurich to London on September 20, 2026, "
->     "for one adult in economy. Stop when matching flight options are visible.",
-> ) as agent:
->     for state in agent.run():
->         print(state["elapsed_ms"], state["status"])
-> ```
+> A decision and an order have to fit in one block, so the hot loop makes exactly two RPC round trips:
+> one `eth_call` for the book (~18 ms on the public RPC, `READ_RPC_URL`) and one `eth_sendRawTransaction`
+> (`RPC_URL`), which returns as soon as the tx is accepted. Nothing else is on the path — no
+> `eth_estimateGas` (Monad charges gas on the limit, so the limit is hardcoded or derived once at
+> startup), no `eth_sendRawTransactionSync` (it blocks until the tx is Proposed), no gas price lookup
+> (static type-2 fees: `MAX_FEE_GWEI` cap, 2 gwei priority; the effective price is base + priority).
+> Receipts, the fee estimate and the vault check run off the hot path on later blocks. Measured in a
+> dry run with the mock model: read p50 18 ms, whole loop p50 100 ms (80 ms of it the mock's inference stand-in).
 > 
-> Run with `uv run --env-file .env python your_script.py`. The same policy can run a different task:
-> 
-> ```bash
-> uv run --env-file .env python examples/run.py \
->   --url https://en.wikipedia.org/wiki/Main_Page \
->   --goal 'Find and open the Wikipedia article about Gödel’s incompleteness theorems.'
-> ```
-> 
-> `uv run --env-file .env python examples/flights.py --keep-open` performs the flight search, checks the actual route/date/results, and saves its trace. It does not select or book a flight.
-> 
-> ## Why it moves
-> 
-> - **One request per decision cycle.** Operation and target heads share the same observed state.
-> - **No screenshots in the default agent loop.** Jev consumes structured state. The inspector opts into screenshots; the video uses a separate continuous screencast.
-> - **One browser call per snapshot.** Read visible controls, their names, values, and text atomically. Keep references to the actual DOM nodes.
-> - **Validate the selected target.** Clicks check the document, form values, target, and nearby context. Animation alone does not force another prediction. Resolve current geometry and reject covered controls before input.
-> - **Wait for useful state.** After typing into a combobox, wait for visible suggestions, capped at 200 ms. Other interactions get at most two animation frames or 50 ms. These reads happen after execution is logged.
-> - **Keep hidden tabs rendering.** Focus emulation prevents background animation throttling without switching Chrome's visible tab.
-> - **Send visible text.** Offscreen article bodies and footers do not fill the model context.
-> - **Reuse an interrupted text request.** A generated value survives a stale-page retry only if the entire text-helper input is unchanged.
-> 
-> Every executed target is resolved from an observed node. The executor rechecks page freshness and click occlusion. Model output never becomes selectors, coordinates, shell commands, or executable JavaScript. Text-helper output must parse as a small JSON object before typing.
-> 
-> ## Small enough to read
-> 
-> | File | Job |
-> | --- | --- |
-> | [agent.py](jev_ultrafast/agent.py) | The complete loop and text-helper handoff |
-> | [snapshot.js](jev_ultrafast/snapshot.js) | Atomic DOM snapshot, indexed controls, freshness guards |
-> | [browser.py](jev_ultrafast/browser.py) | Browser connection, current geometry, execution |
-> | [model.py](jev_ultrafast/model.py) | Dynamic operation/target heads and text generation |
-> | [questions.py](jev_ultrafast/questions.py) | Model instructions |
-> | [demo.py](jev_ultrafast/demo.py) | Local inspector |
-> 
-> ## Evidence and limits
-> 
-> The current video is a **7,073 ms** Google Flights run. Timing starts after initial page observation and includes model calls, generated text, browser work, stale decisions, and loading waits. A fresh independent check verifies the one-way setting, Zürich, London, September 20, 2026, and visible flight options. The video plays at 1×, with no opening hold and a 0.5-second final hold.
-> 
-> In six alternating runs with identical models and settings, both versions passed **3/3**. Median task time went from **9.450 s → 7.092 s**, a **25% reduction**; median browser protocol calls went from **1,092 → 101**. This is three repeats of one task on one browser profile, not a general reliability benchmark.
-> 
-> The same policy opened the requested Wikipedia article in **2.798 s** and passed a local hotel search/filter task in **1.896 s**. Runs, failures, source hashes, and measurement boundaries are in [performance.md](docs/performance.md).
-> 
-> A `DONE` choice still requires independent outcome verification. The DOM reader handles common HTML and ARIA controls, not the full accessible-name specification. Shadow roots, frames, canvas, uploads, pop-up tabs, nested scrolling, and arbitrary keyboard widgets remain outside this MVP. Owned tabs share the existing Chrome profile.
-> 
-> ## Development
-> 
-> ```bash
-> uv run ruff check .
-> uv run pytest
-> node --check jev_ultrafast/static/app.js
-> node --check jev_ultrafast/snapshot.js
-> uv build
-> ```
-> 
-> Tests are offline. `uv run python scripts/check_guards.py` checks real controls in a local browser without model calls. Live examples and recording scripts make paid API calls. `scripts/record_flights.py ` captures original browser timestamps; `scripts/render_demo.py ` renders that verified run at 1× and crops out the Google account strip. Credentials and raw traces stay ignored.
-> 
-> ---
-> 
-> [Browser Use](https://github.com/browser-use/browser-use) · [Browser Harness](https://github.com/browser-use/browser-harness) · [TypeSafe speculative fan-out](https://docs.typesafe.ai/patterns/fan-out)
+>     bun run scripts/bench-read.ts     # book reader vs the SDK: exactness and latency
+>     bun run scripts/dry-encode.ts     # signs a buy and a sell offline, asserts the calldata matches the SDK
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/browser-use/jev-ultrafast) · [官方網站](https://browser-use.com)
+[GitHub](https://github.com/jarrodwatts/jev-trader)
 
 ## 相關收錄
 
@@ -328,7 +264,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "browser-use--jev-ultrafast"
+> WHERE category = "Other" AND file.name != "jarrodwatts--jev-trader"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -337,7 +273,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "browser-use--jev-ultrafast" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "jarrodwatts--jev-trader" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -346,18 +282,18 @@ i. am. speed.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "browser-use--jev-ultrafast"
+> WHERE week = "2026-W38" AND file.name != "jarrodwatts--jev-trader"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/jarrodwatts--jev-trader");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "browser-use--jev-ultrafast" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "jarrodwatts--jev-trader" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -373,7 +309,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "browser-use" AND file.name != "browser-use--jev-ultrafast"
+> WHERE owner = "jarrodwatts" AND file.name != "jarrodwatts--jev-trader"
 > SORT stars DESC
 > ```
 
@@ -381,7 +317,7 @@ i. am. speed.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/jarrodwatts--jev-trader");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -398,7 +334,7 @@ i. am. speed.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/jarrodwatts--jev-trader");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -431,7 +367,7 @@ i. am. speed.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/jarrodwatts--jev-trader");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -455,7 +391,7 @@ i. am. speed.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/jarrodwatts--jev-trader");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -492,7 +428,7 @@ i. am. speed.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/jarrodwatts--jev-trader");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -575,7 +511,7 @@ i. am. speed.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-18** — 首次收錄
+> **2026-09-19** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -591,5 +527,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-19|2026-09-19]] — 再次上榜，5.9k stars
-- [[2026-09-18|2026-09-18]] — 首次收錄，2.9k stars
+- [[2026-09-19|2026-09-19]] — 首次收錄，929 stars

@@ -1,64 +1,63 @@
 ---
-repo: browser-use/jev-ultrafast
-url: https://github.com/browser-use/jev-ultrafast
-owner: browser-use
-owner_type: Organization
-language: Python
+repo: robbietilton/Compositor
+url: https://github.com/robbietilton/Compositor
+owner: robbietilton
+owner_type: User
+language: Swift
 license: MIT
-description: "i. am. speed."
-homepage: "https://browser-use.com"
-stars: 5947
-stars_per_day: 2974
-forks: 380
-open_issues: 36
+description: "The Photoshop alternative for Mac"
+homepage: ""
+stars: 926
+stars_per_day: 463
+forks: 110
+open_issues: 21
 created: 2026-09-16
 pushed_at: 2026-09-18
-first_seen: 2026-09-18
+first_seen: 2026-09-19
 week: "2026-W38"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v1.0.4"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-18
+last_reviewed: 2026-09-19
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-22"
 contributor_count: 1
-engagement: "low"
+engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 4478
-readme_length: 7898
+repo_size_kb: 3147
+readme_length: 3444
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-18"
-star_history: "2026-09-18:2896,2026-09-19:5947"
+ring_history: "assess@2026-09-19"
+star_history: "2026-09-19:926"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - org
+  - "lang/swift"
 aliases:
-  - "jev-ultrafast"
-  - "browser-use/jev-ultrafast"
+  - "Compositor"
+  - "robbietilton/Compositor"
 ---
 
-# jev-ultrafast
+# Compositor
 
-**2.9k** stars · **2.9k** stars/天 · 建立 1 天前 · Python · MIT
+**926** stars · **463** stars/天 · 建立 2 天前 · Swift · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/browser-use--jev-ultrafast");
+const me = dv.page("Repos/robbietilton--Compositor");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`個人專案` `v1.0.4`
 
 > [!summary] 一句話摘要
-> i. am. speed.
+> The Photoshop alternative for Mac
 
 ## 專案簡介
 
-i. am. speed.
+The Photoshop alternative for Mac
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/robbietilton--Compositor");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +118,7 @@ i. am. speed.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/robbietilton--Compositor");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,184 +142,132 @@ i. am. speed.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 161 |
-| Open Issues | 19 |
+| Forks | 110 |
+| Open Issues | 21 |
 | Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-09-18 |
 | 建立日期 | 2026-09-16 |
-| 官方網站 | [Link](https://browser-use.com) |
-| Repo 大小 | 4.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/browser-use/jev-ultrafast) |
+| Repo 大小 | 3.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/robbietilton/Compositor) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 58
->     "HTML" : 18
->     "JavaScript" : 13
->     "CSS" : 10
+>     "Swift" : 96
+>     "C" : 3
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@gregpr07](https://github.com/gregpr07) | 2 |
+> | [@robbietilton](https://github.com/robbietilton) | 26 |
+
+**最新版本**：v1.0.4 — Compositor 1.0.4 (2026-09-18)
+
+> [!info]- Release Notes
+> Compositor 1.0.4
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-17 ~ 2026-09-17）
-> **活躍天數** 1 天 · **最新 commit** Reduce browser round trips and record a 7-second Flights demo
+> [!abstract] 最近 10 次 commit（2026-09-17 ~ 2026-09-18）
+> **活躍天數** 2 天 · **最新 commit** Publish update feed for Compositor 1.0.4
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#16](https://github.com/browser-use/jev-ultrafast/issues/16) | Setup friction: SOCKS proxy crash on startup; browser-harnes | 0 | 0 |
+> | [#19](https://github.com/robbietilton/Compositor/issues/19) | Add support for Linux | 3 | 1 |
+> | [#20](https://github.com/robbietilton/Compositor/issues/20) | Proposal: add Simplified Chinese localization | 0 | 0 |
+> | [#18](https://github.com/robbietilton/Compositor/issues/18) | [Feature Request] Add Collage feature | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Jev Ultrafast ⚡
+> # Compositor
 > 
-> **A browser agent with a dynamic, indexed action space.**
+> Adobe Photoshop costs too much and tools like GIMP don’t feel familiar enough for me to stay in flow. That’s why I built Compositor.
 > 
-> Give it one goal. [TypeSafe's Jev](https://docs.typesafe.ai/introduction) picks an operation and an element. A small LLM writes text only when the operation is `TYPE_TEXT`.
+> The goal was to create a full-featured image editor that is completely free and open source. I use Photoshop for compositing and post-processing, so Compositor is built around that workflow - with the tools needed to create a pixel-perfect final image.
 > 
-> **Zürich → London on Google Flights in 7.1 seconds.** One natural-language goal, actual text generation, and loading waits included.
+> Because it’s open source, you can download the Xcode project and add, remove, or modify any feature to fit your workflow.
 > 
-> [Watch the MP4](docs/demo.mp4) · [Measurements](docs/performance.md) · [Read the loop](jev_ultrafast/agent.py)
+> ## Features
 > 
-> ## The action space
+> ### Layers
+> - Layers and folders, with blend modes and opacity
+> - Layer masks: paint, fill, invert, blur and feather them; link or unlink them to transform a mask on its own
+> - Clipping masks and folder masks
+> - Adjustment layers: Hue/Saturation, Levels, Curves, Exposure, Gradient Map and Grain
+> - Merge Down, Merge Layers and Merge Group (⌘E)
+> - Duplicate, rename inline, reorder and nest by drag and drop; Option-drag to duplicate
+> - Drag layers between open projects
 > 
-> Every observation produces a new element table:
+> ### Transform
+> - Non-destructive move, scale, rotate and flip — images keep their full resolution however small you make them
+> - Free distort (⌘-drag a handle), with Shift to lock to an axis
+> - Transform several layers, or a whole folder, together
+> - Snapping to canvas and layer edges and centers, with guides
+> - Exact values for position, size, scale and angle, stepped with the arrow keys
+> - Flip Layer and Flip Canvas, horizontal and vertical
 > 
-> ```text
-> [1] button    Change ticket type · Round trip
-> [2] combobox  Where from?        · San Francisco
-> [3] combobox  Where to?          · empty
-> [4] textbox   Departure          · empty
-> ...
-> ```
+> ### Selections
+> - Rectangle and Ellipse Marquee, Freehand and Polygonal Lasso, and Magic Wand
+> - Add to and subtract from selections, move the outline, or move and duplicate the pixels inside
+> - Load a layer's pixels or a mask as a selection
+> - Content-Aware Fill, which can also extend an image past its edges
 > 
-> The operations are `CLICK`, `TYPE_TEXT`, `SELECT`, `SCROLL_UP`, `SCROLL_DOWN`, `WAIT`, `DONE`, and `BLOCKED`. Only supported operations and targets are offered.
+> ### Painting and retouching
+> - Brush with size, hardness and opacity, and Shift for straight lines
+> - Spot Healing Brush (content-aware)
+> - Clone Stamp, aligned or not, sampling one layer or all of them
+> - Blur tool, on pixels or masks
+> - Gradient tool and Shape tool (rectangles, rounded rectangles and ellipses)
+> - Eyedropper and a full color picker
 > 
-> ```text
->                       one TypeSafe request
->                      ┌───────────────────────────┐
-> page → element table → operation                 │
->                      │ click_target              │
->                      │ type_text_target          │
->                      │ select_target, if present │
->                      └─────────────┬─────────────┘
->                          use the matching target
->                                    │
->                     CLICK [7] ─────┤──→ browser
->                 TYPE_TEXT [3] ─────┘
->                           ↓
->                    small LLM → text → browser
-> ```
+> ### Adjustments and filters
+> - Levels (with Auto), Curves, Hue/Saturation, Exposure, Gradient Map, Grain and Invert
+> - Gaussian Blur and Motion Blur that spread past a layer's edges
+> - Add Noise, Lens Correction and Remove Background
+> - Live previews, limited to the selection when there is one
 > 
-> Target questions are speculative. If the operation is `CLICK`, only `click_target` can execute. Two decisions, **one network round trip**. Each target head contains only compatible elements. Native dropdown choices carry an observed element/option index.
+> ### Canvas and files
+> - Multiple projects in tabs
+> - Crop with snapping, and Option for symmetric cropping
+> - Canvas Size and Image Size
+> - Sharp high-quality downsampling when zoomed out, and a pixel grid when zoomed in
+> - Import JPEG, PNG, HEIC and TIFF — including dropped screenshots and images from other apps
+> - Export JPEG with a live preview (⇧⌥⌘S); Copy Merged
+> - Photoshop-style keyboard shortcuts throughout
 > 
-> There are no site-specific action scripts or prepared field strings in the policy. The Flights example supplies a goal and independently verifies the outcome. The screenshot renderer adds labels afterward; it does not drive the browser.
+> ## Requirements
 > 
-> ## Try it
+> - macOS 26
+> - Xcode 26 (to build from source)
 > 
-> ```bash
-> git clone https://github.com/browser-use/jev-ultrafast.git
-> cd jev-ultrafast
-> uv sync
-> cp .env.example .env
-> # Add TYPESAFE_API_KEY and TEXT_MODEL_API_KEY.
-> uv run jev
-> ```
+> ## Building
 > 
-> Open **http://127.0.0.1:8766** and click **Start demo → Run automatically**. The inspector shows numbered elements, operation probabilities, target probabilities, and executed actions. **Choose next** pauses before execution.
+> Open `Compositor.xcodeproj` and run the **Compositor** scheme.
 > 
-> Chrome connects through [Browser Harness](https://github.com/browser-use/browser-harness), installed by `uv sync`. Run `uv run browser-harness --doctor` if it needs connecting. Allow remote debugging in Chrome when prompted.
+> ## Releasing
 > 
-> `TEXT_MODEL_API_KEY` is an OpenRouter key in the example configuration. The current demo uses `inception/mercury-2.5` with reasoning disabled. Gemini, GLM, and DeepSeek can also use the OpenAI-compatible text helper; configure the appropriate model, endpoint, and reasoning setting.
+> `scripts/release.sh` builds a Release version, signs it with Developer ID, notarizes and staples it, and packages it into `dist/Compositor-.dmg`.
 > 
-> ## Use the library
+> It needs, all kept outside this repository:
 > 
-> ```python
-> from jev_ultrafast import Agent
+> - a **Developer ID Application** certificate in the login keychain
+> - notarization credentials saved with `xcrun notarytool store-credentials "compositor-notary" …`
+> - [`create-dmg`](https://github.com/create-dmg/create-dmg) (`brew install create-dmg`)
 > 
-> with Agent(
->     "https://www.google.com/travel/flights?hl=en",
->     "Find one-way flights from Zurich to London on September 20, 2026, "
->     "for one adult in economy. Stop when matching flight options are visible.",
-> ) as agent:
->     for state in agent.run():
->         print(state["elapsed_ms"], state["status"])
-> ```
+> ## License
 > 
-> Run with `uv run --env-file .env python your_script.py`. The same policy can run a different task:
-> 
-> ```bash
-> uv run --env-file .env python examples/run.py \
->   --url https://en.wikipedia.org/wiki/Main_Page \
->   --goal 'Find and open the Wikipedia article about Gödel’s incompleteness theorems.'
-> ```
-> 
-> `uv run --env-file .env python examples/flights.py --keep-open` performs the flight search, checks the actual route/date/results, and saves its trace. It does not select or book a flight.
-> 
-> ## Why it moves
-> 
-> - **One request per decision cycle.** Operation and target heads share the same observed state.
-> - **No screenshots in the default agent loop.** Jev consumes structured state. The inspector opts into screenshots; the video uses a separate continuous screencast.
-> - **One browser call per snapshot.** Read visible controls, their names, values, and text atomically. Keep references to the actual DOM nodes.
-> - **Validate the selected target.** Clicks check the document, form values, target, and nearby context. Animation alone does not force another prediction. Resolve current geometry and reject covered controls before input.
-> - **Wait for useful state.** After typing into a combobox, wait for visible suggestions, capped at 200 ms. Other interactions get at most two animation frames or 50 ms. These reads happen after execution is logged.
-> - **Keep hidden tabs rendering.** Focus emulation prevents background animation throttling without switching Chrome's visible tab.
-> - **Send visible text.** Offscreen article bodies and footers do not fill the model context.
-> - **Reuse an interrupted text request.** A generated value survives a stale-page retry only if the entire text-helper input is unchanged.
-> 
-> Every executed target is resolved from an observed node. The executor rechecks page freshness and click occlusion. Model output never becomes selectors, coordinates, shell commands, or executable JavaScript. Text-helper output must parse as a small JSON object before typing.
-> 
-> ## Small enough to read
-> 
-> | File | Job |
-> | --- | --- |
-> | [agent.py](jev_ultrafast/agent.py) | The complete loop and text-helper handoff |
-> | [snapshot.js](jev_ultrafast/snapshot.js) | Atomic DOM snapshot, indexed controls, freshness guards |
-> | [browser.py](jev_ultrafast/browser.py) | Browser connection, current geometry, execution |
-> | [model.py](jev_ultrafast/model.py) | Dynamic operation/target heads and text generation |
-> | [questions.py](jev_ultrafast/questions.py) | Model instructions |
-> | [demo.py](jev_ultrafast/demo.py) | Local inspector |
-> 
-> ## Evidence and limits
-> 
-> The current video is a **7,073 ms** Google Flights run. Timing starts after initial page observation and includes model calls, generated text, browser work, stale decisions, and loading waits. A fresh independent check verifies the one-way setting, Zürich, London, September 20, 2026, and visible flight options. The video plays at 1×, with no opening hold and a 0.5-second final hold.
-> 
-> In six alternating runs with identical models and settings, both versions passed **3/3**. Median task time went from **9.450 s → 7.092 s**, a **25% reduction**; median browser protocol calls went from **1,092 → 101**. This is three repeats of one task on one browser profile, not a general reliability benchmark.
-> 
-> The same policy opened the requested Wikipedia article in **2.798 s** and passed a local hotel search/filter task in **1.896 s**. Runs, failures, source hashes, and measurement boundaries are in [performance.md](docs/performance.md).
-> 
-> A `DONE` choice still requires independent outcome verification. The DOM reader handles common HTML and ARIA controls, not the full accessible-name specification. Shadow roots, frames, canvas, uploads, pop-up tabs, nested scrolling, and arbitrary keyboard widgets remain outside this MVP. Owned tabs share the existing Chrome profile.
-> 
-> ## Development
-> 
-> ```bash
-> uv run ruff check .
-> uv run pytest
-> node --check jev_ultrafast/static/app.js
-> node --check jev_ultrafast/snapshot.js
-> uv build
-> ```
-> 
-> Tests are offline. `uv run python scripts/check_guards.py` checks real controls in a local browser without model calls. Live examples and recording scripts make paid API calls. `scripts/record_flights.py ` captures original browser timestamps; `scripts/render_demo.py ` renders that verified run at 1× and crops out the Google account strip. Credentials and raw traces stay ignored.
-> 
-> ---
-> 
-> [Browser Use](https://github.com/browser-use/browser-use) · [Browser Harness](https://github.com/browser-use/browser-harness) · [TypeSafe speculative fan-out](https://docs.typesafe.ai/patterns/fan-out)
+> MIT — see [LICENSE](LICENSE).
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/browser-use/jev-ultrafast) · [官方網站](https://browser-use.com)
+[GitHub](https://github.com/robbietilton/Compositor)
 
 ## 相關收錄
 
@@ -328,7 +275,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "browser-use--jev-ultrafast"
+> WHERE category = "Other" AND file.name != "robbietilton--Compositor"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -337,7 +284,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "browser-use--jev-ultrafast" AND status != "archived"
+> WHERE language = "Swift" AND file.name != "robbietilton--Compositor" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -346,18 +293,18 @@ i. am. speed.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "browser-use--jev-ultrafast"
+> WHERE week = "2026-W38" AND file.name != "robbietilton--Compositor"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/robbietilton--Compositor");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "browser-use--jev-ultrafast" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "robbietilton--Compositor" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -373,7 +320,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "browser-use" AND file.name != "browser-use--jev-ultrafast"
+> WHERE owner = "robbietilton" AND file.name != "robbietilton--Compositor"
 > SORT stars DESC
 > ```
 
@@ -381,7 +328,7 @@ i. am. speed.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/robbietilton--Compositor");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -398,7 +345,7 @@ i. am. speed.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/robbietilton--Compositor");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -431,7 +378,7 @@ i. am. speed.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/robbietilton--Compositor");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -455,7 +402,7 @@ i. am. speed.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/robbietilton--Compositor");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -492,7 +439,7 @@ i. am. speed.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/robbietilton--Compositor");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -575,7 +522,7 @@ i. am. speed.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-18** — 首次收錄
+> **2026-09-19** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -591,5 +538,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-19|2026-09-19]] — 再次上榜，5.9k stars
-- [[2026-09-18|2026-09-18]] — 首次收錄，2.9k stars
+- [[2026-09-19|2026-09-19]] — 首次收錄，926 stars
