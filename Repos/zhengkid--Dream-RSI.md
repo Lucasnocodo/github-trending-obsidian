@@ -1,20 +1,20 @@
 ---
-repo: jarrodwatts/jev-trader
-url: https://github.com/jarrodwatts/jev-trader
-owner: jarrodwatts
+repo: zhengkid/Dream-RSI
+url: https://github.com/zhengkid/Dream-RSI
+owner: zhengkid
 owner_type: User
-language: TypeScript
-license: MIT
-description: "One AI trade decision every Monad block. Jev on Kuru MON-USDC."
+language: N/A
+license: N/A
+description: "The offical repo for \"Dream-RSI: Recursive Self-Improvement through Evolving Worlds\""
 homepage: ""
-stars: 1346
-stars_per_day: 449
-forks: 260
-open_issues: 3
-created: 2026-09-16
-pushed_at: 2026-09-17
-first_seen: 2026-09-19
-week: "2026-W38"
+stars: 893
+stars_per_day: 149
+forks: 86
+open_issues: 4
+created: 2026-09-13
+pushed_at: 2026-09-16
+first_seen: 2026-09-20
+week: "2026-W39"
 month: "2026-09"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,39 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-19
+last_reviewed: 2026-09-20
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-23"
+appearances: 1
+next_review: "2026-09-27"
 contributor_count: 1
-engagement: "medium"
+engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 171
-readme_length: 5557
+repo_size_kb: 1647
+readme_length: 4548
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-19"
-star_history: "2026-09-19:929,2026-09-20:1346"
+ring_history: "assess@2026-09-20"
+star_history: "2026-09-20:893"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/other"
 aliases:
-  - "jev-trader"
-  - "jarrodwatts/jev-trader"
+  - "Dream-RSI"
+  - "zhengkid/Dream-RSI"
 ---
 
-# jev-trader
+# Dream-RSI
 
-**929** stars · **465** stars/天 · 建立 2 天前 · TypeScript · MIT
+**893** stars · **149** stars/天 · 建立 6 天前 · N/A · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/jarrodwatts--jev-trader");
+const me = dv.page("Repos/zhengkid--Dream-RSI");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -73,17 +73,17 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 `個人專案`
 
 > [!summary] 一句話摘要
-> One AI trade decision every Monad block. Jev on Kuru MON-USDC.
+> The offical repo for "Dream-RSI: Recursive Self-Improvement through Evolving Worlds"
 
 ## 專案簡介
 
-One AI trade decision every Monad block. Jev on Kuru MON-USDC.
+The offical repo for "Dream-RSI: Recursive Self-Improvement through Evolving Worlds"
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/zhengkid--Dream-RSI");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/zhengkid--Dream-RSI");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,121 +142,177 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 173 |
-| Open Issues | 3 |
+| Forks | 86 |
+| Open Issues | 4 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-17 |
-| 建立日期 | 2026-09-16 |
-| Repo 大小 | 171 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/jarrodwatts/jev-trader) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@ai-sdk/typesafe-ai` `@kuru-labs/kuru-sdk` `ai` `ethers` `@types/bun`
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "TypeScript" : 88
->     "CSS" : 12
-> ```
+| 最後推送 | 2026-09-16 |
+| 建立日期 | 2026-09-13 |
+| Repo 大小 | 1.6 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/zhengkid/Dream-RSI) |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@jarrodwatts](https://github.com/jarrodwatts) | 2 |
+> | [@zhengkid](https://github.com/zhengkid) | 4 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-16 ~ 2026-09-17）
-> **活躍天數** 2 天 · **最新 commit** Post-only limit orders every block: earn the spread instead of paying it
+> [!abstract] 最近 10 次 commit（2026-09-13 ~ 2026-09-16）
+> **活躍天數** 3 天 · **最新 commit** Update citation reference in README.md
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#1](https://github.com/jarrodwatts/jev-trader/issues/1) | It's losing money | 4 | 3 |
+> | [#4](https://github.com/zhengkid/Dream-RSI/issues/4) | # STRUCTURE-NOTICE Prior Art Disclosure & 64-Bit Boundary Al | 0 | 0 |
+> | [#3](https://github.com/zhengkid/Dream-RSI/issues/3) | Question: is the frozen/mutable boundary (base model + evalu | 0 | 0 |
+> | [#1](https://github.com/zhengkid/Dream-RSI/issues/1) | Release Dream-RSI artifacts on Hugging Face | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # jev-trader
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+>   
+>     
+>     
+>   
+>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+>   
+>     
+>     
+>   
+>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+>   
+>     
+>     
+>   
 > 
-> One decision every Monad block. A TypeSafe Jev model watches the Kuru MON-USDC order book and answers buy or sell every ~300 ms. Every block posts a real post-only limit order on that side, one tick inside the touch, replacing the last one. Fills happen when a taker hits it, so the bot earns the spread instead of paying it. A small server streams every block to the dashboard.
+> # Dream-RSI: Recursive Self-Improvementthrough Evolving Worlds
 > 
-> ## Run
+>   
+>   
 > 
->     cp .env.example .env
->     bun install
->     bun run start
+> [](papers/Dream-RSI.pdf)
+> [](https://www.dream-rsi.com)
+> [](https://www.dream-rsi.com)
+> [](papers/Dream-RSI.pdf)
 > 
-> With no `PRIVATE_KEY` it dry-runs: real book, real decisions, simulated fills. Set `MODEL=jev` and `TYPESAFE_AI_API_KEY` to use Jev; the default `mock` is a momentum heuristic stand-in.
+> Tong Zheng1,2,
+> Xidong Wu1✉,
+> Zheng Zhang1✉,
+> Zhankui He3,
+> Chaoyi Zhang1,
+> Benjamin Coleman3,
+> Ruoqiao Wei1,
+> Di Bai3,
+> Haolin Liu4,
+> Rui Liu2,
+> Xue Wang1,
+> Yue Zhuan1,
+> Wang-Cheng Kang3,
+> Renkai Xiang1,
+> Heng Huang2,
+> Xinwu Cheng1,
+> Yunsong Guo1
 > 
-> ## Endpoints
+> 1Google &nbsp;·&nbsp;
+> 2University of Maryland, College Park &nbsp;·&nbsp;
+> 3Google DeepMind &nbsp;·&nbsp;
+> 4University of Virginia
 > 
-> Deployed (dry run, mock model): https://jev-trader-production.up.railway.app
+> ✉ Corresponding authors
 > 
-> - `GET /` snapshot: model, wallet, dryRun, latest block event
-> - `GET /history` last 1000 block events
-> - `GET /events` SSE: `snapshot` on connect, then one `block` event per block, plus a `fill` event whenever a live order's receipt lands
+> ---
 > 
-> Every event (see `src/trader.ts` for types):
+> > [!NOTE]
+> > Code is being prepared for release. See [Release plan](#release-plan).
 > 
->     {
->       "block": 105488269, "ts": 1789593630676,
->       "mid": 0.022636, "bestBid": 0.022628, "bestAsk": 0.022644, "spreadBps": 7.07,
->       "decision": { "action": "buy", "probabilities": { "buy": 0.77, "sell": 0.23, "hold": 0 }, "upIn10": 0.77, "latencyMs": 81, "late": false },
->       "quote": { "side": "buy", "price": 0.022629, "size": 200, "txHash": "0x…", "gasMon": 0.0357, "cancel": [100295801], "status": "sent", "orderId": null, "capped": false },
->       "fill": null,
->       "resting": { "bidMon": 200, "askMon": 200 },
->       "position": { "side": "short", "size": 200, "entryPrice": 0.022633, "unrealizedUsd": -0.0006, "unrealizedMon": -0.027 },
->       "totals": { "blocks": 3, "decisions": 3, "quotes": 3, "fills": 1, "reverted": 0, "lateBlocks": 0, "jevUsd": 0.000004, "gasMon": 0.107, "gasUsd": 0.0024, "realizedUsd": 0, "pnlUsd": -0.003, "pnlMon": -0.13, "pnlPct": -0.003 }
->     }
+>   
+>     
+>     
+>   
 > 
-> Every block the model is asked about the move over `HORIZON_BLOCKS` (default 100, ~30 s) and answers `buy` or `sell`. `quote` is the order that block put on the book: a post-only limit order of `TRADE_SIZE_MON` on that side, `QUOTE_INSIDE_TICKS` inside the touch (clamped to the touch when the spread is too tight), in one `batchUpdate` that also cancels everything we had resting (`cancel`). `hold` appears only with `decision.late: true`, when the model missed the block and nothing was posted. When the position cap (or, live, margin funds) blocks a side, the quote goes on the other side with `capped: true` and `probabilities` still show the model's call. `resting` is our size known to be on the book after this block. `upIn10` equals the buy probability.
+> ## News
 > 
-> Live sends are fired and forgotten, so the `block` event carries the **intent**: `status: "sent"`, `gasMon` is `gasLimit x (last known base fee + priority)`. Monad charges the gas limit, so that is the real cost whether the order lands or not. The receipt arrives a block or two later as its own SSE event:
+> - **Sep 2026** — Preprint and project page released:
+>   [paper (PDF)](papers/Dream-RSI.pdf) ·
+>   [dream-rsi.com](https://www.dream-rsi.com)
 > 
->     event: quote
->     data: { "block": 105488269, "quote": { …, "status": "placed", "orderId": 100295812, "gasMon": 0.0357 } }
+> ## Overview
 > 
-> `status` becomes `placed` (with the order id) or `reverted` (the book moved through the price before the tx landed, or a cancelled order had already filled). No receipt after 10 blocks gives `lost`. Fills are not in our own transactions: someone else's taker order hits our resting one, and the Trade log for it arrives via the same `eth_getLogs` poll that feeds the model. Each block with fills gets its own SSE event, and `position`, `realizedUsd` and `fills` update then:
+> **Progress in recursive self-improvement hinges on effective exploration.** As self-improvement
+> targets get harder, discovery stretches over thousands of proposal–evaluation cycles, and poor
+> exploration wastes substantial computation on ineffective search directions. Managing and improving
+> the exploration strategy is the bottleneck, and current systems face a dilemma: fixed strategies
+> cannot adapt as search spaces scale, while optimizing the policy online means navigating a vast
+> meta-search space under delayed and expensive feedback — assessing one exploration policy requires
+> observing how it shapes an entire discovery process.
 > 
->     event: fill
->     data: { "block": 105488271, "fill": { "side": "buy", "size": 200, "price": 0.022629, "txHash": "0x…", "orderId": 100295812, "simulated": false } }
+> **Our key insight is that accumulated discovery history can serve as a replay simulator over the
+> realized search space.** A completed discovery process already records a structured tree of past
+> exploration decisions and their realized code-execution outcomes. An alternative policy can traverse
+> that tree differently: different subsets of recorded branches, in different orders, with different
+> parallel groupings and stopping decisions. Because all outcomes are already saved, evaluating it
+> requires only reading past records — no rerunning of the discovery agent or the evaluator. By analogy
+> with model-based RL and world models, the history becomes a world the agent can *dream* in.
 > 
-> `txHash` is the taker's transaction. In a dry run the quote is `status: "sim"`: the order rests for one block and a real print crossing its price fills it (`simulated: true`).
+> **Dream-RSI closes a self-improvement loop at the exploration layer.** A lightweight orchestration
+> layer makes exploration explicit and programmable — branching, parallel exploration, stopping —
+> while leaving the underlying coding agent unchanged. ❶ the current policy drives online discovery
+> and logs its traces; ❷ the recorded trees are converted into a reusable simulator pool; ❸ candidate
+> policies are evaluated and refined by dreaming over that pool, which returns immediate, low-cost
+> off-policy feedback. The improved policy is redeployed online, continuously expanding the pool.
 > 
-> ## Layout
+>   
+>     
+>     
+>   
 > 
->     src/config.ts   env
->     src/chain.ts    block feed (WebSocket newHeads + polling backstop, newest block only), raw RPC
->     src/book.ts     one-eth_call order book reader (decodes getL2Book, merges the AMM vault)
->     src/market.ts   Kuru: read book, hand-encoded batchUpdate (cancel + post-only place), margin deposits, local nonce, async confirmation
->     src/model.ts    Model interface, JevModel (AI SDK experimental_evaluate), MockModel
->     src/trader.ts   the loop: one in flight, hold when late, position and P&L accounting
->     src/server.ts   Bun.serve: snapshot, history, SSE
+> **[Method, results and interactive walkthrough → dream-rsi.com](https://www.dream-rsi.com)**
 > 
-> ## The 300 ms budget
+> ## Highlights
 > 
-> A decision and an order have to fit in one block, so the hot loop makes exactly two RPC round trips:
-> one `eth_call` for the book (~18 ms on the public RPC, `READ_RPC_URL`) and one `eth_sendRawTransaction`
-> (`RPC_URL`), which returns as soon as the tx is accepted. Nothing else is on the path — no
-> `eth_estimateGas` (Monad charges gas on the limit, so the limit is hardcoded or derived once at
-> startup), no `eth_sendRawTransactionSync` (it blocks until the tx is Proposed), no gas price lookup
-> (static type-2 fees: `MAX_FEE_GWEI` cap, 2 gwei priority; the effective price is base + priority).
-> Receipts, the fee estimate and the vault check run off the hot path on later blocks. Measured in a
-> dry run with the mock model: read p50 18 ms, whole loop p50 100 ms (80 ms of it the mock's inference stand-in).
+> - **History as replay simulator.** We conceptualize completed discovery histories as replay
+>   simulators, which makes delayed exploration feedback reusable for efficient meta-exploration
+>   policy evaluation.
+> - **Meta-layer RSI loop.** Dream-RSI continuously collects discovery histories through online
+>   exploration, constructs replay simulators from them to refine meta-exploration strategies via
+>   dreaming, and redeploys the upgraded policy online.
+> - **Empirical validation.** Across algorithm engineering, mathematical optimization and GPU kernel
+>   engineering, Dream-RSI improves both discovery effectiveness and efficiency in several settings.
 > 
->     bun run scripts/bench-read.ts     # book reader vs the SDK: exactness and latency
->     bun run scripts/dry-encode.ts     # signs a buy and a sell offline, asserts the calldata matches the SDK
+> ## Release plan
+> 
+> | Item | Status |
+> |---|---|
+> | Paper (PDF) | ✅ Available |
+> | Project page & interactive demo | ✅ [dream-rsi.com](https://www.dream-rsi.com) |
+> | arXiv posting | 🔜 In progress |
+> | Discovered programs | ⏳ Being prepared |
+> | Full codebase | ⏳ Being prepared |
+> | Reproduction scripts | ⏳ Being prepared |
+> 
+> ## Citation
+> 
+> ```bibtex
+> @article{zheng2026dreamrsi,
+>   title   = {Dream-RSI: Recursive Self-Improvement through Evolving Worlds},
+>   author  = {Zheng, Tong and Wu, Xidong and Zhang, Zheng and He, Zhankui and
+>              Zhang, Chaoyi and Coleman, Benjamin and Wei, Ruoqiao and Bai, Di and
+>              Liu, Haolin and Liu, Rui and Wang, Xue and Zhuan, Yue and
+>              Kang, Wang-Cheng and Xiang, Renkai and Huang, Heng and
+>              Cheng, Xinwu and Guo, Yunsong},
+>   journal = {arXiv preprint arXiv:2609.14858},
+>   year    = {2026}
+> }
+> ```
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/jarrodwatts/jev-trader)
+[GitHub](https://github.com/zhengkid/Dream-RSI)
 
 ## 相關收錄
 
@@ -264,7 +320,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "jarrodwatts--jev-trader"
+> WHERE category = "Other" AND file.name != "zhengkid--Dream-RSI"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -273,7 +329,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "jarrodwatts--jev-trader" AND status != "archived"
+> WHERE language = "N/A" AND file.name != "zhengkid--Dream-RSI" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -282,18 +338,18 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "jarrodwatts--jev-trader"
+> WHERE week = "2026-W39" AND file.name != "zhengkid--Dream-RSI"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/zhengkid--Dream-RSI");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "jarrodwatts--jev-trader" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "zhengkid--Dream-RSI" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -309,7 +365,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "jarrodwatts" AND file.name != "jarrodwatts--jev-trader"
+> WHERE owner = "zhengkid" AND file.name != "zhengkid--Dream-RSI"
 > SORT stars DESC
 > ```
 
@@ -317,7 +373,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/zhengkid--Dream-RSI");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -334,7 +390,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/zhengkid--Dream-RSI");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -367,7 +423,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/zhengkid--Dream-RSI");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -391,7 +447,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/zhengkid--Dream-RSI");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -428,7 +484,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/zhengkid--Dream-RSI");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -511,7 +567,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-19** — 首次收錄
+> **2026-09-20** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -527,5 +583,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-20|2026-09-20]] — 再次上榜，1.3k stars
-- [[2026-09-19|2026-09-19]] — 首次收錄，929 stars
+- [[2026-09-20|2026-09-20]] — 首次收錄，893 stars

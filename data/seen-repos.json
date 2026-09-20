@@ -4250,17 +4250,17 @@
   },
   "browser-use/jev-ultrafast": {
     "first_seen": "2026-09-18",
-    "last_seen": "2026-09-19",
-    "times_seen": 2,
+    "last_seen": "2026-09-20",
+    "times_seen": 3,
     "stars_first": 2896,
-    "stars_last": 5947
+    "stars_last": 9273
   },
   "tamaratran/fast-jev-compaction": {
     "first_seen": "2026-09-18",
-    "last_seen": "2026-09-19",
-    "times_seen": 2,
+    "last_seen": "2026-09-20",
+    "times_seen": 3,
     "stars_first": 1152,
-    "stars_last": 3493
+    "stars_last": 4426
   },
   "TheoLeeCJ/openjev": {
     "first_seen": "2026-09-18",
@@ -4278,37 +4278,58 @@
   },
   "vinnylarouge/jevlike": {
     "first_seen": "2026-09-18",
-    "last_seen": "2026-09-19",
-    "times_seen": 2,
+    "last_seen": "2026-09-20",
+    "times_seen": 3,
     "stars_first": 728,
-    "stars_last": 905
+    "stars_last": 1007
   },
   "TheoLeeCJ/SemIf": {
     "first_seen": "2026-09-19",
-    "last_seen": "2026-09-19",
-    "times_seen": 1,
+    "last_seen": "2026-09-20",
+    "times_seen": 2,
     "stars_first": 1647,
-    "stars_last": 1647
+    "stars_last": 2021
   },
   "mcncarl/jianying-headless": {
     "first_seen": "2026-09-19",
-    "last_seen": "2026-09-19",
-    "times_seen": 1,
+    "last_seen": "2026-09-20",
+    "times_seen": 2,
     "stars_first": 1164,
-    "stars_last": 1164
+    "stars_last": 1631
   },
   "jarrodwatts/jev-trader": {
     "first_seen": "2026-09-19",
-    "last_seen": "2026-09-19",
-    "times_seen": 1,
+    "last_seen": "2026-09-20",
+    "times_seen": 2,
     "stars_first": 929,
-    "stars_last": 929
+    "stars_last": 1346
   },
   "robbietilton/Compositor": {
     "first_seen": "2026-09-19",
-    "last_seen": "2026-09-19",
-    "times_seen": 1,
+    "last_seen": "2026-09-20",
+    "times_seen": 2,
     "stars_first": 926,
-    "stars_last": 926
+    "stars_last": 2821
+  },
+  "NandhaKishorM/laya": {
+    "first_seen": "2026-09-20",
+    "last_seen": "2026-09-20",
+    "times_seen": 1,
+    "stars_first": 1650,
+    "stars_last": 1650
+  },
+  "TianyuCodings/NanoJev": {
+    "first_seen": "2026-09-20",
+    "last_seen": "2026-09-20",
+    "times_seen": 1,
+    "stars_first": 1072,
+    "stars_last": 1072
+  },
+  "zhengkid/Dream-RSI": {
+    "first_seen": "2026-09-20",
+    "last_seen": "2026-09-20",
+    "times_seen": 1,
+    "stars_first": 893,
+    "stars_last": 893
   }
 }

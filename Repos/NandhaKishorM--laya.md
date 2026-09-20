@@ -1,63 +1,63 @@
 ---
-repo: jarrodwatts/jev-trader
-url: https://github.com/jarrodwatts/jev-trader
-owner: jarrodwatts
+repo: NandhaKishorM/laya
+url: https://github.com/NandhaKishorM/laya
+owner: NandhaKishorM
 owner_type: User
-language: TypeScript
-license: MIT
-description: "One AI trade decision every Monad block. Jev on Kuru MON-USDC."
+language: Python
+license: Apache-2.0
+description: ""
 homepage: ""
-stars: 1346
-stars_per_day: 449
-forks: 260
-open_issues: 3
-created: 2026-09-16
-pushed_at: 2026-09-17
-first_seen: 2026-09-19
-week: "2026-W38"
+stars: 1650
+stars_per_day: 825
+forks: 152
+open_issues: 18
+created: 2026-09-18
+pushed_at: 2026-09-20
+first_seen: 2026-09-20
+week: "2026-W39"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.3.4"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-19
+last_reviewed: 2026-09-20
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-23"
-contributor_count: 1
-engagement: "medium"
-issue_close_rate: 0
-repo_size_kb: 171
-readme_length: 5557
+contributor_count: 2
+engagement: "low"
+issue_close_rate: 5
+repo_size_kb: 2704
+readme_length: 9946
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 0
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-19"
-star_history: "2026-09-19:929,2026-09-20:1346"
+ring_history: "assess@2026-09-20"
+star_history: "2026-09-20:1650"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/python"
 aliases:
-  - "jev-trader"
-  - "jarrodwatts/jev-trader"
+  - "laya"
+  - "NandhaKishorM/laya"
 ---
 
-# jev-trader
+# laya
 
-**929** stars · **465** stars/天 · 建立 2 天前 · TypeScript · MIT
+**1.6k** stars · **825** stars/天 · 建立 2 天前 · Python · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/jarrodwatts--jev-trader");
+const me = dv.page("Repos/NandhaKishorM--laya");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v0.3.4`
 
 > [!summary] 一句話摘要
-> One AI trade decision every Monad block. Jev on Kuru MON-USDC.
+> No description
 
 ## 專案簡介
 
-One AI trade decision every Monad block. Jev on Kuru MON-USDC.
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/NandhaKishorM--laya");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/NandhaKishorM--laya");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,121 +142,219 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 173 |
-| Open Issues | 3 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-17 |
-| 建立日期 | 2026-09-16 |
-| Repo 大小 | 171 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/jarrodwatts/jev-trader) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@ai-sdk/typesafe-ai` `@kuru-labs/kuru-sdk` `ai` `ethers` `@types/bun`
+| Forks | 152 |
+| Open Issues | 18 |
+| Issue 解決率 | 5% (1 closed) |
+| 最後推送 | 2026-09-20 |
+| 建立日期 | 2026-09-18 |
+| Repo 大小 | 2.6 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/NandhaKishorM/laya) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 88
->     "CSS" : 12
+>     "Python" : 71
+>     "Jupyter Notebook" : 29
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@jarrodwatts](https://github.com/jarrodwatts) | 2 |
+> | [@NandhaKishorM](https://github.com/NandhaKishorM) | 49 |
+> | [@sirgio03](https://github.com/sirgio03) | 1 |
+
+**最新版本**：v0.3.4 (2026-09-20)
+
+> [!info]- Release Notes
+> **Full Changelog**: https://github.com/NandhaKishorM/laya/compare/v0.3.3...v0.3.4
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-16 ~ 2026-09-17）
-> **活躍天數** 2 天 · **最新 commit** Post-only limit orders every block: earn the spread instead of paying it
+> [!abstract] 最近 10 次 commit（2026-09-19 ~ 2026-09-20）
+> **活躍天數** 2 天 · **最新 commit** feat: promote Route Mode as primary Quickstart, bump to v0.3.4
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#1](https://github.com/jarrodwatts/jev-trader/issues/1) | It's losing money | 4 | 3 |
+> | [#15](https://github.com/NandhaKishorM/laya/issues/15) | Thank you for releasing this | 10 | 0 |
+> | [#16](https://github.com/NandhaKishorM/laya/issues/16) | Laya MCP, Skill, and Benchmarks | 1 | 2 |
+> | [#7](https://github.com/NandhaKishorM/laya/issues/7) | Feature Request: TypeScript / Node.js / Bun.js Support | 1 | 5 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # jev-trader
+> **Multilingual, non-autoregressive System 1 decision engine.** Typed decisions over 100+ languages in a single forward pass — 33 ms — trained with reinforcement learning against strictly proper scoring rules (RLCD), with a router that picks the right checkpoint per request.
 > 
-> One decision every Monad block. A TypeSafe Jev model watches the Kuru MON-USDC order book and answers buy or sell every ~300 ms. Every block posts a real post-only limit order on that side, one tick inside the touch, replacing the last one. Fills happen when a taker hits it, so the bot earns the spread instead of paying it. A small server streams every block to the dashboard.
+> [](https://colab.research.google.com/drive/15d4Yv__KHeHjshVb-6PRTfqVllxih2S3?usp=sharing)
+> [](https://pypi.org/project/laya/)
+> [](https://huggingface.co/convaiinnovations/laya)
+> [](https://huggingface.co/convaiinnovations/laya-multilingual)
+> [](https://huggingface.co/spaces/convaiinnovations/laya-demo)
+> [](https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me)
+> [](https://www.buymeacoffee.com/nandakishorm)
+> [](https://opensource.org/licenses/Apache-2.0)
 > 
-> ## Run
+>   
 > 
->     cp .env.example .env
->     bun install
->     bun run start
+> Laya evaluates typed questions (`choice`, `score`, `noul`) over any state (text, email, ticket or JSON document) in **a single forward pass** — 33 ms for one question, 7.2 ms/question batched, measured on a T4. No text generation, so nothing to parse and nothing to hallucinate.
 > 
-> With no `PRIVATE_KEY` it dry-runs: real book, real decisions, simulated fills. Set `MODEL=jev` and `TYPESAFE_AI_API_KEY` to use Jev; the default `mock` is a momentum heuristic stand-in.
+> Three checkpoints, and a `Router` that picks between them per request:
 > 
-> ## Endpoints
+> | | encoder | params | context | use it for |
+> |---|---|---|---|---|
+> | [`laya`](https://huggingface.co/convaiinnovations/laya) | ModernBERT-large | 421M | 512 | English |
+> | [`laya-multilingual`](https://huggingface.co/convaiinnovations/laya-multilingual) | mmBERT-base | 322M | 1024 | 100+ languages, 2x faster |
+> | [`laya-typed-decisions`](https://huggingface.co/convaiinnovations/laya-typed-decisions) | ModernBERT-large | 421M | 1024 | the typed-decisions workflows |
 > 
-> Deployed (dry run, mock model): https://jev-trader-production.up.railway.app
+> ---
 > 
-> - `GET /` snapshot: model, wallet, dryRun, latest block event
-> - `GET /history` last 1000 block events
-> - `GET /events` SSE: `snapshot` on connect, then one `block` event per block, plus a `fill` event whenever a live order's receipt lands
 > 
-> Every event (see `src/trader.ts` for types):
+> ## Installation
 > 
->     {
->       "block": 105488269, "ts": 1789593630676,
->       "mid": 0.022636, "bestBid": 0.022628, "bestAsk": 0.022644, "spreadBps": 7.07,
->       "decision": { "action": "buy", "probabilities": { "buy": 0.77, "sell": 0.23, "hold": 0 }, "upIn10": 0.77, "latencyMs": 81, "late": false },
->       "quote": { "side": "buy", "price": 0.022629, "size": 200, "txHash": "0x…", "gasMon": 0.0357, "cancel": [100295801], "status": "sent", "orderId": null, "capped": false },
->       "fill": null,
->       "resting": { "bidMon": 200, "askMon": 200 },
->       "position": { "side": "short", "size": 200, "entryPrice": 0.022633, "unrealizedUsd": -0.0006, "unrealizedMon": -0.027 },
->       "totals": { "blocks": 3, "decisions": 3, "quotes": 3, "fills": 1, "reverted": 0, "lateBlocks": 0, "jevUsd": 0.000004, "gasMon": 0.107, "gasUsd": 0.0024, "realizedUsd": 0, "pnlUsd": -0.003, "pnlMon": -0.13, "pnlPct": -0.003 }
->     }
+> ```bash
+> pip install laya
+> ```
 > 
-> Every block the model is asked about the move over `HORIZON_BLOCKS` (default 100, ~30 s) and answers `buy` or `sell`. `quote` is the order that block put on the book: a post-only limit order of `TRADE_SIZE_MON` on that side, `QUOTE_INSIDE_TICKS` inside the touch (clamped to the touch when the spread is too tight), in one `batchUpdate` that also cancels everything we had resting (`cancel`). `hold` appears only with `decision.late: true`, when the model missed the block and nothing was posted. When the position cap (or, live, margin funds) blocks a side, the quote goes on the other side with `capped: true` and `probabilities` still show the model's call. `resting` is our size known to be on the book after this block. `upIn10` equals the buy probability.
+> ---
 > 
-> Live sends are fired and forgotten, so the `block` event carries the **intent**: `status: "sent"`, `gasMon` is `gasLimit x (last known base fee + priority)`. Monad charges the gas limit, so that is the real cost whether the order lands or not. The receipt arrives a block or two later as its own SSE event:
 > 
->     event: quote
->     data: { "block": 105488269, "quote": { …, "status": "placed", "orderId": 100295812, "gasMon": 0.0357 } }
+> ## Quickstart: Route Mode (Recommended)
 > 
-> `status` becomes `placed` (with the order id) or `reverted` (the book moved through the price before the tx landed, or a cancelled order had already filled). No receipt after 10 blocks gives `lost`. Fills are not in our own transactions: someone else's taker order hits our resting one, and the Trade log for it arrives via the same `eth_getLogs` poll that feeds the model. Each block with fills gets its own SSE event, and `position`, `realizedUsd` and `fills` update then:
+> Laya ships three checkpoints. The built-in **`Router`** is the recommended entry point: it evaluates any state in any language, automatically detects scripts and languages in sub-milliseconds, and dispatches to the optimal checkpoint in a single forward pass.
 > 
->     event: fill
->     data: { "block": 105488271, "fill": { "side": "buy", "size": 200, "price": 0.022629, "txHash": "0x…", "orderId": 100295812, "simulated": false } }
+> ```python
+> import laya
+> from laya import Router
 > 
-> `txHash` is the taker's transaction. In a dry run the quote is `status: "sim"`: the order rests for one block and a real print crossing its price fills it (`simulated: true`).
 > 
-> ## Layout
+> ## Live Demo & Resources
 > 
->     src/config.ts   env
->     src/chain.ts    block feed (WebSocket newHeads + polling backstop, newest block only), raw RPC
->     src/book.ts     one-eth_call order book reader (decodes getL2Book, merges the AMM vault)
->     src/market.ts   Kuru: read book, hand-encoded batchUpdate (cancel + post-only place), margin deposits, local nonce, async confirmation
->     src/model.ts    Model interface, JevModel (AI SDK experimental_evaluate), MockModel
->     src/trader.ts   the loop: one in flight, hold when late, position and P&L accounting
->     src/server.ts   Bun.serve: snapshot, history, SSE
+> * **Hugging Face Model:** [convaiinnovations/laya](https://huggingface.co/convaiinnovations/laya)
+> * **Interactive Web Demo:** [convaiinnovations/laya-demo](https://huggingface.co/spaces/convaiinnovations/laya-demo)
+> * **Engineering Writeup:** [Read the full story on Dev.to](https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me)
 > 
-> ## The 300 ms budget
+> ---
 > 
-> A decision and an order have to fit in one block, so the hot loop makes exactly two RPC round trips:
-> one `eth_call` for the book (~18 ms on the public RPC, `READ_RPC_URL`) and one `eth_sendRawTransaction`
-> (`RPC_URL`), which returns as soon as the tx is accepted. Nothing else is on the path — no
-> `eth_estimateGas` (Monad charges gas on the limit, so the limit is hardcoded or derived once at
-> startup), no `eth_sendRawTransactionSync` (it blocks until the tx is Proposed), no gas price lookup
-> (static type-2 fees: `MAX_FEE_GWEI` cap, 2 gwei priority; the effective price is base + priority).
-> Receipts, the fee estimate and the vault check run off the hot path on later blocks. Measured in a
-> dry run with the mock model: read p50 18 ms, whole loop p50 100 ms (80 ms of it the mock's inference stand-in).
 > 
->     bun run scripts/bench-read.ts     # book reader vs the SDK: exactness and latency
->     bun run scripts/dry-encode.ts     # signs a buy and a sell offline, asserts the calldata matches the SDK
+> ### Multilingual (51 languages, MASSIVE intent, 20 options, random = 0.050)
+> 
+> | | `laya` | `laya-multilingual` |
+> |---|---|---|
+> | English | **0.783** | 0.657 |
+> | 13 other languages | 0.306 | **0.451** |
+> | XNLI, English | **0.860** | 0.843 |
+> | XNLI, 14 other languages | 0.521 | **0.731** |
+> 
+> Across all 51 languages the English checkpoint macro-averages **0.227** with macro ECE
+> **0.733**, and only 23 of 51 languages clear 3x random. Khmer scores **0.000 at 95.2%
+> confidence**. This is why [`Router`](#model-routing-three-checkpoints-one-call) exists: the
+> model's own confidence gives no warning, so the routing decision has to be made before the
+> forward pass.
+> 
+> 
+> ### Why Route: The Evidence
+> 
+> On a shared benchmark (17,416 questions, one T4 GPU, identical questions per model):
+> 
+> | Benchmark / Task | English (`laya`) | Multilingual (`laya-multilingual`) | `Router` (Routed) |
+> |---|---|---|---|
+> | MASSIVE intent, English | **0.783** | 0.657 | **0.783** |
+> | MASSIVE intent, 13 other languages | 0.306 | **0.451** | **0.451** |
+> | XNLI, English | **0.860** | 0.843 | **0.860** |
+> | XNLI, 14 other languages | 0.521 | **0.731** | **0.731** |
+> | Languages usable (>3x random) | 23 / 51 | 45 / 51 | **45 / 51** |
+> | Latency, 1 question (T4 GPU) | 39.5 ms | **32.8 ms** | **32.8 ms** |
+> | Latency, 10 questions batched | 158.6 ms | **72.3 ms** | **72.3 ms** |
+> 
+> The English checkpoint collapses on non-Latin scripts (Khmer scores **0.000 accuracy at 0.952 confidence**). Because the model stays confident while being wrong, confidence gating cannot save you. `Router` detects the script in  billing (confidence: 0.94)
+> print("Urgency    :", answers["urgency"]["score"])        # -> 1.84 / 2.0
+> print("Churn Risk :", answers["churn_risk"]["noul"])       # -> 0.892 (89.2% probability)
+> ```
+> 
+> ---
+> 
+> 
+> # 1. Intelligent Model Router (routes to small vs. frontier models)
+> routing = agent.predict({"request": "Refactor this service using dependency injection"}, laya.router_questions())
+> 
+> 
+> ## Benchmarks
+> 
+> **Full report: [`BENCHMARKS.md`](BENCHMARKS.md)** — every run consolidated, languages and themes, with per-language detail for all 51 languages.
+> 
+>   
+> 
+> All Laya numbers below are measured. Every model answered byte-identical questions
+> (fixed seed) in the same run. Reproduce with
+> [`notebooks/laya_benchmark_colab.ipynb`](https://github.com/NandhaKishorM/laya) on a T4.
+> 
+> 
+> ### Laya (with routing) vs Jev
+> 
+> Every Laya figure is what `Router().predict(...)` actually returns — the checkpoint the router
+> selects for that input, not a hand-picked best of three. Jev figures are **third-party
+> published, never measured here** (no TypeSafe API access), so sample sizes and prompts differ.
+> 
+> | | Jev 1.13.0 | Laya (routed) | |
+> |---|---|---|---|
+> | typed-decisions, 2,000 decisions | 0.727 | **0.766** | +0.039 |
+> | AG News, 4 labels | 0.910 | **0.950** | +0.040 |
+> | DAIR Emotion, 6 labels | 0.480 | **0.595** | +0.115 |
+> | Banking77 (72 vs 77 labels) | **0.870** | 0.425 | Jev leads on >20 options |
+> | ECE *(lower better)* | 0.246 | **0.081** | 3× better (post-temperature) |
+> | p50 latency, 1 question | 236–276 ms | **32.8 ms** | 7.8× faster |
+> | Languages usable | *no published benchmark* | **45 of 51** | — |
+> | Weights | closed API | **Apache 2.0** | — |
+> | Cost | $0.042 / 1M tokens | **$0 self-hosted** | — |
+> 
+> On DAIR Emotion, Jev assigned **zero probability to the true label on 16% of examples** — a hard
+> failure for anything branching on confidence.
+> 
+> #### Where Jev leads
+> 
+> * **High-cardinality label spaces (>20 options at default settings):** On Banking77, Jev scores 0.870 (on 72 labels) while Laya scores 0.425 (on 77 labels at default 256-token head budget). This is an architectural token-budget constraint: options share a fixed `head_max_len` budget (192 tokens on English, 256 on multilingual), so 77 options receive only ~3 to 4 tokens per label, causing text to become indistinguishable. Jev supports up to 255 options out-of-the-box. While `laya-multilingual` supports 1,024 context (and up to 8,192 in the encoder) and you can raise `agent.cfg["head_max_len"] = 512` at runtime, Jev is currently better suited for 50+ options in a single prompt without tuning.
+> * **Soft distribution matching:** On typed-decisions, while Laya achieves higher argmax accuracy (0.766 vs 0.727), Jev achieves higher soft accuracy (0.580 vs 0.471) against the teacher's full probability distributions.
+> * **Out-of-the-box raw calibration:** Before temperature scaling, the base checkpoint has higher raw ECE (0.213 vs 0.144). Laya achieves its 0.081 ECE after domain temperature fitting.
+> 
+> Full detail, including every workflow and all 51 languages: **[`BENCHMARKS.md`](BENCHMARKS.md)**.
+> 
+> 
+> # Preload checkpoints into memory for instant sub-35ms routing
+> router = Router(preload=True)
+> 
+> 
+> # 1. State in any language or schema
+> state = {
+>     "from": "user@acme.com",
+>     "subject": "Duplicate charge on invoice #4411",
+>     "body": "Hi, we were billed twice for March. Please refund the duplicate today or we will cancel our plan."
+> }
+> 
+> 
+> # 2. Define your typed questions
+> questions = {
+>     "department": {
+>         "type": "choice",
+>         "instructions": "Which department should handle this request?",
+>         "criteria": {
+>             "billing": "invoices, payments, refunds",
+>             "technical": "bugs, outages, system errors",
+>             "sales": "pricing, new contracts",
+>             "other": "everything else"
+>         }
+>     },
+>     "urgency": {
+>         "type": "score",
+>         "instructions": "How urgent is this request?",
+>         "criteria": ["not urgent", "
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/jarrodwatts/jev-trader)
+[GitHub](https://github.com/NandhaKishorM/laya)
 
 ## 相關收錄
 
@@ -264,7 +362,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "jarrodwatts--jev-trader"
+> WHERE category = "Other" AND file.name != "NandhaKishorM--laya"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -273,7 +371,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "jarrodwatts--jev-trader" AND status != "archived"
+> WHERE language = "Python" AND file.name != "NandhaKishorM--laya" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -282,18 +380,18 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "jarrodwatts--jev-trader"
+> WHERE week = "2026-W39" AND file.name != "NandhaKishorM--laya"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/NandhaKishorM--laya");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "jarrodwatts--jev-trader" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "NandhaKishorM--laya" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -309,7 +407,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "jarrodwatts" AND file.name != "jarrodwatts--jev-trader"
+> WHERE owner = "NandhaKishorM" AND file.name != "NandhaKishorM--laya"
 > SORT stars DESC
 > ```
 
@@ -317,7 +415,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/NandhaKishorM--laya");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -334,7 +432,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/NandhaKishorM--laya");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -367,7 +465,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/NandhaKishorM--laya");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -391,7 +489,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/NandhaKishorM--laya");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -428,7 +526,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/jarrodwatts--jev-trader");
+> const me = dv.page("Repos/NandhaKishorM--laya");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -511,7 +609,7 @@ One AI trade decision every Monad block. Jev on Kuru MON-USDC.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-19** — 首次收錄
+> **2026-09-20** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -527,5 +625,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-20|2026-09-20]] — 再次上榜，1.3k stars
-- [[2026-09-19|2026-09-19]] — 首次收錄，929 stars
+- [[2026-09-20|2026-09-20]] — 首次收錄，1.6k stars
