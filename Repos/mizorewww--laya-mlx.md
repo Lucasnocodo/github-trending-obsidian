@@ -1,20 +1,20 @@
 ---
-repo: tamaratran/fast-jev-compaction
-url: https://github.com/tamaratran/fast-jev-compaction
-owner: tamaratran
+repo: mizorewww/laya-mlx
+url: https://github.com/mizorewww/laya-mlx
+owner: mizorewww
 owner_type: User
-language: TypeScript
-license: MIT
-description: "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim."
-homepage: ""
-stars: 5442
-stars_per_day: 1814
-forks: 297
-open_issues: 59
-created: 2026-09-17
-pushed_at: 2026-09-18
-first_seen: 2026-09-18
-week: "2026-W38"
+language: Python
+license: Apache-2.0
+description: "Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API."
+homepage: "https://pypi.org/project/laya-mlx/"
+stars: 2009
+stars_per_day: 2009
+forks: 103
+open_issues: 4
+created: 2026-09-19
+pushed_at: 2026-09-19
+first_seen: 2026-09-21
+week: "2026-W39"
 month: "2026-09"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,44 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-18
+last_reviewed: 2026-09-21
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-09-24"
-contributor_count: 2
+contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 249
-readme_length: 5789
+repo_size_kb: 5750
+readme_length: 10000
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-18"
-star_history: "2026-09-18:1152,2026-09-19:3493,2026-09-20:4426,2026-09-21:5442"
+ring_history: "assess@2026-09-21"
+star_history: "2026-09-21:2009"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/python"
+  - "topic/apple_silicon"
+  - "topic/decision_model"
+  - "topic/inference"
+  - "topic/laya"
+  - "topic/local_ai"
 aliases:
-  - "fast-jev-compaction"
-  - "tamaratran/fast-jev-compaction"
+  - "laya-mlx"
+  - "mizorewww/laya-mlx"
 ---
 
-# fast-jev-compaction
+# laya-mlx
 
-**1.2k** stars · **1.2k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**2.0k** stars · **2.0k** stars/天 · 建立 1 天前 · Python · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+const me = dv.page("Repos/mizorewww--laya-mlx");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`個人專案`
+
+`apple-silicon` `decision-model` `inference` `laya` `local-ai` `machine-learning` `mlx` `modernbert` `system-one` `typed-decisions`
+
 > [!summary] 一句話摘要
-> Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.
+> Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API.
 
 ## 專案簡介
 
-Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.
+Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/mizorewww--laya-mlx");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +125,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/mizorewww--laya-mlx");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,176 +149,194 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 49 |
-| Open Issues | 7 |
+| Forks | 103 |
+| Open Issues | 4 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-18 |
-| 建立日期 | 2026-09-17 |
-| Repo 大小 | 249 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/tamaratran/fast-jev-compaction) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@types/node` `tsx` `typescript` `vitest`
+| 最後推送 | 2026-09-19 |
+| 建立日期 | 2026-09-19 |
+| 官方網站 | [Link](https://pypi.org/project/laya-mlx/) |
+| Repo 大小 | 5.6 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/mizorewww/laya-mlx) |
+| Topics | `apple-silicon` `decision-model` `inference` `laya` `local-ai` `machine-learning` `mlx` `modernbert` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@devin-ai-integration[bot]](https://github.com/devin-ai-integration[bot]) | 17 |
-> | [@tamaratran](https://github.com/tamaratran) | 13 |
+> | [@mizorewww](https://github.com/mizorewww) | 5 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-17 ~ 2026-09-17）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #17 from tamaratran/devin/1789683249-readme-tagline
+> [!abstract] 最近 10 次 commit（2026-09-19 ~ 2026-09-19）
+> **活躍天數** 1 天 · **最新 commit** Launch Snake demo, opt-in runtime optimizations, and PyPI packaging
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#21](https://github.com/tamaratran/fast-jev-compaction/issues/21) | Hooks (0) on install — session.compact / turn.complete are n | 0 | 0 |
+> | [#3](https://github.com/mizorewww/laya-mlx/issues/3) | [benchmark]: Cross-architecture comparison on Snake AI Refle | 0 | 0 |
+> | [#1](https://github.com/mizorewww/laya-mlx/issues/1) | Training | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # fast-jev-compaction
+> # Laya-MLX
 > 
-> Claude Code plugin that replaces the compaction summary with Jev decisions:
-> every tool call and result is scored in one fast request, stale ones are
-> dropped or truncated, everything kept stays verbatim. Also usable as an npm
-> library.
+> **Open-weight typed decisions, running natively on Apple Silicon.**
 > 
-> ## What and why
+> **13.4 ms** median end-to-end for a short English typed decision. **7.4 ms** with the multilingual checkpoint. **0 output tokens.** Local MLX inference, with no PyTorch, Transformers runtime, or cloud API.
 > 
-> Most context compaction asks an LLM to summarize old turns. A summary is
-> lossy: a file path, exact error, constraint, or command can disappear even when
-> it matters later. This library never rewrites anything. It only deletes tool
-> calls and tool results Jev says are no longer needed, and it asks Jev while
-> showing it the whole conversation. User and assistant text stays verbatim and
-> in order.
+> [中文](https://github.com/mizorewww/laya-mlx/blob/main/README.zh-CN.md) · [Benchmarks](https://github.com/mizorewww/laya-mlx/blob/main/BENCHMARKS.md) · [Snake demo](https://github.com/mizorewww/laya-mlx/blob/main/docs/SNAKE_DEMO.md) · [Hugging Face weights](https://huggingface.co/aac6fef/laya-mlx)
 > 
-> The repository is both an npm package (`src/`) and a Claude Code plugin
-> (`hooks/`, `.claude-plugin/`) that uses the package to replace Claude Code's
-> built-in compaction summary with the original messages.
+> The GIF is an original-speed render of a real local Snake run. Every move calls Laya; the visible cycle safety layer can correct unsafe proposals. The latency figures above are the separate **one-question API benchmark**, not the frame time of the three-question Snake loop. [Watch the 30-second MP4](https://github.com/mizorewww/laya-mlx/blob/main/docs/assets/snake-demo.mp4) · [Snake speed and stability](https://github.com/mizorewww/laya-mlx/blob/main/docs/SNAKE_BENCHMARKS.md).
 > 
-> ## How it works
 > 
-> 1. Every `tool_use` is paired with its `tool_result` by `tool_use_id`. Calls in
->    the first message or in the newest `preserveRecentMessages` messages are
->    pinned and never touched.
-> 2. The **state** sent to Jev is the whole conversation so far, oldest first,
->    with every tool result replaced by a short note (`ok, 4213 chars (omitted)`).
->    Tool inputs are included, texts are included, nothing is summarized.
-> 3. The state is fitted into `maxStateTokens` (25k by default) in stages, each
->    applied only if the previous one was not enough: tool inputs truncated to
->    1000, then 200, then 60 characters; long texts abridged to head + tail,
->    oldest non-pinned messages first; old non-pinned messages collapsed to a
->    `[… N chars omitted …]` note; old tool calls reduced to one line each
->    (`t12 Read file_path=src/a.ts → ok 480ch`); old call-less messages left
->    out; runs of old call-only messages folded into one entry. If it still
->    does not fit, compaction throws. Tokens are estimated without a tokenizer (a
->    word per six letters, half a token per digit, ~one per other symbol),
->    calibrated to land a little above the counts Jev reports.
-> 4. For every non-pinned call Jev gets two `noul` questions: should the **call**
->    stay (knowing it was made, with its input, still matters), and should the
->    **result** stay verbatim (its contents are still needed and re-running the
->    tool would not do).
-> 5. Questions are split into as many requests as needed so state plus questions
->    stays under `maxRequestTokens` (30k by default, under Jev's 32k request
->    limit). The same full state is resent with every request; requests run
->    concurrently and their answers are merged.
-> 6. Decisions per call, against `keepThreshold`:
->    - `keepResult ≥ threshold` → keep call and result;
->    - else `keepCall ≥ threshold` → keep the call, truncate the result to its
->      first `truncateHeadChars` characters plus a one-line note;
->    - else → remove the call together with its result.
-> 7. The message list is rebuilt: a message that loses all its content is
->    removed, untouched messages are returned as the same objects, and no result
->    is ever left without its call.
+> ## Quick start
 > 
-> Jev failures, malformed answers, a missing key, or a history that cannot be
-> fitted throw; the caller (or the Claude Code hook) decides what to fall back to.
-> 
-> ## Install and usage
-> 
-> ```sh
-> npm install fast-jev-compaction
-> export TYPESAFE_API_KEY=...
+> ```bash
+> pip install laya-mlx
 > ```
 > 
-> ```ts
-> import { compactMessages, reductionRatio, type Message } from 'fast-jev-compaction';
+> ```python
+> import laya_mlx as laya
 > 
-> const transcript: Message[] = [
->   { role: 'user', text: 'Fix the failing test. Never edit src/generated.', toolUses: [] },
->   {
->     role: 'assistant',
->     text: '',
->     toolUses: [{ tool_use_id: 'toolu_1', tool: 'Read', input: { file_path: 'src/a.ts' } }],
->   },
->   { role: 'user', text: '', toolUses: [], toolResults: [{ tool_use_id: 'toolu_1', text: '…file…' }] },
->   // …
-> ];
-> 
-> const result = await compactMessages(transcript, { preserveRecentMessages: 4 });
-> console.log(result.messages, result.decisions, result.stats);
-> if (reductionRatio(result) " } }
+> agent = laya.load("aac6fef/laya-mlx")
+> result = agent.predict(
+>     "I was billed twice. Please refund the duplicate.",
+>     {
+>         "department": {
+>             "type": "choice",
+>             "instructions": "Who should handle this?",
+>             "criteria": ["billing", "technical", "sales"],
+>         }
+>     },
+> )
+> print(result["answers"]["department"])
 > ```
 > 
-> Then add this repository as a plugin marketplace and install the plugin,
-> either from the shell or as slash commands inside a session:
+> Apple Silicon, Python 3.11+, macOS 14+. First load downloads the checkpoint; later inference is fully local. The measured environment is macOS 27.2, Python 3.12.13 and MLX 0.32.2. That MLX release supplies macOS 14, 15 and 26 wheels; the local installer selected the 26 wheel. Older supported macOS versions were not tested on this machine.
 > 
-> ```sh
-> claude plugin marketplace add tamaratran/fast-jev-compaction
-> claude plugin install fast-jev-compaction@fast-jev-compaction
+> Run the terminal demo:
+> 
+> ```bash
+> pip install 'laya-mlx[demo]'
+> hf download aac6fef/laya-multilingual-mlx
+> laya-snake
 > ```
 > 
-> The install prompts for the plugin options (API key, thresholds, `truncateHeadChars`,
-> …); leave them at their defaults to use `TYPESAFE_API_KEY` from the environment.
-> Restart Claude Code or run `/reload-plugins`. From then on `/compact` (and
-> auto-compaction) goes through Jev: the toast reads
-> `fast-jev-compaction: kept N/M messages, no summary (…)` when the pruned history
-> replaced the built-in summary, or `fallback to built-in summary (…)` when Jev
-> could not remove enough (short sessions, or when it fails).
+> Download once before the offline demo. Use a terminal at least 104 × 35 cells. Space pauses, ↑/↓ changes speed, R resets and Q quits. `laya-snake --max-speed` makes a fresh decision for every move without pacing. [Recording, controls and exact metric meanings](https://github.com/mizorewww/laya-mlx/blob/main/docs/SNAKE_DEMO.md).
 > 
-> To run from a checkout without installing: `CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 claude --plugin-dir .`
-> from the repository root. No publishing step is required; the marketplace is
-> just the repo's `.claude-plugin/marketplace.json`.
+> `laya-snake --optimize --max-speed` enables the tested compilation and prefix-reuse path: **75.40 moves/s across 2,400 moves**, zero deaths and 2 visible safety interventions in the paired M3 Max test. This was about **6.5% faster** than its same-run eager control. [Gameplay, performance and correctness evidence](https://github.com/mizorewww/laya-mlx/blob/main/docs/SNAKE_OPTIMIZATION.md).
 > 
-> ## Development
 > 
-> ```sh
-> npm install
-> npm run typecheck        # library + hook
-> npm test
-> npm run build
-> npm run validate:plugin  # claude plugin validate
-> TYPESAFE_API_KEY="$(cat ~/.typesafe_key)" npm run demo
+> ## Development install
+> 
+> ```bash
+> gh repo clone mizorewww/laya-mlx
+> cd laya-mlx
+> uv sync --extra demo
+> uv run --extra demo laya-snake
 > ```
 > 
-> The unit tests use a fake Jev and never contact TypeSafe. The demo is the live
-> network check.
+> Or install the latest GitHub revision with `pip install 'git+https://github.com/mizorewww/laya-mlx.git'`. Model weights are downloaded separately and are excluded from Git.
 > 
-> ## Animated demo (macOS)
 > 
-> `demo/JevDemo` is a small native SwiftUI app that plays a scripted, dramatized
-> version of the compaction flow inside a Claude Code-style terminal: the tool
-> calls of a canned transcript are scored, results and calls Jev lets go turn red
-> and collapse away, and the rest stays verbatim. It never calls the API; it
-> exists to be screen recorded.
+> ## Python API
 > 
-> ```sh
-> demo/JevDemo/build.sh   # builds demo/JevDemo/build/JevDemo.app and launches it
+> ```python
+> import laya_mlx as laya
+> 
+> agent = laya.load("aac6fef/laya-mlx", dtype="float16")
+> result = agent.predict(
+>     "I was billed twice. Please refund the duplicate today.",
+>     {
+>         "department": {
+>             "type": "choice",
+>             "instructions": "Which team should handle this request?",
+>             "criteria": {
+>                 "billing": "invoices, payments, refunds",
+>                 "technical": "bugs and outages",
+>                 "sales": "new purchases",
+>             },
+>         },
+>         "urgency": {
+>             "type": "score",
+>             "instructions": "How urgent is this request?",
+>             "criteria": ["not urgent", "soon", "critical"],
+>         },
+>         "refund": {
+>             "type": "noul",
+>             "instructions": "Does the customer ask for money back?",
+>         },
+>     },
+> )
+> print(result["answers"])
 > ```
 > 
-> Press space in the app to replay from the start.
+> `system_one` is an alias for `predict`. States can be text, JSON dictionaries, or conversation lists. `choice` accepts a dictionary or a list of unique labels; `score` returns the expected zero-based rubric level; `noul` returns P(true). Results retain upstream's four-decimal rounding, `action.act_probability`, and token usage fields.
+> 
+> The default precision is FP16. Use `dtype="float32"` for closer numerical agreement. Probabilities can differ slightly across precisions even when the selected label agrees; see the measured errors in [BENCHMARKS.md](https://github.com/mizorewww/laya-mlx/blob/main/BENCHMARKS.md). BF16 can be requested but is not part of the published validation matrix.
+> 
+> `batch_size=16` caps the number of questions per forward pass; larger requests are processed in chunks. Increase it when memory allows. `device="gpu"` or `device="cpu"` selects a device explicitly; otherwise MLX's default device is used.
+> 
+> For repeated workloads, opt into `compile=True`, `pad_to_multiple=16` and `cache_prompts=True` when loading an Agent. The prefix cache is bounded to 128 questions and shares CPU state tokenization, while every question still gets its own encoder computation. Compilation has a first-use cost and shape specialization; padding may make some workloads slower. All three options default to disabled. [Measured Snake ablation and usage](https://github.com/mizorewww/laya-mlx/blob/main/docs/SNAKE_OPTIMIZATION.md).
+> 
+> ```python
+> agent = laya.load("./models/laya", dtype="float32", batch_size=32)
+> 
+> ## Why typed decisions?
+> 
+> Software often needs a choice, a rubric score or a probability. Laya answers those constrained questions in a bidirectional forward pass, without token-by-token decoding or generated JSON.
+> 
+> ```text
+> state + typed question → bidirectional encoder → decision heads → probabilities
+> ```
+> 
+> - `choice`: probabilities over named options.
+> - `score`: probabilities over ordered rubric levels and their expected score.
+> - `noul`: P(true) for a proposition.
+> 
+> Question rows are batched independently. Their bidirectional encoder representations depend on both state and question; this runtime does not claim to encode the state once and reuse its hidden states across arbitrary questions.
+> 
+> The encoder, decision Transformer, scoring head and action head all run in MLX. Tokenization uses Hugging Face's Rust tokenizer. The original pretrained weights, question formatting, calibration and output schema are retained. This is an independent MLX port, not an official Convai Innovations release.
+> 
+> 
+> ## Tests and benchmarks
+> 
+> ```bash
+> uv sync --extra dev --extra reference --extra benchmark --extra demo
+> source .venv/bin/activate
+> gh repo clone NandhaKishorM/laya .upstream
+> git -C .upstream checkout 6a5819129eb220570792e417e49723d697efd76f
+> pytest -q
+> python -m benchmarks.download
+> python -m benchmarks.validate --repeats 100
+> python -m benchmarks.run --iterations 50 --warmup 5
+> python -m benchmarks.accuracy --per-class 64
+> python -m benchmarks.report
+> ```
+> 
+> Run GPU measurements sequentially. Unit tests use small random models and include direct comparisons with Transformers and the pinned upstream decision head. Real checkpoint validation tests tokenization, logits, calibrated probabilities, repeated outputs and active memory growth. The benchmark runs each backend/checkpoint in a fresh process and stores every timing sample in [benchmarks/results](https://github.com/mizorewww/laya-mlx/blob/main/benchmarks/results). The [full report](https://github.com/mizorewww/laya-mlx/blob/main/BENCHMARKS.md) explains the timing boundaries and precision differences.
+> 
+> GitHub Actions runs small-model CPU tests on a macOS arm64 runner. Full checkpoint GPU benchmarks are measured locally and are not part of hosted CI.
+> 
+> 
+> ## Performance on M3 Max
+> 
+> | FP16, end-to-end | Laya 421M | Multilingual 322M |
+> |---|---:|---:|
+> | One short question, P50 | **13.42 ms** | **7.39 ms** |
+> | One short question, P95 | **13.92 ms** | **7.79 ms** |
+> | 50-question throughput | **146.8 q/s** | **395.0 q/s** |
+> | Peak MLX allocation, one short question | **943.6 MiB** | **687.6 MiB** |
+> 
+> M3 Max, 40 GPU cores, 128 GiB memory. Tim
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/tamaratran/fast-jev-compaction)
+[GitHub](https://github.com/mizorewww/laya-mlx) · [官方網站](https://pypi.org/project/laya-mlx/)
 
 ## 相關收錄
 
@@ -317,7 +344,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE category = "Other" AND file.name != "mizorewww--laya-mlx"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -326,7 +353,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "tamaratran--fast-jev-compaction" AND status != "archived"
+> WHERE language = "Python" AND file.name != "mizorewww--laya-mlx" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -335,18 +362,18 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE week = "2026-W39" AND file.name != "mizorewww--laya-mlx"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/mizorewww--laya-mlx");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "tamaratran--fast-jev-compaction" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "mizorewww--laya-mlx" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -362,7 +389,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "tamaratran" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE owner = "mizorewww" AND file.name != "mizorewww--laya-mlx"
 > SORT stars DESC
 > ```
 
@@ -370,7 +397,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/mizorewww--laya-mlx");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -387,7 +414,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/mizorewww--laya-mlx");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -420,7 +447,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/mizorewww--laya-mlx");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -444,7 +471,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/mizorewww--laya-mlx");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -481,7 +508,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/mizorewww--laya-mlx");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -564,7 +591,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-18** — 首次收錄
+> **2026-09-21** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -580,7 +607,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-21|2026-09-21]] — 再次上榜，5.4k stars
-- [[2026-09-20|2026-09-20]] — 再次上榜，4.4k stars
-- [[2026-09-19|2026-09-19]] — 再次上榜，3.5k stars
-- [[2026-09-18|2026-09-18]] — 首次收錄，1.2k stars
+- [[2026-09-21|2026-09-21]] — 首次收錄，2.0k stars

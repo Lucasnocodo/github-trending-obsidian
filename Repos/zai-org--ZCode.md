@@ -1,20 +1,20 @@
 ---
-repo: tamaratran/fast-jev-compaction
-url: https://github.com/tamaratran/fast-jev-compaction
-owner: tamaratran
-owner_type: User
+repo: zai-org/ZCode
+url: https://github.com/zai-org/ZCode
+owner: zai-org
+owner_type: Organization
 language: TypeScript
-license: MIT
-description: "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim."
-homepage: ""
-stars: 5442
-stars_per_day: 1814
-forks: 297
-open_issues: 59
-created: 2026-09-17
-pushed_at: 2026-09-18
-first_seen: 2026-09-18
-week: "2026-W38"
+license: Apache-2.0
+description: "Z.ai's coding agent harness. Powerful, intelligent, extensible."
+homepage: "https://zcode.z.ai/"
+stars: 3530
+stars_per_day: 3530
+forks: 915
+open_issues: 11
+created: 2026-09-20
+pushed_at: 2026-09-21
+first_seen: 2026-09-21
+week: "2026-W39"
 month: "2026-09"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-18
+last_reviewed: 2026-09-21
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-09-24"
 contributor_count: 2
-engagement: "low"
+engagement: "medium"
 issue_close_rate: 0
-repo_size_kb: 249
-readme_length: 5789
+repo_size_kb: 38620
+readme_length: 7450
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-18"
-star_history: "2026-09-18:1152,2026-09-19:3493,2026-09-20:4426,2026-09-21:5442"
+ring_history: "assess@2026-09-21"
+star_history: "2026-09-21:3530"
 tags:
   - github
   - "category/other"
   - "lang/typescript"
+  - org
 aliases:
-  - "fast-jev-compaction"
-  - "tamaratran/fast-jev-compaction"
+  - "ZCode"
+  - "zai-org/ZCode"
 ---
 
-# fast-jev-compaction
+# ZCode
 
-**1.2k** stars · **1.2k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**3.5k** stars · **3.5k** stars/天 · 建立 1 天前 · TypeScript · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+const me = dv.page("Repos/zai-org--ZCode");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`ORG`
+
 > [!summary] 一句話摘要
-> Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.
+> Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 ## 專案簡介
 
-Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.
+Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/zai-org--ZCode");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +119,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/zai-org--ZCode");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,176 +143,261 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 49 |
-| Open Issues | 7 |
+| Forks | 915 |
+| Open Issues | 11 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-18 |
-| 建立日期 | 2026-09-17 |
-| Repo 大小 | 249 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/tamaratran/fast-jev-compaction) |
+| 最後推送 | 2026-09-21 |
+| 建立日期 | 2026-09-20 |
+| 官方網站 | [Link](https://zcode.z.ai/) |
+| Repo 大小 | 37.7 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/zai-org/ZCode) |
 
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@types/node` `tsx` `typescript` `vitest`
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "TypeScript" : 98
+>     "JavaScript" : 2
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@devin-ai-integration[bot]](https://github.com/devin-ai-integration[bot]) | 17 |
-> | [@tamaratran](https://github.com/tamaratran) | 13 |
+> | [@MBearo](https://github.com/MBearo) | 1 |
+> | [@zRzRzRzRzRzRzR](https://github.com/zRzRzRzRzRzRzR) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-17 ~ 2026-09-17）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #17 from tamaratran/devin/1789683249-readme-tagline
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#21](https://github.com/tamaratran/fast-jev-compaction/issues/21) | Hooks (0) on install — session.compact / turn.complete are n | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-09-20 ~ 2026-09-20）
+> **活躍天數** 1 天 · **最新 commit** feat: open source
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # fast-jev-compaction
+> # ZCode
 > 
-> Claude Code plugin that replaces the compaction summary with Jev decisions:
-> every tool call and result is scored in one fast request, stale ones are
-> dropped or truncated, everything kept stays verbatim. Also usable as an npm
-> library.
+>   
 > 
-> ## What and why
+>   飞书社群 ·
+>   Discord
 > 
-> Most context compaction asks an LLM to summarize old turns. A summary is
-> lossy: a file path, exact error, constraint, or command can disappear even when
-> it matters later. This library never rewrites anything. It only deletes tool
-> calls and tool results Jev says are no longer needed, and it asks Jev while
-> showing it the whole conversation. User and assistant text stays verbatim and
-> in order.
+>   简体中文 | English
 > 
-> The repository is both an npm package (`src/`) and a Claude Code plugin
-> (`hooks/`, `.claude-plugin/`) that uses the package to replace Claude Code's
-> built-in compaction summary with the original messages.
+> ZCode 是 AI 编程工作台，提供桌面应用、浏览器界面和终端 Agent。本仓库包含客户端、后端服务、共享 UI，以及 Agent CLI 与运行时源码。
 > 
-> ## How it works
+> | 入口                 | 用途                                                           | 开发命令                       |
+> | -------------------- | -------------------------------------------------------------- | ------------------------------ |
+> | Desktop              | Electron 桌面应用                                              | `pnpm dev:desktop`             |
+> | Web / ZCode 命令行版 | 终端与浏览器工作台；将 TUI、Web、后端和 Agent 组装为独立运行包 | `pnpm dev:web`                 |
+> | Agent CLI            | 在终端中使用 `zcode`，也为 Desktop 和 Web 提供 Agent 运行时    | `pnpm --filter @zcode/cli dev` |
 > 
-> 1. Every `tool_use` is paired with its `tool_result` by `tool_use_id`. Calls in
->    the first message or in the newest `preserveRecentMessages` messages are
->    pinned and never touched.
-> 2. The **state** sent to Jev is the whole conversation so far, oldest first,
->    with every tool result replaced by a short note (`ok, 4213 chars (omitted)`).
->    Tool inputs are included, texts are included, nothing is summarized.
-> 3. The state is fitted into `maxStateTokens` (25k by default) in stages, each
->    applied only if the previous one was not enough: tool inputs truncated to
->    1000, then 200, then 60 characters; long texts abridged to head + tail,
->    oldest non-pinned messages first; old non-pinned messages collapsed to a
->    `[… N chars omitted …]` note; old tool calls reduced to one line each
->    (`t12 Read file_path=src/a.ts → ok 480ch`); old call-less messages left
->    out; runs of old call-only messages folded into one entry. If it still
->    does not fit, compaction throws. Tokens are estimated without a tokenizer (a
->    word per six letters, half a token per digit, ~one per other symbol),
->    calibrated to land a little above the counts Jev reports.
-> 4. For every non-pinned call Jev gets two `noul` questions: should the **call**
->    stay (knowing it was made, with its input, still matters), and should the
->    **result** stay verbatim (its contents are still needed and re-running the
->    tool would not do).
-> 5. Questions are split into as many requests as needed so state plus questions
->    stays under `maxRequestTokens` (30k by default, under Jev's 32k request
->    limit). The same full state is resent with every request; requests run
->    concurrently and their answers are merged.
-> 6. Decisions per call, against `keepThreshold`:
->    - `keepResult ≥ threshold` → keep call and result;
->    - else `keepCall ≥ threshold` → keep the call, truncate the result to its
->      first `truncateHeadChars` characters plus a one-line note;
->    - else → remove the call together with its result.
-> 7. The message list is rebuilt: a message that loses all its content is
->    removed, untouched messages are returned as the same objects, and no result
->    is ever left without its call.
+> ## 初始化
 > 
-> Jev failures, malformed answers, a missing key, or a history that cannot be
-> fitted throw; the caller (or the Claude Code hook) decides what to fall back to.
+> 准备 Git、Node.js **24.14.0** 和 pnpm **10.33.2**，版本以 [mise.toml](mise.toml) 为准。以下开发和打包命令均在仓库根目录执行。
 > 
-> ## Install and usage
-> 
-> ```sh
-> npm install fast-jev-compaction
-> export TYPESAFE_API_KEY=...
+> ```bash
+> pnpm bootstrap
 > ```
 > 
-> ```ts
-> import { compactMessages, reductionRatio, type Message } from 'fast-jev-compaction';
+> `pnpm bootstrap` 安装 workspace 依赖、准备桌面本地运行资源，再执行 `build:bootstrap`。
 > 
-> const transcript: Message[] = [
->   { role: 'user', text: 'Fix the failing test. Never edit src/generated.', toolUses: [] },
->   {
->     role: 'assistant',
->     text: '',
->     toolUses: [{ tool_use_id: 'toolu_1', tool: 'Read', input: { file_path: 'src/a.ts' } }],
->   },
->   { role: 'user', text: '', toolUses: [], toolResults: [{ tool_use_id: 'toolu_1', text: '…file…' }] },
->   // …
-> ];
+> Agent CLI 与运行时源码位于 [apps/zcode-cli/](apps/zcode-cli/)，作为普通目录随本仓库一起克隆，无需单独拉取或初始化 Git submodule。
 > 
-> const result = await compactMessages(transcript, { preserveRecentMessages: 4 });
-> console.log(result.messages, result.decisions, result.stats);
-> if (reductionRatio(result) " } }
+> 根据需要选择其他初始化或构建入口：
+> 
+> | 命令                           | 用途                                                              |
+> | ------------------------------ | ----------------------------------------------------------------- |
+> | `pnpm install`                 | 安装依赖                                                          |
+> | `pnpm prepare:desktop-runtime` | 准备桌面运行资源，默认包含远程资源准备                            |
+> | `pnpm prepare:remote-assets`   | 单独准备远程运行资源                                              |
+> | `pnpm bootstrap:with-remote`   | 初始化依赖、本地与远程资源，并串行构建相关包；跳过桌面应用 bundle |
+> | `pnpm build`                   | 递归执行各 workspace 包的构建脚本，包括包内的资源准备步骤         |
+> 
+> 默认 `bootstrap` 跳过远程资源准备，适合本地桌面开发。使用远程工作区或验证远程发行资源时，再运行对应准备命令。
+> 
+> ## 开发与运行
+> 
+> ### 桌面版
+> 
+> ```bash
+> pnpm dev:desktop
+> 
+> # 使用测试环境
+> pnpm dev:desktop:test
 > ```
 > 
-> Then add this repository as a plugin marketplace and install the plugin,
-> either from the shell or as slash commands inside a session:
+> `pnpm dev:desktop` 默认等同于 `pnpm dev:desktop:prod`，使用生产服务配置。启动脚本会准备本地运行资源、构建桌面 Agent，再启动 Electron 和源码监听。
 > 
-> ```sh
-> claude plugin marketplace add tamaratran/fast-jev-compaction
-> claude plugin install fast-jev-compaction@fast-jev-compaction
+> 需要独立开发数据目录时，可设置 `ZCODE_DATA_BASE_DIR`。例如在 macOS / Linux 中：
+> 
+> ```bash
+> ZCODE_DATA_BASE_DIR="$HOME/.zcode-dev-home" pnpm dev:desktop:test
 > ```
 > 
-> The install prompts for the plugin options (API key, thresholds, `truncateHeadChars`,
-> …); leave them at their defaults to use `TYPESAFE_API_KEY` from the environment.
-> Restart Claude Code or run `/reload-plugins`. From then on `/compact` (and
-> auto-compaction) goes through Jev: the toast reads
-> `fast-jev-compaction: kept N/M messages, no summary (…)` when the pruned history
-> replaced the built-in summary, or `fallback to built-in summary (…)` when Jev
-> could not remove enough (short sessions, or when it fails).
+> ### 远程功能（SSH/WSL）
 > 
-> To run from a checkout without installing: `CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 claude --plugin-dir .`
-> from the repository root. No publishing step is required; the marketplace is
-> just the repo's `.claude-plugin/marketplace.json`.
+> 先执行 `pnpm bootstrap:with-remote` 准备远程资源（mock-cdn），再 `pnpm dev:desktop`；连接远程项目时资源选择「本地下载后上传」。开发态资源取自本地 `packages/desktop/mock-cdn` 和本地构建产物，经 SFTP 上传到远程，不访问 CDN。
 > 
-> ## Development
+> ### Web 开发
 > 
-> ```sh
-> npm install
-> npm run typecheck        # library + hook
-> npm test
-> npm run build
-> npm run validate:plugin  # claude plugin validate
-> TYPESAFE_API_KEY="$(cat ~/.typesafe_key)" npm run demo
+> 修改 Web 或后端源码时，使用开发模式：
+> 
+> ```bash
+> pnpm dev:web
+> 
+> # 指定后端工作区（macOS / Linux）
+> ZCODE_SERVER_WORKSPACE=/path/to/project pnpm dev:web
 > ```
 > 
-> The unit tests use a fake Jev and never contact TypeSafe. The demo is the live
-> network check.
+> 该命令同时启动 Web 开发服务器（默认 `http://localhost:5173`）和后端（默认 `http://localhost:3030`）；浏览器访问前者。`/ws` 和一般 `/api` 请求代理到本地后端，`/api/v1/oauth/token` 单独代理到当前配置的产品服务。
 > 
-> ## Animated demo (macOS)
+> Agent 源码修改后，执行 `pnpm --filter @zcode/cli... build` 并重启服务。需要验证完整发行包时，按下方“ZCode 命令行版”打包章节解压运行。
 > 
-> `demo/JevDemo` is a small native SwiftUI app that plays a scripted, dramatized
-> version of the compaction flow inside a Claude Code-style terminal: the tool
-> calls of a canned transcript are scored, results and calls Jev lets go turn red
-> and collapse away, and the rest stays verbatim. It never calls the API; it
-> exists to be screen recorded.
+> ### ZCode 命令行版
 > 
-> ```sh
-> demo/JevDemo/build.sh   # builds demo/JevDemo/build/JevDemo.app and launches it
+> 命令行发行包包含 TUI、Web 和 Agent，统一使用 `zcode` 启动：无参数进入 TUI；第一个参数为 `--web` 时启动 Web；其他参数交给现有 Agent CLI 处理。两种模式都在本机运行，无需 Electron。
+> 
+> ```bash
+> # 默认进入终端交互界面
+> zcode
+> 
+> # 启动 Web 界面
+> zcode --web
+> 
+> # 指定项目和端口，不自动打开浏览器
+> zcode --web --workspace /path/to/project --port 3030 --no-open
+> 
+> # 查看 CLI 或 Web 参数
+> zcode --help
+> zcode --web --help
 > ```
 > 
-> Press space in the app to replay from the start.
+> Web 模式默认工作目录为当前目录，监听 `127.0.0.1`，默认不启用访问令牌，自动选择空闲端口并打开浏览器。访问终端输出的地址，按 `Ctrl+C` 停止服务。局域网访问可使用 `--host 0.0.0.0`；监听非本机地址时默认生成访问令牌，使用终端输出的带令牌链接。可通过 `--token` 指定令牌或 `--no-token` 关闭令牌认证。
+> 
+> 直接启动通用 Web 服务的 HTTP 入口时，通过 `ZCODE_SERVER_AUTH_TOKEN` 配置 API／WebSocket 认证；通过程序接口创建服务时，使用 `authToken` 选项。
+> 
+> 构建方式见下方打包章节。`pnpm build:zcode` 只生成发行包，不会替换 `PATH` 中已有的 `zcode`。如果命令仍指向旧安装或其他源码目录，macOS / Linux 可用 `command -v zcode` 检查，Windows 可用 `where.exe zcode` 检查。
+> 
+> ### CLI 源码开发
+> 
+> 直接开发 TUI 或 Agent 时，运行源码入口：
+> 
+> ```bash
+> pnpm --filter @zcode/cli dev --help
+> pnpm --filter @zcode/cli dev
+> 
+> # 构建 CLI 及其 workspace 依赖
+> pnpm --filter @zcode/cli... build
+> node apps/zcode-cli/packages/cli/dist/zcode.cjs --help
+> ```
+> 
+> 这个入口直接运行 Agent CLI，不经过发行包的 `--web` 分流。开发 Web 用 `pnpm dev:web`；验证统一的 `zcode` 命令，用下方解压后的 `bin/zcode.mjs`。
+> 
+> ## 配置
+> 
+> 根目录 [.env.example](.env.example) 提供服务地址与构建配置示例，可按需复制到 `.env`，本地覆盖放入 `.env.local`。Desktop 的开发环境通过 `dev:desktop:test` / `dev:desktop:prod` 选择。
+> 
+> | 配置                                 | 用途                                             |
+> | ------------------------------------ | ------------------------------------------------ |
+> | `ZCODE_DATA_BASE_DIR`                | 应用数据基目录，数据写入其下的 `.zcode/`         |
+> | `ZCODE_SERVER_WORKSPACE`             | Web 后端的工作区路径                             |
+> | `ZCODE_BUILTIN_PROVIDER_CONFIG_FILE` | 本地 Provider 配置文件路径；未设置时使用内置配置 |
+> | `ZCODE_DIST_BASE_URL`                | 命令行安装脚本使用的下载根地址                   |
+> 
+> 运行时变量可在启动命令的环境中显式设置。随客户端发布的默认配置见 [config/README.md](config/README.md)。
+> 
+> ## 打包
+> 
+> 第三方声明生成、发行校验流程及声明在发行物中的位置见 [third-party/README.md](third-party/README.md)。
+> 
+> ### 桌面版
+> 
+> ```bash
+> pnpm bundle:desktop
+> 
+> # 指定目标平台与 CPU 架构
+> pnpm bundle:desktop -- --os win --arch x64
+> 
+> pnpm bundle:desktop -- --help
+> ```
+> 
+> 默认目标为 macOS arm64，默认输出目录为 `packages/desktop/dist/`。`--os` 支持 `mac`、`win`、`linux`，`--arch` 支持 `x64`、`arm64`；实际打包与签名需要目标平台对应的工具和配置。
+> 
+> 安装：双击打开产物 DMG，将 ZCode 拖入"应用程序"。本地构建未签名，首次打开若被 macOS 拦截，执行：
+> 
+> ```bash
+> sudo xattr -rd com.apple.quarantine /Applications/ZCode.app
+> ```
+> 
+> ### ZCode 命令行版
+> 
+> 构建入口为 `pnpm build:zcode`。脚本会依次构建 CLI/TUI、后端和 Web，收集 TUI 的原生库、worker 与运行时依赖，再组装发行包；运行发行包仍需要 Node.js，版本以 `mise.toml` 为准。
+> 
+> 打包前必须设置下载根地址 `ZCODE_DIST_BASE_URL`（可放在 `.env`、`.env.local` 或环境变量中），也可以通过 `--base-url` 传入。以下地址是占位示例，发布时替换为实际托管地址：
+> 
+> ```bash
+> pnpm build:zcode --base-url https://downloads.example.com/zcode/
+> 
+> # 已配置 ZCODE_DIST_BASE_URL 时
+> pnpm build:zcode
+> 
+> # 仅重新组包，复用已有的 Agent、后端和 Web 构建产物
+> pnpm build:zcode --skip-build
+> 
+> # 查看版本、输出目录等可选参数
+> pnpm build:zcode --help
+> ```
+> 
+> 默认版本取根目录 `package.json`，输出目录为 `dist/zcode/`：
+> 
+> - `releases//zcode-.tar.gz`：运行包。
+> - `releases//sha256.txt`：校验摘要。
+> - `latest.json`、`install.sh`：版本索引和安装脚本。
+> 
+> 完整目录可上传到配置的下载根地址。安装脚本从该地址下载运行包，默认安装到 `~/.zcode/runtime`，并在 `~/.local/bin` 创建 `zcode` 命令。安装目录可通过 `ZCODE_DIST_HOME` 修改，命令目录可通过 `ZCODE_DIST_BIN_DIR` 修改。
+> 
+> 旧 Lite 用户需要改用上述构建命令、环境变量和新的安装脚本。新安装不会删除旧 Lite 目录，也不会迁移或删除已有会话数据。
+> 
+> 本地调试打包产物时，可直接解压运行，无需上传或安装：
+> 
+> ```bash
+> zcode_version=$(node -p "require('./dist/zcode/latest.json').version")
+> mkdir -p dist/zcode/debug
+> tar -xzf "dist/zcode/releases/$zcode_version/zcode-$zcode_version.tar.gz" \
+>   -C dist/zcode/debug
+> # 默认启动 TUI
+> node dist/zcode/debug/zcode/bin/zcode.mjs
+> 
+> # 启动 Web
+> node dist/zcode/debug/zcode/bin/zcode.mjs --web \
+>   --workspace "$PWD" --port 3030 --no-open
+> ```
+> 
+> 浏览器打开 `http://127.0.0.1:3030`，即可验证同一后端服务托管 Web 页面和 Agent 的完整链路。该端口需要空闲；如正在运行 `pnpm dev:web`，可改用其他 `--port`。
+> 
+> ## 仓库结构
+> 
+> | 目录                                                 | 职责                                       |
+> | ---------------------------------------------------- | ------------------------------------------ |
+> | `packages/desktop`                                   | Electron Main、Host、Renderer 与桌面打包   |
+> | `packages/web`                                       | Web 客户端                                 |
+> | `packages/server`                                    | HTTP / WebSocket 服务与远程连接            |
+> | `packages/zcode-server-cli`                          | 独立 Server 启动与进程管理                 |
+> | `packages/ui`                                        | 共享 React 组件、hooks 与 Zustand 状态     |
+> | `packages/services`                                  | 业务服务与持久化                           |
+> | `packages/shared`、`packages/rpc`、`packages/client` | 共享协议和类型、RPC 框架、Agent 客户端 SDK |
+> | `packages/provider`、`packages/provider-node`        | Provider 公共能力与 Node 实现              |
+> | `apps/zcode-cli`                                     | Agent CLI、TUI、运行时与工具               |
+> | `scripts`、`config`、`third-party`                   | 构建维护脚本、内置配置与第三方声明材料     |
+> 
+> ## 项目声明
+> 
+> 功能与优惠范围、维护规则、执行与数据风险，以及许可和第三方版权说明，详见 [NOTICE.md](NOTICE.md)。
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/tamaratran/fast-jev-compaction)
+[GitHub](https://github.com/zai-org/ZCode) · [官方網站](https://zcode.z.ai/)
 
 ## 相關收錄
 
@@ -317,7 +405,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE category = "Other" AND file.name != "zai-org--ZCode"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -326,7 +414,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "tamaratran--fast-jev-compaction" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "zai-org--ZCode" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -335,18 +423,18 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE week = "2026-W39" AND file.name != "zai-org--ZCode"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/zai-org--ZCode");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "tamaratran--fast-jev-compaction" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "zai-org--ZCode" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -362,7 +450,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "tamaratran" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE owner = "zai-org" AND file.name != "zai-org--ZCode"
 > SORT stars DESC
 > ```
 
@@ -370,7 +458,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/zai-org--ZCode");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -387,7 +475,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/zai-org--ZCode");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -420,7 +508,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/zai-org--ZCode");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -444,7 +532,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/zai-org--ZCode");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -481,7 +569,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/zai-org--ZCode");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -564,7 +652,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-18** — 首次收錄
+> **2026-09-21** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -580,7 +668,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-21|2026-09-21]] — 再次上榜，5.4k stars
-- [[2026-09-20|2026-09-20]] — 再次上榜，4.4k stars
-- [[2026-09-19|2026-09-19]] — 再次上榜，3.5k stars
-- [[2026-09-18|2026-09-18]] — 首次收錄，1.2k stars
+- [[2026-09-21|2026-09-21]] — 首次收錄，3.5k stars

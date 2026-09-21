@@ -7,12 +7,12 @@ language: Python
 license: MIT
 description: "A nano replica of Jev: parallel decisions, dynamic candidates, and an end-to-end training pipeline."
 homepage: ""
-stars: 1072
-stars_per_day: 536
-forks: 141
+stars: 1562
+stars_per_day: 521
+forks: 180
 open_issues: 6
 created: 2026-09-17
-pushed_at: 2026-09-17
+pushed_at: 2026-09-20
 first_seen: 2026-09-20
 week: "2026-W39"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-23"
+appearances: 2
+next_review: "2026-09-24"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-20"
-star_history: "2026-09-20:1072"
+star_history: "2026-09-20:1072,2026-09-21:1562"
 tags:
   - github
   - "category/other"
@@ -604,4 +604,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-21|2026-09-21]] — 再次上榜，1.6k stars
 - [[2026-09-20|2026-09-20]] — 首次收錄，1.1k stars

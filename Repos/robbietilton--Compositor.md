@@ -7,12 +7,12 @@ language: Swift
 license: MIT
 description: "The Photoshop alternative for Mac"
 homepage: ""
-stars: 2821
-stars_per_day: 940
-forks: 301
-open_issues: 28
+stars: 3835
+stars_per_day: 959
+forks: 408
+open_issues: 37
 created: 2026-09-16
-pushed_at: 2026-09-18
+pushed_at: 2026-09-21
 first_seen: 2026-09-19
 week: "2026-W38"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-23"
+appearances: 3
+next_review: "2026-09-24"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-19"
-star_history: "2026-09-19:926,2026-09-20:2821"
+star_history: "2026-09-19:926,2026-09-20:2821,2026-09-21:3835"
 tags:
   - github
   - "category/other"
@@ -538,5 +538,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-21|2026-09-21]] — 再次上榜，3.8k stars
 - [[2026-09-20|2026-09-20]] — 再次上榜，2.8k stars
 - [[2026-09-19|2026-09-19]] — 首次收錄，926 stars
