@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "i. am. speed."
 homepage: "https://browser-use.com"
-stars: 12851
-stars_per_day: 3213
-forks: 792
-open_issues: 88
+stars: 16482
+stars_per_day: 3296
+forks: 1037
+open_issues: 110
 created: 2026-09-16
 pushed_at: 2026-09-18
 first_seen: 2026-09-18
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-09-24"
+appearances: 5
+next_review: "2026-09-25"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-18"
-star_history: "2026-09-18:2896,2026-09-19:5947,2026-09-20:9273,2026-09-21:12851"
+star_history: "2026-09-18:2896,2026-09-19:5947,2026-09-20:9273,2026-09-21:12851,2026-09-22:16482"
 tags:
   - github
   - "category/other"
@@ -591,6 +591,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-22|2026-09-22]] — 再次上榜，16.5k stars
 - [[2026-09-21|2026-09-21]] — 再次上榜，12.9k stars
 - [[2026-09-20|2026-09-20]] — 再次上榜，9.3k stars
 - [[2026-09-19|2026-09-19]] — 再次上榜，5.9k stars

@@ -4250,17 +4250,17 @@
   },
   "browser-use/jev-ultrafast": {
     "first_seen": "2026-09-18",
-    "last_seen": "2026-09-21",
-    "times_seen": 4,
+    "last_seen": "2026-09-22",
+    "times_seen": 5,
     "stars_first": 2896,
-    "stars_last": 12851
+    "stars_last": 16482
   },
   "tamaratran/fast-jev-compaction": {
     "first_seen": "2026-09-18",
-    "last_seen": "2026-09-21",
-    "times_seen": 4,
+    "last_seen": "2026-09-22",
+    "times_seen": 5,
     "stars_first": 1152,
-    "stars_last": 5442
+    "stars_last": 6059
   },
   "TheoLeeCJ/openjev": {
     "first_seen": "2026-09-18",
@@ -4285,38 +4285,38 @@
   },
   "TheoLeeCJ/SemIf": {
     "first_seen": "2026-09-19",
-    "last_seen": "2026-09-21",
-    "times_seen": 3,
+    "last_seen": "2026-09-22",
+    "times_seen": 4,
     "stars_first": 1647,
-    "stars_last": 2580
+    "stars_last": 3381
   },
   "mcncarl/jianying-headless": {
     "first_seen": "2026-09-19",
-    "last_seen": "2026-09-21",
-    "times_seen": 3,
+    "last_seen": "2026-09-22",
+    "times_seen": 4,
     "stars_first": 1164,
-    "stars_last": 2114
+    "stars_last": 2409
   },
   "jarrodwatts/jev-trader": {
     "first_seen": "2026-09-19",
-    "last_seen": "2026-09-21",
-    "times_seen": 3,
+    "last_seen": "2026-09-22",
+    "times_seen": 4,
     "stars_first": 929,
-    "stars_last": 1604
+    "stars_last": 1892
   },
   "robbietilton/Compositor": {
     "first_seen": "2026-09-19",
-    "last_seen": "2026-09-21",
-    "times_seen": 3,
+    "last_seen": "2026-09-22",
+    "times_seen": 4,
     "stars_first": 926,
-    "stars_last": 3835
+    "stars_last": 4520
   },
   "NandhaKishorM/laya": {
     "first_seen": "2026-09-20",
-    "last_seen": "2026-09-21",
-    "times_seen": 2,
+    "last_seen": "2026-09-22",
+    "times_seen": 3,
     "stars_first": 1650,
-    "stars_last": 5397
+    "stars_last": 11830
   },
   "TianyuCodings/NanoJev": {
     "first_seen": "2026-09-20",
@@ -4334,16 +4334,23 @@
   },
   "zai-org/ZCode": {
     "first_seen": "2026-09-21",
-    "last_seen": "2026-09-21",
-    "times_seen": 1,
+    "last_seen": "2026-09-22",
+    "times_seen": 2,
     "stars_first": 3530,
-    "stars_last": 3530
+    "stars_last": 5905
   },
   "mizorewww/laya-mlx": {
     "first_seen": "2026-09-21",
-    "last_seen": "2026-09-21",
-    "times_seen": 1,
+    "last_seen": "2026-09-22",
+    "times_seen": 2,
     "stars_first": 2009,
-    "stars_last": 2009
+    "stars_last": 4267
+  },
+  "jaredpalmer/kev": {
+    "first_seen": "2026-09-22",
+    "last_seen": "2026-09-22",
+    "times_seen": 1,
+    "stars_first": 2679,
+    "stars_last": 2679
   }
 }

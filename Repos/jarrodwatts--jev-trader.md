@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "One AI trade decision every Monad block. Jev on Kuru MON-USDC."
 homepage: ""
-stars: 1604
-stars_per_day: 401
-forks: 302
+stars: 1892
+stars_per_day: 378
+forks: 363
 open_issues: 4
 created: 2026-09-16
 pushed_at: 2026-09-17
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-09-24"
+appearances: 4
+next_review: "2026-09-25"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-19"
-star_history: "2026-09-19:929,2026-09-20:1346,2026-09-21:1604"
+star_history: "2026-09-19:929,2026-09-20:1346,2026-09-21:1604,2026-09-22:1892"
 tags:
   - github
   - "category/other"
@@ -527,6 +527,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-22|2026-09-22]] — 再次上榜，1.9k stars
 - [[2026-09-21|2026-09-21]] — 再次上榜，1.6k stars
 - [[2026-09-20|2026-09-20]] — 再次上榜，1.3k stars
 - [[2026-09-19|2026-09-19]] — 首次收錄，929 stars

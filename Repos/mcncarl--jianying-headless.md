@@ -7,10 +7,10 @@ language: Python
 license: NOASSERTION
 description: "Private source preview: native Jianying drafts, isolated editing/export, and standalone Agent Skill."
 homepage: ""
-stars: 2114
-stars_per_day: 423
-forks: 1436
-open_issues: 9
+stars: 2409
+stars_per_day: 402
+forks: 1819
+open_issues: 10
 created: 2026-09-15
 pushed_at: 2026-09-20
 first_seen: 2026-09-19
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
-next_review: "2026-09-24"
+appearances: 4
+next_review: "2026-09-25"
 contributor_count: 1
 engagement: "high"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-19"
-star_history: "2026-09-19:1164,2026-09-20:1631,2026-09-21:2114"
+star_history: "2026-09-19:1164,2026-09-20:1631,2026-09-21:2114,2026-09-22:2409"
 tags:
   - github
   - "category/other"
@@ -612,6 +612,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-22|2026-09-22]] — 再次上榜，2.4k stars
 - [[2026-09-21|2026-09-21]] — 再次上榜，2.1k stars
 - [[2026-09-20|2026-09-20]] — 再次上榜，1.6k stars
 - [[2026-09-19|2026-09-19]] — 首次收錄，1.2k stars
