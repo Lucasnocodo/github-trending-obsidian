@@ -4250,17 +4250,17 @@
   },
   "browser-use/jev-ultrafast": {
     "first_seen": "2026-09-18",
-    "last_seen": "2026-09-22",
-    "times_seen": 5,
+    "last_seen": "2026-09-23",
+    "times_seen": 6,
     "stars_first": 2896,
-    "stars_last": 16482
+    "stars_last": 18342
   },
   "tamaratran/fast-jev-compaction": {
     "first_seen": "2026-09-18",
-    "last_seen": "2026-09-22",
-    "times_seen": 5,
+    "last_seen": "2026-09-23",
+    "times_seen": 6,
     "stars_first": 1152,
-    "stars_last": 6059
+    "stars_last": 6372
   },
   "TheoLeeCJ/openjev": {
     "first_seen": "2026-09-18",
@@ -4285,10 +4285,10 @@
   },
   "TheoLeeCJ/SemIf": {
     "first_seen": "2026-09-19",
-    "last_seen": "2026-09-22",
-    "times_seen": 4,
+    "last_seen": "2026-09-23",
+    "times_seen": 5,
     "stars_first": 1647,
-    "stars_last": 3381
+    "stars_last": 3903
   },
   "mcncarl/jianying-headless": {
     "first_seen": "2026-09-19",
@@ -4306,17 +4306,17 @@
   },
   "robbietilton/Compositor": {
     "first_seen": "2026-09-19",
-    "last_seen": "2026-09-22",
-    "times_seen": 4,
+    "last_seen": "2026-09-23",
+    "times_seen": 5,
     "stars_first": 926,
-    "stars_last": 4520
+    "stars_last": 4971
   },
   "NandhaKishorM/laya": {
     "first_seen": "2026-09-20",
-    "last_seen": "2026-09-22",
-    "times_seen": 3,
+    "last_seen": "2026-09-23",
+    "times_seen": 4,
     "stars_first": 1650,
-    "stars_last": 11830
+    "stars_last": 17536
   },
   "TianyuCodings/NanoJev": {
     "first_seen": "2026-09-20",
@@ -4334,23 +4334,37 @@
   },
   "zai-org/ZCode": {
     "first_seen": "2026-09-21",
-    "last_seen": "2026-09-22",
-    "times_seen": 2,
+    "last_seen": "2026-09-23",
+    "times_seen": 3,
     "stars_first": 3530,
-    "stars_last": 5905
+    "stars_last": 6376
   },
   "mizorewww/laya-mlx": {
     "first_seen": "2026-09-21",
-    "last_seen": "2026-09-22",
-    "times_seen": 2,
+    "last_seen": "2026-09-23",
+    "times_seen": 3,
     "stars_first": 2009,
-    "stars_last": 4267
+    "stars_last": 5595
   },
   "jaredpalmer/kev": {
     "first_seen": "2026-09-22",
-    "last_seen": "2026-09-22",
-    "times_seen": 1,
+    "last_seen": "2026-09-23",
+    "times_seen": 2,
     "stars_first": 2679,
-    "stars_last": 2679
+    "stars_last": 4666
+  },
+  "jev-chat/jev-chat-jarvis": {
+    "first_seen": "2026-09-23",
+    "last_seen": "2026-09-23",
+    "times_seen": 1,
+    "stars_first": 4372,
+    "stars_last": 4372
+  },
+  "Mak5er/AirCard": {
+    "first_seen": "2026-09-23",
+    "last_seen": "2026-09-23",
+    "times_seen": 1,
+    "stars_first": 2968,
+    "stars_last": 2968
   }
 }

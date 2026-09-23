@@ -1,64 +1,63 @@
 ---
-repo: browser-use/jev-ultrafast
-url: https://github.com/browser-use/jev-ultrafast
-owner: browser-use
-owner_type: Organization
-language: Python
+repo: Mak5er/AirCard
+url: https://github.com/Mak5er/AirCard
+owner: Mak5er
+owner_type: User
+language: Swift
 license: MIT
-description: "i. am. speed."
-homepage: "https://browser-use.com"
-stars: 18342
-stars_per_day: 3057
-forks: 1189
-open_issues: 117
+description: "Apple Wallet Card Skinner for iOS 18+ (No Jailbreak Required)"
+homepage: ""
+stars: 2968
+stars_per_day: 495
+forks: 123
+open_issues: 17
 created: 2026-09-16
-pushed_at: 2026-09-18
-first_seen: 2026-09-18
-week: "2026-W38"
+pushed_at: 2026-09-22
+first_seen: 2026-09-23
+week: "2026-W39"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v1.2.4"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-18
+last_reviewed: 2026-09-23
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
+appearances: 1
 next_review: "2026-09-26"
-contributor_count: 1
+contributor_count: 5
 engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 4478
-readme_length: 7898
+issue_close_rate: 35
+repo_size_kb: 3414
+readme_length: 5692
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-18"
-star_history: "2026-09-18:2896,2026-09-19:5947,2026-09-20:9273,2026-09-21:12851,2026-09-22:16482,2026-09-23:18342"
+ring_history: "assess@2026-09-23"
+star_history: "2026-09-23:2968"
 tags:
   - github
   - "category/other"
-  - "lang/python"
-  - org
+  - "lang/swift"
 aliases:
-  - "jev-ultrafast"
-  - "browser-use/jev-ultrafast"
+  - "AirCard"
+  - "Mak5er/AirCard"
 ---
 
-# jev-ultrafast
+# AirCard
 
-**2.9k** stars · **2.9k** stars/天 · 建立 1 天前 · Python · MIT
+**3.0k** stars · **495** stars/天 · 建立 6 天前 · Swift · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/browser-use--jev-ultrafast");
+const me = dv.page("Repos/Mak5er--AirCard");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`v1.2.4`
 
 > [!summary] 一句話摘要
-> i. am. speed.
+> Apple Wallet Card Skinner for iOS 18+ (No Jailbreak Required)
 
 ## 專案簡介
 
-i. am. speed.
+Apple Wallet Card Skinner for iOS 18+ (No Jailbreak Required)
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/Mak5er--AirCard");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +118,7 @@ i. am. speed.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/Mak5er--AirCard");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,184 +142,190 @@ i. am. speed.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 161 |
-| Open Issues | 19 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-18 |
+| Forks | 123 |
+| Open Issues | 17 |
+| Issue 解決率 | 35% (9 closed) |
+| 最後推送 | 2026-09-22 |
 | 建立日期 | 2026-09-16 |
-| 官方網站 | [Link](https://browser-use.com) |
-| Repo 大小 | 4.4 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/browser-use/jev-ultrafast) |
+| Repo 大小 | 3.3 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Mak5er/AirCard) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 58
->     "HTML" : 18
->     "JavaScript" : 13
->     "CSS" : 10
+>     "Swift" : 49
+>     "Python" : 25
+>     "Objective-C" : 23
+>     "Shell" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@gregpr07](https://github.com/gregpr07) | 2 |
+> | [@Mak5er](https://github.com/Mak5er) | 36 |
+> | [@max-jang](https://github.com/max-jang) | 4 |
+> | [@Copilot](https://github.com/Copilot) | 2 |
+> | [@Chinteyley](https://github.com/Chinteyley) | 1 |
+> | [@Ketchio-dev](https://github.com/Ketchio-dev) | 1 |
+
+**最新版本**：v1.2.4 — AirCard v1.2.4 (2026-09-22)
+
+> [!info]- Release Notes
+> ### What's Changed in v1.2.4:
+> 
+> • **Auto-detection for Keypad Language & Bold Text**:
+>   - Automatically queries device locale, language, and Bold Text accessibility settings via `MobileDevice.framework`.
+>   - Passcode themes now only flash relevant assets (~20 files instead of 600+), reducing flash time from minutes down to ~2 seconds.
+> 
+> • **Stale Wallet Artwork Invalidation (PR #31)**:
+>   - Fixes stale card artwork remaining cached indefinitely on iOS 27 / modern iOS by properly unlinking rendered cached faces (`.cache` and `.pkcache`).
+> 
+> • **Unified Device Log Card Detection (PR #34)**:
+>   - Robust live card hash discovery using unified device log streaming via `device_helper`.
+> 
+> • **Card Backup & Recovery Read Path (PR #35)**:
+>   - Adds safe card artwork reading and extraction via `afc-read` helper command.
+> 
+> • **Hardware-Independent Test Suite**:
+>   - Mocked device helpers to ensure offline unit tests pass reliably and quickly.
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-17 ~ 2026-09-17）
-> **活躍天數** 1 天 · **最新 commit** Reduce browser round trips and record a 7-second Flights demo
+> [!abstract] 最近 10 次 commit（2026-09-21 ~ 2026-09-22）
+> **活躍天數** 2 天 · **最新 commit** chore(release): bump version to 1.2.4
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#16](https://github.com/browser-use/jev-ultrafast/issues/16) | Setup friction: SOCKS proxy crash on startup; browser-harnes | 0 | 0 |
+> | [#19](https://github.com/Mak5er/AirCard/issues/19) | Revert Back to Original Design | 6 | 6 |
+> | [#21](https://github.com/Mak5er/AirCard/issues/21) | [Feature Request] Change Card Number and Color | 3 | 1 |
+> | [#25](https://github.com/Mak5er/AirCard/issues/25) | iOS 27 transit-card detection requires Wallet Service Mode | 1 | 5 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Jev Ultrafast ⚡
+> # AirCard 🎴
 > 
-> **A browser agent with a dynamic, indexed action space.**
+> > **Apple Wallet Card Skinner & Lockscreen Passcode Themer for iOS 18+ (No Jailbreak Required)**  
+> > **Tested on iOS 27 release.**
+> > Powered by the `airlift` AirTraffic sync exploit.
 > 
-> Give it one goal. [TypeSafe's Jev](https://docs.typesafe.ai/introduction) picks an operation and an element. A small LLM writes text only when the operation is `TYPE_TEXT`.
-> 
-> **Zürich → London on Google Flights in 7.1 seconds.** One natural-language goal, actual text generation, and loading waits included.
-> 
-> [Watch the MP4](docs/demo.mp4) · [Measurements](docs/performance.md) · [Read the loop](jev_ultrafast/agent.py)
-> 
-> ## The action space
-> 
-> Every observation produces a new element table:
-> 
-> ```text
-> [1] button    Change ticket type · Round trip
-> [2] combobox  Where from?        · San Francisco
-> [3] combobox  Where to?          · empty
-> [4] textbox   Departure          · empty
-> ...
-> ```
-> 
-> The operations are `CLICK`, `TYPE_TEXT`, `SELECT`, `SCROLL_UP`, `SCROLL_DOWN`, `WAIT`, `DONE`, and `BLOCKED`. Only supported operations and targets are offered.
-> 
-> ```text
->                       one TypeSafe request
->                      ┌───────────────────────────┐
-> page → element table → operation                 │
->                      │ click_target              │
->                      │ type_text_target          │
->                      │ select_target, if present │
->                      └─────────────┬─────────────┘
->                          use the matching target
->                                    │
->                     CLICK [7] ─────┤──→ browser
->                 TYPE_TEXT [3] ─────┘
->                           ↓
->                    small LLM → text → browser
-> ```
-> 
-> Target questions are speculative. If the operation is `CLICK`, only `click_target` can execute. Two decisions, **one network round trip**. Each target head contains only compatible elements. Native dropdown choices carry an observed element/option index.
-> 
-> There are no site-specific action scripts or prepared field strings in the policy. The Flights example supplies a goal and independently verifies the outcome. The screenshot renderer adds labels afterward; it does not drive the browser.
-> 
-> ## Try it
-> 
-> ```bash
-> git clone https://github.com/browser-use/jev-ultrafast.git
-> cd jev-ultrafast
-> uv sync
-> cp .env.example .env
-> # Add TYPESAFE_API_KEY and TEXT_MODEL_API_KEY.
-> uv run jev
-> ```
-> 
-> Open **http://127.0.0.1:8766** and click **Start demo → Run automatically**. The inspector shows numbered elements, operation probabilities, target probabilities, and executed actions. **Choose next** pauses before execution.
-> 
-> Chrome connects through [Browser Harness](https://github.com/browser-use/browser-harness), installed by `uv sync`. Run `uv run browser-harness --doctor` if it needs connecting. Allow remote debugging in Chrome when prompted.
-> 
-> `TEXT_MODEL_API_KEY` is an OpenRouter key in the example configuration. The current demo uses `inception/mercury-2.5` with reasoning disabled. Gemini, GLM, and DeepSeek can also use the OpenAI-compatible text helper; configure the appropriate model, endpoint, and reasoning setting.
-> 
-> ## Use the library
-> 
-> ```python
-> from jev_ultrafast import Agent
-> 
-> with Agent(
->     "https://www.google.com/travel/flights?hl=en",
->     "Find one-way flights from Zurich to London on September 20, 2026, "
->     "for one adult in economy. Stop when matching flight options are visible.",
-> ) as agent:
->     for state in agent.run():
->         print(state["elapsed_ms"], state["status"])
-> ```
-> 
-> Run with `uv run --env-file .env python your_script.py`. The same policy can run a different task:
-> 
-> ```bash
-> uv run --env-file .env python examples/run.py \
->   --url https://en.wikipedia.org/wiki/Main_Page \
->   --goal 'Find and open the Wikipedia article about Gödel’s incompleteness theorems.'
-> ```
-> 
-> `uv run --env-file .env python examples/flights.py --keep-open` performs the flight search, checks the actual route/date/results, and saves its trace. It does not select or book a flight.
-> 
-> ## Why it moves
-> 
-> - **One request per decision cycle.** Operation and target heads share the same observed state.
-> - **No screenshots in the default agent loop.** Jev consumes structured state. The inspector opts into screenshots; the video uses a separate continuous screencast.
-> - **One browser call per snapshot.** Read visible controls, their names, values, and text atomically. Keep references to the actual DOM nodes.
-> - **Validate the selected target.** Clicks check the document, form values, target, and nearby context. Animation alone does not force another prediction. Resolve current geometry and reject covered controls before input.
-> - **Wait for useful state.** After typing into a combobox, wait for visible suggestions, capped at 200 ms. Other interactions get at most two animation frames or 50 ms. These reads happen after execution is logged.
-> - **Keep hidden tabs rendering.** Focus emulation prevents background animation throttling without switching Chrome's visible tab.
-> - **Send visible text.** Offscreen article bodies and footers do not fill the model context.
-> - **Reuse an interrupted text request.** A generated value survives a stale-page retry only if the entire text-helper input is unchanged.
-> 
-> Every executed target is resolved from an observed node. The executor rechecks page freshness and click occlusion. Model output never becomes selectors, coordinates, shell commands, or executable JavaScript. Text-helper output must parse as a small JSON object before typing.
-> 
-> ## Small enough to read
-> 
-> | File | Job |
-> | --- | --- |
-> | [agent.py](jev_ultrafast/agent.py) | The complete loop and text-helper handoff |
-> | [snapshot.js](jev_ultrafast/snapshot.js) | Atomic DOM snapshot, indexed controls, freshness guards |
-> | [browser.py](jev_ultrafast/browser.py) | Browser connection, current geometry, execution |
-> | [model.py](jev_ultrafast/model.py) | Dynamic operation/target heads and text generation |
-> | [questions.py](jev_ultrafast/questions.py) | Model instructions |
-> | [demo.py](jev_ultrafast/demo.py) | Local inspector |
-> 
-> ## Evidence and limits
-> 
-> The current video is a **7,073 ms** Google Flights run. Timing starts after initial page observation and includes model calls, generated text, browser work, stale decisions, and loading waits. A fresh independent check verifies the one-way setting, Zürich, London, September 20, 2026, and visible flight options. The video plays at 1×, with no opening hold and a 0.5-second final hold.
-> 
-> In six alternating runs with identical models and settings, both versions passed **3/3**. Median task time went from **9.450 s → 7.092 s**, a **25% reduction**; median browser protocol calls went from **1,092 → 101**. This is three repeats of one task on one browser profile, not a general reliability benchmark.
-> 
-> The same policy opened the requested Wikipedia article in **2.798 s** and passed a local hotel search/filter task in **1.896 s**. Runs, failures, source hashes, and measurement boundaries are in [performance.md](docs/performance.md).
-> 
-> A `DONE` choice still requires independent outcome verification. The DOM reader handles common HTML and ARIA controls, not the full accessible-name specification. Shadow roots, frames, canvas, uploads, pop-up tabs, nested scrolling, and arbitrary keyboard widgets remain outside this MVP. Owned tabs share the existing Chrome profile.
-> 
-> ## Development
-> 
-> ```bash
-> uv run ruff check .
-> uv run pytest
-> node --check jev_ultrafast/static/app.js
-> node --check jev_ultrafast/snapshot.js
-> uv build
-> ```
-> 
-> Tests are offline. `uv run python scripts/check_guards.py` checks real controls in a local browser without model calls. Live examples and recording scripts make paid API calls. `scripts/record_flights.py ` captures original browser timestamps; `scripts/render_demo.py ` renders that verified run at 1× and crops out the Google account strip. Credentials and raw traces stay ignored.
+>   
 > 
 > ---
 > 
-> [Browser Use](https://github.com/browser-use/browser-use) · [Browser Harness](https://github.com/browser-use/browser-harness) · [TypeSafe speculative fan-out](https://docs.typesafe.ai/patterns/fan-out)
+> ## Features
+> - 🎨 **Custom Card Skins:** Assign custom artwork, textures, or bank logos to Apple Pay and Wallet cards.
+> - 🔢 **Lock Screen Passcode Themes (.passthm):** Apply custom keypad button artwork from popular `.passthm` themes directly to iOS 18+ lockscreen.
+> - 🧩 **Passcode Theme Creator:** Create custom themes from a single wallpaper (Seamless Poster Slicing) or build key-by-key (Individual Keys).
+> - 🔍 **Interactive Photo Framing:** Pan and zoom artwork directly inside keypad buttons with real-time iPhone preview.
+> - ✏️ **Edit Existing .passthm Themes:** Open any Cowabunga or Nugget theme package directly in the creator, tweak button artwork, reposition photos, and re-export or flash.
+> - ⚡ **Per-Card & Bulk Customization:** Set unique artwork for each card or apply one design across all cards with a single click.
+> - 📱 **Zero-Hassle Card Detection:** Tap any card in your iPhone's Wallet app to detect its hash in real-time.
+> - 🚀 **100% Standalone (Universal):** Native support for both **Apple Silicon** and **Intel (x86)** Macs. All required device-communication utilities and image engines are pre-bundled inside the app.
+> - 📦 **Zero Prerequisites:** No Homebrew, Python packages, or terminal setup required for macOS users.
+> 
+> ---
+> 
+> ## Installation
+> 
+> ### macOS (Universal DMG)
+> 1. Download **`AirCard.dmg`** from [Releases](https://github.com/mak5er/AirCard/releases).
+> 2. Open `AirCard.dmg` and drag **`AirCard.app`** into your **Applications** folder.
+> 3. Fully compatible with both **Apple Silicon** and **Intel (x86)** Macs.
+> 
+> > [!NOTE]
+> > **First Launch on macOS (Gatekeeper):**
+> > If macOS displays an unidentified developer prompt on first launch:
+> > - **Method 1 (UI):** Right-click (or Control-click) `AirCard.app` in Applications ➔ click **Open** ➔ click **Open**.
+> > - **Method 2 (Terminal):**
+> >   ```sh
+> >   sudo xattr -cr /Applications/AirCard.app
+> >   ```
+> 
+> ---
+> 
+> ## How to Customize Apple Wallet Cards
+> 1. Connect your iPhone to your Mac via USB cable and ensure it is unlocked and trusted.
+> 2. In AirCard, stay on the **Wallet Cards** tab and click **Scan Cards**.
+> 3. On your iPhone:
+>    - **Double-click the Side (Power) button** to open Apple Pay.
+>    - Authenticate with **Face ID**.
+>    - **Tap your card** (or tap it once more) to trigger instant detection!
+> 4. Click on any card mockup or drag & drop an image directly onto the card.
+> 5. Click **Flash Skins**.
+> 6. Force-close the **Wallet** app on your iPhone from the App Switcher (or reboot) to see your new custom card design!
+> 
+> ### If scanning finds no cards
+> 
+> The scanner uses the iPhone's unified log service, including Info/Debug events.
+> On iOS 18.6.2, the legacy log service can show Wallet activity while omitting the
+> resource lookup messages that contain card identifiers.
+> 
+> Open **Log** and check for `Connected to the unified device log stream`, then
+> double-click the side button, authenticate, and tap or switch cards. If the log
+> reader stops, reconnect and unlock the iPhone, then start another scan. Values
+> that iOS replaces with `` cannot be recovered by the scanner.
+> 
+> If your device previously connected but scanning found zero cards, please try
+> this build and report whether it helps. Include your iPhone model, iOS version,
+> macOS version, and the AirCard version or commit tested. Avoid posting full
+> device logs or card identifiers. See [scanner validation](docs/wallet-card-detection.md)
+> for the verified environment and remaining coverage.
+> 
+> ---
+> 
+> ## How to Apply Lockscreen Passcode Themes (.passthm)
+> 1. Switch to the **Passcode Themes** tab at the top of AirCard.
+> 2. Drag & drop any `.passthm` file into the app (or click **Choose .passthm File**).
+> 3. AirCard will inspect the theme and display an interactive preview on the numeric keypad (0–9, *, #).
+> 4. Click **Apply Passcode Theme**.
+> 5. Restart your iPhone to reload the lock screen cache and see your custom passcode buttons!
+> 
+> > [!TIP]
+> > **Universal Language & Bold Text Support:**  
+> > AirCard automatically expands and flashes custom keypad assets for all system locales (English, Ukrainian, Russian, Spanish, German, French, etc.) and generates both standard and **Bold Text** cache bitmaps (`--white` and `--white-bold`), ensuring your theme works regardless of your iOS language or accessibility display settings!
+> 
+> ---
+> 
+> ## Building from Source
+> 
+> ```sh
+> git clone https://github.com/mak5er/AirCard.git
+> cd AirCard
+> chmod +x build.sh
+> ./build.sh
+> ```
+> This builds universal binaries (`arm64` + `x86_64`), bundles dependencies into `build/AirCard.app`, and outputs `build/AirCard.dmg`.
+> 
+> ---
+> 
+> ## Contributors
+> - **[@mak5er](https://github.com/mak5er)** (Developer) — [GitHub](https://github.com/mak5er) · [Twitter / X](https://x.com/mak5er)
+> - **[@Lumid-Off](https://github.com/Lumid-Off)** (Contributor & Developer) — [GitHub](https://github.com/Lumid-Off) · [Twitter / X](https://x.com/LumidOff)
+> - **[AirLift](https://github.com/0xjohnnydev/airlift)** by **[0xjohnny (@0xjohnnydev)](https://github.com/0xjohnnydev)**: Original AirTraffic/ATAirlock sandbox escape and proof of concept underlying `AirliftFFI`.
+> 
+> ## Credits
+> - Core exploit based on `airlift` (AirTraffic sync escape).
+> 
+> ---
+> 
+> ## Support
+> 
+> If you find AirCard useful, you can support future development:
+> 
+> - **PayPal**: [Donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=98QRTC2HFRA4Y)
+> - **TON**: `UQBm9KPhtMw-XVVjirUoa09wzrlyWsbeZhKfefl1Uw-qNZ-r`
+> - **USDT (TRC20)**: `TDkDMCyjYxgvkWUnQiF5Erk2RyPQMT6G1n`
+> - **USDT / BNB (BEP20)**: `0x0954dc491c502849d04956ef74634aa5931a08e8`
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/browser-use/jev-ultrafast) · [官方網站](https://browser-use.com)
+[GitHub](https://github.com/Mak5er/AirCard)
 
 ## 相關收錄
 
@@ -328,7 +333,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "browser-use--jev-ultrafast"
+> WHERE category = "Other" AND file.name != "Mak5er--AirCard"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -337,7 +342,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "browser-use--jev-ultrafast" AND status != "archived"
+> WHERE language = "Swift" AND file.name != "Mak5er--AirCard" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -346,18 +351,18 @@ i. am. speed.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "browser-use--jev-ultrafast"
+> WHERE week = "2026-W39" AND file.name != "Mak5er--AirCard"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/Mak5er--AirCard");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "browser-use--jev-ultrafast" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Mak5er--AirCard" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -373,7 +378,7 @@ i. am. speed.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "browser-use" AND file.name != "browser-use--jev-ultrafast"
+> WHERE owner = "Mak5er" AND file.name != "Mak5er--AirCard"
 > SORT stars DESC
 > ```
 
@@ -381,7 +386,7 @@ i. am. speed.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/Mak5er--AirCard");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -398,7 +403,7 @@ i. am. speed.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/Mak5er--AirCard");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -431,7 +436,7 @@ i. am. speed.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/Mak5er--AirCard");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -455,7 +460,7 @@ i. am. speed.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/Mak5er--AirCard");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -492,7 +497,7 @@ i. am. speed.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/browser-use--jev-ultrafast");
+> const me = dv.page("Repos/Mak5er--AirCard");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -575,7 +580,7 @@ i. am. speed.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-18** — 首次收錄
+> **2026-09-23** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -591,9 +596,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-23|2026-09-23]] — 再次上榜，18.3k stars
-- [[2026-09-22|2026-09-22]] — 再次上榜，16.5k stars
-- [[2026-09-21|2026-09-21]] — 再次上榜，12.9k stars
-- [[2026-09-20|2026-09-20]] — 再次上榜，9.3k stars
-- [[2026-09-19|2026-09-19]] — 再次上榜，5.9k stars
-- [[2026-09-18|2026-09-18]] — 首次收錄，2.9k stars
+- [[2026-09-23|2026-09-23]] — 首次收錄，3.0k stars

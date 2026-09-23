@@ -7,10 +7,10 @@ language: Python
 license: MIT
 description: "Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe."
 homepage: "openjev.com"
-stars: 3381
-stars_per_day: 564
-forks: 220
-open_issues: 14
+stars: 3903
+stars_per_day: 558
+forks: 255
+open_issues: 22
 created: 2026-09-16
 pushed_at: 2026-09-21
 first_seen: 2026-09-19
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-09-25"
+appearances: 5
+next_review: "2026-09-26"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-19"
-star_history: "2026-09-19:1647,2026-09-20:2021,2026-09-21:2580,2026-09-22:3381"
+star_history: "2026-09-19:1647,2026-09-20:2021,2026-09-21:2580,2026-09-22:3381,2026-09-23:3903"
 tags:
   - github
   - "category/other"
@@ -624,6 +624,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-23|2026-09-23]] — 再次上榜，3.9k stars
 - [[2026-09-22|2026-09-22]] — 再次上榜，3.4k stars
 - [[2026-09-21|2026-09-21]] — 再次上榜，2.6k stars
 - [[2026-09-20|2026-09-20]] — 再次上榜，2.0k stars

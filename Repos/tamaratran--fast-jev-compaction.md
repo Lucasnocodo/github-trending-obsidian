@@ -7,10 +7,10 @@ language: TypeScript
 license: MIT
 description: "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim."
 homepage: ""
-stars: 6059
-stars_per_day: 1515
-forks: 338
-open_issues: 71
+stars: 6372
+stars_per_day: 1274
+forks: 363
+open_issues: 75
 created: 2026-09-17
 pushed_at: 2026-09-18
 first_seen: 2026-09-18
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-09-25"
+appearances: 6
+next_review: "2026-09-26"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-18"
-star_history: "2026-09-18:1152,2026-09-19:3493,2026-09-20:4426,2026-09-21:5442,2026-09-22:6059"
+star_history: "2026-09-18:1152,2026-09-19:3493,2026-09-20:4426,2026-09-21:5442,2026-09-22:6059,2026-09-23:6372"
 tags:
   - github
   - "category/other"
@@ -580,6 +580,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-23|2026-09-23]] — 再次上榜，6.4k stars
 - [[2026-09-22|2026-09-22]] — 再次上榜，6.1k stars
 - [[2026-09-21|2026-09-21]] — 再次上榜，5.4k stars
 - [[2026-09-20|2026-09-20]] — 再次上榜，4.4k stars

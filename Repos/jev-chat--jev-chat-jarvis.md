@@ -1,0 +1,736 @@
+---
+repo: jev-chat/jev-chat-jarvis
+url: https://github.com/jev-chat/jev-chat-jarvis
+owner: jev-chat
+owner_type: Organization
+language: Kotlin
+license: MIT
+description: "装在手机上的对话副驾：在微信 / QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。"
+homepage: ""
+stars: 4372
+stars_per_day: 4372
+forks: 912
+open_issues: 38
+created: 2026-09-21
+pushed_at: 2026-09-23
+first_seen: 2026-09-23
+week: "2026-W39"
+month: "2026-09"
+category: "Other"
+subcategory: ""
+release_tag: "v1.3"
+install_complexity: "unknown"
+status: to-review
+my_rating: 0
+score_confidence: 0
+score_interest: 0
+score_risk: 0
+last_reviewed: 2026-09-23
+use_case: ""
+priority: high
+ring: assess
+discovered_via: "GitHub Trending"
+appearances: 1
+next_review: "2026-09-26"
+contributor_count: 2
+engagement: "medium"
+issue_close_rate: 3
+repo_size_kb: 15640
+readme_length: 8354
+bus_factor: 1
+last_release_days: 1
+release_cadence: "weekly"
+verdict: ""
+ring_history: "assess@2026-09-23"
+star_history: "2026-09-23:4372"
+tags:
+  - github
+  - "category/other"
+  - "lang/kotlin"
+  - org
+  - "topic/accessibility_service"
+  - "topic/android"
+  - "topic/chat_assistant"
+  - "topic/llm"
+  - "topic/qq"
+aliases:
+  - "jev-chat-jarvis"
+  - "jev-chat/jev-chat-jarvis"
+---
+
+# jev-chat-jarvis
+
+**4.4k** stars · **4.4k** stars/天 · 建立 1 天前 · Kotlin · MIT
+
+```dataviewjs
+const me = dv.page("Repos/jev-chat--jev-chat-jarvis");
+if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
+  const parts = [];
+  if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
+  if (me.ring && me.ring !== "assess") parts.push("Ring: **" + me.ring + "**");
+  if (me.verdict) parts.push(me.verdict);
+  dv.paragraph("> [!success] 你的結論\n> " + parts.join(" / "));
+}
+```
+
+> [!warning] AI 摘要產生失敗
+> 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
+
+`ORG` `v1.3`
+
+`accessibility-service` `android` `chat-assistant` `llm` `qq` `wechat`
+
+> [!summary] 一句話摘要
+> 装在手机上的对话副驾：在微信 / QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。
+
+## 專案簡介
+
+装在手机上的对话副驾：在微信 / QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。
+
+## 健康度儀表板
+
+> [!abstract]- 專案健康度綜合評估
+> ```dataviewjs
+> const me = dv.page("Repos/jev-chat--jev-chat-jarvis");
+> if (me) {
+>   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
+>   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
+>   const created = me.created ? new Date(me.created.toString()) : null;
+>   const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : null;
+>   const forkRatio = me.stars > 0 ? ((me.forks || 0) / me.stars * 100).toFixed(1) : 0;
+>   const issueRatio = me.stars > 0 ? ((me.open_issues || 0) / me.stars * 100).toFixed(1) : 0;
+>   const maint = daysSincePush === null ? "?" : daysSincePush <= 7 ? "Active" : daysSincePush <= 30 ? "Moderate" : "Stale";
+>   const busFactor = (me.forks || 0) > 50 ? "Good" : (me.forks || 0) > 10 ? "OK" : "Risk";
+>   // v29: README 品質和 Issue 解決率
+>   const readmeLen = me.readme_length || 0;
+>   const readmeQ = readmeLen > 5000 ? "Excellent" : readmeLen > 2000 ? "Good" : readmeLen > 500 ? "Basic" : readmeLen > 0 ? "Minimal" : "None";
+>   const icr = me.issue_close_rate;
+>   const icrLabel = icr === undefined || icr < 0 ? "N/A" : icr + "%";
+>   const icrEval = icr === undefined || icr < 0 ? "?" : icr >= 80 ? "Excellent" : icr >= 50 ? "Good" : icr >= 20 ? "Fair" : "Poor";
+>   const repoKB = me.repo_size_kb || 0;
+>   const sizeLabel = repoKB > 102400 ? (repoKB/1024).toFixed(0) + " MB" : repoKB + " KB";
+>   dv.table(["指標", "值", "評估"], [
+>     ["維護狀態", daysSincePush + " 天前推送", maint],
+>     ["專案年齡", age + " 天", age > 180 ? "Established" : age > 30 ? "Growing" : "Brand New"],
+>     ["Fork 比率", forkRatio + "%", parseFloat(forkRatio) > 20 ? "High adoption" : parseFloat(forkRatio) > 5 ? "Normal" : "Low"],
+>     ["Issue 密度", issueRatio + "%", parseFloat(issueRatio) > 5 ? "High" : "Normal"],
+>     ["Issue 解決率", icrLabel, icrEval],
+>     ["Bus Factor", (me.bus_factor || 0) + " 人", (me.bus_factor || 0) >= 3 ? "Good" : (me.bus_factor || 0) >= 2 ? "OK" : "Risk"],
+>     ["README 品質", readmeLen.toLocaleString() + " 字元", readmeQ],
+>     ["Repo 大小", sizeLabel, repoKB > 102400 ? "Large" : repoKB > 10240 ? "Medium" : "Small"],
+>     ["發版節奏", me.release_cadence || "unknown", me.release_cadence === "weekly" || me.release_cadence === "monthly" ? "Active" : me.release_cadence === "never" ? "No releases" : "Check"],
+>     ["距上次發版", (me.last_release_days || 0) >= 0 ? (me.last_release_days + " 天") : "N/A", (me.last_release_days || -1) < 0 ? "?" : (me.last_release_days || 0) <= 30 ? "Fresh" : (me.last_release_days || 0) <= 90 ? "OK" : "Stale"],
+>   ]);
+> }
+> ```
+
+> [!abstract]- CHAOSS 社群健康度雷達
+> ```dataviewjs
+> const me = dv.page("Repos/jev-chat--jev-chat-jarvis");
+> if (me) {
+>   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
+>   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
+>   const dims = [
+>     ["維護活躍度", Math.max(0, 5 - Math.floor(daysSincePush / 14))],
+>     ["貢獻者多樣性", Math.min(5, Math.floor((me.bus_factor || 0) * 1.5 + (me.contributor_count || 0) / 3))],
+>     ["Issue 回應力", (me.issue_close_rate || 0) >= 80 ? 5 : (me.issue_close_rate || 0) >= 50 ? 4 : (me.issue_close_rate || 0) >= 20 ? 2 : 1],
+>     ["發版節奏", me.release_cadence === "weekly" ? 5 : me.release_cadence === "monthly" ? 4 : me.release_cadence === "quarterly" ? 3 : me.release_cadence === "irregular" ? 2 : 1],
+>     ["社群規模", Math.min(5, Math.floor(Math.log10(Math.max(me.stars || 1, 1)) * 1.2))],
+>     ["Fork 活躍度", (me.forks || 0) > 100 ? 5 : (me.forks || 0) > 30 ? 4 : (me.forks || 0) > 10 ? 3 : (me.forks || 0) > 3 ? 2 : 1],
+>   ];
+>   dv.table(["維度", "分數", "視覺化"], dims.map(([name, score]) => [
+>     name, score + "/5", "\u2588".repeat(score) + "\u2591".repeat(5 - score)
+>   ]));
+>   const avg = (dims.reduce((a, b) => a + b[1], 0) / dims.length).toFixed(1);
+>   dv.paragraph("**綜合健康度：" + avg + "/5**");
+> }
+> ```
+
+## 技術細節
+
+| 欄位 | 值 |
+| --- | --- |
+| Forks | 912 |
+| Open Issues | 38 |
+| Issue 解決率 | 3% (1 closed) |
+| 最後推送 | 2026-09-23 |
+| 建立日期 | 2026-09-21 |
+| Repo 大小 | 15.3 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/jev-chat/jev-chat-jarvis) |
+| Topics | `accessibility-service` `android` `chat-assistant` `llm` `qq` `wechat` |
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Kotlin" : 65
+>     "HTML" : 16
+>     "Python" : 10
+>     "CSS" : 7
+>     "JavaScript" : 2
+> ```
+
+> [!info]- 主要貢獻者
+> | 貢獻者 | Commits |
+> | --- | --- |
+> | [@Finderchangchang](https://github.com/Finderchangchang) | 71 |
+> | [@HeiGeAi](https://github.com/HeiGeAi) | 1 |
+
+**最新版本**：v1.3 — v1.3 — 接口自定义、知识库 + 关联上下文、OCR 兜底 (2026-09-22)
+
+> [!info]- Release Notes
+> 这个版本是目前功能最全的一版：接口可以自由配置，加上了知识库和关联上下文，读不到正文的界面能靠 OCR 兜底。
+> 
+> **新增**
+> - 接口全可配：判断 / 回复 / 视觉三路接口的地址、密钥、模型可以分别填，内置 OpenRouter、TypeSafe 直连、DeepSeek 官方、通义兼容四种预设，每一路都能单独测试连通性。只有一把密钥也够用，回复、视觉留空会自动继承。旧版密钥升级后自动迁移，不用重填。
+> - 知识库 + 关联上下文：可以维护本地笔记（标签、可设「常驻」）和联系人档案（跨 App 别名、关系、备注），分析时自动带上命中的知识和这个人的历史聊天，让回复更贴合实际情况。历史记录默认关闭，开启后只存在手机本地，一键可清空。悬浮窗长按气泡能直接把当前会话存为联系人。
+> - OCR 兜底：无障碍树里读不到正文的界面（比如飞书）会自动截屏，用离线中文识别模型读出文字，不联网、不上传图片。任意 App 都可以在悬浮窗菜单里手动触发一次「截屏识别」。
+> 
+> **修复**
+> - 修了真机验证中发现的一批问题：临时标题（如连接中提示）污染会话记录、会话列表页误触发识别、切换会话后面板空白、微信群标题偶尔抓错、密钥输入框显示不全、部分机型页面跟状态栏重叠。
+> 
+> **已知限制**
+> - 安装包变大：约从 12 MB 增至约 25 MB（离线中文识别模型），只支持 arm64 机型。
+> - OCR 只能读屏幕上当前可见的部分，长消息看不全的地方读不到，偶尔有错字。
+> - X（Twitter）只验证过中文界面，群聊私信未验证；小米 / HyperOS 后台冻结的老问题仍然存在。
+> 
+> **安装**
+> 1. 下载 APK：[jev-assistant-v1.3-release.apk](https://github.com/jev-chat/jev-chat-jarvis/raw/v1.3/apk/jev-assistant-v1.3-release.apk)
+> 2. 系统要求 Android 11 及以上。
+> 3. 需要一个 [OpenRouter](https://openrouter.ai/) API Key。
+> 4. **升级后请把无障碍权限关掉再重新打开一次**，新增的截屏能力才会生效。
+
+## 開發動態
+
+> [!abstract] 最近 10 次 commit（2026-09-22 ~ 2026-09-23）
+> **活躍天數** 2 天 · **最新 commit** docs: 赞助商顺序改回博查 / 小优 / 速创猫
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#2](https://github.com/jev-chat/jev-chat-jarvis/issues/2) | 说实话我觉得这个项目很奇怪, llm自己就能回复, 为什么要jev来多插一脚? | 12 | 21 |
+> | [#36](https://github.com/jev-chat/jev-chat-jarvis/issues/36) | 怎么刚安装能用，过了一晚微信悬浮窗就没有了，其他的qq，飞书都能有悬浮窗只有微信没有 | 1 | 0 |
+> | [#40](https://github.com/jev-chat/jev-chat-jarvis/issues/40) | 添加openai兼容接口 | 0 | 0 |
+> | [#39](https://github.com/jev-chat/jev-chat-jarvis/issues/39) | OpenCode Zen 的 Jev 1.13 免费可以新增这个源吗 | 0 | 0 |
+> | [#38](https://github.com/jev-chat/jev-chat-jarvis/issues/38) | 软件内置的渠道的Jev模型已经无法使用了！ | 0 | 0 |
+
+## README 摘錄
+
+> [!info]- 展開查看原文 README
+> # Jev 聊天助手
+> 
+> **装在手机上的「对话副驾」：你在任何聊天 App 里聊天，它在旁边读懂对方、告诉你该怎么回，一键填进输入框，发不发由你。**
+> 
+> [](https://github.com/jev-chat/jev-chat-jarvis/stargazers)
+> [](https://github.com/jev-chat/jev-chat-jarvis/forks)
+> [](CHANGELOG.md)
+> [](#快速开始)
+> [](LICENSE)
+> 
+> [官网](https://chatjevs.com) · [下载 APK](apk/jev-assistant-v1.3-release.apk) · [历史版本](https://github.com/jev-chat/jev-chat-jarvis/releases) · [更新日志](CHANGELOG.md) · [macOS 版](https://github.com/jev-chat/jev-chat-mac) · [Windows 版](https://github.com/jev-chat/jev-chat-windows)
+> 
+> ## ❤️赞助商
+> 
+> > [想出现在这里？](#交流群--需求收集)
+> 
+> 点击折叠
+> 
+> 感谢 博查 赞助了本项目！博查是一个给 AI 用的搜索引擎，让你的 AI 应用连接世界知识，获得干净、准确、高质量的搜索结果。提供 Web Search API、Bocha Jev API 等多种联网搜索和模型服务。open.bocha.cn
+> 
+> 感谢 小优店铺 赞助了本项目！小优店铺是一家数字商品与账号服务店铺，为本项目的用户提供选购渠道。点此前往。
+> 
+> 感谢 速创猫 Vytal 赞助了本项目！速创猫 Vytal 是专业的 AI 视频工作流平台，提供可批量复用的视频工作流，降低内容制作门槛，服务内容创作者、培训机构及中小团队。点此前往。
+> 
+> ## 截图
+> 
+> 悬浮窗：危险等级、对方真实意图、排好序的 3 条候选回复
+> 设置页：判断 / 回复 / 视觉三路接口分别可配
+> 
+> ## 为什么用它
+> 
+> - **它先判断，再写字。** 大多数工具直接让模型编一句回复。Jev 先用判断模型给出对方真实意图、危险等级、该不该马上回，再据此起草回复。
+> - **不动你的聊天软件。** 不 hook、不改包、不走任何 App 的接口或账号、不读数据库，只用系统无障碍服务读「屏幕上正在显示的对话」。微信这种混淆节点的也能读到。
+> - **发送权永远在你手里。** 程序只把回复填进输入框，从不自动发送，不碰转账 / 红包 / 收款。
+> - **一套内核，多平台。** 微信、QQ、X 真机跑通，飞书靠 OCR 补正文。新增一个 App 只需写一个几十行的适配器。
+> - **它认识你的人和事。** 本地知识库与联系人档案，分析时自动带上命中的笔记和这个人的历史，回复不会和你的设定打架。
+> - **接口自己配。** 判断 / 回复 / 视觉三路分别可填，用你自己的密钥和额度，不经过任何中间服务器。
+> - **隐私在本机。** 密钥存 App 私有空间，聊天内容只在分析那一刻发给你配置的接口，不落盘、不进日志。
+> 
+> ## 平台支持
+> 
+> | 平台 | 状态 | 采集方式 | 备注 |
+> |---|---|---|---|
+> | 微信 Android | ✅ 全链路 | 伪装系统无障碍服务读气泡节点 | 8.0.52+ 混淆节点，伪装后 8.0.78 实测可读 |
+> | QQ Android | ✅ 全链路 | 无障碍读节点 | 9.3.50 实测（群聊）；1v1 按同结构推断 |
+> | X / Twitter 私信 | ✅ 全链路 | 解析 Compose 节点的 content-desc | 12.25 实测，中文界面；英文界面未验 |
+> | 飞书 / Lark | ✅ OCR 兜底（真机验证） | 无障碍读气泡矩形 + ML Kit 离线 OCR 识别正文 | 正文自绘不在无障碍树里，1.3 起对每个气泡矩形做 OCR；我/对方按已读状态判 |
+> | 任意其它 App | ✅ 手动 | 悬浮窗菜单「截屏识别一次」整屏 OCR | 不自动、不分我/对方（全部当作对方所说并在面板标注） |
+> | 桌面端 / 网页 | ⏳ 规划 | 截图 + OCR / 视觉 | 同一内核，换采集方式 |
+> 
+> 本项目只读你自己设备上、你自己有权查看的聊天，不针对任何单一平台。
+> 
+> ## 快速开始
+> 
+> **1. 装包。** 仓库里有签好名的 release 包：[`apk/jev-assistant-v1.3-release.apk`](apk/jev-assistant-v1.3-release.apk)（Android 11+）。各版本安装包也在 [Releases](https://github.com/jev-chat/jev-chat-jarvis/releases)。
+> 
+> ```bash
+> adb install -r apk/jev-assistant-v1.3-release.apk
+> ```
+> 
+> **2. 填密钥。** 打开 App → 设置 →「接口」分三张卡：判断接口 / 回复接口 / 视觉接口。最简单只填「判断接口」一栏的 [OpenRouter](https://openrouter.ai/) API Key，其余两栏留空会自动继承这把密钥就能用。想换回复模型（默认 `deepseek/deepseek-chat-v3.1`，国内 Gemini / OpenAI 会被区域限制）就在「回复接口」选预设（OpenRouter / DeepSeek 官方 / 通义兼容）或自填地址，每张卡都有独立的一键连通测试。
+> 
+> **3. 开权限。** 按主页向导开三项：
+> 
+> - 无障碍（读消息；升级到 1.3 后需要把无障碍关掉再打开一次，截屏能力才生效）
+> - 悬浮窗 / 显示在其他应用上层（展示分析）
+> - 自启动 + 省电无限制（小米 / HyperOS 必做，否则后台被冻结读不到消息）
+> 
+> 装过 debug 包的要先卸载再装 release（签名不同），卸载会清掉密钥和设置。小米 / HyperOS 重装后悬浮窗权限会被重置，装完按向导再开一次。
+> 
+> ## 功能
+> 
+> ### 判断与候选回复
+> 
+> - 判断模型一次给出：对方真实意图、危险等级（1–9）、对方要什么、该不该马上回、最佳动作。约 1 秒，带把握度。
+> - 生成模型起草 3 条口语化候选，判断模型按「最合适」排序并给出占比。
+> - 悬浮窗里点一下复制或填入，填入用 `ACTION_SET_TEXT`，失败自动退到剪贴板粘贴，**任何情况下都不发送**。
+> 
+> ### 知识库与联系人
+> 
+> 在设置 → 分析 →「知识库与联系人」。
+> 
+> - **笔记**：标题 / 内容 / 标签 / 常驻。常驻笔记每次都带；其它笔记要标签或标题出现在会话标题或最近 6 条消息里才带，最多 5 条。支持多行文本粘贴导入，空行分段，每段首行当标题。
+> - **联系人**：姓名 / 别名（每行一个）/ 关系 / 备注。会话标题匹配姓名或任一别名时生效，自动忽略群名尾部人数、首尾空白和大小写差异。悬浮窗气泡长按可把当前会话一键存为联系人。
+> - **历史**：「记录聊天历史（只存本机）」默认关闭；开启后每次分析带上最近 N 条（默认 30），并自动去掉屏幕上已经显示过的部分。
+> - **清除**：知识库与历史都存在 App 私有目录，设置里「清空知识库与历史」一键删除，不进日志、不进 git。
+> - 悬浮窗面板顶部会显示一行「知识库 N 条 · 历史 M 条」，方便确认到底带了什么。
+> 
+> ### 接口与模型
+> 
+> - 判断 / 回复 / 视觉三路的地址、密钥、模型分别可填。
+> - 内置 OpenRouter、TypeSafe 直连、DeepSeek 官方、通义兼容四套预设，每张卡一键连通测试。
+> - 只有一把密钥也能用：回复、视觉留空自动继承判断接口的配置。
+> - 从旧版本升级时，原来那把密钥会一次性迁移到新的三卡结构。
+> 
+> ### 采集与 OCR
+> 
+> - 一个 App 一个适配器，服务按前台包名分发，适配器只负责把当前窗口变成「标题 + 消息列表」。
+> - 无障碍树里没有正文时，自动截屏并用 ML Kit 中文离线模型识别，不上传图片、不需要 Google 服务。
+> - 截屏有限频和失败退避，不会每秒连拍；识别时会躲开自己的悬浮窗。
+> - 任何 App 都能在悬浮窗菜单里手动触发「截屏识别一次」。
+> 
+> ## 常见问题
+> 
+> 它会替我发消息吗？
+> 
+> 不会。程序只把选中的回复填进输入框，发送键永远由你自己点。转账、红包、收款一律不碰。
+> 
+> 需要 root 或 Xposed 吗？会不会封号？
+> 
+> 不需要 root，也不用装任何模块。它不修改聊天软件的安装包、不注入进程、不调用对方 App 的接口或账号体系，只读系统无障碍服务暴露出来的界面内容，和读屏软件的工作方式一样。
+> 
+> 我的聊天记录会被上传吗？
+> 
+> 聊天内容只在你触发分析的那一刻，发给你自己在设置里配置的模型接口。项目没有任何自建服务器，不收集、不落盘、不进日志。历史记录默认关闭，开启后也只存在手机的 App 私有目录里。
+> 
+> 悬浮球不见了，或者读不到消息怎么办？
+> 
+> 多半是国产 ROM 把后台进程冻结了。先确认无障碍、悬浮窗、自启动、省电无限制四项都开着，小米 / HyperOS 尤其要开后两项。重装后悬浮窗权限会被重置，按主页向导再开一次。在聊天界面里随便点一下通常能自愈。
+> 
+> 飞书里读不到正文？其它 App 能用吗？
+> 
+> 飞书的消息正文是自绘控件，无障碍树里没有文字，1.3 起改为对每个气泡矩形做离线 OCR。没有专门适配的 App，可以在悬浮窗菜单里点「截屏识别一次」，整屏 OCR 后同样能分析，只是不区分我方和对方。
+> 
+> 要花钱吗？
+> 
+> 软件本身免费开源。模型调用走你自己的 API Key，按用量在对应服务商那边结算，项目不经手任何费用。
+> 
+> 升级到 1.3 之后没反应？
+> 
+> 把系统设置里的无障碍开关关掉再打开一次。1.3 新增了截屏能力，服务需要重新绑定才会生效。
+> 
+> ## 它怎么工作
+> 
+> ```
+> 微信 / QQ / X / 飞书 ──(无障碍读节点)──▶ 采集最近消息
+>                                   │
+>               ┌───────────────────┴───────────────────┐
+>               ▼                                        ▼
+>    Jev 判断（一次 7 道题）                    生成模型起草 3 条候选
+>    意图 / 危险 / 需求 / 动作 / 该不该回          │
+>               └───────────────────┬───────────────────┘
+>                                   ▼
+>                         Jev 给 3 条候选排序
+>                                   ▼
+>                 半透明悬浮窗展示 → 复制 / 填入（不发送）
+> ```
+> 
+> - **采集**：一个 App 一个适配器，服务按前台包名分发。适配器只负责把当前窗口变成「标题 + 消息列表（谁说的、说了什么）」，下游全部通用；树里没有正文时走截屏 + 离线 OCR 兜底（限频、失败退避，不会每秒连拍）。
+> - **判断**：[Jev](https://docs.typesafe.ai/) 只回答选择 / 打分 / 是非，一次请求发全部题目，约 1 秒返回；命中知识库时 state 里会带 `background`（关系 + 联系人备注 + 命中笔记）和 `history`（历史消息）。
+> - **回复**：生成模型起草 3 条候选，Jev 排序；提示词要求回复必须与知识库一致，不编造知识库没有的事实。
+> - **回填**：`ACTION_SET_TEXT`，失败则剪贴板 + `ACTION_PASTE`，不发送。
+> 
+> 适配一个新的聊天 App
+> 
+> 1. 在 `capture/ChatAppAdapter.kt` 实现 `ChatAppAdapter`：`pkg` 是包名，`extract(root, res)` 从无障碍树取出标题和消息列表（`Msg(side, text)`，`side` 为 `me` / `other`），不在聊天窗时返回 `null`。
+> 2. 在 `capture/ChatCaptureService.kt` 的 `adapters` 加一行。
+> 3. 判断、候选、悬浮窗、填入都不用动。
+> 
+> 先用 `adb shell uiautomator dump` 看目标 App 暴露了什么，已有四个适配器覆盖了四种情况：
+> 
+> | App | 树的情况 | 适配器怎么做 |
+> |---|---|---|
+> | QQ | 节点开放，有 id | 正文 `id/mjn`、标题 `id/371`，按气泡贴哪侧头像判谁说的 |
+> | 微信 | 对普通无障碍服务混淆节点 | 服务类名伪装成系统的 `SelectToSpeakService`，读 `id/bkl` 气泡，按左右判 |
+> | X | Compose，无 id，text 为空 | 解析 content-desc `发件人：正文。时间。Read`，发件人是「你」即我方 |
+> | 飞书 | 正文自绘，树里没有文字 | 树上拿 bubble_content_container 矩形与已读状态，OCR 每个矩形的正文 |
+> 
+> 适配器返回 `null` 表示不在聊天窗，返回空消息列表表示在聊天窗但树里没正文——只有后者会触发 OCR 兜底。
+> 
+> QQ、X 全程只有一个 Activity，判「是不是聊天窗」要看树里有没有该有的节点（如输入框），不能看 Activity 名。
+> 
+> 构建与目录结构
+> 
+> JDK 17 + Android SDK（platform 35 / build-tools 35）。
+> 
+> ```bash
+> ./gradlew assembleDebug      # app/build/outputs/apk/debug/app-debug.apk
+> ./gradlew assembleRelease    # 需要仓库外的签名 properties，路径由 JEV_KEYSTORE_PROPS 指定
+> ```
+> 
+> - `app/` — Android 应用（Kotlin，传统 View）
+>   - `capture/` 无障碍采集：`ChatAppAdapter.kt` 各 App 适配器、`ChatCaptureService.kt` 分发服务、前台保活、`ocr/` 截屏与离线识别
+>   - `jev/` Jev 客户端与题目集 · `overlay/` 悬浮窗 · `core/` 配置与数据模型（含 `core/kb/` 知识库存储与上下文构建）
+>   - `KnowledgeActivity` 知识库管理页（笔记 / 联系人）
+> - `tools/jev/` — Jev 题目集与校准脚手架（Python）
+> - `docs/` — 设计与验收文档
+> - `apk/` — 签好名的 release 包
+> 
+> ## 已知限制
+> 
+> - **国产 ROM 后台冻结**：小米 / HyperOS 会杀后台进程，前台保活、自启动、省电无限制都配了仍可能被杀，气泡短暂消失，在聊天里再交互一下自愈。
+> - **飞书正文靠 OCR**：飞书正文是自绘控件，无障碍树里只有气泡矩形，1.3 起对每个矩形做离线 OCR；我 / 对方按已读状态判断，判反时请用「存为联系人」并在备注里说明，或关掉自动分析改手动。
+> - **X 只按中文界面验过**：分隔符 `：`、`上午 / 下午`、`Read` 是中文界面实测；英文界面只做了兜底，未验。
+> - **群聊**：按一对一分析，「对方」与关系设定对群聊不准。
+> - **中文**：Jev 主训练语言是英文，题目用英文、聊天内容保留中文；建议用自己的真实对话做一批标注校准（见 `tools/jev/`）。
+> - 微信端的读取依赖当前版本的界面结构，微信更新后可能需要跟进适配。
+> - **知识库检索是标签/标题包含匹配**，不做语义检索，笔记请打好标签才能被命中。历史按「谁说 + 原文」去重，同一个人重复说同一句只记一次。
+> - **OCR 依赖系统放行截屏**：无障碍服务要被系统允许截屏才能用，小米 / HyperOS 可能拒绝（面板会提示失败原因）；受保护窗口（`FLAG_SECURE`）截不到。
+> - **OCR 只认屏幕上看得见的部分**：长消息被截断的部分读不到；识别有错字。
+> - **包体变大**：ML Kit 中文离线模型让 APK 从约 12 MB 增至约 27 MB，且只打 arm64-v8a。
+> 
+> ## 交流群 / 需求收集
+> 
+> **如需联系，请公众号私信。** 合作、赞助、反馈、进群失败、二维码过期，都走公众号私信，其它渠道不一定看得到。
+> 
+> 想听真实需求：你在哪个聊天 App 上最想要这个副驾？希望它判断什么、怎么提示、什么绝对不能碰？扫码进群直接说。**1 至 7 群已满，不要再扫；8、9 群任选一个，请勿重复加入。**
+> 
+>   8 群
+>   9 群
+> 
+> 以下七群已满，请勿再扫：
+> 
+>   1 群
+>   2 群
+>   3 群
+>   4 群
+>   5 群
+>   6 群
+>   7 群
+> 
+> 群二维码 7 天有效（本批到 2026-09-29），过期了公众号私信要新码。
+> 
+> ## 姊妹项目
+> 
+> 同在 [jev-chat](https://github.com/jev-chat) 组织下：
+> 
+> - [Jev 聊天助手 macOS 版](https://github.com/jev-chat/jev-chat-mac)：微信消息意图识别悬浮窗，看屏 + 本地小模型判断意图和风险，再按话术生成回复候选，纯只读。
+> - [Jev 聊天助手 Windows 版](https://github.com/jev-chat/jev-chat-windows)：微信 Windows 4.x 旁挂的回复辅助，窗口截图 + 本地离线 OCR，3 条候选一键填入，发送永远手动。
+> - [微墨 WeChat Ink](https://github.com/Snowwit88/wechat-ink)：微信公众号写作、配图与排版助手，支持资料核验、学术风图文和草稿发布。
+> 
+> 隐私政策见 [PRIVACY.md](PRIVACY.md)（说明读取了什么、发给谁、存在哪里、怎么删除）。
+> 
+> ## 版权与许可
+> 
+> Copyright © 2026 Finderchangchang 与 jev-chat 贡献者。代码以 [MIT](LICENSE) 协议开源，另见 [NOTICE](NOTICE)。
+> 
+> - **可以商用**：个人和公司都可以使用、修改、再分发，或集成进自己的产品，不需要付费或事先授权。
+> - **必须注明出处**：分发或商用时保留 LICENSE 与 NOTICE，并在产品「关于」
+
+## 延伸閱讀
+
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
+
+[GitHub](https://github.com/jev-chat/jev-chat-jarvis)
+
+## 相關收錄
+
+> [!note]- 同分類的其他專案
+> ```dataview
+> TABLE stars, install_complexity AS "難度", status
+> FROM "Repos"
+> WHERE category = "Other" AND file.name != "jev-chat--jev-chat-jarvis"
+> SORT stars DESC
+> LIMIT 8
+> ```
+
+> [!note]- 同語言的熱門專案
+> ```dataview
+> TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
+> FROM "Repos"
+> WHERE language = "Kotlin" AND file.name != "jev-chat--jev-chat-jarvis" AND status != "archived"
+> SORT stars_per_day DESC
+> LIMIT 5
+> ```
+
+> [!note]- 同週收錄
+> ```dataview
+> TABLE category AS "分類", stars, stars_per_day AS "stars/天"
+> FROM "Repos"
+> WHERE week = "2026-W39" AND file.name != "jev-chat--jev-chat-jarvis"
+> SORT stars DESC
+> ```
+
+> [!note]- Ring 更高的同類競品
+> ```dataviewjs
+> const me = dv.page("Repos/jev-chat--jev-chat-jarvis");
+> if (me) {
+>   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
+>   const myRing = ringOrder[me.ring] || 0;
+>   const better = dv.pages('"Repos"')
+>     .where(p => p.file.name !== "jev-chat--jev-chat-jarvis" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .sort(p => p.stars_per_day || 0, "desc").limit(5);
+>   if (better.length > 0) {
+>     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
+>       p.file.link, p.ring, p.stars_per_day || 0, p.install_complexity || "?", (p.use_case || "").toString().slice(0, 40)
+>     ]));
+>   } else { dv.paragraph("_此分類中沒有 Ring 更高的專案（你可能已經在用最好的了）_"); }
+> }
+> ```
+
+## 同 Owner 專案
+
+> [!note]- 這位開發者的其他收錄專案
+> ```dataview
+> TABLE stars AS "Stars", category AS "分類", status AS "狀態"
+> FROM "Repos"
+> WHERE owner = "jev-chat" AND file.name != "jev-chat--jev-chat-jarvis"
+> SORT stars DESC
+> ```
+
+## Vault 排名
+
+> [!abstract]- 這個專案在 vault 中的相對位置
+> ```dataviewjs
+> const me = dv.page("Repos/jev-chat--jev-chat-jarvis");
+> const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
+> const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> const catAll = all.where(p => p.category === me?.category);
+> const catRank = catAll.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> const totalStarsAll = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars || 0, "desc");
+> const starsRank = totalStarsAll.array().findIndex(p => p.file.name === me?.file?.name) + 1;
+> if (rank > 0) {
+>   const pct = Math.round((1 - rank / all.length) * 100);
+>   dv.paragraph(`Stars/天排名：**全 vault 第 ${rank}**/${all.length}（前 ${100 - pct}%）· **${me.category} 第 ${catRank}**/${catAll.length}\nStars 總量排名：**第 ${starsRank}**/${totalStarsAll.length}`);
+> }
+> ```
+
+## Star 趨勢
+
+> [!abstract]- Stars 成長追蹤
+> ```dataviewjs
+> const me = dv.page("Repos/jev-chat--jev-chat-jarvis");
+> if (me?.star_history) {
+>   const raw = me.star_history.toString();
+>   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
+>   if (points.length >= 2) {
+>     const max = Math.max(...points.map(p => p.stars));
+>     const lines = points.map(p => {
+>       const w = Math.round(p.stars / max * 25);
+>       return `${p.date} ${"\u2588".repeat(w)}${"\u2591".repeat(25-w)} ${p.stars.toLocaleString()}`;
+>     });
+>     const first = points[0].stars;
+>     const last = points[points.length-1].stars;
+>     const growth = first > 0 ? Math.round((last - first) / first * 100) : 0;
+>     lines.push(`\n**成長** +${(last-first).toLocaleString()} stars（${growth}%）in ${points.length} snapshots`);
+>     // 趨勢方向偵測
+>     if (points.length >= 3) {
+>       const mid = Math.floor(points.length / 2);
+>       const fh = points.slice(0, mid), sh = points.slice(mid);
+>       const rateF = fh.length > 1 ? (fh[fh.length-1].stars - fh[0].stars) / Math.max(1, (new Date(fh[fh.length-1].date) - new Date(fh[0].date)) / 86400000) : 0;
+>       const rateS = sh.length > 1 ? (sh[sh.length-1].stars - sh[0].stars) / Math.max(1, (new Date(sh[sh.length-1].date) - new Date(sh[0].date)) / 86400000) : 0;
+>       const ratio = rateF > 0 ? rateS / rateF : rateS > 0 ? 2 : 1;
+>       const dir = ratio > 1.3 ? "Rising（加速中）" : ratio < 0.7 ? "Cooling（降溫中）" : "Stable（穩定）";
+>       lines.push(`**趨勢方向** ${dir}（加速比 ${Math.round(ratio * 100) / 100}x）`);
+>     }
+>     dv.paragraph(lines.join("\n"));
+>   } else { dv.paragraph("需要 2+ 次快照才能顯示趨勢"); }
+> } else { dv.paragraph("尚無 star_history 資料（下次出現在 trending 時會開始追蹤）"); }
+> ```
+
+## 相對成長速度
+
+> [!abstract]- 跟 vault 中同類專案比較
+> ```dataviewjs
+> const me = dv.page("Repos/jev-chat--jev-chat-jarvis");
+> if (me) {
+>   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
+>   const sameCat = all.where(p => p.category === me.category);
+>   const avgAll = all.length > 0 ? Math.round(all.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / all.length) : 0;
+>   const avgCat = sameCat.length > 0 ? Math.round(sameCat.map(p => p.stars_per_day || 0).array().reduce((a,b) => a+b, 0) / sameCat.length) : 0;
+>   const mySpd = me.stars_per_day || 0;
+>   const vsAll = avgAll > 0 ? Math.round(mySpd / avgAll * 100) : 0;
+>   const vsCat = avgCat > 0 ? Math.round(mySpd / avgCat * 100) : 0;
+>   dv.table(["比較對象", "平均 Stars/天", "本專案", "倍數"], [
+>     ["全 Vault", avgAll, mySpd, vsAll + "%"],
+>     ["同分類 (" + me.category + ")", avgCat, mySpd, vsCat + "%"],
+>   ]);
+>   if (vsAll >= 300) dv.paragraph("**極速成長** — 成長速度是 vault 平均的 3 倍以上");
+>   else if (vsAll >= 150) dv.paragraph("**高速成長** — 成長速度高於 vault 平均");
+>   else if (vsAll >= 50) dv.paragraph("**正常速度** — 接近 vault 平均水平");
+>   else dv.paragraph("**低速成長** — 低於 vault 平均，可能已過熱度高峰");
+> }
+> ```
+
+## 決策分數
+
+> [!abstract]- 綜合評估（自動計算）
+> ```dataviewjs
+> const me = dv.page("Repos/jev-chat--jev-chat-jarvis");
+> if (me) {
+>   let score = 0;
+>   let breakdown = [];
+>   // 熱度 (0-25)
+>   const spd = me.stars_per_day || 0;
+>   const heat = Math.min(25, Math.round(spd / 40 * 25));
+>   score += heat; breakdown.push(`熱度: ${heat}/25`);
+>   // 安裝難度 (0-20)
+>   const inst = me.install_complexity === "easy" ? 20 : me.install_complexity === "medium" ? 12 : 5;
+>   score += inst; breakdown.push(`易用性: ${inst}/20`);
+>   // 成熟度 (0-20)
+>   const created = me.created ? new Date(me.created.toString()) : null;
+>   const age = created ? Math.floor((Date.now() - created.getTime()) / 86400000) : 0;
+>   const mat = age > 365 ? 20 : age > 180 ? 16 : age > 30 ? 10 : 5;
+>   score += mat; breakdown.push(`成熟度: ${mat}/20`);
+>   // 社群 (0-20)
+>   const forks = me.forks || 0;
+>   const comm = forks > 200 ? 20 : forks > 50 ? 15 : forks > 10 ? 10 : 5;
+>   score += comm; breakdown.push(`社群: ${comm}/20`);
+>   // 授權 (0-15)
+>   const lic = me.license || "";
+>   const friendly = ["MIT","Apache-2.0","BSD-2-Clause","BSD-3-Clause","ISC","Unlicense"].includes(lic);
+>   const licScore = friendly ? 15 : lic && lic !== "N/A" ? 8 : 0;
+>   score += licScore; breakdown.push(`授權: ${licScore}/15`);
+>   const grade = score >= 80 ? "A" : score >= 60 ? "B" : score >= 40 ? "C" : "D";
+>   const bar = "\u2588".repeat(Math.round(score/5)) + "\u2591".repeat(20 - Math.round(score/5));
+>   dv.paragraph(`## ${grade} (${score}/100)\n${bar}\n\n${breakdown.join(" | ")}`);
+> }
+> ```
+
+---
+
+## 個人筆記
+
+> [!abstract]- 評估進度
+> ```dataviewjs
+> const me = dv.page("Repos/jev-chat--jev-chat-jarvis");
+> if (me) {
+>   const steps = [
+>     { name: "已讀", done: me.status && me.status !== "to-review" },
+>     { name: "已評分", done: (me.my_rating || 0) > 0 },
+>     { name: "有結論", done: me.verdict && me.verdict !== "" },
+>     { name: "Ring 決策", done: me.ring && me.ring !== "" && me.ring !== "assess" },
+>     { name: "試用記錄", done: me.status === "tried" || me.status === "integrated" },
+>   ];
+>   const done = steps.filter(s => s.done).length;
+>   const pct = Math.round((done / steps.length) * 100);
+>   const bar = "\u2588".repeat(Math.round(pct / 5)) + "\u2591".repeat(20 - Math.round(pct / 5));
+>   dv.paragraph(`${bar} **${done}/${steps.length}** (${pct}%)`);
+>   const todo = steps.filter(s => !s.done).map(s => s.name);
+>   if (todo.length > 0) dv.paragraph("待完成：" + todo.join(" / "));
+> }
+> ```
+
+> [!question]+ 快速評估（30 秒填完）
+> 
+> 相關性:: 未評估
+> 印象:: _一句話_
+> 行動:: 不需要
+> 
+> | 維度 | 分數 (1-5) | 說明 |
+> | --- | :---: | --- |
+> | 信心 | /5 | _我對這工具的了解程度_ |
+> | 興趣 | /5 | _想投入時間研究的程度_ |
+> | 風險 | /5 | _導入風險，5=極低風險_ |
+> 
+> _填完後更新 frontmatter：`score_confidence` / `score_interest` / `score_risk`_
+> 
+> _相關性選項：直接相關 / 間接相關 / 不相關 / 未評估_
+> _行動選項：立刻試用 / 加入待辦 / 持續觀察 / 不需要_
+
+### 試用記錄
+
+> [!example]- 試用 #1
+> 試用日期 :: 
+> 試用版本 :: 
+> 測試環境 :: _OS / Node / Python 版本_
+> 安裝過程 :: _順利 / 遇到問題（描述）_
+> 花費時間 :: _從零到可用_
+> 實際效果 :: _達到預期 / 不如預期（原因）_
+> 踩到的坑 :: _描述 + 解法_
+> 決定 :: _繼續使用 / 暫時擱置 / 放棄（原因）_
+
+> [!question]- 待研究的問題
+> _記下看完後還沒有答案的問題，未來回來補充_
+> 
+> - [ ] 
+
+### 採用判斷
+
+> [!tip]- 什麼時候該用 / 不該用
+> **該用的情況**：
+> - 
+> 
+> **不該用的情況**：
+> - 
+
+> [!warning]- 替換成本
+> 若半年後要換掉，難度多高？資料格式是標準的嗎？
+> 
+> 侵入性:: _低 / 中 / 高_
+> 遷移路徑:: _描述_
+
+### 決策記錄
+
+> [!abstract]- 為什麼評估這個工具？
+> **當時的痛點**：_遇到什麼問題才開始找工具？_
+> **觸發來源**：_GitHub Trending / HN / 同事推薦 / 其他_
+> **當時的約束**：_時間 / 團隊 / 語言 / 部署環境_
+
+> [!note]- 最終決策
+> decision:: _選了什麼（或為何還在觀望）_
+> why:: _當時的理由（越具體越好）_
+> outcome:: _後來實際發生了什麼_
+
+### 探索日誌
+
+_按時間記錄，每次接觸時追加一段（最新在上）_
+
+> **2026-09-23** — 首次收錄
+> _第一印象：_
+
+**狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
+**Tech Radar**：`assess` → `trial` → `adopt` / `hold`
+
+> [!info]- 評估完成後
+> 更新 frontmatter：
+> - `ring`: adopt / trial / assess / hold
+> - `ring_history`: 追加新狀態（格式：`assess@2026-03-10, trial@2026-03-15`）
+> - `verdict`: 一句話結論
+> - `my_rating`: 1-5 分
+> - `status`: reading / tried / integrated / archived
+
+## 出現記錄
+
+- [[2026-09-23|2026-09-23]] — 首次收錄，4.4k stars
