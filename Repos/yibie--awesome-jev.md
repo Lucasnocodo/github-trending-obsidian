@@ -1,20 +1,20 @@
 ---
-repo: tamaratran/fast-jev-compaction
-url: https://github.com/tamaratran/fast-jev-compaction
-owner: tamaratran
+repo: yibie/awesome-jev
+url: https://github.com/yibie/awesome-jev
+owner: yibie
 owner_type: User
-language: TypeScript
-license: MIT
-description: "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim."
+language: Python
+license: N/A
+description: "A curated list of public projects, integrations, and discussions built on Jev — TypeSafe AI's System One model for typed decisions."
 homepage: ""
-stars: 6616
-stars_per_day: 1103
-forks: 387
-open_issues: 81
+stars: 1530
+stars_per_day: 255
+forks: 219
+open_issues: 24
 created: 2026-09-17
-pushed_at: 2026-09-18
-first_seen: 2026-09-18
-week: "2026-W38"
+pushed_at: 2026-09-24
+first_seen: 2026-09-24
+week: "2026-W39"
 month: "2026-09"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,43 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-18
+last_reviewed: 2026-09-24
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 7
+appearances: 1
 next_review: "2026-09-27"
-contributor_count: 2
-engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 249
-readme_length: 5789
+contributor_count: 5
+engagement: "medium"
+issue_close_rate: 23
+repo_size_kb: 686
+readme_length: 9847
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-18"
-star_history: "2026-09-18:1152,2026-09-19:3493,2026-09-20:4426,2026-09-21:5442,2026-09-22:6059,2026-09-23:6372,2026-09-24:6616"
+ring_history: "assess@2026-09-24"
+star_history: "2026-09-24:1530"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/python"
+  - "topic/awesome"
+  - "topic/awesome_list"
+  - "topic/jev"
+  - "topic/llm"
 aliases:
-  - "fast-jev-compaction"
-  - "tamaratran/fast-jev-compaction"
+  - "awesome-jev"
+  - "yibie/awesome-jev"
 ---
 
-# fast-jev-compaction
+# awesome-jev
 
-**1.2k** stars · **1.2k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**1.5k** stars · **255** stars/天 · 建立 6 天前 · Python · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+const me = dv.page("Repos/yibie--awesome-jev");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +74,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`awesome` `awesome-list` `jev` `llm`
+
 > [!summary] 一句話摘要
-> Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.
+> A curated list of public projects, integrations, and discussions built on Jev — TypeSafe AI's System One model for typed decisions.
 
 ## 專案簡介
 
-Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.
+A curated list of public projects, integrations, and discussions built on Jev — TypeSafe AI's System One model for typed decisions.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/yibie--awesome-jev");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +122,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/yibie--awesome-jev");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,176 +146,165 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 49 |
-| Open Issues | 7 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-18 |
+| Forks | 219 |
+| Open Issues | 24 |
+| Issue 解決率 | 23% (7 closed) |
+| 最後推送 | 2026-09-24 |
 | 建立日期 | 2026-09-17 |
-| Repo 大小 | 249 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/tamaratran/fast-jev-compaction) |
+| Repo 大小 | 686 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/yibie/awesome-jev) |
+| Topics | `awesome` `awesome-list` `jev` `llm` |
 
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@types/node` `tsx` `typescript` `vitest`
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 81
+>     "Shell" : 19
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@devin-ai-integration[bot]](https://github.com/devin-ai-integration[bot]) | 17 |
-> | [@tamaratran](https://github.com/tamaratran) | 13 |
+> | [@yibie](https://github.com/yibie) | 266 |
+> | [@aoright](https://github.com/aoright) | 15 |
+> | [@rorar](https://github.com/rorar) | 8 |
+> | [@AkashPriyadarshii](https://github.com/AkashPriyadarshii) | 5 |
+> | [@valentynkit](https://github.com/valentynkit) | 5 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-17 ~ 2026-09-17）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #17 from tamaratran/devin/1789683249-readme-tagline
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#21](https://github.com/tamaratran/fast-jev-compaction/issues/21) | Hooks (0) on install — session.compact / turn.complete are n | 0 | 0 |
+> [!abstract] 最近 10 次 commit（2026-09-24 ~ 2026-09-24）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #212 from aoright/awesome-jev
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # fast-jev-compaction
+> # awesome-jev
 > 
-> Claude Code plugin that replaces the compaction summary with Jev decisions:
-> every tool call and result is scored in one fast request, stale ones are
-> dropped or truncated, everything kept stays verbatim. Also usable as an npm
-> library.
+> A curated awesome list of public projects and practices built on [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), TypeSafe AI's System One model for typed decisions.
 > 
-> ## What and why
+> This README is the homepage aggregate of the current category files, so the latest accepted entries are visible here without drilling into subpages.
 > 
-> Most context compaction asks an LLM to summarize old turns. A summary is
-> lossy: a file path, exact error, constraint, or command can disappear even when
-> it matters later. This library never rewrites anything. It only deletes tool
-> calls and tool results Jev says are no longer needed, and it asks Jev while
-> showing it the whole conversation. User and assistant text stays verbatim and
-> in order.
+> Jev is not a chat model. It takes unstructured state plus a **typed question** and returns a **typed decision** — a choice, a score, or a boolean, each with a confidence. That makes it a drop-in decision layer for software: classification, routing, rubric scoring, verification, and agent guardrails. This list tracks who is actually building with it, and which patterns transfer across industries.
 > 
-> The repository is both an npm package (`src/`) and a Claude Code plugin
-> (`hooks/`, `.claude-plugin/`) that uses the package to replace Claude Code's
-> built-in compaction summary with the original messages.
+> The repository treats all categories equally — each entry lives in exactly one category, chosen by its direct Jev application domain. A dedicated **Related Practices / Discussions** category captures credible public practice signals — X threads, Reddit discussions, and interviews — that describe real Jev usage even when no strong standalone case page exists yet.
 > 
-> ## How it works
+> > [!WARNING]
+> > **A listing is not an endorsement.** This project applies *inclusion* rules only — public, citable, genuinely uses Jev for a typed decision, one-sentence summary. It does **not** review code quality, security, maturity, or whether a project runs at all.
+> >
+> > **Treat same-day bulk submissions with particular care.** Several repositories published together by one author, sharing a scaffold and a thin commit history, can satisfy every inclusion rule and still be unproven. Volume is not evidence of quality. See [Curation is not endorsement](#curation-is-not-endorsement) for a checklist to run before adopting anything here.
 > 
-> 1. Every `tool_use` is paired with its `tool_result` by `tool_use_id`. Calls in
->    the first message or in the newest `preserveRecentMessages` messages are
->    pinned and never touched.
-> 2. The **state** sent to Jev is the whole conversation so far, oldest first,
->    with every tool result replaced by a short note (`ok, 4213 chars (omitted)`).
->    Tool inputs are included, texts are included, nothing is summarized.
-> 3. The state is fitted into `maxStateTokens` (25k by default) in stages, each
->    applied only if the previous one was not enough: tool inputs truncated to
->    1000, then 200, then 60 characters; long texts abridged to head + tail,
->    oldest non-pinned messages first; old non-pinned messages collapsed to a
->    `[… N chars omitted …]` note; old tool calls reduced to one line each
->    (`t12 Read file_path=src/a.ts → ok 480ch`); old call-less messages left
->    out; runs of old call-only messages folded into one entry. If it still
->    does not fit, compaction throws. Tokens are estimated without a tokenizer (a
->    word per six letters, half a token per digit, ~one per other symbol),
->    calibrated to land a little above the counts Jev reports.
-> 4. For every non-pinned call Jev gets two `noul` questions: should the **call**
->    stay (knowing it was made, with its input, still matters), and should the
->    **result** stay verbatim (its contents are still needed and re-running the
->    tool would not do).
-> 5. Questions are split into as many requests as needed so state plus questions
->    stays under `maxRequestTokens` (30k by default, under Jev's 32k request
->    limit). The same full state is resent with every request; requests run
->    concurrently and their answers are merged.
-> 6. Decisions per call, against `keepThreshold`:
->    - `keepResult ≥ threshold` → keep call and result;
->    - else `keepCall ≥ threshold` → keep the call, truncate the result to its
->      first `truncateHeadChars` characters plus a one-line note;
->    - else → remove the call together with its result.
-> 7. The message list is rebuilt: a message that loses all its content is
->    removed, untouched messages are returned as the same objects, and no result
->    is ever left without its call.
 > 
-> Jev failures, malformed answers, a missing key, or a history that cannot be
-> fitted throw; the caller (or the Claude Code hook) decides what to fall back to.
+> ## How to contribute
 > 
-> ## Install and usage
+> 1. Pick the category that best matches the direct Jev application domain.
+> 2. Add a single-line entry in the required format to the category file, not directly to the README aggregate.
+> 3. Keep the summary concrete and scannable.
+> 4. Prefer examples that clearly show scenario + typed decision + value.
 > 
-> ```sh
-> npm install fast-jev-compaction
-> export TYPESAFE_API_KEY=...
-> ```
+> See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 > 
-> ```ts
-> import { compactMessages, reductionRatio, type Message } from 'fast-jev-compaction';
 > 
-> const transcript: Message[] = [
->   { role: 'user', text: 'Fix the failing test. Never edit src/generated.', toolUses: [] },
->   {
->     role: 'assistant',
->     text: '',
->     toolUses: [{ tool_use_id: 'toolu_1', tool: 'Read', input: { file_path: 'src/a.ts' } }],
->   },
->   { role: 'user', text: '', toolUses: [], toolResults: [{ tool_use_id: 'toolu_1', text: '…file…' }] },
->   // …
-> ];
+> ## Why this list
 > 
-> const result = await compactMessages(transcript, { preserveRecentMessages: 4 });
-> console.log(result.messages, result.decisions, result.stats);
-> if (reductionRatio(result) " } }
-> ```
+> Most Jev discussion is scattered across launch threads, model-gateway listings, and one-off prototypes. This list answers two practical questions quickly:
 > 
-> Then add this repository as a plugin marketplace and install the plugin,
-> either from the shell or as slash commands inside a session:
+> - Where is Jev already making real decisions in production workflows?
+> - Which decision patterns transfer across industries?
 > 
-> ```sh
-> claude plugin marketplace add tamaratran/fast-jev-compaction
-> claude plugin install fast-jev-compaction@fast-jev-compaction
-> ```
+> This is not a comprehensive database. It is a high-signal, fast-scanning field guide.
 > 
-> The install prompts for the plugin options (API key, thresholds, `truncateHeadChars`,
-> …); leave them at their defaults to use `TYPESAFE_API_KEY` from the environment.
-> Restart Claude Code or run `/reload-plugins`. From then on `/compact` (and
-> auto-compaction) goes through Jev: the toast reads
-> `fast-jev-compaction: kept N/M messages, no summary (…)` when the pruned history
-> replaced the built-in summary, or `fallback to built-in summary (…)` when Jev
-> could not remove enough (short sessions, or when it fails).
 > 
-> To run from a checkout without installing: `CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 claude --plugin-dir .`
-> from the repository root. No publishing step is required; the marketplace is
-> just the repo's `.claude-plugin/marketplace.json`.
+> ## Inclusion criteria
 > 
-> ## Development
+> An entry should meet all of the following:
 > 
-> ```sh
-> npm install
-> npm run typecheck        # library + hook
-> npm test
-> npm run build
-> npm run validate:plugin  # claude plugin validate
-> TYPESAFE_API_KEY="$(cat ~/.typesafe_key)" npm run demo
-> ```
+> - The source is public and citable.
+> - The example **uses Jev** (or a documented Jev port/derivative) for a concrete decision task — not a generic classifier, router, or LLM judge with no Jev involvement.
+> - The source explicitly names `Jev`/`jev`, cites TypeSafe AI's System One models, or shows a typed-decision loop (typed question → typed answer with confidence → accept/reject/escalate).
+> - The summary explains the scenario, method, and value in one sentence.
 > 
-> The unit tests use a fake Jev and never contact TypeSafe. The demo is the live
-> network check.
+> We do **not** include:
 > 
-> ## Animated demo (macOS)
+> - Generic classifiers, routers, or research agents that merely resemble the pattern without using Jev.
+> - Pure theory or opinion without a concrete practice.
+> - Launch-hype commentary with no working artifact or reproducible result.
+> - Long write-ups inside the list itself.
+> - Sources that are private, inaccessible, or too vague to classify.
 > 
-> `demo/JevDemo` is a small native SwiftUI app that plays a scripted, dramatized
-> version of the compaction flow inside a Claude Code-style terminal: the tool
-> calls of a canned transcript are scored, results and calls Jev lets go turn red
-> and collapse away, and the rest stays verbatim. It never calls the API; it
-> exists to be screen recorded.
 > 
-> ```sh
-> demo/JevDemo/build.sh   # builds demo/JevDemo/build/JevDemo.app and launches it
-> ```
+> ## Curation is not endorsement
 > 
-> Press space in the app to replay from the start.
+> Inclusion means one thing: the entry satisfies the inclusion rules above. It is not a quality review, a security audit, or a recommendation. We do not verify that a project compiles, that its tests pass, that its published numbers reproduce, or that its license permits your use.
+> 
+> This matters most for projects that arrive in bulk. When one author releases several repositories on the same day, they commonly share a single scaffold — the same `AGENTS.md`, `CLAUDE.md`, `STATE.md`, and `CHANGELOG.md` — land in one or two commits each, and may ship considerably more prose than code. Such projects can be entirely legitimate; they are simply **unproven**. Treat them as leads, not as validated tools.
+> 
+> Before adopting an entry, check it yourself:
+> 
+> | Check | Why it matters |
+> | --- | --- |
+> | Does the code actually call the Jev API? | An entry can read well on a README alone. Look for a real request carrying typed questions, and a parsed answer coming back. |
+> | Is there a runnable check? | A test, an example with expected output, or a public demo. No check means no evidence that it works. |
+> | Do the numbers have a source? | Any accuracy, latency, cost, or volume figure should be traceable to the linked page. We strip claims we cannot verify, but the project page itself may still carry them. |
+> | How much of the repository is code? | Some projects are mostly prompt documents. That can be legitimate — just know which one you are getting. |
+> | Is there a license? | A few entries have none, which limits reuse and redistribution. |
+> 
+> Found something wrong? Open an issue or a pull request — **removal is as valid a contribution as addition.** Rules for AI-assisted work, project depth, and submission rate live in [CONTRIBUTING.md](CONTRIBUTING.md#ai-assisted-work-and-bulk-submissions).
+> 
+> 
+> ## Current coverage
+> 
+> - [Classification & Routing](categories/classification-routing.md) — 40 entries
+> - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 8 entries
+> - [Verification & Guardrails](categories/verification-guardrails.md) — 33 entries
+> - [Scoring & Ranking](categories/scoring-ranking.md) — 32 entries
+> - [Agent Decisions](categories/agent-decisions.md) — 49 entries
+> - [Data Labeling & Curation](categories/data-labeling-curation.md) — 7 entries
+> - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 29 entries
+> - [Calibration & Research](categories/calibration-research.md) — 29 entries
+> - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 76 entries
+> - [Game & Simulation](categories/game-simulation.md) — 21 entries
+> - [Finance & Trading](categories/finance-trading.md) — 6 entries
+> - [Compliance & Legal](categories/compliance-legal.md) — 1 entry
+> - [Content Moderation](categories/content-moderation.md) — 8 entries
+> - [Related Practices / Discussions](categories/related-practices-discussions.md) — 79 entries
+> 
+> 
+> ### Open categories still being seeded
+> 
+> - [Scientific Pipelines](categories/scientific-pipelines.md) — 0 entries
+> 
+> Each entry lives in exactly one category. When a project could fit multiple categories, we choose the one closest to its direct application domain.
+> 
+> 
+> ## Browse by category
+> 
+> - [Classification & Routing](#classification--routing) ([source](categories/classification-routing.md))
+> - [Adaptive & Realtime UI](#adaptive--realtime-ui) ([source](categories/adaptive-realtime-ui.md))
+> - [Verification & Guardrails](#verification--guardrails) ([source](categories/verification-guardrails.md))
+> - [Scoring & Ranking](#scoring--ranking) ([source](categories/scoring-ranking.md))
+> - [Agent Decisions](#agent-decisions) ([source](categories/agent-decisions.md))
+> - [Data Labeling & Curation](#data-labeling--curation) ([source](categories/data-labeling-curation.md))
+> - [Evaluation & Benchmarking](#evaluation--benchmarking) ([source](categories/evaluation-benchmarking.md))
+> - [Calibration & Research](#calibration--research) ([source](categories/calibration-research.md))
+> - [Infra / SDKs / Integrations](#infra--sdks--integrations) ([source](categories/infra-sdks-integrations.md))
+> - [Game & Simulation](#game--simulation) ([source](categories/game-simulation.md))
+> - [Finance & Trading](#finance--trading) ([source](categories/finance-trading.md))
+> - [Compliance & Legal](#compliance--legal) ([source](categories/compliance-legal.md))
+> - [Content Moderation](#content-moderation) ([source](categories/content-moderation.md))
+> - [Related Practices / Discussions](#related-practices--discussions) ([source](categories/related-practices-discussions.md))
+> 
+> 
+> ## Full list
+> 
+> 
+> ### Finance & Tra
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/tamaratran/fast-jev-compaction)
+[GitHub](https://github.com/yibie/awesome-jev)
 
 ## 相關收錄
 
@@ -317,7 +312,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE category = "Other" AND file.name != "yibie--awesome-jev"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -326,7 +321,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "tamaratran--fast-jev-compaction" AND status != "archived"
+> WHERE language = "Python" AND file.name != "yibie--awesome-jev" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -335,18 +330,18 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE week = "2026-W39" AND file.name != "yibie--awesome-jev"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/yibie--awesome-jev");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "tamaratran--fast-jev-compaction" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "yibie--awesome-jev" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -362,7 +357,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "tamaratran" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE owner = "yibie" AND file.name != "yibie--awesome-jev"
 > SORT stars DESC
 > ```
 
@@ -370,7 +365,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/yibie--awesome-jev");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -387,7 +382,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/yibie--awesome-jev");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -420,7 +415,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/yibie--awesome-jev");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -444,7 +439,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/yibie--awesome-jev");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -481,7 +476,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/yibie--awesome-jev");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -564,7 +559,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-18** — 首次收錄
+> **2026-09-24** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -580,10 +575,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-24|2026-09-24]] — 再次上榜，6.6k stars
-- [[2026-09-23|2026-09-23]] — 再次上榜，6.4k stars
-- [[2026-09-22|2026-09-22]] — 再次上榜，6.1k stars
-- [[2026-09-21|2026-09-21]] — 再次上榜，5.4k stars
-- [[2026-09-20|2026-09-20]] — 再次上榜，4.4k stars
-- [[2026-09-19|2026-09-19]] — 再次上榜，3.5k stars
-- [[2026-09-18|2026-09-18]] — 首次收錄，1.2k stars
+- [[2026-09-24|2026-09-24]] — 首次收錄，1.5k stars

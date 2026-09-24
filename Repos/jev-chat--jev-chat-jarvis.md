@@ -7,12 +7,12 @@ language: Kotlin
 license: MIT
 description: "装在手机上的对话副驾：在微信 / QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。"
 homepage: ""
-stars: 4372
-stars_per_day: 4372
-forks: 912
-open_issues: 38
+stars: 5415
+stars_per_day: 2708
+forks: 1036
+open_issues: 33
 created: 2026-09-21
-pushed_at: 2026-09-23
+pushed_at: 2026-09-24
 first_seen: 2026-09-23
 week: "2026-W39"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-26"
+appearances: 2
+next_review: "2026-09-27"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 3
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-23"
-star_history: "2026-09-23:4372"
+star_history: "2026-09-23:4372,2026-09-24:5415"
 tags:
   - github
   - "category/other"
@@ -733,4 +733,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-24|2026-09-24]] — 再次上榜，5.4k stars
 - [[2026-09-23|2026-09-23]] — 首次收錄，4.4k stars

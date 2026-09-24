@@ -7,12 +7,12 @@ language: Python
 license: Apache-2.0
 description: "tiny Jev-like family of decision models built on top of Qwen3.5 you can train and run on your own"
 homepage: ""
-stars: 4666
-stars_per_day: 933
-forks: 254
-open_issues: 17
+stars: 6236
+stars_per_day: 1039
+forks: 341
+open_issues: 30
 created: 2026-09-17
-pushed_at: 2026-09-23
+pushed_at: 2026-09-24
 first_seen: 2026-09-22
 week: "2026-W39"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-26"
+appearances: 3
+next_review: "2026-09-27"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-22"
-star_history: "2026-09-22:2679,2026-09-23:4666"
+star_history: "2026-09-22:2679,2026-09-23:4666,2026-09-24:6236"
 tags:
   - github
   - "category/other"
@@ -618,5 +618,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-24|2026-09-24]] — 再次上榜，6.2k stars
 - [[2026-09-23|2026-09-23]] — 再次上榜，4.7k stars
 - [[2026-09-22|2026-09-22]] — 首次收錄，2.7k stars

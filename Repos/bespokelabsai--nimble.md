@@ -1,20 +1,20 @@
 ---
-repo: tamaratran/fast-jev-compaction
-url: https://github.com/tamaratran/fast-jev-compaction
-owner: tamaratran
-owner_type: User
-language: TypeScript
-license: MIT
-description: "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim."
+repo: bespokelabsai/nimble
+url: https://github.com/bespokelabsai/nimble
+owner: bespokelabsai
+owner_type: Organization
+language: Python
+license: N/A
+description: "Local typed decisions, contrastive data curation, and model evaluation."
 homepage: ""
-stars: 6616
-stars_per_day: 1103
-forks: 387
-open_issues: 81
-created: 2026-09-17
-pushed_at: 2026-09-18
-first_seen: 2026-09-18
-week: "2026-W38"
+stars: 1699
+stars_per_day: 340
+forks: 127
+open_issues: 4
+created: 2026-09-18
+pushed_at: 2026-09-23
+first_seen: 2026-09-24
+week: "2026-W39"
 month: "2026-09"
 category: "Other"
 subcategory: ""
@@ -25,39 +25,40 @@ my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-18
+last_reviewed: 2026-09-24
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 7
+appearances: 1
 next_review: "2026-09-27"
-contributor_count: 2
+contributor_count: 3
 engagement: "low"
 issue_close_rate: 0
-repo_size_kb: 249
-readme_length: 5789
+repo_size_kb: 6223
+readme_length: 9714
 bus_factor: 1
 last_release_days: -1
 release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-18"
-star_history: "2026-09-18:1152,2026-09-19:3493,2026-09-20:4426,2026-09-21:5442,2026-09-22:6059,2026-09-23:6372,2026-09-24:6616"
+ring_history: "assess@2026-09-24"
+star_history: "2026-09-24:1699"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/python"
+  - org
 aliases:
-  - "fast-jev-compaction"
-  - "tamaratran/fast-jev-compaction"
+  - "nimble"
+  - "bespokelabsai/nimble"
 ---
 
-# fast-jev-compaction
+# nimble
 
-**1.2k** stars · **1.2k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**1.7k** stars · **340** stars/天 · 建立 5 天前 · Python · 未標註授權
 
 ```dataviewjs
-const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+const me = dv.page("Repos/bespokelabsai--nimble");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`ORG`
+
 > [!summary] 一句話摘要
-> Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.
+> Local typed decisions, contrastive data curation, and model evaluation.
 
 ## 專案簡介
 
-Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.
+Local typed decisions, contrastive data curation, and model evaluation.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/bespokelabsai--nimble");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +119,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/bespokelabsai--nimble");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,176 +143,207 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 49 |
-| Open Issues | 7 |
+| Forks | 127 |
+| Open Issues | 4 |
 | Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-18 |
-| 建立日期 | 2026-09-17 |
-| Repo 大小 | 249 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/tamaratran/fast-jev-compaction) |
+| 最後推送 | 2026-09-23 |
+| 建立日期 | 2026-09-18 |
+| Repo 大小 | 6.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/bespokelabsai/nimble) |
 
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@types/node` `tsx` `typescript` `vitest`
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Python" : 99
+>     "HTML" : 1
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@devin-ai-integration[bot]](https://github.com/devin-ai-integration[bot]) | 17 |
-> | [@tamaratran](https://github.com/tamaratran) | 13 |
+> | [@mahesh-bespoke](https://github.com/mahesh-bespoke) | 4 |
+> | [@eddited17](https://github.com/eddited17) | 1 |
+> | [@catcherinthesty](https://github.com/catcherinthesty) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-17 ~ 2026-09-17）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #17 from tamaratran/devin/1789683249-readme-tagline
+> [!abstract] 最近 10 次 commit（2026-09-18 ~ 2026-09-23）
+> **活躍天數** 5 天 · **最新 commit** Fix typo in Nimble model description (#8)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#21](https://github.com/tamaratran/fast-jev-compaction/issues/21) | Hooks (0) on install — session.compact / turn.complete are n | 0 | 0 |
+> | [#3](https://github.com/bespokelabsai/nimble/issues/3) | Benchmark Results & Streaming Evaluation: Comparing Zero-Wei | 1 | 0 |
+> | [#10](https://github.com/bespokelabsai/nimble/issues/10) | JevBench v1.4 results for Bespoke Labs | 0 | 0 |
+> | [#6](https://github.com/bespokelabsai/nimble/issues/6) | Feature Request: ROCm/ AMD GPU support for Nimble inference | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # fast-jev-compaction
+> # Bespoke Nimble
 > 
-> Claude Code plugin that replaces the compaction summary with Jev decisions:
-> every tool call and result is scored in one fast request, stale ones are
-> dropped or truncated, everything kept stays verbatim. Also usable as an npm
-> library.
+> **Data, Model, Recipe for an open Jev**
 > 
-> ## What and why
+> [Model](https://huggingface.co/bespokelabs/Bespoke-Nimble-9B) · [Updates](#updates) · [Capabilities](#capabilities) · [Quickstart](#quickstart) · [Methodology](#methodology) · [Documentation and development](#documentation-and-development) · [Citation](#citation)
 > 
-> Most context compaction asks an LLM to summarize old turns. A summary is
-> lossy: a file path, exact error, constraint, or command can disappear even when
-> it matters later. This library never rewrites anything. It only deletes tool
-> calls and tool results Jev says are no longer needed, and it asks Jev while
-> showing it the whole conversation. User and assistant text stays verbatim and
-> in order.
+> Nimble takes some text and a schema, and makes typed decisions about the text.
+> The schema is the list of questions to answer. Each question is either a choice
+> from a list that you give or a true or false question. For each question, Nimble
+> returns the answer it picked and the probability of each allowed answer.
 > 
-> The repository is both an npm package (`src/`) and a Claude Code plugin
-> (`hooks/`, `.claude-plugin/`) that uses the package to replace Claude Code's
-> built-in compaction summary with the original messages.
+> Nimble makes each decision in one step and does not write out any reasoning
+> first, so it is fast (blazing fast!). Nimble is
+> inspired by the System One approach of
+> [TypeSafe's Jev](https://docs.typesafe.ai/primitives/choice). In this repository,
+> we share our recipe for training such a model.
 > 
-> ## How it works
+> Note that we did not distill from Jev. The point of the repository is to show how to curate data, how to train, and to serve such a model, and encourage more research!
 > 
-> 1. Every `tool_use` is paired with its `tool_result` by `tool_use_id`. Calls in
->    the first message or in the newest `preserveRecentMessages` messages are
->    pinned and never touched.
-> 2. The **state** sent to Jev is the whole conversation so far, oldest first,
->    with every tool result replaced by a short note (`ok, 4213 chars (omitted)`).
->    Tool inputs are included, texts are included, nothing is summarized.
-> 3. The state is fitted into `maxStateTokens` (25k by default) in stages, each
->    applied only if the previous one was not enough: tool inputs truncated to
->    1000, then 200, then 60 characters; long texts abridged to head + tail,
->    oldest non-pinned messages first; old non-pinned messages collapsed to a
->    `[… N chars omitted …]` note; old tool calls reduced to one line each
->    (`t12 Read file_path=src/a.ts → ok 480ch`); old call-less messages left
->    out; runs of old call-only messages folded into one entry. If it still
->    does not fit, compaction throws. Tokens are estimated without a tokenizer (a
->    word per six letters, half a token per digit, ~one per other symbol),
->    calibrated to land a little above the counts Jev reports.
-> 4. For every non-pinned call Jev gets two `noul` questions: should the **call**
->    stay (knowing it was made, with its input, still matters), and should the
->    **result** stay verbatim (its contents are still needed and re-running the
->    tool would not do).
-> 5. Questions are split into as many requests as needed so state plus questions
->    stays under `maxRequestTokens` (30k by default, under Jev's 32k request
->    limit). The same full state is resent with every request; requests run
->    concurrently and their answers are merged.
-> 6. Decisions per call, against `keepThreshold`:
->    - `keepResult ≥ threshold` → keep call and result;
->    - else `keepCall ≥ threshold` → keep the call, truncate the result to its
->      first `truncateHeadChars` characters plus a one-line note;
->    - else → remove the call together with its result.
-> 7. The message list is rebuilt: a message that loses all its content is
->    removed, untouched messages are returned as the same objects, and no result
->    is ever left without its call.
+> You can run [Bespoke-Nimble-9B](https://huggingface.co/bespokelabs/Bespoke-Nimble-9B)
+> on a Mac with Apple Silicon or on a machine with an NVIDIA GPU.
 > 
-> Jev failures, malformed answers, a missing key, or a history that cannot be
-> fitted throw; the caller (or the Claude Code hook) decides what to fall back to.
 > 
-> ## Install and usage
+> ## Quickstart
+> 
+> Clone the repository and move into its folder. Run all the commands below from
+> this folder.
 > 
 > ```sh
-> npm install fast-jev-compaction
-> export TYPESAFE_API_KEY=...
+> git clone https://github.com/bespokelabsai/nimble.git nimble
+> cd nimble
 > ```
 > 
-> ```ts
-> import { compactMessages, reductionRatio, type Message } from 'fast-jev-compaction';
+> Use Python 3.12. To run the model on a Mac, you need Apple Silicon. Python must
+> also run directly on macOS so that it can use Metal, which is Apple's interface
+> to the GPU. To run the model on Linux, you need an NVIDIA GPU that supports
+> BF16, a 16-bit number format.
 > 
-> const transcript: Message[] = [
->   { role: 'user', text: 'Fix the failing test. Never edit src/generated.', toolUses: [] },
->   {
->     role: 'assistant',
->     text: '',
->     toolUses: [{ tool_use_id: 'toolu_1', tool: 'Read', input: { file_path: 'src/a.ts' } }],
->   },
->   { role: 'user', text: '', toolUses: [], toolResults: [{ tool_use_id: 'toolu_1', text: '…file…' }] },
->   // …
-> ];
+> Without quantization, the 9B weights alone take about 18 GB. Quantization means
+> storing the weights with fewer bits to save memory. The model needs more memory
+> than this while it runs. The merge step below runs on the CPU. It needs extra
+> RAM, and it needs disk space for both the base weights and the merged weights.
+> A Mac with 64 GB of memory has more free memory for this than a machine with
+> 24 GB.
 > 
-> const result = await compactMessages(transcript, { preserveRecentMessages: 4 });
-> console.log(result.messages, result.decisions, result.stats);
-> if (reductionRatio(result) " } }
-> ```
 > 
-> Then add this repository as a plugin marketplace and install the plugin,
-> either from the shell or as slash commands inside a session:
+> ### Evaluation on 324 held-out examples
 > 
-> ```sh
-> claude plugin marketplace add tamaratran/fast-jev-compaction
-> claude plugin install fast-jev-compaction@fast-jev-compaction
-> ```
+> | Model | Reference matches | Agreement |
+> | --- | ---: | ---: |
+> | Gemma 3 270M IT | 93/324 | 28.70% |
+> | Qwen3.5-0.8B | 147/324 | 45.37% |
+> | Qwen3.5-4B | 199/324 | 61.42% |
+> | Qwen3.5-9B | 215/324 | 66.36% |
+> | Qwen3.8-27B | 275/324 | 84.88% |
+> | **Bespoke-Nimble-9B** | **292/324** | **90.12%** |
+> | Jev 1.13.0 | 302/324 | 93.21% |
 > 
-> The install prompts for the plugin options (API key, thresholds, `truncateHeadChars`,
-> …); leave them at their defaults to use `TYPESAFE_API_KEY` from the environment.
-> Restart Claude Code or run `/reload-plugins`. From then on `/compact` (and
-> auto-compaction) goes through Jev: the toast reads
-> `fast-jev-compaction: kept N/M messages, no summary (…)` when the pruned history
-> replaced the built-in summary, or `fallback to built-in summary (…)` when Jev
-> could not remove enough (short sessions, or when it fails).
+> On these 324 examples, Bespoke-Nimble-9B matched 17 more reference labels than
+> the untuned 27B model, which is 5.25 percentage points more. Jev matched 10 more
+> reference labels than Bespoke-Nimble-9B, which is 3.09 points more. The untuned
+> models are models that we did not fine-tune for this task. We tested all seven
+> models on the same examples with the same reference labels. We ran Gemma and
+> the untuned Qwen models on an H100 GPU. For Bespoke-Nimble-9B, we reused
+> checked results from an earlier H100 run. For Jev, we reused results from an
+> earlier run through its API.
 > 
-> To run from a checkout without installing: `CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 claude --plugin-dir .`
-> from the repository root. No publishing step is required; the marketplace is
-> just the repo's `.claude-plugin/marketplace.json`.
+> The reference labels are synthetic. The 324 examples form 162 pairs of closely
+> related examples. All of them come from only six source families, so this is a narrow
+> test.
 > 
-> ## Development
+> For the untuned models, we computed the scores of the candidate answers in FP32,
+> a 32-bit number format. For Bespoke-Nimble-9B, we kept the setup that we had
+> already checked, which computes the output layer in BF16. In a new run of the
+> untuned 9B model, one answer that had been a 50/50 tie was no longer a tie. This
+> changed the model's count from 214 to 215. For rating tasks, we count a match
+> when the most probable level equals the reference level. The
+> [machine-readable comparison](assets/evidence-324-results.json) contains
+> the reference-match counts shown above.
 > 
-> ```sh
-> npm install
-> npm run typecheck        # library + hook
-> npm test
-> npm run build
-> npm run validate:plugin  # claude plugin validate
-> TYPESAFE_API_KEY="$(cat ~/.typesafe_key)" npm run demo
-> ```
+> We checked the saved adapter in two ways. After we reloaded it, it gave exactly
+> the same logits as before. When we turned the adapter off, the model gave the
+> same results as the base model. We ran these checks only on the CUDA path that
+> loads the adapter without merging it. We did not run a separate quality test on
+> the merged model that the Mac and Linux quickstarts use. See the
+> [training guide](docs/NIMBLE_TRAINING.md) for the commands and for the contract
+> file saved with each model. In the contract file, we record the base model and
+> the prompt format that the model expects.
 > 
-> The unit tests use a fake Jev and never contact TypeSafe. The demo is the live
-> network check.
+> For external, human-labeled tests on tasks outside these training categories, see
+> the [public benchmarks guide](docs/PUBLIC_BENCHMARKS.md), which runs Bespoke-Nimble-9B
+> and Jev on the same records from thirteen public subsets, starting with VitaminC.
 > 
-> ## Animated demo (macOS)
 > 
-> `demo/JevDemo` is a small native SwiftUI app that plays a scripted, dramatized
-> version of the compaction flow inside a Claude Code-style terminal: the tool
-> calls of a canned transcript are scored, results and calls Jev lets go turn red
-> and collapse away, and the rest stays verbatim. It never calls the API; it
-> exists to be screen recorded.
+> ## Updates
 > 
-> ```sh
-> demo/JevDemo/build.sh   # builds demo/JevDemo/build/JevDemo.app and launches it
-> ```
+> - On September 22, 2026, we fitted a temperature for Bespoke-Nimble-9B. With
+>   this temperature, the probabilities better match how often the answers are
+>   right. The model picks the same answers as before. Noul probabilities and
+>   Score values do change, so if you compare them with a threshold, test the
+>   threshold again. See [Probability temperature](#probability-temperature) and
+>   [PR #7](https://github.com/bespokelabsai/nimble/pull/7).
+> - On September 20, 2026, we published the 2,676 training examples and the 324
+>   held-out examples for Bespoke-Nimble-9B. We had left them out of the first
+>   release by mistake. See the [dataset guide](docs/DATASET.md) and
+>   [PR #5](https://github.com/bespokelabsai/nimble/pull/5).
+> - On September 19, 2026, we raised the prompt limit of the hosted API to 8,192
+>   tokens for each question. The model was trained on prompts of up to 2,048
+>   tokens, so shorter prompts are better tested. See the
+>   [SGLang deployment guide](docs/MODAL_SERVING.md) and
+>   [PR #4](https://github.com/bespokelabsai/nimble/pull/4).
+> - On September 18, 2026, [Edgar Dyck](https://github.com/eddited17) added a
+>   public benchmark suite. With it, you can run Bespoke-Nimble-9B and Jev on the
+>   same records from 13 public subsets with human labels. The
+>   [public benchmarks guide](docs/PUBLIC_BENCHMARKS.md) has the steps and the
+>   results. See [PR #2](https://github.com/bespokelabsai/nimble/pull/2).
 > 
-> Press space in the app to replay from the start.
+> 
+> ## Capabilities
+> 
+> We built Nimble in one day, so expect some rough edges. What Nimble can do comes
+> from two sources: the first is the base model, Qwen3.5-9B, the second is our
+> training data, which we curated for a few specific domains.
+> 
+> 
+> ### What you can build
+> 
+> | Task | You define | You get back |
+> | --- | --- | --- |
+> | Route a request | The destinations and when each one applies | The chosen destination and the probability of each destination |
+> | Check a condition | A yes or no question and the evidence | True or false, and the probability of each |
+> | Apply a policy | The rules and the allowed outcomes | A typed decision based on the text you supply |
+> | Rate an outcome | Ordered levels, each with clear criteria | The chosen level and the probability of each level |
+> 
+> You supply a context, which is the text to judge, and a schema. The schema must
+> be flat, which means that it has no nested fields. Each field is an enum or a
+> boolean. An enum field has a fixed list of string choices, and a boolean field
+> is true or false.
+> 
+> Each allowed answer has a code that is one token long. The scorer reads the
+> model's logits for these codes. Logits are the raw scores that the model gives
+> to each token. The scorer turns the logits into probabilities with the softmax
+> function. Our Python code then builds the output from these probabilities, so
+> there is no generated JSON to parse. If a field is an ordered rating scale, your
+> application can use the probabilities to calculate an expected level.
+> 
+> On a Mac, `ParallelScorer` processes the shared context once and then scores all
+> the fields in parallel. The CUDA scorer scores each field on its own, with the
+> full prompt each time. Both scorers return the typed output. They also return
+> the logits and the probabilities of the candidate answers. Each field is scored
+> separately, so one field cannot see the answer to another field.
+> 
+> 
+> ### What you cannot build with the current release
+> 
+> 
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/tamaratran/fast-jev-compaction)
+[GitHub](https://github.com/bespokelabsai/nimble)
 
 ## 相關收錄
 
@@ -317,7 +351,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE category = "Other" AND file.name != "bespokelabsai--nimble"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -326,7 +360,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "tamaratran--fast-jev-compaction" AND status != "archived"
+> WHERE language = "Python" AND file.name != "bespokelabsai--nimble" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -335,18 +369,18 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE week = "2026-W39" AND file.name != "bespokelabsai--nimble"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/bespokelabsai--nimble");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "tamaratran--fast-jev-compaction" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "bespokelabsai--nimble" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -362,7 +396,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "tamaratran" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE owner = "bespokelabsai" AND file.name != "bespokelabsai--nimble"
 > SORT stars DESC
 > ```
 
@@ -370,7 +404,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/bespokelabsai--nimble");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -387,7 +421,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/bespokelabsai--nimble");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -420,7 +454,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/bespokelabsai--nimble");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -444,7 +478,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/bespokelabsai--nimble");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -481,7 +515,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/bespokelabsai--nimble");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -564,7 +598,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-18** — 首次收錄
+> **2026-09-24** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -580,10 +614,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-24|2026-09-24]] — 再次上榜，6.6k stars
-- [[2026-09-23|2026-09-23]] — 再次上榜，6.4k stars
-- [[2026-09-22|2026-09-22]] — 再次上榜，6.1k stars
-- [[2026-09-21|2026-09-21]] — 再次上榜，5.4k stars
-- [[2026-09-20|2026-09-20]] — 再次上榜，4.4k stars
-- [[2026-09-19|2026-09-19]] — 再次上榜，3.5k stars
-- [[2026-09-18|2026-09-18]] — 首次收錄，1.2k stars
+- [[2026-09-24|2026-09-24]] — 首次收錄，1.7k stars

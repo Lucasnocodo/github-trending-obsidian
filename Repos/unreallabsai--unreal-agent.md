@@ -1,63 +1,64 @@
 ---
-repo: tamaratran/fast-jev-compaction
-url: https://github.com/tamaratran/fast-jev-compaction
-owner: tamaratran
-owner_type: User
-language: TypeScript
+repo: unreallabsai/unreal-agent
+url: https://github.com/unreallabsai/unreal-agent
+owner: unreallabsai
+owner_type: Organization
+language: Go
 license: MIT
-description: "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim."
-homepage: ""
-stars: 6616
-stars_per_day: 1103
-forks: 387
-open_issues: 81
-created: 2026-09-17
-pushed_at: 2026-09-18
-first_seen: 2026-09-18
-week: "2026-W38"
+description: "Async-first agent harness"
+homepage: "https://unreallabs.ai"
+stars: 1776
+stars_per_day: 888
+forks: 90
+open_issues: 8
+created: 2026-09-21
+pushed_at: 2026-09-23
+first_seen: 2026-09-24
+week: "2026-W39"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.2.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-18
+last_reviewed: 2026-09-24
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 7
+appearances: 1
 next_review: "2026-09-27"
-contributor_count: 2
+contributor_count: 5
 engagement: "low"
-issue_close_rate: 0
-repo_size_kb: 249
-readme_length: 5789
-bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+issue_close_rate: 27
+repo_size_kb: 1067
+readme_length: 3139
+bus_factor: 2
+last_release_days: 1
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-18"
-star_history: "2026-09-18:1152,2026-09-19:3493,2026-09-20:4426,2026-09-21:5442,2026-09-22:6059,2026-09-23:6372,2026-09-24:6616"
+ring_history: "assess@2026-09-24"
+star_history: "2026-09-24:1776"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
+  - "lang/go"
+  - org
 aliases:
-  - "fast-jev-compaction"
-  - "tamaratran/fast-jev-compaction"
+  - "unreal-agent"
+  - "unreallabsai/unreal-agent"
 ---
 
-# fast-jev-compaction
+# unreal-agent
 
-**1.2k** stars · **1.2k** stars/天 · 建立 1 天前 · TypeScript · MIT
+**1.8k** stars · **888** stars/天 · 建立 2 天前 · Go · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+const me = dv.page("Repos/unreallabsai--unreal-agent");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,18 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
+`ORG` `v0.2.0`
+
 > [!summary] 一句話摘要
-> Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.
+> Async-first agent harness
 
 ## 專案簡介
 
-Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.
+Async-first agent harness
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/unreallabsai--unreal-agent");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -116,7 +119,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/unreallabsai--unreal-agent");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -140,176 +143,128 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 49 |
-| Open Issues | 7 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-18 |
-| 建立日期 | 2026-09-17 |
-| Repo 大小 | 249 KB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/tamaratran/fast-jev-compaction) |
+| Forks | 90 |
+| Open Issues | 8 |
+| Issue 解決率 | 27% (3 closed) |
+| 最後推送 | 2026-09-23 |
+| 建立日期 | 2026-09-21 |
+| 官方網站 | [Link](https://unreallabs.ai) |
+| Repo 大小 | 1.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/unreallabsai/unreal-agent) |
 
 > [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@types/node` `tsx` `typescript` `vitest`
+> `go.mod` 中的核心套件：
+> `module` `github.com/oapi-codegen/runtime` `golang.org/x/image` `golang.org/x/sys` `github.com/apapsch/go-jsonmerge/v2` `github.com/google/uuid`
+
+> [!info]- 語言組成
+> ```mermaid
+> pie title 語言組成
+>     "Go" : 95
+>     "Python" : 4
+> ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@devin-ai-integration[bot]](https://github.com/devin-ai-integration[bot]) | 17 |
-> | [@tamaratran](https://github.com/tamaratran) | 13 |
+> | [@g-logunov](https://github.com/g-logunov) | 67 |
+> | [@maxim092001](https://github.com/maxim092001) | 43 |
+> | [@discobot](https://github.com/discobot) | 19 |
+> | [@sashabaranov](https://github.com/sashabaranov) | 5 |
+> | [@artyom-ivanov](https://github.com/artyom-ivanov) | 1 |
+
+**最新版本**：v0.2.0 (2026-09-23)
+
+> [!info]- Release Notes
+> ## What's Changed
+> * Fix retry hint HTTP date test timezone by @g-logunov in https://github.com/unreallabsai/unreal-agent/pull/8
+> * Use XDG state storage and opt-in runner logs by @g-logunov in https://github.com/unreallabsai/unreal-agent/pull/9
+> * Avoid lost wakeup in process output drain test by @g-logunov in https://github.com/unreallabsai/unreal-agent/pull/12
+> 
+> ## New Contributors
+> * @g-logunov made their first contribution in https://github.com/unreallabsai/unreal-agent/pull/8
+> 
+> **Full Changelog**: https://github.com/unreallabsai/unreal-agent/compare/v0.1.0...v0.2.0
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-17 ~ 2026-09-17）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #17 from tamaratran/devin/1789683249-readme-tagline
+> [!abstract] 最近 10 次 commit（2026-09-22 ~ 2026-09-23）
+> **活躍天數** 2 天 · **最新 commit** Avoid lost wakeup in process output drain test (#12)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#21](https://github.com/tamaratran/fast-jev-compaction/issues/21) | Hooks (0) on install — session.compact / turn.complete are n | 0 | 0 |
+> | [#5](https://github.com/unreallabsai/unreal-agent/issues/5) | Repository .env can exfiltrate API key and/or allow arbitrar | 3 | 1 |
+> | [#3](https://github.com/unreallabsai/unreal-agent/issues/3) | Background Bash operation can read its own output file: unbo | 2 | 1 |
+> | [#16](https://github.com/unreallabsai/unreal-agent/issues/16) | [Bug]: SIGTERM bypasses runner cancellation | 0 | 0 |
+> | [#15](https://github.com/unreallabsai/unreal-agent/issues/15) | [Bug]: Skill metadata parser treats YAML syntax as literal t | 0 | 0 |
+> | [#14](https://github.com/unreallabsai/unreal-agent/issues/14) | [Bug]: Runs using the same log directory can share a log fil | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # fast-jev-compaction
+> # Unreal Agent
 > 
-> Claude Code plugin that replaces the compaction summary with Jev decisions:
-> every tool call and result is scored in one fast request, stale ones are
-> dropped or truncated, everything kept stays verbatim. Also usable as an npm
-> library.
+> An async-first agent harness from Unreal Labs.
 > 
-> ## What and why
+> - [harness/](harness/) — the library.
+> - [cmd/](cmd/) — executables that use the library.
+> - [benchmarks/](benchmarks/) — benchmark runners.
 > 
-> Most context compaction asks an LLM to summarize old turns. A summary is
-> lossy: a file path, exact error, constraint, or command can disappear even when
-> it matters later. This library never rewrites anything. It only deletes tool
-> calls and tool results Jev says are no longer needed, and it asks Jev while
-> showing it the whole conversation. User and assistant text stays verbatim and
-> in order.
+> ## Glossary
 > 
-> The repository is both an npm package (`src/`) and a Claude Code plugin
-> (`hooks/`, `.claude-plugin/`) that uses the package to replace Claude Code's
-> built-in compaction summary with the original messages.
+> - **Input**: an event with a caller-supplied globally unique ID that remains
+>   stable across redeliveries.
+> - **Inbox**: session-scoped, in-memory deduplication of external, control, and
+>   crash inputs.
+> - **Session**: append-only persisted history that can be forked.
+> - **LLM turn**: the coordinator-managed sequence around one logical LLM request.
+> - **Tool**: a capability described by a schema and bound to a translator.
+> - **Tool call**: a model-produced request to use a tool.
+> - **Tool translator**: validates a tool call and translates it into one or more
+>   operations. It runs synchronously on the coordinator's event loop and must not
+>   perform I/O or suspend the loop.
+> - **Tool call status**: the translation outcome: a validation error or references
+>   to submitted operations. Operation execution state is tracked separately;
+>   the translator formats these into a model-facing result.
+> - **Operation**: a serializable description of work produced by a tool translator
+>   for asynchronous execution. Implementations are encouraged to use the available
+>   [primitives](harness/primitives/).
 > 
-> ## How it works
+> ## Components
 > 
-> 1. Every `tool_use` is paired with its `tool_result` by `tool_use_id`. Calls in
->    the first message or in the newest `preserveRecentMessages` messages are
->    pinned and never touched.
-> 2. The **state** sent to Jev is the whole conversation so far, oldest first,
->    with every tool result replaced by a short note (`ok, 4213 chars (omitted)`).
->    Tool inputs are included, texts are included, nothing is summarized.
-> 3. The state is fitted into `maxStateTokens` (25k by default) in stages, each
->    applied only if the previous one was not enough: tool inputs truncated to
->    1000, then 200, then 60 characters; long texts abridged to head + tail,
->    oldest non-pinned messages first; old non-pinned messages collapsed to a
->    `[… N chars omitted …]` note; old tool calls reduced to one line each
->    (`t12 Read file_path=src/a.ts → ok 480ch`); old call-less messages left
->    out; runs of old call-only messages folded into one entry. If it still
->    does not fit, compaction throws. Tokens are estimated without a tokenizer (a
->    word per six letters, half a token per digit, ~one per other symbol),
->    calibrated to land a little above the counts Jev reports.
-> 4. For every non-pinned call Jev gets two `noul` questions: should the **call**
->    stay (knowing it was made, with its input, still matters), and should the
->    **result** stay verbatim (its contents are still needed and re-running the
->    tool would not do).
-> 5. Questions are split into as many requests as needed so state plus questions
->    stays under `maxRequestTokens` (30k by default, under Jev's 32k request
->    limit). The same full state is resent with every request; requests run
->    concurrently and their answers are merged.
-> 6. Decisions per call, against `keepThreshold`:
->    - `keepResult ≥ threshold` → keep call and result;
->    - else `keepCall ≥ threshold` → keep the call, truncate the result to its
->      first `truncateHeadChars` characters plus a one-line note;
->    - else → remove the call together with its result.
-> 7. The message list is rebuilt: a message that loses all its content is
->    removed, untouched messages are returned as the same objects, and no result
->    is ever left without its call.
+> | Component | Responsibility |
+> | --- | --- |
+> | Session inbox | Volatile, session-scoped input idempotency. |
+> | Coordinator | Persist accepted inputs, run LLM turns, resolve tool translators through the registry, and dispatch committed operations. |
+> | Session store | Persist canonical session history and operation state; support recovery and forks; atomically record tool-call status with operations. |
+> | Context builder | Statefully assemble model input in memory. Return the model input together with a record of anything omitted, truncated, or compacted. Perform no I/O and accept no persistence dependencies. |
+> | LLM Adapter | Send prepared model input to a provider and return a normalized completed response. Own authentication, cancellation, and provider errors. |
+> | Tool registry | Own the fixed Bash, ViewImage, and skill-use definitions and their translators; expose the host-selected set. |
+> | Tool translator | Validate a tool call and produce its status and operations. Format a recorded call status and prepared operation output into model results. Perform no I/O. |
+> | Operation manager | Actor runtime for durable operations. The local implementation is swappable. |
 > 
-> Jev failures, malformed answers, a missing key, or a history that cannot be
-> fitted throw; the caller (or the Claude Code hook) decides what to fall back to.
+> ## Extending the harness
 > 
-> ## Install and usage
+> Harness components are composable, and alternative implementations of their interfaces are encouraged.
 > 
-> ```sh
-> npm install fast-jev-compaction
-> export TYPESAFE_API_KEY=...
-> ```
+> We intend to preserve these invariants:
 > 
-> ```ts
-> import { compactMessages, reductionRatio, type Message } from 'fast-jev-compaction';
+> - Session-store items are serializable, and the storage format is versioned.
+> - We'll do our best to maintain backwards compatibility for sessions.
+>   An unsupported session version will always cause an explicit error on resume.
+> - Operations are versioned and always serializable.
 > 
-> const transcript: Message[] = [
->   { role: 'user', text: 'Fix the failing test. Never edit src/generated.', toolUses: [] },
->   {
->     role: 'assistant',
->     text: '',
->     toolUses: [{ tool_use_id: 'toolu_1', tool: 'Read', input: { file_path: 'src/a.ts' } }],
->   },
->   { role: 'user', text: '', toolUses: [], toolResults: [{ tool_use_id: 'toolu_1', text: '…file…' }] },
->   // …
-> ];
-> 
-> const result = await compactMessages(transcript, { preserveRecentMessages: 4 });
-> console.log(result.messages, result.decisions, result.stats);
-> if (reductionRatio(result) " } }
-> ```
-> 
-> Then add this repository as a plugin marketplace and install the plugin,
-> either from the shell or as slash commands inside a session:
-> 
-> ```sh
-> claude plugin marketplace add tamaratran/fast-jev-compaction
-> claude plugin install fast-jev-compaction@fast-jev-compaction
-> ```
-> 
-> The install prompts for the plugin options (API key, thresholds, `truncateHeadChars`,
-> …); leave them at their defaults to use `TYPESAFE_API_KEY` from the environment.
-> Restart Claude Code or run `/reload-plugins`. From then on `/compact` (and
-> auto-compaction) goes through Jev: the toast reads
-> `fast-jev-compaction: kept N/M messages, no summary (…)` when the pruned history
-> replaced the built-in summary, or `fallback to built-in summary (…)` when Jev
-> could not remove enough (short sessions, or when it fails).
-> 
-> To run from a checkout without installing: `CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 claude --plugin-dir .`
-> from the repository root. No publishing step is required; the marketplace is
-> just the repo's `.claude-plugin/marketplace.json`.
-> 
-> ## Development
-> 
-> ```sh
-> npm install
-> npm run typecheck        # library + hook
-> npm test
-> npm run build
-> npm run validate:plugin  # claude plugin validate
-> TYPESAFE_API_KEY="$(cat ~/.typesafe_key)" npm run demo
-> ```
-> 
-> The unit tests use a fake Jev and never contact TypeSafe. The demo is the live
-> network check.
-> 
-> ## Animated demo (macOS)
-> 
-> `demo/JevDemo` is a small native SwiftUI app that plays a scripted, dramatized
-> version of the compaction flow inside a Claude Code-style terminal: the tool
-> calls of a canned transcript are scored, results and calls Jev lets go turn red
-> and collapse away, and the rest stays verbatim. It never calls the API; it
-> exists to be screen recorded.
-> 
-> ```sh
-> demo/JevDemo/build.sh   # builds demo/JevDemo/build/JevDemo.app and launches it
-> ```
-> 
-> Press space in the app to replay from the start.
+> For example, a proxy operations manager can send serialized operations to a
+> local operations manager running in a process inside a remote sandbox, allowing
+> tools to execute there.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/tamaratran/fast-jev-compaction)
+[GitHub](https://github.com/unreallabsai/unreal-agent) · [官方網站](https://unreallabs.ai)
 
 ## 相關收錄
 
@@ -317,7 +272,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE category = "Other" AND file.name != "unreallabsai--unreal-agent"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -326,7 +281,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "tamaratran--fast-jev-compaction" AND status != "archived"
+> WHERE language = "Go" AND file.name != "unreallabsai--unreal-agent" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -335,18 +290,18 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W38" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE week = "2026-W39" AND file.name != "unreallabsai--unreal-agent"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/unreallabsai--unreal-agent");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "tamaratran--fast-jev-compaction" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "unreallabsai--unreal-agent" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -362,7 +317,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "tamaratran" AND file.name != "tamaratran--fast-jev-compaction"
+> WHERE owner = "unreallabsai" AND file.name != "unreallabsai--unreal-agent"
 > SORT stars DESC
 > ```
 
@@ -370,7 +325,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/unreallabsai--unreal-agent");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -387,7 +342,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/unreallabsai--unreal-agent");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -420,7 +375,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/unreallabsai--unreal-agent");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -444,7 +399,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/unreallabsai--unreal-agent");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -481,7 +436,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/tamaratran--fast-jev-compaction");
+> const me = dv.page("Repos/unreallabsai--unreal-agent");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -564,7 +519,7 @@ Claude Code plugin that replaces the compaction summary with Jev decisions: ever
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-18** — 首次收錄
+> **2026-09-24** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -580,10 +535,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-24|2026-09-24]] — 再次上榜，6.6k stars
-- [[2026-09-23|2026-09-23]] — 再次上榜，6.4k stars
-- [[2026-09-22|2026-09-22]] — 再次上榜，6.1k stars
-- [[2026-09-21|2026-09-21]] — 再次上榜，5.4k stars
-- [[2026-09-20|2026-09-20]] — 再次上榜，4.4k stars
-- [[2026-09-19|2026-09-19]] — 再次上榜，3.5k stars
-- [[2026-09-18|2026-09-18]] — 首次收錄，1.2k stars
+- [[2026-09-24|2026-09-24]] — 首次收錄，1.8k stars
