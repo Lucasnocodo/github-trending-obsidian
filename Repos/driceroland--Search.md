@@ -1,63 +1,63 @@
 ---
-repo: NandhaKishorM/laya
-url: https://github.com/NandhaKishorM/laya
-owner: NandhaKishorM
+repo: driceroland/Search
+url: https://github.com/driceroland/Search
+owner: driceroland
 owner_type: User
-language: Python
-license: Apache-2.0
-description: ""
+language: Swift
+license: MIT
+description: "A small, fast WebKit browser for macOS, by Office Commun."
 homepage: ""
-stars: 23392
-stars_per_day: 3342
-forks: 2022
-open_issues: 149
-created: 2026-09-18
+stars: 1285
+stars_per_day: 321
+forks: 132
+open_issues: 129
+created: 2026-09-20
 pushed_at: 2026-09-24
-first_seen: 2026-09-20
+first_seen: 2026-09-25
 week: "2026-W39"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v0.3.4"
+release_tag: "v1.0.3"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-20
+last_reviewed: 2026-09-25
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
+appearances: 1
 next_review: "2026-09-28"
-contributor_count: 2
-engagement: "low"
-issue_close_rate: 5
-repo_size_kb: 2704
-readme_length: 9946
+contributor_count: 5
+engagement: "medium"
+issue_close_rate: 27
+repo_size_kb: 1140
+readme_length: 9229
 bus_factor: 1
-last_release_days: 0
+last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-20"
-star_history: "2026-09-20:1650,2026-09-21:5397,2026-09-22:11830,2026-09-23:17536,2026-09-24:21147,2026-09-25:23392"
+ring_history: "assess@2026-09-25"
+star_history: "2026-09-25:1285"
 tags:
   - github
   - "category/other"
-  - "lang/python"
+  - "lang/swift"
 aliases:
-  - "laya"
-  - "NandhaKishorM/laya"
+  - "Search"
+  - "driceroland/Search"
 ---
 
-# laya
+# Search
 
-**1.6k** stars · **825** stars/天 · 建立 2 天前 · Python · Apache-2.0
+**1.3k** stars · **321** stars/天 · 建立 4 天前 · Swift · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/NandhaKishorM--laya");
+const me = dv.page("Repos/driceroland--Search");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v0.3.4`
+`v1.0.3`
 
 > [!summary] 一句話摘要
-> No description
+> A small, fast WebKit browser for macOS, by Office Commun.
 
 ## 專案簡介
 
-No description available.
+A small, fast WebKit browser for macOS, by Office Commun.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/driceroland--Search");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ No description available.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/driceroland--Search");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,219 +142,166 @@ No description available.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 152 |
-| Open Issues | 18 |
-| Issue 解決率 | 5% (1 closed) |
-| 最後推送 | 2026-09-20 |
-| 建立日期 | 2026-09-18 |
-| Repo 大小 | 2.6 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/NandhaKishorM/laya) |
+| Forks | 132 |
+| Open Issues | 129 |
+| Issue 解決率 | 27% (47 closed) |
+| 最後推送 | 2026-09-24 |
+| 建立日期 | 2026-09-20 |
+| Repo 大小 | 1.1 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/driceroland/Search) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 71
->     "Jupyter Notebook" : 29
+>     "Swift" : 96
+>     "Python" : 3
+>     "Shell" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@NandhaKishorM](https://github.com/NandhaKishorM) | 49 |
-> | [@sirgio03](https://github.com/sirgio03) | 1 |
+> | [@driceroland](https://github.com/driceroland) | 167 |
+> | [@merttopuz](https://github.com/merttopuz) | 8 |
+> | [@karadoganyi](https://github.com/karadoganyi) | 6 |
+> | [@Hyp4tia](https://github.com/Hyp4tia) | 5 |
+> | [@burakbuilds](https://github.com/burakbuilds) | 4 |
 
-**最新版本**：v0.3.4 (2026-09-20)
+**最新版本**：v1.0.3 — Search 1.0.3 (2026-09-24)
 
 > [!info]- Release Notes
-> **Full Changelog**: https://github.com/NandhaKishorM/laya/compare/v0.3.3...v0.3.4
+> Security, and the mouse wheel. Search 1.0.3 closes the holes found in this week's reviews — an extension could read files outside its own folder, and a page or an ad could open another app without asking — and copying a saved password now asks for Touch ID. A mouse wheel scrolls smoothly again on x.com and pages like it, Bitwarden signs in to a self-hosted server, and extension popups hear what changes while they are open. Also: History opens at once, music keeps playing when you switch spaces, a link from Mail brings Search to the front, a full-screen video no longer goes black, pop-ups need a click, and the tab bar folded away with ⌘S comes back on a ground of its own. Your extensions may each ask once more for their permissions at their next update.
+> 
+> ### Added
+> 
+> - Updates can wait for you: Settings › About › Install updates on its own, on as before. Switched off, Search still looks once a day and says when a newer version is out, and fetches, checks and installs it only when you press Install.
+> 
+> ### Fixed
+> 
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-19 ~ 2026-09-20）
-> **活躍天數** 2 天 · **最新 commit** feat: promote Route Mode as primary Quickstart, bump to v0.3.4
+> [!abstract] 最近 10 次 commit（2026-09-24 ~ 2026-09-24）
+> **活躍天數** 1 天 · **最新 commit** Roadmap: pop-ups named by their site are done
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#15](https://github.com/NandhaKishorM/laya/issues/15) | Thank you for releasing this | 10 | 0 |
-> | [#16](https://github.com/NandhaKishorM/laya/issues/16) | Laya MCP, Skill, and Benchmarks | 1 | 2 |
-> | [#7](https://github.com/NandhaKishorM/laya/issues/7) | Feature Request: TypeScript / Node.js / Bun.js Support | 1 | 5 |
+> | [#17](https://github.com/driceroland/Search/issues/17) | Apple Password support | 7 | 6 |
+> | [#183](https://github.com/driceroland/Search/issues/183) | Arc-style pinned tabs: full rows above the "New tab" button, | 4 | 0 |
+> | [#68](https://github.com/driceroland/Search/issues/68) | Tab folders in the sidebar | 4 | 0 |
+> | [#224](https://github.com/driceroland/Search/issues/224) | iCloud Sync? | 3 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> **Multilingual, non-autoregressive System 1 decision engine.** Typed decisions over 100+ languages in a single forward pass — 33 ms — trained with reinforcement learning against strictly proper scoring rules (RLCD), with a router that picks the right checkpoint per request.
+> # Search
 > 
-> [](https://colab.research.google.com/drive/15d4Yv__KHeHjshVb-6PRTfqVllxih2S3?usp=sharing)
-> [](https://pypi.org/project/laya/)
-> [](https://huggingface.co/convaiinnovations/laya)
-> [](https://huggingface.co/convaiinnovations/laya-multilingual)
-> [](https://huggingface.co/spaces/convaiinnovations/laya-demo)
-> [](https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me)
-> [](https://www.buymeacoffee.com/nandakishorm)
-> [](https://opensource.org/licenses/Apache-2.0)
+> A small, fast, quiet web browser for the Mac, by [Office Commun](https://officecommun.com).
 > 
->   
+> **[Download for macOS →](https://officecommun.com/search)** · macOS 14 or later · free · about 3 MB
 > 
-> Laya evaluates typed questions (`choice`, `score`, `noul`) over any state (text, email, ticket or JSON document) in **a single forward pass** — 33 ms for one question, 7.2 ms/question batched, measured on a T4. No text generation, so nothing to parse and nothing to hallucinate.
-> 
-> Three checkpoints, and a `Router` that picks between them per request:
-> 
-> | | encoder | params | context | use it for |
-> |---|---|---|---|---|
-> | [`laya`](https://huggingface.co/convaiinnovations/laya) | ModernBERT-large | 421M | 512 | English |
-> | [`laya-multilingual`](https://huggingface.co/convaiinnovations/laya-multilingual) | mmBERT-base | 322M | 1024 | 100+ languages, 2x faster |
-> | [`laya-typed-decisions`](https://huggingface.co/convaiinnovations/laya-typed-decisions) | ModernBERT-large | 421M | 1024 | the typed-decisions workflows |
+> Or with [Homebrew](https://brew.sh): `brew install --cask driceroland/tap/search`
 > 
 > ---
 > 
 > 
-> ## Installation
+> ## What it is
 > 
-> ```bash
-> pip install laya
-> ```
+> Search is a browser with nothing in the way. A row of tabs — across the top or down the left, your choice — and the page. There is no toolbar, no start page, no sidebar of suggestions, no account to sign into, nothing that wants your attention. You type an address or a few words in one field and you are on the page.
 > 
-> ---
+> It uses **WebKit**, the engine already inside every Mac (it is what Safari runs on). That is why the whole app is about 3 MB on disk and opens instantly: there is no second copy of Chromium to download, update and keep in memory.
 > 
-> 
-> ## Quickstart: Route Mode (Recommended)
-> 
-> Laya ships three checkpoints. The built-in **`Router`** is the recommended entry point: it evaluates any state in any language, automatically detects scripts and languages in sub-milliseconds, and dispatches to the optimal checkpoint in a single forward pass.
-> 
-> ```python
-> import laya
-> from laya import Router
+> It was built by a design studio that spends its whole day in a browser and was tired of the ones that had become products. This one is a tool.
 > 
 > 
-> ## Live Demo & Resources
+> ## What it does
 > 
-> * **Hugging Face Model:** [convaiinnovations/laya](https://huggingface.co/convaiinnovations/laya)
-> * **Interactive Web Demo:** [convaiinnovations/laya-demo](https://huggingface.co/spaces/convaiinnovations/laya-demo)
-> * **Engineering Writeup:** [Read the full story on Dev.to](https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me)
+> - **One field.** Type an address and you go there; type words and you search. It finishes addresses from your own history and never sends what you type anywhere until you press Return.
+> - **Tabs that stay out of the way.** Pin the pages you keep open all day and they shrink to a letter or their icon. Tabs from your last session come back instantly and cost nothing until you click them. `⌘K` lists your open tabs by name.
+> - **Reading mode.** `⇧⌘R` strips a page down to the article.
+> - **Hide anything, for good.** `⇧⌘H`, then click a cookie banner, a newsletter overlay, a rail of "related" nonsense — it goes, and it is still gone on that site next time, before the page has drawn a single frame.
+> - **An ad blocker that runs before the page.** Third-party trackers and ad networks are stopped at the network level, so there is nothing to render and nothing to slow down. On by default, off per site if something breaks.
+> - **Video that follows you.** `⇧⌘P` lifts the video out of the page into a small window that stays above everything, including other apps.
+> - **Passwords, in your keychain.** Search offers to save a sign-in once it has actually worked, and offers your saved accounts under the field when you click it — the way Safari does, never filling anything on its own. Everything lives in the macOS keychain, encrypted by the system, readable only by Search. Bring yours in from Chrome, Arc, Dia, Brave or Edge in one click; nothing leaves the Mac.
+> - **Light, dark, or the Mac's own.** The frame and the pages follow.
+> - **Bookmarks, history, downloads** — each a panel, each searchable, each one keystroke away.
+> - **Chrome extensions, without Chrome.** Paste a Chrome Web Store link in Settings › Extensions, or open the extension's page in Search and press Add. It runs on WebKit's own extension engine — the one Safari uses — and where Chrome has APIs WebKit doesn't (bookmarks, history, downloads, side panel, offscreen documents, fonts, notifications, speech, OAuth sign-in), Search fills them in itself. They live behind the puzzle button; pin the ones you use often. Building your own? Load its folder as an unpacked extension and press Reload after each change, as in Chrome's developer mode. macOS 15.4 or later.
+> - **Updates itself, quietly.** Once a day it checks for a newer build, downloads it, verifies it is signed by Office Commun, and swaps it in for the next launch. Nothing restarts on its own.
 > 
-> ---
+> 
+> ## What it doesn't do
+> 
+> On purpose:
+> 
+> - No extension you have to install to feel at home. Blocking ads, hiding clutter, reading mode, picture-in-picture and passwords are built in; extensions are there for everything else.
+> - No sync, no account, no cloud. Your tabs, history and passwords are on your Mac and nowhere else.
+> - No telemetry, no analytics, no crash reports sent anywhere. The only things that leave your Mac are the pages you ask for, their icons, and one small request a day to see whether there is a newer version.
+> - One window. Tabs are the only kind of "new" there is.
 > 
 > 
-> ### Multilingual (51 languages, MASSIVE intent, 20 options, random = 0.050)
+> ### Why the source is here
 > 
-> | | `laya` | `laya-multilingual` |
+> So anyone can read exactly what a browser handling their passwords and history is doing, build it themselves, or fix something that bothers them. The code is small enough to actually read — about 12,700 lines of Swift, no dependencies beyond what Apple ships with macOS, one file per concern.
+> 
+> 
+> ## Privacy, concretely
+> 
+> | What | Where it is | Who can read it |
 > |---|---|---|
-> | English | **0.783** | 0.657 |
-> | 13 other languages | 0.306 | **0.451** |
-> | XNLI, English | **0.860** | 0.843 |
-> | XNLI, 14 other languages | 0.521 | **0.731** |
+> | Passwords | The macOS login keychain, as ordinary keychain items tagged `Search` | Search, signed by Office Commun. Any other app triggers the system's permission dialog. |
+> | History, bookmarks, open tabs, hidden elements | Small JSON files in `~/Library/Application Support/Search/` | You. |
+> | Cookies and site data | WebKit's own store for the app | The sites that set them, as in any browser. |
+> | Extensions | Unpacked in `~/Library/Application Support/Search/Extensions/`, their data in WebKit's extension store | Each extension, within the permissions you accepted when adding it. |
+> | Anything else | Nowhere. There is no server. | — |
 > 
-> Across all 51 languages the English checkpoint macro-averages **0.227** with macro ECE
-> **0.733**, and only 23 of 51 languages clear 3x random. Khmer scores **0.000 at 95.2%
-> confidence**. This is why [`Router`](#model-routing-three-checkpoints-one-call) exists: the
-> model's own confidence gives no warning, so the routing decision has to be made before the
-> forward pass.
+> A **private tab** (`⇧⌘N`) has its own cookie jar and leaves nothing behind when it closes.
 > 
 > 
-> ### Why Route: The Evidence
+> ## Keyboard
 > 
-> On a shared benchmark (17,416 questions, one T4 GPU, identical questions per model):
+> | | |
+> |---|---|
+> | `⌘L` address · `⌘K` switch tab · `⌘T` new tab · `⌘W` close · `⇧⌘T` reopen | `⌘[` `⌘]` back, forward · `⇧⌘[` `⇧⌘]` previous, next tab · `⌘1`–`⌘9` jump |
+> | `⇧⌘S` tabs across the top or down the left · `⌘S` fold the sidebar away · `⇧⌘B` bookmark this page | `⇧⌘R` reading mode · `⇧⌘P` float the video · `⇧⌘H` hide something · `⇧⌘U` what is hidden here |
+> | `⌘F` find · `⌘D` duplicate tab · `⇧⌘C` copy address · `⇧⌘V` paste and go | `⌘Y` history · `⇧⌘J` downloads · `⌘,` settings · `⌥⌘L` passwords |
 > 
-> | Benchmark / Task | English (`laya`) | Multilingual (`laya-multilingual`) | `Router` (Routed) |
-> |---|---|---|---|
-> | MASSIVE intent, English | **0.783** | 0.657 | **0.783** |
-> | MASSIVE intent, 13 other languages | 0.306 | **0.451** | **0.451** |
-> | XNLI, English | **0.860** | 0.843 | **0.860** |
-> | XNLI, 14 other languages | 0.521 | **0.731** | **0.731** |
-> | Languages usable (>3x random) | 23 / 51 | 45 / 51 | **45 / 51** |
-> | Latency, 1 question (T4 GPU) | 39.5 ms | **32.8 ms** | **32.8 ms** |
-> | Latency, 10 questions batched | 158.6 ms | **72.3 ms** | **72.3 ms** |
-> 
-> The English checkpoint collapses on non-Latin scripts (Khmer scores **0.000 accuracy at 0.952 confidence**). Because the model stays confident while being wrong, confidence gating cannot save you. `Router` detects the script in  billing (confidence: 0.94)
-> print("Urgency    :", answers["urgency"]["score"])        # -> 1.84 / 2.0
-> print("Churn Risk :", answers["churn_risk"]["noul"])       # -> 0.892 (89.2% probability)
-> ```
+> `⌃Tab` and `⌃⇧Tab` walk along the row of tabs; `Tab` stays the page's, for moving through a form. `esc` puts away whatever is open.
 > 
 > ---
 > 
 > 
-> # 1. Intelligent Model Router (routes to small vs. frontier models)
-> routing = agent.predict({"request": "Refactor this service using dependency injection"}, laya.router_questions())
+> ## For developers
 > 
 > 
-> ## Benchmarks
+> ### Building it
 > 
-> **Full report: [`BENCHMARKS.md`](BENCHMARKS.md)** — every run consolidated, languages and themes, with per-language detail for all 51 languages.
+> - macOS 14 or later, Xcode 16 / Swift 6 toolchain
+> - `swift build` — runs the app straight from the SwiftPM binary
+> - `./build.sh` — assembles a real, double-clickable `Search.app` in `build/`, ad-hoc signed so it runs on your own Mac
 > 
->   
+> A build you make yourself won't be notarized or carry Office Commun's Developer ID, so the first launch needs a right-click → Open (or an allow in System Settings → Privacy & Security). That's expected — it's the same thing that happens with any app that isn't from the App Store or a notarized DMG. Your own build also keeps its passwords apart from a signed Search's: the keychain tells the two apart by their signatures.
 > 
-> All Laya numbers below are measured. Every model answered byte-identical questions
-> (fixed seed) in the same run. Reproduce with
-> [`notebooks/laya_benchmark_colab.ipynb`](https://github.com/NandhaKishorM/laya) on a T4.
-> 
-> 
-> ### Laya (with routing) vs Jev
-> 
-> Every Laya figure is what `Router().predict(...)` actually returns — the checkpoint the router
-> selects for that input, not a hand-picked best of three. Jev figures are **third-party
-> published, never measured here** (no TypeSafe API access), so sample sizes and prompts differ.
-> 
-> | | Jev 1.13.0 | Laya (routed) | |
-> |---|---|---|---|
-> | typed-decisions, 2,000 decisions | 0.727 | **0.766** | +0.039 |
-> | AG News, 4 labels | 0.910 | **0.950** | +0.040 |
-> | DAIR Emotion, 6 labels | 0.480 | **0.595** | +0.115 |
-> | Banking77 (72 vs 77 labels) | **0.870** | 0.425 | Jev leads on >20 options |
-> | ECE *(lower better)* | 0.246 | **0.081** | 3× better (post-temperature) |
-> | p50 latency, 1 question | 236–276 ms | **32.8 ms** | 7.8× faster |
-> | Languages usable | *no published benchmark* | **45 of 51** | — |
-> | Weights | closed API | **Apache 2.0** | — |
-> | Cost | $0.042 / 1M tokens | **$0 self-hosted** | — |
-> 
-> On DAIR Emotion, Jev assigned **zero probability to the true label on 16% of examples** — a hard
-> failure for anything branching on confidence.
-> 
-> #### Where Jev leads
-> 
-> * **High-cardinality label spaces (>20 options at default settings):** On Banking77, Jev scores 0.870 (on 72 labels) while Laya scores 0.425 (on 77 labels at default 256-token head budget). This is an architectural token-budget constraint: options share a fixed `head_max_len` budget (192 tokens on English, 256 on multilingual), so 77 options receive only ~3 to 4 tokens per label, causing text to become indistinguishable. Jev supports up to 255 options out-of-the-box. While `laya-multilingual` supports 1,024 context (and up to 8,192 in the encoder) and you can raise `agent.cfg["head_max_len"] = 512` at runtime, Jev is currently better suited for 50+ options in a single prompt without tuning.
-> * **Soft distribution matching:** On typed-decisions, while Laya achieves higher argmax accuracy (0.766 vs 0.727), Jev achieves higher soft accuracy (0.580 vs 0.471) against the teacher's full probability distributions.
-> * **Out-of-the-box raw calibration:** Before temperature scaling, the base checkpoint has higher raw ECE (0.213 vs 0.144). Laya achieves its 0.081 ECE after domain temperature fitting.
-> 
-> Full detail, including every workflow and all 51 languages: **[`BENCHMARKS.md`](BENCHMARKS.md)**.
+> `./build.sh release dmg` also makes `Search.dmg` / `Search.zip`. `./build.sh release ship` additionally notarizes and staples — that step needs a Developer ID certificate and Apple credentials, so it only really does anything for Office Commun's own releases.
 > 
 > 
-> # Preload checkpoints into memory for instant sub-35ms routing
-> router = Router(preload=True)
+> ### How it's put together
 > 
-> 
-> # 1. State in any language or schema
-> state = {
->     "from": "user@acme.com",
->     "subject": "Duplicate charge on invoice #4411",
->     "body": "Hi, we were billed twice for March. Please refund the duplicate today or we will cancel our plan."
-> }
-> 
-> 
-> # 2. Define your typed questions
-> questions = {
->     "department": {
->         "type": "choice",
->         "instructions": "Which department should handle this request?",
->         "criteria": {
->             "billing": "invoices, payments, refunds",
->             "technical": "bugs, outages, system errors",
->             "sales": "pricing, new contracts",
->             "other": "everything else"
->         }
->     },
->     "urgency": {
->         "type": "score",
->         "instructions": "How urgent is this request?",
->         "criteria": ["not urgent", "
+> - **SwiftUI** for everything drawn, **AppKit** for the handful of things SwiftUI doesn't reach on macOS (the window's title bar, dragging the window by an empty part of the tab row), **WKWebView** for pages.
+> - One `Tab` per page. Its web view is built lazily — a tab restored from last session doesn't cost a process until you switch to it. That's most of why launching with twenty tabs is still instant. Each page runs in WebKit's own content process, as in Safari; a tab you close is really gone.
+> - The ad blocker is a `WKContentRuleList` compiled once at launch and enforced inside WebKit's networking, before a request is made — zero cost at run time, unlike a JavaScript blocker.
+> - Hidden elements are a per-site list of selectors injected as a stylesheet at document start, so nothing is ever seen appearing and vanishing.
+> - Every colour is a light/dark pair in `Design.swift`, resolved by the window's appearance; nothing else in the code knows which mode it is in.
+> - Extensions run on `WKWebExtension` (macOS 15.4+). `Crx.swift` fetches an extension from the Chrome Web Store's public update address and checks the CRX3 signature against the extension's id before anythin
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/NandhaKishorM/laya)
+[GitHub](https://github.com/driceroland/Search)
 
 ## 相關收錄
 
@@ -362,7 +309,7 @@ No description available.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "NandhaKishorM--laya"
+> WHERE category = "Other" AND file.name != "driceroland--Search"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -371,7 +318,7 @@ No description available.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "NandhaKishorM--laya" AND status != "archived"
+> WHERE language = "Swift" AND file.name != "driceroland--Search" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -380,18 +327,18 @@ No description available.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W39" AND file.name != "NandhaKishorM--laya"
+> WHERE week = "2026-W39" AND file.name != "driceroland--Search"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/driceroland--Search");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "NandhaKishorM--laya" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "driceroland--Search" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -407,7 +354,7 @@ No description available.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "NandhaKishorM" AND file.name != "NandhaKishorM--laya"
+> WHERE owner = "driceroland" AND file.name != "driceroland--Search"
 > SORT stars DESC
 > ```
 
@@ -415,7 +362,7 @@ No description available.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/driceroland--Search");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -432,7 +379,7 @@ No description available.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/driceroland--Search");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -465,7 +412,7 @@ No description available.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/driceroland--Search");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -489,7 +436,7 @@ No description available.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/driceroland--Search");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -526,7 +473,7 @@ No description available.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/driceroland--Search");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -609,7 +556,7 @@ No description available.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-20** — 首次收錄
+> **2026-09-25** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -625,9 +572,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-25|2026-09-25]] — 再次上榜，23.4k stars
-- [[2026-09-24|2026-09-24]] — 再次上榜，21.1k stars
-- [[2026-09-23|2026-09-23]] — 再次上榜，17.5k stars
-- [[2026-09-22|2026-09-22]] — 再次上榜，11.8k stars
-- [[2026-09-21|2026-09-21]] — 再次上榜，5.4k stars
-- [[2026-09-20|2026-09-20]] — 首次收錄，1.6k stars
+- [[2026-09-25|2026-09-25]] — 首次收錄，1.3k stars

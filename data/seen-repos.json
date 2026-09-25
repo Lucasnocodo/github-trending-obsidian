@@ -4313,10 +4313,10 @@
   },
   "NandhaKishorM/laya": {
     "first_seen": "2026-09-20",
-    "last_seen": "2026-09-24",
-    "times_seen": 5,
+    "last_seen": "2026-09-25",
+    "times_seen": 6,
     "stars_first": 1650,
-    "stars_last": 21147
+    "stars_last": 23392
   },
   "TianyuCodings/NanoJev": {
     "first_seen": "2026-09-20",
@@ -4334,17 +4334,17 @@
   },
   "zai-org/ZCode": {
     "first_seen": "2026-09-21",
-    "last_seen": "2026-09-24",
-    "times_seen": 4,
+    "last_seen": "2026-09-25",
+    "times_seen": 5,
     "stars_first": 3530,
-    "stars_last": 6593
+    "stars_last": 6726
   },
   "mizorewww/laya-mlx": {
     "first_seen": "2026-09-21",
-    "last_seen": "2026-09-24",
-    "times_seen": 4,
+    "last_seen": "2026-09-25",
+    "times_seen": 5,
     "stars_first": 2009,
-    "stars_last": 6048
+    "stars_last": 6248
   },
   "jaredpalmer/kev": {
     "first_seen": "2026-09-22",
@@ -4355,10 +4355,10 @@
   },
   "jev-chat/jev-chat-jarvis": {
     "first_seen": "2026-09-23",
-    "last_seen": "2026-09-24",
-    "times_seen": 2,
+    "last_seen": "2026-09-25",
+    "times_seen": 3,
     "stars_first": 4372,
-    "stars_last": 5415
+    "stars_last": 6247
   },
   "Mak5er/AirCard": {
     "first_seen": "2026-09-23",
@@ -4369,17 +4369,17 @@
   },
   "unreallabsai/unreal-agent": {
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-24",
-    "times_seen": 1,
+    "last_seen": "2026-09-25",
+    "times_seen": 2,
     "stars_first": 1776,
-    "stars_last": 1776
+    "stars_last": 1885
   },
   "bespokelabsai/nimble": {
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-24",
-    "times_seen": 1,
+    "last_seen": "2026-09-25",
+    "times_seen": 2,
     "stars_first": 1699,
-    "stars_last": 1699
+    "stars_last": 1744
   },
   "yibie/awesome-jev": {
     "first_seen": "2026-09-24",
@@ -4387,5 +4387,33 @@
     "times_seen": 1,
     "stars_first": 1530,
     "stars_last": 1530
+  },
+  "mizorewww/laya-coreml": {
+    "first_seen": "2026-09-25",
+    "last_seen": "2026-09-25",
+    "times_seen": 1,
+    "stars_first": 1442,
+    "stars_last": 1442
+  },
+  "newliver666/apk-reverse": {
+    "first_seen": "2026-09-25",
+    "last_seen": "2026-09-25",
+    "times_seen": 1,
+    "stars_first": 1428,
+    "stars_last": 1428
+  },
+  "driceroland/Search": {
+    "first_seen": "2026-09-25",
+    "last_seen": "2026-09-25",
+    "times_seen": 1,
+    "stars_first": 1285,
+    "stars_last": 1285
+  },
+  "deepopen-com/deepopen": {
+    "first_seen": "2026-09-25",
+    "last_seen": "2026-09-25",
+    "times_seen": 1,
+    "stars_first": 1012,
+    "stars_last": 1012
   }
 }

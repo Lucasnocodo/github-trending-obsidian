@@ -7,10 +7,10 @@ language: Python
 license: Apache-2.0
 description: "Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API."
 homepage: "https://pypi.org/project/laya-mlx/"
-stars: 6048
-stars_per_day: 1512
-forks: 460
-open_issues: 14
+stars: 6248
+stars_per_day: 1250
+forks: 483
+open_issues: 17
 created: 2026-09-19
 pushed_at: 2026-09-22
 first_seen: 2026-09-21
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-09-27"
+appearances: 5
+next_review: "2026-09-28"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-21"
-star_history: "2026-09-21:2009,2026-09-22:4267,2026-09-23:5595,2026-09-24:6048"
+star_history: "2026-09-21:2009,2026-09-22:4267,2026-09-23:5595,2026-09-24:6048,2026-09-25:6248"
 tags:
   - github
   - "category/other"
@@ -607,6 +607,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-25|2026-09-25]] — 再次上榜，6.2k stars
 - [[2026-09-24|2026-09-24]] — 再次上榜，6.0k stars
 - [[2026-09-23|2026-09-23]] — 再次上榜，5.6k stars
 - [[2026-09-22|2026-09-22]] — 再次上榜，4.3k stars

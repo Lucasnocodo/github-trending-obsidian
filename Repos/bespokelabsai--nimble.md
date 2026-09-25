@@ -7,12 +7,12 @@ language: Python
 license: N/A
 description: "Local typed decisions, contrastive data curation, and model evaluation."
 homepage: ""
-stars: 1699
-stars_per_day: 340
-forks: 127
-open_issues: 4
+stars: 1744
+stars_per_day: 291
+forks: 133
+open_issues: 5
 created: 2026-09-18
-pushed_at: 2026-09-23
+pushed_at: 2026-09-24
 first_seen: 2026-09-24
 week: "2026-W39"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-27"
+appearances: 2
+next_review: "2026-09-28"
 contributor_count: 3
 engagement: "low"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-24"
-star_history: "2026-09-24:1699"
+star_history: "2026-09-24:1699,2026-09-25:1744"
 tags:
   - github
   - "category/other"
@@ -614,4 +614,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-25|2026-09-25]] — 再次上榜，1.7k stars
 - [[2026-09-24|2026-09-24]] — 首次收錄，1.7k stars

@@ -1,63 +1,63 @@
 ---
-repo: NandhaKishorM/laya
-url: https://github.com/NandhaKishorM/laya
-owner: NandhaKishorM
+repo: newliver666/apk-reverse
+url: https://github.com/newliver666/apk-reverse
+owner: newliver666
 owner_type: User
 language: Python
-license: Apache-2.0
-description: ""
+license: MIT
+description: "Suitable for Android APK reverse engineering analysis"
 homepage: ""
-stars: 23392
-stars_per_day: 3342
-forks: 2022
-open_issues: 149
-created: 2026-09-18
+stars: 1428
+stars_per_day: 286
+forks: 377
+open_issues: 0
+created: 2026-09-19
 pushed_at: 2026-09-24
-first_seen: 2026-09-20
+first_seen: 2026-09-25
 week: "2026-W39"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v0.3.4"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-20
+last_reviewed: 2026-09-25
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
+appearances: 1
 next_review: "2026-09-28"
-contributor_count: 2
-engagement: "low"
-issue_close_rate: 5
-repo_size_kb: 2704
-readme_length: 9946
+contributor_count: 3
+engagement: "medium"
+issue_close_rate: 100
+repo_size_kb: 1424
+readme_length: 8951
 bus_factor: 1
-last_release_days: 0
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-20"
-star_history: "2026-09-20:1650,2026-09-21:5397,2026-09-22:11830,2026-09-23:17536,2026-09-24:21147,2026-09-25:23392"
+ring_history: "assess@2026-09-25"
+star_history: "2026-09-25:1428"
 tags:
   - github
   - "category/other"
   - "lang/python"
 aliases:
-  - "laya"
-  - "NandhaKishorM/laya"
+  - "apk-reverse"
+  - "newliver666/apk-reverse"
 ---
 
-# laya
+# apk-reverse
 
-**1.6k** stars · **825** stars/天 · 建立 2 天前 · Python · Apache-2.0
+**1.4k** stars · **286** stars/天 · 建立 5 天前 · Python · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/NandhaKishorM--laya");
+const me = dv.page("Repos/newliver666--apk-reverse");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,18 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v0.3.4`
-
 > [!summary] 一句話摘要
-> No description
+> Suitable for Android APK reverse engineering analysis
 
 ## 專案簡介
 
-No description available.
+Suitable for Android APK reverse engineering analysis
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/newliver666--apk-reverse");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +116,7 @@ No description available.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/newliver666--apk-reverse");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,219 +140,172 @@ No description available.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 152 |
-| Open Issues | 18 |
-| Issue 解決率 | 5% (1 closed) |
-| 最後推送 | 2026-09-20 |
-| 建立日期 | 2026-09-18 |
-| Repo 大小 | 2.6 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/NandhaKishorM/laya) |
+| Forks | 377 |
+| Open Issues | 0 |
+| Issue 解決率 | 100% (1 closed) |
+| 最後推送 | 2026-09-24 |
+| 建立日期 | 2026-09-19 |
+| Repo 大小 | 1.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/newliver666/apk-reverse) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 71
->     "Jupyter Notebook" : 29
+>     "Python" : 93
+>     "JavaScript" : 6
+>     "Java" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@NandhaKishorM](https://github.com/NandhaKishorM) | 49 |
-> | [@sirgio03](https://github.com/sirgio03) | 1 |
-
-**最新版本**：v0.3.4 (2026-09-20)
-
-> [!info]- Release Notes
-> **Full Changelog**: https://github.com/NandhaKishorM/laya/compare/v0.3.3...v0.3.4
+> | [@inliver233](https://github.com/inliver233) | 46 |
+> | [@dabao1955](https://github.com/dabao1955) | 1 |
+> | [@newliver666](https://github.com/newliver666) | 1 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-19 ~ 2026-09-20）
-> **活躍天數** 2 天 · **最新 commit** feat: promote Route Mode as primary Quickstart, bump to v0.3.4
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#15](https://github.com/NandhaKishorM/laya/issues/15) | Thank you for releasing this | 10 | 0 |
-> | [#16](https://github.com/NandhaKishorM/laya/issues/16) | Laya MCP, Skill, and Benchmarks | 1 | 2 |
-> | [#7](https://github.com/NandhaKishorM/laya/issues/7) | Feature Request: TypeScript / Node.js / Bun.js Support | 1 | 5 |
+> [!abstract] 最近 10 次 commit（2026-09-22 ~ 2026-09-24）
+> **活躍天數** 2 天 · **最新 commit** README: add a theme-aware header, live badges, and a Simplified Chinese edition
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> **Multilingual, non-autoregressive System 1 decision engine.** Typed decisions over 100+ languages in a single forward pass — 33 ms — trained with reinforcement learning against strictly proper scoring rules (RLCD), with a router that picks the right checkpoint per request.
-> 
-> [](https://colab.research.google.com/drive/15d4Yv__KHeHjshVb-6PRTfqVllxih2S3?usp=sharing)
-> [](https://pypi.org/project/laya/)
-> [](https://huggingface.co/convaiinnovations/laya)
-> [](https://huggingface.co/convaiinnovations/laya-multilingual)
-> [](https://huggingface.co/spaces/convaiinnovations/laya-demo)
-> [](https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me)
-> [](https://www.buymeacoffee.com/nandakishorm)
-> [](https://opensource.org/licenses/Apache-2.0)
+> English · 简体中文
 > 
 >   
-> 
-> Laya evaluates typed questions (`choice`, `score`, `noul`) over any state (text, email, ticket or JSON document) in **a single forward pass** — 33 ms for one question, 7.2 ms/question batched, measured on a T4. No text generation, so nothing to parse and nothing to hallucinate.
-> 
-> Three checkpoints, and a `Router` that picks between them per request:
-> 
-> | | encoder | params | context | use it for |
-> |---|---|---|---|---|
-> | [`laya`](https://huggingface.co/convaiinnovations/laya) | ModernBERT-large | 421M | 512 | English |
-> | [`laya-multilingual`](https://huggingface.co/convaiinnovations/laya-multilingual) | mmBERT-base | 322M | 1024 | 100+ languages, 2x faster |
-> | [`laya-typed-decisions`](https://huggingface.co/convaiinnovations/laya-typed-decisions) | ModernBERT-large | 421M | 1024 | the typed-decisions workflows |
-> 
-> ---
-> 
-> 
-> ## Installation
-> 
-> ```bash
-> pip install laya
-> ```
-> 
-> ---
-> 
-> 
-> ## Quickstart: Route Mode (Recommended)
-> 
-> Laya ships three checkpoints. The built-in **`Router`** is the recommended entry point: it evaluates any state in any language, automatically detects scripts and languages in sub-milliseconds, and dispatches to the optimal checkpoint in a single forward pass.
-> 
-> ```python
-> import laya
-> from laya import Router
-> 
-> 
-> ## Live Demo & Resources
-> 
-> * **Hugging Face Model:** [convaiinnovations/laya](https://huggingface.co/convaiinnovations/laya)
-> * **Interactive Web Demo:** [convaiinnovations/laya-demo](https://huggingface.co/spaces/convaiinnovations/laya-demo)
-> * **Engineering Writeup:** [Read the full story on Dev.to](https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me)
-> 
-> ---
-> 
-> 
-> ### Multilingual (51 languages, MASSIVE intent, 20 options, random = 0.050)
-> 
-> | | `laya` | `laya-multilingual` |
-> |---|---|---|
-> | English | **0.783** | 0.657 |
-> | 13 other languages | 0.306 | **0.451** |
-> | XNLI, English | **0.860** | 0.843 |
-> | XNLI, 14 other languages | 0.521 | **0.731** |
-> 
-> Across all 51 languages the English checkpoint macro-averages **0.227** with macro ECE
-> **0.733**, and only 23 of 51 languages clear 3x random. Khmer scores **0.000 at 95.2%
-> confidence**. This is why [`Router`](#model-routing-three-checkpoints-one-call) exists: the
-> model's own confidence gives no warning, so the routing decision has to be made before the
-> forward pass.
-> 
-> 
-> ### Why Route: The Evidence
-> 
-> On a shared benchmark (17,416 questions, one T4 GPU, identical questions per model):
-> 
-> | Benchmark / Task | English (`laya`) | Multilingual (`laya-multilingual`) | `Router` (Routed) |
-> |---|---|---|---|
-> | MASSIVE intent, English | **0.783** | 0.657 | **0.783** |
-> | MASSIVE intent, 13 other languages | 0.306 | **0.451** | **0.451** |
-> | XNLI, English | **0.860** | 0.843 | **0.860** |
-> | XNLI, 14 other languages | 0.521 | **0.731** | **0.731** |
-> | Languages usable (>3x random) | 23 / 51 | 45 / 51 | **45 / 51** |
-> | Latency, 1 question (T4 GPU) | 39.5 ms | **32.8 ms** | **32.8 ms** |
-> | Latency, 10 questions batched | 158.6 ms | **72.3 ms** | **72.3 ms** |
-> 
-> The English checkpoint collapses on non-Latin scripts (Khmer scores **0.000 accuracy at 0.952 confidence**). Because the model stays confident while being wrong, confidence gating cannot save you. `Router` detects the script in  billing (confidence: 0.94)
-> print("Urgency    :", answers["urgency"]["score"])        # -> 1.84 / 2.0
-> print("Churn Risk :", answers["churn_risk"]["noul"])       # -> 0.892 (89.2% probability)
-> ```
-> 
-> ---
-> 
-> 
-> # 1. Intelligent Model Router (routes to small vs. frontier models)
-> routing = agent.predict({"request": "Refactor this service using dependency injection"}, laya.router_questions())
-> 
-> 
-> ## Benchmarks
-> 
-> **Full report: [`BENCHMARKS.md`](BENCHMARKS.md)** — every run consolidated, languages and themes, with per-language detail for all 51 languages.
-> 
+>   
+>   
+>   
+>   
 >   
 > 
-> All Laya numbers below are measured. Every model answered byte-identical questions
-> (fixed seed) in the same run. Reproduce with
-> [`notebooks/laya_benchmark_colab.ipynb`](https://github.com/NandhaKishorM/laya) on a T4.
+>   Capabilities · Structure · Install · Requirements · Failure catalogue · Scope · Maintenance · Disclaimer
 > 
 > 
-> ### Laya (with routing) vs Jev
+> ## Install
 > 
-> Every Laya figure is what `Router().predict(...)` actually returns — the checkpoint the router
-> selects for that input, not a hand-picked best of three. Jev figures are **third-party
-> published, never measured here** (no TypeSafe API access), so sample sizes and prompts differ.
+> This repository is a **skills repository**: the skill lives at `skills/apk-reverse/`, which is the
+> layout the `skills` CLI resolves, and it is installed by name rather than by copying a directory:
 > 
-> | | Jev 1.13.0 | Laya (routed) | |
-> |---|---|---|---|
-> | typed-decisions, 2,000 decisions | 0.727 | **0.766** | +0.039 |
-> | AG News, 4 labels | 0.910 | **0.950** | +0.040 |
-> | DAIR Emotion, 6 labels | 0.480 | **0.595** | +0.115 |
-> | Banking77 (72 vs 77 labels) | **0.870** | 0.425 | Jev leads on >20 options |
-> | ECE *(lower better)* | 0.246 | **0.081** | 3× better (post-temperature) |
-> | p50 latency, 1 question | 236–276 ms | **32.8 ms** | 7.8× faster |
-> | Languages usable | *no published benchmark* | **45 of 51** | — |
-> | Weights | closed API | **Apache 2.0** | — |
-> | Cost | $0.042 / 1M tokens | **$0 self-hosted** | — |
+> ```
+> npx skills add newliver666/apk-reverse              # install every skill in the repo
+> npx skills add newliver666/apk-reverse --list       # list what is here, install nothing
+> npx skills add newliver666/apk-reverse --skill apk-reverse -y
+> npx skills use  newliver666/apk-reverse@apk-reverse # use it once, without installing
+> ```
 > 
-> On DAIR Emotion, Jev assigned **zero probability to the true label on 16% of examples** — a hard
-> failure for anything branching on confidence.
+> The CLI symlinks the skill into your agent's skills directory by default (`--copy` makes independent
+> copies instead), and `-g` installs for every project rather than the current one. With one skill in
+> the repository, `--skill apk-reverse` is redundant today; it is written out here because it is what
+> selects a single skill once a second one exists.
 > 
-> #### Where Jev leads
-> 
-> * **High-cardinality label spaces (>20 options at default settings):** On Banking77, Jev scores 0.870 (on 72 labels) while Laya scores 0.425 (on 77 labels at default 256-token head budget). This is an architectural token-budget constraint: options share a fixed `head_max_len` budget (192 tokens on English, 256 on multilingual), so 77 options receive only ~3 to 4 tokens per label, causing text to become indistinguishable. Jev supports up to 255 options out-of-the-box. While `laya-multilingual` supports 1,024 context (and up to 8,192 in the encoder) and you can raise `agent.cfg["head_max_len"] = 512` at runtime, Jev is currently better suited for 50+ options in a single prompt without tuning.
-> * **Soft distribution matching:** On typed-decisions, while Laya achieves higher argmax accuracy (0.766 vs 0.727), Jev achieves higher soft accuracy (0.580 vs 0.471) against the teacher's full probability distributions.
-> * **Out-of-the-box raw calibration:** Before temperature scaling, the base checkpoint has higher raw ECE (0.213 vs 0.144). Laya achieves its 0.081 ECE after domain temperature fitting.
-> 
-> Full detail, including every workflow and all 51 languages: **[`BENCHMARKS.md`](BENCHMARKS.md)**.
+> Once installed, the agent loads `SKILL.md` when a task matches its description, and pulls in
+> `references/*` only as needed. No global state, no machine-specific paths, and no build step.
 > 
 > 
-> # Preload checkpoints into memory for instant sub-35ms routing
-> router = Router(preload=True)
+> ## What it is good at
+> 
+> - Deciding **fast** whether a request is even achievable client-side, instead of
+>   burning hours on a paywall that is enforced by a server.
+> - Deciding **what form the deliverable must take** before any work starts — an
+>   unrooted, self-contained artifact is a different problem from "make it work on this
+>   machine", and confusing the two is the most expensive drift in this domain.
+> - Choosing the **safest patch layer** for a given change, and avoiding the layers that
+>   break the app.
+> - Catching the repack failure that looks like success: an app that installs, launches and
+>   renders perfectly while **every signed request is rejected**, because the client derives its
+>   request-signing key from its own signing certificate.
+> - Separating **your own mistakes from the app's or the server's problems** — a
+>   feature-scoped failure (login, registration, payment) is often a TLS/certificate issue on
+>   one code path, not a consequence of the patch you just built. Device state, a dead device
+>   server and clock drift masquerade the same way.
+> - Establishing **which architecture and which library are actually executing**, rather
+>   than trusting what the manifest ships or what the device claims.
+> - Working through **packed/hardened targets**: identifying the packer, unpacking, and turning a
+>   memory dump back into a patched, installable APK.
+> - Handling a **hardened library that terminates the process on purpose** — including the
+>   deliberate-crash shape (`fault addr 0x4`) that looks exactly like an ordinary null-dereference
+>   bug, and the "neutralise it, but never by making it *not return*" rule that decides whether the
+>   fix works or freezes the whole app in a way that looks nothing like the cause.
+> - Knowing **which tools to reach for and where each one lies** — including the ones that only
+>   exist as a GUI, so you ask for a human instead of silently substituting a weaker method.
+> - Making a patched build **stay** patched: neutralising version checks, forced-upgrade dialogs and
+>   self-update installers so the work cannot be switched off remotely — and recognising the
+>   hot-update/remote-config channel that can quietly undo it without any version change.
+> - Separating a **client-side sign-in gate** (patchable) from an **account-scoped resource** (empty
+>   because the server has nothing to answer with), and knowing that forging a session produces a state
+>   worse than being signed out.
+> - Keeping a **long task honest**: a live record, graded conclusions, calibrated timeouts, and
+>   bounded waits, so progress is not lost and the same mistake is not made twice.
+> - Avoiding the specific mistakes that produce an APK that builds perfectly and dies at
+>   runtime.
+> - Deciding **what the deliverable should be when an APK is not an option** — a repack refused by
+>   several independent checks is *blocked*, not expensive, and the fallback ladder is a system-level
+>   module, a local RPC service, or an honest report with a stated boundary.
+> - Telling a **real memory dump from an extraction-shell skeleton**, and knowing which recovery route
+>   applies — including the root-side dump for when `frida` itself is refused. What the measurement can
+>   and cannot see is in `skills/apk-reverse/references/advanced-unpacking.md`.
+> - **Calling a routine instead of reversing it** when reversing costs more than invoking: emulated
+>   execution on the host, or a live function service-ified over Frida RPC.
+> - Reading **instruction-level execution evidence** when a native function has been flattened into a
+>   state machine by OLLVM — including the two ways Stalker was measured to bite back on a real device.
+> - Recognising when **userspace hooking cannot reach the check at all** (raw `svc` syscalls,
+>   `init_array`-early detection), what the next layer up and down can actually do, and when escalating
+>   is the wrong answer.
+> - Working **protocols that are not REST** — protobuf without a schema, gRPC, QUIC/HTTP3 — and
+>   native-side certificate pinning that ignores the system trust store.
+> - Working **from the phone itself**: MT Manager's edit/repack/sign flow and its APK MCP surface,
+>   LSPosed Manager, and on-device data inspection, alongside the PC toolchain rather than instead of it.
+> - Telling **Java2C apart from an extraction shell** before spending hours hunting a decrypted DEX that
+>   does not exist at any point in the process lifetime — the code was compiled into a `.so`.
+> - Handling a build that arrives as a **split APK / App Bundle set**: reading the set off a device,
+>   signing every member with one keystore for `pm install-multiple`, or merging code/native members
+>   into a standalone APK when that is legal.
+> - Working a **real Dex VMP** with the known-plaintext differential — which links can be automated and
+>   which cannot, what a compiled fixture can and cannot reach, and how to *prove* a derived
+>   private-opcode table instead of asserting one.
+> - **Publishing what it learns without publishing the target** — a scanner that reports identity
+>   shapes with their context, an explicit list of what must *not* be redacted (tools, libraries,
+>   protocol fields, CVEs, hardening products, public crackmes) because redacting those destroys the
+>   reusable part, and exit codes that gate a commit.
+> - Reading a **precedent** before repeating work this repository already converged on: the positive
+>   half of the record, with the route including its dead ends, a grade on every assertion, and the
+>   files the case says to write back to.
 > 
 > 
-> # 1. State in any language or schema
-> state = {
->     "from": "user@acme.com",
->     "subject": "Duplicate charge on invoice #4411",
->     "body": "Hi, we were billed twice for March. Please refund the duplicate today or we will cancel our plan."
-> }
+> # apk-reverse
+> 
+> An Agent Skill for Android APK reverse engineering, debloating, ad removal, surgical
+> dex patching, repacking, and runtime/server analysis.
+> 
+> It is a **skill**, not a tutorial: it is written to be loaded by an agent (Claude Code,
+> Codex, or any harness that supports the Agent Skills format) while it works, so it is
+> organized for progressive disclosure — a short decision-oriented `SKILL.md`, detailed
+> references loaded only when a step needs them, and parameterized scripts you can run
+> directly.
 > 
 > 
-> # 2. Define your typed questions
-> questions = {
->     "department": {
->         "type": "choice",
->         "instructions": "Which department should handle this request?",
->         "criteria": {
->             "billing": "invoices, payments, refunds",
->             "technical": "bugs, outages, system errors",
->             "sales": "pricing, new contracts",
->             "other": "everything else"
->         }
->     },
->     "urgency": {
->         "type": "score",
->         "instructions": "How urgent is this request?",
->         "criteria": ["not urgent", "
+> ## How an agent is expected to consume this
+> 
+> `SKILL.md` is deliberately written as a **procedure with gates** rather than as advice, because the
+> observed failure mode is not ignorance — it is a model reading the whole thing, agreeing with it, and
+> then reasoning from first principles anyway.
+> 
+> So there are four things in the body that are meant to be *acted on*, not read:
+> 
+> - **Four override rules (R1–R4).** Where they conflict with the current plan, they win until evidence
+>   overrides them.
+> - **A symptom index.** Each row is a failure that has already been paid for. **A matching row is a
+>   stop signal**: load that file before running another command, rather than after a few more attempts.
+>   Reasoning past a known symptom is how the same hours get spent twice.
+> - **Four gates (G1–G4),*
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/NandhaKishorM/laya)
+[GitHub](https://github.com/newliver666/apk-reverse)
 
 ## 相關收錄
 
@@ -362,7 +313,7 @@ No description available.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "NandhaKishorM--laya"
+> WHERE category = "Other" AND file.name != "newliver666--apk-reverse"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -371,7 +322,7 @@ No description available.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "NandhaKishorM--laya" AND status != "archived"
+> WHERE language = "Python" AND file.name != "newliver666--apk-reverse" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -380,18 +331,18 @@ No description available.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W39" AND file.name != "NandhaKishorM--laya"
+> WHERE week = "2026-W39" AND file.name != "newliver666--apk-reverse"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/newliver666--apk-reverse");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "NandhaKishorM--laya" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "newliver666--apk-reverse" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -407,7 +358,7 @@ No description available.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "NandhaKishorM" AND file.name != "NandhaKishorM--laya"
+> WHERE owner = "newliver666" AND file.name != "newliver666--apk-reverse"
 > SORT stars DESC
 > ```
 
@@ -415,7 +366,7 @@ No description available.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/newliver666--apk-reverse");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -432,7 +383,7 @@ No description available.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/newliver666--apk-reverse");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -465,7 +416,7 @@ No description available.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/newliver666--apk-reverse");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -489,7 +440,7 @@ No description available.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/newliver666--apk-reverse");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -526,7 +477,7 @@ No description available.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/newliver666--apk-reverse");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -609,7 +560,7 @@ No description available.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-20** — 首次收錄
+> **2026-09-25** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -625,9 +576,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-25|2026-09-25]] — 再次上榜，23.4k stars
-- [[2026-09-24|2026-09-24]] — 再次上榜，21.1k stars
-- [[2026-09-23|2026-09-23]] — 再次上榜，17.5k stars
-- [[2026-09-22|2026-09-22]] — 再次上榜，11.8k stars
-- [[2026-09-21|2026-09-21]] — 再次上榜，5.4k stars
-- [[2026-09-20|2026-09-20]] — 首次收錄，1.6k stars
+- [[2026-09-25|2026-09-25]] — 首次收錄，1.4k stars

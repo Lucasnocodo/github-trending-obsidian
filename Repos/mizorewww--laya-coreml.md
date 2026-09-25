@@ -1,63 +1,68 @@
 ---
-repo: NandhaKishorM/laya
-url: https://github.com/NandhaKishorM/laya
-owner: NandhaKishorM
+repo: mizorewww/laya-coreml
+url: https://github.com/mizorewww/laya-coreml
+owner: mizorewww
 owner_type: User
 language: Python
 license: Apache-2.0
-description: ""
-homepage: ""
-stars: 23392
-stars_per_day: 3342
-forks: 2022
-open_issues: 149
-created: 2026-09-18
-pushed_at: 2026-09-24
-first_seen: 2026-09-20
+description: "Local Laya typed decisions on Apple Core ML and Neural Engine. Validated ports, ~5 ms short decisions on M3 Max, reproducible speed and energy benchmarks."
+homepage: "https://github.com/mizorewww/laya-coreml#readme"
+stars: 1442
+stars_per_day: 288
+forks: 121
+open_issues: 3
+created: 2026-09-19
+pushed_at: 2026-09-22
+first_seen: 2026-09-25
 week: "2026-W39"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v0.3.4"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-20
+last_reviewed: 2026-09-25
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 6
+appearances: 1
 next_review: "2026-09-28"
-contributor_count: 2
+contributor_count: 1
 engagement: "low"
-issue_close_rate: 5
-repo_size_kb: 2704
-readme_length: 9946
+issue_close_rate: 40
+repo_size_kb: 5614
+readme_length: 8902
 bus_factor: 1
-last_release_days: 0
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-20"
-star_history: "2026-09-20:1650,2026-09-21:5397,2026-09-22:11830,2026-09-23:17536,2026-09-24:21147,2026-09-25:23392"
+ring_history: "assess@2026-09-25"
+star_history: "2026-09-25:1442"
 tags:
   - github
   - "category/other"
   - "lang/python"
+  - "topic/apple_neural_engine"
+  - "topic/apple_silicon"
+  - "topic/coreml"
+  - "topic/decision_model"
+  - "topic/laya"
 aliases:
-  - "laya"
-  - "NandhaKishorM/laya"
+  - "laya-coreml"
+  - "mizorewww/laya-coreml"
 ---
 
-# laya
+# laya-coreml
 
-**1.6k** stars · **825** stars/天 · 建立 2 天前 · Python · Apache-2.0
+**1.4k** stars · **288** stars/天 · 建立 5 天前 · Python · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/NandhaKishorM--laya");
+const me = dv.page("Repos/mizorewww--laya-coreml");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v0.3.4`
+`個人專案`
+
+`apple-neural-engine` `apple-silicon` `coreml` `decision-model` `laya` `local-ai` `modernbert` `on-device-ai` `typed-decisions`
 
 > [!summary] 一句話摘要
-> No description
+> Local Laya typed decisions on Apple Core ML and Neural Engine. Validated ports, ~5 ms short decisions on M3 Max, reproducible speed and energy benchmarks.
 
 ## 專案簡介
 
-No description available.
+Local Laya typed decisions on Apple Core ML and Neural Engine. Validated ports, ~5 ms short decisions on M3 Max, reproducible speed and energy benchmarks.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/mizorewww--laya-coreml");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ No description available.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/mizorewww--laya-coreml");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,219 +149,199 @@ No description available.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 152 |
-| Open Issues | 18 |
-| Issue 解決率 | 5% (1 closed) |
-| 最後推送 | 2026-09-20 |
-| 建立日期 | 2026-09-18 |
-| Repo 大小 | 2.6 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/NandhaKishorM/laya) |
+| Forks | 121 |
+| Open Issues | 3 |
+| Issue 解決率 | 40% (2 closed) |
+| 最後推送 | 2026-09-22 |
+| 建立日期 | 2026-09-19 |
+| 官方網站 | [Link](https://github.com/mizorewww/laya-coreml#readme) |
+| Repo 大小 | 5.5 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/mizorewww/laya-coreml) |
+| Topics | `apple-neural-engine` `apple-silicon` `coreml` `decision-model` `laya` `local-ai` `modernbert` `on-device-ai` |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Python" : 71
->     "Jupyter Notebook" : 29
+>     "Python" : 98
+>     "Rust" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@NandhaKishorM](https://github.com/NandhaKishorM) | 49 |
-> | [@sirgio03](https://github.com/sirgio03) | 1 |
-
-**最新版本**：v0.3.4 (2026-09-20)
-
-> [!info]- Release Notes
-> **Full Changelog**: https://github.com/NandhaKishorM/laya/compare/v0.3.3...v0.3.4
+> | [@mizorewww](https://github.com/mizorewww) | 5 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-19 ~ 2026-09-20）
-> **活躍天數** 2 天 · **最新 commit** feat: promote Route Mode as primary Quickstart, bump to v0.3.4
+> [!abstract] 最近 10 次 commit（2026-09-19 ~ 2026-09-22）
+> **活躍天數** 3 天 · **最新 commit** Clamp calibration temperatures, syncing upstream v0.3.5 (#35/#42)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#15](https://github.com/NandhaKishorM/laya/issues/15) | Thank you for releasing this | 10 | 0 |
-> | [#16](https://github.com/NandhaKishorM/laya/issues/16) | Laya MCP, Skill, and Benchmarks | 1 | 2 |
-> | [#7](https://github.com/NandhaKishorM/laya/issues/7) | Feature Request: TypeScript / Node.js / Bun.js Support | 1 | 5 |
+> | [#5](https://github.com/mizorewww/laya-coreml/issues/5) | Mixing question types in one predict call is 20x slower (850 | 0 | 0 |
+> | [#2](https://github.com/mizorewww/laya-coreml/issues/2) | PyPI 0.1.0 predates the calibration-temperature clamp docume | 0 | 0 |
+> | [#1](https://github.com/mizorewww/laya-coreml/issues/1) | Intel Mac variant | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> **Multilingual, non-autoregressive System 1 decision engine.** Typed decisions over 100+ languages in a single forward pass — 33 ms — trained with reinforcement learning against strictly proper scoring rules (RLCD), with a router that picks the right checkpoint per request.
+> # Laya-CoreML
 > 
-> [](https://colab.research.google.com/drive/15d4Yv__KHeHjshVb-6PRTfqVllxih2S3?usp=sharing)
-> [](https://pypi.org/project/laya/)
-> [](https://huggingface.co/convaiinnovations/laya)
-> [](https://huggingface.co/convaiinnovations/laya-multilingual)
-> [](https://huggingface.co/spaces/convaiinnovations/laya-demo)
-> [](https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me)
-> [](https://www.buymeacoffee.com/nandakishorm)
-> [](https://opensource.org/licenses/Apache-2.0)
+> **Open-weight typed decisions on Apple Silicon. Core ML, Neural Engine, zero generated tokens.**
 > 
->   
+> [PyPI](https://pypi.org/project/laya-coreml/) · [Hugging Face weights](https://huggingface.co/aac6fef/laya-multilingual-coreml-ane) · [中文](https://github.com/mizorewww/laya-coreml/blob/main/README.zh-CN.md)
 > 
-> Laya evaluates typed questions (`choice`, `score`, `noul`) over any state (text, email, ticket or JSON document) in **a single forward pass** — 33 ms for one question, 7.2 ms/question batched, measured on a T4. No text generation, so nothing to parse and nothing to hallucinate.
+> A real Laya model plays Snake locally, with visible probabilities, score, length,
+> latency and safety interventions. The GIF replays a recorded Core ML run at **1× speed**.
+> The game uses explicit planner features and a visible cycle safety layer.
 > 
-> Three checkpoints, and a `Router` that picks between them per request:
+> The complete active Snake loop sustained **49.1–50.0 decisions/s** across three
+> uncapped 600-step episodes, with zero deaths and two safety interventions.
+> [Game-loop timings and paced-rate limits](https://github.com/mizorewww/laya-coreml/blob/main/docs/SNAKE_BENCHMARKS.md)
+> include rendering serialization; terminal painting is excluded.
 > 
-> | | encoder | params | context | use it for |
-> |---|---|---|---|---|
-> | [`laya`](https://huggingface.co/convaiinnovations/laya) | ModernBERT-large | 421M | 512 | English |
-> | [`laya-multilingual`](https://huggingface.co/convaiinnovations/laya-multilingual) | mmBERT-base | 322M | 1024 | 100+ languages, 2x faster |
-> | [`laya-typed-decisions`](https://huggingface.co/convaiinnovations/laya-typed-decisions) | ModernBERT-large | 421M | 1024 | the typed-decisions workflows |
+> **One short multilingual decision: 4.98 ms P50 / 5.31 ms P95 on M3 Max with ANE FP16.**
+> The same experiment measured **2.78× better whole-system energy per decision** than
+> compiled MLX FP16. A separately validated W8 palette variant reached 4.88 ms and
+> 3.19× energy improvement. These are single-question results, not full Snake frame
+> times; the requested 10× improvement was not achieved.
 > 
-> ---
+> ## Run the demo
 > 
-> 
-> ## Installation
+> Apple Silicon · macOS 15+ · Python 3.11–3.13.
 > 
 > ```bash
-> pip install laya
+> pip install 'laya-coreml[demo]'
+> hf download aac6fef/laya-multilingual-coreml-ane --local-dir models/snake
+> laya-coreml-snake --model ./models/snake
 > ```
 > 
-> ---
+> Download once, then play offline. No PyTorch, Transformers or MLX is needed for
+> inference. The terminal needs 104 columns × 35 rows. Space pauses; ↑/↓ changes
+> speed; R resets; Q quits. First-time Core ML initialization can take tens of seconds.
 > 
+> [Controls, recording and video export](https://github.com/mizorewww/laya-coreml/blob/main/docs/SNAKE_DEMO.md)
+> · [Measured stable decision rates](https://github.com/mizorewww/laya-coreml/blob/main/docs/SNAKE_BENCHMARKS.md)
+> · [Shareable video and recording provenance](https://github.com/mizorewww/laya-coreml/blob/main/docs/LAUNCH.md)
 > 
-> ## Quickstart: Route Mode (Recommended)
+> ## Ask for a decision
 > 
-> Laya ships three checkpoints. The built-in **`Router`** is the recommended entry point: it evaluates any state in any language, automatically detects scripts and languages in sub-milliseconds, and dispatches to the optimal checkpoint in a single forward pass.
+> ```bash
+> pip install laya-coreml
+> ```
 > 
 > ```python
-> import laya
-> from laya import Router
+> import laya_coreml as laya
 > 
-> 
-> ## Live Demo & Resources
-> 
-> * **Hugging Face Model:** [convaiinnovations/laya](https://huggingface.co/convaiinnovations/laya)
-> * **Interactive Web Demo:** [convaiinnovations/laya-demo](https://huggingface.co/spaces/convaiinnovations/laya-demo)
-> * **Engineering Writeup:** [Read the full story on Dev.to](https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me)
-> 
-> ---
-> 
-> 
-> ### Multilingual (51 languages, MASSIVE intent, 20 options, random = 0.050)
-> 
-> | | `laya` | `laya-multilingual` |
-> |---|---|---|
-> | English | **0.783** | 0.657 |
-> | 13 other languages | 0.306 | **0.451** |
-> | XNLI, English | **0.860** | 0.843 |
-> | XNLI, 14 other languages | 0.521 | **0.731** |
-> 
-> Across all 51 languages the English checkpoint macro-averages **0.227** with macro ECE
-> **0.733**, and only 23 of 51 languages clear 3x random. Khmer scores **0.000 at 95.2%
-> confidence**. This is why [`Router`](#model-routing-three-checkpoints-one-call) exists: the
-> model's own confidence gives no warning, so the routing decision has to be made before the
-> forward pass.
-> 
-> 
-> ### Why Route: The Evidence
-> 
-> On a shared benchmark (17,416 questions, one T4 GPU, identical questions per model):
-> 
-> | Benchmark / Task | English (`laya`) | Multilingual (`laya-multilingual`) | `Router` (Routed) |
-> |---|---|---|---|
-> | MASSIVE intent, English | **0.783** | 0.657 | **0.783** |
-> | MASSIVE intent, 13 other languages | 0.306 | **0.451** | **0.451** |
-> | XNLI, English | **0.860** | 0.843 | **0.860** |
-> | XNLI, 14 other languages | 0.521 | **0.731** | **0.731** |
-> | Languages usable (>3x random) | 23 / 51 | 45 / 51 | **45 / 51** |
-> | Latency, 1 question (T4 GPU) | 39.5 ms | **32.8 ms** | **32.8 ms** |
-> | Latency, 10 questions batched | 158.6 ms | **72.3 ms** | **72.3 ms** |
-> 
-> The English checkpoint collapses on non-Latin scripts (Khmer scores **0.000 accuracy at 0.952 confidence**). Because the model stays confident while being wrong, confidence gating cannot save you. `Router` detects the script in  billing (confidence: 0.94)
-> print("Urgency    :", answers["urgency"]["score"])        # -> 1.84 / 2.0
-> print("Churn Risk :", answers["churn_risk"]["noul"])       # -> 0.892 (89.2% probability)
-> ```
-> 
-> ---
-> 
-> 
-> # 1. Intelligent Model Router (routes to small vs. frontier models)
-> routing = agent.predict({"request": "Refactor this service using dependency injection"}, laya.router_questions())
-> 
-> 
-> ## Benchmarks
-> 
-> **Full report: [`BENCHMARKS.md`](BENCHMARKS.md)** — every run consolidated, languages and themes, with per-language detail for all 51 languages.
-> 
->   
-> 
-> All Laya numbers below are measured. Every model answered byte-identical questions
-> (fixed seed) in the same run. Reproduce with
-> [`notebooks/laya_benchmark_colab.ipynb`](https://github.com/NandhaKishorM/laya) on a T4.
-> 
-> 
-> ### Laya (with routing) vs Jev
-> 
-> Every Laya figure is what `Router().predict(...)` actually returns — the checkpoint the router
-> selects for that input, not a hand-picked best of three. Jev figures are **third-party
-> published, never measured here** (no TypeSafe API access), so sample sizes and prompts differ.
-> 
-> | | Jev 1.13.0 | Laya (routed) | |
-> |---|---|---|---|
-> | typed-decisions, 2,000 decisions | 0.727 | **0.766** | +0.039 |
-> | AG News, 4 labels | 0.910 | **0.950** | +0.040 |
-> | DAIR Emotion, 6 labels | 0.480 | **0.595** | +0.115 |
-> | Banking77 (72 vs 77 labels) | **0.870** | 0.425 | Jev leads on >20 options |
-> | ECE *(lower better)* | 0.246 | **0.081** | 3× better (post-temperature) |
-> | p50 latency, 1 question | 236–276 ms | **32.8 ms** | 7.8× faster |
-> | Languages usable | *no published benchmark* | **45 of 51** | — |
-> | Weights | closed API | **Apache 2.0** | — |
-> | Cost | $0.042 / 1M tokens | **$0 self-hosted** | — |
-> 
-> On DAIR Emotion, Jev assigned **zero probability to the true label on 16% of examples** — a hard
-> failure for anything branching on confidence.
-> 
-> #### Where Jev leads
-> 
-> * **High-cardinality label spaces (>20 options at default settings):** On Banking77, Jev scores 0.870 (on 72 labels) while Laya scores 0.425 (on 77 labels at default 256-token head budget). This is an architectural token-budget constraint: options share a fixed `head_max_len` budget (192 tokens on English, 256 on multilingual), so 77 options receive only ~3 to 4 tokens per label, causing text to become indistinguishable. Jev supports up to 255 options out-of-the-box. While `laya-multilingual` supports 1,024 context (and up to 8,192 in the encoder) and you can raise `agent.cfg["head_max_len"] = 512` at runtime, Jev is currently better suited for 50+ options in a single prompt without tuning.
-> * **Soft distribution matching:** On typed-decisions, while Laya achieves higher argmax accuracy (0.766 vs 0.727), Jev achieves higher soft accuracy (0.580 vs 0.471) against the teacher's full probability distributions.
-> * **Out-of-the-box raw calibration:** Before temperature scaling, the base checkpoint has higher raw ECE (0.213 vs 0.144). Laya achieves its 0.081 ECE after domain temperature fitting.
-> 
-> Full detail, including every workflow and all 51 languages: **[`BENCHMARKS.md`](BENCHMARKS.md)**.
-> 
-> 
-> # Preload checkpoints into memory for instant sub-35ms routing
-> router = Router(preload=True)
-> 
-> 
-> # 1. State in any language or schema
-> state = {
->     "from": "user@acme.com",
->     "subject": "Duplicate charge on invoice #4411",
->     "body": "Hi, we were billed twice for March. Please refund the duplicate today or we will cancel our plan."
-> }
-> 
-> 
-> # 2. Define your typed questions
-> questions = {
->     "department": {
->         "type": "choice",
->         "instructions": "Which department should handle this request?",
->         "criteria": {
->             "billing": "invoices, payments, refunds",
->             "technical": "bugs, outages, system errors",
->             "sales": "pricing, new contracts",
->             "other": "everything else"
+> agent = laya.load("aac6fef/laya-multilingual-coreml-ane")
+> result = agent.predict(
+>     "The customer requests a refund of a duplicate payment.",
+>     {
+>         "refund": {
+>             "type": "noul",
+>             "instructions": "Does the customer request a refund?",
 >         }
 >     },
->     "urgency": {
->         "type": "score",
->         "instructions": "How urgent is this request?",
->         "criteria": ["not urgent", "
+> )
+> print(result["answers"]["refund"])
+> ```
+> 
+> Laya returns probabilities for **choice**, ordinal **score**, and boolean **noul**
+> questions. There is no autoregressive decoding or generated JSON to parse. Hub
+> models download before initialization; subsequent predictions stay local. Pass
+> `local_files_only=True` to require an existing cache, or load a local directory.
+> 
+> Following upstream v0.3.5, fitted calibration temperatures are clamped to
+> `[0.5, 5.0]` before use: the shipped `choice:11+` bucket is 0.1006, which would
+> sharpen logits ~10x and report a coin flip as near-certainty. The checkpoint's
+> raw values remain available as `agent.temperature_raw` and
+> `agent.temperature_by_options_raw`, and a `RuntimeWarning` names every clamped
+> bucket at load.
+> 
+> The ANE bundle has a **96-token total limit**, including question, options and
+> state. Longer requests raise a capacity error. Use
+> `aac6fef/laya-multilingual-coreml` for the general-purpose 1024-token model.
+> [Full API, model selection and offline usage](https://github.com/mizorewww/laya-coreml/blob/main/docs/USAGE.md).
+> 
+> ## Measured on M3 Max
+> 
+> 40-core GPU, 128 GiB, macOS 27.2. One 91-token question padded to 96, including
+> prompt preparation, tokenization, arrays, synchronous inference, calibration and
+> formatting. Loading and warmup are excluded. MLX enables compile, prefix caching
+> and shape buckets. Six alternating 20-second blocks per implementation produced
+> **65,598 stable calls**.
+> 
+> | Metric | Compiled MLX FP16 | Core ML ANE FP16 | Core ML ANE W8 |
+> |---|---:|---:|---:|
+> | P50 / P95 | 6.94 / 7.39 ms | **4.98 / 5.31 ms** | **4.88 / 5.23 ms** |
+> | Mean system power estimate | 61.39 W | 30.75 W | 27.39 W |
+> | System energy / decision | 0.4288 J | **0.1540 J** | **0.1344 J** |
+> | Speed gain | 1× | **1.39×** | **1.42×** |
+> | System energy gain | 1× | **2.78×** | **3.19×** |
+> 
+> Energy uses direct SMC PSTR sensor readings, with raw samples and explicit anomaly
+> rejection. This is an estimate with sensor and background-load uncertainty.
+> **Speed gain × average power ratio = energy gain**; multiplying energy by speed
+> again would double-count time. The W8 variant compresses weights while retaining
+> FP16 compute. It is approximate, and its package-size reduction is not a speed ratio.
+> 
+> [Speed, energy and hardware evidence](https://github.com/mizorewww/laya-coreml/blob/main/docs/ANE_BENCHMARKS.md)
+> · [Raw measurements](https://github.com/mizorewww/laya-coreml/tree/main/benchmarks/results).
+> 
+> ## Available checkpoints
+> 
+> | Hugging Face bundle | Default engine | Capacity | Purpose |
+> |---|---|---:|---|
+> | [Laya 421M](https://huggingface.co/aac6fef/laya-coreml) | CPU + GPU | 512 tokens | Original English model |
+> | [Multilingual 322M](https://huggingface.co/aac6fef/laya-multilingual-coreml) | CPU + GPU | 1024 tokens | General multilingual decisions |
+> | [Typed Decisions 421M](https://huggingface.co/aac6fef/laya-typed-decisions-coreml) | CPU + GPU | 1024 tokens | Original specialized checkpoint |
+> | [Snake GPU](https://huggingface.co/aac6fef/laya-multilingual-coreml-snake) | CPU + GPU | B3 / L64 | Batches the three compact game questions |
+> | [Multilingual ANE](https://huggingface.co/aac6fef/laya-multilingual-coreml-ane) | CPU + ANE | B1 / L96 | Short decisions, FP16 |
+> | [Multilingual ANE W8](https://huggingface.co/aac6fef/laya-multilingual-coreml-ane-w8) | CPU + ANE | B1 / L96 | Optional approximate palette compression |
+> 
+> Every bundle includes tokenizer/configuration, model card, provenance, checksums
+> and packaging-time validation. ANE bundles also include the exact original host
+> embedding/action tensors they need. No original training checkout is required.
+> 
+> ## Port fidelity and limits
+> 
+> The three general-purpose FP16 checkpoints match upstream selected answers on
+> **189/189 validation questions**. Each passes 100 repeated calls. ANE FP16 L96
+> passes **59/59 fitting questions**, with maximum calibrated-probability drift
+> 0.002925; W8 passes the same subset with drift 0.014393 under an unchanged 0.02
+> gate. Six- and four-bit experiments failed that gate and are not published weights.
+> These are conversion-fidelity fixtures, not proof of general task accuracy.
+> 
+> A separately exported FP16 ANE L1024 graph passes the complete **63/63** fixture,
+> but an actual 1024-token request takes about **91.7 ms** in its serial screen.
+> The short ANE result does not establish a long-context advantage. A 600-step
+> paired Snake check matches **600/600 actions**, with zero deaths and zero shield
+> interventions; the current ANE adapter's three sequential calls do not establish
+> a consistent full-game speedup over compiled MLX.
+> 
+> The ordinary SDPA Core ML export and the ANE graph are different implementations.
+> The ordinary export defaults to CPU+GPU after unrestricted RangeDim GPU shapes
+> failed local fidelity checks. Changing its device setting alone does not reproduce
+> the ANE result. The ANE rewrite uses BC1L activations, 1×1 projections and per-head
+> attention; its plan and a separate Instruments trace support Neural Engine work.
+> CPU still handles input/output boundaries.
+> 
+> ## Documentation and reproducibility
+> 
+> - [Install and Python/CLI API](https://github.com/mizorewww/laya-coreml/blob/main/docs/USAGE.md)
+> - [Snake demo and media](https://github.com/mizorewww/laya-coreml/blob/main/docs/SNAKE_DEMO.md)
+> - [Release artifacts and pinned Hub revisions](https://github.com/mizorewww/laya-coreml/blob/main/docs/RELEASE.md)
+> - [General Core ML benchmarks](https://github.com/mizorewww/laya-coreml/blob/main/BENCHMARKS.md)
+> - [ANE engineering experiments](https:/
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/NandhaKishorM/laya)
+[GitHub](https://github.com/mizorewww/laya-coreml) · [官方網站](https://github.com/mizorewww/laya-coreml#readme)
 
 ## 相關收錄
 
@@ -362,7 +349,7 @@ No description available.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "NandhaKishorM--laya"
+> WHERE category = "Other" AND file.name != "mizorewww--laya-coreml"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -371,7 +358,7 @@ No description available.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Python" AND file.name != "NandhaKishorM--laya" AND status != "archived"
+> WHERE language = "Python" AND file.name != "mizorewww--laya-coreml" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -380,18 +367,18 @@ No description available.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W39" AND file.name != "NandhaKishorM--laya"
+> WHERE week = "2026-W39" AND file.name != "mizorewww--laya-coreml"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/mizorewww--laya-coreml");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "NandhaKishorM--laya" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "mizorewww--laya-coreml" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -407,7 +394,7 @@ No description available.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "NandhaKishorM" AND file.name != "NandhaKishorM--laya"
+> WHERE owner = "mizorewww" AND file.name != "mizorewww--laya-coreml"
 > SORT stars DESC
 > ```
 
@@ -415,7 +402,7 @@ No description available.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/mizorewww--laya-coreml");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -432,7 +419,7 @@ No description available.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/mizorewww--laya-coreml");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -465,7 +452,7 @@ No description available.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/mizorewww--laya-coreml");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -489,7 +476,7 @@ No description available.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/mizorewww--laya-coreml");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -526,7 +513,7 @@ No description available.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/NandhaKishorM--laya");
+> const me = dv.page("Repos/mizorewww--laya-coreml");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -609,7 +596,7 @@ No description available.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-20** — 首次收錄
+> **2026-09-25** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -625,9 +612,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-25|2026-09-25]] — 再次上榜，23.4k stars
-- [[2026-09-24|2026-09-24]] — 再次上榜，21.1k stars
-- [[2026-09-23|2026-09-23]] — 再次上榜，17.5k stars
-- [[2026-09-22|2026-09-22]] — 再次上榜，11.8k stars
-- [[2026-09-21|2026-09-21]] — 再次上榜，5.4k stars
-- [[2026-09-20|2026-09-20]] — 首次收錄，1.6k stars
+- [[2026-09-25|2026-09-25]] — 首次收錄，1.4k stars

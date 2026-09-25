@@ -7,12 +7,12 @@ language: TypeScript
 license: Apache-2.0
 description: "Z.ai's coding agent harness. Powerful, intelligent, extensible."
 homepage: "https://zcode.z.ai/"
-stars: 6593
-stars_per_day: 2198
-forks: 1964
+stars: 6726
+stars_per_day: 1682
+forks: 2009
 open_issues: 11
 created: 2026-09-20
-pushed_at: 2026-09-23
+pushed_at: 2026-09-24
 first_seen: 2026-09-21
 week: "2026-W39"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
-next_review: "2026-09-27"
+appearances: 5
+next_review: "2026-09-28"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 0
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-21"
-star_history: "2026-09-21:3530,2026-09-22:5905,2026-09-23:6376,2026-09-24:6593"
+star_history: "2026-09-21:3530,2026-09-22:5905,2026-09-23:6376,2026-09-24:6593,2026-09-25:6726"
 tags:
   - github
   - "category/other"
@@ -668,6 +668,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-25|2026-09-25]] — 再次上榜，6.7k stars
 - [[2026-09-24|2026-09-24]] — 再次上榜，6.6k stars
 - [[2026-09-23|2026-09-23]] — 再次上榜，6.4k stars
 - [[2026-09-22|2026-09-22]] — 再次上榜，5.9k stars
