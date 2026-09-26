@@ -7,9 +7,9 @@ language: Go
 license: MIT
 description: "Async-first agent harness"
 homepage: "https://unreallabs.ai"
-stars: 1885
-stars_per_day: 628
-forks: 98
+stars: 1943
+stars_per_day: 486
+forks: 103
 open_issues: 8
 created: 2026-09-21
 pushed_at: 2026-09-23
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-28"
+appearances: 3
+next_review: "2026-09-29"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 27
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-24"
-star_history: "2026-09-24:1776,2026-09-25:1885"
+star_history: "2026-09-24:1776,2026-09-25:1885,2026-09-26:1943"
 tags:
   - github
   - "category/other"
@@ -535,5 +535,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-26|2026-09-26]] — 再次上榜，1.9k stars
 - [[2026-09-25|2026-09-25]] — 再次上榜，1.9k stars
 - [[2026-09-24|2026-09-24]] — 首次收錄，1.8k stars

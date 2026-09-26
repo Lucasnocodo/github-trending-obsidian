@@ -4334,17 +4334,17 @@
   },
   "zai-org/ZCode": {
     "first_seen": "2026-09-21",
-    "last_seen": "2026-09-25",
-    "times_seen": 5,
+    "last_seen": "2026-09-26",
+    "times_seen": 6,
     "stars_first": 3530,
-    "stars_last": 6726
+    "stars_last": 6790
   },
   "mizorewww/laya-mlx": {
     "first_seen": "2026-09-21",
-    "last_seen": "2026-09-25",
-    "times_seen": 5,
+    "last_seen": "2026-09-26",
+    "times_seen": 6,
     "stars_first": 2009,
-    "stars_last": 6248
+    "stars_last": 6359
   },
   "jaredpalmer/kev": {
     "first_seen": "2026-09-22",
@@ -4355,10 +4355,10 @@
   },
   "jev-chat/jev-chat-jarvis": {
     "first_seen": "2026-09-23",
-    "last_seen": "2026-09-25",
-    "times_seen": 3,
+    "last_seen": "2026-09-26",
+    "times_seen": 4,
     "stars_first": 4372,
-    "stars_last": 6247
+    "stars_last": 6543
   },
   "Mak5er/AirCard": {
     "first_seen": "2026-09-23",
@@ -4369,10 +4369,10 @@
   },
   "unreallabsai/unreal-agent": {
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "times_seen": 2,
+    "last_seen": "2026-09-26",
+    "times_seen": 3,
     "stars_first": 1776,
-    "stars_last": 1885
+    "stars_last": 1943
   },
   "bespokelabsai/nimble": {
     "first_seen": "2026-09-24",
@@ -4390,30 +4390,44 @@
   },
   "mizorewww/laya-coreml": {
     "first_seen": "2026-09-25",
-    "last_seen": "2026-09-25",
-    "times_seen": 1,
+    "last_seen": "2026-09-26",
+    "times_seen": 2,
     "stars_first": 1442,
-    "stars_last": 1442
+    "stars_last": 1471
   },
   "newliver666/apk-reverse": {
     "first_seen": "2026-09-25",
-    "last_seen": "2026-09-25",
-    "times_seen": 1,
+    "last_seen": "2026-09-26",
+    "times_seen": 2,
     "stars_first": 1428,
-    "stars_last": 1428
+    "stars_last": 1469
   },
   "driceroland/Search": {
     "first_seen": "2026-09-25",
-    "last_seen": "2026-09-25",
-    "times_seen": 1,
+    "last_seen": "2026-09-26",
+    "times_seen": 2,
     "stars_first": 1285,
-    "stars_last": 1285
+    "stars_last": 1908
   },
   "deepopen-com/deepopen": {
     "first_seen": "2026-09-25",
-    "last_seen": "2026-09-25",
-    "times_seen": 1,
+    "last_seen": "2026-09-26",
+    "times_seen": 2,
     "stars_first": 1012,
-    "stars_last": 1012
+    "stars_last": 1022
+  },
+  "Contrastive-LM/CLM": {
+    "first_seen": "2026-09-26",
+    "last_seen": "2026-09-26",
+    "times_seen": 1,
+    "stars_first": 1315,
+    "stars_last": 1315
+  },
+  "pallavi-shekhar/ai-engineering-interview-questions-company-wise": {
+    "first_seen": "2026-09-26",
+    "last_seen": "2026-09-26",
+    "times_seen": 1,
+    "stars_first": 1203,
+    "stars_last": 1203
   }
 }

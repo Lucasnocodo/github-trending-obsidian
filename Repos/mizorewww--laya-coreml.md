@@ -7,9 +7,9 @@ language: Python
 license: Apache-2.0
 description: "Local Laya typed decisions on Apple Core ML and Neural Engine. Validated ports, ~5 ms short decisions on M3 Max, reproducible speed and energy benchmarks."
 homepage: "https://github.com/mizorewww/laya-coreml#readme"
-stars: 1442
-stars_per_day: 288
-forks: 121
+stars: 1471
+stars_per_day: 245
+forks: 122
 open_issues: 3
 created: 2026-09-19
 pushed_at: 2026-09-22
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-28"
+appearances: 2
+next_review: "2026-09-29"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 40
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-25"
-star_history: "2026-09-25:1442"
+star_history: "2026-09-25:1442,2026-09-26:1471"
 tags:
   - github
   - "category/other"
@@ -612,4 +612,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-26|2026-09-26]] — 再次上榜，1.5k stars
 - [[2026-09-25|2026-09-25]] — 首次收錄，1.4k stars

@@ -1,63 +1,68 @@
 ---
-repo: driceroland/Search
-url: https://github.com/driceroland/Search
-owner: driceroland
+repo: pallavi-shekhar/ai-engineering-interview-questions-company-wise
+url: https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise
+owner: pallavi-shekhar
 owner_type: User
-language: Swift
-license: MIT
-description: "A small, fast WebKit browser for macOS, by Office Commun."
-homepage: ""
-stars: 1908
-stars_per_day: 382
-forks: 166
-open_issues: 174
-created: 2026-09-20
-pushed_at: 2026-09-24
-first_seen: 2026-09-25
+language: Markdown
+license: Apache-2.0
+description: "Your Cheat Sheet For AI Engineering Interviews at Top AI Companies - Questions and Answers."
+homepage: "https://outcomeschool.com/program/ai-and-machine-learning"
+stars: 1203
+stars_per_day: 172
+forks: 109
+open_issues: 0
+created: 2026-09-19
+pushed_at: 2026-09-19
+first_seen: 2026-09-26
 week: "2026-W39"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v1.0.3"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-25
+last_reviewed: 2026-09-26
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-29"
-contributor_count: 5
+appearances: 1
+next_review: "2026-10-03"
+contributor_count: 1
 engagement: "low"
-issue_close_rate: 27
-repo_size_kb: 1140
-readme_length: 9229
+issue_close_rate: 100
+repo_size_kb: 251
+readme_length: 9985
 bus_factor: 1
-last_release_days: 1
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-25"
-star_history: "2026-09-25:1285,2026-09-26:1908"
+ring_history: "assess@2026-09-26"
+star_history: "2026-09-26:1203"
 tags:
   - github
   - "category/other"
-  - "lang/swift"
+  - "lang/markdown"
+  - "topic/ai"
+  - "topic/ai_engineering"
+  - "topic/ai_engineering_interview"
+  - "topic/ai_interview"
+  - "topic/ai_interview_questions"
 aliases:
-  - "Search"
-  - "driceroland/Search"
+  - "ai-engineering-interview-questions-company-wise"
+  - "pallavi-shekhar/ai-engineering-interview-questions-company-wise"
 ---
 
-# Search
+# ai-engineering-interview-questions-company-wise
 
-**1.3k** stars · **321** stars/天 · 建立 4 天前 · Swift · MIT
+**1.2k** stars · **172** stars/天 · 建立 7 天前 · Markdown · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/driceroland--Search");
+const me = dv.page("Repos/pallavi-shekhar--ai-engineering-interview-questions-company-wise");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v1.0.3`
+`個人專案`
+
+`ai` `ai-engineering` `ai-engineering-interview` `ai-interview` `ai-interview-questions` `company-wise-prep` `company-wise-questions` `interview-questions` `llm-inference` `questions-and-answers`
 
 > [!summary] 一句話摘要
-> A small, fast WebKit browser for macOS, by Office Commun.
+> Your Cheat Sheet For AI Engineering Interviews at Top AI Companies - Questions and Answers.
 
 ## 專案簡介
 
-A small, fast WebKit browser for macOS, by Office Commun.
+Your Cheat Sheet For AI Engineering Interviews at Top AI Companies - Questions and Answers.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/pallavi-shekhar--ai-engineering-interview-questions-company-wise");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/pallavi-shekhar--ai-engineering-interview-questions-company-wise");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,166 +149,181 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 132 |
-| Open Issues | 129 |
-| Issue 解決率 | 27% (47 closed) |
-| 最後推送 | 2026-09-24 |
-| 建立日期 | 2026-09-20 |
-| Repo 大小 | 1.1 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/driceroland/Search) |
-
-> [!info]- 語言組成
-> ```mermaid
-> pie title 語言組成
->     "Swift" : 96
->     "Python" : 3
->     "Shell" : 1
-> ```
+| Forks | 109 |
+| Open Issues | 0 |
+| Issue 解決率 | 100% (1 closed) |
+| 最後推送 | 2026-09-19 |
+| 建立日期 | 2026-09-19 |
+| 官方網站 | [Link](https://outcomeschool.com/program/ai-and-machine-learning) |
+| Repo 大小 | 251 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise) |
+| Topics | `ai` `ai-engineering` `ai-engineering-interview` `ai-interview` `ai-interview-questions` `company-wise-prep` `company-wise-questions` `interview-questions` |
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@driceroland](https://github.com/driceroland) | 167 |
-> | [@merttopuz](https://github.com/merttopuz) | 8 |
-> | [@karadoganyi](https://github.com/karadoganyi) | 6 |
-> | [@Hyp4tia](https://github.com/Hyp4tia) | 5 |
-> | [@burakbuilds](https://github.com/burakbuilds) | 4 |
-
-**最新版本**：v1.0.3 — Search 1.0.3 (2026-09-24)
-
-> [!info]- Release Notes
-> Security, and the mouse wheel. Search 1.0.3 closes the holes found in this week's reviews — an extension could read files outside its own folder, and a page or an ad could open another app without asking — and copying a saved password now asks for Touch ID. A mouse wheel scrolls smoothly again on x.com and pages like it, Bitwarden signs in to a self-hosted server, and extension popups hear what changes while they are open. Also: History opens at once, music keeps playing when you switch spaces, a link from Mail brings Search to the front, a full-screen video no longer goes black, pop-ups need a click, and the tab bar folded away with ⌘S comes back on a ground of its own. Your extensions may each ask once more for their permissions at their next update.
-> 
-> ### Added
-> 
-> - Updates can wait for you: Settings › About › Install updates on its own, on as before. Switched off, Search still looks once a day and says when a newer version is out, and fetches, checks and installs it only when you press Install.
-> 
-> ### Fixed
-> 
-> ...（完整內容見 GitHub）
+> | [@pallavi-shekhar](https://github.com/pallavi-shekhar) | 8 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-24 ~ 2026-09-24）
-> **活躍天數** 1 天 · **最新 commit** Roadmap: pop-ups named by their site are done
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#17](https://github.com/driceroland/Search/issues/17) | Apple Password support | 7 | 6 |
-> | [#183](https://github.com/driceroland/Search/issues/183) | Arc-style pinned tabs: full rows above the "New tab" button, | 4 | 0 |
-> | [#68](https://github.com/driceroland/Search/issues/68) | Tab folders in the sidebar | 4 | 0 |
-> | [#224](https://github.com/driceroland/Search/issues/224) | iCloud Sync? | 3 | 1 |
+> [!abstract] 最近 10 次 commit（2026-09-19 ~ 2026-09-19）
+> **活躍天數** 1 天 · **最新 commit** Update README.md
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Search
+> # AI Engineering Interview Questions Company Wise
 > 
-> A small, fast, quiet web browser for the Mac, by [Office Commun](https://officecommun.com).
-> 
-> **[Download for macOS →](https://officecommun.com/search)** · macOS 14 or later · free · about 3 MB
-> 
-> Or with [Homebrew](https://brew.sh): `brew install --cask driceroland/tap/search`
-> 
-> ---
-> 
-> 
-> ## What it is
-> 
-> Search is a browser with nothing in the way. A row of tabs — across the top or down the left, your choice — and the page. There is no toolbar, no start page, no sidebar of suggestions, no account to sign into, nothing that wants your attention. You type an address or a few words in one field and you are on the page.
-> 
-> It uses **WebKit**, the engine already inside every Mac (it is what Safari runs on). That is why the whole app is about 3 MB on disk and opens instantly: there is no second copy of Chromium to download, update and keep in memory.
-> 
-> It was built by a design studio that spends its whole day in a browser and was tired of the ones that had become products. This one is a tool.
-> 
-> 
-> ## What it does
-> 
-> - **One field.** Type an address and you go there; type words and you search. It finishes addresses from your own history and never sends what you type anywhere until you press Return.
-> - **Tabs that stay out of the way.** Pin the pages you keep open all day and they shrink to a letter or their icon. Tabs from your last session come back instantly and cost nothing until you click them. `⌘K` lists your open tabs by name.
-> - **Reading mode.** `⇧⌘R` strips a page down to the article.
-> - **Hide anything, for good.** `⇧⌘H`, then click a cookie banner, a newsletter overlay, a rail of "related" nonsense — it goes, and it is still gone on that site next time, before the page has drawn a single frame.
-> - **An ad blocker that runs before the page.** Third-party trackers and ad networks are stopped at the network level, so there is nothing to render and nothing to slow down. On by default, off per site if something breaks.
-> - **Video that follows you.** `⇧⌘P` lifts the video out of the page into a small window that stays above everything, including other apps.
-> - **Passwords, in your keychain.** Search offers to save a sign-in once it has actually worked, and offers your saved accounts under the field when you click it — the way Safari does, never filling anything on its own. Everything lives in the macOS keychain, encrypted by the system, readable only by Search. Bring yours in from Chrome, Arc, Dia, Brave or Edge in one click; nothing leaves the Mac.
-> - **Light, dark, or the Mac's own.** The frame and the pages follow.
-> - **Bookmarks, history, downloads** — each a panel, each searchable, each one keystroke away.
-> - **Chrome extensions, without Chrome.** Paste a Chrome Web Store link in Settings › Extensions, or open the extension's page in Search and press Add. It runs on WebKit's own extension engine — the one Safari uses — and where Chrome has APIs WebKit doesn't (bookmarks, history, downloads, side panel, offscreen documents, fonts, notifications, speech, OAuth sign-in), Search fills them in itself. They live behind the puzzle button; pin the ones you use often. Building your own? Load its folder as an unpacked extension and press Reload after each change, as in Chrome's developer mode. macOS 15.4 or later.
-> - **Updates itself, quietly.** Once a day it checks for a newer build, downloads it, verifies it is signed by Office Commun, and swaps it in for the next launch. Nothing restarts on its own.
+> > AI Engineering Interview Questions Company Wise - Your Cheat Sheet For AI Engineering Interviews at Top AI Companies
+> >
+> > Real interview questions asked in AI Engineering interviews at 35 companies, organized company by company, with answers linked wherever we have them.
+> >
+> > These interview questions and answers are helpful for roles such as:
+> >
+> > - AI Engineer
+> > - Gen AI Engineer
+> > - LLM Engineer
+> > - Agentic AI Engineer
+> > - AI Agent Engineer
+> > - Machine Learning Engineer
+> > - Research Engineer
+> > - Applied Scientist
+> > - Forward Deployed Engineer
+> > - AI Solutions Architect
+> > - AI Platform Engineer
+> > - Applied AI Engineer
+> > - LLM Inference and Performance Engineer
+> > - MLOps Engineer
+> > - LLMOps Engineer
 > 
 > 
-> ## What it doesn't do
+> ## How to use this
 > 
-> On purpose:
-> 
-> - No extension you have to install to feel at home. Blocking ads, hiding clutter, reading mode, picture-in-picture and passwords are built in; extensions are there for everything else.
-> - No sync, no account, no cloud. Your tabs, history and passwords are on your Mac and nowhere else.
-> - No telemetry, no analytics, no crash reports sent anywhere. The only things that leave your Mac are the pages you ask for, their icons, and one small request a day to see whether there is a newer version.
-> - One window. Tabs are the only kind of "new" there is.
-> 
-> 
-> ### Why the source is here
-> 
-> So anyone can read exactly what a browser handling their passwords and history is doing, build it themselves, or fix something that bothers them. The code is small enough to actually read — about 12,700 lines of Swift, no dependencies beyond what Apple ships with macOS, one file per concern.
-> 
-> 
-> ## Privacy, concretely
-> 
-> | What | Where it is | Who can read it |
-> |---|---|---|
-> | Passwords | The macOS login keychain, as ordinary keychain items tagged `Search` | Search, signed by Office Commun. Any other app triggers the system's permission dialog. |
-> | History, bookmarks, open tabs, hidden elements | Small JSON files in `~/Library/Application Support/Search/` | You. |
-> | Cookies and site data | WebKit's own store for the app | The sites that set them, as in any browser. |
-> | Extensions | Unpacked in `~/Library/Application Support/Search/Extensions/`, their data in WebKit's extension store | Each extension, within the permissions you accepted when adding it. |
-> | Anything else | Nowhere. There is no server. | — |
-> 
-> A **private tab** (`⇧⌘N`) has its own cookie jar and leaves nothing behind when it closes.
-> 
-> 
-> ## Keyboard
-> 
-> | | |
-> |---|---|
-> | `⌘L` address · `⌘K` switch tab · `⌘T` new tab · `⌘W` close · `⇧⌘T` reopen | `⌘[` `⌘]` back, forward · `⇧⌘[` `⇧⌘]` previous, next tab · `⌘1`–`⌘9` jump |
-> | `⇧⌘S` tabs across the top or down the left · `⌘S` fold the sidebar away · `⇧⌘B` bookmark this page | `⇧⌘R` reading mode · `⇧⌘P` float the video · `⇧⌘H` hide something · `⇧⌘U` what is hidden here |
-> | `⌘F` find · `⌘D` duplicate tab · `⇧⌘C` copy address · `⇧⌘V` paste and go | `⌘Y` history · `⇧⌘J` downloads · `⌘,` settings · `⌥⌘L` passwords |
-> 
-> `⌃Tab` and `⌃⇧Tab` walk along the row of tabs; `Tab` stays the page's, for moving through a form. `esc` puts away whatever is open.
+> - Questions are compiled from publicly reported interview experiences. Nothing here is confidential. Interview loops change constantly and vary by team, level, and region, so treat each company section as a map of what that company cares about, not a script of what you will be asked.
+> - Start with [Common Questions Asked Across Companies](#common-questions-asked-across-companies). These are the questions that recur across many companies. Each one is listed once, with the companies that ask it, so nothing is repeated in the company sections.
+> - Then go to your target companies. Each company section has the roles it covers, the interview loop as publicly reported, and the company-specific questions grouped by topic.
+> - Wherever we have an answer, it is linked right below the question. We will keep adding answers.
 > 
 > ---
 > 
 > 
-> ## For developers
+> ## Table of Contents
+> 
+> - [How to use this](#how-to-use-this)
+> - [Common Questions Asked Across Companies](#common-questions-asked-across-companies)
+>   - [LLM Internals and Architecture](#llm-internals-and-architecture)
+>   - [Inference, Serving and GPU Performance](#inference-serving-and-gpu-performance)
+>   - [RAG and Retrieval](#rag-and-retrieval)
+>   - [Agents and Tool Use](#agents-and-tool-use)
+>   - [Fine-Tuning, Post-Training and Alignment](#fine-tuning-post-training-and-alignment)
+>   - [Evaluation and Observability](#evaluation-and-observability)
+>   - [Safety, Security and Responsible AI](#safety-security-and-responsible-ai)
+>   - [Multimodal, Speech and Voice AI](#multimodal-speech-and-voice-ai)
+>   - [AI System Design](#ai-system-design)
+>   - [Coding and Data Structures](#coding-and-data-structures)
+> - [Frontier AI Labs](#frontier-ai-labs)
+>   - [Anthropic](#anthropic)
+>   - [OpenAI](#openai)
+>   - [Google DeepMind and Google AI](#google-deepmind-and-google-ai)
+>   - [Meta (Superintelligence Labs, FAIR, Llama)](#meta-superintelligence-labs-fair-llama)
+>   - [xAI](#xai)
+>   - [Mistral AI](#mistral-ai)
+>   - [Cohere](#cohere)
+>   - [DeepSeek](#deepseek)
+>   - [Moonshot AI (Kimi)](#moonshot-ai-kimi)
+>   - [Zhipu AI (GLM)](#zhipu-ai-glm)
+>   - [Alibaba (Qwen)](#alibaba-qwen)
+>   - [Sarvam AI](#sarvam-ai)
+> - [Big Tech AI Organizations](#big-tech-ai-organizations)
+>   - [Microsoft](#microsoft)
+>   - [Amazon (AWS)](#amazon-aws)
+>   - [Apple](#apple)
+>   - [NVIDIA](#nvidia)
+>   - [Tesla](#tesla)
+>   - [Consumer-Scale ML Companies (Uber, Netflix, LinkedIn, Airbnb, Pinterest, Spotify)](#consumer-scale-ml-companies-uber-netflix-linkedin-airbnb-pinterest-spotify)
+> - [AI Infrastructure and Platform Companies](#ai-infrastructure-and-platform-companies)
+>   - [Databricks](#databricks)
+>   - [Groq](#groq)
+>   - [Together AI](#together-ai)
+>   - [Hugging Face](#hugging-face)
+>   - [Scale AI](#scale-ai)
+>   - [Perplexity](#perplexity)
+> - [AI-Native Product Companies](#ai-native-product-companies)
+>   - [Cursor (Anysphere)](#cursor-anysphere)
+>   - [Cognition (Devin, Windsurf)](#cognition-devin-windsurf)
+>   - [Sierra](#sierra)
+>   - [Harvey](#harvey)
+>   - [Glean](#glean)
+>   - [Character.AI](#characterai)
+>   - [ElevenLabs](#elevenlabs)
+>   - [Abridge](#abridge)
+>   - [Figure AI](#figure-ai)
+>   - [Waymo](#waymo)
+> - [Forward-Deployed and Enterprise AI](#forward-deployed-and-enterprise-ai)
+>   - [Palantir](#palantir)
 > 
 > 
-> ### Building it
+> ### Prepared and maintained by [Outcome School](https://outcomeschool.com)
 > 
-> - macOS 14 or later, Xcode 16 / Swift 6 toolchain
-> - `swift build` — runs the app straight from the SwiftPM binary
-> - `./build.sh` — assembles a real, double-clickable `Search.app` in `build/`, ad-hoc signed so it runs on your own Mac
-> 
-> A build you make yourself won't be notarized or carry Office Commun's Developer ID, so the first launch needs a right-click → Open (or an allow in System Settings → Privacy & Security). That's expected — it's the same thing that happens with any app that isn't from the App Store or a notarized DMG. Your own build also keeps its passwords apart from a signed Search's: the keychain tells the two apart by their signatures.
-> 
-> `./build.sh release dmg` also makes `Search.dmg` / `Search.zip`. `./build.sh release ship` additionally notarizes and staples — that step needs a Developer ID certificate and Apple credentials, so it only really does anything for Office Commun's own releases.
+> > AI and Machine Learning Program by Outcome School: [AI and Machine Learning Program](https://outcomeschool.com/program/ai-and-machine-learning)
 > 
 > 
-> ### How it's put together
+> ### Follow Outcome School
 > 
-> - **SwiftUI** for everything drawn, **AppKit** for the handful of things SwiftUI doesn't reach on macOS (the window's title bar, dragging the window by an empty part of the tab row), **WKWebView** for pages.
-> - One `Tab` per page. Its web view is built lazily — a tab restored from last session doesn't cost a process until you switch to it. That's most of why launching with twenty tabs is still instant. Each page runs in WebKit's own content process, as in Safari; a tab you close is really gone.
-> - The ad blocker is a `WKContentRuleList` compiled once at launch and enforced inside WebKit's networking, before a request is made — zero cost at run time, unlike a JavaScript blocker.
-> - Hidden elements are a per-site list of selectors injected as a stylesheet at document start, so nothing is ever seen appearing and vanishing.
-> - Every colour is a light/dark pair in `Design.swift`, resolved by the window's appearance; nothing else in the code knows which mode it is in.
-> - Extensions run on `WKWebExtension` (macOS 15.4+). `Crx.swift` fetches an extension from the Chrome Web Store's public update address and checks the CRX3 signature against the extension's id before anythin
+> - [YouTube](https://youtube.com/@OutcomeSchool)
+> - [X/Twitter](https://x.com/outcome_school)
+> - [LinkedIn](https://www.linkedin.com/company/outcomeschool)
+> - [GitHub](https://github.com/OutcomeSchool)
+> 
+> ---
+> 
+> > **Note: We will keep updating this with new questions and answers.**
+> >
+> > For topic-wise questions and answers, see [AI Engineering Interview Questions and Answers](https://github.com/amitshekhariitbhu/ai-engineering-interview-questions).
+> 
+> ---
+> 
+> 
+> ## Common Questions Asked Across Companies
+> 
+> > These questions come up in AI Engineering interviews at many companies. Each question is listed once here, with the companies where it (or a company-specific version of it) is asked. Work through these first.
+> 
+> 
+> ### LLM Internals and Architecture
+> 
+> - Explain scaled dot-product attention and why the 1/sqrt(d_k) scaling factor matters.
+>   - Answer: [Math behind √dₖ Scaling Factor in Attention](https://outcomeschool.com/blog/scaling-dot-product-attention) and [Math behind Attention - Q, K, and V](https://outcomeschool.com/blog/math-behind-attention-qkv)
+> - What is the KV cache, and what are its memory implications at scale? Derive the formula.
+>   - Asked at: [OpenAI](#openai), [xAI](#xai), [Mistral AI](#mistral-ai), [Amazon](#amazon-aws), [Apple](#apple), [NVIDIA](#nvidia), [Together AI](#together-ai), [Character.AI](#characterai)
+>   - Answer: [What is KV Cache in LLMs?](https://outcomeschool.com/blog/kv-cache-in-llms) and [KV Cache Compression](https://outcomeschool.com/blog/kv-cache-compression)
+> - What are Multi-Query Attention (MQA) and Grouped-Query Attention (GQA), and what do they trade away?
+>   - Asked at: [Meta](#meta-superintelligence-labs-fair-llama), [Mistral AI](#mistral-ai)
+>   - Answer: [Grouped Query Attention](https://outcomeschool.com/blog/grouped-query-attention)
+> - What is Multi-head Latent Attention (MLA) and why did DeepSeek introduce it?
+>   - Asked at: [DeepSeek](#deepseek), [Moonshot AI](#moonshot-ai-kimi)
+>   - Answer: [KV Cache Compression](https://outcomeschool.com/blog/kv-cache-compression)
+> - Explain FlashAttention. It does not reduce FLOPs, so why is it faster?
+>   - Asked at: [Together AI](#together-ai)
+>   - Answer: [Decoding Flash Attention in LLMs](https://outcomeschool.com/blog/decoding-flash-attention)
+> - How does Byte Pair Encoding work, and what are its failure modes (numbers, code, non-Latin scripts)?
+>   - Asked at: [Alibaba](#alibaba-qwen), [Sarvam AI](#sarvam-ai), [Hugging Face](#hugging-face)
+>   - Answer: [Byte Pair Encoding](https://outcomeschool.com/blog/bpe-in-llms) and [Tokenization in Large Language Models (LLMs)](https://www.youtube.com/watch?v=sK2s9I84EVI)
+> - What is positional encoding in transformers, and how has it evolved (sinusoidal → learned → RoPE → ALiBi)?
+>   - Answer: [Positional Embeddings in LLMs](https://outcomeschool.substack.com/p/positional-embeddings-in-llms) and [Math Behind RoPE (Rotary Position Embedding)](https://outcomeschool.com/blog/math-behind-rope-rotary-position-embedding)
+> - Explain RoPE and how position interpolation / YaRN extend context beyond the trained length.
+>   - Asked at: [Meta](#meta-superintelligence-labs-fair-llama), [Moonshot AI](#moonshot-ai-kimi), [Alibaba](#alibaba-qwen)
+>   - Answer: [Math Behind RoPE (Rotary Position Embedding)](https://outcomeschool.com/blog/math-behind-rope-rotary-position-embedding)
+> - What do the Chinchilla scaling laws say, and how do they differ from earlier scaling intuitions?
+>   - Asked at: [Anthropic](#anthropic)
+> - What is a mixture-of-experts architecture and how does it scale capacity without scaling FLOPs?
+>   - Asked at: [Mistral AI](#mistral-ai), [Cohere](#cohere), [DeepSeek](#deepseek), [Moonshot AI](#moonshot-ai-kimi), [Zhipu AI](#zhipu-ai-glm), [Alibaba](#alibaba-qwen)
+>   - Answer: [Mixture of Experts Explained](https://outcomeschoo
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/driceroland/Search)
+[GitHub](https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise) · [官方網站](https://outcomeschool.com/program/ai-and-machine-learning)
 
 ## 相關收錄
 
@@ -309,7 +331,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "driceroland--Search"
+> WHERE category = "Other" AND file.name != "pallavi-shekhar--ai-engineering-interview-questions-company-wise"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -318,7 +340,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Swift" AND file.name != "driceroland--Search" AND status != "archived"
+> WHERE language = "Markdown" AND file.name != "pallavi-shekhar--ai-engineering-interview-questions-company-wise" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -327,18 +349,18 @@ A small, fast WebKit browser for macOS, by Office Commun.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W39" AND file.name != "driceroland--Search"
+> WHERE week = "2026-W39" AND file.name != "pallavi-shekhar--ai-engineering-interview-questions-company-wise"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/pallavi-shekhar--ai-engineering-interview-questions-company-wise");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "driceroland--Search" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "pallavi-shekhar--ai-engineering-interview-questions-company-wise" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -354,7 +376,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "driceroland" AND file.name != "driceroland--Search"
+> WHERE owner = "pallavi-shekhar" AND file.name != "pallavi-shekhar--ai-engineering-interview-questions-company-wise"
 > SORT stars DESC
 > ```
 
@@ -362,7 +384,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/pallavi-shekhar--ai-engineering-interview-questions-company-wise");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -379,7 +401,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/pallavi-shekhar--ai-engineering-interview-questions-company-wise");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -412,7 +434,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/pallavi-shekhar--ai-engineering-interview-questions-company-wise");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -436,7 +458,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/pallavi-shekhar--ai-engineering-interview-questions-company-wise");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -473,7 +495,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/pallavi-shekhar--ai-engineering-interview-questions-company-wise");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -556,7 +578,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-25** — 首次收錄
+> **2026-09-26** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -572,5 +594,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-26|2026-09-26]] — 再次上榜，1.9k stars
-- [[2026-09-25|2026-09-25]] — 首次收錄，1.3k stars
+- [[2026-09-26|2026-09-26]] — 首次收錄，1.2k stars

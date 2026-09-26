@@ -1,63 +1,64 @@
 ---
-repo: driceroland/Search
-url: https://github.com/driceroland/Search
-owner: driceroland
-owner_type: User
-language: Swift
-license: MIT
-description: "A small, fast WebKit browser for macOS, by Office Commun."
+repo: Contrastive-LM/CLM
+url: https://github.com/Contrastive-LM/CLM
+owner: Contrastive-LM
+owner_type: Organization
+language: Python
+license: Apache-2.0
+description: ""
 homepage: ""
-stars: 1908
-stars_per_day: 382
-forks: 166
-open_issues: 174
-created: 2026-09-20
+stars: 1315
+stars_per_day: 658
+forks: 102
+open_issues: 7
+created: 2026-09-23
 pushed_at: 2026-09-24
-first_seen: 2026-09-25
+first_seen: 2026-09-26
 week: "2026-W39"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v1.0.3"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-25
+last_reviewed: 2026-09-26
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-09-29"
-contributor_count: 5
+contributor_count: 1
 engagement: "low"
-issue_close_rate: 27
-repo_size_kb: 1140
-readme_length: 9229
+issue_close_rate: 0
+repo_size_kb: 893
+readme_length: 10000
 bus_factor: 1
-last_release_days: 1
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-25"
-star_history: "2026-09-25:1285,2026-09-26:1908"
+ring_history: "assess@2026-09-26"
+star_history: "2026-09-26:1315"
 tags:
   - github
   - "category/other"
-  - "lang/swift"
+  - "lang/python"
+  - org
 aliases:
-  - "Search"
-  - "driceroland/Search"
+  - "CLM"
+  - "Contrastive-LM/CLM"
 ---
 
-# Search
+# CLM
 
-**1.3k** stars · **321** stars/天 · 建立 4 天前 · Swift · MIT
+**1.3k** stars · **658** stars/天 · 建立 2 天前 · Python · Apache-2.0
 
 ```dataviewjs
-const me = dv.page("Repos/driceroland--Search");
+const me = dv.page("Repos/Contrastive-LM--CLM");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +71,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v1.0.3`
+`ORG`
 
 > [!summary] 一句話摘要
-> A small, fast WebKit browser for macOS, by Office Commun.
+> No description
 
 ## 專案簡介
 
-A small, fast WebKit browser for macOS, by Office Commun.
+No description available.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/Contrastive-LM--CLM");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +119,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/Contrastive-LM--CLM");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,166 +143,241 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 132 |
-| Open Issues | 129 |
-| Issue 解決率 | 27% (47 closed) |
+| Forks | 102 |
+| Open Issues | 7 |
+| Issue 解決率 | 0% (0 closed) |
 | 最後推送 | 2026-09-24 |
-| 建立日期 | 2026-09-20 |
-| Repo 大小 | 1.1 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/driceroland/Search) |
+| 建立日期 | 2026-09-23 |
+| Repo 大小 | 893 KB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Contrastive-LM/CLM) |
+
+> [!info]- 主要依賴
+> `requirements.txt` 中的核心套件：
+> `-e .` `httpx`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Swift" : 96
->     "Python" : 3
+>     "Python" : 65
+>     "JavaScript" : 18
+>     "CSS" : 11
+>     "HTML" : 6
 >     "Shell" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@driceroland](https://github.com/driceroland) | 167 |
-> | [@merttopuz](https://github.com/merttopuz) | 8 |
-> | [@karadoganyi](https://github.com/karadoganyi) | 6 |
-> | [@Hyp4tia](https://github.com/Hyp4tia) | 5 |
-> | [@burakbuilds](https://github.com/burakbuilds) | 4 |
-
-**最新版本**：v1.0.3 — Search 1.0.3 (2026-09-24)
-
-> [!info]- Release Notes
-> Security, and the mouse wheel. Search 1.0.3 closes the holes found in this week's reviews — an extension could read files outside its own folder, and a page or an ad could open another app without asking — and copying a saved password now asks for Touch ID. A mouse wheel scrolls smoothly again on x.com and pages like it, Bitwarden signs in to a self-hosted server, and extension popups hear what changes while they are open. Also: History opens at once, music keeps playing when you switch spaces, a link from Mail brings Search to the front, a full-screen video no longer goes black, pop-ups need a click, and the tab bar folded away with ⌘S comes back on a ground of its own. Your extensions may each ask once more for their permissions at their next update.
-> 
-> ### Added
-> 
-> - Updates can wait for you: Settings › About › Install updates on its own, on as before. Switched off, Search still looks once a day and says when a newer version is out, and fetches, checks and installs it only when you press Install.
-> 
-> ### Fixed
-> 
-> ...（完整內容見 GitHub）
+> | [@jackyk02](https://github.com/jackyk02) | 8 |
 
 ## 開發動態
 
 > [!abstract] 最近 10 次 commit（2026-09-24 ~ 2026-09-24）
-> **活躍天數** 1 天 · **最新 commit** Roadmap: pop-ups named by their site are done
+> **活躍天數** 1 天 · **最新 commit** README: note how to raise the 2048-token limit
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#17](https://github.com/driceroland/Search/issues/17) | Apple Password support | 7 | 6 |
-> | [#183](https://github.com/driceroland/Search/issues/183) | Arc-style pinned tabs: full rows above the "New tab" button, | 4 | 0 |
-> | [#68](https://github.com/driceroland/Search/issues/68) | Tab folders in the sidebar | 4 | 0 |
-> | [#224](https://github.com/driceroland/Search/issues/224) | iCloud Sync? | 3 | 1 |
+> | [#3](https://github.com/Contrastive-LM/CLM/issues/3) | Unexpected scores | 2 | 5 |
+> | [#8](https://github.com/Contrastive-LM/CLM/issues/8) | State encoder's input format in Super Mario | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # Search
+> Contrastive Language Models
 > 
-> A small, fast, quiet web browser for the Mac, by [Office Commun](https://officecommun.com).
+> A System One Model for Fast and Generalizable Decision-Making
 > 
-> **[Download for macOS →](https://officecommun.com/search)** · macOS 14 or later · free · about 3 MB
+> | 📄 Blog | 🗣️ Discord | 🤗 Data &amp; Models | 📚 API Reference | 🛠️ Fine-Tuning Tutorial |
 > 
-> Or with [Homebrew](https://brew.sh): `brew install --cask driceroland/tap/search`
+> 🔥 **Contrastive Language Models (CLMs)** are a new class of **System One
+> model** trained with a **contrastive learning** objective that connects
+> **states and actions**. This repo serves **CLM-8B** behind a
+> TypeSafe-compatible API.
+> 
+> - **CLM-8B** is pre-trained on **60M Nemotron Q&A pairs**, mid-trained on
+>   **30M synthetic hard negatives**, and post-trained on **1M agentic
+>   trajectories**.
+> - It performs on par with **Jev** across computer-use, gaming and tool-calling
+>   tasks with up to **9× lower latency**. With lightweight fine-tuning it sets a
+>   new SOTA as a verifier on agentic coding benchmarks: **Terminal-Bench 2.1
+>   (87.6%)** and **DeepSWE (81.6%)**.
+> - **States and actions are disaggregated**, so their embeddings are cached and
+>   reused independently, which makes training and serving cheap and blazing fast!
+> 
+> We invite the community to plug it into their own agents and benchmarks!
 > 
 > ---
 > 
 > 
-> ## What it is
+> ## Installation
 > 
-> Search is a browser with nothing in the way. A row of tabs — across the top or down the left, your choice — and the page. There is no toolbar, no start page, no sidebar of suggestions, no account to sign into, nothing that wants your attention. You type an address or a few words in one field and you are on the page.
+> ```bash
+> pip install contrastive-lm
+> ```
 > 
-> It uses **WebKit**, the engine already inside every Mac (it is what Safari runs on). That is why the whole app is about 3 MB on disk and opens instantly: there is no second copy of Chromium to download, update and keep in memory.
+> To install the latest from a clone:
 > 
-> It was built by a design studio that spends its whole day in a browser and was tired of the ones that had become products. This one is a tool.
+> ```bash
+> pip install -e .
+> ```
 > 
-> 
-> ## What it does
-> 
-> - **One field.** Type an address and you go there; type words and you search. It finishes addresses from your own history and never sends what you type anywhere until you press Return.
-> - **Tabs that stay out of the way.** Pin the pages you keep open all day and they shrink to a letter or their icon. Tabs from your last session come back instantly and cost nothing until you click them. `⌘K` lists your open tabs by name.
-> - **Reading mode.** `⇧⌘R` strips a page down to the article.
-> - **Hide anything, for good.** `⇧⌘H`, then click a cookie banner, a newsletter overlay, a rail of "related" nonsense — it goes, and it is still gone on that site next time, before the page has drawn a single frame.
-> - **An ad blocker that runs before the page.** Third-party trackers and ad networks are stopped at the network level, so there is nothing to render and nothing to slow down. On by default, off per site if something breaks.
-> - **Video that follows you.** `⇧⌘P` lifts the video out of the page into a small window that stays above everything, including other apps.
-> - **Passwords, in your keychain.** Search offers to save a sign-in once it has actually worked, and offers your saved accounts under the field when you click it — the way Safari does, never filling anything on its own. Everything lives in the macOS keychain, encrypted by the system, readable only by Search. Bring yours in from Chrome, Arc, Dia, Brave or Edge in one click; nothing leaves the Mac.
-> - **Light, dark, or the Mac's own.** The frame and the pages follow.
-> - **Bookmarks, history, downloads** — each a panel, each searchable, each one keystroke away.
-> - **Chrome extensions, without Chrome.** Paste a Chrome Web Store link in Settings › Extensions, or open the extension's page in Search and press Add. It runs on WebKit's own extension engine — the one Safari uses — and where Chrome has APIs WebKit doesn't (bookmarks, history, downloads, side panel, offscreen documents, fonts, notifications, speech, OAuth sign-in), Search fills them in itself. They live behind the puzzle button; pin the ones you use often. Building your own? Load its folder as an unpacked extension and press Reload after each change, as in Chrome's developer mode. macOS 15.4 or later.
-> - **Updates itself, quietly.** Once a day it checks for a newer build, downloads it, verifies it is signed by Office Commun, and swaps it in for the next launch. Nothing restarts on its own.
+> ---
 > 
 > 
-> ## What it doesn't do
-> 
-> On purpose:
-> 
-> - No extension you have to install to feel at home. Blocking ads, hiding clutter, reading mode, picture-in-picture and passwords are built in; extensions are there for everything else.
-> - No sync, no account, no cloud. Your tabs, history and passwords are on your Mac and nowhere else.
-> - No telemetry, no analytics, no crash reports sent anywhere. The only things that leave your Mac are the pages you ask for, their icons, and one small request a day to see whether there is a newer version.
-> - One window. Tabs are the only kind of "new" there is.
+> ## Quickstart
 > 
 > 
-> ### Why the source is here
+> ### Ask typed questions about a state
 > 
-> So anyone can read exactly what a browser handling their passwords and history is doing, build it themselves, or fix something that bothers them. The code is small enough to actually read — about 12,700 lines of Swift, no dependencies beyond what Apple ships with macOS, one file per concern.
+> ```python
+> from clm import CLMClient, Choice, Noul, Score
+> 
+> client = CLMClient()                          # CLM_BASE_URL (default http://127.0.0.1:8700), CLM_API_KEY
+> r = client.system_one(
+>     state="Customer: my invoice was charged twice and nobody answers the phone!",
+>     questions={
+>         "urgency": Noul(instructions="Is this urgent?"),
+>         "department": Choice(instructions="Which team should handle this?",
+>                              criteria={"billing": "Charges, invoices, refunds",
+>                                        "technical": "Bugs and outages"}),
+>         "frustration": Score(instructions="How frustrated is the customer?",
+>                              criteria=["Calm", "Frustrated", "Very angry"]),
+>     },
+> )
+> print(r.answers["urgency"].noul)                # 0.41022     probability the statement is true
+> print(r.answers["department"].choice)           # billing
+> print(r.answers["department"].probabilities)    # {'billing': 0.93878, 'technical': 0.06122}
+> print(r.answers["frustration"].score)           # 1.98386     expected level, 0..2
+> print(r.usage.input_tokens, r.latency_ms)       # 38 58.1     (106 tokens on a cold cache: option texts are embedded once)
+> ```
+> 
+> Questions may be `Noul` / `Choice` / `Score` objects or plain wire-format
+> dicts, so a request written for TypeSafe replays as
+> `client.system_one(state, questions)`.
 > 
 > 
-> ## Privacy, concretely
+> ### About
 > 
-> | What | Where it is | Who can read it |
+> CLM first trains a **state encoder** and an **action encoder** on a
+> large-scale dataset with a contrastive objective (InfoNCE), so that each state
+> is pulled toward the ground-truth action that was taken and pushed away from
+> all others. The two encoders then serve directly as a zero-shot action
+> classifier: at deployment, given the current state and a set of candidate
+> actions, CLM scores each action by how well its embedding aligns with the
+> state embedding and selects the highest-scoring action.
+> 
+> That is what this package serves. A typed question is a state plus a closed
+> set of candidate actions (the options and their descriptions); a softmax over
+> CLM's scores *is* the answer distribution, and the same call ranks best-of-N
+> trajectories, routes tools, shortlists retrieval pools and answers typed
+> decisions with no per-task setup.
+> 
+> **Architecture, data recipe and scaling laws:**
+> 
+> - Each encoder is a frozen LLM backbone plus a 20M-parameter trainable
+>   projection head, so inference is one
+>   embedding per fresh text and a dot product per cached candidate.
+> - CLM is **pre-trained** on internet-scale Q&A, **mid-trained** on synthetic
+>   hard negatives, **post-trained** on agentic traces, and can be easily
+>   fine-tuned on downstream tasks ([data recipe](#data-recipe)).
+> - The InfoNCE loss **decreases predictably as a power law** in training
+>   compute, model size and dataset size ([details](#scaling-laws-for-verification)).
+> 
+> ```
+> browser ──► clm-serve  (CPU, :8700)   GET / (playground)
+> client  ──►                          POST /v1/systemone · GET /v1/models · GET /health
+>                │       state head + action head (20M params, hot-reloaded), embedding cache
+>                ▼
+>           vLLM Qwen3-8B pooling server (GPU, :8090)   /v1/embeddings
+> ```
+> 
+> 
+> # 2. CLM API on :8700 (downloads the 75 MB reference head on first run)
+> clm-serve
+> ```
+> 
+> States longer than 2048 tokens are truncated. For longer states, raise both limits
+> together, e.g. `--max-model-len 8192` on `vllm serve` and `clm-serve --max-tokens 8192`
+> (needs more GPU memory).
+> 
+> 
+> ## API Reference
+> 
+> 
+> ### `clm-serve` options
+> 
+> ```
+> clm-serve [--port 8700] [--emb-url http://127.0.0.1:8090/v1/embeddings] [--emb-model qwen3-8b]
+>           [--max-tokens 2048] [--ckpt PATH] [--ckpt-dir DIR] [--model NAME=PATH ...] [--device cpu|cuda]
+>           [--action-cache 0.02|512MiB|0] [--no-ui] [--cors]
+> ```
+> 
+> `--ckpt PATH` serves your own head as `clm-latest` (default: the reference
+> head in `~/.cache/clm/`, downloaded if missing); `--ckpt-dir DIR` serves every
+> `*.pt` there under its file stem; `--model NAME=PATH` adds one more.
+> The heads run on the GPU when torch sees one, else on the CPU; `--device` (or
+> `CLM_DEVICE`) forces one. Checkpoints hot-reload when the file changes. Set `CLM_API_KEY` to require
+> `Authorization: Bearer ` (the playground has a field for it). Environment
+> equivalents: `CLM_PORT`, `CLM_EMB_URL`, `CLM_EMB_MODEL`, `CLM_CKPT`,
+> `CLM_DEVICE`, `CLM_ACTION_CACHE`.
+> 
+> `--no-ui` drops the playground and serves the API alone. `--cors` allows browser
+> requests from any origin and is off by default, because an API key otherwise
+> travels in a header any page would then be free to send.
+> 
+> #### The vector cache
+> 
+> An agent asks about a changing state but a mostly fixed set of actions, and it
+> revisits states it has already seen. Neither their embeddings nor their
+> projections change while the head does not, so `clm-serve` reserves a slab of
+> device memory at start-up — the way vLLM claims its KV cache — and keeps them in
+> it:
+> 
+> ```
+> [clm] vector cache 505.0 MB reserved on cuda (215,764x512d + 3,852x4096d)
+> ```
+> 
+> `--action-cache` takes a fraction of the device (`0.02`, the default), an
+> absolute size (`512MiB`), or `0` to switch it off; `CLM_ACTION_CACHE` does the
+> same. It covers states and actions on every served head, and `clm-raw` in the
+> encoder's own space — the two widths are pools carved from the one allocation,
+> which never grows, so a long-running server cannot drift into an out-of-memory
+> kill. Entries are keyed by head and generation, so several heads share the arena
+> and a hot-reloaded head stops matching rows its previous weights produced;
+> eviction is least-recently-used. `GET /health` reports occupancy and hit rate.
+> 
+> A hit skips the encoder call, the host-to-device copy and the head's forward
+> pass. Measured on one RTX 4090, server-side p50, against a fixed action set:
+> 
+> | | 3 actions | 50 actions |
 > |---|---|---|
-> | Passwords | The macOS login keychain, as ordinary keychain items tagged `Search` | Search, signed by Office Commun. Any other app triggers the system's permission dialog. |
-> | History, bookmarks, open tabs, hidden elements | Small JSON files in `~/Library/Application Support/Search/` | You. |
-> | Cookies and site data | WebKit's own store for the app | The sites that set them, as in any browser. |
-> | Extensions | Unpacked in `~/Library/Application Support/Search/Extensions/`, their data in WebKit's extension store | Each extension, within the permissions you accepted when adding it. |
-> | Anything else | Nowhere. There is no server. | — |
+> | new state every call | 28.6 → 28.0 ms | 28.8 → 28.1 ms |
+> | revisited states (20 rooms) | 1.7 → 0.6 ms | 2.0 → 0.7 ms |
+> | one repeated state | 1.7 → 0.6 ms | 2.0 → 0.7 ms |
 > 
-> A **private tab** (`⇧⌘N`) has its own cookie jar and leaves nothing behind when it closes.
+> So a loop that revisits states answers about 2.8x faster, and a loop that never
+> repeats itself pays the encoder either way. A cached vector costs no encoder
+> tokens, so `usage.input_tokens` counts only what the encoder actually did.
+> ### Agentic benchmarks: CLM as a verifier
 > 
+>   
 > 
-> ## Keyboard
-> 
-> | | |
-> |---|---|
-> | `⌘L` address · `⌘K` switch tab · `⌘T` new tab · `⌘W` close · `⇧⌘T` reopen | `⌘[` `⌘]` back, forward · `⇧⌘[` `⇧⌘]` previous, next tab · `⌘1`–`⌘9` jump |
-> | `⇧⌘S` tabs across the top or down the left · `⌘S` fold the sidebar away · `⇧⌘B` bookmark this page | `⇧⌘R` reading mode · `⇧⌘P` float the video · `⇧⌘H` hide something · `⇧⌘U` what is hidden here |
-> | `⌘F` find · `⌘D` duplicate tab · `⇧⌘C` copy address · `⇧⌘V` paste and go | `⌘Y` history · `⇧⌘J` downloads · `⌘,` settings · `⌥⌘L` passwords |
-> 
-> `⌃Tab` and `⌃⇧Tab` walk along the row of tabs; `Tab` stays the page's, for moving through a form. `esc` puts away whatever is open.
-> 
-> ---
-> 
-> 
-> ## For developers
-> 
-> 
-> ### Building it
-> 
-> - macOS 14 or later, Xcode 16 / Swift 6 toolchain
-> - `swift build` — runs the app straight from the SwiftPM binary
-> - `./build.sh` — assembles a real, double-clickable `Search.app` in `build/`, ad-hoc signed so it runs on your own Mac
-> 
-> A build you make yourself won't be notarized or carry Office Commun's Developer ID, so the first launch needs a right-click → Open (or an allow in System Settings → Privacy & Security). That's expected — it's the same thing that happens with any app that isn't from the App Store or a notarized DMG. Your own build also keeps its passwords apart from a signed Search's: the keychain tells the two apart by their signatures.
-> 
-> `./build.sh release dmg` also makes `Search.dmg` / `Search.zip`. `./build.sh release ship` additionally notarizes and staples — that step needs a Developer ID certificate and Apple credentials, so it only really does anything for Office Commun's own releases.
-> 
-> 
-> ### How it's put together
-> 
-> - **SwiftUI** for everything drawn, **AppKit** for the handful of things SwiftUI doesn't reach on macOS (the window's title bar, dragging the window by an empty part of the tab row), **WKWebView** for pages.
-> - One `Tab` per page. Its web view is built lazily — a tab restored from last session doesn't cost a process until you switch to it. That's most of why launching with twenty tabs is still instant. Each page runs in WebKit's own content process, as in Safari; a tab you close is really gone.
-> - The ad blocker is a `WKContentRuleList` compiled once at launch and enforced inside WebKit's networking, before a request is made — zero cost at run time, unlike a JavaScript blocker.
-> - Hidden elements are a per-site list of selectors injected as a stylesheet at document start, so nothing is ever seen appearing and vanishing.
-> - Every colour is a light/dark pair in `Design.swift`, resolved by the window's appearance; nothing else in the code knows which mode it is in.
-> - Extensions run on `WKWebExtension` (macOS 15.4+). `Crx.swift` fetches an extension from the Chrome Web Store's public update address and checks the CRX3 signature against the extension's id before anythin
+> For each task we sample several candidate solutions (**Opus 5** for DeepSWE,
+> **Fable 5** for Terminal-Bench 2.1), and CLM or Jev acts as the verifier that
+> picks the best one. Evaluated on **38 held-out DeepSWE tasks** and **30
+> held-out Terminal-Bench 2.1 tasks**; latency on an H100. Jev fails to serve as
+> a verifier for these long-horizon tasks, scoring below pass@1. With lightweight
+> fine-tuning, CLM reaches SOTA on both (**81.6%** and **87.6%**) while running
+> **4.1–5.7× faster than Jev
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/driceroland/Search)
+[GitHub](https://github.com/Contrastive-LM/CLM)
 
 ## 相關收錄
 
@@ -309,7 +385,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "driceroland--Search"
+> WHERE category = "Other" AND file.name != "Contrastive-LM--CLM"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -318,7 +394,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Swift" AND file.name != "driceroland--Search" AND status != "archived"
+> WHERE language = "Python" AND file.name != "Contrastive-LM--CLM" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -327,18 +403,18 @@ A small, fast WebKit browser for macOS, by Office Commun.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W39" AND file.name != "driceroland--Search"
+> WHERE week = "2026-W39" AND file.name != "Contrastive-LM--CLM"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/Contrastive-LM--CLM");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "driceroland--Search" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Contrastive-LM--CLM" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -354,7 +430,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "driceroland" AND file.name != "driceroland--Search"
+> WHERE owner = "Contrastive-LM" AND file.name != "Contrastive-LM--CLM"
 > SORT stars DESC
 > ```
 
@@ -362,7 +438,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/Contrastive-LM--CLM");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -379,7 +455,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/Contrastive-LM--CLM");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -412,7 +488,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/Contrastive-LM--CLM");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -436,7 +512,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/Contrastive-LM--CLM");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -473,7 +549,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/driceroland--Search");
+> const me = dv.page("Repos/Contrastive-LM--CLM");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -556,7 +632,7 @@ A small, fast WebKit browser for macOS, by Office Commun.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-25** — 首次收錄
+> **2026-09-26** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -572,5 +648,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-26|2026-09-26]] — 再次上榜，1.9k stars
-- [[2026-09-25|2026-09-25]] — 首次收錄，1.3k stars
+- [[2026-09-26|2026-09-26]] — 首次收錄，1.3k stars
