@@ -7,10 +7,10 @@ language: Swift
 license: MIT
 description: "A small, fast WebKit browser for macOS, by Office Commun."
 homepage: ""
-stars: 1908
-stars_per_day: 382
-forks: 166
-open_issues: 174
+stars: 2130
+stars_per_day: 355
+forks: 185
+open_issues: 193
 created: 2026-09-20
 pushed_at: 2026-09-24
 first_seen: 2026-09-25
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-09-29"
+appearances: 3
+next_review: "2026-09-30"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 27
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-25"
-star_history: "2026-09-25:1285,2026-09-26:1908"
+star_history: "2026-09-25:1285,2026-09-26:1908,2026-09-27:2130"
 tags:
   - github
   - "category/other"
@@ -572,5 +572,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-27|2026-09-27]] — 再次上榜，2.1k stars
 - [[2026-09-26|2026-09-26]] — 再次上榜，1.9k stars
 - [[2026-09-25|2026-09-25]] — 首次收錄，1.3k stars

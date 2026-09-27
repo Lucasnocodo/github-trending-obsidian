@@ -1,64 +1,68 @@
 ---
-repo: zai-org/ZCode
-url: https://github.com/zai-org/ZCode
-owner: zai-org
-owner_type: Organization
+repo: mikehasa/golive-skill
+url: https://github.com/mikehasa/golive-skill
+owner: mikehasa
+owner_type: User
 language: TypeScript
-license: Apache-2.0
-description: "Z.ai's coding agent harness. Powerful, intelligent, extensible."
-homepage: "https://zcode.z.ai/"
-stars: 6848
-stars_per_day: 1141
-forks: 2068
-open_issues: 11
-created: 2026-09-20
-pushed_at: 2026-09-24
-first_seen: 2026-09-21
-week: "2026-W39"
+license: MIT
+description: "Take your agent-built product live: hosting, database, domain, email, payments — on your own accounts. Open-source Agent Skill + zero-dependency Node CLI: detect → plan → approve → apply → verify. No GoLive account, backend or telemetry."
+homepage: "https://trytofu.ai"
+stars: 985
+stars_per_day: 328
+forks: 68
+open_issues: 1
+created: 2026-09-23
+pushed_at: 2026-09-27
+first_seen: 2026-09-27
+week: "2026-W40"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.1.0-alpha.5"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-21
+last_reviewed: 2026-09-27
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 7
+appearances: 1
 next_review: "2026-09-30"
-contributor_count: 2
-engagement: "high"
-issue_close_rate: 0
-repo_size_kb: 38620
-readme_length: 7450
+contributor_count: 1
+engagement: "low"
+issue_close_rate: 91
+repo_size_kb: 2055
+readme_length: 9791
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 0
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-21"
-star_history: "2026-09-21:3530,2026-09-22:5905,2026-09-23:6376,2026-09-24:6593,2026-09-25:6726,2026-09-26:6790,2026-09-27:6848"
+ring_history: "assess@2026-09-27"
+star_history: "2026-09-27:985"
 tags:
   - github
   - "category/other"
   - "lang/typescript"
-  - org
+  - "topic/agent_skill"
+  - "topic/agent_skills"
+  - "topic/ai_agents"
+  - "topic/claude_code"
+  - "topic/cloudflare"
 aliases:
-  - "ZCode"
-  - "zai-org/ZCode"
+  - "golive-skill"
+  - "mikehasa/golive-skill"
 ---
 
-# ZCode
+# golive-skill
 
-**3.5k** stars · **3.5k** stars/天 · 建立 1 天前 · TypeScript · Apache-2.0
+**985** stars · **328** stars/天 · 建立 3 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/zai-org--ZCode");
+const me = dv.page("Repos/mikehasa--golive-skill");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`個人專案` `v0.1.0-alpha.5`
+
+`agent-skill` `agent-skills` `ai-agents` `claude-code` `cloudflare` `codex` `database` `deployment` `developer-tools` `devops` `dns` `godaddy` `hosting` `infrastructure` `neon` `netlify` `porkbun` `skills` `supabase` `vercel`
 
 > [!summary] 一句話摘要
-> Z.ai's coding agent harness. Powerful, intelligent, extensible.
+> Take your agent-built product live: hosting, database, domain, email, payments — on your own accounts. Open-source Agent Skill + zero-dependency Node CLI: detect → plan → approve → apply → verify. No GoLive account, backend or telemetry.
 
 ## 專案簡介
 
-Z.ai's coding agent harness. Powerful, intelligent, extensible.
+Take your agent-built product live: hosting, database, domain, email, payments — on your own accounts. Open-source Agent Skill + zero-dependency Node CLI: detect → plan → approve → apply → verify. No GoLive account, backend or telemetry.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/mikehasa--golive-skill");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +125,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/mikehasa--golive-skill");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,261 +149,205 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 915 |
-| Open Issues | 11 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-21 |
-| 建立日期 | 2026-09-20 |
-| 官方網站 | [Link](https://zcode.z.ai/) |
-| Repo 大小 | 37.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/zai-org/ZCode) |
+| Forks | 68 |
+| Open Issues | 1 |
+| Issue 解決率 | 91% (10 closed) |
+| 最後推送 | 2026-09-27 |
+| 建立日期 | 2026-09-23 |
+| 官方網站 | [Link](https://trytofu.ai) |
+| Repo 大小 | 2.0 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/mikehasa/golive-skill) |
+| Topics | `agent-skill` `agent-skills` `ai-agents` `claude-code` `cloudflare` `codex` `database` `deployment` |
+
+> [!info]- 主要依賴
+> `package.json` 中的核心套件：
+> `@types/node` `esbuild` `typescript` `vitest` `yaml`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 98
->     "JavaScript" : 2
+>     "TypeScript" : 68
+>     "JavaScript" : 32
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@MBearo](https://github.com/MBearo) | 1 |
-> | [@zRzRzRzRzRzRzR](https://github.com/zRzRzRzRzRzRzR) | 1 |
+> | [@mikehasa](https://github.com/mikehasa) | 63 |
+
+**最新版本**：v0.1.0-alpha.5 (2026-09-27)
+
+> [!info]- Release Notes
+> GoLive `0.1.0-alpha.5` — an alpha release of the skill and the bundled zero-dependency runtime.
+> 
+> ## What changed since 0.1.0-alpha.4
+> 
+> - **The offline smoke check now denies what it claimed to.** Before switching an updated copy, the installer runs the new bundle's `help` and `menu --json` under a guard that blocks network and subprocess entry points. The guard only replaced module functions, so `new net.Socket().connect()`, `node:dgram`, `node:dns`, `node:http2`, `node:worker_threads` and `node:cluster` were still reachable — reproduced, then closed. A regression matrix covers each path and fails on the old guard. `references/updates.md` now says plainly that the guard is a sanity check for a broken or careless release, **not a sandbox**.
+> - **Untrusted content is data, never instructions.** A new hard rule tells the agent that repository files and their comments, dependency and lockfile text, provider API responses, dashboard copy, and golive's own generated report, state and handover files describe the world — and that only the digest-verified bundle is an instruction channel.
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-20 ~ 2026-09-20）
-> **活躍天數** 1 天 · **最新 commit** feat: open source
+> [!abstract] 最近 10 次 commit（2026-09-25 ~ 2026-09-27）
+> **活躍天數** 3 天 · **最新 commit** Point the translation markers at the 0.1.0-alpha.5 release commit
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#63](https://github.com/mikehasa/golive-skill/issues/63) | HOL Guard rule for `golive teardown`? | 0 | 1 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # ZCode
+> # GoLive
 > 
->   
+> [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md) · [Deutsch](README.de.md)
 > 
->   飞书社群 ·
->   Discord
+> **Take your agent-built product live: hosting, database, auth, domain, email, payments — on your own accounts. Then hand it over, or tear it all down.**
 > 
->   简体中文 | English
+> Your coding agent can build an app in minutes. Getting it to real users still means accounts,
+> hosting, databases, domains, secrets and connected services. GoLive is the open-source Agent Skill
+> for that work: it **detects what your app needs, plans the exact changes, asks for your approval,
+> applies them with your own logins, and verifies what actually works** — then records what it
+> created, re-checks it for drift on demand, and can remove it again.
 > 
-> ZCode 是 AI 编程工作台，提供桌面应用、浏览器界面和终端 Agent。本仓库包含客户端、后端服务、共享 UI，以及 Agent CLI 与运行时源码。
+> Automate the parts providers expose. Guide you through the parts that need a human. Verify what
+> can be observed, and make unfinished work clear. No GoLive account, hosted backend or product telemetry.
 > 
-> | 入口                 | 用途                                                           | 开发命令                       |
-> | -------------------- | -------------------------------------------------------------- | ------------------------------ |
-> | Desktop              | Electron 桌面应用                                              | `pnpm dev:desktop`             |
-> | Web / ZCode 命令行版 | 终端与浏览器工作台；将 TUI、Web、后端和 Agent 组装为独立运行包 | `pnpm dev:web`                 |
-> | Agent CLI            | 在终端中使用 `zcode`，也为 Desktop 和 Web 提供 Agent 运行时    | `pnpm --filter @zcode/cli dev` |
+> > **Early alpha · 0.1.0-alpha.5**
+> > Disposable live tests now cover six journeys: **hosting** (Vercel, Netlify), **database**
+> > (Supabase, Neon), **custom-domain DNS** (Porkbun, GoDaddy), **transactional email** (Resend),
+> > **test-mode payments** (Stripe) and **Supabase authentication**, plus the `teardown` uninstall
+> > path. The ownership document and the on-demand `golive status` drift check are implemented
+> > with test coverage (`golive status` also ran read-only in a live validation), while the broader
+> > [roadmap](#the-full-go-live-checklist-and-roadmap) is our direction, not a claim that it is all built.
 > 
-> ## 初始化
 > 
-> 准备 Git、Node.js **24.14.0** 和 pnpm **10.33.2**，版本以 [mise.toml](mise.toml) 为准。以下开发和打包命令均在仓库根目录执行。
+> ## Install
 > 
-> ```bash
-> pnpm bootstrap
-> ```
+> You need **Node.js 20+**, npm/npx, Git, and a coding agent that can load skills and run commands.
+> Installation has been checked for Codex and Claude Code; other clients are unverified.
 > 
-> `pnpm bootstrap` 安装 workspace 依赖、准备桌面本地运行资源，再执行 `build:bootstrap`。
-> 
-> Agent CLI 与运行时源码位于 [apps/zcode-cli/](apps/zcode-cli/)，作为普通目录随本仓库一起克隆，无需单独拉取或初始化 Git submodule。
-> 
-> 根据需要选择其他初始化或构建入口：
-> 
-> | 命令                           | 用途                                                              |
-> | ------------------------------ | ----------------------------------------------------------------- |
-> | `pnpm install`                 | 安装依赖                                                          |
-> | `pnpm prepare:desktop-runtime` | 准备桌面运行资源，默认包含远程资源准备                            |
-> | `pnpm prepare:remote-assets`   | 单独准备远程运行资源                                              |
-> | `pnpm bootstrap:with-remote`   | 初始化依赖、本地与远程资源，并串行构建相关包；跳过桌面应用 bundle |
-> | `pnpm build`                   | 递归执行各 workspace 包的构建脚本，包括包内的资源准备步骤         |
-> 
-> 默认 `bootstrap` 跳过远程资源准备，适合本地桌面开发。使用远程工作区或验证远程发行资源时，再运行对应准备命令。
-> 
-> ## 开发与运行
-> 
-> ### 桌面版
+> **Install once for all your projects.** Run this from any directory:
 > 
 > ```bash
-> pnpm dev:desktop
-> 
-> # 使用测试环境
-> pnpm dev:desktop:test
+> npx skills add https://github.com/mikehasa/golive-skill --skill golive --global
 > ```
 > 
-> `pnpm dev:desktop` 默认等同于 `pnpm dev:desktop:prod`，使用生产服务配置。启动脚本会准备本地运行资源、构建桌面 Agent，再启动 Electron 和源码监听。
+> Select your agent when prompted: use the arrow keys to move, Space to select, and Enter to
+> confirm. That screen is waiting for input; installation continues after you confirm.
 > 
-> 需要独立开发数据目录时，可设置 `ZCODE_DATA_BASE_DIR`。例如在 macOS / Linux 中：
+> To skip the agent picker, use the command for your agent:
 > 
 > ```bash
-> ZCODE_DATA_BASE_DIR="$HOME/.zcode-dev-home" pnpm dev:desktop:test
-> ```
 > 
-> ### 远程功能（SSH/WSL）
+> ### Install from npm
 > 
-> 先执行 `pnpm bootstrap:with-remote` 准备远程资源（mock-cdn），再 `pnpm dev:desktop`；连接远程项目时资源选择「本地下载后上传」。开发态资源取自本地 `packages/desktop/mock-cdn` 和本地构建产物，经 SFTP 上传到远程，不访问 CDN。
-> 
-> ### Web 开发
-> 
-> 修改 Web 或后端源码时，使用开发模式：
+> The same skill is published to npm as `golive@0.1.0-alpha.5` (dist-tags `alpha` and `latest`), which
+> installs it offline, with no Git or Skills CLI involved:
 > 
 > ```bash
-> pnpm dev:web
 > 
-> # 指定后端工作区（macOS / Linux）
-> ZCODE_SERVER_WORKSPACE=/path/to/project pnpm dev:web
+> ## Before you hand over production access
+> 
+> Whether to give an agent your provider accounts comes down to four questions. These are this
+> project's answers, with the limits stated where they exist.
+> 
+> - **You still approve every write.** Nothing reaches a real account without a plan you have seen and
+>   approved: `apply` refuses without that plan's id and `--yes`, and it re-checks the plan's identity
+>   before writing, so a changed release or config invalidates the old approval. DNS writes need
+>   `--confirm-dns`, deletions need `--confirm-destroy`, and live-mode steps — live payments, production
+>   data, a real account — need `--confirm-live`, which now includes a project's **first production
+>   deploy**, because approving a plan alone used to be enough to write production for the first time.
+>   Credential values are read only in-process, never printed, and never in arguments, plans, state or
+>   reports; the file golive stores them in is plaintext at mode 0600 outside your repo, not a keychain.
+>   One limit worth naming: those flags are arguments the agent passes on your behalf, and an agent
+>   already logged in to your provider can write there with no golive plan at all.
+>   [Trust, access and control](docs/TRUST.md) separates what the code enforces from what is only an
+>   instruction the agent is asked to follow.
+> - **A run stops rather than pushing on.** `apply` stops at the first failed check, missing
+>   confirmation, missing prerequisite or provider that contradicts the plan. Later steps do not run,
+>   and the next `apply` resumes at that step. [Recovery](docs/RECOVERY.md#the-run-stopped) covers
+>   reading the failure, which steps resume, and the cases that need a reviewed decision first.
+> - **Rollback is narrow, opt-in and never automatic.** A failed check never triggers a rollback.
+>   `release.rollback: true` plans one step that re-points production at an earlier deployment golive
+>   itself recorded; a deployment built by a dashboard, a Git push or a pull request is not a target,
+>   and it touches no data, DNS, payment or email resource. Only Netlify supports these re-points
+>   today — on Vercel you correct production in the dashboard (Vercel's adapter has no read of what
+>   production serves). Promotion and rollback are implemented and mock-covered, **not live-validated**.
+> - **Nothing is left behind silently — which is not the same as nothing being left behind.**
+>   `golive teardown` removes only resources it can prove it created, re-reads the DNS zone and the
+>   host project after deleting, and names every leftover it cannot remove — Supabase and Neon
+>   projects, the Resend sending domain, a zone or host project it cannot read — as a handoff saying
+>   what remains and how to remove it by hand. A removal also forgets the baseline golive recorded for
+>   that resource, so `golive status` does not report golive's own teardown as drift.
+> 
+> Those answers in full: [trust, access and control](docs/TRUST.md) and
+> [recovery](docs/RECOVERY.md). The [architecture](docs/ARCHITECTURE.md) is the product contract,
+> [provider scope](docs/PROVIDERS.md) says what each provider can do today, the
+> [validation record](docs/VALIDATION.md) separates what has been exercised live from what is only
+> mock-covered, and [distribution](docs/DISTRIBUTION.md) covers installation and updates.
+> 
+> [Install](#install) · [Use GoLive](#use-golive) · [See the workflow](#what-a-run-looks-like) · [Alpha scope](#what-this-alpha-supports) · [Roadmap](#the-full-go-live-checklist-and-roadmap) · [Contribute](CONTRIBUTING.md)
+> 
+> 
+> # Codex
+> npx skills add https://github.com/mikehasa/golive-skill --skill golive --global --agent codex --yes
+> 
+> 
+> # Claude Code
+> npx skills add https://github.com/mikehasa/golive-skill --skill golive --global --agent claude-code --yes
 > ```
 > 
-> 该命令同时启动 Web 开发服务器（默认 `http://localhost:5173`）和后端（默认 `http://localhost:3030`）；浏览器访问前者。`/ws` 和一般 `/api` 请求代理到本地后端，`/api/v1/oauth/token` 单独代理到当前配置的产品服务。
+> For installation in just one project, run from that project's repository and omit `--global`.
 > 
-> Agent 源码修改后，执行 `pnpm --filter @zcode/cli... build` 并重启服务。需要验证完整发行包时，按下方“ZCode 命令行版”打包章节解压运行。
+> **Or paste this into your coding agent:**
 > 
-> ### ZCode 命令行版
+> ```text
+> Install the GoLive skill globally so I can use it across projects:
+> npx skills add https://github.com/mikehasa/golive-skill --skill golive --global
 > 
-> 命令行发行包包含 TUI、Web 和 Agent，统一使用 `zcode` 启动：无参数进入 TUI；第一个参数为 `--web` 时启动 Web；其他参数交给现有 Agent CLI 处理。两种模式都在本机运行，无需 Electron。
+> Target the agent I'm using: add --agent codex --yes for Codex, or
+> --agent claude-code --yes for Claude Code. Keep --global.
+> If the agent isn't clear, ask me which one.
 > 
-> ```bash
-> # 默认进入终端交互界面
-> zcode
-> 
-> # 启动 Web 界面
-> zcode --web
-> 
-> # 指定项目和端口，不自动打开浏览器
-> zcode --web --workspace /path/to/project --port 3030 --no-open
-> 
-> # 查看 CLI 或 Web 参数
-> zcode --help
-> zcode --web --help
+> Verify the installation with:
+> node /scripts/golive.mjs version --json
+> Tell me if I need to reload skills or start a new session.
+> Stop after installation; don't connect accounts or deploy yet.
 > ```
 > 
-> Web 模式默认工作目录为当前目录，监听 `127.0.0.1`，默认不启用访问令牌，自动选择空闲端口并打开浏览器。访问终端输出的地址，按 `Ctrl+C` 停止服务。局域网访问可使用 `--host 0.0.0.0`；监听非本机地址时默认生成访问令牌，使用终端输出的带令牌链接。可通过 `--token` 指定令牌或 `--no-token` 关闭令牌认证。
+> The install includes the instructions, provider references and prebuilt runtime. It does not
+> connect accounts or deploy anything. See [installation and updates](docs/DISTRIBUTION.md) for
+> noninteractive agent flags, runtime verification and the optional own installer.
 > 
-> 直接启动通用 Web 服务的 HTTP 入口时，通过 `ZCODE_SERVER_AUTH_TOKEN` 配置 API／WebSocket 认证；通过程序接口创建服务时，使用 `authToken` 选项。
 > 
-> 构建方式见下方打包章节。`pnpm build:zcode` 只生成发行包，不会替换 `PATH` 中已有的 `zcode`。如果命令仍指向旧安装或其他源码目录，macOS / Linux 可用 `command -v zcode` 检查，Windows 可用 `where.exe zcode` 检查。
+> # Codex
+> npx golive@alpha install --agent codex
 > 
-> ### CLI 源码开发
 > 
-> 直接开发 TUI 或 Agent 时，运行源码入口：
-> 
-> ```bash
-> pnpm --filter @zcode/cli dev --help
-> pnpm --filter @zcode/cli dev
-> 
-> # 构建 CLI 及其 workspace 依赖
-> pnpm --filter @zcode/cli... build
-> node apps/zcode-cli/packages/cli/dist/zcode.cjs --help
+> # Claude Code
+> npx golive@alpha install --agent claude
 > ```
 > 
-> 这个入口直接运行 Agent CLI，不经过发行包的 `--web` 分流。开发 Web 用 `pnpm dev:web`；验证统一的 `zcode` 命令，用下方解压后的 `bin/zcode.mjs`。
+> Add `--global` to install into your home directory (`~/.agents/skills/golive` or
+> `~/.claude/skills/golive`) instead of the current project; `--agent claude-code`, the spelling the
+> Skills CLI channel uses, is accepted as well. The installer copies the complete skill the package
+> ships with, refuses an existing destination, and never connects provider accounts.
 > 
-> ## 配置
-> 
-> 根目录 [.env.example](.env.example) 提供服务地址与构建配置示例，可按需复制到 `.env`，本地覆盖放入 `.env.local`。Desktop 的开发环境通过 `dev:desktop:test` / `dev:desktop:prod` 选择。
-> 
-> | 配置                                 | 用途                                             |
-> | ------------------------------------ | ------------------------------------------------ |
-> | `ZCODE_DATA_BASE_DIR`                | 应用数据基目录，数据写入其下的 `.zcode/`         |
-> | `ZCODE_SERVER_WORKSPACE`             | Web 后端的工作区路径                             |
-> | `ZCODE_BUILTIN_PROVIDER_CONFIG_FILE` | 本地 Provider 配置文件路径；未设置时使用内置配置 |
-> | `ZCODE_DIST_BASE_URL`                | 命令行安装脚本使用的下载根地址                   |
-> 
-> 运行时变量可在启动命令的环境中显式设置。随客户端发布的默认配置见 [config/README.md](config/README.md)。
-> 
-> ## 打包
-> 
-> 第三方声明生成、发行校验流程及声明在发行物中的位置见 [third-party/README.md](third-party/README.md)。
-> 
-> ### 桌面版
-> 
-> ```bash
-> pnpm bundle:desktop
-> 
-> # 指定目标平台与 CPU 架构
-> pnpm bundle:desktop -- --os win --arch x64
-> 
-> pnpm bundle:desktop -- --help
-> ```
-> 
-> 默认目标为 macOS arm64，默认输出目录为 `packages/desktop/dist/`。`--os` 支持 `mac`、`win`、`linux`，`--arch` 支持 `x64`、`arm64`；实际打包与签名需要目标平台对应的工具和配置。
-> 
-> 安装：双击打开产物 DMG，将 ZCode 拖入"应用程序"。本地构建未签名，首次打开若被 macOS 拦截，执行：
-> 
-> ```bash
-> sudo xattr -rd com.apple.quarantine /Applications/ZCode.app
-> ```
-> 
-> ### ZCode 命令行版
-> 
-> 构建入口为 `pnpm build:zcode`。脚本会依次构建 CLI/TUI、后端和 Web，收集 TUI 的原生库、worker 与运行时依赖，再组装发行包；运行发行包仍需要 Node.js，版本以 `mise.toml` 为准。
-> 
-> 打包前必须设置下载根地址 `ZCODE_DIST_BASE_URL`（可放在 `.env`、`.env.local` 或环境变量中），也可以通过 `--base-url` 传入。以下地址是占位示例，发布时替换为实际托管地址：
-> 
-> ```bash
-> pnpm build:zcode --base-url https://downloads.example.com/zcode/
-> 
-> # 已配置 ZCODE_DIST_BASE_URL 时
-> pnpm build:zcode
-> 
-> # 仅重新组包，复用已有的 Agent、后端和 Web 构建产物
-> pnpm build:zcode --skip-build
-> 
-> # 查看版本、输出目录等可选参数
-> pnpm build:zcode --help
-> ```
-> 
-> 默认版本取根目录 `package.json`，输出目录为 `dist/zcode/`：
-> 
-> - `releases//zcode-.tar.gz`：运行包。
-> - `releases//sha256.txt`：校验摘要。
-> - `latest.json`、`install.sh`：版本索引和安装脚本。
-> 
-> 完整目录可上传到配置的下载根地址。安装脚本从该地址下载运行包，默认安装到 `~/.zcode/runtime`，并在 `~/.local/bin` 创建 `zcode` 命令。安装目录可通过 `ZCODE_DIST_HOME` 修改，命令目录可通过 `ZCODE_DIST_BIN_DIR` 修改。
-> 
-> 旧 Lite 用户需要改用上述构建命令、环境变量和新的安装脚本。新安装不会删除旧 Lite 目录，也不会迁移或删除已有会话数据。
-> 
-> 本地调试打包产物时，可直接解压运行，无需上传或安装：
-> 
-> ```bash
-> zcode_version=$(node -p "require('./dist/zcode/latest.json').version")
-> mkdir -p dist/zcode/debug
-> tar -xzf "dist/zcode/releases/$zcode_version/zcode-$zcode_version.tar.gz" \
->   -C dist/zcode/debug
-> # 默认启动 TUI
-> node dist/zcode/debug/zcode/bin/zcode.mjs
-> 
-> # 启动 Web
-> node dist/zcode/debug/zcode/bin/zcode.mjs --web \
->   --workspace "$PWD" --port 3030 --no-open
-> ```
-> 
-> 浏览器打开 `http://127.0.0.1:3030`，即可验证同一后端服务托管 Web 页面和 Agent 的完整链路。该端口需要空闲；如正在运行 `pnpm dev:web`，可改用其他 `--port`。
-> 
-> ## 仓库结构
-> 
-> | 目录                                                 | 职责                                       |
-> | ---------------------------------------------------- | ------------------------------------------ |
-> | `packages/desktop`                                   | Electron Main、Host、Renderer 与桌面打包   |
-> | `packages/web`                                       | Web 客户端                                 |
-> | `packages/server`                                    | HTTP / WebSocket 服务与远程连接            |
-> | `packages/zcode-server-cli`                          | 独立 Server 启动与进程管理                 |
-> | `packages/ui`                                        | 共享 React 组件、hooks 与 Zustand 状态     |
-> | `packages/services`                                  | 业务服务与持久化                           |
-> | `packages/shared`、`packages/rpc`、`packages/client` | 共享协议和类型、RPC 框架、Agent 客户端 SDK |
-> | `packages/provider`、`packages/provider-node`        | Provider 公共能力与 Node 实现              |
-> | `apps/zcode-cli`                                     | Agent CLI、TUI、运行时与工具               |
-> | `scripts`、`config`、`third-party`                   | 构建维护脚本、内置配置与第三方声明材料     |
-> 
-> ## 项目声明
-> 
-> 功能与优惠范围、维护规则、执行与数据风险，以及许可和第三方版权说明，详见 [NOTICE.md](NOTICE.md)。
+> **Both channels carry the same release.** The npm package publishes the version in this repository,
+> including the standalone installer helpers, so an npm installation is an owned copy that updates in
+> place. The earlier `0.1.0-alpha.0` snapshot has no updater: remove that copy and reinstall, or use
+> the GitHub channel, which manages its own installs.
+> The npm package also exposes the terminal CLI: the golive commands `npx golive@a
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/zai-org/ZCode) · [官方網站](https://zcode.z.ai/)
+[GitHub](https://github.com/mikehasa/golive-skill) · [官方網站](https://trytofu.ai)
 
 ## 相關收錄
 
@@ -405,7 +355,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "zai-org--ZCode"
+> WHERE category = "Other" AND file.name != "mikehasa--golive-skill"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -414,7 +364,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "zai-org--ZCode" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "mikehasa--golive-skill" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -423,18 +373,18 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W39" AND file.name != "zai-org--ZCode"
+> WHERE week = "2026-W40" AND file.name != "mikehasa--golive-skill"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/mikehasa--golive-skill");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "zai-org--ZCode" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "mikehasa--golive-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -450,7 +400,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "zai-org" AND file.name != "zai-org--ZCode"
+> WHERE owner = "mikehasa" AND file.name != "mikehasa--golive-skill"
 > SORT stars DESC
 > ```
 
@@ -458,7 +408,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/mikehasa--golive-skill");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -475,7 +425,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/mikehasa--golive-skill");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -508,7 +458,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/mikehasa--golive-skill");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -532,7 +482,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/mikehasa--golive-skill");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -569,7 +519,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/mikehasa--golive-skill");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -652,7 +602,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-21** — 首次收錄
+> **2026-09-27** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -668,10 +618,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-27|2026-09-27]] — 再次上榜，6.8k stars
-- [[2026-09-26|2026-09-26]] — 再次上榜，6.8k stars
-- [[2026-09-25|2026-09-25]] — 再次上榜，6.7k stars
-- [[2026-09-24|2026-09-24]] — 再次上榜，6.6k stars
-- [[2026-09-23|2026-09-23]] — 再次上榜，6.4k stars
-- [[2026-09-22|2026-09-22]] — 再次上榜，5.9k stars
-- [[2026-09-21|2026-09-21]] — 首次收錄，3.5k stars
+- [[2026-09-27|2026-09-27]] — 首次收錄，985 stars

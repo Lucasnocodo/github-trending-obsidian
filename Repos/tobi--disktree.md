@@ -1,64 +1,63 @@
 ---
-repo: zai-org/ZCode
-url: https://github.com/zai-org/ZCode
-owner: zai-org
-owner_type: Organization
-language: TypeScript
-license: Apache-2.0
-description: "Z.ai's coding agent harness. Powerful, intelligent, extensible."
-homepage: "https://zcode.z.ai/"
-stars: 6848
-stars_per_day: 1141
-forks: 2068
-open_issues: 11
-created: 2026-09-20
-pushed_at: 2026-09-24
-first_seen: 2026-09-21
-week: "2026-W39"
+repo: tobi/disktree
+url: https://github.com/tobi/disktree
+owner: tobi
+owner_type: User
+language: Rust
+license: MIT
+description: "A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPUI."
+homepage: ""
+stars: 1351
+stars_per_day: 676
+forks: 89
+open_issues: 6
+created: 2026-09-24
+pushed_at: 2026-09-27
+first_seen: 2026-09-27
+week: "2026-W40"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.10.1"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-21
+last_reviewed: 2026-09-27
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 7
+appearances: 1
 next_review: "2026-09-30"
-contributor_count: 2
-engagement: "high"
-issue_close_rate: 0
-repo_size_kb: 38620
-readme_length: 7450
+contributor_count: 5
+engagement: "low"
+issue_close_rate: 50
+repo_size_kb: 1982
+readme_length: 10000
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 2
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-21"
-star_history: "2026-09-21:3530,2026-09-22:5905,2026-09-23:6376,2026-09-24:6593,2026-09-25:6726,2026-09-26:6790,2026-09-27:6848"
+ring_history: "assess@2026-09-27"
+star_history: "2026-09-27:1351"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
-  - org
+  - "lang/rust"
 aliases:
-  - "ZCode"
-  - "zai-org/ZCode"
+  - "disktree"
+  - "tobi/disktree"
 ---
 
-# ZCode
+# disktree
 
-**3.5k** stars · **3.5k** stars/天 · 建立 1 天前 · TypeScript · Apache-2.0
+**1.4k** stars · **676** stars/天 · 建立 2 天前 · Rust · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/zai-org--ZCode");
+const me = dv.page("Repos/tobi--disktree");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -71,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`ORG`
+`v0.10.1`
 
 > [!summary] 一句話摘要
-> Z.ai's coding agent harness. Powerful, intelligent, extensible.
+> A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPUI.
 
 ## 專案簡介
 
-Z.ai's coding agent harness. Powerful, intelligent, extensible.
+A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPUI.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/tobi--disktree");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -119,7 +118,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/tobi--disktree");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -143,261 +142,263 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 915 |
-| Open Issues | 11 |
-| Issue 解決率 | 0% (0 closed) |
-| 最後推送 | 2026-09-21 |
-| 建立日期 | 2026-09-20 |
-| 官方網站 | [Link](https://zcode.z.ai/) |
-| Repo 大小 | 37.7 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/zai-org/ZCode) |
+| Forks | 89 |
+| Open Issues | 6 |
+| Issue 解決率 | 50% (6 closed) |
+| 最後推送 | 2026-09-27 |
+| 建立日期 | 2026-09-24 |
+| Repo 大小 | 1.9 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/tobi/disktree) |
+
+> [!info]- 主要依賴
+> `Cargo.toml` 中的核心套件：
+> `resolver` `members` `version` `edition` `rust-version` `license` `repository` `disktree-core` `anyhow` `rayon` `rustc-hash` `unsafe_code` `unused_lifetimes` `trivial_casts` `trivial_numeric_casts`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 98
->     "JavaScript" : 2
+>     "Rust" : 99
+>     "Makefile" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@MBearo](https://github.com/MBearo) | 1 |
-> | [@zRzRzRzRzRzRzR](https://github.com/zRzRzRzRzRzRzR) | 1 |
+> | [@tobi](https://github.com/tobi) | 63 |
+> | [@mgpai22](https://github.com/mgpai22) | 6 |
+> | [@ai94iq](https://github.com/ai94iq) | 4 |
+> | [@olegius88](https://github.com/olegius88) | 4 |
+> | [@btsouth](https://github.com/btsouth) | 4 |
+
+**最新版本**：v0.10.1 — disktree 0.10.1 (2026-09-25)
+
+> [!info]- Release Notes
+> ## What's Changed
+> * gpui-omarchy 0.1.3, and the quarantine fix for macOS downloads by @tobi in https://github.com/tobi/disktree/pull/22
+> * release 0.10.1 by @tobi in https://github.com/tobi/disktree/pull/24
+> 
+> 
+> **Full Changelog**: https://github.com/tobi/disktree/compare/v0.10.0...v0.10.1
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-20 ~ 2026-09-20）
-> **活躍天數** 1 天 · **最新 commit** feat: open source
+> [!abstract] 最近 10 次 commit（2026-09-27 ~ 2026-09-27）
+> **活躍天數** 1 天 · **最新 commit** Merge pull request #44 from tobi/mount-dedup-fix
+
+## 熱門議題
+
+> [!question]- 社群最關注的問題
+> | # | Issue | Reactions | Comments |
+> | --- | --- | --- | --- |
+> | [#38](https://github.com/tobi/disktree/issues/38) | Missing disk/partition selection for a check | 0 | 0 |
+> | [#29](https://github.com/tobi/disktree/issues/29) | make install from a fresh clone fails when rustup's default  | 0 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # ZCode
+> # disktree
 > 
->   
+> Find what is filling a disk, mark what should go, and remove it — with the
+> volume's free space in view the whole time.
 > 
->   飞书社群 ·
->   Discord
+> disktree is a treemap for Omarchy. It scans your home directory by default,
+> draws every directory as a nested mosaic sized by what it really costs on disk,
+> and lets you walk into it with the keyboard or the mouse. Mark as much as you
+> like; nothing happens until you review the list and commit, and the permanent
+> path always asks first.
 > 
->   简体中文 | English
+> Built with [GPUI](https://gpui-kit.com/) through
+> [gpui-omarchy](https://github.com/huacnlee/gpui-omarchy), so it follows your
+> Omarchy theme and behaves like the rest of the desktop.
 > 
-> ZCode 是 AI 编程工作台，提供桌面应用、浏览器界面和终端 Agent。本仓库包含客户端、后端服务、共享 UI，以及 Agent CLI 与运行时源码。
 > 
-> | 入口                 | 用途                                                           | 开发命令                       |
-> | -------------------- | -------------------------------------------------------------- | ------------------------------ |
-> | Desktop              | Electron 桌面应用                                              | `pnpm dev:desktop`             |
-> | Web / ZCode 命令行版 | 终端与浏览器工作台；将 TUI、Web、后端和 Agent 组装为独立运行包 | `pnpm dev:web`                 |
-> | Agent CLI            | 在终端中使用 `zcode`，也为 Desktop 和 Web 提供 Agent 运行时    | `pnpm --filter @zcode/cli dev` |
+> ## Install
 > 
-> ## 初始化
+> Download `disktree-*-x86_64-linux.tar.gz` (`aarch64-linux` on ARM) from the
+> [latest release](https://github.com/tobi/disktree/releases/latest), unpack
+> it, and run `./install.sh` inside (or just copy `disktree` onto your
+> `PATH`). Or build it:
 > 
-> 准备 Git、Node.js **24.14.0** 和 pnpm **10.33.2**，版本以 [mise.toml](mise.toml) 为准。以下开发和打包命令均在仓库根目录执行。
-> 
-> ```bash
-> pnpm bootstrap
+> ```sh
+> git clone https://github.com/tobi/disktree
+> cd disktree
+> make install
 > ```
 > 
-> `pnpm bootstrap` 安装 workspace 依赖、准备桌面本地运行资源，再执行 `build:bootstrap`。
+> `make install` builds a release binary and puts three things under `~/.local`
+> (no root needed):
 > 
-> Agent CLI 与运行时源码位于 [apps/zcode-cli/](apps/zcode-cli/)，作为普通目录随本仓库一起克隆，无需单独拉取或初始化 Git submodule。
+> - `~/.local/bin/disktree`
+> - a desktop entry, so disktree is in the launcher and in a file manager's
+>   **Open with** for a directory (it adds a handler; it never becomes the
+>   default)
+> - an icon
 > 
-> 根据需要选择其他初始化或构建入口：
+> `sudo make install PREFIX=/usr/local` installs system-wide; `make uninstall`
+> removes exactly what was installed.
 > 
-> | 命令                           | 用途                                                              |
-> | ------------------------------ | ----------------------------------------------------------------- |
-> | `pnpm install`                 | 安装依赖                                                          |
-> | `pnpm prepare:desktop-runtime` | 准备桌面运行资源，默认包含远程资源准备                            |
-> | `pnpm prepare:remote-assets`   | 单独准备远程运行资源                                              |
-> | `pnpm bootstrap:with-remote`   | 初始化依赖、本地与远程资源，并串行构建相关包；跳过桌面应用 bundle |
-> | `pnpm build`                   | 递归执行各 workspace 包的构建脚本，包括包内的资源准备步骤         |
+> On Arch, including Omarchy, disktree is in the AUR:
+> [`disktree`](https://aur.archlinux.org/packages/disktree) builds each release
+> from source, and
+> [`disktree-bin`](https://aur.archlinux.org/packages/disktree-bin) installs
+> the release binary:
 > 
-> 默认 `bootstrap` 跳过远程资源准备，适合本地桌面开发。使用远程工作区或验证远程发行资源时，再运行对应准备命令。
-> 
-> ## 开发与运行
-> 
-> ### 桌面版
-> 
-> ```bash
-> pnpm dev:desktop
-> 
-> # 使用测试环境
-> pnpm dev:desktop:test
+> ```sh
+> yay -S disktree-bin
 > ```
 > 
-> `pnpm dev:desktop` 默认等同于 `pnpm dev:desktop:prod`，使用生产服务配置。启动脚本会准备本地运行资源、构建桌面 Agent，再启动 Electron 和源码监听。
+> You need Rust 1.97 or newer and a Wayland or X11 session with a GPU that GPUI
+> can drive (Vulkan). Distributions often package an older Rust;
+> [rustup](https://rustup.rs) installs a current one. The repo pins 1.97 in
+> `rust-toolchain.toml`, so with rustup the right toolchain is fetched on the
+> first build even if `rustup default` points at something older.
 > 
-> 需要独立开发数据目录时，可设置 `ZCODE_DATA_BASE_DIR`。例如在 macOS / Linux 中：
 > 
-> ```bash
-> ZCODE_DATA_BASE_DIR="$HOME/.zcode-dev-home" pnpm dev:desktop:test
+> ## What it measures
+> 
+> - **Disk usage** by default: `st_blocks × 512`, the number `du` reports and the
+>   space that actually comes back when a file is deleted. Apparent size (what
+>   `ls -l` shows) is one toggle away.
+> - **Hardlinks once.** Two names for one inode cost one file.
+> - **Hidden entries included**, because `~/.cache` is often the biggest thing in
+>   a home directory. Symlinks are not followed.
+> 
+> The scan follows [dust](https://github.com/bootandy/dust)'s approach: one rayon
+> scope per root, a completion counter per directory so no directory is built
+> before its last subdirectory lands, and one bottom-up pass that aggregates sizes
+> and removes duplicate hardlinks.
+> 
+> 
+> ## What it refuses to do
+> 
+> The removal rules live in `crates/disktree-core/src/removal.rs`, and each one is
+> tested:
+> 
+> - only paths under the scanned root can be removed;
+> - the filesystem root, the scanned root and your home directory are refused;
+> - a mount point is refused, and so is anything with a mount point inside it,
+>   since removing it would reach into another filesystem; permanent deletion
+>   also stops at a mount boundary rather than descending into one (a btrfs
+>   subvolume that is not mounted goes with its directory, as the scan shows
+>   it);
+> - a directory holding your home directory or a system tree is refused (on
+>   macOS `/Users` is on the same volume as `/`, and `/opt` holds
+>   `/opt/homebrew`);
+> - system trees (`/usr`, `/etc`, `/boot`, `/var/lib`, `/nix/store`,
+>   `/gnu/store`, Homebrew's prefix on macOS and Linux, …) are
+>   refused even where permissions would allow it: packages own them, and
+>   pacman, paccache or `journalctl --vacuum` are the tools;
+> - a symlink is unlinked, never followed;
+> - nothing is passed through a shell — a file called `-rf` is just a file;
+> - selecting a checkout never runs a program it names: git is asked with its
+>   fsmonitor, hooks and pager off, and a checkout that defines its own filter
+>   drivers is not asked for its status at all ("changes unknown").
+> 
+> 
+> ### macOS
+> 
+> Download `disktree-*-aarch64-macos.zip` (`x86_64-macos` for an Intel Mac)
+> from the [latest release](https://github.com/tobi/disktree/releases/latest),
+> unzip it, and drag `disktree.app` into Applications. macOS 11 or newer.
+> 
+> A release that was not signed and notarized is stopped by Gatekeeper: macOS
+> says it "is damaged and can't be opened" or "cannot be verified". The app is
+> fine; the browser marked the download as quarantined. Clear the mark once:
+> 
+> ```sh
+> xattr -dr com.apple.quarantine /Applications/disktree.app
 > ```
 > 
-> ### 远程功能（SSH/WSL）
+> (Or open it once, then choose **Open Anyway** in System Settings › Privacy &
+> Security.)
 > 
-> 先执行 `pnpm bootstrap:with-remote` 准备远程资源（mock-cdn），再 `pnpm dev:desktop`；连接远程项目时资源选择「本地下载后上传」。开发态资源取自本地 `packages/desktop/mock-cdn` 和本地构建产物，经 SFTP 上传到远程，不访问 CDN。
+> Or build it, with Rust 1.97 or newer and Xcode or its Command Line Tools.
+> macOS does not come with Rust; install it with [rustup](https://rustup.rs).
 > 
-> ### Web 开发
-> 
-> 修改 Web 或后端源码时，使用开发模式：
-> 
-> ```bash
-> pnpm dev:web
-> 
-> # 指定后端工作区（macOS / Linux）
-> ZCODE_SERVER_WORKSPACE=/path/to/project pnpm dev:web
+> ```sh
+> make install     # ~/Applications/disktree.app, and ~/.local/bin/disktree
+> make uninstall
 > ```
 > 
-> 该命令同时启动 Web 开发服务器（默认 `http://localhost:5173`）和后端（默认 `http://localhost:3030`）；浏览器访问前者。`/ws` 和一般 `/api` 请求代理到本地后端，`/api/v1/oauth/token` 单独代理到当前配置的产品服务。
+> To see everything, give disktree **Full Disk Access** in System Settings ›
+> Privacy & Security (the panel offers a button when it is missing), then
+> reopen it. Without it macOS hides Mail, Messages, Safari, other apps' data
+> and the Trash, and disktree counts them as unreadable. Started from a
+> terminal, it is the terminal that needs the access. macOS also asks once
+> each for Desktop, Documents and Downloads.
 > 
-> Agent 源码修改后，执行 `pnpm --filter @zcode/cli... build` 并重启服务。需要验证完整发行包时，按下方“ZCode 命令行版”打包章节解压运行。
+> What is different from Linux:
 > 
-> ### ZCode 命令行版
+> - **Free space** is what `df` reports. Finder's figure is larger: it counts
+>   purgeable space (caches and local snapshots macOS will clear on its own).
+> - **Cloned files** (copies APFS shares blocks between, as Finder's Duplicate
+>   makes) are each counted in full, so a total can exceed what deleting them
+>   frees.
+> - **Time Machine's local snapshots** are not files and do not appear; they
+>   are part of the gap between the scan and the disk's used space.
+> - **Cloud-only folders** (iCloud Drive, Dropbox and the like, evicted to the
+>   server) are not opened, so a scan never downloads them.
 > 
-> 命令行发行包包含 TUI、Web 和 Agent，统一使用 `zcode` 启动：无参数进入 TUI；第一个参数为 `--web` 时启动 Web；其他参数交给现有 Agent CLI 处理。两种模式都在本机运行，无需 Electron。
+> To sign and notarize a build for others, with a Developer ID certificate in
+> the keychain and credentials saved by `xcrun notarytool store-credentials`:
 > 
-> ```bash
-> # 默认进入终端交互界面
-> zcode
-> 
-> # 启动 Web 界面
-> zcode --web
-> 
-> # 指定项目和端口，不自动打开浏览器
-> zcode --web --workspace /path/to/project --port 3030 --no-open
-> 
-> # 查看 CLI 或 Web 参数
-> zcode --help
-> zcode --web --help
+> ```sh
+> NOTARY_PROFILE= cargo xtask bundle \
+>   --sign "Developer ID Application: Name (TEAMID)" --notarize
 > ```
 > 
-> Web 模式默认工作目录为当前目录，监听 `127.0.0.1`，默认不启用访问令牌，自动选择空闲端口并打开浏览器。访问终端输出的地址，按 `Ctrl+C` 停止服务。局域网访问可使用 `--host 0.0.0.0`；监听非本机地址时默认生成访问令牌，使用终端输出的带令牌链接。可通过 `--token` 指定令牌或 `--no-token` 关闭令牌认证。
 > 
-> 直接启动通用 Web 服务的 HTTP 入口时，通过 `ZCODE_SERVER_AUTH_TOKEN` 配置 API／WebSocket 认证；通过程序接口创建服务时，使用 `authToken` 选项。
+> ### Windows
 > 
-> 构建方式见下方打包章节。`pnpm build:zcode` 只生成发行包，不会替换 `PATH` 中已有的 `zcode`。如果命令仍指向旧安装或其他源码目录，macOS / Linux 可用 `command -v zcode` 检查，Windows 可用 `where.exe zcode` 检查。
+> On Windows 10 or 11, download `disktree-*-x86_64-windows.zip`
+> (`aarch64-windows` on ARM) from the same release, unpack it anywhere and run
+> `disktree.exe`. Or build it with Rust 1.97 or newer, from
+> [rustup](https://rustup.rs), and the MSVC toolchain (Visual Studio Build
+> Tools, C++ workload):
 > 
-> ### CLI 源码开发
-> 
-> 直接开发 TUI 或 Agent 时，运行源码入口：
-> 
-> ```bash
-> pnpm --filter @zcode/cli dev --help
-> pnpm --filter @zcode/cli dev
-> 
-> # 构建 CLI 及其 workspace 依赖
-> pnpm --filter @zcode/cli... build
-> node apps/zcode-cli/packages/cli/dist/zcode.cjs --help
+> ```powershell
+> git clone https://github.com/tobi/disktree
+> cd disktree
+> cargo build --release    # target\release\disktree.exe
 > ```
 > 
-> 这个入口直接运行 Agent CLI，不经过发行包的 `--web` 分流。开发 Web 用 `pnpm dev:web`；验证统一的 `zcode` 命令，用下方解压后的 `bin/zcode.mjs`。
+> See [On Windows](#on-windows) for what differs there.
 > 
-> ## 配置
 > 
-> 根目录 [.env.example](.env.example) 提供服务地址与构建配置示例，可按需复制到 `.env`，本地覆盖放入 `.env.local`。Desktop 的开发环境通过 `dev:desktop:test` / `dev:desktop:prod` 选择。
+> ## Use
 > 
-> | 配置                                 | 用途                                             |
-> | ------------------------------------ | ------------------------------------------------ |
-> | `ZCODE_DATA_BASE_DIR`                | 应用数据基目录，数据写入其下的 `.zcode/`         |
-> | `ZCODE_SERVER_WORKSPACE`             | Web 后端的工作区路径                             |
-> | `ZCODE_BUILTIN_PROVIDER_CONFIG_FILE` | 本地 Provider 配置文件路径；未设置时使用内置配置 |
-> | `ZCODE_DIST_BASE_URL`                | 命令行安装脚本使用的下载根地址                   |
-> 
-> 运行时变量可在启动命令的环境中显式设置。随客户端发布的默认配置见 [config/README.md](config/README.md)。
-> 
-> ## 打包
-> 
-> 第三方声明生成、发行校验流程及声明在发行物中的位置见 [third-party/README.md](third-party/README.md)。
-> 
-> ### 桌面版
-> 
-> ```bash
-> pnpm bundle:desktop
-> 
-> # 指定目标平台与 CPU 架构
-> pnpm bundle:desktop -- --os win --arch x64
-> 
-> pnpm bundle:desktop -- --help
+> ```sh
+> disktree            # scan the home directory
+> disktree --disk     # the whole disk it lives on
+> disktree ~/src      # or any directory
+> disktree --help     # options: apparent size, follow links, skip hidden, …
 > ```
 > 
-> 默认目标为 macOS arm64，默认输出目录为 `packages/desktop/dist/`。`--os` 支持 `mac`、`win`、`linux`，`--arch` 支持 `x64`、`arm64`；实际打包与签名需要目标平台对应的工具和配置。
 > 
-> 安装：双击打开产物 DMG，将 ZCode 拖入"应用程序"。本地构建未签名，首次打开若被 macOS 拦截，执行：
+> ### The screen
 > 
-> ```bash
-> sudo xattr -rd com.apple.quarantine /Applications/ZCode.app
-> ```
-> 
-> ### ZCode 命令行版
-> 
-> 构建入口为 `pnpm build:zcode`。脚本会依次构建 CLI/TUI、后端和 Web，收集 TUI 的原生库、worker 与运行时依赖，再组装发行包；运行发行包仍需要 Node.js，版本以 `mise.toml` 为准。
-> 
-> 打包前必须设置下载根地址 `ZCODE_DIST_BASE_URL`（可放在 `.env`、`.env.local` 或环境变量中），也可以通过 `--base-url` 传入。以下地址是占位示例，发布时替换为实际托管地址：
-> 
-> ```bash
-> pnpm build:zcode --base-url https://downloads.example.com/zcode/
-> 
-> # 已配置 ZCODE_DIST_BASE_URL 时
-> pnpm build:zcode
-> 
-> # 仅重新组包，复用已有的 Agent、后端和 Web 构建产物
-> pnpm build:zcode --skip-build
-> 
-> # 查看版本、输出目录等可选参数
-> pnpm build:zcode --help
-> ```
-> 
-> 默认版本取根目录 `package.json`，输出目录为 `dist/zcode/`：
-> 
-> - `releases//zcode-.tar.gz`：运行包。
-> - `releases//sha256.txt`：校验摘要。
-> - `latest.json`、`install.sh`：版本索引和安装脚本。
-> 
-> 完整目录可上传到配置的下载根地址。安装脚本从该地址下载运行包，默认安装到 `~/.zcode/runtime`，并在 `~/.local/bin` 创建 `zcode` 命令。安装目录可通过 `ZCODE_DIST_HOME` 修改，命令目录可通过 `ZCODE_DIST_BIN_DIR` 修改。
-> 
-> 旧 Lite 用户需要改用上述构建命令、环境变量和新的安装脚本。新安装不会删除旧 Lite 目录，也不会迁移或删除已有会话数据。
-> 
-> 本地调试打包产物时，可直接解压运行，无需上传或安装：
-> 
-> ```bash
-> zcode_version=$(node -p "require('./dist/zcode/latest.json').version")
-> mkdir -p dist/zcode/debug
-> tar -xzf "dist/zcode/releases/$zcode_version/zcode-$zcode_version.tar.gz" \
->   -C dist/zcode/debug
-> # 默认启动 TUI
-> node dist/zcode/debug/zcode/bin/zcode.mjs
-> 
-> # 启动 Web
-> node dist/zcode/debug/zcode/bin/zcode.mjs --web \
->   --workspace "$PWD" --port 3030 --no-open
-> ```
-> 
-> 浏览器打开 `http://127.0.0.1:3030`，即可验证同一后端服务托管 Web 页面和 Agent 的完整链路。该端口需要空闲；如正在运行 `pnpm dev:web`，可改用其他 `--port`。
-> 
-> ## 仓库结构
-> 
-> | 目录                                                 | 职责                                       |
-> | ---------------------------------------------------- | ------------------------------------------ |
-> | `packages/desktop`                                   | Electron Main、Host、Renderer 与桌面打包   |
-> | `packages/web`                                       | Web 客户端                                 |
-> | `packages/server`                                    | HTTP / WebSocket 服务与远程连接            |
-> | `packages/zcode-server-cli`                          | 独立 Server 启动与进程管理                 |
-> | `packages/ui`                                        | 共享 React 组件、hooks 与 Zustand 状态     |
-> | `packages/services`                                  | 业务服务与持久化                           |
-> | `packages/shared`、`packages/rpc`、`packages/client` | 共享协议和类型、RPC 框架、Agent 客户端 SDK |
-> | `packages/provider`、`packages/provider-node`        | Provider 公共能力与 Node 实现              |
-> | `apps/zcode-cli`                                     | Agent CLI、TUI、运行时与工具               |
-> | `scripts`、`config`、`third-party`                   | 构建维护脚本、内置配置与第三方声明材料     |
-> 
-> ## 项目声明
-> 
-> 功能与优惠范围、维护规则、执行与数据风险，以及许可和第三方版权说明，详见 [NOTICE.md](NOTICE.md)。
+> - **Top:** the trail from `/`, then what is measured — **Size**, **Files** or
+>   **Age**, **Hidden files**, **Apparent size**, and the depth drawn. In the
+>   tree a crumb goes there, and its ▾ lists its siblings, largest first with
+>   their share and size, to jump sideways (arrows and Enter work too). Above
+>   the scanned root a crumb is dimmer, and clicking it widens the scan to
+>   there (see below).
+> - **Under it:** the scan totals, the filter when one is typed, and the legend.
+> - **Mosaic:** colour is the *kind* of data — code, agent scratch,
+>   toolchains, synced files, git, media, documents, caches — at one muted
+>   level, lighter with depth. A diagonal hatch is space that can be had back
+>   (caches, sync history, package stores, build output), independent of
+>   colour. Top-level directories carry a strip of their colour and a name
+>   band; deeper open directories a slim label row. In **Age** mode colour is
+>   the last write instead, from this week to older.
+> - **Panel:** the selection (its size set large, share of the scan, files,
+>   last write, and for a checkout what git says — c
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/zai-org/ZCode) · [官方網站](https://zcode.z.ai/)
+[GitHub](https://github.com/tobi/disktree)
 
 ## 相關收錄
 
@@ -405,7 +406,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "zai-org--ZCode"
+> WHERE category = "Other" AND file.name != "tobi--disktree"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -414,7 +415,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "zai-org--ZCode" AND status != "archived"
+> WHERE language = "Rust" AND file.name != "tobi--disktree" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -423,18 +424,18 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W39" AND file.name != "zai-org--ZCode"
+> WHERE week = "2026-W40" AND file.name != "tobi--disktree"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/tobi--disktree");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "zai-org--ZCode" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "tobi--disktree" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -450,7 +451,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "zai-org" AND file.name != "zai-org--ZCode"
+> WHERE owner = "tobi" AND file.name != "tobi--disktree"
 > SORT stars DESC
 > ```
 
@@ -458,7 +459,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/tobi--disktree");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -475,7 +476,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/tobi--disktree");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -508,7 +509,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/tobi--disktree");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -532,7 +533,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/tobi--disktree");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -569,7 +570,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/zai-org--ZCode");
+> const me = dv.page("Repos/tobi--disktree");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -652,7 +653,7 @@ Z.ai's coding agent harness. Powerful, intelligent, extensible.
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-21** — 首次收錄
+> **2026-09-27** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -668,10 +669,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-27|2026-09-27]] — 再次上榜，6.8k stars
-- [[2026-09-26|2026-09-26]] — 再次上榜，6.8k stars
-- [[2026-09-25|2026-09-25]] — 再次上榜，6.7k stars
-- [[2026-09-24|2026-09-24]] — 再次上榜，6.6k stars
-- [[2026-09-23|2026-09-23]] — 再次上榜，6.4k stars
-- [[2026-09-22|2026-09-22]] — 再次上榜，5.9k stars
-- [[2026-09-21|2026-09-21]] — 首次收錄，3.5k stars
+- [[2026-09-27|2026-09-27]] — 首次收錄，1.4k stars
