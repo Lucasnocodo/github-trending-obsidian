@@ -7,12 +7,12 @@ language: Kotlin
 license: MIT
 description: "装在手机上的对话副驾：在微信 / QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。"
 homepage: ""
-stars: 6700
-stars_per_day: 1340
-forks: 1155
-open_issues: 28
+stars: 6810
+stars_per_day: 1135
+forks: 1172
+open_issues: 29
 created: 2026-09-21
-pushed_at: 2026-09-26
+pushed_at: 2026-09-28
 first_seen: 2026-09-23
 week: "2026-W39"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 5
-next_review: "2026-09-30"
+appearances: 6
+next_review: "2026-10-01"
 contributor_count: 2
 engagement: "medium"
 issue_close_rate: 3
@@ -42,7 +42,7 @@ last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-23"
-star_history: "2026-09-23:4372,2026-09-24:5415,2026-09-25:6247,2026-09-26:6543,2026-09-27:6700"
+star_history: "2026-09-23:4372,2026-09-24:5415,2026-09-25:6247,2026-09-26:6543,2026-09-27:6700,2026-09-28:6810"
 tags:
   - github
   - "category/other"
@@ -733,6 +733,7 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-28|2026-09-28]] — 再次上榜，6.8k stars
 - [[2026-09-27|2026-09-27]] — 再次上榜，6.7k stars
 - [[2026-09-26|2026-09-26]] — 再次上榜，6.5k stars
 - [[2026-09-25|2026-09-25]] — 再次上榜，6.2k stars

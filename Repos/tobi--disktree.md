@@ -7,10 +7,10 @@ language: Rust
 license: MIT
 description: "A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPUI."
 homepage: ""
-stars: 1351
-stars_per_day: 676
-forks: 89
-open_issues: 6
+stars: 1685
+stars_per_day: 562
+forks: 110
+open_issues: 12
 created: 2026-09-24
 pushed_at: 2026-09-27
 first_seen: 2026-09-27
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-30"
+appearances: 2
+next_review: "2026-10-01"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 50
@@ -42,7 +42,7 @@ last_release_days: 2
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-27"
-star_history: "2026-09-27:1351"
+star_history: "2026-09-27:1351,2026-09-28:1685"
 tags:
   - github
   - "category/other"
@@ -669,4 +669,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-28|2026-09-28]] — 再次上榜，1.7k stars
 - [[2026-09-27|2026-09-27]] — 首次收錄，1.4k stars

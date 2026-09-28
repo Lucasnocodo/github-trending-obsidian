@@ -1,68 +1,63 @@
 ---
-repo: mikehasa/golive-skill
-url: https://github.com/mikehasa/golive-skill
-owner: mikehasa
+repo: mexicat/pdoom-video
+url: https://github.com/mexicat/pdoom-video
+owner: mexicat
 owner_type: User
 language: TypeScript
 license: MIT
-description: "Take your agent-built product live: hosting, database, domain, email, payments — on your own accounts. Open-source Agent Skill + zero-dependency Node CLI: detect → plan → approve → apply → verify. No GoLive account, backend or telemetry."
-homepage: "https://trytofu.ai"
-stars: 1019
-stars_per_day: 255
-forks: 75
-open_issues: 1
-created: 2026-09-23
+description: "Code-rendered music video for \"I'm Upping My P(doom)\""
+homepage: ""
+stars: 1350
+stars_per_day: 450
+forks: 138
+open_issues: 2
+created: 2026-09-24
 pushed_at: 2026-09-27
-first_seen: 2026-09-27
+first_seen: 2026-09-28
 week: "2026-W40"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v0.1.0-alpha.5"
+release_tag: ""
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-27
+last_reviewed: 2026-09-28
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
+appearances: 1
 next_review: "2026-10-01"
 contributor_count: 1
-engagement: "low"
-issue_close_rate: 91
-repo_size_kb: 2055
-readme_length: 9791
+engagement: "medium"
+issue_close_rate: 33
+repo_size_kb: 17678
+readme_length: 7289
 bus_factor: 1
-last_release_days: 0
-release_cadence: "weekly"
+last_release_days: -1
+release_cadence: "never"
 verdict: ""
-ring_history: "assess@2026-09-27"
-star_history: "2026-09-27:985,2026-09-28:1019"
+ring_history: "assess@2026-09-28"
+star_history: "2026-09-28:1350"
 tags:
   - github
   - "category/other"
   - "lang/typescript"
-  - "topic/agent_skill"
-  - "topic/agent_skills"
-  - "topic/ai_agents"
-  - "topic/claude_code"
-  - "topic/cloudflare"
 aliases:
-  - "golive-skill"
-  - "mikehasa/golive-skill"
+  - "pdoom-video"
+  - "mexicat/pdoom-video"
 ---
 
-# golive-skill
+# pdoom-video
 
-**985** stars · **328** stars/天 · 建立 3 天前 · TypeScript · MIT
+**1.4k** stars · **450** stars/天 · 建立 3 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/mikehasa--golive-skill");
+const me = dv.page("Repos/mexicat--pdoom-video");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案` `v0.1.0-alpha.5`
-
-`agent-skill` `agent-skills` `ai-agents` `claude-code` `cloudflare` `codex` `database` `deployment` `developer-tools` `devops` `dns` `godaddy` `hosting` `infrastructure` `neon` `netlify` `porkbun` `skills` `supabase` `vercel`
+`個人專案`
 
 > [!summary] 一句話摘要
-> Take your agent-built product live: hosting, database, domain, email, payments — on your own accounts. Open-source Agent Skill + zero-dependency Node CLI: detect → plan → approve → apply → verify. No GoLive account, backend or telemetry.
+> Code-rendered music video for "I'm Upping My P(doom)"
 
 ## 專案簡介
 
-Take your agent-built product live: hosting, database, domain, email, payments — on your own accounts. Open-source Agent Skill + zero-dependency Node CLI: detect → plan → approve → apply → verify. No GoLive account, backend or telemetry.
+Code-rendered music video for "I'm Upping My P(doom)"
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/mexicat--pdoom-video");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +118,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/mexicat--pdoom-video");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,205 +142,139 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 68 |
-| Open Issues | 1 |
-| Issue 解決率 | 91% (10 closed) |
+| Forks | 138 |
+| Open Issues | 2 |
+| Issue 解決率 | 33% (1 closed) |
 | 最後推送 | 2026-09-27 |
-| 建立日期 | 2026-09-23 |
-| 官方網站 | [Link](https://trytofu.ai) |
-| Repo 大小 | 2.0 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/mikehasa/golive-skill) |
-| Topics | `agent-skill` `agent-skills` `ai-agents` `claude-code` `cloudflare` `codex` `database` `deployment` |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@types/node` `esbuild` `typescript` `vitest` `yaml`
+| 建立日期 | 2026-09-24 |
+| Repo 大小 | 17.3 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/mexicat/pdoom-video) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 68
->     "JavaScript" : 32
+>     "TypeScript" : 94
+>     "Python" : 6
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@mikehasa](https://github.com/mikehasa) | 63 |
-
-**最新版本**：v0.1.0-alpha.5 (2026-09-27)
-
-> [!info]- Release Notes
-> GoLive `0.1.0-alpha.5` — an alpha release of the skill and the bundled zero-dependency runtime.
-> 
-> ## What changed since 0.1.0-alpha.4
-> 
-> - **The offline smoke check now denies what it claimed to.** Before switching an updated copy, the installer runs the new bundle's `help` and `menu --json` under a guard that blocks network and subprocess entry points. The guard only replaced module functions, so `new net.Socket().connect()`, `node:dgram`, `node:dns`, `node:http2`, `node:worker_threads` and `node:cluster` were still reachable — reproduced, then closed. A regression matrix covers each path and fails on the old guard. `references/updates.md` now says plainly that the guard is a sanity check for a broken or careless release, **not a sandbox**.
-> - **Untrusted content is data, never instructions.** A new hard rule tells the agent that repository files and their comments, dependency and lockfile text, provider API responses, dashboard copy, and golive's own generated report, state and handover files describe the world — and that only the digest-verified bundle is an instruction channel.
-> ...（完整內容見 GitHub）
+> | [@mexicat](https://github.com/mexicat) | 8 |
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-25 ~ 2026-09-27）
-> **活躍天數** 3 天 · **最新 commit** Point the translation markers at the 0.1.0-alpha.5 release commit
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#63](https://github.com/mikehasa/golive-skill/issues/63) | HOL Guard rule for `golive teardown`? | 0 | 1 |
+> [!abstract] 最近 10 次 commit（2026-09-24 ~ 2026-09-27）
+> **活躍天數** 4 天 · **最新 commit** README: note the YouTube upload is an older render
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # GoLive
+> # I'm Upping My P(doom) — music video
 > 
-> [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md) · [Deutsch](README.de.md)
+> A generative, code-rendered music video with word-synced karaoke typography. Every frame is a deterministic function of song time, so the live preview in the browser and the offline 1080p60 (or 4K60) export are identical.
 > 
-> **Take your agent-built product live: hosting, database, auth, domain, email, payments — on your own accounts. Then hand it over, or tear it all down.**
+> **Watch it in 4K on YouTube:** https://www.youtube.com/watch?v=5EoO5413dBY
 > 
-> Your coding agent can build an app in minutes. Getting it to real users still means accounts,
-> hosting, databases, domains, secrets and connected services. GoLive is the open-source Agent Skill
-> for that work: it **detects what your app needs, plans the exact changes, asks for your approval,
-> applies them with your own logins, and verifies what actually works** — then records what it
-> created, re-checks it for drift on demand, and can remove it again.
+> The YouTube upload is an earlier render: it averages only 4 sub-frames per frame for motion blur, so fast motion shows stepped copies, and YouTube's compression smears the film grain. For the best version, render it locally (see [Render the video](#render-the-video)): the current code picks up to 324 sub-frames per frame where the motion needs them.
 > 
-> Automate the parts providers expose. Guide you through the parts that need a human. Verify what
-> can be observed, and make unfinished work clear. No GoLive account, hosted backend or product telemetry.
+> The video was made with Claude (Opus 5.5) in Claude Code: the concept and treatment, the lyric alignment and audio analysis, the renderer, every scene and the renders were all worked out in conversation with Claude.
 > 
-> > **Early alpha · 0.1.0-alpha.5**
-> > Disposable live tests now cover six journeys: **hosting** (Vercel, Netlify), **database**
-> > (Supabase, Neon), **custom-domain DNS** (Porkbun, GoDaddy), **transactional email** (Resend),
-> > **test-mode payments** (Stripe) and **Supabase authentication**, plus the `teardown` uninstall
-> > path. The ownership document and the on-demand `golive status` drift check are implemented
-> > with test coverage (`golive status` also ran read-only in a live validation), while the broader
-> > [roadmap](#the-full-go-live-checklist-and-roadmap) is our direction, not a claim that it is all built.
+> The song is not ours: see [Credits](#credits) for who wrote and made it.
 > 
+> The concept, style bible and plate-by-plate treatment are in [`docs/TREATMENT.md`](docs/TREATMENT.md). The engine and scene API are documented in [`docs/ENGINE.md`](docs/ENGINE.md).
 > 
-> ## Install
+> ## Layout
 > 
-> You need **Node.js 20+**, npm/npx, Git, and a coding agent that can load skills and run commands.
-> Installation has been checked for Codex and Claude Code; other clients are unverified.
+> - `audio/pdoom.mp3` — the song (the Claude-Pop version, see Credits).
+> - `lyrics/lyrics.src.js` — the original line-level lyrics (approximate timings).
+> - `analysis/` — Python (uv) tools that produced the timing data: Demucs stem separation, CTC forced alignment cross-checked with Whisper, beat/downbeat/onset analysis. See `analysis/align.py` and `analysis/analyze.py`.
+> - `data/lyrics.json` — word-level (and some syllable-level) lyric timings.
+> - `data/audio.json` — tempo (132.007 BPM), beats, downbeats, sections, drum/vocal onsets and loudness envelopes.
+> - `app/` — the renderer: TypeScript + three.js, bun + Vite.
+>   - `src/engine/` — renderer core: timeline playback, post-processing (bloom, halation, grain), typography (Archivo, IBM Plex Mono, Cormorant Garamond, single-stroke plotter fonts), GPU line batches, HUD.
+>   - `src/scenes/` — one module per plate (`open`, `loss`, `prompt`, `hook`, `room`, `shoggoth`, `spacetime`, `ascent`, `bureau`, `leftturn`, `paperclips`, `fuse`, `stack`, `dense`, `loom`, `ilya`, `outro`) plus shared motifs.
+>   - `src/timeline.ts` — the edit: scene windows anchored to lyric lines and snapped to the beat grid.
+>   - `scripts/render.ts` — offline renderer (headless Chrome → raw frames over WebSocket → ffmpeg).
+> - `out/` — renders (not in the repo).
 > 
-> **Install once for all your projects.** Run this from any directory:
+> ## Requirements
 > 
-> ```bash
-> npx skills add https://github.com/mikehasa/golive-skill --skill golive --global
+> [bun](https://bun.sh), Google Chrome (the offline renderer drives it headless through playwright-core) and ffmpeg with libx264. The analysis tools need [uv](https://docs.astral.sh/uv/); the renderer doesn't.
+> 
+> ## Preview
+> 
+> ```sh
+> cd app
+> bun install
+> bunx vite
 > ```
 > 
-> Select your agent when prompted: use the arrow keys to move, Space to select, and Enter to
-> confirm. That screen is waiting for input; installation continues after you confirm.
+> Open http://localhost:5173 and use the keys below. `?t=23` starts at a given time.
 > 
-> To skip the agent picker, use the command for your agent:
+> | Key | Action |
+> |---|---|
+> | space | play / pause |
+> | ← / → | seek ±1 s (±5 s with shift) |
+> | `,` / `.` | step one frame |
+> | `[` / `]` | previous / next scene |
+> | `l` | loop the current scene |
+> | `h` | hide the UI |
 > 
-> ```bash
+> The preview renders in real time on a recent Mac. The export is not real time and is heavier.
 > 
-> ### Install from npm
+> ## Render the video
 > 
-> The same skill is published to npm as `golive@0.1.0-alpha.5` (dist-tags `alpha` and `latest`), which
-> installs it offline, with no Git or Skills CLI involved:
-> 
-> ```bash
-> 
-> ## Before you hand over production access
-> 
-> Whether to give an agent your provider accounts comes down to four questions. These are this
-> project's answers, with the limits stated where they exist.
-> 
-> - **You still approve every write.** Nothing reaches a real account without a plan you have seen and
->   approved: `apply` refuses without that plan's id and `--yes`, and it re-checks the plan's identity
->   before writing, so a changed release or config invalidates the old approval. DNS writes need
->   `--confirm-dns`, deletions need `--confirm-destroy`, and live-mode steps — live payments, production
->   data, a real account — need `--confirm-live`, which now includes a project's **first production
->   deploy**, because approving a plan alone used to be enough to write production for the first time.
->   Credential values are read only in-process, never printed, and never in arguments, plans, state or
->   reports; the file golive stores them in is plaintext at mode 0600 outside your repo, not a keychain.
->   One limit worth naming: those flags are arguments the agent passes on your behalf, and an agent
->   already logged in to your provider can write there with no golive plan at all.
->   [Trust, access and control](docs/TRUST.md) separates what the code enforces from what is only an
->   instruction the agent is asked to follow.
-> - **A run stops rather than pushing on.** `apply` stops at the first failed check, missing
->   confirmation, missing prerequisite or provider that contradicts the plan. Later steps do not run,
->   and the next `apply` resumes at that step. [Recovery](docs/RECOVERY.md#the-run-stopped) covers
->   reading the failure, which steps resume, and the cases that need a reviewed decision first.
-> - **Rollback is narrow, opt-in and never automatic.** A failed check never triggers a rollback.
->   `release.rollback: true` plans one step that re-points production at an earlier deployment golive
->   itself recorded; a deployment built by a dashboard, a Git push or a pull request is not a target,
->   and it touches no data, DNS, payment or email resource. Only Netlify supports these re-points
->   today — on Vercel you correct production in the dashboard (Vercel's adapter has no read of what
->   production serves). Promotion and rollback are implemented and mock-covered, **not live-validated**.
-> - **Nothing is left behind silently — which is not the same as nothing being left behind.**
->   `golive teardown` removes only resources it can prove it created, re-reads the DNS zone and the
->   host project after deleting, and names every leftover it cannot remove — Supabase and Neon
->   projects, the Resend sending domain, a zone or host project it cannot read — as a handoff saying
->   what remains and how to remove it by hand. A removal also forgets the baseline golive recorded for
->   that resource, so `golive status` does not report golive's own teardown as drift.
-> 
-> Those answers in full: [trust, access and control](docs/TRUST.md) and
-> [recovery](docs/RECOVERY.md). The [architecture](docs/ARCHITECTURE.md) is the product contract,
-> [provider scope](docs/PROVIDERS.md) says what each provider can do today, the
-> [validation record](docs/VALIDATION.md) separates what has been exercised live from what is only
-> mock-covered, and [distribution](docs/DISTRIBUTION.md) covers installation and updates.
-> 
-> [Install](#install) · [Use GoLive](#use-golive) · [See the workflow](#what-a-run-looks-like) · [Alpha scope](#what-this-alpha-supports) · [Roadmap](#the-full-go-live-checklist-and-roadmap) · [Contribute](CONTRIBUTING.md)
-> 
-> 
-> # Codex
-> npx skills add https://github.com/mikehasa/golive-skill --skill golive --global --agent codex --yes
-> 
-> 
-> # Claude Code
-> npx skills add https://github.com/mikehasa/golive-skill --skill golive --global --agent claude-code --yes
+> ```sh
+> cd app
+> bun scripts/render.ts video --samples auto --shutter 0.2 --out ../out/pdoom.mp4
 > ```
 > 
-> For installation in just one project, run from that project's repository and omit `--global`.
+> - **Output:** 1920×1080 at 60 fps, x264 CRF 16, AAC audio.
+> - **Motion blur:** every frame is the average of many sub-frames spread over a short shutter (`--shutter 0.2`, a fifth of the frame time), so fast motion leaves a continuous streak instead of a few stepped copies. `--samples auto` picks the count per frame: 12 for a still frame, 36 for ordinary camera motion, 108 or 324 for whips, slams and fast zooms. It stops once more sub-frames would no longer change the image by more than `--tol` levels of 255 (default 3). `--samples N` takes a fixed N instead (`--samples 4` makes a quick draft). How it works: "Motion blur and sampling" in [`docs/ENGINE.md`](docs/ENGINE.md).
+> - **Other modes:** `stills`, `sheet` (contact sheets, `--cuts` for every scene boundary), `perf`, and `plates` (regenerates `public/plates/`, the stills used by the outro's rewind montage; rerun it after changing a scene).
 > 
-> **Or paste this into your coding agent:**
+> ### 4K
 > 
-> ```text
-> Install the GoLive skill globally so I can use it across projects:
-> npx skills add https://github.com/mikehasa/golive-skill --skill golive --global
-> 
-> Target the agent I'm using: add --agent codex --yes for Codex, or
-> --agent claude-code --yes for Claude Code. Keep --global.
-> If the agent isn't clear, ask me which one.
-> 
-> Verify the installation with:
-> node /scripts/golive.mjs version --json
-> Tell me if I need to reload skills or start a new session.
-> Stop after installation; don't connect accounts or deploy yet.
+> ```sh
+> cd app
+> bun scripts/render.ts video --scale 2 --samples auto --shutter 0.2 --x264 aq-mode=3:rc-lookahead=30 --out ../out/pdoom-4k.mp4
 > ```
 > 
-> The install includes the instructions, provider references and prebuilt runtime. It does not
-> connect accounts or deploy anything. See [installation and updates](docs/DISTRIBUTION.md) for
-> noninteractive agent flags, runtime verification and the optional own installer.
+> - **Output:** a true 3840×2160 render (not an upscale): every layer, line and shader is rendered at the physical resolution. Scenes are laid out in 1920×1080 logical pixels, so the 4K frame looks like the 1080p one, only sharper.
+> - **Cost:** GPU-bound. A frame takes from about 40 ms (a still frame) to over 10 s (the ray-marched rooms at 108–324 sub-frames). The whole song took about 2.5 hours on an M5 Pro, rendered as segments in two parallel pipelines (`--from`/`--to`, then a lossless concat). Each pipeline uses about 5 GB for headless Chrome plus about 4 GB for ffmpeg; the shorter x264 lookahead above keeps ffmpeg's memory down.
+> - **Encoding:** the film grain is rendered per 4K pixel, which is expensive to encode: at the default CRF 16 the file runs at about 670 Mbit/s (13 GB for the song, 8× the 1080p file), `--crf 18` gives about 450 Mbit/s and `--crf 20` about 230 Mbit/s.
+> - `--scale 2` works with every mode. `stills` then saves full-resolution PNGs, and `perf` measures 4K frame times. In the browser preview, add `&scale=2` to the URL.
 > 
+> ## Regenerate the timing data
 > 
-> # Codex
-> npx golive@alpha install --agent codex
+> The committed `data/*.json` files are all the renderer needs. Regenerating them needs the stems and intermediates, which are not in the repo:
 > 
+> - **Stems:** Demucs `htdemucs_ft` into `analysis/stems/htdemucs_ft/pdoom/` (`uv run python -m demucs -n htdemucs_ft -o stems ../audio/pdoom.mp3`), plus the lead vocal from a mel-band-roformer karaoke model (audio-separator) in `analysis/stems/karaoke/lead.wav`.
+> - **Intermediates:** `ctc_emissions.py`, `whisper_run.py` and `vocal_feats.py` write them to `analysis/work/`. The pipeline is described at the top of `analysis/align.py`.
 > 
-> # Claude Code
-> npx golive@alpha install --agent claude
+> ```sh
+> cd analysis
+> uv run python align.py      # data/lyrics.json
+> uv run python analyze.py    # data/audio.json
 > ```
 > 
-> Add `--global` to install into your home directory (`~/.agents/skills/golive` or
-> `~/.claude/skills/golive`) instead of the current project; `--agent claude-code`, the spelling the
-> Skills CLI channel uses, is accepted as well. The installer copies the complete skill the package
-> ships with, refuses an existing destination, and never connects provider accounts.
+> The models download about 4 GB of weights into `analysis/.cache/`; delete that folder afterwards.
 > 
-> **Both channels carry the same release.** The npm package publishes the version in this repository,
-> including the standalone installer helpers, so an npm installation is an owned copy that updates in
-> place. The earlier `0.1.0-alpha.0` snapshot has no updater: remove that copy and reinstall, or use
-> the GitHub channel, which manages its own installs.
-> The npm package also exposes the terminal CLI: the golive commands `npx golive@a
+> ## Credits
+> 
+> - **Song:** "I'm Upping My P(doom)". The lyrics are by [osmarks](https://docs.osmarks.net/hypha/p%28doom%29_song_objectively_correct_interpretation), built on an opening verse and chorus by [MusicPerson](https://www.udio.com/creators/MusicPerson), with lines suggested on the EleutherAI Discord and help from Claude on the outro and final chorus. The original was generated with Udio and released in November 2024 ([YouTube](https://www.youtube.com/watch?v=uEB5E67vcPA)). This video uses the "Claude-Pop" version made with Suno, posted by [deckard (@slimer48484)](https://x.com/slimer48484/status/2097752569212756134) in September 2026.
+> - **Fonts:** Archivo, IBM Plex Mono and Cormorant Garamond (SIL Open Font License). Single-stroke EMS and Hershey fonts via the `hersheytext` package (OFL / public domain).
+> 
+> ## License
+> 
+> The code is released under the [MIT License](LICENSE). The fonts in `app/public/fonts/` keep their own licenses (see Credits), and the song and lyrics (`audio/`, `lyrics/`, `data/lyrics.json`) are not covered by it: they belong to their authors (see Credits).
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/mikehasa/golive-skill) · [官方網站](https://trytofu.ai)
+[GitHub](https://github.com/mexicat/pdoom-video)
 
 ## 相關收錄
 
@@ -355,7 +282,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "mikehasa--golive-skill"
+> WHERE category = "Other" AND file.name != "mexicat--pdoom-video"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -364,7 +291,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "mikehasa--golive-skill" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "mexicat--pdoom-video" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -373,18 +300,18 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "mikehasa--golive-skill"
+> WHERE week = "2026-W40" AND file.name != "mexicat--pdoom-video"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/mexicat--pdoom-video");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "mikehasa--golive-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "mexicat--pdoom-video" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -400,7 +327,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "mikehasa" AND file.name != "mikehasa--golive-skill"
+> WHERE owner = "mexicat" AND file.name != "mexicat--pdoom-video"
 > SORT stars DESC
 > ```
 
@@ -408,7 +335,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/mexicat--pdoom-video");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -425,7 +352,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/mexicat--pdoom-video");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -458,7 +385,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/mexicat--pdoom-video");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -482,7 +409,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/mexicat--pdoom-video");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -519,7 +446,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/mexicat--pdoom-video");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -602,7 +529,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-27** — 首次收錄
+> **2026-09-28** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -618,5 +545,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-28|2026-09-28]] — 再次上榜，1.0k stars
-- [[2026-09-27|2026-09-27]] — 首次收錄，985 stars
+- [[2026-09-28|2026-09-28]] — 首次收錄，1.4k stars

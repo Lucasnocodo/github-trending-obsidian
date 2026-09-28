@@ -1,68 +1,69 @@
 ---
-repo: mikehasa/golive-skill
-url: https://github.com/mikehasa/golive-skill
-owner: mikehasa
-owner_type: User
-language: TypeScript
-license: MIT
-description: "Take your agent-built product live: hosting, database, domain, email, payments — on your own accounts. Open-source Agent Skill + zero-dependency Node CLI: detect → plan → approve → apply → verify. No GoLive account, backend or telemetry."
-homepage: "https://trytofu.ai"
-stars: 1019
-stars_per_day: 255
-forks: 75
-open_issues: 1
-created: 2026-09-23
-pushed_at: 2026-09-27
-first_seen: 2026-09-27
+repo: kryvora-network/kryvora-node
+url: https://github.com/kryvora-network/kryvora-node
+owner: kryvora-network
+owner_type: Organization
+language: Go
+license: NOASSERTION
+description: "Reference client daemon and verification worker for Kryvora Network nodes."
+homepage: ""
+stars: 987
+stars_per_day: 197
+forks: 26
+open_issues: 0
+created: 2026-09-22
+pushed_at: 2026-09-22
+first_seen: 2026-09-28
 week: "2026-W40"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v0.1.0-alpha.5"
+release_tag: "v0.2.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-27
+last_reviewed: 2026-09-28
 use_case: ""
-priority: high
+priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-10-01"
-contributor_count: 1
+appearances: 1
+next_review: "2026-10-05"
+contributor_count: 2
 engagement: "low"
-issue_close_rate: 91
-repo_size_kb: 2055
-readme_length: 9791
+issue_close_rate: -1
+repo_size_kb: 1392
+readme_length: 5425
 bus_factor: 1
-last_release_days: 0
+last_release_days: 6
 release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-27"
-star_history: "2026-09-27:985,2026-09-28:1019"
+ring_history: "assess@2026-09-28"
+star_history: "2026-09-28:987"
 tags:
   - github
   - "category/other"
-  - "lang/typescript"
-  - "topic/agent_skill"
-  - "topic/agent_skills"
-  - "topic/ai_agents"
-  - "topic/claude_code"
-  - "topic/cloudflare"
+  - "lang/go"
+  - org
+  - "topic/depin"
+  - "topic/distributed_systems"
+  - "topic/golang"
+  - "topic/infrastructure"
+  - "topic/node_runner"
 aliases:
-  - "golive-skill"
-  - "mikehasa/golive-skill"
+  - "kryvora-node"
+  - "kryvora-network/kryvora-node"
 ---
 
-# golive-skill
+# kryvora-node
 
-**985** stars · **328** stars/天 · 建立 3 天前 · TypeScript · MIT
+**987** stars · **197** stars/天 · 建立 5 天前 · Go · NOASSERTION
 
 ```dataviewjs
-const me = dv.page("Repos/mikehasa--golive-skill");
+const me = dv.page("Repos/kryvora-network--kryvora-node");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -75,22 +76,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案` `v0.1.0-alpha.5`
+`ORG` `v0.2.0`
 
-`agent-skill` `agent-skills` `ai-agents` `claude-code` `cloudflare` `codex` `database` `deployment` `developer-tools` `devops` `dns` `godaddy` `hosting` `infrastructure` `neon` `netlify` `porkbun` `skills` `supabase` `vercel`
+`depin` `distributed-systems` `golang` `infrastructure` `node-runner` `telemetry` `worker-daemon`
 
 > [!summary] 一句話摘要
-> Take your agent-built product live: hosting, database, domain, email, payments — on your own accounts. Open-source Agent Skill + zero-dependency Node CLI: detect → plan → approve → apply → verify. No GoLive account, backend or telemetry.
+> Reference client daemon and verification worker for Kryvora Network nodes.
 
 ## 專案簡介
 
-Take your agent-built product live: hosting, database, domain, email, payments — on your own accounts. Open-source Agent Skill + zero-dependency Node CLI: detect → plan → approve → apply → verify. No GoLive account, backend or telemetry.
+Reference client daemon and verification worker for Kryvora Network nodes.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/kryvora-network--kryvora-node");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -125,7 +126,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/kryvora-network--kryvora-node");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -149,205 +150,207 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 68 |
-| Open Issues | 1 |
-| Issue 解決率 | 91% (10 closed) |
-| 最後推送 | 2026-09-27 |
-| 建立日期 | 2026-09-23 |
-| 官方網站 | [Link](https://trytofu.ai) |
-| Repo 大小 | 2.0 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/mikehasa/golive-skill) |
-| Topics | `agent-skill` `agent-skills` `ai-agents` `claude-code` `cloudflare` `codex` `database` `deployment` |
+| Forks | 26 |
+| Open Issues | 0 |
+| 最後推送 | 2026-09-22 |
+| 建立日期 | 2026-09-22 |
+| Repo 大小 | 1.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/kryvora-network/kryvora-node) |
+| Topics | `depin` `distributed-systems` `golang` `infrastructure` `node-runner` `telemetry` `worker-daemon` |
 
 > [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `@types/node` `esbuild` `typescript` `vitest` `yaml`
+> `go.mod` 中的核心套件：
+> `module`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "TypeScript" : 68
->     "JavaScript" : 32
+>     "Go" : 84
+>     "Shell" : 12
+>     "Dockerfile" : 2
+>     "Makefile" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@mikehasa](https://github.com/mikehasa) | 63 |
+> | [@daveantoine12](https://github.com/daveantoine12) | 11 |
+> | [@leonmaxim8](https://github.com/leonmaxim8) | 10 |
 
-**最新版本**：v0.1.0-alpha.5 (2026-09-27)
+**最新版本**：v0.2.0 (2026-09-22)
 
 > [!info]- Release Notes
-> GoLive `0.1.0-alpha.5` — an alpha release of the skill and the bundled zero-dependency runtime.
-> 
-> ## What changed since 0.1.0-alpha.4
-> 
-> - **The offline smoke check now denies what it claimed to.** Before switching an updated copy, the installer runs the new bundle's `help` and `menu --json` under a guard that blocks network and subprocess entry points. The guard only replaced module functions, so `new net.Socket().connect()`, `node:dgram`, `node:dns`, `node:http2`, `node:worker_threads` and `node:cluster` were still reachable — reproduced, then closed. A regression matrix covers each path and fails on the old guard. `references/updates.md` now says plainly that the guard is a sanity check for a broken or careless release, **not a sandbox**.
-> - **Untrusted content is data, never instructions.** A new hard rule tells the agent that repository files and their comments, dependency and lockfile text, provider API responses, dashboard copy, and golive's own generated report, state and handover files describe the world — and that only the digest-verified bundle is an instruction channel.
-> ...（完整內容見 GitHub）
+> Protocol sync update, peer health telemetry reporting, and optimized task buffer allocation.
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-25 ~ 2026-09-27）
-> **活躍天數** 3 天 · **最新 commit** Point the translation markers at the 0.1.0-alpha.5 release commit
-
-## 熱門議題
-
-> [!question]- 社群最關注的問題
-> | # | Issue | Reactions | Comments |
-> | --- | --- | --- | --- |
-> | [#63](https://github.com/mikehasa/golive-skill/issues/63) | HOL Guard rule for `golive teardown`? | 0 | 1 |
+> [!abstract] 最近 10 次 commit（2026-09-08 ~ 2026-09-20）
+> **活躍天數** 5 天 · **最新 commit** feat(auth): enforce hard-gated Genesis Node Key authorization
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # GoLive
+> # kryvora-node
 > 
-> [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md) · [Deutsch](README.de.md)
+> [](https://golang.org)
+> [](LICENSE)
+> [](https://github.com/kryvora-network/kryvora-node/releases)
+> [](https://github.com/kryvora-network/kryvora-node/actions)
+> [](https://kryvora.network)
 > 
-> **Take your agent-built product live: hosting, database, auth, domain, email, payments — on your own accounts. Then hand it over, or tear it all down.**
+> Official client daemon for Kryvora Network nodes.
 > 
-> Your coding agent can build an app in minutes. Getting it to real users still means accounts,
-> hosting, databases, domains, secrets and connected services. GoLive is the open-source Agent Skill
-> for that work: it **detects what your app needs, plans the exact changes, asks for your approval,
-> applies them with your own logins, and verifies what actually works** — then records what it
-> created, re-checks it for drift on demand, and can remove it again.
+> ## Overview
 > 
-> Automate the parts providers expose. Guide you through the parts that need a human. Verify what
-> can be observed, and make unfinished work clear. No GoLive account, hosted backend or product telemetry.
+> Kryvora is a decentralized physical infrastructure network designed for distributed verification and worker coordination. The `kryvora-node` daemon connects worker hardware to the Kryvora Hub, executes telemetry probes, verifies peer state, and reports proof of availability.
 > 
-> > **Early alpha · 0.1.0-alpha.5**
-> > Disposable live tests now cover six journeys: **hosting** (Vercel, Netlify), **database**
-> > (Supabase, Neon), **custom-domain DNS** (Porkbun, GoDaddy), **transactional email** (Resend),
-> > **test-mode payments** (Stripe) and **Supabase authentication**, plus the `teardown` uninstall
-> > path. The ownership document and the on-demand `golive status` drift check are implemented
-> > with test coverage (`golive status` also ran read-only in a live validation), while the broader
-> > [roadmap](#the-full-go-live-checklist-and-roadmap) is our direction, not a claim that it is all built.
+> ## System Topology
 > 
+> ```
+> +-------------------------------------------------------------+
+> |                     Kryvora Node Host                       |
+> |                                                             |
+> |  +--------------------+             +--------------------+  |
+> |  |   Worker Engine    |             |  Telemetry Daemon  |  |
+> |  |  (Task Execution)  ||    (Port 4177)     |  |
+> |  +---------+----------+   IPC/Bus   +---------+----------+  |
+> |            |                                  |             |
+> |            | Unix Socket (/var/run/node.sock) | HTTP API    |
+> |            v                                  v             |
+> |  +-------------------------------------------------------+  |
+> |  |                 Kryvora Storage Store                 |  |
+> |  |            (State, Peer Nonces, Telemetry)            |  |
+> |  +-------------------------------------------------------+  |
+> +------------------------------+------------------------------+
+>                                |
+>                    Mutual TLS  |  Heartbeat (30s)
+>                    gRPC / HTTP |  Verification Probes
+>                                v
+> +-------------------------------------------------------------+
+> |                 Kryvora Coordination Hub                    |
+> |                        (Port 4188)                          |
+> +-------------------------------------------------------------+
+> ```
 > 
-> ## Install
+> ## Node Licensing & Genesis Key Requirement
 > 
-> You need **Node.js 20+**, npm/npx, Git, and a coding agent that can load skills and run commands.
-> Installation has been checked for Codex and Claude Code; other clients are unverified.
+> Operating a Kryvora verification node requires an active **Genesis Node Key**.
+> The Genesis Node Key is an on-chain soulbound verification credential deployed on Arbitrum One:
 > 
-> **Install once for all your projects.** Run this from any directory:
+> * **Contract**: `0xBCf2cD12D1D37578fA7C69805fE77788e866BE1a`
+> * **Network**: Arbitrum One (Chain ID: `42161`)
+> * **Portal**: [https://node.kryvora.network](https://node.kryvora.network)
+> 
+> Before launching the daemon, obtain your node bootstrap token by connecting your wallet at [node.kryvora.network](https://node.kryvora.network). Unauthenticated nodes without a valid bootstrap token will be rejected by the Coordination Hub (`hub.kryvora.network:4188`).
+> 
+> ## System Requirements
+> 
+> Hardware specs for running a standard verification worker:
+> 
+> * CPU: 2 cores minimum (x86_64 or arm64)
+> * Memory: 2 GB RAM minimum, 4 GB recommended
+> * Storage: 20 GB available SSD storage
+> * Network: Stable broadband connection with inbound port 4177 open for local telemetry probes
+> 
+> ## Quick Start
+> 
+> ### Option 1: Automated Script (Linux systemd)
+> 
+> Run the installation script to fetch the binary and register the systemd service:
 > 
 > ```bash
-> npx skills add https://github.com/mikehasa/golive-skill --skill golive --global
+> curl -sSL https://raw.githubusercontent.com/kryvora-network/kryvora-node/main/install.sh | bash
 > ```
 > 
-> Select your agent when prompted: use the arrow keys to move, Space to select, and Enter to
-> confirm. That screen is waiting for input; installation continues after you confirm.
+> The script will prompt for your Genesis Node Key bootstrap token and register the systemd service.
 > 
-> To skip the agent picker, use the command for your agent:
+> Check service status:
 > 
 > ```bash
+> sudo systemctl status kryvora-node
+> ```
 > 
-> ### Install from npm
+> ### Option 2: Docker Compose
 > 
-> The same skill is published to npm as `golive@0.1.0-alpha.5` (dist-tags `alpha` and `latest`), which
-> installs it offline, with no Git or Skills CLI involved:
+> 1. Clone the repository:
 > 
 > ```bash
-> 
-> ## Before you hand over production access
-> 
-> Whether to give an agent your provider accounts comes down to four questions. These are this
-> project's answers, with the limits stated where they exist.
-> 
-> - **You still approve every write.** Nothing reaches a real account without a plan you have seen and
->   approved: `apply` refuses without that plan's id and `--yes`, and it re-checks the plan's identity
->   before writing, so a changed release or config invalidates the old approval. DNS writes need
->   `--confirm-dns`, deletions need `--confirm-destroy`, and live-mode steps — live payments, production
->   data, a real account — need `--confirm-live`, which now includes a project's **first production
->   deploy**, because approving a plan alone used to be enough to write production for the first time.
->   Credential values are read only in-process, never printed, and never in arguments, plans, state or
->   reports; the file golive stores them in is plaintext at mode 0600 outside your repo, not a keychain.
->   One limit worth naming: those flags are arguments the agent passes on your behalf, and an agent
->   already logged in to your provider can write there with no golive plan at all.
->   [Trust, access and control](docs/TRUST.md) separates what the code enforces from what is only an
->   instruction the agent is asked to follow.
-> - **A run stops rather than pushing on.** `apply` stops at the first failed check, missing
->   confirmation, missing prerequisite or provider that contradicts the plan. Later steps do not run,
->   and the next `apply` resumes at that step. [Recovery](docs/RECOVERY.md#the-run-stopped) covers
->   reading the failure, which steps resume, and the cases that need a reviewed decision first.
-> - **Rollback is narrow, opt-in and never automatic.** A failed check never triggers a rollback.
->   `release.rollback: true` plans one step that re-points production at an earlier deployment golive
->   itself recorded; a deployment built by a dashboard, a Git push or a pull request is not a target,
->   and it touches no data, DNS, payment or email resource. Only Netlify supports these re-points
->   today — on Vercel you correct production in the dashboard (Vercel's adapter has no read of what
->   production serves). Promotion and rollback are implemented and mock-covered, **not live-validated**.
-> - **Nothing is left behind silently — which is not the same as nothing being left behind.**
->   `golive teardown` removes only resources it can prove it created, re-reads the DNS zone and the
->   host project after deleting, and names every leftover it cannot remove — Supabase and Neon
->   projects, the Resend sending domain, a zone or host project it cannot read — as a handoff saying
->   what remains and how to remove it by hand. A removal also forgets the baseline golive recorded for
->   that resource, so `golive status` does not report golive's own teardown as drift.
-> 
-> Those answers in full: [trust, access and control](docs/TRUST.md) and
-> [recovery](docs/RECOVERY.md). The [architecture](docs/ARCHITECTURE.md) is the product contract,
-> [provider scope](docs/PROVIDERS.md) says what each provider can do today, the
-> [validation record](docs/VALIDATION.md) separates what has been exercised live from what is only
-> mock-covered, and [distribution](docs/DISTRIBUTION.md) covers installation and updates.
-> 
-> [Install](#install) · [Use GoLive](#use-golive) · [See the workflow](#what-a-run-looks-like) · [Alpha scope](#what-this-alpha-supports) · [Roadmap](#the-full-go-live-checklist-and-roadmap) · [Contribute](CONTRIBUTING.md)
-> 
-> 
-> # Codex
-> npx skills add https://github.com/mikehasa/golive-skill --skill golive --global --agent codex --yes
-> 
-> 
-> # Claude Code
-> npx skills add https://github.com/mikehasa/golive-skill --skill golive --global --agent claude-code --yes
+> git clone https://github.com/kryvora-network/kryvora-node.git
+> cd kryvora-node
 > ```
 > 
-> For installation in just one project, run from that project's repository and omit `--global`.
+> 2. Copy the configuration template and set your token:
 > 
-> **Or paste this into your coding agent:**
-> 
-> ```text
-> Install the GoLive skill globally so I can use it across projects:
-> npx skills add https://github.com/mikehasa/golive-skill --skill golive --global
-> 
-> Target the agent I'm using: add --agent codex --yes for Codex, or
-> --agent claude-code --yes for Claude Code. Keep --global.
-> If the agent isn't clear, ask me which one.
-> 
-> Verify the installation with:
-> node /scripts/golive.mjs version --json
-> Tell me if I need to reload skills or start a new session.
-> Stop after installation; don't connect accounts or deploy yet.
+> ```bash
+> cp config.example.yaml config.yaml
+> # Edit config.yaml and insert your bootstrap_token under auth:
+> # Or set KRYVORA_BOOTSTRAP_TOKEN in your environment
 > ```
 > 
-> The install includes the instructions, provider references and prebuilt runtime. It does not
-> connect accounts or deploy anything. See [installation and updates](docs/DISTRIBUTION.md) for
-> noninteractive agent flags, runtime verification and the optional own installer.
+> 3. Start the node container:
 > 
-> 
-> # Codex
-> npx golive@alpha install --agent codex
-> 
-> 
-> # Claude Code
-> npx golive@alpha install --agent claude
+> ```bash
+> KRYVORA_BOOTSTRAP_TOKEN="your_token_here" docker compose up -d
 > ```
 > 
-> Add `--global` to install into your home directory (`~/.agents/skills/golive` or
-> `~/.claude/skills/golive`) instead of the current project; `--agent claude-code`, the spelling the
-> Skills CLI channel uses, is accepted as well. The installer copies the complete skill the package
-> ships with, refuses an existing destination, and never connects provider accounts.
+> 4. Verify logs:
 > 
-> **Both channels carry the same release.** The npm package publishes the version in this repository,
-> including the standalone installer helpers, so an npm installation is an owned copy that updates in
-> place. The earlier `0.1.0-alpha.0` snapshot has no updater: remove that copy and reinstall, or use
-> the GitHub channel, which manages its own installs.
-> The npm package also exposes the terminal CLI: the golive commands `npx golive@a
+> ```bash
+> docker compose logs -f kryvora-node
+> ```
+> 
+> ### Option 3: Build from Source
+> 
+> Requirements: Go 1.22 or higher.
+> 
+> ```bash
+> git clone https://github.com/kryvora-network/kryvora-node.git
+> cd kryvora-node
+> make build
+> ./bin/kryvora-node --config config.yaml --token "your_token_here"
+> ```
+> 
+> ## Configuration
+> 
+> Configuration is loaded from `config.yaml` or set via environment variables.
+> 
+> | Key | Type | Default | Description |
+> |---|---|---|---|
+> | `node.id` | string | auto-generated | Unique identifier for worker node |
+> | `node.listen_addr` | string | `0.0.0.0:4177` | Local address for telemetry and metrics |
+> | `node.data_dir` | string | `/var/lib/kryvora` | Local state and task database directory |
+> | `auth.bootstrap_token` | string | `""` | Mandatory: Genesis Node Key activation token |
+> | `hub.endpoint` | string | `https://hub.kryvora.network:4188` | Upstream coordination hub address |
+> | `hub.heartbeat_interval` | int | `30` | Interval in seconds between hub pings |
+> | `telemetry.enabled` | bool | `true` | Expose Prometheus metrics on `/metrics` |
+> 
+> ## Local Endpoints
+> 
+> When running, the daemon exposes the following endpoints on port 4177:
+> 
+> * `GET /health`: JSON response indicating daemon lifecycle status
+> * `GET /status`: Peer connectivity, current block height, and sync state
+> * `GET /metrics`: Prometheus-compatible telemetry counters
+> 
+> Example query:
+> 
+> ```bash
+> curl -s http://127.0.0.1:4177/status
+> ```
+> 
+> ## Security
+> 
+> Please report vulnerabilities directly to `security@kryvora.network` rather than opening public issues.
+> 
+> ## License
+> 
+> Apache License 2.0. See LICENSE for details.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/mikehasa/golive-skill) · [官方網站](https://trytofu.ai)
+[GitHub](https://github.com/kryvora-network/kryvora-node)
 
 ## 相關收錄
 
@@ -355,7 +358,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "mikehasa--golive-skill"
+> WHERE category = "Other" AND file.name != "kryvora-network--kryvora-node"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -364,7 +367,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "TypeScript" AND file.name != "mikehasa--golive-skill" AND status != "archived"
+> WHERE language = "Go" AND file.name != "kryvora-network--kryvora-node" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -373,18 +376,18 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "mikehasa--golive-skill"
+> WHERE week = "2026-W40" AND file.name != "kryvora-network--kryvora-node"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/kryvora-network--kryvora-node");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "mikehasa--golive-skill" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "kryvora-network--kryvora-node" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -400,7 +403,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "mikehasa" AND file.name != "mikehasa--golive-skill"
+> WHERE owner = "kryvora-network" AND file.name != "kryvora-network--kryvora-node"
 > SORT stars DESC
 > ```
 
@@ -408,7 +411,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/kryvora-network--kryvora-node");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -425,7 +428,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/kryvora-network--kryvora-node");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -458,7 +461,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/kryvora-network--kryvora-node");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -482,7 +485,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/kryvora-network--kryvora-node");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -519,7 +522,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/mikehasa--golive-skill");
+> const me = dv.page("Repos/kryvora-network--kryvora-node");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -602,7 +605,7 @@ Take your agent-built product live: hosting, database, domain, email, payments �
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-27** — 首次收錄
+> **2026-09-28** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -618,5 +621,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-28|2026-09-28]] — 再次上榜，1.0k stars
-- [[2026-09-27|2026-09-27]] — 首次收錄，985 stars
+- [[2026-09-28|2026-09-28]] — 首次收錄，987 stars

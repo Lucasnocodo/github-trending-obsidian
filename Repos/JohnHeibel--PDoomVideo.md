@@ -7,9 +7,9 @@ language: JavaScript
 license: N/A
 description: "Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)"
 homepage: ""
-stars: 1082
-stars_per_day: 271
-forks: 109
+stars: 1301
+stars_per_day: 260
+forks: 142
 open_issues: 2
 created: 2026-09-22
 pushed_at: 2026-09-25
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-09-30"
+appearances: 2
+next_review: "2026-10-01"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 33
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-27"
-star_history: "2026-09-27:1082"
+star_history: "2026-09-27:1082,2026-09-28:1301"
 tags:
   - github
   - "category/other"
@@ -510,4 +510,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-28|2026-09-28]] — 再次上榜，1.3k stars
 - [[2026-09-27|2026-09-27]] — 首次收錄，1.1k stars

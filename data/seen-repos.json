@@ -4355,10 +4355,10 @@
   },
   "jev-chat/jev-chat-jarvis": {
     "first_seen": "2026-09-23",
-    "last_seen": "2026-09-27",
-    "times_seen": 5,
+    "last_seen": "2026-09-28",
+    "times_seen": 6,
     "stars_first": 4372,
-    "stars_last": 6700
+    "stars_last": 6810
   },
   "Mak5er/AirCard": {
     "first_seen": "2026-09-23",
@@ -4369,10 +4369,10 @@
   },
   "unreallabsai/unreal-agent": {
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
-    "times_seen": 4,
+    "last_seen": "2026-09-28",
+    "times_seen": 5,
     "stars_first": 1776,
-    "stars_last": 1972
+    "stars_last": 1998
   },
   "bespokelabsai/nimble": {
     "first_seen": "2026-09-24",
@@ -4411,17 +4411,17 @@
   },
   "deepopen-com/deepopen": {
     "first_seen": "2026-09-25",
-    "last_seen": "2026-09-27",
-    "times_seen": 3,
+    "last_seen": "2026-09-28",
+    "times_seen": 4,
     "stars_first": 1012,
-    "stars_last": 1040
+    "stars_last": 1044
   },
   "Contrastive-LM/CLM": {
     "first_seen": "2026-09-26",
-    "last_seen": "2026-09-27",
-    "times_seen": 2,
+    "last_seen": "2026-09-28",
+    "times_seen": 3,
     "stars_first": 1315,
-    "stars_last": 1654
+    "stars_last": 2008
   },
   "pallavi-shekhar/ai-engineering-interview-questions-company-wise": {
     "first_seen": "2026-09-26",
@@ -4432,30 +4432,44 @@
   },
   "tobi/disktree": {
     "first_seen": "2026-09-27",
-    "last_seen": "2026-09-27",
-    "times_seen": 1,
+    "last_seen": "2026-09-28",
+    "times_seen": 2,
     "stars_first": 1351,
-    "stars_last": 1351
+    "stars_last": 1685
   },
   "yetone/magpie": {
     "first_seen": "2026-09-27",
-    "last_seen": "2026-09-27",
-    "times_seen": 1,
+    "last_seen": "2026-09-28",
+    "times_seen": 2,
     "stars_first": 1098,
-    "stars_last": 1098
+    "stars_last": 1338
   },
   "JohnHeibel/PDoomVideo": {
     "first_seen": "2026-09-27",
-    "last_seen": "2026-09-27",
-    "times_seen": 1,
+    "last_seen": "2026-09-28",
+    "times_seen": 2,
     "stars_first": 1082,
-    "stars_last": 1082
+    "stars_last": 1301
   },
   "mikehasa/golive-skill": {
     "first_seen": "2026-09-27",
-    "last_seen": "2026-09-27",
-    "times_seen": 1,
+    "last_seen": "2026-09-28",
+    "times_seen": 2,
     "stars_first": 985,
-    "stars_last": 985
+    "stars_last": 1019
+  },
+  "mexicat/pdoom-video": {
+    "first_seen": "2026-09-28",
+    "last_seen": "2026-09-28",
+    "times_seen": 1,
+    "stars_first": 1350,
+    "stars_last": 1350
+  },
+  "kryvora-network/kryvora-node": {
+    "first_seen": "2026-09-28",
+    "last_seen": "2026-09-28",
+    "times_seen": 1,
+    "stars_first": 987,
+    "stars_last": 987
   }
 }
