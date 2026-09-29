@@ -4418,10 +4418,10 @@
   },
   "Contrastive-LM/CLM": {
     "first_seen": "2026-09-26",
-    "last_seen": "2026-09-28",
-    "times_seen": 3,
+    "last_seen": "2026-09-29",
+    "times_seen": 4,
     "stars_first": 1315,
-    "stars_last": 2008
+    "stars_last": 2336
   },
   "pallavi-shekhar/ai-engineering-interview-questions-company-wise": {
     "first_seen": "2026-09-26",
@@ -4432,44 +4432,65 @@
   },
   "tobi/disktree": {
     "first_seen": "2026-09-27",
-    "last_seen": "2026-09-28",
-    "times_seen": 2,
+    "last_seen": "2026-09-29",
+    "times_seen": 3,
     "stars_first": 1351,
-    "stars_last": 1685
+    "stars_last": 1844
   },
   "yetone/magpie": {
     "first_seen": "2026-09-27",
-    "last_seen": "2026-09-28",
-    "times_seen": 2,
+    "last_seen": "2026-09-29",
+    "times_seen": 3,
     "stars_first": 1098,
-    "stars_last": 1338
+    "stars_last": 1722
   },
   "JohnHeibel/PDoomVideo": {
     "first_seen": "2026-09-27",
-    "last_seen": "2026-09-28",
-    "times_seen": 2,
+    "last_seen": "2026-09-29",
+    "times_seen": 3,
     "stars_first": 1082,
-    "stars_last": 1301
+    "stars_last": 1457
   },
   "mikehasa/golive-skill": {
     "first_seen": "2026-09-27",
-    "last_seen": "2026-09-28",
-    "times_seen": 2,
+    "last_seen": "2026-09-29",
+    "times_seen": 3,
     "stars_first": 985,
-    "stars_last": 1019
+    "stars_last": 1055
   },
   "mexicat/pdoom-video": {
     "first_seen": "2026-09-28",
-    "last_seen": "2026-09-28",
-    "times_seen": 1,
+    "last_seen": "2026-09-29",
+    "times_seen": 2,
     "stars_first": 1350,
-    "stars_last": 1350
+    "stars_last": 1830
   },
   "kryvora-network/kryvora-node": {
     "first_seen": "2026-09-28",
-    "last_seen": "2026-09-28",
-    "times_seen": 1,
+    "last_seen": "2026-09-29",
+    "times_seen": 2,
     "stars_first": 987,
-    "stars_last": 987
+    "stars_last": 1050
+  },
+  "KKKKhazix/AIHOT": {
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "times_seen": 1,
+    "stars_first": 1675,
+    "stars_last": 1675
+  },
+  "dzhng/jevgrep": {
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "times_seen": 1,
+    "stars_first": 1522,
+    "stars_last": 1522
+  },
+  "Niko1221/Strata": {
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "times_seen": 1,
+    "stars_first": 1208,
+    "stars_last": 1208
   }
 }

@@ -7,12 +7,12 @@ language: Go
 license: MIT
 description: "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar."
 homepage: "https://usemagpie.ai"
-stars: 1338
-stars_per_day: 335
-forks: 77
-open_issues: 3
+stars: 1722
+stars_per_day: 344
+forks: 102
+open_issues: 13
 created: 2026-09-23
-pushed_at: 2026-09-28
+pushed_at: 2026-09-29
 first_seen: 2026-09-27
 week: "2026-W40"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-10-01"
+appearances: 3
+next_review: "2026-10-02"
 contributor_count: 5
 engagement: "low"
 issue_close_rate: 99
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-27"
-star_history: "2026-09-27:1098,2026-09-28:1338"
+star_history: "2026-09-27:1098,2026-09-28:1338,2026-09-29:1722"
 tags:
   - github
   - "category/other"
@@ -617,5 +617,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-29|2026-09-29]] — 再次上榜，1.7k stars
 - [[2026-09-28|2026-09-28]] — 再次上榜，1.3k stars
 - [[2026-09-27|2026-09-27]] — 首次收錄，1.1k stars

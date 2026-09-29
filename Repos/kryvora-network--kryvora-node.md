@@ -7,9 +7,9 @@ language: Go
 license: NOASSERTION
 description: "Reference client daemon and verification worker for Kryvora Network nodes."
 homepage: ""
-stars: 987
-stars_per_day: 197
-forks: 26
+stars: 1050
+stars_per_day: 175
+forks: 30
 open_issues: 0
 created: 2026-09-22
 pushed_at: 2026-09-22
@@ -30,8 +30,8 @@ use_case: ""
 priority: medium
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-05"
+appearances: 2
+next_review: "2026-10-06"
 contributor_count: 2
 engagement: "low"
 issue_close_rate: -1
@@ -42,7 +42,7 @@ last_release_days: 6
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-28"
-star_history: "2026-09-28:987"
+star_history: "2026-09-28:987,2026-09-29:1050"
 tags:
   - github
   - "category/other"
@@ -621,4 +621,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-29|2026-09-29]] — 再次上榜，1.1k stars
 - [[2026-09-28|2026-09-28]] — 首次收錄，987 stars

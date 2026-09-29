@@ -7,12 +7,12 @@ language: TypeScript
 license: MIT
 description: "Take your agent-built product live: hosting, database, domain, email, payments — on your own accounts. Open-source Agent Skill + zero-dependency Node CLI: detect → plan → approve → apply → verify. No GoLive account, backend or telemetry."
 homepage: "https://trytofu.ai"
-stars: 1019
-stars_per_day: 255
-forks: 75
-open_issues: 1
+stars: 1055
+stars_per_day: 211
+forks: 77
+open_issues: 5
 created: 2026-09-23
-pushed_at: 2026-09-27
+pushed_at: 2026-09-29
 first_seen: 2026-09-27
 week: "2026-W40"
 month: "2026-09"
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-10-01"
+appearances: 3
+next_review: "2026-10-02"
 contributor_count: 1
 engagement: "low"
 issue_close_rate: 91
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-27"
-star_history: "2026-09-27:985,2026-09-28:1019"
+star_history: "2026-09-27:985,2026-09-28:1019,2026-09-29:1055"
 tags:
   - github
   - "category/other"
@@ -618,5 +618,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-29|2026-09-29]] — 再次上榜，1.1k stars
 - [[2026-09-28|2026-09-28]] — 再次上榜，1.0k stars
 - [[2026-09-27|2026-09-27]] — 首次收錄，985 stars

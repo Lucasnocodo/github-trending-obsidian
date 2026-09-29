@@ -1,63 +1,68 @@
 ---
-repo: JohnHeibel/PDoomVideo
-url: https://github.com/JohnHeibel/PDoomVideo
-owner: JohnHeibel
+repo: dzhng/jevgrep
+url: https://github.com/dzhng/jevgrep
+owner: dzhng
 owner_type: User
-language: JavaScript
-license: N/A
-description: "Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)"
+language: TypeScript
+license: MIT
+description: "Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files and source context."
 homepage: ""
-stars: 1457
-stars_per_day: 243
-forks: 158
-open_issues: 3
-created: 2026-09-22
-pushed_at: 2026-09-25
-first_seen: 2026-09-27
+stars: 1522
+stars_per_day: 507
+forks: 96
+open_issues: 18
+created: 2026-09-26
+pushed_at: 2026-09-29
+first_seen: 2026-09-29
 week: "2026-W40"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.6.0"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-27
+last_reviewed: 2026-09-29
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-10-02"
-contributor_count: 1
-engagement: "medium"
-issue_close_rate: 33
-repo_size_kb: 3577
-readme_length: 2479
+contributor_count: 4
+engagement: "low"
+issue_close_rate: 22
+repo_size_kb: 7728
+readme_length: 7342
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 0
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-27"
-star_history: "2026-09-27:1082,2026-09-28:1301,2026-09-29:1457"
+ring_history: "assess@2026-09-29"
+star_history: "2026-09-29:1522"
 tags:
   - github
   - "category/other"
-  - "lang/javascript"
+  - "lang/typescript"
+  - "topic/ai_sdk"
+  - "topic/claude_code"
+  - "topic/cli"
+  - "topic/code_search"
+  - "topic/codex"
 aliases:
-  - "PDoomVideo"
-  - "JohnHeibel/PDoomVideo"
+  - "jevgrep"
+  - "dzhng/jevgrep"
 ---
 
-# PDoomVideo
+# jevgrep
 
-**1.1k** stars · **271** stars/天 · 建立 4 天前 · JavaScript · 未標註授權
+**1.5k** stars · **507** stars/天 · 建立 3 天前 · TypeScript · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+const me = dv.page("Repos/dzhng--jevgrep");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +75,22 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v0.6.0`
+
+`ai-sdk` `claude-code` `cli` `code-search` `codex` `coding-agents` `context-retrieval` `developer-tools` `jev` `semantic-search` `typescript` `vercel-ai-gateway`
 
 > [!summary] 一句話摘要
-> Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
+> Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files and source context.
 
 ## 專案簡介
 
-Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
+Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files and source context.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/dzhng--jevgrep");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +125,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/dzhng--jevgrep");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,104 +149,251 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 109 |
-| Open Issues | 2 |
-| Issue 解決率 | 33% (1 closed) |
-| 最後推送 | 2026-09-25 |
-| 建立日期 | 2026-09-22 |
-| Repo 大小 | 3.5 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/JohnHeibel/PDoomVideo) |
+| Forks | 96 |
+| Open Issues | 18 |
+| Issue 解決率 | 22% (5 closed) |
+| 最後推送 | 2026-09-29 |
+| 建立日期 | 2026-09-26 |
+| Repo 大小 | 7.5 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/dzhng/jevgrep) |
+| Topics | `ai-sdk` `claude-code` `cli` `code-search` `codex` `coding-agents` `context-retrieval` `developer-tools` |
 
 > [!info]- 主要依賴
 > `package.json` 中的核心套件：
-> `p5` `p5.brush` `puppeteer-core`
+> `oxfmt` `oxlint` `turbo` `typescript`
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 86
->     "HTML" : 14
+>     "TypeScript" : 59
+>     "JavaScript" : 22
+>     "Python" : 18
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@JohnHeibel](https://github.com/JohnHeibel) | 7 |
+> | [@dzhng](https://github.com/dzhng) | 173 |
+> | [@tmchow](https://github.com/tmchow) | 2 |
+> | [@a-lang](https://github.com/a-lang) | 1 |
+> | [@mubaid](https://github.com/mubaid) | 1 |
+
+**最新版本**：v0.6.0 — Jevgrep 0.6.0 (2026-09-29)
+
+> [!info]- Release Notes
+> Jevgrep 0.6.0 adds local search-scope inspection and custom gateway support.
+> 
+> ## New
+> 
+> - `jg files [root]` reports eligible file counts, byte totals, top-level directory groups, and filter skips without credentials or provider requests. Counts are an upper bound; searches still apply content checks.
+> - Repeatable `--exclude PATTERN` narrows searches and file inventories using root-relative gitignore patterns.
+> - `jg auth --provider custom --base-url URL --model ID --stdin` configures a TypeSafe-compatible gateway. Interactive auth also offers Custom endpoint.
+> - The bundled skill has clearer behavioral-search triggers, preserves grep for exact lookups, and explains inventories, exclusions, and delegated discovery.
+> 
+> ## Fixes and documentation
+> 
+> - Reject malformed trailing-backslash exclusion patterns and custom URLs containing credentials, queries, or fragments.
+> - Document the minimal custom-gateway `noul` protocol and clarify saved-credential behavior.
+> - Correct benchmark work-clock handling for inventories and excluded searches; retain exploratory skill-comparison evidence separately from full-cohort claims.
+> 
+> Thanks to tmchow for #25 and #26, mubaid for #28, and the contributors to #29 for the skill-trigger evidence.
+> 
+> ## Upgrade
+> 
+> ```sh
+> npm install --global @dzhng/jevgrep@0.6.0
+> jg --version
+> jg skill
+> ```
+> 
+> Run `jg skill` in each project whose installed agent skill you want to refresh. Existing saved provider credentials continue to work.
+> 
+> ## Verification
+> 
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-22 ~ 2026-09-25）
-> **活躍天數** 3 天 · **最新 commit** Update README.md with osmarks interpretation
+> [!abstract] 最近 10 次 commit（2026-09-29 ~ 2026-09-29）
+> **活躍天數** 1 天 · **最新 commit** Replace Pyodide with packaged Tree-sitter for Python parsing (#27)
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#3](https://github.com/JohnHeibel/PDoomVideo/issues/3) | What prompts did you use? | 1 | 0 |
-> | [#2](https://github.com/JohnHeibel/PDoomVideo/issues/2) | Which effort level did you use for the final output? | 0 | 0 |
+> | [#5](https://github.com/dzhng/jevgrep/issues/5) | Windows support | 2 | 2 |
+> | [#15](https://github.com/dzhng/jevgrep/issues/15) | Isolate npm publishing credentials from the build and test j | 1 | 0 |
+> | [#10](https://github.com/dzhng/jevgrep/issues/10) | Skill is unclear about how to phrase the query | 1 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # I'm Upping My P(doom)
+> # jevgrep
 > 
-> Source code for the [Claude Opus 5.5 music video for *I'm Upping My P(doom)*](https://youtu.be/8j-hR4fJywU).
+> [](https://www.npmjs.com/package/@dzhng/jevgrep)
+> [](LICENSE)
+> [](apps/cli/README.md)
+> [](https://github.com/dzhng/jevgrep/actions/workflows/publish.yml)
 > 
-> [I've also made a new more reliable and general base for making Claude animations with Claude Opus 5.5.](https://github.com/JohnHeibel/ClaudeAnimationBase) 
+> **Same intelligence. ~30% lower cost.**
 > 
-> Highly recommend checking it out!
+> Find code by asking what it does. In our ten-task SWE-bench comparison, Jevgrep
+> successfully completed the same 8 of 10 tasks as the baseline, at lower cost.
 > 
-> ## Credits
+> Coding agents spend part of every unfamiliar task finding the right files.
+> Jevgrep gives them a place to start: ask a repository question, and `jg` returns
+> relevant files, reading leads, and verbatim source excerpts in one stdout response.
+> It uses [Jev](https://vercel.com/ai-gateway/models/jev) to judge relevance across
+> folders, files, and declarations. Your coding agent then implements and tests the change.
 > 
-> - **Inspired by:** [this post on X](https://x.com/slimer48484/status/2097752569212756134)
-> - **Song:** as far as I could find, it comes from [this YouTube video from 2024](https://www.youtube.com/watch?v=uEB5E67vcPA)
-> - **Lyrics** from Osmarks showing the original udio generations and [the interpretation of each lyric](https://docs.osmarks.net/hypha/p(doom)_song_objectively_correct_interpretation)
-> 
-> ## How it was made
-> 
-> The video took two generations, both in Claude Code:
-> 
-> 1. **First generation** ([`legacy/`](legacy/)): Claude Opus 5.5 (Medium)
-> 2. **Second generation** (everything else): Claude Opus 5.5
-> 
-> **Everything in this repository was generated by the model.** No scene ideas were specified. The only direction was to:
-> 
-> - use the Clawd character design
-> - give each lyric interesting visuals and transitions
-> 
-> [`ANIMATION_GUIDE.md`](ANIMATION_GUIDE.md) was written by Opus to brief the subagents it ran in parallel.
-> 
-> [`STORYBOARD.md`](STORYBOARD.md) was also written by Opus after the first generation, after being instructed to use P5 brushstrokes, make each scene visually interesting, and make every scene transition into the next.
-> ## What's here
-> 
-> | Path | What it is |
-> |---|---|
-> | [`src/ch/`](src/ch/) | The video's nine chapters, one file each |
-> | [`src/`](src/) | Shared code: Clawd, the guest characters, props, lyrics and the timeline |
-> | [`studio.html`](studio.html) | The page every frame is painted in, using p5.js and p5.brush |
-> | [`render.mjs`](render.mjs) | Renders frames in headless Chrome and encodes the MP4 with ffmpeg |
-> | [`STORYBOARD.md`](STORYBOARD.md) | Opus's shot-by-shot plan |
-> | [`ANIMATION_GUIDE.md`](ANIMATION_GUIDE.md) | Opus's style and code guide for its subagents |
-> | [`legacy/`](legacy/) | The first generation |
-> 
-> ## Rendering
-> 
-> You need Node.js, Google Chrome and ffmpeg. The song is included at `assets/pdoom.mp3`.
-> 
-> ```bash
-> npm install
-> node render.mjs --frames=0:156.6 --workers=4   # paint every frame into out/frames (resumable)
-> node render.mjs --encode --out=out/pdoom.mp4   # join the frames and the song into an MP4
+> ```sh
+> npm install -g @dzhng/jevgrep
+> jg auth
+> jg skill
+> jg "How are telemetry events recorded and sent?" ./my-project
 > ```
 > 
-> If Chrome isn't installed at the default Windows path, add `--chrome=`.
+> Requires **Node.js 22+**, **macOS or Linux**, and a key for **Vercel AI Gateway, TypeSafe, OpenRouter, OpenCode Zen, or a custom TypeSafe-compatible endpoint**.
+> No separate Python, Bun, or ripgrep installation is required to use `jg`.
+> 
+> Provider selection requires **0.3.0 or newer**. Upgrade an older installation with
+> `npm install --global @dzhng/jevgrep@latest`.
+> 
+> ## Install the agent skill — required for agent setup
+> 
+> Installing the CLI alone does not teach your coding agent to use it. **Install
+> the skill as well**, from the project where your agent works:
+> 
+> ```sh
+> jg skill
+> ```
+> 
+> The installer detects your coding agents (Claude Code, Codex, OpenCode and
+> others) and asks where to install. Add `--global` for a user-wide install, or
+> `--yes` for unattended installation. The
+> [skill](skills/jevgrep/SKILL.md) explains installation, invocation and the meaning of returned context.
+> It leaves research and implementation decisions to the calling agent. The current repository skill
+> checks for `jg` and installs the CLI if it is missing; authentication still needs
+> your selected provider’s key. The skill installer itself does not configure credentials.
+> 
+> `jg skill` delegates to the [skills CLI](https://github.com/vercel-labs/skills)
+> and needs npm/npx plus network access. You can also run that installer directly,
+> without the CLI installed:
+> 
+> ```sh
+> npx skills add dzhng/jevgrep --skill jevgrep
+> ```
+> 
+> In 0.1.0, `jg skill` only prints the bundled skill; use `npx skills` with that version.
+> 
+> ### Upgrade
+> 
+> There is currently no `jg upgrade` command. Upgrade the CLI with npm:
+> 
+> ```sh
+> npm install -g @dzhng/jevgrep@latest
+> jg --version
+> ```
+> 
+> Update the installed skill separately by rerunning `jg skill`. Updating the npm package does not
+> overwrite skill files in your projects. See the [package guide](apps/cli/README.md)
+> for authentication details.
+> 
+> ## Start with a question, leave with source
+> 
+> Use `jg` when you know the behavior you need to understand but not where it lives:
+> 
+> ```sh
+> jg "Where is authentication checked before a request reaches a handler?" .
+> jg "How are database connections created, pooled, and closed?" ./src
+> jg "Which tests cover retry behavior when a request times out?" .
+> ```
+> 
+> Jevgrep explores the repository hierarchy and follows qualifying branches. It
+> selects files using content previews, then identifies useful source units and
+> surrounding context. It keeps qualifying file locations even when it cannot
+> confidently return an excerpt; it does not force every search into a fixed top-two
+> list.
+> 
+> The summary and compact file list come first, followed by selected source with
+> line references, then detailed declaration and call locations. Python and TypeScript/JavaScript support declaration
+> parsing; other text uses a fallback. The output is evidence for the agent to use,
+> not a generated answer or a guarantee that every relevant file was found.
+> [See a recorded output example](specs/done/jevgrep/assets/stdout-example.txt).
+> 
+> When you already know an exact symbol or path, a direct read or `rg` search may be
+> all you need. Jevgrep is most useful for questions that span unfamiliar files.
+> 
+> ## What we measured
+> 
+> **Same intelligence, ~30% lower coding-agent cost.** Both
+> Jevgrep and the no-Jev baseline solved **8/10 tasks**. Full Sol cost fell from
+> **$7.62 to $5.44**—a measured **28.6% reduction**, rounded to ~30%—including failed
+> attempts and excluding Jev cost.
+> 
+> This comparison uses ten tuned Python SWE-bench tasks, one frozen installed
+> package and the exact public skill in this repository. It measures task success
+> and cost, not a speed improvement or guaranteed savings on every repository.
+> See the [results and methodology](evals/results/relevance-threshold-2026-09-27.md)
+> for per-task costs, artifact identities and limitations. A separate
+> [speed study](evals/results/speed-2026-09-28.md) measures the follow-up local
+> optimizations with Jev’s native TypeSafe endpoint.
+> 
+> The [0.4.3 total-cost rerun](evals/results/total-cost-2026-09-28.md), including
+> Jev, measured **25.8% lower total cost with the same 8/10 tasks solved**.
+> The older ~30% graphic above reports Sol-only cost. Future benchmark totals include Jev.
+> 
+> The [0.5.0 evaluation](evals/results/combined-cost-research-2026-09-28.md) retained
+> 8/10 solves while reducing native Jev cost by about 59% versus that 0.4.3 run.
+> Combined Sol-plus-Jev cost was 2–3% higher, accepted as a small tradeoff for this
+> release. These single-run observations do not establish statistical equivalence
+> or a speed improvement.
+> 
+> ## Source, credentials, and local state
+> 
+> Searches send eligible source content to Jev through the provider selected during auth. Default
+> filesystem filtering respects ignore files and excludes hidden, dependency/build,
+> binary, and obvious credential files. These filters are not a guarantee that all
+> sensitive information has been removed; choose a search root you intend to send.
+> `jg files [root]` counts the files a search under that root may read, grouped by
+> top-level directory, with no provider key or network request. It takes the same
+> filtering flags as search.
+> To skip paths inside that root for one search, pass `--exclude` with a gitignore pattern
+> relative to the root, for example `--exclude '**/*.test.ts' --exclude 'src/generated/'`.
+> 
+> `jg auth` asks for your provider, then saves its key in an owner-only config file.
+> Re-running auth replaces that setup; searches always use the saved provider.
+> `jg doctor` checks it with synthetic input. Existing saved keys without a provider
+> remain Vercel keys. Environment-based credentials and endpoint overrides are not
+> used; run `jg auth` if you previously relied on them.
+> Evaluation answers are cached locally by default. The CLI writes its output to
+> stdout and does not create report files. Use `jg --help` for cache controls,
+> search overrides, and incomplete-result behavior.
+> 
+> ## Development
+> 
+> The repository uses TypeScript, Bun workspaces, and Turborepo. From a checkout:
+> 
+> ```sh
+> bun install --frozen-lockfile
+> bun run dev --help
+> bun run verify
+> ```
+> 
+> Verification includes Docker tests of the installed Node-only package. For the
+> reasoning behind retrieval, parsing, caching, and failure handling, start with the
+> [architecture](docs/architecture.md) and [implementation record](specs/done/jevgrep/README.md).
+> [Release guidance](scripts/RELEASING.md) covers tag-triggered npm publication and
+> verification of the exact public package.
+> 
+> [MIT](LICENSE). [Artwork and generation prompts](assets/README.md).
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/JohnHeibel/PDoomVideo)
+[GitHub](https://github.com/dzhng/jevgrep)
 
 ## 相關收錄
 
@@ -247,7 +401,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "JohnHeibel--PDoomVideo"
+> WHERE category = "Other" AND file.name != "dzhng--jevgrep"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -256,7 +410,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "JohnHeibel--PDoomVideo" AND status != "archived"
+> WHERE language = "TypeScript" AND file.name != "dzhng--jevgrep" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -265,18 +419,18 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "JohnHeibel--PDoomVideo"
+> WHERE week = "2026-W40" AND file.name != "dzhng--jevgrep"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/dzhng--jevgrep");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "JohnHeibel--PDoomVideo" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "dzhng--jevgrep" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -292,7 +446,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "JohnHeibel" AND file.name != "JohnHeibel--PDoomVideo"
+> WHERE owner = "dzhng" AND file.name != "dzhng--jevgrep"
 > SORT stars DESC
 > ```
 
@@ -300,7 +454,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/dzhng--jevgrep");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -317,7 +471,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/dzhng--jevgrep");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -350,7 +504,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/dzhng--jevgrep");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -374,7 +528,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/dzhng--jevgrep");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -411,7 +565,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/dzhng--jevgrep");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -494,7 +648,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-27** — 首次收錄
+> **2026-09-29** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -510,6 +664,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-29|2026-09-29]] — 再次上榜，1.5k stars
-- [[2026-09-28|2026-09-28]] — 再次上榜，1.3k stars
-- [[2026-09-27|2026-09-27]] — 首次收錄，1.1k stars
+- [[2026-09-29|2026-09-29]] — 首次收錄，1.5k stars

@@ -1,63 +1,63 @@
 ---
-repo: JohnHeibel/PDoomVideo
-url: https://github.com/JohnHeibel/PDoomVideo
-owner: JohnHeibel
+repo: Niko1221/Strata
+url: https://github.com/Niko1221/Strata
+owner: Niko1221
 owner_type: User
-language: JavaScript
-license: N/A
-description: "Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)"
+language: C++
+license: MIT
+description: "Qwen3.8-Flash-Next (125B MoE) on a 8GB+ NVIDIA GPU: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input."
 homepage: ""
-stars: 1457
-stars_per_day: 243
-forks: 158
-open_issues: 3
-created: 2026-09-22
-pushed_at: 2026-09-25
-first_seen: 2026-09-27
+stars: 1208
+stars_per_day: 302
+forks: 142
+open_issues: 48
+created: 2026-09-24
+pushed_at: 2026-09-29
+first_seen: 2026-09-29
 week: "2026-W40"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: ""
+release_tag: "v0.1.21"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-27
+last_reviewed: 2026-09-29
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 3
+appearances: 1
 next_review: "2026-10-02"
-contributor_count: 1
+contributor_count: 5
 engagement: "medium"
-issue_close_rate: 33
-repo_size_kb: 3577
-readme_length: 2479
+issue_close_rate: 41
+repo_size_kb: 11682
+readme_length: 9103
 bus_factor: 1
-last_release_days: -1
-release_cadence: "never"
+last_release_days: 0
+release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-27"
-star_history: "2026-09-27:1082,2026-09-28:1301,2026-09-29:1457"
+ring_history: "assess@2026-09-29"
+star_history: "2026-09-29:1208"
 tags:
   - github
   - "category/other"
-  - "lang/javascript"
+  - "lang/c++"
 aliases:
-  - "PDoomVideo"
-  - "JohnHeibel/PDoomVideo"
+  - "Strata"
+  - "Niko1221/Strata"
 ---
 
-# PDoomVideo
+# Strata
 
-**1.1k** stars · **271** stars/天 · 建立 4 天前 · JavaScript · 未標註授權
+**1.2k** stars · **302** stars/天 · 建立 4 天前 · C++ · MIT
 
 ```dataviewjs
-const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+const me = dv.page("Repos/Niko1221--Strata");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`個人專案`
+`v0.1.21`
 
 > [!summary] 一句話摘要
-> Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
+> Qwen3.8-Flash-Next (125B MoE) on a 8GB+ NVIDIA GPU: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input.
 
 ## 專案簡介
 
-Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
+Qwen3.8-Flash-Next (125B MoE) on a 8GB+ NVIDIA GPU: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/Niko1221--Strata");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/Niko1221--Strata");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,104 +142,211 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 109 |
-| Open Issues | 2 |
-| Issue 解決率 | 33% (1 closed) |
-| 最後推送 | 2026-09-25 |
-| 建立日期 | 2026-09-22 |
-| Repo 大小 | 3.5 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/JohnHeibel/PDoomVideo) |
-
-> [!info]- 主要依賴
-> `package.json` 中的核心套件：
-> `p5` `p5.brush` `puppeteer-core`
+| Forks | 142 |
+| Open Issues | 48 |
+| Issue 解決率 | 41% (34 closed) |
+| 最後推送 | 2026-09-29 |
+| 建立日期 | 2026-09-24 |
+| Repo 大小 | 11.4 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/Niko1221/Strata) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "JavaScript" : 86
->     "HTML" : 14
+>     "C++" : 60
+>     "Cuda" : 20
+>     "Python" : 15
+>     "JavaScript" : 2
+>     "CMake" : 1
+>     "CSS" : 1
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@JohnHeibel](https://github.com/JohnHeibel) | 7 |
+> | [@Niko1221](https://github.com/Niko1221) | 98 |
+> | [@pipeob0](https://github.com/pipeob0) | 7 |
+> | [@j-luwierski](https://github.com/j-luwierski) | 5 |
+> | [@Mirtraxxx](https://github.com/Mirtraxxx) | 3 |
+> | [@code-martin](https://github.com/code-martin) | 3 |
+
+**最新版本**：v0.1.21 — Strata v0.1.21 (2026-09-29)
+
+> [!info]- Release Notes
+> **One model across two or three NVIDIA cards (experimental).**
+> 
+> - **Layer split across GPUs:**
+>   - Setup: `START-HERE.bat --setup --gpus 0,2` (Linux: `./setup.sh --setup --gpus 0,2`), or `"gpu": [0, 2]` in a run config.
+>   - Each card runs a range of the model's layers and keeps the experts of those layers in its own VRAM; the last card also runs the output head and the draft layer.
+>   - Prompts flow through the cards in a pipeline: the next card reads chunk c while the first reads chunk c+1.
+>   - Conversation checkpoints, adaptive expert swaps and the PCIe share work per card.
+>   - No NVLink or peer-to-peer access needed: cards in x4 slots work.
+> - **Measured** on an RTX 5080 + RTX 3090 (Ryzen 9 9950X3D) with the Coder, 32K context:
+>   - prompts 18-20% faster than the 5080 alone: 2,357 vs 1,970 tokens/s at 28K tokens;
+>   - decoding on par (84 / 110 tokens/s, story / code), because both caches then hold ~99% of the routed experts and the per-layer GPU time decides.
+> - **Placement:**
+>   - `--layer-split auto` (the default with several cards) places the split from each card's free VRAM and speed. It picked a split within 0-12% of the best one measured.
+>   - List the fastest card first, and leave out a much slower one: an RTX 2080 Ti as a third card made the pair slower.
+>   - Details, limits and all measurements: [docs/MULTI_GPU.md](https://github.com/Niko1221/Strata/blob/main/docs/MULTI_GPU.md) and `bench/results/2026-09-29-layer-split/`.
+> - **Also included:**
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-22 ~ 2026-09-25）
-> **活躍天數** 3 天 · **最新 commit** Update README.md with osmarks interpretation
+> [!abstract] 最近 10 次 commit（2026-09-28 ~ 2026-09-29）
+> **活躍天數** 2 天 · **最新 commit** Engine 0.1.21: one model across two or three GPUs (layer split, experimental); setup requires it
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#3](https://github.com/JohnHeibel/PDoomVideo/issues/3) | What prompts did you use? | 1 | 0 |
-> | [#2](https://github.com/JohnHeibel/PDoomVideo/issues/2) | Which effort level did you use for the final output? | 0 | 0 |
+> | [#95](https://github.com/Niko1221/Strata/issues/95) | Add support for multi GPU | 6 | 0 |
+> | [#77](https://github.com/Niko1221/Strata/issues/77) | two GPUs | 2 | 0 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # I'm Upping My P(doom)
+> Strata
 > 
-> Source code for the [Claude Opus 5.5 music video for *I'm Upping My P(doom)*](https://youtu.be/8j-hR4fJywU).
+> Run a 125-billion-parameter AI model on a normal gaming PC
+> one NVIDIA card (12-24 GB) + 64 GB of RAM · Windows or Linux · one click to install
 > 
-> [I've also made a new more reliable and general base for making Claude animations with Claude Opus 5.5.](https://github.com/JohnHeibel/ClaudeAnimationBase) 
+> A voxel pagoda garden, 1 shot prompt running on an RTX 5070 with Strata (IQ3_S, 128K context) ·
+> full video (49 s)
 > 
-> Highly recommend checking it out!
+> Strata runs **[Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)** - a large, smart AI model that
+> normally needs a server - on your own PC. It writes its answers at **60-95 tokens per second** (a token is about ¾
+> of a word): faster than you can read.
 > 
-> ## Credits
+> - **Free and open source.**
 > 
-> - **Inspired by:** [this post on X](https://x.com/slimer48484/status/2097752569212756134)
-> - **Song:** as far as I could find, it comes from [this YouTube video from 2024](https://www.youtube.com/watch?v=uEB5E67vcPA)
-> - **Lyrics** from Osmarks showing the original udio generations and [the interpretation of each lyric](https://docs.osmarks.net/hypha/p(doom)_song_objectively_correct_interpretation)
+> > **Jump to:** [How fast?](#how-fast-is-it) · [Which model?](#which-model-should-i-pick) · [Install](#install) ·
+> > [Using it](#using-it) · [Problems?](#something-went-wrong) · [How it works](#how-does-it-work) ·
+> > [All the details](docs/DETAILS.md)
 > 
-> ## How it was made
+> ---
 > 
-> The video took two generations, both in Claude Code:
 > 
-> 1. **First generation** ([`legacy/`](legacy/)): Claude Opus 5.5 (Medium)
-> 2. **Second generation** (everything else): Claude Opus 5.5
+> ## Install
 > 
-> **Everything in this repository was generated by the model.** No scene ideas were specified. The only direction was to:
+> **You need:** an NVIDIA RTX 30, 40 or 50 card with 12 GB of VRAM or more, enough RAM for the size you pick (above),
+> ~80 GB of free disk space (an SSD makes the first start much faster), and Windows 10/11 or Linux. The only thing you
+> install yourself is a current **NVIDIA driver** ([nvidia.com/drivers](https://www.nvidia.com/drivers) or the NVIDIA
+> App). Everything else - Python, the engine, the model - is set up for you.
 > 
-> - use the Clawd character design
-> - give each lyric interesting visuals and transitions
+> **Windows**
 > 
-> [`ANIMATION_GUIDE.md`](ANIMATION_GUIDE.md) was written by Opus to brief the subagents it ran in parallel.
+> 1. [Download this project](https://github.com/Niko1221/Strata/archive/refs/heads/main.zip) and unzip it (or `git clone` it).
+> 2. Double-click **`START-HERE.bat`**.
+> 3. Answer a few questions - or just press Enter each time for the recommended choice:
+>    - **Which model and size?** The original or Swift 1.5, and Q2_0, IQ2_XS, IQ3_XXS or IQ3_S - see [above](#which-model-should-i-pick)
+>    - **How much context?** How much text it can keep in mind at once (it suggests one for your card)
+>    - **Images?** Whether it should also read pictures
+>    - **Experimental speed projection?** Off unless you say yes - [read what it does](docs/DETAILS.md#experimental-speed-projection-experimental-off-by-default) first
 > 
-> [`STORYBOARD.md`](STORYBOARD.md) was also written by Opus after the first generation, after being instructed to use P5 brushstrokes, make each scene visually interesting, and make every scene transition into the next.
-> ## What's here
+> Then it downloads everything (the model is ~70 GB, so the first time takes a while - you can stop and it picks up
+> where it left off) and **starts the model**. Your browser opens the Strata app at `http://127.0.0.1:8080`.
 > 
-> | Path | What it is |
-> |---|---|
-> | [`src/ch/`](src/ch/) | The video's nine chapters, one file each |
-> | [`src/`](src/) | Shared code: Clawd, the guest characters, props, lyrics and the timeline |
-> | [`studio.html`](studio.html) | The page every frame is painted in, using p5.js and p5.brush |
-> | [`render.mjs`](render.mjs) | Renders frames in headless Chrome and encodes the MP4 with ffmpeg |
-> | [`STORYBOARD.md`](STORYBOARD.md) | Opus's shot-by-shot plan |
-> | [`ANIMATION_GUIDE.md`](ANIMATION_GUIDE.md) | Opus's style and code guide for its subagents |
-> | [`legacy/`](legacy/) | The first generation |
+> > **While the model starts, your PC can be slow or stop responding for 1-3 minutes** (longest the first time): Strata
+> > loads 35-55 GB into your RAM and locks part of it for the graphics card. That's normal - wait, and don't close the
+> > window. The window tells you what it is doing.
 > 
-> ## Rendering
+> **Next time**, just double-click `START-HERE.bat` again: it starts right away, nothing is downloaded twice. Close its
+> window to stop the model.
 > 
-> You need Node.js, Google Chrome and ffmpeg. The song is included at `assets/pdoom.mp3`.
+> **Updating:** download the new version and unzip it anywhere (or `git pull`), then run `START-HERE.bat` in it. The
+> model files are kept in a `Strata-data` folder next to your Strata folder, so a new copy finds them and sets itself up
+> the same way - nothing big is downloaded again.
 > 
-> ```bash
-> npm install
-> node render.mjs --frames=0:156.6 --workers=4   # paint every frame into out/frames (resumable)
-> node render.mjs --encode --out=out/pdoom.mp4   # join the frames and the song into an MP4
-> ```
+> **Linux:** run `./setup.sh` - same questions, same result.
 > 
-> If Chrome isn't installed at the default Windows path, add `--chrome=`.
+> 
+> ## How fast is it?
+> 
+> Measured on an RTX 5070 (12 GB), a Ryzen 5 7600 and 64 GB of RAM:
+> 
+> | Size | Writes answers (short chat) | Writes answers (128K context) | Reads your prompt |
+> | --- | ---: | ---: | ---: |
+> | **Q2_0** | 90 tokens/s | 67 tokens/s | 1,310 tokens/s |
+> | **IQ2_XS** | 74 tokens/s | 60 tokens/s | 1,240 tokens/s |
+> | **IQ3_XXS** | 62 tokens/s | 46 tokens/s | 1,110 tokens/s |
+> | **IQ3_S** | 52 tokens/s | 41 tokens/s | 1,070 tokens/s |
+> | **Coder** (IQ1_M) | 51 tokens/s | 44 tokens/s | 1,300 tokens/s |
+> 
+> - **Writes answers** = how fast the reply appears (tokens per second).
+> - **Reads your prompt** = how fast it takes in what you send (long documents, code, chat history), measured on a
+>   32K-token prompt; a 4K prompt reads at 740-1,000 tokens/s. A 32K prompt takes about 25 seconds with Q2_0.
+> 
+> A card with more VRAM is faster, because more of the model fits on the GPU: an RTX 3090 (24 GB) should do roughly
+> 100-140 tokens per second. All measurements, long-context numbers and estimates for other cards are in the
+> [details](docs/DETAILS.md#speed-measured).
+> 
+> Every PC is different: `START-HERE.bat --calibrate` measures a few engine settings on yours and keeps the fastest
+> (about 5-10 minutes; on the PC above it made the Coder 7% faster).
+> 
+> **Two or three NVIDIA cards?** `START-HERE.bat --setup --gpus 0,2` splits the model's layers across them (experimental):
+> each card keeps the experts of its own layers, and prompts flow through the cards in a pipeline. On an RTX 5080 +
+> RTX 3090 it read prompts 18-20% faster than the 5080 alone, with decoding on par. See [docs/MULTI_GPU.md](docs/MULTI_GPU.md).
+> 
+> 
+> ## Which model should I pick?
+> 
+> **The size** (the same model, compressed more or less):
+> 
+> | Model | RAM+VRAM Requirements | Speed | Quality |
+> | --- | ---: | --- | --- |
+> | **Q2_0** | 37.6 GB | fastest | good |
+> | **IQ2_XS** | 39.2 GB | fast | better (**recommended**) |
+> | **IQ3_XXS** | 47.0 GB | slower | great |
+> | **IQ3_S** | 54.8 GB | slowest | best: matches the full model on the published tests (original model only) |
+> 
+> **Will it fit?** Shard 1 is the part of the model that gets loaded when it starts: its experts go into your **RAM**,
+> the rest onto your graphics card (the second shard, a 29 GB lookup table, stays on the SSD). So it fits when your
+> **RAM is at least shard 1 + about 10 GB** for Windows and your other programs. With 64 GB of RAM every size fits
+> (IQ3_S with little else open); with 48 GB, Q2_0 and IQ2_XS. A bigger graphics card makes it faster, but it doesn't
+> lower the RAM needed.
+> 
+> **The version:**
+> 
+> - **Qwen3.8-Flash-Next** - the original.
+> - **[Coder](https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF)** - ISTA-DASLab's coding
+>   version: half of the experts removed, keeping the ones that code, tool use and images need (91% of the full model's
+>   SWE-bench Verified score, 99% of LiveCodeBench, by its authors). One size (IQ1_M: its experts stored like IQ3_S):
+>   shard 1 is **29.6 GB**, so it fits a PC with **32 GB of RAM**, runs 262K context on 64 GB, and reads long prompts
+>   the fastest of all. Weaker outside coding.
+> - **[Swift 1.5](https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF)** - a fine-tune by UkisAI
+>   that thinks much shorter before answering, so you get the answer sooner, with about the same quality. Same speed per
+>   token, and about the same RAM as the same size of the original (no IQ3_S). Its own license applies (see its page).
+> 
+> Not sure? Take **IQ2_XS** - or the **Coder** if you mainly write code, or have 32-48 GB of RAM. You can add another
+> one later with `SETUP.bat` (the same as `START-HERE.bat --setup`; on Linux `./setup.sh --setup`).
+> 
+> For **OrcaRouter's Flash-Next Uncensored IQ3_XXS**, see the [manual compatibility setup](docs/ORCA.md).
+> It needs an explicit packing conversion and is not an installer menu option.
+> 
+> 
+> ## Using it
+> 
+> The Strata app's Monitor (left) while a coding agent writes the pagoda garden from the video (right)
+> 
+> - **In the browser:** `http://127.0.0.1:8080` - the Strata app (it opens by itself when the model starts): **Chat**, a
+>   live **Monitor** of the model and your GPU/CPU/RAM, and **About** with the settings and addresses.
+> - **Chat in the terminal:** `.venv\Scripts\python chat.py`
+> - **Your apps and coding agents:** add it as an "OpenAI-compatible" provider with base URL
+>   **`http://127.0.0.1:8080/v1`**, any API key and any model name. Apps that use Anthropic's API: `http://127.0.0.1:8080/v1/messages`.
+> - **Thinking:** the model thinks before it answers. Choose **off, low, medium or high** - in the chat page menu, with
+>   `/think low` in `chat.py`, or with your app's "reasoning effort" setting. Off is fastest; high is best for hard questions.
+> - **Pictures:** in the chat page click **Picture**; in `chat.py` type `/image `; in apps just attach them.
+> - **From your phone or another PC:** `START-HERE.bat --setup --host 0.0.0.0 --api-key `, then open the
+>   address the server window prints; see the [details](docs/DETAILS.md#using-it).
+> - **Experimental speed projection (off b
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/JohnHeibel/PDoomVideo)
+[GitHub](https://github.com/Niko1221/Strata)
 
 ## 相關收錄
 
@@ -247,7 +354,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "JohnHeibel--PDoomVideo"
+> WHERE category = "Other" AND file.name != "Niko1221--Strata"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -256,7 +363,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "JavaScript" AND file.name != "JohnHeibel--PDoomVideo" AND status != "archived"
+> WHERE language = "C++" AND file.name != "Niko1221--Strata" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -265,18 +372,18 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "JohnHeibel--PDoomVideo"
+> WHERE week = "2026-W40" AND file.name != "Niko1221--Strata"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/Niko1221--Strata");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "JohnHeibel--PDoomVideo" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "Niko1221--Strata" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -292,7 +399,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "JohnHeibel" AND file.name != "JohnHeibel--PDoomVideo"
+> WHERE owner = "Niko1221" AND file.name != "Niko1221--Strata"
 > SORT stars DESC
 > ```
 
@@ -300,7 +407,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/Niko1221--Strata");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -317,7 +424,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/Niko1221--Strata");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -350,7 +457,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/Niko1221--Strata");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -374,7 +481,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/Niko1221--Strata");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -411,7 +518,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/JohnHeibel--PDoomVideo");
+> const me = dv.page("Repos/Niko1221--Strata");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -494,7 +601,7 @@ Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-27** — 首次收錄
+> **2026-09-29** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -510,6 +617,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-29|2026-09-29]] — 再次上榜，1.5k stars
-- [[2026-09-28|2026-09-28]] — 再次上榜，1.3k stars
-- [[2026-09-27|2026-09-27]] — 首次收錄，1.1k stars
+- [[2026-09-29|2026-09-29]] — 首次收錄，1.2k stars
