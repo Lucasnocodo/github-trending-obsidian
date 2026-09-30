@@ -7,9 +7,9 @@ language: TypeScript
 license: MIT
 description: "Code-rendered music video for \"I'm Upping My P(doom)\""
 homepage: ""
-stars: 1830
-stars_per_day: 458
-forks: 191
+stars: 2011
+stars_per_day: 402
+forks: 209
 open_issues: 0
 created: 2026-09-24
 pushed_at: 2026-09-28
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 2
-next_review: "2026-10-02"
+appearances: 3
+next_review: "2026-10-03"
 contributor_count: 1
 engagement: "medium"
 issue_close_rate: 33
@@ -42,7 +42,7 @@ last_release_days: -1
 release_cadence: "never"
 verdict: ""
 ring_history: "assess@2026-09-28"
-star_history: "2026-09-28:1350,2026-09-29:1830"
+star_history: "2026-09-28:1350,2026-09-29:1830,2026-09-30:2011"
 tags:
   - github
   - "category/other"
@@ -545,5 +545,6 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-30|2026-09-30]] — 再次上榜，2.0k stars
 - [[2026-09-29|2026-09-29]] — 再次上榜，1.8k stars
 - [[2026-09-28|2026-09-28]] — 首次收錄，1.4k stars

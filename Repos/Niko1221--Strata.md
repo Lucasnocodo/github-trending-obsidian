@@ -7,10 +7,10 @@ language: C++
 license: MIT
 description: "Qwen3.8-Flash-Next (125B MoE) on a 8GB+ NVIDIA GPU: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input."
 homepage: ""
-stars: 1208
-stars_per_day: 302
-forks: 142
-open_issues: 48
+stars: 1968
+stars_per_day: 394
+forks: 229
+open_issues: 68
 created: 2026-09-24
 pushed_at: 2026-09-29
 first_seen: 2026-09-29
@@ -30,8 +30,8 @@ use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 1
-next_review: "2026-10-02"
+appearances: 2
+next_review: "2026-10-03"
 contributor_count: 5
 engagement: "medium"
 issue_close_rate: 41
@@ -42,7 +42,7 @@ last_release_days: 0
 release_cadence: "weekly"
 verdict: ""
 ring_history: "assess@2026-09-29"
-star_history: "2026-09-29:1208"
+star_history: "2026-09-29:1208,2026-09-30:1968"
 tags:
   - github
   - "category/other"
@@ -617,4 +617,5 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
+- [[2026-09-30|2026-09-30]] — 再次上榜，2.0k stars
 - [[2026-09-29|2026-09-29]] — 首次收錄，1.2k stars

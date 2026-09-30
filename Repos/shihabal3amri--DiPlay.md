@@ -1,63 +1,63 @@
 ---
-repo: tobi/disktree
-url: https://github.com/tobi/disktree
-owner: tobi
+repo: shihabal3amri/DiPlay
+url: https://github.com/shihabal3amri/DiPlay
+owner: shihabal3amri
 owner_type: User
-language: Rust
-license: MIT
-description: "A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPUI."
-homepage: ""
-stars: 1933
-stars_per_day: 387
-forks: 123
-open_issues: 26
+language: Kotlin
+license: GPL-3.0
+description: "Independent CarPlay receiver for compatible Android head units. Wired and wireless public preview."
+homepage: "https://shihabal3amri.github.io/DiPlay/"
+stars: 1109
+stars_per_day: 222
+forks: 180
+open_issues: 39
 created: 2026-09-24
-pushed_at: 2026-09-27
-first_seen: 2026-09-27
+pushed_at: 2026-09-29
+first_seen: 2026-09-30
 week: "2026-W40"
 month: "2026-09"
 category: "Other"
 subcategory: ""
-release_tag: "v0.10.1"
+release_tag: "v0.2.7"
 install_complexity: "unknown"
 status: to-review
 my_rating: 0
 score_confidence: 0
 score_interest: 0
 score_risk: 0
-last_reviewed: 2026-09-27
+last_reviewed: 2026-09-30
 use_case: ""
 priority: high
 ring: assess
 discovered_via: "GitHub Trending"
-appearances: 4
+appearances: 1
 next_review: "2026-10-03"
-contributor_count: 5
-engagement: "low"
-issue_close_rate: 50
-repo_size_kb: 1982
-readme_length: 10000
-bus_factor: 1
-last_release_days: 2
+contributor_count: 3
+engagement: "medium"
+issue_close_rate: 17
+repo_size_kb: 4366
+readme_length: 4956
+bus_factor: 2
+last_release_days: 1
 release_cadence: "weekly"
 verdict: ""
-ring_history: "assess@2026-09-27"
-star_history: "2026-09-27:1351,2026-09-28:1685,2026-09-29:1844,2026-09-30:1933"
+ring_history: "assess@2026-09-30"
+star_history: "2026-09-30:1109"
 tags:
   - github
   - "category/other"
-  - "lang/rust"
+  - "lang/kotlin"
 aliases:
-  - "disktree"
-  - "tobi/disktree"
+  - "DiPlay"
+  - "shihabal3amri/DiPlay"
 ---
 
-# disktree
+# DiPlay
 
-**1.4k** stars · **676** stars/天 · 建立 2 天前 · Rust · MIT
+**1.1k** stars · **222** stars/天 · 建立 5 天前 · Kotlin · GPL-3.0
 
 ```dataviewjs
-const me = dv.page("Repos/tobi--disktree");
+const me = dv.page("Repos/shihabal3amri--DiPlay");
 if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
   const parts = [];
   if (me.my_rating > 0) parts.push("\u2605".repeat(me.my_rating) + "\u2606".repeat(5 - me.my_rating));
@@ -70,20 +70,20 @@ if (me && ((me.verdict && me.verdict !== "") || (me.my_rating || 0) > 0)) {
 > [!warning] AI 摘要產生失敗
 > 此筆記的中文翻譯和分析未能成功產生。以下為原始資料，你可以手動補充。
 
-`v0.10.1`
+`v0.2.7`
 
 > [!summary] 一句話摘要
-> A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPUI.
+> Independent CarPlay receiver for compatible Android head units. Wired and wireless public preview.
 
 ## 專案簡介
 
-A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPUI.
+Independent CarPlay receiver for compatible Android head units. Wired and wireless public preview.
 
 ## 健康度儀表板
 
 > [!abstract]- 專案健康度綜合評估
 > ```dataviewjs
-> const me = dv.page("Repos/tobi--disktree");
+> const me = dv.page("Repos/shihabal3amri--DiPlay");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : null;
@@ -118,7 +118,7 @@ A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPU
 
 > [!abstract]- CHAOSS 社群健康度雷達
 > ```dataviewjs
-> const me = dv.page("Repos/tobi--disktree");
+> const me = dv.page("Repos/shihabal3amri--DiPlay");
 > if (me) {
 >   const pushed = me.pushed_at ? new Date(me.pushed_at.toString()) : null;
 >   const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / 86400000) : 999;
@@ -142,263 +142,134 @@ A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPU
 
 | 欄位 | 值 |
 | --- | --- |
-| Forks | 89 |
-| Open Issues | 6 |
-| Issue 解決率 | 50% (6 closed) |
-| 最後推送 | 2026-09-27 |
+| Forks | 180 |
+| Open Issues | 39 |
+| Issue 解決率 | 17% (8 closed) |
+| 最後推送 | 2026-09-29 |
 | 建立日期 | 2026-09-24 |
-| Repo 大小 | 1.9 MB |
-| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/tobi/disktree) |
-
-> [!info]- 主要依賴
-> `Cargo.toml` 中的核心套件：
-> `resolver` `members` `version` `edition` `rust-version` `license` `repository` `disktree-core` `anyhow` `rayon` `rustc-hash` `unsafe_code` `unused_lifetimes` `trivial_casts` `trivial_numeric_casts`
+| 官方網站 | [Link](https://shihabal3amri.github.io/DiPlay/) |
+| Repo 大小 | 4.3 MB |
+| OpenSSF Scorecard | [查看](https://scorecard.dev/viewer/?uri=github.com/shihabal3amri/DiPlay) |
 
 > [!info]- 語言組成
 > ```mermaid
 > pie title 語言組成
->     "Rust" : 99
->     "Makefile" : 1
+>     "Kotlin" : 97
+>     "HTML" : 2
 > ```
 
 > [!info]- 主要貢獻者
 > | 貢獻者 | Commits |
 > | --- | --- |
-> | [@tobi](https://github.com/tobi) | 63 |
-> | [@mgpai22](https://github.com/mgpai22) | 6 |
-> | [@ai94iq](https://github.com/ai94iq) | 4 |
-> | [@olegius88](https://github.com/olegius88) | 4 |
-> | [@btsouth](https://github.com/btsouth) | 4 |
+> | [@shihabal3amri](https://github.com/shihabal3amri) | 21 |
+> | [@georgiyrr](https://github.com/georgiyrr) | 16 |
+> | [@baileileicn](https://github.com/baileileicn) | 6 |
 
-**最新版本**：v0.10.1 — disktree 0.10.1 (2026-09-25)
+**最新版本**：v0.2.7 — DiPlay 0.2.7 — Five languages, steering controls and dashboard features (2026-09-29)
 
 > [!info]- Release Notes
-> ## What's Changed
-> * gpui-omarchy 0.1.3, and the quarantine fix for macOS downloads by @tobi in https://github.com/tobi/disktree/pull/22
-> * release 0.10.1 by @tobi in https://github.com/tobi/disktree/pull/24
+> # DiPlay 0.2.7
 > 
+> - App interface in English, Simplified Chinese, Arabic, Russian and Spanish; synchronized Android app-language settings.
+> - Steering-wheel media controls and long-press Siri on supported BYD firmware while CarPlay is on screen.
+> - Dashboard display choices: map, turn card, or both; corrected dashboard keyframe recovery.
+> - Optional ADB feature on supported DiLink 5.0: pause the dashboard map stream when its display mode hides the map.
+> - Optional ADB battery reporting for Apple Maps, with warning threshold, charging-connector selection and a checked reconnect action.
+> - Audio playback reliability fixes and clearer dashboard settings.
 > 
-> **Full Changelog**: https://github.com/tobi/disktree/compare/v0.10.0...v0.10.1
+> ## Downloads and support
+> 
+> Install on the car, not the phone. Download and installation guide: https://shihabal3amri.github.io/DiPlay/
+> 
+> These projects focus on BYD cars. They may work on other brands, but other brands are unsupported and there are no plans to add support or fix brand-specific incompatibilities.
+> 
+> Install over the previous public release to retain settings; the signing certificate and production package ID are unchanged. HUD Test builds use separate package IDs.
+> 
+> ## Validation
+> 
+> 324 unit tests passed, with release lint and a signed release build. Built locally from the tagged source. Production package, version, non-debuggable status, signing continuity and source/archive contents are verified before publication. No new physical-car validation was performed for these packaged releases.
+> 
+> ...（完整內容見 GitHub）
 
 ## 開發動態
 
-> [!abstract] 最近 10 次 commit（2026-09-27 ~ 2026-09-27）
-> **活躍天數** 1 天 · **最新 commit** Merge pull request #44 from tobi/mount-dedup-fix
+> [!abstract] 最近 10 次 commit（2026-09-28 ~ 2026-09-29）
+> **活躍天數** 3 天 · **最新 commit** Prepare DiPlay 0.2.7 release and clarify BYD support scope
 
 ## 熱門議題
 
 > [!question]- 社群最關注的問題
 > | # | Issue | Reactions | Comments |
 > | --- | --- | --- | --- |
-> | [#38](https://github.com/tobi/disktree/issues/38) | Missing disk/partition selection for a check | 0 | 0 |
-> | [#29](https://github.com/tobi/disktree/issues/29) | make install from a fresh clone fails when rustup's default  | 0 | 0 |
+> | [#42](https://github.com/shihabal3amri/DiPlay/issues/42) | [Bug]  a loop error occurred After upgrading to 0.2.6 | 2 | 4 |
+> | [#27](https://github.com/shihabal3amri/DiPlay/issues/27) | ［Feature Request］Supports custom audio channels / 希望支持自定义音频通 | 2 | 1 |
+> | [#11](https://github.com/shihabal3amri/DiPlay/issues/11) | [Feedback/Bug] BYD DiLink: Steering wheel keys unresponsiven | 2 | 1 |
+> | [#28](https://github.com/shihabal3amri/DiPlay/issues/28) | Can it be compatible with Android 4.4 | 1 | 3 |
+> | [#25](https://github.com/shihabal3amri/DiPlay/issues/25) | We need support for Picture-in-Picture and floating window f | 1 | 2 |
 
 ## README 摘錄
 
 > [!info]- 展開查看原文 README
-> # disktree
+> # DiPlay
 > 
-> Find what is filling a disk, mark what should go, and remove it — with the
-> volume's free space in view the whole time.
+> **CarPlay for compatible BYD Android head units.** Wired and wireless, with the familiar DiAuto interface. Independent app: `com.shihab.diplay`.
 > 
-> disktree is a treemap for Omarchy. It scans your home directory by default,
-> draws every directory as a nested mosaic sized by what it really costs on disk,
-> and lets you walk into it with the keyboard or the mouse. Mark as much as you
-> like; nothing happens until you review the list and commit, and the permanent
-> path always asks first.
+> > **BYD support scope:** These projects focus on BYD cars. They may work on other brands, but other brands are unsupported and there are no plans to add support or fix brand-specific incompatibilities.
 > 
-> Built with [GPUI](https://gpui-kit.com/) through
-> [gpui-omarchy](https://github.com/huacnlee/gpui-omarchy), so it follows your
-> Omarchy theme and behaves like the rest of the desktop.
+> [Download & website](https://shihabal3amri.github.io/DiPlay/) · [Release](https://github.com/shihabal3amri/DiPlay/releases/tag/v0.2.7) · [Report a problem](https://github.com/shihabal3amri/DiPlay/issues/new/choose)
 > 
+> ## 0.2.7 — public preview
 > 
-> ## Install
+> Install on the **car**, not the iPhone. No jailbreak, dongle, Mac, account or authentication server is required for use. Core CarPlay does not require ADB; the optional dashboard-mode and battery features do. Your head unit must permit APK installation. Wireless supports Wi-Fi Direct or the car’s existing hotspot; Wi-Fi Direct requires Android 10+; the APK supports Android 9+ for wired use.
 > 
-> Download `disktree-*-x86_64-linux.tar.gz` (`aarch64-linux` on ARM) from the
-> [latest release](https://github.com/tobi/disktree/releases/latest), unpack
-> it, and run `./install.sh` inside (or just copy `disktree` onto your
-> `PATH`). Or build it:
+> - Wired USB and wireless CarPlay with local authentication.
+> - BYD HUD navigation with arrows, distance and street names on verified firmware.
+> - Car hotspot support, improved audio buffering and saved receive diagnostics.
+> - Automatic address discovery, fixed-channel Wi-Fi fallbacks and successful-configuration memory.
+> - Icon/text size, resolution and frame rate; applying a display change reconnects CarPlay.
+> - Local diagnostic export. Reports are sent only if you choose to share them.
+> - Separate installation alongside DiAuto. Run one projection app at a time.
 > 
-> ```sh
-> git clone https://github.com/tobi/disktree
-> cd disktree
-> make install
-> ```
+> This is **not an Apple-certified product**. The APK bundles an experimental accessory identity recovered from public Carlinkit firmware, not a newly provisioned MFi identity for DiPlay. A bundled private key is extractable. Acceptance after future iOS updates, reliability across head units and suitability of that identity for general distribution are unresolved. This release invites community testing; it is not a guarantee of universal compatibility.
 > 
-> `make install` builds a release binary and puts three things under `~/.local`
-> (no root needed):
+> Earlier releases were tested on the development DiLink5.1 car: live windshield guidance and street names work, Car hotspot now starts CarPlay, and Wi-Fi Direct performance is substantially improved. Occasional audio cutouts remain and are deferred to a later update. The newly packaged 0.2.7 APK has not had a separate on-car test. Broader head-unit and iOS compatibility is not guaranteed. The HUD firmware scope and cleanup limits are documented in [BYD navigation](docs/BYD_NAVIGATION.md).
 > 
-> - `~/.local/bin/disktree`
-> - a desktop entry, so disktree is in the launcher and in a file manager's
->   **Open with** for a directory (it adds a handler; it never becomes the
->   default)
-> - an icon
+> ## What’s new in 0.2.7
 > 
-> `sudo make install PREFIX=/usr/local` installs system-wide; `make uninstall`
-> removes exactly what was installed.
+> - App interface in English, Simplified Chinese, Arabic, Russian and Spanish; synchronized Android app-language settings.
+> - Steering-wheel media controls and long-press Siri on supported BYD firmware while CarPlay is on screen.
+> - Dashboard display choices: map, turn card, or both; corrected dashboard keyframe recovery.
+> - Optional ADB feature on supported DiLink 5.0: pause the dashboard map stream when its display mode hides the map.
+> - Optional ADB battery reporting for Apple Maps, with warning threshold, charging-connector selection and a checked reconnect action.
+> - Audio playback reliability fixes and clearer dashboard settings.
 > 
-> On Arch, including Omarchy, disktree is in the AUR:
-> [`disktree`](https://aur.archlinux.org/packages/disktree) builds each release
-> from source, and
-> [`disktree-bin`](https://aur.archlinux.org/packages/disktree-bin) installs
-> the release binary:
+> ## Documentation
 > 
-> ```sh
-> yay -S disktree-bin
-> ```
+> - [Install and connect](docs/INSTALL.md)
+> - [Compatibility and troubleshooting](docs/COMPATIBILITY.md)
+> - [Privacy and diagnostic reports](docs/PRIVACY.md)
+> - [Build from source](docs/BUILD.md)
+> - [Validation](docs/VALIDATION.md)
+> - [Release notes](CHANGELOG.md)
+> - [Credits and licenses](docs/THIRD_PARTY_NOTICES.md)
 > 
-> You need Rust 1.97 or newer and a Wayland or X11 session with a GPU that GPUI
-> can drive (Vulkan). Distributions often package an older Rust;
-> [rustup](https://rustup.rs) installs a current one. The repo pins 1.97 in
-> `rust-toolchain.toml`, so with rustup the right toolchain is fetched on the
-> first build even if `rustup default` points at something older.
+> The website is available in English, Arabic, Russian, Spanish and Simplified Chinese. The app interface supports those same five languages. Choose the app language in Settings; on Android 13+, it stays synchronized with Android’s per-app language setting.
 > 
+> ## Source and credits
 > 
-> ## What it measures
+> Based on [xcertplay](https://github.com/shilapi/xcertplay), GPL-3.0. The home/settings UI and website adapt [DiAuto](https://github.com/shihabal3amri/DiAuto), AGPL-3.0; that license is included in `docs/licenses`. Preserve those notices when distributing modifications. CarPlay and its icon belong to Apple Inc.; no Apple or BYD affiliation or endorsement is implied.
 > 
-> - **Disk usage** by default: `st_blocks × 512`, the number `du` reports and the
->   space that actually comes back when a file is deleted. Apparent size (what
->   `ls -l` shows) is one toggle away.
-> - **Hardlinks once.** Two names for one inode cost one file.
-> - **Hidden entries included**, because `~/.cache` is often the biggest thing in
->   a home directory. Symlinks are not followed.
+> This repository starts with a clean public source snapshot. Local research, tester reports and release-signing secrets are excluded. The complete source corresponding to the APK is provided with every release; experimental runtime identity assets are described separately in the build instructions and notices.
 > 
-> The scan follows [dust](https://github.com/bootandy/dust)'s approach: one rayon
-> scope per root, a completion counter per directory so no directory is built
-> before its last subdirectory lands, and one bottom-up pass that aggregates sizes
-> and removes duplicate hardlinks.
+> ## Local release packaging
 > 
-> 
-> ## What it refuses to do
-> 
-> The removal rules live in `crates/disktree-core/src/removal.rs`, and each one is
-> tested:
-> 
-> - only paths under the scanned root can be removed;
-> - the filesystem root, the scanned root and your home directory are refused;
-> - a mount point is refused, and so is anything with a mount point inside it,
->   since removing it would reach into another filesystem; permanent deletion
->   also stops at a mount boundary rather than descending into one (a btrfs
->   subvolume that is not mounted goes with its directory, as the scan shows
->   it);
-> - a directory holding your home directory or a system tree is refused (on
->   macOS `/Users` is on the same volume as `/`, and `/opt` holds
->   `/opt/homebrew`);
-> - system trees (`/usr`, `/etc`, `/boot`, `/var/lib`, `/nix/store`,
->   `/gnu/store`, Homebrew's prefix on macOS and Linux, …) are
->   refused even where permissions would allow it: packages own them, and
->   pacman, paccache or `journalctl --vacuum` are the tools;
-> - a symlink is unlinked, never followed;
-> - nothing is passed through a shell — a file called `-rf` is just a file;
-> - selecting a checkout never runs a program it names: git is asked with its
->   fsmonitor, hooks and pager off, and a checkout that defines its own filter
->   drivers is not asked for its status at all ("changes unknown").
-> 
-> 
-> ### macOS
-> 
-> Download `disktree-*-aarch64-macos.zip` (`x86_64-macos` for an Intel Mac)
-> from the [latest release](https://github.com/tobi/disktree/releases/latest),
-> unzip it, and drag `disktree.app` into Applications. macOS 11 or newer.
-> 
-> A release that was not signed and notarized is stopped by Gatekeeper: macOS
-> says it "is damaged and can't be opened" or "cannot be verified". The app is
-> fine; the browser marked the download as quarantined. Clear the mark once:
-> 
-> ```sh
-> xattr -dr com.apple.quarantine /Applications/disktree.app
-> ```
-> 
-> (Or open it once, then choose **Open Anyway** in System Settings › Privacy &
-> Security.)
-> 
-> Or build it, with Rust 1.97 or newer and Xcode or its Command Line Tools.
-> macOS does not come with Rust; install it with [rustup](https://rustup.rs).
-> 
-> ```sh
-> make install     # ~/Applications/disktree.app, and ~/.local/bin/disktree
-> make uninstall
-> ```
-> 
-> To see everything, give disktree **Full Disk Access** in System Settings ›
-> Privacy & Security (the panel offers a button when it is missing), then
-> reopen it. Without it macOS hides Mail, Messages, Safari, other apps' data
-> and the Trash, and disktree counts them as unreadable. Started from a
-> terminal, it is the terminal that needs the access. macOS also asks once
-> each for Desktop, Documents and Downloads.
-> 
-> What is different from Linux:
-> 
-> - **Free space** is what `df` reports. Finder's figure is larger: it counts
->   purgeable space (caches and local snapshots macOS will clear on its own).
-> - **Cloned files** (copies APFS shares blocks between, as Finder's Duplicate
->   makes) are each counted in full, so a total can exceed what deleting them
->   frees.
-> - **Time Machine's local snapshots** are not files and do not appear; they
->   are part of the gap between the scan and the disk's used space.
-> - **Cloud-only folders** (iCloud Drive, Dropbox and the like, evicted to the
->   server) are not opened, so a scan never downloads them.
-> 
-> To sign and notarize a build for others, with a Developer ID certificate in
-> the keychain and credentials saved by `xcrun notarytool store-credentials`:
-> 
-> ```sh
-> NOTARY_PROFILE= cargo xtask bundle \
->   --sign "Developer ID Application: Name (TEAMID)" --notarize
-> ```
-> 
-> 
-> ### Windows
-> 
-> On Windows 10 or 11, download `disktree-*-x86_64-windows.zip`
-> (`aarch64-windows` on ARM) from the same release, unpack it anywhere and run
-> `disktree.exe`. Or build it with Rust 1.97 or newer, from
-> [rustup](https://rustup.rs), and the MSVC toolchain (Visual Studio Build
-> Tools, C++ workload):
-> 
-> ```powershell
-> git clone https://github.com/tobi/disktree
-> cd disktree
-> cargo build --release    # target\release\disktree.exe
-> ```
-> 
-> See [On Windows](#on-windows) for what differs there.
-> 
-> 
-> ## Use
-> 
-> ```sh
-> disktree            # scan the home directory
-> disktree --disk     # the whole disk it lives on
-> disktree ~/src      # or any directory
-> disktree --help     # options: apparent size, follow links, skip hidden, …
-> ```
-> 
-> 
-> ### The screen
-> 
-> - **Top:** the trail from `/`, then what is measured — **Size**, **Files** or
->   **Age**, **Hidden files**, **Apparent size**, and the depth drawn. In the
->   tree a crumb goes there, and its ▾ lists its siblings, largest first with
->   their share and size, to jump sideways (arrows and Enter work too). Above
->   the scanned root a crumb is dimmer, and clicking it widens the scan to
->   there (see below).
-> - **Under it:** the scan totals, the filter when one is typed, and the legend.
-> - **Mosaic:** colour is the *kind* of data — code, agent scratch,
->   toolchains, synced files, git, media, documents, caches — at one muted
->   level, lighter with depth. A diagonal hatch is space that can be had back
->   (caches, sync history, package stores, build output), independent of
->   colour. Top-level directories carry a strip of their colour and a name
->   band; deeper open directories a slim label row. In **Age** mode colour is
->   the last write instead, from this week to older.
-> - **Panel:** the selection (its size set large, share of the scan, files,
->   last write, and for a checkout what git says — c
+> The release APK intentionally contains the experimental accessory identity. The Git repository and source archive exclude all accessory and Android signing keys; tests generate synthetic identities at runtime. Source/CI builds omit runtime identity assets by default. Local release builds explicitly select an external asset directory. Publishing the APK makes its bundled identity extractable; building locally does not preserve that identity's confidentiality.
 
 ## 延伸閱讀
 
-相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]] · [[2akouwu--reverify|2akouwu/reverify]] · [[Accio-org--RealReplicaBench|Accio-org/RealReplicaBench]] · [[Albert-Weasker--niubigeo|Albert-Weasker/niubigeo]] · [[ApodexAI--FrontierAgent|ApodexAI/FrontierAgent]] · [[ArasTey--lunel|ArasTey/lunel]]
+相關專案：[[0xwilliamortiz--claude-red|0xwilliamortiz/claude-red]] · [[0xwilliamortiz--openclaude-improved|0xwilliamortiz/openclaude-improved]] · [[0xwilliamortiz--ponytail-improved|0xwilliamortiz/ponytail-improved]]
 
-[GitHub](https://github.com/tobi/disktree)
+[GitHub](https://github.com/shihabal3amri/DiPlay) · [官方網站](https://shihabal3amri.github.io/DiPlay/)
 
 ## 相關收錄
 
@@ -406,7 +277,7 @@ A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPU
 > ```dataview
 > TABLE stars, install_complexity AS "難度", status
 > FROM "Repos"
-> WHERE category = "Other" AND file.name != "tobi--disktree"
+> WHERE category = "Other" AND file.name != "shihabal3amri--DiPlay"
 > SORT stars DESC
 > LIMIT 8
 > ```
@@ -415,7 +286,7 @@ A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPU
 > ```dataview
 > TABLE stars_per_day AS "Stars/天", category AS "分類", use_case AS "用途"
 > FROM "Repos"
-> WHERE language = "Rust" AND file.name != "tobi--disktree" AND status != "archived"
+> WHERE language = "Kotlin" AND file.name != "shihabal3amri--DiPlay" AND status != "archived"
 > SORT stars_per_day DESC
 > LIMIT 5
 > ```
@@ -424,18 +295,18 @@ A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPU
 > ```dataview
 > TABLE category AS "分類", stars, stars_per_day AS "stars/天"
 > FROM "Repos"
-> WHERE week = "2026-W40" AND file.name != "tobi--disktree"
+> WHERE week = "2026-W40" AND file.name != "shihabal3amri--DiPlay"
 > SORT stars DESC
 > ```
 
 > [!note]- Ring 更高的同類競品
 > ```dataviewjs
-> const me = dv.page("Repos/tobi--disktree");
+> const me = dv.page("Repos/shihabal3amri--DiPlay");
 > if (me) {
 >   const ringOrder = { hold: 0, assess: 1, trial: 2, adopt: 3 };
 >   const myRing = ringOrder[me.ring] || 0;
 >   const better = dv.pages('"Repos"')
->     .where(p => p.file.name !== "tobi--disktree" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
+>     .where(p => p.file.name !== "shihabal3amri--DiPlay" && p.category === me.category && (ringOrder[p.ring] || 0) > myRing)
 >     .sort(p => p.stars_per_day || 0, "desc").limit(5);
 >   if (better.length > 0) {
 >     dv.table(["專案", "Ring", "Stars/天", "安裝", "用途"], better.map(p => [
@@ -451,7 +322,7 @@ A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPU
 > ```dataview
 > TABLE stars AS "Stars", category AS "分類", status AS "狀態"
 > FROM "Repos"
-> WHERE owner = "tobi" AND file.name != "tobi--disktree"
+> WHERE owner = "shihabal3amri" AND file.name != "shihabal3amri--DiPlay"
 > SORT stars DESC
 > ```
 
@@ -459,7 +330,7 @@ A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPU
 
 > [!abstract]- 這個專案在 vault 中的相對位置
 > ```dataviewjs
-> const me = dv.page("Repos/tobi--disktree");
+> const me = dv.page("Repos/shihabal3amri--DiPlay");
 > const all = dv.pages('"Repos"').where(p => p.status !== "archived").sort(p => p.stars_per_day || 0, "desc");
 > const rank = all.array().findIndex(p => p.file.name === me?.file?.name) + 1;
 > const catAll = all.where(p => p.category === me?.category);
@@ -476,7 +347,7 @@ A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPU
 
 > [!abstract]- Stars 成長追蹤
 > ```dataviewjs
-> const me = dv.page("Repos/tobi--disktree");
+> const me = dv.page("Repos/shihabal3amri--DiPlay");
 > if (me?.star_history) {
 >   const raw = me.star_history.toString();
 >   const points = raw.split(",").map(p => { const [d, s] = p.split(":"); return { date: d, stars: parseInt(s) }; }).filter(p => !isNaN(p.stars));
@@ -509,7 +380,7 @@ A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPU
 
 > [!abstract]- 跟 vault 中同類專案比較
 > ```dataviewjs
-> const me = dv.page("Repos/tobi--disktree");
+> const me = dv.page("Repos/shihabal3amri--DiPlay");
 > if (me) {
 >   const all = dv.pages('"Repos"').where(p => p.status !== "archived");
 >   const sameCat = all.where(p => p.category === me.category);
@@ -533,7 +404,7 @@ A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPU
 
 > [!abstract]- 綜合評估（自動計算）
 > ```dataviewjs
-> const me = dv.page("Repos/tobi--disktree");
+> const me = dv.page("Repos/shihabal3amri--DiPlay");
 > if (me) {
 >   let score = 0;
 >   let breakdown = [];
@@ -570,7 +441,7 @@ A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPU
 
 > [!abstract]- 評估進度
 > ```dataviewjs
-> const me = dv.page("Repos/tobi--disktree");
+> const me = dv.page("Repos/shihabal3amri--DiPlay");
 > if (me) {
 >   const steps = [
 >     { name: "已讀", done: me.status && me.status !== "to-review" },
@@ -653,7 +524,7 @@ A treemap for finding and removing what fills your disk, for Omarchy. Rust + GPU
 
 _按時間記錄，每次接觸時追加一段（最新在上）_
 
-> **2026-09-27** — 首次收錄
+> **2026-09-30** — 首次收錄
 > _第一印象：_
 
 **狀態追蹤**：`to-review` → `reading` → `tried` → `integrated` / `archived`
@@ -669,7 +540,4 @@ _按時間記錄，每次接觸時追加一段（最新在上）_
 
 ## 出現記錄
 
-- [[2026-09-30|2026-09-30]] — 再次上榜，1.9k stars
-- [[2026-09-29|2026-09-29]] — 再次上榜，1.8k stars
-- [[2026-09-28|2026-09-28]] — 再次上榜，1.7k stars
-- [[2026-09-27|2026-09-27]] — 首次收錄，1.4k stars
+- [[2026-09-30|2026-09-30]] — 首次收錄，1.1k stars
